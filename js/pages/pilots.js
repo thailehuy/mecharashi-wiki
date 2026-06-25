@@ -203,8 +203,8 @@ Pages.pilots = {
     if (!bcd || !bcd.length) return '';
 
     var self = this;
-    var TYPE_LABEL = { EquipmentSkill: 'Attack', Order: 'Code' };
-    var TYPE_CLASS = { EquipmentSkill: 'skill-type-attack', Order: 'skill-type-code' };
+    var TYPE_LABEL = { EquipmentSkill: 'Attack', Order: 'Code', SpecialAssault: 'Code + Attack' };
+    var TYPE_CLASS = { EquipmentSkill: 'skill-type-attack', Order: 'skill-type-code', SpecialAssault: 'skill-type-special' };
 
     var withSkill = bcd.filter(function (e) { return e.skill && e.skill.SkillIcon; });
     var innate    = withSkill.filter(function (e) { return e.TitleUnitDetails === 'Profession Neuron - 1'; });
@@ -223,6 +223,12 @@ Pages.pilots = {
         '<span class="skill-stat"><span class="skill-stat-label">CD</span>' + (sk.CD || '0') + '</span>'
       ) : '';
 
+      var typeBadges = overrideLabel
+        ? '<span class="skill-type-badge ' + typeCls + '">' + typeLabel + '</span>'
+        : type === 'SpecialAssault'
+          ? '<span class="skill-type-badge skill-type-code">Code</span><span class="skill-type-badge skill-type-attack">Attack</span>'
+          : '<span class="skill-type-badge ' + typeCls + '">' + typeLabel + '</span>';
+
       return (
         '<div class="skill-card">' +
           '<div class="skill-header">' +
@@ -230,7 +236,7 @@ Pages.pilots = {
             '<div class="skill-header-info">' +
               '<div class="skill-name-row">' +
                 '<span class="skill-name">' + $('<span>').text(sk.name).html() + '</span>' +
-                '<span class="skill-type-badge ' + typeCls + '">' + typeLabel + '</span>' +
+                typeBadges +
               '</div>' +
               '<div class="skill-stats">' + statBadges + '</div>' +
             '</div>' +
