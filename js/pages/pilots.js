@@ -4,7 +4,8 @@ var QUALITY_LABEL = { R: 'B-rank', SR: 'A-rank', SSR: 'S-rank' };
 var QUALITY_CLASS  = { R: 'rank-b',  SR: 'rank-a',  SSR: 'rank-s'  };
 var AVATAR_BASE    = 'https://media.zlongame.com/media/pictures/cn/community/img/gl/gameInfo/characterHalf/';
 var PORTRAIT_BASE  = 'https://media.zlongame.com/media/pictures/cn/community/img/gl/gameInfo/character/';
-var SKILL_BASE     = 'https://media.zlongame.com/media/pictures/cn/community/img/gl/gameInfo/skill/';
+var SKILL_BASE      = 'https://media.zlongame.com/media/pictures/cn/community/img/gl/gameInfo/skill/';
+var OCCUPATION_BASE = 'https://media.zlongame.com/media/pictures/cn/community/img/gl/gameInfo/occupation/';
 
 Pages.pilots = {
   title: 'Pilots',
@@ -137,6 +138,13 @@ Pages.pilots = {
     var rankClass   = QUALITY_CLASS[p.quality] || '';
     var portraitSrc = PORTRAIT_BASE + encodeURIComponent(p.AvatarHeroIcon) + '.png';
 
+    var innateEntry = (p.biomimetic_computer_data || []).find(function (e) {
+      return e.TitleUnitDetails === 'Profession Neuron - 1';
+    });
+    var occIconHtml = innateEntry && innateEntry.icon
+      ? '<img class="occupation-icon" src="' + OCCUPATION_BASE + encodeURIComponent(innateEntry.icon) + '.png" alt="" />'
+      : '';
+
     return (
       '<a href="#pilots" class="btn-back">&#8592; Back to Pilots</a>' +
       '<div class="detail-layout">' +
@@ -148,7 +156,7 @@ Pages.pilots = {
           '</div>' +
         '</div>' +
         '<div class="detail-info-col">' +
-          '<h2 class="detail-name">' + $('<span>').text(p.PilotName).html() + '</h2>' +
+          '<h2 class="detail-name">' + occIconHtml + $('<span>').text(p.PilotName).html() + '</h2>' +
           '<p class="detail-realname">' + $('<span>').text(p.RealName).html() + '</p>' +
           '<div class="detail-tags">' +
             '<span class="tag">' + $('<span>').text(p.Gender).html() + '</span>' +
@@ -160,7 +168,9 @@ Pages.pilots = {
             this._renderTalent(p.Talent3_5Ability, 'Upgraded Talent') +
           '</div>' +
         '</div>' +
-      '</div>'
+      '</div>' +
+      this._renderSkills(p.biomimetic_computer_data) +
+      this._renderNeuralDrive(p.NeuralDriveTemplate)
     );
   },
 
@@ -179,6 +189,123 @@ Pages.pilots = {
           '</div>' +
         '</div>' +
         '<div class="talent-desc">' + desc + '</div>' +
+      '</div>'
+    );
+  },
+
+  _renderSkills: function (bcd) {
+    if (!bcd || !bcd.length) return '';
+
+    var self = this;
+    var TYPE_LABEL = { EquipmentSkill: 'Attack', Order: 'Code' };
+    var TYPE_CLASS = { EquipmentSkill: 'skill-type-attack', Order: 'skill-type-code' };
+
+    var withSkill = bcd.filter(function (e) { return e.skill && e.skill.SkillIcon; });
+    var innate    = withSkill.filter(function (e) { return e.TitleUnitDetails === 'Profession Neuron - 1'; });
+    var regular   = withSkill.filter(function (e) { return e.TitleUnitDetails !== 'Profession Neuron - 1'; });
+
+    function buildCard(entry, overrideLabel, overrideCls) {
+      var sk        = entry.skill;
+      var type      = sk.type || null;
+      var typeLabel = overrideLabel || (type ? (TYPE_LABEL[type] || type) : 'Passive');
+      var typeCls   = overrideCls  || (type ? (TYPE_CLASS[type] || '') : 'skill-type-passive');
+      var desc      = self._parseEffects(sk.describe || sk.SpecificEffects || '');
+      var iconSrc   = SKILL_BASE + encodeURIComponent(sk.SkillIcon) + '.png';
+
+      var statBadges = type && !overrideLabel ? (
+        '<span class="skill-stat"><span class="skill-stat-label">AP</span>' + (sk.Ap || '—') + '</span>' +
+        '<span class="skill-stat"><span class="skill-stat-label">CD</span>' + (sk.CD || '0') + '</span>'
+      ) : '';
+
+      return (
+        '<div class="skill-card">' +
+          '<div class="skill-header">' +
+            '<img class="skill-icon" src="' + iconSrc + '" alt="' + $('<span>').text(sk.name).html() + '" />' +
+            '<div class="skill-header-info">' +
+              '<div class="skill-name-row">' +
+                '<span class="skill-name">' + $('<span>').text(sk.name).html() + '</span>' +
+                '<span class="skill-type-badge ' + typeCls + '">' + typeLabel + '</span>' +
+              '</div>' +
+              '<div class="skill-stats">' + statBadges + '</div>' +
+            '</div>' +
+          '</div>' +
+          '<div class="talent-desc">' + desc + '</div>' +
+        '</div>'
+      );
+    }
+
+    var innateHtml  = innate.map(function (e)  { return buildCard(e, 'Passive · Innate', 'skill-type-innate'); }).join('');
+    var regularHtml = regular.map(function (e) { return buildCard(e); }).join('');
+
+    if (!innateHtml && !regularHtml) return '';
+
+    return (
+      '<div class="nd-section">' +
+        '<div class="section-heading">Skills</div>' +
+        (innateHtml  ? '<div class="skill-list skill-list-innate mb-3">' + innateHtml  + '</div>' : '') +
+        (regularHtml ? '<div class="skill-list">'                        + regularHtml + '</div>' : '') +
+      '</div>'
+    );
+  },
+
+  _renderNeuralDrive: function (nd) {
+    if (!nd || !nd.ListChipPartition || !nd.ListChipPartition.length) return '';
+
+    var self         = this;
+    var COMMON_BASE  = 'https://media.zlongame.com/media/pictures/cn/community/img/gl/gameInfo/common/';
+    var SLOT_COLOR   = { Attack: 'slot-attack', Dodge: 'slot-dodge', Critical: 'slot-critical' };
+    var gammaCount   = 0;
+
+    var parts = nd.ListChipPartition.map(function (part) {
+      var type = part.TypeComputing; // Alpha | Beta | Gamma
+      var iconKey;
+      if (type === 'Alpha')      { iconKey = 'alpha'; }
+      else if (type === 'Beta')  { iconKey = 'beta';  }
+      else { gammaCount++; iconKey = 'gamma' + gammaCount; }
+
+      var slots = (part.ListAssembled || '').split('/').map(function (s) {
+        var cls = SLOT_COLOR[s.trim()] || '';
+        return '<span class="nd-slot ' + cls + '" title="' + s.trim() + '"></span>';
+      }).join('');
+
+      var effects = (part.ListActivationEffects || []).map(function (eff) {
+        var ps = eff.PassiveSkill;
+        if (!ps) return '';
+        var iconSrc = SKILL_BASE + encodeURIComponent(ps.SkillIcon) + '.png';
+        var desc    = self._parseEffects(ps.SpecificEffects || '');
+        return (
+          '<div class="nd-effect">' +
+            '<div class="nd-effect-header">' +
+              '<img class="talent-icon" src="' + iconSrc + '" alt="' + $('<span>').text(ps.name).html() + '" />' +
+              '<div>' +
+                '<div class="nd-effect-name">' + $('<span>').text(ps.name).html() + '</div>' +
+                '<div class="nd-effect-req">' + eff.MinimumSum + ' pts to unlock</div>' +
+              '</div>' +
+            '</div>' +
+            '<div class="talent-desc">' + desc + '</div>' +
+          '</div>'
+        );
+      }).join('');
+
+      return (
+        '<div class="nd-part">' +
+          '<div class="nd-part-header">' +
+            '<img class="nd-part-icon" src="' + COMMON_BASE + iconKey + '.png" alt="' + iconKey + '" />' +
+            '<div class="nd-part-name">' + $('<span>').text(part.name).html() + '</div>' +
+            '<div class="nd-slots-wrap">' +
+              '<span class="nd-slots-label">Available chip slots</span>' +
+              '<div class="nd-slots">' + slots + '</div>' +
+            '</div>' +
+          '</div>' +
+          '<div class="nd-effects">' + effects + '</div>' +
+        '</div>'
+      );
+    }).join('');
+
+    return (
+      '<div class="nd-section">' +
+        '<div class="section-heading">Neural Drive</div>' +
+        '<div class="nd-parts">' + parts + '</div>' +
       '</div>'
     );
   },

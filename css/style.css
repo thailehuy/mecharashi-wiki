@@ -294,6 +294,16 @@ body {
   font-weight: 800;
   color: #ffffff;
   margin-bottom: 0.15rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.occupation-icon {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  flex-shrink: 0;
 }
 
 .detail-realname {
@@ -364,6 +374,207 @@ body {
   line-height: 1.55;
 }
 
+/* ── Skills ───────────────────────────────────────────────────────── */
+.skill-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.skill-card {
+  background-color: #1a1a2e;
+  border: 1px solid #2a2a4a;
+  border-radius: 8px;
+  padding: 0.9rem 1rem;
+}
+
+.skill-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-bottom: 0.6rem;
+}
+
+.skill-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  background-color: #111122;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.skill-header-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.skill-name-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.3rem;
+}
+
+.skill-name {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.skill-type-badge {
+  font-size: 0.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 2px 6px;
+  border-radius: 3px;
+}
+
+.skill-type-attack  { background-color: #7a2030; color: #ff8090; }
+.skill-type-code    { background-color: #1a4a7a; color: #70b8ff; }
+.skill-type-passive { background-color: #2a3a2a; color: #70c870; }
+.skill-type-innate  { background-color: #3a2a5a; color: #c088ff; }
+
+.skill-list-innate .skill-card {
+  border-color: #3a2a5a;
+}
+
+.skill-stats {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.skill-stat {
+  font-size: 0.72rem;
+  color: #c0c0d8;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.skill-stat-label {
+  font-size: 0.6rem;
+  font-weight: 700;
+  color: #6060a0;
+  text-transform: uppercase;
+}
+
+@media (max-width: 700px) {
+  .skill-list { grid-template-columns: 1fr; }
+}
+
+/* ── Neural Drive ─────────────────────────────────────────────────── */
+.nd-section {
+  margin-top: 2.5rem;
+}
+
+.section-heading {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #ffffff;
+  border-bottom: 2px solid #e94560;
+  padding-bottom: 0.4rem;
+  margin-bottom: 1.25rem;
+}
+
+.nd-parts {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.nd-part {
+  background-color: #1a1a2e;
+  border: 1px solid #2a2a4a;
+  border-radius: 8px;
+  padding: 1rem 1.1rem;
+}
+
+.nd-part-header {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.9rem;
+}
+
+.nd-part-icon {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.nd-part-name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #ffffff;
+  flex: 1;
+}
+
+.nd-slots-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 3px;
+}
+
+.nd-slots-label {
+  font-size: 0.6rem;
+  color: #6060a0;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+}
+
+.nd-slots {
+  display: flex;
+  gap: 5px;
+}
+
+.nd-slot {
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.slot-attack   { background-color: #e94560; }
+.slot-dodge    { background-color: #e0b030; }
+.slot-critical { background-color: #4a9fd4; }
+
+.nd-effects {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.nd-effect {
+  border-top: 1px solid #2a2a4a;
+  padding-top: 0.75rem;
+}
+
+.nd-effect-header {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.4rem;
+}
+
+.nd-effect-name {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #e0e0e0;
+}
+
+.nd-effect-req {
+  font-size: 0.65rem;
+  color: #6060a0;
+  margin-top: 1px;
+}
+
 @media (max-width: 600px) {
   .detail-layout {
     flex-direction: column;
@@ -379,5 +590,8 @@ body {
     height: 100%;
     object-fit: cover;
     object-position: top center;
+  }
+  .nd-parts {
+    grid-template-columns: 1fr;
   }
 }
