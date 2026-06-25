@@ -374,6 +374,56 @@ body {
   line-height: 1.55;
 }
 
+/* ── Mech stats ───────────────────────────────────────────────────── */
+.mech-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 1.5rem;
+}
+
+.mech-stat {
+  background-color: #1a1a2e;
+  border: 1px solid #2a2a4a;
+  border-radius: 6px;
+  padding: 0.4rem 0.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 80px;
+}
+
+.mech-stat-label {
+  font-size: 0.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #6060a0;
+  margin-bottom: 2px;
+}
+
+.mech-stat-value {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.mech-stat-fire   .mech-stat-label { color: #c05060; }
+.mech-stat-fire   .mech-stat-value { color: #ff6070; }
+.mech-stat-hp     .mech-stat-label { color: #3a7a4a; }
+.mech-stat-hp     .mech-stat-value { color: #60c870; }
+.mech-stat-weight .mech-stat-label { color: #2a5a8a; }
+.mech-stat-weight .mech-stat-value { color: #60a8ff; }
+.mech-stat-over   .mech-stat-value { color: #e94560; }
+
+.module-level {
+  font-size: 0.65rem;
+  font-weight: 600;
+  color: #e0b030;
+  margin-left: 0.4rem;
+  vertical-align: middle;
+}
+
 /* ── Skills ───────────────────────────────────────────────────────── */
 .skill-list {
   display: grid;
