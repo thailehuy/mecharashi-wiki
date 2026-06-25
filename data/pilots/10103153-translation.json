@@ -6,11 +6,11 @@
   "Occupation": "Sniper",
   "Talent0_2Ability": {
     "name": "Experimental Observation",
-    "SpecificEffects": "Can use <skill mainSkill=301150>[Dimentional Rack]</skill> code. While in <buf ID=900111>[Dimentional Rack]</buf> Mode，each <color=#F74848>1</color> hit on an enemy unit grants <color=#F74848>1</color> stack of <buf ID=3011512>[Positional Advantage I]</buf>. While in <buf ID=900111>[Dimentional Rack]</buf> Mode, if there are no enemy units within <color=#F74848>3</color> tiles, gains <buf ID=3004502>[Stealth I]</buf>lasting for <color=#F74848>2</color> turns."
+    "SpecificEffects": "Can use <skill mainSkill=301150>[Dimentional Rack]</skill> code. While in <buf ID=900111>[Dimentional Rack]</buf> Mode，each <color=#F74848>1</color> hit on an enemy unit grants <color=#F74848>1</color> stack of <buf ID=3011512>[Positional Advantage I]</buf>. While in <buf ID=900111>[Dimentional Rack]</buf> Mode, if there are no enemy units within <color=#F74848>3</color> tiles, gains <buf ID=3004502>[Stealth I]</buf> lasting for <color=#F74848>2</color> turns."
   },
   "Talent3_5Ability": {
     "name": "Experimental Observation",
-    "SpecificEffects": "Can use <skill mainSkill=301150>[Dimentional Rack]</skill> code. While in <buf ID=900111>[Dimentional Rack]</buf> Mode，each <color=#F74848>1</color> hit on an enemy unit grants <color=#F74848>1</color> stack of <buf ID=3011512>[Positional Advantage I]</buf>. While in <buf ID=900111>[Dimentional Rack]</buf> Mode, if there are no enemy units within <color=#F74848>3</color> tiles, gains <buf ID=3004502>[Stealth I]</buf>lasting for <color=#F74848>2</color> turns.\nThe <buf ID=3011512>[Positional Advantage I]</buf> stack limit increase to <color=#F74848>4</color>"
+    "SpecificEffects": "Can use <skill mainSkill=301150>[Dimentional Rack]</skill> code. While in <buf ID=900111>[Dimentional Rack]</buf> Mode，each <color=#F74848>1</color> hit on an enemy unit grants <color=#F74848>1</color> stack of <buf ID=3011512>[Positional Advantage I]</buf>. While in <buf ID=900111>[Dimentional Rack]</buf> Mode, if there are no enemy units within <color=#F74848>3</color> tiles, gains <buf ID=3004502>[Stealth I]</buf> lasting for <color=#F74848>2</color> turns.\nThe <buf ID=3011512>[Positional Advantage I]</buf> stack limit increase to <color=#F74848>4</color>."
   },
   "skills": {
     "300001": {
@@ -22,6 +22,11 @@
       "name": "Patience",
       "describe": "",
       "SpecificEffects": "When attacking, if you do not move during this turn, DMG <color=#F74848>+15%</color>."
+    },
+    "301102": {
+      "name": "Precision Surgery",
+      "describe": "Uses a Sniper Rifle to attack a target, dealing <color=#F74848>1.2x</color> DMG. When in <buf ID=900111>[Dimentional Rack]</buf> Mode, enters <buf ID=900014>[Aiming]</buf> Mode before attacking.",
+      "SpecificEffects": ""
     },
     "301103": {
       "name": "Impromtu Experiment",
@@ -125,7 +130,7 @@
     },
     "301146": {
       "name": "Trickster 4",
-      "SpecificEffects": "At the end of action, if in <buf ID=900111>[Dimentional Rack]</buf> Mode, Sniper Rifle range <color=#F74848>+1</color>. Can stack <color=#F74848>2</color>times. All stacks are lost upon exiting <buf ID=900111>[Dimentional Rack]</buf> Mode."
+      "SpecificEffects": "At the end of action, if in <buf ID=900111>[Dimentional Rack]</buf> Mode, Sniper Rifle range <color=#F74848>+1</color>. Can stack <color=#F74848>2</color> times. All stacks are lost upon exiting <buf ID=900111>[Dimentional Rack]</buf> Mode."
     }
   },
   "version": "2.0"
