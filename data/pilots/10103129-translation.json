@@ -3,7 +3,7 @@
   "RealName": "玛阿特·谢里夫",
   "Gender": "Female",
   "Profession": "Striker",
-  "Occupation": "格斗家",
+  "Occupation": "Fighter",
   "Talent0_2Ability": {
     "name": "蚀罪极影",
     "SpecificEffects": "双手完好且装备电锯时，行动后释放<skill activeSkill=1019512></skill>，每回合最多触发<color=#F74848>8</color>次；自身装备除强袭者背包外的任意背包时，可以释放<skill activeSkill=1019501></skill>与<skill activeSkill=1019511></skill>技能；初始具有<color=#F74848>1</color>层<buf ID=1019509></buf>，行动结束时恢复<color=#F74848>1</color>层<buf ID=1019509></buf>"
@@ -14,9 +14,9 @@
   },
   "skills": {
     "100001": {
-      "name": "运动战1",
+      "name": "Mobile Warfare 1",
       "describe": "",
-      "SpecificEffects": "击破部位后可发动<buf ID=900004>[再攻击]</buf>，攻击前无法移动，每回合最多发动<color=#F74848>2</color>次"
+      "SpecificEffects": "After breaking a part, <buf ID=900004>[Re-ATK]</buf> can be triggered. Unable to move before the attack, and this can be effective up to <color=#F74848>2</color> times per turn."
     },
     "101902": {
       "name": "计出双全",
@@ -56,64 +56,64 @@
   },
   "neuralPassives": {
     "100011": {
-      "name": "运动战2",
-      "SpecificEffects": "发动<buf ID=900004>[再攻击]</buf>时，攻击前可以移动<color=#F74848>2</color>格"
+      "name": "Mobile Warfare 2",
+      "SpecificEffects": "Upon triggering <buf ID=900004>[Re-ATK]</buf>, allows movement of <color=#F74848>2</color> tiles before attacking."
     },
     "100012": {
-      "name": "动力革新1",
-      "SpecificEffects": "AP的回复值<color=#F74848>+1</color>"
+      "name": "Power Innovation 1",
+      "SpecificEffects": "AP Regen <color=#F74848>+1</color>."
     },
     "100013": {
-      "name": "AP优化1",
-      "SpecificEffects": "AP的初始值<color=#F74848>+1</color>"
+      "name": "AP Optimization 1",
+      "SpecificEffects": "Initial AP <color=#F74848>+1</color>."
     },
     "100021": {
-      "name": "运动战3",
-      "SpecificEffects": "击毁目标后可发动<buf ID=900005>[再行动]</buf>，使用完整移动力移动"
+      "name": "Mobile Warfare 3",
+      "SpecificEffects": "Destroying the target can trigger <buf ID=900005>[Re-Act]</buf>, allowing action with full movement distance."
     },
     "100022": {
-      "name": "动力革新2",
-      "SpecificEffects": "击破部位时，战后回复<color=#F74848>1</color>AP，每回合最多发动<color=#F74848>1</color>次"
+      "name": "Power Innovation 2",
+      "SpecificEffects": "When breaking a part, restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>1</color> time per turn."
     },
     "100023": {
-      "name": "AP优化2",
-      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+      "name": "AP Optimization 2",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
     },
     "100031": {
-      "name": "穷追猛打1",
-      "SpecificEffects": "使用格斗武器主动攻击时有<color=#F74848>20%</color>的概率发动，在敌机攻击结束后发动<buf ID=900001>[追击]</buf>，造成<color=#F74848>0.5</color>倍伤害"
+      "name": "Alacrity 1",
+      "SpecificEffects": "During an Active Attack with a Melee Weapon, there is a <color=#F74848>20%</color> chance to trigger <buf ID=900001>[Flurry Strike]</buf> following the enemy’s attack, dealing <color=#F74848>0.5x</color> DMG."
     },
     "100032": {
-      "name": "AP优化3",
-      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+      "name": "AP Optimization 3",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
     },
     "100033": {
-      "name": "运动战4",
-      "SpecificEffects": "<buf ID=900004>[再攻击]</buf>或<buf ID=900005>[再行动]</buf>每回合可发动的次数<color=#F74848>+1</color>"
+      "name": "Mobile Warfare 4",
+      "SpecificEffects": "<buf ID=900004>[Re-ATK]</buf> or <buf ID=900005>[Re-Act]</buf>'s effective times per turn <color=#F74848>+1</color>."
     },
     "100034": {
-      "name": "穷追猛打2",
-      "SpecificEffects": "主动攻击前每移动<color=#F74848>1</color>格，发动<buf ID=900001>[追击]</buf>的概率提升<color=#F74848>6%</color>，最多<color=#F74848>30%</color>"
+      "name": "Alacrity 2",
+      "SpecificEffects": "Before an Active Attack, the probability of triggering <buf ID=900001>[Flurry Strike]</buf> increases by <color=#F74848>6%</color> for each <color=#F74848>1</color> tile moved, up to <color=#F74848>30%</color>."
     },
     "100035": {
-      "name": "穷追猛打3",
-      "SpecificEffects": "<buf ID=1000311>[穷追猛打1]</buf>触发的<buf ID=900001>[追击]</buf>的伤害倍率提升至<color=#F74848>0.75</color>倍"
+      "name": "Alacrity 3",
+      "SpecificEffects": "<buf ID=900001>[Flurry Strike]</buf> damage multiplier is increased to <color=#F74848>0.75</color>."
     },
     "100036": {
-      "name": "穷追猛打4",
-      "SpecificEffects": "发动<buf ID=900001>[追击]</buf>时，优先命中耐久值最低的部位"
+      "name": "Alacrity 4",
+      "SpecificEffects": "When triggering <buf ID=900001>[Flurry Strike]</buf>, prioritize hitting the part with the lowest HP."
     },
     "101941": {
       "name": "业火成炬1",
       "SpecificEffects": "击毁目标时，恢复<color=#F74848>1</color>层<buf ID=1019509></buf>，每回合最多发动<color=#F74848>1</color>次"
     },
     "100042": {
-      "name": "AP优化4",
-      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+      "name": "AP Optimization 4",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
     },
     "100043": {
-      "name": "动力革新3",
-      "SpecificEffects": "击毁目标时，战后额外回复<color=#F74848>1</color>AP，每回合最多发动<color=#F74848>2</color>次"
+      "name": "Power Innovation 3",
+      "SpecificEffects": "When destroying a target, additionally restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>2</color> times per turn."
     },
     "101944": {
       "name": "业火成炬2",

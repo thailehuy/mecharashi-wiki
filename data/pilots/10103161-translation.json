@@ -3,7 +3,7 @@
   "RealName": "佐伊·斯蒂尔",
   "Gender": "Female",
   "Profession": "Defender",
-  "Occupation": "守护者",
+  "Occupation": "Guardian",
   "Talent0_2Ability": {
     "name": "无畏獠牙",
     "SpecificEffects": "遭受来自周围<color=#F74848>4</color>格内的主动攻击且双手完好时，战后发动<skill activeSkill=6011501>[长柄投掷]</skill>；<buf ID=900022>[援护防御]</buf>可额外抵挡格斗武器"
@@ -14,9 +14,9 @@
   },
   "skills": {
     "600001": {
-      "name": "据守作战1",
+      "name": "Entrenched 1",
       "describe": "",
-      "SpecificEffects": "发动<buf ID=900022>[援护防御]</buf>，替相邻<color=#F74848>1</color>格的友军抵挡突击与射击武器的攻击，每回合最多发动<color=#F74848>2</color>次"
+      "SpecificEffects": "Trigger <buf ID=900022>[Guard]</buf> to protect adjacent (<color=#F74848>1</color> tile) allies from Assault and Ranged attacks, effective up to <color=#F74848>2</color> times per turn."
     },
     "601102": {
       "name": "无破",
@@ -56,40 +56,40 @@
   },
   "neuralPassives": {
     "600011": {
-      "name": "据守作战2",
-      "SpecificEffects": "发动<buf ID=900022>[援护防御]</buf>时，遭受伤害降低<color=#F74848>10%</color>"
+      "name": "Entrenched 2",
+      "SpecificEffects": "When performing <buf ID=900022>[Guard]</buf>, DMG Taken <color=#F74848>-10%</color>."
     },
     "600012": {
-      "name": "防御特化1",
-      "SpecificEffects": "反击伤害提升<color=#F74848>20%</color>"
+      "name": "Armor Specialization 1",
+      "SpecificEffects": "DMG <color=#F74848>+20%</color> on Retaliation."
     },
     "600013": {
-      "name": "AP优化1",
-      "SpecificEffects": "AP的初始值<color=#F74848>+1</color>"
+      "name": "AP Optimization 1",
+      "SpecificEffects": "Initial AP <color=#F74848>+1</color>."
     },
     "600021": {
-      "name": "据守作战3",
-      "SpecificEffects": "<buf ID=900022>[援护防御]</buf>每回合可发动的次数<color=#F74848>+1</color>"
+      "name": "Entrenched 3",
+      "SpecificEffects": "<buf ID=900022>[Guard]</buf>'s effective times per turn <color=#F74848>+1</color>."
     },
     "600022": {
-      "name": "防御特化2",
-      "SpecificEffects": "发动<buf ID=900022>[援护防御]</buf>时，战后回复<color=#F74848>1</color>AP，每回合最多发动<color=#F74848>1</color>次"
+      "name": "Armor Specialization 2",
+      "SpecificEffects": "When performing <buf ID=900022>[Guard]</buf>, restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>1</color> time per turn."
     },
     "600023": {
-      "name": "AP优化2",
-      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+      "name": "AP Optimization 2",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
     },
     "601131": {
       "name": "生存法则1",
       "SpecificEffects": "遭受主动攻击时，若触发过回避，战后恢复完好部位<color=#F74848>4%</color>的耐久值，每回避<color=#F74848>1</color>次连击，额外恢复<color=#F74848>1%</color>的耐久值，最多额外恢复<color=#F74848>8%</color>耐久值"
     },
     "600032": {
-      "name": "AP优化3",
-      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+      "name": "AP Optimization 3",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
     },
     "600033": {
-      "name": "自适应作战1",
-      "SpecificEffects": "行动结束时，若本回合未主动攻击，则可以额外移动<color=#F74848>2</color>格"
+      "name": "Adaptive Warfare 1",
+      "SpecificEffects": "At the end of the action, if an Active Attack was not initiated this turn, an extra <color=#F74848>2</color> tiles can be moved."
     },
     "601134": {
       "name": "生存法则2",
@@ -108,12 +108,12 @@
       "SpecificEffects": "累计发动<color=#F74848>3</color>次<skill activeSkill=6011501>[长柄投掷]</skill>后，下一次主动攻击不消耗AP，且攻击后可以发动<buf ID=900004>[再攻击]</buf>，攻击前可以移动<color=#F74848>2</color>格，触发后移除"
     },
     "600042": {
-      "name": "AP优化4",
-      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+      "name": "AP Optimization 4",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
     },
     "600043": {
-      "name": "据守作战4",
-      "SpecificEffects": "<buf ID=900022>[援护防御]</buf>每回合不再有发动次数限制"
+      "name": "Entrenched 4",
+      "SpecificEffects": "<buf ID=900022>[Guard]</buf> can now be triggered an unlimited number of times per turn."
     },
     "601144": {
       "name": "追袭冲动2",

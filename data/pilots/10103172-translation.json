@@ -3,7 +3,7 @@
   "RealName": "虎王",
   "Gender": "Male",
   "Profession": "Assault",
-  "Occupation": "突击手",
+  "Occupation": "Raider",
   "Talent0_2Ability": {
     "name": "魔界皇子",
     "SpecificEffects": "若自身携带的可驱散减益效果小于等于<color=#F74848>3</color>个，可驱散的减益效果无效；每被施加<color=#F74848>1</color>个减益效果，获得<color=#F74848>1</color>层<buf ID=2019506>[虎威]</buf>，可叠加<color=#F74848>5</color>层，持续<color=#F74848>2</color>回合"
@@ -14,9 +14,9 @@
   },
   "skills": {
     "200001": {
-      "name": "协同作战1",
+      "name": "CEC 1",
       "describe": "",
-      "SpecificEffects": "配合友军，使用突击或射击武器对友军攻击的目标发动<buf ID=900002>[协力攻击]</buf>，造成<color=#F74848>0.2</color>倍伤害，每回合最多发动<color=#F74848>1</color>次"
+      "SpecificEffects": "In cooperation with allies, use Assault Weapons to launch a <buf ID=900002>[Link Attack]</buf> against the target, dealing <color=#F74848>0.2x</color> DMG, effective up to <color=#F74848>1</color> time per turn."
     },
     "201902": {
       "name": "战斗直觉",
@@ -56,40 +56,40 @@
   },
   "neuralPassives": {
     "200011": {
-      "name": "协同作战2",
-      "SpecificEffects": "<buf ID=2000011>[协同作战1]</buf>每回合可发动的次数<color=#F74848>+1</color>"
+      "name": "CEC 2",
+      "SpecificEffects": "<buf ID=900002>[Link Attack]</buf>'s effective times per turn <color=#F74848>+1</color>."
     },
     "200012": {
-      "name": "动力革新1",
-      "SpecificEffects": "AP的回复值<color=#F74848>+1</color>"
+      "name": "Power Innovation 1",
+      "SpecificEffects": "AP Regen <color=#F74848>+1</color>."
     },
     "200013": {
-      "name": "AP优化1",
-      "SpecificEffects": "AP的初始值<color=#F74848>+1</color>"
+      "name": "AP Optimization 1",
+      "SpecificEffects": "Initial AP <color=#F74848>+1</color>."
     },
     "200021": {
-      "name": "协同作战3",
-      "SpecificEffects": "使<buf ID=2000011>[协同作战1]</buf>触发的<buf ID=900002>[协力攻击]</buf>伤害倍率提升至<color=#F74848>0.3</color>倍"
+      "name": "CEC 3",
+      "SpecificEffects": "<buf ID=900002>[Link Attack]</buf>'s damage multiplier is increased to <color=#F74848>0.3</color>."
     },
     "200022": {
-      "name": "动力革新2",
-      "SpecificEffects": "击破部位时，战后回复<color=#F74848>1</color>AP，每回合最多发动<color=#F74848>1</color>次"
+      "name": "Power Innovation 2",
+      "SpecificEffects": "When breaking a part, restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>1</color> time per turn."
     },
     "200023": {
-      "name": "AP优化2",
-      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+      "name": "AP Optimization 2",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
     },
     "201931": {
       "name": "少年意气1",
       "SpecificEffects": "天赋无效可驱散减益效果的条件提升至小于等于<color=#F74848>5</color>个"
     },
     "200032": {
-      "name": "AP优化3",
-      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+      "name": "AP Optimization 3",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
     },
     "200033": {
-      "name": "自适应作战1",
-      "SpecificEffects": "行动结束时，若本回合未主动攻击，则可以额外移动<color=#F74848>2</color>格"
+      "name": "Adaptive Warfare 1",
+      "SpecificEffects": "At the end of the action, if an Active Attack was not initiated this turn, an extra <color=#F74848>2</color> tiles can be moved."
     },
     "201934": {
       "name": "少年意气2",
@@ -108,12 +108,12 @@
       "SpecificEffects": "主动攻击时，若自身携带的可驱散减益效果小于<color=#F74848>5</color>个，立即获得<color=#F74848>1</color>个随机减益效果，持续<color=#F74848>2</color>回合"
     },
     "200042": {
-      "name": "AP优化4",
-      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+      "name": "AP Optimization 4",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
     },
     "200043": {
-      "name": "自适应作战2",
-      "SpecificEffects": "主动攻击前如果没有移动过，可发动<buf ID=900004>[再攻击]</buf>，攻击前无法移动，每回合最多发动<color=#F74848>1</color>次\n无法与同类<buf ID=900004>[再攻击]</buf>效果重复触发"
+      "name": "Adaptive Warfare 2",
+      "SpecificEffects": "If not moved before an Active Attack, <buf ID=900004>[Re-ATK]</buf> can be triggered, effective up to <color=#F74848>1</color> time per turn. Unable to move before attacking.\nEffects similar to <buf ID=900004>[Re-ATK]</buf> cannot be re-triggered."
     },
     "201944": {
       "name": "勇虎之心2",

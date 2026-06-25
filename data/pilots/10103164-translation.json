@@ -3,7 +3,7 @@
   "RealName": "玛汀妮·莫雷蒂",
   "Gender": "Female",
   "Profession": "Mechanic",
-  "Occupation": "机械师",
+  "Occupation": "Machinist",
   "Talent0_2Ability": {
     "name": "良药苦机",
     "SpecificEffects": "可额外装备修理背包，修理背包负重降低<color=#F74848>300</color>；使用打桩机或拳套主动攻击时，若携带了修理背包，对命中的目标耐久值百分比最低的部位造成相当于修理背包<color=#F74848>0.3</color>倍的<buf ID=900017>[固定伤害]</buf>"
@@ -14,12 +14,12 @@
   },
   "skills": {
     "100001": {
-      "name": "运动战1",
+      "name": "Mobile Warfare 1",
       "describe": "",
-      "SpecificEffects": "击破部位后可发动<buf ID=900004>[再攻击]</buf>，攻击前无法移动，每回合最多发动<color=#F74848>2</color>次"
+      "SpecificEffects": "After breaking a part, <buf ID=900004>[Re-ATK]</buf> can be triggered. Unable to move before the attack, and this can be effective up to <color=#F74848>2</color> times per turn."
     },
     "700009": {
-      "name": "广域修理",
+      "name": "Wide-Range Repair",
       "describe": "恢复所选<range type=1>2格菱形</range>范围内友军所有部位的耐久值，修理量为修理背包的<color=#F74848>1.0</color>倍，可修复<color=#F74848>1</color>个损毁部位",
       "SpecificEffects": ""
     },
@@ -56,40 +56,40 @@
   },
   "neuralPassives": {
     "100011": {
-      "name": "运动战2",
-      "SpecificEffects": "发动<buf ID=900004>[再攻击]</buf>时，攻击前可以移动<color=#F74848>2</color>格"
+      "name": "Mobile Warfare 2",
+      "SpecificEffects": "Upon triggering <buf ID=900004>[Re-ATK]</buf>, allows movement of <color=#F74848>2</color> tiles before attacking."
     },
     "100012": {
-      "name": "动力革新1",
-      "SpecificEffects": "AP的回复值<color=#F74848>+1</color>"
+      "name": "Power Innovation 1",
+      "SpecificEffects": "AP Regen <color=#F74848>+1</color>."
     },
     "100013": {
-      "name": "AP优化1",
-      "SpecificEffects": "AP的初始值<color=#F74848>+1</color>"
+      "name": "AP Optimization 1",
+      "SpecificEffects": "Initial AP <color=#F74848>+1</color>."
     },
     "100021": {
-      "name": "运动战3",
-      "SpecificEffects": "击毁目标后可发动<buf ID=900005>[再行动]</buf>，使用完整移动力移动"
+      "name": "Mobile Warfare 3",
+      "SpecificEffects": "Destroying the target can trigger <buf ID=900005>[Re-Act]</buf>, allowing action with full movement distance."
     },
     "100022": {
-      "name": "动力革新2",
-      "SpecificEffects": "击破部位时，战后回复<color=#F74848>1</color>AP，每回合最多发动<color=#F74848>1</color>次"
+      "name": "Power Innovation 2",
+      "SpecificEffects": "When breaking a part, restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>1</color> time per turn."
     },
     "100023": {
-      "name": "AP优化2",
-      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+      "name": "AP Optimization 2",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
     },
     "500931": {
       "name": "抢险维修1",
       "SpecificEffects": "行动结束时，随机选择相邻<color=#F74848>1</color>格的其他友军进行<buf ID=900018>[被动修理]</buf>，修理量为修理背包的<color=#F74848>0.6</color>倍，无法修复损毁部位"
     },
     "500032": {
-      "name": "AP优化3",
-      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+      "name": "AP Optimization 3",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
     },
     "100033": {
-      "name": "运动战4",
-      "SpecificEffects": "<buf ID=900004>[再攻击]</buf>或<buf ID=900005>[再行动]</buf>每回合可发动的次数<color=#F74848>+1</color>"
+      "name": "Mobile Warfare 4",
+      "SpecificEffects": "<buf ID=900004>[Re-ATK]</buf> or <buf ID=900005>[Re-Act]</buf>'s effective times per turn <color=#F74848>+1</color>."
     },
     "500934": {
       "name": "抢险维修2",
@@ -108,12 +108,12 @@
       "SpecificEffects": "通过修理背包造成<buf ID=900017>[固定伤害]</buf>效果时额外对目标施加<buf ID=5009418>[共鸣脉冲]</buf>"
     },
     "500042": {
-      "name": "AP优化4",
-      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+      "name": "AP Optimization 4",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
     },
     "100043": {
-      "name": "动力革新3",
-      "SpecificEffects": "击毁目标时，战后额外回复<color=#F74848>1</color>AP，每回合最多发动<color=#F74848>2</color>次"
+      "name": "Power Innovation 3",
+      "SpecificEffects": "When destroying a target, additionally restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>2</color> times per turn."
     },
     "500944": {
       "name": "谎者2",

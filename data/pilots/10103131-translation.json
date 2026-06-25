@@ -3,7 +3,7 @@
   "RealName": "提费斯·穆勒",
   "Gender": "Male",
   "Profession": "Defender",
-  "Occupation": "守护者",
+  "Occupation": "Guardian",
   "Talent0_2Ability": {
     "name": "迟暮未至",
     "SpecificEffects": "可以使用<skill mainSkill=600850>[战略领域]</skill>指令，间隔<color=#F74848>2</color>回合才可使用"
@@ -14,9 +14,9 @@
   },
   "skills": {
     "600001": {
-      "name": "据守作战1",
+      "name": "Entrenched 1",
       "describe": "",
-      "SpecificEffects": "发动<buf ID=900022>[援护防御]</buf>，替相邻<color=#F74848>1</color>格的友军抵挡突击与射击武器的攻击，每回合最多发动<color=#F74848>2</color>次"
+      "SpecificEffects": "Trigger <buf ID=900022>[Guard]</buf> to protect adjacent (<color=#F74848>1</color> tile) allies from Assault and Ranged attacks, effective up to <color=#F74848>2</color> times per turn."
     },
     "600802": {
       "name": "机动截击",
@@ -56,64 +56,64 @@
   },
   "neuralPassives": {
     "600011": {
-      "name": "据守作战2",
-      "SpecificEffects": "发动<buf ID=900022>[援护防御]</buf>时，遭受伤害降低<color=#F74848>10%</color>"
+      "name": "Entrenched 2",
+      "SpecificEffects": "When performing <buf ID=900022>[Guard]</buf>, DMG Taken <color=#F74848>-10%</color>."
     },
     "600012": {
-      "name": "防御特化1",
-      "SpecificEffects": "反击伤害提升<color=#F74848>20%</color>"
+      "name": "Armor Specialization 1",
+      "SpecificEffects": "DMG <color=#F74848>+20%</color> on Retaliation."
     },
     "600013": {
-      "name": "AP优化1",
-      "SpecificEffects": "AP的初始值<color=#F74848>+1</color>"
+      "name": "AP Optimization 1",
+      "SpecificEffects": "Initial AP <color=#F74848>+1</color>."
     },
     "600021": {
-      "name": "据守作战3",
-      "SpecificEffects": "<buf ID=900022>[援护防御]</buf>每回合可发动的次数<color=#F74848>+1</color>"
+      "name": "Entrenched 3",
+      "SpecificEffects": "<buf ID=900022>[Guard]</buf>'s effective times per turn <color=#F74848>+1</color>."
     },
     "600022": {
-      "name": "防御特化2",
-      "SpecificEffects": "发动<buf ID=900022>[援护防御]</buf>时，战后回复<color=#F74848>1</color>AP，每回合最多发动<color=#F74848>1</color>次"
+      "name": "Armor Specialization 2",
+      "SpecificEffects": "When performing <buf ID=900022>[Guard]</buf>, restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>1</color> time per turn."
     },
     "600023": {
-      "name": "AP优化2",
-      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+      "name": "AP Optimization 2",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
     },
     "600031": {
-      "name": "坚不可摧1",
-      "SpecificEffects": "手臂遭受过量伤害时将触发<buf ID=900003>[不屈]</buf>，锁定至<color=#F74848>1</color>点耐久值，该效果每次出击仅可发动<color=#F74848>1</color>次"
+      "name": "Indestructible 1",
+      "SpecificEffects": "When the Arm suffers overdamage, trigger <buf ID=900003>[Guts]</buf>, locking to <color=#F74848>1</color> HP, effective <color=#F74848>1</color> time per battle."
     },
     "600032": {
-      "name": "AP优化3",
-      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+      "name": "AP Optimization 3",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
     },
     "600033": {
-      "name": "自适应作战1",
-      "SpecificEffects": "行动结束时，若本回合未主动攻击，则可以额外移动<color=#F74848>2</color>格"
+      "name": "Adaptive Warfare 1",
+      "SpecificEffects": "At the end of the action, if an Active Attack was not initiated this turn, an extra <color=#F74848>2</color> tiles can be moved."
     },
     "600034": {
-      "name": "坚不可摧2",
-      "SpecificEffects": "使触发<buf ID=900003>[不屈]</buf>的部位（包括损毁）在战后恢复<color=#F74848>35%</color>的耐久值"
+      "name": "Indestructible 2",
+      "SpecificEffects": "The part that triggers <buf ID=900003>[Guts]</buf> restores <color=#F74848>35%</color> of its HP after combat."
     },
     "600035": {
-      "name": "坚不可摧3",
-      "SpecificEffects": "使<buf ID=6000311>[坚不可摧1]</buf>可以在间隔<color=#F74848>3</color>回合后再次发动，每次出击不再有发动次数限制"
+      "name": "Indestructible 3",
+      "SpecificEffects": "Make <buf ID=900003>[Guts]</buf> able to trigger again after <color=#F74848>3</color> turns, with no effective time limit for each battle."
     },
     "600036": {
-      "name": "坚不可摧4",
-      "SpecificEffects": "使自身任意部位遭受过量伤害时都将触发<buf ID=6000311>[坚不可摧1]</buf>"
+      "name": "Indestructible 4",
+      "SpecificEffects": "When any part suffers overdamage, trigger <buf ID=900003>[Guts]</buf>."
     },
     "600841": {
       "name": "老骥伏枥1",
       "SpecificEffects": "<terrian ID=6008501 />持续时间<color=#F74848>+1</color>回合"
     },
     "600042": {
-      "name": "AP优化4",
-      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+      "name": "AP Optimization 4",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
     },
     "600043": {
-      "name": "据守作战4",
-      "SpecificEffects": "<buf ID=900022>[援护防御]</buf>每回合不再有发动次数限制"
+      "name": "Entrenched 4",
+      "SpecificEffects": "<buf ID=900022>[Guard]</buf> can now be triggered an unlimited number of times per turn."
     },
     "600844": {
       "name": "老骥伏枥2",

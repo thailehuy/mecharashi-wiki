@@ -3,7 +3,7 @@
   "RealName": "维罗妮卡·洛佩斯",
   "Gender": "Female",
   "Profession": "Gunner",
-  "Occupation": "狙击手",
+  "Occupation": "Sniper",
   "Talent0_2Ability": {
     "name": "创伤面侧写",
     "SpecificEffects": "使用轻型步枪主动攻击命中敌机时，根据部位类型施加不同的<buf ID=900137>[战损]</buf>，持续<color=#F74848>2</color>回合；主动攻击施加<buf ID=900137>[战损]</buf>时，可额外发动<buf ID=900004>[再攻击]</buf>，攻击前可以移动<color=#F74848>2</color>格，每回合最多发动<color=#F74848>1</color>次"
@@ -14,14 +14,14 @@
   },
   "skills": {
     "300001": {
-      "name": "狙击战1",
+      "name": "Sniper Warfare 1",
       "describe": "",
-      "SpecificEffects": "击毁目标后可发动<buf ID=900004>[再攻击]</buf>，攻击前无法移动，每回合最多发动<color=#F74848>2</color>次"
+      "SpecificEffects": "When destroying a target, <buf ID=900004>[Re-ATK]</buf> can be triggered, effective up to <color=#F74848>2</color> times per turn. Unable to move before attacking."
     },
     "700048": {
-      "name": "破袭",
+      "name": "Sabotage",
       "describe": "",
-      "SpecificEffects": "主动攻击时，对耐久值百分比低于<color=#F74848>50%</color>的部位造成的伤害提升<color=#F74848>20%</color>"
+      "SpecificEffects": "During an Active Attack, deals an additional <color=#F74848>20%</color> DMG to the part with HP below <color=#F74848>50%</color>."
     },
     "301203": {
       "name": "瞬时取证",
@@ -56,40 +56,40 @@
   },
   "neuralPassives": {
     "300011": {
-      "name": "狙击战2",
-      "SpecificEffects": "<buf ID=3000011>[狙击战1]</buf>在击破部位后即可发动"
+      "name": "Sniper Warfare 2",
+      "SpecificEffects": "After breaking a part, trigger <buf ID=900004>[Re-ATK]</buf>."
     },
     "300012": {
-      "name": "动力革新1",
-      "SpecificEffects": "AP的回复值<color=#F74848>+1</color>"
+      "name": "Power Innovation 1",
+      "SpecificEffects": "AP Regen <color=#F74848>+1</color>."
     },
     "300013": {
-      "name": "AP优化1",
-      "SpecificEffects": "AP的初始值<color=#F74848>+1</color>"
+      "name": "AP Optimization 1",
+      "SpecificEffects": "Initial AP <color=#F74848>+1</color>."
     },
     "300021": {
-      "name": "狙击战3",
-      "SpecificEffects": "发动<buf ID=3000011>[狙击战1]</buf>的<buf ID=900004>[再攻击]</buf>时，攻击前可以移动<color=#F74848>2</color>格"
+      "name": "Sniper Warfare 3",
+      "SpecificEffects": "Upon triggering <buf ID=900004>[Re-ATK]</buf>, allows movement of <color=#F74848>2</color> tiles before attacking."
     },
     "300022": {
-      "name": "动力革新2",
-      "SpecificEffects": "击破部位时，战后回复<color=#F74848>1</color>AP，每回合最多发动<color=#F74848>1</color>次"
+      "name": "Power Innovation 2",
+      "SpecificEffects": "When breaking a part, restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>1</color> time per turn."
     },
     "300023": {
-      "name": "AP优化2",
-      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+      "name": "AP Optimization 2",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
     },
     "301231": {
       "name": "追猎标记1",
       "SpecificEffects": "使用射击武器主动攻击击破部位时，根据部位的类型获得不同<buf ID=900141>[追猎增益]</buf>，每回合最多发动<color=#F74848>2</color>次"
     },
     "300032": {
-      "name": "AP优化3",
-      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+      "name": "AP Optimization 3",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
     },
     "300033": {
-      "name": "狙击战4",
-      "SpecificEffects": "<buf ID=900004>[再攻击]</buf>每回合可发动的次数<color=#F74848>+1</color>"
+      "name": "Sniper Warfare 4",
+      "SpecificEffects": "<buf ID=900004>[Re-ATK]</buf>'s effective times per turn <color=#F74848>+1</color>."
     },
     "301234": {
       "name": "追猎标记2",
@@ -108,12 +108,12 @@
       "SpecificEffects": "主动攻击对战后，若目标携带<buf ID=900137>[战损]</buf>，战后发动<buf ID=900004>[再攻击]</buf>，攻击前可以移动<color=#F74848>2</color>格，每回合最多发动<color=#F74848>1</color>次"
     },
     "300042": {
-      "name": "AP优化4",
-      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+      "name": "AP Optimization 4",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
     },
     "300043": {
-      "name": "动力革新3",
-      "SpecificEffects": "击毁目标时，战后额外回复<color=#F74848>1</color>AP，每回合最多发动<color=#F74848>2</color>次"
+      "name": "Power Innovation 3",
+      "SpecificEffects": "When destroying a target, additionally restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>2</color> times per turn."
     },
     "301244": {
       "name": "帷幕窥真2",

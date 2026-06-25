@@ -3,7 +3,7 @@
   "RealName": "罗娜·马哈利姆",
   "Gender": "Female",
   "Profession": "Mechanic",
-  "Occupation": "机械师",
+  "Occupation": "Machinist",
   "Talent0_2Ability": {
     "name": "神气十足",
     "SpecificEffects": "施放单体修理技能时，若目标AP小于等于<color=#F74848>2</color>，则使其回复<color=#F74848>1</color>AP"
@@ -14,14 +14,14 @@
   },
   "skills": {
     "500001": {
-      "name": "协同作战1",
+      "name": "CEC 1",
       "describe": "",
-      "SpecificEffects": "配合友军，使用突击或射击武器对友军攻击的目标发动<buf ID=900002>[协力攻击]</buf>，造成<color=#F74848>0.2</color>倍伤害，每回合最多发动<color=#F74848>1</color>次"
+      "SpecificEffects": "In cooperation with allies, launch a <buf ID=900002>[Link Attack]</buf> against the target, dealing <color=#F74848>0.2x</color> DMG, effective up to <color=#F74848>1</color> time per turn."
     },
     "500205": {
-      "name": "特别关照",
+      "name": "Special Care",
       "describe": "",
-      "SpecificEffects": "施放单体修理技能时，修理量提升<color=#F74848>10%</color>，可额外修复<color=#F74848>1</color>个损毁部位"
+      "SpecificEffects": "When executing an individual repair skill, Repair AMT <color=#F74848>+10%</color>, and additionally repairs <color=#F74848>1</color> damaged part."
     },
     "500603": {
       "name": "一鼓作气",
@@ -56,64 +56,64 @@
   },
   "neuralPassives": {
     "500011": {
-      "name": "协同作战2",
-      "SpecificEffects": "<buf ID=2000011>[协同作战1]</buf>每回合可发动的次数<color=#F74848>+1</color>"
+      "name": "CEC 2",
+      "SpecificEffects": "<buf ID=900002>[Link Attack]</buf>'s effective times per turn <color=#F74848>+1</color>."
     },
     "500012": {
-      "name": "机件维护1",
-      "SpecificEffects": "主动修理后，驱散<color=#F74848>1</color>个减益效果"
+      "name": "Part Maintenance 1",
+      "SpecificEffects": "After performing active repairs, dispel <color=#F74848>1</color> debuff."
     },
     "500013": {
-      "name": "AP优化1",
-      "SpecificEffects": "AP的初始值<color=#F74848>+1</color>"
+      "name": "AP Optimization 1",
+      "SpecificEffects": "Initial AP <color=#F74848>+1</color>."
     },
     "500021": {
-      "name": "协同作战3",
-      "SpecificEffects": "使<buf ID=2000011>[协同作战1]</buf>触发的<buf ID=900002>[协力攻击]</buf>的伤害倍率提升至<color=#F74848>0.3</color>倍"
+      "name": "CEC 3",
+      "SpecificEffects": "<buf ID=900002>[Link Attack]</buf>'s damage multiplier is increased to <color=#F74848>0.3</color>."
     },
     "500022": {
-      "name": "机件维护2",
-      "SpecificEffects": "AP的回复值<color=#F74848>+1</color>"
+      "name": "Part Maintenance 2",
+      "SpecificEffects": "AP Regen <color=#F74848>+1</color>."
     },
     "500023": {
-      "name": "AP优化2",
-      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+      "name": "AP Optimization 2",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
     },
     "500031": {
-      "name": "抢险维修1",
-      "SpecificEffects": "行动结束时，随机选择相邻<color=#F74848>1</color>格的其他友军进行<buf ID=900018>[被动修理]</buf>，修理量为修理背包的<color=#F74848>0.6</color>倍，无法修复损毁部位"
+      "name": "Emergency Repair 1",
+      "SpecificEffects": "At the end of the action, randomly select a single adjacent (<color=#F74848>1</color> tile) ally to perform <buf ID=900018>[Passive Repair]</buf>. The repair amount is <color=#F74848>0.6x</color> the Manipulator's Repair AMT and cannot repair damaged parts."
     },
     "500032": {
-      "name": "AP优化3",
-      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+      "name": "AP Optimization 3",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
     },
     "500033": {
-      "name": "灵活修理",
-      "SpecificEffects": "主动修理后，可以额外移动<color=#F74848>2</color>格"
+      "name": "Flexible Repair",
+      "SpecificEffects": "After performing active repairs, an additional <color=#F74848>2</color> tiles can be moved."
     },
     "500034": {
-      "name": "抢险维修2",
-      "SpecificEffects": "使<buf ID=5000311>[抢险维修1]</buf>会在周围<color=#F74848>2</color>格范围内选择目标"
+      "name": "Emergency Repair 2",
+      "SpecificEffects": "<buf ID=900018>[Passive Repair]</buf> selects targets within the adjacent (<color=#F74848>2</color> tiles) area."
     },
     "500035": {
-      "name": "抢险维修3",
-      "SpecificEffects": "使<buf ID=5000311>[抢险维修1]</buf>的修理量提升至修理背包的<color=#F74848>1</color>倍"
+      "name": "Emergency Repair 3",
+      "SpecificEffects": "<buf ID=900018>[Passive Repair]</buf>'s Repair AMT is now <color=#F74848>1x</color> that of the Manipulator."
     },
     "500036": {
-      "name": "抢险维修4",
-      "SpecificEffects": "使<buf ID=5000311>[抢险维修1]</buf>的修理目标数量<color=#F74848>+1</color>"
+      "name": "Emergency Repair 4",
+      "SpecificEffects": "The number of targets that <buf ID=900018>[Passive Repair]</buf> can repair increases by <color=#F74848>1</color>."
     },
     "500641": {
       "name": "元气满满1",
       "SpecificEffects": "使<buf ID=900071>[神气十足]</buf>对AP小于等于<color=#F74848>3</color>的目标也能生效"
     },
     "500042": {
-      "name": "AP优化4",
-      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+      "name": "AP Optimization 4",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
     },
     "500043": {
-      "name": "机件维修3",
-      "SpecificEffects": "每回合首次使用修理技能的AP消耗<color=#F74848>-1</color>，最低<color=#F74848>1</color>点"
+      "name": "Part Maintenance 3",
+      "SpecificEffects": "Each turn, the AP Cost of the 1st repair skill decreases by <color=#F74848>1</color>, with a minimum cost of <color=#F74848>1</color> AP."
     },
     "500644": {
       "name": "元气满满2",

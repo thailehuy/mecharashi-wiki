@@ -3,7 +3,7 @@
   "RealName": "科林·杜伊尔",
   "Gender": "Male",
   "Profession": "Launcher",
-  "Occupation": "战术家",
+  "Occupation": "Tactician",
   "Talent0_2Ability": {
     "name": "运筹帷幄",
     "SpecificEffects": "行动开始时，给距离自身最远的<color=#F74848>1</color>名没有携带<buf ID=4011502>[任命]</buf>的其他队友施加<buf ID=4011502>[任命]</buf>，持续<color=#F74848>3</color>回合，最多存在<color=#F74848>3</color>个<buf ID=4011502>[任命]</buf>"
@@ -14,9 +14,9 @@
   },
   "skills": {
     "400001": {
-      "name": "战略轰炸1",
+      "name": "Strategic Bombing 1",
       "describe": "",
-      "SpecificEffects": "战术武器弹仓耗尽时将<buf ID=900029>[自动装填]</buf>，装填需消耗<color=#F74848>3</color>回合"
+      "SpecificEffects": "When a Tactical Weapon runs out of ammo, trigger <buf ID=900029>[Auto Load]</buf>. This process takes <color=#F74848>3</color> turns."
     },
     "401102": {
       "name": "协力",
@@ -56,64 +56,64 @@
   },
   "neuralPassives": {
     "400011": {
-      "name": "战略轰炸2",
-      "SpecificEffects": "战术武器的弹仓容量<color=#F74848>+1</color>"
+      "name": "Strategic Bombing 2",
+      "SpecificEffects": "Tactical Weapon Magazine Capacity <color=#F74848>+1</color>."
     },
     "400012": {
-      "name": "动力革新1",
-      "SpecificEffects": "AP的回复值<color=#F74848>+1</color>"
+      "name": "Power Innovation 1",
+      "SpecificEffects": "AP Regen <color=#F74848>+1</color>."
     },
     "400013": {
-      "name": "AP优化1",
-      "SpecificEffects": "AP的初始值<color=#F74848>+1</color>"
+      "name": "AP Optimization 1",
+      "SpecificEffects": "Initial AP <color=#F74848>+1</color>."
     },
     "400021": {
-      "name": "战略轰炸3",
-      "SpecificEffects": "战术武器的装填冷却回合<color=#F74848>-1</color>"
+      "name": "Strategic Bombing 3",
+      "SpecificEffects": "Tactical Weapons Reload CD <color=#F74848>-1</color>."
     },
     "400022": {
-      "name": "动力革新2",
-      "SpecificEffects": "AP的回复值<color=#F74848>+1</color>"
+      "name": "Power Innovation 2",
+      "SpecificEffects": "AP Regen <color=#F74848>+1</color>."
     },
     "400023": {
-      "name": "AP优化2",
-      "SpecificEffects": "AP的上限值<color=#F74848>+2</color>"
+      "name": "AP Optimization 2",
+      "SpecificEffects": "AP Cap <color=#F74848>+2</color>."
     },
     "400031": {
-      "name": "狂轰滥炸1",
-      "SpecificEffects": "每回合首次使用战术武器攻击后可发动<buf ID=900004>[再攻击]</buf>，攻击前无法移动，最终伤害减少<color=#F74848>30%</color>，每回合最多发动<color=#F74848>1</color>次"
+      "name": "Indiscriminate 1",
+      "SpecificEffects": "After the first attack with a Tactical Weapon each turn, <buf ID=900004>[Re-ATK]</buf> can be triggered, with Final DMG <color=#F74848>-30%</color>, effective up to <color=#F74848>1</color> time per turn. Unable to move before attacking."
     },
     "400032": {
-      "name": "AP优化3",
-      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+      "name": "AP Optimization 3",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
     },
     "400033": {
-      "name": "战略轰炸4",
-      "SpecificEffects": "当<buf ID=900029>[自动装填]</buf>完成时，回复<color=#F74848>1</color>AP"
+      "name": "Strategic Bombing 4",
+      "SpecificEffects": "When <buf ID=900029>[Auto Load]</buf> is complete, restore <color=#F74848>1</color> AP."
     },
     "400034": {
-      "name": "狂轰滥炸2",
-      "SpecificEffects": "每回合首次使用战术武器攻击时，每消耗<color=#F74848>1</color>AP，伤害提升<color=#F74848>4%</color>，最多<color=#F74848>20%</color>"
+      "name": "Indiscriminate 2",
+      "SpecificEffects": "When attacking with a Tactical Weapon for the first time each turn, for every <color=#F74848>1</color> AP cost, DMG <color=#F74848>+4%</color>, up to <color=#F74848>20%</color>."
     },
     "400035": {
-      "name": "狂轰滥炸3",
-      "SpecificEffects": "发动<buf ID=4000311>[狂轰滥炸1]</buf>的<buf ID=900004>[再攻击]</buf>时，可使用剩余移动力继续移动"
+      "name": "Indiscriminate 3",
+      "SpecificEffects": "When <buf ID=900004>[Re-ATK]</buf> is triggered, allow continued moving with the remaining movement."
     },
     "400036": {
-      "name": "狂轰滥炸4",
-      "SpecificEffects": "发动<buf ID=4000311>[狂轰滥炸1]</buf>的<buf ID=900004>[再攻击]</buf>时，不再减少最终伤害"
+      "name": "Indiscriminate 4",
+      "SpecificEffects": "After triggering <buf ID=900004>[Re-ATK]</buf>, it no longer reduces final damage."
     },
     "401141": {
       "name": "决胜千里1",
       "SpecificEffects": "每次行动首次<buf ID=900004>[再攻击]</buf>时，攻击技能或<skill mainSkill=401104>[正奇有位]</skill>AP消耗<color=#F74848>-1</color>，最低<color=#F74848>1</color>点"
     },
     "600042": {
-      "name": "AP优化4",
-      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+      "name": "AP Optimization 4",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
     },
     "400043": {
-      "name": "动力革新3",
-      "SpecificEffects": "击毁目标时，战后额外回复<color=#F74848>1</color>AP，每回合最多发动<color=#F74848>2</color>次"
+      "name": "Power Innovation 3",
+      "SpecificEffects": "When destroying a target, additionally restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>2</color> times per turn."
     },
     "401144": {
       "name": "决胜千里2",

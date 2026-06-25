@@ -3,7 +3,7 @@
   "RealName": "贝尔莎·瓦格纳",
   "Gender": "Female",
   "Profession": "Gunner",
-  "Occupation": "狙击手",
+  "Occupation": "Sniper",
   "Talent0_2Ability": {
     "name": "明日星耀",
     "SpecificEffects": "出击时自动部署<terrian ID=3014501 />，可以使用指令<skill mainSkill=301452>[布哨]</skill>和<skill mainSkill=301453>[宿敌标记]</skill>；敌机遭受其他队友主动攻击对战时，使用狙击步枪发动<buf ID=900002>[协力攻击]</buf>，造成<color=#F74848>0.35</color>倍伤害，优先攻击队友攻击的部位，击破的部位视作为发起攻击队友的，每回合最多发动<color=#F74848>3</color>次；使用武器技能以外的攻击时获得<color=#F74848>1</color>层<buf ID=3014508>[干劲]</buf>，可叠加<color=#F74848>5</color>层"
@@ -14,9 +14,9 @@
   },
   "skills": {
     "300001": {
-      "name": "狙击战1",
+      "name": "Sniper Warfare 1",
       "describe": "",
-      "SpecificEffects": "击毁目标后可发动<buf ID=900004>[再攻击]</buf>，攻击前无法移动，每回合最多发动<color=#F74848>2</color>次"
+      "SpecificEffects": "When destroying a target, <buf ID=900004>[Re-ATK]</buf> can be triggered, effective up to <color=#F74848>2</color> times per turn. Unable to move before attacking."
     },
     "301402": {
       "name": "火热手感",
@@ -56,40 +56,40 @@
   },
   "neuralPassives": {
     "300011": {
-      "name": "狙击战2",
-      "SpecificEffects": "<buf ID=3000011>[狙击战1]</buf>在击破部位后即可发动"
+      "name": "Sniper Warfare 2",
+      "SpecificEffects": "After breaking a part, trigger <buf ID=900004>[Re-ATK]</buf>."
     },
     "300012": {
-      "name": "动力革新1",
-      "SpecificEffects": "AP的回复值<color=#F74848>+1</color>"
+      "name": "Power Innovation 1",
+      "SpecificEffects": "AP Regen <color=#F74848>+1</color>."
     },
     "300013": {
-      "name": "AP优化1",
-      "SpecificEffects": "AP的初始值<color=#F74848>+1</color>"
+      "name": "AP Optimization 1",
+      "SpecificEffects": "Initial AP <color=#F74848>+1</color>."
     },
     "300021": {
-      "name": "狙击战3",
-      "SpecificEffects": "发动<buf ID=3000011>[狙击战1]</buf>的<buf ID=900004>[再攻击]</buf>时，攻击前可以移动<color=#F74848>2</color>格"
+      "name": "Sniper Warfare 3",
+      "SpecificEffects": "Upon triggering <buf ID=900004>[Re-ATK]</buf>, allows movement of <color=#F74848>2</color> tiles before attacking."
     },
     "300022": {
-      "name": "动力革新2",
-      "SpecificEffects": "击破部位时，战后回复<color=#F74848>1</color>AP，每回合最多发动<color=#F74848>1</color>次"
+      "name": "Power Innovation 2",
+      "SpecificEffects": "When breaking a part, restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>1</color> time per turn."
     },
     "300023": {
-      "name": "AP优化2",
-      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+      "name": "AP Optimization 2",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
     },
     "301231": {
       "name": "追猎标记1",
       "SpecificEffects": "使用射击武器主动攻击击破部位时，根据部位的类型获得不同<buf ID=900141>[追猎增益]</buf>，每回合最多发动<color=#F74848>2</color>次"
     },
     "300032": {
-      "name": "AP优化3",
-      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+      "name": "AP Optimization 3",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
     },
     "300033": {
-      "name": "狙击战4",
-      "SpecificEffects": "<buf ID=900004>[再攻击]</buf>每回合可发动的次数<color=#F74848>+1</color>"
+      "name": "Sniper Warfare 4",
+      "SpecificEffects": "<buf ID=900004>[Re-ATK]</buf>'s effective times per turn <color=#F74848>+1</color>."
     },
     "301234": {
       "name": "追猎标记2",
@@ -108,12 +108,12 @@
       "SpecificEffects": "攻击<terrian ID=3014501 />范围内的敌机时，暴击率提升<color=#F74848>20%</color>，暴击伤害提升<color=#F74848>10%</color>"
     },
     "300042": {
-      "name": "AP优化4",
-      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+      "name": "AP Optimization 4",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
     },
     "300043": {
-      "name": "动力革新3",
-      "SpecificEffects": "击毁目标时，战后额外回复<color=#F74848>1</color>AP，每回合最多发动<color=#F74848>2</color>次"
+      "name": "Power Innovation 3",
+      "SpecificEffects": "When destroying a target, additionally restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>2</color> times per turn."
     },
     "301444": {
       "name": "我是传奇2",

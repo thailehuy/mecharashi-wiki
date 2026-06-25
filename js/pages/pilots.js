@@ -145,7 +145,7 @@ Pages.pilots = {
     var portraitSrc = PORTRAIT_BASE + encodeURIComponent(p.AvatarHeroIcon) + '.png';
 
     var innateEntry = (p.biomimetic_computer_data || []).find(function (e) {
-      return e.TitleUnitDetails === 'Profession Neuron - 1';
+      return /^[1-7]00001$/.test(e.skill3);
     });
     var occIconHtml = innateEntry && innateEntry.icon
       ? '<img class="occupation-icon" src="' + OCCUPATION_BASE + encodeURIComponent(innateEntry.icon) + '.png" alt="" />'
@@ -207,8 +207,8 @@ Pages.pilots = {
     var TYPE_CLASS = { EquipmentSkill: 'skill-type-attack', Order: 'skill-type-code', SpecialAssault: 'skill-type-special' };
 
     var withSkill = bcd.filter(function (e) { return e.skill && e.skill.SkillIcon; });
-    var innate    = withSkill.filter(function (e) { return e.TitleUnitDetails === 'Profession Neuron - 1'; });
-    var regular   = withSkill.filter(function (e) { return e.TitleUnitDetails !== 'Profession Neuron - 1'; });
+    var innate    = withSkill.filter(function (e) { return /^[1-7]00001$/.test(e.skill3); });
+    var regular   = withSkill.filter(function (e) { return !/^[1-7]00001$/.test(e.skill3); });
 
     function buildCard(entry, overrideLabel, overrideCls) {
       var sk        = entry.skill;

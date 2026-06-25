@@ -3,7 +3,7 @@
   "RealName": "海莉丝·穆勒",
   "Gender": "Female",
   "Profession": "Architect",
-  "Occupation": "调构师",
+  "Occupation": "Architect",
   "Talent0_2Ability": {
     "name": "悖想先驱",
     "SpecificEffects": "驾驶的机兵拥有多种形态，拥有独特的形态效果并可以独立装备武器背包；每次行动开始和<buf ID=900155>[激活]</buf>时，获得<color=#F74848>1</color>点[激发能]，累积<color=#F74848>5</color>点后可以使用<skill activeSkill=8001504></skill>解除<skill passiveSkill=800159>[虚粒子形态]</skill>限制，每回合只能使用<color=#F74848>1</color>次"
@@ -60,32 +60,32 @@
       "SpecificEffects": "<buf ID=900155>[激活]</buf>时，额外获得<color=#F74848>2</color>AP"
     },
     "100012": {
-      "name": "动力革新1",
-      "SpecificEffects": "AP的回复值<color=#F74848>+1</color>"
+      "name": "Power Innovation 1",
+      "SpecificEffects": "AP Regen <color=#F74848>+1</color>."
     },
     "100013": {
-      "name": "AP优化1",
-      "SpecificEffects": "AP的初始值<color=#F74848>+1</color>"
+      "name": "AP Optimization 1",
+      "SpecificEffects": "Initial AP <color=#F74848>+1</color>."
     },
     "800121": {
       "name": "形态切换3",
       "SpecificEffects": "攻击时，以机师六项属性中的最高值结算"
     },
     "100022": {
-      "name": "动力革新2",
-      "SpecificEffects": "击破部位时，战后回复<color=#F74848>1</color>AP，每回合最多发动<color=#F74848>1</color>次"
+      "name": "Power Innovation 2",
+      "SpecificEffects": "When breaking a part, restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>1</color> time per turn."
     },
     "100023": {
-      "name": "AP优化2",
-      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+      "name": "AP Optimization 2",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
     },
     "800131": {
       "name": "昏星之引1",
       "SpecificEffects": "<buf ID=900155>[激活]</buf>时，给周围<color=#F74848>3</color>格范围内的其他友军施加<color=#F74848>1</color>个随机增益效果，持续<color=#F74848>2</color>回合"
     },
     "100032": {
-      "name": "AP优化3",
-      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+      "name": "AP Optimization 3",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
     },
     "800133": {
       "name": "形态切换4",
@@ -108,12 +108,12 @@
       "SpecificEffects": "<buf ID=900155>[激活]</buf>时，根据自身的形态获得相应的<buf ID=900157>[形态增益]</buf>和<color=#F74848>1</color>个随机增益效果，持续<color=#F74848>2</color>回合"
     },
     "300042": {
-      "name": "AP优化4",
-      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+      "name": "AP Optimization 4",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
     },
     "300043": {
-      "name": "动力革新3",
-      "SpecificEffects": "击毁目标时，战后额外回复<color=#F74848>1</color>AP，每回合最多发动<color=#F74848>2</color>次"
+      "name": "Power Innovation 3",
+      "SpecificEffects": "When destroying a target, additionally restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>2</color> times per turn."
     },
     "800144": {
       "name": "奇点推演2",

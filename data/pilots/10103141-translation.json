@@ -3,7 +3,7 @@
   "RealName": "凯莉·波利斯",
   "Gender": "Female",
   "Profession": "Gunner",
-  "Occupation": "狙击手",
+  "Occupation": "Sniper",
   "Talent0_2Ability": {
     "name": "白鹳",
     "SpecificEffects": "可使用<skill mainSkill=301050>[特殊装填]</skill>，行动开始时获得<color=#F74848>1</color>层<buf ID=3010502>[强击弹药]</buf>，最多<color=#F74848>3</color>层；\n狙击步枪的负重降低<color=#F74848>15%</color>"
@@ -14,14 +14,14 @@
   },
   "skills": {
     "300001": {
-      "name": "狙击战1",
+      "name": "Sniper Warfare 1",
       "describe": "",
-      "SpecificEffects": "击毁目标后可发动<buf ID=900004>[再攻击]</buf>，攻击前无法移动，每回合最多发动<color=#F74848>2</color>次"
+      "SpecificEffects": "When destroying a target, <buf ID=900004>[Re-ATK]</buf> can be triggered, effective up to <color=#F74848>2</color> times per turn. Unable to move before attacking."
     },
     "700043": {
-      "name": "状态绝佳",
+      "name": "Excellent status",
       "describe": "",
-      "SpecificEffects": "自身的耐久值全满时，伤害提升<color=#F74848>15%</color>"
+      "SpecificEffects": "When self's HP is full, DMG <color=#F74848>+15%</color>."
     },
     "301003": {
       "name": "神闲",
@@ -56,64 +56,64 @@
   },
   "neuralPassives": {
     "300011": {
-      "name": "狙击战2",
-      "SpecificEffects": "<buf ID=3000011>[狙击战1]</buf>在击破部位后即可发动"
+      "name": "Sniper Warfare 2",
+      "SpecificEffects": "After breaking a part, trigger <buf ID=900004>[Re-ATK]</buf>."
     },
     "300012": {
-      "name": "动力革新1",
-      "SpecificEffects": "AP的回复值<color=#F74848>+1</color>"
+      "name": "Power Innovation 1",
+      "SpecificEffects": "AP Regen <color=#F74848>+1</color>."
     },
     "300013": {
-      "name": "AP优化1",
-      "SpecificEffects": "AP的初始值<color=#F74848>+1</color>"
+      "name": "AP Optimization 1",
+      "SpecificEffects": "Initial AP <color=#F74848>+1</color>."
     },
     "300021": {
-      "name": "狙击战3",
-      "SpecificEffects": "发动<buf ID=3000011>[狙击战1]</buf>的<buf ID=900004>[再攻击]</buf>时，攻击前可以移动<color=#F74848>2</color>格"
+      "name": "Sniper Warfare 3",
+      "SpecificEffects": "Upon triggering <buf ID=900004>[Re-ATK]</buf>, allows movement of <color=#F74848>2</color> tiles before attacking."
     },
     "300022": {
-      "name": "动力革新2",
-      "SpecificEffects": "击破部位时，战后回复<color=#F74848>1</color>AP，每回合最多发动<color=#F74848>1</color>次"
+      "name": "Power Innovation 2",
+      "SpecificEffects": "When breaking a part, restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>1</color> time per turn."
     },
     "300023": {
-      "name": "AP优化2",
-      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+      "name": "AP Optimization 2",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
     },
     "300031": {
-      "name": "禁区1",
-      "SpecificEffects": "使用射击武器，在射程内的敌机发起主动攻击对战前，触发<buf ID=900013>[警戒射击]</buf>，造成<color=#F74848>0.5</color>倍伤害，每回合最多发动<color=#F74848>1</color>次"
+      "name": "Forbidden Zone 1",
+      "SpecificEffects": "With a Ranged Weapon, launch <buf ID=900013>[Vigilant Shot]</buf> before the enemy attack within range, dealing <color=#F74848>0.35x</color> DMG, effective up to <color=#F74848>1</color> time per turn."
     },
     "300032": {
-      "name": "AP优化3",
-      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+      "name": "AP Optimization 3",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
     },
     "300033": {
-      "name": "狙击战4",
-      "SpecificEffects": "<buf ID=900004>[再攻击]</buf>每回合可发动的次数<color=#F74848>+1</color>"
+      "name": "Sniper Warfare 4",
+      "SpecificEffects": "<buf ID=900004>[Re-ATK]</buf>'s effective times per turn <color=#F74848>+1</color>."
     },
     "300034": {
-      "name": "禁区2",
-      "SpecificEffects": "<buf ID=3000311>[禁区1]</buf>每回合可发动的次数<color=#F74848>+1</color>"
+      "name": "Forbidden Zone 2",
+      "SpecificEffects": "<buf ID=900013>[Vigilant Shot]</buf>'s effective times per turn <color=#F74848>+1</color>."
     },
     "300035": {
-      "name": "禁区3",
-      "SpecificEffects": "<buf ID=900013>[警戒射击]</buf>的伤害倍率提升<color=#F74848>0.15</color>倍"
+      "name": "Forbidden Zone 3",
+      "SpecificEffects": "<buf ID=900013>[Vigilant Shot]</buf>'s damage multiplier is increased to <color=#F74848>0.5</color>."
     },
     "300036": {
-      "name": "禁区4",
-      "SpecificEffects": "<buf ID=900013>[警戒射击]</buf>必定攻击耐久值最低的部位，并使命中的目标造成伤害降低<color=#F74848>35%</color>，直到本次攻击结束"
+      "name": "Forbidden Zone 4",
+      "SpecificEffects": "<buf ID=900013>[Vigilant Shot]</buf> is launched against an enemy that has not attacked. Targets the part with the lowest HP."
     },
     "301041": {
       "name": "绝尘1",
       "SpecificEffects": "主动攻击对战时，若击毁目标，战后获得<color=#F74848>1</color>层<buf ID=3010502>[强击弹药]</buf>，每回合最多发动<color=#F74848>1</color>次"
     },
     "300042": {
-      "name": "AP优化4",
-      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+      "name": "AP Optimization 4",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
     },
     "300043": {
-      "name": "动力革新3",
-      "SpecificEffects": "击毁目标时，战后额外回复<color=#F74848>1</color>AP，每回合最多发动<color=#F74848>2</color>次"
+      "name": "Power Innovation 3",
+      "SpecificEffects": "When destroying a target, additionally restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>2</color> times per turn."
     },
     "301044": {
       "name": "绝尘2",

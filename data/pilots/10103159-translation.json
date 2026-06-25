@@ -3,7 +3,7 @@
   "RealName": "阿黛勒·马丁",
   "Gender": "Female",
   "Profession": "Assault",
-  "Occupation": "突击手",
+  "Occupation": "Raider",
   "Talent0_2Ability": {
     "name": "炽焰灼心",
     "SpecificEffects": "使用喷火器攻击时，立即为目标施加<buf ID=2018502>[炽焰]</buf>；敌机遭受主动攻击时，若携带<buf ID=2018502>[炽焰]</buf>，战后对该目标发动<buf ID=900129>[炽焰引爆Ⅰ]</buf>"
@@ -14,9 +14,9 @@
   },
   "skills": {
     "200001": {
-      "name": "协同作战1",
+      "name": "CEC 1",
       "describe": "",
-      "SpecificEffects": "配合友军，使用突击或射击武器对友军攻击的目标发动<buf ID=900002>[协力攻击]</buf>，造成<color=#F74848>0.2</color>倍伤害，每回合最多发动<color=#F74848>1</color>次"
+      "SpecificEffects": "In cooperation with allies, use Assault Weapons to launch a <buf ID=900002>[Link Attack]</buf> against the target, dealing <color=#F74848>0.2x</color> DMG, effective up to <color=#F74848>1</color> time per turn."
     },
     "201802": {
       "name": "蔷薇之刺",
@@ -56,64 +56,64 @@
   },
   "neuralPassives": {
     "200011": {
-      "name": "协同作战2",
-      "SpecificEffects": "<buf ID=2000011>[协同作战1]</buf>每回合可发动的次数<color=#F74848>+1</color>"
+      "name": "CEC 2",
+      "SpecificEffects": "<buf ID=900002>[Link Attack]</buf>'s effective times per turn <color=#F74848>+1</color>."
     },
     "200012": {
-      "name": "动力革新1",
-      "SpecificEffects": "AP的回复值<color=#F74848>+1</color>"
+      "name": "Power Innovation 1",
+      "SpecificEffects": "AP Regen <color=#F74848>+1</color>."
     },
     "200013": {
-      "name": "AP优化1",
-      "SpecificEffects": "AP的初始值<color=#F74848>+1</color>"
+      "name": "AP Optimization 1",
+      "SpecificEffects": "Initial AP <color=#F74848>+1</color>."
     },
     "200021": {
-      "name": "协同作战3",
-      "SpecificEffects": "使<buf ID=2000011>[协同作战1]</buf>触发的<buf ID=900002>[协力攻击]</buf>伤害倍率提升至<color=#F74848>0.3</color>倍"
+      "name": "CEC 3",
+      "SpecificEffects": "<buf ID=900002>[Link Attack]</buf>'s damage multiplier is increased to <color=#F74848>0.3</color>."
     },
     "200022": {
-      "name": "动力革新2",
-      "SpecificEffects": "击破部位时，战后回复<color=#F74848>1</color>AP，每回合最多发动<color=#F74848>1</color>次"
+      "name": "Power Innovation 2",
+      "SpecificEffects": "When breaking a part, restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>1</color> time per turn."
     },
     "200023": {
-      "name": "AP优化2",
-      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+      "name": "AP Optimization 2",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
     },
     "200031": {
-      "name": "完美机位1",
-      "SpecificEffects": "解锁突击武器的<buf ID=900011>[最佳射程]</buf>，与位于<buf ID=900011>[最佳射程]</buf>的目标对战时，最终伤害提升<color=#F74848>15%</color>"
+      "name": "Perfect Position 1",
+      "SpecificEffects": "Unlock the Assault Weapon's <buf ID=900011>[Ideal Range]</buf> ability. When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, final DMG <color=#F74848>+15%</color>."
     },
     "200032": {
-      "name": "AP优化3",
-      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+      "name": "AP Optimization 3",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
     },
     "200033": {
-      "name": "自适应作战1",
-      "SpecificEffects": "行动结束时，若本回合未主动攻击，则可以额外移动<color=#F74848>2</color>格"
+      "name": "Adaptive Warfare 1",
+      "SpecificEffects": "At the end of the action, if an Active Attack was not initiated this turn, an extra <color=#F74848>2</color> tiles can be moved."
     },
     "200034": {
-      "name": "完美机位2",
-      "SpecificEffects": "与位于<buf ID=900011>[最佳射程]</buf>的目标对战时，命中率提升<color=#F74848>12%</color>"
+      "name": "Perfect Position 2",
+      "SpecificEffects": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, Hit Rate <color=#F74848>+12%</color>."
     },
     "200035": {
-      "name": "完美机位3",
-      "SpecificEffects": "与位于<buf ID=900011>[最佳射程]</buf>的目标对战时，暴击率提升<color=#F74848>15%</color>"
+      "name": "Perfect Position 3",
+      "SpecificEffects": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, Crit Rate <color=#F74848>+12%</color>."
     },
     "200036": {
-      "name": "完美机位4",
-      "SpecificEffects": "与位于<buf ID=900011>[最佳射程]</buf>的目标对战时，<buf ID=2000311>[完美机位1]</buf>效果提升至<color=#F74848>30%</color>"
+      "name": "Perfect Position 4",
+      "SpecificEffects": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, final DMG <color=#F74848>+30%</color>."
     },
     "201841": {
       "name": "焰舞者1",
       "SpecificEffects": "在场时，所有敌机受到<terrian ID=4003081 />伤害时，对其施加<buf ID=2018502>[炽焰]</buf>"
     },
     "200042": {
-      "name": "AP优化4",
-      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+      "name": "AP Optimization 4",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
     },
     "200043": {
-      "name": "自适应作战2",
-      "SpecificEffects": "主动攻击前如果没有移动过，可发动<buf ID=900004>[再攻击]</buf>，攻击前无法移动，每回合最多发动<color=#F74848>1</color>次\n无法与同类<buf ID=900004>[再攻击]</buf>效果重复触发"
+      "name": "Adaptive Warfare 2",
+      "SpecificEffects": "If not moved before an Active Attack, <buf ID=900004>[Re-ATK]</buf> can be triggered, effective up to <color=#F74848>1</color> time per turn. Unable to move before attacking.\nEffects similar to <buf ID=900004>[Re-ATK]</buf> cannot be re-triggered."
     },
     "201844": {
       "name": "焰舞者2",
