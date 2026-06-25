@@ -24,6 +24,7 @@ $(function () {
     $('[data-page="' + page + '"]').addClass('active');
 
     $('#app-content').html(p.render(param));
+    window.scrollTo(0, 0);
 
     document.title = p.title + ' — Mecharashi Wiki';
   }
