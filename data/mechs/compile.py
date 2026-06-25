@@ -39,6 +39,8 @@ for path in sorted(glob.glob(f'{DIR}/[0-9]*.json')):
     t_path = f'{DIR}/{mid}-translation.json'
     t = json.load(open(t_path)) if os.path.exists(t_path) else {}
     apply_translation(entry, t)
+    if t.get('manjiFirepower'):
+        entry['manjiFirepower'] = t['manjiFirepower']
     entry['version'] = t.get('version', '1.0')
     mechs.append(entry)
 
