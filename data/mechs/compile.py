@@ -15,9 +15,6 @@ def apply_translation(entry, t):
                 for k, v in tr.items():
                     if v: mod[k] = v
 
-existing = json.load(open(f'{DIR}/compiled.json'))
-ver_map  = {m['name']: m.get('version', '1.0') for m in existing['mechs']}
-
 mechs = []
 for path in sorted(glob.glob(f'{DIR}/[0-9]*.json')):
     mid = os.path.basename(path).replace('.json', '')
@@ -39,12 +36,10 @@ for path in sorted(glob.glob(f'{DIR}/[0-9]*.json')):
     entry['manjiFirepower'] = manji.get('fire', body.get('fire', ''))
     entry['modules']        = manji.get('ModuleCarried', [])
 
-    # Apply translation if available
     t_path = f'{DIR}/{mid}-translation.json'
-    if os.path.exists(t_path):
-        apply_translation(entry, json.load(open(t_path)))
-
-    entry['version'] = ver_map.get(entry['name'], '1.0')
+    t = json.load(open(t_path)) if os.path.exists(t_path) else {}
+    apply_translation(entry, t)
+    entry['version'] = t.get('version', '1.0')
     mechs.append(entry)
 
 order = {'SSR': 0, 'SR': 1, 'R': 2}

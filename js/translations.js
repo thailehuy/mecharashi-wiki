@@ -13,7 +13,7 @@ var Translations = (function () {
     if (!t) return entry;
     var out = $.extend(true, {}, entry);
 
-    ['PilotName','RealName','Gender','Profession','Occupation'].forEach(function (f) {
+    ['PilotName','RealName','Gender','Profession','Occupation','version'].forEach(function (f) {
       if (t[f]) out[f] = t[f];
     });
 
@@ -55,7 +55,7 @@ var Translations = (function () {
     if (!t) return entry;
     var out = $.extend(true, {}, entry);
 
-    ['name','introduce'].forEach(function (f) { if (t[f]) out[f] = t[f]; });
+    ['name','introduce','version'].forEach(function (f) { if (t[f]) out[f] = t[f]; });
 
     if (t.modules) {
       (out.modules || []).forEach(function (mod) {

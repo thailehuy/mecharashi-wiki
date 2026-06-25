@@ -33,9 +33,6 @@ def apply_translation(entry, t):
                     for k, v in tr.items():
                         if v: ps[k] = v
 
-existing = json.load(open(f'{DIR}/compiled.json'))
-ver_map  = {p['PilotName']: p.get('version', '1.0') for p in existing['pilots']}
-
 pilots = []
 for path in sorted(glob.glob(f'{DIR}/[0-9]*.json')):
     pid = os.path.basename(path).replace('.json', '')
@@ -44,18 +41,15 @@ for path in sorted(glob.glob(f'{DIR}/[0-9]*.json')):
     raw = json.load(open(path))['data']['data']
     entry = {k: raw.get(k, '') for k in FIELDS}
 
-    # Apply translation if available
     t_path = f'{DIR}/{pid}-translation.json'
-    if os.path.exists(t_path):
-        apply_translation(entry, json.load(open(t_path)))
+    t = json.load(open(t_path)) if os.path.exists(t_path) else {}
+    apply_translation(entry, t)
+    entry['version'] = t.get('version', '1.0')
 
     pilots.append(entry)
 
 order = {'SSR': 0, 'SR': 1, 'R': 2}
 pilots.sort(key=lambda p: (order.get(p.get('quality',''), 9), p.get('PilotName','')))
-
-for p in pilots:
-    p['version'] = ver_map.get(p['PilotName'], '1.0')
 
 out = {'pilots': pilots}
 with open(f'{DIR}/compiled.json', 'w') as f:
