@@ -1,16 +1,16 @@
 {
-  "PilotName": "奥菲利亚",
-  "RealName": "阿涅丝·纽曼",
+  "PilotName": "Ophelia",
+  "RealName": "Aynis Newman",
   "Gender": "Female",
   "Profession": "Striker",
-  "Occupation": "格斗家",
+  "Occupation": "Fighter",
   "Talent0_2Ability": {
     "name": "∑-04",
-    "SpecificEffects": "使用刀剑主动攻击击毁目标时，战后获得<color=#F74848>1</color>层<buf ID=1015414>[看破]</buf>，可叠加<color=#F74848>3</color>层，下次行动开始时移除"
+    "SpecificEffects": "When using an Alter-Blade to actively attack and destroy a target, gains <color=#F74848>1</color> stack or <buf ID=1015414>[Critical Sense]<buf> after combat, stacking up to <color=#F74848>3</color> times. Removed at the start of next action"
   },
   "Talent3_5Ability": {
     "name": "∑-04",
-    "SpecificEffects": "使用刀剑主动攻击击毁目标时，战后获得<color=#F74848>1</color>层<buf ID=1015414>[看破]</buf>，可叠加<color=#F74848>3</color>层，下次行动开始时移除；\n出击时，获得<color=#F74848>1</color>层<buf ID=1015414>[看破]</buf>；手臂遭受过量伤害时将触发<buf ID=900003>[不屈]</buf>，锁定至<color=#F74848>1</color>点耐久，间隔<color=#F74848>3</color>回合后可再次发动"
+    "SpecificEffects": "When using an Alter-Blade to actively attack and destroy a target, gains <color=#F74848>1</color> stack or <buf ID=1015414>[Critical Sense]<buf> after combat, stacking up to <color=#F74848>3</color> times. Removed at the start of next action. When deployed, gains <color=#F74848>1</color> stack or <buf ID=1015414>[Critical Sense]<buf>. When an arm would be destroyed, trigger <buf ID=900003>[Guts]</buf> to lock its HP at <color=#F74848>1</color>. Can trigger again after color=#F74848>3</color> turns."
   },
   "skills": {
     "100001": {
