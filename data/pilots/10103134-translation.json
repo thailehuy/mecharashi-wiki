@@ -1,0 +1,131 @@
+{
+  "PilotName": "奥菲利亚",
+  "RealName": "阿涅丝·纽曼",
+  "Gender": "Female",
+  "Profession": "Striker",
+  "Occupation": "格斗家",
+  "Talent0_2Ability": {
+    "name": "∑-04",
+    "SpecificEffects": "使用刀剑主动攻击击毁目标时，战后获得<color=#F74848>1</color>层<buf ID=1015414>[看破]</buf>，可叠加<color=#F74848>3</color>层，下次行动开始时移除"
+  },
+  "Talent3_5Ability": {
+    "name": "∑-04",
+    "SpecificEffects": "使用刀剑主动攻击击毁目标时，战后获得<color=#F74848>1</color>层<buf ID=1015414>[看破]</buf>，可叠加<color=#F74848>3</color>层，下次行动开始时移除；\n出击时，获得<color=#F74848>1</color>层<buf ID=1015414>[看破]</buf>；手臂遭受过量伤害时将触发<buf ID=900003>[不屈]</buf>，锁定至<color=#F74848>1</color>点耐久，间隔<color=#F74848>3</color>回合后可再次发动"
+  },
+  "skills": {
+    "100001": {
+      "name": "运动战1",
+      "describe": "",
+      "SpecificEffects": "击破部位后可发动<buf ID=900004>[再攻击]</buf>，攻击前无法移动，每回合最多发动<color=#F74848>2</color>次"
+    },
+    "700034": {
+      "name": "胜券在握",
+      "describe": "",
+      "SpecificEffects": "主动攻击对战时，若自身的耐久值百分比大于等于目标，伤害提升<color=#F74848>15%</color>"
+    },
+    "101503": {
+      "name": "恣刃",
+      "describe": "",
+      "SpecificEffects": "遭受导弹攻击时，若装备两把刀剑且双手完好，消耗<color=#F74848>1</color>层<buf ID=900100>[看破]</buf>，免疫前<color=#F74848>2</color>发命中的导弹伤害"
+    },
+    "101504": {
+      "name": "绝掠",
+      "describe": "使用刀剑攻击单个目标，造成<color=#F74848>1.2</color>倍伤害，必定攻击耐久值最高的部位",
+      "SpecificEffects": ""
+    },
+    "101505": {
+      "name": "幻痛",
+      "describe": "装备两把刀剑才可使用；\n立即获得<color=#F74848>2</color>AP和<buf ID=1015052>[临界超适体]</buf>，持续至行动结束，然后可以使用完整移动力继续行动",
+      "SpecificEffects": ""
+    },
+    "101506": {
+      "name": "连锋击",
+      "describe": "使用两把刀剑攻击指定方向，对目标造成<color=#F74848>1.2</color>倍伤害，优先攻击耐久值不满的部位，若该方向存在相邻敌机，可继续攻击相邻敌机，最多攻击<color=#F74848>3</color>名敌机，之后停留在最远目标的另一侧；\n若命中<color=#F74848>2</color>名及以上敌机时，战后可发动<buf ID=900005>[再行动]</buf>，使用完整移动力移动",
+      "SpecificEffects": ""
+    },
+    "101507": {
+      "name": "轻慢",
+      "describe": "",
+      "SpecificEffects": "发动<buf ID=900109>[处决]</buf>或<buf ID=900100>[看破]</buf>破坏部位时，恢复所有完好部位<color=#F74848>15%</color>耐久值，每回合最多发动<color=#F74848>1</color>次"
+    },
+    "101508": {
+      "name": "刃流闪",
+      "describe": "使用两把刀剑连续攻击单个目标，最少攻击<color=#F74848>4</color>次，每次攻击造成<color=#F74848>0.7</color>倍伤害，之后每额外攻击<color=#F74848>1</color>次消耗<color=#F74848>1</color>AP，直到击破任意部位或AP耗尽，无视大盾的<buf ID=900027>[命中转移]</buf>效果",
+      "SpecificEffects": ""
+    }
+  },
+  "neuralPassives": {
+    "100011": {
+      "name": "运动战2",
+      "SpecificEffects": "发动<buf ID=900004>[再攻击]</buf>时，攻击前可以移动<color=#F74848>2</color>格"
+    },
+    "100012": {
+      "name": "动力革新1",
+      "SpecificEffects": "AP的回复值<color=#F74848>+1</color>"
+    },
+    "100013": {
+      "name": "AP优化1",
+      "SpecificEffects": "AP的初始值<color=#F74848>+1</color>"
+    },
+    "100021": {
+      "name": "运动战3",
+      "SpecificEffects": "击毁目标后可发动<buf ID=900005>[再行动]</buf>，使用完整移动力移动"
+    },
+    "100022": {
+      "name": "动力革新2",
+      "SpecificEffects": "击破部位时，战后回复<color=#F74848>1</color>AP，每回合最多发动<color=#F74848>1</color>次"
+    },
+    "100023": {
+      "name": "AP优化2",
+      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+    },
+    "101531": {
+      "name": "终结者1",
+      "SpecificEffects": "使用刀剑主动攻击后，如果命中的部位耐久值低于<color=#F74848>15%</color>，发动<buf ID=900109>[处决]</buf>效果，战后直接破坏该部位"
+    },
+    "100032": {
+      "name": "AP优化3",
+      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+    },
+    "100033": {
+      "name": "运动战4",
+      "SpecificEffects": "<buf ID=900004>[再攻击]</buf>或<buf ID=900005>[再行动]</buf>每回合可发动的次数<color=#F74848>+1</color>"
+    },
+    "101534": {
+      "name": "终结者2",
+      "SpecificEffects": "<buf ID=1015311>[终结者1]</buf>破坏部位的临界线提升至<color=#F74848>25%</color>"
+    },
+    "101535": {
+      "name": "终结者3",
+      "SpecificEffects": "发动<buf ID=900101>[终结者]</buf>破坏部位时，抵消<color=#F74848>1</color>次<buf ID=900004>[再攻击]</buf>或<buf ID=900005>[再行动]</buf>的次数扣除并额外回复<color=#F74848>1</color>AP，每回合最多发动<color=#F74848>1</color>次"
+    },
+    "101536": {
+      "name": "终结者4",
+      "SpecificEffects": "使用刀剑击破躯干以外的部位时，对躯干造成相当于该部位最大耐久值<color=#F74848>25%</color>的<buf ID=900017>[固定伤害]</buf>"
+    },
+    "101541": {
+      "name": "独骜1",
+      "SpecificEffects": "使用刀剑主动攻击击破部位时，战后获得<color=#F74848>1</color>层<buf ID=900100>[看破]</buf>，每回合最多发动<color=#F74848>1</color>次"
+    },
+    "100042": {
+      "name": "AP优化4",
+      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+    },
+    "100043": {
+      "name": "动力革新3",
+      "SpecificEffects": "击毁目标时，战后额外回复<color=#F74848>1</color>AP，每回合最多发动<color=#F74848>2</color>次"
+    },
+    "101544": {
+      "name": "独骜2",
+      "SpecificEffects": "携带<buf ID=900100>[看破]</buf>时，命中率和暴击率提升<color=#F74848>15%</color>"
+    },
+    "101545": {
+      "name": "独骜3",
+      "SpecificEffects": "遭受攻击后，若耐久值低于<color=#F74848>50%</color>，战后恢复所有部位<color=#F74848>10%</color>的耐久值，可修复<color=#F74848>1</color>个损毁部位，并获得<color=#F74848>1</color>层<buf ID=900100>[看破]</buf>，该效果间隔<color=#F74848>3</color>回合才可再次触发"
+    },
+    "101546": {
+      "name": "独骜4",
+      "SpecificEffects": "<buf ID=900100>[看破]</buf>优先攻击携带武器的手臂，如果命中的部位耐久值低于<color=#F74848>30%</color>，发动<buf ID=900109>[处决]</buf>效果，战后直接破坏该部位"
+    }
+  }
+}

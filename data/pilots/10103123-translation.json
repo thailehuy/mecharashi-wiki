@@ -1,0 +1,131 @@
+{
+  "PilotName": "Yevgeny",
+  "RealName": "Yevgeny Ivanovic Goman",
+  "Gender": "Male",
+  "Profession": "Defender",
+  "Occupation": "Guardian",
+  "Talent0_2Ability": {
+    "name": "Initiative",
+    "SpecificEffects": "When attacked, trigger <buf ID=900023>[Quick Draw]</buf> before the enemy, then trigger <buf ID=900028>[Add Strike]</buf> after the enemy's attack, dealing <color=#F74848>0.75x</color> DMG, effective up to <color=#F74848>2</color> times per turn."
+  },
+  "Talent3_5Ability": {
+    "name": "Initiative",
+    "SpecificEffects": "When attacked, trigger <buf ID=900023>[Quick Draw]</buf> before the enemy, then trigger <buf ID=900028>[Add Strike]</buf> after the enemy's attack, dealing <color=#F74848>0.75x</color> DMG, effective up to <color=#F74848>2</color> times per turn.\nAllows a Light Rifle to attack targets within an adjacent (<color=#F74848>1</color> tile) area."
+  },
+  "skills": {
+    "600001": {
+      "name": "Entrenched 1",
+      "describe": "",
+      "SpecificEffects": "Trigger <buf ID=900022>[Guard]</buf> to protect adjacent (<color=#F74848>1</color> tile) allies from Assault and Ranged attacks, effective up to <color=#F74848>2</color> times per turn."
+    },
+    "600402": {
+      "name": "Broken Arm",
+      "describe": "Uses Light Rifle to attack a target, dealing <color=#F74848>1.25x</color> DMG. This attack prioritizes Arms.",
+      "SpecificEffects": ""
+    },
+    "700045": {
+      "name": "Militant",
+      "describe": "",
+      "SpecificEffects": "When taking damage, gain <buf ID=7000452>[Fury]</buf> after combat, up to <color=#F74848>4</color> stacks, lasting for <color=#F74848>1</color> turn."
+    },
+    "600404": {
+      "name": "Aggressive",
+      "describe": "Protects adjacent allies (<color=#F74848>2</color> tiles) from Assault and Ranged attacks, effective up to <color=#F74848>2</color> times per turn. Gains <buf ID=6004041>[Aggressive]</buf> for <color=#F74848>2</color> turns.",
+      "SpecificEffects": ""
+    },
+    "700040": {
+      "name": "Multiple-refined",
+      "describe": "",
+      "SpecificEffects": "For every <color=#F74848>10%</color> reduction in self HP, DMG Taken <color=#F74848>-4%</color>, up to <color=#F74848>20%</color>."
+    },
+    "600406": {
+      "name": "Sudden Shot",
+      "describe": "Uses Light Rifle to attack a target, dealing <color=#F74848>1.0x</color> DMG. Triggers <buf ID=900001>[Flurry Strike]</buf> after the enemy attacks, dealing <color=#F74848>0.7x</color> DMG. Before combat, gains <buf ID=7100105>[Hit Rate Up III]</buf>, lasting <color=#F74848>1</color> turn.",
+      "SpecificEffects": ""
+    },
+    "600407": {
+      "name": "Rifle Mastery",
+      "describe": "",
+      "SpecificEffects": "If no part is broken after attacking, DMG Taken <color=#F74848>-15%</color>."
+    },
+    "600408": {
+      "name": "Sensor Jamming",
+      "describe": "Uses Light Rifle to shoot a target <color=#F74848>2</color> times, each shot dealing <color=#F74848>1x</color> DMG. After combat, it inflicts <buf ID=6004081>[Reaction Hysteresis]</buf> on the target, lasting <color=#F74848>1</color> turn.",
+      "SpecificEffects": ""
+    }
+  },
+  "neuralPassives": {
+    "600011": {
+      "name": "Entrenched 2",
+      "SpecificEffects": "When performing <buf ID=900022>[Guard]</buf>, DMG Taken <color=#F74848>-10%</color>."
+    },
+    "600012": {
+      "name": "Armor Specialization 1",
+      "SpecificEffects": "DMG <color=#F74848>+20%</color> on Retaliation."
+    },
+    "600013": {
+      "name": "AP Optimization 1",
+      "SpecificEffects": "Initial AP <color=#F74848>+1</color>."
+    },
+    "600021": {
+      "name": "Entrenched 3",
+      "SpecificEffects": "<buf ID=900022>[Guard]</buf>'s effective times per turn <color=#F74848>+1</color>."
+    },
+    "600022": {
+      "name": "Armor Specialization 2",
+      "SpecificEffects": "When performing <buf ID=900022>[Guard]</buf>, restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>1</color> time per turn."
+    },
+    "600023": {
+      "name": "AP Optimization 2",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
+    },
+    "600031": {
+      "name": "Indestructible 1",
+      "SpecificEffects": "When the Arm suffers overdamage, trigger <buf ID=900003>[Guts]</buf>, locking to <color=#F74848>1</color> HP, effective <color=#F74848>1</color> time per battle."
+    },
+    "600032": {
+      "name": "AP Optimization 3",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
+    },
+    "600033": {
+      "name": "Adaptive Warfare 1",
+      "SpecificEffects": "At the end of the action, if an Active Attack was not initiated this turn, an extra <color=#F74848>2</color> tiles can be moved."
+    },
+    "600034": {
+      "name": "Indestructible 2",
+      "SpecificEffects": "The part that triggers <buf ID=900003>[Guts]</buf> restores <color=#F74848>35%</color> of its HP after combat."
+    },
+    "600035": {
+      "name": "Indestructible 3",
+      "SpecificEffects": "Make <buf ID=900003>[Guts]</buf> able to trigger again after <color=#F74848>3</color> turns, with no effective time limit for each battle."
+    },
+    "600036": {
+      "name": "Indestructible 4",
+      "SpecificEffects": "When any part suffers overdamage, trigger <buf ID=900003>[Guts]</buf>."
+    },
+    "600441": {
+      "name": "Northern Spirit 1",
+      "SpecificEffects": "When triggering <buf ID=900023>[Quick Draw]</buf> or <buf ID=900028>[Add Strike]</buf>, DMG <color=#F74848>+15%</color>."
+    },
+    "600042": {
+      "name": "AP Optimization 4",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
+    },
+    "600043": {
+      "name": "Entrenched 4",
+      "SpecificEffects": "<buf ID=900022>[Guard]</buf> can now be triggered an unlimited number of times per turn."
+    },
+    "600444": {
+      "name": "Northern Spirit 2",
+      "SpecificEffects": "<buf ID=6004501>[Initiative]</buf>'s effective times per turn<color=#F74848>+1</color>."
+    },
+    "600445": {
+      "name": "Northern Spirit 3",
+      "SpecificEffects": "When triggering <buf ID=900023>[Quick Draw]</buf>, prioritize hitting the Arm part."
+    },
+    "600446": {
+      "name": "Northern Spirit 4",
+      "SpecificEffects": "When triggering <buf ID=900028>[Add Strike]</buf>, prioritize hitting the part with the lowest HP."
+    }
+  }
+}

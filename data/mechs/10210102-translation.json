@@ -1,0 +1,18 @@
+{
+  "name": "Radiance",
+  "introduce": "DD-102 Radiance\nThis ST is a prototype mech developed by Doll Industries. It won the Best Appearance Award in an ST Design Competition held by the Dawnstar League.\nThe design of this ST was inspired by sports cars, giving it a sleek and elegant appearance. It offers outstanding performance in reducing resistance and minimizing noise.\nThe Radiance has achieved remarkable results in various counter-terrorism operations. However, due to its high manufacturing cost only a small number of them are currently in service with the regular army.",
+  "modules": {
+    "10074": {
+      "name": "Shock Absorber",
+      "SpecificEffects": "When taking damage, there is a <color=#F74848>70%</color> chance to trigger: DMG Taken <color=#F74848>-15%</color>."
+    },
+    "30082": {
+      "name": "Crusher Mod",
+      "SpecificEffects": "When attacking a target that carries debuffs, DMG <color=#F74848>+4%</color>."
+    },
+    "40084": {
+      "name": "Crit RES Mod",
+      "SpecificEffects": "Crit RES <color=#F74848>+10%</color>."
+    }
+  }
+}

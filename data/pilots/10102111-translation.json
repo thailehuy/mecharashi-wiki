@@ -1,0 +1,131 @@
+{
+  "PilotName": "Gareth",
+  "RealName": "Gareth Clayton",
+  "Gender": "Male",
+  "Profession": "Mechanic",
+  "Occupation": "Machinist",
+  "Talent0_2Ability": {
+    "name": "Steady Hand",
+    "SpecificEffects": "After performing active repairs, grant <buf ID=5003502>[Armor Care I]</buf> to the target, effective for <color=#F74848>1</color> time and lasting for <color=#F74848>2</color> turns."
+  },
+  "Talent3_5Ability": {
+    "name": "Steady Hand",
+    "SpecificEffects": "After performing active repairs, grant <buf ID=5003502>[Armor Care I]</buf> to the target, effective for <color=#F74848>1</color> time and lasting for <color=#F74848>2</color> turns.\nWhen applying buffs, the duration <color=#F74848>+1</color>."
+  },
+  "skills": {
+    "500001": {
+      "name": "CEC 1",
+      "describe": "",
+      "SpecificEffects": "In cooperation with allies, launch a <buf ID=900002>[Link Attack]</buf> against the target, dealing <color=#F74848>0.2x</color> DMG, effective up to <color=#F74848>1</color> time per turn."
+    },
+    "500302": {
+      "name": "Fire Control Calibration",
+      "describe": "Grant <buf ID=7100304>[DMG UP II]</buf> to all allies within a <range type=1>Diamond (2 tiles) area</range>, lasting for <color=#F74848>2</color> turns.",
+      "SpecificEffects": ""
+    },
+    "700039": {
+      "name": "Bulletproof Coating",
+      "describe": "",
+      "SpecificEffects": "When self's HP is higher than <color=#F74848>80%</color>, DMG Taken <color=#F74848>-20%</color>."
+    },
+    "700019": {
+      "name": "Cross Repair",
+      "describe": "Restore the HP of all allies within a <range type=1>Cross (1 tile)</range> area, with the repair amount being <color=#F74848>1x</color> the Manipulator's Repair AMT. This can repair <color=#F74848>1</color> damaged part.",
+      "SpecificEffects": ""
+    },
+    "500305": {
+      "name": "Repair Mastery",
+      "describe": "",
+      "SpecificEffects": "After performing active repairs, if the target's HP% is below <color=#F74848>50%</color>, Repair AMT <color=#F74848>+20%</color>."
+    },
+    "500306": {
+      "name": "Renovate",
+      "describe": "Restore HP for all parts of a ST. The repair amount is <color=#F74848>2.0x</color> the Manipulator's Repair AMT and can repair <color=#F74848>1</color> damaged part. The target also gains <color=#F74848>2</color> AP.",
+      "SpecificEffects": ""
+    },
+    "700038": {
+      "name": "Emergency Handling",
+      "describe": "",
+      "SpecificEffects": "When performing active repairs, Repair AMT <color=#F74848>-20%</color> but can additionally repair <color=#F74848>1</color> damaged part."
+    },
+    "500308": {
+      "name": "Full Maintenance",
+      "describe": "Restore the HP of all allies within a <range type=1>Cross (1 tile) area</range>. The repair amount is <color=#F74848>1.3x</color> the Manipulator's Repair AMT. It can repair <color=#F74848>1</color> damaged part. Additionally, all affected allies gain <color=#F74848>1</color> AP.",
+      "SpecificEffects": ""
+    }
+  },
+  "neuralPassives": {
+    "500011": {
+      "name": "CEC 2",
+      "SpecificEffects": "<buf ID=900002>[Link Attack]</buf>'s effective times per turn <color=#F74848>+1</color>."
+    },
+    "500012": {
+      "name": "Part Maintenance 1",
+      "SpecificEffects": "After performing active repairs, dispel <color=#F74848>1</color> debuff."
+    },
+    "500013": {
+      "name": "AP Optimization 1",
+      "SpecificEffects": "Initial AP <color=#F74848>+1</color>."
+    },
+    "500021": {
+      "name": "CEC 3",
+      "SpecificEffects": "<buf ID=900002>[Link Attack]</buf>'s damage multiplier is increased to <color=#F74848>0.3</color>."
+    },
+    "500022": {
+      "name": "Part Maintenance 2",
+      "SpecificEffects": "AP Regen <color=#F74848>+1</color>."
+    },
+    "500023": {
+      "name": "AP Optimization 2",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
+    },
+    "500031": {
+      "name": "Emergency Repair 1",
+      "SpecificEffects": "At the end of the action, randomly select a single adjacent (<color=#F74848>1</color> tile) ally to perform <buf ID=900018>[Passive Repair]</buf>. The repair amount is <color=#F74848>0.6x</color> the Manipulator's Repair AMT and cannot repair damaged parts."
+    },
+    "500032": {
+      "name": "AP Optimization 3",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
+    },
+    "500033": {
+      "name": "Flexible Repair",
+      "SpecificEffects": "After performing active repairs, an additional <color=#F74848>2</color> tiles can be moved."
+    },
+    "500034": {
+      "name": "Emergency Repair 2",
+      "SpecificEffects": "<buf ID=900018>[Passive Repair]</buf> selects targets within the adjacent (<color=#F74848>2</color> tiles) area."
+    },
+    "500035": {
+      "name": "Emergency Repair 3",
+      "SpecificEffects": "<buf ID=900018>[Passive Repair]</buf>'s Repair AMT is now <color=#F74848>1x</color> that of the Manipulator."
+    },
+    "500036": {
+      "name": "Emergency Repair 4",
+      "SpecificEffects": "The number of targets that <buf ID=900018>[Passive Repair]</buf> can repair increases by <color=#F74848>1</color>."
+    },
+    "500341": {
+      "name": "Craftsman 1",
+      "SpecificEffects": "<buf ID=900055>[Armor Care]</buf> has a <color=#F74848>20%</color> chance not to consume any stacks when it takes effect."
+    },
+    "500042": {
+      "name": "AP Optimization 4",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
+    },
+    "500043": {
+      "name": "Part Maintenance 3",
+      "SpecificEffects": "Each turn, the AP Cost of the 1st repair skill decreases by <color=#F74848>1</color>, with a minimum cost of <color=#F74848>1</color> AP."
+    },
+    "500344": {
+      "name": "Craftsman 2",
+      "SpecificEffects": "Enable <buf ID=900055>[Armor Care]</buf> to last until it takes effect."
+    },
+    "500345": {
+      "name": "Craftsman 3",
+      "SpecificEffects": "Enhance <buf ID=900055>[Armor Care]</buf> to reduce the DMG Taken effect it provides by <color=#F74848>20%</color>."
+    },
+    "500346": {
+      "name": "Craftsman 4",
+      "SpecificEffects": "<buf ID=900055>[Armor Care]</buf> will be effective for <color=#F74848>2</color> times."
+    }
+  }
+}

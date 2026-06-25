@@ -1,0 +1,18 @@
+{
+  "name": "Gamesaurs",
+  "introduce": "ASX-114 Gamesaurs\nA heavy ST developed and produced by An-Holt during the Milkhama War.\nEquipped with a large sliding monitor to enhance tracking and locking performance, it uses an ASX-114 combat core that allows it to specialize in combat with agile targets. Its head-mounted electronic jammer can launch electromagnetic pulses to interfere with enemy evasion systems while tracking their trajectory.",
+  "modules": {
+    "30082": {
+      "name": "Crusher Mod",
+      "SpecificEffects": "When attacking a target that carries debuffs, DMG <color=#F74848>+4%</color>."
+    },
+    "40084": {
+      "name": "Crit RES Mod",
+      "SpecificEffects": "Crit RES <color=#F74848>+10%</color>."
+    },
+    "10094": {
+      "name": "Electronic Blocker",
+      "SpecificEffects": "When attacking, there is a <color=#F74848>70%</color> chance to trigger: target's Dodge Rate <color=#F74848>-12%</color>."
+    }
+  }
+}

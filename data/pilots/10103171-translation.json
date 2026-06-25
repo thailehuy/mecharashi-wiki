@@ -1,0 +1,131 @@
+{
+  "PilotName": "战部渡",
+  "RealName": "战部渡",
+  "Gender": "Male",
+  "Profession": "Striker",
+  "Occupation": "格斗家",
+  "Talent0_2Ability": {
+    "name": "救世主",
+    "SpecificEffects": "自身周围<color=#F74848>3</color>格范围内，每有<color=#F74848>1</color>名其他友军，伤害提升<color=#F74848>5%</color>，遭受伤害降低<color=#F74848>5%</color>，最多<color=#F74848>20%</color>；场上存在敌方首领时，机师作战能力提升<color=#F74848>8%</color>"
+  },
+  "Talent3_5Ability": {
+    "name": "救世主",
+    "SpecificEffects": "自身周围<color=#F74848>3</color>格范围内，每有<color=#F74848>1</color>名其他友军，伤害提升<color=#F74848>5%</color>，遭受伤害降低<color=#F74848>5%</color>，最多<color=#F74848>20%</color>；场上存在敌方首领时，机师作战能力提升<color=#F74848>8%</color>;\n攻击时，将提升自身当前耐久值<color=#F74848>2%</color>的火力值"
+  },
+  "skills": {
+    "100001": {
+      "name": "运动战1",
+      "describe": "",
+      "SpecificEffects": "击破部位后可发动<buf ID=900004>[再攻击]</buf>，攻击前无法移动，每回合最多发动<color=#F74848>2</color>次"
+    },
+    "101802": {
+      "name": "觉悟",
+      "describe": "",
+      "SpecificEffects": "主动攻击对战时，若自身耐久值百分比大于等于目标，护甲值提升<color=#F74848>80%</color>"
+    },
+    "101803": {
+      "name": "辉龙·鞘盾",
+      "describe": "",
+      "SpecificEffects": "遭受攻击对战时，若无法反击，盾牌不会在单次受击中遭受超出其耐久值上限<color=#F74848>60%</color>的伤害"
+    },
+    "101804": {
+      "name": "好机会！小渡！",
+      "describe": "获得<color=#F74848>2</color>AP和<buf ID=1018041>[好机会！]</buf>，然后可以使用完整移动力继续行动",
+      "SpecificEffects": ""
+    },
+    "101805": {
+      "name": "正义必胜",
+      "describe": "",
+      "SpecificEffects": "场上敌机数量大于等于我方时，所有友军遭受伤害降低<color=#F74848>5%</color>，反之，伤害提升<color=#F74848>5%</color>"
+    },
+    "101806": {
+      "name": "辉龙·龙雷拳",
+      "describe": "使用刀剑提取龙神之力，攻击<range type=2>面前3×4格</range>范围内的所有目标，造成<color=#F74848>0.9</color>倍范围伤害，优先攻击耐久值不满的部位，若击破任意部位，立即发动<color=#F74848>1</color>次相同的攻击，但攻击倍率降低<color=#F74848>50%</color>，最多重复<color=#F74848>2</color>次，战后驱散打击的地格上的岚雾，持续<color=#F74848>1</color>回合；\n双手完好时才可使用",
+      "SpecificEffects": ""
+    },
+    "101807": {
+      "name": "勇气",
+      "describe": "",
+      "SpecificEffects": "第<color=#F74848>2</color>回合起，每次行动开始时，若自身AP小于等于<color=#F74848>4</color>点，消耗<color=#F74848>1</color>PP，立即回复<color=#F74848>3</color>AP，每次出击最多拥有<color=#F74848>2</color>PP"
+    },
+    "101808": {
+      "name": "辉龙必杀·凤龙剑",
+      "describe": "消耗全部AP，使用刀剑对目标造成<color=#F74848>1.8</color>倍伤害，每额外消耗<color=#F74848>1</color>AP将使本技能的伤害倍率提升<color=#F74848>0.25</color>倍，最多提升<color=#F74848>1.25</color>倍，必定攻击躯干，对首领目标伤害提升<color=#F74848>50%</color>；\n同时装备刀剑和手盾才可使用",
+      "SpecificEffects": ""
+    }
+  },
+  "neuralPassives": {
+    "100011": {
+      "name": "运动战2",
+      "SpecificEffects": "发动<buf ID=900004>[再攻击]</buf>时，攻击前可以移动<color=#F74848>2</color>格"
+    },
+    "100012": {
+      "name": "动力革新1",
+      "SpecificEffects": "AP的回复值<color=#F74848>+1</color>"
+    },
+    "100013": {
+      "name": "AP优化1",
+      "SpecificEffects": "AP的初始值<color=#F74848>+1</color>"
+    },
+    "100021": {
+      "name": "运动战3",
+      "SpecificEffects": "击毁目标后可发动<buf ID=900005>[再行动]</buf>，使用完整移动力移动"
+    },
+    "100022": {
+      "name": "动力革新2",
+      "SpecificEffects": "击破部位时，战后回复<color=#F74848>1</color>AP，每回合最多发动<color=#F74848>1</color>次"
+    },
+    "100023": {
+      "name": "AP优化2",
+      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+    },
+    "101831": {
+      "name": "勇者1",
+      "SpecificEffects": "主动攻击击破部位时，立即扣除目标<color=#F74848>1</color>PP；若成功扣除，自身回复<color=#F74848>1</color>AP，每回合最多发动<color=#F74848>3</color>次"
+    },
+    "100032": {
+      "name": "AP优化3",
+      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+    },
+    "100033": {
+      "name": "运动战4",
+      "SpecificEffects": "<buf ID=900004>[再攻击]</buf>或<buf ID=900005>[再行动]</buf>每回合可发动的次数<color=#F74848>+1</color>"
+    },
+    "101834": {
+      "name": "勇者2",
+      "SpecificEffects": "攻击非首领目标时，命中率提升<color=#F74848>10%</color>，伤害提升<color=#F74848>15%</color>"
+    },
+    "101835": {
+      "name": "勇者3",
+      "SpecificEffects": "盾牌的耐久值提升<color=#F74848>100%</color>，伤害减免率提升<color=#F74848>10%</color>"
+    },
+    "101836": {
+      "name": "勇者4",
+      "SpecificEffects": "主动攻击时，若击毁目标，战后返还技能消耗的全部AP，最多<color=#F74848>3</color>点，每回合最多发动<color=#F74848>1</color>次"
+    },
+    "101841": {
+      "name": "创界山英雄1",
+      "SpecificEffects": "使用格斗武器主动攻击对战时，若目标存在低于<color=#F74848>30%</color>耐久值的部位，对该部位发动<buf ID=900001>[追击]</buf>，造成<color=#F74848>0.3</color>倍伤害"
+    },
+    "100042": {
+      "name": "AP优化4",
+      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+    },
+    "100043": {
+      "name": "动力革新3",
+      "SpecificEffects": "击毁目标时，战后额外回复<color=#F74848>1</color>AP，每回合最多发动<color=#F74848>2</color>次"
+    },
+    "101844": {
+      "name": "创界山英雄2",
+      "SpecificEffects": "场上存在敌方首领时，AP回复<color=#F74848>+1</color>"
+    },
+    "101845": {
+      "name": "创界山英雄3",
+      "SpecificEffects": "<buf ID=1018411>[创界山英雄1]</buf>发动的<buf ID=900001>[追击]</buf>必定暴击，且无法被回避"
+    },
+    "101846": {
+      "name": "创界山英雄4",
+      "SpecificEffects": "最终伤害提升<color=#F74848>10%</color>，每<color=#F74848>1</color>名其他队友行动结束时，自身获得<color=#F74848>1</color>层<buf ID=1018463>[希望]</buf>，可叠加<color=#F74848>3</color>层"
+    }
+  }
+}

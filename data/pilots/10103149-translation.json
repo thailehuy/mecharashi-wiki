@@ -1,0 +1,131 @@
+{
+  "PilotName": "明日香",
+  "RealName": "式波·明日香·兰格雷",
+  "Gender": "Female",
+  "Profession": "Striker",
+  "Occupation": "格斗家",
+  "Talent0_2Ability": {
+    "name": "第二适格者",
+    "SpecificEffects": "与机兵可以进行<buf ID=900088>[同步]</buf>；主动攻击后，若没有受到伤害，下一次主动攻击伤害提升<color=#F74848>20%</color>"
+  },
+  "Talent3_5Ability": {
+    "name": "第二适格者",
+    "SpecificEffects": "与机兵可以进行<buf ID=900088>[同步]</buf>；主动攻击后，若没有受到伤害，下一次主动攻击伤害提升<color=#F74848>20%</color>；\n出击时，<buf ID=1014820>[同步率]</buf><color=#F74848>+10%</color>；若周围<color=#F74848>2</color>格内敌机大于等于<color=#F74848>3</color>个，伤害提升<color=#F74848>15%</color>"
+  },
+  "skills": {
+    "100001": {
+      "name": "运动战1",
+      "describe": "",
+      "SpecificEffects": "击破部位后可发动<buf ID=900004>[再攻击]</buf>，攻击前无法移动，每回合最多发动<color=#F74848>2</color>次"
+    },
+    "101402": {
+      "name": "集束",
+      "describe": "使用机枪攻击单个目标，造成<color=#F74848>1.25</color>倍伤害，对耐久值最低的部位命中权重<color=#F74848>+50</color>",
+      "SpecificEffects": ""
+    },
+    "101403": {
+      "name": "绝伦闪避",
+      "describe": "",
+      "SpecificEffects": "完全闪避攻击时，战后回复<color=#F74848>1</color>AP，每回合最多发动<color=#F74848>1</color>次"
+    },
+    "101404": {
+      "name": "跃袭",
+      "describe": "选择周围<color=#F74848>4</color>格内<color=#F74848>1</color>名目标，目标周围<color=#F74848>1</color>圈可以停留，使用长柄对目标躯干造成<color=#F74848>1.25</color>倍伤害，之后停留在目标周围<color=#F74848>1</color>圈空地上",
+      "SpecificEffects": ""
+    },
+    "101405": {
+      "name": "诛尽",
+      "describe": "",
+      "SpecificEffects": "对耐久值低于<color=#F74848>50%</color>的部位造成伤害提升<color=#F74848>15%</color>"
+    },
+    "101406": {
+      "name": "全面压制",
+      "describe": "同时使用两把机枪攻击单个目标，造成<color=#F74848>2×0.7</color>倍伤害，本次攻击目标无法发动反击",
+      "SpecificEffects": ""
+    },
+    "101407": {
+      "name": "同步合击",
+      "describe": "",
+      "SpecificEffects": "使用格斗和突击武器对友军攻击的目标发动<buf ID=900002>[协力攻击]</buf>，造成<color=#F74848>0.2</color>倍伤害，每回合最多发动<color=#F74848>2</color>次"
+    },
+    "101408": {
+      "name": "破穹之矢",
+      "describe": "使用长柄投掷<range type=1>直线4格</range>内所有目标（包括飞行目标），对首个目标造成<color=#F74848>1.5</color>倍伤害，之后每个目标倍率依次减少<color=#F74848>0.4</color>，战前可以进行<buf ID=900014>[瞄准]</buf>；\n每次使用后AP消耗<color=#F74848>+1</color>，可叠加，行动结束时重置",
+      "SpecificEffects": ""
+    }
+  },
+  "neuralPassives": {
+    "100011": {
+      "name": "运动战2",
+      "SpecificEffects": "发动<buf ID=900004>[再攻击]</buf>时，攻击前可以移动<color=#F74848>2</color>格"
+    },
+    "100012": {
+      "name": "动力革新1",
+      "SpecificEffects": "AP的回复值<color=#F74848>+1</color>"
+    },
+    "100013": {
+      "name": "AP优化1",
+      "SpecificEffects": "AP的初始值<color=#F74848>+1</color>"
+    },
+    "100021": {
+      "name": "运动战3",
+      "SpecificEffects": "击毁目标后可发动<buf ID=900005>[再行动]</buf>，使用完整移动力移动"
+    },
+    "100022": {
+      "name": "动力革新2",
+      "SpecificEffects": "击破部位时，战后回复<color=#F74848>1</color>AP，每回合最多发动<color=#F74848>1</color>次"
+    },
+    "100023": {
+      "name": "AP优化2",
+      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+    },
+    "101431": {
+      "name": "拔萃1",
+      "SpecificEffects": "主动攻击时，根据自身耐久百分比提升暴击率，最多提升<color=#F74848>20%</color>"
+    },
+    "100032": {
+      "name": "AP优化3",
+      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+    },
+    "100033": {
+      "name": "运动战4",
+      "SpecificEffects": "<buf ID=900004>[再攻击]</buf>或<buf ID=900005>[再行动]</buf>每回合可发动的次数<color=#F74848>+1</color>"
+    },
+    "101434": {
+      "name": "拔萃2",
+      "SpecificEffects": "不会成为<buf ID=900023>[反击先手]</buf>、<buf ID=900013>[警戒射击]</buf>和<buf ID=900006>[反应攻击]</buf>的目标"
+    },
+    "101435": {
+      "name": "拔萃3",
+      "SpecificEffects": "主动攻击对战时，若自身耐久百分比大于等于目标，回避率提升<color=#F74848>25%</color>"
+    },
+    "101436": {
+      "name": "拔萃4",
+      "SpecificEffects": "行动开始时，获得<buf ID=1014363>[拔萃]</buf>，受到伤害时移除"
+    },
+    "101441": {
+      "name": "天才1",
+      "SpecificEffects": "第<color=#F74848>2</color>回合后，行动开始时，<buf ID=1014820>[同步率]</buf><color=#F74848>+5%</color>"
+    },
+    "100042": {
+      "name": "AP优化4",
+      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+    },
+    "100043": {
+      "name": "动力革新3",
+      "SpecificEffects": "击毁目标时，战后额外回复<color=#F74848>1</color>AP，每回合最多发动<color=#F74848>2</color>次"
+    },
+    "101444": {
+      "name": "天才2",
+      "SpecificEffects": "<buf ID=1014820>[同步率]</buf>还可以提升最终伤害，最多提升<color=#F74848>15%</color>"
+    },
+    "101445": {
+      "name": "天才3",
+      "SpecificEffects": "<buf ID=1014820>[同步率]</buf>在造成伤害时可以额外提升，受到伤害时不再下降"
+    },
+    "101446": {
+      "name": "天才4",
+      "SpecificEffects": "<buf ID=1014820>[同步率]</buf>大于等于<color=#F74848>85%</color>时，AP的回复值<color=#F74848>+1</color>"
+    }
+  }
+}

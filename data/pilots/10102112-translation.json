@@ -1,0 +1,131 @@
+{
+  "PilotName": "Hawkwood",
+  "RealName": "Hawkwood Fastolf",
+  "Gender": "Male",
+  "Profession": "Striker",
+  "Occupation": "Fighter",
+  "Talent0_2Ability": {
+    "name": "Dog Chasing Cars",
+    "SpecificEffects": "With a Melee Weapon, if unable to retaliate in combat, <buf ID=900008>[Pursuit]</buf> can be triggered, allowing the unit to move <color=#F74848>2</color> tiles toward the attacker after combat. If successful in reaching the target, use the melee weapon to cast <buf ID=900009>[Pursuit Retaliation]</buf>, dealing <color=#F74848>0.6x</color> DMG."
+  },
+  "Talent3_5Ability": {
+    "name": "Dog Chasing Cars",
+    "SpecificEffects": "With a Melee Weapon, if unable to retaliate in combat, <buf ID=900008>[Pursuit]</buf> can be triggered, allowing the unit to move <color=#F74848>2</color> tiles toward the attacker after combat. If successful in reaching the target, use the melee weapon to cast <buf ID=900009>[Pursuit Retaliation]</buf>, dealing <color=#F74848>0.6x</color> DMG.\nIf there are no allies within the adjacent (<color=#F74848>2</color> tiles) area, DMG Taken <color=#F74848>-15%</color>."
+  },
+  "skills": {
+    "100001": {
+      "name": "Mobile Warfare 1",
+      "describe": "",
+      "SpecificEffects": "After breaking a part, <buf ID=900004>[Re-ATK]</buf> can be triggered. Unable to move before the attack, and this can be effective up to <color=#F74848>2</color> times per turn."
+    },
+    "700014": {
+      "name": "Perseverance",
+      "describe": "",
+      "SpecificEffects": "After taking damage, grant <buf ID=7000142>[Bide]</buf> to self, up to <color=#F74848>3</color> stacks, lasting for <color=#F74848>1</color> turn."
+    },
+    "700041": {
+      "name": "Morale Rise",
+      "describe": "",
+      "SpecificEffects": "For every <color=#F74848>10%</color> reduction in self HP, DMG <color=#F74848>+3%</color>, up to <color=#F74848>15%</color>."
+    },
+    "700050": {
+      "name": "Time to Hunt",
+      "describe": "Gain <buf ID=7100901>[Movement UP]</buf> and <buf ID=7100303>[DMG UP II]</buf>, lasting for <color=#F74848>1</color> turn. Can continue the action with the remaining movement.",
+      "SpecificEffects": ""
+    },
+    "100705": {
+      "name": "Last Stand",
+      "describe": "",
+      "SpecificEffects": "When any part suffers overdamage, trigger <buf ID=900003>[Guts]</buf>, locking to <color=#F74848>1</color> HP, with a trigger interval of <color=#F74848>3</color> turns."
+    },
+    "100706": {
+      "name": "Bola Strike",
+      "describe": "Simultaneously uses 2 Melee Weapons to attack a target, dealing <color=#F74848>2*0.85x</color> DMG. When hitting the Body, inflicts <buf ID=7101505>[Crash]</buf> on the target after combat, lasting <color=#F74848>1</color> turn.",
+      "SpecificEffects": ""
+    },
+    "100707": {
+      "name": "Desprate Beast",
+      "describe": "",
+      "SpecificEffects": "During an Active Attack in combat, for each enemy ST within the adjacent (<color=#F74848>2</color> tiles) area, gain DMG <color=#F74848>+5%</color>, up to <color=#F74848>15%</color>."
+    },
+    "100708": {
+      "name": "Ruthless Hunt",
+      "describe": "Uses Pile Bunker or Knuckles to attack a target, dealing <color=#F74848>1.7x</color> DMG. When hitting the Body, DMG <color=#F74848>+30%</color>.",
+      "SpecificEffects": ""
+    }
+  },
+  "neuralPassives": {
+    "100011": {
+      "name": "Mobile Warfare 2",
+      "SpecificEffects": "Upon triggering <buf ID=900004>[Re-ATK]</buf>, allows movement of <color=#F74848>2</color> tiles before attacking."
+    },
+    "100012": {
+      "name": "Power Innovation 1",
+      "SpecificEffects": "AP Regen <color=#F74848>+1</color>."
+    },
+    "100013": {
+      "name": "AP Optimization 1",
+      "SpecificEffects": "Initial AP <color=#F74848>+1</color>."
+    },
+    "100021": {
+      "name": "Mobile Warfare 3",
+      "SpecificEffects": "Destroying the target can trigger <buf ID=900005>[Re-Act]</buf>, allowing action with full movement distance."
+    },
+    "100022": {
+      "name": "Power Innovation 2",
+      "SpecificEffects": "When breaking a part, restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>1</color> time per turn."
+    },
+    "100023": {
+      "name": "AP Optimization 2",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
+    },
+    "100031": {
+      "name": "Alacrity 1",
+      "SpecificEffects": "During an Active Attack with a Melee Weapon, there is a <color=#F74848>20%</color> chance to trigger <buf ID=900001>[Flurry Strike]</buf> following the enemy’s attack, dealing <color=#F74848>0.5x</color> DMG."
+    },
+    "100032": {
+      "name": "AP Optimization 3",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
+    },
+    "100033": {
+      "name": "Mobile Warfare 4",
+      "SpecificEffects": "<buf ID=900004>[Re-ATK]</buf> or <buf ID=900005>[Re-Act]</buf>'s effective times per turn <color=#F74848>+1</color>."
+    },
+    "100034": {
+      "name": "Alacrity 2",
+      "SpecificEffects": "Before an Active Attack, the probability of triggering <buf ID=900001>[Flurry Strike]</buf> increases by <color=#F74848>6%</color> for each <color=#F74848>1</color> tile moved, up to <color=#F74848>30%</color>."
+    },
+    "100035": {
+      "name": "Alacrity 3",
+      "SpecificEffects": "<buf ID=900001>[Flurry Strike]</buf> damage multiplier is increased to <color=#F74848>0.75</color>."
+    },
+    "100036": {
+      "name": "Alacrity 4",
+      "SpecificEffects": "When triggering <buf ID=900001>[Flurry Strike]</buf>, prioritize hitting the part with the lowest HP."
+    },
+    "100741": {
+      "name": "Rabid 1",
+      "SpecificEffects": "The movement distance of <buf ID=900008>[Pursuit]</buf> is increased to <color=#F74848>3</color> tiles."
+    },
+    "100042": {
+      "name": "AP Optimization 4",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
+    },
+    "100043": {
+      "name": "Power Innovation 3",
+      "SpecificEffects": "When destroying a target, additionally restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>2</color> times per turn."
+    },
+    "100744": {
+      "name": "Rabid 2",
+      "SpecificEffects": "The damage multiplier for <buf ID=900009>[Pursuit Retaliation]</buf> is increased to <color=#F74848>0.85</color>."
+    },
+    "100745": {
+      "name": "Rabid 3",
+      "SpecificEffects": "If a move to the attacker's side with <buf ID=900008>[Pursuit]</buf> fails, the system will automatically search for other targets within adjacent (<color=#F74848>1</color> tile) area to cast <buf ID=900009>[Pursuit Retaliation]</buf>."
+    },
+    "100746": {
+      "name": "Rabid 4",
+      "SpecificEffects": "When triggering <buf ID=900009>[Pursuit Retaliation]</buf>, target the part with the lowest HP."
+    }
+  }
+}

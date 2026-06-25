@@ -1,0 +1,18 @@
+{
+  "name": "Kaolin",
+  "introduce": "HR-277 Kaolin\nHorizon Corporation developed this medium combat ST primarily deployed in the DLAF's elite troops. \nOnce a classified model of the DL, the shock-generating system built into its shoulder enhances the penetration of its armament, while the tilted armor at the front makes it a highly effective charging and counter-charging weapon, especially in the hands of skilled pilots.",
+  "modules": {
+    "30082": {
+      "name": "Crusher Mod",
+      "SpecificEffects": "When attacking a target that carries debuffs, DMG <color=#F74848>+4%</color>."
+    },
+    "10104": {
+      "name": "Shatter Array",
+      "SpecificEffects": "When attacking, there is a <color=#F74848>70%</color> chance to trigger: ignore <color=#F74848>45%</color> of the target's Armor."
+    },
+    "40084": {
+      "name": "Crit RES Mod",
+      "SpecificEffects": "Crit RES <color=#F74848>+10%</color>."
+    }
+  }
+}

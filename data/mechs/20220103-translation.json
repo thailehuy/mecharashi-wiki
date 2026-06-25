@@ -1,0 +1,18 @@
+{
+  "name": "Blue Bird",
+  "introduce": "OS-79 Blue Bird\nA cutting-edge medium ST developed by Obsidian that has gained attention for its outstanding performance and unique appearance.\nEquipped with the BM battlefield analysis module, built using data from the legendary XR. By receiving real-time information from reconnaissance devices, the Blue Bird's unique OS quickly generates detailed posture analysis to analyze the behavioral patterns of enemy STs, allowing pilots to make tactical adjustments and launch powerful attacks on weak points in the enemy line.",
+  "modules": {
+    "20024": {
+      "name": "Skydome Hub",
+      "SpecificEffects": "When there are <color=#F74848>3</color> or more enemies within the current weapon's range, Crit Rate <color=#F74848>+12%</color>. For each additional enemy, the Crit Rate will continue to increase by <color=#F74848>6%</color>, up to <color=#F74848>24%</color>."
+    },
+    "40034": {
+      "name": "Crit DMG Mod",
+      "SpecificEffects": "Crit DMG <color=#F74848>+10%</color>."
+    },
+    "30108": {
+      "name": "Combo Mod",
+      "SpecificEffects": "After triggering <buf ID=900004>[Re-ATK]</buf>, DMG <color=#F74848>+18%</color>.\nEach turn, after triggering the first <buf ID=900004>[Re-ATK]</buf>, AP Cost <color=#F74848>-1</color>, with a minimum of <color=#F74848>1</color>."
+    }
+  }
+}

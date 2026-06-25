@@ -1,0 +1,97 @@
+{
+  "PilotName": "Pip",
+  "RealName": "Pip Beswick",
+  "Gender": "Male",
+  "Profession": "Striker",
+  "Occupation": "Fighter",
+  "Talent0_2Ability": {
+    "name": "Dual-Wielding",
+    "SpecificEffects": "When both hands are equipped with Melee Weapons, DMG <color=#F74848>+8%</color>."
+  },
+  "Talent3_5Ability": {
+    "name": "Dual-Wielding",
+    "SpecificEffects": "When both hands are equipped with Melee Weapons, DMG <color=#F74848>+12%</color>."
+  },
+  "skills": {
+    "100001": {
+      "name": "Mobile Warfare 1",
+      "describe": "",
+      "SpecificEffects": "After breaking a part, <buf ID=900004>[Re-ATK]</buf> can be triggered. Unable to move before the attack, and this can be effective up to <color=#F74848>2</color> times per turn."
+    },
+    "700027": {
+      "name": "Dodge Propensity",
+      "describe": "",
+      "SpecificEffects": "If unable to retaliate in combat, Dodge Rate <color=#F74848>+12%</color>."
+    },
+    "100103": {
+      "name": "Swift Strike",
+      "describe": "Uses Pile Bunker or Knuckles to attack a target, dealing <color=#F74848>1.7x</color> DMG. Before combat, gains <buf ID=7100205>[Dodge Rate Up III]</buf>, lasting <color=#F74848>1</color> turn.",
+      "SpecificEffects": ""
+    },
+    "100104": {
+      "name": "Staked Blow",
+      "describe": "",
+      "SpecificEffects": "During an Active Attack in combat, if the target cannot retaliate, Crit Rate <color=#F74848>+10%</color>."
+    },
+    "700031": {
+      "name": "ATK Calibration",
+      "describe": "",
+      "SpecificEffects": "During an Active Attack in combat, Crit DMG <color=#F74848>+7%</color>."
+    },
+    "100106": {
+      "name": "Efficient Blow",
+      "describe": "Uses Pile Bunker or Knuckles to attack a target, dealing <color=#F74848>1.55x</color> DMG. Targets the part with the lowest HP.",
+      "SpecificEffects": ""
+    }
+  },
+  "neuralPassives": {
+    "100011": {
+      "name": "Mobile Warfare 2",
+      "SpecificEffects": "Upon triggering <buf ID=900004>[Re-ATK]</buf>, allows movement of <color=#F74848>2</color> tiles before attacking."
+    },
+    "100012": {
+      "name": "Power Innovation 1",
+      "SpecificEffects": "AP Regen <color=#F74848>+1</color>."
+    },
+    "100013": {
+      "name": "AP Optimization 1",
+      "SpecificEffects": "Initial AP <color=#F74848>+1</color>."
+    },
+    "100021": {
+      "name": "Mobile Warfare 3",
+      "SpecificEffects": "Destroying the target can trigger <buf ID=900005>[Re-Act]</buf>, allowing action with full movement distance."
+    },
+    "100022": {
+      "name": "Power Innovation 2",
+      "SpecificEffects": "When breaking a part, restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>1</color> time per turn."
+    },
+    "100023": {
+      "name": "AP Optimization 2",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
+    },
+    "100031": {
+      "name": "Alacrity 1",
+      "SpecificEffects": "During an Active Attack with a Melee Weapon, there is a <color=#F74848>20%</color> chance to trigger <buf ID=900001>[Flurry Strike]</buf> following the enemy’s attack, dealing <color=#F74848>0.5x</color> DMG."
+    },
+    "100032": {
+      "name": "AP Optimization 3",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
+    },
+    "100033": {
+      "name": "Mobile Warfare 4",
+      "SpecificEffects": "<buf ID=900004>[Re-ATK]</buf> or <buf ID=900005>[Re-Act]</buf>'s effective times per turn <color=#F74848>+1</color>."
+    },
+    "100034": {
+      "name": "Alacrity 2",
+      "SpecificEffects": "Before an Active Attack, the probability of triggering <buf ID=900001>[Flurry Strike]</buf> increases by <color=#F74848>6%</color> for each <color=#F74848>1</color> tile moved, up to <color=#F74848>30%</color>."
+    },
+    "100035": {
+      "name": "Alacrity 3",
+      "SpecificEffects": "<buf ID=900001>[Flurry Strike]</buf> damage multiplier is increased to <color=#F74848>0.75</color>."
+    },
+    "100036": {
+      "name": "Alacrity 4",
+      "SpecificEffects": "When triggering <buf ID=900001>[Flurry Strike]</buf>, prioritize hitting the part with the lowest HP."
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Gillesrais",
+  "introduce": "HU-08M Gillesrais\nMade by the UKB-1, this heavy ST utilizes a unique Arashium alloy smelting technique, distinct from that used by Obsidian.\nThis proprietary smelting method allows the Arashium to form a unique lattice structure in its inner frame and actuator, greatly enhancing durability and facilitating self-repair capabilities.",
+  "modules": {
+    "20174": {
+      "name": "Liquid Repair Kit",
+      "SpecificEffects": "When HP falls below <color=#F74848>50%</color>, there is a <color=#F74848>100%</color> chance to restore <color=#F74848>6%</color> HP after taking damage, effective up to <color=#F74848>2</color> times per turn."
+    },
+    "30158": {
+      "name": "Adaptive Mod",
+      "SpecificEffects": "When HP is below <color=#F74848>50%</color>, DMG Taken <color=#F74848>-18%</color>.\nWhen HP is above <color=#F74848>50%</color>, DMG <color=#F74848>+20%</color>."
+    },
+    "40094": {
+      "name": "Tending Mod",
+      "SpecificEffects": "Received Repair AMT <color=#F74848>+10%</color>."
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Glasya",
+  "introduce": "DD-117 Glasya\nA light melee ST developed by Doll Industries to compete with the Obsidian-produced Dopplesoldner. \nThe front of this ST's body is equipped with Doll Industries' specially customized \"Equilibrium\" assisted locking system, which consists of three coaxial observation scopes and a positioning chip. This system allows a locked ST to remain within Glasya's attack range.\nGlasya had a short development time at Doll Industries and only a limited number were deployed to the frontline. It is said to have been developed by disassembling and studying a captured ST.",
+  "modules": {
+    "40014": {
+      "name": "Accuracy Mod",
+      "SpecificEffects": "Hit Rate <color=#F74848>+10%</color>."
+    },
+    "20034": {
+      "name": "Equilibrium",
+      "SpecificEffects": "After landing critical hits, Dodge Rate <color=#F74848>+15%</color>. After a perfect dodge, Crit Rate <color=#F74848>+15%</color>, lasting for <color=#F74848>1</color> turn."
+    },
+    "30018": {
+      "name": "Surmount Mod",
+      "SpecificEffects": "When attacking a target with HP higher than <color=#F74848>60%</color>, DMG <color=#F74848>+18%</color>.\nIf a part is not broken, trigger <buf ID=900001>[Flurry Strike]</buf>, dealing <color=#F74848>0.25x</color> DMG."
+    }
+  }
+}

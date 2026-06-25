@@ -1,0 +1,131 @@
+{
+  "PilotName": "海莉丝",
+  "RealName": "海莉丝·穆勒",
+  "Gender": "Female",
+  "Profession": "Architect",
+  "Occupation": "调构师",
+  "Talent0_2Ability": {
+    "name": "悖想先驱",
+    "SpecificEffects": "驾驶的机兵拥有多种形态，拥有独特的形态效果并可以独立装备武器背包；每次行动开始和<buf ID=900155>[激活]</buf>时，获得<color=#F74848>1</color>点[激发能]，累积<color=#F74848>5</color>点后可以使用<skill activeSkill=8001504></skill>解除<skill passiveSkill=800159>[虚粒子形态]</skill>限制，每回合只能使用<color=#F74848>1</color>次"
+  },
+  "Talent3_5Ability": {
+    "name": "悖想先驱",
+    "SpecificEffects": "驾驶的机兵拥有多种形态，拥有独特的形态效果并可以独立装备武器背包；每次行动开始和<buf ID=900155>[激活]</buf>时，获得<color=#F74848>1</color>点[激发能]，累积<color=#F74848>5</color>点后可以使用<skill activeSkill=8001504></skill>解除<skill passiveSkill=800159>[虚粒子形态]</skill>限制，每回合只能使用<color=#F74848>1</color>次；\n行动开始时，根据自身形态立即获得相应的<buf ID=900157>[形态增益]</buf>，携带<buf ID=900157>[形态增益]</buf>时最终伤害提升<color=#F74848>15%</color>"
+  },
+  "skills": {
+    "800101": {
+      "name": "形态切换1",
+      "describe": "",
+      "SpecificEffects": "行动结束时，若其他队友还有行动机会，进入<buf ID=900154>[待激活]</buf>状态，若队友使用其他形态对应的武器主动攻击，重新<buf ID=900155>[激活]</buf>并触发<buf ID=900156>[形态切换]</buf>，每回合最多发动<color=#F74848>1</color>次"
+    },
+    "400902": {
+      "name": "巅峰极诣",
+      "describe": "",
+      "SpecificEffects": "自身耐久值高于<color=#F74848>50%</color>时，伤害提升<color=#F74848>15%</color>，遭受伤害降低<color=#F74848>10%</color>"
+    },
+    "800103": {
+      "name": "具象解析",
+      "describe": "",
+      "SpecificEffects": "遭受攻击时，若装备了对应类型的武器，遭受伤害降低<color=#F74848>20%</color>"
+    },
+    "800104": {
+      "name": "万序拟合",
+      "describe": "根据当前形态和装备的武器，发动<color=#F74848>1</color>次更为强力的攻击，技能倍率和效果会随武器类型变化\n先锋形态：<skill mainSkill=730015></skill><skill activeSkill=7300162></skill><skill activeSkill=7300171></skill><skill activeSkill=7300181></skill><skill activeSkill=7300191></skill><skill activeSkill=7300201></skill><skill activeSkill=7300211></skill><skill activeSkill=7300221></skill><skill activeSkill=7300231></skill><skill activeSkill=7300241></skill><skill activeSkill=7300251></skill><skill activeSkill=7300261></skill>\n突击形态：<skill activeSkill=7300271></skill><skill activeSkill=7300281></skill><skill activeSkill=7300291></skill><skill activeSkill=7300301></skill><skill activeSkill=7300311></skill><skill activeSkill=7300321></skill><skill activeSkill=7300331></skill><skill activeSkill=7300341></skill>\n战术形态：<skill activeSkill=7300351></skill><skill activeSkill=7300361></skill><skill activeSkill=7300371></skill><skill activeSkill=7300381></skill><skill activeSkill=7300391></skill><skill activeSkill=7300401></skill><skill activeSkill=7300411></skill><skill activeSkill=7300421></skill>",
+      "SpecificEffects": ""
+    },
+    "800105": {
+      "name": "临态编织",
+      "describe": "",
+      "SpecificEffects": "<buf ID=900155>[激活]</buf>时，获得<buf ID=7100703>[抵御Ⅲ]</buf>，可生效<color=#F74848>1</color>次，每回合最多发动<color=#F74848>1</color>次"
+    },
+    "800106": {
+      "name": "再构筑",
+      "describe": "使用后获得<color=#F74848>2</color>AP和<color=#F74848>2</color>点[激发能]，并刷新所有增益效果的剩余回合，然后可额外移动<color=#F74848>3</color>格，移动后可继续发起攻击",
+      "SpecificEffects": ""
+    },
+    "800107": {
+      "name": "岚循环",
+      "describe": "",
+      "SpecificEffects": "<skill passiveSkill=800159>[虚粒子形态]</skill>时，若AP小于等于<color=#F74848>5</color>，消耗<color=#F74848>1</color>PP，立即回复<color=#F74848>3</color>AP，每回合最多发动<color=#F74848>1</color>次；每次出击最多拥有<color=#F74848>2</color>PP"
+    },
+    "800108": {
+      "name": "虚粒子程式",
+      "describe": "<skill passiveSkill=800159>[虚粒子形态]</skill>时的固有技能强化为<skill activeSkill=7300432></skill><skill activeSkill=7300442></skill><skill activeSkill=7300452></skill>，并可以使用<skill activeSkill=7300461></skill>",
+      "SpecificEffects": ""
+    }
+  },
+  "neuralPassives": {
+    "800111": {
+      "name": "形态切换2",
+      "SpecificEffects": "<buf ID=900155>[激活]</buf>时，额外获得<color=#F74848>2</color>AP"
+    },
+    "100012": {
+      "name": "动力革新1",
+      "SpecificEffects": "AP的回复值<color=#F74848>+1</color>"
+    },
+    "100013": {
+      "name": "AP优化1",
+      "SpecificEffects": "AP的初始值<color=#F74848>+1</color>"
+    },
+    "800121": {
+      "name": "形态切换3",
+      "SpecificEffects": "攻击时，以机师六项属性中的最高值结算"
+    },
+    "100022": {
+      "name": "动力革新2",
+      "SpecificEffects": "击破部位时，战后回复<color=#F74848>1</color>AP，每回合最多发动<color=#F74848>1</color>次"
+    },
+    "100023": {
+      "name": "AP优化2",
+      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+    },
+    "800131": {
+      "name": "昏星之引1",
+      "SpecificEffects": "<buf ID=900155>[激活]</buf>时，给周围<color=#F74848>3</color>格范围内的其他友军施加<color=#F74848>1</color>个随机增益效果，持续<color=#F74848>2</color>回合"
+    },
+    "100032": {
+      "name": "AP优化3",
+      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+    },
+    "800133": {
+      "name": "形态切换4",
+      "SpecificEffects": "行动开始时使与当前形态不同的<color=#F74848>2</color>种形态可各自被<buf ID=900155>[激活]</buf><color=#F74848>1</color>次；\n所有其他队友行动结束时，若仍处于<buf ID=900154>[待激活]</buf>状态，自动<buf ID=900155>[激活]</buf>当前形态，重新获得<color=#F74848>1</color>次行动机会，但无法获得[激发能]，每回合最多发动<color=#F74848>1</color>次"
+    },
+    "800134": {
+      "name": "昏星之引2",
+      "SpecificEffects": "使<buf ID=900155>[激活]</buf>自身的队友根据形态获得相应的<buf ID=900157>[形态增益]</buf>"
+    },
+    "800135": {
+      "name": "昏星之引3",
+      "SpecificEffects": "行动开始时，若上次行动触发过<color=#F74848>2</color>次<buf ID=900155>[激活]</buf>，其他友方获得伤害提升<color=#F74848>15%</color>，持续<color=#F74848>1</color>回合"
+    },
+    "800136": {
+      "name": "昏星之引4",
+      "SpecificEffects": "触发<buf ID=900155>[激活]</buf>后，若[海莉丝]在场，使其他队友下一次使用武器技能或指令消耗AP<color=#F74848>-1</color>，最低<color=#F74848>1</color>点，任意队友攻击或使用指令后移除"
+    },
+    "800141": {
+      "name": "奇点推演1",
+      "SpecificEffects": "<buf ID=900155>[激活]</buf>时，根据自身的形态获得相应的<buf ID=900157>[形态增益]</buf>和<color=#F74848>1</color>个随机增益效果，持续<color=#F74848>2</color>回合"
+    },
+    "300042": {
+      "name": "AP优化4",
+      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+    },
+    "300043": {
+      "name": "动力革新3",
+      "SpecificEffects": "击毁目标时，战后额外回复<color=#F74848>1</color>AP，每回合最多发动<color=#F74848>2</color>次"
+    },
+    "800144": {
+      "name": "奇点推演2",
+      "SpecificEffects": "触发<buf ID=900155>[激活]</buf>后，下一次攻击AP消耗<color=#F74848>-1</color>，最低<color=#F74848>1</color>点，每回合最多发动<color=#F74848>2</color>次"
+    },
+    "800145": {
+      "name": "奇点推演3",
+      "SpecificEffects": "累计<buf ID=900155>[激活]</buf><color=#F74848>3</color>种不同的形态后，伤害提升<color=#F74848>25%</color>，直到战斗结束"
+    },
+    "800146": {
+      "name": "奇点推演4",
+      "SpecificEffects": "触发<buf ID=900155>[激活]</buf>时，可修复<color=#F74848>1</color>个损毁部位，并恢复所有完好部位<color=#F74848>7.5%</color>耐久值，对自身周围<color=#F74848>2</color>格内敌机所有部位造成相当于自身躯干最大耐久值<color=#F74848>15%</color>的<buf ID=900017>[固定伤害]</buf>"
+    }
+  }
+}

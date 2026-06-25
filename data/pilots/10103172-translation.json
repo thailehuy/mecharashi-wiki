@@ -1,0 +1,131 @@
+{
+  "PilotName": "虎王",
+  "RealName": "虎王",
+  "Gender": "Male",
+  "Profession": "Assault",
+  "Occupation": "突击手",
+  "Talent0_2Ability": {
+    "name": "魔界皇子",
+    "SpecificEffects": "若自身携带的可驱散减益效果小于等于<color=#F74848>3</color>个，可驱散的减益效果无效；每被施加<color=#F74848>1</color>个减益效果，获得<color=#F74848>1</color>层<buf ID=2019506>[虎威]</buf>，可叠加<color=#F74848>5</color>层，持续<color=#F74848>2</color>回合"
+  },
+  "Talent3_5Ability": {
+    "name": "魔界皇子",
+    "SpecificEffects": "若自身携带的可驱散减益效果小于等于<color=#F74848>3</color>个，可驱散的减益效果无效；每被施加<color=#F74848>1</color>个减益效果，获得<color=#F74848>1</color>层<buf ID=2019506>[虎威]</buf>，可叠加<color=#F74848>5</color>层，持续<color=#F74848>2</color>回合；\n主动攻击时，若暴击次数大于等于<color=#F74848>6</color>次，战后回复<color=#F74848>1</color>AP，每回合最多发动<color=#F74848>2</color>次"
+  },
+  "skills": {
+    "200001": {
+      "name": "协同作战1",
+      "describe": "",
+      "SpecificEffects": "配合友军，使用突击或射击武器对友军攻击的目标发动<buf ID=900002>[协力攻击]</buf>，造成<color=#F74848>0.2</color>倍伤害，每回合最多发动<color=#F74848>1</color>次"
+    },
+    "201902": {
+      "name": "战斗直觉",
+      "describe": "",
+      "SpecificEffects": "主动攻击时，对耐久值百分比低于<color=#F74848>50%</color>的部位造成的伤害提升<color=#F74848>20%</color>"
+    },
+    "201903": {
+      "name": "虎啸射击",
+      "describe": "同时使用两把霰弹枪攻击<range type=1>面前3×2格</range>范围内的所有目标，造成<color=#F74848>2×0.35</color>倍范围伤害，攻击前自身获得<color=#F74848>2</color>个随机减益效果，持续<color=#F74848>2</color>回合",
+      "SpecificEffects": ""
+    },
+    "201904": {
+      "name": "我才是最强的！",
+      "describe": "立即获得<color=#F74848>3</color>个减益效果，持续<color=#F74848>2</color>回合，并回复<color=#F74848>2</color>AP，然后可以使用完整移动力继续行动",
+      "SpecificEffects": ""
+    },
+    "201905": {
+      "name": "不屈意志",
+      "describe": "",
+      "SpecificEffects": "任意部位损毁时，战后消耗<color=#F74848>1</color>PP，回溯该部位至最大耐久值，每次出击最多拥有<color=#F74848>2</color>PP"
+    },
+    "201906": {
+      "name": "影虎必杀·邪虎光束攻击",
+      "describe": "同时使用两把霰弹枪攻击<range type=1>面前3×3格</range>范围内的所有目标，造成<color=#F74848>2×0.5</color>倍范围伤害，保留击毁目标后过量的子弹数，最多保留<color=#F74848>30</color>颗，战后对攻击范围内耐久值最高的目标发动<color=#F74848>1</color>次<buf ID=900031>[额外打击]</buf>，造成<color=#F74848>0.25</color>倍伤害，每颗保留的子弹使本次<buf ID=900031>[额外打击]</buf>子弹数<color=#F74848>+1</color>，攻击前自身获得<color=#F74848>2</color>个随机减益效果，持续<color=#F74848>2</color>回合，每回合最多施放<color=#F74848>1</color>次",
+      "SpecificEffects": ""
+    },
+    "201907": {
+      "name": "好胜心",
+      "describe": "",
+      "SpecificEffects": "主动攻击对战时，无视目标<color=#F74848>30%</color>护甲；主动使用范围技能攻击时，无视目标<color=#F74848>15%</color>闪避值"
+    },
+    "201908": {
+      "name": "影虎必杀·邪虎光束攻击MAX",
+      "describe": "同时使用两把霰弹枪攻击单个目标，造成<color=#F74848>2×0.75</color>倍伤害，本次攻击暴击率提升<color=#F74848>20%</color>，保留每颗暴击的子弹数，最多<color=#F74848>15</color>颗，战后使用两把霰弹枪对目标周围<color=#F74848>2</color>格范围内所有敌机发动一次<buf ID=900031>[额外打击]</buf>，造成<color=#F74848>2×0.15</color>倍伤害，每颗保留的子弹使本次<buf ID=900031>[额外打击]</buf>攻击倍率<color=#F74848>+0.02</color>，攻击前自身获得<color=#F74848>2</color>个随机减益效果，持续<color=#F74848>2</color>回合",
+      "SpecificEffects": ""
+    }
+  },
+  "neuralPassives": {
+    "200011": {
+      "name": "协同作战2",
+      "SpecificEffects": "<buf ID=2000011>[协同作战1]</buf>每回合可发动的次数<color=#F74848>+1</color>"
+    },
+    "200012": {
+      "name": "动力革新1",
+      "SpecificEffects": "AP的回复值<color=#F74848>+1</color>"
+    },
+    "200013": {
+      "name": "AP优化1",
+      "SpecificEffects": "AP的初始值<color=#F74848>+1</color>"
+    },
+    "200021": {
+      "name": "协同作战3",
+      "SpecificEffects": "使<buf ID=2000011>[协同作战1]</buf>触发的<buf ID=900002>[协力攻击]</buf>伤害倍率提升至<color=#F74848>0.3</color>倍"
+    },
+    "200022": {
+      "name": "动力革新2",
+      "SpecificEffects": "击破部位时，战后回复<color=#F74848>1</color>AP，每回合最多发动<color=#F74848>1</color>次"
+    },
+    "200023": {
+      "name": "AP优化2",
+      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+    },
+    "201931": {
+      "name": "少年意气1",
+      "SpecificEffects": "天赋无效可驱散减益效果的条件提升至小于等于<color=#F74848>5</color>个"
+    },
+    "200032": {
+      "name": "AP优化3",
+      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+    },
+    "200033": {
+      "name": "自适应作战1",
+      "SpecificEffects": "行动结束时，若本回合未主动攻击，则可以额外移动<color=#F74848>2</color>格"
+    },
+    "201934": {
+      "name": "少年意气2",
+      "SpecificEffects": "行动结束时，每携带<color=#F74848>1</color>个减益效果，恢复完好部位<color=#F74848>3%</color>耐久值，最多恢复<color=#F74848>15%</color>"
+    },
+    "201935": {
+      "name": "少年意气3",
+      "SpecificEffects": "自身每携带<color=#F74848>1</color>个减益效果，伤害提升<color=#F74848>8%</color>，最多提升<color=#F74848>40%</color>"
+    },
+    "201936": {
+      "name": "少年意气4",
+      "SpecificEffects": "使用霰弹枪发起范围攻击时，若攻击前携带<color=#F74848>3</color>个及以上减益效果，攻击范围<color=#F74848>+1</color>"
+    },
+    "201941": {
+      "name": "勇虎之心1",
+      "SpecificEffects": "主动攻击时，若自身携带的可驱散减益效果小于<color=#F74848>5</color>个，立即获得<color=#F74848>1</color>个随机减益效果，持续<color=#F74848>2</color>回合"
+    },
+    "200042": {
+      "name": "AP优化4",
+      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+    },
+    "200043": {
+      "name": "自适应作战2",
+      "SpecificEffects": "主动攻击前如果没有移动过，可发动<buf ID=900004>[再攻击]</buf>，攻击前无法移动，每回合最多发动<color=#F74848>1</color>次\n无法与同类<buf ID=900004>[再攻击]</buf>效果重复触发"
+    },
+    "201944": {
+      "name": "勇虎之心2",
+      "SpecificEffects": "主动攻击后，若自身携带的增益和减益效果大于等于<color=#F74848>10</color>个，可以发动<buf ID=900005>[再行动]</buf>，每回合最多发动<color=#F74848>1</color>次；触发[勇虎之心2]的<buf ID=900005>[再行动]</buf>效果后，移除自身<color=#F74848>5</color>个可驱散的减益效果，同时获得<buf ID=2019443>[虎王的底力]</buf>，每回合最多发动<color=#F74848>1</color>次"
+    },
+    "201945": {
+      "name": "勇虎之心3",
+      "SpecificEffects": "命中率和暴击率提升<color=#F74848>12%</color>，携带<color=#F74848>5</color>层<buf ID=2019506>[虎威]</buf>时，霰弹枪射程<color=#F74848>+1</color>"
+    },
+    "201946": {
+      "name": "勇虎之心4",
+      "SpecificEffects": "自身每有<color=#F74848>1</color>层<buf ID=2019506>[虎威]</buf>，最终伤害提升<color=#F74848>4%</color>"
+    }
+  }
+}

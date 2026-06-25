@@ -1,0 +1,18 @@
+{
+  "name": "MetalMare",
+  "introduce": "KX-084 MetalMare\nA heavy assault ST developed by Kamadar.\nEquipped with an SAT-1 gas guidance system made from Arashium alloy, it converts a portion of the engine's power into kinetic energy for the firearm, enhancing the lethality of each shot. With a simple, stable design, it serves as an NDF-certified mobile turret.",
+  "modules": {
+    "40014": {
+      "name": "Accuracy Mod",
+      "SpecificEffects": "Hit Rate <color=#F74848>+10%</color>."
+    },
+    "10024": {
+      "name": "Pressurizer",
+      "SpecificEffects": "When attacking with an Assault Weapon, there is a <color=#F74848>70%</color> chance to trigger: DMG <color=#F74848>+15%</color>."
+    },
+    "30042": {
+      "name": "Matching Mod",
+      "SpecificEffects": "During an Active Attack, if the target cannot retaliate, DMG Taken <color=#F74848>-4%</color>."
+    }
+  }
+}

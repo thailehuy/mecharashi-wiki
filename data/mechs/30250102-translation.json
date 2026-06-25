@@ -1,0 +1,18 @@
+{
+  "name": "Swampwalker",
+  "introduce": "HU-21 Swampwalker\nThe UKB-1 designed this heavy tactical ST to tackle the unique terrain of jungle regions.\nIt is best suited for providing firepower support during rainforest combat. With its unique joint design and suspension, it can smoothly traverse swamps and maintain balance even under intense fire.",
+  "modules": {
+    "30072": {
+      "name": "Breaker Mod",
+      "SpecificEffects": "When casting an AoE Attack, DMG Dealt <color=#F74848>+4%</color>."
+    },
+    "10114": {
+      "name": "Inner-Cycle Hub",
+      "SpecificEffects": "When casting a skill with an AP Cost of <color=#F74848>3</color> or more, there is a <color=#F74848>25%</color> chance to trigger and restore <color=#F74848>1</color> AP after combat."
+    },
+    "40094": {
+      "name": "Tending Mod",
+      "SpecificEffects": "Received Repair AMT <color=#F74848>+10%</color>."
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Twilight Fang",
+  "introduce": "OS-11A Twilight Fang\nOne of Obsidian's high-performance light STs, developed based on the OS-06F Diana's combat data.\nThe Twilight Fang's built-in \"Fang\" unit can forcibly calibrate the ST's actions when the pilot's operational accuracy is insufficient, ensuring mission completion.\nThis ST was designed in two models—Model A, suitable for urban terrain, and Model B, for jungle and mountain warfare. Ultimately, Obsidian chose the more versatile Model B to be mass-produced.",
+  "modules": {
+    "20064": {
+      "name": "Fang Frame",
+      "SpecificEffects": "When equipping two weapons of different <buf ID=900047>[type]</buf>s in both hands, DMG <color=#F74848>+20%</color>."
+    },
+    "40054": {
+      "name": "HP Mod",
+      "SpecificEffects": "HP <color=#F74848>+10%</color>."
+    },
+    "30108": {
+      "name": "Combo Mod",
+      "SpecificEffects": "After triggering <buf ID=900004>[Re-ATK]</buf>, DMG <color=#F74848>+18%</color>.\nEach turn, after triggering the first <buf ID=900004>[Re-ATK]</buf>, AP Cost <color=#F74848>-1</color>, with a minimum of <color=#F74848>1</color>."
+    }
+  }
+}

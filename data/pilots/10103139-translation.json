@@ -1,0 +1,131 @@
+{
+  "PilotName": "玛蒂尔达",
+  "RealName": "玛蒂尔达·罗西",
+  "Gender": "Female",
+  "Profession": "Assault",
+  "Occupation": "突击手",
+  "Talent0_2Ability": {
+    "name": "盟军之花",
+    "SpecificEffects": "双手完好时，重机枪射程<color=#F74848>+1</color>；行动开始时，获得<color=#F74848>1</color>层<buf ID=2017500>[怒放]</buf>，可叠加<color=#F74848>2</color>层"
+  },
+  "Talent3_5Ability": {
+    "name": "盟军之花",
+    "SpecificEffects": "双手完好时，重机枪射程<color=#F74848>+1</color>，且子弹数<color=#F74848>+1</color>；行动开始时，获得<color=#F74848>1</color>层<buf ID=2017500>[怒放]</buf>，可叠加<color=#F74848>2</color>层；\n出击时额外获得<color=#F74848>1</color>层<buf ID=2017500>[怒放]</buf>"
+  },
+  "skills": {
+    "200001": {
+      "name": "协同作战1",
+      "describe": "",
+      "SpecificEffects": "配合友军，使用突击或射击武器对友军攻击的目标发动<buf ID=900002>[协力攻击]</buf>，造成<color=#F74848>0.2</color>倍伤害，每回合最多发动<color=#F74848>1</color>次"
+    },
+    "700021": {
+      "name": "射程压制",
+      "describe": "",
+      "SpecificEffects": "主动攻击对战时，目标离自身每远<color=#F74848>1</color>格，伤害提升<color=#F74848>5%</color>，最多<color=#F74848>20%</color>"
+    },
+    "201703": {
+      "name": "侵略如火",
+      "describe": "使自身获得<color=#F74848>2</color>AP，然后可继续移动<color=#F74848>3</color>格，移动后可继续发起攻击",
+      "SpecificEffects": ""
+    },
+    "201704": {
+      "name": "狂野风暴",
+      "describe": "使用重机枪攻击<range type=2>射程范围内</range>的所有目标，造成<color=#F74848>0.55</color>倍范围伤害；\n可发动<buf ID=900125>[火力怒放]</buf>，消耗<color=#F74848>2</color>层<buf ID=2017500>[怒放]</buf>时，本次攻击暴击率提升<color=#F74848>50%</color>",
+      "SpecificEffects": ""
+    },
+    "200907": {
+      "name": "枪火不断",
+      "describe": "",
+      "SpecificEffects": "<buf ID=900002>[协力攻击]</buf>每回合可发动的次数<color=#F74848>+1</color>，每发动<color=#F74848>4</color>次<buf ID=900002>[协力攻击]</buf>后可获得<color=#F74848>1</color>AP"
+    },
+    "300307": {
+      "name": "首枚子弹",
+      "describe": "",
+      "SpecificEffects": "每回合首个技能的AP消耗<color=#F74848>-1</color>，最低<color=#F74848>1</color>点"
+    },
+    "201707": {
+      "name": "火力支点",
+      "describe": "",
+      "SpecificEffects": "通过<buf ID=900002>[协力攻击]</buf>参与对战时，若敌机有部位在本次对战中被击破，战后获得<buf ID=2017072>[火力支点]</buf>，最多叠加<color=#F74848>2</color>层"
+    },
+    "201708": {
+      "name": "炽烈猛攻",
+      "describe": "使用重机枪攻击单个目标，造成<color=#F74848>1.55</color>倍伤害；\n可发动<buf ID=900125>[火力怒放]</buf>，消耗<color=#F74848>2</color>层<buf ID=2017500>[怒放]</buf>时，本次攻击暴击率和暴击伤害提升<color=#F74848>30%</color>",
+      "SpecificEffects": ""
+    }
+  },
+  "neuralPassives": {
+    "200011": {
+      "name": "协同作战2",
+      "SpecificEffects": "<buf ID=2000011>[协同作战1]</buf>每回合可发动的次数<color=#F74848>+1</color>"
+    },
+    "200012": {
+      "name": "动力革新1",
+      "SpecificEffects": "AP的回复值<color=#F74848>+1</color>"
+    },
+    "200013": {
+      "name": "AP优化1",
+      "SpecificEffects": "AP的初始值<color=#F74848>+1</color>"
+    },
+    "200021": {
+      "name": "协同作战3",
+      "SpecificEffects": "使<buf ID=2000011>[协同作战1]</buf>触发的<buf ID=900002>[协力攻击]</buf>伤害倍率提升至<color=#F74848>0.3</color>倍"
+    },
+    "200022": {
+      "name": "动力革新2",
+      "SpecificEffects": "击破部位时，战后回复<color=#F74848>1</color>AP，每回合最多发动<color=#F74848>1</color>次"
+    },
+    "200023": {
+      "name": "AP优化2",
+      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+    },
+    "200031": {
+      "name": "完美机位1",
+      "SpecificEffects": "解锁突击武器的<buf ID=900011>[最佳射程]</buf>，与位于<buf ID=900011>[最佳射程]</buf>的目标对战时，最终伤害提升<color=#F74848>15%</color>"
+    },
+    "200032": {
+      "name": "AP优化3",
+      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+    },
+    "200033": {
+      "name": "自适应作战1",
+      "SpecificEffects": "行动结束时，若本回合未主动攻击，则可以额外移动<color=#F74848>2</color>格"
+    },
+    "200034": {
+      "name": "完美机位2",
+      "SpecificEffects": "与位于<buf ID=900011>[最佳射程]</buf>的目标对战时，命中率提升<color=#F74848>12%</color>"
+    },
+    "200035": {
+      "name": "完美机位3",
+      "SpecificEffects": "与位于<buf ID=900011>[最佳射程]</buf>的目标对战时，暴击率提升<color=#F74848>15%</color>"
+    },
+    "200036": {
+      "name": "完美机位4",
+      "SpecificEffects": "与位于<buf ID=900011>[最佳射程]</buf>的目标对战时，<buf ID=2000311>[完美机位1]</buf>效果提升至<color=#F74848>30%</color>"
+    },
+    "201741": {
+      "name": "火力至上1",
+      "SpecificEffects": "主动攻击对战时，若目标无法反击，战后获得<color=#F74848>1</color>层<buf ID=2017500>[怒放]</buf>"
+    },
+    "200042": {
+      "name": "AP优化4",
+      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+    },
+    "200043": {
+      "name": "自适应作战2",
+      "SpecificEffects": "主动攻击前如果没有移动过，可发动<buf ID=900004>[再攻击]</buf>，攻击前无法移动，每回合最多发动<color=#F74848>1</color>次\n无法与同类<buf ID=900004>[再攻击]</buf>效果重复触发"
+    },
+    "201744": {
+      "name": "火力至上2",
+      "SpecificEffects": "发动<buf ID=900125>[火力怒放]</buf>时，若消耗<color=#F74848>2</color>层<buf ID=2017500>[怒放]</buf>，战后获得<buf ID=2017442>[火力至上]</buf>，持续<color=#F74848>1</color>回合"
+    },
+    "201745": {
+      "name": "火力至上3",
+      "SpecificEffects": "发动<buf ID=900125>[火力怒放]</buf>击毁目标时，战后回复<color=#F74848>1</color>AP"
+    },
+    "201746": {
+      "name": "火力至上4",
+      "SpecificEffects": "发动<buf ID=900125>[火力怒放]</buf>时，每消耗<color=#F74848>1</color>AP，造成伤害提升<color=#F74848>7.5%</color>，最多<color=#F74848>45%</color>"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Wolverine",
+  "introduce": "OS-77 Wolverine\nA medium tactical ST with impressive firepower support capabilities, developed by Obsidian.\nThis ST is equipped with a high-power radar search and locking system and a cluster energizer to assist in the tracking and timing of projectiles, effectively improving the killing efficiency of its ordinance. Its fully optimized frame structure also ensures a certain degree of mobility, making it capable of working with high-speed armored units in combat.\nDespite its high cost, the Wolverine is desirable due to its excellent performance.",
+  "modules": {
+    "40024": {
+      "name": "Crit Rate Mod",
+      "SpecificEffects": "Crit Rate <color=#F74848>+10%</color>."
+    },
+    "30038": {
+      "name": "Suppression Mod",
+      "SpecificEffects": "During an Active Attack in combat, if the target cannot retaliate, DMG <color=#F74848>+18%</color>.\nEqually, dispel <color=#F74848>1</color> buff from the target before combat."
+    },
+    "20104": {
+      "name": "Cluster Energizer",
+      "SpecificEffects": "When casting an AoE attack, if it hits <color=#F74848>2</color> or fewer targets, DMG <color=#F74848>+25%</color>."
+    }
+  }
+}

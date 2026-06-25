@@ -1,0 +1,131 @@
+{
+  "PilotName": "William",
+  "RealName": "William Stein",
+  "Gender": "Male",
+  "Profession": "Assault",
+  "Occupation": "Raider",
+  "Talent0_2Ability": {
+    "name": "Fearless Army",
+    "SpecificEffects": "In combat, for each enemy within range, DMG <color=#F74848>+5%</color>, up to <color=#F74848>20%</color>."
+  },
+  "Talent3_5Ability": {
+    "name": "Fearless Army",
+    "SpecificEffects": "In combat, for every <color=#F74848>1</color> enemy within range, DMG <color=#F74848>+5%</color>, up to <color=#F74848>20%</color>.\nWhen Arm's HP is above <color=#F74848>60%</color>, this part's DMG Taken <color=#F74848>-25%</color>."
+  },
+  "skills": {
+    "200001": {
+      "name": "CEC 1",
+      "describe": "",
+      "SpecificEffects": "In cooperation with allies, use Assault Weapons to launch a <buf ID=900002>[Link Attack]</buf> against the target, dealing <color=#F74848>0.2x</color> DMG, effective up to <color=#F74848>1</color> time per turn."
+    },
+    "200902": {
+      "name": "Surging Fury",
+      "describe": "",
+      "SpecificEffects": "In combat, gain <buf ID=2009022>[Crit Rate UP]</buf> with up to <color=#F74848>3</color> stacks, lasting for <color=#F74848>1</color> turn."
+    },
+    "700012": {
+      "name": "Flanking Firepower",
+      "describe": "",
+      "SpecificEffects": "When launching a <buf ID=900002>[Link Attack]</buf>, DMG <color=#F74848>+15%</color> and Hit Rate <color=#F74848>+10%</color>."
+    },
+    "700028": {
+      "name": "Metal Storm",
+      "describe": "Uses Heavy Machine Gun to attack all targets within <range type=2>attack range</range>, dealing <color=#F74848>0.5x</color> AoE DMG. After combat, it inflicts <buf ID=7101701>[Armor Down I]</buf> on target hits, lasting <color=#F74848>1</color> turn.",
+      "SpecificEffects": ""
+    },
+    "200905": {
+      "name": "Firepower Matrix",
+      "describe": "",
+      "SpecificEffects": "Use a Heavy Machine Gun to intercept incoming rockets within maximum range, reducing their DMG Dealt by <color=#F74848>30%</color>. This effect is effective up to <color=#F74848>3</color> times per turn."
+    },
+    "200906": {
+      "name": "Rack",
+      "describe": "Access <buf ID=900025>[Rack]</buf> mode: unable to move. Heavy Machine Gun's Range <color=#F74848>+2</color>, Bullets <color=#F74848>+1</color>. Can continue to attack after racking. Automatically exits <buf ID=900025>[Rack]</buf> mode when arm is damaged. In <buf ID=900025>[Rack]</buf> mode, can cast <buf ID=900026>[Retract]</buf> code. After retracting, can continue to move.",
+      "SpecificEffects": ""
+    },
+    "200907": {
+      "name": "Nonstop Gunfire",
+      "describe": "",
+      "SpecificEffects": "<buf ID=900002>[Link Attack]</buf>'s effective times per turn <color=#F74848>+1</color>. After triggering <buf ID=900002>[Link Attack]</buf> <color=#F74848>4</color> times, gain <color=#F74848>1</color> AP."
+    },
+    "200908": {
+      "name": "Unleash",
+      "describe": "Consume all AP and use a Heavy Machine Gun to attack a target, dealing <color=#F74848>1.5x</color> DMG. For each additional AP consumed, the skill damage multiplier <color=#F74848>+0.15</color>.",
+      "SpecificEffects": ""
+    }
+  },
+  "neuralPassives": {
+    "200011": {
+      "name": "CEC 2",
+      "SpecificEffects": "<buf ID=900002>[Link Attack]</buf>'s effective times per turn <color=#F74848>+1</color>."
+    },
+    "200012": {
+      "name": "Power Innovation 1",
+      "SpecificEffects": "AP Regen <color=#F74848>+1</color>."
+    },
+    "200013": {
+      "name": "AP Optimization 1",
+      "SpecificEffects": "Initial AP <color=#F74848>+1</color>."
+    },
+    "200021": {
+      "name": "CEC 3",
+      "SpecificEffects": "<buf ID=900002>[Link Attack]</buf>'s damage multiplier is increased to <color=#F74848>0.3</color>."
+    },
+    "200022": {
+      "name": "Power Innovation 2",
+      "SpecificEffects": "When breaking a part, restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>1</color> time per turn."
+    },
+    "200023": {
+      "name": "AP Optimization 2",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
+    },
+    "200031": {
+      "name": "Perfect Position 1",
+      "SpecificEffects": "Unlock the Assault Weapon's <buf ID=900011>[Ideal Range]</buf> ability. When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, final DMG <color=#F74848>+15%</color>."
+    },
+    "200032": {
+      "name": "AP Optimization 3",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
+    },
+    "200033": {
+      "name": "Adaptive Warfare 1",
+      "SpecificEffects": "At the end of the action, if an Active Attack was not initiated this turn, an extra <color=#F74848>2</color> tiles can be moved."
+    },
+    "200034": {
+      "name": "Perfect Position 2",
+      "SpecificEffects": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, Hit Rate <color=#F74848>+12%</color>."
+    },
+    "200035": {
+      "name": "Perfect Position 3",
+      "SpecificEffects": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, Crit Rate <color=#F74848>+12%</color>."
+    },
+    "200036": {
+      "name": "Perfect Position 4",
+      "SpecificEffects": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, final DMG <color=#F74848>+30%</color>."
+    },
+    "200941": {
+      "name": "Destroyer 1",
+      "SpecificEffects": "The <buf ID=2009501>[Fearless Army]</buf> will also grant a Crit Rate <color=#F74848>+5%</color> to self, up to <color=#F74848>20%</color>."
+    },
+    "200042": {
+      "name": "AP Optimization 4",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
+    },
+    "200043": {
+      "name": "Adaptive Warfare 2",
+      "SpecificEffects": "If not moved before an Active Attack, <buf ID=900004>[Re-ATK]</buf> can be triggered, effective up to <color=#F74848>1</color> time per turn. Unable to move before attacking.\nEffects similar to <buf ID=900004>[Re-ATK]</buf> cannot be re-triggered."
+    },
+    "200944": {
+      "name": "Destroyer 2",
+      "SpecificEffects": "In combat, for every <color=#F74848>1</color> tile the target is farther away, DMG <color=#F74848>+3%</color>, up to <color=#F74848>+15%</color>."
+    },
+    "200945": {
+      "name": "Destroyer 3",
+      "SpecificEffects": "For each additional target hit by an AoE skill, DMG <color=#F74848>+3.5%</color>, up to <color=#F74848>17.5%</color>."
+    },
+    "200946": {
+      "name": "Destroyer 4",
+      "SpecificEffects": "The effect of <buf ID=2009501>[Fearless Army]</buf> has increased to <color=#F74848>7.5%</color> for each enemy, up to <color=#F74848>30%</color>."
+    }
+  }
+}

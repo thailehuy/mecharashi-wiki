@@ -1,0 +1,18 @@
+{
+  "name": "Ambusher",
+  "introduce": "RT-79S Ambusher\nThis ranged model is a light ST developed by Katana and was the first commercial model released by the company.\nIt was specialized for long-range attacks and equipped with a complete set of automatic targeting devices, providing practical assistance to the armored forces of the UNCS.\nDue to Katana's ability to customize upgrades, this ST has gained a positive reputation on the market.",
+  "modules": {
+    "10034": {
+      "name": "Mini-PC - Sniper",
+      "SpecificEffects": "When attacking with a Ranged Weapon, there is a <color=#F74848>70%</color> chance to trigger: DMG <color=#F74848>+15%</color>."
+    },
+    "30162": {
+      "name": "Flawless Mod",
+      "SpecificEffects": "When HP is full, DMG <color=#F74848>+2%</color> and DMG Taken <color=#F74848>-2%</color>."
+    },
+    "40024": {
+      "name": "Crit Rate Mod",
+      "SpecificEffects": "Crit Rate <color=#F74848>+10%</color>."
+    }
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "PilotName": "Harvey",
+  "RealName": "Harvey Lynch",
+  "Gender": "Female",
+  "Profession": "Assault",
+  "Occupation": "Raider",
+  "Talent0_2Ability": {
+    "name": "Cross Fire",
+    "SpecificEffects": "When attacking with a Shotgun, gain Machine Gun Normal Attack AP Cost <color=#F74848>-1</color> after combat. When attacking with a Machine Gun, gain Shotgun Normal Attack AP Cost <color=#F74848>-1</color> after combat. This is effective <color=#F74848>1</color> time per turn."
+  },
+  "Talent3_5Ability": {
+    "name": "Cross Fire",
+    "SpecificEffects": "When attacking with a Shotgun, gain Machine Gun Normal Attack AP Cost <color=#F74848>-1</color> after combat. When attacking with a Machine Gun, gain Shotgun Normal Attack AP Cost <color=#F74848>-1</color> after combat. This is effective <color=#F74848>1</color> time per turn.\nDuring an Active Attack in combat, DMG Taken <color=#F74848>-10%</color>."
+  },
+  "skills": {
+    "200001": {
+      "name": "CEC 1",
+      "describe": "",
+      "SpecificEffects": "In cooperation with allies, use Assault Weapons to launch a <buf ID=900002>[Link Attack]</buf> against the target, dealing <color=#F74848>0.2x</color> DMG, effective up to <color=#F74848>1</color> time per turn."
+    },
+    "700026": {
+      "name": "Boarding Scatter",
+      "describe": "Uses Shotgun to attack a target, dealing <color=#F74848>1.15x</color> DMG. Before combat, gains <buf ID=7100404>[Crit Rate UP II]</buf>, lasting <color=#F74848>1</color> turn.",
+      "SpecificEffects": ""
+    },
+    "200503": {
+      "name": "Ramp Fast Fire",
+      "describe": "Uses Machine Gun to attack a target, dealing <color=#F74848>1.15x</color> DMG. Before combat, gains <buf ID=7100105>[Hit Rate UP III]</buf>, lasting <color=#F74848>1</color> turn.",
+      "SpecificEffects": ""
+    },
+    "200504": {
+      "name": "Upwind",
+      "describe": "",
+      "SpecificEffects": "When attacking with a Shotgun, DMG Dealt <color=#F74848>+15%</color> to parts with HP below <color=#F74848>50%</color>."
+    },
+    "200505": {
+      "name": "Downwind",
+      "describe": "",
+      "SpecificEffects": "When attacking with a Machine Gun, DMG Dealt <color=#F74848>+15%</color> to parts with HP above <color=#F74848>50%</color>."
+    },
+    "200506": {
+      "name": "Downwind Blow",
+      "describe": "Uses Shotgun or Machine Gun to attack a target, dealing <color=#F74848>1.4x</color> DMG. Before combat, gains <buf ID=7100403>[Crit Rate UP II]</buf> or <buf ID=7100105>[Hit Rate UP III]</buf>, lasting <color=#F74848>1</color> turn.",
+      "SpecificEffects": ""
+    },
+    "700051": {
+      "name": "Heroism",
+      "describe": "",
+      "SpecificEffects": "If a part is broken in combat, restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>1</color> time per turn."
+    },
+    "200508": {
+      "name": "Bullets Pouring in",
+      "describe": "Uses Machine Gun or Shotgun to attack a target, dealing <color=#F74848>1.55x</color> DMG. Can trigger <buf ID=900004>[Re-ATK]</buf> after combat, but cannot move before attacking.",
+      "SpecificEffects": ""
+    }
+  },
+  "neuralPassives": {
+    "200011": {
+      "name": "CEC 2",
+      "SpecificEffects": "<buf ID=900002>[Link Attack]</buf>'s effective times per turn <color=#F74848>+1</color>."
+    },
+    "200012": {
+      "name": "Power Innovation 1",
+      "SpecificEffects": "AP Regen <color=#F74848>+1</color>."
+    },
+    "200013": {
+      "name": "AP Optimization 1",
+      "SpecificEffects": "Initial AP <color=#F74848>+1</color>."
+    },
+    "200021": {
+      "name": "CEC 3",
+      "SpecificEffects": "<buf ID=900002>[Link Attack]</buf>'s damage multiplier is increased to <color=#F74848>0.3</color>."
+    },
+    "200022": {
+      "name": "Power Innovation 2",
+      "SpecificEffects": "When breaking a part, restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>1</color> time per turn."
+    },
+    "200023": {
+      "name": "AP Optimization 2",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
+    },
+    "200031": {
+      "name": "Perfect Position 1",
+      "SpecificEffects": "Unlock the Assault Weapon's <buf ID=900011>[Ideal Range]</buf> ability. When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, final DMG <color=#F74848>+15%</color>."
+    },
+    "200032": {
+      "name": "AP Optimization 3",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
+    },
+    "200033": {
+      "name": "Adaptive Warfare 1",
+      "SpecificEffects": "At the end of the action, if an Active Attack was not initiated this turn, an extra <color=#F74848>2</color> tiles can be moved."
+    },
+    "200034": {
+      "name": "Perfect Position 2",
+      "SpecificEffects": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, Hit Rate <color=#F74848>+12%</color>."
+    },
+    "200035": {
+      "name": "Perfect Position 3",
+      "SpecificEffects": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, Crit Rate <color=#F74848>+12%</color>."
+    },
+    "200036": {
+      "name": "Perfect Position 4",
+      "SpecificEffects": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, final DMG <color=#F74848>+30%</color>."
+    },
+    "200541": {
+      "name": "Salty Dog 1",
+      "SpecificEffects": "The damage multiplier for Normal Attacks from Shotguns and Machine Guns has been increased to <color=#F74848>1.1</color>."
+    },
+    "200042": {
+      "name": "AP Optimization 4",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
+    },
+    "200043": {
+      "name": "Adaptive Warfare 2",
+      "SpecificEffects": "If not moved before an Active Attack, <buf ID=900004>[Re-ATK]</buf> can be triggered, effective up to <color=#F74848>1</color> time per turn. Unable to move before attacking.\nEffects similar to <buf ID=900004>[Re-ATK]</buf> cannot be re-triggered."
+    },
+    "200544": {
+      "name": "Salty Dog 2",
+      "SpecificEffects": "The effective times per turn of the AP Cost Down effect provided by <buf ID=2005513>[Cross Fire]</buf> are increased by <color=#F74848>1</color>."
+    },
+    "200545": {
+      "name": "Salty Dog 3",
+      "SpecificEffects": "When gaining buffs, the duration <color=#F74848>+1</color>."
+    },
+    "200546": {
+      "name": "Salty Dog 4",
+      "SpecificEffects": "The effect of reducing AP Cost from <buf ID=2005513>[Cross Fire]</buf> will now apply to all attacks, not just Normal Attacks."
+    }
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "PilotName": "Catherine",
+  "RealName": "Catherine",
+  "Gender": "Female",
+  "Profession": "Striker",
+  "Occupation": "Fighter",
+  "Talent0_2Ability": {
+    "name": "Unto Death",
+    "SpecificEffects": "With a Polearm, if unable to retaliate in combat, <buf ID=900008>[Pursuit]</buf> can be triggered, allowing the unit to move <color=#F74848>3</color> tiles toward the attacker after combat. If successful in reaching the target, use the melee weapon to cast <buf ID=900030>[Cleave]</buf>, dealing <color=#F74848>0.4x</color> DMG."
+  },
+  "Talent3_5Ability": {
+    "name": "Unto Death",
+    "SpecificEffects": "非法字符"
+  },
+  "skills": {
+    "100001": {
+      "name": "Mobile Warfare 1",
+      "describe": "",
+      "SpecificEffects": "After breaking a part, <buf ID=900004>[Re-ATK]</buf> can be triggered. Unable to move before the attack, and this can be effective up to <color=#F74848>2</color> times per turn."
+    },
+    "101102": {
+      "name": "Waltz",
+      "describe": "Uses Polearm to attack all targets within an <range type=1>I-shaped (3*1 tiles)</range> or L-shaped (3*1 tiles) area in front, dealing <color=#F74848>1x</color> AoE DMG.",
+      "SpecificEffects": ""
+    },
+    "101103": {
+      "name": "Shadow of Nightmare",
+      "describe": "",
+      "SpecificEffects": "For each enemy within an adjacent (<color=#F74848>2</color> tiles) area, Dodge Rate <color=#F74848>+4%</color>, up to <color=#F74848>12%</color>."
+    },
+    "101104": {
+      "name": "Pillage",
+      "describe": "Uses Polearm to attack a target, dealing <color=#F74848>1.7x</color> DMG. After combat, repairs undamaged parts, restoring HP equal to <color=#F74848>40%</color> of damage dealt.",
+      "SpecificEffects": ""
+    },
+    "101105": {
+      "name": "Malevolent",
+      "describe": "",
+      "SpecificEffects": "When attacking a target in a diagonal direction, Hit Rate <color=#F74848>+8%</color> and Crit Rate <color=#F74848>+10%</color>."
+    },
+    "101106": {
+      "name": "Unending",
+      "describe": "",
+      "SpecificEffects": "When any part suffers overdamage, trigger <buf ID=900003>[Guts]</buf>, locking to <color=#F74848>1</color> HP. Each time <buf ID=900003>[Guts]</buf> is triggered, <color=#F74848>2</color> AP will be lost."
+    },
+    "101107": {
+      "name": "Bloodthirsty",
+      "describe": "",
+      "SpecificEffects": "When dealing damage, the HP of the undamaged part will be restored after combat, with the repair amount being <color=#F74848>25%</color> of the damage dealt."
+    },
+    "101108": {
+      "name": "Disaster Raid",
+      "describe": "Uses Polearm to attack a target <color=#F74848>2</color> times, each time dealing <color=#F74848>1.1x</color> DMG.",
+      "SpecificEffects": ""
+    }
+  },
+  "neuralPassives": {
+    "100011": {
+      "name": "Mobile Warfare 2",
+      "SpecificEffects": "Upon triggering <buf ID=900004>[Re-ATK]</buf>, allows movement of <color=#F74848>2</color> tiles before attacking."
+    },
+    "100012": {
+      "name": "Power Innovation 1",
+      "SpecificEffects": "AP Regen <color=#F74848>+1</color>."
+    },
+    "100013": {
+      "name": "AP Optimization 1",
+      "SpecificEffects": "Initial AP <color=#F74848>+1</color>."
+    },
+    "100021": {
+      "name": "Mobile Warfare 3",
+      "SpecificEffects": "Destroying the target can trigger <buf ID=900005>[Re-Act]</buf>, allowing action with full movement distance."
+    },
+    "100022": {
+      "name": "Power Innovation 2",
+      "SpecificEffects": "When breaking a part, restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>1</color> time per turn."
+    },
+    "100023": {
+      "name": "AP Optimization 2",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
+    },
+    "100031": {
+      "name": "Alacrity 1",
+      "SpecificEffects": "During an Active Attack with a Melee Weapon, there is a <color=#F74848>20%</color> chance to trigger <buf ID=900001>[Flurry Strike]</buf> following the enemy’s attack, dealing <color=#F74848>0.5x</color> DMG."
+    },
+    "100032": {
+      "name": "AP Optimization 3",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
+    },
+    "100033": {
+      "name": "Mobile Warfare 4",
+      "SpecificEffects": "<buf ID=900004>[Re-ATK]</buf> or <buf ID=900005>[Re-Act]</buf>'s effective times per turn <color=#F74848>+1</color>."
+    },
+    "100034": {
+      "name": "Alacrity 2",
+      "SpecificEffects": "Before an Active Attack, the probability of triggering <buf ID=900001>[Flurry Strike]</buf> increases by <color=#F74848>6%</color> for each <color=#F74848>1</color> tile moved, up to <color=#F74848>30%</color>."
+    },
+    "100035": {
+      "name": "Alacrity 3",
+      "SpecificEffects": "<buf ID=900001>[Flurry Strike]</buf> damage multiplier is increased to <color=#F74848>0.75</color>."
+    },
+    "100036": {
+      "name": "Alacrity 4",
+      "SpecificEffects": "When triggering <buf ID=900001>[Flurry Strike]</buf>, prioritize hitting the part with the lowest HP."
+    },
+    "101141": {
+      "name": "The Ominous 1",
+      "SpecificEffects": "Increase the movement distance of <buf ID=900008>[Pursuit]</buf> to <color=#F74848>4</color> tiles."
+    },
+    "100042": {
+      "name": "AP Optimization 4",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
+    },
+    "100043": {
+      "name": "Power Innovation 3",
+      "SpecificEffects": "When destroying a target, additionally restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>2</color> times per turn."
+    },
+    "101144": {
+      "name": "The Ominous 2",
+      "SpecificEffects": "When failing to move to the attacker's side with <buf ID=900008>[Pursuit]</buf>, automatically search for other targets within an adjacent (<color=#F74848>1</color> tile) area to cast <buf ID=900030>[Cleave]</buf>."
+    },
+    "101145": {
+      "name": "The Ominous 3",
+      "SpecificEffects": "When attacking with a Polearm, deal [Collateral DMG] to <color=#F74848>1</color> additional part for <color=#F74848>15%</color> of the damage dealt."
+    },
+    "101146": {
+      "name": "The Ominous 4",
+      "SpecificEffects": "The multiplier of Collateral DMG is increased to <color=#F74848>40%</color> of the damage dealt."
+    }
+  }
+}

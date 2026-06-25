@@ -1,0 +1,18 @@
+{
+  "name": "Flintstone",
+  "introduce": "LTX-19 Flintstone\nThis melee model is a light ST developed by Laniakea. It was initially designed as a companion combat model for Arash.\nAfter several design changes, the ST adopted a new type of alloy as its skeleton material, making it both solid and lightweight and striking a good balance between maneuverability and survivability, thus becoming one of the main combat models of the NDF.",
+  "modules": {
+    "30052": {
+      "name": "Kinetic Mod",
+      "SpecificEffects": "Before an Active Attack in combat, for every <color=#F74848>1</color> tile moved, DMG <color=#F74848>+1%</color>, up to <color=#F74848>4%</color>."
+    },
+    "10014": {
+      "name": "Basher",
+      "SpecificEffects": "When attacking with a Melee Weapon, there is a <color=#F74848>70%</color> chance to trigger: DMG <color=#F74848>+15%</color>."
+    },
+    "40044": {
+      "name": "Dodge Mod",
+      "SpecificEffects": "Dodge Rate <color=#F74848>+10%</color>."
+    }
+  }
+}

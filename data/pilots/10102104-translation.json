@@ -1,0 +1,131 @@
+{
+  "PilotName": "Raven",
+  "RealName": "Raven Bluecher",
+  "Gender": "Male",
+  "Profession": "Striker",
+  "Occupation": "Fighter",
+  "Talent0_2Ability": {
+    "name": "Overbearing",
+    "SpecificEffects": "During an Active Attack in combat, inflict <buf ID=1006502>[Timidity I]</buf> on the target after combat, effective <color=#F74848>1</color> time and lasting for <color=#F74848>1</color> turn."
+  },
+  "Talent3_5Ability": {
+    "name": "Overbearing",
+    "SpecificEffects": "During an Active Attack in combat, inflict <buf ID=1006502>[Timidity I]</buf> on the target after combat, effective <color=#F74848>1</color> time and lasting for <color=#F74848>1</color> turn.\nWhen inflicting debuffs, the duration <color=#F74848>+1</color>."
+  },
+  "skills": {
+    "100001": {
+      "name": "Mobile Warfare 1",
+      "describe": "",
+      "SpecificEffects": "After breaking a part, <buf ID=900004>[Re-ATK]</buf> can be triggered. Unable to move before the attack, and this can be effective up to <color=#F74848>2</color> times per turn."
+    },
+    "700013": {
+      "name": "Resolve",
+      "describe": "",
+      "SpecificEffects": "When attacking a target that carries debuffs, DMG <color=#F74848>+15%</color>."
+    },
+    "100603": {
+      "name": "Shock Baton",
+      "describe": "Uses Polearm to attack a target, dealing <color=#F74848>1.7x</color> DMG. After combat, it inflicts <buf ID=7101203>[DMG Down II]</buf> on the target, lasting for <color=#F74848>1</color> turn.",
+      "SpecificEffects": ""
+    },
+    "100604": {
+      "name": "Well Trained",
+      "describe": "",
+      "SpecificEffects": "During an Active Attack in combat, if the target cannot retaliate, the target loses <color=#F74848>1 AP</color> after combat."
+    },
+    "100605": {
+      "name": "Matrix Sweep",
+      "describe": "Uses Polearm to attack all targets within a <range type=2>Half-Ring area in front</range>, dealing <color=#F74848>0.9x</color> AoE DMG. After combat, it inflicts <buf ID=7101801>[DMG Taken UP I]</buf> on targets hit, lasting <color=#F74848>1</color> turn.",
+      "SpecificEffects": ""
+    },
+    "100606": {
+      "name": "Warning Sign",
+      "describe": "Uses Polearm to attack a target, dealing <color=#F74848>2.0x</color> DMG. If the target is destroyed, inflicts <buf ID=1006502>[Timidity I]</buf> on enemies within the adjacent (<color=#F74848>2</color> tiles) area, lasting <color=#F74848>1</color> turn.",
+      "SpecificEffects": ""
+    },
+    "100607": {
+      "name": "Perfect Touchdown",
+      "describe": "",
+      "SpecificEffects": "When casting an AoE Attack, if <color=#F74848>3</color> or more targets are hit, restore <color=#F74848>1</color> AP after combat."
+    },
+    "100608": {
+      "name": "Whirlwind",
+      "describe": "Uses Polearm to attack all targets within a <range type=2>1-ring</range> area, dealing <color=#F74848>0.9x</color> AoE DMG. After combat, targets hit lose <color=#F74848>1</color> AP.",
+      "SpecificEffects": ""
+    }
+  },
+  "neuralPassives": {
+    "100011": {
+      "name": "Mobile Warfare 2",
+      "SpecificEffects": "Upon triggering <buf ID=900004>[Re-ATK]</buf>, allows movement of <color=#F74848>2</color> tiles before attacking."
+    },
+    "100012": {
+      "name": "Power Innovation 1",
+      "SpecificEffects": "AP Regen <color=#F74848>+1</color>."
+    },
+    "100013": {
+      "name": "AP Optimization 1",
+      "SpecificEffects": "Initial AP <color=#F74848>+1</color>."
+    },
+    "100021": {
+      "name": "Mobile Warfare 3",
+      "SpecificEffects": "Destroying the target can trigger <buf ID=900005>[Re-Act]</buf>, allowing action with full movement distance."
+    },
+    "100022": {
+      "name": "Power Innovation 2",
+      "SpecificEffects": "When breaking a part, restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>1</color> time per turn."
+    },
+    "100023": {
+      "name": "AP Optimization 2",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
+    },
+    "100031": {
+      "name": "Alacrity 1",
+      "SpecificEffects": "During an Active Attack with a Melee Weapon, there is a <color=#F74848>20%</color> chance to trigger <buf ID=900001>[Flurry Strike]</buf> following the enemy’s attack, dealing <color=#F74848>0.5x</color> DMG."
+    },
+    "100032": {
+      "name": "AP Optimization 3",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
+    },
+    "100033": {
+      "name": "Mobile Warfare 4",
+      "SpecificEffects": "<buf ID=900004>[Re-ATK]</buf> or <buf ID=900005>[Re-Act]</buf>'s effective times per turn <color=#F74848>+1</color>."
+    },
+    "100034": {
+      "name": "Alacrity 2",
+      "SpecificEffects": "Before an Active Attack, the probability of triggering <buf ID=900001>[Flurry Strike]</buf> increases by <color=#F74848>6%</color> for each <color=#F74848>1</color> tile moved, up to <color=#F74848>30%</color>."
+    },
+    "100035": {
+      "name": "Alacrity 3",
+      "SpecificEffects": "<buf ID=900001>[Flurry Strike]</buf> damage multiplier is increased to <color=#F74848>0.75</color>."
+    },
+    "100036": {
+      "name": "Alacrity 4",
+      "SpecificEffects": "When triggering <buf ID=900001>[Flurry Strike]</buf>, prioritize hitting the part with the lowest HP."
+    },
+    "100641": {
+      "name": "Rich Kid 1",
+      "SpecificEffects": "When casting AoE attacks, inflict <buf ID=900035>[Timidity]</buf> on the hit target."
+    },
+    "100042": {
+      "name": "AP Optimization 4",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
+    },
+    "100043": {
+      "name": "Power Innovation 3",
+      "SpecificEffects": "When destroying a target, additionally restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>2</color> times per turn."
+    },
+    "100644": {
+      "name": "Rich Kid 2",
+      "SpecificEffects": "<buf ID=900035>[Timidity]</buf> will be effective for <color=#F74848>2</color> times."
+    },
+    "100645": {
+      "name": "Rich Kid 3",
+      "SpecificEffects": "For each target carrying <buf ID=900035>[Timidity]</buf> within the 1-ring area, DMG <color=#F74848>+5%</color>, up to <color=#F74848>15%</color>."
+    },
+    "100646": {
+      "name": "Rich Kid 4",
+      "SpecificEffects": "When destroying a target that has <buf ID=900035>[Timidity]</buf>, restore <color=#F74848>1</color> AP to yourself, effective up to <color=#F74848>2</color> times per turn."
+    }
+  }
+}

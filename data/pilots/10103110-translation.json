@@ -1,0 +1,131 @@
+{
+  "PilotName": "Hong",
+  "RealName": "Hongling Li",
+  "Gender": "Female",
+  "Profession": "Striker",
+  "Occupation": "Fighter",
+  "Talent0_2Ability": {
+    "name": "Extreme Will",
+    "SpecificEffects": "During an Active Attack, if a part is broken, gain <buf ID=1008503>[Euphoria I]</buf> after combat, up to <color=#F74848>5</color> stacks, lasting for <color=#F74848>2</color> turns."
+  },
+  "Talent3_5Ability": {
+    "name": "Extreme Will",
+    "SpecificEffects": "During an Active Attack, if a part is broken, gain <buf ID=1008503>[Euphoria I]</buf> after combat, up to <color=#F74848>5</color> stacks, lasting for <color=#F74848>2</color> turns.\nIgnore unit blocks during movement."
+  },
+  "skills": {
+    "100001": {
+      "name": "Mobile Warfare 1",
+      "describe": "",
+      "SpecificEffects": "After breaking a part, <buf ID=900004>[Re-ATK]</buf> can be triggered. Unable to move before the attack, and this can be effective up to <color=#F74848>2</color> times per turn."
+    },
+    "100802": {
+      "name": "Clear Mind",
+      "describe": "",
+      "SpecificEffects": "When attacked or retaliated, Dodge Rate <color=#F74848>+12%</color> if no ally exists within the adjacent (<color=#F74848>1</color> tile) area."
+    },
+    "100803": {
+      "name": "Uppercut",
+      "describe": "Uses Pile Bunker or Knuckles to attack a target, dealing <color=#F74848>1.35x</color> DMG. This attack prioritizes the Body. Can only use <color=#F74848>1</color> time per turn.",
+      "SpecificEffects": ""
+    },
+    "100804": {
+      "name": "Buff Prolonger",
+      "describe": "",
+      "SpecificEffects": "When gaining buffs, the duration <color=#F74848>+1</color>."
+    },
+    "700030": {
+      "name": "Dash",
+      "describe": "Gain <buf ID=7100901>[Movement UP]</buf> and <buf ID=7100403>[Crit Rate UP II]</buf>, lasting for <color=#F74848>1</color> turn. Can continue the action with the remaining movement.",
+      "SpecificEffects": ""
+    },
+    "100806": {
+      "name": "Shaving",
+      "describe": "",
+      "SpecificEffects": "When taking damage and HP drops below <color=#F74848>50%</color>, gain <buf ID=1008062>[Certain Dodge]</buf> after combat, effective <color=#F74848>1</color> time, with a trigger interval of <color=#F74848>3</color> turns."
+    },
+    "100807": {
+      "name": "Concentrate",
+      "describe": "",
+      "SpecificEffects": "If unable to retaliate in combat, gain <buf ID=1008072>[Iron Will]</buf> after combat, up to <color=#F74848>5</color> stacks. These last until a critical hit is landed."
+    },
+    "100808": {
+      "name": "Double Whammy",
+      "describe": "Uses 2 Melee Weapons to strike a target <color=#F74848>2</color> times, each time dealing <color=#F74848>0.85x</color> DMG. The <color=#F74848>1st</color> attack will hit the part with the highest HP. If this part is not broken, the <color=#F74848>2nd</color> attack will hit the same part.",
+      "SpecificEffects": ""
+    }
+  },
+  "neuralPassives": {
+    "100011": {
+      "name": "Mobile Warfare 2",
+      "SpecificEffects": "Upon triggering <buf ID=900004>[Re-ATK]</buf>, allows movement of <color=#F74848>2</color> tiles before attacking."
+    },
+    "100012": {
+      "name": "Power Innovation 1",
+      "SpecificEffects": "AP Regen <color=#F74848>+1</color>."
+    },
+    "100013": {
+      "name": "AP Optimization 1",
+      "SpecificEffects": "Initial AP <color=#F74848>+1</color>."
+    },
+    "100021": {
+      "name": "Mobile Warfare 3",
+      "SpecificEffects": "Destroying the target can trigger <buf ID=900005>[Re-Act]</buf>, allowing action with full movement distance."
+    },
+    "100022": {
+      "name": "Power Innovation 2",
+      "SpecificEffects": "When breaking a part, restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>1</color> time per turn."
+    },
+    "100023": {
+      "name": "AP Optimization 2",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
+    },
+    "100031": {
+      "name": "Alacrity 1",
+      "SpecificEffects": "During an Active Attack with a Melee Weapon, there is a <color=#F74848>20%</color> chance to trigger <buf ID=900001>[Flurry Strike]</buf> following the enemy’s attack, dealing <color=#F74848>0.5x</color> DMG."
+    },
+    "100032": {
+      "name": "AP Optimization 3",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
+    },
+    "100033": {
+      "name": "Mobile Warfare 4",
+      "SpecificEffects": "<buf ID=900004>[Re-ATK]</buf> or <buf ID=900005>[Re-Act]</buf>'s effective times per turn <color=#F74848>+1</color>."
+    },
+    "100034": {
+      "name": "Alacrity 2",
+      "SpecificEffects": "Before an Active Attack, the probability of triggering <buf ID=900001>[Flurry Strike]</buf> increases by <color=#F74848>6%</color> for each <color=#F74848>1</color> tile moved, up to <color=#F74848>30%</color>."
+    },
+    "100035": {
+      "name": "Alacrity 3",
+      "SpecificEffects": "<buf ID=900001>[Flurry Strike]</buf> damage multiplier is increased to <color=#F74848>0.75</color>."
+    },
+    "100036": {
+      "name": "Alacrity 4",
+      "SpecificEffects": "When triggering <buf ID=900001>[Flurry Strike]</buf>, prioritize hitting the part with the lowest HP."
+    },
+    "100841": {
+      "name": "Martial 1",
+      "SpecificEffects": "<buf ID=900050>[Euphoria]</buf> will also grant a Dodge Rate <color=#F74848>+3%</color>."
+    },
+    "100042": {
+      "name": "AP Optimization 4",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
+    },
+    "100043": {
+      "name": "Power Innovation 3",
+      "SpecificEffects": "When destroying a target, additionally restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>2</color> times per turn."
+    },
+    "100844": {
+      "name": "Martial 2",
+      "SpecificEffects": "Upon a perfect dodge, gain <color=#F74848>1</color> stack of <buf ID=900050>[Euphoria]</buf> after combat."
+    },
+    "100845": {
+      "name": "Martial 3",
+      "SpecificEffects": "When landing critical hits, gain <color=#F74848>1</color> stack of <buf ID=900050>[Euphoria]</buf> after combat."
+    },
+    "100846": {
+      "name": "Martial 4",
+      "SpecificEffects": "Normal attacks have a chance to activate <buf ID=900010>[Gusty Strike]</buf>, dealing <color=#F74848>1.0x</color> DMG. For every <color=#F74848>1</color> stack of <buf ID=900050>[Euphoria]</buf>, the probability increases by <color=#F74848>10%</color>."
+    }
+  }
+}

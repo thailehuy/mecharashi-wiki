@@ -1,0 +1,131 @@
+{
+  "PilotName": "Grant",
+  "RealName": "Grant Zakarweski",
+  "Gender": "Male",
+  "Profession": "Mechanic",
+  "Occupation": "Machinist",
+  "Talent0_2Ability": {
+    "name": "Seasoned Veteran",
+    "SpecificEffects": "After performing active repairs, gain <buf ID=7100305>[DMG UP III]</buf>, lasting for <color=#F74848>1</color> turn.\nHeavy Machine Gun Weight <color=#F74848>-200</color>."
+  },
+  "Talent3_5Ability": {
+    "name": "Seasoned Veteran",
+    "SpecificEffects": "After performing active repairs, gain <buf ID=7100305>[DMG UP III]</buf>, lasting for <color=#F74848>1</color> turn.\nHeavy Machine Gun Weight <color=#F74848>-200</color>.\nWhen performing active repairs, for every <color=#F74848>1</color> damaged part of the target, Repair AMT <color=#F74848>+10%</color>."
+  },
+  "skills": {
+    "500001": {
+      "name": "CEC 1",
+      "describe": "",
+      "SpecificEffects": "In cooperation with allies, launch a <buf ID=900002>[Link Attack]</buf> against the target, dealing <color=#F74848>0.2x</color> DMG, effective up to <color=#F74848>1</color> time per turn."
+    },
+    "700012": {
+      "name": "Flanking Firepower",
+      "describe": "",
+      "SpecificEffects": "When launching a <buf ID=900002>[Link Attack]</buf>, DMG <color=#F74848>+15%</color> and Hit Rate <color=#F74848>+10%</color>."
+    },
+    "700009": {
+      "name": "Wide-Range Repair",
+      "describe": "Restore the HP of all allies within the selected <range type=1>Diamond (2 tiles) area</range>. The repair amount is <color=#F74848>1.0x</color> the Manipulator's Repair AMT. It can repair <color=#F74848>1</color> damaged part.",
+      "SpecificEffects": ""
+    },
+    "700015": {
+      "name": "Rotation",
+      "describe": "",
+      "SpecificEffects": "At the end of the action, if no damage was dealt this turn, restore <color=#F74848>1</color> AP."
+    },
+    "500205": {
+      "name": "Special Care",
+      "describe": "",
+      "SpecificEffects": "When executing an individual repair skill, Repair AMT <color=#F74848>+10%</color>, and additionally repairs <color=#F74848>1</color> damaged part."
+    },
+    "500206": {
+      "name": "Balanced Unit",
+      "describe": "Uses Heavy Machine Gun to attack a target, dealing <color=#F74848>1.4x</color> DMG. After combat, repairs own undamaged parts, restoring HP equal to <color=#F74848>1x</color> Manipulator Repair AMT. Cannot repair destroyed parts.",
+      "SpecificEffects": ""
+    },
+    "500207": {
+      "name": "Fix Now",
+      "describe": "",
+      "SpecificEffects": "If the attack hits the target, grants self <buf ID=5002072>[Repair AMT UP]</buf> after combat, up to <color=#F74848>3</color> stacks, lasting for <color=#F74848>1</color> turn."
+    },
+    "500208": {
+      "name": "Slap It!",
+      "describe": "Dispel all debuffs and restore HP to all parts of an ST. The repair amount is <color=#F74848>2.6x</color> the Manipulator's Repair AMT. Can repair <color=#F74848>1</color> damaged part.",
+      "SpecificEffects": ""
+    }
+  },
+  "neuralPassives": {
+    "500011": {
+      "name": "CEC 2",
+      "SpecificEffects": "<buf ID=900002>[Link Attack]</buf>'s effective times per turn <color=#F74848>+1</color>."
+    },
+    "500012": {
+      "name": "Part Maintenance 1",
+      "SpecificEffects": "After performing active repairs, dispel <color=#F74848>1</color> debuff."
+    },
+    "500013": {
+      "name": "AP Optimization 1",
+      "SpecificEffects": "Initial AP <color=#F74848>+1</color>."
+    },
+    "500021": {
+      "name": "CEC 3",
+      "SpecificEffects": "<buf ID=900002>[Link Attack]</buf>'s damage multiplier is increased to <color=#F74848>0.3</color>."
+    },
+    "500022": {
+      "name": "Part Maintenance 2",
+      "SpecificEffects": "AP Regen <color=#F74848>+1</color>."
+    },
+    "500023": {
+      "name": "AP Optimization 2",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
+    },
+    "500031": {
+      "name": "Emergency Repair 1",
+      "SpecificEffects": "At the end of the action, randomly select a single adjacent (<color=#F74848>1</color> tile) ally to perform <buf ID=900018>[Passive Repair]</buf>. The repair amount is <color=#F74848>0.6x</color> the Manipulator's Repair AMT and cannot repair damaged parts."
+    },
+    "500032": {
+      "name": "AP Optimization 3",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
+    },
+    "500033": {
+      "name": "Flexible Repair",
+      "SpecificEffects": "After performing active repairs, an additional <color=#F74848>2</color> tiles can be moved."
+    },
+    "500034": {
+      "name": "Emergency Repair 2",
+      "SpecificEffects": "<buf ID=900018>[Passive Repair]</buf> selects targets within the adjacent (<color=#F74848>2</color> tiles) area."
+    },
+    "500035": {
+      "name": "Emergency Repair 3",
+      "SpecificEffects": "<buf ID=900018>[Passive Repair]</buf>'s Repair AMT is now <color=#F74848>1x</color> that of the Manipulator."
+    },
+    "500036": {
+      "name": "Emergency Repair 4",
+      "SpecificEffects": "The number of targets that <buf ID=900018>[Passive Repair]</buf> can repair increases by <color=#F74848>1</color>."
+    },
+    "500241": {
+      "name": "Old But Not Obsolete 1",
+      "SpecificEffects": "After performing active repairs, trigger <buf ID=900004>[Re-ATK]</buf>. Repair skills cannot be cast, and move is not allowed before attacking. This is effective for <color=#F74848>1</color> time per turn."
+    },
+    "500042": {
+      "name": "AP Optimization 4",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
+    },
+    "500043": {
+      "name": "Part Maintenance 3",
+      "SpecificEffects": "Each turn, the AP Cost of the 1st repair skill decreases by <color=#F74848>1</color>, with a minimum cost of <color=#F74848>1</color> AP."
+    },
+    "500244": {
+      "name": "Old But Not Obsolete 2",
+      "SpecificEffects": "When executing an individual repair skill, also repair yourself for an amount equal to <color=#F74848>20%</color> of the Repair AMT."
+    },
+    "500245": {
+      "name": "Old But Not Obsolete 3",
+      "SpecificEffects": "Upon triggering <buf ID=900004>[Re-ATK]</buf>, allows movement of <color=#F74848>2</color> tiles before attacking."
+    },
+    "500246": {
+      "name": "Old But Not Obsolete 4",
+      "SpecificEffects": "After performing active repairs, the weapon's AP Cost <color=#F74848>-1</color>, effective <color=#F74848>1</color> time."
+    }
+  }
+}

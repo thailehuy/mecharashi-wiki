@@ -1,0 +1,97 @@
+{
+  "PilotName": "Gregory",
+  "RealName": "Gregory Gannibal",
+  "Gender": "Male",
+  "Profession": "Assault",
+  "Occupation": "Raider",
+  "Talent0_2Ability": {
+    "name": "MG Fanatic",
+    "SpecificEffects": "Machine Gun's Hit Rate <color=#F74848>+3%</color> and Crit Rate <color=#F74848>+7%</color>."
+  },
+  "Talent3_5Ability": {
+    "name": "MG Fanatic",
+    "SpecificEffects": "Machine Gun's Hit Rate <color=#F74848>+5%</color> and Crit Rate <color=#F74848>+10%</color>."
+  },
+  "skills": {
+    "200001": {
+      "name": "CEC 1",
+      "describe": "",
+      "SpecificEffects": "In cooperation with allies, use Assault Weapons to launch a <buf ID=900002>[Link Attack]</buf> against the target, dealing <color=#F74848>0.2x</color> DMG, effective up to <color=#F74848>1</color> time per turn."
+    },
+    "700031": {
+      "name": "ATK Calibration",
+      "describe": "",
+      "SpecificEffects": "During an Active Attack in combat, Crit DMG <color=#F74848>+7%</color>."
+    },
+    "200203": {
+      "name": "Covered",
+      "describe": "Uses Machine Gun to attack a target, dealing <color=#F74848>1.15x</color> DMG and inflicting <buf ID=7101003>[Hit Rate Down II]</buf> for <color=#F74848>1</color> turn.",
+      "SpecificEffects": ""
+    },
+    "700033": {
+      "name": "Shooting Cans",
+      "describe": "",
+      "SpecificEffects": "In combat, if the Hit Rate is above <color=#F74848>80%</color>, DMG <color=#F74848>+15%</color>."
+    },
+    "700011": {
+      "name": "Backup Supply",
+      "describe": "Gain <color=#F74848>2</color> AP. Can continue the action with the remaining movement.",
+      "SpecificEffects": ""
+    },
+    "200206": {
+      "name": "Hyperlimit Burst",
+      "describe": "Simultaneously uses 2 Machine Guns to attack a target, dealing <color=#F74848>2* 0.7</color> DMG. Before combat, gain <buf ID=7100501>[Crit DMG UP I]</buf>, lasting for <color=#F74848>1</color> turn.",
+      "SpecificEffects": ""
+    }
+  },
+  "neuralPassives": {
+    "200011": {
+      "name": "CEC 2",
+      "SpecificEffects": "<buf ID=900002>[Link Attack]</buf>'s effective times per turn <color=#F74848>+1</color>."
+    },
+    "200012": {
+      "name": "Power Innovation 1",
+      "SpecificEffects": "AP Regen <color=#F74848>+1</color>."
+    },
+    "200013": {
+      "name": "AP Optimization 1",
+      "SpecificEffects": "Initial AP <color=#F74848>+1</color>."
+    },
+    "200021": {
+      "name": "CEC 3",
+      "SpecificEffects": "<buf ID=900002>[Link Attack]</buf>'s damage multiplier is increased to <color=#F74848>0.3</color>."
+    },
+    "200022": {
+      "name": "Power Innovation 2",
+      "SpecificEffects": "When breaking a part, restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>1</color> time per turn."
+    },
+    "200023": {
+      "name": "AP Optimization 2",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
+    },
+    "200031": {
+      "name": "Perfect Position 1",
+      "SpecificEffects": "Unlock the Assault Weapon's <buf ID=900011>[Ideal Range]</buf> ability. When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, final DMG <color=#F74848>+15%</color>."
+    },
+    "200032": {
+      "name": "AP Optimization 3",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
+    },
+    "200033": {
+      "name": "Adaptive Warfare 1",
+      "SpecificEffects": "At the end of the action, if an Active Attack was not initiated this turn, an extra <color=#F74848>2</color> tiles can be moved."
+    },
+    "200034": {
+      "name": "Perfect Position 2",
+      "SpecificEffects": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, Hit Rate <color=#F74848>+12%</color>."
+    },
+    "200035": {
+      "name": "Perfect Position 3",
+      "SpecificEffects": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, Crit Rate <color=#F74848>+12%</color>."
+    },
+    "200036": {
+      "name": "Perfect Position 4",
+      "SpecificEffects": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, final DMG <color=#F74848>+30%</color>."
+    }
+  }
+}

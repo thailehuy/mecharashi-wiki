@@ -1,0 +1,18 @@
+{
+  "name": "Hela",
+  "introduce": "OS-13S Hela\nA light ST designed by the Cicero Laboratory and workshopped by Obsidian before production.\nThis model was specially designed for Predators, and is optimized for enhanced mobility and survival capabilities.\nThe cockpit of the Hela is equipped with a \"Garm Unit\" that can collect information on the battlefield. In certain situations this unit can facilitate increased pilot-ST integration.",
+  "modules": {
+    "30198": {
+      "name": "Mitigation Mod",
+      "SpecificEffects": "If unable to retaliate in combat, Dodge Rate <color=#F74848>+18%</color>.\nAfter performing a perfect dodge, gain <buf ID=7100901>[Movement UP]</buf>, lasting for <color=#F74848>1</color> turn."
+    },
+    "20254": {
+      "name": "Garm Unit",
+      "SpecificEffects": "During the Enemy Turn, DMG <color=#F74848>+30%</color>."
+    },
+    "40024": {
+      "name": "Crit Rate Mod",
+      "SpecificEffects": "Crit Rate <color=#F74848>+10%</color>."
+    }
+  }
+}

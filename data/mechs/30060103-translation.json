@@ -1,0 +1,18 @@
+{
+  "name": "Heracles",
+  "introduce": "KX-075 Heracles\nMade by Kamadar, this heavy ST is a modified version of the first high-end SL to utilize Arashium alloy.\nModifications, intended to enhance military effectiveness, include increased load capacity and high-power output characteristics. A miniaturized vibration jammer has been installed on this ST to suppress target vibration, reducing the enemy's dodge rate.",
+  "modules": {
+    "30088": {
+      "name": "Crusher Mod",
+      "SpecificEffects": "When attacking a target that carries debuffs, DMG <color=#F74848>+14%</color>.\nWhen inflicting debuffs, the duration <color=#F74848>+1</color>."
+    },
+    "20214": {
+      "name": "ProxBot Jammer",
+      "SpecificEffects": "Activate the Aura: Inflicts a Dodge Rate <color=#F74848>-12%</color> on enemies within the adjacent <color=#F74848>2</color>-tile area."
+    },
+    "40074": {
+      "name": "DMG Taken Mod",
+      "SpecificEffects": "DMG Taken <color=#F74848>-10%</color>."
+    }
+  }
+}

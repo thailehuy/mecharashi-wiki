@@ -1,0 +1,18 @@
+{
+  "name": "Mandrill",
+  "introduce": "SAT-309 Mandrill\nA heavy melee ST developed and produced by SEED after the Milkhama War.\nThe body and shoulders of this ST are equipped with a hydraulic system made of Arashium alloy. This system automatically adjusts the pressure and flow of hydraulic systems, using gyroscopic sensors and data from targeting systems to achieve optimal thrust and torque output.",
+  "modules": {
+    "10014": {
+      "name": "Basher",
+      "SpecificEffects": "When attacking with a Melee Weapon, there is a <color=#F74848>70%</color> chance to trigger: DMG <color=#F74848>+15%</color>."
+    },
+    "40064": {
+      "name": "Armor Mod",
+      "SpecificEffects": "Armor <color=#F74848>+35%</color>."
+    },
+    "30202": {
+      "name": "Defender Mod",
+      "SpecificEffects": "If unable to retaliate in combat, DMG Taken <color=#F74848>-4%</color>."
+    }
+  }
+}

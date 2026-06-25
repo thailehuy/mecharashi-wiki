@@ -1,0 +1,131 @@
+{
+  "PilotName": "Diracca",
+  "RealName": "Diracca Davies",
+  "Gender": "Female",
+  "Profession": "Defender",
+  "Occupation": "Guardian",
+  "Talent0_2Ability": {
+    "name": "Stand behind me",
+    "SpecificEffects": "When an ally performs an Active Attack within an adjacent (<color=#F74848>2</color> tiles) area, trigger <buf ID=900024>[Selfless Guard]</buf> to protect the ally from retaliation by assault and ranged weapons, effective up to <color=#F74848>2</color> times per turn."
+  },
+  "Talent3_5Ability": {
+    "name": "Stand behind me",
+    "SpecificEffects": "When an ally performs an Active Attack within an adjacent (<color=#F74848>2</color> tiles) area, trigger <buf ID=900024>[Selfless Guard]</buf> to protect the ally from retaliation by assault and ranged weapons, effective up to <color=#F74848>2</color> times per turn.\nIf unable to retaliate in combat, DMG Taken <color=#F74848>-15%</color>."
+  },
+  "skills": {
+    "600001": {
+      "name": "Entrenched 1",
+      "describe": "",
+      "SpecificEffects": "Trigger <buf ID=900022>[Guard]</buf> to protect adjacent (<color=#F74848>1</color> tile) allies from Assault and Ranged attacks, effective up to <color=#F74848>2</color> times per turn."
+    },
+    "700044": {
+      "name": "Premium Escalation",
+      "describe": "",
+      "SpecificEffects": "If any part is broken, gain <buf ID=7100702>[Defensive Stance II]</buf>, effective up to <color=#F74848>1</color> time per turn."
+    },
+    "600503": {
+      "name": "Robber",
+      "describe": "Uses the shotgun to attack a target, dealing <color=#F74848>1.15x</color> DMG. After combat, repairs undamaged parts, restoring HP equal to <color=#F74848>50%</color> of damage dealt.",
+      "SpecificEffects": ""
+    },
+    "600504": {
+      "name": "Fully Prepared",
+      "describe": "Protects adjacent (<color=#F74848>2</color> tiles) allies from Assault and Ranged attacks, effective up to <color=#F74848>2</color> times per turn. Gain <buf ID=7100701>[Fully Prepared]</buf> and lasting for <color=#F74848>2</color> turns.",
+      "SpecificEffects": ""
+    },
+    "600505": {
+      "name": "Raging Guardian",
+      "describe": "",
+      "SpecificEffects": "Gain <buf ID=6005052>[Raging Guardian]</buf> for each cumulative damage taken of <color=#F74848>10%</color> of overall HP, up to <color=#F74848>3</color> stacks. This lasts until the next complete active attack."
+    },
+    "700020": {
+      "name": "Defibrillator",
+      "describe": "Uses Large Shield to attack a target, dealing <color=#F74848>1.6x</color> DMG. After combat, it inflicts <buf ID=7101505>[Crash]</buf> on the target hit, lasting for <color=#F74848>1</color> turn.",
+      "SpecificEffects": ""
+    },
+    "600507": {
+      "name": "Autonomous Barrier",
+      "describe": "",
+      "SpecificEffects": "The shield will not suffer damage exceeding <color=#F74848>60%</color> of its Max HP in a single hit, effective up to <color=#F74848>1</color> time per turn"
+    },
+    "600508": {
+      "name": "Unshakable Aspiration",
+      "describe": "",
+      "SpecificEffects": "When retaliating, Shotgun Range <color=#F74848>+1</color>. After retaliation, restore the HP of the undamaged part by <color=#F74848>25%</color> of the damage dealt."
+    }
+  },
+  "neuralPassives": {
+    "600011": {
+      "name": "Entrenched 2",
+      "SpecificEffects": "When performing <buf ID=900022>[Guard]</buf>, DMG Taken <color=#F74848>-10%</color>."
+    },
+    "600012": {
+      "name": "Armor Specialization 1",
+      "SpecificEffects": "DMG <color=#F74848>+20%</color> on Retaliation."
+    },
+    "600013": {
+      "name": "AP Optimization 1",
+      "SpecificEffects": "Initial AP <color=#F74848>+1</color>."
+    },
+    "600021": {
+      "name": "Entrenched 3",
+      "SpecificEffects": "<buf ID=900022>[Guard]</buf>'s effective times per turn <color=#F74848>+1</color>."
+    },
+    "600022": {
+      "name": "Armor Specialization 2",
+      "SpecificEffects": "When performing <buf ID=900022>[Guard]</buf>, restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>1</color> time per turn."
+    },
+    "600023": {
+      "name": "AP Optimization 2",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
+    },
+    "600031": {
+      "name": "Indestructible 1",
+      "SpecificEffects": "When the Arm suffers overdamage, trigger <buf ID=900003>[Guts]</buf>, locking to <color=#F74848>1</color> HP, effective <color=#F74848>1</color> time per battle."
+    },
+    "600032": {
+      "name": "AP Optimization 3",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
+    },
+    "600033": {
+      "name": "Adaptive Warfare 1",
+      "SpecificEffects": "At the end of the action, if an Active Attack was not initiated this turn, an extra <color=#F74848>2</color> tiles can be moved."
+    },
+    "600034": {
+      "name": "Indestructible 2",
+      "SpecificEffects": "The part that triggers <buf ID=900003>[Guts]</buf> restores <color=#F74848>35%</color> of its HP after combat."
+    },
+    "600035": {
+      "name": "Indestructible 3",
+      "SpecificEffects": "Make <buf ID=900003>[Guts]</buf> able to trigger again after <color=#F74848>3</color> turns, with no effective time limit for each battle."
+    },
+    "600036": {
+      "name": "Indestructible 4",
+      "SpecificEffects": "When any part suffers overdamage, trigger <buf ID=900003>[Guts]</buf>."
+    },
+    "600541": {
+      "name": "Wall of the Dawnstar 1",
+      "SpecificEffects": "Large Shield HP <color=#F74848>+100%</color>."
+    },
+    "600042": {
+      "name": "AP Optimization 4",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
+    },
+    "600043": {
+      "name": "Entrenched 4",
+      "SpecificEffects": "<buf ID=900022>[Guard]</buf> can now be triggered an unlimited number of times per turn."
+    },
+    "600544": {
+      "name": "Wall of the Dawnstar 2",
+      "SpecificEffects": "When performing <buf ID=900024>[Selfless Guard]</buf> or <buf ID=900022>[Guard]</buf>, DMG Taken <color=#F74848>-15%</color>."
+    },
+    "600545": {
+      "name": "Wall of the Dawnstar 3",
+      "SpecificEffects": "<buf ID=900024>[Selfless Guard]</buf>'s effective times per turn <color=#F74848>+1</color>."
+    },
+    "600546": {
+      "name": "Wall of the Dawnstar 4",
+      "SpecificEffects": "Gain <buf ID=6005461>[Movement Down Immunity]</buf> and <buf ID=6005462>[Guard Disabled Immunity]</buf>."
+    }
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "PilotName": "Taio",
+  "RealName": "Taio Stone",
+  "Gender": "Male",
+  "Profession": "Striker",
+  "Occupation": "Fighter",
+  "Talent0_2Ability": {
+    "name": "Impulsive",
+    "SpecificEffects": "After an Active Attack, gain <buf ID=1002502>[Impulsive I]</buf>, up to <color=#F74848>3</color> stacks, lasting for <color=#F74848>1</color> turn."
+  },
+  "Talent3_5Ability": {
+    "name": "Impulsive",
+    "SpecificEffects": "After an Active Attack in combat, gain <buf ID=1002512>[Impulsive II]</buf>, up to <color=#F74848>5</color> stacks, lasting for <color=#F74848>1</color> turn."
+  },
+  "skills": {
+    "100001": {
+      "name": "Mobile Warfare 1",
+      "describe": "",
+      "SpecificEffects": "After breaking a part, <buf ID=900004>[Re-ATK]</buf> can be triggered. Unable to move before the attack, and this can be effective up to <color=#F74848>2</color> times per turn."
+    },
+    "100202": {
+      "name": "Perseverance",
+      "describe": "",
+      "SpecificEffects": "If there are <color=#F74848>3</color> or more enemies within the adjacent (<color=#F74848>2</color> tiles) area, DMG Taken <color=#F74848>-12%</color>."
+    },
+    "700029": {
+      "name": "Arm Repair",
+      "describe": "Restore <color=#F74848>30%</color> of HP. Can repair the damaged Arm.",
+      "SpecificEffects": ""
+    },
+    "100204": {
+      "name": "Adversity",
+      "describe": "",
+      "SpecificEffects": "If there are <color=#F74848>3</color> or more enemies within the adjacent (<color=#F74848>2</color> tiles) area, DMG <color=#F74848>+12%</color>."
+    },
+    "700011": {
+      "name": "Backup Supply",
+      "describe": "Gain <color=#F74848>2</color> AP. Can continue the action with the remaining movement.",
+      "SpecificEffects": ""
+    },
+    "100206": {
+      "name": "Reckless Swing",
+      "describe": "Uses Polearm to attack a target, dealing <color=#F74848>1.35x</color> DMG. This attack prioritizes the Body. Can only cast <color=#F74848>1</color> time per turn.",
+      "SpecificEffects": ""
+    }
+  },
+  "neuralPassives": {
+    "100011": {
+      "name": "Mobile Warfare 2",
+      "SpecificEffects": "Upon triggering <buf ID=900004>[Re-ATK]</buf>, allows movement of <color=#F74848>2</color> tiles before attacking."
+    },
+    "100012": {
+      "name": "Power Innovation 1",
+      "SpecificEffects": "AP Regen <color=#F74848>+1</color>."
+    },
+    "100013": {
+      "name": "AP Optimization 1",
+      "SpecificEffects": "Initial AP <color=#F74848>+1</color>."
+    },
+    "100021": {
+      "name": "Mobile Warfare 3",
+      "SpecificEffects": "Destroying the target can trigger <buf ID=900005>[Re-Act]</buf>, allowing action with full movement distance."
+    },
+    "100022": {
+      "name": "Power Innovation 2",
+      "SpecificEffects": "When breaking a part, restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>1</color> time per turn."
+    },
+    "100023": {
+      "name": "AP Optimization 2",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
+    },
+    "100031": {
+      "name": "Alacrity 1",
+      "SpecificEffects": "During an Active Attack with a Melee Weapon, there is a <color=#F74848>20%</color> chance to trigger <buf ID=900001>[Flurry Strike]</buf> following the enemy’s attack, dealing <color=#F74848>0.5x</color> DMG."
+    },
+    "100032": {
+      "name": "AP Optimization 3",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
+    },
+    "100033": {
+      "name": "Mobile Warfare 4",
+      "SpecificEffects": "<buf ID=900004>[Re-ATK]</buf> or <buf ID=900005>[Re-Act]</buf>'s effective times per turn <color=#F74848>+1</color>."
+    },
+    "100034": {
+      "name": "Alacrity 2",
+      "SpecificEffects": "Before an Active Attack, the probability of triggering <buf ID=900001>[Flurry Strike]</buf> increases by <color=#F74848>6%</color> for each <color=#F74848>1</color> tile moved, up to <color=#F74848>30%</color>."
+    },
+    "100035": {
+      "name": "Alacrity 3",
+      "SpecificEffects": "<buf ID=900001>[Flurry Strike]</buf> damage multiplier is increased to <color=#F74848>0.75</color>."
+    },
+    "100036": {
+      "name": "Alacrity 4",
+      "SpecificEffects": "When triggering <buf ID=900001>[Flurry Strike]</buf>, prioritize hitting the part with the lowest HP."
+    }
+  }
+}

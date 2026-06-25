@@ -1,0 +1,131 @@
+{
+  "PilotName": "维罗妮卡",
+  "RealName": "维罗妮卡·洛佩斯",
+  "Gender": "Female",
+  "Profession": "Gunner",
+  "Occupation": "狙击手",
+  "Talent0_2Ability": {
+    "name": "创伤面侧写",
+    "SpecificEffects": "使用轻型步枪主动攻击命中敌机时，根据部位类型施加不同的<buf ID=900137>[战损]</buf>，持续<color=#F74848>2</color>回合；主动攻击施加<buf ID=900137>[战损]</buf>时，可额外发动<buf ID=900004>[再攻击]</buf>，攻击前可以移动<color=#F74848>2</color>格，每回合最多发动<color=#F74848>1</color>次"
+  },
+  "Talent3_5Ability": {
+    "name": "创伤面侧写",
+    "SpecificEffects": "使用轻型步枪主动攻击命中敌机时，根据部位类型施加不同的<buf ID=900137>[战损]</buf>，持续<color=#F74848>2</color>回合；主动攻击施加<buf ID=900137>[战损]</buf>时，可额外发动<buf ID=900004>[再攻击]</buf>，攻击前可以移动<color=#F74848>2</color>格，每回合最多发动<color=#F74848>1</color>次；\n自身耐久值高于<color=#F74848>80%</color>时，射击武器攻击力提升<color=#F74848>15%</color>"
+  },
+  "skills": {
+    "300001": {
+      "name": "狙击战1",
+      "describe": "",
+      "SpecificEffects": "击毁目标后可发动<buf ID=900004>[再攻击]</buf>，攻击前无法移动，每回合最多发动<color=#F74848>2</color>次"
+    },
+    "700048": {
+      "name": "破袭",
+      "describe": "",
+      "SpecificEffects": "主动攻击时，对耐久值百分比低于<color=#F74848>50%</color>的部位造成的伤害提升<color=#F74848>20%</color>"
+    },
+    "301203": {
+      "name": "瞬时取证",
+      "describe": "指定<range type=0>4格菱形范围</range>内<color=#F74848>1</color>名敌机，对其耐久值最低部位施加<color=#F74848>1</color>个对应的<buf ID=900137>[战损]</buf>，之后可继续行动，攻击前无法移动",
+      "SpecificEffects": ""
+    },
+    "301204": {
+      "name": "战损回收",
+      "describe": "",
+      "SpecificEffects": "主动攻击时，击破携带对应<buf ID=900137>[战损]</buf>的目标部位后，战斗后返还技能消耗的全部AP，最多<color=#F74848>3</color>点，每回合最多发动<color=#F74848>1</color>次"
+    },
+    "301205": {
+      "name": "远端解构",
+      "describe": "",
+      "SpecificEffects": "主动攻击时，目标离自身每远<color=#F74848>1</color>格，命中率提升<color=#F74848>4%</color>，最多提升<color=#F74848>20%</color>"
+    },
+    "301206": {
+      "name": "全解构",
+      "describe": "使用轻型步枪攻击单个目标，造成<color=#F74848>1.5</color>倍伤害，攻击前可以进行<buf ID=900014>[瞄准]</buf>，战后为命中的目标施加所有<buf ID=900137>[战损]</buf>，持续<color=#F74848>2</color>回合",
+      "SpecificEffects": ""
+    },
+    "301207": {
+      "name": "洞察全局",
+      "describe": "",
+      "SpecificEffects": "场上每有<color=#F74848>1</color>个<buf ID=900137>[战损]</buf>，暴击伤害提升<color=#F74848>4%</color>，最多提升<color=#F74848>20%</color>"
+    },
+    "301208": {
+      "name": "多重剖绘",
+      "describe": "使用轻型步枪攻击主目标，造成<color=#F74848>0.7</color>倍伤害，可选择<color=#F74848>2</color>次额外目标，造成<color=#F74848>0.7</color>倍伤害，攻击前可进行<buf ID=900014>[瞄准]</buf>，并可重复锁定相同目标；会受到主目标反击",
+      "SpecificEffects": ""
+    }
+  },
+  "neuralPassives": {
+    "300011": {
+      "name": "狙击战2",
+      "SpecificEffects": "<buf ID=3000011>[狙击战1]</buf>在击破部位后即可发动"
+    },
+    "300012": {
+      "name": "动力革新1",
+      "SpecificEffects": "AP的回复值<color=#F74848>+1</color>"
+    },
+    "300013": {
+      "name": "AP优化1",
+      "SpecificEffects": "AP的初始值<color=#F74848>+1</color>"
+    },
+    "300021": {
+      "name": "狙击战3",
+      "SpecificEffects": "发动<buf ID=3000011>[狙击战1]</buf>的<buf ID=900004>[再攻击]</buf>时，攻击前可以移动<color=#F74848>2</color>格"
+    },
+    "300022": {
+      "name": "动力革新2",
+      "SpecificEffects": "击破部位时，战后回复<color=#F74848>1</color>AP，每回合最多发动<color=#F74848>1</color>次"
+    },
+    "300023": {
+      "name": "AP优化2",
+      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+    },
+    "301231": {
+      "name": "追猎标记1",
+      "SpecificEffects": "使用射击武器主动攻击击破部位时，根据部位的类型获得不同<buf ID=900141>[追猎增益]</buf>，每回合最多发动<color=#F74848>2</color>次"
+    },
+    "300032": {
+      "name": "AP优化3",
+      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+    },
+    "300033": {
+      "name": "狙击战4",
+      "SpecificEffects": "<buf ID=900004>[再攻击]</buf>每回合可发动的次数<color=#F74848>+1</color>"
+    },
+    "301234": {
+      "name": "追猎标记2",
+      "SpecificEffects": "使用射击武器主动攻击时，若击毁目标，可额外移动<color=#F74848>3</color>格"
+    },
+    "301235": {
+      "name": "追猎标记3",
+      "SpecificEffects": "<buf ID=900142>[追猎标记1]</buf>每回合不再有发动次数限制"
+    },
+    "301236": {
+      "name": "追猎标记4",
+      "SpecificEffects": "行动开始时，随机获得<color=#F74848>1</color>种未获得的<buf ID=900141>[追猎增益]</buf>效果"
+    },
+    "301241": {
+      "name": "帷幕窥真1",
+      "SpecificEffects": "主动攻击对战后，若目标携带<buf ID=900137>[战损]</buf>，战后发动<buf ID=900004>[再攻击]</buf>，攻击前可以移动<color=#F74848>2</color>格，每回合最多发动<color=#F74848>1</color>次"
+    },
+    "300042": {
+      "name": "AP优化4",
+      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+    },
+    "300043": {
+      "name": "动力革新3",
+      "SpecificEffects": "击毁目标时，战后额外回复<color=#F74848>1</color>AP，每回合最多发动<color=#F74848>2</color>次"
+    },
+    "301244": {
+      "name": "帷幕窥真2",
+      "SpecificEffects": "每次触发核心天赋时，对目标周围<color=#F74848>1</color>圈相同阵营单位同时施加<buf ID=900137>[战损]</buf>"
+    },
+    "301245": {
+      "name": "帷幕窥真3",
+      "SpecificEffects": "与携带<buf ID=900137>[战损]</buf>的目标对战时，最终伤害提升<color=#F74848>5%</color>，每多<color=#F74848>1</color>个<buf ID=900137>[战损]</buf>时额外提升<color=#F74848>5%</color>，最多<color=#F74848>15%</color>"
+    },
+    "301246": {
+      "name": "帷幕窥真4",
+      "SpecificEffects": "天赋发动的<buf ID=900004>[再攻击]</buf>变为<buf ID=900005>[再行动]</buf>"
+    }
+  }
+}

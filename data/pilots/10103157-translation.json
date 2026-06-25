@@ -1,0 +1,131 @@
+{
+  "PilotName": "萨普里娅",
+  "RealName": "萨普里娅·柯格尼托尼斯",
+  "Gender": "Female",
+  "Profession": "Mechanic",
+  "Occupation": "机械师",
+  "Talent0_2Ability": {
+    "name": "共存理论",
+    "SpecificEffects": "出击时自动部署[咕咕]，[咕咕]可以替相邻<color=#F74848>1</color>格的友军抵挡格斗、突击与射击武器的攻击，[咕咕]继承[萨普里娅]驾驶机兵<color=#F74848>75%</color>最大耐久值和<color=#F74848>100%</color>的其余属性"
+  },
+  "Talent3_5Ability": {
+    "name": "共存理论",
+    "SpecificEffects": "出击时自动部署[咕咕]，[咕咕]可以替相邻<color=#F74848>1</color>格的友军抵挡格斗、突击与射击武器的攻击，[咕咕]继承[萨普里娅]驾驶机兵<color=#F74848>75%</color>最大耐久值和<color=#F74848>100%</color>的其余属性；\n[咕咕]护甲提升<color=#F74848>35%</color>，遭受伤害降低<color=#F74848>10%</color>，出击时额外获得<color=#F74848>1</color>AP"
+  },
+  "skills": {
+    "500001": {
+      "name": "协同作战1",
+      "describe": "",
+      "SpecificEffects": "配合友军，使用突击或射击武器对友军攻击的目标发动<buf ID=900002>[协力攻击]</buf>，造成<color=#F74848>0.2</color>倍伤害，每回合最多发动<color=#F74848>1</color>次"
+    },
+    "700015": {
+      "name": "留有余力",
+      "describe": "",
+      "SpecificEffects": "行动结束时，若本回合未造成伤害，则回复<color=#F74848>1</color>AP"
+    },
+    "500803": {
+      "name": "损害管制",
+      "describe": "",
+      "SpecificEffects": "周围<color=#F74848>2</color>格内存在[咕咕]时，遭受伤害降低<color=#F74848>20%</color>"
+    },
+    "500804": {
+      "name": "同调检修",
+      "describe": "同时恢复自身和[咕咕]周围<range type=2>2格菱形</range>范围内所有友军的耐久值，修理量为修理背包的<color=#F74848>0.85</color>倍，可修复<color=#F74848>1</color>个损毁部位",
+      "SpecificEffects": ""
+    },
+    "500805": {
+      "name": "安全拓扑",
+      "describe": "",
+      "SpecificEffects": "主动修理后，对目标施加<buf ID=5008052>[免疫指令阻碍]</buf>，持续<color=#F74848>2</color>回合"
+    },
+    "500806": {
+      "name": "双重整备",
+      "describe": "选择<color=#F74848>4</color>格范围内<color=#F74848>2</color>名友军，恢复机兵所有部位的耐久值，修理量为修理背包的<color=#F74848>1.75</color>倍，可修复<color=#F74848>1</color>个损毁部位",
+      "SpecificEffects": ""
+    },
+    "500807": {
+      "name": "完整性验证",
+      "describe": "",
+      "SpecificEffects": "[咕咕]行动结束时，恢复耐久值最低部位<color=#F74848>35%</color>的最大耐久值"
+    },
+    "500808": {
+      "name": "最优重构",
+      "describe": "恢复单台机兵所有部位的耐久值，修理量为修理背包的<color=#F74848>2.6</color>倍，可修复所有损毁部位，刷新所有增益效果剩余回合数，并使<color=#F74848>1</color>个冷却中的指令冷却回合数<color=#F74848>-1</color>回合",
+      "SpecificEffects": ""
+    }
+  },
+  "neuralPassives": {
+    "500011": {
+      "name": "协同作战2",
+      "SpecificEffects": "<buf ID=2000011>[协同作战1]</buf>每回合可发动的次数<color=#F74848>+1</color>"
+    },
+    "500012": {
+      "name": "机件维护1",
+      "SpecificEffects": "主动修理后，驱散<color=#F74848>1</color>个减益效果"
+    },
+    "500013": {
+      "name": "AP优化1",
+      "SpecificEffects": "AP的初始值<color=#F74848>+1</color>"
+    },
+    "500021": {
+      "name": "协同作战3",
+      "SpecificEffects": "使<buf ID=2000011>[协同作战1]</buf>触发的<buf ID=900002>[协力攻击]</buf>的伤害倍率提升至<color=#F74848>0.3</color>倍"
+    },
+    "500022": {
+      "name": "机件维护2",
+      "SpecificEffects": "AP的回复值<color=#F74848>+1</color>"
+    },
+    "500023": {
+      "name": "AP优化2",
+      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+    },
+    "500031": {
+      "name": "抢险维修1",
+      "SpecificEffects": "行动结束时，随机选择相邻<color=#F74848>1</color>格的其他友军进行<buf ID=900018>[被动修理]</buf>，修理量为修理背包的<color=#F74848>0.6</color>倍，无法修复损毁部位"
+    },
+    "500032": {
+      "name": "AP优化3",
+      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+    },
+    "500033": {
+      "name": "灵活修理",
+      "SpecificEffects": "主动修理后，可以额外移动<color=#F74848>2</color>格"
+    },
+    "500034": {
+      "name": "抢险维修2",
+      "SpecificEffects": "使<buf ID=5000311>[抢险维修1]</buf>会在周围<color=#F74848>2</color>格范围内选择目标"
+    },
+    "500035": {
+      "name": "抢险维修3",
+      "SpecificEffects": "使<buf ID=5000311>[抢险维修1]</buf>的修理量提升至修理背包的<color=#F74848>1</color>倍"
+    },
+    "500036": {
+      "name": "抢险维修4",
+      "SpecificEffects": "使<buf ID=5000311>[抢险维修1]</buf>的修理目标数量<color=#F74848>+1</color>"
+    },
+    "500841": {
+      "name": "智械革新1",
+      "SpecificEffects": "对[咕咕]释放主动修理技能时，可以无视距离"
+    },
+    "500042": {
+      "name": "AP优化4",
+      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+    },
+    "500043": {
+      "name": "机件维修3",
+      "SpecificEffects": "每回合首次使用修理技能的AP消耗<color=#F74848>-1</color>，最低<color=#F74848>1</color>点"
+    },
+    "500844": {
+      "name": "智械革新2",
+      "SpecificEffects": "[咕咕]可继承[萨普里娅]<color=#F74848>100%</color>属性"
+    },
+    "500845": {
+      "name": "智械革新3",
+      "SpecificEffects": "[咕咕]在场时，[萨普里娅]修理量提升<color=#F74848>15%</color>，并免疫[指令阻碍]效果"
+    },
+    "500846": {
+      "name": "智械革新4",
+      "SpecificEffects": "位于[咕咕]周围<color=#F74848>2</color>格内的友军也能成为主动修理技能的目标"
+    }
+  }
+}

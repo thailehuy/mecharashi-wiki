@@ -1,0 +1,131 @@
+{
+  "PilotName": "Winston",
+  "RealName": "Winston Gresham",
+  "Gender": "Male",
+  "Profession": "Gunner",
+  "Occupation": "Sniper",
+  "Talent0_2Ability": {
+    "name": "Sophisticated Scientist",
+    "SpecificEffects": "During an Active Attack in combat, inflict <buf ID=3006502>[Short Circuit I]</buf> on the target after combat, effective for <color=#F74848>1</color> time."
+  },
+  "Talent3_5Ability": {
+    "name": "Sophisticated Scientist",
+    "SpecificEffects": "During an Active Attack, inflict <buf ID=3006502>[Short Circuit I]</buf> on the hit target, effective <color=#F74848>1</color> time.\nIf the target's HP is full, DMG <color=#F74848>+15%</color>."
+  },
+  "skills": {
+    "300001": {
+      "name": "Sniper Warfare 1",
+      "describe": "",
+      "SpecificEffects": "When destroying a target, <buf ID=900004>[Re-ATK]</buf> can be triggered, effective up to <color=#F74848>2</color> times per turn. Unable to move before attacking."
+    },
+    "300602": {
+      "name": "Instant Detonation",
+      "describe": "",
+      "SpecificEffects": "During an Active Attack in combat, if the target has the <buf ID=900053>[Short Circuit]</buf> effect, trigger <buf ID=900053>[Short Circuit]</buf>'s Fixed DMG immediately after combat."
+    },
+    "300603": {
+      "name": "Nerf",
+      "describe": "=VLOOKUP(F234,[EN_TranslateExcel.xlsx]翻译数据表!$A:$B,2,0)",
+      "SpecificEffects": ""
+    },
+    "700013": {
+      "name": "Resolve",
+      "describe": "",
+      "SpecificEffects": "When attacking a target that carries debuffs, DMG <color=#F74848>+15%</color>."
+    },
+    "300605": {
+      "name": "Proficient",
+      "describe": "",
+      "SpecificEffects": "At the end of the action, if a debuff was inflicted on <color=#F74848>3</color> targets during this turn, grant <buf ID=3006053>[Skilled]</buf> to self, effective <color=#F74848>2</color> times, lasting for <color=#F74848>1</color> turn."
+    },
+    "300606": {
+      "name": "Puncture Shot",
+      "describe": "Uses Sniper Rifle to attack all targets within a <range type=1>Line (1*4 tiles) area in front</range>, dealing <color=#F74848>1x</color> AoE DMG.",
+      "SpecificEffects": ""
+    },
+    "700046": {
+      "name": "Duty",
+      "describe": "",
+      "SpecificEffects": "When triggering <buf ID=900013>[Vigilant Shot]</buf>, DMG <color=#F74848>+15%</color> and Hit Rate <color=#F74848>+10%</color>."
+    },
+    "300608": {
+      "name": "Great Creation",
+      "describe": "Uses Sniper Rifle to attack a target, dealing <color=#F74848>1.2x</color> DMG. Before combat, access <buf ID=900014>[Aiming]</buf> mode. If the target has the <buf ID=900053>[Short Circuit]</buf> effect, inflict <buf ID=900053>[Short Circuit]</buf> on enemies in the adjacent (<color=#F74848>1</color> tile) area after combat, dealing <buf ID=900017>[Fixed DMG]</buf> once, which is <color=#F74848>0.4x</color> DMG.",
+      "SpecificEffects": ""
+    }
+  },
+  "neuralPassives": {
+    "300011": {
+      "name": "Sniper Warfare 2",
+      "SpecificEffects": "After breaking a part, trigger <buf ID=900004>[Re-ATK]</buf>."
+    },
+    "300012": {
+      "name": "Power Innovation 1",
+      "SpecificEffects": "AP Regen <color=#F74848>+1</color>."
+    },
+    "300013": {
+      "name": "AP Optimization 1",
+      "SpecificEffects": "Initial AP <color=#F74848>+1</color>."
+    },
+    "300021": {
+      "name": "Sniper Warfare 3",
+      "SpecificEffects": "Upon triggering <buf ID=900004>[Re-ATK]</buf>, allows movement of <color=#F74848>2</color> tiles before attacking."
+    },
+    "300022": {
+      "name": "Power Innovation 2",
+      "SpecificEffects": "When breaking a part, restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>1</color> time per turn."
+    },
+    "300023": {
+      "name": "AP Optimization 2",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
+    },
+    "300031": {
+      "name": "Forbidden Zone 1",
+      "SpecificEffects": "With a Ranged Weapon, launch <buf ID=900013>[Vigilant Shot]</buf> before the enemy attack within range, dealing <color=#F74848>0.35x</color> DMG, effective up to <color=#F74848>1</color> time per turn."
+    },
+    "300032": {
+      "name": "AP Optimization 3",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
+    },
+    "300033": {
+      "name": "Sniper Warfare 4",
+      "SpecificEffects": "<buf ID=900004>[Re-ATK]</buf>'s effective times per turn <color=#F74848>+1</color>."
+    },
+    "300034": {
+      "name": "Forbidden Zone 2",
+      "SpecificEffects": "<buf ID=900013>[Vigilant Shot]</buf>'s effective times per turn <color=#F74848>+1</color>."
+    },
+    "300035": {
+      "name": "Forbidden Zone 3",
+      "SpecificEffects": "<buf ID=900013>[Vigilant Shot]</buf>'s damage multiplier is increased to <color=#F74848>0.5</color>."
+    },
+    "300036": {
+      "name": "Forbidden Zone 4",
+      "SpecificEffects": "<buf ID=900013>[Vigilant Shot]</buf> is launched against an enemy that has not attacked. Targets the part with the lowest HP."
+    },
+    "300641": {
+      "name": "Lust for Victory 1",
+      "SpecificEffects": "Any damage can inflict <buf ID=900053>[Short Circuit]</buf>."
+    },
+    "300042": {
+      "name": "AP Optimization 4",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
+    },
+    "300043": {
+      "name": "Power Innovation 3",
+      "SpecificEffects": "When destroying a target, additionally restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>2</color> times per turn."
+    },
+    "300644": {
+      "name": "Lust for Victory 2",
+      "SpecificEffects": "<buf ID=900053>[Short Circuit]</buf> will be effective for <color=#F74848>2</color> times."
+    },
+    "300645": {
+      "name": "Lust for Victory 3",
+      "SpecificEffects": "The number of debuffs on the target will boost the Fixed DMG of <buf ID=900053>[Short Circuit]</buf> by 1% each, up to <color=#F74848>5%</color>."
+    },
+    "300646": {
+      "name": "Lust for Victory 4",
+      "SpecificEffects": "<buf ID=900053>[Short Circuit]</buf>'s Fixed DMG can break the part."
+    }
+  }
+}

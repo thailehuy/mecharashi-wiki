@@ -1,0 +1,131 @@
+{
+  "PilotName": "佐伊",
+  "RealName": "佐伊·斯蒂尔",
+  "Gender": "Female",
+  "Profession": "Defender",
+  "Occupation": "守护者",
+  "Talent0_2Ability": {
+    "name": "无畏獠牙",
+    "SpecificEffects": "遭受来自周围<color=#F74848>4</color>格内的主动攻击且双手完好时，战后发动<skill activeSkill=6011501>[长柄投掷]</skill>；<buf ID=900022>[援护防御]</buf>可额外抵挡格斗武器"
+  },
+  "Talent3_5Ability": {
+    "name": "无畏獠牙",
+    "SpecificEffects": "遭受来自周围<color=#F74848>4</color>格内的主动攻击且双手完好时，战后发动<skill activeSkill=6011501>[长柄投掷]</skill>；<buf ID=900022>[援护防御]</buf>可额外抵挡格斗武器；\n[佐伊]在场时，携带<buf ID=6011014>[挑衅]</buf>的敌机攻击[佐伊]以外的目标伤害降低<color=#F74848>15%</color>，受到来自[佐伊]的伤害提升<color=#F74848>15%</color>"
+  },
+  "skills": {
+    "600001": {
+      "name": "据守作战1",
+      "describe": "",
+      "SpecificEffects": "发动<buf ID=900022>[援护防御]</buf>，替相邻<color=#F74848>1</color>格的友军抵挡突击与射击武器的攻击，每回合最多发动<color=#F74848>2</color>次"
+    },
+    "601102": {
+      "name": "无破",
+      "describe": "",
+      "SpecificEffects": "双手完好时手臂受到的伤害降低<color=#F74848>25%</color>"
+    },
+    "601103": {
+      "name": "侵袭",
+      "describe": "使用长柄攻击单个目标，造成<color=#F74848>1.5</color>倍伤害，并且遭受反击时，回避率提升<color=#F74848>20%</color>",
+      "SpecificEffects": ""
+    },
+    "601104": {
+      "name": "挑阵",
+      "describe": "使用长柄攻击面前<range type=1>横向3格</range>或斜向折角<color=#F74848>3</color>格范围内的所有目标，造成<color=#F74848>0.9</color>倍范围伤害；每命中<color=#F74848>1</color>个目标获得<color=#F74848>1</color>层<buf ID=6011042>[优势]</buf>，可叠加<color=#F74848>3</color>层",
+      "SpecificEffects": ""
+    },
+    "601105": {
+      "name": "夺势",
+      "describe": "",
+      "SpecificEffects": "完全回避攻击时，战后回复<color=#F74848>1</color>AP，每回合最多发动<color=#F74848>1</color>次"
+    },
+    "601106": {
+      "name": "闪猎",
+      "describe": "使用长柄向<range type=1>前方突刺4格</range>，对接触到的第<color=#F74848>1</color>个目标造成<color=#F74848>1.7</color>倍伤害并施加<buf ID=6011014>[挑衅]</buf>，持续<color=#F74848>2</color>回合",
+      "SpecificEffects": ""
+    },
+    "601107": {
+      "name": "乱步",
+      "describe": "",
+      "SpecificEffects": "场上每有<color=#F74848>1</color>个携带<buf ID=6011014>[挑衅]</buf>的敌机，回避率提升<color=#F74848>4%</color>，最多<color=#F74848>12%</color>"
+    },
+    "601108": {
+      "name": "断罪",
+      "describe": "选择<range type=0>周围4格</range>内任意空地格，跳跃至目标地点，并使用长柄对<range type=1>周围2格</range>内敌方目标造成<color=#F74848>1.1</color>倍范围伤害，并对范围内所有目标施加<buf ID=6011014>[挑衅]</buf>，持续<color=#F74848>2</color>回合",
+      "SpecificEffects": ""
+    }
+  },
+  "neuralPassives": {
+    "600011": {
+      "name": "据守作战2",
+      "SpecificEffects": "发动<buf ID=900022>[援护防御]</buf>时，遭受伤害降低<color=#F74848>10%</color>"
+    },
+    "600012": {
+      "name": "防御特化1",
+      "SpecificEffects": "反击伤害提升<color=#F74848>20%</color>"
+    },
+    "600013": {
+      "name": "AP优化1",
+      "SpecificEffects": "AP的初始值<color=#F74848>+1</color>"
+    },
+    "600021": {
+      "name": "据守作战3",
+      "SpecificEffects": "<buf ID=900022>[援护防御]</buf>每回合可发动的次数<color=#F74848>+1</color>"
+    },
+    "600022": {
+      "name": "防御特化2",
+      "SpecificEffects": "发动<buf ID=900022>[援护防御]</buf>时，战后回复<color=#F74848>1</color>AP，每回合最多发动<color=#F74848>1</color>次"
+    },
+    "600023": {
+      "name": "AP优化2",
+      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+    },
+    "601131": {
+      "name": "生存法则1",
+      "SpecificEffects": "遭受主动攻击时，若触发过回避，战后恢复完好部位<color=#F74848>4%</color>的耐久值，每回避<color=#F74848>1</color>次连击，额外恢复<color=#F74848>1%</color>的耐久值，最多额外恢复<color=#F74848>8%</color>耐久值"
+    },
+    "600032": {
+      "name": "AP优化3",
+      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+    },
+    "600033": {
+      "name": "自适应作战1",
+      "SpecificEffects": "行动结束时，若本回合未主动攻击，则可以额外移动<color=#F74848>2</color>格"
+    },
+    "601134": {
+      "name": "生存法则2",
+      "SpecificEffects": "完全回避攻击时，<buf ID=6011311>[生存法则1]</buf>可以额外修复<color=#F74848>1</color>个破损部位"
+    },
+    "601135": {
+      "name": "生存法则3",
+      "SpecificEffects": "受到伤害且耐久值降至<color=#F74848>50%</color>以下时，战后使自身获得<buf ID=1008062>[必闪]</buf>，可生效<color=#F74848>1</color>次，该效果间隔<color=#F74848>3</color>回合才可再次发动"
+    },
+    "601136": {
+      "name": "生存法则4",
+      "SpecificEffects": "<buf ID=6011311>[生存法则1]</buf>战后额外恢复完好部位<color=#F74848>10%</color>耐久值"
+    },
+    "601141": {
+      "name": "追袭冲动1",
+      "SpecificEffects": "累计发动<color=#F74848>3</color>次<skill activeSkill=6011501>[长柄投掷]</skill>后，下一次主动攻击不消耗AP，且攻击后可以发动<buf ID=900004>[再攻击]</buf>，攻击前可以移动<color=#F74848>2</color>格，触发后移除"
+    },
+    "600042": {
+      "name": "AP优化4",
+      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+    },
+    "600043": {
+      "name": "据守作战4",
+      "SpecificEffects": "<buf ID=900022>[援护防御]</buf>每回合不再有发动次数限制"
+    },
+    "601144": {
+      "name": "追袭冲动2",
+      "SpecificEffects": "AP的回复值<color=#F74848>+1</color>"
+    },
+    "601145": {
+      "name": "追袭冲动3",
+      "SpecificEffects": "发动<skill activeSkill=6011501>[长柄投掷]</skill>后，对所有命中的目标施加<buf ID=6011014>[挑衅]</buf>，持续<color=#F74848>2</color>回合"
+    },
+    "601146": {
+      "name": "追袭冲动4",
+      "SpecificEffects": "<skill activeSkill=6011501>[长柄投掷]</skill>伤害提升至<color=#F74848>1</color>倍范围伤害"
+    }
+  }
+}

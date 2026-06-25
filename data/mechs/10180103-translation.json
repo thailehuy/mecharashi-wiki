@@ -1,0 +1,18 @@
+{
+  "name": "Dreadtalon",
+  "introduce": "OS-09S Dreadtalon\nOne of Obsidian's high-performance light STs, developed based on the OS-06F Diana's combat data.\nThis ST is designed for precision strikes and excels at processing battlefield information, boasting a high efficiency rate in actual combat.\nEquipped with the \"Dominator\" combat core, this unit can assist the pilot in completing a range of actions such as surveillance, positioning, aiming, and striking.",
+  "modules": {
+    "20154": {
+      "name": "Dominator Locator",
+      "SpecificEffects": "In combat, when Hit Rate exceeds <color=#F74848>70%</color>, each <color=#F74848>1%</color> above that converts into a <color=#F74848>25%</color> DMG Bonus, up to <color=#F74848>5%</color>."
+    },
+    "40014": {
+      "name": "Accuracy Mod",
+      "SpecificEffects": "Hit Rate <color=#F74848>+10%</color>."
+    },
+    "30028": {
+      "name": "Execution Mod",
+      "SpecificEffects": "When attacking a part with HP lower than <color=#F74848>60%</color>, DMG <color=#F74848>+18%</color>.\nIf a part is broken, trigger <buf ID=900001>[Flurry Strike]</buf> to deal <color=#F74848>0.25x</color> DMG."
+    }
+  }
+}

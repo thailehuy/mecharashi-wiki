@@ -1,0 +1,131 @@
+{
+  "PilotName": "艾琳",
+  "RealName": "艾琳· 迪桑",
+  "Gender": "Female",
+  "Profession": "Launcher",
+  "Occupation": "战术家",
+  "Talent0_2Ability": {
+    "name": "不息雷火",
+    "SpecificEffects": "使用火箭攻击时，若同时打击的目标大于等于<color=#F74848>3</color>个，战后回复<color=#F74848>1</color>AP，每回合最多发动<color=#F74848>1</color>次"
+  },
+  "Talent3_5Ability": {
+    "name": "不息雷火",
+    "SpecificEffects": "使用火箭攻击时，若同时打击的目标大于等于<color=#F74848>3</color>个，战后回复<color=#F74848>1</color>AP，每回合最多发动<color=#F74848>1</color>次；\n火箭的负重降低<color=#F74848>130</color>"
+  },
+  "skills": {
+    "400001": {
+      "name": "战略轰炸1",
+      "describe": "",
+      "SpecificEffects": "战术武器弹仓耗尽时将<buf ID=900029>[自动装填]</buf>，装填需消耗<color=#F74848>3</color>回合"
+    },
+    "700015": {
+      "name": "留有余力",
+      "describe": "",
+      "SpecificEffects": "行动结束时，若本回合未造成伤害，则回复<color=#F74848>1</color>AP"
+    },
+    "400403": {
+      "name": "满盈",
+      "describe": "使火箭的弹数完全回复，并获得<buf ID=7100403>[暴击率提升Ⅱ]</buf>，持续<color=#F74848>1</color>回合，然后可使用剩余移动力继续行动",
+      "SpecificEffects": ""
+    },
+    "700024": {
+      "name": "石墨弹头",
+      "describe": "使用火箭攻击所选<range type=1>3×3格</range>范围内的所有目标，对每个部位造成<color=#F74848>0.25</color>倍范围伤害，对命中的目标施加<buf ID=3006502>[短路Ⅰ]</buf>，可生效<color=#F74848>1</color>次",
+      "SpecificEffects": ""
+    },
+    "400405": {
+      "name": "补缺",
+      "describe": "",
+      "SpecificEffects": "行动开始时，向未在装填中，且弹数更低的火箭装填<color=#F74848>1</color>发弹药"
+    },
+    "400406": {
+      "name": "漫天",
+      "describe": "同时使用两门火箭攻击所选<range type=1>5×5格</range>范围内的所有目标，对每个部位造成<color=#F74848>2×0.175</color>倍范围伤害",
+      "SpecificEffects": ""
+    },
+    "400407": {
+      "name": "易施",
+      "describe": "",
+      "SpecificEffects": "使用火箭发起范围攻击时，对命中目标施加随机减益效果，根据命中目标的机兵类型，优先施加<buf ID=7101103>[回避率降低Ⅱ]</buf><buf ID=7101801>[遭受伤害提升Ⅰ]</buf><buf ID=7101704>[护甲降低Ⅰ]</buf>，持续<color=#F74848>2</color>回合"
+    },
+    "400408": {
+      "name": "炼狱",
+      "describe": "",
+      "SpecificEffects": "火箭的伤害提升<color=#F74848>10%</color>，使用火箭弹仓中第<color=#F74848>1</color>发弹药发起范围攻击时，战后对打击的地格施加<terrian ID=4003081 />，持续<color=#F74848>2</color>回合"
+    }
+  },
+  "neuralPassives": {
+    "400011": {
+      "name": "战略轰炸2",
+      "SpecificEffects": "战术武器的弹仓容量<color=#F74848>+1</color>"
+    },
+    "400012": {
+      "name": "动力革新1",
+      "SpecificEffects": "AP的回复值<color=#F74848>+1</color>"
+    },
+    "400013": {
+      "name": "AP优化1",
+      "SpecificEffects": "AP的初始值<color=#F74848>+1</color>"
+    },
+    "400021": {
+      "name": "战略轰炸3",
+      "SpecificEffects": "战术武器的装填冷却回合<color=#F74848>-1</color>"
+    },
+    "400022": {
+      "name": "动力革新2",
+      "SpecificEffects": "AP的回复值<color=#F74848>+1</color>"
+    },
+    "400023": {
+      "name": "AP优化2",
+      "SpecificEffects": "AP的上限值<color=#F74848>+2</color>"
+    },
+    "400031": {
+      "name": "狂轰滥炸1",
+      "SpecificEffects": "每回合首次使用战术武器攻击后可发动<buf ID=900004>[再攻击]</buf>，攻击前无法移动，最终伤害减少<color=#F74848>30%</color>，每回合最多发动<color=#F74848>1</color>次"
+    },
+    "400032": {
+      "name": "AP优化3",
+      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+    },
+    "400033": {
+      "name": "战略轰炸4",
+      "SpecificEffects": "当<buf ID=900029>[自动装填]</buf>完成时，回复<color=#F74848>1</color>AP"
+    },
+    "400034": {
+      "name": "狂轰滥炸2",
+      "SpecificEffects": "每回合首次使用战术武器攻击时，每消耗<color=#F74848>1</color>AP，伤害提升<color=#F74848>4%</color>，最多<color=#F74848>20%</color>"
+    },
+    "400035": {
+      "name": "狂轰滥炸3",
+      "SpecificEffects": "发动<buf ID=4000311>[狂轰滥炸1]</buf>的<buf ID=900004>[再攻击]</buf>时，可使用剩余移动力继续移动"
+    },
+    "400036": {
+      "name": "狂轰滥炸4",
+      "SpecificEffects": "发动<buf ID=4000311>[狂轰滥炸1]</buf>的<buf ID=900004>[再攻击]</buf>时，不再减少最终伤害"
+    },
+    "400441": {
+      "name": "私人安保1",
+      "SpecificEffects": "双肩均装配火箭时，火箭伤害提升<color=#F74848>10%</color>"
+    },
+    "400042": {
+      "name": "AP优化4",
+      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+    },
+    "400043": {
+      "name": "动力革新3",
+      "SpecificEffects": "击毁目标时，战后额外回复<color=#F74848>1</color>AP，每回合最多发动<color=#F74848>2</color>次"
+    },
+    "400444": {
+      "name": "私人安保2",
+      "SpecificEffects": "火箭的射程<color=#F74848>+1</color>，攻击范围不变"
+    },
+    "400445": {
+      "name": "私人安保3",
+      "SpecificEffects": "施加减益效果和地形效果时，持续回合<color=#F74848>+1</color>"
+    },
+    "400446": {
+      "name": "私人安保4",
+      "SpecificEffects": "<buf ID=4004501>[不息雷火]</buf>的AP回复效果<color=#F74848>+1</color>"
+    }
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "PilotName": "阿黛勒",
+  "RealName": "阿黛勒·马丁",
+  "Gender": "Female",
+  "Profession": "Assault",
+  "Occupation": "突击手",
+  "Talent0_2Ability": {
+    "name": "炽焰灼心",
+    "SpecificEffects": "使用喷火器攻击时，立即为目标施加<buf ID=2018502>[炽焰]</buf>；敌机遭受主动攻击时，若携带<buf ID=2018502>[炽焰]</buf>，战后对该目标发动<buf ID=900129>[炽焰引爆Ⅰ]</buf>"
+  },
+  "Talent3_5Ability": {
+    "name": "炽焰灼心",
+    "SpecificEffects": "使用喷火器攻击时，立即为目标施加<buf ID=2018502>[炽焰]</buf>；敌机遭受主动攻击时，若携带<buf ID=2018502>[炽焰]</buf>，战后对该目标发动<buf ID=900129>[炽焰引爆Ⅰ]</buf>；\n发动<buf ID=900129>[炽焰引爆Ⅰ]</buf>时，若目标位于[燃烧地形]，基础伤害倍率<color=#F74848>+0.1</color>"
+  },
+  "skills": {
+    "200001": {
+      "name": "协同作战1",
+      "describe": "",
+      "SpecificEffects": "配合友军，使用突击或射击武器对友军攻击的目标发动<buf ID=900002>[协力攻击]</buf>，造成<color=#F74848>0.2</color>倍伤害，每回合最多发动<color=#F74848>1</color>次"
+    },
+    "201802": {
+      "name": "蔷薇之刺",
+      "describe": "",
+      "SpecificEffects": "遭受伤害降低<color=#F74848>10%</color>；遭受主动攻击后，为攻击者施加<buf ID=2018502>[炽焰]</buf>"
+    },
+    "201803": {
+      "name": "盛意交叠",
+      "describe": "使用喷火器攻击<range type=2>纵向4格</range>或斜向<color=#F74848>3</color>格范围内所有目标，造成<color=#F74848>0.7</color>倍范围伤害",
+      "SpecificEffects": ""
+    },
+    "201804": {
+      "name": "燃火踢踏",
+      "describe": "跳跃至纵向<color=#F74848>2</color>至<color=#F74848>4</color>格内上空地，并用两把喷火器对路径上的敌机造成<color=#F74848>0.3</color>倍范围伤害，战后对路径上的地格施加<terrian ID=4003081 />，持续<color=#F74848>2</color>回合，跳跃后可以发动<buf ID=900004>[再攻击]</buf>，攻击前无法移动",
+      "SpecificEffects": ""
+    },
+    "201805": {
+      "name": "风姿亭亭",
+      "describe": "",
+      "SpecificEffects": "行动结束时，如果自身站立在友方<terrian ID=4003081 />上，恢复自身<color=#F74848>10%</color>耐久值"
+    },
+    "201806": {
+      "name": "共舞之邀",
+      "describe": "同时使用两把喷火器攻击单个目标，造成<color=#F74848>2×0.75</color>倍伤害，战前给目标周围<color=#F74848>1</color>圈敌机施加<buf ID=2018502>[炽焰]</buf>",
+      "SpecificEffects": ""
+    },
+    "201807": {
+      "name": "烈焰探戈",
+      "describe": "",
+      "SpecificEffects": "经过燃烧地形时，移动力消耗减半"
+    },
+    "201808": {
+      "name": "终场致意",
+      "describe": "同时使用两把喷火器对射程范围内所有敌机造成<color=#F74848>2×0.35</color>倍伤害，本次攻击发动<buf ID=900128>[炽焰引爆]</buf>时，<buf ID=900017>[固定伤害]</buf>提升<color=#F74848>30%</color>",
+      "SpecificEffects": ""
+    }
+  },
+  "neuralPassives": {
+    "200011": {
+      "name": "协同作战2",
+      "SpecificEffects": "<buf ID=2000011>[协同作战1]</buf>每回合可发动的次数<color=#F74848>+1</color>"
+    },
+    "200012": {
+      "name": "动力革新1",
+      "SpecificEffects": "AP的回复值<color=#F74848>+1</color>"
+    },
+    "200013": {
+      "name": "AP优化1",
+      "SpecificEffects": "AP的初始值<color=#F74848>+1</color>"
+    },
+    "200021": {
+      "name": "协同作战3",
+      "SpecificEffects": "使<buf ID=2000011>[协同作战1]</buf>触发的<buf ID=900002>[协力攻击]</buf>伤害倍率提升至<color=#F74848>0.3</color>倍"
+    },
+    "200022": {
+      "name": "动力革新2",
+      "SpecificEffects": "击破部位时，战后回复<color=#F74848>1</color>AP，每回合最多发动<color=#F74848>1</color>次"
+    },
+    "200023": {
+      "name": "AP优化2",
+      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+    },
+    "200031": {
+      "name": "完美机位1",
+      "SpecificEffects": "解锁突击武器的<buf ID=900011>[最佳射程]</buf>，与位于<buf ID=900011>[最佳射程]</buf>的目标对战时，最终伤害提升<color=#F74848>15%</color>"
+    },
+    "200032": {
+      "name": "AP优化3",
+      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+    },
+    "200033": {
+      "name": "自适应作战1",
+      "SpecificEffects": "行动结束时，若本回合未主动攻击，则可以额外移动<color=#F74848>2</color>格"
+    },
+    "200034": {
+      "name": "完美机位2",
+      "SpecificEffects": "与位于<buf ID=900011>[最佳射程]</buf>的目标对战时，命中率提升<color=#F74848>12%</color>"
+    },
+    "200035": {
+      "name": "完美机位3",
+      "SpecificEffects": "与位于<buf ID=900011>[最佳射程]</buf>的目标对战时，暴击率提升<color=#F74848>15%</color>"
+    },
+    "200036": {
+      "name": "完美机位4",
+      "SpecificEffects": "与位于<buf ID=900011>[最佳射程]</buf>的目标对战时，<buf ID=2000311>[完美机位1]</buf>效果提升至<color=#F74848>30%</color>"
+    },
+    "201841": {
+      "name": "焰舞者1",
+      "SpecificEffects": "在场时，所有敌机受到<terrian ID=4003081 />伤害时，对其施加<buf ID=2018502>[炽焰]</buf>"
+    },
+    "200042": {
+      "name": "AP优化4",
+      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+    },
+    "200043": {
+      "name": "自适应作战2",
+      "SpecificEffects": "主动攻击前如果没有移动过，可发动<buf ID=900004>[再攻击]</buf>，攻击前无法移动，每回合最多发动<color=#F74848>1</color>次\n无法与同类<buf ID=900004>[再攻击]</buf>效果重复触发"
+    },
+    "201844": {
+      "name": "焰舞者2",
+      "SpecificEffects": "发动<buf ID=900128>[炽焰引爆]</buf>后，对目标所在地格施加<terrian ID=4003081 />，持续<color=#F74848>2</color>回合"
+    },
+    "201845": {
+      "name": "焰舞者3",
+      "SpecificEffects": "<buf ID=900128>[炽焰引爆]</buf>的伤害范围扩大为目标及周围<color=#F74848>1</color>圈"
+    },
+    "201846": {
+      "name": "焰舞者4",
+      "SpecificEffects": "每次发动<buf ID=900128>[炽焰引爆]</buf>时，获得<color=#F74848>1</color>层<buf ID=2018506>[灼心]</buf>，可叠加<color=#F74848>10</color>层"
+    }
+  }
+}

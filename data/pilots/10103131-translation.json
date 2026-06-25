@@ -1,0 +1,131 @@
+{
+  "PilotName": "提费斯",
+  "RealName": "提费斯·穆勒",
+  "Gender": "Male",
+  "Profession": "Defender",
+  "Occupation": "守护者",
+  "Talent0_2Ability": {
+    "name": "迟暮未至",
+    "SpecificEffects": "可以使用<skill mainSkill=600850>[战略领域]</skill>指令，间隔<color=#F74848>2</color>回合才可使用"
+  },
+  "Talent3_5Ability": {
+    "name": "迟暮未至",
+    "SpecificEffects": "可以使用<skill mainSkill=600850>[战略领域]</skill>指令，间隔<color=#F74848>2</color>回合才可使用；\n在场时，使友方<terrian ID=6008501 />内的队友造成伤害提升<color=#F74848>10%</color>"
+  },
+  "skills": {
+    "600001": {
+      "name": "据守作战1",
+      "describe": "",
+      "SpecificEffects": "发动<buf ID=900022>[援护防御]</buf>，替相邻<color=#F74848>1</color>格的友军抵挡突击与射击武器的攻击，每回合最多发动<color=#F74848>2</color>次"
+    },
+    "600802": {
+      "name": "机动截击",
+      "describe": "使用机枪攻击单个目标，造成<color=#F74848>1.15</color>倍伤害，对命中的目标施加<buf ID=7101506>[移动阻碍Ⅰ]</buf>，持续<color=#F74848>1</color>回合，若目标位于友方<terrian ID=6008501 />内，额外施加<buf ID=1004021>[武器阻碍]</buf>，持续<color=#F74848>1</color>回合",
+      "SpecificEffects": ""
+    },
+    "600803": {
+      "name": "重振",
+      "describe": "",
+      "SpecificEffects": "每次损毁部位被修复时，造成伤害提升<color=#F74848>5%</color>，最多提升<color=#F74848>20%</color>"
+    },
+    "600804": {
+      "name": "无可僭越",
+      "describe": "替周围<color=#F74848>2</color>格的友军抵挡突击与射击武器的攻击，每回合最多发动<color=#F74848>2</color>次，同时自身和部署的<terrian ID=6008501 />获得<buf ID=6008041>[磁阻力场]</buf>，持续<color=#F74848>2</color>回合",
+      "SpecificEffects": ""
+    },
+    "600805": {
+      "name": "地利之便",
+      "describe": "",
+      "SpecificEffects": "受到主动修理时，若位于友方<terrian ID=6008501 />内，耐久值最低部位受到的修理量提升<color=#F74848>30%</color>"
+    },
+    "600806": {
+      "name": "制空封锁",
+      "describe": "指定场上<color=#F74848>1</color>名敌机，对其施加<buf ID=6008061>[制空封锁]</buf>；\n场上存在自身部署的<terrian ID=6008501 />时才能使用",
+      "SpecificEffects": ""
+    },
+    "600807": {
+      "name": "身先士卒",
+      "describe": "",
+      "SpecificEffects": "遭受伤害降低<color=#F74848>10%</color>，<terrian ID=6008501 />内每有<color=#F74848>1</color>名友军，反击伤害提升<color=#F74848>5%</color>，最多提升<color=#F74848>15%</color>"
+    },
+    "600808": {
+      "name": "战终",
+      "describe": "使用机枪攻击<range type=1>面前3×2格</range>范围内的所有目标，造成<color=#F74848>0.6</color>倍范围伤害，若目标位于友方<terrian ID=6008501 />内，则额外施加<buf ID=1009083>[震慑]</buf>，持续<color=#F74848>1</color>回合",
+      "SpecificEffects": ""
+    }
+  },
+  "neuralPassives": {
+    "600011": {
+      "name": "据守作战2",
+      "SpecificEffects": "发动<buf ID=900022>[援护防御]</buf>时，遭受伤害降低<color=#F74848>10%</color>"
+    },
+    "600012": {
+      "name": "防御特化1",
+      "SpecificEffects": "反击伤害提升<color=#F74848>20%</color>"
+    },
+    "600013": {
+      "name": "AP优化1",
+      "SpecificEffects": "AP的初始值<color=#F74848>+1</color>"
+    },
+    "600021": {
+      "name": "据守作战3",
+      "SpecificEffects": "<buf ID=900022>[援护防御]</buf>每回合可发动的次数<color=#F74848>+1</color>"
+    },
+    "600022": {
+      "name": "防御特化2",
+      "SpecificEffects": "发动<buf ID=900022>[援护防御]</buf>时，战后回复<color=#F74848>1</color>AP，每回合最多发动<color=#F74848>1</color>次"
+    },
+    "600023": {
+      "name": "AP优化2",
+      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+    },
+    "600031": {
+      "name": "坚不可摧1",
+      "SpecificEffects": "手臂遭受过量伤害时将触发<buf ID=900003>[不屈]</buf>，锁定至<color=#F74848>1</color>点耐久值，该效果每次出击仅可发动<color=#F74848>1</color>次"
+    },
+    "600032": {
+      "name": "AP优化3",
+      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+    },
+    "600033": {
+      "name": "自适应作战1",
+      "SpecificEffects": "行动结束时，若本回合未主动攻击，则可以额外移动<color=#F74848>2</color>格"
+    },
+    "600034": {
+      "name": "坚不可摧2",
+      "SpecificEffects": "使触发<buf ID=900003>[不屈]</buf>的部位（包括损毁）在战后恢复<color=#F74848>35%</color>的耐久值"
+    },
+    "600035": {
+      "name": "坚不可摧3",
+      "SpecificEffects": "使<buf ID=6000311>[坚不可摧1]</buf>可以在间隔<color=#F74848>3</color>回合后再次发动，每次出击不再有发动次数限制"
+    },
+    "600036": {
+      "name": "坚不可摧4",
+      "SpecificEffects": "使自身任意部位遭受过量伤害时都将触发<buf ID=6000311>[坚不可摧1]</buf>"
+    },
+    "600841": {
+      "name": "老骥伏枥1",
+      "SpecificEffects": "<terrian ID=6008501 />持续时间<color=#F74848>+1</color>回合"
+    },
+    "600042": {
+      "name": "AP优化4",
+      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+    },
+    "600043": {
+      "name": "据守作战4",
+      "SpecificEffects": "<buf ID=900022>[援护防御]</buf>每回合不再有发动次数限制"
+    },
+    "600844": {
+      "name": "老骥伏枥2",
+      "SpecificEffects": "部署<terrian ID=6008501 />时释放距离延长<color=#F74848>1</color>格"
+    },
+    "600845": {
+      "name": "老骥伏枥3",
+      "SpecificEffects": "在场时，部署的<terrian ID=6008501 />内友军免疫来自敌机的<buf ID=900079>[位移]</buf>效果，无法被施加<buf ID=900080>[禁止援护]</buf>和<buf ID=900081>[禁止被援护]</buf>类效果"
+    },
+    "600846": {
+      "name": "老骥伏枥4",
+      "SpecificEffects": "部署的<terrian ID=6008501 />持续时间结束时，对领域及其周围<color=#F74848>1</color>圈范围内敌机的所有部位造成最大耐久值<color=#F74848>15%</color>的<buf ID=900017>[固定伤害]</buf>"
+    }
+  }
+}

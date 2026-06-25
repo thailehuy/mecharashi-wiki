@@ -1,0 +1,131 @@
+{
+  "PilotName": "Seven",
+  "RealName": "Seven Favre",
+  "Gender": "Female",
+  "Profession": "Mechanic",
+  "Occupation": "Machinist",
+  "Talent0_2Ability": {
+    "name": "Pochy!",
+    "SpecificEffects": "Auto deploy [Pochy] after sortie. The unit's Repair AMT is <color=#F74848>0.4x</color> Repair AMT of [Seven]'s Manipulator; [Pochy] can cast <buf ID=900021>[Pochy Repair]</buf>"
+  },
+  "Talent3_5Ability": {
+    "name": "Pochy!",
+    "SpecificEffects": "Auto-deploy [Pochy] after sortie. The unit's Repair AMT is <color=#F74848>0.4x</color> that of [Seven]'s Manipulator.  [Pochy] can now cast the <buf ID=900021>[Pochy Repair]</buf>.\n[Pochy] will redeploy after being destroyed. This will take <color=#F74848>3</color> turns."
+  },
+  "skills": {
+    "500001": {
+      "name": "CEC 1",
+      "describe": "",
+      "SpecificEffects": "In cooperation with allies, launch a <buf ID=900002>[Link Attack]</buf> against the target, dealing <color=#F74848>0.2x</color> DMG, effective up to <color=#F74848>1</color> time per turn."
+    },
+    "500502": {
+      "name": "Pochy, ToPurify!",
+      "describe": "",
+      "SpecificEffects": "When [Pochy] triggers <buf ID=900019>[Link Repair]</buf>, dispel <color=#F74848>2</color> debuffs after combat."
+    },
+    "700009": {
+      "name": "Wide-Range Repair",
+      "describe": "Restore the HP of all allies within the selected <range type=1>Diamond (2 tiles) area</range>. The repair amount is <color=#F74848>1.0x</color> the Manipulator's Repair AMT. It can repair <color=#F74848>1</color> damaged part.",
+      "SpecificEffects": ""
+    },
+    "500504": {
+      "name": "Pochy, ToFull-Auto!",
+      "describe": "",
+      "SpecificEffects": "When an ally within an adjacent (<color=#F74848>2</color> tiles) area is attacked, [Pochy] will automatically perform <buf ID=900020>[Assist Repair]</buf> on the ally after combat. The repair amount is <color=#F74848>0.75x</color> [Pochy]'s Repair AMT, effective up to <color=#F74848>2</color> times per turn."
+    },
+    "500505": {
+      "name": "Pochy, ToOverclock!",
+      "describe": "",
+      "SpecificEffects": "When [Pochy] triggers <buf ID=900019>[Link Repair]</buf>, Repair AMT <color=#F74848>+25%</color> and can repair <color=#F74848>1</color> additional damaged part"
+    },
+    "500506": {
+      "name": "Pochy Station!",
+      "describe": "",
+      "SpecificEffects": "Allow [Pochy] to shift to <buf ID=900039>[Rack]</buf> mode: unable to move. When an ally ends their action within the adjacent (<color=#F74848>3</color> tiles) area, automatically cast <buf ID=900018>[Passive Repair]</buf>, with a repair amount of <color=#F74848>1.0x</color> [Pochy]'s Repair AMT. In <buf ID=900039>[Rack]</buf> mode, the <buf ID=900026>[Retract]</buf> code is available. After retracting, [Pochy] can continue to move."
+    },
+    "500507": {
+      "name": "Pochy, ToRemote!",
+      "describe": "",
+      "SpecificEffects": "When [Seven]'s repair target is not within <color=#F74848>2</color> tiles of [Pochy], [Pochy] will auto-select the ally with the lowest HP in range to perform <buf ID=900019>[Link Repair]</buf>."
+    },
+    "500508": {
+      "name": "ActUnit, Full Power!",
+      "describe": "非法字符",
+      "SpecificEffects": ""
+    }
+  },
+  "neuralPassives": {
+    "500011": {
+      "name": "CEC 2",
+      "SpecificEffects": "<buf ID=900002>[Link Attack]</buf>'s effective times per turn <color=#F74848>+1</color>."
+    },
+    "500012": {
+      "name": "Part Maintenance 1",
+      "SpecificEffects": "After performing active repairs, dispel <color=#F74848>1</color> debuff."
+    },
+    "500013": {
+      "name": "AP Optimization 1",
+      "SpecificEffects": "Initial AP <color=#F74848>+1</color>."
+    },
+    "500021": {
+      "name": "CEC 3",
+      "SpecificEffects": "<buf ID=900002>[Link Attack]</buf>'s damage multiplier is increased to <color=#F74848>0.3</color>."
+    },
+    "500022": {
+      "name": "Part Maintenance 2",
+      "SpecificEffects": "AP Regen <color=#F74848>+1</color>."
+    },
+    "500023": {
+      "name": "AP Optimization 2",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
+    },
+    "500031": {
+      "name": "Emergency Repair 1",
+      "SpecificEffects": "At the end of the action, randomly select a single adjacent (<color=#F74848>1</color> tile) ally to perform <buf ID=900018>[Passive Repair]</buf>. The repair amount is <color=#F74848>0.6x</color> the Manipulator's Repair AMT and cannot repair damaged parts."
+    },
+    "500032": {
+      "name": "AP Optimization 3",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
+    },
+    "500033": {
+      "name": "Flexible Repair",
+      "SpecificEffects": "After performing active repairs, an additional <color=#F74848>2</color> tiles can be moved."
+    },
+    "500034": {
+      "name": "Emergency Repair 2",
+      "SpecificEffects": "<buf ID=900018>[Passive Repair]</buf> selects targets within the adjacent (<color=#F74848>2</color> tiles) area."
+    },
+    "500035": {
+      "name": "Emergency Repair 3",
+      "SpecificEffects": "<buf ID=900018>[Passive Repair]</buf>'s Repair AMT is now <color=#F74848>1x</color> that of the Manipulator."
+    },
+    "500036": {
+      "name": "Emergency Repair 4",
+      "SpecificEffects": "The number of targets that <buf ID=900018>[Passive Repair]</buf> can repair increases by <color=#F74848>1</color>."
+    },
+    "500541": {
+      "name": "Pochy 2.0 1",
+      "SpecificEffects": "[Pochy]'s inherited Repair AMT has been increased to <color=#F74848>0.6x</color> of [Seven]'s Repair AMT."
+    },
+    "500042": {
+      "name": "AP Optimization 4",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
+    },
+    "500043": {
+      "name": "Part Maintenance 3",
+      "SpecificEffects": "Each turn, the AP Cost of the 1st repair skill decreases by <color=#F74848>1</color>, with a minimum cost of <color=#F74848>1</color> AP."
+    },
+    "500544": {
+      "name": "Pochy 2.0 2",
+      "SpecificEffects": "When [Pochy] suffers overdamage, trigger <buf ID=900003>[Guts]</buf>, locking to <color=#F74848>1</color> HP. This effect is only effective for <color=#F74848>1</color> time per deployment."
+    },
+    "500545": {
+      "name": "Pochy 2.0 3",
+      "SpecificEffects": "After [Pochy] is destroyed, [Seven]'s Repair AMT <color=#F74848>+20%</color>."
+    },
+    "500546": {
+      "name": "Pochy 2.0 4",
+      "SpecificEffects": "[Pochy]'s Movement <color=#F74848>+2</color>."
+    }
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "PilotName": "Cicero",
+  "RealName": "Cicero Wright",
+  "Gender": "Male",
+  "Profession": "Launcher",
+  "Occupation": "Tactician",
+  "Talent0_2Ability": {
+    "name": "Thirst for Knowledge",
+    "SpecificEffects": "When self's HP is full, AP Regen per turn <color=#F74848>+1</color>."
+  },
+  "Talent3_5Ability": {
+    "name": "Thirst for Knowledge",
+    "SpecificEffects": "When HP is full, AP Regen per turn <color=#F74848>+1</color>.\nWhen attacking with a Tactical Weapon, for each <color=#F74848>1</color> AP that you possess, Crit Rate <color=#F74848>+3%</color>, up to <color=#F74848>15%</color>."
+  },
+  "skills": {
+    "400001": {
+      "name": "Strategic Bombing 1",
+      "describe": "",
+      "SpecificEffects": "When a Tactical Weapon runs out of ammo, trigger <buf ID=900029>[Auto Load]</buf>. This process takes <color=#F74848>3</color> turns."
+    },
+    "700016": {
+      "name": "Precision Strike",
+      "describe": "Uses Missile Launcher to attack a target, dealing <color=#F74848>2.0x</color> DMG to the hit part and no longer dealing Splash DMG.",
+      "SpecificEffects": ""
+    },
+    "400203": {
+      "name": "Killing Returns",
+      "describe": "",
+      "SpecificEffects": "When breaking a part with a Missile, restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>1</color> time per turn."
+    },
+    "700024": {
+      "name": "Graphite Warhead",
+      "describe": "Uses Rocket Launcher to attack all targets within a <range type=1>3*3 tile area</range>, dealing <color=#F74848>0.25x</color> AoE DMG. After combat, inflict <buf ID=3006502>[Short Circuit I]</buf> on the targets hit, effective <color=#F74848>1</color> time.",
+      "SpecificEffects": ""
+    },
+    "400205": {
+      "name": "AP Planning",
+      "describe": "",
+      "SpecificEffects": "When attacking with a Rocket Launcher, if <color=#F74848>3</color> or more targets are hit, restore <color=#F74848>1</color> AP after combat, effective for <color=#F74848>1</color> time per turn."
+    },
+    "400206": {
+      "name": "New Initiatives",
+      "describe": "Fully restore Tactical Weapon Ammo and gain <buf ID=4002062>[Missile DMG UP]</buf> and <buf ID=4002065>[Rocket DMG UP]</buf>, with each buff effective for <color=#F74848>1</color> time. Can continue the action with the remaining movement.",
+      "SpecificEffects": ""
+    },
+    "400207": {
+      "name": "Enhanced Range",
+      "describe": "",
+      "SpecificEffects": "Tactical Weapon Range <color=#F74848>+1</color>."
+    },
+    "400208": {
+      "name": "Scorched Earth",
+      "describe": "When both shoulders are equipped with the same category of Tactical Weapon, cast <buf ID=900016>[Salvo]</buf> code to attack.",
+      "SpecificEffects": ""
+    }
+  },
+  "neuralPassives": {
+    "400011": {
+      "name": "Strategic Bombing 2",
+      "SpecificEffects": "Tactical Weapon Magazine Capacity <color=#F74848>+1</color>."
+    },
+    "400012": {
+      "name": "Power Innovation 1",
+      "SpecificEffects": "AP Regen <color=#F74848>+1</color>."
+    },
+    "400013": {
+      "name": "AP Optimization 1",
+      "SpecificEffects": "Initial AP <color=#F74848>+1</color>."
+    },
+    "400021": {
+      "name": "Strategic Bombing 3",
+      "SpecificEffects": "Tactical Weapons Reload CD <color=#F74848>-1</color>."
+    },
+    "400022": {
+      "name": "Power Innovation 2",
+      "SpecificEffects": "AP Regen <color=#F74848>+1</color>."
+    },
+    "400023": {
+      "name": "AP Optimization 2",
+      "SpecificEffects": "AP Cap <color=#F74848>+2</color>."
+    },
+    "400031": {
+      "name": "Indiscriminate 1",
+      "SpecificEffects": "After the first attack with a Tactical Weapon each turn, <buf ID=900004>[Re-ATK]</buf> can be triggered, with Final DMG <color=#F74848>-30%</color>, effective up to <color=#F74848>1</color> time per turn. Unable to move before attacking."
+    },
+    "400032": {
+      "name": "AP Optimization 3",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
+    },
+    "400033": {
+      "name": "Strategic Bombing 4",
+      "SpecificEffects": "When <buf ID=900029>[Auto Load]</buf> is complete, restore <color=#F74848>1</color> AP."
+    },
+    "400034": {
+      "name": "Indiscriminate 2",
+      "SpecificEffects": "When attacking with a Tactical Weapon for the first time each turn, for every <color=#F74848>1</color> AP cost, DMG <color=#F74848>+4%</color>, up to <color=#F74848>20%</color>."
+    },
+    "400035": {
+      "name": "Indiscriminate 3",
+      "SpecificEffects": "When <buf ID=900004>[Re-ATK]</buf> is triggered, allow continued moving with the remaining movement."
+    },
+    "400036": {
+      "name": "Indiscriminate 4",
+      "SpecificEffects": "After triggering <buf ID=900004>[Re-ATK]</buf>, it no longer reduces final damage."
+    },
+    "400241": {
+      "name": "Path to the Truth 1",
+      "SpecificEffects": "At the end of the action, restore <color=#F74848>10%</color> of HP."
+    },
+    "400042": {
+      "name": "AP Optimization 4",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
+    },
+    "400043": {
+      "name": "Power Innovation 3",
+      "SpecificEffects": "When destroying a target, additionally restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>2</color> times per turn."
+    },
+    "400244": {
+      "name": "Path to the Truth 2",
+      "SpecificEffects": "When HP is full, DMG Taken <color=#F74848>-20%</color>."
+    },
+    "400245": {
+      "name": "Path to the Truth 3",
+      "SpecificEffects": "When receiving active repairs, Received Repair AMT <color=#F74848>+12%</color>."
+    },
+    "400246": {
+      "name": "Path to the Truth 4",
+      "SpecificEffects": "The HP required for <buf ID=4002501>[Thirst for Knowledge]</buf> to take effect has been lowered to <color=#F74848>70%</color>."
+    }
+  }
+}

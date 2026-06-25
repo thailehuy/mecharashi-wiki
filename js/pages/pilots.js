@@ -134,6 +134,12 @@ Pages.pilots = {
 
   // ── Detail page ────────────────────────────────────────────────────────────
   _renderDetail: function (p) {
+    var self = this;
+    Translations.loadPilot(p, function (merged) { return self._buildDetail(merged); });
+    return this._buildDetail(p);
+  },
+
+  _buildDetail: function (p) {
     var rankLabel   = QUALITY_LABEL[p.quality] || p.quality;
     var rankClass   = QUALITY_CLASS[p.quality] || '';
     var portraitSrc = PORTRAIT_BASE + encodeURIComponent(p.AvatarHeroIcon) + '.png';

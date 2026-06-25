@@ -1,0 +1,131 @@
+{
+  "PilotName": "Rosa",
+  "RealName": "Rosa Diaz",
+  "Gender": "Female",
+  "Profession": "Assault",
+  "Occupation": "Raider",
+  "Talent0_2Ability": {
+    "name": "Prototype",
+    "SpecificEffects": "If you cast a One-Handed Machine Gun skill during an Active Attack, use the opposite arm to launch <buf ID=900001>[Flurry Strike]</buf> after the enemy's Retaliation, dealing <color=#F74848>0.2x</color> DMG."
+  },
+  "Talent3_5Ability": {
+    "name": "Prototype",
+    "SpecificEffects": "During an Active Attack with the One-Handed Machine Gun skill, use the opposite arm to launch <buf ID=900001>[Flurry Strike]</buf> after the enemy's Retaliation, dealing <color=#F74848>0.25x</color> DMG.  \nMachine Gun Weight <color=#F74848>-80</color>."
+  },
+  "skills": {
+    "200001": {
+      "name": "CEC 1",
+      "describe": "",
+      "SpecificEffects": "In cooperation with allies, use Assault Weapons to launch a <buf ID=900002>[Link Attack]</buf> against the target, dealing <color=#F74848>0.2x</color> DMG, effective up to <color=#F74848>1</color> time per turn."
+    },
+    "700036": {
+      "name": "Hasta Manana",
+      "describe": "",
+      "SpecificEffects": "During an Active Attack in combat, DMG <color=#F74848>+15%</color> and DMG Taken <color=#F74848>-10%</color>."
+    },
+    "200803": {
+      "name": "Flames of War",
+      "describe": "Uses 2 Machine Guns to attack all targets within a <range type=1>3*2 tile area in front</range>, dealing <color=#F74848>2*0.35x</color> AoE DMG.",
+      "SpecificEffects": ""
+    },
+    "200804": {
+      "name": "One Mech Army",
+      "describe": "Simultaneously use 2 machine guns to attack a target, dealing <color=#F74848>2* 0.7x</color> DMG. After combat, repairs undamaged parts, restoring HP equal to <color=#F74848>40%</color> of damage dealt.",
+      "SpecificEffects": ""
+    },
+    "200805": {
+      "name": "Superconductivity",
+      "describe": "",
+      "SpecificEffects": "Rail Gun's DMG <color=#F74848>+20%</color>. Automatically load <color=#F74848>1</color> Ammo every <color=#F74848>2</color> turns."
+    },
+    "200806": {
+      "name": "Purge",
+      "describe": "Consume <color=#F74848>2</color> rounds of Ammo. Uses Rail Gun to attack all targets within a <range type=1>3*5 tile area</range>, dealing <color=#F74848>1.0x</color> AoE DMG.",
+      "SpecificEffects": ""
+    },
+    "200807": {
+      "name": "Power Disparity",
+      "describe": "",
+      "SpecificEffects": "For every <color=#F74848>10%</color> reduction in the target's HP, Crit Rate <color=#F74848>+5%</color>, up to <color=#F74848>20%</color>."
+    },
+    "200808": {
+      "name": "Unstoppable",
+      "describe": "Simultaneously use 2 machine guns to attack a target, dealing <color=#F74848>2* 0.95x</color> DMG.",
+      "SpecificEffects": ""
+    }
+  },
+  "neuralPassives": {
+    "200011": {
+      "name": "CEC 2",
+      "SpecificEffects": "<buf ID=900002>[Link Attack]</buf>'s effective times per turn <color=#F74848>+1</color>."
+    },
+    "200012": {
+      "name": "Power Innovation 1",
+      "SpecificEffects": "AP Regen <color=#F74848>+1</color>."
+    },
+    "200013": {
+      "name": "AP Optimization 1",
+      "SpecificEffects": "Initial AP <color=#F74848>+1</color>."
+    },
+    "200021": {
+      "name": "CEC 3",
+      "SpecificEffects": "<buf ID=900002>[Link Attack]</buf>'s damage multiplier is increased to <color=#F74848>0.3</color>."
+    },
+    "200022": {
+      "name": "Power Innovation 2",
+      "SpecificEffects": "When breaking a part, restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>1</color> time per turn."
+    },
+    "200023": {
+      "name": "AP Optimization 2",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
+    },
+    "200031": {
+      "name": "Perfect Position 1",
+      "SpecificEffects": "Unlock the Assault Weapon's <buf ID=900011>[Ideal Range]</buf> ability. When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, final DMG <color=#F74848>+15%</color>."
+    },
+    "200032": {
+      "name": "AP Optimization 3",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
+    },
+    "200033": {
+      "name": "Adaptive Warfare 1",
+      "SpecificEffects": "At the end of the action, if an Active Attack was not initiated this turn, an extra <color=#F74848>2</color> tiles can be moved."
+    },
+    "200034": {
+      "name": "Perfect Position 2",
+      "SpecificEffects": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, Hit Rate <color=#F74848>+12%</color>."
+    },
+    "200035": {
+      "name": "Perfect Position 3",
+      "SpecificEffects": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, Crit Rate <color=#F74848>+12%</color>."
+    },
+    "200036": {
+      "name": "Perfect Position 4",
+      "SpecificEffects": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, final DMG <color=#F74848>+30%</color>."
+    },
+    "200841": {
+      "name": "Dominate Field 1",
+      "SpecificEffects": "Rail Gun's AP Cost <color=#F74848>-1</color>."
+    },
+    "200042": {
+      "name": "AP Optimization 4",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
+    },
+    "200043": {
+      "name": "Adaptive Warfare 2",
+      "SpecificEffects": "If not moved before an Active Attack, <buf ID=900004>[Re-ATK]</buf> can be triggered, effective up to <color=#F74848>1</color> time per turn. Unable to move before attacking.\nEffects similar to <buf ID=900004>[Re-ATK]</buf> cannot be re-triggered."
+    },
+    "200844": {
+      "name": "Dominate Field 2",
+      "SpecificEffects": "Rail Gun's DMG <color=#F74848>+15%</color>."
+    },
+    "200845": {
+      "name": "Dominate Field 3",
+      "SpecificEffects": "After an Active Attack in combat, automatically use a Rail Gun to launch <buf ID=900031>[Extra Strike]</buf> once against the target, dealing <color=#F74848>0.2x</color> DMG without consuming any ammo."
+    },
+    "200846": {
+      "name": "Dominate Field 4",
+      "SpecificEffects": "When launching <buf ID=900031>[Extra Strike]</buf>, if the target is within the Cross area, dealing <color=#F74848>0.3x</color> AoE DMG to all targets within a Line (<color=#F74848>5</color> tiles) in which the target is located."
+    }
+  }
+}

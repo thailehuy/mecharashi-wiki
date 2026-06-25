@@ -1,0 +1,131 @@
+{
+  "PilotName": "Kaidan",
+  "RealName": "Kaidan Newman",
+  "Gender": "Male",
+  "Profession": "Striker",
+  "Occupation": "Fighter",
+  "Talent0_2Ability": {
+    "name": "Hyper-reaction",
+    "SpecificEffects": "With a Melee Weapon, <buf ID=900006>[Reaction Attack]</buf> can be triggered against the enemy within attack range, dealing <color=#F74848>0.6x</color> DMG, with a trigger interval of <color=#F74848>1</color> turn."
+  },
+  "Talent3_5Ability": {
+    "name": "Hyper-reaction",
+    "SpecificEffects": "With a Melee Weapon, trigger <buf ID=900006>[Reaction Attack]</buf> against the enemy within range, dealing <color=#F74848>0.6x</color> DMG, with a trigger interval of <color=#F74848>1</color> turn.\nWhen in combat with an enemy in the adjacent (<color=#F74848>1</color> tile) area, Hit Rate <color=#F74848>+12%</color> and Dodge Rate <color=#F74848>+12%</color>."
+  },
+  "skills": {
+    "100001": {
+      "name": "Mobile Warfare 1",
+      "describe": "",
+      "SpecificEffects": "After breaking a part, <buf ID=900004>[Re-ATK]</buf> can be triggered. Unable to move before the attack, and this can be effective up to <color=#F74848>2</color> times per turn."
+    },
+    "700057": {
+      "name": "First-mover Advantage",
+      "describe": "",
+      "SpecificEffects": "During an Active Attack in combat, Crit DMG <color=#F74848>+15%</color>."
+    },
+    "100303": {
+      "name": "Deadly Shot",
+      "describe": "Uses Shotgun to attack a target, dealing <color=#F74848>1.2x</color> DMG. DMG Dealt <color=#F74848>+15%</color> to parts with HP below <color=#F74848>50%</color>.",
+      "SpecificEffects": ""
+    },
+    "700027": {
+      "name": "Dodge Propensity",
+      "describe": "",
+      "SpecificEffects": "If unable to retaliate in combat, Dodge Rate <color=#F74848>+12%</color>."
+    },
+    "100305": {
+      "name": "Triumphant Progress",
+      "describe": "",
+      "SpecificEffects": "When breaking a part, grant <buf ID=7100403>[Crit Rate UP II]</buf> to self after combat, lasting for <color=#F74848>1</color> turn."
+    },
+    "100306": {
+      "name": "Weakness Strike",
+      "describe": "Uses Shotgun or Melee Weapon to attack a target, dealing <color=#F74848>1.2x</color> DMG or <color=#F74848>1.55x</color> DMG. Shotgun DMG <color=#F74848>+50%</color> when attacking the part with the lowest HP. When using Melee Weapon, Hit Weight for part with the lowest HP <color=#F74848>+40%</color>.",
+      "SpecificEffects": ""
+    },
+    "700034": {
+      "name": "Impending Victory",
+      "describe": "",
+      "SpecificEffects": "During an Active Attack in combat, if the HP% is higher than the target's, DMG <color=#F74848>+15%</color>."
+    },
+    "100308": {
+      "name": "Victory Rush",
+      "describe": "Uses Pile Bunker or Knuckles to attack a target, dealing <color=#F74848>1.6x</color> DMG. Targets the part with the lowest HP. Upon breaking this part, uses the opposite arm to launch a <buf ID=900001>[Flurry Strike]</buf>, dealing <color=#F74848>1.0x</color> DMG.",
+      "SpecificEffects": ""
+    }
+  },
+  "neuralPassives": {
+    "100011": {
+      "name": "Mobile Warfare 2",
+      "SpecificEffects": "Upon triggering <buf ID=900004>[Re-ATK]</buf>, allows movement of <color=#F74848>2</color> tiles before attacking."
+    },
+    "100012": {
+      "name": "Power Innovation 1",
+      "SpecificEffects": "AP Regen <color=#F74848>+1</color>."
+    },
+    "100013": {
+      "name": "AP Optimization 1",
+      "SpecificEffects": "Initial AP <color=#F74848>+1</color>."
+    },
+    "100021": {
+      "name": "Mobile Warfare 3",
+      "SpecificEffects": "Destroying the target can trigger <buf ID=900005>[Re-Act]</buf>, allowing action with full movement distance."
+    },
+    "100022": {
+      "name": "Power Innovation 2",
+      "SpecificEffects": "When breaking a part, restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>1</color> time per turn."
+    },
+    "100023": {
+      "name": "AP Optimization 2",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
+    },
+    "100031": {
+      "name": "Alacrity 1",
+      "SpecificEffects": "During an Active Attack with a Melee Weapon, there is a <color=#F74848>20%</color> chance to trigger <buf ID=900001>[Flurry Strike]</buf> following the enemy’s attack, dealing <color=#F74848>0.5x</color> DMG."
+    },
+    "100032": {
+      "name": "AP Optimization 3",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
+    },
+    "100033": {
+      "name": "Mobile Warfare 4",
+      "SpecificEffects": "<buf ID=900004>[Re-ATK]</buf> or <buf ID=900005>[Re-Act]</buf>'s effective times per turn <color=#F74848>+1</color>."
+    },
+    "100034": {
+      "name": "Alacrity 2",
+      "SpecificEffects": "Before an Active Attack, the probability of triggering <buf ID=900001>[Flurry Strike]</buf> increases by <color=#F74848>6%</color> for each <color=#F74848>1</color> tile moved, up to <color=#F74848>30%</color>."
+    },
+    "100035": {
+      "name": "Alacrity 3",
+      "SpecificEffects": "<buf ID=900001>[Flurry Strike]</buf> damage multiplier is increased to <color=#F74848>0.75</color>."
+    },
+    "100036": {
+      "name": "Alacrity 4",
+      "SpecificEffects": "When triggering <buf ID=900001>[Flurry Strike]</buf>, prioritize hitting the part with the lowest HP."
+    },
+    "100341": {
+      "name": "Head of GKD 1",
+      "SpecificEffects": "The damage multiplier for <buf ID=900006>[Reaction Attack]</buf> is increased to <color=#F74848>0.9</color>."
+    },
+    "100042": {
+      "name": "AP Optimization 4",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
+    },
+    "100043": {
+      "name": "Power Innovation 3",
+      "SpecificEffects": "When destroying a target, additionally restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>2</color> times per turn."
+    },
+    "100344": {
+      "name": "Head of GKD 2",
+      "SpecificEffects": "When triggering <buf ID=900006>[Reaction Attack]</buf>, prioritize targeting the part with the lowest HP."
+    },
+    "100345": {
+      "name": "Head of GKD 3",
+      "SpecificEffects": "Enable <buf ID=900006>[Reaction Attack]</buf> to be effective <color=#F74848>1</color> time per turn."
+    },
+    "100346": {
+      "name": "Head of GKD 4",
+      "SpecificEffects": "Able to use a Shotgun to launch <buf ID=900006>[Reaction Attack]</buf> against the enemy, dealing <color=#F74848>0.7x</color> DMG."
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "SEFAS",
+  "introduce": "ELE-07 SEFAS\nA high-performance model specially developed by Obsidian, and initially commissioned by the Electric Eel.\nMany of this model's parts deviate from international standards, including the thickness of the drive rods, the size of the articulating bearings, and the location of the armor mounts.\nThe body of this ST is fitted with spikes and ramming nails in the knee and shoulder positions—features rarely seen on standard mechs—allowing it to effectively engage in close-quarters combat.",
+  "modules": {
+    "20054": {
+      "name": "HM Bridged Unit",
+      "SpecificEffects": "When fighting enemies within the <color=#F74848>1-ring</color> area, Hit Rate <color=#F74848>+15%</color>, Crit Rate <color=#F74848>+15%</color>."
+    },
+    "30148": {
+      "name": "Fortitude Mod",
+      "SpecificEffects": "When HP is below <color=#F74848>60%</color>, DMG <color=#F74848>+18%</color>.\nThe Body is not destroyed when it suffers overdamage, with a trigger interval of <color=#F74848>5</color> turns."
+    },
+    "40034": {
+      "name": "Crit DMG Mod",
+      "SpecificEffects": "Crit DMG <color=#F74848>+10%</color>."
+    }
+  }
+}

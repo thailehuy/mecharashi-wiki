@@ -1,0 +1,131 @@
+{
+  "PilotName": "零",
+  "RealName": "绫波零",
+  "Gender": "Female",
+  "Profession": "Defender",
+  "Occupation": "守护者",
+  "Talent0_2Ability": {
+    "name": "第一适格者",
+    "SpecificEffects": "与机兵可以进行<buf ID=900088>[同步]</buf>；可以使用突击武器对友军攻击的目标发动<buf ID=900002>[协力攻击]</buf>，造成<color=#F74848>0.2</color>倍伤害，每回合最多发动<color=#F74848>2</color>次"
+  },
+  "Talent3_5Ability": {
+    "name": "第一适格者",
+    "SpecificEffects": "与机兵可以进行<buf ID=900088>[同步]</buf>；可以使用突击武器对友军攻击的目标发动<buf ID=900002>[协力攻击]</buf>，造成<color=#F74848>0.2</color>倍伤害，每回合最多发动<color=#F74848>2</color>次；\n<buf ID=900022>[援护防御]</buf>最小范围扩大至<color=#F74848>2</color>格，<buf ID=900022>[援护防御]</buf>范围内友军遭受暴击率减少<color=#F74848>20%</color>"
+  },
+  "skills": {
+    "600001": {
+      "name": "据守作战1",
+      "describe": "",
+      "SpecificEffects": "发动<buf ID=900022>[援护防御]</buf>，替相邻<color=#F74848>1</color>格的友军抵挡突击与射击武器的攻击，每回合最多发动<color=#F74848>2</color>次"
+    },
+    "600902": {
+      "name": "同步协击",
+      "describe": "使用机枪攻击单个目标，造成<color=#F74848>1.15</color>倍伤害，战后对所有参与本次攻击的其他友军施加<color=#F74848>1</color>个随机增益效果，持续<color=#F74848>2</color>回合",
+      "SpecificEffects": ""
+    },
+    "600903": {
+      "name": "立体防御",
+      "describe": "",
+      "SpecificEffects": "<buf ID=900022>[援护防御]</buf>可以额外抵挡格斗武器攻击"
+    },
+    "600904": {
+      "name": "战术备盾",
+      "describe": "使自身盾牌的耐久值恢复<color=#F74848>50%</color>，可修复已损毁的盾牌，然后可用剩余移动力继续行动",
+      "SpecificEffects": ""
+    },
+    "600905": {
+      "name": "精确支援",
+      "describe": "",
+      "SpecificEffects": "发动<buf ID=900002>[协力攻击]</buf>时，若敌机有部位在本次对战中被击破，战后率领此次协力的友军回复<color=#F74848>1</color>AP，每回合最多发动<color=#F74848>1</color>次"
+    },
+    "600906": {
+      "name": "战术机动",
+      "describe": "选择周围<color=#F74848>3</color>格内任意<color=#F74848>1</color>名其他友军，与其互换位置，然后可用剩余移动力继续行动",
+      "SpecificEffects": ""
+    },
+    "600907": {
+      "name": "无言",
+      "describe": "",
+      "SpecificEffects": "行动结束时，随机使自身及周围<color=#F74848>3</color>格内<color=#F74848>1</color>名其他友军获得<color=#F74848>1</color>个随机增益效果，持续<color=#F74848>2</color>回合"
+    },
+    "600908": {
+      "name": "舍身决意",
+      "describe": "使用大盾攻击单个目标，造成当前手臂最大耐久值<color=#F74848>50%</color>加上当前耐久值<color=#F74848>20%</color>的<buf ID=900017>[固定伤害]</buf>，必定攻击躯干并使命中率提升<color=#F74848>15%</color>，对其余部位造成<color=#F74848>50%</color>的溅射伤害，命中后摧毁当前手臂",
+      "SpecificEffects": ""
+    }
+  },
+  "neuralPassives": {
+    "600011": {
+      "name": "据守作战2",
+      "SpecificEffects": "发动<buf ID=900022>[援护防御]</buf>时，遭受伤害降低<color=#F74848>10%</color>"
+    },
+    "600012": {
+      "name": "防御特化1",
+      "SpecificEffects": "反击伤害提升<color=#F74848>20%</color>"
+    },
+    "600013": {
+      "name": "AP优化1",
+      "SpecificEffects": "AP的初始值<color=#F74848>+1</color>"
+    },
+    "600021": {
+      "name": "据守作战3",
+      "SpecificEffects": "<buf ID=900022>[援护防御]</buf>每回合可发动的次数<color=#F74848>+1</color>"
+    },
+    "600022": {
+      "name": "防御特化2",
+      "SpecificEffects": "发动<buf ID=900022>[援护防御]</buf>时，战后回复<color=#F74848>1</color>AP，每回合最多发动<color=#F74848>1</color>次"
+    },
+    "600023": {
+      "name": "AP优化2",
+      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+    },
+    "600931": {
+      "name": "相转移1",
+      "SpecificEffects": "行动开始时，将所有完好的部位耐久百分比进行<buf ID=900089>[平衡]</buf>"
+    },
+    "600032": {
+      "name": "AP优化3",
+      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+    },
+    "600033": {
+      "name": "自适应作战1",
+      "SpecificEffects": "行动结束时，若本回合未主动攻击，则可以额外移动<color=#F74848>2</color>格"
+    },
+    "600934": {
+      "name": "相转移2",
+      "SpecificEffects": "<buf ID=900089>[平衡]</buf>后所有完好部位额外恢复<color=#F74848>10%</color>耐久值"
+    },
+    "600935": {
+      "name": "相转移3",
+      "SpecificEffects": "存在损毁部位时，遭受伤害降低<color=#F74848>15%</color>"
+    },
+    "600936": {
+      "name": "相转移4",
+      "SpecificEffects": "遭受攻击后，若耐久值低于<color=#F74848>50%</color>，触发<buf ID=900089>[平衡]</buf>，并修复<color=#F74848>1</color>个损毁部位，间隔<color=#F74848>3</color>回合后可再次发动"
+    },
+    "600941": {
+      "name": "协力战术1",
+      "SpecificEffects": "参与<buf ID=900002>[协力攻击]</buf>后，会给所有参与本次攻击的其他友军施加<color=#F74848>1</color>个随机增益效果，持续<color=#F74848>2</color>回合"
+    },
+    "600042": {
+      "name": "AP优化4",
+      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+    },
+    "600043": {
+      "name": "据守作战4",
+      "SpecificEffects": "<buf ID=900022>[援护防御]</buf>每回合不再有发动次数限制"
+    },
+    "600944": {
+      "name": "协力战术2",
+      "SpecificEffects": "天赋的<buf ID=900002>[协力攻击]</buf>每回合可发动的次数<color=#F74848>+1</color>"
+    },
+    "600945": {
+      "name": "协力战术3",
+      "SpecificEffects": "每次触发<buf ID=900002>[协力攻击]</buf>后，获得遭受伤害降低<color=#F74848>5%</color>，可叠加<color=#F74848>3</color>层，行动开始时重置"
+    },
+    "600946": {
+      "name": "协力战术4",
+      "SpecificEffects": "<buf ID=900002>[协力攻击]</buf>倍率<color=#F74848>+0.1</color>；<buf ID=1014820>[同步率]</buf>高于<color=#F74848>50%</color>时，每<color=#F74848>10%</color>额外提升<buf ID=900002>[协力攻击]</buf>倍率<color=#F74848>0.05</color>，最高提升<color=#F74848>0.2</color>倍"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Diana",
+  "introduce": "OS-06F Diana\nA balanced light ST produced by Obsidian.\nA special interference pattern coats this ST's armor surface. The lightweight construction of its legs makes it adept at dodging.\nAs a foreign trade model, there are slight differences in the Diana's control system and engine casing for different factions.\nBased on combat data gathered by the OS-06F, Obsidian completed the development of OS-07X, OS-11A, and OS-09S.",
+  "modules": {
+    "10064": {
+      "name": "Radar Jammer",
+      "SpecificEffects": "When attacked and retaliated, there is a <color=#F74848>70%</color> chance to trigger: Dodge Rate <color=#F74848>+12%</color>."
+    },
+    "30142": {
+      "name": "Fortitude Mod",
+      "SpecificEffects": "When HP is below <color=#F74848>40%</color>, DMG <color=#F74848>+4%</color>."
+    },
+    "40044": {
+      "name": "Dodge Mod",
+      "SpecificEffects": "Dodge Rate <color=#F74848>+10%</color>."
+    }
+  }
+}

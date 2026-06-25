@@ -1,0 +1,18 @@
+{
+  "name": "Boyer",
+  "introduce": "LTX-17 Boyer\nA mass-produced assault ST developed by Laniakea.\nThe Boyer's excellent structure has made it a standout in the history of mech design, and its stable performance in actual combat has sparked competition and imitation among various factions.\nIt is rumored that the UNCS once attempted to manufacture a more advanced LTX-18 Boyer II, but the development plan was forced to be discontinued for unknown reasons.",
+  "modules": {
+    "40014": {
+      "name": "Accuracy Mod",
+      "SpecificEffects": "Hit Rate <color=#F74848>+10%</color>."
+    },
+    "10024": {
+      "name": "Pressurizer",
+      "SpecificEffects": "When attacking with an Assault Weapon, there is a <color=#F74848>70%</color> chance to trigger: DMG <color=#F74848>+15%</color>."
+    },
+    "30022": {
+      "name": "Execution Mod",
+      "SpecificEffects": "When attacking a part with HP lower than <color=#F74848>40%</color>, DMG <color=#F74848>+4%</color>."
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "XR",
+  "introduce": "Code Unknown XR\nDesigned by Winston and produced by Obsidian, only one model of this ST was made, for one specific pilot, whose identity is not stored in its records.\nBuilt with no expense spared, the XR is equipped with a device called the \"Mirror Core,\" which operates in conjunction with a hub processor in the cockpit and mirror imagers on the left and right arms to significantly enhance efficiency. The energy circulation management system in the body and legs also ensure the ST's long-term combat capability without requiring resupplies.\nAccording to unidentified sources, the XR is linked to research related to \"Super Pilots.\" More data is needed.",
+  "modules": {
+    "20074": {
+      "name": "Mirror Core",
+      "SpecificEffects": "When both hands are equipped with the same weapon type, DMG <color=#F74848>+20%</color>."
+    },
+    "30168": {
+      "name": "Flawless Mod",
+      "SpecificEffects": "When HP is higher than <color=#F74848>80%</color>, DMG <color=#F74848>+9%</color>, DMG Taken <color=#F74848>-9%</color>.\nAt the start of each turn, restore <color=#F74848>8%</color> of HP."
+    },
+    "40014": {
+      "name": "Accuracy Mod",
+      "SpecificEffects": "Hit Rate <color=#F74848>+10%</color>."
+    }
+  }
+}

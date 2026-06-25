@@ -1,0 +1,131 @@
+{
+  "PilotName": "Lucia",
+  "RealName": "Lucia Voight",
+  "Gender": "Female",
+  "Profession": "Launcher",
+  "Occupation": "Tactician",
+  "Talent0_2Ability": {
+    "name": "Ammo Upgrade",
+    "SpecificEffects": "After sortie, gain <color=#F74848>2</color> stacks of <buf ID=4003503>[SP Ammo I]</buf>, up to <color=#F74848>2</color> stacks. After an Active Attack with a Rail Gun, remove <color=#F74848>1</color> stack."
+  },
+  "Talent3_5Ability": {
+    "name": "Ammo Upgrade",
+    "SpecificEffects": "After sortie, gain <color=#F74848>2</color> stacks of <buf ID=4003503>[SP Ammo I]</buf>, up to <color=#F74848>2</color> stacks. After an Active Attack with a Rail Gun, remove <color=#F74848>1</color> stack.\nWhenever [Your Turn] starts, gain <color=#F74848>1</color> stack of <buf ID=4003503>[SP Ammo I]</buf>."
+  },
+  "skills": {
+    "400001": {
+      "name": "Strategic Bombing 1",
+      "describe": "",
+      "SpecificEffects": "When a Tactical Weapon runs out of ammo, trigger <buf ID=900029>[Auto Load]</buf>. This process takes <color=#F74848>3</color> turns."
+    },
+    "700053": {
+      "name": "Overflow Scatter",
+      "describe": "Uses Shotgun to attack a target, dealing <color=#F74848>1.15x</color> DMG. Before combat, gains <buf ID=7100501>[Crit DMG UP I]</buf>, lasting <color=#F74848>1</color> turn.",
+      "SpecificEffects": ""
+    },
+    "700048": {
+      "name": "Sabotage",
+      "describe": "",
+      "SpecificEffects": "During an Active Attack, deals an additional <color=#F74848>20%</color> DMG to the part with HP below <color=#F74848>50%</color>."
+    },
+    "700030": {
+      "name": "Dash",
+      "describe": "Gain <buf ID=7100901>[Movement UP]</buf> and <buf ID=7100403>[Crit Rate UP II]</buf>, lasting for <color=#F74848>1</color> turn. Can continue the action with the remaining movement.",
+      "SpecificEffects": ""
+    },
+    "400305": {
+      "name": "Power Optimization",
+      "describe": "",
+      "SpecificEffects": "During an Active Attack, if critical hits are landed, restore <color=#F74848>1</color> AP after combat, effective <color=#F74848>1</color> time per turn."
+    },
+    "400306": {
+      "name": "Repair Disabled Rail Gun",
+      "describe": "Uses Rail Gun to attack all targets within a <range type=1>Line (1*5 tiles) area</range>, dealing <color=#F74848>1.0x</color> AoE DMG. After combat, it inflicts <buf ID=4003063>[Repair Hindrance]</buf> on affected targets, lasting <color=#F74848>1</color> turn.",
+      "SpecificEffects": ""
+    },
+    "400307": {
+      "name": "Interferents",
+      "describe": "",
+      "SpecificEffects": "If a part is broken during an attack, the target will lose <color=#F74848>1</color> AP after combat."
+    },
+    "400308": {
+      "name": "The Group's Gift",
+      "describe": "Uses Rail Gun to attack all targets within a <range type=1>Line (1*5 tiles) area</range>, dealing <color=#F74848>1.1x</color> AoE DMG. After combat, transforms tiles hit into <buf ID=4003081>[Burning Terrain]</buf>, lasting <color=#F74848>2</color> turns.",
+      "SpecificEffects": ""
+    }
+  },
+  "neuralPassives": {
+    "400011": {
+      "name": "Strategic Bombing 2",
+      "SpecificEffects": "Tactical Weapon Magazine Capacity <color=#F74848>+1</color>."
+    },
+    "400012": {
+      "name": "Power Innovation 1",
+      "SpecificEffects": "AP Regen <color=#F74848>+1</color>."
+    },
+    "400013": {
+      "name": "AP Optimization 1",
+      "SpecificEffects": "Initial AP <color=#F74848>+1</color>."
+    },
+    "400021": {
+      "name": "Strategic Bombing 3",
+      "SpecificEffects": "Tactical Weapons Reload CD <color=#F74848>-1</color>."
+    },
+    "400022": {
+      "name": "Power Innovation 2",
+      "SpecificEffects": "AP Regen <color=#F74848>+1</color>."
+    },
+    "400023": {
+      "name": "AP Optimization 2",
+      "SpecificEffects": "AP Cap <color=#F74848>+2</color>."
+    },
+    "400031": {
+      "name": "Indiscriminate 1",
+      "SpecificEffects": "After the first attack with a Tactical Weapon each turn, <buf ID=900004>[Re-ATK]</buf> can be triggered, with Final DMG <color=#F74848>-30%</color>, effective up to <color=#F74848>1</color> time per turn. Unable to move before attacking."
+    },
+    "400032": {
+      "name": "AP Optimization 3",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
+    },
+    "400033": {
+      "name": "Strategic Bombing 4",
+      "SpecificEffects": "When <buf ID=900029>[Auto Load]</buf> is complete, restore <color=#F74848>1</color> AP."
+    },
+    "400034": {
+      "name": "Indiscriminate 2",
+      "SpecificEffects": "When attacking with a Tactical Weapon for the first time each turn, for every <color=#F74848>1</color> AP cost, DMG <color=#F74848>+4%</color>, up to <color=#F74848>20%</color>."
+    },
+    "400035": {
+      "name": "Indiscriminate 3",
+      "SpecificEffects": "When <buf ID=900004>[Re-ATK]</buf> is triggered, allow continued moving with the remaining movement."
+    },
+    "400036": {
+      "name": "Indiscriminate 4",
+      "SpecificEffects": "After triggering <buf ID=900004>[Re-ATK]</buf>, it no longer reduces final damage."
+    },
+    "400341": {
+      "name": "Middle Management 1",
+      "SpecificEffects": "After sortie, gain <color=#F74848>3</color> stacks of <buf ID=900054>[SP Ammo]</buf>, up to <color=#F74848>3</color> stacks."
+    },
+    "400042": {
+      "name": "AP Optimization 4",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
+    },
+    "400043": {
+      "name": "Power Innovation 3",
+      "SpecificEffects": "When destroying a target, additionally restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>2</color> times per turn."
+    },
+    "400344": {
+      "name": "Middle Management 2",
+      "SpecificEffects": "The <buf ID=900054>[SP Ammo]</buf> effect provides additional Range <color=#F74848>+1</color>."
+    },
+    "400345": {
+      "name": "Middle Management 3",
+      "SpecificEffects": "The <buf ID=900054>[SP Ammo]</buf> effect grants Crit DMG <color=#F74848>+15%</color>."
+    },
+    "400346": {
+      "name": "Middle Management 4",
+      "SpecificEffects": "When attacking with a Rail Gun, if a part is broken, deal <buf ID=900017>[Fixed DMG]</buf> once for <color=#F74848>0.35x</color> DMG to enemies within a <color=#F74848>1</color>-tile range around the target after combat."
+    }
+  }
+}

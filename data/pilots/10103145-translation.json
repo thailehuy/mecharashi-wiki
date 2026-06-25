@@ -1,0 +1,131 @@
+{
+  "PilotName": "贝尔莎",
+  "RealName": "贝尔莎·瓦格纳",
+  "Gender": "Female",
+  "Profession": "Gunner",
+  "Occupation": "狙击手",
+  "Talent0_2Ability": {
+    "name": "明日星耀",
+    "SpecificEffects": "出击时自动部署<terrian ID=3014501 />，可以使用指令<skill mainSkill=301452>[布哨]</skill>和<skill mainSkill=301453>[宿敌标记]</skill>；敌机遭受其他队友主动攻击对战时，使用狙击步枪发动<buf ID=900002>[协力攻击]</buf>，造成<color=#F74848>0.35</color>倍伤害，优先攻击队友攻击的部位，击破的部位视作为发起攻击队友的，每回合最多发动<color=#F74848>3</color>次；使用武器技能以外的攻击时获得<color=#F74848>1</color>层<buf ID=3014508>[干劲]</buf>，可叠加<color=#F74848>5</color>层"
+  },
+  "Talent3_5Ability": {
+    "name": "明日星耀",
+    "SpecificEffects": "出击时自动部署<terrian ID=3014501 />，可以使用指令<skill mainSkill=301452>[布哨]</skill>和<skill mainSkill=301453>[宿敌标记]</skill>；敌机遭受其他队友主动攻击对战时，使用狙击步枪发动<buf ID=900002>[协力攻击]</buf>，造成<color=#F74848>0.35</color>倍伤害，优先攻击队友攻击的部位，击破的部位视作为发起攻击队友的，每回合最多发动<color=#F74848>3</color>次；使用武器技能以外的攻击时获得<color=#F74848>1</color>层<buf ID=3014508>[干劲]</buf>，可叠加<color=#F74848>5</color>层；\n<terrian ID=3014501 />的领域范围扩大至<color=#F74848>4</color>格"
+  },
+  "skills": {
+    "300001": {
+      "name": "狙击战1",
+      "describe": "",
+      "SpecificEffects": "击毁目标后可发动<buf ID=900004>[再攻击]</buf>，攻击前无法移动，每回合最多发动<color=#F74848>2</color>次"
+    },
+    "301402": {
+      "name": "火热手感",
+      "describe": "",
+      "SpecificEffects": "携带<buf ID=3014505>[宿敌]</buf>的敌机被击毁时，<color=#F28341>[贝尔莎]</color>获得<color=#F74848>2</color>层<buf ID=3014508>[干劲]</buf>"
+    },
+    "301403": {
+      "name": "一发入魂",
+      "describe": "使用狙击步枪攻击单个目标，造成<color=#F74848>1.4</color>倍伤害；必定攻击躯干，若击毁目标则不消耗<buf ID=3014508>[干劲]</buf>",
+      "SpecificEffects": ""
+    },
+    "301404": {
+      "name": "自我声援",
+      "describe": "",
+      "SpecificEffects": "使用武器技能攻击时，若<color=#F28341>[贝尔莎]</color>携带<buf ID=3014508>[干劲]</buf>，每携带<color=#F74848>1</color>层，战后回复<color=#F74848>1</color>AP，最多<color=#F74848>2</color>AP，每回合最多发动<color=#F74848>1</color>次"
+    },
+    "301405": {
+      "name": "决斗本能",
+      "describe": "",
+      "SpecificEffects": "<color=#F28341>[贝尔莎]</color>击毁携带<buf ID=3014505>[宿敌]</buf>的敌机时，获得<buf ID=3014053>[决斗本能]</buf>，可叠加<color=#F74848>2</color>层"
+    },
+    "301406": {
+      "name": "高光时刻",
+      "describe": "获得<color=#F74848>2</color>AP和<color=#F74848>3</color>层<buf ID=3014508>[干劲]</buf>，然后可以使用完整移动力继续行动",
+      "SpecificEffects": ""
+    },
+    "301407": {
+      "name": "超距问候",
+      "describe": "",
+      "SpecificEffects": "<color=#F28341>[贝尔莎]</color>使用狙击步枪攻击<color=#F74848>4</color>格以外的单位时，每超过<color=#F74848>1</color>格，最终伤害提升<color=#F74848>5%</color>，最多<color=#F74848>15%</color>"
+    },
+    "301408": {
+      "name": "贝尔莎强袭",
+      "describe": "使用狙击步枪攻击单个目标，造成<color=#F74848>1.35</color>倍伤害，攻击前可以进行<buf ID=900014>[瞄准]</buf>；每消耗<color=#F74848>2</color>层<buf ID=3014508>[干劲]</buf>可额外攻击<color=#F74848>1</color>次，优先命中相同的部位，每次额外攻击伤害衰减<color=#F74848>15%</color>，最多衰减<color=#F74848>60%</color>",
+      "SpecificEffects": ""
+    }
+  },
+  "neuralPassives": {
+    "300011": {
+      "name": "狙击战2",
+      "SpecificEffects": "<buf ID=3000011>[狙击战1]</buf>在击破部位后即可发动"
+    },
+    "300012": {
+      "name": "动力革新1",
+      "SpecificEffects": "AP的回复值<color=#F74848>+1</color>"
+    },
+    "300013": {
+      "name": "AP优化1",
+      "SpecificEffects": "AP的初始值<color=#F74848>+1</color>"
+    },
+    "300021": {
+      "name": "狙击战3",
+      "SpecificEffects": "发动<buf ID=3000011>[狙击战1]</buf>的<buf ID=900004>[再攻击]</buf>时，攻击前可以移动<color=#F74848>2</color>格"
+    },
+    "300022": {
+      "name": "动力革新2",
+      "SpecificEffects": "击破部位时，战后回复<color=#F74848>1</color>AP，每回合最多发动<color=#F74848>1</color>次"
+    },
+    "300023": {
+      "name": "AP优化2",
+      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+    },
+    "301231": {
+      "name": "追猎标记1",
+      "SpecificEffects": "使用射击武器主动攻击击破部位时，根据部位的类型获得不同<buf ID=900141>[追猎增益]</buf>，每回合最多发动<color=#F74848>2</color>次"
+    },
+    "300032": {
+      "name": "AP优化3",
+      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+    },
+    "300033": {
+      "name": "狙击战4",
+      "SpecificEffects": "<buf ID=900004>[再攻击]</buf>每回合可发动的次数<color=#F74848>+1</color>"
+    },
+    "301234": {
+      "name": "追猎标记2",
+      "SpecificEffects": "使用射击武器主动攻击时，若击毁目标，可额外移动<color=#F74848>3</color>格"
+    },
+    "301235": {
+      "name": "追猎标记3",
+      "SpecificEffects": "<buf ID=900142>[追猎标记1]</buf>每回合不再有发动次数限制"
+    },
+    "301236": {
+      "name": "追猎标记4",
+      "SpecificEffects": "行动开始时，随机获得<color=#F74848>1</color>种未获得的<buf ID=900141>[追猎增益]</buf>效果"
+    },
+    "301441": {
+      "name": "我是传奇1",
+      "SpecificEffects": "攻击<terrian ID=3014501 />范围内的敌机时，暴击率提升<color=#F74848>20%</color>，暴击伤害提升<color=#F74848>10%</color>"
+    },
+    "300042": {
+      "name": "AP优化4",
+      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+    },
+    "300043": {
+      "name": "动力革新3",
+      "SpecificEffects": "击毁目标时，战后额外回复<color=#F74848>1</color>AP，每回合最多发动<color=#F74848>2</color>次"
+    },
+    "301444": {
+      "name": "我是传奇2",
+      "SpecificEffects": "使用狙击步枪攻击<color=#F74848>4</color>格以外的单位时技能伤害倍率提升<color=#F74848>0.15</color>，且普通攻击可以进行<buf ID=900014>[瞄准]</buf>"
+    },
+    "301445": {
+      "name": "我是传奇3",
+      "SpecificEffects": "<buf ID=900002>[协力攻击]</buf>每回合可发动<color=#F74848>5</color>次，<buf ID=3014508>[干劲]</buf>层数上限提升至<color=#F74848>8</color>层"
+    },
+    "301446": {
+      "name": "我是传奇4",
+      "SpecificEffects": "携带<buf ID=3014505>[宿敌]</buf>的敌机，若存活超过<color=#F74848>1</color>回合，下回合开始，<color=#F28341>[贝尔莎]</color>主动攻击该目标时，无视目标<buf ID=900160>[常规减伤效果]</buf>并施加<buf ID=3014464>[全局修理效果降低]</buf>"
+    }
+  }
+}

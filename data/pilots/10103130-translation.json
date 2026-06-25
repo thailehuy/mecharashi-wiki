@@ -1,0 +1,131 @@
+{
+  "PilotName": "迪恩",
+  "RealName": "迪恩·奈特",
+  "Gender": "Male",
+  "Profession": "Striker",
+  "Occupation": "格斗家",
+  "Talent0_2Ability": {
+    "name": "勇气迸发",
+    "SpecificEffects": "对战中击破部位时获得<color=#F74848>1</color>层<buf ID=1013503>[气力]</buf>，击毁目标时额外获得<color=#F74848>1</color>层<buf ID=1013503>[气力]</buf>，<buf ID=1013503>[气力]</buf>可叠加<color=#F74848>10</color>层，行动结束时扣除<color=#F74848>1</color>层<buf ID=1013503>[气力]</buf>"
+  },
+  "Talent3_5Ability": {
+    "name": "勇气迸发",
+    "SpecificEffects": "对战中击破部位时获得<color=#F74848>1</color>层<buf ID=1013503>[气力]</buf>，击毁目标时额外获得<color=#F74848>1</color>层<buf ID=1013503>[气力]</buf>，<buf ID=1013503>[气力]</buf>可叠加<color=#F74848>10</color>层，行动结束时扣除<color=#F74848>1</color>层<buf ID=1013503>[气力]</buf>；\n使用电锯攻击时，根据连击数无视目标护甲，每<color=#F74848>1</color>连击数无视<color=#F74848>7.5%</color>护甲，攻击后重置"
+  },
+  "skills": {
+    "100001": {
+      "name": "运动战1",
+      "describe": "",
+      "SpecificEffects": "击破部位后可发动<buf ID=900004>[再攻击]</buf>，攻击前无法移动，每回合最多发动<color=#F74848>2</color>次"
+    },
+    "101302": {
+      "name": "气势",
+      "describe": "",
+      "SpecificEffects": "遭受攻击对战时，若无法反击时，遭受伤害降低<color=#F74848>10%</color>，并额外获得<color=#F74848>1</color>层<buf ID=1013503>[气力]</buf>"
+    },
+    "101303": {
+      "name": "毅力",
+      "describe": "",
+      "SpecificEffects": "任意部位遭受过量伤害时将触发<buf ID=900003>[不屈]</buf>，锁定至<color=#F74848>1</color>点耐久，该效果间隔<color=#F74848>3</color>回合才可再次发动"
+    },
+    "101304": {
+      "name": "热血一击",
+      "describe": "使用电锯攻击单个目标，造成<color=#F74848>1.3</color>倍伤害，必定攻击耐久值最低的部位，<buf ID=1013503>[气力]</buf>层数大于等于<color=#F74848>4</color>时，额外<color=#F74848>+3</color>次连击数",
+      "SpecificEffects": ""
+    },
+    "101305": {
+      "name": "魄力",
+      "describe": "使自身回复<color=#F74848>1</color>AP，并额外获得<color=#F74848>4</color>层<buf ID=1013503>[气力]</buf>，然后可以使用剩余移动力继续行动",
+      "SpecificEffects": ""
+    },
+    "101306": {
+      "name": "魂袭",
+      "describe": "使用电锯攻击单个目标，造成<color=#F74848>1.6</color>倍伤害，优先攻击耐久值不满的部位，<buf ID=1013503>[气力]</buf>层数大于等于<color=#F74848>8</color>时，会连续攻击<color=#F74848>2</color>次，第<color=#F74848>2</color>次攻击造成<color=#F74848>0.6</color>倍伤害",
+      "SpecificEffects": ""
+    },
+    "101307": {
+      "name": "突击之刻",
+      "describe": "",
+      "SpecificEffects": "行动开始时，若自身周围<color=#F74848>3</color>格内没有敌机，获得<buf ID=7100901>[移动力提升]</buf>，持续<color=#F74848>1</color>回合"
+    },
+    "101308": {
+      "name": "此为奇迹",
+      "describe": "使自身获得<color=#F74848>3</color>层<buf ID=1013503>[气力]</buf>，<buf ID=7102005>[遭受伤害降低III]</buf>，<buf ID=7100305>[伤害提升Ⅲ]</buf>，<buf ID=7100901>[移动力提升]</buf>，持续<color=#F74848>1</color>回合，然后可以使用完整移动力继续行动",
+      "SpecificEffects": ""
+    }
+  },
+  "neuralPassives": {
+    "100011": {
+      "name": "运动战2",
+      "SpecificEffects": "发动<buf ID=900004>[再攻击]</buf>时，攻击前可以移动<color=#F74848>2</color>格"
+    },
+    "100012": {
+      "name": "动力革新1",
+      "SpecificEffects": "AP的回复值<color=#F74848>+1</color>"
+    },
+    "100013": {
+      "name": "AP优化1",
+      "SpecificEffects": "AP的初始值<color=#F74848>+1</color>"
+    },
+    "100021": {
+      "name": "运动战3",
+      "SpecificEffects": "击毁目标后可发动<buf ID=900005>[再行动]</buf>，使用完整移动力移动"
+    },
+    "100022": {
+      "name": "动力革新2",
+      "SpecificEffects": "击破部位时，战后回复<color=#F74848>1</color>AP，每回合最多发动<color=#F74848>1</color>次"
+    },
+    "100023": {
+      "name": "AP优化2",
+      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+    },
+    "100031": {
+      "name": "穷追猛打1",
+      "SpecificEffects": "使用格斗武器主动攻击时有<color=#F74848>20%</color>的概率发动，在敌机攻击结束后发动<buf ID=900001>[追击]</buf>，造成<color=#F74848>0.5</color>倍伤害"
+    },
+    "100032": {
+      "name": "AP优化3",
+      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+    },
+    "100033": {
+      "name": "运动战4",
+      "SpecificEffects": "<buf ID=900004>[再攻击]</buf>或<buf ID=900005>[再行动]</buf>每回合可发动的次数<color=#F74848>+1</color>"
+    },
+    "100034": {
+      "name": "穷追猛打2",
+      "SpecificEffects": "主动攻击前每移动<color=#F74848>1</color>格，发动<buf ID=900001>[追击]</buf>的概率提升<color=#F74848>6%</color>，最多<color=#F74848>30%</color>"
+    },
+    "100035": {
+      "name": "穷追猛打3",
+      "SpecificEffects": "<buf ID=1000311>[穷追猛打1]</buf>触发的<buf ID=900001>[追击]</buf>的伤害倍率提升至<color=#F74848>0.75</color>倍"
+    },
+    "100036": {
+      "name": "穷追猛打4",
+      "SpecificEffects": "发动<buf ID=900001>[追击]</buf>时，优先命中耐久值最低的部位"
+    },
+    "101341": {
+      "name": "斗志昂扬1",
+      "SpecificEffects": "<buf ID=1013503>[气力]</buf>大于等于<color=#F74848>3</color>层时，命中率提升<color=#F74848>10%</color>"
+    },
+    "100042": {
+      "name": "AP优化4",
+      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+    },
+    "100043": {
+      "name": "动力革新3",
+      "SpecificEffects": "击毁目标时，战后额外回复<color=#F74848>1</color>AP，每回合最多发动<color=#F74848>2</color>次"
+    },
+    "101344": {
+      "name": "斗志昂扬2",
+      "SpecificEffects": "<buf ID=1013503>[气力]</buf>大于等于<color=#F74848>5</color>层时，暴击率提升<color=#F74848>15%</color>"
+    },
+    "101345": {
+      "name": "斗志昂扬3",
+      "SpecificEffects": "<buf ID=1013503>[气力]</buf>上限变为<color=#F74848>15</color>层"
+    },
+    "101346": {
+      "name": "斗志昂扬4",
+      "SpecificEffects": "行动结束时，<buf ID=1013503>[气力]</buf>不再会被扣除"
+    }
+  }
+}

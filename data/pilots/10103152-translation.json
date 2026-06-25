@@ -1,0 +1,131 @@
+{
+  "PilotName": "弗雷姬塔",
+  "RealName": "弗雷姬塔·奥伊萨斯",
+  "Gender": "Female",
+  "Profession": "Assault",
+  "Occupation": "突击手",
+  "Talent0_2Ability": {
+    "name": "伽蓝频伽",
+    "SpecificEffects": "装备两把突击武器时，两把武器共享射程；\n使用任意突击武器主动攻击后，可额外移动<color=#F74848>3</color>格"
+  },
+  "Talent3_5Ability": {
+    "name": "伽蓝频伽",
+    "SpecificEffects": "装备两把突击武器时，两把武器共享射程和最佳射程；\n使用任意突击武器主动攻击后，可额外移动<color=#F74848>3</color>格；\n机枪、霰弹枪、喷火器的<buf ID=900011>[最佳射程]</buf>扩大<color=#F74848>1</color>格"
+  },
+  "skills": {
+    "200001": {
+      "name": "协同作战1",
+      "describe": "",
+      "SpecificEffects": "配合友军，使用突击或射击武器对友军攻击的目标发动<buf ID=900002>[协力攻击]</buf>，造成<color=#F74848>0.2</color>倍伤害，每回合最多发动<color=#F74848>1</color>次"
+    },
+    "700057": {
+      "name": "先发优势",
+      "describe": "",
+      "SpecificEffects": "主动攻击对战时，暴击率提升<color=#F74848>15%</color>"
+    },
+    "201603": {
+      "name": "连战协议",
+      "describe": "",
+      "SpecificEffects": "获得增益效果时，持续回合<color=#F74848>+1</color>"
+    },
+    "201604": {
+      "name": "迅步",
+      "describe": "腿部完好时可发动，选择范围内<color=#F74848>1</color>格空地，跳跃至选中地格，可选范围与自身当前移动力相同，之后可发动<buf ID=900004>[再攻击]</buf>，攻击前无法移动；\n击毁目标时，技能冷却回合数额外<color=#F74848>-1</color>",
+      "SpecificEffects": ""
+    },
+    "201605": {
+      "name": "破影掠袭",
+      "describe": "",
+      "SpecificEffects": "主动攻击对战时，若连击数大于等于<color=#F74848>12</color>次，目标反击时遭受伤害降低<color=#F74848>20%</color>"
+    },
+    "201606": {
+      "name": "穿心连射",
+      "describe": "使用两把突击武器攻击单个目标，造成<color=#F74848>2×0.75</color>倍伤害，战后获得<color=#F74848>1</color>个随机增益效果，持续<color=#F74848>2</color>回合",
+      "SpecificEffects": ""
+    },
+    "201607": {
+      "name": "无尽追猎",
+      "describe": "",
+      "SpecificEffects": "主动攻击对战时，若目标无法反击，战后获得<color=#F74848>1</color>层<buf ID=2016503>[双枪节能]</buf>，可叠加<color=#F74848>3</color>层，每回合最多触发<color=#F74848>1</color>次"
+    },
+    "201608": {
+      "name": "绯红轮舞",
+      "describe": "使用两把突击武器攻击单个目标，造成<color=#F74848>2×0.85</color>倍伤害；装备霰弹枪、机枪、喷火器时，战后分别获得<buf ID=2016085>[轮舞·霰弹枪]</buf>、<buf ID=2016087>[轮舞·机枪]</buf>、<buf ID=2016080>[轮舞·喷火器]</buf>，持续<color=#F74848>2</color>回合",
+      "SpecificEffects": ""
+    }
+  },
+  "neuralPassives": {
+    "200011": {
+      "name": "协同作战2",
+      "SpecificEffects": "<buf ID=2000011>[协同作战1]</buf>每回合可发动的次数<color=#F74848>+1</color>"
+    },
+    "200012": {
+      "name": "动力革新1",
+      "SpecificEffects": "AP的回复值<color=#F74848>+1</color>"
+    },
+    "200013": {
+      "name": "AP优化1",
+      "SpecificEffects": "AP的初始值<color=#F74848>+1</color>"
+    },
+    "200021": {
+      "name": "协同作战3",
+      "SpecificEffects": "使<buf ID=2000011>[协同作战1]</buf>触发的<buf ID=900002>[协力攻击]</buf>伤害倍率提升至<color=#F74848>0.3</color>倍"
+    },
+    "200022": {
+      "name": "动力革新2",
+      "SpecificEffects": "击破部位时，战后回复<color=#F74848>1</color>AP，每回合最多发动<color=#F74848>1</color>次"
+    },
+    "200023": {
+      "name": "AP优化2",
+      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+    },
+    "200031": {
+      "name": "完美机位1",
+      "SpecificEffects": "解锁突击武器的<buf ID=900011>[最佳射程]</buf>，与位于<buf ID=900011>[最佳射程]</buf>的目标对战时，最终伤害提升<color=#F74848>15%</color>"
+    },
+    "200032": {
+      "name": "AP优化3",
+      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+    },
+    "200033": {
+      "name": "自适应作战1",
+      "SpecificEffects": "行动结束时，若本回合未主动攻击，则可以额外移动<color=#F74848>2</color>格"
+    },
+    "200034": {
+      "name": "完美机位2",
+      "SpecificEffects": "与位于<buf ID=900011>[最佳射程]</buf>的目标对战时，命中率提升<color=#F74848>12%</color>"
+    },
+    "200035": {
+      "name": "完美机位3",
+      "SpecificEffects": "与位于<buf ID=900011>[最佳射程]</buf>的目标对战时，暴击率提升<color=#F74848>15%</color>"
+    },
+    "200036": {
+      "name": "完美机位4",
+      "SpecificEffects": "与位于<buf ID=900011>[最佳射程]</buf>的目标对战时，<buf ID=2000311>[完美机位1]</buf>效果提升至<color=#F74848>30%</color>"
+    },
+    "201641": {
+      "name": "鹰隼之势1",
+      "SpecificEffects": "使用单手突击武器发动主动攻击时，战后自身获得<color=#F74848>1</color>层<buf ID=2016503>[双枪节能]</buf>，可叠加<color=#F74848>3</color>层，每回合最多触发<color=#F74848>1</color>次"
+    },
+    "200042": {
+      "name": "AP优化4",
+      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+    },
+    "200043": {
+      "name": "自适应作战2",
+      "SpecificEffects": "主动攻击前如果没有移动过，可发动<buf ID=900004>[再攻击]</buf>，攻击前无法移动，每回合最多发动<color=#F74848>1</color>次\n无法与同类<buf ID=900004>[再攻击]</buf>效果重复触发"
+    },
+    "201644": {
+      "name": "鹰隼之势2",
+      "SpecificEffects": "<buf ID=2016410>[鹰隼之势1]</buf>每回合每种单手突击武器都可以触发<color=#F74848>1</color>次"
+    },
+    "201645": {
+      "name": "鹰隼之势3",
+      "SpecificEffects": "使用两把突击武器攻击时，战前获得<buf ID=2016452>[鹰隼之势]</buf>，可叠加<color=#F74848>4</color>层"
+    },
+    "201646": {
+      "name": "鹰隼之势4",
+      "SpecificEffects": "使用两把突击武器发动主动攻击时，两把武器皆可触发<buf ID=2016410>[鹰隼之势1]</buf>获得<buf ID=2016503>[双枪节能]</buf>"
+    }
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "PilotName": "Bella",
+  "RealName": "Berguzar Dulov",
+  "Gender": "Female",
+  "Profession": "Gunner",
+  "Occupation": "Sniper",
+  "Talent0_2Ability": {
+    "name": "Shadow of Calamity",
+    "SpecificEffects": "At the end of the action, if there are no enemies within the adjacent (<color=#F74848>2 tiles</color>) area, grant self <buf ID=900033>[Stealth I]</buf> status, which lasts for <color=#F74848>2</color> turns, with a trigger interval of <color=#F74848>2</color> turns."
+  },
+  "Talent3_5Ability": {
+    "name": "Shadow of Calamity",
+    "SpecificEffects": "At the end of the action, if there are no enemies within the adjacent (<color=#F74848>2</color> tiles) area, grant self <buf ID=3004502>[Stealth I]</buf> status, which lasts for <color=#F74848>2</color> turns, with a trigger interval of <color=#F74848>2</color> turns.\nCrit DMG <color=#F74848>+10%</color>."
+  },
+  "skills": {
+    "300001": {
+      "name": "Sniper Warfare 1",
+      "describe": "",
+      "SpecificEffects": "When destroying a target, <buf ID=900004>[Re-ATK]</buf> can be triggered, effective up to <color=#F74848>2</color> times per turn. Unable to move before attacking."
+    },
+    "300402": {
+      "name": "Concealer",
+      "describe": "",
+      "SpecificEffects": "When in <buf ID=900033>[Stealth]</buf> status, Crit Rate <color=#F74848>+15%</color>."
+    },
+    "300403": {
+      "name": "Dark Arrow",
+      "describe": "Uses Sniper Rifle to shoot a target, dealing <color=#F74848>1.35x</color> DMG, and does not access <buf ID=900014>[Aiming]</buf> mode before attacking. After combat, the <buf ID=3004502>[Stealth I]</buf> status can be retained, and its duration will be refreshed.",
+      "SpecificEffects": ""
+    },
+    "300404": {
+      "name": "Find Crack",
+      "describe": "",
+      "SpecificEffects": "For each damaged part on the target, Crit DMG <color=#F74848>+10%</color>."
+    },
+    "700043": {
+      "name": "Excellent status",
+      "describe": "",
+      "SpecificEffects": "When self's HP is full, DMG <color=#F74848>+15%</color>."
+    },
+    "300406": {
+      "name": "Guerrilla",
+      "describe": "Uses Sniper Rifle to shoot a target, dealing <color=#F74848>1.3x</color> DMG. Access <buf ID=900014>[Aiming]</buf> mode before attacking. If there are no enemies within the adjacent (<color=#F74848>2</color> tiles) area, gain <buf ID=3004502>[Stealth I]</buf> status. After combat, the <buf ID=3004502>[Stealth I]</buf> status can be retained, and its duration will be refreshed.",
+      "SpecificEffects": ""
+    },
+    "300407": {
+      "name": "Emergency Evacuation",
+      "describe": "",
+      "SpecificEffects": "When taking damage, if there are no enemies within the adjacent (<color=#F74848>2</color> tiles) area, gain <buf ID=900033>[Stealth]</buf> status after combat, with a trigger interval of <color=#F74848>2</color> turns."
+    },
+    "300408": {
+      "name": "Breath Hold",
+      "describe": "Use Sniper Rifle to shoot a target, dealing <color=#F74848>1.4x</color> DMG. Access <buf ID=900014>[Aiming]</buf> mode before attacking. When in <buf ID=3004502>[Stealth I]</buf> status, the Crit Rate is increased to <color=#F74848>100%</color>. After combat, the <buf ID=3004502>[Stealth I]</buf> status can be retained, and its duration will be refreshed.",
+      "SpecificEffects": ""
+    }
+  },
+  "neuralPassives": {
+    "300011": {
+      "name": "Sniper Warfare 2",
+      "SpecificEffects": "After breaking a part, trigger <buf ID=900004>[Re-ATK]</buf>."
+    },
+    "300012": {
+      "name": "Power Innovation 1",
+      "SpecificEffects": "AP Regen <color=#F74848>+1</color>."
+    },
+    "300013": {
+      "name": "AP Optimization 1",
+      "SpecificEffects": "Initial AP <color=#F74848>+1</color>."
+    },
+    "300021": {
+      "name": "Sniper Warfare 3",
+      "SpecificEffects": "Upon triggering <buf ID=900004>[Re-ATK]</buf>, allows movement of <color=#F74848>2</color> tiles before attacking."
+    },
+    "300022": {
+      "name": "Power Innovation 2",
+      "SpecificEffects": "When breaking a part, restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>1</color> time per turn."
+    },
+    "300023": {
+      "name": "AP Optimization 2",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
+    },
+    "300031": {
+      "name": "Forbidden Zone 1",
+      "SpecificEffects": "With a Ranged Weapon, launch <buf ID=900013>[Vigilant Shot]</buf> before the enemy attack within range, dealing <color=#F74848>0.35x</color> DMG, effective up to <color=#F74848>1</color> time per turn."
+    },
+    "300032": {
+      "name": "AP Optimization 3",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
+    },
+    "300033": {
+      "name": "Sniper Warfare 4",
+      "SpecificEffects": "<buf ID=900004>[Re-ATK]</buf>'s effective times per turn <color=#F74848>+1</color>."
+    },
+    "300034": {
+      "name": "Forbidden Zone 2",
+      "SpecificEffects": "<buf ID=900013>[Vigilant Shot]</buf>'s effective times per turn <color=#F74848>+1</color>."
+    },
+    "300035": {
+      "name": "Forbidden Zone 3",
+      "SpecificEffects": "<buf ID=900013>[Vigilant Shot]</buf>'s damage multiplier is increased to <color=#F74848>0.5</color>."
+    },
+    "300036": {
+      "name": "Forbidden Zone 4",
+      "SpecificEffects": "<buf ID=900013>[Vigilant Shot]</buf> is launched against an enemy that has not attacked. Targets the part with the lowest HP."
+    },
+    "300441": {
+      "name": "Pathfinder 1",
+      "SpecificEffects": "The force removal range of <buf ID=3004501>[Shadow of Calamity]</buf> has been reduced to the adjacent (<color=#F74848>1</color> tile) area."
+    },
+    "300042": {
+      "name": "AP Optimization 4",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
+    },
+    "300043": {
+      "name": "Power Innovation 3",
+      "SpecificEffects": "When destroying a target, additionally restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>2</color> times per turn."
+    },
+    "300444": {
+      "name": "Pathfinder 2",
+      "SpecificEffects": "When in <buf ID=900033>[Stealth]</buf> status, DMG Taken (AoE) <color=#F74848>-30%</color>."
+    },
+    "300445": {
+      "name": "Pathfinder 3",
+      "SpecificEffects": "When <buf ID=3004501>[Shadow of Calamity]</buf> is forcibly removed, gain <buf ID=7100207>[Dodge Rate UP IV]</buf>, lasting for <color=#F74848>1</color> turn."
+    },
+    "300446": {
+      "name": "Pathfinder 4",
+      "SpecificEffects": "Enable <buf ID=3004501>[Shadow of Calamity]</buf> to trigger again after <color=#F74848>1</color> turn."
+    }
+  }
+}

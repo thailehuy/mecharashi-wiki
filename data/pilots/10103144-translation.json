@@ -1,0 +1,131 @@
+{
+  "PilotName": "维娜",
+  "RealName": "维娜·卢诺",
+  "Gender": "Female",
+  "Profession": "Defender",
+  "Occupation": "守护者",
+  "Talent0_2Ability": {
+    "name": "罪业信条",
+    "SpecificEffects": "可额外装备电磁炮，电磁炮负重<color=#F74848>-360</color>；可以使用指令<skill mainSkill=601050>[复仇打击]</skill>；遭受主动攻击时，回复<color=#F74848>1</color>发电磁炮弹药，并对敌机施加<buf ID=6010502>[磁能锁定]</buf>"
+  },
+  "Talent3_5Ability": {
+    "name": "罪业信条",
+    "SpecificEffects": "可额外装备电磁炮，电磁炮负重<color=#F74848>-360</color>；可以使用指令<skill mainSkill=601050>[复仇打击]</skill>；遭受主动攻击时，回复<color=#F74848>1</color>发电磁炮弹药，并对敌机施加<buf ID=6010502>[磁能锁定]</buf>；\n场上每有<color=#F74848>1</color>台敌机携带<buf ID=6010502>[磁能锁定]</buf>，自身伤害提升<color=#F74848>5%</color>，遭受伤害降低<color=#F74848>5%</color>，最多<color=#F74848>20%</color>；<buf ID=900022>[援护防御]</buf>可以额外抵挡敌方导弹和格斗攻击"
+  },
+  "skills": {
+    "600001": {
+      "name": "据守作战1",
+      "describe": "",
+      "SpecificEffects": "发动<buf ID=900022>[援护防御]</buf>，替相邻<color=#F74848>1</color>格的友军抵挡突击与射击武器的攻击，每回合最多发动<color=#F74848>2</color>次"
+    },
+    "601002": {
+      "name": "无患",
+      "describe": "",
+      "SpecificEffects": "行动结束时，为自身装填<color=#F74848>1</color>发电磁炮弹药"
+    },
+    "601003": {
+      "name": "磁障",
+      "describe": "",
+      "SpecificEffects": "遭受伤害降低<color=#F74848>12.5%</color>，若敌机携带<buf ID=6010502>[磁能锁定]</buf>，额外降低<color=#F74848>12.5%</color>"
+    },
+    "601004": {
+      "name": "单方协议",
+      "describe": "使用电磁炮攻击周围<color=#F74848>5</color>格内的<color=#F74848>1</color>台敌机，对其<range type=1>1格十字</range>范围内的所有敌机造成<color=#F74848>0.5</color>倍范围伤害，战后为所有目标施加<buf ID=6010502>[磁能锁定]</buf>，之后可以发动<buf ID=900004>[再攻击]</buf>，攻击前无法移动；每回合最多使用<color=#F74848>1</color>次",
+      "SpecificEffects": ""
+    },
+    "601005": {
+      "name": "电涌",
+      "describe": "",
+      "SpecificEffects": "使用盾牌攻击携带<buf ID=6010502>[磁能锁定]</buf>的目标时，战前对其施加<buf ID=3006442>[短路II]</buf>和<buf ID=7101508>[移动阻碍Ⅱ]</buf>，持续<color=#F74848>2</color>回合"
+    },
+    "600706": {
+      "name": "处决",
+      "describe": "",
+      "SpecificEffects": "对战时若目标有耐久值低于<color=#F74848>50%</color>的部位，<buf ID=900001>[追击]</buf>与<buf ID=900028>[反击追击]</buf>概率提升<color=#F74848>50%</color>"
+    },
+    "601007": {
+      "name": "同仇",
+      "describe": "",
+      "SpecificEffects": "耐久值低于<color=#F74848>30%</color>的友军遭受攻击对战时，可以无视距离发动<buf ID=900022>[援护防御]</buf>，每回合最多发动<color=#F74848>2</color>次"
+    },
+    "601008": {
+      "name": "卢诺之誓",
+      "describe": "替周围<color=#F74848>2</color>格的友军抵挡突击与射击武器的攻击，每回合最多发动<color=#F74848>2</color>次，持续<color=#F74848>2</color>回合；释放后使电磁炮弹药完全恢复，并可以原地<buf ID=900004>[再攻击]</buf>",
+      "SpecificEffects": ""
+    }
+  },
+  "neuralPassives": {
+    "600011": {
+      "name": "据守作战2",
+      "SpecificEffects": "发动<buf ID=900022>[援护防御]</buf>时，遭受伤害降低<color=#F74848>10%</color>"
+    },
+    "600012": {
+      "name": "防御特化1",
+      "SpecificEffects": "反击伤害提升<color=#F74848>20%</color>"
+    },
+    "600013": {
+      "name": "AP优化1",
+      "SpecificEffects": "AP的初始值<color=#F74848>+1</color>"
+    },
+    "600021": {
+      "name": "据守作战3",
+      "SpecificEffects": "<buf ID=900022>[援护防御]</buf>每回合可发动的次数<color=#F74848>+1</color>"
+    },
+    "600022": {
+      "name": "防御特化2",
+      "SpecificEffects": "发动<buf ID=900022>[援护防御]</buf>时，战后回复<color=#F74848>1</color>AP，每回合最多发动<color=#F74848>1</color>次"
+    },
+    "600023": {
+      "name": "AP优化2",
+      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+    },
+    "600931": {
+      "name": "相转移1",
+      "SpecificEffects": "行动开始时，将所有完好的部位耐久百分比进行<buf ID=900089>[平衡]</buf>"
+    },
+    "600032": {
+      "name": "AP优化3",
+      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+    },
+    "600033": {
+      "name": "自适应作战1",
+      "SpecificEffects": "行动结束时，若本回合未主动攻击，则可以额外移动<color=#F74848>2</color>格"
+    },
+    "600934": {
+      "name": "相转移2",
+      "SpecificEffects": "<buf ID=900089>[平衡]</buf>后所有完好部位额外恢复<color=#F74848>10%</color>耐久值"
+    },
+    "600935": {
+      "name": "相转移3",
+      "SpecificEffects": "存在损毁部位时，遭受伤害降低<color=#F74848>15%</color>"
+    },
+    "600936": {
+      "name": "相转移4",
+      "SpecificEffects": "遭受攻击后，若耐久值低于<color=#F74848>50%</color>，触发<buf ID=900089>[平衡]</buf>，并修复<color=#F74848>1</color>个损毁部位，间隔<color=#F74848>3</color>回合后可再次发动"
+    },
+    "601041": {
+      "name": "零和游戏1",
+      "SpecificEffects": "行动开始时，若场上存在携带<buf ID=6010502>[磁能锁定]</buf>的敌机，立即释放<skill mainSkill=601051>[复仇打击β]</skill>"
+    },
+    "600042": {
+      "name": "AP优化4",
+      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+    },
+    "600043": {
+      "name": "据守作战4",
+      "SpecificEffects": "<buf ID=900022>[援护防御]</buf>每回合不再有发动次数限制"
+    },
+    "601044": {
+      "name": "零和游戏2",
+      "SpecificEffects": "电磁炮弹仓容量<color=#F74848>+2</color>"
+    },
+    "601045": {
+      "name": "零和游戏3",
+      "SpecificEffects": "电磁炮伤害提升<color=#F74848>20%</color>"
+    },
+    "601046": {
+      "name": "零和游戏4",
+      "SpecificEffects": "<skill mainSkill=601050>[复仇打击]</skill>和<skill mainSkill=601051>[复仇打击β]</skill>的基础攻击次数<color=#F74848>+1</color>"
+    }
+  }
+}

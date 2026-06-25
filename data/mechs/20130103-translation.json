@@ -1,0 +1,18 @@
+{
+  "name": "Blazer",
+  "introduce": "KX-066 Blazer\nThe \"Mobile Repair Station.\" A medium maintainer ST produced by Kamadar Corporation, featuring a unique assist system.\nThe prototype for this ST was the Kamadar engineering SL - KX-037, later improved by the machinist Champmathieu Favre and utilized by rebels. After the Dawnstar League confiscated this model, it was handed over to Kamadar for reverse engineering and optimization, further improving its armor level and terrain adaptability. It was then renamed, put into production, and put into use by the DLAF.",
+  "modules": {
+    "20114": {
+      "name": "Coordination Unit",
+      "SpecificEffects": "After performing active repairs, grant the <buf ID=7100305>[DMG UP III]</buf> effect to up to <color=#F74848>3</color> repair targets."
+    },
+    "30238": {
+      "name": "Repair Mod",
+      "SpecificEffects": "When performing active repairs, if the target's HP is below <color=#F74848>60%</color>, Repair AMT <color=#F74848>+18%</color>.\nRemove <color=#F74848>1</color> debuff after repairs."
+    },
+    "40084": {
+      "name": "Crit RES Mod",
+      "SpecificEffects": "Crit RES <color=#F74848>+10%</color>."
+    }
+  }
+}

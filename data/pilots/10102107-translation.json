@@ -1,0 +1,131 @@
+{
+  "PilotName": "Ana",
+  "RealName": "Anastasia Ebden",
+  "Gender": "Female",
+  "Profession": "Defender",
+  "Occupation": "Guardian",
+  "Talent0_2Ability": {
+    "name": "Frontline Tending",
+    "SpecificEffects": "When receiving active repairs, the Repair AMT for the part with the lowest HP <color=#F74848>+50%</color>, while the Repair AMT for other parts <color=#F74848>-10%</color>."
+  },
+  "Talent3_5Ability": {
+    "name": "Frontline Tending",
+    "SpecificEffects": "When receiving active repairs, the Repair AMT for the part with the lowest HP <color=#F74848>+50%</color>, while the Repair AMT for other parts <color=#F74848>-10%</color>.\nAfter receiving active repairs, gain DMG Taken <color=#F74848>-5%</color>, up to <color=#F74848>3</color> stacks, lasting for <color=#F74848>2</color> turns."
+  },
+  "skills": {
+    "600001": {
+      "name": "Entrenched 1",
+      "describe": "",
+      "SpecificEffects": "Trigger <buf ID=900022>[Guard]</buf> to protect adjacent (<color=#F74848>1</color> tile) allies from Assault and Ranged attacks, effective up to <color=#F74848>2</color> times per turn."
+    },
+    "600202": {
+      "name": "ODI System",
+      "describe": "Uses Machine Gun to attack a target, dealing <color=#F74848>1.15x</color> DMG. Before combat, gains <buf ID=7100601>[Armor UP I]</buf>, lasting <color=#F74848>1</color> turn.",
+      "SpecificEffects": ""
+    },
+    "700056": {
+      "name": "Well Maintained",
+      "describe": "",
+      "SpecificEffects": "When gaining buffs, the duration <color=#F74848>+1</color>."
+    },
+    "600204": {
+      "name": "Step Forward",
+      "describe": "Protects adjacent (<color=#F74848>2</color> tiles) allies from Assault and Ranged attacks, effective up to <color=#F74848>2</color> times per turn. Gains <buf ID=7100701>[Passive Repair]</buf>, effective <color=#F74848>2</color> times, lasting for <color=#F74848>1</color> turn.",
+      "SpecificEffects": ""
+    },
+    "600205": {
+      "name": "Seeking Excellence",
+      "describe": "",
+      "SpecificEffects": "For every <color=#F74848>1</color> buff carried, DMG Taken <color=#F74848>-5%</color>, up to <color=#F74848>15%</color>."
+    },
+    "600206": {
+      "name": "Hard Contact",
+      "describe": "Uses Machine Gun to attack a target, dealing <color=#F74848>1.25x</color> damage. Before combat, gains <buf ID=7100601>[Armor UP I]</buf> and <buf ID=6002042>[Passive Repair]</buf>, each effective <color=#F74848>2</color> times and lasting for <color=#F74848>1</color> turn.",
+      "SpecificEffects": ""
+    },
+    "600207": {
+      "name": "Targeted Repair",
+      "describe": "",
+      "SpecificEffects": "When receiving active repairs, Received Repair AMT <color=#F74848>+10%</color>, and self gains immunity to the <buf ID=4003064>[Repair Disabled]</buf> effect."
+    },
+    "600208": {
+      "name": "Battlefield Fortress",
+      "describe": "Uses Machine Gun to attack a target, dealing <color=#F74848>1.25x</color> DMG. Before combat, gains <buf ID=6002081>[Battlefield Fortress]</buf>.",
+      "SpecificEffects": ""
+    }
+  },
+  "neuralPassives": {
+    "600011": {
+      "name": "Entrenched 2",
+      "SpecificEffects": "When performing <buf ID=900022>[Guard]</buf>, DMG Taken <color=#F74848>-10%</color>."
+    },
+    "600012": {
+      "name": "Armor Specialization 1",
+      "SpecificEffects": "DMG <color=#F74848>+20%</color> on Retaliation."
+    },
+    "600013": {
+      "name": "AP Optimization 1",
+      "SpecificEffects": "Initial AP <color=#F74848>+1</color>."
+    },
+    "600021": {
+      "name": "Entrenched 3",
+      "SpecificEffects": "<buf ID=900022>[Guard]</buf>'s effective times per turn <color=#F74848>+1</color>."
+    },
+    "600022": {
+      "name": "Armor Specialization 2",
+      "SpecificEffects": "When performing <buf ID=900022>[Guard]</buf>, restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>1</color> time per turn."
+    },
+    "600023": {
+      "name": "AP Optimization 2",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
+    },
+    "600031": {
+      "name": "Indestructible 1",
+      "SpecificEffects": "When the Arm suffers overdamage, trigger <buf ID=900003>[Guts]</buf>, locking to <color=#F74848>1</color> HP, effective <color=#F74848>1</color> time per battle."
+    },
+    "600032": {
+      "name": "AP Optimization 3",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
+    },
+    "600033": {
+      "name": "Adaptive Warfare 1",
+      "SpecificEffects": "At the end of the action, if an Active Attack was not initiated this turn, an extra <color=#F74848>2</color> tiles can be moved."
+    },
+    "600034": {
+      "name": "Indestructible 2",
+      "SpecificEffects": "The part that triggers <buf ID=900003>[Guts]</buf> restores <color=#F74848>35%</color> of its HP after combat."
+    },
+    "600035": {
+      "name": "Indestructible 3",
+      "SpecificEffects": "Make <buf ID=900003>[Guts]</buf> able to trigger again after <color=#F74848>3</color> turns, with no effective time limit for each battle."
+    },
+    "600036": {
+      "name": "Indestructible 4",
+      "SpecificEffects": "When any part suffers overdamage, trigger <buf ID=900003>[Guts]</buf>."
+    },
+    "600241": {
+      "name": "Hero 1",
+      "SpecificEffects": "When receiving active repairs, the Repair AMT for the part with the lowest HP <color=#F74848>+30%</color>."
+    },
+    "600042": {
+      "name": "AP Optimization 4",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
+    },
+    "600043": {
+      "name": "Entrenched 4",
+      "SpecificEffects": "<buf ID=900022>[Guard]</buf> can now be triggered an unlimited number of times per turn."
+    },
+    "600244": {
+      "name": "Hero 2",
+      "SpecificEffects": "After receiving active repairs, grant <buf ID=6002042>[Passive Repair]</buf>, effective <color=#F74848>1</color> time, lasting for <color=#F74848>1</color> turn."
+    },
+    "600245": {
+      "name": "Hero 3",
+      "SpecificEffects": "When receiving active repairs, <color=#F74848>1</color> additional damaged part can be repaired."
+    },
+    "600246": {
+      "name": "Hero 4",
+      "SpecificEffects": "When receiving active repairs, all parts gain an additional effect of Repair AMT <color=#F74848>+20%</color>."
+    }
+  }
+}

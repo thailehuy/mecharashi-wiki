@@ -1,0 +1,18 @@
+{
+  "name": "Aurora",
+  "introduce": "LTX-201P Aurora\nA medium maintainer ST developed by Laniakea. Its performance is on par with the DL's Blazer and it enjoys a respectable reputation among the UNCS Border Forces.\nIt is equipped with the L1102-M propulsion system and has been specialized to carry a manipulator on its back, allowing it to maintain its balance while executing repair commands. The additional scanner can detect manipulator damage, enabling more precise repairs.\nCurrently, it is only deployed by the NDF, and there are no plans for commercialization.",
+  "modules": {
+    "20124": {
+      "name": "Lamination Unit",
+      "SpecificEffects": "After performing active repairs, any overflow repair amount will temporarily raise the HP cap by up to <color=#F74848>15%</color>."
+    },
+    "30248": {
+      "name": "Mass Repair Mod",
+      "SpecificEffects": "When executing Mass repair skills, Repair AMT <color=#F74848>+18%</color>.\nImmune to <buf ID=900046>[Active Skill Disabled]</buf>."
+    },
+    "40084": {
+      "name": "Crit RES Mod",
+      "SpecificEffects": "Crit RES <color=#F74848>+10%</color>."
+    }
+  }
+}

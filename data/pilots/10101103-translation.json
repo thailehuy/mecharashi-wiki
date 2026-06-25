@@ -1,0 +1,97 @@
+{
+  "PilotName": "Chloe",
+  "RealName": "Chloe Schmidt",
+  "Gender": "Female",
+  "Profession": "Mechanic",
+  "Occupation": "Machinist",
+  "Talent0_2Ability": {
+    "name": "Field Doctor",
+    "SpecificEffects": "When performing active repairs, Repair AMT <color=#F74848>+8%</color>."
+  },
+  "Talent3_5Ability": {
+    "name": "Field Doctor",
+    "SpecificEffects": "When performing active repairs, Repair AMT <color=#F74848>+10%</color>."
+  },
+  "skills": {
+    "500001": {
+      "name": "CEC 1",
+      "describe": "",
+      "SpecificEffects": "In cooperation with allies, launch a <buf ID=900002>[Link Attack]</buf> against the target, dealing <color=#F74848>0.2x</color> DMG, effective up to <color=#F74848>1</color> time per turn."
+    },
+    "500102": {
+      "name": "Armor Tending",
+      "describe": "",
+      "SpecificEffects": "After performing active repairs, grant <buf ID=7101601>[Armor Down Immunity]</buf> and <buf ID=7101604>[DMG Taken Immunity]</buf> to the target, lasting for <color=#F74848>2</color> turns."
+    },
+    "700019": {
+      "name": "Cross Repair",
+      "describe": "Restore the HP of all allies within a <range type=1>Cross (1 tile)</range> area, with the repair amount being <color=#F74848>1x</color> the Manipulator's Repair AMT. This can repair <color=#F74848>1</color> damaged part.",
+      "SpecificEffects": ""
+    },
+    "500104": {
+      "name": "Firearm Tending",
+      "describe": "",
+      "SpecificEffects": "After performing active repairs, grant <buf ID=7101606>[DMG Down Immunity]</buf> and <buf ID=7101603>[Hit Down Immunity]</buf> to the target, lasting for <color=#F74848>2</color> turns."
+    },
+    "500105": {
+      "name": "First Aid",
+      "describe": "",
+      "SpecificEffects": "When performing active repairs, if the target's HP is below <color=#F74848>30%</color>, Repair AMT <color=#F74848>+15%</color>."
+    },
+    "500106": {
+      "name": "Intensive Repair",
+      "describe": "Restore HP of all parts of an ST. The repair amount is <color=#F74848>2.3x</color> the Manipulator's Repair AMT. This skill can repair <color=#F74848>2</color> damaged parts.",
+      "SpecificEffects": ""
+    }
+  },
+  "neuralPassives": {
+    "500011": {
+      "name": "CEC 2",
+      "SpecificEffects": "<buf ID=900002>[Link Attack]</buf>'s effective times per turn <color=#F74848>+1</color>."
+    },
+    "500012": {
+      "name": "Part Maintenance 1",
+      "SpecificEffects": "After performing active repairs, dispel <color=#F74848>1</color> debuff."
+    },
+    "500013": {
+      "name": "AP Optimization 1",
+      "SpecificEffects": "Initial AP <color=#F74848>+1</color>."
+    },
+    "500021": {
+      "name": "CEC 3",
+      "SpecificEffects": "<buf ID=900002>[Link Attack]</buf>'s damage multiplier is increased to <color=#F74848>0.3</color>."
+    },
+    "500022": {
+      "name": "Part Maintenance 2",
+      "SpecificEffects": "AP Regen <color=#F74848>+1</color>."
+    },
+    "500023": {
+      "name": "AP Optimization 2",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
+    },
+    "500031": {
+      "name": "Emergency Repair 1",
+      "SpecificEffects": "At the end of the action, randomly select a single adjacent (<color=#F74848>1</color> tile) ally to perform <buf ID=900018>[Passive Repair]</buf>. The repair amount is <color=#F74848>0.6x</color> the Manipulator's Repair AMT and cannot repair damaged parts."
+    },
+    "500032": {
+      "name": "AP Optimization 3",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
+    },
+    "500033": {
+      "name": "Flexible Repair",
+      "SpecificEffects": "After performing active repairs, an additional <color=#F74848>2</color> tiles can be moved."
+    },
+    "500034": {
+      "name": "Emergency Repair 2",
+      "SpecificEffects": "<buf ID=900018>[Passive Repair]</buf> selects targets within the adjacent (<color=#F74848>2</color> tiles) area."
+    },
+    "500035": {
+      "name": "Emergency Repair 3",
+      "SpecificEffects": "<buf ID=900018>[Passive Repair]</buf>'s Repair AMT is now <color=#F74848>1x</color> that of the Manipulator."
+    },
+    "500036": {
+      "name": "Emergency Repair 4",
+      "SpecificEffects": "The number of targets that <buf ID=900018>[Passive Repair]</buf> can repair increases by <color=#F74848>1</color>."
+    }
+  }
+}

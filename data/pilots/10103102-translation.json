@@ -1,0 +1,131 @@
+{
+  "PilotName": "Dana",
+  "RealName": "Dana Yano",
+  "Gender": "Female",
+  "Profession": "Gunner",
+  "Occupation": "Sniper",
+  "Talent0_2Ability": {
+    "name": "Post-War Summary",
+    "SpecificEffects": "When breaking a part, restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>1</color> time per turn."
+  },
+  "Talent3_5Ability": {
+    "name": "Post-War Summary",
+    "SpecificEffects": "When a part is broken, restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>1</color> time per turn.\nWhen accessing <buf ID=900014>[Aiming]</buf> mode, Crit Rate <color=#F74848>+7.5%</color> and Crit DMG <color=#F74848>+7.5%</color>."
+  },
+  "skills": {
+    "300001": {
+      "name": "Sniper Warfare 1",
+      "describe": "",
+      "SpecificEffects": "When destroying a target, <buf ID=900004>[Re-ATK]</buf> can be triggered, effective up to <color=#F74848>2</color> times per turn. Unable to move before attacking."
+    },
+    "300302": {
+      "name": "2-Round Burst",
+      "describe": "Uses Sniper Rifle to shoot a target <color=#F74848>2</color> times, with each shot dealing <color=#F74848>0.8x</color> DMG. Does not access <buf ID=900014>[Aiming]</buf> mode before combat.",
+      "SpecificEffects": ""
+    },
+    "300303": {
+      "name": "Finishing Touch",
+      "describe": "",
+      "SpecificEffects": "When attacking a part with HP% lower than <color=#F74848>40%</color>, DMG <color=#F74848>+15%</color>."
+    },
+    "300304": {
+      "name": "Juiced",
+      "describe": "Gain <color=#F74848>1</color> AP and <buf ID=7100103>[Hit Rate UP II]</buf>, lasting for <color=#F74848>1</color> turn. Can continue the action with the remaining Movement.",
+      "SpecificEffects": ""
+    },
+    "300305": {
+      "name": "Apt Pupil",
+      "describe": "",
+      "SpecificEffects": "When attacking a part with full HP, DMG <color=#F74848>+15%</color>."
+    },
+    "300306": {
+      "name": "Swift Strike",
+      "describe": "Uses Sniper Rifle to attack a target, dealing <color=#F74848>1.3x</color> DMG. Before combat, access <buf ID=900014>[Aiming]</buf> mode. Ignores Large Shield's <buf ID=900027>[Target Shift]</buf> effect.",
+      "SpecificEffects": ""
+    },
+    "300307": {
+      "name": "Exemplary",
+      "describe": "",
+      "SpecificEffects": "Each turn, the AP cost of the 1st skill decreases by <color=#F74848>1</color>, with a minimum cost of <color=#F74848>1</color> AP."
+    },
+    "300308": {
+      "name": "Curtain Call",
+      "describe": "Uses Sniper Rifle to shoot a target <color=#F74848>2</color> times, with each shot dealing <color=#F74848>0.8x</color> DMG. Before combat, access <buf ID=900014>[Aiming]</buf> mode. The <color=#F74848>2nd</color> shot will hit a random part",
+      "SpecificEffects": ""
+    }
+  },
+  "neuralPassives": {
+    "300011": {
+      "name": "Sniper Warfare 2",
+      "SpecificEffects": "After breaking a part, trigger <buf ID=900004>[Re-ATK]</buf>."
+    },
+    "300012": {
+      "name": "Power Innovation 1",
+      "SpecificEffects": "AP Regen <color=#F74848>+1</color>."
+    },
+    "300013": {
+      "name": "AP Optimization 1",
+      "SpecificEffects": "Initial AP <color=#F74848>+1</color>."
+    },
+    "300021": {
+      "name": "Sniper Warfare 3",
+      "SpecificEffects": "Upon triggering <buf ID=900004>[Re-ATK]</buf>, allows movement of <color=#F74848>2</color> tiles before attacking."
+    },
+    "300022": {
+      "name": "Power Innovation 2",
+      "SpecificEffects": "When breaking a part, restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>1</color> time per turn."
+    },
+    "300023": {
+      "name": "AP Optimization 2",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
+    },
+    "300031": {
+      "name": "Forbidden Zone 1",
+      "SpecificEffects": "With a Ranged Weapon, launch <buf ID=900013>[Vigilant Shot]</buf> before the enemy attack within range, dealing <color=#F74848>0.35x</color> DMG, effective up to <color=#F74848>1</color> time per turn."
+    },
+    "300032": {
+      "name": "AP Optimization 3",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
+    },
+    "300033": {
+      "name": "Sniper Warfare 4",
+      "SpecificEffects": "<buf ID=900004>[Re-ATK]</buf>'s effective times per turn <color=#F74848>+1</color>."
+    },
+    "300034": {
+      "name": "Forbidden Zone 2",
+      "SpecificEffects": "<buf ID=900013>[Vigilant Shot]</buf>'s effective times per turn <color=#F74848>+1</color>."
+    },
+    "300035": {
+      "name": "Forbidden Zone 3",
+      "SpecificEffects": "<buf ID=900013>[Vigilant Shot]</buf>'s damage multiplier is increased to <color=#F74848>0.5</color>."
+    },
+    "300036": {
+      "name": "Forbidden Zone 4",
+      "SpecificEffects": "<buf ID=900013>[Vigilant Shot]</buf> is launched against an enemy that has not attacked. Targets the part with the lowest HP."
+    },
+    "300341": {
+      "name": "Cum Laude 1",
+      "SpecificEffects": "When in <buf ID=900014>[Aiming]</buf> mode, Hit Rate <color=#F74848>+10%</color>."
+    },
+    "300042": {
+      "name": "AP Optimization 4",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
+    },
+    "300043": {
+      "name": "Power Innovation 3",
+      "SpecificEffects": "When destroying a target, additionally restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>2</color> times per turn."
+    },
+    "300344": {
+      "name": "Cum Laude 2",
+      "SpecificEffects": "When attacking, if self's Hit Rate exceeds <color=#F74848>90%</color>, DMG <color=#F74848>+15%</color>."
+    },
+    "300345": {
+      "name": "Cum Laude 3",
+      "SpecificEffects": "On launching the first attack each turn, Crit Rate <color=#F74848>+15%</color>."
+    },
+    "300346": {
+      "name": "Cum Laude 4",
+      "SpecificEffects": "If the first active attack each turn defeats the target, skill AP Cost will be refunded after combat, up to <color=#F74848>3</color> AP."
+    }
+  }
+}

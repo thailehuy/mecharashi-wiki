@@ -130,6 +130,12 @@ Pages.sts = {
 
   // ── Detail page ────────────────────────────────────────────────────────────
   _renderDetail: function (m) {
+    var self = this;
+    Translations.loadMech(m, function (merged) { return self._buildDetail(merged); });
+    return this._buildDetail(m);
+  },
+
+  _buildDetail: function (m) {
     var rankLabel   = MECH_QUALITY_LABEL[m.quality] || m.quality;
     var rankClass   = MECH_QUALITY_CLASS[m.quality] || '';
     var portraitSrc = MECH_PORTRAIT_BASE + encodeURIComponent(m.lihuiIcon) + '.jpg';

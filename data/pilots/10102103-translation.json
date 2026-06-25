@@ -1,0 +1,131 @@
+{
+  "PilotName": "Emily",
+  "RealName": "Emily Brown",
+  "Gender": "Female",
+  "Profession": "Assault",
+  "Occupation": "Raider",
+  "Talent0_2Ability": {
+    "name": "Adorable",
+    "SpecificEffects": "Activate the Aura: Grants a DMG <color=#F74848>+6%</color> and a Hit Rate <color=#F74848>+3%</color> to allies within the adjacent (<color=#F74848>2</color> tiles) area."
+  },
+  "Talent3_5Ability": {
+    "name": "Adorable",
+    "SpecificEffects": "Activate the Aura: Grants a DMG <color=#F74848>+6%</color> and a Hit Rate <color=#F74848>+3%</color> to allies within the adjacent (<color=#F74848>2</color> tiles) area.\nWhen the Power of the ST is in surplus, for every <color=#F74848>80</color> points of Power surplus, DMG <color=#F74848>+5%</color>, up to <color=#F74848>15%</color>."
+  },
+  "skills": {
+    "200001": {
+      "name": "CEC 1",
+      "describe": "",
+      "SpecificEffects": "In cooperation with allies, use Assault Weapons to launch a <buf ID=900002>[Link Attack]</buf> against the target, dealing <color=#F74848>0.2x</color> DMG, effective up to <color=#F74848>1</color> time per turn."
+    },
+    "700012": {
+      "name": "Flanking Firepower",
+      "describe": "",
+      "SpecificEffects": "When launching a <buf ID=900002>[Link Attack]</buf>, DMG <color=#F74848>+15%</color> and Hit Rate <color=#F74848>+10%</color>."
+    },
+    "200703": {
+      "name": "Quakefire Strafe",
+      "describe": "Uses Heavy Machine Gun to attack all targets <range type=1>in a cone in front</range>, dealing <color=#F74848>0.55x</color> AoE DMG. After combat, it inflicts <buf ID=7101801>[DMG Down I]</buf> on targets hit, lasting <color=#F74848>1</color> turn.",
+      "SpecificEffects": ""
+    },
+    "700015": {
+      "name": "Rotation",
+      "describe": "",
+      "SpecificEffects": "At the end of the action, if no damage was dealt this turn, restore <color=#F74848>1</color> AP."
+    },
+    "700018": {
+      "name": "Heavy Slug",
+      "describe": "",
+      "SpecificEffects": "AoE DMG is increased by <color=#F74848>15%</color>."
+    },
+    "700028": {
+      "name": "Metal Storm",
+      "describe": "Uses Heavy Machine Gun to attack all targets within <range type=2>attack range</range>, dealing <color=#F74848>0.5x</color> AoE DMG. After combat, it inflicts <buf ID=7101701>[Armor Down I]</buf> on target hits, lasting <color=#F74848>1</color> turn.",
+      "SpecificEffects": ""
+    },
+    "700049": {
+      "name": "Heavy Firepower",
+      "describe": "",
+      "SpecificEffects": "Movement <color=#F74848>-1</color>, while Heavy Machine Gun Range <color=#F74848>+1</color>."
+    },
+    "200708": {
+      "name": "Together!",
+      "describe": "Uses Heavy Machine Gun to attack a target, dealing <color=#F74848>1.55x</color> DMG. All enable allies to launch <buf ID=900002>[Link Attack]</buf> against this target. This [Link Attack] does not require allies to possess a specific skill and does not consume any Link times.",
+      "SpecificEffects": ""
+    }
+  },
+  "neuralPassives": {
+    "200011": {
+      "name": "CEC 2",
+      "SpecificEffects": "<buf ID=900002>[Link Attack]</buf>'s effective times per turn <color=#F74848>+1</color>."
+    },
+    "200012": {
+      "name": "Power Innovation 1",
+      "SpecificEffects": "AP Regen <color=#F74848>+1</color>."
+    },
+    "200013": {
+      "name": "AP Optimization 1",
+      "SpecificEffects": "Initial AP <color=#F74848>+1</color>."
+    },
+    "200021": {
+      "name": "CEC 3",
+      "SpecificEffects": "<buf ID=900002>[Link Attack]</buf>'s damage multiplier is increased to <color=#F74848>0.3</color>."
+    },
+    "200022": {
+      "name": "Power Innovation 2",
+      "SpecificEffects": "When breaking a part, restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>1</color> time per turn."
+    },
+    "200023": {
+      "name": "AP Optimization 2",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
+    },
+    "200031": {
+      "name": "Perfect Position 1",
+      "SpecificEffects": "Unlock the Assault Weapon's <buf ID=900011>[Ideal Range]</buf> ability. When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, final DMG <color=#F74848>+15%</color>."
+    },
+    "200032": {
+      "name": "AP Optimization 3",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
+    },
+    "200033": {
+      "name": "Adaptive Warfare 1",
+      "SpecificEffects": "At the end of the action, if an Active Attack was not initiated this turn, an extra <color=#F74848>2</color> tiles can be moved."
+    },
+    "200034": {
+      "name": "Perfect Position 2",
+      "SpecificEffects": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, Hit Rate <color=#F74848>+12%</color>."
+    },
+    "200035": {
+      "name": "Perfect Position 3",
+      "SpecificEffects": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, Crit Rate <color=#F74848>+12%</color>."
+    },
+    "200036": {
+      "name": "Perfect Position 4",
+      "SpecificEffects": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, final DMG <color=#F74848>+30%</color>."
+    },
+    "200741": {
+      "name": "Mama's Girl 1",
+      "SpecificEffects": "The Range of <buf ID=2007501>[Adorable]</buf> increases by <color=#F74848>1</color>."
+    },
+    "200042": {
+      "name": "AP Optimization 4",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
+    },
+    "200043": {
+      "name": "Adaptive Warfare 2",
+      "SpecificEffects": "If not moved before an Active Attack, <buf ID=900004>[Re-ATK]</buf> can be triggered, effective up to <color=#F74848>1</color> time per turn. Unable to move before attacking.\nEffects similar to <buf ID=900004>[Re-ATK]</buf> cannot be re-triggered."
+    },
+    "200744": {
+      "name": "Mama's Girl 2",
+      "SpecificEffects": "The effect of <buf ID=2007501>[Adorable]</buf> is enhanced to: DMG <color=#F74848>+10%</color> and Hit Rate <color=#F74848>+5%</color>."
+    },
+    "200745": {
+      "name": "Mama's Girl 3",
+      "SpecificEffects": "The Range of <buf ID=2007501>[Adorable]</buf> increases again by <color=#F74848>1</color>."
+    },
+    "200746": {
+      "name": "Mama's Girl 4",
+      "SpecificEffects": "Pilot Suitability <color=#F74848>+1</color>."
+    }
+  }
+}

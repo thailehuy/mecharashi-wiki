@@ -1,0 +1,18 @@
+{
+  "name": "Hermes",
+  "introduce": "AST-06 Hermes\nAn-Holt Corporation developed this medium ST. It is mainly equipped by the tactical support forces of the Dawnstar League.\nThis model is designed to carry tactical weapons and is equipped with high-power radar, trading mobility for excellent guidance capabilities and allowing for efficient detection and the locking on of distant targets.\nAs part of the DL Tactical System, it often cooperates with the Kaolin in combat.",
+  "modules": {
+    "10044": {
+      "name": "Aiming Aid",
+      "SpecificEffects": "When attacking with a Tactical Weapon, there is a <color=#F74848>70%</color> chance to trigger: DMG <color=#F74848>+15%</color>."
+    },
+    "30172": {
+      "name": "Aim Afar Mod",
+      "SpecificEffects": "When there are no enemies within the adjacent (<color=#F74848>2</color> tiles) area, DMG <color=#F74848>+4%</color>."
+    },
+    "40054": {
+      "name": "HP Mod",
+      "SpecificEffects": "HP <color=#F74848>+10%</color>."
+    }
+  }
+}

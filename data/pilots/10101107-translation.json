@@ -1,0 +1,97 @@
+{
+  "PilotName": "Lily",
+  "RealName": "Lily Stan",
+  "Gender": "Female",
+  "Profession": "Launcher",
+  "Occupation": "Tactician",
+  "Talent0_2Ability": {
+    "name": "Weapon of Choice",
+    "SpecificEffects": "When equipped with only one category of Tactical Weapon, DMG <color=#F74848>+7%</color>, Ammo Capacity <color=#F74848>+2</color>."
+  },
+  "Talent3_5Ability": {
+    "name": "Weapon of Choice",
+    "SpecificEffects": "When equipped with only one category of Tactical Weapon, DMG <color=#F74848>+10%</color>, Ammo Capacity <color=#F74848>+2</color>."
+  },
+  "skills": {
+    "400001": {
+      "name": "Strategic Bombing 1",
+      "describe": "",
+      "SpecificEffects": "When a Tactical Weapon runs out of ammo, trigger <buf ID=900029>[Auto Load]</buf>. This process takes <color=#F74848>3</color> turns."
+    },
+    "400102": {
+      "name": "Cluster Bomb",
+      "describe": "",
+      "SpecificEffects": "The missile's Splash DMG has been increased to <color=#F74848>62.5%</color> of the damage dealt."
+    },
+    "400103": {
+      "name": "Intense Gunpowder",
+      "describe": "",
+      "SpecificEffects": "When attacking with a Rocket Launcher, Crit Rate <color=#F74848>+7%</color> and Crit DMG <color=#F74848>+7%</color>."
+    },
+    "400104": {
+      "name": "Powerful Electromagnetic",
+      "describe": "",
+      "SpecificEffects": "Rail Gun Range <color=#F74848>+1</color>."
+    },
+    "400105": {
+      "name": "Reinforced Frame",
+      "describe": "",
+      "SpecificEffects": "When equipped with a Tactical Weapon, that arm's DMG Taken <color=#F74848>-15%</color>."
+    },
+    "400106": {
+      "name": "Quick Load",
+      "describe": "Fully restore Tactical Weapon Ammo and gain <color=#F74848>2</color> AP. Can continue the action with the remaining movement.",
+      "SpecificEffects": ""
+    }
+  },
+  "neuralPassives": {
+    "400011": {
+      "name": "Strategic Bombing 2",
+      "SpecificEffects": "Tactical Weapon Magazine Capacity <color=#F74848>+1</color>."
+    },
+    "400012": {
+      "name": "Power Innovation 1",
+      "SpecificEffects": "AP Regen <color=#F74848>+1</color>."
+    },
+    "400013": {
+      "name": "AP Optimization 1",
+      "SpecificEffects": "Initial AP <color=#F74848>+1</color>."
+    },
+    "400021": {
+      "name": "Strategic Bombing 3",
+      "SpecificEffects": "Tactical Weapons Reload CD <color=#F74848>-1</color>."
+    },
+    "400022": {
+      "name": "Power Innovation 2",
+      "SpecificEffects": "AP Regen <color=#F74848>+1</color>."
+    },
+    "400023": {
+      "name": "AP Optimization 2",
+      "SpecificEffects": "AP Cap <color=#F74848>+2</color>."
+    },
+    "400031": {
+      "name": "Indiscriminate 1",
+      "SpecificEffects": "After the first attack with a Tactical Weapon each turn, <buf ID=900004>[Re-ATK]</buf> can be triggered, with Final DMG <color=#F74848>-30%</color>, effective up to <color=#F74848>1</color> time per turn. Unable to move before attacking."
+    },
+    "400032": {
+      "name": "AP Optimization 3",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
+    },
+    "400033": {
+      "name": "Strategic Bombing 4",
+      "SpecificEffects": "When <buf ID=900029>[Auto Load]</buf> is complete, restore <color=#F74848>1</color> AP."
+    },
+    "400034": {
+      "name": "Indiscriminate 2",
+      "SpecificEffects": "When attacking with a Tactical Weapon for the first time each turn, for every <color=#F74848>1</color> AP cost, DMG <color=#F74848>+4%</color>, up to <color=#F74848>20%</color>."
+    },
+    "400035": {
+      "name": "Indiscriminate 3",
+      "SpecificEffects": "When <buf ID=900004>[Re-ATK]</buf> is triggered, allow continued moving with the remaining movement."
+    },
+    "400036": {
+      "name": "Indiscriminate 4",
+      "SpecificEffects": "After triggering <buf ID=900004>[Re-ATK]</buf>, it no longer reduces final damage."
+    }
+  }
+}

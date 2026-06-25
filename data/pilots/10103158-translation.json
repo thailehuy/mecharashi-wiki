@@ -1,0 +1,131 @@
+{
+  "PilotName": "怀亚特",
+  "RealName": "怀亚特·摩根",
+  "Gender": "Male",
+  "Profession": "Striker",
+  "Occupation": "格斗家",
+  "Talent0_2Ability": {
+    "name": "身经百战",
+    "SpecificEffects": "遭受主动攻击后，若自身耐久值低于<color=#F74848>50%</color>，战后立即发动<color=#F74848>1</color>次修理背包的被动修理效果；根据当前已损失的耐久值获得<buf ID=1016502>[振奋Ⅰ]</buf>，当前每损失<color=#F74848>10%</color>耐久值获得<color=#F74848>1</color>层，可叠加<color=#F74848>5</color>层"
+  },
+  "Talent3_5Ability": {
+    "name": "身经百战",
+    "SpecificEffects": "遭受主动攻击后，若自身耐久值低于<color=#F74848>50%</color>，战后立即发动<color=#F74848>1</color>次修理背包的被动修理效果；根据当前已损失的耐久值获得<buf ID=1016502>[振奋Ⅰ]</buf>，当前每损失<color=#F74848>10%</color>耐久值获得<color=#F74848>1</color>层，可叠加<color=#F74848>5</color>层；\n通过天赋触发修理效果时，可修复<color=#F74848>1</color>个损毁部位；出击时，获得<buf ID=1016514>[极限意志]</buf>"
+  },
+  "skills": {
+    "100001": {
+      "name": "运动战1",
+      "describe": "",
+      "SpecificEffects": "击破部位后可发动<buf ID=900004>[再攻击]</buf>，攻击前无法移动，每回合最多发动<color=#F74848>2</color>次"
+    },
+    "101602": {
+      "name": "战地重整",
+      "describe": "恢复单台机兵所有部位的耐久值，修理量为修理背包的<color=#F74848>1.6</color>倍，可修复<color=#F74848>1</color>个损毁部位；每有<color=#F74848>1</color>层<buf ID=900127>[振奋]</buf>，修理倍率<color=#F74848>+0.1</color>",
+      "SpecificEffects": ""
+    },
+    "101603": {
+      "name": "扮猪吃虎",
+      "describe": "",
+      "SpecificEffects": "对战时，若自身耐久值百分比低于目标，暴击率和暴击伤害提升<color=#F74848>10%</color>"
+    },
+    "101604": {
+      "name": "双刃锯",
+      "describe": "使用电锯攻击单个目标，造成<color=#F74848>1.35</color>倍伤害，必定攻击躯干；\n战前扣除自身所有部位相当于最大耐久值<color=#F74848>20%</color>的耐久值，并对目标所有部位造成其<color=#F74848>20%</color>最大耐久值的<buf ID=900017>[固定伤害]</buf>，此耐久值扣除和<buf ID=900017>[固定伤害]</buf>均无法破坏部位",
+      "SpecificEffects": ""
+    },
+    "101605": {
+      "name": "昂扬奋发",
+      "describe": "",
+      "SpecificEffects": "触发自身天赋修理效果时，驱散自身<color=#F74848>1</color>个减益效果"
+    },
+    "101606": {
+      "name": "制敌一击",
+      "describe": "使用电锯攻击单个目标，造成<color=#F74848>1.8</color>倍伤害，每有<color=#F74848>1</color>层<buf ID=900127>[振奋]</buf>，伤害倍率<color=#F74848>+0.15</color>",
+      "SpecificEffects": ""
+    },
+    "101607": {
+      "name": "防反大师",
+      "describe": "",
+      "SpecificEffects": "在敌方回合时，造成伤害提升<color=#F74848>15%</color>，遭受伤害降低<color=#F74848>10%</color>"
+    },
+    "101608": {
+      "name": "破釜沉舟",
+      "describe": "扣除自身所有部位的耐久值，相当于最大耐久值的<color=#F74848>50%</color>，无法破坏部位，并获得<color=#F74848>3</color>AP和<buf ID=7100902>[移动力提升]</buf>，持续<color=#F74848>2</color>回合，之后可发动<buf ID=900005>[再行动]</buf>，使用完整移动力移动",
+      "SpecificEffects": ""
+    }
+  },
+  "neuralPassives": {
+    "100011": {
+      "name": "运动战2",
+      "SpecificEffects": "发动<buf ID=900004>[再攻击]</buf>时，攻击前可以移动<color=#F74848>2</color>格"
+    },
+    "100012": {
+      "name": "动力革新1",
+      "SpecificEffects": "AP的回复值<color=#F74848>+1</color>"
+    },
+    "100013": {
+      "name": "AP优化1",
+      "SpecificEffects": "AP的初始值<color=#F74848>+1</color>"
+    },
+    "100021": {
+      "name": "运动战3",
+      "SpecificEffects": "击毁目标后可发动<buf ID=900005>[再行动]</buf>，使用完整移动力移动"
+    },
+    "100022": {
+      "name": "动力革新2",
+      "SpecificEffects": "击破部位时，战后回复<color=#F74848>1</color>AP，每回合最多发动<color=#F74848>1</color>次"
+    },
+    "100023": {
+      "name": "AP优化2",
+      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+    },
+    "100031": {
+      "name": "穷追猛打1",
+      "SpecificEffects": "使用格斗武器主动攻击时有<color=#F74848>20%</color>的概率发动，在敌机攻击结束后发动<buf ID=900001>[追击]</buf>，造成<color=#F74848>0.5</color>倍伤害"
+    },
+    "100032": {
+      "name": "AP优化3",
+      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+    },
+    "100033": {
+      "name": "运动战4",
+      "SpecificEffects": "<buf ID=900004>[再攻击]</buf>或<buf ID=900005>[再行动]</buf>每回合可发动的次数<color=#F74848>+1</color>"
+    },
+    "100034": {
+      "name": "穷追猛打2",
+      "SpecificEffects": "主动攻击前每移动<color=#F74848>1</color>格，发动<buf ID=900001>[追击]</buf>的概率提升<color=#F74848>6%</color>，最多<color=#F74848>30%</color>"
+    },
+    "100035": {
+      "name": "穷追猛打3",
+      "SpecificEffects": "<buf ID=1000311>[穷追猛打1]</buf>触发的<buf ID=900001>[追击]</buf>的伤害倍率提升至<color=#F74848>0.75</color>倍"
+    },
+    "100036": {
+      "name": "穷追猛打4",
+      "SpecificEffects": "发动<buf ID=900001>[追击]</buf>时，优先命中耐久值最低的部位"
+    },
+    "101641": {
+      "name": "离岛者1",
+      "SpecificEffects": "装备电锯遭受攻击对战时，若无法反击将发动<buf ID=900008>[奔袭]</buf>，战后自动朝攻击者移动<color=#F74848>3</color>格，若成功移至目标身边则会使用电锯发动<buf ID=900009>[奔袭反击]</buf>，造成<color=#F74848>0.8</color>倍伤害，攻击后返回原地"
+    },
+    "100042": {
+      "name": "AP优化4",
+      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+    },
+    "100043": {
+      "name": "动力革新3",
+      "SpecificEffects": "击毁目标时，战后额外回复<color=#F74848>1</color>AP，每回合最多发动<color=#F74848>2</color>次"
+    },
+    "101644": {
+      "name": "离岛者2",
+      "SpecificEffects": "行动结束时，若自身<buf ID=900127>[振奋]</buf>层数大于等于<color=#F74848>5</color>，回复<color=#F74848>1</color>点AP"
+    },
+    "101645": {
+      "name": "离岛者3",
+      "SpecificEffects": "修理技能倍率<color=#F74848>+0.3</color>"
+    },
+    "101646": {
+      "name": "离岛者4",
+      "SpecificEffects": "<buf ID=900127>[振奋]</buf>最大叠加层数增加<color=#F74848>3</color>层，并且每层额外使伤害提升<color=#F74848>4%</color>"
+    }
+  }
+}

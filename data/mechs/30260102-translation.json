@@ -1,0 +1,18 @@
+{
+  "name": "Charon",
+  "introduce": "ASX-117 Charon\nA heavy ST produced by An-Holt, specialized in defense and based on the ASX-114.\nThe ASX-117 combat core is equipped with additional impact-resistant components when compared to the ASX-114 used by Gamesaurs, and its armor has been replaced with more robust and complete protective plates. These upgrades in armor make Charon the most significant and heaviest model among contemporary heavy STs.",
+  "modules": {
+    "10084": {
+      "name": "Buffering Unit",
+      "SpecificEffects": "When taking damage, there is a <color=#F74848>70%</color> chance to trigger: Armor <color=#F74848>+45%</color>."
+    },
+    "30152": {
+      "name": "Adaptive Mod",
+      "SpecificEffects": "When HP is below <color=#F74848>50%</color>, DMG Taken <color=#F74848>-4%</color>."
+    },
+    "40064": {
+      "name": "Armor Mod",
+      "SpecificEffects": "Armor <color=#F74848>+35%</color>."
+    }
+  }
+}

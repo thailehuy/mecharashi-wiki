@@ -1,0 +1,18 @@
+{
+  "name": "Dopplesoldner",
+  "introduce": "OS-07X Dopplesoldner\nOne of Obsidian's high-performance light STs, developed based on the OS-06F Diana's combat data.\nAs a highly maneuverable execution model, it is equipped with the \"Zweihander\" combat core, a modification of the \"Eden Core.\"\nThe balance between the limbs and torso on this ST has been carefully calibrated to maximize it's killing power.",
+  "modules": {
+    "30058": {
+      "name": "Kinetic Mod",
+      "SpecificEffects": "Before an Active Attack in combat, for every <color=#F74848>1</color> tile moved, DMG <color=#F74848>+4.5%</color>, up to <color=#F74848>18%</color>.\nST's Movement <color=#F74848>+1</color>."
+    },
+    "20014": {
+      "name": "HCI System",
+      "SpecificEffects": "During an Active Attack, there is a <color=#F74848>100%</color> chance to trigger <buf ID=900001>[Flurry Strike]</buf>, dealing <color=#F74848>0.3x</color> DMG, effective up to <color=#F74848>1</color> time per turn."
+    },
+    "40044": {
+      "name": "Dodge Mod",
+      "SpecificEffects": "Dodge Rate <color=#F74848>+10%</color>."
+    }
+  }
+}

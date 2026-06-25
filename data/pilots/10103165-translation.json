@@ -1,0 +1,131 @@
+{
+  "PilotName": "奥德莉",
+  "RealName": "奥德莉·布吕希尔",
+  "Gender": "Female",
+  "Profession": "Gunner",
+  "Occupation": "狙击手",
+  "Talent0_2Ability": {
+    "name": "铁血统帅",
+    "SpecificEffects": "可以使用指令<skill mainSkill=301350>[敕令]</skill>；使用狙击步枪主动攻击对战命中敌方时，可以发动<color=#F74848>2</color>次<buf ID=900148>[弹射]</buf>，每次造成首次攻击<color=#F74848>25%</color>的伤害"
+  },
+  "Talent3_5Ability": {
+    "name": "铁血统帅",
+    "SpecificEffects": "可以使用指令<skill mainSkill=301350>[敕令]</skill>；使用狙击步枪主动攻击对战命中敌方时，可以发动<color=#F74848>3</color>次<buf ID=900148>[弹射]</buf>，每次造成首次攻击<color=#F74848>30%</color>的伤害"
+  },
+  "skills": {
+    "300001": {
+      "name": "狙击战1",
+      "describe": "",
+      "SpecificEffects": "击毁目标后可发动<buf ID=900004>[再攻击]</buf>，攻击前无法移动，每回合最多发动<color=#F74848>2</color>次"
+    },
+    "301302": {
+      "name": "协同战术",
+      "describe": "",
+      "SpecificEffects": "主动攻击对战后，使<buf ID=3013504>[亲卫]</buf>对目标发动<buf ID=900002>[协力攻击]</buf>，造成<color=#F74848>0.3</color>倍伤害，每回合最多发动<color=#F74848>2</color>次；该协力攻击不要求协力能力，也不消耗协力次数"
+    },
+    "301303": {
+      "name": "缭乱",
+      "describe": "使用狙击步枪攻击单个目标，造成<color=#F74848>1.2</color>倍伤害，<buf ID=900148>[弹射]</buf>时对命中部位外的其他部位造成<color=#F74848>75%</color>的溅射伤害",
+      "SpecificEffects": ""
+    },
+    "301304": {
+      "name": "交辉号令",
+      "describe": "",
+      "SpecificEffects": "<buf ID=3013504>[亲卫]</buf>获得指令<skill mainSkill=301304>[献势]</skill>"
+    },
+    "301305": {
+      "name": "明良相逢",
+      "describe": "",
+      "SpecificEffects": "<buf ID=3013504>[亲卫]</buf>被暴击率降低<color=#F74848>15%</color>，自身在<buf ID=3013504>[亲卫]</buf>周围<color=#F74848>3</color>格内移动时，移动力消耗降低<color=#F74848>50%</color>"
+    },
+    "301306": {
+      "name": "血盟",
+      "describe": "选择自身周围<color=#F74848>3</color>格内任意空地格，传送<buf ID=3013504>[亲卫]</buf>至该地格，并施加<buf ID=3013061>[忠诚]</buf>，然后可使用剩余移动力继续行动",
+      "SpecificEffects": ""
+    },
+    "301307": {
+      "name": "守正出奇",
+      "describe": "",
+      "SpecificEffects": "暴击率提升<color=#F74848>15%</color>，<buf ID=900148>[弹射]</buf>时额外提升<color=#F74848>15%</color>"
+    },
+    "301308": {
+      "name": "诛尽",
+      "describe": "使用狙击步枪攻击单个目标，造成<color=#F74848>1.4</color>倍伤害，攻击前可以<buf ID=900014>[瞄准]</buf>且<buf ID=900148>[弹射]</buf>次数<color=#F74848>+2</color>，当<buf ID=3013504>[亲卫]</buf>在自身周围<color=#F74848>3</color>格内时，本次攻击及<buf ID=900148>[弹射]</buf>无视目标<buf ID=900160>[常规减伤效果]</buf>",
+      "SpecificEffects": ""
+    }
+  },
+  "neuralPassives": {
+    "300011": {
+      "name": "狙击战2",
+      "SpecificEffects": "<buf ID=3000011>[狙击战1]</buf>在击破部位后即可发动"
+    },
+    "300012": {
+      "name": "动力革新1",
+      "SpecificEffects": "AP的回复值<color=#F74848>+1</color>"
+    },
+    "300013": {
+      "name": "AP优化1",
+      "SpecificEffects": "AP的初始值<color=#F74848>+1</color>"
+    },
+    "300021": {
+      "name": "狙击战3",
+      "SpecificEffects": "发动<buf ID=3000011>[狙击战1]</buf>的<buf ID=900004>[再攻击]</buf>时，攻击前可以移动<color=#F74848>2</color>格"
+    },
+    "300022": {
+      "name": "动力革新2",
+      "SpecificEffects": "击破部位时，战后回复<color=#F74848>1</color>AP，每回合最多发动<color=#F74848>1</color>次"
+    },
+    "300023": {
+      "name": "AP优化2",
+      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+    },
+    "301231": {
+      "name": "追猎标记1",
+      "SpecificEffects": "使用射击武器主动攻击击破部位时，根据部位的类型获得不同<buf ID=900141>[追猎增益]</buf>，每回合最多发动<color=#F74848>2</color>次"
+    },
+    "300032": {
+      "name": "AP优化3",
+      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+    },
+    "300033": {
+      "name": "狙击战4",
+      "SpecificEffects": "<buf ID=900004>[再攻击]</buf>每回合可发动的次数<color=#F74848>+1</color>"
+    },
+    "301234": {
+      "name": "追猎标记2",
+      "SpecificEffects": "使用射击武器主动攻击时，若击毁目标，可额外移动<color=#F74848>3</color>格"
+    },
+    "301235": {
+      "name": "追猎标记3",
+      "SpecificEffects": "<buf ID=900142>[追猎标记1]</buf>每回合不再有发动次数限制"
+    },
+    "301236": {
+      "name": "追猎标记4",
+      "SpecificEffects": "行动开始时，随机获得<color=#F74848>1</color>种未获得的<buf ID=900141>[追猎增益]</buf>效果"
+    },
+    "301341": {
+      "name": "我即征服1",
+      "SpecificEffects": "主动攻击时若<buf ID=900148>[弹射]</buf>次数大于等于<color=#F74848>2</color>，攻击后可发动<buf ID=900004>[再攻击]</buf>，攻击前可以移动<color=#F74848>2</color>格，每回合最多发动<color=#F74848>1</color>次"
+    },
+    "300042": {
+      "name": "AP优化4",
+      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+    },
+    "300043": {
+      "name": "动力革新3",
+      "SpecificEffects": "击毁目标时，战后额外回复<color=#F74848>1</color>AP，每回合最多发动<color=#F74848>2</color>次"
+    },
+    "301344": {
+      "name": "我即征服2",
+      "SpecificEffects": "发动<buf ID=900148>[弹射]</buf>时，优先攻击与首次攻击相同的部位"
+    },
+    "301345": {
+      "name": "我即征服3",
+      "SpecificEffects": "使用狙击步枪攻击时，伤害和命中率提升<color=#F74848>10%</color>"
+    },
+    "301346": {
+      "name": "我即征服4",
+      "SpecificEffects": "<buf ID=3013504>[亲卫]</buf>存活时，狙击步枪射程+<color=#F74848>1</color>，<buf ID=900148>[弹射]</buf>次数<color=#F74848>+1</color>"
+    }
+  }
+}

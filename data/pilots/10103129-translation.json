@@ -1,0 +1,131 @@
+{
+  "PilotName": "玛阿特",
+  "RealName": "玛阿特·谢里夫",
+  "Gender": "Female",
+  "Profession": "Striker",
+  "Occupation": "格斗家",
+  "Talent0_2Ability": {
+    "name": "蚀罪极影",
+    "SpecificEffects": "双手完好且装备电锯时，行动后释放<skill activeSkill=1019512></skill>，每回合最多触发<color=#F74848>8</color>次；自身装备除强袭者背包外的任意背包时，可以释放<skill activeSkill=1019501></skill>与<skill activeSkill=1019511></skill>技能；初始具有<color=#F74848>1</color>层<buf ID=1019509></buf>，行动结束时恢复<color=#F74848>1</color>层<buf ID=1019509></buf>"
+  },
+  "Talent3_5Ability": {
+    "name": "蚀罪极影",
+    "SpecificEffects": "双手完好且装备电锯时，行动后释放<skill activeSkill=1019512></skill>，每回合最多触发<color=#F74848>8</color>次；自身装备除强袭者背包外的任意背包时，可以释放<skill activeSkill=1019501></skill>与<skill activeSkill=1019511></skill>技能；初始具有<color=#F74848>2</color>层<buf ID=1019509></buf>，行动结束时恢复<color=#F74848>1</color>层<buf ID=1019509></buf>；使用[钩爪]技能后，下一次主动攻击造成伤害提升<color=#F74848>20%</color>"
+  },
+  "skills": {
+    "100001": {
+      "name": "运动战1",
+      "describe": "",
+      "SpecificEffects": "击破部位后可发动<buf ID=900004>[再攻击]</buf>，攻击前无法移动，每回合最多发动<color=#F74848>2</color>次"
+    },
+    "101902": {
+      "name": "计出双全",
+      "describe": "",
+      "SpecificEffects": "[钩爪]技能对友军单位释放时，为自身与目标机兵施加自身最大耐久值<color=#F74848>10%</color>的护盾，无法叠加，持续<color=#F74848>2</color>回合"
+    },
+    "101903": {
+      "name": "无畏之执",
+      "describe": "",
+      "SpecificEffects": "场上每有<color=#F74848>1</color>个敌方单位具有<buf ID=1019508>[仇楔]</buf>，自身护甲值提升<color=#F74848>15%</color>，最多提升<color=#F74848>60%</color>"
+    },
+    "101904": {
+      "name": "逐猎",
+      "describe": "腿部完好时可发动，选择<color=#F74848>3</color>格范围内的<color=#F74848>1</color>格空地，跳跃至选中地格，并立刻获得<color=#F74848>1</color>AP与<color=#F74848>1</color>层<buf ID=1019509></buf>，然后可以移动<color=#F74848>3</color>格发动<buf ID=900004>[再攻击]</buf>",
+      "SpecificEffects": ""
+    },
+    "101905": {
+      "name": "苦难之谕",
+      "describe": "",
+      "SpecificEffects": "任意手臂被击破时，战后将修复最多<color=#F74848>1</color>只手臂<color=#F74848>50%</color>耐久值，间隔<color=#F74848>3</color>回合后可再次发动"
+    },
+    "101906": {
+      "name": "棘灭",
+      "describe": "使用电锯攻击单个及自身周围的目标，必定攻击躯干；先攻击自身周围<color=#F74848>1</color>圈所有敌机，消耗命中目标所有<buf ID=1019508></buf>，造成<color=#F74848>0.9</color>倍范围伤害，然后继续攻击主目标，造成<color=#F74848>0.9</color>倍伤害，每消耗<color=#F74848>2</color>层<buf ID=1019508></buf>会使第二段攻击连击数<color=#F74848>+1</color>，最多<color=#F74848>+8</color>",
+      "SpecificEffects": ""
+    },
+    "101907": {
+      "name": "永途",
+      "describe": "",
+      "SpecificEffects": "使用[钩爪]技能后，若<buf ID=1019509></buf>不足<color=#F74848>1</color>点，消耗<color=#F74848>1</color>点PP恢复<color=#F74848>1</color>点<buf ID=1019509></buf>，每回合最多发动<color=#F74848>1</color>次；每次出击最多拥有<color=#F74848>2</color>点PP"
+    },
+    "101908": {
+      "name": "断裁",
+      "describe": "使用电锯攻击单个目标，造成<color=#F74848>0.7</color>倍伤害，攻击前可以进行<buf ID=900014>[瞄准]</buf>；本次攻击不会消耗<buf ID=1019508></buf>，战后可以移动<color=#F74848>2</color>格发动<buf ID=900004>[再攻击]</buf>，每回合只能使用<color=#F74848>1</color>次",
+      "SpecificEffects": ""
+    }
+  },
+  "neuralPassives": {
+    "100011": {
+      "name": "运动战2",
+      "SpecificEffects": "发动<buf ID=900004>[再攻击]</buf>时，攻击前可以移动<color=#F74848>2</color>格"
+    },
+    "100012": {
+      "name": "动力革新1",
+      "SpecificEffects": "AP的回复值<color=#F74848>+1</color>"
+    },
+    "100013": {
+      "name": "AP优化1",
+      "SpecificEffects": "AP的初始值<color=#F74848>+1</color>"
+    },
+    "100021": {
+      "name": "运动战3",
+      "SpecificEffects": "击毁目标后可发动<buf ID=900005>[再行动]</buf>，使用完整移动力移动"
+    },
+    "100022": {
+      "name": "动力革新2",
+      "SpecificEffects": "击破部位时，战后回复<color=#F74848>1</color>AP，每回合最多发动<color=#F74848>1</color>次"
+    },
+    "100023": {
+      "name": "AP优化2",
+      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+    },
+    "100031": {
+      "name": "穷追猛打1",
+      "SpecificEffects": "使用格斗武器主动攻击时有<color=#F74848>20%</color>的概率发动，在敌机攻击结束后发动<buf ID=900001>[追击]</buf>，造成<color=#F74848>0.5</color>倍伤害"
+    },
+    "100032": {
+      "name": "AP优化3",
+      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+    },
+    "100033": {
+      "name": "运动战4",
+      "SpecificEffects": "<buf ID=900004>[再攻击]</buf>或<buf ID=900005>[再行动]</buf>每回合可发动的次数<color=#F74848>+1</color>"
+    },
+    "100034": {
+      "name": "穷追猛打2",
+      "SpecificEffects": "主动攻击前每移动<color=#F74848>1</color>格，发动<buf ID=900001>[追击]</buf>的概率提升<color=#F74848>6%</color>，最多<color=#F74848>30%</color>"
+    },
+    "100035": {
+      "name": "穷追猛打3",
+      "SpecificEffects": "<buf ID=1000311>[穷追猛打1]</buf>触发的<buf ID=900001>[追击]</buf>的伤害倍率提升至<color=#F74848>0.75</color>倍"
+    },
+    "100036": {
+      "name": "穷追猛打4",
+      "SpecificEffects": "发动<buf ID=900001>[追击]</buf>时，优先命中耐久值最低的部位"
+    },
+    "101941": {
+      "name": "业火成炬1",
+      "SpecificEffects": "击毁目标时，恢复<color=#F74848>1</color>层<buf ID=1019509></buf>，每回合最多发动<color=#F74848>1</color>次"
+    },
+    "100042": {
+      "name": "AP优化4",
+      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+    },
+    "100043": {
+      "name": "动力革新3",
+      "SpecificEffects": "击毁目标时，战后额外回复<color=#F74848>1</color>AP，每回合最多发动<color=#F74848>2</color>次"
+    },
+    "101944": {
+      "name": "业火成炬2",
+      "SpecificEffects": "若本回合累积消耗超过<color=#F74848>1</color>层<buf ID=1019508>[仇楔]</buf>，行动结束时自身回复<color=#F74848>1</color>AP"
+    },
+    "101945": {
+      "name": "业火成炬3",
+      "SpecificEffects": "自身周围<color=#F74848>1</color>圈每有<color=#F74848>1</color>个敌机，伤害提升<color=#F74848>4%</color>，受到的伤害降低<color=#F74848>4%</color>，最多<color=#F74848>20%</color>"
+    },
+    "101946": {
+      "name": "业火成炬4",
+      "SpecificEffects": "钩爪技能射程<color=#F74848>+1</color>"
+    }
+  }
+}

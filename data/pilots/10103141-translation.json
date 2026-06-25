@@ -1,0 +1,131 @@
+{
+  "PilotName": "凯莉",
+  "RealName": "凯莉·波利斯",
+  "Gender": "Female",
+  "Profession": "Gunner",
+  "Occupation": "狙击手",
+  "Talent0_2Ability": {
+    "name": "白鹳",
+    "SpecificEffects": "可使用<skill mainSkill=301050>[特殊装填]</skill>，行动开始时获得<color=#F74848>1</color>层<buf ID=3010502>[强击弹药]</buf>，最多<color=#F74848>3</color>层；\n狙击步枪的负重降低<color=#F74848>15%</color>"
+  },
+  "Talent3_5Ability": {
+    "name": "白鹳",
+    "SpecificEffects": "可使用<skill mainSkill=301050>[特殊装填]</skill>，行动开始时获得<color=#F74848>1</color>层<buf ID=3010502>[强击弹药]</buf>，最多<color=#F74848>5</color>层，每有<color=#F74848>1</color>层<buf ID=3010502>[强击弹药]</buf>暴击率额外提升<color=#F74848>5%</color>，最多<color=#F74848>15%</color>；\n狙击步枪的负重降低<color=#F74848>15%</color>"
+  },
+  "skills": {
+    "300001": {
+      "name": "狙击战1",
+      "describe": "",
+      "SpecificEffects": "击毁目标后可发动<buf ID=900004>[再攻击]</buf>，攻击前无法移动，每回合最多发动<color=#F74848>2</color>次"
+    },
+    "700043": {
+      "name": "状态绝佳",
+      "describe": "",
+      "SpecificEffects": "自身的耐久值全满时，伤害提升<color=#F74848>15%</color>"
+    },
+    "301003": {
+      "name": "神闲",
+      "describe": "",
+      "SpecificEffects": "主动攻击对战时，若本次攻击暴击过，目标无法发动反击"
+    },
+    "301004": {
+      "name": "无处可逃",
+      "describe": "使用狙击步枪攻击单个目标，造成<color=#F74848>1.2</color>倍伤害，攻击前可以进行<buf ID=900014>[瞄准]</buf>；<buf ID=3010504>[强化射击]</buf>时，对命中的部位施加<buf ID=900049>[被命中概率提升II]</buf>，持续<color=#F74848>2</color>回合，单个目标同时只能携带<color=#F74848>1</color>种命中提升效果",
+      "SpecificEffects": ""
+    },
+    "301005": {
+      "name": "协同指挥",
+      "describe": "",
+      "SpecificEffects": "使用<buf ID=3010504>[强化射击]</buf>时，战后对发动<buf ID=900002>[协力攻击]</buf>的友军施加<buf ID=7100303>[伤害提升Ⅱ]</buf>，持续<color=#F74848>1</color>回合"
+    },
+    "301006": {
+      "name": "骤雨",
+      "describe": "使用狙击步枪连续射击<color=#F74848>2</color>次，攻击单个目标，造成<color=#F74848>2×0.75</color>倍伤害；<buf ID=3010504>[强化射击]</buf>时，若未击破部位，战后可发动<buf ID=900004>[再攻击]</buf>，攻击前无法移动",
+      "SpecificEffects": ""
+    },
+    "301007": {
+      "name": "蓄锐",
+      "describe": "",
+      "SpecificEffects": "行动结束时，本次行动每使用过<color=#F74848>1</color>次<buf ID=900073>[特殊装填]</buf>，使警戒射击倍率提升<color=#F74848>0.15</color>倍，最多提升<color=#F74848>0.75</color>倍，效果持续至下次行动开始"
+    },
+    "301008": {
+      "name": "鬼牌",
+      "describe": "立即获得<color=#F74848>2</color>层<buf ID=3010502>[强击弹药]</buf>，然后可使用剩余移动力继续行动",
+      "SpecificEffects": ""
+    }
+  },
+  "neuralPassives": {
+    "300011": {
+      "name": "狙击战2",
+      "SpecificEffects": "<buf ID=3000011>[狙击战1]</buf>在击破部位后即可发动"
+    },
+    "300012": {
+      "name": "动力革新1",
+      "SpecificEffects": "AP的回复值<color=#F74848>+1</color>"
+    },
+    "300013": {
+      "name": "AP优化1",
+      "SpecificEffects": "AP的初始值<color=#F74848>+1</color>"
+    },
+    "300021": {
+      "name": "狙击战3",
+      "SpecificEffects": "发动<buf ID=3000011>[狙击战1]</buf>的<buf ID=900004>[再攻击]</buf>时，攻击前可以移动<color=#F74848>2</color>格"
+    },
+    "300022": {
+      "name": "动力革新2",
+      "SpecificEffects": "击破部位时，战后回复<color=#F74848>1</color>AP，每回合最多发动<color=#F74848>1</color>次"
+    },
+    "300023": {
+      "name": "AP优化2",
+      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+    },
+    "300031": {
+      "name": "禁区1",
+      "SpecificEffects": "使用射击武器，在射程内的敌机发起主动攻击对战前，触发<buf ID=900013>[警戒射击]</buf>，造成<color=#F74848>0.5</color>倍伤害，每回合最多发动<color=#F74848>1</color>次"
+    },
+    "300032": {
+      "name": "AP优化3",
+      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+    },
+    "300033": {
+      "name": "狙击战4",
+      "SpecificEffects": "<buf ID=900004>[再攻击]</buf>每回合可发动的次数<color=#F74848>+1</color>"
+    },
+    "300034": {
+      "name": "禁区2",
+      "SpecificEffects": "<buf ID=3000311>[禁区1]</buf>每回合可发动的次数<color=#F74848>+1</color>"
+    },
+    "300035": {
+      "name": "禁区3",
+      "SpecificEffects": "<buf ID=900013>[警戒射击]</buf>的伤害倍率提升<color=#F74848>0.15</color>倍"
+    },
+    "300036": {
+      "name": "禁区4",
+      "SpecificEffects": "<buf ID=900013>[警戒射击]</buf>必定攻击耐久值最低的部位，并使命中的目标造成伤害降低<color=#F74848>35%</color>，直到本次攻击结束"
+    },
+    "301041": {
+      "name": "绝尘1",
+      "SpecificEffects": "主动攻击对战时，若击毁目标，战后获得<color=#F74848>1</color>层<buf ID=3010502>[强击弹药]</buf>，每回合最多发动<color=#F74848>1</color>次"
+    },
+    "300042": {
+      "name": "AP优化4",
+      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+    },
+    "300043": {
+      "name": "动力革新3",
+      "SpecificEffects": "击毁目标时，战后额外回复<color=#F74848>1</color>AP，每回合最多发动<color=#F74848>2</color>次"
+    },
+    "301044": {
+      "name": "绝尘2",
+      "SpecificEffects": "使用<buf ID=3010504>[强化射击]</buf>可以额外提升<color=#F74848>10%</color>暴击率"
+    },
+    "301045": {
+      "name": "绝尘3",
+      "SpecificEffects": "使用<buf ID=3010504>[强化射击]</buf>时，每<color=#F74848>5%</color>暴击率可额外提升<color=#F74848>1%</color>暴击伤害，最多<color=#F74848>10%</color>"
+    },
+    "301046": {
+      "name": "绝尘4",
+      "SpecificEffects": "行动开始时获得的<buf ID=3010502>[强击弹药]</buf>提升至<color=#F74848>2</color>层"
+    }
+  }
+}

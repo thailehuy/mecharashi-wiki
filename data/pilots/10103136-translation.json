@@ -1,0 +1,131 @@
+{
+  "PilotName": "绘梨沙",
+  "RealName": "筱原绘梨沙",
+  "Gender": "Female",
+  "Profession": "Assault",
+  "Occupation": "突击手",
+  "Talent0_2Ability": {
+    "name": "好烫好烫！",
+    "SpecificEffects": "使用喷火器主动攻击对战时，触发<buf ID=900064>[余光锁定]</buf>，使用对侧手臂的喷火器优先攻击范围内其他目标，对目标及路径上所有目标造成<color=#F74848>15%</color>的<buf ID=900065>[火焰伤害]</buf>"
+  },
+  "Talent3_5Ability": {
+    "name": "好烫好烫！",
+    "SpecificEffects": "使用喷火器主动攻击对战时，触发<buf ID=900064>[余光锁定]</buf>，使用对侧手臂的喷火器优先攻击范围内其他目标，对目标及路径上所有目标造成<color=#F74848>15%</color>的<buf ID=900065>[火焰伤害]</buf>；\n主动攻击对战后，对所有攻击到的目标施加<buf ID=2012512>[关节熔解]</buf>，持续<color=#F74848>1</color>回合"
+  },
+  "skills": {
+    "200001": {
+      "name": "协同作战1",
+      "describe": "",
+      "SpecificEffects": "配合友军，使用突击或射击武器对友军攻击的目标发动<buf ID=900002>[协力攻击]</buf>，造成<color=#F74848>0.2</color>倍伤害，每回合最多发动<color=#F74848>1</color>次"
+    },
+    "700034": {
+      "name": "胜券在握",
+      "describe": "",
+      "SpecificEffects": "主动攻击对战时，若自身的耐久值百分比大于等于目标，伤害提升<color=#F74848>15%</color>"
+    },
+    "201203": {
+      "name": "采访许可",
+      "describe": "使自身获得<buf ID=2012032>[超高温！]</buf>，持续<color=#F74848>1</color>回合，然后可继续移动<color=#F74848>2</color>格，移动后可继续发起攻击",
+      "SpecificEffects": ""
+    },
+    "201204": {
+      "name": "熊熊盛意",
+      "describe": "使用喷火器攻击主目标，造成<color=#F74848>1.4</color>倍伤害，并对路径上的其他目标造成<color=#F74848>20%</color>的<buf ID=900065>[火焰伤害]</buf>，若主目标位于友方燃烧地形上，战后触发<color=#F74848>1</color>次该地形效果",
+      "SpecificEffects": ""
+    },
+    "201205": {
+      "name": "链路熔毁",
+      "describe": "",
+      "SpecificEffects": "主动攻击对战时，若击破部位，使目标无法反击，并对主目标施加<buf ID=2012512>[关节熔解]</buf>，持续<color=#F74848>1</color>回合"
+    },
+    "201206": {
+      "name": "热力迸发",
+      "describe": "使用喷火器攻击主目标，造成<color=#F74848>1.55</color>倍伤害，并对路径上的其他目标造成<color=#F74848>20%</color>的<buf ID=900065>[火焰伤害]</buf>，战后对主目标施加<buf ID=2012061>[余温]</buf>",
+      "SpecificEffects": ""
+    },
+    "201207": {
+      "name": "爆点头条",
+      "describe": "",
+      "SpecificEffects": "使用喷火器主动攻击对战时的AP消耗<color=#F74848>+1</color>，伤害倍率<color=#F74848>+0.2</color>"
+    },
+    "201208": {
+      "name": "烈火燎原",
+      "describe": "同时使用两把喷火器对攻击范围内所有目标造成<color=#F74848>2×0.35</color>倍伤害；战后对射程内所有的地格施加<terrian ID=4003081 />，持续<color=#F74848>2</color>回合",
+      "SpecificEffects": ""
+    }
+  },
+  "neuralPassives": {
+    "200011": {
+      "name": "协同作战2",
+      "SpecificEffects": "<buf ID=2000011>[协同作战1]</buf>每回合可发动的次数<color=#F74848>+1</color>"
+    },
+    "200012": {
+      "name": "动力革新1",
+      "SpecificEffects": "AP的回复值<color=#F74848>+1</color>"
+    },
+    "200013": {
+      "name": "AP优化1",
+      "SpecificEffects": "AP的初始值<color=#F74848>+1</color>"
+    },
+    "200021": {
+      "name": "协同作战3",
+      "SpecificEffects": "使<buf ID=2000011>[协同作战1]</buf>触发的<buf ID=900002>[协力攻击]</buf>伤害倍率提升至<color=#F74848>0.3</color>倍"
+    },
+    "200022": {
+      "name": "动力革新2",
+      "SpecificEffects": "击破部位时，战后回复<color=#F74848>1</color>AP，每回合最多发动<color=#F74848>1</color>次"
+    },
+    "200023": {
+      "name": "AP优化2",
+      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+    },
+    "200031": {
+      "name": "完美机位1",
+      "SpecificEffects": "解锁突击武器的<buf ID=900011>[最佳射程]</buf>，与位于<buf ID=900011>[最佳射程]</buf>的目标对战时，最终伤害提升<color=#F74848>15%</color>"
+    },
+    "200032": {
+      "name": "AP优化3",
+      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+    },
+    "200033": {
+      "name": "自适应作战1",
+      "SpecificEffects": "行动结束时，若本回合未主动攻击，则可以额外移动<color=#F74848>2</color>格"
+    },
+    "200034": {
+      "name": "完美机位2",
+      "SpecificEffects": "与位于<buf ID=900011>[最佳射程]</buf>的目标对战时，命中率提升<color=#F74848>12%</color>"
+    },
+    "200035": {
+      "name": "完美机位3",
+      "SpecificEffects": "与位于<buf ID=900011>[最佳射程]</buf>的目标对战时，暴击率提升<color=#F74848>15%</color>"
+    },
+    "200036": {
+      "name": "完美机位4",
+      "SpecificEffects": "与位于<buf ID=900011>[最佳射程]</buf>的目标对战时，<buf ID=2000311>[完美机位1]</buf>效果提升至<color=#F74848>30%</color>"
+    },
+    "201241": {
+      "name": "控温系统1",
+      "SpecificEffects": "触发<buf ID=900064>[余光锁定]</buf>时，对目标及路径上所有目标造成的<buf ID=900065>[火焰伤害]</buf>提升至<color=#F74848>20%</color>"
+    },
+    "200042": {
+      "name": "AP优化4",
+      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+    },
+    "200043": {
+      "name": "自适应作战2",
+      "SpecificEffects": "主动攻击前如果没有移动过，可发动<buf ID=900004>[再攻击]</buf>，攻击前无法移动，每回合最多发动<color=#F74848>1</color>次\n无法与同类<buf ID=900004>[再攻击]</buf>效果重复触发"
+    },
+    "201244": {
+      "name": "控温系统2",
+      "SpecificEffects": "位于燃烧地形上时，受到<buf ID=900072>[百分比伤害]</buf>降低<color=#F74848>50%</color>，并且造成伤害提升<color=#F74848>10%</color>"
+    },
+    "201245": {
+      "name": "控温系统3",
+      "SpecificEffects": "<buf ID=900064>[余光锁定]</buf>触发的攻击，也会触发本次攻击的武器技能效果"
+    },
+    "201246": {
+      "name": "控温系统4",
+      "SpecificEffects": "行动开始时，如果位于我方地形上，本回合首次攻击AP消耗<color=#F74848>-1</color>，最低<color=#F74848>1</color>点"
+    }
+  }
+}

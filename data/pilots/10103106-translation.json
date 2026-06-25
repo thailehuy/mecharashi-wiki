@@ -1,0 +1,131 @@
+{
+  "PilotName": "Naomi",
+  "RealName": "Naomi Romanov",
+  "Gender": "Female",
+  "Profession": "Launcher",
+  "Occupation": "Tactician",
+  "Talent0_2Ability": {
+    "name": "Incredible Hacker",
+    "SpecificEffects": "When both shoulders are equipped with Missile Launchers, you can use the <buf ID=900016>[Salvo]</buf> code to launch an attack, dealing <color=#F74848>2* 0.7x</color> DMG to the hit part and <color=#F74848>0.5x</color> Splash DMG to other parts."
+  },
+  "Talent3_5Ability": {
+    "name": "Incredible Hacker",
+    "SpecificEffects": "When both shoulders are equipped with Missile Launchers, able to use the <buf ID=900016>[Salvo]</buf> code to launch attack, deal <color=#F74848>2*0.7x</color> DMG to the hit part and <color=#F74848>0.5x</color> Splash DMG to other parts;\n<buf ID=900016>[Salvo]</buf>-style skill DMG <color=#F74848>+15%</color>"
+  },
+  "skills": {
+    "400001": {
+      "name": "Strategic Bombing 1",
+      "describe": "",
+      "SpecificEffects": "When a Tactical Weapon runs out of ammo, trigger <buf ID=900029>[Auto Load]</buf>. This process takes <color=#F74848>3</color> turns."
+    },
+    "400502": {
+      "name": "Explosive Attack",
+      "describe": "Uses Missile Launcher to attack a target, dealing <color=#F74848>1.0x</color> DMG to 1 part and <color=#F74848>1x</color> Splash DMG to the other parts.",
+      "SpecificEffects": ""
+    },
+    "400503": {
+      "name": "Zero-Day Vulnerability",
+      "describe": "",
+      "SpecificEffects": "When attacking with a Missile Launcher, if the target's HP is full, DMG <color=#F74848>+20%</color>."
+    },
+    "400504": {
+      "name": "Cheating",
+      "describe": "Fully restore Missile Launcher Ammo and gain <color=#F74848>1</color> AP. Can continue the action with the remaining movement.",
+      "SpecificEffects": ""
+    },
+    "700015": {
+      "name": "Rotation",
+      "describe": "",
+      "SpecificEffects": "At the end of the action, if no damage was dealt this turn, restore <color=#F74848>1</color> AP."
+    },
+    "400506": {
+      "name": "Root Control",
+      "describe": "Access <buf ID=900025>[Rack]</buf> mode: unable to move, Missile Launcher's Range <color=#F74848> +1</color>, DMG <color=#F74848>+10%</color>. Can continue the attack after racking. Automatically exits <buf ID=900025>[Rack]</buf> mode when the arm is damaged. In <buf ID=900025>[Rack]</buf> mode, can cast <buf ID=900026>[Retract]</buf> code. After retracting, can continue to move.",
+      "SpecificEffects": ""
+    },
+    "400507": {
+      "name": "CP Boost",
+      "describe": "",
+      "SpecificEffects": "When attacking with the Missile Launcher, AP Cost <color=#F74848>+1</color>, and DMG <color=#F74848>+20%</color>."
+    },
+    "400508": {
+      "name": "Grand Performance",
+      "describe": "Simultaneously use 2 Missile Launchers to attack a target. The <color=#F74848>2</color> missiles will hit the same part, dealing <color=#F74848>2* 0.85x</color> DMG and <color=#F74848>0.5x</color> Splash DMG to other parts.",
+      "SpecificEffects": ""
+    }
+  },
+  "neuralPassives": {
+    "400011": {
+      "name": "Strategic Bombing 2",
+      "SpecificEffects": "Tactical Weapon Magazine Capacity <color=#F74848>+1</color>."
+    },
+    "400012": {
+      "name": "Power Innovation 1",
+      "SpecificEffects": "AP Regen <color=#F74848>+1</color>."
+    },
+    "400013": {
+      "name": "AP Optimization 1",
+      "SpecificEffects": "Initial AP <color=#F74848>+1</color>."
+    },
+    "400021": {
+      "name": "Strategic Bombing 3",
+      "SpecificEffects": "Tactical Weapons Reload CD <color=#F74848>-1</color>."
+    },
+    "400022": {
+      "name": "Power Innovation 2",
+      "SpecificEffects": "AP Regen <color=#F74848>+1</color>."
+    },
+    "400023": {
+      "name": "AP Optimization 2",
+      "SpecificEffects": "AP Cap <color=#F74848>+2</color>."
+    },
+    "400031": {
+      "name": "Indiscriminate 1",
+      "SpecificEffects": "After the first attack with a Tactical Weapon each turn, <buf ID=900004>[Re-ATK]</buf> can be triggered, with Final DMG <color=#F74848>-30%</color>, effective up to <color=#F74848>1</color> time per turn. Unable to move before attacking."
+    },
+    "400032": {
+      "name": "AP Optimization 3",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
+    },
+    "400033": {
+      "name": "Strategic Bombing 4",
+      "SpecificEffects": "When <buf ID=900029>[Auto Load]</buf> is complete, restore <color=#F74848>1</color> AP."
+    },
+    "400034": {
+      "name": "Indiscriminate 2",
+      "SpecificEffects": "When attacking with a Tactical Weapon for the first time each turn, for every <color=#F74848>1</color> AP cost, DMG <color=#F74848>+4%</color>, up to <color=#F74848>20%</color>."
+    },
+    "400035": {
+      "name": "Indiscriminate 3",
+      "SpecificEffects": "When <buf ID=900004>[Re-ATK]</buf> is triggered, allow continued moving with the remaining movement."
+    },
+    "400036": {
+      "name": "Indiscriminate 4",
+      "SpecificEffects": "After triggering <buf ID=900004>[Re-ATK]</buf>, it no longer reduces final damage."
+    },
+    "400541": {
+      "name": "Ether Rats 1",
+      "SpecificEffects": "The damage multiplier for <buf ID=900016>[Salvo]</buf> is increased to <color=#F74848>2 * 0.75x</color>."
+    },
+    "400042": {
+      "name": "AP Optimization 4",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
+    },
+    "400043": {
+      "name": "Power Innovation 3",
+      "SpecificEffects": "When destroying a target, additionally restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>2</color> times per turn."
+    },
+    "400544": {
+      "name": "Ether Rats 2",
+      "SpecificEffects": "Arm's HP <color=#F74848>+30%</color>."
+    },
+    "400545": {
+      "name": "Ether Rats 3",
+      "SpecificEffects": "When attacking with the first Ammo in the Missile Launcher magazine, DMG <color=#F74848>+20%</color>."
+    },
+    "400546": {
+      "name": "Ether Rats 4",
+      "SpecificEffects": "When cast <buf ID=900016>[Salvo]</buf>-style skill, <color=#F74848>50%</color> chance to trigger, not consuming any Ammo"
+    }
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "PilotName": "艾达",
+  "RealName": "艾达·迪亚兹",
+  "Gender": "Female",
+  "Profession": "Striker",
+  "Occupation": "格斗家",
+  "Talent0_2Ability": {
+    "name": "凝势星爆",
+    "SpecificEffects": "主动攻击时，每命中<color=#F74848>1</color>个目标，战后获得<color=#F74848>1</color>层<buf ID=1017503>[凝势Ⅰ]</buf>，可叠加<color=#F74848>5</color>层；主动攻击后，若携带<color=#F74848>5</color>层及以上<buf ID=1017503>[凝势Ⅰ]</buf>，立刻移除<color=#F74848>5</color>层<buf ID=1017503>[凝势Ⅰ]</buf>，获得<color=#F74848>3</color>AP及对应的<buf ID=900138>[临时AP上限]</buf>，并发动<buf ID=900005>[再行动]</buf>，每回合最多发动<color=#F74848>1</color>次"
+  },
+  "Talent3_5Ability": {
+    "name": "凝势星爆",
+    "SpecificEffects": "主动攻击时，每命中<color=#F74848>1</color>个目标，战后获得<color=#F74848>1</color>层<buf ID=1017503>[凝势Ⅰ]</buf>，可叠加<color=#F74848>5</color>层；主动攻击后，若携带<color=#F74848>5</color>层及以上<buf ID=1017503>[凝势Ⅰ]</buf>，立刻移除<color=#F74848>5</color>层<buf ID=1017503>[凝势Ⅰ]</buf>，获得<color=#F74848>3</color>AP及对应的<buf ID=900138>[临时AP上限]</buf>，并发动<buf ID=900005>[再行动]</buf>，每回合最多发动<color=#F74848>1</color>次；\n出击时，获得<color=#F74848>2</color>层<buf ID=1017503>[凝势Ⅰ]</buf>；行动开始时，若上次行动触发过<buf ID=900133>[凝势]</buf>的AP回复效果后，则额外回复<color=#F74848>1</color>AP"
+  },
+  "skills": {
+    "100001": {
+      "name": "运动战1",
+      "describe": "",
+      "SpecificEffects": "击破部位后可发动<buf ID=900004>[再攻击]</buf>，攻击前无法移动，每回合最多发动<color=#F74848>2</color>次"
+    },
+    "101702": {
+      "name": "碎钢",
+      "describe": "",
+      "SpecificEffects": "主动攻击时，对耐久值高于等于<color=#F74848>50%</color>的部位伤害提升<color=#F74848>15%</color>"
+    },
+    "101703": {
+      "name": "镜心",
+      "describe": "",
+      "SpecificEffects": "遭受格斗或射击武器攻击对战时，若装备两把刀剑且双手完好，发动<buf ID=900136>[看破]</buf>，造成<color=#F74848>1.2</color>倍伤害，每回合最多发动<color=#F74848>1</color>次"
+    },
+    "101704": {
+      "name": "星坠闪",
+      "describe": "选择周围<color=#F74848>4</color>格内<color=#F74848>1</color>名目标（包括飞行目标），目标周围<color=#F74848>1</color>圈可以停留，使用刀剑对目标造成<color=#F74848>1.2</color>倍伤害，攻击前可<buf ID=900014>[瞄准]</buf>，命中目标后停留在目标周围<color=#F74848>1</color>圈随机空地上",
+      "SpecificEffects": ""
+    },
+    "101705": {
+      "name": "复辉",
+      "describe": "",
+      "SpecificEffects": "任意手臂损毁时，战后将修复最多<color=#F74848>1</color>只手臂<color=#F74848>50%</color>耐久值，间隔<color=#F74848>3</color>回合后可再次发动"
+    },
+    "101706": {
+      "name": "崩穹斩",
+      "describe": "使用两把刀剑攻击面前<range type=2>横向3格</range>或斜向折角<color=#F74848>3</color>格范围内的所有目标，攻击前可对所有目标分别进行<buf ID=900014>[瞄准]</buf>，造成<color=#F74848>1.5</color>倍范围伤害",
+      "SpecificEffects": ""
+    },
+    "101707": {
+      "name": "破势",
+      "describe": "",
+      "SpecificEffects": "行动开始时，若周围<color=#F74848>3</color>格内存在<color=#F74848>3</color>台及以上敌机，获得<color=#F74848>2</color>层<buf ID=1017503>[凝势Ⅰ]</buf>"
+    },
+    "101708": {
+      "name": "辉断终焉",
+      "describe": "使用两把刀剑攻击单个目标，造成<color=#F74848>2.4</color>倍伤害，必定攻击躯干，并获得<color=#F74848>2</color>层<buf ID=1017503>[凝势Ⅰ]</buf>",
+      "SpecificEffects": ""
+    }
+  },
+  "neuralPassives": {
+    "100011": {
+      "name": "运动战2",
+      "SpecificEffects": "发动<buf ID=900004>[再攻击]</buf>时，攻击前可以移动<color=#F74848>2</color>格"
+    },
+    "100012": {
+      "name": "动力革新1",
+      "SpecificEffects": "AP的回复值<color=#F74848>+1</color>"
+    },
+    "100013": {
+      "name": "AP优化1",
+      "SpecificEffects": "AP的初始值<color=#F74848>+1</color>"
+    },
+    "100021": {
+      "name": "运动战3",
+      "SpecificEffects": "击毁目标后可发动<buf ID=900005>[再行动]</buf>，使用完整移动力移动"
+    },
+    "100022": {
+      "name": "动力革新2",
+      "SpecificEffects": "击破部位时，战后回复<color=#F74848>1</color>AP，每回合最多发动<color=#F74848>1</color>次"
+    },
+    "100023": {
+      "name": "AP优化2",
+      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+    },
+    "101531": {
+      "name": "终结者1",
+      "SpecificEffects": "使用刀剑主动攻击后，如果命中的部位耐久值低于<color=#F74848>15%</color>，发动<buf ID=900109>[处决]</buf>效果，战后直接破坏该部位"
+    },
+    "100032": {
+      "name": "AP优化3",
+      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+    },
+    "100033": {
+      "name": "运动战4",
+      "SpecificEffects": "<buf ID=900004>[再攻击]</buf>或<buf ID=900005>[再行动]</buf>每回合可发动的次数<color=#F74848>+1</color>"
+    },
+    "101534": {
+      "name": "终结者2",
+      "SpecificEffects": "<buf ID=1015311>[终结者1]</buf>破坏部位的临界线提升至<color=#F74848>25%</color>"
+    },
+    "101535": {
+      "name": "终结者3",
+      "SpecificEffects": "发动<buf ID=900101>[终结者]</buf>破坏部位时，抵消<color=#F74848>1</color>次<buf ID=900004>[再攻击]</buf>或<buf ID=900005>[再行动]</buf>的次数扣除并额外回复<color=#F74848>1</color>AP，每回合最多发动<color=#F74848>1</color>次"
+    },
+    "101536": {
+      "name": "终结者4",
+      "SpecificEffects": "使用刀剑击破躯干以外的部位时，对躯干造成相当于该部位最大耐久值<color=#F74848>25%</color>的<buf ID=900017>[固定伤害]</buf>"
+    },
+    "101741": {
+      "name": "双生星芒1",
+      "SpecificEffects": "携带<buf ID=900133>[凝势]</buf>时，移动力<color=#F74848>+1</color>"
+    },
+    "100042": {
+      "name": "AP优化4",
+      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+    },
+    "100043": {
+      "name": "动力革新3",
+      "SpecificEffects": "击毁目标时，战后额外回复<color=#F74848>1</color>AP，每回合最多发动<color=#F74848>2</color>次"
+    },
+    "101744": {
+      "name": "双生星芒2",
+      "SpecificEffects": "<buf ID=900133>[凝势]</buf>可叠加<color=#F74848>7</color>层"
+    },
+    "101745": {
+      "name": "双生星芒3",
+      "SpecificEffects": "<buf ID=900133>[凝势]</buf>额外提升<color=#F74848>3%</color>暴击率"
+    },
+    "101746": {
+      "name": "双生星芒4",
+      "SpecificEffects": "天赋效果提升为回复<color=#F74848>5</color>AP，并额外获得<buf ID=1017466>[星爆]</buf>，持续<color=#F74848>1</color>回合"
+    }
+  }
+}

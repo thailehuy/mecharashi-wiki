@@ -1,0 +1,131 @@
+{
+  "PilotName": "Alyson",
+  "RealName": "Alyson Doll",
+  "Gender": "Female",
+  "Profession": "Gunner",
+  "Occupation": "Sniper",
+  "Talent0_2Ability": {
+    "name": "Investor",
+    "SpecificEffects": "During an Active Attack with a Light Rifle, inflict <buf ID=900048>[Weight of Hit UP]</buf> on the hit part after combat, lasting for <color=#F74848>1</color> turn. A single unit can carry only <color=#F74848>1</color> type of Hit Boost effect at a time."
+  },
+  "Talent3_5Ability": {
+    "name": "Investor",
+    "SpecificEffects": "During an Active Attack with a Light Rifle, inflict <buf ID=900048>[Weight of Hit UP]</buf> on the hit part after combat, lasting for <color=#F74848>1</color> turn. A single unit can carry only <color=#F74848>1</color> type of Hit Boost effect at a time.\nWhen inflicting debuffs, the duration <color=#F74848>+1</color>."
+  },
+  "skills": {
+    "300001": {
+      "name": "Sniper Warfare 1",
+      "describe": "",
+      "SpecificEffects": "When destroying a target, <buf ID=900004>[Re-ATK]</buf> can be triggered, effective up to <color=#F74848>2</color> times per turn. Unable to move before attacking."
+    },
+    "300502": {
+      "name": "Herd Mentality",
+      "describe": "Uses Light Rifle to attack a target, dealing <color=#F74848>1.25x</color> DMG. This attack prioritizes Arms.",
+      "SpecificEffects": ""
+    },
+    "300503": {
+      "name": "Joint Venture Advantage",
+      "describe": "",
+      "SpecificEffects": "During an Active Attack, grant allies involved in a <buf ID=900002>[Link Attack]</buf> DMG <color=#F74848>+30%</color>."
+    },
+    "300504": {
+      "name": "Asset Injection",
+      "describe": "Designate 1 ally and grant this ally <color=#F74848>1</color> additional use of <buf ID=900002>[Link Attack]</buf>, effective for <color=#F74848>1</color> time. Can continue the action with the remaining movement.",
+      "SpecificEffects": ""
+    },
+    "300505": {
+      "name": "Financing",
+      "describe": "",
+      "SpecificEffects": "During an Active Attack, inflict <buf ID=900045>[DMG Taken UP]</buf> on the target after combat. The effect of this state is based on the number of allies involved in a Link Attack. For each <color=#F74848>1</color> ally involved, increase the effect by <color=#F74848>5%</color>, up to <color=#F74848>15%</color>, lasting for <color=#F74848>1</color> turn."
+    },
+    "300506": {
+      "name": "Private Investment",
+      "describe": "Uses Rifle to attack a target, dealing <color=#F74848>1.2x</color> DMG. Before combat, access <buf ID=900014>[Aiming]</buf> mode.",
+      "SpecificEffects": ""
+    },
+    "300507": {
+      "name": "Long-term Hold",
+      "describe": "",
+      "SpecificEffects": "During an Active Attack in combat, if the target cannot retaliate, increase the remaining turns of the target's carried debuffs by <color=#F74848>1</color>."
+    },
+    "300508": {
+      "name": "ALL IN",
+      "describe": "Uses Light Rifle to attack a target, dealing <color=#F74848>1.3x</color> DMG and inflicting <buf ID=900048>[Weight of Hit UP]</buf> immediately. Before combat, access <buf ID=900014>[Aiming]</buf> mode. All enable allies to launch <buf ID=900002>[Link Attack]</buf> against this target. This [Link Attack] does not require allies to possess a specific skill and does not consume any Link times.",
+      "SpecificEffects": ""
+    }
+  },
+  "neuralPassives": {
+    "300011": {
+      "name": "Sniper Warfare 2",
+      "SpecificEffects": "After breaking a part, trigger <buf ID=900004>[Re-ATK]</buf>."
+    },
+    "300012": {
+      "name": "Power Innovation 1",
+      "SpecificEffects": "AP Regen <color=#F74848>+1</color>."
+    },
+    "300013": {
+      "name": "AP Optimization 1",
+      "SpecificEffects": "Initial AP <color=#F74848>+1</color>."
+    },
+    "300021": {
+      "name": "Sniper Warfare 3",
+      "SpecificEffects": "Upon triggering <buf ID=900004>[Re-ATK]</buf>, allows movement of <color=#F74848>2</color> tiles before attacking."
+    },
+    "300022": {
+      "name": "Power Innovation 2",
+      "SpecificEffects": "When breaking a part, restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>1</color> time per turn."
+    },
+    "300023": {
+      "name": "AP Optimization 2",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
+    },
+    "300031": {
+      "name": "Forbidden Zone 1",
+      "SpecificEffects": "With a Ranged Weapon, launch <buf ID=900013>[Vigilant Shot]</buf> before the enemy attack within range, dealing <color=#F74848>0.35x</color> DMG, effective up to <color=#F74848>1</color> time per turn."
+    },
+    "300032": {
+      "name": "AP Optimization 3",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
+    },
+    "300033": {
+      "name": "Sniper Warfare 4",
+      "SpecificEffects": "<buf ID=900004>[Re-ATK]</buf>'s effective times per turn <color=#F74848>+1</color>."
+    },
+    "300034": {
+      "name": "Forbidden Zone 2",
+      "SpecificEffects": "<buf ID=900013>[Vigilant Shot]</buf>'s effective times per turn <color=#F74848>+1</color>."
+    },
+    "300035": {
+      "name": "Forbidden Zone 3",
+      "SpecificEffects": "<buf ID=900013>[Vigilant Shot]</buf>'s damage multiplier is increased to <color=#F74848>0.5</color>."
+    },
+    "300036": {
+      "name": "Forbidden Zone 4",
+      "SpecificEffects": "<buf ID=900013>[Vigilant Shot]</buf> is launched against an enemy that has not attacked. Targets the part with the lowest HP."
+    },
+    "300541": {
+      "name": "The Wolf of Doll 1",
+      "SpecificEffects": "When triggering <buf ID=3005501>[Investor]</buf>, also inflict <buf ID=3005412>[Global Repair Effect Down]</buf>, lasting for <color=#F74848>1</color> turn."
+    },
+    "300042": {
+      "name": "AP Optimization 4",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
+    },
+    "300043": {
+      "name": "Power Innovation 3",
+      "SpecificEffects": "When destroying a target, additionally restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>2</color> times per turn."
+    },
+    "300544": {
+      "name": "The Wolf of Doll 2",
+      "SpecificEffects": "When triggering <buf ID=3005501>[Investor]</buf>, also inflict <buf ID=3005443>[Repair Damaged Part Disabled]</buf>, lasting for <color=#F74848>1</color> turn."
+    },
+    "300545": {
+      "name": "The Wolf of Doll 3",
+      "SpecificEffects": "When a part of a target with <buf ID=900048>[Weight of Hit UP]</buf> is broken, lose <color=#F74848>1</color> AP after combat, up to <color=#F74848>1</color> time per turn."
+    },
+    "300546": {
+      "name": "The Wolf of Doll 4",
+      "SpecificEffects": "<buf ID=900038>[Weight of Hit UP]</buf> is now <color=#F74848>37.5%</color>."
+    }
+  }
+}

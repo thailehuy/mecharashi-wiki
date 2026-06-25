@@ -1,0 +1,131 @@
+{
+  "PilotName": "Sylvie",
+  "RealName": "Sylvie Roussel",
+  "Gender": "Female",
+  "Profession": "Gunner",
+  "Occupation": "Sniper",
+  "Talent0_2Ability": {
+    "name": "Epiphyllum's Move",
+    "SpecificEffects": "When attacking with a Light Rifle, you can access <buf ID=900014>[Aiming]</buf> mode while equipped with a small shield. This skill allows for continued movement with any remaining movement after combat."
+  },
+  "Talent3_5Ability": {
+    "name": "Epiphyllum's Move",
+    "SpecificEffects": "When attacking with a Light Rifle, you can access <buf ID=900014>[Aiming]</buf> mode while equipped with a small shield. This skill allows for continued movement with any remaining movement after combat.\nIn combat, if there are more enemies in the adjacent (<color=#F74848>2</color> tiles) area, Crit Rate <color=#F74848>+15%</color>."
+  },
+  "skills": {
+    "300001": {
+      "name": "Sniper Warfare 1",
+      "describe": "",
+      "SpecificEffects": "When destroying a target, <buf ID=900004>[Re-ATK]</buf> can be triggered, effective up to <color=#F74848>2</color> times per turn. Unable to move before attacking."
+    },
+    "300802": {
+      "name": "Foul Play",
+      "describe": "",
+      "SpecificEffects": "During an Active Attack, if the target's HP is full, Crit DMG <color=#F74848>+15%</color>."
+    },
+    "300803": {
+      "name": "Virtual",
+      "describe": "Uses Light Rifle to shoot a target <color=#F74848>2</color> times, with each shot dealing <color=#F74848>0.75x</color> DMG. When equipped with a Small Shield, access <buf ID=900014>[Aiming]</buf> mode, ignoring the Large Shield's <buf ID=900027>[Target Shift]</buf> effect. The <color=#F74848>2nd</color> shot will hit a random part.",
+      "SpecificEffects": ""
+    },
+    "300804": {
+      "name": "Spirit Blessing",
+      "describe": "",
+      "SpecificEffects": "If any arm is broken, Dodge Rate <color=#F74848>+25%</color>."
+    },
+    "700021": {
+      "name": "Range Suppression",
+      "describe": "",
+      "SpecificEffects": "During an Active Attack in combat, for every <color=#F74848>1</color> tile the target is farther away, DMG <color=#F74848>+5%</color>, up to <color=#F74848>20%</color>."
+    },
+    "300806": {
+      "name": "Ambush",
+      "describe": "Uses Light Rifle to attack a target, dealing <color=#F74848>1.3x</color> DMG. Access <buf ID=900014>[Aiming]</buf> mode when equipped with a Small Shield. After combat, it inflicts <buf ID=3008061>[Guard Disabled]</buf> on the target, lasting <color=#F74848>1</color> turn.",
+      "SpecificEffects": ""
+    },
+    "300807": {
+      "name": "Unhurt",
+      "describe": "",
+      "SpecificEffects": "When the Legs part is damaged, Movement will not be reduced."
+    },
+    "300808": {
+      "name": "Bloom",
+      "describe": "Uses Light Rifle to attack a target, dealing <color=#F74848>1.6x</color> DMG. Can access <buf ID=900014>[Aiming]</buf> mode when equipped with a Small Shield. Before combat, inflict <buf ID=3008081>[Ignore Guard]</buf> to the target, lasting<color=#F74848>1</color> turn.",
+      "SpecificEffects": ""
+    }
+  },
+  "neuralPassives": {
+    "300011": {
+      "name": "Sniper Warfare 2",
+      "SpecificEffects": "After breaking a part, trigger <buf ID=900004>[Re-ATK]</buf>."
+    },
+    "300012": {
+      "name": "Power Innovation 1",
+      "SpecificEffects": "AP Regen <color=#F74848>+1</color>."
+    },
+    "300013": {
+      "name": "AP Optimization 1",
+      "SpecificEffects": "Initial AP <color=#F74848>+1</color>."
+    },
+    "300021": {
+      "name": "Sniper Warfare 3",
+      "SpecificEffects": "Upon triggering <buf ID=900004>[Re-ATK]</buf>, allows movement of <color=#F74848>2</color> tiles before attacking."
+    },
+    "300022": {
+      "name": "Power Innovation 2",
+      "SpecificEffects": "When breaking a part, restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>1</color> time per turn."
+    },
+    "300023": {
+      "name": "AP Optimization 2",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
+    },
+    "300031": {
+      "name": "Forbidden Zone 1",
+      "SpecificEffects": "With a Ranged Weapon, launch <buf ID=900013>[Vigilant Shot]</buf> before the enemy attack within range, dealing <color=#F74848>0.35x</color> DMG, effective up to <color=#F74848>1</color> time per turn."
+    },
+    "300032": {
+      "name": "AP Optimization 3",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
+    },
+    "300033": {
+      "name": "Sniper Warfare 4",
+      "SpecificEffects": "<buf ID=900004>[Re-ATK]</buf>'s effective times per turn <color=#F74848>+1</color>."
+    },
+    "300034": {
+      "name": "Forbidden Zone 2",
+      "SpecificEffects": "<buf ID=900013>[Vigilant Shot]</buf>'s effective times per turn <color=#F74848>+1</color>."
+    },
+    "300035": {
+      "name": "Forbidden Zone 3",
+      "SpecificEffects": "<buf ID=900013>[Vigilant Shot]</buf>'s damage multiplier is increased to <color=#F74848>0.5</color>."
+    },
+    "300036": {
+      "name": "Forbidden Zone 4",
+      "SpecificEffects": "<buf ID=900013>[Vigilant Shot]</buf> is launched against an enemy that has not attacked. Targets the part with the lowest HP."
+    },
+    "300841": {
+      "name": "Epiphyllum's Heart 1",
+      "SpecificEffects": "In <buf ID=900014>[Aiming]</buf> mode, for each unused Movement, DMG <color=#F74848>+4%</color>, up to <color=#F74848>20%</color>."
+    },
+    "300042": {
+      "name": "AP Optimization 4",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
+    },
+    "300043": {
+      "name": "Power Innovation 3",
+      "SpecificEffects": "When destroying a target, additionally restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>2</color> times per turn."
+    },
+    "300844": {
+      "name": "Epiphyllum's Heart 2",
+      "SpecificEffects": "In <buf ID=900014>[Aiming]</buf> mode, Hit Rate <color=#F74848>+10%</color>."
+    },
+    "300845": {
+      "name": "Epiphyllum's Heart 3",
+      "SpecificEffects": "Small Shield DMG Taken <color=#F74848>-15%</color>"
+    },
+    "300846": {
+      "name": "Epiphyllum's Heart 4",
+      "SpecificEffects": "The <buf ID=3008501>[Epiphyllum's Move]</buf> no longer requires the Small Shield to activate."
+    }
+  }
+}

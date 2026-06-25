@@ -1,0 +1,131 @@
+{
+  "PilotName": "卡夏",
+  "RealName": "卡夏·卢米埃尔",
+  "Gender": "Female",
+  "Profession": "Assault",
+  "Occupation": "突击手",
+  "Talent0_2Ability": {
+    "name": "伏锋",
+    "SpecificEffects": "若装备两把机枪，发动反击时发动<buf ID=900095>[双枪反击]</buf>，造成<color=#F74848>2×0.6</color>倍伤害；\n行动结束时，获得<color=#F74848>1</color>层<buf ID=2015509>[强化反击]</buf>，可叠加<color=#F74848>5</color>层"
+  },
+  "Talent3_5Ability": {
+    "name": "伏锋",
+    "SpecificEffects": "若装备两把机枪，发动反击时发动<buf ID=900095>[双枪反击]</buf>，造成<color=#F74848>2×0.6</color>倍伤害；\n行动结束时，获得<color=#F74848>1</color>层<buf ID=2015509>[强化反击]</buf>，可叠加<color=#F74848>5</color>层；\n反击时可获得<color=#F74848>1</color>AP，每回合最多发动<color=#F74848>1</color>次"
+  },
+  "skills": {
+    "200001": {
+      "name": "协同作战1",
+      "describe": "",
+      "SpecificEffects": "配合友军，使用突击或射击武器对友军攻击的目标发动<buf ID=900002>[协力攻击]</buf>，造成<color=#F74848>0.2</color>倍伤害，每回合最多发动<color=#F74848>1</color>次"
+    },
+    "201502": {
+      "name": "连战养护",
+      "describe": "",
+      "SpecificEffects": "反击造成伤害时，战后恢复完好部位的耐久值，恢复量为伤害的<color=#F74848>25%</color>"
+    },
+    "201503": {
+      "name": "火线风暴",
+      "describe": "同时使用两把机枪对<range type=1>面前扇形</range>范围内的所有目标，造成<color=#F74848>2×0.3</color>倍范围伤害，每命中<color=#F74848>1</color>名目标，战后获得<color=#F74848>1</color>层<buf ID=2015509>[强化反击]</buf>，最多<color=#F74848>1</color>次获得<color=#F74848>3</color>层，可叠加<color=#F74848>5</color>层",
+      "SpecificEffects": ""
+    },
+    "201504": {
+      "name": "连珠",
+      "describe": "同时使用两把机枪攻击单个目标，造成<color=#F74848>2×0.7</color>倍伤害，自身获得<color=#F74848>1</color>层<buf ID=2015041>[反击爆发]</buf>，可叠加<color=#F74848>3</color>层",
+      "SpecificEffects": ""
+    },
+    "201505": {
+      "name": "防线设立",
+      "describe": "",
+      "SpecificEffects": "使自身周围<color=#F74848>3</color>格范围内其他友军可使用突击或射击武器发动<buf ID=900061>[协力反击]</buf>，造成<color=#F74848>0.2</color>倍伤害，每回合最多发动<color=#F74848>1</color>次"
+    },
+    "201506": {
+      "name": "战意勃发",
+      "describe": "指定<color=#F74848>1</color>名其他友军获得<buf ID=2015061>[荫庇]</buf>，持续至目标下次行动开始，然后可使用剩余移动力继续行动",
+      "SpecificEffects": ""
+    },
+    "201507": {
+      "name": "戮力同心",
+      "describe": "",
+      "SpecificEffects": "自身周围<color=#F74848>3</color>格范围内的友军发动<buf ID=900096>[反击]</buf>和<buf ID=900061>[协力反击]</buf>时，伤害提升<color=#F74848>10%</color>，命中率提升<color=#F74848>5%</color>"
+    },
+    "201508": {
+      "name": "怒涛将至",
+      "describe": "自身获得<buf ID=2015081>[逆袭时刻]</buf>和<buf ID=2015087>[怒涛将至]</buf>；\n自身反击时不消耗<buf ID=2015509>[强化反击]</buf>，持续至下次行动开始时",
+      "SpecificEffects": ""
+    }
+  },
+  "neuralPassives": {
+    "200011": {
+      "name": "协同作战2",
+      "SpecificEffects": "<buf ID=2000011>[协同作战1]</buf>每回合可发动的次数<color=#F74848>+1</color>"
+    },
+    "200012": {
+      "name": "动力革新1",
+      "SpecificEffects": "AP的回复值<color=#F74848>+1</color>"
+    },
+    "200013": {
+      "name": "AP优化1",
+      "SpecificEffects": "AP的初始值<color=#F74848>+1</color>"
+    },
+    "200021": {
+      "name": "协同作战3",
+      "SpecificEffects": "使<buf ID=2000011>[协同作战1]</buf>触发的<buf ID=900002>[协力攻击]</buf>伤害倍率提升至<color=#F74848>0.3</color>倍"
+    },
+    "200022": {
+      "name": "动力革新2",
+      "SpecificEffects": "击破部位时，战后回复<color=#F74848>1</color>AP，每回合最多发动<color=#F74848>1</color>次"
+    },
+    "200023": {
+      "name": "AP优化2",
+      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+    },
+    "200031": {
+      "name": "完美机位1",
+      "SpecificEffects": "解锁突击武器的<buf ID=900011>[最佳射程]</buf>，与位于<buf ID=900011>[最佳射程]</buf>的目标对战时，最终伤害提升<color=#F74848>15%</color>"
+    },
+    "200032": {
+      "name": "AP优化3",
+      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+    },
+    "200033": {
+      "name": "自适应作战1",
+      "SpecificEffects": "行动结束时，若本回合未主动攻击，则可以额外移动<color=#F74848>2</color>格"
+    },
+    "200034": {
+      "name": "完美机位2",
+      "SpecificEffects": "与位于<buf ID=900011>[最佳射程]</buf>的目标对战时，命中率提升<color=#F74848>12%</color>"
+    },
+    "200035": {
+      "name": "完美机位3",
+      "SpecificEffects": "与位于<buf ID=900011>[最佳射程]</buf>的目标对战时，暴击率提升<color=#F74848>15%</color>"
+    },
+    "200036": {
+      "name": "完美机位4",
+      "SpecificEffects": "与位于<buf ID=900011>[最佳射程]</buf>的目标对战时，<buf ID=2000311>[完美机位1]</buf>效果提升至<color=#F74848>30%</color>"
+    },
+    "201541": {
+      "name": "天火1",
+      "SpecificEffects": "行动结束时，自身周围<color=#F74848>3</color>格范围内每有<color=#F74848>1</color>台敌机，额外获得<color=#F74848>1</color>层<buf ID=2015509>[强化反击]</buf>，最多获得<color=#F74848>2</color>层"
+    },
+    "200042": {
+      "name": "AP优化4",
+      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+    },
+    "200043": {
+      "name": "自适应作战2",
+      "SpecificEffects": "主动攻击前如果没有移动过，可发动<buf ID=900004>[再攻击]</buf>，攻击前无法移动，每回合最多发动<color=#F74848>1</color>次\n无法与同类<buf ID=900004>[再攻击]</buf>效果重复触发"
+    },
+    "201544": {
+      "name": "天火2",
+      "SpecificEffects": "<buf ID=900023>[反击先手]</buf>时，驱散攻击者携带的<color=#F74848>1</color>个增益效果"
+    },
+    "201545": {
+      "name": "天火3",
+      "SpecificEffects": "携带<buf ID=2015509>[强化反击]</buf>时，遭受伤害降低<color=#F74848>10%</color>"
+    },
+    "201546": {
+      "name": "天火4",
+      "SpecificEffects": "<buf ID=900095>[双枪反击]</buf>倍率<color=#F74848>+0.1</color>"
+    }
+  }
+}

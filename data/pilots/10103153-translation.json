@@ -1,0 +1,131 @@
+{
+  "PilotName": "帕洛玛",
+  "RealName": "帕洛玛·柯格尼托尼斯",
+  "Gender": "Female",
+  "Profession": "Gunner",
+  "Occupation": "狙击手",
+  "Talent0_2Ability": {
+    "name": "实验观察",
+    "SpecificEffects": "可以使用指令<skill mainSkill=301150>[定向架起]</skill>；<buf ID=900111>[定向架起]</buf>状态下，每命中敌机<color=#F74848>1</color>次，获得<color=#F74848>1</color>层<buf ID=3011512>[阵地优势Ⅰ]</buf>，使用指令或主动攻击后，若周围<color=#F74848>3</color>格内没有敌机，使自身进入<buf ID=3004502>[隐形Ⅰ]</buf>状态，持续<color=#F74848>2</color>回合"
+  },
+  "Talent3_5Ability": {
+    "name": "实验观察",
+    "SpecificEffects": "可以使用指令<skill mainSkill=301150>[定向架起]</skill>；<buf ID=900111>[定向架起]</buf>状态下，每命中敌机<color=#F74848>1</color>次，获得<color=#F74848>1</color>层<buf ID=3011512>[阵地优势Ⅰ]</buf>，使用指令或主动攻击后，若周围<color=#F74848>3</color>格内没有敌机，使自身进入<buf ID=3004502>[隐形Ⅰ]</buf>状态，持续<color=#F74848>2</color>回合；\n<buf ID=3011512>[阵地优势Ⅰ]</buf>最大层数增加<color=#F74848>4</color>层"
+  },
+  "skills": {
+    "300001": {
+      "name": "狙击战1",
+      "describe": "",
+      "SpecificEffects": "击毁目标后可发动<buf ID=900004>[再攻击]</buf>，攻击前无法移动，每回合最多发动<color=#F74848>2</color>次"
+    },
+    "300902": {
+      "name": "耐心",
+      "describe": "",
+      "SpecificEffects": "发起攻击时，若本回合没有移动，伤害提升<color=#F74848>15%</color>"
+    },
+    "301103": {
+      "name": "即兴试验",
+      "describe": "使用狙击步枪攻击单个目标，造成<color=#F74848>0.8</color>倍伤害，攻击前可以进行<buf ID=900014>[瞄准]</buf>，战后可发动<buf ID=900004>[再攻击]</buf>，攻击前无法移动，每回合最多施放<color=#F74848>1</color>次",
+      "SpecificEffects": ""
+    },
+    "301104": {
+      "name": "记仇！",
+      "describe": "",
+      "SpecificEffects": "遭受对战无法反击时，立即回复<color=#F74848>1</color>AP，每回合最多触发<color=#F74848>2</color>次"
+    },
+    "301105": {
+      "name": "受体筛选",
+      "describe": "",
+      "SpecificEffects": "<buf ID=900013>[警戒射击]</buf>每回合可发动次数<color=#F74848>+1</color>；<buf ID=900111>[定向架起]</buf>时<buf ID=900013>[警戒射击]</buf>伤害倍率提升<color=#F74848>0.35</color>倍"
+    },
+    "301106": {
+      "name": "超量剂量",
+      "describe": "使用狙击步枪攻击目标及射程内路径上的所有敌机，造成<color=#F74848>1</color>倍伤害，攻击前可以进行<buf ID=900014>[瞄准]</buf>",
+      "SpecificEffects": ""
+    },
+    "301107": {
+      "name": "B计划！",
+      "describe": "",
+      "SpecificEffects": "退出<buf ID=900111>[定向架起]</buf>时，根据<buf ID=3011512>[阵地优势Ⅰ]</buf>层数获得移动力加成，每<color=#F74848>4</color>层获得移动力<color=#F74848>+1</color>，持续<color=#F74848>1</color>回合"
+    },
+    "301108": {
+      "name": "戏谑余裕",
+      "describe": "使用狙击步枪按照耐久值从低到高的顺序依次攻击射程内的不同敌机<color=#F74848>5</color>次，造成<color=#F74848>0.7</color>倍伤害，必定攻击耐久值最低的部位，敌机小于<color=#F74848>5</color>个时多余次数攻击随机目标和部位；攻击中若造成暴击，后续伤害倍率提升<color=#F74848>0.2</color>倍，可叠加；\n本次攻击暴击率提升<color=#F74848>15%</color>",
+      "SpecificEffects": ""
+    }
+  },
+  "neuralPassives": {
+    "300011": {
+      "name": "狙击战2",
+      "SpecificEffects": "<buf ID=3000011>[狙击战1]</buf>在击破部位后即可发动"
+    },
+    "300012": {
+      "name": "动力革新1",
+      "SpecificEffects": "AP的回复值<color=#F74848>+1</color>"
+    },
+    "300013": {
+      "name": "AP优化1",
+      "SpecificEffects": "AP的初始值<color=#F74848>+1</color>"
+    },
+    "300021": {
+      "name": "狙击战3",
+      "SpecificEffects": "发动<buf ID=3000011>[狙击战1]</buf>的<buf ID=900004>[再攻击]</buf>时，攻击前可以移动<color=#F74848>2</color>格"
+    },
+    "300022": {
+      "name": "动力革新2",
+      "SpecificEffects": "击破部位时，战后回复<color=#F74848>1</color>AP，每回合最多发动<color=#F74848>1</color>次"
+    },
+    "300023": {
+      "name": "AP优化2",
+      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+    },
+    "300031": {
+      "name": "禁区1",
+      "SpecificEffects": "使用射击武器，在射程内的敌机发起主动攻击对战前，触发<buf ID=900013>[警戒射击]</buf>，造成<color=#F74848>0.5</color>倍伤害，每回合最多发动<color=#F74848>1</color>次"
+    },
+    "300032": {
+      "name": "AP优化3",
+      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+    },
+    "300033": {
+      "name": "狙击战4",
+      "SpecificEffects": "<buf ID=900004>[再攻击]</buf>每回合可发动的次数<color=#F74848>+1</color>"
+    },
+    "300034": {
+      "name": "禁区2",
+      "SpecificEffects": "<buf ID=3000311>[禁区1]</buf>每回合可发动的次数<color=#F74848>+1</color>"
+    },
+    "300035": {
+      "name": "禁区3",
+      "SpecificEffects": "<buf ID=900013>[警戒射击]</buf>的伤害倍率提升<color=#F74848>0.15</color>倍"
+    },
+    "300036": {
+      "name": "禁区4",
+      "SpecificEffects": "<buf ID=900013>[警戒射击]</buf>必定攻击耐久值最低的部位，并使命中的目标造成伤害降低<color=#F74848>35%</color>，直到本次攻击结束"
+    },
+    "301141": {
+      "name": "古灵精怪1",
+      "SpecificEffects": "<buf ID=900112>[阵地优势]</buf>在击破部位时额外获得<color=#F74848>1</color>层，每回合最多发动<color=#F74848>4</color>次"
+    },
+    "300042": {
+      "name": "AP优化4",
+      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+    },
+    "300043": {
+      "name": "动力革新3",
+      "SpecificEffects": "击毁目标时，战后额外回复<color=#F74848>1</color>AP，每回合最多发动<color=#F74848>2</color>次"
+    },
+    "301144": {
+      "name": "古灵精怪2",
+      "SpecificEffects": "处于<buf ID=900111>[定向架起]</buf>时可使用<skill mainSkill=301144>[快速定向]</skill>指令"
+    },
+    "301145": {
+      "name": "古灵精怪3",
+      "SpecificEffects": "<buf ID=900112>[阵地优势]</buf>每层额外提升<color=#F74848>2%</color>伤害"
+    },
+    "301146": {
+      "name": "古灵精怪4",
+      "SpecificEffects": "行动结束时，若处于<buf ID=900111>[定向架起]</buf>状态，狙击步枪射程<color=#F74848>+1</color>，可叠加<color=#F74848>2</color>层，退出<buf ID=900111>[定向架起]</buf>时失去所有层数"
+    }
+  }
+}

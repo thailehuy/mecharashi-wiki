@@ -1,0 +1,18 @@
+{
+  "name": "Roadrunner",
+  "introduce": "OS-10R Roadrunner\nObsidian developed this medium sized ST with a high cost to performance ratio compared to other STs of the same type and generation.\nThis model features a frontal observation device and an external steel frame that can carry additional maintenance equipment. It uses the \"Moho Discontinuity EDGE System\" to improve protection and further reduce costs, which has won it wide acclaim in the market.\nIt is reported that this ST's proprietary technology originally came from the Principality of Ovett.",
+  "modules": {
+    "10054": {
+      "name": "Intensive Analyzer",
+      "SpecificEffects": "When performing active repairs, there is a <color=#F74848>70%</color> chance to trigger Repair AMT <color=#F74848>+15%</color>."
+    },
+    "40054": {
+      "name": "HP Mod",
+      "SpecificEffects": "HP <color=#F74848>+10%</color>."
+    },
+    "30222": {
+      "name": "Urgent Repair Mod",
+      "SpecificEffects": "When performing active repairs on parts with the lowest HP, Repair AMT <color=#F74848>+8%</color>."
+    }
+  }
+}

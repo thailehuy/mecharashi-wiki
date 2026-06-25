@@ -1,0 +1,131 @@
+{
+  "PilotName": "Natalia",
+  "RealName": "Natalia Coronado",
+  "Gender": "Female",
+  "Profession": "Gunner",
+  "Occupation": "Sniper",
+  "Talent0_2Ability": {
+    "name": "Information Collection",
+    "SpecificEffects": "When an ST is destroyed within range, passively restore <color=#F74848>1</color> AP, with a trigger interval of <color=#F74848>1</color> turn."
+  },
+  "Talent3_5Ability": {
+    "name": "Information Collection",
+    "SpecificEffects": "When an ST is destroyed within range, passively restore <color=#F74848>1</color> AP, with a trigger interval of <color=#F74848>1</color> turn.\nCrit DMG <color=#F74848>+10%</color>."
+  },
+  "skills": {
+    "300001": {
+      "name": "Sniper Warfare 1",
+      "describe": "",
+      "SpecificEffects": "When destroying a target, <buf ID=900004>[Re-ATK]</buf> can be triggered, effective up to <color=#F74848>2</color> times per turn. Unable to move before attacking."
+    },
+    "300902": {
+      "name": "Patience",
+      "describe": "",
+      "SpecificEffects": "When attacking, if you do not move during this turn, DMG <color=#F74848>+15%</color>."
+    },
+    "300903": {
+      "name": "Serenity",
+      "describe": "",
+      "SpecificEffects": "At the start of Your Turn, gain <buf ID=3009032>[Serenity]</buf>, up to <color=#F74848>3</color> stacks, and remove all stacks when taking damage."
+    },
+    "300904": {
+      "name": "Annihilation",
+      "describe": "Uses Sniper Rifle to attack a target, dealing <color=#F74848>1.5x</color> DMG. Before combat, access <buf ID=900014>[Aiming]</buf> mode. Hit Rate <color=#F74848>-20%</color> when executing this skill.",
+      "SpecificEffects": ""
+    },
+    "300905": {
+      "name": "Anti-Tracking",
+      "describe": "",
+      "SpecificEffects": "When detecting an incoming missile at maximum range, there is a <color=#F74848>30%</color> chance to intercept it with a Sniper Rifle. Each successful intercept restores <color=#F74848>1</color> AP, effective up to <color=#F74848>2</color> times per turn."
+    },
+    "300906": {
+      "name": "Absolute Territory",
+      "describe": "Access <buf ID=900025>[Rack]</buf> mode: unable to move, Sniper Rifle's Range <color=#F74848>+2</color>, DMG <color=#F74848>+10%</color>. Attacks can continue after racking. The ST automatically exits <buf ID=900025>[Rack]</buf> mode upon arm damage. In <buf ID=900025>[Rack]</buf> mode, the <buf ID=900026>[Retract]</buf> code can be cast. After retracting, movement can continue.",
+      "SpecificEffects": ""
+    },
+    "300907": {
+      "name": "Ultimatum",
+      "describe": "Gain <color=#F74848>1</color> AP and <buf ID=7100403>[Crit Rate UP II]</buf>, lasting for <color=#F74848>1</color> turn. Can continue the action with the remaining movement.",
+      "SpecificEffects": ""
+    },
+    "300908": {
+      "name": "The End",
+      "describe": "Consume all AP to attack a target with a Sniper Rifle, dealing <color=#F74848>1.2x</color> DMG. For each additional <color=#F74848>1</color> AP consumed, the skill damage multiplier <color=#F74848>+0.15</color>. Before combat, access <buf ID=900014>[Aiming]</buf> mode.",
+      "SpecificEffects": ""
+    }
+  },
+  "neuralPassives": {
+    "300011": {
+      "name": "Sniper Warfare 2",
+      "SpecificEffects": "After breaking a part, trigger <buf ID=900004>[Re-ATK]</buf>."
+    },
+    "300012": {
+      "name": "Power Innovation 1",
+      "SpecificEffects": "AP Regen <color=#F74848>+1</color>."
+    },
+    "300013": {
+      "name": "AP Optimization 1",
+      "SpecificEffects": "Initial AP <color=#F74848>+1</color>."
+    },
+    "300021": {
+      "name": "Sniper Warfare 3",
+      "SpecificEffects": "Upon triggering <buf ID=900004>[Re-ATK]</buf>, allows movement of <color=#F74848>2</color> tiles before attacking."
+    },
+    "300022": {
+      "name": "Power Innovation 2",
+      "SpecificEffects": "When breaking a part, restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>1</color> time per turn."
+    },
+    "300023": {
+      "name": "AP Optimization 2",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
+    },
+    "300031": {
+      "name": "Forbidden Zone 1",
+      "SpecificEffects": "With a Ranged Weapon, launch <buf ID=900013>[Vigilant Shot]</buf> before the enemy attack within range, dealing <color=#F74848>0.35x</color> DMG, effective up to <color=#F74848>1</color> time per turn."
+    },
+    "300032": {
+      "name": "AP Optimization 3",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
+    },
+    "300033": {
+      "name": "Sniper Warfare 4",
+      "SpecificEffects": "<buf ID=900004>[Re-ATK]</buf>'s effective times per turn <color=#F74848>+1</color>."
+    },
+    "300034": {
+      "name": "Forbidden Zone 2",
+      "SpecificEffects": "<buf ID=900013>[Vigilant Shot]</buf>'s effective times per turn <color=#F74848>+1</color>."
+    },
+    "300035": {
+      "name": "Forbidden Zone 3",
+      "SpecificEffects": "<buf ID=900013>[Vigilant Shot]</buf>'s damage multiplier is increased to <color=#F74848>0.5</color>."
+    },
+    "300036": {
+      "name": "Forbidden Zone 4",
+      "SpecificEffects": "<buf ID=900013>[Vigilant Shot]</buf> is launched against an enemy that has not attacked. Targets the part with the lowest HP."
+    },
+    "300941": {
+      "name": "ACE Spy 1",
+      "SpecificEffects": "<buf ID=3009411>[Intelligence Collection]</buf> becomes effective <color=#F74848>1</color> time per turn."
+    },
+    "300042": {
+      "name": "AP Optimization 4",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
+    },
+    "300043": {
+      "name": "Power Innovation 3",
+      "SpecificEffects": "When destroying a target, additionally restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>2</color> times per turn."
+    },
+    "300944": {
+      "name": "ACE Spy 2",
+      "SpecificEffects": "At the end of the action, if not move during this turn, passively restore <color=#F74848>1</color> AP."
+    },
+    "300945": {
+      "name": "ACE Spy 3",
+      "SpecificEffects": "The range of <buf ID=3009451>[Intelligence Collection]</buf> is expanded to the entire battlefield."
+    },
+    "300946": {
+      "name": "ACE Spy 4",
+      "SpecificEffects": "During an Active Attack in combat, increased DMG to Body part by <color=#F74848>25%</color>."
+    }
+  }
+}

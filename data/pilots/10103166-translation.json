@@ -1,0 +1,131 @@
+{
+  "PilotName": "唐小葵",
+  "RealName": "唐小葵",
+  "Gender": "Female",
+  "Profession": "Mechanic",
+  "Occupation": "机械师",
+  "Talent0_2Ability": {
+    "name": "千机玲珑",
+    "SpecificEffects": "行动开始或友方单位使用<color=#F74848>4</color>AP及以上技能时，获得<color=#F74848>1</color>层<buf ID=5010502>[筹谋]</buf>，可叠加<color=#F74848>5</color>层；行动结束时，可以发动<skill activeSkill=5010501>[筹谋-修整]</skill><skill activeSkill=5010502>[筹谋-鞭策]</skill><skill activeSkill=5010503>[筹谋-收买]</skill>之一；每消耗<color=#F74848>1</color>层<buf ID=5010502>[筹谋]</buf>，自身获得<color=#F74848>1</color>层<buf ID=5010506>[精明]</buf>，可叠加<color=#F74848>15</color>层"
+  },
+  "Talent3_5Ability": {
+    "name": "千机玲珑",
+    "SpecificEffects": "行动开始或友方单位使用<color=#F74848>4</color>AP及以上技能时，获得<color=#F74848>1</color>层<buf ID=5010502>[筹谋]</buf>，可叠加<color=#F74848>5</color>层；行动结束时，可以发动<skill activeSkill=5010501>[筹谋-修整]</skill><skill activeSkill=5010502>[筹谋-鞭策]</skill><skill activeSkill=5010503>[筹谋-收买]</skill>之一；每消耗<color=#F74848>1</color>层<buf ID=5010502>[筹谋]</buf>，自身获得<color=#F74848>1</color>层<buf ID=5010506>[精明]</buf>，可叠加<color=#F74848>15</color>层；\n最大耐久值提升<color=#F74848>10%</color>；出击时，获得<color=#F74848>2</color>层<buf ID=5010502>[筹谋]</buf>和<color=#F74848>5</color>层<buf ID=5010506>[精明]</buf>"
+  },
+  "skills": {
+    "200001": {
+      "name": "协同作战1",
+      "describe": "",
+      "SpecificEffects": "配合友军，使用突击或射击武器对友军攻击的目标发动<buf ID=900002>[协力攻击]</buf>，造成<color=#F74848>0.2</color>倍伤害，每回合最多发动<color=#F74848>1</color>次"
+    },
+    "501002": {
+      "name": "未雨绸缪",
+      "describe": "",
+      "SpecificEffects": "行动结束时，若<buf ID=5010502>[筹谋]</buf>层数小于等于<color=#F74848>3</color>，获得<color=#F74848>1</color>层<buf ID=5010502>[筹谋]</buf>"
+    },
+    "501003": {
+      "name": "因势利导",
+      "describe": "选择释放<color=#F74848>1</color>次<skill activeSkill=5010031>[筹谋-投资]</skill>或<skill activeSkill=5010032>[筹谋-预支]</skill>，然后可以使用剩余移动力继续行动",
+      "SpecificEffects": ""
+    },
+    "501004": {
+      "name": "焚香引焰",
+      "describe": "使用喷火器攻击主目标，造成<color=#F74848>1.4</color>倍伤害，若主目标位于友方<terrian ID=4003081 />上，对目标所有部位造成喷火器攻击力<color=#F74848>0.15</color>倍的<buf ID=900017>[固定伤害]</buf>；可以发动<buf ID=5010468>[筹谋倾注]</buf>，使<buf ID=900017>[固定伤害]</buf>翻倍",
+      "SpecificEffects": ""
+    },
+    "501005": {
+      "name": "风借火势",
+      "describe": "",
+      "SpecificEffects": "友方单位位于友方<terrian ID=4003081 />时，受到修理量提升<color=#F74848>10%</color>，伤害提升<color=#F74848>10%</color>"
+    },
+    "501006": {
+      "name": "蹈火",
+      "describe": "进入<buf ID=5010061>[烈焰行者]</buf>状态，行动结束时移除，然后可以使用剩余移动力继续行动；可以发动<buf ID=5010468>[筹谋倾注]</buf>，技能发动后获得<color=#F74848>2</color>AP",
+      "SpecificEffects": ""
+    },
+    "501007": {
+      "name": "雪中送炭",
+      "describe": "",
+      "SpecificEffects": "周围<color=#F74848>3</color>格内的友军遭受主动攻击后，若躯干耐久值小于等于<color=#F74848>50%</color>，消耗<color=#F74848>1</color>PP对其发动<color=#F74848>1</color>次<buf ID=5010468>[筹谋倾注]</buf>下的<skill activeSkill=5010501>[筹谋-修整]</skill>，每次出击最多拥有<color=#F74848>2</color>PP"
+    },
+    "501008": {
+      "name": "火树银花",
+      "describe": "使用喷火器攻击<range type=1>面前扇形</range>范围内所有目标，造成<color=#F74848>0.8</color>倍范围伤害；可以发动<buf ID=5010468>[筹谋倾注]</buf>，对攻击范围内所有地格施加<terrian ID=4003081 />，持续<color=#F74848>2</color>回合",
+      "SpecificEffects": ""
+    }
+  },
+  "neuralPassives": {
+    "200011": {
+      "name": "协同作战2",
+      "SpecificEffects": "<buf ID=2000011>[协同作战1]</buf>每回合可发动的次数<color=#F74848>+1</color>"
+    },
+    "200012": {
+      "name": "动力革新1",
+      "SpecificEffects": "AP的回复值<color=#F74848>+1</color>"
+    },
+    "200013": {
+      "name": "AP优化1",
+      "SpecificEffects": "AP的初始值<color=#F74848>+1</color>"
+    },
+    "200021": {
+      "name": "协同作战3",
+      "SpecificEffects": "使<buf ID=2000011>[协同作战1]</buf>触发的<buf ID=900002>[协力攻击]</buf>伤害倍率提升至<color=#F74848>0.3</color>倍"
+    },
+    "200022": {
+      "name": "动力革新2",
+      "SpecificEffects": "击破部位时，战后回复<color=#F74848>1</color>AP，每回合最多发动<color=#F74848>1</color>次"
+    },
+    "200023": {
+      "name": "AP优化2",
+      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+    },
+    "501031": {
+      "name": "同频整备1",
+      "SpecificEffects": "主动攻击后，为自身和周围<color=#F74848>3</color>格内耐久值百分比最低的<color=#F74848>1</color>名友军恢复完好部位的耐久值，修理量为[唐小葵]躯干最大耐久值的<color=#F74848>3.5%</color>，每回合最多发动<color=#F74848>5</color>次"
+    },
+    "200032": {
+      "name": "AP优化3",
+      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+    },
+    "200033": {
+      "name": "自适应作战1",
+      "SpecificEffects": "行动结束时，若本回合未主动攻击，则可以额外移动<color=#F74848>2</color>格"
+    },
+    "501034": {
+      "name": "同频整备2",
+      "SpecificEffects": "<skill passiveSkill=501031>[同频整备1]</skill>会在周围<color=#F74848>4</color>格范围选择目标"
+    },
+    "501035": {
+      "name": "同频整备3",
+      "SpecificEffects": "<skill passiveSkill=501031>[同频整备1]</skill>的修理量提升至<color=#F74848>6%</color>"
+    },
+    "501036": {
+      "name": "同频整备4",
+      "SpecificEffects": "<skill passiveSkill=501031>[同频整备1]</skill>的修理目标数量<color=#F74848>+1</color>"
+    },
+    "501041": {
+      "name": "奇正相生1",
+      "SpecificEffects": "攻击时，若击破敌机部位，获得<color=#F74848>1</color>层<buf ID=5010506>[精明]</buf>，每回合最多发动<color=#F74848>3</color>次"
+    },
+    "200042": {
+      "name": "AP优化4",
+      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+    },
+    "200043": {
+      "name": "自适应作战2",
+      "SpecificEffects": "主动攻击前如果没有移动过，可发动<buf ID=900004>[再攻击]</buf>，攻击前无法移动，每回合最多发动<color=#F74848>1</color>次\n无法与同类<buf ID=900004>[再攻击]</buf>效果重复触发"
+    },
+    "501044": {
+      "name": "奇正相生2",
+      "SpecificEffects": "<buf ID=5010506>[精明]</buf>层数大于等于<color=#F74848>5</color>时，暴击率和命中率提升<color=#F74848>15%</color>"
+    },
+    "501045": {
+      "name": "奇正相生3",
+      "SpecificEffects": "主动攻击对战时，若目标位于我方<terrian ID=4003081 />，攻击后获得<color=#F74848>1</color>AP，每回合最多发动<color=#F74848>2</color>次"
+    },
+    "501046": {
+      "name": "奇正相生4",
+      "SpecificEffects": "每<color=#F74848>5</color>层<buf ID=5010506>[精明]</buf>使喷火器子弹数<color=#F74848>+1</color>"
+    }
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "PilotName": "Shawnee",
+  "RealName": "Shawnee Russell",
+  "Gender": "Female",
+  "Profession": "Gunner",
+  "Occupation": "Sniper",
+  "Talent0_2Ability": {
+    "name": "Dawnstar Tech",
+    "SpecificEffects": "Rail Gun's DMG <color=#F74848>+20%</color> and gains <buf ID=900060>[Diagonal Shot]</buf>. When a Rail Gun runs out of ammo, trigger <buf ID=900029>[Auto Load]</buf>. This process takes <color=#F74848>3</color> turns."
+  },
+  "Talent3_5Ability": {
+    "name": "Dawnstar Tech",
+    "SpecificEffects": "Rail Gun's DMG <color=#F74848>+20%</color> and gains <buf ID=900060>[Diagonal Shot]</buf>. When a Rail Gun runs out of ammo, trigger <buf ID=900029>[Auto Load]</buf>. This process takes <color=#F74848>2</color> turns."
+  },
+  "skills": {
+    "300001": {
+      "name": "Sniper Warfare 1",
+      "describe": "",
+      "SpecificEffects": "When destroying a target, <buf ID=900004>[Re-ATK]</buf> can be triggered, effective up to <color=#F74848>2</color> times per turn. Unable to move before attacking."
+    },
+    "300702": {
+      "name": "The More, The Better",
+      "describe": "",
+      "SpecificEffects": "When attacking with a Rail Gun, for every additional <color=#F74848>1</color> target hit, DMG <color=#F74848>+5%</color>, up to <color=#F74848>20%</color>."
+    },
+    "300703": {
+      "name": "Judgment",
+      "describe": "Uses the Light Rifle to attack a target, dealing <color=#F74848>1.55x</color> DMG. Targets the part with the lowest HP.",
+      "SpecificEffects": ""
+    },
+    "300704": {
+      "name": "Instant Load",
+      "describe": "Fully restore Rail Gun Ammo and gain <buf ID=7100105>[Hit Rate UP III]</buf>, lasting for <color=#F74848>1</color> turn. Can continue the action with the remaining movement.",
+      "SpecificEffects": ""
+    },
+    "300705": {
+      "name": "Good Start",
+      "describe": "",
+      "SpecificEffects": "When attacking with the first Ammo in the Rail Gun Magazine, DMG <color=#F74848>+20%</color>."
+    },
+    "300706": {
+      "name": "Accurate Sanction",
+      "describe": "Uses Rail Gun to attack the same part of all targets within a <range type=1>Line (1*5 tiles) area</range> or a Diagonal (4 tiles) area and deals <color=#F74848>0.85x</color> AoE DMG. Before combat, access <buf ID=900014>[Aiming]</buf> mode.",
+      "SpecificEffects": ""
+    },
+    "300707": {
+      "name": "Ballistics Bonus",
+      "describe": "",
+      "SpecificEffects": "When attacking with a Light Rifle, for every <color=#F74848>1</color> tile the target is farther away, DMG <color=#F74848>+6%</color>, up to <color=#F74848>30%</color>."
+    },
+    "300708": {
+      "name": "Saturated Strike",
+      "describe": "Consume <color=#F74848>3</color> rounds of Ammo. Uses Rail Gun to attack all targets within a <range type=1>3*5 tile area</range>, dealing <color=#F74848>1.25x</color> AoE DMG.",
+      "SpecificEffects": ""
+    }
+  },
+  "neuralPassives": {
+    "300011": {
+      "name": "Sniper Warfare 2",
+      "SpecificEffects": "After breaking a part, trigger <buf ID=900004>[Re-ATK]</buf>."
+    },
+    "300012": {
+      "name": "Power Innovation 1",
+      "SpecificEffects": "AP Regen <color=#F74848>+1</color>."
+    },
+    "300013": {
+      "name": "AP Optimization 1",
+      "SpecificEffects": "Initial AP <color=#F74848>+1</color>."
+    },
+    "300021": {
+      "name": "Sniper Warfare 3",
+      "SpecificEffects": "Upon triggering <buf ID=900004>[Re-ATK]</buf>, allows movement of <color=#F74848>2</color> tiles before attacking."
+    },
+    "300022": {
+      "name": "Power Innovation 2",
+      "SpecificEffects": "When breaking a part, restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>1</color> time per turn."
+    },
+    "300023": {
+      "name": "AP Optimization 2",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
+    },
+    "300031": {
+      "name": "Forbidden Zone 1",
+      "SpecificEffects": "With a Ranged Weapon, launch <buf ID=900013>[Vigilant Shot]</buf> before the enemy attack within range, dealing <color=#F74848>0.35x</color> DMG, effective up to <color=#F74848>1</color> time per turn."
+    },
+    "300032": {
+      "name": "AP Optimization 3",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
+    },
+    "300033": {
+      "name": "Sniper Warfare 4",
+      "SpecificEffects": "<buf ID=900004>[Re-ATK]</buf>'s effective times per turn <color=#F74848>+1</color>."
+    },
+    "300034": {
+      "name": "Forbidden Zone 2",
+      "SpecificEffects": "<buf ID=900013>[Vigilant Shot]</buf>'s effective times per turn <color=#F74848>+1</color>."
+    },
+    "300035": {
+      "name": "Forbidden Zone 3",
+      "SpecificEffects": "<buf ID=900013>[Vigilant Shot]</buf>'s damage multiplier is increased to <color=#F74848>0.5</color>."
+    },
+    "300036": {
+      "name": "Forbidden Zone 4",
+      "SpecificEffects": "<buf ID=900013>[Vigilant Shot]</buf> is launched against an enemy that has not attacked. Targets the part with the lowest HP."
+    },
+    "300741": {
+      "name": "Railgun Specialist 1",
+      "SpecificEffects": "Rail Gun Magazine's Capacity <color=#F74848>+2</color>."
+    },
+    "300042": {
+      "name": "AP Optimization 4",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
+    },
+    "300043": {
+      "name": "Power Innovation 3",
+      "SpecificEffects": "When destroying a target, additionally restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>2</color> times per turn."
+    },
+    "300744": {
+      "name": "Railgun Specialist 2",
+      "SpecificEffects": "Each turn, auto-load <color=#F74848>1</color> Ammo into the non-exhausted Rail Gun magazine."
+    },
+    "300745": {
+      "name": "Railgun Specialist 3",
+      "SpecificEffects": "Rail Gun Range <color=#F74848>+1</color>."
+    },
+    "300746": {
+      "name": "Railgun Specialist 4",
+      "SpecificEffects": "Rail Gun's AP Cost <color=#F74848>-1</color>."
+    }
+  }
+}

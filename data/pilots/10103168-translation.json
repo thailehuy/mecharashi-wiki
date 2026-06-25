@@ -1,0 +1,131 @@
+{
+  "PilotName": "吉赛尔",
+  "RealName": "吉赛尔·梅耶",
+  "Gender": "Female",
+  "Profession": "Striker",
+  "Occupation": "格斗家",
+  "Talent0_2Ability": {
+    "name": "荒野游风",
+    "SpecificEffects": "造成非<buf ID=900017>[固定伤害]</buf>时，造成伤害的<color=#F74848>12%</color>转化为相应层数的<buf ID=900166>[勇猎]</buf>，最大不超过长柄武器攻击力的<color=#F74848>5</color>倍；浮游炮提升<color=#F74848>10%</color>当前<buf ID=900166>[勇猎]</buf>的攻击力，提升不超过长柄武器攻击力的<color=#F74848>0.25</color>倍；出战时，获得相当于<color=#F74848>30%</color>最大上限的<buf ID=900166>[勇猎]</buf>"
+  },
+  "Talent3_5Ability": {
+    "name": "荒野游风",
+    "SpecificEffects": "造成非<buf ID=900017>[固定伤害]</buf>时，造成伤害的<color=#F74848>18%</color>转化为相应层数的<buf ID=900166>[勇猎]</buf>，最大不超过长柄武器攻击力的<color=#F74848>7.5</color>倍；浮游炮提升<color=#F74848>10%</color>当前<buf ID=900166>[勇猎]</buf>的攻击力，提升不超过长柄武器攻击力的<color=#F74848>0.25</color>倍；出战时，获得相当于<color=#F74848>30%</color>最大上限的<buf ID=900166>[勇猎]</buf>；\n浮游炮的弹仓容量<color=#F74848>+1</color>"
+  },
+  "skills": {
+    "100001": {
+      "name": "运动战1",
+      "describe": "",
+      "SpecificEffects": "击破部位后可发动<buf ID=900004>[再攻击]</buf>，攻击前无法移动，每回合最多发动<color=#F74848>2</color>次"
+    },
+    "102002": {
+      "name": "狂蜂逐",
+      "describe": "使用浮游炮攻击所选<range type=2>菱形2格范围</range>内的所有敌方目标，造成<color=#F74848>1.2</color>倍范围伤害",
+      "SpecificEffects": ""
+    },
+    "102003": {
+      "name": "鹰视",
+      "describe": "",
+      "SpecificEffects": "自身周围<color=#F74848>3</color>格范围内敌方单位回避率下降<color=#F74848>8%</color>"
+    },
+    "102004": {
+      "name": "独獒之舞",
+      "describe": "腿部完好时可发动，选择<color=#F74848>4</color>格范围内的<color=#F74848>1</color>格空地，跳跃至选中地格，本回合浮游炮攻击范围扩大<color=#F74848>1</color>格，并装填所有浮游炮弹药，然后可使用剩余移动力继续行动",
+      "SpecificEffects": ""
+    },
+    "102005": {
+      "name": "猎者节律",
+      "describe": "",
+      "SpecificEffects": "每回合首次主动攻击AP消耗<color=#F74848>-1</color>，最低<color=#F74848>1</color>点"
+    },
+    "102006": {
+      "name": "鸣鸦狩天",
+      "describe": "使用浮游炮攻击范围内最多<color=#F74848>4</color>个目标，造成<color=#F74848>1.2</color>倍范围伤害，可重复选择相同目标，重复攻击相同目标时，造成<color=#F74848>40%</color>的伤害；自身使用浮游炮攻击时，若命中的部位耐久值低于<buf ID=900167>[粉碎者]</buf>所需<color=#F74848>2/3</color>的破坏效果，直接破坏该部位",
+      "SpecificEffects": ""
+    },
+    "102007": {
+      "name": "斗士余威",
+      "describe": "",
+      "SpecificEffects": "主动攻击击毁敌机时，自身周围<color=#F74848>3</color>格范围内所有敌方单位AP<color=#F74848>-1</color>，每回合最多触发<color=#F74848>1</color>次"
+    },
+    "102008": {
+      "name": "洄葬",
+      "describe": "选择<color=#F74848>4</color>格内的单个目标，使用浮游炮对目标造成<color=#F74848>4×0.3</color>倍伤害，并使用长柄对目标躯干造成<color=#F74848>1.2</color>倍伤害（包括飞行目标）；可以选择消耗当前<color=#F74848>0%</color>/<color=#F74848>50%</color>/<color=#F74848>100%</color>的<buf ID=900166>[勇猎]</buf>，对躯干造成等额的<buf ID=900017>[固定伤害]</buf>",
+      "SpecificEffects": ""
+    }
+  },
+  "neuralPassives": {
+    "100011": {
+      "name": "运动战2",
+      "SpecificEffects": "发动<buf ID=900004>[再攻击]</buf>时，攻击前可以移动<color=#F74848>2</color>格"
+    },
+    "100012": {
+      "name": "动力革新1",
+      "SpecificEffects": "AP的回复值<color=#F74848>+1</color>"
+    },
+    "100013": {
+      "name": "AP优化1",
+      "SpecificEffects": "AP的初始值<color=#F74848>+1</color>"
+    },
+    "100021": {
+      "name": "运动战3",
+      "SpecificEffects": "击毁目标后可发动<buf ID=900005>[再行动]</buf>，使用完整移动力移动"
+    },
+    "100022": {
+      "name": "动力革新2",
+      "SpecificEffects": "击破部位时，战后回复<color=#F74848>1</color>AP，每回合最多发动<color=#F74848>1</color>次"
+    },
+    "100023": {
+      "name": "AP优化2",
+      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+    },
+    "102031": {
+      "name": "粉碎者1",
+      "SpecificEffects": "使用长柄主动攻击后，如果命中的部位耐久值低于<color=#F74848>15%</color>，发动<buf ID=900109>[处决]</buf>效果，战后直接破坏该部位"
+    },
+    "100032": {
+      "name": "AP优化3",
+      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+    },
+    "100033": {
+      "name": "运动战4",
+      "SpecificEffects": "<buf ID=900004>[再攻击]</buf>或<buf ID=900005>[再行动]</buf>每回合可发动的次数<color=#F74848>+1</color>"
+    },
+    "102034": {
+      "name": "粉碎者2",
+      "SpecificEffects": "<buf ID=1020311></buf>破坏部位的临界线提升至<color=#F74848>25%</color>"
+    },
+    "102035": {
+      "name": "粉碎者3",
+      "SpecificEffects": "发动<buf ID=900163>[粉碎者]</buf>破坏部位时，抵消<color=#F74848>1</color>次<buf ID=900004>[再攻击]</buf>或<buf ID=900005>[再行动]</buf>的次数扣除并额外回复<color=#F74848>1</color>AP，每回合最多发动<color=#F74848>1</color>次"
+    },
+    "102036": {
+      "name": "粉碎者4",
+      "SpecificEffects": "使用长柄击破躯干以外的部位时，对躯干造成相当于该部位最大耐久值<color=#F74848>25%</color>的<buf ID=900017>[固定伤害]</buf>"
+    },
+    "102041": {
+      "name": "自然礼赞1",
+      "SpecificEffects": "主动攻击击破部位时，战后回复<color=#F74848>1</color>枚浮游炮弹药，每回合最多触发<color=#F74848>2</color>次"
+    },
+    "100042": {
+      "name": "AP优化4",
+      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+    },
+    "100043": {
+      "name": "动力革新3",
+      "SpecificEffects": "击毁目标时，战后额外回复<color=#F74848>1</color>AP，每回合最多发动<color=#F74848>2</color>次"
+    },
+    "102044": {
+      "name": "自然礼赞2",
+      "SpecificEffects": "主动攻击时，伤害提升<color=#F74848>10%</color>，且技能范围内每个目标额外使本次攻击伤害提升<color=#F74848>5%</color>，最多提升至<color=#F74848>25%</color>；消耗<buf ID=900166>[勇猎]</buf>造成的<buf ID=900017>[固定伤害]</buf>提升<color=#F74848>15%</color>"
+    },
+    "102045": {
+      "name": "自然礼赞3",
+      "SpecificEffects": "每回合首次行动移动力<color=#F74848>+2</color>"
+    },
+    "102046": {
+      "name": "自然礼赞4",
+      "SpecificEffects": "长柄武器攻击力与浮游炮伤害提升<color=#F74848>25%</color>；每次行动结束时，自身长柄武器攻击力提升<color=#F74848>3%</color>，最多<color=#F74848>15%</color>，浮游炮伤害提升<color=#F74848>5%</color>，最多<color=#F74848>25%</color>"
+    }
+  }
+}

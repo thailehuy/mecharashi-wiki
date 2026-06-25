@@ -1,0 +1,131 @@
+{
+  "PilotName": "玛汀妮",
+  "RealName": "玛汀妮·莫雷蒂",
+  "Gender": "Female",
+  "Profession": "Mechanic",
+  "Occupation": "机械师",
+  "Talent0_2Ability": {
+    "name": "良药苦机",
+    "SpecificEffects": "可额外装备修理背包，修理背包负重降低<color=#F74848>300</color>；使用打桩机或拳套主动攻击时，若携带了修理背包，对命中的目标耐久值百分比最低的部位造成相当于修理背包<color=#F74848>0.3</color>倍的<buf ID=900017>[固定伤害]</buf>"
+  },
+  "Talent3_5Ability": {
+    "name": "良药苦机",
+    "SpecificEffects": "可额外装备修理背包，修理背包负重减低<color=#F74848>300</color>；使用打桩机或拳套主动攻击时，若携带了修理背包，对命中的目标耐久值百分比最低的部位造成相当于修理背包<color=#F74848>0.35</color>倍的<buf ID=900017>[固定伤害]</buf>，\n<buf ID=5009418>[共鸣脉冲]</buf>触发的伤害效果提升至<color=#F74848>0.35</color>倍；单体修理技能射程<color=#F74848>+1</color>"
+  },
+  "skills": {
+    "100001": {
+      "name": "运动战1",
+      "describe": "",
+      "SpecificEffects": "击破部位后可发动<buf ID=900004>[再攻击]</buf>，攻击前无法移动，每回合最多发动<color=#F74848>2</color>次"
+    },
+    "700009": {
+      "name": "广域修理",
+      "describe": "恢复所选<range type=1>2格菱形</range>范围内友军所有部位的耐久值，修理量为修理背包的<color=#F74848>1.0</color>倍，可修复<color=#F74848>1</color>个损毁部位",
+      "SpecificEffects": ""
+    },
+    "500903": {
+      "name": "单人服务",
+      "describe": "恢复单台机兵所有部位的耐久值，修理量为修理背包的<color=#F74848>2.0</color>倍，可修复<color=#F74848>1</color>个损毁部位",
+      "SpecificEffects": ""
+    },
+    "500904": {
+      "name": "双面修复",
+      "describe": "恢复单台机兵所有部位的耐久值，修理量为修理背包的<color=#F74848>2.3</color>倍，可修复<color=#F74848>1</color>个损毁部位，并对目标<color=#F74848>2</color>格范围内所有敌机造成相当于修理背包<color=#F74848>0.3</color>倍的<buf ID=900017>[固定伤害]</buf>",
+      "SpecificEffects": ""
+    },
+    "500905": {
+      "name": "临界剂量",
+      "describe": "",
+      "SpecificEffects": "通过修理背包触发修理或<buf ID=900017>[固定伤害]</buf>效果时，若目标是耐久百分比低于<color=#F74848>60%</color>的友军，治疗效果提升<color=#F74848>15%</color>，若目标是耐久百分比低于<color=#F74848>60%</color>的敌机，<buf ID=900017>[固定伤害]</buf>效果提升<color=#F74848>10%</color>"
+    },
+    "500906": {
+      "name": "有备",
+      "describe": "",
+      "SpecificEffects": "每回合首个技能AP消耗<color=#F74848>-1</color>，最低<color=#F74848>1</color>点"
+    },
+    "500907": {
+      "name": "投鸩",
+      "describe": "",
+      "SpecificEffects": "触发<buf ID=5009501>[良药苦机]</buf>或<buf ID=5009410>[共鸣脉冲]</buf>效果时，对目标施加<color=#F74848>1</color>个随机减益效果，持续<color=#F74848>2</color>回合"
+    },
+    "500908": {
+      "name": "幽灵巡诊",
+      "describe": "使用打桩机或拳套攻击指定方向，对目标造成<color=#F74848>1.35</color>倍范围伤害，必定攻击耐久值最高的部位，若该方向存在相邻敌机，可继续攻击相邻敌机，最多攻击<color=#F74848>4</color>名敌机，之后停留在最远目标的另一侧，本次攻击触发的天赋<buf ID=900017>[固定伤害]</buf>效果提升<color=#F74848>50%</color>",
+      "SpecificEffects": ""
+    }
+  },
+  "neuralPassives": {
+    "100011": {
+      "name": "运动战2",
+      "SpecificEffects": "发动<buf ID=900004>[再攻击]</buf>时，攻击前可以移动<color=#F74848>2</color>格"
+    },
+    "100012": {
+      "name": "动力革新1",
+      "SpecificEffects": "AP的回复值<color=#F74848>+1</color>"
+    },
+    "100013": {
+      "name": "AP优化1",
+      "SpecificEffects": "AP的初始值<color=#F74848>+1</color>"
+    },
+    "100021": {
+      "name": "运动战3",
+      "SpecificEffects": "击毁目标后可发动<buf ID=900005>[再行动]</buf>，使用完整移动力移动"
+    },
+    "100022": {
+      "name": "动力革新2",
+      "SpecificEffects": "击破部位时，战后回复<color=#F74848>1</color>AP，每回合最多发动<color=#F74848>1</color>次"
+    },
+    "100023": {
+      "name": "AP优化2",
+      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+    },
+    "500931": {
+      "name": "抢险维修1",
+      "SpecificEffects": "行动结束时，随机选择相邻<color=#F74848>1</color>格的其他友军进行<buf ID=900018>[被动修理]</buf>，修理量为修理背包的<color=#F74848>0.6</color>倍，无法修复损毁部位"
+    },
+    "500032": {
+      "name": "AP优化3",
+      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+    },
+    "100033": {
+      "name": "运动战4",
+      "SpecificEffects": "<buf ID=900004>[再攻击]</buf>或<buf ID=900005>[再行动]</buf>每回合可发动的次数<color=#F74848>+1</color>"
+    },
+    "500934": {
+      "name": "抢险维修2",
+      "SpecificEffects": "使<buf ID=5000311>[抢险维修1]</buf>会在周围<color=#F74848>2</color>格范围内选择目标"
+    },
+    "500935": {
+      "name": "抢险维修3",
+      "SpecificEffects": "使<buf ID=5000311>[抢险维修1]</buf>的修理量提升至修理背包的<color=#F74848>1</color>倍"
+    },
+    "500936": {
+      "name": "抢险维修4",
+      "SpecificEffects": "使<buf ID=5000311>[抢险维修1]</buf>的修理目标数量<color=#F74848>+1</color>"
+    },
+    "500941": {
+      "name": "谎者1",
+      "SpecificEffects": "通过修理背包造成<buf ID=900017>[固定伤害]</buf>效果时额外对目标施加<buf ID=5009418>[共鸣脉冲]</buf>"
+    },
+    "500042": {
+      "name": "AP优化4",
+      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+    },
+    "100043": {
+      "name": "动力革新3",
+      "SpecificEffects": "击毁目标时，战后额外回复<color=#F74848>1</color>AP，每回合最多发动<color=#F74848>2</color>次"
+    },
+    "500944": {
+      "name": "谎者2",
+      "SpecificEffects": "修理技能可对敌机释放，以敌机为目标时造成原有技能修理量<color=#F74848>50%</color>的<buf ID=900017>[固定伤害]</buf>"
+    },
+    "500945": {
+      "name": "谎者3",
+      "SpecificEffects": "主动攻击时，根据修理量提升效果提高伤害，每<color=#F74848>1%</color>修理量提升获得<color=#F74848>1%</color>伤害提升，最高提升<color=#F74848>40%</color>；主动修理时，根据伤害提升效果提升修理量，每<color=#F74848>2%</color>伤害提升会获得<color=#F74848>1%</color>修理量提升，最多提升<color=#F74848>20%</color>"
+    },
+    "500946": {
+      "name": "谎者4",
+      "SpecificEffects": "主动攻击后可发动<buf ID=900004>[再攻击]</buf>，攻击前可移动<color=#F74848>3</color>格，下一次行动仅可使用修理技能；主动修理后可发动<buf ID=900004>[再攻击]</buf>，攻击前移动<color=#F74848>3</color>格，下一次行动仅可使用攻击技能；本技能的<buf ID=900004>[再攻击]</buf>效果每回合最多触发<color=#F74848>1</color>次"
+    }
+  }
+}

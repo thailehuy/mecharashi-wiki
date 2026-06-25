@@ -1,0 +1,131 @@
+{
+  "PilotName": "Fenrir",
+  "RealName": "Michael Moura",
+  "Gender": "Male",
+  "Profession": "Striker",
+  "Occupation": "Fighter",
+  "Talent0_2Ability": {
+    "name": "Rogue",
+    "SpecificEffects": "During an Active Attack, inflict <buf ID=1004502>[Instability I]</buf> on the hit target after combat, up to <color=#F74848>3</color> stacks, lasting for <color=#F74848>1</color> turn."
+  },
+  "Talent3_5Ability": {
+    "name": "Rogue",
+    "SpecificEffects": "During an Active Attack, inflict <buf ID=1004502>[Instability I]</buf> on the hit target after combat, up to <color=#F74848>3</color> stacks, lasting for <color=#F74848>1</color> turn.\nWhen inflicting debuffs, the duration <color=#F74848>+1</color>."
+  },
+  "skills": {
+    "100001": {
+      "name": "Mobile Warfare 1",
+      "describe": "",
+      "SpecificEffects": "After breaking a part, <buf ID=900004>[Re-ATK]</buf> can be triggered. Unable to move before the attack, and this can be effective up to <color=#F74848>2</color> times per turn."
+    },
+    "100402": {
+      "name": "Arms Prefer",
+      "describe": "Uses Pile Bunker or Knuckles to attack a target, dealing <color=#F74848>1.35x</color> DMG. This attack prioritizes Arms. After combat, it inflicts <buf ID=1004021>[Weapon Hindrance]</buf> on the target, lasting for <color=#F74848>1</color> turn.",
+      "SpecificEffects": ""
+    },
+    "100403": {
+      "name": "Seize Advantage",
+      "describe": "",
+      "SpecificEffects": "During an Active Attack in combat, for each <color=#F74848>1</color> stack of <buf ID=900034>[Instability]</buf> the target has, Crit Rate <color=#F74848>+5%</color>."
+    },
+    "100404": {
+      "name": "Legs Prefer",
+      "describe": "Uses Pile Bunker or Knuckles to attack a target, dealing <color=#F74848>1.35x</color> DMG. This attack prioritizes Legs. After combat, it inflicts <buf ID=7101507>[Movement Hindrance II]</buf> on the target, lasting <color=#F74848>1</color> turn.",
+      "SpecificEffects": ""
+    },
+    "700013": {
+      "name": "Resolve",
+      "describe": "",
+      "SpecificEffects": "When attacking a target that carries debuffs, DMG <color=#F74848>+15%</color>."
+    },
+    "100406": {
+      "name": "Sap",
+      "describe": "Uses Pile Bunker or Knuckles to attack a target, dealing <color=#F74848>1.25x</color> DMG. This attack prioritizes the Body. After combat, it inflicts <buf ID=1004061>[Code Hindrance]</buf> on the target, lasting for <color=#F74848>1</color> turn. Can only use <color=#F74848>1</color> time per turn.",
+      "SpecificEffects": ""
+    },
+    "100407": {
+      "name": "Kick When is Down",
+      "describe": "",
+      "SpecificEffects": "During an Active Attack, if the target has <buf ID=900034>[Instability]</buf> stacks equal to or greater than <color=#F74848>3</color>, the target will lose <color=#F74848>1 AP</color> after combat, effective up to <color=#F74848>2</color> times per turn."
+    },
+    "100408": {
+      "name": "Street Fight",
+      "describe": "Uses 2 Melee Weapons to strike a target <color=#F74848>4</color> times, each time dealing <color=#F74848>0.5x</color> DMG. After combat, it inflicts <buf ID=1004021>[Weapon Hindrance]</buf>, <buf ID=1004061>[Code Hindrance]</buf>, and <buf ID=7101507>[Movement Hindrance II]</buf> on the target based on the part hit, each lasting <color=#F74848>1</color> turn.",
+      "SpecificEffects": ""
+    }
+  },
+  "neuralPassives": {
+    "100011": {
+      "name": "Mobile Warfare 2",
+      "SpecificEffects": "Upon triggering <buf ID=900004>[Re-ATK]</buf>, allows movement of <color=#F74848>2</color> tiles before attacking."
+    },
+    "100012": {
+      "name": "Power Innovation 1",
+      "SpecificEffects": "AP Regen <color=#F74848>+1</color>."
+    },
+    "100013": {
+      "name": "AP Optimization 1",
+      "SpecificEffects": "Initial AP <color=#F74848>+1</color>."
+    },
+    "100021": {
+      "name": "Mobile Warfare 3",
+      "SpecificEffects": "Destroying the target can trigger <buf ID=900005>[Re-Act]</buf>, allowing action with full movement distance."
+    },
+    "100022": {
+      "name": "Power Innovation 2",
+      "SpecificEffects": "When breaking a part, restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>1</color> time per turn."
+    },
+    "100023": {
+      "name": "AP Optimization 2",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
+    },
+    "100031": {
+      "name": "Alacrity 1",
+      "SpecificEffects": "During an Active Attack with a Melee Weapon, there is a <color=#F74848>20%</color> chance to trigger <buf ID=900001>[Flurry Strike]</buf> following the enemy’s attack, dealing <color=#F74848>0.5x</color> DMG."
+    },
+    "100032": {
+      "name": "AP Optimization 3",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
+    },
+    "100033": {
+      "name": "Mobile Warfare 4",
+      "SpecificEffects": "<buf ID=900004>[Re-ATK]</buf> or <buf ID=900005>[Re-Act]</buf>'s effective times per turn <color=#F74848>+1</color>."
+    },
+    "100034": {
+      "name": "Alacrity 2",
+      "SpecificEffects": "Before an Active Attack, the probability of triggering <buf ID=900001>[Flurry Strike]</buf> increases by <color=#F74848>6%</color> for each <color=#F74848>1</color> tile moved, up to <color=#F74848>30%</color>."
+    },
+    "100035": {
+      "name": "Alacrity 3",
+      "SpecificEffects": "<buf ID=900001>[Flurry Strike]</buf> damage multiplier is increased to <color=#F74848>0.75</color>."
+    },
+    "100036": {
+      "name": "Alacrity 4",
+      "SpecificEffects": "When triggering <buf ID=900001>[Flurry Strike]</buf>, prioritize hitting the part with the lowest HP."
+    },
+    "100441": {
+      "name": "Pragmatist 1",
+      "SpecificEffects": "<buf ID=900034>[Instability]</buf> can now reach a maximum of <color=#F74848>5</color> stacks."
+    },
+    "100042": {
+      "name": "AP Optimization 4",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
+    },
+    "100043": {
+      "name": "Power Innovation 3",
+      "SpecificEffects": "When destroying a target, additionally restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>2</color> times per turn."
+    },
+    "100444": {
+      "name": "Pragmatist 2",
+      "SpecificEffects": "<buf ID=900034>[Instability]</buf> will inflict DMG Dealt <color=#F74848>-3%</color> on the target."
+    },
+    "100445": {
+      "name": "Pragmatist 3",
+      "SpecificEffects": "During an Active Attack, the chance to trigger <buf ID=900007>[Retaliation Disabled]</buf> increases by <color=#F74848>15%</color> for each stack of <buf ID=900034>[Instability]</buf> the target has."
+    },
+    "100446": {
+      "name": "Pragmatist 4",
+      "SpecificEffects": "When inflicting the <buf ID=900034>[Instability]</buf> effect, inflict <color=#F74848>+1</color> stack."
+    }
+  }
+}

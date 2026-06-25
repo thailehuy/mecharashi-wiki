@@ -1,0 +1,131 @@
+{
+  "PilotName": "卡米拉",
+  "RealName": "卡米拉·科赛德",
+  "Gender": "Female",
+  "Profession": "Striker",
+  "Occupation": "格斗家",
+  "Talent0_2Ability": {
+    "name": "独行",
+    "SpecificEffects": "行动结束时，若自身周围<color=#F74848>2</color>格内没有其他友军时，获得<color=#F74848>3</color>层<buf ID=1012512>[磁能覆甲]</buf>，持续<color=#F74848>1</color>回合"
+  },
+  "Talent3_5Ability": {
+    "name": "独行",
+    "SpecificEffects": "行动结束时，若自身周围<color=#F74848>2</color>格内没有其他友军时，获得<color=#F74848>3</color>层<buf ID=1012512>[磁能覆甲]</buf>，持续<color=#F74848>1</color>回合;\n主动攻击对战时，如果没有友军发动<buf ID=900002>[协力攻击]</buf>，伤害提升<color=#F74848>15%</color>\n"
+  },
+  "skills": {
+    "100001": {
+      "name": "运动战1",
+      "describe": "",
+      "SpecificEffects": "击破部位后可发动<buf ID=900004>[再攻击]</buf>，攻击前无法移动，每回合最多发动<color=#F74848>2</color>次"
+    },
+    "101202": {
+      "name": "魑走",
+      "describe": "",
+      "SpecificEffects": "本回合内若没有发动过<buf ID=900004>[再攻击]</buf>，移动时无视单位阻挡，且直线方向移动力<color=#F74848>+1</color>"
+    },
+    "101203": {
+      "name": "骤击",
+      "describe": "使用两把格斗武器攻击单个目标，造成<color=#F74848>2×0.85</color>倍伤害，对躯干命中权重提升<color=#F74848>25</color>",
+      "SpecificEffects": ""
+    },
+    "101204": {
+      "name": "待发",
+      "describe": "",
+      "SpecificEffects": "主动攻击时，战前使自身获得<buf ID=1012042>[待发]</buf>，可叠加<color=#F74848>5</color>层，持续至造成暴击后移除"
+    },
+    "101205": {
+      "name": "热诚",
+      "describe": "使自身获得<color=#F74848>1</color>AP，并获得<buf ID=7100503>[暴击伤害提升Ⅱ]</buf>，持续<color=#F74848>1</color>回合，然后可使用剩余移动力继续行动",
+      "SpecificEffects": ""
+    },
+    "101206": {
+      "name": "死斗",
+      "describe": "消耗全部AP，使用两把格斗武器向单个目标发起决斗，造成<color=#F74848>2×0.65</color>倍伤害，每额外消耗<color=#F74848>1</color>AP将使本技能的伤害倍率提升<color=#F74848>2×0.1</color>倍；决斗持续<color=#F74848>4</color>轮，直到[卡米拉]无法攻击或目标无法反击时停止；本次战斗将不会被<buf ID=900022>[援护防御]</buf><buf ID=900002>[协力攻击]</buf><buf ID=900013>[警戒射击]</buf>等因素干扰",
+      "SpecificEffects": ""
+    },
+    "101207": {
+      "name": "碎躯之力",
+      "describe": "",
+      "SpecificEffects": "主动攻击时若命中躯干，则伤害额外提升<color=#F74848>20%</color>"
+    },
+    "101208": {
+      "name": "对决之誓",
+      "describe": "对单个目标施加<buf ID=1012081>[誓言]</buf>，持续<color=#F74848>2</color>回合；当<buf ID=1012081>[誓言]</buf>存在时，双方只能互相选择对方作为对战目标；同时只能存在<color=#F74848>1</color>个<buf ID=1012081>[誓言]</buf>，对部分单位无效",
+      "SpecificEffects": ""
+    }
+  },
+  "neuralPassives": {
+    "100011": {
+      "name": "运动战2",
+      "SpecificEffects": "发动<buf ID=900004>[再攻击]</buf>时，攻击前可以移动<color=#F74848>2</color>格"
+    },
+    "100012": {
+      "name": "动力革新1",
+      "SpecificEffects": "AP的回复值<color=#F74848>+1</color>"
+    },
+    "100013": {
+      "name": "AP优化1",
+      "SpecificEffects": "AP的初始值<color=#F74848>+1</color>"
+    },
+    "100021": {
+      "name": "运动战3",
+      "SpecificEffects": "击毁目标后可发动<buf ID=900005>[再行动]</buf>，使用完整移动力移动"
+    },
+    "100022": {
+      "name": "动力革新2",
+      "SpecificEffects": "击破部位时，战后回复<color=#F74848>1</color>AP，每回合最多发动<color=#F74848>1</color>次"
+    },
+    "100023": {
+      "name": "AP优化2",
+      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+    },
+    "100031": {
+      "name": "穷追猛打1",
+      "SpecificEffects": "使用格斗武器主动攻击时有<color=#F74848>20%</color>的概率发动，在敌机攻击结束后发动<buf ID=900001>[追击]</buf>，造成<color=#F74848>0.5</color>倍伤害"
+    },
+    "100032": {
+      "name": "AP优化3",
+      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+    },
+    "100033": {
+      "name": "运动战4",
+      "SpecificEffects": "<buf ID=900004>[再攻击]</buf>或<buf ID=900005>[再行动]</buf>每回合可发动的次数<color=#F74848>+1</color>"
+    },
+    "100034": {
+      "name": "穷追猛打2",
+      "SpecificEffects": "主动攻击前每移动<color=#F74848>1</color>格，发动<buf ID=900001>[追击]</buf>的概率提升<color=#F74848>6%</color>，最多<color=#F74848>30%</color>"
+    },
+    "100035": {
+      "name": "穷追猛打3",
+      "SpecificEffects": "<buf ID=1000311>[穷追猛打1]</buf>触发的<buf ID=900001>[追击]</buf>的伤害倍率提升至<color=#F74848>0.75</color>倍"
+    },
+    "100036": {
+      "name": "穷追猛打4",
+      "SpecificEffects": "发动<buf ID=900001>[追击]</buf>时，优先命中耐久值最低的部位"
+    },
+    "101241": {
+      "name": "猎者之心1",
+      "SpecificEffects": "主动攻击对战时，若击破部位，战后获得<color=#F74848>1</color>层<buf ID=1012512>[磁能覆甲]</buf>，持续<color=#F74848>1</color>回合，每回合最多发动<color=#F74848>2</color>次"
+    },
+    "100042": {
+      "name": "AP优化4",
+      "SpecificEffects": "AP的上限值<color=#F74848>+1</color>"
+    },
+    "100043": {
+      "name": "动力革新3",
+      "SpecificEffects": "击毁目标时，战后额外回复<color=#F74848>1</color>AP，每回合最多发动<color=#F74848>2</color>次"
+    },
+    "101244": {
+      "name": "猎者之心2",
+      "SpecificEffects": "主动攻击对战时，若周围<color=#F74848>2</color>格范围内没有友军，命中率提升<color=#F74848>10%</color>"
+    },
+    "101245": {
+      "name": "猎者之心3",
+      "SpecificEffects": "遭受攻击时，若任意部位被击破，战后获得<color=#F74848>1</color>层<buf ID=1012512>[磁能覆甲]</buf>，每回合最多发动<color=#F74848>1</color>次"
+    },
+    "101246": {
+      "name": "猎者之心4",
+      "SpecificEffects": "主动攻击对战时，若击毁目标，战后恢复<color=#F74848>15%</color>最大耐久值，可修复<color=#F74848>1</color>个损毁部位，每回合最多发动<color=#F74848>1</color>次"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Arcus",
+  "introduce": "LTX-212 Arcus\nA medium tactical ST developed by Laniakea and planned for deployment in the NDF Forerunner Tactical Strike Squad.\nIt's shoulder is embedded with a synchronize hub, which uses nano-transistor wires to coordinate its Arashium alloy frame's energy distribution with long-range firepower, maximizing efficiency with tactical weapons. In addition, the L1102-X propulsion system installed in the Arcus exhibits similar performance to the L1102-M used in the Aurora, with an optimized OS that significantly improves battlefield reaction speed, allowing for rapid deployment in high-intensity combat.",
+  "modules": {
+    "20084": {
+      "name": "Synchronize Hub",
+      "SpecificEffects": "When both shoulders are equipped with the same weapon type, DMG <color=#F74848>+20%</color>."
+    },
+    "30178": {
+      "name": "Aim Afar Mod",
+      "SpecificEffects": "When there are no enemies within the adjacent (<color=#F74848>2</color> tiles) area, DMG <color=#F74848>+18%</color>.\nActivate the Aura: Grants a Hit Rate <color=#F74848>+8%</color> to allies within the adjacent (<color=#F74848>2</color> tiles) area."
+    },
+    "40074": {
+      "name": "DMG Taken Mod",
+      "SpecificEffects": "DMG Taken <color=#F74848>-10%</color>."
+    }
+  }
+}

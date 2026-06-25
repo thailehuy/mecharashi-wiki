@@ -1,0 +1,97 @@
+{
+  "PilotName": "Adrien",
+  "RealName": "Adrien Corey",
+  "Gender": "Male",
+  "Profession": "Defender",
+  "Occupation": "Guardian",
+  "Talent0_2Ability": {
+    "name": "Injury Insurance",
+    "SpecificEffects": "When equipping a shield, shield's HP <color=#F74848>+70%</color>."
+  },
+  "Talent3_5Ability": {
+    "name": "Injury Insurance",
+    "SpecificEffects": "When equipping a shield, shield's HP <color=#F74848>+100%</color>."
+  },
+  "skills": {
+    "600001": {
+      "name": "Entrenched 1",
+      "describe": "",
+      "SpecificEffects": "Trigger <buf ID=900022>[Guard]</buf> to protect adjacent (<color=#F74848>1</color> tile) allies from Assault and Ranged attacks, effective up to <color=#F74848>2</color> times per turn."
+    },
+    "600102": {
+      "name": "Spare Shield",
+      "describe": "Restores <color=#F74848>40%</color> of the shield's HP, able to repair the damaged shield.",
+      "SpecificEffects": ""
+    },
+    "700052": {
+      "name": "Loaf Around",
+      "describe": "",
+      "SpecificEffects": "If unable to retaliate in combat, DMG Taken <color=#F74848>-15%</color>."
+    },
+    "600104": {
+      "name": "Overtime",
+      "describe": "Protects adjacent allies (<color=#F74848>2</color> tiles) from Assault and Ranged attacks, effective up to <color=#F74848>2</color> times per turn. Gains <buf ID=7100601>[Armor UP I]</buf> for <color=#F74848>2</color> turns.",
+      "SpecificEffects": ""
+    },
+    "700044": {
+      "name": "Premium Escalation",
+      "describe": "",
+      "SpecificEffects": "If any part is broken, gain <buf ID=7100702>[Defensive Stance II]</buf>, effective up to <color=#F74848>1</color> time per turn."
+    },
+    "700020": {
+      "name": "Defibrillator",
+      "describe": "Uses Large Shield to attack a target, dealing <color=#F74848>1.6x</color> DMG. After combat, it inflicts <buf ID=7101505>[Crash]</buf> on the target hit, lasting for <color=#F74848>1</color> turn.",
+      "SpecificEffects": ""
+    }
+  },
+  "neuralPassives": {
+    "600011": {
+      "name": "Entrenched 2",
+      "SpecificEffects": "When performing <buf ID=900022>[Guard]</buf>, DMG Taken <color=#F74848>-10%</color>."
+    },
+    "600012": {
+      "name": "Armor Specialization 1",
+      "SpecificEffects": "DMG <color=#F74848>+20%</color> on Retaliation."
+    },
+    "600013": {
+      "name": "AP Optimization 1",
+      "SpecificEffects": "Initial AP <color=#F74848>+1</color>."
+    },
+    "600021": {
+      "name": "Entrenched 3",
+      "SpecificEffects": "<buf ID=900022>[Guard]</buf>'s effective times per turn <color=#F74848>+1</color>."
+    },
+    "600022": {
+      "name": "Armor Specialization 2",
+      "SpecificEffects": "When performing <buf ID=900022>[Guard]</buf>, restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>1</color> time per turn."
+    },
+    "600023": {
+      "name": "AP Optimization 2",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
+    },
+    "600031": {
+      "name": "Indestructible 1",
+      "SpecificEffects": "When the Arm suffers overdamage, trigger <buf ID=900003>[Guts]</buf>, locking to <color=#F74848>1</color> HP, effective <color=#F74848>1</color> time per battle."
+    },
+    "600032": {
+      "name": "AP Optimization 3",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
+    },
+    "600033": {
+      "name": "Adaptive Warfare 1",
+      "SpecificEffects": "At the end of the action, if an Active Attack was not initiated this turn, an extra <color=#F74848>2</color> tiles can be moved."
+    },
+    "600034": {
+      "name": "Indestructible 2",
+      "SpecificEffects": "The part that triggers <buf ID=900003>[Guts]</buf> restores <color=#F74848>35%</color> of its HP after combat."
+    },
+    "600035": {
+      "name": "Indestructible 3",
+      "SpecificEffects": "Make <buf ID=900003>[Guts]</buf> able to trigger again after <color=#F74848>3</color> turns, with no effective time limit for each battle."
+    },
+    "600036": {
+      "name": "Indestructible 4",
+      "SpecificEffects": "When any part suffers overdamage, trigger <buf ID=900003>[Guts]</buf>."
+    }
+  }
+}
