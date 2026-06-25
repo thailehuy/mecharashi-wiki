@@ -1,16 +1,16 @@
 {
-  "PilotName": "帕洛玛",
-  "RealName": "帕洛玛·柯格尼托尼斯",
+  "PilotName": "Paloma",
+  "RealName": "Paloma Cognitionis",
   "Gender": "Female",
   "Profession": "Gunner",
   "Occupation": "Sniper",
   "Talent0_2Ability": {
-    "name": "实验观察",
-    "SpecificEffects": "可以使用指令<skill mainSkill=301150>[定向架起]</skill>；<buf ID=900111>[定向架起]</buf>状态下，每命中敌机<color=#F74848>1</color>次，获得<color=#F74848>1</color>层<buf ID=3011512>[阵地优势Ⅰ]</buf>，使用指令或主动攻击后，若周围<color=#F74848>3</color>格内没有敌机，使自身进入<buf ID=3004502>[隐形Ⅰ]</buf>状态，持续<color=#F74848>2</color>回合"
+    "name": "Experimental Observation",
+    "SpecificEffects": "Can use <skill mainSkill=301150>[Dimentional Rack]</skill> code. While in <buf ID=900111>[Dimentional Rack]</buf> Mode，each <color=#F74848>1</color> hit on an enemy unit grants <color=#F74848>1</color> stack of <buf ID=3011512>[Positional Advantage I]</buf>. While in <buf ID=900111>[Dimentional Rack]</buf> Mode, if there are no enemy units within <color=#F74848>3</color> tiles, gains <buf ID=3004502>[Stealth I]</buf>lasting for <color=#F74848>2</color> turns."
   },
   "Talent3_5Ability": {
-    "name": "实验观察",
-    "SpecificEffects": "可以使用指令<skill mainSkill=301150>[定向架起]</skill>；<buf ID=900111>[定向架起]</buf>状态下，每命中敌机<color=#F74848>1</color>次，获得<color=#F74848>1</color>层<buf ID=3011512>[阵地优势Ⅰ]</buf>，使用指令或主动攻击后，若周围<color=#F74848>3</color>格内没有敌机，使自身进入<buf ID=3004502>[隐形Ⅰ]</buf>状态，持续<color=#F74848>2</color>回合；\n<buf ID=3011512>[阵地优势Ⅰ]</buf>最大层数增加<color=#F74848>4</color>层"
+    "name": "Experimental Observation",
+    "SpecificEffects": "Can use <skill mainSkill=301150>[Dimentional Rack]</skill> code. While in <buf ID=900111>[Dimentional Rack]</buf> Mode，each <color=#F74848>1</color> hit on an enemy unit grants <color=#F74848>1</color> stack of <buf ID=3011512>[Positional Advantage I]</buf>. While in <buf ID=900111>[Dimentional Rack]</buf> Mode, if there are no enemy units within <color=#F74848>3</color> tiles, gains <buf ID=3004502>[Stealth I]</buf>lasting for <color=#F74848>2</color> turns.\nThe <buf ID=3011512>[Positional Advantage I]</buf> stack limit increase to <color=#F74848>4</color>"
   },
   "skills": {
     "300001": {
@@ -24,33 +24,33 @@
       "SpecificEffects": "When attacking, if you do not move during this turn, DMG <color=#F74848>+15%</color>."
     },
     "301103": {
-      "name": "即兴试验",
-      "describe": "使用狙击步枪攻击单个目标，造成<color=#F74848>0.8</color>倍伤害，攻击前可以进行<buf ID=900014>[瞄准]</buf>，战后可发动<buf ID=900004>[再攻击]</buf>，攻击前无法移动，每回合最多施放<color=#F74848>1</color>次",
+      "name": "Impromtu Experiment",
+      "describe": "Uses a Sniper Rifle to attack a target, dealing <color=#F74848>0.8</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking. Triggers <buf ID=900004>[Re-ATK]</buf> after combat. Cannot move before attacking. Can only use <color=#F74848>1</color> time per turn.",
       "SpecificEffects": ""
     },
     "301104": {
-      "name": "记仇！",
+      "name": "You'll Pay For That!",
       "describe": "",
-      "SpecificEffects": "遭受对战无法反击时，立即回复<color=#F74848>1</color>AP，每回合最多触发<color=#F74848>2</color>次"
+      "SpecificEffects": "When unable to retaliate during combat, immediately restores <color=#F74848>1</color>AP. Can trigger up to <color=#F74848>2</color> times per turn"
     },
     "301105": {
-      "name": "受体筛选",
+      "name": "Receptor Filter",
       "describe": "",
-      "SpecificEffects": "<buf ID=900013>[警戒射击]</buf>每回合可发动次数<color=#F74848>+1</color>；<buf ID=900111>[定向架起]</buf>时<buf ID=900013>[警戒射击]</buf>伤害倍率提升<color=#F74848>0.35</color>倍"
+      "SpecificEffects": "<buf ID=900013>[Vigilant Shot]</buf> trigger chances per turn <color=#F74848>+1</color>. In <buf ID=900111>[Directional Rack]</buf>Mode, <buf ID=900013>[Vigilant Shot]</buf> damage multiplier +<color=#F74848>0.35</color>"
     },
     "301106": {
-      "name": "超量剂量",
-      "describe": "使用狙击步枪攻击目标及射程内路径上的所有敌机，造成<color=#F74848>1</color>倍伤害，攻击前可以进行<buf ID=900014>[瞄准]</buf>",
+      "name": "Overdose",
+      "describe": "Uses a Sniper Rifle to attack the target and all enemy units along the path within range, dealing <color=#F74848>1x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking.",
       "SpecificEffects": ""
     },
     "301107": {
-      "name": "B计划！",
+      "name": "Plan B!",
       "describe": "",
-      "SpecificEffects": "退出<buf ID=900111>[定向架起]</buf>时，根据<buf ID=3011512>[阵地优势Ⅰ]</buf>层数获得移动力加成，每<color=#F74848>4</color>层获得移动力<color=#F74848>+1</color>，持续<color=#F74848>1</color>回合"
+      "SpecificEffects": "Upon exiting <buf ID=900111>[Dimentional Rack]</buf> Mode, gains a Movement bonus based on the number of <buf ID=3011512>[Positional Advantage I]</buf> stacks. Every <color=#F74848>4</color> stacks grants Movement <color=#F74848>+1</color>, lasting for <color=#F74848>1</color> turn"
     },
     "301108": {
-      "name": "戏谑余裕",
-      "describe": "使用狙击步枪按照耐久值从低到高的顺序依次攻击射程内的不同敌机<color=#F74848>5</color>次，造成<color=#F74848>0.7</color>倍伤害，必定攻击耐久值最低的部位，敌机小于<color=#F74848>5</color>个时多余次数攻击随机目标和部位；攻击中若造成暴击，后续伤害倍率提升<color=#F74848>0.2</color>倍，可叠加；\n本次攻击暴击率提升<color=#F74848>15%</color>",
+      "name": "Bantering Ease",
+      "describe": "Uses a Sniper Rifle to attack different enemies within range <color=#F74848>5</color> times in order of their HP from lowest to highest, dealing <color=#F74848>0.7x</color> DMG. Always target the part with lowest HP. If there are fewer than <color=#F74848>5</color> enemies, extra attacks target random enemies and parts. If a critical hit occurs during the attack, subsequent DMG multiplier is increased by <color=#F74848>0.2x</color>.\nGains Crit Rate <color=#F74848>+15%</color> for this attack.",
       "SpecificEffects": ""
     }
   },
@@ -104,8 +104,8 @@
       "SpecificEffects": "<buf ID=900013>[Vigilant Shot]</buf> is launched against an enemy that has not attacked. Targets the part with the lowest HP."
     },
     "301141": {
-      "name": "古灵精怪1",
-      "SpecificEffects": "<buf ID=900112>[阵地优势]</buf>在击破部位时额外获得<color=#F74848>1</color>层，每回合最多发动<color=#F74848>4</color>次"
+      "name": "Trickster 1",
+      "SpecificEffects": "Gains <color=#F74848>1</color> additional stack of <buf ID=900112>[Positional Advantage I]</buf> when destroying a part. Can trigger <color=#F74848>4</color> times per turn."
     },
     "300042": {
       "name": "AP Optimization 4",
@@ -116,17 +116,17 @@
       "SpecificEffects": "When destroying a target, additionally restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>2</color> times per turn."
     },
     "301144": {
-      "name": "古灵精怪2",
-      "SpecificEffects": "处于<buf ID=900111>[定向架起]</buf>时可使用<skill mainSkill=301144>[快速定向]</skill>指令"
+      "name": "Trickster 2",
+      "SpecificEffects": "While in <buf ID=900111>[Dimentional Rack]</buf> Mode, the <skill mainSkill=301144>[Rapid Realignment]</skill> code can be used."
     },
     "301145": {
-      "name": "古灵精怪3",
-      "SpecificEffects": "<buf ID=900112>[阵地优势]</buf>每层额外提升<color=#F74848>2%</color>伤害"
+      "name": "Trickster 3",
+      "SpecificEffects": "Each stack of <buf ID=3011512>[Positional Advantage I]</buf> increases DMG dealt by <color=#F74848>2%</color>."
     },
     "301146": {
-      "name": "古灵精怪4",
-      "SpecificEffects": "行动结束时，若处于<buf ID=900111>[定向架起]</buf>状态，狙击步枪射程<color=#F74848>+1</color>，可叠加<color=#F74848>2</color>层，退出<buf ID=900111>[定向架起]</buf>时失去所有层数"
+      "name": "Trickster 4",
+      "SpecificEffects": "At the end of action, if in <buf ID=900111>[Dimentional Rack]</buf> Mode, Sniper Rifle range <color=#F74848>+1</color>. Can stack <color=#F74848>2</color>times. All stacks are lost upon exiting <buf ID=900111>[Dimentional Rack]</buf> Mode."
     }
   },
-  "version": "1.0"
+  "version": "2.0"
 }
