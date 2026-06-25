@@ -7,12 +7,12 @@
       "SpecificEffects": "主动攻击时，若命中的目标大于等于<color=#F74848>3</color>个，战后回复<color=#F74848>1</color>AP，每回合最多发动<color=#F74848>1</color>次"
     },
     "30168": {
-      "name": "整备模组",
-      "SpecificEffects": "自身的耐久值百分比大于等于<color=#F74848>80%</color>时，伤害提升<color=#F74848>9%</color>，遭受伤害降低<color=#F74848>9%</color>；\n行动开始时耐久值恢复<color=#F74848>8%</color>"
+      "name": "Flawless Mod",
+      "SpecificEffects": "When HP is higher than <color=#F74848>80%</color>, DMG <color=#F74848>+9%</color>, DMG Taken <color=#F74848>-9%</color>.\nAt the start of each turn, restore <color=#F74848>8%</color> of HP."
     },
     "40014": {
-      "name": "校准模组",
-      "SpecificEffects": "命中率提升<color=#F74848>10%</color>"
+      "name": "Accuracy Mod",
+      "SpecificEffects": "Hit Rate <color=#F74848>+10%</color>."
     }
   },
   "version": "1.0"

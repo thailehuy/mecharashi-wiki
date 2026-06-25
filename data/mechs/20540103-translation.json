@@ -11,8 +11,8 @@
       "SpecificEffects": "攻击时，若自身耐久值百分比低于<color=#F74848>60%</color>，无视目标<color=#F74848>35%</color>护甲值和<color=#F74848>18%</color>闪避值；\n机兵移动力增加<color=#F74848>1</color>格，移动时无视单位阻挡，攻击位于移动路径上的敌机时，自身触发的<buf ID=900001>[追击]</buf>效果替换为<buf ID=900010>[连续攻击]</buf>"
     },
     "40074": {
-      "name": "承伤模组",
-      "SpecificEffects": "遭受伤害降低<color=#F74848>10%</color>"
+      "name": "DMG Taken Mod",
+      "SpecificEffects": "DMG Taken <color=#F74848>-10%</color>."
     }
   },
   "version": "1.0"
