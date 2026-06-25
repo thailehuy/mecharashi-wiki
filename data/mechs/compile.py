@@ -14,6 +14,11 @@ def apply_translation(entry, t):
             if tr:
                 for k, v in tr.items():
                     if v: mod[k] = v
+    if t.get('parts'):
+        for p in (entry.get('parts') or []):
+            override = t['parts'].get(p.get('position', ''))
+            if override:
+                p['maxHp'] = override
 
 mechs = []
 for path in sorted(glob.glob(f'{DIR}/[0-9]*.json')):
