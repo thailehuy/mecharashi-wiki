@@ -1,5 +1,5 @@
 {
-  "name": "天角兽",
+  "name": "Alicorn",
   "introduce": "HR-675 天角兽\n由地平线主导研发的重型机兵，目前只列装于晨星同盟防卫军的少数部队。\n在雷克斯大放异彩之后，地平线后续推出的新型机兵。尽管天角兽和雷克斯都是专注于远距离作战的型号，但二者却采取了完全相反的设计思路。如果说雷克斯是舍弃防御，依赖高速运动来保障生存的玻璃大炮，那天角兽就是兼顾火力与防护，具备完整防御体系的移动堡垒。其搭载的复合装甲与火控系统相连接，会持续收集环境信息进行即时演算，在确保防护的同时辅助驾驶员的射击，完美展现了地平线在狙击机型上的技术沉淀。",
   "modules": {
     "40014": {
@@ -7,12 +7,12 @@
       "SpecificEffects": "Hit Rate <color=#F74848>+10%</color>."
     },
     "20244": {
-      "name": "能量爆发器",
-      "SpecificEffects": "当前武器射程内有敌机时，伤害提升<color=#F74848>15%</color>，每多<color=#F74848>1</color>台敌机，额外提升<color=#F74848>2.5%</color>，最多<color=#F74848>30%</color>"
+      "name": "Energy Booster",
+      "SpecificEffects": "When there are enemies within the current weapon's range, DMG <color=#F74848>+15%</color>. For each additional <color=#F74848>1</color> enemy, DMG increases by an extra <color=#F74848>2.5%</color>, upto <color=#F74848>30%</color>."
     },
     "30358": {
-      "name": "专注模组",
-      "SpecificEffects": "主动攻击前若未移动过，暴击率提高<color=#F74848>24%</color>；攻击时若产生了暴击，战后使暴击伤害提升<color=#F74848>3%</color>，可叠加，最多提升<color=#F74848>15%</color>"
+      "name": "Focus Mod",
+      "SpecificEffects": "If this unit doesn't move before actively attacking, Crit Rate <color=#F74848>+24%</color>. If a critical hit occurs when attacking, Crit DMG <color=#F74848>+3%</color> after combat. This effect can stack up to a maximum increase of <color=#F74848>15%</color>"
     }
   },
   "version": "1.0"
