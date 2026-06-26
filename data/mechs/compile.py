@@ -1,6 +1,7 @@
 import json, glob, os
 
-DIR         = '/Users/huythai/code/mecharashi-wiki/data/mechs'
+DIR         = os.path.dirname(os.path.abspath(__file__))
+
 BODY_FIELDS = ['ID', 'name', 'type', 'quality', 'icon', 'mechaIcon', 'lihuiIcon', 'introduce',
                'output', 'durable', 'Armor', 'fire', 'Antiriot']
 

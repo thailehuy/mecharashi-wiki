@@ -1,7 +1,8 @@
 import json, glob, os
 from copy import deepcopy
 
-DIR    = '/Users/huythai/code/mecharashi-wiki/data/pilots'
+DIR = os.path.dirname(os.path.abspath(__file__))
+
 FIELDS = ['ID', 'PilotName', 'PortraitHeroIcon', 'AvatarHeroIcon', 'RealName', 'Gender',
           'Profession', 'Occupation', 'quality', 'Talent0_2Ability', 'Talent3_5Ability',
           'NeuralDriveTemplate', 'biomimetic_computer_data']
@@ -38,11 +39,11 @@ for path in sorted(glob.glob(f'{DIR}/[0-9]*.json')):
     pid = os.path.basename(path).replace('.json', '')
     if pid.endswith('-translation'):
         continue
-    raw = json.load(open(path))['data']['data']
+    raw = json.load(open(path, 'r', encoding='utf-8'))['data']['data']
     entry = {k: raw.get(k, '') for k in FIELDS}
 
     t_path = f'{DIR}/{pid}-translation.json'
-    t = json.load(open(t_path)) if os.path.exists(t_path) else {}
+    t = json.load(open(t_path, 'r', encoding='utf-8')) if os.path.exists(t_path) else {}
     apply_translation(entry, t)
     entry['version'] = t.get('version', '1.0')
 
