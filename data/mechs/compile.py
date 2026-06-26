@@ -27,7 +27,7 @@ for path in sorted(glob.glob(f'{DIR}/[0-9]*.json')):
     if mid.endswith('-translation'):
         continue
     try:
-        raw = json.load(open(path))['data']['data']
+        raw = json.load(open(path, 'r', encoding='utf8'))['data']['data']
     except Exception as e:
         print(f'Skip {path}: {e}')
         continue
@@ -43,7 +43,7 @@ for path in sorted(glob.glob(f'{DIR}/[0-9]*.json')):
     entry['modules']        = manji.get('ModuleCarried', [])
 
     t_path = f'{DIR}/{mid}-translation.json'
-    t = json.load(open(t_path)) if os.path.exists(t_path) else {}
+    t = json.load(open(t_path, 'r', encoding='utf8')) if os.path.exists(t_path) else {}
     apply_translation(entry, t)
     if t.get('manjiFirepower'):
         entry['manjiFirepower'] = t['manjiFirepower']
