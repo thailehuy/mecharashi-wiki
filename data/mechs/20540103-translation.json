@@ -1,19 +1,19 @@
 {
-  "name": "芬里厄",
+  "name": "Fenrir",
   "introduce": "OS-10S 芬里厄\n由西塞罗实验室设计，经黑曜石改良后的中型格斗机兵。与OS-13S海拉为同代机。\n其搭载的哈提装置，能绕过绝大多数的机载干扰系统，对敌机进行锁定。并为OS-10S的追击系统提供强劲动能。由于布莱尔政权的倒台，OS-10S并未完成量产，仅有的数台试验机型封存在米赫玛岛的掠食者实验室中，并最终由联合军部接手。芬里厄在定位和技术上是否会有新的突破仍犹未可知。\n",
   "modules": {
     "20494": {
-      "name": "哈提装置",
-      "SpecificEffects": "主动攻击对战时<color=#F74848>20%</color>概率触发<buf ID=900001>[追击]</buf>，造成<color=#F74848>0.25</color>倍伤害，自身耐久值百分比每降低<color=#F74848>15%</color>，触发概率提升<color=#F74848>20%</color>"
+      "name": "Last Stand Mod",
+      "SpecificEffects": "When initiating combat, <color=#F74848>20%</color> chance to trigger <buf ID=900001>[Flurry Strike]</buf>, dealing <color=#F74848>0.25</color> DMG. For every <color=#F74848>15%</color> missing HP, trigger chance increases by <color=#F74848>20%</color>."
     },
     "30398": {
-      "name": "狂暴模组",
-      "SpecificEffects": "攻击时，若自身耐久值百分比低于<color=#F74848>60%</color>，无视目标<color=#F74848>35%</color>护甲值和<color=#F74848>18%</color>闪避值；\n机兵移动力增加<color=#F74848>1</color>格，移动时无视单位阻挡，攻击位于移动路径上的敌机时，自身触发的<buf ID=900001>[追击]</buf>效果替换为<buf ID=900010>[连续攻击]</buf>"
+      "name": "Berserk Mod",
+      "SpecificEffects": "When attacking, if the user's HP percentage is below <color=#F74848>60%</color>, ignores <color=#F74848>35%</color> target's defense and <color=#F74848>18%</color> target's dodge rate.\nThis unit movement increases by <color=#F74848>1</color> tile, ignores unit obstruction when moving. When attacking enemies within movement range, <buf ID=900001>[Flurry Strike]</buf> is upgraded to <buf ID=900010>[Gutsy Strike]</buf>"
     },
     "40074": {
       "name": "DMG Taken Mod",
       "SpecificEffects": "DMG Taken <color=#F74848>-10%</color>."
     }
   },
-  "version": "1.0"
+  "version": "2.2"
 }
