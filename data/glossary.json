@@ -197,8 +197,8 @@
       "effect": "A finishing blow that directly destroys a critically damaged part."
     },
     "900111": {
-      "name": "Dimensional Rack",
-      "effect": "A rack-type attack that exploits dimensional positioning for enhanced effects."
+      "name": "Directional Rack",
+      "effect": "Stationary deployment. Unable to move. Attack range changes to a fixed direction area, but grants a special bonus."
     },
     "900112": {
       "name": "Positional Advantage I",
@@ -620,11 +620,11 @@
   "skill": {
     "301144": {
       "name": "Rapid Realignment",
-      "effect": "Quickly reposition to an optimal attack angle."
+      "effect": "Quickly moves to an empty tile within <color=#F74848>3</color> tiles and reselects rack direction without exiting [Directional Rack] Mode"
     },
     "301150": {
-      "name": "Dimensional Rack",
-      "effect": "Deploy a rack from a dimensional angle, enabling unique attack trajectories."
+      "name": "Directional Rack",
+      "effect": "Enters [Directional Rack] Mode: Unable to move, Sniper Rifle's attack range becomes fixed-direction <color=#F5C542>fan-shaped 5-tile</color> area. Can continue attacking after using [Directional Rack]. Automatically exits [Directional Rack] Mode en an Arm is destroyed. <color=#F5C542>[Retract]</color> is available in [Directional Rack] Mode. After retracting, can continue moving."
     }
   }
 }
