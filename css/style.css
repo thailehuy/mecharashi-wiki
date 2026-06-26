@@ -651,3 +651,45 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+/* ── Keyword glossary ─────────────────────────────────────────────────────── */
+.kw {
+  color: #b39ddb;
+  cursor: help;
+  border-bottom: 1px dashed rgba(179, 157, 219, 0.5);
+  white-space: nowrap;
+}
+.kw-skill {
+  color: #b39ddb;
+  border-bottom-color: rgba(179, 157, 219, 0.5);
+}
+.kw-unknown {
+  opacity: 0.75;
+}
+
+#kw-tooltip {
+  position: absolute;
+  z-index: 2000;
+  max-width: 280px;
+  background: #1a1a2e;
+  border: 1px solid #3a3a6e;
+  border-radius: 6px;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.8rem;
+  line-height: 1.45;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.1s;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.5);
+}
+#kw-tooltip.visible {
+  opacity: 1;
+}
+.kw-tip-name {
+  font-weight: 600;
+  color: #b39ddb;
+  margin-bottom: 0.25rem;
+}
+.kw-tip-effect {
+  color: #b0b0c8;
+}

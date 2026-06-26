@@ -323,15 +323,7 @@ Pages.pilots = {
   },
 
   _parseEffects: function (text) {
-    return text
-      .replace(/&/g, '&amp;').replace(/</g, '\x00LT\x00').replace(/>/g, '\x00GT\x00')
-      // restore only the tags we handle
-      .replace(/\x00LT\x00color=(#[0-9A-Fa-f]+)\x00GT\x00([\s\S]*?)\x00LT\x00\/color\x00GT\x00/g,
-        function (_, color, inner) { return '<span style="color:' + color + '">' + inner + '</span>'; })
-      .replace(/\x00LT\x00buf[^)]*?\x00GT\x00([\s\S]*?)\x00LT\x00\/buf\x00GT\x00/g, '$1')
-      // strip any remaining unknown tags
-      .replace(/\x00LT\x00[^]*?\x00GT\x00/g, '')
-      .replace(/\n/g, '<br>');
+    return Glossary.parseEffects(text);
   },
 
   destroy: function () {

@@ -1,4 +1,8 @@
 $(function () {
+  // Glossary data is pre-loaded via data/glossary.js; just init tooltips
+  Glossary.init();
+
+
   var DEFAULT_PAGE = 'pilots';
   var currentPage  = null;
 
