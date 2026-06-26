@@ -1,5 +1,5 @@
 {
-  "name": "影武者",
+  "name": "Shadow Warrior",
   "introduce": "ART-108 龙前正宗，出口商品名：影武者\n由KATANA与知名机兵设计师筱原正宗联合研发的重型机兵。\nART-108保留了筱原正宗强烈的个人风格，并在外装甲上采用了更加精巧的结构设计，在保留风格化外形的同时，兼顾了重型机兵独特的高防护能力。安装在躯干部位的「残心」芯片，能根据战斗中的实际情况，转换增压出力。强悍的持续作战效能，使得影武者成为名副其实的战场杀器。",
   "modules": {
     "40014": {
@@ -7,13 +7,13 @@
       "SpecificEffects": "Hit Rate <color=#F74848>+10%</color>."
     },
     "20504": {
-      "name": "残心芯片",
-      "SpecificEffects": "每台敌机受到包含<buf ID=900017>[固定伤害]</buf>或溅射伤害的攻击时，获得伤害提升<color=#F74848>6%</color>，可叠加<color=#F74848>5</color>层，持续<color=#F74848>2</color>回合"
+      "name": "Remnant Core Mod",
+      "SpecificEffects": "Every time an enemy takes <buf ID=900017>[Fixed DMG]</buf> or AOE DMG, gains <color=#F74848>6%</color> DMG, stacking up to<color=#F74848>5</color> times, lasting for <color=#F74848>2</color> turns."
     },
     "30408": {
-      "name": "掠阵模组",
-      "SpecificEffects": "攻击位于任意地形效果上的目标时，伤害提升<color=#F74848>18%</color>；造成的<buf ID=900017>[固定伤害]</buf>提升<color=#F74848>25%</color>"
+      "name": "Flanking Mod",
+      "SpecificEffects": "When attacking enemies on any terrain effect, DMG dealt increases by <color=#F74848>18%</color>, <buf ID=900017>[Fixed DMG]</buf> dealt increases by <color=#F74848>25%</color>."
     }
   },
-  "version": "1.0"
+  "version": "2.2"
 }
