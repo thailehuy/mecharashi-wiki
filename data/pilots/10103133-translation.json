@@ -1,5 +1,5 @@
 {
-  "PilotName": "罗斯玛丽",
+  "PilotName": "Rosemary",
   "RealName": "Rosemary Jean",
   "Gender": "Female",
   "Profession": "Launcher",
@@ -26,11 +26,11 @@
     "401002": {
       "name": "Know your enemies",
       "describe": "",
-      "SpecificEffects": "When actively attacking, if the number of <buf ID=900123>[Intelligence]</buf> stacks are less than <color=#F74848>10</color>, no stacks will be consumed"
+      "SpecificEffects": "When actively attacking, if the number of <buf ID=4010500>[Intelligence]</buf> stacks are less than <color=#F74848>10</color>, no stacks will be consumed"
     },
     "401003": {
       "name": "Planning",
-      "describe": "Completely refills Rocket Launchers ammo Magazine and gains <color=#F74848>2</color> stacks of <buf ID=900123>[Intelligence]</buf>. Can continue action with remaining movement.",
+      "describe": "Completely refills Rocket Launchers ammo Magazine and gains <color=#F74848>2</color> stacks of <buf ID=4010500>[Intelligence]</buf>. Can continue action with remaining movement.",
       "SpecificEffects": ""
     },
     "401004": {
@@ -51,7 +51,7 @@
     "401007": {
       "name": "Intelligence Advantage",
       "describe": "",
-      "SpecificEffects": "When possessing <color=#F74848>20</color> or more stacks of <buf ID=900123>[Intelligence]</buf>, reduces allies AOE DMG taken by <color=#F74848>15%</color>. After combat grants <color=#F74848>1</color> random buff to those allies, lasting for <color=#F74848>2</color> turns."
+      "SpecificEffects": "When possessing <color=#F74848>20</color> or more stacks of <buf ID=4010500>[Intelligence]</buf>, reduces allies AOE DMG taken by <color=#F74848>15%</color>. After combat grants <color=#F74848>1</color> random buff to those allies, lasting for <color=#F74848>2</color> turns."
     },
     "401008": {
       "name": "Selective Bombing",
@@ -110,7 +110,7 @@
     },
     "401041": {
       "name": "Flawless Calculation 1",
-      "SpecificEffects": "When actively attacking, additionally gains <color=#F74848>5</color> stacks of <buf ID=900123>[Intelligence]</buf>."
+      "SpecificEffects": "When actively attacking, additionally gains <color=#F74848>5</color> stacks of <buf ID=4010500>[Intelligence]</buf>."
     },
     "600042": {
       "name": "AP Optimization 4",
@@ -122,15 +122,15 @@
     },
     "401044": {
       "name": "Flawless Calculation 2",
-      "SpecificEffects": "<buf ID=900123>[Intelligence]</buf> effect changes to: increases all allies DMG dealt by <color=#F74848>1.2%</color>. <color=#F74848>2</color> stacks are consumed when attacking."
+      "SpecificEffects": "<buf ID=4010500>[Intelligence]</buf> effect changes to: increases all allies DMG dealt by <color=#F74848>1.2%</color>. <color=#F74848>2</color> stacks are consumed when attacking."
     },
     "401045": {
       "name": "Flawless Calculation 3",
-      "SpecificEffects": "When <buf ID=900123>[Intelligence]</buf> stacks are <color=#F74848>20</color> or more, AP recovery increases by <color=#F74848>+1</color>."
+      "SpecificEffects": "When <buf ID=4010500>[Intelligence]</buf> stacks are <color=#F74848>20</color> or more, AP recovery increases by <color=#F74848>+1</color>."
     },
     "401046": {
       "name": "Flawless Calculation 4",
-      "SpecificEffects": "<buf ID=900123>[Intelligence]</buf> maximum stacks increase to <color=#F74848>35</color>, and <buf ID=900123>[Intelligence]</buf> effect is increased by <color=#F74848>75%</color>."
+      "SpecificEffects": "<buf ID=4010500>[Intelligence]</buf> maximum stacks increase to <color=#F74848>35</color>, and <buf ID=4010500>[Intelligence]</buf> effect is increased by <color=#F74848>75%</color>."
     }
   },
   "version": "2.2"
