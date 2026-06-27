@@ -5,12 +5,12 @@
   "Profession": "Assault",
   "Occupation": "Raider",
   "Talent0_2Ability": {
-    "name": "伏锋",
-    "SpecificEffects": "若装备两把机枪，发动反击时发动<buf ID=900095>[双枪反击]</buf>，造成<color=#F74848>2×0.6</color>倍伤害；\n行动结束时，获得<color=#F74848>1</color>层<buf ID=2015509>[强化反击]</buf>，可叠加<color=#F74848>5</color>层"
+    "name": "Veiled Razor",
+    "SpecificEffects": "If equipped with two Machine Guns, triggers <buf ID=900095>[Dual Gun Retaliation]</buf> when retaliating, dealing <color=#F74848>0.6x</color> DMG <color=#F74848>2</color> times.\\nAfter taking action, gains <color=#F74848>1</color> stack of <buf ID=2015509>[Retaliation Enhancement]</buf>. Stacks up to <color=#F74848>5</color> times."
   },
   "Talent3_5Ability": {
-    "name": "伏锋",
-    "SpecificEffects": "若装备两把机枪，发动反击时发动<buf ID=900095>[双枪反击]</buf>，造成<color=#F74848>2×0.6</color>倍伤害；\n行动结束时，获得<color=#F74848>1</color>层<buf ID=2015509>[强化反击]</buf>，可叠加<color=#F74848>5</color>层；\n反击时可获得<color=#F74848>1</color>AP，每回合最多发动<color=#F74848>1</color>次"
+    "name": "Veiled Razor",
+    "SpecificEffects": "If equipped with two Machine Guns, triggers <buf ID=900095>[Dual Gun Retaliation]</buf> when retaliating, dealing <color=#F74848>0.6x</color> DMG <color=#F74848>2</color> times.\\nAfter taking action, gains <color=#F74848>1</color> stack of <buf ID=2015509>[Retaliation Enhancement]</buf>. Stacks up to <color=#F74848>5</color> times.\\nGains <color=#F74848>1</color> AP when retaliating. Can only trigger <color=#F74848>1</color> time per turn."
   },
   "skills": {
     "200001": {
@@ -19,38 +19,43 @@
       "SpecificEffects": "In cooperation with allies, use Assault Weapons to launch a <buf ID=900002>[Link Attack]</buf> against the target, dealing <color=#F74848>0.2x</color> DMG, effective up to <color=#F74848>1</color> time per turn."
     },
     "201502": {
-      "name": "连战养护",
+      "name": "Continuous Maintenance",
       "describe": "",
-      "SpecificEffects": "反击造成伤害时，战后恢复完好部位的耐久值，恢复量为伤害的<color=#F74848>25%</color>"
+      "SpecificEffects": "When Retaliation deals damage, restores HP equal to <color=#F74848>25%</color> of the damage dealt to undestroyed parts after combat."
     },
     "201503": {
-      "name": "火线风暴",
-      "describe": "同时使用两把机枪对<range type=1>面前扇形</range>范围内的所有目标，造成<color=#F74848>2×0.3</color>倍范围伤害，每命中<color=#F74848>1</color>名目标，战后获得<color=#F74848>1</color>层<buf ID=2015509>[强化反击]</buf>，最多<color=#F74848>1</color>次获得<color=#F74848>3</color>层，可叠加<color=#F74848>5</color>层",
+      "name": "Firestorm",
+      "describe": "Simultaneously uses two Machine Guns to attack all targets within a <range type=1>fan-shaped area ahead</range>, dealing <color=#F74848>0.3x</color> AoE DMG <color=#F74848>2</color> times. Gains <color=#F74848>1</color> stack of <buf ID=2015509>[Retaliation Enhancement]</buf> after combat for each target hit, stacking up to <color=#F74848>3</color> times per <color=#F74848>1</color> attack. Stacks up to <color=#F74848>5</color> times in total.",
       "SpecificEffects": ""
     },
     "201504": {
-      "name": "连珠",
-      "describe": "同时使用两把机枪攻击单个目标，造成<color=#F74848>2×0.7</color>倍伤害，自身获得<color=#F74848>1</color>层<buf ID=2015041>[反击爆发]</buf>，可叠加<color=#F74848>3</color>层",
+      "name": "Rapid Fire",
+      "describe": "Simultaneously uses two Machine Guns to attack a target, dealing <color=#F74848>0.7x</color> DMG <color=#F74848>2</color> times. Gains <color=#F74848>1</color> stack of <buf ID=2015041>[Counter Burst]</buf>. Stacks up to <color=#F74848>3</color> times.",
       "SpecificEffects": ""
     },
     "201505": {
-      "name": "防线设立",
+      "name": "Defense Line",
       "describe": "",
-      "SpecificEffects": "使自身周围<color=#F74848>3</color>格范围内其他友军可使用突击或射击武器发动<buf ID=900061>[协力反击]</buf>，造成<color=#F74848>0.2</color>倍伤害，每回合最多发动<color=#F74848>1</color>次"
+      "SpecificEffects": "Allows allies within <color=#F74848>3</color> tiles to use Assault or Ranged Weapons to launch a <buf ID=900061>[Link Retaliation]</buf>, dealing <color=#F74848>0.2x</color> DMG. Can only trigger <color=#F74848>1</color> time per turn."
     },
     "201506": {
-      "name": "战意勃发",
-      "describe": "指定<color=#F74848>1</color>名其他友军获得<buf ID=2015061>[荫庇]</buf>，持续至目标下次行动开始，然后可使用剩余移动力继续行动",
+      "name": "Tension Surge",
+      "describe": "Designates <color=#F74848>1</color> ally to receive <buf ID=2015061>[Sanctuary]</buf>, lasting until the target's next action begins. Can continue action with remaining Movement.",
       "SpecificEffects": ""
     },
     "201507": {
-      "name": "戮力同心",
+      "name": "United Effort",
       "describe": "",
-      "SpecificEffects": "自身周围<color=#F74848>3</color>格范围内的友军发动<buf ID=900096>[反击]</buf>和<buf ID=900061>[协力反击]</buf>时，伤害提升<color=#F74848>10%</color>，命中率提升<color=#F74848>5%</color>"
+      "SpecificEffects": "When allies within <color=#F74848>3</color> tiles trigger <buf ID=900096>[Retaliation]</buf> and <buf ID=900061>[Link Retaliation]</buf>, DMG <color=#F74848>+10%</color> and Hit Rate <color=#F74848>+5%</color>."
     },
     "201508": {
-      "name": "怒涛将至",
-      "describe": "自身获得<buf ID=2015081>[逆袭时刻]</buf>和<buf ID=2015087>[怒涛将至]</buf>；\n自身反击时不消耗<buf ID=2015509>[强化反击]</buf>，持续至下次行动开始时",
+      "name": "Maelstrom",
+      "describe": "Gains <buf ID=2015081>[Turning Point]</buf> and <buf ID=2015087>[Maelstrom]</buf>.\nDoes not consume <buf ID=2015509>[Retaliation Enhancement]</buf> when retaliating. Lasts until the next action begins.",
+      "SpecificEffects": ""
+    },
+    "201509": {
+      "name": "Armed and Ready",
+      "describe": "Uses a Machine Gun to attack a target, dealing <color=#F74848>1.2x</color> DMG. After combat, gains <color=#F74848>1</color> stack of <buf ID=2015509>[Retaliation Enhancement]</buf>. Stacks up to <color=#F74848>5</color> times.",
       "SpecificEffects": ""
     }
   },
@@ -103,29 +108,29 @@
       "name": "Perfect Position 4",
       "SpecificEffects": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, final DMG <color=#F74848>+30%</color>."
     },
-    "201541": {
-      "name": "天火1",
-      "SpecificEffects": "行动结束时，自身周围<color=#F74848>3</color>格范围内每有<color=#F74848>1</color>台敌机，额外获得<color=#F74848>1</color>层<buf ID=2015509>[强化反击]</buf>，最多获得<color=#F74848>2</color>层"
-    },
     "200042": {
       "name": "AP Optimization 4",
       "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
     },
     "200043": {
       "name": "Adaptive Warfare 2",
-      "SpecificEffects": "If not moved before an Active Attack, <buf ID=900004>[Re-ATK]</buf> can be triggered, effective up to <color=#F74848>1</color> time per turn. Unable to move before attacking.\nEffects similar to <buf ID=900004>[Re-ATK]</buf> cannot be re-triggered."
+      "SpecificEffects": "Before actively attacking without having moved, can trigger <buf ID=900004>[Re-ATK]</buf>. Can only trigger <color=#F74848>1</color> time per turn. Unable to move before attacking.\nEffects similar to <buf ID=900004>[Re-ATK]</buf> cannot be re-triggered."
+    },
+    "201541": {
+      "name": "Heavenly Fire 1",
+      "SpecificEffects": "At end of action, for each enemy within <color=#F74848>3</color> tiles, gains <color=#F74848>1</color> stack of <buf ID=2015509>[Retaliation Enhancement]</buf>, up to <color=#F74848>2</color> stacks."
     },
     "201544": {
-      "name": "天火2",
-      "SpecificEffects": "<buf ID=900023>[反击先手]</buf>时，驱散攻击者携带的<color=#F74848>1</color>个增益效果"
+      "name": "Heavenly Fire 2",
+      "SpecificEffects": "<buf ID=900023>[Quick Draw]</buf> dispels <color=#F74848>1</color> buff from the attacker."
     },
     "201545": {
-      "name": "天火3",
-      "SpecificEffects": "携带<buf ID=2015509>[强化反击]</buf>时，遭受伤害降低<color=#F74848>10%</color>"
+      "name": "Heavenly Fire 3",
+      "SpecificEffects": "When <buf ID=2015509>[Retaliation Enhancement]</buf> is active, DMG Taken <color=#F74848>-10%</color>."
     },
     "201546": {
-      "name": "天火4",
-      "SpecificEffects": "<buf ID=900095>[双枪反击]</buf>倍率<color=#F74848>+0.1</color>"
+      "name": "Heavenly Fire 4",
+      "SpecificEffects": "<buf ID=900095>[Dual Gun Retaliation]</buf> multiplier <color=#F74848>+0.1</color>."
     }
   },
   "version": "1.7"

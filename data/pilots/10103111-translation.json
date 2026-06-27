@@ -5,12 +5,12 @@
   "Profession": "Mechanic",
   "Occupation": "Machinist",
   "Talent0_2Ability": {
-    "name": "Auto Mod",
-    "SpecificEffects": "After performing active repairs, grant <buf ID=5004502>[Regular Repair I]</buf> to the target, effective for <color=#F74848>2</color> times and lasting for <color=#F74848>2</color> turns."
+    "name": "Sentinel Ward",
+    "SpecificEffects": "After performing active repairs, applies <buf ID=5004502>[Regular Repair II]</buf> to the target. Can trigger <color=#F74848>2</color> times. Lasts for <color=#F74848>2</color> turns."
   },
   "Talent3_5Ability": {
-    "name": "Auto Mod",
-    "SpecificEffects": "After performing active repairs, grant <buf ID=5004502>[Regular Repair I]</buf> to the target, effective for <color=#F74848>2</color> times and lasting for <color=#F74848>2</color> turns.\nWhen executing an individual repair skill, additionally apply <buf ID=5004512>[Magnetize Repair]</buf> to the target, effective for <color=#F74848>1</color> time and lasting for <color=#F74848>2</color> turns."
+    "name": "Sentinel Ward",
+    "SpecificEffects": "After performing active repairs, applies <buf ID=5004502>[Regular Repair II]</buf> to the target. Can trigger <color=#F74848>2</color> times. Lasts for <color=#F74848>2</color> turns.\nAdditionally, after executing a single-target repair skill, applies <buf ID=5004512>[Magnetized Repair]</buf> to the target. Can trigger <color=#F74848>1</color> time. Lasts for <color=#F74848>2</color> turns."
   },
   "skills": {
     "500001": {
@@ -20,42 +20,42 @@
     },
     "700009": {
       "name": "Wide-Range Repair",
-      "describe": "Restore the HP of all allies within the selected <range type=1>Diamond (2 tiles) area</range>. The repair amount is <color=#F74848>1.0x</color> the Manipulator's Repair AMT. It can repair <color=#F74848>1</color> damaged part.",
+      "describe": "Restores the HP of all allies within the selected <range type=1>2-tile diamond area</range>. Repair amount is equal to <color=#F74848>1.0x</color> Manipulator Repair AMT. Can repair <color=#F74848>1</color> destroyed part.",
       "SpecificEffects": ""
     },
     "500403": {
-      "name": "Follow-up Care",
+      "name": "Follow-Up Care",
       "describe": "",
-      "SpecificEffects": "When involved in a <buf ID=900002>[Link Attack]</buf>, perform <buf ID=900020>[Assist Repair]</buf> on the ally who led the attack. The repair amount is <color=#F74848>0.3x</color> the Manipulator's Repair AMT. This cannot repair damaged parts and is effective up to <color=#F74848>2</color> times per turn."
+      "SpecificEffects": "When engaging in a <buf ID=900002>[Link Attack]</buf>, performs <buf ID=900020>[Assist Repair]</buf> on the attacking ally, restoring HP equal to <color=#F74848>0.3x</color> Manipulator Repair AMT. Cannot repair destroyed parts. Can trigger up to <color=#F74848>2</color> times per turn."
     },
     "700037": {
       "name": "Harmlessness",
       "describe": "",
-      "SpecificEffects": "After performing active repairs, dispel <color=#F74848>1</color> debuff."
+      "SpecificEffects": "After performing active repairs, dispels <color=#F74848>1</color> debuff."
     },
     "500405": {
       "name": "Full Auto",
       "describe": "",
-      "SpecificEffects": "When an ally within the adjacent (<color=#F74848>2</color> tiles) area is attacked, automatically perform <buf ID=900020>[Assist Repair]</buf> on the ally after combat. The repair amount is <color=#F74848>0.3x</color> the Manipulator's Repair AMT. This cannot repair damaged parts and is effective up to <color=#F74848>2</color> times per turn."
+      "SpecificEffects": "When an ally within <color=#F74848>2</color> adjacent tiles is attacked, performs <buf ID=900020>[Assist Repair]</buf> on that ally after combat, restoring HP equal to <color=#F74848>0.3x</color> Manipulator Repair AMT. Cannot repair destroyed parts. Can trigger up to <color=#F74848>2</color> times per turn."
     },
     "500406": {
-      "name": "Repair Empathy",
-      "describe": "Restore the HP of all parts of an ST. The repair amount is <color=#F74848>1.6x</color> the Manipulator's Repair AMT. This can repair <color=#F74848>1</color> damaged part. Additionally, restore the same repair amount to <color=#F74848>another</color> ally with the lowest HP, which can also repair <color=#F74848>1</color> damaged part and trigger the <buf ID=900059>[Auto Mod]</buf> effect.",
+      "name": "Repair Synergy",
+      "describe": "Restores HP equal to <color=#F74848>1.6x</color> Manipulator Repair AMT to all parts of a single ST. Can repair <color=#F74848>1</color> destroyed part. Also, restores the same amount of HP to the ally with the lowest HP percentage, repairs <color=#F74848>1</color> destroyed part, and triggers the <buf ID=900059>[Sentinel Ward]</buf> effect.",
       "SpecificEffects": ""
     },
     "500407": {
       "name": "Field Maintenance",
       "describe": "",
-      "SpecificEffects": "After performing active repairs, apply <buf ID=7100102>[Hit Rate UP I]</buf> and <buf ID=7100304>[DMG UP II]</buf> to the target, lasting for <color=#F74848>2</color> turns."
+      "SpecificEffects": "After performing active repairs, applies <buf ID=7100102>[Hit Rate UP I]</buf> and <buf ID=7100304>[DMG UP II]</buf> to the target, lasting for <color=#F74848>2</color> turns."
     },
     "500408": {
-      "name": "Full Line Maintenance",
-      "describe": "Restore the HP of all parts of an ST. The repair amount is <color=#F74848>1.75x</color> the Manipulator's Repair AMT. This can repair <color=#F74848>1</color> damaged part. Additionally, restore the same repair amount to <color=#F74848>2</color> allies with the lowest HP, which can also repair <color=#F74848>1</color> damaged part and trigger the <buf ID=900059>[Auto Mod]</buf> effect.",
+      "name": "Full-Line Maintenance",
+      "describe": "Restores HP equal to <color=#F74848>1.75x</color> Manipulator Repair AMT to all parts of a single ST. Can repair <color=#F74848>1</color> destroyed part. Also, restores the same amount of HP to <color=#F74848>2</color> allies with the lowest HP percentage, repairs <color=#F74848>1</color> destroyed part, and triggers the <buf ID=900059>[Sentinel Ward]</buf> effect.",
       "SpecificEffects": ""
     },
     "500409": {
       "name": "Regulated Repair",
-      "describe": "Restores HP equal to <color=#F74848>2.0</color>x Manipulator Repair AMT to all parts of a single ST. Can repair <color=#F74848>1</color> destroyed part.",
+      "describe": "Restores HP equal to <color=#F74848>2.0x</color> Manipulator Repair AMT to all parts of a single ST. Can repair <color=#F74848>1</color> destroyed part.",
       "SpecificEffects": ""
     }
   },

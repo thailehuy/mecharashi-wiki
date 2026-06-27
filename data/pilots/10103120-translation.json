@@ -10,7 +10,7 @@
   },
   "Talent3_5Ability": {
     "name": "Pochy!",
-    "SpecificEffects": "Auto-deploy [Pochy] after sortie. The unit's Repair AMT is <color=#F74848>0.4x</color> that of [Seven]'s Manipulator.  [Pochy] can now cast the <buf ID=900021>[Pochy Repair]</buf>.\n[Pochy] will redeploy after being destroyed. This will take <color=#F74848>3</color> turns."
+    "SpecificEffects": "Auto-deploy [Pochy] after sortie. The unit's Repair AMT is <color=#F74848>0.4x</color> that of [Seven]'s Manipulator. [Pochy] can now cast the <buf ID=900021>[Pochy Repair]</buf>.\n[Pochy] will redeploy after being destroyed. This will take <color=#F74848>3</color> turns."
   },
   "skills": {
     "500001": {
@@ -19,24 +19,24 @@
       "SpecificEffects": "In cooperation with allies, launch a <buf ID=900002>[Link Attack]</buf> against the target, dealing <color=#F74848>0.2x</color> DMG, effective up to <color=#F74848>1</color> time per turn."
     },
     "500502": {
-      "name": "Pochy, ToPurify!",
+      "name": "Pochy Purification!",
       "describe": "",
-      "SpecificEffects": "When [Pochy] triggers <buf ID=900019>[Link Repair]</buf>, dispel <color=#F74848>2</color> debuffs after combat."
+      "SpecificEffects": "When [Pochy] triggers <buf ID=900019>[Link Repair]</buf>, dispels <color=#F74848>2</color> debuffs after combat."
     },
     "700009": {
       "name": "Wide-Range Repair",
-      "describe": "Restore the HP of all allies within the selected <range type=1>Diamond (2 tiles) area</range>. The repair amount is <color=#F74848>1.0x</color> the Manipulator's Repair AMT. It can repair <color=#F74848>1</color> damaged part.",
+      "describe": "Restores the HP of all allies within the selected <range type=1>Diamond (2 tiles) area</range>. The repair amount is <color=#F74848>1.0x</color> the Manipulator's Repair AMT. It can repair <color=#F74848>1</color> damaged part.",
       "SpecificEffects": ""
     },
     "500504": {
-      "name": "Pochy, ToFull-Auto!",
+      "name": "Pochy Full-Auto!",
       "describe": "",
-      "SpecificEffects": "When an ally within an adjacent (<color=#F74848>2</color> tiles) area is attacked, [Pochy] will automatically perform <buf ID=900020>[Assist Repair]</buf> on the ally after combat. The repair amount is <color=#F74848>0.75x</color> [Pochy]'s Repair AMT, effective up to <color=#F74848>2</color> times per turn."
+      "SpecificEffects": "When an ally within <color=#F74848>2</color> tiles is attacked, [Pochy] automatically performs <buf ID=900020>[Assist Repair]</buf> on them after combat, restoring HP equal to <color=#F74848>0.75x</color> [Pochy]'s Repair AMT. Can trigger up to <color=#F74848>2</color> times per turn."
     },
     "500505": {
-      "name": "Pochy, ToOverclock!",
+      "name": "Pochy Overclock!",
       "describe": "",
-      "SpecificEffects": "When [Pochy] triggers <buf ID=900019>[Link Repair]</buf>, Repair AMT <color=#F74848>+25%</color> and can repair <color=#F74848>1</color> additional damaged part"
+      "SpecificEffects": "When [Pochy] triggers <buf ID=900019>[Link Repair]</buf>, Repair AMT <color=#F74848>+25%</color> and can repair <color=#F74848>1</color> additional destroyed part."
     },
     "500506": {
       "name": "Pochy Station!",
@@ -44,18 +44,18 @@
       "SpecificEffects": "Allow [Pochy] to shift to <buf ID=900039>[Rack]</buf> mode: unable to move. When an ally ends their action within the adjacent (<color=#F74848>3</color> tiles) area, automatically cast <buf ID=900018>[Passive Repair]</buf>, with a repair amount of <color=#F74848>1.0x</color> [Pochy]'s Repair AMT. In <buf ID=900039>[Rack]</buf> mode, the <buf ID=900026>[Retract]</buf> code is available. After retracting, [Pochy] can continue to move."
     },
     "500507": {
-      "name": "Pochy, ToRemote!",
+      "name": "Pochy Remote!",
       "describe": "",
-      "SpecificEffects": "When [Seven]'s repair target is not within <color=#F74848>2</color> tiles of [Pochy], [Pochy] will auto-select the ally with the lowest HP in range to perform <buf ID=900019>[Link Repair]</buf>."
+      "SpecificEffects": "If [Seven] executes <buf ID=5005071>[Specific Repair Skills]</buf> on targets beyond <color=#F74848>2</color> tiles of [Pochy], [Pochy] automatically selects the ally with the lowest HP in range to perform <buf ID=900019>[Link Repair]</buf>."
     },
     "500508": {
-      "name": "ActUnit, Full Power!",
-      "describe": "非法字符",
+      "name": "Full Power!",
+      "describe": "Restores HP equal to <color=#F74848>2.8x</color> Manipulator Repair AMT to all parts of a single ST. Can repair <color=#F74848>1</color> destroyed part. If Pochy is within <color=#F74848>2</color> tiles of the target, it performs <buf ID=900019>[Link Repair]</buf>, restoring HP equal to <color=#F74848>1x</color> Pochy's Repair AMT. This <buf ID=900019>[Link Repair]</buf> repairs all destroyed parts, dispels all debuffs, and applies <buf ID=7100703>[Defensive Stance III]</buf>, which can trigger <color=#F74848>1</color> time.",
       "SpecificEffects": ""
     },
     "500509": {
-      "name": "Regulated Repair",
-      "describe": "Restores HP equal to <color=#F74848>2.0</color>x Manipulator Repair AMT to all parts of a single ST. Can repair <color=#F74848>1</color> destroyed part.",
+      "name": "Pochy Assist!",
+      "describe": "Restores HP equal to <color=#F74848>1.8x</color> Manipulator Repair AMT to all parts of a single ST. Can repair <color=#F74848>1</color> destroyed part. If Pochy is within <color=#F74848>2</color> tiles of the target, performs <buf ID=900019>[Link Repair]</buf> and restores HP equal to <color=#F74848>1x</color> Pochy's Repair AMT.",
       "SpecificEffects": ""
     }
   },

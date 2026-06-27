@@ -10,7 +10,7 @@
   },
   "Talent3_5Ability": {
     "name": "Fearless Army",
-    "SpecificEffects": "In combat, for every <color=#F74848>1</color> enemy within range, DMG <color=#F74848>+5%</color>, up to <color=#F74848>20%</color>.\nWhen Arm's HP is above <color=#F74848>60%</color>, this part's DMG Taken <color=#F74848>-25%</color>."
+    "SpecificEffects": "In combat, for every <color=#F74848>1</color> enemy within range, DMG <color=#F74848>+5%</color> and Crit Rate <color=#F74848>+5%</color>, up to <color=#F74848>20%</color> each.\nWhen an Arm's HP is above <color=#F74848>60%</color>, its DMG Taken <color=#F74848>-25%</color>."
   },
   "skills": {
     "200001": {
@@ -21,7 +21,7 @@
     "200902": {
       "name": "Surging Fury",
       "describe": "",
-      "SpecificEffects": "In combat, gain <buf ID=2009022>[Crit Rate UP]</buf> with up to <color=#F74848>3</color> stacks, lasting for <color=#F74848>1</color> turn."
+      "SpecificEffects": "Before attacking, gains <buf ID=2009022>[Crit Rate UP]</buf>. Stacks up to <color=#F74848>3</color> times. Lasts for <color=#F74848>1</color> turn."
     },
     "700012": {
       "name": "Flanking Firepower",
@@ -30,27 +30,32 @@
     },
     "700028": {
       "name": "Metal Storm",
-      "describe": "Uses Heavy Machine Gun to attack all targets within <range type=2>attack range</range>, dealing <color=#F74848>0.5x</color> AoE DMG. After combat, it inflicts <buf ID=7101701>[Armor Down I]</buf> on target hits, lasting <color=#F74848>1</color> turn.",
+      "describe": "Uses a Heavy Machine Gun to attack all targets within <range type=2>attack range</range>, dealing <color=#F74848>0.5x</color> AoE DMG. Inflicts <buf ID=7101701>[Armor Down I]</buf> on targets hit, lasting <color=#F74848>1</color> turn.",
       "SpecificEffects": ""
     },
     "200905": {
       "name": "Firepower Matrix",
       "describe": "",
-      "SpecificEffects": "Use a Heavy Machine Gun to intercept incoming rockets within maximum range, reducing their DMG Dealt by <color=#F74848>30%</color>. This effect is effective up to <color=#F74848>3</color> times per turn."
+      "SpecificEffects": "Uses a Heavy Machine Gun to intercept incoming rockets within maximum range, reducing their damage by <color=#F74848>30%</color>. Can trigger up to <color=#F74848>3</color> times per turn."
     },
     "200906": {
       "name": "Rack",
-      "describe": "Access <buf ID=900025>[Rack]</buf> mode: unable to move. Heavy Machine Gun's Range <color=#F74848>+2</color>, Bullets <color=#F74848>+1</color>. Can continue to attack after racking. Automatically exits <buf ID=900025>[Rack]</buf> mode when arm is damaged. In <buf ID=900025>[Rack]</buf> mode, can cast <buf ID=900026>[Retract]</buf> code. After retracting, can continue to move.",
+      "describe": "Enters <buf ID=900025>[Rack]</buf> Mode: Cannot move. Heavy Machine Gun Range <color=#F74848>+2</color>, Bullets <color=#F74848>+1</color>. Can continue to attack after racking. Automatically exits <buf ID=900025>[Rack]</buf> Mode when an Arm is destroyed. <buf ID=900026>[Retract]</buf> is available in <buf ID=900025>[Rack]</buf> Mode. After retracting, can continue to move.",
       "SpecificEffects": ""
     },
     "200907": {
       "name": "Nonstop Gunfire",
       "describe": "",
-      "SpecificEffects": "<buf ID=900002>[Link Attack]</buf>'s effective times per turn <color=#F74848>+1</color>. After triggering <buf ID=900002>[Link Attack]</buf> <color=#F74848>4</color> times, gain <color=#F74848>1</color> AP."
+      "SpecificEffects": "<buf ID=900002>[Link Attack]</buf> triggers per turn <color=#F74848>+1</color>. After triggering <buf ID=900002>[Link Attack]</buf> <color=#F74848>4</color> times, gains <color=#F74848>1</color> AP."
     },
     "200908": {
       "name": "Unleash",
-      "describe": "Consume all AP and use a Heavy Machine Gun to attack a target, dealing <color=#F74848>1.5x</color> DMG. For each additional AP consumed, the skill damage multiplier <color=#F74848>+0.15</color>.",
+      "describe": "Uses a Heavy Machine Gun to attack a target, consuming all AP to deal <color=#F74848>1.5x</color> DMG. For each additional AP consumed, skill damage multiplier <color=#F74848>+0.15</color>.",
+      "SpecificEffects": ""
+    },
+    "200909": {
+      "name": "Rampage Shot",
+      "describe": "Uses a Heavy Machine Gun to attack a target, dealing <color=#F74848>1.3x</color> DMG.",
       "SpecificEffects": ""
     }
   },

@@ -5,12 +5,12 @@
   "Profession": "Gunner",
   "Occupation": "Sniper",
   "Talent0_2Ability": {
-    "name": "Information Collection",
-    "SpecificEffects": "When an ST is destroyed within range, passively restore <color=#F74848>1</color> AP, with a trigger interval of <color=#F74848>1</color> turn."
+    "name": "Intel Collection",
+    "SpecificEffects": "When an ST is destroyed within range, passively restore <color=#F74848>1</color> AP. Can trigger <color=#F74848>1</color> time per turn."
   },
   "Talent3_5Ability": {
-    "name": "Information Collection",
-    "SpecificEffects": "When an ST is destroyed within range, passively restore <color=#F74848>1</color> AP, with a trigger interval of <color=#F74848>1</color> turn.\nCrit DMG <color=#F74848>+10%</color>."
+    "name": "Intel Collection",
+    "SpecificEffects": "When an ST is destroyed within range, passively restore <color=#F74848>1</color> AP. Can trigger <color=#F74848>1</color> time per turn.\\nCrit DMG <color=#F74848>+10%</color>."
   },
   "skills": {
     "300001": {
@@ -21,36 +21,41 @@
     "300902": {
       "name": "Patience",
       "describe": "",
-      "SpecificEffects": "When attacking, if you do not move during this turn, DMG <color=#F74848>+15%</color>."
+      "SpecificEffects": "When attacking without having moved this turn, DMG <color=#F74848>+15%</color>."
     },
     "300903": {
       "name": "Serenity",
       "describe": "",
-      "SpecificEffects": "At the start of Your Turn, gain <buf ID=3009032>[Serenity]</buf>, up to <color=#F74848>3</color> stacks, and remove all stacks when taking damage."
+      "SpecificEffects": "At start of action, gains <buf ID=3009032>[Serenity]</buf>. Stacks up to <color=#F74848>3</color> times. All stacks are removed upon taking damage."
     },
     "300904": {
       "name": "Annihilation",
-      "describe": "Uses Sniper Rifle to attack a target, dealing <color=#F74848>1.5x</color> DMG. Before combat, access <buf ID=900014>[Aiming]</buf> mode. Hit Rate <color=#F74848>-20%</color> when executing this skill.",
+      "describe": "Uses a Sniper Rifle to attack a target, dealing <color=#F74848>1.5x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking. Hit Rate <color=#F74848>-20%</color> when executing this skill.",
       "SpecificEffects": ""
     },
     "300905": {
       "name": "Anti-Tracking",
       "describe": "",
-      "SpecificEffects": "When detecting an incoming missile at maximum range, there is a <color=#F74848>30%</color> chance to intercept it with a Sniper Rifle. Each successful intercept restores <color=#F74848>1</color> AP, effective up to <color=#F74848>2</color> times per turn."
+      "SpecificEffects": "When detecting an incoming missile at maximum range, has a <color=#F74848>40%</color> chance to intercept it with a Sniper Rifle. Each successful interception restores <color=#F74848>1</color> AP. Can trigger up to <color=#F74848>2</color> times per turn."
     },
     "300906": {
       "name": "Absolute Territory",
-      "describe": "Access <buf ID=900025>[Rack]</buf> mode: unable to move, Sniper Rifle's Range <color=#F74848>+2</color>, DMG <color=#F74848>+10%</color>. Attacks can continue after racking. The ST automatically exits <buf ID=900025>[Rack]</buf> mode upon arm damage. In <buf ID=900025>[Rack]</buf> mode, the <buf ID=900026>[Retract]</buf> code can be cast. After retracting, movement can continue.",
+      "describe": "Enters <buf ID=900025>[Rack]</buf> Mode: Unable to move, Sniper Rifle's Range <color=#F74848>+2</color>, DMG <color=#F74848>+10%</color>. Can continue attacking after racking. ST automatically exits <buf ID=900025>[Rack]</buf> Mode when an Arm is destroyed. When in <buf ID=900025>[Rack]</buf> Mode, the <buf ID=900026>[Retract]</buf> code can be cast. After retracting, movement can continue.",
       "SpecificEffects": ""
     },
     "300907": {
       "name": "Ultimatum",
-      "describe": "Gain <color=#F74848>1</color> AP and <buf ID=7100403>[Crit Rate UP II]</buf>, lasting for <color=#F74848>1</color> turn. Can continue the action with the remaining movement.",
+      "describe": "Gains <color=#F74848>1</color> AP and <buf ID=7100403>[Crit Rate UP II]</buf>, lasting for <color=#F74848>1</color> turn. Can continue action with remaining Movement.",
       "SpecificEffects": ""
     },
     "300908": {
       "name": "The End",
-      "describe": "Consume all AP to attack a target with a Sniper Rifle, dealing <color=#F74848>1.2x</color> DMG. For each additional <color=#F74848>1</color> AP consumed, the skill damage multiplier <color=#F74848>+0.15</color>. Before combat, access <buf ID=900014>[Aiming]</buf> mode.",
+      "describe": "Consumes all AP to attack a target with a Sniper Rifle, dealing <color=#F74848>1.2x</color> DMG. For each additional <color=#F74848>1</color> AP consumed, skill damage multiplier <color=#F74848>+0.15</color>. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking.",
+      "SpecificEffects": ""
+    },
+    "300909": {
+      "name": "Accurate Fire",
+      "describe": "Uses a Sniper Rifle to attack a target, dealing <color=#F74848>1.0x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking and gains Hit Rate <color=#F74848>+15%</color>.",
       "SpecificEffects": ""
     }
   },
@@ -117,15 +122,15 @@
     },
     "300944": {
       "name": "ACE Spy 2",
-      "SpecificEffects": "At the end of the action, if not move during this turn, passively restore <color=#F74848>1</color> AP."
+      "SpecificEffects": "At the end of the action, if not moved during this turn, passively restore <color=#F74848>1</color> AP."
     },
     "300945": {
       "name": "ACE Spy 3",
-      "SpecificEffects": "The range of <buf ID=3009451>[Intelligence Collection]</buf> is expanded to the entire battlefield."
+      "SpecificEffects": "Extends <buf ID=3009451>[Intelligence Collection]</buf>'s range to the entire battlefield."
     },
     "300946": {
       "name": "ACE Spy 4",
-      "SpecificEffects": "During an Active Attack in combat, increased DMG to Body part by <color=#F74848>25%</color>."
+      "SpecificEffects": "When initiating combat, increases DMG dealt to Body parts by <color=#F74848>25%</color>."
     }
   },
   "version": "1.0"

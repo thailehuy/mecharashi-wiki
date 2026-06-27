@@ -5,12 +5,12 @@
   "Profession": "Striker",
   "Occupation": "Fighter",
   "Talent0_2Ability": {
-    "name": "第二适格者",
-    "SpecificEffects": "与机兵可以进行<buf ID=900088>[同步]</buf>；主动攻击后，若没有受到伤害，下一次主动攻击伤害提升<color=#F74848>20%</color>"
+    "name": "EVA-02 Pilot",
+    "SpecificEffects": "Can perform <buf ID=900088>[Synchronization]</buf> with ST. After actively attacking, if no damage is taken, DMG of the next active attack <color=#F74848>+20%</color>."
   },
   "Talent3_5Ability": {
-    "name": "第二适格者",
-    "SpecificEffects": "与机兵可以进行<buf ID=900088>[同步]</buf>；主动攻击后，若没有受到伤害，下一次主动攻击伤害提升<color=#F74848>20%</color>；\n出击时，<buf ID=1014820>[同步率]</buf><color=#F74848>+10%</color>；若周围<color=#F74848>2</color>格内敌机大于等于<color=#F74848>3</color>个，伤害提升<color=#F74848>15%</color>"
+    "name": "EVA-02 Pilot",
+    "SpecificEffects": "Can perform <buf ID=900088>[Synchronization]</buf> with ST. After actively attacking, if no damage is taken, DMG of the next active attack <color=#F74848>+20%</color>.\\nWhen deployed, <buf ID=1014820>[Sync Ratio]</buf> <color=#F74848>+10%</color>. If there are <color=#F74848>3</color> or more enemy STs within <color=#F74848>2</color> tiles, deals <color=#F74848>+15%</color> DMG."
   },
   "skills": {
     "100001": {
@@ -19,38 +19,43 @@
       "SpecificEffects": "After breaking a part, <buf ID=900004>[Re-ATK]</buf> can be triggered. Unable to move before the attack, and this can be effective up to <color=#F74848>2</color> times per turn."
     },
     "101402": {
-      "name": "集束",
-      "describe": "使用机枪攻击单个目标，造成<color=#F74848>1.25</color>倍伤害，对耐久值最低的部位命中权重<color=#F74848>+50</color>",
+      "name": "Cluster Fire",
+      "describe": "Uses a Machine Gun to attack a target, dealing <color=#F74848>1.25</color>x DMG. Increases Hit Weighting of the part with the lowest HP by <color=#F74848>50</color>.",
       "SpecificEffects": ""
     },
     "101403": {
-      "name": "绝伦闪避",
+      "name": "Peerless Dodge",
       "describe": "",
-      "SpecificEffects": "完全闪避攻击时，战后回复<color=#F74848>1</color>AP，每回合最多发动<color=#F74848>1</color>次"
+      "SpecificEffects": "When perfectly dodging an attack, restores <color=#F74848>1</color> AP after combat. Can trigger <color=#F74848>once</color> per turn."
     },
     "101404": {
-      "name": "跃袭",
-      "describe": "选择周围<color=#F74848>4</color>格内<color=#F74848>1</color>名目标，目标周围<color=#F74848>1</color>圈可以停留，使用长柄对目标躯干造成<color=#F74848>1.25</color>倍伤害，之后停留在目标周围<color=#F74848>1</color>圈空地上",
+      "name": "Leap Strike",
+      "describe": "Selects <color=#F74848>1</color> target within <color=#F74848>4</color> adjacent tiles and strikes using a Polearm to deal <color=#F74848>1.25</color>x DMG to the target's Body, then remains on an empty tile within <color=#F74848>1</color> ring around the target.",
       "SpecificEffects": ""
     },
     "101405": {
-      "name": "诛尽",
+      "name": "Exterminate",
       "describe": "",
-      "SpecificEffects": "对耐久值低于<color=#F74848>50%</color>的部位造成伤害提升<color=#F74848>15%</color>"
+      "SpecificEffects": "DMG <color=#F74848>+15%</color> to parts below <color=#F74848>50%</color> HP."
     },
     "101406": {
-      "name": "全面压制",
-      "describe": "同时使用两把机枪攻击单个目标，造成<color=#F74848>2×0.7</color>倍伤害，本次攻击目标无法发动反击",
+      "name": "Wing Rake",
+      "describe": "Simultaneously uses two Machine Guns to attack a target, dealing <color=#F74848>0.7</color>x DMG <color=#F74848>2</color> times. The target is unable to retaliate against this attack.",
       "SpecificEffects": ""
     },
     "101407": {
-      "name": "同步合击",
+      "name": "Synchronous Strike",
       "describe": "",
-      "SpecificEffects": "使用格斗和突击武器对友军攻击的目标发动<buf ID=900002>[协力攻击]</buf>，造成<color=#F74848>0.2</color>倍伤害，每回合最多发动<color=#F74848>2</color>次"
+      "SpecificEffects": "Uses a Melee and Assault Weapon to launch a <buf ID=900002>[Link Attack]</buf> against the target of an ally's attack, dealing <color=#F74848>0.2</color>x DMG. Can trigger up to <color=#F74848>twice</color> per turn."
     },
     "101408": {
-      "name": "破穹之矢",
-      "describe": "使用长柄投掷<range type=1>直线4格</range>内所有目标（包括飞行目标），对首个目标造成<color=#F74848>1.5</color>倍伤害，之后每个目标倍率依次减少<color=#F74848>0.4</color>，战前可以进行<buf ID=900014>[瞄准]</buf>；\n每次使用后AP消耗<color=#F74848>+1</color>，可叠加，行动结束时重置",
+      "name": "Mighty Throw",
+      "describe": "Throws a Polearm at all targets within a <range type=1>4-tile line</range> (including flying targets), dealing <color=#F74848>1.5</color>x DMG to the first target hit, with the damage multiplier decreasing by <color=#F74848>0.4</color> when hitting each subsequent target. Can enter <buf ID=900014>[Aiming]</buf> Mode before combat.\nAP Cost <color=#F74848>+1</color> after each use. Can stack. Resets after taking action.",
+      "SpecificEffects": ""
+    },
+    "101409": {
+      "name": "Fracture",
+      "describe": "Uses a Polearm to attack a target, dealing <color=#F74848>1.5</color>x DMG. If a part is destroyed successfully and both Arms remain undestroyed, deals <color=#F74848>0.25</color>x AoE DMG to targets within <color=#F74848>1</color> ring after combat.",
       "SpecificEffects": ""
     }
   },
@@ -79,10 +84,6 @@
       "name": "AP Optimization 2",
       "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
     },
-    "101431": {
-      "name": "拔萃1",
-      "SpecificEffects": "主动攻击时，根据自身耐久百分比提升暴击率，最多提升<color=#F74848>20%</color>"
-    },
     "100032": {
       "name": "AP Optimization 3",
       "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
@@ -90,22 +91,6 @@
     "100033": {
       "name": "Mobile Warfare 4",
       "SpecificEffects": "<buf ID=900004>[Re-ATK]</buf> or <buf ID=900005>[Re-Act]</buf>'s effective times per turn <color=#F74848>+1</color>."
-    },
-    "101434": {
-      "name": "拔萃2",
-      "SpecificEffects": "不会成为<buf ID=900023>[反击先手]</buf>、<buf ID=900013>[警戒射击]</buf>和<buf ID=900006>[反应攻击]</buf>的目标"
-    },
-    "101435": {
-      "name": "拔萃3",
-      "SpecificEffects": "主动攻击对战时，若自身耐久百分比大于等于目标，回避率提升<color=#F74848>25%</color>"
-    },
-    "101436": {
-      "name": "拔萃4",
-      "SpecificEffects": "行动开始时，获得<buf ID=1014363>[拔萃]</buf>，受到伤害时移除"
-    },
-    "101441": {
-      "name": "天才1",
-      "SpecificEffects": "第<color=#F74848>2</color>回合后，行动开始时，<buf ID=1014820>[同步率]</buf><color=#F74848>+5%</color>"
     },
     "100042": {
       "name": "AP Optimization 4",
@@ -115,17 +100,37 @@
       "name": "Power Innovation 3",
       "SpecificEffects": "When destroying a target, additionally restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>2</color> times per turn."
     },
+    "101431": {
+      "name": "Eminence 1",
+      "SpecificEffects": "When actively attacking, Crit Rate increases based on HP percentage, up to <color=#F74848>20%</color>."
+    },
+    "101434": {
+      "name": "Eminence 2",
+      "SpecificEffects": "Cannot be targeted by <buf ID=900023>[Quick Draw]</buf>, <buf ID=900013>[Vigilant Shot]</buf>, or <buf ID=900006>[Reaction Attack]</buf>."
+    },
+    "101435": {
+      "name": "Eminence 3",
+      "SpecificEffects": "When initiating combat, if HP percentage is greater than or equal to the target's, Dodge Rate <color=#F74848>+25%</color>."
+    },
+    "101436": {
+      "name": "Eminence 4",
+      "SpecificEffects": "At start of action, gain <buf ID=1014363>[Eminence]</buf>. This effect is removed upon taking damage."
+    },
+    "101441": {
+      "name": "Prodigy 1",
+      "SpecificEffects": "At start of action, after <color=#F74848>2</color> turns, <buf ID=1014820>[Sync Ratio]</buf> <color=#F74848>+5%</color>."
+    },
     "101444": {
-      "name": "天才2",
-      "SpecificEffects": "<buf ID=1014820>[同步率]</buf>还可以提升最终伤害，最多提升<color=#F74848>15%</color>"
+      "name": "Prodigy 2",
+      "SpecificEffects": "<buf ID=1014820>[Sync Ratio]</buf> can also increase Final DMG, up to <color=#F74848>15%</color>."
     },
     "101445": {
-      "name": "天才3",
-      "SpecificEffects": "<buf ID=1014820>[同步率]</buf>在造成伤害时可以额外提升，受到伤害时不再下降"
+      "name": "Prodigy 3",
+      "SpecificEffects": "<buf ID=1014820>[Sync Ratio]</buf> can be further increased when dealing damage, and no longer decreases when taking damage."
     },
     "101446": {
-      "name": "天才4",
-      "SpecificEffects": "<buf ID=1014820>[同步率]</buf>大于等于<color=#F74848>85%</color>时，AP的回复值<color=#F74848>+1</color>"
+      "name": "Prodigy 4",
+      "SpecificEffects": "When <buf ID=1014820>[Sync Ratio]</buf> is greater than or equal to <color=#F74848>65%</color>, AP Regen <color=#F74848>+1</color>."
     }
   },
   "version": "1.6"

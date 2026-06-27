@@ -5,12 +5,12 @@
   "Profession": "Striker",
   "Occupation": "Fighter",
   "Talent0_2Ability": {
-    "name": "独行",
-    "SpecificEffects": "行动结束时，若自身周围<color=#F74848>2</color>格内没有其他友军时，获得<color=#F74848>3</color>层<buf ID=1012512>[磁能覆甲]</buf>，持续<color=#F74848>1</color>回合"
+    "name": "Solitary",
+    "SpecificEffects": "At end of action, if there are no other allies within <color=#F74848>2</color> adjacent tiles, gains <color=#F74848>3</color> stacks of <buf ID=1012512>[Magnetic Armor]</buf>, lasting for <color=#F74848>1</color> turn."
   },
   "Talent3_5Ability": {
-    "name": "独行",
-    "SpecificEffects": "行动结束时，若自身周围<color=#F74848>2</color>格内没有其他友军时，获得<color=#F74848>3</color>层<buf ID=1012512>[磁能覆甲]</buf>，持续<color=#F74848>1</color>回合;\n主动攻击对战时，如果没有友军发动<buf ID=900002>[协力攻击]</buf>，伤害提升<color=#F74848>15%</color>\n"
+    "name": "Solitary",
+    "SpecificEffects": "At end of action, if there are no other allies within <color=#F74848>2</color> adjacent tiles, gains <color=#F74848>3</color> stacks of <buf ID=1012512>[Magnetic Armor]</buf>, lasting for <color=#F74848>1</color> turn.\\nWhen initiating combat, if no ally triggers <buf ID=900002>[Link Attack]</buf>, DMG <color=#F74848>+15%</color>."
   },
   "skills": {
     "100001": {
@@ -19,38 +19,43 @@
       "SpecificEffects": "After breaking a part, <buf ID=900004>[Re-ATK]</buf> can be triggered. Unable to move before the attack, and this can be effective up to <color=#F74848>2</color> times per turn."
     },
     "101202": {
-      "name": "魑走",
+      "name": "Ghost Step",
       "describe": "",
-      "SpecificEffects": "本回合内若没有发动过<buf ID=900004>[再攻击]</buf>，移动时无视单位阻挡，且直线方向移动力<color=#F74848>+1</color>"
+      "SpecificEffects": "If <buf ID=900004>[Re-ATK]</buf> is not triggered this turn, gains [Ignore Unit Obstruction] and straight-line Movement <color=#F74848>+1</color> when moving."
     },
     "101203": {
-      "name": "骤击",
-      "describe": "使用两把格斗武器攻击单个目标，造成<color=#F74848>2×0.85</color>倍伤害，对躯干命中权重提升<color=#F74848>25</color>",
+      "name": "Rapid Strike",
+      "describe": "Uses two Melee Weapons to attack a target, dealing <color=#F74848>0.85x</color> DMG <color=#F74848>2</color> times. Increases Body Hit Weighting by <color=#F74848>25</color>.",
       "SpecificEffects": ""
     },
     "101204": {
-      "name": "待发",
+      "name": "Ready",
       "describe": "",
-      "SpecificEffects": "主动攻击时，战前使自身获得<buf ID=1012042>[待发]</buf>，可叠加<color=#F74848>5</color>层，持续至造成暴击后移除"
+      "SpecificEffects": "When actively attacking, gains <buf ID=1012042>[Ready]</buf> before combat. Stacks up to <color=#F74848>5</color> times. This effect lasts until a critical hit is landed."
     },
     "101205": {
-      "name": "热诚",
-      "describe": "使自身获得<color=#F74848>1</color>AP，并获得<buf ID=7100503>[暴击伤害提升Ⅱ]</buf>，持续<color=#F74848>1</color>回合，然后可使用剩余移动力继续行动",
+      "name": "Zeal",
+      "describe": "Gains <color=#F74848>1</color> AP and <buf ID=7100503>[Crit DMG UP II]</buf>, lasting for <color=#F74848>1</color> turn. Can continue action with remaining Movement.",
       "SpecificEffects": ""
     },
     "101206": {
-      "name": "死斗",
-      "describe": "消耗全部AP，使用两把格斗武器向单个目标发起决斗，造成<color=#F74848>2×0.65</color>倍伤害，每额外消耗<color=#F74848>1</color>AP将使本技能的伤害倍率提升<color=#F74848>2×0.1</color>倍；决斗持续<color=#F74848>4</color>轮，直到[卡米拉]无法攻击或目标无法反击时停止；本次战斗将不会被<buf ID=900022>[援护防御]</buf><buf ID=900002>[协力攻击]</buf><buf ID=900013>[警戒射击]</buf>等因素干扰",
+      "name": "Deathmatch",
+      "describe": "Consumes all AP. Duels a target with 2 Melee Weapons, dealing <color=#F74848>0.65x</color> DMG <color=#F74848>2</color> times. Each additional <color=#F74848>1</color> AP consumed increases this skill's damage multiplier by <color=#F74848>0.2</color>. The duel lasts for <color=#F74848>4</color> rounds or until Camilla can no longer attack or the target cannot retaliate. This skirmish will not be affected by external factors such as <buf ID=900022>[Guard]</buf>, <buf ID=900002>[Link Attack]</buf>, or <buf ID=900013>[Vigilant Shot]</buf>.",
       "SpecificEffects": ""
     },
     "101207": {
-      "name": "碎躯之力",
+      "name": "Corporeal Destroyer",
       "describe": "",
-      "SpecificEffects": "主动攻击时若命中躯干，则伤害额外提升<color=#F74848>20%</color>"
+      "SpecificEffects": "When actively attacking and hitting the Body, DMG <color=#F74848>+20%</color>."
     },
     "101208": {
-      "name": "对决之誓",
-      "describe": "对单个目标施加<buf ID=1012081>[誓言]</buf>，持续<color=#F74848>2</color>回合；当<buf ID=1012081>[誓言]</buf>存在时，双方只能互相选择对方作为对战目标；同时只能存在<color=#F74848>1</color>个<buf ID=1012081>[誓言]</buf>，对部分单位无效",
+      "name": "Sworn Duel",
+      "describe": "Applies <buf ID=1012081>[Oath]</buf> to a target, lasting for <color=#F74848>2</color> turns. When <buf ID=1012081>[Oath]</buf> is active, both parties can only select each other as targets. Only <color=#F74848>1</color> <buf ID=1012081>[Oath]</buf>-style effect can exist at a time. This effect is invalid for certain units.",
+      "SpecificEffects": ""
+    },
+    "101209": {
+      "name": "One-Inch Punch",
+      "describe": "Uses a Pile Bunker or Knuckles to attack a target, dealing <color=#F74848>1.6x</color> DMG.",
       "SpecificEffects": ""
     }
   },
@@ -81,7 +86,7 @@
     },
     "100031": {
       "name": "Alacrity 1",
-      "SpecificEffects": "During an Active Attack with a Melee Weapon, there is a <color=#F74848>20%</color> chance to trigger <buf ID=900001>[Flurry Strike]</buf> following the enemy’s attack, dealing <color=#F74848>0.5x</color> DMG."
+      "SpecificEffects": "During an Active Attack with a Melee Weapon, there is a <color=#F74848>20%</color> chance to trigger <buf ID=900001>[Flurry Strike]</buf> following the enemy's attack, dealing <color=#F74848>0.5x</color> DMG."
     },
     "100032": {
       "name": "AP Optimization 3",
@@ -104,8 +109,8 @@
       "SpecificEffects": "When triggering <buf ID=900001>[Flurry Strike]</buf>, prioritize hitting the part with the lowest HP."
     },
     "101241": {
-      "name": "猎者之心1",
-      "SpecificEffects": "主动攻击对战时，若击破部位，战后获得<color=#F74848>1</color>层<buf ID=1012512>[磁能覆甲]</buf>，持续<color=#F74848>1</color>回合，每回合最多发动<color=#F74848>2</color>次"
+      "name": "Heart of the Hunter 1",
+      "SpecificEffects": "When initiating combat, if a part is destroyed, gains <color=#F74848>1</color> stack of <buf ID=1012512>[Magnetic Armor]</buf> after combat, lasting for <color=#F74848>1</color> turn. Can trigger up to <color=#F74848>2</color> times per turn."
     },
     "100042": {
       "name": "AP Optimization 4",
@@ -116,16 +121,16 @@
       "SpecificEffects": "When destroying a target, additionally restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>2</color> times per turn."
     },
     "101244": {
-      "name": "猎者之心2",
-      "SpecificEffects": "主动攻击对战时，若周围<color=#F74848>2</color>格范围内没有友军，命中率提升<color=#F74848>10%</color>"
+      "name": "Heart of the Hunter 2",
+      "SpecificEffects": "When initiating combat, if there are no allies within <color=#F74848>2</color> adjacent tiles, Hit Rate <color=#F74848>+10%</color>."
     },
     "101245": {
-      "name": "猎者之心3",
-      "SpecificEffects": "遭受攻击时，若任意部位被击破，战后获得<color=#F74848>1</color>层<buf ID=1012512>[磁能覆甲]</buf>，每回合最多发动<color=#F74848>1</color>次"
+      "name": "Heart of the Hunter 3",
+      "SpecificEffects": "When attacked, if any part is destroyed, gains <color=#F74848>1</color> stack of <buf ID=1012512>[Magnetic Armor]</buf> after combat. Can only trigger <color=#F74848>1</color> time per turn."
     },
     "101246": {
-      "name": "猎者之心4",
-      "SpecificEffects": "主动攻击对战时，若击毁目标，战后恢复<color=#F74848>15%</color>最大耐久值，可修复<color=#F74848>1</color>个损毁部位，每回合最多发动<color=#F74848>1</color>次"
+      "name": "Heart of the Hunter 4",
+      "SpecificEffects": "When initiating combat, if the target is destroyed, restores <color=#F74848>15%</color> of Max HP after combat. Can repair <color=#F74848>1</color> destroyed part. Can only trigger <color=#F74848>1</color> time per turn."
     }
   },
   "version": "1.2"

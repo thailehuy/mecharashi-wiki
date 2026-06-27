@@ -5,12 +5,12 @@
   "Profession": "Defender",
   "Occupation": "Guardian",
   "Talent0_2Ability": {
-    "name": "第一适格者",
-    "SpecificEffects": "与机兵可以进行<buf ID=900088>[同步]</buf>；可以使用突击武器对友军攻击的目标发动<buf ID=900002>[协力攻击]</buf>，造成<color=#F74848>0.2</color>倍伤害，每回合最多发动<color=#F74848>2</color>次"
+    "name": "EVA-00 Pilot",
+    "SpecificEffects": "Can perform <buf ID=900088>[Synchronization]</buf> with ST. Can use an Assault Weapon to launch a <buf ID=900002>[Link Attack]</buf> against the target of an ally's attack, dealing <color=#F74848>0.2</color>x DMG. Can trigger up to <color=#F74848>2</color> times per turn."
   },
   "Talent3_5Ability": {
-    "name": "第一适格者",
-    "SpecificEffects": "与机兵可以进行<buf ID=900088>[同步]</buf>；可以使用突击武器对友军攻击的目标发动<buf ID=900002>[协力攻击]</buf>，造成<color=#F74848>0.2</color>倍伤害，每回合最多发动<color=#F74848>2</color>次；\n<buf ID=900022>[援护防御]</buf>最小范围扩大至<color=#F74848>2</color>格，<buf ID=900022>[援护防御]</buf>范围内友军遭受暴击率减少<color=#F74848>20%</color>"
+    "name": "EVA-00 Pilot",
+    "SpecificEffects": "Can perform <buf ID=900088>[Synchronization]</buf> with ST. Can use an Assault Weapon to launch a <buf ID=900002>[Link Attack]</buf> against the target of an ally's attack, dealing <color=#F74848>0.2</color>x DMG. Can trigger up to <color=#F74848>2</color> times per turn.\\nExpands the minimum range of <buf ID=900022>[Guard]</buf> to <color=#F74848>2</color> tiles, and reduces the chance of receiving a Crit by <color=#F74848>20%</color> for allies within <buf ID=900022>[Guard]</buf> range."
   },
   "skills": {
     "600001": {
@@ -19,38 +19,43 @@
       "SpecificEffects": "Trigger <buf ID=900022>[Guard]</buf> to protect adjacent (<color=#F74848>1</color> tile) allies from Assault and Ranged attacks, effective up to <color=#F74848>2</color> times per turn."
     },
     "600902": {
-      "name": "同步协击",
-      "describe": "使用机枪攻击单个目标，造成<color=#F74848>1.15</color>倍伤害，战后对所有参与本次攻击的其他友军施加<color=#F74848>1</color>个随机增益效果，持续<color=#F74848>2</color>回合",
+      "name": "Synchronized Strike",
+      "describe": "Uses a Machine Gun to attack a target, dealing <color=#F74848>1.15</color>x DMG. After combat, applies <color=#F74848>1</color> random buff to all allies involved in this attack, lasting for <color=#F74848>2</color> turns.",
       "SpecificEffects": ""
     },
     "600903": {
-      "name": "立体防御",
+      "name": "3D Defense",
       "describe": "",
-      "SpecificEffects": "<buf ID=900022>[援护防御]</buf>可以额外抵挡格斗武器攻击"
+      "SpecificEffects": "<buf ID=900022>[Guard]</buf> can additionally block Melee Weapon attacks."
     },
     "600904": {
-      "name": "战术备盾",
-      "describe": "使自身盾牌的耐久值恢复<color=#F74848>50%</color>，可修复已损毁的盾牌，然后可用剩余移动力继续行动",
+      "name": "Reserve Shield",
+      "describe": "Restores <color=#F74848>50%</color> of Shield's HP. Can repair destroyed Shields. Can continue to act with remaining Movement.",
       "SpecificEffects": ""
     },
     "600905": {
-      "name": "精确支援",
+      "name": "Precise Assist",
       "describe": "",
-      "SpecificEffects": "发动<buf ID=900002>[协力攻击]</buf>时，若敌机有部位在本次对战中被击破，战后率领此次协力的友军回复<color=#F74848>1</color>AP，每回合最多发动<color=#F74848>1</color>次"
+      "SpecificEffects": "When initiating a <buf ID=900002>[Link Attack]</buf>, if any enemy part is destroyed during this skirmish, allied units involved in the Link Attack recover <color=#F74848>1</color> AP after combat. Can only trigger <color=#F74848>1</color> time per turn."
     },
     "600906": {
-      "name": "战术机动",
-      "describe": "选择周围<color=#F74848>3</color>格内任意<color=#F74848>1</color>名其他友军，与其互换位置，然后可用剩余移动力继续行动",
+      "name": "Tactical Shift",
+      "describe": "Can select any <color=#F74848>1</color> ally within <color=#F74848>3</color> adjacent tiles, swap positions with them, and then continue to act using remaining Movement.",
       "SpecificEffects": ""
     },
     "600907": {
-      "name": "无言",
+      "name": "Speechless",
       "describe": "",
-      "SpecificEffects": "行动结束时，随机使自身及周围<color=#F74848>3</color>格内<color=#F74848>1</color>名其他友军获得<color=#F74848>1</color>个随机增益效果，持续<color=#F74848>2</color>回合"
+      "SpecificEffects": "At end of action, grants <color=#F74848>1</color> random buff to self and <color=#F74848>1</color> ally within <color=#F74848>3</color> adjacent tiles, lasting for <color=#F74848>2</color> turns."
     },
     "600908": {
-      "name": "舍身决意",
-      "describe": "使用大盾攻击单个目标，造成当前手臂最大耐久值<color=#F74848>50%</color>加上当前耐久值<color=#F74848>20%</color>的<buf ID=900017>[固定伤害]</buf>，必定攻击躯干并使命中率提升<color=#F74848>15%</color>，对其余部位造成<color=#F74848>50%</color>的溅射伤害，命中后摧毁当前手臂",
+      "name": "Rei's Sacrifice",
+      "describe": "Uses a Large Shield to attack a target, dealing <buf ID=900017>[Fixed DMG]</buf> equal to <color=#F74848>50%</color> of the current Arm's Max HP plus <color=#F74848>20%</color> of its current HP. Targets the Body and increases Hit Rate by <color=#F74848>15%</color>, dealing Splash DMG equal to <color=#F74848>15%</color> of the damage dealt to all other parts. Upon hit, destroys the current Arm.",
+      "SpecificEffects": ""
+    },
+    "600909": {
+      "name": "Aegis",
+      "describe": "Protects allies within <color=#F74848>2</color> adjacent tiles from Assault and Ranged attacks. Triggers up to <color=#F74848>2</color> times per turn and lasts <color=#F74848>2</color> turns. Additionally, gains <buf ID=900026>[Substitute]</buf>. Can only trigger <color=#F74848>1</color> time per turn.",
       "SpecificEffects": ""
     }
   },
@@ -80,8 +85,8 @@
       "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
     },
     "600931": {
-      "name": "相转移1",
-      "SpecificEffects": "行动开始时，将所有完好的部位耐久百分比进行<buf ID=900089>[平衡]</buf>"
+      "name": "Phase Shift 1",
+      "SpecificEffects": "At the start of action, <buf ID=900089>[Balance]</buf> the HP% of all intact parts."
     },
     "600032": {
       "name": "AP Optimization 3",
@@ -92,20 +97,20 @@
       "SpecificEffects": "At the end of the action, if an Active Attack was not initiated this turn, an extra <color=#F74848>2</color> tiles can be moved."
     },
     "600934": {
-      "name": "相转移2",
-      "SpecificEffects": "<buf ID=900089>[平衡]</buf>后所有完好部位额外恢复<color=#F74848>10%</color>耐久值"
+      "name": "Phase Shift 2",
+      "SpecificEffects": "After <buf ID=900089>[Balance]</buf>, all intact parts additionally recover <color=#F74848>10%</color> HP."
     },
     "600935": {
-      "name": "相转移3",
-      "SpecificEffects": "存在损毁部位时，遭受伤害降低<color=#F74848>15%</color>"
+      "name": "Phase Shift 3",
+      "SpecificEffects": "When a part is destroyed, DMG Taken <color=#F74848>-15%</color>."
     },
     "600936": {
-      "name": "相转移4",
-      "SpecificEffects": "遭受攻击后，若耐久值低于<color=#F74848>50%</color>，触发<buf ID=900089>[平衡]</buf>，并修复<color=#F74848>1</color>个损毁部位，间隔<color=#F74848>3</color>回合后可再次发动"
+      "name": "Phase Shift 4",
+      "SpecificEffects": "After taking damage, if HP is below <color=#F74848>50%</color>, trigger <buf ID=900089>[Balance]</buf> and repair <color=#F74848>1</color> destroyed part. Can trigger again after <color=#F74848>3</color> turns."
     },
     "600941": {
-      "name": "协力战术1",
-      "SpecificEffects": "参与<buf ID=900002>[协力攻击]</buf>后，会给所有参与本次攻击的其他友军施加<color=#F74848>1</color>个随机增益效果，持续<color=#F74848>2</color>回合"
+      "name": "Link Tactics 1",
+      "SpecificEffects": "After participating in a <buf ID=900002>[Link Attack]</buf>, apply <color=#F74848>1</color> random buff to all other allies involved in this attack, lasting <color=#F74848>2</color> turns."
     },
     "600042": {
       "name": "AP Optimization 4",
@@ -116,16 +121,16 @@
       "SpecificEffects": "<buf ID=900022>[Guard]</buf> can now be triggered an unlimited number of times per turn."
     },
     "600944": {
-      "name": "协力战术2",
-      "SpecificEffects": "天赋的<buf ID=900002>[协力攻击]</buf>每回合可发动的次数<color=#F74848>+1</color>"
+      "name": "Link Tactics 2",
+      "SpecificEffects": "The Talent's <buf ID=900002>[Link Attack]</buf> can trigger <color=#F74848>1</color> additional time per turn."
     },
     "600945": {
-      "name": "协力战术3",
-      "SpecificEffects": "每次触发<buf ID=900002>[协力攻击]</buf>后，获得遭受伤害降低<color=#F74848>5%</color>，可叠加<color=#F74848>3</color>层，行动开始时重置"
+      "name": "Link Tactics 3",
+      "SpecificEffects": "After each <buf ID=900002>[Link Attack]</buf> trigger, gain DMG Taken <color=#F74848>-5%</color>, stackable up to <color=#F74848>3</color> times, resets at start of action."
     },
     "600946": {
-      "name": "协力战术4",
-      "SpecificEffects": "<buf ID=900002>[协力攻击]</buf>倍率<color=#F74848>+0.1</color>；<buf ID=1014820>[同步率]</buf>高于<color=#F74848>50%</color>时，每<color=#F74848>10%</color>额外提升<buf ID=900002>[协力攻击]</buf>倍率<color=#F74848>0.05</color>，最高提升<color=#F74848>0.2</color>倍"
+      "name": "Link Tactics 4",
+      "SpecificEffects": "<buf ID=900002>[Link Attack]</buf> multiplier <color=#F74848>+0.1</color>; when <buf ID=1014820>[Sync Rate]</buf> is above <color=#F74848>50%</color>, every <color=#F74848>10%</color> additionally increases <buf ID=900002>[Link Attack]</buf> multiplier by <color=#F74848>0.05</color>, up to <color=#F74848>+0.2</color>."
     }
   },
   "version": "1.6"

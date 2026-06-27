@@ -5,12 +5,12 @@
   "Profession": "Launcher",
   "Occupation": "Tactician",
   "Talent0_2Ability": {
-    "name": "Incredible Hacker",
-    "SpecificEffects": "When both shoulders are equipped with Missile Launchers, you can use the <buf ID=900016>[Salvo]</buf> code to launch an attack, dealing <color=#F74848>2* 0.7x</color> DMG to the hit part and <color=#F74848>0.5x</color> Splash DMG to other parts."
+    "name": "Elite Hacker",
+    "SpecificEffects": "When both shoulders are equipped with Missile Launchers, the <buf ID=900016>[Salvo]</buf> code can be used to launch an attack, dealing <color=#F74848>0.75x</color> DMG <color=#F74848>2</color> times to a part and Splash DMG equal to <color=#F74848>50%</color> of this damage to other parts."
   },
   "Talent3_5Ability": {
-    "name": "Incredible Hacker",
-    "SpecificEffects": "When both shoulders are equipped with Missile Launchers, able to use the <buf ID=900016>[Salvo]</buf> code to launch attack, deal <color=#F74848>2*0.7x</color> DMG to the hit part and <color=#F74848>0.5x</color> Splash DMG to other parts;\n<buf ID=900016>[Salvo]</buf>-style skill DMG <color=#F74848>+15%</color>"
+    "name": "Elite Hacker",
+    "SpecificEffects": "When both shoulders are equipped with Missile Launchers, the <buf ID=900016>[Salvo]</buf> code can be used to launch an attack, dealing <color=#F74848>0.75x</color> DMG <color=#F74848>2</color> times to a part and Splash DMG equal to <color=#F74848>50%</color> of this damage to other parts;\\n<buf ID=900016>[Salvo]</buf>-style skill DMG <color=#F74848>+15%</color>."
   },
   "skills": {
     "400001": {
@@ -20,7 +20,7 @@
     },
     "400502": {
       "name": "Explosive Attack",
-      "describe": "Uses Missile Launcher to attack a target, dealing <color=#F74848>1.0x</color> DMG to 1 part and <color=#F74848>1x</color> Splash DMG to the other parts.",
+      "describe": "Uses a Missile Launcher to attack a target, dealing <color=#F74848>1.0x</color> DMG to 1 part and Splash DMG equal to <color=#F74848>100%</color> of this damage to other parts.",
       "SpecificEffects": ""
     },
     "400503": {
@@ -29,28 +29,33 @@
       "SpecificEffects": "When attacking with a Missile Launcher, if the target's HP is full, DMG <color=#F74848>+20%</color>."
     },
     "400504": {
-      "name": "Cheating",
-      "describe": "Fully restore Missile Launcher Ammo and gain <color=#F74848>1</color> AP. Can continue the action with the remaining movement.",
+      "name": "Cheat Code",
+      "describe": "Fully reloads all Missile Launcher Ammo and gains <color=#F74848>1</color> AP. Can continue action with remaining Movement.",
       "SpecificEffects": ""
     },
     "700015": {
-      "name": "Rotation",
+      "name": "Strategic Redundancy",
       "describe": "",
-      "SpecificEffects": "At the end of the action, if no damage was dealt this turn, restore <color=#F74848>1</color> AP."
+      "SpecificEffects": "At end of action, if no damage was dealt this turn, restores <color=#F74848>1</color> AP."
     },
     "400506": {
       "name": "Root Control",
-      "describe": "Access <buf ID=900025>[Rack]</buf> mode: unable to move, Missile Launcher's Range <color=#F74848> +1</color>, DMG <color=#F74848>+10%</color>. Can continue the attack after racking. Automatically exits <buf ID=900025>[Rack]</buf> mode when the arm is damaged. In <buf ID=900025>[Rack]</buf> mode, can cast <buf ID=900026>[Retract]</buf> code. After retracting, can continue to move.",
+      "describe": "Enters <buf ID=900025>[Rack]</buf> Mode: Cannot move, Missile Launcher's Range <color=#F74848>+1</color>, DMG <color=#F74848>+10%</color>. Can continue attacking after racking. Automatically exits <buf ID=900025>[Rack]</buf> Mode when an Arm is destroyed. <buf ID=900026>[Retract]</buf> is available in <buf ID=900025>[Rack]</buf> Mode. After retracting, can continue to move.",
       "SpecificEffects": ""
     },
     "400507": {
       "name": "CP Boost",
       "describe": "",
-      "SpecificEffects": "When attacking with the Missile Launcher, AP Cost <color=#F74848>+1</color>, and DMG <color=#F74848>+20%</color>."
+      "SpecificEffects": "When attacking with a Missile Launcher, AP Cost <color=#F74848>+1</color>, and DMG <color=#F74848>+20%</color>."
     },
     "400508": {
-      "name": "Grand Performance",
-      "describe": "Simultaneously use 2 Missile Launchers to attack a target. The <color=#F74848>2</color> missiles will hit the same part, dealing <color=#F74848>2* 0.85x</color> DMG and <color=#F74848>0.5x</color> Splash DMG to other parts.",
+      "name": "Dramatic Entrance",
+      "describe": "Simultaneously uses two Missile Launchers to attack a target. These <color=#F74848>2</color> missiles hit the same part, dealing <color=#F74848>0.85x</color> DMG <color=#F74848>2</color> times and Splash DMG equal to <color=#F74848>50%</color> of this damage to other parts.",
+      "SpecificEffects": ""
+    },
+    "400509": {
+      "name": "Precision Strike",
+      "describe": "Uses a Missile Launcher to attack a target, dealing <color=#F74848>2.0x</color> DMG to the part hit. Doesn't deal Splash DMG.",
       "SpecificEffects": ""
     }
   },
@@ -125,7 +130,7 @@
     },
     "400546": {
       "name": "Ether Rats 4",
-      "SpecificEffects": "When cast <buf ID=900016>[Salvo]</buf>-style skill, <color=#F74848>50%</color> chance to trigger, not consuming any Ammo"
+      "SpecificEffects": "When executing <buf ID=900016>[Salvo]</buf>-style skills, has a <color=#F74848>50%</color> chance of not consuming any Ammo."
     }
   },
   "version": "1.0"

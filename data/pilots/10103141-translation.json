@@ -5,12 +5,12 @@
   "Profession": "Gunner",
   "Occupation": "Sniper",
   "Talent0_2Ability": {
-    "name": "白鹳",
-    "SpecificEffects": "可使用<skill mainSkill=301050>[特殊装填]</skill>，行动开始时获得<color=#F74848>1</color>层<buf ID=3010502>[强击弹药]</buf>，最多<color=#F74848>3</color>层；\n狙击步枪的负重降低<color=#F74848>15%</color>"
+    "name": "White Stork",
+    "SpecificEffects": "Can use the <skill mainSkill=301050>[Special Load]</skill> code. At start of action, gains <color=#F74848>1</color> stack of <buf ID=3010502>[Reinforced Ammo]</buf>. Stacks up to <color=#F74848>3</color> times.\\nSniper Rifle Weight: <color=#F74848>-15%</color>."
   },
   "Talent3_5Ability": {
-    "name": "白鹳",
-    "SpecificEffects": "可使用<skill mainSkill=301050>[特殊装填]</skill>，行动开始时获得<color=#F74848>1</color>层<buf ID=3010502>[强击弹药]</buf>，最多<color=#F74848>5</color>层，每有<color=#F74848>1</color>层<buf ID=3010502>[强击弹药]</buf>暴击率额外提升<color=#F74848>5%</color>，最多<color=#F74848>15%</color>；\n狙击步枪的负重降低<color=#F74848>15%</color>"
+    "name": "White Stork",
+    "SpecificEffects": "Can use the <skill mainSkill=301050>[Special Load]</skill> code. At start of action, gains <color=#F74848>2</color> stacks of <buf ID=3010502>[Reinforced Ammo]</buf>. Stacks up to <color=#F74848>5</color> times. Each stack grants <color=#F74848>5%</color> additional Crit Rate, up to <color=#F74848>15%</color>.\\nSniper Rifle Weight: <color=#F74848>-15%</color>."
   },
   "skills": {
     "300001": {
@@ -19,38 +19,43 @@
       "SpecificEffects": "When destroying a target, <buf ID=900004>[Re-ATK]</buf> can be triggered, effective up to <color=#F74848>2</color> times per turn. Unable to move before attacking."
     },
     "700043": {
-      "name": "Excellent status",
+      "name": "Superb",
       "describe": "",
-      "SpecificEffects": "When self's HP is full, DMG <color=#F74848>+15%</color>."
+      "SpecificEffects": "When HP is full, DMG <color=#F74848>+15%</color>."
     },
     "301003": {
-      "name": "神闲",
+      "name": "Leisure",
       "describe": "",
-      "SpecificEffects": "主动攻击对战时，若本次攻击暴击过，目标无法发动反击"
+      "SpecificEffects": "When initiating combat, if this attack lands a critical hit, the target cannot retaliate."
     },
     "301004": {
-      "name": "无处可逃",
-      "describe": "使用狙击步枪攻击单个目标，造成<color=#F74848>1.2</color>倍伤害，攻击前可以进行<buf ID=900014>[瞄准]</buf>；<buf ID=3010504>[强化射击]</buf>时，对命中的部位施加<buf ID=900049>[被命中概率提升II]</buf>，持续<color=#F74848>2</color>回合，单个目标同时只能携带<color=#F74848>1</color>种命中提升效果",
+      "name": "Nowhere To Run",
+      "describe": "Uses a Sniper Rifle to attack a target, dealing <color=#F74848>1.2x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking. When in the <buf ID=3010504>[Improved Fire]</buf> state, applies <buf ID=900049>[Exposure II]</buf> to the part hit, lasting for <color=#F74848>2</color> turns. A single unit can only be affected by <color=#F74848>1</color> type of Hit Boost effect at a time.",
       "SpecificEffects": ""
     },
     "301005": {
-      "name": "协同指挥",
+      "name": "Synchronized Command",
       "describe": "",
-      "SpecificEffects": "使用<buf ID=3010504>[强化射击]</buf>时，战后对发动<buf ID=900002>[协力攻击]</buf>的友军施加<buf ID=7100303>[伤害提升Ⅱ]</buf>，持续<color=#F74848>1</color>回合"
+      "SpecificEffects": "When in the <buf ID=3010504>[Improved Fire]</buf> state, applies <buf ID=7100303>[DMG UP II]</buf> to allies engaging in <buf ID=900002>[Link Attacks]</buf> after combat. Lasts for <color=#F74848>1</color> turn."
     },
     "301006": {
-      "name": "骤雨",
-      "describe": "使用狙击步枪连续射击<color=#F74848>2</color>次，攻击单个目标，造成<color=#F74848>2×0.75</color>倍伤害；<buf ID=3010504>[强化射击]</buf>时，若未击破部位，战后可发动<buf ID=900004>[再攻击]</buf>，攻击前无法移动",
+      "name": "Shower",
+      "describe": "Uses a Sniper Rifle to shoot a target <color=#F74848>2</color> times, with each shot dealing <color=#F74848>0.75x</color> DMG. If this attack does not destroy a part when in the <buf ID=3010504>[Improved Fire]</buf> state, triggers <buf ID=900004>[Re-ATK]</buf> after combat. Cannot move before attacking.",
       "SpecificEffects": ""
     },
     "301007": {
-      "name": "蓄锐",
+      "name": "Amassment",
       "describe": "",
-      "SpecificEffects": "行动结束时，本次行动每使用过<color=#F74848>1</color>次<buf ID=900073>[特殊装填]</buf>，使警戒射击倍率提升<color=#F74848>0.15</color>倍，最多提升<color=#F74848>0.75</color>倍，效果持续至下次行动开始"
+      "SpecificEffects": "At end of action, for each <buf ID=900073>[Special Load]</buf> executed during this action, <buf ID=900013>[Vigilant Shot]</buf> multiplier <color=#F74848>+0.15</color>, up to <color=#F74848>0.75</color>. Lasts until the start of the next action."
     },
     "301008": {
-      "name": "鬼牌",
-      "describe": "立即获得<color=#F74848>2</color>层<buf ID=3010502>[强击弹药]</buf>，然后可使用剩余移动力继续行动",
+      "name": "Trump Card",
+      "describe": "Immediately gains <color=#F74848>2</color> stacks of <buf ID=3010502>[Reinforced Ammo]</buf>. Can continue action with remaining Movement.",
+      "SpecificEffects": ""
+    },
+    "301009": {
+      "name": "Tracking Shot",
+      "describe": "Uses a Sniper Rifle to attack a target, dealing <color=#F74848>1.3x</color> DMG. This attack is guaranteed to hit. When in the <buf ID=3010504>[Improved Fire]</buf> state, also inflicts <buf ID=900050>[Dodge Invalid]</buf> on the target hit after combat, which expires after being hit <color=#F74848>1</color> time.",
       "SpecificEffects": ""
     }
   },
@@ -104,8 +109,8 @@
       "SpecificEffects": "<buf ID=900013>[Vigilant Shot]</buf> is launched against an enemy that has not attacked. Targets the part with the lowest HP."
     },
     "301041": {
-      "name": "绝尘1",
-      "SpecificEffects": "主动攻击对战时，若击毁目标，战后获得<color=#F74848>1</color>层<buf ID=3010502>[强击弹药]</buf>，每回合最多发动<color=#F74848>1</color>次"
+      "name": "Far Ahead 1",
+      "SpecificEffects": "When initiating combat, if the target is destroyed, gains <color=#F74848>1</color> stack of <buf ID=3010502>[Reinforced Ammo]</buf> after combat. Can only trigger <color=#F74848>1</color> time per turn."
     },
     "300042": {
       "name": "AP Optimization 4",
@@ -116,16 +121,16 @@
       "SpecificEffects": "When destroying a target, additionally restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>2</color> times per turn."
     },
     "301044": {
-      "name": "绝尘2",
-      "SpecificEffects": "使用<buf ID=3010504>[强化射击]</buf>可以额外提升<color=#F74848>10%</color>暴击率"
+      "name": "Far Ahead 2",
+      "SpecificEffects": "When in the <buf ID=3010504>[Improved Fire]</buf> state, gains an additional <color=#F74848>10%</color> Crit Rate."
     },
     "301045": {
-      "name": "绝尘3",
-      "SpecificEffects": "使用<buf ID=3010504>[强化射击]</buf>时，每<color=#F74848>5%</color>暴击率可额外提升<color=#F74848>1%</color>暴击伤害，最多<color=#F74848>10%</color>"
+      "name": "Far Ahead 3",
+      "SpecificEffects": "When in the <buf ID=3010504>[Improved Fire]</buf> state, gains an additional <color=#F74848>1%</color> Crit DMG for every <color=#F74848>5%</color> Crit Rate, up to <color=#F74848>10%</color>."
     },
     "301046": {
-      "name": "绝尘4",
-      "SpecificEffects": "行动开始时获得的<buf ID=3010502>[强击弹药]</buf>提升至<color=#F74848>2</color>层"
+      "name": "Far Ahead 4",
+      "SpecificEffects": "<buf ID=3010502>[Reinforced Ammo]</buf> gained at start of action is increased to <color=#F74848>2</color> stacks."
     }
   },
   "version": "1.4"

@@ -5,12 +5,12 @@
   "Profession": "Assault",
   "Occupation": "Raider",
   "Talent0_2Ability": {
-    "name": "第三适格者",
-    "SpecificEffects": "与机兵可以进行<buf ID=900088>[同步]</buf>；主动攻击后，若自身携带的增益效果大于等于<color=#F74848>3</color>个，可发动<buf ID=900004>[再攻击]</buf>，攻击前无法移动，每回合最多发动<color=#F74848>1</color>次"
+    "name": "EVA-01 Pilot",
+    "SpecificEffects": "Can perform <buf ID=900088>[Synchronization]</buf> with ST. After initiating combat, if possessing <color=#F74848>3</color> or more buffs, triggers <buf ID=900004>[Re-ATK]</buf>. Cannot move before attacking. Can trigger <color=#F74848>1</color> time per turn."
   },
   "Talent3_5Ability": {
-    "name": "第三适格者",
-    "SpecificEffects": "与机兵可以进行<buf ID=900088>[同步]</buf>；主动攻击后，若自身携带的增益效果大于等于<color=#F74848>3</color>个，可发动<buf ID=900004>[再攻击]</buf>，攻击前无法移动，每回合最多发动<color=#F74848>1</color>次；\n出击时，<buf ID=1014820>[同步率]</buf>提升<color=#F74848>10%</color>；行动开始时，若[零]或[明日香]在场，随机获得<color=#F74848>1</color>个增益效果，持续<color=#F74848>2</color>回合"
+    "name": "EVA-01 Pilot",
+    "SpecificEffects": "Can perform <buf ID=900088>[Synchronization]</buf> with ST. After initiating combat, if possessing <color=#F74848>3</color> or more buffs, triggers <buf ID=900004>[Re-ATK]</buf>. Cannot move before attacking. Can trigger <color=#F74848>1</color> time per turn.\\nWhen deployed, <buf ID=1014820>[Sync Ratio]</buf> is increased by <color=#F74848>10%</color>. At start of action, if [Rei] or [Asuka] is present, randomly gains <color=#F74848>1</color> buff, lasting <color=#F74848>2</color> turns."
   },
   "skills": {
     "200001": {
@@ -19,38 +19,43 @@
       "SpecificEffects": "In cooperation with allies, use Assault Weapons to launch a <buf ID=900002>[Link Attack]</buf> against the target, dealing <color=#F74848>0.2x</color> DMG, effective up to <color=#F74848>1</color> time per turn."
     },
     "201402": {
-      "name": "穿透狙击",
-      "describe": "使用狙击步枪攻击单个目标，造成<color=#F74848>1.1</color>倍伤害，本次攻击无视目标任何减伤效果，攻击前可以进行<buf ID=900014>[瞄准]</buf>",
+      "name": "Penetrating Shot",
+      "describe": "Uses a Sniper Rifle to attack a target, dealing <color=#F74848>1.1x</color> DMG. This attack ignores any DMG Reduction effects on the target. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking.",
       "SpecificEffects": ""
     },
     "201403": {
-      "name": "稳态作战",
+      "name": "Steady Operation",
       "describe": "",
-      "SpecificEffects": "主动攻击对战时，若目标周围<color=#F74848>2</color>格范围内没有其他敌机，伤害提升<color=#F74848>15%</color>"
+      "SpecificEffects": "When initiating combat, if there are no other enemy units within <color=#F74848>2</color> tiles of the target, DMG Dealt <color=#F74848>+15%</color>."
     },
     "201404": {
-      "name": "压制扫射",
-      "describe": "使用重机枪攻击<range type=1>直线3格</range>范围内所有目标，造成<color=#F74848>0.7</color>倍范围伤害，每命中<color=#F74848>1</color>个目标，战后获得<color=#F74848>1</color>个随机增益效果，最多获得<color=#F74848>3</color>个，持续<color=#F74848>2</color>回合",
+      "name": "Suppression Spray",
+      "describe": "Uses a Heavy Machine Gun to attack all targets within a <range type=1>3-tile line</range>, dealing <color=#F74848>0.7x</color> AoE DMG. For each target hit, gains <color=#F74848>1</color> random buff after combat. Can gain up to <color=#F74848>3</color> buffs, lasting for <color=#F74848>2</color> turns.",
       "SpecificEffects": ""
     },
     "201405": {
-      "name": "不溃",
+      "name": "Unyielding",
       "describe": "",
-      "SpecificEffects": "免疫<buf ID=7101505>[宕机]</buf>和<buf ID=900035>[胆怯]</buf>效果"
+      "SpecificEffects": "Immune to <buf ID=7101505>[Crash]</buf> and <buf ID=900035>[Timidity]</buf> effects."
     },
     "201406": {
-      "name": "高能射击",
-      "describe": "使用狙击步枪攻击单个目标，造成<color=#F74848>1.5</color>倍伤害，攻击前可以进行<buf ID=900014>[瞄准]</buf>，本次攻击无视目标任何减伤效果；若<buf ID=1014820>[同步率]</buf>大于等于<color=#F74848>75%</color>时，本次攻击必定命中",
+      "name": "Positron Loaded",
+      "describe": "Uses a Sniper Rifle to attack a target, dealing <color=#F74848>1.5x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking. This attack ignores any DMG Reduction effects on the target. If <buf ID=1014820>[Sync Ratio]</buf> is greater than or equal to <color=#F74848>75%</color>, this attack is guaranteed to hit.",
       "SpecificEffects": ""
     },
     "201407": {
-      "name": "超限模式",
+      "name": "Overlimit Mode",
       "describe": "",
-      "SpecificEffects": "行动开始时，若自身携带的增益效果大于等于<color=#F74848>4</color>个，本回合第<color=#F74848>1</color>次主动攻击AP消耗<color=#F74848>-1</color>，最低<color=#F74848>1</color>点"
+      "SpecificEffects": "At start of action, if possessing <color=#F74848>4</color> or more buffs, AP Cost <color=#F74848>-1</color> for the first active attack this turn, down to a minimum of <color=#F74848>1</color>."
     },
     "201408": {
-      "name": "动能焕发",
-      "describe": "消耗所有可驱散的增益效果，每消耗<color=#F74848>1</color>个回复<color=#F74848>1</color>点AP，最多回复<color=#F74848>4</color>点，然后可使用剩余移动力继续行动",
+      "name": "Kinetic Revival",
+      "describe": "Consumes all dispellable buffs. Recovers <color=#F74848>1</color> AP for each consumed, up to a maximum of <color=#F74848>4</color> AP. Can continue action with remaining Movement.",
+      "SpecificEffects": ""
+    },
+    "201409": {
+      "name": "Charged Shot",
+      "describe": "Uses a Heavy Machine Gun to attack a target, dealing <color=#F74848>1.2x</color> DMG. For each buff possessed, DMG <color=#F74848>+5%</color>, up to <color=#F74848>15%</color>.",
       "SpecificEffects": ""
     }
   },
@@ -79,33 +84,13 @@
       "name": "AP Optimization 2",
       "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
     },
-    "201431": {
-      "name": "过载模式1",
-      "SpecificEffects": "<buf ID=1014820>[同步率]</buf>大于等于<color=#F74848>65%</color>时，伤害提升<color=#F74848>10%</color>，遭受伤害降低<color=#F74848>10%</color>"
-    },
     "200032": {
       "name": "AP Optimization 3",
       "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
     },
     "200033": {
       "name": "Adaptive Warfare 1",
-      "SpecificEffects": "At the end of the action, if an Active Attack was not initiated this turn, an extra <color=#F74848>2</color> tiles can be moved."
-    },
-    "201434": {
-      "name": "过载模式2",
-      "SpecificEffects": "主动攻击对战后，随机复制<color=#F74848>1</color>个目标携带的可驱散的增益效果，每回合最多发动<color=#F74848>2</color>次"
-    },
-    "201435": {
-      "name": "过载模式3",
-      "SpecificEffects": "<buf ID=1014820>[同步率]</buf>大于等于<color=#F74848>80%</color>时，行动结束时每有<color=#F74848>1</color>个增益效果恢复自身<color=#F74848>5%</color>最大耐久值，最多恢复<color=#F74848>15%</color>，无法修复损毁部位"
-    },
-    "201436": {
-      "name": "过载模式4",
-      "SpecificEffects": "<buf ID=1014820>[同步率]</buf>上限突破至<color=#F74848>400%</color>，超过<color=#F74848>100%</color>的部分效果降低<color=#F74848>50%</color>；\n<buf ID=1014820>[同步率]</buf>大于等于<color=#F74848>100%</color>时，暴击率提升<color=#F74848>30%</color>，移动力<color=#F74848>+1</color>；\n自身耐久值低于<color=#F74848>20%</color>时，<buf ID=1014820>[同步率]</buf>立即增加<color=#F74848>50%</color>，该效果每次出击仅可发动<color=#F74848>1</color>次"
-    },
-    "201441": {
-      "name": "拟合重组1",
-      "SpecificEffects": "手臂的耐久值和护甲值提升<color=#F74848>20%</color>"
+      "SpecificEffects": "At the end of the action, if no active attacks were used this turn, can move an extra <color=#F74848>2</color> tiles."
     },
     "200042": {
       "name": "AP Optimization 4",
@@ -113,19 +98,39 @@
     },
     "200043": {
       "name": "Adaptive Warfare 2",
-      "SpecificEffects": "If not moved before an Active Attack, <buf ID=900004>[Re-ATK]</buf> can be triggered, effective up to <color=#F74848>1</color> time per turn. Unable to move before attacking.\nEffects similar to <buf ID=900004>[Re-ATK]</buf> cannot be re-triggered."
+      "SpecificEffects": "Before actively attacking without having moved, can trigger <buf ID=900004>[Re-ATK]</buf>. Can only trigger <color=#F74848>1</color> time per turn. Unable to move before attacking.\nOnly triggers if no other <buf ID=900004>[Re-ATK]</buf> effect is triggered this turn."
+    },
+    "201431": {
+      "name": "Overloaded Mode 1",
+      "SpecificEffects": "When <buf ID=1014820>[Sync Ratio]</buf> is greater than or equal to <color=#F74848>65%</color>, DMG Dealt <color=#F74848>+10%</color> and DMG Taken <color=#F74848>-10%</color>."
+    },
+    "201434": {
+      "name": "Overloaded Mode 2",
+      "SpecificEffects": "After initiating combat, randomly duplicates <color=#F74848>1</color> dispellable buff from the target. Can trigger up to <color=#F74848>2</color> times per turn."
+    },
+    "201435": {
+      "name": "Overloaded Mode 3",
+      "SpecificEffects": "When <buf ID=1014820>[Sync Ratio]</buf> is greater than or equal to <color=#F74848>80%</color>, at end of action, restores <color=#F74848>5%</color> Max HP for each buff possessed, up to <color=#F74848>15%</color>. Cannot repair destroyed parts."
+    },
+    "201436": {
+      "name": "Overloaded Mode 4",
+      "SpecificEffects": "<buf ID=1014820>[Sync Ratio]</buf> cap increased to <color=#F74848>400%</color>. Effects exceeding <color=#F74848>100%</color> are reduced by <color=#F74848>50%</color>.\nWhen <buf ID=1014820>[Sync Ratio]</buf> is greater than or equal to <color=#F74848>100%</color>, Crit Rate <color=#F74848>+30%</color> and Movement <color=#F74848>+1</color>.\nWhen HP is below <color=#F74848>20%</color>, <buf ID=1014820>[Sync Ratio]</buf> immediately increases by <color=#F74848>50%</color>. This effect can only trigger once per deployment."
+    },
+    "201441": {
+      "name": "Fitting Reorganization 1",
+      "SpecificEffects": "Arm HP and Armor <color=#F74848>+20%</color>."
     },
     "201444": {
-      "name": "拟合重组2",
-      "SpecificEffects": "主动攻击对战时，若目标无法反击，战后随机延长自身<color=#F74848>1</color>个增益效果的<buf ID=900078>[剩余回合]</buf><color=#F74848>1</color>回合"
+      "name": "Fitting Reorganization 2",
+      "SpecificEffects": "When initiating combat, if the target cannot retaliate, randomly extends the <buf ID=900078>[Turns Left]</buf> of <color=#F74848>1</color> buff on self by <color=#F74848>1</color> turn after combat."
     },
     "201445": {
-      "name": "拟合重组3",
-      "SpecificEffects": "<buf ID=1014820>[同步率]</buf>修正效果增加<color=#F74848>50%</color>，到达<color=#F74848>100%</color>时将固定"
+      "name": "Fitting Reorganization 3",
+      "SpecificEffects": "<buf ID=1014820>[Sync Ratio]</buf> correction effect increased by <color=#F74848>50%</color>, until fixed at <color=#F74848>100%</color>."
     },
     "201446": {
-      "name": "拟合重组4",
-      "SpecificEffects": "<buf ID=1014820>[同步率]</buf>到达<color=#F74848>100%</color>时，重机枪和狙击步枪射程<color=#F74848>+1</color>，最终伤害提升<color=#F74848>15%</color>"
+      "name": "Fitting Reorganization 4",
+      "SpecificEffects": "When <buf ID=1014820>[Sync Ratio]</buf> reaches <color=#F74848>100%</color>, Heavy Machine Gun and Sniper Rifle Range <color=#F74848>+1</color>, and Final DMG <color=#F74848>+15%</color>."
     }
   },
   "version": "1.6"

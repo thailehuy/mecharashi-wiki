@@ -13,6 +13,7 @@ Pages.pilots = {
   _activeRanks:       {},
   _activeOccupations: {},
   _activeVersions:    {},
+  _lastViewed:        null,
 
   // ── Routing entry point ────────────────────────────────────────────────────
   render: function (param) {
@@ -94,6 +95,8 @@ Pages.pilots = {
       var occOk  = activeOccs.length  === 0 || activeOccs.indexOf(p.Occupation) !== -1;
       var verOk  = activeVers.length  === 0 || activeVers.indexOf(p.version)    !== -1;
       return rankOk && occOk && verOk;
+    }).slice().sort(function (a, b) {
+      return parseFloat(b.version) - parseFloat(a.version);
     });
 
     var cards = filtered.map(function (p) {
@@ -114,7 +117,6 @@ Pages.pilots = {
               '<div class="pilot-realname">' + $('<span>').text(p.RealName).html() + '</div>' +
               '<div class="pilot-tags">' +
                 '<span class="tag">' + $('<span>').text(p.Gender).html() + '</span>' +
-                '<span class="tag">' + $('<span>').text(p.Profession).html() + '</span>' +
                 '<span class="tag">' + $('<span>').text(p.Occupation).html() + '</span>' +
               '</div>' +
             '</div>' +
@@ -126,8 +128,16 @@ Pages.pilots = {
     $('#pilot-grid').html(cards || '<p class="text-secondary ms-2 mt-2">No pilots match the selected filters.</p>');
     $('#pilot-count').text(filtered.length);
 
+    if (this._lastViewed) {
+      var $card = $('[data-pilot="' + encodeURIComponent(this._lastViewed) + '"]');
+      if ($card.length) $card[0].scrollIntoView({ block: 'center' });
+      this._lastViewed = null;
+    }
+
+    var self = this;
     $(document).on('click.pilots', '.pilot-card', function () {
       var name = decodeURIComponent($(this).data('pilot'));
+      self._lastViewed = name;
       window.location.hash = '#pilots/' + encodeURIComponent(name);
     });
   },

@@ -5,12 +5,12 @@
   "Profession": "Assault",
   "Occupation": "Raider",
   "Talent0_2Ability": {
-    "name": "Brave Forward",
-    "SpecificEffects": "When moving <color=#F74848>3</color> or more tiles before attacking, trigger <buf ID=900004>[Re-ATK]</buf> after combat, effective up to <color=#F74848>1</color> time per turn. Unable to move before attacking."
+    "name": "Brave Advance",
+    "SpecificEffects": "When moving <color=#F74848>3</color> or more tiles before attacking, triggers <buf ID=900004>[Re-ATK]</buf> after combat. Can trigger <color=#F74848>1</color> time per turn. Cannot move before attacking."
   },
   "Talent3_5Ability": {
-    "name": "Brave Forward",
-    "SpecificEffects": "When moving <color=#F74848>3</color> or more tiles before attacking, trigger <buf ID=900004>[Re-ATK]</buf> after combat, effective up to <color=#F74848>1</color> time per turn. Unable to move before attacking.\nDuring an Active Attack, if only <color=#F74848>1</color> enemy exists within the adjacent (<color=#F74848>2</color> tiles) area, DMG <color=#F74848>+15%</color>."
+    "name": "Brave Advance",
+    "SpecificEffects": "When moving <color=#F74848>3</color> or more tiles before attacking, triggers <buf ID=900004>[Re-ATK]</buf> after combat. Can trigger <color=#F74848>1</color> time per turn. Cannot move before attacking.\nWhen initiating combat, if only <color=#F74848>1</color> enemy is within <color=#F74848>2</color> adjacent tiles, deals <color=#F74848>+15%</color> DMG."
   },
   "skills": {
     "200001": {
@@ -26,31 +26,36 @@
     "700048": {
       "name": "Sabotage",
       "describe": "",
-      "SpecificEffects": "During an Active Attack, deals an additional <color=#F74848>20%</color> DMG to the part with HP below <color=#F74848>50%</color>."
+      "SpecificEffects": "When actively attacking, deals an additional <color=#F74848>20%</color> DMG to parts with HP below <color=#F74848>50%</color>."
     },
     "201004": {
       "name": "Chaser",
-      "describe": "Gains <buf ID=7100403>[Crit Rate UP II]</buf>, lasting <color=#F74848>1</color> turn, then can continue to move <color=#F74848>3</color> tiles and launch attacks after moving.",
+      "describe": "Gains <buf ID=7100403>[Crit Rate UP II]</buf> for <color=#F74848>1</color> turn, then can continue to move up to <color=#F74848>3</color> tiles. Can attack after moving.",
       "SpecificEffects": ""
     },
     "700051": {
       "name": "Heroism",
       "describe": "",
-      "SpecificEffects": "If a part is broken in combat, restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>1</color> time per turn."
+      "SpecificEffects": "If a part is destroyed in combat, restores <color=#F74848>1</color> AP after combat. Can only trigger <color=#F74848>1</color> time per turn."
     },
     "201006": {
       "name": "Load - Sabot Slug",
-      "describe": "Fire <color=#F74848>1</color> round of Sabot Slug with Shotgun to attack a target, dealing <color=#F74848>0.3x</color> DMG.",
+      "describe": "Fires <color=#F74848>1</color> Sabot Slug Shotgun round at a single target within <color=#F74848>3</color> tiles, dealing <color=#F74848>0.8x</color> DMG. Targets the part with the lowest HP.",
       "SpecificEffects": ""
     },
     "201007": {
       "name": "Valor",
       "describe": "",
-      "SpecificEffects": "During an Active Attack in combat, if the target cannot retaliate, trigger a <buf ID=900001>[Flurry Strike]</buf>, dealing <color=#F74848>0.4x</color> DMG."
+      "SpecificEffects": "When initiating combat, if the target cannot retaliate, triggers <buf ID=900001>[Flurry Strike]</buf>, dealing <color=#F74848>0.4x</color> DMG."
     },
     "201008": {
-      "name": "Conqueror",
-      "describe": "Need both shotgun and melee wepon. Attacks a target with the shotgun, dealing <color=#F74848>1.2x</color> DMG, followed by a melee weapon attack that inflicts an additional <color=#F74848>1.2x</color> DMG, targeting the part with the lowest HP.",
+      "name": "Conquest Siege",
+      "describe": "Requires both a Shotgun and Melee Weapon. Uses the Shotgun to attack a target, dealing <color=#F74848>1.2x</color> DMG, then follows up with a Melee Weapon attack that deals an additional <color=#F74848>1.2x</color> DMG to the part with the lowest HP.",
+      "SpecificEffects": ""
+    },
+    "201009": {
+      "name": "Turbo Shooting",
+      "describe": "Uses a Shotgun to attack a target, dealing <color=#F74848>1.3</color>x DMG.",
       "SpecificEffects": ""
     }
   },
@@ -105,7 +110,7 @@
     },
     "201041": {
       "name": "Will of the Ashes 1",
-      "SpecificEffects": "When triggering <buf ID=900004>[Re-ATK]</buf>, if your AP is less than or equal to <color=#F74848>2</color>, restore <color=#F74848>1</color> AP."
+      "SpecificEffects": "After triggering <buf ID=900004>[Re-ATK]</buf>, if your AP is less than or equal to <color=#F74848>2</color>, restore <color=#F74848>1</color> AP. Can only trigger <color=#F74848>1</color> time per turn."
     },
     "200042": {
       "name": "AP Optimization 4",
@@ -113,19 +118,19 @@
     },
     "200043": {
       "name": "Adaptive Warfare 2",
-      "SpecificEffects": "If not moved before an Active Attack, <buf ID=900004>[Re-ATK]</buf> can be triggered, effective up to <color=#F74848>1</color> time per turn. Unable to move before attacking.\nEffects similar to <buf ID=900004>[Re-ATK]</buf> cannot be re-triggered."
+      "SpecificEffects": "Before actively attacking without having moved, can only trigger <color=#F74848>1</color> time per turn. Unable to move before attacking.\nTriggered <buf ID=900004>[Re-ATK]</buf> cannot be retriggered if no other <buf ID=900004>[Re-ATK]</buf> effect is triggered this turn."
     },
     "201044": {
       "name": "Will of the Ashes 2",
-      "SpecificEffects": "Before an Active Attack, for every <color=#F74848>1</color> tile moved, DMG <color=#F74848>+4%</color>, up to <color=#F74848>20%</color>."
+      "SpecificEffects": "Before initiating combat, for every <color=#F74848>1</color> tile moved, DMG <color=#F74848>+4%</color>, up to <color=#F74848>20%</color>."
     },
     "201045": {
       "name": "Will of the Ashes 3",
-      "SpecificEffects": "After triggering <buf ID=900004>[Re-ATK]</buf>, you can move up to <color=#F74848>2</color> tiles before attacking."
+      "SpecificEffects": "After triggering <buf ID=900004>[Re-ATK]</buf>, can move up to <color=#F74848>2</color> tiles before attacking."
     },
     "201046": {
       "name": "Will of the Ashes 4",
-      "SpecificEffects": "After triggering <buf ID=900004>[Re-ATK]</buf>, the AP Cost of the freshly used Weapon Skill is reduced by <color=#F74848>1</color>, with a minimum cost of <color=#F74848>1 AP</color>."
+      "SpecificEffects": "When triggering <buf ID=900004>[Re-ATK]</buf>, reduces the AP cost of the last weapon or Code skill used by <color=#F74848>1</color> (minimum <color=#F74848>1 AP</color>)."
     }
   },
   "version": "1.0"

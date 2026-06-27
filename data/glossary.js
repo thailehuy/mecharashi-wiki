@@ -6,11 +6,11 @@ window.GlossaryData = {
     },
     "900002": {
       "name": "Link Attack",
-      "effect": "When an ally initiates an active attack, cooperate by launching an additional attack on the same target."
+      "effect": "An attack launched in coordination with an ally's attack."
     },
     "900003": {
       "name": "Guts",
-      "effect": "When a part suffers overdamage, the part is not destroyed and instead locks at 1 HP. Lasts until the end of the current attack."
+      "effect": "When suffering lethal damage, survive with 1 HP."
     },
     "900004": {
       "name": "Re-ATK",
@@ -38,7 +38,7 @@ window.GlossaryData = {
     },
     "900010": {
       "name": "Gusty Strike",
-      "effect": "A powerful strike that may carry additional knockback or push effects."
+      "effect": "Launch an additional attack before the enemy's retaliation."
     },
     "900011": {
       "name": "Ideal Range",
@@ -58,7 +58,7 @@ window.GlossaryData = {
     },
     "900017": {
       "name": "Fixed DMG",
-      "effect": "Damage that bypasses armor calculations, applied directly to a part's HP."
+      "effect": "Ignores Armor and DMG Reduction to deal damage once."
     },
     "900018": {
       "name": "Passive Repair",
@@ -70,7 +70,7 @@ window.GlossaryData = {
     },
     "900020": {
       "name": "Assist Repair",
-      "effect": "Provide supplemental repairs in support of an allied repair action."
+      "effect": "After an ally's action, perform [Passive Repair] on that ally."
     },
     "900021": {
       "name": "Pochy Repair",
@@ -78,11 +78,11 @@ window.GlossaryData = {
     },
     "900022": {
       "name": "Guard",
-      "effect": "Intercept an attack targeting an adjacent ally, taking the hit in their place."
+      "effect": "Protects allies within 2 adjacent tiles from Assault and Ranged attacks. Triggers up to 2 times per turn and lasts 2 turns. Additionally, gains [Defensive Stance I]. Can only trigger 1 time per turn."
     },
     "900023": {
       "name": "Quick Draw",
-      "effect": "When retaliating, attack before the enemy's strike lands rather than after."
+      "effect": "Launches a retaliation before enemy active attacks."
     },
     "900024": {
       "name": "Selfless Guard",
@@ -93,8 +93,8 @@ window.GlossaryData = {
       "effect": "A targeting or weapon-mount state that enables special attack patterns."
     },
     "900026": {
-      "name": "Retract",
-      "effect": "Pull back or retract a weapon system, ending an extended attack state."
+      "name": "Substitute",
+      "effect": "If an ally with HP below 30% is attacked during combat, a [Guard] effect can be activated regardless of skill range. Removed after activation."
     },
     "900027": {
       "name": "Target Shift",
@@ -102,7 +102,7 @@ window.GlossaryData = {
     },
     "900028": {
       "name": "Add Strike",
-      "effect": "Add an additional hit to the current attack sequence."
+      "effect": "After retaliation, trigger an additional retaliation."
     },
     "900029": {
       "name": "Auto Load",
@@ -122,11 +122,11 @@ window.GlossaryData = {
     },
     "900034": {
       "name": "Instability",
-      "effect": "A debuff state that reduces combat effectiveness and may trigger negative follow-up effects."
+      "effect": "Hit Rate and Dodge Rate Down."
     },
     "900035": {
       "name": "Timidity",
-      "effect": "A debuff that reduces offensive willingness; affected units may avoid initiating attacks."
+      "effect": "AP Cost UP for Normal Attacks, Skills and Codes."
     },
     "900036": {
       "name": "Mental Pressure Aura",
@@ -148,9 +148,13 @@ window.GlossaryData = {
       "name": "Active Skill Disabled",
       "effect": "Cannot use active skills for the duration of this effect."
     },
+    "900049": {
+      "name": "Exposure II",
+      "effect": "Affected Part Hit Weighting +45."
+    },
     "900050": {
       "name": "Euphoria",
-      "effect": "A buff state that enhances overall combat capabilities while active."
+      "effect": "When actively attacking, Crit Rate UP."
     },
     "900051": {
       "name": "Improved Hit",
@@ -177,16 +181,72 @@ window.GlossaryData = {
       "effect": "Impedes the target's ability to attack effectively."
     },
     "900059": {
-      "name": "Auto Mod",
-      "effect": "An automatic weapon modification that activates to enhance performance under specific conditions."
+      "name": "Sentinel Ward",
+      "effect": "After performing active repairs, apply an extra repair effect to the target."
     },
     "900060": {
       "name": "Diagonal Shot",
-      "effect": "Fire at a target along a diagonal axis rather than orthogonally."
+      "effect": "Enables a Rail Gun to execute Diagonal Attacks with a Range of -1."
     },
     "900061": {
-      "name": "Link Counter",
-      "effect": "When an ally performs a counter-attack, cooperate by launching an additional counter on the same attacker."
+      "name": "Link Retaliation",
+      "effect": "After the enemy attacks other allies, launches a retaliation."
+    },
+    "900064": {
+      "name": "Peripheral Vision",
+      "effect": "Before the target retaliates, launches an attack on a random target within range. [Peripheral Vision] is unaffected by Ideal Range."
+    },
+    "900065": {
+      "name": "Flame DMG",
+      "effect": "Damage dealt is based on the multiplier percentage of the main skill."
+    },
+    "900071": {
+      "name": "Stay Lit!",
+      "effect": "When executing a single-target repair skill, restores additional AP to eligible targets."
+    },
+    "900078": {
+      "name": "Turns Left",
+      "effect": "Turns left cannot exceed the duration of the effect at the time of acquisition."
+    },
+    "900079": {
+      "name": "Displacement",
+      "effect": "Pulled, pushed back, or replaced."
+    },
+    "900080": {
+      "name": "Guard Disabled",
+      "effect": "Unable to perform [Guard] or [Selfless Guard]."
+    },
+    "900081": {
+      "name": "Ignore Guard",
+      "effect": "Cannot be the target of [Guard] or [Selfless Guard]."
+    },
+    "900085": {
+      "name": "Tokamak Sphere",
+      "effect": "Can choose a direction when deployed. Redirects Fia's Rail Gun/Flamethrower AoE attacks when they pass through it. Destroyed after redirection. Can be retrieved at end of action."
+    },
+    "900086": {
+      "name": "Redirection",
+      "effect": "Extends attack range toward the direction of the Tokamak Sphere, but Max Range -1."
+    },
+    "900088": {
+      "name": "Synchronization",
+      "effect": "Has a special [Sync Ratio] with the ST, which changes during battle. The higher the sync ratio, the stronger the pilot's ability."
+    },
+    "900089": {
+      "name": "Balance",
+      "effect": "Redistributes HP% evenly across all intact parts."
+    },
+    "900095": {
+      "name": "Dual Gun Retaliation",
+      "effect": "After the enemy attacks this unit, uses two Machine Guns to retaliate."
+    },
+    "900096": {
+      "name": "Retaliation",
+      "effect": "After the enemy attacks this unit, launches a retaliation."
+    },
+    "900097": {
+      "name": "Link Salvo",
+      "effect": "After an ally actively attacks, simultaneously uses two Tactical Weapons to launch an Extra Strike on the same target."
     },
     "900101": {
       "name": "Terminator",
@@ -236,13 +296,21 @@ window.GlossaryData = {
       "name": "Impulsive II",
       "effect": "Offensive aggression +10%, defensive stability -10%."
     },
+    "1004021": {
+      "name": "Weapon Inhibition",
+      "effect": "Cannot execute weapon skills or attack codes except for normal attacks."
+    },
+    "1004022": {
+      "name": "Repair Inhibition",
+      "effect": "Repair AMT Received -50%. Cannot repair destroyed parts."
+    },
     "1004061": {
       "name": "Code Hindrance",
       "effect": "Disrupts the use of Code-type skills."
     },
     "1004412": {
       "name": "Instability II",
-      "effect": "Instability debuff level II; reduces combat effectiveness by 10%."
+      "effect": "Hit Rate -4% and Dodge Rate -4%. Stacks up to 5 times."
     },
     "1004502": {
       "name": "Instability I",
@@ -252,25 +320,65 @@ window.GlossaryData = {
       "name": "Timidity I",
       "effect": "Timidity debuff level I; reduces offensive capability by 5%."
     },
+    "1008062": {
+      "name": "Absolute Dodge",
+      "effect": "When attacked and retaliating, ensures a Perfect Dodge. Effect is removed after triggering."
+    },
     "1008072": {
       "name": "Iron Will",
-      "effect": "A resilience buff that resists debuffs or prevents HP from dropping below a threshold."
+      "effect": "Crit Rate +6%. Stacks up to 5 times. Lasts until a critical hit is landed."
     },
     "1008503": {
-      "name": "Euphoria I",
-      "effect": "Enhances combat capabilities by 5%."
+      "name": "Euphoria II",
+      "effect": "Dodge Rate +3%. When actively attacking, Crit Rate +5%. Stacks up to 5 times."
+    },
+    "1009083": {
+      "name": "Intimidation",
+      "effect": "Unable to move."
     },
     "1009502": {
       "name": "Mental Pressure Aura I",
       "effect": "Applies 5% mental pressure to nearby enemies, reducing their combat performance."
     },
+    "1009503": {
+      "name": "Mental Pressure Aura II",
+      "effect": "DMG Dealt -12%. DMG Taken +12%."
+    },
+    "1012042": {
+      "name": "Ready",
+      "effect": "Crit Rate +5%, up to 5 stacks, lasting until landing a critical hit."
+    },
+    "1012081": {
+      "name": "Oath",
+      "effect": "At start of action, if a unit is within 6 tiles of [Camilla], targeted skills can only select [Camilla] as the target. Non-targeted skills remain unaffected."
+    },
+    "1012512": {
+      "name": "Magnetic Armor",
+      "effect": "Armor +30%. Stacks up to 3 times. Upon taking damage, removes 1 stack after combat."
+    },
+    "1013503": {
+      "name": "Vigor",
+      "effect": "DMG +1.5%, DMG Taken -1.5%."
+    },
+    "1014363": {
+      "name": "Eminence",
+      "effect": "When actively attacking, skill multiplier +0.15. Removed when taking damage."
+    },
+    "1014820": {
+      "name": "Sync Ratio",
+      "effect": "When Sync Ratio is greater than 50%, each 1% Sync Ratio increases pilot Suitability by 0.2%, otherwise, it reduces pilot Suitability."
+    },
+    "1015052": {
+      "name": "Critical State",
+      "effect": "Final DMG Dealt <color=#F74848>+20%</color>. Crit Rate and Crit DMG <color=#F74848>+20%</color>. After actively attacking, triggers <buf ID=900004>[Re-ATK]</buf>. Can move <color=#F74848>2</color> tiles before attacking. This <buf ID=900004>[Re-ATK]</buf> effect has no limit on the number of times it can trigger and lasts until the end of the action."
+    },
+    "1015311": {
+      "name": "Terminator 1",
+      "effect": "After actively attacking with an Alter-Blade, if the part hit is below <color=#F74848>15%</color> HP, triggers the <buf ID=900109>[Execution]</buf> effect, directly destroying that part after combat."
+    },
     "1015414": {
       "name": "Critical Sense",
       "effect": "When attacked by Melee and Ranged Weapons, if equipped with two Alter-Blades and both Arms are undestroyed, interrupts the attack and triggers [Incisive Retaliation], dealing <color=#F74848>1.2</color>x DMG. After triggering, <color=#F74848>1</color> stack is removed. [Incisive Retaliation] ignores the Large Shield <buf ID=900027>[Target Shift]</buf> effect.\nFor each stack of Critical Sense possessed, DMG <color=#F74848>+5%</color> and Dodge Rate <color=#F74848>+5%</color>."
-    },
-    "1013503": {
-      "name": "Fighting Spirit",
-      "effect": "A stackable morale buff. Higher stacks grant escalating bonuses to combat performance."
     },
     "1017503": {
       "name": "Surge I",
@@ -320,6 +428,62 @@ window.GlossaryData = {
       "name": "Intimidation",
       "effect": "Reduces the target's combat performance through psychological pressure."
     },
+    "2012032": {
+      "name": "Ultrahot!",
+      "effect": "Flame DMG +10%."
+    },
+    "2012061": {
+      "name": "Afterglow",
+      "effect": "When attacked, all parts take Fixed DMG equal to 0.05x [Erisa]'s Weapon ATK after combat. This effect lasts until the action ends."
+    },
+    "2012512": {
+      "name": "Joint Melt",
+      "effect": "After actively attacking or executing a Code skill, all parts take Fixed DMG equal to 5% of their Max HP."
+    },
+    "2015041": {
+      "name": "Counter Burst",
+      "effect": "When retaliating with a Machine Gun, Bullets +1. Stacks up to 3 times."
+    },
+    "2015061": {
+      "name": "Sanctuary",
+      "effect": "Immune to \"Cannot be protected by [Guard]\" effects. When attacked by a Melee or Ranged Weapon, if within 3 tiles of [Cassha], she blocks the attack."
+    },
+    "2015081": {
+      "name": "Turning Point",
+      "effect": "DMG Taken -30%. Removed at start of action."
+    },
+    "2015087": {
+      "name": "Maelstrom",
+      "effect": "At start of action, if not incapacitated and both Arms are undestroyed, uses two Machine Guns simultaneously to deal 0.6x DMG 2 times to all enemies within range. If unable to attack, gains 3 AP."
+    },
+    "2015509": {
+      "name": "Retaliation Enhancement",
+      "effect": "When attacked and drawn into combat, triggers [Quick Draw] before the enemy strikes, and Retaliation DMG +15%. Stacks up to 5 times. Each stack is independent and does not accumulate. When [Retaliation] or [Quick Draw] is triggered, 1 stack is removed after combat."
+    },
+    "2016080": {
+      "name": "Rondo - Flamethrower",
+      "effect": "When initiating combat with a single-handed Assault Weapon, deals [Fixed DMG] after combat equal to <color=#F74848>0.35</color>x Weapon ATK to all parts of the target in total."
+    },
+    "2016085": {
+      "name": "Rondo - Shotgun",
+      "effect": "When attacking with an Assault Weapon, ignores <color=#F74848>50%</color> of the target's Armor."
+    },
+    "2016087": {
+      "name": "Rondo - Machine Gun",
+      "effect": "When attacking with an Assault Weapon, increases DMG dealt in this skirmish based on hits. For each hit, DMG increases by <color=#F74848>2%</color>, up to <color=#F74848>20%</color>. Resets after attacking."
+    },
+    "2016410": {
+      "name": "Hawk Rush 1",
+      "effect": "When actively attacking with a single-handed Assault Weapon, after combat gains <color=#F74848>1</color> stack of <buf ID=2016503>[Dual Gun Efficiency]</buf>. Stacks up to <color=#F74848>3</color> times. Can only trigger <color=#F74848>1</color> time per turn."
+    },
+    "2016452": {
+      "name": "Hawk Rush",
+      "effect": "When actively attacking with a single-handed Assault Weapon, after combat gains <color=#F74848>1</color> stack of <buf ID=2016503>[Dual Gun Efficiency]</buf>. Stacks up to <color=#F74848>3</color> times. Can only trigger <color=#F74848>1</color> time per turn."
+    },
+    "2016503": {
+      "name": "Dual Gun Efficiency",
+      "effect": "When actively attacking with two Assault Weapons, consumes all stacks, reducing AP Cost by <color=#F74848>1</color> for each stack, down to a minimum of <color=#F74848>1</color>."
+    },
     "2017072": {
       "name": "Firepower Unleashed",
       "effect": "Can consume <buf ID=2017500>[Blooming]</buf> stack to improve the skill effect. For each stack consumed, increases AP cost by <color=#F74848>1</color> and the number of bullets by <color=#F74848>40%</color>. Up to 2 stacks can be consumed."
@@ -358,7 +522,7 @@ window.GlossaryData = {
     },
     "3006502": {
       "name": "Short Circuit I",
-      "effect": "Short circuit level I; disrupts weapon electronic systems, reducing their effectiveness by 5%."
+      "effect": "Short Circuit applied."
     },
     "3008061": {
       "name": "Guard Disabled",
@@ -370,11 +534,11 @@ window.GlossaryData = {
     },
     "3008501": {
       "name": "Epiphyllum's Move",
-      "effect": "A unique maneuver associated with the Epiphyllum pilot."
+      "effect": "When attacking with a Light Rifle, [Aiming] mode can be accessed while equipped with a Small Shield. This skill allows movement after combat using any remaining movement."
     },
     "3009032": {
       "name": "Serenity",
-      "effect": "A calm, focused state that enhances accuracy or critical performance."
+      "effect": "Crit Rate +5%, Crit DMG +5%, up to 3 stacks. Lose all effects upon taking damage."
     },
     "3009411": {
       "name": "Intelligence Collection",
@@ -383,6 +547,14 @@ window.GlossaryData = {
     "3009451": {
       "name": "Intelligence Collection",
       "effect": "Gathering tactical intelligence that may reveal enemy positions or grant combat bonuses."
+    },
+    "3010502": {
+      "name": "Reinforced Ammo",
+      "effect": "Gains <buf ID=3010504>[Improved Fire]</buf> after executing the <skill mainSkill=301050>[Special Load]</skill> code."
+    },
+    "3010504": {
+      "name": "Improved Fire",
+      "effect": "When actively attacking with a Ranged Weapon, skill multiplier +0.15. Can trigger 1 time. Removed after triggering or when action ends."
     },
     "3011512": {
       "name": "Positional Advantage I",
@@ -410,11 +582,35 @@ window.GlossaryData = {
     },
     "4003081": {
       "name": "Burning Terrain",
-      "effect": "Sets the terrain on fire, dealing ongoing damage to units that pass through or stand in the area."
+      "effect": "Deals [Fixed DMG] equal to 12% of Max HP to all parts of enemies that remain on this tile."
     },
     "4003503": {
       "name": "SP Ammo I",
       "effect": "Special ammunition level I; grants an additional 5% effect on hit."
+    },
+    "4004501": {
+      "name": "Unceasing Thunderfire",
+      "effect": "Talent buff for Eileen."
+    },
+    "4008051": {
+      "name": "Precision Mode",
+      "effect": "When attacking with a Missile Launcher, Final DMG <color=#F74848>+50%</color>, and no longer causes splash damage."
+    },
+    "4008058": {
+      "name": "Standard Mode",
+      "effect": "When attacking with a Missile Launcher, deals Splash DMG equal to <color=#F74848>50%</color> of the damage dealt to all parts except the part hit."
+    },
+    "4008509": {
+      "name": "Lock",
+      "effect": "Arthur can use Missile Launcher active attacks and <buf ID=900002>[Link Attacks]</buf> to attack units regardless of distance."
+    },
+    "4010082": {
+      "name": "Surprise Attack Tactic",
+      "effect": "When actively attacking, increases critical hit rate by <color=#F74848>15%</color>. <color=#F74848>1</color> stack is consumed after attacking."
+    },
+    "4010500": {
+      "name": "Intelligence",
+      "effect": "Each stack increases allies DMG dealt by <color=#F74848>0.8%</color>, upto a maximum of <color=#F74848>25</color> stacks. <color=#F74848>1</color> stack is consumed when attacking."
     },
     "5002072": {
       "name": "Repair AMT UP",
@@ -425,12 +621,40 @@ window.GlossaryData = {
       "effect": "Restores armor value by 5%."
     },
     "5004502": {
-      "name": "Regular Repair I",
-      "effect": "Restores HP by 5% at the end of action."
+      "name": "Regular Repair II",
+      "effect": "After actively attacking, restores HP equal to <color=#F74848>0.45x</color> [Melissa's] Manipulator Repair AMT to undestroyed parts. Can trigger <color=#F74848>2</color> times. Cannot repair destroyed parts."
     },
     "5004512": {
-      "name": "Magnetize Repair",
-      "effect": "A repair effect guided by magnetic attraction to damaged parts."
+      "name": "Magnetized Repair",
+      "effect": "After combat, if there are any destroyed parts, repairs <color=#F74848>1</color> of them. Repair amount is <color=#F74848>0.2x</color> that of the Manipulator. Can trigger once."
+    },
+    "5005071": {
+      "name": "Specific Repair Skills",
+      "effect": "[Pochy Assist!] Skill and [Full Power!] Skill"
+    },
+    "5006031": {
+      "name": "Limit Relief",
+      "effect": "Negates one instance of [Re-ATK] or [Re-Act] deduction. Removed after taking effect."
+    },
+    "5006052": {
+      "name": "Immune to Repair Inhibition",
+      "effect": "Immune to [Repair AMT Received Down] and [Destroyed Part Repair Disabled]."
+    },
+    "5007022": {
+      "name": "Crit Reduction",
+      "effect": "When under attack, Crit RES +10%, and Crit DMG Taken -10%."
+    },
+    "5007072": {
+      "name": "Primed",
+      "effect": "After actively attacking, inflicts 1 random debuff on the target hit after combat, lasting for 2 turns. Removed after triggering."
+    },
+    "5007083": {
+      "name": "Full Rewind",
+      "effect": "Records the unit's part status, HP, AP, and Tactical Weapon Capacity when applied. At the start of the next action, returns to the recorded status."
+    },
+    "5007516": {
+      "name": "Weapon Inhibition",
+      "effect": "Cannot execute weapon skills or attack codes except for normal attacks."
     },
     "6002042": {
       "name": "Passive Repair",
@@ -450,11 +674,11 @@ window.GlossaryData = {
     },
     "6004041": {
       "name": "Aggressive",
-      "effect": "An offensive stance that increases damage at the cost of defense."
+      "effect": "When Retaliating, Crit Rate +10%, Crit DMG +10%."
     },
     "6004081": {
       "name": "Reaction Hysteresis",
-      "effect": "Delays or reduces the speed of reactive actions like counter-attacks."
+      "effect": "When initiating combat, an action delay allows the target to retaliate first."
     },
     "6004501": {
       "name": "Initiative",
@@ -462,23 +686,35 @@ window.GlossaryData = {
     },
     "6005052": {
       "name": "Raging Guardian",
-      "effect": "An enraged defensive state that boosts both protection and counter-attack power."
+      "effect": "When actively attacking, DMG +10%. Stacks up to 3 times."
     },
     "6005461": {
       "name": "Movement Down Immunity",
-      "effect": "Immune to movement reduction debuffs."
+      "effect": "Immune to [Movement Down]."
     },
     "6005462": {
       "name": "Guard Disabled Immunity",
-      "effect": "Immune to Guard Disabled effects."
+      "effect": "Immune to [Guard Disabled]."
+    },
+    "6008041": {
+      "name": "Magnetoresistive Field",
+      "effect": "When on the battlefield, if enemies pass within 1 ring of this unit or a [Defense Field], they must expend 1 additional Movement. Also, their Jetpack's ability to bypass obstacles is disabled."
+    },
+    "6008061": {
+      "name": "Airspace Blockade",
+      "effect": "When actively attacking with a Tactical Weapon, cannot deal damage to enemies within enemy [Defense Fields]. Removed when action ends."
+    },
+    "6008501": {
+      "name": "Defense Field",
+      "effect": "Grants DMG Taken <color=#F74848>-15%</color> to allies that remain on this tile. This terrain effect has high priority."
     },
     "7000142": {
       "name": "Bide",
       "effect": "Accumulate power while withstanding attacks, releasing it in a stronger follow-up action."
     },
     "7000452": {
-      "name": "Blooming",
-      "effect": "DMG increased by <color=#F74848>+25%</color>. This effect cannot stack. Can be consumed to activate <buf ID=2017072>[Firepower Unleashed]</buf>."
+      "name": "Fury",
+      "effect": "DMG +5%. Stacks up to 4 times."
     },
     "7100102": {
       "name": "Hit Rate UP I",
@@ -494,7 +730,7 @@ window.GlossaryData = {
     },
     "7100105": {
       "name": "Hit Rate UP III",
-      "effect": "Hit rate +15%."
+      "effect": "Hit Rate +12%."
     },
     "7100205": {
       "name": "Dodge Rate UP III",
@@ -522,7 +758,7 @@ window.GlossaryData = {
     },
     "7100403": {
       "name": "Crit Rate UP II",
-      "effect": "Crit rate +10%."
+      "effect": "Crit Rate +15%."
     },
     "7100404": {
       "name": "Crit Rate UP II",
@@ -534,7 +770,7 @@ window.GlossaryData = {
     },
     "7100503": {
       "name": "Crit DMG UP II",
-      "effect": "Crit DMG +10%."
+      "effect": "Crit DMG +15%."
     },
     "7100601": {
       "name": "Armor UP I",
@@ -542,7 +778,7 @@ window.GlossaryData = {
     },
     "7100701": {
       "name": "Fully Prepared",
-      "effect": "A readiness buff that enhances the next action taken."
+      "effect": "For every 10% decrease in HP, DMG Taken -3%, up to 15%."
     },
     "7100702": {
       "name": "Defensive Stance II",
@@ -550,15 +786,19 @@ window.GlossaryData = {
     },
     "7100703": {
       "name": "Defensive Stance III",
-      "effect": "DMG Taken -15%."
+      "effect": "A defensive enhancement status. Refer to Defensive Stance series for effect details."
     },
     "7100901": {
       "name": "Movement UP",
-      "effect": "Increases movement range by 1."
+      "effect": "Movement +1."
     },
     "7101003": {
       "name": "Hit Rate Down II",
       "effect": "Hit rate -10%."
+    },
+    "7101103": {
+      "name": "Dodge Rate Down II",
+      "effect": "Dodge Rate -8%."
     },
     "7101201": {
       "name": "DMG Down I",
@@ -570,11 +810,15 @@ window.GlossaryData = {
     },
     "7101505": {
       "name": "Crash",
-      "effect": "A debuff that disrupts movement or action capabilities."
+      "effect": "Unable to take action!"
+    },
+    "7101506": {
+      "name": "Movement Inhibition I",
+      "effect": "Movement -1."
     },
     "7101507": {
-      "name": "Movement Hindrance II",
-      "effect": "Movement range -10%."
+      "name": "Movement Inhibition II",
+      "effect": "Movement -2"
     },
     "7101601": {
       "name": "Armor Down Immunity",
@@ -602,11 +846,11 @@ window.GlossaryData = {
     },
     "7101704": {
       "name": "Armor Down I",
-      "effect": "Armor -5%."
+      "effect": "Armor -35%."
     },
     "7101801": {
-      "name": "DMG Down I",
-      "effect": "DMG -5%."
+      "name": "DMG Taken UP I",
+      "effect": "DMG Taken +10%."
     },
     "7101803": {
       "name": "DMG Taken UP II",
@@ -614,71 +858,15 @@ window.GlossaryData = {
     },
     "7102005": {
       "name": "DMG Taken Down III",
-      "effect": "DMG Taken -15%."
-    },
-    "4010500": {
-      "name": "Intelligence",
-      "effect": "Each stack increases allies DMG dealt by <color=#F74848>0.8%</color>, upto a maximum of <color=#F74848>25</color> stacks. <color=#F74848>1</color> stack is consumed when attacking."
-    },
-    "4010082": {
-      "name": "Surprise Attack Tactic",
-      "effect": "When actively attacking, increases critical hit rate by <color=#F74848>15%</color>. <color=#F74848>1</color> stack is consumed after attacking."
-    },
-    "2016503": {
-      "name": "Dual Gun Efficiency",
-      "effect": "When actively attacking with two Assault Weapons, consumes all stacks, reducing AP Cost by <color=#F74848>1</color> for each stack, down to a minimum of <color=#F74848>1</color>."
-    },
-    "2016085": {
-      "name": "Rondo - Shotgun",
-      "effect": "When attacking with an Assault Weapon, ignores <color=#F74848>50%</color> of the target's Armor."
-    },
-    "2016087": {
-      "name": "Rondo - Machine Gun",
-      "effect": "When attacking with an Assault Weapon, increases DMG dealt in this skirmish based on hits. For each hit, DMG increases by <color=#F74848>2%</color>, up to <color=#F74848>20%</color>. Resets after attacking."
-    },
-    "2016080": {
-      "name": "Rondo - Flamethrower",
-      "effect": "When initiating combat with a single-handed Assault Weapon, deals [Fixed DMG] after combat equal to <color=#F74848>0.35</color>x Weapon ATK to all parts of the target in total."
-    },
-    "2016452": {
-      "name": "Hawk Rush",
-      "effect": "When actively attacking with a single-handed Assault Weapon, after combat gains <color=#F74848>1</color> stack of <buf ID=2016503>[Dual Gun Efficiency]</buf>. Stacks up to <color=#F74848>3</color> times. Can only trigger <color=#F74848>1</color> time per turn."
-    },
-    "2016410": {
-      "name": "Hawk Rush 1",
-      "effect": "When actively attacking with a single-handed Assault Weapon, after combat gains <color=#F74848>1</color> stack of <buf ID=2016503>[Dual Gun Efficiency]</buf>. Stacks up to <color=#F74848>3</color> times. Can only trigger <color=#F74848>1</color> time per turn."
+      "effect": "DMG Taken -12%."
     },
     "900100": {
       "name": "Critical Sense",
       "effect": "When attacked by Melee and Ranged Weapons, if equipped with two Alter-Blades and both Arms are undestroyed, interrupts the attack and triggers [Incisive Retaliation], dealing <color=#F74848>1.2</color>x DMG. After triggering, <color=#F74848>1</color> stack is removed. [Incisive Retaliation] ignores the Large Shield <buf ID=900027>[Target Shift]</buf> effect.\nFor each stack of Critical Sense possessed, DMG <color=#F74848>+5%</color> and Dodge Rate <color=#F74848>+5%</color>."
     },
-    "1015052": {
-      "name": "Critical State",
-      "effect": "Final DMG Dealt <color=#F74848>+20%</color>. Crit Rate and Crit DMG <color=#F74848>+20%</color>. After actively attacking, triggers <buf ID=900004>[Re-ATK]</buf>. Can move <color=#F74848>2</color> tiles before attacking. This <buf ID=900004>[Re-ATK]</buf> effect has no limit on the number of times it can trigger and lasts until the end of the action."
-    },
-    "1015311": {
-      "name": "Terminator 1",
-      "effect": "After actively attacking with an Alter-Blade, if the part hit is below <color=#F74848>15%</color> HP, triggers the <buf ID=900109>[Execution]</buf> effect, directly destroying that part after combat."
-    },
     "900104": {
       "name": "Hologram I",
       "effect": "Replicant. Copies the unit's part status and HP upon creation. It cannot attack, move, or be guarded, and is removed at the start of [Your Turn]."
-    },
-    "5007516": {
-      "name": "Weapon Inhibition",
-      "effect": "Cannot execute weapon skills or attack codes except for normal attacks."
-    },
-    "5007022": {
-      "name": "Crit Reduction",
-      "effect": "When under attack, Crit RES +10%, and Crit DMG Taken -10%."
-    },
-    "5007072": {
-      "name": "Primed",
-      "effect": "After actively attacking, inflicts 1 random debuff on the target hit after combat, lasting for 2 turns. Removed after triggering."
-    },
-    "5007083": {
-      "name": "Full Rewind",
-      "effect": "Records the unit's part status, HP, AP, and Tactical Weapon Capacity when applied. At the start of the next action, returns to the recorded status."
     },
     "900106": {
       "name": "Dummy Trick",
@@ -687,6 +875,18 @@ window.GlossaryData = {
     "900108": {
       "name": "Hologram",
       "effect": "Replicant. Copies the unit's part status and HP upon creation. It cannot attack, move, or be guarded, and is removed at the start of [Your Turn]."
+    },
+    "900039": {
+      "name": "Rack",
+      "effect": "Unable to move. When an ally ends their action within the adjacent area, automatically performs Passive Repair on them."
+    },
+    "900072": {
+      "name": "Percentage DMG",
+      "effect": "Damage dealt as a percentage of the target's current or max HP."
+    },
+    "900073": {
+      "name": "Special Load",
+      "effect": "A special ammunition or loading state that enhances subsequent attacks."
     }
   },
   "skill": {
@@ -725,6 +925,12 @@ window.GlossaryData = {
       "Ap": "0",
       "CD": "0",
       "effect": "Removes <buf ID=900108>[Hologram]</buf> and teleports the original unit to the <buf ID=900108>[Hologram]</buf>'s location."
+    },
+    "600850": {
+      "name": "Defense Field",
+      "Ap": "1",
+      "CD": "2",
+      "effect": "Applies a [Defense Field] to the designated tile and the surrounding 1-ring radius for 3 turns. Can continue action with remaining Movement."
     }
   }
 };

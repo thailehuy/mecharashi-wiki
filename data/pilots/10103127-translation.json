@@ -5,12 +5,12 @@
   "Profession": "Launcher",
   "Occupation": "Tactician",
   "Talent0_2Ability": {
-    "name": "炽心",
-    "SpecificEffects": "装备导弹时，可使用导弹发动<buf ID=900002>[协力攻击]</buf>，对目标造成<color=#F74848>0.2</color>倍伤害，对其余部位造成主体伤害<color=#F74848>50%</color>的溅射伤害，并对命中的目标添加<buf ID=4008509>[锁定]</buf>，持续<color=#F74848>2</color>回合，每回合最多发动<color=#F74848>2</color>次"
+    "name": "Blazing Heart",
+    "SpecificEffects": "When equipped with a Missile Launcher, can use the Missile Launcher to launch a <buf ID=900002>[Link Attack]</buf>, dealing <color=#F74848>0.2</color>x DMG to the target, and Splash DMG equal to <color=#F74848>50%</color> of the primary damage to other parts, applying <buf ID=4008509>[Lock]</buf> to targets hit, lasting <color=#F74848>2</color> turns, up to <color=#F74848>2</color> times per turn."
   },
   "Talent3_5Ability": {
-    "name": "炽心",
-    "SpecificEffects": "装备导弹时，可使用导弹发动<buf ID=900002>[协力攻击]</buf>，对目标造成<color=#F74848>0.2</color>倍伤害，对其余部位造成主体伤害<color=#F74848>50%</color>的溅射伤害，并对命中的目标添加<buf ID=4008509>[锁定]</buf>，持续<color=#F74848>2</color>回合，每回合最多发动<color=#F74848>2</color>次；\n双肩同时装备导弹时，<buf ID=900002>[协力攻击]</buf>时发动<buf ID=900097>[双肩协力攻击]</buf>，造成<color=#F74848>2×0.15</color>倍伤害，对其余部位造成主体伤害<color=#F74848>50%</color>的溅射伤害"
+    "name": "Blazing Heart",
+    "SpecificEffects": "When equipped with a Missile Launcher, can use the Missile Launcher to launch a <buf ID=900002>[Link Attack]</buf>, dealing <color=#F74848>0.2</color>x DMG to the target, and Splash DMG equal to <color=#F74848>50%</color> of the primary damage to other parts, applying <buf ID=4008509>[Lock]</buf> to targets hit, lasting <color=#F74848>2</color> turns, up to <color=#F74848>2</color> times per turn;\\nWhen both shoulders are equipped with Missile Launchers, <buf ID=900002>[Link Attack]</buf> triggers <buf ID=900097>[Link Salvo]</buf>, dealing <color=#F74848>2×0.15</color>x DMG, and Splash DMG equal to <color=#F74848>50%</color> of the primary damage to other parts."
   },
   "skills": {
     "400001": {
@@ -19,38 +19,43 @@
       "SpecificEffects": "When a Tactical Weapon runs out of ammo, trigger <buf ID=900029>[Auto Load]</buf>. This process takes <color=#F74848>3</color> turns."
     },
     "700043": {
-      "name": "Excellent status",
+      "name": "Superb",
       "describe": "",
-      "SpecificEffects": "When self's HP is full, DMG <color=#F74848>+15%</color>."
+      "SpecificEffects": "When HP is full, DMG <color=#F74848>+15%</color>."
     },
     "400803": {
-      "name": "制导轰击",
-      "describe": "使用导弹攻击最多<color=#F74848>2</color>个目标，最多消耗<color=#F74848>2</color>枚弹药，对命中部位造成<color=#F74848>0.9</color>倍伤害，对其余部位造成主体伤害<color=#F74848>50%</color>的溅射伤害；\n双肩都装备导弹才能使用",
+      "name": "Guided Bombardment",
+      "describe": "Uses a Missile Launcher to attack up to <color=#F74848>2</color> targets, consuming up to <color=#F74848>2</color> Ammo, dealing <color=#F74848>0.9</color>x DMG to parts hit and Splash DMG equal to <color=#F74848>50%</color> of this damage to other parts.\nRequires Missile Launchers to be mounted on both shoulders.",
       "SpecificEffects": ""
     },
     "400804": {
-      "name": "极速装填",
-      "describe": "使导弹的弹数完全回复，使自身获得<color=#F74848>1</color>AP，然后可使用剩余移动力继续行动",
+      "name": "Rapid Load",
+      "describe": "Fully reloads all Missile Launcher Ammo and gains <color=#F74848>1</color> AP. Can continue action with remaining Movement.",
       "SpecificEffects": ""
     },
     "400805": {
-      "name": "弹头切换",
-      "describe": "在<buf ID=4008058>[标准模式]</buf>和<buf ID=4008051>[精准模式]</buf>间切换",
+      "name": "Shell Swap",
+      "describe": "Switches between <buf ID=4008058>[Standard Mode]</buf> and <buf ID=4008051>[Precision Mode]</buf>.",
       "SpecificEffects": ""
     },
     "400806": {
-      "name": "集火轰击",
-      "describe": "使用导弹攻击单个目标，造成<color=#F74848>1.4</color>倍伤害，对其余部位造成主体伤害<color=#F74848>50%</color>的溅射伤害，战前可<buf ID=900014>[瞄准]</buf>；若目标携带<buf ID=4008509>[锁定]</buf>，可使全体友军对目标发动<buf ID=900002>[协力攻击]</buf>，该协力攻击不要求友军拥有协力能力，也不消耗协力次数",
+      "name": "Focused Barrage",
+      "describe": "Uses a Missile Launcher to attack a single target, dealing <color=#F74848>1.4</color>x DMG and Splash DMG equal to <color=#F74848>50%</color> of this damage to other parts. Enters <buf ID=900014>[Aiming]</buf> before attacking. If the target is affected by <buf ID=4008509>[Lock]</buf>, enables all allies to launch <buf ID=900002>[Link Attacks]</buf> against it. These <buf ID=900002>[Link Attacks]</buf> do not require allies to possess a specific skill and do not consume any Link chances.",
       "SpecificEffects": ""
     },
     "400807": {
-      "name": "自制填弹器",
+      "name": "Homemade Loader",
       "describe": "",
-      "SpecificEffects": "行动开始时，向未在装填中，且弹数更低的导弹装填<color=#F74848>1</color>发弹药"
+      "SpecificEffects": "At the start of action, auto-loads <color=#F74848>1</color> Ammo into the non-exhausted Missile Launcher magazine with the lowest Ammo count."
     },
     "400808": {
-      "name": "全弹倾泻",
-      "describe": "使用导弹发射所有弹药，随机攻击携带<buf ID=4008509>[锁定]</buf>的目标，每枚导弹对命中部位造成<color=#F74848>0.65</color>倍伤害，对其余部位造成主体伤害<color=#F74848>50%</color>的溅射伤害，每发射<color=#F74848>1</color>枚导弹消耗<color=#F74848>1</color>AP，直到弹药用尽或AP消耗完；单个目标最多只能受到<color=#F74848>5</color>次攻击；\n双肩都装备导弹才能使用",
+      "name": "Full Salvo",
+      "describe": "Fires all Missile Launcher Ammo, randomly attacking targets affected by <buf ID=4008509>[Lock]</buf>. Each missile deals <color=#F74848>0.65</color>x DMG to the part hit and Splash DMG equal to <color=#F74848>50%</color> of this damage to other parts. Each missile fired consumes <color=#F74848>1</color> AP, until Ammo is depleted or AP is exhausted. A single target can be attacked a maximum of <color=#F74848>5</color> times.\nRequires Missile Launchers to be mounted on both shoulders.",
+      "SpecificEffects": ""
+    },
+    "400809": {
+      "name": "Targeted Bombardment",
+      "describe": "Uses a Missile Launcher to attack a target, dealing <color=#F74848>1.1</color>x DMG to the part hit and Splash DMG equal to <color=#F74848>50%</color> of this damage to other parts. Applies <buf ID=4008509>[Lock]</buf> to targets hit, lasting <color=#F74848>2</color> turns.",
       "SpecificEffects": ""
     }
   },
@@ -73,7 +78,7 @@
     },
     "400022": {
       "name": "Power Innovation 2",
-      "SpecificEffects": "AP Regen <color=#F74848>+1</color>."
+      "SpecificEffects": "When breaking a part, restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>1</color> time per turn."
     },
     "400023": {
       "name": "AP Optimization 2",
@@ -104,8 +109,8 @@
       "SpecificEffects": "After triggering <buf ID=900004>[Re-ATK]</buf>, it no longer reduces final damage."
     },
     "400841": {
-      "name": "得意杰作1",
-      "SpecificEffects": "天赋发动的<buf ID=900002>[协力攻击]</buf>每回合可发动次数<color=#F74848>+1</color>"
+      "name": "Proud Masterpiece 1",
+      "SpecificEffects": "Talent-triggered <buf ID=900002>[Link Attack]</buf> chances per turn <color=#F74848>+1</color>."
     },
     "100042": {
       "name": "AP Optimization 4",
@@ -116,16 +121,16 @@
       "SpecificEffects": "When destroying a target, additionally restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>2</color> times per turn."
     },
     "400844": {
-      "name": "得意杰作2",
-      "SpecificEffects": "每回合首位发动主动攻击对战的其余友军，可在首次主动攻击对战后对目标施加<buf ID=4008509>[锁定]</buf>，持续<color=#F74848>2</color>回合"
+      "name": "Proud Masterpiece 2",
+      "SpecificEffects": "Each turn, the first ally to initiate an Active Attack can apply <buf ID=4008509>[Lock]</buf> to the target after their first active attack, lasting <color=#F74848>2</color> turns."
     },
     "400845": {
-      "name": "得意杰作3",
-      "SpecificEffects": "发动天赋的<buf ID=900002>[协力攻击]</buf>时，伤害倍率提升<color=#F74848>0.1</color>"
+      "name": "Proud Masterpiece 3",
+      "SpecificEffects": "When engaging in a talent-triggered <buf ID=900002>[Link Attack]</buf>, the damage multiplier increases by <color=#F74848>0.1</color>."
     },
     "400846": {
-      "name": "得意杰作4",
-      "SpecificEffects": "发动天赋的<buf ID=900002>[协力攻击]</buf>时，自身回复<color=#F74848>1</color>AP，每回合最多生效<color=#F74848>1</color>次"
+      "name": "Proud Masterpiece 4",
+      "SpecificEffects": "When performing a talent-triggered <buf ID=900002>[Link Attack]</buf>, restore <color=#F74848>1</color> AP. Can only trigger <color=#F74848>1</color> time per turn."
     }
   },
   "version": "1.7"

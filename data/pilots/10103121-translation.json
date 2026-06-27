@@ -5,12 +5,12 @@
   "Profession": "Defender",
   "Occupation": "Guardian",
   "Talent0_2Ability": {
-    "name": "Stand behind me",
-    "SpecificEffects": "When an ally performs an Active Attack within an adjacent (<color=#F74848>2</color> tiles) area, trigger <buf ID=900024>[Selfless Guard]</buf> to protect the ally from retaliation by assault and ranged weapons, effective up to <color=#F74848>2</color> times per turn."
+    "name": "Stand Behind Me!",
+    "SpecificEffects": "When an ally initiates combat within <color=#F74848>2</color> adjacent tiles, triggers <buf ID=900024>[Selfless Guard]</buf> to protect them from retaliation by Assault and Ranged weapons. Can trigger up to <color=#F74848>2</color> times per turn."
   },
   "Talent3_5Ability": {
-    "name": "Stand behind me",
-    "SpecificEffects": "When an ally performs an Active Attack within an adjacent (<color=#F74848>2</color> tiles) area, trigger <buf ID=900024>[Selfless Guard]</buf> to protect the ally from retaliation by assault and ranged weapons, effective up to <color=#F74848>2</color> times per turn.\nIf unable to retaliate in combat, DMG Taken <color=#F74848>-15%</color>."
+    "name": "Stand Behind Me!",
+    "SpecificEffects": "When an ally initiates combat within <color=#F74848>2</color> adjacent tiles, triggers <buf ID=900024>[Selfless Guard]</buf> to protect them from retaliation by Assault and Ranged weapons. Can trigger up to <color=#F74848>2</color> times per turn.\nIf unable to retaliate in combat, DMG Taken <color=#F74848>-15%</color>."
   },
   "skills": {
     "600001": {
@@ -21,37 +21,42 @@
     "700044": {
       "name": "Premium Escalation",
       "describe": "",
-      "SpecificEffects": "If any part is broken, gain <buf ID=7100702>[Defensive Stance II]</buf>, effective up to <color=#F74848>1</color> time per turn."
+      "SpecificEffects": "If any part is destroyed, gains <buf ID=7100702>[Defensive Stance II]</buf>. Can only trigger <color=#F74848>1</color> time per turn."
     },
     "600503": {
-      "name": "Robber",
-      "describe": "Uses the shotgun to attack a target, dealing <color=#F74848>1.15x</color> DMG. After combat, repairs undamaged parts, restoring HP equal to <color=#F74848>50%</color> of damage dealt.",
+      "name": "Plunder",
+      "describe": "Uses a Shotgun to attack a target, dealing <color=#F74848>1.15x</color> DMG. After combat, restores HP equal to <color=#F74848>50%</color> of damage dealt to undestroyed parts.",
       "SpecificEffects": ""
     },
     "600504": {
       "name": "Fully Prepared",
-      "describe": "Protects adjacent (<color=#F74848>2</color> tiles) allies from Assault and Ranged attacks, effective up to <color=#F74848>2</color> times per turn. Gain <buf ID=7100701>[Fully Prepared]</buf> and lasting for <color=#F74848>2</color> turns.",
+      "describe": "Protects allies within <color=#F74848>2</color> adjacent tiles from Assault and Ranged attacks. Can trigger up to <color=#F74848>2</color> times per turn. Gains <buf ID=7100701>[Fully Prepared]</buf>, lasting for <color=#F74848>2</color> turns.",
       "SpecificEffects": ""
     },
     "600505": {
       "name": "Raging Guardian",
       "describe": "",
-      "SpecificEffects": "Gain <buf ID=6005052>[Raging Guardian]</buf> for each cumulative damage taken of <color=#F74848>10%</color> of overall HP, up to <color=#F74848>3</color> stacks. This lasts until the next complete active attack."
+      "SpecificEffects": "Gains <buf ID=6005052>[Raging Guardian]</buf> for each <color=#F74848>10%</color> of overall HP lost. Stacks up to <color=#F74848>3</color> times. This lasts until the next active attack."
     },
     "700020": {
       "name": "Defibrillator",
-      "describe": "Uses Large Shield to attack a target, dealing <color=#F74848>1.6x</color> DMG. After combat, it inflicts <buf ID=7101505>[Crash]</buf> on the target hit, lasting for <color=#F74848>1</color> turn.",
+      "describe": "Uses a Large Shield to attack a target, dealing <color=#F74848>1.6x</color> DMG. Inflicts <buf ID=7101505>[Crash]</buf> on the target hit, lasting for <color=#F74848>1</color> turn.",
       "SpecificEffects": ""
     },
     "600507": {
       "name": "Autonomous Barrier",
       "describe": "",
-      "SpecificEffects": "The shield will not suffer damage exceeding <color=#F74848>60%</color> of its Max HP in a single hit, effective up to <color=#F74848>1</color> time per turn"
+      "SpecificEffects": "Shield blocks single instances of damage exceeding <color=#F74848>60%</color> of its Max HP. Can only trigger <color=#F74848>1</color> time per turn."
     },
     "600508": {
       "name": "Unshakable Aspiration",
       "describe": "",
-      "SpecificEffects": "When retaliating, Shotgun Range <color=#F74848>+1</color>. After retaliation, restore the HP of the undamaged part by <color=#F74848>25%</color> of the damage dealt."
+      "SpecificEffects": "When retaliating, Shotgun Range <color=#F74848>+1</color>. After retaliating, restores HP equal to <color=#F74848>25%</color> of the damage dealt to undestroyed parts."
+    },
+    "600509": {
+      "name": "Guard",
+      "describe": "Protects allies within <color=#F74848>2</color> adjacent tiles from Assault and Ranged attacks. Triggers up to <color=#F74848>2</color> times per turn and lasts <color=#F74848>2</color> turns. Additionally, gains <buf ID=7100702>[Defensive Stance I]</buf>. Can only trigger <color=#F74848>1</color> time per turn.",
+      "SpecificEffects": ""
     }
   },
   "neuralPassives": {
@@ -125,7 +130,25 @@
     },
     "600546": {
       "name": "Wall of the Dawnstar 4",
-      "SpecificEffects": "Gain <buf ID=6005461>[Movement Down Immunity]</buf> and <buf ID=6005462>[Guard Disabled Immunity]</buf>."
+      "SpecificEffects": "Gains <buf ID=6005461>[Movement Down Immunity]</buf> and <buf ID=6005462>[Guard Disabled Immunity]</buf>."
+    }
+  },
+  "glossary": {
+    "7100701": {
+      "name": "Fully Prepared",
+      "effect": "For every 10% decrease in HP, DMG Taken -3%, up to 15%."
+    },
+    "6005052": {
+      "name": "Raging Guardian",
+      "effect": "When actively attacking, DMG +10%. Stacks up to 3 times."
+    },
+    "6005461": {
+      "name": "Movement Down Immunity",
+      "effect": "Immune to [Movement Down]."
+    },
+    "6005462": {
+      "name": "Guard Disabled Immunity",
+      "effect": "Immune to [Guard Disabled]."
     }
   },
   "version": "1.0"

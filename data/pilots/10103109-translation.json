@@ -6,11 +6,11 @@
   "Occupation": "Fighter",
   "Talent0_2Ability": {
     "name": "Unto Death",
-    "SpecificEffects": "With a Polearm, if unable to retaliate in combat, <buf ID=900008>[Pursuit]</buf> can be triggered, allowing the unit to move <color=#F74848>3</color> tiles toward the attacker after combat. If successful in reaching the target, use the melee weapon to cast <buf ID=900030>[Cleave]</buf>, dealing <color=#F74848>0.4x</color> DMG."
+    "SpecificEffects": "With a Polearm, if unable to retaliate in combat, <buf ID=900008>[Pursuit]</buf> can trigger, allowing the unit to move <color=#F74848>3</color> tiles toward the attacker after combat. If successful in reaching the target, use the melee weapon to cast <buf ID=900030>[Cleave]</buf>, dealing <color=#F74848>0.4x</color> DMG."
   },
   "Talent3_5Ability": {
     "name": "Unto Death",
-    "SpecificEffects": "非法字符"
+    "SpecificEffects": "With a Polearm, if unable to retaliate in combat, <buf ID=900008>[Pursuit]</buf> can trigger, allowing the unit to move <color=#F74848>4</color> tiles toward the attacker after combat. If successful in reaching the target, cast <buf ID=900030>[Cleave]</buf>, dealing <color=#F74848>0.4x</color> DMG. When triggering <buf ID=900008>[Pursuit]</buf>, for every <color=#F74848>1</color> tile moved, Dodge Rate <color=#F74848>+5%</color>, up to <color=#F74848>15%</color>. This effect lasts until your next turn starts."
   },
   "skills": {
     "100001": {
@@ -20,37 +20,42 @@
     },
     "101102": {
       "name": "Waltz",
-      "describe": "Uses Polearm to attack all targets within an <range type=1>I-shaped (3*1 tiles)</range> or L-shaped (3*1 tiles) area in front, dealing <color=#F74848>1x</color> AoE DMG.",
+      "describe": "Uses Polearm to attack all targets within an <range type=1>I-shaped (3x1-tile)</range> or L-shaped (3x1-tile) area ahead, dealing <color=#F74848>1x</color> AoE DMG.",
       "SpecificEffects": ""
     },
     "101103": {
       "name": "Shadow of Nightmare",
       "describe": "",
-      "SpecificEffects": "For each enemy within an adjacent (<color=#F74848>2</color> tiles) area, Dodge Rate <color=#F74848>+4%</color>, up to <color=#F74848>12%</color>."
+      "SpecificEffects": "For each enemy within <color=#F74848>2</color> adjacent tiles, gains Dodge Rate <color=#F74848>+4%</color>, up to <color=#F74848>12%</color>."
     },
     "101104": {
       "name": "Pillage",
-      "describe": "Uses Polearm to attack a target, dealing <color=#F74848>1.7x</color> DMG. After combat, repairs undamaged parts, restoring HP equal to <color=#F74848>40%</color> of damage dealt.",
+      "describe": "Uses Polearm to attack a target, dealing <color=#F74848>1.7x</color> DMG. After combat, repairs undestroyed parts, restoring HP equal to <color=#F74848>40%</color> of damage dealt.",
       "SpecificEffects": ""
     },
     "101105": {
       "name": "Malevolent",
       "describe": "",
-      "SpecificEffects": "When attacking a target in a diagonal direction, Hit Rate <color=#F74848>+8%</color> and Crit Rate <color=#F74848>+10%</color>."
+      "SpecificEffects": "When in combat with a target in a diagonal direction, Hit Rate <color=#F74848>+8%</color> and Crit Rate <color=#F74848>+10%</color>."
     },
     "101106": {
       "name": "Unending",
       "describe": "",
-      "SpecificEffects": "When any part suffers overdamage, trigger <buf ID=900003>[Guts]</buf>, locking to <color=#F74848>1</color> HP. Each time <buf ID=900003>[Guts]</buf> is triggered, <color=#F74848>2</color> AP will be lost."
+      "SpecificEffects": "When any part suffers overdamage, triggers <buf ID=900003>[Guts]</buf>, locking at <color=#F74848>1</color> HP. Each time <buf ID=900003>[Guts]</buf> triggers, loses <color=#F74848>2</color> AP."
     },
     "101107": {
       "name": "Bloodthirsty",
       "describe": "",
-      "SpecificEffects": "When dealing damage, the HP of the undamaged part will be restored after combat, with the repair amount being <color=#F74848>25%</color> of the damage dealt."
+      "SpecificEffects": "After dealing damage, restores HP to undestroyed parts after combat. Repair amount is equal to <color=#F74848>25%</color> of the damage dealt."
     },
     "101108": {
       "name": "Disaster Raid",
       "describe": "Uses Polearm to attack a target <color=#F74848>2</color> times, each time dealing <color=#F74848>1.1x</color> DMG.",
+      "SpecificEffects": ""
+    },
+    "101109": {
+      "name": "Chop",
+      "describe": "Uses a Polearm to attack a target, dealing <color=#F74848>1.6x</color> DMG.",
       "SpecificEffects": ""
     }
   },
@@ -81,7 +86,7 @@
     },
     "100031": {
       "name": "Alacrity 1",
-      "SpecificEffects": "During an Active Attack with a Melee Weapon, there is a <color=#F74848>20%</color> chance to trigger <buf ID=900001>[Flurry Strike]</buf> following the enemy’s attack, dealing <color=#F74848>0.5x</color> DMG."
+      "SpecificEffects": "During an Active Attack with a Melee Weapon, there is a <color=#F74848>20%</color> chance to trigger <buf ID=900001>[Flurry Strike]</buf> following the enemy's attack, dealing <color=#F74848>0.5x</color> DMG."
     },
     "100032": {
       "name": "AP Optimization 3",
@@ -105,7 +110,7 @@
     },
     "101141": {
       "name": "The Ominous 1",
-      "SpecificEffects": "Increase the movement distance of <buf ID=900008>[Pursuit]</buf> to <color=#F74848>4</color> tiles."
+      "SpecificEffects": "Increases the movement distance of <buf ID=900008>[Pursuit]</buf> to <color=#F74848>4</color> tiles."
     },
     "100042": {
       "name": "AP Optimization 4",
@@ -117,15 +122,15 @@
     },
     "101144": {
       "name": "The Ominous 2",
-      "SpecificEffects": "When failing to move to the attacker's side with <buf ID=900008>[Pursuit]</buf>, automatically search for other targets within an adjacent (<color=#F74848>1</color> tile) area to cast <buf ID=900030>[Cleave]</buf>."
+      "SpecificEffects": "When failing to move to the attacker's side with <buf ID=900008>[Pursuit]</buf>, automatically searches for other targets within <color=#F74848>1</color> adjacent tile to execute <buf ID=900030>[Cleave]</buf>."
     },
     "101145": {
       "name": "The Ominous 3",
-      "SpecificEffects": "When attacking with a Polearm, deal [Collateral DMG] to <color=#F74848>1</color> additional part for <color=#F74848>15%</color> of the damage dealt."
+      "SpecificEffects": "When attacking with a Polearm, deals [Collateral DMG] to <color=#F74848>1</color> additional part for <color=#F74848>15%</color> of the damage dealt."
     },
     "101146": {
       "name": "The Ominous 4",
-      "SpecificEffects": "The multiplier of Collateral DMG is increased to <color=#F74848>40%</color> of the damage dealt."
+      "SpecificEffects": "Increases Collateral DMG multiplier to <color=#F74848>40%</color> of the damage dealt."
     }
   },
   "version": "1.0"

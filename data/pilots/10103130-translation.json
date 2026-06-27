@@ -5,12 +5,12 @@
   "Profession": "Striker",
   "Occupation": "Fighter",
   "Talent0_2Ability": {
-    "name": "勇气迸发",
-    "SpecificEffects": "对战中击破部位时获得<color=#F74848>1</color>层<buf ID=1013503>[气力]</buf>，击毁目标时额外获得<color=#F74848>1</color>层<buf ID=1013503>[气力]</buf>，<buf ID=1013503>[气力]</buf>可叠加<color=#F74848>10</color>层，行动结束时扣除<color=#F74848>1</color>层<buf ID=1013503>[气力]</buf>"
+    "name": "Courage Burst",
+    "SpecificEffects": "In combat, if a part is destroyed, gains <color=#F74848>1</color> stack of <buf ID=1013503>[Vigor]</buf>. If a target is destroyed, gains an additional <color=#F74848>1</color> stack of <buf ID=1013503>[Vigor]</buf>. <buf ID=1013503>[Vigor]</buf> stacks up to <color=#F74848>10</color> times. At end of action, deducts <color=#F74848>1</color> stack of <buf ID=1013503>[Vigor]</buf>."
   },
   "Talent3_5Ability": {
-    "name": "勇气迸发",
-    "SpecificEffects": "对战中击破部位时获得<color=#F74848>1</color>层<buf ID=1013503>[气力]</buf>，击毁目标时额外获得<color=#F74848>1</color>层<buf ID=1013503>[气力]</buf>，<buf ID=1013503>[气力]</buf>可叠加<color=#F74848>10</color>层，行动结束时扣除<color=#F74848>1</color>层<buf ID=1013503>[气力]</buf>；\n使用电锯攻击时，根据连击数无视目标护甲，每<color=#F74848>1</color>连击数无视<color=#F74848>7.5%</color>护甲，攻击后重置"
+    "name": "Courage Burst",
+    "SpecificEffects": "In combat, if a part is destroyed, gains <color=#F74848>1</color> stack of <buf ID=1013503>[Vigor]</buf>. If a target is destroyed, gains an additional <color=#F74848>1</color> stack of <buf ID=1013503>[Vigor]</buf>. <buf ID=1013503>[Vigor]</buf> stacks up to <color=#F74848>10</color> times. At end of action, deducts <color=#F74848>1</color> stack of <buf ID=1013503>[Vigor]</buf>. When attacking with a Chainsaw, ignores <color=#F74848>7.5%</color> of the target's Armor for every <color=#F74848>1</color> hit. Resets after attacking."
   },
   "skills": {
     "100001": {
@@ -19,38 +19,43 @@
       "SpecificEffects": "After breaking a part, <buf ID=900004>[Re-ATK]</buf> can be triggered. Unable to move before the attack, and this can be effective up to <color=#F74848>2</color> times per turn."
     },
     "101302": {
-      "name": "气势",
+      "name": "Presence",
       "describe": "",
-      "SpecificEffects": "遭受攻击对战时，若无法反击时，遭受伤害降低<color=#F74848>10%</color>，并额外获得<color=#F74848>1</color>层<buf ID=1013503>[气力]</buf>"
+      "SpecificEffects": "If unable to retaliate in combat, DMG Taken <color=#F74848>-10%</color>. Gains an additional <color=#F74848>1</color> stack of <buf ID=1013503>[Vigor]</buf>."
     },
     "101303": {
-      "name": "毅力",
+      "name": "Perseverance",
       "describe": "",
-      "SpecificEffects": "任意部位遭受过量伤害时将触发<buf ID=900003>[不屈]</buf>，锁定至<color=#F74848>1</color>点耐久，该效果间隔<color=#F74848>3</color>回合才可再次发动"
+      "SpecificEffects": "When any part suffers overdamage, triggers <buf ID=900003>[Guts]</buf>, locking at <color=#F74848>1</color> HP. This effect has a <color=#F74848>3</color>-turn trigger interval."
     },
     "101304": {
-      "name": "热血一击",
-      "describe": "使用电锯攻击单个目标，造成<color=#F74848>1.3</color>倍伤害，必定攻击耐久值最低的部位，<buf ID=1013503>[气力]</buf>层数大于等于<color=#F74848>4</color>时，额外<color=#F74848>+3</color>次连击数",
+      "name": "Zealous Blow",
+      "describe": "Uses a Chainsaw to attack a target, dealing <color=#F74848>1.3x</color> DMG. Targets the part with the lowest HP. When there are <color=#F74848>4</color> or more stacks of <buf ID=1013503>[Vigor]</buf>, gains an additional <color=#F74848>3</color> hits.",
       "SpecificEffects": ""
     },
     "101305": {
-      "name": "魄力",
-      "describe": "使自身回复<color=#F74848>1</color>AP，并额外获得<color=#F74848>4</color>层<buf ID=1013503>[气力]</buf>，然后可以使用剩余移动力继续行动",
+      "name": "Fearlessness",
+      "describe": "Gains <color=#F74848>1</color> AP and an additional <color=#F74848>4</color> stacks of <buf ID=1013503>[Vigor]</buf>. Can continue action with remaining Movement.",
       "SpecificEffects": ""
     },
     "101306": {
-      "name": "魂袭",
-      "describe": "使用电锯攻击单个目标，造成<color=#F74848>1.6</color>倍伤害，优先攻击耐久值不满的部位，<buf ID=1013503>[气力]</buf>层数大于等于<color=#F74848>8</color>时，会连续攻击<color=#F74848>2</color>次，第<color=#F74848>2</color>次攻击造成<color=#F74848>0.6</color>倍伤害",
+      "name": "Spirit Strike",
+      "describe": "Uses a Chainsaw to attack a target, dealing <color=#F74848>1.6x</color> DMG. Prioritizes damaged parts. When there are <color=#F74848>8</color> or more stacks of <buf ID=1013503>[Vigor]</buf>, can perform a Gusty Strike <color=#F74848>2</color> times, with the second attack dealing <color=#F74848>0.6x</color> DMG.",
       "SpecificEffects": ""
     },
     "101307": {
-      "name": "突击之刻",
+      "name": "Onward!",
       "describe": "",
-      "SpecificEffects": "行动开始时，若自身周围<color=#F74848>3</color>格内没有敌机，获得<buf ID=7100901>[移动力提升]</buf>，持续<color=#F74848>1</color>回合"
+      "SpecificEffects": "When action starts, if there are no enemies within <color=#F74848>3</color> adjacent tiles, gains <buf ID=7100901>[Movement UP]</buf>, lasting for <color=#F74848>1</color> turn."
     },
     "101308": {
-      "name": "此为奇迹",
-      "describe": "使自身获得<color=#F74848>3</color>层<buf ID=1013503>[气力]</buf>，<buf ID=7102005>[遭受伤害降低III]</buf>，<buf ID=7100305>[伤害提升Ⅲ]</buf>，<buf ID=7100901>[移动力提升]</buf>，持续<color=#F74848>1</color>回合，然后可以使用完整移动力继续行动",
+      "name": "It's a Miracle",
+      "describe": "Gains <color=#F74848>3</color> stacks of <buf ID=1013503>[Vigor]</buf>, <buf ID=7102005>[DMG Taken Down III]</buf>, <buf ID=7100305>[DMG UP III]</buf>, and <buf ID=7100901>[Movement UP]</buf>, lasting for <color=#F74848>1</color> turn. Can continue action with full Movement.",
+      "SpecificEffects": ""
+    },
+    "101309": {
+      "name": "Inevitable Slash",
+      "describe": "Attacks a target with a Chainsaw, dealing <color=#F74848>1.5x</color> DMG. If the target's HP is below <color=#F74848>50%</color>, this attack cannot be dodged.",
       "SpecificEffects": ""
     }
   },
@@ -81,7 +86,7 @@
     },
     "100031": {
       "name": "Alacrity 1",
-      "SpecificEffects": "During an Active Attack with a Melee Weapon, there is a <color=#F74848>20%</color> chance to trigger <buf ID=900001>[Flurry Strike]</buf> following the enemy’s attack, dealing <color=#F74848>0.5x</color> DMG."
+      "SpecificEffects": "When actively attacking with a Melee Weapon, has a <color=#F74848>20%</color> chance to trigger <buf ID=900001>[Flurry Strike]</buf> following the enemy's attack, dealing <color=#F74848>0.5x</color> DMG."
     },
     "100032": {
       "name": "AP Optimization 3",
@@ -104,8 +109,8 @@
       "SpecificEffects": "When triggering <buf ID=900001>[Flurry Strike]</buf>, prioritize hitting the part with the lowest HP."
     },
     "101341": {
-      "name": "斗志昂扬1",
-      "SpecificEffects": "<buf ID=1013503>[气力]</buf>大于等于<color=#F74848>3</color>层时，命中率提升<color=#F74848>10%</color>"
+      "name": "Defiant Warrior 1",
+      "SpecificEffects": "When <buf ID=1013503>[Vigor]</buf> is at <color=#F74848>3</color> or more stacks, Hit Rate <color=#F74848>+10%</color>."
     },
     "100042": {
       "name": "AP Optimization 4",
@@ -116,16 +121,16 @@
       "SpecificEffects": "When destroying a target, additionally restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>2</color> times per turn."
     },
     "101344": {
-      "name": "斗志昂扬2",
-      "SpecificEffects": "<buf ID=1013503>[气力]</buf>大于等于<color=#F74848>5</color>层时，暴击率提升<color=#F74848>15%</color>"
+      "name": "Defiant Warrior 2",
+      "SpecificEffects": "When <buf ID=1013503>[Vigor]</buf> is at <color=#F74848>5</color> or more stacks, Crit Rate <color=#F74848>+15%</color>."
     },
     "101345": {
-      "name": "斗志昂扬3",
-      "SpecificEffects": "<buf ID=1013503>[气力]</buf>上限变为<color=#F74848>15</color>层"
+      "name": "Defiant Warrior 3",
+      "SpecificEffects": "Raises <buf ID=1013503>[Vigor]</buf> stack cap to <color=#F74848>15</color>."
     },
     "101346": {
-      "name": "斗志昂扬4",
-      "SpecificEffects": "行动结束时，<buf ID=1013503>[气力]</buf>不再会被扣除"
+      "name": "Defiant Warrior 4",
+      "SpecificEffects": "When action ends, <buf ID=1013503>[Vigor]</buf> is not deducted."
     }
   },
   "version": "1.5"

@@ -5,12 +5,12 @@
   "Profession": "Mechanic",
   "Occupation": "Machinist",
   "Talent0_2Ability": {
-    "name": "神气十足",
-    "SpecificEffects": "施放单体修理技能时，若目标AP小于等于<color=#F74848>2</color>，则使其回复<color=#F74848>1</color>AP"
+    "name": "Stay Lit!",
+    "SpecificEffects": "When executing a single-target repair skill, if the target's AP is <color=#F74848>3</color> or less, it gains <color=#F74848>1</color> AP."
   },
   "Talent3_5Ability": {
-    "name": "神气十足",
-    "SpecificEffects": "施放单体修理技能时，若目标AP小于等于<color=#F74848>2</color>，则使其回复<color=#F74848>1</color>AP；\n自身耐久值高于<color=#F74848>50%</color>时，治疗指令射程<color=#F74848>+1</color>"
+    "name": "Stay Lit!",
+    "SpecificEffects": "When executing a single-target repair skill, if the target's AP is <color=#F74848>3</color> or less, it gains <color=#F74848>1</color> AP.\nWhen your HP is above <color=#F74848>50%</color>, Repair Code range is <color=#F74848>+1</color>."
   },
   "skills": {
     "500001": {
@@ -21,41 +21,41 @@
     "500205": {
       "name": "Special Care",
       "describe": "",
-      "SpecificEffects": "When executing an individual repair skill, Repair AMT <color=#F74848>+10%</color>, and additionally repairs <color=#F74848>1</color> damaged part."
+      "SpecificEffects": "When executing a single-target repair skill, Repair AMT <color=#F74848>+10%</color>, and additionally repairs <color=#F74848>1</color> destroyed part."
     },
     "500603": {
-      "name": "一鼓作气",
-      "describe": "恢复单台机兵所有部位的耐久值，修理量为修理背包的<color=#F74848>2.3</color>倍，可修复<color=#F74848>1</color>个损毁部位，并施加<buf ID=5006031>[再动免除]</buf>，可生效<color=#F74848>1</color>次",
+      "name": "Full-Throttle",
+      "describe": "Restores HP equal to <color=#F74848>2.3x</color> Manipulator Repair AMT to all parts of a single ST. Can repair <color=#F74848>1</color> destroyed part. Also, applies <buf ID=5006031>[Limit Relief]</buf>, which can trigger <color=#F74848>1</color> time.",
       "SpecificEffects": ""
     },
     "500604": {
-      "name": "双向修理",
+      "name": "Bi-Directional Repair",
       "describe": "",
-      "SpecificEffects": "施放单体修理技能后，自身恢复所有部位的耐久值，修理量为修理背包的<color=#F74848>0.4</color>倍，可修复<color=#F74848>1</color>个损毁部位"
+      "SpecificEffects": "After executing a single-target repair skill, restores HP equal to <color=#F74848>0.4x</color> Manipulator Repair AMT to all parts. Can repair <color=#F74848>1</color> destroyed part."
     },
     "500605": {
-      "name": "贴心护理",
+      "name": "Intensive Care",
       "describe": "",
-      "SpecificEffects": "主动修理后，对目标施加<buf ID=5006052>[免疫修理阻碍]</buf>，持续<color=#F74848>2</color>回合"
+      "SpecificEffects": "After performing active repairs, grants <buf ID=5006052>[Immune to Repair Inhibition]</buf> to the target, lasting for <color=#F74848>2</color> turns."
     },
     "500606": {
-      "name": "保护网格",
-      "describe": "恢复所选<range type=1>2格菱形</range>范围内友军所有部位的耐久值，修理量为修理背包的<color=#F74848>1.1</color>倍，可修复<color=#F74848>1</color>个损毁部位，并施加<buf ID=7100701>[抵御Ⅰ]</buf>，可生效<color=#F74848>1</color>次",
+      "name": "Repair Grid",
+      "describe": "Restores HP equal to <color=#F74848>1.1x</color> Manipulator Repair AMT to all parts of allies within the selected <range type=1>2-tile diamond area</range>. Can repair <color=#F74848>1</color> destroyed part. Also, grants <buf ID=7100701>[Defensive Stance I]</buf>, which can trigger <color=#F74848>1</color> time.",
       "SpecificEffects": ""
     },
     "500607": {
-      "name": "战前整备",
+      "name": "Prewar Preparation",
       "describe": "",
-      "SpecificEffects": "行动开始时，恢复自身周围<color=#F74848>2</color>格内耐久值百分比最低的<color=#F74848>1</color>名友军所有部位的耐久值，修理量为修理背包的<color=#F74848>0.2</color>倍，可修复<color=#F74848>1</color>个损毁部位"
+      "SpecificEffects": "At start of action, restores HP equal to <color=#F74848>0.2x</color> Manipulator Repair AMT to all parts of an ally with the lowest HP percentage within <color=#F74848>2</color> adjacent tiles. Can repair <color=#F74848>1</color> destroyed part."
     },
     "500608": {
-      "name": "战术重启",
-      "describe": "恢复单台机兵所有部位的耐久值，修理量为修理背包的<color=#F74848>2.0</color>倍，可修复<color=#F74848>2</color>个损毁部位，并使已经行动结束的友军再次行动",
+      "name": "Tactical Reset",
+      "describe": "Restores HP equal to <color=#F74848>2.0x</color> Manipulator Repair AMT to all parts of a single ST. Can repair <color=#F74848>2</color> destroyed parts. Allows allies who have already taken action to act again.",
       "SpecificEffects": ""
     },
     "500609": {
       "name": "Regulated Repair",
-      "describe": "Restores HP equal to <color=#F74848>2.0</color>x Manipulator Repair AMT to all parts of a single ST. Can repair <color=#F74848>1</color> destroyed part.",
+      "describe": "Restores HP equal to <color=#F74848>2.0x</color> Manipulator Repair AMT to all parts of a single ST. Can repair <color=#F74848>1</color> destroyed part.",
       "SpecificEffects": ""
     }
   },
@@ -109,8 +109,8 @@
       "SpecificEffects": "The number of targets that <buf ID=900018>[Passive Repair]</buf> can repair increases by <color=#F74848>1</color>."
     },
     "500641": {
-      "name": "元气满满1",
-      "SpecificEffects": "使<buf ID=900071>[神气十足]</buf>对AP小于等于<color=#F74848>3</color>的目标也能生效"
+      "name": "Pumped 1",
+      "SpecificEffects": "<buf ID=900071>[Stay Lit!]</buf> also works on targets with AP <color=#F74848>≤3</color>."
     },
     "500042": {
       "name": "AP Optimization 4",
@@ -121,16 +121,16 @@
       "SpecificEffects": "Each turn, the AP Cost of the 1st repair skill decreases by <color=#F74848>1</color>, with a minimum cost of <color=#F74848>1</color> AP."
     },
     "500644": {
-      "name": "元气满满2",
-      "SpecificEffects": "施放单体修理技能时，使目标AP上限<color=#F74848>+1</color>，该效果无法重复叠加"
+      "name": "Pumped 2",
+      "SpecificEffects": "When executing a single-target repair skill, increases the target's AP Cap by <color=#F74848>1</color>. This effect is independent and does not accumulate."
     },
     "500645": {
-      "name": "元气满满3",
-      "SpecificEffects": "触发<buf ID=900071>[神气十足]</buf>效果时，额外驱散目标<color=#F74848>1</color>个减益效果"
+      "name": "Pumped 3",
+      "SpecificEffects": "When triggering <buf ID=900071>[Stay Lit!]</buf>, dispels <color=#F74848>1</color> additional debuff from the target."
     },
     "500646": {
-      "name": "元气满满4",
-      "SpecificEffects": "施放单体修理技能时，使目标携带的增益效果的<buf ID=900078>[剩余回合]</buf><color=#F74848>+1</color>"
+      "name": "Pumped 4",
+      "SpecificEffects": "When executing an individual repair skill, increases <buf ID=900078>[Turns Left]</buf> of each buff on the target by <color=#F74848>1</color>."
     }
   },
   "version": "1.3"

@@ -6,11 +6,11 @@
   "Occupation": "Fighter",
   "Talent0_2Ability": {
     "name": "Extreme Will",
-    "SpecificEffects": "During an Active Attack, if a part is broken, gain <buf ID=1008503>[Euphoria I]</buf> after combat, up to <color=#F74848>5</color> stacks, lasting for <color=#F74848>2</color> turns."
+    "SpecificEffects": "During an Active Attack, if a part is broken, gain <buf ID=1008503>[Euphoria II]</buf> after combat, up to <color=#F74848>5</color> stacks, lasting for <color=#F74848>2</color> turns."
   },
   "Talent3_5Ability": {
     "name": "Extreme Will",
-    "SpecificEffects": "During an Active Attack, if a part is broken, gain <buf ID=1008503>[Euphoria I]</buf> after combat, up to <color=#F74848>5</color> stacks, lasting for <color=#F74848>2</color> turns.\nIgnore unit blocks during movement."
+    "SpecificEffects": "During an Active Attack, if a part is broken, gain <buf ID=1008503>[Euphoria II]</buf> after combat, up to <color=#F74848>5</color> stacks, lasting for <color=#F74848>2</color> turns.\nIgnore unit obstruction when moving."
   },
   "skills": {
     "100001": {
@@ -21,36 +21,41 @@
     "100802": {
       "name": "Clear Mind",
       "describe": "",
-      "SpecificEffects": "When attacked or retaliated, Dodge Rate <color=#F74848>+12%</color> if no ally exists within the adjacent (<color=#F74848>1</color> tile) area."
+      "SpecificEffects": "When attacked or retaliated against, Dodge Rate <color=#F74848>+12%</color> if no allies are within <color=#F74848>1</color> adjacent tile."
     },
     "100803": {
       "name": "Uppercut",
-      "describe": "Uses Pile Bunker or Knuckles to attack a target, dealing <color=#F74848>1.35x</color> DMG. This attack prioritizes the Body. Can only use <color=#F74848>1</color> time per turn.",
+      "describe": "Uses a Pile Bunker or Knuckles to attack a target, dealing <color=#F74848>1.35x</color> DMG. This attack prioritizes the Body. This skill can be executed <color=#F74848>1</color> time per turn.",
       "SpecificEffects": ""
     },
     "100804": {
       "name": "Buff Prolonger",
       "describe": "",
-      "SpecificEffects": "When gaining buffs, the duration <color=#F74848>+1</color>."
+      "SpecificEffects": "When gaining buffs, duration <color=#F74848>+1</color>."
     },
     "700030": {
-      "name": "Dash",
-      "describe": "Gain <buf ID=7100901>[Movement UP]</buf> and <buf ID=7100403>[Crit Rate UP II]</buf>, lasting for <color=#F74848>1</color> turn. Can continue the action with the remaining movement.",
+      "name": "Rush Order",
+      "describe": "Gains <buf ID=7100901>[Movement UP]</buf> and <buf ID=7100403>[Crit Rate UP II]</buf>, lasting for <color=#F74848>1</color> turn. Can continue action with remaining Movement.",
       "SpecificEffects": ""
     },
     "100806": {
-      "name": "Shaving",
+      "name": "Shave",
       "describe": "",
-      "SpecificEffects": "When taking damage and HP drops below <color=#F74848>50%</color>, gain <buf ID=1008062>[Certain Dodge]</buf> after combat, effective <color=#F74848>1</color> time, with a trigger interval of <color=#F74848>3</color> turns."
+      "SpecificEffects": "When HP drops below <color=#F74848>50%</color> after taking damage, gain <buf ID=1008062>[Absolute Dodge]</buf> after combat. Can trigger <color=#F74848>1</color> time, with a trigger interval of <color=#F74848>3</color> turns."
     },
     "100807": {
       "name": "Concentrate",
       "describe": "",
-      "SpecificEffects": "If unable to retaliate in combat, gain <buf ID=1008072>[Iron Will]</buf> after combat, up to <color=#F74848>5</color> stacks. These last until a critical hit is landed."
+      "SpecificEffects": "If unable to retaliate in combat, gain <buf ID=1008072>[Iron Will]</buf> after combat. Stacks up to <color=#F74848>5</color> times. Lasts until a critical hit is landed."
     },
     "100808": {
-      "name": "Double Whammy",
-      "describe": "Uses 2 Melee Weapons to strike a target <color=#F74848>2</color> times, each time dealing <color=#F74848>0.85x</color> DMG. The <color=#F74848>1st</color> attack will hit the part with the highest HP. If this part is not broken, the <color=#F74848>2nd</color> attack will hit the same part.",
+      "name": "Double Bolt",
+      "describe": "Uses two Melee Weapons to attack a target, dealing <color=#F74848>0.85x</color> DMG <color=#F74848>2</color> times. The <color=#F74848>1st</color> attack hits the part with the highest HP. If this part is not destroyed, the <color=#F74848>2nd</color> attack will hit the same part.",
+      "SpecificEffects": ""
+    },
+    "100809": {
+      "name": "One-Inch Punch",
+      "describe": "Uses a Pile Bunker or Knuckles to attack a target, dealing <color=#F74848>1.6x</color> DMG.",
       "SpecificEffects": ""
     }
   },
@@ -81,7 +86,7 @@
     },
     "100031": {
       "name": "Alacrity 1",
-      "SpecificEffects": "During an Active Attack with a Melee Weapon, there is a <color=#F74848>20%</color> chance to trigger <buf ID=900001>[Flurry Strike]</buf> following the enemy’s attack, dealing <color=#F74848>0.5x</color> DMG."
+      "SpecificEffects": "During an Active Attack with a Melee Weapon, there is a <color=#F74848>20%</color> chance to trigger <buf ID=900001>[Flurry Strike]</buf> following the enemy's attack, dealing <color=#F74848>0.5x</color> DMG."
     },
     "100032": {
       "name": "AP Optimization 3",
@@ -105,7 +110,7 @@
     },
     "100841": {
       "name": "Martial 1",
-      "SpecificEffects": "<buf ID=900050>[Euphoria]</buf> will also grant a Dodge Rate <color=#F74848>+3%</color>."
+      "SpecificEffects": "<buf ID=900050>[Euphoria]</buf> also grants Dodge Rate <color=#F74848>+3%</color>."
     },
     "100042": {
       "name": "AP Optimization 4",
@@ -117,11 +122,11 @@
     },
     "100844": {
       "name": "Martial 2",
-      "SpecificEffects": "Upon a perfect dodge, gain <color=#F74848>1</color> stack of <buf ID=900050>[Euphoria]</buf> after combat."
+      "SpecificEffects": "Upon executing a perfect dodge, immediately gain <color=#F74848>1</color> stack of <buf ID=900050>[Euphoria]</buf>."
     },
     "100845": {
       "name": "Martial 3",
-      "SpecificEffects": "When landing critical hits, gain <color=#F74848>1</color> stack of <buf ID=900050>[Euphoria]</buf> after combat."
+      "SpecificEffects": "When landing a critical hit, immediately gain <color=#F74848>1</color> stack of <buf ID=900050>[Euphoria]</buf>."
     },
     "100846": {
       "name": "Martial 4",

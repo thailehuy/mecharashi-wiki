@@ -5,12 +5,12 @@
   "Profession": "Assault",
   "Occupation": "Raider",
   "Talent0_2Ability": {
-    "name": "好烫好烫！",
-    "SpecificEffects": "使用喷火器主动攻击对战时，触发<buf ID=900064>[余光锁定]</buf>，使用对侧手臂的喷火器优先攻击范围内其他目标，对目标及路径上所有目标造成<color=#F74848>15%</color>的<buf ID=900065>[火焰伤害]</buf>"
+    "name": "Hot! Hot! Hot!",
+    "SpecificEffects": "When initiating combat with a Flamethrower, triggers <buf ID=900064>[Peripheral Vision]</buf>. Prioritizes attacking other targets within range using the opposite Arm's Flamethrower, dealing <color=#F74848>20%</color> <buf ID=900065>[Flame DMG]</buf> to all targets in the path."
   },
   "Talent3_5Ability": {
-    "name": "好烫好烫！",
-    "SpecificEffects": "使用喷火器主动攻击对战时，触发<buf ID=900064>[余光锁定]</buf>，使用对侧手臂的喷火器优先攻击范围内其他目标，对目标及路径上所有目标造成<color=#F74848>15%</color>的<buf ID=900065>[火焰伤害]</buf>；\n主动攻击对战后，对所有攻击到的目标施加<buf ID=2012512>[关节熔解]</buf>，持续<color=#F74848>1</color>回合"
+    "name": "Hot! Hot! Hot!",
+    "SpecificEffects": "When initiating combat with a Flamethrower, triggers <buf ID=900064>[Peripheral Vision]</buf>. Prioritizes attacking other targets within range using the opposite Arm's Flamethrower, dealing <color=#F74848>20%</color> <buf ID=900065>[Flame DMG]</buf> to all targets in the path.\\nAfter initiating combat, inflicts <buf ID=2012512>[Joint Melt]</buf> on all targets hit, lasting for <color=#F74848>1</color> turn."
   },
   "skills": {
     "200001": {
@@ -19,38 +19,38 @@
       "SpecificEffects": "In cooperation with allies, use Assault Weapons to launch a <buf ID=900002>[Link Attack]</buf> against the target, dealing <color=#F74848>0.2x</color> DMG, effective up to <color=#F74848>1</color> time per turn."
     },
     "700034": {
-      "name": "Impending Victory",
+      "name": "Within Our Grasp",
       "describe": "",
-      "SpecificEffects": "During an Active Attack in combat, if the HP% is higher than the target's, DMG <color=#F74848>+15%</color>."
+      "SpecificEffects": "When initiating combat, if HP percentage is greater than or equal to the target's, DMG <color=#F74848>+15%</color>."
     },
     "201203": {
-      "name": "采访许可",
-      "describe": "使自身获得<buf ID=2012032>[超高温！]</buf>，持续<color=#F74848>1</color>回合，然后可继续移动<color=#F74848>2</color>格，移动后可继续发起攻击",
+      "name": "Press License",
+      "describe": "Gains <buf ID=2012032>[Ultrahot!]</buf> for <color=#F74848>1</color> turn, then can continue to move <color=#F74848>2</color> tiles. Can attack after moving.",
       "SpecificEffects": ""
     },
     "201204": {
-      "name": "熊熊盛意",
-      "describe": "使用喷火器攻击主目标，造成<color=#F74848>1.4</color>倍伤害，并对路径上的其他目标造成<color=#F74848>20%</color>的<buf ID=900065>[火焰伤害]</buf>，若主目标位于友方燃烧地形上，战后触发<color=#F74848>1</color>次该地形效果",
+      "name": "Burning Spirit",
+      "describe": "Uses a Flamethrower to attack the main target, dealing <color=#F74848>1.4x</color> DMG and dealing <color=#F74848>20%</color> <buf ID=900065>[Flame DMG]</buf> to other targets in the path. If the main target is on allied Burning terrain, the terrain effect triggers once after combat.",
       "SpecificEffects": ""
     },
     "201205": {
-      "name": "链路熔毁",
+      "name": "Link Meltdown",
       "describe": "",
-      "SpecificEffects": "主动攻击对战时，若击破部位，使目标无法反击，并对主目标施加<buf ID=2012512>[关节熔解]</buf>，持续<color=#F74848>1</color>回合"
+      "SpecificEffects": "When initiating combat, if a part is destroyed, disables the target's Retaliation ability and inflicts <buf ID=2012512>[Joint Melt]</buf> on the main target for <color=#F74848>1</color> turn."
     },
     "201206": {
-      "name": "热力迸发",
-      "describe": "使用喷火器攻击主目标，造成<color=#F74848>1.55</color>倍伤害，并对路径上的其他目标造成<color=#F74848>20%</color>的<buf ID=900065>[火焰伤害]</buf>，战后对主目标施加<buf ID=2012061>[余温]</buf>",
+      "name": "Thermal Burst",
+      "describe": "Uses a Flamethrower to attack the main target, dealing <color=#F74848>1.55x</color> DMG and dealing <color=#F74848>20%</color> <buf ID=900065>[Flame DMG]</buf> to other targets in the path. After combat, inflicts <buf ID=2012061>[Afterglow]</buf> on the main target.",
       "SpecificEffects": ""
     },
     "201207": {
-      "name": "爆点头条",
+      "name": "Headliner",
       "describe": "",
-      "SpecificEffects": "使用喷火器主动攻击对战时的AP消耗<color=#F74848>+1</color>，伤害倍率<color=#F74848>+0.2</color>"
+      "SpecificEffects": "When initiating combat with a Flamethrower, AP Cost <color=#F74848>+1</color> and Damage Multiplier <color=#F74848>+0.2</color>."
     },
     "201208": {
-      "name": "烈火燎原",
-      "describe": "同时使用两把喷火器对攻击范围内所有目标造成<color=#F74848>2×0.35</color>倍伤害；战后对射程内所有的地格施加<terrian ID=4003081 />，持续<color=#F74848>2</color>回合",
+      "name": "Wildfire",
+      "describe": "Uses two Flamethrowers to attack all targets within attack range, dealing <color=#F74848>0.35x</color> DMG <color=#F74848>2</color> times. After combat, applies <terrian ID=4003081 /> to all tiles within range, lasting for <color=#F74848>2</color> turns.",
       "SpecificEffects": ""
     }
   },
@@ -104,8 +104,8 @@
       "SpecificEffects": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, final DMG <color=#F74848>+30%</color>."
     },
     "201241": {
-      "name": "控温系统1",
-      "SpecificEffects": "触发<buf ID=900064>[余光锁定]</buf>时，对目标及路径上所有目标造成的<buf ID=900065>[火焰伤害]</buf>提升至<color=#F74848>20%</color>"
+      "name": "TCS 1",
+      "SpecificEffects": "When triggering <buf ID=900064>[Peripheral Vision]</buf>, <buf ID=900065>[Flame DMG]</buf> dealt to all targets along the path is increased to <color=#F74848>20%</color>."
     },
     "200042": {
       "name": "AP Optimization 4",
@@ -113,19 +113,19 @@
     },
     "200043": {
       "name": "Adaptive Warfare 2",
-      "SpecificEffects": "If not moved before an Active Attack, <buf ID=900004>[Re-ATK]</buf> can be triggered, effective up to <color=#F74848>1</color> time per turn. Unable to move before attacking.\nEffects similar to <buf ID=900004>[Re-ATK]</buf> cannot be re-triggered."
+      "SpecificEffects": "Before actively attacking without having moved, can trigger <buf ID=900004>[Re-ATK]</buf> <color=#F74848>1</color> time per turn. Unable to move before attacking.\nOnly triggers if no other <buf ID=900004>[Re-ATK]</buf> effect is triggered this turn."
     },
     "201244": {
-      "name": "控温系统2",
-      "SpecificEffects": "位于燃烧地形上时，受到<buf ID=900072>[百分比伤害]</buf>降低<color=#F74848>50%</color>，并且造成伤害提升<color=#F74848>10%</color>"
+      "name": "TCS 2",
+      "SpecificEffects": "When on a Burning Terrain tile, reduces <buf ID=900072>[Percentage DMG]</buf> received by <color=#F74848>50%</color> and increases DMG Dealt by <color=#F74848>10%</color>."
     },
     "201245": {
-      "name": "控温系统3",
-      "SpecificEffects": "<buf ID=900064>[余光锁定]</buf>触发的攻击，也会触发本次攻击的武器技能效果"
+      "name": "TCS 3",
+      "SpecificEffects": "Attacks triggered by <buf ID=900064>[Peripheral Vision]</buf> also trigger the weapon skill effect of this attack."
     },
     "201246": {
-      "name": "控温系统4",
-      "SpecificEffects": "行动开始时，如果位于我方地形上，本回合首次攻击AP消耗<color=#F74848>-1</color>，最低<color=#F74848>1</color>点"
+      "name": "TCS 4",
+      "SpecificEffects": "At the start of action, if on allied terrain, AP Cost for the first attack this turn <color=#F74848>-1</color> (minimum <color=#F74848>1</color> AP)."
     }
   },
   "version": "1.3"

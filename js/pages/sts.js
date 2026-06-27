@@ -12,6 +12,7 @@ Pages.sts = {
   _activeRanks:    {},
   _activeTypes:    {},
   _activeVersions: {},
+  _lastViewed:     null,
 
   // ── Routing entry point ────────────────────────────────────────────────────
   render: function (param) {
@@ -122,8 +123,16 @@ Pages.sts = {
     $('#mech-grid').html(cards || '<p class="text-secondary ms-2 mt-2">No STs match the selected filters.</p>');
     $('#mech-count').text(filtered.length);
 
+    if (this._lastViewed) {
+      var $card = $('[data-mech="' + encodeURIComponent(this._lastViewed) + '"]');
+      if ($card.length) $card[0].scrollIntoView({ block: 'center' });
+      this._lastViewed = null;
+    }
+
+    var self = this;
     $(document).on('click.sts', '.pilot-card[data-mech]', function () {
       var name = decodeURIComponent($(this).data('mech'));
+      self._lastViewed = name;
       window.location.hash = '#sts/' + encodeURIComponent(name);
     });
   },

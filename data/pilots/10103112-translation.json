@@ -10,7 +10,7 @@
   },
   "Talent3_5Ability": {
     "name": "Intimidating Moonlight",
-    "SpecificEffects": "Activate the <buf ID=1009502>[Mental Pressure Aura I]</buf> to inflict DMG Dealt <color=#F74848>-7.5%</color> and DMG Taken <color=#F74848>+7.5%</color> on enemies within the <color=#F74848>2-ring</color> area."
+    "SpecificEffects": "Activate the <buf ID=1009503>[Mental Pressure Aura II]</buf> to inflict DMG Dealt <color=#F74848>-12%</color> and DMG Taken <color=#F74848>+12%</color> on enemies within the <color=#F74848>2-ring</color> area."
   },
   "skills": {
     "100001": {
@@ -21,26 +21,26 @@
     "100902": {
       "name": "Sunder Armor",
       "describe": "",
-      "SpecificEffects": "During an Active Attack in combat, inflict <buf ID=7101702>[Armor Down II]</buf> on the target before combat, lasting for <color=#F74848>1</color> turn."
+      "SpecificEffects": "When actively attacking, inflicts <buf ID=7101702>[Armor Down II]</buf> on the target before combat, lasting for <color=#F74848>1</color> turn."
     },
     "100903": {
       "name": "Waste Utilization",
       "describe": "",
-      "SpecificEffects": "When any arm is broken, gain <buf ID=7100703>[Defensive Stance III]</buf>, effective <color=#F74848>1</color> time, with a trigger interval of <color=#F74848>3</color> turns."
+      "SpecificEffects": "When any Arm is destroyed, gains <buf ID=7100703>[Defensive Stance III]</buf>. Can trigger <color=#F74848>1</color> time. This effect has a trigger interval of <color=#F74848>3</color> turns."
     },
     "100904": {
-      "name": "Bursting",
+      "name": "Disengage Edge",
       "describe": "Uses Polearm to <range type=1>thrust 4 tiles forward</range>, dealing <color=#F74848>1.2x</color> DMG to the <color=#F74848>1st</color> target hit, then knocking the target back <color=#F74848>2</color> tiles. If the path is blocked, inflicts <buf ID=7101505>[Crash]</buf> on the target, lasting <color=#F74848>1</color> turn.",
       "SpecificEffects": ""
     },
     "100905": {
-      "name": "Ready to Strike",
+      "name": "Poised to Strike",
       "describe": "",
-      "SpecificEffects": "This turn's remaining Movement can be carried over to the next turn, up to <color=#F74848>3</color> tiles."
+      "SpecificEffects": "Up to <color=#F74848>3</color> tiles of this turn's remaining Movement can be carried over to the next turn."
     },
     "100906": {
       "name": "Quarter Moon",
-      "describe": "Uses Polearm to attack all targets within an <range type=1>I-shaped (3*1 tiles) area</range> in front and deals <color=#F74848>0.85x</color> AoE DMG, knocking the target back <color=#F74848>2</color> tiles. If the path is blocked, inflicts <buf ID=7101507>[Movement Hindrance II]</buf> on the target, lasting <color=#F74848>1</color> turn.",
+      "describe": "Uses Polearm to attack all targets within an <range type=1>I-shaped (3x1-tile) area</range> ahead and deals <color=#F74848>0.85x</color> AoE DMG, knocking targets back <color=#F74848>2</color> tiles. If the path is blocked, inflicts <buf ID=7101507>[Movement Inhibition II]</buf> on targets, lasting for <color=#F74848>1</color> turn.",
       "SpecificEffects": ""
     },
     "100907": {
@@ -51,6 +51,11 @@
     "100908": {
       "name": "Moonscourge",
       "describe": "Uses Polearm to attack a target, dealing <color=#F74848>1.5x</color> DMG. This attack prioritizes the Body. If the target is destroyed, inflicts <buf ID=1009083>[Intimidation]</buf> on enemies within range of <buf ID=900036>[Mental Pressure Aura]</buf>, lasting for <color=#F74848>1</color> turn.",
+      "SpecificEffects": ""
+    },
+    "100909": {
+      "name": "Crescent Moon",
+      "describe": "Uses a Polearm to attack all targets within an <range type=1>I-shaped (3x1-tile) area</range> ahead, dealing <color=#F74848>0.8x</color> AoE DMG.",
       "SpecificEffects": ""
     }
   },
@@ -117,7 +122,7 @@
     },
     "100944": {
       "name": "Moonflower 2",
-      "SpecificEffects": "During an Active Attack in combat, if the target is on a diagonal tile, DMG <color=#F74848>+20%</color>."
+      "SpecificEffects": "When initiating combat, if the target is on a diagonal tile, DMG <color=#F74848>+20%</color>."
     },
     "100945": {
       "name": "Moonflower 3",

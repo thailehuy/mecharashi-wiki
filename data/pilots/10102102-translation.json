@@ -6,11 +6,11 @@
   "Occupation": "Sniper",
   "Talent0_2Ability": {
     "name": "Dawnstar Tech",
-    "SpecificEffects": "Rail Gun's DMG <color=#F74848>+20%</color> and gains <buf ID=900060>[Diagonal Shot]</buf>. When a Rail Gun runs out of ammo, trigger <buf ID=900029>[Auto Load]</buf>. This process takes <color=#F74848>3</color> turns."
+    "SpecificEffects": "Rail Gun DMG <color=#F74848>+20%</color> and gains <buf ID=900060>[Diagonal Shot]</buf>. When a Rail Gun runs out of ammo, trigger <buf ID=900029>[Auto Load]</buf>. This process takes <color=#F74848>3</color> turns."
   },
   "Talent3_5Ability": {
     "name": "Dawnstar Tech",
-    "SpecificEffects": "Rail Gun's DMG <color=#F74848>+20%</color> and gains <buf ID=900060>[Diagonal Shot]</buf>. When a Rail Gun runs out of ammo, trigger <buf ID=900029>[Auto Load]</buf>. This process takes <color=#F74848>2</color> turns."
+    "SpecificEffects": "Rail Gun DMG <color=#F74848>+20%</color> and gains <buf ID=900060>[Diagonal Shot]</buf>. When a Rail Gun runs out of ammo, trigger <buf ID=900029>[Auto Load]</buf>. This process takes <color=#F74848>2</color> turns."
   },
   "skills": {
     "300001": {
@@ -25,32 +25,37 @@
     },
     "300703": {
       "name": "Judgment",
-      "describe": "Uses the Light Rifle to attack a target, dealing <color=#F74848>1.55x</color> DMG. Targets the part with the lowest HP.",
+      "describe": "Uses a Light Rifle to attack a target, dealing <color=#F74848>1.55x</color> DMG. Targets the part with the lowest HP.",
       "SpecificEffects": ""
     },
     "300704": {
       "name": "Instant Load",
-      "describe": "Fully restore Rail Gun Ammo and gain <buf ID=7100105>[Hit Rate UP III]</buf>, lasting for <color=#F74848>1</color> turn. Can continue the action with the remaining movement.",
+      "describe": "Fully reloads a Rail Gun's ammo and gains <buf ID=7100105>[Hit Rate UP III]</buf>, lasting for <color=#F74848>1</color> turn. Can continue action with remaining Movement.",
       "SpecificEffects": ""
     },
     "300705": {
       "name": "Good Start",
       "describe": "",
-      "SpecificEffects": "When attacking with the first Ammo in the Rail Gun Magazine, DMG <color=#F74848>+20%</color>."
+      "SpecificEffects": "When attacking with the first Ammo shell in the Rail Gun Magazine, DMG <color=#F74848>+20%</color>."
     },
     "300706": {
       "name": "Accurate Sanction",
-      "describe": "Uses Rail Gun to attack the same part of all targets within a <range type=1>Line (1*5 tiles) area</range> or a Diagonal (4 tiles) area and deals <color=#F74848>0.85x</color> AoE DMG. Before combat, access <buf ID=900014>[Aiming]</buf> mode.",
+      "describe": "Uses a Rail Gun to attack the same part of all targets within a <range type=1>1x5-tile line</range> or a 4-tile diagonal area and deals <color=#F74848>0.85x</color> AoE DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking.",
       "SpecificEffects": ""
     },
     "300707": {
       "name": "Ballistics Bonus",
       "describe": "",
-      "SpecificEffects": "When attacking with a Light Rifle, for every <color=#F74848>1</color> tile the target is farther away, DMG <color=#F74848>+6%</color>, up to <color=#F74848>30%</color>."
+      "SpecificEffects": "When attacking with a Light Rifle, for every <color=#F74848>1</color> tile from the target, DMG <color=#F74848>+6%</color>, up to <color=#F74848>30%</color>. When attacking with a Rail Gun, DMG <color=#F74848>+5%</color> for each target penetrated, up to <color=#F74848>30%</color>."
     },
     "300708": {
       "name": "Saturated Strike",
-      "describe": "Consume <color=#F74848>3</color> rounds of Ammo. Uses Rail Gun to attack all targets within a <range type=1>3*5 tile area</range>, dealing <color=#F74848>1.25x</color> AoE DMG.",
+      "describe": "Consumes <color=#F74848>3</color> rounds of Ammo. Uses a Rail Gun to attack all targets within a <range type=1>3x5-tile area</range>, dealing <color=#F74848>1.25x</color> AoE DMG.",
+      "SpecificEffects": ""
+    },
+    "300709": {
+      "name": "Polyenergy Shot",
+      "describe": "Uses a Light Rifle to attack a target, dealing <color=#F74848>1.6</color>x DMG.",
       "SpecificEffects": ""
     }
   },

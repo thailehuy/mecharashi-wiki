@@ -6,7 +6,7 @@
   "Occupation": "Raider",
   "Talent0_2Ability": {
     "name": "Secret Execution",
-    "SpecificEffects": "When attacking with a Shotgun, inflict <buf ID=1004412>[Instability II]</buf> on the target before combat, up to <color=#F74848>5</color> stacks, lasting for <color=#F74848>2</color> turns. This target cannot be affected by <buf ID=900022>[Guard]</buf> during this combat."
+    "SpecificEffects": "When initiating combat with a Shotgun, inflicts <buf ID=1004412>[Instability II]</buf> on the target before combat. Stacks up to <color=#F74848>5</color> times. Lasts for <color=#F74848>2</color> turns. The target cannot be affected by <buf ID=900022>[Guard]</buf> during this skirmish."
   },
   "Talent3_5Ability": {
     "name": "Secret Execution",
@@ -21,36 +21,41 @@
     "700033": {
       "name": "Shooting Cans",
       "describe": "",
-      "SpecificEffects": "In combat, if the Hit Rate is above <color=#F74848>80%</color>, DMG <color=#F74848>+15%</color>."
+      "SpecificEffects": "In combat, if Hit Rate is greater than or equal to <color=#F74848>80%</color>, DMG <color=#F74848>+15%</color>."
     },
     "201103": {
       "name": "Eradication",
       "describe": "",
-      "SpecificEffects": "非法字符"
+      "SpecificEffects": "When initiating combat, has a <color=#F74848>20%</color> chance to use the opposite arm to launch a <buf ID=900021>[Flurry Strike]</buf>, dealing <color=#F74848>0.5x</color> DMG. For every <color=#F74848>1</color> stack of <buf ID=900034>[Instability]</buf> on the target, the probability increases by <color=#F74848>10%</color>, up to <color=#F74848>50%</color>. After using <buf ID=900021>[Flurry Strike]</buf>, inflicts <color=#F74848>1</color> stack of <buf ID=1004412>[Instability II]</buf> on the target, lasting for <color=#F74848>2</color> turns."
     },
     "201104": {
       "name": "Coercion",
-      "describe": "Uses Shotgun to shoot a target <color=#F74848>2</color> times, with each shot dealing <color=#F74848>0.65x</color> DMG. After combat, it inflicts <color=#F74848>2</color> stacks of <buf ID=1004412>[Instability II]</buf> on the target, lasting for <color=#F74848>2</color> turns.",
-      "SpecificEffects": ""
-    },
-    "201107": {
-      "name": "Breakthrough Shot",
-      "describe": "Simultaneously use 2 Shotguns to attack all targets within a <range type=1>3*2 tile area in front</range>, dealing <color=#F74848>2* 0.6x</color> AoE DMG. After combat, it inflicts <buf ID=3008061>[Guard Disabled]</buf> on hit targets, lasting for <color=#F74848>1</color> turn.",
-      "SpecificEffects": ""
-    },
-    "201106": {
-      "name": "Load Raid",
-      "describe": "When an Arm suffers overdamage, trigger <buf ID=900003>[Guts]</buf>, locking HP to <color=#F74848>1</color>. After an Active Attack, trigger <buf ID=900004>[Re-ATK]</buf>, and move <color=#F74848>1</color> tile before attacking. These effects are unlimited and last until your next turn. Can continue to act after casting this skill.",
+      "describe": "Uses a Shotgun to shoot a target <color=#F74848>2</color> times, with each shot dealing <color=#F74848>0.65x</color> DMG. Inflicts <color=#F74848>2</color> stacks of <buf ID=1004412>[Instability II]</buf> on the target hit, lasting for <color=#F74848>2</color> turns.",
       "SpecificEffects": ""
     },
     "201105": {
       "name": "Charge Up",
       "describe": "",
-      "SpecificEffects": "During an Active Attack, if the total hits are <color=#F74848>12</color> or more, restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>2</color> times per turn."
+      "SpecificEffects": "When initiating combat and landing <color=#F74848>12</color> or more Hits, restores <color=#F74848>1</color> AP after combat. Can trigger <color=#F74848>2</color> times per turn."
+    },
+    "201106": {
+      "name": "Load Raid",
+      "describe": "When an Arm suffers overdamage, triggers <buf ID=900003>[Guts]</buf> to lock HP at <color=#F74848>1</color>. After actively attacking, triggers <buf ID=900004>[Re-ATK]</buf>, allowing the unit to move <color=#F74848>1</color> tile before attacking again. These effects are unlimited and last until the next action. The unit can continue to act after executing this skill.",
+      "SpecificEffects": ""
+    },
+    "201107": {
+      "name": "Breakthrough Shot",
+      "describe": "Simultaneously uses two Shotguns to attack all targets within a <range type=1>3x2-tile area ahead</range>, dealing <color=#F74848>0.6x</color> AoE DMG <color=#F74848>2</color> times. Inflicts <buf ID=3008061>[Guard Disabled]</buf> on targets hit, lasting for <color=#F74848>1</color> turn.",
+      "SpecificEffects": ""
     },
     "201108": {
       "name": "Brutal Shooting",
-      "describe": "Simultaneously uses 2 Shotguns to attack a target, dealing <color=#F74848>2*0.75x</color> DMG. This attack ignores the target's Armor status.",
+      "describe": "Simultaneously uses two Shotguns to attack a target, dealing <color=#F74848>0.75x</color> DMG <color=#F74848>2</color> times. This attack ignores the target's Armor status.",
+      "SpecificEffects": ""
+    },
+    "201109": {
+      "name": "Invasion",
+      "describe": "Uses a Shotgun to attack a target, dealing <color=#F74848>1.2x</color> DMG. Hit Rate <color=#F74848>+10%</color>.",
       "SpecificEffects": ""
     }
   },
@@ -104,8 +109,8 @@
       "SpecificEffects": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, final DMG <color=#F74848>+30%</color>."
     },
     "201141": {
-      "name": "High Pressure Oscillation 1",
-      "SpecificEffects": "When attacking with a Shotgun, if the target is within an adjacent (<color=#F74848>1</color> tile) area, knock it back <color=#F74848>1</color> tile after combat."
+      "name": "High Pressure Vibration 1",
+      "SpecificEffects": "When initiating combat with a Shotgun, if the target is within the adjacent (<color=#F74848>1</color> tile) area, knocks it back <color=#F74848>1</color> tile after combat."
     },
     "200042": {
       "name": "AP Optimization 4",
@@ -113,19 +118,19 @@
     },
     "200043": {
       "name": "Adaptive Warfare 2",
-      "SpecificEffects": "If not moved before an Active Attack, <buf ID=900004>[Re-ATK]</buf> can be triggered, effective up to <color=#F74848>1</color> time per turn. Unable to move before attacking.\nEffects similar to <buf ID=900004>[Re-ATK]</buf> cannot be re-triggered."
+      "SpecificEffects": "Before actively attacking, if not moved, can trigger <buf ID=900004>[Re-ATK]</buf>. Can only trigger <color=#F74848>1</color> time per turn. Unable to move before attacking.\nEffects similar to <buf ID=900004>[Re-ATK]</buf> cannot be re-triggered."
     },
     "201144": {
-      "name": "High Pressure Oscillation 2",
-      "SpecificEffects": "When knocking back the target, if the path is blocked, inflict <buf ID=2011442>[Intimidation]</buf> on the target, lasting for <color=#F74848>1</color> turn."
+      "name": "High Pressure Vibration 2",
+      "SpecificEffects": "When knocking back a target, if the path is blocked, inflicts <buf ID=2011442>[Intimidation]</buf> on the target, lasting for <color=#F74848>1</color> turn."
     },
     "201145": {
       "name": "High Pressure Vibration 3",
-      "SpecificEffects": "When using a Shotgun for an Active Attack on a target within the adjacent (<color=#F74848>1</color> tile) area, increase damage to the Body part by <color=#F74848>35%</color>."
+      "SpecificEffects": "When using a Shotgun to initiate combat with a target within the adjacent (<color=#F74848>1</color> tile) area, DMG <color=#F74848>+35%</color> when hitting the Body."
     },
     "201146": {
-      "name": "High Pressure Oscillation 4",
-      "SpecificEffects": "When knocking back the target, if the path is blocked, additionally deal <buf ID=900017>[Fixed DMG]</buf> once for <color=#F74848>0.35x</color> DMG to the target."
+      "name": "High Pressure Vibration 4",
+      "SpecificEffects": "When knocking back a target, if the path is blocked, additionally deals <buf ID=900017>[Fixed DMG]</buf> once for <color=#F74848>0.35x</color> DMG to the target."
     }
   },
   "version": "1.0"

@@ -5,12 +5,12 @@
   "Profession": "Launcher",
   "Occupation": "Tactician",
   "Talent0_2Ability": {
-    "name": "不息雷火",
-    "SpecificEffects": "使用火箭攻击时，若同时打击的目标大于等于<color=#F74848>3</color>个，战后回复<color=#F74848>1</color>AP，每回合最多发动<color=#F74848>1</color>次"
+    "name": "Unceasing Thunderfire",
+    "SpecificEffects": "When attacking with a Rocket Launcher, if <color=#F74848>3</color> or more targets are hit, restores <color=#F74848>2</color> AP after combat. Can only trigger <color=#F74848>1</color> time per turn."
   },
   "Talent3_5Ability": {
-    "name": "不息雷火",
-    "SpecificEffects": "使用火箭攻击时，若同时打击的目标大于等于<color=#F74848>3</color>个，战后回复<color=#F74848>1</color>AP，每回合最多发动<color=#F74848>1</color>次；\n火箭的负重降低<color=#F74848>130</color>"
+    "name": "Unceasing Thunderfire",
+    "SpecificEffects": "When attacking with a Rocket Launcher, if <color=#F74848>3</color> or more targets are hit, restores <color=#F74848>2</color> AP after combat. Can only trigger <color=#F74848>1</color> time per turn. Rocket Launcher Weight: <color=#F74848>-130</color>."
   },
   "skills": {
     "400001": {
@@ -19,39 +19,44 @@
       "SpecificEffects": "When a Tactical Weapon runs out of ammo, trigger <buf ID=900029>[Auto Load]</buf>. This process takes <color=#F74848>3</color> turns."
     },
     "700015": {
-      "name": "Rotation",
+      "name": "Strategic Redundancy",
       "describe": "",
-      "SpecificEffects": "At the end of the action, if no damage was dealt this turn, restore <color=#F74848>1</color> AP."
+      "SpecificEffects": "At end of action, if no damage was dealt this turn, restores <color=#F74848>1</color> AP."
     },
     "400403": {
-      "name": "满盈",
-      "describe": "使火箭的弹数完全回复，并获得<buf ID=7100403>[暴击率提升Ⅱ]</buf>，持续<color=#F74848>1</color>回合，然后可使用剩余移动力继续行动",
+      "name": "Fullness",
+      "describe": "Fully reloads all Rocket Launcher Ammo and gains <buf ID=7100403>[Crit Rate UP II]</buf> for <color=#F74848>1</color> turn. Can continue action with remaining Movement.",
       "SpecificEffects": ""
     },
     "700024": {
       "name": "Graphite Warhead",
-      "describe": "使用火箭攻击所选<range type=1>3×3格</range>范围内的所有目标，对每个部位造成<color=#F74848>0.25</color>倍范围伤害，对命中的目标施加<buf ID=3006502>[短路Ⅰ]</buf>，可生效<color=#F74848>1</color>次",
+      "describe": "Uses a Rocket Launcher to attack all targets within a <range type=1>3x3-tile area</range>, dealing <color=#F74848>0.25x</color> AoE DMG. Inflicts <buf ID=3006502>[Short Circuit I]</buf> on targets hit. Can trigger only <color=#F74848>1</color> time per turn.",
       "SpecificEffects": ""
     },
     "400405": {
-      "name": "补缺",
+      "name": "Fill the Gap",
       "describe": "",
-      "SpecificEffects": "行动开始时，向未在装填中，且弹数更低的火箭装填<color=#F74848>1</color>发弹药"
+      "SpecificEffects": "At start of action, reloads <color=#F74848>1</color> Ammo shell into the non-exhausted Rocket Launcher magazine with the lowest Ammo count."
     },
     "400406": {
-      "name": "漫天",
-      "describe": "同时使用两门火箭攻击所选<range type=1>5×5格</range>范围内的所有目标，对每个部位造成<color=#F74848>2×0.175</color>倍范围伤害",
+      "name": "Everywhere",
+      "describe": "Simultaneously uses two Rocket Launchers to attack all targets within the selected <range type=1>5x5-tile area</range>, dealing <color=#F74848>0.175x</color> AoE DMG <color=#F74848>2</color> times.",
       "SpecificEffects": ""
     },
     "400407": {
-      "name": "易施",
+      "name": "Bestowal",
       "describe": "",
-      "SpecificEffects": "使用火箭发起范围攻击时，对命中目标施加随机减益效果，根据命中目标的机兵类型，优先施加<buf ID=7101103>[回避率降低Ⅱ]</buf><buf ID=7101801>[遭受伤害提升Ⅰ]</buf><buf ID=7101704>[护甲降低Ⅰ]</buf>，持续<color=#F74848>2</color>回合"
+      "SpecificEffects": "When executing an AoE attack with a Rocket Launcher, depending on the type of ST hit, inflicts <buf ID=7101103>[Dodge Rate Down II]</buf>, <buf ID=7101801>[DMG Taken UP I]</buf>, or <buf ID=7101704>[Armor Down I]</buf> after combat, lasting for <color=#F74848>2</color> turns."
     },
     "400408": {
-      "name": "炼狱",
+      "name": "Inferno",
       "describe": "",
-      "SpecificEffects": "火箭的伤害提升<color=#F74848>10%</color>，使用火箭弹仓中第<color=#F74848>1</color>发弹药发起范围攻击时，战后对打击的地格施加<terrian ID=4003081 />，持续<color=#F74848>2</color>回合"
+      "SpecificEffects": "Rocket Launcher DMG <color=#F74848>+10%</color>. When executing an AoE attack with the <color=#F74848>1st</color> round of Ammo in the rocket launcher magazine, applies <terrian ID=4003081 /> to the tiles hit after combat, lasting for <color=#F74848>2</color> turns."
+    },
+    "400409": {
+      "name": "Cross Bombing",
+      "describe": "Uses a Rocket Launcher to attack all targets within a 1-tile cross area, dealing <color=#F74848>0.25x</color> AoE DMG, and an additional <color=#F74848>15%</color> DMG to the target in the center tile.",
+      "SpecificEffects": ""
     }
   },
   "neuralPassives": {
@@ -104,8 +109,8 @@
       "SpecificEffects": "After triggering <buf ID=900004>[Re-ATK]</buf>, it no longer reduces final damage."
     },
     "400441": {
-      "name": "私人安保1",
-      "SpecificEffects": "双肩均装配火箭时，火箭伤害提升<color=#F74848>10%</color>"
+      "name": "Private Security 1",
+      "SpecificEffects": "When both shoulders are equipped with Rocket Launchers, Rocket DMG <color=#F74848>+10%</color>."
     },
     "400042": {
       "name": "AP Optimization 4",
@@ -116,16 +121,16 @@
       "SpecificEffects": "When destroying a target, additionally restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>2</color> times per turn."
     },
     "400444": {
-      "name": "私人安保2",
-      "SpecificEffects": "火箭的射程<color=#F74848>+1</color>，攻击范围不变"
+      "name": "Private Security 2",
+      "SpecificEffects": "Rocket Launcher Range <color=#F74848>+1</color>, while the attack area remains the same."
     },
     "400445": {
-      "name": "私人安保3",
-      "SpecificEffects": "施加减益效果和地形效果时，持续回合<color=#F74848>+1</color>"
+      "name": "Private Security 3",
+      "SpecificEffects": "When applying debuffs and Terrain effects, duration <color=#F74848>+1</color>."
     },
     "400446": {
-      "name": "私人安保4",
-      "SpecificEffects": "<buf ID=4004501>[不息雷火]</buf>的AP回复效果<color=#F74848>+1</color>"
+      "name": "Private Security 4",
+      "SpecificEffects": "AP Regen effect of <buf ID=4004501>[Unceasing Thunderfire]</buf> <color=#F74848>+1</color>."
     }
   },
   "version": "1.1"

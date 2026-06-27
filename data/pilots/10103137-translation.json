@@ -5,12 +5,12 @@
   "Profession": "Launcher",
   "Occupation": "Tactician",
   "Talent0_2Ability": {
-    "name": "完美主义",
-    "SpecificEffects": "可以使用<skill mainSkill=400750>[强磁力线圈]</skill>指令，然后可继续行动，每回合最多使用<color=#F74848>1</color>次"
+    "name": "Perfectionism",
+    "SpecificEffects": "Can use the <skill mainSkill=400750>[Tokamak Sphere]</skill> code. Can continue to act after executing this skill. This skill can be executed <color=#F74848>1</color> time per turn."
   },
   "Talent3_5Ability": {
-    "name": "完美主义",
-    "SpecificEffects": "可以使用<skill mainSkill=400750>[强磁力线圈]</skill>指令，然后可继续行动，每回合最多使用<color=#F74848>1</color>次；\n电磁炮的弹仓容量<color=#F74848>+2</color>"
+    "name": "Perfectionism",
+    "SpecificEffects": "Can use the <skill mainSkill=400750>[Tokamak Sphere]</skill> code. Can continue to act after executing this skill. This skill can be executed <color=#F74848>1</color> time per turn.\nRail Gun Magazine Capacity <color=#F74848>+2</color>."
   },
   "skills": {
     "400001": {
@@ -19,42 +19,55 @@
       "SpecificEffects": "When a Tactical Weapon runs out of ammo, trigger <buf ID=900029>[Auto Load]</buf>. This process takes <color=#F74848>3</color> turns."
     },
     "400702": {
-      "name": "交响打击",
+      "name": "Symphonic Ode",
       "describe": "",
-      "SpecificEffects": "主动攻击时每打击<color=#F74848>1</color>个目标，本次攻击伤害提升<color=#F74848>5%</color>，最多提升<color=#F74848>20%</color>"
+      "SpecificEffects": "When actively attacking, DMG <color=#F74848>+5%</color> for every <color=#F74848>1</color> target hit, up to <color=#F74848>20%</color>."
     },
     "400703": {
-      "name": "电磁协奏",
+      "name": "Magnetic Concerto",
       "describe": "",
-      "SpecificEffects": "<buf ID=900086>[偏移]</buf>后的攻击额外提升<color=#F74848>0.25</color>倍的伤害"
+      "SpecificEffects": "<buf ID=900086>[Redirected]</buf> attack damage multiplier <color=#F74848>+0.25</color>."
     },
     "400704": {
-      "name": "震噪",
-      "describe": "使用电磁炮攻击<range type=1>纵向5格</range>范围内所有目标，造成<color=#F74848>1</color>倍范围伤害，对命中的目标施加<buf ID=1004021>[武器阻碍]</buf>，持续<color=#F74848>1</color>回合",
+      "name": "Cacophony",
+      "describe": "Uses a Rail Gun to attack all targets in a <range type=1>1x5-tile line</range>, dealing <color=#F74848>1x</color> AoE DMG. Inflicts <buf ID=1004021>[Weapon Inhibition]</buf> on targets hit, lasting for <color=#F74848>1</color> turn.",
       "SpecificEffects": ""
     },
     "400705": {
-      "name": "幕歇",
-      "describe": "使电磁炮的弹数完全回复，并获得<buf ID=7100901>[移动力提升]</buf>，持续<color=#F74848>1</color>回合，然后可使用剩余移动力继续行动",
+      "name": "Interval",
+      "describe": "Fully reloads a Rail Gun's Ammo and gains <buf ID=7100901>[Movement UP]</buf> for <color=#F74848>1</color> turn. Can continue action with remaining Movement.",
       "SpecificEffects": ""
     },
     "400706": {
-      "name": "强音咏叹",
-      "describe": "消耗<color=#F74848>2</color>发弹药，使用电磁炮攻击<range type=1>纵向3×5格</range>范围内所有目标，造成<color=#F74848>0.85</color>倍范围伤害，命中耐久值最低部位的权重提升<color=#F74848>50</color>",
+      "name": "Fortissimo Aria",
+      "describe": "Consumes <color=#F74848>2</color> rounds of Ammo. Uses a Rail Gun to attack all targets in a <range type=1>3x5-tile line</range>, dealing <color=#F74848>0.85x</color> AoE DMG. Increases Hit Weighting of the part with the lowest HP by <color=#F74848>50</color>.",
       "SpecificEffects": ""
     },
     "400707": {
-      "name": "连奏",
+      "name": "Legato",
       "describe": "",
-      "SpecificEffects": "发动<buf ID=900004>[再攻击]</buf>时，使刚刚使用的武器技能或指令伤害提升<color=#F74848>30%</color>"
+      "SpecificEffects": "When triggering <buf ID=900004>[Re-ATK]</buf>, increases the DMG of the last weapon or Code skill used by <color=#F74848>30%</color>."
     },
     "400708": {
-      "name": "雷火协鸣",
-      "describe": "使用喷火器攻击<range type=1>纵向5格</range>范围内所有目标，造成<color=#F74848>0.6</color>倍范围伤害，然后使用电磁炮攻击相同方向，造成<color=#F74848>0.7</color>倍范围伤害，对命中的目标施加<color=#F74848>2</color>个随机减益效果，持续<color=#F74848>2</color>回合",
+      "name": "Symphony of Tokamak",
+      "describe": "Uses a Flamethrower to attack all targets in a <range type=1>1x5-tile line</range>, dealing <color=#F74848>0.6x</color> AoE DMG. After this, uses a Rail Gun to attack in the same direction, dealing <color=#F74848>0.7x</color> AoE DMG. Inflicts <color=#F74848>2</color> random debuffs on targets hit, lasting for <color=#F74848>2</color> turns.",
+      "SpecificEffects": ""
+    },
+    "400709": {
+      "name": "Thermal Streaming",
+      "describe": "Uses a Flamethrower to attack all targets in a <range type=1>1x4-tile line</range>, dealing <color=#F74848>0.6x</color> AoE DMG. Inflicts <buf ID=1004022>[Repair Inhibition]</buf> on targets hit, lasting for <color=#F74848>1</color> turn.",
       "SpecificEffects": ""
     }
   },
   "neuralPassives": {
+    "100042": {
+      "name": "AP Optimization 4",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
+    },
+    "100043": {
+      "name": "Power Innovation 3",
+      "SpecificEffects": "When destroying a target, additionally restore <color=#F74848>1</color> AP after combat. Can trigger up to <color=#F74848>2</color> times per turn."
+    },
     "400011": {
       "name": "Strategic Bombing 2",
       "SpecificEffects": "Tactical Weapon Magazine Capacity <color=#F74848>+1</color>."
@@ -73,7 +86,7 @@
     },
     "400022": {
       "name": "Power Innovation 2",
-      "SpecificEffects": "AP Regen <color=#F74848>+1</color>."
+      "SpecificEffects": "Breaking a part: restore <color=#F74848>1</color> AP after combat, up to <color=#F74848>1</color> time per turn."
     },
     "400023": {
       "name": "AP Optimization 2",
@@ -81,7 +94,7 @@
     },
     "400031": {
       "name": "Indiscriminate 1",
-      "SpecificEffects": "After the first attack with a Tactical Weapon each turn, <buf ID=900004>[Re-ATK]</buf> can be triggered, with Final DMG <color=#F74848>-30%</color>, effective up to <color=#F74848>1</color> time per turn. Unable to move before attacking."
+      "SpecificEffects": "After the first attack with a Tactical Weapon each turn, <buf ID=900004>[Re-ATK]</buf> can be triggered, with Final DMG <color=#F74848>-30%</color>. Unable to move before attacking. Effective up to <color=#F74848>1</color> time per turn."
     },
     "400032": {
       "name": "AP Optimization 3",
@@ -104,28 +117,20 @@
       "SpecificEffects": "After triggering <buf ID=900004>[Re-ATK]</buf>, it no longer reduces final damage."
     },
     "400741": {
-      "name": "贵族遗风1",
-      "SpecificEffects": "使用喷火器主动攻击后，若命中<color=#F74848>2</color>个及以上目标时，可发动<buf ID=900004>[再攻击]</buf>，攻击前可以移动<color=#F74848>2</color>格，每回合最多发动<color=#F74848>1</color>次；\n无法与同类<buf ID=900004>[再攻击]</buf>效果重复触发"
-    },
-    "100042": {
-      "name": "AP Optimization 4",
-      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
-    },
-    "100043": {
-      "name": "Power Innovation 3",
-      "SpecificEffects": "When destroying a target, additionally restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>2</color> times per turn."
+      "name": "Aristocratic Upbringing 1",
+      "SpecificEffects": "After actively attacking with a Flamethrower, if <color=#F74848>2</color> or more targets are hit, <buf ID=900004>[Re-ATK]</buf> can be triggered. Can move <color=#F74848>2</color> tiles before attacking. Can trigger up to <color=#F74848>1</color> time per turn.\nCannot stack with the same type of <buf ID=900004>[Re-ATK]</buf> effect."
     },
     "400744": {
-      "name": "贵族遗风2",
-      "SpecificEffects": "部署<buf ID=900085>[强磁力线圈]</buf>时可以斜向设置朝向"
+      "name": "Aristocratic Upbringing 2",
+      "SpecificEffects": "Deployed <buf ID=900085>[Tokamak Spheres]</buf> can be oriented diagonally."
     },
     "400745": {
-      "name": "贵族遗风3",
-      "SpecificEffects": "对<buf ID=900085>[强磁力线圈]</buf>偏移效果命中的目标施加<color=#F74848>1</color>个随机减益效果，持续<color=#F74848>2</color>回合"
+      "name": "Aristocratic Upbringing 3",
+      "SpecificEffects": "Inflicts <color=#F74848>1</color> random debuff on targets hit by the <buf ID=900085>[Tokamak Sphere]</buf>'s Redirection effect, lasting <color=#F74848>2</color> turns."
     },
     "400746": {
-      "name": "贵族遗风4",
-      "SpecificEffects": "范围技能AP消耗<color=#F74848>-1</color>，最低<color=#F74848>1</color>点"
+      "name": "Aristocratic Upbringing 4",
+      "SpecificEffects": "AoE Skill AP Cost <color=#F74848>-1</color>, minimum <color=#F74848>1</color> AP."
     }
   },
   "version": "1.5"
