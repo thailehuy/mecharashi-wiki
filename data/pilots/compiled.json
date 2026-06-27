@@ -15477,7 +15477,7 @@
             "ID": "401004",
             "remarks": "\u7f57\u65af\u739b\u4e3d-\u4eff\u751f\u7535\u8111",
             "name": "Tactical Command",
-            "describe": "Choose <color=#F74848>1</color> skill to switch to from <skill activeSkill=4010041>[Strike Tactic]</skill>, <skill activeSkill=4010042>[Maneuver Tactic]</skill> or <skill activeSkill=4010043>[All-out Tactic]</skill>.",
+            "describe": "Choose <color=#F74848>1</color> skill to switch to from <skill skill=4010041>[Strike Tactic]</skill>, <skill skill=4010042>[Maneuver Tactic]</skill> or <skill skill=4010043>[All-out Tactic]</skill>.",
             "type": "Order",
             "CD": "2",
             "Ap": "0",
@@ -15863,7 +15863,7 @@
           "weight": 1735
         }
       ],
-      "version": "2.2"
+      "version": "2.1"
     },
     {
       "ID": "10103120",

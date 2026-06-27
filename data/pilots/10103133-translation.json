@@ -35,7 +35,7 @@
     },
     "401004": {
       "name": "Tactical Command",
-      "describe": "Choose <color=#F74848>1</color> skill to switch to from <skill activeSkill=4010041>[Strike Tactic]</skill>, <skill activeSkill=4010042>[Maneuver Tactic]</skill> or <skill activeSkill=4010043>[All-out Tactic]</skill>.",
+      "describe": "Choose <color=#F74848>1</color> skill to switch to from <skill skill=4010041>[Strike Tactic]</skill>, <skill skill=4010042>[Maneuver Tactic]</skill> or <skill skill=4010043>[All-out Tactic]</skill>.",
       "SpecificEffects": ""
     },
     "401005": {
@@ -133,5 +133,5 @@
       "SpecificEffects": "<buf ID=4010500>[Intelligence]</buf> maximum stacks increase to <color=#F74848>35</color>, and <buf ID=4010500>[Intelligence]</buf> effect is increased by <color=#F74848>75%</color>."
     }
   },
-  "version": "2.2"
+  "version": "2.1"
 }
