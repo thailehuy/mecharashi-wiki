@@ -52,6 +52,11 @@
       "name": "幽灵巡诊",
       "describe": "使用打桩机或拳套攻击指定方向，对目标造成<color=#F74848>1.35</color>倍范围伤害，必定攻击耐久值最高的部位，若该方向存在相邻敌机，可继续攻击相邻敌机，最多攻击<color=#F74848>4</color>名敌机，之后停留在最远目标的另一侧，本次攻击触发的天赋<buf ID=900017>[固定伤害]</buf>效果提升<color=#F74848>50%</color>",
       "SpecificEffects": ""
+    },
+    "500909": {
+      "name": "Regulated Repair",
+      "describe": "Restores HP equal to <color=#F74848>2.0</color>x Manipulator Repair AMT to all parts of a single ST. Can repair <color=#F74848>1</color> destroyed part.",
+      "SpecificEffects": ""
     }
   },
   "neuralPassives": {

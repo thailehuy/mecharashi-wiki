@@ -52,6 +52,11 @@
       "name": "战术重启",
       "describe": "恢复单台机兵所有部位的耐久值，修理量为修理背包的<color=#F74848>2.0</color>倍，可修复<color=#F74848>2</color>个损毁部位，并使已经行动结束的友军再次行动",
       "SpecificEffects": ""
+    },
+    "500609": {
+      "name": "Regulated Repair",
+      "describe": "Restores HP equal to <color=#F74848>2.0</color>x Manipulator Repair AMT to all parts of a single ST. Can repair <color=#F74848>1</color> destroyed part.",
+      "SpecificEffects": ""
     }
   },
   "neuralPassives": {

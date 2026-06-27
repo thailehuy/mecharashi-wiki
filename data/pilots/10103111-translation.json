@@ -52,6 +52,11 @@
       "name": "Full Line Maintenance",
       "describe": "Restore the HP of all parts of an ST. The repair amount is <color=#F74848>1.75x</color> the Manipulator's Repair AMT. This can repair <color=#F74848>1</color> damaged part. Additionally, restore the same repair amount to <color=#F74848>2</color> allies with the lowest HP, which can also repair <color=#F74848>1</color> damaged part and trigger the <buf ID=900059>[Auto Mod]</buf> effect.",
       "SpecificEffects": ""
+    },
+    "500409": {
+      "name": "Regulated Repair",
+      "describe": "Restores HP equal to <color=#F74848>2.0</color>x Manipulator Repair AMT to all parts of a single ST. Can repair <color=#F74848>1</color> destroyed part.",
+      "SpecificEffects": ""
     }
   },
   "neuralPassives": {

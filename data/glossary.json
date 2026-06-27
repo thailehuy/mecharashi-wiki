@@ -10,7 +10,7 @@
     },
     "900003": {
       "name": "Guts",
-      "effect": "When a part would receive damage that reduces its HP to 0, lock it at 1 HP instead."
+      "effect": "When a part suffers overdamage, the part is not destroyed and instead locks at 1 HP. Lasts until the end of the current attack."
     },
     "900004": {
       "name": "Re-ATK",
@@ -18,7 +18,7 @@
     },
     "900005": {
       "name": "Re-Act",
-      "effect": "After the current action ends, take another action using the remaining or full movement distance."
+      "effect": "Can launch active attacks again. Before attacking, can move with full movement distance."
     },
     "900006": {
       "name": "Reaction Attack",
@@ -62,7 +62,7 @@
     },
     "900018": {
       "name": "Passive Repair",
-      "effect": "Automatically repair a part's HP when specific conditions are met or at the end of an action."
+      "effect": "No manual casting required. Repairs an ally once."
     },
     "900019": {
       "name": "Link Repair",
@@ -98,7 +98,7 @@
     },
     "900027": {
       "name": "Target Shift",
-      "effect": "Redirect incoming attacks to a different target or location."
+      "effect": "Ensures the enemy's attack hits the designated part."
     },
     "900028": {
       "name": "Add Strike",
@@ -189,12 +189,12 @@
       "effect": "When an ally performs a counter-attack, cooperate by launching an additional counter on the same attacker."
     },
     "900101": {
-      "name": "Execute",
-      "effect": "A finishing blow that directly destroys a critically damaged part."
+      "name": "Terminator",
+      "effect": "After actively attacking with an Alter-Blade, if the HP of the part hit is below a certain percentage, triggers the <buf ID=900109>[Execution]</buf> effect, directly destroying that part after combat."
     },
     "900109": {
-      "name": "Execute",
-      "effect": "A finishing blow that directly destroys a critically damaged part."
+      "name": "Execution",
+      "effect": "When specific conditions are met, the part is directly destroyed after combat. This effect ignores <buf ID=900003>[Guts]</buf>."
     },
     "900111": {
       "name": "Directional Rack",
@@ -266,7 +266,7 @@
     },
     "1015414": {
       "name": "Critical Sense",
-      "effect": "Heightened awareness that increases critical hit rate or damage."
+      "effect": "When attacked by Melee and Ranged Weapons, if equipped with two Alter-Blades and both Arms are undestroyed, interrupts the attack and triggers [Incisive Retaliation], dealing <color=#F74848>1.2</color>x DMG. After triggering, <color=#F74848>1</color> stack is removed. [Incisive Retaliation] ignores the Large Shield <buf ID=900027>[Target Shift]</buf> effect.\nFor each stack of Critical Sense possessed, DMG <color=#F74848>+5%</color> and Dodge Rate <color=#F74848>+5%</color>."
     },
     "1013503": {
       "name": "Fighting Spirit",
@@ -338,7 +338,7 @@
     },
     "3004502": {
       "name": "Stealth I",
-      "effect": "Reduces enemy targeting priority by 5%; enemies are less likely to select this unit as their primary target."
+      "effect": "Cannot be targeted by active attacks. Forcibly removed when actively attacking, being attacked and taking damage, or if enemies exist within 2 adjacent tiles."
     },
     "3005412": {
       "name": "Global Repair Effect Down",
@@ -647,6 +647,46 @@
     "2016410": {
       "name": "Hawk Rush 1",
       "effect": "When actively attacking with a single-handed Assault Weapon, after combat gains <color=#F74848>1</color> stack of <buf ID=2016503>[Dual Gun Efficiency]</buf>. Stacks up to <color=#F74848>3</color> times. Can only trigger <color=#F74848>1</color> time per turn."
+    },
+    "900100": {
+      "name": "Critical Sense",
+      "effect": "When attacked by Melee and Ranged Weapons, if equipped with two Alter-Blades and both Arms are undestroyed, interrupts the attack and triggers [Incisive Retaliation], dealing <color=#F74848>1.2</color>x DMG. After triggering, <color=#F74848>1</color> stack is removed. [Incisive Retaliation] ignores the Large Shield <buf ID=900027>[Target Shift]</buf> effect.\nFor each stack of Critical Sense possessed, DMG <color=#F74848>+5%</color> and Dodge Rate <color=#F74848>+5%</color>."
+    },
+    "1015052": {
+      "name": "Critical State",
+      "effect": "Final DMG Dealt <color=#F74848>+20%</color>. Crit Rate and Crit DMG <color=#F74848>+20%</color>. After actively attacking, triggers <buf ID=900004>[Re-ATK]</buf>. Can move <color=#F74848>2</color> tiles before attacking. This <buf ID=900004>[Re-ATK]</buf> effect has no limit on the number of times it can trigger and lasts until the end of the action."
+    },
+    "1015311": {
+      "name": "Terminator 1",
+      "effect": "After actively attacking with an Alter-Blade, if the part hit is below <color=#F74848>15%</color> HP, triggers the <buf ID=900109>[Execution]</buf> effect, directly destroying that part after combat."
+    },
+    "900104": {
+      "name": "Hologram I",
+      "effect": "Replicant. Copies the unit's part status and HP upon creation. It cannot attack, move, or be guarded, and is removed at the start of [Your Turn]."
+    },
+    "5007516": {
+      "name": "Weapon Inhibition",
+      "effect": "Cannot execute weapon skills or attack codes except for normal attacks."
+    },
+    "5007022": {
+      "name": "Crit Reduction",
+      "effect": "When under attack, Crit RES +10%, and Crit DMG Taken -10%."
+    },
+    "5007072": {
+      "name": "Primed",
+      "effect": "After actively attacking, inflicts 1 random debuff on the target hit after combat, lasting for 2 turns. Removed after triggering."
+    },
+    "5007083": {
+      "name": "Full Rewind",
+      "effect": "Records the unit's part status, HP, AP, and Tactical Weapon Capacity when applied. At the start of the next action, returns to the recorded status."
+    },
+    "900106": {
+      "name": "Dummy Trick",
+      "effect": "When this unit is attacked in combat and its Body would be destroyed, triggers Guts until end of combat. After combat, the unit is beamed to Anderson's side, gaining Stealth I for 2 turns, and leaving 1 Hologram I in its place. Triggers once per battle."
+    },
+    "900108": {
+      "name": "Hologram",
+      "effect": "Replicant. Copies the unit's part status and HP upon creation. It cannot attack, move, or be guarded, and is removed at the start of [Your Turn]."
     }
   },
   "skill": {
@@ -679,6 +719,12 @@
       "Ap": "4",
       "CD": "2",
       "effect": "Grants all allies [All-out Attack], increasing their DMG dealt by <color=#F74848>25%</color>, lasting till the end of action. Gains <color=#F74848>4</color> stacks of [Intelligence]"
+    },
+    "500746": {
+      "name": "Position Recall",
+      "Ap": "0",
+      "CD": "0",
+      "effect": "Removes <buf ID=900108>[Hologram]</buf> and teleports the original unit to the <buf ID=900108>[Hologram]</buf>'s location."
     }
   }
 }

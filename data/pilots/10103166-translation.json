@@ -52,6 +52,11 @@
       "name": "火树银花",
       "describe": "使用喷火器攻击<range type=1>面前扇形</range>范围内所有目标，造成<color=#F74848>0.8</color>倍范围伤害；可以发动<buf ID=5010468>[筹谋倾注]</buf>，对攻击范围内所有地格施加<terrian ID=4003081 />，持续<color=#F74848>2</color>回合",
       "SpecificEffects": ""
+    },
+    "501009": {
+      "name": "Regulated Repair",
+      "describe": "Restores HP equal to <color=#F74848>2.0</color>x Manipulator Repair AMT to all parts of a single ST. Can repair <color=#F74848>1</color> destroyed part.",
+      "SpecificEffects": ""
     }
   },
   "neuralPassives": {

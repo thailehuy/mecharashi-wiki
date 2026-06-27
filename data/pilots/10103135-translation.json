@@ -1,16 +1,16 @@
 {
-  "PilotName": "安德森",
-  "RealName": "史密斯·安德森",
+  "PilotName": "Anderson",
+  "RealName": "Smiths Anderson",
   "Gender": "Male",
   "Profession": "Mechanic",
   "Occupation": "Machinist",
   "Talent0_2Ability": {
-    "name": "假作真",
-    "SpecificEffects": "队伍里其他友方机兵遭受攻击对战时，若躯干遭受过量伤害，立刻发动<buf ID=900003>[不屈]</buf>，持续至对战结束，战后送至安德森身边，对其施加<buf ID=3004502>[隐形Ⅰ]</buf>，持续<color=#F74848>2</color>回合，并在原位置留下<color=#F74848>1</color>个<buf ID=900104>[幻象Ⅰ]</buf>，该效果每次出击仅可发动<color=#F74848>1</color>次"
+    "name": "Dummy Trick",
+    "SpecificEffects": "When other allied STs in the team are attacked in combat, if their Body would be destroyed, immediately triggers <buf ID=900003>[Guts]</buf> until the end of the combat. After combat, they are beamed to Anderson's side, gaining <buf ID=3004502>[Stealth I]</buf> for <color=#F74848>2</color> turns, and leaving <color=#F74848>1</color> <buf ID=900104>[Hologram I]</buf> in their place. This effect can only be triggered once per battle."
   },
   "Talent3_5Ability": {
-    "name": "假作真",
-    "SpecificEffects": "队伍里其他友方机兵遭受攻击对战时，若躯干遭受过量伤害，立刻发动<buf ID=900003>[不屈]</buf>，持续至对战结束，战后送至安德森身边，对其施加<buf ID=3004502>[隐形Ⅰ]</buf>，持续<color=#F74848>2</color>回合，并在原位置留下<color=#F74848>1</color>个<buf ID=900104>[幻象Ⅰ]</buf>，该效果每次出击仅可发动<color=#F74848>1</color>次；\n<buf ID=900104>[幻象Ⅰ]</buf>被击毁时，使攻击者无法发动任何<buf ID=900004>[再攻击]</buf>效果，并对其施加<buf ID=5007516>[武器阻碍]</buf>，持续<color=#F74848>2</color>回合，对部分单位无效"
+    "name": "Dummy Trick",
+    "SpecificEffects": "When other allied STs in the team are attacked in combat, if their Body would be destroyed, immediately triggers <buf ID=900003>[Guts]</buf> until the end of the combat. After combat, they are beamed to Anderson's side, gaining <buf ID=3004502>[Stealth I]</buf> for <color=#F74848>2</color> turns, and leaving <color=#F74848>1</color> <buf ID=900104>[Hologram I]</buf> in their place. This effect can only be triggered once per battle.\nWhen <buf ID=900104>[Hologram I]</buf> is destroyed, the attacker is unable to activate any <buf ID=900004>[Re-ATK]</buf> effects and is inflicted with <buf ID=5007516>[Weapon Inhibition]</buf> for <color=#F74848>2</color> turns. Does not affect certain units."
   },
   "skills": {
     "500001": {
@@ -19,38 +19,43 @@
       "SpecificEffects": "In cooperation with allies, launch a <buf ID=900002>[Link Attack]</buf> against the target, dealing <color=#F74848>0.2x</color> DMG, effective up to <color=#F74848>1</color> time per turn."
     },
     "500702": {
-      "name": "作嫁",
+      "name": "Aid",
       "describe": "",
-      "SpecificEffects": "主动修理后，对目标施加<buf ID=5007022>[暴击减效]</buf>，持续<color=#F74848>1</color>回合"
+      "SpecificEffects": "After performing active repairs, applies <buf ID=5007022>[Crit Reduction]</buf> to the target for <color=#F74848>1</color> turn."
     },
     "700009": {
       "name": "Wide-Range Repair",
-      "describe": "恢复所选<range type=1>2格菱形</range>范围内友军所有部位的耐久值，修理量为修理背包的<color=#F74848>1.0</color>倍，可修复<color=#F74848>1</color>个损毁部位",
+      "describe": "Restores the HP of all allies within the selected <range type=1>2-tile diamond</range> area. Repair amount is equal to <color=#F74848>1.0</color>x Manipulator Repair AMT. Can repair <color=#F74848>1</color> destroyed part.",
       "SpecificEffects": ""
     },
     "500704": {
-      "name": "暗箭",
+      "name": "Dark Arrow",
       "describe": "",
-      "SpecificEffects": "发动<buf ID=900002>[协力攻击]</buf>后，对目标施加<color=#F74848>1</color>个随机减益效果，持续<color=#F74848>2</color>回合"
+      "SpecificEffects": "After initiating a <buf ID=900002>[Link Attack]</buf>, inflicts <color=#F74848>1</color> random debuff on the target, lasting for <color=#F74848>2</color> turns."
     },
     "500705": {
-      "name": "身后有余",
+      "name": "Surplus Strength",
       "describe": "",
-      "SpecificEffects": "主动修理时，若同时修理<color=#F74848>3</color>个及以上目标，使自身回复<color=#F74848>1</color>AP，每回合最多发动<color=#F74848>1</color>次"
+      "SpecificEffects": "When performing active repairs, if repairing <color=#F74848>3</color> or more targets simultaneously, restores <color=#F74848>1</color> AP. Can only trigger <color=#F74848>1</color> time per turn."
     },
     "500706": {
-      "name": "荡秽",
-      "describe": "恢复所选<range type=1>5×5</range>范围内友军所有部位的耐久值，修理量为修理背包的<color=#F74848>1.3</color>倍，可修复<color=#F74848>1</color>个损毁部位，并清除范围内所有的敌方地形效果",
+      "name": "Purification",
+      "describe": "Restores HP equal to <color=#F74848>1.3</color>x Manipulator Repair AMT to all parts of allies within the selected <range type=1>5×5</range> area. Can repair <color=#F74848>1</color> destroyed part and removes all enemy terrain effects within the area.",
       "SpecificEffects": ""
     },
     "500707": {
-      "name": "唆使",
+      "name": "Instigate",
       "describe": "",
-      "SpecificEffects": "主动修理后，对目标施加<buf ID=5007072>[伺机待发]</buf>，持续<color=#F74848>1</color>回合"
+      "SpecificEffects": "After performing active repairs, applies <buf ID=5007072>[Primed]</buf> to the target for <color=#F74848>1</color> turn."
     },
     "500708": {
-      "name": "无中生有",
-      "describe": "恢复单台机兵所有部位的耐久值，修理量为修理背包的<color=#F74848>1.6</color>倍，可修复<color=#F74848>2</color>个损毁部位，修理后为其施加<buf ID=5007083>[全效回溯]</buf>",
+      "name": "Primogenesis",
+      "describe": "Restores HP equal to <color=#F74848>1.6</color>x Manipulator Repair AMT to all parts of a single ST. Can repair <color=#F74848>2</color> destroyed parts. After repair, applies <buf ID=5007083>[Full Rewind]</buf>.",
+      "SpecificEffects": ""
+    },
+    "500709": {
+      "name": "Regulated Repair",
+      "describe": "Restores HP equal to <color=#F74848>2.0</color>x Manipulator Repair AMT to all parts of a single ST. Can repair <color=#F74848>1</color> destroyed part.",
       "SpecificEffects": ""
     }
   },
@@ -80,8 +85,8 @@
       "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
     },
     "500031": {
-      "name": "Emergency Repair 1",
-      "SpecificEffects": "At the end of the action, randomly select a single adjacent (<color=#F74848>1</color> tile) ally to perform <buf ID=900018>[Passive Repair]</buf>. The repair amount is <color=#F74848>0.6x</color> the Manipulator's Repair AMT and cannot repair damaged parts."
+      "name": "Salvage Repair 1",
+      "SpecificEffects": "At the end of the action, randomly select a single adjacent (<color=#F74848>1</color> tile) ally to perform <buf ID=900018>[Passive Repair]</buf>. The repair amount is <color=#F74848>0.6</color>x the Manipulator's Repair AMT and cannot repair destroyed parts."
     },
     "500032": {
       "name": "AP Optimization 3",
@@ -92,20 +97,20 @@
       "SpecificEffects": "After performing active repairs, an additional <color=#F74848>2</color> tiles can be moved."
     },
     "500034": {
-      "name": "Emergency Repair 2",
-      "SpecificEffects": "<buf ID=900018>[Passive Repair]</buf> selects targets within the adjacent (<color=#F74848>2</color> tiles) area."
+      "name": "Salvage Repair 2",
+      "SpecificEffects": "Salvage Repair 1's selectable range is extended to <color=#F74848>2</color> adjacent tiles."
     },
     "500035": {
-      "name": "Emergency Repair 3",
-      "SpecificEffects": "<buf ID=900018>[Passive Repair]</buf>'s Repair AMT is now <color=#F74848>1x</color> that of the Manipulator."
+      "name": "Salvage Repair 3",
+      "SpecificEffects": "Salvage Repair 1's Repair AMT is now <color=#F74848>1</color>x that of the Manipulator."
     },
     "500036": {
-      "name": "Emergency Repair 4",
-      "SpecificEffects": "The number of targets that <buf ID=900018>[Passive Repair]</buf> can repair increases by <color=#F74848>1</color>."
+      "name": "Salvage Repair 4",
+      "SpecificEffects": "Salvage Repair 1's repair target count <color=#F74848>+1</color>."
     },
     "500741": {
-      "name": "真亦假1",
-      "SpecificEffects": "<buf ID=900106>[假作真]</buf>在传送后立即对目标进行修理，恢复所有部位的耐久值，修理量为修理背包的<color=#F74848>2</color>倍，可修复<color=#F74848>1</color>个损毁部位"
+      "name": "Truth in Lies 1",
+      "SpecificEffects": "<buf ID=900106>[Dummy Trick]</buf> immediately repairs the target after teleporting, restoring HP to all parts equal to <color=#F74848>2</color>x Manipulator Repair AMT. Can repair <color=#F74848>1</color> destroyed part."
     },
     "500042": {
       "name": "AP Optimization 4",
@@ -116,17 +121,17 @@
       "SpecificEffects": "Each turn, the AP Cost of the 1st repair skill decreases by <color=#F74848>1</color>, with a minimum cost of <color=#F74848>1</color> AP."
     },
     "500744": {
-      "name": "真亦假2",
-      "SpecificEffects": "<buf ID=900106>[假作真]</buf>间隔<color=#F74848>3</color>回合可以再次发动"
+      "name": "Truth in Lies 2",
+      "SpecificEffects": "<buf ID=900106>[Dummy Trick]</buf> can trigger again after an interval of <color=#F74848>3</color> turns."
     },
     "500745": {
-      "name": "真亦假3",
-      "SpecificEffects": "发动<buf ID=900106>[假作真]</buf>时，驱散目标身上<color=#F74848>2</color>个减益效果"
+      "name": "Truth in Lies 3",
+      "SpecificEffects": "When <buf ID=900106>[Dummy Trick]</buf> triggers, dispels <color=#F74848>2</color> debuffs from the target."
     },
     "500746": {
-      "name": "真亦假4",
-      "SpecificEffects": "<buf ID=900108>[幻象]</buf>持续时间延长至<color=#F74848>1</color>回合，并获得指令<skill mainSkill=500746>[归位]</skill>"
+      "name": "Truth in Lies 4",
+      "SpecificEffects": "<buf ID=900108>[Hologram]</buf>'s duration is extended to <color=#F74848>1</color> turn, and gains the <skill mainSkill=500746>[Position Recall]</skill> code."
     }
   },
-  "version": "1.0"
+  "version": "1.8"
 }

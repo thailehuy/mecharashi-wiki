@@ -52,6 +52,11 @@
       "name": "最优重构",
       "describe": "恢复单台机兵所有部位的耐久值，修理量为修理背包的<color=#F74848>2.6</color>倍，可修复所有损毁部位，刷新所有增益效果剩余回合数，并使<color=#F74848>1</color>个冷却中的指令冷却回合数<color=#F74848>-1</color>回合",
       "SpecificEffects": ""
+    },
+    "500809": {
+      "name": "Regulated Repair",
+      "describe": "Restores HP equal to <color=#F74848>2.0</color>x Manipulator Repair AMT to all parts of a single ST. Can repair <color=#F74848>1</color> destroyed part.",
+      "SpecificEffects": ""
     }
   },
   "neuralPassives": {

@@ -5,12 +5,12 @@
   "Profession": "Striker",
   "Occupation": "Fighter",
   "Talent0_2Ability": {
-    "name": "∑-04",
-    "SpecificEffects": "When using an Alter-Blade to actively attack and destroy a target, gains <color=#F74848>1</color> stack or <buf ID=1015414>[Critical Sense]<buf> after combat, stacking up to <color=#F74848>3</color> times. Removed at the start of next action"
+    "name": "Σ-04",
+    "SpecificEffects": "When using an Alter-Blade to actively attack and destroy a target, gains <color=#F74848>1</color> stack of <buf ID=1015414>[Critical Sense]</buf> after combat, stacking up to <color=#F74848>3</color> times. Removed at the start of the next action."
   },
   "Talent3_5Ability": {
-    "name": "∑-04",
-    "SpecificEffects": "When using an Alter-Blade to actively attack and destroy a target, gains <color=#F74848>1</color> stack or <buf ID=1015414>[Critical Sense]<buf> after combat, stacking up to <color=#F74848>3</color> times. Removed at the start of next action. When deployed, gains <color=#F74848>1</color> stack or <buf ID=1015414>[Critical Sense]<buf>. When an arm would be destroyed, trigger <buf ID=900003>[Guts]</buf> to lock its HP at <color=#F74848>1</color>. Can trigger again after <color=#F74848>3</color> turns."
+    "name": "Σ-04",
+    "SpecificEffects": "When using an Alter-Blade to actively attack and destroy a target, gains <color=#F74848>1</color> stack of <buf ID=1015414>[Critical Sense]</buf> after combat, stacking up to <color=#F74848>3</color> times. Removed at the start of the next action.\nWhen deployed, gains <color=#F74848>1</color> stack of <buf ID=1015414>[Critical Sense]</buf>. When an Arm would be destroyed, triggers <buf ID=900003>[Guts]</buf> to lock its HP at <color=#F74848>1</color>. Can trigger again after <color=#F74848>3</color> turns."
   },
   "skills": {
     "100001": {
@@ -18,39 +18,44 @@
       "describe": "",
       "SpecificEffects": "After breaking a part, <buf ID=900004>[Re-ATK]</buf> can be triggered. Unable to move before the attack, and this can be effective up to <color=#F74848>2</color> times per turn."
     },
+    "101509": {
+      "name": "Twin Wing Slash",
+      "describe": "Attacks a target with two Alter-Blades, dealing <color=#F74848>0.85</color>x DMG <color=#F74848>2</color> times.",
+      "SpecificEffects": ""
+    },
     "700034": {
-      "name": "Impending Victory",
+      "name": "Within Our Grasp",
       "describe": "",
-      "SpecificEffects": "During an Active Attack in combat, if the HP% is higher than the target's, DMG <color=#F74848>+15%</color>."
+      "SpecificEffects": "When initiating combat, if HP percentage is greater than or equal to the target's, DMG <color=#F74848>+15%</color>."
     },
     "101503": {
-      "name": "恣刃",
+      "name": "Indulgent Edge",
       "describe": "",
-      "SpecificEffects": "遭受导弹攻击时，若装备两把刀剑且双手完好，消耗<color=#F74848>1</color>层<buf ID=900100>[看破]</buf>，免疫前<color=#F74848>2</color>发命中的导弹伤害"
+      "SpecificEffects": "When subjected to a missile attack, if equipped with two Alter-Blades and both Arms are undestroyed, consumes <color=#F74848>1</color> stack of <buf ID=900100>[Critical Sense]</buf> to become immune to DMG from the first <color=#F74848>2</color> Missile Launcher hits."
     },
     "101504": {
-      "name": "绝掠",
-      "describe": "使用刀剑攻击单个目标，造成<color=#F74848>1.2</color>倍伤害，必定攻击耐久值最高的部位",
+      "name": "Ruthless Strike",
+      "describe": "Uses an Alter-Blade to attack a target, dealing <color=#F74848>1.2</color>x DMG. This attack targets the part with the highest HP.",
       "SpecificEffects": ""
     },
     "101505": {
-      "name": "幻痛",
-      "describe": "装备两把刀剑才可使用；\n立即获得<color=#F74848>2</color>AP和<buf ID=1015052>[临界超适体]</buf>，持续至行动结束，然后可以使用完整移动力继续行动",
+      "name": "Phantom Pain",
+      "describe": "Requires two Alter-Blades to be equipped. Immediately gains <color=#F74848>2</color> AP and <buf ID=1015052>[Critical State]</buf>, lasting until the end of the action. Can continue action with full Movement.",
       "SpecificEffects": ""
     },
     "101506": {
-      "name": "连锋击",
-      "describe": "使用两把刀剑攻击指定方向，对目标造成<color=#F74848>1.2</color>倍伤害，优先攻击耐久值不满的部位，若该方向存在相邻敌机，可继续攻击相邻敌机，最多攻击<color=#F74848>3</color>名敌机，之后停留在最远目标的另一侧；\n若命中<color=#F74848>2</color>名及以上敌机时，战后可发动<buf ID=900005>[再行动]</buf>，使用完整移动力移动",
+      "name": "Rotating Slash",
+      "describe": "Uses two Alter-Blades to attack in a designated direction, dealing <color=#F74848>1.2</color>x DMG to the target. Prioritizes attacking parts with less than full HP. If there are adjacent enemies in that direction, can continue to attack adjacent units (attacking up to <color=#F74848>3</color> enemy units), then stops on the opposite side of the farthest target. If <color=#F74848>2</color> or more enemy units are hit, can trigger <buf ID=900005>[Re-Act]</buf> after combat, and act again with full Movement.",
       "SpecificEffects": ""
     },
     "101507": {
-      "name": "轻慢",
+      "name": "Duplicity",
       "describe": "",
-      "SpecificEffects": "发动<buf ID=900109>[处决]</buf>或<buf ID=900100>[看破]</buf>破坏部位时，恢复所有完好部位<color=#F74848>15%</color>耐久值，每回合最多发动<color=#F74848>1</color>次"
+      "SpecificEffects": "When triggering <buf ID=900109>[Execution]</buf> or <buf ID=900100>[Critical Sense]</buf> to destroy a part, restores <color=#F74848>15%</color> HP to all undestroyed parts. Can only trigger <color=#F74848>1</color> time per turn."
     },
     "101508": {
-      "name": "刃流闪",
-      "describe": "使用两把刀剑连续攻击单个目标，最少攻击<color=#F74848>4</color>次，每次攻击造成<color=#F74848>0.7</color>倍伤害，之后每额外攻击<color=#F74848>1</color>次消耗<color=#F74848>1</color>AP，直到击破任意部位或AP耗尽，无视大盾的<buf ID=900027>[命中转移]</buf>效果",
+      "name": "Blade Havoc",
+      "describe": "Uses two Alter-Blades to strike a single target in rapid succession, hitting at least <color=#F74848>4</color> times. Each attack deals <color=#F74848>0.7</color>x DMG. Each additional <color=#F74848>1</color> attack costs <color=#F74848>1</color> AP until any part is destroyed or AP runs out. Ignores the Large Shield <buf ID=900027>[Target Shift]</buf> effect.",
       "SpecificEffects": ""
     }
   },
@@ -80,8 +85,8 @@
       "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
     },
     "101531": {
-      "name": "终结者1",
-      "SpecificEffects": "使用刀剑主动攻击后，如果命中的部位耐久值低于<color=#F74848>15%</color>，发动<buf ID=900109>[处决]</buf>效果，战后直接破坏该部位"
+      "name": "Terminator 1",
+      "SpecificEffects": "After actively attacking with an Alter-Blade, if the part hit is below <color=#F74848>15%</color> HP, triggers the <buf ID=900109>[Execution]</buf> effect, directly destroying that part after combat."
     },
     "100032": {
       "name": "AP Optimization 3",
@@ -92,20 +97,20 @@
       "SpecificEffects": "<buf ID=900004>[Re-ATK]</buf> or <buf ID=900005>[Re-Act]</buf>'s effective times per turn <color=#F74848>+1</color>."
     },
     "101534": {
-      "name": "终结者2",
-      "SpecificEffects": "<buf ID=1015311>[终结者1]</buf>破坏部位的临界线提升至<color=#F74848>25%</color>"
+      "name": "Terminator 2",
+      "SpecificEffects": "<buf ID=1015311>[Terminator 1]</buf> part destruction effect threshold increased to <color=#F74848>25%</color> HP."
     },
     "101535": {
-      "name": "终结者3",
-      "SpecificEffects": "发动<buf ID=900101>[终结者]</buf>破坏部位时，抵消<color=#F74848>1</color>次<buf ID=900004>[再攻击]</buf>或<buf ID=900005>[再行动]</buf>的次数扣除并额外回复<color=#F74848>1</color>AP，每回合最多发动<color=#F74848>1</color>次"
+      "name": "Terminator 3",
+      "SpecificEffects": "When activating <buf ID=900101>[Terminator]</buf> to destroy a part, negates the deduction of <color=#F74848>1</color> <buf ID=900004>[Re-ATK]</buf> or <buf ID=900005>[Re-Act]</buf> count and additionally restores <color=#F74848>1</color> AP. Can only trigger <color=#F74848>1</color> time per turn."
     },
     "101536": {
-      "name": "终结者4",
-      "SpecificEffects": "使用刀剑击破躯干以外的部位时，对躯干造成相当于该部位最大耐久值<color=#F74848>25%</color>的<buf ID=900017>[固定伤害]</buf>"
+      "name": "Terminator 4",
+      "SpecificEffects": "When using an Alter-Blade to destroy parts other than the Body, inflicts <buf ID=900017>[Fixed DMG]</buf> on the Body equal to <color=#F74848>25%</color> of the destroyed part's Max HP."
     },
     "101541": {
-      "name": "独骜1",
-      "SpecificEffects": "使用刀剑主动攻击击破部位时，战后获得<color=#F74848>1</color>层<buf ID=900100>[看破]</buf>，每回合最多发动<color=#F74848>1</color>次"
+      "name": "Pride 1",
+      "SpecificEffects": "When actively attacking with an Alter-Blade and destroying a part, after combat gains <color=#F74848>1</color> stack of <buf ID=900100>[Critical Sense]</buf>. Can only trigger <color=#F74848>1</color> time per turn."
     },
     "100042": {
       "name": "AP Optimization 4",
@@ -116,16 +121,16 @@
       "SpecificEffects": "When destroying a target, additionally restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>2</color> times per turn."
     },
     "101544": {
-      "name": "独骜2",
-      "SpecificEffects": "携带<buf ID=900100>[看破]</buf>时，命中率和暴击率提升<color=#F74848>15%</color>"
+      "name": "Pride 2",
+      "SpecificEffects": "When possessing <buf ID=900100>[Critical Sense]</buf>, Hit Rate and Crit Rate <color=#F74848>+15%</color>."
     },
     "101545": {
-      "name": "独骜3",
-      "SpecificEffects": "遭受攻击后，若耐久值低于<color=#F74848>50%</color>，战后恢复所有部位<color=#F74848>10%</color>的耐久值，可修复<color=#F74848>1</color>个损毁部位，并获得<color=#F74848>1</color>层<buf ID=900100>[看破]</buf>，该效果间隔<color=#F74848>3</color>回合才可再次触发"
+      "name": "Pride 3",
+      "SpecificEffects": "After taking damage, if HP is below <color=#F74848>50%</color>, restores <color=#F74848>10%</color> HP to all parts after combat, repairs <color=#F74848>1</color> destroyed part, and gains <color=#F74848>1</color> stack of <buf ID=900100>[Critical Sense]</buf>. This effect can only trigger once after every <color=#F74848>3</color> turns."
     },
     "101546": {
-      "name": "独骜4",
-      "SpecificEffects": "<buf ID=900100>[看破]</buf>优先攻击携带武器的手臂，如果命中的部位耐久值低于<color=#F74848>30%</color>，发动<buf ID=900109>[处决]</buf>效果，战后直接破坏该部位"
+      "name": "Pride 4",
+      "SpecificEffects": "<buf ID=900100>[Critical Sense]</buf> prioritizes attacking Arms carrying weapons. If the part hit is below <color=#F74848>30%</color> HP, triggers an <buf ID=900109>[Execution]</buf> effect, directly destroying that part after combat."
     }
   },
   "version": "1.8"
