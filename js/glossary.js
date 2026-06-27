@@ -20,7 +20,7 @@ var Glossary = (function () {
       return key;
     });
 
-    text = text.replace(/<skill mainSkill=(\d+)>\[?([^\]<]*)\]?<\/skill>/g, function (_, id, name) {
+    text = text.replace(/<skill[^>]+?(?:mainSkill|activeSkill|ID)=(\d+)[^>]*>\[?([^\]<]*)\]?<\/skill>/g, function (_, id, name) {
       var key = '\x00KW' + (idx++) + '\x00';
       var entry = lookup('skill', id);
       var cls = entry ? 'kw kw-skill' : 'kw kw-skill kw-unknown';
@@ -65,12 +65,21 @@ var Glossary = (function () {
       var entry = lookup(type, id);
       if (!entry) return;
 
+      var statsHtml = '';
+      if (type === 'skill' && (entry.Ap != null || entry.CD != null)) {
+        var parts = [];
+        if (entry.Ap != null) parts.push('AP&nbsp;' + entry.Ap);
+        if (entry.CD != null) parts.push('CD&nbsp;' + entry.CD);
+        statsHtml = '<div class="kw-tip-stats">' + parts.join('<span class="kw-tip-sep">·</span>') + '</div>';
+      }
+
       var effectHtml = entry.effect
         ? '<div class="kw-tip-effect">' + parseColors(entry.effect) + '</div>'
         : '';
 
       $tip.html(
         '<div class="kw-tip-name">' + entry.name + '</div>' +
+        statsHtml +
         effectHtml
       ).addClass('visible');
 

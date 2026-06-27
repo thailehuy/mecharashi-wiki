@@ -1,16 +1,16 @@
 {
-  "PilotName": "洛莎·审判",
-  "RealName": "洛莎·迪亚兹",
+  "PilotName": "Rosa: Judgement",
+  "RealName": "Rosa Diaz",
   "Gender": "Female",
   "Profession": "Launcher",
   "Occupation": "Tactician",
   "Talent0_2Ability": {
-    "name": "瓦尔基里",
-    "SpecificEffects": "可获得<buf ID=900120>[觉醒]</buf>状态，最多提升至<color=#F74848>5</color>级，达到<color=#F74848>5</color>级时激活<buf ID=900118>[女武神模式]</buf>，持续<color=#F74848>2</color>回合；主动攻击击破部位和击毁目标时，可分别提升<color=#F74848>1</color>级<buf ID=900120>[觉醒]</buf>，每回合分别可发动<color=#F74848>1</color>次"
+    "name": "Valkyrie",
+    "SpecificEffects": "Can gain up to <color=#F74848>5</color> levels of the <buf ID=900120>[Awakening]</buf> status. At level <color=#F74848>5</color>, <buf ID=900118>[Valhalla's Call]</buf> activates, lasting for <color=#F74848>2</color> turns. When actively attacking, if a part is destroyed or a target is defeated, increases <buf ID=900120>[Awakening]</buf> by <color=#F74848>1</color> level. These trigger conditions can activate <color=#F74848>1</color> time each per turn."
   },
   "Talent3_5Ability": {
-    "name": "瓦尔基里",
-    "SpecificEffects": "可获得<buf ID=900120>[觉醒]</buf>状态，最多提升至<color=#F74848>5</color>级，达到<color=#F74848>5</color>级时激活<buf ID=900118>[女武神模式]</buf>，持续<color=#F74848>2</color>回合；主动攻击击破部位和击毁目标时，可分别提升<color=#F74848>1</color>级<buf ID=900120>[觉醒]</buf>，每回合分别可发动<color=#F74848>1</color>次；\n出击时，开启<buf ID=900118>[女武神模式]</buf>；\n<buf ID=900118>[女武神模式]</buf>结束时，额外保留<color=#F74848>1</color>级<buf ID=900120>[觉醒]</buf>"
+    "name": "Valkyrie",
+    "SpecificEffects": "Can gain up to <color=#F74848>5</color> levels of the <buf ID=900120>[Awakening]</buf> status. At level <color=#F74848>5</color>, <buf ID=900118>[Valhalla's Call]</buf> activates, lasting for <color=#F74848>2</color> turns. When actively attacking, if a part is destroyed or a target is defeated, increases <buf ID=900120>[Awakening]</buf> by <color=#F74848>1</color> level. These trigger conditions can activate <color=#F74848>1</color> time each per turn.\nUpon deployment, activates <buf ID=900118>[Valhalla's Call]</buf>.\nWhen <buf ID=900118>[Valhalla's Call]</buf> ends, retains an additional <color=#F74848>1</color> level of <buf ID=900120>[Awakening]</buf>."
   },
   "skills": {
     "400001": {
@@ -18,39 +18,44 @@
       "describe": "",
       "SpecificEffects": "When a Tactical Weapon runs out of ammo, trigger <buf ID=900029>[Auto Load]</buf>. This process takes <color=#F74848>3</color> turns."
     },
+    "400909": {
+      "name": "Ballistic Bundle",
+      "describe": "Uses a Machine Gun to attack a target, dealing <color=#F74848>1.3</color>x DMG.",
+      "SpecificEffects": ""
+    },
     "400902": {
-      "name": "巅峰极诣",
+      "name": "Ultimate Mastery",
       "describe": "",
-      "SpecificEffects": "自身耐久值高于<color=#F74848>50%</color>时，伤害提升<color=#F74848>15%</color>，遭受伤害降低<color=#F74848>10%</color>"
+      "SpecificEffects": "When HP is above <color=#F74848>50%</color>, DMG <color=#F74848>+15%</color> and DMG Taken <color=#F74848>-10%</color>."
     },
     "400903": {
-      "name": "醒梦",
-      "describe": "使浮游炮的弹数完全回复，并获得<buf ID=7100503>[暴击伤害提升II]</buf>，持续<color=#F74848>1</color>回合，然后可使用剩余移动力继续行动",
+      "name": "Waking Dream",
+      "describe": "Fully reloads all Cutter Ammo and gains <buf ID=7100503>[Crit DMG UP II]</buf> for <color=#F74848>1</color> turn. Can continue action with remaining Movement.",
       "SpecificEffects": ""
     },
     "400904": {
-      "name": "弹雨枪林",
-      "describe": "同时使用两把机枪攻击单个目标，造成<color=#F74848>2×0.75</color>倍伤害，并提升<color=#F74848>1</color>级<buf ID=900120>[觉醒]</buf>\n处于<buf ID=900118>[女武神模式]</buf>时，同时使用两把机枪攻击单个目标，造成<color=#F74848>2×0.75</color>倍伤害，战前获得<buf ID=7100104>[命中率提升Ⅱ]</buf>和<buf ID=7100404>[暴击率提升Ⅱ]</buf>，持续<color=#F74848>2</color>回合",
+      "name": "Bullet Storm",
+      "describe": "Simultaneously uses two Machine Guns to attack a target, dealing <color=#F74848>0.75</color>x DMG <color=#F74848>2</color> times, and increases <buf ID=900120>[Awakening]</buf> by <color=#F74848>1</color> level.\nWhen in <buf ID=900118>[Valhalla's Call]</buf> Mode, simultaneously uses two Machine Guns to attack a target, dealing <color=#F74848>0.75</color>x DMG <color=#F74848>2</color> times. Before combat, gains <buf ID=7100104>[Hit Rate UP II]</buf> and <buf ID=7100404>[Crit Rate UP II]</buf>, lasting for <color=#F74848>2</color> turns.",
       "SpecificEffects": ""
     },
     "400905": {
-      "name": "禁飞秩序",
+      "name": "No-Fly Order",
       "describe": "",
-      "SpecificEffects": "自动使浮游炮拦截射程范围内来袭的火箭，将其全部击落，每回合最多发动<color=#F74848>1</color>次"
+      "SpecificEffects": "Automatically uses Cutter to intercept incoming rockets within range, shooting them all down. Can only trigger <color=#F74848>1</color> time per turn."
     },
     "400906": {
-      "name": "一人破军",
-      "describe": "使用浮游炮攻击自身<range type=2>3格范围</range>内所有目标，造成<color=#F74848>1.1</color>倍范围伤害，并提升<color=#F74848>1</color>级<buf ID=900120>[觉醒]</buf>，战后恢复完好部位的耐久值，恢复量为造成伤害的<color=#F74848>40%</color>；\n处于<buf ID=900118>[女武神模式]</buf>时，战后恢复完好部位耐久值的恢复量提升至<color=#F74848>50%</color>",
+      "name": "Solo Breakthrough",
+      "describe": "Uses a Cutter to attack all targets within <color=#F74848>3</color> tiles, dealing <color=#F74848>1.1</color>x AoE DMG and increasing <buf ID=900120>[Awakening]</buf> by <color=#F74848>1</color> level. After combat, restores HP equal to <color=#F74848>40%</color> of damage dealt to undestroyed parts.\nWhen in <buf ID=900118>[Valhalla's Call]</buf> Mode, the Repair AMT applied to undestroyed parts after combat is increased to <color=#F74848>50%</color>.",
       "SpecificEffects": ""
     },
     "400907": {
-      "name": "超容火力",
+      "name": "Overcapacity Firepower",
       "describe": "",
-      "SpecificEffects": "发动<buf ID=900002>[协力攻击]</buf>或<buf ID=900061>[协力反击]</buf>时，伤害提升<color=#F74848>20%</color>；若本次<buf ID=900002>[协力攻击]</buf>或<buf ID=900061>[协力反击]</buf>击破部位，则不消耗次数"
+      "SpecificEffects": "When engaging in a <buf ID=900002>[Link Attack]</buf> or <buf ID=900061>[Link Retaliation]</buf>, DMG <color=#F74848>+20%</color>. If this <buf ID=900002>[Link Attack]</buf> or <buf ID=900061>[Link Retaliation]</buf> destroys a part, it does not consume a Link chance."
     },
     "400908": {
-      "name": "终末宣告",
-      "describe": "同时使用两把机枪攻击单个目标，造成<color=#F74848>2×0.85</color>倍伤害，并提升<color=#F74848>2</color>级<buf ID=900120>[觉醒]</buf>；\n处于<buf ID=900118>[女武神模式]</buf>时，同时使用两把机枪和浮游炮攻击单个目标，机枪造成<color=#F74848>2×0.85</color>倍伤害，浮游炮消耗<color=#F74848>2</color>枚弹药造成<color=#F74848>4×0.3</color>倍伤害，若击毁目标，返还<color=#F74848>2</color>点AP和<color=#F74848>1</color>枚浮游炮弹药",
+      "name": "Fate's Verdict",
+      "describe": "Simultaneously uses two Machine Guns to attack a target, dealing <color=#F74848>0.85</color>x DMG <color=#F74848>2</color> times, and increases <buf ID=900120>[Awakening]</buf> by <color=#F74848>2</color> levels.\nWhen in <buf ID=900118>[Valhalla's Call]</buf> Mode, simultaneously uses two Machine Guns and Cutter to attack a target. The Machine Guns deal <color=#F74848>0.85</color>x DMG <color=#F74848>2</color> times, and the Cutter consumes <color=#F74848>2</color> Ammo to deal <color=#F74848>0.3</color>x DMG <color=#F74848>4</color> times. If the target is destroyed, refunds <color=#F74848>2</color> AP and <color=#F74848>1</color> Cutter Ammo.",
       "SpecificEffects": ""
     }
   },
@@ -80,8 +85,8 @@
       "SpecificEffects": "AP Cap <color=#F74848>+2</color>."
     },
     "400931": {
-      "name": "最终原型1",
-      "SpecificEffects": "突击武器和浮游炮可以发动<buf ID=900002>[协力攻击]</buf>，分别造成<color=#F74848>0.2</color>倍和<color=#F74848>0.4</color>倍伤害，每回合可分别发动<color=#F74848>2</color>次；目标同时处于浮游炮和突击武器的射程内时，优先使用突击武器"
+      "name": "Final Prototype 1",
+      "SpecificEffects": "Assault Weapons and Cutters can launch a <buf ID=900002>[Link Attack]</buf>, dealing <color=#F74848>0.2</color>x and <color=#F74848>0.4</color>x DMG respectively. Each can trigger up to <color=#F74848>2</color> times per turn. If the target is within range of both Cutter and Assault Weapon, Assault Weapon is used first."
     },
     "200032": {
       "name": "AP Optimization 3",
@@ -92,20 +97,20 @@
       "SpecificEffects": "At the end of the action, if an Active Attack was not initiated this turn, an extra <color=#F74848>2</color> tiles can be moved."
     },
     "400934": {
-      "name": "最终原型2",
-      "SpecificEffects": "浮游炮<buf ID=900002>[协力攻击]</buf>次数<color=#F74848>+1</color>，且伤害倍率提升至<color=#F74848>0.5</color>倍"
+      "name": "Final Prototype 2",
+      "SpecificEffects": "Cutter <buf ID=900002>[Link Attack]</buf> Count <color=#F74848>+1</color>. Damage multiplier is increased to <color=#F74848>0.5</color>x."
     },
     "400935": {
-      "name": "最终原型3",
-      "SpecificEffects": "任意友军遭受攻击对战时，若攻击者在浮游炮攻击范围内，使用浮游炮发动<buf ID=900061>[协力反击]</buf>，造成<color=#F74848>0.5</color>倍伤害，每回合最多发动<color=#F74848>2</color>次"
+      "name": "Final Prototype 3",
+      "SpecificEffects": "When any ally is attacked and drawn into combat, if the attacker is within the Cutter's attack range, uses Cutter to launch a <buf ID=900061>[Link Retaliation]</buf>, dealing <color=#F74848>0.5</color>x DMG. Can trigger up to <color=#F74848>2</color> times per turn."
     },
     "400936": {
-      "name": "最终原型4",
-      "SpecificEffects": "激活<buf ID=900118>[女武神模式]</buf>时，可使用<color=#F74848>2</color>枚浮游炮发动<buf ID=900002>[协力攻击]</buf>和<buf ID=900061>[协力反击]</buf>，造成<color=#F74848>2×0.5</color>倍伤害"
+      "name": "Final Prototype 4",
+      "SpecificEffects": "While in <buf ID=900118>[Valhalla's Call]</buf> Mode, can use <color=#F74848>2</color> Cutters to launch <buf ID=900002>[Link Attack]</buf> and <buf ID=900061>[Link Retaliation]</buf>, dealing <color=#F74848>2×0.5</color>x DMG."
     },
     "400941": {
-      "name": "战局掌控1",
-      "SpecificEffects": "<buf ID=900118>[女武神模式]</buf>结束时，会保留<color=#F74848>1</color>级<buf ID=900120>[觉醒]</buf>"
+      "name": "Battlefield Dominion 1",
+      "SpecificEffects": "When <buf ID=900118>[Valhalla's Call]</buf> ends, <color=#F74848>1</color> level of <buf ID=900120>[Awakening]</buf> will be retained."
     },
     "200042": {
       "name": "AP Optimization 4",
@@ -116,16 +121,16 @@
       "SpecificEffects": "If not moved before an Active Attack, <buf ID=900004>[Re-ATK]</buf> can be triggered, effective up to <color=#F74848>1</color> time per turn. Unable to move before attacking.\nEffects similar to <buf ID=900004>[Re-ATK]</buf> cannot be re-triggered."
     },
     "400944": {
-      "name": "战局掌控2",
-      "SpecificEffects": "行动结束时，立刻装填<color=#F74848>1</color>枚浮游炮弹药"
+      "name": "Battlefield Dominion 2",
+      "SpecificEffects": "At the end of action, immediately loads <color=#F74848>1</color> Cutter Ammo."
     },
     "400945": {
-      "name": "战局掌控3",
-      "SpecificEffects": "浮游炮攻击时，每打击<color=#F74848>1</color>名目标，本次攻击伤害提升<color=#F74848>5%</color>，最多提升<color=#F74848>20%</color>"
+      "name": "Battlefield Dominion 3",
+      "SpecificEffects": "When attacking with a Cutter, for every <color=#F74848>1</color> target hit, this attack's DMG <color=#F74848>+5%</color>, up to <color=#F74848>+20%</color>."
     },
     "400946": {
-      "name": "战局掌控4",
-      "SpecificEffects": "处于<buf ID=900118>[女武神模式]</buf>时，主动攻击后，使用浮游炮对攻击范围内最多<color=#F74848>3</color>名目标造成<color=#F74848>0.6</color>倍范围伤害"
+      "name": "Battlefield Dominion 4",
+      "SpecificEffects": "When in <buf ID=900118>[Valhalla's Call]</buf> Mode, after an active attack, uses a Cutter to deal <color=#F74848>0.6</color>x AoE DMG to up to <color=#F74848>3</color> targets within attack range."
     }
   },
   "version": "1.0"

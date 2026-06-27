@@ -205,12 +205,12 @@ window.GlossaryData = {
       "effect": "Critical hit chance increases by <color=#F74848>3%</color> and DMG taken is reduced by <color=#F74848>2%</color> per stack, up to <color=#F74848>8</color> stacks. All stacks are removed after exiting [Directional Rack]"
     },
     "900118": {
-      "name": "Valkyrie Mode",
-      "effect": "An enhanced combat mode that amplifies offensive capabilities and unlocks additional attack options."
+      "name": "Valhalla's Call",
+      "effect": "When attacking for the first time each turn, AP Cost <color=#F74848>-1</color>, minimum <color=#F74848>1</color>.\nAfter actively attacking, if the target is destroyed, triggers <buf ID=900004>[Re-ATK]</buf> after combat, granting full Movement. Can only trigger <color=#F74848>1</color> time per turn.\nWhen the duration ends, resets <buf ID=900120>[Awakening]</buf> level."
     },
     "900120": {
       "name": "Awakening",
-      "effect": "A stackable empowerment state. Accumulated stacks provide escalating bonuses and may trigger enhanced modes at maximum stacks."
+      "effect": "Lv.1: Movement <color=#F74848>+1</color>.\nLv.2: Unlocks <buf ID=900011>[Ideal Range]</buf> for Assault Weapons. When battling targets on an <buf ID=900011>[Ideal Range]</buf> tile, Final DMG Dealt <color=#F74848>+15%</color>.\nLv.3: When a part is destroyed, restores <color=#F74848>1</color> AP after combat. Can only trigger <color=#F74848>1</color> time per turn.\nLv.4: When actively attacking with a Cutter, can repeatedly select the same target. Subsequent attacks against the same target deal <color=#F74848>40%</color> of base DMG.\nLv.5: Gains <buf ID=900118>[Valhalla's Call]</buf>."
     },
     "900125": {
       "name": "Pinpoint Firepower",
