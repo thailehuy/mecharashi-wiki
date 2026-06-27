@@ -1,16 +1,16 @@
 {
-  "PilotName": "弗雷姬塔",
-  "RealName": "弗雷姬塔·奥伊萨斯",
+  "PilotName": "Fregata",
+  "RealName": "Fregata Oasis",
   "Gender": "Female",
   "Profession": "Assault",
   "Occupation": "Raider",
   "Talent0_2Ability": {
-    "name": "伽蓝频伽",
-    "SpecificEffects": "装备两把突击武器时，两把武器共享射程；\n使用任意突击武器主动攻击后，可额外移动<color=#F74848>3</color>格"
+    "name": "Kalavinka",
+    "SpecificEffects": "When equipping two Assault Weapons, both weapons share Range.\nAfter actively attacking with any Assault Weapon, can move an extra <color=#F74848>3</color> tiles."
   },
   "Talent3_5Ability": {
-    "name": "伽蓝频伽",
-    "SpecificEffects": "装备两把突击武器时，两把武器共享射程和最佳射程；\n使用任意突击武器主动攻击后，可额外移动<color=#F74848>3</color>格；\n机枪、霰弹枪、喷火器的<buf ID=900011>[最佳射程]</buf>扩大<color=#F74848>1</color>格"
+    "name": "Kalavinka",
+    "SpecificEffects": "When equipping two Assault Weapons, both weapons share Range and <buf ID=900011>[Ideal Range]</buf>.\nAfter actively attacking with any Assault Weapon, can move an extra <color=#F74848>3</color> tiles.\nMachine Gun, Shotgun, and Flamethrower <buf ID=900011>[Ideal Range]</buf> increased by <color=#F74848>1</color> tile."
   },
   "skills": {
     "200001": {
@@ -18,39 +18,44 @@
       "describe": "",
       "SpecificEffects": "In cooperation with allies, use Assault Weapons to launch a <buf ID=900002>[Link Attack]</buf> against the target, dealing <color=#F74848>0.2x</color> DMG, effective up to <color=#F74848>1</color> time per turn."
     },
+    "201609": {
+      "name": "Crimson Blitz",
+      "describe": "Uses a Machine Gun, Shotgun, or Flamethrower to attack a target, dealing <color=#F74848>1.3</color>x DMG.",
+      "SpecificEffects": ""
+    },
     "700057": {
-      "name": "First-mover Advantage",
+      "name": "First-Mover Advantage",
       "describe": "",
-      "SpecificEffects": "During an Active Attack in combat, Crit DMG <color=#F74848>+15%</color>."
+      "SpecificEffects": "When initiating combat, Crit Rate <color=#F74848>+15%</color>."
     },
     "201603": {
-      "name": "连战协议",
+      "name": "Sustain Protocol",
       "describe": "",
-      "SpecificEffects": "获得增益效果时，持续回合<color=#F74848>+1</color>"
+      "SpecificEffects": "When gaining buffs, duration <color=#F74848>+1</color>."
     },
     "201604": {
-      "name": "迅步",
-      "describe": "腿部完好时可发动，选择范围内<color=#F74848>1</color>格空地，跳跃至选中地格，可选范围与自身当前移动力相同，之后可发动<buf ID=900004>[再攻击]</buf>，攻击前无法移动；\n击毁目标时，技能冷却回合数额外<color=#F74848>-1</color>",
+      "name": "Swift Steps",
+      "describe": "Can be activated when Legs are undestroyed. Selects <color=#F74848>1</color> empty tile within range and jumps to the selected tile. The selectable range is equal to current Movement. Triggers <buf ID=900004>[Re-ATK]</buf> afterward. Cannot move before attacking.\nWhen destroying a target, skill cooldown is additionally reduced by <color=#F74848>1</color>.",
       "SpecificEffects": ""
     },
     "201605": {
-      "name": "破影掠袭",
+      "name": "Shadow Raid",
       "describe": "",
-      "SpecificEffects": "主动攻击对战时，若连击数大于等于<color=#F74848>12</color>次，目标反击时遭受伤害降低<color=#F74848>20%</color>"
+      "SpecificEffects": "When initiating combat and hitting <color=#F74848>12</color> times or more, DMG Taken <color=#F74848>-20%</color> when retaliated against by the target."
     },
     "201606": {
-      "name": "穿心连射",
-      "describe": "使用两把突击武器攻击单个目标，造成<color=#F74848>2×0.75</color>倍伤害，战后获得<color=#F74848>1</color>个随机增益效果，持续<color=#F74848>2</color>回合",
+      "name": "Heartpiercing Duo",
+      "describe": "Uses two Assault Weapons to attack a target, dealing <color=#F74848>0.75</color>x DMG <color=#F74848>2</color> times. After combat, gains <color=#F74848>1</color> random buff, lasting for <color=#F74848>2</color> turns.",
       "SpecificEffects": ""
     },
     "201607": {
-      "name": "无尽追猎",
+      "name": "Infinite Hunt",
       "describe": "",
-      "SpecificEffects": "主动攻击对战时，若目标无法反击，战后获得<color=#F74848>1</color>层<buf ID=2016503>[双枪节能]</buf>，可叠加<color=#F74848>3</color>层，每回合最多触发<color=#F74848>1</color>次"
+      "SpecificEffects": "When initiating combat, if the target cannot retaliate, gains <color=#F74848>1</color> stack of <buf ID=2016503>[Dual Gun Efficiency]</buf> after combat. Stacks up to <color=#F74848>3</color> times. Can only trigger <color=#F74848>1</color> time per turn."
     },
     "201608": {
-      "name": "绯红轮舞",
-      "describe": "使用两把突击武器攻击单个目标，造成<color=#F74848>2×0.85</color>倍伤害；装备霰弹枪、机枪、喷火器时，战后分别获得<buf ID=2016085>[轮舞·霰弹枪]</buf>、<buf ID=2016087>[轮舞·机枪]</buf>、<buf ID=2016080>[轮舞·喷火器]</buf>，持续<color=#F74848>2</color>回合",
+      "name": "Crimson Rondo",
+      "describe": "Uses two Assault Weapons to attack a target, dealing <color=#F74848>0.85</color>x DMG <color=#F74848>2</color> times. After combat, if equipped with a Shotgun, Machine Gun, or Flamethrower, gains <buf ID=2016085>[Rondo - Shotgun]</buf>, <buf ID=2016087>[Rondo - Machine Gun]</buf>, or <buf ID=2016080>[Rondo - Flamethrower]</buf> respectively, lasting for <color=#F74848>2</color> turns.",
       "SpecificEffects": ""
     }
   },
@@ -104,8 +109,8 @@
       "SpecificEffects": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, final DMG <color=#F74848>+30%</color>."
     },
     "201641": {
-      "name": "鹰隼之势1",
-      "SpecificEffects": "使用单手突击武器发动主动攻击时，战后自身获得<color=#F74848>1</color>层<buf ID=2016503>[双枪节能]</buf>，可叠加<color=#F74848>3</color>层，每回合最多触发<color=#F74848>1</color>次"
+      "name": "Hawk Rush 1",
+      "SpecificEffects": "When actively attacking with a single-handed Assault Weapon, after combat gains <color=#F74848>1</color> stack of <buf ID=2016503>[Dual Gun Efficiency]</buf>. Stacks up to <color=#F74848>3</color> times. Can only trigger <color=#F74848>1</color> time per turn."
     },
     "200042": {
       "name": "AP Optimization 4",
@@ -116,17 +121,17 @@
       "SpecificEffects": "If not moved before an Active Attack, <buf ID=900004>[Re-ATK]</buf> can be triggered, effective up to <color=#F74848>1</color> time per turn. Unable to move before attacking.\nEffects similar to <buf ID=900004>[Re-ATK]</buf> cannot be re-triggered."
     },
     "201644": {
-      "name": "鹰隼之势2",
-      "SpecificEffects": "<buf ID=2016410>[鹰隼之势1]</buf>每回合每种单手突击武器都可以触发<color=#F74848>1</color>次"
+      "name": "Hawk Rush 2",
+      "SpecificEffects": "<buf ID=2016410>[Hawk Rush 1]</buf> can trigger <color=#F74848>1</color> time per type of single-handed Assault Weapon each turn."
     },
     "201645": {
-      "name": "鹰隼之势3",
-      "SpecificEffects": "使用两把突击武器攻击时，战前获得<buf ID=2016452>[鹰隼之势]</buf>，可叠加<color=#F74848>4</color>层"
+      "name": "Hawk Rush 3",
+      "SpecificEffects": "When attacking with two Assault Weapons, gains <buf ID=2016452>[Hawk Rush]</buf> before combat. Stacks up to <color=#F74848>4</color> times."
     },
     "201646": {
-      "name": "鹰隼之势4",
-      "SpecificEffects": "使用两把突击武器发动主动攻击时，两把武器皆可触发<buf ID=2016410>[鹰隼之势1]</buf>获得<buf ID=2016503>[双枪节能]</buf>"
+      "name": "Hawk Rush 4",
+      "SpecificEffects": "When actively attacking with two Assault Weapons, both weapons can trigger <buf ID=2016410>[Hawk Rush 1]</buf> to gain <buf ID=2016503>[Dual Gun Efficiency]</buf>."
     }
   },
-  "version": "1.0"
+  "version": "1.8"
 }

@@ -623,6 +623,30 @@ window.GlossaryData = {
     "4010082": {
       "name": "Surprise Attack Tactic",
       "effect": "When actively attacking, increases critical hit rate by <color=#F74848>15%</color>. <color=#F74848>1</color> stack is consumed after attacking."
+    },
+    "2016503": {
+      "name": "Dual Gun Efficiency",
+      "effect": "When actively attacking with two Assault Weapons, consumes all stacks, reducing AP Cost by <color=#F74848>1</color> for each stack, down to a minimum of <color=#F74848>1</color>."
+    },
+    "2016085": {
+      "name": "Rondo - Shotgun",
+      "effect": "When attacking with an Assault Weapon, ignores <color=#F74848>50%</color> of the target's Armor."
+    },
+    "2016087": {
+      "name": "Rondo - Machine Gun",
+      "effect": "When attacking with an Assault Weapon, increases DMG dealt in this skirmish based on hits. For each hit, DMG increases by <color=#F74848>2%</color>, up to <color=#F74848>20%</color>. Resets after attacking."
+    },
+    "2016080": {
+      "name": "Rondo - Flamethrower",
+      "effect": "When initiating combat with a single-handed Assault Weapon, deals [Fixed DMG] after combat equal to <color=#F74848>0.35</color>x Weapon ATK to all parts of the target in total."
+    },
+    "2016452": {
+      "name": "Hawk Rush",
+      "effect": "When actively attacking with a single-handed Assault Weapon, after combat gains <color=#F74848>1</color> stack of <buf ID=2016503>[Dual Gun Efficiency]</buf>. Stacks up to <color=#F74848>3</color> times. Can only trigger <color=#F74848>1</color> time per turn."
+    },
+    "2016410": {
+      "name": "Hawk Rush 1",
+      "effect": "When actively attacking with a single-handed Assault Weapon, after combat gains <color=#F74848>1</color> stack of <buf ID=2016503>[Dual Gun Efficiency]</buf>. Stacks up to <color=#F74848>3</color> times. Can only trigger <color=#F74848>1</color> time per turn."
     }
   },
   "skill": {
