@@ -6,11 +6,11 @@
   "Occupation": "Sniper",
   "Talent0_2Ability": {
     "name": "Experimental Observation",
-    "SpecificEffects": "Can use <skill mainSkill=301150>[Dimentional Rack]</skill> code. While in <buf ID=900111>[Dimentional Rack]</buf> Mode，each <color=#F74848>1</color> hit on an enemy unit grants <color=#F74848>1</color> stack of <buf ID=3011512>[Positional Advantage I]</buf>. While in <buf ID=900111>[Dimentional Rack]</buf> Mode, if there are no enemy units within <color=#F74848>3</color> tiles, gains <buf ID=3004502>[Stealth I]</buf> lasting for <color=#F74848>2</color> turns."
+    "SpecificEffects": "Can use <skill ID=301150>[Dimentional Rack]</skill> code. While in <buf ID=900111>[Dimentional Rack]</buf> Mode，each <color=#F74848>1</color> hit on an enemy unit grants <color=#F74848>1</color> stack of <buf ID=3011512>[Positional Advantage I]</buf>. While in <buf ID=900111>[Dimentional Rack]</buf> Mode, if there are no enemy units within <color=#F74848>3</color> tiles, gains <buf ID=3004502>[Stealth I]</buf> lasting for <color=#F74848>2</color> turns."
   },
   "Talent3_5Ability": {
     "name": "Experimental Observation",
-    "SpecificEffects": "Can use <skill mainSkill=301150>[Dimentional Rack]</skill> code. While in <buf ID=900111>[Dimentional Rack]</buf> Mode，each <color=#F74848>1</color> hit on an enemy unit grants <color=#F74848>1</color> stack of <buf ID=3011512>[Positional Advantage I]</buf>. While in <buf ID=900111>[Dimentional Rack]</buf> Mode, if there are no enemy units within <color=#F74848>3</color> tiles, gains <buf ID=3004502>[Stealth I]</buf> lasting for <color=#F74848>2</color> turns.\nThe <buf ID=3011512>[Positional Advantage I]</buf> stack limit increase to <color=#F74848>4</color>."
+    "SpecificEffects": "Can use <skill ID=301150>[Dimentional Rack]</skill> code. While in <buf ID=900111>[Dimentional Rack]</buf> Mode，each <color=#F74848>1</color> hit on an enemy unit grants <color=#F74848>1</color> stack of <buf ID=3011512>[Positional Advantage I]</buf>. While in <buf ID=900111>[Dimentional Rack]</buf> Mode, if there are no enemy units within <color=#F74848>3</color> tiles, gains <buf ID=3004502>[Stealth I]</buf> lasting for <color=#F74848>2</color> turns.\nThe <buf ID=3011512>[Positional Advantage I]</buf> stack limit increase to <color=#F74848>4</color>."
   },
   "skills": {
     "300001": {
@@ -122,7 +122,7 @@
     },
     "301144": {
       "name": "Trickster 2",
-      "SpecificEffects": "While in <buf ID=900111>[Dimentional Rack]</buf> Mode, the <skill mainSkill=301144>[Rapid Realignment]</skill> code can be used."
+      "SpecificEffects": "While in <buf ID=900111>[Dimentional Rack]</buf> Mode, the <skill ID=301144>[Rapid Realignment]</skill> code can be used."
     },
     "301145": {
       "name": "Trickster 3",

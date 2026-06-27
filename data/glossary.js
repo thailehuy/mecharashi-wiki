@@ -622,7 +622,7 @@ window.GlossaryData = {
     },
     "4010082": {
       "name": "Surprise Attack Tactic",
-      "effect": "When actively attacking, increases critical hit rate by <color=#F74848>15%</color>. <color=#F74848>1</color> is consumed after attacking."
+      "effect": "When actively attacking, increases critical hit rate by <color=#F74848>15%</color>. <color=#F74848>1</color> stack is consumed after attacking."
     }
   },
   "skill": {
@@ -639,10 +639,10 @@ window.GlossaryData = {
       "effect": "Enters [Directional Rack] Mode: Unable to move, Sniper Rifle's attack range becomes fixed-direction <color=#F5C542>fan-shaped 5-tile</color> area. Can continue attacking after using [Directional Rack]. Automatically exits [Directional Rack] Mode en an Arm is destroyed. <color=#F5C542>[Retract]</color> is available in [Directional Rack] Mode. After retracting, can continue moving."
     },
     "4010041": {
-      "name": "Strike Tactic",
+      "name": "Breakthrough Tactic",
       "Ap": "2",
       "CD": "2",
-      "effect": "Grants <color=#F74848>1</color> ally anywhere on the map [Strong Attack Tactics], increasing their Final DMG dealt by <color=#F74848>20%</color>, lasting till the end of action. Gains <color=#F74848>2</color> stacks of [Intelligence]"
+      "effect": "Grants <color=#F74848>1</color> ally anywhere on the map [Breakthrough Tactic], increasing their Final DMG dealt by <color=#F74848>20%</color>, lasting till the end of action. Gains <color=#F74848>2</color> stacks of [Intelligence]"
     },
     "4010042": {
       "name": "Maneuver Tactic",
