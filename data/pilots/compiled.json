@@ -47266,15 +47266,15 @@
       "PilotName": "\u7f57\u65af\u739b\u4e3d",
       "PortraitHeroIcon": "Pilot_10103133A_half",
       "AvatarHeroIcon": "Pilot_10103133A_Raw",
-      "RealName": "\u7f57\u65af\u739b\u4e3d\u00b7\u7434",
+      "RealName": "Rosemary Jean",
       "Gender": "Female",
       "Profession": "Launcher",
       "Occupation": "Tactician",
       "quality": "SSR",
       "Talent0_2Ability": {
         "ID": "401050",
-        "name": "\u638c\u8235\u4eba",
-        "SpecificEffects": "\u4f7f\u7528\u706b\u7bad\u4e3b\u52a8\u653b\u51fb\u65f6\uff0c\u6bcf\u547d\u4e2d<color=#F74848>1</color>\u540d\u76ee\u6807\uff0c\u83b7\u5f97<color=#F74848>1</color>\u5c42<buf ID=4010500>[\u60c5\u62a5]</buf>\uff0c\u53ef\u53e0\u52a0\uff0c\u6700\u591a<color=#F74848>25</color>\u5c42\uff1b\u706b\u7bad\u7684\u8d1f\u91cd\u964d\u4f4e<color=#F74848>130</color>",
+        "name": "Helmswoman",
+        "SpecificEffects": "When using rockets to actively attack, for each <color=#F74848>1</color> enemy hit, gains <color=#F74848>1</color> stack of <buf ID=4010500>[Intelligence]</buf>, up to <color=#F74848>25</color> stacks. Rockets weights are reduced by <color=#F74848>130</color>.",
         "BufCarried": "4010512/4010515/4010506/4010507/900158",
         "SkillIcon": "Icon_skill_talent_5150",
         "icon": "Icon_skill_talent_5150",
@@ -47283,8 +47283,8 @@
       },
       "Talent3_5Ability": {
         "ID": "401051",
-        "name": "\u638c\u8235\u4eba",
-        "SpecificEffects": "\u4f7f\u7528\u706b\u7bad\u4e3b\u52a8\u653b\u51fb\u65f6\uff0c\u6bcf\u547d\u4e2d<color=#F74848>1</color>\u540d\u76ee\u6807\uff0c\u83b7\u5f97<color=#F74848>1</color>\u5c42<buf ID=4010500>[\u60c5\u62a5]</buf>\uff0c\u53ef\u53e0\u52a0\uff0c\u6700\u591a<color=#F74848>25</color>\u5c42\uff1b\u706b\u7bad\u7684\u8d1f\u91cd\u964d\u4f4e<color=#F74848>130</color>\uff1b\n\u51fa\u51fb\u65f6\uff0c\u83b7\u5f97<color=#F74848>10</color>\u5c42<buf ID=4010500>[\u60c5\u62a5]</buf>",
+        "name": "Helmswoman",
+        "SpecificEffects": "When using rockets to actively attack, for each <color=#F74848>1</color> enemy hit, gains <color=#F74848>1</color> stack of <buf ID=4010500>[Intelligence]</buf>, up to <color=#F74848>25</color> stacks. Rockets weights are reduced by <color=#F74848>130</color>.\nAt the start of battle, obtains <color=#F74848>10</color> stacks of <buf ID=4010500>[Intelligence]</buf>",
         "BufCarried": "4010512/4010515/4010506/4010507/4010508/4010509/900158",
         "SkillIcon": "Icon_skill_talent_5150",
         "icon": "Icon_skill_talent_5150",
@@ -47576,8 +47576,8 @@
                 "type": 3,
                 "PassiveSkill": {
                   "ID": "401041",
-                  "name": "\u7b97\u65e0\u9057\u7b561",
-                  "SpecificEffects": "\u51fa\u51fb\u65f6\u989d\u5916\u83b7\u5f97<color=#F74848>5</color>\u5c42<buf ID=900123>[\u60c5\u62a5]</buf>",
+                  "name": "Flawless Calculation 1",
+                  "SpecificEffects": "When actively attacking, additionally gains <color=#F74848>5</color> stacks of <buf ID=900123>[Intelligence]</buf>.",
                   "BufCarried": "4010411/4010412",
                   "SkillIcon": "Icon_skill_passive_5252",
                   "icon": "Icon_skill_passive_5252",
@@ -47632,8 +47632,8 @@
                 "type": 3,
                 "PassiveSkill": {
                   "ID": "401044",
-                  "name": "\u7b97\u65e0\u9057\u7b562",
-                  "SpecificEffects": "<buf ID=900123>[\u60c5\u62a5]</buf>\u6548\u679c\u63d0\u5347\u81f3\u4f7f\u6240\u6709\u53cb\u519b\u4f24\u5bb3\u63d0\u5347<color=#F74848>1.2%</color>\uff0c\u884c\u52a8\u5f00\u59cb\u65f6\u79fb\u9664<color=#F74848>2</color>\u5c42",
+                  "name": "Flawless Calculation 2",
+                  "SpecificEffects": "<buf ID=900123>[Intelligence]</buf> effect changes to: increases all allies DMG dealt by <color=#F74848>1.2%</color>. <color=#F74848>2</color> stacks are consumed when attacking.",
                   "BufCarried": "4010441",
                   "SkillIcon": "Icon_skill_passive_5252",
                   "icon": "Icon_skill_passive_5252",
@@ -47651,8 +47651,8 @@
                 "type": 3,
                 "PassiveSkill": {
                   "ID": "401045",
-                  "name": "\u7b97\u65e0\u9057\u7b563",
-                  "SpecificEffects": "<buf ID=900123>[\u60c5\u62a5]</buf>\u5927\u4e8e\u7b49\u4e8e<color=#F74848>20</color>\u5c42\u65f6\uff0cAP\u56de\u590d\u503c<color=#F74848>+1</color>",
+                  "name": "Flawless Calculation 3",
+                  "SpecificEffects": "When <buf ID=900123>[Intelligence]</buf> stacks are <color=#F74848>20</color> or more, AP recovery increases by <color=#F74848>+1</color>.",
                   "BufCarried": "4010451",
                   "SkillIcon": "Icon_skill_passive_5252",
                   "icon": "Icon_skill_passive_5252",
@@ -47670,8 +47670,8 @@
                 "type": 3,
                 "PassiveSkill": {
                   "ID": "401046",
-                  "name": "\u7b97\u65e0\u9057\u7b564",
-                  "SpecificEffects": "<buf ID=900123>[\u60c5\u62a5]</buf>\u7684\u4e0a\u9650\u63d0\u5347\u81f3<color=#F74848>35</color>\u5c42\uff0c\u4e14<buf ID=900123>[\u60c5\u62a5]</buf>\u5bf9\u81ea\u8eab\u6548\u679c\u63d0\u5347<color=#F74848>75%</color>",
+                  "name": "Flawless Calculation 4",
+                  "SpecificEffects": "<buf ID=900123>[Intelligence]</buf> maximum stacks increase to <color=#F74848>35</color>, and <buf ID=900123>[Intelligence]</buf> effect is increased by <color=#F74848>75%</color>.",
                   "BufCarried": "4010461/4010462/4010463/4010464",
                   "SkillIcon": "Icon_skill_passive_5252",
                   "icon": "Icon_skill_passive_5252",
@@ -47900,8 +47900,8 @@
           "weight": 1712,
           "skill": {
             "ID": "401002",
-            "name": "\u77e5\u5df1\u77e5\u5f7c",
-            "SpecificEffects": "\u884c\u52a8\u5f00\u59cb\u65f6\uff0c\u82e5<buf ID=900123>[\u60c5\u62a5]</buf>\u5c42\u6570\u5c0f\u4e8e\u7b49\u4e8e<color=#F74848>10</color>\u5c42\uff0c\u5219\u4e0d\u4f1a\u51cf\u5c11",
+            "name": "Know your enemies",
+            "SpecificEffects": "When actively attacking, if the number of <buf ID=900123>[Intelligence]</buf> stacks are less than <color=#F74848>10</color>, no stacks will be consumed",
             "BufCarried": "4010021",
             "SkillIcon": "Icon_skill_passive_5103",
             "icon": "Icon_skill_passive_5103",
@@ -47926,8 +47926,8 @@
           "skill": {
             "ID": "401003",
             "remarks": "\u7f57\u65af\u739b\u4e3d-\u4eff\u751f\u7535\u8111",
-            "name": "\u8fd0\u7b79",
-            "describe": "\u4f7f\u706b\u7bad\u7684\u5f39\u6570\u5b8c\u5168\u56de\u590d\uff0c\u5e76\u83b7\u5f97<color=#F74848>2</color>\u5c42<buf ID=900123>[\u60c5\u62a5]</buf>\uff0c\u7136\u540e\u53ef\u4f7f\u7528\u5269\u4f59\u79fb\u52a8\u529b\u7ee7\u7eed\u884c\u52a8",
+            "name": "Planning",
+            "describe": "Completely refills Rocket Launchers ammo Magazine and gains <color=#F74848>2</color> stacks of <buf ID=900123>[Intelligence]</buf>. Can continue action with remaining movement.",
             "type": "Order",
             "CD": "3",
             "Ap": "1",
@@ -47954,8 +47954,8 @@
           "skill": {
             "ID": "401004",
             "remarks": "\u7f57\u65af\u739b\u4e3d-\u4eff\u751f\u7535\u8111",
-            "name": "\u6218\u672f\u6307\u6325",
-            "describe": "\u9009\u62e9<color=#F74848>1</color>\u4e2a\u6280\u80fd\u8fdb\u884c\u91ca\u653e\u3002\u4f7f\u7528\u540e\u5207\u6362\u4e3a<skill activeSkill=4010041>[\u5f3a\u653b\u6218\u672f]</skill>\u3001<skill activeSkill=4010042>[\u673a\u52a8\u6218\u672f]</skill>\u3001<skill activeSkill=4010043>[\u603b\u653b\u6218\u672f]</skill>",
+            "name": "Tactical Command",
+            "describe": "Choose <color=#F74848>1</color> skill to switch to from <skill activeSkill=4010041>[Strike Tactic]</skill>, <skill activeSkill=4010042>[Maneuver Tactic]</skill> or <skill activeSkill=4010043>[All-out Tactic]</skill>.",
             "type": "Order",
             "CD": "2",
             "Ap": "0",
@@ -47981,8 +47981,8 @@
           "weight": 1715,
           "skill": {
             "ID": "401005",
-            "name": "\u589e\u76ca\u5f39\u5934",
-            "SpecificEffects": "\u4f7f\u7528\u706b\u7bad\u653b\u51fb\u65f6\uff0c\u6218\u540e\u5bf9\u6253\u51fb\u8303\u56f4\u5185\u7684\u53cb\u519b\u65bd\u52a0<color=#F74848>1</color>\u4e2a\u968f\u673a\u589e\u76ca\u6548\u679c\uff0c\u6301\u7eed<color=#F74848>2</color>\u56de\u5408",
+            "name": "Advanced Warhead",
+            "SpecificEffects": "When attacking with Rocket Launcher, grants <color=#F74848>1</color> random buff to allies within the attack AOE, lasting for <color=#F74848>2</color> turns.",
             "BufCarried": "4010051",
             "SkillIcon": "Icon_skill_passive_5189",
             "icon": "Icon_skill_passive_5189",
@@ -48007,8 +48007,8 @@
           "skill": {
             "ID": "401006",
             "remarks": "\u7f57\u65af\u739b\u4e3d-\u4eff\u751f\u7535\u8111",
-            "name": "\u5e7f\u57df\u8f70\u70b8",
-            "describe": "\u6d88\u8017<color=#F74848>2</color>\u53d1\u5f39\u836f\uff0c\u4f7f\u7528\u706b\u7bad\u653b\u51fb\u6240\u9009<range type=1>5\u00d75\u683c</range>\u8303\u56f4\u5185\u7684\u6240\u6709\u76ee\u6807\uff0c\u5bf9\u6bcf\u4e2a\u90e8\u4f4d\u9020\u6210<color=#F74848>0.25</color>\u500d\u8303\u56f4\u4f24\u5bb3\uff0c\u6218\u540e\u4f7f\u5168\u4f53\u53cb\u519b\u83b7\u5f97<color=#F74848>1</color>\u4e2a\u968f\u673a\u589e\u76ca\u6548\u679c\uff0c\u6301\u7eed<color=#F74848>2</color>\u56de\u5408",
+            "name": "Mass Boming",
+            "describe": "Consume <color=#F74848>2</color> rounds of ammo, use Rocket Launchers to attack all enemies within <range type=1>5\u00d75 grid</range>, dealing <color=#F74848>0.25</color> AOE DMG. After combat, grants all allies color=#F74848>1</color> random buff, lasting for <color=#F74848>2</color> turns.",
             "type": "SpecialAssault",
             "Ap": "4",
             "matchingWeaponType": "\u706b\u7bad",
@@ -48034,8 +48034,8 @@
           "weight": 1717,
           "skill": {
             "ID": "401007",
-            "name": "\u60c5\u62a5\u4f18\u52bf",
-            "SpecificEffects": "<buf ID=900123>[\u60c5\u62a5]</buf>\u5927\u4e8e\u7b49\u4e8e<color=#F74848>20</color>\u5c42\u65f6\uff0c\u53cb\u519b\u906d\u53d7\u4e3b\u52a8\u8303\u56f4\u653b\u51fb\u65f6\u906d\u53d7\u4f24\u5bb3\u964d\u4f4e<color=#F74848>15%</color>\uff0c\u6218\u540e\u83b7\u5f97<color=#F74848>1</color>\u4e2a\u968f\u673a\u589e\u76ca\u6548\u679c\uff0c\u6301\u7eed<color=#F74848>2</color>\u56de\u5408",
+            "name": "Intelligence Advantage",
+            "SpecificEffects": "When possessing <color=#F74848>20</color> or more stacks of <buf ID=900123>[Intelligence]</buf>, reduces allies AOE DMG taken by <color=#F74848>15%</color>. After combat grants <color=#F74848>1</color> random buff to those allies, lasting for <color=#F74848>2</color> turns.",
             "BufCarried": "4010071",
             "SkillIcon": "Icon_skill_passive_5222",
             "icon": "Icon_skill_passive_5222",
@@ -48060,8 +48060,8 @@
           "skill": {
             "ID": "401008",
             "remarks": "\u7f57\u65af\u739b\u4e3d-\u4eff\u751f\u7535\u8111",
-            "name": "\u63a0\u9635\u8f70\u70b8",
-            "describe": "\u540c\u65f6\u4f7f\u7528\u4e24\u95e8\u706b\u7bad\u653b\u51fb\u6240\u9009<range type=1>5\u00d75\u683c</range>\u8303\u56f4\u5185\u7684\u6240\u6709\u76ee\u6807\uff0c\u5bf9\u6bcf\u4e2a\u90e8\u4f4d\u9020\u6210<color=#F74848>2\u00d70.15</color>\u500d\u8303\u56f4\u4f24\u5bb3\uff0c\u6bcf\u547d\u4e2d<color=#F74848>1</color>\u540d\u76ee\u6807\uff0c\u6218\u540e\u4f7f\u5168\u4f53\u53cb\u519b\u83b7\u5f97<color=#F74848>1</color>\u5c42<buf ID=4010082>[\u5947\u88ad\u6218\u672f]</buf>\uff0c\u53ef\u53e0\u52a0<color=#F74848>5</color>\u5c42\uff0c\u5355\u6b21\u653b\u51fb\u6700\u591a\u83b7\u5f97<color=#F74848>5</color>\u5c42",
+            "name": "Selective Bombing",
+            "describe": "Use two Rocket Launchers to attack all enemies within <range type=1>5\u00d75 grid</range>, dealing <color=#F74848>2\u00d70.15</color> AOE DMG. For each <color=#F74848>1</color> target hit, grants all allies <color=#F74848>1</color> stack of <buf ID=4010082>[Surprise Attack Tactic]</buf>, up to <color=#F74848>5</color> stacks. Each attack can only obtain a maximum of <color=#F74848>5</color> stacks.",
             "type": "SpecialAssault",
             "Ap": "6",
             "matchingWeaponType": "\u706b\u7bad",
@@ -48084,7 +48084,21 @@
           "AttributeBonus": "PilotBasePropertyDefenseAdd:15",
           "icon": "3-1",
           "Status": 1,
-          "weight": 1719
+          "weight": 1719,
+          "skill": {
+            "ID": "700024",
+            "remarks": "\u77ed\u8def\u706b\u7bad",
+            "name": "Graphite Warhead",
+            "describe": "Uses Rocket Launcher to attack all targets within a <range type=1>3*3 tile area</range>, dealing <color=#F74848>0.25x</color> AoE DMG. After combat, inflict <buf ID=3006502>[Short Circuit I]</buf> on the targets hit, effective <color=#F74848>1</color> time.",
+            "type": "SpecialAssault",
+            "Ap": "4",
+            "matchingWeaponType": "RK",
+            "SkillIcon": "Icon_skill_order_1008",
+            "icon": "Icon_skill_order_1008",
+            "Status": 1,
+            "weight": 306,
+            "lang": "en"
+          }
         },
         {
           "ID": "1010313320",
@@ -48327,7 +48341,7 @@
           "weight": 1735
         }
       ],
-      "version": "1.0"
+      "version": "2.2"
     },
     {
       "ID": "10103113",

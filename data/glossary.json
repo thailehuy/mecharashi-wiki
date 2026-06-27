@@ -202,7 +202,7 @@
     },
     "900112": {
       "name": "Positional Advantage I",
-      "effect": "Grants a +5% combat bonus based on favorable positioning relative to the target."
+      "effect": "Critical hit chance increases by <color=#F74848>3%</color> and DMG taken is reduced by <color=#F74848>2%</color> per stack, up to <color=#F74848>8</color> stacks. All stacks are removed after exiting [Directional Rack]"
     },
     "900118": {
       "name": "Valkyrie Mode",
@@ -554,7 +554,7 @@
     },
     "7100901": {
       "name": "Movement UP",
-      "effect": "Increases movement range."
+      "effect": "Increases movement range by 1."
     },
     "7101003": {
       "name": "Hit Rate Down II",
@@ -615,16 +615,46 @@
     "7102005": {
       "name": "DMG Taken Down III",
       "effect": "DMG Taken -15%."
+    },
+    "4010500": {
+      "name": "Intelligence",
+      "effect": "Each stack increases allies DMG dealt by <color=#F74848>0.8%</color>, upto a maximum of <color=#F74848>25</color> stacks. <color=#F74848>1</color> stack is consumed when attacking."
+    },
+    "4010082": {
+      "name": "Surprise Attack Tactic",
+      "effect": "When actively attacking, increases critical hit rate by <color=#F74848>15%</color>. <color=#F74848>1</color> is consumed after attacking."
     }
   },
   "skill": {
     "301144": {
       "name": "Rapid Realignment",
+      "Ap": "0",
+      "CD": "1",
       "effect": "Quickly moves to an empty tile within <color=#F74848>3</color> tiles and reselects rack direction without exiting [Directional Rack] Mode"
     },
     "301150": {
       "name": "Directional Rack",
+      "Ap": "0",
+      "CD": "1",
       "effect": "Enters [Directional Rack] Mode: Unable to move, Sniper Rifle's attack range becomes fixed-direction <color=#F5C542>fan-shaped 5-tile</color> area. Can continue attacking after using [Directional Rack]. Automatically exits [Directional Rack] Mode en an Arm is destroyed. <color=#F5C542>[Retract]</color> is available in [Directional Rack] Mode. After retracting, can continue moving."
+    },
+    "4010041": {
+      "name": "Strike Tactic",
+      "Ap": "2",
+      "CD": "2",
+      "effect": "Grants <color=#F74848>1</color> ally anywhere on the map [Strong Attack Tactics], increasing their Final DMG dealt by <color=#F74848>20%</color>, lasting till the end of action. Gains <color=#F74848>2</color> stacks of [Intelligence]"
+    },
+    "4010042": {
+      "name": "Maneuver Tactic",
+      "Ap": "3",
+      "CD": "2",
+      "effect": "Grants all allies [Movement UP], increasing their movement by <color=#F74848>1</color>, lasting for <color=#F74848>1</color> turn. Gains <color=#F74848>3</color> stacks of [Intelligence]"
+    },
+    "4010043": {
+      "name": "All-out Tactic",
+      "Ap": "4",
+      "CD": "2",
+      "effect": "Grants all allies [All-out Attack], increasing their DMG dealt by <color=#F74848>25%</color>, lasting till the end of action. Gains <color=#F74848>4</color> stacks of [Intelligence]"
     }
   }
 }

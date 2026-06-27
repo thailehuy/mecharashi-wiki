@@ -1,16 +1,16 @@
 {
   "PilotName": "罗斯玛丽",
-  "RealName": "罗斯玛丽·琴",
+  "RealName": "Rosemary Jean",
   "Gender": "Female",
   "Profession": "Launcher",
   "Occupation": "Tactician",
   "Talent0_2Ability": {
-    "name": "掌舵人",
-    "SpecificEffects": "使用火箭主动攻击时，每命中<color=#F74848>1</color>名目标，获得<color=#F74848>1</color>层<buf ID=4010500>[情报]</buf>，可叠加，最多<color=#F74848>25</color>层；火箭的负重降低<color=#F74848>130</color>"
+    "name": "Helmswoman",
+    "SpecificEffects": "When using rockets to actively attack, for each <color=#F74848>1</color> enemy hit, gains <color=#F74848>1</color> stack of <buf ID=4010500>[Intelligence]</buf>, up to <color=#F74848>25</color> stacks. Rockets weights are reduced by <color=#F74848>130</color>."
   },
   "Talent3_5Ability": {
-    "name": "掌舵人",
-    "SpecificEffects": "使用火箭主动攻击时，每命中<color=#F74848>1</color>名目标，获得<color=#F74848>1</color>层<buf ID=4010500>[情报]</buf>，可叠加，最多<color=#F74848>25</color>层；火箭的负重降低<color=#F74848>130</color>；\n出击时，获得<color=#F74848>10</color>层<buf ID=4010500>[情报]</buf>"
+    "name": "Helmswoman",
+    "SpecificEffects": "When using rockets to actively attack, for each <color=#F74848>1</color> enemy hit, gains <color=#F74848>1</color> stack of <buf ID=4010500>[Intelligence]</buf>, up to <color=#F74848>25</color> stacks. Rockets weights are reduced by <color=#F74848>130</color>.\nAt the start of battle, obtains <color=#F74848>10</color> stacks of <buf ID=4010500>[Intelligence]</buf>"
   },
   "skills": {
     "400001": {
@@ -18,39 +18,44 @@
       "describe": "",
       "SpecificEffects": "When a Tactical Weapon runs out of ammo, trigger <buf ID=900029>[Auto Load]</buf>. This process takes <color=#F74848>3</color> turns."
     },
+    "700024": {
+      "name": "Graphite Warhead",
+      "describe": "Uses Rocket Launcher to attack all targets within a <range type=1>3*3 tile area</range>, dealing <color=#F74848>0.25x</color> AoE DMG. After combat, inflict <buf ID=3006502>[Short Circuit I]</buf> on the targets hit, effective <color=#F74848>1</color> time.",
+      "SpecificEffects": ""
+    },
     "401002": {
-      "name": "知己知彼",
+      "name": "Know your enemies",
       "describe": "",
-      "SpecificEffects": "行动开始时，若<buf ID=900123>[情报]</buf>层数小于等于<color=#F74848>10</color>层，则不会减少"
+      "SpecificEffects": "When actively attacking, if the number of <buf ID=900123>[Intelligence]</buf> stacks are less than <color=#F74848>10</color>, no stacks will be consumed"
     },
     "401003": {
-      "name": "运筹",
-      "describe": "使火箭的弹数完全回复，并获得<color=#F74848>2</color>层<buf ID=900123>[情报]</buf>，然后可使用剩余移动力继续行动",
+      "name": "Planning",
+      "describe": "Completely refills Rocket Launchers ammo Magazine and gains <color=#F74848>2</color> stacks of <buf ID=900123>[Intelligence]</buf>. Can continue action with remaining movement.",
       "SpecificEffects": ""
     },
     "401004": {
-      "name": "战术指挥",
-      "describe": "选择<color=#F74848>1</color>个技能进行释放。使用后切换为<skill activeSkill=4010041>[强攻战术]</skill>、<skill activeSkill=4010042>[机动战术]</skill>、<skill activeSkill=4010043>[总攻战术]</skill>",
+      "name": "Tactical Command",
+      "describe": "Choose <color=#F74848>1</color> skill to switch to from <skill activeSkill=4010041>[Strike Tactic]</skill>, <skill activeSkill=4010042>[Maneuver Tactic]</skill> or <skill activeSkill=4010043>[All-out Tactic]</skill>.",
       "SpecificEffects": ""
     },
     "401005": {
-      "name": "增益弹头",
+      "name": "Advanced Warhead",
       "describe": "",
-      "SpecificEffects": "使用火箭攻击时，战后对打击范围内的友军施加<color=#F74848>1</color>个随机增益效果，持续<color=#F74848>2</color>回合"
+      "SpecificEffects": "When attacking with Rocket Launcher, grants <color=#F74848>1</color> random buff to allies within the attack AOE, lasting for <color=#F74848>2</color> turns."
     },
     "401006": {
-      "name": "广域轰炸",
-      "describe": "消耗<color=#F74848>2</color>发弹药，使用火箭攻击所选<range type=1>5×5格</range>范围内的所有目标，对每个部位造成<color=#F74848>0.25</color>倍范围伤害，战后使全体友军获得<color=#F74848>1</color>个随机增益效果，持续<color=#F74848>2</color>回合",
+      "name": "Mass Boming",
+      "describe": "Consume <color=#F74848>2</color> rounds of ammo, use Rocket Launchers to attack all enemies within <range type=1>5×5 grid</range>, dealing <color=#F74848>0.25</color> AOE DMG. After combat, grants all allies color=#F74848>1</color> random buff, lasting for <color=#F74848>2</color> turns.",
       "SpecificEffects": ""
     },
     "401007": {
-      "name": "情报优势",
+      "name": "Intelligence Advantage",
       "describe": "",
-      "SpecificEffects": "<buf ID=900123>[情报]</buf>大于等于<color=#F74848>20</color>层时，友军遭受主动范围攻击时遭受伤害降低<color=#F74848>15%</color>，战后获得<color=#F74848>1</color>个随机增益效果，持续<color=#F74848>2</color>回合"
+      "SpecificEffects": "When possessing <color=#F74848>20</color> or more stacks of <buf ID=900123>[Intelligence]</buf>, reduces allies AOE DMG taken by <color=#F74848>15%</color>. After combat grants <color=#F74848>1</color> random buff to those allies, lasting for <color=#F74848>2</color> turns."
     },
     "401008": {
-      "name": "掠阵轰炸",
-      "describe": "同时使用两门火箭攻击所选<range type=1>5×5格</range>范围内的所有目标，对每个部位造成<color=#F74848>2×0.15</color>倍范围伤害，每命中<color=#F74848>1</color>名目标，战后使全体友军获得<color=#F74848>1</color>层<buf ID=4010082>[奇袭战术]</buf>，可叠加<color=#F74848>5</color>层，单次攻击最多获得<color=#F74848>5</color>层",
+      "name": "Selective Bombing",
+      "describe": "Use two Rocket Launchers to attack all enemies within <range type=1>5×5 grid</range>, dealing <color=#F74848>2×0.15</color> AOE DMG. For each <color=#F74848>1</color> target hit, grants all allies <color=#F74848>1</color> stack of <buf ID=4010082>[Surprise Attack Tactic]</buf>, up to <color=#F74848>5</color> stacks. Each attack can only obtain a maximum of <color=#F74848>5</color> stacks.",
       "SpecificEffects": ""
     }
   },
@@ -104,8 +109,8 @@
       "SpecificEffects": "After triggering <buf ID=900004>[Re-ATK]</buf>, it no longer reduces final damage."
     },
     "401041": {
-      "name": "算无遗策1",
-      "SpecificEffects": "出击时额外获得<color=#F74848>5</color>层<buf ID=900123>[情报]</buf>"
+      "name": "Flawless Calculation 1",
+      "SpecificEffects": "When actively attacking, additionally gains <color=#F74848>5</color> stacks of <buf ID=900123>[Intelligence]</buf>."
     },
     "600042": {
       "name": "AP Optimization 4",
@@ -116,17 +121,17 @@
       "SpecificEffects": "When destroying a target, additionally restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>2</color> times per turn."
     },
     "401044": {
-      "name": "算无遗策2",
-      "SpecificEffects": "<buf ID=900123>[情报]</buf>效果提升至使所有友军伤害提升<color=#F74848>1.2%</color>，行动开始时移除<color=#F74848>2</color>层"
+      "name": "Flawless Calculation 2",
+      "SpecificEffects": "<buf ID=900123>[Intelligence]</buf> effect changes to: increases all allies DMG dealt by <color=#F74848>1.2%</color>. <color=#F74848>2</color> stacks are consumed when attacking."
     },
     "401045": {
-      "name": "算无遗策3",
-      "SpecificEffects": "<buf ID=900123>[情报]</buf>大于等于<color=#F74848>20</color>层时，AP回复值<color=#F74848>+1</color>"
+      "name": "Flawless Calculation 3",
+      "SpecificEffects": "When <buf ID=900123>[Intelligence]</buf> stacks are <color=#F74848>20</color> or more, AP recovery increases by <color=#F74848>+1</color>."
     },
     "401046": {
-      "name": "算无遗策4",
-      "SpecificEffects": "<buf ID=900123>[情报]</buf>的上限提升至<color=#F74848>35</color>层，且<buf ID=900123>[情报]</buf>对自身效果提升<color=#F74848>75%</color>"
+      "name": "Flawless Calculation 4",
+      "SpecificEffects": "<buf ID=900123>[Intelligence]</buf> maximum stacks increase to <color=#F74848>35</color>, and <buf ID=900123>[Intelligence]</buf> effect is increased by <color=#F74848>75%</color>."
     }
   },
-  "version": "1.0"
+  "version": "2.2"
 }
