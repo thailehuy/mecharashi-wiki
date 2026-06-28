@@ -1,1 +1,137 @@
-{"PilotName": "Tiphys", "RealName": "Tiphys Mill", "Gender": "Male", "Profession": "Defender", "Occupation": "Guardian", "Talent0_2Ability": {"name": "Battle-Hardened", "SpecificEffects": "Can use the <skill mainSkill=600850>[Defense Field]</skill> code. This skill has a <color=#F74848>2</color>-turn trigger interval."}, "Talent3_5Ability": {"name": "Battle-Hardened", "SpecificEffects": "Can use the <skill mainSkill=600850>[Defense Field]</skill> code. This skill has a <color=#F74848>2</color>-turn trigger interval.\nWhen on the battlefield, grants DMG <color=#F74848>+10%</color> to allies within a <buf ID=6008501>[Defense Field]</buf>."}, "skills": {"600001": {"name": "Entrenched 1", "describe": "Protects allies within <color=#F74848>2</color> adjacent tiles from Assault and Ranged attacks. Triggers up to <color=#F74848>2</color> times per turn and lasts <color=#F74848>2</color> turns. Additionally, gains <buf ID=900022>[Defensive Stance I]</buf>. Can only trigger <color=#F74848>1</color> time per turn.", "SpecificEffects": ""}, "600802": {"name": "Mobile Interception", "describe": "Uses a Machine Gun to attack a target, dealing <color=#F74848>1.15</color>x DMG. Inflicts <buf ID=7101506>[Movement Inhibition I]</buf> on the target hit for <color=#F74848>1</color> turn. If the target is within an ally <buf ID=6008501>[Defense Field]</buf>, also inflicts <buf ID=1004021>[Weapon Inhibition]</buf>, lasting for <color=#F74848>1</color> turn.", "SpecificEffects": ""}, "600803": {"name": "Revitalize", "describe": "", "SpecificEffects": "Each time a destroyed part is repaired, DMG Dealt <color=#F74848>+5%</color>, up to <color=#F74848>20%</color>."}, "600804": {"name": "Ironbound Respect", "describe": "Protects allies within <color=#F74848>2</color> adjacent tiles from Assault and Ranged attacks. Can trigger up to <color=#F74848>2</color> times per turn. Also, grants <buf ID=6008041>[Magnetoresistive Field]</buf> to self and deployed <buf ID=6008501>[Defense Field]</buf> terrain. Lasts for <color=#F74848>2</color> turns.", "SpecificEffects": ""}, "600805": {"name": "Locational Advantage", "describe": "", "SpecificEffects": "When receiving active repairs within an allied <buf ID=6008501>[Defense Field]</buf>, Repair AMT <color=#F74848>+30%</color> for the part with the lowest HP."}, "600806": {"name": "Airspace Blockade", "describe": "Designates <color=#F74848>1</color> enemy on the battlefield to afflict with <buf ID=6008061>[Airspace Blockade]</buf>.\nThis can only be used when a <buf ID=6008501>[Defense Field]</buf> is deployed.", "SpecificEffects": ""}, "600807": {"name": "Frontline Leadership", "describe": "", "SpecificEffects": "DMG Taken <color=#F74848>-10%</color>. For each ally within a <buf ID=6008501>[Defense Field]</buf>, DMG <color=#F74848>+5%</color> on retaliation, up to <color=#F74848>15%</color>."}, "600808": {"name": "Landslide", "describe": "Uses a Machine Gun to attack all targets within a <range type=1>3x2-tile area ahead</range>, dealing <color=#F74848>0.6</color>x AoE DMG. If the target is within an ally <buf ID=6008501>[Defense Field]</buf>, also inflicts <buf ID=1009083>[Intimidation]</buf> on targets hit, lasting for <color=#F74848>1</color> turn.", "SpecificEffects": ""}, "600509": {"name": "Guard", "describe": "Protects allies within <color=#F74848>2</color> adjacent tiles from Assault and Ranged attacks. Triggers up to <color=#F74848>2</color> times per turn and lasts <color=#F74848>2</color> turns. Additionally, gains <buf ID=7100702>[Defensive Stance I]</buf>. Can only trigger <color=#F74848>1</color> time per turn.", "SpecificEffects": ""}}, "neuralPassives": {"600011": {"name": "Entrenched 2", "SpecificEffects": "When performing <buf ID=900022>[Guard]</buf>, DMG Taken <color=#F74848>-10%</color>."}, "600012": {"name": "Armor Specialization 1", "SpecificEffects": "DMG <color=#F74848>+20%</color> on Retaliation."}, "600013": {"name": "AP Optimization 1", "SpecificEffects": "Initial AP <color=#F74848>+1</color>."}, "600021": {"name": "Entrenched 3", "SpecificEffects": "<buf ID=900022>[Guard]</buf>'s effective times per turn <color=#F74848>+1</color>."}, "600022": {"name": "Armor Specialization 2", "SpecificEffects": "When performing <buf ID=900022>[Guard]</buf>, restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>1</color> time per turn."}, "600023": {"name": "AP Optimization 2", "SpecificEffects": "AP Cap <color=#F74848>+1</color>."}, "600031": {"name": "Indestructible 1", "SpecificEffects": "When the Arm suffers overdamage, trigger <buf ID=900003>[Guts]</buf>, locking to <color=#F74848>1</color> HP, effective <color=#F74848>1</color> time per battle."}, "600032": {"name": "AP Optimization 3", "SpecificEffects": "AP Cap <color=#F74848>+1</color>."}, "600033": {"name": "Adaptive Warfare 1", "SpecificEffects": "At the end of the action, if an Active Attack was not initiated this turn, an extra <color=#F74848>2</color> tiles can be moved."}, "600034": {"name": "Indestructible 2", "SpecificEffects": "The part that triggers <buf ID=900003>[Guts]</buf> restores <color=#F74848>35%</color> of its HP after combat."}, "600035": {"name": "Indestructible 3", "SpecificEffects": "Make <buf ID=900003>[Guts]</buf> able to trigger again after <color=#F74848>3</color> turns, with no effective time limit for each battle."}, "600036": {"name": "Indestructible 4", "SpecificEffects": "When any part suffers overdamage, trigger <buf ID=900003>[Guts]</buf>."}, "600042": {"name": "AP Optimization 4", "SpecificEffects": "AP Cap <color=#F74848>+1</color>."}, "600043": {"name": "Entrenched 4", "SpecificEffects": "<buf ID=900022>[Guard]</buf> can now be triggered an unlimited number of times per turn."}, "600841": {"name": "Invictus Legacy 1", "SpecificEffects": "<buf ID=6008501>[Defense Field]</buf> duration <color=#F74848>+1</color> turn."}, "600844": {"name": "Invictus Legacy 2", "SpecificEffects": "When deploying a <buf ID=6008501>[Defense Field]</buf>, skill range is extended by <color=#F74848>1</color> tile."}, "600845": {"name": "Invictus Legacy 3", "SpecificEffects": "When on the battlefield, allies deployed within a <buf ID=6008501>[Defense Field]</buf> are immune to <buf ID=900079>[Displacement]</buf> effects from enemy units and cannot be affected by <buf ID=900080>[Guard Disabled]</buf> and <buf ID=900081>[Ignore Guard]</buf>-style effects."}, "600846": {"name": "Invictus Legacy 4", "SpecificEffects": "When <buf ID=6008501>[Defense Field]</buf> expires, deals <buf ID=900017>[Fixed DMG]</buf> equal to <color=#F74848>15%</color> of Max HP to all enemy parts within the deployed area and its surrounding <color=#F74848>1</color> ring."}}, "version": "1.4"}
+{
+  "PilotName": "Tiphys",
+  "RealName": "Tiphys Mill",
+  "Gender": "Male",
+  "Profession": "Defender",
+  "Occupation": "Guardian",
+  "Talent0_2Ability": {
+    "name": "Battle-Hardened",
+    "SpecificEffects": "Can use the <skill mainSkill=600850>[Defense Field]</skill> code. This skill has a <color=#F74848>2</color>-turn trigger interval."
+  },
+  "Talent3_5Ability": {
+    "name": "Battle-Hardened",
+    "SpecificEffects": "Can use the <skill mainSkill=600850>[Defense Field]</skill> code. This skill has a <color=#F74848>2</color>-turn trigger interval.\nWhen on the battlefield, grants DMG <color=#F74848>+10%</color> to allies within a <buf ID=6008501>[Defense Field]</buf>."
+  },
+  "skills": {
+    "600001": {
+      "name": "Entrenched 1",
+      "describe": "Protects allies within <color=#F74848>2</color> adjacent tiles from Assault and Ranged attacks. Triggers up to <color=#F74848>2</color> times per turn and lasts <color=#F74848>2</color> turns. Additionally, gains <buf ID=900022>[Defensive Stance I]</buf>. Can only trigger <color=#F74848>1</color> time per turn.",
+      "SpecificEffects": ""
+    },
+    "600802": {
+      "name": "Mobile Interception",
+      "describe": "Uses a Machine Gun to attack a target, dealing <color=#F74848>1.15</color>x DMG. Inflicts <buf ID=7101506>[Movement Inhibition I]</buf> on the target hit for <color=#F74848>1</color> turn. If the target is within an ally <buf ID=6008501>[Defense Field]</buf>, also inflicts <buf ID=1004021>[Weapon Inhibition]</buf>, lasting for <color=#F74848>1</color> turn.",
+      "SpecificEffects": ""
+    },
+    "600803": {
+      "name": "Revitalize",
+      "describe": "",
+      "SpecificEffects": "Each time a destroyed part is repaired, DMG Dealt <color=#F74848>+5%</color>, up to <color=#F74848>20%</color>."
+    },
+    "600804": {
+      "name": "Ironbound Respect",
+      "describe": "Protects allies within <color=#F74848>2</color> adjacent tiles from Assault and Ranged attacks. Can trigger up to <color=#F74848>2</color> times per turn. Also, grants <buf ID=6008041>[Magnetoresistive Field]</buf> to self and deployed <buf ID=6008501>[Defense Field]</buf> terrain. Lasts for <color=#F74848>2</color> turns.",
+      "SpecificEffects": ""
+    },
+    "600805": {
+      "name": "Locational Advantage",
+      "describe": "",
+      "SpecificEffects": "When receiving active repairs within an allied <buf ID=6008501>[Defense Field]</buf>, Repair AMT <color=#F74848>+30%</color> for the part with the lowest HP."
+    },
+    "600806": {
+      "name": "Airspace Blockade",
+      "describe": "Designates <color=#F74848>1</color> enemy on the battlefield to afflict with <buf ID=6008061>[Airspace Blockade]</buf>.\nThis can only be used when a <buf ID=6008501>[Defense Field]</buf> is deployed.",
+      "SpecificEffects": ""
+    },
+    "600807": {
+      "name": "Frontline Leadership",
+      "describe": "",
+      "SpecificEffects": "DMG Taken <color=#F74848>-10%</color>. For each ally within a <buf ID=6008501>[Defense Field]</buf>, DMG <color=#F74848>+5%</color> on retaliation, up to <color=#F74848>15%</color>."
+    },
+    "600808": {
+      "name": "Landslide",
+      "describe": "Uses a Machine Gun to attack all targets within a <range type=1>3x2-tile area ahead</range>, dealing <color=#F74848>0.6</color>x AoE DMG. If the target is within an ally <buf ID=6008501>[Defense Field]</buf>, also inflicts <buf ID=1009083>[Intimidation]</buf> on targets hit, lasting for <color=#F74848>1</color> turn.",
+      "SpecificEffects": ""
+    },
+    "600509": {
+      "name": "Guard",
+      "describe": "Protects allies within <color=#F74848>2</color> adjacent tiles from Assault and Ranged attacks. Triggers up to <color=#F74848>2</color> times per turn and lasts <color=#F74848>2</color> turns. Additionally, gains <buf ID=7100702>[Defensive Stance I]</buf>. Can only trigger <color=#F74848>1</color> time per turn.",
+      "SpecificEffects": ""
+    }
+  },
+  "neuralPassives": {
+    "600011": {
+      "name": "Entrenched 2",
+      "SpecificEffects": "When performing <buf ID=900022>[Guard]</buf>, DMG Taken <color=#F74848>-10%</color>."
+    },
+    "600012": {
+      "name": "Armor Specialization 1",
+      "SpecificEffects": "DMG <color=#F74848>+20%</color> on Retaliation."
+    },
+    "600013": {
+      "name": "AP Optimization 1",
+      "SpecificEffects": "Initial AP <color=#F74848>+1</color>."
+    },
+    "600021": {
+      "name": "Entrenched 3",
+      "SpecificEffects": "<buf ID=900022>[Guard]</buf>'s effective times per turn <color=#F74848>+1</color>."
+    },
+    "600022": {
+      "name": "Armor Specialization 2",
+      "SpecificEffects": "When performing <buf ID=900022>[Guard]</buf>, restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>1</color> time per turn."
+    },
+    "600023": {
+      "name": "AP Optimization 2",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
+    },
+    "600031": {
+      "name": "Indestructible 1",
+      "SpecificEffects": "When the Arm suffers overdamage, trigger <buf ID=900003>[Guts]</buf>, locking to <color=#F74848>1</color> HP, effective <color=#F74848>1</color> time per battle."
+    },
+    "600032": {
+      "name": "AP Optimization 3",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
+    },
+    "600033": {
+      "name": "Adaptive Warfare 1",
+      "SpecificEffects": "At the end of the action, if an Active Attack was not initiated this turn, an extra <color=#F74848>2</color> tiles can be moved."
+    },
+    "600034": {
+      "name": "Indestructible 2",
+      "SpecificEffects": "The part that triggers <buf ID=900003>[Guts]</buf> restores <color=#F74848>35%</color> of its HP after combat."
+    },
+    "600035": {
+      "name": "Indestructible 3",
+      "SpecificEffects": "Make <buf ID=900003>[Guts]</buf> able to trigger again after <color=#F74848>3</color> turns, with no effective time limit for each battle."
+    },
+    "600036": {
+      "name": "Indestructible 4",
+      "SpecificEffects": "When any part suffers overdamage, trigger <buf ID=900003>[Guts]</buf>."
+    },
+    "600042": {
+      "name": "AP Optimization 4",
+      "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
+    },
+    "600043": {
+      "name": "Entrenched 4",
+      "SpecificEffects": "<buf ID=900022>[Guard]</buf> can now be triggered an unlimited number of times per turn."
+    },
+    "600841": {
+      "name": "Invictus Legacy 1",
+      "SpecificEffects": "<buf ID=6008501>[Defense Field]</buf> duration <color=#F74848>+1</color> turn."
+    },
+    "600844": {
+      "name": "Invictus Legacy 2",
+      "SpecificEffects": "When deploying a <buf ID=6008501>[Defense Field]</buf>, skill range is extended by <color=#F74848>1</color> tile."
+    },
+    "600845": {
+      "name": "Invictus Legacy 3",
+      "SpecificEffects": "When on the battlefield, allies deployed within a <buf ID=6008501>[Defense Field]</buf> are immune to <buf ID=900079>[Displacement]</buf> effects from enemy units and cannot be affected by <buf ID=900080>[Guard Disabled]</buf> and <buf ID=900081>[Ignore Guard]</buf>-style effects."
+    },
+    "600846": {
+      "name": "Invictus Legacy 4",
+      "SpecificEffects": "When <buf ID=6008501>[Defense Field]</buf> expires, deals <buf ID=900017>[Fixed DMG]</buf> equal to <color=#F74848>15%</color> of Max HP to all enemy parts within the deployed area and its surrounding <color=#F74848>1</color> ring."
+    }
+  },
+  "version": "1.3"
+}
