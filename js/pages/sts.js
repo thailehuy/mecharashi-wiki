@@ -12,7 +12,7 @@ Pages.sts = {
   _activeRanks:    {},
   _activeTypes:    {},
   _activeVersions: {},
-  _enOnly:         false,
+  _enOnly:         true,
   _lastViewed:     null,
 
   // ── Routing entry point ────────────────────────────────────────────────────
@@ -81,6 +81,7 @@ Pages.sts = {
         $(this).toggleClass('active', !!self._activeVersions[v]);
         self._renderGrid(mechs);
       });
+      $('#toggle-en-sts').toggleClass('active', self._enOnly);
       $(document).on('click.sts', '#toggle-en-sts', function () {
         self._enOnly = !self._enOnly;
         $(this).toggleClass('active', self._enOnly);

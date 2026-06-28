@@ -15,7 +15,7 @@ Pages.pilots = {
   _activeRanks:       {},
   _activeOccupations: {},
   _activeVersions:    {},
-  _enOnly:            false,
+  _enOnly:            true,
   _lastViewed:        null,
 
   // ── Routing entry point ────────────────────────────────────────────────────
@@ -84,6 +84,7 @@ Pages.pilots = {
         $(this).toggleClass('active', !!self._activeVersions[v]);
         self._renderGrid(pilots);
       });
+      $('#toggle-en-pilots').toggleClass('active', self._enOnly);
       $(document).on('click.pilots', '#toggle-en-pilots', function () {
         self._enOnly = !self._enOnly;
         $(this).toggleClass('active', self._enOnly);
