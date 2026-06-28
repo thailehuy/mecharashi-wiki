@@ -47,7 +47,10 @@ for path in sorted(glob.glob(f'{DIR}/[0-9]*.json')):
     apply_translation(entry, t)
     if t.get('manjiFirepower'):
         entry['manjiFirepower'] = t['manjiFirepower']
+    if t.get('hiddenModules'):
+        entry['hiddenModules'] = t['hiddenModules']
     entry['version'] = t.get('version', '1.0')
+    entry['enTranslation'] = all(ord(c) < 128 for c in entry.get('name', ''))
     mechs.append(entry)
 
 order = {'SSR': 0, 'SR': 1, 'R': 2}

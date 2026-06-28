@@ -1,31 +1,31 @@
 {
-  "name": "帕斯卡",
+  "name": "Pascal",
   "introduce": "NV-XX90 帕斯卡\n由黑曜石和Nvidia联合开发的中型机兵。知名电子元件厂商Nvidia的跨界力作，在维持一贯的潮流外形与强大性能外，还针对米赫玛地区的独特地形气候做了专项适配。相信在不久的将来，持续探索、不断超越的Nvidia会在更多的领域打响他们的名号，持续收获支持者们的认可。",
   "modules": {
     "20344": {
-      "name": "追光框架",
-      "SpecificEffects": "机体剩余出力每<color=#F74848>50</color>点提升<color=#F74848>3%</color>伤害，最多<color=#F74848>15%</color>"
+      "name": "RTX Frame",
+      "SpecificEffects": "When there is a surplus of ST Power, for every <color=#F74848>50</color> surplus Power, DMG +<color=#F74848>3%</color>, up to <color=#F74848>15%</color>"
     },
     "20343": {
-      "name": "汇编矩阵",
-      "SpecificEffects": "固定装备[冲击炮]，可使用<skill mainSkill=20342>[退敌激波]</skill>；同时携带两门[冲击炮]时，可使用<skill mainSkill=20343>[浪潮来袭]</skill>"
+      "name": "DLSS",
+      "SpecificEffects": "Stationary Arm [Blaster]. Can execute <skill mainSkill=20342>[Shock Wave]</skill> with a single [Blaster]. Can execute <skill mainSkill=20343>[High Tide]</skill> with two [Blasters]."
     },
     "30068": {
-      "name": "蓄能模组",
-      "SpecificEffects": "主动攻击前移动距离小于等于<color=#F74848>2</color>格时，伤害提升<color=#F74848>18%</color>；\n行动结束时，立即获得<color=#F74848>1</color>AP，该效果间隔<color=#F74848>1</color>回合才可再次触发"
+      "name": "Accumulator Mod",
+      "SpecificEffects": "Before actively attacking, if distance moved is <color=#F74848>2</color> tiles or less, DMG +<color=#F74848>18%</color>;\nAt end of action, immediately gains <color=#F74848>1</color> AP. This effect has a <color=#F74848>1</color>-turn trigger interval."
     },
     "20342": {
-      "name": "深采模型",
-      "SpecificEffects": "固定装备[冲击炮]，可使用<skill mainSkill=20342>[退敌激波]</skill>；同时携带两门[冲击炮]时，可使用<skill mainSkill=20343>[浪潮来袭]</skill>"
+      "name": "MMA PTX",
+      "SpecificEffects": "Stationary Arm [Blaster]. Can execute <skill mainSkill=20342>[Shock Wave]</skill> with a single [Blaster]. Can execute <skill mainSkill=20343>[High Tide]</skill> with two [Blasters]."
     },
     "20341": {
-      "name": "张量核心",
-      "SpecificEffects": "行动结束时，若本次行动没有移动过，随机为<color=#F74848>1</color>个弹药未满的武器装填<color=#F74848>1</color>发弹药"
+      "name": "Tensor Core",
+      "SpecificEffects": "At end of action, if no movement occurred during this action, randomly loads <color=#F74848>1</color> Ammo for <color=#F74848>1</color> non-exhausted weapon."
     },
     "40264": {
-      "name": "出力模组",
-      "SpecificEffects": "机兵整体出力增加<color=#F74848>100</color>"
+      "name": "Power Mod",
+      "SpecificEffects": "ST Power +<color=#F74848>100</color>"
     }
   },
-  "version": "1.0"
+  "version": "1.2"
 }

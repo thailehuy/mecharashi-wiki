@@ -1,19 +1,50 @@
 {
-  "name": "复仇女神",
+  "name": "Erinys",
   "introduce": "XR-03-E 复仇女神\n由北陆联合和黑曜石联合研发的中型机兵。名义上是「XR重生」及「XR审判」的后继机型，但其定制思路依然只为改变后的洛莎·迪亚兹一人服务。除了将XR上搭载的「镜像核心」矩阵化外，还针对洛莎·迪亚兹的个人战斗风格强化了突击与战术武器的联动。鉴于XR-03-E的岚物质结构在洛莎搭乘时产生的异变，相关研究人员已经展开了跟进调查。不可否认的是，XR-03-E重生的目的只有一个，那就是重新成为「洛莎·迪亚兹」审判众生的锋刃。",
   "modules": {
     "20454": {
-      "name": "镜像矩阵",
-      "SpecificEffects": "攻击时，根据连击数提升伤害，每<color=#F74848>1</color>连击提升<color=#F74848>5%</color>，最多提升<color=#F74848>30%</color>，攻击后重置"
+      "name": "Mirror Matrix",
+      "SpecificEffects": "When attacking, increases DMG based on hits. For every <color=#F74848>1</color> hit, DMG <color=#F74848>+5%</color>, up to <color=#F74848>30%</color>. Resets after attacking."
     },
     "30348": {
-      "name": "迸发模组",
-      "SpecificEffects": "攻击同时处于手持武器和背部武器的攻击范围内的目标时，造成伤害提高<color=#F74848>18%</color>；\n进入<buf ID=900121>[限制解除]</buf>状态，激活集成在部位内的额外模组效果"
+      "name": "Eruption Mod",
+      "SpecificEffects": "When attacking a target within the attack range of both the held weapon and the backpack weapon, DMG Dealt <color=#F74848>+18%</color>;\nEnters the <buf ID=900121>[Restriction Removal]</buf> state, activating the extra module effect integrated within the part."
     },
     "40274": {
-      "name": "火力模组",
-      "SpecificEffects": "火力值提升<color=#F74848>10%</color>"
+      "name": "Firepower Module",
+      "SpecificEffects": "Firepower <color=#F74848>+10%</color>."
     }
   },
-  "version": "1.0"
+  "version": "2.0",
+  "hiddenModules": [
+    {
+      "name": "Restriction Removal",
+      "icon": "Icon_entry_10086",
+      "SpecificEffects": "When Eruption Mod reaches maximum level, activates the Hidden Mod of each part.\nBody activates [Mode - Martial]\nL-Arm activates [Mode - Moonflower]\nR-Arm activates [Mode - Affection]\nLegs activate [Mode - Unhurt]."
+    },
+    {
+      "name": "Mode - Martial",
+      "part": "Body",
+      "icon": "Icon_skill_passive_1130",
+      "SpecificEffects": "A technological marvel born from the Hyper-Aptamer Experiment.\nWhen initiating combat, has a <color=#F74848>35%</color> chance to trigger <buf ID=900010>[Gusty Strike]</buf>, dealing <color=#F74848>0.4</color>x DMG."
+    },
+    {
+      "name": "Mode - Moonflower",
+      "part": "L-Arm",
+      "icon": "Icon_skill_passive_5116",
+      "SpecificEffects": "A technological marvel born from the Hyper-Aptamer Experiment.\nWhen actively attacking, inflicts <buf ID=7101702>[Armor Down II]</buf> on the target before combat, lasting for <color=#F74848>1</color> turn."
+    },
+    {
+      "name": "Mode - Affection",
+      "part": "R-Arm",
+      "icon": "Icon_skill_passive_1156",
+      "SpecificEffects": "A technological marvel born from the Hyper-Aptamer Experiment.\nAura: Grants DMG <color=#F74848>+6%</color> and Hit Rate <color=#F74848>+3%</color> to allies within <color=#F74848>2</color> adjacent tiles."
+    },
+    {
+      "name": "Mode - Unhurt",
+      "part": "Legs",
+      "icon": "Icon_skill_passive_5155",
+      "SpecificEffects": "A technological marvel born from the Hyper-Aptamer Experiment.\nWhen the Legs are broken, Movement does not decrease, and it gains the <buf ID=6005461>[Movement Down Immunity]</buf> effect."
+    }
+  ]
 }

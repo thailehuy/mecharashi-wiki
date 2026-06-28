@@ -1,19 +1,19 @@
 {
-  "name": "雷克斯",
+  "name": "Rex",
   "introduce": "HR-901 雷克斯\n由地平线开发的轻型机兵，都卜勒与格莱杨的竞品。\n手臂部位整合了平衡重武器操纵的修正模块，并采用新一代钢岚传动装置与机舱内的操控器直连。其头部加装了地平线在索敌及弹道修正领域的最新研发成果「光昼」监测器，在打击端高效耐用，在操控端安全精密。在防护设计上与都卜勒一样，采用了完全舍弃护板的高速结构。除在关键部位覆甲外，本体骨架即主要防护系统，主要依靠受击弹道计算，高速运动，即时闪避演算来保证生存能力。",
   "modules": {
     "30098": {
-      "name": "续战模组",
-      "SpecificEffects": "自身每携带<color=#F74848>1</color>个增益效果，伤害提升<color=#F74848>4.5%</color>，最多<color=#F74848>18%</color>；\n获得增益效果的持续回合<color=#F74848>+1</color>，无法与其它同类效果叠加"
+      "name": "Fortification Mod",
+      "SpecificEffects": "For each buff possessed, DMG <color=#F74848>+4.5%</color>, up to <color=#F74848>18%</color>;\nThe duration of the buff gained increases by <color=#F74848>1</color>. This effect cannot stack with similar effects."
     },
     "40024": {
       "name": "Crit Rate Mod",
       "SpecificEffects": "Crit Rate <color=#F74848>+10%</color>."
     },
     "20314": {
-      "name": "光昼监测器",
-      "SpecificEffects": "主动攻击对战后，若发动<buf ID=900004>[再攻击]</buf>，使自身伤害提升<color=#F74848>6%</color>，可叠加<color=#F74848>5</color>层，持续<color=#F74848>2</color>回合"
+      "name": "M-SWR Scope",
+      "SpecificEffects": "After initiating combat, if <buf ID=900004>[Re-ATK]</buf> is triggered, gains DMG <color=#F74848>+6%</color>. Stacks up to <color=#F74848>5</color> times. Lasts for <color=#F74848>2</color> turns."
     }
   },
-  "version": "1.0"
+  "version": "1.4"
 }

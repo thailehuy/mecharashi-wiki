@@ -1,19 +1,19 @@
 {
-  "name": "破晓者-00",
+  "name": "REV-00",
   "introduce": "REV-00 破晓者-00\n由黑曜石研发的重型机兵。其出厂编号及研发定位均参考了另外两台被命名为破晓者的机型。REV-00是为了适配REV-01及REV-02的作战风格而研发的重型机兵，其搭载的「破晓核心」能在高强度的白热化战斗中，持续增幅火力与动能，高效的外装甲能有效抵御敌机的火力，为队友提供作战空间。",
   "modules": {
     "30288": {
-      "name": "陷阵模组",
-      "SpecificEffects": "周围<color=#F74848>2</color>格内存在敌机时，伤害提升<color=#F74848>9%</color>，遭受伤害降低<color=#F74848>9%</color>；\n免疫<buf ID=900094>[百分比固定伤害]</buf>"
+      "name": "Siege Mod",
+      "SpecificEffects": "When there are enemy units within <color=#F74848>2</color> adjacent tiles, DMG <color=#F74848>+9%</color> and DMG Taken <color=#F74848>-9%</color>.\nImmune to <buf ID=900094>[Percentage-Based Fixed DMG]</buf>"
     },
     "20374": {
-      "name": "破晓核心",
-      "SpecificEffects": "对战中每造成<color=#F74848>5</color>次连击时，使自己伤害和固定伤害提升<color=#F74848>5%</color>，最多叠加<color=#F74848>5</color>层，持续<color=#F74848>2</color>回合"
+      "name": "Ascendancy Core",
+      "SpecificEffects": "In combat, gains DMG and Fixed DMG <color=#F74848>+5%</color> every <color=#F74848>5</color> hits. Stacks up to <color=#F74848>5</color> times. Lasts for <color=#F74848>2</color> turns."
     },
     "40054": {
       "name": "HP Mod",
       "SpecificEffects": "HP <color=#F74848>+10%</color>."
     }
   },
-  "version": "1.0"
+  "version": "1.6"
 }

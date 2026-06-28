@@ -1,5 +1,5 @@
 {
-  "name": "影子兔",
+  "name": "Shadowrabbit",
   "introduce": "AWT(A) EX-EX ShadowRabbit 影子兔 迷离vAGUE/头部：湿婆Shiva\n赐克·斯缇借助拉尼亚凯亚的生产线，着手开发的轻型机兵。\n其原型是曾活跃于企业联合的机型「ALTER-AWT」，其因为易于改造、便于混装的特性一度成为佣兵市场的宠儿。利用这一特性，赐克·斯缇在AWT的基础上进行了大刀阔斧的改造，他通过钢岚合金框架复现ND技术的方式，极大克服了原本框架存在的安定性与能源转化效率的问题。机身迷离vAGUE以BFB机体[影雷]为基础进行再设计，按照赐客斯缇的思路，这台「影子兔」就是自己最初开发的那台机体的影子，其搭载的驱动装置与火控系统，让其在支持高速机动的同时兼顾射击的精度，持续投入高烈度的作战，如荒原的野兔一般，灵活而致命。",
   "modules": {
     "40024": {
@@ -7,13 +7,13 @@
       "SpecificEffects": "Crit Rate <color=#F74848>+10%</color>."
     },
     "20444": {
-      "name": "影雷共振器",
-      "SpecificEffects": "自身每获得<color=#F74848>1</color>个增益效果，伤害提升<color=#F74848>6%</color>，最多<color=#F74848>30%</color>，持续<color=#F74848>2</color>回合"
+      "name": "Rad-Synchronizer",
+      "SpecificEffects": "For each buff gained, DMG <color=#F74848>+6%</color>, up to <color=#F74848>30%</color>. Lasts for <color=#F74848>2</color> turns."
     },
     "30338": {
-      "name": "哨兵模组",
-      "SpecificEffects": "与位于<buf ID=900011>[最佳射程]</buf>的目标对战时，伤害提高<color=#F74848>18%</color>；\n与位于<buf ID=900011>[最佳射程]</buf>的目标对战时，子弹数<color=#F74848>+1</color>"
+      "name": "Sentinel Mod",
+      "SpecificEffects": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, DMG <color=#F74848>+18%</color>.\nWhen in combat with a target at <buf ID=900011>[Ideal Range]</buf>, Bullets <color=#F74848>+1</color>."
     }
   },
-  "version": "1.0"
+  "version": "1.9"
 }

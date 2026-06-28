@@ -1,5 +1,5 @@
 {
-  "name": "光晖",
+  "name": "Aglow",
   "introduce": "LTX-210 光晖\n拉尼亚凯亚开发的中型维修机兵，与日弩和朝阳属于同一批研发线，是该研发线上的三号机。\n作为拉尼亚凯亚最新一代的维修机兵，光晖上搭载了与朝阳同型号的L1102-M行进驱动装置，但在维修背包以及内部传动结构上，采用了更加激进的续动方案。相比于注重机兵战前防护的朝阳，以长时间投入白热化战斗为设计目标的光晖，更注重对陷入险境和危急状况的机兵进行抢修，以及在高烈度战斗中的持续性和稳定性。然而令人惋惜的是，由于目前并不存在适合光晖发挥的战场环境，光晖的生产线是否能够存续，已经成为了拉尼亚凯亚以及北陆联合工业与科技部门高度关心的问题。",
   "modules": {
     "40044": {
@@ -7,13 +7,13 @@
       "SpecificEffects": "Dodge Rate <color=#F74848>+10%</color>."
     },
     "20324": {
-      "name": "疏流芯片",
-      "SpecificEffects": "修理量提升<color=#F74848>15%</color>，施放单体修理技能时，若目标耐久值低于<color=#F74848>90%</color>，对目标施加<buf ID=7100901>[移动力提升]</buf>，持续<color=#F74848>1</color>回合"
+      "name": "Slipstream Chip",
+      "SpecificEffects": "Repair AMT <color=#F74848>+15%</color>. When executing a single-target repair skill, if the target's HP is below <color=#F74848>90%</color>, applies <buf ID=7100901>[Movement UP]</buf> to the target, lasting for <color=#F74848>1</color> turn."
     },
     "30228": {
-      "name": "抢修模组",
-      "SpecificEffects": "主动修理时，对耐久值最低部位的修理量提升<color=#F74848>36%</color>;\n主动修理时可额外修复<color=#F74848>1</color>个损毁部位"
+      "name": "Urgent Repair Mod",
+      "SpecificEffects": "When performing active repairs on a part with the lowest HP, Repair AMT <color=#F74848>+36%</color>;\nWhen performing active repairs, can repair <color=#F74848>1</color> additional destroyed part."
     }
   },
-  "version": "1.0"
+  "version": "1.3"
 }

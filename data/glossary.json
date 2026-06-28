@@ -838,11 +838,11 @@
     },
     "7101701": {
       "name": "Armor Down I",
-      "effect": "Armor -5%."
+      "effect": "Armor -35%."
     },
     "7101702": {
       "name": "Armor Down II",
-      "effect": "Armor -10%."
+      "effect": "Armor -50%."
     },
     "7101704": {
       "name": "Armor Down I",
@@ -887,6 +887,14 @@
     "900073": {
       "name": "Special Load",
       "effect": "A special ammunition or loading state that enhances subsequent attacks."
+    },
+    "900094": {
+      "name": "Percentage-Based Fixed DMG",
+      "effect": "Fixed DMG based on own HP Percentage."
+    },
+    "900121": {
+      "name": "Restriction Removal",
+      "effect": "When Eruption Mod reaches maximum level, activates the Hidden Mod of each part."
     }
   },
   "skill": {

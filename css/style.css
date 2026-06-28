@@ -702,3 +702,129 @@ body {
 .kw-tip-effect {
   color: #b0b0c8;
 }
+
+/* Global version badge in navbar */
+.global-version-badge {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #a0a0b0;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+}
+
+/* CN translation warning */
+.cn-warning {
+  background-color: rgba(217, 119, 6, 0.15);
+  border: 1px solid rgba(217, 119, 6, 0.5);
+  border-radius: 6px;
+  color: #fbbf24;
+  font-size: 0.85rem;
+  padding: 0.65rem 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Home page */
+.home-page {
+  max-width: 720px;
+  margin: 0 auto;
+}
+.home-hero {
+  text-align: center;
+  padding: 3rem 0 2rem;
+}
+.home-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #e94560;
+  letter-spacing: 0.05em;
+}
+.home-subtitle {
+  color: #a0a0b0;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+.home-nav-cards {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+}
+.home-card {
+  flex: 1;
+  max-width: 260px;
+  background: #1a1a2e;
+  border: 1px solid #2a2a4a;
+  border-radius: 10px;
+  padding: 1.5rem;
+  text-decoration: none;
+  transition: border-color 0.2s, background 0.2s;
+}
+.home-card:hover {
+  border-color: #e94560;
+  background: #20203a;
+}
+.home-card-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #e94560;
+  margin-bottom: 0.4rem;
+}
+.home-card-desc {
+  font-size: 0.85rem;
+  color: #a0a0b0;
+}
+.home-disclaimer {
+  background: #12121f;
+  border: 1px solid #2a2a4a;
+  border-radius: 10px;
+  padding: 1.5rem 2rem;
+  color: #a0a0b0;
+  font-size: 0.85rem;
+  line-height: 1.7;
+}
+.home-disclaimer p {
+  margin-bottom: 0.6rem;
+}
+.home-disclaimer p:last-child {
+  margin-bottom: 0;
+}
+.home-disclaimer-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #c0c0d0;
+  margin-bottom: 0.75rem;
+}
+
+/* Q&A section */
+.home-qa {
+  background: #12121f;
+  border: 1px solid #2a2a4a;
+  border-radius: 10px;
+  padding: 1.5rem 2rem;
+  margin-bottom: 1.25rem;
+}
+.qa-item {
+  margin-bottom: 1rem;
+}
+.qa-item:last-child {
+  margin-bottom: 0;
+}
+.qa-q {
+  font-weight: 600;
+  color: #e94560;
+  margin-bottom: 0.25rem;
+}
+.qa-q::before {
+  content: 'Q: ';
+}
+.qa-a {
+  color: #a0a0b0;
+  font-size: 0.88rem;
+  line-height: 1.65;
+  padding-left: 1rem;
+}
+.qa-a::before {
+  content: 'A: ';
+  color: #c0c0d0;
+  font-weight: 500;
+}

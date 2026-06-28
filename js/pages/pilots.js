@@ -1,5 +1,7 @@
 var Pages = window.Pages || {};
 
+var GLOBAL_VERSION = 2.0;
+
 var QUALITY_LABEL = { R: 'B-rank', SR: 'A-rank', SSR: 'S-rank' };
 var QUALITY_CLASS  = { R: 'rank-b',  SR: 'rank-a',  SSR: 'rank-s'  };
 var AVATAR_BASE    = 'https://media.zlongame.com/media/pictures/cn/community/img/gl/gameInfo/characterHalf/';
@@ -13,6 +15,7 @@ Pages.pilots = {
   _activeRanks:       {},
   _activeOccupations: {},
   _activeVersions:    {},
+  _enOnly:            false,
   _lastViewed:        null,
 
   // ── Routing entry point ────────────────────────────────────────────────────
@@ -54,6 +57,7 @@ Pages.pilots = {
         '<div class="filter-group"><span class="filter-label">Rank</span>' + rankButtons + '</div>' +
         '<div class="filter-group"><span class="filter-label">Occupation</span>' + occButtons + '</div>' +
         '<div class="filter-group"><span class="filter-label">Version</span>' + verButtons + '</div>' +
+        '<div class="filter-group ms-auto"><button class="filter-btn filter-en" id="toggle-en-pilots">EN Only</button></div>' +
       '</div>' +
       '<div class="row g-3" id="pilot-grid"></div>'
     );
@@ -80,6 +84,11 @@ Pages.pilots = {
         $(this).toggleClass('active', !!self._activeVersions[v]);
         self._renderGrid(pilots);
       });
+      $(document).on('click.pilots', '#toggle-en-pilots', function () {
+        self._enOnly = !self._enOnly;
+        $(this).toggleClass('active', self._enOnly);
+        self._renderGrid(pilots);
+      });
     }, 0);
 
     return html;
@@ -90,11 +99,13 @@ Pages.pilots = {
     var activeOccs  = Object.keys(this._activeOccupations).filter(k => this._activeOccupations[k]);
     var activeVers  = Object.keys(this._activeVersions).filter(k => this._activeVersions[k]);
 
+    var enOnly = this._enOnly;
     var filtered = pilots.filter(function (p) {
       var rankOk = activeRanks.length === 0 || activeRanks.indexOf(p.quality)   !== -1;
       var occOk  = activeOccs.length  === 0 || activeOccs.indexOf(p.Occupation) !== -1;
       var verOk  = activeVers.length  === 0 || activeVers.indexOf(p.version)    !== -1;
-      return rankOk && occOk && verOk;
+      var enOk   = !enOnly || p.enTranslation;
+      return rankOk && occOk && verOk && enOk;
     }).slice().sort(function (a, b) {
       return parseFloat(b.version) - parseFloat(a.version);
     });
@@ -161,7 +172,12 @@ Pages.pilots = {
       ? '<img class="occupation-icon" src="' + OCCUPATION_BASE + encodeURIComponent(innateEntry.icon) + '.png" alt="" />'
       : '';
 
+    var cnWarning = parseFloat(p.version) > GLOBAL_VERSION
+      ? '<div class="cn-warning">This Pilot data is translated from CN text, there might be inaccuracy and mismatch. The actual translation will be updated when this unit is released in Global.</div>'
+      : '';
+
     return (
+      cnWarning +
       '<a href="#pilots" class="btn-back">&#8592; Back to Pilots</a>' +
       '<div class="detail-layout">' +
         '<div class="detail-portrait-col">' +

@@ -1,19 +1,19 @@
 {
-  "name": "龙雀",
-  "introduce": "DD-360 龙雀\n多尔工业制造的重型机兵。\n肩部采用了异化的钢岚框架设计，内置了扩容后的变液核心。能根据机师的战斗习惯最大程度地调动肩部动能，进行更强力、更灵活的格斗打击。",
+  "name": "Dragonrider",
+  "introduce": "DD-360 Dragonrider\nA heavy ST manufactured by Dole Industries.\nThe shoulders feature an aberrant Steelstorm frame design with an expanded variable-liquid core. It can maximize shoulder kinetic output according to the pilot's combat habits, enabling more powerful and agile melee strikes.",
   "modules": {
     "30048": {
-      "name": "对垒模组",
-      "SpecificEffects": "主动攻击对战时，若目标可以反击，遭受伤害降低<color=#F74848>18%</color>；\n主动攻击对战后，恢复自身造成伤害<color=#F74848>25%</color>的耐久值"
+      "name": "Matching Mod",
+      "SpecificEffects": "When initiating combat, if the target can retaliate, DMG Taken <color=#F74848>-18%</color>;\nAfter initiating combat, restores HP equal to <color=#F74848>25%</color> of damage dealt."
     },
     "40064": {
       "name": "Armor Mod",
       "SpecificEffects": "Armor <color=#F74848>+35%</color>."
     },
     "20204": {
-      "name": "开泰核心",
-      "SpecificEffects": "使用<color=#F74848>3</color>AP及以上技能攻击时，伤害和命中率提升<color=#F74848>10%</color>，每多消耗<color=#F74848>1</color>点，效果继续提升<color=#F74848>2%</color>，最多<color=#F74848>16%</color>"
+      "name": "Enlightenment Core",
+      "SpecificEffects": "When attacking with a skill that costs <color=#F74848>3</color> AP or more, DMG <color=#F74848>+10%</color> and Hit Rate <color=#F74848>+10%</color>. For every additional AP consumed, effect <color=#F74848>+2%</color>, up to <color=#F74848>16%</color>."
     }
   },
-  "version": "1.0"
+  "version": "1.2"
 }

@@ -46,6 +46,7 @@ for path in sorted(glob.glob(f'{DIR}/[0-9]*.json')):
     t = json.load(open(t_path, 'r', encoding='utf-8')) if os.path.exists(t_path) else {}
     apply_translation(entry, t)
     entry['version'] = t.get('version', '1.0')
+    entry['enTranslation'] = all(ord(c) < 128 for c in entry.get('PilotName', ''))
 
     pilots.append(entry)
 

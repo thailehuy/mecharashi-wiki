@@ -1,5 +1,5 @@
 {
-  "name": "银闪",
+  "name": "Mithril",
   "introduce": "AST-07 银闪\n由安赫特公司推出的中型机兵。\nAST-07是安赫特公司继赫尔墨斯之后，推出的一款全新中型战术机兵。除机兵性能、护板、辅助设备全线升级以外，还额外搭载了安赫特公司研发的最新一代钢岚驱动核心。尤其在对新一代战术武器的支持和战场适性上，AST-07所装配的R型微型超脑能精确分析敌方机兵状态，提供精确高效的打击辅助。不过据安赫特公司的内部人士透露，在大众面前的亮相的银闪型号只是去除了某些特殊直连装置的减配版，其真实的研发目的可能是为了供某位特别驾驶员使用的专用机型。",
   "modules": {
     "30088": {
@@ -11,9 +11,9 @@
       "SpecificEffects": "Hit Rate <color=#F74848>+10%</color>."
     },
     "20364": {
-      "name": "R型超脑",
-      "SpecificEffects": "主动攻击时，每施加<color=#F74848>1</color>个减益效果时，使自身伤害提升<color=#F74848>6%</color>，可叠加<color=#F74848>5</color>层，持续<color=#F74848>2</color>回合"
+      "name": "Supercomputer Type-R",
+      "SpecificEffects": "When actively attacking, gains DMG <color=#F74848>+6%</color> for each debuff inflicted. Stacks up to <color=#F74848>5</color> times. Lasts for <color=#F74848>2</color> turns."
     }
   },
-  "version": "1.0"
+  "version": "1.5"
 }

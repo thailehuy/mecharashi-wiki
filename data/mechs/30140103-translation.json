@@ -1,14 +1,14 @@
 {
-  "name": "蓝柱石",
+  "name": "Euclase",
   "introduce": "SAT-331 蓝柱石\n由希德制造研发的重型机兵，是该厂商进军高端型号的首批力作。\n机兵周身大量采用模块化的倾斜装甲，双肩部分别搭载了火力侦测和索敌单元。尽管外置的辅助设备在战场中易受打击损毁。但低廉的造价与出色平衡的适应性，使得蓝柱石在维持性能优越的同时，保留了希德制造一贯的高性价比优势。",
   "modules": {
     "30258": {
-      "name": "拱卫模组",
-      "SpecificEffects": "周围<color=#F74848>2</color>格范围内友军大于等于<color=#F74848>2</color>时，伤害提升<color=#F74848>9%</color>，遭受伤害降低<color=#F74848>9%</color>；\n展开光环，使周围<color=#F74848>2</color>格的其他友军伤害提升<color=#F74848>5%</color>，遭受伤害降低<color=#F74848>5%</color>"
+      "name": "Safeguard Mod",
+      "SpecificEffects": "When there are <color=#F74848>2</color> or more allies within <color=#F74848>2</color> adjacent tiles, DMG <color=#F74848>+9%</color> and DMG Taken <color=#F74848>-9%</color>.\nAura: Grants DMG <color=#F74848>+5%</color> and DMG Taken <color=#F74848>-5%</color> to allies within <color=#F74848>2</color> adjacent tiles."
     },
     "20334": {
-      "name": "锐棱框架",
-      "SpecificEffects": "位于任意友方地形效果上时，造成伤害提升<color=#F74848>15%</color>，遭受伤害降低<color=#F74848>15%</color>"
+      "name": "Triangular Frame",
+      "SpecificEffects": "When on any allied terrain effect, DMG Dealt <color=#F74848>+15%</color> and DMG Taken <color=#F74848>-15%</color>."
     },
     "40054": {
       "name": "HP Mod",

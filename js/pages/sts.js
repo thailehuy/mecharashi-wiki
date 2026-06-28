@@ -12,6 +12,7 @@ Pages.sts = {
   _activeRanks:    {},
   _activeTypes:    {},
   _activeVersions: {},
+  _enOnly:         false,
   _lastViewed:     null,
 
   // ── Routing entry point ────────────────────────────────────────────────────
@@ -53,6 +54,7 @@ Pages.sts = {
         '<div class="filter-group"><span class="filter-label">Rank</span>' + rankButtons + '</div>' +
         '<div class="filter-group"><span class="filter-label">Type</span>' + typeButtons + '</div>' +
         '<div class="filter-group"><span class="filter-label">Version</span>' + verButtons + '</div>' +
+        '<div class="filter-group ms-auto"><button class="filter-btn filter-en" id="toggle-en-sts">EN Only</button></div>' +
       '</div>' +
       '<div class="row g-3" id="mech-grid"></div>'
     );
@@ -79,6 +81,11 @@ Pages.sts = {
         $(this).toggleClass('active', !!self._activeVersions[v]);
         self._renderGrid(mechs);
       });
+      $(document).on('click.sts', '#toggle-en-sts', function () {
+        self._enOnly = !self._enOnly;
+        $(this).toggleClass('active', self._enOnly);
+        self._renderGrid(mechs);
+      });
     }, 0);
 
     return html;
@@ -89,11 +96,15 @@ Pages.sts = {
     var activeTypes = Object.keys(this._activeTypes).filter(k => this._activeTypes[k]);
     var activeVers  = Object.keys(this._activeVersions).filter(k => this._activeVersions[k]);
 
+    var enOnly = this._enOnly;
     var filtered = mechs.filter(function (m) {
       var rankOk = activeRanks.length === 0 || activeRanks.indexOf(m.quality)  !== -1;
       var typeOk = activeTypes.length === 0 || activeTypes.indexOf(m.type)     !== -1;
       var verOk  = activeVers.length  === 0 || activeVers.indexOf(m.version)   !== -1;
-      return rankOk && typeOk && verOk;
+      var enOk   = !enOnly || m.enTranslation;
+      return rankOk && typeOk && verOk && enOk;
+    }).slice().sort(function (a, b) {
+      return parseFloat(b.version) - parseFloat(a.version);
     });
 
     var cards = filtered.map(function (m) {
@@ -155,8 +166,10 @@ Pages.sts = {
     var remaining   = bodyOutput - partsWeight;
 
     // Per-part HP stats
+    var POSITION_EN = { '躯干': 'Body', '左臂': 'L-Arm', '右臂': 'R-Arm', '腿部': 'Legs' };
     var hpStats = (m.parts || []).map(function (p) {
-      return '<div class="mech-stat mech-stat-hp"><span class="mech-stat-label">' + p.position + ' HP</span><span class="mech-stat-value">' + p.maxHp + '</span></div>';
+      var pos = POSITION_EN[p.position] || p.position;
+      return '<div class="mech-stat mech-stat-hp"><span class="mech-stat-label">' + pos + ' HP</span><span class="mech-stat-value">' + p.maxHp + '</span></div>';
     }).join('');
 
     // Weight stats
@@ -178,7 +191,7 @@ Pages.sts = {
             '<div>' +
               '<div class="talent-name">' +
                 $('<span>').text(mod.name).html() +
-                '<span class="module-level">Lv.' + lv + '/' + lv + '</span>' +
+                (lv ? '<span class="module-level">Lv.' + lv + '/' + lv + '</span>' : '') +
               '</div>' +
             '</div>' +
           '</div>' +
@@ -187,7 +200,29 @@ Pages.sts = {
       );
     }).join('') || '<p class="text-secondary" style="font-size:0.8rem">No modules.</p>';
 
+    var hiddenCards = (m.hiddenModules || []).map(function (mod) {
+      var iconSrc = MODULE_ICON_BASE + encodeURIComponent(mod.icon || 'Icon_entry_10086') + '.png';
+      var desc    = Pages.sts._parseEffects(mod.SpecificEffects || '');
+      var partTag = mod.part ? '<span class="module-level">' + $('<span>').text(mod.part).html() + '</span>' : '';
+      return (
+        '<div class="talent-card">' +
+          '<div class="talent-header">' +
+            '<img class="talent-icon" src="' + iconSrc + '" alt="' + $('<span>').text(mod.name).html() + '" />' +
+            '<div>' +
+              '<div class="talent-name">' + $('<span>').text(mod.name).html() + partTag + '</div>' +
+            '</div>' +
+          '</div>' +
+          '<div class="talent-desc">' + desc + '</div>' +
+        '</div>'
+      );
+    }).join('');
+
+    var cnWarning = parseFloat(m.version) > GLOBAL_VERSION
+      ? '<div class="cn-warning">This ST data is translated from CN text, there might be inaccuracy and mismatch. The actual translation will be updated when this unit is released in Global.</div>'
+      : '';
+
     return (
+      cnWarning +
       '<a href="#sts" class="btn-back">&#8592; Back to STs</a>' +
 
       // ── Top: portrait + info side by side
@@ -216,7 +251,13 @@ Pages.sts = {
       '<div class="nd-section">' +
         '<div class="section-heading">Modules</div>' +
         '<div class="detail-talents">' + moduleCards + '</div>' +
-      '</div>'
+      '</div>' +
+      (hiddenCards ? (
+        '<div class="nd-section">' +
+          '<div class="section-heading">Additional Mods</div>' +
+          '<div class="detail-talents">' + hiddenCards + '</div>' +
+        '</div>'
+      ) : '')
     );
   },
 

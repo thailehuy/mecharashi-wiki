@@ -4,6 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mecharashi Wiki</title>
+  <link rel="icon" type="image/png" href="mech.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Mecharashi Wiki" />
+  <meta property="og:description" content="Mecharashi Unofficial English Wiki" />
+  <meta property="og:image" content="https://media.zlongame.com/media/pictures/cn/community/img/gl/gameInfo/character/Pilot_10103154A_Raw.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Mecharashi Wiki" />
+  <meta name="twitter:description" content="Mecharashi Unofficial English Wiki" />
+  <meta name="twitter:image" content="https://media.zlongame.com/media/pictures/cn/community/img/gl/gameInfo/character/Pilot_10103154A_Raw.png" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -11,11 +20,12 @@
 
   <nav class="navbar navbar-expand sticky-top">
     <div class="container">
-      <a class="navbar-brand" href="#home">Mecharashi Wiki</a>
+      <a class="navbar-brand" href="#home" data-page="home">Mecharashi Wiki</a>
       <div class="navbar-nav mx-auto">
         <a class="nav-link" href="#pilots" data-page="pilots">Pilots</a>
         <a class="nav-link" href="#sts" data-page="sts">STs</a>
       </div>
+      <span class="global-version-badge">Global v2.0</span>
     </div>
   </nav>
 
@@ -30,6 +40,7 @@
   <script src="data/glossary.js"></script>
   <script src="js/translations.js"></script>
   <script src="js/glossary.js"></script>
+  <script src="js/pages/home.js"></script>
   <script src="js/pages/pilots.js"></script>
   <script src="js/pages/sts.js"></script>
   <script src="js/app.js"></script>
