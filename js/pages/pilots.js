@@ -15,6 +15,7 @@ Pages.pilots = {
   _activeRanks:       {},
   _activeOccupations: {},
   _activeVersions:    {},
+  _activeLicenses:    {},
   _enOnly:            true,
   _lastViewed:        null,
 
@@ -48,16 +49,27 @@ Pages.pilots = {
       return '<button class="filter-btn filter-ver" data-filter-ver="' + v + '">v' + v + '</button>';
     }).join('');
 
+    var licButtons = ['Light', 'Medium', 'Heavy'].map(function (l) {
+      return '<button class="filter-btn filter-lic" data-filter-lic="' + l + '">' + l + '</button>';
+    }).join('');
+
     var html = (
       '<div class="listing-header d-flex align-items-center">' +
         '<h1>Pilots</h1>' +
         '<span class="badge bg-secondary ms-3" id="pilot-count">' + pilots.length + '</span>' +
       '</div>' +
       '<div class="filter-bar">' +
-        '<div class="filter-group"><span class="filter-label">Rank</span>' + rankButtons + '</div>' +
-        '<div class="filter-group"><span class="filter-label">Occupation</span>' + occButtons + '</div>' +
-        '<div class="filter-group"><span class="filter-label">Version</span>' + verButtons + '</div>' +
-        '<div class="filter-group ms-auto"><button class="filter-btn filter-en" id="toggle-en-pilots">EN Only</button></div>' +
+        '<div class="filter-row">' +
+          '<div class="filter-group"><span class="filter-label">Rank</span>' + rankButtons + '</div>' +
+          '<div class="filter-group"><span class="filter-label">License</span>' + licButtons + '</div>' +
+          '<div class="filter-group ms-auto"><button class="filter-btn filter-en" id="toggle-en-pilots">EN Only</button></div>' +
+        '</div>' +
+        '<div class="filter-row">' +
+          '<div class="filter-group"><span class="filter-label">Occupation</span>' + occButtons + '</div>' +
+        '</div>' +
+        '<div class="filter-row">' +
+          '<div class="filter-group"><span class="filter-label">Version</span>' + verButtons + '</div>' +
+        '</div>' +
       '</div>' +
       '<div class="row g-3" id="pilot-grid"></div>'
     );
@@ -84,6 +96,12 @@ Pages.pilots = {
         $(this).toggleClass('active', !!self._activeVersions[v]);
         self._renderGrid(pilots);
       });
+      $(document).on('click.pilots', '[data-filter-lic]', function () {
+        var l = $(this).data('filter-lic');
+        self._activeLicenses[l] = !self._activeLicenses[l];
+        $(this).toggleClass('active', !!self._activeLicenses[l]);
+        self._renderGrid(pilots);
+      });
       $('#toggle-en-pilots').toggleClass('active', self._enOnly);
       $(document).on('click.pilots', '#toggle-en-pilots', function () {
         self._enOnly = !self._enOnly;
@@ -99,14 +117,16 @@ Pages.pilots = {
     var activeRanks = Object.keys(this._activeRanks).filter(k => this._activeRanks[k]);
     var activeOccs  = Object.keys(this._activeOccupations).filter(k => this._activeOccupations[k]);
     var activeVers  = Object.keys(this._activeVersions).filter(k => this._activeVersions[k]);
+    var activeLics  = Object.keys(this._activeLicenses).filter(k => this._activeLicenses[k]);
 
     var enOnly = this._enOnly;
     var filtered = pilots.filter(function (p) {
       var rankOk = activeRanks.length === 0 || activeRanks.indexOf(p.quality)   !== -1;
       var occOk  = activeOccs.length  === 0 || activeOccs.indexOf(p.Occupation) !== -1;
       var verOk  = activeVers.length  === 0 || activeVers.indexOf(p.version)    !== -1;
+      var licOk  = activeLics.length  === 0 || activeLics.indexOf(p.AllowedMechaDriveList_DriveAllowedList) !== -1;
       var enOk   = !enOnly || p.enTranslation;
-      return rankOk && occOk && verOk && enOk;
+      return rankOk && occOk && verOk && licOk && enOk;
     }).slice().sort(function (a, b) {
       return parseFloat(b.version) - parseFloat(a.version);
     });
@@ -128,8 +148,8 @@ Pages.pilots = {
               '<div class="pilot-name">' + $('<span>').text(p.PilotName).html() + '</div>' +
               '<div class="pilot-realname">' + $('<span>').text(p.RealName).html() + '</div>' +
               '<div class="pilot-tags">' +
-                '<span class="tag">' + $('<span>').text(p.Gender).html() + '</span>' +
                 '<span class="tag">' + $('<span>').text(p.Occupation).html() + '</span>' +
+                (p.AllowedMechaDriveList_DriveAllowedList ? '<span class="tag tag-license">' + $('<span>').text(p.AllowedMechaDriveList_DriveAllowedList).html() + '</span>' : '') +
               '</div>' +
             '</div>' +
           '</div>' +
@@ -193,8 +213,8 @@ Pages.pilots = {
           '<p class="detail-realname">' + $('<span>').text(p.RealName).html() + '</p>' +
           '<div class="detail-tags">' +
             '<span class="tag">' + $('<span>').text(p.Gender).html() + '</span>' +
-            '<span class="tag">' + $('<span>').text(p.Profession).html() + '</span>' +
             '<span class="tag">' + $('<span>').text(p.Occupation).html() + '</span>' +
+            (p.AllowedMechaDriveList_DriveAllowedList ? '<span class="tag tag-license">' + $('<span>').text(p.AllowedMechaDriveList_DriveAllowedList + ' License').html() + '</span>' : '') +
           '</div>' +
           '<div class="detail-talents">' +
             this._renderTalent(p.Talent0_2Ability, 'Basic Talent') +

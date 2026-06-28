@@ -5,7 +5,8 @@ DIR = os.path.dirname(os.path.abspath(__file__))
 
 FIELDS = ['ID', 'PilotName', 'PortraitHeroIcon', 'AvatarHeroIcon', 'RealName', 'Gender',
           'Profession', 'Occupation', 'quality', 'Talent0_2Ability', 'Talent3_5Ability',
-          'NeuralDriveTemplate', 'biomimetic_computer_data']
+          'NeuralDriveTemplate', 'biomimetic_computer_data',
+          'AllowedMechaDriveList_DriveAllowedList']
 
 def apply_translation(entry, t):
     """Overwrite display fields with translation values where non-empty."""

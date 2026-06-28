@@ -558,7 +558,7 @@ window.GlossaryData = {
     },
     "3011512": {
       "name": "Positional Advantage I",
-      "effect": "Grants a +5% combat bonus based on favorable positioning relative to the target."
+      "effect": "Critical hit chance increases by <color=#F74848>3%</color> and DMG taken is reduced by <color=#F74848>2%</color> per stack, up to <color=#F74848>8</color> stacks. All stacks are removed after exiting [Directional Rack]"
     },
     "4002062": {
       "name": "Missile DMG UP",

@@ -124,7 +124,7 @@ Pages.sts = {
             '<div class="pilot-info">' +
               '<div class="pilot-name">' + $('<span>').text(m.name).html() + '</div>' +
               '<div class="pilot-tags">' +
-                '<span class="tag">' + $('<span>').text(m.type).html() + '</span>' +
+                '<span class="tag tag-license">' + $('<span>').text(m.type).html() + '</span>' +
               '</div>' +
             '</div>' +
           '</div>' +
@@ -238,7 +238,7 @@ Pages.sts = {
         '<div class="detail-info-col">' +
           '<h2 class="detail-name">' + $('<span>').text(m.name).html() + '</h2>' +
           '<div class="detail-tags mb-3">' +
-            '<span class="tag">' + $('<span>').text(m.type).html() + '</span>' +
+            '<span class="tag tag-license">' + $('<span>').text(m.type).html() + '</span>' +
           '</div>' +
           '<div class="mech-stats">' +
             '<div class="mech-stat mech-stat-fire"><span class="mech-stat-label">Firepower</span><span class="mech-stat-value">' + (m.manjiFirepower || m.fire) + '</span></div>' +
