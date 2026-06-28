@@ -490,7 +490,7 @@ window.GlossaryData = {
     },
     "2017442": {
       "name": "Ultimate Firepower",
-      "effect": "Maximum firepower state; greatly amplifies all damage output."
+      "effect": "Maximum range of HMG increases by <color=#F74848>+1</color>. This effect can stack."
     },
     "2017500": {
       "name": "Blooming",
@@ -907,6 +907,10 @@ window.GlossaryData = {
     "2018506": {
       "name": "Flaming Heart",
       "effect": "Increases Flamethrower by <color=#F74848>1%</color>, stacking up to <color=#F74848>10</color> times."
+    },
+    "900139": {
+      "name": "Fire DMG",
+      "effect": "DMG dealt based on the main skill's multiplier."
     }
   },
   "skill": {
@@ -951,6 +955,20 @@ window.GlossaryData = {
       "Ap": "1",
       "CD": "2",
       "effect": "Applies a [Defense Field] to the designated tile and the surrounding 1-ring radius for 3 turns. Can continue action with remaining Movement."
+    }
+  },
+  "terrain": {
+    "4003081": {
+      "name": "Burning Terrain",
+      "effect": "Deals [Fixed DMG] equal to 12% of Max HP to all parts of enemies that remain on this tile."
+    },
+    "3014501": {
+      "name": "Sentry Zone",
+      "effect": "A zone deployed by a sniper pilot. Grants enhanced combat bonuses when attacking enemies within range."
+    },
+    "4011081": {
+      "name": "Funnel Field",
+      "effect": "A field deployed by funnel weapons. Applies area effects to units within the designated tiles."
     }
   }
 };

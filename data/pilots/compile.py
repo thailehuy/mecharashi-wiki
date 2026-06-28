@@ -48,6 +48,8 @@ for path in sorted(glob.glob(f'{DIR}/[0-9]*.json')):
     apply_translation(entry, t)
     entry['version'] = t.get('version', '1.0')
     entry['enTranslation'] = all(ord(c) < 128 for c in entry.get('PilotName', ''))
+    if t.get('hiddenSkills'):
+        entry['hiddenSkills'] = t['hiddenSkills']
 
     pilots.append(entry)
 

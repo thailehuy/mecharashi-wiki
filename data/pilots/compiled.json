@@ -1071,7 +1071,17 @@
       ],
       "AllowedMechaDriveList_DriveAllowedList": "Heavy",
       "version": "2.2",
-      "enTranslation": true
+      "enTranslation": true,
+      "hiddenSkills": [
+        {
+          "name": "Warm Greeting",
+          "icon": "Icon_skill_main_1151",
+          "type": "EquipmentSkill",
+          "Ap": "3",
+          "CD": "0",
+          "describe": "Uses a Flamethrower to attack a target, dealing <color=#F74848>1.3x</color> DMG and <color=#F74848>10%</color> <buf ID=900139>[Fire DMG]</buf> to other targets along the path. After combat, applies <terrian ID=4003081 /> to all tiles along the attack path, lasting <color=#F74848>2</color> turns."
+        }
+      ]
     },
     {
       "ID": "10103135",
@@ -12128,7 +12138,16 @@
       ],
       "AllowedMechaDriveList_DriveAllowedList": "Heavy",
       "version": "1.2",
-      "enTranslation": true
+      "enTranslation": true,
+      "hiddenSkills": [
+        {
+          "name": "Focused Scorch",
+          "icon": "Icon_skill_main_1150",
+          "type": "EquipmentSkill",
+          "Ap": "3",
+          "describe": "Uses a Flamethrower to attack the main target, dealing <color=#F74848>1.2x</color> DMG and dealing <color=#F74848>20%</color> <buf ID=900065>[Flame DMG]</buf> to other targets in the path. After combat, applies <terrian ID=4003081 /> to tiles hit, lasting for <color=#F74848>2</color> turns."
+        }
+      ]
     },
     {
       "ID": "10103137",

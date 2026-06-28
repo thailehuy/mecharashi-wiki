@@ -128,5 +128,14 @@
       "SpecificEffects": "At the start of action, if on allied terrain, AP Cost for the first attack this turn <color=#F74848>-1</color> (minimum <color=#F74848>1</color> AP)."
     }
   },
+  "hiddenSkills": [
+    {
+      "name": "Focused Scorch",
+      "icon": "Icon_skill_main_1150",
+      "type": "EquipmentSkill",
+      "Ap": "3",
+      "describe": "Uses a Flamethrower to attack the main target, dealing <color=#F74848>1.2x</color> DMG and dealing <color=#F74848>20%</color> <buf ID=900065>[Flame DMG]</buf> to other targets in the path. After combat, applies <terrian ID=4003081 /> to tiles hit, lasting for <color=#F74848>2</color> turns."
+    }
+  ],
   "version": "1.2"
 }

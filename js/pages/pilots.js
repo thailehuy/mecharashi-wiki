@@ -222,7 +222,7 @@ Pages.pilots = {
           '</div>' +
         '</div>' +
       '</div>' +
-      this._renderSkills(p.biomimetic_computer_data) +
+      this._renderSkills(p.biomimetic_computer_data, p.hiddenSkills) +
       this._renderNeuralDrive(p.NeuralDriveTemplate)
     );
   },
@@ -246,14 +246,12 @@ Pages.pilots = {
     );
   },
 
-  _renderSkills: function (bcd) {
-    if (!bcd || !bcd.length) return '';
-
+  _renderSkills: function (bcd, hiddenSkills) {
     var self = this;
     var TYPE_LABEL = { EquipmentSkill: 'Attack', Order: 'Code', SpecialAssault: 'Code + Attack' };
     var TYPE_CLASS = { EquipmentSkill: 'skill-type-attack', Order: 'skill-type-code', SpecialAssault: 'skill-type-special' };
 
-    var withSkill = bcd.filter(function (e) { return e.skill && e.skill.SkillIcon; });
+    var withSkill = (bcd || []).filter(function (e) { return e.skill && e.skill.SkillIcon; });
     var innate    = withSkill.filter(function (e) { return /^[1-7]00001$/.test(e.skill3); });
     var regular   = withSkill.filter(function (e) { return !/^[1-7]00001$/.test(e.skill3); });
 
@@ -293,16 +291,21 @@ Pages.pilots = {
       );
     }
 
+    function buildHiddenCard(sk) {
+      return buildCard({ skill: { SkillIcon: sk.icon, name: sk.name, type: sk.type, Ap: sk.Ap, CD: sk.CD, describe: sk.describe, SpecificEffects: sk.SpecificEffects } });
+    }
+
     var innateHtml  = innate.map(function (e)  { return buildCard(e, 'Passive · Innate', 'skill-type-innate'); }).join('');
     var regularHtml = regular.map(function (e) { return buildCard(e); }).join('');
+    var hiddenHtml  = (hiddenSkills || []).map(buildHiddenCard).join('');
 
-    if (!innateHtml && !regularHtml) return '';
+    if (!innateHtml && !regularHtml && !hiddenHtml) return '';
 
     return (
       '<div class="nd-section">' +
         '<div class="section-heading">Skills</div>' +
         (innateHtml  ? '<div class="skill-list skill-list-innate mb-3">' + innateHtml  + '</div>' : '') +
-        (regularHtml ? '<div class="skill-list">'                        + regularHtml + '</div>' : '') +
+        (regularHtml || hiddenHtml ? '<div class="skill-list">' + regularHtml + hiddenHtml + '</div>' : '') +
       '</div>'
     );
   },

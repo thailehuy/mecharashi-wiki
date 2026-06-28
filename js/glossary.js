@@ -1,9 +1,15 @@
 var Glossary = (function () {
-  var data = { buf: {}, skill: {} };
+  var data = { buf: {}, skill: {}, terrain: {} };
 
   function lookup(type, id) {
     return (data[type] || {})[id] || null;
   }
+
+  var TERRAIN_NAMES = {
+    '4003081': 'Burning Terrain',
+    '3014501': 'Sentry Zone',
+    '4011081': 'Funnel Field'
+  };
 
   function parseEffects(text) {
     if (!text) return '';
@@ -11,6 +17,15 @@ var Glossary = (function () {
     // Extract buf/skill keyword tags before HTML escaping
     var kwMap = {};
     var idx = 0;
+
+    text = text.replace(/<terr(?:ian|ain) ID=(\d+)\s*\/>/g, function (_, id) {
+      var key = '\x00KW' + (idx++) + '\x00';
+      var entry = lookup('terrain', id);
+      var name = (entry && entry.name) || TERRAIN_NAMES[id] || 'Terrain';
+      var cls = entry ? 'kw kw-terrain' : 'kw kw-terrain kw-unknown';
+      kwMap[key] = '<span class="' + cls + '" data-kw-type="terrain" data-kw-id="' + id + '">[' + name + ']</span>';
+      return key;
+    });
 
     text = text.replace(/<buf ID=(\d+)>\[?([^\]<]*)\]?<\/buf>/g, function (_, id, name) {
       var key = '\x00KW' + (idx++) + '\x00';
