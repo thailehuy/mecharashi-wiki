@@ -41,8 +41,8 @@ Pages.home = {
         '</div>' +
         '<div class="home-disclaimer">' +
           '<h2 class="home-disclaimer-title">Disclaimer</h2>' +
-          '<p>This wiki is an unofficial fan-made resource created for informational purposes only and is not affiliated with, endorsed by, or associated with ZLong Games or Tentree Games in any way.</p>' +
-          '<p>All game content, images, names, and data featured on this site are the intellectual property of <strong>ZLong Games</strong> and <strong>Tentree Games</strong>. All rights reserved.</p>' +
+          '<p>This site is an unofficial, fan‑made wiki and is not affiliated with, endorsed by, or sponsored by the official rights holders. It is created for informational and educational purposes only, and no copyright infringement is intended.</p>' +
+          '<p>All game content, images, names, and data featured on this site are the intellectual property of <strong>Tentree Games</strong> and <strong>BlackJack Studio</strong>. All rights reserved.</p>' +
           '<p>This site is not intended for commercial use. No revenue is generated from this project.</p>' +
         '</div>' +
       '</div>'
