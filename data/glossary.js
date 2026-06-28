@@ -895,6 +895,18 @@ window.GlossaryData = {
     "900121": {
       "name": "Restriction Removal",
       "effect": "When Eruption Mod reaches maximum level, activates the Hidden Mod of each part."
+    },
+    "2018502": {
+      "name": "Blazing Flame",
+      "effect": "When attacked by Adele, triggers [Blazing Detonation]"
+    },
+    "900129": {
+      "name": "Blazing Detonation",
+      "effect": "Deals [Fixed DMG] equal to <color=#F74848>0.2</color> times Adele's Flamethrower attack to all parts of the target unit and all enemies within range, then remove [Blazing Flame]. If the other affected targets are carrying [Blazing Flame], [Blazing Detonation] effect will be applied to those targets."
+    },
+    "2018506": {
+      "name": "Flaming Heart",
+      "effect": "To be translated."
     }
   },
   "skill": {
