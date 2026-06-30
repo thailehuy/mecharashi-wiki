@@ -74,7 +74,7 @@
     },
     "900021": {
       "name": "Pochy Repair",
-      "effect": "A specialized repair action performed by the Pochy unit type."
+      "effect": "Restores HP equal to 2.0x Manipulator Repair AMT to all parts of a single ST. Can repair 1 destroyed part."
     },
     "900022": {
       "name": "Guard",
@@ -90,11 +90,11 @@
     },
     "900025": {
       "name": "Rack",
-      "effect": "A targeting or weapon-mount state that enables special attack patterns."
+      "effect": "Stationary deployment. Unable to move but gain a Special Bonus."
     },
     "900026": {
-      "name": "Substitute",
-      "effect": "If an ally with HP below 30% is attacked during combat, a [Guard] effect can be activated regardless of skill range. Removed after activation."
+      "name": "Retract",
+      "effect": "Exit [Rack] Mode."
     },
     "900027": {
       "name": "Target Shift",
@@ -243,6 +243,10 @@
     "900096": {
       "name": "Retaliation",
       "effect": "After the enemy attacks this unit, launches a retaliation."
+    },
+    "900999": {
+      "name": "Substitute",
+      "effect": "If an ally with HP below 30% is attacked during combat, a [Guard] effect can be activated regardless of skill range. Removed after activation."
     },
     "900097": {
       "name": "Link Salvo",
@@ -786,7 +790,7 @@
     },
     "7100703": {
       "name": "Defensive Stance III",
-      "effect": "A defensive enhancement status. Refer to Defensive Stance series for effect details."
+      "effect": "DMG Taken -50%."
     },
     "7100901": {
       "name": "Movement UP",
