@@ -47,8 +47,8 @@ for path in sorted(glob.glob(f'{DIR}/[0-9]*.json')):
     t = json.load(open(t_path, 'r', encoding='utf-8')) if os.path.exists(t_path) else {}
     apply_translation(entry, t)
     entry['version'] = t.get('version', '1.0')
-    talent_name = (entry.get('Talent0_2Ability') or {}).get('name', '')
-    entry['enTranslation'] = bool(talent_name) and all(ord(c) < 128 for c in talent_name)
+    talent_desc = (entry.get('Talent0_2Ability') or {}).get('SpecificEffects', '')
+    entry['enTranslation'] = bool(talent_desc) and all(ord(c) < 128 for c in talent_desc)
     if t.get('hiddenSkills'):
         entry['hiddenSkills'] = t['hiddenSkills']
 
