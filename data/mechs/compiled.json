@@ -1729,6 +1729,96 @@
       "enTranslation": true
     },
     {
+      "ID": "10280103",
+      "name": "Hasteraze",
+      "type": "Light",
+      "quality": "SSR",
+      "icon": "Icon_mecha_wap1028",
+      "mechaIcon": "Icon_wap1028_1",
+      "lihuiIcon": "icon_lihui_wap1028",
+      "introduce": "AST-42HMC \u75be\u5578\n\u5b89\u8d6b\u7279\u516c\u53f8\u4e0e\u9632\u536b\u519b\u5148\u8fdb\u6b66\u5668\u7814\u7a76\u9662\u8054\u5408\u5f00\u53d1\u7684\u8f7b\u578b\u673a\u5175\u3002\n\u4f5c\u4e3a\u6b21\u4e16\u4ee3\u6280\u672f\u9a8c\u8bc1\u673a\uff0c\u75be\u5578\u5728\u524d\u6cbf\u6280\u672f\u7684\u91c7\u7528\u4e0a\u582a\u79f0\u75af\u72c2\u3002\u5176\u4e2d\u591a\u6838\u5fae\u578b\u4eff\u751f\u667a\u80fd\u6846\u67b6\u7ec4\u6210\u7684\u300c\u95ea\u5149\u9635\u5217\u300d\u5728\u5bf9\u8d85\u7ea7\u673a\u5e08\u827e\u8fbe\u00b7\u8fea\u4e9a\u5179\u7684\u6570\u636e\u5b66\u4e60\u4e2d\u5145\u5206\u8fed\u4ee3\u4f18\u5316\uff0c\u8fdb\u4e00\u6b65\u5c06\u8be5\u673a\u7684\u4e2d\u8fd1\u8ddd\u79bb\u673a\u52a8\u683c\u6597\u6218\u6548\u80fd\u63d0\u5347\u81f3\u6781\u9650\u3002\u7136\u800c\u4e0e\u8fdc\u8d85\u5e38\u89c4\u7b2c\u4e09\u4e16\u4ee3\u673a\u5175\u7684\u6050\u6016\u6027\u80fd\u76f8\u5bf9\u7684\uff0c\u4fbf\u662f\u5929\u6587\u6570\u5b57\u822c\u7684\u6210\u672c\uff0c\u4ee5\u53ca\u8db3\u4ee5\u6740\u6b7b\u666e\u901a\u673a\u5e08\u7684\u64cd\u4f5c\u8d1f\u62c5\u3002\u5c3d\u7ba1\u540c\u76df\u9632\u536b\u519b\u5c1d\u8bd5\u8fc7\u591a\u79cd\u4f18\u5316\u65b9\u6848\uff0c\u5982\u4ecaAST-42HMC\u75be\u5578\u4f9d\u7136\u53ea\u6709\u4e00\u673a\u5904\u4e8e\u6d3b\u8dc3\u72b6\u6001\u3002",
+      "output": "1550",
+      "durable": "339",
+      "Armor": "48",
+      "fire": "124",
+      "Antiriot": "770",
+      "parts": [
+        {
+          "position": "\u8eaf\u5e72",
+          "aircraftWeight": "260",
+          "maxHp": "9425"
+        },
+        {
+          "position": "\u5de6\u81c2",
+          "aircraftWeight": "90",
+          "maxHp": "4281"
+        },
+        {
+          "position": "\u53f3\u81c2",
+          "aircraftWeight": "90",
+          "maxHp": "4281"
+        },
+        {
+          "position": "\u817f\u90e8",
+          "aircraftWeight": "160",
+          "maxHp": "7117"
+        }
+      ],
+      "manjiFirepower": "1215",
+      "modules": [
+        {
+          "_id": {
+            "timestamp": 1696936931,
+            "date": 1696936931000
+          },
+          "ID": "40024",
+          "name": "Crit Rate Mod",
+          "SpecificEffects": "Crit Rate <color=#F74848>+10%</color>.",
+          "BufCarried": "400241",
+          "SkillIcon": "Icon_entry_40021",
+          "icon": "Icon_entry_40021",
+          "Status": 1,
+          "weight": 868,
+          "id": "4002",
+          "level": 4
+        },
+        {
+          "_id": {
+            "timestamp": 1744282800,
+            "date": 1744282800000
+          },
+          "ID": "20514",
+          "name": "Light Array Mod",
+          "SpecificEffects": "DMG dealt increases by <color=#F74848>10%</color>. When attacking, DMG dealt is additionally increased by <color=#F74848>25%</color>, decreases by <color=#F74848>5%</color> on each attack, and resets upon destroying a target.",
+          "BufCarried": "205141/205142/205146/205147",
+          "SkillIcon": "Icon_skill_passive_1157",
+          "icon": "Icon_skill_passive_1157",
+          "Status": 1,
+          "weight": 326,
+          "id": "2051",
+          "level": 4
+        },
+        {
+          "_id": {
+            "timestamp": 1744282802,
+            "date": 1744282802000
+          },
+          "ID": "30418",
+          "name": "Power Strike Mod",
+          "SpecificEffects": "When attacking the part with HP greater than <color=#F74848>60%</color> of max HP, DMG dealt is increased by <color=#F74848>18%</color>. The computing power of lowest unlocked neural drive partition is increased by <color=#F74848>+3</color>.",
+          "BufCarried": "304181/304187",
+          "SkillIcon": "Icon_entry_10093",
+          "icon": "Icon_entry_10093",
+          "Status": 1,
+          "weight": 720,
+          "id": "3041",
+          "level": 8
+        }
+      ],
+      "version": "2.3",
+      "enTranslation": true
+    },
+    {
       "ID": "10350103",
       "name": "Hela",
       "type": "Light",
@@ -4802,96 +4892,6 @@
           "Status": 1,
           "weight": 848,
           "id": "3057",
-          "level": 8
-        }
-      ],
-      "version": "1.0",
-      "enTranslation": false
-    },
-    {
-      "ID": "10280103",
-      "name": "\u75be\u5578",
-      "type": "Light",
-      "quality": "SSR",
-      "icon": "Icon_mecha_wap1028",
-      "mechaIcon": "Icon_wap1028_1",
-      "lihuiIcon": "icon_lihui_wap1028",
-      "introduce": "AST-42HMC \u75be\u5578\n\u5b89\u8d6b\u7279\u516c\u53f8\u4e0e\u9632\u536b\u519b\u5148\u8fdb\u6b66\u5668\u7814\u7a76\u9662\u8054\u5408\u5f00\u53d1\u7684\u8f7b\u578b\u673a\u5175\u3002\n\u4f5c\u4e3a\u6b21\u4e16\u4ee3\u6280\u672f\u9a8c\u8bc1\u673a\uff0c\u75be\u5578\u5728\u524d\u6cbf\u6280\u672f\u7684\u91c7\u7528\u4e0a\u582a\u79f0\u75af\u72c2\u3002\u5176\u4e2d\u591a\u6838\u5fae\u578b\u4eff\u751f\u667a\u80fd\u6846\u67b6\u7ec4\u6210\u7684\u300c\u95ea\u5149\u9635\u5217\u300d\u5728\u5bf9\u8d85\u7ea7\u673a\u5e08\u827e\u8fbe\u00b7\u8fea\u4e9a\u5179\u7684\u6570\u636e\u5b66\u4e60\u4e2d\u5145\u5206\u8fed\u4ee3\u4f18\u5316\uff0c\u8fdb\u4e00\u6b65\u5c06\u8be5\u673a\u7684\u4e2d\u8fd1\u8ddd\u79bb\u673a\u52a8\u683c\u6597\u6218\u6548\u80fd\u63d0\u5347\u81f3\u6781\u9650\u3002\u7136\u800c\u4e0e\u8fdc\u8d85\u5e38\u89c4\u7b2c\u4e09\u4e16\u4ee3\u673a\u5175\u7684\u6050\u6016\u6027\u80fd\u76f8\u5bf9\u7684\uff0c\u4fbf\u662f\u5929\u6587\u6570\u5b57\u822c\u7684\u6210\u672c\uff0c\u4ee5\u53ca\u8db3\u4ee5\u6740\u6b7b\u666e\u901a\u673a\u5e08\u7684\u64cd\u4f5c\u8d1f\u62c5\u3002\u5c3d\u7ba1\u540c\u76df\u9632\u536b\u519b\u5c1d\u8bd5\u8fc7\u591a\u79cd\u4f18\u5316\u65b9\u6848\uff0c\u5982\u4ecaAST-42HMC\u75be\u5578\u4f9d\u7136\u53ea\u6709\u4e00\u673a\u5904\u4e8e\u6d3b\u8dc3\u72b6\u6001\u3002",
-      "output": "1550",
-      "durable": "339",
-      "Armor": "48",
-      "fire": "124",
-      "Antiriot": "770",
-      "parts": [
-        {
-          "position": "\u8eaf\u5e72",
-          "aircraftWeight": "260",
-          "maxHp": "9425"
-        },
-        {
-          "position": "\u5de6\u81c2",
-          "aircraftWeight": "90",
-          "maxHp": "4281"
-        },
-        {
-          "position": "\u53f3\u81c2",
-          "aircraftWeight": "90",
-          "maxHp": "4281"
-        },
-        {
-          "position": "\u817f\u90e8",
-          "aircraftWeight": "160",
-          "maxHp": "7117"
-        }
-      ],
-      "manjiFirepower": "1215",
-      "modules": [
-        {
-          "_id": {
-            "timestamp": 1696936931,
-            "date": 1696936931000
-          },
-          "ID": "40024",
-          "name": "Crit Rate Mod",
-          "SpecificEffects": "Crit Rate <color=#F74848>+10%</color>.",
-          "BufCarried": "400241",
-          "SkillIcon": "Icon_entry_40021",
-          "icon": "Icon_entry_40021",
-          "Status": 1,
-          "weight": 868,
-          "id": "4002",
-          "level": 4
-        },
-        {
-          "_id": {
-            "timestamp": 1744282800,
-            "date": 1744282800000
-          },
-          "ID": "20514",
-          "name": "\u95ea\u5149\u9635\u5217",
-          "SpecificEffects": "\u4f24\u5bb3\u63d0\u5347<color=#F74848>10%</color>\uff1b\u653b\u51fb\u65f6\u4f24\u5bb3\u989d\u5916\u63d0\u5347<color=#F74848>25%</color>\uff0c\u6bcf\u6b21\u653b\u51fb\u540e\u51cf\u5c11<color=#F74848>5%</color>\uff0c\u51fb\u6bc1\u4efb\u610f\u76ee\u6807\u540e\u91cd\u7f6e",
-          "BufCarried": "205141/205142/205146/205147",
-          "SkillIcon": "Icon_skill_passive_1157",
-          "icon": "Icon_skill_passive_1157",
-          "Status": 1,
-          "weight": 326,
-          "id": "2051",
-          "level": 4
-        },
-        {
-          "_id": {
-            "timestamp": 1744282802,
-            "date": 1744282802000
-          },
-          "ID": "30418",
-          "name": "\u5f3a\u51fb\u6a21\u7ec4",
-          "SpecificEffects": "\u653b\u51fb\u8010\u4e45\u767e\u5206\u6bd4\u9ad8\u4e8e<color=#F74848>60%</color>\u7684\u90e8\u4f4d\u65f6\uff0c\u4f24\u5bb3\u63d0\u5347<color=#F74848>18%</color>\uff1b\u5df2\u89e3\u9501\u7684\u795e\u7ecf\u9a71\u52a8\u5206\u533a\u4e2d\u6700\u4f4e\u7684\u533a\u57df\u7b97\u529b<color=#F74848>+3</color>",
-          "BufCarried": "304181/304187",
-          "SkillIcon": "Icon_entry_10093",
-          "icon": "Icon_entry_10093",
-          "Status": 1,
-          "weight": 720,
-          "id": "3041",
           "level": 8
         }
       ],

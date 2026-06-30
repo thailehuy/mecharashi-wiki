@@ -277,16 +277,16 @@ window.GlossaryData = {
       "effect": "HMG bullets <color=#F74848>+1</color>."
     },
     "900133": {
-      "name": "Surge",
-      "effect": "A building power state that accumulates stacks and enhances combat performance."
+      "name": "Condensed",
+      "effect": "DMG dealt increases by <color=#F74848>3%</color>, up to a maximum of <color=#F74848>5</color> stacks."
     },
     "900136": {
       "name": "Insight",
-      "effect": "See through enemy defenses, enabling attacks that ignore or reduce guard effects."
+      "effect": "When attacked by melee or ranged weapons, if equipped with Alter-Blade in both hands and both hands are in tact, activates [Insight Counterattack], dealing <color=#F74848>1.2x</color> DMG. [Insight Counterattack] ignores [Target Shift]. Each stack increases DMG dealt by <color=#F74848>5%</color> and dodge rate by <color=#F74848>5%</color>. <color=#F74848>1</color> stack is removed upon activation."
     },
     "900138": {
-      "name": "Temp AP Cap",
-      "effect": "Temporarily increases the AP ceiling, allowing AP to exceed its normal maximum."
+      "name": "Temporary AP cap",
+      "effect": "AP cap is temporarily increased. This effect is removed at the end of turn."
     },
     "1002502": {
       "name": "Impulsive I",
@@ -381,8 +381,8 @@ window.GlossaryData = {
       "effect": "When attacked by Melee and Ranged Weapons, if equipped with two Alter-Blades and both Arms are undestroyed, interrupts the attack and triggers [Incisive Retaliation], dealing <color=#F74848>1.2</color>x DMG. After triggering, <color=#F74848>1</color> stack is removed. [Incisive Retaliation] ignores the Large Shield <buf ID=900027>[Target Shift]</buf> effect.\nFor each stack of Critical Sense possessed, DMG <color=#F74848>+5%</color> and Dodge Rate <color=#F74848>+5%</color>."
     },
     "1017503": {
-      "name": "Surge I",
-      "effect": "Level I surge state; accumulates stacks and enhances combat performance."
+      "name": "Condensed I",
+      "effect": "DMG dealt increases by <color=#F74848>3%</color>, up to a maximum of <color=#F74848>5</color> stacks."
     },
     "2004022": {
       "name": "Hit UP",
@@ -913,12 +913,16 @@ window.GlossaryData = {
       "effect": "DMG dealt based on the main skill's multiplier."
     },
     "1016514": {
-      "name": "Invigorate I",
-      "effect": "DMG dealt increases by <color=#F74848>4%</color>. DMG taken reduces by <color=#F74848>6%</color>. Repair AMT received increases by <color=#F74848>4%</color>. Stacking up to <color=#F74848>5</color> times."
+      "name": "Unyielding Will",
+      "effect": "Body is immune to <buf ID=900109>[Execution]</buf> effect. When body suffers overdamage, trigger <buf ID=900003>[Guts]</buf>, locking its HP to <color=#F74848>1</color>. After combat, repairs all parts to <color=#F74848>50%</color> of their max HP, and repairs all destroyed parts. Effect is removed after triggering."
     },
-    "900127": {
+    "1016502": {
       "name": "Invigorate",
       "effect": "DMG dealt increases by <color=#F74848>4%</color>. DMG taken reduces by <color=#F74848>6%</color>. Repair AMT received increases by <color=#F74848>4%</color>. Stacking up to <color=#F74848>5</color> times."
+    },
+    "1017466": {
+      "name": "Starburst",
+      "effect": "Critical hit chance increases by <color=#F74848>15%</color>. Critical hit DMG increases by <color=#F74848>10%</color>."
     }
   },
   "skill": {

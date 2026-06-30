@@ -277,12 +277,12 @@
       "effect": "HMG bullets <color=#F74848>+1</color>."
     },
     "900133": {
-      "name": "Surge",
-      "effect": "A building power state that accumulates stacks and enhances combat performance."
+      "name": "Condensed",
+      "effect": "DMG dealt increases by <color=#F74848>3%</color>, up to a maximum of <color=#F74848>5</color> stacks."
     },
     "900136": {
       "name": "Insight",
-      "effect": "See through enemy defenses, enabling attacks that ignore or reduce guard effects."
+      "effect": "When attacked by melee or ranged weapons, if equipped with Alter-Blade in both hands and both hands are in tact, activates [Insight Counterattack], dealing <color=#F74848>1.2x</color> DMG. [Insight Counterattack] ignores [Target Shift]. Each stack increases DMG dealt by <color=#F74848>5%</color> and dodge rate by <color=#F74848>5%</color>. <color=#F74848>1</color> stack is removed upon activation."
     },
     "900138": {
       "name": "Temp AP Cap",
@@ -923,6 +923,18 @@
     "1016502": {
       "name": "Invigorate",
       "effect": "DMG dealt increases by <color=#F74848>4%</color>. DMG taken reduces by <color=#F74848>6%</color>. Repair AMT received increases by <color=#F74848>4%</color>. Stacking up to <color=#F74848>5</color> times."
+    },
+    "1017503": {
+      "name": "Condensed I",
+      "effect": "DMG dealt increases by <color=#F74848>3%</color>, up to a maximum of <color=#F74848>5</color> stacks."
+    },
+    "900138": {
+      "name": "Temporary AP cap",
+      "effect": "AP cap is temporarily increased. This effect is removed at the end of turn."
+    },
+    "1017466": {
+      "name": "Starburst",
+      "effect": "Critical hit chance increases by <color=#F74848>15%</color>. Critical hit DMG increases by <color=#F74848>10%</color>."
     }
   },
   "skill": {
