@@ -239,6 +239,8 @@ Pages.sts = {
           '<h2 class="detail-name">' + $('<span>').text(m.name).html() + '</h2>' +
           '<div class="detail-tags mb-3">' +
             '<span class="tag tag-license">' + $('<span>').text(m.type).html() + '</span>' +
+            (m.dispatchGroup ? '<span class="tag tag-dispatch">' + m.dispatchGroup + '</span>' : '') +
+            (m.dispatchVersion ? '<span class="tag tag-dispatch-ver">Dispatch v' + m.dispatchVersion + '</span>' : '') +
           '</div>' +
           '<div class="mech-stats">' +
             '<div class="mech-stat mech-stat-fire"><span class="mech-stat-label">Firepower</span><span class="mech-stat-value">' + (m.manjiFirepower || m.fire) + '</span></div>' +

@@ -49,6 +49,9 @@ for path in sorted(glob.glob(f'{DIR}/[0-9]*.json')):
         entry['manjiFirepower'] = t['manjiFirepower']
     if t.get('hiddenModules'):
         entry['hiddenModules'] = t['hiddenModules']
+    if t.get('dispatchGroup'):
+        entry['dispatchGroup'] = t['dispatchGroup']
+        entry['dispatchVersion'] = t.get('dispatchVersion', '')
     entry['version'] = t.get('version', '1.0')
     entry['enTranslation'] = all(ord(c) < 128 for c in entry.get('name', ''))
     mechs.append(entry)

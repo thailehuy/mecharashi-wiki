@@ -50,7 +50,7 @@
     },
     "400308": {
       "name": "The Group's Gift",
-      "describe": "Uses Rail Gun to attack all targets within a <range type=1>Line (1*5 tiles) area</range>, dealing <color=#F74848>1.1x</color> AoE DMG. After combat, transforms tiles hit into <buf ID=4003081>[Burning Terrain]</buf>, lasting <color=#F74848>2</color> turns.",
+      "describe": "Uses Rail Gun to attack all targets within a <range type=1>Line (1*5 tiles) area</range>, dealing <color=#F74848>1.1x</color> AoE DMG. After combat, transforms tiles hit into <terrian ID=4003081 />, lasting <color=#F74848>2</color> turns.",
       "SpecificEffects": ""
     }
   },

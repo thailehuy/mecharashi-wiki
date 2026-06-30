@@ -23,7 +23,7 @@
       "Talent3_5Ability": {
         "ID": "201851",
         "name": "Blazing Heart",
-        "SpecificEffects": "When actively attacking with a Flamethrower, applies <buf ID=2018502>[Blazing Flame]</buf> to the target. When target carrying <buf ID=2018502>[Blazing Flame]</buf> is attacked, triggers <buf ID=900129>[Blazing Detonation]</buf> after combat.\nWhen attacking targets on <buf ID=4003081>[Burning Terrain]</buf>, <buf ID=900129>[Blazing Detonation]</buf> DMG multiplier increases by <color=#F74848>+0.1</color>.",
+        "SpecificEffects": "When actively attacking with a Flamethrower, applies <buf ID=2018502>[Blazing Flame]</buf> to the target. When target carrying <buf ID=2018502>[Blazing Flame]</buf> is attacked, triggers <buf ID=900129>[Blazing Detonation]</buf> after combat.\nWhen attacking targets on <terrian ID=4003081 />, <buf ID=900129>[Blazing Detonation]</buf> DMG multiplier increases by <color=#F74848>+0.1</color>.",
         "BufCarried": "2018501/2018511/2018507/2018516",
         "SkillIcon": "Icon_skill_talent_5151",
         "icon": "Icon_skill_talent_5151",
@@ -318,7 +318,7 @@
                 "PassiveSkill": {
                   "ID": "201841",
                   "name": "Flame Dancer 1",
-                  "SpecificEffects": "When an enemy takes DMG from <buf ID=4003081>[Burning Terrain]</buf>, applies <buf ID=2018502>[Blazing Flame]</buf> to that enemy.",
+                  "SpecificEffects": "When an enemy takes DMG from <terrian ID=4003081 />, applies <buf ID=2018502>[Blazing Flame]</buf> to that enemy.",
                   "BufCarried": "2018411",
                   "SkillIcon": "Icon_skill_passive_5254",
                   "icon": "Icon_skill_passive_5254",
@@ -374,7 +374,7 @@
                 "PassiveSkill": {
                   "ID": "201844",
                   "name": "Flame Dancer 2",
-                  "SpecificEffects": "After triggering <buf ID=900129>[Blazing Detonation]</buf> on a target, applies <buf ID=4003081>[Burning Terrain]</buf> to that tile, lasting <color=#F74848>2</color> turns.",
+                  "SpecificEffects": "After triggering <buf ID=900129>[Blazing Detonation]</buf> on a target, applies <terrian ID=4003081 /> to that tile, lasting <color=#F74848>2</color> turns.",
                   "BufCarried": "2018441",
                   "SkillIcon": "Icon_skill_passive_5254",
                   "icon": "Icon_skill_passive_5254",
@@ -696,7 +696,7 @@
             "ID": "201804",
             "remarks": "\u963f\u9edb\u52d2-\u4eff\u751f\u7535\u8111",
             "name": "Fiery Steps",
-            "describe": "Jumps with both Flamethrowers to an unoccopied tile within <color=#F74848>2</color> to <color=#F74848>4</color> straight range, dealing <color=#F74848>0.3x</color> AOE DMG to all enemies in the path. Creates <buf ID=4003081>[Burning Terrain]</buf> to the tiles traversed, lasting for <color=#F74848>2</color> turns. Can trigger <buf ID=900004>[Re-ATK]</buf> after jumping.",
+            "describe": "Jumps with both Flamethrowers to an unoccopied tile within <color=#F74848>2</color> to <color=#F74848>4</color> straight range, dealing <color=#F74848>0.3x</color> AOE DMG to all enemies in the path. Creates <terrian ID=4003081 /> to the tiles traversed, lasting for <color=#F74848>2</color> turns. Can trigger <buf ID=900004>[Re-ATK]</buf> after jumping.",
             "type": "SpecialAssault",
             "CD": "2",
             "Ap": "1",
@@ -724,7 +724,7 @@
           "skill": {
             "ID": "201805",
             "name": "Elegant Style",
-            "SpecificEffects": "At the end of action, if on <buf ID=4003081>[Burning Terrain]</buf>, restores <color=#F74848>10%</color> HP.",
+            "SpecificEffects": "At the end of action, if on <terrian ID=4003081 />, restores <color=#F74848>10%</color> HP.",
             "BufCarried": "2018051",
             "SkillIcon": "Icon_skill_passive_3132",
             "icon": "Icon_skill_passive_3132",
@@ -72311,7 +72311,7 @@
             "ID": "400308",
             "remarks": "\u9732\u897f\u4e9a-\u4eff\u751f\u7535\u8111",
             "name": "The Group's Gift",
-            "describe": "Uses Rail Gun to attack all targets within a <range type=1>Line (1*5 tiles) area</range>, dealing <color=#F74848>1.1x</color> AoE DMG. After combat, transforms tiles hit into <buf ID=4003081>[Burning Terrain]</buf>, lasting <color=#F74848>2</color> turns.",
+            "describe": "Uses Rail Gun to attack all targets within a <range type=1>Line (1*5 tiles) area</range>, dealing <color=#F74848>1.1x</color> AoE DMG. After combat, transforms tiles hit into <terrian ID=4003081 />, lasting <color=#F74848>2</color> turns.",
             "type": "SpecialAssault",
             "Ap": "4",
             "matchingWeaponType": "RG",

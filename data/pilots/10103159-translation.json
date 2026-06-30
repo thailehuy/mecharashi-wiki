@@ -10,7 +10,7 @@
   },
   "Talent3_5Ability": {
     "name": "Blazing Heart",
-    "SpecificEffects": "When actively attacking with a Flamethrower, applies <buf ID=2018502>[Blazing Flame]</buf> to the target. When target carrying <buf ID=2018502>[Blazing Flame]</buf> is attacked, triggers <buf ID=900129>[Blazing Detonation]</buf> after combat.\nWhen attacking targets on <buf ID=4003081>[Burning Terrain]</buf>, <buf ID=900129>[Blazing Detonation]</buf> DMG multiplier increases by <color=#F74848>+0.1</color>."
+    "SpecificEffects": "When actively attacking with a Flamethrower, applies <buf ID=2018502>[Blazing Flame]</buf> to the target. When target carrying <buf ID=2018502>[Blazing Flame]</buf> is attacked, triggers <buf ID=900129>[Blazing Detonation]</buf> after combat.\nWhen attacking targets on <terrian ID=4003081 />, <buf ID=900129>[Blazing Detonation]</buf> DMG multiplier increases by <color=#F74848>+0.1</color>."
   },
   "skills": {
     "200001": {
@@ -30,13 +30,13 @@
     },
     "201804": {
       "name": "Fiery Steps",
-      "describe": "Jumps with both Flamethrowers to an unoccopied tile within <color=#F74848>2</color> to <color=#F74848>4</color> straight range, dealing <color=#F74848>0.3x</color> AOE DMG to all enemies in the path. Creates <buf ID=4003081>[Burning Terrain]</buf> to the tiles traversed, lasting for <color=#F74848>2</color> turns. Can trigger <buf ID=900004>[Re-ATK]</buf> after jumping.",
+      "describe": "Jumps with both Flamethrowers to an unoccopied tile within <color=#F74848>2</color> to <color=#F74848>4</color> straight range, dealing <color=#F74848>0.3x</color> AOE DMG to all enemies in the path. Creates <terrian ID=4003081 /> to the tiles traversed, lasting for <color=#F74848>2</color> turns. Can trigger <buf ID=900004>[Re-ATK]</buf> after jumping.",
       "SpecificEffects": ""
     },
     "201805": {
       "name": "Elegant Style",
       "describe": "",
-      "SpecificEffects": "At the end of action, if on <buf ID=4003081>[Burning Terrain]</buf>, restores <color=#F74848>10%</color> HP."
+      "SpecificEffects": "At the end of action, if on <terrian ID=4003081 />, restores <color=#F74848>10%</color> HP."
     },
     "201806": {
       "name": "Dance Invitation",
@@ -105,7 +105,7 @@
     },
     "201841": {
       "name": "Flame Dancer 1",
-      "SpecificEffects": "When an enemy takes DMG from <buf ID=4003081>[Burning Terrain]</buf>, applies <buf ID=2018502>[Blazing Flame]</buf> to that enemy."
+      "SpecificEffects": "When an enemy takes DMG from <terrian ID=4003081 />, applies <buf ID=2018502>[Blazing Flame]</buf> to that enemy."
     },
     "200042": {
       "name": "AP Optimization 4",
@@ -117,7 +117,7 @@
     },
     "201844": {
       "name": "Flame Dancer 2",
-      "SpecificEffects": "After triggering <buf ID=900129>[Blazing Detonation]</buf> on a target, applies <buf ID=4003081>[Burning Terrain]</buf> to that tile, lasting <color=#F74848>2</color> turns."
+      "SpecificEffects": "After triggering <buf ID=900129>[Blazing Detonation]</buf> on a target, applies <terrian ID=4003081 /> to that tile, lasting <color=#F74848>2</color> turns."
     },
     "201845": {
       "name": "Flame Dancer 3",

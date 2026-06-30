@@ -914,6 +914,18 @@ window.GlossaryData = {
     }
   },
   "skill": {
+    "20342": {
+      "name": "Shock Wave",
+      "Ap": "1",
+      "CD": "0",
+      "effect": "Knocks all targets in a 1x3-tile line back 2 tiles."
+    },
+    "20343": {
+      "name": "High Tide",
+      "Ap": "2",
+      "CD": "0",
+      "effect": "Knocks all targets in a cone ahead back 2 tiles."
+    },
     "301144": {
       "name": "Rapid Realignment",
       "Ap": "0",
