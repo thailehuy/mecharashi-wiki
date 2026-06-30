@@ -916,8 +916,12 @@ window.GlossaryData = {
       "name": "Unyielding Will",
       "effect": "Body is immune to <buf ID=900109>[Execution]</buf> effect. When body suffers overdamage, trigger <buf ID=900003>[Guts]</buf>, locking its HP to <color=#F74848>1</color>. After combat, repairs all parts to <color=#F74848>50%</color> of their max HP, and repairs all destroyed parts. Effect is removed after triggering."
     },
-    "1016502": {
+    "900127": {
       "name": "Invigorate",
+      "effect": "DMG dealt increases by <color=#F74848>4%</color>. DMG taken reduces by <color=#F74848>6%</color>. Repair AMT received increases by <color=#F74848>4%</color>. Stacking up to <color=#F74848>5</color> times."
+    },
+    "1016502": {
+      "name": "Invigorate I",
       "effect": "DMG dealt increases by <color=#F74848>4%</color>. DMG taken reduces by <color=#F74848>6%</color>. Repair AMT received increases by <color=#F74848>4%</color>. Stacking up to <color=#F74848>5</color> times."
     },
     "1017466": {
