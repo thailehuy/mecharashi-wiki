@@ -30,11 +30,11 @@ window.GlossaryData = {
     },
     "900008": {
       "name": "Pursuit",
-      "effect": "Chase down a fleeing or moving target to continue attacking."
+      "effect": "Automatically moves toward any enemy that attacks you."
     },
     "900009": {
       "name": "Pursuit Retaliation",
-      "effect": "Retaliate against an attacker who is moving or fleeing after their attack."
+      "effect": "Retaliate against an attacker after triggering [Pursuit]."
     },
     "900010": {
       "name": "Gusty Strike",
@@ -110,7 +110,7 @@ window.GlossaryData = {
     },
     "900030": {
       "name": "Cleave",
-      "effect": "Strike multiple adjacent targets simultaneously with a single attack action."
+      "effect": "Uses a Polearm to attack all targets within an I-shaped (3x1-tile) or L-shaped (3x1-tile) area ahead, dealing <color=#F74848>0.4x</color> AOE DMG"
     },
     "900031": {
       "name": "Extra Strike",
@@ -911,6 +911,14 @@ window.GlossaryData = {
     "900139": {
       "name": "Fire DMG",
       "effect": "DMG dealt based on the main skill's multiplier."
+    },
+    "1016514": {
+      "name": "Invigorate I",
+      "effect": "DMG dealt increases by <color=#F74848>4%</color>. DMG taken reduces by <color=#F74848>6%</color>. Repair AMT received increases by <color=#F74848>4%</color>. Stacking up to <color=#F74848>5</color> times."
+    },
+    "900127": {
+      "name": "Invigorate",
+      "effect": "DMG dealt increases by <color=#F74848>4%</color>. DMG taken reduces by <color=#F74848>6%</color>. Repair AMT received increases by <color=#F74848>4%</color>. Stacking up to <color=#F74848>5</color> times."
     }
   },
   "skill": {
