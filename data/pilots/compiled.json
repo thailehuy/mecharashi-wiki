@@ -40454,7 +40454,17 @@
       ],
       "AllowedMechaDriveList_DriveAllowedList": "Medium",
       "version": "2.2",
-      "enTranslation": true
+      "enTranslation": true,
+      "hiddenSkills": [
+        {
+          "name": "Critical Strike",
+          "icon": "Icon_skill_main_1156",
+          "type": "EquipmentSkill",
+          "Ap": "2",
+          "CD": "0",
+          "describe": "Uses a Chainsaw to attack a target, dealing <color=#F74848>1.25x</color> DMG. This attack always hits the part with lowest HP."
+        }
+      ]
     },
     {
       "ID": "10103123",
