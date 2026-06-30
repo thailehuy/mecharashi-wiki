@@ -128,5 +128,15 @@
       "SpecificEffects": "Talent effect increases to restoring <color=#F74848>5</color> AP and additionally grants <buf ID=1017466>[Starburst]</buf>, lasting for <color=#F74848>1</color> turn."
     }
   },
+  "hiddenSkills": [
+    {
+      "name": "Flash Strike",
+      "icon": "Icon_skill_main_1159",
+      "type": "EquipmentSkill",
+      "Ap": "2",
+      "CD": "0",
+      "describe": "Uses two Alter-Blades to attack a single target, dealing <color=#F74848>2×0.85</color> DMG."
+    }
+  ],
   "version": "2.3"
 }

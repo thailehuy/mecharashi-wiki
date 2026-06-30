@@ -1067,7 +1067,17 @@
       ],
       "AllowedMechaDriveList_DriveAllowedList": "Light",
       "version": "2.3",
-      "enTranslation": true
+      "enTranslation": true,
+      "hiddenSkills": [
+        {
+          "name": "Flash Strike",
+          "icon": "Icon_skill_main_1159",
+          "type": "EquipmentSkill",
+          "Ap": "2",
+          "CD": "0",
+          "describe": "Uses two Alter-Blades to attack a single target, dealing <color=#F74848>2\u00d70.85</color> DMG."
+        }
+      ]
     },
     {
       "ID": "10103159",
