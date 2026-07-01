@@ -364,6 +364,14 @@ body {
 
 .pilot-info {
   padding: 0.6rem 0.75rem 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.pilot-info-text {
+  flex: 1;
+  min-width: 0;
 }
 
 .pilot-name {
@@ -388,6 +396,18 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 3px;
+}
+
+.pilot-weapon-icon {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  flex-shrink: 0;
+  opacity: 0.9;
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 6px;
+  background: rgba(0,0,0,0.3);
+  padding: 3px;
 }
 
 .tag {
@@ -452,7 +472,38 @@ body {
 .detail-info-col {
   flex: 0 0 auto;
   min-width: 280px;
-  max-width: 480px;
+  max-width: 700px;
+}
+
+.detail-name-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.detail-name-row > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.detail-name-row .detail-tags {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.version-badge-inline {
+  font-size: 0.7rem;
+  font-weight: 700;
+  background: rgba(255,255,255,0.1);
+  color: #a0a0c0;
+  border-radius: 4px;
+  padding: 0.15rem 0.4rem;
 }
 
 .detail-name {
@@ -538,6 +589,22 @@ body {
   font-size: 1rem;
   color: #b0b0c8;
   line-height: 1.55;
+}
+
+.talent-weapon-icon-link {
+  display: block;
+  flex-shrink: 0;
+}
+
+.talent-weapon-icon {
+  border: 1px solid #2a2a4a;
+  background-color: #0d0d1a;
+}
+
+.talent-weapon-name {
+  font-size: 0.82rem;
+  color: #94a3b8;
+  margin-top: 2px;
 }
 
 /* ── Mech stats ───────────────────────────────────────────────────── */
@@ -793,7 +860,7 @@ body {
 
 @media (max-width: 900px) {
   .detail-portrait {
-    height: 400px;
+    height: 380px;
   }
 }
 
@@ -806,7 +873,7 @@ body {
     min-width: 0;
   }
   .detail-portrait {
-    height: 300px;
+    height: 260px;
   }
   .nd-parts {
     grid-template-columns: 1fr;
@@ -830,6 +897,16 @@ body {
 }
 .kw-unknown {
   opacity: 0.75;
+}
+.kw-pilot {
+  color: #e94560;
+  border-bottom: 1px dashed rgba(233, 69, 96, 0.5);
+  text-decoration: none;
+  white-space: nowrap;
+}
+.kw-pilot:hover {
+  color: #ff6b85;
+  border-bottom-color: rgba(255, 107, 133, 0.7);
 }
 
 #kw-tooltip {
@@ -1015,4 +1092,172 @@ body {
 .tag-dispatch-ver {
   color: #a3e635;
   border-color: #3f6212;
+}
+
+/* ── Weapons ─────────────────────────────────────────────────────────────── */
+
+.rank-sssr {
+  background: linear-gradient(135deg, #e94560, #b91c3c);
+  color: #ffffff;
+}
+
+.rank-ur {
+  background: linear-gradient(135deg, #7c3aed, #4f1d96);
+  color: #ffffff;
+}
+
+.tag-wtype {
+  color: #cbd5e1;
+  border-color: #334155;
+}
+
+.weapon-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.weapon-card-img {
+  background-color: #0d0d1a;
+  border-radius: 6px 6px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  aspect-ratio: 1;
+  overflow: hidden;
+  position: relative;
+}
+
+.weapon-type-badge {
+  position: absolute;
+  bottom: 6px;
+  right: 6px;
+  font-size: 0.6rem;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 4px;
+  letter-spacing: 0.04em;
+  background-color: rgba(0, 0, 0, 0.55);
+  color: #c0c0d0;
+  text-transform: uppercase;
+}
+
+.weapon-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.weapon-card-body {
+  padding: 0.5rem 0.75rem 0.75rem;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.weapon-card-body-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.weapon-card-pilot-icon {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+  object-position: top;
+  flex-shrink: 0;
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 6px;
+  background: rgba(0,0,0,0.3);
+}
+
+.weapon-portrait-area {
+  display: flex;
+  gap: 0.75rem;
+  width: 100%;
+  max-width: 724px;
+}
+
+.weapon-portrait {
+  flex: 1;
+  aspect-ratio: 1;
+  height: auto;
+  max-width: 350px;
+  max-height: 350px;
+  background-color: #0d0d1a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid #2a2a4a;
+  overflow: hidden;
+}
+
+.weapon-portrait img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.weapon-pilot-card {
+  flex: 1;
+  aspect-ratio: 1;
+  max-width: 350px;
+  max-height: 350px;
+  position: relative;
+  border-radius: 10px;
+  border: 1px solid #2a2a4a;
+  overflow: hidden;
+}
+
+.weapon-pilot-avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+}
+
+.weapon-pilot-name {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1.5rem 0.5rem 0.5rem;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.85));
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.9);
+}
+
+.weapon-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.stat-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.3rem 0.75rem;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 4px;
+  font-size: 0.875rem;
+}
+
+.stat-label {
+  color: #94a3b8;
+  font-weight: 500;
+}
+
+.stat-value {
+  color: #e2e8f0;
+  font-weight: 600;
 }

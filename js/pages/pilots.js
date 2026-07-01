@@ -7,7 +7,8 @@ var QUALITY_CLASS  = { R: 'rank-b',  SR: 'rank-a',  SSR: 'rank-s'  };
 var AVATAR_BASE    = 'https://media.zlongame.com/media/pictures/cn/community/img/gl/gameInfo/characterHalf/';
 var PORTRAIT_BASE  = 'https://media.zlongame.com/media/pictures/cn/community/img/gl/gameInfo/character/';
 var SKILL_BASE      = 'https://media.zlongame.com/media/pictures/cn/community/img/gl/gameInfo/skill/';
-var OCCUPATION_BASE = 'https://media.zlongame.com/media/pictures/cn/community/img/gl/gameInfo/occupation/';
+var OCCUPATION_BASE  = 'https://media.zlongame.com/media/pictures/cn/community/img/gl/gameInfo/occupation/';
+var WEAPON_IMG_BASE  = 'https://media.zlongame.com/media/pictures/cn/community/img/gl/gameInfo/weapons/';
 
 Pages.pilots = {
   title: 'Pilots',
@@ -131,10 +132,19 @@ Pages.pilots = {
       return parseFloat(b.version) - parseFloat(a.version);
     });
 
+    var allWeapons = (window.WeaponsData || {}).weapons || [];
+
     var cards = filtered.map(function (p) {
       var rankLabel = QUALITY_LABEL[p.quality] || p.quality;
       var rankClass = QUALITY_CLASS[p.quality] || '';
       var imgSrc    = AVATAR_BASE + encodeURIComponent(p.PortraitHeroIcon) + '.png';
+
+      var weapon = allWeapons.find(function (w) { return w.pilot === p.PilotName; });
+      var weaponIconHtml = '';
+      if (weapon) {
+        var wImgSrc = WEAPON_IMG_BASE + encodeURIComponent(weapon.icon) + '.png';
+        weaponIconHtml = '<img class="pilot-weapon-icon" src="' + wImgSrc + '" alt="' + $('<span>').text(weapon.name).html() + '" loading="lazy" />';
+      }
 
       return (
         '<div class="col-6 col-sm-4 col-md-3 col-xl-2">' +
@@ -145,12 +155,15 @@ Pages.pilots = {
               '<span class="rank-badge ' + rankClass + '">' + rankLabel + '</span>' +
             '</div>' +
             '<div class="pilot-info">' +
-              '<div class="pilot-name">' + $('<span>').text(p.PilotName).html() + '</div>' +
-              '<div class="pilot-realname">' + $('<span>').text(p.RealName).html() + '</div>' +
-              '<div class="pilot-tags">' +
-                '<span class="tag">' + $('<span>').text(p.Occupation).html() + '</span>' +
-                (p.AllowedMechaDriveList_DriveAllowedList ? '<span class="tag tag-license">' + $('<span>').text(p.AllowedMechaDriveList_DriveAllowedList).html() + '</span>' : '') +
+              '<div class="pilot-info-text">' +
+                '<div class="pilot-name">' + $('<span>').text(p.PilotName).html() + '</div>' +
+                '<div class="pilot-realname">' + $('<span>').text(p.RealName).html() + '</div>' +
+                '<div class="pilot-tags">' +
+                  '<span class="tag">' + $('<span>').text(p.Occupation).html() + '</span>' +
+                  (p.AllowedMechaDriveList_DriveAllowedList ? '<span class="tag tag-license">' + $('<span>').text(p.AllowedMechaDriveList_DriveAllowedList).html() + '</span>' : '') +
+                '</div>' +
               '</div>' +
+              weaponIconHtml +
             '</div>' +
           '</div>' +
         '</div>'
@@ -200,25 +213,30 @@ Pages.pilots = {
     return (
       cnWarning +
       '<a href="#pilots" class="btn-back">&#8592; Back to Pilots</a>' +
-      '<div class="detail-layout">' +
-        '<div class="detail-portrait-col">' +
-          '<div class="detail-portrait">' +
-            '<img src="' + portraitSrc + '" alt="' + $('<span>').text(p.PilotName).html() + '" />' +
-            '<span class="version-badge">v' + $('<span>').text(p.version).html() + '</span>' +
-            '<span class="rank-badge ' + rankClass + '">' + rankLabel + '</span>' +
-          '</div>' +
-        '</div>' +
-        '<div class="detail-info-col">' +
+      '<div class="detail-name-row">' +
+        '<div>' +
           '<h2 class="detail-name">' + occIconHtml + $('<span>').text(p.PilotName).html() + '</h2>' +
           '<p class="detail-realname">' + $('<span>').text(p.RealName).html() + '</p>' +
           '<div class="detail-tags">' +
             '<span class="tag">' + $('<span>').text(p.Gender).html() + '</span>' +
             '<span class="tag">' + $('<span>').text(p.Occupation).html() + '</span>' +
             (p.AllowedMechaDriveList_DriveAllowedList ? '<span class="tag tag-license">' + $('<span>').text(p.AllowedMechaDriveList_DriveAllowedList + ' License').html() + '</span>' : '') +
+            '<span class="version-badge-inline">v' + $('<span>').text(p.version).html() + '</span>' +
+            '<span class="rank-badge ' + rankClass + '">' + rankLabel + '</span>' +
           '</div>' +
+        '</div>' +
+      '</div>' +
+      '<div class="detail-layout">' +
+        '<div class="detail-portrait-col">' +
+          '<div class="detail-portrait">' +
+            '<img src="' + portraitSrc + '" alt="' + $('<span>').text(p.PilotName).html() + '" />' +
+          '</div>' +
+        '</div>' +
+        '<div class="detail-info-col">' +
           '<div class="detail-talents">' +
             this._renderTalent(p.Talent0_2Ability, 'Basic Talent') +
-            this._renderTalent(p.Talent3_5Ability, 'Upgraded Talent') +
+            this._renderTalent(p.Talent3_5Ability, 'Ascended Talent') +
+            this._renderWeaponTalent(p.PilotName) +
           '</div>' +
         '</div>' +
       '</div>' +
@@ -239,6 +257,39 @@ Pages.pilots = {
           '<div>' +
             '<div class="talent-label">' + label + '</div>' +
             '<div class="talent-name">' + $('<span>').text(talent.name).html() + '</div>' +
+          '</div>' +
+        '</div>' +
+        '<div class="talent-desc">' + desc + '</div>' +
+      '</div>'
+    );
+  },
+
+  _renderWeaponTalent: function (pilotName) {
+    var weapons = (window.WeaponsData || {}).weapons || [];
+    var weapon  = weapons.find(function (w) { return w.pilot === pilotName; });
+    if (!weapon) return '';
+
+    var ps = (weapon.PassiveSkill || []).find(function (p) {
+      return (p.SpecificEffects || '').indexOf('Enhanced') === 0;
+    });
+    if (!ps) return '';
+
+    var weaponImgSrc = WEAPON_IMG_BASE + encodeURIComponent(weapon.icon) + '.png';
+    var desc = this._parseEffects(ps.SpecificEffects || '');
+
+    return (
+      '<div class="talent-card">' +
+        '<div class="talent-header">' +
+          '<a href="#weapons/' + encodeURIComponent(weapon.name) + '" class="talent-weapon-icon-link">' +
+            '<img class="talent-icon talent-weapon-icon" src="' + weaponImgSrc + '" alt="' + $('<span>').text(weapon.name).html() + '" />' +
+          '</a>' +
+          '<div>' +
+            '<div class="talent-label">Signature Weapon</div>' +
+            '<div class="talent-name">' + $('<span>').text(ps.name || weapon.name).html() + '</div>' +
+            '<div class="talent-weapon-name">' +
+              $('<span>').text(weapon.name).html() +
+              (weapon.version ? ' <span class="version-badge-inline">v' + weapon.version + '</span>' : '') +
+            '</div>' +
           '</div>' +
         '</div>' +
         '<div class="talent-desc">' + desc + '</div>' +

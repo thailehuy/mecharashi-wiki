@@ -1,0 +1,2180 @@
+[
+  {
+    "ID": "10314121",
+    "name": "群山之力·改",
+    "quality": "UR",
+    "WeaponType1": "Melee",
+    "WeaponType2": "Rod",
+    "type": "Rod",
+    "icon": "Icon_weapon_10300301",
+    "detail": {
+      "data": {
+        "data": [
+          {
+            "ID": "10314121",
+            "name": "群山之力·改",
+            "quality": "UR",
+            "grade": "70",
+            "WeaponType1": "Melee",
+            "WeaponType2": "Rod",
+            "type": "Rod",
+            "LimitedModelOfWeapon": "Light/Medium/Heavy",
+            "RestrictionsPositionOfWeapon": "DoubleHand",
+            "range": "1（可斜向）",
+            "WeaponWeight": "800",
+            "WeaponBasicAttackingPower": "730",
+            "WeaponHitPoint": "1452",
+            "WeaponUnderstanding": "4558",
+            "PassiveSkill": [
+              {
+                "ID": "53004",
+                "name": "余怒",
+                "SpecificEffects": "单手握持长柄时，命中率不再下降",
+                "BufCarried": "530041",
+                "SkillIcon": "Icon_skill_passive_5200",
+                "icon": "Icon_skill_passive_5200",
+                "Status": 1,
+                "weight": 1157
+              }
+            ],
+            "IconResourcePath": "Icon_weapon_10300301",
+            "icon": "Icon_weapon_10300301",
+            "describe": "多尔工业重整机兵生产线后推出的改良款长柄武器，以内置的驱动核心产生的打击动能代替武器的自重打击，大幅改善了操作的灵活性与轻便性。",
+            "Status": 1,
+            "weight": 681
+          }
+        ],
+        "now": "2026-07-01 10:34:44"
+      },
+      "status": 1,
+      "switch": null,
+      "info": 0
+    }
+  },
+  {
+    "ID": "10514121",
+    "name": "聚合屏障·改",
+    "quality": "UR",
+    "WeaponType1": "Melee",
+    "WeaponType2": "Buckler",
+    "type": "Buckler",
+    "icon": "Icon_weapon_10500401",
+    "detail": {
+      "data": {
+        "data": [
+          {
+            "ID": "10514121",
+            "name": "聚合屏障·改",
+            "quality": "UR",
+            "grade": "70",
+            "WeaponType1": "Melee",
+            "WeaponType2": "Buckler",
+            "type": "Buckler",
+            "LimitedModelOfWeapon": "Light/Medium/Heavy",
+            "RestrictionsPositionOfWeapon": "Hand",
+            "range": "1",
+            "WeaponWeight": "70",
+            "WeaponBasicAttackingPower": "284",
+            "WeaponHitPoint": "3028",
+            "ShieldbloodBase": "839",
+            "PassiveSkill": [
+              {
+                "ID": "53007",
+                "name": "偏转防护",
+                "SpecificEffects": "受到攻击时的伤害转移权重额外提升<color=#F74848>50</color>，伤害减免率提升至<color=#F74848>15%</color>",
+                "SkillIcon": "Icon_skill_passive_2112",
+                "icon": "Icon_skill_passive_2112",
+                "Status": 1,
+                "weight": 1160
+              }
+            ],
+            "IconResourcePath": "Icon_weapon_10500401",
+            "icon": "Icon_weapon_10500401",
+            "describe": "将旧型干扰涂层和收束核心完全替换后的升级款聚合屏障，无论是针对弹道的偏转防御还是甲片扩张后的防护范围，对比旧型都有着巨大提升。",
+            "Status": 1,
+            "weight": 688
+          }
+        ],
+        "now": "2026-07-01 10:34:45"
+      },
+      "status": 1,
+      "switch": null,
+      "info": 0
+    }
+  },
+  {
+    "ID": "20114121",
+    "name": "夜魇·改",
+    "quality": "UR",
+    "WeaponType1": "Assault",
+    "WeaponType2": "MachineGun",
+    "type": "MachineGun",
+    "icon": "Icon_weapon_20100401",
+    "detail": {
+      "data": {
+        "data": [
+          {
+            "ID": "20114121",
+            "name": "夜魇·改",
+            "quality": "UR",
+            "grade": "70",
+            "WeaponType1": "Assault",
+            "WeaponType2": "MachineGun",
+            "type": "MachineGun",
+            "LimitedModelOfWeapon": "Light/Medium/Heavy",
+            "RestrictionsPositionOfWeapon": "Hand",
+            "range": "1-3",
+            "WeaponWeight": "500",
+            "WeaponBasicAttackingPower": "1424",
+            "WeaponHitPoint": "3151",
+            "WeaponUnderstanding": "4558",
+            "PassiveSkill": [
+              {
+                "ID": "53001",
+                "name": "蹁跹",
+                "SpecificEffects": "主动攻击后，若击破部位，战后可额外移动<color=#F74848>2</color>格;\n仅在使用当前武器时生效",
+                "BufCarried": "530011",
+                "SkillIcon": "Icon_skill_passive_5198",
+                "icon": "Icon_skill_passive_5198",
+                "Status": 1,
+                "weight": 1154
+              }
+            ],
+            "IconResourcePath": "Icon_weapon_20100401",
+            "icon": "Icon_weapon_20100401",
+            "describe": "黑曜石推出的新型机枪武装，是知名机枪武器夜魇的最新改型。内置了与钢岚机兵相连的火控芯片，支持神经直连控制机兵武装直接开火。",
+            "Status": 1,
+            "weight": 693
+          }
+        ],
+        "now": "2026-07-01 10:34:47"
+      },
+      "status": 1,
+      "switch": null,
+      "info": 0
+    }
+  },
+  {
+    "ID": "10214121",
+    "name": "凯旋·改",
+    "quality": "UR",
+    "WeaponType1": "Melee",
+    "WeaponType2": "PileBunker",
+    "type": "PileBunker",
+    "icon": "Icon_weapon_10200301",
+    "detail": {
+      "data": {
+        "data": [
+          {
+            "ID": "10214121",
+            "name": "凯旋·改",
+            "quality": "UR",
+            "grade": "70",
+            "WeaponType1": "Melee",
+            "WeaponType2": "PileBunker",
+            "type": "PileBunker",
+            "LimitedModelOfWeapon": "Light/Medium/Heavy",
+            "RestrictionsPositionOfWeapon": "Hand",
+            "range": "1",
+            "WeaponWeight": "300",
+            "WeaponBasicAttackingPower": "673",
+            "WeaponHitPoint": "3213",
+            "WeaponUnderstanding": "4558",
+            "PassiveSkill": [
+              {
+                "ID": "53013",
+                "name": "起爆",
+                "SpecificEffects": "造成伤害时，对命中的部位造成<color=#F74848>15%</color>武器攻击力的<buf ID=900017>[固定伤害]</buf>",
+                "BufCarried": "530131",
+                "SkillIcon": "Icon_skill_passive_1115",
+                "icon": "Icon_skill_passive_1115",
+                "Status": 1,
+                "weight": 1166
+              }
+            ],
+            "IconResourcePath": "Icon_weapon_10200301",
+            "icon": "Icon_weapon_10200301",
+            "describe": "在保留了原有的打桩机外结构的同时，增加了与机兵动力模块直连的新型推射器。在打击方面更加快速、精准、可控。",
+            "Status": 1,
+            "weight": 679
+          }
+        ],
+        "now": "2026-07-01 10:34:51"
+      },
+      "status": 1,
+      "switch": null,
+      "info": 0
+    }
+  },
+  {
+    "ID": "10414121",
+    "name": "群星·改",
+    "quality": "UR",
+    "WeaponType1": "Melee",
+    "WeaponType2": "Shield",
+    "type": "Shield",
+    "icon": "Icon_weapon_10400501",
+    "detail": {
+      "data": {
+        "data": [
+          {
+            "ID": "10414121",
+            "name": "群星·改",
+            "quality": "UR",
+            "grade": "70",
+            "WeaponType1": "Melee",
+            "WeaponType2": "Shield",
+            "type": "Shield",
+            "LimitedModelOfWeapon": "Heavy",
+            "RestrictionsPositionOfWeapon": "Hand",
+            "range": "1",
+            "WeaponWeight": "390",
+            "WeaponBasicAttackingPower": "380",
+            "WeaponHitPoint": "3460",
+            "ShieldbloodBase": "2397",
+            "PassiveSkill": [
+              {
+                "ID": "53016",
+                "name": "冲压装甲",
+                "SpecificEffects": "盾牌伤害减免提升至<color=#F74848>20%</color>",
+                "SkillIcon": "Icon_skill_passive_2117",
+                "icon": "Icon_skill_passive_2117",
+                "Status": 1,
+                "weight": 1169
+              }
+            ],
+            "IconResourcePath": "Icon_weapon_10400501",
+            "icon": "Icon_weapon_10400501",
+            "describe": "采用了UKB-1晶格冶炼技术而诞生的群星大盾，镀有全新箔体涂层的冲压护板在提高强度的同时增加了干扰仪的作用范围，综合防护性能大幅提升。",
+            "Status": 1,
+            "weight": 684
+          }
+        ],
+        "now": "2026-07-01 10:34:53"
+      },
+      "status": 1,
+      "switch": null,
+      "info": 0
+    }
+  },
+  {
+    "ID": "30214121",
+    "name": "赤狐·改",
+    "quality": "UR",
+    "WeaponType1": "Sniper",
+    "WeaponType2": "HeavySniper",
+    "type": "HeavySniper",
+    "icon": "Icon_weapon_30200301",
+    "detail": {
+      "data": {
+        "data": [
+          {
+            "ID": "30214121",
+            "name": "赤狐·改",
+            "quality": "UR",
+            "grade": "70",
+            "WeaponType1": "Sniper",
+            "WeaponType2": "HeavySniper",
+            "type": "HeavySniper",
+            "LimitedModelOfWeapon": "Light/Medium/Heavy",
+            "RestrictionsPositionOfWeapon": "DoubleHand",
+            "range": "2-4",
+            "WeaponWeight": "1000",
+            "WeaponBasicAttackingPower": "638",
+            "WeaponHitPoint": "1545",
+            "WeaponUnderstanding": "4558",
+            "PassiveSkill": [
+              {
+                "ID": "53010",
+                "name": "凝神待发",
+                "SpecificEffects": "普通攻击前，若没有移动过，本次攻击可以<buf ID=900014>[瞄准]</buf>，每回合最多发动<color=#F74848>3</color>次",
+                "BufCarried": "530101/530102",
+                "SkillIcon": "Icon_skill_passive_5186",
+                "icon": "Icon_skill_passive_5186",
+                "Status": 1,
+                "weight": 1163
+              }
+            ],
+            "IconResourcePath": "Icon_weapon_30200301",
+            "icon": "Icon_weapon_30200301",
+            "describe": "顶尖狙击枪赤狐的最新改款，在粒子射线瞄准器上加装了更加先进的校准芯片和采样模组。通过调用机兵侦测器和轨迹模拟技术进一步提高命中率和易用性。",
+            "Status": 1,
+            "weight": 702
+          }
+        ],
+        "now": "2026-07-01 10:34:54"
+      },
+      "status": 1,
+      "switch": null,
+      "info": 0
+    }
+  },
+  {
+    "ID": "20214121",
+    "name": "贝希摩斯·改",
+    "quality": "UR",
+    "WeaponType1": "Assault",
+    "WeaponType2": "HeavyMachineGun",
+    "type": "HeavyMachineGun",
+    "icon": "Icon_weapon_20400302",
+    "detail": {
+      "data": {
+        "data": [
+          {
+            "ID": "20214121",
+            "name": "贝希摩斯·改",
+            "quality": "UR",
+            "grade": "70",
+            "WeaponType1": "Assault",
+            "WeaponType2": "HeavyMachineGun",
+            "type": "HeavyMachineGun",
+            "LimitedModelOfWeapon": "Light/Medium/Heavy",
+            "RestrictionsPositionOfWeapon": "DoubleHand",
+            "range": "1-3",
+            "WeaponWeight": "1000",
+            "WeaponBasicAttackingPower": "1599",
+            "WeaponHitPoint": "1545",
+            "WeaponUnderstanding": "4558",
+            "PassiveSkill": [
+              {
+                "ID": "53022",
+                "name": "余啸",
+                "SpecificEffects": "单手握持重机枪时，命中率不再下降",
+                "BufCarried": "530221",
+                "SkillIcon": "Icon_skill_passive_5126",
+                "icon": "Icon_skill_passive_5126",
+                "Status": 1,
+                "weight": 1175
+              }
+            ],
+            "IconResourcePath": "Icon_weapon_20400302",
+            "icon": "Icon_weapon_20400302",
+            "describe": "搭载了新式外附冷却管和多匣弹仓，在提升武器自冷却的同时支持外接机兵冷却系统。在安全性和耐用性上都得到了全面升级。",
+            "Status": 1,
+            "weight": 695
+          }
+        ],
+        "now": "2026-07-01 10:35:02"
+      },
+      "status": 1,
+      "switch": null,
+      "info": 0
+    }
+  },
+  {
+    "ID": "30114121",
+    "name": "麦克斯·改",
+    "quality": "UR",
+    "WeaponType1": "Sniper",
+    "WeaponType2": "LightSniper",
+    "type": "LightSniper",
+    "icon": "Icon_weapon_30100401",
+    "detail": {
+      "data": {
+        "data": [
+          {
+            "ID": "30114121",
+            "name": "麦克斯·改",
+            "quality": "UR",
+            "grade": "70",
+            "WeaponType1": "Sniper",
+            "WeaponType2": "LightSniper",
+            "type": "LightSniper",
+            "LimitedModelOfWeapon": "Light/Medium/Heavy",
+            "RestrictionsPositionOfWeapon": "Hand",
+            "range": "2-4",
+            "WeaponWeight": "600",
+            "WeaponBasicAttackingPower": "537",
+            "WeaponHitPoint": "3028",
+            "WeaponUnderstanding": "4558",
+            "PassiveSkill": [
+              {
+                "ID": "53025",
+                "name": "沉笃",
+                "SpecificEffects": "主动攻击对战时，若目标无法反击，本次攻击命中率和暴击率提升<color=#F74848>10%</color>",
+                "BufCarried": "530251",
+                "SkillIcon": "Icon_skill_passive_4128",
+                "icon": "Icon_skill_passive_4128",
+                "Status": 1,
+                "weight": 1178
+              }
+            ],
+            "IconResourcePath": "Icon_weapon_30100401",
+            "icon": "Icon_weapon_30100401",
+            "describe": "配备了安赫特公司最新研发的光瞄具与采样预测系统，并在旧式麦克斯的基础上进一步提升了操控性和耐用性。",
+            "Status": 1,
+            "weight": 701
+          }
+        ],
+        "now": "2026-07-01 10:35:03"
+      },
+      "status": 1,
+      "switch": null,
+      "info": 0
+    }
+  },
+  {
+    "ID": "40114121",
+    "name": "鸠摩罗·改",
+    "quality": "UR",
+    "WeaponType1": "Heavy",
+    "WeaponType2": "Missile",
+    "type": "Missile",
+    "icon": "Icon_weapon_40100401",
+    "detail": {
+      "data": {
+        "data": [
+          {
+            "ID": "40114121",
+            "name": "鸠摩罗·改",
+            "quality": "UR",
+            "grade": "70",
+            "WeaponType1": "Heavy",
+            "WeaponType2": "Missile",
+            "type": "Missile",
+            "LimitedModelOfWeapon": "Medium",
+            "RestrictionsPositionOfWeapon": "Shoulder",
+            "range": "3-6",
+            "WeaponWeight": "950",
+            "WeaponBasicAttackingPower": "494",
+            "WeaponHitPoint": "3584",
+            "WeaponUnderstanding": "4558",
+            "NumberOfBullets": "2",
+            "InitiativeSkill": [
+              {
+                "ID": "4011",
+                "remarks": "导弹攻击",
+                "name": "定点打击",
+                "describe": "使用导弹攻击单个目标，对命中部位造成<color=#F74848>1.0</color>倍伤害，对其他部位造成主体伤害<color=#F74848>50%</color>的溅射伤害",
+                "type": "SpecialAssault",
+                "CD": "0",
+                "Ap": "2",
+                "matchingWeaponType": "导弹",
+                "SkillIcon": "Icon_skill_order_1001",
+                "icon": "Icon_skill_order_1001",
+                "Status": 1,
+                "weight": 664
+              }
+            ],
+            "PassiveSkill": [
+              {
+                "ID": "53019",
+                "name": "特型弹仓",
+                "SpecificEffects": "当导弹弹药耗尽时，自动装填所有弹药，该效果每次出击仅可发动<color=#F74848>1</color>次",
+                "BufCarried": "530191",
+                "SkillIcon": "Icon_skill_passive_5148",
+                "icon": "Icon_skill_passive_5148",
+                "Status": 1,
+                "weight": 1172
+              }
+            ],
+            "IconResourcePath": "Icon_weapon_40100401",
+            "icon": "Icon_weapon_40100401",
+            "describe": "弹头芯片升级后的新款鸠摩罗，在火力与打击精度上均有显著提升。并在燃料支持上进行了进一步拓展，以适应多种环境、多种场合的战斗。",
+            "Status": 1,
+            "weight": 704
+          }
+        ],
+        "now": "2026-07-01 10:35:05"
+      },
+      "status": 1,
+      "switch": null,
+      "info": 0
+    }
+  },
+  {
+    "ID": "20314121",
+    "name": "火驭·改",
+    "quality": "UR",
+    "WeaponType1": "Assault",
+    "WeaponType2": "ShotGun",
+    "type": "ShotGun",
+    "icon": "Icon_weapon_20300401",
+    "detail": {
+      "data": {
+        "data": [
+          {
+            "ID": "20314121",
+            "name": "火驭·改",
+            "quality": "UR",
+            "grade": "70",
+            "WeaponType1": "Assault",
+            "WeaponType2": "ShotGun",
+            "type": "ShotGun",
+            "LimitedModelOfWeapon": "Light/Medium/Heavy",
+            "RestrictionsPositionOfWeapon": "Hand",
+            "range": "1-2",
+            "WeaponWeight": "450",
+            "WeaponBasicAttackingPower": "1642",
+            "WeaponHitPoint": "3151",
+            "WeaponUnderstanding": "4558",
+            "PassiveSkill": [
+              {
+                "ID": "53034",
+                "name": "斩棘",
+                "SpecificEffects": "主动攻击对战时，若遭受目标反击，遭受伤害降低<color=#F74848>20%</color>",
+                "BufCarried": "530341",
+                "SkillIcon": "Icon_skill_passive_5179",
+                "icon": "Icon_skill_passive_5179",
+                "Status": 1,
+                "weight": 1187
+              }
+            ],
+            "IconResourcePath": "Icon_weapon_20300401",
+            "icon": "Icon_weapon_20300401",
+            "describe": "除了在旧型火驭的基础上加装了适性更优良的火控组件外，对机载增压模块的支持也得到了全新升级。是当前量产霰弹武器中的绝对王者。",
+            "Status": 1,
+            "weight": 697
+          }
+        ],
+        "now": "2026-07-01 10:35:09"
+      },
+      "status": 1,
+      "switch": null,
+      "info": 0
+    }
+  },
+  {
+    "ID": "40214121",
+    "name": "熔火·改",
+    "quality": "UR",
+    "WeaponType1": "Heavy",
+    "WeaponType2": "Rocket",
+    "type": "Rocket",
+    "icon": "Icon_weapon_40200401",
+    "detail": {
+      "data": {
+        "data": [
+          {
+            "ID": "40214121",
+            "name": "熔火·改",
+            "quality": "UR",
+            "grade": "70",
+            "WeaponType1": "Heavy",
+            "WeaponType2": "Rocket",
+            "type": "Rocket",
+            "LimitedModelOfWeapon": "Medium",
+            "RestrictionsPositionOfWeapon": "Shoulder",
+            "range": "3-6",
+            "WeaponWeight": "1200",
+            "WeaponBasicAttackingPower": "935",
+            "WeaponHitPoint": "2781",
+            "WeaponUnderstanding": "4558",
+            "NumberOfBullets": "1",
+            "InitiativeSkill": [
+              {
+                "ID": "4021",
+                "remarks": "火箭攻击",
+                "name": "战略轰炸",
+                "describe": "使用火箭攻击所选<color=#F74848>3×3</color>格范围内的所有目标，对每个部位造成<color=#F74848>0.25</color>倍范围伤害",
+                "type": "SpecialAssault",
+                "CD": "0",
+                "Ap": "3",
+                "matchingWeaponType": "火箭",
+                "SkillIcon": "Icon_skill_order_1003",
+                "icon": "Icon_skill_order_1003",
+                "Status": 1,
+                "weight": 665
+              }
+            ],
+            "PassiveSkill": [
+              {
+                "ID": "53028",
+                "name": "初发",
+                "SpecificEffects": "使用弹仓中的第<color=#F74848>1</color>发弹药攻击时，命中率提升<color=#F74848>10%</color>，伤害提升<color=#F74848>10%</color>",
+                "BufCarried": "530281",
+                "SkillIcon": "Icon_skill_passive_4104",
+                "icon": "Icon_skill_passive_4104",
+                "Status": 1,
+                "weight": 1181
+              }
+            ],
+            "IconResourcePath": "Icon_weapon_40200401",
+            "icon": "Icon_weapon_40200401",
+            "describe": "加装了由黑曜石特别研制的新型自制导组件的机载火箭，能根据机师需求执行更加精细、精确的轰炸命令，大大拓展了火箭武器的战术价值。",
+            "Status": 1,
+            "weight": 706
+          }
+        ],
+        "now": "2026-07-01 10:35:11"
+      },
+      "status": 1,
+      "switch": null,
+      "info": 0
+    }
+  },
+  {
+    "ID": "50114121",
+    "name": "炬塔·改",
+    "quality": "UR",
+    "WeaponType1": "Heavy",
+    "WeaponType2": "RailGun",
+    "type": "RailGun",
+    "icon": "Icon_weapon_50100101",
+    "detail": {
+      "data": {
+        "data": [
+          {
+            "ID": "50114121",
+            "name": "炬塔·改",
+            "quality": "UR",
+            "grade": "70",
+            "WeaponType1": "Heavy",
+            "WeaponType2": "RailGun",
+            "type": "RailGun",
+            "LimitedModelOfWeapon": "Medium",
+            "RestrictionsPositionOfWeapon": "Back",
+            "range": "1-5",
+            "WeaponWeight": "1100",
+            "WeaponBasicAttackingPower": "773",
+            "WeaponHitPoint": "4943",
+            "WeaponUnderstanding": "4558",
+            "NumberOfBullets": "3",
+            "InitiativeSkill": [
+              {
+                "ID": "5011",
+                "remarks": "电磁炮攻击",
+                "name": "电磁激荡",
+                "describe": "使用电磁炮攻击纵向<color=#F74848>5</color>格范围内的所有目标，造成<color=#F74848>1.0</color>倍范围伤害",
+                "type": "SpecialAssault",
+                "CD": "0",
+                "Ap": "3",
+                "matchingWeaponType": "电磁炮",
+                "SkillIcon": "Icon_skill_order_1005",
+                "icon": "Icon_skill_order_1005",
+                "Status": 1,
+                "weight": 667
+              }
+            ],
+            "PassiveSkill": [
+              {
+                "ID": "53031",
+                "name": "弹药回收",
+                "SpecificEffects": "使用电磁炮主动攻击时，若击破部位，战后装填<color=#F74848>1</color>发弹药，该效果间隔<color=#F74848>1</color>回合才可再次触发",
+                "BufCarried": "530311",
+                "SkillIcon": "Icon_skill_passive_5140",
+                "icon": "Icon_skill_passive_5140",
+                "Status": 1,
+                "weight": 1184
+              }
+            ],
+            "IconResourcePath": "Icon_weapon_50100101",
+            "icon": "Icon_weapon_50100101",
+            "describe": "将电浆弹与推射弹同时集成在一款电磁炮上的炬塔改款，能根据具体的作战环境与战术需求选择更多样的打击形式。",
+            "Status": 1,
+            "weight": 708
+          }
+        ],
+        "now": "2026-07-01 10:35:13"
+      },
+      "status": 1,
+      "switch": null,
+      "info": 0
+    }
+  },
+  {
+    "ID": "10314122",
+    "name": "群山之力·改Ⅱ",
+    "quality": "UR",
+    "WeaponType1": "Melee",
+    "WeaponType2": "Rod",
+    "type": "Rod",
+    "icon": "Icon_weapon_10300301",
+    "detail": {
+      "data": {
+        "data": [
+          {
+            "ID": "10314122",
+            "name": "群山之力·改Ⅱ",
+            "quality": "UR",
+            "grade": "70",
+            "WeaponType1": "Melee",
+            "WeaponType2": "Rod",
+            "type": "Rod",
+            "LimitedModelOfWeapon": "Light/Medium/Heavy",
+            "RestrictionsPositionOfWeapon": "DoubleHand",
+            "range": "1（可斜向）",
+            "WeaponWeight": "800",
+            "WeaponBasicAttackingPower": "730",
+            "WeaponHitPoint": "1452",
+            "WeaponUnderstanding": "4558",
+            "PassiveSkill": [
+              {
+                "ID": "53040",
+                "name": "如臂使指",
+                "SpecificEffects": "与斜格目标对战时，命中率和暴击率提升<color=#F74848>12%</color>",
+                "BufCarried": "530401",
+                "SkillIcon": "Icon_skill_passive_4133",
+                "icon": "Icon_skill_passive_4133",
+                "Status": 1,
+                "weight": 1193
+              }
+            ],
+            "IconResourcePath": "Icon_weapon_10300301",
+            "icon": "Icon_weapon_10300301",
+            "describe": "多尔工业重整机兵生产线后推出的改良款长柄武器，以内置的驱动核心产生的打击动能代替武器的自重打击，大幅改善了操作的灵活性与轻便性。",
+            "Status": 1,
+            "weight": 682
+          }
+        ],
+        "now": "2026-07-01 10:35:15"
+      },
+      "status": 1,
+      "switch": null,
+      "info": 0
+    }
+  },
+  {
+    "ID": "20414121",
+    "name": "炎啸·改",
+    "quality": "UR",
+    "WeaponType1": "Assault",
+    "WeaponType2": "Flamethrower",
+    "type": "Flamethrower",
+    "icon": "Icon_weapon_20500301",
+    "detail": {
+      "data": {
+        "data": [
+          {
+            "ID": "20414121",
+            "name": "炎啸·改",
+            "quality": "UR",
+            "grade": "70",
+            "WeaponType1": "Assault",
+            "WeaponType2": "Flamethrower",
+            "type": "Flamethrower",
+            "LimitedModelOfWeapon": "Light/Medium/Heavy",
+            "RestrictionsPositionOfWeapon": "Hand",
+            "range": "2（可斜向）",
+            "WeaponWeight": "480",
+            "WeaponBasicAttackingPower": "1385",
+            "WeaponHitPoint": "3831",
+            "WeaponUnderstanding": "4558",
+            "PassiveSkill": [
+              {
+                "ID": "53037",
+                "name": "穿透焰流",
+                "SpecificEffects": "主动攻击对战时，<buf ID=900065>[火焰伤害]</buf>的路径延长<color=#F74848>1</color>格",
+                "BufCarried": "530371",
+                "SkillIcon": "Icon_skill_passive_5228",
+                "icon": "Icon_skill_passive_5228",
+                "Status": 1,
+                "weight": 1190
+              }
+            ],
+            "IconResourcePath": "Icon_weapon_20500301",
+            "icon": "Icon_weapon_20500301",
+            "describe": "经过精密改良后的新式炎啸喷火器。尽管很多人抱怨说，新式改良款缺少了联合设计局式的粗犷美感。但在泛用性和可控性上相比旧款炎啸都获得了大幅提升。",
+            "Status": 1,
+            "weight": 699
+          }
+        ],
+        "now": "2026-07-01 10:35:17"
+      },
+      "status": 1,
+      "switch": null,
+      "info": 0
+    }
+  },
+  {
+    "ID": "10214122",
+    "name": "凯旋·改Ⅱ",
+    "quality": "UR",
+    "WeaponType1": "Melee",
+    "WeaponType2": "PileBunker",
+    "type": "PileBunker",
+    "icon": "Icon_weapon_10200301",
+    "detail": {
+      "data": {
+        "data": [
+          {
+            "ID": "10214122",
+            "name": "凯旋·改Ⅱ",
+            "quality": "UR",
+            "grade": "70",
+            "WeaponType1": "Melee",
+            "WeaponType2": "PileBunker",
+            "type": "PileBunker",
+            "LimitedModelOfWeapon": "Light/Medium/Heavy",
+            "RestrictionsPositionOfWeapon": "Hand",
+            "range": "1",
+            "WeaponWeight": "300",
+            "WeaponBasicAttackingPower": "673",
+            "WeaponHitPoint": "3213",
+            "WeaponUnderstanding": "4558",
+            "PassiveSkill": [
+              {
+                "ID": "53043",
+                "name": "崩摧",
+                "SpecificEffects": "攻击耐久值大于等于<color=#F74848>60%</color>的部位时，造成伤害提升<color=#F74848>15%</color>",
+                "BufCarried": "530431",
+                "SkillIcon": "Icon_skill_passive_1101",
+                "icon": "Icon_skill_passive_1101",
+                "Status": 1,
+                "weight": 1196
+              }
+            ],
+            "IconResourcePath": "Icon_weapon_10200301",
+            "icon": "Icon_weapon_10200301",
+            "describe": "在保留了原有的打桩机外结构的同时，增加了与机兵动力模块直连的新型推射器。在打击方面更加快速、精准、可控。",
+            "Status": 1,
+            "weight": 680
+          }
+        ],
+        "now": "2026-07-01 10:35:18"
+      },
+      "status": 1,
+      "switch": null,
+      "info": 0
+    }
+  },
+  {
+    "ID": "10514122",
+    "name": "聚合屏障·改Ⅱ",
+    "quality": "UR",
+    "WeaponType1": "Melee",
+    "WeaponType2": "Buckler",
+    "type": "Buckler",
+    "icon": "Icon_weapon_10500401",
+    "detail": {
+      "data": {
+        "data": [
+          {
+            "ID": "10514122",
+            "name": "聚合屏障·改Ⅱ",
+            "quality": "UR",
+            "grade": "70",
+            "WeaponType1": "Melee",
+            "WeaponType2": "Buckler",
+            "type": "Buckler",
+            "LimitedModelOfWeapon": "Light/Medium/Heavy",
+            "RestrictionsPositionOfWeapon": "Hand",
+            "range": "1",
+            "WeaponWeight": "70",
+            "WeaponBasicAttackingPower": "284",
+            "WeaponHitPoint": "3028",
+            "ShieldbloodBase": "839",
+            "PassiveSkill": [
+              {
+                "ID": "53046",
+                "name": "维护备件",
+                "SpecificEffects": "受到攻击时的伤害转移权重额外提升<color=#F74848>50</color>，遭受攻击后，修复装备手部<color=#F74848>20%</color>的耐久值，不可修复破损的部位",
+                "BufCarried": "530461",
+                "SkillIcon": "Icon_skill_passive_3119",
+                "icon": "Icon_skill_passive_3119",
+                "Status": 1,
+                "weight": 1199
+              }
+            ],
+            "IconResourcePath": "Icon_weapon_10500401",
+            "icon": "Icon_weapon_10500401",
+            "describe": "将旧型干扰涂层和收束核心完全替换后的升级款聚合屏障，无论是针对弹道的偏转防御还是甲片扩张后的防护范围，对比旧型都有着巨大提升。",
+            "Status": 1,
+            "weight": 689
+          }
+        ],
+        "now": "2026-07-01 10:35:20"
+      },
+      "status": 1,
+      "switch": null,
+      "info": 0
+    }
+  },
+  {
+    "ID": "10414122",
+    "name": "群星·改Ⅱ",
+    "quality": "UR",
+    "WeaponType1": "Melee",
+    "WeaponType2": "Shield",
+    "type": "Shield",
+    "icon": "Icon_weapon_10400501",
+    "detail": {
+      "data": {
+        "data": [
+          {
+            "ID": "10414122",
+            "name": "群星·改Ⅱ",
+            "quality": "UR",
+            "grade": "70",
+            "WeaponType1": "Melee",
+            "WeaponType2": "Shield",
+            "type": "Shield",
+            "LimitedModelOfWeapon": "Heavy",
+            "RestrictionsPositionOfWeapon": "Hand",
+            "range": "1",
+            "WeaponWeight": "390",
+            "WeaponBasicAttackingPower": "380",
+            "WeaponHitPoint": "3460",
+            "ShieldbloodBase": "2397",
+            "PassiveSkill": [
+              {
+                "ID": "53052",
+                "name": "扳腕冠军",
+                "SpecificEffects": "持盾手臂耐久值低于<color=#F74848>60%</color>时，使其受修理量提升<color=#F74848>25%</color>",
+                "BufCarried": "530521",
+                "SkillIcon": "Icon_skill_passive_3101",
+                "icon": "Icon_skill_passive_3101",
+                "Status": 1,
+                "weight": 1205
+              }
+            ],
+            "IconResourcePath": "Icon_weapon_10400501",
+            "icon": "Icon_weapon_10400501",
+            "describe": "采用了UKB-1晶格冶炼技术而诞生的群星大盾，镀有全新箔体涂层的冲压护板在提高强度的同时增加了干扰仪的作用范围，综合防护性能大幅提升。",
+            "Status": 1,
+            "weight": 685
+          }
+        ],
+        "now": "2026-07-01 10:35:22"
+      },
+      "status": 1,
+      "switch": null,
+      "info": 0
+    }
+  },
+  {
+    "ID": "30214122",
+    "name": "赤狐·改Ⅱ",
+    "quality": "UR",
+    "WeaponType1": "Sniper",
+    "WeaponType2": "HeavySniper",
+    "type": "HeavySniper",
+    "icon": "Icon_weapon_30200301",
+    "detail": {
+      "data": {
+        "data": [
+          {
+            "ID": "30214122",
+            "name": "赤狐·改Ⅱ",
+            "quality": "UR",
+            "grade": "70",
+            "WeaponType1": "Sniper",
+            "WeaponType2": "HeavySniper",
+            "type": "HeavySniper",
+            "LimitedModelOfWeapon": "Light/Medium/Heavy",
+            "RestrictionsPositionOfWeapon": "DoubleHand",
+            "range": "2-4",
+            "WeaponWeight": "1000",
+            "WeaponBasicAttackingPower": "638",
+            "WeaponHitPoint": "1545",
+            "WeaponUnderstanding": "4558",
+            "PassiveSkill": [
+              {
+                "ID": "53049",
+                "name": "屏息凝神",
+                "SpecificEffects": "<buf ID=900014>[瞄准]</buf>时，伤害提升<color=#F74848>15%</color>",
+                "BufCarried": "530491",
+                "SkillIcon": "Icon_skill_passive_5103",
+                "icon": "Icon_skill_passive_5103",
+                "Status": 1,
+                "weight": 1202
+              }
+            ],
+            "IconResourcePath": "Icon_weapon_30200301",
+            "icon": "Icon_weapon_30200301",
+            "describe": "顶尖狙击枪赤狐的最新改款，在粒子射线瞄准器上加装了更加先进的校准芯片和采样模组。通过调用机兵侦测器和轨迹模拟技术进一步提高命中率和易用性。",
+            "Status": 1,
+            "weight": 703
+          }
+        ],
+        "now": "2026-07-01 10:35:25"
+      },
+      "status": 1,
+      "switch": null,
+      "info": 0
+    }
+  },
+  {
+    "ID": "50214121",
+    "name": "焚风·改",
+    "quality": "UR",
+    "WeaponType1": "Heavy",
+    "WeaponType2": "Funnel",
+    "type": "Funnel",
+    "icon": "Icon_weapon_40300301",
+    "detail": {
+      "data": {
+        "data": [
+          {
+            "ID": "50214121",
+            "name": "焚风·改",
+            "quality": "UR",
+            "grade": "70",
+            "WeaponType1": "Heavy",
+            "WeaponType2": "Funnel",
+            "type": "Funnel",
+            "LimitedModelOfWeapon": "Medium",
+            "RestrictionsPositionOfWeapon": "Back",
+            "range": "1-4",
+            "WeaponWeight": "1100",
+            "WeaponBasicAttackingPower": "865",
+            "WeaponHitPoint": "5190",
+            "WeaponUnderstanding": "4558",
+            "NumberOfBullets": "3",
+            "InitiativeSkill": [
+              {
+                "ID": "4031",
+                "remarks": "浮游炮普通攻击",
+                "name": "多向歼击",
+                "describe": "使用浮游炮攻击范围内最多<color=#F74848>4</color>个目标，造成<color=#F74848>1</color>倍范围伤害",
+                "type": "SpecialAssault",
+                "CD": "0",
+                "Ap": "3",
+                "matchingWeaponType": "浮游炮",
+                "SkillIcon": "Icon_skill_order_1011",
+                "icon": "Icon_skill_order_1011",
+                "Status": 1,
+                "weight": 666
+              }
+            ],
+            "PassiveSkill": [
+              {
+                "ID": "53058",
+                "name": "续航协议",
+                "SpecificEffects": "浮游炮最大弹药数<color=#F74848>+1</color>；使用浮游炮主动攻击<color=#F74848>4</color>个及以上目标时，战后回复<color=#F74848>1</color>枚弹药，每<color=#F74848>2</color>回合最多发动<color=#F74848>1</color>次",
+                "BufCarried": "530582",
+                "SkillIcon": "Icon_skill_passive_5223",
+                "icon": "Icon_skill_passive_5223",
+                "Status": 1,
+                "weight": 1211
+              }
+            ],
+            "IconResourcePath": "Icon_weapon_40300301",
+            "icon": "Icon_weapon_40300301",
+            "describe": "诞生于地平线武器实验室的新式浮游炮武器，在原理上与原生的焚风系列没有太大区别，但大幅放宽了直连同步率的负荷限制，除了理论上的那几位「目标原型」外，几乎不能为常规驾驶员使用。",
+            "Status": 1,
+            "weight": 711
+          }
+        ],
+        "now": "2026-07-01 10:35:27"
+      },
+      "status": 1,
+      "switch": null,
+      "info": 0
+    }
+  },
+  {
+    "ID": "10814121",
+    "name": "贝奥武夫·改",
+    "quality": "UR",
+    "WeaponType1": "Melee",
+    "WeaponType2": "Saw",
+    "type": "Saw",
+    "icon": "Icon_weapon_10600201",
+    "detail": {
+      "data": {
+        "data": [
+          {
+            "ID": "10814121",
+            "name": "贝奥武夫·改",
+            "quality": "UR",
+            "grade": "70",
+            "WeaponType1": "Melee",
+            "WeaponType2": "Saw",
+            "type": "Saw",
+            "LimitedModelOfWeapon": "Light/Medium/Heavy",
+            "RestrictionsPositionOfWeapon": "DoubleHand",
+            "range": "1（可斜向）",
+            "WeaponWeight": "850",
+            "WeaponBasicAttackingPower": "952",
+            "WeaponHitPoint": "1792",
+            "WeaponUnderstanding": "4558",
+            "PassiveSkill": [
+              {
+                "ID": "53061",
+                "name": "粉碎打击",
+                "SpecificEffects": "攻击时，若命中部位耐久值不满，对该部位造成的伤害提升<color=#F74848>20%</color>",
+                "BufCarried": "530611/530612/530613/530614/530615",
+                "SkillIcon": "Icon_skill_passive_1157",
+                "icon": "Icon_skill_passive_1157",
+                "Status": 1,
+                "weight": 1214
+              }
+            ],
+            "IconResourcePath": "Icon_weapon_10600201",
+            "icon": "Icon_weapon_10600201",
+            "describe": "军用格斗斧锯贝奥武夫的改良款，全新优化后的涡轮马达在耐用性与环境适应性上均有显著提升，使得电锯武器能胜任更多样、更复杂的战斗环境。",
+            "Status": 1,
+            "weight": 691
+          }
+        ],
+        "now": "2026-07-01 10:35:28"
+      },
+      "status": 1,
+      "switch": null,
+      "info": 0
+    }
+  },
+  {
+    "ID": "20314122",
+    "name": "火驭·改Ⅱ",
+    "quality": "UR",
+    "WeaponType1": "Assault",
+    "WeaponType2": "ShotGun",
+    "type": "ShotGun",
+    "icon": "Icon_weapon_20300401",
+    "detail": {
+      "data": {
+        "data": [
+          {
+            "ID": "20314122",
+            "name": "火驭·改Ⅱ",
+            "quality": "UR",
+            "grade": "70",
+            "WeaponType1": "Assault",
+            "WeaponType2": "ShotGun",
+            "type": "ShotGun",
+            "LimitedModelOfWeapon": "Light/Medium/Heavy",
+            "RestrictionsPositionOfWeapon": "Hand",
+            "range": "1-2",
+            "WeaponWeight": "370",
+            "WeaponBasicAttackingPower": "1642",
+            "WeaponHitPoint": "3151",
+            "WeaponUnderstanding": "4558",
+            "PassiveSkill": [
+              {
+                "ID": "53055",
+                "name": "给我上！",
+                "SpecificEffects": "主动攻击对战时，无视目标<color=#F74848>30%</color>护甲",
+                "BufCarried": "530551",
+                "SkillIcon": "Icon_skill_passive_1126",
+                "icon": "Icon_skill_passive_1126",
+                "Status": 1,
+                "weight": 1208
+              }
+            ],
+            "IconResourcePath": "Icon_weapon_20300401",
+            "icon": "Icon_weapon_20300401",
+            "describe": "除了在旧型火驭的基础上加装了适性更优良的火控组件外，对机载增压模块的支持也得到了全新升级。是当前量产霰弹武器中的绝对王者。",
+            "Status": 1,
+            "weight": 698
+          }
+        ],
+        "now": "2026-07-01 10:35:30"
+      },
+      "status": 1,
+      "switch": null,
+      "info": 0
+    }
+  },
+  {
+    "ID": "10414123",
+    "name": "群星·改Ⅲ",
+    "quality": "UR",
+    "WeaponType1": "Melee",
+    "WeaponType2": "Shield",
+    "type": "Shield",
+    "icon": "Icon_weapon_10400501",
+    "detail": {
+      "data": {
+        "data": [
+          {
+            "ID": "10414123",
+            "name": "群星·改Ⅲ",
+            "quality": "UR",
+            "grade": "70",
+            "WeaponType1": "Melee",
+            "WeaponType2": "Shield",
+            "type": "Shield",
+            "LimitedModelOfWeapon": "Heavy",
+            "RestrictionsPositionOfWeapon": "Hand",
+            "range": "1",
+            "WeaponWeight": "390",
+            "WeaponBasicAttackingPower": "380",
+            "WeaponHitPoint": "3460",
+            "ShieldbloodBase": "4794",
+            "PassiveSkill": [
+              {
+                "ID": "53064",
+                "name": "增幅合金",
+                "SpecificEffects": "盾牌提供的基础耐久值提升<color=#F74848>100%</color>",
+                "SkillIcon": "Icon_skill_passive_2118",
+                "icon": "Icon_skill_passive_2118",
+                "Status": 1,
+                "weight": 1217
+              }
+            ],
+            "IconResourcePath": "Icon_weapon_10400501",
+            "icon": "Icon_weapon_10400501",
+            "describe": "采用了UKB-1晶格冶炼技术而诞生的群星大盾，镀有全新箔体涂层的冲压护板在提高强度的同时增加了干扰仪的作用范围，综合防护性能大幅提升。",
+            "Status": 1,
+            "weight": 686
+          }
+        ],
+        "now": "2026-07-01 10:35:32"
+      },
+      "status": 1,
+      "switch": null,
+      "info": 0
+    }
+  },
+  {
+    "ID": "50114122",
+    "name": "炬塔·改Ⅱ",
+    "quality": "UR",
+    "WeaponType1": "Heavy",
+    "WeaponType2": "RailGun",
+    "type": "RailGun",
+    "icon": "Icon_weapon_50100101",
+    "detail": {
+      "data": {
+        "data": [
+          {
+            "ID": "50114122",
+            "name": "炬塔·改Ⅱ",
+            "quality": "UR",
+            "grade": "70",
+            "WeaponType1": "Heavy",
+            "WeaponType2": "RailGun",
+            "type": "RailGun",
+            "LimitedModelOfWeapon": "Medium",
+            "RestrictionsPositionOfWeapon": "Back",
+            "range": "1-5",
+            "WeaponWeight": "1100",
+            "WeaponBasicAttackingPower": "773",
+            "WeaponHitPoint": "4943",
+            "WeaponUnderstanding": "4558",
+            "NumberOfBullets": "3",
+            "InitiativeSkill": [
+              {
+                "ID": "5011",
+                "remarks": "电磁炮攻击",
+                "name": "电磁激荡",
+                "describe": "使用电磁炮攻击纵向<color=#F74848>5</color>格范围内的所有目标，造成<color=#F74848>1.0</color>倍范围伤害",
+                "type": "SpecialAssault",
+                "CD": "0",
+                "Ap": "3",
+                "matchingWeaponType": "电磁炮",
+                "SkillIcon": "Icon_skill_order_1005",
+                "icon": "Icon_skill_order_1005",
+                "Status": 1,
+                "weight": 667
+              }
+            ],
+            "PassiveSkill": [
+              {
+                "ID": "53067",
+                "name": "弹药再生",
+                "SpecificEffects": "使用电磁炮主动攻击目标时，若打击的目标大于等于<color=#F74848>3</color>个，战后回复<color=#F74848>1</color>枚弹药，每<color=#F74848>2</color>回合最多发动<color=#F74848>1</color>次",
+                "BufCarried": "530671",
+                "SkillIcon": "Icon_skill_passive_5150",
+                "icon": "Icon_skill_passive_5150",
+                "Status": 1,
+                "weight": 1220
+              }
+            ],
+            "IconResourcePath": "Icon_weapon_50100101",
+            "icon": "Icon_weapon_50100101",
+            "describe": "将电浆弹与推射弹同时集成在一款电磁炮上的炬塔改款，能根据具体的作战环境与战术需求选择更多样的打击形式。",
+            "Status": 1,
+            "weight": 707
+          }
+        ],
+        "now": "2026-07-01 10:35:33"
+      },
+      "status": 1,
+      "switch": null,
+      "info": 0
+    }
+  },
+  {
+    "ID": "10914121",
+    "name": "断钢·改",
+    "quality": "UR",
+    "WeaponType1": "Melee",
+    "WeaponType2": "Blade",
+    "type": "Blade",
+    "icon": "Icon_weapon_10700301A",
+    "detail": {
+      "data": {
+        "data": [
+          {
+            "ID": "10914121",
+            "name": "断钢·改",
+            "quality": "UR",
+            "grade": "70",
+            "WeaponType1": "Melee",
+            "WeaponType2": "Blade",
+            "type": "Blade",
+            "LimitedModelOfWeapon": "Light/Medium/Heavy",
+            "RestrictionsPositionOfWeapon": "Hand",
+            "range": "1（可斜向）",
+            "WeaponWeight": "350",
+            "WeaponBasicAttackingPower": "638",
+            "WeaponHitPoint": "3337",
+            "WeaponUnderstanding": "4558",
+            "PassiveSkill": [
+              {
+                "ID": "53070",
+                "name": "再斩",
+                "SpecificEffects": "<buf ID=900004>[再攻击]</buf>时，伤害和命中率提升<color=#F74848>10%</color>",
+                "BufCarried": "530701",
+                "SkillIcon": "Icon_skill_passive_4127",
+                "icon": "Icon_skill_passive_4127",
+                "Status": 1,
+                "weight": 1223
+              }
+            ],
+            "IconResourcePath": "Icon_weapon_10700301A",
+            "icon": "Icon_weapon_10700301A",
+            "describe": "通用动力剑断钢的改进型号，全面优化了形变结构并增设微型控制单元，操作性和接触强度均得到进一步改善，战斗效率明显提升。",
+            "Status": 1,
+            "weight": 692
+          }
+        ],
+        "now": "2026-07-01 10:35:35"
+      },
+      "status": 1,
+      "switch": null,
+      "info": 0
+    }
+  },
+  {
+    "ID": "20114122",
+    "name": "夜魇·改Ⅱ",
+    "quality": "UR",
+    "WeaponType1": "Assault",
+    "WeaponType2": "MachineGun",
+    "type": "MachineGun",
+    "icon": "Icon_weapon_20100301",
+    "detail": {
+      "data": {
+        "data": [
+          {
+            "ID": "20114122",
+            "name": "夜魇·改Ⅱ",
+            "quality": "UR",
+            "grade": "70",
+            "WeaponType1": "Assault",
+            "WeaponType2": "MachineGun",
+            "type": "MachineGun",
+            "LimitedModelOfWeapon": "Light/Medium/Heavy",
+            "RestrictionsPositionOfWeapon": "Hand",
+            "range": "1-3",
+            "WeaponWeight": "420",
+            "WeaponBasicAttackingPower": "1424",
+            "WeaponHitPoint": "3151",
+            "WeaponUnderstanding": "4558",
+            "PassiveSkill": [
+              {
+                "ID": "53073",
+                "name": "反击之火",
+                "SpecificEffects": "发动反击时，暴击率和命中率提升<color=#F74848>15%</color>",
+                "BufCarried": "530731",
+                "SkillIcon": "Icon_skill_passive_4119",
+                "icon": "Icon_skill_passive_4119",
+                "Status": 1,
+                "weight": 1226
+              }
+            ],
+            "IconResourcePath": "Icon_weapon_20100301",
+            "icon": "Icon_weapon_20100301",
+            "describe": "黑曜石推出的新型机枪武装，是知名机枪武器夜魇的最新改型。内置了与钢岚机兵相连的火控芯片，支持神经直连控制机兵武装直接开火。",
+            "Status": 1,
+            "weight": 694
+          }
+        ],
+        "now": "2026-07-01 10:35:37"
+      },
+      "status": 1,
+      "switch": null,
+      "info": 0
+    }
+  },
+  {
+    "ID": "10514123",
+    "name": "聚合屏障·改Ⅲ",
+    "quality": "UR",
+    "WeaponType1": "Melee",
+    "WeaponType2": "Buckler",
+    "type": "Buckler",
+    "icon": "Icon_weapon_10500401",
+    "detail": {
+      "data": {
+        "data": [
+          {
+            "ID": "10514123",
+            "name": "聚合屏障·改Ⅲ",
+            "quality": "UR",
+            "grade": "70",
+            "WeaponType1": "Melee",
+            "WeaponType2": "Buckler",
+            "type": "Buckler",
+            "LimitedModelOfWeapon": "Light/Medium/Heavy",
+            "RestrictionsPositionOfWeapon": "Hand",
+            "range": "1",
+            "WeaponWeight": "70",
+            "WeaponBasicAttackingPower": "284",
+            "WeaponHitPoint": "3028",
+            "ShieldbloodBase": "839",
+            "PassiveSkill": [
+              {
+                "ID": "53079",
+                "name": "如数奉还",
+                "SpecificEffects": "持盾手受到攻击时，战后为敌机施加<buf ID=7101003>[命中率降低Ⅱ]</buf>和<buf ID=7101303>[暴击率降低Ⅱ]</buf>，持续<color=#F74848>1</color>回合",
+                "BufCarried": "530791",
+                "SkillIcon": "Icon_skill_passive_5131",
+                "icon": "Icon_skill_passive_5131",
+                "Status": 1,
+                "weight": 1232
+              }
+            ],
+            "IconResourcePath": "Icon_weapon_10500401",
+            "icon": "Icon_weapon_10500401",
+            "describe": "将旧型干扰涂层和收束核心完全替换后的升级款聚合屏障，无论是针对弹道的偏转防御还是甲片扩张后的防护范围，对比旧型都有着巨大提升。",
+            "Status": 1,
+            "weight": 690
+          }
+        ],
+        "now": "2026-07-01 10:35:39"
+      },
+      "status": 1,
+      "switch": null,
+      "info": 0
+    }
+  },
+  {
+    "ID": "20214122",
+    "name": "贝希摩斯·改Ⅱ",
+    "quality": "UR",
+    "WeaponType1": "Assault",
+    "WeaponType2": "HeavyMachineGun",
+    "type": "HeavyMachineGun",
+    "icon": "Icon_weapon_20400302",
+    "detail": {
+      "data": {
+        "data": [
+          {
+            "ID": "20214122",
+            "name": "贝希摩斯·改Ⅱ",
+            "quality": "UR",
+            "grade": "70",
+            "WeaponType1": "Assault",
+            "WeaponType2": "HeavyMachineGun",
+            "type": "HeavyMachineGun",
+            "LimitedModelOfWeapon": "Light/Medium/Heavy",
+            "RestrictionsPositionOfWeapon": "DoubleHand",
+            "range": "1-3",
+            "WeaponWeight": "1000",
+            "WeaponBasicAttackingPower": "1599",
+            "WeaponHitPoint": "1545",
+            "WeaponUnderstanding": "4558",
+            "PassiveSkill": [
+              {
+                "ID": "53076",
+                "name": "优势火力",
+                "SpecificEffects": "主动攻击时，伤害提升<color=#F74848>15%</color>，从距离<color=#F74848>1</color>格起，目标距离每增加<color=#F74848>1</color>格，伤害额外提升<color=#F74848>5%</color>，最多<color=#F74848>25%</color>",
+                "BufCarried": "530761/530762",
+                "SkillIcon": "Icon_skill_passive_1146",
+                "icon": "Icon_skill_passive_1146",
+                "Status": 1,
+                "weight": 1229
+              }
+            ],
+            "IconResourcePath": "Icon_weapon_20400302",
+            "icon": "Icon_weapon_20400302",
+            "describe": "搭载了新式外附冷却管和多匣弹仓，在提升武器自冷却的同时支持外接机兵冷却系统。在安全性和耐用性上都得到了全面升级。",
+            "Status": 1,
+            "weight": 696
+          }
+        ],
+        "now": "2026-07-01 10:35:41"
+      },
+      "status": 1,
+      "switch": null,
+      "info": 0
+    }
+  },
+  {
+    "ID": "10414124",
+    "name": "群星·改Ⅳ",
+    "quality": "UR",
+    "WeaponType1": "Melee",
+    "WeaponType2": "Shield",
+    "type": "Shield",
+    "icon": "Icon_weapon_10400501",
+    "detail": {
+      "data": {
+        "data": [
+          {
+            "ID": "10414124",
+            "name": "群星·改Ⅳ",
+            "quality": "UR",
+            "grade": "70",
+            "WeaponType1": "Melee",
+            "WeaponType2": "Shield",
+            "type": "Shield",
+            "LimitedModelOfWeapon": "Heavy",
+            "RestrictionsPositionOfWeapon": "Hand",
+            "range": "1",
+            "WeaponWeight": "390",
+            "WeaponBasicAttackingPower": "380",
+            "WeaponHitPoint": "3460",
+            "ShieldbloodBase": "2397",
+            "PassiveSkill": [
+              {
+                "ID": "53082",
+                "name": "万全守备",
+                "SpecificEffects": "持盾手臂遭受伤害时，遭受伤害降低<color=#F74848>10%</color>，遭受暴击伤害降低<color=#F74848>20%</color>",
+                "BufCarried": "530821",
+                "SkillIcon": "Icon_skill_passive_2111",
+                "icon": "Icon_skill_passive_2111",
+                "Status": 1,
+                "weight": 1235
+              }
+            ],
+            "IconResourcePath": "Icon_weapon_10400501",
+            "icon": "Icon_weapon_10400501",
+            "describe": "采用了UKB-1晶格冶炼技术而诞生的群星大盾，镀有全新箔体涂层的冲压护板在提高强度的同时增加了干扰仪的作用范围，综合防护性能大幅提升。",
+            "Status": 1,
+            "weight": 687
+          }
+        ],
+        "now": "2026-07-01 10:35:43"
+      },
+      "status": 1,
+      "switch": null,
+      "info": 0
+    }
+  },
+  {
+    "ID": "40114122",
+    "name": "鸠摩罗·改Ⅱ",
+    "quality": "UR",
+    "WeaponType1": "Heavy",
+    "WeaponType2": "Missile",
+    "type": "Missile",
+    "icon": "Icon_weapon_40100401",
+    "detail": {
+      "data": {
+        "data": [
+          {
+            "ID": "40114122",
+            "name": "鸠摩罗·改Ⅱ",
+            "quality": "UR",
+            "grade": "70",
+            "WeaponType1": "Heavy",
+            "WeaponType2": "Missile",
+            "type": "Missile",
+            "LimitedModelOfWeapon": "Medium",
+            "RestrictionsPositionOfWeapon": "Shoulder",
+            "range": "3-6",
+            "WeaponWeight": "950",
+            "WeaponBasicAttackingPower": "494",
+            "WeaponHitPoint": "3584",
+            "WeaponUnderstanding": "4558",
+            "NumberOfBullets": "2",
+            "InitiativeSkill": [
+              {
+                "ID": "4011",
+                "remarks": "导弹攻击",
+                "name": "定点打击",
+                "describe": "使用导弹攻击单个目标，对命中部位造成<color=#F74848>1.0</color>倍伤害，对其他部位造成主体伤害<color=#F74848>50%</color>的溅射伤害",
+                "type": "SpecialAssault",
+                "CD": "0",
+                "Ap": "2",
+                "matchingWeaponType": "导弹",
+                "SkillIcon": "Icon_skill_order_1001",
+                "icon": "Icon_skill_order_1001",
+                "Status": 1,
+                "weight": 664
+              }
+            ],
+            "PassiveSkill": [
+              {
+                "ID": "53085",
+                "name": "预备弹舱",
+                "SpecificEffects": "使用导弹发起主动攻击后，向携带的导弹随机装填弹药，装填数等同于该次攻击的消耗数量，间隔<color=#F74848>1</color>回合才可再次发动",
+                "BufCarried": "530851",
+                "SkillIcon": "Icon_skill_passive_5223",
+                "icon": "Icon_skill_passive_5223",
+                "Status": 1,
+                "weight": 1238
+              }
+            ],
+            "IconResourcePath": "Icon_weapon_40100401",
+            "icon": "Icon_weapon_40100401",
+            "describe": "弹头芯片升级后的新款鸠摩罗，在火力与打击精度上均有显著提升。并在燃料支持上进行了进一步拓展，以适应多种环境、多种场合的战斗。",
+            "Status": 1,
+            "weight": 705
+          }
+        ],
+        "now": "2026-07-01 10:35:45"
+      },
+      "status": 1,
+      "switch": null,
+      "info": 0
+    }
+  },
+  {
+    "ID": "10314123",
+    "name": "群山之力·改Ⅲ",
+    "quality": "UR",
+    "WeaponType1": "Melee",
+    "WeaponType2": "Rod",
+    "type": "Rod",
+    "icon": "Icon_weapon_10300301",
+    "detail": {
+      "data": {
+        "data": [
+          {
+            "ID": "10314123",
+            "name": "群山之力·改Ⅲ",
+            "quality": "UR",
+            "grade": "70",
+            "WeaponType1": "Melee",
+            "WeaponType2": "Rod",
+            "type": "Rod",
+            "LimitedModelOfWeapon": "Light/Medium/Heavy",
+            "RestrictionsPositionOfWeapon": "DoubleHand",
+            "range": "1（可斜向）",
+            "WeaponWeight": "800",
+            "WeaponBasicAttackingPower": "730",
+            "WeaponHitPoint": "1452",
+            "WeaponUnderstanding": "4558",
+            "PassiveSkill": [
+              {
+                "ID": "53088",
+                "name": "掠影",
+                "SpecificEffects": "攻击未命中时也能造成原本<color=#F74848>40%</color>的伤害",
+                "BufCarried": "530881",
+                "SkillIcon": "Icon_skill_passive_5114",
+                "icon": "Icon_skill_passive_5114",
+                "Status": 1,
+                "weight": 1241
+              }
+            ],
+            "IconResourcePath": "Icon_weapon_10300301",
+            "icon": "Icon_weapon_10300301",
+            "describe": "多尔工业重整机兵生产线后推出的改良款长柄武器，以内置的驱动核心产生的打击动能代替武器的自重打击，大幅改善了操作的灵活性与轻便性。",
+            "Status": 1,
+            "weight": 683
+          }
+        ],
+        "now": "2026-07-01 10:35:48"
+      },
+      "status": 1,
+      "switch": null,
+      "info": 0
+    }
+  },
+  {
+    "ID": "20414122",
+    "name": "炎啸·改Ⅱ",
+    "quality": "UR",
+    "WeaponType1": "Assault",
+    "WeaponType2": "Flamethrower",
+    "type": "Flamethrower",
+    "icon": "Icon_weapon_20500301",
+    "detail": {
+      "data": {
+        "data": [
+          {
+            "ID": "20414122",
+            "name": "炎啸·改Ⅱ",
+            "quality": "UR",
+            "grade": "70",
+            "WeaponType1": "Assault",
+            "WeaponType2": "Flamethrower",
+            "type": "Flamethrower",
+            "LimitedModelOfWeapon": "Light/Medium/Heavy",
+            "RestrictionsPositionOfWeapon": "Hand",
+            "range": "2（可斜向）",
+            "WeaponWeight": "480",
+            "WeaponBasicAttackingPower": "1385",
+            "WeaponHitPoint": "3831",
+            "WeaponUnderstanding": "4558",
+            "PassiveSkill": [
+              {
+                "ID": "53091",
+                "name": "校准单元",
+                "SpecificEffects": "与位于<buf ID=900011>[最佳射程]</buf>的目标对战时，暴击率和命中率提升<color=#F74848>15%</color>",
+                "BufCarried": "530911",
+                "SkillIcon": "Icon_skill_passive_4107",
+                "icon": "Icon_skill_passive_4107",
+                "Status": 1,
+                "weight": 1244
+              }
+            ],
+            "IconResourcePath": "Icon_weapon_20500301",
+            "icon": "Icon_weapon_20500301",
+            "describe": "经过精密改良后的新式炎啸喷火器。尽管很多人抱怨说，新式改良款缺少了联合设计局式的粗犷美感。但在泛用性和可控性上相比旧款炎啸都获得了大幅提升。",
+            "Status": 1,
+            "weight": 700
+          }
+        ],
+        "now": "2026-07-01 10:35:50"
+      },
+      "status": 1,
+      "switch": null,
+      "info": 0
+    }
+  },
+  {
+    "ID": "10514124",
+    "name": "聚合屏障·改Ⅳ",
+    "quality": "UR",
+    "WeaponType1": "Melee",
+    "WeaponType2": "Buckler",
+    "type": "Buckler",
+    "icon": "Icon_weapon_10500401",
+    "detail": {
+      "data": {
+        "data": [
+          {
+            "ID": "10514124",
+            "name": "聚合屏障·改Ⅳ",
+            "quality": "UR",
+            "grade": "70",
+            "WeaponType1": "Melee",
+            "WeaponType2": "Buckler",
+            "type": "Buckler",
+            "LimitedModelOfWeapon": "Light/Medium/Heavy",
+            "RestrictionsPositionOfWeapon": "Hand",
+            "range": "1",
+            "WeaponWeight": "70",
+            "WeaponBasicAttackingPower": "284",
+            "WeaponHitPoint": "3028",
+            "ShieldbloodBase": "839",
+            "PassiveSkill": [
+              {
+                "ID": "53094",
+                "name": "趁虚",
+                "SpecificEffects": "持盾手臂在对战中遭受攻击时，敌机每有<color=#F74848>1</color>个减益效果，自身遭受伤害降低<color=#F74848>10%</color>，最多<color=#F74848>30%</color>",
+                "BufCarried": "530941/530942/530943",
+                "SkillIcon": "Icon_skill_passive_2111",
+                "icon": "Icon_skill_passive_2111",
+                "Status": 1,
+                "weight": 1247
+              }
+            ],
+            "IconResourcePath": "Icon_weapon_10500401",
+            "icon": "Icon_weapon_10500401",
+            "describe": "将旧型干扰涂层和收束核心完全替换后的升级款聚合屏障，无论是针对弹道的偏转防御还是甲片扩张后的防护范围，对比旧型都有着巨大提升。",
+            "Status": 1,
+            "weight": 709
+          }
+        ],
+        "now": "2026-07-01 10:35:52"
+      },
+      "status": 1,
+      "switch": null,
+      "info": 0
+    }
+  },
+  {
+    "ID": "30214123",
+    "name": "赤狐·改Ⅲ",
+    "quality": "UR",
+    "WeaponType1": "Sniper",
+    "WeaponType2": "HeavySniper",
+    "type": "HeavySniper",
+    "icon": "Icon_weapon_30200301",
+    "detail": {
+      "data": {
+        "data": [
+          {
+            "ID": "30214123",
+            "name": "赤狐·改Ⅲ",
+            "quality": "UR",
+            "grade": "70",
+            "WeaponType1": "Sniper",
+            "WeaponType2": "HeavySniper",
+            "type": "HeavySniper",
+            "LimitedModelOfWeapon": "Light/Medium/Heavy",
+            "RestrictionsPositionOfWeapon": "DoubleHand",
+            "range": "2-4",
+            "WeaponWeight": "1000",
+            "WeaponBasicAttackingPower": "638",
+            "WeaponHitPoint": "1545",
+            "WeaponUnderstanding": "4558",
+            "PassiveSkill": [
+              {
+                "ID": "53097",
+                "name": "生人勿近！",
+                "SpecificEffects": "主动攻击时，若距离目标<color=#F74848>3</color>格及以上，命中率和暴击率提升<color=#F74848>15%</color>",
+                "BufCarried": "530971",
+                "SkillIcon": "Icon_skill_passive_4118",
+                "icon": "Icon_skill_passive_4118",
+                "Status": 1,
+                "weight": 1250
+              }
+            ],
+            "IconResourcePath": "Icon_weapon_30200301",
+            "icon": "Icon_weapon_30200301",
+            "describe": "顶尖狙击枪赤狐的最新改款，在粒子射线瞄准器上加装了更加先进的校准芯片和采样模组。通过调用机兵侦测器和轨迹模拟技术进一步提高命中率和易用性。",
+            "Status": 1,
+            "weight": 710
+          }
+        ],
+        "now": "2026-07-01 10:35:54"
+      },
+      "status": 1,
+      "switch": null,
+      "info": 0
+    }
+  },
+  {
+    "ID": "20114123",
+    "name": "夜魇·改Ⅲ",
+    "quality": "UR",
+    "WeaponType1": "Assault",
+    "WeaponType2": "MachineGun",
+    "type": "MachineGun",
+    "icon": "Icon_weapon_20100301",
+    "detail": {
+      "data": {
+        "data": [
+          {
+            "ID": "20114123",
+            "name": "夜魇·改Ⅲ",
+            "quality": "UR",
+            "grade": "70",
+            "WeaponType1": "Assault",
+            "WeaponType2": "MachineGun",
+            "type": "MachineGun",
+            "LimitedModelOfWeapon": "Light/Medium/Heavy",
+            "RestrictionsPositionOfWeapon": "Hand",
+            "range": "1-3",
+            "WeaponWeight": "420",
+            "WeaponBasicAttackingPower": "1424",
+            "WeaponHitPoint": "3151",
+            "WeaponUnderstanding": "4558",
+            "PassiveSkill": [
+              {
+                "ID": "53103",
+                "name": "故障植入",
+                "SpecificEffects": "使用机枪攻击时，对目标施加<color=#F74848>1</color>层<buf ID=531032>[火控延迟]</buf>，可叠加<color=#F74848>5</color>层",
+                "BufCarried": "531031",
+                "SkillIcon": "Icon_skill_passive_5198",
+                "icon": "Icon_skill_passive_5198",
+                "Status": 1,
+                "weight": 1256
+              }
+            ],
+            "IconResourcePath": "Icon_weapon_20100301",
+            "icon": "Icon_weapon_20100301",
+            "describe": "黑曜石推出的新型机枪武装，是知名机枪武器夜魇的最新改型。内置了与钢岚机兵相连的火控芯片，支持神经直连控制机兵武装直接开火。",
+            "Status": 1,
+            "weight": 747
+          }
+        ],
+        "now": "2026-07-01 10:35:55"
+      },
+      "status": 1,
+      "switch": null,
+      "info": 0
+    }
+  },
+  {
+    "ID": "40214122",
+    "name": "熔火·改Ⅱ",
+    "quality": "UR",
+    "WeaponType1": "Heavy",
+    "WeaponType2": "Rocket",
+    "type": "Rocket",
+    "icon": "Icon_weapon_40200401",
+    "detail": {
+      "data": {
+        "data": [
+          {
+            "ID": "40214122",
+            "name": "熔火·改Ⅱ",
+            "quality": "UR",
+            "grade": "70",
+            "WeaponType1": "Heavy",
+            "WeaponType2": "Rocket",
+            "type": "Rocket",
+            "LimitedModelOfWeapon": "Medium",
+            "RestrictionsPositionOfWeapon": "Shoulder",
+            "range": "3-6",
+            "WeaponWeight": "1200",
+            "WeaponBasicAttackingPower": "935",
+            "WeaponHitPoint": "2781",
+            "WeaponUnderstanding": "4558",
+            "NumberOfBullets": "1",
+            "InitiativeSkill": [
+              {
+                "ID": "4021",
+                "remarks": "火箭攻击",
+                "name": "战略轰炸",
+                "describe": "使用火箭攻击所选<color=#F74848>3×3</color>格范围内的所有目标，对每个部位造成<color=#F74848>0.25</color>倍范围伤害",
+                "type": "SpecialAssault",
+                "CD": "0",
+                "Ap": "3",
+                "matchingWeaponType": "火箭",
+                "SkillIcon": "Icon_skill_order_1003",
+                "icon": "Icon_skill_order_1003",
+                "Status": 1,
+                "weight": 665
+              }
+            ],
+            "PassiveSkill": [
+              {
+                "ID": "53100",
+                "name": "毁锐冲坚",
+                "SpecificEffects": "使用火箭主动攻击时，对耐久值<color=#F74848>100%</color>的部位伤害提升<color=#F74848>20%</color>",
+                "BufCarried": "531001",
+                "SkillIcon": "Icon_skill_passive_1114",
+                "icon": "Icon_skill_passive_1114",
+                "Status": 1,
+                "weight": 1253
+              }
+            ],
+            "IconResourcePath": "Icon_weapon_40200401",
+            "icon": "Icon_weapon_40200401",
+            "describe": "加装了由黑曜石特别研制的新型自制导组件的机载火箭，能根据机师需求执行更加精细、精确的轰炸命令，大大拓展了火箭武器的战术价值。",
+            "Status": 1,
+            "weight": 748
+          }
+        ],
+        "now": "2026-07-01 10:35:58"
+      },
+      "status": 1,
+      "switch": null,
+      "info": 0
+    }
+  },
+  {
+    "ID": "30114122",
+    "name": "麦克斯·改Ⅱ",
+    "quality": "UR",
+    "WeaponType1": "Sniper",
+    "WeaponType2": "LightSniper",
+    "type": "LightSniper",
+    "icon": "Icon_weapon_30100401",
+    "detail": {
+      "data": {
+        "data": [
+          {
+            "ID": "30114122",
+            "name": "麦克斯·改Ⅱ",
+            "quality": "UR",
+            "grade": "70",
+            "WeaponType1": "Sniper",
+            "WeaponType2": "LightSniper",
+            "type": "LightSniper",
+            "LimitedModelOfWeapon": "Light/Medium/Heavy",
+            "RestrictionsPositionOfWeapon": "Hand",
+            "range": "2-4",
+            "WeaponWeight": "600",
+            "WeaponBasicAttackingPower": "537",
+            "WeaponHitPoint": "3028",
+            "WeaponUnderstanding": "4558",
+            "PassiveSkill": [
+              {
+                "ID": "53106",
+                "name": "汲能代谢",
+                "SpecificEffects": "主动攻击时，目标每携带<color=#F74848>1</color>个减益效果受到的伤害提升<color=#F74848>5%</color>，最多<color=#F74848>25%</color>",
+                "BufCarried": "531061",
+                "SkillIcon": "Icon_skill_passive_5175",
+                "icon": "Icon_skill_passive_5175",
+                "Status": 1,
+                "weight": 1259
+              }
+            ],
+            "IconResourcePath": "Icon_weapon_30100401",
+            "icon": "Icon_weapon_30100401",
+            "describe": "配备了安赫特公司最新研发的光瞄具与采样预测系统，并在旧式麦克斯的基础上进一步提升了操控性和耐用性。",
+            "Status": 1,
+            "weight": 751
+          }
+        ],
+        "now": "2026-07-01 10:35:59"
+      },
+      "status": 1,
+      "switch": null,
+      "info": 0
+    }
+  },
+  {
+    "ID": "50214122",
+    "name": "焚风·改Ⅱ",
+    "quality": "UR",
+    "WeaponType1": "Heavy",
+    "WeaponType2": "Funnel",
+    "type": "Funnel",
+    "icon": "Icon_weapon_40300301",
+    "detail": {
+      "data": {
+        "data": [
+          {
+            "ID": "50214122",
+            "name": "焚风·改Ⅱ",
+            "quality": "UR",
+            "grade": "70",
+            "WeaponType1": "Heavy",
+            "WeaponType2": "Funnel",
+            "type": "Funnel",
+            "LimitedModelOfWeapon": "Medium",
+            "RestrictionsPositionOfWeapon": "Back",
+            "range": "1-4",
+            "WeaponWeight": "1100",
+            "WeaponBasicAttackingPower": "865",
+            "WeaponHitPoint": "5190",
+            "WeaponUnderstanding": "4558",
+            "NumberOfBullets": "3",
+            "InitiativeSkill": [
+              {
+                "ID": "4031",
+                "remarks": "浮游炮普通攻击",
+                "name": "多向歼击",
+                "describe": "使用浮游炮攻击范围内最多<color=#F74848>4</color>个目标，造成<color=#F74848>1</color>倍范围伤害",
+                "type": "SpecialAssault",
+                "CD": "0",
+                "Ap": "3",
+                "matchingWeaponType": "浮游炮",
+                "SkillIcon": "Icon_skill_order_1011",
+                "icon": "Icon_skill_order_1011",
+                "Status": 1,
+                "weight": 666
+              }
+            ],
+            "PassiveSkill": [
+              {
+                "ID": "53109",
+                "name": "贯遥",
+                "SpecificEffects": "使用浮游炮攻击时无视目标<color=#F74848>35%</color>的护甲值；自身与目标每距离<color=#F74848>1</color>格，造成的伤害提升<color=#F74848>5%</color>，最多提升<color=#F74848>20%</color>",
+                "BufCarried": "531091",
+                "SkillIcon": "Icon_skill_passive_5116",
+                "icon": "Icon_skill_passive_5116",
+                "Status": 1,
+                "weight": 1262
+              }
+            ],
+            "IconResourcePath": "Icon_weapon_40300301",
+            "icon": "Icon_weapon_40300301",
+            "describe": "诞生于地平线武器实验室的新式浮游炮武器，在原理上与原生的焚风系列没有太大区别，但大幅放宽了直连同步率的负荷限制，除了理论上的那几位「目标原型」外，几乎不能为常规驾驶员使用。",
+            "Status": 1,
+            "weight": 752
+          }
+        ],
+        "now": "2026-07-01 10:36:01"
+      },
+      "status": 1,
+      "switch": null,
+      "info": 0
+    }
+  },
+  {
+    "ID": "10814122",
+    "name": "贝奥武夫·改Ⅱ",
+    "quality": "UR",
+    "WeaponType1": "Melee",
+    "WeaponType2": "Saw",
+    "type": "Saw",
+    "icon": "Icon_weapon_10600201",
+    "detail": {
+      "data": {
+        "data": [
+          {
+            "ID": "10814122",
+            "name": "贝奥武夫·改Ⅱ",
+            "quality": "UR",
+            "grade": "70",
+            "WeaponType1": "Melee",
+            "WeaponType2": "Saw",
+            "type": "Saw",
+            "LimitedModelOfWeapon": "Light/Medium/Heavy",
+            "RestrictionsPositionOfWeapon": "DoubleHand",
+            "range": "1（可斜向）",
+            "WeaponWeight": "850",
+            "WeaponBasicAttackingPower": "952",
+            "WeaponHitPoint": "1792",
+            "WeaponUnderstanding": "4558",
+            "PassiveSkill": [
+              {
+                "ID": "53115",
+                "name": "只手擎天",
+                "SpecificEffects": "单手握持电锯时，命中率不再下降",
+                "BufCarried": "531151",
+                "SkillIcon": "Icon_skill_passive_4133",
+                "icon": "Icon_skill_passive_4133",
+                "Status": 1,
+                "weight": 1268
+              }
+            ],
+            "IconResourcePath": "Icon_weapon_10600201",
+            "icon": "Icon_weapon_10600201",
+            "describe": "军用格斗斧锯贝奥武夫的改良款，全新优化后的涡轮马达在耐用性与环境适应性上均有显著提升，使得电锯武器能胜任更多样、更复杂的战斗环境。",
+            "Status": 1,
+            "weight": 755
+          }
+        ],
+        "now": "2026-07-01 10:36:02"
+      },
+      "status": 1,
+      "switch": null,
+      "info": 0
+    }
+  },
+  {
+    "ID": "50114123",
+    "name": "炬塔·改Ⅲ",
+    "quality": "UR",
+    "WeaponType1": "Heavy",
+    "WeaponType2": "RailGun",
+    "type": "RailGun",
+    "icon": "Icon_weapon_50100101",
+    "detail": {
+      "data": {
+        "data": [
+          {
+            "ID": "50114123",
+            "name": "炬塔·改Ⅲ",
+            "quality": "UR",
+            "grade": "70",
+            "WeaponType1": "Heavy",
+            "WeaponType2": "RailGun",
+            "type": "RailGun",
+            "LimitedModelOfWeapon": "Medium",
+            "RestrictionsPositionOfWeapon": "Back",
+            "range": "1-5",
+            "WeaponWeight": "1100",
+            "WeaponBasicAttackingPower": "773",
+            "WeaponHitPoint": "4943",
+            "WeaponUnderstanding": "4558",
+            "NumberOfBullets": "3",
+            "InitiativeSkill": [
+              {
+                "ID": "5011",
+                "remarks": "电磁炮攻击",
+                "name": "电磁激荡",
+                "describe": "使用电磁炮攻击纵向<color=#F74848>5</color>格范围内的所有目标，造成<color=#F74848>1.0</color>倍范围伤害",
+                "type": "SpecialAssault",
+                "CD": "0",
+                "Ap": "3",
+                "matchingWeaponType": "电磁炮",
+                "SkillIcon": "Icon_skill_order_1005",
+                "icon": "Icon_skill_order_1005",
+                "Status": 1,
+                "weight": 667
+              }
+            ],
+            "PassiveSkill": [
+              {
+                "ID": "53112",
+                "name": "电弧筹码",
+                "SpecificEffects": "使用电磁炮攻击时，弹仓中每有<color=#F74848>1</color>发弹药，伤害和命中率提升<color=#F74848>4%</color>，最多提升<color=#F74848>20%</color>",
+                "BufCarried": "531121/531122/531123/531124/531125/531126/531127/531128",
+                "SkillIcon": "Icon_skill_passive_1130",
+                "icon": "Icon_skill_passive_1130",
+                "Status": 1,
+                "weight": 1265
+              }
+            ],
+            "IconResourcePath": "Icon_weapon_50100101",
+            "icon": "Icon_weapon_50100101",
+            "describe": "将电浆弹与推射弹同时集成在一款电磁炮上的炬塔改款，能根据具体的作战环境与战术需求选择更多样的打击形式。",
+            "Status": 1,
+            "weight": 756
+          }
+        ],
+        "now": "2026-07-01 10:36:04"
+      },
+      "status": 1,
+      "switch": null,
+      "info": 0
+    }
+  }
+]

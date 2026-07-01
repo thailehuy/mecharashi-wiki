@@ -1,0 +1,3158 @@
+[
+  {
+    "ID": "10315121",
+    "name": "幻执",
+    "quality": "SSSR",
+    "WeaponType1": "Melee",
+    "WeaponType2": "Rod",
+    "type": "Rod",
+    "icon": "Icon_weapon_10300302",
+    "detail": {
+      "data": {
+        "data": [
+          {
+            "ID": "10315121",
+            "name": "幻执",
+            "quality": "SSSR",
+            "grade": "70",
+            "WeaponType1": "Melee",
+            "WeaponType2": "Rod",
+            "type": "Rod",
+            "LimitedModelOfWeapon": "Light/Medium/Heavy",
+            "RestrictionsPositionOfWeapon": "DoubleHand",
+            "range": "1（可斜向）",
+            "WeaponWeight": "800",
+            "WeaponBasicAttackingPower": "738",
+            "WeaponHitPoint": "1466",
+            "WeaponUnderstanding": "4603",
+            "PassiveSkill": [
+              {
+                "ID": "53005",
+                "name": "连续转轴",
+                "SpecificEffects": "使用长柄攻击时，累计每命中<color=#F74848>6</color>个目标，战后回复<color=#F74848>1</color>AP",
+                "BufCarried": "530051",
+                "SkillIcon": "Icon_skill_passive_1104",
+                "icon": "Icon_skill_passive_1104",
+                "Status": 1,
+                "weight": 1158
+              },
+              {
+                "ID": "53006",
+                "name": "至死不渝",
+                "SpecificEffects": "强化<buf ID=900067>[不死不休]</buf>效果：<buf ID=900008>[奔袭]</buf>触发的<buf ID=900030>[顺劈斩]</buf>技能倍率提升<color=#F74848>0.2</color>，且攻击后返回原地",
+                "BufCarried": "530061/530065",
+                "SkillIcon": "Icon_skill_passive_1154",
+                "icon": "Icon_skill_passive_1154",
+                "Status": 1,
+                "weight": 1159
+              },
+              {
+                "ID": "53004",
+                "name": "余怒",
+                "SpecificEffects": "单手握持长柄时，命中率不再下降",
+                "BufCarried": "530041",
+                "SkillIcon": "Icon_skill_passive_5200",
+                "icon": "Icon_skill_passive_5200",
+                "Status": 1,
+                "weight": 1157
+              }
+            ],
+            "IconResourcePath": "Icon_weapon_10300302",
+            "icon": "Icon_weapon_10300302",
+            "describe": "「想哭，想笑，想怒吼，想奔跑……想回到母亲的怀里，悄无声息地睡着……猎物或者猎食者、死亡或者活下去、被回忆牵绊或者彻底忘却……真遗憾啊，我已经流不出眼泪，也已经没有回头路了。」",
+            "Status": 1,
+            "weight": 714
+          }
+        ],
+        "now": "2026-07-01 10:46:36"
+      },
+      "status": 1,
+      "switch": null,
+      "info": 0
+    }
+  },
+  {
+    "ID": "10515121",
+    "name": "夹心曲奇",
+    "quality": "SSSR",
+    "WeaponType1": "Melee",
+    "WeaponType2": "Buckler",
+    "type": "Buckler",
+    "icon": "Icon_weapon_10500301",
+    "detail": {
+      "data": {
+        "data": [
+          {
+            "ID": "10515121",
+            "name": "夹心曲奇",
+            "quality": "SSSR",
+            "grade": "70",
+            "WeaponType1": "Melee",
+            "WeaponType2": "Buckler",
+            "type": "Buckler",
+            "LimitedModelOfWeapon": "Light/Medium/Heavy",
+            "RestrictionsPositionOfWeapon": "Hand",
+            "range": "1",
+            "WeaponWeight": "70",
+            "WeaponBasicAttackingPower": "287",
+            "WeaponHitPoint": "3057",
+            "ShieldbloodBase": "849",
+            "PassiveSkill": [
+              {
+                "ID": "53008",
+                "name": "抢修备件",
+                "SpecificEffects": "触发<buf ID=900019>[协力修理]</buf>时，可额外修复<color=#F74848>1</color>个损毁部位",
+                "BufCarried": "530081",
+                "SkillIcon": "Icon_skill_passive_3124",
+                "icon": "Icon_skill_passive_3124",
+                "Status": 1,
+                "weight": 1161
+              },
+              {
+                "ID": "53009",
+                "name": "曲奇曲奇！",
+                "SpecificEffects": "强化<buf ID=900068>[波奇波奇！]</buf>效果：[波奇]也可以使用<buf ID=900070>[广域修理]</buf>指令",
+                "BufCarried": "530091",
+                "SkillIcon": "Icon_skill_passive_3125",
+                "icon": "Icon_skill_passive_3125",
+                "Status": 1,
+                "weight": 1162
+              },
+              {
+                "ID": "53007",
+                "name": "偏转防护",
+                "SpecificEffects": "受到攻击时的伤害转移权重额外提升<color=#F74848>50</color>，伤害减免率提升至<color=#F74848>15%</color>",
+                "SkillIcon": "Icon_skill_passive_2112",
+                "icon": "Icon_skill_passive_2112",
+                "Status": 1,
+                "weight": 1160
+              }
+            ],
+            "IconResourcePath": "Icon_weapon_10500301",
+            "icon": "Icon_weapon_10500301",
+            "describe": "棒棒糖机修店特供改良版多功能手盾，内置强化护板、抢修备件、增幅电池、微型扫雷仪、波奇遥控器等多种实用组件。目前仅接受少数VIP客户预订，店长自用版暂不出售。",
+            "Status": 1,
+            "weight": 718
+          }
+        ],
+        "now": "2026-07-01 10:46:39"
+      },
+      "status": 1,
+      "switch": null,
+      "info": 0
+    }
+  },
+  {
+    "ID": "20115121",
+    "name": "终末之叹",
+    "quality": "SSSR",
+    "WeaponType1": "Assault",
+    "WeaponType2": "MachineGun",
+    "type": "MachineGun",
+    "icon": "Icon_weapon_20100402",
+    "detail": {
+      "data": {
+        "data": [
+          {
+            "ID": "20115121",
+            "name": "终末之叹",
+            "quality": "SSSR",
+            "grade": "70",
+            "WeaponType1": "Assault",
+            "WeaponType2": "MachineGun",
+            "type": "MachineGun",
+            "LimitedModelOfWeapon": "Light/Medium/Heavy",
+            "RestrictionsPositionOfWeapon": "Hand",
+            "range": "1-3",
+            "WeaponWeight": "500",
+            "WeaponBasicAttackingPower": "1442",
+            "WeaponHitPoint": "3182",
+            "WeaponUnderstanding": "4603",
+            "PassiveSkill": [
+              {
+                "ID": "53002",
+                "name": "扩容火力",
+                "SpecificEffects": "机枪子弹数<color=#F74848>+1</color>，效果无法重复生效；\n同时装备两把机枪时，<buf ID=900002>[协力攻击]</buf>升级成<buf ID=900069>[双枪协力]</buf>",
+                "BufCarried": "530021/530022",
+                "SkillIcon": "Icon_skill_passive_5136",
+                "icon": "Icon_skill_passive_5136",
+                "Status": 1,
+                "weight": 1155
+              },
+              {
+                "ID": "53003",
+                "name": "终极体",
+                "SpecificEffects": "强化<buf ID=900066>[原型体]</buf>效果：使用双手类机枪技能主动攻击对战时，战前获得<buf ID=7100104>[命中率提升Ⅱ]</buf>和<buf ID=7100404>[暴击率提升Ⅱ]</buf>，持续<color=#F74848>2</color>回合，并会在敌机反击结束后使用对侧手臂发动<buf ID=900001>[追击]</buf>，造成<color=#F74848>0.4（0.5）</color>倍伤害",
+                "BufCarried": "530031/530032/530033",
+                "SkillIcon": "Icon_skill_passive_5199",
+                "icon": "Icon_skill_passive_5199",
+                "Status": 1,
+                "weight": 1156
+              },
+              {
+                "ID": "53001",
+                "name": "蹁跹",
+                "SpecificEffects": "主动攻击后，若击破部位，战后可额外移动<color=#F74848>2</color>格;\n仅在使用当前武器时生效",
+                "BufCarried": "530011",
+                "SkillIcon": "Icon_skill_passive_5198",
+                "icon": "Icon_skill_passive_5198",
+                "Status": 1,
+                "weight": 1154
+              }
+            ],
+            "IconResourcePath": "Icon_weapon_20100402",
+            "icon": "Icon_weapon_20100402",
+            "describe": "根据洛莎·迪亚兹的数据而研制的特制版夜魇，在控件和激发装置上都采用了可被脑波直接控制的钢岚合金……不知是何原因，这套武装自出厂后就一直留在武器库里，那位瓦尔基里一次都没有使用过。",
+            "Status": 1,
+            "weight": 721
+          }
+        ],
+        "now": "2026-07-01 10:46:41"
+      },
+      "status": 1,
+      "switch": null,
+      "info": 0
+    }
+  },
+  {
+    "ID": "10215121",
+    "name": "猎器",
+    "quality": "SSSR",
+    "WeaponType1": "Melee",
+    "WeaponType2": "PileBunker",
+    "type": "PileBunker",
+    "icon": "Icon_weapon_10200302",
+    "detail": {
+      "data": {
+        "data": [
+          {
+            "ID": "10215121",
+            "name": "猎器",
+            "quality": "SSSR",
+            "grade": "70",
+            "WeaponType1": "Melee",
+            "WeaponType2": "PileBunker",
+            "type": "PileBunker",
+            "LimitedModelOfWeapon": "Light/Medium/Heavy",
+            "RestrictionsPositionOfWeapon": "Hand",
+            "range": "1",
+            "WeaponWeight": "300",
+            "WeaponBasicAttackingPower": "681",
+            "WeaponHitPoint": "3245",
+            "WeaponUnderstanding": "4603",
+            "PassiveSkill": [
+              {
+                "ID": "53014",
+                "name": "强袭",
+                "SpecificEffects": "同时使用两把打桩机攻击时，造成伤害提升<color=#F74848>20%</color>，遭受伤害降低<color=#F74848>20%</color>",
+                "BufCarried": "530141/530142",
+                "SkillIcon": "Icon_skill_passive_1143",
+                "icon": "Icon_skill_passive_1143",
+                "Status": 1,
+                "weight": 1167
+              },
+              {
+                "ID": "53015",
+                "name": "孑立",
+                "SpecificEffects": "强化<buf ID=900075>[独行]</buf>效果：出击时获得<color=#F74848>3</color>层<buf ID=1012512>[磁能覆甲]</buf>，持续<color=#F74848>1</color>回合；手臂遭受过量伤害时，若拥有<buf ID=1012512>[磁能覆甲]</buf>，将触发<buf ID=900003>[不屈]</buf>，触发效果后立即移除所有<buf ID=1012512>[磁能覆甲]</buf>",
+                "BufCarried": "530151",
+                "SkillIcon": "Icon_skill_passive_5207",
+                "icon": "Icon_skill_passive_5207",
+                "Status": 1,
+                "weight": 1168
+              },
+              {
+                "ID": "53013",
+                "name": "起爆",
+                "SpecificEffects": "造成伤害时，对命中的部位造成<color=#F74848>15%</color>武器攻击力的<buf ID=900017>[固定伤害]</buf>",
+                "BufCarried": "530131",
+                "SkillIcon": "Icon_skill_passive_1115",
+                "icon": "Icon_skill_passive_1115",
+                "Status": 1,
+                "weight": 1166
+              }
+            ],
+            "IconResourcePath": "Icon_weapon_10200302",
+            "icon": "Icon_weapon_10200302",
+            "describe": "「卡米拉，这是为你准备的……没错，我们很快就要回去那座岛。在那里，不只是我所告诉你的那些，还有许多许多，那些你所失去的，都将由你自己夺回。」",
+            "Status": 1,
+            "weight": 712
+          }
+        ],
+        "now": "2026-07-01 10:46:43"
+      },
+      "status": 1,
+      "switch": null,
+      "info": 0
+    }
+  },
+  {
+    "ID": "10415121",
+    "name": "寒碑",
+    "quality": "SSSR",
+    "WeaponType1": "Melee",
+    "WeaponType2": "Shield",
+    "type": "Shield",
+    "icon": "Icon_weapon_10400401",
+    "detail": {
+      "data": {
+        "data": [
+          {
+            "ID": "10415121",
+            "name": "寒碑",
+            "quality": "SSSR",
+            "grade": "70",
+            "WeaponType1": "Melee",
+            "WeaponType2": "Shield",
+            "type": "Shield",
+            "LimitedModelOfWeapon": "Heavy",
+            "RestrictionsPositionOfWeapon": "Hand",
+            "range": "1",
+            "WeaponWeight": "390",
+            "WeaponBasicAttackingPower": "385",
+            "WeaponHitPoint": "3494",
+            "ShieldbloodBase": "2427",
+            "PassiveSkill": [
+              {
+                "ID": "53017",
+                "name": "自适应框架",
+                "SpecificEffects": "盾牌每损失<color=#F74848>33%</color>最大耐久值，获得<color=#F74848>1</color>层<buf ID=530172>[反击伤害提升]</buf>，可叠加<color=#F74848>5</color>层",
+                "BufCarried": "530171",
+                "SkillIcon": "Icon_skill_passive_5120",
+                "icon": "Icon_skill_passive_5120",
+                "Status": 1,
+                "weight": 1170
+              },
+              {
+                "ID": "53018",
+                "name": "先机克敌",
+                "SpecificEffects": "强化<buf ID=900076>[先发制人]</buf>效果：<buf ID=900023>[反击先手]</buf>和<buf ID=900028>[反击追击]</buf>不再有次数限制，战后恢复单个部位耐久值，优先恢复持盾手臂，恢复量为造成伤害的<color=#F74848>25%</color>",
+                "BufCarried": "530181",
+                "SkillIcon": "Icon_skill_passive_5208",
+                "icon": "Icon_skill_passive_5208",
+                "Status": 1,
+                "weight": 1171
+              },
+              {
+                "ID": "53016",
+                "name": "冲压装甲",
+                "SpecificEffects": "盾牌伤害减免提升至<color=#F74848>20%</color>",
+                "SkillIcon": "Icon_skill_passive_2117",
+                "icon": "Icon_skill_passive_2117",
+                "Status": 1,
+                "weight": 1169
+              }
+            ],
+            "IconResourcePath": "Icon_weapon_10400401",
+            "icon": "Icon_weapon_10400401",
+            "describe": "密密麻麻的名字刻满了装甲的内侧，与其说是武器，不如说是坟碑。这个奥维特的亡魂便是用这样的方式守护那已不存在的一切……失去了归处的亡者什么都不是，而他会背负着亡者们继续战斗下去。",
+            "Status": 1,
+            "weight": 716
+          }
+        ],
+        "now": "2026-07-01 10:46:46"
+      },
+      "status": 1,
+      "switch": null,
+      "info": 0
+    }
+  },
+  {
+    "ID": "30215121",
+    "name": "魔笛",
+    "quality": "SSSR",
+    "WeaponType1": "Sniper",
+    "WeaponType2": "HeavySniper",
+    "type": "HeavySniper",
+    "icon": "Icon_weapon_30200302",
+    "detail": {
+      "data": {
+        "data": [
+          {
+            "ID": "30215121",
+            "name": "魔笛",
+            "quality": "SSSR",
+            "grade": "70",
+            "WeaponType1": "Sniper",
+            "WeaponType2": "HeavySniper",
+            "type": "HeavySniper",
+            "LimitedModelOfWeapon": "Light/Medium/Heavy",
+            "RestrictionsPositionOfWeapon": "DoubleHand",
+            "range": "2-4",
+            "WeaponWeight": "1000",
+            "WeaponBasicAttackingPower": "646",
+            "WeaponHitPoint": "1560",
+            "WeaponUnderstanding": "4603",
+            "PassiveSkill": [
+              {
+                "ID": "53011",
+                "name": "追踪调律",
+                "SpecificEffects": "使用狙击步枪与距离<color=#F74848>3</color>格及以上目标对战时，命中率和伤害提升<color=#F74848>10%</color>，距离每多<color=#F74848>1</color>格，命中率和伤害继续提升<color=#F74848>5%</color>，最多<color=#F74848>25%</color>",
+                "BufCarried": "530111/530112/530113",
+                "SkillIcon": "Icon_skill_passive_5136",
+                "icon": "Icon_skill_passive_5136",
+                "Status": 1,
+                "weight": 1164
+              },
+              {
+                "ID": "53012",
+                "name": "情报整备",
+                "SpecificEffects": "强化<buf ID=900074>[情报收集]</buf>效果：<buf ID=900074>[情报收集]</buf>可额外恢复<color=#F74848>1</color>AP，并且范围内有机兵被击毁时，暴击率额外提升<color=#F74848>5%</color>，最多提升<color=#F74848>25%</color>",
+                "BufCarried": "530121",
+                "SkillIcon": "Icon_skill_passive_5206",
+                "icon": "Icon_skill_passive_5206",
+                "Status": 1,
+                "weight": 1165
+              },
+              {
+                "ID": "53010",
+                "name": "凝神待发",
+                "SpecificEffects": "普通攻击前，若没有移动过，本次攻击可以<buf ID=900014>[瞄准]</buf>，每回合最多发动<color=#F74848>3</color>次",
+                "BufCarried": "530101/530102",
+                "SkillIcon": "Icon_skill_passive_5186",
+                "icon": "Icon_skill_passive_5186",
+                "Status": 1,
+                "weight": 1163
+              }
+            ],
+            "IconResourcePath": "Icon_weapon_30200302",
+            "icon": "Icon_weapon_30200302",
+            "describe": "乐器，歌剧，狙击枪，或是手风琴上的音栓……同样的名字，同样的致命。但最可怕的却是，当她反问自己，若还能回到演奏终止的那一天，她是否会选择其他命运……她选择了犹豫。",
+            "Status": 1,
+            "weight": 727
+          }
+        ],
+        "now": "2026-07-01 10:46:47"
+      },
+      "status": 1,
+      "switch": null,
+      "info": 0
+    }
+  },
+  {
+    "ID": "20215121",
+    "name": "巴哈姆特",
+    "quality": "SSSR",
+    "WeaponType1": "Assault",
+    "WeaponType2": "HeavyMachineGun",
+    "type": "HeavyMachineGun",
+    "icon": "Icon_weapon_20400303",
+    "detail": {
+      "data": {
+        "data": [
+          {
+            "ID": "20215121",
+            "name": "巴哈姆特",
+            "quality": "SSSR",
+            "grade": "70",
+            "WeaponType1": "Assault",
+            "WeaponType2": "HeavyMachineGun",
+            "type": "HeavyMachineGun",
+            "LimitedModelOfWeapon": "Light/Medium/Heavy",
+            "RestrictionsPositionOfWeapon": "DoubleHand",
+            "range": "1-3",
+            "WeaponWeight": "1000",
+            "WeaponBasicAttackingPower": "1618",
+            "WeaponHitPoint": "1560",
+            "WeaponUnderstanding": "4603",
+            "PassiveSkill": [
+              {
+                "ID": "53023",
+                "name": "超限火控",
+                "SpecificEffects": "重机枪射程扩大时，最佳射程格子数也扩大相同距离",
+                "BufCarried": "530231",
+                "SkillIcon": "Icon_skill_passive_5210",
+                "icon": "Icon_skill_passive_5210",
+                "Status": 1,
+                "weight": 1176
+              },
+              {
+                "ID": "53024",
+                "name": "无还之军",
+                "SpecificEffects": "强化<buf ID=900083>[无畏之军]</buf>效果：自身射程范围内每有<color=#F74848>1</color>台敌机，子弹数<color=#F74848>+1</color>，最多<color=#F74848>+4</color>；手臂被击破时，不会自动退出<buf ID=900025>[架起]</buf>状态",
+                "BufCarried": "530241",
+                "SkillIcon": "Icon_skill_passive_5211",
+                "icon": "Icon_skill_passive_5211",
+                "Status": 1,
+                "weight": 1177
+              },
+              {
+                "ID": "53022",
+                "name": "余啸",
+                "SpecificEffects": "单手握持重机枪时，命中率不再下降",
+                "BufCarried": "530221",
+                "SkillIcon": "Icon_skill_passive_5126",
+                "icon": "Icon_skill_passive_5126",
+                "Status": 1,
+                "weight": 1175
+              }
+            ],
+            "IconResourcePath": "Icon_weapon_20400303",
+            "icon": "Icon_weapon_20400303",
+            "describe": "「你曾说过服从命令是军人的天职，但你正执行的任务却在悖逆这一信条……告诉我，中校，现在的你，是否还保留着哪怕一丝一毫对人性的认知？」",
+            "Status": 1,
+            "weight": 722
+          }
+        ],
+        "now": "2026-07-01 10:46:49"
+      },
+      "status": 1,
+      "switch": null,
+      "info": 0
+    }
+  },
+  {
+    "ID": "30115121",
+    "name": "暗香",
+    "quality": "SSSR",
+    "WeaponType1": "Sniper",
+    "WeaponType2": "LightSniper",
+    "type": "LightSniper",
+    "icon": "Icon_weapon_30100302",
+    "detail": {
+      "data": {
+        "data": [
+          {
+            "ID": "30115121",
+            "name": "暗香",
+            "quality": "SSSR",
+            "grade": "70",
+            "WeaponType1": "Sniper",
+            "WeaponType2": "LightSniper",
+            "type": "LightSniper",
+            "LimitedModelOfWeapon": "Light/Medium/Heavy",
+            "RestrictionsPositionOfWeapon": "Hand",
+            "range": "2-4",
+            "WeaponWeight": "600",
+            "WeaponBasicAttackingPower": "544",
+            "WeaponHitPoint": "3057",
+            "WeaponUnderstanding": "4603",
+            "PassiveSkill": [
+              {
+                "ID": "53026",
+                "name": "克勉",
+                "SpecificEffects": "<buf ID=900013>[警戒射击]</buf>的伤害倍率提升<color=#F74848>0.35</color>倍，若<buf ID=900013>[警戒射击]</buf>击破部位，战后回复<color=#F74848>1</color>AP，每回合最多<color=#F74848>1</color>次",
+                "BufCarried": "530261/530262",
+                "SkillIcon": "Icon_skill_passive_1159",
+                "icon": "Icon_skill_passive_1159",
+                "Status": 1,
+                "weight": 1179
+              },
+              {
+                "ID": "53027",
+                "name": "昙愿",
+                "SpecificEffects": "强化<buf ID=900084>[昙舞]</buf>效果：<buf ID=900014>[瞄准]</buf>时，伤害提升<color=#F74848>20%</color>，若目标部位完好，伤害额外提升<color=#F74848>10%</color>；装配手盾时，击毁目标后，可使用完整移动力继续移动",
+                "BufCarried": "530271/530272/530273/530274",
+                "SkillIcon": "Icon_skill_passive_1160",
+                "icon": "Icon_skill_passive_1160",
+                "Status": 1,
+                "weight": 1180
+              },
+              {
+                "ID": "53025",
+                "name": "沉笃",
+                "SpecificEffects": "主动攻击对战时，若目标无法反击，本次攻击命中率和暴击率提升<color=#F74848>10%</color>",
+                "BufCarried": "530251",
+                "SkillIcon": "Icon_skill_passive_4128",
+                "icon": "Icon_skill_passive_4128",
+                "Status": 1,
+                "weight": 1178
+              }
+            ],
+            "IconResourcePath": "Icon_weapon_30100302",
+            "icon": "Icon_weapon_30100302",
+            "describe": "「我知道你不喜欢花啊衣服啊什么的，所以就给你定了这个。因为你从未过过生日，或许连日期都不记得了。但没关系，从现在开始，每年的今天就是我们共同的生日。生日快乐，姐姐！」",
+            "Status": 1,
+            "weight": 726
+          }
+        ],
+        "now": "2026-07-01 10:46:52"
+      },
+      "status": 1,
+      "switch": null,
+      "info": 0
+    }
+  },
+  {
+    "ID": "40115121",
+    "name": "这太酷了！",
+    "quality": "SSSR",
+    "WeaponType1": "Heavy",
+    "WeaponType2": "Missile",
+    "type": "Missile",
+    "icon": "Icon_weapon_40100501",
+    "detail": {
+      "data": {
+        "data": [
+          {
+            "ID": "40115121",
+            "name": "这太酷了！",
+            "quality": "SSSR",
+            "grade": "70",
+            "WeaponType1": "Heavy",
+            "WeaponType2": "Missile",
+            "type": "Missile",
+            "LimitedModelOfWeapon": "Medium",
+            "RestrictionsPositionOfWeapon": "Shoulder",
+            "range": "3-6",
+            "WeaponWeight": "950",
+            "WeaponBasicAttackingPower": "500",
+            "WeaponHitPoint": "3619",
+            "WeaponUnderstanding": "4603",
+            "NumberOfBullets": "2",
+            "InitiativeSkill": [
+              {
+                "ID": "4011",
+                "remarks": "导弹攻击",
+                "name": "定点打击",
+                "describe": "使用导弹攻击单个目标，对命中部位造成<color=#F74848>1.0</color>倍伤害，对其他部位造成主体伤害<color=#F74848>50%</color>的溅射伤害",
+                "type": "SpecialAssault",
+                "CD": "0",
+                "Ap": "2",
+                "matchingWeaponType": "导弹",
+                "SkillIcon": "Icon_skill_order_1001",
+                "icon": "Icon_skill_order_1001",
+                "Status": 1,
+                "weight": 664
+              }
+            ],
+            "PassiveSkill": [
+              {
+                "ID": "53020",
+                "name": "稳态轰击",
+                "SpecificEffects": "使用导弹主动攻击前，若没有移动过，伤害提升<color=#F74848>30%</color>",
+                "BufCarried": "530201",
+                "SkillIcon": "Icon_skill_passive_1158",
+                "icon": "Icon_skill_passive_1158",
+                "Status": 1,
+                "weight": 1173
+              },
+              {
+                "ID": "53021",
+                "name": "全能骇客",
+                "SpecificEffects": "强化<buf ID=900082>[超能骇客]</buf>效果：使用<buf ID=900016>[双肩打击]</buf>类技能时，溅射伤害提升<color=#F74848>25%</color>，并且获得<buf ID=530214>[耗能优化]</buf>，每回合最多获得<color=#F74848>1</color>次",
+                "BufCarried": "530211/530212",
+                "SkillIcon": "Icon_skill_passive_5209",
+                "icon": "Icon_skill_passive_5209",
+                "Status": 1,
+                "weight": 1174
+              },
+              {
+                "ID": "53019",
+                "name": "特型弹仓",
+                "SpecificEffects": "当导弹弹药耗尽时，自动装填所有弹药，该效果每次出击仅可发动<color=#F74848>1</color>次",
+                "BufCarried": "530191",
+                "SkillIcon": "Icon_skill_passive_5148",
+                "icon": "Icon_skill_passive_5148",
+                "Status": 1,
+                "weight": 1172
+              }
+            ],
+            "IconResourcePath": "Icon_weapon_40100501",
+            "icon": "Icon_weapon_40100501",
+            "describe": "联合安全总署为特别探员定制的机兵导弹，拥有远超大部分现役战术武器的卓越性能，预计商品名为「因陀罗」。可惜某探员在提取新装备后的第二天就忘记了它的名字。",
+            "Status": 1,
+            "weight": 729
+          }
+        ],
+        "now": "2026-07-01 10:46:54"
+      },
+      "status": 1,
+      "switch": null,
+      "info": 0
+    }
+  },
+  {
+    "ID": "20315121",
+    "name": "爝火",
+    "quality": "SSSR",
+    "WeaponType1": "Assault",
+    "WeaponType2": "ShotGun",
+    "type": "ShotGun",
+    "icon": "Icon_weapon_20300402",
+    "detail": {
+      "data": {
+        "data": [
+          {
+            "ID": "20315121",
+            "name": "爝火",
+            "quality": "SSSR",
+            "grade": "70",
+            "WeaponType1": "Assault",
+            "WeaponType2": "ShotGun",
+            "type": "ShotGun",
+            "LimitedModelOfWeapon": "Light/Medium/Heavy",
+            "RestrictionsPositionOfWeapon": "Hand",
+            "range": "1-2",
+            "WeaponWeight": "450",
+            "WeaponBasicAttackingPower": "1663",
+            "WeaponHitPoint": "3182",
+            "WeaponUnderstanding": "4603",
+            "PassiveSkill": [
+              {
+                "ID": "53035",
+                "name": "阔步",
+                "SpecificEffects": "主动攻击对战前，若移动大于等于<color=#F74848>4</color>格，霰弹枪子弹数<color=#F74848>+3</color>",
+                "BufCarried": "530351",
+                "SkillIcon": "Icon_skill_passive_5161",
+                "icon": "Icon_skill_passive_5161",
+                "Status": 1,
+                "weight": 1188
+              },
+              {
+                "ID": "53036",
+                "name": "猛进",
+                "SpecificEffects": "强化<buf ID=900092>[勇进]</buf>效果：触发<buf ID=900004>[再攻击]</buf>或使用<skill mainSkill=201004>[逐梦]</skill>时，可额外移动<color=#F74848>2</color>格；<buf ID=900004>[再攻击]</buf>时，伤害提升<color=#F74848>35%</color>",
+                "BufCarried": "530361/530362",
+                "SkillIcon": "Icon_skill_passive_5216",
+                "icon": "Icon_skill_passive_5216",
+                "Status": 1,
+                "weight": 1189
+              },
+              {
+                "ID": "53034",
+                "name": "斩棘",
+                "SpecificEffects": "主动攻击对战时，若遭受目标反击，遭受伤害降低<color=#F74848>20%</color>",
+                "BufCarried": "530341",
+                "SkillIcon": "Icon_skill_passive_5179",
+                "icon": "Icon_skill_passive_5179",
+                "Status": 1,
+                "weight": 1187
+              }
+            ],
+            "IconResourcePath": "Icon_weapon_20300402",
+            "icon": "Icon_weapon_20300402",
+            "describe": "自诞生起，理想便并不独属于任何人。所以，即便最先发起者已然放弃，背叛，理想也能自行找到传承者延续下去……现在，是时候由他来担负起那未尽的职责，投身于那燎野的爝火之中。",
+            "Status": 1,
+            "weight": 723
+          }
+        ],
+        "now": "2026-07-01 10:46:57"
+      },
+      "status": 1,
+      "switch": null,
+      "info": 0
+    }
+  },
+  {
+    "ID": "40215121",
+    "name": "RA09",
+    "quality": "SSSR",
+    "WeaponType1": "Heavy",
+    "WeaponType2": "Rocket",
+    "type": "Rocket",
+    "icon": "Icon_weapon_40200501",
+    "detail": {
+      "data": {
+        "data": [
+          {
+            "ID": "40215121",
+            "name": "RA09",
+            "quality": "SSSR",
+            "grade": "70",
+            "WeaponType1": "Heavy",
+            "WeaponType2": "Rocket",
+            "type": "Rocket",
+            "LimitedModelOfWeapon": "Medium",
+            "RestrictionsPositionOfWeapon": "Shoulder",
+            "range": "3-6",
+            "WeaponWeight": "1200",
+            "WeaponBasicAttackingPower": "946",
+            "WeaponHitPoint": "2808",
+            "WeaponUnderstanding": "4603",
+            "NumberOfBullets": "1",
+            "InitiativeSkill": [
+              {
+                "ID": "4021",
+                "remarks": "火箭攻击",
+                "name": "战略轰炸",
+                "describe": "使用火箭攻击所选<color=#F74848>3×3</color>格范围内的所有目标，对每个部位造成<color=#F74848>0.25</color>倍范围伤害",
+                "type": "SpecialAssault",
+                "CD": "0",
+                "Ap": "3",
+                "matchingWeaponType": "火箭",
+                "SkillIcon": "Icon_skill_order_1003",
+                "icon": "Icon_skill_order_1003",
+                "Status": 1,
+                "weight": 665
+              }
+            ],
+            "PassiveSkill": [
+              {
+                "ID": "53029",
+                "name": "谋划",
+                "SpecificEffects": "同时使用双肩火箭主动攻击时，暴击率提升<color=#F74848>50%</color>",
+                "BufCarried": "530291",
+                "SkillIcon": "Icon_skill_passive_4130",
+                "icon": "Icon_skill_passive_4130",
+                "Status": 1,
+                "weight": 1182
+              },
+              {
+                "ID": "53030",
+                "name": "永焰",
+                "SpecificEffects": "强化<buf ID=900090>[不息雷火]</buf>效果：使用火箭攻击时，同时打击的目标大于等于<color=#F74848>2</color>个时即可触发效果；使用火箭主动攻击时，对耐久值大于等于<color=#F74848>50%</color>的部位造成伤害提升<color=#F74848>25%</color>",
+                "BufCarried": "530301/530302/530303",
+                "SkillIcon": "Icon_skill_passive_5214",
+                "icon": "Icon_skill_passive_5214",
+                "Status": 1,
+                "weight": 1183
+              },
+              {
+                "ID": "53028",
+                "name": "初发",
+                "SpecificEffects": "使用弹仓中的第<color=#F74848>1</color>发弹药攻击时，命中率提升<color=#F74848>10%</color>，伤害提升<color=#F74848>10%</color>",
+                "BufCarried": "530281",
+                "SkillIcon": "Icon_skill_passive_4104",
+                "icon": "Icon_skill_passive_4104",
+                "Status": 1,
+                "weight": 1181
+              }
+            ],
+            "IconResourcePath": "Icon_weapon_40200501",
+            "icon": "Icon_weapon_40200501",
+            "describe": "「集团秘密最高审批已通过，艾琳监察官，您已可以前往米赫玛岛去搜寻那传闻中的实验体，但我仍建议您等待董事会的正式表决，以得到机动警卫队的调用权……好的，最后的例行确认，您是要独自一人，投身于地狱当中，对吗？」",
+            "Status": 1,
+            "weight": 730
+          }
+        ],
+        "now": "2026-07-01 10:46:59"
+      },
+      "status": 1,
+      "switch": null,
+      "info": 0
+    }
+  },
+  {
+    "ID": "50115121",
+    "name": "熠光",
+    "quality": "SSSR",
+    "WeaponType1": "Heavy",
+    "WeaponType2": "RailGun",
+    "type": "RailGun",
+    "icon": "Icon_weapon_50100401",
+    "detail": {
+      "data": {
+        "data": [
+          {
+            "ID": "50115121",
+            "name": "熠光",
+            "quality": "SSSR",
+            "grade": "70",
+            "WeaponType1": "Heavy",
+            "WeaponType2": "RailGun",
+            "type": "RailGun",
+            "LimitedModelOfWeapon": "Medium",
+            "RestrictionsPositionOfWeapon": "Back",
+            "range": "1-5",
+            "WeaponWeight": "1100",
+            "WeaponBasicAttackingPower": "783",
+            "WeaponHitPoint": "4992",
+            "WeaponUnderstanding": "4603",
+            "NumberOfBullets": "3",
+            "InitiativeSkill": [
+              {
+                "ID": "5011",
+                "remarks": "电磁炮攻击",
+                "name": "电磁激荡",
+                "describe": "使用电磁炮攻击纵向<color=#F74848>5</color>格范围内的所有目标，造成<color=#F74848>1.0</color>倍范围伤害",
+                "type": "SpecialAssault",
+                "CD": "0",
+                "Ap": "3",
+                "matchingWeaponType": "电磁炮",
+                "SkillIcon": "Icon_skill_order_1005",
+                "icon": "Icon_skill_order_1005",
+                "Status": 1,
+                "weight": 667
+              }
+            ],
+            "PassiveSkill": [
+              {
+                "ID": "53032",
+                "name": "充沛",
+                "SpecificEffects": "使用电磁炮攻击时，弹仓中每有<color=#F74848>1</color>发弹药，伤害提升<color=#F74848>6%</color>，最多提升<color=#F74848>30%</color>",
+                "BufCarried": "530321/530322/530323/530324/530325",
+                "SkillIcon": "Icon_skill_passive_5143",
+                "icon": "Icon_skill_passive_5143",
+                "Status": 1,
+                "weight": 1185
+              },
+              {
+                "ID": "53033",
+                "name": "鼎新",
+                "SpecificEffects": "强化<buf ID=900091>[晨星科技]</buf>效果：敌机行动结束时，可使用电磁炮触发<buf ID=900013>[警戒射击]</buf>，对攻击范围内所有目标造成<color=#F74848>0.35</color>倍伤害，<buf ID=3000341>[禁区2]</buf>解锁后可增加相同次数；连续使用电磁炮攻击时伤害提升<color=#F74848>10%</color>，可叠加<color=#F74848>3</color>层，行动结束时重置",
+                "BufCarried": "530331/530332/530334",
+                "SkillIcon": "Icon_skill_passive_5215",
+                "icon": "Icon_skill_passive_5215",
+                "Status": 1,
+                "weight": 1186
+              },
+              {
+                "ID": "53031",
+                "name": "弹药回收",
+                "SpecificEffects": "使用电磁炮主动攻击时，若击破部位，战后装填<color=#F74848>1</color>发弹药，该效果间隔<color=#F74848>1</color>回合才可再次触发",
+                "BufCarried": "530311",
+                "SkillIcon": "Icon_skill_passive_5140",
+                "icon": "Icon_skill_passive_5140",
+                "Status": 1,
+                "weight": 1184
+              }
+            ],
+            "IconResourcePath": "Icon_weapon_50100401",
+            "icon": "Icon_weapon_50100401",
+            "describe": "「肖妮，这个安保负责人这个岗位根本就是他们捏造出来，用来束缚你的岗位！这样下去你只会一味地受议会调派，根本就找不到机会能……你说是为了能在执行层保护平民？呵呵，这种道貌岸然的话，也只有我会相信了……」",
+            "Status": 1,
+            "weight": 731
+          }
+        ],
+        "now": "2026-07-01 10:47:00"
+      },
+      "status": 1,
+      "switch": null,
+      "info": 0
+    }
+  },
+  {
+    "ID": "10315122",
+    "name": "锐芒",
+    "quality": "SSSR",
+    "WeaponType1": "Melee",
+    "WeaponType2": "Rod",
+    "type": "Rod",
+    "icon": "Icon_weapon_10300303",
+    "detail": {
+      "data": {
+        "data": [
+          {
+            "ID": "10315122",
+            "name": "锐芒",
+            "quality": "SSSR",
+            "grade": "70",
+            "WeaponType1": "Melee",
+            "WeaponType2": "Rod",
+            "type": "Rod",
+            "LimitedModelOfWeapon": "Light/Medium/Heavy",
+            "RestrictionsPositionOfWeapon": "DoubleHand",
+            "range": "1（可斜向）",
+            "WeaponWeight": "800",
+            "WeaponBasicAttackingPower": "738",
+            "WeaponHitPoint": "1466",
+            "WeaponUnderstanding": "4603",
+            "PassiveSkill": [
+              {
+                "ID": "53041",
+                "name": "摧坚折锐",
+                "SpecificEffects": "使用长柄主动攻击时，目标每有<color=#F74848>1</color>个减益效果，伤害提升<color=#F74848>7.5%</color>，最多<color=#F74848>30%</color>",
+                "BufCarried": "530411",
+                "SkillIcon": "Icon_skill_passive_4134",
+                "icon": "Icon_skill_passive_4134",
+                "Status": 1,
+                "weight": 1194
+              },
+              {
+                "ID": "53042",
+                "name": "摄敌月魄",
+                "SpecificEffects": "强化<buf ID=900099>[慑人月辉]</buf>效果：行动开始时，若光环范围内敌机大于等于<color=#F74848>3</color>名时，获得<color=#F74848>1</color>AP；\n光环范围内存在<buf ID=7101505>[宕机]</buf>或<buf ID=2011442>[震慑]</buf>的敌机时，伤害提升<color=#F74848>15%</color>，遭受伤害降低<color=#F74848>15%</color>",
+                "BufCarried": "530421/530422/530423/530424/530425/530426",
+                "SkillIcon": "Icon_skill_passive_5231",
+                "icon": "Icon_skill_passive_5231",
+                "Status": 1,
+                "weight": 1195
+              },
+              {
+                "ID": "53040",
+                "name": "如臂使指",
+                "SpecificEffects": "与斜格目标对战时，命中率和暴击率提升<color=#F74848>12%</color>",
+                "BufCarried": "530401",
+                "SkillIcon": "Icon_skill_passive_4133",
+                "icon": "Icon_skill_passive_4133",
+                "Status": 1,
+                "weight": 1193
+              }
+            ],
+            "IconResourcePath": "Icon_weapon_10300303",
+            "icon": "Icon_weapon_10300303",
+            "describe": "有的时候她会梦见那个，和她收养的孩子们一起看月亮的夜晚……正因如此，为了今后无数个同样皎洁的月夜，她必须紧握手中的武器，无惧无畏地继续战斗下去。",
+            "Status": 1,
+            "weight": 715
+          }
+        ],
+        "now": "2026-07-01 10:47:02"
+      },
+      "status": 1,
+      "switch": null,
+      "info": 0
+    }
+  },
+  {
+    "ID": "20415121",
+    "name": "迦具土",
+    "quality": "SSSR",
+    "WeaponType1": "Assault",
+    "WeaponType2": "Flamethrower",
+    "type": "Flamethrower",
+    "icon": "Icon_weapon_20500501",
+    "detail": {
+      "data": {
+        "data": [
+          {
+            "ID": "20415121",
+            "name": "迦具土",
+            "quality": "SSSR",
+            "grade": "70",
+            "WeaponType1": "Assault",
+            "WeaponType2": "Flamethrower",
+            "type": "Flamethrower",
+            "LimitedModelOfWeapon": "Light/Medium/Heavy",
+            "RestrictionsPositionOfWeapon": "Hand",
+            "range": "2（可斜向）",
+            "WeaponWeight": "400",
+            "WeaponBasicAttackingPower": "1402",
+            "WeaponHitPoint": "3869",
+            "WeaponUnderstanding": "4603",
+            "PassiveSkill": [
+              {
+                "ID": "53038",
+                "name": "连环灼烧",
+                "SpecificEffects": "使用喷火器攻击时，对位于[燃烧地形]上的目标伤害提升<color=#F74848>20%</color>",
+                "BufCarried": "530381",
+                "SkillIcon": "Icon_skill_passive_5229",
+                "icon": "Icon_skill_passive_5229",
+                "Status": 1,
+                "weight": 1191
+              },
+              {
+                "ID": "53039",
+                "name": "呼啦呼啦！",
+                "SpecificEffects": "强化<buf ID=900098>[好烫好烫！]</buf>效果：行动后，对此次行动经过的路径上的地格添加<terrian ID=4003081 />，持续<color=#F74848>2</color>回合；\n每添加<color=#F74848>1</color>格<terrian ID=4003081 />，获得<color=#F74848>1</color>层<buf ID=530395>[升温]</buf>，可叠加<color=#F74848>15</color>层；\n若自身处于[燃烧地形]上，喷火器子弹数<color=#F74848>+1</color>，火焰伤害系数<color=#F74848>+10%</color>",
+                "BufCarried": "530391/530393/530394/530396",
+                "SkillIcon": "Icon_skill_passive_5230",
+                "icon": "Icon_skill_passive_5230",
+                "Status": 1,
+                "weight": 1192
+              },
+              {
+                "ID": "53037",
+                "name": "穿透焰流",
+                "SpecificEffects": "主动攻击对战时，<buf ID=900065>[火焰伤害]</buf>的路径延长<color=#F74848>1</color>格",
+                "BufCarried": "530371",
+                "SkillIcon": "Icon_skill_passive_5228",
+                "icon": "Icon_skill_passive_5228",
+                "Status": 1,
+                "weight": 1190
+              }
+            ],
+            "IconResourcePath": "Icon_weapon_20500501",
+            "icon": "Icon_weapon_20500501",
+            "describe": "原本是市面上常见的尖端喷火器的改款，没想到在绘梨沙手上玩出了新花样——连通动力单元后，可以在行进轨迹上留下熊熊燃烧的火焰尾迹——对于这位常年被各大势力追捕的独立记者来说，她的逃脱概率又在100%的基础上增加了几个百分点。",
+            "Status": 1,
+            "weight": 725
+          }
+        ],
+        "now": "2026-07-01 10:47:04"
+      },
+      "status": 1,
+      "switch": null,
+      "info": 0
+    }
+  },
+  {
+    "ID": "10215122",
+    "name": "定风波",
+    "quality": "SSSR",
+    "WeaponType1": "Melee",
+    "WeaponType2": "PileBunker",
+    "type": "PileBunker",
+    "icon": "Icon_weapon_10200401",
+    "detail": {
+      "data": {
+        "data": [
+          {
+            "ID": "10215122",
+            "name": "定风波",
+            "quality": "SSSR",
+            "grade": "70",
+            "WeaponType1": "Melee",
+            "WeaponType2": "PileBunker",
+            "type": "PileBunker",
+            "LimitedModelOfWeapon": "Light/Medium/Heavy",
+            "RestrictionsPositionOfWeapon": "Hand",
+            "range": "1",
+            "WeaponWeight": "300",
+            "WeaponBasicAttackingPower": "681",
+            "WeaponHitPoint": "3245",
+            "WeaponUnderstanding": "4603",
+            "PassiveSkill": [
+              {
+                "ID": "53044",
+                "name": "自在",
+                "SpecificEffects": "使用打桩机造成暴击时，获得<color=#F74848>1</color>AP，每回合可生效<color=#F74848>1</color>次",
+                "BufCarried": "530441",
+                "SkillIcon": "Icon_skill_passive_5155",
+                "icon": "Icon_skill_passive_5155",
+                "Status": 1,
+                "weight": 1197
+              },
+              {
+                "ID": "53045",
+                "name": "极魂",
+                "SpecificEffects": "强化<buf ID=900102>[极意]</buf>效果：<buf ID=900050>[兴奋]</buf>的叠加上限提高<color=#F74848>2</color>层；\n行动开始时，获得<color=#F74848>1</color>层<buf ID=900050>[兴奋]</buf>；\n自身携带<color=#F74848>3</color>层及以上<buf ID=900050>[兴奋]</buf>时，自身触发的<buf ID=900001>[追击]</buf>效果替换为<buf ID=900010>[连续攻击]</buf>，并且<buf ID=900010>[连续攻击]</buf>伤害提升<color=#F74848>35%</color>",
+                "BufCarried": "530450/530451/530452/530453/530454/530457/530458/530459",
+                "SkillIcon": "Icon_skill_passive_5240",
+                "icon": "Icon_skill_passive_5240",
+                "Status": 1,
+                "weight": 1198
+              },
+              {
+                "ID": "53043",
+                "name": "崩摧",
+                "SpecificEffects": "攻击耐久值大于等于<color=#F74848>60%</color>的部位时，造成伤害提升<color=#F74848>15%</color>",
+                "BufCarried": "530431",
+                "SkillIcon": "Icon_skill_passive_1101",
+                "icon": "Icon_skill_passive_1101",
+                "Status": 1,
+                "weight": 1196
+              }
+            ],
+            "IconResourcePath": "Icon_weapon_10200401",
+            "icon": "Icon_weapon_10200401",
+            "describe": "「回首向来萧瑟处，归去，也无风雨也无晴。」",
+            "Status": 1,
+            "weight": 713
+          }
+        ],
+        "now": "2026-07-01 10:47:08"
+      },
+      "status": 1,
+      "switch": null,
+      "info": 0
+    }
+  },
+  {
+    "ID": "10515122",
+    "name": "马哈利姆之力",
+    "quality": "SSSR",
+    "WeaponType1": "Melee",
+    "WeaponType2": "Buckler",
+    "type": "Buckler",
+    "icon": "Icon_weapon_10500501",
+    "detail": {
+      "data": {
+        "data": [
+          {
+            "ID": "10515122",
+            "name": "马哈利姆之力",
+            "quality": "SSSR",
+            "grade": "70",
+            "WeaponType1": "Melee",
+            "WeaponType2": "Buckler",
+            "type": "Buckler",
+            "LimitedModelOfWeapon": "Light/Medium/Heavy",
+            "RestrictionsPositionOfWeapon": "Hand",
+            "range": "1",
+            "WeaponWeight": "70",
+            "WeaponBasicAttackingPower": "287",
+            "WeaponHitPoint": "3057",
+            "ShieldbloodBase": "849",
+            "PassiveSkill": [
+              {
+                "ID": "53047",
+                "name": "火线维修",
+                "SpecificEffects": "<buf ID=530470>[抢险维修]</buf>的修理量额外提升修理背包的<color=#F74848>0.35</color>倍",
+                "BufCarried": "530471",
+                "SkillIcon": "Icon_skill_passive_3131",
+                "icon": "Icon_skill_passive_3131",
+                "Status": 1,
+                "weight": 1200
+              },
+              {
+                "ID": "53048",
+                "name": "元气十足",
+                "SpecificEffects": "强化<buf ID=900103>[神气十足]</buf>效果：释放单体修理技能后，使目标获得<buf ID=7100401>[暴击率提升Ⅰ]</buf>和<buf ID=7100103>[命中率提升Ⅱ]</buf>，持续<color=#F74848>1</color>回合，若自身仍有剩余AP，转移<color=#F74848>1</color>点AP给目标",
+                "BufCarried": "530481/530484/530485",
+                "SkillIcon": "Icon_skill_passive_5241",
+                "icon": "Icon_skill_passive_5241",
+                "Status": 1,
+                "weight": 1201
+              },
+              {
+                "ID": "53046",
+                "name": "维护备件",
+                "SpecificEffects": "受到攻击时的伤害转移权重额外提升<color=#F74848>50</color>，遭受攻击后，修复装备手部<color=#F74848>20%</color>的耐久值，不可修复破损的部位",
+                "BufCarried": "530461",
+                "SkillIcon": "Icon_skill_passive_3119",
+                "icon": "Icon_skill_passive_3119",
+                "Status": 1,
+                "weight": 1199
+              }
+            ],
+            "IconResourcePath": "Icon_weapon_10500501",
+            "icon": "Icon_weapon_10500501",
+            "describe": "难民营中的前几位「马哈利姆」留下的「遗产」，由各种零碎的机兵零件组装而来的机兵手盾，与之配套的还有一套方便进行维修的备件箱。罗娜希望通过这样的方式纪念他们所有人，并期望自己能用它拯救更多的「马哈利姆」。",
+            "Status": 1,
+            "weight": 719
+          }
+        ],
+        "now": "2026-07-01 10:47:09"
+      },
+      "status": 1,
+      "switch": null,
+      "info": 0
+    }
+  },
+  {
+    "ID": "50116121",
+    "name": "裁决者",
+    "quality": "SSSR",
+    "WeaponType1": "Heavy",
+    "WeaponType2": "RailGun",
+    "type": "RailGun",
+    "icon": "Icon_weapon_50100401",
+    "detail": {
+      "data": {
+        "data": [
+          {
+            "ID": "50116121",
+            "name": "裁决者",
+            "quality": "SSSR",
+            "grade": "70",
+            "WeaponType1": "Heavy",
+            "WeaponType2": "RailGun",
+            "type": "RailGun",
+            "LimitedModelOfWeapon": "Medium",
+            "RestrictionsPositionOfWeapon": "Back",
+            "range": "1-5",
+            "WeaponWeight": "1100",
+            "WeaponBasicAttackingPower": "783",
+            "WeaponHitPoint": "4992",
+            "WeaponUnderstanding": "4603",
+            "NumberOfBullets": "3",
+            "InitiativeSkill": [
+              {
+                "ID": "5011",
+                "remarks": "电磁炮攻击",
+                "name": "电磁激荡",
+                "describe": "使用电磁炮攻击纵向<color=#F74848>5</color>格范围内的所有目标，造成<color=#F74848>1.0</color>倍范围伤害",
+                "type": "SpecialAssault",
+                "CD": "0",
+                "Ap": "3",
+                "matchingWeaponType": "电磁炮",
+                "SkillIcon": "Icon_skill_order_1005",
+                "icon": "Icon_skill_order_1005",
+                "Status": 1,
+                "weight": 667
+              }
+            ],
+            "PassiveSkill": [
+              {
+                "ID": "53032",
+                "name": "充沛",
+                "SpecificEffects": "使用电磁炮攻击时，弹仓中每有<color=#F74848>1</color>发弹药，伤害提升<color=#F74848>6%</color>，最多提升<color=#F74848>30%</color>",
+                "BufCarried": "530321/530322/530323/530324/530325",
+                "SkillIcon": "Icon_skill_passive_5143",
+                "icon": "Icon_skill_passive_5143",
+                "Status": 1,
+                "weight": 1185
+              },
+              {
+                "ID": "53033",
+                "name": "鼎新",
+                "SpecificEffects": "强化<buf ID=900091>[晨星科技]</buf>效果：敌机行动结束时，可使用电磁炮触发<buf ID=900013>[警戒射击]</buf>，对攻击范围内所有目标造成<color=#F74848>0.35</color>倍伤害，<buf ID=3000341>[禁区2]</buf>解锁后可增加相同次数；连续使用电磁炮攻击时伤害提升<color=#F74848>10%</color>，可叠加<color=#F74848>3</color>层，行动结束时重置",
+                "BufCarried": "530331/530332/530334",
+                "SkillIcon": "Icon_skill_passive_5215",
+                "icon": "Icon_skill_passive_5215",
+                "Status": 1,
+                "weight": 1186
+              },
+              {
+                "ID": "61254",
+                "name": "首攻强化Ⅲ",
+                "SpecificEffects": "每回合第<color=#F74848>1</color>次主动攻击时，伤害提升<color=#F74848>7.5%</color>，暴击率提升<color=#F74848>5%</color>；\n机兵躯干耐久值提升<color=#F74848>10%</color>，造成伤害提升<color=#F74848>5%</color>",
+                "BufCarried": "600433",
+                "SkillIcon": "Icon_skill_passive_5119",
+                "icon": "Icon_skill_passive_5119",
+                "Status": 1,
+                "weight": 1556
+              },
+              {
+                "ID": "53031",
+                "name": "弹药回收",
+                "SpecificEffects": "使用电磁炮主动攻击时，若击破部位，战后装填<color=#F74848>1</color>发弹药，该效果间隔<color=#F74848>1</color>回合才可再次触发",
+                "BufCarried": "530311",
+                "SkillIcon": "Icon_skill_passive_5140",
+                "icon": "Icon_skill_passive_5140",
+                "Status": 1,
+                "weight": 1184
+              }
+            ],
+            "IconResourcePath": "Icon_weapon_50100401",
+            "icon": "Icon_weapon_50100401",
+            "describe": "将干扰背包与机载电磁炮合二为一的全新杰作，首次克服了背包与电磁炮基座复合的难题，使得裁决者电磁炮成为兼具干扰背包与远程战术打击的战场利器。",
+            "Status": 1,
+            "weight": 732
+          }
+        ],
+        "now": "2026-07-01 10:47:11"
+      },
+      "status": 1,
+      "switch": null,
+      "info": 0
+    }
+  },
+  {
+    "ID": "10415122",
+    "name": "晨星之壁",
+    "quality": "SSSR",
+    "WeaponType1": "Melee",
+    "WeaponType2": "Shield",
+    "type": "Shield",
+    "icon": "Icon_weapon_10400301",
+    "detail": {
+      "data": {
+        "data": [
+          {
+            "ID": "10415122",
+            "name": "晨星之壁",
+            "quality": "SSSR",
+            "grade": "70",
+            "WeaponType1": "Melee",
+            "WeaponType2": "Shield",
+            "type": "Shield",
+            "LimitedModelOfWeapon": "Heavy",
+            "RestrictionsPositionOfWeapon": "Hand",
+            "range": "1",
+            "WeaponWeight": "390",
+            "WeaponBasicAttackingPower": "385",
+            "WeaponHitPoint": "3494",
+            "ShieldbloodBase": "2427",
+            "PassiveSkill": [
+              {
+                "ID": "53053",
+                "name": "以直报怨",
+                "SpecificEffects": "反击时，根据当前遭受伤害降低效果提高伤害，每<color=#F74848>1%</color>遭受伤害降低获得<color=#F74848>1.5%</color>反击伤害提升，最高提升<color=#F74848>100%</color>",
+                "BufCarried": "530531",
+                "SkillIcon": "Icon_skill_passive_1144",
+                "icon": "Icon_skill_passive_1144",
+                "Status": 1,
+                "weight": 1206
+              },
+              {
+                "ID": "53054",
+                "name": "屹立不倒",
+                "SpecificEffects": "强化<buf ID=900114>[站我身后]</buf>的效果：发动<buf ID=900024>[舍身援护]</buf>时，可发动<buf ID=900116>[舍身反击]</buf>，并在战后将所有完好的部位耐久百分比进行<buf ID=900089>[平衡]</buf>；发动反击前获得<color=#F74848>1</color>层<buf ID=530544>[屹立]</buf>，可以叠加<color=#F74848>3</color>层，下次行动开始时移除",
+                "BufCarried": "530541/530542/530543",
+                "SkillIcon": "Icon_skill_passive_2124",
+                "icon": "Icon_skill_passive_2124",
+                "Status": 1,
+                "weight": 1207
+              },
+              {
+                "ID": "53052",
+                "name": "扳腕冠军",
+                "SpecificEffects": "持盾手臂耐久值低于<color=#F74848>60%</color>时，使其受修理量提升<color=#F74848>25%</color>",
+                "BufCarried": "530521",
+                "SkillIcon": "Icon_skill_passive_3101",
+                "icon": "Icon_skill_passive_3101",
+                "Status": 1,
+                "weight": 1205
+              }
+            ],
+            "IconResourcePath": "Icon_weapon_10400301",
+            "icon": "Icon_weapon_10400301",
+            "describe": "根据迪拉卡的描述，这面特制的大盾武器是她在防卫营扳手腕大赛中赢得的战利品。自此之后，扳手腕几乎成了同盟军休闲时期的必备娱乐项目。",
+            "Status": 1,
+            "weight": 717
+          }
+        ],
+        "now": "2026-07-01 10:47:13"
+      },
+      "status": 1,
+      "switch": null,
+      "info": 0
+    }
+  },
+  {
+    "ID": "30215122",
+    "name": "启明星MK7",
+    "quality": "SSSR",
+    "WeaponType1": "Sniper",
+    "WeaponType2": "HeavySniper",
+    "type": "HeavySniper",
+    "icon": "Icon_weapon_30200402",
+    "detail": {
+      "data": {
+        "data": [
+          {
+            "ID": "30215122",
+            "name": "启明星MK7",
+            "quality": "SSSR",
+            "grade": "70",
+            "WeaponType1": "Sniper",
+            "WeaponType2": "HeavySniper",
+            "type": "HeavySniper",
+            "LimitedModelOfWeapon": "Light/Medium/Heavy",
+            "RestrictionsPositionOfWeapon": "DoubleHand",
+            "range": "2-4",
+            "WeaponWeight": "1000",
+            "WeaponBasicAttackingPower": "646",
+            "WeaponHitPoint": "1560",
+            "WeaponUnderstanding": "4603",
+            "PassiveSkill": [
+              {
+                "ID": "53050",
+                "name": "热力连珠",
+                "SpecificEffects": "使用狙击步枪主动攻击造成暴击后，下一次主动攻击AP消耗<color=#F74848>-1</color>，最低<color=#F74848>1</color>点，每回合最多触发<color=#F74848>1</color>次",
+                "BufCarried": "530501",
+                "SkillIcon": "Icon_skill_passive_5181",
+                "icon": "Icon_skill_passive_5181",
+                "Status": 1,
+                "weight": 1203
+              },
+              {
+                "ID": "53051",
+                "name": "白鹳之眺",
+                "SpecificEffects": "强化<buf ID=900113>[白鹳]</buf>的效果：拥有<buf ID=3010504>[强化射击]</buf>时，攻击时技能倍率提升从<color=#F74848>0.15</color>提升至<color=#F74848>0.2</color>，使用普通攻击、<skill mainSkill=301001>[追歼射击]</skill>和<skill mainSkill=301006>[骤雨]</skill>前可以进行<buf ID=900014>[瞄准]</buf>；使用狙击步枪主动攻击时，若攻击前没有移动过，本次攻击暴击率提高<color=#F74848>15%</color>",
+                "BufCarried": "530511/530512",
+                "SkillIcon": "Icon_skill_passive_5249",
+                "icon": "Icon_skill_passive_5249",
+                "Status": 1,
+                "weight": 1204
+              },
+              {
+                "ID": "53049",
+                "name": "屏息凝神",
+                "SpecificEffects": "<buf ID=900014>[瞄准]</buf>时，伤害提升<color=#F74848>15%</color>",
+                "BufCarried": "530491",
+                "SkillIcon": "Icon_skill_passive_5103",
+                "icon": "Icon_skill_passive_5103",
+                "Status": 1,
+                "weight": 1202
+              }
+            ],
+            "IconResourcePath": "Icon_weapon_30200402",
+            "icon": "Icon_weapon_30200402",
+            "describe": "由安赫特公司特制的教学用狙击武器改型，上面铭刻着由凯莉·波利斯保持的狙击击落记录。或许对于凯莉来说，这把改装后的「教具」远比那些制式武器更有威力。",
+            "Status": 1,
+            "weight": 728
+          }
+        ],
+        "now": "2026-07-01 10:47:15"
+      },
+      "status": 1,
+      "switch": null,
+      "info": 0
+    }
+  },
+  {
+    "ID": "50215121",
+    "name": "诸神黄昏",
+    "quality": "SSSR",
+    "WeaponType1": "Heavy",
+    "WeaponType2": "Funnel",
+    "type": "Funnel",
+    "icon": "Icon_weapon_40300401",
+    "detail": {
+      "data": {
+        "data": [
+          {
+            "ID": "50215121",
+            "name": "诸神黄昏",
+            "quality": "SSSR",
+            "grade": "70",
+            "WeaponType1": "Heavy",
+            "WeaponType2": "Funnel",
+            "type": "Funnel",
+            "LimitedModelOfWeapon": "Medium",
+            "RestrictionsPositionOfWeapon": "Back",
+            "range": "1-4",
+            "WeaponWeight": "1100",
+            "WeaponBasicAttackingPower": "876",
+            "WeaponHitPoint": "5241",
+            "WeaponUnderstanding": "4603",
+            "NumberOfBullets": "3",
+            "InitiativeSkill": [
+              {
+                "ID": "4031",
+                "remarks": "浮游炮普通攻击",
+                "name": "多向歼击",
+                "describe": "使用浮游炮攻击范围内最多<color=#F74848>4</color>个目标，造成<color=#F74848>1</color>倍范围伤害",
+                "type": "SpecialAssault",
+                "CD": "0",
+                "Ap": "3",
+                "matchingWeaponType": "浮游炮",
+                "SkillIcon": "Icon_skill_order_1011",
+                "icon": "Icon_skill_order_1011",
+                "Status": 1,
+                "weight": 666
+              }
+            ],
+            "PassiveSkill": [
+              {
+                "ID": "53059",
+                "name": "空域主宰",
+                "SpecificEffects": "驾驶等级为<buf ID=900119>[超适体]</buf>的机师装备时，浮游炮武器射程与技能范围<color=#F74848>+1</color>，伤害提升<color=#F74848>20%</color>",
+                "BufCarried": "530591/530592",
+                "SkillIcon": "Icon_skill_passive_5148",
+                "icon": "Icon_skill_passive_5148",
+                "Status": 1,
+                "weight": 1212
+              },
+              {
+                "ID": "53060",
+                "name": "伯伦希尔",
+                "SpecificEffects": "强化<buf ID=900117>[瓦尔基里]</buf>效果：激活飞行效果，移动时无视低障碍和敌机阻挡；<buf ID=900118>[女武神模式]</buf>持续回合数<color=#F74848>+1</color>；<buf ID=900118>[女武神模式]</buf>下，浮游炮子弹数<color=#F74848>+2</color>",
+                "BufCarried": "530601/530606",
+                "SkillIcon": "Icon_skill_passive_5250",
+                "icon": "Icon_skill_passive_5250",
+                "Status": 1,
+                "weight": 1213
+              },
+              {
+                "ID": "53058",
+                "name": "续航协议",
+                "SpecificEffects": "浮游炮最大弹药数<color=#F74848>+1</color>；使用浮游炮主动攻击<color=#F74848>4</color>个及以上目标时，战后回复<color=#F74848>1</color>枚弹药，每<color=#F74848>2</color>回合最多发动<color=#F74848>1</color>次",
+                "BufCarried": "530582",
+                "SkillIcon": "Icon_skill_passive_5223",
+                "icon": "Icon_skill_passive_5223",
+                "Status": 1,
+                "weight": 1211
+              }
+            ],
+            "IconResourcePath": "Icon_weapon_40300401",
+            "icon": "Icon_weapon_40300401",
+            "describe": "她看到，自己将铁雨带到大地，把昙花落于火海。她还听到，那些熟悉的、悲伤的、冒失的声音，一次又一次的呼唤自己……直至黄昏到来。既然长梦已醒，那就不要再睡去，接受一切，背负一切，去给那些高高在上的众神……带来属于他们的「审判」。",
+            "Status": 1,
+            "weight": 733
+          }
+        ],
+        "now": "2026-07-01 10:47:16"
+      },
+      "status": 1,
+      "switch": null,
+      "info": 0
+    }
+  },
+  {
+    "ID": "10815121",
+    "name": "Z15型动能斧",
+    "quality": "SSSR",
+    "WeaponType1": "Melee",
+    "WeaponType2": "Saw",
+    "type": "Saw",
+    "icon": "Icon_weapon_10600401",
+    "detail": {
+      "data": {
+        "data": [
+          {
+            "ID": "10815121",
+            "name": "Z15型动能斧",
+            "quality": "SSSR",
+            "grade": "70",
+            "WeaponType1": "Melee",
+            "WeaponType2": "Saw",
+            "type": "Saw",
+            "LimitedModelOfWeapon": "Light/Medium/Heavy",
+            "RestrictionsPositionOfWeapon": "DoubleHand",
+            "range": "1（可斜向）",
+            "WeaponWeight": "850",
+            "WeaponBasicAttackingPower": "964",
+            "WeaponHitPoint": "1809",
+            "WeaponUnderstanding": "4603",
+            "PassiveSkill": [
+              {
+                "ID": "53062",
+                "name": "强能切割",
+                "SpecificEffects": "使用电锯攻击时，每击破<color=#F74848>1</color>个部位，获得<color=#F74848>1</color>层<buf ID=530622>[链锯升温]</buf>，可叠加<color=#F74848>3</color>层，行动结束时移除<color=#F74848>1</color>层",
+                "BufCarried": "530621",
+                "SkillIcon": "Icon_skill_passive_5253",
+                "icon": "Icon_skill_passive_5253",
+                "Status": 1,
+                "weight": 1215
+              },
+              {
+                "ID": "53063",
+                "name": "勇气爆发",
+                "SpecificEffects": "强化<buf ID=900122>[勇气迸发]</buf>效果：<buf ID=1013503>[气力]</buf>最大层数<color=#F74848>+5</color>；战斗开始时，获得<color=#F74848>5</color>层<buf ID=1013503>[气力]</buf>；主动攻击后，如果<buf ID=1013503>[气力]</buf>层数大于等于<color=#F74848>10</color>，战后回复<color=#F74848>1</color>AP，每回合最多发动<color=#F74848>1</color>次",
+                "BufCarried": "530631/530632/530633/530634/530635",
+                "SkillIcon": "Icon_skill_passive_1170",
+                "icon": "Icon_skill_passive_1170",
+                "Status": 1,
+                "weight": 1216
+              },
+              {
+                "ID": "53061",
+                "name": "粉碎打击",
+                "SpecificEffects": "攻击时，若命中部位耐久值不满，对该部位造成的伤害提升<color=#F74848>20%</color>",
+                "BufCarried": "530611/530612/530613/530614/530615",
+                "SkillIcon": "Icon_skill_passive_1157",
+                "icon": "Icon_skill_passive_1157",
+                "Status": 1,
+                "weight": 1214
+              }
+            ],
+            "IconResourcePath": "Icon_weapon_10600401",
+            "icon": "Icon_weapon_10600401",
+            "describe": "备受迪恩珍爱的折叠式电锯武器，可在剑型与斧型两种形态中切换。只要说出迪恩特别定制的语音口令「我说可以上了！」，就能进行变形。",
+            "Status": 1,
+            "weight": 720
+          }
+        ],
+        "now": "2026-07-01 10:47:19"
+      },
+      "status": 1,
+      "switch": null,
+      "info": 0
+    }
+  },
+  {
+    "ID": "20315122",
+    "name": "丛林之灾",
+    "quality": "SSSR",
+    "WeaponType1": "Assault",
+    "WeaponType2": "ShotGun",
+    "type": "ShotGun",
+    "icon": "Icon_weapon_20300302",
+    "detail": {
+      "data": {
+        "data": [
+          {
+            "ID": "20315122",
+            "name": "丛林之灾",
+            "quality": "SSSR",
+            "grade": "70",
+            "WeaponType1": "Assault",
+            "WeaponType2": "ShotGun",
+            "type": "ShotGun",
+            "LimitedModelOfWeapon": "Light/Medium/Heavy",
+            "RestrictionsPositionOfWeapon": "Hand",
+            "range": "1-2",
+            "WeaponWeight": "370",
+            "WeaponBasicAttackingPower": "1663",
+            "WeaponHitPoint": "3182",
+            "WeaponUnderstanding": "4603",
+            "PassiveSkill": [
+              {
+                "ID": "53056",
+                "name": "给我闪开！",
+                "SpecificEffects": "使用霰弹枪主动攻击对战时，若目标位于相邻<color=#F74848>1</color>格，伤害提升<color=#F74848>25%</color>",
+                "BufCarried": "530561",
+                "SkillIcon": "Icon_skill_passive_1106",
+                "icon": "Icon_skill_passive_1106",
+                "Status": 1,
+                "weight": 1209
+              },
+              {
+                "ID": "53057",
+                "name": "给你两下！",
+                "SpecificEffects": "强化<buf ID=900115>[秘密行刑]</buf>效果：对目标施加的<buf ID=1004412>[失稳Ⅱ]</buf>提升为<buf ID=530572>[失稳Ⅲ]</buf>，每层同时使目标造成伤害降低<color=#F74848>3%</color>；使用霰弹枪主动攻击对战时，若目标携带<color=#F74848>3</color>层及以上<buf ID=900034>[失稳]</buf>，则使用所有霰弹枪发动<buf ID=900001>[追击]</buf>，造成<color=#F74848>0.15</color>倍伤害",
+                "BufCarried": "530571/530573/530574/530576/530577",
+                "SkillIcon": "Icon_skill_passive_1167",
+                "icon": "Icon_skill_passive_1167",
+                "Status": 1,
+                "weight": 1210
+              },
+              {
+                "ID": "53055",
+                "name": "给我上！",
+                "SpecificEffects": "主动攻击对战时，无视目标<color=#F74848>30%</color>护甲",
+                "BufCarried": "530551",
+                "SkillIcon": "Icon_skill_passive_1126",
+                "icon": "Icon_skill_passive_1126",
+                "Status": 1,
+                "weight": 1208
+              }
+            ],
+            "IconResourcePath": "Icon_weapon_20300302",
+            "icon": "Icon_weapon_20300302",
+            "describe": "芙烈达还是「西北丛林之王」时使用过的武器。但令人奇怪的是，自从她放弃单干组建佣兵团之后，她的势力版图就一天不如一天了。",
+            "Status": 1,
+            "weight": 724
+          }
+        ],
+        "now": "2026-07-01 10:47:21"
+      },
+      "status": 1,
+      "switch": null,
+      "info": 0
+    }
+  },
+  {
+    "ID": "50115122",
+    "name": "草莓通心粉",
+    "quality": "SSSR",
+    "WeaponType1": "Heavy",
+    "WeaponType2": "RailGun",
+    "type": "RailGun",
+    "icon": "Icon_weapon_50100601",
+    "detail": {
+      "data": {
+        "data": [
+          {
+            "ID": "50115122",
+            "name": "草莓通心粉",
+            "quality": "SSSR",
+            "grade": "70",
+            "WeaponType1": "Heavy",
+            "WeaponType2": "RailGun",
+            "type": "RailGun",
+            "LimitedModelOfWeapon": "Medium",
+            "RestrictionsPositionOfWeapon": "Back",
+            "range": "1-5",
+            "WeaponWeight": "1100",
+            "WeaponBasicAttackingPower": "783",
+            "WeaponHitPoint": "4992",
+            "WeaponUnderstanding": "4603",
+            "NumberOfBullets": "3",
+            "InitiativeSkill": [
+              {
+                "ID": "5011",
+                "remarks": "电磁炮攻击",
+                "name": "电磁激荡",
+                "describe": "使用电磁炮攻击纵向<color=#F74848>5</color>格范围内的所有目标，造成<color=#F74848>1.0</color>倍范围伤害",
+                "type": "SpecialAssault",
+                "CD": "0",
+                "Ap": "3",
+                "matchingWeaponType": "电磁炮",
+                "SkillIcon": "Icon_skill_order_1005",
+                "icon": "Icon_skill_order_1005",
+                "Status": 1,
+                "weight": 667
+              }
+            ],
+            "PassiveSkill": [
+              {
+                "ID": "53068",
+                "name": "贯通脉冲",
+                "SpecificEffects": "使用电磁炮主动攻击时，对携带减益效果的目标伤害提升<color=#F74848>20%</color>",
+                "BufCarried": "530681",
+                "SkillIcon": "Icon_skill_passive_1146",
+                "icon": "Icon_skill_passive_1146",
+                "Status": 1,
+                "weight": 1221
+              },
+              {
+                "ID": "53069",
+                "name": "全面扫除",
+                "SpecificEffects": "强化<buf ID=900132>[完美主义]</buf>效果：部署<buf ID=900085>[强磁力线圈]</buf>时偏移方向将变为所选方向及相邻<color=#F74848>2</color>个方向，偏移后的攻击提升<color=#F74848>0.2</color>倍；\n主动攻击时，若目标携带<color=#F74848>5</color>个及以上减益效果，战后对目标施加<buf ID=1009083>[震慑]</buf>，持续<color=#F74848>1</color>回合；\n主动攻击时，每累计施加<color=#F74848>15</color>个减益效果，立即获得<color=#F74848>1</color>AP",
+                "BufCarried": "530699/530693/530692/530694/530695",
+                "SkillIcon": "Icon_skill_passive_5257",
+                "icon": "Icon_skill_passive_5257",
+                "Status": 1,
+                "weight": 1222
+              },
+              {
+                "ID": "53067",
+                "name": "弹药再生",
+                "SpecificEffects": "使用电磁炮主动攻击目标时，若打击的目标大于等于<color=#F74848>3</color>个，战后回复<color=#F74848>1</color>枚弹药，每<color=#F74848>2</color>回合最多发动<color=#F74848>1</color>次",
+                "BufCarried": "530671",
+                "SkillIcon": "Icon_skill_passive_5150",
+                "icon": "Icon_skill_passive_5150",
+                "Status": 1,
+                "weight": 1220
+              }
+            ],
+            "IconResourcePath": "Icon_weapon_50100601",
+            "icon": "Icon_weapon_50100601",
+            "describe": "「……我听说要去码头仓库取货的时候就预感到不妙了，但还是没料到你说的小零食竟然是电磁炮？虽、虽然我确实是很惊喜就是了，但下次送礼物的时候还是打听一下别人的想法比较好吧……还有，别把『小菲娅』这种称呼明目张胆地涂在集装箱上啊！」",
+            "Status": 1,
+            "weight": 734
+          }
+        ],
+        "now": "2026-07-01 10:47:24"
+      },
+      "status": 1,
+      "switch": null,
+      "info": 0
+    }
+  },
+  {
+    "ID": "10415123",
+    "name": "承诺之誓",
+    "quality": "SSSR",
+    "WeaponType1": "Melee",
+    "WeaponType2": "Shield",
+    "type": "Shield",
+    "icon": "Icon_weapon_10400601",
+    "detail": {
+      "data": {
+        "data": [
+          {
+            "ID": "10415123",
+            "name": "承诺之誓",
+            "quality": "SSSR",
+            "grade": "70",
+            "WeaponType1": "Melee",
+            "WeaponType2": "Shield",
+            "type": "Shield",
+            "LimitedModelOfWeapon": "Heavy",
+            "RestrictionsPositionOfWeapon": "Hand",
+            "range": "1",
+            "WeaponWeight": "390",
+            "WeaponBasicAttackingPower": "385",
+            "WeaponHitPoint": "3494",
+            "ShieldbloodBase": "4854",
+            "PassiveSkill": [
+              {
+                "ID": "53065",
+                "name": "再生臂铠",
+                "SpecificEffects": "对战后，若持盾手臂损毁，立即修复持盾手臂，并恢复<color=#F74848>50%</color>的耐久值，间隔<color=#F74848>3</color>回合后可再次发动",
+                "BufCarried": "530651",
+                "SkillIcon": "Icon_skill_passive_3124",
+                "icon": "Icon_skill_passive_3124",
+                "Status": 1,
+                "weight": 1218
+              },
+              {
+                "ID": "53066",
+                "name": "誓言",
+                "SpecificEffects": "强化<buf ID=900131>[第一适格者]</buf>的效果：<buf ID=900022>[援护防御]</buf>范围内友军遭受指令和范围攻击伤害降低<color=#F74848>25%</color>；<buf ID=1014820>[同步率]</buf>高于<color=#F74848>65%</color>时，造成伤害和<buf ID=900017>[固定伤害]</buf>提升<color=#F74848>25%</color>",
+                "BufCarried": "530662/530663/530664/530665",
+                "SkillIcon": "Icon_skill_passive_5256",
+                "icon": "Icon_skill_passive_5256",
+                "Status": 1,
+                "weight": 1219
+              },
+              {
+                "ID": "53064",
+                "name": "增幅合金",
+                "SpecificEffects": "盾牌提供的基础耐久值提升<color=#F74848>100%</color>",
+                "SkillIcon": "Icon_skill_passive_2118",
+                "icon": "Icon_skill_passive_2118",
+                "Status": 1,
+                "weight": 1217
+              }
+            ],
+            "IconResourcePath": "Icon_weapon_10400601",
+            "icon": "Icon_weapon_10400601",
+            "describe": "「我会保护你。」",
+            "Status": 1,
+            "weight": 735
+          }
+        ],
+        "now": "2026-07-01 10:47:26"
+      },
+      "status": 1,
+      "switch": null,
+      "info": 0
+    }
+  },
+  {
+    "ID": "10915121",
+    "name": "Δ-09",
+    "quality": "SSSR",
+    "WeaponType1": "Melee",
+    "WeaponType2": "Blade",
+    "type": "Blade",
+    "icon": "Icon_weapon_10700401",
+    "detail": {
+      "data": {
+        "data": [
+          {
+            "ID": "10915121",
+            "name": "Δ-09",
+            "quality": "SSSR",
+            "grade": "70",
+            "WeaponType1": "Melee",
+            "WeaponType2": "Blade",
+            "type": "Blade",
+            "LimitedModelOfWeapon": "Light/Medium/Heavy",
+            "RestrictionsPositionOfWeapon": "Hand",
+            "range": "1（可斜向）",
+            "WeaponWeight": "350",
+            "WeaponBasicAttackingPower": "646",
+            "WeaponHitPoint": "3369",
+            "WeaponUnderstanding": "4603",
+            "PassiveSkill": [
+              {
+                "ID": "53071",
+                "name": "威势",
+                "SpecificEffects": "触发<buf ID=900109>[处决]</buf>效果后，对目标及周围<color=#F74848>1</color>圈敌机施加<buf ID=7101203>[伤害降低Ⅱ]</buf>和<buf ID=7101803>[遭受伤害提升Ⅱ]</buf>，持续<color=#F74848>1</color>回合",
+                "BufCarried": "530711",
+                "SkillIcon": "Icon_skill_passive_5149",
+                "icon": "Icon_skill_passive_5149",
+                "Status": 1,
+                "weight": 1224
+              },
+              {
+                "ID": "53072",
+                "name": "∑-04Ω",
+                "SpecificEffects": "强化<buf ID=900134>[∑-04]</buf>效果：使用刀剑连续攻击同一目标时，对首次命中的部位命中权重提升<color=#F74848>50</color>，目标行动结束时移除此效果；\n行动开始时，仅移除<color=#F74848>1</color>层<buf ID=900100>[看破]</buf>；携带<color=#F74848>3</color>层<buf ID=900100>[看破]</buf>时，伤害提升<color=#F74848>15%</color>，遭受伤害降低<color=#F74848>15%</color>",
+                "BufCarried": "530721/530722/530727",
+                "SkillIcon": "Icon_skill_passive_5262",
+                "icon": "Icon_skill_passive_5262",
+                "Status": 1,
+                "weight": 1225
+              },
+              {
+                "ID": "53070",
+                "name": "再斩",
+                "SpecificEffects": "<buf ID=900004>[再攻击]</buf>时，伤害和命中率提升<color=#F74848>10%</color>",
+                "BufCarried": "530701",
+                "SkillIcon": "Icon_skill_passive_4127",
+                "icon": "Icon_skill_passive_4127",
+                "Status": 1,
+                "weight": 1223
+              }
+            ],
+            "IconResourcePath": "Icon_weapon_10700401",
+            "icon": "Icon_weapon_10700401",
+            "describe": "北陆联合第九研究所打造的试制动力剑，∑-04奥菲利亚消灭失控实验体Δ-09后缴获并使用至今的战利品……有传闻说她们曾是朋友，但奥菲利亚本人对此从未做出过任何回应。",
+            "Status": 1,
+            "weight": 736
+          }
+        ],
+        "now": "2026-07-01 10:47:28"
+      },
+      "status": 1,
+      "switch": null,
+      "info": 0
+    }
+  },
+  {
+    "ID": "20115122",
+    "name": "昏星继光",
+    "quality": "SSSR",
+    "WeaponType1": "Assault",
+    "WeaponType2": "MachineGun",
+    "type": "MachineGun",
+    "icon": "Icon_weapon_20100303",
+    "detail": {
+      "data": {
+        "data": [
+          {
+            "ID": "20115122",
+            "name": "昏星继光",
+            "quality": "SSSR",
+            "grade": "70",
+            "WeaponType1": "Assault",
+            "WeaponType2": "MachineGun",
+            "type": "MachineGun",
+            "LimitedModelOfWeapon": "Light/Medium/Heavy",
+            "RestrictionsPositionOfWeapon": "Hand",
+            "range": "1-3",
+            "WeaponWeight": "420",
+            "WeaponBasicAttackingPower": "1442",
+            "WeaponHitPoint": "3182",
+            "WeaponUnderstanding": "4603",
+            "PassiveSkill": [
+              {
+                "ID": "53074",
+                "name": "扞拒",
+                "SpecificEffects": "使用机枪发动反击后，使自身获得<buf ID=530742>[蓄势]</buf>",
+                "BufCarried": "530741",
+                "SkillIcon": "Icon_skill_passive_5136",
+                "icon": "Icon_skill_passive_5136",
+                "Status": 1,
+                "weight": 1227
+              },
+              {
+                "ID": "53075",
+                "name": "骤起",
+                "SpecificEffects": "强化<buf ID=900135>[伏锋]</buf>效果：自身有<buf ID=2015509>[强化反击]</buf>且双手完好时，可以发动<buf ID=900022>[援护防御]</buf>，替周围<color=#F74848>1</color>格的友军抵挡突击、射击与格斗武器的攻击，若自身同时有<buf ID=2015081>[逆袭时刻]</buf>，<buf ID=900022>[援护防御]</buf>范围提升为周围<color=#F74848>2</color>格；若装备两把机枪，发动<buf ID=900096>[反击]</buf>或<buf ID=900023>[反击先手]</buf>时，每携带<color=#F74848>1</color>层<buf ID=2015509>[强化反击]</buf>，有<color=#F74848>20%</color>概率同时使用所有机枪发动<buf ID=900028>[反击追击]</buf>，造成<color=#F74848>0.35</color>倍伤害",
+                "BufCarried": "530751/530752/530753/530754/530755/530756/530757/530758/530759",
+                "SkillIcon": "Icon_skill_passive_5263",
+                "icon": "Icon_skill_passive_5263",
+                "Status": 1,
+                "weight": 1228
+              },
+              {
+                "ID": "53073",
+                "name": "反击之火",
+                "SpecificEffects": "发动反击时，暴击率和命中率提升<color=#F74848>15%</color>",
+                "BufCarried": "530731",
+                "SkillIcon": "Icon_skill_passive_4119",
+                "icon": "Icon_skill_passive_4119",
+                "Status": 1,
+                "weight": 1226
+              }
+            ],
+            "IconResourcePath": "Icon_weapon_20100303",
+            "icon": "Icon_weapon_20100303",
+            "describe": "以夜魇为原型，根据卡夏的战斗风格完全改装的特制机枪。这是已逝同伴的礼物，也是维斯珀尔使命的象征——它的设计者已如流星般陨落，但昏星的光芒绝不会就此消逝。",
+            "Status": 1,
+            "weight": 737
+          }
+        ],
+        "now": "2026-07-01 10:47:30"
+      },
+      "status": 1,
+      "switch": null,
+      "info": 0
+    }
+  },
+  {
+    "ID": "10515123",
+    "name": "离歌棱镜",
+    "quality": "SSSR",
+    "WeaponType1": "Melee",
+    "WeaponType2": "Buckler",
+    "type": "Buckler",
+    "icon": "Icon_weapon_10500601",
+    "detail": {
+      "data": {
+        "data": [
+          {
+            "ID": "10515123",
+            "name": "离歌棱镜",
+            "quality": "SSSR",
+            "grade": "70",
+            "WeaponType1": "Melee",
+            "WeaponType2": "Buckler",
+            "type": "Buckler",
+            "LimitedModelOfWeapon": "Light/Medium/Heavy",
+            "RestrictionsPositionOfWeapon": "Hand",
+            "range": "1",
+            "WeaponWeight": "70",
+            "WeaponBasicAttackingPower": "287",
+            "WeaponHitPoint": "3057",
+            "ShieldbloodBase": "849",
+            "PassiveSkill": [
+              {
+                "ID": "53080",
+                "name": "熟能生巧",
+                "SpecificEffects": "累计发动<color=#F74848>3</color>次主动修理后，获得<color=#F74848>1</color>AP和<buf ID=500923>[整葺Ⅱ]</buf>，持续<color=#F74848>1</color>回合",
+                "BufCarried": "530801",
+                "SkillIcon": "Icon_skill_passive_5212",
+                "icon": "Icon_skill_passive_5212",
+                "Status": 1,
+                "weight": 1233
+              },
+              {
+                "ID": "53081",
+                "name": "金雀啼鸣",
+                "SpecificEffects": "强化<buf ID=900140>[自动模块]</buf>效果：<skill mainSkill=500406>[维修共感]</skill>和<skill mainSkill=500408>[全线整备]</skill>可驱散额外修理目标<color=#F74848>1</color>个减益效果；<buf ID=900038>[常效维护]</buf>每次触发时，驱散<color=#F74848>1</color>个减益效果",
+                "BufCarried": "530811",
+                "SkillIcon": "Icon_skill_passive_3134",
+                "icon": "Icon_skill_passive_3134",
+                "Status": 1,
+                "weight": 1234
+              },
+              {
+                "ID": "53079",
+                "name": "如数奉还",
+                "SpecificEffects": "持盾手受到攻击时，战后为敌机施加<buf ID=7101003>[命中率降低Ⅱ]</buf>和<buf ID=7101303>[暴击率降低Ⅱ]</buf>，持续<color=#F74848>1</color>回合",
+                "BufCarried": "530791",
+                "SkillIcon": "Icon_skill_passive_5131",
+                "icon": "Icon_skill_passive_5131",
+                "Status": 1,
+                "weight": 1232
+              }
+            ],
+            "IconResourcePath": "Icon_weapon_10500601",
+            "icon": "Icon_weapon_10500601",
+            "describe": "「梅利莎，直到最后我才明白，能够打开这个囚笼的人，只能是你自己……这是再好不过的结局了。」",
+            "Status": 1,
+            "weight": 738
+          }
+        ],
+        "now": "2026-07-01 10:47:31"
+      },
+      "status": 1,
+      "switch": null,
+      "info": 0
+    }
+  },
+  {
+    "ID": "20215122",
+    "name": "盖乌斯",
+    "quality": "SSSR",
+    "WeaponType1": "Assault",
+    "WeaponType2": "HeavyMachineGun",
+    "type": "HeavyMachineGun",
+    "icon": "Icon_weapon_20400401",
+    "detail": {
+      "data": {
+        "data": [
+          {
+            "ID": "20215122",
+            "name": "盖乌斯",
+            "quality": "SSSR",
+            "grade": "70",
+            "WeaponType1": "Assault",
+            "WeaponType2": "HeavyMachineGun",
+            "type": "HeavyMachineGun",
+            "LimitedModelOfWeapon": "Light/Medium/Heavy",
+            "RestrictionsPositionOfWeapon": "DoubleHand",
+            "range": "1-3",
+            "WeaponWeight": "1000",
+            "WeaponBasicAttackingPower": "1618",
+            "WeaponHitPoint": "1560",
+            "WeaponUnderstanding": "4603",
+            "PassiveSkill": [
+              {
+                "ID": "53077",
+                "name": "谐振机关",
+                "SpecificEffects": "使用重机枪主动攻击时，若击破敌机部位，战后获得<color=#F74848>1</color>个随机增益效果，持续<color=#F74848>2</color>回合，每回合最多发动<color=#F74848>3</color>次",
+                "BufCarried": "530771",
+                "SkillIcon": "Icon_skill_passive_5129",
+                "icon": "Icon_skill_passive_5129",
+                "Status": 1,
+                "weight": 1230
+              },
+              {
+                "ID": "53078",
+                "name": "希望福音",
+                "SpecificEffects": "强化<buf ID=900139>[第三适格者]</buf>效果：重机枪射程<color=#F74848>+1</color>，<buf ID=1014820>[同步率]</buf>修正效果增加<color=#F74848>25%</color>；每次发动<buf ID=900004>[再攻击]</buf>时，<buf ID=1014820>[同步率]</buf><color=#F74848>+3%</color>；主动攻击后，自身获得<buf ID=530786>[同调奇迹]</buf>，每回合最多生效<color=#F74848>1</color>次",
+                "BufCarried": "530781/530782/530783/530785",
+                "SkillIcon": "Icon_skill_passive_5267",
+                "icon": "Icon_skill_passive_5267",
+                "Status": 1,
+                "weight": 1231
+              },
+              {
+                "ID": "53076",
+                "name": "优势火力",
+                "SpecificEffects": "主动攻击时，伤害提升<color=#F74848>15%</color>，从距离<color=#F74848>1</color>格起，目标距离每增加<color=#F74848>1</color>格，伤害额外提升<color=#F74848>5%</color>，最多<color=#F74848>25%</color>",
+                "BufCarried": "530761/530762",
+                "SkillIcon": "Icon_skill_passive_1146",
+                "icon": "Icon_skill_passive_1146",
+                "Status": 1,
+                "weight": 1229
+              }
+            ],
+            "IconResourcePath": "Icon_weapon_20400401",
+            "icon": "Icon_weapon_20400401",
+            "describe": "突然出现在路德维希旧实验室的特制武装。其开发者与开发时间一概不明，技术也难以溯源，仅能根据残留的测试数据确定——它是为了某位少年而存在的。",
+            "Status": 1,
+            "weight": 739
+          }
+        ],
+        "now": "2026-07-01 10:47:33"
+      },
+      "status": 1,
+      "switch": null,
+      "info": 0
+    }
+  },
+  {
+    "ID": "10415124",
+    "name": "荣光之御",
+    "quality": "SSSR",
+    "WeaponType1": "Melee",
+    "WeaponType2": "Shield",
+    "type": "Shield",
+    "icon": "Icon_weapon_10400701",
+    "detail": {
+      "data": {
+        "data": [
+          {
+            "ID": "10415124",
+            "name": "荣光之御",
+            "quality": "SSSR",
+            "grade": "70",
+            "WeaponType1": "Melee",
+            "WeaponType2": "Shield",
+            "type": "Shield",
+            "LimitedModelOfWeapon": "Heavy",
+            "RestrictionsPositionOfWeapon": "Hand",
+            "range": "1",
+            "WeaponWeight": "390",
+            "WeaponBasicAttackingPower": "385",
+            "WeaponHitPoint": "3494",
+            "ShieldbloodBase": "2427",
+            "PassiveSkill": [
+              {
+                "ID": "53083",
+                "name": "阵地掌握",
+                "SpecificEffects": "遭受主动攻击前若位于我方地形，立即回复<color=#F74848>1</color>AP，每回合最多发动<color=#F74848>1</color>次",
+                "BufCarried": "530831",
+                "SkillIcon": "Icon_skill_passive_5189",
+                "icon": "Icon_skill_passive_5189",
+                "Status": 1,
+                "weight": 1236
+              },
+              {
+                "ID": "53084",
+                "name": "百战统帅",
+                "SpecificEffects": "强化<buf ID=900143>[迟暮未至]</buf>效果：<terrian ID=6008501 />范围提升为指定地点的地格及其周围<color=#F74848>2</color>圈，自身在<terrian ID=6008501 />内移动时，移动力消耗降低<color=#F74848>50%</color>；<terrian ID=6008501 />内的所有友方单位伤害提升<color=#F74848>20%</color>，且遭受主动攻击时，所有部位无法遭受超出自身最大耐久值上限<color=#F74848>85%</color>的伤害",
+                "BufCarried": "530841/530842/530843/530845",
+                "SkillIcon": "Icon_skill_passive_5270",
+                "icon": "Icon_skill_passive_5270",
+                "Status": 1,
+                "weight": 1237
+              },
+              {
+                "ID": "53082",
+                "name": "万全守备",
+                "SpecificEffects": "持盾手臂遭受伤害时，遭受伤害降低<color=#F74848>10%</color>，遭受暴击伤害降低<color=#F74848>20%</color>",
+                "BufCarried": "530821",
+                "SkillIcon": "Icon_skill_passive_2111",
+                "icon": "Icon_skill_passive_2111",
+                "Status": 1,
+                "weight": 1235
+              }
+            ],
+            "IconResourcePath": "Icon_weapon_10400701",
+            "icon": "Icon_weapon_10400701",
+            "describe": "帮提费斯抵御了无数攻击，见证他成为同盟英雄的特制盾牌。早应在荣光中退去的它如今依然活跃在战场，守护着同伴……正如它的主人一样。",
+            "Status": 1,
+            "weight": 740
+          }
+        ],
+        "now": "2026-07-01 10:47:35"
+      },
+      "status": 1,
+      "switch": null,
+      "info": 0
+    }
+  },
+  {
+    "ID": "40115122",
+    "name": "逆火流星",
+    "quality": "SSSR",
+    "WeaponType1": "Heavy",
+    "WeaponType2": "Missile",
+    "type": "Missile",
+    "icon": "Icon_weapon_40100502",
+    "detail": {
+      "data": {
+        "data": [
+          {
+            "ID": "40115122",
+            "name": "逆火流星",
+            "quality": "SSSR",
+            "grade": "70",
+            "WeaponType1": "Heavy",
+            "WeaponType2": "Missile",
+            "type": "Missile",
+            "LimitedModelOfWeapon": "Medium",
+            "RestrictionsPositionOfWeapon": "Shoulder",
+            "range": "3-6",
+            "WeaponWeight": "950",
+            "WeaponBasicAttackingPower": "500",
+            "WeaponHitPoint": "3619",
+            "WeaponUnderstanding": "4603",
+            "NumberOfBullets": "2",
+            "InitiativeSkill": [
+              {
+                "ID": "4011",
+                "remarks": "导弹攻击",
+                "name": "定点打击",
+                "describe": "使用导弹攻击单个目标，对命中部位造成<color=#F74848>1.0</color>倍伤害，对其他部位造成主体伤害<color=#F74848>50%</color>的溅射伤害",
+                "type": "SpecialAssault",
+                "CD": "0",
+                "Ap": "2",
+                "matchingWeaponType": "导弹",
+                "SkillIcon": "Icon_skill_order_1001",
+                "icon": "Icon_skill_order_1001",
+                "Status": 1,
+                "weight": 664
+              }
+            ],
+            "PassiveSkill": [
+              {
+                "ID": "53086",
+                "name": "超距效应",
+                "SpecificEffects": "使用导弹攻击时，若与目标距离大于等于<color=#F74848>4</color>格，伤害提升<color=#F74848>30%</color>",
+                "BufCarried": "530861",
+                "SkillIcon": "Icon_skill_passive_5237",
+                "icon": "Icon_skill_passive_5237",
+                "Status": 1,
+                "weight": 1239
+              },
+              {
+                "ID": "53087",
+                "name": "躁动意气",
+                "SpecificEffects": "强化<buf ID=900144>[炽心]</buf>效果：出战时，获得<color=#F74848>5</color>层<buf ID=530872>[灼意]</buf>，天赋发动<buf ID=900002>[协力攻击]</buf>后，或主动攻击后每消耗<color=#F74848>1</color>发弹药，自身获得<color=#F74848>1</color>层<buf ID=530872>[灼意]</buf>，可叠加<color=#F74848>15</color>层，拥有<color=#F74848>10</color>层及以上时，AP回复+<color=#F74848>1</color>；\n<buf ID=4008509>[锁定]</buf>使目标遭受亚瑟主动攻击和所有<buf ID=900002>[协力攻击]</buf>的伤害倍率+<color=#F74848>0.1</color>",
+                "BufCarried": "530871/530873/530874/530875/530876/530878",
+                "SkillIcon": "Icon_skill_passive_5271",
+                "icon": "Icon_skill_passive_5271",
+                "Status": 1,
+                "weight": 1240
+              },
+              {
+                "ID": "53085",
+                "name": "预备弹舱",
+                "SpecificEffects": "使用导弹发起主动攻击后，向携带的导弹随机装填弹药，装填数等同于该次攻击的消耗数量，间隔<color=#F74848>1</color>回合才可再次发动",
+                "BufCarried": "530851",
+                "SkillIcon": "Icon_skill_passive_5223",
+                "icon": "Icon_skill_passive_5223",
+                "Status": 1,
+                "weight": 1238
+              }
+            ],
+            "IconResourcePath": "Icon_weapon_40100502",
+            "icon": "Icon_weapon_40100502",
+            "describe": "经历无数次失败后终于完成的改制导弹，卸除了安全限制装置又追加了弹舱。它的制造者坚信，只要划破空气的导弹依然炽烈，维斯珀尔的光芒就永远不会消散。",
+            "Status": 1,
+            "weight": 741
+          }
+        ],
+        "now": "2026-07-01 10:47:37"
+      },
+      "status": 1,
+      "switch": null,
+      "info": 0
+    }
+  },
+  {
+    "ID": "50116122",
+    "name": "糖衣毁灭者",
+    "quality": "SSSR",
+    "WeaponType1": "Heavy",
+    "WeaponType2": "RailGun",
+    "type": "RailGun",
+    "icon": "Icon_weapon_50100601",
+    "detail": {
+      "data": {
+        "data": [
+          {
+            "ID": "50116122",
+            "name": "糖衣毁灭者",
+            "quality": "SSSR",
+            "grade": "70",
+            "WeaponType1": "Heavy",
+            "WeaponType2": "RailGun",
+            "type": "RailGun",
+            "LimitedModelOfWeapon": "Medium",
+            "RestrictionsPositionOfWeapon": "Back",
+            "range": "1-5",
+            "WeaponWeight": "1100",
+            "WeaponBasicAttackingPower": "783",
+            "WeaponHitPoint": "4992",
+            "WeaponUnderstanding": "4603",
+            "NumberOfBullets": "3",
+            "InitiativeSkill": [
+              {
+                "ID": "5011",
+                "remarks": "电磁炮攻击",
+                "name": "电磁激荡",
+                "describe": "使用电磁炮攻击纵向<color=#F74848>5</color>格范围内的所有目标，造成<color=#F74848>1.0</color>倍范围伤害",
+                "type": "SpecialAssault",
+                "CD": "0",
+                "Ap": "3",
+                "matchingWeaponType": "电磁炮",
+                "SkillIcon": "Icon_skill_order_1005",
+                "icon": "Icon_skill_order_1005",
+                "Status": 1,
+                "weight": 667
+              }
+            ],
+            "PassiveSkill": [
+              {
+                "ID": "53068",
+                "name": "贯通脉冲",
+                "SpecificEffects": "使用电磁炮主动攻击时，对携带减益效果的目标伤害提升<color=#F74848>20%</color>",
+                "BufCarried": "530681",
+                "SkillIcon": "Icon_skill_passive_1146",
+                "icon": "Icon_skill_passive_1146",
+                "Status": 1,
+                "weight": 1221
+              },
+              {
+                "ID": "61254",
+                "name": "首攻强化Ⅲ",
+                "SpecificEffects": "每回合第<color=#F74848>1</color>次主动攻击时，伤害提升<color=#F74848>7.5%</color>，暴击率提升<color=#F74848>5%</color>；\n机兵躯干耐久值提升<color=#F74848>10%</color>，造成伤害提升<color=#F74848>5%</color>",
+                "BufCarried": "600433",
+                "SkillIcon": "Icon_skill_passive_5119",
+                "icon": "Icon_skill_passive_5119",
+                "Status": 1,
+                "weight": 1556
+              },
+              {
+                "ID": "53069",
+                "name": "全面扫除",
+                "SpecificEffects": "强化<buf ID=900132>[完美主义]</buf>效果：部署<buf ID=900085>[强磁力线圈]</buf>时偏移方向将变为所选方向及相邻<color=#F74848>2</color>个方向，偏移后的攻击提升<color=#F74848>0.2</color>倍；\n主动攻击时，若目标携带<color=#F74848>5</color>个及以上减益效果，战后对目标施加<buf ID=1009083>[震慑]</buf>，持续<color=#F74848>1</color>回合；\n主动攻击时，每累计施加<color=#F74848>15</color>个减益效果，立即获得<color=#F74848>1</color>AP",
+                "BufCarried": "530699/530693/530692/530694/530695",
+                "SkillIcon": "Icon_skill_passive_5257",
+                "icon": "Icon_skill_passive_5257",
+                "Status": 1,
+                "weight": 1222
+              },
+              {
+                "ID": "53067",
+                "name": "弹药再生",
+                "SpecificEffects": "使用电磁炮主动攻击目标时，若打击的目标大于等于<color=#F74848>3</color>个，战后回复<color=#F74848>1</color>枚弹药，每<color=#F74848>2</color>回合最多发动<color=#F74848>1</color>次",
+                "BufCarried": "530671",
+                "SkillIcon": "Icon_skill_passive_5150",
+                "icon": "Icon_skill_passive_5150",
+                "Status": 1,
+                "weight": 1220
+              }
+            ],
+            "IconResourcePath": "Icon_weapon_50100601",
+            "icon": "Icon_weapon_50100601",
+            "describe": "将通用强化背包与机载电磁炮完美整合的全新试验武装，为背包与炮座的空间与能源之争提供了新的解法，其优秀的远程火力投送能力或许将改写未来的战场逻辑。",
+            "Status": 1,
+            "weight": 742
+          }
+        ],
+        "now": "2026-07-01 10:47:38"
+      },
+      "status": 1,
+      "switch": null,
+      "info": 0
+    }
+  },
+  {
+    "ID": "10315123",
+    "name": "弑神者",
+    "quality": "SSSR",
+    "WeaponType1": "Melee",
+    "WeaponType2": "Rod",
+    "type": "Rod",
+    "icon": "Icon_weapon_10300501",
+    "detail": {
+      "data": {
+        "data": [
+          {
+            "ID": "10315123",
+            "name": "弑神者",
+            "quality": "SSSR",
+            "grade": "70",
+            "WeaponType1": "Melee",
+            "WeaponType2": "Rod",
+            "type": "Rod",
+            "LimitedModelOfWeapon": "Light/Medium/Heavy",
+            "RestrictionsPositionOfWeapon": "DoubleHand",
+            "range": "1（可斜向）",
+            "WeaponWeight": "800",
+            "WeaponBasicAttackingPower": "738",
+            "WeaponHitPoint": "1466",
+            "WeaponUnderstanding": "4603",
+            "PassiveSkill": [
+              {
+                "ID": "53089",
+                "name": "连星",
+                "SpecificEffects": "使用长柄攻击时，攻击范围内每存在<color=#F74848>1</color>个目标，伤害提升<color=#F74848>7.5%</color>，最多提升<color=#F74848>30%</color>",
+                "BufCarried": "530891",
+                "SkillIcon": "Icon_skill_passive_1132",
+                "icon": "Icon_skill_passive_1132",
+                "Status": 1,
+                "weight": 1242
+              },
+              {
+                "ID": "53090",
+                "name": "明日意志",
+                "SpecificEffects": "强化<buf ID=900146>[第二适格者]</buf>效果：主动攻击后，若没有受到伤害，下一次主动攻击伤害提升效果提升至<color=#F74848>30%</color>，并且出击时即可获得；主动攻击时，每击毁<color=#F74848>1</color>名目标，<buf ID=1014820>[同步率]</buf>额外提升<color=#F74848>1%</color>；同步率到达<color=#F74848>80%</color>后，长柄技能倍率<color=#F74848>+0.1</color>且指令技能范围<color=#F74848>+1</color>，机枪技能倍率<color=#F74848>+0.05</color>",
+                "BufCarried": "530901/530902/530905/530908/530907/530909",
+                "SkillIcon": "Icon_skill_passive_5280",
+                "icon": "Icon_skill_passive_5280",
+                "Status": 1,
+                "weight": 1243
+              },
+              {
+                "ID": "53088",
+                "name": "掠影",
+                "SpecificEffects": "攻击未命中时也能造成原本<color=#F74848>40%</color>的伤害",
+                "BufCarried": "530881",
+                "SkillIcon": "Icon_skill_passive_5114",
+                "icon": "Icon_skill_passive_5114",
+                "Status": 1,
+                "weight": 1241
+              }
+            ],
+            "IconResourcePath": "Icon_weapon_10300501",
+            "icon": "Icon_weapon_10300501",
+            "describe": "完全由高浓度岚原质打造的巨刃长枪，具备洞穿一切防御的力量。它本是计划中用来对抗利维坦的绝对兵器，但因设计者失踪而未能及时完成，如今不知为何以完成形态出现在路德维希旧实验室。",
+            "Status": 1,
+            "weight": 743
+          }
+        ],
+        "now": "2026-07-01 10:47:41"
+      },
+      "status": 1,
+      "switch": null,
+      "info": 0
+    }
+  },
+  {
+    "ID": "20415122",
+    "name": "幻霞",
+    "quality": "SSSR",
+    "WeaponType1": "Assault",
+    "WeaponType2": "Flamethrower",
+    "type": "Flamethrower",
+    "icon": "Icon_weapon_20500402",
+    "detail": {
+      "data": {
+        "data": [
+          {
+            "ID": "20415122",
+            "name": "幻霞",
+            "quality": "SSSR",
+            "grade": "70",
+            "WeaponType1": "Assault",
+            "WeaponType2": "Flamethrower",
+            "type": "Flamethrower",
+            "LimitedModelOfWeapon": "Light/Medium/Heavy",
+            "RestrictionsPositionOfWeapon": "Hand",
+            "range": "2（可斜向）",
+            "WeaponWeight": "400",
+            "WeaponBasicAttackingPower": "1402",
+            "WeaponHitPoint": "3869",
+            "WeaponUnderstanding": "4603",
+            "PassiveSkill": [
+              {
+                "ID": "53092",
+                "name": "绯焰回路",
+                "SpecificEffects": "使用喷火器主动攻击时，自身每携带<color=#F74848>1</color>个增益效果，伤害提升<color=#F74848>7.5%</color>，最多<color=#F74848>30%</color>",
+                "BufCarried": "530921",
+                "SkillIcon": "Icon_skill_passive_1134",
+                "icon": "Icon_skill_passive_1134",
+                "Status": 1,
+                "weight": 1245
+              },
+              {
+                "ID": "53093",
+                "name": "ND增幅器",
+                "SpecificEffects": "强化<buf ID=900147>[伽蓝频伽]</buf>效果：出击时，获得<color=#F74848>2</color>层<buf ID=2016503>[双枪节能]</buf>；使用两把突击武器与位于<buf ID=900011>[最佳射程]</buf>的目标对战时，最终伤害提升<color=#F74848>15%</color>；主动攻击后，若自身携带增益效果数量大于等于<color=#F74848>5</color>个，立即回复<color=#F74848>1</color>AP，每回合最多发动<color=#F74848>1</color>次",
+                "BufCarried": "530931/530932/530933/530934",
+                "SkillIcon": "Icon_skill_passive_5281",
+                "icon": "Icon_skill_passive_5281",
+                "Status": 1,
+                "weight": 1246
+              },
+              {
+                "ID": "53091",
+                "name": "校准单元",
+                "SpecificEffects": "与位于<buf ID=900011>[最佳射程]</buf>的目标对战时，暴击率和命中率提升<color=#F74848>15%</color>",
+                "BufCarried": "530911",
+                "SkillIcon": "Icon_skill_passive_4107",
+                "icon": "Icon_skill_passive_4107",
+                "Status": 1,
+                "weight": 1244
+              }
+            ],
+            "IconResourcePath": "Icon_weapon_20500402",
+            "icon": "Icon_weapon_20500402",
+            "describe": "「一份微不足道的礼物，送给通过考验之人……呵，我们迟早还会再见的。」",
+            "Status": 1,
+            "weight": 744
+          }
+        ],
+        "now": "2026-07-01 10:47:43"
+      },
+      "status": 1,
+      "switch": null,
+      "info": 0
+    }
+  },
+  {
+    "ID": "10515124",
+    "name": "玲珑",
+    "quality": "SSSR",
+    "WeaponType1": "Melee",
+    "WeaponType2": "Buckler",
+    "type": "Buckler",
+    "icon": "Icon_weapon_10500701",
+    "detail": {
+      "data": {
+        "data": [
+          {
+            "ID": "10515124",
+            "name": "玲珑",
+            "quality": "SSSR",
+            "grade": "70",
+            "WeaponType1": "Melee",
+            "WeaponType2": "Buckler",
+            "type": "Buckler",
+            "LimitedModelOfWeapon": "Light/Medium/Heavy",
+            "RestrictionsPositionOfWeapon": "Hand",
+            "range": "1",
+            "WeaponWeight": "70",
+            "WeaponBasicAttackingPower": "287",
+            "WeaponHitPoint": "3057",
+            "ShieldbloodBase": "849",
+            "PassiveSkill": [
+              {
+                "ID": "53095",
+                "name": "进可攻",
+                "SpecificEffects": "若装备者为[机械师]，<buf ID=900002>[协力攻击]</buf>可发动次数和射程<color=#F74848>+1</color>",
+                "BufCarried": "530951/530952/530953",
+                "SkillIcon": "Icon_skill_passive_1145",
+                "icon": "Icon_skill_passive_1145",
+                "Status": 1,
+                "weight": 1248
+              },
+              {
+                "ID": "53096",
+                "name": "有还无",
+                "SpecificEffects": "强化<buf ID=900151>[假作真]</buf>效果：主动修理友方单位时，为其施加<buf ID=530962>[指令减伤]</buf>，生效<color=#F74848>1</color>次后移除；\n发动<buf ID=900002>[协力攻击]</buf>时，自身获得<color=#F74848>1</color>层<buf ID=530965>[事不宜迟]</buf>，可叠加<color=#F74848>3</color>层；\n<buf ID=900151>[假作真]</buf>处于可发动状态时，友方机兵躯干免疫<buf ID=900109>[处决]</buf>效果",
+                "BufCarried": "530961/530964/530969",
+                "SkillIcon": "Icon_skill_passive_5283",
+                "icon": "Icon_skill_passive_5283",
+                "Status": 1,
+                "weight": 1249
+              },
+              {
+                "ID": "53094",
+                "name": "趁虚",
+                "SpecificEffects": "持盾手臂在对战中遭受攻击时，敌机每有<color=#F74848>1</color>个减益效果，自身遭受伤害降低<color=#F74848>10%</color>，最多<color=#F74848>30%</color>",
+                "BufCarried": "530941/530942/530943",
+                "SkillIcon": "Icon_skill_passive_2111",
+                "icon": "Icon_skill_passive_2111",
+                "Status": 1,
+                "weight": 1247
+              }
+            ],
+            "IconResourcePath": "Icon_weapon_10500701",
+            "icon": "Icon_weapon_10500701",
+            "describe": "联合安全总署特别改制的机兵手盾。不同于常规加固升级，该型手盾增设了传感器与微型演算模组，强调协助机兵采取优势策略以实现更立体的攻防。攻即守，守为攻，玲珑百变，无处捉摸——正如其使用者，高级探员安德森的行事风格。",
+            "Status": 1,
+            "weight": 745
+          }
+        ],
+        "now": "2026-07-01 10:47:45"
+      },
+      "status": 1,
+      "switch": null,
+      "info": 0
+    }
+  },
+  {
+    "ID": "30215123",
+    "name": "焰火手术刀",
+    "quality": "SSSR",
+    "WeaponType1": "Sniper",
+    "WeaponType2": "HeavySniper",
+    "type": "HeavySniper",
+    "icon": "Icon_weapon_30200303",
+    "detail": {
+      "data": {
+        "data": [
+          {
+            "ID": "30215123",
+            "name": "焰火手术刀",
+            "quality": "SSSR",
+            "grade": "70",
+            "WeaponType1": "Sniper",
+            "WeaponType2": "HeavySniper",
+            "type": "HeavySniper",
+            "LimitedModelOfWeapon": "Light/Medium/Heavy",
+            "RestrictionsPositionOfWeapon": "DoubleHand",
+            "range": "2-4",
+            "WeaponWeight": "1000",
+            "WeaponBasicAttackingPower": "646",
+            "WeaponHitPoint": "1560",
+            "WeaponUnderstanding": "4603",
+            "PassiveSkill": [
+              {
+                "ID": "53098",
+                "name": "灵光一现",
+                "SpecificEffects": "使用狙击步枪主动攻击时，若触发了暴击，战后回复<color=#F74848>1</color>AP，每回合最多触发<color=#F74848>1</color>次",
+                "BufCarried": "530981",
+                "SkillIcon": "Icon_skill_passive_5186",
+                "icon": "Icon_skill_passive_5186",
+                "Status": 1,
+                "weight": 1251
+              },
+              {
+                "ID": "53099",
+                "name": "理论迭代",
+                "SpecificEffects": "强化<buf ID=900152>[实验观察]</buf>效果：<buf ID=900112>[阵地优势]</buf>最大层数提升<color=#F74848>4</color>层，<buf ID=900111>[定向架起]</buf>状态下使用狙击步枪攻击时，每暴击<color=#F74848>1</color>次额外获得<color=#F74848>1</color>层<buf ID=900112>[阵地优势]</buf>；每<color=#F74848>4</color>层<buf ID=900112>[阵地优势]</buf>使狙击步枪攻击倍率<color=#F74848>+0.05</color>；退出<buf ID=900111>[定向架起]</buf>时，仅移除<color=#F74848>8</color>层<buf ID=900112>[阵地优势]</buf>",
+                "BufCarried": "530991/530992/530993/530982/530983/530984/530985/530986/530987/530988/530989",
+                "SkillIcon": "Icon_skill_passive_5284",
+                "icon": "Icon_skill_passive_5284",
+                "Status": 1,
+                "weight": 1252
+              },
+              {
+                "ID": "53097",
+                "name": "生人勿近！",
+                "SpecificEffects": "主动攻击时，若距离目标<color=#F74848>3</color>格及以上，命中率和暴击率提升<color=#F74848>15%</color>",
+                "BufCarried": "530971",
+                "SkillIcon": "Icon_skill_passive_4118",
+                "icon": "Icon_skill_passive_4118",
+                "Status": 1,
+                "weight": 1250
+              }
+            ],
+            "IconResourcePath": "Icon_weapon_30200303",
+            "icon": "Icon_weapon_30200303",
+            "describe": "认为现役武器实在缺乏个性，帕洛玛缠着萨普里娅一同设计了这一新型狙击步枪。其各项参数完全以帕洛玛个人的作战风格为基准，陪她经历了多场重要战斗，曾一度令她爱不释手……不过现在，向来对新鲜事物三分钟热度的帕洛玛似乎又产生了进一步改修的念头。",
+            "Status": 1,
+            "weight": 746
+          }
+        ],
+        "now": "2026-07-01 10:47:46"
+      },
+      "status": 1,
+      "switch": null,
+      "info": 0
+    }
+  },
+  {
+    "ID": "20115123",
+    "name": "和平函数",
+    "quality": "SSSR",
+    "WeaponType1": "Assault",
+    "WeaponType2": "MachineGun",
+    "type": "MachineGun",
+    "icon": "Icon_weapon_20100601",
+    "detail": {
+      "data": {
+        "data": [
+          {
+            "ID": "20115123",
+            "name": "和平函数",
+            "quality": "SSSR",
+            "grade": "70",
+            "WeaponType1": "Assault",
+            "WeaponType2": "MachineGun",
+            "type": "MachineGun",
+            "LimitedModelOfWeapon": "Light/Medium/Heavy",
+            "RestrictionsPositionOfWeapon": "Hand",
+            "range": "1-3",
+            "WeaponWeight": "420",
+            "WeaponBasicAttackingPower": "1442",
+            "WeaponHitPoint": "3182",
+            "WeaponUnderstanding": "4603",
+            "PassiveSkill": [
+              {
+                "ID": "53104",
+                "name": "态势优化",
+                "SpecificEffects": "对战时，若装备了机枪和盾牌，机枪最终伤害提升<color=#F74848>10%</color>，遭受最终伤害降低<color=#F74848>15%</color>",
+                "BufCarried": "531041",
+                "SkillIcon": "Icon_skill_passive_1177",
+                "icon": "Icon_skill_passive_1177",
+                "Status": 1,
+                "weight": 1257
+              },
+              {
+                "ID": "53105",
+                "name": "绝佳拍档",
+                "SpecificEffects": "强化<buf ID=900159>[共存理论]</buf>效果：[咕咕]所有部位最大耐久值提升<color=#F74848>15%</color>并获得指令<skill mainSkill=500894>[咕胆英雄！]</skill>；[咕咕]也获得此武器的<skill passiveSkill=53103>[故障植入]</skill>和<skill passiveSkill=53104>[态势优化]</skill>效果",
+                "BufCarried": "531051",
+                "SkillIcon": "Icon_skill_passive_5295",
+                "icon": "Icon_skill_passive_5295",
+                "Status": 1,
+                "weight": 1258
+              },
+              {
+                "ID": "53103",
+                "name": "故障植入",
+                "SpecificEffects": "使用机枪攻击时，对目标施加<color=#F74848>1</color>层<buf ID=531032>[火控延迟]</buf>，可叠加<color=#F74848>5</color>层",
+                "BufCarried": "531031",
+                "SkillIcon": "Icon_skill_passive_5198",
+                "icon": "Icon_skill_passive_5198",
+                "Status": 1,
+                "weight": 1256
+              }
+            ],
+            "IconResourcePath": "Icon_weapon_20100601",
+            "icon": "Icon_weapon_20100601",
+            "describe": "为了庆祝萨普里娅康复，帕洛玛向地平线公司定制的特型机枪。其各项参数完全以萨普里娅个人的作战风格为基准，植入了传感元件与微型演算单元，也有效提升了与咕咕的连携作战能力。据说帕洛玛为它准备了16个独特而复杂的名字，但最终都没有被采纳。",
+            "Status": 1,
+            "weight": 749
+          }
+        ],
+        "now": "2026-07-01 10:47:49"
+      },
+      "status": 1,
+      "switch": null,
+      "info": 0
+    }
+  },
+  {
+    "ID": "40215122",
+    "name": "否决",
+    "quality": "SSSR",
+    "WeaponType1": "Heavy",
+    "WeaponType2": "Rocket",
+    "type": "Rocket",
+    "icon": "Icon_weapon_40200402",
+    "detail": {
+      "data": {
+        "data": [
+          {
+            "ID": "40215122",
+            "name": "否决",
+            "quality": "SSSR",
+            "grade": "70",
+            "WeaponType1": "Heavy",
+            "WeaponType2": "Rocket",
+            "type": "Rocket",
+            "LimitedModelOfWeapon": "Medium",
+            "RestrictionsPositionOfWeapon": "Shoulder",
+            "range": "3-6",
+            "WeaponWeight": "1200",
+            "WeaponBasicAttackingPower": "946",
+            "WeaponHitPoint": "2808",
+            "WeaponUnderstanding": "4603",
+            "NumberOfBullets": "1",
+            "InitiativeSkill": [
+              {
+                "ID": "4021",
+                "remarks": "火箭攻击",
+                "name": "战略轰炸",
+                "describe": "使用火箭攻击所选<color=#F74848>3×3</color>格范围内的所有目标，对每个部位造成<color=#F74848>0.25</color>倍范围伤害",
+                "type": "SpecialAssault",
+                "CD": "0",
+                "Ap": "3",
+                "matchingWeaponType": "火箭",
+                "SkillIcon": "Icon_skill_order_1003",
+                "icon": "Icon_skill_order_1003",
+                "Status": 1,
+                "weight": 665
+              }
+            ],
+            "PassiveSkill": [
+              {
+                "ID": "53101",
+                "name": "歼灭共识",
+                "SpecificEffects": "双肩均装配火箭时，使用火箭发起的主动攻击伤害和命中率提升<color=#F74848>20%</color>",
+                "BufCarried": "531011",
+                "SkillIcon": "Icon_skill_passive_1128",
+                "icon": "Icon_skill_passive_1128",
+                "Status": 1,
+                "weight": 1254
+              },
+              {
+                "ID": "53102",
+                "name": "定局者",
+                "SpecificEffects": "强化<buf ID=900158>[掌舵人]</buf>效果：<buf ID=900123>[情报]</buf>初始和最大层数<color=#F74848>+5</color>；使用火箭主动攻击时，若攻击前<buf ID=900123>[情报]</buf>层数大于等于<color=#F74848>15</color>，攻击后回复<color=#F74848>1</color>AP，每回合最多发动<color=#F74848>1</color>次；每层<buf ID=900123>[情报]</buf>使自身暴击率提升<color=#F74848>0.4%</color>",
+                "BufCarried": "531021/531022/531023/531024/531025/531028/531015/531016",
+                "SkillIcon": "Icon_skill_passive_5294",
+                "icon": "Icon_skill_passive_5294",
+                "Status": 1,
+                "weight": 1255
+              },
+              {
+                "ID": "53100",
+                "name": "毁锐冲坚",
+                "SpecificEffects": "使用火箭主动攻击时，对耐久值<color=#F74848>100%</color>的部位伤害提升<color=#F74848>20%</color>",
+                "BufCarried": "531001",
+                "SkillIcon": "Icon_skill_passive_1114",
+                "icon": "Icon_skill_passive_1114",
+                "Status": 1,
+                "weight": 1253
+              }
+            ],
+            "IconResourcePath": "Icon_weapon_40200402",
+            "icon": "Icon_weapon_40200402",
+            "describe": "为了应对越发混乱的米赫玛局势，联合安全总署为罗斯玛丽特制的新型火箭弹。在增加装药量的同时采用了最新的同步火控模块，拥有极为惊人的广域打击能力。如果这件武器出现在战场上，就代表那位运筹于幕后的「夫人」已决定摧毁棋局。",
+            "Status": 1,
+            "weight": 750
+          }
+        ],
+        "now": "2026-07-01 10:47:52"
+      },
+      "status": 1,
+      "switch": null,
+      "info": 0
+    }
+  },
+  {
+    "ID": "30115122",
+    "name": "魔弹射手",
+    "quality": "SSSR",
+    "WeaponType1": "Sniper",
+    "WeaponType2": "LightSniper",
+    "type": "LightSniper",
+    "icon": "Icon_weapon_30100403",
+    "detail": {
+      "data": {
+        "data": [
+          {
+            "ID": "30115122",
+            "name": "魔弹射手",
+            "quality": "SSSR",
+            "grade": "70",
+            "WeaponType1": "Sniper",
+            "WeaponType2": "LightSniper",
+            "type": "LightSniper",
+            "LimitedModelOfWeapon": "Light/Medium/Heavy",
+            "RestrictionsPositionOfWeapon": "Hand",
+            "range": "2-4",
+            "WeaponWeight": "600",
+            "WeaponBasicAttackingPower": "544",
+            "WeaponHitPoint": "3057",
+            "WeaponUnderstanding": "4603",
+            "PassiveSkill": [
+              {
+                "ID": "53107",
+                "name": "静默仲裁",
+                "SpecificEffects": "使用轻型步枪发动可以<buf ID=900014>[瞄准]</buf>的主动攻击后，自身回复<color=#F74848>1</color>AP，每回合最多触发<color=#F74848>1</color>次",
+                "BufCarried": "531071",
+                "SkillIcon": "Icon_skill_passive_5133",
+                "icon": "Icon_skill_passive_5133",
+                "Status": 1,
+                "weight": 1260
+              },
+              {
+                "ID": "53108",
+                "name": "创伤崩解",
+                "SpecificEffects": "强化<buf ID=900161></buf>效果：可以<buf ID=900014>[瞄准]</buf>的主动攻击技能倍率提升<color=#F74848>0.25</color>，暴击率提升<color=#F74848>15%</color>；主动攻击具有[战损]的目标时，不会受到反击，对每个目标<color=#F74848>1</color>回合最多发动<color=#F74848>1</color>次；每回合首次主动攻击后回复<color=#F74848>1</color>AP",
+                "BufCarried": "531081/531082/531083/531084",
+                "SkillIcon": "Icon_skill_passive_5297",
+                "icon": "Icon_skill_passive_5297",
+                "Status": 1,
+                "weight": 1261
+              },
+              {
+                "ID": "53106",
+                "name": "汲能代谢",
+                "SpecificEffects": "主动攻击时，目标每携带<color=#F74848>1</color>个减益效果受到的伤害提升<color=#F74848>5%</color>，最多<color=#F74848>25%</color>",
+                "BufCarried": "531061",
+                "SkillIcon": "Icon_skill_passive_5175",
+                "icon": "Icon_skill_passive_5175",
+                "Status": 1,
+                "weight": 1259
+              }
+            ],
+            "IconResourcePath": "Icon_weapon_30100403",
+            "icon": "Icon_weapon_30100403",
+            "describe": "晨星同盟监察委员会为编号001379的精英探员特别定制的轻型步枪，安装有先进武器研究院设计的最新微型火控辅助模块，可精准锁定并确保命中敌机潜在弱点部位。",
+            "Status": 1,
+            "weight": 753
+          }
+        ],
+        "now": "2026-07-01 10:48:00"
+      },
+      "status": 1,
+      "switch": null,
+      "info": 0
+    }
+  },
+  {
+    "ID": "50215122",
+    "name": "千军",
+    "quality": "SSSR",
+    "WeaponType1": "Heavy",
+    "WeaponType2": "Funnel",
+    "type": "Funnel",
+    "icon": "Icon_weapon_40300302",
+    "detail": {
+      "data": {
+        "data": [
+          {
+            "ID": "50215122",
+            "name": "千军",
+            "quality": "SSSR",
+            "grade": "70",
+            "WeaponType1": "Heavy",
+            "WeaponType2": "Funnel",
+            "type": "Funnel",
+            "LimitedModelOfWeapon": "Medium",
+            "RestrictionsPositionOfWeapon": "Back",
+            "range": "1-4",
+            "WeaponWeight": "1100",
+            "WeaponBasicAttackingPower": "876",
+            "WeaponHitPoint": "5241",
+            "WeaponUnderstanding": "4603",
+            "NumberOfBullets": "3",
+            "InitiativeSkill": [
+              {
+                "ID": "4031",
+                "remarks": "浮游炮普通攻击",
+                "name": "多向歼击",
+                "describe": "使用浮游炮攻击范围内最多<color=#F74848>4</color>个目标，造成<color=#F74848>1</color>倍范围伤害",
+                "type": "SpecialAssault",
+                "CD": "0",
+                "Ap": "3",
+                "matchingWeaponType": "浮游炮",
+                "SkillIcon": "Icon_skill_order_1011",
+                "icon": "Icon_skill_order_1011",
+                "Status": 1,
+                "weight": 666
+              }
+            ],
+            "PassiveSkill": [
+              {
+                "ID": "53110",
+                "name": "势合",
+                "SpecificEffects": "浮游炮最大弹药数<color=#F74848>+1</color>，若一回合内使用浮游炮攻击过<color=#F74848>3</color>次，回合结束时回复<color=#F74848>1</color>枚弹药",
+                "BufCarried": "531101/531102/531103",
+                "SkillIcon": "Icon_skill_passive_5150",
+                "icon": "Icon_skill_passive_5150",
+                "Status": 1,
+                "weight": 1263
+              },
+              {
+                "ID": "53111",
+                "name": "完锋",
+                "SpecificEffects": "强化<buf ID=900162></buf>效果：场上每存在<color=#F74848>1</color>个携带<buf ID=4011502>[任命]</buf>的友军，自身浮游炮攻击技能倍率提升<color=#F74848>0.07</color>；具有<buf ID=4011502>[任命]</buf>的友方主动攻击对战时，战前对其施加<buf ID=4011041>[子机·攻击模式]</buf>，每回合最多触发<color=#F74848>1</color>次；自身行动结束时，若未触发过本效果，对耐久值最低的具有[任命]的友方单位施加<buf ID=4011043>[子机·防御模式]</buf>",
+                "BufCarried": "531111/531112",
+                "SkillIcon": "Icon_skill_passive_5298",
+                "icon": "Icon_skill_passive_5298",
+                "Status": 1,
+                "weight": 1264
+              },
+              {
+                "ID": "53109",
+                "name": "贯遥",
+                "SpecificEffects": "使用浮游炮攻击时无视目标<color=#F74848>35%</color>的护甲值；自身与目标每距离<color=#F74848>1</color>格，造成的伤害提升<color=#F74848>5%</color>，最多提升<color=#F74848>20%</color>",
+                "BufCarried": "531091",
+                "SkillIcon": "Icon_skill_passive_5116",
+                "icon": "Icon_skill_passive_5116",
+                "Status": 1,
+                "weight": 1262
+              }
+            ],
+            "IconResourcePath": "Icon_weapon_40300302",
+            "icon": "Icon_weapon_40300302",
+            "describe": "「抱歉，科林长官，现代科技没法造出您口中同时拥有重火力、半永久动力、高机动性的高智能自动武装……作为替代，我们为您设计了这一新型浮游炮，希望它能帮助您平定米赫玛局势。\n最后，请不要每天都给我发需求邮件！！！」",
+            "Status": 1,
+            "weight": 754
+          }
+        ],
+        "now": "2026-07-01 10:48:02"
+      },
+      "status": 1,
+      "switch": null,
+      "info": 0
+    }
+  },
+  {
+    "ID": "10815122",
+    "name": "碎狼牙",
+    "quality": "SSSR",
+    "WeaponType1": "Melee",
+    "WeaponType2": "Saw",
+    "type": "Saw",
+    "icon": "Icon_weapon_50100602",
+    "detail": {
+      "data": {
+        "data": [
+          {
+            "ID": "10815122",
+            "name": "碎狼牙",
+            "quality": "SSSR",
+            "grade": "70",
+            "WeaponType1": "Melee",
+            "WeaponType2": "Saw",
+            "type": "Saw",
+            "LimitedModelOfWeapon": "Light/Medium/Heavy",
+            "RestrictionsPositionOfWeapon": "DoubleHand",
+            "range": "1（可斜向）",
+            "WeaponWeight": "850",
+            "WeaponBasicAttackingPower": "964",
+            "WeaponHitPoint": "1809",
+            "WeaponUnderstanding": "4603",
+            "PassiveSkill": [
+              {
+                "ID": "53116",
+                "name": "狂野节奏",
+                "SpecificEffects": "使用电锯攻击时，若自身整体耐久百分比低于<color=#F74848>70%</color>，电锯连击数<color=#F74848>+1</color>，在此基础上耐久百分比每降低<color=#F74848>20%</color>，电锯连击数额外<color=#F74848>+1</color>，最多额外<color=#F74848>+2</color>",
+                "BufCarried": "531161/531162/531163",
+                "SkillIcon": "Icon_skill_passive_5218",
+                "icon": "Icon_skill_passive_5218",
+                "Status": 1,
+                "weight": 1269
+              },
+              {
+                "ID": "53117",
+                "name": "历战本能",
+                "SpecificEffects": "强化<buf ID=900165>[身经百战]</buf>效果：<buf ID=900127>[振奋]</buf>可叠加层数<color=#F74848>+1</color>，每损失<color=#F74848>8.5%</color>耐久值即可获得<color=#F74848>1</color>层；每层<buf ID=900127>[振奋]</buf>使自身反击和<buf ID=900009>[奔袭反击]</buf>伤害提升<color=#F74848>4%</color>，遭受伤害降低<color=#F74848>2%</color>",
+                "BufCarried": "531171/531172/531175/531176/531177/531178/531169/531170",
+                "SkillIcon": "Icon_skill_passive_3137",
+                "icon": "Icon_skill_passive_3137",
+                "Status": 1,
+                "weight": 1270
+              },
+              {
+                "ID": "53115",
+                "name": "只手擎天",
+                "SpecificEffects": "单手握持电锯时，命中率不再下降",
+                "BufCarried": "531151",
+                "SkillIcon": "Icon_skill_passive_4133",
+                "icon": "Icon_skill_passive_4133",
+                "Status": 1,
+                "weight": 1268
+              }
+            ],
+            "IconResourcePath": "Icon_weapon_50100602",
+            "icon": "Icon_weapon_50100602",
+            "describe": "米赫玛总督布莱尔为战友怀亚特所准备的特制动能锯，在两人因理念不合而分道扬镳后，它被长久存放于日沉谷军营仓库深处，直到怀亚特重返米赫玛，将其取出并翻新强化……即使已经过去十余年，它依然是对怀亚特而言最称手的武器。",
+            "Status": 1,
+            "weight": 757
+          }
+        ],
+        "now": "2026-07-01 10:48:04"
+      },
+      "status": 1,
+      "switch": null,
+      "info": 0
+    }
+  },
+  {
+    "ID": "50115123",
+    "name": "罪棘律典",
+    "quality": "SSSR",
+    "WeaponType1": "Heavy",
+    "WeaponType2": "RailGun",
+    "type": "RailGun",
+    "icon": "Icon_weapon_10600402",
+    "detail": {
+      "data": {
+        "data": [
+          {
+            "ID": "50115123",
+            "name": "罪棘律典",
+            "quality": "SSSR",
+            "grade": "70",
+            "WeaponType1": "Heavy",
+            "WeaponType2": "RailGun",
+            "type": "RailGun",
+            "LimitedModelOfWeapon": "Medium",
+            "RestrictionsPositionOfWeapon": "Back",
+            "range": "1-5",
+            "WeaponWeight": "1100",
+            "WeaponBasicAttackingPower": "783",
+            "WeaponHitPoint": "4992",
+            "WeaponUnderstanding": "4603",
+            "NumberOfBullets": "3",
+            "InitiativeSkill": [
+              {
+                "ID": "5011",
+                "remarks": "电磁炮攻击",
+                "name": "电磁激荡",
+                "describe": "使用电磁炮攻击纵向<color=#F74848>5</color>格范围内的所有目标，造成<color=#F74848>1.0</color>倍范围伤害",
+                "type": "SpecialAssault",
+                "CD": "0",
+                "Ap": "3",
+                "matchingWeaponType": "电磁炮",
+                "SkillIcon": "Icon_skill_order_1005",
+                "icon": "Icon_skill_order_1005",
+                "Status": 1,
+                "weight": 667
+              }
+            ],
+            "PassiveSkill": [
+              {
+                "ID": "53113",
+                "name": "越界恩赐",
+                "SpecificEffects": "电磁炮弹仓容量<color=#F74848>+1</color>，使用电磁炮攻击时，暴击率提升<color=#F74848>20%</color>",
+                "BufCarried": "531131/531132",
+                "SkillIcon": "Icon_skill_passive_4130",
+                "icon": "Icon_skill_passive_4130",
+                "Status": 1,
+                "weight": 1266
+              },
+              {
+                "ID": "53114",
+                "name": "罪业荣耀",
+                "SpecificEffects": "强化<buf ID=900164>[罪业信条]</buf>效果：其他友方单位遭受主动攻击对战时，对敌机施加<buf ID=6010502>[磁能锁定]</buf>，每回合最多发动<color=#F74848>2</color>次；使用电磁炮主动攻击时，每击毁<color=#F74848>1</color>个目标，回复<color=#F74848>1</color>发电磁炮弹药，每回合最多回复<color=#F74848>3</color>发；每施加<color=#F74848>1</color>次<buf ID=6010502>[磁能锁定]</buf>，获得<color=#F74848>1</color>层<buf ID=531145>[磁能强化]</buf>，可叠加<color=#F74848>10</color>层",
+                "BufCarried": "531141/531143/531144/531146",
+                "SkillIcon": "Icon_skill_passive_5301",
+                "icon": "Icon_skill_passive_5301",
+                "Status": 1,
+                "weight": 1267
+              },
+              {
+                "ID": "53112",
+                "name": "电弧筹码",
+                "SpecificEffects": "使用电磁炮攻击时，弹仓中每有<color=#F74848>1</color>发弹药，伤害和命中率提升<color=#F74848>4%</color>，最多提升<color=#F74848>20%</color>",
+                "BufCarried": "531121/531122/531123/531124/531125/531126/531127/531128",
+                "SkillIcon": "Icon_skill_passive_1130",
+                "icon": "Icon_skill_passive_1130",
+                "Status": 1,
+                "weight": 1265
+              }
+            ],
+            "IconResourcePath": "Icon_weapon_10600402",
+            "icon": "Icon_weapon_10600402",
+            "describe": "「维娜小姐，请收下这份礼物。对您这样在前线奔走的人而言，这款加装了大型弹仓和增压加速单元的新式电磁炮一定会派上用场……呵呵，您可以将这理解为一次投资，希望您能在未来与我们角雕商会建立长期稳定的合作关系。」",
+            "Status": 1,
+            "weight": 758
+          }
+        ],
+        "now": "2026-07-01 10:48:06"
+      },
+      "status": 1,
+      "switch": null,
+      "info": 0
+    }
+  }
+]

@@ -3275,7 +3275,7 @@
       "Talent3_5Ability": {
         "ID": "400851",
         "name": "Blazing Heart",
-        "SpecificEffects": "When equipped with a Missile Launcher, can use the Missile Launcher to launch a <buf ID=900002>[Link Attack]</buf>, dealing <color=#F74848>0.2</color>x DMG to the target, and Splash DMG equal to <color=#F74848>50%</color> of the primary damage to other parts, applying <buf ID=4008509>[Lock]</buf> to targets hit, lasting <color=#F74848>2</color> turns, up to <color=#F74848>2</color> times per turn;\\nWhen both shoulders are equipped with Missile Launchers, <buf ID=900002>[Link Attack]</buf> triggers <buf ID=900097>[Link Salvo]</buf>, dealing <color=#F74848>2\u00d70.15</color>x DMG, and Splash DMG equal to <color=#F74848>50%</color> of the primary damage to other parts.",
+        "SpecificEffects": "When equipped with a Missile Launcher, can use the Missile Launcher to launch a <buf ID=900002>[Link Attack]</buf>, dealing <color=#F74848>0.2</color>x DMG to the target, and Splash DMG equal to <color=#F74848>50%</color> of the primary damage to other parts, applying <buf ID=4008509>[Lock]</buf> to targets hit, lasting <color=#F74848>2</color> turns, up to <color=#F74848>2</color> times per turn;\nWhen both shoulders are equipped with Missile Launchers, <buf ID=900002>[Link Attack]</buf> triggers <buf ID=900097>[Link Salvo]</buf>, dealing <color=#F74848>2\u00d70.15</color>x DMG, and Splash DMG equal to <color=#F74848>50%</color> of the primary damage to other parts.",
         "BufCarried": "4008501/4008502/4008511",
         "SkillIcon": "Icon_skill_talent_5141",
         "icon": "Icon_skill_talent_5141",
@@ -4368,7 +4368,7 @@
       "Talent3_5Ability": {
         "ID": "101451",
         "name": "EVA-02 Pilot",
-        "SpecificEffects": "Can perform <buf ID=900088>[Synchronization]</buf> with ST. After actively attacking, if no damage is taken, DMG of the next active attack <color=#F74848>+20%</color>.\\nWhen deployed, <buf ID=1014820>[Sync Ratio]</buf> <color=#F74848>+10%</color>. If there are <color=#F74848>3</color> or more enemy STs within <color=#F74848>2</color> tiles, deals <color=#F74848>+15%</color> DMG.",
+        "SpecificEffects": "Can perform <buf ID=900088>[Synchronization]</buf> with ST. After actively attacking, if no damage is taken, DMG of the next active attack <color=#F74848>+20%</color>.\nWhen deployed, <buf ID=1014820>[Sync Ratio]</buf> <color=#F74848>+10%</color>. If there are <color=#F74848>3</color> or more enemy STs within <color=#F74848>2</color> tiles, deals <color=#F74848>+15%</color> DMG.",
         "BufCarried": "1014501/1014511/1014513/1014800/2014513/1014514",
         "SkillIcon": "Icon_skill_talent_9901",
         "icon": "Icon_skill_talent_9901",
@@ -6532,7 +6532,7 @@
       "Talent3_5Ability": {
         "ID": "101251",
         "name": "Solitary",
-        "SpecificEffects": "At end of action, if there are no other allies within <color=#F74848>2</color> adjacent tiles, gains <color=#F74848>3</color> stacks of <buf ID=1012512>[Magnetic Armor]</buf>, lasting for <color=#F74848>1</color> turn.\\nWhen initiating combat, if no ally triggers <buf ID=900002>[Link Attack]</buf>, DMG <color=#F74848>+15%</color>.",
+        "SpecificEffects": "At end of action, if there are no other allies within <color=#F74848>2</color> adjacent tiles, gains <color=#F74848>3</color> stacks of <buf ID=1012512>[Magnetic Armor]</buf>, lasting for <color=#F74848>1</color> turn.\nWhen initiating combat, if no ally triggers <buf ID=900002>[Link Attack]</buf>, DMG <color=#F74848>+15%</color>.",
         "BufCarried": "1012511/1012501",
         "SkillIcon": "Icon_skill_talent_1121",
         "icon": "Icon_skill_talent_1121",
@@ -7613,7 +7613,7 @@
       "Talent0_2Ability": {
         "ID": "201550",
         "name": "Veiled Razor",
-        "SpecificEffects": "If equipped with two Machine Guns, triggers <buf ID=900095>[Dual Gun Retaliation]</buf> when retaliating, dealing <color=#F74848>0.6x</color> DMG <color=#F74848>2</color> times.\\nAfter taking action, gains <color=#F74848>1</color> stack of <buf ID=2015509>[Retaliation Enhancement]</buf>. Stacks up to <color=#F74848>5</color> times.",
+        "SpecificEffects": "If equipped with two Machine Guns, triggers <buf ID=900095>[Dual Gun Retaliation]</buf> when retaliating, dealing <color=#F74848>0.6x</color> DMG <color=#F74848>2</color> times.\nAfter taking action, gains <color=#F74848>1</color> stack of <buf ID=2015509>[Retaliation Enhancement]</buf>. Stacks up to <color=#F74848>5</color> times.",
         "BufCarried": "2015501/2015502",
         "SkillIcon": "Icon_skill_talent_5140",
         "icon": "Icon_skill_talent_5140",
@@ -7623,7 +7623,7 @@
       "Talent3_5Ability": {
         "ID": "201551",
         "name": "Veiled Razor",
-        "SpecificEffects": "If equipped with two Machine Guns, triggers <buf ID=900095>[Dual Gun Retaliation]</buf> when retaliating, dealing <color=#F74848>0.6x</color> DMG <color=#F74848>2</color> times.\\nAfter taking action, gains <color=#F74848>1</color> stack of <buf ID=2015509>[Retaliation Enhancement]</buf>. Stacks up to <color=#F74848>5</color> times.\\nGains <color=#F74848>1</color> AP when retaliating. Can only trigger <color=#F74848>1</color> time per turn.",
+        "SpecificEffects": "If equipped with two Machine Guns, triggers <buf ID=900095>[Dual Gun Retaliation]</buf> when retaliating, dealing <color=#F74848>0.6x</color> DMG <color=#F74848>2</color> times.\nAfter taking action, gains <color=#F74848>1</color> stack of <buf ID=2015509>[Retaliation Enhancement]</buf>. Stacks up to <color=#F74848>5</color> times.\nGains <color=#F74848>1</color> AP when retaliating. Can only trigger <color=#F74848>1</color> time per turn.",
         "BufCarried": "2015501/2015502/2015511",
         "SkillIcon": "Icon_skill_talent_5140",
         "icon": "Icon_skill_talent_5140",
@@ -8427,7 +8427,7 @@
             "ID": "201509",
             "name": "Armed and Ready",
             "describe": "Uses a Machine Gun to attack a target, dealing <color=#F74848>1.2x</color> DMG. After combat, gains <color=#F74848>1</color> stack of <buf ID=2015509>[Retaliation Enhancement]</buf>. Stacks up to <color=#F74848>5</color> times.",
-            "type": "Active",
+            "type": "EquipmentSkill",
             "Ap": "3",
             "CD": "",
             "matchingWeaponType": "\u673a\u67aa",
@@ -14311,7 +14311,7 @@
       "Talent3_5Ability": {
         "ID": "201251",
         "name": "Hot! Hot! Hot!",
-        "SpecificEffects": "When initiating combat with a Flamethrower, triggers <buf ID=900064>[Peripheral Vision]</buf>. Prioritizes attacking other targets within range using the opposite Arm's Flamethrower, dealing <color=#F74848>20%</color> <buf ID=900065>[Flame DMG]</buf> to all targets in the path.\\nAfter initiating combat, inflicts <buf ID=2012512>[Joint Melt]</buf> on all targets hit, lasting for <color=#F74848>1</color> turn.",
+        "SpecificEffects": "When initiating combat with a Flamethrower, triggers <buf ID=900064>[Peripheral Vision]</buf>. Prioritizes attacking other targets within range using the opposite Arm's Flamethrower, dealing <color=#F74848>20%</color> <buf ID=900065>[Flame DMG]</buf> to all targets in the path.\nAfter initiating combat, inflicts <buf ID=2012512>[Joint Melt]</buf> on all targets hit, lasting for <color=#F74848>1</color> turn.",
         "BufCarried": "2012501/2012511",
         "SkillIcon": "Icon_skill_talent_5131",
         "icon": "Icon_skill_talent_5131",
@@ -18456,7 +18456,7 @@
             "ID": "201109",
             "name": "Invasion",
             "describe": "Uses a Shotgun to attack a target, dealing <color=#F74848>1.2x</color> DMG. Hit Rate <color=#F74848>+10%</color>.",
-            "type": "Active",
+            "type": "EquipmentSkill",
             "Ap": "3",
             "CD": "",
             "matchingWeaponType": "SG",
@@ -23241,7 +23241,7 @@
       "Talent0_2Ability": {
         "ID": "301050",
         "name": "White Stork",
-        "SpecificEffects": "Can use the <skill mainSkill=301050>[Special Load]</skill> code. At start of action, gains <color=#F74848>1</color> stack of <buf ID=3010502>[Reinforced Ammo]</buf>. Stacks up to <color=#F74848>3</color> times.\\nSniper Rifle Weight: <color=#F74848>-15%</color>.",
+        "SpecificEffects": "Can use the <skill mainSkill=301050>[Special Load]</skill> code. At start of action, gains <color=#F74848>1</color> stack of <buf ID=3010502>[Reinforced Ammo]</buf>. Stacks up to <color=#F74848>3</color> times.\nSniper Rifle Weight: <color=#F74848>-15%</color>.",
         "BufCarried": "3010501/3010503/3010508",
         "SkillIcon": "Icon_skill_talent_5138",
         "icon": "Icon_skill_talent_5138",
@@ -23251,7 +23251,7 @@
       "Talent3_5Ability": {
         "ID": "301051",
         "name": "White Stork",
-        "SpecificEffects": "Can use the <skill mainSkill=301050>[Special Load]</skill> code. At start of action, gains <color=#F74848>2</color> stacks of <buf ID=3010502>[Reinforced Ammo]</buf>. Stacks up to <color=#F74848>5</color> times. Each stack grants <color=#F74848>5%</color> additional Crit Rate, up to <color=#F74848>15%</color>.\\nSniper Rifle Weight: <color=#F74848>-15%</color>.",
+        "SpecificEffects": "Can use the <skill mainSkill=301050>[Special Load]</skill> code. At start of action, gains <color=#F74848>2</color> stacks of <buf ID=3010502>[Reinforced Ammo]</buf>. Stacks up to <color=#F74848>5</color> times. Each stack grants <color=#F74848>5%</color> additional Crit Rate, up to <color=#F74848>15%</color>.\nSniper Rifle Weight: <color=#F74848>-15%</color>.",
         "BufCarried": "3010501/3010503/3010511/3010512/3010508",
         "SkillIcon": "Icon_skill_talent_5138",
         "icon": "Icon_skill_talent_5138",
@@ -24051,7 +24051,7 @@
             "ID": "301009",
             "name": "Tracking Shot",
             "describe": "Uses a Sniper Rifle to attack a target, dealing <color=#F74848>1.3x</color> DMG. This attack is guaranteed to hit. When in the <buf ID=3010504>[Improved Fire]</buf> state, also inflicts <buf ID=900050>[Dodge Invalid]</buf> on the target hit after combat, which expires after being hit <color=#F74848>1</color> time.",
-            "type": "Active",
+            "type": "EquipmentSkill",
             "Ap": "2",
             "CD": "",
             "matchingWeaponType": "SR",
@@ -31047,7 +31047,7 @@
       "Talent3_5Ability": {
         "ID": "400551",
         "name": "Elite Hacker",
-        "SpecificEffects": "When both shoulders are equipped with Missile Launchers, the <buf ID=900016>[Salvo]</buf> code can be used to launch an attack, dealing <color=#F74848>0.75x</color> DMG <color=#F74848>2</color> times to a part and Splash DMG equal to <color=#F74848>50%</color> of this damage to other parts;\\n<buf ID=900016>[Salvo]</buf>-style skill DMG <color=#F74848>+15%</color>.",
+        "SpecificEffects": "When both shoulders are equipped with Missile Launchers, the <buf ID=900016>[Salvo]</buf> code can be used to launch an attack, dealing <color=#F74848>0.75x</color> DMG <color=#F74848>2</color> times to a part and Splash DMG equal to <color=#F74848>50%</color> of this damage to other parts;\n<buf ID=900016>[Salvo]</buf>-style skill DMG <color=#F74848>+15%</color>.",
         "BufCarried": "4005511/4005501",
         "SkillIcon": "Icon_skill_talent_1109",
         "icon": "Icon_skill_talent_1109",
@@ -32221,7 +32221,7 @@
       "Talent3_5Ability": {
         "ID": "300951",
         "name": "Intel Collection",
-        "SpecificEffects": "When an ST is destroyed within range, passively restore <color=#F74848>1</color> AP. Can trigger <color=#F74848>1</color> time per turn.\\nCrit DMG <color=#F74848>+10%</color>.",
+        "SpecificEffects": "When an ST is destroyed within range, passively restore <color=#F74848>1</color> AP. Can trigger <color=#F74848>1</color> time per turn.\nCrit DMG <color=#F74848>+10%</color>.",
         "BufCarried": "3009511/3009501",
         "SkillIcon": "Icon_skill_talent_5116",
         "icon": "Icon_skill_talent_5116",
@@ -33090,7 +33090,7 @@
             "ID": "300909",
             "name": "Accurate Fire",
             "describe": "Uses a Sniper Rifle to attack a target, dealing <color=#F74848>1.0x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking and gains Hit Rate <color=#F74848>+15%</color>.",
-            "type": "Active",
+            "type": "EquipmentSkill",
             "Ap": "3",
             "CD": "",
             "matchingWeaponType": "SR",
@@ -35596,7 +35596,7 @@
       "Talent3_5Ability": {
         "ID": "600951",
         "name": "EVA-00 Pilot",
-        "SpecificEffects": "Can perform <buf ID=900088>[Synchronization]</buf> with ST. Can use an Assault Weapon to launch a <buf ID=900002>[Link Attack]</buf> against the target of an ally's attack, dealing <color=#F74848>0.2</color>x DMG. Can trigger up to <color=#F74848>2</color> times per turn.\\nExpands the minimum range of <buf ID=900022>[Guard]</buf> to <color=#F74848>2</color> tiles, and reduces the chance of receiving a Crit by <color=#F74848>20%</color> for allies within <buf ID=900022>[Guard]</buf> range.",
+        "SpecificEffects": "Can perform <buf ID=900088>[Synchronization]</buf> with ST. Can use an Assault Weapon to launch a <buf ID=900002>[Link Attack]</buf> against the target of an ally's attack, dealing <color=#F74848>0.2</color>x DMG. Can trigger up to <color=#F74848>2</color> times per turn.\nExpands the minimum range of <buf ID=900022>[Guard]</buf> to <color=#F74848>2</color> tiles, and reduces the chance of receiving a Crit by <color=#F74848>20%</color> for allies within <buf ID=900022>[Guard]</buf> range.",
         "BufCarried": "6009501/6009511/6009512/6009513/6009515/1014800/2014513",
         "SkillIcon": "Icon_skill_talent_9701",
         "icon": "Icon_skill_talent_9701",
@@ -44583,7 +44583,7 @@
       "Talent3_5Ability": {
         "ID": "300851",
         "name": "Epiphyllum's Move",
-        "SpecificEffects": "When initiating combat with a Light Rifle, can enter <buf ID=900014>[Aiming]</buf> Mode when equipped with a Small Shield. After combat, can continue moving using any remaining Movement.\\nIn combat, if there are other enemies within <color=#F74848>2</color> adjacent tiles, Crit Rate <color=#F74848>+15%</color>.",
+        "SpecificEffects": "When initiating combat with a Light Rifle, can enter <buf ID=900014>[Aiming]</buf> Mode when equipped with a Small Shield. After combat, can continue moving using any remaining Movement.\nIn combat, if there are other enemies within <color=#F74848>2</color> adjacent tiles, Crit Rate <color=#F74848>+15%</color>.",
         "BufCarried": "3008511/3008501/3008502",
         "SkillIcon": "Icon_skill_talent_1107",
         "icon": "Icon_skill_talent_1107",

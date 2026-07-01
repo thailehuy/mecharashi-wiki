@@ -10,7 +10,7 @@
   },
   "Talent3_5Ability": {
     "name": "Intel Collection",
-    "SpecificEffects": "When an ST is destroyed within range, passively restore <color=#F74848>1</color> AP. Can trigger <color=#F74848>1</color> time per turn.\\nCrit DMG <color=#F74848>+10%</color>."
+    "SpecificEffects": "When an ST is destroyed within range, passively restore <color=#F74848>1</color> AP. Can trigger <color=#F74848>1</color> time per turn.\nCrit DMG <color=#F74848>+10%</color>."
   },
   "skills": {
     "300001": {
@@ -56,7 +56,8 @@
     "300909": {
       "name": "Accurate Fire",
       "describe": "Uses a Sniper Rifle to attack a target, dealing <color=#F74848>1.0x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking and gains Hit Rate <color=#F74848>+15%</color>.",
-      "SpecificEffects": ""
+      "SpecificEffects": "",
+      "type": "EquipmentSkill"
     }
   },
   "neuralPassives": {

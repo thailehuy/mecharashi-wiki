@@ -35,7 +35,7 @@ var Glossary = (function () {
       return key;
     });
 
-    text = text.replace(/<skill[^>]+?(?:mainSkill|activeSkill|ID)=(\d+)[^>]*>\[?([^\]<]*)\]?<\/skill>/g, function (_, id, name) {
+    text = text.replace(/<skill[^>]+?(?:mainSkill|activeSkill|passiveSkill|ID)=(\d+)[^>]*>\[?([^\]<]*)\]?<\/skill>/g, function (_, id, name) {
       var key = '\x00KW' + (idx++) + '\x00';
       var entry = lookup('skill', id);
       var cls = entry ? 'kw kw-skill' : 'kw kw-skill kw-unknown';
@@ -72,6 +72,40 @@ var Glossary = (function () {
   function init() {
     if (window.GlossaryData) data = window.GlossaryData;
 
+    // Seed skill lookup from pilot data for skills not in the glossary
+    var pilots = (window.PilotsData || {}).pilots || [];
+    pilots.forEach(function (p) {
+      // Active skills from biomimetic computer data
+      (p.biomimetic_computer_data || []).forEach(function (entry) {
+        var sk = entry.skill;
+        if (!sk || !sk.ID || !sk.name) return;
+        if (data.skill[sk.ID]) return;
+        var entry = { name: sk.name, effect: sk.describe || sk.SpecificEffects || '' };
+        if (sk.Ap != null && sk.Ap !== '') entry.Ap = sk.Ap;
+        if (sk.CD != null && sk.CD !== '') entry.CD = sk.CD;
+        data.skill[sk.ID] = entry;
+      });
+      // Passive skills from neural drive chip partitions
+      var nd = p.NeuralDriveTemplate;
+      if (nd) {
+        (nd.ListChipPartition || []).forEach(function (chip) {
+          (chip.ListActivationEffects || []).forEach(function (ae) {
+            var ps = ae.PassiveSkill;
+            if (!ps || !ps.ID || !ps.name) return;
+            if (data.skill[ps.ID]) return;
+            data.skill[ps.ID] = { name: ps.name, effect: ps.SpecificEffects || '' };
+          });
+        });
+      }
+      // Talent abilities (for mainSkill references that match talent IDs)
+      ['Talent0_2Ability', 'Talent3_5Ability'].forEach(function (key) {
+        var t = p[key];
+        if (!t || !t.ID || !t.name) return;
+        if (data.skill[t.ID]) return;
+        data.skill[t.ID] = { name: t.name, effect: t.SpecificEffects || '' };
+      });
+    });
+
     var $tip = $('<div id="kw-tooltip" role="tooltip"></div>').appendTo('body');
 
     $(document).on('mouseenter', '.kw', function () {
@@ -89,7 +123,7 @@ var Glossary = (function () {
       }
 
       var effectHtml = entry.effect
-        ? '<div class="kw-tip-effect">' + parseColors(entry.effect) + '</div>'
+        ? '<div class="kw-tip-effect">' + parseEffects(entry.effect) + '</div>'
         : '';
 
       $tip.html(

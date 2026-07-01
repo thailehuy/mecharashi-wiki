@@ -6,11 +6,11 @@
   "Occupation": "Raider",
   "Talent0_2Ability": {
     "name": "Veiled Razor",
-    "SpecificEffects": "If equipped with two Machine Guns, triggers <buf ID=900095>[Dual Gun Retaliation]</buf> when retaliating, dealing <color=#F74848>0.6x</color> DMG <color=#F74848>2</color> times.\\nAfter taking action, gains <color=#F74848>1</color> stack of <buf ID=2015509>[Retaliation Enhancement]</buf>. Stacks up to <color=#F74848>5</color> times."
+    "SpecificEffects": "If equipped with two Machine Guns, triggers <buf ID=900095>[Dual Gun Retaliation]</buf> when retaliating, dealing <color=#F74848>0.6x</color> DMG <color=#F74848>2</color> times.\nAfter taking action, gains <color=#F74848>1</color> stack of <buf ID=2015509>[Retaliation Enhancement]</buf>. Stacks up to <color=#F74848>5</color> times."
   },
   "Talent3_5Ability": {
     "name": "Veiled Razor",
-    "SpecificEffects": "If equipped with two Machine Guns, triggers <buf ID=900095>[Dual Gun Retaliation]</buf> when retaliating, dealing <color=#F74848>0.6x</color> DMG <color=#F74848>2</color> times.\\nAfter taking action, gains <color=#F74848>1</color> stack of <buf ID=2015509>[Retaliation Enhancement]</buf>. Stacks up to <color=#F74848>5</color> times.\\nGains <color=#F74848>1</color> AP when retaliating. Can only trigger <color=#F74848>1</color> time per turn."
+    "SpecificEffects": "If equipped with two Machine Guns, triggers <buf ID=900095>[Dual Gun Retaliation]</buf> when retaliating, dealing <color=#F74848>0.6x</color> DMG <color=#F74848>2</color> times.\nAfter taking action, gains <color=#F74848>1</color> stack of <buf ID=2015509>[Retaliation Enhancement]</buf>. Stacks up to <color=#F74848>5</color> times.\nGains <color=#F74848>1</color> AP when retaliating. Can only trigger <color=#F74848>1</color> time per turn."
   },
   "skills": {
     "200001": {
@@ -56,7 +56,8 @@
     "201509": {
       "name": "Armed and Ready",
       "describe": "Uses a Machine Gun to attack a target, dealing <color=#F74848>1.2x</color> DMG. After combat, gains <color=#F74848>1</color> stack of <buf ID=2015509>[Retaliation Enhancement]</buf>. Stacks up to <color=#F74848>5</color> times.",
-      "SpecificEffects": ""
+      "SpecificEffects": "",
+      "type": "EquipmentSkill"
     }
   },
   "neuralPassives": {

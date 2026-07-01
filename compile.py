@@ -25,7 +25,8 @@ def compile_glossary():
 
 if __name__ == '__main__':
     print('Compiling...')
-    run('pilots', os.path.join(ROOT, 'data', 'pilots', 'compile.py'))
-    run('mechs',  os.path.join(ROOT, 'data', 'mechs',  'compile.py'))
+    run('pilots',  os.path.join(ROOT, 'data', 'pilots',  'compile.py'))
+    run('mechs',   os.path.join(ROOT, 'data', 'mechs',   'compile.py'))
+    run('weapons', os.path.join(ROOT, 'data', 'weapons', 'compile.py'))
     compile_glossary()
     print('Done.')

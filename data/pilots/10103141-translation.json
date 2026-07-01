@@ -6,11 +6,11 @@
   "Occupation": "Sniper",
   "Talent0_2Ability": {
     "name": "White Stork",
-    "SpecificEffects": "Can use the <skill mainSkill=301050>[Special Load]</skill> code. At start of action, gains <color=#F74848>1</color> stack of <buf ID=3010502>[Reinforced Ammo]</buf>. Stacks up to <color=#F74848>3</color> times.\\nSniper Rifle Weight: <color=#F74848>-15%</color>."
+    "SpecificEffects": "Can use the <skill mainSkill=301050>[Special Load]</skill> code. At start of action, gains <color=#F74848>1</color> stack of <buf ID=3010502>[Reinforced Ammo]</buf>. Stacks up to <color=#F74848>3</color> times.\nSniper Rifle Weight: <color=#F74848>-15%</color>."
   },
   "Talent3_5Ability": {
     "name": "White Stork",
-    "SpecificEffects": "Can use the <skill mainSkill=301050>[Special Load]</skill> code. At start of action, gains <color=#F74848>2</color> stacks of <buf ID=3010502>[Reinforced Ammo]</buf>. Stacks up to <color=#F74848>5</color> times. Each stack grants <color=#F74848>5%</color> additional Crit Rate, up to <color=#F74848>15%</color>.\\nSniper Rifle Weight: <color=#F74848>-15%</color>."
+    "SpecificEffects": "Can use the <skill mainSkill=301050>[Special Load]</skill> code. At start of action, gains <color=#F74848>2</color> stacks of <buf ID=3010502>[Reinforced Ammo]</buf>. Stacks up to <color=#F74848>5</color> times. Each stack grants <color=#F74848>5%</color> additional Crit Rate, up to <color=#F74848>15%</color>.\nSniper Rifle Weight: <color=#F74848>-15%</color>."
   },
   "skills": {
     "300001": {
@@ -56,7 +56,8 @@
     "301009": {
       "name": "Tracking Shot",
       "describe": "Uses a Sniper Rifle to attack a target, dealing <color=#F74848>1.3x</color> DMG. This attack is guaranteed to hit. When in the <buf ID=3010504>[Improved Fire]</buf> state, also inflicts <buf ID=900050>[Dodge Invalid]</buf> on the target hit after combat, which expires after being hit <color=#F74848>1</color> time.",
-      "SpecificEffects": ""
+      "SpecificEffects": "",
+      "type": "EquipmentSkill"
     }
   },
   "neuralPassives": {
