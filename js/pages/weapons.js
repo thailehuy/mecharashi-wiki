@@ -102,7 +102,7 @@ Pages.weapons = {
         if (w.pilot) {
           var pilot = allPilots.find(function (p) { return p.PilotName === w.pilot; });
           if (pilot) {
-            var pSrc = PILOT_AVATAR_BASE + encodeURIComponent(pilot.AvatarHeroIcon) + '.png';
+            var pSrc = PILOT_AVATAR_BASE + encodeURIComponent(pilot.PortraitHeroIcon) + '.png';
             pilotIconHtml = '<img class="weapon-card-pilot-icon" src="' + pSrc + '" alt="' + $('<span>').text(pilot.PilotName).html() + '" loading="lazy" />';
           }
         }
