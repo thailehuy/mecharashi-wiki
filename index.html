@@ -18,16 +18,36 @@
 </head>
 <body>
 
-  <nav class="navbar navbar-expand sticky-top">
-    <div class="container">
+  <nav class="navbar sticky-top">
+    <div class="container navbar-row">
+      <button class="nav-hamburger" id="navToggle" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
       <a class="navbar-brand" href="#home" data-page="home">Mecharashi Wiki</a>
-      <div class="navbar-nav mx-auto">
-        <a class="nav-link" href="#pilots" data-page="pilots">Pilots</a>
-        <a class="nav-link" href="#sts" data-page="sts">STs</a>
+      <div class="navbar-nav-center">
+        <div class="navbar-nav-center-inner">
+          <a class="nav-link" href="#pilots" data-page="pilots">Pilots</a>
+          <a class="nav-link" href="#sts" data-page="sts">STs</a>
+        </div>
       </div>
       <span class="global-version-badge">Global v2.0</span>
     </div>
   </nav>
+
+  <div class="nav-overlay" id="navOverlay"></div>
+  <div class="nav-drawer" id="navDrawer">
+    <div class="nav-drawer-header">
+      <span class="nav-drawer-brand">Mecharashi Wiki</span>
+      <button class="nav-drawer-close" id="navClose" aria-label="Close menu">&times;</button>
+    </div>
+    <div class="nav-drawer-links">
+      <a class="nav-link nav-drawer-item" href="#pilots" data-page="pilots">Pilots</a>
+      <a class="nav-link nav-drawer-item" href="#sts" data-page="sts">STs</a>
+    </div>
+    <div class="nav-drawer-footer">
+      <span class="global-version-badge">Global v2.0</span>
+    </div>
+  </div>
 
   <main class="container py-4">
     <div id="app-content"></div>

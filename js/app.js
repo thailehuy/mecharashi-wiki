@@ -2,6 +2,32 @@ $(function () {
   // Glossary data is pre-loaded via data/glossary.js; just init tooltips
   Glossary.init();
 
+  // Mobile slide-out drawer
+  var $drawer = $('#navDrawer');
+  var $overlay = $('#navOverlay');
+
+  function openDrawer() {
+    $drawer.addClass('open');
+    $overlay.addClass('open');
+    $('body').css('overflow', 'hidden');
+  }
+
+  function closeDrawer() {
+    $drawer.removeClass('open');
+    $overlay.removeClass('open');
+    $('body').css('overflow', '');
+  }
+
+  $('#navToggle').on('click', openDrawer);
+  $('#navClose').on('click', closeDrawer);
+  $overlay.on('click', closeDrawer);
+  $drawer.on('click', '[data-page]', closeDrawer);
+
+  // Close drawer if viewport grows past mobile breakpoint
+  $(window).on('resize', function () {
+    if (window.innerWidth >= 768) closeDrawer();
+  });
+
 
   var DEFAULT_PAGE = 'pilots';
   var currentPage  = null;
