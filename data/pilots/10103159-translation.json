@@ -6,11 +6,11 @@
   "Occupation": "Raider",
   "Talent0_2Ability": {
     "name": "Blazing Heart",
-    "SpecificEffects": "When actively attacking with a Flamethrower, applies <buf ID=2018502>[Blazing Flame]</buf> to the target. When target carrying <buf ID=2018502>[Blazing Flame]</buf> is attacked, triggers <buf ID=900129>[Blazing Detonation]</buf> after combat."
+    "SpecificEffects": "When attacking with a Flamethrower, applies <buf ID=2018502>[Blazing Flame]</buf> to the target. When target carrying <buf ID=2018502>[Blazing Flame]</buf> is attacked, triggers <buf ID=900129>[Blazing Detonation]</buf> after combat."
   },
   "Talent3_5Ability": {
     "name": "Blazing Heart",
-    "SpecificEffects": "When actively attacking with a Flamethrower, applies <buf ID=2018502>[Blazing Flame]</buf> to the target. When target carrying <buf ID=2018502>[Blazing Flame]</buf> is attacked, triggers <buf ID=900129>[Blazing Detonation]</buf> after combat.\nWhen attacking targets on <terrian ID=4003081 />, <buf ID=900129>[Blazing Detonation]</buf> DMG multiplier increases by <color=#F74848>+0.1</color>."
+    "SpecificEffects": "When attacking with a Flamethrower, applies <buf ID=2018502>[Blazing Flame]</buf> to the target. When target carrying <buf ID=2018502>[Blazing Flame]</buf> is attacked, triggers <buf ID=900129>[Blazing Detonation]</buf> after combat.\nWhen attacking targets on <terrian ID=4003081 />, <buf ID=900129>[Blazing Detonation]</buf> DMG multiplier increases by <color=#F74848>+0.1</color>."
   },
   "skills": {
     "200001": {
@@ -121,7 +121,7 @@
     },
     "201845": {
       "name": "Flame Dancer 3",
-      "SpecificEffects": "<buf ID=900129>[Blazing Detonation]</buf> effect range is expanded to <color=#F74848>1</color> ring around the target."
+      "SpecificEffects": "<buf ID=900129>[Blazing Detonation]</buf> effect range is expanded to include the target and all enemies within <color=#F74848>1</color> ring around the target."
     },
     "201846": {
       "name": "Flame Dancer 4",

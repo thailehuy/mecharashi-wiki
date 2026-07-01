@@ -13,7 +13,7 @@
       "Talent0_2Ability": {
         "ID": "101750",
         "name": "Condensed Starburst",
-        "SpecificEffects": "When attacking, for each <color=#F74848>1</color> target hit, gains <color=#F74848>1</color> stack of <buf ID=1017503>[Condensed I]</buf>, up to <color=#F74848>5</color> stacks. After combat, if possesses <color=#F74848>5</color> or more stacks of <buf ID=1017503>[Condensed I]</buf>, removes <color=#F74848>5</color> stacks of <buf ID=1017503>[Condensed I]</buf> and gains <color=#F74848>3</color> AP and <buf ID=900138>[Temporary AP cap]</buf>, then triggers <buf ID=900005>[Re-Act]</buf>. This effect can trigger <color=#F74848>1</color> times per turn.",
+        "SpecificEffects": "When actively attacking, for each <color=#F74848>1</color> target hit, gains <color=#F74848>1</color> stack of <buf ID=1017503>[Condensed I]</buf>, up to <color=#F74848>5</color> stacks. After active attack, if possesses <color=#F74848>5</color> or more stacks of <buf ID=1017503>[Condensed I]</buf>, removes <color=#F74848>5</color> stacks of <buf ID=1017503>[Condensed I]</buf> and gains <color=#F74848>3</color> AP and <buf ID=900138>[Temporary AP cap]</buf>, then triggers <buf ID=900005>[Re-Act]</buf>. This effect can trigger <color=#F74848>1</color> times per turn.",
         "BufCarried": "1017501/1017502/900119",
         "SkillIcon": "Icon_skill_talent_1124",
         "icon": "Icon_skill_talent_1124",
@@ -23,7 +23,7 @@
       "Talent3_5Ability": {
         "ID": "101751",
         "name": "Condensed Starburst",
-        "SpecificEffects": "When attacking, for each <color=#F74848>1</color> target hit, gains <color=#F74848>1</color> stack of <buf ID=1017503>[Condensed I]</buf>, up to <color=#F74848>5</color> stacks. After combat, if possesses <color=#F74848>5</color> or more stacks of <buf ID=1017503>[Condensed I]</buf>, removes <color=#F74848>5</color> stacks of <buf ID=1017503>[Condensed I]</buf> and gains <color=#F74848>3</color> AP and <buf ID=900138>[Temporary AP cap]</buf>, then triggers <buf ID=900005>[Re-Act]</buf>. This effect can trigger <color=#F74848>1</color> times per turn.\nWhen attacking, additionally gains <color=#F74848>2</color> stacks of <buf ID=1017503>[Condensed I]</buf>. At the start of turn, if <buf ID=900133>[Condensed]</buf> AP recovery effect was triggered in previous turn, additionally gains <color=#F74848>1</color> AP.",
+        "SpecificEffects": "When actively attacking, for each <color=#F74848>1</color> target hit, gains <color=#F74848>1</color> stack of <buf ID=1017503>[Condensed I]</buf>, up to <color=#F74848>5</color> stacks. After active attack, if possesses <color=#F74848>5</color> or more stacks of <buf ID=1017503>[Condensed I]</buf>, removes <color=#F74848>5</color> stacks of <buf ID=1017503>[Condensed I]</buf> and gains <color=#F74848>3</color> AP and <buf ID=900138>[Temporary AP cap]</buf>, then triggers <buf ID=900005>[Re-Act]</buf>. This effect can trigger <color=#F74848>1</color> times per turn.\nWhen attacking, additionally gains <color=#F74848>2</color> stacks of <buf ID=1017503>[Condensed I]</buf>. At the start of turn, if <buf ID=900133>[Condensed]</buf> AP recovery effect was triggered in previous turn, additionally gains <color=#F74848>1</color> AP.",
         "BufCarried": "1017501/1017502/1017512/1017514/900119",
         "SkillIcon": "Icon_skill_talent_1124",
         "icon": "Icon_skill_talent_1124",
@@ -1092,7 +1092,7 @@
       "Talent0_2Ability": {
         "ID": "201850",
         "name": "Blazing Heart",
-        "SpecificEffects": "When actively attacking with a Flamethrower, applies <buf ID=2018502>[Blazing Flame]</buf> to the target. When target carrying <buf ID=2018502>[Blazing Flame]</buf> is attacked, triggers <buf ID=900129>[Blazing Detonation]</buf> after combat.",
+        "SpecificEffects": "When attacking with a Flamethrower, applies <buf ID=2018502>[Blazing Flame]</buf> to the target. When target carrying <buf ID=2018502>[Blazing Flame]</buf> is attacked, triggers <buf ID=900129>[Blazing Detonation]</buf> after combat.",
         "BufCarried": "2018501/2018507/2018516",
         "SkillIcon": "Icon_skill_talent_5151",
         "icon": "Icon_skill_talent_5151",
@@ -1102,7 +1102,7 @@
       "Talent3_5Ability": {
         "ID": "201851",
         "name": "Blazing Heart",
-        "SpecificEffects": "When actively attacking with a Flamethrower, applies <buf ID=2018502>[Blazing Flame]</buf> to the target. When target carrying <buf ID=2018502>[Blazing Flame]</buf> is attacked, triggers <buf ID=900129>[Blazing Detonation]</buf> after combat.\nWhen attacking targets on <terrian ID=4003081 />, <buf ID=900129>[Blazing Detonation]</buf> DMG multiplier increases by <color=#F74848>+0.1</color>.",
+        "SpecificEffects": "When attacking with a Flamethrower, applies <buf ID=2018502>[Blazing Flame]</buf> to the target. When target carrying <buf ID=2018502>[Blazing Flame]</buf> is attacked, triggers <buf ID=900129>[Blazing Detonation]</buf> after combat.\nWhen attacking targets on <terrian ID=4003081 />, <buf ID=900129>[Blazing Detonation]</buf> DMG multiplier increases by <color=#F74848>+0.1</color>.",
         "BufCarried": "2018501/2018511/2018507/2018516",
         "SkillIcon": "Icon_skill_talent_5151",
         "icon": "Icon_skill_talent_5151",
@@ -1472,7 +1472,7 @@
                 "PassiveSkill": {
                   "ID": "201845",
                   "name": "Flame Dancer 3",
-                  "SpecificEffects": "<buf ID=900129>[Blazing Detonation]</buf> effect range is expanded to <color=#F74848>1</color> ring around the target.",
+                  "SpecificEffects": "<buf ID=900129>[Blazing Detonation]</buf> effect range is expanded to include the target and all enemies within <color=#F74848>1</color> ring around the target.",
                   "BufCarried": "2018451/2018452/2018454",
                   "SkillIcon": "Icon_skill_passive_5254",
                   "icon": "Icon_skill_passive_5254",
@@ -28774,7 +28774,7 @@
       "Talent3_5Ability": {
         "ID": "201751",
         "name": "Flower Of The Force",
-        "SpecificEffects": "When both hands are intact, HMG range increases by <color=#F74848>1</color>, and the number of bullets increases by <color=#F74848>1</color>. At the start of the action, gains <color=#F74848>1</color> stack of <buf ID=2017500>[Blooming]</buf>, to the maximum of <color=#F74848>2</color> stacks.\nGains <color=#F74848>1</color> additional stack of <buf ID=2017500>[Blooming]</buf> when attacking.",
+        "SpecificEffects": "When both hands are intact, HMG range increases by <color=#F74848>1</color>, and the number of bullets increases by <color=#F74848>1</color>. At the start of the action, gains <color=#F74848>1</color> stack of <buf ID=2017500>[Blooming]</buf>, to the maximum of <color=#F74848>2</color> stacks.\nGains <color=#F74848>1</color> additional stack of <buf ID=2017500>[Blooming]</buf> at the start of battle.",
         "BufCarried": "2017501/2017502/2017503/2017511/2017512/2017504/2017505/2017506/2017507",
         "SkillIcon": "Icon_skill_talent_5149",
         "icon": "Icon_skill_talent_5149",
@@ -39263,7 +39263,7 @@
                 "PassiveSkill": {
                   "ID": "401041",
                   "name": "Flawless Calculation 1",
-                  "SpecificEffects": "When actively attacking, additionally gains <color=#F74848>5</color> stacks of <buf ID=4010500>[Intelligence]</buf>.",
+                  "SpecificEffects": "At the start of battle, additionally gains <color=#F74848>5</color> stacks of <buf ID=4010500>[Intelligence]</buf>.",
                   "BufCarried": "4010411/4010412",
                   "SkillIcon": "Icon_skill_passive_5252",
                   "icon": "Icon_skill_passive_5252",
@@ -39319,7 +39319,7 @@
                 "PassiveSkill": {
                   "ID": "401044",
                   "name": "Flawless Calculation 2",
-                  "SpecificEffects": "<buf ID=4010500>[Intelligence]</buf> effect changes to: increases all allies DMG dealt by <color=#F74848>1.2%</color>. <color=#F74848>2</color> stacks are consumed when attacking.",
+                  "SpecificEffects": "<buf ID=4010500>[Intelligence]</buf> effect changes to: increases all allies DMG dealt by <color=#F74848>1.2%</color>. <color=#F74848>2</color> stacks are consumed at the start of action.",
                   "BufCarried": "4010441",
                   "SkillIcon": "Icon_skill_passive_5252",
                   "icon": "Icon_skill_passive_5252",
@@ -39357,7 +39357,7 @@
                 "PassiveSkill": {
                   "ID": "401046",
                   "name": "Flawless Calculation 4",
-                  "SpecificEffects": "<buf ID=4010500>[Intelligence]</buf> maximum stacks increase to <color=#F74848>35</color>, and <buf ID=4010500>[Intelligence]</buf> effect is increased by <color=#F74848>75%</color>.",
+                  "SpecificEffects": "<buf ID=4010500>[Intelligence]</buf> maximum stacks increase to <color=#F74848>35</color>, and <buf ID=4010500>[Intelligence]</buf> effect on [Rosemary] is increased by <color=#F74848>75%</color>.",
                   "BufCarried": "4010461/4010462/4010463/4010464",
                   "SkillIcon": "Icon_skill_passive_5252",
                   "icon": "Icon_skill_passive_5252",
@@ -39587,7 +39587,7 @@
           "skill": {
             "ID": "401002",
             "name": "Know your enemies",
-            "SpecificEffects": "When actively attacking, if the number of <buf ID=4010500>[Intelligence]</buf> stacks are less than <color=#F74848>10</color>, no stacks will be consumed",
+            "SpecificEffects": "At the start of action, if the number of <buf ID=4010500>[Intelligence]</buf> stacks are less than <color=#F74848>10</color>, no stacks will be consumed.",
             "BufCarried": "4010021",
             "SkillIcon": "Icon_skill_passive_5103",
             "icon": "Icon_skill_passive_5103",
@@ -39721,7 +39721,7 @@
           "skill": {
             "ID": "401007",
             "name": "Intelligence Advantage",
-            "SpecificEffects": "When possessing <color=#F74848>20</color> or more stacks of <buf ID=4010500>[Intelligence]</buf>, reduces allies AOE DMG taken by <color=#F74848>15%</color>. After combat grants <color=#F74848>1</color> random buff to those allies, lasting for <color=#F74848>2</color> turns.",
+            "SpecificEffects": "When possessing <color=#F74848>20</color> or more stacks of <buf ID=4010500>[Intelligence]</buf>, reduces allies AOE DMG taken by <color=#F74848>15%</color> from active attacks. After combat grants <color=#F74848>1</color> random buff to those allies, lasting for <color=#F74848>2</color> turns.",
             "BufCarried": "4010071",
             "SkillIcon": "Icon_skill_passive_5222",
             "icon": "Icon_skill_passive_5222",
@@ -52345,7 +52345,7 @@
       "Talent0_2Ability": {
         "ID": "101650",
         "name": "Battlefield Veteran",
-        "SpecificEffects": "After being attacked, if HP falls below <color=#F74848>50%</color>, triggers <color=#F74848>1</color> repair effect from equipped backpack after combat, and gains <buf ID=1016502>[Invigorate I]</buf> based on loss HP. Every <color=#F74848>10%</color> lost HP grants <color=#F74848>1</color> stack, up to <color=#F74848>5</color> stacks.",
+        "SpecificEffects": "After being actively attacked, if HP falls below <color=#F74848>50%</color>, triggers <color=#F74848>1</color> repair effect from equipped backpack after combat, and gains <buf ID=1016502>[Invigorate I]</buf> based on loss HP. Every <color=#F74848>10%</color> lost HP grants <color=#F74848>1</color> stack, up to <color=#F74848>5</color> stacks.",
         "BufCarried": "1016501/1016504/1016506",
         "SkillIcon": "Icon_skill_talent_3106",
         "icon": "Icon_skill_talent_3106",
@@ -52355,7 +52355,7 @@
       "Talent3_5Ability": {
         "ID": "101651",
         "name": "Battlefield Veteran",
-        "SpecificEffects": "After being attacked, if HP falls below <color=#F74848>50%</color>, triggers <color=#F74848>1</color> repair effect from equipped backpack after combat, and gains <buf ID=1016502>[Invigorate I]</buf> based on loss HP. Every <color=#F74848>10%</color> lost HP grants <color=#F74848>1</color> stack, up to <color=#F74848>5</color> stacks.\nRepair effect from talent can restore <color=#F74848>1</color> destroyed part. When attacking, gains <buf ID=1016514>[Unyielding Will]</buf>",
+        "SpecificEffects": "After being actively attacked, if HP falls below <color=#F74848>50%</color>, triggers <color=#F74848>1</color> repair effect from equipped backpack after combat, and gains <buf ID=1016502>[Invigorate I]</buf> based on loss HP. Every <color=#F74848>10%</color> lost HP grants <color=#F74848>1</color> stack, up to <color=#F74848>5</color> stacks.\nRepair effect from talent can restore <color=#F74848>1</color> destroyed part. At the start of battle, gains <buf ID=1016514>[Unyielding Will]</buf>",
         "BufCarried": "1016501/1016504/1016506/1016511/1016513",
         "SkillIcon": "Icon_skill_talent_3106",
         "icon": "Icon_skill_talent_3106",
@@ -52650,7 +52650,7 @@
                 "PassiveSkill": {
                   "ID": "101641",
                   "name": "Islander 1",
-                  "SpecificEffects": "When attacked while equipping a Chainsaw, triggers <buf ID=900008>[Pursuit]</buf> after combat, automatically moving <color=#F74848>3</color> tiles toward the attacker. If successfully reached the target, uses Chainsaw to launch a <buf ID=900009>[Pursuit Retaliation]</buf>, dealing <color=#F74848>0.8</color> DMG. Returns to original position after trigger.",
+                  "SpecificEffects": "With a Chainsaw, if unable to retaliate in combat, <buf ID=900008>[Pursuit]</buf> can trigger, allowing the unit to move <color=#F74848>3</color> tiles toward the attacker after combat. If successfully reached the target, uses Chainsaw to launch a <buf ID=900009>[Pursuit Retaliation]</buf>, dealing <color=#F74848>0.8</color> DMG. Returns to original position after trigger.",
                   "BufCarried": "1016411",
                   "SkillIcon": "Icon_skill_passive_5255",
                   "icon": "Icon_skill_passive_5255",
@@ -52744,7 +52744,7 @@
                 "PassiveSkill": {
                   "ID": "101646",
                   "name": "Islander 4",
-                  "SpecificEffects": "<buf ID=900127>[Invigorate]</buf> maximum stacks increase by <color=#F74848>3</color>, each stack additionally increases DMG dealt by <color=#F74848>4%</color>.",
+                  "SpecificEffects": "<buf ID=900127>[Invigorate]</buf> maximum stacks increase by <color=#F74848>3</color>, each stack additionally increases Final DMG dealt by <color=#F74848>4%</color>.",
                   "BufCarried": "1016461/1016462",
                   "SkillIcon": "Icon_skill_passive_5255",
                   "icon": "Icon_skill_passive_5255",
@@ -53028,7 +53028,7 @@
             "ID": "101604",
             "remarks": "\u6000\u4e9a\u7279-\u4eff\u751f\u7535\u8111",
             "name": "Double-Edged Saw",
-            "describe": "Uses a Chainsaw to attack a target, dealing <color=#F74848>1.35</color> DMG. This attack always hits the body part.\nBefore combat, reduces own HP by <color=#F74848>20%</color> of max HP, then deals <color=#F74848>20%</color> of target max HP as <buf ID=900017>[Fixed DMG]</buf>. The HP reduction as well as the <buf ID=900017>[Fixed DMG]</buf> cannot destroy any part.",
+            "describe": "Uses a Chainsaw to attack a target, dealing <color=#F74848>1.35</color> DMG. This attack always hits the body part.\nBefore combat, reduces own HP by <color=#F74848>20%</color> of max HP from all parts, then deals <color=#F74848>20%</color> of target max HP as <buf ID=900017>[Fixed DMG]</buf>. The HP reduction as well as the <buf ID=900017>[Fixed DMG]</buf> cannot destroy any part.",
             "type": "EquipmentSkill",
             "Ap": "3",
             "matchingWeaponType": "\u7535\u952f",

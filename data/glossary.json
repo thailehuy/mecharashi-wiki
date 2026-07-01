@@ -602,11 +602,11 @@
     },
     "4010082": {
       "name": "Surprise Attack Tactic",
-      "effect": "When actively attacking, increases critical hit rate by <color=#F74848>15%</color>. <color=#F74848>1</color> stack is consumed after attacking."
+      "effect": "When actively attacking, increases critical hit rate by <color=#F74848>15%</color> per stack. All stacks are consumed after <color=#F74848>1</color> attack."
     },
     "4010500": {
       "name": "Intelligence",
-      "effect": "Each stack increases allies DMG dealt by <color=#F74848>0.8%</color>, upto a maximum of <color=#F74848>25</color> stacks. <color=#F74848>1</color> stack is consumed when attacking."
+      "effect": "Each stack increases allies DMG dealt by <color=#F74848>0.8%</color>, upto a maximum of <color=#F74848>25</color> stacks. <color=#F74848>1</color> stack is consumed at the start of action."
     },
     "5002072": {
       "name": "Repair AMT UP",
@@ -894,11 +894,11 @@
     },
     "2018502": {
       "name": "Blazing Flame",
-      "effect": "When attacked by Adele, triggers [Blazing Detonation]"
+      "effect": "When actively attacked by Adele and allies, triggers [Blazing Detonation]"
     },
     "900129": {
       "name": "Blazing Detonation",
-      "effect": "Deals [Fixed DMG] equal to <color=#F74848>0.2</color> times Adele's Flamethrower attack to all parts of the target unit and all enemies within range, then remove [Blazing Flame]. If the other affected targets are carrying [Blazing Flame], [Blazing Detonation] effect will be applied to those targets."
+      "effect": "Deals [Fixed DMG] equal to <color=#F74848>0.2</color> times Adele's Flamethrower attack to all parts of the target unit and all enemies within range, then remove [Blazing Flame]. This DMG can destroy parts. If the other affected targets are carrying [Blazing Flame], [Blazing Detonation] effect will be applied to those targets."
     },
     "2018506": {
       "name": "Flaming Heart",
@@ -914,11 +914,11 @@
     },
     "900127": {
       "name": "Invigorate",
-      "effect": "DMG dealt increases by <color=#F74848>4%</color>. DMG taken reduces by <color=#F74848>6%</color>. Repair AMT received increases by <color=#F74848>4%</color>. Stacking up to <color=#F74848>5</color> times."
+      "effect": "DMG dealt increases by <color=#F74848>4%</color>. Final DMG taken reduces by <color=#F74848>6%</color>. Repair AMT received increases by <color=#F74848>4%</color>. Stacking up to <color=#F74848>5</color> times."
     },
     "1016502": {
       "name": "Invigorate I",
-      "effect": "DMG dealt increases by <color=#F74848>4%</color>. DMG taken reduces by <color=#F74848>6%</color>. Repair AMT received increases by <color=#F74848>4%</color>. Stacking up to <color=#F74848>5</color> times."
+      "effect": "DMG dealt increases by <color=#F74848>4%</color>. Final DMG taken reduces by <color=#F74848>6%</color>. Repair AMT received increases by <color=#F74848>4%</color>. Stacking up to <color=#F74848>5</color> times."
     },
     "1017503": {
       "name": "Condensed I",

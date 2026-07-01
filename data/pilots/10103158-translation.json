@@ -6,11 +6,11 @@
   "Occupation": "Fighter",
   "Talent0_2Ability": {
     "name": "Battlefield Veteran",
-    "SpecificEffects": "After being attacked, if HP falls below <color=#F74848>50%</color>, triggers <color=#F74848>1</color> repair effect from equipped backpack after combat, and gains <buf ID=1016502>[Invigorate I]</buf> based on loss HP. Every <color=#F74848>10%</color> lost HP grants <color=#F74848>1</color> stack, up to <color=#F74848>5</color> stacks."
+    "SpecificEffects": "After being actively attacked, if HP falls below <color=#F74848>50%</color>, triggers <color=#F74848>1</color> repair effect from equipped backpack after combat, and gains <buf ID=1016502>[Invigorate I]</buf> based on loss HP. Every <color=#F74848>10%</color> lost HP grants <color=#F74848>1</color> stack, up to <color=#F74848>5</color> stacks."
   },
   "Talent3_5Ability": {
     "name": "Battlefield Veteran",
-    "SpecificEffects": "After being attacked, if HP falls below <color=#F74848>50%</color>, triggers <color=#F74848>1</color> repair effect from equipped backpack after combat, and gains <buf ID=1016502>[Invigorate I]</buf> based on loss HP. Every <color=#F74848>10%</color> lost HP grants <color=#F74848>1</color> stack, up to <color=#F74848>5</color> stacks.\nRepair effect from talent can restore <color=#F74848>1</color> destroyed part. When attacking, gains <buf ID=1016514>[Unyielding Will]</buf>"
+    "SpecificEffects": "After being actively attacked, if HP falls below <color=#F74848>50%</color>, triggers <color=#F74848>1</color> repair effect from equipped backpack after combat, and gains <buf ID=1016502>[Invigorate I]</buf> based on loss HP. Every <color=#F74848>10%</color> lost HP grants <color=#F74848>1</color> stack, up to <color=#F74848>5</color> stacks.\nRepair effect from talent can restore <color=#F74848>1</color> destroyed part. At the start of battle, gains <buf ID=1016514>[Unyielding Will]</buf>"
   },
   "skills": {
     "100001": {
@@ -30,7 +30,7 @@
     },
     "101604": {
       "name": "Double-Edged Saw",
-      "describe": "Uses a Chainsaw to attack a target, dealing <color=#F74848>1.35</color> DMG. This attack always hits the body part.\nBefore combat, reduces own HP by <color=#F74848>20%</color> of max HP, then deals <color=#F74848>20%</color> of target max HP as <buf ID=900017>[Fixed DMG]</buf>. The HP reduction as well as the <buf ID=900017>[Fixed DMG]</buf> cannot destroy any part.",
+      "describe": "Uses a Chainsaw to attack a target, dealing <color=#F74848>1.35</color> DMG. This attack always hits the body part.\nBefore combat, reduces own HP by <color=#F74848>20%</color> of max HP from all parts, then deals <color=#F74848>20%</color> of target max HP as <buf ID=900017>[Fixed DMG]</buf>. The HP reduction as well as the <buf ID=900017>[Fixed DMG]</buf> cannot destroy any part.",
       "SpecificEffects": ""
     },
     "101605": {
@@ -105,7 +105,7 @@
     },
     "101641": {
       "name": "Islander 1",
-      "SpecificEffects": "When attacked while equipping a Chainsaw, triggers <buf ID=900008>[Pursuit]</buf> after combat, automatically moving <color=#F74848>3</color> tiles toward the attacker. If successfully reached the target, uses Chainsaw to launch a <buf ID=900009>[Pursuit Retaliation]</buf>, dealing <color=#F74848>0.8</color> DMG. Returns to original position after trigger."
+      "SpecificEffects": "With a Chainsaw, if unable to retaliate in combat, <buf ID=900008>[Pursuit]</buf> can trigger, allowing the unit to move <color=#F74848>3</color> tiles toward the attacker after combat. If successfully reached the target, uses Chainsaw to launch a <buf ID=900009>[Pursuit Retaliation]</buf>, dealing <color=#F74848>0.8</color> DMG. Returns to original position after trigger."
     },
     "100042": {
       "name": "AP Optimization 4",
@@ -125,7 +125,7 @@
     },
     "101646": {
       "name": "Islander 4",
-      "SpecificEffects": "<buf ID=900127>[Invigorate]</buf> maximum stacks increase by <color=#F74848>3</color>, each stack additionally increases DMG dealt by <color=#F74848>4%</color>."
+      "SpecificEffects": "<buf ID=900127>[Invigorate]</buf> maximum stacks increase by <color=#F74848>3</color>, each stack additionally increases Final DMG dealt by <color=#F74848>4%</color>."
     }
   },
   "hiddenSkills": [
