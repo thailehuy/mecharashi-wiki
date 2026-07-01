@@ -40424,7 +40424,7 @@
                 "PassiveSkill": {
                   "ID": "500845",
                   "name": "Machine Intelligence 3",
-                  "SpecificEffects": "While <buf ID=1099900>[Goo Goo]</buf> is present, [Sapientia]'s Repair AMT is increased by <color=#F74848>15%</color>, and she is immune to [Command Block] effect.",
+                  "SpecificEffects": "While <buf ID=1099900>[Goo Goo]</buf> is present, [Sapientia]'s Repair AMT is increased by <color=#F74848>15%</color>, and she is immune to <buf ID=1099903>[Command Block]</buf> effect.",
                   "BufCarried": "5008451",
                   "SkillIcon": "Icon_skill_passive_5260",
                   "icon": "Icon_skill_passive_5260",
@@ -40752,7 +40752,7 @@
           "skill": {
             "ID": "500805",
             "name": "Safety Protocol",
-            "SpecificEffects": "After active repairs, grants [Command Block Immunity] to the targets, lasting for <color=#F74848>2</color> turns.",
+            "SpecificEffects": "After active repairs, grants <buf ID=1099905>[Command Block Immunity]</buf> to the targets, lasting for <color=#F74848>2</color> turns.",
             "BufCarried": "5008051",
             "SkillIcon": "Icon_skill_passive_5189",
             "icon": "Icon_skill_passive_5189",
