@@ -739,8 +739,8 @@ body {
 
 .skill-stat-label {
   font-size: 0.6rem;
-  font-weight: 700;
-  color: #6060a0;
+  font-weight: 900;
+  color: #b5b5b5;
   text-transform: uppercase;
 }
 
@@ -817,10 +817,11 @@ body {
 
 .nd-slots-label {
   font-size: 0.6rem;
-  color: #6060a0;
+  color: #b5b5b5;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   white-space: nowrap;
+  font-weight: bold;
 }
 
 .nd-slots {
@@ -866,7 +867,7 @@ body {
 
 .nd-effect-req {
   font-size: 0.75rem;
-  color: #6060a0;
+  color: #b5b5b5;
   margin-top: 1px;
 }
 
