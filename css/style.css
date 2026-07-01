@@ -457,7 +457,7 @@ body {
   width: 100%;
   border-radius: 10px;
   overflow: hidden;
-  background-color: #111122;
+  background-color: #1a1a20;
   border: 1px solid #2a2a4a;
   display: flex;
   justify-content: center;
@@ -895,13 +895,13 @@ body {
 
 /* ── Keyword glossary ─────────────────────────────────────────────────────── */
 .kw {
-  color: #b39ddb;
+  color: #4a9fd4;
   cursor: help;
   border-bottom: 1px dashed rgba(179, 157, 219, 0.5);
   white-space: nowrap;
 }
 .kw-skill {
-  color: #b39ddb;
+  color: #4a9fd4;
   border-bottom-color: rgba(179, 157, 219, 0.5);
 }
 .kw-terrain {
