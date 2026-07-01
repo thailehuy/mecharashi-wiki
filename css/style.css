@@ -10,7 +10,7 @@ body {
 }
 
 .navbar {
-  background-color: #1a1a2e;
+  background-color: #1a1a20;
   border-bottom: 2px solid #e94560;
   padding: 0;
 }
@@ -105,7 +105,7 @@ body {
   left: 0;
   bottom: 0;
   width: 240px;
-  background: #1a1a2e;
+  background: #1a1a20;
   border-right: 1px solid #2a2a4a;
   z-index: 1050;
   display: flex;
@@ -192,7 +192,7 @@ body {
 }
 
 .card-item {
-  background-color: #1a1a2e;
+  background-color: #1a1a20;
   border: 1px solid #2a2a4a;
   border-radius: 8px;
   padding: 1rem 1.25rem;
@@ -295,7 +295,7 @@ body {
 
 /* Pilot cards */
 .pilot-card {
-  background-color: #1a1a2e;
+  background-color: #1a1a20;
   border: 1px solid #2a2a4a;
   border-radius: 8px;
   overflow: hidden;
@@ -548,7 +548,7 @@ body {
 }
 
 .talent-card {
-  background-color: #1a1a2e;
+  background-color: #1a1a20;
   border: 1px solid #2a2a4a;
   border-radius: 8px;
   padding: 1rem 1.1rem;
@@ -616,7 +616,7 @@ body {
 }
 
 .mech-stat {
-  background-color: #1a1a2e;
+  background-color: #1a1a20;
   border: 1px solid #2a2a4a;
   border-radius: 6px;
   padding: 0.4rem 0.75rem;
@@ -665,7 +665,7 @@ body {
 }
 
 .skill-card {
-  background-color: #1a1a2e;
+  background-color: #1a1a20;
   border: 1px solid #2a2a4a;
   border-radius: 8px;
   padding: 0.9rem 1rem;
@@ -781,7 +781,7 @@ body {
 }
 
 .nd-part {
-  background-color: #1a1a2e;
+  background-color: #1a1a20;
   border: 1px solid #2a2a4a;
   border-radius: 8px;
   padding: 1rem 1.1rem;
@@ -925,7 +925,7 @@ body {
   position: absolute;
   z-index: 2000;
   max-width: 280px;
-  background: #1a1a2e;
+  background: #1a1a20;
   border: 1px solid #3a3a6e;
   border-radius: 6px;
   padding: 0.5rem 0.75rem;
@@ -1007,7 +1007,7 @@ body {
 .home-card {
   flex: 1;
   max-width: 260px;
-  background: #1a1a2e;
+  background: #1a1a20;
   border: 1px solid #2a2a4a;
   border-radius: 10px;
   padding: 1.5rem;
