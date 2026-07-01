@@ -1,5 +1,5 @@
 {
-  "name": "雪鸮",
+  "name": "Snowyowl",
   "introduce": "HR-300X 雪鸮\n由地平线主导研发的新锐中型维修与支援机兵，目前仅配发极少量部队进行实战测试与数据收集。\n为了有效支援高强度机兵作战，使自身产品线更契合当今作战体系，地平线确立了HR-300X多功能支援机兵的开发计划，并最终完成了代号「雪鸮」的先行试验机。在这一型机兵上，地平线舍弃了历来侧重的高精度与爆发火力，转而将重心放在装甲载荷、机动协调性以及战术数据链上，并设置十五组自动演算元件进行实时高效的最优配置。这一系列设计使该机拥有卓越的可持续作战能力，同时也可实时监控战场信息，向复数友军作战单位提供高效的维修与支援。",
   "modules": {
     "40044": {
@@ -7,15 +7,15 @@
       "SpecificEffects": "Dodge Rate <color=#F74848>+10%</color>."
     },
     "20524": {
-      "name": "守望者模块",
-      "SpecificEffects": "主动修理后，对所有修理目标施加<buf ID=7100305>[伤害提升Ⅲ]</buf>，持续<color=#F74848>2</color>回合；若目标已携带[伤害提升]效果，则提升<color=#F74848>1</color>级效果，最多提升至<buf ID=7100309>[伤害提升Ⅴ]</buf>"
+      "name": "Watcher Mod",
+      "SpecificEffects": "After active repair, grants <buf ID=7100305>[DMG UP III]</buf> to all targets, lasting for <color=#F74848>2</color> turns. If the target already possesses [DMG UP] buff, increases the buff level by <color=#F74848>1</color>, up to <buf ID=7100309>[DMG UP 5]</buf>."
     },
     "30428": {
-      "name": "维生模组",
-      "SpecificEffects": "主动修理时，修理量提升<color=#F74848>12%</color>，对耐久值最低部位的修理量额外提升<color=#F74848>24%</color>；\n自身和首个召唤单位遭受致命伤害时，不会被击毁，战后修复<color=#F74848>2</color>格范围内所有友军所有损毁部位和<color=#F74848>30%</color>最大耐久值，该效果每次出击各自可发动<color=#F74848>1</color>次"
+      "name": "Life Support Mod",
+      "SpecificEffects": "When executing active repairs, increases repair AMT by <color=#F74848>12%</color>, with an additional <color=#F74848>24%</color> to the lowest HP part.\nWhen this unit or their summon unit suffers overdamage, they will not be destroyed. After combat, restores HP to all allies within <color=#F74848>2</color> adjacent tiles for <color=#F74848>30%</color> of their max HP. This effect can trigger up to <color=#F74848>1</color> times per battle."
     }
   },
-  "version": "1.0",
+  "version": "2.3",
   "dispatchVersion": "2.5",
   "dispatchGroup": "Sparkplug"
 }

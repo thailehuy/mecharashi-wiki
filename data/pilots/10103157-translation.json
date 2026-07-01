@@ -5,12 +5,12 @@
   "Profession": "Mechanic",
   "Occupation": "Machinist",
   "Talent0_2Ability": {
-    "name": "共存理论",
-    "SpecificEffects": "出击时自动部署[咕咕]，[咕咕]可以替相邻<color=#F74848>1</color>格的友军抵挡格斗、突击与射击武器的攻击，[咕咕]继承[萨普里娅]驾驶机兵<color=#F74848>75%</color>最大耐久值和<color=#F74848>100%</color>的其余属性"
+    "name": "Coexistence Theory",
+    "SpecificEffects": "Auto deploy [Goo Goo] after sortie. [Goo Goo] can protect allies within <color=#F74848>1</color> adjacent tile from melee, assault and ranged attack. [Goo Goo] inherits <color=#F74848>75%</color> max HP and <color=#F74848>100%</color> of other attributes from [Sapientia]."
   },
   "Talent3_5Ability": {
-    "name": "共存理论",
-    "SpecificEffects": "出击时自动部署[咕咕]，[咕咕]可以替相邻<color=#F74848>1</color>格的友军抵挡格斗、突击与射击武器的攻击，[咕咕]继承[萨普里娅]驾驶机兵<color=#F74848>75%</color>最大耐久值和<color=#F74848>100%</color>的其余属性；\n[咕咕]护甲提升<color=#F74848>35%</color>，遭受伤害降低<color=#F74848>10%</color>，出击时额外获得<color=#F74848>1</color>AP"
+    "name": "Coexistence Theory",
+    "SpecificEffects": "Auto deploy [Goo Goo] after sortie. [Goo Goo] can protect allies within <color=#F74848>1</color> adjacent tile from melee, assault and ranged attack. [Goo Goo] inherits <color=#F74848>75%</color> max HP and <color=#F74848>100%</color> of other attributes from [Sapientia].\n[Goo Goo]'s defense is increased by <color=#F74848>35%</color>, DMG taken is reduced by <color=#F74848>10%</color>, and she gains <color=#F74848>1</color> additional AP upon deployment."
   },
   "skills": {
     "500001": {
@@ -24,40 +24,72 @@
       "SpecificEffects": "At the end of the action, if no damage was dealt this turn, restore <color=#F74848>1</color> AP."
     },
     "500803": {
-      "name": "损害管制",
+      "name": "Damage Control",
       "describe": "",
-      "SpecificEffects": "周围<color=#F74848>2</color>格内存在[咕咕]时，遭受伤害降低<color=#F74848>20%</color>"
+      "SpecificEffects": "While being within <color=#F74848>2</color> tiles around [Goo Goo], DMG taken is reduced by <color=#F74848>20%</color>."
     },
     "500804": {
-      "name": "同调检修",
-      "describe": "同时恢复自身和[咕咕]周围<range type=2>2格菱形</range>范围内所有友军的耐久值，修理量为修理背包的<color=#F74848>0.85</color>倍，可修复<color=#F74848>1</color>个损毁部位",
+      "name": "Synchronization Repair",
+      "describe": "Restores HP of all allies within <range type=2>2-tile</range> diamond around [Goo Goo] and this unit for <color=#F74848>0.85</color> Manipulator Repair AMT. Can restore <color=#F74848>1</color> destroyed part.",
       "SpecificEffects": ""
     },
     "500805": {
-      "name": "安全拓扑",
+      "name": "Safety Protocol",
       "describe": "",
-      "SpecificEffects": "主动修理后，对目标施加<buf ID=5008052>[免疫指令阻碍]</buf>，持续<color=#F74848>2</color>回合"
+      "SpecificEffects": "After active repairs, grants <buf ID=5008052>[Command Block Immunity]</buf> to the targets, lasting for <color=#F74848>2</color> turns."
     },
     "500806": {
-      "name": "双重整备",
-      "describe": "选择<color=#F74848>4</color>格范围内<color=#F74848>2</color>名友军，恢复机兵所有部位的耐久值，修理量为修理背包的<color=#F74848>1.75</color>倍，可修复<color=#F74848>1</color>个损毁部位",
+      "name": "Double Preparation",
+      "describe": "Selects <color=#F74848>2</color> allies within <color=#F74848>4</color> adjacent tiles, restores <color=#F74848>1.75</color> Manipulator Repair AMT to all parts. Can restore <color=#F74848>1</color> destroyed part.",
       "SpecificEffects": ""
     },
     "500807": {
-      "name": "完整性验证",
+      "name": "Integrity Validation",
       "describe": "",
-      "SpecificEffects": "[咕咕]行动结束时，恢复耐久值最低部位<color=#F74848>35%</color>的最大耐久值"
+      "SpecificEffects": "[Goo Goo] restores <color=#F74848>35%</color> HP to the lowest HP part at the end of turn."
     },
     "500808": {
-      "name": "最优重构",
-      "describe": "恢复单台机兵所有部位的耐久值，修理量为修理背包的<color=#F74848>2.6</color>倍，可修复所有损毁部位，刷新所有增益效果剩余回合数，并使<color=#F74848>1</color>个冷却中的指令冷却回合数<color=#F74848>-1</color>回合",
+      "name": "Optimal Reconstruction",
+      "describe": "Restores HP equal to <color=#F74848>2.6</color> Manipulator Repair AMT to all parts of a target and restores all destroyed parts. Also refreshes the turn count of all buffs and reduces CD of <color=#F74848>1</color> active command skill by <color=#F74848>1</color> turn.",
       "SpecificEffects": ""
     },
     "500809": {
       "name": "Regulated Repair",
-      "describe": "Restores HP equal to <color=#F74848>2.0</color>x Manipulator Repair AMT to all parts of a single ST. Can repair <color=#F74848>1</color> destroyed part.",
+      "describe": "Restores HP equal to <color=#F74848>2.0</color>x Manipulator Repair AMT to all parts of a single ST. Can repair <color=#F74848>1</color> destroyed part. If the target is [Goo Goo], grants <buf ID=7100901>[Movement Up]</buf> for <color=#F74848>1</color> turn.",
       "SpecificEffects": ""
     }
+  },
+  "summonSkills": {
+    "500808": {
+      "name": "Super Goo Goo!",
+      "describe": "",
+      "SpecificEffects": "Can use [Support Defend] to protect allies within <color=#F74848>1</color> adjacent tile from melee, assault and ranged attack. This effect can trigger up to <color=#F74848>3</color> times per turn. Gains <color=#F74848>1</color> AP after triggering.",
+      "icon": "Icon_skill_passive_5295.png"
+    },
+    "500808": {
+      "name": "Goo Goo Cover!",
+      "describe": "Protect allies within <color=#F74848>2</color> adjacent tiles from melee, assault and ranged attack. This effect can trigger up to <color=#F74848>3</color> times per turn, lasting for <color=#F74848>2</color> turns. Also grants [Short Circuit Impact!] for <color=#F74848>2</color> turns, and allows the unit to move <color=#F74848>2</color> additional tiles.",
+      "SpecificEffects": "",
+      "Ap": "1",
+      "CD": "2",
+      "icon": "Icon_skill_order_1031.png"
+    },
+    "500808": {
+      "name": "Goo Goo Boost!",
+      "describe": "Restores <color=#F74848>2</color> AP to an ally within <color=#F74848>2</color> adjacent tiles.",
+      "SpecificEffects": "",
+      "Ap": "4",
+      "CD": "2",
+      "icon": "Icon_skill_order_5002.png"
+    },
+    "500808": {
+      "name": "Goo Goo Shift!",
+      "describe": "Swap position with an ally within <color=#F74848>3</color> adjacent tiles. Can continue to move with remaining movement.",
+      "SpecificEffects": "",
+      "Ap": "1",
+      "CD": "2",
+      "icon": "Icon_skill_order_5138.png"
+    },
   },
   "neuralPassives": {
     "500011": {
@@ -86,7 +118,7 @@
     },
     "500031": {
       "name": "Emergency Repair 1",
-      "SpecificEffects": "At the end of the action, randomly select a single adjacent (<color=#F74848>1</color> tile) ally to perform <buf ID=900018>[Passive Repair]</buf>. The repair amount is <color=#F74848>0.6x</color> the Manipulator's Repair AMT and cannot repair damaged parts."
+      "SpecificEffects": "At the end of the action, randomly select a single adjacent (<color=#F74848>1</color> tile) ally to perform <buf ID=900018>[Passive Repair]</buf>. The repair amount is <color=#F74848>0.6x</color> the Manipulator's Manipulator Repair AMT and cannot repair damaged parts."
     },
     "500032": {
       "name": "AP Optimization 3",
@@ -102,15 +134,15 @@
     },
     "500035": {
       "name": "Emergency Repair 3",
-      "SpecificEffects": "<buf ID=900018>[Passive Repair]</buf>'s Repair AMT is now <color=#F74848>1x</color> that of the Manipulator."
+      "SpecificEffects": "<buf ID=900018>[Passive Repair]</buf>'s Manipulator Repair AMT is now <color=#F74848>1x</color> that of the Manipulator."
     },
     "500036": {
       "name": "Emergency Repair 4",
       "SpecificEffects": "The number of targets that <buf ID=900018>[Passive Repair]</buf> can repair increases by <color=#F74848>1</color>."
     },
     "500841": {
-      "name": "智械革新1",
-      "SpecificEffects": "对[咕咕]释放主动修理技能时，可以无视距离"
+      "name": "Machine Intelligence 1",
+      "SpecificEffects": "[Goo Goo] repair skills can ignore distance."
     },
     "500042": {
       "name": "AP Optimization 4",
@@ -121,17 +153,17 @@
       "SpecificEffects": "Each turn, the AP Cost of the 1st repair skill decreases by <color=#F74848>1</color>, with a minimum cost of <color=#F74848>1</color> AP."
     },
     "500844": {
-      "name": "智械革新2",
-      "SpecificEffects": "[咕咕]可继承[萨普里娅]<color=#F74848>100%</color>属性"
+      "name": "Machine Intelligence 2",
+      "SpecificEffects": "[Goo Goo] inherits <color=#F74848>100%</color> of [Sapientia] HP."
     },
     "500845": {
-      "name": "智械革新3",
-      "SpecificEffects": "[咕咕]在场时，[萨普里娅]修理量提升<color=#F74848>15%</color>，并免疫[指令阻碍]效果"
+      "name": "Machine Intelligence 3",
+      "SpecificEffects": "While [Goo Goo] is present, [Sapientia]'s Repair AMT is increased by <color=#F74848>15%</color>, and she is immune to [Command Block] effect."
     },
     "500846": {
-      "name": "智械革新4",
-      "SpecificEffects": "位于[咕咕]周围<color=#F74848>2</color>格内的友军也能成为主动修理技能的目标"
+      "name": "Machine Intelligence 4",
+      "SpecificEffects": "Allies within <color=#F74848>2</color> adjacent tiles around [Goo Goo] can be targeted with Repair skills."
     }
   },
-  "version": "1.0"
+  "version": "2.3"
 }
