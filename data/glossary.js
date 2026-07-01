@@ -736,7 +736,7 @@ window.GlossaryData = {
       "name": "Dodge Rate UP IV",
       "effect": "Dodge rate +20%."
     },
-    "7100307": {
+    "7100300": {
       "name": "DMG UP",
       "effect": "DMG increases according to buff level."
     },
