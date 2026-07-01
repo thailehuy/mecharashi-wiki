@@ -40054,7 +40054,7 @@
       "Talent3_5Ability": {
         "ID": "500851",
         "name": "Coexistence Theory",
-        "SpecificEffects": "Auto deploy <buf ID=1099900>[Goo Goo]</buf> after sortie. <buf ID=1099900>[Goo Goo]</buf> can protect allies within <color=#F74848>1</color> adjacent tile from melee, assault and ranged attack. <buf ID=1099900>[Goo Goo]</buf> inherits <color=#F74848>75%</color> max HP and <color=#F74848>100%</color> of other attributes from [Sapientia].\n<buf ID=1099900>[Goo Goo]</buf>'s defense is increased by <color=#F74848>35%</color>, DMG taken is reduced by <color=#F74848>10%</color>, and she gains <color=#F74848>1</color> additional AP upon deployment.",
+        "SpecificEffects": "Auto deploy <buf ID=1099900>[Goo Goo]</buf> after sortie. <buf ID=1099900>[Goo Goo]</buf> can protect allies within <color=#F74848>1</color> adjacent tile from melee, assault and ranged attack. <buf ID=1099900>[Goo Goo]</buf> inherits <color=#F74848>75%</color> max HP and <color=#F74848>100%</color> of other attributes from [Sapientia].\n<buf ID=1099900>[Goo Goo]</buf>'s armor is increased by <color=#F74848>35%</color>, DMG taken is reduced by <color=#F74848>10%</color>, and <buf ID=1099900>[Goo Goo]</buf> gains <color=#F74848>1</color> additional AP upon deployment.",
         "BufCarried": "5008501/5008511/900159",
         "SkillIcon": "Icon_skill_talent_5152",
         "icon": "Icon_skill_talent_5152",
@@ -40349,7 +40349,7 @@
                 "PassiveSkill": {
                   "ID": "500841",
                   "name": "Machine Intelligence 1",
-                  "SpecificEffects": "<buf ID=1099900>[Goo Goo]</buf> repair skills can ignore distance.",
+                  "SpecificEffects": "Repair skills targeting <buf ID=1099900>[Goo Goo]</buf> can ignore range restriction.",
                   "BufCarried": "5008411",
                   "SkillIcon": "Icon_skill_passive_5260",
                   "icon": "Icon_skill_passive_5260",
@@ -40778,7 +40778,7 @@
             "ID": "500806",
             "remarks": "\u8428\u666e\u91cc\u5a05-\u4eff\u751f\u7535\u8111",
             "name": "Double Preparation",
-            "describe": "Selects <color=#F74848>2</color> allies within <color=#F74848>4</color> adjacent tiles, restores <color=#F74848>1.75</color> Manipulator Repair AMT to all parts. Can restore <color=#F74848>1</color> destroyed part.",
+            "describe": "Selects <color=#F74848>2</color> separated allies within <color=#F74848>4</color> adjacent tiles, restores <color=#F74848>1.75</color> Manipulator Repair AMT to all parts. Can restore <color=#F74848>1</color> destroyed part.",
             "type": "Order",
             "CD": "1",
             "Ap": "4",
