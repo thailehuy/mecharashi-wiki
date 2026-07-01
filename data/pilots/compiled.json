@@ -411,7 +411,7 @@
                 "type": 3,
                 "PassiveSkill": {
                   "ID": "101746",
-                  "name": "Twin Star Edge 5",
+                  "name": "Twin Star Edge 4",
                   "SpecificEffects": "Talent effect increases to restoring <color=#F74848>5</color> AP and additionally grants <buf ID=1017466>[Starburst]</buf>, lasting for <color=#F74848>1</color> turn.",
                   "BufCarried": "1017461",
                   "SkillIcon": "Icon_skill_passive_5259",
@@ -40043,8 +40043,8 @@
       "quality": "SSR",
       "Talent0_2Ability": {
         "ID": "500850",
-        "name": "\u5171\u5b58\u7406\u8bba",
-        "SpecificEffects": "\u51fa\u51fb\u65f6\u81ea\u52a8\u90e8\u7f72[\u5495\u5495]\uff0c[\u5495\u5495]\u53ef\u4ee5\u66ff\u76f8\u90bb<color=#F74848>1</color>\u683c\u7684\u53cb\u519b\u62b5\u6321\u683c\u6597\u3001\u7a81\u51fb\u4e0e\u5c04\u51fb\u6b66\u5668\u7684\u653b\u51fb\uff0c[\u5495\u5495]\u7ee7\u627f[\u8428\u666e\u91cc\u5a05]\u9a7e\u9a76\u673a\u5175<color=#F74848>75%</color>\u6700\u5927\u8010\u4e45\u503c\u548c<color=#F74848>100%</color>\u7684\u5176\u4f59\u5c5e\u6027",
+        "name": "Coexistence Theory",
+        "SpecificEffects": "Auto deploy <buf ID=1099900>[Goo Goo]</buf> after sortie. <buf ID=1099900>[Goo Goo]</buf> can protect allies within <color=#F74848>1</color> adjacent tile from melee, assault and ranged attack. <buf ID=1099900>[Goo Goo]</buf> inherits <color=#F74848>75%</color> max HP and <color=#F74848>100%</color> of other attributes from [Sapientia].",
         "BufCarried": "5008501/900159",
         "SkillIcon": "Icon_skill_talent_5152",
         "icon": "Icon_skill_talent_5152",
@@ -40053,8 +40053,8 @@
       },
       "Talent3_5Ability": {
         "ID": "500851",
-        "name": "\u5171\u5b58\u7406\u8bba",
-        "SpecificEffects": "\u51fa\u51fb\u65f6\u81ea\u52a8\u90e8\u7f72[\u5495\u5495]\uff0c[\u5495\u5495]\u53ef\u4ee5\u66ff\u76f8\u90bb<color=#F74848>1</color>\u683c\u7684\u53cb\u519b\u62b5\u6321\u683c\u6597\u3001\u7a81\u51fb\u4e0e\u5c04\u51fb\u6b66\u5668\u7684\u653b\u51fb\uff0c[\u5495\u5495]\u7ee7\u627f[\u8428\u666e\u91cc\u5a05]\u9a7e\u9a76\u673a\u5175<color=#F74848>75%</color>\u6700\u5927\u8010\u4e45\u503c\u548c<color=#F74848>100%</color>\u7684\u5176\u4f59\u5c5e\u6027\uff1b\n[\u5495\u5495]\u62a4\u7532\u63d0\u5347<color=#F74848>35%</color>\uff0c\u906d\u53d7\u4f24\u5bb3\u964d\u4f4e<color=#F74848>10%</color>\uff0c\u51fa\u51fb\u65f6\u989d\u5916\u83b7\u5f97<color=#F74848>1</color>AP",
+        "name": "Coexistence Theory",
+        "SpecificEffects": "Auto deploy <buf ID=1099900>[Goo Goo]</buf> after sortie. <buf ID=1099900>[Goo Goo]</buf> can protect allies within <color=#F74848>1</color> adjacent tile from melee, assault and ranged attack. <buf ID=1099900>[Goo Goo]</buf> inherits <color=#F74848>75%</color> max HP and <color=#F74848>100%</color> of other attributes from [Sapientia].\n<buf ID=1099900>[Goo Goo]</buf>'s defense is increased by <color=#F74848>35%</color>, DMG taken is reduced by <color=#F74848>10%</color>, and she gains <color=#F74848>1</color> additional AP upon deployment.",
         "BufCarried": "5008501/5008511/900159",
         "SkillIcon": "Icon_skill_talent_5152",
         "icon": "Icon_skill_talent_5152",
@@ -40222,7 +40222,7 @@
                 "PassiveSkill": {
                   "ID": "500031",
                   "name": "Emergency Repair 1",
-                  "SpecificEffects": "At the end of the action, randomly select a single adjacent (<color=#F74848>1</color> tile) ally to perform <buf ID=900018>[Passive Repair]</buf>. The repair amount is <color=#F74848>0.6x</color> the Manipulator's Repair AMT and cannot repair damaged parts.",
+                  "SpecificEffects": "At the end of the action, randomly select a single adjacent (<color=#F74848>1</color> tile) ally to perform <buf ID=900018>[Passive Repair]</buf>. The repair amount is <color=#F74848>0.6x</color> the Manipulator's Manipulator Repair AMT and cannot repair damaged parts.",
                   "BufCarried": "5000311",
                   "SkillIcon": "Icon_skill_passive_3002",
                   "icon": "Icon_skill_passive_3002",
@@ -40297,7 +40297,7 @@
                 "PassiveSkill": {
                   "ID": "500035",
                   "name": "Emergency Repair 3",
-                  "SpecificEffects": "<buf ID=900018>[Passive Repair]</buf>'s Repair AMT is now <color=#F74848>1x</color> that of the Manipulator.",
+                  "SpecificEffects": "<buf ID=900018>[Passive Repair]</buf>'s Manipulator Repair AMT is now <color=#F74848>1x</color> that of the Manipulator.",
                   "BufCarried": "5000351",
                   "SkillIcon": "Icon_skill_passive_3002",
                   "icon": "Icon_skill_passive_3002",
@@ -40348,8 +40348,8 @@
                 "type": 3,
                 "PassiveSkill": {
                   "ID": "500841",
-                  "name": "\u667a\u68b0\u9769\u65b01",
-                  "SpecificEffects": "\u5bf9[\u5495\u5495]\u91ca\u653e\u4e3b\u52a8\u4fee\u7406\u6280\u80fd\u65f6\uff0c\u53ef\u4ee5\u65e0\u89c6\u8ddd\u79bb",
+                  "name": "Machine Intelligence 1",
+                  "SpecificEffects": "<buf ID=1099900>[Goo Goo]</buf> repair skills can ignore distance.",
                   "BufCarried": "5008411",
                   "SkillIcon": "Icon_skill_passive_5260",
                   "icon": "Icon_skill_passive_5260",
@@ -40404,8 +40404,8 @@
                 "type": 3,
                 "PassiveSkill": {
                   "ID": "500844",
-                  "name": "\u667a\u68b0\u9769\u65b02",
-                  "SpecificEffects": "[\u5495\u5495]\u53ef\u7ee7\u627f[\u8428\u666e\u91cc\u5a05]<color=#F74848>100%</color>\u5c5e\u6027",
+                  "name": "Machine Intelligence 2",
+                  "SpecificEffects": "<buf ID=1099900>[Goo Goo]</buf> inherits <color=#F74848>100%</color> of [Sapientia] HP.",
                   "BufCarried": "5008441",
                   "SkillIcon": "Icon_skill_passive_5260",
                   "icon": "Icon_skill_passive_5260",
@@ -40423,8 +40423,8 @@
                 "type": 3,
                 "PassiveSkill": {
                   "ID": "500845",
-                  "name": "\u667a\u68b0\u9769\u65b03",
-                  "SpecificEffects": "[\u5495\u5495]\u5728\u573a\u65f6\uff0c[\u8428\u666e\u91cc\u5a05]\u4fee\u7406\u91cf\u63d0\u5347<color=#F74848>15%</color>\uff0c\u5e76\u514d\u75ab[\u6307\u4ee4\u963b\u788d]\u6548\u679c",
+                  "name": "Machine Intelligence 3",
+                  "SpecificEffects": "While <buf ID=1099900>[Goo Goo]</buf> is present, [Sapientia]'s Repair AMT is increased by <color=#F74848>15%</color>, and she is immune to [Command Block] effect.",
                   "BufCarried": "5008451",
                   "SkillIcon": "Icon_skill_passive_5260",
                   "icon": "Icon_skill_passive_5260",
@@ -40442,8 +40442,8 @@
                 "type": 3,
                 "PassiveSkill": {
                   "ID": "500846",
-                  "name": "\u667a\u68b0\u9769\u65b04",
-                  "SpecificEffects": "\u4f4d\u4e8e[\u5495\u5495]\u5468\u56f4<color=#F74848>2</color>\u683c\u5185\u7684\u53cb\u519b\u4e5f\u80fd\u6210\u4e3a\u4e3b\u52a8\u4fee\u7406\u6280\u80fd\u7684\u76ee\u6807",
+                  "name": "Machine Intelligence 4",
+                  "SpecificEffects": "Allies within <color=#F74848>2</color> adjacent tiles around <buf ID=1099900>[Goo Goo]</buf> can be targeted with Repair skills.",
                   "BufCarried": "5008461",
                   "SkillIcon": "Icon_skill_passive_5260",
                   "icon": "Icon_skill_passive_5260",
@@ -40697,8 +40697,8 @@
           "weight": 2433,
           "skill": {
             "ID": "500803",
-            "name": "\u635f\u5bb3\u7ba1\u5236",
-            "SpecificEffects": "\u5468\u56f4<color=#F74848>2</color>\u683c\u5185\u5b58\u5728[\u5495\u5495]\u65f6\uff0c\u906d\u53d7\u4f24\u5bb3\u964d\u4f4e<color=#F74848>20%</color>",
+            "name": "Damage Control",
+            "SpecificEffects": "While being within <color=#F74848>2</color> tiles around <buf ID=1099900>[Goo Goo]</buf>, DMG taken is reduced by <color=#F74848>20%</color>.",
             "BufCarried": "5008031",
             "SkillIcon": "Icon_skill_passive_2126",
             "icon": "Icon_skill_passive_2126",
@@ -40723,8 +40723,8 @@
           "skill": {
             "ID": "500804",
             "remarks": "\u8428\u666e\u91cc\u5a05-\u4eff\u751f\u7535\u8111",
-            "name": "\u540c\u8c03\u68c0\u4fee",
-            "describe": "\u540c\u65f6\u6062\u590d\u81ea\u8eab\u548c[\u5495\u5495]\u5468\u56f4<range type=2>2\u683c\u83f1\u5f62</range>\u8303\u56f4\u5185\u6240\u6709\u53cb\u519b\u7684\u8010\u4e45\u503c\uff0c\u4fee\u7406\u91cf\u4e3a\u4fee\u7406\u80cc\u5305\u7684<color=#F74848>0.85</color>\u500d\uff0c\u53ef\u4fee\u590d<color=#F74848>1</color>\u4e2a\u635f\u6bc1\u90e8\u4f4d",
+            "name": "Synchronization Repair",
+            "describe": "Restores HP of all allies within <range type=2>2-tile</range> diamond around <buf ID=1099900>[Goo Goo]</buf> and this unit for <color=#F74848>0.85</color> Manipulator Repair AMT. Can restore <color=#F74848>1</color> destroyed part.",
             "type": "Order",
             "CD": "1",
             "Ap": "4",
@@ -40751,8 +40751,8 @@
           "weight": 2435,
           "skill": {
             "ID": "500805",
-            "name": "\u5b89\u5168\u62d3\u6251",
-            "SpecificEffects": "\u4e3b\u52a8\u4fee\u7406\u540e\uff0c\u5bf9\u76ee\u6807\u65bd\u52a0<buf ID=5008052>[\u514d\u75ab\u6307\u4ee4\u963b\u788d]</buf>\uff0c\u6301\u7eed<color=#F74848>2</color>\u56de\u5408",
+            "name": "Safety Protocol",
+            "SpecificEffects": "After active repairs, grants [Command Block Immunity] to the targets, lasting for <color=#F74848>2</color> turns.",
             "BufCarried": "5008051",
             "SkillIcon": "Icon_skill_passive_5189",
             "icon": "Icon_skill_passive_5189",
@@ -40777,8 +40777,8 @@
           "skill": {
             "ID": "500806",
             "remarks": "\u8428\u666e\u91cc\u5a05-\u4eff\u751f\u7535\u8111",
-            "name": "\u53cc\u91cd\u6574\u5907",
-            "describe": "\u9009\u62e9<color=#F74848>4</color>\u683c\u8303\u56f4\u5185<color=#F74848>2</color>\u540d\u53cb\u519b\uff0c\u6062\u590d\u673a\u5175\u6240\u6709\u90e8\u4f4d\u7684\u8010\u4e45\u503c\uff0c\u4fee\u7406\u91cf\u4e3a\u4fee\u7406\u80cc\u5305\u7684<color=#F74848>1.75</color>\u500d\uff0c\u53ef\u4fee\u590d<color=#F74848>1</color>\u4e2a\u635f\u6bc1\u90e8\u4f4d",
+            "name": "Double Preparation",
+            "describe": "Selects <color=#F74848>2</color> allies within <color=#F74848>4</color> adjacent tiles, restores <color=#F74848>1.75</color> Manipulator Repair AMT to all parts. Can restore <color=#F74848>1</color> destroyed part.",
             "type": "Order",
             "CD": "1",
             "Ap": "4",
@@ -40805,8 +40805,8 @@
           "weight": 2437,
           "skill": {
             "ID": "500807",
-            "name": "\u5b8c\u6574\u6027\u9a8c\u8bc1",
-            "SpecificEffects": "[\u5495\u5495]\u884c\u52a8\u7ed3\u675f\u65f6\uff0c\u6062\u590d\u8010\u4e45\u503c\u6700\u4f4e\u90e8\u4f4d<color=#F74848>35%</color>\u7684\u6700\u5927\u8010\u4e45\u503c",
+            "name": "Integrity Validation",
+            "SpecificEffects": "<buf ID=1099900>[Goo Goo]</buf> restores <color=#F74848>35%</color> HP to the lowest HP part at the end of turn.",
             "BufCarried": "5008071",
             "SkillIcon": "Icon_skill_passive_3133",
             "icon": "Icon_skill_passive_3133",
@@ -40831,8 +40831,8 @@
           "skill": {
             "ID": "500808",
             "remarks": "\u8428\u666e\u91cc\u5a05-\u4eff\u751f\u7535\u8111",
-            "name": "\u6700\u4f18\u91cd\u6784",
-            "describe": "\u6062\u590d\u5355\u53f0\u673a\u5175\u6240\u6709\u90e8\u4f4d\u7684\u8010\u4e45\u503c\uff0c\u4fee\u7406\u91cf\u4e3a\u4fee\u7406\u80cc\u5305\u7684<color=#F74848>2.6</color>\u500d\uff0c\u53ef\u4fee\u590d\u6240\u6709\u635f\u6bc1\u90e8\u4f4d\uff0c\u5237\u65b0\u6240\u6709\u589e\u76ca\u6548\u679c\u5269\u4f59\u56de\u5408\u6570\uff0c\u5e76\u4f7f<color=#F74848>1</color>\u4e2a\u51b7\u5374\u4e2d\u7684\u6307\u4ee4\u51b7\u5374\u56de\u5408\u6570<color=#F74848>-1</color>\u56de\u5408",
+            "name": "Optimal Reconstruction",
+            "describe": "Restores HP equal to <color=#F74848>2.6</color> Manipulator Repair AMT to all parts of a target and restores all destroyed parts. Also refreshes the turn count of all buffs and reduces CD of <color=#F74848>1</color> active command skill by <color=#F74848>1</color> turn.",
             "type": "Order",
             "CD": "2",
             "Ap": "5",
@@ -40853,7 +40853,7 @@
           "skill": {
             "ID": "500809",
             "name": "Regulated Repair",
-            "describe": "Restores HP equal to <color=#F74848>2.0</color>x Manipulator Repair AMT to all parts of a single ST. Can repair <color=#F74848>1</color> destroyed part.",
+            "describe": "Restores HP equal to <color=#F74848>2.0</color>x Manipulator Repair AMT to all parts of a single ST. Can repair <color=#F74848>1</color> destroyed part. If the target is <buf ID=1099900>[Goo Goo]</buf>, grants <buf ID=7100901>[Movement Up]</buf> for <color=#F74848>1</color> turn.",
             "type": "Order",
             "Ap": "2",
             "CD": "0",
@@ -41118,8 +41118,43 @@
         }
       ],
       "AllowedMechaDriveList_DriveAllowedList": "Medium",
-      "version": "1.0",
-      "enTranslation": false
+      "version": "2.3",
+      "enTranslation": true,
+      "summonSkills": [
+        {
+          "name": "Super Goo Goo!",
+          "describe": "",
+          "SpecificEffects": "Can use <buf ID=1099901>[Support Defend]</buf> to protect allies within <color=#F74848>1</color> adjacent tile from melee, assault and ranged attack. This effect can trigger up to <color=#F74848>3</color> times per turn. Gains <color=#F74848>1</color> AP after triggering.",
+          "icon": "Icon_skill_passive_5295"
+        },
+        {
+          "name": "Goo Goo Cover!",
+          "describe": "Protect allies within <color=#F74848>2</color> adjacent tiles from melee, assault and ranged attack. This effect can trigger up to <color=#F74848>3</color> times per turn, lasting for <color=#F74848>2</color> turns. Also grants <buf ID=1099902>[Short Circuit Impact!]</buf> for <color=#F74848>2</color> turns, and allows the unit to move <color=#F74848>2</color> additional tiles.",
+          "SpecificEffects": "",
+          "type": "Order",
+          "Ap": "1",
+          "CD": "2",
+          "icon": "Icon_skill_order_1031"
+        },
+        {
+          "name": "Goo Goo Boost!",
+          "describe": "Restores <color=#F74848>2</color> AP to an ally within <color=#F74848>2</color> adjacent tiles.",
+          "SpecificEffects": "",
+          "type": "Order",
+          "Ap": "4",
+          "CD": "2",
+          "icon": "Icon_skill_order_5002"
+        },
+        {
+          "name": "Goo Goo Shift!",
+          "describe": "Swap position with an ally within <color=#F74848>3</color> adjacent tiles. Can continue to move with remaining movement.",
+          "SpecificEffects": "",
+          "type": "Order",
+          "Ap": "1",
+          "CD": "2",
+          "icon": "Icon_skill_order_5138"
+        }
+      ]
     },
     {
       "ID": "10103120",

@@ -166,7 +166,7 @@ window.GlossaryData = {
     },
     "900053": {
       "name": "Short Circuit",
-      "effect": "Disrupts electronic systems, potentially disabling weapon functions or special abilities."
+      "effect": "At the end of the action, all body parts lose <color=#F74848>7%</color> of their maximum HP as [Fixed DMG]. This [Fixed DMG] cannot destroy parts."
     },
     "900054": {
       "name": "SP Ammo",
@@ -288,10 +288,6 @@ window.GlossaryData = {
       "name": "Insight",
       "effect": "When attacked by melee or ranged weapons, if equipped with Alter-Blade in both hands and both hands are in tact, activates [Insight Counterattack], dealing <color=#F74848>1.2x</color> DMG. [Insight Counterattack] ignores [Target Shift]. Each stack increases DMG dealt by <color=#F74848>5%</color> and dodge rate by <color=#F74848>5%</color>. <color=#F74848>1</color> stack is removed upon activation."
     },
-    "900138": {
-      "name": "Temporary AP cap",
-      "effect": "AP cap is temporarily increased. This effect is removed at the end of turn."
-    },
     "1002502": {
       "name": "Impulsive I",
       "effect": "Offensive aggression +5%, defensive stability -5%."
@@ -383,10 +379,6 @@ window.GlossaryData = {
     "1015414": {
       "name": "Critical Sense",
       "effect": "When attacked by Melee and Ranged Weapons, if equipped with two Alter-Blades and both Arms are undestroyed, interrupts the attack and triggers [Incisive Retaliation], dealing <color=#F74848>1.2</color>x DMG. After triggering, <color=#F74848>1</color> stack is removed. [Incisive Retaliation] ignores the Large Shield <buf ID=900027>[Target Shift]</buf> effect.\nFor each stack of Critical Sense possessed, DMG <color=#F74848>+5%</color> and Dodge Rate <color=#F74848>+5%</color>."
-    },
-    "1017503": {
-      "name": "Condensed I",
-      "effect": "DMG dealt increases by <color=#F74848>3%</color>, up to a maximum of <color=#F74848>5</color> stacks."
     },
     "2004022": {
       "name": "Hit UP",
@@ -526,7 +518,7 @@ window.GlossaryData = {
     },
     "3006502": {
       "name": "Short Circuit I",
-      "effect": "Short Circuit applied."
+      "effect": "At the end of the action, all body parts lose <color=#F74848>7%</color> of their maximum HP as [Fixed DMG]. This [Fixed DMG] cannot destroy parts."
     },
     "3008061": {
       "name": "Guard Disabled",
@@ -928,9 +920,33 @@ window.GlossaryData = {
       "name": "Invigorate I",
       "effect": "DMG dealt increases by <color=#F74848>4%</color>. DMG taken reduces by <color=#F74848>6%</color>. Repair AMT received increases by <color=#F74848>4%</color>. Stacking up to <color=#F74848>5</color> times."
     },
+    "1017503": {
+      "name": "Condensed I",
+      "effect": "DMG dealt increases by <color=#F74848>3%</color>, up to a maximum of <color=#F74848>5</color> stacks."
+    },
+    "900138": {
+      "name": "Temporary AP cap",
+      "effect": "AP cap is temporarily increased. This effect is removed at the end of turn."
+    },
     "1017466": {
       "name": "Starburst",
       "effect": "Critical hit chance increases by <color=#F74848>15%</color>. Critical hit DMG increases by <color=#F74848>10%</color>."
+    },
+    "1099900": {
+      "name": "Goo Goo",
+      "effect": "[Sapientia]'s personal ST that is deployed automatically when sortie, possesses skills [Super Goo Goo!], [Goo Goo Cover!], [Goo Goo Boost!] and [Goo Goo Shift!]."
+    },
+    "1099901": {
+      "name": "Support Defend",
+      "effect": "Blocks attacks from a specific weapon type for an ally within <color=#F74848>1</color> adjacent tile."
+    },
+    "1099902": {
+      "name": "Short Circuit Impact!",
+      "effect": "When attacked, applies [Short Circuit III] to the attacker after combat with effect: At the end of the action, all body parts lose <color=#F74848>7%</color> of their maximum HP as [Fixed DMG]. This [Fixed DMG] increases by <color=#F74848>1%</color> for each debuff the target carries, up to a maximum of <color=#F74848>12%</color>. This [Fixed DMG] cannot destroy parts."
+    },
+    "1099904": {
+      "name": "Short Circuit III",
+      "effect": "At the end of the action, all body parts lose <color=#F74848>7%</color> of their maximum HP as [Fixed DMG]. This [Fixed DMG] increases by <color=#F74848>1%</color> for each debuff the target carries, up to a maximum of <color=#F74848>12%</color>. This [Fixed DMG] cannot destroy parts."
     }
   },
   "skill": {

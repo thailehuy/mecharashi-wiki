@@ -762,6 +762,18 @@ body {
   margin-bottom: 1.25rem;
 }
 
+.summon-section-heading {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.summon-section-icon {
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+}
+
 .nd-parts {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

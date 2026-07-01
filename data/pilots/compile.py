@@ -51,6 +51,8 @@ for path in sorted(glob.glob(f'{DIR}/[0-9]*.json')):
     entry['enTranslation'] = bool(talent_desc) and all(ord(c) < 128 for c in talent_desc)
     if t.get('hiddenSkills'):
         entry['hiddenSkills'] = t['hiddenSkills']
+    if t.get('summonSkills'):
+        entry['summonSkills'] = t['summonSkills']
 
     pilots.append(entry)
 

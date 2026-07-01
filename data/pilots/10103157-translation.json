@@ -6,11 +6,11 @@
   "Occupation": "Machinist",
   "Talent0_2Ability": {
     "name": "Coexistence Theory",
-    "SpecificEffects": "Auto deploy [Goo Goo] after sortie. [Goo Goo] can protect allies within <color=#F74848>1</color> adjacent tile from melee, assault and ranged attack. [Goo Goo] inherits <color=#F74848>75%</color> max HP and <color=#F74848>100%</color> of other attributes from [Sapientia]."
+    "SpecificEffects": "Auto deploy <buf ID=1099900>[Goo Goo]</buf> after sortie. <buf ID=1099900>[Goo Goo]</buf> can protect allies within <color=#F74848>1</color> adjacent tile from melee, assault and ranged attack. <buf ID=1099900>[Goo Goo]</buf> inherits <color=#F74848>75%</color> max HP and <color=#F74848>100%</color> of other attributes from [Sapientia]."
   },
   "Talent3_5Ability": {
     "name": "Coexistence Theory",
-    "SpecificEffects": "Auto deploy [Goo Goo] after sortie. [Goo Goo] can protect allies within <color=#F74848>1</color> adjacent tile from melee, assault and ranged attack. [Goo Goo] inherits <color=#F74848>75%</color> max HP and <color=#F74848>100%</color> of other attributes from [Sapientia].\n[Goo Goo]'s defense is increased by <color=#F74848>35%</color>, DMG taken is reduced by <color=#F74848>10%</color>, and she gains <color=#F74848>1</color> additional AP upon deployment."
+    "SpecificEffects": "Auto deploy <buf ID=1099900>[Goo Goo]</buf> after sortie. <buf ID=1099900>[Goo Goo]</buf> can protect allies within <color=#F74848>1</color> adjacent tile from melee, assault and ranged attack. <buf ID=1099900>[Goo Goo]</buf> inherits <color=#F74848>75%</color> max HP and <color=#F74848>100%</color> of other attributes from [Sapientia].\n<buf ID=1099900>[Goo Goo]</buf>'s defense is increased by <color=#F74848>35%</color>, DMG taken is reduced by <color=#F74848>10%</color>, and she gains <color=#F74848>1</color> additional AP upon deployment."
   },
   "skills": {
     "500001": {
@@ -26,17 +26,17 @@
     "500803": {
       "name": "Damage Control",
       "describe": "",
-      "SpecificEffects": "While being within <color=#F74848>2</color> tiles around [Goo Goo], DMG taken is reduced by <color=#F74848>20%</color>."
+      "SpecificEffects": "While being within <color=#F74848>2</color> tiles around <buf ID=1099900>[Goo Goo]</buf>, DMG taken is reduced by <color=#F74848>20%</color>."
     },
     "500804": {
       "name": "Synchronization Repair",
-      "describe": "Restores HP of all allies within <range type=2>2-tile</range> diamond around [Goo Goo] and this unit for <color=#F74848>0.85</color> Manipulator Repair AMT. Can restore <color=#F74848>1</color> destroyed part.",
+      "describe": "Restores HP of all allies within <range type=2>2-tile</range> diamond around <buf ID=1099900>[Goo Goo]</buf> and this unit for <color=#F74848>0.85</color> Manipulator Repair AMT. Can restore <color=#F74848>1</color> destroyed part.",
       "SpecificEffects": ""
     },
     "500805": {
       "name": "Safety Protocol",
       "describe": "",
-      "SpecificEffects": "After active repairs, grants <buf ID=5008052>[Command Block Immunity]</buf> to the targets, lasting for <color=#F74848>2</color> turns."
+      "SpecificEffects": "After active repairs, grants [Command Block Immunity] to the targets, lasting for <color=#F74848>2</color> turns."
     },
     "500806": {
       "name": "Double Preparation",
@@ -46,7 +46,7 @@
     "500807": {
       "name": "Integrity Validation",
       "describe": "",
-      "SpecificEffects": "[Goo Goo] restores <color=#F74848>35%</color> HP to the lowest HP part at the end of turn."
+      "SpecificEffects": "<buf ID=1099900>[Goo Goo]</buf> restores <color=#F74848>35%</color> HP to the lowest HP part at the end of turn."
     },
     "500808": {
       "name": "Optimal Reconstruction",
@@ -55,42 +55,45 @@
     },
     "500809": {
       "name": "Regulated Repair",
-      "describe": "Restores HP equal to <color=#F74848>2.0</color>x Manipulator Repair AMT to all parts of a single ST. Can repair <color=#F74848>1</color> destroyed part. If the target is [Goo Goo], grants <buf ID=7100901>[Movement Up]</buf> for <color=#F74848>1</color> turn.",
+      "describe": "Restores HP equal to <color=#F74848>2.0</color>x Manipulator Repair AMT to all parts of a single ST. Can repair <color=#F74848>1</color> destroyed part. If the target is <buf ID=1099900>[Goo Goo]</buf>, grants <buf ID=7100901>[Movement Up]</buf> for <color=#F74848>1</color> turn.",
       "SpecificEffects": ""
     }
   },
-  "summonSkills": {
-    "500808": {
+  "summonSkills": [
+    {
       "name": "Super Goo Goo!",
       "describe": "",
-      "SpecificEffects": "Can use [Support Defend] to protect allies within <color=#F74848>1</color> adjacent tile from melee, assault and ranged attack. This effect can trigger up to <color=#F74848>3</color> times per turn. Gains <color=#F74848>1</color> AP after triggering.",
-      "icon": "Icon_skill_passive_5295.png"
+      "SpecificEffects": "Can use <buf ID=1099901>[Support Defend]</buf> to protect allies within <color=#F74848>1</color> adjacent tile from melee, assault and ranged attack. This effect can trigger up to <color=#F74848>3</color> times per turn. Gains <color=#F74848>1</color> AP after triggering.",
+      "icon": "Icon_skill_passive_5295"
     },
-    "500808": {
+    {
       "name": "Goo Goo Cover!",
-      "describe": "Protect allies within <color=#F74848>2</color> adjacent tiles from melee, assault and ranged attack. This effect can trigger up to <color=#F74848>3</color> times per turn, lasting for <color=#F74848>2</color> turns. Also grants [Short Circuit Impact!] for <color=#F74848>2</color> turns, and allows the unit to move <color=#F74848>2</color> additional tiles.",
+      "describe": "Protect allies within <color=#F74848>2</color> adjacent tiles from melee, assault and ranged attack. This effect can trigger up to <color=#F74848>3</color> times per turn, lasting for <color=#F74848>2</color> turns. Also grants <buf ID=1099902>[Short Circuit Impact!]</buf> for <color=#F74848>2</color> turns, and allows the unit to move <color=#F74848>2</color> additional tiles.",
       "SpecificEffects": "",
+      "type": "Order",
       "Ap": "1",
       "CD": "2",
-      "icon": "Icon_skill_order_1031.png"
+      "icon": "Icon_skill_order_1031"
     },
-    "500808": {
+    {
       "name": "Goo Goo Boost!",
       "describe": "Restores <color=#F74848>2</color> AP to an ally within <color=#F74848>2</color> adjacent tiles.",
       "SpecificEffects": "",
+      "type": "Order",
       "Ap": "4",
       "CD": "2",
-      "icon": "Icon_skill_order_5002.png"
+      "icon": "Icon_skill_order_5002"
     },
-    "500808": {
+    {
       "name": "Goo Goo Shift!",
       "describe": "Swap position with an ally within <color=#F74848>3</color> adjacent tiles. Can continue to move with remaining movement.",
       "SpecificEffects": "",
+      "type": "Order",
       "Ap": "1",
       "CD": "2",
-      "icon": "Icon_skill_order_5138.png"
-    },
-  },
+      "icon": "Icon_skill_order_5138"
+    }
+  ],
   "neuralPassives": {
     "500011": {
       "name": "CEC 2",
@@ -142,7 +145,7 @@
     },
     "500841": {
       "name": "Machine Intelligence 1",
-      "SpecificEffects": "[Goo Goo] repair skills can ignore distance."
+      "SpecificEffects": "<buf ID=1099900>[Goo Goo]</buf> repair skills can ignore distance."
     },
     "500042": {
       "name": "AP Optimization 4",
@@ -154,15 +157,15 @@
     },
     "500844": {
       "name": "Machine Intelligence 2",
-      "SpecificEffects": "[Goo Goo] inherits <color=#F74848>100%</color> of [Sapientia] HP."
+      "SpecificEffects": "<buf ID=1099900>[Goo Goo]</buf> inherits <color=#F74848>100%</color> of [Sapientia] HP."
     },
     "500845": {
       "name": "Machine Intelligence 3",
-      "SpecificEffects": "While [Goo Goo] is present, [Sapientia]'s Repair AMT is increased by <color=#F74848>15%</color>, and she is immune to [Command Block] effect."
+      "SpecificEffects": "While <buf ID=1099900>[Goo Goo]</buf> is present, [Sapientia]'s Repair AMT is increased by <color=#F74848>15%</color>, and she is immune to [Command Block] effect."
     },
     "500846": {
       "name": "Machine Intelligence 4",
-      "SpecificEffects": "Allies within <color=#F74848>2</color> adjacent tiles around [Goo Goo] can be targeted with Repair skills."
+      "SpecificEffects": "Allies within <color=#F74848>2</color> adjacent tiles around <buf ID=1099900>[Goo Goo]</buf> can be targeted with Repair skills."
     }
   },
   "version": "2.3"

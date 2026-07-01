@@ -241,6 +241,7 @@ Pages.pilots = {
         '</div>' +
       '</div>' +
       this._renderSkills(p.biomimetic_computer_data, p.hiddenSkills) +
+      this._renderSummonSkills(p) +
       this._renderNeuralDrive(p.NeuralDriveTemplate)
     );
   },
@@ -357,6 +358,65 @@ Pages.pilots = {
         '<div class="section-heading">Skills</div>' +
         (innateHtml  ? '<div class="skill-list skill-list-innate mb-3">' + innateHtml  + '</div>' : '') +
         (regularHtml || hiddenHtml ? '<div class="skill-list">' + regularHtml + hiddenHtml + '</div>' : '') +
+      '</div>'
+    );
+  },
+
+  _renderSummonSkills: function (p) {
+    var skills = p.summonSkills;
+    if (!skills || !skills.length) return '';
+    var self = this;
+
+    var talentIcon = ((p.Talent0_2Ability || {}).SkillIcon || (p.Talent0_2Ability || {}).icon) || '';
+    var talentIconHtml = talentIcon
+      ? '<img class="skill-icon summon-section-icon" src="' + SKILL_BASE + encodeURIComponent(talentIcon) + '.png" alt="" />'
+      : '';
+    var talentName = (p.Talent0_2Ability || {}).name || 'Summon';
+
+    var TYPE_LABEL = { EquipmentSkill: 'Attack', Order: 'Code', SpecialAssault: 'Code + Attack' };
+    var TYPE_CLASS = { EquipmentSkill: 'skill-type-attack', Order: 'skill-type-code', SpecialAssault: 'skill-type-special' };
+
+    var cardsHtml = skills.map(function (sk) {
+      var type      = sk.type || null;
+      var typeLabel = type ? (TYPE_LABEL[type] || type) : 'Passive';
+      var typeCls   = type ? (TYPE_CLASS[type] || '') : 'skill-type-passive';
+      var desc      = self._parseEffects(sk.describe || sk.SpecificEffects || '');
+      var iconSrc   = SKILL_BASE + encodeURIComponent(sk.icon.replace(/\.png$/, '')) + '.png';
+
+      var statBadges = type
+        ? '<span class="skill-stat"><span class="skill-stat-label">AP</span>' + (sk.Ap || '—') + '</span>' +
+          '<span class="skill-stat"><span class="skill-stat-label">CD</span>' + (sk.CD || '0') + '</span>'
+        : (sk.Ap != null
+          ? '<span class="skill-stat"><span class="skill-stat-label">AP</span>' + sk.Ap + '</span>' +
+            '<span class="skill-stat"><span class="skill-stat-label">CD</span>' + (sk.CD || '0') + '</span>'
+          : '');
+
+      var typeBadge = '<span class="skill-type-badge ' + typeCls + '">' + typeLabel + '</span>';
+
+      return (
+        '<div class="skill-card">' +
+          '<div class="skill-header">' +
+            '<img class="skill-icon" src="' + iconSrc + '" alt="' + $('<span>').text(sk.name).html() + '" />' +
+            '<div class="skill-header-info">' +
+              '<div class="skill-name-row">' +
+                '<span class="skill-name">' + $('<span>').text(sk.name).html() + '</span>' +
+                typeBadge +
+              '</div>' +
+              '<div class="skill-stats">' + statBadges + '</div>' +
+            '</div>' +
+          '</div>' +
+          (desc ? '<div class="talent-desc">' + desc + '</div>' : '') +
+        '</div>'
+      );
+    }).join('');
+
+    return (
+      '<div class="nd-section">' +
+        '<div class="section-heading summon-section-heading">' +
+          talentIconHtml +
+          $('<span>').text(talentName).html() + ' — Skills' +
+        '</div>' +
+        '<div class="skill-list">' + cardsHtml + '</div>' +
       '</div>'
     );
   },
