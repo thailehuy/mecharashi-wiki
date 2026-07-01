@@ -944,9 +944,17 @@
       "name": "Short Circuit Impact!",
       "effect": "When attacked, applies [Short Circuit III] to the attacker after combat with effect: At the end of the action, all body parts lose <color=#F74848>7%</color> of their maximum HP as [Fixed DMG]. This [Fixed DMG] increases by <color=#F74848>1%</color> for each debuff the target carries, up to a maximum of <color=#F74848>12%</color>. This [Fixed DMG] cannot destroy parts."
     },
+    "1099903": {
+      "name": "Command Block",
+      "effect": "Cannot execute command skills."
+    },
     "1099904": {
       "name": "Short Circuit III",
       "effect": "At the end of the action, all body parts lose <color=#F74848>7%</color> of their maximum HP as [Fixed DMG]. This [Fixed DMG] increases by <color=#F74848>1%</color> for each debuff the target carries, up to a maximum of <color=#F74848>12%</color>. This [Fixed DMG] cannot destroy parts."
+    },
+    "1099905": {
+      "name": "Command Block Immunity",
+      "effect": "Immune to <buf ID=1099903>[Command Block]</buf> effect."
     }
   },
   "skill": {
