@@ -34490,7 +34490,7 @@
       "Talent0_2Ability": {
         "ID": "301150",
         "name": "Experimental Observation",
-        "SpecificEffects": "Can use <skill ID=301150>[Dimentional Rack]</skill> code. While in <buf ID=900111>[Dimentional Rack]</buf> Mode, each <color=#F74848>1</color> hit on an enemy unit grants <color=#F74848>1</color> stack of <buf ID=3011512>[Positional Advantage I]</buf>. While in <buf ID=900111>[Dimentional Rack]</buf> Mode, if there are no enemy units within <color=#F74848>3</color> tiles, gains <buf ID=3004502>[Stealth I]</buf> lasting for <color=#F74848>2</color> turns.",
+        "SpecificEffects": "Can use <skill ID=301150>[Directional Rack]</skill> code. While in <buf ID=900111>[Directional Rack]</buf> Mode, each <color=#F74848>1</color> hit on an enemy unit grants <color=#F74848>1</color> stack of <buf ID=3011512>[Positional Advantage I]</buf>. While in <buf ID=900111>[Directional Rack]</buf> Mode, if there are no enemy units within <color=#F74848>3</color> tiles, gains <buf ID=3004502>[Stealth I]</buf> lasting for <color=#F74848>2</color> turns.",
         "BufCarried": "3011501/3011516",
         "SkillIcon": "Icon_skill_talent_5147",
         "icon": "Icon_skill_talent_5147",
@@ -34500,7 +34500,7 @@
       "Talent3_5Ability": {
         "ID": "301151",
         "name": "Experimental Observation",
-        "SpecificEffects": "Can use <skill ID=301150>[Dimentional Rack]</skill> code. While in <buf ID=900111>[Dimentional Rack]</buf> Mode, each <color=#F74848>1</color> hit on an enemy unit grants <color=#F74848>1</color> stack of <buf ID=3011512>[Positional Advantage I]</buf>. While in <buf ID=900111>[Dimentional Rack]</buf> Mode, if there are no enemy units within <color=#F74848>3</color> tiles, gains <buf ID=3004502>[Stealth I]</buf> lasting for <color=#F74848>2</color> turns.\nThe <buf ID=3011512>[Positional Advantage I]</buf> stack limit increase to <color=#F74848>4</color>.",
+        "SpecificEffects": "Can use <skill ID=301150>[Directional Rack]</skill> code. While in <buf ID=900111>[Directional Rack]</buf> Mode, each <color=#F74848>1</color> hit on an enemy unit grants <color=#F74848>1</color> stack of <buf ID=3011512>[Positional Advantage I]</buf>. While in <buf ID=900111>[Directional Rack]</buf> Mode, if there are no enemy units within <color=#F74848>3</color> tiles, gains <buf ID=3004502>[Stealth I]</buf> lasting for <color=#F74848>2</color> turns.\nThe <buf ID=3011512>[Positional Advantage I]</buf> stack limit increase to <color=#F74848>4</color>.",
         "BufCarried": "3011501/3011511/3011515/3011516",
         "SkillIcon": "Icon_skill_talent_5147",
         "icon": "Icon_skill_talent_5147",
@@ -34851,7 +34851,7 @@
                 "PassiveSkill": {
                   "ID": "301144",
                   "name": "Trickster 2",
-                  "SpecificEffects": "While in <buf ID=900111>[Dimentional Rack]</buf> Mode, the <skill ID=301144>[Rapid Realignment]</skill> code can be used.",
+                  "SpecificEffects": "While in <buf ID=900111>[Directional Rack]</buf> Mode, the <skill ID=301144>[Rapid Realignment]</skill> code can be used.",
                   "BufCarried": "3011441",
                   "SkillIcon": "Icon_skill_passive_5246",
                   "icon": "Icon_skill_passive_5246",
@@ -34889,7 +34889,7 @@
                 "PassiveSkill": {
                   "ID": "301146",
                   "name": "Trickster 4",
-                  "SpecificEffects": "At the end of action, if in <buf ID=900111>[Dimentional Rack]</buf> Mode, Sniper Rifle range <color=#F74848>+1</color>. Can stack <color=#F74848>2</color> times. All stacks are lost upon exiting <buf ID=900111>[Dimentional Rack]</buf> Mode.",
+                  "SpecificEffects": "At the end of action, if in <buf ID=900111>[Directional Rack]</buf> Mode, Sniper Rifle range <color=#F74848>+1</color>. Can stack <color=#F74848>2</color> times. All stacks are lost upon exiting <buf ID=900111>[Directional Rack]</buf> Mode.",
                   "BufCarried": "3011461",
                   "SkillIcon": "Icon_skill_passive_5246",
                   "icon": "Icon_skill_passive_5246",
@@ -35151,7 +35151,7 @@
             "icon": "Icon_skill_main_1137",
             "Status": 1,
             "weight": 3383,
-            "describe": "Uses a Sniper Rifle to attack a target, dealing <color=#F74848>1.2x</color> DMG. When in <buf ID=900111>[Dimentional Rack]</buf> Mode, enters <buf ID=900014>[Aiming]</buf> Mode before attacking."
+            "describe": "Uses a Sniper Rifle to attack a target, dealing <color=#F74848>1.2x</color> DMG. When in <buf ID=900111>[Directional Rack]</buf> Mode, enters <buf ID=900014>[Aiming]</buf> Mode before attacking."
           }
         },
         {
@@ -35277,7 +35277,7 @@
           "skill": {
             "ID": "301107",
             "name": "Plan B!",
-            "SpecificEffects": "Upon exiting <buf ID=900111>[Dimentional Rack]</buf> Mode, gains a Movement bonus based on the number of <buf ID=3011512>[Positional Advantage I]</buf> stacks. Every <color=#F74848>4</color> stacks grants Movement <color=#F74848>+1</color>, lasting for <color=#F74848>1</color> turn",
+            "SpecificEffects": "Upon exiting <buf ID=900111>[Directional Rack]</buf> Mode, gains a Movement bonus based on the number of <buf ID=3011512>[Positional Advantage I]</buf> stacks. Every <color=#F74848>4</color> stacks grants Movement <color=#F74848>+1</color>, lasting for <color=#F74848>1</color> turn",
             "BufCarried": "3011071",
             "SkillIcon": "Icon_skill_passive_5244",
             "icon": "Icon_skill_passive_5244",
