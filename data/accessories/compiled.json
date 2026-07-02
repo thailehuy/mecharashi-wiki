@@ -31,7 +31,7 @@
       ],
       "describe": "戰後為目標添加[回避率降低Ⅴ]，持續1回合",
       "en_name": "Shudder",
-      "en_describe": "Inflicts <buf ID=7101107>[Dodge Rate Down V]</buf> (Dodge Rate -<color=#F74848>20%</color>) on the targetafter combat, lasting for <color=#F74848>1</color> turn",
+      "en_describe": "Inflicts <buf ID=7101107>[Dodge Rate Down V]</buf> on the target after combat, lasting for <color=#F74848>1</color> turn",
       "en_type": "After-Combat Effects",
       "notes": "The same debuff effect cannot stack.Two-handed weapons and backpack weapons only.Only triggers once per turn",
       "cos": [
@@ -114,7 +114,7 @@
       ],
       "describe": "戰後為自己添加[暴擊率提升Ⅳ]，持續1回合",
       "en_name": "Innervate",
-      "en_describe": "Gains <buf ID=7100406>[Crit Rate Up IV]</buf> (Crit Rate +<color=#F74848>25%</color>) after combat,lasting for <color=#F74848>1</color> turn",
+      "en_describe": "Gains <buf ID=7100406>[Crit Rate Up IV]</buf> after combat, lasting for <color=#F74848>1</color> turn",
       "en_type": "After-Combat Effects",
       "notes": "Two-handed weapons and backpack weapons only.The same buff effect cannot stack",
       "cos": [
@@ -134,7 +134,7 @@
       ],
       "describe": "戰後為自己添加[命中率提升Ⅴ]，持續1回合",
       "en_name": "Energized",
-      "en_describe": "Gains <buf ID=7100107>[Hit Rate Up V]</buf> (Hit Rate +<color=#F74848>20%</color>) after combat,lasting for <color=#F74848>1</color> turn",
+      "en_describe": "Gains <buf ID=7100107>[Hit Rate Up V]</buf> after combat, lasting for <color=#F74848>1</color> turn",
       "en_type": "After-Combat Effects",
       "notes": "Two-handed weapons and backpack weapons only.The same buff effect cannot stack",
       "cos": [
@@ -154,7 +154,7 @@
       ],
       "describe": "戰後為自己添加[傷害提升Ⅴ]，持續1回合",
       "en_name": "High-Spirited",
-      "en_describe": "Gains <buf ID=7100309>[DMG Up V]</buf> (DMG +<color=#F74848>25%</color>) after combat, lasting for <color=#F74848>1</color> turn",
+      "en_describe": "Gains <buf ID=7100309>[DMG Up V]</buf> after combat, lasting for <color=#F74848>1</color> turn",
       "en_type": "After-Combat Effects",
       "notes": "Two-handed weapons and backpack weapons only.The same buff effect cannot stack",
       "cos": [
@@ -177,7 +177,7 @@
       ],
       "describe": "戰後恢復相當於本次傷害的30%耐久，每回合最多生效1次",
       "en_name": "Reorganized",
-      "en_describe": "After combat, restores HP equal to <color=#F74848>30%</color> of damage dealt in this skirmish.Can take effect only <color=#F74848>1</color> time per turn",
+      "en_describe": "After combat, restores HP equal to <color=#F74848>30%</color> of damage dealt in this skirmish. Can take effect only <color=#F74848>1</color> time per turn",
       "en_type": "After-Combat Effects",
       "notes": "Cannot trigger on missed attacks.Two-handed weapons and backpack weapons only.Only triggers once per turn",
       "cos": [
@@ -196,7 +196,7 @@
       ],
       "describe": "戰後恢復10%耐久，每回合最多生效1次",
       "en_name": "Emergency",
-      "en_describe": "Restores <color=#F74848>10%</color> of HP after combat.Can take effect only <color=#F74848>1</color> time per turn",
+      "en_describe": "Restores <color=#F74848>10%</color> of HP after combat. Can take effect only <color=#F74848>1</color> time per turn",
       "en_type": "After-Combat Effects",
       "notes": "Two-handed weapons and backpack weapons only.Only triggers once per turn",
       "cos": [
@@ -215,7 +215,7 @@
       ],
       "describe": "對命中部位以外的1個部位造成20%的濺射傷害",
       "en_name": "Splash",
-      "en_describe": "Deals Splash DMG to <color=#F74848>1</color> part, except the part hit,equal to <color=#F74848>20%</color> of damage dealt",
+      "en_describe": "Deals Splash DMG to <color=#F74848>1</color> part, except the part hit, equal to <color=#F74848>20%</color> of damage dealt",
       "en_type": "In-Combat Effects",
       "notes": "Two-handed weapons and backpack weapons only.Single-shot weapons only.Cannot be triggered outside of combat.Cannot trigger on missed attacks",
       "cos": [
@@ -774,7 +774,7 @@
       ],
       "describe": "戰後為自己添加[整葺Ⅲ]，持續1回合",
       "en_name": "Reconstruction",
-      "en_describe": "Gains <buf ID=1099907>[Reconstruction III]</buf> (Repair AMT +<color=#F74848>25%</color>) after combat,lasting for <color=#F74848>1</color> turn",
+      "en_describe": "Gains <buf ID=1099907>[Reconstruction III]</buf> after combat, lasting for <color=#F74848>1</color> turn",
       "en_type": "After-Combat Effects",
       "notes": "Buff effects of the same type cannot stack.Only triggers once per turn",
       "cos": [
@@ -815,7 +815,7 @@
       ],
       "describe": "戰後對目標所有部位造成共計0.4倍武器攻擊的固定傷害",
       "en_name": "Short Circuit",
-      "en_describe": "After combat, deals Fixed DMG equalto a total of <color=#F74848>0.4x</color> Weapon ATK to all parts of target",
+      "en_describe": "After combat, deals Fixed DMG equal to a total of <color=#F74848>0.4x</color> Weapon ATK to all parts of target",
       "en_type": "After-Combat Effects",
       "notes": "",
       "cos": [
@@ -836,7 +836,7 @@
       ],
       "describe": "戰後為自己添加[模糊Ⅲ]，持續1回合",
       "en_name": "Blur",
-      "en_describe": "Gains <buf ID=1099906>[Blur III]</buf> (Dodge Rate +<color=#F74848>35%</color>) after combat, lasting for <color=#F74848>1</color> turn",
+      "en_describe": "Gains <buf ID=1099906>[Blur III]</buf> after combat, lasting for <color=#F74848>1</color> turn",
       "en_type": "After-Combat Effects",
       "notes": "Buff effects of the same type cannot stack.Only triggers once per turn",
       "cos": [
@@ -920,7 +920,7 @@
       ],
       "describe": "戰後為目標添加[回避率降低Ⅴ]，持續1回合",
       "en_name": "Shudder",
-      "en_describe": "Inflicts <buf ID=7101107>[Dodge Rate Down V]</buf> (Dodge Rate -<color=#F74848>20%</color>) on the targetafter combat, lasting for <color=#F74848>1</color> turn",
+      "en_describe": "Inflicts <buf ID=7101107>[Dodge Rate Down V]</buf> on the target after combat, lasting for <color=#F74848>1</color> turn",
       "en_type": "After-Combat Effects",
       "notes": "The same debuff effect cannot stack.Only triggers once per turn",
       "cos": [
@@ -1007,7 +1007,7 @@
       ],
       "describe": "戰後為自己添加[暴擊率提升Ⅳ]，持續1回合",
       "en_name": "Innervate",
-      "en_describe": "Gains <buf ID=7100406>[Crit Rate Up IV]</buf> (Crit Rate +<color=#F74848>25%</color>) after combat,lasting for <color=#F74848>1</color> turn",
+      "en_describe": "Gains <buf ID=7100406>[Crit Rate Up IV]</buf> after combat, lasting for <color=#F74848>1</color> turn",
       "en_type": "After-Combat Effects",
       "notes": "The same buff effect cannot stack",
       "cos": [
@@ -1026,7 +1026,7 @@
       ],
       "describe": "戰後為自己添加[命中率提升Ⅴ]，持續1回合",
       "en_name": "Energized",
-      "en_describe": "Gains <buf ID=7100107>[Hit Rate Up V]</buf> (Hit Rate +<color=#F74848>20%</color>) after combat,lasting for <color=#F74848>1</color> turn",
+      "en_describe": "Gains <buf ID=7100107>[Hit Rate Up V]</buf> after combat, lasting for <color=#F74848>1</color> turn",
       "en_type": "After-Combat Effects",
       "notes": "The same buff effect cannot stack",
       "cos": [
@@ -1050,7 +1050,7 @@
       ],
       "describe": "戰後為自己添加[傷害提升Ⅴ]，持續1回合",
       "en_name": "High-Spirited",
-      "en_describe": "Gains <buf ID=7100309>[DMG Up V]</buf> (DMG +<color=#F74848>25%</color>) after combat, lasting for <color=#F74848>1</color> turn",
+      "en_describe": "Gains <buf ID=7100309>[DMG Up V]</buf> after combat, lasting for <color=#F74848>1</color> turn",
       "en_type": "After-Combat Effects",
       "notes": "The same buff effect cannot stack",
       "cos": [
@@ -1070,7 +1070,7 @@
       ],
       "describe": "戰後恢復相當於本次傷害的30%耐久，每回合最多生效1次",
       "en_name": "Reorganized",
-      "en_describe": "After combat, restores HP equal to <color=#F74848>30%</color> of damage dealt in this skirmish.Can take effect only <color=#F74848>1</color> time per turn",
+      "en_describe": "After combat, restores HP equal to <color=#F74848>30%</color> of damage dealt in this skirmish. Can take effect only <color=#F74848>1</color> time per turn",
       "en_type": "After-Combat Effects",
       "notes": "Cannot trigger on missed attacks.Only triggers once per turn",
       "cos": [
@@ -1094,7 +1094,7 @@
       ],
       "describe": "戰後恢復10%耐久，每回合最多生效1次",
       "en_name": "Emergency",
-      "en_describe": "Restores <color=#F74848>10%</color> of HP after combat.Can take effect only <color=#F74848>1</color> time per turn",
+      "en_describe": "Restores <color=#F74848>10%</color> of HP after combat. Can take effect only <color=#F74848>1</color> time per turn",
       "en_type": "After-Combat Effects",
       "notes": "Only triggers once per turn",
       "cos": [
@@ -1114,7 +1114,7 @@
       ],
       "describe": "對命中部位以外的1個部位造成20%的濺射傷害",
       "en_name": "Splash",
-      "en_describe": "Deals Splash DMG to <color=#F74848>1</color> part, except the part hit,equal to <color=#F74848>20%</color> of damage dealt",
+      "en_describe": "Deals Splash DMG to <color=#F74848>1</color> part, except the part hit, equal to <color=#F74848>20%</color> of damage dealt",
       "en_type": "In-Combat Effects",
       "notes": "Single-shot weapons only.Cannot be triggered outside of combat.Cannot trigger on missed attacks",
       "cos": [

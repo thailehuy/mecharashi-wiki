@@ -110,7 +110,16 @@ Pages.accessories = {
 
   _renderSection: function (title, items) {
     var anchorId = title === 'Triggers' ? 'acc-triggers' : 'acc-reactions';
-    var cards = items.map(function (a) {
+    var sorted = items.slice().sort(function (a, b) {
+      var la = a.en_type || (a.tags.map(function (t) { return ACC_TAG_LABEL[t] || t; }).join(', '));
+      var lb = b.en_type || (b.tags.map(function (t) { return ACC_TAG_LABEL[t] || t; }).join(', '));
+      if (la < lb) return -1;
+      if (la > lb) return 1;
+      var na = a.en_name || a.name;
+      var nb = b.en_name || b.name;
+      return na < nb ? -1 : na > nb ? 1 : 0;
+    });
+    var cards = sorted.map(function (a) {
       var stateIcon = ACC_ICON_BASE + 'statetype_' + a.statetype + '.png';
       var skillIcon = ACC_SKILL_BASE + encodeURIComponent(a.icon) + '.png';
 

@@ -1,1 +1,1856 @@
-var AccessoriesData = {"accessories": [{"statetype": "Function_W", "icon": "Icon_skill_passive_5002", "name": "\u61c9\u5143\u4ef6W-\u84ec\u52c3", "grade": "S", "type": "\u61c9\u5143\u4ef6", "level": "Lv. 7", "tags": ["\u6230\u5f8c\u6548\u679c"], "describe": "\u6230\u5f8c\u9a45\u6563\u81ea\u8eab1\u500b\u6e1b\u76ca\u6548\u679c", "en_name": "Thrive", "en_describe": "After combat, dispels <color=#F74848>1</color> debuff from self", "en_type": "After-Combat Effects", "notes": "Two-handed weapons and backpack weapons only.Only triggers once per turn", "cos": [16]}, {"statetype": "Function_W", "icon": "Icon_skill_passive_5187", "name": "\u61c9\u5143\u4ef6W-\u6230\u6144", "grade": "S", "type": "\u61c9\u5143\u4ef6", "level": "Lv. 2", "tags": ["\u6230\u5f8c\u6548\u679c"], "describe": "\u6230\u5f8c\u70ba\u76ee\u6a19\u6dfb\u52a0[\u56de\u907f\u7387\u964d\u4f4e\u2164]\uff0c\u6301\u7e8c1\u56de\u5408", "en_name": "Shudder", "en_describe": "Inflicts <buf ID=7101107>[Dodge Rate Down V]</buf> (Dodge Rate -<color=#F74848>20%</color>) on the targetafter combat, lasting for <color=#F74848>1</color> turn", "en_type": "After-Combat Effects", "notes": "The same debuff effect cannot stack.Two-handed weapons and backpack weapons only.Only triggers once per turn", "cos": [14, 15, 16]}, {"statetype": "Function_W", "icon": "Icon_skill_passive_5168", "name": "\u61c9\u5143\u4ef6W-\u9a30\u632a", "grade": "S", "type": "\u61c9\u5143\u4ef6", "level": "Lv. 2", "tags": ["\u6230\u4e2d\u6548\u679c"], "describe": "\u906d\u5230\u53cd\u64ca\u6642\u5fc5\u5b9a\u9583\u907f", "en_name": "Maneuver", "en_describe": "When retaliated against, triggers <buf ID=1008062>[Absolute Dodge]</buf>", "en_type": "In-Combat Effects", "notes": "Two-handed weapons only.Not triggerable by Tactical Weapons", "cos": [15]}, {"statetype": "Function_W", "icon": "Icon_skill_RnD_P_2002", "name": "\u61c9\u5143\u4ef6W-\u589e\u5e45", "grade": "S", "type": "\u61c9\u5143\u4ef6", "level": "Lv. 11", "tags": ["\u7279\u6b8a\u6548\u679c"], "describe": "\u6b64\u6b21\u653b\u64ca\u500d\u7387\u63d0\u53470.1", "en_name": "Augmented", "en_describe": "Increases this attack\u2019s multiplier by +<color=#F74848>0.1</color>", "en_type": "Special Effects", "notes": "Cannot be triggered outside of combat.Two-handed weapons and backpack weapons only", "cos": [12, 13, 14]}, {"statetype": "Function_W", "icon": "Icon_skill_RnD_P_2001", "name": "\u61c9\u5143\u4ef6W-\u865f\u4ee4", "grade": "S", "type": "\u61c9\u5143\u4ef6", "level": "Lv. 4", "tags": ["\u7279\u6b8a\u6548\u679c"], "describe": "\u4ee4\u5468\u570d3\u683c\u4ee5\u5167\u53cb\u8ecd\u4e00\u540c\u9032\u884c[\u5354\u529b\u653b\u64ca]", "en_name": "Command", "en_describe": "Orders allies within <color=#F74848>3</color> adjacent tiles to perform a <buf ID=900002>[Link Attack]</buf> together", "en_type": "Special Effects", "notes": "Only for Two-Handed Weapon use.Not triggerable by Tactical Weapons. 1-turn cooldownbetween triggers. Link Attacks deal 0.2x DMG(attacks require no ally skill prerequisites and consume no Link charges)", "cos": [13, 14, 15, 16]}, {"statetype": "Function_W", "icon": "Icon_skill_passive_4002", "name": "\u61c9\u5143\u4ef6W-\u596e\u767c", "grade": "S", "type": "\u61c9\u5143\u4ef6", "level": "Lv. 5", "tags": ["\u6230\u5f8c\u6548\u679c"], "describe": "\u6230\u5f8c\u70ba\u81ea\u5df1\u6dfb\u52a0[\u66b4\u64ca\u7387\u63d0\u5347\u2163]\uff0c\u6301\u7e8c1\u56de\u5408", "en_name": "Innervate", "en_describe": "Gains <buf ID=7100406>[Crit Rate Up IV]</buf> (Crit Rate +<color=#F74848>25%</color>) after combat,lasting for <color=#F74848>1</color> turn", "en_type": "After-Combat Effects", "notes": "Two-handed weapons and backpack weapons only.The same buff effect cannot stack", "cos": [13, 14]}, {"statetype": "Function_W", "icon": "Icon_skill_passive_4111", "name": "\u61c9\u5143\u4ef6W-\u6fc0\u52f5", "grade": "S", "type": "\u61c9\u5143\u4ef6", "level": "Lv. 5", "tags": ["\u6230\u5f8c\u6548\u679c"], "describe": "\u6230\u5f8c\u70ba\u81ea\u5df1\u6dfb\u52a0[\u547d\u4e2d\u7387\u63d0\u5347\u2164]\uff0c\u6301\u7e8c1\u56de\u5408", "en_name": "Energized", "en_describe": "Gains <buf ID=7100107>[Hit Rate Up V]</buf> (Hit Rate +<color=#F74848>20%</color>) after combat,lasting for <color=#F74848>1</color> turn", "en_type": "After-Combat Effects", "notes": "Two-handed weapons and backpack weapons only.The same buff effect cannot stack", "cos": [15, 16]}, {"statetype": "Function_W", "icon": "Icon_skill_passive_1101", "name": "\u61c9\u5143\u4ef6W-\u6602\u63da", "grade": "S", "type": "\u61c9\u5143\u4ef6", "level": "Lv. 5", "tags": ["\u6230\u5f8c\u6548\u679c"], "describe": "\u6230\u5f8c\u70ba\u81ea\u5df1\u6dfb\u52a0[\u50b7\u5bb3\u63d0\u5347\u2164]\uff0c\u6301\u7e8c1\u56de\u5408", "en_name": "High-Spirited", "en_describe": "Gains <buf ID=7100309>[DMG Up V]</buf> (DMG +<color=#F74848>25%</color>) after combat, lasting for <color=#F74848>1</color> turn", "en_type": "After-Combat Effects", "notes": "Two-handed weapons and backpack weapons only.The same buff effect cannot stack", "cos": [12, 13, 14, 15, 16]}, {"statetype": "Function_W", "icon": "Icon_skill_passive_5019", "name": "\u61c9\u5143\u4ef6W-\u91cd\u6574", "grade": "S", "type": "\u61c9\u5143\u4ef6", "level": "Lv. 8", "tags": ["\u6230\u5f8c\u6548\u679c"], "describe": "\u6230\u5f8c\u6062\u5fa9\u76f8\u7576\u65bc\u672c\u6b21\u50b7\u5bb3\u768430%\u8010\u4e45\uff0c\u6bcf\u56de\u5408\u6700\u591a\u751f\u65481\u6b21", "en_name": "Reorganized", "en_describe": "After combat, restores HP equal to <color=#F74848>30%</color> of damage dealt in this skirmish.Can take effect only <color=#F74848>1</color> time per turn", "en_type": "After-Combat Effects", "notes": "Cannot trigger on missed attacks.Two-handed weapons and backpack weapons only.Only triggers once per turn", "cos": [16]}, {"statetype": "Function_W", "icon": "Icon_skill_passive_3116", "name": "\u61c9\u5143\u4ef6W-\u61c9\u6025", "grade": "S", "type": "\u61c9\u5143\u4ef6", "level": "Lv. 7", "tags": ["\u6230\u5f8c\u6548\u679c"], "describe": "\u6230\u5f8c\u6062\u5fa910%\u8010\u4e45\uff0c\u6bcf\u56de\u5408\u6700\u591a\u751f\u65481\u6b21", "en_name": "Emergency", "en_describe": "Restores <color=#F74848>10%</color> of HP after combat.Can take effect only <color=#F74848>1</color> time per turn", "en_type": "After-Combat Effects", "notes": "Two-handed weapons and backpack weapons only.Only triggers once per turn", "cos": [13]}, {"statetype": "Function_W", "icon": "Icon_skill_passive_1107", "name": "\u61c9\u5143\u4ef6W-\u6ffa\u5c04", "grade": "S", "type": "\u61c9\u5143\u4ef6", "level": "Lv. 7", "tags": ["\u6230\u4e2d\u6548\u679c"], "describe": "\u5c0d\u547d\u4e2d\u90e8\u4f4d\u4ee5\u5916\u76841\u500b\u90e8\u4f4d\u9020\u621020%\u7684\u6ffa\u5c04\u50b7\u5bb3", "en_name": "Splash", "en_describe": "Deals Splash DMG to <color=#F74848>1</color> part, except the part hit,equal to <color=#F74848>20%</color> of damage dealt", "en_type": "In-Combat Effects", "notes": "Two-handed weapons and backpack weapons only.Single-shot weapons only.Cannot be triggered outside of combat.Cannot trigger on missed attacks", "cos": [13, 15, 16]}, {"statetype": "Function_W", "icon": "Icon_skill_passive_1006", "name": "\u61c9\u5143\u4ef6W-\u7206\u7834", "grade": "S", "type": "\u61c9\u5143\u4ef6", "level": "Lv. 7", "tags": ["\u6230\u4e2d\u6548\u679c"], "describe": "\u5c0d\u547d\u4e2d\u90e8\u4f4d\u4ee5\u5916\u76841\u500b\u90e8\u4f4d\u9020\u621030%\u6b66\u5668\u653b\u64ca\u529b\u7684\u56fa\u5b9a\u50b7\u5bb3", "en_name": "Explosive Charge", "en_describe": "Deals <color=#F74848>30%</color> of Weapon ATK as Fixed DMG to <color=#F74848>1</color> part excluding the part hit", "en_type": "In-Combat Effects", "notes": "Single-shot weapons only.Cannot be triggered outside of combat.Cannot trigger on missed attacks.Two-handed weapons and backpack weapons only", "cos": [12, 13, 14, 15]}, {"statetype": "Function_W", "icon": "Icon_skill_passive_5016", "name": "\u61c9\u5143\u4ef6W-\u7a7f\u7532", "grade": "S", "type": "\u61c9\u5143\u4ef6", "level": "Lv. 9", "tags": ["\u6230\u4e2d\u6548\u679c"], "describe": "\u7121\u8996\u76ee\u6a1950%\u7684\u8b77\u7532\u503c", "en_name": "Piercing", "en_describe": "Ignores <color=#F74848>50%</color> of the target\u2019s Armor", "en_type": "In-Combat Effects", "notes": "Two-handed weapons and backpack weapons only", "cos": [12, 13]}, {"statetype": "Function_W", "icon": "Icon_skill_passive_1153", "name": "\u61c9\u5143\u4ef6W-\u7834\u8db3", "grade": "S", "type": "\u61c9\u5143\u4ef6", "level": "Lv. 7", "tags": ["\u6230\u4e2d\u6548\u679c"], "describe": "\u5c0d\u817f\u90e8\u50b7\u5bb3\u63d0\u534740%", "en_name": "Legs Fractured", "en_describe": "DMG +<color=#F74848>40%</color> against Legs", "en_type": "In-Combat Effects", "notes": "Two-handed weapons and backpack weapons only", "cos": [14, 15, 16]}, {"statetype": "Function_W", "icon": "Icon_skill_passive_1147", "name": "\u61c9\u5143\u4ef6W-\u7834\u81c2", "grade": "S", "type": "\u61c9\u5143\u4ef6", "level": "Lv. 7", "tags": ["\u6230\u4e2d\u6548\u679c"], "describe": "\u5c0d\u624b\u81c2\u50b7\u5bb3\u63d0\u534740%", "en_name": "Broken Arm", "en_describe": "DMG +<color=#F74848>40%</color> against Arms", "en_type": "In-Combat Effects", "notes": "Two-handed weapons and backpack weapons only", "cos": [12, 13, 14, 15, 16]}, {"statetype": "Function_W", "icon": "Icon_skill_passive_1005", "name": "\u61c9\u5143\u4ef6W-\u5f37\u64ca", "grade": "S", "type": "\u61c9\u5143\u4ef6", "level": "Lv. 7", "tags": ["\u6230\u4e2d\u6548\u679c"], "describe": "\u50b7\u5bb3\u63d0\u534720%", "en_name": "Slamming", "en_describe": "DMG +<color=#F74848>20%</color>", "en_type": "In-Combat Effects", "notes": "Two-handed weapons and backpack weapons only", "cos": [13, 14, 15, 16]}, {"statetype": "Condition_W", "icon": "Icon_skill_passive_5222", "name": "\u89f8\u5143\u4ef6W-\u6191\u9038", "grade": "S", "type": "\u89f8\u5143\u4ef6", "level": "Lv. 7", "tags": ["\u7279\u6b8a\u6548\u679c"], "describe": "\u4e3b\u52d5\u653b\u64ca\u6642\uff0c\u81ea\u8eab\u64c1\u67093\u500b\u53ca\u4ee5\u4e0a\u589e\u76ca\u6548\u679c\u6642", "en_name": "Prevail", "en_describe": "When actively attacking, if possessing <color=#F74848>3</color> or more buffs", "en_type": "Special Effects", "notes": "Two-handed weapons and backpack weapons only", "cos": [16]}, {"statetype": "Condition_W", "icon": "Icon_skill_passive_3128", "name": "\u89f8\u5143\u4ef6W-\u7165\u767c", "grade": "S", "type": "\u89f8\u5143\u4ef6", "level": "Lv. 6", "tags": ["\u8010\u4e45\u76f8\u95dc"], "describe": "\u4e3b\u52d5\u653b\u64ca\u6642\uff0c\u82e5\u81ea\u8eab\u8010\u4e45\u70ba100%", "en_name": "Spring", "en_describe": "When actively attacking, if HP is at <color=#F74848>100%</color>", "en_type": "HP Related", "notes": "Two-handed weapons and backpack weapons only", "cos": [14, 15, 16]}, {"statetype": "Condition_W", "icon": "Icon_RnD_P_1003", "name": "\u89f8\u5143\u4ef6W-\u6c89\u8457", "grade": "S", "type": "\u89f8\u5143\u4ef6", "level": "Lv. 6", "tags": ["\u79fb\u52d5\u76f8\u95dc"], "describe": "\u4e3b\u52d5\u653b\u64ca\u524d\uff0c\u5982\u679c\u6c92\u6709\u79fb\u52d5\u904e", "en_name": "Equanimity", "en_describe": "Before actively attacking without having moved this turn", "en_type": "Movement Related", "notes": "Two-handed weapons and backpack weapons only", "cos": [13, 14, 15, 16]}, {"statetype": "Condition_W", "icon": "Icon_skill_RnD_P_1002", "name": "\u89f8\u5143\u4ef6W-\u58d3\u8feb", "grade": "S", "type": "\u89f8\u5143\u4ef6", "level": "Lv. 6", "tags": ["\u8ddd\u96e2\u76f8\u95dc"], "describe": "\u4e3b\u52d5\u653b\u64ca\u5c0d\u6230\u6642\uff0c\u82e5\u76ee\u6a19\u7121\u6cd5\u53cd\u64ca", "en_name": "Oppress", "en_describe": "When initiating combat, if the target cannot retaliate", "en_type": "Distance Related", "notes": "Only for Two-Handed Weapon use.Not triggerable by Tactical Weapons", "cos": [12, 13, 14]}, {"statetype": "Condition_W", "icon": "Icon_skill_RnD_P_1001", "name": "\u89f8\u5143\u4ef6W-\u64ca\u7834", "grade": "S", "type": "\u89f8\u5143\u4ef6", "level": "Lv. 8", "tags": ["\u653b\u64ca\u7d50\u679c"], "describe": "\u4e3b\u52d5\u653b\u64ca\u5c0d\u6230\u6642\uff0c\u82e5\u64ca\u7834\u90e8\u4ef6", "en_name": "Break", "en_describe": "When initiating combat and breaking a part", "en_type": "Attack Result", "notes": "Only for Two-Handed Weapon use.Not triggerable by Tactical Weapons", "cos": [15]}, {"statetype": "Condition_W", "icon": "Icon_skill_passive_1152", "name": "\u89f8\u5143\u4ef6W-\u91cb\u80fd", "grade": "S", "type": "\u89f8\u5143\u4ef6", "level": "Lv. 5", "tags": ["AP\u76f8\u95dc"], "describe": "\u4f7f\u75284\u9ede\u53ca\u4ee5\u4e0aAP\u7684\u6280\u80fd\u6642", "en_name": "Discharge", "en_describe": "When executing skills that cost <color=#F74848>4</color> or more AP", "en_type": "AP Related", "notes": "Two-handed weapons and backpack weapons only", "cos": [12, 13]}, {"statetype": "Condition_W", "icon": "Icon_skill_passive_4126", "name": "\u89f8\u5143\u4ef6W-\u7cbe\u6e96", "grade": "S", "type": "\u89f8\u5143\u4ef6", "level": "Lv. 5", "tags": ["\u547d\u4e2d\u76f8\u95dc"], "describe": "\u4e3b\u52d5\u653b\u64ca\u5c0d\u6230\u6642\uff0c\u82e5\u547d\u4e2d\u7387\u9ad8\u65bc80%", "en_name": "Accurate", "en_describe": "When initiating combat, if Hit Rate exceeds <color=#F74848>80%</color>", "en_type": "Hit Related", "notes": "Only for Two-Handed Weapon use.Not triggerable by Tactical Weapons", "cos": [15, 16]}, {"statetype": "Condition_W", "icon": "Icon_skill_passive_5195", "name": "\u89f8\u5143\u4ef6W-\u6bb2\u6ec5", "grade": "S", "type": "\u89f8\u5143\u4ef6", "level": "Lv. 9", "tags": ["\u8010\u4e45\u76f8\u95dc"], "describe": "\u4e3b\u52d5\u653b\u64ca\u5c0d\u6230\u6642\uff0c\u82e5\u76ee\u6a19\u8010\u4e45\u4f4e\u65bc50%", "en_name": "Annihilate", "en_describe": "When initiating combat, if target\u2019s HP is lower than <color=#F74848>50%</color>", "en_type": "HP Related", "notes": "Only for Two-Handed Weapon use.Not triggerable by Tactical Weapons", "cos": [14, 15]}, {"statetype": "Condition_W", "icon": "Icon_skill_passive_3120", "name": "\u89f8\u5143\u4ef6W-\u653b\u5805", "grade": "S", "type": "\u89f8\u5143\u4ef6", "level": "Lv. 5", "tags": ["\u8010\u4e45\u76f8\u95dc"], "describe": "\u4e3b\u52d5\u653b\u64ca\u5c0d\u6230\u6642\uff0c\u82e5\u76ee\u6a19\u8010\u4e45\u9ad8\u65bc50%", "en_name": "Tackle", "en_describe": "When initiating combat, if target\u2019s HP is higher than <color=#F74848>50%</color>", "en_type": "HP Related", "notes": "Only for Two-Handed Weapon use.Not triggerable by Tactical Weapons", "cos": [13]}, {"statetype": "Condition_W", "icon": "Icon_skill_passive_5194", "name": "\u89f8\u5143\u4ef6W-\u80cc\u6c34", "grade": "S", "type": "\u89f8\u5143\u4ef6", "level": "Lv. 9", "tags": ["\u8010\u4e45\u76f8\u95dc"], "describe": "\u4e3b\u52d5\u653b\u64ca\u6642\uff0c\u82e5\u81ea\u8eab\u8010\u4e45\u4f4e\u65bc50%", "en_name": "Crisis", "en_describe": "When actively attacking, if HP is lower than <color=#F74848>50%</color>", "en_type": "HP Related", "notes": "Two-handed weapons and backpack weapons only", "cos": [13, 14, 15, 16]}, {"statetype": "Condition_W", "icon": "Icon_skill_passive_3121", "name": "\u89f8\u5143\u4ef6W-\u81e8\u6575", "grade": "S", "type": "\u89f8\u5143\u4ef6", "level": "Lv. 5", "tags": ["\u8010\u4e45\u76f8\u95dc"], "describe": "\u4e3b\u52d5\u653b\u64ca\u6642\uff0c\u82e5\u81ea\u8eab\u8010\u4e45\u9ad8\u65bc50%", "en_name": "Confront", "en_describe": "When actively attacking, if HP is higher than <color=#F74848>50%</color>", "en_type": "HP Related", "notes": "Two-handed weapons and backpack weapons only", "cos": [12, 13, 14]}, {"statetype": "Condition_W", "icon": "Icon_skill_passive_1110", "name": "\u89f8\u5143\u4ef6W-\u5408\u64ca", "grade": "S", "type": "\u89f8\u5143\u4ef6", "level": "Lv. 4", "tags": ["\u653b\u64ca\u65b9\u5f0f"], "describe": "\u767c\u52d5\u5354\u529b\u653b\u64ca\u6642", "en_name": "Collaborate", "en_describe": "When launching a Link Attack", "en_type": "Attack Type", "notes": "Only for Two-Handed Weapon use.Not triggerable by Tactical Weapons.Not triggerable by Melee Weapons", "cos": [13, 14, 15, 16]}, {"statetype": "Condition_W", "icon": "Icon_skill_passive_1012", "name": "\u89f8\u5143\u4ef6W-\u9023\u64ca", "grade": "S", "type": "\u89f8\u5143\u4ef6", "level": "Lv. 4", "tags": ["\u653b\u64ca\u65b9\u5f0f"], "describe": "\u767c\u52d5\u8ffd\u64ca\u6216\u9023\u7e8c\u653b\u64ca\u6642", "en_name": "Combo", "en_describe": "When triggering a Flurry Strike or Gusty Strike", "en_type": "Attack Type", "notes": "Only for Two-Handed Weapon use.Not triggerable by Tactical Weapons", "cos": [12, 13, 14, 15, 16]}, {"statetype": "Condition_W", "icon": "Icon_skill_passive_1009", "name": "\u89f8\u5143\u4ef6W-\u8b66\u6212", "grade": "S", "type": "\u89f8\u5143\u4ef6", "level": "Lv. 4", "tags": ["\u653b\u64ca\u65b9\u5f0f"], "describe": "\u767c\u52d5\u8b66\u6212\u5c04\u64ca\u6642", "en_name": "Vigilant", "en_describe": "When triggering Vigilant Shot", "en_type": "Attack Type", "notes": "Ranged Weapons only.Two-handed weapons and backpack weapons only", "cos": [16]}, {"statetype": "Condition_W", "icon": "Icon_skill_passive_1144", "name": "\u89f8\u5143\u4ef6W-\u53cd\u64ca", "grade": "S", "type": "\u89f8\u5143\u4ef6", "level": "Lv. 4", "tags": ["\u653b\u64ca\u65b9\u5f0f"], "describe": "\u767c\u52d5\u53cd\u64ca\u6642", "en_name": "Retaliation", "en_describe": "When retaliating", "en_type": "Attack Type", "notes": "Only for Two-Handed Weapon use.Not triggerable by Tactical Weapons", "cos": [13, 14, 15, 16]}, {"statetype": "Condition_W", "icon": "Icon_skill_passive_1001", "name": "\u89f8\u5143\u4ef6W-\u4fb5\u653b", "grade": "S", "type": "\u89f8\u5143\u4ef6", "level": "Lv. 6", "tags": ["\u653b\u64ca\u65b9\u5f0f"], "describe": "\u4e3b\u52d5\u4f7f\u7528\u7bc4\u570d\u6280\u80fd\u6642", "en_name": "Invasion", "en_describe": "When actively executing an AoE Skill", "en_type": "Attack Type", "notes": "Two-handed weapons and backpack weapons only", "cos": [12, 13, 14, 15, 16]}, {"statetype": "Function", "icon": "Icon_skill_passive_5189", "name": "\u61c9\u5143\u4ef6-\u8d85\u7136", "grade": "S", "type": "\u61c9\u5143\u4ef6", "level": "Lv. 3", "tags": ["\u6230\u5f8c\u6548\u679c"], "describe": "\u6230\u5f8c\u96a8\u6a5f\u5ef6\u9577\u81ea\u8eab2\u500b\u589e\u76ca\u6548\u679c\u7684[\u5269\u9918\u56de\u5408]+1", "en_name": "Transcendent", "en_describe": "After combat, randomly extends the <buf ID=900078>[Turns Left]</buf> of <color=#F74848>2</color> buffs on self by <color=#F74848>1</color>", "en_type": "After-Combat Effects", "notes": "The same buff effect cannot stack.Only triggers once per turn", "cos": [16]}, {"statetype": "Function", "icon": "Icon_skill_passive_4123", "name": "\u61c9\u5143\u4ef6-\u5f37\u653b", "grade": "S", "type": "\u61c9\u5143\u4ef6", "level": "Lv. 3", "tags": ["\u6230\u4e2d\u6548\u679c"], "describe": "\u6b64\u6b21\u653b\u64ca\u7b2c\u4e00\u64ca\u5fc5\u5b9a\u66b4\u64ca", "en_name": "Dominant", "en_describe": "The first hit of this attack is guaranteed to be critical", "en_type": "In-Combat Effects", "notes": "", "cos": [16]}, {"statetype": "Function", "icon": "Icon_skill_passive_5220", "name": "\u61c9\u5143\u4ef6-\u632b\u5fd7", "grade": "S", "type": "\u61c9\u5143\u4ef6", "level": "Lv. 1", "tags": ["\u6230\u5f8c\u6548\u679c"], "describe": "\u4f7f\u76ee\u6a19\u6a5f\u5e2b\u9069\u6027\u964d\u4f4e15%\uff0c\u6301\u7e8c1\u56de\u5408", "en_name": "Frustration", "en_describe": "Reduces the target pilot's Suitability by <color=#F74848>15%</color> for <color=#F74848>1</color> turn", "en_type": "After-Combat Effects", "notes": "The same buff effect cannot stack.Only triggers once per turn", "cos": [16]}, {"statetype": "Function", "icon": "Icon_skill_passive_1157", "name": "\u61c9\u5143\u4ef6-\u8ff8\u767c", "grade": "S", "type": "\u61c9\u5143\u4ef6", "level": "Lv. 6", "tags": ["\u6230\u4e2d\u6548\u679c"], "describe": "\u6bcf\u6d88\u80171\u9edeAP\uff0c\u50b7\u5bb3\u63d0\u53475%\uff0c\u6700\u591a\u63d0\u534725%", "en_name": "Burst Apart", "en_describe": "For every <color=#F74848>1</color> AP consumed, DMG +<color=#F74848>5%</color>, up to <color=#F74848>25%</color>", "en_type": "In-Combat Effects", "notes": "", "cos": [15, 16]}, {"statetype": "Function", "icon": "Icon_skill_passive_1162", "name": "\u61c9\u5143\u4ef6-\u7834\u8ec0", "grade": "S", "type": "\u61c9\u5143\u4ef6", "level": "Lv. 4", "tags": ["\u6230\u4e2d\u6548\u679c"], "describe": "\u5c0d\u8ec0\u5e79\u50b7\u5bb3\u63d0\u534730%", "en_name": "Body Break", "en_describe": "DMG +<color=#F74848>30%</color> against Body parts", "en_type": "In-Combat Effects", "notes": "", "cos": [15, 16]}, {"statetype": "Function", "icon": "Icon_skill_passive_3130", "name": "\u61c9\u5143\u4ef6-\u6574\u847a", "grade": "S", "type": "\u61c9\u5143\u4ef6", "level": "Lv. 4", "tags": ["\u6230\u5f8c\u6548\u679c"], "describe": "\u6230\u5f8c\u70ba\u81ea\u5df1\u6dfb\u52a0[\u6574\u847a\u2162]\uff0c\u6301\u7e8c1\u56de\u5408", "en_name": "Reconstruction", "en_describe": "Gains <buf ID=1099907>[Reconstruction III]</buf> (Repair AMT +<color=#F74848>25%</color>) after combat,lasting for <color=#F74848>1</color> turn", "en_type": "After-Combat Effects", "notes": "Buff effects of the same type cannot stack.Only triggers once per turn", "cos": [15, 16]}, {"statetype": "Function", "icon": "Icon_skill_passive_5011", "name": "\u61c9\u5143\u4ef6-\u6d88\u5f48", "grade": "S", "type": "\u61c9\u5143\u4ef6", "level": "Lv. 4", "tags": ["\u6230\u5f8c\u6548\u679c"], "describe": "\u6230\u5f8c\u4f7f\u76ee\u6a19\u7684\u6230\u8853\u6b66\u5668\u9032\u5165\u88dd\u586b\uff0c\u4e26\u4f7f\u5176\u6240\u6709\u90e8\u4f4d\u640d\u5931\u6700\u5927\u8010\u4e455%\u7684\u56fa\u5b9a\u50b7\u5bb3", "en_name": "Ballistics Block", "en_describe": "After combat, puts the target's Tactical Weapon into a reloading stateand deals <color=#F74848>5%</color> of Max HP as <buf ID=900017>[Fixed DMG]</buf> to all its parts", "en_type": "After-Combat Effects", "notes": "Not triggerable by Tactical Weapons.Only triggers once per turn", "cos": [14, 15, 16]}, {"statetype": "Function", "icon": "Icon_skill_passive_1165", "name": "\u61c9\u5143\u4ef6-\u77ed\u8def", "grade": "S", "type": "\u61c9\u5143\u4ef6", "level": "Lv. 4", "tags": ["\u6230\u5f8c\u6548\u679c"], "describe": "\u6230\u5f8c\u5c0d\u76ee\u6a19\u6240\u6709\u90e8\u4f4d\u9020\u6210\u5171\u8a080.4\u500d\u6b66\u5668\u653b\u64ca\u7684\u56fa\u5b9a\u50b7\u5bb3", "en_name": "Short Circuit", "en_describe": "After combat, deals Fixed DMG equalto a total of <color=#F74848>0.4x</color> Weapon ATK to all parts of target", "en_type": "After-Combat Effects", "notes": "", "cos": [14, 15, 16]}, {"statetype": "Function", "icon": "Icon_skill_passive_5021", "name": "\u61c9\u5143\u4ef6-\u6a21\u7cca", "grade": "S", "type": "\u61c9\u5143\u4ef6", "level": "Lv. 1", "tags": ["\u6230\u5f8c\u6548\u679c"], "describe": "\u6230\u5f8c\u70ba\u81ea\u5df1\u6dfb\u52a0[\u6a21\u7cca\u2162]\uff0c\u6301\u7e8c1\u56de\u5408", "en_name": "Blur", "en_describe": "Gains <buf ID=1099906>[Blur III]</buf> (Dodge Rate +<color=#F74848>35%</color>) after combat, lasting for <color=#F74848>1</color> turn", "en_type": "After-Combat Effects", "notes": "Buff effects of the same type cannot stack.Only triggers once per turn", "cos": [14, 15, 16]}, {"statetype": "Function", "icon": "Icon_skill_passive_5002", "name": "\u61c9\u5143\u4ef6-\u84ec\u52c3", "grade": "S", "type": "\u61c9\u5143\u4ef6", "level": "Lv. 5", "tags": ["\u6230\u5f8c\u6548\u679c"], "describe": "\u6230\u5f8c\u9a45\u6563\u81ea\u8eab1\u500b\u6e1b\u76ca\u6548\u679c", "en_name": "Thrive", "en_describe": "After combat, dispels <color=#F74848>1</color> debuff from self", "en_type": "After-Combat Effects", "notes": "Only triggers once per turn", "cos": [13, 14, 15]}, {"statetype": "Function", "icon": "Icon_skill_passive_5148", "name": "\u61c9\u5143\u4ef6-\u540c\u613e", "grade": "S", "type": "\u61c9\u5143\u4ef6", "level": "Lv. 3", "tags": ["\u6230\u5f8c\u6548\u679c"], "describe": "\u6230\u5f8c\u5c07\u81ea\u5df1\u7684\u4e00\u500b\u589e\u76ca\u6548\u679c\u8907\u88fd\u7d66\u5468\u570d1\u683c\u51671\u540d\u53cb\u8ecd", "en_name": "Solidarity", "en_describe": "After combat, replicates <color=#F74848>1</color> buff to <color=#F74848>1</color> ally within <color=#F74848>1</color> adjacent tile", "en_type": "After-Combat Effects", "notes": "The same buff effect cannot stack", "cos": [13, 14, 15, 16]}, {"statetype": "Function", "icon": "Icon_skill_passive_5223", "name": "\u61c9\u5143\u4ef6-\u64f4\u819b", "grade": "S", "type": "\u61c9\u5143\u4ef6", "level": "Lv. 9", "tags": ["\u7279\u6b8a\u6548\u679c"], "describe": "\u767c\u5c04\u5b50\u5f48\u6578+1", "en_name": "Augmentation", "en_describe": "Bullets +<color=#F74848>1</color>", "en_type": "Special Effects", "notes": "Only for Assault Weapon Use.Cannot be triggered outside of combat", "cos": [13, 14]}, {"statetype": "Function", "icon": "Icon_skill_passive_5187", "name": "\u61c9\u5143\u4ef6-\u6230\u6144", "grade": "S", "type": "\u61c9\u5143\u4ef6", "level": "Lv. 1", "tags": ["\u6230\u5f8c\u6548\u679c"], "describe": "\u6230\u5f8c\u70ba\u76ee\u6a19\u6dfb\u52a0[\u56de\u907f\u7387\u964d\u4f4e\u2164]\uff0c\u6301\u7e8c1\u56de\u5408", "en_name": "Shudder", "en_describe": "Inflicts <buf ID=7101107>[Dodge Rate Down V]</buf> (Dodge Rate -<color=#F74848>20%</color>) on the targetafter combat, lasting for <color=#F74848>1</color> turn", "en_type": "After-Combat Effects", "notes": "The same debuff effect cannot stack.Only triggers once per turn", "cos": [12, 13, 14]}, {"statetype": "Function", "icon": "Icon_skill_passive_5168", "name": "\u61c9\u5143\u4ef6-\u9a30\u632a", "grade": "S", "type": "\u61c9\u5143\u4ef6", "level": "Lv. 1", "tags": ["\u6230\u4e2d\u6548\u679c"], "describe": "\u906d\u5230\u53cd\u64ca\u6642\u5fc5\u5b9a\u9583\u907f", "en_name": "Maneuver", "en_describe": "When retaliated against, triggers <buf ID=1008062>[Absolute Dodge]</buf>", "en_type": "In-Combat Effects", "notes": "Not triggerable by Tactical Weapons", "cos": [12, 13, 14, 15, 16]}, {"statetype": "Function", "icon": "Icon_skill_RnD_P_2002", "name": "\u61c9\u5143\u4ef6-\u589e\u5e45", "grade": "S", "type": "\u61c9\u5143\u4ef6", "level": "Lv. 10", "tags": ["\u7279\u6b8a\u6548\u679c"], "describe": "\u6b64\u6b21\u653b\u64ca\u500d\u7387\u63d0\u53470.1", "en_name": "Augmented", "en_describe": "Increases this attack\u2019s multiplier by +<color=#F74848>0.1</color>", "en_type": "Special Effects", "notes": "Cannot be triggered outside of combat.Rocket Launcher triggers 75% reduced effect", "cos": [11, 12]}, {"statetype": "Function", "icon": "Icon_skill_RnD_P_2001", "name": "\u61c9\u5143\u4ef6-\u865f\u4ee4", "grade": "S", "type": "\u61c9\u5143\u4ef6", "level": "Lv. 3", "tags": ["\u7279\u6b8a\u6548\u679c"], "describe": "\u4ee4\u5468\u570d3\u683c\u4ee5\u5167\u53cb\u8ecd\u4e00\u540c\u9032\u884c[\u5354\u529b\u653b\u64ca]", "en_name": "Command", "en_describe": "Orders allies within <color=#F74848>3</color> adjacent tiles to perform a <buf ID=900002>[Link Attack]</buf> together", "en_type": "Special Effects", "notes": "Not triggerable by Tactical Weapons. 1-turn cooldownbetween triggers. Link Attacks deal 0.2x DMG(attacks require no ally skill prerequisites and consume no Link charges)", "cos": [11, 12, 13, 14, 15]}, {"statetype": "Function", "icon": "Icon_skill_passive_4002", "name": "\u61c9\u5143\u4ef6-\u596e\u767c", "grade": "S", "type": "\u61c9\u5143\u4ef6", "level": "Lv. 4", "tags": ["\u6230\u5f8c\u6548\u679c"], "describe": "\u6230\u5f8c\u70ba\u81ea\u5df1\u6dfb\u52a0[\u66b4\u64ca\u7387\u63d0\u5347\u2163]\uff0c\u6301\u7e8c1\u56de\u5408", "en_name": "Innervate", "en_describe": "Gains <buf ID=7100406>[Crit Rate Up IV]</buf> (Crit Rate +<color=#F74848>25%</color>) after combat,lasting for <color=#F74848>1</color> turn", "en_type": "After-Combat Effects", "notes": "The same buff effect cannot stack", "cos": [12]}, {"statetype": "Function", "icon": "Icon_skill_passive_4111", "name": "\u61c9\u5143\u4ef6-\u6fc0\u52f5", "grade": "S", "type": "\u61c9\u5143\u4ef6", "level": "Lv. 4", "tags": ["\u6230\u5f8c\u6548\u679c"], "describe": "\u6230\u5f8c\u70ba\u81ea\u5df1\u6dfb\u52a0[\u547d\u4e2d\u7387\u63d0\u5347\u2164]\uff0c\u6301\u7e8c1\u56de\u5408", "en_name": "Energized", "en_describe": "Gains <buf ID=7100107>[Hit Rate Up V]</buf> (Hit Rate +<color=#F74848>20%</color>) after combat,lasting for <color=#F74848>1</color> turn", "en_type": "After-Combat Effects", "notes": "The same buff effect cannot stack", "cos": [11, 12, 13, 14, 15, 16]}, {"statetype": "Function", "icon": "Icon_skill_passive_1101", "name": "\u61c9\u5143\u4ef6-\u6602\u63da", "grade": "S", "type": "\u61c9\u5143\u4ef6", "level": "Lv. 4", "tags": ["\u6230\u5f8c\u6548\u679c"], "describe": "\u6230\u5f8c\u70ba\u81ea\u5df1\u6dfb\u52a0[\u50b7\u5bb3\u63d0\u5347\u2164]\uff0c\u6301\u7e8c1\u56de\u5408", "en_name": "High-Spirited", "en_describe": "Gains <buf ID=7100309>[DMG Up V]</buf> (DMG +<color=#F74848>25%</color>) after combat, lasting for <color=#F74848>1</color> turn", "en_type": "After-Combat Effects", "notes": "The same buff effect cannot stack", "cos": [12, 13]}, {"statetype": "Function", "icon": "Icon_skill_passive_5019", "name": "\u61c9\u5143\u4ef6-\u91cd\u6574", "grade": "S", "type": "\u61c9\u5143\u4ef6", "level": "Lv. 6", "tags": ["\u6230\u5f8c\u6548\u679c"], "describe": "\u6230\u5f8c\u6062\u5fa9\u76f8\u7576\u65bc\u672c\u6b21\u50b7\u5bb3\u768430%\u8010\u4e45\uff0c\u6bcf\u56de\u5408\u6700\u591a\u751f\u65481\u6b21", "en_name": "Reorganized", "en_describe": "After combat, restores HP equal to <color=#F74848>30%</color> of damage dealt in this skirmish.Can take effect only <color=#F74848>1</color> time per turn", "en_type": "After-Combat Effects", "notes": "Cannot trigger on missed attacks.Only triggers once per turn", "cos": [11, 12, 13, 14, 15, 16]}, {"statetype": "Function", "icon": "Icon_skill_passive_3116", "name": "\u61c9\u5143\u4ef6-\u61c9\u6025", "grade": "S", "type": "\u61c9\u5143\u4ef6", "level": "Lv. 5", "tags": ["\u6230\u5f8c\u6548\u679c"], "describe": "\u6230\u5f8c\u6062\u5fa910%\u8010\u4e45\uff0c\u6bcf\u56de\u5408\u6700\u591a\u751f\u65481\u6b21", "en_name": "Emergency", "en_describe": "Restores <color=#F74848>10%</color> of HP after combat.Can take effect only <color=#F74848>1</color> time per turn", "en_type": "After-Combat Effects", "notes": "Only triggers once per turn", "cos": [12, 16]}, {"statetype": "Function", "icon": "Icon_skill_passive_1107", "name": "\u61c9\u5143\u4ef6-\u6ffa\u5c04", "grade": "S", "type": "\u61c9\u5143\u4ef6", "level": "Lv. 5", "tags": ["\u6230\u4e2d\u6548\u679c"], "describe": "\u5c0d\u547d\u4e2d\u90e8\u4f4d\u4ee5\u5916\u76841\u500b\u90e8\u4f4d\u9020\u621020%\u7684\u6ffa\u5c04\u50b7\u5bb3", "en_name": "Splash", "en_describe": "Deals Splash DMG to <color=#F74848>1</color> part, except the part hit,equal to <color=#F74848>20%</color> of damage dealt", "en_type": "In-Combat Effects", "notes": "Single-shot weapons only.Cannot be triggered outside of combat.Cannot trigger on missed attacks", "cos": [11, 12, 13, 14, 15, 16]}, {"statetype": "Function", "icon": "Icon_skill_passive_1006", "name": "\u61c9\u5143\u4ef6-\u7206\u7834", "grade": "S", "type": "\u61c9\u5143\u4ef6", "level": "Lv. 6", "tags": ["\u6230\u4e2d\u6548\u679c"], "describe": "\u5c0d\u547d\u4e2d\u90e8\u4f4d\u4ee5\u5916\u76841\u500b\u90e8\u4f4d\u9020\u621030%\u6b66\u5668\u653b\u64ca\u529b\u7684\u56fa\u5b9a\u50b7\u5bb3", "en_name": "Explosive Charge", "en_describe": "Deals <color=#F74848>30%</color> of Weapon ATK as Fixed DMG to <color=#F74848>1</color> part excluding the part hit", "en_type": "In-Combat Effects", "notes": "Single-shot weapons only.Cannot be triggered outside of combat.Cannot trigger on missed attacks", "cos": [11, 12, 13]}, {"statetype": "Function", "icon": "Icon_skill_passive_5016", "name": "\u61c9\u5143\u4ef6-\u7a7f\u7532", "grade": "S", "type": "\u61c9\u5143\u4ef6", "level": "Lv. 8", "tags": ["\u6230\u4e2d\u6548\u679c"], "describe": "\u7121\u8996\u76ee\u6a1950%\u7684\u8b77\u7532\u503c", "en_name": "Piercing", "en_describe": "Ignores <color=#F74848>50%</color> of the target\u2019s Armor", "en_type": "In-Combat Effects", "notes": "", "cos": [11, 12, 13, 14, 15]}, {"statetype": "Function", "icon": "Icon_skill_passive_2106", "name": "\u61c9\u5143\u4ef6-\u62b5\u6297", "grade": "S", "type": "\u61c9\u5143\u4ef6", "level": "Lv. 4", "tags": ["\u6230\u4e2d\u6548\u679c"], "describe": "\u906d\u53d7\u50b7\u5bb3\u964d\u4f4e20%", "en_name": "Resistance", "en_describe": "DMG Taken -<color=#F74848>20%</color>", "en_type": "In-Combat Effects", "notes": "Cannot be triggered outside of combat.Shield weapons only", "cos": [12, 13, 14, 15, 16]}, {"statetype": "Function", "icon": "Icon_skill_passive_1153", "name": "\u61c9\u5143\u4ef6-\u7834\u8db3", "grade": "S", "type": "\u61c9\u5143\u4ef6", "level": "Lv. 5", "tags": ["\u6230\u4e2d\u6548\u679c"], "describe": "\u5c0d\u817f\u90e8\u50b7\u5bb3\u63d0\u534740%", "en_name": "Legs Fractured", "en_describe": "DMG +<color=#F74848>40%</color> against Legs", "en_type": "In-Combat Effects", "notes": "", "cos": [11, 12, 13, 14]}, {"statetype": "Function", "icon": "Icon_skill_passive_1147", "name": "\u61c9\u5143\u4ef6-\u7834\u81c2", "grade": "S", "type": "\u61c9\u5143\u4ef6", "level": "Lv. 5", "tags": ["\u6230\u4e2d\u6548\u679c"], "describe": "\u5c0d\u624b\u81c2\u50b7\u5bb3\u63d0\u534740%", "en_name": "Broken Arm", "en_describe": "DMG +<color=#F74848>40%</color> against Arms", "en_type": "In-Combat Effects", "notes": "", "cos": [11, 12, 13]}, {"statetype": "Function", "icon": "Icon_skill_passive_1005", "name": "\u61c9\u5143\u4ef6-\u5f37\u64ca", "grade": "S", "type": "\u61c9\u5143\u4ef6", "level": "Lv. 5", "tags": ["\u6230\u4e2d\u6548\u679c"], "describe": "\u50b7\u5bb3\u63d0\u534720%", "en_name": "Slamming", "en_describe": "DMG +<color=#F74848>20%</color>", "en_type": "In-Combat Effects", "notes": "", "cos": [11, 12, 13, 14, 15]}, {"statetype": "Condition", "icon": "Icon_skill_passive_5128", "name": "\u89f8\u5143\u4ef6-\u6fc0\u6602", "grade": "S", "type": "\u89f8\u5143\u4ef6", "level": "Lv. 6", "tags": ["\u653b\u64ca\u7d50\u679c"], "describe": "\u4e3b\u52d5\u653b\u64ca\u5c0d\u6230\u6642\uff0c\u5982\u679c\u767c\u751f\u66b4\u64ca", "en_name": "Excitement", "en_describe": "When initiating combat if landing a critical hit", "en_type": "Attack Result", "notes": "Not triggerable by Tactical Weapons", "cos": [16]}, {"statetype": "Condition", "icon": "Icon_skill_passive_4136", "name": "\u89f8\u5143\u4ef6-\u8fc5\u64ca", "grade": "S", "type": "\u89f8\u5143\u4ef6", "level": "Lv. 3", "tags": ["\u653b\u64ca\u65b9\u5f0f"], "describe": "\u518d\u653b\u64ca\u6642", "en_name": "Swift Strike", "en_describe": "When triggering <buf ID=900004>[Re-ATK]</buf>", "en_type": "Attack Type", "notes": "", "cos": [16]}, {"statetype": "Condition", "icon": "Icon_skill_passive_1112", "name": "\u89f8\u5143\u4ef6-\u6c7a\u9b25", "grade": "S", "type": "\u89f8\u5143\u4ef6", "level": "Lv. 6", "tags": ["\u8ddd\u96e2\u76f8\u95dc"], "describe": "\u4e3b\u52d5\u653b\u64ca\u5c0d\u6230\u6642\uff0c\u82e5\u76ee\u6a19\u53ef\u4ee5\u53cd\u64ca", "en_name": "Duel", "en_describe": "When initiating combat, if the target can retaliate", "en_type": "Distance Related", "notes": "Not triggerable by Tactical Weapons", "cos": [16]}, {"statetype": "Condition", "icon": "Icon_skill_passive_5217", "name": "\u89f8\u5143\u4ef6-\u731b\u8972", "grade": "S", "type": "\u89f8\u5143\u4ef6", "level": "Lv. 4", "tags": ["\u8010\u4e45\u76f8\u95dc"], "describe": "\u4e3b\u52d5\u653b\u64ca\u5c0d\u6230\u6642\uff0c\u82e5\u76ee\u6a19\u90e8\u4ef6\u5b8c\u597d", "en_name": "Assail", "en_describe": "When initiating combat, if the target part is not destroyed", "en_type": "HP Related", "notes": "Not triggerable by Tactical Weapons", "cos": [15, 16]}, {"statetype": "Condition", "icon": "Icon_skill_passive_5175", "name": "\u89f8\u5143\u4ef6-\u7834\u8fd1", "grade": "S", "type": "\u89f8\u5143\u4ef6", "level": "Lv. 6", "tags": ["\u8ddd\u96e2\u76f8\u95dc"], "describe": "\u8207\u76f8\u91301\u683c\u7684\u76ee\u6a19\u4e3b\u52d5\u653b\u64ca\u5c0d\u6230\u6642", "en_name": "Dogfight", "en_describe": "When initiating combat against a target within <color=#F74848>1</color> adjacent tile", "en_type": "Distance Related", "notes": "Not triggerable by Tactical Weapons", "cos": [15, 16]}, {"statetype": "Condition", "icon": "Icon_skill_passive_5243", "name": "\u89f8\u5143\u4ef6-\u5171\u529b", "grade": "S", "type": "\u89f8\u5143\u4ef6", "level": "Lv. 4", "tags": ["\u653b\u64ca\u65b9\u5f0f"], "describe": "\u540c\u6642\u4f7f\u7528\u5169\u628a\u6b66\u5668\u653b\u64ca\u6642", "en_name": "Synergy", "en_describe": "When attacking with two weapons simultaneously", "en_type": "Attack Type", "notes": "Cannot be triggered by Two-Handed Weapons", "cos": [15, 16]}, {"statetype": "Condition", "icon": "Icon_skill_passive_5236", "name": "\u89f8\u5143\u4ef6-\u6467\u673d", "grade": "S", "type": "\u89f8\u5143\u4ef6", "level": "Lv. 6", "tags": ["\u7279\u6b8a\u6548\u679c"], "describe": "\u4e3b\u52d5\u653b\u64ca\u5c0d\u6230\u6642\uff0c\u76ee\u6a19\u64c1\u67093\u500b\u53ca\u4ee5\u4e0a\u6e1b\u76ca\u6548\u679c\u6642", "en_name": "Obliterate", "en_describe": "When actively attacking, if the target has <color=#F74848>3</color> or more debuffs", "en_type": "Special Effects", "notes": "Not triggerable by Tactical Weapons", "cos": [14, 15]}, {"statetype": "Condition", "icon": "Icon_skill_passive_5155", "name": "\u89f8\u5143\u4ef6-\u731b\u9032", "grade": "S", "type": "\u89f8\u5143\u4ef6", "level": "Lv. 6", "tags": ["\u79fb\u52d5\u76f8\u95dc"], "describe": "\u4e3b\u52d5\u653b\u64ca\u524d\uff0c\u5982\u679c\u79fb\u52d5\u8ddd\u96e2\u5927\u65bc\u7b49\u65bc4\u683c", "en_name": "Rush", "en_describe": "If distance moved before actively attacking isgreater than or equal to <color=#F74848>4</color> tiles", "en_type": "Movement Related", "notes": "", "cos": [14, 15, 16]}, {"statetype": "Condition", "icon": "Icon_skill_passive_5237", "name": "\u89f8\u5143\u4ef6-\u8972\u9060", "grade": "S", "type": "\u89f8\u5143\u4ef6", "level": "Lv. 8", "tags": ["\u8ddd\u96e2\u76f8\u95dc"], "describe": "\u8207\u8ddd\u96e24\u683c\u53ca\u4ee5\u4e0a\u7684\u76ee\u6a19\u4e3b\u52d5\u653b\u64ca\u5c0d\u6230\u6642", "en_name": "Expanse", "en_describe": "When actively attacking targets that are <color=#F74848>4</color> or more tiles away", "en_type": "Distance Related", "notes": "Not triggerable by Tactical Weapons.Not triggerable by Melee Weapons", "cos": [14, 15, 16]}, {"statetype": "Condition", "icon": "Icon_skill_passive_5150", "name": "\u89f8\u5143\u4ef6-\u904f\u8fd1", "grade": "S", "type": "\u89f8\u5143\u4ef6", "level": "Lv. 4", "tags": ["\u8ddd\u96e2\u76f8\u95dc"], "describe": "\u8207\u8ddd\u96e23\u683c\u53ca\u4ee5\u5167\u7684\u76ee\u6a19\u4e3b\u52d5\u653b\u64ca\u5c0d\u6230\u6642", "en_name": "Restrain", "en_describe": "When actively attacking targets within <color=#F74848>3</color> tiles", "en_type": "Distance Related", "notes": "Not triggerable by Tactical Weapons", "cos": [13, 14]}, {"statetype": "Condition", "icon": "Icon_skill_passive_5222", "name": "\u89f8\u5143\u4ef6-\u6191\u9038", "grade": "S", "type": "\u89f8\u5143\u4ef6", "level": "Lv. 6", "tags": ["\u7279\u6b8a\u6548\u679c"], "describe": "\u4e3b\u52d5\u653b\u64ca\u6642\uff0c\u81ea\u8eab\u64c1\u67093\u500b\u53ca\u4ee5\u4e0a\u589e\u76ca\u6548\u679c\u6642", "en_name": "Prevail", "en_describe": "When actively attacking, if possessing <color=#F74848>3</color> or more buffs", "en_type": "Special Effects", "notes": "", "cos": [13, 14, 15, 16]}, {"statetype": "Condition", "icon": "Icon_skill_passive_5168", "name": "\u89f8\u5143\u4ef6-\u7121\u60a3", "grade": "S", "type": "\u89f8\u5143\u4ef6", "level": "Lv. 4", "tags": ["\u653b\u64ca\u65b9\u5f0f"], "describe": "\u4e3b\u52d5\u653b\u64ca\u6642\uff0c\u82e5\u6709\u6307\u4ee4\u6280\u80fd\u8655\u65bc\u51b7\u537b\u4e2d", "en_name": "Code Lock", "en_describe": "When actively attacking, if any code skill is on cooldown", "en_type": "Attack Type", "notes": "", "cos": [13, 14, 15, 16]}, {"statetype": "Condition", "icon": "Icon_skill_passive_3128", "name": "\u89f8\u5143\u4ef6-\u7165\u767c", "grade": "S", "type": "\u89f8\u5143\u4ef6", "level": "Lv. 4", "tags": ["\u8010\u4e45\u76f8\u95dc"], "describe": "\u4e3b\u52d5\u653b\u64ca\u6642\uff0c\u82e5\u81ea\u8eab\u8010\u4e45\u70ba100%", "en_name": "Spring", "en_describe": "When actively attacking, if HP is at <color=#F74848>100%</color>", "en_type": "HP Related", "notes": "", "cos": [12, 13, 14, 15, 16]}, {"statetype": "Condition", "icon": "Icon_RnD_P_1003", "name": "\u89f8\u5143\u4ef6-\u6c89\u8457", "grade": "S", "type": "\u89f8\u5143\u4ef6", "level": "Lv. 4", "tags": ["\u79fb\u52d5\u76f8\u95dc"], "describe": "\u4e3b\u52d5\u653b\u64ca\u524d\uff0c\u5982\u679c\u6c92\u6709\u79fb\u52d5\u904e", "en_name": "Equanimity", "en_describe": "Before actively attacking without having moved this turn", "en_type": "Movement Related", "notes": "", "cos": [12, 13, 14]}, {"statetype": "Condition", "icon": "Icon_skill_RnD_P_1002", "name": "\u89f8\u5143\u4ef6-\u58d3\u8feb", "grade": "S", "type": "\u89f8\u5143\u4ef6", "level": "Lv. 5", "tags": ["\u8ddd\u96e2\u76f8\u95dc"], "describe": "\u4e3b\u52d5\u653b\u64ca\u5c0d\u6230\u6642\uff0c\u82e5\u76ee\u6a19\u7121\u6cd5\u53cd\u64ca", "en_name": "Oppress", "en_describe": "When initiating combat, if the target cannot retaliate", "en_type": "Distance Related", "notes": "Not triggerable by Tactical Weapons", "cos": [11, 12]}, {"statetype": "Condition", "icon": "Icon_skill_RnD_P_1001", "name": "\u89f8\u5143\u4ef6-\u64ca\u7834", "grade": "S", "type": "\u89f8\u5143\u4ef6", "level": "Lv. 7", "tags": ["\u653b\u64ca\u7d50\u679c"], "describe": "\u4e3b\u52d5\u653b\u64ca\u5c0d\u6230\u6642\uff0c\u82e5\u64ca\u7834\u90e8\u4ef6", "en_name": "Break", "en_describe": "When initiating combat and breaking a part", "en_type": "Attack Result", "notes": "Not triggerable by Tactical Weapons", "cos": [11, 12, 13]}, {"statetype": "Condition", "icon": "Icon_skill_passive_1152", "name": "\u89f8\u5143\u4ef6-\u91cb\u80fd", "grade": "S", "type": "\u89f8\u5143\u4ef6", "level": "Lv. 4", "tags": ["AP\u76f8\u95dc"], "describe": "\u4f7f\u75284\u9ede\u53ca\u4ee5\u4e0aAP\u7684\u6280\u80fd\u6642", "en_name": "Discharge", "en_describe": "When executing skills that cost <color=#F74848>4</color> or more AP", "en_type": "AP Related", "notes": "", "cos": [11, 12]}, {"statetype": "Condition", "icon": "Icon_skill_passive_4126", "name": "\u89f8\u5143\u4ef6-\u7cbe\u6e96", "grade": "S", "type": "\u89f8\u5143\u4ef6", "level": "Lv. 4", "tags": ["\u547d\u4e2d\u76f8\u95dc"], "describe": "\u4e3b\u52d5\u653b\u64ca\u5c0d\u6230\u6642\uff0c\u82e5\u547d\u4e2d\u7387\u9ad8\u65bc80%", "en_name": "Accurate", "en_describe": "When initiating combat, if Hit Rate exceeds <color=#F74848>80%</color>", "en_type": "Hit Related", "notes": "Not triggerable by Tactical Weapons", "cos": [11, 12, 13, 14, 15, 16]}, {"statetype": "Condition", "icon": "Icon_skill_passive_5195", "name": "\u89f8\u5143\u4ef6-\u6bb2\u6ec5", "grade": "S", "type": "\u89f8\u5143\u4ef6", "level": "Lv. 8", "tags": ["\u8010\u4e45\u76f8\u95dc"], "describe": "\u4e3b\u52d5\u653b\u64ca\u5c0d\u6230\u6642\uff0c\u82e5\u76ee\u6a19\u8010\u4e45\u4f4e\u65bc50%", "en_name": "Annihilate", "en_describe": "When initiating combat, if target\u2019s HP is lower than <color=#F74848>50%</color>", "en_type": "HP Related", "notes": "Not triggerable by Tactical Weapons", "cos": [11, 12, 13]}, {"statetype": "Condition", "icon": "Icon_skill_passive_3120", "name": "\u89f8\u5143\u4ef6-\u653b\u5805", "grade": "S", "type": "\u89f8\u5143\u4ef6", "level": "Lv. 4", "tags": ["\u8010\u4e45\u76f8\u95dc"], "describe": "\u4e3b\u52d5\u653b\u64ca\u5c0d\u6230\u6642\uff0c\u82e5\u76ee\u6a19\u8010\u4e45\u9ad8\u65bc50%", "en_name": "Tackle", "en_describe": "When initiating combat, if target\u2019s HP is higher than <color=#F74848>50%</color>", "en_type": "HP Related", "notes": "Not triggerable by Tactical Weapons", "cos": [12, 13, 14, 15, 16]}, {"statetype": "Condition", "icon": "Icon_skill_passive_5194", "name": "\u89f8\u5143\u4ef6-\u80cc\u6c34", "grade": "S", "type": "\u89f8\u5143\u4ef6", "level": "Lv. 8", "tags": ["\u8010\u4e45\u76f8\u95dc"], "describe": "\u4e3b\u52d5\u653b\u64ca\u6642\uff0c\u82e5\u81ea\u8eab\u8010\u4e45\u4f4e\u65bc50%", "en_name": "Crisis", "en_describe": "When actively attacking, if HP is lower than <color=#F74848>50%</color>", "en_type": "HP Related", "notes": "", "cos": [11, 12, 13, 14, 15]}, {"statetype": "Condition", "icon": "Icon_skill_passive_3121", "name": "\u89f8\u5143\u4ef6-\u81e8\u6575", "grade": "S", "type": "\u89f8\u5143\u4ef6", "level": "Lv. 4", "tags": ["\u8010\u4e45\u76f8\u95dc"], "describe": "\u4e3b\u52d5\u653b\u64ca\u6642\uff0c\u82e5\u81ea\u8eab\u8010\u4e45\u9ad8\u65bc50%", "en_name": "Confront", "en_describe": "When actively attacking, if HP is higher than <color=#F74848>50%</color>", "en_type": "HP Related", "notes": "", "cos": [12, 16]}, {"statetype": "Condition", "icon": "Icon_skill_passive_3101", "name": "\u89f8\u5143\u4ef6-\u5805\u5b88", "grade": "S", "type": "\u89f8\u5143\u4ef6", "level": "Lv. 3", "tags": ["\u53d7\u64ca\u76f8\u95dc"], "describe": "\u6301\u76fe\u624b\u53d7\u5230\u653b\u64ca\u6642", "en_name": "Defend", "en_describe": "When the shield-bearing Arm is attacked", "en_type": "Damage Taken", "notes": "Shield Weapons only", "cos": [12, 13, 14, 15, 16]}, {"statetype": "Condition", "icon": "Icon_skill_passive_1110", "name": "\u89f8\u5143\u4ef6-\u5408\u64ca", "grade": "S", "type": "\u89f8\u5143\u4ef6", "level": "Lv. 3", "tags": ["\u653b\u64ca\u65b9\u5f0f"], "describe": "\u767c\u52d5\u5354\u529b\u653b\u64ca\u6642", "en_name": "Collaborate", "en_describe": "When launching a Link Attack", "en_type": "Attack Type", "notes": "Not triggerable by Melee Weapons", "cos": [11, 12, 13, 14, 15]}, {"statetype": "Condition", "icon": "Icon_skill_passive_1012", "name": "\u89f8\u5143\u4ef6-\u9023\u64ca", "grade": "S", "type": "\u89f8\u5143\u4ef6", "level": "Lv. 3", "tags": ["\u653b\u64ca\u65b9\u5f0f"], "describe": "\u767c\u52d5\u8ffd\u64ca\u6216\u9023\u7e8c\u653b\u64ca\u6642", "en_name": "Combo", "en_describe": "When triggering a Flurry Strike or Gusty Strike", "en_type": "Attack Type", "notes": "Not triggerable by Tactical Weapons", "cos": [12, 13, 14, 15, 16]}, {"statetype": "Condition", "icon": "Icon_skill_passive_1009", "name": "\u89f8\u5143\u4ef6-\u8b66\u6212", "grade": "S", "type": "\u89f8\u5143\u4ef6", "level": "Lv. 3", "tags": ["\u653b\u64ca\u65b9\u5f0f"], "describe": "\u767c\u52d5\u8b66\u6212\u5c04\u64ca\u6642", "en_name": "Vigilant", "en_describe": "When triggering Vigilant Shot", "en_type": "Attack Type", "notes": "Ranged Weapons only", "cos": [11, 12]}, {"statetype": "Condition", "icon": "Icon_skill_passive_1144", "name": "\u89f8\u5143\u4ef6-\u53cd\u64ca", "grade": "S", "type": "\u89f8\u5143\u4ef6", "level": "Lv. 3", "tags": ["\u653b\u64ca\u65b9\u5f0f"], "describe": "\u767c\u52d5\u53cd\u64ca\u6642", "en_name": "Retaliation", "en_describe": "When retaliating", "en_type": "Attack Type", "notes": "Not triggerable by Tactical Weapons", "cos": [11, 12, 13, 14, 15]}, {"statetype": "Condition", "icon": "Icon_skill_passive_1001", "name": "\u89f8\u5143\u4ef6-\u4fb5\u653b", "grade": "S", "type": "\u89f8\u5143\u4ef6", "level": "Lv. 4", "tags": ["\u653b\u64ca\u65b9\u5f0f"], "describe": "\u4e3b\u52d5\u4f7f\u7528\u7bc4\u570d\u6280\u80fd\u6642", "en_name": "Invasion", "en_describe": "When actively executing an AoE Skill", "en_type": "Attack Type", "notes": "", "cos": [11, 12, 13, 14]}]};
+window.AccessoriesData = {
+  "accessories": [
+    {
+      "statetype": "Function_W",
+      "icon": "Icon_skill_passive_5002",
+      "name": "應元件W-蓬勃",
+      "grade": "S",
+      "type": "應元件",
+      "level": "Lv. 7",
+      "tags": [
+        "戰後效果"
+      ],
+      "describe": "戰後驅散自身1個減益效果",
+      "en_name": "Thrive",
+      "en_describe": "After combat, dispels <color=#F74848>1</color> debuff from self",
+      "en_type": "After-Combat Effects",
+      "notes": "Two-handed weapons and backpack weapons only.Only triggers once per turn",
+      "cos": [
+        16
+      ]
+    },
+    {
+      "statetype": "Function_W",
+      "icon": "Icon_skill_passive_5187",
+      "name": "應元件W-戰慄",
+      "grade": "S",
+      "type": "應元件",
+      "level": "Lv. 2",
+      "tags": [
+        "戰後效果"
+      ],
+      "describe": "戰後為目標添加[回避率降低Ⅴ]，持續1回合",
+      "en_name": "Shudder",
+      "en_describe": "Inflicts <buf ID=7101107>[Dodge Rate Down V]</buf> on the target after combat, lasting for <color=#F74848>1</color> turn",
+      "en_type": "After-Combat Effects",
+      "notes": "The same debuff effect cannot stack.Two-handed weapons and backpack weapons only.Only triggers once per turn",
+      "cos": [
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "statetype": "Function_W",
+      "icon": "Icon_skill_passive_5168",
+      "name": "應元件W-騰挪",
+      "grade": "S",
+      "type": "應元件",
+      "level": "Lv. 2",
+      "tags": [
+        "戰中效果"
+      ],
+      "describe": "遭到反擊時必定閃避",
+      "en_name": "Maneuver",
+      "en_describe": "When retaliated against, triggers <buf ID=1008062>[Absolute Dodge]</buf>",
+      "en_type": "In-Combat Effects",
+      "notes": "Two-handed weapons only.Not triggerable by Tactical Weapons",
+      "cos": [
+        15
+      ]
+    },
+    {
+      "statetype": "Function_W",
+      "icon": "Icon_skill_RnD_P_2002",
+      "name": "應元件W-增幅",
+      "grade": "S",
+      "type": "應元件",
+      "level": "Lv. 11",
+      "tags": [
+        "特殊效果"
+      ],
+      "describe": "此次攻擊倍率提升0.1",
+      "en_name": "Augmented",
+      "en_describe": "Increases this attack’s multiplier by +<color=#F74848>0.1</color>",
+      "en_type": "Special Effects",
+      "notes": "Cannot be triggered outside of combat.Two-handed weapons and backpack weapons only",
+      "cos": [
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "statetype": "Function_W",
+      "icon": "Icon_skill_RnD_P_2001",
+      "name": "應元件W-號令",
+      "grade": "S",
+      "type": "應元件",
+      "level": "Lv. 4",
+      "tags": [
+        "特殊效果"
+      ],
+      "describe": "令周圍3格以內友軍一同進行[協力攻擊]",
+      "en_name": "Command",
+      "en_describe": "Orders allies within <color=#F74848>3</color> adjacent tiles to perform a <buf ID=900002>[Link Attack]</buf> together",
+      "en_type": "Special Effects",
+      "notes": "Only for Two-Handed Weapon use.Not triggerable by Tactical Weapons. 1-turn cooldownbetween triggers. Link Attacks deal 0.2x DMG(attacks require no ally skill prerequisites and consume no Link charges)",
+      "cos": [
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "statetype": "Function_W",
+      "icon": "Icon_skill_passive_4002",
+      "name": "應元件W-奮發",
+      "grade": "S",
+      "type": "應元件",
+      "level": "Lv. 5",
+      "tags": [
+        "戰後效果"
+      ],
+      "describe": "戰後為自己添加[暴擊率提升Ⅳ]，持續1回合",
+      "en_name": "Innervate",
+      "en_describe": "Gains <buf ID=7100406>[Crit Rate Up IV]</buf> after combat, lasting for <color=#F74848>1</color> turn",
+      "en_type": "After-Combat Effects",
+      "notes": "Two-handed weapons and backpack weapons only.The same buff effect cannot stack",
+      "cos": [
+        13,
+        14
+      ]
+    },
+    {
+      "statetype": "Function_W",
+      "icon": "Icon_skill_passive_4111",
+      "name": "應元件W-激勵",
+      "grade": "S",
+      "type": "應元件",
+      "level": "Lv. 5",
+      "tags": [
+        "戰後效果"
+      ],
+      "describe": "戰後為自己添加[命中率提升Ⅴ]，持續1回合",
+      "en_name": "Energized",
+      "en_describe": "Gains <buf ID=7100107>[Hit Rate Up V]</buf> after combat, lasting for <color=#F74848>1</color> turn",
+      "en_type": "After-Combat Effects",
+      "notes": "Two-handed weapons and backpack weapons only.The same buff effect cannot stack",
+      "cos": [
+        15,
+        16
+      ]
+    },
+    {
+      "statetype": "Function_W",
+      "icon": "Icon_skill_passive_1101",
+      "name": "應元件W-昂揚",
+      "grade": "S",
+      "type": "應元件",
+      "level": "Lv. 5",
+      "tags": [
+        "戰後效果"
+      ],
+      "describe": "戰後為自己添加[傷害提升Ⅴ]，持續1回合",
+      "en_name": "High-Spirited",
+      "en_describe": "Gains <buf ID=7100309>[DMG Up V]</buf> after combat, lasting for <color=#F74848>1</color> turn",
+      "en_type": "After-Combat Effects",
+      "notes": "Two-handed weapons and backpack weapons only.The same buff effect cannot stack",
+      "cos": [
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "statetype": "Function_W",
+      "icon": "Icon_skill_passive_5019",
+      "name": "應元件W-重整",
+      "grade": "S",
+      "type": "應元件",
+      "level": "Lv. 8",
+      "tags": [
+        "戰後效果"
+      ],
+      "describe": "戰後恢復相當於本次傷害的30%耐久，每回合最多生效1次",
+      "en_name": "Reorganized",
+      "en_describe": "After combat, restores HP equal to <color=#F74848>30%</color> of damage dealt in this skirmish. Can take effect only <color=#F74848>1</color> time per turn",
+      "en_type": "After-Combat Effects",
+      "notes": "Cannot trigger on missed attacks.Two-handed weapons and backpack weapons only.Only triggers once per turn",
+      "cos": [
+        16
+      ]
+    },
+    {
+      "statetype": "Function_W",
+      "icon": "Icon_skill_passive_3116",
+      "name": "應元件W-應急",
+      "grade": "S",
+      "type": "應元件",
+      "level": "Lv. 7",
+      "tags": [
+        "戰後效果"
+      ],
+      "describe": "戰後恢復10%耐久，每回合最多生效1次",
+      "en_name": "Emergency",
+      "en_describe": "Restores <color=#F74848>10%</color> of HP after combat. Can take effect only <color=#F74848>1</color> time per turn",
+      "en_type": "After-Combat Effects",
+      "notes": "Two-handed weapons and backpack weapons only.Only triggers once per turn",
+      "cos": [
+        13
+      ]
+    },
+    {
+      "statetype": "Function_W",
+      "icon": "Icon_skill_passive_1107",
+      "name": "應元件W-濺射",
+      "grade": "S",
+      "type": "應元件",
+      "level": "Lv. 7",
+      "tags": [
+        "戰中效果"
+      ],
+      "describe": "對命中部位以外的1個部位造成20%的濺射傷害",
+      "en_name": "Splash",
+      "en_describe": "Deals Splash DMG to <color=#F74848>1</color> part, except the part hit, equal to <color=#F74848>20%</color> of damage dealt",
+      "en_type": "In-Combat Effects",
+      "notes": "Two-handed weapons and backpack weapons only.Single-shot weapons only.Cannot be triggered outside of combat.Cannot trigger on missed attacks",
+      "cos": [
+        13,
+        15,
+        16
+      ]
+    },
+    {
+      "statetype": "Function_W",
+      "icon": "Icon_skill_passive_1006",
+      "name": "應元件W-爆破",
+      "grade": "S",
+      "type": "應元件",
+      "level": "Lv. 7",
+      "tags": [
+        "戰中效果"
+      ],
+      "describe": "對命中部位以外的1個部位造成30%武器攻擊力的固定傷害",
+      "en_name": "Explosive Charge",
+      "en_describe": "Deals <color=#F74848>30%</color> of Weapon ATK as Fixed DMG to <color=#F74848>1</color> part excluding the part hit",
+      "en_type": "In-Combat Effects",
+      "notes": "Single-shot weapons only.Cannot be triggered outside of combat.Cannot trigger on missed attacks.Two-handed weapons and backpack weapons only",
+      "cos": [
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "statetype": "Function_W",
+      "icon": "Icon_skill_passive_5016",
+      "name": "應元件W-穿甲",
+      "grade": "S",
+      "type": "應元件",
+      "level": "Lv. 9",
+      "tags": [
+        "戰中效果"
+      ],
+      "describe": "無視目標50%的護甲值",
+      "en_name": "Piercing",
+      "en_describe": "Ignores <color=#F74848>50%</color> of the target’s Armor",
+      "en_type": "In-Combat Effects",
+      "notes": "Two-handed weapons and backpack weapons only",
+      "cos": [
+        12,
+        13
+      ]
+    },
+    {
+      "statetype": "Function_W",
+      "icon": "Icon_skill_passive_1153",
+      "name": "應元件W-破足",
+      "grade": "S",
+      "type": "應元件",
+      "level": "Lv. 7",
+      "tags": [
+        "戰中效果"
+      ],
+      "describe": "對腿部傷害提升40%",
+      "en_name": "Legs Fractured",
+      "en_describe": "DMG +<color=#F74848>40%</color> against Legs",
+      "en_type": "In-Combat Effects",
+      "notes": "Two-handed weapons and backpack weapons only",
+      "cos": [
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "statetype": "Function_W",
+      "icon": "Icon_skill_passive_1147",
+      "name": "應元件W-破臂",
+      "grade": "S",
+      "type": "應元件",
+      "level": "Lv. 7",
+      "tags": [
+        "戰中效果"
+      ],
+      "describe": "對手臂傷害提升40%",
+      "en_name": "Broken Arm",
+      "en_describe": "DMG +<color=#F74848>40%</color> against Arms",
+      "en_type": "In-Combat Effects",
+      "notes": "Two-handed weapons and backpack weapons only",
+      "cos": [
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "statetype": "Function_W",
+      "icon": "Icon_skill_passive_1005",
+      "name": "應元件W-強擊",
+      "grade": "S",
+      "type": "應元件",
+      "level": "Lv. 7",
+      "tags": [
+        "戰中效果"
+      ],
+      "describe": "傷害提升20%",
+      "en_name": "Slamming",
+      "en_describe": "DMG +<color=#F74848>20%</color>",
+      "en_type": "In-Combat Effects",
+      "notes": "Two-handed weapons and backpack weapons only",
+      "cos": [
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "statetype": "Condition_W",
+      "icon": "Icon_skill_passive_5222",
+      "name": "觸元件W-憑逸",
+      "grade": "S",
+      "type": "觸元件",
+      "level": "Lv. 7",
+      "tags": [
+        "特殊效果"
+      ],
+      "describe": "主動攻擊時，自身擁有3個及以上增益效果時",
+      "en_name": "Prevail",
+      "en_describe": "When actively attacking, if possessing <color=#F74848>3</color> or more buffs",
+      "en_type": "Special Effects",
+      "notes": "Two-handed weapons and backpack weapons only",
+      "cos": [
+        16
+      ]
+    },
+    {
+      "statetype": "Condition_W",
+      "icon": "Icon_skill_passive_3128",
+      "name": "觸元件W-煥發",
+      "grade": "S",
+      "type": "觸元件",
+      "level": "Lv. 6",
+      "tags": [
+        "耐久相關"
+      ],
+      "describe": "主動攻擊時，若自身耐久為100%",
+      "en_name": "Spring",
+      "en_describe": "When actively attacking, if HP is at <color=#F74848>100%</color>",
+      "en_type": "HP Related",
+      "notes": "Two-handed weapons and backpack weapons only",
+      "cos": [
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "statetype": "Condition_W",
+      "icon": "Icon_RnD_P_1003",
+      "name": "觸元件W-沉著",
+      "grade": "S",
+      "type": "觸元件",
+      "level": "Lv. 6",
+      "tags": [
+        "移動相關"
+      ],
+      "describe": "主動攻擊前，如果沒有移動過",
+      "en_name": "Equanimity",
+      "en_describe": "Before actively attacking without having moved this turn",
+      "en_type": "Movement Related",
+      "notes": "Two-handed weapons and backpack weapons only",
+      "cos": [
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "statetype": "Condition_W",
+      "icon": "Icon_skill_RnD_P_1002",
+      "name": "觸元件W-壓迫",
+      "grade": "S",
+      "type": "觸元件",
+      "level": "Lv. 6",
+      "tags": [
+        "距離相關"
+      ],
+      "describe": "主動攻擊對戰時，若目標無法反擊",
+      "en_name": "Oppress",
+      "en_describe": "When initiating combat, if the target cannot retaliate",
+      "en_type": "Distance Related",
+      "notes": "Only for Two-Handed Weapon use.Not triggerable by Tactical Weapons",
+      "cos": [
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "statetype": "Condition_W",
+      "icon": "Icon_skill_RnD_P_1001",
+      "name": "觸元件W-擊破",
+      "grade": "S",
+      "type": "觸元件",
+      "level": "Lv. 8",
+      "tags": [
+        "攻擊結果"
+      ],
+      "describe": "主動攻擊對戰時，若擊破部件",
+      "en_name": "Break",
+      "en_describe": "When initiating combat and breaking a part",
+      "en_type": "Attack Result",
+      "notes": "Only for Two-Handed Weapon use.Not triggerable by Tactical Weapons",
+      "cos": [
+        15
+      ]
+    },
+    {
+      "statetype": "Condition_W",
+      "icon": "Icon_skill_passive_1152",
+      "name": "觸元件W-釋能",
+      "grade": "S",
+      "type": "觸元件",
+      "level": "Lv. 5",
+      "tags": [
+        "AP相關"
+      ],
+      "describe": "使用4點及以上AP的技能時",
+      "en_name": "Discharge",
+      "en_describe": "When executing skills that cost <color=#F74848>4</color> or more AP",
+      "en_type": "AP Related",
+      "notes": "Two-handed weapons and backpack weapons only",
+      "cos": [
+        12,
+        13
+      ]
+    },
+    {
+      "statetype": "Condition_W",
+      "icon": "Icon_skill_passive_4126",
+      "name": "觸元件W-精準",
+      "grade": "S",
+      "type": "觸元件",
+      "level": "Lv. 5",
+      "tags": [
+        "命中相關"
+      ],
+      "describe": "主動攻擊對戰時，若命中率高於80%",
+      "en_name": "Accurate",
+      "en_describe": "When initiating combat, if Hit Rate exceeds <color=#F74848>80%</color>",
+      "en_type": "Hit Related",
+      "notes": "Only for Two-Handed Weapon use.Not triggerable by Tactical Weapons",
+      "cos": [
+        15,
+        16
+      ]
+    },
+    {
+      "statetype": "Condition_W",
+      "icon": "Icon_skill_passive_5195",
+      "name": "觸元件W-殲滅",
+      "grade": "S",
+      "type": "觸元件",
+      "level": "Lv. 9",
+      "tags": [
+        "耐久相關"
+      ],
+      "describe": "主動攻擊對戰時，若目標耐久低於50%",
+      "en_name": "Annihilate",
+      "en_describe": "When initiating combat, if target’s HP is lower than <color=#F74848>50%</color>",
+      "en_type": "HP Related",
+      "notes": "Only for Two-Handed Weapon use.Not triggerable by Tactical Weapons",
+      "cos": [
+        14,
+        15
+      ]
+    },
+    {
+      "statetype": "Condition_W",
+      "icon": "Icon_skill_passive_3120",
+      "name": "觸元件W-攻堅",
+      "grade": "S",
+      "type": "觸元件",
+      "level": "Lv. 5",
+      "tags": [
+        "耐久相關"
+      ],
+      "describe": "主動攻擊對戰時，若目標耐久高於50%",
+      "en_name": "Tackle",
+      "en_describe": "When initiating combat, if target’s HP is higher than <color=#F74848>50%</color>",
+      "en_type": "HP Related",
+      "notes": "Only for Two-Handed Weapon use.Not triggerable by Tactical Weapons",
+      "cos": [
+        13
+      ]
+    },
+    {
+      "statetype": "Condition_W",
+      "icon": "Icon_skill_passive_5194",
+      "name": "觸元件W-背水",
+      "grade": "S",
+      "type": "觸元件",
+      "level": "Lv. 9",
+      "tags": [
+        "耐久相關"
+      ],
+      "describe": "主動攻擊時，若自身耐久低於50%",
+      "en_name": "Crisis",
+      "en_describe": "When actively attacking, if HP is lower than <color=#F74848>50%</color>",
+      "en_type": "HP Related",
+      "notes": "Two-handed weapons and backpack weapons only",
+      "cos": [
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "statetype": "Condition_W",
+      "icon": "Icon_skill_passive_3121",
+      "name": "觸元件W-臨敵",
+      "grade": "S",
+      "type": "觸元件",
+      "level": "Lv. 5",
+      "tags": [
+        "耐久相關"
+      ],
+      "describe": "主動攻擊時，若自身耐久高於50%",
+      "en_name": "Confront",
+      "en_describe": "When actively attacking, if HP is higher than <color=#F74848>50%</color>",
+      "en_type": "HP Related",
+      "notes": "Two-handed weapons and backpack weapons only",
+      "cos": [
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "statetype": "Condition_W",
+      "icon": "Icon_skill_passive_1110",
+      "name": "觸元件W-合擊",
+      "grade": "S",
+      "type": "觸元件",
+      "level": "Lv. 4",
+      "tags": [
+        "攻擊方式"
+      ],
+      "describe": "發動協力攻擊時",
+      "en_name": "Collaborate",
+      "en_describe": "When launching a Link Attack",
+      "en_type": "Attack Type",
+      "notes": "Only for Two-Handed Weapon use.Not triggerable by Tactical Weapons.Not triggerable by Melee Weapons",
+      "cos": [
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "statetype": "Condition_W",
+      "icon": "Icon_skill_passive_1012",
+      "name": "觸元件W-連擊",
+      "grade": "S",
+      "type": "觸元件",
+      "level": "Lv. 4",
+      "tags": [
+        "攻擊方式"
+      ],
+      "describe": "發動追擊或連續攻擊時",
+      "en_name": "Combo",
+      "en_describe": "When triggering a Flurry Strike or Gusty Strike",
+      "en_type": "Attack Type",
+      "notes": "Only for Two-Handed Weapon use.Not triggerable by Tactical Weapons",
+      "cos": [
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "statetype": "Condition_W",
+      "icon": "Icon_skill_passive_1009",
+      "name": "觸元件W-警戒",
+      "grade": "S",
+      "type": "觸元件",
+      "level": "Lv. 4",
+      "tags": [
+        "攻擊方式"
+      ],
+      "describe": "發動警戒射擊時",
+      "en_name": "Vigilant",
+      "en_describe": "When triggering Vigilant Shot",
+      "en_type": "Attack Type",
+      "notes": "Ranged Weapons only.Two-handed weapons and backpack weapons only",
+      "cos": [
+        16
+      ]
+    },
+    {
+      "statetype": "Condition_W",
+      "icon": "Icon_skill_passive_1144",
+      "name": "觸元件W-反擊",
+      "grade": "S",
+      "type": "觸元件",
+      "level": "Lv. 4",
+      "tags": [
+        "攻擊方式"
+      ],
+      "describe": "發動反擊時",
+      "en_name": "Retaliation",
+      "en_describe": "When retaliating",
+      "en_type": "Attack Type",
+      "notes": "Only for Two-Handed Weapon use.Not triggerable by Tactical Weapons",
+      "cos": [
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "statetype": "Condition_W",
+      "icon": "Icon_skill_passive_1001",
+      "name": "觸元件W-侵攻",
+      "grade": "S",
+      "type": "觸元件",
+      "level": "Lv. 6",
+      "tags": [
+        "攻擊方式"
+      ],
+      "describe": "主動使用範圍技能時",
+      "en_name": "Invasion",
+      "en_describe": "When actively executing an AoE Skill",
+      "en_type": "Attack Type",
+      "notes": "Two-handed weapons and backpack weapons only",
+      "cos": [
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "statetype": "Function",
+      "icon": "Icon_skill_passive_5189",
+      "name": "應元件-超然",
+      "grade": "S",
+      "type": "應元件",
+      "level": "Lv. 3",
+      "tags": [
+        "戰後效果"
+      ],
+      "describe": "戰後隨機延長自身2個增益效果的[剩餘回合]+1",
+      "en_name": "Transcendent",
+      "en_describe": "After combat, randomly extends the <buf ID=900078>[Turns Left]</buf> of <color=#F74848>2</color> buffs on self by <color=#F74848>1</color>",
+      "en_type": "After-Combat Effects",
+      "notes": "The same buff effect cannot stack.Only triggers once per turn",
+      "cos": [
+        16
+      ]
+    },
+    {
+      "statetype": "Function",
+      "icon": "Icon_skill_passive_4123",
+      "name": "應元件-強攻",
+      "grade": "S",
+      "type": "應元件",
+      "level": "Lv. 3",
+      "tags": [
+        "戰中效果"
+      ],
+      "describe": "此次攻擊第一擊必定暴擊",
+      "en_name": "Dominant",
+      "en_describe": "The first hit of this attack is guaranteed to be critical",
+      "en_type": "In-Combat Effects",
+      "notes": "",
+      "cos": [
+        16
+      ]
+    },
+    {
+      "statetype": "Function",
+      "icon": "Icon_skill_passive_5220",
+      "name": "應元件-挫志",
+      "grade": "S",
+      "type": "應元件",
+      "level": "Lv. 1",
+      "tags": [
+        "戰後效果"
+      ],
+      "describe": "使目標機師適性降低15%，持續1回合",
+      "en_name": "Frustration",
+      "en_describe": "Reduces the target pilot's Suitability by <color=#F74848>15%</color> for <color=#F74848>1</color> turn",
+      "en_type": "After-Combat Effects",
+      "notes": "The same buff effect cannot stack.Only triggers once per turn",
+      "cos": [
+        16
+      ]
+    },
+    {
+      "statetype": "Function",
+      "icon": "Icon_skill_passive_1157",
+      "name": "應元件-迸發",
+      "grade": "S",
+      "type": "應元件",
+      "level": "Lv. 6",
+      "tags": [
+        "戰中效果"
+      ],
+      "describe": "每消耗1點AP，傷害提升5%，最多提升25%",
+      "en_name": "Burst Apart",
+      "en_describe": "For every <color=#F74848>1</color> AP consumed, DMG +<color=#F74848>5%</color>, up to <color=#F74848>25%</color>",
+      "en_type": "In-Combat Effects",
+      "notes": "",
+      "cos": [
+        15,
+        16
+      ]
+    },
+    {
+      "statetype": "Function",
+      "icon": "Icon_skill_passive_1162",
+      "name": "應元件-破軀",
+      "grade": "S",
+      "type": "應元件",
+      "level": "Lv. 4",
+      "tags": [
+        "戰中效果"
+      ],
+      "describe": "對軀幹傷害提升30%",
+      "en_name": "Body Break",
+      "en_describe": "DMG +<color=#F74848>30%</color> against Body parts",
+      "en_type": "In-Combat Effects",
+      "notes": "",
+      "cos": [
+        15,
+        16
+      ]
+    },
+    {
+      "statetype": "Function",
+      "icon": "Icon_skill_passive_3130",
+      "name": "應元件-整葺",
+      "grade": "S",
+      "type": "應元件",
+      "level": "Lv. 4",
+      "tags": [
+        "戰後效果"
+      ],
+      "describe": "戰後為自己添加[整葺Ⅲ]，持續1回合",
+      "en_name": "Reconstruction",
+      "en_describe": "Gains <buf ID=1099907>[Reconstruction III]</buf> after combat, lasting for <color=#F74848>1</color> turn",
+      "en_type": "After-Combat Effects",
+      "notes": "Buff effects of the same type cannot stack.Only triggers once per turn",
+      "cos": [
+        15,
+        16
+      ]
+    },
+    {
+      "statetype": "Function",
+      "icon": "Icon_skill_passive_5011",
+      "name": "應元件-消彈",
+      "grade": "S",
+      "type": "應元件",
+      "level": "Lv. 4",
+      "tags": [
+        "戰後效果"
+      ],
+      "describe": "戰後使目標的戰術武器進入裝填，並使其所有部位損失最大耐久5%的固定傷害",
+      "en_name": "Ballistics Block",
+      "en_describe": "After combat, puts the target's Tactical Weapon into a reloading stateand deals <color=#F74848>5%</color> of Max HP as <buf ID=900017>[Fixed DMG]</buf> to all its parts",
+      "en_type": "After-Combat Effects",
+      "notes": "Not triggerable by Tactical Weapons.Only triggers once per turn",
+      "cos": [
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "statetype": "Function",
+      "icon": "Icon_skill_passive_1165",
+      "name": "應元件-短路",
+      "grade": "S",
+      "type": "應元件",
+      "level": "Lv. 4",
+      "tags": [
+        "戰後效果"
+      ],
+      "describe": "戰後對目標所有部位造成共計0.4倍武器攻擊的固定傷害",
+      "en_name": "Short Circuit",
+      "en_describe": "After combat, deals Fixed DMG equal to a total of <color=#F74848>0.4x</color> Weapon ATK to all parts of target",
+      "en_type": "After-Combat Effects",
+      "notes": "",
+      "cos": [
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "statetype": "Function",
+      "icon": "Icon_skill_passive_5021",
+      "name": "應元件-模糊",
+      "grade": "S",
+      "type": "應元件",
+      "level": "Lv. 1",
+      "tags": [
+        "戰後效果"
+      ],
+      "describe": "戰後為自己添加[模糊Ⅲ]，持續1回合",
+      "en_name": "Blur",
+      "en_describe": "Gains <buf ID=1099906>[Blur III]</buf> after combat, lasting for <color=#F74848>1</color> turn",
+      "en_type": "After-Combat Effects",
+      "notes": "Buff effects of the same type cannot stack.Only triggers once per turn",
+      "cos": [
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "statetype": "Function",
+      "icon": "Icon_skill_passive_5002",
+      "name": "應元件-蓬勃",
+      "grade": "S",
+      "type": "應元件",
+      "level": "Lv. 5",
+      "tags": [
+        "戰後效果"
+      ],
+      "describe": "戰後驅散自身1個減益效果",
+      "en_name": "Thrive",
+      "en_describe": "After combat, dispels <color=#F74848>1</color> debuff from self",
+      "en_type": "After-Combat Effects",
+      "notes": "Only triggers once per turn",
+      "cos": [
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "statetype": "Function",
+      "icon": "Icon_skill_passive_5148",
+      "name": "應元件-同愾",
+      "grade": "S",
+      "type": "應元件",
+      "level": "Lv. 3",
+      "tags": [
+        "戰後效果"
+      ],
+      "describe": "戰後將自己的一個增益效果複製給周圍1格內1名友軍",
+      "en_name": "Solidarity",
+      "en_describe": "After combat, replicates <color=#F74848>1</color> buff to <color=#F74848>1</color> ally within <color=#F74848>1</color> adjacent tile",
+      "en_type": "After-Combat Effects",
+      "notes": "The same buff effect cannot stack",
+      "cos": [
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "statetype": "Function",
+      "icon": "Icon_skill_passive_5223",
+      "name": "應元件-擴膛",
+      "grade": "S",
+      "type": "應元件",
+      "level": "Lv. 9",
+      "tags": [
+        "特殊效果"
+      ],
+      "describe": "發射子彈數+1",
+      "en_name": "Augmentation",
+      "en_describe": "Bullets +<color=#F74848>1</color>",
+      "en_type": "Special Effects",
+      "notes": "Only for Assault Weapon Use.Cannot be triggered outside of combat",
+      "cos": [
+        13,
+        14
+      ]
+    },
+    {
+      "statetype": "Function",
+      "icon": "Icon_skill_passive_5187",
+      "name": "應元件-戰慄",
+      "grade": "S",
+      "type": "應元件",
+      "level": "Lv. 1",
+      "tags": [
+        "戰後效果"
+      ],
+      "describe": "戰後為目標添加[回避率降低Ⅴ]，持續1回合",
+      "en_name": "Shudder",
+      "en_describe": "Inflicts <buf ID=7101107>[Dodge Rate Down V]</buf> on the target after combat, lasting for <color=#F74848>1</color> turn",
+      "en_type": "After-Combat Effects",
+      "notes": "The same debuff effect cannot stack.Only triggers once per turn",
+      "cos": [
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "statetype": "Function",
+      "icon": "Icon_skill_passive_5168",
+      "name": "應元件-騰挪",
+      "grade": "S",
+      "type": "應元件",
+      "level": "Lv. 1",
+      "tags": [
+        "戰中效果"
+      ],
+      "describe": "遭到反擊時必定閃避",
+      "en_name": "Maneuver",
+      "en_describe": "When retaliated against, triggers <buf ID=1008062>[Absolute Dodge]</buf>",
+      "en_type": "In-Combat Effects",
+      "notes": "Not triggerable by Tactical Weapons",
+      "cos": [
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "statetype": "Function",
+      "icon": "Icon_skill_RnD_P_2002",
+      "name": "應元件-增幅",
+      "grade": "S",
+      "type": "應元件",
+      "level": "Lv. 10",
+      "tags": [
+        "特殊效果"
+      ],
+      "describe": "此次攻擊倍率提升0.1",
+      "en_name": "Augmented",
+      "en_describe": "Increases this attack’s multiplier by +<color=#F74848>0.1</color>",
+      "en_type": "Special Effects",
+      "notes": "Cannot be triggered outside of combat.Rocket Launcher triggers 75% reduced effect",
+      "cos": [
+        11,
+        12
+      ]
+    },
+    {
+      "statetype": "Function",
+      "icon": "Icon_skill_RnD_P_2001",
+      "name": "應元件-號令",
+      "grade": "S",
+      "type": "應元件",
+      "level": "Lv. 3",
+      "tags": [
+        "特殊效果"
+      ],
+      "describe": "令周圍3格以內友軍一同進行[協力攻擊]",
+      "en_name": "Command",
+      "en_describe": "Orders allies within <color=#F74848>3</color> adjacent tiles to perform a <buf ID=900002>[Link Attack]</buf> together",
+      "en_type": "Special Effects",
+      "notes": "Not triggerable by Tactical Weapons. 1-turn cooldownbetween triggers. Link Attacks deal 0.2x DMG(attacks require no ally skill prerequisites and consume no Link charges)",
+      "cos": [
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "statetype": "Function",
+      "icon": "Icon_skill_passive_4002",
+      "name": "應元件-奮發",
+      "grade": "S",
+      "type": "應元件",
+      "level": "Lv. 4",
+      "tags": [
+        "戰後效果"
+      ],
+      "describe": "戰後為自己添加[暴擊率提升Ⅳ]，持續1回合",
+      "en_name": "Innervate",
+      "en_describe": "Gains <buf ID=7100406>[Crit Rate Up IV]</buf> after combat, lasting for <color=#F74848>1</color> turn",
+      "en_type": "After-Combat Effects",
+      "notes": "The same buff effect cannot stack",
+      "cos": [
+        12
+      ]
+    },
+    {
+      "statetype": "Function",
+      "icon": "Icon_skill_passive_4111",
+      "name": "應元件-激勵",
+      "grade": "S",
+      "type": "應元件",
+      "level": "Lv. 4",
+      "tags": [
+        "戰後效果"
+      ],
+      "describe": "戰後為自己添加[命中率提升Ⅴ]，持續1回合",
+      "en_name": "Energized",
+      "en_describe": "Gains <buf ID=7100107>[Hit Rate Up V]</buf> after combat, lasting for <color=#F74848>1</color> turn",
+      "en_type": "After-Combat Effects",
+      "notes": "The same buff effect cannot stack",
+      "cos": [
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "statetype": "Function",
+      "icon": "Icon_skill_passive_1101",
+      "name": "應元件-昂揚",
+      "grade": "S",
+      "type": "應元件",
+      "level": "Lv. 4",
+      "tags": [
+        "戰後效果"
+      ],
+      "describe": "戰後為自己添加[傷害提升Ⅴ]，持續1回合",
+      "en_name": "High-Spirited",
+      "en_describe": "Gains <buf ID=7100309>[DMG Up V]</buf> after combat, lasting for <color=#F74848>1</color> turn",
+      "en_type": "After-Combat Effects",
+      "notes": "The same buff effect cannot stack",
+      "cos": [
+        12,
+        13
+      ]
+    },
+    {
+      "statetype": "Function",
+      "icon": "Icon_skill_passive_5019",
+      "name": "應元件-重整",
+      "grade": "S",
+      "type": "應元件",
+      "level": "Lv. 6",
+      "tags": [
+        "戰後效果"
+      ],
+      "describe": "戰後恢復相當於本次傷害的30%耐久，每回合最多生效1次",
+      "en_name": "Reorganized",
+      "en_describe": "After combat, restores HP equal to <color=#F74848>30%</color> of damage dealt in this skirmish. Can take effect only <color=#F74848>1</color> time per turn",
+      "en_type": "After-Combat Effects",
+      "notes": "Cannot trigger on missed attacks.Only triggers once per turn",
+      "cos": [
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "statetype": "Function",
+      "icon": "Icon_skill_passive_3116",
+      "name": "應元件-應急",
+      "grade": "S",
+      "type": "應元件",
+      "level": "Lv. 5",
+      "tags": [
+        "戰後效果"
+      ],
+      "describe": "戰後恢復10%耐久，每回合最多生效1次",
+      "en_name": "Emergency",
+      "en_describe": "Restores <color=#F74848>10%</color> of HP after combat. Can take effect only <color=#F74848>1</color> time per turn",
+      "en_type": "After-Combat Effects",
+      "notes": "Only triggers once per turn",
+      "cos": [
+        12,
+        16
+      ]
+    },
+    {
+      "statetype": "Function",
+      "icon": "Icon_skill_passive_1107",
+      "name": "應元件-濺射",
+      "grade": "S",
+      "type": "應元件",
+      "level": "Lv. 5",
+      "tags": [
+        "戰中效果"
+      ],
+      "describe": "對命中部位以外的1個部位造成20%的濺射傷害",
+      "en_name": "Splash",
+      "en_describe": "Deals Splash DMG to <color=#F74848>1</color> part, except the part hit, equal to <color=#F74848>20%</color> of damage dealt",
+      "en_type": "In-Combat Effects",
+      "notes": "Single-shot weapons only.Cannot be triggered outside of combat.Cannot trigger on missed attacks",
+      "cos": [
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "statetype": "Function",
+      "icon": "Icon_skill_passive_1006",
+      "name": "應元件-爆破",
+      "grade": "S",
+      "type": "應元件",
+      "level": "Lv. 6",
+      "tags": [
+        "戰中效果"
+      ],
+      "describe": "對命中部位以外的1個部位造成30%武器攻擊力的固定傷害",
+      "en_name": "Explosive Charge",
+      "en_describe": "Deals <color=#F74848>30%</color> of Weapon ATK as Fixed DMG to <color=#F74848>1</color> part excluding the part hit",
+      "en_type": "In-Combat Effects",
+      "notes": "Single-shot weapons only.Cannot be triggered outside of combat.Cannot trigger on missed attacks",
+      "cos": [
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "statetype": "Function",
+      "icon": "Icon_skill_passive_5016",
+      "name": "應元件-穿甲",
+      "grade": "S",
+      "type": "應元件",
+      "level": "Lv. 8",
+      "tags": [
+        "戰中效果"
+      ],
+      "describe": "無視目標50%的護甲值",
+      "en_name": "Piercing",
+      "en_describe": "Ignores <color=#F74848>50%</color> of the target’s Armor",
+      "en_type": "In-Combat Effects",
+      "notes": "",
+      "cos": [
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "statetype": "Function",
+      "icon": "Icon_skill_passive_2106",
+      "name": "應元件-抵抗",
+      "grade": "S",
+      "type": "應元件",
+      "level": "Lv. 4",
+      "tags": [
+        "戰中效果"
+      ],
+      "describe": "遭受傷害降低20%",
+      "en_name": "Resistance",
+      "en_describe": "DMG Taken -<color=#F74848>20%</color>",
+      "en_type": "In-Combat Effects",
+      "notes": "Cannot be triggered outside of combat.Shield weapons only",
+      "cos": [
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "statetype": "Function",
+      "icon": "Icon_skill_passive_1153",
+      "name": "應元件-破足",
+      "grade": "S",
+      "type": "應元件",
+      "level": "Lv. 5",
+      "tags": [
+        "戰中效果"
+      ],
+      "describe": "對腿部傷害提升40%",
+      "en_name": "Legs Fractured",
+      "en_describe": "DMG +<color=#F74848>40%</color> against Legs",
+      "en_type": "In-Combat Effects",
+      "notes": "",
+      "cos": [
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "statetype": "Function",
+      "icon": "Icon_skill_passive_1147",
+      "name": "應元件-破臂",
+      "grade": "S",
+      "type": "應元件",
+      "level": "Lv. 5",
+      "tags": [
+        "戰中效果"
+      ],
+      "describe": "對手臂傷害提升40%",
+      "en_name": "Broken Arm",
+      "en_describe": "DMG +<color=#F74848>40%</color> against Arms",
+      "en_type": "In-Combat Effects",
+      "notes": "",
+      "cos": [
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "statetype": "Function",
+      "icon": "Icon_skill_passive_1005",
+      "name": "應元件-強擊",
+      "grade": "S",
+      "type": "應元件",
+      "level": "Lv. 5",
+      "tags": [
+        "戰中效果"
+      ],
+      "describe": "傷害提升20%",
+      "en_name": "Slamming",
+      "en_describe": "DMG +<color=#F74848>20%</color>",
+      "en_type": "In-Combat Effects",
+      "notes": "",
+      "cos": [
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "statetype": "Condition",
+      "icon": "Icon_skill_passive_5128",
+      "name": "觸元件-激昂",
+      "grade": "S",
+      "type": "觸元件",
+      "level": "Lv. 6",
+      "tags": [
+        "攻擊結果"
+      ],
+      "describe": "主動攻擊對戰時，如果發生暴擊",
+      "en_name": "Excitement",
+      "en_describe": "When initiating combat if landing a critical hit",
+      "en_type": "Attack Result",
+      "notes": "Not triggerable by Tactical Weapons",
+      "cos": [
+        16
+      ]
+    },
+    {
+      "statetype": "Condition",
+      "icon": "Icon_skill_passive_4136",
+      "name": "觸元件-迅擊",
+      "grade": "S",
+      "type": "觸元件",
+      "level": "Lv. 3",
+      "tags": [
+        "攻擊方式"
+      ],
+      "describe": "再攻擊時",
+      "en_name": "Swift Strike",
+      "en_describe": "When triggering <buf ID=900004>[Re-ATK]</buf>",
+      "en_type": "Attack Type",
+      "notes": "",
+      "cos": [
+        16
+      ]
+    },
+    {
+      "statetype": "Condition",
+      "icon": "Icon_skill_passive_1112",
+      "name": "觸元件-決鬥",
+      "grade": "S",
+      "type": "觸元件",
+      "level": "Lv. 6",
+      "tags": [
+        "距離相關"
+      ],
+      "describe": "主動攻擊對戰時，若目標可以反擊",
+      "en_name": "Duel",
+      "en_describe": "When initiating combat, if the target can retaliate",
+      "en_type": "Distance Related",
+      "notes": "Not triggerable by Tactical Weapons",
+      "cos": [
+        16
+      ]
+    },
+    {
+      "statetype": "Condition",
+      "icon": "Icon_skill_passive_5217",
+      "name": "觸元件-猛襲",
+      "grade": "S",
+      "type": "觸元件",
+      "level": "Lv. 4",
+      "tags": [
+        "耐久相關"
+      ],
+      "describe": "主動攻擊對戰時，若目標部件完好",
+      "en_name": "Assail",
+      "en_describe": "When initiating combat, if the target part is not destroyed",
+      "en_type": "HP Related",
+      "notes": "Not triggerable by Tactical Weapons",
+      "cos": [
+        15,
+        16
+      ]
+    },
+    {
+      "statetype": "Condition",
+      "icon": "Icon_skill_passive_5175",
+      "name": "觸元件-破近",
+      "grade": "S",
+      "type": "觸元件",
+      "level": "Lv. 6",
+      "tags": [
+        "距離相關"
+      ],
+      "describe": "與相鄰1格的目標主動攻擊對戰時",
+      "en_name": "Dogfight",
+      "en_describe": "When initiating combat against a target within <color=#F74848>1</color> adjacent tile",
+      "en_type": "Distance Related",
+      "notes": "Not triggerable by Tactical Weapons",
+      "cos": [
+        15,
+        16
+      ]
+    },
+    {
+      "statetype": "Condition",
+      "icon": "Icon_skill_passive_5243",
+      "name": "觸元件-共力",
+      "grade": "S",
+      "type": "觸元件",
+      "level": "Lv. 4",
+      "tags": [
+        "攻擊方式"
+      ],
+      "describe": "同時使用兩把武器攻擊時",
+      "en_name": "Synergy",
+      "en_describe": "When attacking with two weapons simultaneously",
+      "en_type": "Attack Type",
+      "notes": "Cannot be triggered by Two-Handed Weapons",
+      "cos": [
+        15,
+        16
+      ]
+    },
+    {
+      "statetype": "Condition",
+      "icon": "Icon_skill_passive_5236",
+      "name": "觸元件-摧朽",
+      "grade": "S",
+      "type": "觸元件",
+      "level": "Lv. 6",
+      "tags": [
+        "特殊效果"
+      ],
+      "describe": "主動攻擊對戰時，目標擁有3個及以上減益效果時",
+      "en_name": "Obliterate",
+      "en_describe": "When actively attacking, if the target has <color=#F74848>3</color> or more debuffs",
+      "en_type": "Special Effects",
+      "notes": "Not triggerable by Tactical Weapons",
+      "cos": [
+        14,
+        15
+      ]
+    },
+    {
+      "statetype": "Condition",
+      "icon": "Icon_skill_passive_5155",
+      "name": "觸元件-猛進",
+      "grade": "S",
+      "type": "觸元件",
+      "level": "Lv. 6",
+      "tags": [
+        "移動相關"
+      ],
+      "describe": "主動攻擊前，如果移動距離大於等於4格",
+      "en_name": "Rush",
+      "en_describe": "If distance moved before actively attacking isgreater than or equal to <color=#F74848>4</color> tiles",
+      "en_type": "Movement Related",
+      "notes": "",
+      "cos": [
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "statetype": "Condition",
+      "icon": "Icon_skill_passive_5237",
+      "name": "觸元件-襲遠",
+      "grade": "S",
+      "type": "觸元件",
+      "level": "Lv. 8",
+      "tags": [
+        "距離相關"
+      ],
+      "describe": "與距離4格及以上的目標主動攻擊對戰時",
+      "en_name": "Expanse",
+      "en_describe": "When actively attacking targets that are <color=#F74848>4</color> or more tiles away",
+      "en_type": "Distance Related",
+      "notes": "Not triggerable by Tactical Weapons.Not triggerable by Melee Weapons",
+      "cos": [
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "statetype": "Condition",
+      "icon": "Icon_skill_passive_5150",
+      "name": "觸元件-遏近",
+      "grade": "S",
+      "type": "觸元件",
+      "level": "Lv. 4",
+      "tags": [
+        "距離相關"
+      ],
+      "describe": "與距離3格及以內的目標主動攻擊對戰時",
+      "en_name": "Restrain",
+      "en_describe": "When actively attacking targets within <color=#F74848>3</color> tiles",
+      "en_type": "Distance Related",
+      "notes": "Not triggerable by Tactical Weapons",
+      "cos": [
+        13,
+        14
+      ]
+    },
+    {
+      "statetype": "Condition",
+      "icon": "Icon_skill_passive_5222",
+      "name": "觸元件-憑逸",
+      "grade": "S",
+      "type": "觸元件",
+      "level": "Lv. 6",
+      "tags": [
+        "特殊效果"
+      ],
+      "describe": "主動攻擊時，自身擁有3個及以上增益效果時",
+      "en_name": "Prevail",
+      "en_describe": "When actively attacking, if possessing <color=#F74848>3</color> or more buffs",
+      "en_type": "Special Effects",
+      "notes": "",
+      "cos": [
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "statetype": "Condition",
+      "icon": "Icon_skill_passive_5168",
+      "name": "觸元件-無患",
+      "grade": "S",
+      "type": "觸元件",
+      "level": "Lv. 4",
+      "tags": [
+        "攻擊方式"
+      ],
+      "describe": "主動攻擊時，若有指令技能處於冷卻中",
+      "en_name": "Code Lock",
+      "en_describe": "When actively attacking, if any code skill is on cooldown",
+      "en_type": "Attack Type",
+      "notes": "",
+      "cos": [
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "statetype": "Condition",
+      "icon": "Icon_skill_passive_3128",
+      "name": "觸元件-煥發",
+      "grade": "S",
+      "type": "觸元件",
+      "level": "Lv. 4",
+      "tags": [
+        "耐久相關"
+      ],
+      "describe": "主動攻擊時，若自身耐久為100%",
+      "en_name": "Spring",
+      "en_describe": "When actively attacking, if HP is at <color=#F74848>100%</color>",
+      "en_type": "HP Related",
+      "notes": "",
+      "cos": [
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "statetype": "Condition",
+      "icon": "Icon_RnD_P_1003",
+      "name": "觸元件-沉著",
+      "grade": "S",
+      "type": "觸元件",
+      "level": "Lv. 4",
+      "tags": [
+        "移動相關"
+      ],
+      "describe": "主動攻擊前，如果沒有移動過",
+      "en_name": "Equanimity",
+      "en_describe": "Before actively attacking without having moved this turn",
+      "en_type": "Movement Related",
+      "notes": "",
+      "cos": [
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "statetype": "Condition",
+      "icon": "Icon_skill_RnD_P_1002",
+      "name": "觸元件-壓迫",
+      "grade": "S",
+      "type": "觸元件",
+      "level": "Lv. 5",
+      "tags": [
+        "距離相關"
+      ],
+      "describe": "主動攻擊對戰時，若目標無法反擊",
+      "en_name": "Oppress",
+      "en_describe": "When initiating combat, if the target cannot retaliate",
+      "en_type": "Distance Related",
+      "notes": "Not triggerable by Tactical Weapons",
+      "cos": [
+        11,
+        12
+      ]
+    },
+    {
+      "statetype": "Condition",
+      "icon": "Icon_skill_RnD_P_1001",
+      "name": "觸元件-擊破",
+      "grade": "S",
+      "type": "觸元件",
+      "level": "Lv. 7",
+      "tags": [
+        "攻擊結果"
+      ],
+      "describe": "主動攻擊對戰時，若擊破部件",
+      "en_name": "Break",
+      "en_describe": "When initiating combat and breaking a part",
+      "en_type": "Attack Result",
+      "notes": "Not triggerable by Tactical Weapons",
+      "cos": [
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "statetype": "Condition",
+      "icon": "Icon_skill_passive_1152",
+      "name": "觸元件-釋能",
+      "grade": "S",
+      "type": "觸元件",
+      "level": "Lv. 4",
+      "tags": [
+        "AP相關"
+      ],
+      "describe": "使用4點及以上AP的技能時",
+      "en_name": "Discharge",
+      "en_describe": "When executing skills that cost <color=#F74848>4</color> or more AP",
+      "en_type": "AP Related",
+      "notes": "",
+      "cos": [
+        11,
+        12
+      ]
+    },
+    {
+      "statetype": "Condition",
+      "icon": "Icon_skill_passive_4126",
+      "name": "觸元件-精準",
+      "grade": "S",
+      "type": "觸元件",
+      "level": "Lv. 4",
+      "tags": [
+        "命中相關"
+      ],
+      "describe": "主動攻擊對戰時，若命中率高於80%",
+      "en_name": "Accurate",
+      "en_describe": "When initiating combat, if Hit Rate exceeds <color=#F74848>80%</color>",
+      "en_type": "Hit Related",
+      "notes": "Not triggerable by Tactical Weapons",
+      "cos": [
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "statetype": "Condition",
+      "icon": "Icon_skill_passive_5195",
+      "name": "觸元件-殲滅",
+      "grade": "S",
+      "type": "觸元件",
+      "level": "Lv. 8",
+      "tags": [
+        "耐久相關"
+      ],
+      "describe": "主動攻擊對戰時，若目標耐久低於50%",
+      "en_name": "Annihilate",
+      "en_describe": "When initiating combat, if target’s HP is lower than <color=#F74848>50%</color>",
+      "en_type": "HP Related",
+      "notes": "Not triggerable by Tactical Weapons",
+      "cos": [
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "statetype": "Condition",
+      "icon": "Icon_skill_passive_3120",
+      "name": "觸元件-攻堅",
+      "grade": "S",
+      "type": "觸元件",
+      "level": "Lv. 4",
+      "tags": [
+        "耐久相關"
+      ],
+      "describe": "主動攻擊對戰時，若目標耐久高於50%",
+      "en_name": "Tackle",
+      "en_describe": "When initiating combat, if target’s HP is higher than <color=#F74848>50%</color>",
+      "en_type": "HP Related",
+      "notes": "Not triggerable by Tactical Weapons",
+      "cos": [
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "statetype": "Condition",
+      "icon": "Icon_skill_passive_5194",
+      "name": "觸元件-背水",
+      "grade": "S",
+      "type": "觸元件",
+      "level": "Lv. 8",
+      "tags": [
+        "耐久相關"
+      ],
+      "describe": "主動攻擊時，若自身耐久低於50%",
+      "en_name": "Crisis",
+      "en_describe": "When actively attacking, if HP is lower than <color=#F74848>50%</color>",
+      "en_type": "HP Related",
+      "notes": "",
+      "cos": [
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "statetype": "Condition",
+      "icon": "Icon_skill_passive_3121",
+      "name": "觸元件-臨敵",
+      "grade": "S",
+      "type": "觸元件",
+      "level": "Lv. 4",
+      "tags": [
+        "耐久相關"
+      ],
+      "describe": "主動攻擊時，若自身耐久高於50%",
+      "en_name": "Confront",
+      "en_describe": "When actively attacking, if HP is higher than <color=#F74848>50%</color>",
+      "en_type": "HP Related",
+      "notes": "",
+      "cos": [
+        12,
+        16
+      ]
+    },
+    {
+      "statetype": "Condition",
+      "icon": "Icon_skill_passive_3101",
+      "name": "觸元件-堅守",
+      "grade": "S",
+      "type": "觸元件",
+      "level": "Lv. 3",
+      "tags": [
+        "受擊相關"
+      ],
+      "describe": "持盾手受到攻擊時",
+      "en_name": "Defend",
+      "en_describe": "When the shield-bearing Arm is attacked",
+      "en_type": "Damage Taken",
+      "notes": "Shield Weapons only",
+      "cos": [
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "statetype": "Condition",
+      "icon": "Icon_skill_passive_1110",
+      "name": "觸元件-合擊",
+      "grade": "S",
+      "type": "觸元件",
+      "level": "Lv. 3",
+      "tags": [
+        "攻擊方式"
+      ],
+      "describe": "發動協力攻擊時",
+      "en_name": "Collaborate",
+      "en_describe": "When launching a Link Attack",
+      "en_type": "Attack Type",
+      "notes": "Not triggerable by Melee Weapons",
+      "cos": [
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "statetype": "Condition",
+      "icon": "Icon_skill_passive_1012",
+      "name": "觸元件-連擊",
+      "grade": "S",
+      "type": "觸元件",
+      "level": "Lv. 3",
+      "tags": [
+        "攻擊方式"
+      ],
+      "describe": "發動追擊或連續攻擊時",
+      "en_name": "Combo",
+      "en_describe": "When triggering a Flurry Strike or Gusty Strike",
+      "en_type": "Attack Type",
+      "notes": "Not triggerable by Tactical Weapons",
+      "cos": [
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "statetype": "Condition",
+      "icon": "Icon_skill_passive_1009",
+      "name": "觸元件-警戒",
+      "grade": "S",
+      "type": "觸元件",
+      "level": "Lv. 3",
+      "tags": [
+        "攻擊方式"
+      ],
+      "describe": "發動警戒射擊時",
+      "en_name": "Vigilant",
+      "en_describe": "When triggering Vigilant Shot",
+      "en_type": "Attack Type",
+      "notes": "Ranged Weapons only",
+      "cos": [
+        11,
+        12
+      ]
+    },
+    {
+      "statetype": "Condition",
+      "icon": "Icon_skill_passive_1144",
+      "name": "觸元件-反擊",
+      "grade": "S",
+      "type": "觸元件",
+      "level": "Lv. 3",
+      "tags": [
+        "攻擊方式"
+      ],
+      "describe": "發動反擊時",
+      "en_name": "Retaliation",
+      "en_describe": "When retaliating",
+      "en_type": "Attack Type",
+      "notes": "Not triggerable by Tactical Weapons",
+      "cos": [
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "statetype": "Condition",
+      "icon": "Icon_skill_passive_1001",
+      "name": "觸元件-侵攻",
+      "grade": "S",
+      "type": "觸元件",
+      "level": "Lv. 4",
+      "tags": [
+        "攻擊方式"
+      ],
+      "describe": "主動使用範圍技能時",
+      "en_name": "Invasion",
+      "en_describe": "When actively executing an AoE Skill",
+      "en_type": "Attack Type",
+      "notes": "",
+      "cos": [
+        11,
+        12,
+        13,
+        14
+      ]
+    }
+  ]
+};
