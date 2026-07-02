@@ -5,12 +5,12 @@
   "Profession": "Gunner",
   "Occupation": "Sniper",
   "Talent0_2Ability": {
-    "name": "创伤面侧写",
-    "SpecificEffects": "使用轻型步枪主动攻击命中敌机时，根据部位类型施加不同的<buf ID=900137>[战损]</buf>，持续<color=#F74848>2</color>回合；主动攻击施加<buf ID=900137>[战损]</buf>时，可额外发动<buf ID=900004>[再攻击]</buf>，攻击前可以移动<color=#F74848>2</color>格，每回合最多发动<color=#F74848>1</color>次"
+    "name": "Trauma Profiling",
+    "SpecificEffects": "When actively attacking with a Light Rifle, inflicts different <buf ID=900137>[Battle Wound]</buf> based on the part hit, lasting for <color=#F74848>2</color>turns. When inflicting <buf ID=900137>[Battle Wound]</buf> with an active attack, triggers <buf ID=900004>[Re-ATK]</buf>, allowing movement of <color=#F74848>2</color> tiles. This effect can trigger <color=#F74848>1</color> times per turn."
   },
   "Talent3_5Ability": {
-    "name": "创伤面侧写",
-    "SpecificEffects": "使用轻型步枪主动攻击命中敌机时，根据部位类型施加不同的<buf ID=900137>[战损]</buf>，持续<color=#F74848>2</color>回合；主动攻击施加<buf ID=900137>[战损]</buf>时，可额外发动<buf ID=900004>[再攻击]</buf>，攻击前可以移动<color=#F74848>2</color>格，每回合最多发动<color=#F74848>1</color>次；\n自身耐久值高于<color=#F74848>80%</color>时，射击武器攻击力提升<color=#F74848>15%</color>"
+    "name": "Trauma Profiling",
+    "SpecificEffects": "When actively attacking with a Light Rifle, inflicts different <buf ID=900137>[Battle Wound]</buf> based on the part hit, lasting for <color=#F74848>2</color>turns. When inflicting <buf ID=900137>[Battle Wound]</buf> with an active attack, triggers <buf ID=900004>[Re-ATK]</buf>, allowing movement of <color=#F74848>2</color> tiles. This effect can trigger <color=#F74848>1</color> times per turn.\nWhen own HP percentage is <color=#F74848>80%</color> or above, ranged weapon attack increases by <color=#F74848>15%</color>."
   },
   "skills": {
     "300001": {
@@ -24,33 +24,33 @@
       "SpecificEffects": "During an Active Attack, deals an additional <color=#F74848>20%</color> DMG to the part with HP below <color=#F74848>50%</color>."
     },
     "301203": {
-      "name": "瞬时取证",
-      "describe": "指定<range type=0>4格菱形范围</range>内<color=#F74848>1</color>名敌机，对其耐久值最低部位施加<color=#F74848>1</color>个对应的<buf ID=900137>[战损]</buf>，之后可继续行动，攻击前无法移动",
+      "name": "Evidence Collection",
+      "describe": "Chooses <color=#F74848>1</color> enemy within <range type=0>4-tile diamond</range> area, inflicts <color=#F74848>1</color> <buf ID=900137>[Battle Wound]</buf> according to the lowest HP part. Can continue to act without moving.",
       "SpecificEffects": ""
     },
     "301204": {
-      "name": "战损回收",
+      "name": "Distress Recovery",
       "describe": "",
-      "SpecificEffects": "主动攻击时，击破携带对应<buf ID=900137>[战损]</buf>的目标部位后，战斗后返还技能消耗的全部AP，最多<color=#F74848>3</color>点，每回合最多发动<color=#F74848>1</color>次"
+      "SpecificEffects": "When initiating combat and destroying a part carrying <buf ID=900137>[Battle Wound]</buf>, restores all AP consumed by the skill, up to the maximum of <color=#F74848>3</color> AP. This effect can trigger <color=#F74848>1</color> times per turn."
     },
     "301205": {
-      "name": "远端解构",
+      "name": "Remote Analysis",
       "describe": "",
-      "SpecificEffects": "主动攻击时，目标离自身每远<color=#F74848>1</color>格，命中率提升<color=#F74848>4%</color>，最多提升<color=#F74848>20%</color>"
+      "SpecificEffects": "When actively attacking, for each <color=#F74848>1</color> tile away from the target, hit rate increases by <color=#F74848>4%</color>, up to <color=#F74848>20%</color>."
     },
     "301206": {
-      "name": "全解构",
-      "describe": "使用轻型步枪攻击单个目标，造成<color=#F74848>1.5</color>倍伤害，攻击前可以进行<buf ID=900014>[瞄准]</buf>，战后为命中的目标施加所有<buf ID=900137>[战损]</buf>，持续<color=#F74848>2</color>回合",
+      "name": "Full Evaluation",
+      "describe": "Attacks a target with Light Rifle, dealing <color=#F74848>1.5x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking. After applies all <buf ID=900137>[Battle Wound]</buf> debuffs to the target, lasting for <color=#F74848>2</color> turns.",
       "SpecificEffects": ""
     },
     "301207": {
-      "name": "洞察全局",
+      "name": "Deep Insights",
       "describe": "",
-      "SpecificEffects": "场上每有<color=#F74848>1</color>个<buf ID=900137>[战损]</buf>，暴击伤害提升<color=#F74848>4%</color>，最多提升<color=#F74848>20%</color>"
+      "SpecificEffects": "For each <color=#F74848>1</color> <buf ID=900137>[Battle Wound]</buf> on the field, increases critical damage by <color=#F74848>4%</color>, up to <color=#F74848>20%</color>."
     },
     "301208": {
-      "name": "多重剖绘",
-      "describe": "使用轻型步枪攻击主目标，造成<color=#F74848>0.7</color>倍伤害，可选择<color=#F74848>2</color>次额外目标，造成<color=#F74848>0.7</color>倍伤害，攻击前可进行<buf ID=900014>[瞄准]</buf>，并可重复锁定相同目标；会受到主目标反击",
+      "name": "Multi-Phase Plan",
+      "describe": "Attacks a target with Light Rifle, dealing <color=#F74848>0.7x</color> DMG. Selects <color=#F74848>2</color> additional target to deal <color=#F74848>0.7x</color> each. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking. Can select the same target multiple times. Only the first target will counter attack.",
       "SpecificEffects": ""
     }
   },
@@ -80,8 +80,8 @@
       "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
     },
     "301231": {
-      "name": "追猎标记1",
-      "SpecificEffects": "使用射击武器主动攻击击破部位时，根据部位的类型获得不同<buf ID=900141>[追猎增益]</buf>，每回合最多发动<color=#F74848>2</color>次"
+      "name": "Origin Tracer 1",
+      "SpecificEffects": "When actively attacking and breaking parts, gains <buf ID=900141>[Tracing]</buf> according to the part hit. Can trigger <color=#F74848>2</color> times per turn."
     },
     "300032": {
       "name": "AP Optimization 3",
@@ -92,20 +92,20 @@
       "SpecificEffects": "<buf ID=900004>[Re-ATK]</buf>'s effective times per turn <color=#F74848>+1</color>."
     },
     "301234": {
-      "name": "追猎标记2",
-      "SpecificEffects": "使用射击武器主动攻击时，若击毁目标，可额外移动<color=#F74848>3</color>格"
+      "name": "Origin Tracer 2",
+      "SpecificEffects": "After actively attacking and destroying a target, can additionally move <color=#F74848>3</color> tiles."
     },
     "301235": {
-      "name": "追猎标记3",
-      "SpecificEffects": "<buf ID=900142>[追猎标记1]</buf>每回合不再有发动次数限制"
+      "name": "Origin Tracer 3",
+      "SpecificEffects": "<buf ID=900142>[Origin Tracer 1]</buf> no longer has trigger limit"
     },
     "301236": {
-      "name": "追猎标记4",
-      "SpecificEffects": "行动开始时，随机获得<color=#F74848>1</color>种未获得的<buf ID=900141>[追猎增益]</buf>效果"
+      "name": "Origin Tracer 4",
+      "SpecificEffects": "At the start of action, randomly gains <color=#F74848>1</color> of unobtained <buf ID=900141>[Tracing]</buf> buff."
     },
     "301241": {
-      "name": "帷幕窥真1",
-      "SpecificEffects": "主动攻击对战后，若目标携带<buf ID=900137>[战损]</buf>，战后发动<buf ID=900004>[再攻击]</buf>，攻击前可以移动<color=#F74848>2</color>格，每回合最多发动<color=#F74848>1</color>次"
+      "name": "Unveiling 1",
+      "SpecificEffects": "After actively attacking, if the target is inflicted with <buf ID=900137>[Battle Wound]</buf>, triggers <buf ID=900004>[Re-ATK]</buf>. Can move <color=#F74848>2</color> tiles before attacking. Can trigger <color=#F74848>1</color> times per turn."
     },
     "300042": {
       "name": "AP Optimization 4",
@@ -116,17 +116,17 @@
       "SpecificEffects": "When destroying a target, additionally restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>2</color> times per turn."
     },
     "301244": {
-      "name": "帷幕窥真2",
-      "SpecificEffects": "每次触发核心天赋时，对目标周围<color=#F74848>1</color>圈相同阵营单位同时施加<buf ID=900137>[战损]</buf>"
+      "name": "Unveiling 2",
+      "SpecificEffects": "Each time talent is triggered, applies <buf ID=900137>[Battle Wound]</buf> to enemies of the same type within <color=#F74848>1</color> ring of the target."
     },
     "301245": {
-      "name": "帷幕窥真3",
-      "SpecificEffects": "与携带<buf ID=900137>[战损]</buf>的目标对战时，最终伤害提升<color=#F74848>5%</color>，每多<color=#F74848>1</color>个<buf ID=900137>[战损]</buf>时额外提升<color=#F74848>5%</color>，最多<color=#F74848>15%</color>"
+      "name": "Unveiling 3",
+      "SpecificEffects": "When attacking target carrying <buf ID=900137>[Battle Wound]</buf>, DMG dealt is increased by <color=#F74848>5%</color>, with an additional <color=#F74848>5%</color> for each <color=#F74848>1</color> additional stack of <buf ID=900137>[Battle Wound]</buf>, up to<color=#F74848>15%</color>."
     },
     "301246": {
-      "name": "帷幕窥真4",
-      "SpecificEffects": "天赋发动的<buf ID=900004>[再攻击]</buf>变为<buf ID=900005>[再行动]</buf>"
+      "name": "Unveiling 4",
+      "SpecificEffects": "Talent <buf ID=900004>[Re-ATK]</buf> effect changes to <buf ID=900005>[Re-Act]</buf>."
     }
   },
-  "version": "1.0"
+  "version": "2.4"
 }

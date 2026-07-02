@@ -2705,6 +2705,96 @@
       "enTranslation": true
     },
     {
+      "ID": "10340103",
+      "name": "Prometheus",
+      "type": "Light",
+      "quality": "SSR",
+      "icon": "Icon_mecha_wap1034",
+      "mechaIcon": "Icon_wap1034_1",
+      "lihuiIcon": "icon_lihui_wap1034",
+      "introduce": "SAT-47SC \u76d7\u706b\u8005\n\u5e0c\u5fb7\u5236\u9020\u4e3b\u5bfc\u7814\u53d1\u7684\u7b2c\u4e09\u4e16\u4ee3\u8f7b\u578b\u673a\u5175\uff0c\u4e3b\u8981\u5217\u88c5\u4e8e\u6668\u661f\u540c\u76df\u9632\u536b\u519b\u53ca\u76d1\u5bdf\u59d4\u5458\u4f1a\u3002\n\u4f5c\u4e3a\u5e0c\u5fb7\u5236\u9020\u8fdb\u519b\u9ad8\u7aef\u8f7b\u578b\u673a\u5175\u9886\u57df\u7684\u4ee3\u8868\u673a\u578b\uff0c\u76d7\u706b\u8005\u7684\u8bbe\u8ba1\u6452\u5f03\u4e86\u516c\u53f8\u4e00\u76f4\u4ee5\u6765\u91cd\u89c6\u706b\u529b\u4e0e\u6027\u4ef7\u6bd4\u7684\u7406\u5ff5\uff0c\u4e0d\u60dc\u6210\u672c\u4f7f\u7528\u8d28\u91cf\u66f4\u8f7b\u5f3a\u5ea6\u66f4\u9ad8\u7684\u65b0\u578b\u94a2\u5c9a\u5408\u91d1\u6846\u67b6\uff0c\u4ee5\u53ca\u8bd5\u9a8c\u578b\u6218\u6597\u8f85\u52a9\u7efc\u5408\u7cfb\u7edf\u300c\u88c2\u89e3\u6838\u5fc3\u300d\uff0c\u5e76\u642d\u914dAI\u52a8\u6001\u673a\u80fd\u7ba1\u5236\u8bbe\u8ba1\uff0c\u4f7f\u5176\u80fd\u4ee5\u8f83\u4f4e\u7684\u6574\u4f53\u80fd\u8017\u517c\u987e\u6218\u573a\u6570\u636e\u641c\u96c6\u548c\u7cbe\u51c6\u706b\u529b\u77ac\u65f6\u91ca\u653e\uff0c\u4ece\u800c\u9ad8\u6548\u6253\u51fb\u9ad8\u4ef7\u503c\u76ee\u6807\u3002\u65e0\u8bba\u4ece\u6280\u672f\u53c2\u6570\u8fd8\u662f\u5b9e\u6218\u7ed3\u679c\u6765\u770b\uff0c\u76d7\u706b\u8005\u90fd\u662f\u4e00\u90e8\u9002\u5408\u957f\u65f6\u95f4\u5355\u5175\u7279\u79cd\u4f5c\u6218\u4efb\u52a1\u7684\u4f18\u79c0\u673a\u5175\u3002",
+      "output": "1450",
+      "durable": "361",
+      "Armor": "48",
+      "fire": "123",
+      "Antiriot": "770",
+      "parts": [
+        {
+          "position": "\u8eaf\u5e72",
+          "aircraftWeight": "275",
+          "maxHp": "10037"
+        },
+        {
+          "position": "\u5de6\u81c2",
+          "aircraftWeight": "95",
+          "maxHp": "4337"
+        },
+        {
+          "position": "\u53f3\u81c2",
+          "aircraftWeight": "95",
+          "maxHp": "4337"
+        },
+        {
+          "position": "\u817f\u90e8",
+          "aircraftWeight": "165",
+          "maxHp": "7173"
+        }
+      ],
+      "manjiFirepower": "1206",
+      "modules": [
+        {
+          "_id": {
+            "timestamp": 1696936931,
+            "date": 1696936931000
+          },
+          "ID": "40014",
+          "name": "Accuracy Mod",
+          "SpecificEffects": "Hit Rate <color=#F74848>+10%</color>.",
+          "BufCarried": "400141",
+          "SkillIcon": "Icon_entry_40011",
+          "icon": "Icon_entry_40011",
+          "Status": 1,
+          "weight": 860,
+          "id": "4001",
+          "level": 4
+        },
+        {
+          "_id": {
+            "timestamp": 1747887587,
+            "date": 1747887587000
+          },
+          "ID": "20534",
+          "name": "Heartsplitter Mod",
+          "SpecificEffects": "During combat, for each <color=#F74848>1</color> debuff the target carries, increases own DMG dealt by <color=#F74848>5%</color> and target DMG taken by <color=#F74848>2%</color>, stacking up to <color=#F74848>5</color> times, lasting for <color=#F74848>2</color> turns.",
+          "BufCarried": "205341/205343/205345",
+          "SkillIcon": "Icon_skill_passive_5220",
+          "icon": "Icon_skill_passive_5220",
+          "Status": 1,
+          "weight": 334,
+          "id": "2053",
+          "level": 4
+        },
+        {
+          "_id": {
+            "timestamp": 1747887589,
+            "date": 1747887589000
+          },
+          "ID": "30438",
+          "name": "Aggression Mod",
+          "SpecificEffects": "When actively attacking, critical hit chance increases by <color=#F74848>20%</color>. If the attack does not score a critical hit, the next attack critical hit chance increases by additionally <color=#F74848>15%</color>. This effect is reset upon scoring a critical hit. When entering <buf ID=900014>[Aiming]</buf> Mode, the attack multiplier is increased by <color=#F74848>+0.1</color>.",
+          "BufCarried": "304381/304382/304386",
+          "SkillIcon": "Icon_entry_10094",
+          "icon": "Icon_entry_10094",
+          "Status": 1,
+          "weight": 736,
+          "id": "3043",
+          "level": 8
+        }
+      ],
+      "version": "2.4",
+      "enTranslation": true
+    },
+    {
       "ID": "33010103",
       "name": "REV-00",
       "type": "Heavy",
@@ -4986,96 +5076,6 @@
           "Status": 1,
           "weight": 848,
           "id": "3057",
-          "level": 8
-        }
-      ],
-      "version": "1.0",
-      "enTranslation": false
-    },
-    {
-      "ID": "10340103",
-      "name": "\u76d7\u706b\u8005",
-      "type": "Light",
-      "quality": "SSR",
-      "icon": "Icon_mecha_wap1034",
-      "mechaIcon": "Icon_wap1034_1",
-      "lihuiIcon": "icon_lihui_wap1034",
-      "introduce": "SAT-47SC \u76d7\u706b\u8005\n\u5e0c\u5fb7\u5236\u9020\u4e3b\u5bfc\u7814\u53d1\u7684\u7b2c\u4e09\u4e16\u4ee3\u8f7b\u578b\u673a\u5175\uff0c\u4e3b\u8981\u5217\u88c5\u4e8e\u6668\u661f\u540c\u76df\u9632\u536b\u519b\u53ca\u76d1\u5bdf\u59d4\u5458\u4f1a\u3002\n\u4f5c\u4e3a\u5e0c\u5fb7\u5236\u9020\u8fdb\u519b\u9ad8\u7aef\u8f7b\u578b\u673a\u5175\u9886\u57df\u7684\u4ee3\u8868\u673a\u578b\uff0c\u76d7\u706b\u8005\u7684\u8bbe\u8ba1\u6452\u5f03\u4e86\u516c\u53f8\u4e00\u76f4\u4ee5\u6765\u91cd\u89c6\u706b\u529b\u4e0e\u6027\u4ef7\u6bd4\u7684\u7406\u5ff5\uff0c\u4e0d\u60dc\u6210\u672c\u4f7f\u7528\u8d28\u91cf\u66f4\u8f7b\u5f3a\u5ea6\u66f4\u9ad8\u7684\u65b0\u578b\u94a2\u5c9a\u5408\u91d1\u6846\u67b6\uff0c\u4ee5\u53ca\u8bd5\u9a8c\u578b\u6218\u6597\u8f85\u52a9\u7efc\u5408\u7cfb\u7edf\u300c\u88c2\u89e3\u6838\u5fc3\u300d\uff0c\u5e76\u642d\u914dAI\u52a8\u6001\u673a\u80fd\u7ba1\u5236\u8bbe\u8ba1\uff0c\u4f7f\u5176\u80fd\u4ee5\u8f83\u4f4e\u7684\u6574\u4f53\u80fd\u8017\u517c\u987e\u6218\u573a\u6570\u636e\u641c\u96c6\u548c\u7cbe\u51c6\u706b\u529b\u77ac\u65f6\u91ca\u653e\uff0c\u4ece\u800c\u9ad8\u6548\u6253\u51fb\u9ad8\u4ef7\u503c\u76ee\u6807\u3002\u65e0\u8bba\u4ece\u6280\u672f\u53c2\u6570\u8fd8\u662f\u5b9e\u6218\u7ed3\u679c\u6765\u770b\uff0c\u76d7\u706b\u8005\u90fd\u662f\u4e00\u90e8\u9002\u5408\u957f\u65f6\u95f4\u5355\u5175\u7279\u79cd\u4f5c\u6218\u4efb\u52a1\u7684\u4f18\u79c0\u673a\u5175\u3002",
-      "output": "1450",
-      "durable": "361",
-      "Armor": "48",
-      "fire": "123",
-      "Antiriot": "770",
-      "parts": [
-        {
-          "position": "\u8eaf\u5e72",
-          "aircraftWeight": "275",
-          "maxHp": "10037"
-        },
-        {
-          "position": "\u5de6\u81c2",
-          "aircraftWeight": "95",
-          "maxHp": "4337"
-        },
-        {
-          "position": "\u53f3\u81c2",
-          "aircraftWeight": "95",
-          "maxHp": "4337"
-        },
-        {
-          "position": "\u817f\u90e8",
-          "aircraftWeight": "165",
-          "maxHp": "7173"
-        }
-      ],
-      "manjiFirepower": "1206",
-      "modules": [
-        {
-          "_id": {
-            "timestamp": 1696936931,
-            "date": 1696936931000
-          },
-          "ID": "40014",
-          "name": "Accuracy Mod",
-          "SpecificEffects": "Hit Rate <color=#F74848>+10%</color>.",
-          "BufCarried": "400141",
-          "SkillIcon": "Icon_entry_40011",
-          "icon": "Icon_entry_40011",
-          "Status": 1,
-          "weight": 860,
-          "id": "4001",
-          "level": 4
-        },
-        {
-          "_id": {
-            "timestamp": 1747887587,
-            "date": 1747887587000
-          },
-          "ID": "20534",
-          "name": "\u88c2\u89e3\u6838\u5fc3",
-          "SpecificEffects": "\u5bf9\u6218\u4e2d\u6bcf\u65bd\u52a0<color=#F74848>1</color>\u4e2a\u51cf\u76ca\u6548\u679c\u65f6\uff0c\u4f7f\u81ea\u8eab\u4f24\u5bb3\u63d0\u5347<color=#F74848>5%</color>\uff0c\u76ee\u6807\u906d\u53d7\u4f24\u5bb3\u63d0\u5347<color=#F74848>2%</color>\uff0c\u53ef\u53e0\u52a0<color=#F74848>5</color>\u5c42\uff0c\u6301\u7eed<color=#F74848>2</color>\u56de\u5408",
-          "BufCarried": "205341/205343/205345",
-          "SkillIcon": "Icon_skill_passive_5220",
-          "icon": "Icon_skill_passive_5220",
-          "Status": 1,
-          "weight": 334,
-          "id": "2053",
-          "level": 4
-        },
-        {
-          "_id": {
-            "timestamp": 1747887589,
-            "date": 1747887589000
-          },
-          "ID": "30438",
-          "name": "\u786e\u66b4\u6a21\u7ec4",
-          "SpecificEffects": "\u4e3b\u52a8\u653b\u51fb\u65f6\uff0c\u66b4\u51fb\u7387\u63d0\u5347<color=#F74848>20%</color>\uff0c\u82e5\u672c\u6b21\u672a\u66b4\u51fb\uff0c\u4f7f\u81ea\u8eab\u4e0b\u6b21\u4e3b\u52a8\u653b\u51fb\u66b4\u51fb\u7387\u63d0\u5347<color=#F74848>15%</color>\uff0c\u53ef\u53e0\u52a0\uff0c\u6301\u7eed\u81f3\u66b4\u51fb\u65f6\u6e05\u7a7a\uff1b<buf ID=900014>[\u7784\u51c6]</buf>\u65f6\uff0c\u6280\u80fd\u500d\u7387<color=#F74848>+0.1</color>",
-          "BufCarried": "304381/304382/304386",
-          "SkillIcon": "Icon_entry_10094",
-          "icon": "Icon_entry_10094",
-          "Status": 1,
-          "weight": 736,
-          "id": "3043",
           "level": 8
         }
       ],

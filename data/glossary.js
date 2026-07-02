@@ -286,7 +286,7 @@ window.GlossaryData = {
     },
     "900136": {
       "name": "Insight",
-      "effect": "When attacked by melee or ranged weapons, if equipped with Alter-Blade in both hands and both hands are in tact, activates [Insight Counterattack], dealing <color=#F74848>1.2x</color> DMG. [Insight Counterattack] ignores [Target Shift]. Each stack increases DMG dealt by <color=#F74848>5%</color> and dodge rate by <color=#F74848>5%</color>. <color=#F74848>1</color> stack is removed upon activation."
+      "effect": "When attacked by melee or ranged weapons, if equipped with Alter-Blade in both hands and both hands are intact, activates [Insight Counterattack], dealing <color=#F74848>1.2x</color> DMG. [Insight Counterattack] ignores [Target Shift]. Each stack increases DMG dealt by <color=#F74848>5%</color> and dodge rate by <color=#F74848>5%</color>. <color=#F74848>1</color> stack is removed upon activation."
     },
     "1002502": {
       "name": "Impulsive I",
@@ -728,14 +728,6 @@ window.GlossaryData = {
       "name": "Hit Rate UP III",
       "effect": "Hit Rate +12%."
     },
-    "7100106": {
-      "name": "Hit Rate UP IV",
-      "effect": "Hit Rate +15%."
-    },
-    "7100107": {
-      "name": "Hit Rate UP V",
-      "effect": "Hit Rate +20%."
-    },
     "7100205": {
       "name": "Dodge Rate UP III",
       "effect": "Dodge rate +15%."
@@ -767,6 +759,14 @@ window.GlossaryData = {
     "7100309": {
       "name": "DMG UP V",
       "effect": "DMG +25%."
+    },
+    "7100106": {
+      "name": "Hit Rate UP IV",
+      "effect": "Hit Rate +15%."
+    },
+    "7100107": {
+      "name": "Hit Rate UP V",
+      "effect": "Hit Rate +20%."
     },
     "7100401": {
       "name": "Crit Rate UP I",
@@ -995,6 +995,14 @@ window.GlossaryData = {
     "1099907": {
       "name": "Reconstruction III",
       "effect": "Repair AMT +25%."
+    },
+    "900137": {
+      "name": "Battle Wound",
+      "effect": "Applies debuff based on the part hit.\n[Battle Wound - Body]: Reduces AP by <color=#F74848>-1</color> when triggering [Re-ATK].\n[Battle Wound - Left Arm]: When attacking, reduces Final DMG by <color=#F74848>20%</color> for the first hit.\n[Battle Wound - Right Arm]: When attacking, if the number of hits are more than <color=#F74848>5</color>, reduces the number of hits by <color=#F74848>20%</color>.\n[Battle Wound - Leg]: When leg is intact, loses <color=#F74848>10%</color> of leg maximum HP while standing still, with an additional of <color=#F74848>10%</color> for every tile moved. Effect removed after triggering."
+    },
+    "900141": {
+      "name": "Tracing",
+      "effect": "Applies buff based on the part destroyed.\nBody: Grants [Precision] - next attack will enter [Aiming] Mode.\nArms: Grants [Rapid] - Next active attack gets <color=#F74848>+1</color> range.\nLeg: Grants [Direct Shot] - Next attack multiplier increases by <color=#F74848>+0.1</color>.\nAll effects are removed after triggering."
     }
   },
   "skill": {
