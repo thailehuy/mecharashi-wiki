@@ -1377,18 +1377,23 @@ body {
   width: 65%;
   height: 65%;
   object-fit: contain;
-  top: 48%;
+  top: 50%;
   left: 49%;
   transform: translate(-50%, -50%) rotate(16deg);
 }
 
 .acc-skill-icon--trigger-w {
+  top: 49%;
   left: 50%;
+  width: 60%;
+  height: 60%;
 }
 
 .acc-skill-icon--reaction-w {
-  top: 47%;
+  top: 46%;
   left: 52%;
+  width: 65%;
+  height: 65%;
 }
 
 .acc-card-body {
