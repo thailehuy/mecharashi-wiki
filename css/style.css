@@ -977,7 +977,7 @@ body {
   white-space: nowrap;
 }
 
-.affiliate-link {
+.cn-wiki-link {
   font-size: 0.7rem;
   font-weight: 600;
   color: #818cf8;
@@ -987,12 +987,12 @@ body {
   transition: color 0.15s;
 }
 
-.affiliate-link:hover {
+.cn-wiki-link:hover {
   color: #a5b4fc;
   text-decoration: underline;
 }
 
-.nav-drawer-footer .affiliate-link {
+.nav-drawer-footer .cn-wiki-link {
   display: block;
   margin-bottom: 0.35rem;
 }
