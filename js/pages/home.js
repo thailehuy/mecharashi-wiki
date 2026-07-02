@@ -19,6 +19,10 @@ Pages.home = {
             '<div class="home-card-title">STs</div>' +
             '<div class="home-card-desc">Browse all STs, modules, and part stats</div>' +
           '</a>' +
+          '<a href="#weapons" class="home-card">' +
+            '<div class="home-card-title">Weapons</div>' +
+            '<div class="home-card-desc">Browse all signature weapons, skills, and pilot pairings</div>' +
+          '</a>' +
         '</div>' +
         '<div class="home-qa">' +
           '<h2 class="home-disclaimer-title">Q&amp;A</h2>' +

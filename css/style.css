@@ -180,6 +180,8 @@ body {
 
 /* Listing grid */
 .listing-header {
+  display: flex;
+  align-items: center;
   border-bottom: 2px solid #e94560;
   padding-bottom: 0.5rem;
   margin-bottom: 1.5rem;
@@ -1273,4 +1275,73 @@ body {
 .stat-value {
   color: #e2e8f0;
   font-weight: 600;
+}
+
+.ac-section {
+  margin-bottom: 2rem;
+}
+
+.ac-section-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  padding-bottom: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+.tag-ac {
+  background: rgba(233, 69, 96, 0.15);
+  color: #e94560;
+  border: 1px solid rgba(233, 69, 96, 0.3);
+}
+
+.ac-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 1.5rem;
+}
+
+.ac-nav-item {
+  padding: 0.25rem 0.65rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #94a3b8;
+  border: 1px solid rgba(255,255,255,0.12);
+  background: rgba(255,255,255,0.04);
+  text-decoration: none;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+
+.ac-nav-item:hover {
+  background: rgba(233, 69, 96, 0.15);
+  color: #e94560;
+  border-color: rgba(233, 69, 96, 0.4);
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #e2e8f0;
+  background: rgba(20, 20, 40, 0.85);
+  border: 1px solid rgba(255,255,255,0.15);
+  text-decoration: none;
+  backdrop-filter: blur(6px);
+  transition: background 0.15s, color 0.15s;
+  z-index: 200;
+}
+
+.back-to-top:hover {
+  background: rgba(233, 69, 96, 0.2);
+  color: #e94560;
+  border-color: rgba(233, 69, 96, 0.4);
 }

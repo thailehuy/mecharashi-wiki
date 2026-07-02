@@ -44,9 +44,6 @@ var GRIP_LABEL = {
 Pages.weapons = {
   title: 'Weapons',
 
-  _activeType1: {},
-  _activeType2: {},
-
   render: function (param) {
     var all = (window.WeaponsData || {}).weapons || [];
     var weapons = all.filter(function (w) { return w.quality === 'SSSR' && w.version; });
@@ -65,107 +62,94 @@ Pages.weapons = {
   _renderList: function (weapons) {
     var self = this;
 
-    var type1s = Object.keys(WEAPON_TYPE1_LABEL);
-    var type2s = Object.keys(WEAPON_TYPE2_LABEL).filter(function (t) {
-      return weapons.some(function (w) { return w.WeaponType2 === t; });
+    var acGroups = [];
+    weapons.forEach(function (w) {
+      var ac = w.ac || 0;
+      var group = acGroups.find(function (g) { return g.ac === ac; });
+      if (!group) { group = { ac: ac, weapons: [] }; acGroups.push(group); }
+      group.weapons.push(w);
     });
+    acGroups.sort(function (a, b) { return b.ac - a.ac; });
 
-    function filterBtn(group, key, label, cls) {
-      var active = (self['_active' + group] || {})[key] ? ' active' : '';
-      return '<button class="filter-btn ' + cls + active + '" data-group="' + group + '" data-val="' + key + '">' + label + '</button>';
-    }
+    var acNav = '<div class="ac-nav">' +
+      acGroups.filter(function (g) { return g.ac; }).map(function (g) {
+        return '<a class="ac-nav-item" href="#ac-' + g.ac + '">AC ' + g.ac + '</a>';
+      }).join('') +
+    '</div>';
 
-    var filterBar =
-      '<div class="filter-bar">' +
-        '<div class="filter-row">' +
-          '<span class="filter-label">Category</span>' +
-          type1s.map(function (t) { return filterBtn('Type1', t, WEAPON_TYPE1_LABEL[t], 'filter-wt1'); }).join('') +
-        '</div>' +
-        '<div class="filter-row">' +
-          '<span class="filter-label">Type</span>' +
-          type2s.map(function (t) { return filterBtn('Type2', t, WEAPON_TYPE2_LABEL[t] || t, 'filter-wt2'); }).join('') +
-        '</div>' +
+    var sectionsHtml = acGroups.map(function (g) {
+      return '<div class="ac-section" id="ac-' + g.ac + '" data-ac="' + g.ac + '">' +
+        (g.ac ? '<h2 class="ac-section-title">Armed Conquest ' + g.ac + '</h2>' : '') +
+        '<div class="row g-3 weapon-grid-section"></div>' +
       '</div>';
-
-    var grid = '<div class="row g-3" id="weapon-grid"></div>';
+    }).join('');
 
     setTimeout(function () {
-      var $grid = $('#weapon-grid');
-      $grid.empty();
+      $('#weapon-page').on('click', '.ac-nav-item', function (e) {
+        e.preventDefault();
+        var target = $(this).attr('href');
+        var $el = $(target);
+        if ($el.length) {
+          $('html, body').animate({ scrollTop: $el.offset().top - 70 }, 200);
+        }
+      });
 
+      $('#weapon-page').on('click', '#weapon-back-top', function (e) {
+        e.preventDefault();
+        $('html, body').animate({ scrollTop: 0 }, 200);
+      });
       var allPilots = (window.PilotsData || {}).pilots || [];
 
-      weapons.forEach(function (w) {
-        var imgSrc = WEAPON_IMG_BASE + encodeURIComponent(w.icon) + '.png';
+      acGroups.forEach(function (g) {
+        var $section = $('#weapon-page .ac-section[data-ac="' + g.ac + '"]');
+        var $grid = $section.find('.weapon-grid-section');
 
-        var pilotIconHtml = '';
-        if (w.pilot) {
-          var pilot = allPilots.find(function (p) { return p.PilotName === w.pilot; });
-          if (pilot) {
-            var pSrc = PILOT_AVATAR_BASE + encodeURIComponent(pilot.PortraitHeroIcon) + '.png';
-            pilotIconHtml = '<img class="weapon-card-pilot-icon" src="' + pSrc + '" alt="' + $('<span>').text(pilot.PilotName).html() + '" loading="lazy" />';
+        g.weapons.forEach(function (w) {
+          var imgSrc = WEAPON_IMG_BASE + encodeURIComponent(w.icon) + '.png';
+
+          var pilotIconHtml = '';
+          if (w.pilot) {
+            var pilot = allPilots.find(function (p) { return p.PilotName === w.pilot; });
+            if (pilot) {
+              var pSrc = PILOT_AVATAR_BASE + encodeURIComponent(pilot.PortraitHeroIcon) + '.png';
+              pilotIconHtml = '<img class="weapon-card-pilot-icon" src="' + pSrc + '" alt="' + $('<span>').text(pilot.PilotName).html() + '" loading="lazy" />';
+            }
           }
-        }
 
-        var $card = $(
-          '<div class="col-6 col-sm-4 col-md-3 col-xl-2">' +
-            '<div class="card-item weapon-card" data-id="' + w.ID + '" data-t1="' + w.WeaponType1 + '" data-t2="' + w.WeaponType2 + '">' +
-              '<div class="weapon-card-img">' +
-                '<img src="' + imgSrc + '" alt="' + $('<span>').text(w.name).html() + '" loading="lazy" />' +
-                (w.version ? '<span class="version-badge">v' + w.version + '</span>' : '') +
-                '<span class="weapon-type-badge">' + (WEAPON_TYPE2_LABEL[w.WeaponType2] || w.WeaponType2) + '</span>' +
-              '</div>' +
-              '<div class="weapon-card-body">' +
-                '<div class="weapon-card-body-text">' +
-                  '<div class="card-name">' + $('<span>').text(w.name).html() + '</div>' +
+          var $card = $(
+            '<div class="col-6 col-sm-4 col-md-3 col-xl-2">' +
+              '<div class="card-item weapon-card" data-id="' + w.ID + '" data-t1="' + w.WeaponType1 + '" data-t2="' + w.WeaponType2 + '">' +
+                '<div class="weapon-card-img">' +
+                  '<img src="' + imgSrc + '" alt="' + $('<span>').text(w.name).html() + '" loading="lazy" />' +
+                  (w.version ? '<span class="version-badge">v' + w.version + '</span>' : '') +
+                  '<span class="weapon-type-badge">' + (WEAPON_TYPE2_LABEL[w.WeaponType2] || w.WeaponType2) + '</span>' +
                 '</div>' +
-                pilotIconHtml +
+                '<div class="weapon-card-body">' +
+                  '<div class="weapon-card-body-text">' +
+                    '<div class="card-name">' + $('<span>').text(w.name).html() + '</div>' +
+                  '</div>' +
+                  pilotIconHtml +
+                '</div>' +
               '</div>' +
-            '</div>' +
-          '</div>'
-        );
-        $card.find('.weapon-card').on('click', function () {
-          window.location.hash = '#weapons/' + encodeURIComponent(w.name);
+            '</div>'
+          );
+          $card.find('.weapon-card').on('click', function () {
+            window.location.hash = '#weapons/' + encodeURIComponent(w.name);
+          });
+          $grid.append($card);
         });
-        $grid.append($card);
       });
 
-      self._applyFilters();
-
-      $('#weapon-page').on('click', '.filter-btn', function () {
-        var group = $(this).data('group');
-        var val   = $(this).data('val');
-        self['_active' + group][val] = !self['_active' + group][val];
-        $(this).toggleClass('active');
-        self._applyFilters();
-      });
     }, 0);
 
     return (
       '<div id="weapon-page">' +
-        '<div class="listing-header"><h1>Weapons</h1></div>' +
-        filterBar +
-        grid +
+        '<div class="listing-header"><h1>Weapons</h1><span class="badge bg-secondary ms-3" id="weapon-count">' + weapons.length + '</span></div>' +
+        acNav +
+        sectionsHtml +
+        '<a class="back-to-top" id="weapon-back-top" href="#">&#8593; Top</a>' +
       '</div>'
     );
-  },
-
-  _applyFilters: function () {
-    var self = this;
-    $('#weapon-grid .col-6').each(function () {
-      var $card = $(this).find('.weapon-card');
-      var t1    = $card.data('t1');
-      var t2    = $card.data('t2');
-
-      var t1Active = Object.values(self._activeType1).some(Boolean);
-      var t2Active = Object.values(self._activeType2).some(Boolean);
-
-      var show =
-        (!t1Active || self._activeType1[t1]) &&
-        (!t2Active || self._activeType2[t2]);
-
-      $(this).toggle(show);
-    });
   },
 
   // ── Detail ─────────────────────────────────────────────────────────────────
@@ -257,6 +241,7 @@ Pages.weapons = {
             '<span class="tag tag-wtype">' + (WEAPON_TYPE1_LABEL[w.WeaponType1] || w.WeaponType1) + '</span>' +
             '<span class="tag tag-wtype">' + (WEAPON_TYPE2_LABEL[w.WeaponType2] || w.WeaponType2) + '</span>' +
             (w.version ? '<span class="version-badge-inline">v' + w.version + '</span>' : '') +
+            (w.ac ? '<span class="tag tag-ac">Armed Conquest ' + w.ac + '</span>' : '') +
           '</div>' +
           '<div class="weapon-stats">' + statsRows + '</div>' +
         '</div>' +

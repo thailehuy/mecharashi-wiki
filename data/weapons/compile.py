@@ -25,7 +25,7 @@ for wt in bulk_translations.values():
             global_passive_translations[pid] = ptr
 
 def apply_translation(entry, t):
-    for key in ('name', 'describe', 'pilot', 'version'):
+    for key in ('name', 'describe', 'pilot', 'version', 'ac'):
         if t.get(key):
             entry[key] = t[key]
     if t.get('passiveSkills') and entry.get('PassiveSkill'):
