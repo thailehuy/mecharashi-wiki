@@ -3578,7 +3578,7 @@
           },
           "ID": "30428",
           "name": "Life Support Mod",
-          "SpecificEffects": "When executing active repairs, increases repair AMT by <color=#F74848>12%</color>, with an additional <color=#F74848>24%</color> to the lowest HP part.\nWhen this unit or their summon unit suffers overdamage, they will not be destroyed. After combat, restores HP to all allies within <color=#F74848>2</color> adjacent tiles for <color=#F74848>30%</color> of their max HP. This effect can trigger up to <color=#F74848>1</color> times per battle.",
+          "SpecificEffects": "When executing active repairs, increases repair AMT by <color=#F74848>12%</color>, with an additional <color=#F74848>24%</color> to the lowest HP part.\nWhen this unit or their summon unit suffers overdamage, they will not be destroyed. After combat, repairs all destroyed parts as well as restores HP to all allies within <color=#F74848>2</color> adjacent tiles for <color=#F74848>30%</color> of their max HP. This effect can trigger up to <color=#F74848>1</color> times per battle.",
           "BufCarried": "304281/304285/304283",
           "SkillIcon": "Icon_entry_10092",
           "icon": "Icon_entry_10092",
