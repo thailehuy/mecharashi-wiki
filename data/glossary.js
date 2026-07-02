@@ -728,6 +728,14 @@ window.GlossaryData = {
       "name": "Hit Rate UP III",
       "effect": "Hit Rate +12%."
     },
+    "7100106": {
+      "name": "Hit Rate UP IV",
+      "effect": "Hit Rate +15%."
+    },
+    "7100107": {
+      "name": "Hit Rate UP V",
+      "effect": "Hit Rate +20%."
+    },
     "7100205": {
       "name": "Dodge Rate UP III",
       "effect": "Dodge rate +15%."
@@ -772,6 +780,14 @@ window.GlossaryData = {
       "name": "Crit Rate UP II",
       "effect": "Crit rate +10%."
     },
+    "7100405": {
+      "name": "Crit Rate UP III",
+      "effect": "Crit Rate +20%."
+    },
+    "7100406": {
+      "name": "Crit Rate UP IV",
+      "effect": "Crit Rate +25%."
+    },
     "7100501": {
       "name": "Crit DMG UP I",
       "effect": "Crit DMG +5%."
@@ -807,6 +823,10 @@ window.GlossaryData = {
     "7101103": {
       "name": "Dodge Rate Down II",
       "effect": "Dodge Rate -8%."
+    },
+    "7101107": {
+      "name": "Dodge Rate Down V",
+      "effect": "Dodge Rate -20%."
     },
     "7101201": {
       "name": "DMG Down I",
@@ -967,6 +987,14 @@ window.GlossaryData = {
     "1099905": {
       "name": "Command Block Immunity",
       "effect": "Immune to <buf ID=1099903>[Command Block]</buf> effect."
+    },
+    "1099906": {
+      "name": "Blur III",
+      "effect": "Dodge Rate +35%."
+    },
+    "1099907": {
+      "name": "Reconstruction III",
+      "effect": "Repair AMT +25%."
     }
   },
   "skill": {

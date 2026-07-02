@@ -1,0 +1,165 @@
+var Pages = window.Pages || {};
+
+var ACC_SKILL_BASE = 'https://media.zlongame.com/media/pictures/cn/community/img/gl/gameInfo/skill/';
+var ACC_ICON_BASE  = 'data/accessories/icons/';
+
+var ACC_TAG_LABEL = {
+  '戰後效果': 'Post-Combat',
+  '戰中效果': 'Mid-Combat',
+  '攻擊方式': 'Attack Method',
+  '耐久相關': 'Durability',
+  '特殊效果': 'Special Effect',
+  '距離相關': 'Range',
+  '移動相關': 'Movement',
+  '攻擊結果': 'Attack Result',
+  'AP相關':   'AP',
+  '命中相關': 'Hit Rate',
+  '受擊相關': 'Hit Received',
+};
+
+Pages.accessories = {
+  title: 'Accessories',
+
+  _activeCO: null,
+
+  render: function () {
+    var self = this;
+    var all = (window.AccessoriesData || {}).accessories || [];
+
+    var triggers  = all.filter(function (a) { return a.type === '觸元件'; });
+    var reactions = all.filter(function (a) { return a.type === '應元件'; });
+
+    var allCOs = [];
+    all.forEach(function (a) {
+      (a.cos || []).forEach(function (c) {
+        if (allCOs.indexOf(c) === -1) allCOs.push(c);
+      });
+    });
+    allCOs.sort(function (a, b) { return a - b; });
+
+    var coFilterHtml =
+      '<div class="acc-co-filter">' +
+        '<span class="filter-label">Clearance Ops</span>' +
+        allCOs.map(function (co) {
+          return '<button class="filter-btn acc-co-btn' + (self._activeCO === co ? ' active' : '') + '" data-co="' + co + '">CO' + co + '</button>';
+        }).join('') +
+      '</div>';
+
+    var acNav =
+      '<div class="ac-nav">' +
+        '<a class="ac-nav-item" href="#acc-triggers">Triggers</a>' +
+        '<a class="ac-nav-item" href="#acc-reactions">Reactions</a>' +
+      '</div>';
+
+    var sectionsHtml =
+      this._renderSection('Triggers', triggers) +
+      this._renderSection('Reactions', reactions);
+
+    setTimeout(function () {
+      $('#acc-page').on('click', '.ac-nav-item', function (e) {
+        e.preventDefault();
+        var $el = $($(this).attr('href'));
+        if ($el.length) $('html, body').animate({ scrollTop: $el.offset().top - 70 }, 200);
+      });
+
+      $('#acc-page').on('click', '#acc-back-top', function (e) {
+        e.preventDefault();
+        $('html, body').animate({ scrollTop: 0 }, 200);
+      });
+
+      $('#acc-page').on('click', '.acc-co-btn', function () {
+        var co = parseInt($(this).data('co'));
+        if (self._activeCO === co) {
+          self._activeCO = null;
+        } else {
+          self._activeCO = co;
+        }
+        $('.acc-co-btn').removeClass('active');
+        if (self._activeCO !== null) {
+          $('.acc-co-btn[data-co="' + self._activeCO + '"]').addClass('active');
+        }
+        self._applyFilter();
+      });
+    }, 0);
+
+    return (
+      '<div id="acc-page">' +
+        '<div class="listing-header">' +
+          '<h1>Accessories</h1>' +
+          '<span class="badge bg-secondary ms-3">' + all.length + '</span>' +
+        '</div>' +
+        coFilterHtml +
+        acNav +
+        sectionsHtml +
+        '<a class="back-to-top" id="acc-back-top" href="#">&#8593; Top</a>' +
+      '</div>'
+    );
+  },
+
+  _applyFilter: function () {
+    var co = this._activeCO;
+    $('#acc-page .acc-card-wrap').each(function () {
+      var cos = $(this).data('cos');
+      var show = co === null || (cos && cos.indexOf(co) !== -1);
+      $(this).toggle(show);
+    });
+    $('#acc-page .ac-section').each(function () {
+      $(this).toggle($(this).find('.acc-card-wrap:visible').length > 0);
+    });
+  },
+
+  _renderSection: function (title, items) {
+    var anchorId = title === 'Triggers' ? 'acc-triggers' : 'acc-reactions';
+    var cards = items.map(function (a) {
+      var stateIcon = ACC_ICON_BASE + 'statetype_' + a.statetype + '.png';
+      var skillIcon = ACC_SKILL_BASE + encodeURIComponent(a.icon) + '.png';
+
+      var displayName = a.en_name || a.name.replace(/^[應觸]元件W?[-—]/, '');
+      var isW = a.statetype.indexOf('_W') !== -1;
+
+      var tagLabel = a.en_type || (a.tags.map(function (t) { return ACC_TAG_LABEL[t] || t; }).join(', '));
+      var tagsHtml = tagLabel ? '<span class="acc-tag">' + $('<span>').text(tagLabel).html() + '</span>' : '';
+
+      var cosHtml = (a.cos || []).map(function (c) {
+        return '<span class="acc-co-badge">CO' + c + '</span>';
+      }).join('');
+
+      var cosAttr = JSON.stringify(a.cos || []);
+
+      return (
+        '<div class="col-12 col-sm-6 col-lg-4 col-xl-3 acc-card-wrap" data-cos=\'' + cosAttr + '\'>' +
+          '<div class="acc-card">' +
+            '<div class="acc-card-icon">' +
+              '<img class="acc-statetype-icon" src="' + stateIcon + '" alt="" />' +
+              '<img class="acc-skill-icon' +
+                (a.statetype === 'Condition_W' ? ' acc-skill-icon--trigger-w' : '') +
+                (a.statetype === 'Function_W'  ? ' acc-skill-icon--reaction-w' : '') +
+              '" src="' + skillIcon + '" alt="" />' +
+            '</div>' +
+            '<div class="acc-card-body">' +
+              '<div class="acc-card-header">' +
+                '<span class="acc-name">' + $('<span>').text(displayName).html() + '</span>' +
+                (isW ? '<span class="acc-w-badge">W</span>' : '') +
+                '<span class="acc-level">' + (a.level || '') + '</span>' +
+              '</div>' +
+              (tagsHtml ? '<div class="acc-tags">' + tagsHtml + '</div>' : '') +
+              '<p class="acc-desc">' + Glossary.parseEffects(a.en_describe || a.describe) + '</p>' +
+              (cosHtml ? '<div class="acc-tags acc-co-tags">' + cosHtml + '</div>' : '') +
+            '</div>' +
+          '</div>' +
+        '</div>'
+      );
+    }).join('');
+
+    return (
+      '<div class="ac-section" id="' + anchorId + '">' +
+        '<h2 class="ac-section-title">' + title + ' <span class="badge bg-secondary ms-2" style="font-size:0.7rem">' + items.length + '</span></h2>' +
+        '<div class="row g-3">' + cards + '</div>' +
+      '</div>'
+    );
+  },
+
+  destroy: function () {
+    this._activeCO = null;
+  },
+};
