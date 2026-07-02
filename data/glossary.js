@@ -2,7 +2,7 @@ window.GlossaryData = {
   "buf": {
     "900001": {
       "name": "Flurry Strike",
-      "effect": "After an enemy completes their attack in combat, trigger an additional melee counter-attack."
+      "effect": "After enemy retaliation in combat, launch an additional attack."
     },
     "900002": {
       "name": "Link Attack",
@@ -714,15 +714,15 @@ window.GlossaryData = {
     },
     "7100102": {
       "name": "Hit Rate UP I",
-      "effect": "Hit rate +5%."
+      "effect": "Hit rate +4%."
     },
     "7100103": {
       "name": "Hit Rate UP II",
-      "effect": "Hit rate +10%."
+      "effect": "Hit rate +8%."
     },
     "7100104": {
       "name": "Hit Rate UP II",
-      "effect": "Hit rate +10%."
+      "effect": "Hit rate +8%."
     },
     "7100105": {
       "name": "Hit Rate UP III",
@@ -762,7 +762,7 @@ window.GlossaryData = {
     },
     "7100106": {
       "name": "Hit Rate UP IV",
-      "effect": "Hit Rate +15%."
+      "effect": "Hit Rate +16%."
     },
     "7100107": {
       "name": "Hit Rate UP V",
@@ -770,7 +770,7 @@ window.GlossaryData = {
     },
     "7100401": {
       "name": "Crit Rate UP I",
-      "effect": "Crit rate +5%."
+      "effect": "Crit rate +10%."
     },
     "7100403": {
       "name": "Crit Rate UP II",
@@ -778,7 +778,7 @@ window.GlossaryData = {
     },
     "7100404": {
       "name": "Crit Rate UP II",
-      "effect": "Crit rate +10%."
+      "effect": "Crit rate +15%."
     },
     "7100405": {
       "name": "Crit Rate UP III",
@@ -790,7 +790,7 @@ window.GlossaryData = {
     },
     "7100501": {
       "name": "Crit DMG UP I",
-      "effect": "Crit DMG +5%."
+      "effect": "Crit DMG +10%."
     },
     "7100503": {
       "name": "Crit DMG UP II",
