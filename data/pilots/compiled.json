@@ -49033,8 +49033,8 @@
       "quality": "SSR",
       "Talent0_2Ability": {
         "ID": "601050",
-        "name": "\u7f6a\u4e1a\u4fe1\u6761",
-        "SpecificEffects": "\u53ef\u989d\u5916\u88c5\u5907\u7535\u78c1\u70ae\uff0c\u7535\u78c1\u70ae\u8d1f\u91cd<color=#F74848>-360</color>\uff1b\u53ef\u4ee5\u4f7f\u7528\u6307\u4ee4<skill mainSkill=601050>[\u590d\u4ec7\u6253\u51fb]</skill>\uff1b\u906d\u53d7\u4e3b\u52a8\u653b\u51fb\u65f6\uff0c\u56de\u590d<color=#F74848>1</color>\u53d1\u7535\u78c1\u70ae\u5f39\u836f\uff0c\u5e76\u5bf9\u654c\u673a\u65bd\u52a0<buf ID=6010502>[\u78c1\u80fd\u9501\u5b9a]</buf>",
+        "name": "Creed Of Sin",
+        "SpecificEffects": "Can equip Railgun, Railgun weight reduced by <color=#F74848>-360</color>. Can use command skill <skill mainSkill=601050>[Vengeful Strike]</skill>. When actively attacked, recovers <color=#F74848>1</color> tactical ammo and applies <buf ID=6010502>[Magnetic Lock-On]</buf> to the attacker",
         "BufCarried": "6010501/6010503/6010504/6010505",
         "SkillIcon": "Icon_skill_talent_5154",
         "icon": "Icon_skill_talent_5154",
@@ -49043,8 +49043,8 @@
       },
       "Talent3_5Ability": {
         "ID": "601051",
-        "name": "\u7f6a\u4e1a\u4fe1\u6761",
-        "SpecificEffects": "\u53ef\u989d\u5916\u88c5\u5907\u7535\u78c1\u70ae\uff0c\u7535\u78c1\u70ae\u8d1f\u91cd<color=#F74848>-360</color>\uff1b\u53ef\u4ee5\u4f7f\u7528\u6307\u4ee4<skill mainSkill=601050>[\u590d\u4ec7\u6253\u51fb]</skill>\uff1b\u906d\u53d7\u4e3b\u52a8\u653b\u51fb\u65f6\uff0c\u56de\u590d<color=#F74848>1</color>\u53d1\u7535\u78c1\u70ae\u5f39\u836f\uff0c\u5e76\u5bf9\u654c\u673a\u65bd\u52a0<buf ID=6010502>[\u78c1\u80fd\u9501\u5b9a]</buf>\uff1b\n\u573a\u4e0a\u6bcf\u6709<color=#F74848>1</color>\u53f0\u654c\u673a\u643a\u5e26<buf ID=6010502>[\u78c1\u80fd\u9501\u5b9a]</buf>\uff0c\u81ea\u8eab\u4f24\u5bb3\u63d0\u5347<color=#F74848>5%</color>\uff0c\u906d\u53d7\u4f24\u5bb3\u964d\u4f4e<color=#F74848>5%</color>\uff0c\u6700\u591a<color=#F74848>20%</color>\uff1b<buf ID=900022>[\u63f4\u62a4\u9632\u5fa1]</buf>\u53ef\u4ee5\u989d\u5916\u62b5\u6321\u654c\u65b9\u5bfc\u5f39\u548c\u683c\u6597\u653b\u51fb",
+        "name": "Creed Of Sin",
+        "SpecificEffects": "Can equip Railgun, Railgun weight reduced by <color=#F74848>-360</color>. Can use command skill <skill mainSkill=601050>[Vengeful Strike]</skill>. When actively attacked, recovers <color=#F74848>1</color> tactical ammo and applies <buf ID=6010502>[Magnetic Lock-On]</buf> to the attacker\nFor each <color=#F74848>1</color> enemy carrying <buf ID=6010502>[Magnetic Lock-On]</buf>, increases DMG dealt by <color=#F74848>5%</color> and reduces DMG taken by <color=#F74848>5%</color>, up to <color=#F74848>20%</color>. <buf ID=900022>[Guard]</buf> can additionally block missiles and melee attack.",
         "BufCarried": "6010501/6010503/6010504/6010505/6010511/6010512/6010513/6010514/6010515",
         "SkillIcon": "Icon_skill_talent_5154",
         "icon": "Icon_skill_talent_5154",
@@ -49212,8 +49212,8 @@
                 "type": 3,
                 "PassiveSkill": {
                   "ID": "600931",
-                  "name": "\u76f8\u8f6c\u79fb1",
-                  "SpecificEffects": "\u884c\u52a8\u5f00\u59cb\u65f6\uff0c\u5c06\u6240\u6709\u5b8c\u597d\u7684\u90e8\u4f4d\u8010\u4e45\u767e\u5206\u6bd4\u8fdb\u884c<buf ID=900089>[\u5e73\u8861]</buf>",
+                  "name": "Phase Shift 1",
+                  "SpecificEffects": "At the start of action, <buf ID=900089>[Balance]</buf> the HP% of all intact parts.",
                   "BufCarried": "6009311",
                   "SkillIcon": "Icon_skill_passive_3126",
                   "icon": "Icon_skill_passive_3126",
@@ -49268,8 +49268,8 @@
                 "type": 3,
                 "PassiveSkill": {
                   "ID": "600934",
-                  "name": "\u76f8\u8f6c\u79fb2",
-                  "SpecificEffects": "<buf ID=900089>[\u5e73\u8861]</buf>\u540e\u6240\u6709\u5b8c\u597d\u90e8\u4f4d\u989d\u5916\u6062\u590d<color=#F74848>10%</color>\u8010\u4e45\u503c",
+                  "name": "Phase Shift 2",
+                  "SpecificEffects": "After <buf ID=900089>[Balance]</buf>, all intact parts additionally recover <color=#F74848>10%</color> HP.",
                   "BufCarried": "6009341",
                   "SkillIcon": "Icon_skill_passive_3126",
                   "icon": "Icon_skill_passive_3126",
@@ -49287,8 +49287,8 @@
                 "type": 3,
                 "PassiveSkill": {
                   "ID": "600935",
-                  "name": "\u76f8\u8f6c\u79fb3",
-                  "SpecificEffects": "\u5b58\u5728\u635f\u6bc1\u90e8\u4f4d\u65f6\uff0c\u906d\u53d7\u4f24\u5bb3\u964d\u4f4e<color=#F74848>15%</color>",
+                  "name": "Phase Shift 3",
+                  "SpecificEffects": "When a part is destroyed, DMG Taken <color=#F74848>-15%</color>.",
                   "BufCarried": "6009351",
                   "SkillIcon": "Icon_skill_passive_3126",
                   "icon": "Icon_skill_passive_3126",
@@ -49306,8 +49306,8 @@
                 "type": 3,
                 "PassiveSkill": {
                   "ID": "600936",
-                  "name": "\u76f8\u8f6c\u79fb4",
-                  "SpecificEffects": "\u906d\u53d7\u653b\u51fb\u540e\uff0c\u82e5\u8010\u4e45\u503c\u4f4e\u4e8e<color=#F74848>50%</color>\uff0c\u89e6\u53d1<buf ID=900089>[\u5e73\u8861]</buf>\uff0c\u5e76\u4fee\u590d<color=#F74848>1</color>\u4e2a\u635f\u6bc1\u90e8\u4f4d\uff0c\u95f4\u9694<color=#F74848>3</color>\u56de\u5408\u540e\u53ef\u518d\u6b21\u53d1\u52a8",
+                  "name": "Phase Shift 4",
+                  "SpecificEffects": "After taking damage, if HP is below <color=#F74848>50%</color>, trigger <buf ID=900089>[Balance]</buf> and repair <color=#F74848>1</color> destroyed part. Can trigger again after <color=#F74848>3</color> turns.",
                   "BufCarried": "6009361",
                   "SkillIcon": "Icon_skill_passive_3126",
                   "icon": "Icon_skill_passive_3126",
@@ -49339,8 +49339,8 @@
                 "type": 3,
                 "PassiveSkill": {
                   "ID": "601041",
-                  "name": "\u96f6\u548c\u6e38\u620f1",
-                  "SpecificEffects": "\u884c\u52a8\u5f00\u59cb\u65f6\uff0c\u82e5\u573a\u4e0a\u5b58\u5728\u643a\u5e26<buf ID=6010502>[\u78c1\u80fd\u9501\u5b9a]</buf>\u7684\u654c\u673a\uff0c\u7acb\u5373\u91ca\u653e<skill mainSkill=601051>[\u590d\u4ec7\u6253\u51fb\u03b2]</skill>",
+                  "name": "Zero-sum Game 1",
+                  "SpecificEffects": "At the start of turn, if there are enemies carrying <buf ID=6010502>[Magnetic Lock-On]</buf>, immediately release <skill mainSkill=601051>[Vengeful Strike \u03b2]</skill>",
                   "BufCarried": "6010081",
                   "SkillIcon": "Icon_skill_passive_5266",
                   "icon": "Icon_skill_passive_5266",
@@ -49395,8 +49395,8 @@
                 "type": 3,
                 "PassiveSkill": {
                   "ID": "601044",
-                  "name": "\u96f6\u548c\u6e38\u620f2",
-                  "SpecificEffects": "\u7535\u78c1\u70ae\u5f39\u4ed3\u5bb9\u91cf<color=#F74848>+2</color>",
+                  "name": "Zero-sum Game 2",
+                  "SpecificEffects": "Railgun magazine capacity <color=#F74848>+2</color>",
                   "BufCarried": "6010411",
                   "SkillIcon": "Icon_skill_passive_5266",
                   "icon": "Icon_skill_passive_5266",
@@ -49414,8 +49414,8 @@
                 "type": 3,
                 "PassiveSkill": {
                   "ID": "601045",
-                  "name": "\u96f6\u548c\u6e38\u620f3",
-                  "SpecificEffects": "\u7535\u78c1\u70ae\u4f24\u5bb3\u63d0\u5347<color=#F74848>20%</color>",
+                  "name": "Zero-sum Game 3",
+                  "SpecificEffects": "Railgun DMG dealt increases by <color=#F74848>20%</color>",
                   "BufCarried": "6010451",
                   "SkillIcon": "Icon_skill_passive_5266",
                   "icon": "Icon_skill_passive_5266",
@@ -49433,8 +49433,8 @@
                 "type": 3,
                 "PassiveSkill": {
                   "ID": "601046",
-                  "name": "\u96f6\u548c\u6e38\u620f4",
-                  "SpecificEffects": "<skill mainSkill=601050>[\u590d\u4ec7\u6253\u51fb]</skill>\u548c<skill mainSkill=601051>[\u590d\u4ec7\u6253\u51fb\u03b2]</skill>\u7684\u57fa\u7840\u653b\u51fb\u6b21\u6570<color=#F74848>+1</color>",
+                  "name": "Zero-sum Game 4",
+                  "SpecificEffects": "<skill mainSkill=601050>[Vengeful Strike]</skill> and <skill mainSkill=601051>[Vengeful Strike \u03b2]</skill> base attack count increases by <color=#F74848>+1</color>.",
                   "BufCarried": "6010461",
                   "SkillIcon": "Icon_skill_passive_5266",
                   "icon": "Icon_skill_passive_5266",
@@ -49663,8 +49663,8 @@
           "weight": 2036,
           "skill": {
             "ID": "601002",
-            "name": "\u65e0\u60a3",
-            "SpecificEffects": "\u884c\u52a8\u7ed3\u675f\u65f6\uff0c\u4e3a\u81ea\u8eab\u88c5\u586b<color=#F74848>1</color>\u53d1\u7535\u78c1\u70ae\u5f39\u836f",
+            "name": "Unconcerned",
+            "SpecificEffects": "At the end of turn, reload <color=#F74848>1</color> ammo to Railgun magazine",
             "BufCarried": "6010021",
             "SkillIcon": "Icon_skill_passive_5223",
             "icon": "Icon_skill_passive_5223",
@@ -49689,8 +49689,8 @@
           "skill2": "601003",
           "skill": {
             "ID": "601003",
-            "name": "\u78c1\u969c",
-            "SpecificEffects": "\u906d\u53d7\u4f24\u5bb3\u964d\u4f4e<color=#F74848>12.5%</color>\uff0c\u82e5\u654c\u673a\u643a\u5e26<buf ID=6010502>[\u78c1\u80fd\u9501\u5b9a]</buf>\uff0c\u989d\u5916\u964d\u4f4e<color=#F74848>12.5%</color>",
+            "name": "Repulsion",
+            "SpecificEffects": "Reduces DMG taken by <color=#F74848>12.5%</color>. If the attacker carries <buf ID=6010502>[Magnetic Lock-On]</buf>, additionally reduces DMG taken by <color=#F74848>12.5%</color>.",
             "BufCarried": "6010031/6010032",
             "SkillIcon": "Icon_skill_passive_2118",
             "icon": "Icon_skill_passive_2118",
@@ -49715,8 +49715,8 @@
           "skill": {
             "ID": "601004",
             "remarks": "\u7ef4\u5a1c-\u4eff\u751f\u7535\u8111",
-            "name": "\u5355\u65b9\u534f\u8bae",
-            "describe": "\u4f7f\u7528\u7535\u78c1\u70ae\u653b\u51fb\u5468\u56f4<color=#F74848>5</color>\u683c\u5185\u7684<color=#F74848>1</color>\u53f0\u654c\u673a\uff0c\u5bf9\u5176<range type=1>1\u683c\u5341\u5b57</range>\u8303\u56f4\u5185\u7684\u6240\u6709\u654c\u673a\u9020\u6210<color=#F74848>0.5</color>\u500d\u8303\u56f4\u4f24\u5bb3\uff0c\u6218\u540e\u4e3a\u6240\u6709\u76ee\u6807\u65bd\u52a0<buf ID=6010502>[\u78c1\u80fd\u9501\u5b9a]</buf>\uff0c\u4e4b\u540e\u53ef\u4ee5\u53d1\u52a8<buf ID=900004>[\u518d\u653b\u51fb]</buf>\uff0c\u653b\u51fb\u524d\u65e0\u6cd5\u79fb\u52a8\uff1b\u6bcf\u56de\u5408\u6700\u591a\u4f7f\u7528<color=#F74848>1</color>\u6b21",
+            "name": "An Offer They Cannot Refuse",
+            "describe": "Attacks <color=#F74848>1</color> enemy within <color=#F74848>5</color> adjacent tiles, as well as all enemies within <range type=1>1-tile cross-shaped</range> area around the target, dealing <color=#F74848>0.5x</color> AoE DMG. After combat, applies <buf ID=6010502>[Magnetic Lock-On]</buf> to all the targets hit, then triggers <buf ID=900004>[Re-ATK]</buf>, cannot move before attacking. This skill can be used <color=#F74848>1</color> time per turn.",
             "type": "SpecialAssault",
             "Ap": "2",
             "matchingWeaponType": "\u7535\u78c1\u70ae",
@@ -49742,8 +49742,8 @@
           "weight": 2039,
           "skill": {
             "ID": "601005",
-            "name": "\u7535\u6d8c",
-            "SpecificEffects": "\u4f7f\u7528\u76fe\u724c\u653b\u51fb\u643a\u5e26<buf ID=6010502>[\u78c1\u80fd\u9501\u5b9a]</buf>\u7684\u76ee\u6807\u65f6\uff0c\u6218\u524d\u5bf9\u5176\u65bd\u52a0<buf ID=3006442>[\u77ed\u8defII]</buf>\u548c<buf ID=7101508>[\u79fb\u52a8\u963b\u788d\u2161]</buf>\uff0c\u6301\u7eed<color=#F74848>2</color>\u56de\u5408",
+            "name": "Tempo Surge",
+            "SpecificEffects": "When initiating combat against a target carrying <buf ID=6010502>[Magnetic Lock-On]</buf>, applies <buf ID=3006442>[Short Circuit II]</buf> and <buf ID=7101507>[Movement Inhibition II]</buf> to the target before attacking, lasting for <color=#F74848>2</color> turns.",
             "BufCarried": "6010051",
             "SkillIcon": "Icon_skill_passive_5162",
             "icon": "Icon_skill_passive_5162",
@@ -49765,17 +49765,7 @@
           "skill2": "600706",
           "Status": 1,
           "weight": 2040,
-          "skill1": "601006",
-          "skill": {
-            "ID": "600706",
-            "name": "\u5904\u51b3",
-            "SpecificEffects": "\u5bf9\u6218\u65f6\u82e5\u76ee\u6807\u6709\u8010\u4e45\u503c\u4f4e\u4e8e<color=#F74848>50%</color>\u7684\u90e8\u4f4d\uff0c<buf ID=900001>[\u8ffd\u51fb]</buf>\u4e0e<buf ID=900028>[\u53cd\u51fb\u8ffd\u51fb]</buf>\u6982\u7387\u63d0\u5347<color=#F74848>50%</color>",
-            "BufCarried": "6007061/6007062/6007063/6007064/6007065/6007066/6007067/6007068",
-            "SkillIcon": "Icon_skill_passive_5110",
-            "icon": "Icon_skill_passive_5110",
-            "Status": 1,
-            "weight": 3745
-          }
+          "skill1": "601006"
         },
         {
           "ID": "1010314417",
@@ -49793,8 +49783,8 @@
           "weight": 2041,
           "skill": {
             "ID": "601007",
-            "name": "\u540c\u4ec7",
-            "SpecificEffects": "\u8010\u4e45\u503c\u4f4e\u4e8e<color=#F74848>30%</color>\u7684\u53cb\u519b\u906d\u53d7\u653b\u51fb\u5bf9\u6218\u65f6\uff0c\u53ef\u4ee5\u65e0\u89c6\u8ddd\u79bb\u53d1\u52a8<buf ID=900022>[\u63f4\u62a4\u9632\u5fa1]</buf>\uff0c\u6bcf\u56de\u5408\u6700\u591a\u53d1\u52a8<color=#F74848>2</color>\u6b21",
+            "name": "Shared Vengeance",
+            "SpecificEffects": "When an ally with <color=#F74848>30%</color> or lower HP is attacked, <buf ID=900022>[Guard]</buf> can be triggered regardless of distance. Can trigger <color=#F74848>2</color> times per turn.",
             "BufCarried": "6010071",
             "SkillIcon": "Icon_skill_passive_5234",
             "icon": "Icon_skill_passive_5234",
@@ -49819,8 +49809,8 @@
           "skill": {
             "ID": "601008",
             "remarks": "\u7ef4\u5a1c-\u4eff\u751f\u7535\u8111",
-            "name": "\u5362\u8bfa\u4e4b\u8a93",
-            "describe": "\u66ff\u5468\u56f4<color=#F74848>2</color>\u683c\u7684\u53cb\u519b\u62b5\u6321\u7a81\u51fb\u4e0e\u5c04\u51fb\u6b66\u5668\u7684\u653b\u51fb\uff0c\u6bcf\u56de\u5408\u6700\u591a\u53d1\u52a8<color=#F74848>2</color>\u6b21\uff0c\u6301\u7eed<color=#F74848>2</color>\u56de\u5408\uff1b\u91ca\u653e\u540e\u4f7f\u7535\u78c1\u70ae\u5f39\u836f\u5b8c\u5168\u6062\u590d\uff0c\u5e76\u53ef\u4ee5\u539f\u5730<buf ID=900004>[\u518d\u653b\u51fb]</buf>",
+            "name": "Luno's Oath",
+            "describe": "Protects allies within <color=#F74848>2</color> adjacent tiles from assault and ranged attacks. Can trigger <color=#F74848>2</color> times per turn, lasting for <color=#F74848>2</color> turns. After using this skill, fully reloads Railgun ammo magazine and triggers <buf ID=900004>[Re-ATK]</buf>.",
             "type": "Order",
             "CD": "3",
             "Ap": "2",
@@ -50087,8 +50077,25 @@
         }
       ],
       "AllowedMechaDriveList_DriveAllowedList": "Heavy",
-      "version": "1.0",
-      "enTranslation": false
+      "version": "2.4",
+      "enTranslation": true,
+      "hiddenSkills": [
+        {
+          "name": "Hunting Prelude",
+          "icon": "Icon_skill_order_1138",
+          "type": "SpecialAssault",
+          "Ap": "4",
+          "CD": "2",
+          "describe": "Throws a powerful magnetic projectile with a Large Shield or Small Shield at any tile within <range type=1>4-tile diamond area</range>, dealing <color=#F74848>0.1x</color> AoE DMG to the body of all enemies within <color=#F74848>3</color> tiles of the target, then forcibly moves them <color=#F74848>2</color> tiles toward the center. Applies <buf ID=6010502>[Magnetic Lock-On]</buf> to all targets hit, and triggers <buf ID=900004>[Re-ATK]</buf> in place."
+        },
+        {
+          "name": "Guard",
+          "describe": "Protects allies within <color=#F74848>2</color> adjacent tiles from Assault and Ranged attacks. Triggers up to <color=#F74848>2</color> times per turn and lasts <color=#F74848>2</color> turns. Additionally, gains <buf ID=7100702>[Defensive Stance I]</buf>. Can only trigger <color=#F74848>1</color> time per turn.",
+          "SpecificEffects": "",
+          "Ap": "1",
+          "icon": "Icon_skill_order_1031"
+        }
+      ]
     },
     {
       "ID": "10103155",

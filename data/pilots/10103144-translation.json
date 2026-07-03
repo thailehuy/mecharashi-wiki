@@ -128,5 +128,22 @@
       "SpecificEffects": "<skill mainSkill=601050>[Vengeful Strike]</skill> and <skill mainSkill=601051>[Vengeful Strike β]</skill> base attack count increases by <color=#F74848>+1</color>."
     }
   },
-  "version": "2.4"
+  "version": "2.4",
+  "hiddenSkills": [
+    {
+      "name": "Hunting Prelude",
+      "icon": "Icon_skill_order_1138",
+      "type": "SpecialAssault",
+      "Ap": "4",
+      "CD": "2",
+      "describe": "Throws a powerful magnetic projectile with a Large Shield or Small Shield at any tile within <range type=1>4-tile diamond area</range>, dealing <color=#F74848>0.1x</color> AoE DMG to the body of all enemies within <color=#F74848>3</color> tiles of the target, then forcibly moves them <color=#F74848>2</color> tiles toward the center. Applies <buf ID=6010502>[Magnetic Lock-On]</buf> to all targets hit, and triggers <buf ID=900004>[Re-ATK]</buf> in place."
+    },
+    {
+      "name": "Guard",
+      "describe": "Protects allies within <color=#F74848>2</color> adjacent tiles from Assault and Ranged attacks. Triggers up to <color=#F74848>2</color> times per turn and lasts <color=#F74848>2</color> turns. Additionally, gains <buf ID=7100702>[Defensive Stance I]</buf>. Can only trigger <color=#F74848>1</color> time per turn.",
+      "SpecificEffects": "",
+      "Ap": "1",
+      "icon": "Icon_skill_order_1031"
+    }
+  ]
 }

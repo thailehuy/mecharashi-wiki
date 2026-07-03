@@ -168,6 +168,10 @@ window.GlossaryData = {
       "name": "Short Circuit",
       "effect": "At the end of the action, all body parts lose <color=#F74848>7%</color> of their maximum HP as [Fixed DMG]. This [Fixed DMG] cannot destroy parts."
     },
+    "3006442": {
+      "name": "Short Circuit II",
+      "effect": "At the end of the action, all body parts lose <color=#F74848>7%</color> of their maximum HP as [Fixed DMG]. This [Fixed DMG] cannot destroy parts."
+    },
     "900054": {
       "name": "SP Ammo",
       "effect": "Special ammunition loaded into a weapon, granting additional effects on hit."
@@ -752,6 +756,10 @@ window.GlossaryData = {
       "name": "DMG UP III",
       "effect": "DMG +15%."
     },
+    "7100306": {
+      "name": "DMG UP III",
+      "effect": "DMG +15%."
+    },
     "7100308": {
       "name": "DMG UP IV",
       "effect": "DMG +20%."
@@ -1003,6 +1011,10 @@ window.GlossaryData = {
     "900141": {
       "name": "Tracing",
       "effect": "Applies buff based on the part destroyed.\nBody: Grants [Precision] - next attack will enter [Aiming] Mode.\nArms: Grants [Rapid] - Next active attack gets <color=#F74848>+1</color> range.\nLeg: Grants [Direct Shot] - Next attack multiplier increases by <color=#F74848>+0.1</color>.\nAll effects are removed after triggering."
+    },
+    "6010502": {
+      "name": "Magnetic Lock-On",
+      "effect": "Can be targeted by [Vengeful Strike] and [Vengeful Strike β]."
     }
   },
   "skill": {
@@ -1059,6 +1071,18 @@ window.GlossaryData = {
       "Ap": "1",
       "CD": "2",
       "effect": "Applies a [Defense Field] to the designated tile and the surrounding 1-ring radius for 3 turns. Can continue action with remaining Movement."
+    },
+    "601050": {
+      "name": "Vengeful Strike",
+      "Ap": "1",
+      "CD": "0",
+      "effect": "Selects <color=#F74848>1</color> enemy target carrying <buf ID=6010502>[Magnetic Lock-On]</buf>, consumes all Rail gun ammo to attack all enemies within the selected area. The number of attacks is equal to the ammo consumed, priotizing unhit targets. Each attack deals <color=#F74848>0.6x</color> AoE DMG to the target and all enemies within <color=#F74848>1</color> adjacent tile. Repeat attacks on the same target deal <color=#F74848>60%</color> reduced DMG. Removes <buf ID=6010502>[Magnetic Lock-On]</buf> after the skill ends."
+    },
+    "601051": {
+      "name": "Vengeful Strike β",
+      "Ap": "0",
+      "CD": "0",
+      "effect": "Selects <color=#F74848>1</color> enemy target carrying <buf ID=6010502>[Magnetic Lock-On]</buf>, consumes all Rail gun ammo to attack all enemies within the selected area. The number of attacks is equal to the ammo consumed, priotizing unhit targets. Each attack deals <color=#F74848>0.4x</color> AoE DMG to the target and all enemies within <color=#F74848>1</color> adjacent tile. Repeat attacks on the same target deal <color=#F74848>60%</color> reduced DMG. This attack does not remove <buf ID=6010502>[Magnetic Lock-On]</buf>."
     }
   },
   "terrain": {

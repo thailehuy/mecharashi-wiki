@@ -565,6 +565,98 @@
       "enTranslation": true
     },
     {
+      "ID": "30270103",
+      "name": "Colossus",
+      "type": "Heavy",
+      "quality": "SSR",
+      "icon": "Icon_mecha_wap3027",
+      "mechaIcon": "Icon_wap3027_1",
+      "lihuiIcon": "icon_lihui_wap3027",
+      "introduce": "KX-101HA \u5de8\u50cf\n\u7531\u5361\u739b\u8fbe\u516c\u53f8\u5236\u9020\u7684\u91cd\u578b\u673a\u5175\uff0c\u7b2c\u4e8c\u4e16\u4ee3\u6280\u672f\u96c6\u5927\u6210\u8005\u3002\n\u867d\u4e3a\u8fd1\u671f\u63a8\u51fa\u7684\u65b0\u578b\u673a\u5175\uff0c\u4f46KX-101HA\u5de8\u50cf\u5374\u6781\u4e3a\u5c11\u89c1\u5730\u6ca1\u6709\u4ee5\u65b0\u5947\u8bbe\u8ba1\u4e3a\u5356\u70b9\uff0c\u800c\u662f\u5927\u91cf\u96c6\u6210\u4e86\u6210\u719f\u53ef\u9760\u7684\u73b0\u6709\u6280\u672f\u2014\u2014\u539a\u5b9e\u7684\u590d\u5408\u88c5\u7532\u3001\u5145\u8db3\u7684\u6b66\u5668\u6302\u8f7d\uff0c\u914d\u4ee5\u7b80\u6613\u62a4\u76fe\u53d1\u751f\u5668\u3001\u5c40\u90e8\u6218\u573a\u6570\u636e\u94fe\u7b49\u7b49\u2026\u2026\u8fd9\u4e9b\u7ecf\u8fc7\u5b9e\u6218\u68c0\u9a8c\u7684\u6280\u672f\u5728\u914d\u5957\u5f00\u53d1\u7684\u94c1\u96e8\u53e0\u53d8\u5668\u7684\u6574\u5408\u4e0b\u5e73\u7a33\u5730\u534f\u540c\u8fd0\u4f5c\uff0c\u5c06\u5de8\u50cf\u7684\u57fa\u7840\u6027\u80fd\u63a8\u5411\u4e86\u6781\u81f4\uff0c\u751a\u81f3\u5728\u90e8\u5206\u53c2\u6570\u4e0a\u5927\u5e45\u9886\u5148\u90e8\u5206\u7b2c\u4e09\u4e16\u4ee3\u673a\u5175\u3002",
+      "output": "2075",
+      "durable": "459",
+      "Armor": "144",
+      "fire": "118",
+      "Antiriot": "770",
+      "parts": [
+        {
+          "position": "\u8eaf\u5e72",
+          "aircraftWeight": "375",
+          "maxHp": "12761"
+        },
+        {
+          "position": "\u5de6\u81c2",
+          "aircraftWeight": "165",
+          "maxHp": "6978"
+        },
+        {
+          "position": "\u53f3\u81c2",
+          "aircraftWeight": "165",
+          "maxHp": "6978"
+        },
+        {
+          "position": "\u817f\u90e8",
+          "aircraftWeight": "240",
+          "maxHp": "9202"
+        }
+      ],
+      "manjiFirepower": "1157",
+      "modules": [
+        {
+          "_id": {
+            "timestamp": 1696936931,
+            "date": 1696936931000
+          },
+          "ID": "40054",
+          "name": "HP Mod",
+          "SpecificEffects": "HP <color=#F74848>+10%</color>.",
+          "BufCarried": "400541",
+          "SkillIcon": "Icon_entry_40051",
+          "icon": "Icon_entry_40051",
+          "Status": 1,
+          "weight": 892,
+          "id": "4005",
+          "level": 4
+        },
+        {
+          "_id": {
+            "timestamp": 1749710216,
+            "date": 1749710216000
+          },
+          "ID": "20544",
+          "name": "Iron Rain Mod",
+          "SpecificEffects": "Increases DMG dealt by <color=#F74848>15%</color> when attacking with tactical weapon. For each <color=#F74848>1</color> tactical ammo consumed, additionally increases DMG dealt by <color=#F74848>4%</color>, up to <color=#F74848>5</color> stacks, lasting for <color=#F74848>2</color> turns.",
+          "BufCarried": "205441/205442",
+          "SkillIcon": "Icon_skill_passive_1130",
+          "icon": "Icon_skill_passive_1130",
+          "Status": 1,
+          "weight": 338,
+          "id": "2054",
+          "level": 4
+        },
+        {
+          "_id": {
+            "timestamp": 1749710217,
+            "date": 1749710217000
+          },
+          "ID": "30448",
+          "name": "Sturdy Shield Mod",
+          "SpecificEffects": "When attacked, if not possessing a shield layer, any undestroyed part having <color=#F74848>70%</color> or less HP gain a shield layer equal to <color=#F74848>15%</color> of that part max HP. When gaining shield layer, grants <buf ID=7100306>[DMG UP III]</buf> and <buf ID=7100106>[Hit Rate UP III]</buf> to self and <color=#F74848>1</color> random ally within <color=#F74848>2-tile diamond</color> area around self, lasting for <color=#F74848>2</color> turns.",
+          "BufCarried": "304481/304483/304485/304487/304489/304491",
+          "SkillIcon": "Icon_entry_10095",
+          "icon": "Icon_entry_10095",
+          "Status": 1,
+          "weight": 744,
+          "id": "3044",
+          "level": 8
+        }
+      ],
+      "dispatchGroup": "Arsenal",
+      "dispatchVersion": "2.5",
+      "version": "2.4",
+      "enTranslation": true
+    },
+    {
       "ID": "30110103",
       "name": "Dias",
       "type": "Heavy",
@@ -4427,98 +4519,6 @@
       ],
       "dispatchGroup": "Arsenal",
       "dispatchVersion": "3.2",
-      "version": "1.0",
-      "enTranslation": false
-    },
-    {
-      "ID": "30270103",
-      "name": "\u5de8\u50cf",
-      "type": "Heavy",
-      "quality": "SSR",
-      "icon": "Icon_mecha_wap3027",
-      "mechaIcon": "Icon_wap3027_1",
-      "lihuiIcon": "icon_lihui_wap3027",
-      "introduce": "KX-101HA \u5de8\u50cf\n\u7531\u5361\u739b\u8fbe\u516c\u53f8\u5236\u9020\u7684\u91cd\u578b\u673a\u5175\uff0c\u7b2c\u4e8c\u4e16\u4ee3\u6280\u672f\u96c6\u5927\u6210\u8005\u3002\n\u867d\u4e3a\u8fd1\u671f\u63a8\u51fa\u7684\u65b0\u578b\u673a\u5175\uff0c\u4f46KX-101HA\u5de8\u50cf\u5374\u6781\u4e3a\u5c11\u89c1\u5730\u6ca1\u6709\u4ee5\u65b0\u5947\u8bbe\u8ba1\u4e3a\u5356\u70b9\uff0c\u800c\u662f\u5927\u91cf\u96c6\u6210\u4e86\u6210\u719f\u53ef\u9760\u7684\u73b0\u6709\u6280\u672f\u2014\u2014\u539a\u5b9e\u7684\u590d\u5408\u88c5\u7532\u3001\u5145\u8db3\u7684\u6b66\u5668\u6302\u8f7d\uff0c\u914d\u4ee5\u7b80\u6613\u62a4\u76fe\u53d1\u751f\u5668\u3001\u5c40\u90e8\u6218\u573a\u6570\u636e\u94fe\u7b49\u7b49\u2026\u2026\u8fd9\u4e9b\u7ecf\u8fc7\u5b9e\u6218\u68c0\u9a8c\u7684\u6280\u672f\u5728\u914d\u5957\u5f00\u53d1\u7684\u94c1\u96e8\u53e0\u53d8\u5668\u7684\u6574\u5408\u4e0b\u5e73\u7a33\u5730\u534f\u540c\u8fd0\u4f5c\uff0c\u5c06\u5de8\u50cf\u7684\u57fa\u7840\u6027\u80fd\u63a8\u5411\u4e86\u6781\u81f4\uff0c\u751a\u81f3\u5728\u90e8\u5206\u53c2\u6570\u4e0a\u5927\u5e45\u9886\u5148\u90e8\u5206\u7b2c\u4e09\u4e16\u4ee3\u673a\u5175\u3002",
-      "output": "2075",
-      "durable": "459",
-      "Armor": "144",
-      "fire": "118",
-      "Antiriot": "770",
-      "parts": [
-        {
-          "position": "\u8eaf\u5e72",
-          "aircraftWeight": "375",
-          "maxHp": "12761"
-        },
-        {
-          "position": "\u5de6\u81c2",
-          "aircraftWeight": "165",
-          "maxHp": "6978"
-        },
-        {
-          "position": "\u53f3\u81c2",
-          "aircraftWeight": "165",
-          "maxHp": "6978"
-        },
-        {
-          "position": "\u817f\u90e8",
-          "aircraftWeight": "240",
-          "maxHp": "9202"
-        }
-      ],
-      "manjiFirepower": "1157",
-      "modules": [
-        {
-          "_id": {
-            "timestamp": 1696936931,
-            "date": 1696936931000
-          },
-          "ID": "40054",
-          "name": "HP Mod",
-          "SpecificEffects": "HP <color=#F74848>+10%</color>.",
-          "BufCarried": "400541",
-          "SkillIcon": "Icon_entry_40051",
-          "icon": "Icon_entry_40051",
-          "Status": 1,
-          "weight": 892,
-          "id": "4005",
-          "level": 4
-        },
-        {
-          "_id": {
-            "timestamp": 1749710216,
-            "date": 1749710216000
-          },
-          "ID": "20544",
-          "name": "\u94c1\u96e8\u53e0\u53d8\u5668",
-          "SpecificEffects": "\u4f7f\u7528\u6218\u672f\u6b66\u5668\u653b\u51fb\u65f6\u4f24\u5bb3\u63d0\u5347<color=#F74848>15%</color>\uff0c\u6bcf\u6d88\u8017<color=#F74848>1</color>\u679a\u5f39\u836f\uff0c\u4f7f\u81ea\u8eab\u4f24\u5bb3\u63d0\u5347<color=#F74848>4%</color>\uff0c\u53ef\u53e0\u52a0<color=#F74848>5</color>\u5c42\uff0c\u6301\u7eed<color=#F74848>2</color>\u56de\u5408",
-          "BufCarried": "205441/205442",
-          "SkillIcon": "Icon_skill_passive_1130",
-          "icon": "Icon_skill_passive_1130",
-          "Status": 1,
-          "weight": 338,
-          "id": "2054",
-          "level": 4
-        },
-        {
-          "_id": {
-            "timestamp": 1749710217,
-            "date": 1749710217000
-          },
-          "ID": "30448",
-          "name": "\u575a\u76fe\u6a21\u7ec4",
-          "SpecificEffects": "\u906d\u53d7\u4e3b\u52a8\u653b\u51fb\u5e76\u88ab\u547d\u4e2d\u65f6\uff0c\u82e5\u6ca1\u6709\u643a\u5e26\u62a4\u76fe\uff0c\u6218\u540e\u4e00\u4e2a\u8010\u4e45\u503c\u767e\u5206\u6bd4\u4f4e\u4e8e<color=#F74848>70%</color>\u7684\u88ab\u547d\u4e2d\u4e14\u672a\u7834\u635f\u90e8\u4f4d\uff0c\u83b7\u5f97\u4e00\u4e2a\u8be5\u90e8\u4f4d\u6700\u5927\u8010\u4e45\u503c<color=#F74848>15%</color>\u7684\u62a4\u76fe\uff0c\u6301\u7eed\u81f3\u6253\u7834\uff1b\u83b7\u5f97\u62a4\u76fe\u65f6\uff0c\u5bf9<color=#F74848>\u83f1\u5f622\u683c</color>\u8303\u56f4\u5185\u7684\u968f\u673a<color=#F74848>1</color>\u540d\u53cb\u65b9\u548c\u81ea\u8eab\u65bd\u52a0<buf ID=7100306>[\u4f24\u5bb3\u63d0\u5347\u2162]</buf>\u548c<buf ID=7100106>[\u547d\u4e2d\u7387\u63d0\u5347\u2162]</buf>\uff0c\u6301\u7eed<color=#F74848>2</color>\u56de\u5408",
-          "BufCarried": "304481/304483/304485/304487/304489/304491",
-          "SkillIcon": "Icon_entry_10095",
-          "icon": "Icon_entry_10095",
-          "Status": 1,
-          "weight": 744,
-          "id": "3044",
-          "level": 8
-        }
-      ],
-      "dispatchGroup": "Arsenal",
-      "dispatchVersion": "2.5",
       "version": "1.0",
       "enTranslation": false
     },
