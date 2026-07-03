@@ -526,9 +526,14 @@ body {
 }
 
 .detail-realname {
-  font-size: 0.9rem;
-  color: #7070a0;
+  font-size: 1rem;
+  color: #cbd5e1;
   margin-bottom: 0.75rem;
+  display: inline-block;
+  align-self: flex-start;
+  background: rgba(10, 10, 20, 0.6);
+  padding: 0.1rem 0.5rem;
+  border-radius: 4px;
 }
 
 .detail-tags {
