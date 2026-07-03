@@ -1006,11 +1006,11 @@ window.GlossaryData = {
     },
     "900137": {
       "name": "Battle Wound",
-      "effect": "Applies debuff based on the part hit.\n[Battle Wound - Body]: Reduces AP by <color=#F74848>-1</color> when triggering [Re-ATK].\n[Battle Wound - Left Arm]: When attacking, reduces Final DMG by <color=#F74848>20%</color> for the first hit.\n[Battle Wound - Right Arm]: When attacking, if the number of hits are more than <color=#F74848>5</color>, reduces the number of hits by <color=#F74848>20%</color>.\n[Battle Wound - Leg]: When leg is intact, loses <color=#F74848>10%</color> of leg maximum HP while standing still, with an additional of <color=#F74848>10%</color> for every tile moved. Effect removed after triggering."
+      "effect": "Applies debuff based on the part hit.\n[Battle Wound - Body]: Reduces AP by <color=#F74848>-1</color> when triggering [Re-ATK].\n[Battle Wound - Left Arm]: When actively attacking, reduces Final DMG by <color=#F74848>20%</color> for the first hit.\n[Battle Wound - Right Arm]: When actively attacking, if the number of hits are more than <color=#F74848>5</color>, reduces the number of hits by <color=#F74848>20%</color>.\n[Battle Wound - Leg]: When leg is intact, loses <color=#F74848>10%</color> of leg maximum HP while standing still, with an additional of <color=#F74848>10%</color> for every tile moved. Effect removed after triggering."
     },
     "900141": {
       "name": "Tracing",
-      "effect": "Applies buff based on the part destroyed.\nBody: Grants [Precision] - next attack will enter [Aiming] Mode.\nArms: Grants [Rapid] - Next active attack gets <color=#F74848>+1</color> range.\nLeg: Grants [Direct Shot] - Next attack multiplier increases by <color=#F74848>+0.1</color>.\nAll effects are removed after triggering."
+      "effect": "Applies buff based on the part destroyed.\nBody: Grants [Precision] - next basic attack will enter [Aiming] Mode.\nArms: Grants [Rapid] - Next active attack gets <color=#F74848>+1</color> range.\nLeg: Grants [Direct Shot] - Next attack multiplier increases by <color=#F74848>+0.1</color>.\nAll effects require a ranged weapon to activate, and are removed after triggering."
     },
     "6010502": {
       "name": "Magnetic Lock-On",
@@ -1076,13 +1076,13 @@ window.GlossaryData = {
       "name": "Vengeful Strike",
       "Ap": "1",
       "CD": "0",
-      "effect": "Selects <color=#F74848>1</color> enemy target carrying <buf ID=6010502>[Magnetic Lock-On]</buf>, consumes all Rail gun ammo to attack all enemies within the selected area. The number of attacks is equal to the ammo consumed, priotizing unhit targets. Each attack deals <color=#F74848>0.6x</color> AoE DMG to the target and all enemies within <color=#F74848>1</color> adjacent tile. Repeat attacks on the same target deal <color=#F74848>60%</color> reduced DMG. Removes <buf ID=6010502>[Magnetic Lock-On]</buf> after the skill ends."
+      "effect": "Selects <color=#F74848>1</color> enemy target carrying <buf ID=6010502>[Magnetic Lock-On]</buf>, consumes all Rail gun ammo to attack all enemies within the selected <range type=1>1-tile cross-shaped</range>, <range type=2>3x3 square</range> or <range type=2>2-tile diamond</range> area. The number of attacks is equal to the ammo consumed, priotizing unhit targets. Each attack deals <color=#F74848>0.6x</color> DMG to the target and all enemies within <color=#F74848>1</color> adjacent tile. All attacks will prioritize hitting body. Repeat attacks on the same target deal <color=#F74848>60%</color> reduced DMG. Removes <buf ID=6010502>[Magnetic Lock-On]</buf> after the skill ends."
     },
     "601051": {
       "name": "Vengeful Strike β",
       "Ap": "0",
       "CD": "0",
-      "effect": "Selects <color=#F74848>1</color> enemy target carrying <buf ID=6010502>[Magnetic Lock-On]</buf>, consumes all Rail gun ammo to attack all enemies within the selected area. The number of attacks is equal to the ammo consumed, priotizing unhit targets. Each attack deals <color=#F74848>0.4x</color> AoE DMG to the target and all enemies within <color=#F74848>1</color> adjacent tile. Repeat attacks on the same target deal <color=#F74848>60%</color> reduced DMG. This attack does not remove <buf ID=6010502>[Magnetic Lock-On]</buf>."
+      "effect": "Uses Rail gun to attack all enemies carrying <buf ID=6010502>[Magnetic Lock-On]</buf> in order from nearest to furthest. All attacks prioritize hitting body and priotize unhit targets. Each attack deals <color=#F74848>0.4x</color> DMG to the target and all enemies within <color=#F74848>1</color> adjacent tile. Repeat attacks on the same target deal <color=#F74848>60%</color> reduced DMG. This attack does not consume Rail gun ammo and does not remove <buf ID=6010502>[Magnetic Lock-On]</buf>."
     }
   },
   "terrain": {

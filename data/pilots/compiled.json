@@ -49716,7 +49716,7 @@
             "ID": "601004",
             "remarks": "\u7ef4\u5a1c-\u4eff\u751f\u7535\u8111",
             "name": "An Offer They Cannot Refuse",
-            "describe": "Attacks <color=#F74848>1</color> enemy within <color=#F74848>5</color> adjacent tiles, as well as all enemies within <range type=1>1-tile cross-shaped</range> area around the target, dealing <color=#F74848>0.5x</color> AoE DMG. After combat, applies <buf ID=6010502>[Magnetic Lock-On]</buf> to all the targets hit, then triggers <buf ID=900004>[Re-ATK]</buf>, cannot move before attacking. This skill can be used <color=#F74848>1</color> time per turn.",
+            "describe": "Uses Rail gun to attack <color=#F74848>1</color> enemy within <color=#F74848>5</color> adjacent tiles, dealing <color=#F74848>1.0x</color> DMG, as well as all enemies within <range type=1>1-tile cross-shaped</range> area around the target, dealing <color=#F74848>0.5x</color> DMG. After combat, applies <buf ID=6010502>[Magnetic Lock-On]</buf> to all the targets hit, then triggers <buf ID=900004>[Re-ATK]</buf>, cannot move before attacking. This skill can be used <color=#F74848>1</color> time per turn.",
             "type": "SpecialAssault",
             "Ap": "2",
             "matchingWeaponType": "\u7535\u78c1\u70ae",
@@ -49743,7 +49743,7 @@
           "skill": {
             "ID": "601005",
             "name": "Tempo Surge",
-            "SpecificEffects": "When initiating combat against a target carrying <buf ID=6010502>[Magnetic Lock-On]</buf>, applies <buf ID=3006442>[Short Circuit II]</buf> and <buf ID=7101507>[Movement Inhibition II]</buf> to the target before attacking, lasting for <color=#F74848>2</color> turns.",
+            "SpecificEffects": "When initiating combat against a target carrying <buf ID=6010502>[Magnetic Lock-On]</buf> using a Shield, applies <buf ID=3006442>[Short Circuit II]</buf> and <buf ID=7101507>[Movement Inhibition II]</buf> to the target before attacking, lasting for <color=#F74848>2</color> turns.",
             "BufCarried": "6010051",
             "SkillIcon": "Icon_skill_passive_5162",
             "icon": "Icon_skill_passive_5162",
@@ -50086,7 +50086,7 @@
           "type": "SpecialAssault",
           "Ap": "4",
           "CD": "2",
-          "describe": "Throws a powerful magnetic projectile with a Large Shield or Small Shield at any tile within <range type=1>4-tile diamond area</range>, dealing <color=#F74848>0.1x</color> AoE DMG to the body of all enemies within <color=#F74848>3</color> tiles of the target, then forcibly moves them <color=#F74848>2</color> tiles toward the center. Applies <buf ID=6010502>[Magnetic Lock-On]</buf> to all targets hit, and triggers <buf ID=900004>[Re-ATK]</buf> in place."
+          "describe": "Throws a powerful magnetic projectile with a Large Shield or Small Shield at any tile within <range type=1>4-tile diamond area</range>, dealing <color=#F74848>0.1x</color> AoE DMG to the body of all enemies within <color=#F74848>3</color> tiles of the target, then forcibly moves them <color=#F74848>2</color> tiles toward the center. Applies <buf ID=6010502>[Magnetic Lock-On]</buf> to all targets hit, and triggers <buf ID=900004>[Re-ATK]</buf> in place. This attack is guaranteed to hit."
         },
         {
           "name": "Guard",
@@ -50289,7 +50289,7 @@
                 "PassiveSkill": {
                   "ID": "301231",
                   "name": "Origin Tracer 1",
-                  "SpecificEffects": "When actively attacking and breaking parts, gains <buf ID=900141>[Tracing]</buf> according to the part hit. Can trigger <color=#F74848>2</color> times per turn.",
+                  "SpecificEffects": "When actively attacking and breaking parts with a Light Rifle, gains <buf ID=900141>[Tracing]</buf> according to the part hit. Can trigger <color=#F74848>2</color> times per turn.",
                   "BufCarried": "3012311",
                   "SkillIcon": "Icon_skill_passive_5022",
                   "icon": "Icon_skill_passive_5022",
@@ -50345,7 +50345,7 @@
                 "PassiveSkill": {
                   "ID": "301234",
                   "name": "Origin Tracer 2",
-                  "SpecificEffects": "After actively attacking and destroying a target, can additionally move <color=#F74848>3</color> tiles.",
+                  "SpecificEffects": "After actively attacking and destroying a target with a Light Rifle, can additionally move <color=#F74848>3</color> tiles.",
                   "BufCarried": "3012341",
                   "SkillIcon": "Icon_skill_passive_5022",
                   "icon": "Icon_skill_passive_5022",
@@ -50416,7 +50416,7 @@
                 "PassiveSkill": {
                   "ID": "301241",
                   "name": "Unveiling 1",
-                  "SpecificEffects": "After actively attacking, if the target is inflicted with <buf ID=900137>[Battle Wound]</buf>, triggers <buf ID=900004>[Re-ATK]</buf>. Can move <color=#F74848>2</color> tiles before attacking. Can trigger <color=#F74848>1</color> times per turn.",
+                  "SpecificEffects": "After initiating combat, if the target is inflicted with <buf ID=900137>[Battle Wound]</buf>, triggers <buf ID=900004>[Re-ATK]</buf>. Can move <color=#F74848>2</color> tiles before attacking. Can trigger <color=#F74848>1</color> times per turn.",
                   "BufCarried": "3012411",
                   "SkillIcon": "Icon_skill_passive_5265",
                   "icon": "Icon_skill_passive_5265",
@@ -50491,7 +50491,7 @@
                 "PassiveSkill": {
                   "ID": "301245",
                   "name": "Unveiling 3",
-                  "SpecificEffects": "When attacking target carrying <buf ID=900137>[Battle Wound]</buf>, DMG dealt is increased by <color=#F74848>5%</color>, with an additional <color=#F74848>5%</color> for each <color=#F74848>1</color> additional stack of <buf ID=900137>[Battle Wound]</buf>, up to<color=#F74848>15%</color>.",
+                  "SpecificEffects": "When attacking target carrying <buf ID=900137>[Battle Wound]</buf>, Final DMG dealt is increased by <color=#F74848>5%</color>, with an additional <color=#F74848>5%</color> for each <color=#F74848>1</color> additional stack of <buf ID=900137>[Battle Wound]</buf>, up to<color=#F74848>15%</color>.",
                   "BufCarried": "3012451",
                   "SkillIcon": "Icon_skill_passive_5265",
                   "icon": "Icon_skill_passive_5265",
@@ -51173,7 +51173,7 @@
           "type": "EquipmentSkill",
           "Ap": "2",
           "CD": "0",
-          "describe": "Attacks a target with Light Rifle, dealing <color=#F74848>1.25x</color> DMG. If there are no allies within <color=#F74848>2</color> adjacent tiles, can enter <buf ID=900014>[Aiming]</buf> Mode before attacking."
+          "describe": "Attacks a target with Light Rifle, dealing <color=#F74848>1.25x</color> DMG. If there are no allies within <color=#F74848>2</color> adjacent tiles of this unit, can enter <buf ID=900014>[Aiming]</buf> Mode before attacking."
         }
       ]
     },

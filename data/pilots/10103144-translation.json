@@ -30,13 +30,13 @@
     },
     "601004": {
       "name": "An Offer They Cannot Refuse",
-      "describe": "Attacks <color=#F74848>1</color> enemy within <color=#F74848>5</color> adjacent tiles, as well as all enemies within <range type=1>1-tile cross-shaped</range> area around the target, dealing <color=#F74848>0.5x</color> AoE DMG. After combat, applies <buf ID=6010502>[Magnetic Lock-On]</buf> to all the targets hit, then triggers <buf ID=900004>[Re-ATK]</buf>, cannot move before attacking. This skill can be used <color=#F74848>1</color> time per turn.",
+      "describe": "Uses Rail gun to attack <color=#F74848>1</color> enemy within <color=#F74848>5</color> adjacent tiles, dealing <color=#F74848>1.0x</color> DMG, as well as all enemies within <range type=1>1-tile cross-shaped</range> area around the target, dealing <color=#F74848>0.5x</color> DMG. After combat, applies <buf ID=6010502>[Magnetic Lock-On]</buf> to all the targets hit, then triggers <buf ID=900004>[Re-ATK]</buf>, cannot move before attacking. This skill can be used <color=#F74848>1</color> time per turn.",
       "SpecificEffects": ""
     },
     "601005": {
       "name": "Tempo Surge",
       "describe": "",
-      "SpecificEffects": "When initiating combat against a target carrying <buf ID=6010502>[Magnetic Lock-On]</buf>, applies <buf ID=3006442>[Short Circuit II]</buf> and <buf ID=7101507>[Movement Inhibition II]</buf> to the target before attacking, lasting for <color=#F74848>2</color> turns."
+      "SpecificEffects": "When initiating combat against a target carrying <buf ID=6010502>[Magnetic Lock-On]</buf> using a Shield, applies <buf ID=3006442>[Short Circuit II]</buf> and <buf ID=7101507>[Movement Inhibition II]</buf> to the target before attacking, lasting for <color=#F74848>2</color> turns."
     },
     "600106": {
       "name": "Hunting Prelude",
@@ -136,7 +136,7 @@
       "type": "SpecialAssault",
       "Ap": "4",
       "CD": "2",
-      "describe": "Throws a powerful magnetic projectile with a Large Shield or Small Shield at any tile within <range type=1>4-tile diamond area</range>, dealing <color=#F74848>0.1x</color> AoE DMG to the body of all enemies within <color=#F74848>3</color> tiles of the target, then forcibly moves them <color=#F74848>2</color> tiles toward the center. Applies <buf ID=6010502>[Magnetic Lock-On]</buf> to all targets hit, and triggers <buf ID=900004>[Re-ATK]</buf> in place."
+      "describe": "Throws a powerful magnetic projectile with a Large Shield or Small Shield at any tile within <range type=1>4-tile diamond area</range>, dealing <color=#F74848>0.1x</color> AoE DMG to the body of all enemies within <color=#F74848>3</color> tiles of the target, then forcibly moves them <color=#F74848>2</color> tiles toward the center. Applies <buf ID=6010502>[Magnetic Lock-On]</buf> to all targets hit, and triggers <buf ID=900004>[Re-ATK]</buf> in place. This attack is guaranteed to hit."
     },
     {
       "name": "Guard",
