@@ -10935,7 +10935,17 @@
       ],
       "AllowedMechaDriveList_DriveAllowedList": "Medium",
       "version": "2.5",
-      "enTranslation": true
+      "enTranslation": true,
+      "hiddenSkills": [
+        {
+          "name": "Borrowed Strength",
+          "icon": "Icon_skill_order_1132",
+          "type": "SpecialAssault",
+          "Ap": "3",
+          "CD": "0",
+          "describe": "Uses cutter to attack all targets within a <color=#F74848>2</color>-tile radius area, dealing <color=#F74848>1.2x</color> AoE DMG."
+        }
+      ]
     },
     {
       "ID": "10103130",
