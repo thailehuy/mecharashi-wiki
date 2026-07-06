@@ -1775,7 +1775,7 @@
             "ID": "201804",
             "remarks": "\u963f\u9edb\u52d2-\u4eff\u751f\u7535\u8111",
             "name": "Fiery Steps",
-            "describe": "Jumps with both Flamethrowers to an unoccopied tile within <color=#F74848>2</color> to <color=#F74848>4</color> straight range, dealing <color=#F74848>0.3x</color> AOE DMG to all enemies in the path. Creates <terrian ID=4003081 /> to the tiles traversed, lasting for <color=#F74848>2</color> turns. Can trigger <buf ID=900004>[Re-ATK]</buf> after jumping.",
+            "describe": "Jumps with both Flamethrowers to an unoccopied tile within <color=#F74848>2</color> to <color=#F74848>4</color> straight range, dealing <color=#F74848>0.3x</color> AOE DMG to all enemies in the path. Applies <terrian ID=4003081 /> to the tiles traversed, lasting for <color=#F74848>2</color> turns. Can trigger <buf ID=900004>[Re-ATK]</buf> after jumping.",
             "type": "SpecialAssault",
             "CD": "2",
             "Ap": "1",
@@ -1856,7 +1856,7 @@
           "skill": {
             "ID": "201807",
             "name": "Flame Tango",
-            "SpecificEffects": "When traversing <buf ID=2018502>[Blazing Flame]</buf>, movement cost is halved.",
+            "SpecificEffects": "When traversing <terrian ID=4003081 />, movement cost is halved.",
             "BufCarried": "2018071",
             "SkillIcon": "Icon_skill_passive_5118",
             "icon": "Icon_skill_passive_5118",
