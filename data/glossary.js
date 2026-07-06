@@ -1112,7 +1112,7 @@ window.GlossaryData = {
     },
     "4011081": {
       "name": "Restricted Area",
-      "effect": "[Colin] will use cutters to attack enemy ending turn on this tile, dealing <color=#F74848>0.6x</color> damage. This terrain has high priority."
+      "effect": "[Collin] will use cutters to attack enemy ending turn on this tile, dealing <color=#F74848>0.6x</color> damage. This terrain has high priority."
     }
   }
 };
