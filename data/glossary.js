@@ -942,7 +942,7 @@ window.GlossaryData = {
     },
     "2018506": {
       "name": "Flaming Heart",
-      "effect": "Increases Flamethrower by <color=#F74848>1%</color>, stacking up to <color=#F74848>10</color> times."
+      "effect": "Increases Flamethrower DMG by <color=#F74848>1%</color>, stacking up to <color=#F74848>10</color> times."
     },
     "900139": {
       "name": "Fire DMG",
