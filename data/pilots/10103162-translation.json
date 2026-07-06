@@ -5,12 +5,12 @@
   "Profession": "Launcher",
   "Occupation": "Tactician",
   "Talent0_2Ability": {
-    "name": "运筹帷幄",
-    "SpecificEffects": "行动开始时，给距离自身最远的<color=#F74848>1</color>名没有携带<buf ID=4011502>[任命]</buf>的其他队友施加<buf ID=4011502>[任命]</buf>，持续<color=#F74848>3</color>回合，最多存在<color=#F74848>3</color>个<buf ID=4011502>[任命]</buf>"
+    "name": "Strategic Planning",
+    "SpecificEffects": "At the start of battle and at the start of action, applies <buf ID=4011502>[Appointment]</buf> to <color=#F74848>1</color> furthest ally not carrying <buf ID=4011502>[Appointment]</buf> for <color=#F74848>3</color> turns. Up to <color=#F74848>3</color> allies can carry <buf ID=4011502>[Appointment]</buf>."
   },
   "Talent3_5Ability": {
-    "name": "运筹帷幄",
-    "SpecificEffects": "出击和行动开始时，给距离自身最远的<color=#F74848>1</color>名没有携带<buf ID=4011502>[任命]</buf>的其他队友施加<buf ID=4011502>[任命]</buf>，持续<color=#F74848>3</color>回合，最多存在<color=#F74848>3</color>个<buf ID=4011502>[任命]</buf>；\n场上每存在<color=#F74848>1</color>个携带<buf ID=4011502>[任命]</buf>的友军，伤害提升<color=#F74848>7.5%</color>，最多提升<color=#F74848>22.5%</color>"
+    "name": "Strategic Planning",
+    "SpecificEffects": "At the start of battle and at the start of action, applies <buf ID=4011502>[Appointment]</buf> to <color=#F74848>1</color> furthest ally not carrying <buf ID=4011502>[Appointment]</buf> for <color=#F74848>3</color> turns. Up to <color=#F74848>3</color> allies can carry <buf ID=4011502>[Appointment]</buf>.\nFor each <color=#F74848>1</color> ally carrying <buf ID=4011502>[Appointment]</buf>, DMG dealt increases by <color=#F74848>7.5%</color>, up to <color=#F74848>22.5%</color>."
   },
   "skills": {
     "400001": {
@@ -19,38 +19,38 @@
       "SpecificEffects": "When a Tactical Weapon runs out of ammo, trigger <buf ID=900029>[Auto Load]</buf>. This process takes <color=#F74848>3</color> turns."
     },
     "401102": {
-      "name": "协力",
+      "name": "Teamwork",
       "describe": "",
-      "SpecificEffects": "携带<buf ID=4011502>[任命]</buf>的友军伤害提升<color=#F74848>5%</color>，遭受伤害降低<color=#F74848>5%</color>"
+      "SpecificEffects": "Allies carrying <buf ID=4011502>[Appointment]</buf> have DMG dealt increases by <color=#F74848>5%</color> and DMG taken reduces by <color=#F74848>5%</color>."
     },
     "401103": {
-      "name": "待时",
-      "describe": "使浮游炮的弹数完全回复，自身和携带<buf ID=4011502>[任命]</buf>的友军获得<buf ID=7100104>[命中率提升Ⅱ]</buf>，持续<color=#F74848>2</color>回合，然后可使用剩余移动力继续行动",
+      "name": "Respite",
+      "describe": "Fully reload cutter ammo and grants self and allies carrying <buf ID=4011502>[Appointment]</buf> <buf ID=7100104>[Hit rate UP II]</buf>, lasting for <color=#F74848>2</color> turns. Can continue to act with remaining movement.",
       "SpecificEffects": ""
     },
     "401104": {
-      "name": "正奇有位",
-      "describe": "选择范围内<color=#F74848>1</color>名其他友军，消耗<color=#F74848>1</color>枚浮游炮弹药，为其施加<buf ID=4011043>[子机·防御模式]</buf>或<buf ID=4011041>[子机·攻击模式]</buf>",
+      "name": "Official Position",
+      "describe": "Consumes <color=#F74848>1</color> cutter ammo, selects <color=#F74848>1</color> ally within range and applies <buf ID=4011043>[Subtask - Defense]</buf> or <buf ID=4011041>[Subtask - Attack]</buf> to that target.",
       "SpecificEffects": ""
     },
     "401105": {
-      "name": "伏弩",
+      "name": "Helping Hand",
       "describe": "",
-      "SpecificEffects": "携带<buf ID=4011502>[任命]</buf>的友军遭受攻击对战时，可以使用<color=#F74848>2</color>枚浮游炮发动<buf ID=900061>[协力反击]</buf>，造成<color=#F74848>2×0.5</color>倍伤害，每回合最多发动<color=#F74848>2</color>次"
+      "SpecificEffects": "When an ally carrying <buf ID=4011502>[Appointment]</buf> is attacked, uses <color=#F74848>2</color> cutters to launch <buf ID=900061>[Link Retaliation]</buf>, dealing <color=#F74848>2×0.5</color> DMG. This effect can trigger <color=#F74848>2</color> times per turn."
     },
     "401106": {
-      "name": "迟局",
-      "describe": "使用浮游炮攻击单个目标，造成<color=#F74848>4×0.6</color>倍伤害，并对目标施加<buf ID=4011061>[延迟扫射]</buf>",
+      "name": "Delayed Response",
+      "describe": "Uses cutter to attack an enemy, dealing <color=#F74848>4×0.6</color> DMG and applies <buf ID=4011061>[Clean Up]</buf> to the target.",
       "SpecificEffects": ""
     },
     "401107": {
-      "name": "脱壳",
+      "name": "Mental Support",
       "describe": "",
-      "SpecificEffects": "任意部位遭受过量伤害时若场上存在携带<buf ID=4011502>[任命]</buf>的其他友军，将触发<buf ID=900003>[不屈]</buf>，锁定至<color=#F74848>1</color>点耐久值，触发效果后立即移除<color=#F74848>1</color>个<buf ID=4011502>[任命]</buf>"
+      "SpecificEffects": "When any part suffers overdamage, if there are allies carrying <buf ID=4011502>[Appointment]</buf>, triggers <buf ID=900003>[Guts]</buf>, locking HP at <color=#F74848>1</color>. Upon triggering, consumes <color=#F74848>1</color> <buf ID=4011502>[Appointment]</buf> from an ally."
     },
     "401108": {
-      "name": "锁域",
-      "describe": "消耗<color=#F74848>2</color>枚浮游炮弹药，使用浮游炮攻击所选<range type=2>3格范围</range>内的所有目标，造成<color=#F74848>1.6</color>倍范围伤害，并对打击的地格施加<terrian ID=4011081 />，持续<color=#F74848>1</color>回合",
+      "name": "Restriction Order",
+      "describe": "Consumes <color=#F74848>2</color> cutter ammo, attacks all enemies within a <range type=2>3-tile radius</range> area, dealing <color=#F74848>1.6x</color> AoE DMG, and applies <terrian ID=4011081 /> to the targeted tiles, lasting for <color=#F74848>1</color> turn",
       "SpecificEffects": ""
     }
   },
@@ -104,8 +104,8 @@
       "SpecificEffects": "After triggering <buf ID=900004>[Re-ATK]</buf>, it no longer reduces final damage."
     },
     "401141": {
-      "name": "决胜千里1",
-      "SpecificEffects": "每次行动首次<buf ID=900004>[再攻击]</buf>时，攻击技能或<skill mainSkill=401104>[正奇有位]</skill>AP消耗<color=#F74848>-1</color>，最低<color=#F74848>1</color>点"
+      "name": "Firm decision 1",
+      "SpecificEffects": "After triggering <buf ID=900004>[Re-ATK]</buf>, AP cost of attack skills or <skill mainSkill=401104>[Official Position]</skill> reduces by <color=#F74848>-1</color>, to a minimum of <color=#F74848>1</color> AP."
     },
     "600042": {
       "name": "AP Optimization 4",
@@ -116,17 +116,17 @@
       "SpecificEffects": "When destroying a target, additionally restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>2</color> times per turn."
     },
     "401144": {
-      "name": "决胜千里2",
-      "SpecificEffects": "携带<buf ID=4011502>[任命]</buf>的队友击破目标部位时，[科林]回复<color=#F74848>1</color>枚浮游炮弹药，每回合最多发动<color=#F74848>2</color>次"
+      "name": "Firm decision 2",
+      "SpecificEffects": "When any ally carrying <buf ID=4011502>[Appointment]</buf> breaks a part, [Collin] recovers <color=#F74848>1</color> cutter ammo. This effect can trigger <color=#F74848>2</color> times per turn."
     },
     "401145": {
-      "name": "决胜千里3",
-      "SpecificEffects": "携带<buf ID=4011502>[任命]</buf>的队友击毁敌机时，[科林]回复<color=#F74848>1</color>AP，每回合最多发动<color=#F74848>2</color>次"
+      "name": "Firm decision 3",
+      "SpecificEffects": "When any ally carrying <buf ID=4011502>[Appointment]</buf> destroys a target, [Collin] recovers <color=#F74848>1</color> AP. This effect can trigger <color=#F74848>2</color> times per turn."
     },
     "401146": {
-      "name": "决胜千里4",
-      "SpecificEffects": "场上每存在<color=#F74848>1</color>名携带<buf ID=4011502>[任命]</buf>的友军，浮游炮连击数<color=#F74848>+1</color>，最多<color=#F74848>+3</color>"
+      "name": "Firm decision 4",
+      "SpecificEffects": "For each <color=#F74848>1</color> ally carrying <buf ID=4011502>[Appointment]</buf>, cutter hit count increases by <color=#F74848>+1</color>, up to a maximum of <color=#F74848>+3</color>."
     }
   },
-  "version": "1.0"
+  "version": "2.5"
 }

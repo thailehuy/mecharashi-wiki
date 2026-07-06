@@ -1015,6 +1015,22 @@ window.GlossaryData = {
     "6010502": {
       "name": "Magnetic Lock-On",
       "effect": "Can be targeted by [Vengeful Strike] and [Vengeful Strike β]."
+    },
+    "4011502": {
+      "name": "Appointment",
+      "effect": "[Collin] can select target within <color=#F74848>4</color> tiles of this unit with a cutter."
+    },
+    "4011043": {
+      "name": "Subtask - Defense",
+      "effect": "When actively attacked, all intact parts gain a shield layer equal to <color=#F74848>18%</color> of their max HP. The shield layer is removed after combat. This effect can trigger up to <color=#F74848>4</color> times per turn, and is removed at the start of next action."
+    },
+    "4011041": {
+      "name": "Subtask - Attack",
+      "effect": "After this unit initiates combat, [Collin] uses cautter to perform a [Link Attack], dealing <color=#F74848>0.75x</color> DMG. This effect can trigger up to <color=#F74848>4</color> times per turn, and is removed at the start of next action."
+    },
+    "4011061": {
+      "name": "Clean Up",
+      "effect": "At the end of action or after being destroyed, [Collin] uses cautter to attack all enemies within <color=#F74848>3</color> tiles of this target, dealing <color=#F74848>0.8x</color> AoE DMG."
     }
   },
   "skill": {
@@ -1095,8 +1111,8 @@ window.GlossaryData = {
       "effect": "A zone deployed by a sniper pilot. Grants enhanced combat bonuses when attacking enemies within range."
     },
     "4011081": {
-      "name": "Funnel Field",
-      "effect": "A field deployed by funnel weapons. Applies area effects to units within the designated tiles."
+      "name": "Restricted Area",
+      "effect": "[Colin] will use cutters to attack enemy ending turn on this tile, dealing <color=#F74848>0.6x</color> damage. This terrain has high priority."
     }
   }
 };

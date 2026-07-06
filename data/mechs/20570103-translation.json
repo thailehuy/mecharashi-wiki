@@ -1,18 +1,18 @@
 {
-  "name": "夜天光",
+  "name": "Nightglow",
   "introduce": "AST-74X 夜天光\n安赫特公司与黑曜石联合开发的中型机兵，也是晨星同盟第四世代机兵技术验证项目又一成果。\nAST-74X在设计之初就以对抗超级机师为目标，因此采用了大量尖端技术，其中包括XF4规格钢岚合金框架，带有微型护盾生成器的复合装甲，以及拥有惊人输出功率的岚质循环引擎，这些技术使得该机拥有明显超越第三世代机兵的基本性能。同时，主动电磁引导装置配合仿生智能框架组成的气辉系统设置于机体各处，使得AST-74X能够半自主实现武装资源的最优调度，甚至拥有一项革命性的战术优势——即使没有超适体机师与脑波控制装置，依然可以高效驱使与复仇女神装备类似的无线无人遥距攻击兵器。",
   "modules": {
     "20554": {
-      "name": "气辉系统",
-      "SpecificEffects": "主动攻击时，每消耗<color=#F74848>1</color>AP，战前使自身伤害提升<color=#F74848>5%</color>，最多提升<color=#F74848>35%</color>，战后降低<color=#F74848>10%</color>"
+      "name": "Air Glow Mod",
+      "SpecificEffects": "When actively attacking, for each <color=#F74848>1</color> AP consumes, increases DMG dealt by <color=#F74848>5%</color> before battle, up to <color=#F74848>35%</color>. After combat, this increment is reduced by <color=#F74848>10%</color>."
     },
     "30458": {
-      "name": "策应模组",
-      "SpecificEffects": "攻击时，若目标周围<color=#F74848>4</color>格范围内存在其他友军，伤害提升<color=#F74848>18%</color>；\n行动结束时，若本回合发动过<color=#F74848>2</color>次攻击或指令技能，则回复<color=#F74848>1</color>AP"
+      "name": "Support Mod",
+      "SpecificEffects": "When actively attacking, if there are allies within <color=#F74848>4</color> adjacent tiles, DMG dealt increases by <color=#F74848>18%</color>.\nAt the end of turn, if <color=#F74848>2</color> or more command or attack skills are used this turn, recovers <color=#F74848>1</color> AP."
     },
     "40274": {
-      "name": "火力模组",
-      "SpecificEffects": "火力值提升<color=#F74848>10%</color>"
+      "name": "Firepower Module",
+      "SpecificEffects": "Firepower +<color=#F74848>10%</color>."
     }
   },
   "version": "1.0",
