@@ -5,12 +5,12 @@
   "Profession": "Defender",
   "Occupation": "Guardian",
   "Talent0_2Ability": {
-    "name": "无畏獠牙",
-    "SpecificEffects": "遭受来自周围<color=#F74848>4</color>格内的主动攻击且双手完好时，战后发动<skill activeSkill=6011501>[长柄投掷]</skill>；<buf ID=900022>[援护防御]</buf>可额外抵挡格斗武器"
+    "name": "Fearless Hunting Fang",
+    "SpecificEffects": "When attacked and dragged into combat from within <color=#F74848>4</color> adjacent tiles and both hands are intact, activates <skill activeSkill=6011501>[Polearm Throw]</skill> after combat. <buf ID=900022>[Guard]</buf> can additionally block melee attack."
   },
   "Talent3_5Ability": {
-    "name": "无畏獠牙",
-    "SpecificEffects": "遭受来自周围<color=#F74848>4</color>格内的主动攻击且双手完好时，战后发动<skill activeSkill=6011501>[长柄投掷]</skill>；<buf ID=900022>[援护防御]</buf>可额外抵挡格斗武器；\n[佐伊]在场时，携带<buf ID=6011014>[挑衅]</buf>的敌机攻击[佐伊]以外的目标伤害降低<color=#F74848>15%</color>，受到来自[佐伊]的伤害提升<color=#F74848>15%</color>"
+    "name": "Fearless Hunting Fang",
+    "SpecificEffects": "When attacked and dragged into combat from within <color=#F74848>4</color> adjacent tiles and both hands are intact, activates <skill activeSkill=6011501>[Polearm Throw]</skill> after combat. <buf ID=900022>[Guard]</buf> can additionally block melee attack.\nWhile [Zoey] is on the field, enemies inflicted with <buf ID=6011014>[Provocation]</buf> take <color=#F74848>15%</color> more DMG from [Zoey] and <color=#F74848>15%</color> less DMG from others."
   },
   "skills": {
     "600001": {
@@ -19,38 +19,38 @@
       "SpecificEffects": "Trigger <buf ID=900022>[Guard]</buf> to protect adjacent (<color=#F74848>1</color> tile) allies from Assault and Ranged attacks, effective up to <color=#F74848>2</color> times per turn."
     },
     "601102": {
-      "name": "无破",
+      "name": "Unbreakable Guard",
       "describe": "",
-      "SpecificEffects": "双手完好时手臂受到的伤害降低<color=#F74848>25%</color>"
+      "SpecificEffects": "When both arms are intact, DMG taken by arms reduces by <color=#F74848>25%</color>."
     },
     "601103": {
-      "name": "侵袭",
-      "describe": "使用长柄攻击单个目标，造成<color=#F74848>1.5</color>倍伤害，并且遭受反击时，回避率提升<color=#F74848>20%</color>",
+      "name": "Ambush",
+      "describe": "Uses a Polearm to attack a target, dealing <color=#F74848>1.5x</color>DMG. When being retaliated, gains <color=#F74848>20%</color> Dodge Rate.",
       "SpecificEffects": ""
     },
     "601104": {
-      "name": "挑阵",
-      "describe": "使用长柄攻击面前<range type=1>横向3格</range>或斜向折角<color=#F74848>3</color>格范围内的所有目标，造成<color=#F74848>0.9</color>倍范围伤害；每命中<color=#F74848>1</color>个目标获得<color=#F74848>1</color>层<buf ID=6011042>[优势]</buf>，可叠加<color=#F74848>3</color>层",
+      "name": "First Strike",
+      "describe": "Uses a Polearm to attack all targets within an I-shaped (3x1-tile) or L-shaped (3x1-tile) area ahead, dealing <color=#F74848>0.9x</color> AoE DMG. For each <color=#F74848>1</color> target hit, gains <color=#F74848>1</color> stack of <buf ID=6011042>[Advantage]</buf>, up to <color=#F74848>3</color> stacks.",
       "SpecificEffects": ""
     },
     "601105": {
-      "name": "夺势",
+      "name": "Seizing Momentum",
       "describe": "",
-      "SpecificEffects": "完全回避攻击时，战后回复<color=#F74848>1</color>AP，每回合最多发动<color=#F74848>1</color>次"
+      "SpecificEffects": "When completely dodging an attack, recovers <color=#F74848>1</color> AP. This effect can trigger <color=#F74848>1</color> time per turn."
     },
     "601106": {
-      "name": "闪猎",
-      "describe": "使用长柄向<range type=1>前方突刺4格</range>，对接触到的第<color=#F74848>1</color>个目标造成<color=#F74848>1.7</color>倍伤害并施加<buf ID=6011014>[挑衅]</buf>，持续<color=#F74848>2</color>回合",
+      "name": "Flash Hunt",
+      "describe": "Uses Polearm to <range type=1>thrust 4 tiles forward</range>, dealing <color=#F74848>1.7x</color> DMG to the <color=#F74848>1st</color> target hit and applies <buf ID=6011014>[Provocation]</buf>, lasting for <color=#F74848>2</color> turns.",
       "SpecificEffects": ""
     },
     "601107": {
-      "name": "乱步",
+      "name": "Chaotic Steps",
       "describe": "",
-      "SpecificEffects": "场上每有<color=#F74848>1</color>个携带<buf ID=6011014>[挑衅]</buf>的敌机，回避率提升<color=#F74848>4%</color>，最多<color=#F74848>12%</color>"
+      "SpecificEffects": "For each <color=#F74848>1</color> enemies carrying <buf ID=6011014>[Provocation]</buf>, Dodge Rate increases by <color=#F74848>4%</color>, up to a maximum of <color=#F74848>12%</color>."
     },
     "601108": {
-      "name": "断罪",
-      "describe": "选择<range type=0>周围4格</range>内任意空地格，跳跃至目标地点，并使用长柄对<range type=1>周围2格</range>内敌方目标造成<color=#F74848>1.1</color>倍范围伤害，并对范围内所有目标施加<buf ID=6011014>[挑衅]</buf>，持续<color=#F74848>2</color>回合",
+      "name": "Verdict",
+      "describe": "Selects an empty tile within <range type=0>4-adjacent</range> tiles, jumps to the target type and uses Polearm to deal <color=#F74848>1.1x</color> AoE DMG to all enemies within <range type=1>2-adjacent</range> tiles of the target, inflicting <buf ID=6011014>[Provocation]</buf> on all enemies hit, lasting for <color=#F74848>2</color> turns.",
       "SpecificEffects": ""
     }
   },
@@ -80,8 +80,8 @@
       "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
     },
     "601131": {
-      "name": "生存法则1",
-      "SpecificEffects": "遭受主动攻击时，若触发过回避，战后恢复完好部位<color=#F74848>4%</color>的耐久值，每回避<color=#F74848>1</color>次连击，额外恢复<color=#F74848>1%</color>的耐久值，最多额外恢复<color=#F74848>8%</color>耐久值"
+      "name": "Survival Instinct 1",
+      "SpecificEffects": "When attacked, if a Dodge is triggered, recovers <color=#F74848>4%</color> max HP to all undestroyed parts. For each <color=#F74848>1</color> hit dodged, additionally recovers <color=#F74848>1%</color> more HP, up to <color=#F74848>8%</color> additional HP."
     },
     "600032": {
       "name": "AP Optimization 3",
@@ -92,20 +92,20 @@
       "SpecificEffects": "At the end of the action, if an Active Attack was not initiated this turn, an extra <color=#F74848>2</color> tiles can be moved."
     },
     "601134": {
-      "name": "生存法则2",
-      "SpecificEffects": "完全回避攻击时，<buf ID=6011311>[生存法则1]</buf>可以额外修复<color=#F74848>1</color>个破损部位"
+      "name": "Survival Instinct 2",
+      "SpecificEffects": "When completely dodging an attack, <buf ID=6011311>[Survival Instinct 1]</buf> effect can additionally restore <color=#F74848>1</color> destroyed part."
     },
     "601135": {
-      "name": "生存法则3",
-      "SpecificEffects": "受到伤害且耐久值降至<color=#F74848>50%</color>以下时，战后使自身获得<buf ID=1008062>[必闪]</buf>，可生效<color=#F74848>1</color>次，该效果间隔<color=#F74848>3</color>回合才可再次发动"
+      "name": "Survival Instinct 3",
+      "SpecificEffects": "When attacked and HP dropped below <color=#F74848>50%</color> of max HP, gains <buf ID=1008062>[Absolute Dodge]</buf> after combat. This effect has a <color=#F74848>3</color> turns CD."
     },
     "601136": {
-      "name": "生存法则4",
-      "SpecificEffects": "<buf ID=6011311>[生存法则1]</buf>战后额外恢复完好部位<color=#F74848>10%</color>耐久值"
+      "name": "Survival Instinct 4",
+      "SpecificEffects": "<buf ID=6011311>[Survival Instinct 1]</buf> after-combat recovery increases to <color=#F74848>10%</color> HP for all undestroyed parts."
     },
     "601141": {
-      "name": "追袭冲动1",
-      "SpecificEffects": "累计发动<color=#F74848>3</color>次<skill activeSkill=6011501>[长柄投掷]</skill>后，下一次主动攻击不消耗AP，且攻击后可以发动<buf ID=900004>[再攻击]</buf>，攻击前可以移动<color=#F74848>2</color>格，触发后移除"
+      "name": "Hunting Impulse 1",
+      "SpecificEffects": "After using <skill activeSkill=6011501>[Polearm Throw]</skill> for <color=#F74848>3</color> times, the next active attack will not consume AP. Can trigger <buf ID=900004>[Re-ATK]</buf>, allowing movement of <color=#F74848>2</color> tiles before attacking. This effect is removed after triggering."
     },
     "600042": {
       "name": "AP Optimization 4",
@@ -116,17 +116,17 @@
       "SpecificEffects": "<buf ID=900022>[Guard]</buf> can now be triggered an unlimited number of times per turn."
     },
     "601144": {
-      "name": "追袭冲动2",
-      "SpecificEffects": "AP的回复值<color=#F74848>+1</color>"
+      "name": "Hunting Impulse 2",
+      "SpecificEffects": "AP recovery <color=#F74848>+1</color>."
     },
     "601145": {
-      "name": "追袭冲动3",
-      "SpecificEffects": "发动<skill activeSkill=6011501>[长柄投掷]</skill>后，对所有命中的目标施加<buf ID=6011014>[挑衅]</buf>，持续<color=#F74848>2</color>回合"
+      "name": "Hunting Impulse 3",
+      "SpecificEffects": "After activating <skill activeSkill=6011501>[Polearm Throw]</skill>, applies <buf ID=6011014>[Provocation]</buf> to all targets hit, lasting for <color=#F74848>2</color> turns."
     },
     "601146": {
-      "name": "追袭冲动4",
-      "SpecificEffects": "<skill activeSkill=6011501>[长柄投掷]</skill>伤害提升至<color=#F74848>1</color>倍范围伤害"
+      "name": "Hunting Impulse 4",
+      "SpecificEffects": "<skill activeSkill=6011501>[Polearm Throw]</skill> DMG dealt increases to <color=#F74848>1x</color> AoE DMG."
     }
   },
-  "version": "1.0"
+  "version": "2.5"
 }

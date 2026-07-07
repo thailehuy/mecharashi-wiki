@@ -1,21 +1,21 @@
 {
-  "name": "赫克托尔",
+  "name": "Hector",
   "introduce": "KX-099HM 赫克托尔\n由卡玛达公司制造的第三世代轻型机兵，因其出色的机动作战能力，受到了多国特战部队的青睐。\n作为公司首款自主研发的高端轻型机兵，KX-099HM赫克托尔有效填补了卡玛达产品线中高机动强打击机型的空白。改良自KX-098奥德修斯的新型钢岚合金框架以及传感监测模块，搭配小型化的高功率动力系统，使得赫克托尔在防护与机动方面的综合表现明显超过了第三世代轻型机兵的标准水平。此外安装在各关节处的忤逆者单元与动力系统直接相连，可将紧急机动所调用的能量部分回收并短时存储，随后通过武装系统释放，实现极具侵略性的战术反击。",
   "modules": {
     "20564": {
-      "name": "忤逆者单元",
-      "SpecificEffects": "遭受攻击时，每闪避<color=#F74848>1</color>次攻击，获得伤害提升<color=#F74848>2.5%</color>，最多提升<color=#F74848>35%</color>，行动结束时降低<color=#F74848>10%</color>"
+      "name": "Rebel Mod",
+      "SpecificEffects": "When attacked, for each <color=#F74848>1</color> hit dodged, DMG dealt increases by <color=#F74848>2.5%</color>, up to <color=#F74848>35%</color>. This effect is reduced by <color=#F74848>10%</color> at the end of turn."
     },
     "30468": {
-      "name": "回锋模组",
-      "SpecificEffects": "遭受攻击时，若攻击者命中率小于等于<color=#F74848>70%</color>，本次反击伤害提升<color=#F74848>24%</color>；\n每次发动反击后，使自身技能倍率<color=#F74848>+0.05</color>，最多<color=#F74848>+0.15</color>，行动结束时重置"
+      "name": "Counterattack Mod",
+      "SpecificEffects": "When actively attacked, if the attacker hit rate is <color=#F74848>70%</color> or less, increases Retaliation DMG by <color=#F74848>24%</color>；\nAfter each Retaliation, skill multiplier is increased by <color=#F74848>+0.05</color>, up to <color=#F74848>+0.15</color>. This effect is removed at the end of turn."
     },
     "40044": {
       "name": "Dodge Mod",
       "SpecificEffects": "Dodge Rate <color=#F74848>+10%</color>."
     }
   },
-  "version": "1.0",
+  "version": "2.5",
   "dispatchVersion": "3.0",
   "dispatchGroup": "Sparkplug"
 }
