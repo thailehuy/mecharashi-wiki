@@ -19,7 +19,7 @@
       "SpecificEffects": "Trigger <buf ID=900022>[Guard]</buf> to protect adjacent (<color=#F74848>1</color> tile) allies from Assault and Ranged attacks, effective up to <color=#F74848>2</color> times per turn."
     },
     "601102": {
-      "name": "Unbreakable Guard",
+      "name": "Parry",
       "describe": "",
       "SpecificEffects": "When both arms are intact, DMG taken by arms reduces by <color=#F74848>25%</color>."
     },
@@ -128,5 +128,15 @@
       "SpecificEffects": "<skill activeSkill=6011501>[Polearm Throw]</skill> DMG dealt increases to <color=#F74848>1x</color> AoE DMG."
     }
   },
-  "version": "2.5"
+  "version": "2.5",
+  "hiddenSkills": [
+    {
+      "name": "Rear Guard",
+      "icon": "Icon_skill_order_5112",
+      "type": "Order",
+      "Ap": "1",
+      "CD": "0",
+      "describe": "Protects allies within <color=#F74848>2</color> adjacent tiles from assault and ranged attacks, up to <color=#F74848>2</color> times per turn, lasting for <color=#F74848>2</color> turns. Additionally inflicts <buf ID=6011014>[Provocation]</buf> on all enemies within <color=#F74848>2</color> adjacent tiles for <color=#F74848>2</color> turns."
+    }
+  ]
 }

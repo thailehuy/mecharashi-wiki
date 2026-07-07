@@ -55698,8 +55698,8 @@
       "quality": "SSR",
       "Talent0_2Ability": {
         "ID": "601150",
-        "name": "\u65e0\u754f\u7360\u7259",
-        "SpecificEffects": "\u906d\u53d7\u6765\u81ea\u5468\u56f4<color=#F74848>4</color>\u683c\u5185\u7684\u4e3b\u52a8\u653b\u51fb\u4e14\u53cc\u624b\u5b8c\u597d\u65f6\uff0c\u6218\u540e\u53d1\u52a8<skill activeSkill=6011501>[\u957f\u67c4\u6295\u63b7]</skill>\uff1b<buf ID=900022>[\u63f4\u62a4\u9632\u5fa1]</buf>\u53ef\u989d\u5916\u62b5\u6321\u683c\u6597\u6b66\u5668",
+        "name": "Fearless Hunting Fang",
+        "SpecificEffects": "When attacked and dragged into combat from within <color=#F74848>4</color> adjacent tiles and both hands are intact, activates <skill activeSkill=6011501>[Polearm Throw]</skill> after combat. <buf ID=900022>[Guard]</buf> can additionally block melee attack.",
         "BufCarried": "6011501/6011502",
         "SkillIcon": "Icon_skill_talent_5155",
         "icon": "Icon_skill_talent_5155",
@@ -55708,8 +55708,8 @@
       },
       "Talent3_5Ability": {
         "ID": "601151",
-        "name": "\u65e0\u754f\u7360\u7259",
-        "SpecificEffects": "\u906d\u53d7\u6765\u81ea\u5468\u56f4<color=#F74848>4</color>\u683c\u5185\u7684\u4e3b\u52a8\u653b\u51fb\u4e14\u53cc\u624b\u5b8c\u597d\u65f6\uff0c\u6218\u540e\u53d1\u52a8<skill activeSkill=6011501>[\u957f\u67c4\u6295\u63b7]</skill>\uff1b<buf ID=900022>[\u63f4\u62a4\u9632\u5fa1]</buf>\u53ef\u989d\u5916\u62b5\u6321\u683c\u6597\u6b66\u5668\uff1b\n[\u4f50\u4f0a]\u5728\u573a\u65f6\uff0c\u643a\u5e26<buf ID=6011014>[\u6311\u8845]</buf>\u7684\u654c\u673a\u653b\u51fb[\u4f50\u4f0a]\u4ee5\u5916\u7684\u76ee\u6807\u4f24\u5bb3\u964d\u4f4e<color=#F74848>15%</color>\uff0c\u53d7\u5230\u6765\u81ea[\u4f50\u4f0a]\u7684\u4f24\u5bb3\u63d0\u5347<color=#F74848>15%</color>",
+        "name": "Fearless Hunting Fang",
+        "SpecificEffects": "When attacked and dragged into combat from within <color=#F74848>4</color> adjacent tiles and both hands are intact, activates <skill activeSkill=6011501>[Polearm Throw]</skill> after combat. <buf ID=900022>[Guard]</buf> can additionally block melee attack.\nWhile [Zoey] is on the field, enemies inflicted with <buf ID=6011014>[Provocation]</buf> take <color=#F74848>15%</color> more DMG from [Zoey] and <color=#F74848>15%</color> less DMG from others.",
         "BufCarried": "6011501/6011502/6011511/6011512/6011515",
         "SkillIcon": "Icon_skill_talent_5155",
         "icon": "Icon_skill_talent_5155",
@@ -55877,8 +55877,8 @@
                 "type": 3,
                 "PassiveSkill": {
                   "ID": "601131",
-                  "name": "\u751f\u5b58\u6cd5\u52191",
-                  "SpecificEffects": "\u906d\u53d7\u4e3b\u52a8\u653b\u51fb\u65f6\uff0c\u82e5\u89e6\u53d1\u8fc7\u56de\u907f\uff0c\u6218\u540e\u6062\u590d\u5b8c\u597d\u90e8\u4f4d<color=#F74848>4%</color>\u7684\u8010\u4e45\u503c\uff0c\u6bcf\u56de\u907f<color=#F74848>1</color>\u6b21\u8fde\u51fb\uff0c\u989d\u5916\u6062\u590d<color=#F74848>1%</color>\u7684\u8010\u4e45\u503c\uff0c\u6700\u591a\u989d\u5916\u6062\u590d<color=#F74848>8%</color>\u8010\u4e45\u503c",
+                  "name": "Survival Instinct 1",
+                  "SpecificEffects": "When attacked, if a Dodge is triggered, recovers <color=#F74848>4%</color> max HP to all undestroyed parts. For each <color=#F74848>1</color> hit dodged, additionally recovers <color=#F74848>1%</color> more HP, up to <color=#F74848>8%</color> additional HP.",
                   "BufCarried": "6011311/6011313/6011315",
                   "SkillIcon": "Icon_skill_passive_3135",
                   "icon": "Icon_skill_passive_3135",
@@ -55933,8 +55933,8 @@
                 "type": 3,
                 "PassiveSkill": {
                   "ID": "601134",
-                  "name": "\u751f\u5b58\u6cd5\u52192",
-                  "SpecificEffects": "\u5b8c\u5168\u56de\u907f\u653b\u51fb\u65f6\uff0c<buf ID=6011311>[\u751f\u5b58\u6cd5\u52191]</buf>\u53ef\u4ee5\u989d\u5916\u4fee\u590d<color=#F74848>1</color>\u4e2a\u7834\u635f\u90e8\u4f4d",
+                  "name": "Survival Instinct 2",
+                  "SpecificEffects": "When completely dodging an attack, <buf ID=6011311>[Survival Instinct 1]</buf> effect can additionally restore <color=#F74848>1</color> destroyed part.",
                   "BufCarried": "6011341",
                   "SkillIcon": "Icon_skill_passive_3135",
                   "icon": "Icon_skill_passive_3135",
@@ -55952,8 +55952,8 @@
                 "type": 3,
                 "PassiveSkill": {
                   "ID": "601135",
-                  "name": "\u751f\u5b58\u6cd5\u52193",
-                  "SpecificEffects": "\u53d7\u5230\u4f24\u5bb3\u4e14\u8010\u4e45\u503c\u964d\u81f3<color=#F74848>50%</color>\u4ee5\u4e0b\u65f6\uff0c\u6218\u540e\u4f7f\u81ea\u8eab\u83b7\u5f97<buf ID=1008062>[\u5fc5\u95ea]</buf>\uff0c\u53ef\u751f\u6548<color=#F74848>1</color>\u6b21\uff0c\u8be5\u6548\u679c\u95f4\u9694<color=#F74848>3</color>\u56de\u5408\u624d\u53ef\u518d\u6b21\u53d1\u52a8",
+                  "name": "Survival Instinct 3",
+                  "SpecificEffects": "When attacked and HP dropped below <color=#F74848>50%</color> of max HP, gains <buf ID=1008062>[Absolute Dodge]</buf> after combat. This effect has a <color=#F74848>3</color> turns CD.",
                   "BufCarried": "6011351",
                   "SkillIcon": "Icon_skill_passive_3135",
                   "icon": "Icon_skill_passive_3135",
@@ -55971,8 +55971,8 @@
                 "type": 3,
                 "PassiveSkill": {
                   "ID": "601136",
-                  "name": "\u751f\u5b58\u6cd5\u52194",
-                  "SpecificEffects": "<buf ID=6011311>[\u751f\u5b58\u6cd5\u52191]</buf>\u6218\u540e\u989d\u5916\u6062\u590d\u5b8c\u597d\u90e8\u4f4d<color=#F74848>10%</color>\u8010\u4e45\u503c",
+                  "name": "Survival Instinct 4",
+                  "SpecificEffects": "<buf ID=6011311>[Survival Instinct 1]</buf> after-combat recovery increases to <color=#F74848>10%</color> HP for all undestroyed parts.",
                   "BufCarried": "6011361/6011363",
                   "SkillIcon": "Icon_skill_passive_3135",
                   "icon": "Icon_skill_passive_3135",
@@ -56004,8 +56004,8 @@
                 "type": 3,
                 "PassiveSkill": {
                   "ID": "601141",
-                  "name": "\u8ffd\u88ad\u51b2\u52a81",
-                  "SpecificEffects": "\u7d2f\u8ba1\u53d1\u52a8<color=#F74848>3</color>\u6b21<skill activeSkill=6011501>[\u957f\u67c4\u6295\u63b7]</skill>\u540e\uff0c\u4e0b\u4e00\u6b21\u4e3b\u52a8\u653b\u51fb\u4e0d\u6d88\u8017AP\uff0c\u4e14\u653b\u51fb\u540e\u53ef\u4ee5\u53d1\u52a8<buf ID=900004>[\u518d\u653b\u51fb]</buf>\uff0c\u653b\u51fb\u524d\u53ef\u4ee5\u79fb\u52a8<color=#F74848>2</color>\u683c\uff0c\u89e6\u53d1\u540e\u79fb\u9664",
+                  "name": "Hunting Impulse 1",
+                  "SpecificEffects": "After using <skill activeSkill=6011501>[Polearm Throw]</skill> for <color=#F74848>3</color> times, the next active attack will not consume AP. Can trigger <buf ID=900004>[Re-ATK]</buf>, allowing movement of <color=#F74848>2</color> tiles before attacking. This effect is removed after triggering.",
                   "BufCarried": "6011411",
                   "SkillIcon": "Icon_skill_passive_5268",
                   "icon": "Icon_skill_passive_5268",
@@ -56060,8 +56060,8 @@
                 "type": 3,
                 "PassiveSkill": {
                   "ID": "601144",
-                  "name": "\u8ffd\u88ad\u51b2\u52a82",
-                  "SpecificEffects": "AP\u7684\u56de\u590d\u503c<color=#F74848>+1</color>",
+                  "name": "Hunting Impulse 2",
+                  "SpecificEffects": "AP recovery <color=#F74848>+1</color>.",
                   "BufCarried": "6011441/6011453",
                   "SkillIcon": "Icon_skill_passive_5268",
                   "icon": "Icon_skill_passive_5268",
@@ -56079,8 +56079,8 @@
                 "type": 3,
                 "PassiveSkill": {
                   "ID": "601145",
-                  "name": "\u8ffd\u88ad\u51b2\u52a83",
-                  "SpecificEffects": "\u53d1\u52a8<skill activeSkill=6011501>[\u957f\u67c4\u6295\u63b7]</skill>\u540e\uff0c\u5bf9\u6240\u6709\u547d\u4e2d\u7684\u76ee\u6807\u65bd\u52a0<buf ID=6011014>[\u6311\u8845]</buf>\uff0c\u6301\u7eed<color=#F74848>2</color>\u56de\u5408",
+                  "name": "Hunting Impulse 3",
+                  "SpecificEffects": "After activating <skill activeSkill=6011501>[Polearm Throw]</skill>, applies <buf ID=6011014>[Provocation]</buf> to all targets hit, lasting for <color=#F74848>2</color> turns.",
                   "BufCarried": "6011454",
                   "SkillIcon": "Icon_skill_passive_5268",
                   "icon": "Icon_skill_passive_5268",
@@ -56098,8 +56098,8 @@
                 "type": 3,
                 "PassiveSkill": {
                   "ID": "601146",
-                  "name": "\u8ffd\u88ad\u51b2\u52a84",
-                  "SpecificEffects": "<skill activeSkill=6011501>[\u957f\u67c4\u6295\u63b7]</skill>\u4f24\u5bb3\u63d0\u5347\u81f3<color=#F74848>1</color>\u500d\u8303\u56f4\u4f24\u5bb3",
+                  "name": "Hunting Impulse 4",
+                  "SpecificEffects": "<skill activeSkill=6011501>[Polearm Throw]</skill> DMG dealt increases to <color=#F74848>1x</color> AoE DMG.",
                   "BufCarried": "6011461",
                   "SkillIcon": "Icon_skill_passive_5268",
                   "icon": "Icon_skill_passive_5268",
@@ -56328,8 +56328,8 @@
           "weight": 2540,
           "skill": {
             "ID": "601102",
-            "name": "\u65e0\u7834",
-            "SpecificEffects": "\u53cc\u624b\u5b8c\u597d\u65f6\u624b\u81c2\u53d7\u5230\u7684\u4f24\u5bb3\u964d\u4f4e<color=#F74848>25%</color>",
+            "name": "Parry",
+            "SpecificEffects": "When both arms are intact, DMG taken by arms reduces by <color=#F74848>25%</color>.",
             "BufCarried": "6011021",
             "SkillIcon": "Icon_skill_passive_2111",
             "icon": "Icon_skill_passive_2111",
@@ -56354,8 +56354,8 @@
           "skill": {
             "ID": "601103",
             "remarks": "\u4f50\u4f0a-\u4eff\u751f\u7535\u8111",
-            "name": "\u4fb5\u88ad",
-            "describe": "\u4f7f\u7528\u957f\u67c4\u653b\u51fb\u5355\u4e2a\u76ee\u6807\uff0c\u9020\u6210<color=#F74848>1.5</color>\u500d\u4f24\u5bb3\uff0c\u5e76\u4e14\u906d\u53d7\u53cd\u51fb\u65f6\uff0c\u56de\u907f\u7387\u63d0\u5347<color=#F74848>20%</color>",
+            "name": "Ambush",
+            "describe": "Uses a Polearm to attack a target, dealing <color=#F74848>1.5x</color>DMG. When being retaliated, gains <color=#F74848>20%</color> Dodge Rate.",
             "type": "EquipmentSkill",
             "Ap": "2",
             "matchingWeaponType": "\u957f\u67c4",
@@ -56382,8 +56382,8 @@
           "skill": {
             "ID": "601104",
             "remarks": "\u4f50\u4f0a-\u4eff\u751f\u7535\u8111",
-            "name": "\u6311\u9635",
-            "describe": "\u4f7f\u7528\u957f\u67c4\u653b\u51fb\u9762\u524d<range type=1>\u6a2a\u54113\u683c</range>\u6216\u659c\u5411\u6298\u89d2<color=#F74848>3</color>\u683c\u8303\u56f4\u5185\u7684\u6240\u6709\u76ee\u6807\uff0c\u9020\u6210<color=#F74848>0.9</color>\u500d\u8303\u56f4\u4f24\u5bb3\uff1b\u6bcf\u547d\u4e2d<color=#F74848>1</color>\u4e2a\u76ee\u6807\u83b7\u5f97<color=#F74848>1</color>\u5c42<buf ID=6011042>[\u4f18\u52bf]</buf>\uff0c\u53ef\u53e0\u52a0<color=#F74848>3</color>\u5c42",
+            "name": "First Strike",
+            "describe": "Uses a Polearm to attack all targets within an I-shaped (3x1-tile) or L-shaped (3x1-tile) area ahead, dealing <color=#F74848>0.9x</color> AoE DMG. For each <color=#F74848>1</color> target hit, gains <color=#F74848>1</color> stack of <buf ID=6011042>[Advantage]</buf>, up to <color=#F74848>3</color> stacks.",
             "type": "SpecialAssault",
             "Ap": "3",
             "matchingWeaponType": "\u957f\u67c4",
@@ -56409,8 +56409,8 @@
           "weight": 2543,
           "skill": {
             "ID": "601105",
-            "name": "\u593a\u52bf",
-            "SpecificEffects": "\u5b8c\u5168\u56de\u907f\u653b\u51fb\u65f6\uff0c\u6218\u540e\u56de\u590d<color=#F74848>1</color>AP\uff0c\u6bcf\u56de\u5408\u6700\u591a\u53d1\u52a8<color=#F74848>1</color>\u6b21",
+            "name": "Seizing Momentum",
+            "SpecificEffects": "When completely dodging an attack, recovers <color=#F74848>1</color> AP. This effect can trigger <color=#F74848>1</color> time per turn.",
             "BufCarried": "6011051",
             "SkillIcon": "Icon_skill_passive_5129",
             "icon": "Icon_skill_passive_5129",
@@ -56435,8 +56435,8 @@
           "skill": {
             "ID": "601106",
             "remarks": "\u4f50\u4f0a-\u4eff\u751f\u7535\u8111",
-            "name": "\u95ea\u730e",
-            "describe": "\u4f7f\u7528\u957f\u67c4\u5411<range type=1>\u524d\u65b9\u7a81\u523a4\u683c</range>\uff0c\u5bf9\u63a5\u89e6\u5230\u7684\u7b2c<color=#F74848>1</color>\u4e2a\u76ee\u6807\u9020\u6210<color=#F74848>1.7</color>\u500d\u4f24\u5bb3\u5e76\u65bd\u52a0<buf ID=6011014>[\u6311\u8845]</buf>\uff0c\u6301\u7eed<color=#F74848>2</color>\u56de\u5408",
+            "name": "Flash Hunt",
+            "describe": "Uses Polearm to <range type=1>thrust 4 tiles forward</range>, dealing <color=#F74848>1.7x</color> DMG to the <color=#F74848>1st</color> target hit and applies <buf ID=6011014>[Provocation]</buf>, lasting for <color=#F74848>2</color> turns.",
             "type": "SpecialAssault",
             "Ap": "3",
             "matchingWeaponType": "\u957f\u67c4",
@@ -56462,8 +56462,8 @@
           "weight": 2545,
           "skill": {
             "ID": "601107",
-            "name": "\u4e71\u6b65",
-            "SpecificEffects": "\u573a\u4e0a\u6bcf\u6709<color=#F74848>1</color>\u4e2a\u643a\u5e26<buf ID=6011014>[\u6311\u8845]</buf>\u7684\u654c\u673a\uff0c\u56de\u907f\u7387\u63d0\u5347<color=#F74848>4%</color>\uff0c\u6700\u591a<color=#F74848>12%</color>",
+            "name": "Chaotic Steps",
+            "SpecificEffects": "For each <color=#F74848>1</color> enemies carrying <buf ID=6011014>[Provocation]</buf>, Dodge Rate increases by <color=#F74848>4%</color>, up to a maximum of <color=#F74848>12%</color>.",
             "BufCarried": "6011071",
             "SkillIcon": "Icon_skill_passive_4121",
             "icon": "Icon_skill_passive_4121",
@@ -56488,8 +56488,8 @@
           "skill": {
             "ID": "601108",
             "remarks": "\u4f50\u4f0a-\u4eff\u751f\u7535\u8111",
-            "name": "\u65ad\u7f6a",
-            "describe": "\u9009\u62e9<range type=0>\u5468\u56f44\u683c</range>\u5185\u4efb\u610f\u7a7a\u5730\u683c\uff0c\u8df3\u8dc3\u81f3\u76ee\u6807\u5730\u70b9\uff0c\u5e76\u4f7f\u7528\u957f\u67c4\u5bf9<range type=1>\u5468\u56f42\u683c</range>\u5185\u654c\u65b9\u76ee\u6807\u9020\u6210<color=#F74848>1.1</color>\u500d\u8303\u56f4\u4f24\u5bb3\uff0c\u5e76\u5bf9\u8303\u56f4\u5185\u6240\u6709\u76ee\u6807\u65bd\u52a0<buf ID=6011014>[\u6311\u8845]</buf>\uff0c\u6301\u7eed<color=#F74848>2</color>\u56de\u5408",
+            "name": "Verdict",
+            "describe": "Selects an empty tile within <range type=0>4-adjacent</range> tiles, jumps to the target type and uses Polearm to deal <color=#F74848>1.1x</color> AoE DMG to all enemies within <range type=1>2-adjacent</range> tiles of the target, inflicting <buf ID=6011014>[Provocation]</buf> on all enemies hit, lasting for <color=#F74848>2</color> turns.",
             "type": "SpecialAssault",
             "Ap": "4",
             "matchingWeaponType": "\u957f\u67c4",
@@ -56756,8 +56756,18 @@
         }
       ],
       "AllowedMechaDriveList_DriveAllowedList": "Light",
-      "version": "1.0",
-      "enTranslation": false
+      "version": "2.5",
+      "enTranslation": true,
+      "hiddenSkills": [
+        {
+          "name": "Rear Guard",
+          "icon": "Icon_skill_order_5112",
+          "type": "Order",
+          "Ap": "1",
+          "CD": "0",
+          "describe": "Protects allies within <color=#F74848>2</color> adjacent tiles from assault and ranged attacks, up to <color=#F74848>2</color> times per turn, lasting for <color=#F74848>2</color> turns. Additionally inflicts <buf ID=6011014>[Provocation]</buf> on all enemies within <color=#F74848>2</color> adjacent tiles for <color=#F74848>2</color> turns."
+        }
+      ]
     },
     {
       "ID": "10103140",
