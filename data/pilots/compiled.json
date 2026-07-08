@@ -51200,7 +51200,7 @@
       "Talent0_2Ability": {
         "ID": "101850",
         "name": "World Savior",
-        "SpecificEffects": "For each <color=#F74848>1</color> ally within <color=#F74848>3</color> adjacent tiles, DMG dealt increases by <color=#F74848>5%</color> and DMG taken reduces by <color=#F74848>5%</color>, up to <color=#F74848>20%</color>. If an enemy boss is present, pilot's combat ability increases by <color=#F74848>8%</color>.",
+        "SpecificEffects": "For each <color=#F74848>1</color> ally within <color=#F74848>3</color> adjacent tiles, DMG dealt increases by <color=#F74848>5%</color> and DMG taken reduces by <color=#F74848>5%</color>, up to <color=#F74848>20%</color>. If an enemy boss is present, pilot's suitability increases by <color=#F74848>8%</color>.",
         "BufCarried": "1018501/1018502/1018503",
         "SkillIcon": "Icon_skill_talent_9601",
         "icon": "Icon_skill_talent_9601",
@@ -51210,7 +51210,7 @@
       "Talent3_5Ability": {
         "ID": "101851",
         "name": "World Savior",
-        "SpecificEffects": "For each <color=#F74848>1</color> ally within <color=#F74848>3</color> adjacent tiles, DMG dealt increases by <color=#F74848>5%</color> and DMG taken reduces by <color=#F74848>5%</color>, up to <color=#F74848>20%</color>. If an enemy boss is present, pilot's combat ability increases by <color=#F74848>8%</color>.\nWhen actively attacking, own Firepower increases by <color=#F74848>2%</color> of current HP.",
+        "SpecificEffects": "For each <color=#F74848>1</color> ally within <color=#F74848>3</color> adjacent tiles, DMG dealt increases by <color=#F74848>5%</color> and DMG taken reduces by <color=#F74848>5%</color>, up to <color=#F74848>20%</color>. If an enemy boss is present, pilot's suitability increases by <color=#F74848>8%</color>.\nWhen actively attacking, own Firepower increases by <color=#F74848>2%</color> of current HP.",
         "BufCarried": "1018501/1018502/1018503/1018511",
         "SkillIcon": "Icon_skill_talent_9601",
         "icon": "Icon_skill_talent_9601",
@@ -51471,7 +51471,7 @@
                 "PassiveSkill": {
                   "ID": "101836",
                   "name": "Warrior 4",
-                  "SpecificEffects": "When initiating combat, if the target is destroyed, all AP consumed by the skill are recovered, up to a maximum of <color=#F74848>3</color> AP. This effect can trigger <color=#F74848>1</color> time per turn.",
+                  "SpecificEffects": "When actively attacking, if the target is destroyed, all AP consumed by the skill are recovered, up to a maximum of <color=#F74848>3</color> AP. This effect can trigger <color=#F74848>1</color> time per turn.",
                   "BufCarried": "1018361",
                   "SkillIcon": "Icon_skill_passive_5272",
                   "icon": "Icon_skill_passive_5272",
@@ -51906,7 +51906,7 @@
           "skill": {
             "ID": "101805",
             "name": "Justice Will Prevail",
-            "SpecificEffects": "When the number of enemies are greater than the number of allies, all allies DMG taken reduces by <color=#F74848>5%</color>. Inversely, when the number of enemies are smaller than the number of allies, all allies DMG taken increases by <color=#F74848>5%</color>.",
+            "SpecificEffects": "When the number of enemies are greater than the number of allies, all allies DMG taken reduces by <color=#F74848>5%</color>. Inversely, when the number of enemies are smaller than the number of allies, all allies DMG dealt increases by <color=#F74848>5%</color>.",
             "BufCarried": "1018051/1018053",
             "SkillIcon": "Icon_skill_passive_9603",
             "icon": "Icon_skill_passive_9603",
@@ -51932,7 +51932,7 @@
             "ID": "101806",
             "remarks": "\u6218\u90e8\u6e21-\u4eff\u751f\u7535\u8111",
             "name": "Light Dragon - Thunder Fist",
-            "describe": "Uses an Alter-Blade to draw upon the power of Dragon God, attacking all enemies within <range type=2>3x4 square area</range> in front, dealing <color=#F74848>0.9x</color> AoE DMG, prioritizing parts with lowest HP percentage. If any part is destroyed, immediately launches the same attack <color=#F74848>1</color> more time with <color=#F74848>50%</color> reduced multiplier. Can repeat up to <color=#F74848>2</color> times. After attacking, clear terrain effect on hit tile for <color=#F74848>1</color> turn.\nCan only be used with both hands intact.",
+            "describe": "Uses an Alter-Blade to draw upon the power of Dragon God, attacking all enemies within <range type=2>3x4 square area</range> in front, dealing <color=#F74848>0.9x</color> AoE DMG, prioritizing parts without full HP. If any part is destroyed, immediately launches the same attack <color=#F74848>1</color> more time with <color=#F74848>50%</color> reduced multiplier. Can repeat up to <color=#F74848>2</color> times. After attacking, clear terrain effect on hit tile for <color=#F74848>1</color> turn.\nCan only be used with both hands intact.",
             "type": "SpecialAssault",
             "Ap": "4",
             "matchingWeaponType": "\u5200\u5251",
@@ -51959,7 +51959,7 @@
           "skill": {
             "ID": "101807",
             "name": "Courage",
-            "SpecificEffects": "Starting from <color=#F74848>2nd</color> turn, at the start of action, if AP is less than or equal to <color=#F74848>4</color>, consumes <color=#F74848>1</color> PP to recovers <color=#F74848>3</color> AP. Can gains maximum <color=#F74848>2</color> PP per attack.",
+            "SpecificEffects": "Starting from <color=#F74848>2nd</color> turn, at the start of action, if AP is less than or equal to <color=#F74848>4</color>, consumes <color=#F74848>1</color> PP to recovers <color=#F74848>3</color> AP. Gains <color=#F74848>2</color> PP at the start of battle.",
             "BufCarried": "1018071",
             "SkillIcon": "Icon_skill_passive_9604",
             "icon": "Icon_skill_passive_9604",
