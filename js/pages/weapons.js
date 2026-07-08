@@ -44,6 +44,8 @@ var GRIP_LABEL = {
 Pages.weapons = {
   title: 'Weapons',
 
+  _searchQuery: '',
+
   render: function (param) {
     var all = (window.WeaponsData || {}).weapons || [];
     var weapons = all.filter(function (w) { return w.quality === 'SSSR' && w.version; });
@@ -98,6 +100,12 @@ Pages.weapons = {
         e.preventDefault();
         $('html, body').animate({ scrollTop: 0 }, 200);
       });
+
+      $('#weapon-page').on('input', '#weapon-search', function () {
+        self._searchQuery = $(this).val();
+        self._applyFilter();
+      });
+
       var allPilots = (window.PilotsData || {}).pilots || [];
 
       acGroups.forEach(function (g) {
@@ -117,7 +125,7 @@ Pages.weapons = {
           }
 
           var $card = $(
-            '<div class="col-6 col-sm-4 col-md-3 col-xl-2">' +
+            '<div class="col-6 col-sm-4 col-md-3 col-xl-2 weapon-card-wrap" data-name="' + encodeURIComponent(w.name.toLowerCase()) + '">' +
               '<div class="card-item weapon-card" data-id="' + w.ID + '" data-t1="' + w.WeaponType1 + '" data-t2="' + w.WeaponType2 + '">' +
                 '<div class="weapon-card-img">' +
                   '<img src="' + imgSrc + '" alt="' + $('<span>').text(w.name).html() + '" loading="lazy" />' +
@@ -140,16 +148,38 @@ Pages.weapons = {
         });
       });
 
+      $('#weapon-search').val(self._searchQuery);
+      self._applyFilter();
     }, 0);
 
     return (
       '<div id="weapon-page">' +
         '<div class="listing-header"><h1>Weapons</h1><span class="badge bg-secondary ms-3" id="weapon-count">' + weapons.length + '</span></div>' +
+        '<div class="search-box-wrap">' +
+          '<input type="text" class="search-box" id="weapon-search" placeholder="Search weapons by name..." />' +
+        '</div>' +
         acNav +
         sectionsHtml +
         '<a class="back-to-top" id="weapon-back-top" href="#">&#8593; Top</a>' +
       '</div>'
     );
+  },
+
+  _applyFilter: function () {
+    var query = (this._searchQuery || '').trim().toLowerCase();
+    var visibleCount = 0;
+    $('#weapon-page .ac-section').each(function () {
+      var $section = $(this);
+      var sectionHasMatch = false;
+      $section.find('.weapon-card-wrap').each(function () {
+        var name = decodeURIComponent($(this).data('name') || '');
+        var show = !query || name.indexOf(query) !== -1;
+        $(this).toggle(show);
+        if (show) { sectionHasMatch = true; visibleCount++; }
+      });
+      $section.toggle(sectionHasMatch);
+    });
+    $('#weapon-count').text(visibleCount);
   },
 
   // ── Detail ─────────────────────────────────────────────────────────────────
@@ -265,5 +295,7 @@ Pages.weapons = {
     );
   },
 
-  destroy: function () {},
+  destroy: function () {
+    this._searchQuery = '';
+  },
 };

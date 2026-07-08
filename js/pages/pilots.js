@@ -19,6 +19,7 @@ Pages.pilots = {
   _activeLicenses:    {},
   _enOnly:            true,
   _lastViewed:        null,
+  _searchQuery:       '',
 
   // ── Routing entry point ────────────────────────────────────────────────────
   render: function (param) {
@@ -59,6 +60,9 @@ Pages.pilots = {
         '<h1>Pilots</h1>' +
         '<span class="badge bg-secondary ms-3" id="pilot-count">' + pilots.length + '</span>' +
       '</div>' +
+      '<div class="search-box-wrap">' +
+        '<input type="text" class="search-box" id="pilot-search" placeholder="Search pilots by name..." />' +
+      '</div>' +
       '<div class="filter-bar">' +
         '<div class="filter-row">' +
           '<div class="filter-group"><span class="filter-label">Rank</span>' + rankButtons + '</div>' +
@@ -77,6 +81,7 @@ Pages.pilots = {
 
     var self = this;
     setTimeout(function () {
+      $('#pilot-search').val(self._searchQuery);
       self._renderGrid(pilots);
 
       $(document).on('click.pilots', '[data-filter-rank]', function () {
@@ -109,6 +114,10 @@ Pages.pilots = {
         $(this).toggleClass('active', self._enOnly);
         self._renderGrid(pilots);
       });
+      $(document).on('input.pilots', '#pilot-search', function () {
+        self._searchQuery = $(this).val();
+        self._renderGrid(pilots);
+      });
     }, 0);
 
     return html;
@@ -121,13 +130,15 @@ Pages.pilots = {
     var activeLics  = Object.keys(this._activeLicenses).filter(k => this._activeLicenses[k]);
 
     var enOnly = this._enOnly;
+    var query  = (this._searchQuery || '').trim().toLowerCase();
     var filtered = pilots.filter(function (p) {
-      var rankOk = activeRanks.length === 0 || activeRanks.indexOf(p.quality)   !== -1;
-      var occOk  = activeOccs.length  === 0 || activeOccs.indexOf(p.Occupation) !== -1;
-      var verOk  = activeVers.length  === 0 || activeVers.indexOf(p.version)    !== -1;
-      var licOk  = activeLics.length  === 0 || activeLics.indexOf(p.AllowedMechaDriveList_DriveAllowedList) !== -1;
-      var enOk   = !enOnly || p.enTranslation;
-      return rankOk && occOk && verOk && licOk && enOk;
+      var rankOk   = activeRanks.length === 0 || activeRanks.indexOf(p.quality)   !== -1;
+      var occOk    = activeOccs.length  === 0 || activeOccs.indexOf(p.Occupation) !== -1;
+      var verOk    = activeVers.length  === 0 || activeVers.indexOf(p.version)    !== -1;
+      var licOk    = activeLics.length  === 0 || activeLics.indexOf(p.AllowedMechaDriveList_DriveAllowedList) !== -1;
+      var enOk     = !enOnly || p.enTranslation;
+      var searchOk = !query || (p.PilotName || '').toLowerCase().indexOf(query) !== -1;
+      return rankOk && occOk && verOk && licOk && enOk && searchOk;
     }).slice().sort(function (a, b) {
       return parseFloat(b.version) - parseFloat(a.version);
     });
@@ -493,9 +504,11 @@ Pages.pilots = {
 
   destroy: function () {
     $(document).off('click.pilots');
+    $(document).off('input.pilots');
     this._activeRanks       = {};
     this._activeOccupations = {};
     this._activeVersions    = {};
+    this._searchQuery       = '';
   }
 };
 

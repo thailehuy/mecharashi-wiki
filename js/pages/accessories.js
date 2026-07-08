@@ -21,6 +21,7 @@ Pages.accessories = {
   title: 'Accessories',
 
   _activeCO: null,
+  _searchQuery: '',
 
   render: function () {
     var self = this;
@@ -80,6 +81,14 @@ Pages.accessories = {
         }
         self._applyFilter();
       });
+
+      $('#acc-page').on('input', '#acc-search', function () {
+        self._searchQuery = $(this).val();
+        self._applyFilter();
+      });
+
+      $('#acc-search').val(self._searchQuery);
+      self._applyFilter();
     }, 0);
 
     return (
@@ -87,6 +96,9 @@ Pages.accessories = {
         '<div class="listing-header">' +
           '<h1>Accessories</h1>' +
           '<span class="badge bg-secondary ms-3">' + all.length + '</span>' +
+        '</div>' +
+        '<div class="search-box-wrap">' +
+          '<input type="text" class="search-box" id="acc-search" placeholder="Search accessories by name..." />' +
         '</div>' +
         coFilterHtml +
         acNav +
@@ -97,14 +109,21 @@ Pages.accessories = {
   },
 
   _applyFilter: function () {
-    var co = this._activeCO;
-    $('#acc-page .acc-card-wrap').each(function () {
-      var cos = $(this).data('cos');
-      var show = co === null || (cos && cos.indexOf(co) !== -1);
-      $(this).toggle(show);
-    });
+    var co    = this._activeCO;
+    var query = (this._searchQuery || '').trim().toLowerCase();
     $('#acc-page .ac-section').each(function () {
-      $(this).toggle($(this).find('.acc-card-wrap:visible').length > 0);
+      var $section = $(this);
+      var sectionHasMatch = false;
+      $section.find('.acc-card-wrap').each(function () {
+        var cos  = $(this).data('cos');
+        var name = decodeURIComponent($(this).data('name') || '');
+        var coOk     = co === null || (cos && cos.indexOf(co) !== -1);
+        var searchOk = !query || name.indexOf(query) !== -1;
+        var show = coOk && searchOk;
+        $(this).toggle(show);
+        if (show) sectionHasMatch = true;
+      });
+      $section.toggle(sectionHasMatch);
     });
   },
 
@@ -134,9 +153,10 @@ Pages.accessories = {
       }).join('');
 
       var cosAttr = JSON.stringify(a.cos || []);
+      var nameAttr = encodeURIComponent(displayName.toLowerCase());
 
       return (
-        '<div class="col-12 col-sm-6 col-lg-4 col-xl-3 acc-card-wrap" data-cos=\'' + cosAttr + '\'>' +
+        '<div class="col-12 col-sm-6 col-lg-4 col-xl-3 acc-card-wrap" data-cos=\'' + cosAttr + '\' data-name="' + nameAttr + '">' +
           '<div class="acc-card">' +
             '<div class="acc-card-icon">' +
               '<img class="acc-statetype-icon" src="' + stateIcon + '" alt="" />' +
@@ -170,5 +190,6 @@ Pages.accessories = {
 
   destroy: function () {
     this._activeCO = null;
+    this._searchQuery = '';
   },
 };

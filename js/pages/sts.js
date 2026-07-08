@@ -14,6 +14,7 @@ Pages.sts = {
   _activeVersions: {},
   _enOnly:         true,
   _lastViewed:     null,
+  _searchQuery:    '',
 
   // ── Routing entry point ────────────────────────────────────────────────────
   render: function (param) {
@@ -50,6 +51,9 @@ Pages.sts = {
         '<h1>STs</h1>' +
         '<span class="badge bg-secondary ms-3" id="mech-count">' + mechs.length + '</span>' +
       '</div>' +
+      '<div class="search-box-wrap">' +
+        '<input type="text" class="search-box" id="mech-search" placeholder="Search STs by name..." />' +
+      '</div>' +
       '<div class="filter-bar">' +
         '<div class="filter-group"><span class="filter-label">Rank</span>' + rankButtons + '</div>' +
         '<div class="filter-group"><span class="filter-label">Type</span>' + typeButtons + '</div>' +
@@ -61,6 +65,7 @@ Pages.sts = {
 
     var self = this;
     setTimeout(function () {
+      $('#mech-search').val(self._searchQuery);
       self._renderGrid(mechs);
 
       $(document).on('click.sts', '[data-filter-rank]', function () {
@@ -87,6 +92,10 @@ Pages.sts = {
         $(this).toggleClass('active', self._enOnly);
         self._renderGrid(mechs);
       });
+      $(document).on('input.sts', '#mech-search', function () {
+        self._searchQuery = $(this).val();
+        self._renderGrid(mechs);
+      });
     }, 0);
 
     return html;
@@ -98,12 +107,14 @@ Pages.sts = {
     var activeVers  = Object.keys(this._activeVersions).filter(k => this._activeVersions[k]);
 
     var enOnly = this._enOnly;
+    var query  = (this._searchQuery || '').trim().toLowerCase();
     var filtered = mechs.filter(function (m) {
-      var rankOk = activeRanks.length === 0 || activeRanks.indexOf(m.quality)  !== -1;
-      var typeOk = activeTypes.length === 0 || activeTypes.indexOf(m.type)     !== -1;
-      var verOk  = activeVers.length  === 0 || activeVers.indexOf(m.version)   !== -1;
-      var enOk   = !enOnly || m.enTranslation;
-      return rankOk && typeOk && verOk && enOk;
+      var rankOk   = activeRanks.length === 0 || activeRanks.indexOf(m.quality)  !== -1;
+      var typeOk   = activeTypes.length === 0 || activeTypes.indexOf(m.type)     !== -1;
+      var verOk    = activeVers.length  === 0 || activeVers.indexOf(m.version)   !== -1;
+      var enOk     = !enOnly || m.enTranslation;
+      var searchOk = !query || (m.name || '').toLowerCase().indexOf(query) !== -1;
+      return rankOk && typeOk && verOk && enOk && searchOk;
     }).slice().sort(function (a, b) {
       return parseFloat(b.version) - parseFloat(a.version);
     });
@@ -297,9 +308,11 @@ Pages.sts = {
 
   destroy: function () {
     $(document).off('click.sts');
+    $(document).off('input.sts');
     this._activeRanks    = {};
     this._activeTypes    = {};
     this._activeVersions = {};
+    this._searchQuery    = '';
   }
 };
 
