@@ -1,37 +1,35 @@
 {
-  "name": "辉龙",
+  "name": "Huilong",
   "introduce": "DMS-000 辉龙\n由温斯顿博士设计，拉尼亚凯亚制造的重型机兵。该机整合了全钢岚合金框架、机械与脑波复合驱动系统等新技术，拥有优秀的基础性能。在受到异世界龙神加护之后，它的外形和操作模式发生了进一步变化。",
   "modules": {
     "30488": {
-      "name": "龙威·无拘",
-      "SpecificEffects": "移动时[无视单位阻挡]；当[战部渡]驾驶整套[辉龙]时，移动力<color=#F74848>+1</color>，机兵移动方式变为漂浮，可翻越低障碍"
+      "name": "Dragon's Might - Unfettered",
+      "SpecificEffects": "Ignores unit obstruction when moving. When [Wataru] pilots the complete [Huilong], movement <color=#F74848>+1</color> and movement type changes to hovering, allowing this unit to pass over low obstacle."
     },
     "30482": {
-      "name": "龙威·启明",
-      "SpecificEffects": "展开光环，使周围<color=#F74848>3</color>格范围内的友军伤害提升<color=#F74848>3%</color>，若驾驶者是[战部渡]，则效果翻倍"
+      "name": "Dragon's Might - Enlightenment",
+      "SpecificEffects": "Increases DMG dealt by allies within <color=#F74848>3</color> adjacent tiles by <color=#F74848>3%</color>. If piloted by [Wataru], this effect is doubled."
     },
     "30486": {
-      "name": "龙威·扬锋",
-      "SpecificEffects": "当前部位无法装备盾牌武器；装备其他格斗武器时，伤害提升<color=#F74848>5%</color>，与首领对战时效果翻倍"
-    },
-    "20574": {
-      "name": "勇气核心",
-      "SpecificEffects": "主动攻击时，伤害提升<color=#F74848>15%</color>，与首领主动攻击对战时效果翻倍"
-    },
-    "30478": {
-      "name": "盈辉模组",
-      "SpecificEffects": "自身每携带<color=#F74848>1</color>AP，伤害提升<color=#F74848>3%</color>，最多提升<color=#F74848>24%</color>;\n主动攻击对战时，若使用了<color=#F74848>6</color>AP及以上的技能，本次攻击无法被闪避、<buf ID=900023>[反击先手]</buf>和<buf ID=900013>[警戒射击]</buf>，并且命中时必定暴击"
+      "name": "Dragon's Might - Rising Wind",
+      "SpecificEffects": "Shield cannot be equipped on right arm. When equipping other melee weapons, DMG dealt increases by <color=#F74848>5%</color>. This effect is doubled against bosses."
     },
     "30484": {
-      "name": "龙威·守御",
-      "SpecificEffects": "当前部位装备盾牌类武器时，遭受伤害降低<color=#F74848>5%</color>，与首领对战时效果翻倍"
+      "name": "Dragon's Might - Guard",
+      "SpecificEffects": "When a Shield is equipped on left arm, DMG taken reduces by <color=#F74848>5%</color>. This effect is doubled against bosses."
+    },
+    "20574": {
+      "name": "Valor Core",
+      "SpecificEffects": "When initiating combat, DMG dealt increases by <color=#F74848>15%</color>. This effect is doubled against bosses."
+    },
+    "30478": {
+      "name": "Radiance Mod",
+      "SpecificEffects": "For each <color=#F74848>1</color> AP currently possesses, DMG dealt increases by <color=#F74848>3%</color>, up to <color=#F74848>24%</color>.\nWhen initiating combat with a skill costing <color=#F74848>6</color> AP or more, this attack cannot be dodged, <buf ID=900023>[Quick Draw]</buf> or <buf ID=900013>[Vigilant Shot]</buf> against, and will always score a critical hit."
     },
     "40274": {
-      "name": "火力模组",
-      "SpecificEffects": "火力值提升<color=#F74848>10%</color>"
+      "name": "Firepower Module",
+      "SpecificEffects": "Firepower +<color=#F74848>10%</color>."
     }
   },
-  "version": "1.0",
-  "dispatchVersion": "3.2",
-  "dispatchGroup": "InnovativE"
+  "version": "2.6"
 }
