@@ -33,10 +33,18 @@ for path in sorted(glob.glob(f'{DIR}/[0-9]*.json')):
         continue
     body  = next((e for e in raw if e.get('position') in ('Body','躯干')), raw[0] if raw else {})
     entry = {k: body.get(k, '') for k in BODY_FIELDS}
+    def part_stat(p, key):
+        manji = p.get('manji', {})
+        return manji.get(key) or p.get(key) or None
+
     entry['parts'] = [{
         'position':       p.get('position', ''),
         'aircraftWeight': p.get('aircraftWeight', '0'),
-        'maxHp':          p.get('manji', {}).get('durable', p.get('durable', '0'))
+        'maxHp':          p.get('manji', {}).get('durable', p.get('durable', '0')),
+        'Armor':          part_stat(p, 'Armor'),
+        'Hit':            part_stat(p, 'Hit'),
+        'Dodge':          part_stat(p, 'Dodge'),
+        'Antiriot':       part_stat(p, 'Antiriot'),
     } for p in raw]
     manji = body.get('manji', {})
     entry['manjiFirepower'] = manji.get('fire', body.get('fire', ''))

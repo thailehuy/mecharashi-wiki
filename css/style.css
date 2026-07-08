@@ -656,6 +656,61 @@ body {
 .mech-stat-weight .mech-stat-value { color: #60a8ff; }
 .mech-stat-over   .mech-stat-value { color: #e94560; }
 
+.mech-parts-row {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.mech-part-col {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  flex: 1 1 0;
+  min-width: 70px;
+}
+
+.mech-part-col-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: #c8c8ff;
+  white-space: nowrap;
+  background: rgba(100, 100, 200, 0.18);
+  border-radius: 4px;
+  padding: 2px 6px;
+  text-align: center;
+}
+
+.mech-part-block {
+  background-color: #1a1a20;
+  border: 1px solid #2a2a4a;
+  border-radius: 6px;
+  padding: 0.4rem 0.65rem;
+}
+
+.mech-part-name {
+  font-size: 0.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 0.2rem;
+  white-space: nowrap;
+}
+
+.mech-part-value {
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+.mech-part-hp    { color: #60c870; }
+.mech-part-def   { color: #60a8ff; }
+.mech-part-crit  { color: #c8a850; }
+.mech-part-hit   { color: #e09050; }
+.mech-part-dodge { color: #a070d0; }
+
 .module-level {
   font-size: 0.65rem;
   font-weight: 600;

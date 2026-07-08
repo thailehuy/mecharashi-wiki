@@ -166,11 +166,38 @@ Pages.sts = {
     var partsWeight = (m.parts || []).reduce(function (sum, p) { return sum + (parseInt(p.aircraftWeight, 10) || 0); }, 0);
     var remaining   = bodyOutput - partsWeight;
 
-    // Per-part HP stats
+    // Per-part blocks (Body / L-Arm / R-Arm / Legs)
     var POSITION_EN = { '躯干': 'Body', '左臂': 'L-Arm', '右臂': 'R-Arm', '腿部': 'Legs' };
+
     var hpStats = (m.parts || []).map(function (p) {
       var pos = POSITION_EN[p.position] || p.position;
-      return '<div class="mech-stat mech-stat-hp"><span class="mech-stat-label">' + pos + ' HP</span><span class="mech-stat-value">' + p.maxHp + '</span></div>';
+      var extraStats = [];
+      if (pos === 'Body') {
+        if (p.Armor)    extraStats.push({ label: 'DEF',      value: p.Armor,    cls: 'mech-part-def' });
+        if (p.Antiriot) extraStats.push({ label: 'Crit RES', value: p.Antiriot, cls: 'mech-part-crit' });
+      } else if (pos === 'L-Arm' || pos === 'R-Arm') {
+        if (p.Hit)      extraStats.push({ label: 'Hit',      value: p.Hit,      cls: 'mech-part-hit' });
+      } else if (pos === 'Legs') {
+        if (p.Dodge)    extraStats.push({ label: 'Dodge',    value: p.Dodge,    cls: 'mech-part-dodge' });
+      }
+      var extraHtml = extraStats.map(function (s) {
+        return (
+          '<div class="mech-part-block mech-part-block--extra">' +
+            '<div class="mech-part-name ' + s.cls + '">' + s.label + '</div>' +
+            '<div class="mech-part-value ' + s.cls + '">' + s.value + '</div>' +
+          '</div>'
+        );
+      }).join('');
+      return (
+        '<div class="mech-part-col">' +
+          '<div class="mech-part-col-label">' + pos + '</div>' +
+          '<div class="mech-part-block">' +
+            '<div class="mech-part-name mech-part-hp">HP</div>' +
+            '<div class="mech-part-value mech-part-hp">' + p.maxHp + '</div>' +
+          '</div>' +
+          extraHtml +
+        '</div>'
+      );
     }).join('');
 
     // Weight stats
@@ -245,7 +272,7 @@ Pages.sts = {
           '<div class="mech-stats">' +
             '<div class="mech-stat mech-stat-fire"><span class="mech-stat-label">Firepower</span><span class="mech-stat-value">' + (m.manjiFirepower || m.fire) + '</span></div>' +
           '</div>' +
-          '<div class="mech-stats">' + hpStats + '</div>' +
+          '<div class="mech-parts-row">' + hpStats + '</div>' +
           '<div class="mech-stats">' + weightStats + '</div>' +
         '</div>' +
       '</div>' +
