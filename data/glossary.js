@@ -1039,6 +1039,14 @@ window.GlossaryData = {
     "6011042": {
       "name": "Advantage",
       "effect": "Increases Dodge Rate by <color=#F74848>10%</color> per stack, up to <color=#F74848>3</color> stacks. <color=#F74848>1</color> stack is removed upon being attacked."
+    },
+    "1018041": {
+      "name": "Good Chance!",
+      "effect": "The next active attack DMG increases by <color=#F74848>5%</color> for every <color=#F74848>1</color> AP consumed, up to <color=#F74848>40%</color>. This effect is removed after attacking."
+    },
+    "1018463": {
+      "name": "Hope",
+      "effect": "Final DMG increases by <color=#F74848>5%</color>, stacking up to <color=#F74848>3</color> times. This effect is removed at the end of the team turn."
     }
   },
   "skill": {

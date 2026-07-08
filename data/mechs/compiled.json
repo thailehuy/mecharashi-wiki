@@ -2530,6 +2530,176 @@
       "enTranslation": true
     },
     {
+      "ID": "33020103",
+      "name": "Huilong",
+      "type": "Heavy",
+      "quality": "SSR",
+      "icon": "Icon_mecha_wap3302",
+      "mechaIcon": "Icon_wap3302_1",
+      "lihuiIcon": "icon_lihui_wap3302",
+      "introduce": "DMS-000 \u8f89\u9f99\n\u7531\u6e29\u65af\u987f\u535a\u58eb\u8bbe\u8ba1\uff0c\u62c9\u5c3c\u4e9a\u51ef\u4e9a\u5236\u9020\u7684\u91cd\u578b\u673a\u5175\u3002\u8be5\u673a\u6574\u5408\u4e86\u5168\u94a2\u5c9a\u5408\u91d1\u6846\u67b6\u3001\u673a\u68b0\u4e0e\u8111\u6ce2\u590d\u5408\u9a71\u52a8\u7cfb\u7edf\u7b49\u65b0\u6280\u672f\uff0c\u62e5\u6709\u4f18\u79c0\u7684\u57fa\u7840\u6027\u80fd\u3002\u5728\u53d7\u5230\u5f02\u4e16\u754c\u9f99\u795e\u52a0\u62a4\u4e4b\u540e\uff0c\u5b83\u7684\u5916\u5f62\u548c\u64cd\u4f5c\u6a21\u5f0f\u53d1\u751f\u4e86\u8fdb\u4e00\u6b65\u53d8\u5316\u3002",
+      "output": "2015",
+      "durable": "475",
+      "Armor": "144",
+      "fire": "116",
+      "Antiriot": "770",
+      "parts": [
+        {
+          "position": "\u8eaf\u5e72",
+          "aircraftWeight": "360",
+          "maxHp": "13206",
+          "Armor": "1412",
+          "Hit": null,
+          "Dodge": null,
+          "Antiriot": "4472"
+        },
+        {
+          "position": "\u5de6\u81c2",
+          "aircraftWeight": "185",
+          "maxHp": "5755",
+          "Armor": "941",
+          "Hit": "1852",
+          "Dodge": null,
+          "Antiriot": null
+        },
+        {
+          "position": "\u53f3\u81c2",
+          "aircraftWeight": "185",
+          "maxHp": "5755",
+          "Armor": "941",
+          "Hit": "1852",
+          "Dodge": null,
+          "Antiriot": null
+        },
+        {
+          "position": "\u817f\u90e8",
+          "aircraftWeight": "235",
+          "maxHp": "9258",
+          "Armor": "941",
+          "Hit": null,
+          "Dodge": "3287",
+          "Antiriot": null
+        }
+      ],
+      "manjiFirepower": "1137",
+      "modules": [
+        {
+          "_id": {
+            "timestamp": 1759054250,
+            "date": 1759054250000
+          },
+          "ID": "30488",
+          "name": "Dragon's Might - Unfettered",
+          "SpecificEffects": "Ignores unit obstruction when moving. When [Wataru] pilots the complete [Huilong], movement <color=#F74848>+1</color> and movement type changes to hovering, allowing this unit to pass over low obstacle.",
+          "BufCarried": "304881/304871",
+          "SkillIcon": "Icon_skill_passive_5123",
+          "icon": "Icon_skill_passive_5123",
+          "Status": 1,
+          "weight": 776,
+          "id": "30482",
+          "level": 2
+        },
+        {
+          "_id": {
+            "timestamp": 1759054250,
+            "date": 1759054250000
+          },
+          "ID": "30482",
+          "name": "Dragon's Might - Enlightenment",
+          "SpecificEffects": "Increases DMG dealt by allies within <color=#F74848>3</color> adjacent tiles by <color=#F74848>3%</color>. If piloted by [Wataru], this effect is doubled.",
+          "BufCarried": "304821/304822",
+          "SkillIcon": "Icon_skill_passive_1172",
+          "icon": "Icon_skill_passive_1172",
+          "Status": 1,
+          "weight": 770,
+          "id": "30481",
+          "level": 2
+        },
+        {
+          "_id": {
+            "timestamp": 1759054250,
+            "date": 1759054250000
+          },
+          "ID": "30486",
+          "name": "Dragon's Might - Rising Wind",
+          "SpecificEffects": "Shield cannot be equipped on right arm. When equipping other melee weapons, DMG dealt increases by <color=#F74848>5%</color>. This effect is doubled against bosses.",
+          "BufCarried": "304861/304851",
+          "SkillIcon": "Icon_skill_passive_1173",
+          "icon": "Icon_skill_passive_1173",
+          "Status": 1,
+          "weight": 774,
+          "id": "30484",
+          "level": 2
+        },
+        {
+          "_id": {
+            "timestamp": 1759054248,
+            "date": 1759054248000
+          },
+          "ID": "20574",
+          "name": "Valor Core",
+          "SpecificEffects": "When initiating combat, DMG dealt increases by <color=#F74848>15%</color>. This effect is doubled against bosses.",
+          "BufCarried": "205741/205742/205700",
+          "SkillIcon": "Icon_skill_passive_1132",
+          "icon": "Icon_skill_passive_1132",
+          "Status": 1,
+          "weight": 350,
+          "id": "2057",
+          "level": 4
+        },
+        {
+          "_id": {
+            "timestamp": 1759054250,
+            "date": 1759054250000
+          },
+          "ID": "30478",
+          "name": "Radiance Mod",
+          "SpecificEffects": "For each <color=#F74848>1</color> AP currently possesses, DMG dealt increases by <color=#F74848>3%</color>, up to <color=#F74848>24%</color>.\nWhen initiating combat with a skill costing <color=#F74848>6</color> AP or more, this attack cannot be dodged, <buf ID=900023>[Quick Draw]</buf> or <buf ID=900013>[Vigilant Shot]</buf> against, and will always score a critical hit.",
+          "BufCarried": "304781/304782",
+          "SkillIcon": "Icon_entry_10098",
+          "icon": "Icon_entry_10098",
+          "Status": 1,
+          "weight": 768,
+          "id": "3047",
+          "level": 8
+        },
+        {
+          "_id": {
+            "timestamp": 1759054250,
+            "date": 1759054250000
+          },
+          "ID": "30484",
+          "name": "Dragon's Might - Guard",
+          "SpecificEffects": "When a Shield is equipped on left arm, DMG taken reduces by <color=#F74848>5%</color>. This effect is doubled against bosses.",
+          "BufCarried": "304841/304831",
+          "SkillIcon": "Icon_skill_passive_2117",
+          "icon": "Icon_skill_passive_2117",
+          "Status": 1,
+          "weight": 772,
+          "id": "30483",
+          "level": 2
+        },
+        {
+          "_id": {
+            "timestamp": 1719910772,
+            "date": 1719910772000
+          },
+          "ID": "40274",
+          "name": "Firepower Module",
+          "SpecificEffects": "Firepower +<color=#F74848>10%</color>.",
+          "BufCarried": "402741",
+          "SkillIcon": "Icon_skill_passive_1126",
+          "icon": "Icon_skill_passive_1126",
+          "Status": 1,
+          "weight": 1065,
+          "id": "4027",
+          "level": 4
+        }
+      ],
+      "version": "2.6",
+      "enTranslation": true
+    },
+    {
       "ID": "20420103",
       "name": "Igniter",
       "type": "Medium",
@@ -6095,178 +6265,6 @@
           "level": 4
         }
       ],
-      "version": "1.0",
-      "enTranslation": false
-    },
-    {
-      "ID": "33020103",
-      "name": "\u8f89\u9f99",
-      "type": "Heavy",
-      "quality": "SSR",
-      "icon": "Icon_mecha_wap3302",
-      "mechaIcon": "Icon_wap3302_1",
-      "lihuiIcon": "icon_lihui_wap3302",
-      "introduce": "DMS-000 \u8f89\u9f99\n\u7531\u6e29\u65af\u987f\u535a\u58eb\u8bbe\u8ba1\uff0c\u62c9\u5c3c\u4e9a\u51ef\u4e9a\u5236\u9020\u7684\u91cd\u578b\u673a\u5175\u3002\u8be5\u673a\u6574\u5408\u4e86\u5168\u94a2\u5c9a\u5408\u91d1\u6846\u67b6\u3001\u673a\u68b0\u4e0e\u8111\u6ce2\u590d\u5408\u9a71\u52a8\u7cfb\u7edf\u7b49\u65b0\u6280\u672f\uff0c\u62e5\u6709\u4f18\u79c0\u7684\u57fa\u7840\u6027\u80fd\u3002\u5728\u53d7\u5230\u5f02\u4e16\u754c\u9f99\u795e\u52a0\u62a4\u4e4b\u540e\uff0c\u5b83\u7684\u5916\u5f62\u548c\u64cd\u4f5c\u6a21\u5f0f\u53d1\u751f\u4e86\u8fdb\u4e00\u6b65\u53d8\u5316\u3002",
-      "output": "2015",
-      "durable": "475",
-      "Armor": "144",
-      "fire": "116",
-      "Antiriot": "770",
-      "parts": [
-        {
-          "position": "\u8eaf\u5e72",
-          "aircraftWeight": "360",
-          "maxHp": "13206",
-          "Armor": "1412",
-          "Hit": null,
-          "Dodge": null,
-          "Antiriot": "4472"
-        },
-        {
-          "position": "\u5de6\u81c2",
-          "aircraftWeight": "185",
-          "maxHp": "5755",
-          "Armor": "941",
-          "Hit": "1852",
-          "Dodge": null,
-          "Antiriot": null
-        },
-        {
-          "position": "\u53f3\u81c2",
-          "aircraftWeight": "185",
-          "maxHp": "5755",
-          "Armor": "941",
-          "Hit": "1852",
-          "Dodge": null,
-          "Antiriot": null
-        },
-        {
-          "position": "\u817f\u90e8",
-          "aircraftWeight": "235",
-          "maxHp": "9258",
-          "Armor": "941",
-          "Hit": null,
-          "Dodge": "3287",
-          "Antiriot": null
-        }
-      ],
-      "manjiFirepower": "1137",
-      "modules": [
-        {
-          "_id": {
-            "timestamp": 1759054250,
-            "date": 1759054250000
-          },
-          "ID": "30488",
-          "name": "\u9f99\u5a01\u00b7\u65e0\u62d8",
-          "SpecificEffects": "\u79fb\u52a8\u65f6[\u65e0\u89c6\u5355\u4f4d\u963b\u6321]\uff1b\u5f53[\u6218\u90e8\u6e21]\u9a7e\u9a76\u6574\u5957[\u8f89\u9f99]\u65f6\uff0c\u79fb\u52a8\u529b<color=#F74848>+1</color>\uff0c\u673a\u5175\u79fb\u52a8\u65b9\u5f0f\u53d8\u4e3a\u6f02\u6d6e\uff0c\u53ef\u7ffb\u8d8a\u4f4e\u969c\u788d",
-          "BufCarried": "304881/304871",
-          "SkillIcon": "Icon_skill_passive_5123",
-          "icon": "Icon_skill_passive_5123",
-          "Status": 1,
-          "weight": 776,
-          "id": "30482",
-          "level": 2
-        },
-        {
-          "_id": {
-            "timestamp": 1759054250,
-            "date": 1759054250000
-          },
-          "ID": "30482",
-          "name": "\u9f99\u5a01\u00b7\u542f\u660e",
-          "SpecificEffects": "\u5c55\u5f00\u5149\u73af\uff0c\u4f7f\u5468\u56f4<color=#F74848>3</color>\u683c\u8303\u56f4\u5185\u7684\u53cb\u519b\u4f24\u5bb3\u63d0\u5347<color=#F74848>3%</color>\uff0c\u82e5\u9a7e\u9a76\u8005\u662f[\u6218\u90e8\u6e21]\uff0c\u5219\u6548\u679c\u7ffb\u500d",
-          "BufCarried": "304821/304822",
-          "SkillIcon": "Icon_skill_passive_1172",
-          "icon": "Icon_skill_passive_1172",
-          "Status": 1,
-          "weight": 770,
-          "id": "30481",
-          "level": 2
-        },
-        {
-          "_id": {
-            "timestamp": 1759054250,
-            "date": 1759054250000
-          },
-          "ID": "30486",
-          "name": "\u9f99\u5a01\u00b7\u626c\u950b",
-          "SpecificEffects": "\u5f53\u524d\u90e8\u4f4d\u65e0\u6cd5\u88c5\u5907\u76fe\u724c\u6b66\u5668\uff1b\u88c5\u5907\u5176\u4ed6\u683c\u6597\u6b66\u5668\u65f6\uff0c\u4f24\u5bb3\u63d0\u5347<color=#F74848>5%</color>\uff0c\u4e0e\u9996\u9886\u5bf9\u6218\u65f6\u6548\u679c\u7ffb\u500d",
-          "BufCarried": "304861/304851",
-          "SkillIcon": "Icon_skill_passive_1173",
-          "icon": "Icon_skill_passive_1173",
-          "Status": 1,
-          "weight": 774,
-          "id": "30484",
-          "level": 2
-        },
-        {
-          "_id": {
-            "timestamp": 1759054248,
-            "date": 1759054248000
-          },
-          "ID": "20574",
-          "name": "\u52c7\u6c14\u6838\u5fc3",
-          "SpecificEffects": "\u4e3b\u52a8\u653b\u51fb\u65f6\uff0c\u4f24\u5bb3\u63d0\u5347<color=#F74848>15%</color>\uff0c\u4e0e\u9996\u9886\u4e3b\u52a8\u653b\u51fb\u5bf9\u6218\u65f6\u6548\u679c\u7ffb\u500d",
-          "BufCarried": "205741/205742/205700",
-          "SkillIcon": "Icon_skill_passive_1132",
-          "icon": "Icon_skill_passive_1132",
-          "Status": 1,
-          "weight": 350,
-          "id": "2057",
-          "level": 4
-        },
-        {
-          "_id": {
-            "timestamp": 1759054250,
-            "date": 1759054250000
-          },
-          "ID": "30478",
-          "name": "\u76c8\u8f89\u6a21\u7ec4",
-          "SpecificEffects": "\u81ea\u8eab\u6bcf\u643a\u5e26<color=#F74848>1</color>AP\uff0c\u4f24\u5bb3\u63d0\u5347<color=#F74848>3%</color>\uff0c\u6700\u591a\u63d0\u5347<color=#F74848>24%</color>;\n\u4e3b\u52a8\u653b\u51fb\u5bf9\u6218\u65f6\uff0c\u82e5\u4f7f\u7528\u4e86<color=#F74848>6</color>AP\u53ca\u4ee5\u4e0a\u7684\u6280\u80fd\uff0c\u672c\u6b21\u653b\u51fb\u65e0\u6cd5\u88ab\u95ea\u907f\u3001<buf ID=900023>[\u53cd\u51fb\u5148\u624b]</buf>\u548c<buf ID=900013>[\u8b66\u6212\u5c04\u51fb]</buf>\uff0c\u5e76\u4e14\u547d\u4e2d\u65f6\u5fc5\u5b9a\u66b4\u51fb",
-          "BufCarried": "304781/304782",
-          "SkillIcon": "Icon_entry_10098",
-          "icon": "Icon_entry_10098",
-          "Status": 1,
-          "weight": 768,
-          "id": "3047",
-          "level": 8
-        },
-        {
-          "_id": {
-            "timestamp": 1759054250,
-            "date": 1759054250000
-          },
-          "ID": "30484",
-          "name": "\u9f99\u5a01\u00b7\u5b88\u5fa1",
-          "SpecificEffects": "\u5f53\u524d\u90e8\u4f4d\u88c5\u5907\u76fe\u724c\u7c7b\u6b66\u5668\u65f6\uff0c\u906d\u53d7\u4f24\u5bb3\u964d\u4f4e<color=#F74848>5%</color>\uff0c\u4e0e\u9996\u9886\u5bf9\u6218\u65f6\u6548\u679c\u7ffb\u500d",
-          "BufCarried": "304841/304831",
-          "SkillIcon": "Icon_skill_passive_2117",
-          "icon": "Icon_skill_passive_2117",
-          "Status": 1,
-          "weight": 772,
-          "id": "30483",
-          "level": 2
-        },
-        {
-          "_id": {
-            "timestamp": 1719910772,
-            "date": 1719910772000
-          },
-          "ID": "40274",
-          "name": "\u706b\u529b\u6a21\u7ec4",
-          "SpecificEffects": "\u706b\u529b\u503c\u63d0\u5347<color=#F74848>10%</color>",
-          "BufCarried": "402741",
-          "SkillIcon": "Icon_skill_passive_1126",
-          "icon": "Icon_skill_passive_1126",
-          "Status": 1,
-          "weight": 1065,
-          "id": "4027",
-          "level": 4
-        }
-      ],
-      "dispatchGroup": "InnovativE",
-      "dispatchVersion": "3.2",
       "version": "1.0",
       "enTranslation": false
     },

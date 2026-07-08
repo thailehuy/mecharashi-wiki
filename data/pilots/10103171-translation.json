@@ -46,6 +46,7 @@
     "101807": {
       "name": "Courage",
       "describe": "",
+      "resource": "PP",
       "SpecificEffects": "Starting from <color=#F74848>2nd</color> turn, at the start of action, if AP is less than or equal to <color=#F74848>4</color>, consumes <color=#F74848>1</color> PP to recovers <color=#F74848>3</color> AP. Can gains maximum <color=#F74848>2</color> PP per attack."
     },
     "101808": {
@@ -54,6 +55,16 @@
       "SpecificEffects": ""
     }
   },
+  "hiddenSkills": [
+    {
+      "name": "Light Dragon - Phoenix Blade",
+      "icon": "Icon_skill_main_9601",
+      "type": "EquipmentSkill",
+      "Ap": "3",
+      "CD": "0",
+      "describe": "Uses an Alter-Blade to attack a target, dealing <color=#F74848>1.6x</color> DMG. This attack always hits the part with highest HP."
+    }
+  ],
   "neuralPassives": {
     "100011": {
       "name": "Mobile Warfare 2",

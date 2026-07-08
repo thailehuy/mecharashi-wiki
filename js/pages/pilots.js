@@ -326,6 +326,10 @@ Pages.pilots = {
           ? '<span class="skill-type-badge skill-type-code">Code</span><span class="skill-type-badge skill-type-attack">Attack</span>'
           : '<span class="skill-type-badge ' + typeCls + '">' + typeLabel + '</span>';
 
+      if (sk.resource === 'PP') {
+        typeBadges += '<span class="skill-type-badge skill-type-pp">PP</span>';
+      }
+
       return (
         '<div class="skill-card">' +
           '<div class="skill-header">' +
