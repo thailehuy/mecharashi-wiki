@@ -1,1 +1,194 @@
-{"data":{"data":[{"ID":"10070102","name":"Ambusher","position":"Body","type":"Light","quality":"SR","aircraftWeight":"260","durable":"248","Armor":"36","fire":"92","output":"1320","Antiriot":"655","ModuleCarried":[{"_id":{"timestamp":1750678044,"date":1750678044000},"ID":"10034","name":"Mini-PC - Sniper","SpecificEffects":"When attacking with a Ranged Weapon, there is a <color=#F74848>70%</color> chance to trigger: DMG <color=#F74848>+15%</color>.","BufCarried":"100341","SkillIcon":"Icon_entry_10033","icon":"Icon_entry_10033","Status":1,"weight":80,"lang":"en","id":"1003","level":4}],"icon":"Icon_mecha_wap1007","introduce":"RT-79S Ambusher\nThis ranged model is a light ST developed by Katana and was the first commercial model released by the company.\nIt was specialized for long-range attacks and equipped with a complete set of automatic targeting devices, providing practical assistance to the armored forces of the UNCS.\nDue to Katana's ability to customize upgrades, this ST has gained a positive reputation on the market.","mechaIcon":"Icon_wap1007_1","lihuiIcon":"icon_lihui_wap1007","Status":1,"weight":4,"lang":"en","manji":{"name":"Ambusher","durable":"2253","Armor":"167","fire":"428","output":"1320","Antiriot":"2073","Interface":"Connector I","ModuleCarried":[{"_id":{"timestamp":1750678044,"date":1750678044000},"ID":"10034","name":"Mini-PC - Sniper","SpecificEffects":"When attacking with a Ranged Weapon, there is a <color=#F74848>70%</color> chance to trigger: DMG <color=#F74848>+15%</color>.","BufCarried":"100341","SkillIcon":"Icon_entry_10033","icon":"Icon_entry_10033","Status":1,"weight":80,"lang":"en","id":"1003","level":4},{"_id":{"timestamp":1750678046,"date":1750678046000},"ID":"30162","name":"Flawless Mod","SpecificEffects":"When HP is full, DMG <color=#F74848>+2%</color> and DMG Taken <color=#F74848>-2%</color>.","BufCarried":"301621/301623","SkillIcon":"Icon_entry_10058","icon":"Icon_entry_10058","Status":1,"weight":334,"lang":"en","id":"3016","level":2},{"_id":{"timestamp":1750678046,"date":1750678046000},"ID":"40024","name":"Crit Rate Mod","SpecificEffects":"Crit Rate <color=#F74848>+10%</color>.","BufCarried":"400241","SkillIcon":"Icon_entry_40021","icon":"Icon_entry_40021","Status":1,"weight":416,"lang":"en","id":"4002","level":4}],"Status":1,"weight":4,"lang":"en"}},{"ID":"10070202","name":"Ambusher","position":"L-Arm","type":"Light","quality":"SR","aircraftWeight":"70","durable":"106","Armor":"24","fire":"92","Hit":"289","ModuleCarried":"1003:1/","introduce":"RT-79S Ambusher\nThis ranged model is a light ST developed by Katana and was the first commercial model released by the company.\nIt was specialized for long-range attacks and equipped with a complete set of automatic targeting devices, providing practical assistance to the armored forces of the UNCS.\nDue to Katana's ability to customize upgrades, this ST has gained a positive reputation on the market.","mechaIcon":"Icon_wap1007_2","Status":1,"weight":5,"lang":"en","manji":{"name":"Ambusher","durable":"963","Armor":"111","fire":"428","Hit":"914","Interface":"Connector II","ModuleCarried":"1003:1/4002:1/","Status":1,"weight":5,"lang":"en"}},{"ID":"10070302","name":"Ambusher","position":"R-Arm","type":"Light","quality":"SR","aircraftWeight":"70","durable":"106","Armor":"24","fire":"92","Hit":"289","ModuleCarried":"1003:1/","introduce":"RT-79S Ambusher\nThis ranged model is a light ST developed by Katana and was the first commercial model released by the company.\nIt was specialized for long-range attacks and equipped with a complete set of automatic targeting devices, providing practical assistance to the armored forces of the UNCS.\nDue to Katana's ability to customize upgrades, this ST has gained a positive reputation on the market.","mechaIcon":"Icon_wap1007_3","Status":1,"weight":6,"lang":"en","manji":{"name":"Ambusher","durable":"963","Armor":"111","fire":"428","Hit":"914","Interface":"Connector II","ModuleCarried":"1003:1/4002:1/","Status":1,"weight":6,"lang":"en"}},{"ID":"10070402","name":"Ambusher","position":"Legs","type":"Light","quality":"SR","aircraftWeight":"145","durable":"178","Armor":"24","fire":"92","Dodge":"766","move":"4000","ModuleCarried":"1003:1/","introduce":"RT-79S Ambusher\nThis ranged model is a light ST developed by Katana and was the first commercial model released by the company.\nIt was specialized for long-range attacks and equipped with a complete set of automatic targeting devices, providing practical assistance to the armored forces of the UNCS.\nDue to Katana's ability to customize upgrades, this ST has gained a positive reputation on the market.","mechaIcon":"Icon_wap1007_4","Status":1,"weight":7,"lang":"en","manji":{"name":"Ambusher","durable":"1617","Armor":"111","fire":"428","Dodge":"2424","move":"4000","Interface":"Connector I","ModuleCarried":"1003:1/3016:1/4002:1/","Status":1,"weight":7,"lang":"en"}}],"now":"2026-06-24 19:16:34"},"status":1,"switch":null,"info":0}
+{
+  "data": {
+    "data": [
+      {
+        "ID": "10070102",
+        "name": "刃齿虎",
+        "position": "躯干",
+        "type": "Light",
+        "quality": "SR",
+        "aircraftWeight": "260",
+        "durable": "248",
+        "Armor": "36",
+        "fire": "92",
+        "output": "1320",
+        "Antiriot": "655",
+        "ModuleCarried": [
+          {
+            "_id": {
+              "timestamp": 1696936929,
+              "date": 1696936929000
+            },
+            "ID": "10034",
+            "name": "狙击型微电脑",
+            "SpecificEffects": "使用射击武器攻击时有<color=#F74848>70%</color>的概率发动，伤害提升<color=#F74848>15%</color>",
+            "BufCarried": "100341",
+            "SkillIcon": "Icon_entry_10033",
+            "icon": "Icon_entry_10033",
+            "Status": 1,
+            "weight": 86,
+            "id": "1003",
+            "level": 4
+          }
+        ],
+        "icon": "Icon_mecha_wap1007",
+        "introduce": "RT-79S 刃齿虎\n由KATANA开发的轻型狙击机兵，也是KATANA公司推出的第一款商业机型。\n根据北陆联合的需求特化了远程打击性能，配备了全套的自动瞄准装置，为北陆联合的装甲部队提供了有效的支援。\n由于KATANA公司根据不同客户的需求进行定制化改进，使该机在机兵市场上有了良好的声誉。",
+        "mechaIcon": "Icon_wap1007_1",
+        "lihuiIcon": "icon_lihui_wap1007",
+        "Status": 1,
+        "weight": 4,
+        "manji": {
+          "name": "刃齿虎",
+          "durable": "7234",
+          "Armor": "370",
+          "fire": "946",
+          "output": "1320",
+          "Antiriot": "3742",
+          "Interface": "Ⅰ型接口",
+          "ModuleCarried": [
+            {
+              "_id": {
+                "timestamp": 1696936929,
+                "date": 1696936929000
+              },
+              "ID": "10034",
+              "name": "狙击型微电脑",
+              "SpecificEffects": "使用射击武器攻击时有<color=#F74848>70%</color>的概率发动，伤害提升<color=#F74848>15%</color>",
+              "BufCarried": "100341",
+              "SkillIcon": "Icon_entry_10033",
+              "icon": "Icon_entry_10033",
+              "Status": 1,
+              "weight": 86,
+              "id": "1003",
+              "level": 4
+            },
+            {
+              "_id": {
+                "timestamp": 1696936930,
+                "date": 1696936930000
+              },
+              "ID": "30162",
+              "name": "整备模组",
+              "SpecificEffects": "自身的耐久值全满时，伤害提升<color=#F74848>2%</color>，遭受伤害降低<color=#F74848>2%</color>",
+              "BufCarried": "301621/301623",
+              "SkillIcon": "Icon_entry_10058",
+              "icon": "Icon_entry_10058",
+              "Status": 1,
+              "weight": 522,
+              "id": "3016",
+              "level": 2
+            },
+            {
+              "_id": {
+                "timestamp": 1696936931,
+                "date": 1696936931000
+              },
+              "ID": "40024",
+              "name": "暴击模组",
+              "SpecificEffects": "暴击率提升<color=#F74848>10%</color>",
+              "BufCarried": "400241",
+              "SkillIcon": "Icon_entry_40021",
+              "icon": "Icon_entry_40021",
+              "Status": 1,
+              "weight": 868,
+              "id": "4002",
+              "level": 4
+            }
+          ],
+          "Status": 1,
+          "weight": 4
+        }
+      },
+      {
+        "ID": "10070202",
+        "name": "刃齿虎",
+        "position": "左臂",
+        "type": "Light",
+        "quality": "SR",
+        "aircraftWeight": "70",
+        "durable": "106",
+        "Armor": "24",
+        "fire": "92",
+        "Hit": "289",
+        "ModuleCarried": "1003:1/",
+        "introduce": "RT-79S 刃齿虎\n由KATANA开发的轻型狙击机兵，也是KATANA公司推出的第一款商业机型。\n根据北陆联合的需求特化了远程打击性能，配备了全套的自动瞄准装置，为北陆联合的装甲部队提供了有效的支援。\n由于KATANA公司根据不同客户的需求进行定制化改进，使该机在机兵市场上有了良好的声誉。",
+        "mechaIcon": "Icon_wap1007_2",
+        "Status": 1,
+        "weight": 5,
+        "manji": {
+          "name": "刃齿虎",
+          "durable": "3092",
+          "Armor": "246",
+          "fire": "946",
+          "Hit": "1651",
+          "Interface": "Ⅱ型接口",
+          "ModuleCarried": "1003:1/4002:1/",
+          "Status": 1,
+          "weight": 5
+        }
+      },
+      {
+        "ID": "10070302",
+        "name": "刃齿虎",
+        "position": "右臂",
+        "type": "Light",
+        "quality": "SR",
+        "aircraftWeight": "70",
+        "durable": "106",
+        "Armor": "24",
+        "fire": "92",
+        "Hit": "289",
+        "ModuleCarried": "1003:1/",
+        "introduce": "RT-79S 刃齿虎\n由KATANA开发的轻型狙击机兵，也是KATANA公司推出的第一款商业机型。\n根据北陆联合的需求特化了远程打击性能，配备了全套的自动瞄准装置，为北陆联合的装甲部队提供了有效的支援。\n由于KATANA公司根据不同客户的需求进行定制化改进，使该机在机兵市场上有了良好的声誉。",
+        "mechaIcon": "Icon_wap1007_3",
+        "Status": 1,
+        "weight": 6,
+        "manji": {
+          "name": "刃齿虎",
+          "durable": "3092",
+          "Armor": "246",
+          "fire": "946",
+          "Hit": "1651",
+          "Interface": "Ⅱ型接口",
+          "ModuleCarried": "1003:1/4002:1/",
+          "Status": 1,
+          "weight": 6
+        }
+      },
+      {
+        "ID": "10070402",
+        "name": "刃齿虎",
+        "position": "腿部",
+        "type": "Light",
+        "quality": "SR",
+        "aircraftWeight": "145",
+        "durable": "178",
+        "Armor": "24",
+        "fire": "92",
+        "Dodge": "766",
+        "move": "4000",
+        "ModuleCarried": "1003:1/",
+        "introduce": "RT-79S 刃齿虎\n由KATANA开发的轻型狙击机兵，也是KATANA公司推出的第一款商业机型。\n根据北陆联合的需求特化了远程打击性能，配备了全套的自动瞄准装置，为北陆联合的装甲部队提供了有效的支援。\n由于KATANA公司根据不同客户的需求进行定制化改进，使该机在机兵市场上有了良好的声誉。",
+        "mechaIcon": "Icon_wap1007_4",
+        "Status": 1,
+        "weight": 7,
+        "manji": {
+          "name": "刃齿虎",
+          "durable": "5192",
+          "Armor": "246",
+          "fire": "946",
+          "Dodge": "4376",
+          "move": "4000",
+          "Interface": "Ⅰ型接口",
+          "ModuleCarried": "1003:1/3016:1/4002:1/",
+          "Status": 1,
+          "weight": 7
+        }
+      }
+    ],
+    "now": "2026-07-08 08:25:29"
+  },
+  "status": 1,
+  "switch": null,
+  "info": 0
+}

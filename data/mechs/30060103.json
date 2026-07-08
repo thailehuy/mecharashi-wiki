@@ -1,1 +1,230 @@
-{"data":{"data":[{"ID":"30060103","name":"Heracles","position":"Body","type":"Heavy","quality":"SSR","aircraftWeight":"380","durable":"428","Armor":"144","fire":"109","output":"1835","Antiriot":"770","Interface":"Connector I","ModuleCarried":[{"_id":{"timestamp":1750678045,"date":1750678045000},"ID":"30082","name":"Crusher Mod","SpecificEffects":"When attacking a target that carries debuffs, DMG <color=#F74848>+4%</color>.","BufCarried":"300821","SkillIcon":"Icon_entry_10054","icon":"Icon_entry_10054","Status":1,"weight":270,"lang":"en","id":"3008","level":2},{"_id":{"timestamp":1750678045,"date":1750678045000},"ID":"20214","name":"ProxBot Jammer","SpecificEffects":"Activate the Aura: Inflicts a Dodge Rate <color=#F74848>-12%</color> on enemies within the adjacent <color=#F74848>2</color>-tile area.","BufCarried":"202141","SkillIcon":"Icon_entry_10042","icon":"Icon_entry_10042","Status":1,"weight":196,"lang":"en","id":"2021","level":4},{"_id":{"timestamp":1750678047,"date":1750678047000},"ID":"40072","name":"DMG Taken Mod","SpecificEffects":"DMG Taken <color=#F74848>-5%</color>.","BufCarried":"400721","SkillIcon":"Icon_entry_40071","icon":"Icon_entry_40071","Status":1,"weight":454,"lang":"en","id":"4007","level":2}],"icon":"Icon_mecha_wap3006","introduce":"KX-075 Heracles\nMade by Kamadar, this heavy ST is a modified version of the first high-end SL to utilize Arashium alloy.\nModifications, intended to enhance military effectiveness, include increased load capacity and high-power output characteristics. A miniaturized vibration jammer has been installed on this ST to suppress target vibration, reducing the enemy's dodge rate.","mechaIcon":"Icon_wap3006_1","lihuiIcon":"icon_lihui_wap3006","Status":1,"weight":124,"lang":"en","manji":{"name":"Heracles","durable":"3707","Armor":"639","fire":"484","output":"1835","Antiriot":"2477","Interface":"Connector II","ModuleCarried":[{"_id":{"timestamp":1750678045,"date":1750678045000},"ID":"30088","name":"Crusher Mod","SpecificEffects":"When attacking a target that carries debuffs, DMG <color=#F74848>+14%</color>.\nWhen inflicting debuffs, the duration <color=#F74848>+1</color>.","BufCarried":"300881/300883","SkillIcon":"Icon_entry_10054","icon":"Icon_entry_10054","Status":1,"weight":276,"lang":"en","id":"3008","level":8},{"_id":{"timestamp":1750678045,"date":1750678045000},"ID":"20214","name":"ProxBot Jammer","SpecificEffects":"Activate the Aura: Inflicts a Dodge Rate <color=#F74848>-12%</color> on enemies within the adjacent <color=#F74848>2</color>-tile area.","BufCarried":"202141","SkillIcon":"Icon_entry_10042","icon":"Icon_entry_10042","Status":1,"weight":196,"lang":"en","id":"2021","level":4},{"_id":{"timestamp":1750678047,"date":1750678047000},"ID":"40074","name":"DMG Taken Mod","SpecificEffects":"DMG Taken <color=#F74848>-10%</color>.","BufCarried":"400741","SkillIcon":"Icon_entry_40071","icon":"Icon_entry_40071","Status":1,"weight":456,"lang":"en","id":"4007","level":4}],"Status":1,"weight":124,"lang":"en"}},{"ID":"30060203","name":"Heracles","position":"L-Arm","type":"Heavy","quality":"SSR","aircraftWeight":"140","durable":"172","Armor":"96","fire":"109","Hit":"319","Interface":"Connector I","ModuleCarried":"2021:1/4007:1/","introduce":"KX-075 Heracles\nMade by Kamadar, this heavy ST is a modified version of the first high-end SL to utilize Arashium alloy.\nModifications, intended to enhance military effectiveness, include increased load capacity and high-power output characteristics. A miniaturized vibration jammer has been installed on this ST to suppress target vibration, reducing the enemy's dodge rate.","mechaIcon":"Icon_wap3006_2","Status":1,"weight":125,"lang":"en","manji":{"name":"Heracles","durable":"1489","Armor":"426","fire":"484","Hit":"1026","Interface":"Connector II","ModuleCarried":"2021:1/3008:2/4007:1/","Status":1,"weight":125,"lang":"en"}},{"ID":"30060303","name":"Heracles","position":"R-Arm","type":"Heavy","quality":"SSR","aircraftWeight":"140","durable":"172","Armor":"96","fire":"109","Hit":"319","Interface":"Connector I","ModuleCarried":"2021:1/4007:1/","introduce":"KX-075 Heracles\nMade by Kamadar, this heavy ST is a modified version of the first high-end SL to utilize Arashium alloy.\nModifications, intended to enhance military effectiveness, include increased load capacity and high-power output characteristics. A miniaturized vibration jammer has been installed on this ST to suppress target vibration, reducing the enemy's dodge rate.","mechaIcon":"Icon_wap3006_3","Status":1,"weight":126,"lang":"en","manji":{"name":"Heracles","durable":"1489","Armor":"426","fire":"484","Hit":"1026","Interface":"Connector II","ModuleCarried":"2021:1/3008:2/4007:1/","Status":1,"weight":126,"lang":"en"}},{"ID":"30060403","name":"Heracles","position":"Legs","type":"Heavy","quality":"SSR","aircraftWeight":"225","durable":"289","Armor":"96","fire":"109","Dodge":"566","move":"3000","Interface":"Connector I","ModuleCarried":"2021:1/3008:1/","introduce":"KX-075 Heracles\nMade by Kamadar, this heavy ST is a modified version of the first high-end SL to utilize Arashium alloy.\nModifications, intended to enhance military effectiveness, include increased load capacity and high-power output characteristics. A miniaturized vibration jammer has been installed on this ST to suppress target vibration, reducing the enemy's dodge rate.","mechaIcon":"Icon_wap3006_4","Status":1,"weight":127,"lang":"en","manji":{"name":"Heracles","durable":"2503","Armor":"426","fire":"484","Dodge":"1821","move":"3000","Interface":"Connector II","ModuleCarried":"2021:1/3008:2/4007:1/","Status":1,"weight":127,"lang":"en"}}],"now":"2026-06-24 19:16:37"},"status":1,"switch":null,"info":0}
+{
+  "data": {
+    "data": [
+      {
+        "ID": "30060103",
+        "name": "赫拉克勒斯",
+        "position": "躯干",
+        "type": "Heavy",
+        "quality": "SSR",
+        "aircraftWeight": "380",
+        "durable": "428",
+        "Armor": "144",
+        "fire": "109",
+        "output": "1835",
+        "Antiriot": "770",
+        "Interface": "Ⅰ型接口",
+        "ModuleCarried": [
+          {
+            "_id": {
+              "timestamp": 1696936930,
+              "date": 1696936930000
+            },
+            "ID": "30082",
+            "name": "破敌模组",
+            "SpecificEffects": "主动攻击时，对携带减益效果的目标伤害提升<color=#F74848>4%</color>",
+            "BufCarried": "300821/300823",
+            "SkillIcon": "Icon_entry_10054",
+            "icon": "Icon_entry_10054",
+            "Status": 1,
+            "weight": 458,
+            "id": "3008",
+            "level": 2
+          },
+          {
+            "_id": {
+              "timestamp": 1696936930,
+              "date": 1696936930000
+            },
+            "ID": "20214",
+            "name": "强波干扰仪",
+            "SpecificEffects": "展开光环，使周围<color=#F74848>2</color>格范围内的敌机回避率下降<color=#F74848>12%</color>",
+            "BufCarried": "202141",
+            "SkillIcon": "Icon_entry_10042",
+            "icon": "Icon_entry_10042",
+            "Status": 1,
+            "weight": 202,
+            "id": "2021",
+            "level": 4
+          },
+          {
+            "_id": {
+              "timestamp": 1696936931,
+              "date": 1696936931000
+            },
+            "ID": "40072",
+            "name": "承伤模组",
+            "SpecificEffects": "遭受伤害降低<color=#F74848>5%</color>",
+            "BufCarried": "400721",
+            "SkillIcon": "Icon_entry_40071",
+            "icon": "Icon_entry_40071",
+            "Status": 1,
+            "weight": 906,
+            "id": "4007",
+            "level": 2
+          }
+        ],
+        "icon": "Icon_mecha_wap3006",
+        "introduce": "KX-075 赫拉克勒斯\n由卡玛达制造的重型机兵，从首批运用了钢岚合金的高端工程机改装而来。\n军用化改良后，其高载重、高出力的机兵特性在战争场景得到了完美发挥。机体上还安装了小型化的振波干扰装置，能够压制机体周身目标的振波传输，达到降低敌机回避率的目的。",
+        "mechaIcon": "Icon_wap3006_1",
+        "lihuiIcon": "icon_lihui_wap3006",
+        "Status": 1,
+        "weight": 228,
+        "manji": {
+          "name": "赫拉克勒斯",
+          "durable": "11899",
+          "Armor": "1412",
+          "fire": "1068",
+          "output": "1835",
+          "Antiriot": "4472",
+          "Interface": "Ⅱ型接口",
+          "ModuleCarried": [
+            {
+              "_id": {
+                "timestamp": 1696936930,
+                "date": 1696936930000
+              },
+              "ID": "30088",
+              "name": "破敌模组",
+              "SpecificEffects": "主动攻击时，对携带减益效果的目标伤害提升<color=#F74848>18%</color>；\n施加减益效果的持续回合<color=#F74848>+1</color>",
+              "BufCarried": "300881/300883/300884",
+              "SkillIcon": "Icon_entry_10054",
+              "icon": "Icon_entry_10054",
+              "Status": 1,
+              "weight": 464,
+              "id": "3008",
+              "level": 8
+            },
+            {
+              "_id": {
+                "timestamp": 1696936930,
+                "date": 1696936930000
+              },
+              "ID": "20214",
+              "name": "强波干扰仪",
+              "SpecificEffects": "展开光环，使周围<color=#F74848>2</color>格范围内的敌机回避率下降<color=#F74848>12%</color>",
+              "BufCarried": "202141",
+              "SkillIcon": "Icon_entry_10042",
+              "icon": "Icon_entry_10042",
+              "Status": 1,
+              "weight": 202,
+              "id": "2021",
+              "level": 4
+            },
+            {
+              "_id": {
+                "timestamp": 1696936931,
+                "date": 1696936931000
+              },
+              "ID": "40074",
+              "name": "承伤模组",
+              "SpecificEffects": "遭受伤害降低<color=#F74848>10%</color>",
+              "BufCarried": "400741",
+              "SkillIcon": "Icon_entry_40071",
+              "icon": "Icon_entry_40071",
+              "Status": 1,
+              "weight": 908,
+              "id": "4007",
+              "level": 4
+            }
+          ],
+          "Status": 1,
+          "weight": 228
+        }
+      },
+      {
+        "ID": "30060203",
+        "name": "赫拉克勒斯",
+        "position": "左臂",
+        "type": "Heavy",
+        "quality": "SSR",
+        "aircraftWeight": "140",
+        "durable": "172",
+        "Armor": "96",
+        "fire": "109",
+        "Hit": "319",
+        "Interface": "Ⅰ型接口",
+        "ModuleCarried": "2021:1/4007:1/",
+        "introduce": "KX-075 赫拉克勒斯\n由卡玛达制造的重型机兵，从首批运用了钢岚合金的高端工程机改装而来。\n军用化改良后，其高载重、高出力的机兵特性在战争场景得到了完美发挥。机体上还安装了小型化的振波干扰装置，能够压制机体周身目标的振波传输，达到降低敌机回避率的目的。",
+        "mechaIcon": "Icon_wap3006_2",
+        "Status": 1,
+        "weight": 229,
+        "manji": {
+          "name": "赫拉克勒斯",
+          "durable": "4782",
+          "Armor": "941",
+          "fire": "1068",
+          "Hit": "1852",
+          "Interface": "Ⅱ型接口",
+          "ModuleCarried": "2021:1/3008:2/4007:1/",
+          "Status": 1,
+          "weight": 229
+        }
+      },
+      {
+        "ID": "30060303",
+        "name": "赫拉克勒斯",
+        "position": "右臂",
+        "type": "Heavy",
+        "quality": "SSR",
+        "aircraftWeight": "140",
+        "durable": "172",
+        "Armor": "96",
+        "fire": "109",
+        "Hit": "319",
+        "Interface": "Ⅰ型接口",
+        "ModuleCarried": "2021:1/4007:1/",
+        "introduce": "KX-075 赫拉克勒斯\n由卡玛达制造的重型机兵，从首批运用了钢岚合金的高端工程机改装而来。\n军用化改良后，其高载重、高出力的机兵特性在战争场景得到了完美发挥。机体上还安装了小型化的振波干扰装置，能够压制机体周身目标的振波传输，达到降低敌机回避率的目的。",
+        "mechaIcon": "Icon_wap3006_3",
+        "Status": 1,
+        "weight": 230,
+        "manji": {
+          "name": "赫拉克勒斯",
+          "durable": "4782",
+          "Armor": "941",
+          "fire": "1068",
+          "Hit": "1852",
+          "Interface": "Ⅱ型接口",
+          "ModuleCarried": "2021:1/3008:2/4007:1/",
+          "Status": 1,
+          "weight": 230
+        }
+      },
+      {
+        "ID": "30060403",
+        "name": "赫拉克勒斯",
+        "position": "腿部",
+        "type": "Heavy",
+        "quality": "SSR",
+        "aircraftWeight": "225",
+        "durable": "289",
+        "Armor": "96",
+        "fire": "109",
+        "Dodge": "566",
+        "move": "3000",
+        "Interface": "Ⅰ型接口",
+        "ModuleCarried": "2021:1/3008:1/",
+        "introduce": "KX-075 赫拉克勒斯\n由卡玛达制造的重型机兵，从首批运用了钢岚合金的高端工程机改装而来。\n军用化改良后，其高载重、高出力的机兵特性在战争场景得到了完美发挥。机体上还安装了小型化的振波干扰装置，能够压制机体周身目标的振波传输，达到降低敌机回避率的目的。",
+        "mechaIcon": "Icon_wap3006_4",
+        "Status": 1,
+        "weight": 231,
+        "manji": {
+          "name": "赫拉克勒斯",
+          "durable": "8035",
+          "Armor": "941",
+          "fire": "1068",
+          "Dodge": "3287",
+          "move": "3000",
+          "Interface": "Ⅱ型接口",
+          "ModuleCarried": "2021:1/3008:2/4007:1/",
+          "Status": 1,
+          "weight": 231
+        }
+      }
+    ],
+    "now": "2026-07-08 08:26:03"
+  },
+  "status": 1,
+  "switch": null,
+  "info": 0
+}

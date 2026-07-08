@@ -1,1 +1,194 @@
-{"data":{"data":[{"ID":"30120102","name":"Gamesaurs","position":"Body","type":"Heavy","quality":"SR","aircraftWeight":"390","durable":"305","Armor":"108","fire":"86","output":"1870","Antiriot":"655","ModuleCarried":[{"_id":{"timestamp":1750678044,"date":1750678044000},"ID":"10094","name":"Electronic Blocker","SpecificEffects":"When attacking, there is a <color=#F74848>70%</color> chance to trigger: target's Dodge Rate <color=#F74848>-12%</color>.","BufCarried":"100941","SkillIcon":"Icon_entry_10016","icon":"Icon_entry_10016","Status":1,"weight":104,"lang":"en","id":"1009","level":4}],"icon":"Icon_mecha_wap3012","introduce":"ASX-114 Gamesaurs\nA heavy ST developed and produced by An-Holt during the Milkhama War.\nEquipped with a large sliding monitor to enhance tracking and locking performance, it uses an ASX-114 combat core that allows it to specialize in combat with agile targets. Its head-mounted electronic jammer can launch electromagnetic pulses to interfere with enemy evasion systems while tracking their trajectory.","mechaIcon":"Icon_wap3012_1","lihuiIcon":"icon_lihui_wap3012","Status":1,"weight":140,"lang":"en","manji":{"name":"Gamesaurs","durable":"2771","Armor":"503","fire":"400","output":"1870","Antiriot":"2073","Interface":"Connector I","ModuleCarried":[{"_id":{"timestamp":1750678045,"date":1750678045000},"ID":"30082","name":"Crusher Mod","SpecificEffects":"When attacking a target that carries debuffs, DMG <color=#F74848>+4%</color>.","BufCarried":"300821","SkillIcon":"Icon_entry_10054","icon":"Icon_entry_10054","Status":1,"weight":270,"lang":"en","id":"3008","level":2},{"_id":{"timestamp":1750678047,"date":1750678047000},"ID":"40084","name":"Crit RES Mod","SpecificEffects":"Crit RES <color=#F74848>+10%</color>.","BufCarried":"400841","SkillIcon":"Icon_entry_40081","icon":"Icon_entry_40081","Status":1,"weight":464,"lang":"en","id":"4008","level":4},{"_id":{"timestamp":1750678044,"date":1750678044000},"ID":"10094","name":"Electronic Blocker","SpecificEffects":"When attacking, there is a <color=#F74848>70%</color> chance to trigger: target's Dodge Rate <color=#F74848>-12%</color>.","BufCarried":"100941","SkillIcon":"Icon_entry_10016","icon":"Icon_entry_10016","Status":1,"weight":104,"lang":"en","id":"1009","level":4}],"Status":1,"weight":140,"lang":"en"}},{"ID":"30120202","name":"Gamesaurs","position":"L-Arm","type":"Heavy","quality":"SR","aircraftWeight":"160","durable":"157","Armor":"72","fire":"86","Hit":"245","ModuleCarried":"1009:1/","introduce":"ASX-114 Gamesaurs\nA heavy ST developed and produced by An-Holt during the Milkhama War.\nEquipped with a large sliding monitor to enhance tracking and locking performance, it uses an ASX-114 combat core that allows it to specialize in combat with agile targets. Its head-mounted electronic jammer can launch electromagnetic pulses to interfere with enemy evasion systems while tracking their trajectory.","mechaIcon":"Icon_wap3012_2","Status":1,"weight":141,"lang":"en","manji":{"name":"Gamesaurs","durable":"1426","Armor":"335","fire":"400","Hit":"775","Interface":"Connector II","ModuleCarried":"1009:1/4008:1/","Status":1,"weight":141,"lang":"en"}},{"ID":"30120302","name":"Gamesaurs","position":"R-Arm","type":"Heavy","quality":"SR","aircraftWeight":"160","durable":"157","Armor":"72","fire":"86","Hit":"245","ModuleCarried":"1009:1/","introduce":"ASX-114 Gamesaurs\nA heavy ST developed and produced by An-Holt during the Milkhama War.\nEquipped with a large sliding monitor to enhance tracking and locking performance, it uses an ASX-114 combat core that allows it to specialize in combat with agile targets. Its head-mounted electronic jammer can launch electromagnetic pulses to interfere with enemy evasion systems while tracking their trajectory.","mechaIcon":"Icon_wap3012_3","Status":1,"weight":142,"lang":"en","manji":{"name":"Gamesaurs","durable":"1426","Armor":"335","fire":"400","Hit":"775","Interface":"Connector II","ModuleCarried":"1009:1/4008:1/","Status":1,"weight":142,"lang":"en"}},{"ID":"30120402","name":"Gamesaurs","position":"Legs","type":"Heavy","quality":"SR","aircraftWeight":"265","durable":"235","Armor":"72","fire":"86","Dodge":"482","move":"3000","ModuleCarried":"1009:1/","introduce":"ASX-114 Gamesaurs\nA heavy ST developed and produced by An-Holt during the Milkhama War.\nEquipped with a large sliding monitor to enhance tracking and locking performance, it uses an ASX-114 combat core that allows it to specialize in combat with agile targets. Its head-mounted electronic jammer can launch electromagnetic pulses to interfere with enemy evasion systems while tracking their trajectory.","mechaIcon":"Icon_wap3012_4","Status":1,"weight":143,"lang":"en","manji":{"name":"Gamesaurs","durable":"2135","Armor":"335","fire":"400","Dodge":"1525","move":"3000","Interface":"Connector I","ModuleCarried":"1009:1/3008:1/4008:1/","Status":1,"weight":143,"lang":"en"}}],"now":"2026-06-24 19:16:37"},"status":1,"switch":null,"info":0}
+{
+  "data": {
+    "data": [
+      {
+        "ID": "30120102",
+        "name": "鳄龟",
+        "position": "躯干",
+        "type": "Heavy",
+        "quality": "SR",
+        "aircraftWeight": "390",
+        "durable": "305",
+        "Armor": "108",
+        "fire": "86",
+        "output": "1870",
+        "Antiriot": "655",
+        "ModuleCarried": [
+          {
+            "_id": {
+              "timestamp": 1696936929,
+              "date": 1696936929000
+            },
+            "ID": "10094",
+            "name": "电子干扰器",
+            "SpecificEffects": "攻击时有<color=#F74848>70%</color>的概率发动，使目标的回避率降低<color=#F74848>12%</color>",
+            "BufCarried": "100941",
+            "SkillIcon": "Icon_entry_10016",
+            "icon": "Icon_entry_10016",
+            "Status": 1,
+            "weight": 110,
+            "id": "1009",
+            "level": 4
+          }
+        ],
+        "icon": "Icon_mecha_wap3012",
+        "introduce": "ASX-114 鳄龟\n由安赫特在米赫玛战争期间研发制造的重型机兵。\n配备了大型滑轨监视器以提升追踪锁定性能，并采用与机兵编号同名的ASX-114号战斗核心，以特化应对战场上的灵活目标。其头部加装的配套电子干扰器，能在追踪敌机运动轨迹的同时发动电磁脉冲，以干扰目标的回避系统。",
+        "mechaIcon": "Icon_wap3012_1",
+        "lihuiIcon": "icon_lihui_wap3012",
+        "Status": 1,
+        "weight": 244,
+        "manji": {
+          "name": "鳄龟",
+          "durable": "8897",
+          "Armor": "1111",
+          "fire": "884",
+          "output": "1870",
+          "Antiriot": "3742",
+          "Interface": "Ⅰ型接口",
+          "ModuleCarried": [
+            {
+              "_id": {
+                "timestamp": 1696936930,
+                "date": 1696936930000
+              },
+              "ID": "30082",
+              "name": "破敌模组",
+              "SpecificEffects": "主动攻击时，对携带减益效果的目标伤害提升<color=#F74848>4%</color>",
+              "BufCarried": "300821/300823",
+              "SkillIcon": "Icon_entry_10054",
+              "icon": "Icon_entry_10054",
+              "Status": 1,
+              "weight": 458,
+              "id": "3008",
+              "level": 2
+            },
+            {
+              "_id": {
+                "timestamp": 1696936931,
+                "date": 1696936931000
+              },
+              "ID": "40084",
+              "name": "防爆模组",
+              "SpecificEffects": "被暴击率降低<color=#F74848>10%</color>",
+              "BufCarried": "400841",
+              "SkillIcon": "Icon_entry_40081",
+              "icon": "Icon_entry_40081",
+              "Status": 1,
+              "weight": 916,
+              "id": "4008",
+              "level": 4
+            },
+            {
+              "_id": {
+                "timestamp": 1696936929,
+                "date": 1696936929000
+              },
+              "ID": "10094",
+              "name": "电子干扰器",
+              "SpecificEffects": "攻击时有<color=#F74848>70%</color>的概率发动，使目标的回避率降低<color=#F74848>12%</color>",
+              "BufCarried": "100941",
+              "SkillIcon": "Icon_entry_10016",
+              "icon": "Icon_entry_10016",
+              "Status": 1,
+              "weight": 110,
+              "id": "1009",
+              "level": 4
+            }
+          ],
+          "Status": 1,
+          "weight": 244
+        }
+      },
+      {
+        "ID": "30120202",
+        "name": "鳄龟",
+        "position": "左臂",
+        "type": "Heavy",
+        "quality": "SR",
+        "aircraftWeight": "160",
+        "durable": "157",
+        "Armor": "72",
+        "fire": "86",
+        "Hit": "245",
+        "ModuleCarried": "1009:1/",
+        "introduce": "ASX-114 鳄龟\n由安赫特在米赫玛战争期间研发制造的重型机兵。\n配备了大型滑轨监视器以提升追踪锁定性能，并采用与机兵编号同名的ASX-114号战斗核心，以特化应对战场上的灵活目标。其头部加装的配套电子干扰器，能在追踪敌机运动轨迹的同时发动电磁脉冲，以干扰目标的回避系统。",
+        "mechaIcon": "Icon_wap3012_2",
+        "Status": 1,
+        "weight": 245,
+        "manji": {
+          "name": "鳄龟",
+          "durable": "4579",
+          "Armor": "740",
+          "fire": "884",
+          "Hit": "1399",
+          "Interface": "Ⅱ型接口",
+          "ModuleCarried": "1009:1/4008:1/",
+          "Status": 1,
+          "weight": 245
+        }
+      },
+      {
+        "ID": "30120302",
+        "name": "鳄龟",
+        "position": "右臂",
+        "type": "Heavy",
+        "quality": "SR",
+        "aircraftWeight": "160",
+        "durable": "157",
+        "Armor": "72",
+        "fire": "86",
+        "Hit": "245",
+        "ModuleCarried": "1009:1/",
+        "introduce": "ASX-114 鳄龟\n由安赫特在米赫玛战争期间研发制造的重型机兵。\n配备了大型滑轨监视器以提升追踪锁定性能，并采用与机兵编号同名的ASX-114号战斗核心，以特化应对战场上的灵活目标。其头部加装的配套电子干扰器，能在追踪敌机运动轨迹的同时发动电磁脉冲，以干扰目标的回避系统。",
+        "mechaIcon": "Icon_wap3012_3",
+        "Status": 1,
+        "weight": 246,
+        "manji": {
+          "name": "鳄龟",
+          "durable": "4579",
+          "Armor": "740",
+          "fire": "884",
+          "Hit": "1399",
+          "Interface": "Ⅱ型接口",
+          "ModuleCarried": "1009:1/4008:1/",
+          "Status": 1,
+          "weight": 246
+        }
+      },
+      {
+        "ID": "30120402",
+        "name": "鳄龟",
+        "position": "腿部",
+        "type": "Heavy",
+        "quality": "SR",
+        "aircraftWeight": "265",
+        "durable": "235",
+        "Armor": "72",
+        "fire": "86",
+        "Dodge": "482",
+        "move": "3000",
+        "ModuleCarried": "1009:1/",
+        "introduce": "ASX-114 鳄龟\n由安赫特在米赫玛战争期间研发制造的重型机兵。\n配备了大型滑轨监视器以提升追踪锁定性能，并采用与机兵编号同名的ASX-114号战斗核心，以特化应对战场上的灵活目标。其头部加装的配套电子干扰器，能在追踪敌机运动轨迹的同时发动电磁脉冲，以干扰目标的回避系统。",
+        "mechaIcon": "Icon_wap3012_4",
+        "Status": 1,
+        "weight": 247,
+        "manji": {
+          "name": "鳄龟",
+          "durable": "6855",
+          "Armor": "740",
+          "fire": "884",
+          "Dodge": "2753",
+          "move": "3000",
+          "Interface": "Ⅰ型接口",
+          "ModuleCarried": "1009:1/3008:1/4008:1/",
+          "Status": 1,
+          "weight": 247
+        }
+      }
+    ],
+    "now": "2026-07-08 08:26:07"
+  },
+  "status": 1,
+  "switch": null,
+  "info": 0
+}

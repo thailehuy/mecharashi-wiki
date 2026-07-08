@@ -1,1 +1,194 @@
-{"data":{"data":[{"ID":"20150102","name":"Krieger","position":"Body","type":"Medium","quality":"SR","aircraftWeight":"335","durable":"261","Armor":"54","fire":"92","output":"2430","Antiriot":"655","ModuleCarried":[{"_id":{"timestamp":1750678044,"date":1750678044000},"ID":"10114","name":"Inner-Cycle Hub","SpecificEffects":"When casting a skill with an AP Cost of <color=#F74848>3</color> or more, there is a <color=#F74848>25%</color> chance to trigger and restore <color=#F74848>1</color> AP after combat.","BufCarried":"101141","SkillIcon":"Icon_entry_10017","icon":"Icon_entry_10017","Status":1,"weight":112,"lang":"en","id":"1011","level":4}],"icon":"Icon_mecha_wap2015","introduce":"LTX-26 Krieger\nLaniakea led the development of this Medium ST, known for its cost-effectiveness and stability. It is frequently deployed by the NDF.\nThis model utilizes a planar square structure and laser and electron beam composite welding technology to improve strength while reducing hardware failure rates and deployment time. It comes with a multi-language operating system, which has been well received by members of the NDF.","mechaIcon":"Icon_wap2015_1","lihuiIcon":"icon_lihui_wap2015","Status":1,"weight":64,"lang":"en","manji":{"name":"Krieger","durable":"2372","Armor":"251","fire":"428","output":"2430","Antiriot":"2073","Interface":"Connector I","ModuleCarried":[{"_id":{"timestamp":1750678045,"date":1750678045000},"ID":"30072","name":"Breaker Mod","SpecificEffects":"When casting an AoE Attack, DMG Dealt <color=#F74848>+4%</color>.","BufCarried":"300721","SkillIcon":"Icon_entry_10053","icon":"Icon_entry_10053","Status":1,"weight":262,"lang":"en","id":"3007","level":2},{"_id":{"timestamp":1750678044,"date":1750678044000},"ID":"10114","name":"Inner-Cycle Hub","SpecificEffects":"When casting a skill with an AP Cost of <color=#F74848>3</color> or more, there is a <color=#F74848>25%</color> chance to trigger and restore <color=#F74848>1</color> AP after combat.","BufCarried":"101141","SkillIcon":"Icon_entry_10017","icon":"Icon_entry_10017","Status":1,"weight":112,"lang":"en","id":"1011","level":4},{"_id":{"timestamp":1750678047,"date":1750678047000},"ID":"40094","name":"Tending Mod","SpecificEffects":"Received Repair AMT <color=#F74848>+10%</color>.","BufCarried":"400941","SkillIcon":"Icon_entry_40091","icon":"Icon_entry_40091","Status":1,"weight":472,"lang":"en","id":"4009","level":4}],"Status":1,"weight":64,"lang":"en"}},{"ID":"20150202","name":"Krieger","position":"L-Arm","type":"Medium","quality":"SR","aircraftWeight":"160","durable":"155","Armor":"36","fire":"92","Hit":"219","ModuleCarried":"1011:1/","introduce":"LTX-26 Krieger\nLaniakea led the development of this Medium ST, known for its cost-effectiveness and stability. It is frequently deployed by the NDF.\nThis model utilizes a planar square structure and laser and electron beam composite welding technology to improve strength while reducing hardware failure rates and deployment time. It comes with a multi-language operating system, which has been well received by members of the NDF.","mechaIcon":"Icon_wap2015_2","Status":1,"weight":65,"lang":"en","manji":{"name":"Krieger","durable":"1408","Armor":"167","fire":"428","Hit":"693","Interface":"Connector II","ModuleCarried":"1011:1/4009:1/","Status":1,"weight":65,"lang":"en"}},{"ID":"20150302","name":"Krieger","position":"R-Arm","type":"Medium","quality":"SR","aircraftWeight":"160","durable":"155","Armor":"36","fire":"92","Hit":"219","ModuleCarried":"1011:1/","introduce":"LTX-26 Krieger\nLaniakea led the development of this Medium ST, known for its cost-effectiveness and stability. It is frequently deployed by the NDF.\nThis model utilizes a planar square structure and laser and electron beam composite welding technology to improve strength while reducing hardware failure rates and deployment time. It comes with a multi-language operating system, which has been well received by members of the NDF.","mechaIcon":"Icon_wap2015_3","Status":1,"weight":66,"lang":"en","manji":{"name":"Krieger","durable":"1408","Armor":"167","fire":"428","Hit":"693","Interface":"Connector II","ModuleCarried":"1011:1/4009:1/","Status":1,"weight":66,"lang":"en"}},{"ID":"20150402","name":"Krieger","position":"Legs","type":"Medium","quality":"SR","aircraftWeight":"255","durable":"211","Armor":"36","fire":"92","Dodge":"569","move":"3000","ModuleCarried":"1011:1/","introduce":"LTX-26 Krieger\nLaniakea led the development of this Medium ST, known for its cost-effectiveness and stability. It is frequently deployed by the NDF.\nThis model utilizes a planar square structure and laser and electron beam composite welding technology to improve strength while reducing hardware failure rates and deployment time. It comes with a multi-language operating system, which has been well received by members of the NDF.","mechaIcon":"Icon_wap2015_4","Status":1,"weight":67,"lang":"en","manji":{"name":"Krieger","durable":"1917","Armor":"167","fire":"428","Dodge":"1800","move":"3000","Interface":"Connector I","ModuleCarried":"1011:1/3007:1/4009:1/","Status":1,"weight":67,"lang":"en"}}],"now":"2026-06-24 19:16:35"},"status":1,"switch":null,"info":0}
+{
+  "data": {
+    "data": [
+      {
+        "ID": "20150102",
+        "name": "斗将",
+        "position": "躯干",
+        "type": "Medium",
+        "quality": "SR",
+        "aircraftWeight": "335",
+        "durable": "261",
+        "Armor": "54",
+        "fire": "92",
+        "output": "2430",
+        "Antiriot": "655",
+        "ModuleCarried": [
+          {
+            "_id": {
+              "timestamp": 1696936929,
+              "date": 1696936929000
+            },
+            "ID": "10114",
+            "name": "内循环枢纽",
+            "SpecificEffects": "施放AP消耗大于等于<color=#F74848>3</color>的技能时有<color=#F74848>25%</color>的概率发动，战斗后返还<color=#F74848>1</color>AP",
+            "BufCarried": "101141",
+            "SkillIcon": "Icon_entry_10017",
+            "icon": "Icon_entry_10017",
+            "Status": 1,
+            "weight": 118,
+            "id": "1011",
+            "level": 4
+          }
+        ],
+        "icon": "Icon_mecha_wap2015",
+        "introduce": "LTX-26 斗将\n拉尼亚凯亚主导开发的中型机兵，以高性价比、高稳定性著称，大量列装于北陆联合军。\n该机型采用了平面方正结构和激光与电子束复合焊接技术，提高强度的同时降低了硬件故障率和整备难度，且自带多语言操作系统，在成员复杂的北陆联合军队中拥有不错的评价。",
+        "mechaIcon": "Icon_wap2015_1",
+        "lihuiIcon": "icon_lihui_wap2015",
+        "Status": 1,
+        "weight": 108,
+        "manji": {
+          "name": "斗将",
+          "durable": "7613",
+          "Armor": "555",
+          "fire": "946",
+          "output": "2430",
+          "Antiriot": "3742",
+          "Interface": "Ⅰ型接口",
+          "ModuleCarried": [
+            {
+              "_id": {
+                "timestamp": 1696936930,
+                "date": 1696936930000
+              },
+              "ID": "30072",
+              "name": "破阵模组",
+              "SpecificEffects": "主动使用范围攻击时，造成的伤害提升<color=#F74848>4%</color>",
+              "BufCarried": "300721",
+              "SkillIcon": "Icon_entry_10053",
+              "icon": "Icon_entry_10053",
+              "Status": 1,
+              "weight": 450,
+              "id": "3007",
+              "level": 2
+            },
+            {
+              "_id": {
+                "timestamp": 1696936929,
+                "date": 1696936929000
+              },
+              "ID": "10114",
+              "name": "内循环枢纽",
+              "SpecificEffects": "施放AP消耗大于等于<color=#F74848>3</color>的技能时有<color=#F74848>25%</color>的概率发动，战斗后返还<color=#F74848>1</color>AP",
+              "BufCarried": "101141",
+              "SkillIcon": "Icon_entry_10017",
+              "icon": "Icon_entry_10017",
+              "Status": 1,
+              "weight": 118,
+              "id": "1011",
+              "level": 4
+            },
+            {
+              "_id": {
+                "timestamp": 1696936931,
+                "date": 1696936931000
+              },
+              "ID": "40094",
+              "name": "护理模组",
+              "SpecificEffects": "受修理量提升<color=#F74848>10%</color>",
+              "BufCarried": "400941",
+              "SkillIcon": "Icon_entry_40091",
+              "icon": "Icon_entry_40091",
+              "Status": 1,
+              "weight": 924,
+              "id": "4009",
+              "level": 4
+            }
+          ],
+          "Status": 1,
+          "weight": 108
+        }
+      },
+      {
+        "ID": "20150202",
+        "name": "斗将",
+        "position": "左臂",
+        "type": "Medium",
+        "quality": "SR",
+        "aircraftWeight": "160",
+        "durable": "155",
+        "Armor": "36",
+        "fire": "92",
+        "Hit": "219",
+        "ModuleCarried": "1011:1/",
+        "introduce": "LTX-26 斗将\n拉尼亚凯亚主导开发的中型机兵，以高性价比、高稳定性著称，大量列装于北陆联合军。\n该机型采用了平面方正结构和激光与电子束复合焊接技术，提高强度的同时降低了硬件故障率和整备难度，且自带多语言操作系统，在成员复杂的北陆联合军队中拥有不错的评价。",
+        "mechaIcon": "Icon_wap2015_2",
+        "Status": 1,
+        "weight": 109,
+        "manji": {
+          "name": "斗将",
+          "durable": "4521",
+          "Armor": "370",
+          "fire": "946",
+          "Hit": "1251",
+          "Interface": "Ⅱ型接口",
+          "ModuleCarried": "1011:1/4009:1/",
+          "Status": 1,
+          "weight": 109
+        }
+      },
+      {
+        "ID": "20150302",
+        "name": "斗将",
+        "position": "右臂",
+        "type": "Medium",
+        "quality": "SR",
+        "aircraftWeight": "160",
+        "durable": "155",
+        "Armor": "36",
+        "fire": "92",
+        "Hit": "219",
+        "ModuleCarried": "1011:1/",
+        "introduce": "LTX-26 斗将\n拉尼亚凯亚主导开发的中型机兵，以高性价比、高稳定性著称，大量列装于北陆联合军。\n该机型采用了平面方正结构和激光与电子束复合焊接技术，提高强度的同时降低了硬件故障率和整备难度，且自带多语言操作系统，在成员复杂的北陆联合军队中拥有不错的评价。",
+        "mechaIcon": "Icon_wap2015_3",
+        "Status": 1,
+        "weight": 110,
+        "manji": {
+          "name": "斗将",
+          "durable": "4521",
+          "Armor": "370",
+          "fire": "946",
+          "Hit": "1251",
+          "Interface": "Ⅱ型接口",
+          "ModuleCarried": "1011:1/4009:1/",
+          "Status": 1,
+          "weight": 110
+        }
+      },
+      {
+        "ID": "20150402",
+        "name": "斗将",
+        "position": "腿部",
+        "type": "Medium",
+        "quality": "SR",
+        "aircraftWeight": "255",
+        "durable": "211",
+        "Armor": "36",
+        "fire": "92",
+        "Dodge": "569",
+        "move": "3000",
+        "ModuleCarried": "1011:1/",
+        "introduce": "LTX-26 斗将\n拉尼亚凯亚主导开发的中型机兵，以高性价比、高稳定性著称，大量列装于北陆联合军。\n该机型采用了平面方正结构和激光与电子束复合焊接技术，提高强度的同时降低了硬件故障率和整备难度，且自带多语言操作系统，在成员复杂的北陆联合军队中拥有不错的评价。",
+        "mechaIcon": "Icon_wap2015_4",
+        "Status": 1,
+        "weight": 111,
+        "manji": {
+          "name": "斗将",
+          "durable": "6155",
+          "Armor": "370",
+          "fire": "946",
+          "Dodge": "3250",
+          "move": "3000",
+          "Interface": "Ⅰ型接口",
+          "ModuleCarried": "1011:1/3007:1/4009:1/",
+          "Status": 1,
+          "weight": 111
+        }
+      }
+    ],
+    "now": "2026-07-08 08:25:45"
+  },
+  "status": 1,
+  "switch": null,
+  "info": 0
+}

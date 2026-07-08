@@ -1,1 +1,194 @@
-{"data":{"data":[{"ID":"10130102","name":"Boyer","position":"Body","type":"Light","quality":"SR","aircraftWeight":"290","durable":"241","Armor":"36","fire":"94","output":"1395","Antiriot":"655","ModuleCarried":[{"_id":{"timestamp":1750678044,"date":1750678044000},"ID":"10024","name":"Pressurizer","SpecificEffects":"When attacking with an Assault Weapon, there is a <color=#F74848>70%</color> chance to trigger: DMG <color=#F74848>+15%</color>.","BufCarried":"100241","SkillIcon":"Icon_entry_10032","icon":"Icon_entry_10032","Status":1,"weight":76,"lang":"en","id":"1002","level":4}],"icon":"Icon_mecha_wap1013","introduce":"LTX-17 Boyer\nA mass-produced assault ST developed by Laniakea.\nThe Boyer's excellent structure has made it a standout in the history of mech design, and its stable performance in actual combat has sparked competition and imitation among various factions.\nIt is rumored that the UNCS once attempted to manufacture a more advanced LTX-18 Boyer II, but the development plan was forced to be discontinued for unknown reasons.","mechaIcon":"Icon_wap1013_1","lihuiIcon":"icon_lihui_wap1013","Status":1,"weight":16,"lang":"en","manji":{"name":"Boyer","durable":"2190","Armor":"167","fire":"438","output":"1395","Antiriot":"2073","Interface":"Connector I","ModuleCarried":[{"_id":{"timestamp":1750678046,"date":1750678046000},"ID":"40014","name":"Accuracy Mod","SpecificEffects":"Hit Rate <color=#F74848>+10%</color>.","BufCarried":"400141","SkillIcon":"Icon_entry_40011","icon":"Icon_entry_40011","Status":1,"weight":408,"lang":"en","id":"4001","level":4},{"_id":{"timestamp":1750678044,"date":1750678044000},"ID":"10024","name":"Pressurizer","SpecificEffects":"When attacking with an Assault Weapon, there is a <color=#F74848>70%</color> chance to trigger: DMG <color=#F74848>+15%</color>.","BufCarried":"100241","SkillIcon":"Icon_entry_10032","icon":"Icon_entry_10032","Status":1,"weight":76,"lang":"en","id":"1002","level":4},{"_id":{"timestamp":1750678045,"date":1750678045000},"ID":"30022","name":"Execution Mod","SpecificEffects":"When attacking a part with HP lower than <color=#F74848>40%</color>, DMG <color=#F74848>+4%</color>.","BufCarried":"300221","SkillIcon":"Icon_entry_10048","icon":"Icon_entry_10048","Status":1,"weight":222,"lang":"en","id":"3002","level":2}],"Status":1,"weight":16,"lang":"en"}},{"ID":"10130202","name":"Boyer","position":"L-Arm","type":"Light","quality":"SR","aircraftWeight":"90","durable":"121","Armor":"24","fire":"94","Hit":"254","ModuleCarried":"1002:1/","introduce":"LTX-17 Boyer\nA mass-produced assault ST developed by Laniakea.\nThe Boyer's excellent structure has made it a standout in the history of mech design, and its stable performance in actual combat has sparked competition and imitation among various factions.\nIt is rumored that the UNCS once attempted to manufacture a more advanced LTX-18 Boyer II, but the development plan was forced to be discontinued for unknown reasons.","mechaIcon":"Icon_wap1013_2","Status":1,"weight":17,"lang":"en","manji":{"name":"Boyer","durable":"1099","Armor":"111","fire":"438","Hit":"803","Interface":"Connector II","ModuleCarried":"1002:1/4001:1/","Status":1,"weight":17,"lang":"en"}},{"ID":"10130302","name":"Boyer","position":"R-Arm","type":"Light","quality":"SR","aircraftWeight":"90","durable":"121","Armor":"24","fire":"94","Hit":"254","ModuleCarried":"1002:1/","introduce":"LTX-17 Boyer\nA mass-produced assault ST developed by Laniakea.\nThe Boyer's excellent structure has made it a standout in the history of mech design, and its stable performance in actual combat has sparked competition and imitation among various factions.\nIt is rumored that the UNCS once attempted to manufacture a more advanced LTX-18 Boyer II, but the development plan was forced to be discontinued for unknown reasons.","mechaIcon":"Icon_wap1013_3","Status":1,"weight":18,"lang":"en","manji":{"name":"Boyer","durable":"1099","Armor":"111","fire":"438","Hit":"803","Interface":"Connector II","ModuleCarried":"1002:1/4001:1/","Status":1,"weight":18,"lang":"en"}},{"ID":"10130402","name":"Boyer","position":"Legs","type":"Light","quality":"SR","aircraftWeight":"180","durable":"181","Armor":"24","fire":"94","Dodge":"766","move":"4000","ModuleCarried":"1002:1/","introduce":"LTX-17 Boyer\nA mass-produced assault ST developed by Laniakea.\nThe Boyer's excellent structure has made it a standout in the history of mech design, and its stable performance in actual combat has sparked competition and imitation among various factions.\nIt is rumored that the UNCS once attempted to manufacture a more advanced LTX-18 Boyer II, but the development plan was forced to be discontinued for unknown reasons.","mechaIcon":"Icon_wap1013_4","Status":1,"weight":19,"lang":"en","manji":{"name":"Boyer","durable":"1644","Armor":"111","fire":"438","Dodge":"2424","move":"4000","Interface":"Connector I","ModuleCarried":"1002:1/3002:1/4001:1/","Status":1,"weight":19,"lang":"en"}}],"now":"2026-06-24 19:16:34"},"status":1,"switch":null,"info":0}
+{
+  "data": {
+    "data": [
+      {
+        "ID": "10130102",
+        "name": "波耶",
+        "position": "躯干",
+        "type": "Light",
+        "quality": "SR",
+        "aircraftWeight": "290",
+        "durable": "241",
+        "Armor": "36",
+        "fire": "94",
+        "output": "1395",
+        "Antiriot": "655",
+        "ModuleCarried": [
+          {
+            "_id": {
+              "timestamp": 1696936929,
+              "date": 1696936929000
+            },
+            "ID": "10024",
+            "name": "增压套组",
+            "SpecificEffects": "使用突击武器攻击时有<color=#F74848>70%</color>的概率发动，伤害提升<color=#F74848>15%</color>",
+            "BufCarried": "100241",
+            "SkillIcon": "Icon_entry_10032",
+            "icon": "Icon_entry_10032",
+            "Status": 1,
+            "weight": 82,
+            "id": "1002",
+            "level": 4
+          }
+        ],
+        "icon": "Icon_mecha_wap1013",
+        "introduce": "LTX-17 波耶\n拉尼亚凯亚开发的量产型突击用机兵。\n由于其优秀的结构图纸使其成为机兵设计史上的典范，其在实战中的稳定表现引发了各势力的竞争与模仿。\n据传北部联合曾试图制造更先进的LTX-18 波耶Ⅱ，但由于不明原因被迫中止了开发计划。",
+        "mechaIcon": "Icon_wap1013_1",
+        "lihuiIcon": "icon_lihui_wap1013",
+        "Status": 1,
+        "weight": 20,
+        "manji": {
+          "name": "波耶",
+          "durable": "7030",
+          "Armor": "370",
+          "fire": "967",
+          "output": "1395",
+          "Antiriot": "3742",
+          "Interface": "Ⅰ型接口",
+          "ModuleCarried": [
+            {
+              "_id": {
+                "timestamp": 1696936931,
+                "date": 1696936931000
+              },
+              "ID": "40014",
+              "name": "校准模组",
+              "SpecificEffects": "命中率提升<color=#F74848>10%</color>",
+              "BufCarried": "400141",
+              "SkillIcon": "Icon_entry_40011",
+              "icon": "Icon_entry_40011",
+              "Status": 1,
+              "weight": 860,
+              "id": "4001",
+              "level": 4
+            },
+            {
+              "_id": {
+                "timestamp": 1696936929,
+                "date": 1696936929000
+              },
+              "ID": "10024",
+              "name": "增压套组",
+              "SpecificEffects": "使用突击武器攻击时有<color=#F74848>70%</color>的概率发动，伤害提升<color=#F74848>15%</color>",
+              "BufCarried": "100241",
+              "SkillIcon": "Icon_entry_10032",
+              "icon": "Icon_entry_10032",
+              "Status": 1,
+              "weight": 82,
+              "id": "1002",
+              "level": 4
+            },
+            {
+              "_id": {
+                "timestamp": 1696936930,
+                "date": 1696936930000
+              },
+              "ID": "30022",
+              "name": "处决模组",
+              "SpecificEffects": "攻击耐久值百分比低于<color=#F74848>40%</color>的部位时，伤害提升<color=#F74848>4%</color>",
+              "BufCarried": "300221",
+              "SkillIcon": "Icon_entry_10048",
+              "icon": "Icon_entry_10048",
+              "Status": 1,
+              "weight": 410,
+              "id": "3002",
+              "level": 2
+            }
+          ],
+          "Status": 1,
+          "weight": 20
+        }
+      },
+      {
+        "ID": "10130202",
+        "name": "波耶",
+        "position": "左臂",
+        "type": "Light",
+        "quality": "SR",
+        "aircraftWeight": "90",
+        "durable": "121",
+        "Armor": "24",
+        "fire": "94",
+        "Hit": "254",
+        "ModuleCarried": "1002:1/",
+        "introduce": "LTX-17 波耶\n拉尼亚凯亚开发的量产型突击用机兵。\n由于其优秀的结构图纸使其成为机兵设计史上的典范，其在实战中的稳定表现引发了各势力的竞争与模仿。\n据传北部联合曾试图制造更先进的LTX-18 波耶Ⅱ，但由于不明原因被迫中止了开发计划。",
+        "mechaIcon": "Icon_wap1013_2",
+        "Status": 1,
+        "weight": 21,
+        "manji": {
+          "name": "波耶",
+          "durable": "3529",
+          "Armor": "246",
+          "fire": "967",
+          "Hit": "1451",
+          "Interface": "Ⅱ型接口",
+          "ModuleCarried": "1002:1/4001:1/",
+          "Status": 1,
+          "weight": 21
+        }
+      },
+      {
+        "ID": "10130302",
+        "name": "波耶",
+        "position": "右臂",
+        "type": "Light",
+        "quality": "SR",
+        "aircraftWeight": "90",
+        "durable": "121",
+        "Armor": "24",
+        "fire": "94",
+        "Hit": "254",
+        "ModuleCarried": "1002:1/",
+        "introduce": "LTX-17 波耶\n拉尼亚凯亚开发的量产型突击用机兵。\n由于其优秀的结构图纸使其成为机兵设计史上的典范，其在实战中的稳定表现引发了各势力的竞争与模仿。\n据传北部联合曾试图制造更先进的LTX-18 波耶Ⅱ，但由于不明原因被迫中止了开发计划。",
+        "mechaIcon": "Icon_wap1013_3",
+        "Status": 1,
+        "weight": 22,
+        "manji": {
+          "name": "波耶",
+          "durable": "3529",
+          "Armor": "246",
+          "fire": "967",
+          "Hit": "1451",
+          "Interface": "Ⅱ型接口",
+          "ModuleCarried": "1002:1/4001:1/",
+          "Status": 1,
+          "weight": 22
+        }
+      },
+      {
+        "ID": "10130402",
+        "name": "波耶",
+        "position": "腿部",
+        "type": "Light",
+        "quality": "SR",
+        "aircraftWeight": "180",
+        "durable": "181",
+        "Armor": "24",
+        "fire": "94",
+        "Dodge": "766",
+        "move": "4000",
+        "ModuleCarried": "1002:1/",
+        "introduce": "LTX-17 波耶\n拉尼亚凯亚开发的量产型突击用机兵。\n由于其优秀的结构图纸使其成为机兵设计史上的典范，其在实战中的稳定表现引发了各势力的竞争与模仿。\n据传北部联合曾试图制造更先进的LTX-18 波耶Ⅱ，但由于不明原因被迫中止了开发计划。",
+        "mechaIcon": "Icon_wap1013_4",
+        "Status": 1,
+        "weight": 23,
+        "manji": {
+          "name": "波耶",
+          "durable": "5279",
+          "Armor": "246",
+          "fire": "967",
+          "Dodge": "4376",
+          "move": "4000",
+          "Interface": "Ⅰ型接口",
+          "ModuleCarried": "1002:1/3002:1/4001:1/",
+          "Status": 1,
+          "weight": 23
+        }
+      }
+    ],
+    "now": "2026-07-08 08:25:32"
+  },
+  "status": 1,
+  "switch": null,
+  "info": 0
+}

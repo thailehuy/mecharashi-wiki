@@ -1,1 +1,230 @@
-{"data":{"data":[{"ID":"30070103","name":"Gillesrais","position":"Body","type":"Heavy","quality":"SSR","aircraftWeight":"400","durable":"421","Armor":"144","fire":"103","output":"1955","Antiriot":"770","Interface":"Connector I","ModuleCarried":[{"_id":{"timestamp":1750678045,"date":1750678045000},"ID":"20174","name":"Liquid Repair Kit","SpecificEffects":"When HP falls below <color=#F74848>50%</color>, there is a <color=#F74848>100%</color> chance to restore <color=#F74848>6%</color> HP after taking damage, effective up to <color=#F74848>2</color> times per turn.","BufCarried":"201741","SkillIcon":"Icon_entry_10009","icon":"Icon_entry_10009","Status":1,"weight":180,"lang":"en","id":"2017","level":4},{"_id":{"timestamp":1750678046,"date":1750678046000},"ID":"30152","name":"Adaptive Mod","SpecificEffects":"When HP is below <color=#F74848>50%</color>, DMG Taken <color=#F74848>-4%</color>.","BufCarried":"301521","SkillIcon":"Icon_entry_10057","icon":"Icon_entry_10057","Status":1,"weight":326,"lang":"en","id":"3015","level":2},{"_id":{"timestamp":1750678047,"date":1750678047000},"ID":"40092","name":"Tending Mod","SpecificEffects":"Received Repair AMT <color=#F74848>+5%</color>.","BufCarried":"400921","SkillIcon":"Icon_entry_40091","icon":"Icon_entry_40091","Status":1,"weight":470,"lang":"en","id":"4009","level":2}],"icon":"Icon_mecha_wap3007","introduce":"HU-08M Gillesrais\nMade by the UKB-1, this heavy ST utilizes a unique Arashium alloy smelting technique, distinct from that used by Obsidian.\nThis proprietary smelting method allows the Arashium to form a unique lattice structure in its inner frame and actuator, greatly enhancing durability and facilitating self-repair capabilities.","mechaIcon":"Icon_wap3007_1","lihuiIcon":"icon_lihui_wap3007","Status":1,"weight":128,"lang":"en","manji":{"name":"Gillesrais","durable":"3646","Armor":"639","fire":"457","output":"1955","Antiriot":"2477","Interface":"Connector II","ModuleCarried":[{"_id":{"timestamp":1750678045,"date":1750678045000},"ID":"20174","name":"Liquid Repair Kit","SpecificEffects":"When HP falls below <color=#F74848>50%</color>, there is a <color=#F74848>100%</color> chance to restore <color=#F74848>6%</color> HP after taking damage, effective up to <color=#F74848>2</color> times per turn.","BufCarried":"201741","SkillIcon":"Icon_entry_10009","icon":"Icon_entry_10009","Status":1,"weight":180,"lang":"en","id":"2017","level":4},{"_id":{"timestamp":1750678046,"date":1750678046000},"ID":"30158","name":"Adaptive Mod","SpecificEffects":"When HP is below <color=#F74848>50%</color>, DMG Taken <color=#F74848>-18%</color>.\nWhen HP is above <color=#F74848>50%</color>, DMG <color=#F74848>+20%</color>.","BufCarried":"301581/301583","SkillIcon":"Icon_entry_10057","icon":"Icon_entry_10057","Status":1,"weight":332,"lang":"en","id":"3015","level":8},{"_id":{"timestamp":1750678047,"date":1750678047000},"ID":"40094","name":"Tending Mod","SpecificEffects":"Received Repair AMT <color=#F74848>+10%</color>.","BufCarried":"400941","SkillIcon":"Icon_entry_40091","icon":"Icon_entry_40091","Status":1,"weight":472,"lang":"en","id":"4009","level":4}],"Status":1,"weight":128,"lang":"en"}},{"ID":"30070203","name":"Gillesrais","position":"L-Arm","type":"Heavy","quality":"SSR","aircraftWeight":"140","durable":"200","Armor":"96","fire":"103","Hit":"288","Interface":"Connector I","ModuleCarried":"2017:1/4009:1/","introduce":"HU-08M Gillesrais\nMade by the UKB-1, this heavy ST utilizes a unique Arashium alloy smelting technique, distinct from that used by Obsidian.\nThis proprietary smelting method allows the Arashium to form a unique lattice structure in its inner frame and actuator, greatly enhancing durability and facilitating self-repair capabilities.","mechaIcon":"Icon_wap3007_2","Status":1,"weight":129,"lang":"en","manji":{"name":"Gillesrais","durable":"1732","Armor":"426","fire":"457","Hit":"926","Interface":"Connector II","ModuleCarried":"2017:1/3015:2/4009:1/","Status":1,"weight":129,"lang":"en"}},{"ID":"30070303","name":"Gillesrais","position":"R-Arm","type":"Heavy","quality":"SSR","aircraftWeight":"140","durable":"200","Armor":"96","fire":"103","Hit":"288","Interface":"Connector I","ModuleCarried":"2017:1/4009:1/","introduce":"HU-08M Gillesrais\nMade by the UKB-1, this heavy ST utilizes a unique Arashium alloy smelting technique, distinct from that used by Obsidian.\nThis proprietary smelting method allows the Arashium to form a unique lattice structure in its inner frame and actuator, greatly enhancing durability and facilitating self-repair capabilities.","mechaIcon":"Icon_wap3007_3","Status":1,"weight":130,"lang":"en","manji":{"name":"Gillesrais","durable":"1732","Armor":"426","fire":"457","Hit":"926","Interface":"Connector II","ModuleCarried":"2017:1/3015:2/4009:1/","Status":1,"weight":130,"lang":"en"}},{"ID":"30070403","name":"Gillesrais","position":"Legs","type":"Heavy","quality":"SSR","aircraftWeight":"235","durable":"300","Armor":"96","fire":"103","Dodge":"566","move":"3000","Interface":"Connector I","ModuleCarried":"2017:1/3015:1/","introduce":"HU-08M Gillesrais\nMade by the UKB-1, this heavy ST utilizes a unique Arashium alloy smelting technique, distinct from that used by Obsidian.\nThis proprietary smelting method allows the Arashium to form a unique lattice structure in its inner frame and actuator, greatly enhancing durability and facilitating self-repair capabilities.","mechaIcon":"Icon_wap3007_4","Status":1,"weight":131,"lang":"en","manji":{"name":"Gillesrais","durable":"2598","Armor":"426","fire":"457","Dodge":"1821","move":"3000","Interface":"Connector II","ModuleCarried":"2017:1/3015:2/4009:1/","Status":1,"weight":131,"lang":"en"}}],"now":"2026-06-24 19:16:37"},"status":1,"switch":null,"info":0}
+{
+  "data": {
+    "data": [
+      {
+        "ID": "30070103",
+        "name": "吉尔莱斯",
+        "position": "躯干",
+        "type": "Heavy",
+        "quality": "SSR",
+        "aircraftWeight": "400",
+        "durable": "421",
+        "Armor": "144",
+        "fire": "103",
+        "output": "1955",
+        "Antiriot": "770",
+        "Interface": "Ⅰ型接口",
+        "ModuleCarried": [
+          {
+            "_id": {
+              "timestamp": 1696936930,
+              "date": 1696936930000
+            },
+            "ID": "20174",
+            "name": "液态维修套组",
+            "SpecificEffects": "耐久值低于<color=#F74848>50%</color>时，遭受伤害后有<color=#F74848>100%</color>的概率恢复<color=#F74848>6%</color>的耐久值，每回合最多发动<color=#F74848>2</color>次",
+            "BufCarried": "201741",
+            "SkillIcon": "Icon_entry_10009",
+            "icon": "Icon_entry_10009",
+            "Status": 1,
+            "weight": 186,
+            "id": "2017",
+            "level": 4
+          },
+          {
+            "_id": {
+              "timestamp": 1696936930,
+              "date": 1696936930000
+            },
+            "ID": "30152",
+            "name": "自适配模组",
+            "SpecificEffects": "自身的耐久值百分比低于<color=#F74848>50%</color>时，遭受伤害降低<color=#F74848>4%</color>",
+            "BufCarried": "301521",
+            "SkillIcon": "Icon_entry_10057",
+            "icon": "Icon_entry_10057",
+            "Status": 1,
+            "weight": 514,
+            "id": "3015",
+            "level": 2
+          },
+          {
+            "_id": {
+              "timestamp": 1696936931,
+              "date": 1696936931000
+            },
+            "ID": "40092",
+            "name": "护理模组",
+            "SpecificEffects": "受修理量提升<color=#F74848>5%</color>",
+            "BufCarried": "400921",
+            "SkillIcon": "Icon_entry_40091",
+            "icon": "Icon_entry_40091",
+            "Status": 1,
+            "weight": 922,
+            "id": "4009",
+            "level": 2
+          }
+        ],
+        "icon": "Icon_mecha_wap3007",
+        "introduce": "HU-08M 吉尔莱斯\n由联合设计局制造的重型机兵，采用了与黑曜石不同的钢岚合金冶炼技术。\n特殊的冶炼方式使得钢岚材料在内骨骼及传动装置上形成了独特的晶格结构，在防护性和易用性大幅提升的同时，还具备自我修复的特性。",
+        "mechaIcon": "Icon_wap3007_1",
+        "lihuiIcon": "icon_lihui_wap3007",
+        "Status": 1,
+        "weight": 232,
+        "manji": {
+          "name": "吉尔莱斯",
+          "durable": "11705",
+          "Armor": "1412",
+          "fire": "1010",
+          "output": "1955",
+          "Antiriot": "4472",
+          "Interface": "Ⅱ型接口",
+          "ModuleCarried": [
+            {
+              "_id": {
+                "timestamp": 1696936930,
+                "date": 1696936930000
+              },
+              "ID": "20174",
+              "name": "液态维修套组",
+              "SpecificEffects": "耐久值低于<color=#F74848>50%</color>时，遭受伤害后有<color=#F74848>100%</color>的概率恢复<color=#F74848>6%</color>的耐久值，每回合最多发动<color=#F74848>2</color>次",
+              "BufCarried": "201741",
+              "SkillIcon": "Icon_entry_10009",
+              "icon": "Icon_entry_10009",
+              "Status": 1,
+              "weight": 186,
+              "id": "2017",
+              "level": 4
+            },
+            {
+              "_id": {
+                "timestamp": 1696936930,
+                "date": 1696936930000
+              },
+              "ID": "30158",
+              "name": "自适配模组",
+              "SpecificEffects": "自身的耐久值百分比低于<color=#F74848>50%</color>时，遭受伤害降低<color=#F74848>18%</color>；\n耐久值大于等于<color=#F74848>50%</color>时，伤害提升<color=#F74848>20%</color>",
+              "BufCarried": "301581/301583",
+              "SkillIcon": "Icon_entry_10057",
+              "icon": "Icon_entry_10057",
+              "Status": 1,
+              "weight": 520,
+              "id": "3015",
+              "level": 8
+            },
+            {
+              "_id": {
+                "timestamp": 1696936931,
+                "date": 1696936931000
+              },
+              "ID": "40094",
+              "name": "护理模组",
+              "SpecificEffects": "受修理量提升<color=#F74848>10%</color>",
+              "BufCarried": "400941",
+              "SkillIcon": "Icon_entry_40091",
+              "icon": "Icon_entry_40091",
+              "Status": 1,
+              "weight": 924,
+              "id": "4009",
+              "level": 4
+            }
+          ],
+          "Status": 1,
+          "weight": 232
+        }
+      },
+      {
+        "ID": "30070203",
+        "name": "吉尔莱斯",
+        "position": "左臂",
+        "type": "Heavy",
+        "quality": "SSR",
+        "aircraftWeight": "140",
+        "durable": "200",
+        "Armor": "96",
+        "fire": "103",
+        "Hit": "288",
+        "Interface": "Ⅰ型接口",
+        "ModuleCarried": "2017:1/4009:1/",
+        "introduce": "HU-08M 吉尔莱斯\n由联合设计局制造的重型机兵，采用了与黑曜石不同的钢岚合金冶炼技术。\n特殊的冶炼方式使得钢岚材料在内骨骼及传动装置上形成了独特的晶格结构，在防护性和易用性大幅提升的同时，还具备自我修复的特性。",
+        "mechaIcon": "Icon_wap3007_2",
+        "Status": 1,
+        "weight": 233,
+        "manji": {
+          "name": "吉尔莱斯",
+          "durable": "5560",
+          "Armor": "941",
+          "fire": "1010",
+          "Hit": "1672",
+          "Interface": "Ⅱ型接口",
+          "ModuleCarried": "2017:1/3015:2/4009:1/",
+          "Status": 1,
+          "weight": 233
+        }
+      },
+      {
+        "ID": "30070303",
+        "name": "吉尔莱斯",
+        "position": "右臂",
+        "type": "Heavy",
+        "quality": "SSR",
+        "aircraftWeight": "140",
+        "durable": "200",
+        "Armor": "96",
+        "fire": "103",
+        "Hit": "288",
+        "Interface": "Ⅰ型接口",
+        "ModuleCarried": "2017:1/4009:1/",
+        "introduce": "HU-08M 吉尔莱斯\n由联合设计局制造的重型机兵，采用了与黑曜石不同的钢岚合金冶炼技术。\n特殊的冶炼方式使得钢岚材料在内骨骼及传动装置上形成了独特的晶格结构，在防护性和易用性大幅提升的同时，还具备自我修复的特性。",
+        "mechaIcon": "Icon_wap3007_3",
+        "Status": 1,
+        "weight": 234,
+        "manji": {
+          "name": "吉尔莱斯",
+          "durable": "5560",
+          "Armor": "941",
+          "fire": "1010",
+          "Hit": "1672",
+          "Interface": "Ⅱ型接口",
+          "ModuleCarried": "2017:1/3015:2/4009:1/",
+          "Status": 1,
+          "weight": 234
+        }
+      },
+      {
+        "ID": "30070403",
+        "name": "吉尔莱斯",
+        "position": "腿部",
+        "type": "Heavy",
+        "quality": "SSR",
+        "aircraftWeight": "235",
+        "durable": "300",
+        "Armor": "96",
+        "fire": "103",
+        "Dodge": "566",
+        "move": "3000",
+        "Interface": "Ⅰ型接口",
+        "ModuleCarried": "2017:1/3015:1/",
+        "introduce": "HU-08M 吉尔莱斯\n由联合设计局制造的重型机兵，采用了与黑曜石不同的钢岚合金冶炼技术。\n特殊的冶炼方式使得钢岚材料在内骨骼及传动装置上形成了独特的晶格结构，在防护性和易用性大幅提升的同时，还具备自我修复的特性。",
+        "mechaIcon": "Icon_wap3007_4",
+        "Status": 1,
+        "weight": 235,
+        "manji": {
+          "name": "吉尔莱斯",
+          "durable": "8341",
+          "Armor": "941",
+          "fire": "1010",
+          "Dodge": "3287",
+          "move": "3000",
+          "Interface": "Ⅱ型接口",
+          "ModuleCarried": "2017:1/3015:2/4009:1/",
+          "Status": 1,
+          "weight": 235
+        }
+      }
+    ],
+    "now": "2026-07-08 08:26:04"
+  },
+  "status": 1,
+  "switch": null,
+  "info": 0
+}

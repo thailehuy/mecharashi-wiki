@@ -18,8 +18,12 @@ def apply_translation(entry, t):
     if t.get('parts'):
         for p in (entry.get('parts') or []):
             override = t['parts'].get(p.get('position', ''))
-            if override:
+            if isinstance(override, str):
                 p['maxHp'] = override
+            elif isinstance(override, dict):
+                for k, v in override.items():
+                    if v is not None:
+                        p[k] = str(v)
 
 mechs = []
 for path in sorted(glob.glob(f'{DIR}/[0-9]*.json')):

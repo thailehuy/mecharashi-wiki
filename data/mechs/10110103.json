@@ -1,1 +1,230 @@
-{"data":{"data":[{"ID":"10110103","name":"Dopplesoldner","position":"Body","type":"Light","quality":"SSR","aircraftWeight":"290","durable":"300","Armor":"48","fire":"118","output":"1425","Antiriot":"770","Interface":"Connector I","ModuleCarried":[{"_id":{"timestamp":1750678045,"date":1750678045000},"ID":"30052","name":"Kinetic Mod","SpecificEffects":"Before an Active Attack in combat, for every <color=#F74848>1</color> tile moved, DMG <color=#F74848>+1%</color>, up to <color=#F74848>4%</color>.","BufCarried":"300521","SkillIcon":"Icon_entry_10051","icon":"Icon_entry_10051","Status":1,"weight":246,"lang":"en","id":"3005","level":2},{"_id":{"timestamp":1750678044,"date":1750678044000},"ID":"20014","name":"HCI System","SpecificEffects":"During an Active Attack, there is a <color=#F74848>100%</color> chance to trigger <buf ID=900001>[Flurry Strike]</buf>, dealing <color=#F74848>0.3x</color> DMG, effective up to <color=#F74848>1</color> time per turn.","BufCarried":"200141","SkillIcon":"Icon_entry_10036","icon":"Icon_entry_10036","Status":1,"weight":116,"lang":"en","id":"2001","level":4},{"_id":{"timestamp":1750678046,"date":1750678046000},"ID":"40042","name":"Dodge Mod","SpecificEffects":"Dodge Rate <color=#F74848>+5%</color>.","BufCarried":"400421","SkillIcon":"Icon_entry_40041","icon":"Icon_entry_40041","Status":1,"weight":430,"lang":"en","id":"4004","level":2}],"icon":"Icon_mecha_wap1011","introduce":"OS-07X Dopplesoldner\nOne of Obsidian's high-performance light STs, developed based on the OS-06F Diana's combat data.\nAs a highly maneuverable execution model, it is equipped with the \"Zweihander\" combat core, a modification of the \"Eden Core.\"\nThe balance between the limbs and torso on this ST has been carefully calibrated to maximize it's killing power.","mechaIcon":"Icon_wap1011_1","lihuiIcon":"icon_lihui_wap1011","Status":1,"weight":12,"lang":"en","manji":{"name":"Dopplesoldner","durable":"2598","Armor":"213","fire":"524","output":"1425","Antiriot":"2477","Interface":"Connector II","ModuleCarried":[{"_id":{"timestamp":1750678045,"date":1750678045000},"ID":"30058","name":"Kinetic Mod","SpecificEffects":"Before an Active Attack in combat, for every <color=#F74848>1</color> tile moved, DMG <color=#F74848>+4.5%</color>, up to <color=#F74848>18%</color>.\nST's Movement <color=#F74848>+1</color>.","BufCarried":"300581","SkillIcon":"Icon_entry_10051","icon":"Icon_entry_10051","Status":1,"weight":252,"lang":"en","id":"3005","level":8},{"_id":{"timestamp":1750678044,"date":1750678044000},"ID":"20014","name":"HCI System","SpecificEffects":"During an Active Attack, there is a <color=#F74848>100%</color> chance to trigger <buf ID=900001>[Flurry Strike]</buf>, dealing <color=#F74848>0.3x</color> DMG, effective up to <color=#F74848>1</color> time per turn.","BufCarried":"200141","SkillIcon":"Icon_entry_10036","icon":"Icon_entry_10036","Status":1,"weight":116,"lang":"en","id":"2001","level":4},{"_id":{"timestamp":1750678046,"date":1750678046000},"ID":"40044","name":"Dodge Mod","SpecificEffects":"Dodge Rate <color=#F74848>+10%</color>.","BufCarried":"400441","SkillIcon":"Icon_entry_40041","icon":"Icon_entry_40041","Status":1,"weight":432,"lang":"en","id":"4004","level":4}],"Status":1,"weight":12,"lang":"en"}},{"ID":"10110203","name":"Dopplesoldner","position":"L-Arm","type":"Light","quality":"SSR","aircraftWeight":"85","durable":"150","Armor":"32","fire":"118","Hit":"299","Interface":"Connector I","ModuleCarried":"2001:1/4004:1/","introduce":"OS-07X Dopplesoldner\nOne of Obsidian's high-performance light STs, developed based on the OS-06F Diana's combat data.\nAs a highly maneuverable execution model, it is equipped with the \"Zweihander\" combat core, a modification of the \"Eden Core.\"\nThe balance between the limbs and torso on this ST has been carefully calibrated to maximize it's killing power.","mechaIcon":"Icon_wap1011_2","Status":1,"weight":13,"lang":"en","manji":{"name":"Dopplesoldner","durable":"1299","Armor":"142","fire":"524","Hit":"962","Interface":"Connector II","ModuleCarried":"2001:1/3005:2/4004:1/","Status":1,"weight":13,"lang":"en"}},{"ID":"10110303","name":"Dopplesoldner","position":"R-Arm","type":"Light","quality":"SSR","aircraftWeight":"85","durable":"150","Armor":"32","fire":"118","Hit":"299","Interface":"Connector I","ModuleCarried":"2001:1/4004:1/","introduce":"OS-07X Dopplesoldner\nOne of Obsidian's high-performance light STs, developed based on the OS-06F Diana's combat data.\nAs a highly maneuverable execution model, it is equipped with the \"Zweihander\" combat core, a modification of the \"Eden Core.\"\nThe balance between the limbs and torso on this ST has been carefully calibrated to maximize it's killing power.","mechaIcon":"Icon_wap1011_3","Status":1,"weight":14,"lang":"en","manji":{"name":"Dopplesoldner","durable":"1299","Armor":"142","fire":"524","Hit":"962","Interface":"Connector II","ModuleCarried":"2001:1/3005:2/4004:1/","Status":1,"weight":14,"lang":"en"}},{"ID":"10110403","name":"Dopplesoldner","position":"Legs","type":"Light","quality":"SSR","aircraftWeight":"165","durable":"226","Armor":"32","fire":"118","Dodge":"901","move":"4000","Interface":"Connector I","ModuleCarried":"2001:1/3005:1/","introduce":"OS-07X Dopplesoldner\nOne of Obsidian's high-performance light STs, developed based on the OS-06F Diana's combat data.\nAs a highly maneuverable execution model, it is equipped with the \"Zweihander\" combat core, a modification of the \"Eden Core.\"\nThe balance between the limbs and torso on this ST has been carefully calibrated to maximize it's killing power.","mechaIcon":"Icon_wap1011_4","Status":1,"weight":15,"lang":"en","manji":{"name":"Dopplesoldner","durable":"1957","Armor":"142","fire":"524","Dodge":"2899","move":"4000","Interface":"Connector II","ModuleCarried":"2001:1/3005:2/4004:1/","Status":1,"weight":15,"lang":"en"}}],"now":"2026-06-24 19:16:34"},"status":1,"switch":null,"info":0}
+{
+  "data": {
+    "data": [
+      {
+        "ID": "10110103",
+        "name": "都卜勒",
+        "position": "躯干",
+        "type": "Light",
+        "quality": "SSR",
+        "aircraftWeight": "290",
+        "durable": "300",
+        "Armor": "48",
+        "fire": "118",
+        "output": "1425",
+        "Antiriot": "770",
+        "Interface": "Ⅰ型接口",
+        "ModuleCarried": [
+          {
+            "_id": {
+              "timestamp": 1696936930,
+              "date": 1696936930000
+            },
+            "ID": "30052",
+            "name": "运动模组",
+            "SpecificEffects": "主动攻击对战前每移动<color=#F74848>1</color>格，伤害提升<color=#F74848>1%</color>，最多<color=#F74848>4%</color>",
+            "BufCarried": "300521",
+            "SkillIcon": "Icon_entry_10051",
+            "icon": "Icon_entry_10051",
+            "Status": 1,
+            "weight": 434,
+            "id": "3005",
+            "level": 2
+          },
+          {
+            "_id": {
+              "timestamp": 1696936929,
+              "date": 1696936929000
+            },
+            "ID": "20014",
+            "name": "人机链接",
+            "SpecificEffects": "主动攻击对战时<color=#F74848>100%</color>概率触发<buf ID=900001>[追击]</buf>，造成<color=#F74848>0.3</color>倍伤害，每回合最多发动<color=#F74848>1</color>次",
+            "BufCarried": "200141",
+            "SkillIcon": "Icon_entry_10036",
+            "icon": "Icon_entry_10036",
+            "Status": 1,
+            "weight": 122,
+            "id": "2001",
+            "level": 4
+          },
+          {
+            "_id": {
+              "timestamp": 1696936931,
+              "date": 1696936931000
+            },
+            "ID": "40042",
+            "name": "回避模组",
+            "SpecificEffects": "回避率提升<color=#F74848>5%</color>",
+            "BufCarried": "400421",
+            "SkillIcon": "Icon_entry_40041",
+            "icon": "Icon_entry_40041",
+            "Status": 1,
+            "weight": 882,
+            "id": "4004",
+            "level": 2
+          }
+        ],
+        "icon": "Icon_mecha_wap1011",
+        "introduce": "OS-07X 都卜勒\n黑曜石以OS-06F 狄安娜的实战数据为基础开发的高性能轻型机兵之一。\n作为高机动试作型的斩首机，该机安装了由“伊甸核心”改进而来的“Zweihander”战斗核心。\n同时，开发者对该机的推荐系统做出了一定强化，四肢与躯干的平衡也做出了一定调整，以确保最大化杀伤能力。",
+        "mechaIcon": "Icon_wap1011_1",
+        "lihuiIcon": "icon_lihui_wap1011",
+        "Status": 1,
+        "weight": 12,
+        "manji": {
+          "name": "都卜勒",
+          "durable": "8341",
+          "Armor": "470",
+          "fire": "1157",
+          "output": "1425",
+          "Antiriot": "4472",
+          "Interface": "Ⅱ型接口",
+          "ModuleCarried": [
+            {
+              "_id": {
+                "timestamp": 1696936930,
+                "date": 1696936930000
+              },
+              "ID": "30058",
+              "name": "运动模组",
+              "SpecificEffects": "主动攻击对战前每移动<color=#F74848>1</color>格，伤害提升<color=#F74848>4.5%</color>，最多<color=#F74848>18%</color>；\n机兵移动力增加<color=#F74848>1</color>格",
+              "BufCarried": "300581",
+              "SkillIcon": "Icon_entry_10051",
+              "icon": "Icon_entry_10051",
+              "Status": 1,
+              "weight": 440,
+              "id": "3005",
+              "level": 8
+            },
+            {
+              "_id": {
+                "timestamp": 1696936929,
+                "date": 1696936929000
+              },
+              "ID": "20014",
+              "name": "人机链接",
+              "SpecificEffects": "主动攻击对战时<color=#F74848>100%</color>概率触发<buf ID=900001>[追击]</buf>，造成<color=#F74848>0.3</color>倍伤害，每回合最多发动<color=#F74848>1</color>次",
+              "BufCarried": "200141",
+              "SkillIcon": "Icon_entry_10036",
+              "icon": "Icon_entry_10036",
+              "Status": 1,
+              "weight": 122,
+              "id": "2001",
+              "level": 4
+            },
+            {
+              "_id": {
+                "timestamp": 1696936931,
+                "date": 1696936931000
+              },
+              "ID": "40044",
+              "name": "回避模组",
+              "SpecificEffects": "回避率提升<color=#F74848>10%</color>",
+              "BufCarried": "400441",
+              "SkillIcon": "Icon_entry_40041",
+              "icon": "Icon_entry_40041",
+              "Status": 1,
+              "weight": 884,
+              "id": "4004",
+              "level": 4
+            }
+          ],
+          "Status": 1,
+          "weight": 12
+        }
+      },
+      {
+        "ID": "10110203",
+        "name": "都卜勒",
+        "position": "左臂",
+        "type": "Light",
+        "quality": "SSR",
+        "aircraftWeight": "85",
+        "durable": "150",
+        "Armor": "32",
+        "fire": "118",
+        "Hit": "299",
+        "Interface": "Ⅰ型接口",
+        "ModuleCarried": "2001:1/4004:1/",
+        "introduce": "OS-07X 都卜勒\n黑曜石以OS-06F 狄安娜的实战数据为基础开发的高性能轻型机兵之一。\n作为高机动试作型的斩首机，该机安装了由“伊甸核心”改进而来的“Zweihander”战斗核心。\n同时，开发者对该机的推荐系统做出了一定强化，四肢与躯干的平衡也做出了一定调整，以确保最大化杀伤能力。",
+        "mechaIcon": "Icon_wap1011_2",
+        "Status": 1,
+        "weight": 13,
+        "manji": {
+          "name": "都卜勒",
+          "durable": "4170",
+          "Armor": "313",
+          "fire": "1157",
+          "Hit": "1736",
+          "Interface": "Ⅱ型接口",
+          "ModuleCarried": "2001:1/3005:2/4004:1/",
+          "Status": 1,
+          "weight": 13
+        }
+      },
+      {
+        "ID": "10110303",
+        "name": "都卜勒",
+        "position": "右臂",
+        "type": "Light",
+        "quality": "SSR",
+        "aircraftWeight": "85",
+        "durable": "150",
+        "Armor": "32",
+        "fire": "118",
+        "Hit": "299",
+        "Interface": "Ⅰ型接口",
+        "ModuleCarried": "2001:1/4004:1/",
+        "introduce": "OS-07X 都卜勒\n黑曜石以OS-06F 狄安娜的实战数据为基础开发的高性能轻型机兵之一。\n作为高机动试作型的斩首机，该机安装了由“伊甸核心”改进而来的“Zweihander”战斗核心。\n同时，开发者对该机的推荐系统做出了一定强化，四肢与躯干的平衡也做出了一定调整，以确保最大化杀伤能力。",
+        "mechaIcon": "Icon_wap1011_3",
+        "Status": 1,
+        "weight": 14,
+        "manji": {
+          "name": "都卜勒",
+          "durable": "4170",
+          "Armor": "313",
+          "fire": "1157",
+          "Hit": "1736",
+          "Interface": "Ⅱ型接口",
+          "ModuleCarried": "2001:1/3005:2/4004:1/",
+          "Status": 1,
+          "weight": 14
+        }
+      },
+      {
+        "ID": "10110403",
+        "name": "都卜勒",
+        "position": "腿部",
+        "type": "Light",
+        "quality": "SSR",
+        "aircraftWeight": "165",
+        "durable": "226",
+        "Armor": "32",
+        "fire": "118",
+        "Dodge": "901",
+        "move": "4000",
+        "Interface": "Ⅰ型接口",
+        "ModuleCarried": "2001:1/3005:1/",
+        "introduce": "OS-07X 都卜勒\n黑曜石以OS-06F 狄安娜的实战数据为基础开发的高性能轻型机兵之一。\n作为高机动试作型的斩首机，该机安装了由“伊甸核心”改进而来的“Zweihander”战斗核心。\n同时，开发者对该机的推荐系统做出了一定强化，四肢与躯干的平衡也做出了一定调整，以确保最大化杀伤能力。",
+        "mechaIcon": "Icon_wap1011_4",
+        "Status": 1,
+        "weight": 15,
+        "manji": {
+          "name": "都卜勒",
+          "durable": "6283",
+          "Armor": "313",
+          "fire": "1157",
+          "Dodge": "5233",
+          "move": "4000",
+          "Interface": "Ⅱ型接口",
+          "ModuleCarried": "2001:1/3005:2/4004:1/",
+          "Status": 1,
+          "weight": 15
+        }
+      }
+    ],
+    "now": "2026-07-08 08:25:31"
+  },
+  "status": 1,
+  "switch": null,
+  "info": 0
+}

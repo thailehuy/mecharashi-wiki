@@ -1,1 +1,230 @@
-{"data":{"data":[{"ID":"10350103","name":"Hela","position":"Body","type":"Light","quality":"SSR","aircraftWeight":"285","durable":"294","Armor":"48","fire":"111","output":"1515","Antiriot":"770","Interface":"Connector I","ModuleCarried":[{"_id":{"timestamp":1750678046,"date":1750678046000},"ID":"30192","name":"Mitigation Mod","SpecificEffects":"If unable to retaliate in combat, Dodge Rate <color=#F74848>+4%</color>.","BufCarried":"301921","SkillIcon":"Icon_entry_10028","icon":"Icon_entry_10028","Status":1,"weight":358,"lang":"en","id":"3019","level":2},{"_id":{"timestamp":1750678045,"date":1750678045000},"ID":"20254","name":"Garm Unit","SpecificEffects":"During the Enemy Turn, DMG <color=#F74848>+30%</color>.","BufCarried":"202541","SkillIcon":"Icon_entry_10020","icon":"Icon_entry_10020","Status":1,"weight":212,"lang":"en","id":"2025","level":4},{"_id":{"timestamp":1750678046,"date":1750678046000},"ID":"40022","name":"Crit Rate Mod","SpecificEffects":"Crit Rate <color=#F74848>+5%</color>.","BufCarried":"400221","SkillIcon":"Icon_entry_40021","icon":"Icon_entry_40021","Status":1,"weight":414,"lang":"en","id":"4002","level":2}],"icon":"Icon_mecha_wap1035","introduce":"OS-13S Hela\nA light ST designed by the Cicero Laboratory and workshopped by Obsidian before production.\nThis model was specially designed for Predators, and is optimized for enhanced mobility and survival capabilities.\nThe cockpit of the Hela is equipped with a \"Garm Unit\" that can collect information on the battlefield. In certain situations this unit can facilitate increased pilot-ST integration.","mechaIcon":"Icon_wap1035_1","lihuiIcon":"icon_lihui_wap1035","Status":1,"weight":48,"lang":"en","manji":{"name":"Hela","durable":"2546","Armor":"213","fire":"492","output":"1515","Antiriot":"2477","Interface":"Connector II","ModuleCarried":[{"_id":{"timestamp":1750678046,"date":1750678046000},"ID":"30198","name":"Mitigation Mod","SpecificEffects":"If unable to retaliate in combat, Dodge Rate <color=#F74848>+18%</color>.\nAfter performing a perfect dodge, gain <buf ID=7100901>[Movement UP]</buf>, lasting for <color=#F74848>1</color> turn.","BufCarried":"301981/301983","SkillIcon":"Icon_entry_10028","icon":"Icon_entry_10028","Status":1,"weight":364,"lang":"en","id":"3019","level":8},{"_id":{"timestamp":1750678045,"date":1750678045000},"ID":"20254","name":"Garm Unit","SpecificEffects":"During the Enemy Turn, DMG <color=#F74848>+30%</color>.","BufCarried":"202541","SkillIcon":"Icon_entry_10020","icon":"Icon_entry_10020","Status":1,"weight":212,"lang":"en","id":"2025","level":4},{"_id":{"timestamp":1750678046,"date":1750678046000},"ID":"40024","name":"Crit Rate Mod","SpecificEffects":"Crit Rate <color=#F74848>+10%</color>.","BufCarried":"400241","SkillIcon":"Icon_entry_40021","icon":"Icon_entry_40021","Status":1,"weight":416,"lang":"en","id":"4002","level":4}],"Status":1,"weight":48,"lang":"en"}},{"ID":"10350203","name":"Hela","position":"L-Arm","type":"Light","quality":"SSR","aircraftWeight":"60","durable":"133","Armor":"32","fire":"111","Hit":"340","Interface":"Connector I","ModuleCarried":"2025:1/4002:1/","introduce":"OS-13S Hela\nA light ST designed by the Cicero Laboratory and workshopped by Obsidian before production.\nThis model was specially designed for Predators, and is optimized for enhanced mobility and survival capabilities.\nThe cockpit of the Hela is equipped with a \"Garm Unit\" that can collect information on the battlefield. In certain situations this unit can facilitate increased pilot-ST integration.","mechaIcon":"Icon_wap1035_2","Status":1,"weight":49,"lang":"en","manji":{"name":"Hela","durable":"1152","Armor":"142","fire":"492","Hit":"1094","Interface":"Connector II","ModuleCarried":"2025:1/3019:2/4002:1/","Status":1,"weight":49,"lang":"en"}},{"ID":"10350303","name":"Hela","position":"R-Arm","type":"Light","quality":"SSR","aircraftWeight":"60","durable":"133","Armor":"32","fire":"111","Hit":"340","Interface":"Connector I","ModuleCarried":"2025:1/4002:1/","introduce":"OS-13S Hela\nA light ST designed by the Cicero Laboratory and workshopped by Obsidian before production.\nThis model was specially designed for Predators, and is optimized for enhanced mobility and survival capabilities.\nThe cockpit of the Hela is equipped with a \"Garm Unit\" that can collect information on the battlefield. In certain situations this unit can facilitate increased pilot-ST integration.","mechaIcon":"Icon_wap1035_3","Status":1,"weight":50,"lang":"en","manji":{"name":"Hela","durable":"1152","Armor":"142","fire":"492","Hit":"1094","Interface":"Connector II","ModuleCarried":"2025:1/3019:2/4002:1/","Status":1,"weight":50,"lang":"en"}},{"ID":"10350403","name":"Hela","position":"Legs","type":"Light","quality":"SSR","aircraftWeight":"160","durable":"231","Armor":"32","fire":"111","Dodge":"901","move":"4000","Interface":"Connector I","ModuleCarried":"2025:1/3019:1/","introduce":"OS-13S Hela\nA light ST designed by the Cicero Laboratory and workshopped by Obsidian before production.\nThis model was specially designed for Predators, and is optimized for enhanced mobility and survival capabilities.\nThe cockpit of the Hela is equipped with a \"Garm Unit\" that can collect information on the battlefield. In certain situations this unit can facilitate increased pilot-ST integration.","mechaIcon":"Icon_wap1035_4","Status":1,"weight":51,"lang":"en","manji":{"name":"Hela","durable":"2000","Armor":"142","fire":"492","Dodge":"2899","move":"4000","Interface":"Connector II","ModuleCarried":"2025:1/3019:2/4002:1/","Status":1,"weight":51,"lang":"en"}}],"now":"2026-06-24 19:16:35"},"status":1,"switch":null,"info":0}
+{
+  "data": {
+    "data": [
+      {
+        "ID": "10350103",
+        "name": "海拉",
+        "position": "躯干",
+        "type": "Light",
+        "quality": "SSR",
+        "aircraftWeight": "285",
+        "durable": "294",
+        "Armor": "48",
+        "fire": "111",
+        "output": "1515",
+        "Antiriot": "770",
+        "Interface": "Ⅰ型接口",
+        "ModuleCarried": [
+          {
+            "_id": {
+              "timestamp": 1696936930,
+              "date": 1696936930000
+            },
+            "ID": "30192",
+            "name": "避害模组",
+            "SpecificEffects": "遭受攻击对战时，若无法反击，回避率提升<color=#F74848>4%</color>",
+            "BufCarried": "301921",
+            "SkillIcon": "Icon_entry_10028",
+            "icon": "Icon_entry_10028",
+            "Status": 1,
+            "weight": 546,
+            "id": "3019",
+            "level": 2
+          },
+          {
+            "_id": {
+              "timestamp": 1696936930,
+              "date": 1696936930000
+            },
+            "ID": "20254",
+            "name": "加姆装置",
+            "SpecificEffects": "进入敌方回合后，伤害提升<color=#F74848>30%</color>",
+            "BufCarried": "202541",
+            "SkillIcon": "Icon_entry_10020",
+            "icon": "Icon_entry_10020",
+            "Status": 1,
+            "weight": 218,
+            "id": "2025",
+            "level": 4
+          },
+          {
+            "_id": {
+              "timestamp": 1696936931,
+              "date": 1696936931000
+            },
+            "ID": "40022",
+            "name": "暴击模组",
+            "SpecificEffects": "暴击率提升<color=#F74848>5%</color>",
+            "BufCarried": "400221",
+            "SkillIcon": "Icon_entry_40021",
+            "icon": "Icon_entry_40021",
+            "Status": 1,
+            "weight": 866,
+            "id": "4002",
+            "level": 2
+          }
+        ],
+        "icon": "Icon_mecha_wap1035",
+        "introduce": "OS-13S 海拉\n由西塞罗实验室设计，经黑曜石改良后生产的轻型机兵。\n该机是为掠食者打造的特殊型号，研发重心为强化机体的突进与生存能力。\n海拉的驾驶舱内安装有“加姆装置”，可在战斗中的收集素体情报，根据战况即时给予强化，实现一定程度的人机同步。",
+        "mechaIcon": "Icon_wap1035_1",
+        "lihuiIcon": "icon_lihui_wap1035",
+        "Status": 1,
+        "weight": 68,
+        "manji": {
+          "name": "海拉",
+          "durable": "8174",
+          "Armor": "470",
+          "fire": "1088",
+          "output": "1515",
+          "Antiriot": "4472",
+          "Interface": "Ⅱ型接口",
+          "ModuleCarried": [
+            {
+              "_id": {
+                "timestamp": 1696936930,
+                "date": 1696936930000
+              },
+              "ID": "30198",
+              "name": "避害模组",
+              "SpecificEffects": "遭受攻击对战时，若无法反击，回避率提升<color=#F74848>18%</color>；\n完全回避后使自身获得<buf ID=7100901>[移动力提升]</buf>，持续<color=#F74848>1</color>回合",
+              "BufCarried": "301981/301983",
+              "SkillIcon": "Icon_entry_10028",
+              "icon": "Icon_entry_10028",
+              "Status": 1,
+              "weight": 552,
+              "id": "3019",
+              "level": 8
+            },
+            {
+              "_id": {
+                "timestamp": 1696936930,
+                "date": 1696936930000
+              },
+              "ID": "20254",
+              "name": "加姆装置",
+              "SpecificEffects": "进入敌方回合后，伤害提升<color=#F74848>30%</color>",
+              "BufCarried": "202541",
+              "SkillIcon": "Icon_entry_10020",
+              "icon": "Icon_entry_10020",
+              "Status": 1,
+              "weight": 218,
+              "id": "2025",
+              "level": 4
+            },
+            {
+              "_id": {
+                "timestamp": 1696936931,
+                "date": 1696936931000
+              },
+              "ID": "40024",
+              "name": "暴击模组",
+              "SpecificEffects": "暴击率提升<color=#F74848>10%</color>",
+              "BufCarried": "400241",
+              "SkillIcon": "Icon_entry_40021",
+              "icon": "Icon_entry_40021",
+              "Status": 1,
+              "weight": 868,
+              "id": "4002",
+              "level": 4
+            }
+          ],
+          "Status": 1,
+          "weight": 68
+        }
+      },
+      {
+        "ID": "10350203",
+        "name": "海拉",
+        "position": "左臂",
+        "type": "Light",
+        "quality": "SSR",
+        "aircraftWeight": "60",
+        "durable": "133",
+        "Armor": "32",
+        "fire": "111",
+        "Hit": "340",
+        "Interface": "Ⅰ型接口",
+        "ModuleCarried": "2025:1/4002:1/",
+        "introduce": "OS-13S 海拉\n由西塞罗实验室设计，经黑曜石改良后生产的轻型机兵。\n该机是为掠食者打造的特殊型号，研发重心为强化机体的突进与生存能力。\n海拉的驾驶舱内安装有“加姆装置”，可在战斗中的收集素体情报，根据战况即时给予强化，实现一定程度的人机同步。",
+        "mechaIcon": "Icon_wap1035_2",
+        "Status": 1,
+        "weight": 69,
+        "manji": {
+          "name": "海拉",
+          "durable": "3697",
+          "Armor": "313",
+          "fire": "1088",
+          "Hit": "1974",
+          "Interface": "Ⅱ型接口",
+          "ModuleCarried": "2025:1/3019:2/4002:1/",
+          "Status": 1,
+          "weight": 69
+        }
+      },
+      {
+        "ID": "10350303",
+        "name": "海拉",
+        "position": "右臂",
+        "type": "Light",
+        "quality": "SSR",
+        "aircraftWeight": "60",
+        "durable": "133",
+        "Armor": "32",
+        "fire": "111",
+        "Hit": "340",
+        "Interface": "Ⅰ型接口",
+        "ModuleCarried": "2025:1/4002:1/",
+        "introduce": "OS-13S 海拉\n由西塞罗实验室设计，经黑曜石改良后生产的轻型机兵。\n该机是为掠食者打造的特殊型号，研发重心为强化机体的突进与生存能力。\n海拉的驾驶舱内安装有“加姆装置”，可在战斗中的收集素体情报，根据战况即时给予强化，实现一定程度的人机同步。",
+        "mechaIcon": "Icon_wap1035_3",
+        "Status": 1,
+        "weight": 70,
+        "manji": {
+          "name": "海拉",
+          "durable": "3697",
+          "Armor": "313",
+          "fire": "1088",
+          "Hit": "1974",
+          "Interface": "Ⅱ型接口",
+          "ModuleCarried": "2025:1/3019:2/4002:1/",
+          "Status": 1,
+          "weight": 70
+        }
+      },
+      {
+        "ID": "10350403",
+        "name": "海拉",
+        "position": "腿部",
+        "type": "Light",
+        "quality": "SSR",
+        "aircraftWeight": "160",
+        "durable": "231",
+        "Armor": "32",
+        "fire": "111",
+        "Dodge": "901",
+        "move": "4000",
+        "Interface": "Ⅰ型接口",
+        "ModuleCarried": "2025:1/3019:1/",
+        "introduce": "OS-13S 海拉\n由西塞罗实验室设计，经黑曜石改良后生产的轻型机兵。\n该机是为掠食者打造的特殊型号，研发重心为强化机体的突进与生存能力。\n海拉的驾驶舱内安装有“加姆装置”，可在战斗中的收集素体情报，根据战况即时给予强化，实现一定程度的人机同步。",
+        "mechaIcon": "Icon_wap1035_4",
+        "Status": 1,
+        "weight": 71,
+        "manji": {
+          "name": "海拉",
+          "durable": "6422",
+          "Armor": "313",
+          "fire": "1088",
+          "Dodge": "5233",
+          "move": "4000",
+          "Interface": "Ⅱ型接口",
+          "ModuleCarried": "2025:1/3019:2/4002:1/",
+          "Status": 1,
+          "weight": 71
+        }
+      }
+    ],
+    "now": "2026-07-08 08:25:40"
+  },
+  "status": 1,
+  "switch": null,
+  "info": 0
+}

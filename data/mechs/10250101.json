@@ -1,1 +1,118 @@
-{"data":{"data":[{"ID":"10250101","name":"Ursprung","position":"Body","type":"Light","quality":"R","aircraftWeight":"350","durable":"202","Armor":"24","fire":"77","output":"1350","Antiriot":"578","icon":"Icon_mecha_wap1025","introduce":"NED-00 Ursprung\nA prototype ST designed and produced by Laniakea. \nOriginally designed to carry a specialization unit called the \"Testee,\" this ST was eventually dismantled for unknown reasons.\nOnly a few of these models exist. Their overall performance is slightly higher than the first-generation models currently deployed.","mechaIcon":"Icon_wap1025_1","lihuiIcon":"icon_lihui_wap1025","Status":1,"weight":36,"lang":"en","manji":{"name":"Ursprung","durable":"1764","Armor":"107","fire":"344","output":"1350","Antiriot":"1768","Status":1,"weight":36,"lang":"en","ModuleCarried":[]},"ModuleCarried":[]},{"ID":"10250201","name":"Ursprung","position":"L-Arm","type":"Light","quality":"R","aircraftWeight":"100","durable":"101","Armor":"16","fire":"77","Hit":"224","introduce":"NED-00 Ursprung\nA prototype ST designed and produced by Laniakea. \nOriginally designed to carry a specialization unit called the \"Testee,\" this ST was eventually dismantled for unknown reasons.\nOnly a few of these models exist. Their overall performance is slightly higher than the first-generation models currently deployed.","mechaIcon":"Icon_wap1025_2","Status":1,"weight":37,"lang":"en","manji":{"name":"Ursprung","durable":"882","Armor":"71","fire":"344","Hit":"685","Status":1,"weight":37,"lang":"en"}},{"ID":"10250301","name":"Ursprung","position":"R-Arm","type":"Light","quality":"R","aircraftWeight":"100","durable":"101","Armor":"16","fire":"77","Hit":"224","introduce":"NED-00 Ursprung\nA prototype ST designed and produced by Laniakea. \nOriginally designed to carry a specialization unit called the \"Testee,\" this ST was eventually dismantled for unknown reasons.\nOnly a few of these models exist. Their overall performance is slightly higher than the first-generation models currently deployed.","mechaIcon":"Icon_wap1025_3","Status":1,"weight":38,"lang":"en","manji":{"name":"Ursprung","durable":"882","Armor":"71","fire":"344","Hit":"685","Status":1,"weight":38,"lang":"en"}},{"ID":"10250401","name":"Ursprung","position":"Legs","type":"Light","quality":"R","aircraftWeight":"200","durable":"151","Armor":"16","fire":"77","Dodge":"676","move":"4000","introduce":"NED-00 Ursprung\nA prototype ST designed and produced by Laniakea. \nOriginally designed to carry a specialization unit called the \"Testee,\" this ST was eventually dismantled for unknown reasons.\nOnly a few of these models exist. Their overall performance is slightly higher than the first-generation models currently deployed.","mechaIcon":"Icon_wap1025_4","Status":1,"weight":39,"lang":"en","manji":{"name":"Ursprung","durable":"1318","Armor":"71","fire":"344","Dodge":"2068","move":"4000","Status":1,"weight":39,"lang":"en"}}],"now":"2026-06-24 19:16:34"},"status":1,"switch":null,"info":0}
+{
+  "data": {
+    "data": [
+      {
+        "ID": "10250101",
+        "name": "原点",
+        "position": "躯干",
+        "type": "Light",
+        "quality": "R",
+        "aircraftWeight": "350",
+        "durable": "202",
+        "Armor": "24",
+        "fire": "77",
+        "output": "1350",
+        "Antiriot": "578",
+        "icon": "Icon_mecha_wap1025",
+        "introduce": "NED-00 原点\n拉尼亚凯亚设计并主导制造的先行验证型机兵。\n数据表明该机曾搭载名为“受验者”的特化单元，但由于不明原因最终拆除了该单元。\n该机已知存量不多，总体性能略高于目前各势力列装的第一世代机兵。",
+        "mechaIcon": "Icon_wap1025_1",
+        "lihuiIcon": "icon_lihui_wap1025",
+        "Status": 1,
+        "weight": 44,
+        "manji": {
+          "name": "原点",
+          "durable": "5662",
+          "Armor": "237",
+          "fire": "761",
+          "output": "1350",
+          "Antiriot": "3192",
+          "Status": 1,
+          "weight": 44,
+          "ModuleCarried": []
+        },
+        "ModuleCarried": []
+      },
+      {
+        "ID": "10250201",
+        "name": "原点",
+        "position": "左臂",
+        "type": "Light",
+        "quality": "R",
+        "aircraftWeight": "100",
+        "durable": "101",
+        "Armor": "16",
+        "fire": "77",
+        "Hit": "224",
+        "introduce": "NED-00 原点\n拉尼亚凯亚设计并主导制造的先行验证型机兵。\n数据表明该机曾搭载名为“受验者”的特化单元，但由于不明原因最终拆除了该单元。\n该机已知存量不多，总体性能略高于目前各势力列装的第一世代机兵。",
+        "mechaIcon": "Icon_wap1025_2",
+        "Status": 1,
+        "weight": 45,
+        "manji": {
+          "name": "原点",
+          "durable": "2831",
+          "Armor": "158",
+          "fire": "761",
+          "Hit": "1237",
+          "Status": 1,
+          "weight": 45
+        }
+      },
+      {
+        "ID": "10250301",
+        "name": "原点",
+        "position": "右臂",
+        "type": "Light",
+        "quality": "R",
+        "aircraftWeight": "100",
+        "durable": "101",
+        "Armor": "16",
+        "fire": "77",
+        "Hit": "224",
+        "introduce": "NED-00 原点\n拉尼亚凯亚设计并主导制造的先行验证型机兵。\n数据表明该机曾搭载名为“受验者”的特化单元，但由于不明原因最终拆除了该单元。\n该机已知存量不多，总体性能略高于目前各势力列装的第一世代机兵。",
+        "mechaIcon": "Icon_wap1025_3",
+        "Status": 1,
+        "weight": 46,
+        "manji": {
+          "name": "原点",
+          "durable": "2831",
+          "Armor": "158",
+          "fire": "761",
+          "Hit": "1237",
+          "Status": 1,
+          "weight": 46
+        }
+      },
+      {
+        "ID": "10250401",
+        "name": "原点",
+        "position": "腿部",
+        "type": "Light",
+        "quality": "R",
+        "aircraftWeight": "200",
+        "durable": "151",
+        "Armor": "16",
+        "fire": "77",
+        "Dodge": "676",
+        "move": "4000",
+        "introduce": "NED-00 原点\n拉尼亚凯亚设计并主导制造的先行验证型机兵。\n数据表明该机曾搭载名为“受验者”的特化单元，但由于不明原因最终拆除了该单元。\n该机已知存量不多，总体性能略高于目前各势力列装的第一世代机兵。",
+        "mechaIcon": "Icon_wap1025_4",
+        "Status": 1,
+        "weight": 47,
+        "manji": {
+          "name": "原点",
+          "durable": "4232",
+          "Armor": "158",
+          "fire": "761",
+          "Dodge": "3733",
+          "move": "4000",
+          "Status": 1,
+          "weight": 47
+        }
+      }
+    ],
+    "now": "2026-07-08 08:25:37"
+  },
+  "status": 1,
+  "switch": null,
+  "info": 0
+}

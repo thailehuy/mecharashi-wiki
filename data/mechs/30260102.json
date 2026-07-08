@@ -1,1 +1,194 @@
-{"data":{"data":[{"ID":"30260102","name":"Charon","position":"Body","type":"Heavy","quality":"SR","aircraftWeight":"405","durable":"321","Armor":"108","fire":"82","output":"1825","Antiriot":"655","ModuleCarried":[{"_id":{"timestamp":1750678044,"date":1750678044000},"ID":"10084","name":"Buffering Unit","SpecificEffects":"When taking damage, there is a <color=#F74848>70%</color> chance to trigger: Armor <color=#F74848>+45%</color>.","BufCarried":"100841","SkillIcon":"Icon_entry_10015","icon":"Icon_entry_10015","Status":1,"weight":100,"lang":"en","id":"1008","level":4}],"icon":"Icon_mecha_wap3026","introduce":"ASX-117 Charon\nA heavy ST produced by An-Holt, specialized in defense and based on the ASX-114.\nThe ASX-117 combat core is equipped with additional impact-resistant components when compared to the ASX-114 used by Gamesaurs, and its armor has been replaced with more robust and complete protective plates. These upgrades in armor make Charon the most significant and heaviest model among contemporary heavy STs.","mechaIcon":"Icon_wap3026_1","lihuiIcon":"icon_lihui_wap3026","Status":1,"weight":156,"lang":"en","manji":{"name":"Charon","durable":"2917","Armor":"503","fire":"382","output":"1825","Antiriot":"2073","Interface":"Connector I","ModuleCarried":[{"_id":{"timestamp":1750678044,"date":1750678044000},"ID":"10084","name":"Buffering Unit","SpecificEffects":"When taking damage, there is a <color=#F74848>70%</color> chance to trigger: Armor <color=#F74848>+45%</color>.","BufCarried":"100841","SkillIcon":"Icon_entry_10015","icon":"Icon_entry_10015","Status":1,"weight":100,"lang":"en","id":"1008","level":4},{"_id":{"timestamp":1750678046,"date":1750678046000},"ID":"30152","name":"Adaptive Mod","SpecificEffects":"When HP is below <color=#F74848>50%</color>, DMG Taken <color=#F74848>-4%</color>.","BufCarried":"301521","SkillIcon":"Icon_entry_10057","icon":"Icon_entry_10057","Status":1,"weight":326,"lang":"en","id":"3015","level":2},{"_id":{"timestamp":1750678047,"date":1750678047000},"ID":"40064","name":"Armor Mod","SpecificEffects":"Armor <color=#F74848>+35%</color>.","BufCarried":"400641","SkillIcon":"Icon_entry_40061","icon":"Icon_entry_40061","Status":1,"weight":448,"lang":"en","id":"4006","level":4}],"Status":1,"weight":156,"lang":"en"}},{"ID":"30260202","name":"Charon","position":"L-Arm","type":"Heavy","quality":"SR","aircraftWeight":"165","durable":"161","Armor":"72","fire":"82","Hit":"245","ModuleCarried":"1008:1/","introduce":"ASX-117 Charon\nA heavy ST produced by An-Holt, specialized in defense and based on the ASX-114.\nThe ASX-117 combat core is equipped with additional impact-resistant components when compared to the ASX-114 used by Gamesaurs, and its armor has been replaced with more robust and complete protective plates. These upgrades in armor make Charon the most significant and heaviest model among contemporary heavy STs.","mechaIcon":"Icon_wap3026_2","Status":1,"weight":157,"lang":"en","manji":{"name":"Charon","durable":"1463","Armor":"335","fire":"382","Hit":"775","Interface":"Connector II","ModuleCarried":"1008:1/4006:1/","Status":1,"weight":157,"lang":"en"}},{"ID":"30260302","name":"Charon","position":"R-Arm","type":"Heavy","quality":"SR","aircraftWeight":"165","durable":"161","Armor":"72","fire":"82","Hit":"245","ModuleCarried":"1008:1/","introduce":"ASX-117 Charon\nA heavy ST produced by An-Holt, specialized in defense and based on the ASX-114.\nThe ASX-117 combat core is equipped with additional impact-resistant components when compared to the ASX-114 used by Gamesaurs, and its armor has been replaced with more robust and complete protective plates. These upgrades in armor make Charon the most significant and heaviest model among contemporary heavy STs.","mechaIcon":"Icon_wap3026_3","Status":1,"weight":158,"lang":"en","manji":{"name":"Charon","durable":"1463","Armor":"335","fire":"382","Hit":"775","Interface":"Connector II","ModuleCarried":"1008:1/4006:1/","Status":1,"weight":158,"lang":"en"}},{"ID":"30260402","name":"Charon","position":"Legs","type":"Heavy","quality":"SR","aircraftWeight":"270","durable":"241","Armor":"72","fire":"82","Dodge":"482","move":"3000","ModuleCarried":"1008:1/","introduce":"ASX-117 Charon\nA heavy ST produced by An-Holt, specialized in defense and based on the ASX-114.\nThe ASX-117 combat core is equipped with additional impact-resistant components when compared to the ASX-114 used by Gamesaurs, and its armor has been replaced with more robust and complete protective plates. These upgrades in armor make Charon the most significant and heaviest model among contemporary heavy STs.","mechaIcon":"Icon_wap3026_4","Status":1,"weight":159,"lang":"en","manji":{"name":"Charon","durable":"2190","Armor":"335","fire":"382","Dodge":"1525","move":"3000","Interface":"Connector I","ModuleCarried":"1008:1/3015:1/4006:1/","Status":1,"weight":159,"lang":"en"}}],"now":"2026-06-24 19:16:37"},"status":1,"switch":null,"info":0}
+{
+  "data": {
+    "data": [
+      {
+        "ID": "30260102",
+        "name": "卡戎",
+        "position": "躯干",
+        "type": "Heavy",
+        "quality": "SR",
+        "aircraftWeight": "405",
+        "durable": "321",
+        "Armor": "108",
+        "fire": "82",
+        "output": "1825",
+        "Antiriot": "655",
+        "ModuleCarried": [
+          {
+            "_id": {
+              "timestamp": 1696936929,
+              "date": 1696936929000
+            },
+            "ID": "10084",
+            "name": "缓冲装置",
+            "SpecificEffects": "遭受伤害时有<color=#F74848>70%</color>的概率发动，护甲值提升<color=#F74848>45%</color>",
+            "BufCarried": "100841",
+            "SkillIcon": "Icon_entry_10015",
+            "icon": "Icon_entry_10015",
+            "Status": 1,
+            "weight": 106,
+            "id": "1008",
+            "level": 4
+          }
+        ],
+        "icon": "Icon_mecha_wap3026",
+        "introduce": "ASX-117 卡戎\n由安赫特制造的重型机兵，ASX-114的防护特化型。\n配备的ASX-117机兵核心在鳄龟使用的ASX-114上强化了耐冲击元件，并在机体装甲上采用了更坚固、更全整的防护替换件。这一系列针对防护性的改进，促使卡戎成为同时代重型机兵中最大最重的型号。",
+        "mechaIcon": "Icon_wap3026_1",
+        "lihuiIcon": "icon_lihui_wap3026",
+        "Status": 1,
+        "weight": 276,
+        "manji": {
+          "name": "卡戎",
+          "durable": "9363",
+          "Armor": "1111",
+          "fire": "843",
+          "output": "1825",
+          "Antiriot": "3742",
+          "Interface": "Ⅰ型接口",
+          "ModuleCarried": [
+            {
+              "_id": {
+                "timestamp": 1696936929,
+                "date": 1696936929000
+              },
+              "ID": "10084",
+              "name": "缓冲装置",
+              "SpecificEffects": "遭受伤害时有<color=#F74848>70%</color>的概率发动，护甲值提升<color=#F74848>45%</color>",
+              "BufCarried": "100841",
+              "SkillIcon": "Icon_entry_10015",
+              "icon": "Icon_entry_10015",
+              "Status": 1,
+              "weight": 106,
+              "id": "1008",
+              "level": 4
+            },
+            {
+              "_id": {
+                "timestamp": 1696936930,
+                "date": 1696936930000
+              },
+              "ID": "30152",
+              "name": "自适配模组",
+              "SpecificEffects": "自身的耐久值百分比低于<color=#F74848>50%</color>时，遭受伤害降低<color=#F74848>4%</color>",
+              "BufCarried": "301521",
+              "SkillIcon": "Icon_entry_10057",
+              "icon": "Icon_entry_10057",
+              "Status": 1,
+              "weight": 514,
+              "id": "3015",
+              "level": 2
+            },
+            {
+              "_id": {
+                "timestamp": 1696936931,
+                "date": 1696936931000
+              },
+              "ID": "40064",
+              "name": "护甲模组",
+              "SpecificEffects": "护甲值提升<color=#F74848>35%</color>",
+              "BufCarried": "400641",
+              "SkillIcon": "Icon_entry_40061",
+              "icon": "Icon_entry_40061",
+              "Status": 1,
+              "weight": 900,
+              "id": "4006",
+              "level": 4
+            }
+          ],
+          "Status": 1,
+          "weight": 276
+        }
+      },
+      {
+        "ID": "30260202",
+        "name": "卡戎",
+        "position": "左臂",
+        "type": "Heavy",
+        "quality": "SR",
+        "aircraftWeight": "165",
+        "durable": "161",
+        "Armor": "72",
+        "fire": "82",
+        "Hit": "245",
+        "ModuleCarried": "1008:1/",
+        "introduce": "ASX-117 卡戎\n由安赫特制造的重型机兵，ASX-114的防护特化型。\n配备的ASX-117机兵核心在鳄龟使用的ASX-114上强化了耐冲击元件，并在机体装甲上采用了更坚固、更全整的防护替换件。这一系列针对防护性的改进，促使卡戎成为同时代重型机兵中最大最重的型号。",
+        "mechaIcon": "Icon_wap3026_2",
+        "Status": 1,
+        "weight": 277,
+        "manji": {
+          "name": "卡戎",
+          "durable": "4696",
+          "Armor": "740",
+          "fire": "843",
+          "Hit": "1399",
+          "Interface": "Ⅱ型接口",
+          "ModuleCarried": "1008:1/4006:1/",
+          "Status": 1,
+          "weight": 277
+        }
+      },
+      {
+        "ID": "30260302",
+        "name": "卡戎",
+        "position": "右臂",
+        "type": "Heavy",
+        "quality": "SR",
+        "aircraftWeight": "165",
+        "durable": "161",
+        "Armor": "72",
+        "fire": "82",
+        "Hit": "245",
+        "ModuleCarried": "1008:1/",
+        "introduce": "ASX-117 卡戎\n由安赫特制造的重型机兵，ASX-114的防护特化型。\n配备的ASX-117机兵核心在鳄龟使用的ASX-114上强化了耐冲击元件，并在机体装甲上采用了更坚固、更全整的防护替换件。这一系列针对防护性的改进，促使卡戎成为同时代重型机兵中最大最重的型号。",
+        "mechaIcon": "Icon_wap3026_3",
+        "Status": 1,
+        "weight": 278,
+        "manji": {
+          "name": "卡戎",
+          "durable": "4696",
+          "Armor": "740",
+          "fire": "843",
+          "Hit": "1399",
+          "Interface": "Ⅱ型接口",
+          "ModuleCarried": "1008:1/4006:1/",
+          "Status": 1,
+          "weight": 278
+        }
+      },
+      {
+        "ID": "30260402",
+        "name": "卡戎",
+        "position": "腿部",
+        "type": "Heavy",
+        "quality": "SR",
+        "aircraftWeight": "270",
+        "durable": "241",
+        "Armor": "72",
+        "fire": "82",
+        "Dodge": "482",
+        "move": "3000",
+        "ModuleCarried": "1008:1/",
+        "introduce": "ASX-117 卡戎\n由安赫特制造的重型机兵，ASX-114的防护特化型。\n配备的ASX-117机兵核心在鳄龟使用的ASX-114上强化了耐冲击元件，并在机体装甲上采用了更坚固、更全整的防护替换件。这一系列针对防护性的改进，促使卡戎成为同时代重型机兵中最大最重的型号。",
+        "mechaIcon": "Icon_wap3026_4",
+        "Status": 1,
+        "weight": 279,
+        "manji": {
+          "name": "卡戎",
+          "durable": "7030",
+          "Armor": "740",
+          "fire": "843",
+          "Dodge": "2753",
+          "move": "3000",
+          "Interface": "Ⅰ型接口",
+          "ModuleCarried": "1008:1/3015:1/4006:1/",
+          "Status": 1,
+          "weight": 279
+        }
+      }
+    ],
+    "now": "2026-07-08 08:26:11"
+  },
+  "status": 1,
+  "switch": null,
+  "info": 0
+}

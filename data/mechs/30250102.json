@@ -1,1 +1,194 @@
-{"data":{"data":[{"ID":"30250102","name":"Swampwalker","position":"Body","type":"Heavy","quality":"SR","aircraftWeight":"400","durable":"293","Armor":"108","fire":"86","output":"1945","Antiriot":"655","ModuleCarried":[{"_id":{"timestamp":1750678044,"date":1750678044000},"ID":"10114","name":"Inner-Cycle Hub","SpecificEffects":"When casting a skill with an AP Cost of <color=#F74848>3</color> or more, there is a <color=#F74848>25%</color> chance to trigger and restore <color=#F74848>1</color> AP after combat.","BufCarried":"101141","SkillIcon":"Icon_entry_10017","icon":"Icon_entry_10017","Status":1,"weight":112,"lang":"en","id":"1011","level":4}],"icon":"Icon_mecha_wap3025","introduce":"HU-21 Swampwalker\nThe UKB-1 designed this heavy tactical ST to tackle the unique terrain of jungle regions.\nIt is best suited for providing firepower support during rainforest combat. With its unique joint design and suspension, it can smoothly traverse swamps and maintain balance even under intense fire.","mechaIcon":"Icon_wap3025_1","lihuiIcon":"icon_lihui_wap3025","Status":1,"weight":152,"lang":"en","manji":{"name":"Swampwalker","durable":"2662","Armor":"503","fire":"400","output":"1945","Antiriot":"2073","Interface":"Connector I","ModuleCarried":[{"_id":{"timestamp":1750678045,"date":1750678045000},"ID":"30072","name":"Breaker Mod","SpecificEffects":"When casting an AoE Attack, DMG Dealt <color=#F74848>+4%</color>.","BufCarried":"300721","SkillIcon":"Icon_entry_10053","icon":"Icon_entry_10053","Status":1,"weight":262,"lang":"en","id":"3007","level":2},{"_id":{"timestamp":1750678044,"date":1750678044000},"ID":"10114","name":"Inner-Cycle Hub","SpecificEffects":"When casting a skill with an AP Cost of <color=#F74848>3</color> or more, there is a <color=#F74848>25%</color> chance to trigger and restore <color=#F74848>1</color> AP after combat.","BufCarried":"101141","SkillIcon":"Icon_entry_10017","icon":"Icon_entry_10017","Status":1,"weight":112,"lang":"en","id":"1011","level":4},{"_id":{"timestamp":1750678047,"date":1750678047000},"ID":"40094","name":"Tending Mod","SpecificEffects":"Received Repair AMT <color=#F74848>+10%</color>.","BufCarried":"400941","SkillIcon":"Icon_entry_40091","icon":"Icon_entry_40091","Status":1,"weight":472,"lang":"en","id":"4009","level":4}],"Status":1,"weight":152,"lang":"en"}},{"ID":"30250202","name":"Swampwalker","position":"L-Arm","type":"Heavy","quality":"SR","aircraftWeight":"160","durable":"174","Armor":"72","fire":"86","Hit":"219","ModuleCarried":"1011:1/","introduce":"HU-21 Swampwalker\nThe UKB-1 designed this heavy tactical ST to tackle the unique terrain of jungle regions.\nIt is best suited for providing firepower support during rainforest combat. With its unique joint design and suspension, it can smoothly traverse swamps and maintain balance even under intense fire.","mechaIcon":"Icon_wap3025_2","Status":1,"weight":153,"lang":"en","manji":{"name":"Swampwalker","durable":"1581","Armor":"335","fire":"400","Hit":"693","Interface":"Connector II","ModuleCarried":"1011:1/4009:1/","Status":1,"weight":153,"lang":"en"}},{"ID":"30250302","name":"Swampwalker","position":"R-Arm","type":"Heavy","quality":"SR","aircraftWeight":"160","durable":"174","Armor":"72","fire":"86","Hit":"219","ModuleCarried":"1011:1/","introduce":"HU-21 Swampwalker\nThe UKB-1 designed this heavy tactical ST to tackle the unique terrain of jungle regions.\nIt is best suited for providing firepower support during rainforest combat. With its unique joint design and suspension, it can smoothly traverse swamps and maintain balance even under intense fire.","mechaIcon":"Icon_wap3025_3","Status":1,"weight":154,"lang":"en","manji":{"name":"Swampwalker","durable":"1581","Armor":"335","fire":"400","Hit":"693","Interface":"Connector II","ModuleCarried":"1011:1/4009:1/","Status":1,"weight":154,"lang":"en"}},{"ID":"30250402","name":"Swampwalker","position":"Legs","type":"Heavy","quality":"SR","aircraftWeight":"255","durable":"233","Armor":"72","fire":"86","Dodge":"482","move":"3000","ModuleCarried":"1011:1/","introduce":"HU-21 Swampwalker\nThe UKB-1 designed this heavy tactical ST to tackle the unique terrain of jungle regions.\nIt is best suited for providing firepower support during rainforest combat. With its unique joint design and suspension, it can smoothly traverse swamps and maintain balance even under intense fire.","mechaIcon":"Icon_wap3025_4","Status":1,"weight":155,"lang":"en","manji":{"name":"Swampwalker","durable":"2117","Armor":"335","fire":"400","Dodge":"1525","move":"3000","Interface":"Connector I","ModuleCarried":"1011:1/3007:1/4009:1/","Status":1,"weight":155,"lang":"en"}}],"now":"2026-06-24 19:16:37"},"status":1,"switch":null,"info":0}
+{
+  "data": {
+    "data": [
+      {
+        "ID": "30250102",
+        "name": "淤泥",
+        "position": "躯干",
+        "type": "Heavy",
+        "quality": "SR",
+        "aircraftWeight": "400",
+        "durable": "293",
+        "Armor": "108",
+        "fire": "86",
+        "output": "1945",
+        "Antiriot": "655",
+        "ModuleCarried": [
+          {
+            "_id": {
+              "timestamp": 1696936929,
+              "date": 1696936929000
+            },
+            "ID": "10114",
+            "name": "内循环枢纽",
+            "SpecificEffects": "施放AP消耗大于等于<color=#F74848>3</color>的技能时有<color=#F74848>25%</color>的概率发动，战斗后返还<color=#F74848>1</color>AP",
+            "BufCarried": "101141",
+            "SkillIcon": "Icon_entry_10017",
+            "icon": "Icon_entry_10017",
+            "Status": 1,
+            "weight": 118,
+            "id": "1011",
+            "level": 4
+          }
+        ],
+        "icon": "Icon_mecha_wap3025",
+        "introduce": "HU-21 淤泥\n联合设计局为应对丛林地区的特殊地形而打造的重型战术机兵。\n目标是在雨林作战中提供火力支援，拥有特殊的关节和悬挂装置，能够平稳涉水，在猛烈的炮火中也可保持机身平衡。",
+        "mechaIcon": "Icon_wap3025_1",
+        "lihuiIcon": "icon_lihui_wap3025",
+        "Status": 1,
+        "weight": 272,
+        "manji": {
+          "name": "淤泥",
+          "durable": "8547",
+          "Armor": "1111",
+          "fire": "884",
+          "output": "1945",
+          "Antiriot": "3742",
+          "Interface": "Ⅰ型接口",
+          "ModuleCarried": [
+            {
+              "_id": {
+                "timestamp": 1696936930,
+                "date": 1696936930000
+              },
+              "ID": "30072",
+              "name": "破阵模组",
+              "SpecificEffects": "主动使用范围攻击时，造成的伤害提升<color=#F74848>4%</color>",
+              "BufCarried": "300721",
+              "SkillIcon": "Icon_entry_10053",
+              "icon": "Icon_entry_10053",
+              "Status": 1,
+              "weight": 450,
+              "id": "3007",
+              "level": 2
+            },
+            {
+              "_id": {
+                "timestamp": 1696936929,
+                "date": 1696936929000
+              },
+              "ID": "10114",
+              "name": "内循环枢纽",
+              "SpecificEffects": "施放AP消耗大于等于<color=#F74848>3</color>的技能时有<color=#F74848>25%</color>的概率发动，战斗后返还<color=#F74848>1</color>AP",
+              "BufCarried": "101141",
+              "SkillIcon": "Icon_entry_10017",
+              "icon": "Icon_entry_10017",
+              "Status": 1,
+              "weight": 118,
+              "id": "1011",
+              "level": 4
+            },
+            {
+              "_id": {
+                "timestamp": 1696936931,
+                "date": 1696936931000
+              },
+              "ID": "40094",
+              "name": "护理模组",
+              "SpecificEffects": "受修理量提升<color=#F74848>10%</color>",
+              "BufCarried": "400941",
+              "SkillIcon": "Icon_entry_40091",
+              "icon": "Icon_entry_40091",
+              "Status": 1,
+              "weight": 924,
+              "id": "4009",
+              "level": 4
+            }
+          ],
+          "Status": 1,
+          "weight": 272
+        }
+      },
+      {
+        "ID": "30250202",
+        "name": "淤泥",
+        "position": "左臂",
+        "type": "Heavy",
+        "quality": "SR",
+        "aircraftWeight": "160",
+        "durable": "174",
+        "Armor": "72",
+        "fire": "86",
+        "Hit": "219",
+        "ModuleCarried": "1011:1/",
+        "introduce": "HU-21 淤泥\n联合设计局为应对丛林地区的特殊地形而打造的重型战术机兵。\n目标是在雨林作战中提供火力支援，拥有特殊的关节和悬挂装置，能够平稳涉水，在猛烈的炮火中也可保持机身平衡。",
+        "mechaIcon": "Icon_wap3025_2",
+        "Status": 1,
+        "weight": 273,
+        "manji": {
+          "name": "淤泥",
+          "durable": "5075",
+          "Armor": "740",
+          "fire": "884",
+          "Hit": "1251",
+          "Interface": "Ⅱ型接口",
+          "ModuleCarried": "1011:1/4009:1/",
+          "Status": 1,
+          "weight": 273
+        }
+      },
+      {
+        "ID": "30250302",
+        "name": "淤泥",
+        "position": "右臂",
+        "type": "Heavy",
+        "quality": "SR",
+        "aircraftWeight": "160",
+        "durable": "174",
+        "Armor": "72",
+        "fire": "86",
+        "Hit": "219",
+        "ModuleCarried": "1011:1/",
+        "introduce": "HU-21 淤泥\n联合设计局为应对丛林地区的特殊地形而打造的重型战术机兵。\n目标是在雨林作战中提供火力支援，拥有特殊的关节和悬挂装置，能够平稳涉水，在猛烈的炮火中也可保持机身平衡。",
+        "mechaIcon": "Icon_wap3025_3",
+        "Status": 1,
+        "weight": 274,
+        "manji": {
+          "name": "淤泥",
+          "durable": "5075",
+          "Armor": "740",
+          "fire": "884",
+          "Hit": "1251",
+          "Interface": "Ⅱ型接口",
+          "ModuleCarried": "1011:1/4009:1/",
+          "Status": 1,
+          "weight": 274
+        }
+      },
+      {
+        "ID": "30250402",
+        "name": "淤泥",
+        "position": "腿部",
+        "type": "Heavy",
+        "quality": "SR",
+        "aircraftWeight": "255",
+        "durable": "233",
+        "Armor": "72",
+        "fire": "86",
+        "Dodge": "482",
+        "move": "3000",
+        "ModuleCarried": "1011:1/",
+        "introduce": "HU-21 淤泥\n联合设计局为应对丛林地区的特殊地形而打造的重型战术机兵。\n目标是在雨林作战中提供火力支援，拥有特殊的关节和悬挂装置，能够平稳涉水，在猛烈的炮火中也可保持机身平衡。",
+        "mechaIcon": "Icon_wap3025_4",
+        "Status": 1,
+        "weight": 275,
+        "manji": {
+          "name": "淤泥",
+          "durable": "6796",
+          "Armor": "740",
+          "fire": "884",
+          "Dodge": "2753",
+          "move": "3000",
+          "Interface": "Ⅰ型接口",
+          "ModuleCarried": "1011:1/3007:1/4009:1/",
+          "Status": 1,
+          "weight": 275
+        }
+      }
+    ],
+    "now": "2026-07-08 08:26:11"
+  },
+  "status": 1,
+  "switch": null,
+  "info": 0
+}

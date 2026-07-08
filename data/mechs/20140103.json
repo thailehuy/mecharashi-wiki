@@ -1,1 +1,230 @@
-{"data":{"data":[{"ID":"20140103","name":"Wolverine","position":"Body","type":"Medium","quality":"SSR","aircraftWeight":"280","durable":"330","Armor":"72","fire":"118","output":"2455","Antiriot":"770","Interface":"Connector I","ModuleCarried":[{"_id":{"timestamp":1750678046,"date":1750678046000},"ID":"40022","name":"Crit Rate Mod","SpecificEffects":"Crit Rate <color=#F74848>+5%</color>.","BufCarried":"400221","SkillIcon":"Icon_entry_40021","icon":"Icon_entry_40021","Status":1,"weight":414,"lang":"en","id":"4002","level":2},{"_id":{"timestamp":1750678045,"date":1750678045000},"ID":"30032","name":"Suppression Mod","SpecificEffects":"During an Active Attack in combat, if the target cannot retaliate, DMG <color=#F74848>+4%</color>.","BufCarried":"300321","SkillIcon":"Icon_entry_10049","icon":"Icon_entry_10049","Status":1,"weight":230,"lang":"en","id":"3003","level":2},{"_id":{"timestamp":1750678045,"date":1750678045000},"ID":"20104","name":"Cluster Energizer","SpecificEffects":"When casting an AoE attack, if it hits <color=#F74848>2</color> or fewer targets, DMG <color=#F74848>+25%</color>.","BufCarried":"201041","SkillIcon":"Icon_entry_10045","icon":"Icon_entry_10045","Status":1,"weight":152,"lang":"en","id":"2010","level":4}],"icon":"Icon_mecha_wap2014","introduce":"OS-77 Wolverine\nA medium tactical ST with impressive firepower support capabilities, developed by Obsidian.\nThis ST is equipped with a high-power radar search and locking system and a cluster energizer to assist in the tracking and timing of projectiles, effectively improving the killing efficiency of its ordinance. Its fully optimized frame structure also ensures a certain degree of mobility, making it capable of working with high-speed armored units in combat.\nDespite its high cost, the Wolverine is desirable due to its excellent performance.","mechaIcon":"Icon_wap2014_1","lihuiIcon":"icon_lihui_wap2014","Status":1,"weight":60,"lang":"en","manji":{"name":"Wolverine","durable":"2858","Armor":"319","fire":"524","output":"2455","Antiriot":"2477","Interface":"Connector II","ModuleCarried":[{"_id":{"timestamp":1750678046,"date":1750678046000},"ID":"40024","name":"Crit Rate Mod","SpecificEffects":"Crit Rate <color=#F74848>+10%</color>.","BufCarried":"400241","SkillIcon":"Icon_entry_40021","icon":"Icon_entry_40021","Status":1,"weight":416,"lang":"en","id":"4002","level":4},{"_id":{"timestamp":1750678045,"date":1750678045000},"ID":"30038","name":"Suppression Mod","SpecificEffects":"During an Active Attack in combat, if the target cannot retaliate, DMG <color=#F74848>+18%</color>.\nEqually, dispel <color=#F74848>1</color> buff from the target before combat.","BufCarried":"300381/300383","SkillIcon":"Icon_entry_10049","icon":"Icon_entry_10049","Status":1,"weight":236,"lang":"en","id":"3003","level":8},{"_id":{"timestamp":1750678045,"date":1750678045000},"ID":"20104","name":"Cluster Energizer","SpecificEffects":"When casting an AoE attack, if it hits <color=#F74848>2</color> or fewer targets, DMG <color=#F74848>+25%</color>.","BufCarried":"201041","SkillIcon":"Icon_entry_10045","icon":"Icon_entry_10045","Status":1,"weight":152,"lang":"en","id":"2010","level":4}],"Status":1,"weight":60,"lang":"en"}},{"ID":"20140203","name":"Wolverine","position":"L-Arm","type":"Medium","quality":"SSR","aircraftWeight":"135","durable":"190","Armor":"48","fire":"118","Hit":"257","Interface":"Connector I","ModuleCarried":"2010:1/4002:1/","introduce":"OS-77 Wolverine\nA medium tactical ST with impressive firepower support capabilities, developed by Obsidian.\nThis ST is equipped with a high-power radar search and locking system and a cluster energizer to assist in the tracking and timing of projectiles, effectively improving the killing efficiency of its ordinance. Its fully optimized frame structure also ensures a certain degree of mobility, making it capable of working with high-speed armored units in combat.\nDespite its high cost, the Wolverine is desirable due to its excellent performance.","mechaIcon":"Icon_wap2014_2","Status":1,"weight":61,"lang":"en","manji":{"name":"Wolverine","durable":"1645","Armor":"213","fire":"524","Hit":"826","Interface":"Connector II","ModuleCarried":"2010:1/3003:2/4002:1/","Status":1,"weight":61,"lang":"en"}},{"ID":"20140303","name":"Wolverine","position":"R-Arm","type":"Medium","quality":"SSR","aircraftWeight":"135","durable":"151","Armor":"48","fire":"118","Hit":"360","Interface":"Connector I","ModuleCarried":"2010:1/4002:1/","introduce":"OS-77 Wolverine\nA medium tactical ST with impressive firepower support capabilities, developed by Obsidian.\nThis ST is equipped with a high-power radar search and locking system and a cluster energizer to assist in the tracking and timing of projectiles, effectively improving the killing efficiency of its ordinance. Its fully optimized frame structure also ensures a certain degree of mobility, making it capable of working with high-speed armored units in combat.\nDespite its high cost, the Wolverine is desirable due to its excellent performance.","mechaIcon":"Icon_wap2014_3","Status":1,"weight":62,"lang":"en","manji":{"name":"Wolverine","durable":"1307","Armor":"213","fire":"524","Hit":"1158","Interface":"Connector II","ModuleCarried":"2010:1/3003:2/4002:1/","Status":1,"weight":62,"lang":"en"}},{"ID":"20140403","name":"Wolverine","position":"Legs","type":"Medium","quality":"SSR","aircraftWeight":"205","durable":"255","Armor":"48","fire":"118","Dodge":"669","move":"3000","Interface":"Connector I","ModuleCarried":"2010:1/3003:1/","introduce":"OS-77 Wolverine\nA medium tactical ST with impressive firepower support capabilities, developed by Obsidian.\nThis ST is equipped with a high-power radar search and locking system and a cluster energizer to assist in the tracking and timing of projectiles, effectively improving the killing efficiency of its ordinance. Its fully optimized frame structure also ensures a certain degree of mobility, making it capable of working with high-speed armored units in combat.\nDespite its high cost, the Wolverine is desirable due to its excellent performance.","mechaIcon":"Icon_wap2014_4","Status":1,"weight":63,"lang":"en","manji":{"name":"Wolverine","durable":"2208","Armor":"213","fire":"524","Dodge":"2152","move":"3000","Interface":"Connector II","ModuleCarried":"2010:1/3003:2/4002:1/","Status":1,"weight":63,"lang":"en"}}],"now":"2026-06-24 19:16:35"},"status":1,"switch":null,"info":0}
+{
+  "data": {
+    "data": [
+      {
+        "ID": "20140103",
+        "name": "狼獾",
+        "position": "躯干",
+        "type": "Medium",
+        "quality": "SSR",
+        "aircraftWeight": "280",
+        "durable": "330",
+        "Armor": "72",
+        "fire": "118",
+        "output": "2455",
+        "Antiriot": "770",
+        "Interface": "Ⅰ型接口",
+        "ModuleCarried": [
+          {
+            "_id": {
+              "timestamp": 1696936931,
+              "date": 1696936931000
+            },
+            "ID": "40022",
+            "name": "暴击模组",
+            "SpecificEffects": "暴击率提升<color=#F74848>5%</color>",
+            "BufCarried": "400221",
+            "SkillIcon": "Icon_entry_40021",
+            "icon": "Icon_entry_40021",
+            "Status": 1,
+            "weight": 866,
+            "id": "4002",
+            "level": 2
+          },
+          {
+            "_id": {
+              "timestamp": 1696936930,
+              "date": 1696936930000
+            },
+            "ID": "30032",
+            "name": "压制模组",
+            "SpecificEffects": "主动攻击对战时若目标无法反击，伤害提升<color=#F74848>4%</color>",
+            "BufCarried": "300321",
+            "SkillIcon": "Icon_entry_10049",
+            "icon": "Icon_entry_10049",
+            "Status": 1,
+            "weight": 418,
+            "id": "3003",
+            "level": 2
+          },
+          {
+            "_id": {
+              "timestamp": 1696936930,
+              "date": 1696936930000
+            },
+            "ID": "20104",
+            "name": "集束注能器",
+            "SpecificEffects": "主动使用范围攻击，若目标少于等于<color=#F74848>2</color>个时，伤害提升<color=#F74848>25%</color>",
+            "BufCarried": "201041",
+            "SkillIcon": "Icon_entry_10045",
+            "icon": "Icon_entry_10045",
+            "Status": 1,
+            "weight": 158,
+            "id": "2010",
+            "level": 4
+          }
+        ],
+        "icon": "Icon_mecha_wap2014",
+        "introduce": "OS-77 狼獾\n黑曜石开发的中型战术机兵，具备强大的火力支援能力。\n该机安装了大功率雷达搜索与锁定系统，并配备集束注能器辅助弹头跟踪与引信控制，可有效提升范围火力投射的杀伤效率。而经过充分优化的全身结构也确保了一定的机动能力，足以与高速装甲部队协同作战。\n尽管造价不菲，狼獾依然因其优异的性能赢得了多方订单。",
+        "mechaIcon": "Icon_wap2014_1",
+        "lihuiIcon": "icon_lihui_wap2014",
+        "Status": 1,
+        "weight": 104,
+        "manji": {
+          "name": "狼獾",
+          "durable": "9175",
+          "Armor": "706",
+          "fire": "1157",
+          "output": "2455",
+          "Antiriot": "4472",
+          "Interface": "Ⅱ型接口",
+          "ModuleCarried": [
+            {
+              "_id": {
+                "timestamp": 1696936931,
+                "date": 1696936931000
+              },
+              "ID": "40024",
+              "name": "暴击模组",
+              "SpecificEffects": "暴击率提升<color=#F74848>10%</color>",
+              "BufCarried": "400241",
+              "SkillIcon": "Icon_entry_40021",
+              "icon": "Icon_entry_40021",
+              "Status": 1,
+              "weight": 868,
+              "id": "4002",
+              "level": 4
+            },
+            {
+              "_id": {
+                "timestamp": 1696936930,
+                "date": 1696936930000
+              },
+              "ID": "30038",
+              "name": "压制模组",
+              "SpecificEffects": "主动攻击对战时若目标无法反击，伤害提升<color=#F74848>18%</color>；\n同等条件下，在对战前驱散目标<color=#F74848>1</color>个增益效果",
+              "BufCarried": "300381/300383",
+              "SkillIcon": "Icon_entry_10049",
+              "icon": "Icon_entry_10049",
+              "Status": 1,
+              "weight": 424,
+              "id": "3003",
+              "level": 8
+            },
+            {
+              "_id": {
+                "timestamp": 1696936930,
+                "date": 1696936930000
+              },
+              "ID": "20104",
+              "name": "集束注能器",
+              "SpecificEffects": "主动使用范围攻击，若目标少于等于<color=#F74848>2</color>个时，伤害提升<color=#F74848>25%</color>",
+              "BufCarried": "201041",
+              "SkillIcon": "Icon_entry_10045",
+              "icon": "Icon_entry_10045",
+              "Status": 1,
+              "weight": 158,
+              "id": "2010",
+              "level": 4
+            }
+          ],
+          "Status": 1,
+          "weight": 104
+        }
+      },
+      {
+        "ID": "20140203",
+        "name": "狼獾",
+        "position": "左臂",
+        "type": "Medium",
+        "quality": "SSR",
+        "aircraftWeight": "135",
+        "durable": "190",
+        "Armor": "48",
+        "fire": "118",
+        "Hit": "257",
+        "Interface": "Ⅰ型接口",
+        "ModuleCarried": "2010:1/4002:1/",
+        "introduce": "OS-77 狼獾\n黑曜石开发的中型战术机兵，具备强大的火力支援能力。\n该机安装了大功率雷达搜索与锁定系统，并配备集束注能器辅助弹头跟踪与引信控制，可有效提升范围火力投射的杀伤效率。而经过充分优化的全身结构也确保了一定的机动能力，足以与高速装甲部队协同作战。\n尽管造价不菲，狼獾依然因其优异的性能赢得了多方订单。",
+        "mechaIcon": "Icon_wap2014_2",
+        "Status": 1,
+        "weight": 105,
+        "manji": {
+          "name": "狼獾",
+          "durable": "5282",
+          "Armor": "470",
+          "fire": "1157",
+          "Hit": "1492",
+          "Interface": "Ⅱ型接口",
+          "ModuleCarried": "2010:1/3003:2/4002:1/",
+          "Status": 1,
+          "weight": 105
+        }
+      },
+      {
+        "ID": "20140303",
+        "name": "狼獾",
+        "position": "右臂",
+        "type": "Medium",
+        "quality": "SSR",
+        "aircraftWeight": "135",
+        "durable": "151",
+        "Armor": "48",
+        "fire": "118",
+        "Hit": "360",
+        "Interface": "Ⅰ型接口",
+        "ModuleCarried": "2010:1/4002:1/",
+        "introduce": "OS-77 狼獾\n黑曜石开发的中型战术机兵，具备强大的火力支援能力。\n该机安装了大功率雷达搜索与锁定系统，并配备集束注能器辅助弹头跟踪与引信控制，可有效提升范围火力投射的杀伤效率。而经过充分优化的全身结构也确保了一定的机动能力，足以与高速装甲部队协同作战。\n尽管造价不菲，狼獾依然因其优异的性能赢得了多方订单。",
+        "mechaIcon": "Icon_wap2014_3",
+        "Status": 1,
+        "weight": 106,
+        "manji": {
+          "name": "狼獾",
+          "durable": "4198",
+          "Armor": "470",
+          "fire": "1157",
+          "Hit": "2091",
+          "Interface": "Ⅱ型接口",
+          "ModuleCarried": "2010:1/3003:2/4002:1/",
+          "Status": 1,
+          "weight": 106
+        }
+      },
+      {
+        "ID": "20140403",
+        "name": "狼獾",
+        "position": "腿部",
+        "type": "Medium",
+        "quality": "SSR",
+        "aircraftWeight": "205",
+        "durable": "255",
+        "Armor": "48",
+        "fire": "118",
+        "Dodge": "669",
+        "move": "3000",
+        "Interface": "Ⅰ型接口",
+        "ModuleCarried": "2010:1/3003:1/",
+        "introduce": "OS-77 狼獾\n黑曜石开发的中型战术机兵，具备强大的火力支援能力。\n该机安装了大功率雷达搜索与锁定系统，并配备集束注能器辅助弹头跟踪与引信控制，可有效提升范围火力投射的杀伤效率。而经过充分优化的全身结构也确保了一定的机动能力，足以与高速装甲部队协同作战。\n尽管造价不菲，狼獾依然因其优异的性能赢得了多方订单。",
+        "mechaIcon": "Icon_wap2014_4",
+        "Status": 1,
+        "weight": 107,
+        "manji": {
+          "name": "狼獾",
+          "durable": "7089",
+          "Armor": "470",
+          "fire": "1157",
+          "Dodge": "3885",
+          "move": "3000",
+          "Interface": "Ⅱ型接口",
+          "ModuleCarried": "2010:1/3003:2/4002:1/",
+          "Status": 1,
+          "weight": 107
+        }
+      }
+    ],
+    "now": "2026-07-08 08:25:45"
+  },
+  "status": 1,
+  "switch": null,
+  "info": 0
+}

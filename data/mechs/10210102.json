@@ -1,1 +1,194 @@
-{"data":{"data":[{"ID":"10210102","name":"Radiance","position":"Body","type":"Light","quality":"SR","aircraftWeight":"285","durable":"251","Armor":"36","fire":"88","output":"1365","Antiriot":"655","ModuleCarried":[{"_id":{"timestamp":1750678044,"date":1750678044000},"ID":"10074","name":"Shock Absorber","SpecificEffects":"When taking damage, there is a <color=#F74848>70%</color> chance to trigger: DMG Taken <color=#F74848>-15%</color>.","BufCarried":"100741","SkillIcon":"Icon_entry_10071","icon":"Icon_entry_10071","Status":1,"weight":96,"lang":"en","id":"1007","level":4}],"icon":"Icon_mecha_wap1021","introduce":"DD-102 Radiance\nThis ST is a prototype mech developed by Doll Industries. It won the Best Appearance Award in an ST Design Competition held by the Dawnstar League.\nThe design of this ST was inspired by sports cars, giving it a sleek and elegant appearance. It offers outstanding performance in reducing resistance and minimizing noise.\nThe Radiance has achieved remarkable results in various counter-terrorism operations. However, due to its high manufacturing cost only a small number of them are currently in service with the regular army.","mechaIcon":"Icon_wap1021_1","lihuiIcon":"icon_lihui_wap1021","Status":1,"weight":32,"lang":"en","manji":{"name":"Radiance","durable":"2281","Armor":"167","fire":"410","output":"1365","Antiriot":"2073","Interface":"Connector I","ModuleCarried":[{"_id":{"timestamp":1750678044,"date":1750678044000},"ID":"10074","name":"Shock Absorber","SpecificEffects":"When taking damage, there is a <color=#F74848>70%</color> chance to trigger: DMG Taken <color=#F74848>-15%</color>.","BufCarried":"100741","SkillIcon":"Icon_entry_10071","icon":"Icon_entry_10071","Status":1,"weight":96,"lang":"en","id":"1007","level":4},{"_id":{"timestamp":1750678045,"date":1750678045000},"ID":"30082","name":"Crusher Mod","SpecificEffects":"When attacking a target that carries debuffs, DMG <color=#F74848>+4%</color>.","BufCarried":"300821","SkillIcon":"Icon_entry_10054","icon":"Icon_entry_10054","Status":1,"weight":270,"lang":"en","id":"3008","level":2},{"_id":{"timestamp":1750678047,"date":1750678047000},"ID":"40084","name":"Crit RES Mod","SpecificEffects":"Crit RES <color=#F74848>+10%</color>.","BufCarried":"400841","SkillIcon":"Icon_entry_40081","icon":"Icon_entry_40081","Status":1,"weight":464,"lang":"en","id":"4008","level":4}],"Status":1,"weight":32,"lang":"en"}},{"ID":"10210202","name":"Radiance","position":"L-Arm","type":"Light","quality":"SR","aircraftWeight":"80","durable":"123","Armor":"24","fire":"88","Hit":"254","ModuleCarried":"1007:1/","introduce":"DD-102 Radiance\nThis ST is a prototype mech developed by Doll Industries. It won the Best Appearance Award in an ST Design Competition held by the Dawnstar League.\nThe design of this ST was inspired by sports cars, giving it a sleek and elegant appearance. It offers outstanding performance in reducing resistance and minimizing noise.\nThe Radiance has achieved remarkable results in various counter-terrorism operations. However, due to its high manufacturing cost only a small number of them are currently in service with the regular army.","mechaIcon":"Icon_wap1021_2","Status":1,"weight":33,"lang":"en","manji":{"name":"Radiance","durable":"1117","Armor":"111","fire":"410","Hit":"803","Interface":"Connector II","ModuleCarried":"1007:1/4008:1/","Status":1,"weight":33,"lang":"en"}},{"ID":"10210302","name":"Radiance","position":"R-Arm","type":"Light","quality":"SR","aircraftWeight":"80","durable":"123","Armor":"24","fire":"88","Hit":"254","ModuleCarried":"1007:1/","introduce":"DD-102 Radiance\nThis ST is a prototype mech developed by Doll Industries. It won the Best Appearance Award in an ST Design Competition held by the Dawnstar League.\nThe design of this ST was inspired by sports cars, giving it a sleek and elegant appearance. It offers outstanding performance in reducing resistance and minimizing noise.\nThe Radiance has achieved remarkable results in various counter-terrorism operations. However, due to its high manufacturing cost only a small number of them are currently in service with the regular army.","mechaIcon":"Icon_wap1021_3","Status":1,"weight":34,"lang":"en","manji":{"name":"Radiance","durable":"1117","Armor":"111","fire":"410","Hit":"803","Interface":"Connector II","ModuleCarried":"1007:1/4008:1/","Status":1,"weight":34,"lang":"en"}},{"ID":"10210402","name":"Radiance","position":"Legs","type":"Light","quality":"SR","aircraftWeight":"160","durable":"184","Armor":"24","fire":"88","Dodge":"766","move":"4000","ModuleCarried":"1007:1/","introduce":"DD-102 Radiance\nThis ST is a prototype mech developed by Doll Industries. It won the Best Appearance Award in an ST Design Competition held by the Dawnstar League.\nThe design of this ST was inspired by sports cars, giving it a sleek and elegant appearance. It offers outstanding performance in reducing resistance and minimizing noise.\nThe Radiance has achieved remarkable results in various counter-terrorism operations. However, due to its high manufacturing cost only a small number of them are currently in service with the regular army.","mechaIcon":"Icon_wap1021_4","Status":1,"weight":35,"lang":"en","manji":{"name":"Radiance","durable":"1672","Armor":"111","fire":"410","Dodge":"2424","move":"4000","Interface":"Connector I","ModuleCarried":"1007:1/3008:1/4008:1/","Status":1,"weight":35,"lang":"en"}}],"now":"2026-06-24 19:16:34"},"status":1,"switch":null,"info":0}
+{
+  "data": {
+    "data": [
+      {
+        "ID": "10210102",
+        "name": "极光",
+        "position": "躯干",
+        "type": "Light",
+        "quality": "SR",
+        "aircraftWeight": "285",
+        "durable": "251",
+        "Armor": "36",
+        "fire": "88",
+        "output": "1365",
+        "Antiriot": "655",
+        "ModuleCarried": [
+          {
+            "_id": {
+              "timestamp": 1696936929,
+              "date": 1696936929000
+            },
+            "ID": "10074",
+            "name": "减震系统",
+            "SpecificEffects": "遭受伤害时有<color=#F74848>70%</color>的概率发动，遭受伤害降低<color=#F74848>15%</color>",
+            "BufCarried": "100741",
+            "SkillIcon": "Icon_entry_10071",
+            "icon": "Icon_entry_10071",
+            "Status": 1,
+            "weight": 102,
+            "id": "1007",
+            "level": 4
+          }
+        ],
+        "icon": "Icon_mecha_wap1021",
+        "introduce": "DD-102 极光\n多尔工业开发的试作型机兵，曾在晨星同盟设立的机兵设计大赛中获得了最佳外观奖。\n该机在设计时参考了跑车的外观，拥有优美的流线体态，在降低阻力、减少噪音等指标上有突出表现。\n极光在历次反恐作战中都取得了令人瞩目的战绩，但碍于制造成本成本高昂，在正规军中仅有少量列装。",
+        "mechaIcon": "Icon_wap1021_1",
+        "lihuiIcon": "icon_lihui_wap1021",
+        "Status": 1,
+        "weight": 40,
+        "manji": {
+          "name": "极光",
+          "durable": "7321",
+          "Armor": "370",
+          "fire": "905",
+          "output": "1365",
+          "Antiriot": "3742",
+          "Interface": "Ⅰ型接口",
+          "ModuleCarried": [
+            {
+              "_id": {
+                "timestamp": 1696936929,
+                "date": 1696936929000
+              },
+              "ID": "10074",
+              "name": "减震系统",
+              "SpecificEffects": "遭受伤害时有<color=#F74848>70%</color>的概率发动，遭受伤害降低<color=#F74848>15%</color>",
+              "BufCarried": "100741",
+              "SkillIcon": "Icon_entry_10071",
+              "icon": "Icon_entry_10071",
+              "Status": 1,
+              "weight": 102,
+              "id": "1007",
+              "level": 4
+            },
+            {
+              "_id": {
+                "timestamp": 1696936930,
+                "date": 1696936930000
+              },
+              "ID": "30082",
+              "name": "破敌模组",
+              "SpecificEffects": "主动攻击时，对携带减益效果的目标伤害提升<color=#F74848>4%</color>",
+              "BufCarried": "300821/300823",
+              "SkillIcon": "Icon_entry_10054",
+              "icon": "Icon_entry_10054",
+              "Status": 1,
+              "weight": 458,
+              "id": "3008",
+              "level": 2
+            },
+            {
+              "_id": {
+                "timestamp": 1696936931,
+                "date": 1696936931000
+              },
+              "ID": "40084",
+              "name": "防爆模组",
+              "SpecificEffects": "被暴击率降低<color=#F74848>10%</color>",
+              "BufCarried": "400841",
+              "SkillIcon": "Icon_entry_40081",
+              "icon": "Icon_entry_40081",
+              "Status": 1,
+              "weight": 916,
+              "id": "4008",
+              "level": 4
+            }
+          ],
+          "Status": 1,
+          "weight": 40
+        }
+      },
+      {
+        "ID": "10210202",
+        "name": "极光",
+        "position": "左臂",
+        "type": "Light",
+        "quality": "SR",
+        "aircraftWeight": "80",
+        "durable": "123",
+        "Armor": "24",
+        "fire": "88",
+        "Hit": "254",
+        "ModuleCarried": "1007:1/",
+        "introduce": "DD-102 极光\n多尔工业开发的试作型机兵，曾在晨星同盟设立的机兵设计大赛中获得了最佳外观奖。\n该机在设计时参考了跑车的外观，拥有优美的流线体态，在降低阻力、减少噪音等指标上有突出表现。\n极光在历次反恐作战中都取得了令人瞩目的战绩，但碍于制造成本成本高昂，在正规军中仅有少量列装。",
+        "mechaIcon": "Icon_wap1021_2",
+        "Status": 1,
+        "weight": 41,
+        "manji": {
+          "name": "极光",
+          "durable": "3588",
+          "Armor": "246",
+          "fire": "905",
+          "Hit": "1451",
+          "Interface": "Ⅱ型接口",
+          "ModuleCarried": "1007:1/4008:1/",
+          "Status": 1,
+          "weight": 41
+        }
+      },
+      {
+        "ID": "10210302",
+        "name": "极光",
+        "position": "右臂",
+        "type": "Light",
+        "quality": "SR",
+        "aircraftWeight": "80",
+        "durable": "123",
+        "Armor": "24",
+        "fire": "88",
+        "Hit": "254",
+        "ModuleCarried": "1007:1/",
+        "introduce": "DD-102 极光\n多尔工业开发的试作型机兵，曾在晨星同盟设立的机兵设计大赛中获得了最佳外观奖。\n该机在设计时参考了跑车的外观，拥有优美的流线体态，在降低阻力、减少噪音等指标上有突出表现。\n极光在历次反恐作战中都取得了令人瞩目的战绩，但碍于制造成本成本高昂，在正规军中仅有少量列装。",
+        "mechaIcon": "Icon_wap1021_3",
+        "Status": 1,
+        "weight": 42,
+        "manji": {
+          "name": "极光",
+          "durable": "3588",
+          "Armor": "246",
+          "fire": "905",
+          "Hit": "1451",
+          "Interface": "Ⅱ型接口",
+          "ModuleCarried": "1007:1/4008:1/",
+          "Status": 1,
+          "weight": 42
+        }
+      },
+      {
+        "ID": "10210402",
+        "name": "极光",
+        "position": "腿部",
+        "type": "Light",
+        "quality": "SR",
+        "aircraftWeight": "160",
+        "durable": "184",
+        "Armor": "24",
+        "fire": "88",
+        "Dodge": "766",
+        "move": "4000",
+        "ModuleCarried": "1007:1/",
+        "introduce": "DD-102 极光\n多尔工业开发的试作型机兵，曾在晨星同盟设立的机兵设计大赛中获得了最佳外观奖。\n该机在设计时参考了跑车的外观，拥有优美的流线体态，在降低阻力、减少噪音等指标上有突出表现。\n极光在历次反恐作战中都取得了令人瞩目的战绩，但碍于制造成本成本高昂，在正规军中仅有少量列装。",
+        "mechaIcon": "Icon_wap1021_4",
+        "Status": 1,
+        "weight": 43,
+        "manji": {
+          "name": "极光",
+          "durable": "5367",
+          "Armor": "246",
+          "fire": "905",
+          "Dodge": "4376",
+          "move": "4000",
+          "Interface": "Ⅰ型接口",
+          "ModuleCarried": "1007:1/3008:1/4008:1/",
+          "Status": 1,
+          "weight": 43
+        }
+      }
+    ],
+    "now": "2026-07-08 08:25:36"
+  },
+  "status": 1,
+  "switch": null,
+  "info": 0
+}

@@ -1,1 +1,194 @@
-{"data":{"data":[{"ID":"20200102","name":"Arash","position":"Body","type":"Medium","quality":"SR","aircraftWeight":"305","durable":"294","Armor":"72","fire":"96","output":"1880","Antiriot":"655","ModuleCarried":[{"_id":{"timestamp":1750678044,"date":1750678044000},"ID":"10034","name":"Mini-PC - Sniper","SpecificEffects":"When attacking with a Ranged Weapon, there is a <color=#F74848>70%</color> chance to trigger: DMG <color=#F74848>+15%</color>.","BufCarried":"100341","SkillIcon":"Icon_entry_10033","icon":"Icon_entry_10033","Status":1,"weight":80,"lang":"en","id":"1003","level":4}],"icon":"Icon_mecha_wap2020","introduce":"LTX-24 Arash\nThis Medium ST was developed by Laniakea. It is an excellent ranged model boasting high performance, and is an essential part of the UNCS's tactical forces.\nIts multi-dot assisted aiming system grants this ST high accuracy. In contrast, using advanced polymer materials in some of its armor panels reduces its weight, giving it enough mobility to cope with combat on the front lines.","mechaIcon":"Icon_wap2020_1","lihuiIcon":"icon_lihui_wap2020","Status":1,"weight":72,"lang":"en","manji":{"name":"Arash","durable":"2671","Armor":"335","fire":"447","output":"1880","Antiriot":"2073","Interface":"Connector I","ModuleCarried":[{"_id":{"timestamp":1750678044,"date":1750678044000},"ID":"10034","name":"Mini-PC - Sniper","SpecificEffects":"When attacking with a Ranged Weapon, there is a <color=#F74848>70%</color> chance to trigger: DMG <color=#F74848>+15%</color>.","BufCarried":"100341","SkillIcon":"Icon_entry_10033","icon":"Icon_entry_10033","Status":1,"weight":80,"lang":"en","id":"1003","level":4},{"_id":{"timestamp":1750678046,"date":1750678046000},"ID":"40024","name":"Crit Rate Mod","SpecificEffects":"Crit Rate <color=#F74848>+10%</color>.","BufCarried":"400241","SkillIcon":"Icon_entry_40021","icon":"Icon_entry_40021","Status":1,"weight":416,"lang":"en","id":"4002","level":4},{"_id":{"timestamp":1750678045,"date":1750678045000},"ID":"30032","name":"Suppression Mod","SpecificEffects":"During an Active Attack in combat, if the target cannot retaliate, DMG <color=#F74848>+4%</color>.","BufCarried":"300321","SkillIcon":"Icon_entry_10049","icon":"Icon_entry_10049","Status":1,"weight":230,"lang":"en","id":"3003","level":2}],"Status":1,"weight":72,"lang":"en"}},{"ID":"20200202","name":"Arash","position":"L-Arm","type":"Medium","quality":"SR","aircraftWeight":"165","durable":"121","Armor":"48","fire":"96","Hit":"307","ModuleCarried":"1003:1/","introduce":"LTX-24 Arash\nThis Medium ST was developed by Laniakea. It is an excellent ranged model boasting high performance, and is an essential part of the UNCS's tactical forces.\nIts multi-dot assisted aiming system grants this ST high accuracy. In contrast, using advanced polymer materials in some of its armor panels reduces its weight, giving it enough mobility to cope with combat on the front lines.","mechaIcon":"Icon_wap2020_2","Status":1,"weight":73,"lang":"en","manji":{"name":"Arash","durable":"1099","Armor":"223","fire":"447","Hit":"971","Interface":"Connector II","ModuleCarried":"1003:1/4002:1/","Status":1,"weight":73,"lang":"en"}},{"ID":"20200302","name":"Arash","position":"R-Arm","type":"Medium","quality":"SR","aircraftWeight":"165","durable":"121","Armor":"48","fire":"96","Hit":"307","ModuleCarried":"1003:1/","introduce":"LTX-24 Arash\nThis Medium ST was developed by Laniakea. It is an excellent ranged model boasting high performance, and is an essential part of the UNCS's tactical forces.\nIts multi-dot assisted aiming system grants this ST high accuracy. In contrast, using advanced polymer materials in some of its armor panels reduces its weight, giving it enough mobility to cope with combat on the front lines.","mechaIcon":"Icon_wap2020_3","Status":1,"weight":74,"lang":"en","manji":{"name":"Arash","durable":"1099","Armor":"223","fire":"447","Hit":"971","Interface":"Connector II","ModuleCarried":"1003:1/4002:1/","Status":1,"weight":74,"lang":"en"}},{"ID":"20200402","name":"Arash","position":"Legs","type":"Medium","quality":"SR","aircraftWeight":"220","durable":"203","Armor":"48","fire":"96","Dodge":"569","move":"3000","ModuleCarried":"1003:1/","introduce":"LTX-24 Arash\nThis Medium ST was developed by Laniakea. It is an excellent ranged model boasting high performance, and is an essential part of the UNCS's tactical forces.\nIts multi-dot assisted aiming system grants this ST high accuracy. In contrast, using advanced polymer materials in some of its armor panels reduces its weight, giving it enough mobility to cope with combat on the front lines.","mechaIcon":"Icon_wap2020_4","Status":1,"weight":75,"lang":"en","manji":{"name":"Arash","durable":"1844","Armor":"223","fire":"447","Dodge":"1800","move":"3000","Interface":"Connector I","ModuleCarried":"1003:1/3003:1/4002:1/","Status":1,"weight":75,"lang":"en"}}],"now":"2026-06-24 19:16:35"},"status":1,"switch":null,"info":0}
+{
+  "data": {
+    "data": [
+      {
+        "ID": "20200102",
+        "name": "阿拉什",
+        "position": "躯干",
+        "type": "Medium",
+        "quality": "SR",
+        "aircraftWeight": "305",
+        "durable": "294",
+        "Armor": "72",
+        "fire": "96",
+        "output": "1880",
+        "Antiriot": "655",
+        "ModuleCarried": [
+          {
+            "_id": {
+              "timestamp": 1696936929,
+              "date": 1696936929000
+            },
+            "ID": "10034",
+            "name": "狙击型微电脑",
+            "SpecificEffects": "使用射击武器攻击时有<color=#F74848>70%</color>的概率发动，伤害提升<color=#F74848>15%</color>",
+            "BufCarried": "100341",
+            "SkillIcon": "Icon_entry_10033",
+            "icon": "Icon_entry_10033",
+            "Status": 1,
+            "weight": 86,
+            "id": "1003",
+            "level": 4
+          }
+        ],
+        "icon": "Icon_mecha_wap2020",
+        "introduce": "LTX-24 阿拉什\n拉尼亚凯亚开发的中型机兵，性能优秀的狙击型号，也是北陆联合机兵战术体系中的重要一环。\n多点协助瞄准系统赋予了阿拉什极高的射击精度，而部分装甲换用高分子材料也有效降低了机体重量，使其拥有足够应对正面战场的机动能力。 ",
+        "mechaIcon": "Icon_wap2020_1",
+        "lihuiIcon": "icon_lihui_wap2020",
+        "Status": 1,
+        "weight": 124,
+        "manji": {
+          "name": "阿拉什",
+          "durable": "8576",
+          "Armor": "740",
+          "fire": "987",
+          "output": "1880",
+          "Antiriot": "3742",
+          "Interface": "Ⅰ型接口",
+          "ModuleCarried": [
+            {
+              "_id": {
+                "timestamp": 1696936929,
+                "date": 1696936929000
+              },
+              "ID": "10034",
+              "name": "狙击型微电脑",
+              "SpecificEffects": "使用射击武器攻击时有<color=#F74848>70%</color>的概率发动，伤害提升<color=#F74848>15%</color>",
+              "BufCarried": "100341",
+              "SkillIcon": "Icon_entry_10033",
+              "icon": "Icon_entry_10033",
+              "Status": 1,
+              "weight": 86,
+              "id": "1003",
+              "level": 4
+            },
+            {
+              "_id": {
+                "timestamp": 1696936931,
+                "date": 1696936931000
+              },
+              "ID": "40024",
+              "name": "暴击模组",
+              "SpecificEffects": "暴击率提升<color=#F74848>10%</color>",
+              "BufCarried": "400241",
+              "SkillIcon": "Icon_entry_40021",
+              "icon": "Icon_entry_40021",
+              "Status": 1,
+              "weight": 868,
+              "id": "4002",
+              "level": 4
+            },
+            {
+              "_id": {
+                "timestamp": 1696936930,
+                "date": 1696936930000
+              },
+              "ID": "30032",
+              "name": "压制模组",
+              "SpecificEffects": "主动攻击对战时若目标无法反击，伤害提升<color=#F74848>4%</color>",
+              "BufCarried": "300321",
+              "SkillIcon": "Icon_entry_10049",
+              "icon": "Icon_entry_10049",
+              "Status": 1,
+              "weight": 418,
+              "id": "3003",
+              "level": 2
+            }
+          ],
+          "Status": 1,
+          "weight": 124
+        }
+      },
+      {
+        "ID": "20200202",
+        "name": "阿拉什",
+        "position": "左臂",
+        "type": "Medium",
+        "quality": "SR",
+        "aircraftWeight": "165",
+        "durable": "121",
+        "Armor": "48",
+        "fire": "96",
+        "Hit": "307",
+        "ModuleCarried": "1003:1/",
+        "introduce": "LTX-24 阿拉什\n拉尼亚凯亚开发的中型机兵，性能优秀的狙击型号，也是北陆联合机兵战术体系中的重要一环。\n多点协助瞄准系统赋予了阿拉什极高的射击精度，而部分装甲换用高分子材料也有效降低了机体重量，使其拥有足够应对正面战场的机动能力。",
+        "mechaIcon": "Icon_wap2020_2",
+        "Status": 1,
+        "weight": 125,
+        "manji": {
+          "name": "阿拉什",
+          "durable": "3529",
+          "Armor": "493",
+          "fire": "987",
+          "Hit": "1754",
+          "Interface": "Ⅱ型接口",
+          "ModuleCarried": "1003:1/4002:1/",
+          "Status": 1,
+          "weight": 125
+        }
+      },
+      {
+        "ID": "20200302",
+        "name": "阿拉什",
+        "position": "右臂",
+        "type": "Medium",
+        "quality": "SR",
+        "aircraftWeight": "165",
+        "durable": "121",
+        "Armor": "48",
+        "fire": "96",
+        "Hit": "307",
+        "ModuleCarried": "1003:1/",
+        "introduce": "LTX-24 阿拉什\n拉尼亚凯亚开发的中型机兵，性能优秀的狙击型号，也是北陆联合机兵战术体系中的重要一环。\n多点协助瞄准系统赋予了阿拉什极高的射击精度，而部分装甲换用高分子材料也有效降低了机体重量，使其拥有足够应对正面战场的机动能力。",
+        "mechaIcon": "Icon_wap2020_3",
+        "Status": 1,
+        "weight": 126,
+        "manji": {
+          "name": "阿拉什",
+          "durable": "3529",
+          "Armor": "493",
+          "fire": "987",
+          "Hit": "1754",
+          "Interface": "Ⅱ型接口",
+          "ModuleCarried": "1003:1/4002:1/",
+          "Status": 1,
+          "weight": 126
+        }
+      },
+      {
+        "ID": "20200402",
+        "name": "阿拉什",
+        "position": "腿部",
+        "type": "Medium",
+        "quality": "SR",
+        "aircraftWeight": "220",
+        "durable": "203",
+        "Armor": "48",
+        "fire": "96",
+        "Dodge": "569",
+        "move": "3000",
+        "ModuleCarried": "1003:1/",
+        "introduce": "LTX-24 阿拉什\n拉尼亚凯亚开发的中型机兵，性能优秀的狙击型号，也是北陆联合机兵战术体系中的重要一环。\n多点协助瞄准系统赋予了阿拉什极高的射击精度，而部分装甲换用高分子材料也有效降低了机体重量，使其拥有足够应对正面战场的机动能力。",
+        "mechaIcon": "Icon_wap2020_4",
+        "Status": 1,
+        "weight": 127,
+        "manji": {
+          "name": "阿拉什",
+          "durable": "5921",
+          "Armor": "493",
+          "fire": "987",
+          "Dodge": "3250",
+          "move": "3000",
+          "Interface": "Ⅰ型接口",
+          "ModuleCarried": "1003:1/3003:1/4002:1/",
+          "Status": 1,
+          "weight": 127
+        }
+      }
+    ],
+    "now": "2026-07-08 08:25:47"
+  },
+  "status": 1,
+  "switch": null,
+  "info": 0
+}

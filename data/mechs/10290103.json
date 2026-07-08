@@ -1,1 +1,230 @@
-{"data":{"data":[{"ID":"10290103","name":"SEFAS","position":"Body","type":"Light","quality":"SSR","aircraftWeight":"275","durable":"291","Armor":"48","fire":"118","output":"1475","Antiriot":"770","Interface":"Connector I","ModuleCarried":[{"_id":{"timestamp":1750678044,"date":1750678044000},"ID":"20054","name":"HM Bridged Unit","SpecificEffects":"When fighting enemies within the <color=#F74848>1-ring</color> area, Hit Rate <color=#F74848>+15%</color>, Crit Rate <color=#F74848>+15%</color>.","BufCarried":"200541/200542","SkillIcon":"Icon_entry_10005","icon":"Icon_entry_10005","Status":1,"weight":132,"lang":"en","id":"2005","level":4},{"_id":{"timestamp":1750678046,"date":1750678046000},"ID":"30142","name":"Fortitude Mod","SpecificEffects":"When HP is below <color=#F74848>40%</color>, DMG <color=#F74848>+4%</color>.","BufCarried":"301421","SkillIcon":"Icon_entry_10056","icon":"Icon_entry_10056","Status":1,"weight":318,"lang":"en","id":"3014","level":2},{"_id":{"timestamp":1750678046,"date":1750678046000},"ID":"40032","name":"Crit DMG Mod","SpecificEffects":"Crit DMG <color=#F74848>+5%</color>.","BufCarried":"400321","SkillIcon":"Icon_entry_40031","icon":"Icon_entry_40031","Status":1,"weight":422,"lang":"en","id":"4003","level":2}],"icon":"Icon_mecha_wap1029","introduce":"ELE-07 SEFAS\nA high-performance model specially developed by Obsidian, and initially commissioned by the Electric Eel.\nMany of this model's parts deviate from international standards, including the thickness of the drive rods, the size of the articulating bearings, and the location of the armor mounts.\nThe body of this ST is fitted with spikes and ramming nails in the knee and shoulder positions—features rarely seen on standard mechs—allowing it to effectively engage in close-quarters combat.","mechaIcon":"Icon_wap1029_1","lihuiIcon":"icon_lihui_wap1029","Status":1,"weight":44,"lang":"en","manji":{"name":"SEFAS","durable":"2520","Armor":"213","fire":"524","output":"1475","Antiriot":"2477","Interface":"Connector II","ModuleCarried":[{"_id":{"timestamp":1750678044,"date":1750678044000},"ID":"20054","name":"HM Bridged Unit","SpecificEffects":"When fighting enemies within the <color=#F74848>1-ring</color> area, Hit Rate <color=#F74848>+15%</color>, Crit Rate <color=#F74848>+15%</color>.","BufCarried":"200541/200542","SkillIcon":"Icon_entry_10005","icon":"Icon_entry_10005","Status":1,"weight":132,"lang":"en","id":"2005","level":4},{"_id":{"timestamp":1750678046,"date":1750678046000},"ID":"30148","name":"Fortitude Mod","SpecificEffects":"When HP is below <color=#F74848>60%</color>, DMG <color=#F74848>+18%</color>.\nThe Body is not destroyed when it suffers overdamage, with a trigger interval of <color=#F74848>5</color> turns.","BufCarried":"301481/301483","SkillIcon":"Icon_entry_10056","icon":"Icon_entry_10056","Status":1,"weight":324,"lang":"en","id":"3014","level":8},{"_id":{"timestamp":1750678046,"date":1750678046000},"ID":"40034","name":"Crit DMG Mod","SpecificEffects":"Crit DMG <color=#F74848>+10%</color>.","BufCarried":"400341","SkillIcon":"Icon_entry_40031","icon":"Icon_entry_40031","Status":1,"weight":424,"lang":"en","id":"4003","level":4}],"Status":1,"weight":44,"lang":"en"}},{"ID":"10290203","name":"SEFAS","position":"L-Arm","type":"Light","quality":"SSR","aircraftWeight":"90","durable":"151","Armor":"32","fire":"118","Hit":"299","Interface":"Connector I","ModuleCarried":"2005:1/4003:1/","introduce":"ELE-07 SEFAS\nA high-performance model specially developed by Obsidian, and initially commissioned by the Electric Eel.\nMany of this model's parts deviate from international standards, including the thickness of the drive rods, the size of the articulating bearings, and the location of the armor mounts.\nThe body of this ST is fitted with spikes and ramming nails in the knee and shoulder positions—features rarely seen on standard mechs—allowing it to effectively engage in close-quarters combat.","mechaIcon":"Icon_wap1029_2","Status":1,"weight":45,"lang":"en","manji":{"name":"SEFAS","durable":"1307","Armor":"142","fire":"524","Hit":"962","Interface":"Connector II","ModuleCarried":"2005:1/3014:2/4003:1/","Status":1,"weight":45,"lang":"en"}},{"ID":"10290303","name":"SEFAS","position":"R-Arm","type":"Light","quality":"SSR","aircraftWeight":"90","durable":"151","Armor":"32","fire":"118","Hit":"299","Interface":"Connector I","ModuleCarried":"2005:1/4003:1/","introduce":"ELE-07 SEFAS\nA high-performance model specially developed by Obsidian, and initially commissioned by the Electric Eel.\nMany of this model's parts deviate from international standards, including the thickness of the drive rods, the size of the articulating bearings, and the location of the armor mounts.\nThe body of this ST is fitted with spikes and ramming nails in the knee and shoulder positions—features rarely seen on standard mechs—allowing it to effectively engage in close-quarters combat.","mechaIcon":"Icon_wap1029_3","Status":1,"weight":46,"lang":"en","manji":{"name":"SEFAS","durable":"1307","Armor":"142","fire":"524","Hit":"962","Interface":"Connector II","ModuleCarried":"2005:1/3014:2/4003:1/","Status":1,"weight":46,"lang":"en"}},{"ID":"10290403","name":"SEFAS","position":"Legs","type":"Light","quality":"SSR","aircraftWeight":"130","durable":"220","Armor":"32","fire":"118","Dodge":"901","move":"4000","Interface":"Connector I","ModuleCarried":"2005:1/3014:1/","introduce":"ELE-07 SEFAS\nA high-performance model specially developed by Obsidian, and initially commissioned by the Electric Eel.\nMany of this model's parts deviate from international standards, including the thickness of the drive rods, the size of the articulating bearings, and the location of the armor mounts.\nThe body of this ST is fitted with spikes and ramming nails in the knee and shoulder positions—features rarely seen on standard mechs—allowing it to effectively engage in close-quarters combat.","mechaIcon":"Icon_wap1029_4","Status":1,"weight":47,"lang":"en","manji":{"name":"SEFAS","durable":"1905","Armor":"142","fire":"524","Dodge":"2899","move":"4000","Interface":"Connector II","ModuleCarried":"2005:1/3014:2/4003:1/","Status":1,"weight":47,"lang":"en"}}],"now":"2026-06-24 19:16:35"},"status":1,"switch":null,"info":0}
+{
+  "data": {
+    "data": [
+      {
+        "ID": "10290103",
+        "name": "强电场",
+        "position": "躯干",
+        "type": "Light",
+        "quality": "SSR",
+        "aircraftWeight": "275",
+        "durable": "291",
+        "Armor": "48",
+        "fire": "118",
+        "output": "1475",
+        "Antiriot": "770",
+        "Interface": "Ⅰ型接口",
+        "ModuleCarried": [
+          {
+            "_id": {
+              "timestamp": 1696936929,
+              "date": 1696936929000
+            },
+            "ID": "20054",
+            "name": "近战单元",
+            "SpecificEffects": "与相邻<color=#F74848>1</color>圈的敌机对战时，命中率与暴击率提升<color=#F74848>15%</color>",
+            "BufCarried": "200541",
+            "SkillIcon": "Icon_entry_10005",
+            "icon": "Icon_entry_10005",
+            "Status": 1,
+            "weight": 138,
+            "id": "2005",
+            "level": 4
+          },
+          {
+            "_id": {
+              "timestamp": 1696936930,
+              "date": 1696936930000
+            },
+            "ID": "30142",
+            "name": "背水模组",
+            "SpecificEffects": "自身的耐久值百分比低于<color=#F74848>40%</color>时，伤害提升<color=#F74848>4%</color>",
+            "BufCarried": "301421",
+            "SkillIcon": "Icon_entry_10056",
+            "icon": "Icon_entry_10056",
+            "Status": 1,
+            "weight": 506,
+            "id": "3014",
+            "level": 2
+          },
+          {
+            "_id": {
+              "timestamp": 1696936931,
+              "date": 1696936931000
+            },
+            "ID": "40032",
+            "name": "增伤模组",
+            "SpecificEffects": "暴击伤害提升<color=#F74848>5%</color>",
+            "BufCarried": "400321",
+            "SkillIcon": "Icon_entry_40031",
+            "icon": "Icon_entry_40031",
+            "Status": 1,
+            "weight": 874,
+            "id": "4003",
+            "level": 2
+          }
+        ],
+        "icon": "Icon_mecha_wap1029",
+        "introduce": "ELE-07 强电场\n由黑曜石特别研发的高性能机型，最初的订单来自电鳗佣兵团。\n该型号的大多数部件与国际标准有一定偏离，例如传动杆的粗细、关节轴承大小、装甲安装的位置等。\n由于订单方的需求，机体在膝盖与肩部位置安装了一般机体中少见的尖刺与撞钉，使其也能胜任近身战斗。",
+        "mechaIcon": "Icon_wap1029_1",
+        "lihuiIcon": "icon_lihui_wap1029",
+        "Status": 1,
+        "weight": 60,
+        "manji": {
+          "name": "强电场",
+          "durable": "8090",
+          "Armor": "470",
+          "fire": "1157",
+          "output": "1475",
+          "Antiriot": "4472",
+          "Interface": "Ⅱ型接口",
+          "ModuleCarried": [
+            {
+              "_id": {
+                "timestamp": 1696936929,
+                "date": 1696936929000
+              },
+              "ID": "20054",
+              "name": "近战单元",
+              "SpecificEffects": "与相邻<color=#F74848>1</color>圈的敌机对战时，命中率与暴击率提升<color=#F74848>15%</color>",
+              "BufCarried": "200541",
+              "SkillIcon": "Icon_entry_10005",
+              "icon": "Icon_entry_10005",
+              "Status": 1,
+              "weight": 138,
+              "id": "2005",
+              "level": 4
+            },
+            {
+              "_id": {
+                "timestamp": 1696936930,
+                "date": 1696936930000
+              },
+              "ID": "30148",
+              "name": "背水模组",
+              "SpecificEffects": "自身的耐久值百分比低于<color=#F74848>60%</color>时，伤害提升<color=#F74848>18%</color>;\n躯干遭遇过量伤害时不会损毁，该效果间隔<color=#F74848>5</color>回合才可再次触发",
+              "BufCarried": "301481/301483",
+              "SkillIcon": "Icon_entry_10056",
+              "icon": "Icon_entry_10056",
+              "Status": 1,
+              "weight": 512,
+              "id": "3014",
+              "level": 8
+            },
+            {
+              "_id": {
+                "timestamp": 1696936931,
+                "date": 1696936931000
+              },
+              "ID": "40034",
+              "name": "增伤模组",
+              "SpecificEffects": "暴击伤害提升<color=#F74848>10%</color>",
+              "BufCarried": "400341",
+              "SkillIcon": "Icon_entry_40031",
+              "icon": "Icon_entry_40031",
+              "Status": 1,
+              "weight": 876,
+              "id": "4003",
+              "level": 4
+            }
+          ],
+          "Status": 1,
+          "weight": 60
+        }
+      },
+      {
+        "ID": "10290203",
+        "name": "强电场",
+        "position": "左臂",
+        "type": "Light",
+        "quality": "SSR",
+        "aircraftWeight": "90",
+        "durable": "151",
+        "Armor": "32",
+        "fire": "118",
+        "Hit": "299",
+        "Interface": "Ⅰ型接口",
+        "ModuleCarried": "2005:1/4003:1/",
+        "introduce": "ELE-07 强电场\n由黑曜石特别研发的高性能机型，最初的订单来自电鳗佣兵团。\n该型号的大多数部件与国际标准有一定偏离，例如传动杆的粗细、关节轴承大小、装甲安装的位置等。\n由于订单方的需求，机体在膝盖与肩部位置安装了一般机体中少见的尖刺与撞钉，使其也能胜任近身战斗。",
+        "mechaIcon": "Icon_wap1029_2",
+        "Status": 1,
+        "weight": 61,
+        "manji": {
+          "name": "强电场",
+          "durable": "4198",
+          "Armor": "313",
+          "fire": "1157",
+          "Hit": "1736",
+          "Interface": "Ⅱ型接口",
+          "ModuleCarried": "2005:1/3014:2/4003:1/",
+          "Status": 1,
+          "weight": 61
+        }
+      },
+      {
+        "ID": "10290303",
+        "name": "强电场",
+        "position": "右臂",
+        "type": "Light",
+        "quality": "SSR",
+        "aircraftWeight": "90",
+        "durable": "151",
+        "Armor": "32",
+        "fire": "118",
+        "Hit": "299",
+        "Interface": "Ⅰ型接口",
+        "ModuleCarried": "2005:1/4003:1/",
+        "introduce": "ELE-07 强电场\n由黑曜石特别研发的高性能机型，最初的订单来自电鳗佣兵团。\n该型号的大多数部件与国际标准有一定偏离，例如传动杆的粗细、关节轴承大小、装甲安装的位置等。\n由于订单方的需求，机体在膝盖与肩部位置安装了一般机体中少见的尖刺与撞钉，使其也能胜任近身战斗。",
+        "mechaIcon": "Icon_wap1029_3",
+        "Status": 1,
+        "weight": 62,
+        "manji": {
+          "name": "强电场",
+          "durable": "4198",
+          "Armor": "313",
+          "fire": "1157",
+          "Hit": "1736",
+          "Interface": "Ⅱ型接口",
+          "ModuleCarried": "2005:1/3014:2/4003:1/",
+          "Status": 1,
+          "weight": 62
+        }
+      },
+      {
+        "ID": "10290403",
+        "name": "强电场",
+        "position": "腿部",
+        "type": "Light",
+        "quality": "SSR",
+        "aircraftWeight": "130",
+        "durable": "220",
+        "Armor": "32",
+        "fire": "118",
+        "Dodge": "901",
+        "move": "4000",
+        "Interface": "Ⅰ型接口",
+        "ModuleCarried": "2005:1/3014:1/",
+        "introduce": "ELE-07 强电场\n由黑曜石特别研发的高性能机型，最初的订单来自电鳗佣兵团。\n该型号的大多数部件与国际标准有一定偏离，例如传动杆的粗细、关节轴承大小、装甲安装的位置等。\n由于订单方的需求，机体在膝盖与肩部位置安装了一般机体中少见的尖刺与撞钉，使其也能胜任近身战斗。",
+        "mechaIcon": "Icon_wap1029_4",
+        "Status": 1,
+        "weight": 63,
+        "manji": {
+          "name": "强电场",
+          "durable": "6116",
+          "Armor": "313",
+          "fire": "1157",
+          "Dodge": "5233",
+          "move": "4000",
+          "Interface": "Ⅱ型接口",
+          "ModuleCarried": "2005:1/3014:2/4003:1/",
+          "Status": 1,
+          "weight": 63
+        }
+      }
+    ],
+    "now": "2026-07-08 08:25:39"
+  },
+  "status": 1,
+  "switch": null,
+  "info": 0
+}

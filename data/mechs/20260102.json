@@ -1,1 +1,194 @@
-{"data":{"data":[{"ID":"20260102","name":"Hermes","position":"Body","type":"Medium","quality":"SR","aircraftWeight":"295","durable":"246","Armor":"54","fire":"94","output":"2675","Antiriot":"655","ModuleCarried":[{"_id":{"timestamp":1750678044,"date":1750678044000},"ID":"10044","name":"Aiming Aid","SpecificEffects":"When attacking with a Tactical Weapon, there is a <color=#F74848>70%</color> chance to trigger: DMG <color=#F74848>+15%</color>.","BufCarried":"100441","SkillIcon":"Icon_entry_10034","icon":"Icon_entry_10034","Status":1,"weight":84,"lang":"en","id":"1004","level":4}],"icon":"Icon_mecha_wap2026","introduce":"AST-06 Hermes\nAn-Holt Corporation developed this medium ST. It is mainly equipped by the tactical support forces of the Dawnstar League.\nThis model is designed to carry tactical weapons and is equipped with high-power radar, trading mobility for excellent guidance capabilities and allowing for efficient detection and the locking on of distant targets.\nAs part of the DL Tactical System, it often cooperates with the Kaolin in combat.","mechaIcon":"Icon_wap2026_1","lihuiIcon":"icon_lihui_wap2026","Status":1,"weight":88,"lang":"en","manji":{"name":"Hermes","durable":"2235","Armor":"251","fire":"438","output":"2675","Antiriot":"2073","Interface":"Connector I","ModuleCarried":[{"_id":{"timestamp":1750678044,"date":1750678044000},"ID":"10044","name":"Aiming Aid","SpecificEffects":"When attacking with a Tactical Weapon, there is a <color=#F74848>70%</color> chance to trigger: DMG <color=#F74848>+15%</color>.","BufCarried":"100441","SkillIcon":"Icon_entry_10034","icon":"Icon_entry_10034","Status":1,"weight":84,"lang":"en","id":"1004","level":4},{"_id":{"timestamp":1750678046,"date":1750678046000},"ID":"30172","name":"Aim Afar Mod","SpecificEffects":"When there are no enemies within the adjacent (<color=#F74848>2</color> tiles) area, DMG <color=#F74848>+4%</color>.","BufCarried":"301721","SkillIcon":"Icon_entry_10026","icon":"Icon_entry_10026","Status":1,"weight":342,"lang":"en","id":"3017","level":2},{"_id":{"timestamp":1750678046,"date":1750678046000},"ID":"40054","name":"HP Mod","SpecificEffects":"HP <color=#F74848>+10%</color>.","BufCarried":"400541","SkillIcon":"Icon_entry_40051","icon":"Icon_entry_40051","Status":1,"weight":440,"lang":"en","id":"4005","level":4}],"Status":1,"weight":88,"lang":"en"}},{"ID":"20260202","name":"Hermes","position":"L-Arm","type":"Medium","quality":"SR","aircraftWeight":"145","durable":"151","Armor":"36","fire":"94","Hit":"219","ModuleCarried":"1004:1/","introduce":"AST-06 Hermes\nAn-Holt Corporation developed this medium ST. It is mainly equipped by the tactical support forces of the Dawnstar League.\nThis model is designed to carry tactical weapons and is equipped with high-power radar, trading mobility for excellent guidance capabilities and allowing for efficient detection and the locking on of distant targets.\nAs part of the DL Tactical System, it often cooperates with the Kaolin in combat.","mechaIcon":"Icon_wap2026_2","Status":1,"weight":89,"lang":"en","manji":{"name":"Hermes","durable":"1372","Armor":"167","fire":"438","Hit":"693","Interface":"Connector II","ModuleCarried":"1004:1/4005:1/","Status":1,"weight":89,"lang":"en"}},{"ID":"20260302","name":"Hermes","position":"R-Arm","type":"Medium","quality":"SR","aircraftWeight":"145","durable":"151","Armor":"36","fire":"94","Hit":"219","ModuleCarried":"1004:1/","introduce":"AST-06 Hermes\nAn-Holt Corporation developed this medium ST. It is mainly equipped by the tactical support forces of the Dawnstar League.\nThis model is designed to carry tactical weapons and is equipped with high-power radar, trading mobility for excellent guidance capabilities and allowing for efficient detection and the locking on of distant targets.\nAs part of the DL Tactical System, it often cooperates with the Kaolin in combat.","mechaIcon":"Icon_wap2026_3","Status":1,"weight":90,"lang":"en","manji":{"name":"Hermes","durable":"1372","Armor":"167","fire":"438","Hit":"693","Interface":"Connector II","ModuleCarried":"1004:1/4005:1/","Status":1,"weight":90,"lang":"en"}},{"ID":"20260402","name":"Hermes","position":"Legs","type":"Medium","quality":"SR","aircraftWeight":"215","durable":"204","Armor":"36","fire":"94","Dodge":"569","move":"3000","ModuleCarried":"1004:1/","introduce":"AST-06 Hermes\nAn-Holt Corporation developed this medium ST. It is mainly equipped by the tactical support forces of the Dawnstar League.\nThis model is designed to carry tactical weapons and is equipped with high-power radar, trading mobility for excellent guidance capabilities and allowing for efficient detection and the locking on of distant targets.\nAs part of the DL Tactical System, it often cooperates with the Kaolin in combat.","mechaIcon":"Icon_wap2026_4","Status":1,"weight":91,"lang":"en","manji":{"name":"Hermes","durable":"1853","Armor":"167","fire":"438","Dodge":"1800","move":"3000","Interface":"Connector I","ModuleCarried":"1004:1/3017:1/4005:1/","Status":1,"weight":91,"lang":"en"}}],"now":"2026-06-24 19:16:36"},"status":1,"switch":null,"info":0}
+{
+  "data": {
+    "data": [
+      {
+        "ID": "20260102",
+        "name": "赫尔墨斯",
+        "position": "躯干",
+        "type": "Medium",
+        "quality": "SR",
+        "aircraftWeight": "295",
+        "durable": "246",
+        "Armor": "54",
+        "fire": "94",
+        "output": "2675",
+        "Antiriot": "655",
+        "ModuleCarried": [
+          {
+            "_id": {
+              "timestamp": 1696936929,
+              "date": 1696936929000
+            },
+            "ID": "10044",
+            "name": "照准框架",
+            "SpecificEffects": "使用战术武器攻击时有<color=#F74848>70%</color>的概率发动，伤害提升<color=#F74848>15%</color>",
+            "BufCarried": "100441",
+            "SkillIcon": "Icon_entry_10034",
+            "icon": "Icon_entry_10034",
+            "Status": 1,
+            "weight": 90,
+            "id": "1004",
+            "level": 4
+          }
+        ],
+        "icon": "Icon_mecha_wap2026",
+        "introduce": "AST-06 赫尔墨斯\n安赫特公司开发的中型火力支援机兵，多数列装于晨星同盟的战术支援部队。\n该机型设计搭载战术武器并配以大功率雷达，以机动性换取优秀制导能力，可对远距离目标进行高效的侦测和锁定。\n作为同盟战术体系的一环，多与机兵高岭协同作战。",
+        "mechaIcon": "Icon_wap2026_1",
+        "lihuiIcon": "icon_lihui_wap2026",
+        "Status": 1,
+        "weight": 140,
+        "manji": {
+          "name": "赫尔墨斯",
+          "durable": "7176",
+          "Armor": "555",
+          "fire": "967",
+          "output": "2675",
+          "Antiriot": "3742",
+          "Interface": "Ⅰ型接口",
+          "ModuleCarried": [
+            {
+              "_id": {
+                "timestamp": 1696936929,
+                "date": 1696936929000
+              },
+              "ID": "10044",
+              "name": "照准框架",
+              "SpecificEffects": "使用战术武器攻击时有<color=#F74848>70%</color>的概率发动，伤害提升<color=#F74848>15%</color>",
+              "BufCarried": "100441",
+              "SkillIcon": "Icon_entry_10034",
+              "icon": "Icon_entry_10034",
+              "Status": 1,
+              "weight": 90,
+              "id": "1004",
+              "level": 4
+            },
+            {
+              "_id": {
+                "timestamp": 1696936930,
+                "date": 1696936930000
+              },
+              "ID": "30172",
+              "name": "远攻模组",
+              "SpecificEffects": "自身周围<color=#F74848>2</color>格内没有敌机时，伤害提升<color=#F74848>4%</color>",
+              "BufCarried": "301721",
+              "SkillIcon": "Icon_entry_10026",
+              "icon": "Icon_entry_10026",
+              "Status": 1,
+              "weight": 530,
+              "id": "3017",
+              "level": 2
+            },
+            {
+              "_id": {
+                "timestamp": 1696936931,
+                "date": 1696936931000
+              },
+              "ID": "40054",
+              "name": "耐久模组",
+              "SpecificEffects": "耐久值提升<color=#F74848>10%</color>",
+              "BufCarried": "400541",
+              "SkillIcon": "Icon_entry_40051",
+              "icon": "Icon_entry_40051",
+              "Status": 1,
+              "weight": 892,
+              "id": "4005",
+              "level": 4
+            }
+          ],
+          "Status": 1,
+          "weight": 140
+        }
+      },
+      {
+        "ID": "20260202",
+        "name": "赫尔墨斯",
+        "position": "左臂",
+        "type": "Medium",
+        "quality": "SR",
+        "aircraftWeight": "145",
+        "durable": "151",
+        "Armor": "36",
+        "fire": "94",
+        "Hit": "219",
+        "ModuleCarried": "1004:1/",
+        "introduce": "AST-06 赫尔墨斯\n安赫特公司开发的中型火力支援机兵，多数列装于晨星同盟的战术支援部队。\n该机型设计搭载战术武器并配以大功率雷达，以机动性换取优秀制导能力，可对远距离目标进行高效的侦测和锁定。\n作为同盟战术体系的一环，多与机兵高岭协同作战。",
+        "mechaIcon": "Icon_wap2026_2",
+        "Status": 1,
+        "weight": 141,
+        "manji": {
+          "name": "赫尔墨斯",
+          "durable": "4404",
+          "Armor": "370",
+          "fire": "967",
+          "Hit": "1251",
+          "Interface": "Ⅱ型接口",
+          "ModuleCarried": "1004:1/4005:1/",
+          "Status": 1,
+          "weight": 141
+        }
+      },
+      {
+        "ID": "20260302",
+        "name": "赫尔墨斯",
+        "position": "右臂",
+        "type": "Medium",
+        "quality": "SR",
+        "aircraftWeight": "145",
+        "durable": "151",
+        "Armor": "36",
+        "fire": "94",
+        "Hit": "219",
+        "ModuleCarried": "1004:1/",
+        "introduce": "AST-06 赫尔墨斯\n安赫特公司开发的中型火力支援机兵，多数列装于晨星同盟的战术支援部队。\n该机型设计搭载战术武器并配以大功率雷达，以机动性换取优秀制导能力，可对远距离目标进行高效的侦测和锁定。\n作为同盟战术体系的一环，多与机兵高岭协同作战。",
+        "mechaIcon": "Icon_wap2026_3",
+        "Status": 1,
+        "weight": 142,
+        "manji": {
+          "name": "赫尔墨斯",
+          "durable": "4404",
+          "Armor": "370",
+          "fire": "967",
+          "Hit": "1251",
+          "Interface": "Ⅱ型接口",
+          "ModuleCarried": "1004:1/4005:1/",
+          "Status": 1,
+          "weight": 142
+        }
+      },
+      {
+        "ID": "20260402",
+        "name": "赫尔墨斯",
+        "position": "腿部",
+        "type": "Medium",
+        "quality": "SR",
+        "aircraftWeight": "215",
+        "durable": "204",
+        "Armor": "36",
+        "fire": "94",
+        "Dodge": "569",
+        "move": "3000",
+        "ModuleCarried": "1004:1/",
+        "introduce": "AST-06 赫尔墨斯\n安赫特公司开发的中型火力支援机兵，多数列装于晨星同盟的战术支援部队。\n该机型设计搭载战术武器并配以大功率雷达，以机动性换取优秀制导能力，可对远距离目标进行高效的侦测和锁定。\n作为同盟战术体系的一环，多与机兵高岭协同作战。",
+        "mechaIcon": "Icon_wap2026_4",
+        "Status": 1,
+        "weight": 143,
+        "manji": {
+          "name": "赫尔墨斯",
+          "durable": "5950",
+          "Armor": "370",
+          "fire": "967",
+          "Dodge": "3250",
+          "move": "3000",
+          "Interface": "Ⅰ型接口",
+          "ModuleCarried": "1004:1/3017:1/4005:1/",
+          "Status": 1,
+          "weight": 143
+        }
+      }
+    ],
+    "now": "2026-07-08 08:25:50"
+  },
+  "status": 1,
+  "switch": null,
+  "info": 0
+}
