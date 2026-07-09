@@ -30,7 +30,7 @@
     },
     "201904": {
       "name": "I Am The Strongest!",
-      "describe": "Gains <color=#F74848>3</color> random debuffs, lasting <color=#F74848>2</color> for 2 turns, as well as <color=#F74848>2</color> AP. Can continue to act with remaining movement.",
+      "describe": "Gains <color=#F74848>3</color> random debuffs, lasting <color=#F74848>2</color> for 2 turns, as well as <color=#F74848>2</color> AP. Can continue to act with full movement.",
       "SpecificEffects": ""
     },
     "201905": {
@@ -41,7 +41,7 @@
     },
     "201906": {
       "name": "Shadow Tiger Ultimate - Evil Tiger Beam",
-      "describe": "Uses two Shotguns to attack all enemies within a <range type=1>3x3 square</range> area in front, dealing <color=#F74848>2x0.5</color> AoE DMG. If a target is destroyed, gains retained ammo, up to <color=#F74848>30</color> ammo. After combat, performs <color=#F74848>1</color> <buf ID=900031>[Extra Strike]</buf> on the highest HP target within range, dealing <color=#F74848>0.25x</color> DMG. Each retained ammo increases <buf ID=900031>[Extra Strike]</buf> bullet count by <color=#F74848>+1</color>. Before attacking, gains <color=#F74848>2</color> random debuffs, lasting for <color=#F74848>2</color> turns. This skill can only be used <color=#F74848>1</color> time per turn.",
+      "describe": "Uses two Shotguns to attack all enemies within a <range type=1>3x3 square</range> area in front, dealing <color=#F74848>2x0.5</color> AoE DMG. If a target is destroyed, retains the excess ammo from overdamage, up to <color=#F74848>30</color> ammo. After combat, performs <color=#F74848>1</color> <buf ID=900031>[Extra Strike]</buf> on the highest HP target within range, dealing <color=#F74848>0.25x</color> DMG. Each retained ammo increases <buf ID=900031>[Extra Strike]</buf> bullet count by <color=#F74848>+1</color>. Before attacking, gains <color=#F74848>2</color> random debuffs, lasting for <color=#F74848>2</color> turns. This skill can only be used <color=#F74848>1</color> time per turn.",
       "SpecificEffects": ""
     },
     "201907": {
@@ -128,7 +128,7 @@
     },
     "201944": {
       "name": "Tiger Heart 2",
-      "SpecificEffects": "After actively attacking, if carrying <color=#F74848>10</color> or more debuff, triggers <buf ID=900005>[Re-Act]</buf>. After [Tiger Heart 2] <buf ID=900005>[Re-Act]</buf> effect triggered, dispels <color=#F74848>5</color> dispellable debuffs from this unit and gains <buf ID=2019443>[Tiger King Resilience]</buf> This effect can trigger at maximum <color=#F74848>1</color> time per turn."
+      "SpecificEffects": "After actively attacking, if carrying <color=#F74848>10</color> or more buff or debuff, triggers <buf ID=900005>[Re-Act]</buf>. After [Tiger Heart 2] <buf ID=900005>[Re-Act]</buf> effect triggered, dispels <color=#F74848>5</color> dispellable debuffs from this unit and gains <buf ID=2019443>[Tiger King Resilience]</buf> This effect can trigger at maximum <color=#F74848>1</color> time per turn."
     },
     "201945": {
       "name": "Tiger Heart 3",
