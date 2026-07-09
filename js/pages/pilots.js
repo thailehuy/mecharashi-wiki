@@ -20,6 +20,7 @@ Pages.pilots = {
   _enOnly:            true,
   _lastViewed:        null,
   _searchQuery:       '',
+  _skinIndex:         null,
 
   // ── Routing entry point ────────────────────────────────────────────────────
   render: function (param) {
@@ -206,9 +207,74 @@ Pages.pilots = {
   },
 
   _buildDetail: function (p) {
+    var self = this;
     var rankLabel   = QUALITY_LABEL[p.quality] || p.quality;
     var rankClass   = QUALITY_CLASS[p.quality] || '';
-    var portraitSrc = PORTRAIT_BASE + encodeURIComponent(p.AvatarHeroIcon) + '.png';
+
+    var skinLetters = ['A'].concat(p.AlternateSkins || []);
+    if (this._skinIndex == null || this._skinIndex >= skinLetters.length) this._skinIndex = 0;
+    var skinIdx = this._skinIndex;
+
+    function avatarSrcFor(letter) {
+      return PORTRAIT_BASE + encodeURIComponent(p.AvatarHeroIcon.replace(/^(.*)A_Raw$/, '$1' + letter + '_Raw')) + '.png';
+    }
+    function thumbSrcFor(letter) {
+      return AVATAR_BASE + encodeURIComponent(p.PortraitHeroIcon.replace(/^(.*)A_half$/, '$1' + letter + '_half')) + '.png';
+    }
+    var portraitSrc = avatarSrcFor(skinLetters[skinIdx]);
+    var thumbSrc     = thumbSrcFor(skinLetters[skinIdx]);
+
+    var skinNavHtml = '';
+    if (skinLetters.length > 1) {
+      skinNavHtml =
+        '<button class="skin-nav skin-nav-prev" data-skin-nav="prev" aria-label="Previous skin">&#10094;</button>' +
+        '<button class="skin-nav skin-nav-next" data-skin-nav="next" aria-label="Next skin">&#10095;</button>' +
+        '<div class="portrait-loading"></div>' +
+        '<div class="skin-dots">' +
+          skinLetters.map(function (l, i) {
+            return '<span class="skin-dot' + (i === skinIdx ? ' active' : '') + '"></span>';
+          }).join('') +
+        '</div>';
+
+      $(document).off('click.pilots-skin').on('click.pilots-skin', '[data-skin-nav]', function () {
+        if (self._skinTransitioning) return;
+        var dir = $(this).data('skin-nav') === 'next' ? 1 : -1;
+        var nextIdx = (self._skinIndex + dir + skinLetters.length) % skinLetters.length;
+        var newSrc   = avatarSrcFor(skinLetters[nextIdx]);
+        var newThumb = thumbSrcFor(skinLetters[nextIdx]);
+
+        self._skinIndex = nextIdx;
+        self._skinTransitioning = true;
+
+        var $img     = $('.detail-portrait-img');
+        var $thumb   = $('.detail-name-avatar');
+        var $loading = $('.portrait-loading');
+        var outCls   = dir === 1 ? 'skin-slide-out-left'  : 'skin-slide-out-right';
+        var inCls    = dir === 1 ? 'skin-slide-in-right'  : 'skin-slide-in-left';
+
+        $loading.addClass('active');
+        $img.addClass(outCls);
+        $thumb.css('opacity', 0);
+
+        var preload = new Image();
+        preload.onload = preload.onerror = function () {
+          $loading.removeClass('active');
+          $img.attr('src', newSrc).removeClass(outCls).addClass(inCls);
+          $thumb.attr('src', newThumb);
+          // force reflow so the browser registers the "in" starting position
+          // before we remove it, otherwise the transition wouldn't play
+          void $img[0].offsetWidth;
+          requestAnimationFrame(function () {
+            $img.removeClass(inCls);
+            $thumb.css('opacity', 1);
+          });
+          setTimeout(function () { self._skinTransitioning = false; }, 260);
+        };
+        preload.src = newSrc;
+
+        $('.skin-dot').removeClass('active').eq(nextIdx).addClass('active');
+      });
+    }
 
     var innateEntry = (p.biomimetic_computer_data || []).find(function (e) {
       return /^[1-7]00001$/.test(e.skill3);
@@ -225,6 +291,7 @@ Pages.pilots = {
       cnWarning +
       '<a href="#pilots" class="btn-back">&#8592; Back to Pilots</a>' +
       '<div class="detail-name-row">' +
+        '<img class="detail-name-avatar" src="' + thumbSrc + '" alt="' + $('<span>').text(p.PilotName).html() + '" />' +
         '<div>' +
           '<h2 class="detail-name">' + occIconHtml + $('<span>').text(p.PilotName).html() + '</h2>' +
           '<p class="detail-realname">' + $('<span>').text(p.RealName).html() + '</p>' +
@@ -240,7 +307,8 @@ Pages.pilots = {
       '<div class="detail-layout">' +
         '<div class="detail-portrait-col">' +
           '<div class="detail-portrait">' +
-            '<img src="' + portraitSrc + '" alt="' + $('<span>').text(p.PilotName).html() + '" />' +
+            '<img class="detail-portrait-img" src="' + portraitSrc + '" alt="' + $('<span>').text(p.PilotName).html() + '" />' +
+            skinNavHtml +
           '</div>' +
         '</div>' +
         '<div class="detail-info-col">' +
@@ -505,10 +573,13 @@ Pages.pilots = {
   destroy: function () {
     $(document).off('click.pilots');
     $(document).off('input.pilots');
+    $(document).off('click.pilots-skin');
     this._activeRanks       = {};
     this._activeOccupations = {};
     this._activeVersions    = {};
     this._searchQuery       = '';
+    this._skinIndex         = null;
+    this._skinTransitioning = false;
   }
 };
 
