@@ -1,16 +1,16 @@
 {
   "PilotName": "Toraoh",
-  "RealName": "Toraoh - Tiger King",
+  "RealName": "Tiger King",
   "Gender": "Male",
   "Profession": "Assault",
   "Occupation": "Raider",
   "Talent0_2Ability": {
-    "name": "魔界皇子",
-    "SpecificEffects": "若自身携带的可驱散减益效果小于等于<color=#F74848>3</color>个，可驱散的减益效果无效；每被施加<color=#F74848>1</color>个减益效果，获得<color=#F74848>1</color>层<buf ID=2019506>[虎威]</buf>，可叠加<color=#F74848>5</color>层，持续<color=#F74848>2</color>回合"
+    "name": "Demon Prince",
+    "SpecificEffects": "While this unit carries <color=#F74848>3</color> or less dispellable debuffs, immunes to all those debuffs effect. For each <color=#F74848>1</color> debuff received, gains <color=#F74848>1</color> stack of <buf ID=2019506>[Tiger Might]</buf>, up to <color=#F74848>5</color> stacks, lasting for <color=#F74848>2</color> turns."
   },
   "Talent3_5Ability": {
-    "name": "魔界皇子",
-    "SpecificEffects": "若自身携带的可驱散减益效果小于等于<color=#F74848>3</color>个，可驱散的减益效果无效；每被施加<color=#F74848>1</color>个减益效果，获得<color=#F74848>1</color>层<buf ID=2019506>[虎威]</buf>，可叠加<color=#F74848>5</color>层，持续<color=#F74848>2</color>回合；\n主动攻击时，若暴击次数大于等于<color=#F74848>6</color>次，战后回复<color=#F74848>1</color>AP，每回合最多发动<color=#F74848>2</color>次"
+    "name": "Demon Prince",
+    "SpecificEffects": "While this unit carries <color=#F74848>3</color> or less dispellable debuffs, immunes to all those debuffs effect. For each <color=#F74848>1</color> debuff received, gains <color=#F74848>1</color> stack of <buf ID=2019506>[Tiger Might]</buf>, up to <color=#F74848>5</color> stacks, lasting for <color=#F74848>2</color> turns.\nWhen actively attacking, if there are <color=#F74848>6</color> or more critical hits scored, gains <color=#F74848>1</color>AP. This effect can trigger <color=#F74848>2</color> times per turn."
   },
   "skills": {
     "200001": {
@@ -19,38 +19,39 @@
       "SpecificEffects": "In cooperation with allies, use Assault Weapons to launch a <buf ID=900002>[Link Attack]</buf> against the target, dealing <color=#F74848>0.2x</color> DMG, effective up to <color=#F74848>1</color> time per turn."
     },
     "201902": {
-      "name": "战斗直觉",
+      "name": "Combat Instinct",
       "describe": "",
-      "SpecificEffects": "主动攻击时，对耐久值百分比低于<color=#F74848>50%</color>的部位造成的伤害提升<color=#F74848>20%</color>"
+      "SpecificEffects": "When actively attacking, increases DMG dealt to parts at <color=#F74848>50%</color> max HP or below by <color=#F74848>20%</color>."
     },
     "201903": {
-      "name": "虎啸射击",
-      "describe": "同时使用两把霰弹枪攻击<range type=1>面前3×2格</range>范围内的所有目标，造成<color=#F74848>2×0.35</color>倍范围伤害，攻击前自身获得<color=#F74848>2</color>个随机减益效果，持续<color=#F74848>2</color>回合",
+      "name": "Tiger Roar",
+      "describe": "Uses two Shotguns to attack all enemies within a <range type=1>3x2 square</range> area in front, dealing <color=#F74848>2x0.35</color> AoE DMG. Before attacking, gains <color=#F74848>2</color> random debuffs, lasting for <color=#F74848>2</color> turns.",
       "SpecificEffects": ""
     },
     "201904": {
-      "name": "我才是最强的！",
-      "describe": "立即获得<color=#F74848>3</color>个减益效果，持续<color=#F74848>2</color>回合，并回复<color=#F74848>2</color>AP，然后可以使用完整移动力继续行动",
+      "name": "I Am The Strongest!",
+      "describe": "Gains <color=#F74848>3</color> random debuffs, lasting <color=#F74848>2</color> for 2 turns, as well as <color=#F74848>2</color> AP. Can continue to act with remaining movement.",
       "SpecificEffects": ""
     },
     "201905": {
-      "name": "不屈意志",
+      "name": "Indomitable Resolve",
       "describe": "",
-      "SpecificEffects": "任意部位损毁时，战后消耗<color=#F74848>1</color>PP，回溯该部位至最大耐久值，每次出击最多拥有<color=#F74848>2</color>PP"
+      "resource": "PP",
+      "SpecificEffects": "When any part is destroyed, consumes <color=#F74848>1</color> PP after combat to restore the part to full HP. Gains <color=#F74848>2</color> PP at the start of battle."
     },
     "201906": {
-      "name": "影虎必杀·邪虎光束攻击",
-      "describe": "同时使用两把霰弹枪攻击<range type=1>面前3×3格</range>范围内的所有目标，造成<color=#F74848>2×0.5</color>倍范围伤害，保留击毁目标后过量的子弹数，最多保留<color=#F74848>30</color>颗，战后对攻击范围内耐久值最高的目标发动<color=#F74848>1</color>次<buf ID=900031>[额外打击]</buf>，造成<color=#F74848>0.25</color>倍伤害，每颗保留的子弹使本次<buf ID=900031>[额外打击]</buf>子弹数<color=#F74848>+1</color>，攻击前自身获得<color=#F74848>2</color>个随机减益效果，持续<color=#F74848>2</color>回合，每回合最多施放<color=#F74848>1</color>次",
+      "name": "Shadow Tiger Ultimate - Evil Tiger Beam",
+      "describe": "Uses two Shotguns to attack all enemies within a <range type=1>3x3 square</range> area in front, dealing <color=#F74848>2x0.5</color> AoE DMG. If a target is destroyed, gains retained ammo, up to <color=#F74848>30</color> ammo. After combat, performs <color=#F74848>1</color> <buf ID=900031>[Extra Strike]</buf> on the highest HP target within range, dealing <color=#F74848>0.25x</color> DMG. Each retained ammo increases <buf ID=900031>[Extra Strike]</buf> bullet count by <color=#F74848>+1</color>. Before attacking, gains <color=#F74848>2</color> random debuffs, lasting for <color=#F74848>2</color> turns. This skill can only be used <color=#F74848>1</color> time per turn.",
       "SpecificEffects": ""
     },
     "201907": {
-      "name": "好胜心",
+      "name": "Competitive Will",
       "describe": "",
-      "SpecificEffects": "主动攻击对战时，无视目标<color=#F74848>30%</color>护甲；主动使用范围技能攻击时，无视目标<color=#F74848>15%</color>闪避值"
+      "SpecificEffects": "When actively attacking, ignores <color=#F74848>30%</color> target's armor. When performing AoE skills, additionally ignores <color=#F74848>15%</color> target's Dodge Rate."
     },
     "201908": {
-      "name": "影虎必杀·邪虎光束攻击MAX",
-      "describe": "同时使用两把霰弹枪攻击单个目标，造成<color=#F74848>2×0.75</color>倍伤害，本次攻击暴击率提升<color=#F74848>20%</color>，保留每颗暴击的子弹数，最多<color=#F74848>15</color>颗，战后使用两把霰弹枪对目标周围<color=#F74848>2</color>格范围内所有敌机发动一次<buf ID=900031>[额外打击]</buf>，造成<color=#F74848>2×0.15</color>倍伤害，每颗保留的子弹使本次<buf ID=900031>[额外打击]</buf>攻击倍率<color=#F74848>+0.02</color>，攻击前自身获得<color=#F74848>2</color>个随机减益效果，持续<color=#F74848>2</color>回合",
+      "name": "Shadow Tiger Ultimate - Evil Tiger Beam MAX",
+      "describe": "Uses two Shotguns to attack a target, dealing <color=#F74848>2x0.75</color> DMG. Critical Hit chance increases by <color=#F74848>20%</color> for this attack. Can retain ammo per critical hit, up to <color=#F74848>15</color> ammo. After combat, performs <buf ID=900031>[Extra Strike]</buf> on all enemies within <color=#F74848>2</color> adjacent tiles, dealing <color=#F74848>2x0.15</color> AoE DMG. Each retained ammo increases this <buf ID=900031>[Extra Strike]</buf> multiplier by <color=#F74848>+0.02</color>. Before attacking, gains <color=#F74848>2</color> random debuffs, lasting for <color=#F74848>2</color> turns.",
       "SpecificEffects": ""
     }
   },
@@ -80,8 +81,8 @@
       "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
     },
     "201931": {
-      "name": "少年意气1",
-      "SpecificEffects": "天赋无效可驱散减益效果的条件提升至小于等于<color=#F74848>5</color>个"
+      "name": "Youthful Spirit 1",
+      "SpecificEffects": "Talent debuff ineffectiveness threshold increases to <color=#F74848>5</color>."
     },
     "200032": {
       "name": "AP Optimization 3",
@@ -92,20 +93,20 @@
       "SpecificEffects": "At the end of the action, if an Active Attack was not initiated this turn, an extra <color=#F74848>2</color> tiles can be moved."
     },
     "201934": {
-      "name": "少年意气2",
-      "SpecificEffects": "行动结束时，每携带<color=#F74848>1</color>个减益效果，恢复完好部位<color=#F74848>3%</color>耐久值，最多恢复<color=#F74848>15%</color>"
+      "name": "Youthful Spirit 2",
+      "SpecificEffects": "At the end of action, for each <color=#F74848>1</color> debuff carried, restores <color=#F74848>3%</color> of max HP to all undestroyed parts, up to <color=#F74848>15%</color>."
     },
     "201935": {
-      "name": "少年意气3",
-      "SpecificEffects": "自身每携带<color=#F74848>1</color>个减益效果，伤害提升<color=#F74848>8%</color>，最多提升<color=#F74848>40%</color>"
+      "name": "Youthful Spirit 3",
+      "SpecificEffects": "For each <color=#F74848>1</color> debuff carried, increases DMG dealt by <color=#F74848>8%</color>, up to <color=#F74848>40%</color>."
     },
     "201936": {
-      "name": "少年意气4",
-      "SpecificEffects": "使用霰弹枪发起范围攻击时，若攻击前携带<color=#F74848>3</color>个及以上减益效果，攻击范围<color=#F74848>+1</color>"
+      "name": "Youthful Spirit 4",
+      "SpecificEffects": "When launching AoE attack with Shotguns, if this unit is carrying <color=#F74848>3</color> or more debuffs, the skill effective range increases by <color=#F74848>+1</color>."
     },
     "201941": {
-      "name": "勇虎之心1",
-      "SpecificEffects": "主动攻击时，若自身携带的可驱散减益效果小于<color=#F74848>5</color>个，立即获得<color=#F74848>1</color>个随机减益效果，持续<color=#F74848>2</color>回合"
+      "name": "Tiger Heart 1",
+      "SpecificEffects": "When actively attacking, if carrying <color=#F74848>5</color> or less debuffs, immediately gains <color=#F74848>1</color> debuff, lasting for <color=#F74848>2</color> turns."
     },
     "200042": {
       "name": "AP Optimization 4",
@@ -116,17 +117,17 @@
       "SpecificEffects": "If not moved before an Active Attack, <buf ID=900004>[Re-ATK]</buf> can be triggered, effective up to <color=#F74848>1</color> time per turn. Unable to move before attacking.\nEffects similar to <buf ID=900004>[Re-ATK]</buf> cannot be re-triggered."
     },
     "201944": {
-      "name": "勇虎之心2",
-      "SpecificEffects": "主动攻击后，若自身携带的增益和减益效果大于等于<color=#F74848>10</color>个，可以发动<buf ID=900005>[再行动]</buf>，每回合最多发动<color=#F74848>1</color>次；触发[勇虎之心2]的<buf ID=900005>[再行动]</buf>效果后，移除自身<color=#F74848>5</color>个可驱散的减益效果，同时获得<buf ID=2019443>[虎王的底力]</buf>，每回合最多发动<color=#F74848>1</color>次"
+      "name": "Tiger Heart 2",
+      "SpecificEffects": "After actively attacking, if carrying <color=#F74848>10</color> or more debuff, triggers <buf ID=900005>[Re-Act]</buf>. After [Tiger Heart 2] <buf ID=900005>[Re-Act]</buf> effect triggered, dispels <color=#F74848>5</color> dispellable debuffs from this unit and gains <buf ID=2019443>[Tiger King Resilience]</buf> This effect can trigger at maximum <color=#F74848>1</color> time per turn."
     },
     "201945": {
-      "name": "勇虎之心3",
-      "SpecificEffects": "命中率和暴击率提升<color=#F74848>12%</color>，携带<color=#F74848>5</color>层<buf ID=2019506>[虎威]</buf>时，霰弹枪射程<color=#F74848>+1</color>"
+      "name": "Tiger Heart 3",
+      "SpecificEffects": "Hit Rate and Critical Hit chance increase by <color=#F74848>12%</color>. When carrying <color=#F74848>5</color> or more stacks of <buf ID=2019506>[Tiger Might]</buf>, Shotgun range increases by <color=#F74848>+1</color>."
     },
     "201946": {
-      "name": "勇虎之心4",
-      "SpecificEffects": "自身每有<color=#F74848>1</color>层<buf ID=2019506>[虎威]</buf>，最终伤害提升<color=#F74848>4%</color>"
+      "name": "Tiger Heart 4",
+      "SpecificEffects": "For each <color=#F74848>1</color> stack <buf ID=2019506>[Tiger Might]</buf> carried, increases Final DMG by <color=#F74848>4%</color>."
     }
   },
-  "version": "1.0"
+  "version": "2.6"
 }

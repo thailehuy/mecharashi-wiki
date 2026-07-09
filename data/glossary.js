@@ -1047,6 +1047,14 @@ window.GlossaryData = {
     "1018463": {
       "name": "Hope",
       "effect": "Final DMG increases by <color=#F74848>5%</color>, stacking up to <color=#F74848>3</color> times. This effect is removed at the end of the team turn."
+    },
+    "2019506": {
+      "name": "Tiger Might",
+      "effect": "Critical Hit chance and Dodge Rate increase by <color=#F74848>3%</color> per stack."
+    },
+    "2019443": {
+      "name": "Tiger King Resilience",
+      "effect": "Next attack AP cost is reduced by <color=#F74848>-2</color>, to a minimum of <color=#F74848>1</color> AP. DMG taken from [Retaliation] reduces by 30%. This effect is removed after actively attacking."
     }
   },
   "skill": {

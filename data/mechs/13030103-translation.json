@@ -1,23 +1,23 @@
 {
-  "name": "影虎",
+  "name": "Shadowtiger",
   "introduce": "DMS-001 影虎\n由西塞罗博士设计，多尔工业制造的轻型机兵。该机拥有高纯度岚质框架与新式复合装甲，兼具优秀的攻防性能。此外，精细调整过的传感辅助系统也使得它在中近距离作战中拥有无与伦比的突破能力。",
   "modules": {
     "30498": {
-      "name": "异态模组",
-      "SpecificEffects": "自身每携带<color=#F74848>1</color>个增益效果或减益效果，伤害提升<color=#F74848>3%</color>，最多<color=#F74848>24%</color>；\n若自身携带的增益效果和减益效果大于等于<color=#F74848>6</color>个，突击武器子弹数<color=#F74848>+1</color>"
+      "name": "Abnomality Mod",
+      "SpecificEffects": "For each <color=#F74848>1</color> buff or debuff carried, DMG dealt increases by <color=#F74848>3%</color>, up to <color=#F74848>24%</color>.\nIf this unit carries <color=#F74848>6</color> or more buffs or debuffs, assault weapon bullet count increases by <color=#F74848>+1</color>."
     },
     "40014": {
       "name": "Accuracy Mod",
       "SpecificEffects": "Hit Rate <color=#F74848>+10%</color>."
     },
     "20584": {
-      "name": "影袭链路",
-      "SpecificEffects": "突击手攻击时，伤害提升<color=#F74848>15%</color>；根据连击数提升暴击率，每<color=#F74848>1</color>连击提升<color=#F74848>5%</color>，最多提升<color=#F74848>30%</color>"
+      "name": "Shadow Strike Mod",
+      "SpecificEffects": "When actively attacking with assault weapon, DMG dealt increases by <color=#F74848>15%</color>. Critical Hit chance increases by <color=#F74848>5%</color> per <color=#F74848>1</color> bullet hit, up to <color=#F74848>30%</color>."
     },
     "20586": {
-      "name": "虎魄·无束",
-      "SpecificEffects": "驾驶一整套[影虎]时，机兵移动时无视单位阻挡；当[虎王]驾驶一整套[影虎]时，腿部被击破时移动力不会降低，机兵移动方式变为漂浮，可翻越低障碍"
+      "name": "Tiger Soul - Unbound",
+      "SpecificEffects": "Ignores unit obstruction when moving. When [Toraoh] pilots the complete [Shadowtiger], movement is not reduced when legs are destroyed, and movement type changes to hovering, allowing this unit to pass over low obstacle."
     }
   },
-  "version": "1.0"
+  "version": "2.6"
 }

@@ -47963,15 +47963,15 @@
       "PilotName": "Toraoh",
       "PortraitHeroIcon": "Pilot_10103172A_half",
       "AvatarHeroIcon": "Pilot_10103172A_Raw",
-      "RealName": "Toraoh - Tiger King",
+      "RealName": "Tiger King",
       "Gender": "Male",
       "Profession": "Assault",
       "Occupation": "Raider",
       "quality": "SSR",
       "Talent0_2Ability": {
         "ID": "201950",
-        "name": "\u9b54\u754c\u7687\u5b50",
-        "SpecificEffects": "\u82e5\u81ea\u8eab\u643a\u5e26\u7684\u53ef\u9a71\u6563\u51cf\u76ca\u6548\u679c\u5c0f\u4e8e\u7b49\u4e8e<color=#F74848>3</color>\u4e2a\uff0c\u53ef\u9a71\u6563\u7684\u51cf\u76ca\u6548\u679c\u65e0\u6548\uff1b\u6bcf\u88ab\u65bd\u52a0<color=#F74848>1</color>\u4e2a\u51cf\u76ca\u6548\u679c\uff0c\u83b7\u5f97<color=#F74848>1</color>\u5c42<buf ID=2019506>[\u864e\u5a01]</buf>\uff0c\u53ef\u53e0\u52a0<color=#F74848>5</color>\u5c42\uff0c\u6301\u7eed<color=#F74848>2</color>\u56de\u5408",
+        "name": "Demon Prince",
+        "SpecificEffects": "While this unit carries <color=#F74848>3</color> or less dispellable debuffs, immunes to all those debuffs effect. For each <color=#F74848>1</color> debuff received, gains <color=#F74848>1</color> stack of <buf ID=2019506>[Tiger Might]</buf>, up to <color=#F74848>5</color> stacks, lasting for <color=#F74848>2</color> turns.",
         "BufCarried": "2019501/2019502/2019503/2019504",
         "SkillIcon": "Icon_skill_talent_9501",
         "icon": "Icon_skill_talent_9501",
@@ -47980,8 +47980,8 @@
       },
       "Talent3_5Ability": {
         "ID": "201951",
-        "name": "\u9b54\u754c\u7687\u5b50",
-        "SpecificEffects": "\u82e5\u81ea\u8eab\u643a\u5e26\u7684\u53ef\u9a71\u6563\u51cf\u76ca\u6548\u679c\u5c0f\u4e8e\u7b49\u4e8e<color=#F74848>3</color>\u4e2a\uff0c\u53ef\u9a71\u6563\u7684\u51cf\u76ca\u6548\u679c\u65e0\u6548\uff1b\u6bcf\u88ab\u65bd\u52a0<color=#F74848>1</color>\u4e2a\u51cf\u76ca\u6548\u679c\uff0c\u83b7\u5f97<color=#F74848>1</color>\u5c42<buf ID=2019506>[\u864e\u5a01]</buf>\uff0c\u53ef\u53e0\u52a0<color=#F74848>5</color>\u5c42\uff0c\u6301\u7eed<color=#F74848>2</color>\u56de\u5408\uff1b\n\u4e3b\u52a8\u653b\u51fb\u65f6\uff0c\u82e5\u66b4\u51fb\u6b21\u6570\u5927\u4e8e\u7b49\u4e8e<color=#F74848>6</color>\u6b21\uff0c\u6218\u540e\u56de\u590d<color=#F74848>1</color>AP\uff0c\u6bcf\u56de\u5408\u6700\u591a\u53d1\u52a8<color=#F74848>2</color>\u6b21",
+        "name": "Demon Prince",
+        "SpecificEffects": "While this unit carries <color=#F74848>3</color> or less dispellable debuffs, immunes to all those debuffs effect. For each <color=#F74848>1</color> debuff received, gains <color=#F74848>1</color> stack of <buf ID=2019506>[Tiger Might]</buf>, up to <color=#F74848>5</color> stacks, lasting for <color=#F74848>2</color> turns.\nWhen actively attacking, if there are <color=#F74848>6</color> or more critical hits scored, gains <color=#F74848>1</color>AP. This effect can trigger <color=#F74848>2</color> times per turn.",
         "BufCarried": "2019501/2019502/2019503/2019504/2019511/2019514",
         "SkillIcon": "Icon_skill_talent_9501",
         "icon": "Icon_skill_talent_9501",
@@ -48148,8 +48148,8 @@
                 "type": 3,
                 "PassiveSkill": {
                   "ID": "201931",
-                  "name": "\u5c11\u5e74\u610f\u6c141",
-                  "SpecificEffects": "\u5929\u8d4b\u65e0\u6548\u53ef\u9a71\u6563\u51cf\u76ca\u6548\u679c\u7684\u6761\u4ef6\u63d0\u5347\u81f3\u5c0f\u4e8e\u7b49\u4e8e<color=#F74848>5</color>\u4e2a",
+                  "name": "Youthful Spirit 1",
+                  "SpecificEffects": "Talent debuff ineffectiveness threshold increases to <color=#F74848>5</color>.",
                   "BufCarried": "2019311",
                   "SkillIcon": "Icon_skill_passive_5273",
                   "icon": "Icon_skill_passive_5273",
@@ -48204,8 +48204,8 @@
                 "type": 3,
                 "PassiveSkill": {
                   "ID": "201934",
-                  "name": "\u5c11\u5e74\u610f\u6c142",
-                  "SpecificEffects": "\u884c\u52a8\u7ed3\u675f\u65f6\uff0c\u6bcf\u643a\u5e26<color=#F74848>1</color>\u4e2a\u51cf\u76ca\u6548\u679c\uff0c\u6062\u590d\u5b8c\u597d\u90e8\u4f4d<color=#F74848>3%</color>\u8010\u4e45\u503c\uff0c\u6700\u591a\u6062\u590d<color=#F74848>15%</color>",
+                  "name": "Youthful Spirit 2",
+                  "SpecificEffects": "At the end of action, for each <color=#F74848>1</color> debuff carried, restores <color=#F74848>3%</color> of max HP to all undestroyed parts, up to <color=#F74848>15%</color>.",
                   "BufCarried": "2019341",
                   "SkillIcon": "Icon_skill_passive_5273",
                   "icon": "Icon_skill_passive_5273",
@@ -48223,8 +48223,8 @@
                 "type": 3,
                 "PassiveSkill": {
                   "ID": "201935",
-                  "name": "\u5c11\u5e74\u610f\u6c143",
-                  "SpecificEffects": "\u81ea\u8eab\u6bcf\u643a\u5e26<color=#F74848>1</color>\u4e2a\u51cf\u76ca\u6548\u679c\uff0c\u4f24\u5bb3\u63d0\u5347<color=#F74848>8%</color>\uff0c\u6700\u591a\u63d0\u5347<color=#F74848>40%</color>",
+                  "name": "Youthful Spirit 3",
+                  "SpecificEffects": "For each <color=#F74848>1</color> debuff carried, increases DMG dealt by <color=#F74848>8%</color>, up to <color=#F74848>40%</color>.",
                   "BufCarried": "2019351",
                   "SkillIcon": "Icon_skill_passive_5273",
                   "icon": "Icon_skill_passive_5273",
@@ -48242,8 +48242,8 @@
                 "type": 3,
                 "PassiveSkill": {
                   "ID": "201936",
-                  "name": "\u5c11\u5e74\u610f\u6c144",
-                  "SpecificEffects": "\u4f7f\u7528\u9730\u5f39\u67aa\u53d1\u8d77\u8303\u56f4\u653b\u51fb\u65f6\uff0c\u82e5\u653b\u51fb\u524d\u643a\u5e26<color=#F74848>3</color>\u4e2a\u53ca\u4ee5\u4e0a\u51cf\u76ca\u6548\u679c\uff0c\u653b\u51fb\u8303\u56f4<color=#F74848>+1</color>",
+                  "name": "Youthful Spirit 4",
+                  "SpecificEffects": "When launching AoE attack with Shotguns, if this unit is carrying <color=#F74848>3</color> or more debuffs, the skill effective range increases by <color=#F74848>+1</color>.",
                   "BufCarried": "2019361",
                   "SkillIcon": "Icon_skill_passive_5273",
                   "icon": "Icon_skill_passive_5273",
@@ -48275,8 +48275,8 @@
                 "type": 3,
                 "PassiveSkill": {
                   "ID": "201941",
-                  "name": "\u52c7\u864e\u4e4b\u5fc31",
-                  "SpecificEffects": "\u4e3b\u52a8\u653b\u51fb\u65f6\uff0c\u82e5\u81ea\u8eab\u643a\u5e26\u7684\u53ef\u9a71\u6563\u51cf\u76ca\u6548\u679c\u5c0f\u4e8e<color=#F74848>5</color>\u4e2a\uff0c\u7acb\u5373\u83b7\u5f97<color=#F74848>1</color>\u4e2a\u968f\u673a\u51cf\u76ca\u6548\u679c\uff0c\u6301\u7eed<color=#F74848>2</color>\u56de\u5408",
+                  "name": "Tiger Heart 1",
+                  "SpecificEffects": "When actively attacking, if carrying <color=#F74848>5</color> or less debuffs, immediately gains <color=#F74848>1</color> debuff, lasting for <color=#F74848>2</color> turns.",
                   "BufCarried": "2019411",
                   "SkillIcon": "Icon_skill_passive_5274",
                   "icon": "Icon_skill_passive_5274",
@@ -48331,8 +48331,8 @@
                 "type": 3,
                 "PassiveSkill": {
                   "ID": "201944",
-                  "name": "\u52c7\u864e\u4e4b\u5fc32",
-                  "SpecificEffects": "\u4e3b\u52a8\u653b\u51fb\u540e\uff0c\u82e5\u81ea\u8eab\u643a\u5e26\u7684\u589e\u76ca\u548c\u51cf\u76ca\u6548\u679c\u5927\u4e8e\u7b49\u4e8e<color=#F74848>10</color>\u4e2a\uff0c\u53ef\u4ee5\u53d1\u52a8<buf ID=900005>[\u518d\u884c\u52a8]</buf>\uff0c\u6bcf\u56de\u5408\u6700\u591a\u53d1\u52a8<color=#F74848>1</color>\u6b21\uff1b\u89e6\u53d1[\u52c7\u864e\u4e4b\u5fc32]\u7684<buf ID=900005>[\u518d\u884c\u52a8]</buf>\u6548\u679c\u540e\uff0c\u79fb\u9664\u81ea\u8eab<color=#F74848>5</color>\u4e2a\u53ef\u9a71\u6563\u7684\u51cf\u76ca\u6548\u679c\uff0c\u540c\u65f6\u83b7\u5f97<buf ID=2019443>[\u864e\u738b\u7684\u5e95\u529b]</buf>\uff0c\u6bcf\u56de\u5408\u6700\u591a\u53d1\u52a8<color=#F74848>1</color>\u6b21",
+                  "name": "Tiger Heart 2",
+                  "SpecificEffects": "After actively attacking, if carrying <color=#F74848>10</color> or more debuff, triggers <buf ID=900005>[Re-Act]</buf>. After [Tiger Heart 2] <buf ID=900005>[Re-Act]</buf> effect triggered, dispels <color=#F74848>5</color> dispellable debuffs from this unit and gains <buf ID=2019443>[Tiger King Resilience]</buf> This effect can trigger at maximum <color=#F74848>1</color> time per turn.",
                   "BufCarried": "2019441",
                   "SkillIcon": "Icon_skill_passive_5274",
                   "icon": "Icon_skill_passive_5274",
@@ -48350,8 +48350,8 @@
                 "type": 3,
                 "PassiveSkill": {
                   "ID": "201945",
-                  "name": "\u52c7\u864e\u4e4b\u5fc33",
-                  "SpecificEffects": "\u547d\u4e2d\u7387\u548c\u66b4\u51fb\u7387\u63d0\u5347<color=#F74848>12%</color>\uff0c\u643a\u5e26<color=#F74848>5</color>\u5c42<buf ID=2019506>[\u864e\u5a01]</buf>\u65f6\uff0c\u9730\u5f39\u67aa\u5c04\u7a0b<color=#F74848>+1</color>",
+                  "name": "Tiger Heart 3",
+                  "SpecificEffects": "Hit Rate and Critical Hit chance increase by <color=#F74848>12%</color>. When carrying <color=#F74848>5</color> or more stacks of <buf ID=2019506>[Tiger Might]</buf>, Shotgun range increases by <color=#F74848>+1</color>.",
                   "BufCarried": "2019451/2019452",
                   "SkillIcon": "Icon_skill_passive_5274",
                   "icon": "Icon_skill_passive_5274",
@@ -48369,8 +48369,8 @@
                 "type": 3,
                 "PassiveSkill": {
                   "ID": "201946",
-                  "name": "\u52c7\u864e\u4e4b\u5fc34",
-                  "SpecificEffects": "\u81ea\u8eab\u6bcf\u6709<color=#F74848>1</color>\u5c42<buf ID=2019506>[\u864e\u5a01]</buf>\uff0c\u6700\u7ec8\u4f24\u5bb3\u63d0\u5347<color=#F74848>4%</color>",
+                  "name": "Tiger Heart 4",
+                  "SpecificEffects": "For each <color=#F74848>1</color> stack <buf ID=2019506>[Tiger Might]</buf> carried, increases Final DMG by <color=#F74848>4%</color>.",
                   "BufCarried": "2019461",
                   "SkillIcon": "Icon_skill_passive_5274",
                   "icon": "Icon_skill_passive_5274",
@@ -48599,8 +48599,8 @@
           "weight": 2684,
           "skill": {
             "ID": "201902",
-            "name": "\u6218\u6597\u76f4\u89c9",
-            "SpecificEffects": "\u4e3b\u52a8\u653b\u51fb\u65f6\uff0c\u5bf9\u8010\u4e45\u503c\u767e\u5206\u6bd4\u4f4e\u4e8e<color=#F74848>50%</color>\u7684\u90e8\u4f4d\u9020\u6210\u7684\u4f24\u5bb3\u63d0\u5347<color=#F74848>20%</color>",
+            "name": "Combat Instinct",
+            "SpecificEffects": "When actively attacking, increases DMG dealt to parts at <color=#F74848>50%</color> max HP or below by <color=#F74848>20%</color>.",
             "BufCarried": "7000481",
             "SkillIcon": "Icon_skill_passive_9501",
             "icon": "Icon_skill_passive_9501",
@@ -48625,8 +48625,8 @@
           "skill": {
             "ID": "201903",
             "remarks": "\u864e\u738b-\u4eff\u751f\u7535\u8111",
-            "name": "\u864e\u5578\u5c04\u51fb",
-            "describe": "\u540c\u65f6\u4f7f\u7528\u4e24\u628a\u9730\u5f39\u67aa\u653b\u51fb<range type=1>\u9762\u524d3\u00d72\u683c</range>\u8303\u56f4\u5185\u7684\u6240\u6709\u76ee\u6807\uff0c\u9020\u6210<color=#F74848>2\u00d70.35</color>\u500d\u8303\u56f4\u4f24\u5bb3\uff0c\u653b\u51fb\u524d\u81ea\u8eab\u83b7\u5f97<color=#F74848>2</color>\u4e2a\u968f\u673a\u51cf\u76ca\u6548\u679c\uff0c\u6301\u7eed<color=#F74848>2</color>\u56de\u5408",
+            "name": "Tiger Roar",
+            "describe": "Uses two Shotguns to attack all enemies within a <range type=1>3x2 square</range> area in front, dealing <color=#F74848>2x0.35</color> AoE DMG. Before attacking, gains <color=#F74848>2</color> random debuffs, lasting for <color=#F74848>2</color> turns.",
             "type": "SpecialAssault",
             "Ap": "3",
             "matchingWeaponType": "\u9730\u5f39\u67aa",
@@ -48653,8 +48653,8 @@
           "skill": {
             "ID": "201904",
             "remarks": "\u864e\u738b-\u4eff\u751f\u7535\u8111",
-            "name": "\u6211\u624d\u662f\u6700\u5f3a\u7684\uff01",
-            "describe": "\u7acb\u5373\u83b7\u5f97<color=#F74848>3</color>\u4e2a\u51cf\u76ca\u6548\u679c\uff0c\u6301\u7eed<color=#F74848>2</color>\u56de\u5408\uff0c\u5e76\u56de\u590d<color=#F74848>2</color>AP\uff0c\u7136\u540e\u53ef\u4ee5\u4f7f\u7528\u5b8c\u6574\u79fb\u52a8\u529b\u7ee7\u7eed\u884c\u52a8",
+            "name": "I Am The Strongest!",
+            "describe": "Gains <color=#F74848>3</color> random debuffs, lasting <color=#F74848>2</color> for 2 turns, as well as <color=#F74848>2</color> AP. Can continue to act with remaining movement.",
             "type": "Order",
             "CD": "3",
             "Ap": "0",
@@ -48680,13 +48680,14 @@
           "weight": 2687,
           "skill": {
             "ID": "201905",
-            "name": "\u4e0d\u5c48\u610f\u5fd7",
-            "SpecificEffects": "\u4efb\u610f\u90e8\u4f4d\u635f\u6bc1\u65f6\uff0c\u6218\u540e\u6d88\u8017<color=#F74848>1</color>PP\uff0c\u56de\u6eaf\u8be5\u90e8\u4f4d\u81f3\u6700\u5927\u8010\u4e45\u503c\uff0c\u6bcf\u6b21\u51fa\u51fb\u6700\u591a\u62e5\u6709<color=#F74848>2</color>PP",
+            "name": "Indomitable Resolve",
+            "SpecificEffects": "When any part is destroyed, consumes <color=#F74848>1</color> PP after combat to restore the part to full HP. Gains <color=#F74848>2</color> PP at the start of battle.",
             "BufCarried": "2019051/2019052/2019053/2019054/2019055/2019057/2019058",
             "SkillIcon": "Icon_skill_passive_9502",
             "icon": "Icon_skill_passive_9502",
             "Status": 1,
-            "weight": 3281
+            "weight": 3281,
+            "resource": "PP"
           }
         },
         {
@@ -48706,8 +48707,8 @@
           "skill": {
             "ID": "201906",
             "remarks": "\u864e\u738b-\u4eff\u751f\u7535\u8111",
-            "name": "\u5f71\u864e\u5fc5\u6740\u00b7\u90aa\u864e\u5149\u675f\u653b\u51fb",
-            "describe": "\u540c\u65f6\u4f7f\u7528\u4e24\u628a\u9730\u5f39\u67aa\u653b\u51fb<range type=1>\u9762\u524d3\u00d73\u683c</range>\u8303\u56f4\u5185\u7684\u6240\u6709\u76ee\u6807\uff0c\u9020\u6210<color=#F74848>2\u00d70.5</color>\u500d\u8303\u56f4\u4f24\u5bb3\uff0c\u4fdd\u7559\u51fb\u6bc1\u76ee\u6807\u540e\u8fc7\u91cf\u7684\u5b50\u5f39\u6570\uff0c\u6700\u591a\u4fdd\u7559<color=#F74848>30</color>\u9897\uff0c\u6218\u540e\u5bf9\u653b\u51fb\u8303\u56f4\u5185\u8010\u4e45\u503c\u6700\u9ad8\u7684\u76ee\u6807\u53d1\u52a8<color=#F74848>1</color>\u6b21<buf ID=900031>[\u989d\u5916\u6253\u51fb]</buf>\uff0c\u9020\u6210<color=#F74848>0.25</color>\u500d\u4f24\u5bb3\uff0c\u6bcf\u9897\u4fdd\u7559\u7684\u5b50\u5f39\u4f7f\u672c\u6b21<buf ID=900031>[\u989d\u5916\u6253\u51fb]</buf>\u5b50\u5f39\u6570<color=#F74848>+1</color>\uff0c\u653b\u51fb\u524d\u81ea\u8eab\u83b7\u5f97<color=#F74848>2</color>\u4e2a\u968f\u673a\u51cf\u76ca\u6548\u679c\uff0c\u6301\u7eed<color=#F74848>2</color>\u56de\u5408\uff0c\u6bcf\u56de\u5408\u6700\u591a\u65bd\u653e<color=#F74848>1</color>\u6b21",
+            "name": "Shadow Tiger Ultimate - Evil Tiger Beam",
+            "describe": "Uses two Shotguns to attack all enemies within a <range type=1>3x3 square</range> area in front, dealing <color=#F74848>2x0.5</color> AoE DMG. If a target is destroyed, gains retained ammo, up to <color=#F74848>30</color> ammo. After combat, performs <color=#F74848>1</color> <buf ID=900031>[Extra Strike]</buf> on the highest HP target within range, dealing <color=#F74848>0.25x</color> DMG. Each retained ammo increases <buf ID=900031>[Extra Strike]</buf> bullet count by <color=#F74848>+1</color>. Before attacking, gains <color=#F74848>2</color> random debuffs, lasting for <color=#F74848>2</color> turns. This skill can only be used <color=#F74848>1</color> time per turn.",
             "type": "SpecialAssault",
             "Ap": "4",
             "matchingWeaponType": "\u9730\u5f39\u67aa",
@@ -48734,8 +48735,8 @@
           "weight": 2689,
           "skill": {
             "ID": "201907",
-            "name": "\u597d\u80dc\u5fc3",
-            "SpecificEffects": "\u4e3b\u52a8\u653b\u51fb\u5bf9\u6218\u65f6\uff0c\u65e0\u89c6\u76ee\u6807<color=#F74848>30%</color>\u62a4\u7532\uff1b\u4e3b\u52a8\u4f7f\u7528\u8303\u56f4\u6280\u80fd\u653b\u51fb\u65f6\uff0c\u65e0\u89c6\u76ee\u6807<color=#F74848>15%</color>\u95ea\u907f\u503c",
+            "name": "Competitive Will",
+            "SpecificEffects": "When actively attacking, ignores <color=#F74848>30%</color> target's armor. When performing AoE skills, additionally ignores <color=#F74848>15%</color> target's Dodge Rate.",
             "BufCarried": "2019071",
             "SkillIcon": "Icon_skill_passive_9503",
             "icon": "Icon_skill_passive_9503",
@@ -48760,8 +48761,8 @@
           "skill": {
             "ID": "201908",
             "remarks": "\u864e\u738b-\u4eff\u751f\u7535\u8111",
-            "name": "\u5f71\u864e\u5fc5\u6740\u00b7\u90aa\u864e\u5149\u675f\u653b\u51fbMAX",
-            "describe": "\u540c\u65f6\u4f7f\u7528\u4e24\u628a\u9730\u5f39\u67aa\u653b\u51fb\u5355\u4e2a\u76ee\u6807\uff0c\u9020\u6210<color=#F74848>2\u00d70.75</color>\u500d\u4f24\u5bb3\uff0c\u672c\u6b21\u653b\u51fb\u66b4\u51fb\u7387\u63d0\u5347<color=#F74848>20%</color>\uff0c\u4fdd\u7559\u6bcf\u9897\u66b4\u51fb\u7684\u5b50\u5f39\u6570\uff0c\u6700\u591a<color=#F74848>15</color>\u9897\uff0c\u6218\u540e\u4f7f\u7528\u4e24\u628a\u9730\u5f39\u67aa\u5bf9\u76ee\u6807\u5468\u56f4<color=#F74848>2</color>\u683c\u8303\u56f4\u5185\u6240\u6709\u654c\u673a\u53d1\u52a8\u4e00\u6b21<buf ID=900031>[\u989d\u5916\u6253\u51fb]</buf>\uff0c\u9020\u6210<color=#F74848>2\u00d70.15</color>\u500d\u4f24\u5bb3\uff0c\u6bcf\u9897\u4fdd\u7559\u7684\u5b50\u5f39\u4f7f\u672c\u6b21<buf ID=900031>[\u989d\u5916\u6253\u51fb]</buf>\u653b\u51fb\u500d\u7387<color=#F74848>+0.02</color>\uff0c\u653b\u51fb\u524d\u81ea\u8eab\u83b7\u5f97<color=#F74848>2</color>\u4e2a\u968f\u673a\u51cf\u76ca\u6548\u679c\uff0c\u6301\u7eed<color=#F74848>2</color>\u56de\u5408",
+            "name": "Shadow Tiger Ultimate - Evil Tiger Beam MAX",
+            "describe": "Uses two Shotguns to attack a target, dealing <color=#F74848>2x0.75</color> DMG. Critical Hit chance increases by <color=#F74848>20%</color> for this attack. Can retain ammo per critical hit, up to <color=#F74848>15</color> ammo. After combat, performs <buf ID=900031>[Extra Strike]</buf> on all enemies within <color=#F74848>2</color> adjacent tiles, dealing <color=#F74848>2x0.15</color> AoE DMG. Each retained ammo increases this <buf ID=900031>[Extra Strike]</buf> multiplier by <color=#F74848>+0.02</color>. Before attacking, gains <color=#F74848>2</color> random debuffs, lasting for <color=#F74848>2</color> turns.",
             "type": "EquipmentSkill",
             "Ap": "5",
             "matchingWeaponType": "\u9730\u5f39\u67aa",
@@ -49028,8 +49029,8 @@
         }
       ],
       "AllowedMechaDriveList_DriveAllowedList": "Light",
-      "version": "1.0",
-      "enTranslation": false
+      "version": "2.6",
+      "enTranslation": true
     },
     {
       "ID": "10103144",

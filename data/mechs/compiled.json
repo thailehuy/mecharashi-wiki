@@ -4641,6 +4641,128 @@
       "enTranslation": true
     },
     {
+      "ID": "13030103",
+      "name": "Shadowtiger",
+      "type": "Light",
+      "quality": "SSR",
+      "icon": "Icon_mecha_wap1303",
+      "mechaIcon": "Icon_wap1303_1",
+      "lihuiIcon": "icon_lihui_wap1303",
+      "introduce": "DMS-001 \u5f71\u864e\n\u7531\u897f\u585e\u7f57\u535a\u58eb\u8bbe\u8ba1\uff0c\u591a\u5c14\u5de5\u4e1a\u5236\u9020\u7684\u8f7b\u578b\u673a\u5175\u3002\u8be5\u673a\u62e5\u6709\u9ad8\u7eaf\u5ea6\u5c9a\u8d28\u6846\u67b6\u4e0e\u65b0\u5f0f\u590d\u5408\u88c5\u7532\uff0c\u517c\u5177\u4f18\u79c0\u7684\u653b\u9632\u6027\u80fd\u3002\u6b64\u5916\uff0c\u7cbe\u7ec6\u8c03\u6574\u8fc7\u7684\u4f20\u611f\u8f85\u52a9\u7cfb\u7edf\u4e5f\u4f7f\u5f97\u5b83\u5728\u4e2d\u8fd1\u8ddd\u79bb\u4f5c\u6218\u4e2d\u62e5\u6709\u65e0\u4e0e\u4f26\u6bd4\u7684\u7a81\u7834\u80fd\u529b\u3002",
+      "output": "1655",
+      "durable": "325",
+      "Armor": "48",
+      "fire": "122",
+      "Antiriot": "770",
+      "parts": [
+        {
+          "position": "\u8eaf\u5e72",
+          "aircraftWeight": "280",
+          "maxHp": "9036",
+          "Armor": "470",
+          "Hit": null,
+          "Dodge": null,
+          "Antiriot": "4472"
+        },
+        {
+          "position": "\u5de6\u81c2",
+          "aircraftWeight": "85",
+          "maxHp": "4809",
+          "Armor": "313",
+          "Hit": "1736",
+          "Dodge": null,
+          "Antiriot": null
+        },
+        {
+          "position": "\u53f3\u81c2",
+          "aircraftWeight": "85",
+          "maxHp": "4809",
+          "Armor": "313",
+          "Hit": "1736",
+          "Dodge": null,
+          "Antiriot": null
+        },
+        {
+          "position": "\u817f\u90e8",
+          "aircraftWeight": "155",
+          "maxHp": "7173",
+          "Armor": "313",
+          "Hit": null,
+          "Dodge": "5233",
+          "Antiriot": null
+        }
+      ],
+      "manjiFirepower": "1196",
+      "modules": [
+        {
+          "_id": {
+            "timestamp": 1760684678,
+            "date": 1760684678000
+          },
+          "ID": "30498",
+          "name": "Abnomality Mod",
+          "SpecificEffects": "For each <color=#F74848>1</color> buff or debuff carried, DMG dealt increases by <color=#F74848>3%</color>, up to <color=#F74848>24%</color>.\nIf this unit carries <color=#F74848>6</color> or more buffs or debuffs, assault weapon bullet count increases by <color=#F74848>+1</color>.",
+          "BufCarried": "304981/304982",
+          "SkillIcon": "Icon_entry_10099",
+          "icon": "Icon_entry_10099",
+          "Status": 1,
+          "weight": 784,
+          "id": "3049",
+          "level": 8
+        },
+        {
+          "_id": {
+            "timestamp": 1696936931,
+            "date": 1696936931000
+          },
+          "ID": "40014",
+          "name": "Accuracy Mod",
+          "SpecificEffects": "Hit Rate <color=#F74848>+10%</color>.",
+          "BufCarried": "400141",
+          "SkillIcon": "Icon_entry_40011",
+          "icon": "Icon_entry_40011",
+          "Status": 1,
+          "weight": 860,
+          "id": "4001",
+          "level": 4
+        },
+        {
+          "_id": {
+            "timestamp": 1760684676,
+            "date": 1760684676000
+          },
+          "ID": "20584",
+          "name": "Shadow Strike Mod",
+          "SpecificEffects": "When actively attacking with assault weapon, DMG dealt increases by <color=#F74848>15%</color>. Critical Hit chance increases by <color=#F74848>5%</color> per <color=#F74848>1</color> bullet hit, up to <color=#F74848>30%</color>.",
+          "BufCarried": "205841/205842",
+          "SkillIcon": "Icon_skill_passive_1141",
+          "icon": "Icon_skill_passive_1141",
+          "Status": 1,
+          "weight": 354,
+          "id": "2058",
+          "level": 4
+        },
+        {
+          "_id": {
+            "timestamp": 1760684677,
+            "date": 1760684677000
+          },
+          "ID": "20586",
+          "name": "Tiger Soul - Unbound",
+          "SpecificEffects": "Ignores unit obstruction when moving. When [Toraoh] pilots the complete [Shadowtiger], movement is not reduced when legs are destroyed, and movement type changes to hovering, allowing this unit to pass over low obstacle.",
+          "BufCarried": "205851/205852",
+          "SkillIcon": "Icon_skill_passive_5123",
+          "icon": "Icon_skill_passive_5123",
+          "Status": 1,
+          "weight": 356,
+          "id": "20581",
+          "level": 2
+        }
+      ],
+      "version": "2.6",
+      "enTranslation": true
+    },
+    {
       "ID": "20550103",
       "name": "Snowyowl",
       "type": "Medium",
@@ -5717,128 +5839,6 @@
       ],
       "dispatchGroup": "InnovativE",
       "dispatchVersion": "2.5",
-      "version": "1.0",
-      "enTranslation": false
-    },
-    {
-      "ID": "13030103",
-      "name": "\u5f71\u864e",
-      "type": "Light",
-      "quality": "SSR",
-      "icon": "Icon_mecha_wap1303",
-      "mechaIcon": "Icon_wap1303_1",
-      "lihuiIcon": "icon_lihui_wap1303",
-      "introduce": "DMS-001 \u5f71\u864e\n\u7531\u897f\u585e\u7f57\u535a\u58eb\u8bbe\u8ba1\uff0c\u591a\u5c14\u5de5\u4e1a\u5236\u9020\u7684\u8f7b\u578b\u673a\u5175\u3002\u8be5\u673a\u62e5\u6709\u9ad8\u7eaf\u5ea6\u5c9a\u8d28\u6846\u67b6\u4e0e\u65b0\u5f0f\u590d\u5408\u88c5\u7532\uff0c\u517c\u5177\u4f18\u79c0\u7684\u653b\u9632\u6027\u80fd\u3002\u6b64\u5916\uff0c\u7cbe\u7ec6\u8c03\u6574\u8fc7\u7684\u4f20\u611f\u8f85\u52a9\u7cfb\u7edf\u4e5f\u4f7f\u5f97\u5b83\u5728\u4e2d\u8fd1\u8ddd\u79bb\u4f5c\u6218\u4e2d\u62e5\u6709\u65e0\u4e0e\u4f26\u6bd4\u7684\u7a81\u7834\u80fd\u529b\u3002",
-      "output": "1655",
-      "durable": "325",
-      "Armor": "48",
-      "fire": "122",
-      "Antiriot": "770",
-      "parts": [
-        {
-          "position": "\u8eaf\u5e72",
-          "aircraftWeight": "280",
-          "maxHp": "9036",
-          "Armor": "470",
-          "Hit": null,
-          "Dodge": null,
-          "Antiriot": "4472"
-        },
-        {
-          "position": "\u5de6\u81c2",
-          "aircraftWeight": "85",
-          "maxHp": "4809",
-          "Armor": "313",
-          "Hit": "1736",
-          "Dodge": null,
-          "Antiriot": null
-        },
-        {
-          "position": "\u53f3\u81c2",
-          "aircraftWeight": "85",
-          "maxHp": "4809",
-          "Armor": "313",
-          "Hit": "1736",
-          "Dodge": null,
-          "Antiriot": null
-        },
-        {
-          "position": "\u817f\u90e8",
-          "aircraftWeight": "155",
-          "maxHp": "7173",
-          "Armor": "313",
-          "Hit": null,
-          "Dodge": "5233",
-          "Antiriot": null
-        }
-      ],
-      "manjiFirepower": "1196",
-      "modules": [
-        {
-          "_id": {
-            "timestamp": 1760684678,
-            "date": 1760684678000
-          },
-          "ID": "30498",
-          "name": "\u5f02\u6001\u6a21\u7ec4",
-          "SpecificEffects": "\u81ea\u8eab\u6bcf\u643a\u5e26<color=#F74848>1</color>\u4e2a\u589e\u76ca\u6548\u679c\u6216\u51cf\u76ca\u6548\u679c\uff0c\u4f24\u5bb3\u63d0\u5347<color=#F74848>3%</color>\uff0c\u6700\u591a<color=#F74848>24%</color>\uff1b\n\u82e5\u81ea\u8eab\u643a\u5e26\u7684\u589e\u76ca\u6548\u679c\u548c\u51cf\u76ca\u6548\u679c\u5927\u4e8e\u7b49\u4e8e<color=#F74848>6</color>\u4e2a\uff0c\u7a81\u51fb\u6b66\u5668\u5b50\u5f39\u6570<color=#F74848>+1</color>",
-          "BufCarried": "304981/304982",
-          "SkillIcon": "Icon_entry_10099",
-          "icon": "Icon_entry_10099",
-          "Status": 1,
-          "weight": 784,
-          "id": "3049",
-          "level": 8
-        },
-        {
-          "_id": {
-            "timestamp": 1696936931,
-            "date": 1696936931000
-          },
-          "ID": "40014",
-          "name": "Accuracy Mod",
-          "SpecificEffects": "Hit Rate <color=#F74848>+10%</color>.",
-          "BufCarried": "400141",
-          "SkillIcon": "Icon_entry_40011",
-          "icon": "Icon_entry_40011",
-          "Status": 1,
-          "weight": 860,
-          "id": "4001",
-          "level": 4
-        },
-        {
-          "_id": {
-            "timestamp": 1760684676,
-            "date": 1760684676000
-          },
-          "ID": "20584",
-          "name": "\u5f71\u88ad\u94fe\u8def",
-          "SpecificEffects": "\u7a81\u51fb\u624b\u653b\u51fb\u65f6\uff0c\u4f24\u5bb3\u63d0\u5347<color=#F74848>15%</color>\uff1b\u6839\u636e\u8fde\u51fb\u6570\u63d0\u5347\u66b4\u51fb\u7387\uff0c\u6bcf<color=#F74848>1</color>\u8fde\u51fb\u63d0\u5347<color=#F74848>5%</color>\uff0c\u6700\u591a\u63d0\u5347<color=#F74848>30%</color>",
-          "BufCarried": "205841/205842",
-          "SkillIcon": "Icon_skill_passive_1141",
-          "icon": "Icon_skill_passive_1141",
-          "Status": 1,
-          "weight": 354,
-          "id": "2058",
-          "level": 4
-        },
-        {
-          "_id": {
-            "timestamp": 1760684677,
-            "date": 1760684677000
-          },
-          "ID": "20586",
-          "name": "\u864e\u9b44\u00b7\u65e0\u675f",
-          "SpecificEffects": "\u9a7e\u9a76\u4e00\u6574\u5957[\u5f71\u864e]\u65f6\uff0c\u673a\u5175\u79fb\u52a8\u65f6\u65e0\u89c6\u5355\u4f4d\u963b\u6321\uff1b\u5f53[\u864e\u738b]\u9a7e\u9a76\u4e00\u6574\u5957[\u5f71\u864e]\u65f6\uff0c\u817f\u90e8\u88ab\u51fb\u7834\u65f6\u79fb\u52a8\u529b\u4e0d\u4f1a\u964d\u4f4e\uff0c\u673a\u5175\u79fb\u52a8\u65b9\u5f0f\u53d8\u4e3a\u6f02\u6d6e\uff0c\u53ef\u7ffb\u8d8a\u4f4e\u969c\u788d",
-          "BufCarried": "205851/205852",
-          "SkillIcon": "Icon_skill_passive_5123",
-          "icon": "Icon_skill_passive_5123",
-          "Status": 1,
-          "weight": 356,
-          "id": "20581",
-          "level": 2
-        }
-      ],
       "version": "1.0",
       "enTranslation": false
     },
