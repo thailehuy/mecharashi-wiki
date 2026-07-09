@@ -1022,7 +1022,7 @@ window.GlossaryData = {
     },
     "4011043": {
       "name": "Subtask - Defense",
-      "effect": "When actively attacked, all intact parts gain a shield layer equal to <color=#F74848>18%</color> of their max HP. The shield layer is removed after combat. This effect can trigger up to <color=#F74848>4</color> times per turn, and is removed at the start of next action."
+      "effect": "When actively attacked, all intact parts gain temporary HP equal to <color=#F74848>18%</color> of their max HP. The temporary HP is removed after combat. This effect can trigger up to <color=#F74848>4</color> times per turn, and is removed at the start of next action."
     },
     "4011041": {
       "name": "Subtask - Attack",

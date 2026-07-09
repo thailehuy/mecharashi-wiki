@@ -12,7 +12,7 @@
     },
     "30448": {
       "name": "Sturdy Shield Mod",
-      "SpecificEffects": "When attacked, if not possessing a shield layer, any undestroyed part having <color=#F74848>70%</color> or less HP gain a shield layer equal to <color=#F74848>15%</color> of that part max HP. When gaining shield layer, grants <buf ID=7100306>[DMG UP III]</buf> and <buf ID=7100106>[Hit Rate UP III]</buf> to self and <color=#F74848>1</color> random ally within <color=#F74848>2-tile diamond</color> area around self, lasting for <color=#F74848>2</color> turns."
+      "SpecificEffects": "When attacked, if not possessing temporary HP, any undestroyed part having <color=#F74848>70%</color> or less HP gain temporary HP equal to <color=#F74848>15%</color> of that part max HP. When gaining temporary HP, grants <buf ID=7100306>[DMG UP III]</buf> and <buf ID=7100106>[Hit Rate UP III]</buf> to self and <color=#F74848>1</color> random ally within <color=#F74848>2-tile diamond</color> area around self, lasting for <color=#F74848>2</color> turns."
     }
   },
   "version": "2.4",
