@@ -49030,7 +49030,17 @@
       ],
       "AllowedMechaDriveList_DriveAllowedList": "Light",
       "version": "2.6",
-      "enTranslation": true
+      "enTranslation": true,
+      "hiddenSkills": [
+        {
+          "name": "Fierce Assault",
+          "icon": "Icon_skill_main_1105",
+          "type": "EquipmentSkill",
+          "Ap": "2",
+          "CD": "0",
+          "describe": "Uses a Shotgun to attack a target, dealing <color=#F74848>1.4x</color> DMG. Before attacking, gains <color=#F74848>1</color> random debuff, lasting for <color=#F74848>2</color> turns."
+        }
+      ]
     },
     {
       "ID": "10103144",
