@@ -21043,7 +21043,7 @@
       "PilotName": "Hailis",
       "PortraitHeroIcon": "Pilot_10103174A_half",
       "AvatarHeroIcon": "Pilot_10103174A_Raw",
-      "RealName": "Hailis Muller",
+      "RealName": "Hailis Mill",
       "Gender": "Female",
       "Profession": "Architect",
       "Occupation": "Architect",
@@ -27747,7 +27747,7 @@
       "Talent3_5Ability": {
         "ID": "500951",
         "name": "Good Medicine Tastes Bitter",
-        "SpecificEffects": "Can equip Manipulator in backpack slot, Manipulator weight reduces by <color=#F74848>-300</color>. When using Knuckle or Pilebunker to attack an enemy while carrying a Manipulator, deals <buf ID=900017>[Fixed DMG]</buf> equal to <color=#F74848>0.35x</color> Manipulator Repair AMT to the enemy part with lowest HP.\n<buf ID=5009418>[Resonance Pulse]</buf> DMG multiplier increases to <color=#F74848>0.35x</color>. Repair skills range <color=#F74848>+1</color>.",
+        "SpecificEffects": "Can equip Manipulator in backpack slot, Manipulator weight reduces by <color=#F74848>-300</color>. When using Knuckle or Pilebunker to attack an enemy while carrying a Manipulator, deals <buf ID=900017>[Fixed DMG]</buf> equal to <color=#F74848>0.35x</color> Manipulator Repair AMT to the enemy part with lowest HP.\n<buf ID=5009418>[Resonance Pulse]</buf> DMG multiplier increases to <color=#F74848>0.35x</color>. Single target repair skills range <color=#F74848>+1</color>.",
         "BufCarried": "5009501/5009511/5009513",
         "SkillIcon": "Icon_skill_talent_3107",
         "icon": "Icon_skill_talent_3107",
@@ -28136,7 +28136,7 @@
                 "PassiveSkill": {
                   "ID": "500946",
                   "name": "False Doctor 4",
-                  "SpecificEffects": "After actively attacking, triggers <buf ID=900004>[Re-ATK]</buf>, can move <color=#F74848>3</color> tiles before attacking, and cannot use repair skills with this action. This <buf ID=900004>[Re-ATK]</buf> effect can trigger <color=#F74848>1</color> time per turn.",
+                  "SpecificEffects": "After actively attacking, triggers <buf ID=900004>[Re-ATK]</buf>, can move <color=#F74848>3</color> more tiles before action, and can only use repair skills with this action. After actively reparring, triggers <buf ID=900004>[Re-ATK]</buf>, can move <color=#F74848>3</color> more tiles before action, and can only use attack skills with this action. This <buf ID=900004>[Re-ATK]</buf> effect can trigger <color=#F74848>1</color> time per turn.",
                   "BufCarried": "5009461",
                   "SkillIcon": "Icon_skill_passive_5276",
                   "icon": "Icon_skill_passive_5276",
