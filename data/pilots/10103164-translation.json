@@ -5,12 +5,12 @@
   "Profession": "Mechanic",
   "Occupation": "Machinist",
   "Talent0_2Ability": {
-    "name": "良药苦机",
-    "SpecificEffects": "可额外装备修理背包，修理背包负重降低<color=#F74848>300</color>；使用打桩机或拳套主动攻击时，若携带了修理背包，对命中的目标耐久值百分比最低的部位造成相当于修理背包<color=#F74848>0.3</color>倍的<buf ID=900017>[固定伤害]</buf>"
+    "name": "Good Medicine Tastes Bitter",
+    "SpecificEffects": "Can equip Manipulator in backpack slot, Manipulator weight reduces by <color=#F74848>-300</color>. When using Knuckle or Pilebunker to attack an enemy while carrying a Manipulator, deals <buf ID=900017>[Fixed DMG]</buf> equal to <color=#F74848>0.3x</color> Manipulator Repair AMT to the enemy part with lowest HP."
   },
   "Talent3_5Ability": {
-    "name": "良药苦机",
-    "SpecificEffects": "可额外装备修理背包，修理背包负重减低<color=#F74848>300</color>；使用打桩机或拳套主动攻击时，若携带了修理背包，对命中的目标耐久值百分比最低的部位造成相当于修理背包<color=#F74848>0.35</color>倍的<buf ID=900017>[固定伤害]</buf>，\n<buf ID=5009418>[共鸣脉冲]</buf>触发的伤害效果提升至<color=#F74848>0.35</color>倍；单体修理技能射程<color=#F74848>+1</color>"
+    "name": "Good Medicine Tastes Bitter",
+    "SpecificEffects": "Can equip Manipulator in backpack slot, Manipulator weight reduces by <color=#F74848>-300</color>. When using Knuckle or Pilebunker to attack an enemy while carrying a Manipulator, deals <buf ID=900017>[Fixed DMG]</buf> equal to <color=#F74848>0.35x</color> Manipulator Repair AMT to the enemy part with lowest HP.\n<buf ID=5009418>[Resonance Pulse]</buf> DMG multiplier increases to <color=#F74848>0.35x</color>. Repair skills range <color=#F74848>+1</color>."
   },
   "skills": {
     "100001": {
@@ -20,42 +20,37 @@
     },
     "700009": {
       "name": "Wide-Range Repair",
-      "describe": "恢复所选<range type=1>2格菱形</range>范围内友军所有部位的耐久值，修理量为修理背包的<color=#F74848>1.0</color>倍，可修复<color=#F74848>1</color>个损毁部位",
+      "describe": "Restores the HP of all allies within the selected <range type=1>2-tile diamond area</range>. Repair amount is equal to <color=#F74848>1.0x</color> Manipulator Repair AMT. Can repair <color=#F74848>1</color> destroyed part.",
       "SpecificEffects": ""
     },
     "500903": {
-      "name": "单人服务",
-      "describe": "恢复单台机兵所有部位的耐久值，修理量为修理背包的<color=#F74848>2.0</color>倍，可修复<color=#F74848>1</color>个损毁部位",
+      "name": "Targeted Service",
+      "describe": "Restores all part HP of a single target equals to <color=#F74848>2.0x</color> Manipulator Repair AMT. Can restore <color=#F74848>1</color> destroyed part.",
       "SpecificEffects": ""
     },
     "500904": {
-      "name": "双面修复",
-      "describe": "恢复单台机兵所有部位的耐久值，修理量为修理背包的<color=#F74848>2.3</color>倍，可修复<color=#F74848>1</color>个损毁部位，并对目标<color=#F74848>2</color>格范围内所有敌机造成相当于修理背包<color=#F74848>0.3</color>倍的<buf ID=900017>[固定伤害]</buf>",
+      "name": "Double-Sided Restoration",
+      "describe": "Restores all part HP of a single target equals to <color=#F74848>2.3</color> Manipulator Repair AMT. Can restore <color=#F74848>1</color>destroyed part and deals <buf ID=900017>[Fixed DMG]</buf> to all enemies within <color=#F74848>2</color> adjacent tiles of the target equal to <color=#F74848>0.3x</color> Manipulator Repair AMT.",
       "SpecificEffects": ""
     },
     "500905": {
-      "name": "临界剂量",
+      "name": "Emergency Dose",
       "describe": "",
-      "SpecificEffects": "通过修理背包触发修理或<buf ID=900017>[固定伤害]</buf>效果时，若目标是耐久百分比低于<color=#F74848>60%</color>的友军，治疗效果提升<color=#F74848>15%</color>，若目标是耐久百分比低于<color=#F74848>60%</color>的敌机，<buf ID=900017>[固定伤害]</buf>效果提升<color=#F74848>10%</color>"
+      "SpecificEffects": "When using Manipulator, if the target is an ally with <color=#F74848>60%</color> or less HP, increases Repair AMT by <color=#F74848>15%</color>, if the target is an enemy with <color=#F74848>60%</color> or less HP, increases <buf ID=900017>[Fixed DMG]</buf> dealt by <color=#F74848>10%</color>."
     },
     "500906": {
-      "name": "有备",
+      "name": "Readiness",
       "describe": "",
-      "SpecificEffects": "每回合首个技能AP消耗<color=#F74848>-1</color>，最低<color=#F74848>1</color>点"
+      "SpecificEffects": "Each turn, the AP Cost of the 1st skill decreases by <color=#F74848>1</color>, with a minimum cost of <color=#F74848>1</color> AP."
     },
     "500907": {
-      "name": "投鸩",
+      "name": "Poison Cast",
       "describe": "",
-      "SpecificEffects": "触发<buf ID=5009501>[良药苦机]</buf>或<buf ID=5009410>[共鸣脉冲]</buf>效果时，对目标施加<color=#F74848>1</color>个随机减益效果，持续<color=#F74848>2</color>回合"
+      "SpecificEffects": "When talent <buf ID=5009501>[Good Medicine Tastes Bitter]</buf> or <buf ID=5009418>[Resonance Pulse]</buf> triggers, applies <color=#F74848>1</color> random debuff to the target, lasting for <color=#F74848>2</color> turns."
     },
     "500908": {
-      "name": "幽灵巡诊",
-      "describe": "使用打桩机或拳套攻击指定方向，对目标造成<color=#F74848>1.35</color>倍范围伤害，必定攻击耐久值最高的部位，若该方向存在相邻敌机，可继续攻击相邻敌机，最多攻击<color=#F74848>4</color>名敌机，之后停留在最远目标的另一侧，本次攻击触发的天赋<buf ID=900017>[固定伤害]</buf>效果提升<color=#F74848>50%</color>",
-      "SpecificEffects": ""
-    },
-    "500909": {
-      "name": "Regulated Repair",
-      "describe": "Restores HP equal to <color=#F74848>2.0</color>x Manipulator Repair AMT to all parts of a single ST. Can repair <color=#F74848>1</color> destroyed part.",
+      "name": "Ghost Patrol",
+      "describe": "Uses a Knuckle or a Pilebunker to attack in a designated direction, dealing <color=#F74848>1.35x</color> DMG to the target hit. This skill prioritizes the part with highest HP. If there are adjacent enemies in that direction, can continue to attack adjacent units (attacking up to <color=#F74848>4</color> enemy units), then stops on the opposite side of the farthest target. The talent <buf ID=900017>[Fixed DMG]</buf> triggered by this attack is increased by <color=#F74848>50%</color>.",
       "SpecificEffects": ""
     }
   },
@@ -85,8 +80,8 @@
       "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
     },
     "500931": {
-      "name": "抢险维修1",
-      "SpecificEffects": "行动结束时，随机选择相邻<color=#F74848>1</color>格的其他友军进行<buf ID=900018>[被动修理]</buf>，修理量为修理背包的<color=#F74848>0.6</color>倍，无法修复损毁部位"
+      "name": "Emergency Repair 1",
+      "SpecificEffects": "At the end of the action, randomly select a single adjacent (<color=#F74848>1</color> tile) ally to perform <buf ID=900018>[Passive Repair]</buf>. The repair amount is <color=#F74848>0.6x</color> the Manipulator's Repair AMT and cannot repair damaged parts."
     },
     "500032": {
       "name": "AP Optimization 3",
@@ -97,20 +92,20 @@
       "SpecificEffects": "<buf ID=900004>[Re-ATK]</buf> or <buf ID=900005>[Re-Act]</buf>'s effective times per turn <color=#F74848>+1</color>."
     },
     "500934": {
-      "name": "抢险维修2",
-      "SpecificEffects": "使<buf ID=5000311>[抢险维修1]</buf>会在周围<color=#F74848>2</color>格范围内选择目标"
+      "name": "Emergency Repair 2",
+      "SpecificEffects": "<buf ID=900018>[Passive Repair]</buf> selects targets within the adjacent (<color=#F74848>2</color> tiles) area."
     },
     "500935": {
-      "name": "抢险维修3",
-      "SpecificEffects": "使<buf ID=5000311>[抢险维修1]</buf>的修理量提升至修理背包的<color=#F74848>1</color>倍"
+      "name": "Emergency Repair 3",
+      "SpecificEffects": "<buf ID=900018>[Passive Repair]</buf>'s Repair AMT is now <color=#F74848>1x</color> that of the Manipulator."
     },
     "500936": {
-      "name": "抢险维修4",
-      "SpecificEffects": "使<buf ID=5000311>[抢险维修1]</buf>的修理目标数量<color=#F74848>+1</color>"
+      "name": "Emergency Repair 4",
+      "SpecificEffects": "The number of targets that <buf ID=900018>[Passive Repair]</buf> can repair increases by <color=#F74848>1</color>."
     },
     "500941": {
-      "name": "谎者1",
-      "SpecificEffects": "通过修理背包造成<buf ID=900017>[固定伤害]</buf>效果时额外对目标施加<buf ID=5009418>[共鸣脉冲]</buf>"
+      "name": "False Doctor 1",
+      "SpecificEffects": "When <buf ID=900017>[Fixed DMG]</buf> is triggered by Manipulator, applies <buf ID=5009418>[Resonance Pulse]</buf> to the target."
     },
     "500042": {
       "name": "AP Optimization 4",
@@ -121,17 +116,17 @@
       "SpecificEffects": "When destroying a target, additionally restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>2</color> times per turn."
     },
     "500944": {
-      "name": "谎者2",
-      "SpecificEffects": "修理技能可对敌机释放，以敌机为目标时造成原有技能修理量<color=#F74848>50%</color>的<buf ID=900017>[固定伤害]</buf>"
+      "name": "False Doctor 2",
+      "SpecificEffects": "Repair skills can target enemies, dealing <buf ID=900017>[Fixed DMG]</buf> equal to <color=#F74848>50%</color> Repair AMT."
     },
     "500945": {
-      "name": "谎者3",
-      "SpecificEffects": "主动攻击时，根据修理量提升效果提高伤害，每<color=#F74848>1%</color>修理量提升获得<color=#F74848>1%</color>伤害提升，最高提升<color=#F74848>40%</color>；主动修理时，根据伤害提升效果提升修理量，每<color=#F74848>2%</color>伤害提升会获得<color=#F74848>1%</color>修理量提升，最多提升<color=#F74848>20%</color>"
+      "name": "False Doctor 3",
+      "SpecificEffects": "When actively attacking, for each <color=#F74848>1%</color> bonus Repair AMT, increases DMG dealt by <color=#F74848>1%</color>, up to <color=#F74848>40%</color>. When actively using repair skills, for each <color=#F74848>2%</color> bonus DMG, increases Repair AMT by <color=#F74848>1%</color>, up to <color=#F74848>20%</color>."
     },
     "500946": {
-      "name": "谎者4",
-      "SpecificEffects": "主动攻击后可发动<buf ID=900004>[再攻击]</buf>，攻击前可移动<color=#F74848>3</color>格，下一次行动仅可使用修理技能；主动修理后可发动<buf ID=900004>[再攻击]</buf>，攻击前移动<color=#F74848>3</color>格，下一次行动仅可使用攻击技能；本技能的<buf ID=900004>[再攻击]</buf>效果每回合最多触发<color=#F74848>1</color>次"
+      "name": "False Doctor 4",
+      "SpecificEffects": "After actively attacking, triggers <buf ID=900004>[Re-ATK]</buf>, can move <color=#F74848>3</color> tiles before attacking, and cannot use repair skills with this action. This <buf ID=900004>[Re-ATK]</buf> effect can trigger <color=#F74848>1</color> time per turn."
     }
   },
-  "version": "1.0"
+  "version": "2.7"
 }
