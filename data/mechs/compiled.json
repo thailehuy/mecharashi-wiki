@@ -217,6 +217,114 @@
       "enTranslation": true
     },
     {
+      "ID": "20520103",
+      "name": "Arbiter",
+      "type": "Medium",
+      "quality": "SSR",
+      "icon": "Icon_mecha_wap2052",
+      "mechaIcon": "Icon_wap2052_1",
+      "lihuiIcon": "icon_lihui_wap2052",
+      "introduce": "LTX-219 \u88c1\u51b3\u8005\n\u7531\u62c9\u5c3c\u4e9a\u51ef\u4e9a\u7814\u53d1\u7684\u4e2d\u578b\u6218\u672f\u673a\u5175\u3002\u662f\u65e5\u5f29-\u671d\u9633\u7814\u53d1\u7ebf\u4e0a\u63a8\u51fa\u7684\u65b0\u578b\u673a\u5175\u3002\nLTX-219\u7ee7\u627f\u4e86\u65e5\u5f29\u7cfb\u6218\u672f\u673a\u5175\u4e0e\u671d\u9633\u7cfb\u5de5\u7a0b\u673a\u5175\u7684\u53cc\u91cd\u4f18\u52bf\u3002\u5176\u6838\u5fc3\u7ec7\u706b\u8005\u82af\u7247\u80fd\u6839\u636e\u6218\u5c40\u6218\u51b5\uff0c\u5b9e\u65f6\u534f\u8c03\u6218\u672f\u6b66\u5668\u7684\u53d1\u5c04\u7b56\u7565\u548c\u6253\u51fb\u65b9\u5f0f\u3002\u5c24\u5176\u5728\u5f39\u836f\u88c5\u586b\u4e0e\u6253\u51fb\u9762\u65b9\u9762\uff0c\u76f8\u6bd4\u524d\u4ee3\u673a\u578b\u6709\u4e86\u8d28\u53d8\u822c\u7684\u63d0\u5347\u3002\u800c\u8fed\u4ee3\u81ea\u65e5\u5f29\u7684\u884c\u8fdb\u9a71\u52a8\u88c5\u7f6eL1102-X\uff0c\u5219\u80fd\u8ba9\u88c1\u51b3\u8005\u5728\u8fd0\u52a8\u6218\u4e2d\u83b7\u5f97\u66f4\u4f73\u7a33\u5b9a\u7684\u53d1\u5c04\u6761\u4ef6\uff0c\u5c06\u6218\u573a\u79fb\u52a8\u5bf9\u6253\u51fb\u7cbe\u5ea6\u7684\u5e72\u6270\u964d\u4f4e\u5230\u6700\u4f4e\u3002",
+      "output": "3000",
+      "durable": "372",
+      "Armor": "72",
+      "fire": "127",
+      "Antiriot": "770",
+      "parts": [
+        {
+          "position": "\u8eaf\u5e72",
+          "aircraftWeight": "270",
+          "maxHp": "10342",
+          "Armor": "706",
+          "Hit": null,
+          "Dodge": null,
+          "Antiriot": "4472"
+        },
+        {
+          "position": "\u5de6\u81c2",
+          "aircraftWeight": "130",
+          "maxHp": "5977",
+          "Armor": "470",
+          "Hit": "1492",
+          "Dodge": null,
+          "Antiriot": null
+        },
+        {
+          "position": "\u53f3\u81c2",
+          "aircraftWeight": "130",
+          "maxHp": "5977",
+          "Armor": "470",
+          "Hit": "1492",
+          "Dodge": null,
+          "Antiriot": null
+        },
+        {
+          "position": "\u817f\u90e8",
+          "aircraftWeight": "180",
+          "maxHp": "7896",
+          "Armor": "470",
+          "Hit": null,
+          "Dodge": "3885",
+          "Antiriot": null
+        }
+      ],
+      "manjiFirepower": "1245",
+      "modules": [
+        {
+          "_id": {
+            "timestamp": 1737009920,
+            "date": 1737009920000
+          },
+          "ID": "20474",
+          "name": "Fireweaver Mod",
+          "SpecificEffects": "Increases DMG by <color=#F74848>15%</color> when attacking with tactical weapons. For each <color=#F74848>1</color> round of ammo in the magazine, further increases DMG by <color=#F74848>5%</color>, up to <color=#F74848>35%</color>.",
+          "BufCarried": "204741/204742/204743/204744/204745",
+          "SkillIcon": "Icon_skill_passive_1130",
+          "icon": "Icon_skill_passive_1130",
+          "Status": 1,
+          "weight": 310,
+          "id": "2047",
+          "level": 4
+        },
+        {
+          "_id": {
+            "timestamp": 1737009922,
+            "date": 1737009922000
+          },
+          "ID": "30368",
+          "name": "Bombing Mod",
+          "SpecificEffects": "When using Code skills to attack, DMG increases by <color=#F74848>18%</color>.\nWhen actively attacking with tactical weapons, if <color=#F74848>3</color> or more targets are hit, randomly reload <color=#F74848>1</color> ammo of tactical weapon. Can be activated <color=#F74848>1</color> times per turn.",
+          "BufCarried": "303681/303682",
+          "SkillIcon": "Icon_entry_10087",
+          "icon": "Icon_entry_10087",
+          "Status": 1,
+          "weight": 680,
+          "id": "3036",
+          "level": 8
+        },
+        {
+          "_id": {
+            "timestamp": 1696936931,
+            "date": 1696936931000
+          },
+          "ID": "40074",
+          "name": "DMG Taken Mod",
+          "SpecificEffects": "DMG Taken <color=#F74848>-10%</color>.",
+          "BufCarried": "400741",
+          "SkillIcon": "Icon_entry_40071",
+          "icon": "Icon_entry_40071",
+          "Status": 1,
+          "weight": 908,
+          "id": "4007",
+          "level": 4
+        }
+      ],
+      "dispatchGroup": "InnovativE",
+      "dispatchVersion": "2.3",
+      "version": "2.1",
+      "enTranslation": true
+    },
+    {
       "ID": "20270103",
       "name": "Arcus",
       "type": "Medium",
@@ -862,114 +970,6 @@
       "dispatchGroup": "InnovativE",
       "dispatchVersion": "1.0",
       "version": "1.0",
-      "enTranslation": true
-    },
-    {
-      "ID": "20520103",
-      "name": "Dictator",
-      "type": "Medium",
-      "quality": "SSR",
-      "icon": "Icon_mecha_wap2052",
-      "mechaIcon": "Icon_wap2052_1",
-      "lihuiIcon": "icon_lihui_wap2052",
-      "introduce": "LTX-219 \u88c1\u51b3\u8005\n\u7531\u62c9\u5c3c\u4e9a\u51ef\u4e9a\u7814\u53d1\u7684\u4e2d\u578b\u6218\u672f\u673a\u5175\u3002\u662f\u65e5\u5f29-\u671d\u9633\u7814\u53d1\u7ebf\u4e0a\u63a8\u51fa\u7684\u65b0\u578b\u673a\u5175\u3002\nLTX-219\u7ee7\u627f\u4e86\u65e5\u5f29\u7cfb\u6218\u672f\u673a\u5175\u4e0e\u671d\u9633\u7cfb\u5de5\u7a0b\u673a\u5175\u7684\u53cc\u91cd\u4f18\u52bf\u3002\u5176\u6838\u5fc3\u7ec7\u706b\u8005\u82af\u7247\u80fd\u6839\u636e\u6218\u5c40\u6218\u51b5\uff0c\u5b9e\u65f6\u534f\u8c03\u6218\u672f\u6b66\u5668\u7684\u53d1\u5c04\u7b56\u7565\u548c\u6253\u51fb\u65b9\u5f0f\u3002\u5c24\u5176\u5728\u5f39\u836f\u88c5\u586b\u4e0e\u6253\u51fb\u9762\u65b9\u9762\uff0c\u76f8\u6bd4\u524d\u4ee3\u673a\u578b\u6709\u4e86\u8d28\u53d8\u822c\u7684\u63d0\u5347\u3002\u800c\u8fed\u4ee3\u81ea\u65e5\u5f29\u7684\u884c\u8fdb\u9a71\u52a8\u88c5\u7f6eL1102-X\uff0c\u5219\u80fd\u8ba9\u88c1\u51b3\u8005\u5728\u8fd0\u52a8\u6218\u4e2d\u83b7\u5f97\u66f4\u4f73\u7a33\u5b9a\u7684\u53d1\u5c04\u6761\u4ef6\uff0c\u5c06\u6218\u573a\u79fb\u52a8\u5bf9\u6253\u51fb\u7cbe\u5ea6\u7684\u5e72\u6270\u964d\u4f4e\u5230\u6700\u4f4e\u3002",
-      "output": "3000",
-      "durable": "372",
-      "Armor": "72",
-      "fire": "127",
-      "Antiriot": "770",
-      "parts": [
-        {
-          "position": "\u8eaf\u5e72",
-          "aircraftWeight": "270",
-          "maxHp": "10342",
-          "Armor": "706",
-          "Hit": null,
-          "Dodge": null,
-          "Antiriot": "4472"
-        },
-        {
-          "position": "\u5de6\u81c2",
-          "aircraftWeight": "130",
-          "maxHp": "5977",
-          "Armor": "470",
-          "Hit": "1492",
-          "Dodge": null,
-          "Antiriot": null
-        },
-        {
-          "position": "\u53f3\u81c2",
-          "aircraftWeight": "130",
-          "maxHp": "5977",
-          "Armor": "470",
-          "Hit": "1492",
-          "Dodge": null,
-          "Antiriot": null
-        },
-        {
-          "position": "\u817f\u90e8",
-          "aircraftWeight": "180",
-          "maxHp": "7896",
-          "Armor": "470",
-          "Hit": null,
-          "Dodge": "3885",
-          "Antiriot": null
-        }
-      ],
-      "manjiFirepower": "1245",
-      "modules": [
-        {
-          "_id": {
-            "timestamp": 1737009920,
-            "date": 1737009920000
-          },
-          "ID": "20474",
-          "name": "Fireweaver Mod",
-          "SpecificEffects": "Increases DMG by <color=#F74848>15%</color> when attacking with tactical weapons. For each <color=#F74848>1</color> round of ammo in the magazine, further increases DMG by <color=#F74848>5%</color>, up to <color=#F74848>35%</color>.",
-          "BufCarried": "204741/204742/204743/204744/204745",
-          "SkillIcon": "Icon_skill_passive_1130",
-          "icon": "Icon_skill_passive_1130",
-          "Status": 1,
-          "weight": 310,
-          "id": "2047",
-          "level": 4
-        },
-        {
-          "_id": {
-            "timestamp": 1737009922,
-            "date": 1737009922000
-          },
-          "ID": "30368",
-          "name": "Bombing Mod",
-          "SpecificEffects": "When using Code skills to attack, DMG increases by <color=#F74848>18%</color>.\nWhen actively attacking with tactical weapons, if <color=#F74848>3</color> or more targets are hit, randomly reload <color=#F74848>1</color> ammo of tactical weapon. Can be activated <color=#F74848>1</color> times per turn.",
-          "BufCarried": "303681/303682",
-          "SkillIcon": "Icon_entry_10087",
-          "icon": "Icon_entry_10087",
-          "Status": 1,
-          "weight": 680,
-          "id": "3036",
-          "level": 8
-        },
-        {
-          "_id": {
-            "timestamp": 1696936931,
-            "date": 1696936931000
-          },
-          "ID": "40074",
-          "name": "DMG Taken Mod",
-          "SpecificEffects": "DMG Taken <color=#F74848>-10%</color>.",
-          "BufCarried": "400741",
-          "SkillIcon": "Icon_entry_40071",
-          "icon": "Icon_entry_40071",
-          "Status": 1,
-          "weight": 908,
-          "id": "4007",
-          "level": 4
-        }
-      ],
-      "dispatchGroup": "InnovativE",
-      "dispatchVersion": "2.3",
-      "version": "2.1",
       "enTranslation": true
     },
     {
