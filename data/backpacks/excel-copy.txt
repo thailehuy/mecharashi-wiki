@@ -1,0 +1,144 @@
+Patch	AC	Name	Image	Amplifier	Jammer	Utility	Ability		
+							Name	Image	Description
+1.6	6	Conqueror	Picture		Armor	Accelerator	"Conqueror Drive
+Armor"	Picture	"No ST type restriction. ST Movement +1. In combat,
+Enemy Armor -50%. ST Body HP +10% and DMG Dealt +5%"
+1.6	6	Custodian	Picture	Retaliation		Inducer	"Custodian Drive
+Retaliation"	Picture	"Activates Aura: When allies within 1 adjacent tile are hit by
+a Tactical attack, DMG Taken -25%. Similar effects cannot stack.
+When allies within 1 adjacent tile are hit by a Missile Launcher attack,
+the first missile becomes unable to hit.
+This effect can only be activated 1 time per sortie.
+When retaliating, DMG +15% and Crit Rate +10%. ST Body HP +10%"
+1.7	7	Adjudicator	Picture	First Strike		Power Bank	"First Strike
+Enhancement III"	Picture	"When actively attacking for the first time each turn,
+DMG +7.5% and Crit Rate +5%. ST Body HP +10% and DMG +5%"
+1.7	7	Concealer	Picture		DMG UP	Mirage Generator	"Concealer Drive
+DMG UP"	Picture	"At the end of action, if there are no enemies within 2 adjacent tiles,
+gains [Stealth I] for 2 turns. This effect has a 3-turn trigger interval.
+At the start of action, if in the [Stealth] state,
+immediately recovers 1 AP. When in combat,
+enemy DMG Taken +10%. ST Body HP +10% and DMG Dealt +5%"
+	9		Picture		Attack	Manipulator		Picture	"At the start of action, repairs self and allies within 1 ring 1 time,
+equal to 0.6x Manipulator Repair AMT. Cannot repair destroyed parts.
+When in combat, DMG Taken -10%
+(Unofficial Translation)"
+	9		Picture	First Strike		Jetpack		Picture	"ST movement type changes to Levitating, enabling ST to
+pass over low obstacles. When initiating combat, if the target is
+in the movement path, if retaliated against, self will dodge.
+Can trigger 1 time per turn. When initiating combat
+for the first time every turn, DMG +7.5%
+and Crit Rate +5%. ST Body HP +10% and DMG +5%
+(Unofficial Translation)"
+	10		Picture	First Strike		Mini Radar		Picture	"Enables the ST's adjacent 2-tile area to become a valid attack zone for
+ally Missile Launcher and Rocket Launcher attacks.
+Attacks directed by the backpack gain Hit Rate +25%.
+When initiating combat for the first time every turn,
+DMG +7.5% and Crit Rate +5%. ST Body HP +10% and DMG +5%
+(Unofficial Translation)"
+	10		Picture		DMG UP	Power Bank		Picture	"Gains Code [Weapon Switch]. Can only trigger 1 time per turn.
+At the end of action, if both arms are intact,
+can additionally use [Weapon Switch] Code.
+Can trigger 1 time every 2 turns. When in combat, DMG Dealt +10%.
+ST gains additional 300 Power. ST Body HP +10% and DMG +5%
+(Unofficial Translation)"
+	11		Picture		Attack	Inducer		Picture	"No ST type restriction. When hit by a Tactical attack, DMG Taken -25%.
+The same effect cannot stack. When any target on the battlefield
+attacks with a Tactical Weapon, ally gains 1 stack of [Counter Charge]
+before combat. If self is the attack target, additionally gains 1 stack.
+If possessing 6 stacks of [Counter Charge], repairs 15% HP to all parts
+and restores 1 AP after combat. After triggering, removes all stacks,
+and cannot gain any new stacks of [Counter Charge] in this turn.
+When in combat, target DMG Dealt -10%. ST Body HP +10%
+(Unofficial Translation)"
+	11		Picture	Re-ATK		Ammo Crate		Picture	"Tactical Weapon Ammo Capacity +2. When re-attacking,
+Hit Rate +10%, Crit Rate +5%. Can use [Quick Load] Code.
+ Shares cooldown time with other Ammo Reload skills.
+ ST Body HP +10% and DMG +5%
+(Unofficial Translation)"
+	12		Picture	Re-ATK		Accelerator		Picture	"When actively attacking, if having moved 4 or more tiles,
+gains [Movement UP], lasting for 1 turn. ST Movement +1.
+When re-attacking, Hit Rate +10%, Crit Rate +5%.
+ ST Body HP +10% and DMG +5%
+(Unofficial Translation)"
+	12		Picture	First Strike		Mirage Generator		Picture	"At the start of battle, gains [Stealth II], lasting for 2 turns.
+At the end of turn, if there are no enemies within 1 tile area, 
+enters [Stealth II], lasting for 2 turns. Can trigger 1 time every 3 turns.
+When initiating combat for the first time each turn,
+DMG +7.5% and Crit Rate +5%. ST Body HP +10% and DMG +5%
+(Unofficial Translation)"
+	13		Picture	First Strike		Power Bank		Picture	"When actively attacking for the first time each turn,
+DMG +7.5% and Crit Rate +5%. ST Body HP +10% and DMG +5%
+(Unofficial Translation)"
+	13		Picture		DMG UP	Jetpack		Picture	"ST Movement +1. ST movement type changes to Levitating,
+enabling ST to pass overlow obstacles. When in combat,
+target DMG Taken +10%. ST Body HP +10% and DMG +5%
+(Unofficial Translation)"
+	14		Picture		DMG UP	Mini Radar		Picture	"View distance +1 in Arashi Fog Stages. Can use Code [Radar Detection]:
+removes [Stealth] from enemy STs within a 4 tile radius.
+Triggers [Re-ATK]. Cannot move before attacking.
+Enables the ST's adjacent 2-tile area to become a valid attack zone
+for ally Missile Launcher and Rocket Launcher attacks. 
+When in combat, enemy DMG Taken +10%.
+ST Body HP +10% and DMG +5%
+(Unofficial Translation)"
+	14		Picture	First Strike		Accelerator		Picture	"No ST type restriction. ST Movement +1. When actively attacking
+for the first time each turn, DMG +7.5% and Crit Rate +5%.
+ST Body HP +10% and DMG +5%
+(Unofficial Translation)"
+	15		Picture		Crit	Manipulator		Picture	"At the start of action, randomly picks 3 allies within a 3 tile range
+and performs [Passive Repair], equal to 0.4x Manipulator Repair AMT.
+Cannot repair broken parts. When in combat, enemy Crit Rate -10%
+(Unofficial Translation)"
+	15		Picture	First Strike		Ammo Crate		Picture	"At the start of action, reloads 1 Ammo into
+a non-exhausted Tactical Weapon. Tactical Weapon Ammo Capacity +2. 
+When actively attacking for the first time each turn,
+DMG +7.5% and Crit Rate +5%. ST Body HP +10% and DMG +5%
+(Unofficial Translation)"
+	16		Picture	First Strike		Mirage Generator		Picture	"When actively attacking, if in [Stealth] Mode, Crit Rate +50%
+for this attack. Can trigger 1 time per deployment. At the end of action,
+if there are no enemies within 2 adjacent tiles, gains [Stealth I],
+lasting for 2 turns. This effect can only trigger every 3 turns.
+When initiating combat for the first time each turn,
+DMG +7.5% and Crit Rate +5%. ST Body HP +10% and DMG +5%
+(Unofficial Translation)"
+	16		Picture		Crit DMG	Inducer		Picture	"After being actively attacked by a Tactical Weapon,
+inflicts [Ammo Jam]. Can trigger again after 1 turn.
+When hit by a Tactical attack, DMG Taken -25%.
+The same effect cannot stack.  When in combat,
+enemy Crit DMG -10%. ST Body HP +10%
+(Unofficial Translation)"
+	17		Picture		Attack	Inducer		Picture	"Heavy STs only. When hit by a Tactical attack, DMG Taken -25%.
+The same effect cannot stack. Allies within guard range receive
+DMG Taken -15% from Code attacks. The same effect cannot stack.
+After self takes damage from Code attack, for intact parts,
+repairs 15% of their Max HP. Can trigger again after 1 turn. 
+When in combat, DMG Taken -10%. ST Body HP +10%
+(Unofficial Translation)"
+	17		Picture	Re-ATK		Mirage Generator		Picture	"At the end of action, if there are no enemies within 2 adjacent tiles,
+enters [Stealth] Mode, lasting for 2 turns. This effect can only trigger
+every 3 turns. Gains Code [Concealment]: self and chosen 1 ally
+within 4 adjacent tiles enters [Stealth II], lasting for 2 turns.
+When re-attacking, Hit Rate +10%, Crit Rate +5%.
+ ST Body HP +10% and DMG +5%
+(Unofficial Translation)"
+	18		Picture	Re-ATK		Jetpack		Picture	"When initiating combat, if breaking a part of a target along
+the travel path, inflicts [Intimidation] on the target, lasting for 1 turn.
+Can trigger 1 time per turn. ST movement type changes to Levitating,
+enabling ST to pass overlow obstacles. When re-attacking,
+Hit Rate +10%, Crit Rate +5%. ST Body HP +10% and DMG +5%
+(Unofficial Translation)"
+	18		Picture	Re-ATK		Mini Radar		Picture	"Can use Code [Tracer Coating]. Enables the ST's adjacent 2-tile area
+to become a valid attack zone for ally Missile Launcher
+and Rocket Launcher attacks. When re-attacking,
+Hit Rate +10%, Crit Rate +5%. ST Body HP +10% and DMG +5%
+(Unofficial Translation)"
+	19		Picture	First Strike		Power Bank	"First Strike
+Enhancement III"	Picture	"When actively attacking for the first time each turn,
+DMG +7.5% and Crit Rate +5%. ST Body HP +10% and DMG +5%
+(Unofficial Translation)"
+	19		Picture	First Strike		Ammo Crate			"After actively attacking, if spent 2 or more Ammo, gains 1 random Buff,
+lasting for 2 turns. Tactical Weapon Ammo Capacity +2.
+When actively attacking for the first time each turn,
+DMG +7.5% and Crit Rate +5%. ST Body HP +10% and DMG +5%
+(Unofficial Translation)"
