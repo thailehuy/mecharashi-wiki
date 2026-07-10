@@ -2808,6 +2808,114 @@
       "enTranslation": true
     },
     {
+      "ID": "10360103",
+      "name": "Illusion",
+      "type": "Light",
+      "quality": "SSR",
+      "icon": "Icon_mecha_wap1036",
+      "mechaIcon": "Icon_wap1036_1",
+      "lihuiIcon": "icon_lihui_wap1036",
+      "introduce": "HU-41E \u5e7b\u60d1\n\u8054\u5408\u8bbe\u8ba1\u5c40\u5168\u65b0\u7814\u53d1\u7684\u8f7b\u578b\u673a\u5175\uff0c\u76ee\u524d\u4ecd\u5904\u4e8e\u5b9e\u6218\u9a8c\u8bc1\u9636\u6bb5\uff0c\u5c1a\u672a\u6210\u89c4\u6a21\u5217\u88c5\u3002\n\u8be5\u673a\u578b\u5b8c\u5168\u91c7\u7528\u5965\u7ef4\u7279\u6280\u672f\u6253\u9020\uff0c\u4e0d\u4ec5\u62e5\u6709\u72ec\u7279\u7684\u5916\u5f62\uff0c\u5176\u5185\u90e8\u7684\u94a2\u5c9a\u5408\u91d1\u6846\u67b6\u3001\u6a21\u5757\u8fde\u63a5\u7ed3\u6784\u3001\u52a8\u529b\u5355\u5143\u4e43\u81f3\u4e3b\u63a7\u7cfb\u7edf\u66f4\u662f\u4e0e\u7c73\u8d6b\u739b\u5c9b\u4e0a\u7684\u5176\u4ed6\u673a\u5175\u6709\u7740\u4e0d\u5c0f\u7684\u5dee\u522b\u3002\u8fd9\u79cd\u975e\u5e38\u89c4\u7684\u8bbe\u8ba1\u4f7f\u5f97HU-41E\u62e5\u6709\u4f18\u79c0\u7684\u57fa\u7840\u6027\u80fd\uff0c\u4e14\u53ef\u5b9e\u73b0\u975e\u5e38\u89c4\u7684\u6b66\u88c5\u642d\u914d\uff0c\u4f46\u8fd9\u540c\u65f6\u4e5f\u610f\u5473\u7740\u53ea\u6709\u8db3\u591f\u4f18\u79c0\u7684\u6574\u5907\u5458\u4e0e\u673a\u5e08\u624d\u80fd\u53d1\u6325\u5176\u771f\u6b63\u7684\u4f5c\u6218\u80fd\u529b\u3002",
+      "output": "1680",
+      "durable": "321",
+      "Armor": "48",
+      "fire": "119",
+      "Antiriot": "770",
+      "parts": [
+        {
+          "position": "\u8eaf\u5e72",
+          "aircraftWeight": "270",
+          "maxHp": "8924",
+          "Armor": "470",
+          "Hit": null,
+          "Dodge": null,
+          "Antiriot": "4472"
+        },
+        {
+          "position": "\u5de6\u81c2",
+          "aircraftWeight": "90",
+          "maxHp": "4365",
+          "Armor": "313",
+          "Hit": "1974",
+          "Dodge": null,
+          "Antiriot": null
+        },
+        {
+          "position": "\u53f3\u81c2",
+          "aircraftWeight": "90",
+          "maxHp": "4365",
+          "Armor": "313",
+          "Hit": "1974",
+          "Dodge": null,
+          "Antiriot": null
+        },
+        {
+          "position": "\u817f\u90e8",
+          "aircraftWeight": "160",
+          "maxHp": "7256",
+          "Armor": "313",
+          "Hit": null,
+          "Dodge": "5233",
+          "Antiriot": null
+        }
+      ],
+      "manjiFirepower": "1166",
+      "modules": [
+        {
+          "_id": {
+            "timestamp": 1696936931,
+            "date": 1696936931000
+          },
+          "ID": "40054",
+          "name": "HP Mod",
+          "SpecificEffects": "HP <color=#F74848>+10%</color>.",
+          "BufCarried": "400541",
+          "SkillIcon": "Icon_entry_40051",
+          "icon": "Icon_entry_40051",
+          "Status": 1,
+          "weight": 892,
+          "id": "4005",
+          "level": 4
+        },
+        {
+          "_id": {
+            "timestamp": 1758014568,
+            "date": 1758014568000
+          },
+          "ID": "30518",
+          "name": "Adaptive Energy Mod",
+          "SpecificEffects": "Repair AMT increases by <color=#F74848>12%</color>. When actively using repair skills, Repair AMT additionally increases by <color=#F74848>12%</color>\uff1b\nAfter using non-attack command skills, next active attack skill AP cost reduces by <color=#F74848>-1</color>. After using active attack skills, next active non-attack command skills AP cost reduces by <color=#F74848>-1</color>. This effect can trigger <color=#F74848>1</color> time per turn.",
+          "BufCarried": "305181/305182/305183",
+          "SkillIcon": "Icon_entry_10100",
+          "icon": "Icon_entry_10100",
+          "Status": 1,
+          "weight": 800,
+          "id": "3051",
+          "level": 8
+        },
+        {
+          "_id": {
+            "timestamp": 1758014567,
+            "date": 1758014567000
+          },
+          "ID": "20604",
+          "name": "Wayward Engine",
+          "SpecificEffects": "For each <color=#F74848>1</color> target affected by repair effect, <buf ID=900017>[Fixed DMG]</buf> or Splash DMG from this unit, increases DMG dealt by <color=#F74848>6%</color> and Repair AMT by <color=#F74848>4%</color>, stacking up to <color=#F74848>5</color> times, lasting for <color=#F74848>2</color> turns.",
+          "BufCarried": "206041",
+          "SkillIcon": "Icon_skill_passive_1126",
+          "icon": "Icon_skill_passive_1126",
+          "Status": 1,
+          "weight": 364,
+          "id": "2060",
+          "level": 4
+        }
+      ],
+      "dispatchGroup": "InnovativE",
+      "dispatchVersion": "3.0",
+      "version": "2.7",
+      "enTranslation": true
+    },
+    {
       "ID": "30170103",
       "name": "Kong",
       "type": "Heavy",
@@ -5623,114 +5731,6 @@
       ],
       "dispatchGroup": "Arsenal",
       "dispatchVersion": "3.2",
-      "version": "1.0",
-      "enTranslation": false
-    },
-    {
-      "ID": "10360103",
-      "name": "\u5e7b\u60d1",
-      "type": "Light",
-      "quality": "SSR",
-      "icon": "Icon_mecha_wap1036",
-      "mechaIcon": "Icon_wap1036_1",
-      "lihuiIcon": "icon_lihui_wap1036",
-      "introduce": "HU-41E \u5e7b\u60d1\n\u8054\u5408\u8bbe\u8ba1\u5c40\u5168\u65b0\u7814\u53d1\u7684\u8f7b\u578b\u673a\u5175\uff0c\u76ee\u524d\u4ecd\u5904\u4e8e\u5b9e\u6218\u9a8c\u8bc1\u9636\u6bb5\uff0c\u5c1a\u672a\u6210\u89c4\u6a21\u5217\u88c5\u3002\n\u8be5\u673a\u578b\u5b8c\u5168\u91c7\u7528\u5965\u7ef4\u7279\u6280\u672f\u6253\u9020\uff0c\u4e0d\u4ec5\u62e5\u6709\u72ec\u7279\u7684\u5916\u5f62\uff0c\u5176\u5185\u90e8\u7684\u94a2\u5c9a\u5408\u91d1\u6846\u67b6\u3001\u6a21\u5757\u8fde\u63a5\u7ed3\u6784\u3001\u52a8\u529b\u5355\u5143\u4e43\u81f3\u4e3b\u63a7\u7cfb\u7edf\u66f4\u662f\u4e0e\u7c73\u8d6b\u739b\u5c9b\u4e0a\u7684\u5176\u4ed6\u673a\u5175\u6709\u7740\u4e0d\u5c0f\u7684\u5dee\u522b\u3002\u8fd9\u79cd\u975e\u5e38\u89c4\u7684\u8bbe\u8ba1\u4f7f\u5f97HU-41E\u62e5\u6709\u4f18\u79c0\u7684\u57fa\u7840\u6027\u80fd\uff0c\u4e14\u53ef\u5b9e\u73b0\u975e\u5e38\u89c4\u7684\u6b66\u88c5\u642d\u914d\uff0c\u4f46\u8fd9\u540c\u65f6\u4e5f\u610f\u5473\u7740\u53ea\u6709\u8db3\u591f\u4f18\u79c0\u7684\u6574\u5907\u5458\u4e0e\u673a\u5e08\u624d\u80fd\u53d1\u6325\u5176\u771f\u6b63\u7684\u4f5c\u6218\u80fd\u529b\u3002",
-      "output": "1680",
-      "durable": "321",
-      "Armor": "48",
-      "fire": "119",
-      "Antiriot": "770",
-      "parts": [
-        {
-          "position": "\u8eaf\u5e72",
-          "aircraftWeight": "270",
-          "maxHp": "8924",
-          "Armor": "470",
-          "Hit": null,
-          "Dodge": null,
-          "Antiriot": "4472"
-        },
-        {
-          "position": "\u5de6\u81c2",
-          "aircraftWeight": "90",
-          "maxHp": "4365",
-          "Armor": "313",
-          "Hit": "1974",
-          "Dodge": null,
-          "Antiriot": null
-        },
-        {
-          "position": "\u53f3\u81c2",
-          "aircraftWeight": "90",
-          "maxHp": "4365",
-          "Armor": "313",
-          "Hit": "1974",
-          "Dodge": null,
-          "Antiriot": null
-        },
-        {
-          "position": "\u817f\u90e8",
-          "aircraftWeight": "160",
-          "maxHp": "7256",
-          "Armor": "313",
-          "Hit": null,
-          "Dodge": "5233",
-          "Antiriot": null
-        }
-      ],
-      "manjiFirepower": "1166",
-      "modules": [
-        {
-          "_id": {
-            "timestamp": 1696936931,
-            "date": 1696936931000
-          },
-          "ID": "40054",
-          "name": "HP Mod",
-          "SpecificEffects": "HP <color=#F74848>+10%</color>.",
-          "BufCarried": "400541",
-          "SkillIcon": "Icon_entry_40051",
-          "icon": "Icon_entry_40051",
-          "Status": 1,
-          "weight": 892,
-          "id": "4005",
-          "level": 4
-        },
-        {
-          "_id": {
-            "timestamp": 1758014568,
-            "date": 1758014568000
-          },
-          "ID": "30518",
-          "name": "\u53d8\u80fd\u6a21\u7ec4",
-          "SpecificEffects": "\u4fee\u7406\u91cf\u63d0\u5347<color=#F74848>12%</color>\uff0c\u4e3b\u52a8\u4f7f\u7528\u5355\u4f53\u4fee\u7406\u6280\u80fd\u65f6\uff0c\u4fee\u7406\u91cf\u989d\u5916\u63d0\u5347<color=#F74848>12%</color>\uff1b\n\u4f7f\u7528\u975e\u653b\u51fb\u578b\u6307\u4ee4\u6280\u80fd\u540e\uff0c\u4e0b\u6b21\u4e3b\u52a8\u653b\u51fb\u6280\u80fdAP\u6d88\u8017<color=#F74848>-1</color>\uff0c\u4f7f\u7528\u4e3b\u52a8\u653b\u51fb\u6280\u80fd\u540e\uff0c\u4e0b\u6b21\u975e\u653b\u51fb\u578b\u6307\u4ee4\u6280\u80fdAP\u6d88\u8017<color=#F74848>-1</color>\uff0c\u6bcf\u56de\u5408\u6700\u591a\u53d1\u52a8<color=#F74848>1</color>\u6b21",
-          "BufCarried": "305181/305182/305183",
-          "SkillIcon": "Icon_entry_10100",
-          "icon": "Icon_entry_10100",
-          "Status": 1,
-          "weight": 800,
-          "id": "3051",
-          "level": 8
-        },
-        {
-          "_id": {
-            "timestamp": 1758014567,
-            "date": 1758014567000
-          },
-          "ID": "20604",
-          "name": "\u8ff7\u5149\u9a71\u52a8\u5668",
-          "SpecificEffects": "\u6bcf\u5bf9<color=#F74848>1</color>\u4e2a\u76ee\u6807\u9020\u6210\u6cbb\u7597\u6548\u679c\u3001<buf ID=900017>[\u56fa\u5b9a\u4f24\u5bb3]</buf>\u6216\u6e85\u5c04\u4f24\u5bb3\u65f6\uff0c\u4f24\u5bb3\u63d0\u5347<color=#F74848>6%</color>\uff0c\u4fee\u7406\u91cf\u63d0\u5347<color=#F74848>4%</color>\uff0c\u53ef\u53e0\u52a0<color=#F74848>5</color>\u5c42\uff0c\u6301\u7eed<color=#F74848>2</color>\u56de\u5408",
-          "BufCarried": "206041",
-          "SkillIcon": "Icon_skill_passive_1126",
-          "icon": "Icon_skill_passive_1126",
-          "Status": 1,
-          "weight": 364,
-          "id": "2060",
-          "level": 4
-        }
-      ],
-      "dispatchGroup": "InnovativE",
-      "dispatchVersion": "3.0",
       "version": "1.0",
       "enTranslation": false
     },

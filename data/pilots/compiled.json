@@ -27736,8 +27736,8 @@
       "quality": "SSR",
       "Talent0_2Ability": {
         "ID": "500950",
-        "name": "\u826f\u836f\u82e6\u673a",
-        "SpecificEffects": "\u53ef\u989d\u5916\u88c5\u5907\u4fee\u7406\u80cc\u5305\uff0c\u4fee\u7406\u80cc\u5305\u8d1f\u91cd\u964d\u4f4e<color=#F74848>300</color>\uff1b\u4f7f\u7528\u6253\u6869\u673a\u6216\u62f3\u5957\u4e3b\u52a8\u653b\u51fb\u65f6\uff0c\u82e5\u643a\u5e26\u4e86\u4fee\u7406\u80cc\u5305\uff0c\u5bf9\u547d\u4e2d\u7684\u76ee\u6807\u8010\u4e45\u503c\u767e\u5206\u6bd4\u6700\u4f4e\u7684\u90e8\u4f4d\u9020\u6210\u76f8\u5f53\u4e8e\u4fee\u7406\u80cc\u5305<color=#F74848>0.3</color>\u500d\u7684<buf ID=900017>[\u56fa\u5b9a\u4f24\u5bb3]</buf>",
+        "name": "Good Medicine Tastes Bitter",
+        "SpecificEffects": "Can equip Manipulator in backpack slot, Manipulator weight reduces by <color=#F74848>-300</color>. When using Knuckle or Pilebunker to attack an enemy while carrying a Manipulator, deals <buf ID=900017>[Fixed DMG]</buf> equal to <color=#F74848>0.3x</color> Manipulator Repair AMT to the enemy part with lowest HP.",
         "BufCarried": "5009501",
         "SkillIcon": "Icon_skill_talent_3107",
         "icon": "Icon_skill_talent_3107",
@@ -27746,8 +27746,8 @@
       },
       "Talent3_5Ability": {
         "ID": "500951",
-        "name": "\u826f\u836f\u82e6\u673a",
-        "SpecificEffects": "\u53ef\u989d\u5916\u88c5\u5907\u4fee\u7406\u80cc\u5305\uff0c\u4fee\u7406\u80cc\u5305\u8d1f\u91cd\u51cf\u4f4e<color=#F74848>300</color>\uff1b\u4f7f\u7528\u6253\u6869\u673a\u6216\u62f3\u5957\u4e3b\u52a8\u653b\u51fb\u65f6\uff0c\u82e5\u643a\u5e26\u4e86\u4fee\u7406\u80cc\u5305\uff0c\u5bf9\u547d\u4e2d\u7684\u76ee\u6807\u8010\u4e45\u503c\u767e\u5206\u6bd4\u6700\u4f4e\u7684\u90e8\u4f4d\u9020\u6210\u76f8\u5f53\u4e8e\u4fee\u7406\u80cc\u5305<color=#F74848>0.35</color>\u500d\u7684<buf ID=900017>[\u56fa\u5b9a\u4f24\u5bb3]</buf>\uff0c\n<buf ID=5009418>[\u5171\u9e23\u8109\u51b2]</buf>\u89e6\u53d1\u7684\u4f24\u5bb3\u6548\u679c\u63d0\u5347\u81f3<color=#F74848>0.35</color>\u500d\uff1b\u5355\u4f53\u4fee\u7406\u6280\u80fd\u5c04\u7a0b<color=#F74848>+1</color>",
+        "name": "Good Medicine Tastes Bitter",
+        "SpecificEffects": "Can equip Manipulator in backpack slot, Manipulator weight reduces by <color=#F74848>-300</color>. When using Knuckle or Pilebunker to attack an enemy while carrying a Manipulator, deals <buf ID=900017>[Fixed DMG]</buf> equal to <color=#F74848>0.35x</color> Manipulator Repair AMT to the enemy part with lowest HP.\n<buf ID=5009418>[Resonance Pulse]</buf> DMG multiplier increases to <color=#F74848>0.35x</color>. Repair skills range <color=#F74848>+1</color>.",
         "BufCarried": "5009501/5009511/5009513",
         "SkillIcon": "Icon_skill_talent_3107",
         "icon": "Icon_skill_talent_3107",
@@ -27914,8 +27914,8 @@
                 "type": 3,
                 "PassiveSkill": {
                   "ID": "500931",
-                  "name": "\u62a2\u9669\u7ef4\u4fee1",
-                  "SpecificEffects": "\u884c\u52a8\u7ed3\u675f\u65f6\uff0c\u968f\u673a\u9009\u62e9\u76f8\u90bb<color=#F74848>1</color>\u683c\u7684\u5176\u4ed6\u53cb\u519b\u8fdb\u884c<buf ID=900018>[\u88ab\u52a8\u4fee\u7406]</buf>\uff0c\u4fee\u7406\u91cf\u4e3a\u4fee\u7406\u80cc\u5305\u7684<color=#F74848>0.6</color>\u500d\uff0c\u65e0\u6cd5\u4fee\u590d\u635f\u6bc1\u90e8\u4f4d",
+                  "name": "Emergency Repair 1",
+                  "SpecificEffects": "At the end of the action, randomly select a single adjacent (<color=#F74848>1</color> tile) ally to perform <buf ID=900018>[Passive Repair]</buf>. The repair amount is <color=#F74848>0.6x</color> the Manipulator's Repair AMT and cannot repair damaged parts.",
                   "BufCarried": "5009311/5009312",
                   "SkillIcon": "Icon_skill_passive_3002",
                   "icon": "Icon_skill_passive_3002",
@@ -27970,8 +27970,8 @@
                 "type": 3,
                 "PassiveSkill": {
                   "ID": "500934",
-                  "name": "\u62a2\u9669\u7ef4\u4fee2",
-                  "SpecificEffects": "\u4f7f<buf ID=5000311>[\u62a2\u9669\u7ef4\u4fee1]</buf>\u4f1a\u5728\u5468\u56f4<color=#F74848>2</color>\u683c\u8303\u56f4\u5185\u9009\u62e9\u76ee\u6807",
+                  "name": "Emergency Repair 2",
+                  "SpecificEffects": "<buf ID=900018>[Passive Repair]</buf> selects targets within the adjacent (<color=#F74848>2</color> tiles) area.",
                   "BufCarried": "5009341/5009342",
                   "SkillIcon": "Icon_skill_passive_3002",
                   "icon": "Icon_skill_passive_3002",
@@ -27989,8 +27989,8 @@
                 "type": 3,
                 "PassiveSkill": {
                   "ID": "500935",
-                  "name": "\u62a2\u9669\u7ef4\u4fee3",
-                  "SpecificEffects": "\u4f7f<buf ID=5000311>[\u62a2\u9669\u7ef4\u4fee1]</buf>\u7684\u4fee\u7406\u91cf\u63d0\u5347\u81f3\u4fee\u7406\u80cc\u5305\u7684<color=#F74848>1</color>\u500d",
+                  "name": "Emergency Repair 3",
+                  "SpecificEffects": "<buf ID=900018>[Passive Repair]</buf>'s Repair AMT is now <color=#F74848>1x</color> that of the Manipulator.",
                   "BufCarried": "5009351/5009352",
                   "SkillIcon": "Icon_skill_passive_3002",
                   "icon": "Icon_skill_passive_3002",
@@ -28008,8 +28008,8 @@
                 "type": 3,
                 "PassiveSkill": {
                   "ID": "500936",
-                  "name": "\u62a2\u9669\u7ef4\u4fee4",
-                  "SpecificEffects": "\u4f7f<buf ID=5000311>[\u62a2\u9669\u7ef4\u4fee1]</buf>\u7684\u4fee\u7406\u76ee\u6807\u6570\u91cf<color=#F74848>+1</color>",
+                  "name": "Emergency Repair 4",
+                  "SpecificEffects": "The number of targets that <buf ID=900018>[Passive Repair]</buf> can repair increases by <color=#F74848>1</color>.",
                   "BufCarried": "5009361/5009362",
                   "SkillIcon": "Icon_skill_passive_3002",
                   "icon": "Icon_skill_passive_3002",
@@ -28041,8 +28041,8 @@
                 "type": 3,
                 "PassiveSkill": {
                   "ID": "500941",
-                  "name": "\u8c0e\u80051",
-                  "SpecificEffects": "\u901a\u8fc7\u4fee\u7406\u80cc\u5305\u9020\u6210<buf ID=900017>[\u56fa\u5b9a\u4f24\u5bb3]</buf>\u6548\u679c\u65f6\u989d\u5916\u5bf9\u76ee\u6807\u65bd\u52a0<buf ID=5009418>[\u5171\u9e23\u8109\u51b2]</buf>",
+                  "name": "False Doctor 1",
+                  "SpecificEffects": "When <buf ID=900017>[Fixed DMG]</buf> is triggered by Manipulator, applies <buf ID=5009418>[Resonance Pulse]</buf> to the target.",
                   "BufCarried": "5009411",
                   "SkillIcon": "Icon_skill_passive_5276",
                   "icon": "Icon_skill_passive_5276",
@@ -28097,8 +28097,8 @@
                 "type": 3,
                 "PassiveSkill": {
                   "ID": "500944",
-                  "name": "\u8c0e\u80052",
-                  "SpecificEffects": "\u4fee\u7406\u6280\u80fd\u53ef\u5bf9\u654c\u673a\u91ca\u653e\uff0c\u4ee5\u654c\u673a\u4e3a\u76ee\u6807\u65f6\u9020\u6210\u539f\u6709\u6280\u80fd\u4fee\u7406\u91cf<color=#F74848>50%</color>\u7684<buf ID=900017>[\u56fa\u5b9a\u4f24\u5bb3]</buf>",
+                  "name": "False Doctor 2",
+                  "SpecificEffects": "Repair skills can target enemies, dealing <buf ID=900017>[Fixed DMG]</buf> equal to <color=#F74848>50%</color> Repair AMT.",
                   "BufCarried": "5009441/5009442",
                   "SkillIcon": "Icon_skill_passive_5276",
                   "icon": "Icon_skill_passive_5276",
@@ -28116,8 +28116,8 @@
                 "type": 3,
                 "PassiveSkill": {
                   "ID": "500945",
-                  "name": "\u8c0e\u80053",
-                  "SpecificEffects": "\u4e3b\u52a8\u653b\u51fb\u65f6\uff0c\u6839\u636e\u4fee\u7406\u91cf\u63d0\u5347\u6548\u679c\u63d0\u9ad8\u4f24\u5bb3\uff0c\u6bcf<color=#F74848>1%</color>\u4fee\u7406\u91cf\u63d0\u5347\u83b7\u5f97<color=#F74848>1%</color>\u4f24\u5bb3\u63d0\u5347\uff0c\u6700\u9ad8\u63d0\u5347<color=#F74848>40%</color>\uff1b\u4e3b\u52a8\u4fee\u7406\u65f6\uff0c\u6839\u636e\u4f24\u5bb3\u63d0\u5347\u6548\u679c\u63d0\u5347\u4fee\u7406\u91cf\uff0c\u6bcf<color=#F74848>2%</color>\u4f24\u5bb3\u63d0\u5347\u4f1a\u83b7\u5f97<color=#F74848>1%</color>\u4fee\u7406\u91cf\u63d0\u5347\uff0c\u6700\u591a\u63d0\u5347<color=#F74848>20%</color>",
+                  "name": "False Doctor 3",
+                  "SpecificEffects": "When actively attacking, for each <color=#F74848>1%</color> bonus Repair AMT, increases DMG dealt by <color=#F74848>1%</color>, up to <color=#F74848>40%</color>. When actively using repair skills, for each <color=#F74848>2%</color> bonus DMG, increases Repair AMT by <color=#F74848>1%</color>, up to <color=#F74848>20%</color>.",
                   "BufCarried": "5009451/5009452",
                   "SkillIcon": "Icon_skill_passive_5276",
                   "icon": "Icon_skill_passive_5276",
@@ -28135,8 +28135,8 @@
                 "type": 3,
                 "PassiveSkill": {
                   "ID": "500946",
-                  "name": "\u8c0e\u80054",
-                  "SpecificEffects": "\u4e3b\u52a8\u653b\u51fb\u540e\u53ef\u53d1\u52a8<buf ID=900004>[\u518d\u653b\u51fb]</buf>\uff0c\u653b\u51fb\u524d\u53ef\u79fb\u52a8<color=#F74848>3</color>\u683c\uff0c\u4e0b\u4e00\u6b21\u884c\u52a8\u4ec5\u53ef\u4f7f\u7528\u4fee\u7406\u6280\u80fd\uff1b\u4e3b\u52a8\u4fee\u7406\u540e\u53ef\u53d1\u52a8<buf ID=900004>[\u518d\u653b\u51fb]</buf>\uff0c\u653b\u51fb\u524d\u79fb\u52a8<color=#F74848>3</color>\u683c\uff0c\u4e0b\u4e00\u6b21\u884c\u52a8\u4ec5\u53ef\u4f7f\u7528\u653b\u51fb\u6280\u80fd\uff1b\u672c\u6280\u80fd\u7684<buf ID=900004>[\u518d\u653b\u51fb]</buf>\u6548\u679c\u6bcf\u56de\u5408\u6700\u591a\u89e6\u53d1<color=#F74848>1</color>\u6b21",
+                  "name": "False Doctor 4",
+                  "SpecificEffects": "After actively attacking, triggers <buf ID=900004>[Re-ATK]</buf>, can move <color=#F74848>3</color> tiles before attacking, and cannot use repair skills with this action. This <buf ID=900004>[Re-ATK]</buf> effect can trigger <color=#F74848>1</color> time per turn.",
                   "BufCarried": "5009461",
                   "SkillIcon": "Icon_skill_passive_5276",
                   "icon": "Icon_skill_passive_5276",
@@ -28367,7 +28367,7 @@
             "ID": "700009",
             "remarks": "\u901a\u7528\u7fa4\u4f53\u6cbb\u7597\u6280\u80fd",
             "name": "Wide-Range Repair",
-            "describe": "\u6062\u590d\u6240\u9009<range type=1>2\u683c\u83f1\u5f62</range>\u8303\u56f4\u5185\u53cb\u519b\u6240\u6709\u90e8\u4f4d\u7684\u8010\u4e45\u503c\uff0c\u4fee\u7406\u91cf\u4e3a\u4fee\u7406\u80cc\u5305\u7684<color=#F74848>1.0</color>\u500d\uff0c\u53ef\u4fee\u590d<color=#F74848>1</color>\u4e2a\u635f\u6bc1\u90e8\u4f4d",
+            "describe": "Restores the HP of all allies within the selected <range type=1>2-tile diamond area</range>. Repair amount is equal to <color=#F74848>1.0x</color> Manipulator Repair AMT. Can repair <color=#F74848>1</color> destroyed part.",
             "type": "Order",
             "CD": "2",
             "Ap": "3",
@@ -28395,8 +28395,8 @@
           "skill": {
             "ID": "500903",
             "remarks": "\u739b\u6c40\u59ae-\u6280\u80fd",
-            "name": "\u5355\u4eba\u670d\u52a1",
-            "describe": "\u6062\u590d\u5355\u53f0\u673a\u5175\u6240\u6709\u90e8\u4f4d\u7684\u8010\u4e45\u503c\uff0c\u4fee\u7406\u91cf\u4e3a\u4fee\u7406\u80cc\u5305\u7684<color=#F74848>2.0</color>\u500d\uff0c\u53ef\u4fee\u590d<color=#F74848>1</color>\u4e2a\u635f\u6bc1\u90e8\u4f4d",
+            "name": "Targeted Service",
+            "describe": "Restores all part HP of a single target equals to <color=#F74848>2.0x</color> Manipulator Repair AMT. Can restore <color=#F74848>1</color> destroyed part.",
             "type": "Order",
             "Ap": "2",
             "matchingWeaponType": "\u4fee\u7406\u80cc\u5305",
@@ -28423,8 +28423,8 @@
           "skill": {
             "ID": "500904",
             "remarks": "\u739b\u6c40\u59ae-\u6280\u80fd",
-            "name": "\u53cc\u9762\u4fee\u590d",
-            "describe": "\u6062\u590d\u5355\u53f0\u673a\u5175\u6240\u6709\u90e8\u4f4d\u7684\u8010\u4e45\u503c\uff0c\u4fee\u7406\u91cf\u4e3a\u4fee\u7406\u80cc\u5305\u7684<color=#F74848>2.3</color>\u500d\uff0c\u53ef\u4fee\u590d<color=#F74848>1</color>\u4e2a\u635f\u6bc1\u90e8\u4f4d\uff0c\u5e76\u5bf9\u76ee\u6807<color=#F74848>2</color>\u683c\u8303\u56f4\u5185\u6240\u6709\u654c\u673a\u9020\u6210\u76f8\u5f53\u4e8e\u4fee\u7406\u80cc\u5305<color=#F74848>0.3</color>\u500d\u7684<buf ID=900017>[\u56fa\u5b9a\u4f24\u5bb3]</buf>",
+            "name": "Double-Sided Restoration",
+            "describe": "Restores all part HP of a single target equals to <color=#F74848>2.3</color> Manipulator Repair AMT. Can restore <color=#F74848>1</color>destroyed part and deals <buf ID=900017>[Fixed DMG]</buf> to all enemies within <color=#F74848>2</color> adjacent tiles of the target equal to <color=#F74848>0.3x</color> Manipulator Repair AMT.",
             "type": "Order",
             "CD": "1",
             "Ap": "3",
@@ -28451,8 +28451,8 @@
           "weight": 2615,
           "skill": {
             "ID": "500905",
-            "name": "\u4e34\u754c\u5242\u91cf",
-            "SpecificEffects": "\u901a\u8fc7\u4fee\u7406\u80cc\u5305\u89e6\u53d1\u4fee\u7406\u6216<buf ID=900017>[\u56fa\u5b9a\u4f24\u5bb3]</buf>\u6548\u679c\u65f6\uff0c\u82e5\u76ee\u6807\u662f\u8010\u4e45\u767e\u5206\u6bd4\u4f4e\u4e8e<color=#F74848>60%</color>\u7684\u53cb\u519b\uff0c\u6cbb\u7597\u6548\u679c\u63d0\u5347<color=#F74848>15%</color>\uff0c\u82e5\u76ee\u6807\u662f\u8010\u4e45\u767e\u5206\u6bd4\u4f4e\u4e8e<color=#F74848>60%</color>\u7684\u654c\u673a\uff0c<buf ID=900017>[\u56fa\u5b9a\u4f24\u5bb3]</buf>\u6548\u679c\u63d0\u5347<color=#F74848>10%</color>",
+            "name": "Emergency Dose",
+            "SpecificEffects": "When using Manipulator, if the target is an ally with <color=#F74848>60%</color> or less HP, increases Repair AMT by <color=#F74848>15%</color>, if the target is an enemy with <color=#F74848>60%</color> or less HP, increases <buf ID=900017>[Fixed DMG]</buf> dealt by <color=#F74848>10%</color>.",
             "BufCarried": "5009051/5009052",
             "SkillIcon": "Icon_skill_passive_5275",
             "icon": "Icon_skill_passive_5275",
@@ -28476,8 +28476,8 @@
           "weight": 2616,
           "skill": {
             "ID": "500906",
-            "name": "\u6709\u5907",
-            "SpecificEffects": "\u6bcf\u56de\u5408\u9996\u4e2a\u6280\u80fdAP\u6d88\u8017<color=#F74848>-1</color>\uff0c\u6700\u4f4e<color=#F74848>1</color>\u70b9",
+            "name": "Readiness",
+            "SpecificEffects": "Each turn, the AP Cost of the 1st skill decreases by <color=#F74848>1</color>, with a minimum cost of <color=#F74848>1</color> AP.",
             "BufCarried": "5009061",
             "SkillIcon": "Icon_skill_passive_5120",
             "icon": "Icon_skill_passive_5120",
@@ -28501,8 +28501,8 @@
           "weight": 2617,
           "skill": {
             "ID": "500907",
-            "name": "\u6295\u9e29",
-            "SpecificEffects": "\u89e6\u53d1<buf ID=5009501>[\u826f\u836f\u82e6\u673a]</buf>\u6216<buf ID=5009410>[\u5171\u9e23\u8109\u51b2]</buf>\u6548\u679c\u65f6\uff0c\u5bf9\u76ee\u6807\u65bd\u52a0<color=#F74848>1</color>\u4e2a\u968f\u673a\u51cf\u76ca\u6548\u679c\uff0c\u6301\u7eed<color=#F74848>2</color>\u56de\u5408",
+            "name": "Poison Cast",
+            "SpecificEffects": "When talent <buf ID=5009501>[Good Medicine Tastes Bitter]</buf> or <buf ID=5009418>[Resonance Pulse]</buf> triggers, applies <color=#F74848>1</color> random debuff to the target, lasting for <color=#F74848>2</color> turns.",
             "BufCarried": "5009071",
             "SkillIcon": "Icon_skill_passive_5170",
             "icon": "Icon_skill_passive_5170",
@@ -28527,8 +28527,8 @@
           "skill": {
             "ID": "500908",
             "remarks": "\u739b\u6c40\u59ae-\u6280\u80fd",
-            "name": "\u5e7d\u7075\u5de1\u8bca",
-            "describe": "\u4f7f\u7528\u6253\u6869\u673a\u6216\u62f3\u5957\u653b\u51fb\u6307\u5b9a\u65b9\u5411\uff0c\u5bf9\u76ee\u6807\u9020\u6210<color=#F74848>1.35</color>\u500d\u8303\u56f4\u4f24\u5bb3\uff0c\u5fc5\u5b9a\u653b\u51fb\u8010\u4e45\u503c\u6700\u9ad8\u7684\u90e8\u4f4d\uff0c\u82e5\u8be5\u65b9\u5411\u5b58\u5728\u76f8\u90bb\u654c\u673a\uff0c\u53ef\u7ee7\u7eed\u653b\u51fb\u76f8\u90bb\u654c\u673a\uff0c\u6700\u591a\u653b\u51fb<color=#F74848>4</color>\u540d\u654c\u673a\uff0c\u4e4b\u540e\u505c\u7559\u5728\u6700\u8fdc\u76ee\u6807\u7684\u53e6\u4e00\u4fa7\uff0c\u672c\u6b21\u653b\u51fb\u89e6\u53d1\u7684\u5929\u8d4b<buf ID=900017>[\u56fa\u5b9a\u4f24\u5bb3]</buf>\u6548\u679c\u63d0\u5347<color=#F74848>50%</color>",
+            "name": "Ghost Patrol",
+            "describe": "Uses a Knuckle or a Pilebunker to attack in a designated direction, dealing <color=#F74848>1.35x</color> DMG to the target hit. This skill prioritizes the part with highest HP. If there are adjacent enemies in that direction, can continue to attack adjacent units (attacking up to <color=#F74848>4</color> enemy units), then stops on the opposite side of the farthest target. The talent <buf ID=900017>[Fixed DMG]</buf> triggered by this attack is increased by <color=#F74848>50%</color>.",
             "type": "SpecialAssault",
             "Ap": "4",
             "matchingWeaponType": "\u6253\u6869\u673a/\u62f3\u5957",
@@ -28536,24 +28536,6 @@
             "icon": "Icon_skill_order_1144",
             "Status": 1,
             "weight": 515
-          }
-        },
-        {
-          "ID": "1010316436",
-          "UnitType": "0",
-          "TitleUnitDetails": "\u6838\u5fc3\u5355\u5143-8",
-          "UnitNumber": "3",
-          "LocationOnMap": "3",
-          "skill1": "500909",
-          "skill": {
-            "ID": "500909",
-            "name": "Regulated Repair",
-            "describe": "Restores HP equal to <color=#F74848>2.0</color>x Manipulator Repair AMT to all parts of a single ST. Can repair <color=#F74848>1</color> destroyed part.",
-            "type": "Order",
-            "Ap": "2",
-            "CD": "0",
-            "SkillIcon": "Icon_skill_order_3001",
-            "icon": "Icon_skill_order_3001"
           }
         },
         {
@@ -28814,8 +28796,18 @@
       ],
       "AllowedMechaDriveList_DriveAllowedList": "Light",
       "AlternateSkins": "",
-      "version": "1.0",
-      "enTranslation": false
+      "version": "2.7",
+      "enTranslation": true,
+      "hiddenSkills": [
+        {
+          "name": "Tainted Implant",
+          "icon": "Icon_skill_main_1145",
+          "type": "EquipmentSkill",
+          "Ap": "2",
+          "CD": "0",
+          "describe": "Uses a Knuckle or Pilebunker to attack a target, dealing <color=#F74848>1.1x</color> DMG. Can enter <buf ID=900014>[Aiming]</buf> Mode before attacking."
+        }
+      ]
     },
     {
       "ID": "10103139",

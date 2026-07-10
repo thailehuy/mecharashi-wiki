@@ -54,6 +54,16 @@
       "SpecificEffects": ""
     }
   },
+  "hiddenSkills": [
+    {
+      "name": "Tainted Implant",
+      "icon": "Icon_skill_main_1145",
+      "type": "EquipmentSkill",
+      "Ap": "2",
+      "CD": "0",
+      "describe": "Uses a Knuckle or Pilebunker to attack a target, dealing <color=#F74848>1.1x</color> DMG. Can enter <buf ID=900014>[Aiming]</buf> Mode before attacking."
+    }
+  ],
   "neuralPassives": {
     "100011": {
       "name": "Mobile Warfare 2",
