@@ -5,12 +5,12 @@
   "Profession": "Assault",
   "Occupation": "Raider",
   "Talent0_2Ability": {
-    "name": "饱和射击",
-    "SpecificEffects": "同时装备两把机枪时，[普通攻击]<buf ID=900002>[协力攻击]</buf>升级为<buf ID=900150>[双枪普攻]</buf><buf ID=900069>[双枪协力]</buf>；使用机枪发动[普通攻击]和<buf ID=900002>[协力攻击]</buf>时，每命中<color=#F74848>1</color>发子弹，攻击后获得<color=#F74848>1</color>层<buf ID=2020505>[弹潮蓄能]</buf>，发动<buf ID=900153>[武器技能]</buf>时消耗层数，达到<color=#F74848>200</color>层时进入<buf ID=2020468>[过热状态]</buf>"
+    "name": "Saturated Fire",
+    "SpecificEffects": "When both hands are equipped with Machine Gun, [Basic Attack] and <buf ID=900002>[Link Attack]</buf> are upgraded to <buf ID=900150>[Twin-Gun Basic Attack]</buf> and <buf ID=900069>[Twin-Gun Link Attack]</buf>. When using Machine Gun to performs [Basic Attack] or <buf ID=900002>[Link Attack]</buf>, for each <color=#F74848>1</color> bullet hit, gains <color=#F74848>1</color> stack of <buf ID=2020505>[Overcharged Bullet]</buf> after the action. Activating <buf ID=900153>[Weapon Skill]</buf> consumes corresponding number of stacks. Enters <buf ID=2020468>[Overheating]</buf> when reaches <color=#F74848>200</color> stacks."
   },
   "Talent3_5Ability": {
-    "name": "饱和射击",
-    "SpecificEffects": "同时装备两把机枪时，[普通攻击]<buf ID=900002>[协力攻击]</buf>升级为<buf ID=900150>[双枪普攻]</buf><buf ID=900069>[双枪协力]</buf>；使用机枪发动[普通攻击]和<buf ID=900002>[协力攻击]</buf>时，每命中<color=#F74848>1</color>发子弹，攻击后获得<color=#F74848>1</color>层<buf ID=2020505>[弹潮蓄能]</buf>，发动<buf ID=900153>[武器技能]</buf>时消耗层数，达到<color=#F74848>200</color>层时进入<buf ID=2020468>[过热状态]</buf>；\n机枪射程<color=#F74848>+1</color>；使用机枪发动<buf ID=900153>[武器技能]</buf>时，若拥有<color=#F74848>120</color>层及以上<buf ID=2020505>[弹潮蓄能]</buf>，战前扣除目标<color=#F74848>1</color>点PP，每回合最多发动<color=#F74848>1</color>次"
+    "name": "Saturated Fire",
+    "SpecificEffects": "When both hands are equipped with Machine Gun, [Basic Attack] and <buf ID=900002>[Link Attack]</buf> are upgraded to <buf ID=900150>[Twin-Gun Basic Attack]</buf> and <buf ID=900069>[Twin-Gun Link Attack]</buf>. When using Machine Gun to performs [Basic Attack] or <buf ID=900002>[Link Attack]</buf>, for each <color=#F74848>1</color> bullet hit, gains <color=#F74848>1</color> stack of <buf ID=2020505>[Overcharged Bullet]</buf> after the action. Activating <buf ID=900153>[Weapon Skill]</buf> consumes corresponding number of stacks. Enters <buf ID=2020468>[Overheating]</buf> when reaches <color=#F74848>200</color> stacks.\nMachine Gun range increases by <color=#F74848>+1</color>. When using Machine Gun to activate <buf ID=900153>[Weapon Skill]</buf> with <color=#F74848>120</color> or more stacks of <buf ID=2020505>[Overcharged Bullet]</buf>, reduces <color=#F74848>1</color> PP from the target. This effect can trigger <color=#F74848>1</color> times per turn."
   },
   "skills": {
     "200001": {
@@ -19,38 +19,38 @@
       "SpecificEffects": "In cooperation with allies, use Assault Weapons to launch a <buf ID=900002>[Link Attack]</buf> against the target, dealing <color=#F74848>0.2x</color> DMG, effective up to <color=#F74848>1</color> time per turn."
     },
     "202002": {
-      "name": "本能速射",
-      "describe": "同时使用两把机枪攻击单个目标，造成<color=#F74848>2×0.55</color>倍伤害，每命中<color=#F74848>1</color>发子弹，攻击后获得<color=#F74848>2</color>层<buf ID=2020505>[弹潮蓄能]</buf>，且战后不会损失<buf ID=2020505>[弹潮蓄能]</buf>",
+      "name": "Twin-Gun Reflex",
+      "describe": "Uses two Machine Guns to attack a target, dealing <color=#F74848>2x0.55</color> DMG. Each <color=#F74848>1</color> grants <color=#F74848>2</color> stacks of <buf ID=2020505>[Overcharged Bullet]</buf>. <buf ID=2020505>[Overcharged Bullet]</buf> stacks are retained after combat.",
       "SpecificEffects": ""
     },
     "202003": {
-      "name": "火力支点",
+      "name": "Overcharged Firepower",
       "describe": "",
-      "SpecificEffects": "每层<buf ID=2020505>[弹潮蓄能]</buf>使伤害提升<color=#F74848>0.25%</color>，最多提升<color=#F74848>25%</color>，行动开始时，移除<color=#F74848>10</color>层<buf ID=2020505>[弹潮蓄能]</buf>"
+      "SpecificEffects": "Each stack of <buf ID=2020505>[Overcharged Bullet]</buf> increases DMG dealt by <color=#F74848>0.25%</color>, up to <color=#F74848>25%</color>. At the start of action, consumes <color=#F74848>10</color> stacks of <buf ID=2020505>[Overcharged Bullet]</buf>."
     },
     "202004": {
-      "name": "奇袭",
-      "describe": "立即获得<color=#F74848>20</color>层<buf ID=2020505>[弹潮蓄能]</buf>，之后使当前<buf ID=2020505>[弹潮蓄能]</buf>层数锁定，不受到任何增减效果影响，<buf ID=900002>[协力攻击]</buf>可发动次数<color=#F74848>+8</color>，持续至下次行动开始，然后可以使用完整移动力继续行动",
+      "name": "Sudden Strike",
+      "describe": "Instantly gains <color=#F74848>20</color> stacks of <buf ID=2020505>[Overcharged Bullet]</buf>, also locks the number <buf ID=2020505>[Overcharged Bullet]</buf> stacks, cannot gains or consumes stacks. <buf ID=900002>[Link Attack]</buf> count increases by <color=#F74848>+8</color>. This effect lasts till the start of next turn. Can continue action with full movement.",
       "SpecificEffects": ""
     },
     "202005": {
-      "name": "斗争心",
+      "name": "Fighting Spirit",
       "describe": "",
-      "SpecificEffects": "主动攻击时，若拥有<color=#F74848>80</color>层及以上<buf ID=2020505>[弹潮蓄能]</buf>，战前使自己获得<buf ID=7100404>[暴击率提升Ⅱ]</buf><buf ID=7100104>[命中率提升Ⅱ]</buf><buf ID=7100503>[暴击伤害提升Ⅱ]</buf>中随机<color=#F74848>1</color>个，持续<color=#F74848>2</color>回合"
+      "SpecificEffects": "When actively attacking, if possesses <color=#F74848>80</color> or more stacks of <buf ID=2020505>[Overcharged Bullet]</buf>, randomly gains <color=#F74848>1</color> of <buf ID=7100404>[Crit Rate UP II]</buf>, <buf ID=7100104>[Hit Rate UP II]</buf> or <buf ID=7100503>[Crit DMG UP II]</buf> before combat, lasting for <color=#F74848>2</color> turns."
     },
     "202006": {
-      "name": "穿插突防",
-      "describe": "选择射程内<color=#F74848>1</color>名目标，目标周围<color=#F74848>2</color>格位置可停留，同时使用两把机枪攻击单个目标，造成<color=#F74848>2×0.7</color>倍伤害，之后停留在目标周围<color=#F74848>2</color>格空地上，本次攻击目标及其友军无法发动反击和<buf ID=900061>[协力反击]</buf>，拥有<color=#F74848>80</color>层及以上<buf ID=2020505>[弹潮蓄能]</buf>时，暴击率和暴击伤害提升<color=#F74848>20%</color>",
+      "name": "Intercepting Strike",
+      "describe": "Attacks <color=#F74848>1</color> target within <color=#F74848>2</color> adjacent tiles with two Machine Guns, dealing <color=#F74848>2x0.7</color> DMG. Then remains on an empty tile within <color=#F74848>2</color> adjacent tiles around the target. The target cannot launch [Retaliation] or <buf ID=900061>[Link Retaliation]</buf>. If possesses <color=#F74848>80</color> or more stacks of <buf ID=2020505>[Overcharged Bullet]</buf>, this attack's Critical Hit chance and Critical Hit DMG are increased by <color=#F74848>20%</color>.",
       "SpecificEffects": ""
     },
     "202007": {
-      "name": "决胜心",
+      "name": "Determination",
       "describe": "",
-      "SpecificEffects": "使用机枪发动<buf ID=900153>[武器技能]</buf>时，若有<color=#F74848>120</color>层及以上<buf ID=2020505>[弹潮蓄能]</buf>，战后消耗<color=#F74848>1</color>PP并回复<color=#F74848>3</color>AP，每回合最多发动<color=#F74848>1</color>次，每次出击最多拥有<color=#F74848>2</color>点PP"
+      "SpecificEffects": "When activating <buf ID=900153>[Weapon Skill]</buf> with Machine Gun, if possesses <color=#F74848>120</color> or more stacks of <buf ID=2020505>[Overcharged Bullet]</buf>, consumes <color=#F74848>1</color> PP and recovers <color=#F74848>3</color> AP after combat. This effect can trigger <color=#F74848>1</color> time per turn. Gains <color=#F74848>2</color> PP at the start of battle."
     },
     "202008": {
-      "name": "冲锋号",
-      "describe": "同时使用两把机枪攻击单个目标，造成<color=#F74848>2×0.7</color>倍伤害，并使全体友军对目标发动<buf ID=900002>[协力攻击]</buf>；该协力攻击不要求友军拥有协力能力，也不消耗协力次数；若拥有<color=#F74848>80</color>层及以上<buf ID=2020505>[弹潮蓄能]</buf>，战后对自己施加<buf ID=2020082>[集中突破]</buf>，下次行动开始时移除",
+      "name": "Vanguard Signal",
+      "describe": "Uses two Machine Guns to attack a target, dealing <color=#F74848>2x0.7</color> DMG and forces all allies within range to launch <buf ID=900002>[Link Attack]</buf> against the target. This <buf ID=900002>[Link Attack]</buf> does not require allies to possess a specific skill and does not consume any Link times. If possesses <color=#F74848>80</color> or more stacks of <buf ID=2020505>[Overcharged Bullet]</buf>, gains <buf ID=2020082>[Focus Fire]</buf> after combat, lasting till the start of next action.",
       "SpecificEffects": ""
     }
   },
@@ -104,8 +104,8 @@
       "SpecificEffects": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, final DMG <color=#F74848>+30%</color>."
     },
     "202041": {
-      "name": "区域协同1",
-      "SpecificEffects": "在场时，所有友方单位<buf ID=900002>[协力攻击]</buf>伤害提升<color=#F74848>15%</color>，突击和射击武器<buf ID=900002>[协力攻击]</buf>射程<color=#F74848>+1</color>"
+      "name": "Zone Contract 1",
+      "SpecificEffects": "All allies <buf ID=900002>[Link Attack]</buf> DMG increases by <color=#F74848>15%</color>, and assault and ranged weapons gains <color=#F74848>+1</color> <buf ID=900002>[Link Attack]</buf> count."
     },
     "200042": {
       "name": "AP Optimization 4",
@@ -116,17 +116,17 @@
       "SpecificEffects": "If not moved before an Active Attack, <buf ID=900004>[Re-ATK]</buf> can be triggered, effective up to <color=#F74848>1</color> time per turn. Unable to move before attacking.\nEffects similar to <buf ID=900004>[Re-ATK]</buf> cannot be re-triggered."
     },
     "202044": {
-      "name": "区域协同2",
-      "SpecificEffects": "行动开始时，若拥有<color=#F74848>80</color>层及以上<buf ID=2020505>[弹潮蓄能]</buf>，机枪射程<color=#F74848>+1</color>，持续至下次行动开始"
+      "name": "Zone Contract 2",
+      "SpecificEffects": "At the start of action, if possesses <color=#F74848>80</color> or more stacks of <buf ID=2020505>[Overcharged Bullet]</buf>, Machine Gun range increases by <color=#F74848>+1</color>, lasting till the start of next action."
     },
     "202045": {
-      "name": "区域协同3",
-      "SpecificEffects": "<buf ID=2000011>[协同作战1]</buf>每回合可发动的次数<color=#F74848>+1</color>，每发动<color=#F74848>4</color>次<buf ID=900002>[协力攻击]</buf>后可获得<color=#F74848>1</color>AP"
+      "name": "Zone Contract 3",
+      "SpecificEffects": "<buf ID=2000011>[Zone Contract 1]</buf> grants additionally <color=#F74848>+1</color> <buf ID=900002>[Link Attack]</buf> count. For each <color=#F74848>4</color> <buf ID=900002>[Link Attack]</buf> triggered, gains <color=#F74848>1</color> AP."
     },
     "202046": {
-      "name": "区域协同4",
-      "SpecificEffects": "使用机枪攻击时，每有<color=#F74848>40</color>层<buf ID=2020505>[弹潮蓄能]</buf>，最终伤害提升<color=#F74848>10%</color>，最多提升<color=#F74848>30%</color>"
+      "name": "Zone Contract 4",
+      "SpecificEffects": "When equipping Machine Guns, for each <color=#F74848>40</color> stacks of <buf ID=2020505>[Overcharged Bullet]</buf>, Final DMG dealt increases by <color=#F74848>10%</color>, up to <color=#F74848>30%</color>."
     }
   },
-  "version": "1.0"
+  "version": "2.8"
 }
