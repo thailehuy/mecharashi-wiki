@@ -146,7 +146,7 @@ for b in raw:
             entry['crafting'] = [
                 material_item(base_id),
                 material_item(modifier_id),
-                material_generic('random-sr.png', 'Random SR Backpack', 3),
+                material_generic('random-sr.png', 'Random A-Grade Backpack', 3),
                 material_generic('precision-blueprint.png', 'Precision Quality Blueprint'),
             ]
     elif entry.get('quality') == 'SSSR':
@@ -156,7 +156,7 @@ for b in raw:
             entry['crafting'] = [
                 material_item(ur_id, composite=True),
                 material_generic('random-ssr.png', 'Random Composite Backpack', composite=True),
-                material_generic('random-ssr.png', 'Random SSR Backpack', 3),
+                material_generic('random-ssr.png', 'Random S-Grade Backpack', 3),
                 material_generic('ac-blueprint.png', 'AC Blueprint'),
             ]
 

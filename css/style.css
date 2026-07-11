@@ -1276,7 +1276,7 @@ a.material-item:hover .material-icon-wrap {
 
 /* Home page */
 .home-page {
-  max-width: 720px;
+  max-width: 900px;
   margin: 0 auto;
 }
 .home-hero {
@@ -1601,7 +1601,8 @@ a.material-item:hover .material-icon-wrap {
   align-items: center;
   gap: 0.4rem;
   padding: 0.3rem 0.75rem;
-  background: rgba(255, 255, 255, 0.04);
+  background: rgba(10, 10, 20, 0.75);
+  border: 1px solid #2a2a4a;
   border-radius: 4px;
   font-size: 0.875rem;
 }

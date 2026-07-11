@@ -23,6 +23,10 @@ Pages.home = {
             '<div class="home-card-title">Weapons</div>' +
             '<div class="home-card-desc">Browse all signature weapons, skills, and pilot pairings</div>' +
           '</a>' +
+          '<a href="#backpacks" class="home-card">' +
+            '<div class="home-card-title">Backpacks</div>' +
+            '<div class="home-card-desc">Browse all backpacks, skills, and crafting materials</div>' +
+          '</a>' +
           '<a href="#accessories" class="home-card">' +
             '<div class="home-card-title">Accessories</div>' +
             '<div class="home-card-desc">Browse all Trigger and Reaction accessories</div>' +
