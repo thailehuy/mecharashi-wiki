@@ -486,14 +486,14 @@
     },
     "2017072": {
       "name": "Firepower Unleashed",
-      "effect": "Can consume <buf ID=2017500>[Blooming]</buf> stack to improve the skill effect. For each stack consumed, increases AP cost by <color=#F74848>1</color> and the number of bullets by <color=#F74848>40%</color>. Up to 2 stacks can be consumed."
+      "effect": "Can consume <buf ID=2017500>[Fury]</buf> stack to improve the skill effect. For each stack consumed, increases AP cost by <color=#F74848>1</color> and the number of bullets by <color=#F74848>40%</color>. Up to 2 stacks can be consumed."
     },
     "2017442": {
       "name": "Ultimate Firepower",
       "effect": "Maximum range of HMG increases by <color=#F74848>+1</color>. This effect can stack."
     },
     "2017500": {
-      "name": "Blooming",
+      "name": "Fury",
       "effect": "DMG increased by <color=#F74848>+25%</color>. This effect cannot stack. Can be consumed to activate <buf ID=2017072>[Firepower Unleashed]</buf>."
     },
     "3004501": {
@@ -1074,7 +1074,7 @@
     },
     "2020468": {
       "name": "Overheating",
-      "effect": "Cannot use any active combat and command skills other than [Normal Attack]. [Overcharged Bullet] will not be consumed for <color=#F74848>1</color> turn. After exiting [Overheating] state, all [Overcharged Bullet] stacks will be removed."
+      "effect": "Cannot use any active combat and command skills other than [Normal Attack]. [Overcharged Bullet] will not be gained nor consumed for <color=#F74848>1</color> turn. After exiting [Overheating] state, all [Overcharged Bullet] stacks will be removed."
     },
     "2020505": {
       "name": "Overcharged Bullet",

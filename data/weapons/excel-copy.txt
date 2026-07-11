@@ -1,4 +1,4 @@
-Patch	AC	Name	Image	Pilot	Equipped Ability			Carried Ability			Used Ability		
+Patch	AC	Name	Image	Pilot	Equipped Ability			Carried Ability			Used Ability
 					Name	Image	Description	Name	Image	Description	Name	Image	Description
 1.2	2	Fate's Aria	#VALUE!	Rosa	Expansion	#VALUE!	"Machine Gun Bullets +1. This effect does not stack.
 When equipped with two Machine Guns,
@@ -18,7 +18,7 @@ by [Pursuit], [Cleave] damage multiplier +0.2.
 The unit returns to its original position after attacking"	Lingering Fury	#VALUE!	Wielding a Polearm one-handed will not affect Hit Rate
 1.3	3	Hunter's Sting	#VALUE!	Camilla	Raid	#VALUE!	"When attacking with two Pile Bunkers,
 DMG Dealt +20% and DMG Taken -20%"	Solitary Stance	#VALUE!	"Enhanced [Solitary]: After sortie, gains 3 stacks of [Magnetic Armor],
-lasting for 1 turn. When an Arm suffers overdamage, 
+lasting for 1 turn. When an Arm suffers overdamage,
 triggers [Guts] if posessing [Magnetic Armor].
 After triggering, removes all stacks of [Magnetic Armor]"	Detonate	#VALUE!	"After dealing damage, inflicts [Fixed DMG]
 equal to 15% of Weapon ATK on parts hit"
@@ -107,7 +107,7 @@ to actively attack 4 or more targets, reloads 1 Ammo after combat.
 This effect can trigger 1 time every 2 turns"
 2.0	8	Venus MK47	#VALUE!	Kelly	Heatwave	#VALUE!	"After landing a critical hit with a Sniper Rifle active attack,
 the next active attack's AP Cost -1 (minimum 1 AP).
-Can trigger 1 time per turn"	Stork's Gaze	#VALUE!	"Enhanced [White Stork]: When possesing [Improved Fire], 
+Can trigger 1 time per turn"	Stork's Gaze	#VALUE!	"Enhanced [White Stork]: When possesing [Improved Fire],
 the skill multiplier during attacks is increased from 0.15 to 0.2.
 Before using normal attacks, [Tracking Shot], and [Shower],
 can enter [Aiming] Mode. When actively attacking with a Sniper Rifle,
@@ -116,7 +116,7 @@ if this unit has not moved before attacking, Crit Rate +15% for this attack"	Hol
 Retaliaion DMG +1.5% for every 1% DMG Taken Down, up to 100%"	Unbroken	#VALUE!	"Enhanced [Stand Behind Me!]: When triggering [Selfless Guard],
 also triggers [Reckless Retaliation], and balances the percentage HP
 of all undestroyed parts after combat with [Balance].
-Gains 1 stack of [Standing Tall] before retaliation, up to 3 stacks. 
+Gains 1 stack of [Standing Tall] before retaliation, up to 3 stacks.
 Removed at the start of the next action"	"Arm Wrestling
 Champion"	#VALUE!	When the Shield Arm's HP is below 60%, Repair AMT Received +25%
 	9		#VALUE!	Dean		#VALUE!	"When attacking with a Chainsaw, for every 1 part broken,
@@ -132,9 +132,9 @@ DMG Dealt +20% to that part
 	9		#VALUE!	Frida		#VALUE!	"When initiating combat with a Shotgun,
 if the target is 1 tile away, DMG +25%
 (Unofficial Translation)"		#VALUE!	"Enhanced [Secret Execution]: When inflicting [Instability II],
-instead inflict [Instability III]. For each stack, target DMG Dealt -3%. 
-When initiating combat with a Shotgun, 
-if the target has 3 or more stacks of [Instability], 
+instead inflict [Instability III]. For each stack, target DMG Dealt -3%.
+When initiating combat with a Shotgun,
+if the target has 3 or more stacks of [Instability],
 uses all Shotguns to launch [Re-ATK], dealing 0.15x DMG
 (Unofficial Translation)"		#VALUE!	"When initiating combat, ignores 30% of target's Armor
 (Unofficial Translation)"
@@ -144,7 +144,7 @@ if the target possessess debuffs, DMG +20%
 redirects attacks to the selected direction and 2 adjacent directions,
 and redirected damage multipler +0.2.
 When actively attacking, if target possesses 5 or more debuffs,
-inflicts [Intimidate] after combat, lasting for 1 turn. 
+inflicts [Intimidate] after combat, lasting for 1 turn.
 When actively attacking, for every 15 debuffs inflicted, restores 1 AP
 (Unofficial Translation)"		#VALUE!	"When actively attacking with a Rail Gun, if hitting 3 or more targets,
 reloads 1 Ammo after combat.
@@ -154,7 +154,7 @@ This effect can trigger again after an interval of 2 turns
 immediately repair it, and restores 50% HP.
 This effect can trigger again after an interval of 3 turns
 (Unofficial Translation)"		#VALUE!	"Enhanced[EVA-00 Pilot]: allies within [Guard] range take -25% DMG
-from Code and AoE skills. When [Sync Ratio] is above 65%, 
+from Code and AoE skills. When [Sync Ratio] is above 65%,
 DMG Dealt and [Fixed DMG] Dealt +25%
 (Unofficial Translation)"		#VALUE!	"Shield base HP increases by 100%
 (Unofficial Translation)"
@@ -172,8 +172,8 @@ to trigger [Retaliation Pursuit], dealing 0.35x DMG
 	11		#VALUE!	Ophelia		#VALUE!	"After triggering [Execution], inflicts [DMG Down II]
 and [DMG Taken Up II] to enemies in 1 tile radius, lasting for 1 turn
 (Unofficial Translation)"		#VALUE!	"Enhanced [Σ-04]: When using Alter-Blade to chain attack
-the same target, Hit Weighting +50 on the part hit. 
-This effect is removed after the target acts. 
+the same target, Hit Weighting +50 on the part hit.
+This effect is removed after the target acts.
 At the start of action, only removes 1 stack of [Critical Sense].
 If posessing 3 stacks of [Critical Sense], DMG +15%, DMG Taken -15%
 (Unofficial Translation)"		#VALUE!	"When triggering a [Re-ATK], DMG and Hit Rate +10%
@@ -188,13 +188,13 @@ dispells 1 debuff
 and [Crit Rate Down II] on the target after combat
 (Unofficial Translation)"
 	12		#VALUE!	Shinji		#VALUE!	"When actively attacking with a Heavy Machine Gun and breaking a part,
-receives 1 random buff after combat, lasting for 2 turns. 
+receives 1 random buff after combat, lasting for 2 turns.
 Can trigger up to 3 times per turn
 (Unofficial Translation)"		#VALUE!	"Enhanced [EVA-01 Pilot]: Heavy Machine Gun Range +1. [Sync Ratio]
 correction effect +25%. Every time [Re-ATK]
-is triggered, [Sync Ratio] +3%. After actively attacking, 
+is triggered, [Sync Ratio] +3%. After actively attacking,
 gains [Sync Miracle]. This effect triggers 1 time per turn
-(Unofficial Translation)"		#VALUE!	"When actively attacking, DMG +15%. Starting from 1 tile, 
+(Unofficial Translation)"		#VALUE!	"When actively attacking, DMG +15%. Starting from 1 tile,
 for every 1 tile away from the target, DMG +5%, up to 25%
 (Unofficial Translation)"
 	13		#VALUE!	Arthur		#VALUE!	"When attacking with a Missile Launcher,
@@ -225,7 +225,7 @@ for every 1 buff possessed, DMG +7.5%, up to 30%
 (Unofficial Translation)"		#VALUE!	"Enhanced [Kalavinka]: At the start of battle, receive 2 stacks
 of [Dual Gun Efficiency]. When in combat with targets in [Ideal Range]
 and using two Assault weapons, Final DMG +15%.
-After acttively attacking, if posessing 5 or more buffs, 
+After acttively attacking, if posessing 5 or more buffs,
 immediately restores 1 AP. Can trigger 1 time per turn
 (Unofficial Translation)"		#VALUE!	"When in combat with targets in [Ideal Range],
 Crit Rate and Hit Rate +15%
@@ -244,7 +244,7 @@ restores 1 AP after combat. Can trigger 1 time per turn
 (Unofficial Translation)"		#VALUE!	"Enhanced [Experimental Observation]: [Positional Advantage] stack cap +4.
 When attacking with Sniper Rifle in [Directional Rack] Mode,
 for every 1 critical hit, gains 1 stack of [Positional Advantage].
-Every 4 stacks of [Positional Advantage] grants Sniper Rifle 
+Every 4 stacks of [Positional Advantage] grants Sniper Rifle
 DMG multiplier +0.05. After exiting [Directional Rack],
 only remove 8 stacks of [Positional Advantage]
 (Unofficial Translation)"		#VALUE!	"When actively attacking, if 3 or more tiles away from the target,
@@ -271,7 +271,7 @@ DMG +20% to parts with 100% HP
 	16		#VALUE!	Sapientia		#VALUE!	"If equipped with a Machine Gun and a Shield,
 Machine Gun Final DMG +15%, and Final DMG Taken -15%
 (Unofficial Translation)"		#VALUE!	"Enhanced [Coexistence Theory]: All parts of [GuGu] gain +15% Max HP,
-and gains Code Skill [GuGuts Hero!]. 
+and gains Code Skill [GuGuts Hero!].
 [GuGu] also gains this weapon's other abilities
 (Unofficial Translation)"		#VALUE!	"When attacking with a Machine Gun, inflicts 1 stack
 of [Fire Control Delay] on the target, up to 5 stacks
@@ -307,7 +307,7 @@ is inflicted, gains 1 stack of [Magnetic Buff], up to 10 stacks
 (Unofficial Translation)"		#VALUE!	"When attacking with a Rail Gun, for every 1 Ammo remaining,
 DMG Dealt and Hit Rate +4%, up to 20%
 (Unofficial Translation)"
-	18		#VALUE!	Wyatt		#VALUE!	"When attacking with a Chainsaw, if self HP is less than 70%, 
+	18		#VALUE!	Wyatt		#VALUE!	"When attacking with a Chainsaw, if self HP is less than 70%,
 Chainsaw continuous attack +1. For every additional 20% decrease
 in self HP, additionally +1 Chainsaw continuous attack, up to +2 attacks
 (Unofficial Translation)"		#VALUE!	"Enhanced [Seasoned Veteran]: [Exhiliration] stack cap +1.
@@ -319,7 +319,7 @@ Retaliation and [Pursuit Retaliation] DMG +4%, DMG Taken -2%
 and [Percentage DMG] +20%
 (Unofficial Translation)"			"Enhanced [Bitter Cure]: At the start of action, gains 5 stacks
 of [Fake Intentions]. After actively attacking using [Bitter Cure]
-or [Resonance Pulse] and dealing [Fixed DMG], 
+or [Resonance Pulse] and dealing [Fixed DMG],
 gains 1 stack of [False Intentions], up to 20 stacks
 (Unofficial Translation)"			"DMG +20% to the highest HP part
 (Unofficial Translation)"
@@ -328,8 +328,8 @@ If Arm suffers overdamage, triggers [Guts], locking the part at 1 HP.
 Can trigger again after an interval of 3 turns
 (Unofficial Translation)"			"Enhanced [Flower of the Allies]: When attacking using [Suppressive Assault]
 and [Fierce Assault], can enter [Aiming] Mode.
-For this attack, Hit Rate +25% for the part selected by [Aiming]. 
-When actively attacking, if spent 2 stacks of [Blooming Fury],
+For this attack, Hit Rate +25% for the part selected by [Aiming].
+When actively attacking, if spent 2 stacks of [Fury Fury],
 regens 1 AP after combat, and gains [Eternal Bloom]
 (Unofficial Translation)"			"When attacking, for every 1 AP, DMG +5%, up to 25%
 (Unofficial Translation)"

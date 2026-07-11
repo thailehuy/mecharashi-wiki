@@ -6,11 +6,11 @@
   "Occupation": "Raider",
   "Talent0_2Ability": {
     "name": "Flower Of The Force",
-    "SpecificEffects": "When both hands are intact, HMG range increases by <color=#F74848>1</color>. At the start of the action, gains <color=#F74848>1</color> stack of <buf ID=2017500>[Blooming]</buf>, to the maximum of <color=#F74848>2</color> stacks."
+    "SpecificEffects": "When both hands are intact, HMG range increases by <color=#F74848>1</color>. At the start of the action, gains <color=#F74848>1</color> stack of <buf ID=2017500>[Fury]</buf>, to the maximum of <color=#F74848>2</color> stacks."
   },
   "Talent3_5Ability": {
     "name": "Flower Of The Force",
-    "SpecificEffects": "When both hands are intact, HMG range increases by <color=#F74848>1</color>, and the number of bullets increases by <color=#F74848>1</color>. At the start of the action, gains <color=#F74848>1</color> stack of <buf ID=2017500>[Blooming]</buf>, to the maximum of <color=#F74848>2</color> stacks.\nGains <color=#F74848>1</color> additional stack of <buf ID=2017500>[Blooming]</buf> at the start of battle."
+    "SpecificEffects": "When both hands are intact, HMG range increases by <color=#F74848>1</color>, and the number of bullets increases by <color=#F74848>1</color>. At the start of the action, gains <color=#F74848>1</color> stack of <buf ID=2017500>[Fury]</buf>, to the maximum of <color=#F74848>2</color> stacks.\nGains <color=#F74848>1</color> additional stack of <buf ID=2017500>[Fury]</buf> at the start of battle."
   },
   "skills": {
     "200001": {
@@ -25,7 +25,7 @@
     },
     "201709": {
       "name": "Suppressive Fire",
-      "describe": "Uses HMG to attack a target, dealing <color=#F74848>1.3x</color> DMG. Can activate <buf ID=2017072>[Firepower Unleashed]</buf>. When <color=#F74848>2</color> stacks of <buf ID=2017500>[Blooming]</buf> are consumed, this attack cannot be dodged.",
+      "describe": "Uses HMG to attack a target, dealing <color=#F74848>1.3x</color> DMG. Can activate <buf ID=2017072>[Firepower Unleashed]</buf>. When <color=#F74848>2</color> stacks of <buf ID=2017500>[Fury]</buf> are consumed, this attack cannot be dodged.",
       "SpecificEffects": ""
     },
     "201703": {
@@ -35,7 +35,7 @@
     },
     "201704": {
       "name": "Wild Storm",
-      "describe": "Uses HMG to attack all targets within current weapon range, dealing <color=#F74848>0.55x</color> DMG.\nCan activate <buf ID=2017072>[Firepower Unleashed]</buf>. When <color=#F74848>2</color> stacks of <buf ID=2017500>[Blooming]</buf> are consumed, the critical hit rate of this attack increased by <color=#F74848>50%</color>.",
+      "describe": "Uses HMG to attack all targets within current weapon range, dealing <color=#F74848>0.55x</color> DMG.\nCan activate <buf ID=2017072>[Firepower Unleashed]</buf>. When <color=#F74848>2</color> stacks of <buf ID=2017500>[Fury]</buf> are consumed, the critical hit rate of this attack increased by <color=#F74848>50%</color>.",
       "SpecificEffects": ""
     },
     "200907": {
@@ -55,7 +55,7 @@
     },
     "201708": {
       "name": "Blazing Onslaught",
-      "describe": "Uses HMG to attack an enemy, dealing <color=#F74848>1.55x</color> DMG.\nCan activate <buf ID=2017072>[Firepower Unleashed]</buf>. When <color=#F74848>2</color> stacks of <buf ID=2017500>[Blooming]</buf> are consumed, the critical hit rate and critical damage of this attack increased by <color=#F74848>30%</color>.",
+      "describe": "Uses HMG to attack an enemy, dealing <color=#F74848>1.55x</color> DMG.\nCan activate <buf ID=2017072>[Firepower Unleashed]</buf>. When <color=#F74848>2</color> stacks of <buf ID=2017500>[Fury]</buf> are consumed, the critical hit rate and critical damage of this attack increased by <color=#F74848>30%</color>.",
       "SpecificEffects": ""
     }
   },
@@ -110,7 +110,7 @@
     },
     "201741": {
       "name": "Ultimate Firepower 1",
-      "SpecificEffects": "When initiating combat, if the target cannot retaliate, gains <color=#F74848>1</color> stack of <buf ID=2017500>[Blooming]</buf> after combat."
+      "SpecificEffects": "When initiating combat, if the target cannot retaliate, gains <color=#F74848>1</color> stack of <buf ID=2017500>[Fury]</buf> after combat."
     },
     "200042": {
       "name": "AP Optimization 4",
@@ -122,7 +122,7 @@
     },
     "201744": {
       "name": "Ultimate Firepower 2",
-      "SpecificEffects": "When activating <buf ID=2017072>[Firepower Unleashed]</buf>, if <color=#F74848>2</color> stacks of <buf ID=2017500>[Blooming]</buf> are consumed, gains <buf ID=2017442>[Ultimate Firepower]</buf> after combat, lasting <color=#F74848>1</color> turn."
+      "SpecificEffects": "When activating <buf ID=2017072>[Firepower Unleashed]</buf>, if <color=#F74848>2</color> stacks of <buf ID=2017500>[Fury]</buf> are consumed, gains <buf ID=2017442>[Ultimate Firepower]</buf> after combat, lasting <color=#F74848>1</color> turn."
     },
     "201745": {
       "name": "Ultimate Firepower 3",

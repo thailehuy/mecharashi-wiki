@@ -40,7 +40,7 @@
     },
     "202006": {
       "name": "Intercepting Strike",
-      "describe": "Attacks <color=#F74848>1</color> target within <color=#F74848>2</color> adjacent tiles with two Machine Guns, dealing <color=#F74848>2x0.7</color> DMG. Then remains on an empty tile within <color=#F74848>2</color> adjacent tiles around the target. The target cannot launch [Retaliation] or <buf ID=900061>[Link Retaliation]</buf>. If possesses <color=#F74848>80</color> or more stacks of <buf ID=2020505>[Overcharged Bullet]</buf>, this attack's Critical Hit chance and Critical Hit DMG are increased by <color=#F74848>20%</color>.",
+      "describe": "Jumps and attacks <color=#F74848>1</color> target within <color=#F74848>2</color> adjacent tiles with two Machine Guns, dealing <color=#F74848>2x0.7</color> DMG. Then lands on an empty tile <color=#F74848>2</color> away on the opposite side of target. The target cannot launch [Retaliation] or <buf ID=900061>[Link Retaliation]</buf>. If possesses <color=#F74848>80</color> or more stacks of <buf ID=2020505>[Overcharged Bullet]</buf>, this attack's Critical Hit chance and Critical Hit DMG are increased by <color=#F74848>20%</color>.",
       "SpecificEffects": ""
     },
     "202007": {
@@ -135,7 +135,7 @@
     },
     "202046": {
       "name": "Zone Contract 4",
-      "SpecificEffects": "When equipping Machine Guns, for each <color=#F74848>40</color> stacks of <buf ID=2020505>[Overcharged Bullet]</buf>, Final DMG dealt increases by <color=#F74848>10%</color>, up to <color=#F74848>30%</color>."
+      "SpecificEffects": "When attacking with Machine Guns, for each <color=#F74848>40</color> stacks of <buf ID=2020505>[Overcharged Bullet]</buf>, Final DMG dealt increases by <color=#F74848>10%</color>, up to <color=#F74848>30%</color>."
     }
   },
   "version": "2.8"

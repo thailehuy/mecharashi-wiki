@@ -1223,6 +1223,9 @@ a.material-item:hover .material-icon-wrap {
 #kw-tooltip.visible {
   opacity: 1;
 }
+#kw-tooltip .kw {
+  pointer-events: auto;
+}
 .kw-tip-name {
   font-weight: 600;
   color: #b39ddb;
@@ -1239,6 +1242,23 @@ a.material-item:hover .material-icon-wrap {
 }
 .kw-tip-effect {
   color: #b0b0c8;
+}
+.kw-tip-nested-list {
+  margin-top: 0.4rem;
+  padding-top: 0.4rem;
+  border-top: 1px solid #2a2a4a;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+.kw-tip-nested-name {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #8fa8d4;
+}
+.kw-tip-nested-effect {
+  font-size: 0.75rem;
+  color: #9090a8;
 }
 
 /* Global version badge in navbar */

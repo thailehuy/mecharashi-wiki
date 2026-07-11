@@ -1,8 +1,23 @@
 var Glossary = (function () {
   var data = { buf: {}, skill: {}, terrain: {} };
+  var nameIndex = { buf: {}, skill: {} };
 
   function lookup(type, id) {
     return (data[type] || {})[id] || null;
+  }
+
+  // Effect text frequently references other keywords as bare "[Name]" with no
+  // <buf ID=..> wrapper (the glossary source data itself is often written this
+  // way). Build a name -> id lookup so those can still be resolved and linked.
+  function rebuildNameIndex() {
+    nameIndex = { buf: {}, skill: {} };
+    ['buf', 'skill'].forEach(function (type) {
+      var entries = data[type] || {};
+      Object.keys(entries).forEach(function (id) {
+        var name = entries[id] && entries[id].name;
+        if (name && !(name in nameIndex[type])) nameIndex[type][name] = id;
+      });
+    });
   }
 
   var TERRAIN_NAMES = {
@@ -43,6 +58,23 @@ var Glossary = (function () {
       return key;
     });
 
+    // Bare "[Name]" references (no <buf>/<skill> wrapper) still get linked if
+    // the name matches a known keyword, so nested keywords inside a tooltip's
+    // own effect text remain hoverable instead of turning into dead text.
+    text = text.replace(/\[([^\[\]<>]+)\]/g, function (_, name) {
+      var key = '\x00KW' + (idx++) + '\x00';
+      var bufId = nameIndex.buf[name];
+      var skillId = !bufId && nameIndex.skill[name];
+      if (!bufId && !skillId) {
+        kwMap[key] = '[' + name + ']';
+        return key;
+      }
+      var type = bufId ? 'buf' : 'skill';
+      var id = bufId || skillId;
+      kwMap[key] = '<span class="kw kw-' + type + '" data-kw-type="' + type + '" data-kw-id="' + id + '">[' + name + ']</span>';
+      return key;
+    });
+
     // Escape remaining HTML and process color/format tags
     text = text
       .replace(/&/g, '&amp;').replace(/</g, '\x00LT\x00').replace(/>/g, '\x00GT\x00')
@@ -57,6 +89,41 @@ var Glossary = (function () {
     });
 
     return text;
+  }
+
+  // Collects every keyword (buf/skill) referenced within a piece of effect
+  // text, whether tagged (<buf ID=..>) or bare ("[Name]" resolved by name).
+  // Used to proactively show nested keyword definitions inline rather than
+  // requiring a separate hover on each one.
+  function extractReferences(text) {
+    if (!text) return [];
+    var seen = {};
+    var refs = [];
+
+    function add(type, id) {
+      var key = type + ':' + id;
+      if (seen[key]) return;
+      seen[key] = true;
+      refs.push({ type: type, id: id });
+    }
+
+    var stripped = text.replace(/<buf ID=(\d+)>\[?([^\]<]*)\]?<\/buf>/g, function (_, id) {
+      add('buf', id);
+      return '';
+    });
+    stripped = stripped.replace(/<skill[^>]+?(?:mainSkill|activeSkill|passiveSkill|ID)=(\d+)[^>]*>\[?([^\]<]*)\]?<\/skill>/g, function (_, id) {
+      add('skill', id);
+      return '';
+    });
+    stripped.replace(/\[([^\[\]<>]+)\]/g, function (_, name) {
+      var bufId = nameIndex.buf[name];
+      var skillId = !bufId && nameIndex.skill[name];
+      if (bufId) add('buf', bufId);
+      else if (skillId) add('skill', skillId);
+      return _;
+    });
+
+    return refs;
   }
 
   function parseColors(text) {
@@ -106,6 +173,8 @@ var Glossary = (function () {
       });
     });
 
+    rebuildNameIndex();
+
     var $tip = $('<div id="kw-tooltip" role="tooltip"></div>').appendTo('body');
 
     $(document).on('mouseenter', '.kw', function () {
@@ -126,10 +195,28 @@ var Glossary = (function () {
         ? '<div class="kw-tip-effect">' + parseEffects(entry.effect) + '</div>'
         : '';
 
+      var nestedRefs = extractReferences(entry.effect || '').filter(function (ref) {
+        return !(ref.type === type && ref.id === id);
+      });
+      var nestedHtml = nestedRefs.map(function (ref) {
+        var refEntry = lookup(ref.type, ref.id);
+        if (!refEntry) return '';
+        return (
+          '<div class="kw-tip-nested">' +
+            '<div class="kw-tip-nested-name">' + refEntry.name + '</div>' +
+            (refEntry.effect ? '<div class="kw-tip-nested-effect">' + parseEffects(refEntry.effect) + '</div>' : '') +
+          '</div>'
+        );
+      }).join('');
+      if (nestedHtml) {
+        nestedHtml = '<div class="kw-tip-nested-list">' + nestedHtml + '</div>';
+      }
+
       $tip.html(
         '<div class="kw-tip-name">' + entry.name + '</div>' +
         statsHtml +
-        effectHtml
+        effectHtml +
+        nestedHtml
       ).addClass('visible');
 
       positionTip(this, $tip);
@@ -159,7 +246,7 @@ var Glossary = (function () {
   }
 
   // Accept glossary data loaded separately as window.GlossaryData
-  function setData(d) { data = d; }
+  function setData(d) { data = d; rebuildNameIndex(); }
 
   return { lookup: lookup, parseEffects: parseEffects, init: init, setData: setData };
 }());
