@@ -95,6 +95,8 @@ def apply_translation(entry, t):
         entry['name'] = t['name']
     if t.get('RelatedDescription'):
         entry['RelatedDescription'] = t['RelatedDescription']
+    if t.get('version'):
+        entry['version'] = t['version']
     if t.get('skills') and entry.get('skill'):
         tr = t['skills'].get(entry['skill'].get('ID', ''))
         if tr:
@@ -171,7 +173,24 @@ for b in raw:
     backpacks.append(entry)
 
 order = {'SSSR': 0, 'UR': 1, 'SSR': 2, 'SR': 3, 'R': 4}
-backpacks.sort(key=lambda b: (order.get(b.get('quality', ''), 9), b.get('BackpackMainType', ''), b.get('name', '')))
+
+
+def version_sort_key(b):
+    # SSSR backpacks are sorted newest-first by version; everything else
+    # falls back to the existing type/name ordering (no version to sort by).
+    v = b.get('version')
+    if not v:
+        return (0, 0)
+    major, minor = v.split('.')
+    return (-int(major), -int(minor))
+
+
+backpacks.sort(key=lambda b: (
+    order.get(b.get('quality', ''), 9),
+    version_sort_key(b),
+    b.get('BackpackMainType', ''),
+    b.get('name', ''),
+))
 
 out = {'backpacks': backpacks}
 with open(os.path.join(DIR, 'compiled.json'), 'w') as f:

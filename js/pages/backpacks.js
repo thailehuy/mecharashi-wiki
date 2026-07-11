@@ -115,6 +115,7 @@ Pages.backpacks = {
               '<div class="card-item weapon-card backpack-card" data-id="' + b.ID + '">' +
                 '<div class="weapon-card-img" style="background-image:url(\'' + bgSrc + '\')">' +
                   '<img src="' + imgSrc + '" alt="' + $('<span>').text(b.name).html() + '" loading="lazy" />' +
+                  (b.version ? '<span class="version-badge">v' + $('<span>').text(b.version).html() + '</span>' : '') +
                   '<span class="weapon-type-badge">' + $('<span>').text(typeTag).html() + '</span>' +
                 '</div>' +
                 '<div class="weapon-card-body">' +
@@ -174,6 +175,10 @@ Pages.backpacks = {
     var imgSrc    = BACKPACK_ICON_BASE + encodeURIComponent(b.icon) + '.png';
     var bgSrc     = BACKPACK_QUALITY_BG[b.quality] || '';
 
+    var cnWarning = b.version && parseFloat(b.version) > GLOBAL_VERSION
+      ? '<div class="cn-warning">This Backpack data is translated from CN text, there might be inaccuracy and mismatch. The actual translation will be updated when this unit is released in Global.</div>'
+      : '';
+
     var skillHtml = '';
     if (b.skill && b.skill.name) {
       var skillIconSrc = BACKPACK_SKILL_BASE + encodeURIComponent(b.skill.icon) + '.png';
@@ -195,6 +200,7 @@ Pages.backpacks = {
     }
 
     return (
+      cnWarning +
       '<a href="#backpacks" class="btn-back">&#8592; Back to Backpacks</a>' +
       '<h2 class="detail-name mb-3">' + $('<span>').text(b.name).html() + '</h2>' +
       '<div class="backpack-detail-row">' +
@@ -208,6 +214,7 @@ Pages.backpacks = {
           '<div class="backpack-meta-row mb-3">' +
             '<div class="backpack-meta-item"><span class="stat-label">Quality</span><span class="stat-value">' + $('<span>').text(rankLabel).html() + '</span></div>' +
             '<div class="backpack-meta-item"><span class="stat-label">Weight</span><span class="stat-value">' + $('<span>').text(String(b.weight || '')).html() + '</span></div>' +
+            (b.version ? '<div class="backpack-meta-item"><span class="stat-label">Version</span><span class="stat-value">v' + $('<span>').text(b.version).html() + '</span></div>' : '') +
           '</div>' +
           skillHtml +
         '</div>' +

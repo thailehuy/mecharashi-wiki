@@ -1,25 +1,25 @@
 {
   "backpacks": [
     {
-      "ID": "60902106",
-      "name": "Quartermaster",
+      "ID": "60402106",
+      "name": "Enforcer",
       "quality": "SSSR",
       "weight": "150",
-      "BackpackMainType": "Ammo",
-      "AssemblableAirmenType": "Medium",
-      "icon": "Icon_backpack_61100101",
+      "BackpackMainType": "Flow",
+      "AssemblableAirmenType": "Light",
+      "icon": "Icon_backpack_60350201",
       "HowGet": "\u65e0",
-      "RelatedDescription": "\u65e7\u5f0f\u5f39\u836f\u5f3a\u5316\u80cc\u5305\u7684\u6539\u826f\u5347\u7ea7\u6b3e\uff0c\u50a8\u5b58\u4e86\u6218\u672f\u6b66\u5668\u5f39\u836f\uff0c\u8ba9\u673a\u5175\u706b\u7bad\u6216\u5bfc\u5f39\u6709\u4e86\u66f4\u591a\u7684\u53d1\u5c04\u673a\u4f1a\u3002\u540c\u65f6\u96c6\u6210\u4e86\u5f3a\u5316\u673a\u5175\u518d\u653b\u51fb\u80fd\u529b\u7684\u529f\u80fd\u3002",
+      "RelatedDescription": "\u65e7\u5f0f\u98de\u884c\u5f3a\u5316\u80cc\u5305\u7684\u6539\u826f\u5347\u7ea7\u6b3e\uff0c\u55b7\u5c04\u88c5\u7f6e\u80fd\u591f\u9a71\u52a8\u673a\u5175\u5728\u77ed\u8ddd\u79bb\u4e0a\u98de\u884c\uff0c\u5feb\u901f\u8d8a\u8fc7\u969c\u788d\uff0c\u524d\u5f80\u96be\u4ee5\u62b5\u8fbe\u7684\u6218\u573a\u89d2\u843d\u3002\u540c\u65f6\u96c6\u6210\u4e86\u5f3a\u5316\u673a\u5175\u518d\u653b\u51fb\u80fd\u529b\u7684\u529f\u80fd\u3002",
       "skill": {
-        "ID": "62306",
-        "name": "Quartermaster Drive \u00b7 Re-ATK",
-        "icon": "Icon_skill_passive_5163",
-        "SpecificEffects": "Tactical Weapon Ammo Capacity <color=#F74848>+2</color>.\nWhen re-attacking, Hit Rate <color=#F74848>+10%</color> and Crit Rate <color=#F74848>+5%</color>.\nGains Code <skill mainSkill=62306>[Quick Load]</skill>, sharing cooldown with other Ammo Reload skills.\nST Body HP <color=#F74848>+10%</color> and DMG Dealt <color=#F74848>+5%</color>."
+        "ID": "62320",
+        "name": "Enforcer Drive \u00b7 Re-ATK",
+        "icon": "Icon_skill_passive_5240",
+        "SpecificEffects": "When initiating combat, if the target is on the movement path and a part is destroyed, inflicts <buf ID=1009083>[Intimidation]</buf> on the target, lasting <color=#F74848>1</color> turn. Can trigger <color=#F74848>1</color> time per turn.\nST movement type changes to Levitating, enabling it to pass over low obstacles.\nWhen re-attacking, Hit Rate <color=#F74848>+10%</color> and Crit Rate <color=#F74848>+5%</color>.\nST Body HP <color=#F74848>+10%</color> and DMG Dealt <color=#F74848>+5%</color>."
       },
       "crafting": [
         {
           "kind": "item",
-          "id": "60902105",
+          "id": "60402105",
           "qty": 1,
           "composite": true
         },
@@ -43,6 +43,237 @@
           "qty": 1
         }
       ],
+      "version": "3.2",
+      "enTranslation": true
+    },
+    {
+      "ID": "60802106",
+      "name": "Guide",
+      "quality": "SSSR",
+      "weight": "150",
+      "BackpackMainType": "Radar",
+      "AssemblableAirmenType": "Light/Medium/Heavy",
+      "icon": "Icon_backpack_60800201",
+      "HowGet": "\u65e0",
+      "RelatedDescription": "\u65e7\u5f0f\u96f7\u8fbe\u5f3a\u5316\u80cc\u5305\u7684\u6539\u826f\u5347\u7ea7\u6b3e\uff0c\u5c0f\u578b\u5316\u7684\u673a\u5175\u5b9a\u4f4d\u88c5\u7f6e\uff0c\u5f00\u542f\u80fd\u8ba9\u53cb\u65b9\u673a\u5175\u83b7\u5f97\u5b9a\u4f4d\uff0c\u5f15\u5bfc\u98de\u5f39\u5bf9\u8303\u56f4\u5185\u76ee\u6807\u8fdb\u884c\u7cbe\u51c6\u6253\u51fb\u3002\u540c\u65f6\u96c6\u6210\u4e86\u5f3a\u5316\u673a\u5175\u6bcf\u56de\u5408\u9996\u6b21\u653b\u51fb\u80fd\u529b\u7684\u529f\u80fd\u3002",
+      "skill": {
+        "ID": "62319",
+        "name": "Guide Drive \u00b7 Re-ATK",
+        "icon": "Icon_skill_passive_5196",
+        "SpecificEffects": "Gains Code <skill mainSkill=62319>[Tracer Coating]</skill>.\nEnables the ST's adjacent <color=#F74848>2</color>-tile area to become a valid attack zone for allied Missile Launcher and Rocket Launcher attacks.\nWhen re-attacking, Hit Rate <color=#F74848>+10%</color> and Crit Rate <color=#F74848>+5%</color>.\nST Body HP <color=#F74848>+10%</color> and DMG Dealt <color=#F74848>+5%</color>."
+      },
+      "crafting": [
+        {
+          "kind": "item",
+          "id": "60802105",
+          "qty": 1,
+          "composite": true
+        },
+        {
+          "kind": "generic",
+          "icon": "materials/random-ssr.png",
+          "label": "Random Composite Backpack",
+          "qty": 1,
+          "composite": true
+        },
+        {
+          "kind": "generic",
+          "icon": "materials/random-ssr.png",
+          "label": "Random S-Grade Backpack",
+          "qty": 3
+        },
+        {
+          "kind": "generic",
+          "icon": "materials/ac-blueprint.png",
+          "label": "AC Blueprint",
+          "qty": 1
+        }
+      ],
+      "version": "3.2",
+      "enTranslation": true
+    },
+    {
+      "ID": "60301116",
+      "name": "Sentinel",
+      "quality": "SSSR",
+      "weight": "150",
+      "BackpackMainType": "Interference",
+      "AssemblableAirmenType": "Heavy",
+      "icon": "Icon_backpack_60300201",
+      "HowGet": "\u65e0",
+      "RelatedDescription": "\u65e7\u5f0f\u8bf1\u5bfc\u5e72\u6270\u80cc\u5305\u7684\u6539\u826f\u5347\u7ea7\u6b3e\uff0c\u901a\u8fc7\u53d1\u5c04\u7535\u78c1\u6ce2\u5bf9\u98de\u5f39\u8fdb\u884c\u538b\u5236\u6027\u4fe1\u53f7\u5e72\u6270\uff0c\u6270\u4e71\u7535\u5b50\u8bbe\u5907\uff0c\u4ece\u800c\u8fbe\u5230\u524a\u5f31\u6218\u672f\u6b66\u5668\u5a01\u529b\u7684\u6548\u679c\u3002\u540c\u65f6\u96c6\u6210\u4e86\u5f71\u54cd\u654c\u673a\u653b\u51fb\u80fd\u529b\u7684\u529f\u80fd\u3002",
+      "skill": {
+        "ID": "62318",
+        "name": "Sentinel Drive \u00b7 Attack",
+        "icon": "Icon_skill_passive_5235",
+        "SpecificEffects": "Heavy STs only.\nWhen hit by a Tactical Weapon attack, DMG Taken <color=#F74848>-25%</color>. Similar effects cannot stack.\nAllies within Guard range take <color=#F74848>15%</color> less DMG from Code attacks. Similar effects cannot stack.\nAfter self takes damage from a Code attack, repairs <color=#F74848>15%</color> of Max HP to intact parts. This effect can trigger again after <color=#F74848>1</color> turn.\nWhen in combat, enemy DMG Dealt <color=#F74848>-10%</color>.\nST Body HP <color=#F74848>+10%</color>."
+      },
+      "crafting": [
+        {
+          "kind": "item",
+          "id": "60301105",
+          "qty": 1,
+          "composite": true
+        },
+        {
+          "kind": "generic",
+          "icon": "materials/random-ssr.png",
+          "label": "Random Composite Backpack",
+          "qty": 1,
+          "composite": true
+        },
+        {
+          "kind": "generic",
+          "icon": "materials/random-ssr.png",
+          "label": "Random S-Grade Backpack",
+          "qty": 3
+        },
+        {
+          "kind": "generic",
+          "icon": "materials/ac-blueprint.png",
+          "label": "AC Blueprint",
+          "qty": 1
+        }
+      ],
+      "version": "3.1",
+      "enTranslation": true
+    },
+    {
+      "ID": "61002106",
+      "name": "Trickster",
+      "quality": "SSSR",
+      "weight": "150",
+      "BackpackMainType": "Invisible",
+      "AssemblableAirmenType": "Light/Medium/Heavy",
+      "icon": "Icon_backpack_60900201",
+      "HowGet": "\u65e0",
+      "RelatedDescription": "\u65e7\u5f0f\u9690\u5f62\u5f3a\u5316\u80cc\u5305\u7684\u6539\u826f\u5347\u7ea7\u6b3e\uff0c\u5148\u8fdb\u7684\u5149\u5b66\u7cfb\u7edf\u80fd\u591f\u626d\u66f2\u5149\u7ebf\uff0c\u8ba9\u88c5\u914d\u8be5\u578b\u53f7\u80cc\u5305\u7684\u673a\u5175\u5904\u4e8e\u67d0\u79cd\u7a0b\u5ea6\u4e0a\u7684\u9690\u5f62\u72b6\u6001\u3002\u540c\u65f6\u96c6\u6210\u4e86\u5f3a\u5316\u673a\u5175\u518d\u653b\u51fb\u80fd\u529b\u7684\u529f\u80fd\u3002",
+      "skill": {
+        "ID": "62317",
+        "name": "Trickster Drive \u00b7 Re-ATK",
+        "icon": "Icon_skill_passive_5262",
+        "SpecificEffects": "At the end of action, if there are no enemies within <color=#F74848>2</color> tiles, gains <buf ID=900033>[Stealth]</buf>, lasting <color=#F74848>2</color> turns. This effect has a <color=#F74848>3</color>-turn trigger interval.\nGains Code <skill mainSkill=62317>[Concealment]</skill>: causes self and <color=#F74848>1</color> chosen ally within <color=#F74848>4</color> tiles to enter <buf ID=3004412>[Stealth II]</buf>, lasting <color=#F74848>2</color> turns.\nWhen re-attacking, Hit Rate <color=#F74848>+10%</color> and Crit Rate <color=#F74848>+5%</color>.\nST Body HP <color=#F74848>+10%</color> and DMG Dealt <color=#F74848>+5%</color>."
+      },
+      "crafting": [
+        {
+          "kind": "item",
+          "id": "61002105",
+          "qty": 1,
+          "composite": true
+        },
+        {
+          "kind": "generic",
+          "icon": "materials/random-ssr.png",
+          "label": "Random Composite Backpack",
+          "qty": 1,
+          "composite": true
+        },
+        {
+          "kind": "generic",
+          "icon": "materials/random-ssr.png",
+          "label": "Random S-Grade Backpack",
+          "qty": 3
+        },
+        {
+          "kind": "generic",
+          "icon": "materials/ac-blueprint.png",
+          "label": "AC Blueprint",
+          "qty": 1
+        }
+      ],
+      "version": "3.1",
+      "enTranslation": true
+    },
+    {
+      "ID": "60301506",
+      "name": "Suppressor",
+      "quality": "SSSR",
+      "weight": "150",
+      "BackpackMainType": "Interference",
+      "AssemblableAirmenType": "Heavy",
+      "icon": "Icon_backpack_60300201",
+      "HowGet": "\u65e0",
+      "RelatedDescription": "\u65e7\u5f0f\u8bf1\u5bfc\u5e72\u6270\u80cc\u5305\u7684\u6539\u826f\u5347\u7ea7\u6b3e\uff0c\u901a\u8fc7\u53d1\u5c04\u7535\u78c1\u6ce2\u5bf9\u98de\u5f39\u8fdb\u884c\u538b\u5236\u6027\u4fe1\u53f7\u5e72\u6270\uff0c\u6270\u4e71\u7535\u5b50\u8bbe\u5907\uff0c\u4ece\u800c\u8fbe\u5230\u524a\u5f31\u6218\u672f\u6b66\u5668\u5a01\u529b\u7684\u6548\u679c\u3002\u540c\u65f6\u96c6\u6210\u4e86\u5f71\u54cd\u654c\u673a\u66b4\u4f24\u80fd\u529b\u7684\u529f\u80fd\u3002",
+      "skill": {
+        "ID": "62315",
+        "name": "Suppressor Drive \u00b7 Crit DMG",
+        "icon": "Icon_skill_passive_5232",
+        "SpecificEffects": "After being actively attacked by a Tactical Weapon, inflicts <buf ID=623152>[Ammo Jam]</buf> on the attacker. Can only trigger again after <color=#F74848>1</color> turn.\nWhen hit by a Tactical attack, DMG Taken <color=#F74848>-25%</color>. Similar effects cannot stack.\nWhen in combat, enemy Crit DMG <color=#F74848>-10%</color>.\nST Body HP <color=#F74848>+10%</color>."
+      },
+      "crafting": [
+        {
+          "kind": "item",
+          "id": "60301505",
+          "qty": 1,
+          "composite": true
+        },
+        {
+          "kind": "generic",
+          "icon": "materials/random-ssr.png",
+          "label": "Random Composite Backpack",
+          "qty": 1,
+          "composite": true
+        },
+        {
+          "kind": "generic",
+          "icon": "materials/random-ssr.png",
+          "label": "Random S-Grade Backpack",
+          "qty": 3
+        },
+        {
+          "kind": "generic",
+          "icon": "materials/ac-blueprint.png",
+          "label": "AC Blueprint",
+          "qty": 1
+        }
+      ],
+      "version": "3.0",
+      "enTranslation": true
+    },
+    {
+      "ID": "61002416",
+      "name": "Executioner",
+      "quality": "SSSR",
+      "weight": "150",
+      "BackpackMainType": "Invisible",
+      "AssemblableAirmenType": "Light/Medium/Heavy",
+      "icon": "Icon_backpack_60900201",
+      "HowGet": "\u65e0",
+      "RelatedDescription": "\u65e7\u5f0f\u9690\u5f62\u5f3a\u5316\u80cc\u5305\u7684\u6539\u826f\u5347\u7ea7\u6b3e\uff0c\u5148\u8fdb\u7684\u5149\u5b66\u7cfb\u7edf\u80fd\u591f\u626d\u66f2\u5149\u7ebf\uff0c\u8ba9\u88c5\u914d\u8be5\u578b\u53f7\u80cc\u5305\u7684\u673a\u5175\u5904\u4e8e\u67d0\u79cd\u7a0b\u5ea6\u4e0a\u7684\u9690\u5f62\u72b6\u6001\u3002\u540c\u65f6\u96c6\u6210\u4e86\u5f3a\u5316\u673a\u5175\u6bcf\u56de\u5408\u9996\u6b21\u653b\u51fb\u80fd\u529b\u7684\u529f\u80fd\u3002",
+      "skill": {
+        "ID": "62316",
+        "name": "Executioner Drive \u00b7 First Strike",
+        "icon": "Icon_skill_passive_4134",
+        "SpecificEffects": "When actively attacking, if in <buf ID=900033>[Stealth]</buf>, this attack's Crit Rate <color=#F74848>+50%</color>. This effect can only trigger <color=#F74848>1</color> time per sortie.\nAt the end of action, if there are no enemies within <color=#F74848>2</color> tiles, gains <buf ID=3004502>[Stealth I]</buf>, lasting <color=#F74848>2</color> turns. This effect has a <color=#F74848>3</color>-turn trigger interval.\nWhen actively attacking for the <color=#F74848>1st</color> time each turn, DMG <color=#F74848>+7.5%</color> and Crit Rate <color=#F74848>+5%</color>.\nST Body HP <color=#F74848>+10%</color> and DMG Dealt <color=#F74848>+5%</color>."
+      },
+      "crafting": [
+        {
+          "kind": "item",
+          "id": "61002405",
+          "qty": 1,
+          "composite": true
+        },
+        {
+          "kind": "generic",
+          "icon": "materials/random-ssr.png",
+          "label": "Random Composite Backpack",
+          "qty": 1,
+          "composite": true
+        },
+        {
+          "kind": "generic",
+          "icon": "materials/random-ssr.png",
+          "label": "Random S-Grade Backpack",
+          "qty": 3
+        },
+        {
+          "kind": "generic",
+          "icon": "materials/ac-blueprint.png",
+          "label": "AC Blueprint",
+          "qty": 1
+        }
+      ],
+      "version": "3.0",
       "enTranslation": true
     },
     {
@@ -88,186 +319,7 @@
           "qty": 1
         }
       ],
-      "enTranslation": true
-    },
-    {
-      "ID": "60101706",
-      "name": "Raider",
-      "quality": "SSSR",
-      "weight": "150",
-      "BackpackMainType": "BackupEquipment",
-      "AssemblableAirmenType": "Light/Medium/Heavy",
-      "icon": "Icon_backpack_61400101",
-      "HowGet": "\u65e0",
-      "RelatedDescription": "\u65e7\u5f0f\u51fa\u529b\u5e72\u6270\u80cc\u5305\u7684\u6539\u826f\u5347\u7ea7\u6b3e\uff0c\u901a\u8fc7\u5916\u90e8\u6302\u8f7d\u7684\u5c0f\u578b\u529f\u80fd\u88c5\u7f6e\u4e3a\u673a\u5175\u63d0\u4f9b\u989d\u5916\u7684\u51fa\u529b\uff0c\u4f7f\u5176\u62e5\u6709\u66f4\u9ad8\u7684\u4f5c\u6218\u5168\u91cd\u4e0a\u9650\u3002\u540c\u65f6\u96c6\u6210\u4e86\u5bf9\u654c\u673a\u906d\u53d7\u4f24\u5bb3\u63d0\u5347\u548c\u521b\u65b0\u6027\u7684\u6b66\u5668\u5207\u6362\u529f\u80fd\u3002",
-      "skill": {
-        "ID": "62304",
-        "name": "Raider Drive \u00b7 DMG UP",
-        "icon": "Icon_skill_passive_5234",
-        "SpecificEffects": "Gains Code <skill mainSkill=62304>[Weapon Switch]</skill>, usable up to <color=#F74848>1</color> time per turn. At the end of action, if both arms are intact, can additionally use <skill mainSkill=62304>[Weapon Switch]</skill>, usable up to <color=#F74848>1</color> time every <color=#F74848>2</color> turns.\nWhen in combat, enemy DMG Taken <color=#F74848>+10%</color>.\nST gains an additional <color=#F74848>300</color> Power, Body HP <color=#F74848>+10%</color> and DMG Dealt <color=#F74848>+5%</color>."
-      },
-      "crafting": [
-        {
-          "kind": "item",
-          "id": "60101705",
-          "qty": 1,
-          "composite": true
-        },
-        {
-          "kind": "generic",
-          "icon": "materials/random-ssr.png",
-          "label": "Random Composite Backpack",
-          "qty": 1,
-          "composite": true
-        },
-        {
-          "kind": "generic",
-          "icon": "materials/random-ssr.png",
-          "label": "Random S-Grade Backpack",
-          "qty": 3
-        },
-        {
-          "kind": "generic",
-          "icon": "materials/ac-blueprint.png",
-          "label": "AC Blueprint",
-          "qty": 1
-        }
-      ],
-      "enTranslation": true
-    },
-    {
-      "ID": "60402406",
-      "name": "Dominator",
-      "quality": "SSSR",
-      "weight": "150",
-      "BackpackMainType": "Flow",
-      "AssemblableAirmenType": "Light",
-      "icon": "Icon_backpack_60350201",
-      "HowGet": "\u65e0",
-      "RelatedDescription": "\u65e7\u5f0f\u98de\u884c\u5f3a\u5316\u80cc\u5305\u7684\u6539\u826f\u5347\u7ea7\u6b3e\uff0c\u55b7\u5c04\u88c5\u7f6e\u80fd\u591f\u9a71\u52a8\u673a\u5175\u5728\u77ed\u8ddd\u79bb\u4e0a\u98de\u884c\uff0c\u5feb\u901f\u8d8a\u8fc7\u969c\u788d\uff0c\u524d\u5f80\u96be\u4ee5\u62b5\u8fbe\u7684\u6218\u573a\u89d2\u843d\u3002\u540c\u65f6\u96c6\u6210\u4e86\u5f3a\u5316\u673a\u5175\u6bcf\u56de\u5408\u9996\u6b21\u653b\u51fb\u80fd\u529b\u7684\u529f\u80fd\u3002",
-      "skill": {
-        "ID": "62302",
-        "name": "Dominator Drive \u00b7 First Strike",
-        "icon": "Icon_skill_passive_5155",
-        "SpecificEffects": "ST movement type changes to Levitating, enabling it to pass over low obstacles.\nWhen initiating combat, if the target is on the movement path, will always Dodge when retaliated against. Can trigger <color=#F74848>1</color> time per turn.\nWhen actively attacking for the <color=#F74848>1st</color> time each turn, DMG <color=#F74848>+7.5%</color> and Crit Rate <color=#F74848>+5%</color>.\nST Body HP <color=#F74848>+10%</color> and DMG Dealt <color=#F74848>+5%</color>."
-      },
-      "crafting": [
-        {
-          "kind": "item",
-          "id": "60402405",
-          "qty": 1,
-          "composite": true
-        },
-        {
-          "kind": "generic",
-          "icon": "materials/random-ssr.png",
-          "label": "Random Composite Backpack",
-          "qty": 1,
-          "composite": true
-        },
-        {
-          "kind": "generic",
-          "icon": "materials/random-ssr.png",
-          "label": "Random S-Grade Backpack",
-          "qty": 3
-        },
-        {
-          "kind": "generic",
-          "icon": "materials/ac-blueprint.png",
-          "label": "AC Blueprint",
-          "qty": 1
-        }
-      ],
-      "enTranslation": true
-    },
-    {
-      "ID": "60402106",
-      "name": "Enforcer",
-      "quality": "SSSR",
-      "weight": "150",
-      "BackpackMainType": "Flow",
-      "AssemblableAirmenType": "Light",
-      "icon": "Icon_backpack_60350201",
-      "HowGet": "\u65e0",
-      "RelatedDescription": "\u65e7\u5f0f\u98de\u884c\u5f3a\u5316\u80cc\u5305\u7684\u6539\u826f\u5347\u7ea7\u6b3e\uff0c\u55b7\u5c04\u88c5\u7f6e\u80fd\u591f\u9a71\u52a8\u673a\u5175\u5728\u77ed\u8ddd\u79bb\u4e0a\u98de\u884c\uff0c\u5feb\u901f\u8d8a\u8fc7\u969c\u788d\uff0c\u524d\u5f80\u96be\u4ee5\u62b5\u8fbe\u7684\u6218\u573a\u89d2\u843d\u3002\u540c\u65f6\u96c6\u6210\u4e86\u5f3a\u5316\u673a\u5175\u518d\u653b\u51fb\u80fd\u529b\u7684\u529f\u80fd\u3002",
-      "skill": {
-        "ID": "62320",
-        "name": "Enforcer Drive \u00b7 Re-ATK",
-        "icon": "Icon_skill_passive_5240",
-        "SpecificEffects": "When initiating combat, if the target is on the movement path and a part is destroyed, inflicts <buf ID=1009083>[Intimidation]</buf> on the target, lasting <color=#F74848>1</color> turn. Can trigger <color=#F74848>1</color> time per turn.\nST movement type changes to Levitating, enabling it to pass over low obstacles.\nWhen re-attacking, Hit Rate <color=#F74848>+10%</color> and Crit Rate <color=#F74848>+5%</color>.\nST Body HP <color=#F74848>+10%</color> and DMG Dealt <color=#F74848>+5%</color>."
-      },
-      "crafting": [
-        {
-          "kind": "item",
-          "id": "60402105",
-          "qty": 1,
-          "composite": true
-        },
-        {
-          "kind": "generic",
-          "icon": "materials/random-ssr.png",
-          "label": "Random Composite Backpack",
-          "qty": 1,
-          "composite": true
-        },
-        {
-          "kind": "generic",
-          "icon": "materials/random-ssr.png",
-          "label": "Random S-Grade Backpack",
-          "qty": 3
-        },
-        {
-          "kind": "generic",
-          "icon": "materials/ac-blueprint.png",
-          "label": "AC Blueprint",
-          "qty": 1
-        }
-      ],
-      "enTranslation": true
-    },
-    {
-      "ID": "60401706",
-      "name": "Predator",
-      "quality": "SSSR",
-      "weight": "150",
-      "BackpackMainType": "Flow",
-      "AssemblableAirmenType": "Light",
-      "icon": "Icon_backpack_60350201",
-      "HowGet": "\u65e0",
-      "RelatedDescription": "\u65e7\u5f0f\u98de\u884c\u5f3a\u5316\u80cc\u5305\u7684\u6539\u826f\u5347\u7ea7\u6b3e\uff0c\u55b7\u5c04\u88c5\u7f6e\u80fd\u591f\u9a71\u52a8\u673a\u5175\u5728\u77ed\u8ddd\u79bb\u4e0a\u98de\u884c\uff0c\u5feb\u901f\u8d8a\u8fc7\u969c\u788d\uff0c\u524d\u5f80\u96be\u4ee5\u62b5\u8fbe\u7684\u6218\u573a\u89d2\u843d\u3002\u540c\u65f6\u96c6\u6210\u4e86\u5bf9\u654c\u673a\u906d\u53d7\u4f24\u5bb3\u63d0\u5347\u7684\u529f\u80fd\u3002",
-      "skill": {
-        "ID": "62310",
-        "name": "Predator Drive \u00b7 DMG UP",
-        "icon": "Icon_skill_passive_1142",
-        "SpecificEffects": "ST Movement <color=#F74848>+1</color>.\nST movement type changes to Levitating, enabling it to pass over low obstacles.\nWhen in combat, enemy DMG Taken <color=#F74848>+10%</color>.\nST Body HP <color=#F74848>+10%</color> and DMG Dealt <color=#F74848>+5%</color>."
-      },
-      "crafting": [
-        {
-          "kind": "item",
-          "id": "60401705",
-          "qty": 1,
-          "composite": true
-        },
-        {
-          "kind": "generic",
-          "icon": "materials/random-ssr.png",
-          "label": "Random Composite Backpack",
-          "qty": 1,
-          "composite": true
-        },
-        {
-          "kind": "generic",
-          "icon": "materials/random-ssr.png",
-          "label": "Random S-Grade Backpack",
-          "qty": 3
-        },
-        {
-          "kind": "generic",
-          "icon": "materials/ac-blueprint.png",
-          "label": "AC Blueprint",
-          "qty": 1
-        }
-      ],
+      "version": "2.8",
       "enTranslation": true
     },
     {
@@ -314,6 +366,467 @@
           "qty": 1
         }
       ],
+      "version": "2.8",
+      "enTranslation": true
+    },
+    {
+      "ID": "60202406",
+      "name": "Pioneer",
+      "quality": "SSSR",
+      "weight": "150",
+      "BackpackMainType": "MovePointAdd",
+      "AssemblableAirmenType": "Light/Medium/Heavy",
+      "icon": "Icon_backpack_60500201",
+      "HowGet": "\u65e0",
+      "RelatedDescription": "\u65e7\u5f0f\u79fb\u52a8\u5f3a\u5316\u80cc\u5305\u7684\u6539\u826f\u5347\u7ea7\u6b3e\uff0c\u76f4\u63a5\u5c06\u989d\u5916\u52a8\u80fd\u8f93\u9001\u5230\u817f\u90e8\u4f20\u52a8\u88c5\u7f6e\uff0c\u65e0\u8bba\u662f\u4f7f\u7528\u6ed1\u8f6e\u8fd8\u662f\u6b65\u884c\uff0c\u673a\u5175\u7684\u79fb\u52a8\u529b\u90fd\u80fd\u5f97\u5230\u63d0\u5347\u3002\u540c\u65f6\u96c6\u6210\u4e86\u5f3a\u5316\u673a\u5175\u6bcf\u56de\u5408\u9996\u6b21\u653b\u51fb\u80fd\u529b\u7684\u529f\u80fd\u3002",
+      "skill": {
+        "ID": "62311",
+        "name": "Pioneer Drive \u00b7 First Strike",
+        "icon": "Icon_skill_passive_1153",
+        "SpecificEffects": "No ST type restriction.\nST Movement <color=#F74848>+1</color>.\nWhen actively attacking for the <color=#F74848>1st</color> time each turn, DMG <color=#F74848>+7.5%</color> and Crit Rate <color=#F74848>+5%</color>.\nST Body HP <color=#F74848>+10%</color> and DMG Dealt <color=#F74848>+5%</color>."
+      },
+      "crafting": [
+        {
+          "kind": "item",
+          "id": "60202405",
+          "qty": 1,
+          "composite": true
+        },
+        {
+          "kind": "generic",
+          "icon": "materials/random-ssr.png",
+          "label": "Random Composite Backpack",
+          "qty": 1,
+          "composite": true
+        },
+        {
+          "kind": "generic",
+          "icon": "materials/random-ssr.png",
+          "label": "Random S-Grade Backpack",
+          "qty": 3
+        },
+        {
+          "kind": "generic",
+          "icon": "materials/ac-blueprint.png",
+          "label": "AC Blueprint",
+          "qty": 1
+        }
+      ],
+      "version": "2.6",
+      "enTranslation": true
+    },
+    {
+      "ID": "60801706",
+      "name": "Scout",
+      "quality": "SSSR",
+      "weight": "150",
+      "BackpackMainType": "Radar",
+      "AssemblableAirmenType": "Light/Medium/Heavy",
+      "icon": "Icon_backpack_60800201",
+      "HowGet": "\u65e0",
+      "RelatedDescription": "\u65e7\u5f0f\u96f7\u8fbe\u5e72\u6270\u80cc\u5305\u7684\u6539\u826f\u5347\u7ea7\u6b3e\uff0c\u5c0f\u578b\u5316\u7684\u673a\u5175\u5b9a\u4f4d\u88c5\u7f6e\uff0c\u5f00\u542f\u80fd\u8ba9\u53cb\u65b9\u673a\u5175\u83b7\u5f97\u5b9a\u4f4d\uff0c\u5f15\u5bfc\u98de\u5f39\u5bf9\u8303\u56f4\u5185\u76ee\u6807\u8fdb\u884c\u7cbe\u51c6\u6253\u51fb\u3002\u540c\u65f6\u96c6\u6210\u4e86\u5bf9\u654c\u673a\u906d\u53d7\u4f24\u5bb3\u63d0\u5347\u7684\u529f\u80fd\u3002",
+      "skill": {
+        "ID": "62312",
+        "name": "Scout Drive \u00b7 DMG UP",
+        "icon": "Icon_skill_passive_5103",
+        "SpecificEffects": "View distance <color=#F74848>+1</color> in Arashi Fog stages.\nCan use Code <skill mainSkill=62312>[Radar Detection]</skill>: removes <buf ID=900033>[Stealth]</buf> from all enemy STs within <color=#F74848>4</color> tiles. Triggers <buf ID=900004>[Re-ATK]</buf> in place afterward.\nEnables the ST's adjacent <color=#F74848>2</color>-tile area to become a valid attack zone for allied Missile Launcher and Rocket Launcher attacks.\nWhen in combat, enemy DMG Taken <color=#F74848>+10%</color>.\nST Body HP <color=#F74848>+10%</color> and DMG Dealt <color=#F74848>+5%</color>."
+      },
+      "crafting": [
+        {
+          "kind": "item",
+          "id": "60801705",
+          "qty": 1,
+          "composite": true
+        },
+        {
+          "kind": "generic",
+          "icon": "materials/random-ssr.png",
+          "label": "Random Composite Backpack",
+          "qty": 1,
+          "composite": true
+        },
+        {
+          "kind": "generic",
+          "icon": "materials/random-ssr.png",
+          "label": "Random S-Grade Backpack",
+          "qty": 3
+        },
+        {
+          "kind": "generic",
+          "icon": "materials/ac-blueprint.png",
+          "label": "AC Blueprint",
+          "qty": 1
+        }
+      ],
+      "version": "2.6",
+      "enTranslation": true
+    },
+    {
+      "ID": "60401706",
+      "name": "Predator",
+      "quality": "SSSR",
+      "weight": "150",
+      "BackpackMainType": "Flow",
+      "AssemblableAirmenType": "Light",
+      "icon": "Icon_backpack_60350201",
+      "HowGet": "\u65e0",
+      "RelatedDescription": "\u65e7\u5f0f\u98de\u884c\u5f3a\u5316\u80cc\u5305\u7684\u6539\u826f\u5347\u7ea7\u6b3e\uff0c\u55b7\u5c04\u88c5\u7f6e\u80fd\u591f\u9a71\u52a8\u673a\u5175\u5728\u77ed\u8ddd\u79bb\u4e0a\u98de\u884c\uff0c\u5feb\u901f\u8d8a\u8fc7\u969c\u788d\uff0c\u524d\u5f80\u96be\u4ee5\u62b5\u8fbe\u7684\u6218\u573a\u89d2\u843d\u3002\u540c\u65f6\u96c6\u6210\u4e86\u5bf9\u654c\u673a\u906d\u53d7\u4f24\u5bb3\u63d0\u5347\u7684\u529f\u80fd\u3002",
+      "skill": {
+        "ID": "62310",
+        "name": "Predator Drive \u00b7 DMG UP",
+        "icon": "Icon_skill_passive_1142",
+        "SpecificEffects": "ST Movement <color=#F74848>+1</color>.\nST movement type changes to Levitating, enabling it to pass over low obstacles.\nWhen in combat, enemy DMG Taken <color=#F74848>+10%</color>.\nST Body HP <color=#F74848>+10%</color> and DMG Dealt <color=#F74848>+5%</color>."
+      },
+      "crafting": [
+        {
+          "kind": "item",
+          "id": "60401705",
+          "qty": 1,
+          "composite": true
+        },
+        {
+          "kind": "generic",
+          "icon": "materials/random-ssr.png",
+          "label": "Random Composite Backpack",
+          "qty": 1,
+          "composite": true
+        },
+        {
+          "kind": "generic",
+          "icon": "materials/random-ssr.png",
+          "label": "Random S-Grade Backpack",
+          "qty": 3
+        },
+        {
+          "kind": "generic",
+          "icon": "materials/ac-blueprint.png",
+          "label": "AC Blueprint",
+          "qty": 1
+        }
+      ],
+      "version": "2.5",
+      "enTranslation": true
+    },
+    {
+      "ID": "61002406",
+      "name": "Shadow Hunter",
+      "quality": "SSSR",
+      "weight": "150",
+      "BackpackMainType": "Invisible",
+      "AssemblableAirmenType": "Light/Medium/Heavy",
+      "icon": "Icon_backpack_60900201",
+      "HowGet": "\u65e0",
+      "RelatedDescription": "\u65e7\u5f0f\u9690\u5f62\u5f3a\u5316\u80cc\u5305\u7684\u6539\u826f\u5347\u7ea7\u6b3e\uff0c\u5148\u8fdb\u7684\u5149\u5b66\u7cfb\u7edf\u80fd\u591f\u626d\u66f2\u5149\u7ebf\uff0c\u8ba9\u88c5\u914d\u8be5\u578b\u53f7\u80cc\u5305\u7684\u673a\u5175\u5904\u4e8e\u67d0\u79cd\u7a0b\u5ea6\u4e0a\u7684\u9690\u5f62\u72b6\u6001\u3002\u540c\u65f6\u96c6\u6210\u4e86\u5f3a\u5316\u673a\u5175\u6bcf\u56de\u5408\u9996\u6b21\u653b\u51fb\u80fd\u529b\u7684\u529f\u80fd\u3002",
+      "skill": {
+        "ID": "62308",
+        "name": "Shadow Hunter Drive \u00b7 First Strike",
+        "icon": "Icon_skill_passive_5021",
+        "SpecificEffects": "Upon deployment, immediately gains <buf ID=3004412>[Stealth II]</buf>, lasting <color=#F74848>2</color> turns.\nAt the end of action, if there are no enemies within <color=#F74848>1</color> tile, gains <buf ID=3004412>[Stealth II]</buf>, lasting <color=#F74848>2</color> turns. This effect has a <color=#F74848>3</color>-turn trigger interval.\nWhen actively attacking for the <color=#F74848>1st</color> time each turn, DMG <color=#F74848>+7.5%</color> and Crit Rate <color=#F74848>+5%</color>.\nST Body HP <color=#F74848>+10%</color> and DMG Dealt <color=#F74848>+5%</color>."
+      },
+      "crafting": [
+        {
+          "kind": "item",
+          "id": "61002405",
+          "qty": 1,
+          "composite": true
+        },
+        {
+          "kind": "generic",
+          "icon": "materials/random-ssr.png",
+          "label": "Random Composite Backpack",
+          "qty": 1,
+          "composite": true
+        },
+        {
+          "kind": "generic",
+          "icon": "materials/random-ssr.png",
+          "label": "Random S-Grade Backpack",
+          "qty": 3
+        },
+        {
+          "kind": "generic",
+          "icon": "materials/ac-blueprint.png",
+          "label": "AC Blueprint",
+          "qty": 1
+        }
+      ],
+      "version": "2.4",
+      "enTranslation": true
+    },
+    {
+      "ID": "60202106",
+      "name": "Striker",
+      "quality": "SSSR",
+      "weight": "150",
+      "BackpackMainType": "MovePointAdd",
+      "AssemblableAirmenType": "Light",
+      "icon": "Icon_backpack_60500201",
+      "HowGet": "\u65e0",
+      "RelatedDescription": "\u65e7\u5f0f\u79fb\u52a8\u5f3a\u5316\u80cc\u5305\u7684\u6539\u826f\u5347\u7ea7\u6b3e\uff0c\u76f4\u63a5\u5c06\u989d\u5916\u52a8\u80fd\u8f93\u9001\u5230\u817f\u90e8\u4f20\u52a8\u88c5\u7f6e\uff0c\u65e0\u8bba\u662f\u4f7f\u7528\u6ed1\u8f6e\u8fd8\u662f\u6b65\u884c\uff0c\u673a\u5175\u7684\u79fb\u52a8\u529b\u90fd\u80fd\u5f97\u5230\u63d0\u5347\u3002\u540c\u65f6\u96c6\u6210\u4e86\u5f3a\u5316\u673a\u5175\u518d\u653b\u51fb\u80fd\u529b\u7684\u529f\u80fd\u3002",
+      "skill": {
+        "ID": "62309",
+        "name": "Striker Drive \u00b7 Re-ATK",
+        "icon": "Icon_skill_passive_5123",
+        "SpecificEffects": "When actively attacking, if having moved <color=#F74848>4</color> or more tiles, gains <buf ID=7100901>[Movement UP]</buf>, lasting <color=#F74848>1</color> turn.\nST Movement <color=#F74848>+1</color>.\nWhen re-attacking, Hit Rate <color=#F74848>+10%</color> and Crit Rate <color=#F74848>+5%</color>.\nST Body HP <color=#F74848>+10%</color> and DMG Dealt <color=#F74848>+5%</color>."
+      },
+      "crafting": [
+        {
+          "kind": "item",
+          "id": "60202105",
+          "qty": 1,
+          "composite": true
+        },
+        {
+          "kind": "generic",
+          "icon": "materials/random-ssr.png",
+          "label": "Random Composite Backpack",
+          "qty": 1,
+          "composite": true
+        },
+        {
+          "kind": "generic",
+          "icon": "materials/random-ssr.png",
+          "label": "Random S-Grade Backpack",
+          "qty": 3
+        },
+        {
+          "kind": "generic",
+          "icon": "materials/ac-blueprint.png",
+          "label": "AC Blueprint",
+          "qty": 1
+        }
+      ],
+      "version": "2.4",
+      "enTranslation": true
+    },
+    {
+      "ID": "60902106",
+      "name": "Quartermaster",
+      "quality": "SSSR",
+      "weight": "150",
+      "BackpackMainType": "Ammo",
+      "AssemblableAirmenType": "Medium",
+      "icon": "Icon_backpack_61100101",
+      "HowGet": "\u65e0",
+      "RelatedDescription": "\u65e7\u5f0f\u5f39\u836f\u5f3a\u5316\u80cc\u5305\u7684\u6539\u826f\u5347\u7ea7\u6b3e\uff0c\u50a8\u5b58\u4e86\u6218\u672f\u6b66\u5668\u5f39\u836f\uff0c\u8ba9\u673a\u5175\u706b\u7bad\u6216\u5bfc\u5f39\u6709\u4e86\u66f4\u591a\u7684\u53d1\u5c04\u673a\u4f1a\u3002\u540c\u65f6\u96c6\u6210\u4e86\u5f3a\u5316\u673a\u5175\u518d\u653b\u51fb\u80fd\u529b\u7684\u529f\u80fd\u3002",
+      "skill": {
+        "ID": "62306",
+        "name": "Quartermaster Drive \u00b7 Re-ATK",
+        "icon": "Icon_skill_passive_5163",
+        "SpecificEffects": "Tactical Weapon Ammo Capacity <color=#F74848>+2</color>.\nWhen re-attacking, Hit Rate <color=#F74848>+10%</color> and Crit Rate <color=#F74848>+5%</color>.\nGains Code <skill mainSkill=62306>[Quick Load]</skill>, sharing cooldown with other Ammo Reload skills.\nST Body HP <color=#F74848>+10%</color> and DMG Dealt <color=#F74848>+5%</color>."
+      },
+      "crafting": [
+        {
+          "kind": "item",
+          "id": "60902105",
+          "qty": 1,
+          "composite": true
+        },
+        {
+          "kind": "generic",
+          "icon": "materials/random-ssr.png",
+          "label": "Random Composite Backpack",
+          "qty": 1,
+          "composite": true
+        },
+        {
+          "kind": "generic",
+          "icon": "materials/random-ssr.png",
+          "label": "Random S-Grade Backpack",
+          "qty": 3
+        },
+        {
+          "kind": "generic",
+          "icon": "materials/ac-blueprint.png",
+          "label": "AC Blueprint",
+          "qty": 1
+        }
+      ],
+      "version": "2.3",
+      "enTranslation": true
+    },
+    {
+      "ID": "60301106",
+      "name": "Resistor",
+      "quality": "SSSR",
+      "weight": "150",
+      "BackpackMainType": "Interference",
+      "AssemblableAirmenType": "Light/Medium/Heavy",
+      "icon": "Icon_backpack_60300201",
+      "HowGet": "\u65e0",
+      "RelatedDescription": "\u65e7\u5f0f\u8bf1\u5bfc\u5e72\u6270\u80cc\u5305\u7684\u6539\u826f\u5347\u7ea7\u6b3e\uff0c\u901a\u8fc7\u53d1\u5c04\u7535\u78c1\u6ce2\u5bf9\u98de\u5f39\u8fdb\u884c\u538b\u5236\u6027\u4fe1\u53f7\u5e72\u6270\uff0c\u6270\u4e71\u7535\u5b50\u8bbe\u5907\uff0c\u4ece\u800c\u8fbe\u5230\u524a\u5f31\u6218\u672f\u6b66\u5668\u5a01\u529b\u7684\u6548\u679c\u3002\u540c\u65f6\u96c6\u6210\u4e86\u5f71\u54cd\u654c\u673a\u653b\u51fb\u80fd\u529b\u7684\u529f\u80fd\u3002",
+      "skill": {
+        "ID": "62307",
+        "name": "Resistor Drive \u00b7 Attack",
+        "icon": "Icon_skill_passive_5232",
+        "SpecificEffects": "No ST type restriction.\nWhen hit by a Tactical attack, DMG Taken <color=#F74848>-25%</color>. Similar effects cannot stack.\nWhenever any enemy on the battlefield actively attacks with a Tactical Weapon, gains <color=#F74848>1</color> stack of <buf ID=623076>[Counter Charge]</buf> before combat; if self is the attack target, gains an additional <color=#F74848>1</color> stack. Upon reaching <color=#F74848>6</color> stacks of <buf ID=623076>[Counter Charge]</buf>, repairs <color=#F74848>15%</color> HP to all parts and restores <color=#F74848>1</color> AP after combat, then removes all stacks and cannot gain <buf ID=623076>[Counter Charge]</buf> again this turn.\nWhen in combat, enemy DMG Dealt <color=#F74848>-10%</color>.\nST Body HP <color=#F74848>+10%</color>."
+      },
+      "crafting": [
+        {
+          "kind": "item",
+          "id": "60301105",
+          "qty": 1,
+          "composite": true
+        },
+        {
+          "kind": "generic",
+          "icon": "materials/random-ssr.png",
+          "label": "Random Composite Backpack",
+          "qty": 1,
+          "composite": true
+        },
+        {
+          "kind": "generic",
+          "icon": "materials/random-ssr.png",
+          "label": "Random S-Grade Backpack",
+          "qty": 3
+        },
+        {
+          "kind": "generic",
+          "icon": "materials/ac-blueprint.png",
+          "label": "AC Blueprint",
+          "qty": 1
+        }
+      ],
+      "version": "2.3",
+      "enTranslation": true
+    },
+    {
+      "ID": "60101706",
+      "name": "Raider",
+      "quality": "SSSR",
+      "weight": "150",
+      "BackpackMainType": "BackupEquipment",
+      "AssemblableAirmenType": "Light/Medium/Heavy",
+      "icon": "Icon_backpack_61400101",
+      "HowGet": "\u65e0",
+      "RelatedDescription": "\u65e7\u5f0f\u51fa\u529b\u5e72\u6270\u80cc\u5305\u7684\u6539\u826f\u5347\u7ea7\u6b3e\uff0c\u901a\u8fc7\u5916\u90e8\u6302\u8f7d\u7684\u5c0f\u578b\u529f\u80fd\u88c5\u7f6e\u4e3a\u673a\u5175\u63d0\u4f9b\u989d\u5916\u7684\u51fa\u529b\uff0c\u4f7f\u5176\u62e5\u6709\u66f4\u9ad8\u7684\u4f5c\u6218\u5168\u91cd\u4e0a\u9650\u3002\u540c\u65f6\u96c6\u6210\u4e86\u5bf9\u654c\u673a\u906d\u53d7\u4f24\u5bb3\u63d0\u5347\u548c\u521b\u65b0\u6027\u7684\u6b66\u5668\u5207\u6362\u529f\u80fd\u3002",
+      "skill": {
+        "ID": "62304",
+        "name": "Raider Drive \u00b7 DMG UP",
+        "icon": "Icon_skill_passive_5234",
+        "SpecificEffects": "Gains Code <skill mainSkill=62304>[Weapon Switch]</skill>, usable up to <color=#F74848>1</color> time per turn. At the end of action, if both arms are intact, can additionally use <skill mainSkill=62304>[Weapon Switch]</skill>, usable up to <color=#F74848>1</color> time every <color=#F74848>2</color> turns.\nWhen in combat, enemy DMG Taken <color=#F74848>+10%</color>.\nST gains an additional <color=#F74848>300</color> Power, Body HP <color=#F74848>+10%</color> and DMG Dealt <color=#F74848>+5%</color>."
+      },
+      "crafting": [
+        {
+          "kind": "item",
+          "id": "60101705",
+          "qty": 1,
+          "composite": true
+        },
+        {
+          "kind": "generic",
+          "icon": "materials/random-ssr.png",
+          "label": "Random Composite Backpack",
+          "qty": 1,
+          "composite": true
+        },
+        {
+          "kind": "generic",
+          "icon": "materials/random-ssr.png",
+          "label": "Random S-Grade Backpack",
+          "qty": 3
+        },
+        {
+          "kind": "generic",
+          "icon": "materials/ac-blueprint.png",
+          "label": "AC Blueprint",
+          "qty": 1
+        }
+      ],
+      "version": "2.2",
+      "enTranslation": true
+    },
+    {
+      "ID": "60802406",
+      "name": "Navigator",
+      "quality": "SSSR",
+      "weight": "150",
+      "BackpackMainType": "Radar",
+      "AssemblableAirmenType": "Light/Medium/Heavy",
+      "icon": "Icon_backpack_60800201",
+      "HowGet": "\u65e0",
+      "RelatedDescription": "\u65e7\u5f0f\u96f7\u8fbe\u5f3a\u5316\u80cc\u5305\u7684\u6539\u826f\u5347\u7ea7\u6b3e\uff0c\u5c0f\u578b\u5316\u7684\u673a\u5175\u5b9a\u4f4d\u88c5\u7f6e\uff0c\u5f00\u542f\u80fd\u8ba9\u53cb\u65b9\u673a\u5175\u83b7\u5f97\u5b9a\u4f4d\uff0c\u5f15\u5bfc\u98de\u5f39\u5bf9\u8303\u56f4\u5185\u76ee\u6807\u8fdb\u884c\u7cbe\u51c6\u6253\u51fb\u3002\u540c\u65f6\u96c6\u6210\u4e86\u5f3a\u5316\u673a\u5175\u6bcf\u56de\u5408\u9996\u6b21\u653b\u51fb\u80fd\u529b\u7684\u529f\u80fd\u3002",
+      "skill": {
+        "ID": "62305",
+        "name": "Navigator Drive \u00b7 First Strike",
+        "icon": "Icon_skill_passive_5237",
+        "SpecificEffects": "Enables the ST's adjacent <color=#F74848>2</color>-tile area to become a valid attack zone for allied Missile Launcher and Rocket Launcher attacks. Attacks directed by this effect gain Hit Rate <color=#F74848>+25%</color>.\nWhen actively attacking for the <color=#F74848>1st</color> time each turn, DMG <color=#F74848>+7.5%</color> and Crit Rate <color=#F74848>+5%</color>.\nST Body HP <color=#F74848>+10%</color> and DMG Dealt <color=#F74848>+5%</color>."
+      },
+      "crafting": [
+        {
+          "kind": "item",
+          "id": "60802405",
+          "qty": 1,
+          "composite": true
+        },
+        {
+          "kind": "generic",
+          "icon": "materials/random-ssr.png",
+          "label": "Random Composite Backpack",
+          "qty": 1,
+          "composite": true
+        },
+        {
+          "kind": "generic",
+          "icon": "materials/random-ssr.png",
+          "label": "Random S-Grade Backpack",
+          "qty": 3
+        },
+        {
+          "kind": "generic",
+          "icon": "materials/ac-blueprint.png",
+          "label": "AC Blueprint",
+          "qty": 1
+        }
+      ],
+      "version": "2.2",
+      "enTranslation": true
+    },
+    {
+      "ID": "60402406",
+      "name": "Dominator",
+      "quality": "SSSR",
+      "weight": "150",
+      "BackpackMainType": "Flow",
+      "AssemblableAirmenType": "Light",
+      "icon": "Icon_backpack_60350201",
+      "HowGet": "\u65e0",
+      "RelatedDescription": "\u65e7\u5f0f\u98de\u884c\u5f3a\u5316\u80cc\u5305\u7684\u6539\u826f\u5347\u7ea7\u6b3e\uff0c\u55b7\u5c04\u88c5\u7f6e\u80fd\u591f\u9a71\u52a8\u673a\u5175\u5728\u77ed\u8ddd\u79bb\u4e0a\u98de\u884c\uff0c\u5feb\u901f\u8d8a\u8fc7\u969c\u788d\uff0c\u524d\u5f80\u96be\u4ee5\u62b5\u8fbe\u7684\u6218\u573a\u89d2\u843d\u3002\u540c\u65f6\u96c6\u6210\u4e86\u5f3a\u5316\u673a\u5175\u6bcf\u56de\u5408\u9996\u6b21\u653b\u51fb\u80fd\u529b\u7684\u529f\u80fd\u3002",
+      "skill": {
+        "ID": "62302",
+        "name": "Dominator Drive \u00b7 First Strike",
+        "icon": "Icon_skill_passive_5155",
+        "SpecificEffects": "ST movement type changes to Levitating, enabling it to pass over low obstacles.\nWhen initiating combat, if the target is on the movement path, will always Dodge when retaliated against. Can trigger <color=#F74848>1</color> time per turn.\nWhen actively attacking for the <color=#F74848>1st</color> time each turn, DMG <color=#F74848>+7.5%</color> and Crit Rate <color=#F74848>+5%</color>.\nST Body HP <color=#F74848>+10%</color> and DMG Dealt <color=#F74848>+5%</color>."
+      },
+      "crafting": [
+        {
+          "kind": "item",
+          "id": "60402405",
+          "qty": 1,
+          "composite": true
+        },
+        {
+          "kind": "generic",
+          "icon": "materials/random-ssr.png",
+          "label": "Random Composite Backpack",
+          "qty": 1,
+          "composite": true
+        },
+        {
+          "kind": "generic",
+          "icon": "materials/random-ssr.png",
+          "label": "Random S-Grade Backpack",
+          "qty": 3
+        },
+        {
+          "kind": "generic",
+          "icon": "materials/ac-blueprint.png",
+          "label": "AC Blueprint",
+          "qty": 1
+        }
+      ],
+      "version": "2.1",
       "enTranslation": true
     },
     {
@@ -360,186 +873,7 @@
           "qty": 1
         }
       ],
-      "enTranslation": true
-    },
-    {
-      "ID": "60302506",
-      "name": "Custodian",
-      "quality": "SSSR",
-      "weight": "150",
-      "BackpackMainType": "Interference",
-      "AssemblableAirmenType": "Heavy",
-      "icon": "Icon_backpack_60300201",
-      "HowGet": "\u65e0",
-      "RelatedDescription": "\u65e7\u5f0f\u8bf1\u5bfc\u5f3a\u5316\u80cc\u5305\u7684\u6539\u826f\u5347\u7ea7\u6b3e\uff0c\u901a\u8fc7\u53d1\u5c04\u7535\u78c1\u6ce2\u5bf9\u98de\u5f39\u8fdb\u884c\u538b\u5236\u6027\u4fe1\u53f7\u5e72\u6270\uff0c\u6270\u4e71\u7535\u5b50\u8bbe\u5907\uff0c\u4ece\u800c\u8fbe\u5230\u524a\u5f31\u6218\u672f\u6b66\u5668\u5a01\u529b\u7684\u6548\u679c\u3002\u540c\u65f6\u96c6\u6210\u4e86\u5f3a\u5316\u673a\u5175\u53cd\u51fb\u80fd\u529b\u7684\u529f\u80fd\u3002",
-      "skill": {
-        "ID": "62179",
-        "name": "Custodian Field \u00b7 Retaliation",
-        "icon": "Icon_skill_passive_5232",
-        "SpecificEffects": "Activates Aura: Allies within <color=#F74848>1</color> adjacent tile take <color=#F74848>25%</color> less DMG from Tactical attacks. Similar effects cannot stack.\nWhen allies within <color=#F74848>1</color> adjacent tile are hit by a Missile attack, the <color=#F74848>1st</color> missile is unable to hit. This effect can only trigger <color=#F74848>1</color> time per sortie.\nWhen retaliating, DMG <color=#F74848>+15%</color> and Crit Rate <color=#F74848>+10%</color>.\nST Body HP <color=#F74848>+10%</color>."
-      },
-      "crafting": [
-        {
-          "kind": "item",
-          "id": "60302505",
-          "qty": 1,
-          "composite": true
-        },
-        {
-          "kind": "generic",
-          "icon": "materials/random-ssr.png",
-          "label": "Random Composite Backpack",
-          "qty": 1,
-          "composite": true
-        },
-        {
-          "kind": "generic",
-          "icon": "materials/random-ssr.png",
-          "label": "Random S-Grade Backpack",
-          "qty": 3
-        },
-        {
-          "kind": "generic",
-          "icon": "materials/ac-blueprint.png",
-          "label": "AC Blueprint",
-          "qty": 1
-        }
-      ],
-      "enTranslation": true
-    },
-    {
-      "ID": "60301106",
-      "name": "Resistor",
-      "quality": "SSSR",
-      "weight": "150",
-      "BackpackMainType": "Interference",
-      "AssemblableAirmenType": "Light/Medium/Heavy",
-      "icon": "Icon_backpack_60300201",
-      "HowGet": "\u65e0",
-      "RelatedDescription": "\u65e7\u5f0f\u8bf1\u5bfc\u5e72\u6270\u80cc\u5305\u7684\u6539\u826f\u5347\u7ea7\u6b3e\uff0c\u901a\u8fc7\u53d1\u5c04\u7535\u78c1\u6ce2\u5bf9\u98de\u5f39\u8fdb\u884c\u538b\u5236\u6027\u4fe1\u53f7\u5e72\u6270\uff0c\u6270\u4e71\u7535\u5b50\u8bbe\u5907\uff0c\u4ece\u800c\u8fbe\u5230\u524a\u5f31\u6218\u672f\u6b66\u5668\u5a01\u529b\u7684\u6548\u679c\u3002\u540c\u65f6\u96c6\u6210\u4e86\u5f71\u54cd\u654c\u673a\u653b\u51fb\u80fd\u529b\u7684\u529f\u80fd\u3002",
-      "skill": {
-        "ID": "62307",
-        "name": "Resistor Drive \u00b7 Attack",
-        "icon": "Icon_skill_passive_5232",
-        "SpecificEffects": "No ST type restriction.\nWhen hit by a Tactical attack, DMG Taken <color=#F74848>-25%</color>. Similar effects cannot stack.\nWhenever any enemy on the battlefield actively attacks with a Tactical Weapon, gains <color=#F74848>1</color> stack of <buf ID=623076>[Counter Charge]</buf> before combat; if self is the attack target, gains an additional <color=#F74848>1</color> stack. Upon reaching <color=#F74848>6</color> stacks of <buf ID=623076>[Counter Charge]</buf>, repairs <color=#F74848>15%</color> HP to all parts and restores <color=#F74848>1</color> AP after combat, then removes all stacks and cannot gain <buf ID=623076>[Counter Charge]</buf> again this turn.\nWhen in combat, enemy DMG Dealt <color=#F74848>-10%</color>.\nST Body HP <color=#F74848>+10%</color>."
-      },
-      "crafting": [
-        {
-          "kind": "item",
-          "id": "60301105",
-          "qty": 1,
-          "composite": true
-        },
-        {
-          "kind": "generic",
-          "icon": "materials/random-ssr.png",
-          "label": "Random Composite Backpack",
-          "qty": 1,
-          "composite": true
-        },
-        {
-          "kind": "generic",
-          "icon": "materials/random-ssr.png",
-          "label": "Random S-Grade Backpack",
-          "qty": 3
-        },
-        {
-          "kind": "generic",
-          "icon": "materials/ac-blueprint.png",
-          "label": "AC Blueprint",
-          "qty": 1
-        }
-      ],
-      "enTranslation": true
-    },
-    {
-      "ID": "60301116",
-      "name": "Sentinel",
-      "quality": "SSSR",
-      "weight": "150",
-      "BackpackMainType": "Interference",
-      "AssemblableAirmenType": "Heavy",
-      "icon": "Icon_backpack_60300201",
-      "HowGet": "\u65e0",
-      "RelatedDescription": "\u65e7\u5f0f\u8bf1\u5bfc\u5e72\u6270\u80cc\u5305\u7684\u6539\u826f\u5347\u7ea7\u6b3e\uff0c\u901a\u8fc7\u53d1\u5c04\u7535\u78c1\u6ce2\u5bf9\u98de\u5f39\u8fdb\u884c\u538b\u5236\u6027\u4fe1\u53f7\u5e72\u6270\uff0c\u6270\u4e71\u7535\u5b50\u8bbe\u5907\uff0c\u4ece\u800c\u8fbe\u5230\u524a\u5f31\u6218\u672f\u6b66\u5668\u5a01\u529b\u7684\u6548\u679c\u3002\u540c\u65f6\u96c6\u6210\u4e86\u5f71\u54cd\u654c\u673a\u653b\u51fb\u80fd\u529b\u7684\u529f\u80fd\u3002",
-      "skill": {
-        "ID": "62318",
-        "name": "Sentinel Drive \u00b7 Attack",
-        "icon": "Icon_skill_passive_5235",
-        "SpecificEffects": "Heavy STs only.\nWhen hit by a Tactical Weapon attack, DMG Taken <color=#F74848>-25%</color>. Similar effects cannot stack.\nAllies within Guard range take <color=#F74848>15%</color> less DMG from Code attacks. Similar effects cannot stack.\nAfter self takes damage from a Code attack, repairs <color=#F74848>15%</color> of Max HP to intact parts. This effect can trigger again after <color=#F74848>1</color> turn.\nWhen in combat, enemy DMG Dealt <color=#F74848>-10%</color>.\nST Body HP <color=#F74848>+10%</color>."
-      },
-      "crafting": [
-        {
-          "kind": "item",
-          "id": "60301105",
-          "qty": 1,
-          "composite": true
-        },
-        {
-          "kind": "generic",
-          "icon": "materials/random-ssr.png",
-          "label": "Random Composite Backpack",
-          "qty": 1,
-          "composite": true
-        },
-        {
-          "kind": "generic",
-          "icon": "materials/random-ssr.png",
-          "label": "Random S-Grade Backpack",
-          "qty": 3
-        },
-        {
-          "kind": "generic",
-          "icon": "materials/ac-blueprint.png",
-          "label": "AC Blueprint",
-          "qty": 1
-        }
-      ],
-      "enTranslation": true
-    },
-    {
-      "ID": "60301506",
-      "name": "Suppressor",
-      "quality": "SSSR",
-      "weight": "150",
-      "BackpackMainType": "Interference",
-      "AssemblableAirmenType": "Heavy",
-      "icon": "Icon_backpack_60300201",
-      "HowGet": "\u65e0",
-      "RelatedDescription": "\u65e7\u5f0f\u8bf1\u5bfc\u5e72\u6270\u80cc\u5305\u7684\u6539\u826f\u5347\u7ea7\u6b3e\uff0c\u901a\u8fc7\u53d1\u5c04\u7535\u78c1\u6ce2\u5bf9\u98de\u5f39\u8fdb\u884c\u538b\u5236\u6027\u4fe1\u53f7\u5e72\u6270\uff0c\u6270\u4e71\u7535\u5b50\u8bbe\u5907\uff0c\u4ece\u800c\u8fbe\u5230\u524a\u5f31\u6218\u672f\u6b66\u5668\u5a01\u529b\u7684\u6548\u679c\u3002\u540c\u65f6\u96c6\u6210\u4e86\u5f71\u54cd\u654c\u673a\u66b4\u4f24\u80fd\u529b\u7684\u529f\u80fd\u3002",
-      "skill": {
-        "ID": "62315",
-        "name": "Suppressor Drive \u00b7 Crit DMG",
-        "icon": "Icon_skill_passive_5232",
-        "SpecificEffects": "After being actively attacked by a Tactical Weapon, inflicts <buf ID=623152>[Ammo Jam]</buf> on the attacker. Can only trigger again after <color=#F74848>1</color> turn.\nWhen hit by a Tactical attack, DMG Taken <color=#F74848>-25%</color>. Similar effects cannot stack.\nWhen in combat, enemy Crit DMG <color=#F74848>-10%</color>.\nST Body HP <color=#F74848>+10%</color>."
-      },
-      "crafting": [
-        {
-          "kind": "item",
-          "id": "60301505",
-          "qty": 1,
-          "composite": true
-        },
-        {
-          "kind": "generic",
-          "icon": "materials/random-ssr.png",
-          "label": "Random Composite Backpack",
-          "qty": 1,
-          "composite": true
-        },
-        {
-          "kind": "generic",
-          "icon": "materials/random-ssr.png",
-          "label": "Random S-Grade Backpack",
-          "qty": 3
-        },
-        {
-          "kind": "generic",
-          "icon": "materials/ac-blueprint.png",
-          "label": "AC Blueprint",
-          "qty": 1
-        }
-      ],
+      "version": "2.1",
       "enTranslation": true
     },
     {
@@ -585,28 +919,29 @@
           "qty": 1
         }
       ],
+      "version": "1.7",
       "enTranslation": true
     },
     {
-      "ID": "61002416",
-      "name": "Executioner",
+      "ID": "60302506",
+      "name": "Custodian",
       "quality": "SSSR",
       "weight": "150",
-      "BackpackMainType": "Invisible",
-      "AssemblableAirmenType": "Light/Medium/Heavy",
-      "icon": "Icon_backpack_60900201",
+      "BackpackMainType": "Interference",
+      "AssemblableAirmenType": "Heavy",
+      "icon": "Icon_backpack_60300201",
       "HowGet": "\u65e0",
-      "RelatedDescription": "\u65e7\u5f0f\u9690\u5f62\u5f3a\u5316\u80cc\u5305\u7684\u6539\u826f\u5347\u7ea7\u6b3e\uff0c\u5148\u8fdb\u7684\u5149\u5b66\u7cfb\u7edf\u80fd\u591f\u626d\u66f2\u5149\u7ebf\uff0c\u8ba9\u88c5\u914d\u8be5\u578b\u53f7\u80cc\u5305\u7684\u673a\u5175\u5904\u4e8e\u67d0\u79cd\u7a0b\u5ea6\u4e0a\u7684\u9690\u5f62\u72b6\u6001\u3002\u540c\u65f6\u96c6\u6210\u4e86\u5f3a\u5316\u673a\u5175\u6bcf\u56de\u5408\u9996\u6b21\u653b\u51fb\u80fd\u529b\u7684\u529f\u80fd\u3002",
+      "RelatedDescription": "\u65e7\u5f0f\u8bf1\u5bfc\u5f3a\u5316\u80cc\u5305\u7684\u6539\u826f\u5347\u7ea7\u6b3e\uff0c\u901a\u8fc7\u53d1\u5c04\u7535\u78c1\u6ce2\u5bf9\u98de\u5f39\u8fdb\u884c\u538b\u5236\u6027\u4fe1\u53f7\u5e72\u6270\uff0c\u6270\u4e71\u7535\u5b50\u8bbe\u5907\uff0c\u4ece\u800c\u8fbe\u5230\u524a\u5f31\u6218\u672f\u6b66\u5668\u5a01\u529b\u7684\u6548\u679c\u3002\u540c\u65f6\u96c6\u6210\u4e86\u5f3a\u5316\u673a\u5175\u53cd\u51fb\u80fd\u529b\u7684\u529f\u80fd\u3002",
       "skill": {
-        "ID": "62316",
-        "name": "Executioner Drive \u00b7 First Strike",
-        "icon": "Icon_skill_passive_4134",
-        "SpecificEffects": "When actively attacking, if in <buf ID=900033>[Stealth]</buf>, this attack's Crit Rate <color=#F74848>+50%</color>. This effect can only trigger <color=#F74848>1</color> time per sortie.\nAt the end of action, if there are no enemies within <color=#F74848>2</color> tiles, gains <buf ID=3004502>[Stealth I]</buf>, lasting <color=#F74848>2</color> turns. This effect has a <color=#F74848>3</color>-turn trigger interval.\nWhen actively attacking for the <color=#F74848>1st</color> time each turn, DMG <color=#F74848>+7.5%</color> and Crit Rate <color=#F74848>+5%</color>.\nST Body HP <color=#F74848>+10%</color> and DMG Dealt <color=#F74848>+5%</color>."
+        "ID": "62179",
+        "name": "Custodian Field \u00b7 Retaliation",
+        "icon": "Icon_skill_passive_5232",
+        "SpecificEffects": "Activates Aura: Allies within <color=#F74848>1</color> adjacent tile take <color=#F74848>25%</color> less DMG from Tactical attacks. Similar effects cannot stack.\nWhen allies within <color=#F74848>1</color> adjacent tile are hit by a Missile attack, the <color=#F74848>1st</color> missile is unable to hit. This effect can only trigger <color=#F74848>1</color> time per sortie.\nWhen retaliating, DMG <color=#F74848>+15%</color> and Crit Rate <color=#F74848>+10%</color>.\nST Body HP <color=#F74848>+10%</color>."
       },
       "crafting": [
         {
           "kind": "item",
-          "id": "61002405",
+          "id": "60302505",
           "qty": 1,
           "composite": true
         },
@@ -630,96 +965,7 @@
           "qty": 1
         }
       ],
-      "enTranslation": true
-    },
-    {
-      "ID": "61002406",
-      "name": "Shadow Hunter",
-      "quality": "SSSR",
-      "weight": "150",
-      "BackpackMainType": "Invisible",
-      "AssemblableAirmenType": "Light/Medium/Heavy",
-      "icon": "Icon_backpack_60900201",
-      "HowGet": "\u65e0",
-      "RelatedDescription": "\u65e7\u5f0f\u9690\u5f62\u5f3a\u5316\u80cc\u5305\u7684\u6539\u826f\u5347\u7ea7\u6b3e\uff0c\u5148\u8fdb\u7684\u5149\u5b66\u7cfb\u7edf\u80fd\u591f\u626d\u66f2\u5149\u7ebf\uff0c\u8ba9\u88c5\u914d\u8be5\u578b\u53f7\u80cc\u5305\u7684\u673a\u5175\u5904\u4e8e\u67d0\u79cd\u7a0b\u5ea6\u4e0a\u7684\u9690\u5f62\u72b6\u6001\u3002\u540c\u65f6\u96c6\u6210\u4e86\u5f3a\u5316\u673a\u5175\u6bcf\u56de\u5408\u9996\u6b21\u653b\u51fb\u80fd\u529b\u7684\u529f\u80fd\u3002",
-      "skill": {
-        "ID": "62308",
-        "name": "Shadow Hunter Drive \u00b7 First Strike",
-        "icon": "Icon_skill_passive_5021",
-        "SpecificEffects": "Upon deployment, immediately gains <buf ID=3004412>[Stealth II]</buf>, lasting <color=#F74848>2</color> turns.\nAt the end of action, if there are no enemies within <color=#F74848>1</color> tile, gains <buf ID=3004412>[Stealth II]</buf>, lasting <color=#F74848>2</color> turns. This effect has a <color=#F74848>3</color>-turn trigger interval.\nWhen actively attacking for the <color=#F74848>1st</color> time each turn, DMG <color=#F74848>+7.5%</color> and Crit Rate <color=#F74848>+5%</color>.\nST Body HP <color=#F74848>+10%</color> and DMG Dealt <color=#F74848>+5%</color>."
-      },
-      "crafting": [
-        {
-          "kind": "item",
-          "id": "61002405",
-          "qty": 1,
-          "composite": true
-        },
-        {
-          "kind": "generic",
-          "icon": "materials/random-ssr.png",
-          "label": "Random Composite Backpack",
-          "qty": 1,
-          "composite": true
-        },
-        {
-          "kind": "generic",
-          "icon": "materials/random-ssr.png",
-          "label": "Random S-Grade Backpack",
-          "qty": 3
-        },
-        {
-          "kind": "generic",
-          "icon": "materials/ac-blueprint.png",
-          "label": "AC Blueprint",
-          "qty": 1
-        }
-      ],
-      "enTranslation": true
-    },
-    {
-      "ID": "61002106",
-      "name": "Trickster",
-      "quality": "SSSR",
-      "weight": "150",
-      "BackpackMainType": "Invisible",
-      "AssemblableAirmenType": "Light/Medium/Heavy",
-      "icon": "Icon_backpack_60900201",
-      "HowGet": "\u65e0",
-      "RelatedDescription": "\u65e7\u5f0f\u9690\u5f62\u5f3a\u5316\u80cc\u5305\u7684\u6539\u826f\u5347\u7ea7\u6b3e\uff0c\u5148\u8fdb\u7684\u5149\u5b66\u7cfb\u7edf\u80fd\u591f\u626d\u66f2\u5149\u7ebf\uff0c\u8ba9\u88c5\u914d\u8be5\u578b\u53f7\u80cc\u5305\u7684\u673a\u5175\u5904\u4e8e\u67d0\u79cd\u7a0b\u5ea6\u4e0a\u7684\u9690\u5f62\u72b6\u6001\u3002\u540c\u65f6\u96c6\u6210\u4e86\u5f3a\u5316\u673a\u5175\u518d\u653b\u51fb\u80fd\u529b\u7684\u529f\u80fd\u3002",
-      "skill": {
-        "ID": "62317",
-        "name": "Trickster Drive \u00b7 Re-ATK",
-        "icon": "Icon_skill_passive_5262",
-        "SpecificEffects": "At the end of action, if there are no enemies within <color=#F74848>2</color> tiles, gains <buf ID=900033>[Stealth]</buf>, lasting <color=#F74848>2</color> turns. This effect has a <color=#F74848>3</color>-turn trigger interval.\nGains Code <skill mainSkill=62317>[Concealment]</skill>: causes self and <color=#F74848>1</color> chosen ally within <color=#F74848>4</color> tiles to enter <buf ID=3004412>[Stealth II]</buf>, lasting <color=#F74848>2</color> turns.\nWhen re-attacking, Hit Rate <color=#F74848>+10%</color> and Crit Rate <color=#F74848>+5%</color>.\nST Body HP <color=#F74848>+10%</color> and DMG Dealt <color=#F74848>+5%</color>."
-      },
-      "crafting": [
-        {
-          "kind": "item",
-          "id": "61002105",
-          "qty": 1,
-          "composite": true
-        },
-        {
-          "kind": "generic",
-          "icon": "materials/random-ssr.png",
-          "label": "Random Composite Backpack",
-          "qty": 1,
-          "composite": true
-        },
-        {
-          "kind": "generic",
-          "icon": "materials/random-ssr.png",
-          "label": "Random S-Grade Backpack",
-          "qty": 3
-        },
-        {
-          "kind": "generic",
-          "icon": "materials/ac-blueprint.png",
-          "label": "AC Blueprint",
-          "qty": 1
-        }
-      ],
+      "version": "1.6",
       "enTranslation": true
     },
     {
@@ -765,231 +1011,7 @@
           "qty": 1
         }
       ],
-      "enTranslation": true
-    },
-    {
-      "ID": "60202406",
-      "name": "Pioneer",
-      "quality": "SSSR",
-      "weight": "150",
-      "BackpackMainType": "MovePointAdd",
-      "AssemblableAirmenType": "Light/Medium/Heavy",
-      "icon": "Icon_backpack_60500201",
-      "HowGet": "\u65e0",
-      "RelatedDescription": "\u65e7\u5f0f\u79fb\u52a8\u5f3a\u5316\u80cc\u5305\u7684\u6539\u826f\u5347\u7ea7\u6b3e\uff0c\u76f4\u63a5\u5c06\u989d\u5916\u52a8\u80fd\u8f93\u9001\u5230\u817f\u90e8\u4f20\u52a8\u88c5\u7f6e\uff0c\u65e0\u8bba\u662f\u4f7f\u7528\u6ed1\u8f6e\u8fd8\u662f\u6b65\u884c\uff0c\u673a\u5175\u7684\u79fb\u52a8\u529b\u90fd\u80fd\u5f97\u5230\u63d0\u5347\u3002\u540c\u65f6\u96c6\u6210\u4e86\u5f3a\u5316\u673a\u5175\u6bcf\u56de\u5408\u9996\u6b21\u653b\u51fb\u80fd\u529b\u7684\u529f\u80fd\u3002",
-      "skill": {
-        "ID": "62311",
-        "name": "Pioneer Drive \u00b7 First Strike",
-        "icon": "Icon_skill_passive_1153",
-        "SpecificEffects": "No ST type restriction.\nST Movement <color=#F74848>+1</color>.\nWhen actively attacking for the <color=#F74848>1st</color> time each turn, DMG <color=#F74848>+7.5%</color> and Crit Rate <color=#F74848>+5%</color>.\nST Body HP <color=#F74848>+10%</color> and DMG Dealt <color=#F74848>+5%</color>."
-      },
-      "crafting": [
-        {
-          "kind": "item",
-          "id": "60202405",
-          "qty": 1,
-          "composite": true
-        },
-        {
-          "kind": "generic",
-          "icon": "materials/random-ssr.png",
-          "label": "Random Composite Backpack",
-          "qty": 1,
-          "composite": true
-        },
-        {
-          "kind": "generic",
-          "icon": "materials/random-ssr.png",
-          "label": "Random S-Grade Backpack",
-          "qty": 3
-        },
-        {
-          "kind": "generic",
-          "icon": "materials/ac-blueprint.png",
-          "label": "AC Blueprint",
-          "qty": 1
-        }
-      ],
-      "enTranslation": true
-    },
-    {
-      "ID": "60202106",
-      "name": "Striker",
-      "quality": "SSSR",
-      "weight": "150",
-      "BackpackMainType": "MovePointAdd",
-      "AssemblableAirmenType": "Light",
-      "icon": "Icon_backpack_60500201",
-      "HowGet": "\u65e0",
-      "RelatedDescription": "\u65e7\u5f0f\u79fb\u52a8\u5f3a\u5316\u80cc\u5305\u7684\u6539\u826f\u5347\u7ea7\u6b3e\uff0c\u76f4\u63a5\u5c06\u989d\u5916\u52a8\u80fd\u8f93\u9001\u5230\u817f\u90e8\u4f20\u52a8\u88c5\u7f6e\uff0c\u65e0\u8bba\u662f\u4f7f\u7528\u6ed1\u8f6e\u8fd8\u662f\u6b65\u884c\uff0c\u673a\u5175\u7684\u79fb\u52a8\u529b\u90fd\u80fd\u5f97\u5230\u63d0\u5347\u3002\u540c\u65f6\u96c6\u6210\u4e86\u5f3a\u5316\u673a\u5175\u518d\u653b\u51fb\u80fd\u529b\u7684\u529f\u80fd\u3002",
-      "skill": {
-        "ID": "62309",
-        "name": "Striker Drive \u00b7 Re-ATK",
-        "icon": "Icon_skill_passive_5123",
-        "SpecificEffects": "When actively attacking, if having moved <color=#F74848>4</color> or more tiles, gains <buf ID=7100901>[Movement UP]</buf>, lasting <color=#F74848>1</color> turn.\nST Movement <color=#F74848>+1</color>.\nWhen re-attacking, Hit Rate <color=#F74848>+10%</color> and Crit Rate <color=#F74848>+5%</color>.\nST Body HP <color=#F74848>+10%</color> and DMG Dealt <color=#F74848>+5%</color>."
-      },
-      "crafting": [
-        {
-          "kind": "item",
-          "id": "60202105",
-          "qty": 1,
-          "composite": true
-        },
-        {
-          "kind": "generic",
-          "icon": "materials/random-ssr.png",
-          "label": "Random Composite Backpack",
-          "qty": 1,
-          "composite": true
-        },
-        {
-          "kind": "generic",
-          "icon": "materials/random-ssr.png",
-          "label": "Random S-Grade Backpack",
-          "qty": 3
-        },
-        {
-          "kind": "generic",
-          "icon": "materials/ac-blueprint.png",
-          "label": "AC Blueprint",
-          "qty": 1
-        }
-      ],
-      "enTranslation": true
-    },
-    {
-      "ID": "60802106",
-      "name": "Guide",
-      "quality": "SSSR",
-      "weight": "150",
-      "BackpackMainType": "Radar",
-      "AssemblableAirmenType": "Light/Medium/Heavy",
-      "icon": "Icon_backpack_60800201",
-      "HowGet": "\u65e0",
-      "RelatedDescription": "\u65e7\u5f0f\u96f7\u8fbe\u5f3a\u5316\u80cc\u5305\u7684\u6539\u826f\u5347\u7ea7\u6b3e\uff0c\u5c0f\u578b\u5316\u7684\u673a\u5175\u5b9a\u4f4d\u88c5\u7f6e\uff0c\u5f00\u542f\u80fd\u8ba9\u53cb\u65b9\u673a\u5175\u83b7\u5f97\u5b9a\u4f4d\uff0c\u5f15\u5bfc\u98de\u5f39\u5bf9\u8303\u56f4\u5185\u76ee\u6807\u8fdb\u884c\u7cbe\u51c6\u6253\u51fb\u3002\u540c\u65f6\u96c6\u6210\u4e86\u5f3a\u5316\u673a\u5175\u6bcf\u56de\u5408\u9996\u6b21\u653b\u51fb\u80fd\u529b\u7684\u529f\u80fd\u3002",
-      "skill": {
-        "ID": "62319",
-        "name": "Guide Drive \u00b7 Re-ATK",
-        "icon": "Icon_skill_passive_5196",
-        "SpecificEffects": "Gains Code <skill mainSkill=62319>[Tracer Coating]</skill>.\nEnables the ST's adjacent <color=#F74848>2</color>-tile area to become a valid attack zone for allied Missile Launcher and Rocket Launcher attacks.\nWhen re-attacking, Hit Rate <color=#F74848>+10%</color> and Crit Rate <color=#F74848>+5%</color>.\nST Body HP <color=#F74848>+10%</color> and DMG Dealt <color=#F74848>+5%</color>."
-      },
-      "crafting": [
-        {
-          "kind": "item",
-          "id": "60802105",
-          "qty": 1,
-          "composite": true
-        },
-        {
-          "kind": "generic",
-          "icon": "materials/random-ssr.png",
-          "label": "Random Composite Backpack",
-          "qty": 1,
-          "composite": true
-        },
-        {
-          "kind": "generic",
-          "icon": "materials/random-ssr.png",
-          "label": "Random S-Grade Backpack",
-          "qty": 3
-        },
-        {
-          "kind": "generic",
-          "icon": "materials/ac-blueprint.png",
-          "label": "AC Blueprint",
-          "qty": 1
-        }
-      ],
-      "enTranslation": true
-    },
-    {
-      "ID": "60802406",
-      "name": "Navigator",
-      "quality": "SSSR",
-      "weight": "150",
-      "BackpackMainType": "Radar",
-      "AssemblableAirmenType": "Light/Medium/Heavy",
-      "icon": "Icon_backpack_60800201",
-      "HowGet": "\u65e0",
-      "RelatedDescription": "\u65e7\u5f0f\u96f7\u8fbe\u5f3a\u5316\u80cc\u5305\u7684\u6539\u826f\u5347\u7ea7\u6b3e\uff0c\u5c0f\u578b\u5316\u7684\u673a\u5175\u5b9a\u4f4d\u88c5\u7f6e\uff0c\u5f00\u542f\u80fd\u8ba9\u53cb\u65b9\u673a\u5175\u83b7\u5f97\u5b9a\u4f4d\uff0c\u5f15\u5bfc\u98de\u5f39\u5bf9\u8303\u56f4\u5185\u76ee\u6807\u8fdb\u884c\u7cbe\u51c6\u6253\u51fb\u3002\u540c\u65f6\u96c6\u6210\u4e86\u5f3a\u5316\u673a\u5175\u6bcf\u56de\u5408\u9996\u6b21\u653b\u51fb\u80fd\u529b\u7684\u529f\u80fd\u3002",
-      "skill": {
-        "ID": "62305",
-        "name": "Navigator Drive \u00b7 First Strike",
-        "icon": "Icon_skill_passive_5237",
-        "SpecificEffects": "Enables the ST's adjacent <color=#F74848>2</color>-tile area to become a valid attack zone for allied Missile Launcher and Rocket Launcher attacks. Attacks directed by this effect gain Hit Rate <color=#F74848>+25%</color>.\nWhen actively attacking for the <color=#F74848>1st</color> time each turn, DMG <color=#F74848>+7.5%</color> and Crit Rate <color=#F74848>+5%</color>.\nST Body HP <color=#F74848>+10%</color> and DMG Dealt <color=#F74848>+5%</color>."
-      },
-      "crafting": [
-        {
-          "kind": "item",
-          "id": "60802405",
-          "qty": 1,
-          "composite": true
-        },
-        {
-          "kind": "generic",
-          "icon": "materials/random-ssr.png",
-          "label": "Random Composite Backpack",
-          "qty": 1,
-          "composite": true
-        },
-        {
-          "kind": "generic",
-          "icon": "materials/random-ssr.png",
-          "label": "Random S-Grade Backpack",
-          "qty": 3
-        },
-        {
-          "kind": "generic",
-          "icon": "materials/ac-blueprint.png",
-          "label": "AC Blueprint",
-          "qty": 1
-        }
-      ],
-      "enTranslation": true
-    },
-    {
-      "ID": "60801706",
-      "name": "Scout",
-      "quality": "SSSR",
-      "weight": "150",
-      "BackpackMainType": "Radar",
-      "AssemblableAirmenType": "Light/Medium/Heavy",
-      "icon": "Icon_backpack_60800201",
-      "HowGet": "\u65e0",
-      "RelatedDescription": "\u65e7\u5f0f\u96f7\u8fbe\u5e72\u6270\u80cc\u5305\u7684\u6539\u826f\u5347\u7ea7\u6b3e\uff0c\u5c0f\u578b\u5316\u7684\u673a\u5175\u5b9a\u4f4d\u88c5\u7f6e\uff0c\u5f00\u542f\u80fd\u8ba9\u53cb\u65b9\u673a\u5175\u83b7\u5f97\u5b9a\u4f4d\uff0c\u5f15\u5bfc\u98de\u5f39\u5bf9\u8303\u56f4\u5185\u76ee\u6807\u8fdb\u884c\u7cbe\u51c6\u6253\u51fb\u3002\u540c\u65f6\u96c6\u6210\u4e86\u5bf9\u654c\u673a\u906d\u53d7\u4f24\u5bb3\u63d0\u5347\u7684\u529f\u80fd\u3002",
-      "skill": {
-        "ID": "62312",
-        "name": "Scout Drive \u00b7 DMG UP",
-        "icon": "Icon_skill_passive_5103",
-        "SpecificEffects": "View distance <color=#F74848>+1</color> in Arashi Fog stages.\nCan use Code <skill mainSkill=62312>[Radar Detection]</skill>: removes <buf ID=900033>[Stealth]</buf> from all enemy STs within <color=#F74848>4</color> tiles. Triggers <buf ID=900004>[Re-ATK]</buf> in place afterward.\nEnables the ST's adjacent <color=#F74848>2</color>-tile area to become a valid attack zone for allied Missile Launcher and Rocket Launcher attacks.\nWhen in combat, enemy DMG Taken <color=#F74848>+10%</color>.\nST Body HP <color=#F74848>+10%</color> and DMG Dealt <color=#F74848>+5%</color>."
-      },
-      "crafting": [
-        {
-          "kind": "item",
-          "id": "60801705",
-          "qty": 1,
-          "composite": true
-        },
-        {
-          "kind": "generic",
-          "icon": "materials/random-ssr.png",
-          "label": "Random Composite Backpack",
-          "qty": 1,
-          "composite": true
-        },
-        {
-          "kind": "generic",
-          "icon": "materials/random-ssr.png",
-          "label": "Random S-Grade Backpack",
-          "qty": 3
-        },
-        {
-          "kind": "generic",
-          "icon": "materials/ac-blueprint.png",
-          "label": "AC Blueprint",
-          "qty": 1
-        }
-      ],
+      "version": "1.6",
       "enTranslation": true
     },
     {
