@@ -2,6 +2,11 @@ var Pages = window.Pages || {};
 
 var MECH_QUALITY_LABEL = { R: 'B-rank', SR: 'A-rank', SSR: 'S-rank' };
 var MECH_QUALITY_CLASS  = { R: 'rank-b',  SR: 'rank-a',  SSR: 'rank-s'  };
+var MECH_QUALITY_BG = {
+  SSR: 'data/background/quality-ssr.png',
+  SR:  'data/background/quality-sr.png',
+  R:   'data/background/quality-r.png',
+};
 var MECH_AVATAR_BASE    = 'https://media.zlongame.com/media/pictures/cn/community/img/gl/gameInfo/mecha/';
 var MECH_PORTRAIT_BASE  = 'https://media.zlongame.com/media/pictures/cn/community/img/gl/gameInfo/mechaLive/';
 var MODULE_ICON_BASE    = 'https://media.zlongame.com/media/pictures/cn/community/img/gl/gameInfo/skill/';
@@ -122,12 +127,13 @@ Pages.sts = {
     var cards = filtered.map(function (m) {
       var rankLabel = MECH_QUALITY_LABEL[m.quality] || m.quality;
       var rankClass = MECH_QUALITY_CLASS[m.quality] || '';
+      var bgSrc     = MECH_QUALITY_BG[m.quality] || '';
       var imgSrc    = MECH_AVATAR_BASE + encodeURIComponent(m.icon) + '.png';
 
       return (
         '<div class="col-6 col-sm-4 col-md-3 col-xl-2">' +
           '<div class="pilot-card" data-mech="' + encodeURIComponent(m.name) + '">' +
-            '<div class="pilot-avatar">' +
+            '<div class="pilot-avatar" style="background-image:url(\'' + bgSrc + '\')">' +
               '<img src="' + imgSrc + '" alt="' + $('<span>').text(m.name).html() + '" loading="lazy" />' +
               '<span class="version-badge">v' + $('<span>').text(m.version).html() + '</span>' +
               '<span class="rank-badge ' + rankClass + '">' + rankLabel + '</span>' +
