@@ -54,6 +54,16 @@
       "SpecificEffects": ""
     }
   },
+  "hiddenSkills": [
+    {
+      "name": "Precision Fire",
+      "icon": "Icon_skill_main_1125",
+      "type": "EquipmentSkill",
+      "Ap": "3",
+      "CD": "0",
+      "describe": "Uses a Machine Gun to attack a target, dealing <color=#F74848>1.3x</color> DMG. When possessing <color=#F74848>80</color> or more stacks of <buf ID=2020505>[Overcharged Bullet]</buf>, Hit Rate and Critical Hit chance increase by <color=#F74848>20%</color>."
+    }
+  ],
   "neuralPassives": {
     "200011": {
       "name": "CEC 2",

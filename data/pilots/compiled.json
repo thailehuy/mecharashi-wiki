@@ -24389,8 +24389,8 @@
       "quality": "SSR",
       "Talent0_2Ability": {
         "ID": "202050",
-        "name": "\u9971\u548c\u5c04\u51fb",
-        "SpecificEffects": "\u540c\u65f6\u88c5\u5907\u4e24\u628a\u673a\u67aa\u65f6\uff0c[\u666e\u901a\u653b\u51fb]<buf ID=900002>[\u534f\u529b\u653b\u51fb]</buf>\u5347\u7ea7\u4e3a<buf ID=900150>[\u53cc\u67aa\u666e\u653b]</buf><buf ID=900069>[\u53cc\u67aa\u534f\u529b]</buf>\uff1b\u4f7f\u7528\u673a\u67aa\u53d1\u52a8[\u666e\u901a\u653b\u51fb]\u548c<buf ID=900002>[\u534f\u529b\u653b\u51fb]</buf>\u65f6\uff0c\u6bcf\u547d\u4e2d<color=#F74848>1</color>\u53d1\u5b50\u5f39\uff0c\u653b\u51fb\u540e\u83b7\u5f97<color=#F74848>1</color>\u5c42<buf ID=2020505>[\u5f39\u6f6e\u84c4\u80fd]</buf>\uff0c\u53d1\u52a8<buf ID=900153>[\u6b66\u5668\u6280\u80fd]</buf>\u65f6\u6d88\u8017\u5c42\u6570\uff0c\u8fbe\u5230<color=#F74848>200</color>\u5c42\u65f6\u8fdb\u5165<buf ID=2020468>[\u8fc7\u70ed\u72b6\u6001]</buf>",
+        "name": "Saturated Fire",
+        "SpecificEffects": "When both hands are equipped with Machine Gun, [Basic Attack] and <buf ID=900002>[Link Attack]</buf> are upgraded to <buf ID=900150>[Twin-Gun Basic Attack]</buf> and <buf ID=900069>[Twin-Gun Link Attack]</buf>. When using Machine Gun to performs [Basic Attack] or <buf ID=900002>[Link Attack]</buf>, for each <color=#F74848>1</color> bullet hit, gains <color=#F74848>1</color> stack of <buf ID=2020505>[Overcharged Bullet]</buf> after the action. Activating <buf ID=900153>[Weapon Skill]</buf> consumes corresponding number of stacks. Enters <buf ID=2020468>[Overheating]</buf> when reaches <color=#F74848>200</color> stacks.",
         "BufCarried": "2020012/2020501/2020502/2020503/2020504/2020506/2020507/2020508/2020509/2020510/2020513/2020514/2020515/2020500",
         "SkillIcon": "Icon_skill_talent_5159",
         "icon": "Icon_skill_talent_5159",
@@ -24399,8 +24399,8 @@
       },
       "Talent3_5Ability": {
         "ID": "202051",
-        "name": "\u9971\u548c\u5c04\u51fb",
-        "SpecificEffects": "\u540c\u65f6\u88c5\u5907\u4e24\u628a\u673a\u67aa\u65f6\uff0c[\u666e\u901a\u653b\u51fb]<buf ID=900002>[\u534f\u529b\u653b\u51fb]</buf>\u5347\u7ea7\u4e3a<buf ID=900150>[\u53cc\u67aa\u666e\u653b]</buf><buf ID=900069>[\u53cc\u67aa\u534f\u529b]</buf>\uff1b\u4f7f\u7528\u673a\u67aa\u53d1\u52a8[\u666e\u901a\u653b\u51fb]\u548c<buf ID=900002>[\u534f\u529b\u653b\u51fb]</buf>\u65f6\uff0c\u6bcf\u547d\u4e2d<color=#F74848>1</color>\u53d1\u5b50\u5f39\uff0c\u653b\u51fb\u540e\u83b7\u5f97<color=#F74848>1</color>\u5c42<buf ID=2020505>[\u5f39\u6f6e\u84c4\u80fd]</buf>\uff0c\u53d1\u52a8<buf ID=900153>[\u6b66\u5668\u6280\u80fd]</buf>\u65f6\u6d88\u8017\u5c42\u6570\uff0c\u8fbe\u5230<color=#F74848>200</color>\u5c42\u65f6\u8fdb\u5165<buf ID=2020468>[\u8fc7\u70ed\u72b6\u6001]</buf>\uff1b\n\u673a\u67aa\u5c04\u7a0b<color=#F74848>+1</color>\uff1b\u4f7f\u7528\u673a\u67aa\u53d1\u52a8<buf ID=900153>[\u6b66\u5668\u6280\u80fd]</buf>\u65f6\uff0c\u82e5\u62e5\u6709<color=#F74848>120</color>\u5c42\u53ca\u4ee5\u4e0a<buf ID=2020505>[\u5f39\u6f6e\u84c4\u80fd]</buf>\uff0c\u6218\u524d\u6263\u9664\u76ee\u6807<color=#F74848>1</color>\u70b9PP\uff0c\u6bcf\u56de\u5408\u6700\u591a\u53d1\u52a8<color=#F74848>1</color>\u6b21",
+        "name": "Saturated Fire",
+        "SpecificEffects": "When both hands are equipped with Machine Gun, [Basic Attack] and <buf ID=900002>[Link Attack]</buf> are upgraded to <buf ID=900150>[Twin-Gun Basic Attack]</buf> and <buf ID=900069>[Twin-Gun Link Attack]</buf>. When using Machine Gun to performs [Basic Attack] or <buf ID=900002>[Link Attack]</buf>, for each <color=#F74848>1</color> bullet hit, gains <color=#F74848>1</color> stack of <buf ID=2020505>[Overcharged Bullet]</buf> after the action. Activating <buf ID=900153>[Weapon Skill]</buf> consumes corresponding number of stacks. Enters <buf ID=2020468>[Overheating]</buf> when reaches <color=#F74848>200</color> stacks.\nMachine Gun range increases by <color=#F74848>+1</color>. When using Machine Gun to activate <buf ID=900153>[Weapon Skill]</buf> with <color=#F74848>120</color> or more stacks of <buf ID=2020505>[Overcharged Bullet]</buf>, reduces <color=#F74848>1</color> PP from the target. This effect can trigger <color=#F74848>1</color> times per turn.",
         "BufCarried": "2020012/2020501/2020502/2020503/2020504/2020506/2020507/2020508/2020509/2020510/2020513/2020514/2020515/2020500/2020511/2020520",
         "SkillIcon": "Icon_skill_talent_5159",
         "icon": "Icon_skill_talent_5159",
@@ -24694,8 +24694,8 @@
                 "type": 3,
                 "PassiveSkill": {
                   "ID": "202041",
-                  "name": "\u533a\u57df\u534f\u540c1",
-                  "SpecificEffects": "\u5728\u573a\u65f6\uff0c\u6240\u6709\u53cb\u65b9\u5355\u4f4d<buf ID=900002>[\u534f\u529b\u653b\u51fb]</buf>\u4f24\u5bb3\u63d0\u5347<color=#F74848>15%</color>\uff0c\u7a81\u51fb\u548c\u5c04\u51fb\u6b66\u5668<buf ID=900002>[\u534f\u529b\u653b\u51fb]</buf>\u5c04\u7a0b<color=#F74848>+1</color>",
+                  "name": "Zone Contract 1",
+                  "SpecificEffects": "All allies <buf ID=900002>[Link Attack]</buf> DMG increases by <color=#F74848>15%</color>, and assault and ranged weapons gains <color=#F74848>+1</color> <buf ID=900002>[Link Attack]</buf> count.",
                   "BufCarried": "2020411/2020413",
                   "SkillIcon": "Icon_skill_passive_5282",
                   "icon": "Icon_skill_passive_5282",
@@ -24750,8 +24750,8 @@
                 "type": 3,
                 "PassiveSkill": {
                   "ID": "202044",
-                  "name": "\u533a\u57df\u534f\u540c2",
-                  "SpecificEffects": "\u884c\u52a8\u5f00\u59cb\u65f6\uff0c\u82e5\u62e5\u6709<color=#F74848>80</color>\u5c42\u53ca\u4ee5\u4e0a<buf ID=2020505>[\u5f39\u6f6e\u84c4\u80fd]</buf>\uff0c\u673a\u67aa\u5c04\u7a0b<color=#F74848>+1</color>\uff0c\u6301\u7eed\u81f3\u4e0b\u6b21\u884c\u52a8\u5f00\u59cb",
+                  "name": "Zone Contract 2",
+                  "SpecificEffects": "At the start of action, if possesses <color=#F74848>80</color> or more stacks of <buf ID=2020505>[Overcharged Bullet]</buf>, Machine Gun range increases by <color=#F74848>+1</color>, lasting till the start of next action.",
                   "BufCarried": "2020441",
                   "SkillIcon": "Icon_skill_passive_5282",
                   "icon": "Icon_skill_passive_5282",
@@ -24769,8 +24769,8 @@
                 "type": 3,
                 "PassiveSkill": {
                   "ID": "202045",
-                  "name": "\u533a\u57df\u534f\u540c3",
-                  "SpecificEffects": "<buf ID=2000011>[\u534f\u540c\u4f5c\u62181]</buf>\u6bcf\u56de\u5408\u53ef\u53d1\u52a8\u7684\u6b21\u6570<color=#F74848>+1</color>\uff0c\u6bcf\u53d1\u52a8<color=#F74848>4</color>\u6b21<buf ID=900002>[\u534f\u529b\u653b\u51fb]</buf>\u540e\u53ef\u83b7\u5f97<color=#F74848>1</color>AP",
+                  "name": "Zone Contract 3",
+                  "SpecificEffects": "<buf ID=2000011>[Zone Contract 1]</buf> grants additionally <color=#F74848>+1</color> <buf ID=900002>[Link Attack]</buf> count. For each <color=#F74848>4</color> <buf ID=900002>[Link Attack]</buf> triggered, gains <color=#F74848>1</color> AP.",
                   "BufCarried": "2020451/2020452/2020453",
                   "SkillIcon": "Icon_skill_passive_5282",
                   "icon": "Icon_skill_passive_5282",
@@ -24788,8 +24788,8 @@
                 "type": 3,
                 "PassiveSkill": {
                   "ID": "202046",
-                  "name": "\u533a\u57df\u534f\u540c4",
-                  "SpecificEffects": "\u4f7f\u7528\u673a\u67aa\u653b\u51fb\u65f6\uff0c\u6bcf\u6709<color=#F74848>40</color>\u5c42<buf ID=2020505>[\u5f39\u6f6e\u84c4\u80fd]</buf>\uff0c\u6700\u7ec8\u4f24\u5bb3\u63d0\u5347<color=#F74848>10%</color>\uff0c\u6700\u591a\u63d0\u5347<color=#F74848>30%</color>",
+                  "name": "Zone Contract 4",
+                  "SpecificEffects": "When equipping Machine Guns, for each <color=#F74848>40</color> stacks of <buf ID=2020505>[Overcharged Bullet]</buf>, Final DMG dealt increases by <color=#F74848>10%</color>, up to <color=#F74848>30%</color>.",
                   "BufCarried": "2020461/2020462/2020463",
                   "SkillIcon": "Icon_skill_passive_5282",
                   "icon": "Icon_skill_passive_5282",
@@ -25019,8 +25019,8 @@
           "skill": {
             "ID": "202002",
             "remarks": "\u90d1\u4e50\u8431-\u4eff\u751f\u7535\u8111",
-            "name": "\u672c\u80fd\u901f\u5c04",
-            "describe": "\u540c\u65f6\u4f7f\u7528\u4e24\u628a\u673a\u67aa\u653b\u51fb\u5355\u4e2a\u76ee\u6807\uff0c\u9020\u6210<color=#F74848>2\u00d70.55</color>\u500d\u4f24\u5bb3\uff0c\u6bcf\u547d\u4e2d<color=#F74848>1</color>\u53d1\u5b50\u5f39\uff0c\u653b\u51fb\u540e\u83b7\u5f97<color=#F74848>2</color>\u5c42<buf ID=2020505>[\u5f39\u6f6e\u84c4\u80fd]</buf>\uff0c\u4e14\u6218\u540e\u4e0d\u4f1a\u635f\u5931<buf ID=2020505>[\u5f39\u6f6e\u84c4\u80fd]</buf>",
+            "name": "Twin-Gun Reflex",
+            "describe": "Uses two Machine Guns to attack a target, dealing <color=#F74848>2x0.55</color> DMG. Each <color=#F74848>1</color> grants <color=#F74848>2</color> stacks of <buf ID=2020505>[Overcharged Bullet]</buf>. <buf ID=2020505>[Overcharged Bullet]</buf> stacks are retained after combat.",
             "type": "EquipmentSkill",
             "Ap": "2",
             "matchingWeaponType": "\u673a\u67aa",
@@ -25046,8 +25046,8 @@
           "weight": 2721,
           "skill": {
             "ID": "202003",
-            "name": "\u706b\u529b\u652f\u70b9",
-            "SpecificEffects": "\u6bcf\u5c42<buf ID=2020505>[\u5f39\u6f6e\u84c4\u80fd]</buf>\u4f7f\u4f24\u5bb3\u63d0\u5347<color=#F74848>0.25%</color>\uff0c\u6700\u591a\u63d0\u5347<color=#F74848>25%</color>\uff0c\u884c\u52a8\u5f00\u59cb\u65f6\uff0c\u79fb\u9664<color=#F74848>10</color>\u5c42<buf ID=2020505>[\u5f39\u6f6e\u84c4\u80fd]</buf>",
+            "name": "Overcharged Firepower",
+            "SpecificEffects": "Each stack of <buf ID=2020505>[Overcharged Bullet]</buf> increases DMG dealt by <color=#F74848>0.25%</color>, up to <color=#F74848>25%</color>. At the start of action, consumes <color=#F74848>10</color> stacks of <buf ID=2020505>[Overcharged Bullet]</buf>.",
             "BufCarried": "2020031/2020032",
             "SkillIcon": "Icon_skill_passive_1135",
             "icon": "Icon_skill_passive_1135",
@@ -25072,8 +25072,8 @@
           "skill": {
             "ID": "202004",
             "remarks": "\u90d1\u4e50\u8431-\u4eff\u751f\u7535\u8111",
-            "name": "\u5947\u88ad",
-            "describe": "\u7acb\u5373\u83b7\u5f97<color=#F74848>20</color>\u5c42<buf ID=2020505>[\u5f39\u6f6e\u84c4\u80fd]</buf>\uff0c\u4e4b\u540e\u4f7f\u5f53\u524d<buf ID=2020505>[\u5f39\u6f6e\u84c4\u80fd]</buf>\u5c42\u6570\u9501\u5b9a\uff0c\u4e0d\u53d7\u5230\u4efb\u4f55\u589e\u51cf\u6548\u679c\u5f71\u54cd\uff0c<buf ID=900002>[\u534f\u529b\u653b\u51fb]</buf>\u53ef\u53d1\u52a8\u6b21\u6570<color=#F74848>+8</color>\uff0c\u6301\u7eed\u81f3\u4e0b\u6b21\u884c\u52a8\u5f00\u59cb\uff0c\u7136\u540e\u53ef\u4ee5\u4f7f\u7528\u5b8c\u6574\u79fb\u52a8\u529b\u7ee7\u7eed\u884c\u52a8",
+            "name": "Sudden Strike",
+            "describe": "Instantly gains <color=#F74848>20</color> stacks of <buf ID=2020505>[Overcharged Bullet]</buf>, also locks the number <buf ID=2020505>[Overcharged Bullet]</buf> stacks, cannot gains or consumes stacks. <buf ID=900002>[Link Attack]</buf> count increases by <color=#F74848>+8</color>. This effect lasts till the start of next turn. Can continue action with full movement.",
             "type": "Order",
             "CD": "3",
             "Ap": "0",
@@ -25099,8 +25099,8 @@
           "weight": 2723,
           "skill": {
             "ID": "202005",
-            "name": "\u6597\u4e89\u5fc3",
-            "SpecificEffects": "\u4e3b\u52a8\u653b\u51fb\u65f6\uff0c\u82e5\u62e5\u6709<color=#F74848>80</color>\u5c42\u53ca\u4ee5\u4e0a<buf ID=2020505>[\u5f39\u6f6e\u84c4\u80fd]</buf>\uff0c\u6218\u524d\u4f7f\u81ea\u5df1\u83b7\u5f97<buf ID=7100404>[\u66b4\u51fb\u7387\u63d0\u5347\u2161]</buf><buf ID=7100104>[\u547d\u4e2d\u7387\u63d0\u5347\u2161]</buf><buf ID=7100503>[\u66b4\u51fb\u4f24\u5bb3\u63d0\u5347\u2161]</buf>\u4e2d\u968f\u673a<color=#F74848>1</color>\u4e2a\uff0c\u6301\u7eed<color=#F74848>2</color>\u56de\u5408",
+            "name": "Fighting Spirit",
+            "SpecificEffects": "When actively attacking, if possesses <color=#F74848>80</color> or more stacks of <buf ID=2020505>[Overcharged Bullet]</buf>, randomly gains <color=#F74848>1</color> of <buf ID=7100404>[Crit Rate UP II]</buf>, <buf ID=7100104>[Hit Rate UP II]</buf> or <buf ID=7100503>[Crit DMG UP II]</buf> before combat, lasting for <color=#F74848>2</color> turns.",
             "BufCarried": "2020051",
             "SkillIcon": "Icon_skill_passive_4132",
             "icon": "Icon_skill_passive_4132",
@@ -25125,8 +25125,8 @@
           "skill": {
             "ID": "202006",
             "remarks": "\u90d1\u4e50\u8431-\u4eff\u751f\u7535\u8111",
-            "name": "\u7a7f\u63d2\u7a81\u9632",
-            "describe": "\u9009\u62e9\u5c04\u7a0b\u5185<color=#F74848>1</color>\u540d\u76ee\u6807\uff0c\u76ee\u6807\u5468\u56f4<color=#F74848>2</color>\u683c\u4f4d\u7f6e\u53ef\u505c\u7559\uff0c\u540c\u65f6\u4f7f\u7528\u4e24\u628a\u673a\u67aa\u653b\u51fb\u5355\u4e2a\u76ee\u6807\uff0c\u9020\u6210<color=#F74848>2\u00d70.7</color>\u500d\u4f24\u5bb3\uff0c\u4e4b\u540e\u505c\u7559\u5728\u76ee\u6807\u5468\u56f4<color=#F74848>2</color>\u683c\u7a7a\u5730\u4e0a\uff0c\u672c\u6b21\u653b\u51fb\u76ee\u6807\u53ca\u5176\u53cb\u519b\u65e0\u6cd5\u53d1\u52a8\u53cd\u51fb\u548c<buf ID=900061>[\u534f\u529b\u53cd\u51fb]</buf>\uff0c\u62e5\u6709<color=#F74848>80</color>\u5c42\u53ca\u4ee5\u4e0a<buf ID=2020505>[\u5f39\u6f6e\u84c4\u80fd]</buf>\u65f6\uff0c\u66b4\u51fb\u7387\u548c\u66b4\u51fb\u4f24\u5bb3\u63d0\u5347<color=#F74848>20%</color>",
+            "name": "Intercepting Strike",
+            "describe": "Attacks <color=#F74848>1</color> target within <color=#F74848>2</color> adjacent tiles with two Machine Guns, dealing <color=#F74848>2x0.7</color> DMG. Then remains on an empty tile within <color=#F74848>2</color> adjacent tiles around the target. The target cannot launch [Retaliation] or <buf ID=900061>[Link Retaliation]</buf>. If possesses <color=#F74848>80</color> or more stacks of <buf ID=2020505>[Overcharged Bullet]</buf>, this attack's Critical Hit chance and Critical Hit DMG are increased by <color=#F74848>20%</color>.",
             "type": "EquipmentSkill",
             "Ap": "4",
             "matchingWeaponType": "\u673a\u67aa",
@@ -25152,8 +25152,8 @@
           "weight": 2725,
           "skill": {
             "ID": "202007",
-            "name": "\u51b3\u80dc\u5fc3",
-            "SpecificEffects": "\u4f7f\u7528\u673a\u67aa\u53d1\u52a8<buf ID=900153>[\u6b66\u5668\u6280\u80fd]</buf>\u65f6\uff0c\u82e5\u6709<color=#F74848>120</color>\u5c42\u53ca\u4ee5\u4e0a<buf ID=2020505>[\u5f39\u6f6e\u84c4\u80fd]</buf>\uff0c\u6218\u540e\u6d88\u8017<color=#F74848>1</color>PP\u5e76\u56de\u590d<color=#F74848>3</color>AP\uff0c\u6bcf\u56de\u5408\u6700\u591a\u53d1\u52a8<color=#F74848>1</color>\u6b21\uff0c\u6bcf\u6b21\u51fa\u51fb\u6700\u591a\u62e5\u6709<color=#F74848>2</color>\u70b9PP",
+            "name": "Determination",
+            "SpecificEffects": "When activating <buf ID=900153>[Weapon Skill]</buf> with Machine Gun, if possesses <color=#F74848>120</color> or more stacks of <buf ID=2020505>[Overcharged Bullet]</buf>, consumes <color=#F74848>1</color> PP and recovers <color=#F74848>3</color> AP after combat. This effect can trigger <color=#F74848>1</color> time per turn. Gains <color=#F74848>2</color> PP at the start of battle.",
             "BufCarried": "2020071",
             "SkillIcon": "Icon_skill_pp_1103",
             "icon": "Icon_skill_pp_1103",
@@ -25178,8 +25178,8 @@
           "skill": {
             "ID": "202008",
             "remarks": "\u90d1\u4e50\u8431-\u4eff\u751f\u7535\u8111",
-            "name": "\u51b2\u950b\u53f7",
-            "describe": "\u540c\u65f6\u4f7f\u7528\u4e24\u628a\u673a\u67aa\u653b\u51fb\u5355\u4e2a\u76ee\u6807\uff0c\u9020\u6210<color=#F74848>2\u00d70.7</color>\u500d\u4f24\u5bb3\uff0c\u5e76\u4f7f\u5168\u4f53\u53cb\u519b\u5bf9\u76ee\u6807\u53d1\u52a8<buf ID=900002>[\u534f\u529b\u653b\u51fb]</buf>\uff1b\u8be5\u534f\u529b\u653b\u51fb\u4e0d\u8981\u6c42\u53cb\u519b\u62e5\u6709\u534f\u529b\u80fd\u529b\uff0c\u4e5f\u4e0d\u6d88\u8017\u534f\u529b\u6b21\u6570\uff1b\u82e5\u62e5\u6709<color=#F74848>80</color>\u5c42\u53ca\u4ee5\u4e0a<buf ID=2020505>[\u5f39\u6f6e\u84c4\u80fd]</buf>\uff0c\u6218\u540e\u5bf9\u81ea\u5df1\u65bd\u52a0<buf ID=2020082>[\u96c6\u4e2d\u7a81\u7834]</buf>\uff0c\u4e0b\u6b21\u884c\u52a8\u5f00\u59cb\u65f6\u79fb\u9664",
+            "name": "Vanguard Signal",
+            "describe": "Uses two Machine Guns to attack a target, dealing <color=#F74848>2x0.7</color> DMG and forces all allies within range to launch <buf ID=900002>[Link Attack]</buf> against the target. This <buf ID=900002>[Link Attack]</buf> does not require allies to possess a specific skill and does not consume any Link times. If possesses <color=#F74848>80</color> or more stacks of <buf ID=2020505>[Overcharged Bullet]</buf>, gains <buf ID=2020082>[Focus Fire]</buf> after combat, lasting till the start of next action.",
             "type": "EquipmentSkill",
             "Ap": "4",
             "matchingWeaponType": "\u673a\u67aa",
@@ -25449,8 +25449,18 @@
       "AlternateSkins": [
         "B"
       ],
-      "version": "1.0",
-      "enTranslation": false
+      "version": "2.8",
+      "enTranslation": true,
+      "hiddenSkills": [
+        {
+          "name": "Precision Fire",
+          "icon": "Icon_skill_main_1125",
+          "type": "EquipmentSkill",
+          "Ap": "3",
+          "CD": "0",
+          "describe": "Uses a Machine Gun to attack a target, dealing <color=#F74848>1.3x</color> DMG. When possessing <color=#F74848>80</color> or more stacks of <buf ID=2020505>[Overcharged Bullet]</buf>, Hit Rate and Critical Hit chance increase by <color=#F74848>20%</color>."
+        }
+      ]
     },
     {
       "ID": "10103138",

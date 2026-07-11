@@ -1078,9 +1078,9 @@
     },
     "2020505": {
       "name": "Overcharged Bullet",
-      "effect": "Each <color=#F74848>40</color> stacks increase Machine Gun [Ideal Range] by <color=#F74848>+1</color>, stacking up to <color=#F74848>3</color> timmes. When activating [Weapon Skill] with Machine Gun, each <color=#F74848>40</color> stacks increase Machine Gun bullet count by <color=#F74848>+1</color>, stacking up to <color=#F74848>3</color> times.\nUpon reaching <color=#F74848>200</color> stacks, enters [Overheating] state."
+      "effect": "For each <color=#F74848>40</color> stacks, increases Machine Gun <buf ID=900011>[Ideal Range]</buf> by <color=#F74848>+1</color>, stacking up to <color=#F74848>3</color> times. When activating <buf ID=900153>[Weapon Skill]</buf> with Machine Gun, for each <color=#F74848>40</color> stacks, increases Machine Gun bullet count by <color=#F74848>+1</color>, DMG dealt and Critical Hit chance by <color=#F74848>10%</color>, stacking up to <color=#F74848>3</color> times. <color=#F74848>20</color> stacks are removed for each <color=#F74848>1</color> AP consumed after combat. Upon reaching <color=#F74848>200</color> stacks, enters <buf ID=2020468>[Overheating]</buf> state."
     },
-    "2020505": {
+    "2020082": {
       "name": "Focus Fire",
       "effect": "[Link Attack] DMG increases by <color=#F74848>50%</color>. This effect is removed at the start of next action."
     },

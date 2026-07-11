@@ -1059,6 +1059,34 @@ window.GlossaryData = {
     "5009418": {
       "name": "Resonance Pulse",
       "effect": "After being actively attacked or repaired by Martini, the part with lowest HP receives <color=#F74848>0.3x</color> Martini's Manipulator Repair AMT as [Fixed DMG]. This effect is removed after triggering."
+    },
+    "900150": {
+      "name": "Twin-Gun Basic Attack",
+      "effect": "Use two machine guns to launch a normal attack on the target."
+    },
+    "900069": {
+      "name": "Twin-Gun Link Attack",
+      "effect": "After an ally launches an attack, use two machine guns to launch a [Link Attack] on the target they attacked."
+    },
+    "900153": {
+      "name": "Weapon Skill",
+      "effect": "Active combat skills other than [Normal Attack]."
+    },
+    "2020468": {
+      "name": "Overheating",
+      "effect": "Cannot use any active combat and command skills other than [Normal Attack]. [Overcharged Bullet] will not be consumed for <color=#F74848>1</color> turn. After exiting [Overheating] state, all [Overcharged Bullet] stacks will be removed."
+    },
+    "2020505": {
+      "name": "Overcharged Bullet",
+      "effect": "For each <color=#F74848>40</color> stacks, increases Machine Gun <buf ID=900011>[Ideal Range]</buf> by <color=#F74848>+1</color>, stacking up to <color=#F74848>3</color> times. When activating <buf ID=900153>[Weapon Skill]</buf> with Machine Gun, for each <color=#F74848>40</color> stacks, increases Machine Gun bullet count by <color=#F74848>+1</color>, DMG dealt and Critical Hit chance by <color=#F74848>10%</color>, stacking up to <color=#F74848>3</color> times. <color=#F74848>20</color> stacks are removed for each <color=#F74848>1</color> AP consumed after combat. Upon reaching <color=#F74848>200</color> stacks, enters <buf ID=2020468>[Overheating]</buf> state."
+    },
+    "2020082": {
+      "name": "Focus Fire",
+      "effect": "[Link Attack] DMG increases by <color=#F74848>50%</color>. This effect is removed at the start of next action."
+    },
+    "206242": {
+      "name": "Sentry Mod",
+      "effect": "Before performing <buf ID=900002>[Link Attack]</buf>, DMG dealt increases by <color=#F74848>5%</color> and Critical Hit chance increases by <color=#F74848>2%</color>, stacking up to <color=#F74848>5</color> times, lasting for <color=#F74848>2</color> turns."
     }
   },
   "skill": {
