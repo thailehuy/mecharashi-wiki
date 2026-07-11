@@ -688,6 +688,8 @@ body {
   border: 1px solid #2a2a4a;
   border-radius: 8px;
   padding: 1rem 1.1rem;
+  min-width: 0;
+  box-sizing: border-box;
 }
 
 .talent-header {
@@ -1155,8 +1157,22 @@ a.material-item:hover .material-icon-wrap {
   .nd-parts {
     grid-template-columns: 1fr;
   }
+  .kw {
+    white-space: normal;
+  }
+}
+
+@media (max-width: 700px) {
   .backpack-detail-row {
-    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .backpack-portrait-col {
+    min-width: 0;
+  }
+  .backpack-detail-row > .detail-info-col {
+    flex: 1 1 100%;
+    max-width: 100%;
+    min-width: 0;
   }
 }
 
