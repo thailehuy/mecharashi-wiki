@@ -1,0 +1,10 @@
+{
+  "name": "Concealer",
+  "ac": 7,
+  "skills": {
+    "62301": {
+      "name": "Concealer Drive · DMG UP",
+      "SpecificEffects": "At the end of action, if there are no enemies within <color=#F74848>2</color> tiles, gains <buf ID=3004502>[Stealth I]</buf>, lasting <color=#F74848>2</color> turns. This effect has a <color=#F74848>3</color>-turn trigger interval.\nAt the start of action, if in <buf ID=900033>[Stealth]</buf>, immediately recovers <color=#F74848>1</color> AP.\nWhen in combat, enemy DMG Taken <color=#F74848>+10%</color>.\nST Body HP <color=#F74848>+10%</color> and DMG Dealt <color=#F74848>+5%</color>."
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Repair Jammer - Crit",
+  "RelatedDescription": "An engineering backpack fitted with a high-precision robotic arm that provides professional repairs on the battlefield. Also integrates a function that affects the enemy's Crit capability.",
+  "skills": {
+    "61251": {
+      "name": "Repair Device I · Crit",
+      "SpecificEffects": "When the action starts, repair yourself <color=#F74848>once</color>, restoring HP equal to <color=#F74848>0.6x</color> the Manipulator's Repair AMT. This cannot repair damaged parts.\nIn combat, the enemy's Crit Rate <color=#F74848>-10%</color>."
+    }
+  }
+}

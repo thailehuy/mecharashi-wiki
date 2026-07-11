@@ -1,0 +1,10 @@
+{
+  "name": "Scout",
+  "ac": 14,
+  "skills": {
+    "62312": {
+      "name": "Scout Drive · DMG UP",
+      "SpecificEffects": "View distance <color=#F74848>+1</color> in Arashi Fog stages.\nCan use Code <skill mainSkill=62312>[Radar Detection]</skill>: removes <buf ID=900033>[Stealth]</buf> from all enemy STs within <color=#F74848>4</color> tiles. Triggers <buf ID=900004>[Re-ATK]</buf> in place afterward.\nEnables the ST's adjacent <color=#F74848>2</color>-tile area to become a valid attack zone for allied Missile Launcher and Rocket Launcher attacks.\nWhen in combat, enemy DMG Taken <color=#F74848>+10%</color>.\nST Body HP <color=#F74848>+10%</color> and DMG Dealt <color=#F74848>+5%</color>."
+    }
+  }
+}

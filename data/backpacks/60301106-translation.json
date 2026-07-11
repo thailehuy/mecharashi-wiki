@@ -1,0 +1,10 @@
+{
+  "name": "Resistor",
+  "ac": 11,
+  "skills": {
+    "62307": {
+      "name": "Resistor Drive · Attack",
+      "SpecificEffects": "No ST type restriction.\nWhen hit by a Tactical attack, DMG Taken <color=#F74848>-25%</color>. Similar effects cannot stack.\nWhenever any enemy on the battlefield actively attacks with a Tactical Weapon, gains <color=#F74848>1</color> stack of <buf ID=623076>[Counter Charge]</buf> before combat; if self is the attack target, gains an additional <color=#F74848>1</color> stack. Upon reaching <color=#F74848>6</color> stacks of <buf ID=623076>[Counter Charge]</buf>, repairs <color=#F74848>15%</color> HP to all parts and restores <color=#F74848>1</color> AP after combat, then removes all stacks and cannot gain <buf ID=623076>[Counter Charge]</buf> again this turn.\nWhen in combat, enemy DMG Dealt <color=#F74848>-10%</color>.\nST Body HP <color=#F74848>+10%</color>."
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Stealth Amplifier - Ballistics",
+  "RelatedDescription": "This advanced optics system can distort light, allowing ST fitted with this backpack model to become somewhat invisible. Also integrates a function that enhances the ST's Ballistics capability.",
+  "skills": {
+    "61222": {
+      "name": "Invisibility Device I · Ballistics",
+      "SpecificEffects": "At the end of the action, if there are no enemies within the adjacent (<color=#F74848>2</color> tiles) area, gain <buf ID=3004502>[Stealth I]</buf> with a trigger interval of <color=#F74848>3</color> turns.\nWhen engaging in combat with a target at Ideal Range, gain DMG <color=#F74848>+10%</color> and Crit Rate <color=#F74848>+5%</color>.\nST Body's HP <color=#F74848>+10%</color>, DMG Dealt <color=#F74848>+5%</color>."
+    }
+  }
+}

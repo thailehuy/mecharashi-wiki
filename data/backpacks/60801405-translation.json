@@ -1,0 +1,10 @@
+{
+  "name": "Radar Jammer - Crit",
+  "RelatedDescription": "A miniaturized ST positioner that allows ally STs to gain positions and guide missiles to accurately hit targets within range. Also integrates a function that affects the enemy's Crit capability.",
+  "skills": {
+    "61198": {
+      "name": "TacW Guidance II · Crit",
+      "SpecificEffects": "Enables the ST's adjacent (<color=#F74848>2</color> tiles) area to become a valid attack zone for allies' Missile and Rocket attacks.\nIn combat, the enemy's Crit Rate <color=#F74848>-10%</color>.\nST Body's HP <color=#F74848>+10%</color>, DMG Dealt <color=#F74848>+5%</color>."
+    }
+  }
+}

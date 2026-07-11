@@ -1,0 +1,10 @@
+{
+  "name": "Maneuver Jammer - Crit",
+  "RelatedDescription": "Channels extra energy directly into the leg actuator to improve the ST's mobility, whether using pulleys or walking. Also integrates a function that affects the enemy's Crit capability.",
+  "skills": {
+    "61236": {
+      "name": "Improved Movement I · Crit",
+      "SpecificEffects": "ST Movement <color=#F74848>+1</color>.\nIn combat, the enemy's Crit Rate <color=#F74848>-10%</color>.\nST Body's HP <color=#F74848>+10%</color>, DMG Dealt <color=#F74848>+5%</color>."
+    }
+  }
+}

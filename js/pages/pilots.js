@@ -4,6 +4,11 @@ var GLOBAL_VERSION = 2.0;
 
 var QUALITY_LABEL = { R: 'B-rank', SR: 'A-rank', SSR: 'S-rank' };
 var QUALITY_CLASS  = { R: 'rank-b',  SR: 'rank-a',  SSR: 'rank-s'  };
+var QUALITY_BG = {
+  SSR: 'data/background/quality-ssr.png',
+  SR:  'data/background/quality-sr.png',
+  R:   'data/background/quality-r.png',
+};
 var AVATAR_BASE    = 'https://media.zlongame.com/media/pictures/cn/community/img/gl/gameInfo/characterHalf/';
 var PORTRAIT_BASE  = 'https://media.zlongame.com/media/pictures/cn/community/img/gl/gameInfo/character/';
 var SKILL_BASE      = 'https://media.zlongame.com/media/pictures/cn/community/img/gl/gameInfo/skill/';
@@ -149,6 +154,7 @@ Pages.pilots = {
     var cards = filtered.map(function (p) {
       var rankLabel = QUALITY_LABEL[p.quality] || p.quality;
       var rankClass = QUALITY_CLASS[p.quality] || '';
+      var bgSrc     = QUALITY_BG[p.quality] || '';
       var imgSrc    = AVATAR_BASE + encodeURIComponent(p.PortraitHeroIcon) + '.png';
 
       var weapon = allWeapons.find(function (w) { return w.pilot === p.PilotName; });
@@ -161,7 +167,7 @@ Pages.pilots = {
       return (
         '<div class="col-6 col-sm-4 col-md-3 col-xl-2">' +
           '<div class="pilot-card" data-pilot="' + encodeURIComponent(p.PilotName) + '">' +
-            '<div class="pilot-avatar">' +
+            '<div class="pilot-avatar" style="background-image:url(\'' + bgSrc + '\')">' +
               '<img src="' + imgSrc + '" alt="' + $('<span>').text(p.PilotName).html() + '" loading="lazy" />' +
               '<span class="version-badge">v' + $('<span>').text(p.version).html() + '</span>' +
               '<span class="rank-badge ' + rankClass + '">' + rankLabel + '</span>' +
@@ -210,6 +216,7 @@ Pages.pilots = {
     var self = this;
     var rankLabel   = QUALITY_LABEL[p.quality] || p.quality;
     var rankClass   = QUALITY_CLASS[p.quality] || '';
+    var bgSrc       = QUALITY_BG[p.quality] || '';
 
     var skinLetters = ['A'].concat(p.AlternateSkins || []);
     if (this._skinIndex == null || this._skinIndex >= skinLetters.length) this._skinIndex = 0;
@@ -291,7 +298,7 @@ Pages.pilots = {
       cnWarning +
       '<a href="#pilots" class="btn-back">&#8592; Back to Pilots</a>' +
       '<div class="detail-name-row">' +
-        '<img class="detail-name-avatar" src="' + thumbSrc + '" alt="' + $('<span>').text(p.PilotName).html() + '" />' +
+        '<img class="detail-name-avatar" src="' + thumbSrc + '" alt="' + $('<span>').text(p.PilotName).html() + '" style="background-image:url(\'' + bgSrc + '\')" />' +
         '<div>' +
           '<h2 class="detail-name">' + occIconHtml + $('<span>').text(p.PilotName).html() + '</h2>' +
           '<p class="detail-realname">' + $('<span>').text(p.RealName).html() + '</p>' +
@@ -306,7 +313,7 @@ Pages.pilots = {
       '</div>' +
       '<div class="detail-layout">' +
         '<div class="detail-portrait-col">' +
-          '<div class="detail-portrait">' +
+          '<div class="detail-portrait" style="background-image:url(\'' + bgSrc + '\')">' +
             '<img class="detail-portrait-img" src="' + portraitSrc + '" alt="' + $('<span>').text(p.PilotName).html() + '" />' +
             skinNavHtml +
           '</div>' +

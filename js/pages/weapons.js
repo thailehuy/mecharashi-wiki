@@ -6,6 +6,7 @@ var PILOT_AVATAR_BASE  = 'https://media.zlongame.com/media/pictures/cn/community
 
 var WEAPON_QUALITY_LABEL = { SSSR: 'SSSR', UR: 'UR' };
 var WEAPON_QUALITY_CLASS  = { SSSR: 'rank-sssr', UR: 'rank-ur' };
+var WEAPON_QUALITY_BG = { SSSR: 'data/background/quality-sssr.png' };
 
 var WEAPON_TYPE1_LABEL = {
   Melee:   'Melee',
@@ -114,6 +115,7 @@ Pages.weapons = {
 
         g.weapons.forEach(function (w) {
           var imgSrc = WEAPON_IMG_BASE + encodeURIComponent(w.icon) + '.png';
+          var bgSrc  = WEAPON_QUALITY_BG[w.quality] || '';
 
           var pilotIconHtml = '';
           if (w.pilot) {
@@ -127,7 +129,7 @@ Pages.weapons = {
           var $card = $(
             '<div class="col-6 col-sm-4 col-md-3 col-xl-2 weapon-card-wrap" data-name="' + encodeURIComponent(w.name.toLowerCase()) + '">' +
               '<div class="card-item weapon-card" data-id="' + w.ID + '" data-t1="' + w.WeaponType1 + '" data-t2="' + w.WeaponType2 + '">' +
-                '<div class="weapon-card-img">' +
+                '<div class="weapon-card-img" style="background-image:url(\'' + bgSrc + '\')">' +
                   '<img src="' + imgSrc + '" alt="' + $('<span>').text(w.name).html() + '" loading="lazy" />' +
                   (w.version ? '<span class="version-badge">v' + w.version + '</span>' : '') +
                   '<span class="weapon-type-badge">' + (WEAPON_TYPE2_LABEL[w.WeaponType2] || w.WeaponType2) + '</span>' +
@@ -186,6 +188,7 @@ Pages.weapons = {
 
   _renderDetail: function (w) {
     var imgSrc = WEAPON_IMG_BASE + encodeURIComponent(w.icon) + '.png';
+    var bgSrc  = WEAPON_QUALITY_BG[w.quality] || '';
 
     var pilotHtml = '';
     if (w.pilot) {
@@ -193,9 +196,10 @@ Pages.weapons = {
       var pilot  = pilots.find(function (p) { return p.PilotName === w.pilot; });
       if (pilot) {
         var pAvatarSrc = PILOT_AVATAR_BASE + encodeURIComponent(pilot.PortraitHeroIcon) + '.png';
+        var pBgSrc     = (typeof QUALITY_BG !== 'undefined' ? QUALITY_BG[pilot.quality] : '') || '';
         pilotHtml =
           '<a class="weapon-pilot-card" href="#pilots/' + encodeURIComponent(pilot.PilotName) + '">' +
-            '<img class="weapon-pilot-avatar" src="' + pAvatarSrc + '" alt="' + $('<span>').text(pilot.PilotName).html() + '" />' +
+            '<img class="weapon-pilot-avatar" src="' + pAvatarSrc + '" alt="' + $('<span>').text(pilot.PilotName).html() + '" style="background-image:url(\'' + pBgSrc + '\')" />' +
             '<div class="weapon-pilot-name">' + $('<span>').text(pilot.PilotName).html() + '</div>' +
           '</a>';
       }
@@ -259,7 +263,7 @@ Pages.weapons = {
       '<div class="detail-layout">' +
         '<div class="detail-portrait-col">' +
           '<div class="weapon-portrait-area">' +
-            '<div class="weapon-portrait">' +
+            '<div class="weapon-portrait" style="background-image:url(\'' + bgSrc + '\')">' +
               '<img src="' + imgSrc + '" alt="' + $('<span>').text(w.name).html() + '" />' +
             '</div>' +
             pilotHtml +

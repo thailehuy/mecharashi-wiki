@@ -1,0 +1,10 @@
+{
+  "name": "Stealth Jammer - ATK",
+  "RelatedDescription": "This advanced optics system can distort light, allowing ST fitted with this backpack model to become somewhat invisible. Also integrates a function that affects the enemy's ATK capability.",
+  "skills": {
+    "61249": {
+      "name": "Invisibility Device I · ATK",
+      "SpecificEffects": "At the end of the action, if there are no enemies within the adjacent (<color=#F74848>2</color> tiles) area, gain <buf ID=3004502>[Stealth I]</buf> with a trigger interval of <color=#F74848>3</color> turns.\nIn combat, the enemy's DMG <color=#F74848>-10%</color>.\nST Body's HP <color=#F74848>+10%</color>, DMG Dealt <color=#F74848>+5%</color>."
+    }
+  }
+}

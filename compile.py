@@ -28,5 +28,6 @@ if __name__ == '__main__':
     run('pilots',  os.path.join(ROOT, 'data', 'pilots',  'compile.py'))
     run('mechs',   os.path.join(ROOT, 'data', 'mechs',   'compile.py'))
     run('weapons', os.path.join(ROOT, 'data', 'weapons', 'compile.py'))
+    run('backpacks', os.path.join(ROOT, 'data', 'backpacks', 'compile.py'))
     compile_glossary()
     print('Done.')
