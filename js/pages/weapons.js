@@ -190,6 +190,10 @@ Pages.weapons = {
     var imgSrc = WEAPON_IMG_BASE + encodeURIComponent(w.icon) + '.png';
     var bgSrc  = WEAPON_QUALITY_BG[w.quality] || '';
 
+    var cnWarning = w.version && parseFloat(w.version) > GLOBAL_VERSION
+      ? '<div class="cn-warning">This Weapon data is translated from CN text, there might be inaccuracy and mismatch. The actual translation will be updated when this unit is released in Global.</div>'
+      : '';
+
     var pilotHtml = '';
     if (w.pilot) {
       var pilots = (window.PilotsData || {}).pilots || [];
@@ -258,6 +262,7 @@ Pages.weapons = {
     }
 
     return (
+      cnWarning +
       '<a href="#weapons" class="btn-back">&#8592; Back to Weapons</a>' +
 
       '<div class="detail-layout">' +

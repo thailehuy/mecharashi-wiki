@@ -15,6 +15,12 @@ var BACKPACK_QUALITY_BG = {
   R:    'data/background/quality-r.png',
 };
 
+// Backpack names repeat across quality tiers (e.g. "Jammer - Hit" exists as
+// R/SR/SSR), so routes are keyed by name+quality rather than name alone.
+function backpackSlug(b) {
+  return b.name + '/' + b.quality;
+}
+
 var BACKPACK_TYPE_LABEL = {
   Heal:            'Repair',
   PowerAdd:        'Power',
@@ -56,7 +62,10 @@ Pages.backpacks = {
   render: function (param) {
     var backpacks = (window.BackpacksData || {}).backpacks || [];
     if (param) {
-      var b = backpacks.find(function (x) { return x.ID === decodeURIComponent(param); });
+      var parts   = decodeURIComponent(param).split('/');
+      var quality = parts.pop();
+      var name    = parts.join('/');
+      var b = backpacks.find(function (x) { return x.name === name && x.quality === quality; });
       return b ? this._renderDetail(b) : '<p class="text-danger mt-3">Backpack not found.</p>';
     }
     return this._renderList(backpacks);
@@ -127,7 +136,7 @@ Pages.backpacks = {
             '</div>'
           );
           $card.find('.backpack-card').on('click', function () {
-            window.location.hash = '#backpacks/' + encodeURIComponent(b.ID);
+            window.location.hash = '#backpacks/' + encodeURIComponent(backpackSlug(b));
           });
           $grid.append($card);
         });
@@ -244,7 +253,7 @@ Pages.backpacks = {
         var style = 'background-image:url(\'' + refIconSrc + '\'), url(\'' + refBgSrc + '\');' +
           'background-size: auto 100%, cover; background-position: center, center;';
         return (
-          '<a class="material-item" href="#backpacks/' + encodeURIComponent(ref.ID) + '">' +
+          '<a class="material-item" href="#backpacks/' + encodeURIComponent(backpackSlug(ref)) + '">' +
             '<div class="material-icon-wrap" style="' + style + '">' +
               (m.composite ? compositeBadge : '') +
               (m.qty > 1 ? '<span class="material-qty">x' + m.qty + '</span>' : '') +

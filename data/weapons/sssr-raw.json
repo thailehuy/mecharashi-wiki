@@ -3154,5 +3154,117 @@
       "switch": null,
       "info": 0
     }
+  },
+  {
+    "ID": "10215123",
+    "name": "False Smile",
+    "quality": "SSSR",
+    "WeaponType1": "Melee",
+    "WeaponType2": "PileBunker",
+    "type": "PileBunker",
+    "icon": "Icon_weapon_10200402",
+    "detail": {
+      "data": {
+        "data": [
+          {
+            "ID": "10215123",
+            "name": "False Smile",
+            "quality": "SSSR",
+            "WeaponType1": "Melee",
+            "WeaponType2": "PileBunker",
+            "type": "PileBunker",
+            "icon": "Icon_weapon_10200402",
+            "PassiveSkill": [
+              {
+                "ID": "90001",
+                "name": "Precision Piercer",
+                "SpecificEffects": "",
+                "SkillIcon": "Icon_skill_passive_1146",
+                "icon": "Icon_skill_passive_1146",
+                "Status": 1,
+                "weight": 9001
+              },
+              {
+                "ID": "90002",
+                "name": "Good Medicine Tastes Bitter",
+                "SpecificEffects": "",
+                "SkillIcon": "Icon_skill_talent_3107",
+                "icon": "Icon_skill_talent_3107",
+                "Status": 1,
+                "weight": 9002
+              },
+              {
+                "ID": "90003",
+                "name": "Vital Strike",
+                "SpecificEffects": "",
+                "SkillIcon": "Icon_skill_passive_1114",
+                "icon": "Icon_skill_passive_1114",
+                "Status": 1,
+                "weight": 9003
+              }
+            ]
+          }
+        ]
+      },
+      "status": 1,
+      "switch": null,
+      "info": 0
+    }
+  },
+  {
+    "ID": "20215123",
+    "name": "HMG-29C",
+    "quality": "SSSR",
+    "WeaponType1": "Assault",
+    "WeaponType2": "HeavyMachineGun",
+    "type": "HeavyMachineGun",
+    "icon": "Icon_weapon_20400401",
+    "detail": {
+      "data": {
+        "data": [
+          {
+            "ID": "20215123",
+            "name": "HMG-29C",
+            "quality": "SSSR",
+            "WeaponType1": "Assault",
+            "WeaponType2": "HeavyMachineGun",
+            "type": "HeavyMachineGun",
+            "icon": "Icon_weapon_20400401",
+            "PassiveSkill": [
+              {
+                "ID": "90004",
+                "name": "Steadfast Aim",
+                "SpecificEffects": "",
+                "SkillIcon": "Icon_skill_passive_1146",
+                "icon": "Icon_skill_passive_1146",
+                "Status": 1,
+                "weight": 9004
+              },
+              {
+                "ID": "90005",
+                "name": "Flower Of The Force",
+                "SpecificEffects": "",
+                "SkillIcon": "Icon_skill_talent_5149",
+                "icon": "Icon_skill_talent_5149",
+                "Status": 1,
+                "weight": 9005
+              },
+              {
+                "ID": "90006",
+                "name": "Scaling Barrage",
+                "SpecificEffects": "",
+                "SkillIcon": "Icon_skill_passive_1114",
+                "icon": "Icon_skill_passive_1114",
+                "Status": 1,
+                "weight": 9006
+              }
+            ]
+          }
+        ]
+      },
+      "status": 1,
+      "switch": null,
+      "info": 0
+    }
   }
 ]

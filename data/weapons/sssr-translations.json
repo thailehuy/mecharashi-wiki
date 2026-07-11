@@ -396,251 +396,384 @@
     "ac": 8
   },
   "10815121": {
+    "name": "Z15 Kinetic Axe",
     "passiveSkills": {
       "53062": {
-        "SpecificEffects": "When attacking with a Chainsaw, for every <color=#F74848>1</color> part broken, gains <color=#F74848>1</color> stack of [Chainsaw Heat Up], up to <color=#F74848>3</color> stacks. At the end of action, removes <color=#F74848>1</color> stack."
+        "name": "Overpowered Cutter",
+        "SpecificEffects": "When attacking with a Chainsaw, for every <color=#F74848>1</color> part broken, gains <color=#F74848>1</color> stack of <buf ID=530622>[Chainsaw Heat Up]</buf>, up to <color=#F74848>3</color> stacks. At the end of action, removes <color=#F74848>1</color> stack."
       },
       "53063": {
-        "SpecificEffects": "Enhanced [Courage Burst]: [Vigor] stack cap increased by <color=#F74848>5</color>. At the start of battle, gains <color=#F74848>5</color> stacks of [Vigor]. After actively attacking, if possessing <color=#F74848>10</color> or more stacks of [Vigor], restores <color=#F74848>1</color> AP after combat. Can trigger <color=#F74848>1</color> time per turn."
+        "name": "Courage Burst",
+        "SpecificEffects": "Enhanced [Courage Burst]: <buf ID=1013503>[Vigor]</buf> stack cap increased by <color=#F74848>5</color>. At the start of battle, gains <color=#F74848>5</color> stacks of <buf ID=1013503>[Vigor]</buf>. After actively attacking, if possessing <color=#F74848>10</color> or more stacks of <buf ID=1013503>[Vigor]</buf>, restores <color=#F74848>1</color> AP after combat. Can trigger <color=#F74848>1</color> time per turn."
       },
       "53061": {
+        "name": "Shattering Strike",
         "SpecificEffects": "When attacking, if the part hit does not have full HP, DMG Dealt <color=#F74848>+20%</color> to that part."
       }
-    }
+    },
+    "pilot": "Dean",
+    "ac": 9,
+    "version": "2.1"
   },
   "20315122": {
+    "name": "Jungle Calamity",
     "passiveSkills": {
       "53056": {
+        "name": "Outta My Way!",
         "SpecificEffects": "When initiating combat with a Shotgun, if the target is <color=#F74848>1</color> tile away, DMG <color=#F74848>+25%</color>."
       },
       "53057": {
-        "SpecificEffects": "Enhanced [Secret Execution]: When inflicting [Instability II], instead inflict [Instability III]. For each stack, target DMG Dealt <color=#F74848>-3%</color>. When initiating combat with a Shotgun, if the target has <color=#F74848>3</color> or more stacks of [Instability], uses all Shotguns to launch <buf ID=900004>[Re-ATK]</buf>, dealing <color=#F74848>0.15</color>x DMG."
+        "name": "Take This!",
+        "SpecificEffects": "Enhanced [Secret Execution]: When inflicting <buf ID=1004412>[Instability II]</buf>, instead inflict [Instability III]. For each stack, target DMG Dealt <color=#F74848>-3%</color>. When initiating combat with a Shotgun, if the target has <color=#F74848>3</color> or more stacks of <buf ID=900034>[Instability]</buf>, uses all Shotguns to launch <buf ID=900001>[Flurry Strike]</buf>, dealing <color=#F74848>0.15x</color> DMG."
       },
       "53055": {
-        "SpecificEffects": "When initiating combat, ignores <color=#F74848>30%</color> of target's Armor."
+        "name": "Come at Me!",
+        "SpecificEffects": "When initiating combat, ignores <color=#F74848>30%</color> of the target's Armor."
       }
-    }
+    },
+    "pilot": "Frida",
+    "ac": 9,
+    "version": "2.1"
   },
   "50115123": {
+    "name": "Codex of Sin",
     "passiveSkills": {
       "53113": {
-        "SpecificEffects": "When actively attacking with a Rail Gun, if the target possesses debuffs, DMG <color=#F74848>+20%</color>."
+        "name": "Boundless Bestowal",
+        "SpecificEffects": "Rail Gun Ammo capacity <color=#F74848>+1</color>. When attacking with a Rail Gun, Crit Rate <color=#F74848>+20%</color>."
       },
       "53114": {
-        "SpecificEffects": "Enhanced [Perfectionism]: When deploying a [Tokamak Sphere], redirects attacks to the selected direction and <color=#F74848>2</color> adjacent directions, and redirected damage multiplier <color=#F74848>+0.2</color>. When actively attacking, if target possesses <color=#F74848>5</color> or more debuffs, inflicts [Intimidate] after combat, lasting for <color=#F74848>1</color> turn. When actively attacking, for every <color=#F74848>15</color> debuffs inflicted, restores <color=#F74848>1</color> AP."
+        "name": "Glory of Sin",
+        "SpecificEffects": "Enhanced [Creed Of Sin]: When another ally is actively attacked, inflicts <buf ID=6010502>[Magnetic Lock-On]</buf> on the attacker. Can trigger <color=#F74848>2</color> times per turn. When actively attacking with a Rail Gun, for every <color=#F74848>1</color> target destroyed, restores <color=#F74848>1</color> Rail Gun Ammo, up to <color=#F74848>3</color> times per turn. For every <color=#F74848>1</color> time <buf ID=6010502>[Magnetic Lock-On]</buf> is inflicted, gains <color=#F74848>1</color> stack of <buf ID=531145>[Magnetic Buff]</buf>, up to <color=#F74848>10</color> stacks."
       },
       "53112": {
-        "SpecificEffects": "When actively attacking with a Rail Gun, if hitting <color=#F74848>3</color> or more targets, reloads <color=#F74848>1</color> Ammo after combat. This effect can trigger again after an interval of <color=#F74848>2</color> turns."
+        "name": "Arc Bargain",
+        "SpecificEffects": "When attacking with a Rail Gun, for every <color=#F74848>1</color> Ammo remaining, DMG and Hit Rate <color=#F74848>+4%</color>, up to <color=#F74848>20%</color>."
       }
-    }
+    },
+    "pilot": "Verna",
+    "ac": 18,
+    "version": "3.2"
   },
   "10415123": {
+    "name": "Vow of Protection",
     "passiveSkills": {
       "53065": {
-        "SpecificEffects": "After combat, if the Shield Arm is broken, immediately repair it, and restores <color=#F74848>50%</color> HP. This effect can trigger again after an interval of <color=#F74848>3</color> turns."
+        "name": "Regenerative Arm Plating",
+        "SpecificEffects": "After combat, if the shield-carrying Arm is destroyed, immediately repairs it and restores <color=#F74848>50%</color> HP. Can trigger again after an interval of <color=#F74848>3</color> turns."
       },
       "53066": {
-        "SpecificEffects": "Enhanced [EVA-00 Pilot]: Allies within <buf ID=900022>[Guard]</buf> range take <color=#F74848>-25%</color> DMG from Code and AoE skills. When [Sync Ratio] is above <color=#F74848>65%</color>, DMG Dealt and <buf ID=900017>[Fixed DMG]</buf> Dealt <color=#F74848>+25%</color>."
+        "name": "Oath",
+        "SpecificEffects": "Enhanced [EVA-00 Pilot]: Allies within <buf ID=900022>[Guard]</buf> range take <color=#F74848>25%</color> less DMG from Code and AoE attacks. When <buf ID=1014820>[Sync Ratio]</buf> is above <color=#F74848>65%</color>, DMG Dealt and <buf ID=900017>[Fixed DMG]</buf> Dealt <color=#F74848>+25%</color>."
       },
       "53064": {
-        "SpecificEffects": "Shield base HP increases by <color=#F74848>100%</color>."
+        "name": "Reinforced Alloy",
+        "SpecificEffects": "The base HP provided by the Shield increases by <color=#F74848>100%</color>."
       }
-    }
+    },
+    "pilot": "Rei",
+    "ac": 10,
+    "version": "2.2"
   },
   "20115122": {
+    "name": "Dusk Star Continuity",
     "passiveSkills": {
       "53074": {
-        "SpecificEffects": "After retaliating with a Machine Gun, gains [Momentum]."
+        "name": "Defiance",
+        "SpecificEffects": "After retaliating with a Machine Gun, gains <buf ID=530742>[Momentum]</buf>."
       },
       "53075": {
-        "SpecificEffects": "Enhanced [Veiled Razor]: If possessing [Retaliation Enhancement] and both Arms are intact, can trigger <buf ID=900022>[Guard]</buf>, protecting allies within <color=#F74848>1</color> adjacent tile from assault, ranged, and melee attacks. If also possessing [Turning Point], <buf ID=900022>[Guard]</buf> range increases to <color=#F74848>2</color> tiles. If carrying two Machine Guns, when triggering [Retaliation] or [Quick Strike], for every <color=#F74848>1</color> stack of [Retaliation Enhancement], gains <color=#F74848>20%</color> chance to use all Machine Guns to trigger [Retaliation Pursuit], dealing <color=#F74848>0.35</color>x DMG."
+        "name": "Sudden Surge",
+        "SpecificEffects": "Enhanced [Veiled Razor]: While carrying <buf ID=2015509>[Retaliation Enhancement]</buf> and both Arms are intact, can trigger <buf ID=900022>[Guard]</buf>, protecting allies within <color=#F74848>1</color> adjacent tile from Assault, Ranged, and Melee attacks. If also carrying <buf ID=2015081>[Turning Point]</buf>, <buf ID=900022>[Guard]</buf> range increases to <color=#F74848>2</color> tiles. If equipped with two Machine Guns, when triggering <buf ID=900096>[Retaliation]</buf> or <buf ID=900023>[Quick Draw]</buf>, for every <color=#F74848>1</color> stack of <buf ID=2015509>[Retaliation Enhancement]</buf>, gains a <color=#F74848>20%</color> chance to use all Machine Guns to trigger <buf ID=900028>[Add Strike]</buf>, dealing <color=#F74848>0.35x</color> DMG."
       },
       "53073": {
+        "name": "Fire of Retaliation",
         "SpecificEffects": "When retaliating, Crit Rate and Hit Rate <color=#F74848>+15%</color>."
       }
-    }
+    },
+    "pilot": "Cassha",
+    "ac": 11,
+    "version": "2.3"
   },
   "10915121": {
+    "name": "Δ-09",
     "passiveSkills": {
       "53071": {
-        "SpecificEffects": "After triggering <buf ID=900109>[Execution]</buf>, inflicts [DMG Down II] and [DMG Taken Up II] to enemies in <color=#F74848>1</color> tile radius, lasting for <color=#F74848>1</color> turn."
+        "name": "Dominance",
+        "SpecificEffects": "After triggering <buf ID=900109>[Execution]</buf>, inflicts <buf ID=7101203>[DMG Down II]</buf> and <buf ID=7101803>[DMG Taken UP II]</buf> on the target and enemies within <color=#F74848>1</color> tile, lasting <color=#F74848>1</color> turn."
       },
       "53072": {
-        "SpecificEffects": "Enhanced [Σ-04]: When using Alter-Blade to chain attack the same target, Hit Weighting <color=#F74848>+50</color> on the part hit. This effect is removed after the target acts. At the start of action, only removes <color=#F74848>1</color> stack of [Critical Sense]. If possessing <color=#F74848>3</color> stacks of [Critical Sense], DMG <color=#F74848>+15%</color>, DMG Taken <color=#F74848>-15%</color>."
+        "name": "Σ-04Ω",
+        "SpecificEffects": "Enhanced [Σ-04]: When using an Alter-Blade to chain-attack the same target, Hit Weighting on the first part hit <color=#F74848>+50</color>; this effect is removed once the target acts. At the start of action, only <color=#F74848>1</color> stack of <buf ID=900100>[Critical Sense]</buf> is removed. While carrying <color=#F74848>3</color> stacks of <buf ID=900100>[Critical Sense]</buf>, DMG <color=#F74848>+15%</color> and DMG Taken <color=#F74848>-15%</color>."
       },
       "53070": {
-        "SpecificEffects": "When triggering a <buf ID=900004>[Re-ATK]</buf>, DMG and Hit Rate <color=#F74848>+10%</color>."
+        "name": "Repeat Slash",
+        "SpecificEffects": "When triggering <buf ID=900004>[Re-ATK]</buf>, DMG and Hit Rate <color=#F74848>+10%</color>."
       }
-    }
+    },
+    "pilot": "Ophelia",
+    "ac": 11,
+    "version": "2.3"
   },
   "10515123": {
+    "name": "Parting Song Prism",
     "passiveSkills": {
       "53080": {
-        "SpecificEffects": "After actively repairing for <color=#F74848>3</color> times, gains <color=#F74848>1</color> AP and [Renovate II], lasting for <color=#F74848>1</color> turn."
+        "name": "Practice Makes Perfect",
+        "SpecificEffects": "After actively repairing <color=#F74848>3</color> cumulative times, gains <color=#F74848>1</color> AP and <buf ID=500923>[Renovate II]</buf>, lasting <color=#F74848>1</color> turn."
       },
       "53081": {
-        "SpecificEffects": "Enhanced <buf ID=900059>[Sentinel Ward]</buf>: [Repair Synergy] and [Full-Line Maintenance] can additionally dispel <color=#F74848>1</color> debuff from the repair target. Every time <buf ID=900038>[Regular Repair]</buf> triggers, dispels <color=#F74848>1</color> debuff."
+        "name": "Goldfinch's Cry",
+        "SpecificEffects": "Enhanced [Sentinel Ward]: <skill mainSkill=500406>[Repair Synergy]</skill> and <skill mainSkill=500408>[Full-Line Maintenance]</skill> can additionally dispel <color=#F74848>1</color> debuff from the repair target. Every time <buf ID=900038>[Regular Repair]</buf> triggers, dispels <color=#F74848>1</color> debuff."
       },
       "53079": {
-        "SpecificEffects": "When the Shield Arm is attacked, inflicts [Hit Rate Down II] and [Crit Rate Down II] on the target after combat."
+        "name": "In Kind",
+        "SpecificEffects": "When the shield-carrying Arm is attacked, inflicts <buf ID=7101003>[Hit Rate Down II]</buf> and <buf ID=7101303>[Crit Rate Down II]</buf> on the enemy after combat, lasting <color=#F74848>1</color> turn."
       }
-    }
+    },
+    "pilot": "Melissa",
+    "ac": 12,
+    "version": "2.4"
   },
   "20215122": {
+    "name": "Gaius",
     "passiveSkills": {
       "53077": {
-        "SpecificEffects": "When actively attacking with a Heavy Machine Gun and breaking a part, receives <color=#F74848>1</color> random buff after combat, lasting for <color=#F74848>2</color> turns. Can trigger up to <color=#F74848>3</color> times per turn."
+        "name": "Resonant Mechanism",
+        "SpecificEffects": "When actively attacking with a Heavy Machine Gun, if a part is broken, gains <color=#F74848>1</color> random buff after combat, lasting <color=#F74848>2</color> turns. Can trigger up to <color=#F74848>3</color> times per turn."
       },
       "53078": {
-        "SpecificEffects": "Enhanced [EVA-01 Pilot]: Heavy Machine Gun Range <color=#F74848>+1</color>. [Sync Ratio] correction effect <color=#F74848>+25%</color>. Every time <buf ID=900004>[Re-ATK]</buf> is triggered, [Sync Ratio] <color=#F74848>+3%</color>. After actively attacking, gains [Sync Miracle]. This effect triggers <color=#F74848>1</color> time per turn."
+        "name": "Gospel of Hope",
+        "SpecificEffects": "Enhanced [EVA-01 Pilot]: Heavy Machine Gun range <color=#F74848>+1</color>, <buf ID=1014820>[Sync Ratio]</buf> correction effect <color=#F74848>+25%</color>. Every time <buf ID=900004>[Re-ATK]</buf> is triggered, <buf ID=1014820>[Sync Ratio]</buf> <color=#F74848>+3%</color>. After actively attacking, gains <buf ID=530786>[Sync Miracle]</buf>. Effective up to <color=#F74848>1</color> time per turn."
       },
       "53076": {
-        "SpecificEffects": "When actively attacking, DMG <color=#F74848>+15%</color>. Starting from <color=#F74848>1</color> tile, for every <color=#F74848>1</color> tile away from the target, DMG <color=#F74848>+5%</color>, up to <color=#F74848>25%</color>."
+        "name": "Superior Firepower",
+        "SpecificEffects": "When actively attacking, DMG <color=#F74848>+15%</color>. Starting from <color=#F74848>1</color> tile, for every additional <color=#F74848>1</color> tile away from the target, DMG <color=#F74848>+5%</color>, up to <color=#F74848>25%</color>."
       }
-    }
+    },
+    "pilot": "Shinji",
+    "ac": 12,
+    "version": "2.4"
   },
   "10415124": {
+    "name": "Glory's Ward",
     "passiveSkills": {
       "53083": {
+        "name": "Command of the Field",
         "SpecificEffects": "Before being actively attacked, if on allied terrain, immediately restores <color=#F74848>1</color> AP. Can trigger <color=#F74848>1</color> time per turn."
       },
       "53084": {
-        "SpecificEffects": "Enhanced [Battle-Hardened]: Increased area of deployed terrain to a <color=#F74848>2</color> tile radius of the selected location. When moving in the terrain, movement cost <color=#F74848>-50%</color>. All allied units in the terrain gain DMG <color=#F74848>+20%</color>. When allies are actively attacked, all parts cannot receive damage more than <color=#F74848>85%</color> of the highest HP part."
+        "name": "Battle-Hardened Commander",
+        "SpecificEffects": "Enhanced [Battle-Hardened]: <terrian ID=6008501 /> area expands to the selected tile and its surrounding <color=#F74848>2</color> tiles. Movement cost within <terrian ID=6008501 /> reduces by <color=#F74848>50%</color>. All allied units within <terrian ID=6008501 /> gain DMG <color=#F74848>+20%</color>, and when actively attacked, no part can take more than <color=#F74848>85%</color> of its Max HP in damage."
       },
       "53082": {
-        "SpecificEffects": "When the Shield Arm is attacked, DMG Taken <color=#F74848>-10%</color>, and Crit DMG Taken <color=#F74848>-20%</color>."
+        "name": "Total Defense",
+        "SpecificEffects": "When the shield-carrying Arm takes damage, DMG Taken <color=#F74848>-10%</color> and Crit DMG Taken <color=#F74848>-20%</color>."
       }
-    }
+    },
+    "pilot": "Tiphys",
+    "ac": 13,
+    "version": "2.5"
   },
   "40115122": {
+    "name": "Backfire Meteor",
     "passiveSkills": {
       "53086": {
-        "SpecificEffects": "When attacking with a Missile Launcher, if distance from target is <color=#F74848>4</color> or more tiles, DMG Dealt <color=#F74848>+30%</color>."
+        "name": "Extended Range Effect",
+        "SpecificEffects": "When attacking with a Missile Launcher, if distance from target is <color=#F74848>4</color> or more tiles, DMG <color=#F74848>+30%</color>."
       },
       "53087": {
-        "SpecificEffects": "Enhanced [Fiery Will]: At the start of battle, gains <color=#F74848>5</color> stacks of [Burning Intent]. When the talent triggers <buf ID=900002>[Link Attack]</buf> or when actively attacking, for every <color=#F74848>1</color> Ammo consumed, gains <color=#F74848>1</color> stack of [Burning Intent], up to <color=#F74848>15</color> stacks. If possessing <color=#F74848>10</color> or more stacks, AP Regen <color=#F74848>+1</color>. Damage multiplier <color=#F74848>+0.1</color> on targets with [Lock] for active attacks and <buf ID=900002>[Link Attack]</buf>."
+        "name": "Restless Spirit",
+        "SpecificEffects": "Enhanced [Blazing Heart]: Upon deployment, gains <color=#F74848>5</color> stacks of <buf ID=530872>[Burning Intent]</buf>. After the talent triggers <buf ID=900002>[Link Attack]</buf>, or after actively attacking, for every <color=#F74848>1</color> Ammo consumed, gains <color=#F74848>1</color> stack of <buf ID=530872>[Burning Intent]</buf>, up to <color=#F74848>15</color> stacks. While carrying <color=#F74848>10</color> or more stacks, AP Regen <color=#F74848>+1</color>. <buf ID=4008509>[Lock]</buf> increases DMG multiplier of Arthur's active attacks and all <buf ID=900002>[Link Attack]</buf> against the target by <color=#F74848>+0.1</color>."
       },
       "53085": {
-        "SpecificEffects": "After actively attacking with a Missile Launcher, randomly reloads Ammo to Missile Launchers equal to the amount spent this action. This effect can trigger again after an interval of <color=#F74848>1</color> turn."
+        "name": "Reserve Magazine",
+        "SpecificEffects": "After actively attacking with a Missile Launcher, randomly reloads Ammo to carried Missile Launchers equal to the amount spent this action. Can trigger again after an interval of <color=#F74848>1</color> turn."
       }
-    }
+    },
+    "pilot": "Arthur",
+    "ac": 13,
+    "version": "2.5"
   },
   "20415122": {
+    "name": "Mirage Haze",
     "passiveSkills": {
       "53092": {
-        "SpecificEffects": "When actively attacking with a Flamethrower, for every <color=#F74848>1</color> buff possessed, DMG <color=#F74848>+7.5%</color>, up to <color=#F74848>30%</color>."
+        "name": "Crimson Flame Circuit",
+        "SpecificEffects": "When actively attacking with a Flamethrower, for every <color=#F74848>1</color> buff carried, DMG <color=#F74848>+7.5%</color>, up to <color=#F74848>30%</color>."
       },
       "53093": {
-        "SpecificEffects": "Enhanced [Kalavinka]: At the start of battle, receive <color=#F74848>2</color> stacks of [Dual Gun Efficiency]. When in combat with targets in <buf ID=900011>[Ideal Range]</buf> and using two Assault weapons, Final DMG <color=#F74848>+15%</color>. After actively attacking, if possessing <color=#F74848>5</color> or more buffs, immediately restores <color=#F74848>1</color> AP. Can trigger <color=#F74848>1</color> time per turn."
+        "name": "ND Amplifier",
+        "SpecificEffects": "Enhanced [Kalavinka]: Upon deployment, gains <color=#F74848>2</color> stacks of <buf ID=2016503>[Dual Gun Efficiency]</buf>. When in combat with a target within <buf ID=900011>[Ideal Range]</buf> using two Assault Weapons, Final DMG <color=#F74848>+15%</color>. After actively attacking, if carrying <color=#F74848>5</color> or more buffs, immediately restores <color=#F74848>1</color> AP. Can trigger <color=#F74848>1</color> time per turn."
       },
       "53091": {
-        "SpecificEffects": "When in combat with targets in <buf ID=900011>[Ideal Range]</buf>, Crit Rate and Hit Rate <color=#F74848>+15%</color>."
+        "name": "Calibration Unit",
+        "SpecificEffects": "When in combat with a target within <buf ID=900011>[Ideal Range]</buf>, Crit Rate and Hit Rate <color=#F74848>+15%</color>."
       }
-    }
+    },
+    "pilot": "Fregata",
+    "ac": 14,
+    "version": "2.6"
   },
   "10315123": {
+    "name": "Godslayer",
     "passiveSkills": {
       "53089": {
-        "SpecificEffects": "When attacking with a Polearm, for every <color=#F74848>1</color> target in the attack range, DMG <color=#F74848>+7.5%</color>, up to <color=#F74848>30%</color>."
+        "name": "Chained Stars",
+        "SpecificEffects": "When attacking with a Polearm, for every <color=#F74848>1</color> target within the attack range, DMG <color=#F74848>+7.5%</color>, up to <color=#F74848>30%</color>."
       },
       "53090": {
-        "SpecificEffects": "Enhanced [EVA-02 Pilot]: After actively attacking, if no damage was taken, DMG of the next active attack <color=#F74848>+30%</color>, effective immediately. When actively attacking, for every <color=#F74848>1</color> target destroyed, [Sync Ratio] <color=#F74848>+1%</color>. When [Sync Ratio] reaches <color=#F74848>80%</color>, Polearm skill multiplier <color=#F74848>+0.1</color>, and Code Skill range <color=#F74848>+1</color>. Machine Gun skill multiplier <color=#F74848>+0.05</color>."
+        "name": "Will of Tomorrow",
+        "SpecificEffects": "Enhanced [EVA-02 Pilot]: After actively attacking, if no damage was taken, the next active attack's DMG bonus increases to <color=#F74848>30%</color>, and is granted immediately upon deployment. When actively attacking, for every <color=#F74848>1</color> target destroyed, <buf ID=1014820>[Sync Ratio]</buf> additionally <color=#F74848>+1%</color>. Once <buf ID=1014820>[Sync Ratio]</buf> reaches <color=#F74848>80%</color>, Polearm skill multiplier <color=#F74848>+0.1</color> and Code Skill range <color=#F74848>+1</color>, Machine Gun skill multiplier <color=#F74848>+0.05</color>."
       },
       "53088": {
-        "SpecificEffects": "If attacking and missing, can still deal <color=#F74848>40%</color> of original DMG."
+        "name": "Fleeting Shadow",
+        "SpecificEffects": "When an attack misses, still deals <color=#F74848>40%</color> of the original DMG."
       }
-    }
+    },
+    "pilot": "Asuka",
+    "ac": 14,
+    "version": "2.6"
   },
   "30215123": {
+    "name": "Firework Scalpel",
     "passiveSkills": {
       "53098": {
-        "SpecificEffects": "When actively attacking with a Sniper Rifle and landing a critical hit, restores <color=#F74848>1</color> AP after combat. Can trigger <color=#F74848>1</color> time per turn."
+        "name": "Flash of Inspiration",
+        "SpecificEffects": "When actively attacking with a Sniper Rifle, if a critical hit is triggered, restores <color=#F74848>1</color> AP after combat. Can trigger <color=#F74848>1</color> time per turn."
       },
       "53099": {
-        "SpecificEffects": "Enhanced [Experimental Observation]: [Positional Advantage] stack cap <color=#F74848>+4</color>. When attacking with Sniper Rifle in [Directional Rack] Mode, for every <color=#F74848>1</color> critical hit, gains <color=#F74848>1</color> stack of [Positional Advantage]. Every <color=#F74848>4</color> stacks of [Positional Advantage] grants Sniper Rifle DMG multiplier <color=#F74848>+0.05</color>. After exiting [Directional Rack], only remove <color=#F74848>8</color> stacks of [Positional Advantage]."
+        "name": "Iterative Theory",
+        "SpecificEffects": "Enhanced [Experimental Observation]: <buf ID=900112>[Positional Advantage I]</buf> stack cap increases by <color=#F74848>4</color>. While in <buf ID=900111>[Directional Rack]</buf> and attacking with a Sniper Rifle, gains <color=#F74848>1</color> additional stack of <buf ID=900112>[Positional Advantage I]</buf> per critical hit. Every <color=#F74848>4</color> stacks of <buf ID=900112>[Positional Advantage I]</buf> grants Sniper Rifle DMG multiplier <color=#F74848>+0.05</color>. Upon exiting <buf ID=900111>[Directional Rack]</buf>, only <color=#F74848>8</color> stacks of <buf ID=900112>[Positional Advantage I]</buf> are removed."
       },
       "53097": {
-        "SpecificEffects": "When actively attacking, if <color=#F74848>3</color> or more tiles away from the target, Hit Rate and Crit Rate <color=#F74848>+15%</color>."
+        "name": "Stay Back!",
+        "SpecificEffects": "When actively attacking, if <color=#F74848>3</color> or more tiles from the target, Hit Rate and Crit Rate <color=#F74848>+15%</color>."
       }
-    }
+    },
+    "pilot": "Paloma",
+    "ac": 15,
+    "version": "2.7"
   },
   "10515124": {
+    "name": "Delicate",
     "passiveSkills": {
       "53095": {
-        "SpecificEffects": "If the Pilot is a Machinist, <buf ID=900002>[Link Attack]</buf> trigger chance and range <color=#F74848>+1</color>."
+        "name": "Advance and Assault",
+        "SpecificEffects": "If the pilot is a Machinist, <buf ID=900002>[Link Attack]</buf> trigger chance and range <color=#F74848>+1</color>."
       },
       "53096": {
-        "SpecificEffects": "Enhanced [Dummy Trick]: When actively repairing allies, grants [Code DMG Reduction], removed after triggering <color=#F74848>1</color> time. When triggering <buf ID=900002>[Link Attack]</buf>, gains <color=#F74848>1</color> stack of [No Time to Lose], up to <color=#F74848>3</color> stacks. If [Dummy Trick] is triggered, ally body is immune to <buf ID=900109>[Execution]</buf>."
+        "name": "Now You See It",
+        "SpecificEffects": "Enhanced [Dummy Trick]: When actively repairing an ally, grants them <buf ID=530962>[Code DMG Reduction]</buf>, removed after triggering once. When triggering <buf ID=900002>[Link Attack]</buf>, gains <color=#F74848>1</color> stack of <buf ID=530965>[No Time to Lose]</buf>, up to <color=#F74848>3</color> stacks. While <buf ID=900151>[Dummy Trick]</buf> is available to trigger, allied ST bodies are immune to <buf ID=900109>[Execution]</buf>."
       },
       "53094": {
-        "SpecificEffects": "If the Shield Arm is damaged during combat, for every <color=#F74848>1</color> debuff the target possesses, DMG Taken <color=#F74848>-10%</color>, up to <color=#F74848>-30%</color>."
+        "name": "Opportunist",
+        "SpecificEffects": "When the shield-carrying Arm is attacked in combat, for every <color=#F74848>1</color> debuff the enemy carries, DMG Taken <color=#F74848>-10%</color>, up to <color=#F74848>-30%</color>."
       }
-    }
+    },
+    "pilot": "Anderson",
+    "ac": 15,
+    "version": "2.7"
   },
   "40215122": {
+    "name": "Veto",
     "passiveSkills": {
       "53101": {
-        "SpecificEffects": "When both Shoulders are equipped with Rocket Launchers, when actively attacking, DMG Dealt and Hit Rate <color=#F74848>+20%</color>."
+        "name": "Consensus of Annihilation",
+        "SpecificEffects": "When both Shoulders are equipped with Rocket Launchers, active attacks with a Rocket Launcher gain DMG and Hit Rate <color=#F74848>+20%</color>."
       },
       "53102": {
-        "SpecificEffects": "Enhanced [Helmsman]: [Intel] initial stacks and stack cap <color=#F74848>+5</color>. When actively attacking with a Rocket Launcher, if possessing <color=#F74848>15</color> or more stacks of [Intel], restores <color=#F74848>1</color> AP after combat. Every [Intel] stack grants <color=#F74848>+0.4%</color> Crit Rate."
+        "name": "Decision Maker",
+        "SpecificEffects": "Enhanced [Helmswoman]: <buf ID=900123>[Intelligence]</buf> initial and max stacks <color=#F74848>+5</color>. When actively attacking with a Rocket Launcher, if carrying <color=#F74848>15</color> or more stacks of <buf ID=900123>[Intelligence]</buf> before the attack, restores <color=#F74848>1</color> AP after combat. Can trigger <color=#F74848>1</color> time per turn. Each stack of <buf ID=900123>[Intelligence]</buf> grants Crit Rate <color=#F74848>+0.4%</color>."
       },
       "53100": {
-        "SpecificEffects": "When actively attacking with a Rocket Launcher, DMG <color=#F74848>+20%</color> to parts with <color=#F74848>100%</color> HP."
+        "name": "Breaker of the Unyielding",
+        "SpecificEffects": "When actively attacking with a Rocket Launcher, DMG to parts at <color=#F74848>100%</color> HP <color=#F74848>+20%</color>."
       }
-    }
+    },
+    "pilot": "Rosemary",
+    "ac": 16,
+    "version": "3.0"
   },
   "20115123": {
+    "name": "Peace Function",
     "passiveSkills": {
       "53104": {
-        "SpecificEffects": "If equipped with a Machine Gun and a Shield, Machine Gun Final DMG <color=#F74848>+15%</color>, and Final DMG Taken <color=#F74848>-15%</color>."
+        "name": "Optimized Posture",
+        "SpecificEffects": "When in combat, if equipped with a Machine Gun and a Small Shield, Machine Gun Final DMG <color=#F74848>+10%</color>, and Final DMG Taken <color=#F74848>-15%</color>."
       },
       "53105": {
-        "SpecificEffects": "Enhanced [Coexistence Theory]: All parts of [GuGu] gain <color=#F74848>+15%</color> Max HP, and gains Code Skill [GuGuts Hero!]. [GuGu] also gains this weapon's other abilities."
+        "name": "Perfect Partner",
+        "SpecificEffects": "Enhanced [Coexistence Theory]: All parts of [Goo Goo] gain Max HP <color=#F74848>+15%</color>, and gains Code Skill <skill mainSkill=500894>[Goo Goo is a Hero!]</skill>. [Goo Goo] also gains this weapon's <skill passiveSkill=53103>[Malfunction Implant]</skill> and <skill passiveSkill=53104>[Optimized Posture]</skill> effects."
       },
       "53103": {
-        "SpecificEffects": "When attacking with a Machine Gun, inflicts <color=#F74848>1</color> stack of [Fire Control Delay] on the target, up to <color=#F74848>5</color> stacks."
+        "name": "Malfunction Implant",
+        "SpecificEffects": "When attacking with a Machine Gun, inflicts <color=#F74848>1</color> stack of <buf ID=531032>[Fire Control Delay]</buf> on the target, up to <color=#F74848>5</color> stacks."
       }
-    }
+    },
+    "pilot": "Sapientia",
+    "ac": 16,
+    "version": "3.0"
   },
   "50215122": {
+    "name": "Thousand Legion",
     "passiveSkills": {
       "53110": {
-        "SpecificEffects": "Cutter Max Ammo <color=#F74848>+1</color>. If the Cutter has attacked <color=#F74848>3</color> times in the same turn, reloads <color=#F74848>1</color> Ammo after the turn."
+        "name": "Momentum Union",
+        "SpecificEffects": "Cutter Max Ammo <color=#F74848>+1</color>. If the Cutter has attacked <color=#F74848>3</color> times in the same turn, restores <color=#F74848>1</color> Ammo at the end of the turn."
       },
       "53111": {
-        "SpecificEffects": "Enhanced [Strategize]: For every <color=#F74848>1</color> ally that possesses [Anointed], Funnel skill multiplier <color=#F74848>+0.07</color>. When ally with [Anointed] initiates combat, the ally is granted [Drone Attack Mode]. Can trigger <color=#F74848>1</color> time per turn. After ending the turn, if this effect has not been triggered, grants [Drone Attack Mode] to the lowest HP ally with [Anointed]."
+        "name": "Perfected Edge",
+        "SpecificEffects": "Enhanced [Strategic Planning]: For every <color=#F74848>1</color> ally on the field carrying <buf ID=4011502>[Appointment]</buf>, own Cutter skill multiplier <color=#F74848>+0.07</color>. When an ally carrying <buf ID=4011502>[Appointment]</buf> initiates combat, inflicts <buf ID=4011041>[Subtask - Attack]</buf> on them beforehand. Can trigger <color=#F74848>1</color> time per turn. If not triggered by the end of own action, grants <buf ID=4011043>[Subtask - Defense]</buf> to the lowest-HP ally carrying <buf ID=4011502>[Appointment]</buf>."
       },
       "53109": {
-        "SpecificEffects": "When attacking with Cutter, ignores <color=#F74848>35%</color> of the target's Armor. For every <color=#F74848>1</color> tile away from the target, DMG <color=#F74848>+5%</color>, up to <color=#F74848>20%</color>."
+        "name": "Piercing Distance",
+        "SpecificEffects": "When attacking with a Cutter, ignores <color=#F74848>35%</color> of the target's Armor. For every <color=#F74848>1</color> tile of distance from the target, DMG <color=#F74848>+5%</color>, up to <color=#F74848>20%</color>."
       }
-    }
+    },
+    "pilot": "Collin",
+    "ac": 17,
+    "version": "3.1"
   },
   "30115122": {
+    "name": "Arbiter of Fate",
     "passiveSkills": {
       "53107": {
-        "SpecificEffects": "After actively attacking with a Light Rifle skill with <buf ID=900014>[Aiming]</buf>, restores <color=#F74848>1</color> AP. Can trigger <color=#F74848>1</color> time per turn."
+        "name": "Silent Arbitration",
+        "SpecificEffects": "After using a Light Rifle to launch an active attack with <buf ID=900014>[Aiming]</buf>, restores <color=#F74848>1</color> AP. Can trigger <color=#F74848>1</color> time per turn."
       },
       "53108": {
-        "SpecificEffects": "Enhanced [Trauma Profiling]: For skills with <buf ID=900014>[Aiming]</buf>, skill modifier <color=#F74848>+0.25</color>, Crit Rate <color=#F74848>+15%</color>. When actively attacking targets possessing [Battle Damage], target cannot retaliate. For each target, can trigger <color=#F74848>1</color> time per turn. Restores <color=#F74848>1</color> AP after the first active attack each turn."
+        "name": "Trauma Collapse",
+        "SpecificEffects": "Enhanced [Trauma Profiling]: Active attack skills usable with <buf ID=900014>[Aiming]</buf> gain skill multiplier <color=#F74848>+0.25</color> and Crit Rate <color=#F74848>+15%</color>. When actively attacking a target with [Battle Wound], the target cannot retaliate; effective <color=#F74848>1</color> time per turn for each target. Restores <color=#F74848>1</color> AP after the first active attack each turn."
       },
       "53106": {
-        "SpecificEffects": "When actively attacking, for every <color=#F74848>1</color> debuff the target possesses, DMG Taken by target <color=#F74848>+5%</color>, up to <color=#F74848>25%</color>."
+        "name": "Draining Metabolism",
+        "SpecificEffects": "When actively attacking, for every <color=#F74848>1</color> debuff the target carries, DMG Taken by the target <color=#F74848>+5%</color>, up to <color=#F74848>25%</color>."
       }
-    }
+    },
+    "pilot": "Veronica",
+    "ac": 17,
+    "version": "3.1"
   },
   "50115122": {
+    "name": "Strawberry Macaroni",
     "passiveSkills": {
       "53068": {
-        "SpecificEffects": "Rail Gun Ammo capacity <color=#F74848>+1</color>. When attacking with a Rail Gun, Crit Rate <color=#F74848>+20%</color>."
+        "name": "Piercing Pulse",
+        "SpecificEffects": "When actively attacking with a Rail Gun, DMG dealt to targets carrying a debuff <color=#F74848>+20%</color>."
       },
       "53069": {
-        "SpecificEffects": "Enhanced [Doctrine of Sin]: When a target initiates combat against an ally, inflicts [Magnetic Lock-On] on the target. Can trigger <color=#F74848>2</color> times per turn. When actively attacking with a Rail Gun, for every <color=#F74848>1</color> target destroyed, reloads <color=#F74848>1</color> Rail Gun Ammo. Can trigger <color=#F74848>3</color> times per turn. For every <color=#F74848>1</color> time [Magnetic Lock-On] is inflicted, gains <color=#F74848>1</color> stack of [Magnetic Buff], up to <color=#F74848>10</color> stacks."
+        "name": "Total Sweep",
+        "SpecificEffects": "Enhanced [Perfectionism]: When deploying a <buf ID=900085>[Tokamak Sphere]</buf>, the redirect direction expands to the selected direction and the <color=#F74848>2</color> adjacent directions, and the redirected attack's DMG multiplier <color=#F74848>+0.2</color>. When actively attacking, if the target carries <color=#F74848>5</color> or more debuffs, inflicts <buf ID=1009083>[Intimidation]</buf> after combat, lasting <color=#F74848>1</color> turn. When actively attacking, for every <color=#F74848>15</color> debuffs inflicted (cumulative), immediately gains <color=#F74848>1</color> AP."
       },
       "53067": {
-        "SpecificEffects": "When attacking with a Rail Gun, for every <color=#F74848>1</color> Ammo remaining, DMG Dealt and Hit Rate <color=#F74848>+4%</color>, up to <color=#F74848>20%</color>."
+        "name": "Ammo Regeneration",
+        "SpecificEffects": "When actively attacking with a Rail Gun, if <color=#F74848>3</color> or more targets are hit, restores <color=#F74848>1</color> Ammo after combat. This effect can trigger again after an interval of <color=#F74848>2</color> turns."
       }
-    }
+    },
+    "pilot": "Fia",
+    "ac": 10,
+    "version": "2.2"
   },
   "50116122": {
     "passiveSkills": {
@@ -656,16 +789,63 @@
     }
   },
   "10815122": {
+    "name": "Shattered Fang",
     "passiveSkills": {
       "53116": {
-        "SpecificEffects": "When attacking with a Chainsaw, if self HP is less than <color=#F74848>70%</color>, Chainsaw continuous attack <color=#F74848>+1</color>. For every additional <color=#F74848>20%</color> decrease in self HP, additionally <color=#F74848>+1</color> Chainsaw continuous attack, up to <color=#F74848>+2</color> attacks."
+        "name": "Savage Rhythm",
+        "SpecificEffects": "When attacking with a Chainsaw, if own overall HP percentage is below <color=#F74848>70%</color>, Chainsaw combo count <color=#F74848>+1</color>. For every additional <color=#F74848>20%</color> HP lost, combo count <color=#F74848>+1</color> more, up to an additional <color=#F74848>+2</color>."
       },
       "53117": {
-        "SpecificEffects": "Enhanced [Seasoned Veteran]: [Exhiliration] stack cap <color=#F74848>+1</color>. For every <color=#F74848>8.5%</color> HP lost, gains <color=#F74848>1</color> stack. For every stack of [Exhiliration], Retaliation and <buf ID=900009>[Pursuit Retaliation]</buf> DMG <color=#F74848>+4%</color>, DMG Taken <color=#F74848>-2%</color>."
+        "name": "Battle-Tested Instinct",
+        "SpecificEffects": "Enhanced [Battlefield Veteran]: <buf ID=900127>[Invigorate]</buf> stack cap <color=#F74848>+1</color>; gains <color=#F74848>1</color> stack for every <color=#F74848>8.5%</color> HP lost. Each stack of <buf ID=900127>[Invigorate]</buf> increases Retaliation and <buf ID=900009>[Pursuit Retaliation]</buf> DMG by <color=#F74848>4%</color>, and reduces DMG Taken by <color=#F74848>2%</color>."
       },
       "53115": {
-        "SpecificEffects": "Wielding a Chainsaw one-handed will not affect Hit Rate."
+        "name": "Single-Handed Might",
+        "SpecificEffects": "Wielding a Chainsaw one-handed no longer reduces Hit Rate."
       }
-    }
+    },
+    "pilot": "Wyatt",
+    "ac": 18,
+    "version": "3.2"
+  },
+  "10215123": {
+    "name": "False Smile",
+    "passiveSkills": {
+      "90001": {
+        "name": "Precision Piercer",
+        "SpecificEffects": "When actively attacking with a Pile Bunker, Hit Rate <color=#F74848>+15%</color>, and [Percentage DMG] <color=#F74848>+20%</color>."
+      },
+      "90002": {
+        "name": "Good Medicine Tastes Bitter",
+        "SpecificEffects": "Enhanced <buf ID=5009501>[Good Medicine Tastes Bitter]</buf>: Upon deployment, gains <color=#F74848>5</color> stacks of [Fake Intentions]. After actively attacking using <buf ID=5009501>[Good Medicine Tastes Bitter]</buf> or <buf ID=5009418>[Resonance Pulse]</buf> and dealing <buf ID=900017>[Fixed DMG]</buf>, gains <color=#F74848>1</color> stack of [False Intentions], up to <color=#F74848>20</color> stacks."
+      },
+      "90003": {
+        "name": "Vital Strike",
+        "SpecificEffects": "DMG <color=#F74848>+20%</color> to the highest HP part."
+      }
+    },
+    "pilot": "Martini",
+    "ac": 19,
+    "version": "3.3"
+  },
+  "20215123": {
+    "name": "HMG-29C",
+    "passiveSkills": {
+      "90004": {
+        "name": "Steadfast Aim",
+        "SpecificEffects": "When actively attacking with a Heavy Machine Gun, Hit Rate <color=#F74848>+10%</color>. If an Arm suffers overdamage, triggers <buf ID=900003>[Guts]</buf>, locking the part at <color=#F74848>1</color> HP. Can trigger again after an interval of <color=#F74848>3</color> turns."
+      },
+      "90005": {
+        "name": "Flower Of The Force",
+        "SpecificEffects": "Enhanced [Flower Of The Force]: When attacking using [Suppressive Fire] and [Blazing Onslaught], can enter <buf ID=900014>[Aiming]</buf> Mode. For this attack, Hit Rate <color=#F74848>+25%</color> for the part selected by <buf ID=900014>[Aiming]</buf>. When actively attacking, if <color=#F74848>2</color> stacks of [Blooming Fury] are spent, regens <color=#F74848>1</color> AP after combat, and gains [Eternal Bloom]."
+      },
+      "90006": {
+        "name": "Scaling Barrage",
+        "SpecificEffects": "When attacking, for every <color=#F74848>1</color> AP, DMG <color=#F74848>+5%</color>, up to <color=#F74848>25%</color>."
+      }
+    },
+    "pilot": "Matilda",
+    "ac": 19,
+    "version": "3.3"
   }
 }
