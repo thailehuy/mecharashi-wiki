@@ -1282,7 +1282,7 @@ window.GlossaryData = {
     },
     "301304": {
       "name": "Servitude",
-      "Ap": "0",
+      "Ap": "2",
       "CD": "4",
       "effect": "Applies <buf ID=900151>[Reset]</buf> to [Audrey] who has finished her action, allowing [Audrey] to act again and gain <color=#F74848>2</color> AP. Grants <buf ID=900149>[Leader Crest]</buf> and <buf ID=900154>[Convergence]</buf> to [Audrey] as well as <buf ID=900152>[Concealed Edge]</buf> to self, lasting for 1 turn."
     },
