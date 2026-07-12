@@ -1,6 +1,11 @@
 var Glossary = (function () {
   var data = { buf: {}, skill: {}, terrain: {} };
   var nameIndex = { buf: {}, skill: {} };
+  var ICON_BASE = 'https://media.zlongame.com/media/pictures/cn/community/img/gl/gameInfo/skill/';
+
+  function iconSrc(icon) {
+    return icon ? ICON_BASE + encodeURIComponent(icon) + '.png' : '';
+  }
 
   function lookup(type, id) {
     return (data[type] || {})[id] || null;
@@ -150,6 +155,7 @@ var Glossary = (function () {
         var entry = { name: sk.name, effect: sk.describe || sk.SpecificEffects || '' };
         if (sk.Ap != null && sk.Ap !== '') entry.Ap = sk.Ap;
         if (sk.CD != null && sk.CD !== '') entry.CD = sk.CD;
+        if (sk.SkillIcon || sk.icon) entry.icon = sk.SkillIcon || sk.icon;
         data.skill[sk.ID] = entry;
       });
       // Passive skills from neural drive chip partitions
@@ -160,7 +166,9 @@ var Glossary = (function () {
             var ps = ae.PassiveSkill;
             if (!ps || !ps.ID || !ps.name) return;
             if (data.skill[ps.ID]) return;
-            data.skill[ps.ID] = { name: ps.name, effect: ps.SpecificEffects || '' };
+            var psEntry = { name: ps.name, effect: ps.SpecificEffects || '' };
+            if (ps.SkillIcon || ps.icon) psEntry.icon = ps.SkillIcon || ps.icon;
+            data.skill[ps.ID] = psEntry;
           });
         });
       }
@@ -169,7 +177,9 @@ var Glossary = (function () {
         var t = p[key];
         if (!t || !t.ID || !t.name) return;
         if (data.skill[t.ID]) return;
-        data.skill[t.ID] = { name: t.name, effect: t.SpecificEffects || '' };
+        var tEntry = { name: t.name, effect: t.SpecificEffects || '' };
+        if (t.SkillIcon || t.icon) tEntry.icon = t.SkillIcon || t.icon;
+        data.skill[t.ID] = tEntry;
       });
     });
 
@@ -197,9 +207,12 @@ var Glossary = (function () {
       var nestedHtml = nestedRefs.map(function (ref) {
         var refEntry = lookup(ref.type, ref.id);
         if (!refEntry) return '';
+        var refIconHtml = refEntry.icon
+          ? '<img class="kw-tip-nested-icon" src="' + iconSrc(refEntry.icon) + '" alt="" />'
+          : '';
         return (
           '<div class="kw-tip-nested">' +
-            '<div class="kw-tip-nested-name">' + refEntry.name + '</div>' +
+            '<div class="kw-tip-nested-name">' + refIconHtml + refEntry.name + '</div>' +
             (refEntry.effect ? '<div class="kw-tip-nested-effect">' + parseEffects(refEntry.effect) + '</div>' : '') +
           '</div>'
         );
@@ -208,9 +221,18 @@ var Glossary = (function () {
         nestedHtml = '<div class="kw-tip-nested-list">' + nestedHtml + '</div>';
       }
 
+      var nameHtml = '<div class="kw-tip-name">' + entry.name + '</div>';
+      var headerHtml = entry.icon
+        ? (
+            '<div class="kw-tip-header">' +
+              '<img class="kw-tip-icon" src="' + iconSrc(entry.icon) + '" alt="" />' +
+              '<div class="kw-tip-header-text">' + nameHtml + statsHtml + '</div>' +
+            '</div>'
+          )
+        : nameHtml + statsHtml;
+
       $tip.html(
-        '<div class="kw-tip-name">' + entry.name + '</div>' +
-        statsHtml +
+        headerHtml +
         effectHtml +
         nestedHtml
       ).addClass('visible');

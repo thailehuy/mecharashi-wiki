@@ -700,10 +700,6 @@
       "name": "Airspace Blockade",
       "effect": "When actively attacking with a Tactical Weapon, cannot deal damage to enemies within enemy [Defense Fields]. Removed when action ends."
     },
-    "6008501": {
-      "name": "Defense Field",
-      "effect": "Grants DMG Taken <color=#F74848>-15%</color> to allies that remain on this tile. This terrain effect has high priority."
-    },
     "7000142": {
       "name": "Bide",
       "effect": "Accumulate power while withstanding attacks, releasing it in a stronger follow-up action."
@@ -1206,89 +1202,104 @@
       "name": "Shock Wave",
       "Ap": "1",
       "CD": "0",
+      "icon": "Icon_skill_order_1126",
       "effect": "Knocks all targets in a 1x3-tile line back 2 tiles."
     },
     "20343": {
       "name": "High Tide",
       "Ap": "2",
       "CD": "0",
+      "icon": "Icon_skill_order_1127",
       "effect": "Knocks all targets in a cone ahead back 2 tiles."
     },
     "301144": {
       "name": "Rapid Realignment",
       "Ap": "0",
       "CD": "1",
-      "effect": "Quickly moves to an empty tile within <color=#F74848>3</color> tiles and reselects rack direction without exiting [Directional Rack] Mode"
+      "effect": "Quickly moves to an empty tile within <color=#F74848>3</color> tiles and reselects rack direction without exiting [Directional Rack] Mode",
+      "icon": "Icon_skill_order_5004"
     },
     "301150": {
       "name": "Directional Rack",
       "Ap": "0",
       "CD": "1",
-      "effect": "Enters [Directional Rack] Mode: Unable to move, Sniper Rifle's attack range becomes fixed-direction <color=#F5C542>fan-shaped 5-tile</color> area. Can continue attacking after using [Directional Rack]. Automatically exits [Directional Rack] Mode en an Arm is destroyed. <color=#F5C542>[Retract]</color> is available in [Directional Rack] Mode. After retracting, can continue moving."
+      "effect": "Enters [Directional Rack] Mode: Unable to move, Sniper Rifle's attack range becomes fixed-direction <color=#F5C542>fan-shaped 5-tile</color> area. Can continue attacking after using [Directional Rack]. Automatically exits [Directional Rack] Mode en an Arm is destroyed. <color=#F5C542>[Retract]</color> is available in [Directional Rack] Mode. After retracting, can continue moving.",
+      "icon": "Icon_skill_order_5004"
     },
     "4010041": {
       "name": "Breakthrough Tactic",
       "Ap": "2",
       "CD": "2",
+      "icon": "Icon_skill_order_5141",
       "effect": "Grants <color=#F74848>1</color> ally anywhere on the map <buf ID=4010044>[Breakthrough Tactic]</buf>. Gains <color=#F74848>2</color> stacks of <buf ID=4010500>[Intelligence]</buf>."
     },
     "4010042": {
       "name": "Maneuver Tactic",
       "Ap": "3",
       "CD": "2",
+      "icon": "Icon_skill_order_5142",
       "effect": "Grants all allies <buf ID=7100901>[Movement UP]</buf>, lasting for <color=#F74848>1</color> turn. Gains <color=#F74848>3</color> stacks of <buf ID=4010500>[Intelligence]</buf>."
     },
     "4010043": {
       "name": "All-out Tactic",
       "Ap": "4",
       "CD": "2",
+      "icon": "Icon_skill_order_5143",
       "effect": "Grants all allies <buf ID=4010045>[All-out Attack]</buf>. Gains <color=#F74848>4</color> stacks of <buf ID=4010500>[Intelligence]</buf>."
     },
     "500746": {
       "name": "Position Recall",
       "Ap": "0",
       "CD": "0",
+      "icon": "Icon_skill_order_1020",
       "effect": "Removes <buf ID=900108>[Hologram]</buf> and teleports the original unit to the <buf ID=900108>[Hologram]</buf>'s location."
     },
     "600850": {
       "name": "Defense Field",
       "Ap": "1",
       "CD": "2",
+      "icon": "Icon_skill_order_5138",
       "effect": "Applies a [Defense Field] to the designated tile and the surrounding 1-ring radius for 3 turns. Can continue action with remaining Movement."
     },
     "601050": {
       "name": "Vengeful Strike",
       "Ap": "1",
       "CD": "0",
+      "icon": "Icon_skill_order_5146",
       "effect": "Selects <color=#F74848>1</color> enemy target carrying <buf ID=6010502>[Magnetic Lock-On]</buf>, consumes all Railgun ammo to attack all enemies within the selected <range type=1>1-tile cross-shaped</range>, <range type=2>3x3 square</range> or <range type=2>2-tile diamond</range> area. The number of attacks is equal to the ammo consumed, priotizing unhit targets. Each attack deals <color=#F74848>0.6x</color> DMG to the target and all enemies within <color=#F74848>1</color> adjacent tile. All attacks will prioritize hitting body. Repeat attacks on the same target deal <color=#F74848>60%</color> reduced DMG. Removes <buf ID=6010502>[Magnetic Lock-On]</buf> after the skill ends."
     },
     "601051": {
       "name": "Vengeful Strike β",
       "Ap": "0",
       "CD": "0",
+      "icon": "Icon_skill_order_5146",
       "effect": "Uses Railgun to attack all enemies carrying <buf ID=6010502>[Magnetic Lock-On]</buf> in order from nearest to furthest. All attacks prioritize hitting body and priotize unhit targets. Each attack deals <color=#F74848>0.4x</color> DMG to the target and all enemies within <color=#F74848>1</color> adjacent tile. Repeat attacks on the same target deal <color=#F74848>60%</color> reduced DMG. This attack does not consume Railgun ammo and does not remove <buf ID=6010502>[Magnetic Lock-On]</buf>."
     },
     "6011501": {
       "name": "Polearm Throw",
       "Ap": "0",
       "CD": "0",
+      "icon": "Icon_skill_passive_5185",
       "effect": "Uses Polearm to attack a target within <color=#F74848>4</color> adjacent tiles, dealing <color=#F74848>0.6x</color> DMG to the target as well as all enemies along the path to the target. This skill is considered a [Retaliation]."
     },
     "301350": {
       "name": "Marshall Edict",
       "Ap": "0",
       "CD": "0",
+      "icon": "Icon_skill_order_5151",
       "effect": "Designates <color=#F74848>1</color> ally within <color=#F74848>4</color> adjacent tiles as <buf ID=3013504>[Personal Aide]</buf>, then continues to act with remaining movement. This skill can only be used once per battle."
     },
     "301304": {
       "name": "Servitude",
       "Ap": "2",
       "CD": "4",
+      "icon": "Icon_skill_order_5152",
       "effect": "Applies <buf ID=900151>[Reset]</buf> to [Audrey] who has finished her action, allowing [Audrey] to act again and gain <color=#F74848>2</color> AP. Grants <buf ID=900149>[Leader Crest]</buf> and <buf ID=900154>[Convergence]</buf> to [Audrey] as well as <buf ID=900152>[Concealed Edge]</buf> to self, lasting for 1 turn."
     },
     "500894": {
       "name": "It's a Goo-Good Day to Die!",
       "Ap": "4",
+      "icon": "Icon_skill_order_1125",
       "effect": "Uses a Machine Gun to attack all targets within a <range type=2>3x3 tile area</range> in front, dealing <color=#F74848>0.6x</color> AoE DMG, and inflicts <buf ID=5008941>[You Forgoo-Goot Me!]</buf> on targets hit."
     }
   },
@@ -1304,6 +1315,10 @@
     "4011081": {
       "name": "Restricted Area",
       "effect": "[Collin] will use cutters to attack enemy stopping on this tile, dealing <color=#F74848>0.6x</color> damage. This terrain has high priority."
+    },
+    "6008501": {
+      "name": "Defense Field",
+      "effect": "Grants DMG Taken <color=#F74848>-15%</color> to allies that remain on this tile. This terrain effect has high priority."
     }
   }
 }
