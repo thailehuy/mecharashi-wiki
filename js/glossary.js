@@ -176,13 +176,9 @@ var Glossary = (function () {
     rebuildNameIndex();
 
     var $tip = $('<div id="kw-tooltip" role="tooltip"></div>').appendTo('body');
+    var tipEl = null;
 
-    $(document).on('mouseenter', '.kw', function () {
-      var type  = $(this).data('kw-type');
-      var id    = String($(this).data('kw-id'));
-      var entry = lookup(type, id);
-      if (!entry) return;
-
+    function showTip(el, type, id, entry) {
       var statsHtml = '';
       if (type === 'skill' && (entry.Ap != null || entry.CD != null)) {
         var parts = [];
@@ -219,24 +215,68 @@ var Glossary = (function () {
         nestedHtml
       ).addClass('visible');
 
-      positionTip(this, $tip);
+      tipEl = el;
+      positionTip(el, $tip);
+    }
+
+    function hideTip() {
+      tipEl = null;
+      $tip.removeClass('visible');
+    }
+
+    $(document).on('mouseenter', '.kw', function () {
+      var type  = $(this).data('kw-type');
+      var id    = String($(this).data('kw-id'));
+      var entry = lookup(type, id);
+      if (!entry) return;
+      showTip(this, type, id, entry);
     });
 
     $(document).on('mousemove', '.kw', function () {
-      positionTip(this, $tip);
+      if (tipEl === this) positionTip(this, $tip);
     });
 
     $(document).on('mouseleave', '.kw', function () {
-      $tip.removeClass('visible');
+      hideTip();
+    });
+
+    // Tapping a keyword on touch devices shows/toggles the same tooltip,
+    // since touch input never fires mouseenter.
+    $(document).on('click', '.kw', function (e) {
+      var type  = $(this).data('kw-type');
+      var id    = String($(this).data('kw-id'));
+      var entry = lookup(type, id);
+      if (!entry) return;
+
+      e.preventDefault();
+      e.stopPropagation();
+
+      if (tipEl === this && $tip.hasClass('visible')) {
+        hideTip();
+        return;
+      }
+      showTip(this, type, id, entry);
+    });
+
+    $(document).on('click', function (e) {
+      if (tipEl && !$(e.target).closest('#kw-tooltip').length) hideTip();
     });
   }
 
   function positionTip(el, $tip) {
     var rect   = el.getBoundingClientRect();
+    var tipH   = $tip.outerHeight();
     var tipW   = $tip.outerWidth();
+    var winH   = $(window).height();
     var winW   = $(window).width();
     var left   = rect.left + window.scrollX;
-    var top    = rect.bottom + window.scrollY + 6;
+    var top;
+
+    if (rect.bottom + tipH + 6 > winH && rect.top - tipH - 6 >= 0) {
+      top = rect.top + window.scrollY - tipH - 6;
+    } else {
+      top = rect.bottom + window.scrollY + 6;
+    }
 
     if (left + tipW > winW - 12) {
       left = winW - tipW - 12;

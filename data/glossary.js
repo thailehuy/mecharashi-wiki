@@ -24,10 +24,6 @@ window.GlossaryData = {
       "name": "Reaction Attack",
       "effect": "Launch a counter-attack in response to being attacked."
     },
-    "900007": {
-      "name": "Retaliation Disabled",
-      "effect": "Cannot perform counter-attacks or retaliations."
-    },
     "900008": {
       "name": "Pursuit",
       "effect": "Automatically moves toward any enemy that attacks you."
@@ -1006,11 +1002,39 @@ window.GlossaryData = {
     },
     "900137": {
       "name": "Battle Wound",
-      "effect": "Applies debuff based on the part hit.\n[Battle Wound - Body]: Reduces AP by <color=#F74848>-1</color> when triggering [Re-ATK].\n[Battle Wound - Left Arm]: When actively attacking, reduces Final DMG by <color=#F74848>20%</color> for the first hit.\n[Battle Wound - Right Arm]: When actively attacking, if the number of hits are more than <color=#F74848>5</color>, reduces the number of hits by <color=#F74848>20%</color>.\n[Battle Wound - Leg]: When leg is intact, loses <color=#F74848>10%</color> of leg maximum HP while standing still, with an additional of <color=#F74848>10%</color> for every tile moved. Effect removed after triggering."
+      "effect": "Applies debuff based on the part hit: <buf ID=9001371>[Battle Wound - Body]</buf>, <buf ID=9001372>[Battle Wound - Left Arm]</buf>, <buf ID=9001373>[Battle Wound - Right Arm]</buf>, or <buf ID=9001374>[Battle Wound - Leg]</buf>."
+    },
+    "9001371": {
+      "name": "Battle Wound - Body",
+      "effect": "Reduces AP by <color=#F74848>-1</color> when triggering <buf ID=900004>[Re-ATK]</buf>."
+    },
+    "9001372": {
+      "name": "Battle Wound - Left Arm",
+      "effect": "When actively attacking, reduces Final DMG by <color=#F74848>20%</color> for the first hit."
+    },
+    "9001373": {
+      "name": "Battle Wound - Right Arm",
+      "effect": "When actively attacking, if the number of hits are more than <color=#F74848>5</color>, reduces the number of hits by <color=#F74848>20%</color>."
+    },
+    "9001374": {
+      "name": "Battle Wound - Leg",
+      "effect": "When leg is intact, loses <color=#F74848>10%</color> of leg maximum HP while standing still, with an additional <color=#F74848>10%</color> for every tile moved. Effect removed after triggering."
     },
     "900141": {
-      "name": "Tracing",
-      "effect": "Applies buff based on the part destroyed.\nBody: Grants [Precision] - next basic attack will enter [Aiming] Mode.\nArms: Grants [Rapid] - Next active attack gets <color=#F74848>+1</color> range.\nLeg: Grants [Direct Shot] - Next attack multiplier increases by <color=#F74848>+0.1</color>.\nAll effects require a ranged weapon to activate, and are removed after triggering."
+      "name": "Hunting",
+      "effect": "Applies buff based on the part destroyed: Body grants <buf ID=9001411>[Precision]</buf>, Arms grants <buf ID=9001412>[Rapid]</buf>, Leg grants <buf ID=9001413>[Direct Shot]</buf>. All effects require a ranged weapon to activate, and are removed after triggering."
+    },
+    "9001411": {
+      "name": "Precision",
+      "effect": "Next basic attack will enter <buf ID=900014>[Aiming]</buf> Mode."
+    },
+    "9001412": {
+      "name": "Rapid",
+      "effect": "Next active attack gets <color=#F74848>+1</color> range."
+    },
+    "9001413": {
+      "name": "Direct Shot",
+      "effect": "Next attack multiplier increases by <color=#F74848>+0.1</color>."
     },
     "6010502": {
       "name": "Magnetic Lock-On",
@@ -1087,6 +1111,94 @@ window.GlossaryData = {
     "206242": {
       "name": "Sentry Mod",
       "effect": "Before performing <buf ID=900002>[Link Attack]</buf>, DMG dealt increases by <color=#F74848>5%</color> and Critical Hit chance increases by <color=#F74848>2%</color>, stacking up to <color=#F74848>5</color> times, lasting for <color=#F74848>2</color> turns."
+    },
+    "3013504": {
+      "name": "Personal Aide",
+      "effect": "When positioned within <color=#F74848>3</color> adjacent tiles of [Audrey], [Audrey]'s DMG dealt and Critical Hit chance increase by <color=#F74848>15%</color>. If [Audrey]'s attack triggers a <buf ID=900148>[Ricochet]</buf> and there are no valid enemy target, this unit will become the target for <buf ID=900148>[Ricochet]</buf> but will not receive DMG."
+    },
+    "900148": {
+      "name": "Ricochet",
+      "effect": "Selects the nearest target within <color=#F74848>3</color> adjacent tiles of the last target to attack, prioritizing hitting the same target as the first attack. This effect is halted if an attack misses."
+    },
+    "900149": {
+      "name": "Leader Crest",
+      "effect": "Critical Hit chance increases by <color=#F74848>20%</color>, Critical Hit DMG increases by <color=#F74848>10%</color> and <buf ID=900148>[Ricochet]<buf> hit count increases by <color=#F74848>2</color>. This effect is removed at the end of turn."
+    },
+    "900154": {
+      "name": "Convergence",
+      "effect": "Cannot gain another turn through any <buf ID=900151>[Reset]</buf> type effect. This effect is removed at the start of next action."
+    },
+    "900151": {
+      "name": "Reset",
+      "effect": "Allows units that have already finished their turn to act again."
+    },
+    "900152": {
+      "name": "Concealed Edge",
+      "effect": "Critical Hit chance and Critical Hit DMG are reduced by <color=#F74848>20%</color>."
+    },
+    "3013061": {
+      "name": "Loyalty",
+      "effect": "When [Audrey] is actively attacked within <color=#F74848>3</color> adjacent tiles by assault or ranged weapons, activate <buf ID=900022>[Guard]</buf>. DMG taken is reduced by <color=#F74848>25%</color>. This effect is removed after triggering."
+    },
+    "900160": {
+      "name": "DMG Reduction",
+      "effect": "Includes DMG taken reduction, Final DMG taken reduction, and DMG taken reduction from shields."
+    },
+    "4010044": {
+      "name": "Breakthrough Tactic",
+      "effect": "Increases Final DMG dealt by <color=#F74848>20%</color>, lasting till the end of action."
+    },
+    "4010045": {
+      "name": "All-out Attack",
+      "effect": "Increases DMG dealt by <color=#F74848>25%</color>, lasting till the end of action."
+    },
+    "530622": {
+      "name": "Chainsaw Heat Up",
+      "effect": "Each stack: Chainsaw attacks gain <color=#F74848>+1</color> Hit."
+    },
+    "530742": {
+      "name": "Momentum",
+      "effect": "When actively attacking with a Machine Gun, DMG dealt <color=#F74848>+20%</color> and Bullets <color=#F74848>+1</color>. Removed after taking effect."
+    },
+    "530786": {
+      "name": "Sync Miracle",
+      "effect": "When actively attacking, Crit Rate <color=#F74848>+40%</color>, and the first <color=#F74848>4</color> hits ignore the target's DMG Reduction effects. Removed after taking effect."
+    },
+    "7101303": {
+      "name": "Crit Rate Down II",
+      "effect": "Crit rate -15%."
+    },
+    "530872": {
+      "name": "Burning Intent",
+      "effect": "Each stack grants Crit Rate <color=#F74848>+2%</color> when attacking with a Missile Launcher."
+    },
+    "530962": {
+      "name": "Code DMG Reduction",
+      "effect": "Reduces DMG taken from the next code attack by <color=#F74848>30%</color>. Removed after taking effect."
+    },
+    "530965": {
+      "name": "No Time to Lose",
+      "effect": "When actively repairing with <color=#F74848>3</color> stacks, reduces the CD of <color=#F74848>1</color> repair skill by <color=#F74848>1</color> and gains <color=#F74848>1</color> AP, then removes all stacks. Can trigger <color=#F74848>1</color> time per turn."
+    },
+    "531032": {
+      "name": "Fire Control Delay",
+      "effect": "Each stack reduces Crit Rate and Crit DMG by <color=#F74848>3%</color>."
+    },
+    "5008941": {
+      "name": "You Forgoo-Goot Me!",
+      "effect": "When actively attacking targets other than <buf ID=1099900>[Goo Goo]</buf>, DMG dealt <color=#F74848>-25%</color>. Removed after taking effect."
+    },
+    "531145": {
+      "name": "Magnetic Buff",
+      "effect": "Each stack: Final DMG dealt <color=#F74848>+2%</color>, Final DMG taken <color=#F74848>-2%</color>."
+    },
+    "5009502": {
+      "name": "False Intentions",
+      "effect": "Each stack: DMG dealt and Repair AMT <color=#F74848>+1%</color>. For every <color=#F74848>5</color> stacks, Melee Attack multiplier <color=#F74848>+0.05</color>. While carrying <color=#F74848>10</color> or more stacks, AP Regen <color=#F74848>+1</color>."
+    },
+    "5009051": {
+      "name": "Eternal Bloom",
+      "effect": "Heavy Machine Gun DMG <color=#F74848>+25%</color> and Bullets <color=#F74848>+40%</color>. Removed at the start of turn."
     }
   },
   "skill": {
@@ -1118,19 +1230,19 @@ window.GlossaryData = {
       "name": "Breakthrough Tactic",
       "Ap": "2",
       "CD": "2",
-      "effect": "Grants <color=#F74848>1</color> ally anywhere on the map [Breakthrough Tactic], increasing their Final DMG dealt by <color=#F74848>20%</color>, lasting till the end of action. Gains <color=#F74848>2</color> stacks of [Intelligence]"
+      "effect": "Grants <color=#F74848>1</color> ally anywhere on the map <buf ID=4010044>[Breakthrough Tactic]</buf>. Gains <color=#F74848>2</color> stacks of <buf ID=4010500>[Intelligence]</buf>."
     },
     "4010042": {
       "name": "Maneuver Tactic",
       "Ap": "3",
       "CD": "2",
-      "effect": "Grants all allies [Movement UP], increasing their movement by <color=#F74848>1</color>, lasting for <color=#F74848>1</color> turn. Gains <color=#F74848>3</color> stacks of [Intelligence]"
+      "effect": "Grants all allies <buf ID=7100901>[Movement UP]</buf>, lasting for <color=#F74848>1</color> turn. Gains <color=#F74848>3</color> stacks of <buf ID=4010500>[Intelligence]</buf>."
     },
     "4010043": {
       "name": "All-out Tactic",
       "Ap": "4",
       "CD": "2",
-      "effect": "Grants all allies [All-out Attack], increasing their DMG dealt by <color=#F74848>25%</color>, lasting till the end of action. Gains <color=#F74848>4</color> stacks of [Intelligence]"
+      "effect": "Grants all allies <buf ID=4010045>[All-out Attack]</buf>. Gains <color=#F74848>4</color> stacks of <buf ID=4010500>[Intelligence]</buf>."
     },
     "500746": {
       "name": "Position Recall",
@@ -1161,6 +1273,23 @@ window.GlossaryData = {
       "Ap": "0",
       "CD": "0",
       "effect": "Uses Polearm to attack a target within <color=#F74848>4</color> adjacent tiles, dealing <color=#F74848>0.6x</color> DMG to the target as well as all enemies along the path to the target. This skill is considered a [Retaliation]."
+    },
+    "301350": {
+      "name": "Marshall Edict",
+      "Ap": "0",
+      "CD": "0",
+      "effect": "Designates <color=#F74848>1</color> ally within <color=#F74848>4</color> adjacent tiles as <buf ID=3013504>[Personal Aide]</buf>, then continues to act with remaining movement. This skill can only be used once per battle."
+    },
+    "301304": {
+      "name": "Servitude",
+      "Ap": "0",
+      "CD": "4",
+      "effect": "Applies <buf ID=900151>[Reset]</buf> to [Audrey] who has finished her action, allowing [Audrey] to act again and gain <color=#F74848>2</color> AP. Grants <buf ID=900149>[Leader Crest]</buf> and <buf ID=900154>[Convergence]</buf> to [Audrey] as well as <buf ID=900152>[Concealed Edge]</buf> to self, lasting for 1 turn."
+    },
+    "500894": {
+      "name": "It's a Goo-Good Day to Die!",
+      "Ap": "4",
+      "effect": "Uses a Machine Gun to attack all targets within a <range type=2>3x3 tile area</range> in front, dealing <color=#F74848>0.6x</color> AoE DMG, and inflicts <buf ID=5008941>[You Forgoo-Goot Me!]</buf> on targets hit."
     }
   },
   "terrain": {

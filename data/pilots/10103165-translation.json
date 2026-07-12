@@ -40,7 +40,7 @@
     },
     "301306": {
       "name": "Blood Oath",
-      "describe": "Selects an empty tile within <color=#F74848>3</color> adjacent tiles, teleports <buf ID=3013504>[Personal Aide]</buf> to that tile and grants <buf ID=3013061>[Loyalty]</buf>. Can continue to act with remaining movement.",
+      "describe": "Selects an empty tile within <color=#F74848>3</color> adjacent tiles, teleports <buf ID=3013504>[Personal Aide]</buf> to that tile and grants <buf ID=3013061>[Loyalty]</buf> to them. Can continue to act with remaining movement.",
       "SpecificEffects": ""
     },
     "301307": {
@@ -54,6 +54,16 @@
       "SpecificEffects": ""
     }
   },
+  "hiddenSkills": [
+    {
+      "name": "Landslide Shot",
+      "icon": "Icon_skill_main_1137",
+      "type": "EquipmentSkill",
+      "Ap": "2",
+      "CD": "0",
+      "describe": "Uses a Sniper Rifle to attack a target, dealing <color=#F74848>1x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking."
+    }
+  ],
   "neuralPassives": {
     "300011": {
       "name": "Sniper Warfare 2",
@@ -97,7 +107,7 @@
     },
     "301235": {
       "name": "Hunting Mark 3",
-      "SpecificEffects": "<buf ID=900142>[Origin Tracer 1]</buf> no longer has trigger limit"
+      "SpecificEffects": "<buf ID=900142>[Hunting Mark 1]</buf> no longer has trigger limit"
     },
     "301236": {
       "name": "Hunting Mark 4",

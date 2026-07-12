@@ -444,7 +444,7 @@
       },
       "53114": {
         "name": "Glory of Sin",
-        "SpecificEffects": "Enhanced [Creed Of Sin]: When another ally is actively attacked, inflicts <buf ID=6010502>[Magnetic Lock-On]</buf> on the attacker. Can trigger <color=#F74848>2</color> times per turn. When actively attacking with a Rail Gun, for every <color=#F74848>1</color> target destroyed, restores <color=#F74848>1</color> Rail Gun Ammo, up to <color=#F74848>3</color> times per turn. For every <color=#F74848>1</color> time <buf ID=6010502>[Magnetic Lock-On]</buf> is inflicted, gains <color=#F74848>1</color> stack of <buf ID=531145>[Magnetic Buff]</buf>, up to <color=#F74848>10</color> stacks."
+        "SpecificEffects": "Enhanced [Creed Of Sin]: When an enemy initiates combat against another ally, inflicts <buf ID=6010502>[Magnetic Lock-On]</buf> on the attacker. Can trigger <color=#F74848>2</color> times per turn. When actively attacking with a Rail Gun, for every <color=#F74848>1</color> target destroyed, restores <color=#F74848>1</color> Rail Gun Ammo, up to <color=#F74848>3</color> times per turn. For every <color=#F74848>1</color> time <buf ID=6010502>[Magnetic Lock-On]</buf> is inflicted, gains <color=#F74848>1</color> stack of <buf ID=531145>[Magnetic Buff]</buf>, up to <color=#F74848>10</color> stacks."
       },
       "53112": {
         "name": "Arc Bargain",
@@ -564,7 +564,7 @@
       },
       "53084": {
         "name": "Battle-Hardened Commander",
-        "SpecificEffects": "Enhanced [Battle-Hardened]: <terrian ID=6008501 /> area expands to the selected tile and its surrounding <color=#F74848>2</color> tiles. Movement cost within <terrian ID=6008501 /> reduces by <color=#F74848>50%</color>. All allied units within <terrian ID=6008501 /> gain DMG <color=#F74848>+20%</color>, and when actively attacked, no part can take more than <color=#F74848>85%</color> of its Max HP in damage."
+        "SpecificEffects": "Enhanced [Battle-Hardened]: <terrian ID=6008501 /> area expands to the selected tile and its surrounding <color=#F74848>2</color> tiles. Movement cost for Tiphys within <terrian ID=6008501 /> reduces by <color=#F74848>50%</color>. All allied units within <terrian ID=6008501 /> gain DMG <color=#F74848>+20%</color>, and when actively attacked, no part can take more than <color=#F74848>85%</color> of its Max HP in damage."
       },
       "53082": {
         "name": "Total Defense",
@@ -620,11 +620,11 @@
     "passiveSkills": {
       "53089": {
         "name": "Chained Stars",
-        "SpecificEffects": "When attacking with a Polearm, for every <color=#F74848>1</color> target within the attack range, DMG <color=#F74848>+7.5%</color>, up to <color=#F74848>30%</color>."
+        "SpecificEffects": "When attacking with a Polearm, for every <color=#F74848>1</color> target within the AoE range, DMG <color=#F74848>+7.5%</color>, up to <color=#F74848>30%</color>."
       },
       "53090": {
         "name": "Will of Tomorrow",
-        "SpecificEffects": "Enhanced [EVA-02 Pilot]: After actively attacking, if no damage was taken, the next active attack's DMG bonus increases to <color=#F74848>30%</color>, and is granted immediately upon deployment. When actively attacking, for every <color=#F74848>1</color> target destroyed, <buf ID=1014820>[Sync Ratio]</buf> additionally <color=#F74848>+1%</color>. Once <buf ID=1014820>[Sync Ratio]</buf> reaches <color=#F74848>80%</color>, Polearm skill multiplier <color=#F74848>+0.1</color> and Code Skill range <color=#F74848>+1</color>, Machine Gun skill multiplier <color=#F74848>+0.05</color>."
+        "SpecificEffects": "Enhanced [EVA-02 Pilot]: After actively attacking, if no damage was taken, the next active attack's DMG bonus increases to <color=#F74848>30%</color>, and is granted immediately upon deployment. When actively attacking, for every <color=#F74848>1</color> target destroyed, <buf ID=1014820>[Sync Ratio]</buf> additionally <color=#F74848>+1%</color>. Once <buf ID=1014820>[Sync Ratio]</buf> reaches <color=#F74848>80%</color>, Polearm skill multiplier <color=#F74848>+0.1</color> and Code Skill AoE range <color=#F74848>+1</color>, Machine Gun skill multiplier <color=#F74848>+0.05</color>."
       },
       "53088": {
         "name": "Fleeting Shadow",
@@ -664,7 +664,7 @@
       },
       "53096": {
         "name": "Now You See It",
-        "SpecificEffects": "Enhanced [Dummy Trick]: When actively repairing an ally, grants them <buf ID=530962>[Code DMG Reduction]</buf>, removed after triggering once. When triggering <buf ID=900002>[Link Attack]</buf>, gains <color=#F74848>1</color> stack of <buf ID=530965>[No Time to Lose]</buf>, up to <color=#F74848>3</color> stacks. While <buf ID=900151>[Dummy Trick]</buf> is available to trigger, allied ST bodies are immune to <buf ID=900109>[Execution]</buf>."
+        "SpecificEffects": "Enhanced [Dummy Trick]: When using a single-target active repair skill, grants the target <buf ID=530962>[Code DMG Reduction]</buf>, removed after triggering once. When triggering <buf ID=900002>[Link Attack]</buf>, gains <color=#F74848>1</color> stack of <buf ID=530965>[No Time to Lose]</buf>, up to <color=#F74848>3</color> stacks. While <buf ID=900151>[Dummy Trick]</buf> is available to trigger, allied ST bodies are immune to <buf ID=900109>[Execution]</buf>."
       },
       "53094": {
         "name": "Opportunist",
@@ -684,7 +684,7 @@
       },
       "53102": {
         "name": "Decision Maker",
-        "SpecificEffects": "Enhanced [Helmswoman]: <buf ID=900123>[Intelligence]</buf> initial and max stacks <color=#F74848>+5</color>. When actively attacking with a Rocket Launcher, if carrying <color=#F74848>15</color> or more stacks of <buf ID=900123>[Intelligence]</buf> before the attack, restores <color=#F74848>1</color> AP after combat. Can trigger <color=#F74848>1</color> time per turn. Each stack of <buf ID=900123>[Intelligence]</buf> grants Crit Rate <color=#F74848>+0.4%</color>."
+        "SpecificEffects": "Enhanced [Helmswoman]: <buf ID=4010500>[Intelligence]</buf> initial and max stacks <color=#F74848>+5</color>. When actively attacking with a Rocket Launcher, if carrying <color=#F74848>15</color> or more stacks of <buf ID=4010500>[Intelligence]</buf> before the attack, restores <color=#F74848>1</color> AP after combat. Can trigger <color=#F74848>1</color> time per turn. Each stack of <buf ID=4010500>[Intelligence]</buf> grants Rosemary Crit Rate <color=#F74848>+0.4%</color>."
       },
       "53100": {
         "name": "Breaker of the Unyielding",
@@ -704,7 +704,7 @@
       },
       "53105": {
         "name": "Perfect Partner",
-        "SpecificEffects": "Enhanced [Coexistence Theory]: All parts of [Goo Goo] gain Max HP <color=#F74848>+15%</color>, and gains Code Skill <skill mainSkill=500894>[Goo Goo is a Hero!]</skill>. [Goo Goo] also gains this weapon's <skill passiveSkill=53103>[Malfunction Implant]</skill> and <skill passiveSkill=53104>[Optimized Posture]</skill> effects."
+        "SpecificEffects": "Enhanced [Coexistence Theory]: All parts of [Goo Goo] gain Max HP <color=#F74848>+15%</color>, and gains Code Skill <skill mainSkill=500894>[It's a Goo-Good Day to Die!]</skill>. [Goo Goo] also gains this weapon's <skill passiveSkill=53103>[Malfunction Implant]</skill> and <skill passiveSkill=53104>[Optimized Posture]</skill> effects."
       },
       "53103": {
         "name": "Malfunction Implant",
@@ -744,7 +744,7 @@
       },
       "53108": {
         "name": "Trauma Collapse",
-        "SpecificEffects": "Enhanced [Trauma Profiling]: Active attack skills usable with <buf ID=900014>[Aiming]</buf> gain skill multiplier <color=#F74848>+0.25</color> and Crit Rate <color=#F74848>+15%</color>. When actively attacking a target with [Battle Wound], the target cannot retaliate; effective <color=#F74848>1</color> time per turn for each target. Restores <color=#F74848>1</color> AP after the first active attack each turn."
+        "SpecificEffects": "Enhanced [Trauma Profiling]: Active attack skills usable with <buf ID=900014>[Aiming]</buf> gain skill multiplier <color=#F74848>+0.25</color> and Crit Rate <color=#F74848>+15%</color>. When actively attacking a target with <buf ID=900137>[Battle Wound]</buf>, the target cannot retaliate; effective <color=#F74848>1</color> time per turn for each target. Restores <color=#F74848>1</color> AP after the first active attack each turn."
       },
       "53106": {
         "name": "Draining Metabolism",
@@ -813,11 +813,11 @@
     "passiveSkills": {
       "90001": {
         "name": "Precision Piercer",
-        "SpecificEffects": "When actively attacking with a Pile Bunker, Hit Rate <color=#F74848>+15%</color>, and [Percentage DMG] <color=#F74848>+20%</color>."
+        "SpecificEffects": "When actively attacking with a Pile Bunker, Hit Rate <color=#F74848>+15%</color>, and [Fixed DMG] <color=#F74848>+20%</color>."
       },
       "90002": {
         "name": "Good Medicine Tastes Bitter",
-        "SpecificEffects": "Enhanced <buf ID=5009501>[Good Medicine Tastes Bitter]</buf>: Upon deployment, gains <color=#F74848>5</color> stacks of [Fake Intentions]. After actively attacking using <buf ID=5009501>[Good Medicine Tastes Bitter]</buf> or <buf ID=5009418>[Resonance Pulse]</buf> and dealing <buf ID=900017>[Fixed DMG]</buf>, gains <color=#F74848>1</color> stack of [False Intentions], up to <color=#F74848>20</color> stacks."
+        "SpecificEffects": "Enhanced <buf ID=5009501>[Good Medicine Tastes Bitter]</buf>: Upon deployment, gains <color=#F74848>5</color> stacks of [False Intentions]. After actively attacking using <buf ID=5009501>[Good Medicine Tastes Bitter]</buf> or <buf ID=5009418>[Resonance Pulse]</buf> and dealing <buf ID=900017>[Fixed DMG]</buf>, gains <color=#F74848>1</color> stack of [False Intentions], up to <color=#F74848>20</color> stacks."
       },
       "90003": {
         "name": "Vital Strike",
@@ -837,7 +837,7 @@
       },
       "90005": {
         "name": "Flower Of The Force",
-        "SpecificEffects": "Enhanced [Flower Of The Force]: When attacking using [Suppressive Fire] and [Blazing Onslaught], can enter <buf ID=900014>[Aiming]</buf> Mode. For this attack, Hit Rate <color=#F74848>+25%</color> for the part selected by <buf ID=900014>[Aiming]</buf>. When actively attacking, if <color=#F74848>2</color> stacks of [Fury Fury] are spent, regens <color=#F74848>1</color> AP after combat, and gains [Eternal Bloom]."
+        "SpecificEffects": "Enhanced [Flower Of The Force]: When attacking using [Suppressive Fire] and [Blazing Onslaught], can enter <buf ID=900014>[Aiming]</buf> Mode. For this attack, Hit Weighting <color=#F74848>+25</color> for the part selected by <buf ID=900014>[Aiming]</buf>. When actively attacking, if <color=#F74848>2</color> stacks of <buf ID=2017500>[Fury]</buf> are spent, regens <color=#F74848>1</color> AP after combat, and gains [Eternal Bloom]."
       },
       "90006": {
         "name": "Scaling Barrage",
