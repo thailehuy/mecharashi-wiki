@@ -1,21 +1,21 @@
 {
-  "name": "君权",
+  "name": "Monarch",
   "introduce": "LTX-AB01 君权\n由拉尼亚凯亚公司为布吕希尔家族专门研发的中型指挥特化机兵，传闻由驾驶员亲自参与设计、调试。\nLTX-AB01在设计上彻底服务于“优势战术”的核心理念，其搭载的“法典”战术决策系统，是拉尼亚凯亚在信息战领域的尖端结晶。该系统能通过机体各部的广域传感器阵列，实时采集并融合战场上的光学、电磁、声纹等一切信息，在布吕希尔家族提供的海量作战数据支持下，通过解构敌方的阵型动态、弹药消耗、通讯模式甚至个体机兵的战术习惯，在驾驶员的最终调整下，能够近乎实时地推演出未来数种战场态势，精准预判敌方的薄弱环节与我方的最优行动路径。最终，系统会将唯一的“最优解”化为简洁的战术敕令呈递给驾驶员，将信息优势转化为不可逆转的胜利。",
   "modules": {
     "20594": {
-      "name": "法典系统",
-      "SpecificEffects": "使用狙击武器主动攻击时，每造成<color=#F74848>1</color>连击，使自身伤害和暴击率提升<color=#F74848>4%</color>，可叠加<color=#F74848>5</color>层，持续<color=#F74848>2</color>回合"
+      "name": "Discipline Mod",
+      "SpecificEffects": "When actively attacking with Sniper Rifle, for each <color=#F74848>1</color> hit, increases DMG dealt and Critical Hit chance by <color=#F74848>4%</color>, stacking up to <color=#F74848>5</color> times, lasting for <color=#F74848>2</color> turns."
     },
     "40034": {
       "name": "Crit DMG Mod",
       "SpecificEffects": "Crit DMG <color=#F74848>+10%</color>."
     },
     "30508": {
-      "name": "威势模组",
-      "SpecificEffects": "对战时，若自身耐久值百分比大于等于敌机，伤害提升<color=#F74848>24%</color>；主动攻击时，若周围<color=#F74848>3</color>格内有友方单位，AP消耗<color=#F74848>-1</color>，最低<color=#F74848>1</color>点，每回合最多发动<color=#F74848>1</color>次"
+      "name": "Dignity Mod",
+      "SpecificEffects": "During combat, if own HP percentage is equal to or greater than the enemy, DMG dealt increases by <color=#F74848>24%</color>. When attacking, if there is an ally within <color=#F74848>3</color> adjacent tiles, AP Cost is reduced by <color=#F74848>-1</color>, to a minimum of <color=#F74848>1</color> AP. This effect can trigger <color=#F74848>1</color> time per turn."
     }
   },
-  "version": "1.0",
+  "version": "2.8",
   "dispatchVersion": "3.2",
   "dispatchGroup": "GeekX"
 }

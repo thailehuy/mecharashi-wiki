@@ -5,12 +5,12 @@
   "Profession": "Gunner",
   "Occupation": "Sniper",
   "Talent0_2Ability": {
-    "name": "铁血统帅",
-    "SpecificEffects": "可以使用指令<skill mainSkill=301350>[敕令]</skill>；使用狙击步枪主动攻击对战命中敌方时，可以发动<color=#F74848>2</color>次<buf ID=900148>[弹射]</buf>，每次造成首次攻击<color=#F74848>25%</color>的伤害"
+    "name": "Iron-blooded Commander",
+    "SpecificEffects": "Can use command skill <skill mainSkill=301350>[Marshall Edict]</skill>. When actively attacking with a Sniper Rifle, triggers <color=#F74848>2</color> <buf ID=900148>[Ricochet]</buf>, dealing <color=#F74848>25%</color> original DMG each."
   },
   "Talent3_5Ability": {
-    "name": "铁血统帅",
-    "SpecificEffects": "可以使用指令<skill mainSkill=301350>[敕令]</skill>；使用狙击步枪主动攻击对战命中敌方时，可以发动<color=#F74848>3</color>次<buf ID=900148>[弹射]</buf>，每次造成首次攻击<color=#F74848>30%</color>的伤害"
+    "name": "Iron-blooded Commander",
+    "SpecificEffects": "Can use command skill <skill mainSkill=301350>[Marshall Edict]</skill>. When actively attacking with a Sniper Rifle, triggers <color=#F74848>3</color> <buf ID=900148>[Ricochet]</buf>, dealing <color=#F74848>30%</color> original DMG each."
   },
   "skills": {
     "300001": {
@@ -19,38 +19,38 @@
       "SpecificEffects": "When destroying a target, <buf ID=900004>[Re-ATK]</buf> can be triggered, effective up to <color=#F74848>2</color> times per turn. Unable to move before attacking."
     },
     "301302": {
-      "name": "协同战术",
+      "name": "Pincer Tactics",
       "describe": "",
-      "SpecificEffects": "主动攻击对战后，使<buf ID=3013504>[亲卫]</buf>对目标发动<buf ID=900002>[协力攻击]</buf>，造成<color=#F74848>0.3</color>倍伤害，每回合最多发动<color=#F74848>2</color>次；该协力攻击不要求协力能力，也不消耗协力次数"
+      "SpecificEffects": "After actively attacking, <buf ID=3013504>[Personal Aide]</buf> launches a <buf ID=900002>[Link Attack]</buf> on the same target, dealing <color=#F74848>0.3x</color>. This effect can trigger <color=#F74848>2</color> times per turn. This <buf ID=900002>[Link Attack]</buf> does not require allies to possess a specific skill and does not consume any Link times."
     },
     "301303": {
-      "name": "缭乱",
-      "describe": "使用狙击步枪攻击单个目标，造成<color=#F74848>1.2</color>倍伤害，<buf ID=900148>[弹射]</buf>时对命中部位外的其他部位造成<color=#F74848>75%</color>的溅射伤害",
+      "name": "Disrupting Shot",
+      "describe": "Uses a Sniper Rifle to attack a target, dealing <color=#F74848>1.2x</color> DMG. Upon triggering <buf ID=900148>[Ricochet]</buf>, deals <color=#F74848>75%</color> Splash DMG to parts other than the part hit.",
       "SpecificEffects": ""
     },
     "301304": {
-      "name": "交辉号令",
+      "name": "Diplomacy",
       "describe": "",
-      "SpecificEffects": "<buf ID=3013504>[亲卫]</buf>获得指令<skill mainSkill=301304>[献势]</skill>"
+      "SpecificEffects": "<buf ID=3013504>[Personal Aide]</buf> gains command skill <skill mainSkill=301304>[Servitude]</skill>"
     },
     "301305": {
-      "name": "明良相逢",
+      "name": "Wise Leader",
       "describe": "",
-      "SpecificEffects": "<buf ID=3013504>[亲卫]</buf>被暴击率降低<color=#F74848>15%</color>，自身在<buf ID=3013504>[亲卫]</buf>周围<color=#F74848>3</color>格内移动时，移动力消耗降低<color=#F74848>50%</color>"
+      "SpecificEffects": "Reduces <buf ID=3013504>[Personal Aide]</buf> chance to be critically hit by <color=#F74848>15%</color>. When traversing within <color=#F74848>3</color> adjacent tiles of <buf ID=3013504>[Personal Aide]</buf>, movement cost is reduced by <color=#F74848>50%</color>."
     },
     "301306": {
-      "name": "血盟",
-      "describe": "选择自身周围<color=#F74848>3</color>格内任意空地格，传送<buf ID=3013504>[亲卫]</buf>至该地格，并施加<buf ID=3013061>[忠诚]</buf>，然后可使用剩余移动力继续行动",
+      "name": "Blood Oath",
+      "describe": "Selects an empty tile within <color=#F74848>3</color> adjacent tiles, teleports <buf ID=3013504>[Personal Aide]</buf> to that tile and grants <buf ID=3013061>[Loyalty]</buf>. Can continue to act with remaining movement.",
       "SpecificEffects": ""
     },
     "301307": {
-      "name": "守正出奇",
+      "name": "Strategic Marshal",
       "describe": "",
-      "SpecificEffects": "暴击率提升<color=#F74848>15%</color>，<buf ID=900148>[弹射]</buf>时额外提升<color=#F74848>15%</color>"
+      "SpecificEffects": "Critical Hit chance increases by <color=#F74848>15%</color>. During <buf ID=900148>[Ricochet]</buf>, Critical Hit chance additionally increases by <color=#F74848>15%</color>."
     },
     "301308": {
-      "name": "诛尽",
-      "describe": "使用狙击步枪攻击单个目标，造成<color=#F74848>1.4</color>倍伤害，攻击前可以<buf ID=900014>[瞄准]</buf>且<buf ID=900148>[弹射]</buf>次数<color=#F74848>+2</color>，当<buf ID=3013504>[亲卫]</buf>在自身周围<color=#F74848>3</color>格内时，本次攻击及<buf ID=900148>[弹射]</buf>无视目标<buf ID=900160>[常规减伤效果]</buf>",
+      "name": "Extermination Order",
+      "describe": "Uses a Sniper Rifle to attack a target, dealing <color=#F74848>1.4x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking. <buf ID=900148>[Ricochet]</buf> count increases by <color=#F74848>+2</color>. If <buf ID=3013504>[Personal Aide]</buf> is within <color=#F74848>3</color> adjacent tiles, this attack and <buf ID=900148>[Ricochet]</buf> ignores target's <buf ID=900160>[DMG Reduction]</buf> effect.",
       "SpecificEffects": ""
     }
   },
@@ -80,8 +80,8 @@
       "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
     },
     "301231": {
-      "name": "追猎标记1",
-      "SpecificEffects": "使用射击武器主动攻击击破部位时，根据部位的类型获得不同<buf ID=900141>[追猎增益]</buf>，每回合最多发动<color=#F74848>2</color>次"
+      "name": "Hunting Mark 1",
+      "SpecificEffects": "When actively attacking and breaking parts with a ranged weapon, gains <buf ID=900141>[Hunting]</buf> according to the part hit. Can trigger <color=#F74848>2</color> times per turn."
     },
     "300032": {
       "name": "AP Optimization 3",
@@ -92,20 +92,20 @@
       "SpecificEffects": "<buf ID=900004>[Re-ATK]</buf>'s effective times per turn <color=#F74848>+1</color>."
     },
     "301234": {
-      "name": "追猎标记2",
-      "SpecificEffects": "使用射击武器主动攻击时，若击毁目标，可额外移动<color=#F74848>3</color>格"
+      "name": "Hunting Mark 2",
+      "SpecificEffects": "After actively attacking and destroying a target with a ranged weapon, can additionally move <color=#F74848>3</color> tiles."
     },
     "301235": {
-      "name": "追猎标记3",
-      "SpecificEffects": "<buf ID=900142>[追猎标记1]</buf>每回合不再有发动次数限制"
+      "name": "Hunting Mark 3",
+      "SpecificEffects": "<buf ID=900142>[Origin Tracer 1]</buf> no longer has trigger limit"
     },
     "301236": {
-      "name": "追猎标记4",
-      "SpecificEffects": "行动开始时，随机获得<color=#F74848>1</color>种未获得的<buf ID=900141>[追猎增益]</buf>效果"
+      "name": "Hunting Mark 4",
+      "SpecificEffects": "At the start of action, randomly gains <color=#F74848>1</color> of unobtained <buf ID=900141>[Hunting]</buf> buffs."
     },
     "301341": {
-      "name": "我即征服1",
-      "SpecificEffects": "主动攻击时若<buf ID=900148>[弹射]</buf>次数大于等于<color=#F74848>2</color>，攻击后可发动<buf ID=900004>[再攻击]</buf>，攻击前可以移动<color=#F74848>2</color>格，每回合最多发动<color=#F74848>1</color>次"
+      "name": "Conqueror Will 1",
+      "SpecificEffects": "When initiating combat, if <buf ID=900148>[Ricochet]</buf> count is <color=#F74848>2</color> or more, triggers <buf ID=900004>[Re-ATK]</buf>, allowing movement of <color=#F74848>2</color> tiles before attacking. This effect can trigger <color=#F74848>1</color> time per turn."
     },
     "300042": {
       "name": "AP Optimization 4",
@@ -116,17 +116,17 @@
       "SpecificEffects": "When destroying a target, additionally restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>2</color> times per turn."
     },
     "301344": {
-      "name": "我即征服2",
-      "SpecificEffects": "发动<buf ID=900148>[弹射]</buf>时，优先攻击与首次攻击相同的部位"
+      "name": "Conqueror Will 2",
+      "SpecificEffects": "<buf ID=900148>[Ricochet]</buf> prioritizes hitting the same part as the first attack."
     },
     "301345": {
-      "name": "我即征服3",
-      "SpecificEffects": "使用狙击步枪攻击时，伤害和命中率提升<color=#F74848>10%</color>"
+      "name": "Conqueror Will 3",
+      "SpecificEffects": "When attacking with a Sniper Rifle, DMG dealt and Hit Rate are increased by <color=#F74848>10%</color>."
     },
     "301346": {
-      "name": "我即征服4",
-      "SpecificEffects": "<buf ID=3013504>[亲卫]</buf>存活时，狙击步枪射程+<color=#F74848>1</color>，<buf ID=900148>[弹射]</buf>次数<color=#F74848>+1</color>"
+      "name": "Conqueror Will 4",
+      "SpecificEffects": "While <buf ID=3013504>[Personal Aide]</buf> is present, Sniper Rifle range increases by <color=#F74848>+1</color> and <buf ID=900148>[Ricochet]</buf> count increases by <color=#F74848>+1</color>."
     }
   },
-  "version": "1.0"
+  "version": "2.8"
 }
