@@ -1118,7 +1118,7 @@
     },
     "900148": {
       "name": "Ricochet",
-      "effect": "Selects the nearest target within <color=#F74848>3</color> adjacent tiles of the last target to attack, prioritizing hitting the same target as the first attack. This effect is halted if an attack misses."
+      "effect": "Selects the nearest target within <color=#F74848>3</color> adjacent tiles of the last target to attack, prioritizing hitting the same target as the first attack. This effect is halted if an attack misses. [Ricochet] is guaranteed to hit if the target is <buf ID=3013504>[Personal Aide]</buf>."
     },
     "900149": {
       "name": "Leader Crest",
@@ -1138,7 +1138,7 @@
     },
     "3013061": {
       "name": "Loyalty",
-      "effect": "When [Audrey] is actively attacked within <color=#F74848>3</color> adjacent tiles by assault or ranged weapons, activate <buf ID=900022>[Guard]</buf>. DMG taken is reduced by <color=#F74848>25%</color>. This effect is removed after triggering."
+      "effect": "When [Audrey] is initiated combat against by assault or ranged weapons, if this unit is within <color=#F74848>3</color> adjacent tiles, activate <buf ID=900022>[Guard]</buf>. DMG taken is reduced by <color=#F74848>25%</color>. This effect is removed after triggering."
     },
     "900160": {
       "name": "DMG Reduction",

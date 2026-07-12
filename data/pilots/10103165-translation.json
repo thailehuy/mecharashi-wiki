@@ -1,16 +1,16 @@
 {
   "PilotName": "Audrey",
-  "RealName": "Audrey Brühl",
+  "RealName": "Audrey Bluecher",
   "Gender": "Female",
   "Profession": "Gunner",
   "Occupation": "Sniper",
   "Talent0_2Ability": {
     "name": "Iron-blooded Commander",
-    "SpecificEffects": "Can use command skill <skill mainSkill=301350>[Marshall Edict]</skill>. When actively attacking with a Sniper Rifle, triggers <color=#F74848>2</color> <buf ID=900148>[Ricochet]</buf>, dealing <color=#F74848>25%</color> original DMG each."
+    "SpecificEffects": "Can use command skill <skill mainSkill=301350>[Marshall Edict]</skill>. When initiating combat with a Sniper Rifle, triggers <color=#F74848>2</color> <buf ID=900148>[Ricochet]</buf>, dealing <color=#F74848>25%</color> original DMG each."
   },
   "Talent3_5Ability": {
     "name": "Iron-blooded Commander",
-    "SpecificEffects": "Can use command skill <skill mainSkill=301350>[Marshall Edict]</skill>. When actively attacking with a Sniper Rifle, triggers <color=#F74848>3</color> <buf ID=900148>[Ricochet]</buf>, dealing <color=#F74848>30%</color> original DMG each."
+    "SpecificEffects": "Can use command skill <skill mainSkill=301350>[Marshall Edict]</skill>. When initiating combat with a Sniper Rifle, triggers <color=#F74848>3</color> <buf ID=900148>[Ricochet]</buf>, dealing <color=#F74848>30%</color> original DMG each."
   },
   "skills": {
     "300001": {
@@ -21,11 +21,11 @@
     "301302": {
       "name": "Pincer Tactics",
       "describe": "",
-      "SpecificEffects": "After actively attacking, <buf ID=3013504>[Personal Aide]</buf> launches a <buf ID=900002>[Link Attack]</buf> on the same target, dealing <color=#F74848>0.3x</color>. This effect can trigger <color=#F74848>2</color> times per turn. This <buf ID=900002>[Link Attack]</buf> does not require allies to possess a specific skill and does not consume any Link times."
+      "SpecificEffects": "After initiating combat, <buf ID=3013504>[Personal Aide]</buf> launches a <buf ID=900002>[Link Attack]</buf> on the same target, dealing <color=#F74848>0.3x</color>. This effect can trigger <color=#F74848>2</color> times per turn. This <buf ID=900002>[Link Attack]</buf> does not require allies to possess a specific skill and does not consume any Link times."
     },
     "301303": {
       "name": "Disrupting Shot",
-      "describe": "Uses a Sniper Rifle to attack a target, dealing <color=#F74848>1.2x</color> DMG. Upon triggering <buf ID=900148>[Ricochet]</buf>, deals <color=#F74848>75%</color> Splash DMG to parts other than the part hit.",
+      "describe": "Uses a Sniper Rifle to attack a target, dealing <color=#F74848>1.2x</color> DMG. Upon <buf ID=900148>[Ricochet]</buf> hitting an enemy, deals <color=#F74848>75%</color> Splash DMG to parts other than the part hit.",
       "SpecificEffects": ""
     },
     "301304": {
@@ -50,7 +50,7 @@
     },
     "301308": {
       "name": "Extermination Order",
-      "describe": "Uses a Sniper Rifle to attack a target, dealing <color=#F74848>1.4x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking. <buf ID=900148>[Ricochet]</buf> count increases by <color=#F74848>+2</color>. If <buf ID=3013504>[Personal Aide]</buf> is within <color=#F74848>3</color> adjacent tiles, this attack and <buf ID=900148>[Ricochet]</buf> ignores target's <buf ID=900160>[DMG Reduction]</buf> effect.",
+      "describe": "Uses a Sniper Rifle to attack a target, dealing <color=#F74848>1.4x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking. <buf ID=900148>[Ricochet]</buf> count increases by <color=#F74848>+2</color>. If <buf ID=3013504>[Personal Aide]</buf> is within <color=#F74848>3</color> adjacent tiles of [Audrey], this attack and <buf ID=900148>[Ricochet]</buf> ignores target's <buf ID=900160>[DMG Reduction]</buf> effect.",
       "SpecificEffects": ""
     }
   },
@@ -115,7 +115,7 @@
     },
     "301341": {
       "name": "Conqueror Will 1",
-      "SpecificEffects": "When initiating combat, if <buf ID=900148>[Ricochet]</buf> count is <color=#F74848>2</color> or more, triggers <buf ID=900004>[Re-ATK]</buf>, allowing movement of <color=#F74848>2</color> tiles before attacking. This effect can trigger <color=#F74848>1</color> time per turn."
+      "SpecificEffects": "When initiating combat, if <buf ID=900148>[Ricochet]</buf> is triggered <color=#F74848>2</color> times or more, triggers <buf ID=900004>[Re-ATK]</buf>, allowing movement of <color=#F74848>2</color> tiles before attacking. This effect can trigger <color=#F74848>1</color> time per turn."
     },
     "300042": {
       "name": "AP Optimization 4",
