@@ -76,7 +76,8 @@ Pages.weapons = {
 
     var acNav = '<div class="ac-nav">' +
       acGroups.filter(function (g) { return g.ac; }).map(function (g) {
-        return '<a class="ac-nav-item" href="#ac-' + g.ac + '">AC ' + g.ac + '</a>';
+        var version = (g.weapons[0] || {}).version;
+        return '<a class="ac-nav-item" href="#ac-' + g.ac + '">AC' + g.ac + (version ? ' - v' + version : '') + '</a>';
       }).join('') +
     '</div>';
 

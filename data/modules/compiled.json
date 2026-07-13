@@ -1490,23 +1490,6 @@
         "4": "During an Active Attack, there is a <color=#F74848>100%</color> chance to trigger <buf ID=900001>[Flurry Strike]</buf>, dealing <color=#F74848>0.3x</color> DMG, effective up to <color=#F74848>1</color> time per turn."
       }
     },
-    "3027": {
-      "name": "Maverick Mod",
-      "icon": "Icon_skill_passive_1106",
-      "category": "GeneralSuit",
-      "maxLevel": 8,
-      "currentLevel": 8,
-      "levels": {
-        "1": "When there are no allies within <color=#F74848>2</color> adjacent tiles, DMG +<color=#F74848>3%</color>",
-        "2": "When there are no allies within <color=#F74848>2</color> adjacent tiles, DMG +<color=#F74848>4%</color>",
-        "3": "When there are no allies within <color=#F74848>2</color> adjacent tiles, DMG +<color=#F74848>6%</color>",
-        "4": "When there are no allies within <color=#F74848>2</color> adjacent tiles, DMG +<color=#F74848>8%</color>",
-        "5": "When there are no allies within <color=#F74848>2</color> adjacent tiles, DMG +<color=#F74848>10%</color>",
-        "6": "When there are no allies within <color=#F74848>2</color> adjacent tiles, DMG +<color=#F74848>12%</color>",
-        "7": "When there are no allies within <color=#F74848>2</color> adjacent tiles, DMG +<color=#F74848>14%</color>",
-        "8": "When there are no allies within <color=#F74848>2</color> adjacent tiles, DMG +<color=#F74848>18%</color>;\nAt start of action, if there are no allies within <color=#F74848>2</color> adjacent tiles, AP cost of the first attack initiated this turn <color=#F74848>-1</color>, down to a minimum of <color=#F74848>1</color> AP."
-      }
-    },
     "3033": {
       "name": "Sentinel Mod",
       "icon": "Icon_entry_10084",
@@ -1522,23 +1505,6 @@
         "6": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, DMG <color=#F74848>+12%</color>.",
         "7": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, DMG <color=#F74848>+14%</color>.",
         "8": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, DMG <color=#F74848>+18%</color>.\nWhen in combat with a target at <buf ID=900011>[Ideal Range]</buf>, Bullets <color=#F74848>+1</color>."
-      }
-    },
-    "3034": {
-      "name": "Eruption Mod",
-      "icon": "Icon_entry_10086",
-      "category": "GeneralSuit",
-      "maxLevel": 8,
-      "currentLevel": 8,
-      "levels": {
-        "1": "When attacking a target within the attack range of both the held weapon and the backpack weapon, DMG Dealt <color=#F74848>+3%</color>",
-        "2": "When attacking a target within the attack range of both the held weapon and the backpack weapon, DMG Dealt <color=#F74848>+4%</color>",
-        "3": "When attacking a target within the attack range of both the held weapon and the backpack weapon, DMG Dealt <color=#F74848>+6%</color>",
-        "4": "When attacking a target within the attack range of both the held weapon and the backpack weapon, DMG Dealt <color=#F74848>+8%</color>",
-        "5": "When attacking a target within the attack range of both the held weapon and the backpack weapon, DMG Dealt <color=#F74848>+10%</color>",
-        "6": "When attacking a target within the attack range of both the held weapon and the backpack weapon, DMG Dealt <color=#F74848>+12%</color>",
-        "7": "When attacking a target within the attack range of both the held weapon and the backpack weapon, DMG Dealt <color=#F74848>+14%</color>",
-        "8": "When attacking a target within the attack range of both the held weapon and the backpack weapon, DMG Dealt <color=#F74848>+18%</color>;\nEnters the <buf ID=900121>[Restriction Removal]</buf> state, activating the extra module effect integrated within the part."
       }
     },
     "3040": {
@@ -1558,21 +1524,21 @@
         "8": "When attacking enemies on any terrain effect, DMG dealt increases by <color=#F74848>18%</color>, <buf ID=900017>[Fixed DMG]</buf> dealt increases by <color=#F74848>25%</color>."
       }
     },
-    "3036": {
-      "name": "Bombing Mod",
-      "icon": "Icon_entry_10087",
+    "3027": {
+      "name": "Maverick Mod",
+      "icon": "Icon_skill_passive_1106",
       "category": "GeneralSuit",
       "maxLevel": 8,
       "currentLevel": 8,
       "levels": {
-        "1": "When using Code skills to attack, DMG increases by <color=#F74848>3%</color>.",
-        "2": "When using Code skills to attack, DMG increases by <color=#F74848>4%</color>.",
-        "3": "When using Code skills to attack, DMG increases by <color=#F74848>6%</color>.",
-        "4": "When using Code skills to attack, DMG increases by <color=#F74848>8%</color>.",
-        "5": "When using Code skills to attack, DMG increases by <color=#F74848>10%</color>.",
-        "6": "When using Code skills to attack, DMG increases by <color=#F74848>12%</color>.",
-        "7": "When using Code skills to attack, DMG increases by <color=#F74848>14%</color>.",
-        "8": "When using Code skills to attack, DMG increases by <color=#F74848>18%</color>.\nWhen actively attacking with tactical weapons, if <color=#F74848>3</color> or more targets are hit, randomly reload <color=#F74848>1</color> ammo of tactical weapon. Can be activated <color=#F74848>1</color> times per turn."
+        "1": "When there are no allies within <color=#F74848>2</color> adjacent tiles, DMG +<color=#F74848>3%</color>",
+        "2": "When there are no allies within <color=#F74848>2</color> adjacent tiles, DMG +<color=#F74848>4%</color>",
+        "3": "When there are no allies within <color=#F74848>2</color> adjacent tiles, DMG +<color=#F74848>6%</color>",
+        "4": "When there are no allies within <color=#F74848>2</color> adjacent tiles, DMG +<color=#F74848>8%</color>",
+        "5": "When there are no allies within <color=#F74848>2</color> adjacent tiles, DMG +<color=#F74848>10%</color>",
+        "6": "When there are no allies within <color=#F74848>2</color> adjacent tiles, DMG +<color=#F74848>12%</color>",
+        "7": "When there are no allies within <color=#F74848>2</color> adjacent tiles, DMG +<color=#F74848>14%</color>",
+        "8": "When there are no allies within <color=#F74848>2</color> adjacent tiles, DMG +<color=#F74848>18%</color>;\nAt start of action, if there are no allies within <color=#F74848>2</color> adjacent tiles, AP cost of the first attack initiated this turn <color=#F74848>-1</color>, down to a minimum of <color=#F74848>1</color> AP."
       }
     },
     "3031": {
@@ -1592,6 +1558,23 @@
         "8": "When in combat against enemies within <color=#F74848>2</color> tiles, DMG <color=#F74848>+18%</color>.\nWhen initiating combat, if the target is hit, steals <color=#F74848>1</color> AP from the target after combat. Can only trigger <color=#F74848>1</color> time per turn."
       }
     },
+    "3036": {
+      "name": "Bombing Mod",
+      "icon": "Icon_entry_10087",
+      "category": "GeneralSuit",
+      "maxLevel": 8,
+      "currentLevel": 8,
+      "levels": {
+        "1": "When using Code skills to attack, DMG increases by <color=#F74848>3%</color>.",
+        "2": "When using Code skills to attack, DMG increases by <color=#F74848>4%</color>.",
+        "3": "When using Code skills to attack, DMG increases by <color=#F74848>6%</color>.",
+        "4": "When using Code skills to attack, DMG increases by <color=#F74848>8%</color>.",
+        "5": "When using Code skills to attack, DMG increases by <color=#F74848>10%</color>.",
+        "6": "When using Code skills to attack, DMG increases by <color=#F74848>12%</color>.",
+        "7": "When using Code skills to attack, DMG increases by <color=#F74848>14%</color>.",
+        "8": "When using Code skills to attack, DMG increases by <color=#F74848>18%</color>.\nWhen actively attacking with tactical weapons, if <color=#F74848>3</color> or more targets are hit, randomly reload <color=#F74848>1</color> ammo of tactical weapon. Can be activated <color=#F74848>1</color> times per turn."
+      }
+    },
     "3045": {
       "name": "Support Mod",
       "icon": "Icon_entry_10097",
@@ -1607,6 +1590,23 @@
         "6": "When attacking, if there are allies within <color=#F74848>4</color> adjacent tiles, DMG dealt increases by <color=#F74848>12%</color>.",
         "7": "When attacking, if there are allies within <color=#F74848>4</color> adjacent tiles, DMG dealt increases by <color=#F74848>14%</color>.",
         "8": "When attacking, if there are allies within <color=#F74848>4</color> adjacent tiles, DMG dealt increases by <color=#F74848>18%</color>.\nAt the end of turn, if <color=#F74848>2</color> or more code or attack skills are used this turn, recovers <color=#F74848>1</color> AP."
+      }
+    },
+    "3034": {
+      "name": "Eruption Mod",
+      "icon": "Icon_entry_10086",
+      "category": "GeneralSuit",
+      "maxLevel": 8,
+      "currentLevel": 8,
+      "levels": {
+        "1": "When attacking a target within the attack range of both the held weapon and the backpack weapon, DMG Dealt <color=#F74848>+3%</color>",
+        "2": "When attacking a target within the attack range of both the held weapon and the backpack weapon, DMG Dealt <color=#F74848>+4%</color>",
+        "3": "When attacking a target within the attack range of both the held weapon and the backpack weapon, DMG Dealt <color=#F74848>+6%</color>",
+        "4": "When attacking a target within the attack range of both the held weapon and the backpack weapon, DMG Dealt <color=#F74848>+8%</color>",
+        "5": "When attacking a target within the attack range of both the held weapon and the backpack weapon, DMG Dealt <color=#F74848>+10%</color>",
+        "6": "When attacking a target within the attack range of both the held weapon and the backpack weapon, DMG Dealt <color=#F74848>+12%</color>",
+        "7": "When attacking a target within the attack range of both the held weapon and the backpack weapon, DMG Dealt <color=#F74848>+14%</color>",
+        "8": "When attacking a target within the attack range of both the held weapon and the backpack weapon, DMG Dealt <color=#F74848>+18%</color>;\nEnters the <buf ID=900121>[Restriction Removal]</buf> state, activating the extra module effect integrated within the part."
       }
     }
   }
