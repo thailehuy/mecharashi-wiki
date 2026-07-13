@@ -226,9 +226,10 @@ Pages.sts = {
 
     // Modules
     var moduleCards = (m.modules || []).map(function (mod) {
-      var iconSrc = MODULE_ICON_BASE + encodeURIComponent(mod.SkillIcon || mod.icon) + '.png';
-      var desc    = Pages.sts._parseEffects(mod.SpecificEffects || '');
-      var lv      = mod.level || '';
+      var iconSrc    = MODULE_ICON_BASE + encodeURIComponent(mod.SkillIcon || mod.icon) + '.png';
+      var lv         = mod.level || '';
+      var sliderHtml = (typeof ModuleSlider !== 'undefined') ? ModuleSlider.html(mod.id, mod.level) : null;
+      var body       = sliderHtml || ('<div class="talent-desc">' + Pages.sts._parseEffects(mod.SpecificEffects || '') + '</div>');
       return (
         '<div class="talent-card">' +
           '<div class="talent-header">' +
@@ -236,11 +237,11 @@ Pages.sts = {
             '<div>' +
               '<div class="talent-name">' +
                 $('<span>').text(mod.name).html() +
-                (lv ? '<span class="module-level">Lv.' + lv + '/' + lv + '</span>' : '') +
+                (!sliderHtml && lv ? '<span class="module-level">Lv.' + lv + '/' + lv + '</span>' : '') +
               '</div>' +
             '</div>' +
           '</div>' +
-          '<div class="talent-desc">' + desc + '</div>' +
+          body +
         '</div>'
       );
     }).join('') || '<p class="text-secondary" style="font-size:0.8rem">No modules.</p>';
