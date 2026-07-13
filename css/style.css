@@ -1042,6 +1042,63 @@ a.material-item:hover .material-icon-wrap {
   color: #ffffff;
 }
 
+.module-card-mechs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 0.6rem;
+}
+
+.module-card-mech-icon-wrap {
+  position: relative;
+  display: block;
+}
+
+.module-card-mech-icon {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 6px;
+  border: 1px solid #3a3a5a;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.module-card-mech-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.module-card-mech-icon.rank-b { border-color: #4a6fa5; }
+.module-card-mech-icon.rank-a { border-color: #8b6abf; }
+.module-card-mech-icon.rank-s { border-color: #f0b429; }
+
+.module-card-mech-tooltip {
+  position: absolute;
+  bottom: calc(100% + 6px);
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  background: #1a1a20;
+  border: 1px solid #3a3a6e;
+  border-radius: 4px;
+  padding: 3px 8px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #e0e0ff;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.1s;
+  z-index: 10;
+}
+
+.module-card-mech-icon-wrap:hover .module-card-mech-tooltip {
+  opacity: 1;
+}
+
 .module-detail-header {
   display: grid;
   grid-template-columns: auto 1fr;

@@ -132,6 +132,7 @@ Pages.modules = {
   },
 
   _renderSection: function (category, familyIds, modules) {
+    var self = this;
     var sorted = familyIds.slice().sort(function (a, b) {
       return modules[a].name < modules[b].name ? -1 : modules[a].name > modules[b].name ? 1 : 0;
     });
@@ -143,6 +144,9 @@ Pages.modules = {
       // the translation template at compile time — meaningless as a default
       // here (no specific mech to be "current" for), so default to max level.
       var sliderHtml = ModuleSlider.html(fam, mod.maxLevel);
+      // Standalone (weapon-type) modules are player-equipped independently —
+      // they aren't part of any specific mech's fixed kit.
+      var mechIconsHtml = mod.category === 'PropertyS' ? '' : self._mechIconsHtml(fam);
 
       return (
         '<div class="col-12 col-sm-6 col-lg-4 col-xl-3 module-card-wrap" data-name="' + encodeURIComponent(mod.name.toLowerCase()) + '">' +
@@ -151,6 +155,7 @@ Pages.modules = {
               '<img class="module-card-icon" src="' + iconSrc + '" alt="" />' +
               '<span class="module-card-name">' + $('<span>').text(mod.name).html() + '</span>' +
             '</div>' +
+            mechIconsHtml +
             (sliderHtml || '') +
           '</div>' +
         '</div>'
@@ -162,6 +167,34 @@ Pages.modules = {
         '<h2 class="ac-section-title">' + (MODULE_CATEGORY_LABEL[category] || category) +
           ' <span class="badge bg-secondary ms-2" style="font-size:0.7rem">' + familyIds.length + '</span></h2>' +
         '<div class="row g-3">' + cards + '</div>' +
+      '</div>'
+    );
+  },
+
+  // Small mech-icon row shown on listing cards: quality background behind
+  // the icon, quality-colored border, and the mech name shown via a custom
+  // CSS hover tooltip (native title tooltips are slow/unreliable to trigger).
+  _mechIconsHtml: function (family) {
+    var mechs = ((window.MechsData || {}).mechs || []).filter(function (m) {
+      return (m.modules || []).some(function (carried) { return carried.id === family; });
+    });
+    if (!mechs.length) return '';
+    return (
+      '<div class="module-card-mechs">' +
+        mechs.map(function (m) {
+          var iconSrc  = MECH_AVATAR_BASE + encodeURIComponent(m.icon) + '.png';
+          var bgSrc    = MECH_QUALITY_BG[m.quality] || '';
+          var rankClass = MECH_QUALITY_CLASS[m.quality] || '';
+          var nameEsc  = $('<span>').text(m.name).html();
+          return (
+            '<a class="module-card-mech-icon-wrap" href="#sts/' + encodeURIComponent(m.name) + '">' +
+              '<span class="module-card-mech-icon ' + rankClass + '" style="background-image:url(\'' + bgSrc + '\')">' +
+                '<img src="' + iconSrc + '" alt="' + nameEsc + '" />' +
+              '</span>' +
+              '<span class="module-card-mech-tooltip">' + nameEsc + '</span>' +
+            '</a>'
+          );
+        }).join('') +
       '</div>'
     );
   },
