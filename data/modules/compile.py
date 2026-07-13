@@ -1,4 +1,5 @@
 import json, glob, os, re
+from collections import Counter
 
 DIR = os.path.dirname(os.path.abspath(__file__))
 MECHS_DIR = os.path.join(DIR, '..', 'mechs')
@@ -34,6 +35,18 @@ MANUAL_TEMPLATES = {
     '拳套模组':     {'name': 'Knuckle Mod',      'template': 'Knuckle DMG <color=#F74848>+3%</color>.'},
     '打桩机模组':   {'name': 'Pile Bunker Mod',  'template': 'Pile Bunker DMG <color=#F74848>+3%</color>.'},
 }
+
+# These families are equipped and translated on real mechs, but aren't in the
+# SSR module catalog scrape at all (confirmed: the detail API returns nothing
+# for their IDs — they're a different tier/category the site doesn't cover
+# yet), so there's no per-level CN ladder to substitute from. Each one only
+# has translations at 2 known levels (2 and max/8), but at BOTH of those the
+# family's main scaling number exactly matches the standard 8-level
+# 3/4/6/8/10/12/14/18% progression used across every other confirmed "18% at
+# max" module on the site — so the remaining levels are filled in using that
+# same, already-established curve rather than guessed from nothing.
+STANDARD_18_CURVE = ['3%', '4%', '6%', '8%', '10%', '12%', '14%', '18%']
+SYNTHETIC_18_FAMILIES = {'3034', '3045', '3027', '3031', '3036', '3033', '3040'}
 
 
 def primary_clause(text):
@@ -103,6 +116,8 @@ def build_local_index():
                         'family': mc.get('id'),
                         'level': int(mc.get('level') or 0),
                         'cn_name': mc.get('name'),
+                        'cn_text': mc.get('SpecificEffects'),
+                        'icon': mc.get('SkillIcon') or mc.get('icon'),
                     }
             manji = part.get('manji') or {}
             for mc in (manji.get('ModuleCarried') or []):
@@ -111,6 +126,8 @@ def build_local_index():
                         'family': mc.get('id'),
                         'level': int(mc.get('level') or 0),
                         'cn_name': mc.get('name'),
+                        'cn_text': mc.get('SpecificEffects'),
+                        'icon': mc.get('SkillIcon') or mc.get('icon'),
                     }
 
     en_by_local_id = {}
@@ -131,10 +148,20 @@ def substitute(en_template, cn_template_nums, cn_level_nums, allow_trailing_bonu
     shared leading tags and the untranslatable trailing bonus is dropped.
     Any other count mismatch is refused — the CN clause structure may have
     changed in a way that isn't safe to guess positionally (e.g. a leading
-    tag removed rather than a trailing one added)."""
-    en_nums = extract_nums(en_template)
-    if len(cn_template_nums) != len(en_nums):
+    tag removed rather than a trailing one added).
+
+    The EN template itself may have MORE tags than cn_template_nums when it
+    was translated from the bonus-including max level (English prose has no
+    reliable separator to strip that trailing clause the way primary_clause()
+    does for CN, so the extra tag(s) ride along) — that's fine for the final
+    level (where the bonus clause is real), but for every other level we
+    truncate the template right after its shared leading tags so that
+    untranslatable, level-8-only bonus text doesn't get claimed at levels
+    that don't actually have it."""
+    en_matches = list(NUM_RE.finditer(en_template))
+    if len(en_matches) < len(cn_template_nums):
         raise ValueError('template tag count mismatch (template EN/CN texts disagree)')
+    en_nums = [m.group(1) for m in en_matches]
 
     if len(cn_level_nums) == len(cn_template_nums):
         common = len(cn_template_nums)
@@ -142,6 +169,20 @@ def substitute(en_template, cn_template_nums, cn_level_nums, allow_trailing_bonu
         common = len(cn_template_nums)
     else:
         raise ValueError('level tag count does not match template (unsafe to substitute)')
+
+    if not allow_trailing_bonus:
+        anchor = en_matches[common - 1].end() if common > 0 else 0
+        sep_match = CLAUSE_SPLIT_RE.search(en_template, anchor)
+        if sep_match:
+            # A literal separator survived translation (e.g. CN "；" kept as
+            # English ";") — cut there. This also catches bonus clauses with
+            # no numeric tag of their own (tag-counting alone can't see them).
+            en_template = en_template[:sep_match.start()]
+        elif len(en_matches) > common:
+            cutoff = en_matches[common - 1].end()
+            if cutoff < len(en_template) and en_template[cutoff] == '.':
+                cutoff += 1
+            en_template = en_template[:cutoff]
 
     affixes = [compute_affixes(c, e) for c, e in zip(cn_template_nums[:common], en_nums[:common])]
     it = iter(zip(cn_level_nums[:common], affixes))
@@ -193,23 +234,38 @@ def main():
             en_template = manual['template']
             en_name = manual['name']
             tinfo = {'level': 1}
-            num_extractor = extract_nums
+            num_extractor = extract_primary_nums if has_bonus_clause_pattern(levels) else extract_nums
             cn_template_nums = num_extractor(levels[0]['SpecificEffects'])
         else:
-            template_lid = next(
-                (lid for lid, info in local_modules.items()
-                 if info['family'] == family and lid in en_by_local_id),
-                None
-            )
-            if not template_lid:
+            candidates = [
+                (lid, info) for lid, info in local_modules.items()
+                if info['family'] == family and lid in en_by_local_id
+            ]
+            if not candidates:
                 skipped_untranslated.append(cn_name)
                 continue
 
-            tinfo = local_modules[template_lid]
-            en_template = en_by_local_id[template_lid]['effect']
-            en_name = en_by_local_id[template_lid]['name']
             num_extractor = extract_primary_nums if has_bonus_clause_pattern(levels) else extract_nums
-            cn_template_nums = num_extractor(levels[tinfo['level'] - 1]['SpecificEffects'])
+
+            # Some families change their main clause's structure partway
+            # through the level range (e.g. an early "at full HP" phrasing
+            # with no number, replaced by an explicit "HP >= X%" threshold
+            # from some level onward). A single global template can't cover
+            # both regimes, so group levels by their own tag count and, for
+            # each regime, use whichever translated candidate (if any) is
+            # itself in that regime — only levels in a regime with no
+            # translated example at all fall back to the closest available
+            # template (the most common regime's).
+            level_counts = [len(num_extractor(lv['SpecificEffects'])) for lv in levels]
+            mode_count = Counter(level_counts).most_common(1)[0][0]
+            regime_templates = {}
+            for lid, info in candidates:
+                regime = level_counts[info['level'] - 1]
+                regime_templates.setdefault(regime, (lid, info))
+
+            default_lid, default_tinfo = regime_templates.get(mode_count, candidates[0])
+            en_name = en_by_local_id[default_lid]['name']
+            tinfo = default_tinfo
 
             # If some mech's translation happens to cover this module at its
             # exact max level, that text is a complete, hand-translated
@@ -228,14 +284,22 @@ def main():
             if i == len(levels) and max_level_lid:
                 level_effects[str(i)] = en_by_local_id[max_level_lid]['effect']
                 continue
+
+            if manual:
+                lvl_en_template, lvl_cn_template_nums = en_template, cn_template_nums
+            else:
+                t_lid, t_info = regime_templates.get(level_counts[i - 1], (default_lid, default_tinfo))
+                lvl_en_template = en_by_local_id[t_lid]['effect']
+                lvl_cn_template_nums = num_extractor(levels[t_info['level'] - 1]['SpecificEffects'])
+
             cn_level_nums = num_extractor(lv['SpecificEffects'])
             try:
                 level_effects[str(i)] = substitute(
-                    en_template, cn_template_nums, cn_level_nums,
+                    lvl_en_template, lvl_cn_template_nums, cn_level_nums,
                     allow_trailing_bonus=(i == len(levels))
                 )
             except ValueError:
-                level_effects[str(i)] = en_template
+                level_effects[str(i)] = lvl_en_template
                 had_fallback = True
         if had_fallback:
             fallback_families.append(cn_name)
@@ -252,6 +316,43 @@ def main():
             'levels': level_effects,
         }
 
+    synthesized_families = []
+    for family in SYNTHETIC_18_FAMILIES:
+        instances = sorted(
+            (info for info in local_modules.values() if info['family'] == family),
+            key=lambda info: info['level']
+        )
+        max_lid = next(
+            (lid for lid, info in local_modules.items()
+             if info['family'] == family and info['level'] == 8 and lid in en_by_local_id),
+            None
+        )
+        if not instances or not max_lid:
+            continue
+
+        cn_name = instances[-1]['cn_name']
+        en_template = en_by_local_id[max_lid]['effect']
+        en_name = en_by_local_id[max_lid]['name']
+        cn_template_nums = extract_primary_nums(instances[-1]['cn_text'])
+
+        level_effects = {}
+        for i in range(1, 9):
+            cn_level_nums = cn_template_nums[:-1] + [STANDARD_18_CURVE[i - 1]]
+            if i == 8:
+                level_effects[str(i)] = en_template
+            else:
+                level_effects[str(i)] = substitute(en_template, cn_template_nums, cn_level_nums)
+
+        modules[family] = {
+            'name': en_name,
+            'icon': instances[-1]['icon'],
+            'category': 'GeneralSuit',
+            'maxLevel': 8,
+            'currentLevel': 8,
+            'levels': level_effects,
+        }
+        synthesized_families.append(cn_name)
+
     out = {'modules': modules}
     with open(os.path.join(DIR, 'compiled.json'), 'w', encoding='utf-8') as f:
         json.dump(out, f, indent=2, ensure_ascii=False)
@@ -260,6 +361,10 @@ def main():
         f.write(js)
 
     print(f'Compiled {len(modules)} module families  ({len(js)//1024} KB)')
+    if synthesized_families:
+        print(f'  {len(synthesized_families)} families aren\'t in the SSR catalog scrape at all, but were '
+              f'synthesized from the standard 18%-at-max curve since their known levels matched it: '
+              f'{", ".join(synthesized_families)}')
     if fallback_families:
         print(f'  {len(fallback_families)} families had at least one level with an unsafe tag-count '
               f'mismatch (fell back to the template text for that level): {", ".join(fallback_families)}')

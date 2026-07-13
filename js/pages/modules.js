@@ -4,7 +4,7 @@ var MODULE_ICON_BASE = 'https://media.zlongame.com/media/pictures/cn/community/i
 
 var MODULE_CATEGORY_LABEL = {
   PropertyS:   'Standalone Module',
-  GeneralSuit: 'Shop Module',
+  GeneralSuit: 'Innate ST Module',
   SuitS:       'Producible Module',
 };
 
