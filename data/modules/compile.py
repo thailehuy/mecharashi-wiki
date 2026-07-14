@@ -1,5 +1,14 @@
-import json, glob, os, re
+import json, glob, os, re, sys
 from collections import Counter
+
+# The diagnostic summary below prints raw CN family names; on Windows the
+# console's default codepage (e.g. cp1252) can't encode them and print()
+# raises UnicodeEncodeError. Force UTF-8 stdout where possible.
+if hasattr(sys.stdout, 'reconfigure'):
+    try:
+        sys.stdout.reconfigure(encoding='utf-8')
+    except Exception:
+        pass
 
 DIR = os.path.dirname(os.path.abspath(__file__))
 MECHS_DIR = os.path.join(DIR, '..', 'mechs')
