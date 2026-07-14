@@ -824,6 +824,10 @@ window.GlossaryData = {
       "name": "Dodge Rate Down II",
       "effect": "Dodge Rate -8%."
     },
+    "7101104": {
+      "name": "Dodge Rate Down III",
+      "effect": "Dodge Rate -12%."
+    },
     "7101107": {
       "name": "Dodge Rate Down V",
       "effect": "Dodge Rate -20%."
@@ -1120,7 +1124,7 @@ window.GlossaryData = {
       "name": "Leader Crest",
       "effect": "Critical Hit chance increases by <color=#F74848>20%</color>, Critical Hit DMG increases by <color=#F74848>10%</color> and <buf ID=900148>[Ricochet]<buf> hit count increases by <color=#F74848>2</color>. This effect is removed at the end of turn."
     },
-    "900154": {
+    "9001544": {
       "name": "Convergence",
       "effect": "Cannot gain another turn through any <buf ID=900151>[Reset]</buf> type effect. This effect is removed at the start of next action."
     },

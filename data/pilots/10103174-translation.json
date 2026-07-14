@@ -2,62 +2,73 @@
   "PilotName": "Hailis",
   "RealName": "Hailis Mill",
   "Gender": "Female",
-  "Profession": "Architect",
-  "Occupation": "Architect",
+  "Profession": "Shifter",
+  "Occupation": "Shifter",
   "Talent0_2Ability": {
-    "name": "悖想先驱",
-    "SpecificEffects": "驾驶的机兵拥有多种形态，拥有独特的形态效果并可以独立装备武器背包；每次行动开始和<buf ID=900155>[激活]</buf>时，获得<color=#F74848>1</color>点[激发能]，累积<color=#F74848>5</color>点后可以使用<skill activeSkill=8001504></skill>解除<skill passiveSkill=800159>[虚粒子形态]</skill>限制，每回合只能使用<color=#F74848>1</color>次"
+    "name": "Pioneer Of Paradox",
+    "SpecificEffects": "The piloted ST can use different forms with unique effect and can be equipped with separated weapons and backpacks for each form. At the start of action and upon using <buf ID=900155>[Activation]</buf>, gains <color=#F74848>1</color> stack of <buf ID=900199>[Particle Energy]</buf>. Accumulating <color=#F74848>5</color> stacks allows the usage of <skill activeSkill=8001504>[Particle Burst]</skill> to remove <skill passiveSkill=800159>[Virtual Particle Form]</skill> restriction. This effect can trigger <color=#F74848>1</color> time per turn."
   },
   "Talent3_5Ability": {
-    "name": "悖想先驱",
-    "SpecificEffects": "驾驶的机兵拥有多种形态，拥有独特的形态效果并可以独立装备武器背包；每次行动开始和<buf ID=900155>[激活]</buf>时，获得<color=#F74848>1</color>点[激发能]，累积<color=#F74848>5</color>点后可以使用<skill activeSkill=8001504></skill>解除<skill passiveSkill=800159>[虚粒子形态]</skill>限制，每回合只能使用<color=#F74848>1</color>次；\n行动开始时，根据自身形态立即获得相应的<buf ID=900157>[形态增益]</buf>，携带<buf ID=900157>[形态增益]</buf>时最终伤害提升<color=#F74848>15%</color>"
+    "name": "Pioneer Of Paradox",
+    "SpecificEffects": "The piloted ST can use different forms with unique effect and can be equipped with separated weapons and backpacks for each form. At the start of action and upon using <buf ID=900155>[Activation]</buf>, gains <color=#F74848>1</color> stack of <buf ID=900199>[Particle Energy]</buf>. Accumulating <color=#F74848>5</color> stacks allows the usage of <skill activeSkill=8001504>[Particle Burst]</skill> to remove <skill passiveSkill=800159>[Virtual Particle Form]</skill> restriction. This effect can trigger <color=#F74848>1</color> time per turn.\nAt the start of action, gains corresponding <buf ID=900157>[Form Buff]</buf> based on current form. While carrying <buf ID=900157>[Form Buff]</buf>, DMG dealt increases by <color=#F74848>15%</color>."
   },
   "skills": {
     "800101": {
-      "name": "形态切换1",
+      "name": "Form Shift 1",
       "describe": "",
-      "SpecificEffects": "行动结束时，若其他队友还有行动机会，进入<buf ID=900154>[待激活]</buf>状态，若队友使用其他形态对应的武器主动攻击，重新<buf ID=900155>[激活]</buf>并触发<buf ID=900156>[形态切换]</buf>，每回合最多发动<color=#F74848>1</color>次"
+      "SpecificEffects": "At the end of action, if other allies can still act, enters <buf ID=900154>[Pending Activation]</buf> state. If an ally actively attacks with weapon corresponding to a form, triggers <buf ID=900155>[Activation]</buf> to enter the corresponding <buf ID=900156>[Form Shift]</buf>. This effect can trigger <color=#F74848>1</color> time per turn."
     },
     "400902": {
-      "name": "巅峰极诣",
+      "name": "Ultimate Mastery",
       "describe": "",
-      "SpecificEffects": "自身耐久值高于<color=#F74848>50%</color>时，伤害提升<color=#F74848>15%</color>，遭受伤害降低<color=#F74848>10%</color>"
+      "SpecificEffects": "When HP percentage is <color=#F74848>50%</color> or more, DMG dealt increases by <color=#F74848>15%</color> and DMG taken reduces by <color=#F74848>10%</color>."
     },
     "800103": {
-      "name": "具象解析",
+      "name": "Deep Analysis",
       "describe": "",
-      "SpecificEffects": "遭受攻击时，若装备了对应类型的武器，遭受伤害降低<color=#F74848>20%</color>"
+      "SpecificEffects": "When actively attacked, if the corresponding weapon type is equipped, DMG taken reduces by <color=#F74848>20%</color>."
     },
     "800104": {
-      "name": "万序拟合",
-      "describe": "根据当前形态和装备的武器，发动<color=#F74848>1</color>次更为强力的攻击，技能倍率和效果会随武器类型变化\n先锋形态：<skill mainSkill=730015></skill><skill activeSkill=7300162></skill><skill activeSkill=7300171></skill><skill activeSkill=7300181></skill><skill activeSkill=7300191></skill><skill activeSkill=7300201></skill><skill activeSkill=7300211></skill><skill activeSkill=7300221></skill><skill activeSkill=7300231></skill><skill activeSkill=7300241></skill><skill activeSkill=7300251></skill><skill activeSkill=7300261></skill>\n突击形态：<skill activeSkill=7300271></skill><skill activeSkill=7300281></skill><skill activeSkill=7300291></skill><skill activeSkill=7300301></skill><skill activeSkill=7300311></skill><skill activeSkill=7300321></skill><skill activeSkill=7300331></skill><skill activeSkill=7300341></skill>\n战术形态：<skill activeSkill=7300351></skill><skill activeSkill=7300361></skill><skill activeSkill=7300371></skill><skill activeSkill=7300381></skill><skill activeSkill=7300391></skill><skill activeSkill=7300401></skill><skill activeSkill=7300411></skill><skill activeSkill=7300421></skill>",
+      "name": "Thousand-Form Weapon",
+      "describe": "Launches <color=#F74848>1</color> stronger attack based on the current form and equipped weapon. The attack multiplier and effect vary based on weapon type.\nVanguard：<skill mainSkill=730015></skill><skill activeSkill=7300162></skill><skill activeSkill=7300171></skill><skill activeSkill=7300181></skill><skill activeSkill=7300191></skill><skill activeSkill=7300201></skill><skill activeSkill=7300211></skill><skill activeSkill=7300221></skill><skill activeSkill=7300231></skill><skill activeSkill=7300241></skill><skill activeSkill=7300251></skill><skill activeSkill=7300261></skill>\nAssault：<skill activeSkill=7300271></skill><skill activeSkill=7300281></skill><skill activeSkill=7300291></skill><skill activeSkill=7300301></skill><skill activeSkill=7300311></skill><skill activeSkill=7300321></skill><skill activeSkill=7300331></skill><skill activeSkill=7300341></skill>\nTactical：<skill activeSkill=7300351></skill><skill activeSkill=7300361></skill><skill activeSkill=7300371></skill><skill activeSkill=7300381></skill><skill activeSkill=7300391></skill><skill activeSkill=7300401></skill><skill activeSkill=7300411></skill><skill activeSkill=7300421></skill>.",
       "SpecificEffects": ""
     },
     "800105": {
-      "name": "临态编织",
+      "name": "Form Synchronization",
       "describe": "",
-      "SpecificEffects": "<buf ID=900155>[激活]</buf>时，获得<buf ID=7100703>[抵御Ⅲ]</buf>，可生效<color=#F74848>1</color>次，每回合最多发动<color=#F74848>1</color>次"
+      "SpecificEffects": "When <buf ID=900155>[Activation]</buf> is triggered, gains <buf ID=7100703>[Defensive Stance III]</buf>, effective for <color=#F74848>1</color> times. This effect can trigger <color=#F74848>1</color> time per turn."
     },
     "800106": {
-      "name": "再构筑",
-      "describe": "使用后获得<color=#F74848>2</color>AP和<color=#F74848>2</color>点[激发能]，并刷新所有增益效果的剩余回合，然后可额外移动<color=#F74848>3</color>格，移动后可继续发起攻击",
+      "name": "Restructure",
+      "describe": "Gains <color=#F74848>2</color> AP and <color=#F74848>2</color> stacks of <buf ID=900199>[Particle Energy]</buf>, also refreshes all buffs duration. Can move <color=#F74848>3</color> additional tiles before attacking.",
       "SpecificEffects": ""
     },
     "800107": {
-      "name": "岚循环",
+      "name": "Energy Circulation",
       "describe": "",
-      "SpecificEffects": "<skill passiveSkill=800159>[虚粒子形态]</skill>时，若AP小于等于<color=#F74848>5</color>，消耗<color=#F74848>1</color>PP，立即回复<color=#F74848>3</color>AP，每回合最多发动<color=#F74848>1</color>次；每次出击最多拥有<color=#F74848>2</color>PP"
+      "resource": "PP",
+      "SpecificEffects": "While in <skill passiveSkill=800159>[Virtual Particle Form]</skill>, if possesses <color=#F74848>5</color> or less AP, consumes <color=#F74848>1</color> PP to recover <color=#F74848>3</color> APThis effect can trigger <color=#F74848>1</color> time per turn. Gains <color=#F74848>2</color> PP at the start of battle."
     },
     "800108": {
-      "name": "虚粒子程式",
-      "describe": "<skill passiveSkill=800159>[虚粒子形态]</skill>时的固有技能强化为<skill activeSkill=7300432></skill><skill activeSkill=7300442></skill><skill activeSkill=7300452></skill>，并可以使用<skill activeSkill=7300461></skill>",
+      "name": "Virtual Particle Protocol",
+      "describe": "<skill passiveSkill=800159>[Virtual Particle Form]</skill> inherent skills are improved to <skill activeSkill=7300432>[Particle Blade EX]</skill>, <skill activeSkill=7300442>[Particle Cannon EX]</skill> and <skill activeSkill=7300452>Particle Matrix EX</skill>. Additionally, <skill activeSkill=7300461>[World Chaser]</skill> can be used.",
       "SpecificEffects": ""
     }
   },
+  "hiddenSkills": [
+    {
+      "name": "Cluster Matrix",
+      "icon": "Icon_skill_main_1169",
+      "type": "EquipmentSkill",
+      "Ap": "2-4",
+      "CD": "0",
+      "describe": "Launches <color=#F74848>1</color> attack based on the current form and equipped weapon. The attack multiplier and effect vary based on weapon type.\nVanguard: <skill mainSkill=730016></skill><skill activeSkill=7300172></skill><skill activeSkill=7300192></skill><skill activeSkill=7300212></skill><skill activeSkill=7300232></skill><skill activeSkill=7300252></skill>.\nAssault: <skill activeSkill=7300272></skill><skill activeSkill=7300292></skill><skill activeSkill=7300312></skill><skill activeSkill=7300332></skill>.\nTactical: <skill activeSkill=7300352></skill><skill activeSkill=7300372></skill><skill activeSkill=7300392></skill><skill activeSkill=7300412></skill>."
+    }
+  ],
   "neuralPassives": {
     "800111": {
-      "name": "形态切换2",
-      "SpecificEffects": "<buf ID=900155>[激活]</buf>时，额外获得<color=#F74848>2</color>AP"
+      "name": "Form Shift 2",
+      "SpecificEffects": "When <buf ID=900155>[Activation]</buf> is triggered, gains <color=#F74848>2</color> AP."
     },
     "100012": {
       "name": "Power Innovation 1",
@@ -68,8 +79,8 @@
       "SpecificEffects": "Initial AP <color=#F74848>+1</color>."
     },
     "800121": {
-      "name": "形态切换3",
-      "SpecificEffects": "攻击时，以机师六项属性中的最高值结算"
+      "name": "Form Shift 3",
+      "SpecificEffects": "When attacking, DMG calculation uses the highest value of all pilot attributes."
     },
     "100022": {
       "name": "Power Innovation 2",
@@ -80,32 +91,32 @@
       "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
     },
     "800131": {
-      "name": "昏星之引1",
-      "SpecificEffects": "<buf ID=900155>[激活]</buf>时，给周围<color=#F74848>3</color>格范围内的其他友军施加<color=#F74848>1</color>个随机增益效果，持续<color=#F74848>2</color>回合"
+      "name": "Guiding Dawn Star 1",
+      "SpecificEffects": "When <buf ID=900155>[Activation]</buf> is triggered, grants <color=#F74848>1</color> random buffs to all allies within <color=#F74848>3</color> adjacent tiles, lasting for <color=#F74848>2</color> turns."
     },
     "100032": {
       "name": "AP Optimization 3",
       "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
     },
     "800133": {
-      "name": "形态切换4",
-      "SpecificEffects": "行动开始时使与当前形态不同的<color=#F74848>2</color>种形态可各自被<buf ID=900155>[激活]</buf><color=#F74848>1</color>次；\n所有其他队友行动结束时，若仍处于<buf ID=900154>[待激活]</buf>状态，自动<buf ID=900155>[激活]</buf>当前形态，重新获得<color=#F74848>1</color>次行动机会，但无法获得[激发能]，每回合最多发动<color=#F74848>1</color>次"
+      "name": "Form Shift 4",
+      "SpecificEffects": "At the start of action, triggers <buf ID=900155>[Activation]</buf> for <color=#F74848>2</color> forms other than the current one for <color=#F74848>1</color> time.\nWhen all allies have ended their turn, if self is in <buf ID=900154>[Pending Activation]</buf> state, triggers <buf ID=900155>[Activation]</buf> for current form, gaining <color=#F74848>1</color> extra turn, but cannot gain <buf ID=900199>[Particle Energy]</buf>. This effect can trigger <color=#F74848>1</color> time per turn."
     },
     "800134": {
-      "name": "昏星之引2",
-      "SpecificEffects": "使<buf ID=900155>[激活]</buf>自身的队友根据形态获得相应的<buf ID=900157>[形态增益]</buf>"
+      "name": "Guiding Dawn Star 2",
+      "SpecificEffects": "When <buf ID=900155>[Activation]</buf> is triggered, grants corresponding <buf ID=900157>[Form Buff]</buf> to all allies."
     },
     "800135": {
-      "name": "昏星之引3",
-      "SpecificEffects": "行动开始时，若上次行动触发过<color=#F74848>2</color>次<buf ID=900155>[激活]</buf>，其他友方获得伤害提升<color=#F74848>15%</color>，持续<color=#F74848>1</color>回合"
+      "name": "Guiding Dawn Star 3",
+      "SpecificEffects": "At the start of action, if <color=#F74848>2</color> or more <buf ID=900155>[Activation]</buf> was triggered in previous turn, all allies DMG dealt increases by <color=#F74848>15%</color>, lasting for <color=#F74848>1</color> turn."
     },
     "800136": {
-      "name": "昏星之引4",
-      "SpecificEffects": "触发<buf ID=900155>[激活]</buf>后，若[海莉丝]在场，使其他队友下一次使用武器技能或指令消耗AP<color=#F74848>-1</color>，最低<color=#F74848>1</color>点，任意队友攻击或使用指令后移除"
+      "name": "Guiding Dawn Star 4",
+      "SpecificEffects": "After triggering <buf ID=900155>[Activation]</buf>, if [Hailis] is on the field, the next ally attack or command skill costs <color=#F74848>1</color> less AP, to a minimum of <color=#F74848>1</color> AP. This effect is removed after any ally uses an attack or command skill."
     },
     "800141": {
-      "name": "奇点推演1",
-      "SpecificEffects": "<buf ID=900155>[激活]</buf>时，根据自身的形态获得相应的<buf ID=900157>[形态增益]</buf>和<color=#F74848>1</color>个随机增益效果，持续<color=#F74848>2</color>回合"
+      "name": "Singularity Deferrence 1",
+      "SpecificEffects": "When <buf ID=900155>[Activation]</buf> is triggered, gains <buf ID=900157>[Form Buff]</buf> as well as <color=#F74848>1</color> random buff based on current form, lasting for <color=#F74848>2</color> turns."
     },
     "300042": {
       "name": "AP Optimization 4",
@@ -116,17 +127,17 @@
       "SpecificEffects": "When destroying a target, additionally restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>2</color> times per turn."
     },
     "800144": {
-      "name": "奇点推演2",
-      "SpecificEffects": "触发<buf ID=900155>[激活]</buf>后，下一次攻击AP消耗<color=#F74848>-1</color>，最低<color=#F74848>1</color>点，每回合最多发动<color=#F74848>2</color>次"
+      "name": "Singularity Deferrence 2",
+      "SpecificEffects": "After triggering <buf ID=900155>[Activation]</buf>, next attack cost <color=#F74848>-1</color> AP, to a minimum of <color=#F74848>1</color>. This effect can trigger <color=#F74848>2</color> times per turn."
     },
     "800145": {
-      "name": "奇点推演3",
-      "SpecificEffects": "累计<buf ID=900155>[激活]</buf><color=#F74848>3</color>种不同的形态后，伤害提升<color=#F74848>25%</color>，直到战斗结束"
+      "name": "Singularity Deferrence 3",
+      "SpecificEffects": "After triggering <buf ID=900155>[Activation]</buf> for <color=#F74848>3</color> different forms, DMG dealt increases <color=#F74848>25%</color> till the end of battle."
     },
     "800146": {
-      "name": "奇点推演4",
-      "SpecificEffects": "触发<buf ID=900155>[激活]</buf>时，可修复<color=#F74848>1</color>个损毁部位，并恢复所有完好部位<color=#F74848>7.5%</color>耐久值，对自身周围<color=#F74848>2</color>格内敌机所有部位造成相当于自身躯干最大耐久值<color=#F74848>15%</color>的<buf ID=900017>[固定伤害]</buf>"
+      "name": "Singularity Deferrence 4",
+      "SpecificEffects": "When triggering <buf ID=900155>[Activation]</buf>, restores <color=#F74848>1</color> destroyed part and <color=#F74848>7.5%</color> HP to all intact parts. Also deals <buf ID=900017>[Fixed DMG]</buf> equal to <color=#F74848>15%</color> of this unit body part max HP to all enemies within <color=#F74848>2</color> adjacent tiles."
     }
   },
-  "version": "1.0"
+  "version": "3.0"
 }
