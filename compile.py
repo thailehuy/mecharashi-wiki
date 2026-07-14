@@ -7,7 +7,11 @@ ROOT = os.path.dirname(os.path.abspath(__file__))
 
 def run(label, script):
     print(f'  {label}...', end=' ', flush=True)
-    result = subprocess.run([sys.executable, script], capture_output=True, text=True)
+    # Some sub-compilers (e.g. modules) print raw CJK family names in their
+    # diagnostic summary. Without an explicit encoding, subprocess decodes
+    # the child's output using the OS locale default, which on Windows is
+    # often cp1252 and can't decode UTF-8 bytes — force UTF-8 here instead.
+    result = subprocess.run([sys.executable, script], capture_output=True, text=True, encoding='utf-8')
     if result.returncode != 0:
         print('FAILED')
         print(result.stderr)
