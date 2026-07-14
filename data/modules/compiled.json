@@ -1524,6 +1524,23 @@
         "8": "When attacking enemies on any terrain effect, DMG dealt increases by <color=#F74848>18%</color>, <buf ID=900017>[Fixed DMG]</buf> dealt increases by <color=#F74848>25%</color>."
       }
     },
+    "3027": {
+      "name": "Maverick Mod",
+      "icon": "Icon_skill_passive_1106",
+      "category": "GeneralSuit",
+      "maxLevel": 8,
+      "currentLevel": 8,
+      "levels": {
+        "1": "When there are no allies within <color=#F74848>2</color> adjacent tiles, DMG +<color=#F74848>3%</color>",
+        "2": "When there are no allies within <color=#F74848>2</color> adjacent tiles, DMG +<color=#F74848>4%</color>",
+        "3": "When there are no allies within <color=#F74848>2</color> adjacent tiles, DMG +<color=#F74848>6%</color>",
+        "4": "When there are no allies within <color=#F74848>2</color> adjacent tiles, DMG +<color=#F74848>8%</color>",
+        "5": "When there are no allies within <color=#F74848>2</color> adjacent tiles, DMG +<color=#F74848>10%</color>",
+        "6": "When there are no allies within <color=#F74848>2</color> adjacent tiles, DMG +<color=#F74848>12%</color>",
+        "7": "When there are no allies within <color=#F74848>2</color> adjacent tiles, DMG +<color=#F74848>14%</color>",
+        "8": "When there are no allies within <color=#F74848>2</color> adjacent tiles, DMG +<color=#F74848>18%</color>;\nAt start of action, if there are no allies within <color=#F74848>2</color> adjacent tiles, AP cost of the first attack initiated this turn <color=#F74848>-1</color>, down to a minimum of <color=#F74848>1</color> AP."
+      }
+    },
     "3045": {
       "name": "Support Mod",
       "icon": "Icon_entry_10097",
@@ -1541,21 +1558,21 @@
         "8": "When attacking, if there are allies within <color=#F74848>4</color> adjacent tiles, DMG dealt increases by <color=#F74848>18%</color>.\nAt the end of turn, if <color=#F74848>2</color> or more code or attack skills are used this turn, recovers <color=#F74848>1</color> AP."
       }
     },
-    "3027": {
-      "name": "Maverick Mod",
-      "icon": "Icon_skill_passive_1106",
+    "3031": {
+      "name": "Skirmishing Mod",
+      "icon": "Icon_skill_passive_1154",
       "category": "GeneralSuit",
       "maxLevel": 8,
       "currentLevel": 8,
       "levels": {
-        "1": "When there are no allies within <color=#F74848>2</color> adjacent tiles, DMG +<color=#F74848>3%</color>",
-        "2": "When there are no allies within <color=#F74848>2</color> adjacent tiles, DMG +<color=#F74848>4%</color>",
-        "3": "When there are no allies within <color=#F74848>2</color> adjacent tiles, DMG +<color=#F74848>6%</color>",
-        "4": "When there are no allies within <color=#F74848>2</color> adjacent tiles, DMG +<color=#F74848>8%</color>",
-        "5": "When there are no allies within <color=#F74848>2</color> adjacent tiles, DMG +<color=#F74848>10%</color>",
-        "6": "When there are no allies within <color=#F74848>2</color> adjacent tiles, DMG +<color=#F74848>12%</color>",
-        "7": "When there are no allies within <color=#F74848>2</color> adjacent tiles, DMG +<color=#F74848>14%</color>",
-        "8": "When there are no allies within <color=#F74848>2</color> adjacent tiles, DMG +<color=#F74848>18%</color>;\nAt start of action, if there are no allies within <color=#F74848>2</color> adjacent tiles, AP cost of the first attack initiated this turn <color=#F74848>-1</color>, down to a minimum of <color=#F74848>1</color> AP."
+        "1": "When in combat against enemies within <color=#F74848>2</color> tiles, DMG <color=#F74848>+3%</color>.",
+        "2": "When in combat against enemies within <color=#F74848>2</color> tiles, DMG <color=#F74848>+4%</color>.",
+        "3": "When in combat against enemies within <color=#F74848>2</color> tiles, DMG <color=#F74848>+6%</color>.",
+        "4": "When in combat against enemies within <color=#F74848>2</color> tiles, DMG <color=#F74848>+8%</color>.",
+        "5": "When in combat against enemies within <color=#F74848>2</color> tiles, DMG <color=#F74848>+10%</color>.",
+        "6": "When in combat against enemies within <color=#F74848>2</color> tiles, DMG <color=#F74848>+12%</color>.",
+        "7": "When in combat against enemies within <color=#F74848>2</color> tiles, DMG <color=#F74848>+14%</color>.",
+        "8": "When in combat against enemies within <color=#F74848>2</color> tiles, DMG <color=#F74848>+18%</color>.\nWhen initiating combat, if the target is hit, steals <color=#F74848>1</color> AP from the target after combat. Can only trigger <color=#F74848>1</color> time per turn."
       }
     },
     "3034": {
@@ -1590,23 +1607,6 @@
         "6": "When using Code skills to attack, DMG increases by <color=#F74848>12%</color>.",
         "7": "When using Code skills to attack, DMG increases by <color=#F74848>14%</color>.",
         "8": "When using Code skills to attack, DMG increases by <color=#F74848>18%</color>.\nWhen actively attacking with tactical weapons, if <color=#F74848>3</color> or more targets are hit, randomly reload <color=#F74848>1</color> ammo of tactical weapon. Can be activated <color=#F74848>1</color> times per turn."
-      }
-    },
-    "3031": {
-      "name": "Skirmishing Mod",
-      "icon": "Icon_skill_passive_1154",
-      "category": "GeneralSuit",
-      "maxLevel": 8,
-      "currentLevel": 8,
-      "levels": {
-        "1": "When in combat against enemies within <color=#F74848>2</color> tiles, DMG <color=#F74848>+3%</color>.",
-        "2": "When in combat against enemies within <color=#F74848>2</color> tiles, DMG <color=#F74848>+4%</color>.",
-        "3": "When in combat against enemies within <color=#F74848>2</color> tiles, DMG <color=#F74848>+6%</color>.",
-        "4": "When in combat against enemies within <color=#F74848>2</color> tiles, DMG <color=#F74848>+8%</color>.",
-        "5": "When in combat against enemies within <color=#F74848>2</color> tiles, DMG <color=#F74848>+10%</color>.",
-        "6": "When in combat against enemies within <color=#F74848>2</color> tiles, DMG <color=#F74848>+12%</color>.",
-        "7": "When in combat against enemies within <color=#F74848>2</color> tiles, DMG <color=#F74848>+14%</color>.",
-        "8": "When in combat against enemies within <color=#F74848>2</color> tiles, DMG <color=#F74848>+18%</color>.\nWhen initiating combat, if the target is hit, steals <color=#F74848>1</color> AP from the target after combat. Can only trigger <color=#F74848>1</color> time per turn."
       }
     }
   }
