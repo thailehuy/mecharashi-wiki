@@ -21055,13 +21055,13 @@
       "AvatarHeroIcon": "Pilot_10103174A_Raw",
       "RealName": "Hailis Mill",
       "Gender": "Female",
-      "Profession": "Architect",
-      "Occupation": "Architect",
+      "Profession": "Shifter",
+      "Occupation": "Shifter",
       "quality": "SSR",
       "Talent0_2Ability": {
         "ID": "800150",
-        "name": "\u6096\u60f3\u5148\u9a71",
-        "SpecificEffects": "\u9a7e\u9a76\u7684\u673a\u5175\u62e5\u6709\u591a\u79cd\u5f62\u6001\uff0c\u62e5\u6709\u72ec\u7279\u7684\u5f62\u6001\u6548\u679c\u5e76\u53ef\u4ee5\u72ec\u7acb\u88c5\u5907\u6b66\u5668\u80cc\u5305\uff1b\u6bcf\u6b21\u884c\u52a8\u5f00\u59cb\u548c<buf ID=900155>[\u6fc0\u6d3b]</buf>\u65f6\uff0c\u83b7\u5f97<color=#F74848>1</color>\u70b9[\u6fc0\u53d1\u80fd]\uff0c\u7d2f\u79ef<color=#F74848>5</color>\u70b9\u540e\u53ef\u4ee5\u4f7f\u7528<skill activeSkill=8001504></skill>\u89e3\u9664<skill passiveSkill=800159>[\u865a\u7c92\u5b50\u5f62\u6001]</skill>\u9650\u5236\uff0c\u6bcf\u56de\u5408\u53ea\u80fd\u4f7f\u7528<color=#F74848>1</color>\u6b21",
+        "name": "Pioneer Of Paradox",
+        "SpecificEffects": "The piloted ST can use different forms with unique effect and can be equipped with separated weapons and backpacks for each form. At the start of action and upon triggering <buf ID=900155>[Activation]</buf>, gains <color=#F74848>1</color> stack of <buf ID=900199>[Particle Energy]</buf>. Accumulating <color=#F74848>5</color> stacks allows the usage of <skill activeSkill=8001504>[Particle Burst]</skill> to remove <skill passiveSkill=800159>[Virtual Particle Form]</skill> restriction. This effect can trigger <color=#F74848>1</color> time per turn.",
         "BufCarried": "8001500/8001501/8001502/8001503/8001504/8001505/8001506/8001508/8001509/8001561/8001562/8001563/8001571/8001572/8001581/8001582/8001583/8001591",
         "SkillIcon": "Icon_skill_talent_5160",
         "icon": "Icon_skill_talent_5160",
@@ -21070,8 +21070,8 @@
       },
       "Talent3_5Ability": {
         "ID": "800151",
-        "name": "\u6096\u60f3\u5148\u9a71",
-        "SpecificEffects": "\u9a7e\u9a76\u7684\u673a\u5175\u62e5\u6709\u591a\u79cd\u5f62\u6001\uff0c\u62e5\u6709\u72ec\u7279\u7684\u5f62\u6001\u6548\u679c\u5e76\u53ef\u4ee5\u72ec\u7acb\u88c5\u5907\u6b66\u5668\u80cc\u5305\uff1b\u6bcf\u6b21\u884c\u52a8\u5f00\u59cb\u548c<buf ID=900155>[\u6fc0\u6d3b]</buf>\u65f6\uff0c\u83b7\u5f97<color=#F74848>1</color>\u70b9[\u6fc0\u53d1\u80fd]\uff0c\u7d2f\u79ef<color=#F74848>5</color>\u70b9\u540e\u53ef\u4ee5\u4f7f\u7528<skill activeSkill=8001504></skill>\u89e3\u9664<skill passiveSkill=800159>[\u865a\u7c92\u5b50\u5f62\u6001]</skill>\u9650\u5236\uff0c\u6bcf\u56de\u5408\u53ea\u80fd\u4f7f\u7528<color=#F74848>1</color>\u6b21\uff1b\n\u884c\u52a8\u5f00\u59cb\u65f6\uff0c\u6839\u636e\u81ea\u8eab\u5f62\u6001\u7acb\u5373\u83b7\u5f97\u76f8\u5e94\u7684<buf ID=900157>[\u5f62\u6001\u589e\u76ca]</buf>\uff0c\u643a\u5e26<buf ID=900157>[\u5f62\u6001\u589e\u76ca]</buf>\u65f6\u6700\u7ec8\u4f24\u5bb3\u63d0\u5347<color=#F74848>15%</color>",
+        "name": "Pioneer Of Paradox",
+        "SpecificEffects": "The piloted ST can use different forms with unique effect and can be equipped with separated weapons and backpacks for each form. At the start of action and upon triggering <buf ID=900155>[Activation]</buf>, gains <color=#F74848>1</color> stack of <buf ID=900199>[Particle Energy]</buf>. Accumulating <color=#F74848>5</color> stacks allows the usage of <skill activeSkill=8001504>[Particle Burst]</skill> to remove <skill passiveSkill=800159>[Virtual Particle Form]</skill> restriction. This effect can trigger <color=#F74848>1</color> time per turn.\nAt the start of action, gains corresponding <buf ID=900157>[Form Buff]</buf> based on current form. While carrying <buf ID=900157>[Form Buff]</buf>, DMG dealt increases by <color=#F74848>15%</color>.",
         "BufCarried": "8001500/8001501/8001502/8001503/8001504/8001505/8001506/8001508/8001509/8001561/8001562/8001563/8001571/8001572/8001581/8001582/8001583/8001591/8001511/8001512/8001513/8001514",
         "SkillIcon": "Icon_skill_talent_5160",
         "icon": "Icon_skill_talent_5160",
@@ -21099,8 +21099,8 @@
                 "type": 3,
                 "PassiveSkill": {
                   "ID": "800111",
-                  "name": "\u5f62\u6001\u5207\u63622",
-                  "SpecificEffects": "<buf ID=900155>[\u6fc0\u6d3b]</buf>\u65f6\uff0c\u989d\u5916\u83b7\u5f97<color=#F74848>2</color>AP",
+                  "name": "Form Shift 2",
+                  "SpecificEffects": "When <buf ID=900155>[Activation]</buf> is triggered, gains <color=#F74848>2</color> AP.",
                   "BufCarried": "8001111",
                   "SkillIcon": "Icon_skill_passive_5205",
                   "icon": "Icon_skill_passive_5205",
@@ -21168,8 +21168,8 @@
                 "type": 3,
                 "PassiveSkill": {
                   "ID": "800121",
-                  "name": "\u5f62\u6001\u5207\u63623",
-                  "SpecificEffects": "\u653b\u51fb\u65f6\uff0c\u4ee5\u673a\u5e08\u516d\u9879\u5c5e\u6027\u4e2d\u7684\u6700\u9ad8\u503c\u7ed3\u7b97",
+                  "name": "Form Shift 3",
+                  "SpecificEffects": "When attacking, DMG calculation uses the highest value of all pilot attributes.",
                   "BufCarried": "8001211",
                   "SkillIcon": "Icon_skill_passive_5205",
                   "icon": "Icon_skill_passive_5205",
@@ -21238,8 +21238,8 @@
                 "type": 3,
                 "PassiveSkill": {
                   "ID": "800131",
-                  "name": "\u660f\u661f\u4e4b\u5f151",
-                  "SpecificEffects": "<buf ID=900155>[\u6fc0\u6d3b]</buf>\u65f6\uff0c\u7ed9\u5468\u56f4<color=#F74848>3</color>\u683c\u8303\u56f4\u5185\u7684\u5176\u4ed6\u53cb\u519b\u65bd\u52a0<color=#F74848>1</color>\u4e2a\u968f\u673a\u589e\u76ca\u6548\u679c\uff0c\u6301\u7eed<color=#F74848>2</color>\u56de\u5408",
+                  "name": "Guiding Dawn Star 1",
+                  "SpecificEffects": "When <buf ID=900155>[Activation]</buf> is triggered, grants <color=#F74848>1</color> random buffs to all allies within <color=#F74848>3</color> adjacent tiles, lasting for <color=#F74848>2</color> turns.",
                   "BufCarried": "8001311",
                   "SkillIcon": "Icon_skill_passive_5286",
                   "icon": "Icon_skill_passive_5286",
@@ -21275,8 +21275,8 @@
                 "type": 3,
                 "PassiveSkill": {
                   "ID": "800133",
-                  "name": "\u5f62\u6001\u5207\u63624",
-                  "SpecificEffects": "\u884c\u52a8\u5f00\u59cb\u65f6\u4f7f\u4e0e\u5f53\u524d\u5f62\u6001\u4e0d\u540c\u7684<color=#F74848>2</color>\u79cd\u5f62\u6001\u53ef\u5404\u81ea\u88ab<buf ID=900155>[\u6fc0\u6d3b]</buf><color=#F74848>1</color>\u6b21\uff1b\n\u6240\u6709\u5176\u4ed6\u961f\u53cb\u884c\u52a8\u7ed3\u675f\u65f6\uff0c\u82e5\u4ecd\u5904\u4e8e<buf ID=900154>[\u5f85\u6fc0\u6d3b]</buf>\u72b6\u6001\uff0c\u81ea\u52a8<buf ID=900155>[\u6fc0\u6d3b]</buf>\u5f53\u524d\u5f62\u6001\uff0c\u91cd\u65b0\u83b7\u5f97<color=#F74848>1</color>\u6b21\u884c\u52a8\u673a\u4f1a\uff0c\u4f46\u65e0\u6cd5\u83b7\u5f97[\u6fc0\u53d1\u80fd]\uff0c\u6bcf\u56de\u5408\u6700\u591a\u53d1\u52a8<color=#F74848>1</color>\u6b21",
+                  "name": "Form Shift 4",
+                  "SpecificEffects": "At the start of action, triggers <buf ID=900155>[Activation]</buf> for <color=#F74848>2</color> forms other than the current one for <color=#F74848>1</color> time.\nWhen all allies have ended their turn, if self is in <buf ID=900154>[Pending Activation]</buf> state, triggers <buf ID=900155>[Activation]</buf> for current form, gaining <color=#F74848>1</color> extra turn, but cannot gain <buf ID=900199>[Particle Energy]</buf>. This effect can trigger <color=#F74848>1</color> time per turn.",
                   "BufCarried": "8001331/8001332/8001333/8001335",
                   "SkillIcon": "Icon_skill_passive_5205",
                   "icon": "Icon_skill_passive_5205",
@@ -21294,8 +21294,8 @@
                 "type": 3,
                 "PassiveSkill": {
                   "ID": "800134",
-                  "name": "\u660f\u661f\u4e4b\u5f152",
-                  "SpecificEffects": "\u4f7f<buf ID=900155>[\u6fc0\u6d3b]</buf>\u81ea\u8eab\u7684\u961f\u53cb\u6839\u636e\u5f62\u6001\u83b7\u5f97\u76f8\u5e94\u7684<buf ID=900157>[\u5f62\u6001\u589e\u76ca]</buf>",
+                  "name": "Guiding Dawn Star 2",
+                  "SpecificEffects": "When <buf ID=900155>[Activation]</buf> is triggered, grants corresponding <buf ID=900157>[Form Buff]</buf> to all allies.",
                   "BufCarried": "8001341/8001342/8001343",
                   "SkillIcon": "Icon_skill_passive_5286",
                   "icon": "Icon_skill_passive_5286",
@@ -21313,8 +21313,8 @@
                 "type": 3,
                 "PassiveSkill": {
                   "ID": "800135",
-                  "name": "\u660f\u661f\u4e4b\u5f153",
-                  "SpecificEffects": "\u884c\u52a8\u5f00\u59cb\u65f6\uff0c\u82e5\u4e0a\u6b21\u884c\u52a8\u89e6\u53d1\u8fc7<color=#F74848>2</color>\u6b21<buf ID=900155>[\u6fc0\u6d3b]</buf>\uff0c\u5176\u4ed6\u53cb\u65b9\u83b7\u5f97\u4f24\u5bb3\u63d0\u5347<color=#F74848>15%</color>\uff0c\u6301\u7eed<color=#F74848>1</color>\u56de\u5408",
+                  "name": "Guiding Dawn Star 3",
+                  "SpecificEffects": "At the start of action, if <color=#F74848>2</color> or more <buf ID=900155>[Activation]</buf> was triggered in previous turn, all allies DMG dealt increases by <color=#F74848>15%</color>, lasting for <color=#F74848>1</color> turn.",
                   "BufCarried": "8001351/8001353",
                   "SkillIcon": "Icon_skill_passive_5286",
                   "icon": "Icon_skill_passive_5286",
@@ -21332,8 +21332,8 @@
                 "type": 3,
                 "PassiveSkill": {
                   "ID": "800136",
-                  "name": "\u660f\u661f\u4e4b\u5f154",
-                  "SpecificEffects": "\u89e6\u53d1<buf ID=900155>[\u6fc0\u6d3b]</buf>\u540e\uff0c\u82e5[\u6d77\u8389\u4e1d]\u5728\u573a\uff0c\u4f7f\u5176\u4ed6\u961f\u53cb\u4e0b\u4e00\u6b21\u4f7f\u7528\u6b66\u5668\u6280\u80fd\u6216\u6307\u4ee4\u6d88\u8017AP<color=#F74848>-1</color>\uff0c\u6700\u4f4e<color=#F74848>1</color>\u70b9\uff0c\u4efb\u610f\u961f\u53cb\u653b\u51fb\u6216\u4f7f\u7528\u6307\u4ee4\u540e\u79fb\u9664",
+                  "name": "Guiding Dawn Star 4",
+                  "SpecificEffects": "After triggering <buf ID=900155>[Activation]</buf>, if [Hailis] is on the field, the next ally attack or command skill costs <color=#F74848>1</color> less AP, to a minimum of <color=#F74848>1</color> AP. This effect is removed after any ally uses an attack or command skill.",
                   "BufCarried": "8001361",
                   "SkillIcon": "Icon_skill_passive_5286",
                   "icon": "Icon_skill_passive_5286",
@@ -21365,8 +21365,8 @@
                 "type": 3,
                 "PassiveSkill": {
                   "ID": "800141",
-                  "name": "\u5947\u70b9\u63a8\u6f141",
-                  "SpecificEffects": "<buf ID=900155>[\u6fc0\u6d3b]</buf>\u65f6\uff0c\u6839\u636e\u81ea\u8eab\u7684\u5f62\u6001\u83b7\u5f97\u76f8\u5e94\u7684<buf ID=900157>[\u5f62\u6001\u589e\u76ca]</buf>\u548c<color=#F74848>1</color>\u4e2a\u968f\u673a\u589e\u76ca\u6548\u679c\uff0c\u6301\u7eed<color=#F74848>2</color>\u56de\u5408",
+                  "name": "Singularity Deferrence 1",
+                  "SpecificEffects": "When <buf ID=900155>[Activation]</buf> is triggered, gains <buf ID=900157>[Form Buff]</buf> as well as <color=#F74848>1</color> random buff based on current form, lasting for <color=#F74848>2</color> turns.",
                   "BufCarried": "8001411",
                   "SkillIcon": "Icon_skill_passive_5287",
                   "icon": "Icon_skill_passive_5287",
@@ -21421,8 +21421,8 @@
                 "type": 3,
                 "PassiveSkill": {
                   "ID": "800144",
-                  "name": "\u5947\u70b9\u63a8\u6f142",
-                  "SpecificEffects": "\u89e6\u53d1<buf ID=900155>[\u6fc0\u6d3b]</buf>\u540e\uff0c\u4e0b\u4e00\u6b21\u653b\u51fbAP\u6d88\u8017<color=#F74848>-1</color>\uff0c\u6700\u4f4e<color=#F74848>1</color>\u70b9\uff0c\u6bcf\u56de\u5408\u6700\u591a\u53d1\u52a8<color=#F74848>2</color>\u6b21",
+                  "name": "Singularity Deferrence 2",
+                  "SpecificEffects": "After triggering <buf ID=900155>[Activation]</buf>, next attack cost <color=#F74848>-1</color> AP, to a minimum of <color=#F74848>1</color>. This effect can trigger <color=#F74848>2</color> times per turn.",
                   "BufCarried": "8001441",
                   "SkillIcon": "Icon_skill_passive_5287",
                   "icon": "Icon_skill_passive_5287",
@@ -21440,8 +21440,8 @@
                 "type": 3,
                 "PassiveSkill": {
                   "ID": "800145",
-                  "name": "\u5947\u70b9\u63a8\u6f143",
-                  "SpecificEffects": "\u7d2f\u8ba1<buf ID=900155>[\u6fc0\u6d3b]</buf><color=#F74848>3</color>\u79cd\u4e0d\u540c\u7684\u5f62\u6001\u540e\uff0c\u4f24\u5bb3\u63d0\u5347<color=#F74848>25%</color>\uff0c\u76f4\u5230\u6218\u6597\u7ed3\u675f",
+                  "name": "Singularity Deferrence 3",
+                  "SpecificEffects": "After triggering <buf ID=900155>[Activation]</buf> for <color=#F74848>3</color> different forms, DMG dealt increases <color=#F74848>25%</color> till the end of battle.",
                   "BufCarried": "8001451/8001452/8001453",
                   "SkillIcon": "Icon_skill_passive_5287",
                   "icon": "Icon_skill_passive_5287",
@@ -21459,8 +21459,8 @@
                 "type": 3,
                 "PassiveSkill": {
                   "ID": "800146",
-                  "name": "\u5947\u70b9\u63a8\u6f144",
-                  "SpecificEffects": "\u89e6\u53d1<buf ID=900155>[\u6fc0\u6d3b]</buf>\u65f6\uff0c\u53ef\u4fee\u590d<color=#F74848>1</color>\u4e2a\u635f\u6bc1\u90e8\u4f4d\uff0c\u5e76\u6062\u590d\u6240\u6709\u5b8c\u597d\u90e8\u4f4d<color=#F74848>7.5%</color>\u8010\u4e45\u503c\uff0c\u5bf9\u81ea\u8eab\u5468\u56f4<color=#F74848>2</color>\u683c\u5185\u654c\u673a\u6240\u6709\u90e8\u4f4d\u9020\u6210\u76f8\u5f53\u4e8e\u81ea\u8eab\u8eaf\u5e72\u6700\u5927\u8010\u4e45\u503c<color=#F74848>15%</color>\u7684<buf ID=900017>[\u56fa\u5b9a\u4f24\u5bb3]</buf>",
+                  "name": "Singularity Deferrence 4",
+                  "SpecificEffects": "When triggering <buf ID=900155>[Activation]</buf>, restores <color=#F74848>1</color> destroyed part and <color=#F74848>7.5%</color> HP to all intact parts. Also deals <buf ID=900017>[Fixed DMG]</buf> equal to <color=#F74848>15%</color> of this unit body part max HP to all enemies within <color=#F74848>2</color> adjacent tiles.",
                   "BufCarried": "8001461",
                   "SkillIcon": "Icon_skill_passive_5287",
                   "icon": "Icon_skill_passive_5287",
@@ -21498,8 +21498,8 @@
           "weight": 2780,
           "skill": {
             "ID": "800101",
-            "name": "\u5f62\u6001\u5207\u63621",
-            "SpecificEffects": "\u884c\u52a8\u7ed3\u675f\u65f6\uff0c\u82e5\u5176\u4ed6\u961f\u53cb\u8fd8\u6709\u884c\u52a8\u673a\u4f1a\uff0c\u8fdb\u5165<buf ID=900154>[\u5f85\u6fc0\u6d3b]</buf>\u72b6\u6001\uff0c\u82e5\u961f\u53cb\u4f7f\u7528\u5176\u4ed6\u5f62\u6001\u5bf9\u5e94\u7684\u6b66\u5668\u4e3b\u52a8\u653b\u51fb\uff0c\u91cd\u65b0<buf ID=900155>[\u6fc0\u6d3b]</buf>\u5e76\u89e6\u53d1<buf ID=900156>[\u5f62\u6001\u5207\u6362]</buf>\uff0c\u6bcf\u56de\u5408\u6700\u591a\u53d1\u52a8<color=#F74848>1</color>\u6b21",
+            "name": "Form Shift 1",
+            "SpecificEffects": "At the end of action, if other allies can still act, enters <buf ID=900154>[Pending Activation]</buf> state. If an ally actively attacks with weapon corresponding to a form, triggers <buf ID=900155>[Activation]</buf> to enter the corresponding <buf ID=900156>[Form Shift]</buf>. This effect can trigger <color=#F74848>1</color> time per turn.",
             "BufCarried": "8001010/8001011/8001334",
             "SkillIcon": "Icon_skill_passive_5205",
             "icon": "Icon_skill_passive_5205",
@@ -21689,8 +21689,8 @@
           "weight": 2792,
           "skill": {
             "ID": "400902",
-            "name": "\u5dc5\u5cf0\u6781\u8be3",
-            "SpecificEffects": "\u81ea\u8eab\u8010\u4e45\u503c\u9ad8\u4e8e<color=#F74848>50%</color>\u65f6\uff0c\u4f24\u5bb3\u63d0\u5347<color=#F74848>15%</color>\uff0c\u906d\u53d7\u4f24\u5bb3\u964d\u4f4e<color=#F74848>10%</color>",
+            "name": "Ultimate Mastery",
+            "SpecificEffects": "When HP percentage is <color=#F74848>50%</color> or more, DMG dealt increases by <color=#F74848>15%</color> and DMG taken reduces by <color=#F74848>10%</color>.",
             "BufCarried": "4009021",
             "SkillIcon": "Icon_skill_passive_1107",
             "icon": "Icon_skill_passive_1107",
@@ -21714,8 +21714,8 @@
           "weight": 2793,
           "skill": {
             "ID": "800103",
-            "name": "\u5177\u8c61\u89e3\u6790",
-            "SpecificEffects": "\u906d\u53d7\u653b\u51fb\u65f6\uff0c\u82e5\u88c5\u5907\u4e86\u5bf9\u5e94\u7c7b\u578b\u7684\u6b66\u5668\uff0c\u906d\u53d7\u4f24\u5bb3\u964d\u4f4e<color=#F74848>20%</color>",
+            "name": "Deep Analysis",
+            "SpecificEffects": "When actively attacked, if the corresponding weapon type is equipped, DMG taken reduces by <color=#F74848>20%</color>.",
             "BufCarried": "8001031/8001032/8001033/8001034",
             "SkillIcon": "Icon_skill_passive_2102",
             "icon": "Icon_skill_passive_2102",
@@ -21740,14 +21740,15 @@
           "skill": {
             "ID": "800104",
             "remarks": "\u6d77\u8389\u4e1d-\u4eff\u751f\u7535\u8111",
-            "name": "\u4e07\u5e8f\u62df\u5408",
-            "describe": "\u6839\u636e\u5f53\u524d\u5f62\u6001\u548c\u88c5\u5907\u7684\u6b66\u5668\uff0c\u53d1\u52a8<color=#F74848>1</color>\u6b21\u66f4\u4e3a\u5f3a\u529b\u7684\u653b\u51fb\uff0c\u6280\u80fd\u500d\u7387\u548c\u6548\u679c\u4f1a\u968f\u6b66\u5668\u7c7b\u578b\u53d8\u5316\n\u5148\u950b\u5f62\u6001\uff1a<skill mainSkill=730015></skill><skill activeSkill=7300162></skill><skill activeSkill=7300171></skill><skill activeSkill=7300181></skill><skill activeSkill=7300191></skill><skill activeSkill=7300201></skill><skill activeSkill=7300211></skill><skill activeSkill=7300221></skill><skill activeSkill=7300231></skill><skill activeSkill=7300241></skill><skill activeSkill=7300251></skill><skill activeSkill=7300261></skill>\n\u7a81\u51fb\u5f62\u6001\uff1a<skill activeSkill=7300271></skill><skill activeSkill=7300281></skill><skill activeSkill=7300291></skill><skill activeSkill=7300301></skill><skill activeSkill=7300311></skill><skill activeSkill=7300321></skill><skill activeSkill=7300331></skill><skill activeSkill=7300341></skill>\n\u6218\u672f\u5f62\u6001\uff1a<skill activeSkill=7300351></skill><skill activeSkill=7300361></skill><skill activeSkill=7300371></skill><skill activeSkill=7300381></skill><skill activeSkill=7300391></skill><skill activeSkill=7300401></skill><skill activeSkill=7300411></skill><skill activeSkill=7300421></skill>",
+            "name": "Thousand-Form Weapon",
+            "describe": "Launches <color=#F74848>1</color> stronger attack based on the current form and equipped weapon. The attack multiplier and effect vary based on weapon type.\nVanguard: <skill mainSkill=730015>[Rising Dragon]</skill><skill activeSkill=7300162>[Mountain Splitter]</skill><skill activeSkill=7300171>[Shadow Rush]</skill><skill activeSkill=7300181>[Sky Piercer]</skill><skill activeSkill=7300191>[Double-Edged Saw]</skill><skill activeSkill=7300201>[Critical Strike]</skill><skill activeSkill=7300211>[Starfall Flash]</skill><skill activeSkill=7300221>[Rotating Slash]</skill><skill activeSkill=7300231>[Quick Snipe]</skill><skill activeSkill=7300241>[Penetrating Shot]</skill><skill activeSkill=7300251>[Chain Shot]</skill><skill activeSkill=7300261>[Marking Shot]</skill>\nAssault: <skill activeSkill=7300271>[Cluster Shot]</skill><skill activeSkill=7300281>[Chain Finisher]</skill><skill activeSkill=7300291>[Dual Barrage]</skill><skill activeSkill=7300301>[Desperate Shot]</skill><skill activeSkill=7300311>[Burning Spirit]</skill><skill activeSkill=7300321>[Crimson Invasion]</skill><skill activeSkill=7300331>[Crimson Invasion]</skill><skill activeSkill=7300341>[Iron Curtain]</skill>\nTactical: <skill activeSkill=7300351>[Concentrated Strike]</skill><skill activeSkill=7300361>[Bombardment Command]</skill><skill activeSkill=7300371>[Fiery Rain]</skill><skill activeSkill=7300381>[Carpet Bombing]</skill><skill activeSkill=7300391>[Ray Of Light]</skill><skill activeSkill=7300401>[Piercing Thorn]</skill><skill activeSkill=7300411>[Meteor Shower]</skill><skill activeSkill=7300421>[Total Assault]</skill>.",
             "Ap": "3-4",
             "matchingWeaponType": "\u6240\u6709\u6b66\u5668",
             "SkillIcon": "Icon_skill_main_1168",
             "icon": "Icon_skill_main_1168",
             "Status": 1,
-            "weight": 655
+            "weight": 655,
+            "type": "EquipmentSkill"
           }
         },
         {
@@ -21766,8 +21767,8 @@
           "weight": 2795,
           "skill": {
             "ID": "800105",
-            "name": "\u4e34\u6001\u7f16\u7ec7",
-            "SpecificEffects": "<buf ID=900155>[\u6fc0\u6d3b]</buf>\u65f6\uff0c\u83b7\u5f97<buf ID=7100703>[\u62b5\u5fa1\u2162]</buf>\uff0c\u53ef\u751f\u6548<color=#F74848>1</color>\u6b21\uff0c\u6bcf\u56de\u5408\u6700\u591a\u53d1\u52a8<color=#F74848>1</color>\u6b21",
+            "name": "Form Synchronization",
+            "SpecificEffects": "When <buf ID=900155>[Activation]</buf> is triggered, gains <buf ID=7100703>[Defensive Stance III]</buf>, effective for <color=#F74848>1</color> times. This effect can trigger <color=#F74848>1</color> time per turn.",
             "BufCarried": "8001051",
             "SkillIcon": "Icon_skill_passive_3127",
             "icon": "Icon_skill_passive_3127",
@@ -21792,8 +21793,8 @@
           "skill": {
             "ID": "800106",
             "remarks": "\u6d77\u8389\u4e1d-\u4eff\u751f\u7535\u8111",
-            "name": "\u518d\u6784\u7b51",
-            "describe": "\u4f7f\u7528\u540e\u83b7\u5f97<color=#F74848>2</color>AP\u548c<color=#F74848>2</color>\u70b9[\u6fc0\u53d1\u80fd]\uff0c\u5e76\u5237\u65b0\u6240\u6709\u589e\u76ca\u6548\u679c\u7684\u5269\u4f59\u56de\u5408\uff0c\u7136\u540e\u53ef\u989d\u5916\u79fb\u52a8<color=#F74848>3</color>\u683c\uff0c\u79fb\u52a8\u540e\u53ef\u7ee7\u7eed\u53d1\u8d77\u653b\u51fb",
+            "name": "Restructure",
+            "describe": "Gains <color=#F74848>2</color> AP and <color=#F74848>2</color> stacks of <buf ID=900199>[Particle Energy]</buf>, also refreshes all buffs duration. Can move <color=#F74848>3</color> additional tiles before attacking.",
             "type": "Order",
             "CD": "3",
             "Ap": "0",
@@ -21819,13 +21820,14 @@
           "weight": 2797,
           "skill": {
             "ID": "800107",
-            "name": "\u5c9a\u5faa\u73af",
-            "SpecificEffects": "<skill passiveSkill=800159>[\u865a\u7c92\u5b50\u5f62\u6001]</skill>\u65f6\uff0c\u82e5AP\u5c0f\u4e8e\u7b49\u4e8e<color=#F74848>5</color>\uff0c\u6d88\u8017<color=#F74848>1</color>PP\uff0c\u7acb\u5373\u56de\u590d<color=#F74848>3</color>AP\uff0c\u6bcf\u56de\u5408\u6700\u591a\u53d1\u52a8<color=#F74848>1</color>\u6b21\uff1b\u6bcf\u6b21\u51fa\u51fb\u6700\u591a\u62e5\u6709<color=#F74848>2</color>PP",
+            "name": "Energy Circulation",
+            "SpecificEffects": "While in <skill passiveSkill=800159>[Virtual Particle Form]</skill>, if possesses <color=#F74848>5</color> or less AP, consumes <color=#F74848>1</color> PP to recover <color=#F74848>3</color> AP. This effect can trigger <color=#F74848>1</color> time per turn. Gains <color=#F74848>2</color> PP at the start of battle.",
             "BufCarried": "8001071",
             "SkillIcon": "Icon_skill_pp_1105",
             "icon": "Icon_skill_pp_1105",
             "Status": 1,
-            "weight": 3850
+            "weight": 3850,
+            "resource": "PP"
           }
         },
         {
@@ -21845,8 +21847,8 @@
           "skill": {
             "ID": "800108",
             "remarks": "\u6d77\u8389\u4e1d-\u4eff\u751f\u7535\u8111",
-            "name": "\u865a\u7c92\u5b50\u7a0b\u5f0f",
-            "describe": "<skill passiveSkill=800159>[\u865a\u7c92\u5b50\u5f62\u6001]</skill>\u65f6\u7684\u56fa\u6709\u6280\u80fd\u5f3a\u5316\u4e3a<skill activeSkill=7300432></skill><skill activeSkill=7300442></skill><skill activeSkill=7300452></skill>\uff0c\u5e76\u53ef\u4ee5\u4f7f\u7528<skill activeSkill=7300461></skill>",
+            "name": "Virtual Particle Protocol",
+            "describe": "<skill passiveSkill=800159>[Virtual Particle Form]</skill> inherent skills are improved to <skill activeSkill=7300432>[Particle Blade EX]</skill>, <skill activeSkill=7300442>[Particle Cannon EX]</skill> and <skill activeSkill=7300452>[Particle Matrix EX]</skill>. Additionally, <skill activeSkill=7300461>[World Chaser]</skill> can be used.",
             "Ap": "3-5",
             "matchingWeaponType": "\u56fa\u5b9a\u6b66\u88c5",
             "SkillIcon": "Icon_skill_order_1149",
@@ -22113,8 +22115,18 @@
       ],
       "AllowedMechaDriveList_DriveAllowedList": "Medium",
       "AlternateSkins": "",
-      "version": "1.0",
-      "enTranslation": false
+      "version": "3.0",
+      "enTranslation": true,
+      "hiddenSkills": [
+        {
+          "name": "Cluster Matrix",
+          "icon": "Icon_skill_main_1169",
+          "type": "EquipmentSkill",
+          "Ap": "2-4",
+          "CD": "0",
+          "describe": "Launches <color=#F74848>1</color> attack based on the current form and equipped weapon. The attack multiplier and effect vary based on weapon type.\nVanguard: <skill mainSkill=730016>[Weakness Strike]</skill><skill activeSkill=7300172>[Spear Strike]</skill><skill activeSkill=7300192>[Saw Strike]</skill><skill activeSkill=7300212>[Blade Strike]</skill><skill activeSkill=7300232>[Snipe]</skill><skill activeSkill=7300252>[Lock-On]</skill>.\nAssault: <skill activeSkill=7300272>[Concentrated Fire]</skill><skill activeSkill=7300292>[Turbo Shot]</skill><skill activeSkill=7300312>[Flame Strike]</skill><skill activeSkill=7300332>[Bullet Rain]</skill>.\nTactical: <skill activeSkill=7300352>[Piercing Wind]</skill><skill activeSkill=7300372>[Sweeping Barrage]</skill><skill activeSkill=7300392>[Magnetized Shot]</skill><skill activeSkill=7300412>[Floating Cannon]</skill>."
+        }
+      ]
     },
     {
       "ID": "10103110",

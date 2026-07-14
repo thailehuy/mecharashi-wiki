@@ -6,11 +6,11 @@
   "Occupation": "Shifter",
   "Talent0_2Ability": {
     "name": "Pioneer Of Paradox",
-    "SpecificEffects": "The piloted ST can use different forms with unique effect and can be equipped with separated weapons and backpacks for each form. At the start of action and upon using <buf ID=900155>[Activation]</buf>, gains <color=#F74848>1</color> stack of <buf ID=900199>[Particle Energy]</buf>. Accumulating <color=#F74848>5</color> stacks allows the usage of <skill activeSkill=8001504>[Particle Burst]</skill> to remove <skill passiveSkill=800159>[Virtual Particle Form]</skill> restriction. This effect can trigger <color=#F74848>1</color> time per turn."
+    "SpecificEffects": "The piloted ST can use different forms with unique effect and can be equipped with separated weapons and backpacks for each form. At the start of action and upon triggering <buf ID=900155>[Activation]</buf>, gains <color=#F74848>1</color> stack of <buf ID=900199>[Particle Energy]</buf>. Accumulating <color=#F74848>5</color> stacks allows the usage of <skill activeSkill=8001504>[Particle Burst]</skill> to remove <skill passiveSkill=800159>[Virtual Particle Form]</skill> restriction. This effect can trigger <color=#F74848>1</color> time per turn."
   },
   "Talent3_5Ability": {
     "name": "Pioneer Of Paradox",
-    "SpecificEffects": "The piloted ST can use different forms with unique effect and can be equipped with separated weapons and backpacks for each form. At the start of action and upon using <buf ID=900155>[Activation]</buf>, gains <color=#F74848>1</color> stack of <buf ID=900199>[Particle Energy]</buf>. Accumulating <color=#F74848>5</color> stacks allows the usage of <skill activeSkill=8001504>[Particle Burst]</skill> to remove <skill passiveSkill=800159>[Virtual Particle Form]</skill> restriction. This effect can trigger <color=#F74848>1</color> time per turn.\nAt the start of action, gains corresponding <buf ID=900157>[Form Buff]</buf> based on current form. While carrying <buf ID=900157>[Form Buff]</buf>, DMG dealt increases by <color=#F74848>15%</color>."
+    "SpecificEffects": "The piloted ST can use different forms with unique effect and can be equipped with separated weapons and backpacks for each form. At the start of action and upon triggering <buf ID=900155>[Activation]</buf>, gains <color=#F74848>1</color> stack of <buf ID=900199>[Particle Energy]</buf>. Accumulating <color=#F74848>5</color> stacks allows the usage of <skill activeSkill=8001504>[Particle Burst]</skill> to remove <skill passiveSkill=800159>[Virtual Particle Form]</skill> restriction. This effect can trigger <color=#F74848>1</color> time per turn.\nAt the start of action, gains corresponding <buf ID=900157>[Form Buff]</buf> based on current form. While carrying <buf ID=900157>[Form Buff]</buf>, DMG dealt increases by <color=#F74848>15%</color>."
   },
   "skills": {
     "800101": {
@@ -30,7 +30,9 @@
     },
     "800104": {
       "name": "Thousand-Form Weapon",
-      "describe": "Launches <color=#F74848>1</color> stronger attack based on the current form and equipped weapon. The attack multiplier and effect vary based on weapon type.\nVanguard：<skill mainSkill=730015></skill><skill activeSkill=7300162></skill><skill activeSkill=7300171></skill><skill activeSkill=7300181></skill><skill activeSkill=7300191></skill><skill activeSkill=7300201></skill><skill activeSkill=7300211></skill><skill activeSkill=7300221></skill><skill activeSkill=7300231></skill><skill activeSkill=7300241></skill><skill activeSkill=7300251></skill><skill activeSkill=7300261></skill>\nAssault：<skill activeSkill=7300271></skill><skill activeSkill=7300281></skill><skill activeSkill=7300291></skill><skill activeSkill=7300301></skill><skill activeSkill=7300311></skill><skill activeSkill=7300321></skill><skill activeSkill=7300331></skill><skill activeSkill=7300341></skill>\nTactical：<skill activeSkill=7300351></skill><skill activeSkill=7300361></skill><skill activeSkill=7300371></skill><skill activeSkill=7300381></skill><skill activeSkill=7300391></skill><skill activeSkill=7300401></skill><skill activeSkill=7300411></skill><skill activeSkill=7300421></skill>.",
+      "type": "EquipmentSkill",
+      "Ap": "3-4",
+      "describe": "Launches <color=#F74848>1</color> stronger attack based on the current form and equipped weapon. The attack multiplier and effect vary based on weapon type.\nVanguard: <skill mainSkill=730015>[Rising Dragon]</skill><skill activeSkill=7300162>[Mountain Splitter]</skill><skill activeSkill=7300171>[Shadow Rush]</skill><skill activeSkill=7300181>[Sky Piercer]</skill><skill activeSkill=7300191>[Double-Edged Saw]</skill><skill activeSkill=7300201>[Critical Strike]</skill><skill activeSkill=7300211>[Starfall Flash]</skill><skill activeSkill=7300221>[Rotating Slash]</skill><skill activeSkill=7300231>[Quick Snipe]</skill><skill activeSkill=7300241>[Penetrating Shot]</skill><skill activeSkill=7300251>[Chain Shot]</skill><skill activeSkill=7300261>[Marking Shot]</skill>\nAssault: <skill activeSkill=7300271>[Cluster Shot]</skill><skill activeSkill=7300281>[Chain Finisher]</skill><skill activeSkill=7300291>[Dual Barrage]</skill><skill activeSkill=7300301>[Desperate Shot]</skill><skill activeSkill=7300311>[Burning Spirit]</skill><skill activeSkill=7300321>[Crimson Invasion]</skill><skill activeSkill=7300331>[Crimson Invasion]</skill><skill activeSkill=7300341>[Iron Curtain]</skill>\nTactical: <skill activeSkill=7300351>[Concentrated Strike]</skill><skill activeSkill=7300361>[Bombardment Command]</skill><skill activeSkill=7300371>[Fiery Rain]</skill><skill activeSkill=7300381>[Carpet Bombing]</skill><skill activeSkill=7300391>[Ray Of Light]</skill><skill activeSkill=7300401>[Piercing Thorn]</skill><skill activeSkill=7300411>[Meteor Shower]</skill><skill activeSkill=7300421>[Total Assault]</skill>.",
       "SpecificEffects": ""
     },
     "800105": {
@@ -47,11 +49,11 @@
       "name": "Energy Circulation",
       "describe": "",
       "resource": "PP",
-      "SpecificEffects": "While in <skill passiveSkill=800159>[Virtual Particle Form]</skill>, if possesses <color=#F74848>5</color> or less AP, consumes <color=#F74848>1</color> PP to recover <color=#F74848>3</color> APThis effect can trigger <color=#F74848>1</color> time per turn. Gains <color=#F74848>2</color> PP at the start of battle."
+      "SpecificEffects": "While in <skill passiveSkill=800159>[Virtual Particle Form]</skill>, if possesses <color=#F74848>5</color> or less AP, consumes <color=#F74848>1</color> PP to recover <color=#F74848>3</color> AP. This effect can trigger <color=#F74848>1</color> time per turn. Gains <color=#F74848>2</color> PP at the start of battle."
     },
     "800108": {
       "name": "Virtual Particle Protocol",
-      "describe": "<skill passiveSkill=800159>[Virtual Particle Form]</skill> inherent skills are improved to <skill activeSkill=7300432>[Particle Blade EX]</skill>, <skill activeSkill=7300442>[Particle Cannon EX]</skill> and <skill activeSkill=7300452>Particle Matrix EX</skill>. Additionally, <skill activeSkill=7300461>[World Chaser]</skill> can be used.",
+      "describe": "<skill passiveSkill=800159>[Virtual Particle Form]</skill> inherent skills are improved to <skill activeSkill=7300432>[Particle Blade EX]</skill>, <skill activeSkill=7300442>[Particle Cannon EX]</skill> and <skill activeSkill=7300452>[Particle Matrix EX]</skill>. Additionally, <skill activeSkill=7300461>[World Chaser]</skill> can be used.",
       "SpecificEffects": ""
     }
   },
@@ -62,7 +64,7 @@
       "type": "EquipmentSkill",
       "Ap": "2-4",
       "CD": "0",
-      "describe": "Launches <color=#F74848>1</color> attack based on the current form and equipped weapon. The attack multiplier and effect vary based on weapon type.\nVanguard: <skill mainSkill=730016></skill><skill activeSkill=7300172></skill><skill activeSkill=7300192></skill><skill activeSkill=7300212></skill><skill activeSkill=7300232></skill><skill activeSkill=7300252></skill>.\nAssault: <skill activeSkill=7300272></skill><skill activeSkill=7300292></skill><skill activeSkill=7300312></skill><skill activeSkill=7300332></skill>.\nTactical: <skill activeSkill=7300352></skill><skill activeSkill=7300372></skill><skill activeSkill=7300392></skill><skill activeSkill=7300412></skill>."
+      "describe": "Launches <color=#F74848>1</color> attack based on the current form and equipped weapon. The attack multiplier and effect vary based on weapon type.\nVanguard: <skill mainSkill=730016>[Weakness Strike]</skill><skill activeSkill=7300172>[Spear Strike]</skill><skill activeSkill=7300192>[Saw Strike]</skill><skill activeSkill=7300212>[Blade Strike]</skill><skill activeSkill=7300232>[Snipe]</skill><skill activeSkill=7300252>[Lock-On]</skill>.\nAssault: <skill activeSkill=7300272>[Concentrated Fire]</skill><skill activeSkill=7300292>[Turbo Shot]</skill><skill activeSkill=7300312>[Flame Strike]</skill><skill activeSkill=7300332>[Bullet Rain]</skill>.\nTactical: <skill activeSkill=7300352>[Piercing Wind]</skill><skill activeSkill=7300372>[Sweeping Barrage]</skill><skill activeSkill=7300392>[Magnetized Shot]</skill><skill activeSkill=7300412>[Floating Cannon]</skill>."
     }
   ],
   "neuralPassives": {

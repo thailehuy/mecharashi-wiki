@@ -576,10 +576,6 @@
       "name": "Repair Disabled",
       "effect": "Cannot perform or receive repair actions."
     },
-    "4003081": {
-      "name": "Burning Terrain",
-      "effect": "Deals [Fixed DMG] equal to 12% of Max HP to all parts of enemies that remain on this tile."
-    },
     "4003503": {
       "name": "SP Ammo I",
       "effect": "Special ammunition level I; grants an additional 5% effect on hit."
@@ -1218,7 +1214,7 @@
     },
     "900157": {
       "name": "Form Buff",
-      "effect": "Vanguard: When actively attacking with melee or ranged weapons, Hit Rate is increased by <color=#F74848>15%</color> and <buf ID=900010>[Gutsy Strike]</buf> can be triggered, dealing <color=#F74848>0.3x</color> DMG.\nAssault: When actively attacking with assault weapons, Critical Hit chance is increased by <color=#F74848>15%</color>. After combat, deals <buf ID=900017>[Fix DMG]</buf> equal to <color=#F74848>0.4x</color> weapon attack to all parts of the target.\nTactical: When actively attacking with tactical weapons, DMG dealt is increased by <color=#F74848>15%</color>. After combat, applies <buf ID=7101803>[DMG Taken UP II]</buf> to targets for <color=#F74848>2</color> turns.\nAll effects are removed upon triggering."
+      "effect": "<b>Vanguard</b>: When actively attacking with melee or ranged weapons, Hit Rate is increased by <color=#F74848>15%</color> and <buf ID=900010>[Gutsy Strike]</buf> can be triggered, dealing <color=#F74848>0.3x</color> DMG.\n<b>Assault</b>: When actively attacking with assault weapons, Critical Hit chance is increased by <color=#F74848>15%</color>. After combat, deals <buf ID=900017>[Fixed DMG]</buf> equal to <color=#F74848>0.4x</color> weapon attack to all parts of the target.\n<b>Tactical</b>: When actively attacking with tactical weapons, DMG dealt is increased by <color=#F74848>15%</color>. After combat, applies <buf ID=7101803>[DMG Taken UP II]</buf> to targets for <color=#F74848>2</color> turns.\nAll effects are removed upon triggering."
     }
   },
   "skill": {
@@ -1331,7 +1327,7 @@
       "Ap": "0",
       "CD": "0",
       "icon": "Icon_skill_order_5155",
-      "effect": "Consumes all [Particle Energy] and switches to [Virtual Particle Form]. Gains all [Form Buff] and deals [Fixed DMG] equal to 15% of [Hailis]'s ST max HP to all enemies within 2 adjacent tiles. Returns to current form after 2 actions. This skill does not consume AP."
+      "effect": "Consumes all <buf ID=900199>[Particle Energy]</buf> and switches to <skill passiveSkill=800159>[Virtual Particle Form]</skill>. Gains all <buf ID=900157>[Form Buff]</buf> and deals <buf ID=900017>[Fixed DMG]</buf> equal to <color=#F74848>15%</color> of [Hailis]'s ST max HP to all enemies within <color=#F74848>2</color> adjacent tiles. Returns to current form after <color=#F74848>2</color> actions. This skill does not consume AP."
     },
     "800159": {
       "name": "Virtual Particle Form",
@@ -1342,35 +1338,35 @@
       "Ap": "3",
       "CD": "0",
       "icon": "Icon_skill_main_1162",
-      "effect": "Uses condensed star virtual particle to attack a target, dealing 1.8x DMG. This attack always hits the body and ignores target's DMG Reduction effect."
+      "effect": "Uses condensed star virtual particle to attack a target, dealing <color=#F74848>1.8x</color> DMG. This attack always hits the body and ignores target's DMG Reduction effect."
     },
     "7300442": {
       "name": "Particle Cannon EX",
       "Ap": "4",
       "CD": "0",
       "icon": "Icon_skill_main_1027",
-      "effect": "Uses condensed meteorite virtual particle to attack a target, dealing 1.1x DMG. If the target's HP is at 60% or more, this skill multiplier increases by 0.05x, up to 0.2x. Enters [Aiming] Mode before attacking. This attack ignores target's Armor and prioritize hitting the same part."
+      "effect": "Uses condensed meteorite virtual particle to attack a target, dealing <color=#F74848>1.1x</color> DMG. If the target's HP is at <color=#F74848>60%</color> or more, this skill multiplier increases by <color=#F74848>0.05x</color>, up to <color=#F74848>0.2x</color>. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking. This attack ignores target's Armor and prioritize hitting the same part."
     },
     "7300452": {
       "name": "Particle Matrix EX",
       "Ap": "5",
       "CD": "0",
       "icon": "Icon_skill_order_1013",
-      "effect": "Uses condensed cosmic virtual particle to attack all targets within 4-tile fan-shaped area in front, dealing 1.4x AoE DMG. After combat, if the parts hit is at 15% HP or less, those parts are instantly destroyed. For each 1 part destroyed, gains 1 AP, up to 3 AP."
+      "effect": "Uses condensed cosmic virtual particle to attack all targets within <color=#F74848>4</color>-tile fan-shaped area in front, dealing <color=#F74848>1.4x</color> AoE DMG. After combat, if the part hit is at <color=#F74848>15%</color> HP or less, that part is instantly destroyed. For each <color=#F74848>1</color> part destroyed, gains <color=#F74848>1</color> AP, up to <color=#F74848>3</color> AP."
     },
     "7300461": {
       "name": "World Chaser",
       "Ap": "5",
       "CD": "0",
       "icon": "Icon_skill_main_1172",
-      "effect": "Releases a chain attack of all particle weapons using all virtual particles on a target. Cosmic virtual particle deals 1.2x DMG to the target. Meteorite virual particle deals 1x DMG to the target's part with lowest HP. Star virtual particle deals 1.2x DMG to the target body. After combat, deploys [Particle Domain] on the area within 1-ring of self, lasting for 2 turns."
+      "effect": "Cosmic virtual particle deals <color=#F74848>1.2x</color> DMG to the target. Meteorite virtual particle deals <color=#F74848>1x</color> DMG to the target's part with lowest HP. Star virtual particle deals <color=#F74848>1.2x</color> DMG to the target body. After combat, deploys <terrian ID=6008502 /> on the area within <color=#F74848>1</color>-ring of self, lasting for <color=#F74848>2</color> turns."
     },
     "730015": {
       "name": "Rising Dragon",
       "Ap": "3",
       "CD": "0",
       "icon": "Icon_skill_main_1113",
-      "effect": "Uses a Knuckle or Pilebunker to attack a target, dealing 1.4x DMG. This attack always hits the body part."
+      "effect": "Uses a Knuckle or Pilebunker to attack a target, dealing <color=#F74848>1.4x</color> DMG. This attack always hits the body part."
     },
     "7300162": {
       "name": "Mountain Splitter",
@@ -1383,14 +1379,14 @@
       "name": "Shadow Rush",
       "Ap": "3",
       "CD": "0",
-      "icon": "Icon_skill_main_1103",
+      "icon": "Icon_skill_order_1103",
       "effect": "Uses Polearm to <range type=1>thrust 4 tiles forward</range>, dealing <color=#F74848>1.4x</color> DMG to the <color=#F74848>1st</color> target hit. Inflicts <buf ID=7101505>[Crash]</buf> on the target, lasting <color=#F74848>1</color> turn."
     },
     "7300181": {
       "name": "Sky Piercer",
       "Ap": "4",
       "CD": "0",
-      "icon": "Icon_skill_main_9902",
+      "icon": "Icon_skill_order_9902",
       "effect": "Throws a Polearm at all targets within a <range type=1>4-tile line</range> (including flying targets), dealing <color=#F74848>1.3x</color> AoE DMG. Can enter <buf ID=900014>[Aiming]</buf> Mode before combat."
     },
     "7300191": {
@@ -1398,7 +1394,7 @@
       "Ap": "3",
       "CD": "0",
       "icon": "Icon_skill_main_1157",
-      "effect": "Uses a Chainsaw to attack a target, dealing <color=#F74848>1.35</color> DMG. This attack always hits the body part.\nBefore combat, reduces own HP by <color=#F74848>20%</color> of max HP from all parts, then deals <color=#F74848>20%</color> of target max HP as <buf ID=900017>[Fixed DMG]</buf>. The HP reduction as well as the <buf ID=900017>[Fixed DMG]</buf> cannot destroy any part."
+      "effect": "Uses a Chainsaw to attack a target, dealing <color=#F74848>1.35x</color> DMG. This attack always hits the body part.\nBefore combat, reduces own HP by <color=#F74848>20%</color> of max HP from all parts, then deals <color=#F74848>20%</color> of target max HP as <buf ID=900017>[Fixed DMG]</buf>. The HP reduction as well as the <buf ID=900017>[Fixed DMG]</buf> cannot destroy any part."
     },
     "7300201": {
       "name": "Critical Strike",
@@ -1412,14 +1408,14 @@
       "Ap": "3",
       "CD": "0",
       "icon": "Icon_skill_main_1162",
-      "effect": "Selects <color=#F74848>1</color> target (including flying target) within <color=#F74848>4</color> adjacent tiles and strikes with Alter-Blade, dealing <color=#F74848>1.3</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking. After attacking, this unit will be positioned on a random unoccupied tile within <color=#F74848>1</color> ring around the target."
+      "effect": "Selects <color=#F74848>1</color> target (including flying target) within <color=#F74848>4</color> adjacent tiles and strikes with Alter-Blade, dealing <color=#F74848>1.3x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking. After attacking, this unit will be positioned on a random unoccupied tile within <color=#F74848>1</color> ring around the target."
     },
     "7300221": {
       "name": "Rotating Slash",
       "Ap": "4",
       "CD": "0",
-      "icon": "Icon_skill_main_1131",
-      "effect": "Uses two Alter-Blades to attack in a designated direction, dealing <color=#F74848>1.5</color>x DMG to the target. Prioritizes attacking parts with less than full HP. If there are adjacent enemies in that direction, can continue to attack adjacent units (attacking up to <color=#F74848>4</color> enemy units), then stops on the opposite side of the farthest target."
+      "icon": "Icon_skill_order_1131",
+      "effect": "Uses two Alter-Blades to attack in a designated direction, dealing <color=#F74848>1.5x</color> DMG to the target. Prioritizes attacking parts with less than full HP. If there are adjacent enemies in that direction, can continue to attack adjacent units (attacking up to <color=#F74848>4</color> enemy units), then stops on the opposite side of the farthest target."
     },
     "7300231": {
       "name": "Quick Snipe",
@@ -1432,8 +1428,8 @@
       "name": "Penetrating Shot",
       "Ap": "4",
       "CD": "0",
-      "icon": "Icon_skill_main_1133",
-      "effect": "Uses a Sniper Rifle to attack the target and all enemy units along the path within range, dealing <color=#F74848>1.1x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking. If any part is destroyed, the same attack is launched again with 50% reduced multiplier. This effect can be repeated 1 time."
+      "icon": "Icon_skill_order_1133",
+      "effect": "Uses a Sniper Rifle to attack the target and all enemy units along the path within range, dealing <color=#F74848>1.1x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking. If any part is destroyed, the same attack is launched again with <color=#F74848>50%</color> reduced multiplier. This effect can be repeated <color=#F74848>1</color> time."
     },
     "7300251": {
       "name": "Chain Shot",
@@ -1454,20 +1450,20 @@
       "Ap": "3",
       "CD": "0",
       "icon": "Icon_skill_main_1121",
-      "effect": "Uses Machine Gun to attack a target, dealing 1.5x DMG. Hit Weighting against the part with lowest HP increases by +50."
+      "effect": "Uses Machine Gun to attack a target, dealing <color=#F74848>1.5x</color> DMG. Hit Weighting against the part with lowest HP increases by <color=#F74848>+50</color>."
     },
     "7300281": {
       "name": "Chain Finisher",
       "Ap": "4",
       "CD": "0",
       "icon": "Icon_skill_main_1129",
-      "effect": "Uses two Machine Guns to attack a target, dealing 2x0.8 DMG. For each 10% HP missing from the target, increases Critical Hit chance by 5%, up to 30%."
+      "effect": "Uses two Machine Guns to attack a target, dealing <color=#F74848>2x0.8</color> DMG. For each <color=#F74848>10%</color> HP missing from the target, increases Critical Hit chance by <color=#F74848>5%</color>, up to <color=#F74848>30%</color>."
     },
     "7300291": {
       "name": "Dual Barrage",
       "Ap": "3",
       "CD": "1",
-      "icon": "Icon_skill_main_1107",
+      "icon": "Icon_skill_order_1107",
       "effect": "Simultaneously uses two Shotguns to attack all targets within a <range type=1>3x2-tile area ahead</range>, dealing <color=#F74848>0.6x</color> AoE DMG <color=#F74848>2</color> times."
     },
     "7300301": {
@@ -1475,69 +1471,69 @@
       "Ap": "4",
       "CD": "0",
       "icon": "Icon_skill_main_1141",
-      "effect": "Uses a Shotgun to attack a target, dealing 1.6x DMG. This attack cannot be dodged."
+      "effect": "Uses a Shotgun to attack a target, dealing <color=#F74848>1.6x</color> DMG. This attack cannot be dodged."
     },
     "7300311": {
       "name": "Burning Spirit",
       "Ap": "3",
       "CD": "0",
       "icon": "Icon_skill_main_1151",
-      "effect": "Uses a Flamethrower to attack the main target, dealing <color=#F74848>1.4x</color> DMG and dealing <color=#F74848>20%</color> <buf ID=900065>[Flame DMG]</buf> to other targets in the path. If the main target is on allied [Burning terrain], the terrain effect triggers once after combat."
+      "effect": "Uses a Flamethrower to attack the main target, dealing <color=#F74848>1.4x</color> DMG and dealing <color=#F74848>20%</color> <buf ID=900065>[Flame DMG]</buf> to other targets in the path. If the main target is on allied <terrian ID=4003081 />, the terrain effect triggers once after combat."
     },
     "7300321": {
       "name": "Crimson Invasion",
       "Ap": "4",
       "CD": "0",
       "icon": "Icon_skill_main_1166",
-      "effect": "Uses both Flamethrowers to attack a target, dealing <color=#F74848>2×0.8</color> DMG. If the target is on allied [Burning terrain], the skill multiplier increases by +0.1."
+      "effect": "Uses both Flamethrowers to attack a target, dealing <color=#F74848>2×0.8</color> DMG. If the target is on allied <terrian ID=4003081 />, the skill multiplier increases by <color=#F74848>+0.1</color>."
     },
     "7300331": {
-      "name": "Crimson Invasion",
+      "name": "Bullet Storm",
       "Ap": "3",
       "CD": "0",
       "icon": "Icon_skill_order_1010",
-      "effect": "Uses Heavy Machine Gun to attack all targets within range, dealing 0.5x AoE DMG. DMG dealt increases by 20% against parts with 50% or more HP remaining."
+      "effect": "Uses Heavy Machine Gun to attack all targets within range, dealing <color=#F74848>0.5x</color> AoE DMG. DMG dealt increases by <color=#F74848>20%</color> against parts with <color=#F74848>50%</color> or more HP remaining."
     },
     "7300341": {
       "name": "Iron Curtain",
       "Ap": "4",
       "CD": "0",
       "icon": "Icon_skill_main_4105",
-      "effect": "Uses Heavy Machine Gun to attack a target, dealing 1.5x DMG. Inflicts [Retaliation Inhibition] on target before combat."
+      "effect": "Uses Heavy Machine Gun to attack a target, dealing <color=#F74848>1.5x</color> DMG. Inflicts <buf ID=2004081>[Retaliation Disabled]</buf> on target before combat."
     },
     "7300351": {
       "name": "Concentrated Strike",
       "Ap": "3",
       "CD": "0",
       "icon": "Icon_skill_order_1114",
-      "effect": "Uses two Missile Launchers to attack a target, dealing 2x0.8 DMG. Both missiles will hit the same part, and cause 50% Splash DMG to parts other than the part hit."
+      "effect": "Uses two Missile Launchers to attack a target, dealing <color=#F74848>2x0.8</color> DMG. Both missiles will hit the same part, and cause <color=#F74848>50%</color> Splash DMG to parts other than the part hit."
     },
     "7300361": {
       "name": "Bombardment Command",
       "Ap": "4",
       "CD": "0",
-      "icon": "Icon_skill_order_1114",
-      "effect": "Uses Missile Launcher to attack a target, dealing 1.4x DMG to the part hit and 50% Splash DMG to other parts. Enters [Aiming] Mode before attacking. Enables all allies to launch <buf ID=900002>[Link Attacks]</buf> against it. These <buf ID=900002>[Link Attacks]</buf> do not require allies to possess a specific skill and do not consume any Link chances."
+      "icon": "Icon_skill_order_1129",
+      "effect": "Uses Missile Launcher to attack a target, dealing <color=#F74848>1.4x</color> DMG to the part hit and <color=#F74848>50%</color> Splash DMG to other parts. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking. Enables all allies to launch <buf ID=900002>[Link Attacks]</buf> against it. These <buf ID=900002>[Link Attacks]</buf> do not require allies to possess a specific skill and do not consume any Link chances."
     },
     "7300371": {
       "name": "Fiery Rain",
       "Ap": "3",
       "CD": "0",
       "icon": "Icon_skill_order_1121",
-      "effect": "Uses Rocket Launcher to attack all targets within the selected 3x3-tile area, dealing 0.25x AoE DMG to all parts. After combat, applies [Burning Terrain] to the tiles hit."
+      "effect": "Uses Rocket Launcher to attack all targets within the selected 3x3-tile area, dealing <color=#F74848>0.25x</color> AoE DMG to all parts. After combat, applies <terrian ID=4003081 /> to the tiles hit."
     },
     "7300381": {
       "name": "Carpet Bombing",
       "Ap": "4",
       "CD": "0",
       "icon": "Icon_skill_order_1135",
-      "effect": "Uses two Rocket Launcher to attack all targets within the selected 5x5-tile area, dealing 2x0.15x AoE DMG to all parts. After combat, grants 1 random buff to all allies, lasting for 2 turns."
+      "effect": "Uses two Rocket Launcher to attack all targets within the selected 5x5-tile area, dealing <color=#F74848>2x0.15x</color> AoE DMG to all parts. After combat, grants <color=#F74848>1</color> random buff to all allies, lasting for <color=#F74848>2</color> turns."
     },
     "7300391": {
       "name": "Ray Of Light",
       "Ap": "3",
       "CD": "0",
-      "icon": "Icon_skill_order_1135",
+      "icon": "Icon_skill_order_1111",
       "effect": "Uses a Rail Gun to attack the same part of all targets within a <range type=1>1x5-tile line</range> or a 4-tile diagonal area and deals <color=#F74848>0.9x</color> AoE DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking."
     },
     "7300401": {
@@ -1552,119 +1548,112 @@
       "Ap": "3",
       "CD": "0",
       "icon": "Icon_skill_order_1012",
-      "effect": "Uses Cutter to attack up to 4 targets within attack range, dealing 1.2x AoE DMG. Can select same target repeatedly. Repeated attack on the same target deals 40% increased DMG."
+      "effect": "Uses Cutter to attack up to <color=#F74848>4</color> targets within attack range, dealing <color=#F74848>1.2x</color> AoE DMG. Can select same target repeatedly. Repeated attack on the same target deals <color=#F74848>40%</color> increased DMG."
     },
     "7300421": {
       "name": "Total Assault",
       "Ap": "4",
       "CD": "0",
       "icon": "Icon_skill_order_1132",
-      "effect": "Uses a Cutter to attack all targets within <color=#F74848>4</color> tiles, dealing <color=#F74848>1.3x</color> AoE DMG. If a target is destroyed after combat, grants all allies [DMG UP III], lasting for 1 turn."
+      "effect": "Uses a Cutter to attack all targets within <color=#F74848>4</color> tiles, dealing <color=#F74848>1.3x</color> AoE DMG. If a target is destroyed after combat, grants all allies <buf ID=7100305>[DMG UP III]</buf>, lasting for <color=#F74848>1</color> turn."
     },
     "730016": {
       "name": "Weakness Strike",
       "Ap": "2",
       "CD": "0",
       "icon": "Icon_skill_main_1102",
-      "effect": "Uses a Knuckle or Pilebunker to attack a target, dealing 1.35x DMG. This attack always hits the part with lowest HP."
+      "effect": "Uses a Knuckle or Pilebunker to attack a target, dealing <color=#F74848>1.35x</color> DMG. This attack always hits the part with lowest HP."
     },
     "7300172": {
       "name": "Spear Strike",
       "Ap": "2",
       "CD": "0",
       "icon": "Icon_skill_main_1110",
-      "effect": "Uses a Polearm to attack a target, dealing 1.35x DMG. This attack always hits the part with lowest HP."
+      "effect": "Uses a Polearm to attack a target, dealing <color=#F74848>1.35x</color> DMG. This attack always hits the part with lowest HP."
     },
     "7300192": {
       "name": "Saw Strike",
       "Ap": "2",
       "CD": "0",
       "icon": "Icon_skill_main_1155",
-      "effect": "Uses a Chainsaw to attack a target, dealing 1.35x DMG. This attack always hits the part with lowest HP."
+      "effect": "Uses a Chainsaw to attack a target, dealing <color=#F74848>1.35x</color> DMG. This attack always hits the part with lowest HP."
     },
     "7300212": {
       "name": "Blade Strike",
       "Ap": "2",
       "CD": "0",
       "icon": "Icon_skill_main_1159",
-      "effect": "Uses an Alter-Blade to attack a target, dealing 1.35x DMG. This attack always hits the part with lowest HP."
+      "effect": "Uses an Alter-Blade to attack a target, dealing <color=#F74848>1.35x</color> DMG. This attack always hits the part with lowest HP."
     },
     "7300232": {
       "name": "Snipe",
       "Ap": "2",
       "CD": "0",
       "icon": "Icon_skill_main_1144",
-      "effect": "Uses an Sniper Rifle to attack a target, dealing 1.3x DMG. Enters [Aiming] Mode before attacking."
+      "effect": "Uses a Sniper Rifle to attack a target, dealing <color=#F74848>1.3x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking."
     },
     "7300252": {
       "name": "Lock-On",
       "Ap": "2",
       "CD": "0",
       "icon": "Icon_skill_main_1016",
-      "effect": "Uses an Light Rifle to attack a target, dealing 1.3x DMG. Enters [Aiming] Mode before attacking."
+      "effect": "Uses a Light Rifle to attack a target, dealing <color=#F74848>1.3x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking."
     },
     "7300272": {
       "name": "Concentrated Fire",
       "Ap": "3",
       "CD": "0",
       "icon": "Icon_skill_main_1125",
-      "effect": "Uses Machine Gun to attack a target, dealing 1.3x DMG. Before combat, grants [Hit Rate UP III] to self, lasting for 1 turn."
+      "effect": "Uses Machine Gun to attack a target, dealing <color=#F74848>1.3x</color> DMG. Before combat, grants <buf ID=7100105>[Hit Rate UP III]</buf> to self, lasting for <color=#F74848>1</color> turn."
     },
     "7300292": {
       "name": "Turbo Shot",
       "Ap": "3",
       "CD": "0",
       "icon": "Icon_skill_main_1105",
-      "effect": "Uses Shotgun to attack a target, dealing 1.3x DMG. DMG dealt increases by 15% against part with 50% HP or less."
+      "effect": "Uses Shotgun to attack a target, dealing <color=#F74848>1.3x</color> DMG. DMG dealt increases by <color=#F74848>15%</color> against part with <color=#F74848>50%</color> HP or less."
     },
     "7300312": {
       "name": "Flame Strike",
       "Ap": "3",
       "CD": "0",
       "icon": "Icon_skill_main_1150",
-      "effect": "Uses Flamethrower to attack a target, dealing 1.3x DMG and dealing <color=#F74848>20%</color> <buf ID=900065>[Flame DMG]</buf> to other targets in the path. Applies [Burning terrain] to all tiles along the attack path, lasting for 2 turns."
+      "effect": "Uses Flamethrower to attack a target, dealing <color=#F74848>1.3x</color> DMG and dealing <color=#F74848>20%</color> <buf ID=900065>[Flame DMG]</buf> to other targets in the path. Applies <terrian ID=4003081 /> to all tiles along the attack path, lasting for <color=#F74848>2</color> turns."
     },
     "7300332": {
       "name": "Bullet Rain",
       "Ap": "3",
       "CD": "0",
       "icon": "Icon_skill_main_2102",
-      "effect": "Uses Heavy Machine Gun to attack a target, dealing 1.3x DMG. Inflcts [Dodge Rate Down III] on the target hit, lasting for 2 turns."
+      "effect": "Uses Heavy Machine Gun to attack a target, dealing <color=#F74848>1.3x</color> DMG. Inflicts <buf ID=7101104>[Dodge Rate Down III]</buf> on the target hit, lasting for <color=#F74848>2</color> turns."
     },
     "7300352": {
       "name": "Piercing Wind",
       "Ap": "3",
       "CD": "0",
       "icon": "Icon_skill_order_1006",
-      "effect": "Uses Missile Launcher to attack a target, dealing 2.2x DMG to the part it. This attack prioritizes attacking part without full HP."
-    },
-    "7300372": {
-      "name": "Piercing Wind",
-      "Ap": "3",
-      "CD": "0",
-      "icon": "Icon_skill_order_1008",
-      "effect": "Uses Rocket Launcher to attack all targets within the selected 3x3-tile area, dealing 0.275x AoE DMG to all parts. After combat, inflicts [Short Circuit I] to all targets hit."
+      "effect": "Uses Missile Launcher to attack a target, dealing <color=#F74848>2.2x</color> DMG to the part hit. This attack prioritizes attacking part without full HP."
     },
     "7300372": {
       "name": "Sweeping Barrage",
       "Ap": "3",
       "CD": "0",
       "icon": "Icon_skill_order_1008",
-      "effect": "Uses Rocket Launcher to attack all targets within the selected 3x3-tile area, dealing 0.275x AoE DMG to all parts. After combat, inflicts [Short Circuit I] to all targets hit."
+      "effect": "Uses Rocket Launcher to attack all targets within the selected 3x3-tile area, dealing <color=#F74848>0.275x</color> AoE DMG to all parts. After combat, inflicts <buf ID=3006502>[Short Circuit I]</buf> to all targets hit."
     },
     "7300392": {
       "name": "Magnetized Shot",
       "Ap": "3",
       "CD": "0",
       "icon": "Icon_skill_order_1007",
-      "effect": "Uses a Rail Gun to attack the same part of all targets within a <range type=1>1x5-tile line</range>, dealing <color=#F74848>1x</color> AoE DMG. Inflicts [Movement Inhibition I] to the target hits, lasting for 1 turn."
+      "effect": "Uses a Rail Gun to attack the same part of all targets within a <range type=1>1x5-tile line</range>, dealing <color=#F74848>1x</color> AoE DMG. Inflicts <buf ID=7101506>[Movement Inhibition I]</buf> on the target hit, lasting for <color=#F74848>1</color> turn."
     },
     "7300412": {
       "name": "Floating Cannon",
       "Ap": "3",
       "CD": "0",
       "icon": "Icon_skill_order_1132",
-      "effect": "Uses Cutter to attack all targets within the selected 2-tile radius area, dealing 1.25x AoE DMG."
+      "effect": "Uses Cutter to attack all targets within the selected <color=#F74848>2</color>-tile radius area, dealing <color=#F74848>1.25x</color> AoE DMG."
     }
   },
   "terrain": {

@@ -1,6 +1,6 @@
 var Glossary = (function () {
   var data = { buf: {}, skill: {}, terrain: {} };
-  var nameIndex = { buf: {}, skill: {} };
+  var nameIndex = { buf: {}, skill: {}, terrain: {} };
   var ICON_BASE = 'https://media.zlongame.com/media/pictures/cn/community/img/gl/gameInfo/skill/';
 
   function iconSrc(icon) {
@@ -15,8 +15,8 @@ var Glossary = (function () {
   // <buf ID=..> wrapper (the glossary source data itself is often written this
   // way). Build a name -> id lookup so those can still be resolved and linked.
   function rebuildNameIndex() {
-    nameIndex = { buf: {}, skill: {} };
-    ['buf', 'skill'].forEach(function (type) {
+    nameIndex = { buf: {}, skill: {}, terrain: {} };
+    ['buf', 'skill', 'terrain'].forEach(function (type) {
       var entries = data[type] || {};
       Object.keys(entries).forEach(function (id) {
         var name = entries[id] && entries[id].name;
@@ -70,12 +70,13 @@ var Glossary = (function () {
       var key = '\x00KW' + (idx++) + '\x00';
       var bufId = nameIndex.buf[name];
       var skillId = !bufId && nameIndex.skill[name];
-      if (!bufId && !skillId) {
+      var terrainId = !bufId && !skillId && nameIndex.terrain[name];
+      if (!bufId && !skillId && !terrainId) {
         kwMap[key] = '[' + name + ']';
         return key;
       }
-      var type = bufId ? 'buf' : 'skill';
-      var id = bufId || skillId;
+      var type = bufId ? 'buf' : skillId ? 'skill' : 'terrain';
+      var id = bufId || skillId || terrainId;
       kwMap[key] = '<span class="kw kw-' + type + '" data-kw-type="' + type + '" data-kw-id="' + id + '">[' + name + ']</span>';
       return key;
     });
@@ -85,6 +86,8 @@ var Glossary = (function () {
       .replace(/&/g, '&amp;').replace(/</g, '\x00LT\x00').replace(/>/g, '\x00GT\x00')
       .replace(/\x00LT\x00color=(#[0-9A-Fa-f]+)\x00GT\x00([\s\S]*?)\x00LT\x00\/color\x00GT\x00/g,
         function (_, color, inner) { return '<span style="color:' + color + '">' + inner + '</span>'; })
+      .replace(/\x00LT\x00b\x00GT\x00([\s\S]*?)\x00LT\x00\/b\x00GT\x00/g,
+        function (_, inner) { return '<b>' + inner + '</b>'; })
       .replace(/\x00LT\x00[^]*?\x00GT\x00/g, '')
       .replace(/\n/g, '<br>');
 
@@ -112,7 +115,11 @@ var Glossary = (function () {
       refs.push({ type: type, id: id });
     }
 
-    var stripped = text.replace(/<buf ID=(\d+)>\[?([^\]<]*)\]?<\/buf>/g, function (_, id) {
+    var stripped = text.replace(/<terr(?:ian|ain) ID=(\d+)\s*\/>/g, function (_, id) {
+      add('terrain', id);
+      return '';
+    });
+    stripped = stripped.replace(/<buf ID=(\d+)>\[?([^\]<]*)\]?<\/buf>/g, function (_, id) {
       add('buf', id);
       return '';
     });
@@ -123,8 +130,10 @@ var Glossary = (function () {
     stripped.replace(/\[([^\[\]<>]+)\]/g, function (_, name) {
       var bufId = nameIndex.buf[name];
       var skillId = !bufId && nameIndex.skill[name];
+      var terrainId = !bufId && !skillId && nameIndex.terrain[name];
       if (bufId) add('buf', bufId);
       else if (skillId) add('skill', skillId);
+      else if (terrainId) add('terrain', terrainId);
       return _;
     });
 
