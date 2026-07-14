@@ -21276,7 +21276,7 @@
                 "PassiveSkill": {
                   "ID": "800133",
                   "name": "Form Shift 4",
-                  "SpecificEffects": "At the start of action, triggers <buf ID=900155>[Activation]</buf> for <color=#F74848>2</color> forms other than the current one for <color=#F74848>1</color> time.\nWhen all allies have ended their turn, if self is in <buf ID=900154>[Pending Activation]</buf> state, triggers <buf ID=900155>[Activation]</buf> for current form, gaining <color=#F74848>1</color> extra turn, but cannot gain <buf ID=900199>[Particle Energy]</buf>. This effect can trigger <color=#F74848>1</color> time per turn.",
+                  "SpecificEffects": "At the start of action, enables <buf ID=900155>[Activation]</buf> trigger for <color=#F74848>2</color> forms other than the current one for <color=#F74848>1</color> time each.\nWhen all allies have ended their turn, if self is in <buf ID=900154>[Pending Activation]</buf> state, triggers <buf ID=900155>[Activation]</buf> for current form, gaining <color=#F74848>1</color> extra turn, but cannot gain <buf ID=900199>[Particle Energy]</buf>. This effect can trigger <color=#F74848>1</color> time per turn.",
                   "BufCarried": "8001331/8001332/8001333/8001335",
                   "SkillIcon": "Icon_skill_passive_5205",
                   "icon": "Icon_skill_passive_5205",
