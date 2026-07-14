@@ -12,8 +12,15 @@
     },
     "30548": {
       "name": "All Creation Module",
-      "SpecificEffects": "For each <color=#F74848>1</color> different profession on the team, DMG dealt increases by <color=#F74848>6%</color>, up to <color=#F74848>24%</color>.\nIf there are <color=#F74848>4</color> or more professions on the team, Initial AP <color=#F74848>+1</color>, AP recovery <color=#F74848>+1</color>."
+      "SpecificEffects": "For each <color=#F74848>1</color> different profession on the team, DMG dealt increases by <color=#F74848>6%</color>, up to <color=#F74848>24%</color>.\nIf there are <color=#F74848>4</color> or more professions on the team, Initial AP <color=#F74848>+1</color>, AP recovery <color=#F74848>+1</color>. Enters the <buf ID=900121>[Restriction Removal]</buf> state, activating the extra module effect integrated within the part."
     }
   },
-  "version": "3.0"
+  "version": "3.0",
+  "hiddenModules": [
+    {
+      "name": "Universal Singularity",
+      "icon": "Icon_skill_passive_5266",
+      "SpecificEffects": "Removes restrictions, enhances all forms:\n<b>Vanguard</b>: Critical Hit chance and Critical Hit DMG increase by <color=#F74848>10%</color>.\n<b>Assault</b>: Assault weapon bullet count <color=#F74848>+1</color>.\n<b>Tactical</b>: Hit Rate increases by <color=#F74848>3%</color> for every <color=#F74848>1</color> AP consumed when using tactical weapons, up to <color=#F74848>15%</color>.\n<b><skill passiveSkill=800159>[Virtual Particle Form]</skill></b>: AP consumption reduces by <color=#F74848>-1</color>, Final DMG dealt increases by <color=#F74848>15%</color>, movement increases by <color=#F74848>+1</color>.\n<b>Only [Hailis] can activate this module.</b>"
+    }
+  ]
 }
