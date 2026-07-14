@@ -1206,7 +1206,7 @@ window.GlossaryData = {
     },
     "900155": {
       "name": "Activation",
-      "effect": "Gains an extra action without triggering any end of turn effect."
+      "effect": "Gains an extra action without triggering any start or end of turn effect."
     },
     "900156": {
       "name": "Form Shift",
@@ -1359,7 +1359,7 @@ window.GlossaryData = {
       "Ap": "5",
       "CD": "0",
       "icon": "Icon_skill_main_1172",
-      "effect": "Cosmic virtual particle deals <color=#F74848>1.2x</color> DMG to the target. Meteorite virtual particle deals <color=#F74848>1x</color> DMG to the target's part with lowest HP. Star virtual particle deals <color=#F74848>1.2x</color> DMG to the target body. After combat, deploys <terrian ID=6008502 /> on the area within <color=#F74848>1</color>-ring of self, lasting for <color=#F74848>2</color> turns."
+      "effect": "Unleashes a chain attack using all Particle Weapons in order. Cosmic virtual particle deals <color=#F74848>1.2x</color> DMG to the target. Meteorite virtual particle deals <color=#F74848>1x</color> DMG to the target's part with lowest HP. Star virtual particle deals <color=#F74848>1.2x</color> DMG to the target body. After combat, deploys <terrian ID=6008502 /> on the area within <color=#F74848>1</color>-ring of self, lasting for <color=#F74848>2</color> turns."
     },
     "730015": {
       "name": "Rising Dragon",
