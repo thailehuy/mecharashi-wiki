@@ -771,14 +771,14 @@
       "maxLevel": 8,
       "currentLevel": 8,
       "levels": {
-        "1": "Before actively attacking, if distance moved is <color=#F74848>2</color> tiles or less, DMG +<color=#F74848>3%</color>",
-        "2": "Before actively attacking, if distance moved is <color=#F74848>2</color> tiles or less, DMG +<color=#F74848>4%</color>",
-        "3": "Before actively attacking, if distance moved is <color=#F74848>2</color> tiles or less, DMG +<color=#F74848>6%</color>",
-        "4": "Before actively attacking, if distance moved is <color=#F74848>2</color> tiles or less, DMG +<color=#F74848>8%</color>",
-        "5": "Before actively attacking, if distance moved is <color=#F74848>2</color> tiles or less, DMG +<color=#F74848>10%</color>",
-        "6": "Before actively attacking, if distance moved is <color=#F74848>2</color> tiles or less, DMG +<color=#F74848>12%</color>",
-        "7": "Before actively attacking, if distance moved is <color=#F74848>2</color> tiles or less, DMG +<color=#F74848>14%</color>",
-        "8": "Before actively attacking, if distance moved is <color=#F74848>2</color> tiles or less, DMG +<color=#F74848>18%</color>;\nAt end of action, immediately gains <color=#F74848>1</color> AP. This effect has a <color=#F74848>1</color>-turn trigger interval."
+        "1": "Before actively attacking, if distance moved is <color=#F74848>2</color> tiles or less, DMG <color=#F74848>+3%</color>",
+        "2": "Before actively attacking, if distance moved is <color=#F74848>2</color> tiles or less, DMG <color=#F74848>+4%</color>",
+        "3": "Before actively attacking, if distance moved is <color=#F74848>2</color> tiles or less, DMG <color=#F74848>+6%</color>",
+        "4": "Before actively attacking, if distance moved is <color=#F74848>2</color> tiles or less, DMG <color=#F74848>+8%</color>",
+        "5": "Before actively attacking, if distance moved is <color=#F74848>2</color> tiles or less, DMG <color=#F74848>+10%</color>",
+        "6": "Before actively attacking, if distance moved is <color=#F74848>2</color> tiles or less, DMG <color=#F74848>+12%</color>",
+        "7": "Before actively attacking, if distance moved is <color=#F74848>2</color> tiles or less, DMG <color=#F74848>+14%</color>",
+        "8": "Before actively attacking, if distance moved is <color=#F74848>2</color> tiles or less, DMG <color=#F74848>+18%</color>;\nAt end of action, immediately gain <color=#F74848>1</color> AP. This effect has a <color=#F74848>1</color>-turn trigger interval."
       }
     },
     "3005": {
@@ -1490,21 +1490,38 @@
         "4": "During an Active Attack, there is a <color=#F74848>100%</color> chance to trigger <buf ID=900001>[Flurry Strike]</buf>, dealing <color=#F74848>0.3x</color> DMG, effective up to <color=#F74848>1</color> time per turn."
       }
     },
-    "3036": {
-      "name": "Bombing Mod",
-      "icon": "Icon_entry_10087",
+    "3031": {
+      "name": "Skirmishing Mod",
+      "icon": "Icon_skill_passive_1154",
       "category": "GeneralSuit",
       "maxLevel": 8,
       "currentLevel": 8,
       "levels": {
-        "1": "When using Code skills to attack, DMG increases by <color=#F74848>3%</color>.",
-        "2": "When using Code skills to attack, DMG increases by <color=#F74848>4%</color>.",
-        "3": "When using Code skills to attack, DMG increases by <color=#F74848>6%</color>.",
-        "4": "When using Code skills to attack, DMG increases by <color=#F74848>8%</color>.",
-        "5": "When using Code skills to attack, DMG increases by <color=#F74848>10%</color>.",
-        "6": "When using Code skills to attack, DMG increases by <color=#F74848>12%</color>.",
-        "7": "When using Code skills to attack, DMG increases by <color=#F74848>14%</color>.",
-        "8": "When using Code skills to attack, DMG increases by <color=#F74848>18%</color>.\nWhen actively attacking with tactical weapons, if <color=#F74848>3</color> or more targets are hit, randomly reload <color=#F74848>1</color> ammo of tactical weapon. Can be activated <color=#F74848>1</color> times per turn."
+        "1": "When in combat against enemies within <color=#F74848>2</color> tiles, DMG <color=#F74848>+3%</color>.",
+        "2": "When in combat against enemies within <color=#F74848>2</color> tiles, DMG <color=#F74848>+4%</color>.",
+        "3": "When in combat against enemies within <color=#F74848>2</color> tiles, DMG <color=#F74848>+6%</color>.",
+        "4": "When in combat against enemies within <color=#F74848>2</color> tiles, DMG <color=#F74848>+8%</color>.",
+        "5": "When in combat against enemies within <color=#F74848>2</color> tiles, DMG <color=#F74848>+10%</color>.",
+        "6": "When in combat against enemies within <color=#F74848>2</color> tiles, DMG <color=#F74848>+12%</color>.",
+        "7": "When in combat against enemies within <color=#F74848>2</color> tiles, DMG <color=#F74848>+14%</color>.",
+        "8": "When in combat against enemies within <color=#F74848>2</color> tiles, DMG <color=#F74848>+18%</color>.\nWhen initiating combat, if the target is hit, steals <color=#F74848>1</color> AP from the target after combat. Can only trigger <color=#F74848>1</color> time per turn."
+      }
+    },
+    "3040": {
+      "name": "Flanking Mod",
+      "icon": "Icon_entry_10091",
+      "category": "GeneralSuit",
+      "maxLevel": 8,
+      "currentLevel": 8,
+      "levels": {
+        "1": "When attacking enemies on any terrain effect, DMG dealt increases by <color=#F74848>3%</color>",
+        "2": "When attacking enemies on any terrain effect, DMG dealt increases by <color=#F74848>4%</color>",
+        "3": "When attacking enemies on any terrain effect, DMG dealt increases by <color=#F74848>6%</color>",
+        "4": "When attacking enemies on any terrain effect, DMG dealt increases by <color=#F74848>8%</color>",
+        "5": "When attacking enemies on any terrain effect, DMG dealt increases by <color=#F74848>10%</color>",
+        "6": "When attacking enemies on any terrain effect, DMG dealt increases by <color=#F74848>12%</color>",
+        "7": "When attacking enemies on any terrain effect, DMG dealt increases by <color=#F74848>14%</color>",
+        "8": "When attacking enemies on any terrain effect, DMG dealt increases by <color=#F74848>18%</color>, <buf ID=900017>[Fixed DMG]</buf> dealt increases by <color=#F74848>25%</color>."
       }
     },
     "3027": {
@@ -1541,21 +1558,21 @@
         "8": "When attacking, if there are allies within <color=#F74848>4</color> adjacent tiles, DMG dealt increases by <color=#F74848>18%</color>.\nAt the end of turn, if <color=#F74848>2</color> or more code or attack skills are used this turn, recovers <color=#F74848>1</color> AP."
       }
     },
-    "3040": {
-      "name": "Flanking Mod",
-      "icon": "Icon_entry_10091",
+    "3033": {
+      "name": "Sentinel Mod",
+      "icon": "Icon_entry_10084",
       "category": "GeneralSuit",
       "maxLevel": 8,
       "currentLevel": 8,
       "levels": {
-        "1": "When attacking enemies on any terrain effect, DMG dealt increases by <color=#F74848>3%</color>",
-        "2": "When attacking enemies on any terrain effect, DMG dealt increases by <color=#F74848>4%</color>",
-        "3": "When attacking enemies on any terrain effect, DMG dealt increases by <color=#F74848>6%</color>",
-        "4": "When attacking enemies on any terrain effect, DMG dealt increases by <color=#F74848>8%</color>",
-        "5": "When attacking enemies on any terrain effect, DMG dealt increases by <color=#F74848>10%</color>",
-        "6": "When attacking enemies on any terrain effect, DMG dealt increases by <color=#F74848>12%</color>",
-        "7": "When attacking enemies on any terrain effect, DMG dealt increases by <color=#F74848>14%</color>",
-        "8": "When attacking enemies on any terrain effect, DMG dealt increases by <color=#F74848>18%</color>, <buf ID=900017>[Fixed DMG]</buf> dealt increases by <color=#F74848>25%</color>."
+        "1": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, DMG <color=#F74848>+3%</color>.",
+        "2": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, DMG <color=#F74848>+4%</color>.",
+        "3": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, DMG <color=#F74848>+6%</color>.",
+        "4": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, DMG <color=#F74848>+8%</color>.",
+        "5": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, DMG <color=#F74848>+10%</color>.",
+        "6": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, DMG <color=#F74848>+12%</color>.",
+        "7": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, DMG <color=#F74848>+14%</color>.",
+        "8": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, DMG <color=#F74848>+18%</color>.\nWhen in combat with a target at <buf ID=900011>[Ideal Range]</buf>, Bullets <color=#F74848>+1</color>."
       }
     },
     "3034": {
@@ -1575,38 +1592,21 @@
         "8": "When attacking a target within the attack range of both the held weapon and the backpack weapon, DMG Dealt <color=#F74848>+18%</color>;\nEnters the <buf ID=900121>[Restriction Removal]</buf> state, activating the extra module effect integrated within the part."
       }
     },
-    "3031": {
-      "name": "Skirmishing Mod",
-      "icon": "Icon_skill_passive_1154",
+    "3036": {
+      "name": "Bombing Mod",
+      "icon": "Icon_entry_10087",
       "category": "GeneralSuit",
       "maxLevel": 8,
       "currentLevel": 8,
       "levels": {
-        "1": "When in combat against enemies within <color=#F74848>2</color> tiles, DMG <color=#F74848>+3%</color>.",
-        "2": "When in combat against enemies within <color=#F74848>2</color> tiles, DMG <color=#F74848>+4%</color>.",
-        "3": "When in combat against enemies within <color=#F74848>2</color> tiles, DMG <color=#F74848>+6%</color>.",
-        "4": "When in combat against enemies within <color=#F74848>2</color> tiles, DMG <color=#F74848>+8%</color>.",
-        "5": "When in combat against enemies within <color=#F74848>2</color> tiles, DMG <color=#F74848>+10%</color>.",
-        "6": "When in combat against enemies within <color=#F74848>2</color> tiles, DMG <color=#F74848>+12%</color>.",
-        "7": "When in combat against enemies within <color=#F74848>2</color> tiles, DMG <color=#F74848>+14%</color>.",
-        "8": "When in combat against enemies within <color=#F74848>2</color> tiles, DMG <color=#F74848>+18%</color>.\nWhen initiating combat, if the target is hit, steals <color=#F74848>1</color> AP from the target after combat. Can only trigger <color=#F74848>1</color> time per turn."
-      }
-    },
-    "3033": {
-      "name": "Sentinel Mod",
-      "icon": "Icon_entry_10084",
-      "category": "GeneralSuit",
-      "maxLevel": 8,
-      "currentLevel": 8,
-      "levels": {
-        "1": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, DMG <color=#F74848>+3%</color>.",
-        "2": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, DMG <color=#F74848>+4%</color>.",
-        "3": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, DMG <color=#F74848>+6%</color>.",
-        "4": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, DMG <color=#F74848>+8%</color>.",
-        "5": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, DMG <color=#F74848>+10%</color>.",
-        "6": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, DMG <color=#F74848>+12%</color>.",
-        "7": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, DMG <color=#F74848>+14%</color>.",
-        "8": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, DMG <color=#F74848>+18%</color>.\nWhen in combat with a target at <buf ID=900011>[Ideal Range]</buf>, Bullets <color=#F74848>+1</color>."
+        "1": "When using Code skills to attack, DMG increases by <color=#F74848>3%</color>.",
+        "2": "When using Code skills to attack, DMG increases by <color=#F74848>4%</color>.",
+        "3": "When using Code skills to attack, DMG increases by <color=#F74848>6%</color>.",
+        "4": "When using Code skills to attack, DMG increases by <color=#F74848>8%</color>.",
+        "5": "When using Code skills to attack, DMG increases by <color=#F74848>10%</color>.",
+        "6": "When using Code skills to attack, DMG increases by <color=#F74848>12%</color>.",
+        "7": "When using Code skills to attack, DMG increases by <color=#F74848>14%</color>.",
+        "8": "When using Code skills to attack, DMG increases by <color=#F74848>18%</color>.\nWhen actively attacking with tactical weapons, if <color=#F74848>3</color> or more targets are hit, randomly reload <color=#F74848>1</color> ammo of tactical weapon. Can be activated <color=#F74848>1</color> times per turn."
       }
     }
   }
