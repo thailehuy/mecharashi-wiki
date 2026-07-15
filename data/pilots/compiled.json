@@ -27669,7 +27669,7 @@
           "skill": {
             "ID": "101902",
             "name": "Two-Way Scheme",
-            "SpecificEffects": "When [Hook] skills are used on an ally unit, grants both [Maat] and the target Temporary HP equal to <color=#F74848>10%</color> of Maat's maximum HP, lasting for <color=#F74848>2</color> turns. This effect cannot stack.",
+            "SpecificEffects": "When any [Hook] skill is used on an ally unit, grants both [Maat] and the target Temporary HP equal to <color=#F74848>10%</color> of [Maat]'s maximum HP, lasting for <color=#F74848>2</color> turns. This effect cannot stack.",
             "BufCarried": "1019021",
             "SkillIcon": "Icon_skill_passive_5292",
             "icon": "Icon_skill_passive_5292",
@@ -27773,7 +27773,7 @@
             "ID": "101906",
             "remarks": "\u739b\u963f\u7279-\u4eff\u751f\u7535\u8111",
             "name": "Thorn Annihilation",
-            "describe": "Selects a main target. Uses a Chainsaw to attack all enemies within <color=#F74848>1</color> ring area, dealing <color=#F74848>0.9x</color> AoE DMG, consuming all <buf ID=5009234>[Vengeful Edge]</buf> on targets hit. Then attacks the main target, dealing <color=#F74848>0.9x</color> DMG. Each <color=#F74848>2</color> stacks of <buf ID=5009234>[Vengeful Edge]</buf> increases the hit count of the second attack by <color=#F74848>+1</color>, up to <color=#F74848>+8</color>. This attack always hits the body.",
+            "describe": "Selects a main target. Uses a Chainsaw to attack all enemies within <color=#F74848>1</color> ring area, dealing <color=#F74848>0.9x</color> AoE DMG, consuming all <buf ID=5009234>[Vengeful Edge]</buf> on targets hit. Then attacks the main target, dealing <color=#F74848>0.9x</color> DMG. Each <color=#F74848>2</color> stacks of <buf ID=5009234>[Vengeful Edge]</buf> consumed increases the hit count of the second attack by <color=#F74848>+1</color>, up to <color=#F74848>+8</color>. This attack always hits the body.",
             "type": "EquipmentSkill",
             "Ap": "4",
             "matchingWeaponType": "\u7535\u952f",
