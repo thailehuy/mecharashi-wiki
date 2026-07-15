@@ -1,5 +1,5 @@
 {
-  "name": "殉道士",
+  "name": "Martyr",
   "introduce": "YOS-95A 殉道士\n黑曜石开发的新式重型机兵，目前仅少量列装于黑曜石机动警卫队。\n该型机兵采用了黑曜石全新改进的XF4R钢岚合金框架及电磁复合装甲，拥有极为可靠的生存能力；双臂多达32组传感器均直接连接火控、动力与操纵模块，即使在高负荷战斗下依然可以瞬时辅助机师调整机体姿态。此外，黑曜石还为其开发了能引起小范围内敌我机兵钢岚合金振动的「荆棘回路」，于战斗瞬时增幅自身的输出功率和结构强度，从而显著提升机动奔袭与近身格斗的作战效能——但同时，它也会给驾驶者带来巨大的操控压力和神经刺激，只有不知恐惧的傀儡或意志坚定的战士才能真正发挥其全部实力。",
   "modules": {
     "40014": {
@@ -7,15 +7,15 @@
       "SpecificEffects": "Hit Rate <color=#F74848>+10%</color>."
     },
     "20674": {
-      "name": "荆棘回路",
-      "SpecificEffects": "周围<color=#F74848>1</color>圈有敌机时，遭受伤害降低<color=#F74848>15%</color>，伤害提升<color=#F74848>15%</color>，每多<color=#F74848>1</color>名敌机伤害额外提升<color=#F74848>5%</color>，最多额外提升<color=#F74848>15%</color>"
+      "name": "Thorn Circuit",
+      "SpecificEffects": "For each 1 enemy within 1-ring area, DMG taken reduces by 15% and DMG dealt increases by 15%. For each 1 additional enemy, DMG dealt additionally increases by 5%, up to 15%."
     },
     "30558": {
-      "name": "狂澜模组",
-      "SpecificEffects": "伤害提升<color=#F74848>12%</color>，攻击时根据连击数提升伤害，每<color=#F74848>1</color>连击额外提升<color=#F74848>1.5%</color>，最多额外提升<color=#F74848>24%</color>；主动攻击时，目标受到第<color=#F74848>6</color>连击及以后，技能倍率<color=#F74848>+0.1</color>，攻击后重置"
+      "name": "Raging Tide Mod",
+      "SpecificEffects": "DMG dealt increases by 12%, additionally increases by 1.5% for each 1 hit landed, up to 24%.\nWhen actively attacking, if 6 or more hits landed, skill multiplier increases by +0.1. This effect is reset after attacking."
     }
   },
-  "version": "1.0",
+  "version": "3.0",
   "dispatchVersion": "3.2",
   "dispatchGroup": "Sparkplug"
 }

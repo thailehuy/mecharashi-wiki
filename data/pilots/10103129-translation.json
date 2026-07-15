@@ -1,16 +1,16 @@
 {
-  "PilotName": "玛阿特",
-  "RealName": "玛阿特·谢里夫",
+  "PilotName": "Maat",
+  "RealName": "Maat Sharif",
   "Gender": "Female",
   "Profession": "Striker",
   "Occupation": "Fighter",
   "Talent0_2Ability": {
-    "name": "蚀罪极影",
-    "SpecificEffects": "双手完好且装备电锯时，行动后释放<skill activeSkill=1019512></skill>，每回合最多触发<color=#F74848>8</color>次；自身装备除强袭者背包外的任意背包时，可以释放<skill activeSkill=1019501></skill>与<skill activeSkill=1019511></skill>技能；初始具有<color=#F74848>1</color>层<buf ID=1019509></buf>，行动结束时恢复<color=#F74848>1</color>层<buf ID=1019509></buf>"
+    "name": "Corrupting Shadow",
+    "SpecificEffects": "When both hands are intact and equipped with Chainsaw, releases <skill activeSkill=1019512>Corrupting Shadow</skill> after each action up to <color=#F74848>8</color> times per turn. When equipped with any backpack other than Weapon Switcher, <skill activeSkill=1019501>Hook - Grab</skill> and <skill activeSkill=1019511>Hook - Chase</skill> can be used. Gains <color=#F74848>1</color> stack <buf ID=1019509>Hook Charge</buf> at the start of combat, and <color=#F74848>1</color> stack <buf ID=1019509>Hook Charge</buf> at the end of turn."
   },
   "Talent3_5Ability": {
-    "name": "蚀罪极影",
-    "SpecificEffects": "双手完好且装备电锯时，行动后释放<skill activeSkill=1019512></skill>，每回合最多触发<color=#F74848>8</color>次；自身装备除强袭者背包外的任意背包时，可以释放<skill activeSkill=1019501></skill>与<skill activeSkill=1019511></skill>技能；初始具有<color=#F74848>2</color>层<buf ID=1019509></buf>，行动结束时恢复<color=#F74848>1</color>层<buf ID=1019509></buf>；使用[钩爪]技能后，下一次主动攻击造成伤害提升<color=#F74848>20%</color>"
+    "name": "Corrupting Shadow",
+    "SpecificEffects": "When both hands are intact and equipped with Chainsaw, releases <skill activeSkill=1019512>Corrupting Shadow</skill> after each action up to <color=#F74848>8</color> times per turn. When equipped with any backpack other than Weapon Switcher, <skill activeSkill=1019501>Hook - Grab</skill> and <skill activeSkill=1019511>Hook - Chase</skill> can be used. Gains <color=#F74848>2</color> stacks <buf ID=1019509>Hook Charge</buf> at the start of combat, and <color=#F74848>1</color> stack <buf ID=1019509>Hook Charge</buf> at the end of turn. After using any [Hook] skill, the next active attack deals <color=#F74848>20%</color> more DMG."
   },
   "skills": {
     "100001": {
@@ -19,38 +19,39 @@
       "SpecificEffects": "After breaking a part, <buf ID=900004>[Re-ATK]</buf> can be triggered. Unable to move before the attack, and this can be effective up to <color=#F74848>2</color> times per turn."
     },
     "101902": {
-      "name": "计出双全",
+      "name": "Two-Way Scheme",
       "describe": "",
-      "SpecificEffects": "[钩爪]技能对友军单位释放时，为自身与目标机兵施加自身最大耐久值<color=#F74848>10%</color>的护盾，无法叠加，持续<color=#F74848>2</color>回合"
+      "SpecificEffects": "When [Hook] skills are used on an ally unit, grants both [Maat] and the target Temporary HP equal to 10% of Maat's maximum HP, lasting for 2 turns. This effect cannot stack."
     },
     "101903": {
-      "name": "无畏之执",
+      "name": "Fearless Resolve",
       "describe": "",
-      "SpecificEffects": "场上每有<color=#F74848>1</color>个敌方单位具有<buf ID=1019508>[仇楔]</buf>，自身护甲值提升<color=#F74848>15%</color>，最多提升<color=#F74848>60%</color>"
+      "SpecificEffects": "For each 1 enemy carrying [Vengeful Edge], increases armor by 15%, up to 60%."
     },
     "101904": {
-      "name": "逐猎",
-      "describe": "腿部完好时可发动，选择<color=#F74848>3</color>格范围内的<color=#F74848>1</color>格空地，跳跃至选中地格，并立刻获得<color=#F74848>1</color>AP与<color=#F74848>1</color>层<buf ID=1019509></buf>，然后可以移动<color=#F74848>3</color>格发动<buf ID=900004>[再攻击]</buf>",
+      "name": "Predation",
+      "describe": "Selects 1 empty tile within 3 adjacent tiles and jumps to the target. Gains 1 AP and 1 stack of [Hook Charge] upon arrival. Triggers [Re-ATK], allowing movement of 3 tiles before attacking. This skill can only be use when legs are intact.",
       "SpecificEffects": ""
     },
     "101905": {
-      "name": "苦难之谕",
+      "name": "Crisis Control",
       "describe": "",
-      "SpecificEffects": "任意手臂被击破时，战后将修复最多<color=#F74848>1</color>只手臂<color=#F74848>50%</color>耐久值，间隔<color=#F74848>3</color>回合后可再次发动"
+      "SpecificEffects": "When any Arm is destroyed, restores <color=#F74848>50%</color> HP to <color=#F74848>1</color> Arm. This effect can trigger again after an interval of <color=#F74848>3</color> turns."
     },
     "101906": {
-      "name": "棘灭",
-      "describe": "使用电锯攻击单个及自身周围的目标，必定攻击躯干；先攻击自身周围<color=#F74848>1</color>圈所有敌机，消耗命中目标所有<buf ID=1019508></buf>，造成<color=#F74848>0.9</color>倍范围伤害，然后继续攻击主目标，造成<color=#F74848>0.9</color>倍伤害，每消耗<color=#F74848>2</color>层<buf ID=1019508></buf>会使第二段攻击连击数<color=#F74848>+1</color>，最多<color=#F74848>+8</color>",
+      "name": "Thorn Annihilation",
+      "describe": "Selects a main target. Uses a Chainsaw to attack all enemies within 1-ring area, dealing 0.9x AoE DMG, consuming all [Vengeful Edge] on targets hit. Then attacks the main target, dealing 0.9x DMG. Each 2 stacks of [Vengeful Edge] increases the hit count of the second attack by +1, up to +8. This attack always hits the body.",
       "SpecificEffects": ""
     },
     "101907": {
-      "name": "永途",
+      "name": "Eternal Way",
       "describe": "",
-      "SpecificEffects": "使用[钩爪]技能后，若<buf ID=1019509></buf>不足<color=#F74848>1</color>点，消耗<color=#F74848>1</color>点PP恢复<color=#F74848>1</color>点<buf ID=1019509></buf>，每回合最多发动<color=#F74848>1</color>次；每次出击最多拥有<color=#F74848>2</color>点PP"
+      "resource": "PP",
+      "SpecificEffects": "After using any [Hook] skill, if [Hook Charge] is 1 or less, consumes 1 PP to restore 1 [Hook Charge]. This effect can trigger 1 time per turn. Gains 2 PP at the start of battle."
     },
     "101908": {
-      "name": "断裁",
-      "describe": "使用电锯攻击单个目标，造成<color=#F74848>0.7</color>倍伤害，攻击前可以进行<buf ID=900014>[瞄准]</buf>；本次攻击不会消耗<buf ID=1019508></buf>，战后可以移动<color=#F74848>2</color>格发动<buf ID=900004>[再攻击]</buf>，每回合只能使用<color=#F74848>1</color>次",
+      "name": "Severance",
+      "describe": "Uses Chainsaw to attack a target, dealing 0.7x DMG. Enters [Aiming] Mode before attacking. This attack does not consume [Vengeful Edge]. Triggers [Re-ATK] after combat, allowing movement of 2 tiles before attacking. This skill can only be used 1 time per turn.",
       "SpecificEffects": ""
     }
   },
@@ -104,8 +105,8 @@
       "SpecificEffects": "When triggering <buf ID=900001>[Flurry Strike]</buf>, prioritize hitting the part with the lowest HP."
     },
     "101941": {
-      "name": "业火成炬1",
-      "SpecificEffects": "击毁目标时，恢复<color=#F74848>1</color>层<buf ID=1019509></buf>，每回合最多发动<color=#F74848>1</color>次"
+      "name": "Burning Karma 1",
+      "SpecificEffects": "When a target is destroyed, gains 1 stack of [Hook Charge]. This effect can trigger 1 time per turn."
     },
     "100042": {
       "name": "AP Optimization 4",
@@ -116,17 +117,26 @@
       "SpecificEffects": "When destroying a target, additionally restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>2</color> times per turn."
     },
     "101944": {
-      "name": "业火成炬2",
-      "SpecificEffects": "若本回合累积消耗超过<color=#F74848>1</color>层<buf ID=1019508>[仇楔]</buf>，行动结束时自身回复<color=#F74848>1</color>AP"
+      "name": "Burning Karma 2",
+      "SpecificEffects": "If 1 or more stacks of [Vengeful Edge] are consumed this turn, gains 1 AP at the end of turn."
     },
     "101945": {
-      "name": "业火成炬3",
-      "SpecificEffects": "自身周围<color=#F74848>1</color>圈每有<color=#F74848>1</color>个敌机，伤害提升<color=#F74848>4%</color>，受到的伤害降低<color=#F74848>4%</color>，最多<color=#F74848>20%</color>"
+      "name": "Burning Karma 3",
+      "SpecificEffects": "For each 1 enemy within 1-ring, DMG dealt increases by 4% and DMG taken reduces by 4%, up to 20%."
     },
     "101946": {
-      "name": "业火成炬4",
-      "SpecificEffects": "钩爪技能射程<color=#F74848>+1</color>"
+      "name": "Burning Karma 4",
+      "SpecificEffects": "[Hook] skills range +1"
     }
   },
-  "version": "1.0"
+  "hiddenSkills": [
+    {
+      "name": "Splitter",
+      "icon": "Icon_skill_main_1156",
+      "type": "EquipmentSkill",
+      "Ap": "2",
+      "describe": "Uses a Chainsaw to attack a target, dealing 1.1x DMG. Consumes all [Vengeful Edge] on target hit. This attack always hit the part with lowest HP."
+    }
+  ],
+  "version": "3.0"
 }

@@ -1219,6 +1219,14 @@
     "500923": {
       "name": "Renovate II",
       "effect": "Repair AMT <color=#F74848>+20%</color>."
+    },
+    "5009234": {
+      "name": "Vengeful Edge",
+      "effect": "When [Maat] uses [Splitter], [Severance] or [Thorn Annihilation], each stack increases hit count by 1."
+    },
+    "1019509": {
+      "name": "Hook Charge",
+      "effect": "Each use of [Hook] skills consumes 1 charge. Can store up to 3 charges."
     }
   },
   "skill": {
@@ -1679,6 +1687,27 @@
       "CD": "0",
       "icon": "Icon_skill_order_1132",
       "effect": "Uses Cutter to attack all targets within the selected <color=#F74848>2</color>-tile radius area, dealing <color=#F74848>1.25x</color> AoE DMG."
+    },
+    "1019512": {
+      "name": "Corrupting Shadow",
+      "Ap": "0",
+      "CD": "0",
+      "icon": "Icon_skill_order_1119",
+      "effect": "Uses Chainsaw to attack all targets within 1-ring area, dealing 0.25x AoE DMG. Inflicts [Armor Down I] on targets hit, lasting for 1 turn. Also inflicts 1 stack of [Vengeful Edge] to all targets hit."
+    },
+    "1019501": {
+      "name": "Hook - Grab",
+      "Ap": "0",
+      "CD": "0",
+      "icon": "Icon_skill_order_1151",
+      "effect": "Grapples to a target with hook and drags it to [Maat] front tile. Then triggers [Re-ATK], allowing movement of 2 tiles before attacking. This effect can only displace each unit 1 time per turn."
+    },
+    "1019511": {
+      "name": "Hook - Chase",
+      "Ap": "0",
+      "CD": "0",
+      "icon": "Icon_skill_order_1150",
+      "effect": "Grapples to a target with hook and drags [Maat] the target's side. Then triggers [Re-ATK], allowing movement of 2 tiles before attacking."
     }
   },
   "terrain": {
