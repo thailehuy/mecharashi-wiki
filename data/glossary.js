@@ -1210,7 +1210,7 @@ window.GlossaryData = {
     },
     "900156": {
       "name": "Form Shift",
-      "effect": "Changes to a different form and gains corresponding <buf ID=900157>[Form Buff]</buf>.\n<b>Vanguard</b>: can only equip melee and ranged weapons. Movement increases by <color=#F74848>+1</color>. When actively attacking, DMG dealt and Critical Hit chance increase by <color=#F74848>15%</color>.\n<b>Assault</b>: can only equip assault weapons. Can perform <buf ID=900002>[Link Attack]</buf> up to <color=#F74848>2</color> times per turn. When actively attacking, assault bullet count <color=#F74848>+1</color>.\n<b>Tactical</b>: can only equip tactical weapon. Active attack does not consume tactical ammo. Can continue to move with remaining movement after attacking. When actively attacking, DMG dealt increases by <color=#F74848>5%</color> for each <color=#F74848>1</color> AP spent, up to <color=#F74848>25%</color>."
+      "effect": "Changes to a next corresponding form.\n<b>Vanguard</b>: can only equip melee and ranged weapons. Movement increases by <color=#F74848>+1</color>. When actively attacking, DMG dealt and Critical Hit chance increase by <color=#F74848>15%</color>.\n<b>Assault</b>: can only equip assault weapons. Can perform <buf ID=900002>[Link Attack]</buf> up to <color=#F74848>2</color> times per turn. When actively attacking, assault bullet count <color=#F74848>+1</color>.\n<b>Tactical</b>: can only equip tactical weapon. Active attack does not consume tactical ammo. Can continue to move with remaining movement after attacking. When actively attacking, DMG dealt increases by <color=#F74848>5%</color> for each <color=#F74848>1</color> AP spent, up to <color=#F74848>25%</color>."
     },
     "900157": {
       "name": "Form Buff",
