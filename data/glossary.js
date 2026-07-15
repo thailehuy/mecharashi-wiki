@@ -822,7 +822,7 @@ window.GlossaryData = {
     },
     "7101104": {
       "name": "Dodge Rate Down III",
-      "effect": "Dodge Rate -8%."
+      "effect": "Dodge Rate -12%."
     },
     "7101107": {
       "name": "Dodge Rate Down V",
@@ -1210,11 +1210,11 @@ window.GlossaryData = {
     },
     "900156": {
       "name": "Form Shift",
-      "effect": "Changes to a different form and gains corresponding <buf ID=900157>[Form Buff]</buf>."
+      "effect": "Changes to a different form and gains corresponding <buf ID=900157>[Form Buff]</buf>.\n<b>Vanguard</b>: can only equip melee and ranged weapons. Movement increases by <color=#F74848>+1</color>. When actively attacking, DNG dealt and Critical Hit chance increase by <color=#F74848>15%</color>.\n<b>Assault</b>: can only equip assault weapons. Can perform <buf ID=900002>[Link Attack]</buf> up to <color=#F74848>2</color> times per turn. When actively attacking, assault bullet count <color=#F74848>+1</color>.\n<b>Tactical</b>: can only equip tactical weapon. Active attack does not consume tactical ammo. Can continue to move with remaining movement after attacking. When actively attacking, DMG dealt increases by <color=#F74848>5%</color> for each <color=#F74848>1</color> AP spent, up to <color=#F74848>25%</color>."
     },
     "900157": {
       "name": "Form Buff",
-      "effect": "<b>Vanguard</b>: When actively attacking with melee or ranged weapons, Hit Rate is increased by <color=#F74848>15%</color> and <buf ID=900010>[Gutsy Strike]</buf> can be triggered, dealing <color=#F74848>0.3x</color> DMG.\n<b>Assault</b>: When actively attacking with assault weapons, Critical Hit chance is increased by <color=#F74848>15%</color>. After combat, deals <buf ID=900017>[Fixed DMG]</buf> equal to <color=#F74848>0.4x</color> weapon attack to all parts of the target.\n<b>Tactical</b>: When actively attacking with tactical weapons, DMG dealt is increased by <color=#F74848>15%</color>. After combat, applies <buf ID=7101803>[DMG Taken UP II]</buf> to targets for <color=#F74848>2</color> turns.\nAll effects are removed upon triggering."
+      "effect": "<b>Vanguard</b>: When initiating combat with melee or ranged weapons, Hit Rate is increased by <color=#F74848>15%</color> and <buf ID=900010>[Gutsy Strike]</buf> can be triggered, dealing <color=#F74848>0.3x</color> DMG.\n<b>Assault</b>: When actively attacking with assault weapons, Critical Hit chance is increased by <color=#F74848>15%</color>. After combat, deals <buf ID=900017>[Fixed DMG]</buf> equal to <color=#F74848>0.4x</color> weapon attack to all parts of the target.\n<b>Tactical</b>: When actively attacking with tactical weapons, DMG dealt is increased by <color=#F74848>15%</color>. After combat, applies <buf ID=7101803>[DMG Taken UP II]</buf> to targets for <color=#F74848>2</color> turns.\nAll effects are removed upon triggering."
     },
     "500923": {
       "name": "Renovate II",
@@ -1331,11 +1331,32 @@ window.GlossaryData = {
       "Ap": "0",
       "CD": "0",
       "icon": "Icon_skill_order_5155",
-      "effect": "Consumes all <buf ID=900199>[Particle Energy]</buf> and switches to <skill passiveSkill=800159>[Virtual Particle Form]</skill>. Gains all <buf ID=900157>[Form Buff]</buf> and deals <buf ID=900017>[Fixed DMG]</buf> equal to <color=#F74848>15%</color> of [Hailis]'s ST max HP to all enemies within <color=#F74848>2</color> adjacent tiles. Returns to current form after <color=#F74848>2</color> actions. This skill does not consume AP."
+      "effect": "Consumes all <buf ID=900199>[Particle Energy]</buf> and switches to <skill passiveSkill=800159>[Virtual Particle Form]</skill>. Gains all <buf ID=900157>[Form Buff]</buf> and deals <buf ID=900017>[Fixed DMG]</buf> equal to <color=#F74848>15%</color> of [Hailis]'s ST Body max HP to all enemies within <color=#F74848>2</color> adjacent tiles. Returns to current form after <color=#F74848>2</color> actions. This skill does not consume AP."
     },
     "800159": {
       "name": "Virtual Particle Form",
-      "effect": "The restricted state of particle form. Accumulating <color=#F74848>5</color> stacks of <buf ID=900199>[Particle Energy]</buf> allows the usage of <skill activeSkill=8001504>[Particle Burst]</skill> to remove this restriction."
+      "effect": "The restricted state of particle form. Accumulating <color=#F74848>5</color> stacks of <buf ID=900199>[Particle Energy]</buf> allows the usage of <skill activeSkill=8001504>[Particle Burst]</skill> to remove this restriction. Cannot change weapon or skills in this form. Can only use <skill activeSkill=7300432>[Particle Blade]</skill>, <skill activeSkill=7300442>[Particle Cannon]</skill> and <skill activeSkill=7300452>[Particle Matrix]</skill>. Returns to current form after 2 actions. Cannot be targeted by [Quick Draw], [Vigilant Shot], [Reaction Attack] and [Insight]"
+    },
+    "7300431": {
+      "name": "Particle Blade",
+      "Ap": "3",
+      "CD": "0",
+      "icon": "Icon_skill_main_1162",
+      "effect": "Uses condensed star virtual particle to attack a target, dealing <color=#F74848>1.4x</color> DMG. This attack always hits the body."
+    },
+    "7300441": {
+      "name": "Particle Cannon",
+      "Ap": "4",
+      "CD": "0",
+      "icon": "Icon_skill_main_1027",
+      "effect": "Uses condensed meteorite virtual particle to attack a target, dealing <color=#F74848>0.8x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking. This attack ignores target's Armor and prioritize hitting the same part."
+    },
+    "7300451": {
+      "name": "Particle Matrix",
+      "Ap": "4",
+      "CD": "0",
+      "icon": "Icon_skill_order_1013",
+      "effect": "Uses condensed cosmic virtual particle to attack all targets within <color=#F74848>4</color>-tile fan-shaped area in front, dealing <color=#F74848>1.1x</color> AoE DMG. After combat, if the part hit is at <color=#F74848>15%</color> HP or less, that part is instantly destroyed."
     },
     "7300432": {
       "name": "Particle Blade EX",
@@ -1349,7 +1370,7 @@ window.GlossaryData = {
       "Ap": "4",
       "CD": "0",
       "icon": "Icon_skill_main_1027",
-      "effect": "Uses condensed meteorite virtual particle to attack a target, dealing <color=#F74848>1.1x</color> DMG. If the target's HP is at <color=#F74848>60%</color> or more, this skill multiplier increases by <color=#F74848>0.05x</color>, up to <color=#F74848>0.2x</color>. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking. This attack ignores target's Armor and prioritize hitting the same part."
+      "effect": "Uses condensed meteorite virtual particle to attack a target, dealing <color=#F74848>1.1x</color> DMG. If the target's HP is at <color=#F74848>60%</color> or more, this skill multiplier increases by <color=#F74848>10%</color>, up to <color=#F74848>40%</color>. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking. This attack ignores target's Armor and prioritize hitting the same part."
     },
     "7300452": {
       "name": "Particle Matrix EX",
@@ -1363,7 +1384,7 @@ window.GlossaryData = {
       "Ap": "5",
       "CD": "0",
       "icon": "Icon_skill_main_1172",
-      "effect": "Unleashes a chain attack using all Particle Weapons in order. Cosmic virtual particle deals <color=#F74848>1.2x</color> DMG to the target. Meteorite virtual particle deals <color=#F74848>1x</color> DMG to the target's part with lowest HP. Star virtual particle deals <color=#F74848>1.2x</color> DMG to the target body. After combat, deploys <terrian ID=6008502 /> on the area within <color=#F74848>1</color>-ring of self, lasting for <color=#F74848>2</color> turns."
+      "effect": "Unleashes a chain attack using all Particle Weapons in order. Cosmic virtual particle deals <color=#F74848>1.2x</color> DMG to the target. Meteorite virtual particle deals <color=#F74848>1x</color> DMG to the target's part with highest HP. Star virtual particle deals <color=#F74848>1.2x</color> DMG to the target body. After combat, deploys <terrian ID=6008502 /> on the area within <color=#F74848>1</color>-ring of self, lasting for <color=#F74848>2</color> turns."
     },
     "730015": {
       "name": "Rising Dragon",
@@ -1545,7 +1566,7 @@ window.GlossaryData = {
       "Ap": "4",
       "CD": "0",
       "icon": "Icon_skill_order_5115",
-      "effect": "Uses a Rail Gun to attack all targets within a <range type=1>3x5-tile area</range>, dealing <color=#F74848>1.25x</color> AoE DMG. This attack always hits the body part."
+      "effect": "Uses a Rail Gun to attack all targets within a <range type=1>3x5-tile area</range>, dealing <color=#F74848>0.95x</color> AoE DMG. This attack always hits the body part."
     },
     "7300411": {
       "name": "Meteor Shower",
@@ -1640,7 +1661,7 @@ window.GlossaryData = {
     },
     "7300372": {
       "name": "Sweeping Barrage",
-      "Ap": "3",
+      "Ap": "4",
       "CD": "0",
       "icon": "Icon_skill_order_1008",
       "effect": "Uses Rocket Launcher to attack all targets within the selected 3x3-tile area, dealing <color=#F74848>0.275x</color> AoE DMG to all parts. After combat, inflicts <buf ID=3006502>[Short Circuit I]</buf> to all targets hit."
