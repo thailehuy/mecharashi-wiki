@@ -1335,7 +1335,7 @@
     },
     "800159": {
       "name": "Virtual Particle Form",
-      "effect": "The restricted state of particle form. Accumulating <color=#F74848>5</color> stacks of <buf ID=900199>[Particle Energy]</buf> allows the usage of <skill activeSkill=8001504>[Particle Burst]</skill> to remove this restriction. Cannot change weapon or skills in this form. Can only use <skill activeSkill=7300432>[Particle Blade]</skill>, <skill activeSkill=7300442>[Particle Cannon]</skill> and <skill activeSkill=7300452>[Particle Matrix]</skill>. Returns to current form after 2 actions. Cannot be targeted by [Quick Draw], [Vigilant Shot], [Reaction Attack] and [Insight]"
+      "effect": "The restricted state of particle form. Accumulating <color=#F74848>5</color> stacks of <buf ID=900199>[Particle Energy]</buf> allows the usage of <skill activeSkill=8001504>[Particle Burst]</skill> to remove this restriction. Cannot change weapon or skills in this form. Can only use <skill activeSkill=7300431 noDisplay>[Particle Blade]</skill>, <skill activeSkill=7300441 noDisplay>[Particle Cannon]</skill> and <skill activeSkill=7300451 noDisplay>[Particle Matrix]</skill>. Returns to current form after <color=#F74848>2</color> actions. Cannot be targeted by <buf ID=900023>[Quick Draw]</buf>, <buf ID=900013>[Vigilant Shot]</buf>, <buf ID=900006>[Reaction Attack]</buf> and <buf ID=900136>[Insight]</buf>."
     },
     "7300431": {
       "name": "Particle Blade",

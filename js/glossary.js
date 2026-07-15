@@ -47,7 +47,7 @@ var Glossary = (function () {
       return key;
     });
 
-    text = text.replace(/<buf ID=(\d+)>\[?([^\]<]*)\]?<\/buf>/g, function (_, id, name) {
+    text = text.replace(/<buf ID=(\d+)[^>]*>\[?([^\]<]*)\]?<\/buf>/g, function (_, id, name) {
       var key = '\x00KW' + (idx++) + '\x00';
       var entry = lookup('buf', id);
       var cls = entry ? 'kw kw-buf' : 'kw kw-buf kw-unknown';
@@ -60,6 +60,16 @@ var Glossary = (function () {
       var entry = lookup('skill', id);
       var cls = entry ? 'kw kw-skill' : 'kw kw-skill kw-unknown';
       kwMap[key] = '<span class="' + cls + '" data-kw-type="skill" data-kw-id="' + id + '">[' + name + ']</span>';
+      return key;
+    });
+
+    // <jump to=SLUG>Text</jump> scrolls to a same-page section (e.g. a
+    // "Form Skills" section further down a pilot's page) without touching
+    // location.hash, since this is a hash-routed single-page app and
+    // changing the hash would be treated as page navigation.
+    text = text.replace(/<jump to=([\w-]+)>([^<]*)<\/jump>/g, function (_, target, label) {
+      var key = '\x00KW' + (idx++) + '\x00';
+      kwMap[key] = '<a class="section-jump-link" href="#" data-target="' + target + '">' + label + '</a>';
       return key;
     });
 
@@ -119,12 +129,12 @@ var Glossary = (function () {
       add('terrain', id);
       return '';
     });
-    stripped = stripped.replace(/<buf ID=(\d+)>\[?([^\]<]*)\]?<\/buf>/g, function (_, id) {
-      add('buf', id);
+    stripped = stripped.replace(/<buf ID=(\d+)([^>]*)>\[?([^\]<]*)\]?<\/buf>/g, function (full, id, attrs) {
+      if (!/noDisplay/.test(attrs)) add('buf', id);
       return '';
     });
-    stripped = stripped.replace(/<skill[^>]+?(?:mainSkill|activeSkill|passiveSkill|ID)=(\d+)[^>]*>\[?([^\]<]*)\]?<\/skill>/g, function (_, id) {
-      add('skill', id);
+    stripped = stripped.replace(/<skill[^>]+?(?:mainSkill|activeSkill|passiveSkill|ID)=(\d+)([^>]*)>\[?([^\]<]*)\]?<\/skill>/g, function (full, id, attrs) {
+      if (!/noDisplay/.test(attrs)) add('skill', id);
       return '';
     });
     stripped.replace(/\[([^\[\]<>]+)\]/g, function (_, name) {
@@ -291,6 +301,14 @@ var Glossary = (function () {
 
     $(document).on('click', function (e) {
       if (tipEl && !$(e.target).closest('#kw-tooltip').length) hideTip();
+    });
+
+    $(document).on('click', '.section-jump-link', function (e) {
+      e.preventDefault();
+      var $target = $('#' + $(this).data('target'));
+      if ($target.length) {
+        $('html, body').animate({ scrollTop: $target.offset().top - 70 }, 200);
+      }
     });
   }
 

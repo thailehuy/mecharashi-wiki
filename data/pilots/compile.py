@@ -53,6 +53,8 @@ for path in sorted(glob.glob(f'{DIR}/[0-9]*.json')):
         entry['hiddenSkills'] = t['hiddenSkills']
     if t.get('summonSkills'):
         entry['summonSkills'] = t['summonSkills']
+    if t.get('formSkillGroups'):
+        entry['formSkillGroups'] = t['formSkillGroups']
 
     pilots.append(entry)
 

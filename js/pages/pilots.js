@@ -328,6 +328,7 @@ Pages.pilots = {
       '</div>' +
       this._renderSkills(p.biomimetic_computer_data, p.hiddenSkills) +
       this._renderSummonSkills(p) +
+      this._renderFormSkillGroups(p) +
       this._renderNeuralDrive(p.NeuralDriveTemplate)
     );
   },
@@ -514,6 +515,77 @@ Pages.pilots = {
         '<div class="skill-list">' + cardsHtml + '</div>' +
       '</div>'
     );
+  },
+
+  // Some skills (e.g. a weapon-type-dependent "use the strongest attack for
+  // your current form" skill) reference a whole roster of underlying attacks
+  // inline as bracketed keywords — with a dozen-plus per form, that single
+  // card's hover/description became unreadably long. Those skills' own
+  // describe text is kept short instead (see _renderSkills), and their full
+  // roster gets its own dedicated section here, one real card per skill, so
+  // nothing needs to be discovered via hover.
+  _formSkillSlug: function (title) {
+    return 'form-skills-' + title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+  },
+
+  _renderFormSkillGroups: function (p) {
+    var groups = p.formSkillGroups;
+    if (!groups || !groups.length) return '';
+    var self = this;
+    var TYPE_LABEL = { EquipmentSkill: 'Attack', Order: 'Code', SpecialAssault: 'Code + Attack' };
+    var TYPE_CLASS = { EquipmentSkill: 'skill-type-attack', Order: 'skill-type-code', SpecialAssault: 'skill-type-special' };
+
+    return groups.map(function (group) {
+      var iconHtml = group.icon
+        ? '<img class="skill-icon summon-section-icon" src="' + SKILL_BASE + encodeURIComponent(group.icon) + '.png" alt="" />'
+        : '';
+
+      var formsHtml = (group.groups || []).map(function (form) {
+        var cardsHtml = (form.skills || []).map(function (sk) {
+          var type      = sk.type || null;
+          var typeLabel = type ? (TYPE_LABEL[type] || type) : 'Passive';
+          var typeCls   = type ? (TYPE_CLASS[type] || '') : 'skill-type-passive';
+          var desc      = self._parseEffects(sk.describe || sk.SpecificEffects || '');
+          var iconSrc   = SKILL_BASE + encodeURIComponent(sk.icon) + '.png';
+          var statBadges =
+            '<span class="skill-stat"><span class="skill-stat-label">AP</span>' + (sk.Ap || '—') + '</span>' +
+            '<span class="skill-stat"><span class="skill-stat-label">CD</span>' + (sk.CD || '0') + '</span>';
+
+          return (
+            '<div class="skill-card">' +
+              '<div class="skill-header">' +
+                '<img class="skill-icon" src="' + iconSrc + '" alt="' + $('<span>').text(sk.name).html() + '" />' +
+                '<div class="skill-header-info">' +
+                  '<div class="skill-name-row">' +
+                    '<span class="skill-name">' + $('<span>').text(sk.name).html() + '</span>' +
+                    '<span class="skill-type-badge ' + typeCls + '">' + typeLabel + '</span>' +
+                  '</div>' +
+                  '<div class="skill-stats">' + statBadges + '</div>' +
+                '</div>' +
+              '</div>' +
+              (desc ? '<div class="talent-desc">' + desc + '</div>' : '') +
+            '</div>'
+          );
+        }).join('');
+
+        return (
+          '<div class="form-skill-group">' +
+            (form.label ? '<div class="form-skill-group-label">' + $('<span>').text(form.label).html() + '</div>' : '') +
+            '<div class="skill-list">' + cardsHtml + '</div>' +
+          '</div>'
+        );
+      }).join('');
+
+      return (
+        '<div class="nd-section" id="' + self._formSkillSlug(group.title) + '">' +
+          '<div class="section-heading summon-section-heading">' +
+            iconHtml +
+            $('<span>').text(group.title).html() + ' — Form Skills' +
+          '</div>' +
+          formsHtml +
+        '</div>'
+      );
+    }).join('');
   },
 
   _renderNeuralDrive: function (nd) {

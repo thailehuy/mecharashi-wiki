@@ -1319,6 +1319,23 @@ a.material-item:hover .material-icon-wrap {
   flex-shrink: 0;
 }
 
+.form-skill-group {
+  margin-bottom: 1.25rem;
+}
+
+.form-skill-group:last-child {
+  margin-bottom: 0;
+}
+
+.form-skill-group-label {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #b39ddb;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 0.6rem;
+}
+
 .nd-parts {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -1482,6 +1499,17 @@ a.material-item:hover .material-icon-wrap {
 .kw-pilot:hover {
   color: #ff6b85;
   border-bottom-color: rgba(255, 107, 133, 0.7);
+}
+
+.section-jump-link {
+  color: #4a9fd4;
+  border-bottom: 1px dashed rgba(74, 159, 212, 0.5);
+  text-decoration: none;
+  cursor: pointer;
+}
+.section-jump-link:hover {
+  color: #6fb8e8;
+  border-bottom-color: rgba(111, 184, 232, 0.7);
 }
 
 #kw-tooltip {
