@@ -200,6 +200,20 @@ var Glossary = (function () {
         if (t.SkillIcon || t.icon) tEntry.icon = t.SkillIcon || t.icon;
         data.skill[t.ID] = tEntry;
       });
+      // Hidden skills (e.g. a weapon-granted bonus skill) have no stable
+      // numeric ID in the source data, so give them a synthetic one scoped
+      // to the pilot + name — otherwise a bare "[Name]" reference to one
+      // (e.g. from another buff's own description) could never resolve.
+      (p.hiddenSkills || []).forEach(function (hs) {
+        if (!hs.name) return;
+        var synthId = 'hidden:' + (p.PilotName || '') + ':' + hs.name;
+        if (data.skill[synthId]) return;
+        var hEntry = { name: hs.name, effect: hs.describe || hs.SpecificEffects || '' };
+        if (hs.Ap != null && hs.Ap !== '') hEntry.Ap = hs.Ap;
+        if (hs.CD != null && hs.CD !== '') hEntry.CD = hs.CD;
+        if (hs.icon) hEntry.icon = hs.icon;
+        data.skill[synthId] = hEntry;
+      });
     });
 
     rebuildNameIndex();

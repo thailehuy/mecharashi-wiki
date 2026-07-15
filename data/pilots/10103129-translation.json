@@ -6,11 +6,11 @@
   "Occupation": "Fighter",
   "Talent0_2Ability": {
     "name": "Corrupting Shadow",
-    "SpecificEffects": "When both hands are intact and equipped with Chainsaw, releases <skill activeSkill=1019512>Corrupting Shadow</skill> after each action up to <color=#F74848>8</color> times per turn. When equipped with any backpack other than Weapon Switcher, <skill activeSkill=1019501>Hook - Grab</skill> and <skill activeSkill=1019511>Hook - Chase</skill> can be used. Gains <color=#F74848>1</color> stack <buf ID=1019509>Hook Charge</buf> at the start of combat, and <color=#F74848>1</color> stack <buf ID=1019509>Hook Charge</buf> at the end of turn."
+    "SpecificEffects": "When both hands are intact and equipped with Chainsaw, releases <skill activeSkill=1019512>[Corrupting Shadow]</skill> after each action up to <color=#F74848>8</color> times per turn. When equipped with any backpack other than Weapon Switcher, <skill activeSkill=1019501>[Hook - Grab]</skill> and <skill activeSkill=1019511>[Hook - Chase]</skill> can be used. Gains <color=#F74848>1</color> stack <buf ID=1019509>[Hook Charge]</buf> at the start of combat, and <color=#F74848>1</color> stack <buf ID=1019509>[Hook Charge]</buf> at the end of turn."
   },
   "Talent3_5Ability": {
     "name": "Corrupting Shadow",
-    "SpecificEffects": "When both hands are intact and equipped with Chainsaw, releases <skill activeSkill=1019512>Corrupting Shadow</skill> after each action up to <color=#F74848>8</color> times per turn. When equipped with any backpack other than Weapon Switcher, <skill activeSkill=1019501>Hook - Grab</skill> and <skill activeSkill=1019511>Hook - Chase</skill> can be used. Gains <color=#F74848>2</color> stacks <buf ID=1019509>Hook Charge</buf> at the start of combat, and <color=#F74848>1</color> stack <buf ID=1019509>Hook Charge</buf> at the end of turn. After using any [Hook] skill, the next active attack deals <color=#F74848>20%</color> more DMG."
+    "SpecificEffects": "When both hands are intact and equipped with Chainsaw, releases <skill activeSkill=1019512>[Corrupting Shadow]</skill> after each action up to <color=#F74848>8</color> times per turn. When equipped with any backpack other than Weapon Switcher, <skill activeSkill=1019501>[Hook - Grab]</skill> and <skill activeSkill=1019511>[Hook - Chase]</skill> can be used. Gains <color=#F74848>2</color> stacks <buf ID=1019509>[Hook Charge]</buf> at the start of combat, and <color=#F74848>1</color> stack <buf ID=1019509>[Hook Charge]</buf> at the end of turn. After using any [Hook] skill, the next active attack deals <color=#F74848>20%</color> more DMG."
   },
   "skills": {
     "100001": {
@@ -21,16 +21,16 @@
     "101902": {
       "name": "Two-Way Scheme",
       "describe": "",
-      "SpecificEffects": "When [Hook] skills are used on an ally unit, grants both [Maat] and the target Temporary HP equal to 10% of Maat's maximum HP, lasting for 2 turns. This effect cannot stack."
+      "SpecificEffects": "When [Hook] skills are used on an ally unit, grants both [Maat] and the target Temporary HP equal to <color=#F74848>10%</color> of Maat's maximum HP, lasting for <color=#F74848>2</color> turns. This effect cannot stack."
     },
     "101903": {
       "name": "Fearless Resolve",
       "describe": "",
-      "SpecificEffects": "For each 1 enemy carrying [Vengeful Edge], increases armor by 15%, up to 60%."
+      "SpecificEffects": "For each <color=#F74848>1</color> enemy carrying <buf ID=5009234>[Vengeful Edge]</buf>, increases armor by <color=#F74848>15%</color>, up to <color=#F74848>60%</color>."
     },
     "101904": {
       "name": "Predation",
-      "describe": "Selects 1 empty tile within 3 adjacent tiles and jumps to the target. Gains 1 AP and 1 stack of [Hook Charge] upon arrival. Triggers [Re-ATK], allowing movement of 3 tiles before attacking. This skill can only be use when legs are intact.",
+      "describe": "Selects <color=#F74848>1</color> empty tile within <color=#F74848>3</color> adjacent tiles and jumps to the target. Gains <color=#F74848>1</color> AP and <color=#F74848>1</color> stack of <buf ID=1019509>[Hook Charge]</buf> upon arrival. Triggers <buf ID=900004>[Re-ATK]</buf>, allowing movement of <color=#F74848>3</color> tiles before attacking. This skill can only be used when legs are intact.",
       "SpecificEffects": ""
     },
     "101905": {
@@ -40,18 +40,18 @@
     },
     "101906": {
       "name": "Thorn Annihilation",
-      "describe": "Selects a main target. Uses a Chainsaw to attack all enemies within 1-ring area, dealing 0.9x AoE DMG, consuming all [Vengeful Edge] on targets hit. Then attacks the main target, dealing 0.9x DMG. Each 2 stacks of [Vengeful Edge] increases the hit count of the second attack by +1, up to +8. This attack always hits the body.",
+      "describe": "Selects a main target. Uses a Chainsaw to attack all enemies within <color=#F74848>1</color> ring area, dealing <color=#F74848>0.9x</color> AoE DMG, consuming all <buf ID=5009234>[Vengeful Edge]</buf> on targets hit. Then attacks the main target, dealing <color=#F74848>0.9x</color> DMG. Each <color=#F74848>2</color> stacks of <buf ID=5009234>[Vengeful Edge]</buf> increases the hit count of the second attack by <color=#F74848>+1</color>, up to <color=#F74848>+8</color>. This attack always hits the body.",
       "SpecificEffects": ""
     },
     "101907": {
       "name": "Eternal Way",
       "describe": "",
       "resource": "PP",
-      "SpecificEffects": "After using any [Hook] skill, if [Hook Charge] is 1 or less, consumes 1 PP to restore 1 [Hook Charge]. This effect can trigger 1 time per turn. Gains 2 PP at the start of battle."
+      "SpecificEffects": "After using any [Hook] skill, if <buf ID=1019509>[Hook Charge]</buf> is <color=#F74848>1</color> or less, consumes <color=#F74848>1</color> PP to restore <color=#F74848>1</color> <buf ID=1019509>[Hook Charge]</buf>. This effect can trigger <color=#F74848>1</color> time per turn. Gains <color=#F74848>2</color> PP at the start of battle."
     },
     "101908": {
       "name": "Severance",
-      "describe": "Uses Chainsaw to attack a target, dealing 0.7x DMG. Enters [Aiming] Mode before attacking. This attack does not consume [Vengeful Edge]. Triggers [Re-ATK] after combat, allowing movement of 2 tiles before attacking. This skill can only be used 1 time per turn.",
+      "describe": "Uses Chainsaw to attack a target, dealing <color=#F74848>0.7x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking. This attack does not consume <buf ID=5009234>[Vengeful Edge]</buf>. Triggers <buf ID=900004>[Re-ATK]</buf> after combat, allowing movement of <color=#F74848>2</color> tiles before attacking. This skill can only be used <color=#F74848>1</color> time per turn.",
       "SpecificEffects": ""
     }
   },
@@ -106,7 +106,7 @@
     },
     "101941": {
       "name": "Burning Karma 1",
-      "SpecificEffects": "When a target is destroyed, gains 1 stack of [Hook Charge]. This effect can trigger 1 time per turn."
+      "SpecificEffects": "When a target is destroyed, gains <color=#F74848>1</color> stack of <buf ID=1019509>[Hook Charge]</buf>. This effect can trigger <color=#F74848>1</color> time per turn."
     },
     "100042": {
       "name": "AP Optimization 4",
@@ -118,15 +118,15 @@
     },
     "101944": {
       "name": "Burning Karma 2",
-      "SpecificEffects": "If 1 or more stacks of [Vengeful Edge] are consumed this turn, gains 1 AP at the end of turn."
+      "SpecificEffects": "If <color=#F74848>1</color> or more stacks of <buf ID=5009234>[Vengeful Edge]</buf> are consumed this turn, gains <color=#F74848>1</color> AP at the end of turn."
     },
     "101945": {
       "name": "Burning Karma 3",
-      "SpecificEffects": "For each 1 enemy within 1-ring, DMG dealt increases by 4% and DMG taken reduces by 4%, up to 20%."
+      "SpecificEffects": "For each <color=#F74848>1</color> enemy within <color=#F74848>1</color> ring, DMG dealt increases by <color=#F74848>4%</color> and DMG taken reduces by <color=#F74848>4%</color>, up to <color=#F74848>20%</color>."
     },
     "101946": {
       "name": "Burning Karma 4",
-      "SpecificEffects": "[Hook] skills range +1"
+      "SpecificEffects": "[Hook] skills range <color=#F74848>+1</color>."
     }
   },
   "hiddenSkills": [
@@ -135,7 +135,7 @@
       "icon": "Icon_skill_main_1156",
       "type": "EquipmentSkill",
       "Ap": "2",
-      "describe": "Uses a Chainsaw to attack a target, dealing 1.1x DMG. Consumes all [Vengeful Edge] on target hit. This attack always hit the part with lowest HP."
+      "describe": "Uses a Chainsaw to attack a target, dealing <color=#F74848>1.1x</color> DMG. Consumes all <buf ID=5009234>[Vengeful Edge]</buf> on target hit. This attack always hits the part with lowest HP."
     }
   ],
   "version": "3.0"

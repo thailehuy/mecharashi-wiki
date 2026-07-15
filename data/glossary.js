@@ -1219,6 +1219,18 @@ window.GlossaryData = {
     "500923": {
       "name": "Renovate II",
       "effect": "Repair AMT <color=#F74848>+20%</color>."
+    },
+    "5009234": {
+      "name": "Vengeful Edge",
+      "effect": "When [Maat] uses [Splitter], [Severance] or [Thorn Annihilation], each stack increases hit count by <color=#F74848>1</color>."
+    },
+    "1019509": {
+      "name": "Hook Charge",
+      "effect": "Each use of [Hook] skills consumes <color=#F74848>1</color> charge. Can store up to <color=#F74848>3</color> charges."
+    },
+    "1019500": {
+      "name": "Hook",
+      "effect": "Collective term for <skill activeSkill=1019501>[Hook - Grab]</skill> and <skill activeSkill=1019511>[Hook - Chase]</skill>."
     }
   },
   "skill": {
@@ -1679,6 +1691,27 @@ window.GlossaryData = {
       "CD": "0",
       "icon": "Icon_skill_order_1132",
       "effect": "Uses Cutter to attack all targets within the selected <color=#F74848>2</color>-tile radius area, dealing <color=#F74848>1.25x</color> AoE DMG."
+    },
+    "1019512": {
+      "name": "Corrupting Shadow",
+      "Ap": "0",
+      "CD": "0",
+      "icon": "Icon_skill_order_1119",
+      "effect": "Uses Chainsaw to attack all targets within <color=#F74848>1</color> ring area, dealing <color=#F74848>0.25x</color> AoE DMG. Inflicts <buf ID=7101701>[Armor Down I]</buf> on targets hit, lasting for <color=#F74848>1</color> turn. Also inflicts <color=#F74848>1</color> stack of <buf ID=5009234>[Vengeful Edge]</buf> to all targets hit."
+    },
+    "1019501": {
+      "name": "Hook - Grab",
+      "Ap": "0",
+      "CD": "0",
+      "icon": "Icon_skill_order_1151",
+      "effect": "Grapples to a target with hook and drags it to [Maat]'s front tile. Then triggers <buf ID=900004>[Re-ATK]</buf>, allowing movement of <color=#F74848>2</color> tiles before attacking. This effect can only displace each unit <color=#F74848>1</color> time per turn."
+    },
+    "1019511": {
+      "name": "Hook - Chase",
+      "Ap": "0",
+      "CD": "0",
+      "icon": "Icon_skill_order_1150",
+      "effect": "Grapples to a target with hook and drags [Maat] to the target's side. Then triggers <buf ID=900004>[Re-ATK]</buf>, allowing movement of <color=#F74848>2</color> tiles before attacking."
     }
   },
   "terrain": {
