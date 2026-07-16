@@ -1704,14 +1704,14 @@ window.GlossaryData = {
       "Ap": "0",
       "CD": "0",
       "icon": "Icon_skill_order_1151",
-      "effect": "Grapples to a target with hook and drags it to [Maat]'s front tile. Then triggers <buf ID=900004>[Re-ATK]</buf>, allowing movement of <color=#F74848>2</color> tiles before attacking. This effect can only displace each unit <color=#F74848>1</color> time per turn."
+      "effect": "Grapples to an ally or enemy target with hook and drags them to [Maat]'s front tile, ignoring unit collision on the path. Then triggers <buf ID=900004>[Re-ATK]</buf>, allowing movement of <color=#F74848>2</color> tiles before attacking. This effect can only displace each unit <color=#F74848>1</color> time per turn."
     },
     "1019511": {
       "name": "Hook - Chase",
       "Ap": "0",
       "CD": "0",
       "icon": "Icon_skill_order_1150",
-      "effect": "Grapples to a target with hook and drags [Maat] to the target's side. Then triggers <buf ID=900004>[Re-ATK]</buf>, allowing movement of <color=#F74848>2</color> tiles before attacking."
+      "effect": "Grapples to an ally or enemy target with hook and drags [Maat] to the target's side, ignoring unit collision on the path. Then triggers <buf ID=900004>[Re-ATK]</buf>, allowing movement of <color=#F74848>2</color> tiles before attacking."
     }
   },
   "terrain": {
