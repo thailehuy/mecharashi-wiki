@@ -5,12 +5,12 @@
   "Profession": "Assault",
   "Occupation": "Raider",
   "Talent0_2Ability": {
-    "name": "Flower Of The Force",
-    "SpecificEffects": "When both hands are intact, HMG range increases by <color=#F74848>1</color>. At the start of the action, gains <color=#F74848>1</color> stack of <buf ID=2017500>[Fury]</buf>, to the maximum of <color=#F74848>2</color> stacks."
+    "name": "Dawn's Bloom",
+    "SpecificEffects": "When both Arms are undestroyed, HMG Range <color=#F74848>+1</color>. At start of action, gains <color=#F74848>1</color> stack of <buf ID=2017500>[Fury]</buf>, stacking up to <color=#F74848>2</color> times."
   },
   "Talent3_5Ability": {
-    "name": "Flower Of The Force",
-    "SpecificEffects": "When both hands are intact, HMG range increases by <color=#F74848>1</color>, and the number of bullets increases by <color=#F74848>1</color>. At the start of the action, gains <color=#F74848>1</color> stack of <buf ID=2017500>[Fury]</buf>, to the maximum of <color=#F74848>2</color> stacks.\nGains <color=#F74848>1</color> additional stack of <buf ID=2017500>[Fury]</buf> at the start of battle."
+    "name": "Dawn's Bloom",
+    "SpecificEffects": "When both Arms are undestroyed, HMG Range <color=#F74848>+1</color> and number of Bullets <color=#F74848>+1</color>. At start of action, gains <color=#F74848>1</color> stack of <buf ID=2017500>[Fury]</buf>, stacking up to <color=#F74848>2</color> times.\nWhen deployed, gains <color=#F74848>1</color> additional stack of <buf ID=2017500>[Fury]</buf>."
   },
   "skills": {
     "200001": {
@@ -21,21 +21,21 @@
     "700021": {
       "name": "Range Suppression",
       "describe": "",
-      "SpecificEffects": "During an Active Attack in combat, for every <color=#F74848>1</color> tile the target is farther away, DMG <color=#F74848>+5%</color>, up to <color=#F74848>20%</color>."
+      "SpecificEffects": "When initiating combat, for every <color=#F74848>1</color> tile from the target, DMG <color=#F74848>+5%</color>, up to <color=#F74848>20%</color>."
     },
     "201709": {
-      "name": "Suppressive Fire",
-      "describe": "Uses HMG to attack a target, dealing <color=#F74848>1.3x</color> DMG. Can activate <buf ID=2017072>[Firepower Unleashed]</buf>. When <color=#F74848>2</color> stacks of <buf ID=2017500>[Fury]</buf> are consumed, this attack cannot be dodged.",
+      "name": "Suppressive Assault",
+      "describe": "Uses HMG to attack a target, dealing <color=#F74848>1.3x</color> DMG. Can activate <buf ID=2017072>[Fury Unleashed]</buf>. When <color=#F74848>2</color> stacks of <buf ID=2017500>[Fury]</buf> are consumed, this attack cannot be dodged.",
       "SpecificEffects": ""
     },
     "201703": {
-      "name": "Fiery Agression",
-      "describe": "Obtains <color=#F74848>2</color>AP, can continue to move <color=#F74848>3</color> tiles. Can attack after moving",
+      "name": "Firestorm Invasion",
+      "describe": "Gains <color=#F74848>2</color> AP, then can move <color=#F74848>3</color> tiles. Can continue to attack after moving.",
       "SpecificEffects": ""
     },
     "201704": {
       "name": "Wild Storm",
-      "describe": "Uses HMG to attack all targets within current weapon range, dealing <color=#F74848>0.55x</color> DMG.\nCan activate <buf ID=2017072>[Firepower Unleashed]</buf>. When <color=#F74848>2</color> stacks of <buf ID=2017500>[Fury]</buf> are consumed, the critical hit rate of this attack increased by <color=#F74848>50%</color>.",
+      "describe": "Uses HMG to attack all targets within current weapon range, dealing <color=#F74848>0.55x</color> AoE DMG.\nCan activate <buf ID=2017072>[Fury Unleashed]</buf>. When <color=#F74848>2</color> stacks of <buf ID=2017500>[Fury]</buf> are consumed, gains Crit Rate <color=#F74848>+50%</color> for this attack.",
       "SpecificEffects": ""
     },
     "200907": {
@@ -46,16 +46,16 @@
     "300307": {
       "name": "Exemplary",
       "describe": "",
-      "SpecificEffects": "Each turn, the AP cost of the 1st skill decreases by <color=#F74848>1</color>, with a minimum cost of <color=#F74848>1</color> AP."
+      "SpecificEffects": "Each turn, the AP cost of the first skill used is reduced by <color=#F74848>1</color>, with a minimum cost of <color=#F74848>1</color> AP."
     },
     "201707": {
-      "name": "Pinpoint Firepower",
+      "name": "Firepower Fulcrum",
       "describe": "",
-      "SpecificEffects": "When engaging in combat via <buf ID=900002>[Link attack]</buf>, if any part of the enemy is destroyed, gains <buf ID=900125>[Pinpoint Firepower]</buf>, up to <color=#F74848>2</color> stacks."
+      "SpecificEffects": "When engaging in a <buf ID=900002>[Link Attack]</buf>, if any enemy part is destroyed during this skirmish, gains <buf ID=900125>[Firepower Fulcrum]</buf> after combat, stacking up to <color=#F74848>2</color> times."
     },
     "201708": {
-      "name": "Blazing Onslaught",
-      "describe": "Uses HMG to attack an enemy, dealing <color=#F74848>1.55x</color> DMG.\nCan activate <buf ID=2017072>[Firepower Unleashed]</buf>. When <color=#F74848>2</color> stacks of <buf ID=2017500>[Fury]</buf> are consumed, the critical hit rate and critical damage of this attack increased by <color=#F74848>30%</color>.",
+      "name": "Blazing Offensive",
+      "describe": "Uses HMG to attack an enemy, dealing <color=#F74848>1.55x</color> DMG.\nCan activate <buf ID=2017072>[Fury Unleashed]</buf>. When <color=#F74848>2</color> stacks of <buf ID=2017500>[Fury]</buf> are consumed, gains Crit Rate and Crit DMG <color=#F74848>+30%</color> for this attack.",
       "SpecificEffects": ""
     }
   },
@@ -109,7 +109,7 @@
       "SpecificEffects": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, final DMG <color=#F74848>+30%</color>."
     },
     "201741": {
-      "name": "Ultimate Firepower 1",
+      "name": "Firepower Supremacy 1",
       "SpecificEffects": "When initiating combat, if the target cannot retaliate, gains <color=#F74848>1</color> stack of <buf ID=2017500>[Fury]</buf> after combat."
     },
     "200042": {
@@ -121,16 +121,16 @@
       "SpecificEffects": "If not moved before an Active Attack, <buf ID=900004>[Re-ATK]</buf> can be triggered, effective up to <color=#F74848>1</color> time per turn. Unable to move before attacking.\nEffects similar to <buf ID=900004>[Re-ATK]</buf> cannot be re-triggered."
     },
     "201744": {
-      "name": "Ultimate Firepower 2",
-      "SpecificEffects": "When activating <buf ID=2017072>[Firepower Unleashed]</buf>, if <color=#F74848>2</color> stacks of <buf ID=2017500>[Fury]</buf> are consumed, gains <buf ID=2017442>[Ultimate Firepower]</buf> after combat, lasting <color=#F74848>1</color> turn."
+      "name": "Firepower Supremacy 2",
+      "SpecificEffects": "When activating <buf ID=2017072>[Fury Unleashed]</buf>, if <color=#F74848>2</color> stacks of <buf ID=2017500>[Fury]</buf> are consumed, gains <buf ID=2017442>[Firepower Supremacy]</buf> after combat, lasting for <color=#F74848>1</color> turn."
     },
     "201745": {
-      "name": "Ultimate Firepower 3",
-      "SpecificEffects": "When activating <buf ID=2017072>[Firepower Unleashed]</buf> and destroys a target, gains <color=#F74848>1</color> AP after combat."
+      "name": "Firepower Supremacy 3",
+      "SpecificEffects": "While <buf ID=2017072>[Fury Unleashed]</buf> is active, destroying a target grants <color=#F74848>1</color> AP after combat."
     },
     "201746": {
-      "name": "Ultimate Firepower 4",
-      "SpecificEffects": "When activating <buf ID=2017072>[Firepower Unleashed]</buf>, for each <color=#F74848>1</color> AP consumed, DMG dealt is increased by <color=#F74848>7.5%</color>, up to <color=#F74848>45%</color>."
+      "name": "Firepower Supremacy 4",
+      "SpecificEffects": "When activating <buf ID=2017072>[Fury Unleashed]</buf>, for every <color=#F74848>1</color> AP consumed, DMG increases by <color=#F74848>7.5%</color>, up to <color=#F74848>45%</color>."
     }
   },
   "version": "2.1"

@@ -277,7 +277,7 @@ window.GlossaryData = {
       "effect": "Lv.1: Movement <color=#F74848>+1</color>.\nLv.2: Unlocks <buf ID=900011>[Ideal Range]</buf> for Assault Weapons. When battling targets on an <buf ID=900011>[Ideal Range]</buf> tile, Final DMG Dealt <color=#F74848>+15%</color>.\nLv.3: When a part is destroyed, restores <color=#F74848>1</color> AP after combat. Can only trigger <color=#F74848>1</color> time per turn.\nLv.4: When actively attacking with a Cutter, can repeatedly select the same target. Subsequent attacks against the same target deal <color=#F74848>40%</color> of base DMG.\nLv.5: Gains <buf ID=900118>[Valhalla's Call]</buf>."
     },
     "900125": {
-      "name": "Pinpoint Firepower",
+      "name": "Firepower Fulcrum",
       "effect": "HMG bullets <color=#F74848>+1</color>."
     },
     "900133": {
@@ -481,16 +481,16 @@ window.GlossaryData = {
       "effect": "When actively attacking with two Assault Weapons, consumes all stacks, reducing AP Cost by <color=#F74848>1</color> for each stack, down to a minimum of <color=#F74848>1</color>."
     },
     "2017072": {
-      "name": "Firepower Unleashed",
+      "name": "Fury Unleashed",
       "effect": "Can consume <buf ID=2017500>[Fury]</buf> stack to improve the skill effect. For each stack consumed, increases AP cost by <color=#F74848>1</color> and the number of bullets by <color=#F74848>40%</color>. Up to 2 stacks can be consumed."
     },
     "2017442": {
-      "name": "Ultimate Firepower",
-      "effect": "Maximum range of HMG increases by <color=#F74848>+1</color>. This effect can stack."
+      "name": "Firepower Supremacy",
+      "effect": "HMG Range <color=#F74848>+1</color>. This effect can stack."
     },
     "2017500": {
       "name": "Fury",
-      "effect": "DMG increased by <color=#F74848>+25%</color>. This effect cannot stack. Can be consumed to activate <buf ID=2017072>[Firepower Unleashed]</buf>."
+      "effect": "DMG Dealt <color=#F74848>+25%</color>. Effect cannot stack. Consumed when <buf ID=2017072>[Fury Unleashed]</buf> is activated."
     },
     "3004501": {
       "name": "Shadow of Calamity",

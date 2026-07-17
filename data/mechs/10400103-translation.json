@@ -3,16 +3,16 @@
   "introduce": "DD-720 螣蛇\n由多尔集团参与研发的轻型机兵。\n螣蛇在外观设计和装甲选材上进行了较为激进的革新，在保证常规防护性的同时，大大减轻了机身重量。其搭配的常规动力系统，以及优化能效的「光焰核心」，使得螣蛇能在保持高速机动的同时，装载更大更重的大规模杀伤性武器。总的来说，螣蛇的诞生对传统轻型机兵的战场定位进行了彻底颠覆。",
   "modules": {
     "30388": {
-      "name": "Servo Mod",
-      "SpecificEffects": "In combat, if own HP percentage is greater or equal to the target, DMG dealt is increased by <color=#F74848>18%</color>. If this attack is not an active attack, DMG dealt is increased by additionally <color=#F74848>12%</color>. When actively attacking, if <color=#F74848>5</color> AP or more is consumed, restores <color=#F74848>1</color> AP after combat. Can trigger at maximum <color=#F74848>1</color> times per turn."
+      "name": "Opportunist Mod",
+      "SpecificEffects": "When in combat, if this unit's HP percentage is greater than or equal to the target's, DMG <color=#F74848>+18%</color>. If the attack is not an active attack, DMG is additionally <color=#F74848>+12%</color>. When actively attacking, if consuming greater than or equal to <color=#F74848>5</color> AP, recovers <color=#F74848>1</color> AP, can be triggered up to <color=#F74848>1</color> time per turn."
     },
     "40014": {
       "name": "Accuracy Mod",
       "SpecificEffects": "Hit Rate <color=#F74848>+10%</color>."
     },
     "20464": {
-      "name": "Flame Core Mod",
-      "SpecificEffects": "When attacking with skills of <color=#F74848>3</color> AP or more, DMG increased by <color=#F74848>20%</color>. For every <color=#F74848>1</color> additional AP consumed, the effect increases by <color=#F74848>5%</color>, up to <color=#F74848>35%</color>."
+      "name": "Flame Core",
+      "SpecificEffects": "When attacking with a skill that costs <color=#F74848>3</color> AP or more, DMG <color=#F74848>+20%</color>. For every <color=#F74848>1</color> additional AP consumed, this effect <color=#F74848>+5%</color>, up to <color=#F74848>35%</color>."
     }
   },
   "version": "2.1",

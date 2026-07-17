@@ -5491,8 +5491,8 @@
             "date": 1737009922000
           },
           "ID": "30388",
-          "name": "Servo Mod",
-          "SpecificEffects": "In combat, if own HP percentage is greater or equal to the target, DMG dealt is increased by <color=#F74848>18%</color>. If this attack is not an active attack, DMG dealt is increased by additionally <color=#F74848>12%</color>. When actively attacking, if <color=#F74848>5</color> AP or more is consumed, restores <color=#F74848>1</color> AP after combat. Can trigger at maximum <color=#F74848>1</color> times per turn.",
+          "name": "Opportunist Mod",
+          "SpecificEffects": "When in combat, if this unit's HP percentage is greater than or equal to the target's, DMG <color=#F74848>+18%</color>. If the attack is not an active attack, DMG is additionally <color=#F74848>+12%</color>. When actively attacking, if consuming greater than or equal to <color=#F74848>5</color> AP, recovers <color=#F74848>1</color> AP, can be triggered up to <color=#F74848>1</color> time per turn.",
           "BufCarried": "303881/303882/303883",
           "SkillIcon": "Icon_entry_10089",
           "icon": "Icon_entry_10089",
@@ -5523,8 +5523,8 @@
             "date": 1737009920000
           },
           "ID": "20464",
-          "name": "Flame Core Mod",
-          "SpecificEffects": "When attacking with skills of <color=#F74848>3</color> AP or more, DMG increased by <color=#F74848>20%</color>. For every <color=#F74848>1</color> additional AP consumed, the effect increases by <color=#F74848>5%</color>, up to <color=#F74848>35%</color>.",
+          "name": "Flame Core",
+          "SpecificEffects": "When attacking with a skill that costs <color=#F74848>3</color> AP or more, DMG <color=#F74848>+20%</color>. For every <color=#F74848>1</color> additional AP consumed, this effect <color=#F74848>+5%</color>, up to <color=#F74848>35%</color>.",
           "BufCarried": "204641/204642",
           "SkillIcon": "Icon_skill_passive_1168",
           "icon": "Icon_skill_passive_1168",
