@@ -32,6 +32,25 @@ $(function () {
     if (window.innerWidth >= 768) closeDrawer();
   });
 
+  // "Misc." nav dropdown — the toggle itself doesn't navigate anywhere,
+  // it just reveals a menu of actual pages (e.g. Dispatch Table).
+  var $miscDropdown = $('#miscDropdown');
+
+  $('#miscDropdownToggle').on('click', function (e) {
+    e.preventDefault();
+    $miscDropdown.toggleClass('open');
+  });
+
+  $(document).on('click', function (e) {
+    if (!$(e.target).closest('#miscDropdown').length) {
+      $miscDropdown.removeClass('open');
+    }
+  });
+
+  $miscDropdown.on('click', '.nav-dropdown-item', function () {
+    $miscDropdown.removeClass('open');
+  });
+
 
   var DEFAULT_PAGE = 'pilots';
   var currentPage  = null;
@@ -56,6 +75,7 @@ $(function () {
 
     $('[data-page]').removeClass('active');
     $('[data-page="' + page + '"]').addClass('active');
+    $('#miscDropdownToggle').toggleClass('active', page === 'dispatch' || page === 'exskills');
 
     $('#app-content').html(p.render(param));
     window.scrollTo(0, 0);

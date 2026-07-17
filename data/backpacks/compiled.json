@@ -785,7 +785,7 @@
     },
     {
       "ID": "60402406",
-      "name": "Dominator",
+      "name": "Overlord",
       "quality": "SSSR",
       "weight": "150",
       "BackpackMainType": "Flow",
@@ -795,9 +795,9 @@
       "RelatedDescription": "\u65e7\u5f0f\u98de\u884c\u5f3a\u5316\u80cc\u5305\u7684\u6539\u826f\u5347\u7ea7\u6b3e\uff0c\u55b7\u5c04\u88c5\u7f6e\u80fd\u591f\u9a71\u52a8\u673a\u5175\u5728\u77ed\u8ddd\u79bb\u4e0a\u98de\u884c\uff0c\u5feb\u901f\u8d8a\u8fc7\u969c\u788d\uff0c\u524d\u5f80\u96be\u4ee5\u62b5\u8fbe\u7684\u6218\u573a\u89d2\u843d\u3002\u540c\u65f6\u96c6\u6210\u4e86\u5f3a\u5316\u673a\u5175\u6bcf\u56de\u5408\u9996\u6b21\u653b\u51fb\u80fd\u529b\u7684\u529f\u80fd\u3002",
       "skill": {
         "ID": "62302",
-        "name": "Dominator Drive \u00b7 First Strike",
+        "name": "Overlord Drive \u00b7 First Strike",
         "icon": "Icon_skill_passive_5155",
-        "SpecificEffects": "ST movement type changes to Levitating, enabling it to pass over low obstacles.\nWhen initiating combat, if the target is on the movement path, will always Dodge when retaliated against. Can trigger <color=#F74848>1</color> time per turn.\nWhen actively attacking for the <color=#F74848>1st</color> time each turn, DMG <color=#F74848>+7.5%</color> and Crit Rate <color=#F74848>+5%</color>.\nST Body HP <color=#F74848>+10%</color> and DMG Dealt <color=#F74848>+5%</color>."
+        "SpecificEffects": "ST movement type changes to Levitating, enabling ST to pass over low obstacles.\nBefore initiating combat with an active attack, if the target is on the movement path, guaranteed to Dodge when retaliated against, up to <color=#F74848>1</color> time per turn.\nWhen initiating combat for the first time each turn, DMG <color=#F74848>+7.5%</color> and Crit Rate <color=#F74848>+5%</color>. ST Body HP <color=#F74848>+10%</color> and DMG <color=#F74848>+5%</color>."
       },
       "crafting": [
         {
@@ -844,7 +844,7 @@
         "ID": "62303",
         "name": "Savior Drive \u00b7 Attack",
         "icon": "Icon_skill_passive_3130",
-        "SpecificEffects": "At the start of action, performs <color=#F74848>1</color> repair on self and allies within <color=#F74848>1</color> ring, equal to <color=#F74848>0.6</color>x Manipulator Repair AMT. Cannot repair destroyed parts.\nWhen in combat, enemy DMG Dealt is reduced by <color=#F74848>10%</color>."
+        "SpecificEffects": "At start of action, repairs self and allies within <color=#F74848>1</color> ring <color=#F74848>1</color> time, restoring HP equal to <color=#F74848>0.6</color>x Manipulator Repair AMT. This cannot repair destroyed parts.\nIn combat, Enemy DMG <color=#F74848>-10%</color>."
       },
       "crafting": [
         {

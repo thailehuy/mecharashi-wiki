@@ -399,16 +399,16 @@
     "name": "Z15 Kinetic Axe",
     "passiveSkills": {
       "53062": {
-        "name": "Overpowered Cutter",
-        "SpecificEffects": "When attacking with a Chainsaw, for every <color=#F74848>1</color> part broken, gains <color=#F74848>1</color> stack of <buf ID=530622>[Chainsaw Heat Up]</buf>, up to <color=#F74848>3</color> stacks. At the end of action, removes <color=#F74848>1</color> stack."
+        "name": "Power Cut",
+        "SpecificEffects": "When attacking with a Chainsaw, for every <color=#F74848>1</color> part destroyed, gains <color=#F74848>1</color> stack of <buf ID=530622>[Chainsaw Heating Up]</buf>. Stacks up to <color=#F74848>3</color> times. At end of action, loses <color=#F74848>1</color> stack."
       },
       "53063": {
-        "name": "Courage Burst",
-        "SpecificEffects": "Enhanced [Courage Burst]: <buf ID=1013503>[Vigor]</buf> stack cap increased by <color=#F74848>5</color>. At the start of battle, gains <color=#F74848>5</color> stacks of <buf ID=1013503>[Vigor]</buf>. After actively attacking, if possessing <color=#F74848>10</color> or more stacks of <buf ID=1013503>[Vigor]</buf>, restores <color=#F74848>1</color> AP after combat. Can trigger <color=#F74848>1</color> time per turn."
+        "name": "Courage Surge",
+        "SpecificEffects": "Enhanced [Courage Burst] Effect: Max <buf ID=1013503>[Vigor]</buf> stacks <color=#F74848>+5</color>. At start of combat, gains <color=#F74848>5</color> stacks of <buf ID=1013503>[Vigor]</buf>. After actively attacking, if <buf ID=1013503>[Vigor]</buf> stacks are greater than or equal to <color=#F74848>10</color>, recovers <color=#F74848>1</color> AP after combat. Can only trigger <color=#F74848>1</color> time per turn."
       },
       "53061": {
-        "name": "Shattering Strike",
-        "SpecificEffects": "When attacking, if the part hit does not have full HP, DMG Dealt <color=#F74848>+20%</color> to that part."
+        "name": "Crushing Strike",
+        "SpecificEffects": "When attacking, if the part hit is not at full HP, it takes <color=#F74848>+20%</color> DMG."
       }
     },
     "pilot": "Dean",
@@ -419,15 +419,15 @@
     "name": "Tropic Calamity",
     "passiveSkills": {
       "53056": {
-        "name": "Outta My Way!",
-        "SpecificEffects": "When initiating combat with a Shotgun, if the target is <color=#F74848>1</color> tile away, DMG <color=#F74848>+25%</color>."
+        "name": "Clear the Way!",
+        "SpecificEffects": "When using a Shotgun to initiate combat with a target within <color=#F74848>1</color> adjacent tile, DMG increases by <color=#F74848>25%</color>."
       },
       "53057": {
         "name": "Take This!",
-        "SpecificEffects": "Enhanced [Secret Execution]: When inflicting <buf ID=1004412>[Instability II]</buf>, instead inflict [Instability III]. For each stack, target DMG Dealt <color=#F74848>-3%</color>. When initiating combat with a Shotgun, if the target has <color=#F74848>3</color> or more stacks of <buf ID=900034>[Instability]</buf>, uses all Shotguns to launch <buf ID=900001>[Flurry Strike]</buf>, dealing <color=#F74848>0.15x</color> DMG."
+        "SpecificEffects": "Enhanced [Secret Execution] Effect: Upgrades <buf ID=1004412>[Instability II]</buf> inflicted on the target to <buf ID=530572>[Instability III]</buf>. Each stack also reduces the target's DMG by <color=#F74848>3%</color>. When using a Shotgun to initiate combat, if the target has <color=#F74848>3</color> or more stacks of <buf ID=900034>[Instability]</buf>, all Shotguns will trigger <buf ID=900001>[Flurry Strike]</buf>, dealing <color=#F74848>0.15x</color> damage."
       },
       "53055": {
-        "name": "Come at Me!",
+        "name": "Get Them!",
         "SpecificEffects": "When initiating combat, ignores <color=#F74848>30%</color> of the target's Armor."
       }
     },

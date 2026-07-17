@@ -63,6 +63,89 @@ body {
   background-color: #e94560;
 }
 
+/* "Misc." nav dropdown */
+.nav-dropdown {
+  position: relative;
+}
+
+.nav-dropdown-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.nav-dropdown-caret {
+  font-size: 0.65em;
+  transition: transform 0.15s;
+}
+
+.nav-dropdown.open .nav-dropdown-caret,
+.nav-dropdown:hover .nav-dropdown-caret {
+  transform: rotate(180deg);
+}
+
+.nav-dropdown-menu {
+  display: none;
+  position: absolute;
+  /* Flush against the toggle (no gap) so the mouse never leaves a hoverable
+     box while moving from the toggle down into the menu — a gap here would
+     create a "dead zone" that breaks :hover and closes the menu early. The
+     visual gap is faked with padding-top instead. */
+  top: 100%;
+  left: 0;
+  min-width: 160px;
+  padding-top: 6px;
+  z-index: 1030;
+}
+
+.nav-dropdown-menu-inner {
+  background: #1a1a20;
+  border: 1px solid #3a3a6e;
+  border-radius: 6px;
+  padding: 0.35rem;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
+
+.nav-dropdown.open .nav-dropdown-menu,
+.nav-dropdown:hover .nav-dropdown-menu {
+  display: block;
+}
+
+.nav-dropdown-item {
+  display: block;
+  color: #a0a0b0;
+  font-weight: 500;
+  font-size: 0.9rem;
+  padding: 0.45rem 0.7rem;
+  border-radius: 4px;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.nav-dropdown-item:hover {
+  color: #ffffff;
+  background-color: rgba(233, 69, 96, 0.15);
+}
+
+.nav-dropdown-item.active {
+  color: #ffffff;
+  background-color: #e94560;
+}
+
+/* Mobile drawer: non-clickable group label above nested items */
+.nav-drawer-group-label {
+  padding: 0.6rem 1rem 0.1rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #6a6a80;
+}
+
+.nav-drawer-subitem {
+  padding-left: 1.5rem !important;
+}
+
 /* Hamburger button */
 .nav-hamburger {
   display: none;
@@ -191,6 +274,100 @@ body {
   font-size: 1.75rem;
   font-weight: 700;
   margin: 0;
+}
+
+.dispatch-intro {
+  color: #a0a0b0;
+  margin-bottom: 1.25rem;
+  background-color: #1a1a20;
+  border: 1px solid #2a2a4a;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+}
+
+.dispatch-table-wrap {
+  overflow-x: auto;
+  border: 1px solid #2a2a4a;
+  border-radius: 8px;
+}
+
+.dispatch-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #1a1a20;
+}
+
+.dispatch-table th,
+.dispatch-table td {
+  border: 1px solid #2a2a4a;
+  padding: 0.6rem 0.75rem;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.dispatch-table thead th {
+  background-color: rgba(233, 69, 96, 0.15);
+  color: #ffffff;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.dispatch-version-cell {
+  font-weight: 700;
+  color: #e94560;
+  white-space: nowrap;
+}
+
+.dispatch-cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+  color: #e0e0e0;
+  text-decoration: none;
+  min-width: 90px;
+}
+
+a.dispatch-cell:hover .dispatch-cell-name {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.dispatch-cell-icon {
+  display: block;
+  width: 48px;
+  height: 48px;
+  border-radius: 6px;
+  border: 1px solid #3a3a5a;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.dispatch-cell-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.dispatch-cell-icon-empty {
+  background-color: #0d0d1a;
+}
+
+.dispatch-cell-icon.rank-b { border-color: #4a6fa5; }
+.dispatch-cell-icon.rank-a { border-color: #8b6abf; }
+.dispatch-cell-icon.rank-s { border-color: #f0b429; }
+
+.dispatch-cell-name {
+  font-size: 0.78rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.dispatch-cell-unreleased .dispatch-cell-name {
+  color: #6a6a80;
+  font-style: italic;
 }
 
 .card-item {

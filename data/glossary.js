@@ -1148,9 +1148,13 @@ window.GlossaryData = {
       "name": "All-out Attack",
       "effect": "Increases DMG dealt by <color=#F74848>25%</color>, lasting till the end of action."
     },
+    "530572": {
+      "name": "Instability III",
+      "effect": "Hit Rate <color=#F74848>-4%</color>, Dodge Rate <color=#F74848>-4%</color>, and DMG <color=#F74848>-3%</color>. Stacks up to <color=#F74848>5</color> times."
+    },
     "530622": {
-      "name": "Chainsaw Heat Up",
-      "effect": "Each stack: Chainsaw attacks gain <color=#F74848>+1</color> Hit."
+      "name": "Chainsaw Heating Up",
+      "effect": "Chainsaw Hits <color=#F74848>+1</color>. Stacks up to <color=#F74848>3</color> times. Loses <color=#F74848>1</color> stack after taking action."
     },
     "530742": {
       "name": "Momentum",

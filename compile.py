@@ -27,6 +27,24 @@ def compile_glossary():
     open(dest, 'w', encoding='utf-8').write(js)
     print('ok')
 
+def compile_dispatch():
+    print('  dispatch...', end=' ', flush=True)
+    src  = os.path.join(ROOT, 'data', 'dispatch.json')
+    dest = os.path.join(ROOT, 'data', 'dispatch.js')
+    data = json.load(open(src, encoding='utf-8'))
+    js   = 'window.DispatchData = ' + json.dumps(data, ensure_ascii=False, indent=2) + ';\n'
+    open(dest, 'w', encoding='utf-8').write(js)
+    print('ok')
+
+def compile_exskills():
+    print('  exskills...', end=' ', flush=True)
+    src  = os.path.join(ROOT, 'data', 'exskills.json')
+    dest = os.path.join(ROOT, 'data', 'exskills.js')
+    data = json.load(open(src, encoding='utf-8'))
+    js   = 'window.ExSkillsData = ' + json.dumps(data, ensure_ascii=False, indent=2) + ';\n'
+    open(dest, 'w', encoding='utf-8').write(js)
+    print('ok')
+
 if __name__ == '__main__':
     print('Compiling...')
     run('pilots',  os.path.join(ROOT, 'data', 'pilots',  'compile.py'))
@@ -35,4 +53,6 @@ if __name__ == '__main__':
     run('weapons', os.path.join(ROOT, 'data', 'weapons', 'compile.py'))
     run('backpacks', os.path.join(ROOT, 'data', 'backpacks', 'compile.py'))
     compile_glossary()
+    compile_dispatch()
+    compile_exskills()
     print('Done.')
