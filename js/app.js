@@ -1,6 +1,10 @@
+var GLOBAL_VERSION = 2.1;
+
 $(function () {
   // Glossary data is pre-loaded via data/glossary.js; just init tooltips
   Glossary.init();
+
+  $('.global-version-badge').text('Global v' + GLOBAL_VERSION);
 
   // Mobile slide-out drawer
   var $drawer = $('#navDrawer');

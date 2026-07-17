@@ -1,7 +1,5 @@
 var Pages = window.Pages || {};
 
-var GLOBAL_VERSION = 2.1;
-
 var QUALITY_LABEL = { R: 'B-rank', SR: 'A-rank', SSR: 'S-rank' };
 var QUALITY_CLASS  = { R: 'rank-b',  SR: 'rank-a',  SSR: 'rank-s'  };
 var QUALITY_BG = {
