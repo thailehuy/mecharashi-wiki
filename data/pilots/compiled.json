@@ -23657,7 +23657,7 @@
           "icon": "Icon_skill_order_1129",
           "type": "SpecialAssault",
           "Ap": "3",
-          "describe": "Uses a Rocket Launcher to attack all targets within a <range type=1>1-tile cross-shaped</range> area, dealing <color=#F74848>0.25x</color> AoE DMG to all parts of targets hit. This attack always triggers <buf ID=4012502>[Structural Damage]</buf> <buf ID=900017>[Fixed DMG]</buf>. For each <color=#F74848>1</color> stack of <buf ID=4012502>[Structural Damage]</buf>, applies <color=#F74848>1</color> more instance of <buf ID=900017>[Fixed DMG]</buf>, up to <color=#F74848>1</color> times. Removes all <buf ID=4012502>[Structural Damage]</buf> stacks from the target after triggering."
+          "describe": "Uses a Rocket Launcher to attack all targets within a <range type=1>1-tile cross-shaped</range> area, dealing <color=#F74848>0.25x</color> AoE DMG to all parts of targets hit. This attack always triggers <buf ID=4012502>[Structural Damage]</buf> <buf ID=900017>[Fixed DMG]</buf>. For each <color=#F74848>1</color> stack of <buf ID=4012502>[Structural Damage]</buf>, applies <color=#F74848>1</color> more instance of <buf ID=900017>[Fixed DMG]</buf>, up to <color=#F74848>3</color> times. Removes all <buf ID=4012502>[Structural Damage]</buf> stacks from the target after triggering."
         }
       ]
     },
