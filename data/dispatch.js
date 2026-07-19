@@ -53,8 +53,8 @@ window.DispatchData = {
       "cnPatch": "2.1",
       "Arsenal": "Odysseus",
       "InnovativE": "Alicorn",
-      "GeekX": "Shadow Rabbit",
-      "Sparkplug": "Eye of Faith"
+      "GeekX": "Shadowrabbit",
+      "Sparkplug": "Eye Of Faith"
     },
     {
       "cnPatch": "2.3",
@@ -68,12 +68,12 @@ window.DispatchData = {
       "Arsenal": "Colossus",
       "InnovativE": "Prometheus",
       "GeekX": "Hasteraze",
-      "Sparkplug": "Snowy Owl"
+      "Sparkplug": "Snowyowl"
     },
     {
       "cnPatch": "3.0",
       "Arsenal": "Bawang",
-      "InnovativE": "Illusioner",
+      "InnovativE": "Illusion",
       "GeekX": "Nightglow",
       "Sparkplug": "Hector"
     },
@@ -82,7 +82,7 @@ window.DispatchData = {
       "Arsenal": "Benxiao",
       "InnovativE": "Viper",
       "GeekX": "Monarch",
-      "Sparkplug": "Nemesis"
+      "Sparkplug": "Erinys"
     }
   ]
 };

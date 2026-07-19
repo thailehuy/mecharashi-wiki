@@ -1235,6 +1235,10 @@ window.GlossaryData = {
     "1019500": {
       "name": "Hook",
       "effect": "Collective term for <skill activeSkill=1019501>[Hook - Grab]</skill> and <skill activeSkill=1019511>[Hook - Chase]</skill>."
+    },
+    "4012502": {
+      "name": "Structural Damage",
+      "effect": "When [Hardaway] actively attacks this unit with Rocket Launchers, Critical Hit chance increases by <color=#F74848>3%</color> for each <color=#F74848>1</color> stack, stacking up to <color=#F74848>10</color> times. If a critical hit occurs, causes this target to receive <buf ID=900017>[Fixed DMG]</buf> equal to <color=#F74848>0.05x</color> Rocket Launcher ATK for <color=#F74848>3</color> times after combat. This effect lasts for <color=#F74848>2</color> turns and can stack up to <color=#F74848>10</color> times."
     }
   },
   "skill": {
@@ -1716,6 +1720,20 @@ window.GlossaryData = {
       "CD": "0",
       "icon": "Icon_skill_order_1150",
       "effect": "Grapples to an ally or enemy target with hook and drags [Maat] to the target's side, ignoring unit collision on the path. Then triggers <buf ID=900004>[Re-ATK]</buf>, allowing movement of <color=#F74848>2</color> tiles before attacking."
+    },
+    "4012082": {
+      "name": "Weapon Override",
+      "Ap": "0",
+      "CD": "0",
+      "icon": "Icon_skill_order_1140",
+      "effect": "If the target actively uses a Weapon Skill this turn, inflicts <buf ID=1004021>[Weapon Inhibition]</buf> to the target, lasting for <color=#F74848>1</color> turn. Otherwise, inflicts <color=#F74848>2</color> stacks of <buf ID=4012502>[Structural Damage]</buf> to the target. This effect is removed after triggering."
+    },
+    "4012041": {
+      "name": "Command Override",
+      "Ap": "0",
+      "CD": "0",
+      "icon": "Icon_skill_order_1140",
+      "effect": "If the target actively uses a Command Skill this turn, inflicts <buf ID=1099903>[Command Block]</buf> to the target, lasting for <color=#F74848>1</color> turn. Otherwise, inflicts <color=#F74848>2</color> stacks of <buf ID=4012502>[Structural Damage]</buf> to the target. This effect is removed after triggering."
     }
   },
   "terrain": {

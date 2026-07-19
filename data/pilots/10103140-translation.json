@@ -1,16 +1,16 @@
 {
-  "PilotName": "哈达威",
-  "RealName": "维拉尔斯·哈达威",
+  "PilotName": "Hardaway",
+  "RealName": "Villars Hardaway",
   "Gender": "Male",
   "Profession": "Launcher",
   "Occupation": "Tactician",
   "Talent0_2Ability": {
-    "name": "全量演算",
-    "SpecificEffects": "使用火箭主动攻击后，对命中的目标立即施加<color=#F74848>1</color>层<buf ID=4012502>[析构]</buf>，可叠加<color=#F74848>10</color>层；火箭的负重降低<color=#F74848>130</color>"
+    "name": "Complete Calculation",
+    "SpecificEffects": "After actively attacking with Rocket Launchers, applies <color=#F74848>1</color> stack of <buf ID=4012502>[Structural Damage]</buf> to the target hit, up to <color=#F74848>10</color> stakcs. Rocket Launchers weight reduced by <color=#F74848>-130</color>."
   },
   "Talent3_5Ability": {
-    "name": "全量演算",
-    "SpecificEffects": "使用火箭主动攻击后，对命中的目标立即施加<color=#F74848>1</color>层<buf ID=4012502>[析构]</buf>，可叠加<color=#F74848>10</color>层；火箭的负重降低<color=#F74848>130</color>；\n<buf ID=4012502>[析构]</buf>最大层数<color=#F74848>+2</color>，使用火箭攻击携带<buf ID=4012502>[析构]</buf>的目标时，伤害提升<color=#F74848>20%</color>"
+    "name": "Complete Calculation",
+    "SpecificEffects": "After actively attacking with Rocket Launchers, applies <color=#F74848>1</color> stack of <buf ID=4012502>[Structural Damage]</buf> to the target hit, up to <color=#F74848>12</color> stakcs. Rocket Launchers weight reduced by <color=#F74848>-130</color>.\nWhen actively attacking targets carrying <buf ID=4012502>[Structural Damage]</buf>, DMG dealt increases by <color=#F74848>20%</color>."
   },
   "skills": {
     "400001": {
@@ -24,33 +24,33 @@
       "SpecificEffects": "At the end of the action, if no damage was dealt this turn, restore <color=#F74848>1</color> AP."
     },
     "401203": {
-      "name": "重载",
-      "describe": "使火箭的弹数完全回复，并获得<buf ID=7100403>[暴击率提升Ⅱ]</buf>，持续<color=#F74848>1</color>回合，然后可使用剩余移动力继续行动",
+      "name": "Overload",
+      "describe": "Fully reloads Rocket Launchers ammo and gains <buf ID=7100403>[Crit Rate UP II]</buf>, lasting for <color=#F74848>1</color> turn. Can continue to act with remaining movement.",
       "SpecificEffects": ""
     },
     "401204": {
-      "name": "覆写轰击",
-      "describe": "选择释放<skill activeSkill=4012041>[指令覆写]</skill>或<skill activeSkill=4012042>[火控覆写]</skill>",
+      "name": "System Override",
+      "describe": "Choose either <skill activeSkill=4012041>[Command Override]</skill> or <skill activeSkill=4012042>[Weapon Override]</skill> to use",
       "SpecificEffects": ""
     },
     "401205": {
-      "name": "即时解析",
+      "name": "Real-Time Analysis",
       "describe": "",
-      "SpecificEffects": "遭受主动攻击时，遭受伤害降低<color=#F74848>10%</color>，对攻击者施加<color=#F74848>1</color>层<buf ID=4012502>[析构]</buf>，每回合最多触发<color=#F74848>2</color>次"
+      "SpecificEffects": "When actively attacked, DMG taken reduces by <color=#F74848>10%</color>, applies <color=#F74848>1</color> stack of <buf ID=4012502>[Structural Damage]</buf> to the attacker. This effect can trigger <color=#F74848>2</color> times per turn."
     },
     "401206": {
-      "name": "崩解打击",
-      "describe": "消耗<color=#F74848>2</color>发弹药，使用火箭攻击所选<range type=1>5×5</range>格范围内的所有目标，对每个部位造成<color=#F74848>0.25</color>倍范围伤害，此次攻击暴击率提升<color=#F74848>25%</color>",
+      "name": "Disintegration Strike",
+      "describe": "Consumes <color=#F74848>2</color> Rocket Ammo, attacks all enemies within <range type=1>5x5</range> area, dealing <color=#F74848>0.25x</color> AoE DMG to all parts of the targets hit. Critical Hit chance increases by <color=#F74848>25%</color> for this attack.",
       "SpecificEffects": ""
     },
     "401207": {
-      "name": "连锁反应",
+      "name": "Chain Reaction",
       "describe": "",
-      "SpecificEffects": "任意敌机行动后，若携带<buf ID=4012502>[析构]</buf>，额外获得<color=#F74848>1</color>层<buf ID=4012502>[析构]</buf>"
+      "SpecificEffects": "After an enemy takes action, if they are carrying <buf ID=4012502>[Structural Damage]</buf>, applies <color=#F74848>1</color> additional stack of <buf ID=4012502>[Structural Damage]</buf> to that enemy."
     },
     "401208": {
-      "name": "歼灭信标",
-      "describe": "选择<range type=1>5×5</range>格范围地格标记为[标注打击位置]，使用后技能切换为<skill activeSkill=4012082>[终局轰鸣]</skill>，切换后当前回合无法使用；双肩均装备火箭时才可使用",
+      "name": "Annihilation Beacon",
+      "describe": "Marks a <range type=1>5×5</range> area as [Annihilation Zone]. Switches to <skill activeSkill=4012082>[Final Barrage]</skill> after use. This skill cannot be used again after switching in current turn. Can only be used with <color=#F74848>2</color> Rocket Launchers equipped.",
       "SpecificEffects": ""
     }
   },
@@ -104,8 +104,8 @@
       "SpecificEffects": "After triggering <buf ID=900004>[Re-ATK]</buf>, it no longer reduces final damage."
     },
     "401241": {
-      "name": "可控变量1",
-      "SpecificEffects": "携带<buf ID=4012502>[析构]</buf>的敌方单位被击毁时，将所有<buf ID=4012502>[析构]</buf>层数转移至周围<color=#F74848>3</color>格内耐久值最高的敌机"
+      "name": "Controlled Variable 1",
+      "SpecificEffects": "When an enemy carrying <buf ID=4012502>[Structural Damage]</buf> is destroyed, transfers all stacks of <buf ID=4012502>[Structural Damage]</buf> to another enemy with highest HP within <color=#F74848>3</color> adjacent tiles."
     },
     "600042": {
       "name": "AP Optimization 4",
@@ -116,17 +116,26 @@
       "SpecificEffects": "When destroying a target, additionally restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>2</color> times per turn."
     },
     "401244": {
-      "name": "可控变量2",
-      "SpecificEffects": "使用火箭攻击时伤害提升<color=#F74848>15%</color>，攻击大型单位时，伤害额外提升<color=#F74848>100%</color>"
+      "name": "Controlled Variable 2",
+      "SpecificEffects": "DMG dealt increases by <color=#F74848>15%</color> when actively attacking with Rocket Launchers. DMG dealt additionally increases by <color=#F74848>100%</color> when attacking Titans."
     },
     "401245": {
-      "name": "可控变量3",
-      "SpecificEffects": "携带<color=#F74848>5</color>层及以上<buf ID=4012502>[析构]</buf>敌机被击毁时，[哈达威]回复<color=#F74848>1</color>AP，每回合最多发动<color=#F74848>2</color>次"
+      "name": "Controlled Variable 3",
+      "SpecificEffects": "When an enemy carrying <color=#F74848>5</color> or more stacks <buf ID=4012502>[Structural Damage]</buf> is destroyed, recovers <color=#F74848>1</color> AP. This effect can trigger <color=#F74848>2</color> times per turn."
     },
     "401246": {
-      "name": "可控变量4",
-      "SpecificEffects": "<buf ID=4012502>[析构]</buf>触发<buf ID=900017>[固定伤害]</buf>时，本次火箭攻击每额外暴击<color=#F74848>1</color>次，<buf ID=900017>[固定伤害]</buf>额外增加<color=#F74848>1</color>次，最多增加<color=#F74848>3</color>次"
+      "name": "Controlled Variable 4",
+      "SpecificEffects": "When <buf ID=4012502>[Structural Damage]</buf> causes <buf ID=900017>[Fixed DMG]</buf>, for each <color=#F74848>1</color> critical hit scored by the Rocket Launcher attack, <buf ID=900017>[Fixed DMG]</buf> will deal <color=#F74848>1</color> additional instance of DMG, up to color=#F74848>3</color> additional instances."
     }
   },
-  "version": "1.0"
+  "hiddenSkills": [
+    {
+      "name": "Pulse Wave",
+      "icon": "Icon_skill_order_1129",
+      "type": "SpecialAssault",
+      "Ap": "3",
+      "describe": "Uses a Rocket Launcher to attack all targets within a <range type=1>1-tile cross-shaped</range> area, dealing <color=#F74848>0.25x</color> AoE DMG to all parts of targets hit. This attack always triggers <buf ID=4012502>[Structural Damage]</buf> <buf ID=900017>[Fixed DMG]</buf>. For each <color=#F74848>1</color> stack of <buf ID=4012502>[Structural Damage]</buf>, applies <color=#F74848>1</color> more instance of <buf ID=900017>[Fixed DMG]</buf>, up to <color=#F74848>1</color> times. Removes all <buf ID=4012502>[Structural Damage]</buf> stacks from the target after triggering."
+    }
+  ],
+  "version": "3.1"
 }
