@@ -1722,11 +1722,11 @@ window.GlossaryData = {
       "effect": "Grapples to an ally or enemy target with hook and drags [Maat] to the target's side, ignoring unit collision on the path. Then triggers <buf ID=900004>[Re-ATK]</buf>, allowing movement of <color=#F74848>2</color> tiles before attacking."
     },
     "4012082": {
-      "name": "Weapon Override",
-      "Ap": "0",
+      "name": "Final Barrage",
+      "Ap": "4",
       "CD": "0",
-      "icon": "Icon_skill_order_1140",
-      "effect": "If the target actively uses a Weapon Skill this turn, inflicts <buf ID=1004021>[Weapon Inhibition]</buf> to the target, lasting for <color=#F74848>1</color> turn. Otherwise, inflicts <color=#F74848>2</color> stacks of <buf ID=4012502>[Structural Damage]</buf> to the target. This effect is removed after triggering."
+      "icon": "Icon_skill_order_1147",
+      "effect": "Attacks all targets within [Annihilation Zone] with both Rocket Launchers, dealing <color=#F74848>2x0.2</color> AoE DMG. For each <color=#F74848>1</color> stack of <buf ID=4012502>[Structural Damage]</buf> the target carries, Final DMG dealt increases by <color=#F74848>15%</color>. Removes all [Structural Damage] stacks on targets hit after combat. Switches to <skill activeSkill=401208>[Annihilation Beacon]</skill> after use. This skill cannot be used again after switching in current turn. If not used by the end of turn, removes [Annihilation Zone] and switchs back to <skill activeSkill=401208>[Annihilation Beacon]</skill>."
     },
     "4012041": {
       "name": "Command Override",
@@ -1734,6 +1734,13 @@ window.GlossaryData = {
       "CD": "0",
       "icon": "Icon_skill_order_1140",
       "effect": "If the target actively uses a Command Skill this turn, inflicts <buf ID=1099903>[Command Block]</buf> to the target, lasting for <color=#F74848>1</color> turn. Otherwise, inflicts <color=#F74848>2</color> stacks of <buf ID=4012502>[Structural Damage]</buf> to the target. This effect is removed after triggering."
+    },
+    "4012042": {
+      "name": "Weapon Override",
+      "Ap": "0",
+      "CD": "0",
+      "icon": "Icon_skill_order_1140",
+      "effect": "If the target actively uses a Weapon Skill this turn, inflicts <buf ID=1004021>[Weapon Inhibition]</buf> to the target, lasting for <color=#F74848>1</color> turn. Otherwise, inflicts <color=#F74848>2</color> stacks of <buf ID=4012502>[Structural Damage]</buf> to the target. This effect is removed after triggering."
     }
   },
   "terrain": {
