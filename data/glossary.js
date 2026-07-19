@@ -1238,7 +1238,7 @@ window.GlossaryData = {
     },
     "4012502": {
       "name": "Structural Damage",
-      "effect": "When [Hardaway] actively attacks this unit with Rocket Launchers, Critical Hit chance increases by <color=#F74848>3%</color> for each <color=#F74848>1</color> stack, stacking up to <color=#F74848>10</color> times. If a critical hit occurs, causes this target to receive <buf ID=900017>[Fixed DMG]</buf> equal to <color=#F74848>0.05x</color> Rocket Launcher ATK for <color=#F74848>3</color> times after combat. This effect lasts for <color=#F74848>2</color> turns and can stack up to <color=#F74848>10</color> times."
+      "effect": "When [Hardaway] actively attacks this unit with Rocket Launchers, Critical Hit chance increases by <color=#F74848>3%</color> for each <color=#F74848>1</color> stack, stacking up to <color=#F74848>10</color> times. If a critical hit occurs, causes this target to receive <buf ID=900017>[Fixed DMG]</buf> equal to <color=#F74848>0.05x</color> Rocket Launcher ATK for <color=#F74848>3</color> times after combat. The <buf ID=900017>[Fixed DMG]</buf> effect does not stack. This effect lasts for <color=#F74848>2</color> turns and can stack up to <color=#F74848>10</color> times."
     }
   },
   "skill": {

@@ -8,7 +8,7 @@
     },
     "30528": {
       "name": "Remote Strike Mod",
-      "SpecificEffects": "When actively attacking, if the target is <color=#F74848>5</color> or more tiles away, DMG dealt increases by <color=#F74848>24%</color>. When actively attacking, if carrying <color=#F74848>4</color> buffs or more, reloads <color=#F74848>1</color> tactical ammo and applies <buf ID=7101506>[Movement Inhibition I]</buf> to the target after combat, lasting for <color=#F74848>2</color> turns. This effect can trigger <color=#F74848>1</color> time per turn."
+      "SpecificEffects": "When actively attacking, if the target is <color=#F74848>5</color> or more tiles away, DMG dealt increases by <color=#F74848>24%</color>. When actively attacking, if inflicted a cumulative of <color=#F74848>4</color> debuffs or more, reloads <color=#F74848>1</color> tactical ammo and applies <buf ID=7101506>[Movement Inhibition I]</buf> to the target after combat, lasting for <color=#F74848>2</color> turns. This effect can trigger <color=#F74848>1</color> time per turn and stops accumulating after triggering."
     },
     "20614": {
       "name": "Eclipse Fire Core",

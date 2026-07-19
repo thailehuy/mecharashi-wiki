@@ -22585,7 +22585,7 @@
       "PilotName": "Hardaway",
       "PortraitHeroIcon": "Pilot_10103140A_half",
       "AvatarHeroIcon": "Pilot_10103140A_Raw",
-      "RealName": "Villars Hardaway",
+      "RealName": "Vilas Hardaway",
       "Gender": "Male",
       "Profession": "Launcher",
       "Occupation": "Tactician",
@@ -22593,7 +22593,7 @@
       "Talent0_2Ability": {
         "ID": "401250",
         "name": "Complete Calculation",
-        "SpecificEffects": "After actively attacking with Rocket Launchers, applies <color=#F74848>1</color> stack of <buf ID=4012502>[Structural Damage]</buf> to the target hit, up to <color=#F74848>10</color> stakcs. Rocket Launchers weight reduced by <color=#F74848>-130</color>.",
+        "SpecificEffects": "After actively attacking with Rocket Launchers, applies <color=#F74848>1</color> stack of <buf ID=4012502>[Structural Damage]</buf> to the target hit, up to <color=#F74848>10</color> stacks. Rocket Launchers weight reduced by <color=#F74848>-130</color>.",
         "BufCarried": "4012501/4012506/4012508",
         "SkillIcon": "Icon_skill_talent_5158",
         "icon": "Icon_skill_talent_5158",
@@ -22603,7 +22603,7 @@
       "Talent3_5Ability": {
         "ID": "401251",
         "name": "Complete Calculation",
-        "SpecificEffects": "After actively attacking with Rocket Launchers, applies <color=#F74848>1</color> stack of <buf ID=4012502>[Structural Damage]</buf> to the target hit, up to <color=#F74848>12</color> stakcs. Rocket Launchers weight reduced by <color=#F74848>-130</color>.\nWhen actively attacking targets carrying <buf ID=4012502>[Structural Damage]</buf>, DMG dealt increases by <color=#F74848>20%</color>.",
+        "SpecificEffects": "After actively attacking with Rocket Launchers, applies <color=#F74848>1</color> stack of <buf ID=4012502>[Structural Damage]</buf> to the target hit, up to <color=#F74848>12</color> stacks. Rocket Launchers weight reduced by <color=#F74848>-130</color>.\nWhen actively attacking targets carrying <buf ID=4012502>[Structural Damage]</buf>, DMG dealt increases by <color=#F74848>20%</color>.",
         "BufCarried": "4012501/4012506/4012508/4012511/4012512/4012515/4012517",
         "SkillIcon": "Icon_skill_talent_5158",
         "icon": "Icon_skill_talent_5158",
@@ -23274,7 +23274,7 @@
             "ID": "401204",
             "remarks": "\u54c8\u8fbe\u5a01-\u4eff\u751f\u7535\u8111",
             "name": "System Override",
-            "describe": "Choose either <skill activeSkill=4012041>[Command Override]</skill> or <skill activeSkill=4012042>[Weapon Override]</skill> to use",
+            "describe": "Uses Rocket Launcher to attack all targets within a <range type=1>3x3</range> area, dealing <color=#F74848>0.3x</color> AoE DMG to all parts of the targets hit. After combat, inflicts <skill activeSkill=4012041>[Command Override]</skill> or <skill activeSkill=4012042>[Weapon Override]</skill> on targets hit.",
             "type": "SpecialAssault",
             "CD": "1",
             "Ap": "3",
@@ -23328,7 +23328,7 @@
             "ID": "401206",
             "remarks": "\u54c8\u8fbe\u5a01-\u4eff\u751f\u7535\u8111",
             "name": "Disintegration Strike",
-            "describe": "Consumes <color=#F74848>2</color> Rocket Ammo, attacks all enemies within <range type=1>5x5</range> area, dealing <color=#F74848>0.25x</color> AoE DMG to all parts of the targets hit. Critical Hit chance increases by <color=#F74848>25%</color> for this attack.",
+            "describe": "Consumes <color=#F74848>2</color> Rocket Ammo, attacks all enemies within a <range type=1>5x5</range> area, dealing <color=#F74848>0.25x</color> AoE DMG to all parts of the targets hit. Critical Hit chance increases by <color=#F74848>25%</color> for this attack.",
             "type": "SpecialAssault",
             "Ap": "4",
             "matchingWeaponType": "\u706b\u7bad",
@@ -23657,7 +23657,7 @@
           "icon": "Icon_skill_order_1129",
           "type": "SpecialAssault",
           "Ap": "3",
-          "describe": "Uses a Rocket Launcher to attack all targets within a <range type=1>1-tile cross-shaped</range> area, dealing <color=#F74848>0.25x</color> AoE DMG to all parts of targets hit. This attack always triggers <buf ID=4012502>[Structural Damage]</buf> <buf ID=900017>[Fixed DMG]</buf>. For each <color=#F74848>1</color> stack of <buf ID=4012502>[Structural Damage]</buf>, applies <color=#F74848>1</color> more instance of <buf ID=900017>[Fixed DMG]</buf>, up to <color=#F74848>3</color> times. Removes all <buf ID=4012502>[Structural Damage]</buf> stacks from the target after triggering."
+          "describe": "Uses a Rocket Launcher to attack all targets within a <range type=1>1-tile cross-shaped</range> area, dealing <color=#F74848>0.25x</color> AoE DMG to all parts of targets hit. This attack always triggers <buf ID=4012502>[Structural Damage]</buf>'s <buf ID=900017>[Fixed DMG]</buf>. For each <color=#F74848>1</color> stack of <buf ID=4012502>[Structural Damage]</buf>, triggers <color=#F74848>1</color> more instance of <buf ID=900017>[Fixed DMG]</buf>, up to <color=#F74848>3</color> instances. Removes all <buf ID=4012502>[Structural Damage]</buf> stacks from the target after triggering."
         }
       ]
     },

@@ -1,16 +1,16 @@
 {
   "PilotName": "Hardaway",
-  "RealName": "Villars Hardaway",
+  "RealName": "Vilas Hardaway",
   "Gender": "Male",
   "Profession": "Launcher",
   "Occupation": "Tactician",
   "Talent0_2Ability": {
     "name": "Complete Calculation",
-    "SpecificEffects": "After actively attacking with Rocket Launchers, applies <color=#F74848>1</color> stack of <buf ID=4012502>[Structural Damage]</buf> to the target hit, up to <color=#F74848>10</color> stakcs. Rocket Launchers weight reduced by <color=#F74848>-130</color>."
+    "SpecificEffects": "After actively attacking with Rocket Launchers, applies <color=#F74848>1</color> stack of <buf ID=4012502>[Structural Damage]</buf> to the target hit, up to <color=#F74848>10</color> stacks. Rocket Launchers weight reduced by <color=#F74848>-130</color>."
   },
   "Talent3_5Ability": {
     "name": "Complete Calculation",
-    "SpecificEffects": "After actively attacking with Rocket Launchers, applies <color=#F74848>1</color> stack of <buf ID=4012502>[Structural Damage]</buf> to the target hit, up to <color=#F74848>12</color> stakcs. Rocket Launchers weight reduced by <color=#F74848>-130</color>.\nWhen actively attacking targets carrying <buf ID=4012502>[Structural Damage]</buf>, DMG dealt increases by <color=#F74848>20%</color>."
+    "SpecificEffects": "After actively attacking with Rocket Launchers, applies <color=#F74848>1</color> stack of <buf ID=4012502>[Structural Damage]</buf> to the target hit, up to <color=#F74848>12</color> stacks. Rocket Launchers weight reduced by <color=#F74848>-130</color>.\nWhen actively attacking targets carrying <buf ID=4012502>[Structural Damage]</buf>, DMG dealt increases by <color=#F74848>20%</color>."
   },
   "skills": {
     "400001": {
@@ -30,7 +30,7 @@
     },
     "401204": {
       "name": "System Override",
-      "describe": "Choose either <skill activeSkill=4012041>[Command Override]</skill> or <skill activeSkill=4012042>[Weapon Override]</skill> to use",
+      "describe": "Uses Rocket Launcher to attack all targets within a <range type=1>3x3</range> area, dealing <color=#F74848>0.3x</color> AoE DMG to all parts of the targets hit. After combat, inflicts <skill activeSkill=4012041>[Command Override]</skill> or <skill activeSkill=4012042>[Weapon Override]</skill> on targets hit.",
       "SpecificEffects": ""
     },
     "401205": {
@@ -40,7 +40,7 @@
     },
     "401206": {
       "name": "Disintegration Strike",
-      "describe": "Consumes <color=#F74848>2</color> Rocket Ammo, attacks all enemies within <range type=1>5x5</range> area, dealing <color=#F74848>0.25x</color> AoE DMG to all parts of the targets hit. Critical Hit chance increases by <color=#F74848>25%</color> for this attack.",
+      "describe": "Consumes <color=#F74848>2</color> Rocket Ammo, attacks all enemies within a <range type=1>5x5</range> area, dealing <color=#F74848>0.25x</color> AoE DMG to all parts of the targets hit. Critical Hit chance increases by <color=#F74848>25%</color> for this attack.",
       "SpecificEffects": ""
     },
     "401207": {
@@ -134,7 +134,7 @@
       "icon": "Icon_skill_order_1129",
       "type": "SpecialAssault",
       "Ap": "3",
-      "describe": "Uses a Rocket Launcher to attack all targets within a <range type=1>1-tile cross-shaped</range> area, dealing <color=#F74848>0.25x</color> AoE DMG to all parts of targets hit. This attack always triggers <buf ID=4012502>[Structural Damage]</buf> <buf ID=900017>[Fixed DMG]</buf>. For each <color=#F74848>1</color> stack of <buf ID=4012502>[Structural Damage]</buf>, applies <color=#F74848>1</color> more instance of <buf ID=900017>[Fixed DMG]</buf>, up to <color=#F74848>3</color> times. Removes all <buf ID=4012502>[Structural Damage]</buf> stacks from the target after triggering."
+      "describe": "Uses a Rocket Launcher to attack all targets within a <range type=1>1-tile cross-shaped</range> area, dealing <color=#F74848>0.25x</color> AoE DMG to all parts of targets hit. This attack always triggers <buf ID=4012502>[Structural Damage]</buf>'s <buf ID=900017>[Fixed DMG]</buf>. For each <color=#F74848>1</color> stack of <buf ID=4012502>[Structural Damage]</buf>, triggers <color=#F74848>1</color> more instance of <buf ID=900017>[Fixed DMG]</buf>, up to <color=#F74848>3</color> instances. Removes all <buf ID=4012502>[Structural Damage]</buf> stacks from the target after triggering."
     }
   ],
   "version": "3.1"
