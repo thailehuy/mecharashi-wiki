@@ -80,7 +80,7 @@ window.DispatchData = {
     {
       "cnPatch": "3.2",
       "Arsenal": "Benxiao",
-      "InnovativE": "Viper",
+      "InnovativE": "Flourite",
       "GeekX": "Monarch",
       "Sparkplug": "Erinys"
     }
