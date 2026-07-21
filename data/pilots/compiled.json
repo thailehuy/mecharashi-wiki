@@ -48508,15 +48508,15 @@
       "PilotName": "Tang",
       "PortraitHeroIcon": "Pilot_10103166A_half",
       "AvatarHeroIcon": "Pilot_10103166A_Raw",
-      "RealName": "Tang Xiao Kui",
+      "RealName": "Tang Xiaokui",
       "Gender": "Female",
       "Profession": "Mechanic",
       "Occupation": "Machinist",
       "quality": "SSR",
       "Talent0_2Ability": {
         "ID": "501050",
-        "name": "\u5343\u673a\u73b2\u73d1",
-        "SpecificEffects": "\u884c\u52a8\u5f00\u59cb\u6216\u53cb\u65b9\u5355\u4f4d\u4f7f\u7528<color=#F74848>4</color>AP\u53ca\u4ee5\u4e0a\u6280\u80fd\u65f6\uff0c\u83b7\u5f97<color=#F74848>1</color>\u5c42<buf ID=5010502>[\u7b79\u8c0b]</buf>\uff0c\u53ef\u53e0\u52a0<color=#F74848>5</color>\u5c42\uff1b\u884c\u52a8\u7ed3\u675f\u65f6\uff0c\u53ef\u4ee5\u53d1\u52a8<skill activeSkill=5010501>[\u7b79\u8c0b-\u4fee\u6574]</skill><skill activeSkill=5010502>[\u7b79\u8c0b-\u97ad\u7b56]</skill><skill activeSkill=5010503>[\u7b79\u8c0b-\u6536\u4e70]</skill>\u4e4b\u4e00\uff1b\u6bcf\u6d88\u8017<color=#F74848>1</color>\u5c42<buf ID=5010502>[\u7b79\u8c0b]</buf>\uff0c\u81ea\u8eab\u83b7\u5f97<color=#F74848>1</color>\u5c42<buf ID=5010506>[\u7cbe\u660e]</buf>\uff0c\u53ef\u53e0\u52a0<color=#F74848>15</color>\u5c42",
+        "name": "Thousand Schemes",
+        "SpecificEffects": "At the start of action or when an ally uses a skill with <color=#F74848>4</color> AP cost or more, gains <color=#F74848>1</color> stack of <buf ID=5010502>[Stratagem]</buf>, up to <color=#F74848>5</color> stacks. At the end of action, can activate one of <skill activeSkill=5010501>[Stratagem - Respite]</skill>, <skill activeSkill=5010502>[Stratagem - Encouragement]</skill> or <skill activeSkill=5010503>[Stratagem - Bribery]</skill>. For each <color=#F74848>1</color> stack of <buf ID=5010502>[Stratagem]</buf> consumed, gains <color=#F74848>1</color> stack of <buf ID=5010506>[Shrewdness]</buf>, up to <color=#F74848>15</color> stacks.",
         "BufCarried": "5010501/5010503/5010504/5010507/5010508",
         "SkillIcon": "Icon_skill_talent_5162",
         "icon": "Icon_skill_talent_5162",
@@ -48525,8 +48525,8 @@
       },
       "Talent3_5Ability": {
         "ID": "501051",
-        "name": "\u5343\u673a\u73b2\u73d1",
-        "SpecificEffects": "\u884c\u52a8\u5f00\u59cb\u6216\u53cb\u65b9\u5355\u4f4d\u4f7f\u7528<color=#F74848>4</color>AP\u53ca\u4ee5\u4e0a\u6280\u80fd\u65f6\uff0c\u83b7\u5f97<color=#F74848>1</color>\u5c42<buf ID=5010502>[\u7b79\u8c0b]</buf>\uff0c\u53ef\u53e0\u52a0<color=#F74848>5</color>\u5c42\uff1b\u884c\u52a8\u7ed3\u675f\u65f6\uff0c\u53ef\u4ee5\u53d1\u52a8<skill activeSkill=5010501>[\u7b79\u8c0b-\u4fee\u6574]</skill><skill activeSkill=5010502>[\u7b79\u8c0b-\u97ad\u7b56]</skill><skill activeSkill=5010503>[\u7b79\u8c0b-\u6536\u4e70]</skill>\u4e4b\u4e00\uff1b\u6bcf\u6d88\u8017<color=#F74848>1</color>\u5c42<buf ID=5010502>[\u7b79\u8c0b]</buf>\uff0c\u81ea\u8eab\u83b7\u5f97<color=#F74848>1</color>\u5c42<buf ID=5010506>[\u7cbe\u660e]</buf>\uff0c\u53ef\u53e0\u52a0<color=#F74848>15</color>\u5c42\uff1b\n\u6700\u5927\u8010\u4e45\u503c\u63d0\u5347<color=#F74848>10%</color>\uff1b\u51fa\u51fb\u65f6\uff0c\u83b7\u5f97<color=#F74848>2</color>\u5c42<buf ID=5010502>[\u7b79\u8c0b]</buf>\u548c<color=#F74848>5</color>\u5c42<buf ID=5010506>[\u7cbe\u660e]</buf>",
+        "name": "Thousand Schemes",
+        "SpecificEffects": "At the start of action or when an ally uses a skill with <color=#F74848>4</color> AP cost or more, gains <color=#F74848>1</color> stack of <buf ID=5010502>[Stratagem]</buf>, up to <color=#F74848>5</color> stacks. At the end of action, can activate one of <skill activeSkill=5010501>[Stratagem - Respite]</skill>, <skill activeSkill=5010502>[Stratagem - Encouragement]</skill> or <skill activeSkill=5010503>[Stratagem - Bribery]</skill>. For each <color=#F74848>1</color> stack of <buf ID=5010502>[Stratagem]</buf> consumed, gains <color=#F74848>1</color> stack of <buf ID=5010506>[Shrewdness]</buf>, up to <color=#F74848>15</color> stacks.\nAll parts maximum HP increase by <color=#F74848>10%</color>. After actively attacking, gains <color=#F74848>2</color> stacks of <buf ID=5010502>[Stratagem]</buf> and <color=#F74848>5</color> stacks of <buf ID=5010506>[Shrewdness]</buf>.",
         "BufCarried": "5010501/5010503/5010504/5010507/5010508/5010511/5010512/5010513",
         "SkillIcon": "Icon_skill_talent_5162",
         "icon": "Icon_skill_talent_5162",
@@ -48693,8 +48693,8 @@
                 "type": 3,
                 "PassiveSkill": {
                   "ID": "501031",
-                  "name": "\u540c\u9891\u6574\u59071",
-                  "SpecificEffects": "\u4e3b\u52a8\u653b\u51fb\u540e\uff0c\u4e3a\u81ea\u8eab\u548c\u5468\u56f4<color=#F74848>3</color>\u683c\u5185\u8010\u4e45\u503c\u767e\u5206\u6bd4\u6700\u4f4e\u7684<color=#F74848>1</color>\u540d\u53cb\u519b\u6062\u590d\u5b8c\u597d\u90e8\u4f4d\u7684\u8010\u4e45\u503c\uff0c\u4fee\u7406\u91cf\u4e3a[\u5510\u5c0f\u8475]\u8eaf\u5e72\u6700\u5927\u8010\u4e45\u503c\u7684<color=#F74848>3.5%</color>\uff0c\u6bcf\u56de\u5408\u6700\u591a\u53d1\u52a8<color=#F74848>5</color>\u6b21",
+                  "name": "Synchronous Preparation 1",
+                  "SpecificEffects": "After actively attacking, restores HP to <color=#F74848>1</color> ally within <color=#F74848>3</color> adjacent tiles equal to <color=#F74848>3.5%</color> of [Tang]'s body part. This effect can trigger <color=#F74848>5</color> times per turn.",
                   "BufCarried": "5010313",
                   "SkillIcon": "Icon_skill_passive_3136",
                   "icon": "Icon_skill_passive_3136",
@@ -48749,8 +48749,8 @@
                 "type": 3,
                 "PassiveSkill": {
                   "ID": "501034",
-                  "name": "\u540c\u9891\u6574\u59072",
-                  "SpecificEffects": "<skill passiveSkill=501031>[\u540c\u9891\u6574\u59071]</skill>\u4f1a\u5728\u5468\u56f4<color=#F74848>4</color>\u683c\u8303\u56f4\u9009\u62e9\u76ee\u6807",
+                  "name": "Synchronous Preparation 2",
+                  "SpecificEffects": "<skill passiveSkill=501031>[Synchronous Preparation 1]</skill> range increases to <color=#F74848>4</color> adjacent tiles.",
                   "BufCarried": "5010341",
                   "SkillIcon": "Icon_skill_passive_3136",
                   "icon": "Icon_skill_passive_3136",
@@ -48768,8 +48768,8 @@
                 "type": 3,
                 "PassiveSkill": {
                   "ID": "501035",
-                  "name": "\u540c\u9891\u6574\u59073",
-                  "SpecificEffects": "<skill passiveSkill=501031>[\u540c\u9891\u6574\u59071]</skill>\u7684\u4fee\u7406\u91cf\u63d0\u5347\u81f3<color=#F74848>6%</color>",
+                  "name": "Synchronous Preparation 3",
+                  "SpecificEffects": "<skill passiveSkill=501031>[Synchronous Preparation 1]</skill> Repair AMT increases to <color=#F74848>6%</color>.",
                   "BufCarried": "5010351",
                   "SkillIcon": "Icon_skill_passive_3136",
                   "icon": "Icon_skill_passive_3136",
@@ -48787,8 +48787,8 @@
                 "type": 3,
                 "PassiveSkill": {
                   "ID": "501036",
-                  "name": "\u540c\u9891\u6574\u59074",
-                  "SpecificEffects": "<skill passiveSkill=501031>[\u540c\u9891\u6574\u59071]</skill>\u7684\u4fee\u7406\u76ee\u6807\u6570\u91cf<color=#F74848>+1</color>",
+                  "name": "Synchronous Preparation 4",
+                  "SpecificEffects": "The number of target selection of <skill passiveSkill=501031>[Synchronous Preparation 1]</skill> increases by <color=#F74848>+1</color>.",
                   "BufCarried": "5010361",
                   "SkillIcon": "Icon_skill_passive_3136",
                   "icon": "Icon_skill_passive_3136",
@@ -48820,8 +48820,8 @@
                 "type": 3,
                 "PassiveSkill": {
                   "ID": "501041",
-                  "name": "\u5947\u6b63\u76f8\u751f1",
-                  "SpecificEffects": "\u653b\u51fb\u65f6\uff0c\u82e5\u51fb\u7834\u654c\u673a\u90e8\u4f4d\uff0c\u83b7\u5f97<color=#F74848>1</color>\u5c42<buf ID=5010506>[\u7cbe\u660e]</buf>\uff0c\u6bcf\u56de\u5408\u6700\u591a\u53d1\u52a8<color=#F74848>3</color>\u6b21",
+                  "name": "Mutual Benefits 1",
+                  "SpecificEffects": "When actively attacking, if an enemy part is destroyed, gains <color=#F74848>1</color> stack of <buf ID=5010506>[Shrewdness]</buf>. This effect can trigger <color=#F74848>3</color> times per turn.",
                   "BufCarried": "5010411",
                   "SkillIcon": "Icon_skill_passive_5296",
                   "icon": "Icon_skill_passive_5296",
@@ -48876,8 +48876,8 @@
                 "type": 3,
                 "PassiveSkill": {
                   "ID": "501044",
-                  "name": "\u5947\u6b63\u76f8\u751f2",
-                  "SpecificEffects": "<buf ID=5010506>[\u7cbe\u660e]</buf>\u5c42\u6570\u5927\u4e8e\u7b49\u4e8e<color=#F74848>5</color>\u65f6\uff0c\u66b4\u51fb\u7387\u548c\u547d\u4e2d\u7387\u63d0\u5347<color=#F74848>15%</color>",
+                  "name": "Mutual Benefits 2",
+                  "SpecificEffects": "When carrying <color=#F74848>5</color> or more stacks of <buf ID=5010506>[Shrewdness]</buf>, Hit Rate and Critical Hit chance increase by <color=#F74848>15%</color>.",
                   "BufCarried": "5010441",
                   "SkillIcon": "Icon_skill_passive_5296",
                   "icon": "Icon_skill_passive_5296",
@@ -48895,8 +48895,8 @@
                 "type": 3,
                 "PassiveSkill": {
                   "ID": "501045",
-                  "name": "\u5947\u6b63\u76f8\u751f3",
-                  "SpecificEffects": "\u4e3b\u52a8\u653b\u51fb\u5bf9\u6218\u65f6\uff0c\u82e5\u76ee\u6807\u4f4d\u4e8e\u6211\u65b9<terrian ID=4003081 />\uff0c\u653b\u51fb\u540e\u83b7\u5f97<color=#F74848>1</color>AP\uff0c\u6bcf\u56de\u5408\u6700\u591a\u53d1\u52a8<color=#F74848>2</color>\u6b21",
+                  "name": "Mutual Benefits 3",
+                  "SpecificEffects": "When initiating combat, if the target is on <terrian ID=4003081 />, gains <color=#F74848>1</color> AP after combat. This effect can trigger <color=#F74848>2</color> times per turn.",
                   "BufCarried": "5010451",
                   "SkillIcon": "Icon_skill_passive_5296",
                   "icon": "Icon_skill_passive_5296",
@@ -48914,8 +48914,8 @@
                 "type": 3,
                 "PassiveSkill": {
                   "ID": "501046",
-                  "name": "\u5947\u6b63\u76f8\u751f4",
-                  "SpecificEffects": "\u6bcf<color=#F74848>5</color>\u5c42<buf ID=5010506>[\u7cbe\u660e]</buf>\u4f7f\u55b7\u706b\u5668\u5b50\u5f39\u6570<color=#F74848>+1</color>",
+                  "name": "Mutual Benefits 4",
+                  "SpecificEffects": "For each <color=#F74848>5</color> stacks of <buf ID=5010506>[Shrewdness]</buf>, increases Flamethrower bullet count by <color=#F74848>+1</color>.",
                   "BufCarried": "5010461/5010462/5010463",
                   "SkillIcon": "Icon_skill_passive_5296",
                   "icon": "Icon_skill_passive_5296",
@@ -49144,8 +49144,8 @@
           "weight": 2972,
           "skill": {
             "ID": "501002",
-            "name": "\u672a\u96e8\u7ef8\u7f2a",
-            "SpecificEffects": "\u884c\u52a8\u7ed3\u675f\u65f6\uff0c\u82e5<buf ID=5010502>[\u7b79\u8c0b]</buf>\u5c42\u6570\u5c0f\u4e8e\u7b49\u4e8e<color=#F74848>3</color>\uff0c\u83b7\u5f97<color=#F74848>1</color>\u5c42<buf ID=5010502>[\u7b79\u8c0b]</buf>",
+            "name": "Foresight",
+            "SpecificEffects": "At the end of action, if <buf ID=5010502>[Stratagem]</buf> stacks are <color=#F74848>3</color> or less, gains <color=#F74848>1</color> stack of <buf ID=5010502>[Stratagem]</buf>.",
             "BufCarried": "5010021",
             "SkillIcon": "Icon_skill_passive_5208",
             "icon": "Icon_skill_passive_5208",
@@ -49170,8 +49170,8 @@
           "skill": {
             "ID": "501003",
             "remarks": "\u5510\u5c0f\u8475-\u4eff\u751f\u7535\u8111",
-            "name": "\u56e0\u52bf\u5229\u5bfc",
-            "describe": "\u9009\u62e9\u91ca\u653e<color=#F74848>1</color>\u6b21<skill activeSkill=5010031>[\u7b79\u8c0b-\u6295\u8d44]</skill>\u6216<skill activeSkill=5010032>[\u7b79\u8c0b-\u9884\u652f]</skill>\uff0c\u7136\u540e\u53ef\u4ee5\u4f7f\u7528\u5269\u4f59\u79fb\u52a8\u529b\u7ee7\u7eed\u884c\u52a8",
+            "name": "Situation Awareness",
+            "describe": "Chooses <skill activeSkill=5010031>[Stratagem - Investment]</skill> or <skill activeSkill=5010032>[Stratagem - Prepayment]</skill> to use, then continue to act with remaining movement.",
             "type": "Order",
             "CD": "6",
             "Ap": "2",
@@ -49198,8 +49198,8 @@
           "skill": {
             "ID": "501004",
             "remarks": "\u5510\u5c0f\u8475-\u4eff\u751f\u7535\u8111",
-            "name": "\u711a\u9999\u5f15\u7130",
-            "describe": "\u4f7f\u7528\u55b7\u706b\u5668\u653b\u51fb\u4e3b\u76ee\u6807\uff0c\u9020\u6210<color=#F74848>1.4</color>\u500d\u4f24\u5bb3\uff0c\u82e5\u4e3b\u76ee\u6807\u4f4d\u4e8e\u53cb\u65b9<terrian ID=4003081 />\u4e0a\uff0c\u5bf9\u76ee\u6807\u6240\u6709\u90e8\u4f4d\u9020\u6210\u55b7\u706b\u5668\u653b\u51fb\u529b<color=#F74848>0.15</color>\u500d\u7684<buf ID=900017>[\u56fa\u5b9a\u4f24\u5bb3]</buf>\uff1b\u53ef\u4ee5\u53d1\u52a8<buf ID=5010468>[\u7b79\u8c0b\u503e\u6ce8]</buf>\uff0c\u4f7f<buf ID=900017>[\u56fa\u5b9a\u4f24\u5bb3]</buf>\u7ffb\u500d",
+            "name": "Burning Incense",
+            "describe": "Uses Flamethrower to attack a target, dealing <color=#F74848>1.4x</color> DMG. If the target is on <terrian ID=4003081 />, deals <buf ID=900017>[Fixed DMG]</buf> equal to <color=#F74848>0.15x</color> Flamethrower ATK to all parts of the target. Can activate <buf ID=5010468>[Stratagem Infusion]</buf> to double the <buf ID=900017>[Fixed DMG]</buf> effect.",
             "type": "EquipmentSkill",
             "Ap": "4",
             "matchingWeaponType": "\u55b7\u706b\u5668",
@@ -49225,8 +49225,8 @@
           "weight": 2975,
           "skill": {
             "ID": "501005",
-            "name": "\u98ce\u501f\u706b\u52bf",
-            "SpecificEffects": "\u53cb\u65b9\u5355\u4f4d\u4f4d\u4e8e\u53cb\u65b9<terrian ID=4003081 />\u65f6\uff0c\u53d7\u5230\u4fee\u7406\u91cf\u63d0\u5347<color=#F74848>10%</color>\uff0c\u4f24\u5bb3\u63d0\u5347<color=#F74848>10%</color>",
+            "name": "Environment Advantage",
+            "SpecificEffects": "For all allies located on <terrian ID=4003081 />, Repair AMT received increases by <color=#F74848>10%</color> and DMG dealt increases by <color=#F74848>10%</color>.",
             "BufCarried": "5010051",
             "SkillIcon": "Icon_skill_passive_3132",
             "icon": "Icon_skill_passive_3132",
@@ -49251,8 +49251,8 @@
           "skill": {
             "ID": "501006",
             "remarks": "\u5510\u5c0f\u8475-\u4eff\u751f\u7535\u8111",
-            "name": "\u8e48\u706b",
-            "describe": "\u8fdb\u5165<buf ID=5010061>[\u70c8\u7130\u884c\u8005]</buf>\u72b6\u6001\uff0c\u884c\u52a8\u7ed3\u675f\u65f6\u79fb\u9664\uff0c\u7136\u540e\u53ef\u4ee5\u4f7f\u7528\u5269\u4f59\u79fb\u52a8\u529b\u7ee7\u7eed\u884c\u52a8\uff1b\u53ef\u4ee5\u53d1\u52a8<buf ID=5010468>[\u7b79\u8c0b\u503e\u6ce8]</buf>\uff0c\u6280\u80fd\u53d1\u52a8\u540e\u83b7\u5f97<color=#F74848>2</color>AP",
+            "name": "Firewalker",
+            "describe": "Enters <buf ID=5010061>[Firewalk]</buf> state which is removed at the end of turn. Can continue to act with remaining movement. Can activate <buf ID=5010468>[Stratagem Infusion]</buf> to gain <color=#F74848>2</color> AP after activation.",
             "type": "Order",
             "CD": "3",
             "Ap": "0",
@@ -49278,13 +49278,14 @@
           "weight": 2977,
           "skill": {
             "ID": "501007",
-            "name": "\u96ea\u4e2d\u9001\u70ad",
-            "SpecificEffects": "\u5468\u56f4<color=#F74848>3</color>\u683c\u5185\u7684\u53cb\u519b\u906d\u53d7\u4e3b\u52a8\u653b\u51fb\u540e\uff0c\u82e5\u8eaf\u5e72\u8010\u4e45\u503c\u5c0f\u4e8e\u7b49\u4e8e<color=#F74848>50%</color>\uff0c\u6d88\u8017<color=#F74848>1</color>PP\u5bf9\u5176\u53d1\u52a8<color=#F74848>1</color>\u6b21<buf ID=5010468>[\u7b79\u8c0b\u503e\u6ce8]</buf>\u4e0b\u7684<skill activeSkill=5010501>[\u7b79\u8c0b-\u4fee\u6574]</skill>\uff0c\u6bcf\u6b21\u51fa\u51fb\u6700\u591a\u62e5\u6709<color=#F74848>2</color>PP",
+            "name": "Just In Time",
+            "SpecificEffects": "After an ally within <color=#F74848>3</color> adjacent tiles is actively attacked, if their body HP is <color=#F74848>50%</color> or less, consumes <color=#F74848>1</color> PP to activate <color=#F74848>1</color> <buf ID=5010468>[Stratagem Infusion]</buf> to trigger <skill activeSkill=5010501>[Stratagem - Respite]</skill> for that ally. Gains <color=#F74848>2</color> PP at the start of battle.",
             "BufCarried": "5010071/5010076",
             "SkillIcon": "Icon_skill_pp_1106",
             "icon": "Icon_skill_pp_1106",
             "Status": 1,
-            "weight": 3668
+            "weight": 3668,
+            "resource": "PP"
           }
         },
         {
@@ -49304,8 +49305,8 @@
           "skill": {
             "ID": "501008",
             "remarks": "\u5510\u5c0f\u8475-\u4eff\u751f\u7535\u8111",
-            "name": "\u706b\u6811\u94f6\u82b1",
-            "describe": "\u4f7f\u7528\u55b7\u706b\u5668\u653b\u51fb<range type=1>\u9762\u524d\u6247\u5f62</range>\u8303\u56f4\u5185\u6240\u6709\u76ee\u6807\uff0c\u9020\u6210<color=#F74848>0.8</color>\u500d\u8303\u56f4\u4f24\u5bb3\uff1b\u53ef\u4ee5\u53d1\u52a8<buf ID=5010468>[\u7b79\u8c0b\u503e\u6ce8]</buf>\uff0c\u5bf9\u653b\u51fb\u8303\u56f4\u5185\u6240\u6709\u5730\u683c\u65bd\u52a0<terrian ID=4003081 />\uff0c\u6301\u7eed<color=#F74848>2</color>\u56de\u5408",
+            "name": "Fireworks",
+            "describe": "Uses Flamethrower to attack all targets within a <range type=1>fan-shaped</range> area in front, dealing <color=#F74848>0.8x</color> AoE DMG. Can activate <buf ID=5010468>[Stratagem Infusion]</buf> to apply <terrian ID=4003081 /> to all tiles within attack range, lasting for <color=#F74848>2</color> turns.",
             "type": "SpecialAssault",
             "Ap": "4",
             "matchingWeaponType": "\u55b7\u706b\u5668",
@@ -49313,24 +49314,6 @@
             "icon": "Icon_skill_order_1152",
             "Status": 1,
             "weight": 520
-          }
-        },
-        {
-          "ID": "1010316636",
-          "UnitType": "0",
-          "TitleUnitDetails": "\u6838\u5fc3\u5355\u5143-8",
-          "UnitNumber": "3",
-          "LocationOnMap": "3",
-          "skill1": "501009",
-          "skill": {
-            "ID": "501009",
-            "name": "Regulated Repair",
-            "describe": "Restores HP equal to <color=#F74848>2.0</color>x Manipulator Repair AMT to all parts of a single ST. Can repair <color=#F74848>1</color> destroyed part.",
-            "type": "Order",
-            "Ap": "2",
-            "CD": "0",
-            "SkillIcon": "Icon_skill_order_3001",
-            "icon": "Icon_skill_order_3001"
           }
         },
         {
@@ -49591,8 +49574,18 @@
       ],
       "AllowedMechaDriveList_DriveAllowedList": "Light",
       "AlternateSkins": "",
-      "version": "1.0",
-      "enTranslation": false
+      "version": "3.1",
+      "enTranslation": true,
+      "hiddenSkills": [
+        {
+          "name": "Flame Strike",
+          "icon": "Icon_skill_main_1151",
+          "type": "EquipmentSkill",
+          "Ap": "3",
+          "CD": "0",
+          "describe": "Uses a Flamethrower to attack a target, dealing <color=#F74848>1.2x</color> DMG and <color=#F74848>20%</color> <buf ID=900139>[Fire DMG]</buf> to other targets along the path. After combat, applies <terrian ID=4003081 /> to all tiles along the attack path, lasting <color=#F74848>2</color> turns. Can activate <buf ID=5010468>[Stratagem Infusion]</buf> to increase <buf ID=900139>[Fire DMG]</buf> to <color=#F74848>40%</color>."
+        }
+      ]
     },
     {
       "ID": "10103131",

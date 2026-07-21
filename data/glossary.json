@@ -1246,27 +1246,27 @@
     },
     "50105021": {
       "name": "Rejuvenation",
-      "effect": "After combat, if any part is destroyed, repairs 1 destroyed part and restores HP to all parts equal to 20% max HP. This effect is removed after triggering."
+      "effect": "After combat, if any part is destroyed, repairs <color=#F74848>1</color> destroyed part and restores HP to all parts equal to <color=#F74848>20%</color> max HP. This effect is removed after triggering."
     },
     "5010468": {
       "name": "Stratagem Infusion",
-      "effect": "Consumes 1 additional stack of [Stratagem] to enhance this skill's effect."
+      "effect": "Consumes <color=#F74848>1</color> additional stack of <buf ID=5010502>[Stratagem]</buf> to enhance this skill's effect."
     },
     "50105023": {
       "name": "Ambition",
-      "effect": "When actively attacking, AP consumption increases by +1, skill multiplier increases by +0.1 (this effect is reduced to 1/4 for Rocket Launchers) and DMG dealt increases by 20%. This effect is removed after triggering."
+      "effect": "When actively attacking, AP consumption increases by <color=#F74848>+1</color>, skill multiplier increases by <color=#F74848>+0.1</color> (this effect is reduced to <color=#F74848>1/4</color> for Rocket Launchers) and DMG dealt increases by <color=#F74848>20%</color>. This effect is removed after triggering."
     },
     "50105024": {
       "name": "Ambition II",
-      "effect": "When actively attacking, AP consumption increases by +2, skill multiplier increases by +0.2 (this effect is reduced to 1/4 for Rocket Launchers) and DMG dealt increases by 30%. This effect is removed after triggering."
+      "effect": "When actively attacking, AP consumption increases by <color=#F74848>+2</color>, skill multiplier increases by <color=#F74848>+0.2</color> (this effect is reduced to <color=#F74848>1/4</color> for Rocket Launchers) and DMG dealt increases by <color=#F74848>30%</color>. This effect is removed after triggering."
     },
     "50105025": {
       "name": "Indulgence",
-      "effect": "Final DMG dealt reduces by -15%, lasting for 1 turn."
+      "effect": "Final DMG dealt reduces by <color=#F74848>-15%</color>, lasting for <color=#F74848>1</color> turn."
     },
     "50105026": {
       "name": "Indulgence II",
-      "effect": "Final DMG dealt reduces by -25%, lasting for 1 turn."
+      "effect": "Final DMG dealt reduces by <color=#F74848>-25%</color>, lasting for <color=#F74848>1</color> turn."
     },
     "5010506": {
       "name": "Shrewdness",
@@ -1274,7 +1274,7 @@
     },
     "5010061": {
       "name": "Firewalk",
-      "effect": "Final DMG taken reduces by 50%. After initiating combat, if this unit is on [Burning Terrain], consumes the terrain effect and triggers [Re-ATK], allowing movement of 2 tiles before attacking. This effect is removed at the end of turn."
+      "effect": "Final DMG taken reduces by <color=#F74848>50%</color>. After initiating combat, if this unit is on <terrian ID=4003081 />, consumes the terrain effect and triggers <buf ID=900004>[Re-ATK]</buf>, allowing movement of <color=#F74848>2</color> tiles before attacking. This effect is removed at the end of turn."
     }
   },
   "skill": {
@@ -1783,35 +1783,35 @@
       "Ap": "0",
       "CD": "0",
       "icon": "Icon_skill_order_3118",
-      "effect": "Consumes 1 stack of <buf ID=5010502>[Stratagem]</buf>. Selects 1 ally within 3 adjacent tiles, restores HP to all parts equal to 20% [Tang]'s body max HP. Can repair 1 destroyed part, dispel 1 debuff and apply [Rejuvenation] to the target. Applies the same repair effect to 1 other ally with lowest HP percentage. Can activate [Stratagem Infusion] to increase Repair AMT to 25% and affect 1 additional ally."
+      "effect": "Consumes <color=#F74848>1</color> stack of <buf ID=5010502>[Stratagem]</buf>. Selects <color=#F74848>1</color> ally within <color=#F74848>3</color> adjacent tiles, restores HP to all parts equal to <color=#F74848>20%</color> [Tang]'s body max HP. Can repair <color=#F74848>1</color> destroyed part, dispel <color=#F74848>1</color> debuff and apply <buf ID=50105021>[Rejuvenation]</buf> to the target. Applies the same repair effect to <color=#F74848>1</color> other ally with lowest HP percentage. Can activate <buf ID=5010468>[Stratagem Infusion]</buf> to increase Repair AMT to <color=#F74848>25%</color> and affect <color=#F74848>1</color> additional ally."
     },
     "5010502": {
       "name": "Stratagem - Encouragement",
       "Ap": "0",
       "CD": "0",
       "icon": "Icon_skill_order_1153",
-      "effect": "Consumes 1 stack of <buf ID=5010502>[Stratagem]</buf>. Selects and grants [Ambition] to 1 ally within 3 adjacent tiles. Can activate [Stratagem Infusion] to upgrade [Ambition] to [Ambition II]."
+      "effect": "Consumes <color=#F74848>1</color> stack of <buf ID=5010502>[Stratagem]</buf>. Selects and grants <buf ID=50105023>[Ambition]</buf> to <color=#F74848>1</color> ally within <color=#F74848>3</color> adjacent tiles. Can activate <buf ID=5010468>[Stratagem Infusion]</buf> to upgrade <buf ID=50105023>[Ambition]</buf> to <buf ID=50105024>[Ambition II]</buf>."
     },
     "5010503": {
       "name": "Stratagem - Bribery",
       "Ap": "0",
       "CD": "0",
       "icon": "Icon_skill_order_5159",
-      "effect": "Consumes 1 stack of <buf ID=5010502>[Stratagem]</buf>. Selects and applies [Indulgence] to 1 enemy within 4 adjacent tiles. Can activate [Stratagem Infusion] to upgrade [Indulgence] to [Indulgence II]."
+      "effect": "Consumes <color=#F74848>1</color> stack of <buf ID=5010502>[Stratagem]</buf>. Selects and applies <buf ID=50105025>[Indulgence]</buf> to <color=#F74848>1</color> enemy within <color=#F74848>4</color> adjacent tiles. Can activate <buf ID=5010468>[Stratagem Infusion]</buf> to upgrade <buf ID=50105025>[Indulgence]</buf> to <buf ID=50105026>[Indulgence II]</buf>."
     },
     "5010031": {
       "name": "Stratagem - Investment",
       "Ap": "0",
       "CD": "0",
       "icon": "Icon_skill_order_5156",
-      "effect": "All allies lose 1 AP and gain 2 AP at the start of next turn. Can activate [Stratagem Infusion] to avoid AP reduction in this turn. Can continue to act with remaining movement."
+      "effect": "All allies lose <color=#F74848>1</color> AP and gain <color=#F74848>2</color> AP at the start of next turn. Can activate <buf ID=5010468>[Stratagem Infusion]</buf> to avoid AP reduction in this turn. Can continue to act with remaining movement."
     },
     "5010032": {
       "name": "Stratagem - Prepayment",
       "Ap": "0",
       "CD": "0",
       "icon": "Icon_skill_order_5157",
-      "effect": "All allies gain 1 AP and lose 3 AP at the start of next turn. Can activate [Stratagem Infusion] to reduce AP loss to 2 at the start of next turn. Can continue to act with remaining movement."
+      "effect": "All allies gain <color=#F74848>1</color> AP and lose <color=#F74848>3</color> AP at the start of next turn. Can activate <buf ID=5010468>[Stratagem Infusion]</buf> to reduce AP loss to <color=#F74848>2</color> at the start of next turn. Can continue to act with remaining movement."
     }
   },
   "terrain": {

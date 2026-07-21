@@ -1239,6 +1239,42 @@ window.GlossaryData = {
     "4012502": {
       "name": "Structural Damage",
       "effect": "When [Hardaway] actively attacks this unit with Rocket Launchers, Critical Hit chance increases by <color=#F74848>3%</color> for each <color=#F74848>1</color> stack, stacking up to <color=#F74848>10</color> times. If a critical hit occurs, causes this target to receive <buf ID=900017>[Fixed DMG]</buf> equal to <color=#F74848>0.05x</color> Rocket Launcher ATK for <color=#F74848>3</color> times after combat. The <buf ID=900017>[Fixed DMG]</buf> effect does not stack. This effect lasts for <color=#F74848>2</color> turns and can stack up to <color=#F74848>10</color> times."
+    },
+    "5010502": {
+      "name": "Stratagem",
+      "effect": "[Tang] can consume these stacks to activate personal skills. This effect stacks up to <color=#F74848>5</color> times."
+    },
+    "50105021": {
+      "name": "Rejuvenation",
+      "effect": "After combat, if any part is destroyed, repairs <color=#F74848>1</color> destroyed part and restores HP to all parts equal to <color=#F74848>20%</color> max HP. This effect is removed after triggering."
+    },
+    "5010468": {
+      "name": "Stratagem Infusion",
+      "effect": "Consumes <color=#F74848>1</color> additional stack of <buf ID=5010502>[Stratagem]</buf> to enhance this skill's effect."
+    },
+    "50105023": {
+      "name": "Ambition",
+      "effect": "When actively attacking, AP consumption increases by <color=#F74848>+1</color>, skill multiplier increases by <color=#F74848>+0.1</color> (this effect is reduced to <color=#F74848>1/4</color> for Rocket Launchers) and DMG dealt increases by <color=#F74848>20%</color>. This effect is removed after triggering."
+    },
+    "50105024": {
+      "name": "Ambition II",
+      "effect": "When actively attacking, AP consumption increases by <color=#F74848>+2</color>, skill multiplier increases by <color=#F74848>+0.2</color> (this effect is reduced to <color=#F74848>1/4</color> for Rocket Launchers) and DMG dealt increases by <color=#F74848>30%</color>. This effect is removed after triggering."
+    },
+    "50105025": {
+      "name": "Indulgence",
+      "effect": "Final DMG dealt reduces by <color=#F74848>-15%</color>, lasting for <color=#F74848>1</color> turn."
+    },
+    "50105026": {
+      "name": "Indulgence II",
+      "effect": "Final DMG dealt reduces by <color=#F74848>-25%</color>, lasting for <color=#F74848>1</color> turn."
+    },
+    "5010506": {
+      "name": "Shrewdness",
+      "effect": "For each <color=#F74848>1</color> stack, increases Flamethrower DMG and Repair AMT by <color=#F74848>2%</color>, stacking up to <color=#F74848>15</color> times."
+    },
+    "5010061": {
+      "name": "Firewalk",
+      "effect": "Final DMG taken reduces by <color=#F74848>50%</color>. After initiating combat, if this unit is on <terrian ID=4003081 />, consumes the terrain effect and triggers <buf ID=900004>[Re-ATK]</buf>, allowing movement of <color=#F74848>2</color> tiles before attacking. This effect is removed at the end of turn."
     }
   },
   "skill": {
@@ -1741,6 +1777,41 @@ window.GlossaryData = {
       "CD": "0",
       "icon": "Icon_skill_order_1140",
       "effect": "If the target actively uses a Weapon Skill this turn, inflicts <buf ID=1004021>[Weapon Inhibition]</buf> to the target, lasting for <color=#F74848>1</color> turn. Otherwise, inflicts <color=#F74848>2</color> stacks of <buf ID=4012502>[Structural Damage]</buf> to the target. This effect is removed after triggering."
+    },
+    "5010501": {
+      "name": "Stratagem - Respite",
+      "Ap": "0",
+      "CD": "0",
+      "icon": "Icon_skill_order_3118",
+      "effect": "Consumes <color=#F74848>1</color> stack of <buf ID=5010502>[Stratagem]</buf>. Selects <color=#F74848>1</color> ally within <color=#F74848>3</color> adjacent tiles, restores HP to all parts equal to <color=#F74848>20%</color> [Tang]'s body max HP. Can repair <color=#F74848>1</color> destroyed part, dispel <color=#F74848>1</color> debuff and apply <buf ID=50105021>[Rejuvenation]</buf> to the target. Applies the same repair effect to <color=#F74848>1</color> other ally with lowest HP percentage. Can activate <buf ID=5010468>[Stratagem Infusion]</buf> to increase Repair AMT to <color=#F74848>25%</color> and affect <color=#F74848>1</color> additional ally."
+    },
+    "5010502": {
+      "name": "Stratagem - Encouragement",
+      "Ap": "0",
+      "CD": "0",
+      "icon": "Icon_skill_order_1153",
+      "effect": "Consumes <color=#F74848>1</color> stack of <buf ID=5010502>[Stratagem]</buf>. Selects and grants <buf ID=50105023>[Ambition]</buf> to <color=#F74848>1</color> ally within <color=#F74848>3</color> adjacent tiles. Can activate <buf ID=5010468>[Stratagem Infusion]</buf> to upgrade <buf ID=50105023>[Ambition]</buf> to <buf ID=50105024>[Ambition II]</buf>."
+    },
+    "5010503": {
+      "name": "Stratagem - Bribery",
+      "Ap": "0",
+      "CD": "0",
+      "icon": "Icon_skill_order_5159",
+      "effect": "Consumes <color=#F74848>1</color> stack of <buf ID=5010502>[Stratagem]</buf>. Selects and applies <buf ID=50105025>[Indulgence]</buf> to <color=#F74848>1</color> enemy within <color=#F74848>4</color> adjacent tiles. Can activate <buf ID=5010468>[Stratagem Infusion]</buf> to upgrade <buf ID=50105025>[Indulgence]</buf> to <buf ID=50105026>[Indulgence II]</buf>."
+    },
+    "5010031": {
+      "name": "Stratagem - Investment",
+      "Ap": "0",
+      "CD": "0",
+      "icon": "Icon_skill_order_5156",
+      "effect": "All allies lose <color=#F74848>1</color> AP and gain <color=#F74848>2</color> AP at the start of next turn. Can activate <buf ID=5010468>[Stratagem Infusion]</buf> to avoid AP reduction in this turn. Can continue to act with remaining movement."
+    },
+    "5010032": {
+      "name": "Stratagem - Prepayment",
+      "Ap": "0",
+      "CD": "0",
+      "icon": "Icon_skill_order_5157",
+      "effect": "All allies gain <color=#F74848>1</color> AP and lose <color=#F74848>3</color> AP at the start of next turn. Can activate <buf ID=5010468>[Stratagem Infusion]</buf> to reduce AP loss to <color=#F74848>2</color> at the start of next turn. Can continue to act with remaining movement."
     }
   },
   "terrain": {
