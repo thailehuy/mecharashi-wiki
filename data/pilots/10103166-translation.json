@@ -10,7 +10,7 @@
   },
   "Talent3_5Ability": {
     "name": "Thousand Schemes",
-    "SpecificEffects": "At the start of action or when an ally uses a skill with <color=#F74848>4</color> AP cost or more, gains <color=#F74848>1</color> stack of <buf ID=5010502>[Stratagem]</buf>, up to <color=#F74848>5</color> stacks. At the end of action, can activate one of <skill activeSkill=5010501>[Stratagem - Respite]</skill>, <skill activeSkill=5010502>[Stratagem - Encouragement]</skill> or <skill activeSkill=5010503>[Stratagem - Bribery]</skill>. For each <color=#F74848>1</color> stack of <buf ID=5010502>[Stratagem]</buf> consumed, gains <color=#F74848>1</color> stack of <buf ID=5010506>[Shrewdness]</buf>, up to <color=#F74848>15</color> stacks.\nAll parts maximum HP increase by <color=#F74848>10%</color>. After actively attacking, gains <color=#F74848>2</color> stacks of <buf ID=5010502>[Stratagem]</buf> and <color=#F74848>5</color> stacks of <buf ID=5010506>[Shrewdness]</buf>."
+    "SpecificEffects": "At the start of action or when an ally uses a skill with <color=#F74848>4</color> AP cost or more, gains <color=#F74848>1</color> stack of <buf ID=5010502>[Stratagem]</buf>, up to <color=#F74848>5</color> stacks. At the end of action, can activate one of <skill activeSkill=5010501>[Stratagem - Respite]</skill>, <skill activeSkill=5010502>[Stratagem - Encouragement]</skill> or <skill activeSkill=5010503>[Stratagem - Bribery]</skill>. For each <color=#F74848>1</color> stack of <buf ID=5010502>[Stratagem]</buf> consumed, gains <color=#F74848>1</color> stack of <buf ID=5010506>[Shrewdness]</buf>, up to <color=#F74848>15</color> stacks.\nAll parts maximum HP increase by <color=#F74848>10%</color>. At the start of battle, gains <color=#F74848>2</color> stacks of <buf ID=5010502>[Stratagem]</buf> and <color=#F74848>5</color> stacks of <buf ID=5010506>[Shrewdness]</buf>."
   },
   "skills": {
     "200001": {
@@ -36,7 +36,7 @@
     "501005": {
       "name": "Environment Advantage",
       "describe": "",
-      "SpecificEffects": "For all allies located on <terrian ID=4003081 />, Repair AMT received increases by <color=#F74848>10%</color> and DMG dealt increases by <color=#F74848>10%</color>."
+      "SpecificEffects": "For all allies located on friendly <terrian ID=4003081 />, Repair AMT received increases by <color=#F74848>10%</color> and DMG dealt increases by <color=#F74848>10%</color>."
     },
     "501006": {
       "name": "Firewalker",
@@ -47,11 +47,11 @@
       "name": "Just In Time",
       "describe": "",
       "resource": "PP",
-      "SpecificEffects": "After an ally within <color=#F74848>3</color> adjacent tiles is actively attacked, if their body HP is <color=#F74848>50%</color> or less, consumes <color=#F74848>1</color> PP to activate <color=#F74848>1</color> <buf ID=5010468>[Stratagem Infusion]</buf> to trigger <skill activeSkill=5010501>[Stratagem - Respite]</skill> for that ally. Gains <color=#F74848>2</color> PP at the start of battle."
+      "SpecificEffects": "After an ally within <color=#F74848>3</color> adjacent tiles is actively attacked, if their body HP is <color=#F74848>50%</color> or less, consumes <color=#F74848>1</color> PP to trigger <skill activeSkill=5010501>[Stratagem - Respite]</skill> for that ally with <buf ID=5010468>[Stratagem Infusion]</buf> upgrade. Gains <color=#F74848>2</color> PP at the start of battle."
     },
     "501008": {
       "name": "Fireworks",
-      "describe": "Uses Flamethrower to attack all targets within a <range type=1>fan-shaped</range> area in front, dealing <color=#F74848>0.8x</color> AoE DMG. Can activate <buf ID=5010468>[Stratagem Infusion]</buf> to apply <terrian ID=4003081 /> to all tiles within attack range, lasting for <color=#F74848>2</color> turns.",
+      "describe": "Uses Flamethrower to attack all targets within a <range type=1>4-tile fan-shaped</range> area in front, dealing <color=#F74848>0.8x</color> AoE DMG. Can activate <buf ID=5010468>[Stratagem Infusion]</buf> to apply <terrian ID=4003081 /> to all tiles within attack range, lasting for <color=#F74848>2</color> turns.",
       "SpecificEffects": ""
     }
   },
@@ -92,7 +92,7 @@
     },
     "501031": {
       "name": "Synchronous Preparation 1",
-      "SpecificEffects": "After actively attacking, restores HP to <color=#F74848>1</color> ally within <color=#F74848>3</color> adjacent tiles equal to <color=#F74848>3.5%</color> of [Tang]'s body part. This effect can trigger <color=#F74848>5</color> times per turn."
+      "SpecificEffects": "After actively attacking, restores HP to self and <color=#F74848>1</color> ally with lowest HP within <color=#F74848>3</color> adjacent tiles equal to <color=#F74848>3.5%</color> of [Tang]'s body part. This effect can trigger <color=#F74848>5</color> times per turn."
     },
     "200032": {
       "name": "AP Optimization 3",

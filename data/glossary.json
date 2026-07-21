@@ -1270,11 +1270,11 @@
     },
     "5010506": {
       "name": "Shrewdness",
-      "effect": "For each <color=#F74848>1</color> stack, increases Flamethrower DMG and Repair AMT by <color=#F74848>2%</color>, stacking up to <color=#F74848>15</color> times."
+      "effect": "For each <color=#F74848>1</color> stack, increases Flamethrower ATK and Repair AMT by <color=#F74848>2%</color>, stacking up to <color=#F74848>15</color> times."
     },
     "5010061": {
       "name": "Firewalk",
-      "effect": "Final DMG taken reduces by <color=#F74848>50%</color>. After initiating combat, if this unit is on <terrian ID=4003081 />, consumes the terrain effect and triggers <buf ID=900004>[Re-ATK]</buf>, allowing movement of <color=#F74848>2</color> tiles before attacking. This effect is removed at the end of turn."
+      "effect": "Final DMG taken reduces by <color=#F74848>50%</color>. After actively attacking, if this unit is on friendly <terrian ID=4003081 />, consumes the terrain effect and triggers <buf ID=900004>[Re-ATK]</buf>, allowing movement of <color=#F74848>2</color> tiles before attacking. This effect is removed at the end of turn."
     }
   },
   "skill": {
