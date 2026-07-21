@@ -1,16 +1,16 @@
 {
   "PilotName": "Tang",
-  "RealName": "Tang Xiao Kui",
+  "RealName": "Tang Xiaokui",
   "Gender": "Female",
   "Profession": "Mechanic",
   "Occupation": "Machinist",
   "Talent0_2Ability": {
-    "name": "千机玲珑",
-    "SpecificEffects": "行动开始或友方单位使用<color=#F74848>4</color>AP及以上技能时，获得<color=#F74848>1</color>层<buf ID=5010502>[筹谋]</buf>，可叠加<color=#F74848>5</color>层；行动结束时，可以发动<skill activeSkill=5010501>[筹谋-修整]</skill><skill activeSkill=5010502>[筹谋-鞭策]</skill><skill activeSkill=5010503>[筹谋-收买]</skill>之一；每消耗<color=#F74848>1</color>层<buf ID=5010502>[筹谋]</buf>，自身获得<color=#F74848>1</color>层<buf ID=5010506>[精明]</buf>，可叠加<color=#F74848>15</color>层"
+    "name": "Thousand Schemes",
+    "SpecificEffects": "At the start of action or when an ally uses a skill with <color=#F74848>4</color> AP cost or more, gains <color=#F74848>1</color> stack of <buf ID=5010502>[Stratagem]</buf>, up to <color=#F74848>5</color> stacks. At the end of action, can activate one of <skill activeSkill=5010501>[Stratagem - Respite]</skill>, <skill activeSkill=5010502>[Stratagem - Encouragement]</skill> or <skill activeSkill=5010503>[Stratagem - Bribery]</skill>. For each <color=#F74848>1</color> stack of <buf ID=5010502>[Stratagem]</buf> consumed, gains <color=#F74848>1</color> stack of <buf ID=5010506>[Shrewdness]</buf>, up to <color=#F74848>15</color> stacks."
   },
   "Talent3_5Ability": {
-    "name": "千机玲珑",
-    "SpecificEffects": "行动开始或友方单位使用<color=#F74848>4</color>AP及以上技能时，获得<color=#F74848>1</color>层<buf ID=5010502>[筹谋]</buf>，可叠加<color=#F74848>5</color>层；行动结束时，可以发动<skill activeSkill=5010501>[筹谋-修整]</skill><skill activeSkill=5010502>[筹谋-鞭策]</skill><skill activeSkill=5010503>[筹谋-收买]</skill>之一；每消耗<color=#F74848>1</color>层<buf ID=5010502>[筹谋]</buf>，自身获得<color=#F74848>1</color>层<buf ID=5010506>[精明]</buf>，可叠加<color=#F74848>15</color>层；\n最大耐久值提升<color=#F74848>10%</color>；出击时，获得<color=#F74848>2</color>层<buf ID=5010502>[筹谋]</buf>和<color=#F74848>5</color>层<buf ID=5010506>[精明]</buf>"
+    "name": "Thousand Schemes",
+    "SpecificEffects": "At the start of action or when an ally uses a skill with <color=#F74848>4</color> AP cost or more, gains <color=#F74848>1</color> stack of <buf ID=5010502>[Stratagem]</buf>, up to <color=#F74848>5</color> stacks. At the end of action, can activate one of <skill activeSkill=5010501>[Stratagem - Respite]</skill>, <skill activeSkill=5010502>[Stratagem - Encouragement]</skill> or <skill activeSkill=5010503>[Stratagem - Bribery]</skill>. For each <color=#F74848>1</color> stack of <buf ID=5010502>[Stratagem]</buf> consumed, gains <color=#F74848>1</color> stack of <buf ID=5010506>[Shrewdness]</buf>, up to <color=#F74848>15</color> stacks.\nAll parts maximum HP increase by <color=#F74848>10%</color>. After actively attacking, gains <color=#F74848>2</color> stacks of <buf ID=5010502>[Stratagem]</buf> and <color=#F74848>5</color> stacks of <buf ID=5010506>[Shrewdness]</buf>."
   },
   "skills": {
     "200001": {
@@ -19,46 +19,52 @@
       "SpecificEffects": "In cooperation with allies, use Assault Weapons to launch a <buf ID=900002>[Link Attack]</buf> against the target, dealing <color=#F74848>0.2x</color> DMG, effective up to <color=#F74848>1</color> time per turn."
     },
     "501002": {
-      "name": "未雨绸缪",
+      "name": "Foresight",
       "describe": "",
-      "SpecificEffects": "行动结束时，若<buf ID=5010502>[筹谋]</buf>层数小于等于<color=#F74848>3</color>，获得<color=#F74848>1</color>层<buf ID=5010502>[筹谋]</buf>"
+      "SpecificEffects": "At the end of action, if <buf ID=5010502>[Stratagem]</buf> stacks are <color=#F74848>3</color> or less, gains <color=#F74848>1</color> stack of <buf ID=5010502>[Stratagem]</buf>."
     },
     "501003": {
-      "name": "因势利导",
-      "describe": "选择释放<color=#F74848>1</color>次<skill activeSkill=5010031>[筹谋-投资]</skill>或<skill activeSkill=5010032>[筹谋-预支]</skill>，然后可以使用剩余移动力继续行动",
+      "name": "Situation Awareness",
+      "describe": "Chooses <skill activeSkill=5010031>[Stratagem - Investment]</skill> or <skill activeSkill=5010032>[Stratagem - Prepayment]</skill> to use, then continue to act with remaining movement.",
       "SpecificEffects": ""
     },
     "501004": {
-      "name": "焚香引焰",
-      "describe": "使用喷火器攻击主目标，造成<color=#F74848>1.4</color>倍伤害，若主目标位于友方<terrian ID=4003081 />上，对目标所有部位造成喷火器攻击力<color=#F74848>0.15</color>倍的<buf ID=900017>[固定伤害]</buf>；可以发动<buf ID=5010468>[筹谋倾注]</buf>，使<buf ID=900017>[固定伤害]</buf>翻倍",
+      "name": "Burning Incense",
+      "describe": "Uses Flamethrower to attack a target, dealing <color=#F74848>1.4x</color> DMG. If the target is on <terrian ID=4003081 />, deals <buf ID=900017>[Fixed DMG]</buf> equal to <color=#F74848>0.15x</color> Flamethrower ATK to all parts of the target. Can activate <buf ID=5010468>[Stratagem Infusion]</buf> to double the <buf ID=900017>[Fixed DMG]</buf> effect.",
       "SpecificEffects": ""
     },
     "501005": {
-      "name": "风借火势",
+      "name": "Environment Advantage",
       "describe": "",
-      "SpecificEffects": "友方单位位于友方<terrian ID=4003081 />时，受到修理量提升<color=#F74848>10%</color>，伤害提升<color=#F74848>10%</color>"
+      "SpecificEffects": "For all allies located on <terrian ID=4003081 />, Repair AMT received increases by <color=#F74848>10%</color> and DMG dealt increases by <color=#F74848>10%</color>."
     },
     "501006": {
-      "name": "蹈火",
-      "describe": "进入<buf ID=5010061>[烈焰行者]</buf>状态，行动结束时移除，然后可以使用剩余移动力继续行动；可以发动<buf ID=5010468>[筹谋倾注]</buf>，技能发动后获得<color=#F74848>2</color>AP",
+      "name": "Firewalker",
+      "describe": "Enters <buf ID=5010061>[Firewalk]</buf> state which is removed at the end of turn. Can continue to act with remaining movement. Can activate <buf ID=5010468>[Stratagem Infusion]</buf> to gain <color=#F74848>2</color> AP after activation.",
       "SpecificEffects": ""
     },
     "501007": {
-      "name": "雪中送炭",
+      "name": "Just In Time",
       "describe": "",
-      "SpecificEffects": "周围<color=#F74848>3</color>格内的友军遭受主动攻击后，若躯干耐久值小于等于<color=#F74848>50%</color>，消耗<color=#F74848>1</color>PP对其发动<color=#F74848>1</color>次<buf ID=5010468>[筹谋倾注]</buf>下的<skill activeSkill=5010501>[筹谋-修整]</skill>，每次出击最多拥有<color=#F74848>2</color>PP"
+      "resource": "PP",
+      "SpecificEffects": "After an ally within <color=#F74848>3</color> adjacent tiles is actively attacked, if their body HP is <color=#F74848>50%</color> or less, consumes <color=#F74848>1</color> PP to activate <color=#F74848>1</color> <buf ID=5010468>[Stratagem Infusion]</buf> to trigger <skill activeSkill=5010501>[Stratagem - Respite]</skill> for that ally. Gains <color=#F74848>2</color> PP at the start of battle."
     },
     "501008": {
-      "name": "火树银花",
-      "describe": "使用喷火器攻击<range type=1>面前扇形</range>范围内所有目标，造成<color=#F74848>0.8</color>倍范围伤害；可以发动<buf ID=5010468>[筹谋倾注]</buf>，对攻击范围内所有地格施加<terrian ID=4003081 />，持续<color=#F74848>2</color>回合",
-      "SpecificEffects": ""
-    },
-    "501009": {
-      "name": "Regulated Repair",
-      "describe": "Restores HP equal to <color=#F74848>2.0</color>x Manipulator Repair AMT to all parts of a single ST. Can repair <color=#F74848>1</color> destroyed part.",
+      "name": "Fireworks",
+      "describe": "Uses Flamethrower to attack all targets within a <range type=1>fan-shaped</range> area in front, dealing <color=#F74848>0.8x</color> AoE DMG. Can activate <buf ID=5010468>[Stratagem Infusion]</buf> to apply <terrian ID=4003081 /> to all tiles within attack range, lasting for <color=#F74848>2</color> turns.",
       "SpecificEffects": ""
     }
   },
+  "hiddenSkills": [
+    {
+      "name": "Flame Strike",
+      "icon": "Icon_skill_main_1151",
+      "type": "EquipmentSkill",
+      "Ap": "3",
+      "CD": "0",
+      "describe": "Uses a Flamethrower to attack a target, dealing <color=#F74848>1.2x</color> DMG and <color=#F74848>20%</color> <buf ID=900139>[Fire DMG]</buf> to other targets along the path. After combat, applies <terrian ID=4003081 /> to all tiles along the attack path, lasting <color=#F74848>2</color> turns. Can activate <buf ID=5010468>[Stratagem Infusion]</buf> to increase <buf ID=900139>[Fire DMG]</buf> to <color=#F74848>40%</color>."
+    }
+  ],
   "neuralPassives": {
     "200011": {
       "name": "CEC 2",
@@ -85,8 +91,8 @@
       "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
     },
     "501031": {
-      "name": "同频整备1",
-      "SpecificEffects": "主动攻击后，为自身和周围<color=#F74848>3</color>格内耐久值百分比最低的<color=#F74848>1</color>名友军恢复完好部位的耐久值，修理量为[唐小葵]躯干最大耐久值的<color=#F74848>3.5%</color>，每回合最多发动<color=#F74848>5</color>次"
+      "name": "Synchronous Preparation 1",
+      "SpecificEffects": "After actively attacking, restores HP to <color=#F74848>1</color> ally within <color=#F74848>3</color> adjacent tiles equal to <color=#F74848>3.5%</color> of [Tang]'s body part. This effect can trigger <color=#F74848>5</color> times per turn."
     },
     "200032": {
       "name": "AP Optimization 3",
@@ -97,20 +103,20 @@
       "SpecificEffects": "At the end of the action, if an Active Attack was not initiated this turn, an extra <color=#F74848>2</color> tiles can be moved."
     },
     "501034": {
-      "name": "同频整备2",
-      "SpecificEffects": "<skill passiveSkill=501031>[同频整备1]</skill>会在周围<color=#F74848>4</color>格范围选择目标"
+      "name": "Synchronous Preparation 2",
+      "SpecificEffects": "<skill passiveSkill=501031>[Synchronous Preparation 1]</skill> range increases to <color=#F74848>4</color> adjacent tiles."
     },
     "501035": {
-      "name": "同频整备3",
-      "SpecificEffects": "<skill passiveSkill=501031>[同频整备1]</skill>的修理量提升至<color=#F74848>6%</color>"
+      "name": "Synchronous Preparation 3",
+      "SpecificEffects": "<skill passiveSkill=501031>[Synchronous Preparation 1]</skill> Repair AMT increases to <color=#F74848>6%</color>."
     },
     "501036": {
-      "name": "同频整备4",
-      "SpecificEffects": "<skill passiveSkill=501031>[同频整备1]</skill>的修理目标数量<color=#F74848>+1</color>"
+      "name": "Synchronous Preparation 4",
+      "SpecificEffects": "The number of target selection of <skill passiveSkill=501031>[Synchronous Preparation 1]</skill> increases by <color=#F74848>+1</color>."
     },
     "501041": {
-      "name": "奇正相生1",
-      "SpecificEffects": "攻击时，若击破敌机部位，获得<color=#F74848>1</color>层<buf ID=5010506>[精明]</buf>，每回合最多发动<color=#F74848>3</color>次"
+      "name": "Mutual Benefits 1",
+      "SpecificEffects": "When actively attacking, if an enemy part is destroyed, gains <color=#F74848>1</color> stack of <buf ID=5010506>[Shrewdness]</buf>. This effect can trigger <color=#F74848>3</color> times per turn."
     },
     "200042": {
       "name": "AP Optimization 4",
@@ -121,17 +127,17 @@
       "SpecificEffects": "If not moved before an Active Attack, <buf ID=900004>[Re-ATK]</buf> can be triggered, effective up to <color=#F74848>1</color> time per turn. Unable to move before attacking.\nEffects similar to <buf ID=900004>[Re-ATK]</buf> cannot be re-triggered."
     },
     "501044": {
-      "name": "奇正相生2",
-      "SpecificEffects": "<buf ID=5010506>[精明]</buf>层数大于等于<color=#F74848>5</color>时，暴击率和命中率提升<color=#F74848>15%</color>"
+      "name": "Mutual Benefits 2",
+      "SpecificEffects": "When carrying <color=#F74848>5</color> or more stacks of <buf ID=5010506>[Shrewdness]</buf>, Hit Rate and Critical Hit chance increase by <color=#F74848>15%</color>."
     },
     "501045": {
-      "name": "奇正相生3",
-      "SpecificEffects": "主动攻击对战时，若目标位于我方<terrian ID=4003081 />，攻击后获得<color=#F74848>1</color>AP，每回合最多发动<color=#F74848>2</color>次"
+      "name": "Mutual Benefits 3",
+      "SpecificEffects": "When initiating combat, if the target is on <terrian ID=4003081 />, gains <color=#F74848>1</color> AP after combat. This effect can trigger <color=#F74848>2</color> times per turn."
     },
     "501046": {
-      "name": "奇正相生4",
-      "SpecificEffects": "每<color=#F74848>5</color>层<buf ID=5010506>[精明]</buf>使喷火器子弹数<color=#F74848>+1</color>"
+      "name": "Mutual Benefits 4",
+      "SpecificEffects": "For each <color=#F74848>5</color> stacks of <buf ID=5010506>[Shrewdness]</buf>, increases Flamethrower bullet count by <color=#F74848>+1</color>."
     }
   },
-  "version": "1.0"
+  "version": "3.1"
 }

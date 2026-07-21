@@ -1239,6 +1239,42 @@
     "4012502": {
       "name": "Structural Damage",
       "effect": "When [Hardaway] actively attacks this unit with Rocket Launchers, Critical Hit chance increases by <color=#F74848>3%</color> for each <color=#F74848>1</color> stack, stacking up to <color=#F74848>10</color> times. If a critical hit occurs, causes this target to receive <buf ID=900017>[Fixed DMG]</buf> equal to <color=#F74848>0.05x</color> Rocket Launcher ATK for <color=#F74848>3</color> times after combat. The <buf ID=900017>[Fixed DMG]</buf> effect does not stack. This effect lasts for <color=#F74848>2</color> turns and can stack up to <color=#F74848>10</color> times."
+    },
+    "5010502": {
+      "name": "Stratagem",
+      "effect": "[Tang] can consume these stacks to activate personal skills. This effect stacks up to <color=#F74848>5</color> times."
+    },
+    "50105021": {
+      "name": "Rejuvenation",
+      "effect": "After combat, if any part is destroyed, repairs 1 destroyed part and restores HP to all parts equal to 20% max HP. This effect is removed after triggering."
+    },
+    "5010468": {
+      "name": "Stratagem Infusion",
+      "effect": "Consumes 1 additional stack of [Stratagem] to enhance this skill's effect."
+    },
+    "50105023": {
+      "name": "Ambition",
+      "effect": "When actively attacking, AP consumption increases by +1, skill multiplier increases by +0.1 (this effect is reduced to 1/4 for Rocket Launchers) and DMG dealt increases by 20%. This effect is removed after triggering."
+    },
+    "50105024": {
+      "name": "Ambition II",
+      "effect": "When actively attacking, AP consumption increases by +2, skill multiplier increases by +0.2 (this effect is reduced to 1/4 for Rocket Launchers) and DMG dealt increases by 30%. This effect is removed after triggering."
+    },
+    "50105025": {
+      "name": "Indulgence",
+      "effect": "Final DMG dealt reduces by -15%, lasting for 1 turn."
+    },
+    "50105026": {
+      "name": "Indulgence II",
+      "effect": "Final DMG dealt reduces by -25%, lasting for 1 turn."
+    },
+    "5010506": {
+      "name": "Shrewdness",
+      "effect": "For each <color=#F74848>1</color> stack, increases Flamethrower DMG and Repair AMT by <color=#F74848>2%</color>, stacking up to <color=#F74848>15</color> times."
+    },
+    "5010061": {
+      "name": "Firewalk",
+      "effect": "Final DMG taken reduces by 50%. After initiating combat, if this unit is on [Burning Terrain], consumes the terrain effect and triggers [Re-ATK], allowing movement of 2 tiles before attacking. This effect is removed at the end of turn."
     }
   },
   "skill": {
@@ -1741,6 +1777,41 @@
       "CD": "0",
       "icon": "Icon_skill_order_1140",
       "effect": "If the target actively uses a Weapon Skill this turn, inflicts <buf ID=1004021>[Weapon Inhibition]</buf> to the target, lasting for <color=#F74848>1</color> turn. Otherwise, inflicts <color=#F74848>2</color> stacks of <buf ID=4012502>[Structural Damage]</buf> to the target. This effect is removed after triggering."
+    },
+    "5010501": {
+      "name": "Stratagem - Respite",
+      "Ap": "0",
+      "CD": "0",
+      "icon": "Icon_skill_order_3118",
+      "effect": "Consumes 1 stack of <buf ID=5010502>[Stratagem]</buf>. Selects 1 ally within 3 adjacent tiles, restores HP to all parts equal to 20% [Tang]'s body max HP. Can repair 1 destroyed part, dispel 1 debuff and apply [Rejuvenation] to the target. Applies the same repair effect to 1 other ally with lowest HP percentage. Can activate [Stratagem Infusion] to increase Repair AMT to 25% and affect 1 additional ally."
+    },
+    "5010502": {
+      "name": "Stratagem - Encouragement",
+      "Ap": "0",
+      "CD": "0",
+      "icon": "Icon_skill_order_1153",
+      "effect": "Consumes 1 stack of <buf ID=5010502>[Stratagem]</buf>. Selects and grants [Ambition] to 1 ally within 3 adjacent tiles. Can activate [Stratagem Infusion] to upgrade [Ambition] to [Ambition II]."
+    },
+    "5010503": {
+      "name": "Stratagem - Bribery",
+      "Ap": "0",
+      "CD": "0",
+      "icon": "Icon_skill_order_5159",
+      "effect": "Consumes 1 stack of <buf ID=5010502>[Stratagem]</buf>. Selects and applies [Indulgence] to 1 enemy within 4 adjacent tiles. Can activate [Stratagem Infusion] to upgrade [Indulgence] to [Indulgence II]."
+    },
+    "5010031": {
+      "name": "Stratagem - Investment",
+      "Ap": "0",
+      "CD": "0",
+      "icon": "Icon_skill_order_5156",
+      "effect": "All allies lose 1 AP and gain 2 AP at the start of next turn. Can activate [Stratagem Infusion] to avoid AP reduction in this turn. Can continue to act with remaining movement."
+    },
+    "5010032": {
+      "name": "Stratagem - Prepayment",
+      "Ap": "0",
+      "CD": "0",
+      "icon": "Icon_skill_order_5157",
+      "effect": "All allies gain 1 AP and lose 3 AP at the start of next turn. Can activate [Stratagem Infusion] to reduce AP loss to 2 at the start of next turn. Can continue to act with remaining movement."
     }
   },
   "terrain": {
