@@ -312,6 +312,68 @@ body {
   white-space: nowrap;
 }
 
+.ststats-th-name {
+  text-align: left !important;
+}
+
+.ststats-name-cell {
+  text-align: left !important;
+}
+
+.ststats-name-cell .dispatch-cell {
+  flex-direction: row;
+  justify-content: flex-start;
+  min-width: 0;
+}
+
+.ststats-name-cell .dispatch-cell-icon {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+}
+
+.ststats-th-sortable {
+  cursor: pointer;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.ststats-th-sortable:hover {
+  background-color: rgba(233, 69, 96, 0.28);
+}
+
+.ststats-sort-arrow {
+  display: inline-block;
+  width: 0.6em;
+  margin-left: 0.3em;
+  opacity: 0.35;
+}
+
+.ststats-sort-arrow::after {
+  content: '\25BC';
+  font-size: 0.65em;
+}
+
+.ststats-th-sortable.ststats-sort-asc .ststats-sort-arrow,
+.ststats-th-sortable.ststats-sort-desc .ststats-sort-arrow {
+  opacity: 1;
+}
+
+.ststats-th-sortable.ststats-sort-asc .ststats-sort-arrow::after {
+  content: '\25B2';
+}
+
+/* Value colors mirror the ST detail page's stat/part colors (see
+   .mech-stat-fire, .mech-part-def, etc. above) so a column reads the same
+   whether you're looking at this table or a single ST's own page. */
+.ststats-col-fire   { color: #ff6070; font-weight: 700; }
+.ststats-col-hit    { color: #e09050; font-weight: 700; }
+.ststats-col-dodge  { color: #a070d0; font-weight: 700; }
+.ststats-col-crit   { color: #c8a850; font-weight: 700; }
+.ststats-col-def    { color: #60a8ff; font-weight: 700; }
+.ststats-col-weight { color: #60a8ff; font-weight: 700; }
+.ststats-col-weight.ststats-col-over { color: #e94560; }
+
 .dispatch-version-cell {
   font-weight: 700;
   color: #e94560;
