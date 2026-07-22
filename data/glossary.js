@@ -602,7 +602,7 @@ window.GlossaryData = {
     },
     "4010500": {
       "name": "Intelligence",
-      "effect": "Each stack increases allies DMG dealt by <color=#F74848>0.8%</color>, upto a maximum of <color=#F74848>25</color> stacks. <color=#F74848>1</color> stack is consumed at the start of action."
+      "effect": "Each stack increases allies DMG dealt by <color=#F74848>0.8%</color>, up to a maximum of <color=#F74848>25</color> stacks. <color=#F74848>1</color> stack is consumed at the start of action."
     },
     "5002072": {
       "name": "Repair AMT UP",
