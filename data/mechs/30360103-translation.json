@@ -3,20 +3,20 @@
   "introduce": "ROG-FE01 信仰之眼\n著名硬件制造商ROG与卡玛达联合开发的重型机兵。在外形设计上采用了ROG系列一贯的前沿潮流风格，并配备了多处炫酷的发光光带。机兵内部则采用了来自卡玛达的成熟方案，业界领先的传动系统与岚合金框架，让信仰之眼在长线战斗中独占鳌头。",
   "modules": {
     "20484": {
-      "name": "Overlimit Frame",
-      "SpecificEffects": "When possessing temporary HP, DMG dealt increases by <color=#F74848>15%</color>"
+      "name": "Hyper Frame",
+      "SpecificEffects": "When possessing Temporary HP, DMG <color=#F74848>+15%</color>."
     },
     "30378": {
-      "name": "Overlimit Mod",
-      "SpecificEffects": "When receiving healing effects, excess repair amount will temporarily increase the maximum HP, up to <color=#F74848>24%</color>.\nWhen attacked in combat, if posesses temporary HP, can trigger <buf ID=900023>[Quick Draw]</buf>."
+      "name": "Overcapacity Mod",
+      "SpecificEffects": "When receiving repair effects, any overflow Repair AMT is converted into Temporary HP, up to <color=#F74848>24%</color>.\nWhen attacked in battle, if possessing Temporary HP, triggers <buf ID=900023>[Quick Draw]</buf>."
     },
     "40024": {
       "name": "Crit Rate Mod",
       "SpecificEffects": "Crit Rate <color=#F74848>+10%</color>."
     },
     "20482": {
-      "name": "Flow Generator",
-      "SpecificEffects": "When actively attacking or counterattacking, restores HP equal to <color=#F74848>15%</color> DMG dealt to all undestroyed part, and can repair <color=#F74848>1</color> destroyed part."
+      "name": "Fluid Generator",
+      "SpecificEffects": "When actively attacking or retaliating, restores HP to undestroyed parts equal to <color=#F74848>15%</color> of damage dealt after combat, and can repair <color=#F74848>1</color> destroyed part."
     }
   },
   "version": "2.1",

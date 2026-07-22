@@ -57,6 +57,21 @@ MANUAL_TEMPLATES = {
 STANDARD_18_CURVE = ['3%', '4%', '6%', '8%', '10%', '12%', '14%', '18%']
 SYNTHETIC_18_FAMILIES = {'3034', '3045', '3027', '3031', '3036', '3033', '3040'}
 
+# Thermostatic Mod (family 2029, Thanatos) only has a translated instance at
+# its max level ("Can only trigger 1 time per turn"), but its early levels use
+# a DIFFERENT trailing clause ("This effect has a N-turn trigger interval")
+# with the SAME number of numeric tags — so the tag-count-based regime
+# detection above can't tell them apart and silently mis-substitutes the
+# max-level wording onto the early levels. Hand-authored from the official
+# screenshots instead of relying on substitution for this family.
+MANUAL_LEVEL_OVERRIDES = {
+    '2029': {
+        '1': 'When actively attacking, if <color=#F74848>4</color> or more targets are hit, restores <color=#F74848>1</color> AP after combat. This effect has a <color=#F74848>2</color>-turn trigger interval.',
+        '2': 'When actively attacking, if <color=#F74848>4</color> or more targets are hit, restores <color=#F74848>1</color> AP after combat. This effect has a <color=#F74848>1</color>-turn trigger interval.',
+        '3': 'When actively attacking, if <color=#F74848>3</color> or more targets are hit, restores <color=#F74848>1</color> AP after combat. This effect has a <color=#F74848>1</color>-turn trigger interval.',
+    },
+}
+
 
 def primary_clause(text):
     """Some modules unlock an extra clause only at their max level (e.g.
@@ -310,6 +325,8 @@ def main():
             except ValueError:
                 level_effects[str(i)] = lvl_en_template
                 had_fallback = True
+        if family in MANUAL_LEVEL_OVERRIDES:
+            level_effects.update(MANUAL_LEVEL_OVERRIDES[family])
         if had_fallback:
             fallback_families.append(cn_name)
         if len(set(level_effects.values())) == 1 and len(levels) > 1:

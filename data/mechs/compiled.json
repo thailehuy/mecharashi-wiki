@@ -1946,8 +1946,8 @@
             "date": 1737009920000
           },
           "ID": "20484",
-          "name": "Overlimit Frame",
-          "SpecificEffects": "When possessing temporary HP, DMG dealt increases by <color=#F74848>15%</color>",
+          "name": "Hyper Frame",
+          "SpecificEffects": "When possessing Temporary HP, DMG <color=#F74848>+15%</color>.",
           "BufCarried": "204841",
           "SkillIcon": "Icon_skill_passive_1169",
           "icon": "Icon_skill_passive_1169",
@@ -1962,8 +1962,8 @@
             "date": 1737009922000
           },
           "ID": "30378",
-          "name": "Overlimit Mod",
-          "SpecificEffects": "When receiving healing effects, excess repair amount will temporarily increase the maximum HP, up to <color=#F74848>24%</color>.\nWhen attacked in combat, if posesses temporary HP, can trigger <buf ID=900023>[Quick Draw]</buf>.",
+          "name": "Overcapacity Mod",
+          "SpecificEffects": "When receiving repair effects, any overflow Repair AMT is converted into Temporary HP, up to <color=#F74848>24%</color>.\nWhen attacked in battle, if possessing Temporary HP, triggers <buf ID=900023>[Quick Draw]</buf>.",
           "BufCarried": "303781/303783",
           "SkillIcon": "Icon_entry_10088",
           "icon": "Icon_entry_10088",
@@ -1994,8 +1994,8 @@
             "date": 1737009920000
           },
           "ID": "20482",
-          "name": "Flow Generator",
-          "SpecificEffects": "When actively attacking or counterattacking, restores HP equal to <color=#F74848>15%</color> DMG dealt to all undestroyed part, and can repair <color=#F74848>1</color> destroyed part.",
+          "name": "Fluid Generator",
+          "SpecificEffects": "When actively attacking or retaliating, restores HP to undestroyed parts equal to <color=#F74848>15%</color> of damage dealt after combat, and can repair <color=#F74848>1</color> destroyed part.",
           "BufCarried": "204821/204822",
           "SkillIcon": "Icon_skill_passive_3123",
           "icon": "Icon_skill_passive_3123",

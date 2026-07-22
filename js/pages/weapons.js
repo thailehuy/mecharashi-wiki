@@ -46,6 +46,7 @@ Pages.weapons = {
   title: 'Weapons',
 
   _searchQuery: '',
+  _activeTypes: {},
 
   render: function (param) {
     var all = (window.WeaponsData || {}).weapons || [];
@@ -81,6 +82,15 @@ Pages.weapons = {
       }).join('') +
     '</div>';
 
+    var weaponTypes = [...new Set(weapons.map(function (w) { return w.WeaponType2; }))]
+      .filter(Boolean)
+      .sort(function (a, b) {
+        return (WEAPON_TYPE2_LABEL[a] || a).localeCompare(WEAPON_TYPE2_LABEL[b] || b);
+      });
+    var typeButtons = weaponTypes.map(function (t) {
+      return '<button class="filter-btn filter-occ" data-filter-type="' + t + '">' + (WEAPON_TYPE2_LABEL[t] || t) + '</button>';
+    }).join('');
+
     var sectionsHtml = acGroups.map(function (g) {
       return '<div class="ac-section" id="ac-' + g.ac + '" data-ac="' + g.ac + '">' +
         (g.ac ? '<h2 class="ac-section-title">Armed Conquest ' + g.ac + '</h2>' : '') +
@@ -105,6 +115,13 @@ Pages.weapons = {
 
       $('#weapon-page').on('input', '#weapon-search', function () {
         self._searchQuery = $(this).val();
+        self._applyFilter();
+      });
+
+      $('#weapon-page').on('click', '[data-filter-type]', function () {
+        var t = $(this).data('filter-type');
+        self._activeTypes[t] = !self._activeTypes[t];
+        $(this).toggleClass('active', !!self._activeTypes[t]);
         self._applyFilter();
       });
 
@@ -161,6 +178,9 @@ Pages.weapons = {
         '<div class="search-box-wrap">' +
           '<input type="text" class="search-box" id="weapon-search" placeholder="Search weapons by name..." />' +
         '</div>' +
+        '<div class="filter-bar">' +
+          '<div class="filter-group"><span class="filter-label">Type</span>' + typeButtons + '</div>' +
+        '</div>' +
         acNav +
         sectionsHtml +
         '<a class="back-to-top" id="weapon-back-top" href="#">&#8593; Top</a>' +
@@ -170,14 +190,19 @@ Pages.weapons = {
 
   _applyFilter: function () {
     var query = (this._searchQuery || '').trim().toLowerCase();
+    var activeTypes = Object.keys(this._activeTypes).filter(function (k) { return this._activeTypes[k]; }, this);
     var visibleCount = 0;
     $('#weapon-page .ac-section').each(function () {
       var $section = $(this);
       var sectionHasMatch = false;
       $section.find('.weapon-card-wrap').each(function () {
-        var name = decodeURIComponent($(this).data('name') || '');
-        var show = !query || name.indexOf(query) !== -1;
-        $(this).toggle(show);
+        var $wrap = $(this);
+        var name = decodeURIComponent($wrap.data('name') || '');
+        var t2   = $wrap.find('.weapon-card').data('t2');
+        var nameOk = !query || name.indexOf(query) !== -1;
+        var typeOk = activeTypes.length === 0 || activeTypes.indexOf(t2) !== -1;
+        var show = nameOk && typeOk;
+        $wrap.toggle(show);
         if (show) { sectionHasMatch = true; visibleCount++; }
       });
       $section.toggle(sectionHasMatch);
@@ -307,5 +332,6 @@ Pages.weapons = {
 
   destroy: function () {
     this._searchQuery = '';
+    this._activeTypes = {};
   },
 };
