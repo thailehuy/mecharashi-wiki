@@ -1275,6 +1275,14 @@
     "5010061": {
       "name": "Firewalk",
       "effect": "Final DMG taken reduces by <color=#F74848>50%</color>. After actively attacking, if this unit is on friendly <terrian ID=4003081 />, consumes the terrain effect and triggers <buf ID=900004>[Re-ATK]</buf>, allowing movement of <color=#F74848>2</color> tiles before attacking. This effect is removed at the end of turn."
+    },
+    "900166": {
+      "name": "Feral Spirit",
+      "effect": "Can be consumed for [Giselle]'s special skills to deal <buf ID=900017>[Fixed DMG]</buf> equal to the consumed stacks."
+    },
+    "900167": {
+      "name": "Crusher",
+      "effect": "After actively attacking with Polearm, if the hit part's HP is below a certain percentage, triggers <buf ID=900109>[Execution]</buf> after combat to immediately destroy that part."
     }
   },
   "skill": {

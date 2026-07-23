@@ -1275,16 +1275,17 @@ window.GlossaryData = {
     "5010061": {
       "name": "Firewalk",
       "effect": "Final DMG taken reduces by <color=#F74848>50%</color>. After actively attacking, if this unit is on friendly <terrian ID=4003081 />, consumes the terrain effect and triggers <buf ID=900004>[Re-ATK]</buf>, allowing movement of <color=#F74848>2</color> tiles before attacking. This effect is removed at the end of turn."
+    },
+    "900166": {
+      "name": "Feral Spirit",
+      "effect": "Can be consumed for [Giselle]'s special skills to deal <buf ID=900017>[Fixed DMG]</buf> equal to the consumed stacks."
+    },
+    "900167": {
+      "name": "Crusher",
+      "effect": "After actively attacking with Polearm, if the hit part's HP is below a certain percentage, triggers <buf ID=900109>[Execution]</buf> after combat to immediately destroy that part."
     }
   },
   "skill": {
-    "62304": {
-      "name": "Weapon Switch",
-      "Ap": "0",
-      "CD": "0",
-      "icon": "Icon_skill_order_5008",
-      "effect": "Switches the weapons equipped on hand with weapon carried in backpack. Can continue to act with remaining movement. Can only be used 1 time per turn. Can only be used if both hands are intact."
-    },
     "20342": {
       "name": "Shock Wave",
       "Ap": "1",

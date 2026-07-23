@@ -80,9 +80,16 @@ window.DispatchData = {
     {
       "cnPatch": "3.2",
       "Arsenal": "Benxiao",
-      "InnovativE": "Flourite",
+      "InnovativE": "Martyr",
       "GeekX": "Monarch",
       "Sparkplug": "Erinys"
+    },
+    {
+      "cnPatch": "3.2",
+      "Arsenal": "MobiuX",
+      "InnovativE": "Gladiator",
+      "GeekX": "Flourite",
+      "Sparkplug": "Portents"
     }
   ]
 };

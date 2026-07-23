@@ -5,12 +5,12 @@
   "Profession": "Striker",
   "Occupation": "Fighter",
   "Talent0_2Ability": {
-    "name": "荒野游风",
-    "SpecificEffects": "造成非<buf ID=900017>[固定伤害]</buf>时，造成伤害的<color=#F74848>12%</color>转化为相应层数的<buf ID=900166>[勇猎]</buf>，最大不超过长柄武器攻击力的<color=#F74848>5</color>倍；浮游炮提升<color=#F74848>10%</color>当前<buf ID=900166>[勇猎]</buf>的攻击力，提升不超过长柄武器攻击力的<color=#F74848>0.25</color>倍；出战时，获得相当于<color=#F74848>30%</color>最大上限的<buf ID=900166>[勇猎]</buf>"
+    "name": "Wild Hunt",
+    "SpecificEffects": "When dealing non-<buf ID=900017>[Fixed DMG]</buf>, converts <color=#F74848>12%</color> of DMG dealt into <buf ID=900166>[Feral Spirit]</buf> stacks, up to <color=#F74848>5</color> times equipped Polearm ATK. Equipping Cutter increases <buf ID=900166>[Feral Spirit]</buf> ATK by <color=#F74848>10%</color>, up to <color=#F74848>0.25</color> times equipped Polearm ATK. At the start of battle, gains <buf ID=900166>[Feral Spirit]</buf> stacks equal to <color=#F74848>30%</color> of maximum capacity."
   },
   "Talent3_5Ability": {
-    "name": "荒野游风",
-    "SpecificEffects": "造成非<buf ID=900017>[固定伤害]</buf>时，造成伤害的<color=#F74848>18%</color>转化为相应层数的<buf ID=900166>[勇猎]</buf>，最大不超过长柄武器攻击力的<color=#F74848>7.5</color>倍；浮游炮提升<color=#F74848>10%</color>当前<buf ID=900166>[勇猎]</buf>的攻击力，提升不超过长柄武器攻击力的<color=#F74848>0.25</color>倍；出战时，获得相当于<color=#F74848>30%</color>最大上限的<buf ID=900166>[勇猎]</buf>；\n浮游炮的弹仓容量<color=#F74848>+1</color>"
+    "name": "Wild Hunt",
+    "SpecificEffects": "When dealing non-<buf ID=900017>[Fixed DMG]</buf>, converts <color=#F74848>18%</color> of DMG dealt into <buf ID=900166>[Feral Spirit]</buf> stacks, up to <color=#F74848>7.5</color> times equipped Polearm ATK. Equipping Cutter increases <buf ID=900166>[Feral Spirit]</buf> ATK by <color=#F74848>10%</color>, up to <color=#F74848>0.25</color> times equipped Polearm ATK. At the start of battle, gains <buf ID=900166>[Feral Spirit]</buf> stacks equal to <color=#F74848>30%</color> of maximum capacity.\nCutter Ammo capacity <color=#F74848>+1</color>."
   },
   "skills": {
     "100001": {
@@ -19,38 +19,38 @@
       "SpecificEffects": "After breaking a part, <buf ID=900004>[Re-ATK]</buf> can be triggered. Unable to move before the attack, and this can be effective up to <color=#F74848>2</color> times per turn."
     },
     "102002": {
-      "name": "狂蜂逐",
-      "describe": "使用浮游炮攻击所选<range type=2>菱形2格范围</range>内的所有敌方目标，造成<color=#F74848>1.2</color>倍范围伤害",
+      "name": "Wind Chaser",
+      "describe": "Uses Cutter to attack all targets within a <range type=2>2-tile diamond range</range>, dealing <color=#F74848>1.2x</color> AoE DMG.",
       "SpecificEffects": ""
     },
     "102003": {
-      "name": "鹰视",
+      "name": "Eagle Eye",
       "describe": "",
-      "SpecificEffects": "自身周围<color=#F74848>3</color>格范围内敌方单位回避率下降<color=#F74848>8%</color>"
+      "SpecificEffects": "Enemies within <color=#F74848>3</color> adjacent tiles have their Dodge Rate reduces by <color=#F74848>8%</color>."
     },
     "102004": {
-      "name": "独獒之舞",
-      "describe": "腿部完好时可发动，选择<color=#F74848>4</color>格范围内的<color=#F74848>1</color>格空地，跳跃至选中地格，本回合浮游炮攻击范围扩大<color=#F74848>1</color>格，并装填所有浮游炮弹药，然后可使用剩余移动力继续行动",
+      "name": "Lone Wolf Dance",
+      "describe": "Selects <color=#F74848>1</color> empty tile within <color=#F74848>4</color> adjacent tile and jumps to the target tile. Cutter attack range increases by <color=#F74848>1</color> for this turn. Refills all Cutter ammo. Can continue to act with remaining movement.",
       "SpecificEffects": ""
     },
     "102005": {
-      "name": "猎者节律",
+      "name": "Hunter's Law",
       "describe": "",
-      "SpecificEffects": "每回合首次主动攻击AP消耗<color=#F74848>-1</color>，最低<color=#F74848>1</color>点"
+      "SpecificEffects": "AP Cost for the first attack of each turn reduces by <color=#F74848>-1</color>, to a minimum of <color=#F74848>1</color> AP."
     },
     "102006": {
-      "name": "鸣鸦狩天",
-      "describe": "使用浮游炮攻击范围内最多<color=#F74848>4</color>个目标，造成<color=#F74848>1.2</color>倍范围伤害，可重复选择相同目标，重复攻击相同目标时，造成<color=#F74848>40%</color>的伤害；自身使用浮游炮攻击时，若命中的部位耐久值低于<buf ID=900167>[粉碎者]</buf>所需<color=#F74848>2/3</color>的破坏效果，直接破坏该部位",
+      "name": "Crow Hunt",
+      "describe": "Uses Cutter to attack up to <color=#F74848>4</color> targets, dealing <color=#F74848>1.2x</color> AoE DMG. Can selects the same target repeatedly. Attacks on the same target deal <color=#F74848>40%</color> more DMG. After attacking, if any part HP is below <color=#F74848>2/3</color> of <buf ID=900167>[Crusher]</buf> threshold, that part is destroyed immediately.",
       "SpecificEffects": ""
     },
     "102007": {
-      "name": "斗士余威",
+      "name": "Predator Menace",
       "describe": "",
-      "SpecificEffects": "主动攻击击毁敌机时，自身周围<color=#F74848>3</color>格范围内所有敌方单位AP<color=#F74848>-1</color>，每回合最多触发<color=#F74848>1</color>次"
+      "SpecificEffects": "After destroying an enemy with active attack, all other enemies within <color=#F74848>3</color> adjacent tiles lose <color=#F74848>-1</color> AP. This effect can trigger <color=#F74848>1</color> time per turn."
     },
     "102008": {
-      "name": "洄葬",
-      "describe": "选择<color=#F74848>4</color>格内的单个目标，使用浮游炮对目标造成<color=#F74848>4×0.3</color>倍伤害，并使用长柄对目标躯干造成<color=#F74848>1.2</color>倍伤害（包括飞行目标）；可以选择消耗当前<color=#F74848>0%</color>/<color=#F74848>50%</color>/<color=#F74848>100%</color>的<buf ID=900166>[勇猎]</buf>，对躯干造成等额的<buf ID=900017>[固定伤害]</buf>",
+      "name": "Water Burial",
+      "describe": "Selects a target within <color=#F74848>4</color> adjacent tiles. Uses Cutter to deal <color=#F74848>4x0.3</color> DMG to the target, then uses Polearm to deal <color=#F74848>1.2x</color> DMG to the target's body (including flying targets). Can consume <color=#F74848>0%</color>/<color=#F74848>50%</color>/<color=#F74848>100%</color> of current <buf ID=900166>[Feral Spirit]</buf> stacks to deal <buf ID=900017>[Fixed DMG]</buf> to the target's body equal to the amount consumed.",
       "SpecificEffects": ""
     }
   },
@@ -80,8 +80,8 @@
       "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
     },
     "102031": {
-      "name": "粉碎者1",
-      "SpecificEffects": "使用长柄主动攻击后，如果命中的部位耐久值低于<color=#F74848>15%</color>，发动<buf ID=900109>[处决]</buf>效果，战后直接破坏该部位"
+      "name": "Crusher 1",
+      "SpecificEffects": "After actively attacking with a Polearm, if the part hit is below <color=#F74848>15%</color> HP, triggers the <buf ID=900109>[Execution]</buf> effect, directly destroying that part after combat."
     },
     "100032": {
       "name": "AP Optimization 3",
@@ -92,20 +92,20 @@
       "SpecificEffects": "<buf ID=900004>[Re-ATK]</buf> or <buf ID=900005>[Re-Act]</buf>'s effective times per turn <color=#F74848>+1</color>."
     },
     "102034": {
-      "name": "粉碎者2",
-      "SpecificEffects": "<buf ID=1020311></buf>破坏部位的临界线提升至<color=#F74848>25%</color>"
+      "name": "Crusher 2",
+      "SpecificEffects": "<buf ID=1020311>[Crusher 1]</buf> part destruction effect threshold increased to <color=#F74848>25%</color> HP."
     },
     "102035": {
-      "name": "粉碎者3",
-      "SpecificEffects": "发动<buf ID=900163>[粉碎者]</buf>破坏部位时，抵消<color=#F74848>1</color>次<buf ID=900004>[再攻击]</buf>或<buf ID=900005>[再行动]</buf>的次数扣除并额外回复<color=#F74848>1</color>AP，每回合最多发动<color=#F74848>1</color>次"
+      "name": "Crusher 3",
+      "SpecificEffects": "When activating <buf ID=900167>[Crusher]</buf> to destroy a part, negates the deduction of <color=#F74848>1</color> <buf ID=900004>[Re-ATK]</buf> or <buf ID=900005>[Re-Act]</buf> count and additionally restores <color=#F74848>1</color> AP. Can only trigger <color=#F74848>1</color> time per turn."
     },
     "102036": {
-      "name": "粉碎者4",
-      "SpecificEffects": "使用长柄击破躯干以外的部位时，对躯干造成相当于该部位最大耐久值<color=#F74848>25%</color>的<buf ID=900017>[固定伤害]</buf>"
+      "name": "Crusher 4",
+      "SpecificEffects": "When using a Polearm to destroy parts other than the Body, inflicts <buf ID=900017>[Fixed DMG]</buf> on the Body equal to <color=#F74848>25%</color> of the destroyed part's Max HP."
     },
     "102041": {
-      "name": "自然礼赞1",
-      "SpecificEffects": "主动攻击击破部位时，战后回复<color=#F74848>1</color>枚浮游炮弹药，每回合最多触发<color=#F74848>2</color>次"
+      "name": "Nature's Hymn 1",
+      "SpecificEffects": "When actively attacking and breaking a part, restores <color=#F74848>1</color> Cutter ammo after combat. This effect can trigger <color=#F74848>2</color> times per turn."
     },
     "100042": {
       "name": "AP Optimization 4",
@@ -116,17 +116,26 @@
       "SpecificEffects": "When destroying a target, additionally restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>2</color> times per turn."
     },
     "102044": {
-      "name": "自然礼赞2",
-      "SpecificEffects": "主动攻击时，伤害提升<color=#F74848>10%</color>，且技能范围内每个目标额外使本次攻击伤害提升<color=#F74848>5%</color>，最多提升至<color=#F74848>25%</color>；消耗<buf ID=900166>[勇猎]</buf>造成的<buf ID=900017>[固定伤害]</buf>提升<color=#F74848>15%</color>"
+      "name": "Nature's Hymn 2",
+      "SpecificEffects": "When actively attacking, DMG dealt increases by <color=#F74848>10%</color>, for each enemy within the attack range, DMG dealt increases by <color=#F74848>5%</color>, up to <color=#F74848>25%</color>. <buf ID=900017>[Fixed DMG]</buf> dealt by consuming <buf ID=900166>[Feral Spirit]</buf> stacks increase by <color=#F74848>15%</color>."
     },
     "102045": {
-      "name": "自然礼赞3",
-      "SpecificEffects": "每回合首次行动移动力<color=#F74848>+2</color>"
+      "name": "Nature's Hymn 3",
+      "SpecificEffects": "Movement <color=#F74848>+2</color> for first action of each turn."
     },
     "102046": {
-      "name": "自然礼赞4",
-      "SpecificEffects": "长柄武器攻击力与浮游炮伤害提升<color=#F74848>25%</color>；每次行动结束时，自身长柄武器攻击力提升<color=#F74848>3%</color>，最多<color=#F74848>15%</color>，浮游炮伤害提升<color=#F74848>5%</color>，最多<color=#F74848>25%</color>"
+      "name": "Nature's Hymn 4",
+      "SpecificEffects": "Polearm ATK and Cutter DMG dealt increase by <color=#F74848>25%</color>. At the end of each action, Polearm ATK increases by <color=#F74848>3%</color>, up to <color=#F74848>15%</color>. At the end of each action, Cutter DMG dealt increases by <color=#F74848>5%</color>, up to <color=#F74848>25%</color>."
     }
   },
-  "version": "1.0"
+  "hiddenSkills": [
+    {
+      "name": "Giant Antelope Strike",
+      "icon": "Icon_skill_main_1147",
+      "type": "EquipmentSkill",
+      "Ap": "2",
+      "describe": "Uses a Polearm to attack a target, dealing <color=#F74848>0.9x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking. Can consume <color=#F74848>0%</color>/<color=#F74848>50%</color> of current <buf ID=900166>[Feral Spirit]</buf> stacks to deal <buf ID=900017>[Fixed DMG]</buf> to the part hit equal to the amount consumed."
+    }
+  ],
+  "version": "3.2"
 }
