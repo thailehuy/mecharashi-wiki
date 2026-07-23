@@ -34,6 +34,16 @@ var WEAPON_TYPE2_LABEL = {
   ShotGun:        'Shotgun',
 };
 
+// Some weapon icons aren't in the remote CDN scrape at all (404s) — serve a
+// locally-saved copy instead for those specific weapons, keyed by ID.
+var WEAPON_ICON_OVERRIDE = {
+  '20215123': 'data/weapons/unlisted-icons/Icon_weapon_20400501.webp', // HMG-29C
+};
+
+function weaponIconSrc(w) {
+  return WEAPON_ICON_OVERRIDE[w.ID] || (WEAPON_IMG_BASE + encodeURIComponent(w.icon) + '.png');
+}
+
 var GRIP_LABEL = {
   Hand:              'One-handed',
   DoubleHand:        'Two-handed',
@@ -132,7 +142,7 @@ Pages.weapons = {
         var $grid = $section.find('.weapon-grid-section');
 
         g.weapons.forEach(function (w) {
-          var imgSrc = WEAPON_IMG_BASE + encodeURIComponent(w.icon) + '.png';
+          var imgSrc = weaponIconSrc(w);
           var bgSrc  = WEAPON_QUALITY_BG[w.quality] || '';
 
           var pilotIconHtml = '';
@@ -213,7 +223,7 @@ Pages.weapons = {
   // ── Detail ─────────────────────────────────────────────────────────────────
 
   _renderDetail: function (w) {
-    var imgSrc = WEAPON_IMG_BASE + encodeURIComponent(w.icon) + '.png';
+    var imgSrc = weaponIconSrc(w);
     var bgSrc  = WEAPON_QUALITY_BG[w.quality] || '';
 
     var cnWarning = w.version && parseFloat(w.version) > GLOBAL_VERSION

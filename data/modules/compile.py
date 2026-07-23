@@ -70,6 +70,15 @@ MANUAL_LEVEL_OVERRIDES = {
         '2': 'When actively attacking, if <color=#F74848>4</color> or more targets are hit, restores <color=#F74848>1</color> AP after combat. This effect has a <color=#F74848>1</color>-turn trigger interval.',
         '3': 'When actively attacking, if <color=#F74848>3</color> or more targets are hit, restores <color=#F74848>1</color> AP after combat. This effect has a <color=#F74848>1</color>-turn trigger interval.',
     },
+    '3035': {
+        '1': 'If this unit doesn\'t move before actively attacking, Crit Rate <color=#F74848>+4%</color>.',
+        '2': 'If this unit doesn\'t move before actively attacking, Crit Rate <color=#F74848>+6%</color>.',
+        '3': 'If this unit doesn\'t move before actively attacking, Crit Rate <color=#F74848>+8%</color>.',
+        '4': 'If this unit doesn\'t move before actively attacking, Crit Rate <color=#F74848>+10%</color>.',
+        '5': 'If this unit doesn\'t move before actively attacking, Crit Rate <color=#F74848>+14%</color>.',
+        '6': 'If this unit doesn\'t move before actively attacking, Crit Rate <color=#F74848>+16%</color>.',
+        '7': 'If this unit doesn\'t move before actively attacking, Crit Rate <color=#F74848>+18%</color>.',
+    },
 }
 
 

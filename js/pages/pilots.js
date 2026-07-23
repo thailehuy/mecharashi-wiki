@@ -158,7 +158,7 @@ Pages.pilots = {
       var weapon = allWeapons.find(function (w) { return w.pilot === p.PilotName; });
       var weaponIconHtml = '';
       if (weapon) {
-        var wImgSrc = WEAPON_IMG_BASE + encodeURIComponent(weapon.icon) + '.png';
+        var wImgSrc = weaponIconSrc(weapon);
         weaponIconHtml = '<img class="pilot-weapon-icon" src="' + wImgSrc + '" alt="' + $('<span>').text(weapon.name).html() + '" loading="lazy" />';
       }
 
@@ -360,7 +360,7 @@ Pages.pilots = {
     });
     if (!ps) return '';
 
-    var weaponImgSrc = WEAPON_IMG_BASE + encodeURIComponent(weapon.icon) + '.png';
+    var weaponImgSrc = weaponIconSrc(weapon);
     var desc = this._parseEffects(ps.SpecificEffects || '');
 
     return (

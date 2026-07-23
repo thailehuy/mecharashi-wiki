@@ -1278,6 +1278,13 @@ window.GlossaryData = {
     }
   },
   "skill": {
+    "62304": {
+      "name": "Weapon Switch",
+      "Ap": "0",
+      "CD": "0",
+      "icon": "Icon_skill_order_5008",
+      "effect": "Switches the weapons equipped on hand with weapon carried in backpack. Can continue to act with remaining movement. Can only be used 1 time per turn. Can only be used if both hands are intact."
+    },
     "20342": {
       "name": "Shock Wave",
       "Ap": "1",
