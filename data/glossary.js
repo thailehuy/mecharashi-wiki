@@ -1849,7 +1849,7 @@ window.GlossaryData = {
       "Ap": "0",
       "CD": "0",
       "icon": "Icon_skill_order_5162",
-      "effect": "Desinates <color=#F74848>1</color> enemy within <color=#F74848>4</color> adjacent tiles of [Bertha] or within <terrian ID=3014501 /> as <buf ID=3014505>[Rival]</buf>. Only <color=#F74848>1</color> <buf ID=3014505>[Rival]</buf> can exist at a time. Can continue to act with remaining movement. This skill can be used <color=#F74848>1</color> time per turn."
+      "effect": "Desinates <color=#F74848>1</color> enemy within <color=#F74848>4</color> adjacent tiles of [Bertha] or within <terrian ID=3014501 /> as <buf ID=3014505>[Arch-Nemesis]</buf>. Only <color=#F74848>1</color> <buf ID=3014505>[Arch-Nemesis]</buf> can exist at a time. Can continue to act with remaining movement. This skill can be used <color=#F74848>1</color> time per turn."
     }
   },
   "terrain": {

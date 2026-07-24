@@ -6544,7 +6544,7 @@
       "Talent0_2Ability": {
         "ID": "301450",
         "name": "Morning Star",
-        "SpecificEffects": "At the start of battle, automatically deploys <terrian ID=3014501 />. Can use command skills <skill mainSkill=301452>[Deploy Sentry]</skill> and <skill mainSkill=301453>[Rivalry]</skill>. When an ally attack an enemy within range, performs <buf ID=900002>[Link Attack]</buf> with Sniper Rifle, dealing <color=#F74848>0.35x</color> DMG, prioritizing hitting the same part with the ally's attack, up to <color=#F74848>3</color> times per turn. If the <buf ID=900002>[Link Attack]</buf> destroys a part, it is considered as if the ally destroys a part. When using skills other than <buf ID=900153>[Weapon Skill]</buf>, gains <color=#F74848>1</color> stack of <buf ID=3014508>[Determination]</buf>, up to <color=#F74848>5</color> stacks.",
+        "SpecificEffects": "At the start of battle, automatically deploys <terrian ID=3014501 />. Can use command skills <skill mainSkill=301452>[Deploy Sentry]</skill> and <skill mainSkill=301453>[Rivalry]</skill>. When an ally attack an enemy within range, performs <buf ID=900002>[Link Attack]</buf> with Sniper Rifle, dealing <color=#F74848>0.35x</color> DMG, prioritizing hitting the same part with the ally's attack, up to <color=#F74848>3</color> times per turn. If the <buf ID=900002>[Link Attack]</buf> destroys a part, it is considered as if the ally destroys a part. When performing attacks other than <buf ID=900153>[Weapon Skill]</buf>, gains <color=#F74848>1</color> stack of <buf ID=3014508>[Determination]</buf>, up to <color=#F74848>5</color> stacks.",
         "BufCarried": "3014501/3014502/3014503/3014512/3014520/3014509/3014517/3014519/3014514/3014515",
         "SkillIcon": "Icon_skill_talent_5163",
         "icon": "Icon_skill_talent_5163",
@@ -6554,7 +6554,7 @@
       "Talent3_5Ability": {
         "ID": "301451",
         "name": "Morning Star",
-        "SpecificEffects": "At the start of battle, automatically deploys <terrian ID=3014501 />. Can use command skills <skill mainSkill=301452>[Deploy Sentry]</skill> and <skill mainSkill=301453>[Rivalry]</skill>. When an ally attack an enemy within range, performs <buf ID=900002>[Link Attack]</buf> with Sniper Rifle, dealing <color=#F74848>0.35x</color> DMG, prioritizing hitting the same part with the ally's attack, up to <color=#F74848>3</color> times per turn. If the <buf ID=900002>[Link Attack]</buf> destroys a part, it is considered as if the ally destroys a part. When using skills other than <buf ID=900153>[Weapon Skill]</buf>, gains <color=#F74848>1</color> stack of <buf ID=3014508>[Determination]</buf>, up to <color=#F74848>5</color> stacks.\n<terrian ID=3014501 /> area increases to <color=#F74848>4</color> tiles.",
+        "SpecificEffects": "At the start of battle, automatically deploys <terrian ID=3014501 />. Can use command skills <skill mainSkill=301452>[Deploy Sentry]</skill> and <skill mainSkill=301453>[Rivalry]</skill>. When an ally attack an enemy within range, performs <buf ID=900002>[Link Attack]</buf> with Sniper Rifle, dealing <color=#F74848>0.35x</color> DMG, prioritizing hitting the same part with the ally's attack, up to <color=#F74848>3</color> times per turn. If the <buf ID=900002>[Link Attack]</buf> destroys a part, it is considered as if the ally destroys a part. When performing attacks other than <buf ID=900153>[Weapon Skill]</buf>, gains <color=#F74848>1</color> stack of <buf ID=3014508>[Determination]</buf>, up to <color=#F74848>5</color> stacks.\n<terrian ID=3014501 /> area increases to <color=#F74848>4</color> tiles.",
         "BufCarried": "3014501/3014502/3014503/3014512/3014520/3014509/3014518/3014511/3014514/3014515",
         "SkillIcon": "Icon_skill_talent_5163",
         "icon": "Icon_skill_talent_5163",
@@ -6905,7 +6905,7 @@
                 "PassiveSkill": {
                   "ID": "301444",
                   "name": "I Am Legend! 2",
-                  "SpecificEffects": "When actively attacking with Sniper Rifle, if the target is <color=#F74848>4</color> or more tiles away, skill multiplier increases by <color=#F74848>0.15</color> and [Normal Attack] can enters <buf ID=900014>[Aiming]</buf> Mode.",
+                  "SpecificEffects": "When attacking with Sniper Rifle, if the target is <color=#F74848>4</color> or more tiles away, skill multiplier increases by <color=#F74848>0.15</color> and [Normal Attack] can enters <buf ID=900014>[Aiming]</buf> Mode.",
                   "BufCarried": "3014441/3014442",
                   "SkillIcon": "Icon_skill_passive_4137",
                   "icon": "Icon_skill_passive_4137",
@@ -6943,7 +6943,7 @@
                 "PassiveSkill": {
                   "ID": "301446",
                   "name": "I Am Legend! 4",
-                  "SpecificEffects": "If an enemy carrying <buf ID=3014505>[Rival]</buf> survives for <color=#F74848>1</color> turn or more, at the start of next turn, when [Bertha] actively attacks this target, ignores target's <buf ID=900160>[DMG Reduction]</buf> effect and applies <buf ID=3014464>[Global Repair Reduction]</buf>.",
+                  "SpecificEffects": "If an enemy carrying <buf ID=3014505>[Arch-Nemesis]</buf> survives for <color=#F74848>1</color> turn or more, at the start of next turn, when [Bertha] actively attacks this target, ignores target's <buf ID=900160>[DMG Reduction]</buf> effect and applies <buf ID=3014464>[Global Repair Reduction]</buf>.",
                   "BufCarried": "3014461/3014466/3014467",
                   "SkillIcon": "Icon_skill_passive_4137",
                   "icon": "Icon_skill_passive_4137",
@@ -7173,7 +7173,7 @@
           "skill": {
             "ID": "301402",
             "name": "Boiling Blood",
-            "SpecificEffects": "When an enemy carrying <buf ID=3014505>[Rival]</buf> is destroyed, [Bertha] gains <color=#F74848>2</color> stacks <buf ID=3014508>[Determination]</buf>.",
+            "SpecificEffects": "When an enemy carrying <buf ID=3014505>[Arch-Nemesis]</buf> is destroyed, [Bertha] gains <color=#F74848>2</color> stacks <buf ID=3014508>[Determination]</buf>.",
             "BufCarried": "3014021",
             "SkillIcon": "Icon_skill_passive_5110",
             "icon": "Icon_skill_passive_5110",
@@ -7199,7 +7199,7 @@
             "ID": "301403",
             "remarks": "\u8d1d\u5c14\u838e-\u4eff\u751f\u7535\u8111",
             "name": "One Shot, One Kill",
-            "describe": "Uses a Sniper Rifle to attack a target, dealing <color=#F74848>1.4x</color> DMG. This attack always hits the body and does not consume <buf ID=3014508>[Determination]</buf> stacks.",
+            "describe": "Uses a Sniper Rifle to attack a target, dealing <color=#F74848>1.4x</color> DMG. This attack always hits the body. This attack does not consume <buf ID=3014508>[Determination]</buf> stacks if it destroys a target.",
             "type": "EquipmentSkill",
             "Ap": "3",
             "matchingWeaponType": "\u72d9\u51fb\u6b65\u67aa",
@@ -7252,7 +7252,7 @@
           "skill": {
             "ID": "301405",
             "name": "Duelist Soul",
-            "SpecificEffects": "After destroying a target carrying <buf ID=3014505>[Rival]</buf>, [Bertha] gains <buf ID=3014053>[Duelist Soul]</buf>, stacking up to <color=#F74848>2</color> times.",
+            "SpecificEffects": "After destroying a target carrying <buf ID=3014505>[Arch-Nemesis]</buf>, [Bertha] gains <buf ID=3014053>[Duelist Soul]</buf>, stacking up to <color=#F74848>2</color> times.",
             "BufCarried": "3014051/3014054/3014056/3014058",
             "SkillIcon": "Icon_skill_passive_5114",
             "icon": "Icon_skill_passive_5114",
@@ -7305,7 +7305,7 @@
           "skill": {
             "ID": "301407",
             "name": "Long Range Welcome",
-            "SpecificEffects": "When [Bertha] is <color=#F74848>4</color> tiles or more away from the target, when attacking with Sniper Rifle, for each <color=#F74848>1</color> tile further than <color=#F74848>4</color>, DMG dealt increases by <color=#F74848>5%</color>, up to <color=#F74848>15%</color>.",
+            "SpecificEffects": "When [Bertha] is <color=#F74848>4</color> tiles or more away from the target, when attacking with Sniper Rifle, for each <color=#F74848>1</color> tile further than <color=#F74848>4</color>, Final DMG dealt increases by <color=#F74848>5%</color>, up to <color=#F74848>15%</color>.",
             "BufCarried": "3014071",
             "SkillIcon": "Icon_skill_passive_1178",
             "icon": "Icon_skill_passive_1178",
@@ -7607,7 +7607,7 @@
           "icon": "Icon_skill_main_1135",
           "type": "EquipmentSkill",
           "Ap": "3",
-          "describe": "Uses a Sniper Rifle to attack a target, dealing <color=#F74848>1.3x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking. If the target is carrying <buf ID=3014505>[Rival]</buf>, this attack cannot be dodged."
+          "describe": "Uses a Sniper Rifle to attack a target, dealing <color=#F74848>1.3x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking. If the target is carrying <buf ID=3014505>[Arch-Nemesis]</buf>, this attack cannot be dodged."
         }
       ]
     },
