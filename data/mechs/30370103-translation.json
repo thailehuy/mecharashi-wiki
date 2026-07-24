@@ -1,19 +1,21 @@
 {
-  "name": "恶兆",
+  "name": "Portent",
   "introduce": "ASX-666 恶兆\n安赫特公司独自研发的重型机兵，专精于远距精准射击，是晨星同盟第四世代机兵技术验证项目的重要一环。\n鉴于晨星同盟的大力支持，安赫特不计成本地为ASX-666配备了XF4C重锻框架、夹层式复合装甲和E-S全天候主动探测系统等大量尖端技术产物，确保其拥有优越的基础性能；此外还于机体全身设置了24组全波段传感器与火控辅助单元，通过整合了帕姆斯系统的「寂灭驱动」统筹完成自动化监测、判断和锁定，大幅提升远距精准射击能力的同时有效减轻了机师的操作负担，提升了参与体系作战时的作战效能。尽管性能表现如此优秀，但晨星同盟却始终没有将该机正式列装部队，据说这与其开发、测试以及转移过程中发生的一系列事故有所关联。",
   "modules": {
     "20704": {
-      "name": "寂灭驱动",
-      "SpecificEffects": "攻击后，分别使自身伤害提升<color=#F74848>4%</color>以及发动此次攻击的友军伤害提升<color=#F74848>2%</color>，可叠加<color=#F74848>5</color>层，持续<color=#F74848>2</color>回合"
+      "name": "Annihilation Drive",
+      "SpecificEffects": "After combat, increases DMG dealt by <color=#F74848>4%</color> and DMG of the ally initiated the attack by <color=#F74848>2%</color>, stacking up to <color=#F74848>5</color> times, lasting for <color=#F74848>2</color> turns."
     },
     "40014": {
       "name": "Accuracy Mod",
       "SpecificEffects": "Hit Rate <color=#F74848>+10%</color>."
     },
     "30588": {
-      "name": "遥击模组",
-      "SpecificEffects": "攻击时，伤害提升<color=#F74848>12%</color>，与目标每距离<color=#F74848>1</color>格，本次攻击造成的伤害额外提升<color=#F74848>2%</color>，最多提升<color=#F74848>24%</color>；攻击时若与目标的距离大于等于<color=#F74848>5</color>格，技能倍率提升<color=#F74848>0.1</color>，非主动攻击时效果翻倍"
+      "name": "Sniping Mod",
+      "SpecificEffects": "When attacking, DMG dealt increases by <color=#F74848>12%</color>. For each <color=#F74848>1</color> tile away from the target, DMG dealt additionally increases by <color=#F74848>2%</color>, up to <color=#F74848>24%</color>.\nIf the distance to target is <color=#F74848>5</color> tiles or more when attacking, skill multiplier increases by <color=#F74848>0.1</color>. The effect is doubled if this attack is not an active attack."
     }
   },
-  "version": "1.0"
+  "version": "3.2",
+  "dispatchVersion": "3.4",
+  "dispatchGroup": "Sparkplug"
 }

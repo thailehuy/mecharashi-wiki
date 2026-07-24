@@ -85,11 +85,11 @@ window.DispatchData = {
       "Sparkplug": "Erinys"
     },
     {
-      "cnPatch": "3.2",
+      "cnPatch": "3.4",
       "Arsenal": "MobiuX",
       "InnovativE": "Gladiator",
       "GeekX": "Flourite",
-      "Sparkplug": "Portents"
+      "Sparkplug": "Portent"
     }
   ]
 };

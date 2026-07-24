@@ -4496,6 +4496,114 @@
       "enTranslation": true
     },
     {
+      "ID": "30370103",
+      "name": "Portent",
+      "type": "Heavy",
+      "quality": "SSR",
+      "icon": "Icon_mecha_wap3037",
+      "mechaIcon": "Icon_wap3037_1",
+      "lihuiIcon": "icon_lihui_wap3037",
+      "introduce": "ASX-666 \u6076\u5146\n\u5b89\u8d6b\u7279\u516c\u53f8\u72ec\u81ea\u7814\u53d1\u7684\u91cd\u578b\u673a\u5175\uff0c\u4e13\u7cbe\u4e8e\u8fdc\u8ddd\u7cbe\u51c6\u5c04\u51fb\uff0c\u662f\u6668\u661f\u540c\u76df\u7b2c\u56db\u4e16\u4ee3\u673a\u5175\u6280\u672f\u9a8c\u8bc1\u9879\u76ee\u7684\u91cd\u8981\u4e00\u73af\u3002\n\u9274\u4e8e\u6668\u661f\u540c\u76df\u7684\u5927\u529b\u652f\u6301\uff0c\u5b89\u8d6b\u7279\u4e0d\u8ba1\u6210\u672c\u5730\u4e3aASX-666\u914d\u5907\u4e86XF4C\u91cd\u953b\u6846\u67b6\u3001\u5939\u5c42\u5f0f\u590d\u5408\u88c5\u7532\u548cE-S\u5168\u5929\u5019\u4e3b\u52a8\u63a2\u6d4b\u7cfb\u7edf\u7b49\u5927\u91cf\u5c16\u7aef\u6280\u672f\u4ea7\u7269\uff0c\u786e\u4fdd\u5176\u62e5\u6709\u4f18\u8d8a\u7684\u57fa\u7840\u6027\u80fd\uff1b\u6b64\u5916\u8fd8\u4e8e\u673a\u4f53\u5168\u8eab\u8bbe\u7f6e\u4e8624\u7ec4\u5168\u6ce2\u6bb5\u4f20\u611f\u5668\u4e0e\u706b\u63a7\u8f85\u52a9\u5355\u5143\uff0c\u901a\u8fc7\u6574\u5408\u4e86\u5e15\u59c6\u65af\u7cfb\u7edf\u7684\u300c\u5bc2\u706d\u9a71\u52a8\u300d\u7edf\u7b79\u5b8c\u6210\u81ea\u52a8\u5316\u76d1\u6d4b\u3001\u5224\u65ad\u548c\u9501\u5b9a\uff0c\u5927\u5e45\u63d0\u5347\u8fdc\u8ddd\u7cbe\u51c6\u5c04\u51fb\u80fd\u529b\u7684\u540c\u65f6\u6709\u6548\u51cf\u8f7b\u4e86\u673a\u5e08\u7684\u64cd\u4f5c\u8d1f\u62c5\uff0c\u63d0\u5347\u4e86\u53c2\u4e0e\u4f53\u7cfb\u4f5c\u6218\u65f6\u7684\u4f5c\u6218\u6548\u80fd\u3002\u5c3d\u7ba1\u6027\u80fd\u8868\u73b0\u5982\u6b64\u4f18\u79c0\uff0c\u4f46\u6668\u661f\u540c\u76df\u5374\u59cb\u7ec8\u6ca1\u6709\u5c06\u8be5\u673a\u6b63\u5f0f\u5217\u88c5\u90e8\u961f\uff0c\u636e\u8bf4\u8fd9\u4e0e\u5176\u5f00\u53d1\u3001\u6d4b\u8bd5\u4ee5\u53ca\u8f6c\u79fb\u8fc7\u7a0b\u4e2d\u53d1\u751f\u7684\u4e00\u7cfb\u5217\u4e8b\u6545\u6709\u6240\u5173\u8054\u3002",
+      "output": "2135",
+      "durable": "457",
+      "Armor": "144",
+      "fire": "120",
+      "Antiriot": "770",
+      "parts": [
+        {
+          "position": "\u8eaf\u5e72",
+          "aircraftWeight": "365",
+          "maxHp": "12706",
+          "Armor": "1412",
+          "Hit": null,
+          "Dodge": null,
+          "Antiriot": "4472"
+        },
+        {
+          "position": "\u5de6\u81c2",
+          "aircraftWeight": "190",
+          "maxHp": "6728",
+          "Armor": "941",
+          "Hit": "1852",
+          "Dodge": null,
+          "Antiriot": null
+        },
+        {
+          "position": "\u53f3\u81c2",
+          "aircraftWeight": "190",
+          "maxHp": "6728",
+          "Armor": "941",
+          "Hit": "1852",
+          "Dodge": null,
+          "Antiriot": null
+        },
+        {
+          "position": "\u817f\u90e8",
+          "aircraftWeight": "240",
+          "maxHp": "10787",
+          "Armor": "941",
+          "Hit": null,
+          "Dodge": "3287",
+          "Antiriot": null
+        }
+      ],
+      "manjiFirepower": "1176",
+      "modules": [
+        {
+          "_id": {
+            "timestamp": 1775207656,
+            "date": 1775207656000
+          },
+          "ID": "20704",
+          "name": "Annihilation Drive",
+          "SpecificEffects": "After combat, increases DMG dealt by <color=#F74848>4%</color> and DMG of the ally initiated the attack by <color=#F74848>2%</color>, stacking up to <color=#F74848>5</color> times, lasting for <color=#F74848>2</color> turns.",
+          "BufCarried": "207041/207043",
+          "SkillIcon": "Icon_skill_passive_1132",
+          "icon": "Icon_skill_passive_1132",
+          "Status": 1,
+          "weight": 400,
+          "id": "2070",
+          "level": 4
+        },
+        {
+          "_id": {
+            "timestamp": 1696936931,
+            "date": 1696936931000
+          },
+          "ID": "40014",
+          "name": "Accuracy Mod",
+          "SpecificEffects": "Hit Rate <color=#F74848>+10%</color>.",
+          "BufCarried": "400141",
+          "SkillIcon": "Icon_entry_40011",
+          "icon": "Icon_entry_40011",
+          "Status": 1,
+          "weight": 860,
+          "id": "4001",
+          "level": 4
+        },
+        {
+          "_id": {
+            "timestamp": 1775207658,
+            "date": 1775207658000
+          },
+          "ID": "30588",
+          "name": "Sniping Mod",
+          "SpecificEffects": "When attacking, DMG dealt increases by <color=#F74848>12%</color>. For each <color=#F74848>1</color> tile away from the target, DMG dealt additionally increases by <color=#F74848>2%</color>, up to <color=#F74848>24%</color>.\nIf the distance to target is <color=#F74848>5</color> tiles or more when attacking, skill multiplier increases by <color=#F74848>0.1</color>. The effect is doubled if this attack is not an active attack.",
+          "BufCarried": "305881/305882/305885/305886",
+          "SkillIcon": "Icon_entry_10108",
+          "icon": "Icon_entry_10108",
+          "Status": 1,
+          "weight": 856,
+          "id": "3058",
+          "level": 8
+        }
+      ],
+      "dispatchGroup": "Sparkplug",
+      "dispatchVersion": "3.4",
+      "version": "3.2",
+      "enTranslation": true
+    },
+    {
       "ID": "10340103",
       "name": "Prometheus",
       "type": "Light",
@@ -6294,112 +6402,6 @@
       "dispatchVersion": "1.1",
       "version": "1.0",
       "enTranslation": true
-    },
-    {
-      "ID": "30370103",
-      "name": "\u6076\u5146",
-      "type": "Heavy",
-      "quality": "SSR",
-      "icon": "Icon_mecha_wap3037",
-      "mechaIcon": "Icon_wap3037_1",
-      "lihuiIcon": "icon_lihui_wap3037",
-      "introduce": "ASX-666 \u6076\u5146\n\u5b89\u8d6b\u7279\u516c\u53f8\u72ec\u81ea\u7814\u53d1\u7684\u91cd\u578b\u673a\u5175\uff0c\u4e13\u7cbe\u4e8e\u8fdc\u8ddd\u7cbe\u51c6\u5c04\u51fb\uff0c\u662f\u6668\u661f\u540c\u76df\u7b2c\u56db\u4e16\u4ee3\u673a\u5175\u6280\u672f\u9a8c\u8bc1\u9879\u76ee\u7684\u91cd\u8981\u4e00\u73af\u3002\n\u9274\u4e8e\u6668\u661f\u540c\u76df\u7684\u5927\u529b\u652f\u6301\uff0c\u5b89\u8d6b\u7279\u4e0d\u8ba1\u6210\u672c\u5730\u4e3aASX-666\u914d\u5907\u4e86XF4C\u91cd\u953b\u6846\u67b6\u3001\u5939\u5c42\u5f0f\u590d\u5408\u88c5\u7532\u548cE-S\u5168\u5929\u5019\u4e3b\u52a8\u63a2\u6d4b\u7cfb\u7edf\u7b49\u5927\u91cf\u5c16\u7aef\u6280\u672f\u4ea7\u7269\uff0c\u786e\u4fdd\u5176\u62e5\u6709\u4f18\u8d8a\u7684\u57fa\u7840\u6027\u80fd\uff1b\u6b64\u5916\u8fd8\u4e8e\u673a\u4f53\u5168\u8eab\u8bbe\u7f6e\u4e8624\u7ec4\u5168\u6ce2\u6bb5\u4f20\u611f\u5668\u4e0e\u706b\u63a7\u8f85\u52a9\u5355\u5143\uff0c\u901a\u8fc7\u6574\u5408\u4e86\u5e15\u59c6\u65af\u7cfb\u7edf\u7684\u300c\u5bc2\u706d\u9a71\u52a8\u300d\u7edf\u7b79\u5b8c\u6210\u81ea\u52a8\u5316\u76d1\u6d4b\u3001\u5224\u65ad\u548c\u9501\u5b9a\uff0c\u5927\u5e45\u63d0\u5347\u8fdc\u8ddd\u7cbe\u51c6\u5c04\u51fb\u80fd\u529b\u7684\u540c\u65f6\u6709\u6548\u51cf\u8f7b\u4e86\u673a\u5e08\u7684\u64cd\u4f5c\u8d1f\u62c5\uff0c\u63d0\u5347\u4e86\u53c2\u4e0e\u4f53\u7cfb\u4f5c\u6218\u65f6\u7684\u4f5c\u6218\u6548\u80fd\u3002\u5c3d\u7ba1\u6027\u80fd\u8868\u73b0\u5982\u6b64\u4f18\u79c0\uff0c\u4f46\u6668\u661f\u540c\u76df\u5374\u59cb\u7ec8\u6ca1\u6709\u5c06\u8be5\u673a\u6b63\u5f0f\u5217\u88c5\u90e8\u961f\uff0c\u636e\u8bf4\u8fd9\u4e0e\u5176\u5f00\u53d1\u3001\u6d4b\u8bd5\u4ee5\u53ca\u8f6c\u79fb\u8fc7\u7a0b\u4e2d\u53d1\u751f\u7684\u4e00\u7cfb\u5217\u4e8b\u6545\u6709\u6240\u5173\u8054\u3002",
-      "output": "2135",
-      "durable": "457",
-      "Armor": "144",
-      "fire": "120",
-      "Antiriot": "770",
-      "parts": [
-        {
-          "position": "\u8eaf\u5e72",
-          "aircraftWeight": "365",
-          "maxHp": "12706",
-          "Armor": "1412",
-          "Hit": null,
-          "Dodge": null,
-          "Antiriot": "4472"
-        },
-        {
-          "position": "\u5de6\u81c2",
-          "aircraftWeight": "190",
-          "maxHp": "6728",
-          "Armor": "941",
-          "Hit": "1852",
-          "Dodge": null,
-          "Antiriot": null
-        },
-        {
-          "position": "\u53f3\u81c2",
-          "aircraftWeight": "190",
-          "maxHp": "6728",
-          "Armor": "941",
-          "Hit": "1852",
-          "Dodge": null,
-          "Antiriot": null
-        },
-        {
-          "position": "\u817f\u90e8",
-          "aircraftWeight": "240",
-          "maxHp": "10787",
-          "Armor": "941",
-          "Hit": null,
-          "Dodge": "3287",
-          "Antiriot": null
-        }
-      ],
-      "manjiFirepower": "1176",
-      "modules": [
-        {
-          "_id": {
-            "timestamp": 1775207656,
-            "date": 1775207656000
-          },
-          "ID": "20704",
-          "name": "\u5bc2\u706d\u9a71\u52a8",
-          "SpecificEffects": "\u653b\u51fb\u540e\uff0c\u5206\u522b\u4f7f\u81ea\u8eab\u4f24\u5bb3\u63d0\u5347<color=#F74848>4%</color>\u4ee5\u53ca\u53d1\u52a8\u6b64\u6b21\u653b\u51fb\u7684\u53cb\u519b\u4f24\u5bb3\u63d0\u5347<color=#F74848>2%</color>\uff0c\u53ef\u53e0\u52a0<color=#F74848>5</color>\u5c42\uff0c\u6301\u7eed<color=#F74848>2</color>\u56de\u5408",
-          "BufCarried": "207041/207043",
-          "SkillIcon": "Icon_skill_passive_1132",
-          "icon": "Icon_skill_passive_1132",
-          "Status": 1,
-          "weight": 400,
-          "id": "2070",
-          "level": 4
-        },
-        {
-          "_id": {
-            "timestamp": 1696936931,
-            "date": 1696936931000
-          },
-          "ID": "40014",
-          "name": "Accuracy Mod",
-          "SpecificEffects": "Hit Rate <color=#F74848>+10%</color>.",
-          "BufCarried": "400141",
-          "SkillIcon": "Icon_entry_40011",
-          "icon": "Icon_entry_40011",
-          "Status": 1,
-          "weight": 860,
-          "id": "4001",
-          "level": 4
-        },
-        {
-          "_id": {
-            "timestamp": 1775207658,
-            "date": 1775207658000
-          },
-          "ID": "30588",
-          "name": "\u9065\u51fb\u6a21\u7ec4",
-          "SpecificEffects": "\u653b\u51fb\u65f6\uff0c\u4f24\u5bb3\u63d0\u5347<color=#F74848>12%</color>\uff0c\u4e0e\u76ee\u6807\u6bcf\u8ddd\u79bb<color=#F74848>1</color>\u683c\uff0c\u672c\u6b21\u653b\u51fb\u9020\u6210\u7684\u4f24\u5bb3\u989d\u5916\u63d0\u5347<color=#F74848>2%</color>\uff0c\u6700\u591a\u63d0\u5347<color=#F74848>24%</color>\uff1b\u653b\u51fb\u65f6\u82e5\u4e0e\u76ee\u6807\u7684\u8ddd\u79bb\u5927\u4e8e\u7b49\u4e8e<color=#F74848>5</color>\u683c\uff0c\u6280\u80fd\u500d\u7387\u63d0\u5347<color=#F74848>0.1</color>\uff0c\u975e\u4e3b\u52a8\u653b\u51fb\u65f6\u6548\u679c\u7ffb\u500d",
-          "BufCarried": "305881/305882/305885/305886",
-          "SkillIcon": "Icon_entry_10108",
-          "icon": "Icon_entry_10108",
-          "Status": 1,
-          "weight": 856,
-          "id": "3058",
-          "level": 8
-        }
-      ],
-      "version": "1.0",
-      "enTranslation": false
     },
     {
       "ID": "10070102",

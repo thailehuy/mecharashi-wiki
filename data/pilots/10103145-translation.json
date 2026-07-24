@@ -1,16 +1,16 @@
 {
-  "PilotName": "贝尔莎",
-  "RealName": "贝尔莎·瓦格纳",
+  "PilotName": "Bertha",
+  "RealName": "Bertha Wagner",
   "Gender": "Female",
   "Profession": "Gunner",
   "Occupation": "Sniper",
   "Talent0_2Ability": {
-    "name": "明日星耀",
-    "SpecificEffects": "出击时自动部署<terrian ID=3014501 />，可以使用指令<skill mainSkill=301452>[布哨]</skill>和<skill mainSkill=301453>[宿敌标记]</skill>；敌机遭受其他队友主动攻击对战时，使用狙击步枪发动<buf ID=900002>[协力攻击]</buf>，造成<color=#F74848>0.35</color>倍伤害，优先攻击队友攻击的部位，击破的部位视作为发起攻击队友的，每回合最多发动<color=#F74848>3</color>次；使用武器技能以外的攻击时获得<color=#F74848>1</color>层<buf ID=3014508>[干劲]</buf>，可叠加<color=#F74848>5</color>层"
+    "name": "Morning Star",
+    "SpecificEffects": "At the start of battle, automatically deploys <terrian ID=3014501 />. Can use command skills <skill mainSkill=301452>[Deploy Sentry]</skill> and <skill mainSkill=301453>[Rivalry]</skill>. When an ally attack an enemy within range, performs <buf ID=900002>[Link Attack]</buf> with Sniper Rifle, dealing <color=#F74848>0.35x</color> DMG, prioritizing hitting the same part with the ally's attack, up to <color=#F74848>3</color> times per turn. If the <buf ID=900002>[Link Attack]</buf> destroys a part, it is considered as if the ally destroys a part. When using skills other than <buf ID=900153>[Weapon Skill]</buf>, gains <color=#F74848>1</color> stack of <buf ID=3014508>[Determination]</buf>, up to <color=#F74848>5</color> stacks."
   },
   "Talent3_5Ability": {
-    "name": "明日星耀",
-    "SpecificEffects": "出击时自动部署<terrian ID=3014501 />，可以使用指令<skill mainSkill=301452>[布哨]</skill>和<skill mainSkill=301453>[宿敌标记]</skill>；敌机遭受其他队友主动攻击对战时，使用狙击步枪发动<buf ID=900002>[协力攻击]</buf>，造成<color=#F74848>0.35</color>倍伤害，优先攻击队友攻击的部位，击破的部位视作为发起攻击队友的，每回合最多发动<color=#F74848>3</color>次；使用武器技能以外的攻击时获得<color=#F74848>1</color>层<buf ID=3014508>[干劲]</buf>，可叠加<color=#F74848>5</color>层；\n<terrian ID=3014501 />的领域范围扩大至<color=#F74848>4</color>格"
+    "name": "Morning Star",
+    "SpecificEffects": "At the start of battle, automatically deploys <terrian ID=3014501 />. Can use command skills <skill mainSkill=301452>[Deploy Sentry]</skill> and <skill mainSkill=301453>[Rivalry]</skill>. When an ally attack an enemy within range, performs <buf ID=900002>[Link Attack]</buf> with Sniper Rifle, dealing <color=#F74848>0.35x</color> DMG, prioritizing hitting the same part with the ally's attack, up to <color=#F74848>3</color> times per turn. If the <buf ID=900002>[Link Attack]</buf> destroys a part, it is considered as if the ally destroys a part. When using skills other than <buf ID=900153>[Weapon Skill]</buf>, gains <color=#F74848>1</color> stack of <buf ID=3014508>[Determination]</buf>, up to <color=#F74848>5</color> stacks.\n<terrian ID=3014501 /> area increases to <color=#F74848>4</color> tiles."
   },
   "skills": {
     "300001": {
@@ -19,38 +19,38 @@
       "SpecificEffects": "When destroying a target, <buf ID=900004>[Re-ATK]</buf> can be triggered, effective up to <color=#F74848>2</color> times per turn. Unable to move before attacking."
     },
     "301402": {
-      "name": "火热手感",
+      "name": "Boiling Blood",
       "describe": "",
-      "SpecificEffects": "携带<buf ID=3014505>[宿敌]</buf>的敌机被击毁时，<color=#F28341>[贝尔莎]</color>获得<color=#F74848>2</color>层<buf ID=3014508>[干劲]</buf>"
+      "SpecificEffects": "When an enemy carrying <buf ID=3014505>[Rival]</buf> is destroyed, [Bertha] gains <color=#F74848>2</color> stacks <buf ID=3014508>[Determination]</buf>."
     },
     "301403": {
-      "name": "一发入魂",
-      "describe": "使用狙击步枪攻击单个目标，造成<color=#F74848>1.4</color>倍伤害；必定攻击躯干，若击毁目标则不消耗<buf ID=3014508>[干劲]</buf>",
+      "name": "One Shot, One Kill",
+      "describe": "Uses a Sniper Rifle to attack a target, dealing <color=#F74848>1.4x</color> DMG. This attack always hits the body and does not consume <buf ID=3014508>[Determination]</buf> stacks.",
       "SpecificEffects": ""
     },
     "301404": {
-      "name": "自我声援",
+      "name": "Self-Motivated",
       "describe": "",
-      "SpecificEffects": "使用武器技能攻击时，若<color=#F28341>[贝尔莎]</color>携带<buf ID=3014508>[干劲]</buf>，每携带<color=#F74848>1</color>层，战后回复<color=#F74848>1</color>AP，最多<color=#F74848>2</color>AP，每回合最多发动<color=#F74848>1</color>次"
+      "SpecificEffects": "When actively attacking with <buf ID=900153>[Weapon Skill]</buf>, for each <color=#F74848>1</color> stack of <buf ID=3014508>[Determination]</buf> [Bertha] is carrying, restores <color=#F74848>1</color> AP, up to <color=#F74848>2</color> AP. This effect can trigger <color=#F74848>1</color> time per turn."
     },
     "301405": {
-      "name": "决斗本能",
+      "name": "Duelist Soul",
       "describe": "",
-      "SpecificEffects": "<color=#F28341>[贝尔莎]</color>击毁携带<buf ID=3014505>[宿敌]</buf>的敌机时，获得<buf ID=3014053>[决斗本能]</buf>，可叠加<color=#F74848>2</color>层"
+      "SpecificEffects": "After destroying a target carrying <buf ID=3014505>[Rival]</buf>, [Bertha] gains <buf ID=3014053>[Duelist Soul]</buf>, stacking up to <color=#F74848>2</color> times."
     },
     "301406": {
-      "name": "高光时刻",
-      "describe": "获得<color=#F74848>2</color>AP和<color=#F74848>3</color>层<buf ID=3014508>[干劲]</buf>，然后可以使用完整移动力继续行动",
+      "name": "Highlights",
+      "describe": "Immediately gains <color=#F74848>2</color> AP and <color=#F74848>3</color> stacks of <buf ID=3014508>[Determination]</buf>. Can continue to act with remaining movement.",
       "SpecificEffects": ""
     },
     "301407": {
-      "name": "超距问候",
+      "name": "Long Range Welcome",
       "describe": "",
-      "SpecificEffects": "<color=#F28341>[贝尔莎]</color>使用狙击步枪攻击<color=#F74848>4</color>格以外的单位时，每超过<color=#F74848>1</color>格，最终伤害提升<color=#F74848>5%</color>，最多<color=#F74848>15%</color>"
+      "SpecificEffects": "When [Bertha] is <color=#F74848>4</color> tiles or more away from the target, when attacking with Sniper Rifle, for each <color=#F74848>1</color> tile away, DMG dealt increases by <color=#F74848>5%</color>, up to <color=#F74848>15%</color>."
     },
     "301408": {
-      "name": "贝尔莎强袭",
-      "describe": "使用狙击步枪攻击单个目标，造成<color=#F74848>1.35</color>倍伤害，攻击前可以进行<buf ID=900014>[瞄准]</buf>；每消耗<color=#F74848>2</color>层<buf ID=3014508>[干劲]</buf>可额外攻击<color=#F74848>1</color>次，优先命中相同的部位，每次额外攻击伤害衰减<color=#F74848>15%</color>，最多衰减<color=#F74848>60%</color>",
+      "name": "Bertha Assault",
+      "describe": "Uses a Sniper Rifle to attack a target, dealing <color=#F74848>1.35x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking. For each <color=#F74848>2</color> stacks of <buf ID=3014508>[Determination]</buf>, performs <color=#F74848>1</color> additional attack, prioritizing hitting the same part. Each additional attack DMG reduces by <color=#F74848>15%</color>, up to <color=#F74848>60%</color>.",
       "SpecificEffects": ""
     }
   },
@@ -80,8 +80,8 @@
       "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
     },
     "301231": {
-      "name": "追猎标记1",
-      "SpecificEffects": "使用射击武器主动攻击击破部位时，根据部位的类型获得不同<buf ID=900141>[追猎增益]</buf>，每回合最多发动<color=#F74848>2</color>次"
+      "name": "Hunting Mark 1",
+      "SpecificEffects": "When actively attacking and breaking parts with a ranged weapon, gains <buf ID=900141>[Hunting]</buf> according to the part hit. Can trigger <color=#F74848>2</color> times per turn."
     },
     "300032": {
       "name": "AP Optimization 3",
@@ -92,20 +92,20 @@
       "SpecificEffects": "<buf ID=900004>[Re-ATK]</buf>'s effective times per turn <color=#F74848>+1</color>."
     },
     "301234": {
-      "name": "追猎标记2",
-      "SpecificEffects": "使用射击武器主动攻击时，若击毁目标，可额外移动<color=#F74848>3</color>格"
+      "name": "Hunting Mark 2",
+      "SpecificEffects": "After actively attacking and destroying a target with a ranged weapon, can additionally move <color=#F74848>3</color> tiles."
     },
     "301235": {
-      "name": "追猎标记3",
-      "SpecificEffects": "<buf ID=900142>[追猎标记1]</buf>每回合不再有发动次数限制"
+      "name": "Hunting Mark 3",
+      "SpecificEffects": "<buf ID=900142>[Hunting Mark 1]</buf> no longer has trigger limit"
     },
     "301236": {
-      "name": "追猎标记4",
-      "SpecificEffects": "行动开始时，随机获得<color=#F74848>1</color>种未获得的<buf ID=900141>[追猎增益]</buf>效果"
+      "name": "Hunting Mark 4",
+      "SpecificEffects": "At the start of action, randomly gains <color=#F74848>1</color> of unobtained <buf ID=900141>[Hunting]</buf> buffs."
     },
     "301441": {
-      "name": "我是传奇1",
-      "SpecificEffects": "攻击<terrian ID=3014501 />范围内的敌机时，暴击率提升<color=#F74848>20%</color>，暴击伤害提升<color=#F74848>10%</color>"
+      "name": "I Am Legend! 1",
+      "SpecificEffects": "When attacking enemies located within <terrian ID=3014501 />, Critical Hit chance increases by <color=#F74848>20%</color> and Critical Hit DMG increases by <color=#F74848>10%</color>."
     },
     "300042": {
       "name": "AP Optimization 4",
@@ -116,17 +116,26 @@
       "SpecificEffects": "When destroying a target, additionally restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>2</color> times per turn."
     },
     "301444": {
-      "name": "我是传奇2",
-      "SpecificEffects": "使用狙击步枪攻击<color=#F74848>4</color>格以外的单位时技能伤害倍率提升<color=#F74848>0.15</color>，且普通攻击可以进行<buf ID=900014>[瞄准]</buf>"
+      "name": "I Am Legend! 2",
+      "SpecificEffects": "When actively attacking with Sniper Rifle, if the target is <color=#F74848>4</color> or more tiles away, skill multiplier increases by <color=#F74848>0.15</color> and [Normal Attack] can enters <buf ID=900014>[Aiming]</buf> Mode."
     },
     "301445": {
-      "name": "我是传奇3",
-      "SpecificEffects": "<buf ID=900002>[协力攻击]</buf>每回合可发动<color=#F74848>5</color>次，<buf ID=3014508>[干劲]</buf>层数上限提升至<color=#F74848>8</color>层"
+      "name": "I Am Legend! 3",
+      "SpecificEffects": "<buf ID=900002>[Link Attack]</buf> limit increases to <color=#F74848>5</color> per turn. <buf ID=3014508>[Determination]</buf> max stacks increase to <color=#F74848>8</color>."
     },
     "301446": {
-      "name": "我是传奇4",
-      "SpecificEffects": "携带<buf ID=3014505>[宿敌]</buf>的敌机，若存活超过<color=#F74848>1</color>回合，下回合开始，<color=#F28341>[贝尔莎]</color>主动攻击该目标时，无视目标<buf ID=900160>[常规减伤效果]</buf>并施加<buf ID=3014464>[全局修理效果降低]</buf>"
+      "name": "I Am Legend! 4",
+      "SpecificEffects": "If an enemy carrying <buf ID=3014505>[Rival]</buf> survives for <color=#F74848>1</color> turn or more, at the start of next turn, when <color=#F28341>[Bertha]</color> actively attacks this target, ignores target's <buf ID=900160>[DMG Reduction]</buf> effect and applies <buf ID=3014464>[Global Repair Reduction]</buf>."
     }
   },
-  "version": "1.0"
+  "hiddenSkills": [
+    {
+      "name": "Surefire Plan",
+      "icon": "Icon_skill_main_1135",
+      "type": "EquipmentSkill",
+      "Ap": "3",
+      "describe": "Uses a Sniper Rifle to attack a target, dealing <color=#F74848>1.3x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking. If the target is carrying <buf ID=3014505>[Rival]</buf>, this attack cannot be dodged."
+    }
+  ],
+  "version": "3.2"
 }

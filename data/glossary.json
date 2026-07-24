@@ -1283,6 +1283,22 @@
     "900167": {
       "name": "Crusher",
       "effect": "After actively attacking with Polearm, if the hit part's HP is below a certain percentage, triggers <buf ID=900109>[Execution]</buf> after combat to immediately destroy that part."
+    },
+    "3014505": {
+      "name": "Rival",
+      "effect": "Attacks from [Bertha] cannot be blocked by <buf ID=900024>[Selfless Guard]</buf> or <buf ID=900022>[Guard]</buf>. Dodge Rate is reduced by <color=#F74848>20%</color>."
+    },
+    "3014508": {
+      "name": "Determination",
+      "effect": "DMG dealt increases by <color=#F74848>5%</color> when using <buf ID=900153>[Weapon Skill]</buf>, stacking up to <color=#F74848>5</color> times. This effect is removed upon triggering."
+    },
+    "3014053": {
+      "name": "Duelist Soul",
+      "effect": "<buf ID=3014508>[Determination]</buf> max stacks increases by <color=#F74848>1</color>. Always retains at least <color=#F74848>1</color> stack of <buf ID=3014508>[Determination]</buf> after combat. This effect can stack up to <color=#F74848>2</color> times."
+    },
+    "3014464": {
+      "name": "Global Repair Reduction",
+      "effect": "Repair AMT Received reduces by <color=#F74848>25%</color>."
     }
   },
   "skill": {
@@ -1820,6 +1836,20 @@
       "CD": "0",
       "icon": "Icon_skill_order_5157",
       "effect": "All allies gain <color=#F74848>1</color> AP and lose <color=#F74848>3</color> AP at the start of next turn. Can activate <buf ID=5010468>[Stratagem Infusion]</buf> to reduce AP loss to <color=#F74848>2</color> at the start of next turn. Can continue to act with remaining movement."
+    },
+    "301452": {
+      "name": "Deploy Sentry",
+      "Ap": "0",
+      "CD": "0",
+      "icon": "Icon_skill_order_5161",
+      "effect": "Redeploys <terrian ID=3014501 /> to a tile within <color=#F74848>4</color> adjacent tiles of [Bertha] or within <color=#F74848>3</color> adjacent tiles of the original <terrian ID=3014501 />, then triggers <buf ID=900004>[Re-ATK]</buf> in place. This skill can be used <color=#F74848>1</color> time per turn."
+    },
+    "301453": {
+      "name": "Rivalry",
+      "Ap": "0",
+      "CD": "0",
+      "icon": "Icon_skill_order_5162",
+      "effect": "Desinates <color=#F74848>1</color> enemy within <color=#F74848>4</color> adjacent tiles of [Bertha] or within <terrian ID=3014501 /> as <buf ID=3014505>[Rival]</buf>. Only <color=#F74848>1</color> <buf ID=3014505>[Rival]</buf> can exist at a time. Can continue to act with remaining movement. This skill can be used <color=#F74848>1</color> time per turn."
     }
   },
   "terrain": {
@@ -1829,7 +1859,7 @@
     },
     "3014501": {
       "name": "Sentry Zone",
-      "effect": "A zone deployed by a sniper pilot. Grants enhanced combat bonuses when attacking enemies within range."
+      "effect": "[Bertha] can ignore range and directly attack enemy units within this area when using a Sniper Rifle. This terrain can exist together with other terrains."
     },
     "4011081": {
       "name": "Restricted Area",
