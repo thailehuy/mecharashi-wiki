@@ -50,7 +50,7 @@
     },
     "301408": {
       "name": "Bertha Assault",
-      "describe": "Uses a Sniper Rifle to attack a target, dealing <color=#F74848>1.35x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking. For each <color=#F74848>2</color> stacks of <buf ID=3014508>[Determination]</buf>, performs <color=#F74848>1</color> additional attack, prioritizing hitting the same part. Each additional attack DMG reduces by <color=#F74848>15%</color>, up to <color=#F74848>60%</color>.",
+      "describe": "Uses a Sniper Rifle to attack a target, dealing <color=#F74848>1.35x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking. For each <color=#F74848>2</color> stacks of <buf ID=3014508>[Determination]</buf>, performs <color=#F74848>1</color> additional attack, prioritizing hitting the same part. Each additional attack deals <color=#F74848>-15%</color> less DMG, up to <color=#F74848>-60%</color> less than the first attack.",
       "SpecificEffects": ""
     }
   },
