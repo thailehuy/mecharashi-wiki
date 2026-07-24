@@ -6943,7 +6943,7 @@
                 "PassiveSkill": {
                   "ID": "301446",
                   "name": "I Am Legend! 4",
-                  "SpecificEffects": "If an enemy carrying <buf ID=3014505>[Arch-Nemesis]</buf> survives for <color=#F74848>1</color> turn or more, at the start of next turn, when [Bertha] actively attacks this target, ignores target's <buf ID=900160>[DMG Reduction]</buf> effect and applies <buf ID=3014464>[Global Repair Reduction]</buf>.",
+                  "SpecificEffects": "If an enemy carrying <buf ID=3014505>[Arch-Enemy]</buf> survives for <color=#F74848>1</color> turn or more, at the start of next turn, when [Bertha] actively attacks this target, ignores target's <buf ID=900160>[DMG Reduction]</buf> effect and applies <buf ID=3014464>[Global Repair Reduction]</buf>.",
                   "BufCarried": "3014461/3014466/3014467",
                   "SkillIcon": "Icon_skill_passive_4137",
                   "icon": "Icon_skill_passive_4137",
@@ -7173,7 +7173,7 @@
           "skill": {
             "ID": "301402",
             "name": "Boiling Blood",
-            "SpecificEffects": "When an enemy carrying <buf ID=3014505>[Arch-Nemesis]</buf> is destroyed, [Bertha] gains <color=#F74848>2</color> stacks <buf ID=3014508>[Determination]</buf>.",
+            "SpecificEffects": "When an enemy carrying <buf ID=3014505>[Arch-Enemy]</buf> is destroyed, [Bertha] gains <color=#F74848>2</color> stacks <buf ID=3014508>[Determination]</buf>.",
             "BufCarried": "3014021",
             "SkillIcon": "Icon_skill_passive_5110",
             "icon": "Icon_skill_passive_5110",
@@ -7252,7 +7252,7 @@
           "skill": {
             "ID": "301405",
             "name": "Duelist Soul",
-            "SpecificEffects": "After destroying a target carrying <buf ID=3014505>[Arch-Nemesis]</buf>, [Bertha] gains <buf ID=3014053>[Duelist Soul]</buf>, stacking up to <color=#F74848>2</color> times.",
+            "SpecificEffects": "After destroying a target carrying <buf ID=3014505>[Arch-Enemy]</buf>, [Bertha] gains <buf ID=3014053>[Duelist Soul]</buf>, stacking up to <color=#F74848>2</color> times.",
             "BufCarried": "3014051/3014054/3014056/3014058",
             "SkillIcon": "Icon_skill_passive_5114",
             "icon": "Icon_skill_passive_5114",
@@ -7607,7 +7607,7 @@
           "icon": "Icon_skill_main_1135",
           "type": "EquipmentSkill",
           "Ap": "3",
-          "describe": "Uses a Sniper Rifle to attack a target, dealing <color=#F74848>1.3x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking. If the target is carrying <buf ID=3014505>[Arch-Nemesis]</buf>, this attack cannot be dodged."
+          "describe": "Uses a Sniper Rifle to attack a target, dealing <color=#F74848>1.3x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking. If the target is carrying <buf ID=3014505>[Arch-Enemy]</buf>, this attack cannot be dodged."
         }
       ]
     },

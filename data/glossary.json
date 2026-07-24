@@ -1285,7 +1285,7 @@
       "effect": "After actively attacking with Polearm, if the hit part's HP is below a certain percentage, triggers <buf ID=900109>[Execution]</buf> after combat to immediately destroy that part."
     },
     "3014505": {
-      "name": "Rival",
+      "name": "Arch-Enemy",
       "effect": "Attacks from [Bertha] cannot be blocked by <buf ID=900024>[Selfless Guard]</buf> or <buf ID=900022>[Guard]</buf>. Dodge Rate is reduced by <color=#F74848>20%</color>."
     },
     "3014508": {
@@ -1845,11 +1845,11 @@
       "effect": "Redeploys <terrian ID=3014501 /> to a tile within <color=#F74848>4</color> adjacent tiles of [Bertha] or within <color=#F74848>3</color> adjacent tiles of the original <terrian ID=3014501 />, then triggers <buf ID=900004>[Re-ATK]</buf> in place. This skill can be used <color=#F74848>1</color> time per turn."
     },
     "301453": {
-      "name": "Rivalry",
+      "name": "Sworn Enemy",
       "Ap": "0",
       "CD": "0",
       "icon": "Icon_skill_order_5162",
-      "effect": "Desinates <color=#F74848>1</color> enemy within <color=#F74848>4</color> adjacent tiles of [Bertha] or within <terrian ID=3014501 /> as <buf ID=3014505>[Arch-Nemesis]</buf>. Only <color=#F74848>1</color> <buf ID=3014505>[Arch-Nemesis]</buf> can exist at a time. Can continue to act with remaining movement. This skill can be used <color=#F74848>1</color> time per turn."
+      "effect": "Desinates <color=#F74848>1</color> enemy within <color=#F74848>4</color> adjacent tiles of [Bertha] or within <terrian ID=3014501 /> as <buf ID=3014505>[Arch-Enemy]</buf>. Only <color=#F74848>1</color> <buf ID=3014505>[Arch-Enemy]</buf> can exist at a time. Can continue to act with remaining movement. This skill can be used <color=#F74848>1</color> time per turn."
     }
   },
   "terrain": {
