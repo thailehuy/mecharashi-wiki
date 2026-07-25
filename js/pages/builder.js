@@ -129,6 +129,7 @@ Pages.builder = {
         var $wrap   = $btn.closest('.builder-cselect');
         var wasOpen = $wrap.hasClass('open');
         $('.builder-cselect').removeClass('open builder-cselect-align-right builder-cselect-open-up');
+        $('#builder-tooltip').removeClass('visible');
         if (!wasOpen) {
           $wrap.addClass('open');
           self._keepMenuInViewport($wrap);
@@ -181,6 +182,10 @@ Pages.builder = {
         // The expanded details panel already shows this row's full
         // descriptions inline — the floating hover tooltip would be redundant.
         if ($(this).closest('.builder-hero-expanded').length) return;
+        // Don't pop up a tooltip while any dropdown is open — it can
+        // visually clash/overlap with the open menu (especially once it's
+        // flipped up/right to stay in the viewport).
+        if ($('.builder-cselect.open').length) return;
         var group = $(this).closest('.builder-cselect').attr('data-cselect-group');
         var html  = self._previewCache[group];
         if (!html) return;
