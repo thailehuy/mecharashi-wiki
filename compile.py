@@ -55,4 +55,7 @@ if __name__ == '__main__':
     compile_glossary()
     compile_dispatch()
     compile_exskills()
+    # Depends on the compiled pilots/mechs/weapons/backpacks/modules above —
+    # must run after them so it sees any newly-added IDs.
+    run('builder index maps', os.path.join(ROOT, 'data', 'builder', 'generate-index-maps.py'))
     print('Done.')

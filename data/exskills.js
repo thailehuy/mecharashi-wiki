@@ -123,6 +123,16 @@ window.ExSkillsData = {
       "Ap": "3",
       "Wpn": "MG",
       "SpecificEffects": "Uses a Machine Gun to attack a target, dealing <color=#F74848>1.3x</color> DMG."
+    },
+    {
+      "name": "Guard",
+      "icon": "Icon_skill_order_1031",
+      "type": "Code",
+      "Ap": "1",
+      "CD": "2",
+      "Wpn": "-",
+      "occupation": "Guardian",
+      "SpecificEffects": "Protects allies within <color=#F74848>2</color> adjacent tiles from Assault and Ranged attacks. Triggers up to <color=#F74848>2</color> times per turn and lasts <color=#F74848>2</color> turns. Additionally, gains <buf ID=7100702>[Defensive Stance I]</buf>. Can only trigger <color=#F74848>1</color> time per turn."
     }
   ]
 };

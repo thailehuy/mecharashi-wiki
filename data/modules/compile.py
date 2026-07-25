@@ -79,6 +79,26 @@ MANUAL_LEVEL_OVERRIDES = {
         '6': 'If this unit doesn\'t move before actively attacking, Crit Rate <color=#F74848>+16%</color>.',
         '7': 'If this unit doesn\'t move before actively attacking, Crit Rate <color=#F74848>+18%</color>.',
     },
+    # Supercomputer Type-R (family 2036, Mithril) only has a translated
+    # instance at its max level, and its stack-count clause changes
+    # independently of the DMG% clause (both jump between levels 1-4 rather
+    # than scaling together), so template substitution can't reconstruct
+    # every level correctly. Hand-authored from the official screenshots.
+    '2036': {
+        '1': 'When actively attacking, gains DMG <color=#F74848>+2%</color> for each debuff inflicted. Stacks up to <color=#F74848>3</color> times. Lasts for <color=#F74848>2</color> turns.',
+        '2': 'When actively attacking, gains DMG <color=#F74848>+4%</color> for each debuff inflicted. Stacks up to <color=#F74848>3</color> times. Lasts for <color=#F74848>2</color> turns.',
+        '3': 'When actively attacking, gains DMG <color=#F74848>+4%</color> for each debuff inflicted. Stacks up to <color=#F74848>5</color> times. Lasts for <color=#F74848>2</color> turns.',
+    },
+    # Rad-Synchronizer (family 2044, Shadowrabbit) only has a translated
+    # instance at its max level, and both the per-buff DMG% and the stack
+    # cap change independently across levels 1-4, so template substitution
+    # can't reconstruct every level correctly. Hand-authored from the
+    # official screenshots.
+    '2044': {
+        '1': 'For each buff gained, DMG <color=#F74848>+2%</color>, up to <color=#F74848>6%</color>. Lasts for <color=#F74848>2</color> turns.',
+        '2': 'For each buff gained, DMG <color=#F74848>+4%</color>, up to <color=#F74848>12%</color>. Lasts for <color=#F74848>2</color> turns.',
+        '3': 'For each buff gained, DMG <color=#F74848>+4%</color>, up to <color=#F74848>20%</color>. Lasts for <color=#F74848>2</color> turns.',
+    },
 }
 
 

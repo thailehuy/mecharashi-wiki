@@ -21,6 +21,12 @@ Pages.exskills = {
           ? '<span class="skill-stat"><span class="skill-stat-label">CD</span>' + (sk.CD || '0') + '</span>'
           : '');
 
+      // Guard isn't tied to a weapon type at all — it's restricted to the
+      // Guardian occupation instead, so show that in place of a Wpn badge.
+      var wpnBadge = sk.occupation
+        ? '<span class="skill-type-badge">' + $('<span>').text(sk.occupation).html() + ' only</span>'
+        : '<span class="skill-type-badge">' + $('<span>').text(sk.Wpn).html() + '</span>';
+
       return (
         '<div class="skill-card">' +
           '<div class="skill-header">' +
@@ -29,7 +35,7 @@ Pages.exskills = {
               '<div class="skill-name-row">' +
                 '<span class="skill-name">' + $('<span>').text(sk.name).html() + '</span>' +
                 '<span class="skill-type-badge ' + typeCls + '">' + typeLabel + '</span>' +
-                '<span class="skill-type-badge">' + $('<span>').text(sk.Wpn).html() + '</span>' +
+                wpnBadge +
               '</div>' +
               '<div class="skill-stats">' + statBadges + '</div>' +
             '</div>' +
