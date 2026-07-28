@@ -2,12 +2,22 @@
 
 A static fan wiki for **Mecharashi**, built with Bootstrap 5 and jQuery. Hosted on GitHub Pages.
 
+> Fan project — not affiliated with Tentree Games / BlackJack Studio, non-commercial.
+
 ## Features
 
-- Single-page app with hash-based routing (`#pilots`, `#pilots/Name`, `#sts`, `#sts/Name`)
-- **Pilots** listing with avatar, rank badge (S/A/B), version badge, and filters for Rank, Occupation, and Version
-- **STs (mechs)** listing with avatar, rank badge, version badge, and filters for Rank, Type, and Version
-- Detail pages for both Pilots and STs
+- Single-page app with hash-based routing (`#page` or `#page/param`)
+- **Pilots** listing + detail — avatar, rank/version badges, filters, talents, skills, Neural Drive
+- **STs (mechs)** listing + detail — avatar, rank/version badges, filters, firepower/HP/weight stats, modules
+- **Weapons** listing + detail — signature (SSSR) weapons grouped by release batch, paired-pilot linking, passive skills
+- **Backpacks** listing + detail — grouped by quality tier, recursive crafting-material breakdown
+- **Accessories** listing — Triggers/Reactions, Clearance Ops filters
+- **Modules** listing + detail — grouped by category, live level-preview slider, "carried by" ST list
+- **Dispatch** table — patch-version × dispatch-group grid linking to ST detail pages
+- **EX Skills** reference — universal weapon-type basic attacks/codes
+- **ST Stats** table — sortable/filterable comparison of all SSR-quality STs
+- **Builder** — mech loadout theorycrafting tool; state is encoded into a shareable Build UID (URL hash), not localStorage
+- **Glossary** — shared keyword/tooltip engine (buffs, skills, terrain, jump-links) used across all pages
 - Runtime translation loading — editing a `<ID>-translation.json` file and pushing takes effect on GitHub Pages without recompiling
 
 ## Project structure
@@ -15,29 +25,35 @@ A static fan wiki for **Mecharashi**, built with Bootstrap 5 and jQuery. Hosted 
 ```
 index.html                        # Entry point
 css/style.css                     # All styles
+compile.py                        # Orchestrates the full data build (see below)
 js/
-  app.js                          # Hash router
+  app.js                          # Hash router, nav (incl. "Misc." dropdown), version badge
   translations.js                 # Runtime translation loader
+  glossary.js                     # Keyword/tooltip engine shared by all pages
   pages/
+    home.js                       # Landing page
     pilots.js                     # Pilots listing + detail page
     sts.js                        # STs listing + detail page
+    weapons.js                    # Weapons listing + detail page
+    backpacks.js                  # Backpacks listing + detail page
+    accessories.js                # Accessories listing
+    modules.js                    # Modules listing + detail page
+    dispatch.js                   # Dispatch schedule table
+    exskills.js                   # EX Skills reference
+    ststats.js                    # ST stats comparison table
+    builder.js                    # Mech loadout builder
 data/
-  pilots/
-    list.json                     # GL pilot index
-    list-cn.json                  # CN pilot index
-    <ID>.json                     # Raw pilot detail (GL or CN)
-    <ID>-translation.json         # Display-field overrides (edit to translate)
-    compiled.js                   # Bundled pilot data loaded by index.html
-    compiled.json                 # Source for compiled.js
-    compile.py                    # Rebuild compiled.js from raw + translation files
-  mechs/
-    list.json                     # GL mech index
-    list-cn.json                  # CN mech index
-    <ID>.json                     # Raw mech detail (GL or CN)
-    <ID>-translation.json         # Display-field overrides (edit to translate)
-    compiled.js                   # Bundled mech data loaded by index.html
-    compiled.json                 # Source for compiled.js
-    compile.py                    # Rebuild compiled.js from raw + translation files
+  pilots/                         # compile.py, <ID>.json, <ID>-translation.json → compiled.js/json (PilotsData)
+  mechs/                          # compile.py, <ID>.json, <ID>-translation.json → compiled.js/json (MechsData)
+  weapons/                        # compile.py, scrape/helper scripts → compiled.js/json (WeaponsData)
+  backpacks/                      # compile.py, materials/, translations → compiled.js/json (BackpacksData)
+  modules/                        # compile.py, scrape-modules.js → compiled.js/json (ModulesData)
+  accessories/                    # compiled.js/json, icons/
+  builder/                        # generate-index-maps.py → index-maps.js/json (BuilderIndexMaps)
+  background/                     # quality-rank background images (R/SR/SSR/SSSR)
+  glossary.json                   # → GlossaryData
+  dispatch.json                   # → dispatch table data
+  exskills.json                   # → ExSkillsData
 .github/workflows/deploy.yml      # GitHub Pages deployment on push to main
 ```
 
@@ -53,7 +69,34 @@ data/
 
 - Live portrait (`mechaLive` image)
 - Firepower (from CN data), per-part HP, weight capacity and remaining
-- Modules with level display (`Lv.X/X`) and parsed descriptions
+- Modules with level display (`Lv.X/X`) and parsed descriptions (inline `ModuleSlider` preview)
+
+## Weapon detail page
+
+- Stats (ATK, Shield HP, Weight, Range, Grip, Models)
+- Paired pilot card linking to `#pilots/<name>`
+- Passive skill list with talent-keyword auto-linking back to the owning pilot's talent
+- Warning banner for CN-only versions not yet released on Global
+
+## Backpack detail page
+
+- Portrait, quality/weight/version meta, skill card
+- "Crafting Material" section listing component items/materials (quantity + composite badge), linking recursively to other backpack detail pages
+
+## Module detail page
+
+- All levels stacked with parsed effect text
+- "Carried By" list of STs that innately carry the module, linking to `#sts/<name>`
+
+## Builder (`#builder`)
+
+Mech loadout theorycrafting tool:
+
+- Pick pilot → matching mech → 3 skills + EX skill → weapons (hand/shoulder/back) → backpack → up to 4 modules
+- Computes weight budget (mech output − part weight + Power bonuses) and flags overweight builds
+- Custom searchable icon dropdowns, hover tooltips, expandable detail panels
+- Two-handed weapon auto-mirroring, Raider backpack extra slots, "Ascended Talent" checkbox
+- State is encoded into a compact base-11 **Build UID** (via `data/builder/index-maps.json`) embedded in the URL hash — "Copy Build URL" to share, paste a UID to load; supports the legacy UID format
 
 ## Data pipeline
 
@@ -73,21 +116,26 @@ curl "https://usma-activity.tentree-games.com/common/infodata/mQuery.do?appkey=1
 curl "https://ma-activity.zlongame.com/common/infodata/mQuery.do?appkey=1616148215678&target=aircraft_data&type=detail&query=<Name>"
 ```
 
+Weapons, backpacks, and modules each have their own scrape/raw-data helper scripts under `data/weapons/`, `data/backpacks/`, and `data/modules/` (e.g. `scrape-ur.js`, `scrape-modules.js`).
+
 ### Compiling
 
+Run the full pipeline from the repo root:
+
 ```bash
-python3 data/pilots/compile.py
-python3 data/mechs/compile.py
+python3 compile.py
 ```
 
-The compile scripts merge `<ID>-translation.json` over the raw data and write `compiled.js`.
+This runs, in order: `data/pilots/compile.py`, `data/mechs/compile.py`, `data/modules/compile.py`, `data/weapons/compile.py`, `data/backpacks/compile.py`, then compiles `glossary.json`/`dispatch.json`/`exskills.json` directly, and finally `data/builder/generate-index-maps.py` (which depends on IDs produced by every preceding step, so it must run last). It exits on the first subprocess failure.
+
+Each `compile.py` merges the corresponding `<ID>-translation.json` files over the raw CN-sourced data and writes `compiled.js`/`compiled.json`.
 
 ### Adding a new pilot or ST
 
 1. Add the ID/name to the relevant `list.json` (and `list-cn.json` if CN-only)
 2. Fetch the raw detail file and save as `<ID>.json`
 3. A `<ID>-translation.json` is generated automatically on the next compile run — fill in English fields for CN-only entries
-4. Run the compile script and push
+4. Run `python3 compile.py` and push
 
 ### Translating a CN-only entry (no recompile)
 

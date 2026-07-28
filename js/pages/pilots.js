@@ -13,6 +13,21 @@ var SKILL_BASE      = 'https://media.zlongame.com/media/pictures/cn/community/im
 var OCCUPATION_BASE  = 'https://media.zlongame.com/media/pictures/cn/community/img/gl/gameInfo/occupation/';
 var WEAPON_IMG_BASE  = 'https://media.zlongame.com/media/pictures/cn/community/img/gl/gameInfo/weapons/';
 
+// Release order for pilots introduced after the initial 1.0 roster, oldest to newest.
+// Pilots not listed here were part of the default 1.0 launch roster.
+var PILOT_RELEASE_ORDER = [
+  'Rosa', 'Hong', 'Sylvie', 'Eileen', 'Camilla', 'Erisa', 'Lorna', 'Kelly', 'Tiphys', 'Fia',
+  'Dean', 'Asuka', 'Shinji', 'Rei', 'Cassha', 'Arthur', 'Ophelia', 'Anderson', 'Fregata',
+  'Rosa: Judgement', 'Paloma', 'Matilda', 'Rosemary', 'Adele', 'Wyatt', 'Ada', 'Sapientia',
+  'Veronica', 'Verna', 'Collin', 'Zoey', 'Wataru', 'Toraoh', 'Martini', 'Lexuan', 'Audrey',
+  'Hailis', 'Maat', 'Hardaway', 'Tang', 'Giselle', 'Bertha',
+];
+
+function pilotReleaseOrder(pilotName) {
+  var idx = PILOT_RELEASE_ORDER.indexOf(pilotName);
+  return idx === -1 ? -1 : idx;
+}
+
 Pages.pilots = {
   title: 'Pilots',
 
@@ -144,7 +159,9 @@ Pages.pilots = {
       var searchOk = !query || (p.PilotName || '').toLowerCase().indexOf(query) !== -1;
       return rankOk && occOk && verOk && licOk && enOk && searchOk;
     }).slice().sort(function (a, b) {
-      return parseFloat(b.version) - parseFloat(a.version);
+      return pilotReleaseOrder(b.PilotName) - pilotReleaseOrder(a.PilotName)
+        || parseFloat(b.version) - parseFloat(a.version)
+        || parseFloat(b.ID) - parseFloat(a.ID);
     });
 
     var allWeapons = (window.WeaponsData || {}).weapons || [];

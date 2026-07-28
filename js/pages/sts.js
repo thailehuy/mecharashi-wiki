@@ -121,7 +121,7 @@ Pages.sts = {
       var searchOk = !query || (m.name || '').toLowerCase().indexOf(query) !== -1;
       return rankOk && typeOk && verOk && enOk && searchOk;
     }).slice().sort(function (a, b) {
-      return parseFloat(b.version) - parseFloat(a.version);
+      return parseFloat(b.version) - parseFloat(a.version) || parseFloat(b.ID) - parseFloat(a.ID);
     });
 
     var cards = filtered.map(function (m) {
