@@ -518,7 +518,7 @@ window.GlossaryData = {
     },
     "3006502": {
       "name": "Short Circuit I",
-      "effect": "At the end of the action, all body parts lose <color=#F74848>7%</color> of their maximum HP as [Fixed DMG]. This [Fixed DMG] cannot destroy parts."
+      "effect": "At the end of action, all parts take Fixed DMG equal to <color=#F74848>7%</color> of their Max HP."
     },
     "3008061": {
       "name": "Guard Disabled",
@@ -597,12 +597,12 @@ window.GlossaryData = {
       "effect": "Arthur can use Missile Launcher active attacks and <buf ID=900002>[Link Attacks]</buf> to attack units regardless of distance."
     },
     "4010082": {
-      "name": "Surprise Attack Tactic",
-      "effect": "When actively attacking, increases critical hit rate by <color=#F74848>15%</color> per stack. All stacks are consumed after <color=#F74848>1</color> attack."
+      "name": "Ambush Tactics",
+      "effect": "When actively attacking, Crit Rate <color=#F74848>+15%</color>. Stacks up to <color=#F74848>5</color> times. Removed after actively attacking."
     },
     "4010500": {
-      "name": "Intelligence",
-      "effect": "Each stack increases allies DMG dealt by <color=#F74848>0.8%</color>, up to a maximum of <color=#F74848>25</color> stacks. <color=#F74848>1</color> stack is consumed at the start of action."
+      "name": "Intel",
+      "effect": "Each stack increases all allies' DMG by <color=#F74848>0.8%</color>. Stacks up to <color=#F74848>25</color> times. Loses <color=#F74848>1</color> stack at start of action."
     },
     "5002072": {
       "name": "Repair AMT UP",
@@ -1141,12 +1141,12 @@ window.GlossaryData = {
       "effect": "Includes DMG taken reduction, Final DMG taken reduction, and DMG taken reduction from shields."
     },
     "4010044": {
-      "name": "Breakthrough Tactic",
-      "effect": "Increases Final DMG dealt by <color=#F74848>20%</color>, lasting till the end of action."
+      "name": "All-Out Assault Tactics",
+      "effect": "Final DMG <color=#F74848>+20%</color>. Removed at end of action."
     },
     "4010045": {
-      "name": "All-out Attack",
-      "effect": "Increases DMG dealt by <color=#F74848>25%</color>, lasting till the end of action."
+      "name": "Full Assault",
+      "effect": "DMG <color=#F74848>+25%</color>. Removed at end of action."
     },
     "530572": {
       "name": "Instability III",
@@ -1331,25 +1331,25 @@ window.GlossaryData = {
       "icon": "Icon_skill_order_5004"
     },
     "4010041": {
-      "name": "Breakthrough Tactic",
+      "name": "All-Out Assault Tactics",
       "Ap": "2",
       "CD": "2",
       "icon": "Icon_skill_order_5141",
-      "effect": "Grants <color=#F74848>1</color> ally anywhere on the map <buf ID=4010044>[Breakthrough Tactic]</buf>. Gains <color=#F74848>2</color> stacks of <buf ID=4010500>[Intelligence]</buf>."
+      "effect": "Designates a single ally across the map to receive <buf ID=4010044>[All-Out Assault Tactics]</buf> until the end of action, while gaining <color=#F74848>2</color> stacks of <buf ID=4010500>[Intel]</buf>."
     },
     "4010042": {
-      "name": "Maneuver Tactic",
+      "name": "Maneuverability Tactics",
       "Ap": "3",
       "CD": "2",
       "icon": "Icon_skill_order_5142",
-      "effect": "Grants all allies <buf ID=7100901>[Movement UP]</buf>, lasting for <color=#F74848>1</color> turn. Gains <color=#F74848>3</color> stacks of <buf ID=4010500>[Intelligence]</buf>."
+      "effect": "Grants all allies <buf ID=7100901>[Movement UP]</buf>, lasting for <color=#F74848>1</color> turn, while gaining <color=#F74848>3</color> stacks of <buf ID=4010500>[Intel]</buf>."
     },
     "4010043": {
-      "name": "All-out Tactic",
+      "name": "Total Offensive Tactics",
       "Ap": "4",
       "CD": "2",
       "icon": "Icon_skill_order_5143",
-      "effect": "Grants all allies <buf ID=4010045>[All-out Attack]</buf>. Gains <color=#F74848>4</color> stacks of <buf ID=4010500>[Intelligence]</buf>."
+      "effect": "Grants other allies <buf ID=4010045>[Full Assault]</buf> until the end of action, while gaining <color=#F74848>4</color> stacks of <buf ID=4010500>[Intel]</buf>."
     },
     "500746": {
       "name": "Position Recall",

@@ -3,12 +3,12 @@
   "introduce": "LTX-219 裁决者\n由拉尼亚凯亚研发的中型战术机兵。是日弩-朝阳研发线上推出的新型机兵。\nLTX-219继承了日弩系战术机兵与朝阳系工程机兵的双重优势。其核心织火者芯片能根据战局战况，实时协调战术武器的发射策略和打击方式。尤其在弹药装填与打击面方面，相比前代机型有了质变般的提升。而迭代自日弩的行进驱动装置L1102-X，则能让裁决者在运动战中获得更佳稳定的发射条件，将战场移动对打击精度的干扰降低到最低。",
   "modules": {
     "20474": {
-      "name": "Fireweaver Mod",
-      "SpecificEffects": "Increases DMG by <color=#F74848>15%</color> when attacking with tactical weapons. For each <color=#F74848>1</color> round of ammo in the magazine, further increases DMG by <color=#F74848>5%</color>, up to <color=#F74848>35%</color>."
+      "name": "Fireweaver Chip",
+      "SpecificEffects": "When attacking with a Tactical Weapon, DMG <color=#F74848>+15%</color>. For every <color=#F74848>1</color> Ammo in the Magazine, DMG is further increased by <color=#F74848>5%</color>, up to <color=#F74848>35%</color>."
     },
     "30368": {
-      "name": "Bombing Mod",
-      "SpecificEffects": "When using Code skills to attack, DMG increases by <color=#F74848>18%</color>.\nWhen actively attacking with tactical weapons, if <color=#F74848>3</color> or more targets are hit, randomly reload <color=#F74848>1</color> ammo of tactical weapon. Can be activated <color=#F74848>1</color> times per turn."
+      "name": "Bombardment Mod",
+      "SpecificEffects": "When executing Code attacks, DMG <color=#F74848>+18%</color>.\nWhen actively attacking with a Tactical Weapon, if <color=#F74848>3</color> or more targets are hit, randomly reloads <color=#F74848>1</color> Ammo after combat, up to <color=#F74848>1</color> time per turn."
     },
     "40074": {
       "name": "DMG Taken Mod",
