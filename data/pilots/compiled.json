@@ -20951,7 +20951,7 @@
             "ID": "102006",
             "remarks": "\u5409\u8d5b\u5c14-\u4eff\u751f\u7535\u8111",
             "name": "Crow Hunt",
-            "describe": "Uses Cutter to attack up to <color=#F74848>4</color> targets, dealing <color=#F74848>1.2x</color> AoE DMG. Can selects the same target repeatedly. Attacks on the same target deal <color=#F74848>40%</color> more DMG. After attacking, if any part HP is below <color=#F74848>2/3</color> of <buf ID=900167>[Crusher]</buf> threshold, that part is destroyed immediately.",
+            "describe": "Uses Cutter to attack up to <color=#F74848>4</color> targets, dealing <color=#F74848>1.2x</color> AoE DMG. Can selects the same target repeatedly. Repeat attacks on the same target deal <color=#F74848>40%</color> DMG. After attacking, if any part HP is below <color=#F74848>2/3</color> of <buf ID=900167>[Crusher]</buf> threshold, that part is destroyed immediately.",
             "type": "SpecialAssault",
             "Ap": "4",
             "matchingWeaponType": "\u6d6e\u6e38\u70ae",
@@ -51931,13 +51931,12 @@
           "skill": {
             "ID": "600001",
             "name": "Entrenched 1",
-            "SpecificEffects": "\u53d1\u52a8<buf ID=900022>[\u63f4\u62a4\u9632\u5fa1]</buf>\uff0c\u66ff\u76f8\u90bb<color=#F74848>1</color>\u683c\u7684\u53cb\u519b\u62b5\u6321\u7a81\u51fb\u4e0e\u5c04\u51fb\u6b66\u5668\u7684\u653b\u51fb\uff0c\u6bcf\u56de\u5408\u6700\u591a\u53d1\u52a8<color=#F74848>2</color>\u6b21",
+            "SpecificEffects": "Trigger <buf ID=900022>[Guard]</buf> to protect adjacent (<color=#F74848>1</color> tile) allies from Assault and Ranged attacks, effective up to <color=#F74848>2</color> times per turn.",
             "BufCarried": "6000011",
             "SkillIcon": "Icon_skill_passive_2001",
             "icon": "Icon_skill_passive_2001",
             "Status": 1,
-            "weight": 3680,
-            "describe": "Protects allies within <color=#F74848>2</color> adjacent tiles from Assault and Ranged attacks. Triggers up to <color=#F74848>2</color> times per turn and lasts <color=#F74848>2</color> turns. Additionally, gains <buf ID=900022>[Defensive Stance I]</buf>. Can only trigger <color=#F74848>1</color> time per turn."
+            "weight": 3680
           }
         },
         {

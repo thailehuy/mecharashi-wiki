@@ -15,8 +15,8 @@
   "skills": {
     "600001": {
       "name": "Entrenched 1",
-      "describe": "Protects allies within <color=#F74848>2</color> adjacent tiles from Assault and Ranged attacks. Triggers up to <color=#F74848>2</color> times per turn and lasts <color=#F74848>2</color> turns. Additionally, gains <buf ID=900022>[Defensive Stance I]</buf>. Can only trigger <color=#F74848>1</color> time per turn.",
-      "SpecificEffects": ""
+      "describe": "",
+      "SpecificEffects": "Trigger <buf ID=900022>[Guard]</buf> to protect adjacent (<color=#F74848>1</color> tile) allies from Assault and Ranged attacks, effective up to <color=#F74848>2</color> times per turn."
     },
     "600802": {
       "name": "Mobile Interception",
