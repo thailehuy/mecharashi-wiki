@@ -326,6 +326,7 @@ Pages.pilots = {
           '</div>' +
         '</div>' +
       '</div>' +
+      this._renderStats(p.stats, p.statRanks) +
       '<div class="detail-layout">' +
         '<div class="detail-portrait-col">' +
           '<div class="detail-portrait" style="background-image:url(\'' + bgSrc + '\')">' +
@@ -345,6 +346,62 @@ Pages.pilots = {
       this._renderSummonSkills(p) +
       this._renderFormSkillGroups(p) +
       this._renderNeuralDrive(p.NeuralDriveTemplate)
+    );
+  },
+
+  _renderStats: function (stats, ranks) {
+    if (!stats) return '';
+    var STAT_LABEL = {
+      Combat: 'Melee',
+      Shooting: 'Ranged',
+      Assault: 'Assault',
+      Tactics: 'Tactical',
+      Engineering: 'Mechanic',
+      Defense: 'Defense',
+      InitialPilotAPValue_PilotAPInitBase: 'Initial Base Starting AP',
+      MaximumPilotAPValue_PilotAPMaxBase: 'Max Base Starting AP',
+      PilotAPRecoveryperTurn_PilotAPRecoverBase: 'AP Recovery'
+    };
+    var LEFT_COLUMN  = ['Combat', 'Shooting', 'Assault', 'Tactics', 'Engineering'];
+    var RIGHT_COLUMN = ['Defense', 'InitialPilotAPValue_PilotAPInitBase',
+      'MaximumPilotAPValue_PilotAPMaxBase', 'PilotAPRecoveryperTurn_PilotAPRecoverBase'];
+
+    ranks = ranks || {};
+    var rankValues = LEFT_COLUMN.map(function (k) { return ranks[k]; }).filter(function (r) { return r != null; });
+    var bestRank = rankValues.length ? Math.min.apply(Math, rankValues) : null;
+
+    var self = this;
+    function column(keys) {
+      var rows = keys
+        .filter(function (k) { return stats[k] !== undefined && stats[k] !== ''; })
+        .map(function (k) { return self._statRow(STAT_LABEL[k], stats[k], ranks[k], ranks[k] != null && ranks[k] === bestRank); })
+        .join('');
+      return '<div class="pilot-stats-col">' + rows + '</div>';
+    }
+
+    var leftHtml  = column(LEFT_COLUMN);
+    var rightHtml = column(RIGHT_COLUMN);
+    if (!leftHtml && !rightHtml) return '';
+
+    return (
+      '<div class="pilot-stats-panel skill-card">' +
+        '<div class="pilot-stats-grid">' +
+          leftHtml +
+          rightHtml +
+        '</div>' +
+      '</div>'
+    );
+  },
+
+  _statRow: function (label, value, rank, isBest) {
+    var rankHtml = rank
+      ? '<span class="stat-rank' + (isBest ? ' stat-rank-top' : '') + '">#<span class="stat-rank-num">' + rank + '</span></span>'
+      : '';
+    return (
+      '<div class="stat-row">' +
+        '<span class="stat-label">' + label + '</span>' +
+        '<span class="stat-value">' + $('<span>').text(String(value)).html() + rankHtml + '</span>' +
+      '</div>'
     );
   },
 

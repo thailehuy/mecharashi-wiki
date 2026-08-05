@@ -1069,6 +1069,17 @@
       "AlternateSkins": [
         "B"
       ],
+      "stats": {
+        "Combat": "5216",
+        "Assault": "2339",
+        "Shooting": "1455",
+        "Tactics": "1897",
+        "Defense": "4331",
+        "Engineering": "1307",
+        "InitialPilotAPValue_PilotAPInitBase": "5",
+        "MaximumPilotAPValue_PilotAPMaxBase": "5",
+        "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
+      },
       "version": "2.3",
       "enTranslation": true,
       "hiddenSkills": [
@@ -1080,7 +1091,14 @@
           "CD": "0",
           "describe": "Uses two Alter-Blades to attack a single target, dealing <color=#F74848>2\u00d70.85</color> DMG."
         }
-      ]
+      ],
+      "statRanks": {
+        "Combat": 3,
+        "Shooting": 36,
+        "Assault": 20,
+        "Tactics": 23,
+        "Engineering": 33
+      }
     },
     {
       "ID": "10103159",
@@ -2155,6 +2173,17 @@
       "AlternateSkins": [
         "B"
       ],
+      "stats": {
+        "Combat": "2329",
+        "Assault": "5027",
+        "Shooting": "2486",
+        "Tactics": "914",
+        "Defense": "4062",
+        "Engineering": "1700",
+        "InitialPilotAPValue_PilotAPInitBase": "5",
+        "MaximumPilotAPValue_PilotAPMaxBase": "5",
+        "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
+      },
       "version": "2.2",
       "enTranslation": true,
       "hiddenSkills": [
@@ -2166,7 +2195,14 @@
           "CD": "0",
           "describe": "Uses a Flamethrower to attack a target, dealing <color=#F74848>1.3x</color> DMG and <color=#F74848>10%</color> <buf ID=900139>[Fire DMG]</buf> to other targets along the path. After combat, applies <terrian ID=4003081 /> to all tiles along the attack path, lasting <color=#F74848>2</color> turns."
         }
-      ]
+      ],
+      "statRanks": {
+        "Combat": 18,
+        "Shooting": 11,
+        "Assault": 6,
+        "Tactics": 46,
+        "Engineering": 26
+      }
     },
     {
       "ID": "10103135",
@@ -3256,8 +3292,26 @@
       ],
       "AllowedMechaDriveList_DriveAllowedList": "Medium",
       "AlternateSkins": "",
+      "stats": {
+        "Combat": "1278",
+        "Assault": "3322",
+        "Shooting": "1592",
+        "Tactics": "1435",
+        "Defense": "3883",
+        "Engineering": "5027",
+        "InitialPilotAPValue_PilotAPInitBase": "5",
+        "MaximumPilotAPValue_PilotAPMaxBase": "5",
+        "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
+      },
       "version": "1.7",
-      "enTranslation": true
+      "enTranslation": true,
+      "statRanks": {
+        "Combat": 45,
+        "Shooting": 31,
+        "Assault": 15,
+        "Tactics": 33,
+        "Engineering": 4
+      }
     },
     {
       "ID": "10103127",
@@ -4350,8 +4404,26 @@
       ],
       "AllowedMechaDriveList_DriveAllowedList": "Medium",
       "AlternateSkins": "",
+      "stats": {
+        "Combat": "1356",
+        "Assault": "2526",
+        "Shooting": "1857",
+        "Tactics": "4774",
+        "Defense": "3694",
+        "Engineering": "2359",
+        "InitialPilotAPValue_PilotAPInitBase": "5",
+        "MaximumPilotAPValue_PilotAPMaxBase": "6",
+        "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
+      },
       "version": "1.6",
-      "enTranslation": true
+      "enTranslation": true,
+      "statRanks": {
+        "Combat": 43,
+        "Shooting": 26,
+        "Assault": 16,
+        "Tactics": 6,
+        "Engineering": 11
+      }
     },
     {
       "ID": "10103149",
@@ -5447,8 +5519,26 @@
       "AlternateSkins": [
         "B"
       ],
+      "stats": {
+        "Combat": "5167",
+        "Assault": "5167",
+        "Shooting": "600",
+        "Tactics": "550",
+        "Defense": "4156",
+        "Engineering": "826",
+        "InitialPilotAPValue_PilotAPInitBase": "5",
+        "MaximumPilotAPValue_PilotAPMaxBase": "5",
+        "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
+      },
       "version": "1.5",
-      "enTranslation": true
+      "enTranslation": true,
+      "statRanks": {
+        "Combat": 6,
+        "Shooting": 68,
+        "Assault": 2,
+        "Tactics": 67,
+        "Engineering": 51
+      }
     },
     {
       "ID": "10103165",
@@ -6518,6 +6608,17 @@
       ],
       "AllowedMechaDriveList_DriveAllowedList": "Medium",
       "AlternateSkins": "",
+      "stats": {
+        "Combat": "2064",
+        "Assault": "2221",
+        "Shooting": "4978",
+        "Tactics": "1749",
+        "Defense": "3942",
+        "Engineering": "1592",
+        "InitialPilotAPValue_PilotAPInitBase": "5",
+        "MaximumPilotAPValue_PilotAPMaxBase": "5",
+        "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
+      },
       "version": "2.8",
       "enTranslation": true,
       "hiddenSkills": [
@@ -6529,7 +6630,14 @@
           "CD": "0",
           "describe": "Uses a Sniper Rifle to attack a target, dealing <color=#F74848>1x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking."
         }
-      ]
+      ],
+      "statRanks": {
+        "Combat": 28,
+        "Shooting": 2,
+        "Assault": 28,
+        "Tactics": 26,
+        "Engineering": 28
+      }
     },
     {
       "ID": "10103145",
@@ -7599,6 +7707,17 @@
       ],
       "AllowedMechaDriveList_DriveAllowedList": "Heavy",
       "AlternateSkins": "",
+      "stats": {
+        "Combat": "2241",
+        "Assault": "1425",
+        "Shooting": "4946",
+        "Tactics": "2084",
+        "Defense": "3942",
+        "Engineering": "1916",
+        "InitialPilotAPValue_PilotAPInitBase": "5",
+        "MaximumPilotAPValue_PilotAPMaxBase": "5",
+        "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
+      },
       "version": "3.2",
       "enTranslation": true,
       "hiddenSkills": [
@@ -7609,7 +7728,14 @@
           "Ap": "3",
           "describe": "Uses a Sniper Rifle to attack a target, dealing <color=#F74848>1.3x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking. If the target is carrying <buf ID=3014505>[Arch-Enemy]</buf>, this attack cannot be dodged."
         }
-      ]
+      ],
+      "statRanks": {
+        "Combat": 20,
+        "Shooting": 3,
+        "Assault": 46,
+        "Tactics": 17,
+        "Engineering": 20
+      }
     },
     {
       "ID": "10103146",
@@ -8700,8 +8826,26 @@
       ],
       "AllowedMechaDriveList_DriveAllowedList": "Heavy",
       "AlternateSkins": "",
+      "stats": {
+        "Combat": "5157",
+        "Assault": "885",
+        "Shooting": "3017",
+        "Tactics": "2870",
+        "Defense": "4183",
+        "Engineering": "432",
+        "InitialPilotAPValue_PilotAPInitBase": "5",
+        "MaximumPilotAPValue_PilotAPMaxBase": "5",
+        "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
+      },
       "version": "1.1",
-      "enTranslation": true
+      "enTranslation": true,
+      "statRanks": {
+        "Combat": 7,
+        "Shooting": 10,
+        "Assault": 57,
+        "Tactics": 10,
+        "Engineering": 73
+      }
     },
     {
       "ID": "10103126",
@@ -9798,8 +9942,26 @@
       "AlternateSkins": [
         "B"
       ],
+      "stats": {
+        "Combat": "1435",
+        "Assault": "5027",
+        "Shooting": "2064",
+        "Tactics": "2221",
+        "Defense": "3883",
+        "Engineering": "1907",
+        "InitialPilotAPValue_PilotAPInitBase": "5",
+        "MaximumPilotAPValue_PilotAPMaxBase": "5",
+        "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
+      },
       "version": "1.6",
-      "enTranslation": true
+      "enTranslation": true,
+      "statRanks": {
+        "Combat": 40,
+        "Shooting": 22,
+        "Assault": 6,
+        "Tactics": 14,
+        "Engineering": 21
+      }
     },
     {
       "ID": "10103109",
@@ -10972,8 +11134,26 @@
       "AlternateSkins": [
         "B"
       ],
+      "stats": {
+        "Combat": "2411",
+        "Assault": "953",
+        "Shooting": "612",
+        "Tactics": "816",
+        "Defense": "1964",
+        "Engineering": "882",
+        "InitialPilotAPValue_PilotAPInitBase": "5",
+        "MaximumPilotAPValue_PilotAPMaxBase": "5",
+        "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
+      },
       "version": "1.0",
-      "enTranslation": true
+      "enTranslation": true,
+      "statRanks": {
+        "Combat": 16,
+        "Shooting": 66,
+        "Assault": 55,
+        "Tactics": 50,
+        "Engineering": 48
+      }
     },
     {
       "ID": "10103162",
@@ -12044,6 +12224,17 @@
       ],
       "AllowedMechaDriveList_DriveAllowedList": "Medium",
       "AlternateSkins": "",
+      "stats": {
+        "Combat": "1425",
+        "Assault": "1592",
+        "Shooting": "3538",
+        "Tactics": "4924",
+        "Defense": "3952",
+        "Engineering": "1111",
+        "InitialPilotAPValue_PilotAPInitBase": "5",
+        "MaximumPilotAPValue_PilotAPMaxBase": "6",
+        "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
+      },
       "version": "2.5",
       "enTranslation": true,
       "hiddenSkills": [
@@ -12055,7 +12246,14 @@
           "CD": "0",
           "describe": "Uses cutter to attack all targets within a <color=#F74848>2</color>-tile radius area, dealing <color=#F74848>1.2x</color> AoE DMG."
         }
-      ]
+      ],
+      "statRanks": {
+        "Combat": 41,
+        "Shooting": 8,
+        "Assault": 43,
+        "Tactics": 3,
+        "Engineering": 38
+      }
     },
     {
       "ID": "10103130",
@@ -13149,8 +13347,26 @@
       ],
       "AllowedMechaDriveList_DriveAllowedList": "Heavy",
       "AlternateSkins": "",
+      "stats": {
+        "Combat": "5196",
+        "Assault": "2260",
+        "Shooting": "1641",
+        "Tactics": "2103",
+        "Defense": "4137",
+        "Engineering": "1189",
+        "InitialPilotAPValue_PilotAPInitBase": "5",
+        "MaximumPilotAPValue_PilotAPMaxBase": "5",
+        "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
+      },
       "version": "1.4",
-      "enTranslation": true
+      "enTranslation": true,
+      "statRanks": {
+        "Combat": 4,
+        "Shooting": 30,
+        "Assault": 24,
+        "Tactics": 16,
+        "Engineering": 35
+      }
     },
     {
       "ID": "10103121",
@@ -14321,8 +14537,26 @@
       ],
       "AllowedMechaDriveList_DriveAllowedList": "Heavy",
       "AlternateSkins": "",
+      "stats": {
+        "Combat": "1418",
+        "Assault": "1853",
+        "Shooting": "780",
+        "Tactics": "567",
+        "Defense": "2389",
+        "Engineering": "638",
+        "InitialPilotAPValue_PilotAPInitBase": "5",
+        "MaximumPilotAPValue_PilotAPMaxBase": "5",
+        "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
+      },
       "version": "1.0",
-      "enTranslation": true
+      "enTranslation": true,
+      "statRanks": {
+        "Combat": 42,
+        "Shooting": 57,
+        "Assault": 38,
+        "Tactics": 65,
+        "Engineering": 62
+      }
     },
     {
       "ID": "10103113",
@@ -15410,8 +15644,26 @@
       "AlternateSkins": [
         "B"
       ],
+      "stats": {
+        "Combat": "1189",
+        "Assault": "1690",
+        "Shooting": "3027",
+        "Tactics": "4727",
+        "Defense": "3711",
+        "Engineering": "2192",
+        "InitialPilotAPValue_PilotAPInitBase": "5",
+        "MaximumPilotAPValue_PilotAPMaxBase": "6",
+        "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
+      },
       "version": "1.0",
-      "enTranslation": true
+      "enTranslation": true,
+      "statRanks": {
+        "Combat": 47,
+        "Shooting": 9,
+        "Assault": 40,
+        "Tactics": 7,
+        "Engineering": 14
+      }
     },
     {
       "ID": "10103136",
@@ -16485,6 +16737,17 @@
       "AlternateSkins": [
         "B"
       ],
+      "stats": {
+        "Combat": "2241",
+        "Assault": "4924",
+        "Shooting": "1435",
+        "Tactics": "1592",
+        "Defense": "3952",
+        "Engineering": "2398",
+        "InitialPilotAPValue_PilotAPInitBase": "5",
+        "MaximumPilotAPValue_PilotAPMaxBase": "5",
+        "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
+      },
       "version": "1.2",
       "enTranslation": true,
       "hiddenSkills": [
@@ -16495,7 +16758,14 @@
           "Ap": "3",
           "describe": "Uses a Flamethrower to attack the main target, dealing <color=#F74848>1.2x</color> DMG and dealing <color=#F74848>20%</color> <buf ID=900065>[Flame DMG]</buf> to other targets in the path. After combat, applies <terrian ID=4003081 /> to tiles hit, lasting for <color=#F74848>2</color> turns."
         }
-      ]
+      ],
+      "statRanks": {
+        "Combat": 20,
+        "Shooting": 37,
+        "Assault": 10,
+        "Tactics": 30,
+        "Engineering": 9
+      }
     },
     {
       "ID": "10103137",
@@ -17591,8 +17861,26 @@
       "AlternateSkins": [
         "B"
       ],
+      "stats": {
+        "Combat": "1474",
+        "Assault": "4398",
+        "Shooting": "1582",
+        "Tactics": "4562",
+        "Defense": "3787",
+        "Engineering": "1012",
+        "InitialPilotAPValue_PilotAPInitBase": "5",
+        "MaximumPilotAPValue_PilotAPMaxBase": "6",
+        "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
+      },
       "version": "1.4",
-      "enTranslation": true
+      "enTranslation": true,
+      "statRanks": {
+        "Combat": 39,
+        "Shooting": 33,
+        "Assault": 12,
+        "Tactics": 8,
+        "Engineering": 41
+      }
     },
     {
       "ID": "10103152",
@@ -18692,8 +18980,26 @@
       "AlternateSkins": [
         "B"
       ],
+      "stats": {
+        "Combat": "2015",
+        "Assault": "4997",
+        "Shooting": "1229",
+        "Tactics": "1386",
+        "Defense": "4092",
+        "Engineering": "2801",
+        "InitialPilotAPValue_PilotAPInitBase": "5",
+        "MaximumPilotAPValue_PilotAPMaxBase": "5",
+        "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
+      },
       "version": "1.8",
-      "enTranslation": true
+      "enTranslation": true,
+      "statRanks": {
+        "Combat": 31,
+        "Shooting": 40,
+        "Assault": 8,
+        "Tactics": 34,
+        "Engineering": 7
+      }
     },
     {
       "ID": "10103122",
@@ -19875,8 +20181,26 @@
       "AlternateSkins": [
         "B"
       ],
+      "stats": {
+        "Combat": "696",
+        "Assault": "2487",
+        "Shooting": "1121",
+        "Tactics": "554",
+        "Defense": "1839",
+        "Engineering": "980",
+        "InitialPilotAPValue_PilotAPInitBase": "5",
+        "MaximumPilotAPValue_PilotAPMaxBase": "5",
+        "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
+      },
       "version": "1.0",
-      "enTranslation": true
+      "enTranslation": true,
+      "statRanks": {
+        "Combat": 65,
+        "Shooting": 46,
+        "Assault": 17,
+        "Tactics": 66,
+        "Engineering": 43
+      }
     },
     {
       "ID": "10103168",
@@ -20948,6 +21272,17 @@
       ],
       "AllowedMechaDriveList_DriveAllowedList": "Medium",
       "AlternateSkins": "",
+      "stats": {
+        "Combat": "5308",
+        "Assault": "1022",
+        "Shooting": "678",
+        "Tactics": "5129",
+        "Defense": "3955",
+        "Engineering": "747",
+        "InitialPilotAPValue_PilotAPInitBase": "5",
+        "MaximumPilotAPValue_PilotAPMaxBase": "5",
+        "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
+      },
       "version": "3.2",
       "enTranslation": true,
       "hiddenSkills": [
@@ -20958,7 +21293,14 @@
           "Ap": "2",
           "describe": "Uses a Polearm to attack a target, dealing <color=#F74848>0.9x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking. Can consume <color=#F74848>0%</color>/<color=#F74848>50%</color> of current <buf ID=900166>[Feral Spirit]</buf> stacks to deal <buf ID=900017>[Fixed DMG]</buf> to the part hit equal to the amount consumed."
         }
-      ]
+      ],
+      "statRanks": {
+        "Combat": 1,
+        "Shooting": 63,
+        "Assault": 53,
+        "Tactics": 1,
+        "Engineering": 55
+      }
     },
     {
       "ID": "10103112",
@@ -22134,8 +22476,26 @@
       "AlternateSkins": [
         "B"
       ],
+      "stats": {
+        "Combat": "2389",
+        "Assault": "1157",
+        "Shooting": "678",
+        "Tactics": "882",
+        "Defense": "1993",
+        "Engineering": "541",
+        "InitialPilotAPValue_PilotAPInitBase": "5",
+        "MaximumPilotAPValue_PilotAPMaxBase": "5",
+        "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
+      },
       "version": "1.0",
-      "enTranslation": true
+      "enTranslation": true,
+      "statRanks": {
+        "Combat": 17,
+        "Shooting": 63,
+        "Assault": 50,
+        "Tactics": 48,
+        "Engineering": 69
+      }
     },
     {
       "ID": "10103174",
@@ -23204,6 +23564,17 @@
       ],
       "AllowedMechaDriveList_DriveAllowedList": "Medium",
       "AlternateSkins": "",
+      "stats": {
+        "Combat": null,
+        "Assault": null,
+        "Shooting": null,
+        "Tactics": null,
+        "Defense": null,
+        "Engineering": null,
+        "InitialPilotAPValue_PilotAPInitBase": "5",
+        "MaximumPilotAPValue_PilotAPMaxBase": "6",
+        "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
+      },
       "version": "3.0",
       "enTranslation": true,
       "hiddenSkills": [
@@ -24738,6 +25109,17 @@
       ],
       "AllowedMechaDriveList_DriveAllowedList": "Medium",
       "AlternateSkins": "",
+      "stats": {
+        "Combat": "1759",
+        "Assault": "2241",
+        "Shooting": "1592",
+        "Tactics": "4885",
+        "Defense": "3991",
+        "Engineering": "2074",
+        "InitialPilotAPValue_PilotAPInitBase": "5",
+        "MaximumPilotAPValue_PilotAPMaxBase": "6",
+        "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
+      },
       "version": "3.1",
       "enTranslation": true,
       "hiddenSkills": [
@@ -24748,7 +25130,14 @@
           "Ap": "3",
           "describe": "Uses a Rocket Launcher to attack all targets within a <range type=1>1-tile cross-shaped</range> area, dealing <color=#F74848>0.25x</color> AoE DMG to all parts of targets hit. This attack always triggers <buf ID=4012502>[Structural Damage]</buf>'s <buf ID=900017>[Fixed DMG]</buf>. For each <color=#F74848>1</color> stack of <buf ID=4012502>[Structural Damage]</buf>, triggers <color=#F74848>1</color> more instance of <buf ID=900017>[Fixed DMG]</buf>, up to <color=#F74848>3</color> instances. Removes all <buf ID=4012502>[Structural Damage]</buf> stacks from the target after triggering."
         }
-      ]
+      ],
+      "statRanks": {
+        "Combat": 33,
+        "Shooting": 31,
+        "Assault": 26,
+        "Tactics": 4,
+        "Engineering": 16
+      }
     },
     {
       "ID": "10103110",
@@ -25924,8 +26313,26 @@
       "AlternateSkins": [
         "B"
       ],
+      "stats": {
+        "Combat": "2496",
+        "Assault": "674",
+        "Shooting": "1223",
+        "Tactics": "745",
+        "Defense": "1906",
+        "Engineering": "607",
+        "InitialPilotAPValue_PilotAPInitBase": "5",
+        "MaximumPilotAPValue_PilotAPMaxBase": "5",
+        "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
+      },
       "version": "1.0",
-      "enTranslation": true
+      "enTranslation": true,
+      "statRanks": {
+        "Combat": 14,
+        "Shooting": 41,
+        "Assault": 66,
+        "Tactics": 54,
+        "Engineering": 65
+      }
     },
     {
       "ID": "10103141",
@@ -27018,8 +27425,26 @@
       "AlternateSkins": [
         "B"
       ],
+      "stats": {
+        "Combat": "2477",
+        "Assault": "2310",
+        "Shooting": "4794",
+        "Tactics": "1307",
+        "Defense": "3883",
+        "Engineering": "1808",
+        "InitialPilotAPValue_PilotAPInitBase": "5",
+        "MaximumPilotAPValue_PilotAPMaxBase": "5",
+        "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
+      },
       "version": "1.3",
-      "enTranslation": true
+      "enTranslation": true,
+      "statRanks": {
+        "Combat": 15,
+        "Shooting": 6,
+        "Assault": 22,
+        "Tactics": 35,
+        "Engineering": 23
+      }
     },
     {
       "ID": "10103179",
@@ -28093,6 +28518,17 @@
       "AlternateSkins": [
         "B"
       ],
+      "stats": {
+        "Combat": "1543",
+        "Assault": "5090",
+        "Shooting": "1700",
+        "Tactics": "2015",
+        "Defense": "4043",
+        "Engineering": "2172",
+        "InitialPilotAPValue_PilotAPInitBase": "5",
+        "MaximumPilotAPValue_PilotAPMaxBase": "5",
+        "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
+      },
       "version": "2.8",
       "enTranslation": true,
       "hiddenSkills": [
@@ -28104,7 +28540,14 @@
           "CD": "0",
           "describe": "Uses a Machine Gun to attack a target, dealing <color=#F74848>1.3x</color> DMG. When possessing <color=#F74848>80</color> or more stacks of <buf ID=2020505>[Overcharged Bullet]</buf>, Hit Rate and Critical Hit chance increase by <color=#F74848>20%</color>."
         }
-      ]
+      ],
+      "statRanks": {
+        "Combat": 38,
+        "Shooting": 29,
+        "Assault": 4,
+        "Tactics": 21,
+        "Engineering": 15
+      }
     },
     {
       "ID": "10103138",
@@ -29194,8 +29637,26 @@
       ],
       "AllowedMechaDriveList_DriveAllowedList": "Medium",
       "AlternateSkins": "",
+      "stats": {
+        "Combat": "1101",
+        "Assault": "1425",
+        "Shooting": "3538",
+        "Tactics": "1592",
+        "Defense": "3952",
+        "Engineering": "4924",
+        "InitialPilotAPValue_PilotAPInitBase": "5",
+        "MaximumPilotAPValue_PilotAPMaxBase": "5",
+        "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
+      },
       "version": "1.2",
-      "enTranslation": true
+      "enTranslation": true,
+      "statRanks": {
+        "Combat": 49,
+        "Shooting": 8,
+        "Assault": 46,
+        "Tactics": 30,
+        "Engineering": 5
+      }
     },
     {
       "ID": "10103129",
@@ -30265,6 +30726,17 @@
       ],
       "AllowedMechaDriveList_DriveAllowedList": "Heavy",
       "AlternateSkins": "",
+      "stats": {
+        "Combat": "5272",
+        "Assault": "1651",
+        "Shooting": "2260",
+        "Tactics": "1494",
+        "Defense": "4082",
+        "Engineering": "1799",
+        "InitialPilotAPValue_PilotAPInitBase": "5",
+        "MaximumPilotAPValue_PilotAPMaxBase": "5",
+        "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
+      },
       "version": "3.0",
       "enTranslation": true,
       "hiddenSkills": [
@@ -30275,7 +30747,14 @@
           "Ap": "2",
           "describe": "Uses a Chainsaw to attack a target, dealing <color=#F74848>1.1x</color> DMG. Consumes all <buf ID=5009234>[Vengeful Edge]</buf> on target hit. This attack always hits the part with lowest HP."
         }
-      ]
+      ],
+      "statRanks": {
+        "Combat": 2,
+        "Shooting": 14,
+        "Assault": 42,
+        "Tactics": 31,
+        "Engineering": 24
+      }
     },
     {
       "ID": "10103124",
@@ -31455,8 +31934,26 @@
       "AlternateSkins": [
         "B"
       ],
+      "stats": {
+        "Combat": "2066",
+        "Assault": "2334",
+        "Shooting": "722",
+        "Tactics": "319",
+        "Defense": "1848",
+        "Engineering": "403",
+        "InitialPilotAPValue_PilotAPInitBase": "5",
+        "MaximumPilotAPValue_PilotAPMaxBase": "5",
+        "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
+      },
       "version": "1.0",
-      "enTranslation": true
+      "enTranslation": true,
+      "statRanks": {
+        "Combat": 27,
+        "Shooting": 59,
+        "Assault": 21,
+        "Tactics": 75,
+        "Engineering": 74
+      }
     },
     {
       "ID": "10103164",
@@ -32530,6 +33027,17 @@
       ],
       "AllowedMechaDriveList_DriveAllowedList": "Light",
       "AlternateSkins": "",
+      "stats": {
+        "Combat": "4940",
+        "Assault": "747",
+        "Shooting": "1022",
+        "Tactics": "678",
+        "Defense": "4307",
+        "Engineering": "5137",
+        "InitialPilotAPValue_PilotAPInitBase": "5",
+        "MaximumPilotAPValue_PilotAPMaxBase": "5",
+        "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
+      },
       "version": "2.7",
       "enTranslation": true,
       "hiddenSkills": [
@@ -32541,7 +33049,14 @@
           "CD": "0",
           "describe": "Uses a Knuckle or Pilebunker to attack a target, dealing <color=#F74848>1.1x</color> DMG. Can enter <buf ID=900014>[Aiming]</buf> Mode before attacking."
         }
-      ]
+      ],
+      "statRanks": {
+        "Combat": 10,
+        "Shooting": 47,
+        "Assault": 62,
+        "Tactics": 60,
+        "Engineering": 2
+      }
     },
     {
       "ID": "10103139",
@@ -33642,8 +34157,26 @@
       "AlternateSkins": [
         "B"
       ],
+      "stats": {
+        "Combat": "1700",
+        "Assault": "5100",
+        "Shooting": "2329",
+        "Tactics": "1858",
+        "Defense": "4033",
+        "Engineering": "1543",
+        "InitialPilotAPValue_PilotAPInitBase": "5",
+        "MaximumPilotAPValue_PilotAPMaxBase": "5",
+        "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
+      },
       "version": "2.1",
-      "enTranslation": true
+      "enTranslation": true,
+      "statRanks": {
+        "Combat": 36,
+        "Shooting": 12,
+        "Assault": 3,
+        "Tactics": 25,
+        "Engineering": 29
+      }
     },
     {
       "ID": "10103111",
@@ -34818,8 +35351,26 @@
       "AlternateSkins": [
         "B"
       ],
+      "stats": {
+        "Combat": "789",
+        "Assault": "718",
+        "Shooting": "1498",
+        "Tactics": "434",
+        "Defense": "1817",
+        "Engineering": "2389",
+        "InitialPilotAPValue_PilotAPInitBase": "5",
+        "MaximumPilotAPValue_PilotAPMaxBase": "5",
+        "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
+      },
       "version": "1.0",
-      "enTranslation": true
+      "enTranslation": true,
+      "statRanks": {
+        "Combat": 57,
+        "Shooting": 35,
+        "Assault": 63,
+        "Tactics": 74,
+        "Engineering": 10
+      }
     },
     {
       "ID": "10103106",
@@ -35993,8 +36544,26 @@
       ],
       "AllowedMechaDriveList_DriveAllowedList": "Medium",
       "AlternateSkins": "",
+      "stats": {
+        "Combat": "838",
+        "Assault": "461",
+        "Shooting": "1214",
+        "Tactics": "2259",
+        "Defense": "1720",
+        "Engineering": "1139",
+        "InitialPilotAPValue_PilotAPInitBase": "5",
+        "MaximumPilotAPValue_PilotAPMaxBase": "6",
+        "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
+      },
       "version": "1.0",
-      "enTranslation": true
+      "enTranslation": true,
+      "statRanks": {
+        "Combat": 55,
+        "Shooting": 42,
+        "Assault": 73,
+        "Tactics": 12,
+        "Engineering": 37
+      }
     },
     {
       "ID": "10103105",
@@ -37174,8 +37743,26 @@
       "AlternateSkins": [
         "B"
       ],
+      "stats": {
+        "Combat": "594",
+        "Assault": "1250",
+        "Shooting": "2316",
+        "Tactics": "523",
+        "Defense": "1761",
+        "Engineering": "1179",
+        "InitialPilotAPValue_PilotAPInitBase": "5",
+        "MaximumPilotAPValue_PilotAPMaxBase": "5",
+        "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
+      },
       "version": "1.0",
-      "enTranslation": true
+      "enTranslation": true,
+      "statRanks": {
+        "Combat": 69,
+        "Shooting": 13,
+        "Assault": 48,
+        "Tactics": 71,
+        "Engineering": 36
+      }
     },
     {
       "ID": "10103134",
@@ -38280,8 +38867,26 @@
         "B",
         "C"
       ],
+      "stats": {
+        "Combat": "5120",
+        "Assault": "2103",
+        "Shooting": "1189",
+        "Tactics": "2260",
+        "Defense": "4214",
+        "Engineering": "1641",
+        "InitialPilotAPValue_PilotAPInitBase": "5",
+        "MaximumPilotAPValue_PilotAPMaxBase": "5",
+        "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
+      },
       "version": "1.7",
-      "enTranslation": true
+      "enTranslation": true,
+      "statRanks": {
+        "Combat": 8,
+        "Shooting": 44,
+        "Assault": 32,
+        "Tactics": 11,
+        "Engineering": 27
+      }
     },
     {
       "ID": "10103153",
@@ -39377,8 +39982,26 @@
       ],
       "AllowedMechaDriveList_DriveAllowedList": "Heavy",
       "AlternateSkins": "",
+      "stats": {
+        "Combat": "1966",
+        "Assault": "2133",
+        "Shooting": "4904",
+        "Tactics": "1474",
+        "Defense": "3760",
+        "Engineering": "2290",
+        "InitialPilotAPValue_PilotAPInitBase": "5",
+        "MaximumPilotAPValue_PilotAPMaxBase": "5",
+        "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
+      },
       "version": "2.0",
-      "enTranslation": true
+      "enTranslation": true,
+      "statRanks": {
+        "Combat": 32,
+        "Shooting": 5,
+        "Assault": 31,
+        "Tactics": 32,
+        "Engineering": 12
+      }
     },
     {
       "ID": "10103150",
@@ -40477,8 +41100,26 @@
       "AlternateSkins": [
         "B"
       ],
+      "stats": {
+        "Combat": "2329",
+        "Assault": "4457",
+        "Shooting": "2172",
+        "Tactics": "1700",
+        "Defense": "4622",
+        "Engineering": "1229",
+        "InitialPilotAPValue_PilotAPInitBase": "5",
+        "MaximumPilotAPValue_PilotAPMaxBase": "5",
+        "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
+      },
       "version": "1.5",
-      "enTranslation": true
+      "enTranslation": true,
+      "statRanks": {
+        "Combat": 18,
+        "Shooting": 16,
+        "Assault": 11,
+        "Tactics": 27,
+        "Engineering": 34
+      }
     },
     {
       "ID": "10103107",
@@ -41659,8 +42300,26 @@
         "B",
         "C"
       ],
+      "stats": {
+        "Combat": "643",
+        "Assault": "2268",
+        "Shooting": "598",
+        "Tactics": "2066",
+        "Defense": "1813",
+        "Engineering": "301",
+        "InitialPilotAPValue_PilotAPInitBase": "5",
+        "MaximumPilotAPValue_PilotAPMaxBase": "5",
+        "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
+      },
       "version": "1.0",
-      "enTranslation": true
+      "enTranslation": true,
+      "statRanks": {
+        "Combat": 68,
+        "Shooting": 69,
+        "Assault": 23,
+        "Tactics": 18,
+        "Engineering": 76
+      }
     },
     {
       "ID": "10103154",
@@ -42761,8 +43420,26 @@
       "AlternateSkins": [
         "B"
       ],
+      "stats": {
+        "Combat": "786",
+        "Assault": "4940",
+        "Shooting": "1179",
+        "Tactics": "5127",
+        "Defense": "3946",
+        "Engineering": "865",
+        "InitialPilotAPValue_PilotAPInitBase": "5",
+        "MaximumPilotAPValue_PilotAPMaxBase": "6",
+        "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
+      },
       "version": "2.0",
-      "enTranslation": true
+      "enTranslation": true,
+      "statRanks": {
+        "Combat": 58,
+        "Shooting": 45,
+        "Assault": 9,
+        "Tactics": 2,
+        "Engineering": 49
+      }
     },
     {
       "ID": "10103133",
@@ -43846,8 +44523,26 @@
       ],
       "AllowedMechaDriveList_DriveAllowedList": "Medium",
       "AlternateSkins": "",
+      "stats": {
+        "Combat": "2290",
+        "Assault": "1799",
+        "Shooting": "1317",
+        "Tactics": "4833",
+        "Defense": "3832",
+        "Engineering": "2457",
+        "InitialPilotAPValue_PilotAPInitBase": "5",
+        "MaximumPilotAPValue_PilotAPMaxBase": "6",
+        "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
+      },
       "version": "2.1",
-      "enTranslation": true
+      "enTranslation": true,
+      "statRanks": {
+        "Combat": 19,
+        "Shooting": 39,
+        "Assault": 39,
+        "Tactics": 5,
+        "Engineering": 8
+      }
     },
     {
       "ID": "10103157",
@@ -44939,6 +45634,17 @@
       "AlternateSkins": [
         "B"
       ],
+      "stats": {
+        "Combat": "1700",
+        "Assault": "3430",
+        "Shooting": "1229",
+        "Tactics": "1071",
+        "Defense": "3991",
+        "Engineering": "5157",
+        "InitialPilotAPValue_PilotAPInitBase": "5",
+        "MaximumPilotAPValue_PilotAPMaxBase": "5",
+        "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
+      },
       "version": "2.3",
       "enTranslation": true,
       "summonSkills": [
@@ -44975,7 +45681,14 @@
           "CD": "2",
           "icon": "Icon_skill_order_5138"
         }
-      ]
+      ],
+      "statRanks": {
+        "Combat": 36,
+        "Shooting": 40,
+        "Assault": 14,
+        "Tactics": 39,
+        "Engineering": 1
+      }
     },
     {
       "ID": "10103120",
@@ -46146,8 +46859,26 @@
       "AlternateSkins": [
         "B"
       ],
+      "stats": {
+        "Combat": "718",
+        "Assault": "1569",
+        "Shooting": "647",
+        "Tactics": "505",
+        "Defense": "1761",
+        "Engineering": "2457",
+        "InitialPilotAPValue_PilotAPInitBase": "5",
+        "MaximumPilotAPValue_PilotAPMaxBase": "5",
+        "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
+      },
       "version": "1.0",
-      "enTranslation": true
+      "enTranslation": true,
+      "statRanks": {
+        "Combat": 61,
+        "Shooting": 65,
+        "Assault": 44,
+        "Tactics": 72,
+        "Engineering": 8
+      }
     },
     {
       "ID": "10102102",
@@ -47324,8 +48055,26 @@
       ],
       "AllowedMechaDriveList_DriveAllowedList": "Medium",
       "AlternateSkins": "",
+      "stats": {
+        "Combat": "425",
+        "Assault": "616",
+        "Shooting": "2161",
+        "Tactics": "2008",
+        "Defense": "1813",
+        "Engineering": "660",
+        "InitialPilotAPValue_PilotAPInitBase": "5",
+        "MaximumPilotAPValue_PilotAPMaxBase": "5",
+        "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
+      },
       "version": "1.0",
-      "enTranslation": true
+      "enTranslation": true,
+      "statRanks": {
+        "Combat": 74,
+        "Shooting": 18,
+        "Assault": 69,
+        "Tactics": 22,
+        "Engineering": 60
+      }
     },
     {
       "ID": "10103151",
@@ -48417,8 +49166,26 @@
       ],
       "AllowedMechaDriveList_DriveAllowedList": "Medium",
       "AlternateSkins": "",
+      "stats": {
+        "Combat": "1081",
+        "Assault": "5017",
+        "Shooting": "5017",
+        "Tactics": "934",
+        "Defense": "3893",
+        "Engineering": "560",
+        "InitialPilotAPValue_PilotAPInitBase": "5",
+        "MaximumPilotAPValue_PilotAPMaxBase": "5",
+        "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
+      },
       "version": "1.5",
-      "enTranslation": true
+      "enTranslation": true,
+      "statRanks": {
+        "Combat": 50,
+        "Shooting": 1,
+        "Assault": 7,
+        "Tactics": 45,
+        "Engineering": 67
+      }
     },
     {
       "ID": "10103119",
@@ -49589,8 +50356,26 @@
       ],
       "AllowedMechaDriveList_DriveAllowedList": "Light",
       "AlternateSkins": "",
+      "stats": {
+        "Combat": "2978",
+        "Assault": "2310",
+        "Shooting": "4717",
+        "Tactics": "1140",
+        "Defense": "3942",
+        "Engineering": "1474",
+        "InitialPilotAPValue_PilotAPInitBase": "5",
+        "MaximumPilotAPValue_PilotAPMaxBase": "5",
+        "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
+      },
       "version": "1.0",
-      "enTranslation": true
+      "enTranslation": true,
+      "statRanks": {
+        "Combat": 12,
+        "Shooting": 7,
+        "Assault": 22,
+        "Tactics": 38,
+        "Engineering": 30
+      }
     },
     {
       "ID": "10103166",
@@ -50663,6 +51448,17 @@
       ],
       "AllowedMechaDriveList_DriveAllowedList": "Light",
       "AlternateSkins": "",
+      "stats": {
+        "Combat": "698",
+        "Assault": "5237",
+        "Shooting": "767",
+        "Tactics": "1042",
+        "Defense": "4049",
+        "Engineering": "5039",
+        "InitialPilotAPValue_PilotAPInitBase": "5",
+        "MaximumPilotAPValue_PilotAPMaxBase": "5",
+        "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
+      },
       "version": "3.1",
       "enTranslation": true,
       "hiddenSkills": [
@@ -50674,7 +51470,14 @@
           "CD": "0",
           "describe": "Uses a Flamethrower to attack a target, dealing <color=#F74848>1.2x</color> DMG and <color=#F74848>20%</color> <buf ID=900139>[Fire DMG]</buf> to other targets along the path. After combat, applies <terrian ID=4003081 /> to all tiles along the attack path, lasting <color=#F74848>2</color> turns. Can activate <buf ID=5010468>[Stratagem Infusion]</buf> to increase <buf ID=900139>[Fire DMG]</buf> to <color=#F74848>40%</color>."
         }
-      ]
+      ],
+      "statRanks": {
+        "Combat": 64,
+        "Shooting": 58,
+        "Assault": 1,
+        "Tactics": 40,
+        "Engineering": 3
+      }
     },
     {
       "ID": "10103131",
@@ -51767,8 +52570,26 @@
       ],
       "AllowedMechaDriveList_DriveAllowedList": "Heavy",
       "AlternateSkins": "",
+      "stats": {
+        "Combat": "2565",
+        "Assault": "4331",
+        "Shooting": "2241",
+        "Tactics": "1268",
+        "Defense": "4548",
+        "Engineering": "1592",
+        "InitialPilotAPValue_PilotAPInitBase": "5",
+        "MaximumPilotAPValue_PilotAPMaxBase": "5",
+        "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
+      },
       "version": "1.3",
-      "enTranslation": true
+      "enTranslation": true,
+      "statRanks": {
+        "Combat": 13,
+        "Shooting": 15,
+        "Assault": 13,
+        "Tactics": 36,
+        "Engineering": 28
+      }
     },
     {
       "ID": "10103172",
@@ -52842,6 +53663,17 @@
       ],
       "AllowedMechaDriveList_DriveAllowedList": "Light",
       "AlternateSkins": "",
+      "stats": {
+        "Combat": "2113",
+        "Assault": "5068",
+        "Shooting": "1504",
+        "Tactics": "1651",
+        "Defense": "4256",
+        "Engineering": "1966",
+        "InitialPilotAPValue_PilotAPInitBase": "5",
+        "MaximumPilotAPValue_PilotAPMaxBase": "5",
+        "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
+      },
       "version": "2.6",
       "enTranslation": true,
       "hiddenSkills": [
@@ -52853,7 +53685,14 @@
           "CD": "0",
           "describe": "Uses a Shotgun to attack a target, dealing <color=#F74848>1.4x</color> DMG. Before attacking, gains <color=#F74848>1</color> random debuff, lasting for <color=#F74848>2</color> turns."
         }
-      ]
+      ],
+      "statRanks": {
+        "Combat": 25,
+        "Shooting": 34,
+        "Assault": 5,
+        "Tactics": 28,
+        "Engineering": 19
+      }
     },
     {
       "ID": "10103144",
@@ -53914,6 +54753,17 @@
       "AlternateSkins": [
         "B"
       ],
+      "stats": {
+        "Combat": "2084",
+        "Assault": "2241",
+        "Shooting": "1592",
+        "Tactics": "4477",
+        "Defense": "4384",
+        "Engineering": "1749",
+        "InitialPilotAPValue_PilotAPInitBase": "5",
+        "MaximumPilotAPValue_PilotAPMaxBase": "5",
+        "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
+      },
       "version": "2.4",
       "enTranslation": true,
       "hiddenSkills": [
@@ -53933,7 +54783,14 @@
           "Ap": "1",
           "icon": "Icon_skill_order_1031"
         }
-      ]
+      ],
+      "statRanks": {
+        "Combat": 26,
+        "Shooting": 31,
+        "Assault": 26,
+        "Tactics": 9,
+        "Engineering": 25
+      }
     },
     {
       "ID": "10103155",
@@ -55002,6 +55859,17 @@
       ],
       "AllowedMechaDriveList_DriveAllowedList": "Light",
       "AlternateSkins": "",
+      "stats": {
+        "Combat": "1592",
+        "Assault": "2408",
+        "Shooting": "4924",
+        "Tactics": "2241",
+        "Defense": "3952",
+        "Engineering": "1425",
+        "InitialPilotAPValue_PilotAPInitBase": "5",
+        "MaximumPilotAPValue_PilotAPMaxBase": "5",
+        "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
+      },
       "version": "2.4",
       "enTranslation": true,
       "hiddenSkills": [
@@ -55013,7 +55881,14 @@
           "CD": "0",
           "describe": "Attacks a target with Light Rifle, dealing <color=#F74848>1.25x</color> DMG. If there are no allies within <color=#F74848>2</color> adjacent tiles of this unit, can enter <buf ID=900014>[Aiming]</buf> Mode before attacking."
         }
-      ]
+      ],
+      "statRanks": {
+        "Combat": 37,
+        "Shooting": 4,
+        "Assault": 18,
+        "Tactics": 13,
+        "Engineering": 32
+      }
     },
     {
       "ID": "10103171",
@@ -56084,6 +56959,17 @@
       "AlternateSkins": [
         "B"
       ],
+      "stats": {
+        "Combat": "5177",
+        "Assault": "1897",
+        "Shooting": "2044",
+        "Tactics": "1602",
+        "Defense": "4361",
+        "Engineering": "1455",
+        "InitialPilotAPValue_PilotAPInitBase": "5",
+        "MaximumPilotAPValue_PilotAPMaxBase": "5",
+        "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
+      },
       "version": "2.6",
       "enTranslation": true,
       "hiddenSkills": [
@@ -56095,7 +56981,14 @@
           "CD": "0",
           "describe": "Uses an Alter-Blade to attack a target, dealing <color=#F74848>1.6x</color> DMG. This attack always hits the part with highest HP."
         }
-      ]
+      ],
+      "statRanks": {
+        "Combat": 5,
+        "Shooting": 23,
+        "Assault": 37,
+        "Tactics": 29,
+        "Engineering": 31
+      }
     },
     {
       "ID": "10103115",
@@ -57271,8 +58164,26 @@
       "AlternateSkins": [
         "B"
       ],
+      "stats": {
+        "Combat": "1303",
+        "Assault": "2363",
+        "Shooting": "718",
+        "Tactics": "501",
+        "Defense": "1822",
+        "Engineering": "935",
+        "InitialPilotAPValue_PilotAPInitBase": "5",
+        "MaximumPilotAPValue_PilotAPMaxBase": "5",
+        "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
+      },
       "version": "1.0",
-      "enTranslation": true
+      "enTranslation": true,
+      "statRanks": {
+        "Combat": 44,
+        "Shooting": 60,
+        "Assault": 19,
+        "Tactics": 73,
+        "Engineering": 44
+      }
     },
     {
       "ID": "10103158",
@@ -58344,6 +59255,17 @@
       ],
       "AllowedMechaDriveList_DriveAllowedList": "Medium",
       "AlternateSkins": "",
+      "stats": {
+        "Combat": "5100",
+        "Assault": "1504",
+        "Shooting": "894",
+        "Tactics": "1199",
+        "Defense": "4224",
+        "Engineering": "3636",
+        "InitialPilotAPValue_PilotAPInitBase": "5",
+        "MaximumPilotAPValue_PilotAPMaxBase": "5",
+        "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
+      },
       "version": "2.2",
       "enTranslation": true,
       "hiddenSkills": [
@@ -58355,7 +59277,14 @@
           "CD": "0",
           "describe": "Uses a Chainsaw to attack a target, dealing <color=#F74848>1.25x</color> DMG. This attack always hits the part with lowest HP."
         }
-      ]
+      ],
+      "statRanks": {
+        "Combat": 9,
+        "Shooting": 53,
+        "Assault": 45,
+        "Tactics": 37,
+        "Engineering": 6
+      }
     },
     {
       "ID": "10103123",
@@ -59530,8 +60459,26 @@
       ],
       "AllowedMechaDriveList_DriveAllowedList": "Heavy",
       "AlternateSkins": "",
+      "stats": {
+        "Combat": "589",
+        "Assault": "1192",
+        "Shooting": "1817",
+        "Tactics": "740",
+        "Defense": "2259",
+        "Engineering": "1042",
+        "InitialPilotAPValue_PilotAPInitBase": "5",
+        "MaximumPilotAPValue_PilotAPMaxBase": "5",
+        "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
+      },
       "version": "1.0",
-      "enTranslation": true
+      "enTranslation": true,
+      "statRanks": {
+        "Combat": 70,
+        "Shooting": 27,
+        "Assault": 49,
+        "Tactics": 55,
+        "Engineering": 40
+      }
     },
     {
       "ID": "10103161",
@@ -60604,6 +61551,17 @@
       ],
       "AllowedMechaDriveList_DriveAllowedList": "Light",
       "AlternateSkins": "",
+      "stats": {
+        "Combat": "4874",
+        "Assault": "1307",
+        "Shooting": "1749",
+        "Tactics": "2044",
+        "Defense": "4678",
+        "Engineering": "1897",
+        "InitialPilotAPValue_PilotAPInitBase": "5",
+        "MaximumPilotAPValue_PilotAPMaxBase": "5",
+        "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
+      },
       "version": "2.5",
       "enTranslation": true,
       "hiddenSkills": [
@@ -60615,7 +61573,14 @@
           "CD": "0",
           "describe": "Protects allies within <color=#F74848>2</color> adjacent tiles from assault and ranged attacks, up to <color=#F74848>2</color> times per turn, lasting for <color=#F74848>2</color> turns. Additionally inflicts <buf ID=6011014>[Provocation]</buf> on all enemies within <color=#F74848>2</color> adjacent tiles for <color=#F74848>2</color> turns."
         }
-      ]
+      ],
+      "statRanks": {
+        "Combat": 11,
+        "Shooting": 28,
+        "Assault": 47,
+        "Tactics": 20,
+        "Engineering": 22
+      }
     },
     {
       "ID": "10102114",
@@ -61770,8 +62735,26 @@
       ],
       "AllowedMechaDriveList_DriveAllowedList": "Light",
       "AlternateSkins": "",
+      "stats": {
+        "Combat": "829",
+        "Assault": "621",
+        "Shooting": "2115",
+        "Tactics": "758",
+        "Defense": "1670",
+        "Engineering": "1108",
+        "InitialPilotAPValue_PilotAPInitBase": "4",
+        "MaximumPilotAPValue_PilotAPMaxBase": "5",
+        "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
+      },
       "version": "1.0",
-      "enTranslation": true
+      "enTranslation": true,
+      "statRanks": {
+        "Combat": 56,
+        "Shooting": 19,
+        "Assault": 68,
+        "Tactics": 53,
+        "Engineering": 39
+      }
     },
     {
       "ID": "10102107",
@@ -62927,8 +63910,26 @@
       ],
       "AllowedMechaDriveList_DriveAllowedList": "Heavy",
       "AlternateSkins": "",
+      "stats": {
+        "Combat": "1197",
+        "Assault": "1674",
+        "Shooting": "669",
+        "Tactics": "536",
+        "Defense": "2219",
+        "Engineering": "798",
+        "InitialPilotAPValue_PilotAPInitBase": "4",
+        "MaximumPilotAPValue_PilotAPMaxBase": "5",
+        "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
+      },
       "version": "1.0",
-      "enTranslation": true
+      "enTranslation": true,
+      "statRanks": {
+        "Combat": 46,
+        "Shooting": 64,
+        "Assault": 41,
+        "Tactics": 69,
+        "Engineering": 53
+      }
     },
     {
       "ID": "10102105",
@@ -64084,8 +65085,26 @@
       ],
       "AllowedMechaDriveList_DriveAllowedList": "Heavy",
       "AlternateSkins": "",
+      "stats": {
+        "Combat": "687",
+        "Assault": "962",
+        "Shooting": "1583",
+        "Tactics": "891",
+        "Defense": "2224",
+        "Engineering": "758",
+        "InitialPilotAPValue_PilotAPInitBase": "4",
+        "MaximumPilotAPValue_PilotAPMaxBase": "5",
+        "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
+      },
       "version": "1.0",
-      "enTranslation": true
+      "enTranslation": true,
+      "statRanks": {
+        "Combat": 66,
+        "Shooting": 32,
+        "Assault": 54,
+        "Tactics": 47,
+        "Engineering": 54
+      }
     },
     {
       "ID": "10102110",
@@ -65237,8 +66256,26 @@
       ],
       "AllowedMechaDriveList_DriveAllowedList": "Light",
       "AlternateSkins": "",
+      "stats": {
+        "Combat": "687",
+        "Assault": "1108",
+        "Shooting": "2098",
+        "Tactics": "971",
+        "Defense": "1695",
+        "Engineering": "550",
+        "InitialPilotAPValue_PilotAPInitBase": "4",
+        "MaximumPilotAPValue_PilotAPMaxBase": "5",
+        "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
+      },
       "version": "1.0",
-      "enTranslation": true
+      "enTranslation": true,
+      "statRanks": {
+        "Combat": 66,
+        "Shooting": 21,
+        "Assault": 52,
+        "Tactics": 43,
+        "Engineering": 68
+      }
     },
     {
       "ID": "10102115",
@@ -66391,8 +67428,26 @@
       ],
       "AllowedMechaDriveList_DriveAllowedList": "Medium",
       "AlternateSkins": "",
+      "stats": {
+        "Combat": "917",
+        "Assault": "1130",
+        "Shooting": "709",
+        "Tactics": "2107",
+        "Defense": "1591",
+        "Engineering": "638",
+        "InitialPilotAPValue_PilotAPInitBase": "4",
+        "MaximumPilotAPValue_PilotAPMaxBase": "6",
+        "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
+      },
       "version": "1.0",
-      "enTranslation": true
+      "enTranslation": true,
+      "statRanks": {
+        "Combat": 52,
+        "Shooting": 61,
+        "Assault": 51,
+        "Tactics": 15,
+        "Engineering": 62
+      }
     },
     {
       "ID": "10102103",
@@ -67543,8 +68598,26 @@
       ],
       "AllowedMechaDriveList_DriveAllowedList": "Heavy",
       "AlternateSkins": "",
+      "stats": {
+        "Combat": "532",
+        "Assault": "2206",
+        "Shooting": "940",
+        "Tactics": "736",
+        "Defense": "1695",
+        "Engineering": "1006",
+        "InitialPilotAPValue_PilotAPInitBase": "4",
+        "MaximumPilotAPValue_PilotAPMaxBase": "5",
+        "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
+      },
       "version": "1.0",
-      "enTranslation": true
+      "enTranslation": true,
+      "statRanks": {
+        "Combat": 72,
+        "Shooting": 51,
+        "Assault": 30,
+        "Tactics": 56,
+        "Engineering": 42
+      }
     },
     {
       "ID": "10102109",
@@ -68699,8 +69772,26 @@
       ],
       "AllowedMechaDriveList_DriveAllowedList": "Light",
       "AlternateSkins": "",
+      "stats": {
+        "Combat": "2224",
+        "Assault": "501",
+        "Shooting": "886",
+        "Tactics": "1015",
+        "Defense": "1844",
+        "Engineering": "629",
+        "InitialPilotAPValue_PilotAPInitBase": "4",
+        "MaximumPilotAPValue_PilotAPMaxBase": "5",
+        "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
+      },
       "version": "1.0",
-      "enTranslation": true
+      "enTranslation": true,
+      "statRanks": {
+        "Combat": 21,
+        "Shooting": 54,
+        "Assault": 72,
+        "Tactics": 42,
+        "Engineering": 63
+      }
     },
     {
       "ID": "10102111",
@@ -69875,8 +70966,26 @@
       ],
       "AllowedMechaDriveList_DriveAllowedList": "Medium",
       "AlternateSkins": "",
+      "stats": {
+        "Combat": "669",
+        "Assault": "536",
+        "Shooting": "1392",
+        "Tactics": "603",
+        "Defense": "1635",
+        "Engineering": "2259",
+        "InitialPilotAPValue_PilotAPInitBase": "4",
+        "MaximumPilotAPValue_PilotAPMaxBase": "5",
+        "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
+      },
       "version": "1.0",
-      "enTranslation": true
+      "enTranslation": true,
+      "statRanks": {
+        "Combat": 67,
+        "Shooting": 38,
+        "Assault": 71,
+        "Tactics": 63,
+        "Engineering": 13
+      }
     },
     {
       "ID": "10102101",
@@ -71031,8 +72140,26 @@
       ],
       "AllowedMechaDriveList_DriveAllowedList": "Medium",
       "AlternateSkins": "",
+      "stats": {
+        "Combat": "1064",
+        "Assault": "2224",
+        "Shooting": "669",
+        "Tactics": "536",
+        "Defense": "1670",
+        "Engineering": "931",
+        "InitialPilotAPValue_PilotAPInitBase": "4",
+        "MaximumPilotAPValue_PilotAPMaxBase": "5",
+        "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
+      },
       "version": "1.0",
-      "enTranslation": true
+      "enTranslation": true,
+      "statRanks": {
+        "Combat": 51,
+        "Shooting": 64,
+        "Assault": 27,
+        "Tactics": 69,
+        "Engineering": 45
+      }
     },
     {
       "ID": "10102112",
@@ -72184,8 +73311,26 @@
       ],
       "AllowedMechaDriveList_DriveAllowedList": "Heavy",
       "AlternateSkins": "",
+      "stats": {
+        "Combat": "2206",
+        "Assault": "696",
+        "Shooting": "948",
+        "Tactics": "501",
+        "Defense": "1861",
+        "Engineering": "886",
+        "InitialPilotAPValue_PilotAPInitBase": "4",
+        "MaximumPilotAPValue_PilotAPMaxBase": "5",
+        "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
+      },
       "version": "1.0",
-      "enTranslation": true
+      "enTranslation": true,
+      "statRanks": {
+        "Combat": 23,
+        "Shooting": 50,
+        "Assault": 64,
+        "Tactics": 73,
+        "Engineering": 47
+      }
     },
     {
       "ID": "10102113",
@@ -73338,8 +74483,26 @@
       ],
       "AllowedMechaDriveList_DriveAllowedList": "Medium",
       "AlternateSkins": "",
+      "stats": {
+        "Combat": "718",
+        "Assault": "1926",
+        "Shooting": "403",
+        "Tactics": "2056",
+        "Defense": "1539",
+        "Engineering": "496",
+        "InitialPilotAPValue_PilotAPInitBase": "4",
+        "MaximumPilotAPValue_PilotAPMaxBase": "6",
+        "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
+      },
       "version": "1.0",
-      "enTranslation": true
+      "enTranslation": true,
+      "statRanks": {
+        "Combat": 61,
+        "Shooting": 72,
+        "Assault": 36,
+        "Tactics": 19,
+        "Engineering": 71
+      }
     },
     {
       "ID": "10102106",
@@ -74491,8 +75654,26 @@
       ],
       "AllowedMechaDriveList_DriveAllowedList": "Medium",
       "AlternateSkins": "",
+      "stats": {
+        "Combat": "864",
+        "Assault": "2219",
+        "Shooting": "997",
+        "Tactics": "798",
+        "Defense": "1674",
+        "Engineering": "536",
+        "InitialPilotAPValue_PilotAPInitBase": "4",
+        "MaximumPilotAPValue_PilotAPMaxBase": "5",
+        "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
+      },
       "version": "1.0",
-      "enTranslation": true
+      "enTranslation": true,
+      "statRanks": {
+        "Combat": 53,
+        "Shooting": 48,
+        "Assault": 29,
+        "Tactics": 51,
+        "Engineering": 70
+      }
     },
     {
       "ID": "10102104",
@@ -75647,8 +76828,26 @@
       ],
       "AllowedMechaDriveList_DriveAllowedList": "Heavy",
       "AlternateSkins": "",
+      "stats": {
+        "Combat": "2219",
+        "Assault": "820",
+        "Shooting": "501",
+        "Tactics": "948",
+        "Defense": "1853",
+        "Engineering": "758",
+        "InitialPilotAPValue_PilotAPInitBase": "4",
+        "MaximumPilotAPValue_PilotAPMaxBase": "5",
+        "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
+      },
       "version": "1.0",
-      "enTranslation": true
+      "enTranslation": true,
+      "statRanks": {
+        "Combat": 22,
+        "Shooting": 71,
+        "Assault": 60,
+        "Tactics": 44,
+        "Engineering": 54
+      }
     },
     {
       "ID": "10103117",
@@ -76803,8 +78002,26 @@
       ],
       "AllowedMechaDriveList_DriveAllowedList": "Light",
       "AlternateSkins": "",
+      "stats": {
+        "Combat": "714",
+        "Assault": "2259",
+        "Shooting": "975",
+        "Tactics": "780",
+        "Defense": "1729",
+        "Engineering": "647",
+        "InitialPilotAPValue_PilotAPInitBase": "4",
+        "MaximumPilotAPValue_PilotAPMaxBase": "5",
+        "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
+      },
       "version": "1.0",
-      "enTranslation": true
+      "enTranslation": true,
+      "statRanks": {
+        "Combat": 62,
+        "Shooting": 49,
+        "Assault": 25,
+        "Tactics": 52,
+        "Engineering": 61
+      }
     },
     {
       "ID": "10102108",
@@ -77956,8 +79173,26 @@
       ],
       "AllowedMechaDriveList_DriveAllowedList": "Medium",
       "AlternateSkins": "",
+      "stats": {
+        "Combat": "1108",
+        "Assault": "900",
+        "Shooting": "2107",
+        "Tactics": "621",
+        "Defense": "1674",
+        "Engineering": "687",
+        "InitialPilotAPValue_PilotAPInitBase": "4",
+        "MaximumPilotAPValue_PilotAPMaxBase": "5",
+        "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
+      },
       "version": "1.0",
-      "enTranslation": true
+      "enTranslation": true,
+      "statRanks": {
+        "Combat": 48,
+        "Shooting": 20,
+        "Assault": 56,
+        "Tactics": 62,
+        "Engineering": 59
+      }
     },
     {
       "ID": "10101102",
@@ -78786,8 +80021,26 @@
       ],
       "AllowedMechaDriveList_DriveAllowedList": "Heavy",
       "AlternateSkins": "",
+      "stats": {
+        "Combat": "1741",
+        "Assault": "687",
+        "Shooting": "687",
+        "Tactics": "572",
+        "Defense": "2034",
+        "Engineering": "802",
+        "InitialPilotAPValue_PilotAPInitBase": "3",
+        "MaximumPilotAPValue_PilotAPMaxBase": "5",
+        "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
+      },
       "version": "1.0",
-      "enTranslation": true
+      "enTranslation": true,
+      "statRanks": {
+        "Combat": 35,
+        "Shooting": 62,
+        "Assault": 65,
+        "Tactics": 64,
+        "Engineering": 52
+      }
     },
     {
       "ID": "10101103",
@@ -79634,8 +80887,26 @@
       ],
       "AllowedMechaDriveList_DriveAllowedList": "Medium",
       "AlternateSkins": "",
+      "stats": {
+        "Combat": "483",
+        "Assault": "545",
+        "Shooting": "1197",
+        "Tactics": "665",
+        "Defense": "1605",
+        "Engineering": "1994",
+        "InitialPilotAPValue_PilotAPInitBase": "3",
+        "MaximumPilotAPValue_PilotAPMaxBase": "5",
+        "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
+      },
       "version": "1.0",
-      "enTranslation": true
+      "enTranslation": true,
+      "statRanks": {
+        "Combat": 73,
+        "Shooting": 43,
+        "Assault": 70,
+        "Tactics": 61,
+        "Engineering": 18
+      }
     },
     {
       "ID": "10103102",
@@ -80790,8 +82061,26 @@
       ],
       "AllowedMechaDriveList_DriveAllowedList": "Medium",
       "AlternateSkins": "",
+      "stats": {
+        "Combat": "554",
+        "Assault": "824",
+        "Shooting": "2163",
+        "Tactics": "1028",
+        "Defense": "1635",
+        "Engineering": "891",
+        "InitialPilotAPValue_PilotAPInitBase": "4",
+        "MaximumPilotAPValue_PilotAPMaxBase": "5",
+        "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
+      },
       "version": "1.0",
-      "enTranslation": true
+      "enTranslation": true,
+      "statRanks": {
+        "Combat": 71,
+        "Shooting": 17,
+        "Assault": 59,
+        "Tactics": 41,
+        "Engineering": 46
+      }
     },
     {
       "ID": "10103103",
@@ -81963,8 +83252,26 @@
       ],
       "AllowedMechaDriveList_DriveAllowedList": "Medium",
       "AlternateSkins": "",
+      "stats": {
+        "Combat": "363",
+        "Assault": "1926",
+        "Shooting": "403",
+        "Tactics": "683",
+        "Defense": "1723",
+        "Engineering": "2056",
+        "InitialPilotAPValue_PilotAPInitBase": "4",
+        "MaximumPilotAPValue_PilotAPMaxBase": "5",
+        "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
+      },
       "version": "1.0",
-      "enTranslation": true
+      "enTranslation": true,
+      "statRanks": {
+        "Combat": 75,
+        "Shooting": 72,
+        "Assault": 36,
+        "Tactics": 59,
+        "Engineering": 17
+      }
     },
     {
       "ID": "10101106",
@@ -82794,8 +84101,26 @@
       ],
       "AllowedMechaDriveList_DriveAllowedList": "Medium",
       "AlternateSkins": "",
+      "stats": {
+        "Combat": "842",
+        "Assault": "1994",
+        "Shooting": "722",
+        "Tactics": "603",
+        "Defense": "1605",
+        "Engineering": "722",
+        "InitialPilotAPValue_PilotAPInitBase": "3",
+        "MaximumPilotAPValue_PilotAPMaxBase": "5",
+        "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
+      },
       "version": "1.0",
-      "enTranslation": true
+      "enTranslation": true,
+      "statRanks": {
+        "Combat": 54,
+        "Shooting": 59,
+        "Assault": 34,
+        "Tactics": 63,
+        "Engineering": 57
+      }
     },
     {
       "ID": "10101108",
@@ -83622,8 +84947,26 @@
       ],
       "AllowedMechaDriveList_DriveAllowedList": "Heavy",
       "AlternateSkins": "",
+      "stats": {
+        "Combat": "727",
+        "Assault": "1974",
+        "Shooting": "603",
+        "Tactics": "851",
+        "Defense": "1626",
+        "Engineering": "727",
+        "InitialPilotAPValue_PilotAPInitBase": "3",
+        "MaximumPilotAPValue_PilotAPMaxBase": "5",
+        "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
+      },
       "version": "1.0",
-      "enTranslation": true
+      "enTranslation": true,
+      "statRanks": {
+        "Combat": 60,
+        "Shooting": 67,
+        "Assault": 35,
+        "Tactics": 49,
+        "Engineering": 56
+      }
     },
     {
       "ID": "10103101",
@@ -84775,8 +86118,26 @@
       ],
       "AllowedMechaDriveList_DriveAllowedList": "Light",
       "AlternateSkins": "",
+      "stats": {
+        "Combat": "2119",
+        "Assault": "1926",
+        "Shooting": "355",
+        "Tactics": "527",
+        "Defense": "1848",
+        "Engineering": "386",
+        "InitialPilotAPValue_PilotAPInitBase": "4",
+        "MaximumPilotAPValue_PilotAPMaxBase": "5",
+        "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
+      },
       "version": "1.0",
-      "enTranslation": true
+      "enTranslation": true,
+      "statRanks": {
+        "Combat": 24,
+        "Shooting": 73,
+        "Assault": 36,
+        "Tactics": 70,
+        "Engineering": 75
+      }
     },
     {
       "ID": "10101105",
@@ -85606,8 +86967,26 @@
       ],
       "AllowedMechaDriveList_DriveAllowedList": "Light",
       "AlternateSkins": "",
+      "stats": {
+        "Combat": "1755",
+        "Assault": "386",
+        "Shooting": "1883",
+        "Tactics": "541",
+        "Defense": "1557",
+        "Engineering": "461",
+        "InitialPilotAPValue_PilotAPInitBase": "3",
+        "MaximumPilotAPValue_PilotAPMaxBase": "5",
+        "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
+      },
       "version": "1.0",
-      "enTranslation": true
+      "enTranslation": true,
+      "statRanks": {
+        "Combat": 34,
+        "Shooting": 25,
+        "Assault": 74,
+        "Tactics": 68,
+        "Engineering": 72
+      }
     },
     {
       "ID": "10101107",
@@ -86430,8 +87809,26 @@
       ],
       "AllowedMechaDriveList_DriveAllowedList": "Medium",
       "AlternateSkins": "",
+      "stats": {
+        "Combat": "705",
+        "Assault": "638",
+        "Shooting": "895",
+        "Tactics": "1892",
+        "Defense": "1526",
+        "Engineering": "829",
+        "InitialPilotAPValue_PilotAPInitBase": "3",
+        "MaximumPilotAPValue_PilotAPMaxBase": "6",
+        "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
+      },
       "version": "1.0",
-      "enTranslation": true
+      "enTranslation": true,
+      "statRanks": {
+        "Combat": 63,
+        "Shooting": 52,
+        "Assault": 67,
+        "Tactics": 24,
+        "Engineering": 50
+      }
     },
     {
       "ID": "10101101",
@@ -87261,8 +88658,26 @@
       ],
       "AllowedMechaDriveList_DriveAllowedList": "Light",
       "AlternateSkins": "",
+      "stats": {
+        "Combat": "594",
+        "Assault": "2003",
+        "Shooting": "833",
+        "Tactics": "714",
+        "Defense": "1644",
+        "Engineering": "714",
+        "InitialPilotAPValue_PilotAPInitBase": "3",
+        "MaximumPilotAPValue_PilotAPMaxBase": "5",
+        "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
+      },
       "version": "1.0",
-      "enTranslation": true
+      "enTranslation": true,
+      "statRanks": {
+        "Combat": 69,
+        "Shooting": 55,
+        "Assault": 33,
+        "Tactics": 57,
+        "Engineering": 58
+      }
     },
     {
       "ID": "10101104",
@@ -88089,8 +89504,26 @@
       ],
       "AllowedMechaDriveList_DriveAllowedList": "Light",
       "AlternateSkins": "",
+      "stats": {
+        "Combat": "2034",
+        "Assault": "802",
+        "Shooting": "572",
+        "Tactics": "687",
+        "Defense": "1741",
+        "Engineering": "687",
+        "InitialPilotAPValue_PilotAPInitBase": "3",
+        "MaximumPilotAPValue_PilotAPMaxBase": "5",
+        "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
+      },
       "version": "1.0",
-      "enTranslation": true
+      "enTranslation": true,
+      "statRanks": {
+        "Combat": 29,
+        "Shooting": 70,
+        "Assault": 61,
+        "Tactics": 58,
+        "Engineering": 59
+      }
     },
     {
       "ID": "10101109",
@@ -88920,8 +90353,26 @@
       ],
       "AllowedMechaDriveList_DriveAllowedList": "Heavy",
       "AlternateSkins": "",
+      "stats": {
+        "Combat": "2016",
+        "Assault": "687",
+        "Shooting": "802",
+        "Tactics": "687",
+        "Defense": "1754",
+        "Engineering": "572",
+        "InitialPilotAPValue_PilotAPInitBase": "3",
+        "MaximumPilotAPValue_PilotAPMaxBase": "5",
+        "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
+      },
       "version": "1.0",
-      "enTranslation": true
+      "enTranslation": true,
+      "statRanks": {
+        "Combat": 30,
+        "Shooting": 56,
+        "Assault": 65,
+        "Tactics": 58,
+        "Engineering": 66
+      }
     },
     {
       "ID": "10101110",
@@ -89751,8 +91202,26 @@
       ],
       "AllowedMechaDriveList_DriveAllowedList": "Medium",
       "AlternateSkins": "",
+      "stats": {
+        "Combat": "745",
+        "Assault": "869",
+        "Shooting": "1923",
+        "Tactics": "745",
+        "Defense": "1578",
+        "Engineering": "621",
+        "InitialPilotAPValue_PilotAPInitBase": "3",
+        "MaximumPilotAPValue_PilotAPMaxBase": "5",
+        "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
+      },
       "version": "1.0",
-      "enTranslation": true
+      "enTranslation": true,
+      "statRanks": {
+        "Combat": 59,
+        "Shooting": 24,
+        "Assault": 58,
+        "Tactics": 54,
+        "Engineering": 64
+      }
     }
   ]
 }

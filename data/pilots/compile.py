@@ -8,6 +8,10 @@ FIELDS = ['ID', 'PilotName', 'PortraitHeroIcon', 'AvatarHeroIcon', 'RealName', '
           'NeuralDriveTemplate', 'biomimetic_computer_data',
           'AllowedMechaDriveList_DriveAllowedList', 'AlternateSkins']
 
+STAT_FIELDS = ['Combat', 'Assault', 'Shooting', 'Tactics', 'Defense', 'Engineering',
+               'InitialPilotAPValue_PilotAPInitBase', 'MaximumPilotAPValue_PilotAPMaxBase',
+               'PilotAPRecoveryperTurn_PilotAPRecoverBase']
+
 def apply_translation(entry, t):
     """Overwrite display fields with translation values where non-empty."""
     for field in ('PilotName', 'RealName', 'Gender', 'Profession', 'Occupation'):
@@ -42,6 +46,8 @@ for path in sorted(glob.glob(f'{DIR}/[0-9]*.json')):
         continue
     raw = json.load(open(path, 'r', encoding='utf-8'))['data']['data']
     entry = {k: raw.get(k, '') for k in FIELDS}
+    manji = raw.get('manji') or {}
+    entry['stats'] = {k: manji.get(k, raw.get(k)) for k in STAT_FIELDS}
 
     t_path = f'{DIR}/{pid}-translation.json'
     t = json.load(open(t_path, 'r', encoding='utf-8')) if os.path.exists(t_path) else {}
@@ -57,6 +63,22 @@ for path in sorted(glob.glob(f'{DIR}/[0-9]*.json')):
         entry['formSkillGroups'] = t['formSkillGroups']
 
     pilots.append(entry)
+
+RANKED_STAT_FIELDS = ['Combat', 'Shooting', 'Assault', 'Tactics', 'Engineering']
+
+def to_num(v):
+    try:
+        return float(v)
+    except (TypeError, ValueError):
+        return None
+
+for field in RANKED_STAT_FIELDS:
+    values = sorted({to_num(p['stats'].get(field)) for p in pilots} - {None}, reverse=True)
+    rank_of = {v: i + 1 for i, v in enumerate(values)}
+    for p in pilots:
+        v = to_num(p['stats'].get(field))
+        if v is not None:
+            p.setdefault('statRanks', {})[field] = rank_of[v]
 
 order = {'SSR': 0, 'SR': 1, 'R': 2}
 pilots.sort(key=lambda p: (order.get(p.get('quality',''), 9), p.get('PilotName','')))
