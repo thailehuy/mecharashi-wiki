@@ -1,12 +1,12 @@
 var Pages = window.Pages || {};
 
 var PILOTSTATS_COLUMNS = [
-  { key: 'Combat',      label: 'Melee' },
-  { key: 'Shooting',    label: 'Ranged' },
-  { key: 'Assault',     label: 'Assault' },
-  { key: 'Tactics',     label: 'Tactical' },
-  { key: 'Engineering', label: 'Mechanic' },
-  { key: 'Defense',     label: 'Defense' },
+  { key: 'Combat',      label: 'Melee',    cls: 'pilotstats-col-melee' },
+  { key: 'Shooting',    label: 'Ranged',   cls: 'pilotstats-col-ranged' },
+  { key: 'Assault',     label: 'Assault',  cls: 'pilotstats-col-assault' },
+  { key: 'Tactics',     label: 'Tactical', cls: 'pilotstats-col-tactical' },
+  { key: 'Engineering', label: 'Mechanic', cls: 'pilotstats-col-mechanic' },
+  { key: 'Defense',     label: 'Defense',  cls: 'pilotstats-col-defense' },
 ];
 
 Pages.pilotstats = {
@@ -120,7 +120,7 @@ Pages.pilotstats = {
             '</a>' +
           '</td>' +
           PILOTSTATS_COLUMNS.map(function (c) {
-            return '<td>' + r[c.key] + '</td>';
+            return '<td class="' + c.cls + '">' + r[c.key] + '</td>';
           }).join('') +
         '</tr>'
       );
