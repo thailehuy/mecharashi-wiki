@@ -1853,11 +1853,11 @@
     },
     "53104": {
       "name": "Optimized Posture",
-      "SpecificEffects": "When in combat, if equipped with a Machine Gun and a Small Shield, Machine Gun Final DMG <color=#F74848>+10%</color>, and Final DMG Taken <color=#F74848>-15%</color>."
+      "effect": "When in combat, if equipped with a Machine Gun and a Small Shield, Machine Gun Final DMG <color=#F74848>+10%</color>, and Final DMG Taken <color=#F74848>-15%</color>."
     },
     "53103": {
       "name": "Malfunction Implant",
-      "SpecificEffects": "When attacking with a Machine Gun, inflicts <color=#F74848>1</color> stack of <buf ID=531032>[Fire Control Delay]</buf> on the target, up to <color=#F74848>5</color> stacks."
+      "effect": "When attacking with a Machine Gun, inflicts <color=#F74848>1</color> stack of <buf ID=531032>[Fire Control Delay]</buf> on the target, up to <color=#F74848>5</color> stacks."
     }
   },
   "terrain": {

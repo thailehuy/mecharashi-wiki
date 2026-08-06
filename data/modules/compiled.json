@@ -1507,6 +1507,57 @@
         "8": "If this unit doesn't move before actively attacking, Crit Rate <color=#F74848>+24%</color>. If a critical hit occurs when attacking, Crit DMG <color=#F74848>+3%</color> after combat. This effect can stack up to a maximum increase of <color=#F74848>15%</color>."
       }
     },
+    "3040": {
+      "name": "Flanking Mod",
+      "icon": "Icon_entry_10091",
+      "category": "GeneralSuit",
+      "maxLevel": 8,
+      "currentLevel": 8,
+      "levels": {
+        "1": "When attacking enemies on any terrain effect, DMG dealt increases by <color=#F74848>3%</color>",
+        "2": "When attacking enemies on any terrain effect, DMG dealt increases by <color=#F74848>4%</color>",
+        "3": "When attacking enemies on any terrain effect, DMG dealt increases by <color=#F74848>6%</color>",
+        "4": "When attacking enemies on any terrain effect, DMG dealt increases by <color=#F74848>8%</color>",
+        "5": "When attacking enemies on any terrain effect, DMG dealt increases by <color=#F74848>10%</color>",
+        "6": "When attacking enemies on any terrain effect, DMG dealt increases by <color=#F74848>12%</color>",
+        "7": "When attacking enemies on any terrain effect, DMG dealt increases by <color=#F74848>14%</color>",
+        "8": "When attacking enemies on any terrain effect, DMG dealt increases by <color=#F74848>18%</color>, <buf ID=900017>[Fixed DMG]</buf> dealt increases by <color=#F74848>25%</color>."
+      }
+    },
+    "3045": {
+      "name": "Support Mod",
+      "icon": "Icon_entry_10097",
+      "category": "GeneralSuit",
+      "maxLevel": 8,
+      "currentLevel": 8,
+      "levels": {
+        "1": "When attacking, if there are allies within <color=#F74848>4</color> adjacent tiles, DMG dealt increases by <color=#F74848>3%</color>.",
+        "2": "When attacking, if there are allies within <color=#F74848>4</color> adjacent tiles, DMG dealt increases by <color=#F74848>4%</color>.",
+        "3": "When attacking, if there are allies within <color=#F74848>4</color> adjacent tiles, DMG dealt increases by <color=#F74848>6%</color>.",
+        "4": "When attacking, if there are allies within <color=#F74848>4</color> adjacent tiles, DMG dealt increases by <color=#F74848>8%</color>.",
+        "5": "When attacking, if there are allies within <color=#F74848>4</color> adjacent tiles, DMG dealt increases by <color=#F74848>10%</color>.",
+        "6": "When attacking, if there are allies within <color=#F74848>4</color> adjacent tiles, DMG dealt increases by <color=#F74848>12%</color>.",
+        "7": "When attacking, if there are allies within <color=#F74848>4</color> adjacent tiles, DMG dealt increases by <color=#F74848>14%</color>.",
+        "8": "When attacking, if there are allies within <color=#F74848>4</color> adjacent tiles, DMG dealt increases by <color=#F74848>18%</color>.\nAt the end of turn, if <color=#F74848>2</color> or more code or attack skills are used this turn, recovers <color=#F74848>1</color> AP."
+      }
+    },
+    "3036": {
+      "name": "Bombardment Mod",
+      "icon": "Icon_entry_10087",
+      "category": "GeneralSuit",
+      "maxLevel": 8,
+      "currentLevel": 8,
+      "levels": {
+        "1": "When executing Code attacks, DMG <color=#F74848>+3%</color>.",
+        "2": "When executing Code attacks, DMG <color=#F74848>+4%</color>.",
+        "3": "When executing Code attacks, DMG <color=#F74848>+6%</color>.",
+        "4": "When executing Code attacks, DMG <color=#F74848>+8%</color>.",
+        "5": "When executing Code attacks, DMG <color=#F74848>+10%</color>.",
+        "6": "When executing Code attacks, DMG <color=#F74848>+12%</color>.",
+        "7": "When executing Code attacks, DMG <color=#F74848>+14%</color>.",
+        "8": "When executing Code attacks, DMG <color=#F74848>+18%</color>.\nWhen actively attacking with a Tactical Weapon, if <color=#F74848>3</color> or more targets are hit, randomly reloads <color=#F74848>1</color> Ammo after combat, up to <color=#F74848>1</color> time per turn."
+      }
+    },
     "3033": {
       "name": "Sentinel Mod",
       "icon": "Icon_entry_10084",
@@ -1541,23 +1592,6 @@
         "8": "When there are no allies within <color=#F74848>2</color> adjacent tiles, DMG +<color=#F74848>18%</color>;\nAt start of action, if there are no allies within <color=#F74848>2</color> adjacent tiles, AP cost of the first attack initiated this turn <color=#F74848>-1</color>, down to a minimum of <color=#F74848>1</color> AP."
       }
     },
-    "3040": {
-      "name": "Flanking Mod",
-      "icon": "Icon_entry_10091",
-      "category": "GeneralSuit",
-      "maxLevel": 8,
-      "currentLevel": 8,
-      "levels": {
-        "1": "When attacking enemies on any terrain effect, DMG dealt increases by <color=#F74848>3%</color>",
-        "2": "When attacking enemies on any terrain effect, DMG dealt increases by <color=#F74848>4%</color>",
-        "3": "When attacking enemies on any terrain effect, DMG dealt increases by <color=#F74848>6%</color>",
-        "4": "When attacking enemies on any terrain effect, DMG dealt increases by <color=#F74848>8%</color>",
-        "5": "When attacking enemies on any terrain effect, DMG dealt increases by <color=#F74848>10%</color>",
-        "6": "When attacking enemies on any terrain effect, DMG dealt increases by <color=#F74848>12%</color>",
-        "7": "When attacking enemies on any terrain effect, DMG dealt increases by <color=#F74848>14%</color>",
-        "8": "When attacking enemies on any terrain effect, DMG dealt increases by <color=#F74848>18%</color>, <buf ID=900017>[Fixed DMG]</buf> dealt increases by <color=#F74848>25%</color>."
-      }
-    },
     "3031": {
       "name": "Skirmishing Mod",
       "icon": "Icon_skill_passive_1154",
@@ -1590,40 +1624,6 @@
         "6": "When attacking a target within the attack range of both the held weapon and the backpack weapon, DMG Dealt <color=#F74848>+12%</color>",
         "7": "When attacking a target within the attack range of both the held weapon and the backpack weapon, DMG Dealt <color=#F74848>+14%</color>",
         "8": "When attacking a target within the attack range of both the held weapon and the backpack weapon, DMG Dealt <color=#F74848>+18%</color>;\nEnters the <buf ID=900121>[Restriction Removal]</buf> state, activating the extra module effect integrated within the part."
-      }
-    },
-    "3036": {
-      "name": "Bombardment Mod",
-      "icon": "Icon_entry_10087",
-      "category": "GeneralSuit",
-      "maxLevel": 8,
-      "currentLevel": 8,
-      "levels": {
-        "1": "When executing Code attacks, DMG <color=#F74848>+3%</color>.",
-        "2": "When executing Code attacks, DMG <color=#F74848>+4%</color>.",
-        "3": "When executing Code attacks, DMG <color=#F74848>+6%</color>.",
-        "4": "When executing Code attacks, DMG <color=#F74848>+8%</color>.",
-        "5": "When executing Code attacks, DMG <color=#F74848>+10%</color>.",
-        "6": "When executing Code attacks, DMG <color=#F74848>+12%</color>.",
-        "7": "When executing Code attacks, DMG <color=#F74848>+14%</color>.",
-        "8": "When executing Code attacks, DMG <color=#F74848>+18%</color>.\nWhen actively attacking with a Tactical Weapon, if <color=#F74848>3</color> or more targets are hit, randomly reloads <color=#F74848>1</color> Ammo after combat, up to <color=#F74848>1</color> time per turn."
-      }
-    },
-    "3045": {
-      "name": "Support Mod",
-      "icon": "Icon_entry_10097",
-      "category": "GeneralSuit",
-      "maxLevel": 8,
-      "currentLevel": 8,
-      "levels": {
-        "1": "When attacking, if there are allies within <color=#F74848>4</color> adjacent tiles, DMG dealt increases by <color=#F74848>3%</color>.",
-        "2": "When attacking, if there are allies within <color=#F74848>4</color> adjacent tiles, DMG dealt increases by <color=#F74848>4%</color>.",
-        "3": "When attacking, if there are allies within <color=#F74848>4</color> adjacent tiles, DMG dealt increases by <color=#F74848>6%</color>.",
-        "4": "When attacking, if there are allies within <color=#F74848>4</color> adjacent tiles, DMG dealt increases by <color=#F74848>8%</color>.",
-        "5": "When attacking, if there are allies within <color=#F74848>4</color> adjacent tiles, DMG dealt increases by <color=#F74848>10%</color>.",
-        "6": "When attacking, if there are allies within <color=#F74848>4</color> adjacent tiles, DMG dealt increases by <color=#F74848>12%</color>.",
-        "7": "When attacking, if there are allies within <color=#F74848>4</color> adjacent tiles, DMG dealt increases by <color=#F74848>14%</color>.",
-        "8": "When attacking, if there are allies within <color=#F74848>4</color> adjacent tiles, DMG dealt increases by <color=#F74848>18%</color>.\nAt the end of turn, if <color=#F74848>2</color> or more code or attack skills are used this turn, recovers <color=#F74848>1</color> AP."
       }
     }
   }
