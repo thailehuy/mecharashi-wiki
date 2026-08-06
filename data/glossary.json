@@ -1850,6 +1850,14 @@
       "CD": "0",
       "icon": "Icon_skill_order_5162",
       "effect": "Desinates <color=#F74848>1</color> enemy within <color=#F74848>4</color> adjacent tiles of [Bertha] or within <terrian ID=3014501 /> as <buf ID=3014505>[Arch-Enemy]</buf>. Only <color=#F74848>1</color> <buf ID=3014505>[Arch-Enemy]</buf> can exist at a time. Can continue to act with remaining movement. This skill can be used <color=#F74848>1</color> time per turn."
+    },
+    "53104": {
+      "name": "Optimized Posture",
+      "SpecificEffects": "When in combat, if equipped with a Machine Gun and a Small Shield, Machine Gun Final DMG <color=#F74848>+10%</color>, and Final DMG Taken <color=#F74848>-15%</color>."
+    },
+    "53103": {
+      "name": "Malfunction Implant",
+      "SpecificEffects": "When attacking with a Machine Gun, inflicts <color=#F74848>1</color> stack of <buf ID=531032>[Fire Control Delay]</buf> on the target, up to <color=#F74848>5</color> stacks."
     }
   },
   "terrain": {
