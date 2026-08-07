@@ -3477,6 +3477,114 @@
       "enTranslation": true
     },
     {
+      "ID": "30200103",
+      "name": "Kagemusha",
+      "type": "Heavy",
+      "quality": "SSR",
+      "icon": "Icon_mecha_wap3020",
+      "mechaIcon": "Icon_wap3020_1",
+      "lihuiIcon": "icon_lihui_wap3020",
+      "introduce": "ART-108 \u9f99\u524d\u6b63\u5b97\uff0c\u51fa\u53e3\u5546\u54c1\u540d\uff1a\u5f71\u6b66\u8005\n\u7531KATANA\u4e0e\u77e5\u540d\u673a\u5175\u8bbe\u8ba1\u5e08\u7b71\u539f\u6b63\u5b97\u8054\u5408\u7814\u53d1\u7684\u91cd\u578b\u673a\u5175\u3002\nART-108\u4fdd\u7559\u4e86\u7b71\u539f\u6b63\u5b97\u5f3a\u70c8\u7684\u4e2a\u4eba\u98ce\u683c\uff0c\u5e76\u5728\u5916\u88c5\u7532\u4e0a\u91c7\u7528\u4e86\u66f4\u52a0\u7cbe\u5de7\u7684\u7ed3\u6784\u8bbe\u8ba1\uff0c\u5728\u4fdd\u7559\u98ce\u683c\u5316\u5916\u5f62\u7684\u540c\u65f6\uff0c\u517c\u987e\u4e86\u91cd\u578b\u673a\u5175\u72ec\u7279\u7684\u9ad8\u9632\u62a4\u80fd\u529b\u3002\u5b89\u88c5\u5728\u8eaf\u5e72\u90e8\u4f4d\u7684\u300c\u6b8b\u5fc3\u300d\u82af\u7247\uff0c\u80fd\u6839\u636e\u6218\u6597\u4e2d\u7684\u5b9e\u9645\u60c5\u51b5\uff0c\u8f6c\u6362\u589e\u538b\u51fa\u529b\u3002\u5f3a\u608d\u7684\u6301\u7eed\u4f5c\u6218\u6548\u80fd\uff0c\u4f7f\u5f97\u5f71\u6b66\u8005\u6210\u4e3a\u540d\u526f\u5176\u5b9e\u7684\u6218\u573a\u6740\u5668\u3002",
+      "output": "2055",
+      "durable": "457",
+      "Armor": "144",
+      "fire": "120",
+      "Antiriot": "770",
+      "parts": [
+        {
+          "position": "\u8eaf\u5e72",
+          "aircraftWeight": "365",
+          "maxHp": "12706",
+          "Armor": "1412",
+          "Hit": null,
+          "Dodge": null,
+          "Antiriot": "4472"
+        },
+        {
+          "position": "\u5de6\u81c2",
+          "aircraftWeight": "175",
+          "maxHp": "6283",
+          "Armor": "941",
+          "Hit": "1672",
+          "Dodge": null,
+          "Antiriot": null
+        },
+        {
+          "position": "\u53f3\u81c2",
+          "aircraftWeight": "175",
+          "maxHp": "6283",
+          "Armor": "941",
+          "Hit": "1672",
+          "Dodge": null,
+          "Antiriot": null
+        },
+        {
+          "position": "\u817f\u90e8",
+          "aircraftWeight": "230",
+          "maxHp": "9036",
+          "Armor": "941",
+          "Hit": null,
+          "Dodge": "3287",
+          "Antiriot": null
+        }
+      ],
+      "manjiFirepower": "1176",
+      "modules": [
+        {
+          "_id": {
+            "timestamp": 1696936931,
+            "date": 1696936931000
+          },
+          "ID": "40014",
+          "name": "Accuracy Mod",
+          "SpecificEffects": "Hit Rate <color=#F74848>+10%</color>.",
+          "BufCarried": "400141",
+          "SkillIcon": "Icon_entry_40011",
+          "icon": "Icon_entry_40011",
+          "Status": 1,
+          "weight": 860,
+          "id": "4001",
+          "level": 4
+        },
+        {
+          "_id": {
+            "timestamp": 1740643579,
+            "date": 1740643579000
+          },
+          "ID": "20504",
+          "name": "Remnant Core Mod",
+          "SpecificEffects": "Every time an enemy takes <buf ID=900017>[Fixed DMG]</buf> or Splash DMG, gains DMG increases by <color=#F74848>6%</color>, stacking up to <color=#F74848>5</color> times, lasting for <color=#F74848>2</color> turns.",
+          "BufCarried": "205041",
+          "SkillIcon": "Icon_skill_passive_1171",
+          "icon": "Icon_skill_passive_1171",
+          "Status": 1,
+          "weight": 322,
+          "id": "2050",
+          "level": 4
+        },
+        {
+          "_id": {
+            "timestamp": 1740643581,
+            "date": 1740643581000
+          },
+          "ID": "30408",
+          "name": "Flanking Mod",
+          "SpecificEffects": "When attacking enemies on any terrain effect, DMG dealt increases by <color=#F74848>18%</color>, <buf ID=900017>[Fixed DMG]</buf> dealt increases by <color=#F74848>25%</color>.",
+          "BufCarried": "304081/304083",
+          "SkillIcon": "Icon_entry_10091",
+          "icon": "Icon_entry_10091",
+          "Status": 1,
+          "weight": 712,
+          "id": "3040",
+          "level": 8
+        }
+      ],
+      "dispatchGroup": "GeekX",
+      "dispatchVersion": "2.3",
+      "version": "2.2",
+      "enTranslation": true
+    },
+    {
       "ID": "30170103",
       "name": "Kong",
       "type": "Heavy",
@@ -5415,114 +5523,6 @@
       "dispatchGroup": "GeekX",
       "dispatchVersion": "1.0",
       "version": "1.0",
-      "enTranslation": true
-    },
-    {
-      "ID": "30200103",
-      "name": "Shadow Warrior",
-      "type": "Heavy",
-      "quality": "SSR",
-      "icon": "Icon_mecha_wap3020",
-      "mechaIcon": "Icon_wap3020_1",
-      "lihuiIcon": "icon_lihui_wap3020",
-      "introduce": "ART-108 \u9f99\u524d\u6b63\u5b97\uff0c\u51fa\u53e3\u5546\u54c1\u540d\uff1a\u5f71\u6b66\u8005\n\u7531KATANA\u4e0e\u77e5\u540d\u673a\u5175\u8bbe\u8ba1\u5e08\u7b71\u539f\u6b63\u5b97\u8054\u5408\u7814\u53d1\u7684\u91cd\u578b\u673a\u5175\u3002\nART-108\u4fdd\u7559\u4e86\u7b71\u539f\u6b63\u5b97\u5f3a\u70c8\u7684\u4e2a\u4eba\u98ce\u683c\uff0c\u5e76\u5728\u5916\u88c5\u7532\u4e0a\u91c7\u7528\u4e86\u66f4\u52a0\u7cbe\u5de7\u7684\u7ed3\u6784\u8bbe\u8ba1\uff0c\u5728\u4fdd\u7559\u98ce\u683c\u5316\u5916\u5f62\u7684\u540c\u65f6\uff0c\u517c\u987e\u4e86\u91cd\u578b\u673a\u5175\u72ec\u7279\u7684\u9ad8\u9632\u62a4\u80fd\u529b\u3002\u5b89\u88c5\u5728\u8eaf\u5e72\u90e8\u4f4d\u7684\u300c\u6b8b\u5fc3\u300d\u82af\u7247\uff0c\u80fd\u6839\u636e\u6218\u6597\u4e2d\u7684\u5b9e\u9645\u60c5\u51b5\uff0c\u8f6c\u6362\u589e\u538b\u51fa\u529b\u3002\u5f3a\u608d\u7684\u6301\u7eed\u4f5c\u6218\u6548\u80fd\uff0c\u4f7f\u5f97\u5f71\u6b66\u8005\u6210\u4e3a\u540d\u526f\u5176\u5b9e\u7684\u6218\u573a\u6740\u5668\u3002",
-      "output": "2055",
-      "durable": "457",
-      "Armor": "144",
-      "fire": "120",
-      "Antiriot": "770",
-      "parts": [
-        {
-          "position": "\u8eaf\u5e72",
-          "aircraftWeight": "365",
-          "maxHp": "12706",
-          "Armor": "1412",
-          "Hit": null,
-          "Dodge": null,
-          "Antiriot": "4472"
-        },
-        {
-          "position": "\u5de6\u81c2",
-          "aircraftWeight": "175",
-          "maxHp": "6283",
-          "Armor": "941",
-          "Hit": "1672",
-          "Dodge": null,
-          "Antiriot": null
-        },
-        {
-          "position": "\u53f3\u81c2",
-          "aircraftWeight": "175",
-          "maxHp": "6283",
-          "Armor": "941",
-          "Hit": "1672",
-          "Dodge": null,
-          "Antiriot": null
-        },
-        {
-          "position": "\u817f\u90e8",
-          "aircraftWeight": "230",
-          "maxHp": "9036",
-          "Armor": "941",
-          "Hit": null,
-          "Dodge": "3287",
-          "Antiriot": null
-        }
-      ],
-      "manjiFirepower": "1176",
-      "modules": [
-        {
-          "_id": {
-            "timestamp": 1696936931,
-            "date": 1696936931000
-          },
-          "ID": "40014",
-          "name": "Accuracy Mod",
-          "SpecificEffects": "Hit Rate <color=#F74848>+10%</color>.",
-          "BufCarried": "400141",
-          "SkillIcon": "Icon_entry_40011",
-          "icon": "Icon_entry_40011",
-          "Status": 1,
-          "weight": 860,
-          "id": "4001",
-          "level": 4
-        },
-        {
-          "_id": {
-            "timestamp": 1740643579,
-            "date": 1740643579000
-          },
-          "ID": "20504",
-          "name": "Remnant Core Mod",
-          "SpecificEffects": "Every time an enemy takes <buf ID=900017>[Fixed DMG]</buf> or Splash DMG, gains DMG increases by <color=#F74848>6%</color>, stacking up to <color=#F74848>5</color> times, lasting for <color=#F74848>2</color> turns.",
-          "BufCarried": "205041",
-          "SkillIcon": "Icon_skill_passive_1171",
-          "icon": "Icon_skill_passive_1171",
-          "Status": 1,
-          "weight": 322,
-          "id": "2050",
-          "level": 4
-        },
-        {
-          "_id": {
-            "timestamp": 1740643581,
-            "date": 1740643581000
-          },
-          "ID": "30408",
-          "name": "Flanking Mod",
-          "SpecificEffects": "When attacking enemies on any terrain effect, DMG dealt increases by <color=#F74848>18%</color>, <buf ID=900017>[Fixed DMG]</buf> dealt increases by <color=#F74848>25%</color>.",
-          "BufCarried": "304081/304083",
-          "SkillIcon": "Icon_entry_10091",
-          "icon": "Icon_entry_10091",
-          "Status": 1,
-          "weight": 712,
-          "id": "3040",
-          "level": 8
-        }
-      ],
-      "dispatchGroup": "GeekX",
-      "dispatchVersion": "2.3",
-      "version": "2.2",
       "enTranslation": true
     },
     {

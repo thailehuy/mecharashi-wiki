@@ -60,7 +60,7 @@ window.DispatchData = {
       "cnPatch": "2.3",
       "Arsenal": "Fenrir",
       "InnovativE": "Arbiter",
-      "GeekX": "Shadow Warrior",
+      "GeekX": "Kagemusha",
       "Sparkplug": "Tengshe"
     },
     {
