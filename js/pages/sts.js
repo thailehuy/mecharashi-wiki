@@ -17,7 +17,6 @@ Pages.sts = {
   _activeRanks:    {},
   _activeTypes:    {},
   _activeVersions: {},
-  _enOnly:         true,
   _lastViewed:     null,
   _searchQuery:    '',
 
@@ -63,7 +62,6 @@ Pages.sts = {
         '<div class="filter-group"><span class="filter-label">Rank</span>' + rankButtons + '</div>' +
         '<div class="filter-group"><span class="filter-label">Type</span>' + typeButtons + '</div>' +
         '<div class="filter-group"><span class="filter-label">Version</span>' + verButtons + '</div>' +
-        '<div class="filter-group ms-auto"><button class="filter-btn filter-en" id="toggle-en-sts">EN Only</button></div>' +
       '</div>' +
       '<div class="row g-3" id="mech-grid"></div>'
     );
@@ -91,12 +89,6 @@ Pages.sts = {
         $(this).toggleClass('active', !!self._activeVersions[v]);
         self._renderGrid(mechs);
       });
-      $('#toggle-en-sts').toggleClass('active', self._enOnly);
-      $(document).on('click.sts', '#toggle-en-sts', function () {
-        self._enOnly = !self._enOnly;
-        $(this).toggleClass('active', self._enOnly);
-        self._renderGrid(mechs);
-      });
       $(document).on('input.sts', '#mech-search', function () {
         self._searchQuery = $(this).val();
         self._renderGrid(mechs);
@@ -111,15 +103,13 @@ Pages.sts = {
     var activeTypes = Object.keys(this._activeTypes).filter(k => this._activeTypes[k]);
     var activeVers  = Object.keys(this._activeVersions).filter(k => this._activeVersions[k]);
 
-    var enOnly = this._enOnly;
     var query  = (this._searchQuery || '').trim().toLowerCase();
     var filtered = mechs.filter(function (m) {
       var rankOk   = activeRanks.length === 0 || activeRanks.indexOf(m.quality)  !== -1;
       var typeOk   = activeTypes.length === 0 || activeTypes.indexOf(m.type)     !== -1;
       var verOk    = activeVers.length  === 0 || activeVers.indexOf(m.version)   !== -1;
-      var enOk     = !enOnly || m.enTranslation;
       var searchOk = !query || (m.name || '').toLowerCase().indexOf(query) !== -1;
-      return rankOk && typeOk && verOk && enOk && searchOk;
+      return rankOk && typeOk && verOk && searchOk;
     }).slice().sort(function (a, b) {
       return parseFloat(b.version) - parseFloat(a.version) || parseFloat(b.ID) - parseFloat(a.ID);
     });

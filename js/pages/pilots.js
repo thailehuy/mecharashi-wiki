@@ -35,7 +35,6 @@ Pages.pilots = {
   _activeOccupations: {},
   _activeVersions:    {},
   _activeLicenses:    {},
-  _enOnly:            true,
   _lastViewed:        null,
   _searchQuery:       '',
   _skinIndex:         null,
@@ -86,7 +85,6 @@ Pages.pilots = {
         '<div class="filter-row">' +
           '<div class="filter-group"><span class="filter-label">Rank</span>' + rankButtons + '</div>' +
           '<div class="filter-group"><span class="filter-label">License</span>' + licButtons + '</div>' +
-          '<div class="filter-group ms-auto"><button class="filter-btn filter-en" id="toggle-en-pilots">EN Only</button></div>' +
         '</div>' +
         '<div class="filter-row">' +
           '<div class="filter-group"><span class="filter-label">Occupation</span>' + occButtons + '</div>' +
@@ -127,12 +125,6 @@ Pages.pilots = {
         $(this).toggleClass('active', !!self._activeLicenses[l]);
         self._renderGrid(pilots);
       });
-      $('#toggle-en-pilots').toggleClass('active', self._enOnly);
-      $(document).on('click.pilots', '#toggle-en-pilots', function () {
-        self._enOnly = !self._enOnly;
-        $(this).toggleClass('active', self._enOnly);
-        self._renderGrid(pilots);
-      });
       $(document).on('input.pilots', '#pilot-search', function () {
         self._searchQuery = $(this).val();
         self._renderGrid(pilots);
@@ -148,16 +140,14 @@ Pages.pilots = {
     var activeVers  = Object.keys(this._activeVersions).filter(k => this._activeVersions[k]);
     var activeLics  = Object.keys(this._activeLicenses).filter(k => this._activeLicenses[k]);
 
-    var enOnly = this._enOnly;
     var query  = (this._searchQuery || '').trim().toLowerCase();
     var filtered = pilots.filter(function (p) {
       var rankOk   = activeRanks.length === 0 || activeRanks.indexOf(p.quality)   !== -1;
       var occOk    = activeOccs.length  === 0 || activeOccs.indexOf(p.Occupation) !== -1;
       var verOk    = activeVers.length  === 0 || activeVers.indexOf(p.version)    !== -1;
       var licOk    = activeLics.length  === 0 || activeLics.indexOf(p.AllowedMechaDriveList_DriveAllowedList) !== -1;
-      var enOk     = !enOnly || p.enTranslation;
       var searchOk = !query || (p.PilotName || '').toLowerCase().indexOf(query) !== -1;
-      return rankOk && occOk && verOk && licOk && enOk && searchOk;
+      return rankOk && occOk && verOk && licOk && searchOk;
     }).slice().sort(function (a, b) {
       return pilotReleaseOrder(b.PilotName) - pilotReleaseOrder(a.PilotName)
         || parseFloat(b.version) - parseFloat(a.version)
