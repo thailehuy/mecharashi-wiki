@@ -58,7 +58,7 @@ window.DispatchData = {
     },
     {
       "cnPatch": "2.3",
-      "Arsenal": "Fenrir",
+      "Arsenal": "Fenrisúlfr",
       "InnovativE": "Arbiter",
       "GeekX": "Kagemusha",
       "Sparkplug": "Tengshe"
