@@ -75,7 +75,7 @@ $(function () {
 
     $('[data-page]').removeClass('active');
     $('[data-page="' + page + '"]').addClass('active');
-    $('#miscDropdownToggle').toggleClass('active', page === 'dispatch' || page === 'exskills' || page === 'ststats' || page === 'pilotstats' || page === 'builder');
+    $('#miscDropdownToggle').toggleClass('active', page === 'dispatch' || page === 'exskills' || page === 'shops' || page === 'ststats' || page === 'pilotstats' || page === 'builder');
 
     $('#app-content').html(p.render(param));
     window.scrollTo(0, 0);

@@ -312,6 +312,63 @@ body {
   white-space: nowrap;
 }
 
+.shop-version-cell {
+  white-space: nowrap;
+  color: #a0a0c0;
+}
+
+.shop-mods-cell {
+  text-align: left !important;
+}
+
+.shop-mod-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  align-items: flex-start;
+}
+
+.shop-mod-chip {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: #e0e0e0;
+  text-decoration: none;
+  font-size: 0.78rem;
+  cursor: default;
+}
+
+a.shop-mod-chip {
+  cursor: pointer;
+}
+
+a.shop-mod-chip:hover .shop-mod-chip-name {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.shop-mod-chip-icon {
+  display: block;
+  width: 22px;
+  height: 22px;
+  border-radius: 4px;
+  border: 1px solid #3a3a5a;
+  object-fit: cover;
+  flex: none;
+}
+
+.shop-mod-chip-icon-empty {
+  background-color: #0d0d1a;
+}
+
+.shop-mod-chip-name {
+  white-space: nowrap;
+}
+
+.shop-mod-chip-static .shop-mod-chip-name {
+  color: #8a8aa0;
+}
+
 .ststats-th-name {
   text-align: left !important;
 }
