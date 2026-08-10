@@ -27,14 +27,14 @@ MANUAL_TEMPLATES = {
     '刀剑模组':     {'name': 'Blade Mod',        'template': 'Alter-Blade DMG <color=#F74848>+3%</color>.'},
     '电锯模组':     {'name': 'Chainsaw Mod',     'template': 'Chainsaw DMG <color=#F74848>+3%</color>.'},
     '喷火器模组':   {'name': 'Flamethrower Mod', 'template': 'Flamethrower DMG <color=#F74848>+3%</color>.'},
-    '反战术模组':   {'name': 'Anti-AoE Mod',     'template': 'DMG Taken from AoE Attacks <color=#F74848>-3%</color>.'},
+    '反战术模组':   {'name': 'Anti-Tactical Mod', 'template': 'DMG Taken from AoE Attacks <color=#F74848>-3%</color>.'},
     '反狙击模组':   {'name': 'Anti-Sniper Mod',  'template': 'DMG Taken from Sniper Weapons <color=#F74848>-3%</color>.'},
     '反格斗模组':   {'name': 'Anti-Melee Mod',   'template': 'DMG Taken from Melee Weapons <color=#F74848>-3%</color>.'},
     '反突击模组':   {'name': 'Anti-Assault Mod', 'template': 'DMG Taken from Assault Weapons <color=#F74848>-3%</color>.'},
     '检修模组':     {'name': 'Maintenance Mod',  'template': 'Backpack Repair AMT <color=#F74848>+3%</color>.'},
     '电磁炮模组':   {'name': 'Rail Gun Mod',      'template': 'Rail Gun DMG <color=#F74848>+3%</color>.'},
     '火箭模组':     {'name': 'Rocket Mod',       'template': 'Rocket DMG <color=#F74848>+3%</color>.'},
-    '导弹模组':     {'name': 'Missile Mod',      'template': 'Missile DMG <color=#F74848>+3%</color>.'},
+    '导弹模组':     {'name': 'ML Mod',           'template': 'Missile DMG <color=#F74848>+3%</color>.'},
     '轻型步枪模组': {'name': 'Light Rifle Mod',  'template': 'Light Rifle DMG <color=#F74848>+3%</color>.'},
     '狙击步枪模组': {'name': 'Sniper Rifle Mod', 'template': 'Sniper Rifle DMG <color=#F74848>+3%</color>.'},
     '重机枪模组':   {'name': 'HMG Mod',           'template': 'Heavy Machine Gun DMG <color=#F74848>+3%</color>.'},
@@ -42,7 +42,9 @@ MANUAL_TEMPLATES = {
     '霰弹枪模组':   {'name': 'Shotgun Mod',       'template': 'Shotgun DMG <color=#F74848>+3%</color>.'},
     '长柄模组':     {'name': 'Polearm Mod',      'template': 'Polearm DMG <color=#F74848>+3%</color>.'},
     '拳套模组':     {'name': 'Knuckle Mod',      'template': 'Knuckle DMG <color=#F74848>+3%</color>.'},
-    '打桩机模组':   {'name': 'Pile Bunker Mod',  'template': 'Pile Bunker DMG <color=#F74848>+3%</color>.'},
+    '打桩机模组':   {'name': 'PB Mod',           'template': 'Pile Bunker DMG <color=#F74848>+3%</color>.'},
+    '冲阵模组':     {'name': 'Poke Mod',         'template': 'Within <color=#F74848>2</color> adjacent tiles, if there are <color=#F74848>3</color> or more enemies, DMG Taken <color=#F74848>-3%</color>.'},
+    '警戒模组':     {'name': 'Vigilant Mod',     'template': 'When triggering [Vigilant Shot], DMG <color=#F74848>+5%</color>.'},
 }
 
 # These families are equipped and translated on real mechs, but aren't in the
@@ -98,6 +100,20 @@ MANUAL_LEVEL_OVERRIDES = {
         '1': 'For each buff gained, DMG <color=#F74848>+2%</color>, up to <color=#F74848>6%</color>. Lasts for <color=#F74848>2</color> turns.',
         '2': 'For each buff gained, DMG <color=#F74848>+4%</color>, up to <color=#F74848>12%</color>. Lasts for <color=#F74848>2</color> turns.',
         '3': 'For each buff gained, DMG <color=#F74848>+4%</color>, up to <color=#F74848>20%</color>. Lasts for <color=#F74848>2</color> turns.',
+    },
+    # Poke Mod (family 3018) unlocks a bonus Aura clause only at level 8 that
+    # the generic template substitution can't produce (has_bonus_clause_pattern
+    # makes MANUAL_TEMPLATES only ever read/write the primary clause) — hand-
+    # authored here using the wiki's established debuff-aura phrasing (see
+    # family 30060103's "Activate the Aura: Inflicts a Dodge Rate ..." line).
+    '3018': {
+        '8': 'Within <color=#F74848>2</color> adjacent tiles, if there are <color=#F74848>3</color> or more enemies, DMG Taken <color=#F74848>-18%</color>.\nActivate the Aura: Inflicts a Hit Rate <color=#F74848>-8%</color> on enemies within the adjacent <color=#F74848>2</color>-tile area.',
+    },
+    # Vigilant Mod (family 3012) unlocks a bonus clause only at level 8 (an
+    # extra [Vigilant Shot] use per turn) that MANUAL_TEMPLATES' primary-clause
+    # extraction can't produce.
+    '3012': {
+        '8': 'When triggering [Vigilant Shot], DMG <color=#F74848>+30%</color>.\nAdditionally, [Vigilant Shot] trigger chances per turn <color=#F74848>+1</color>.',
     },
 }
 
