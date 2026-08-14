@@ -21,6 +21,7 @@ Pages.accessories = {
   title: 'Accessories',
 
   _activeCO: null,
+  _activeW: false,
   _searchQuery: '',
 
   render: function () {
@@ -44,6 +45,12 @@ Pages.accessories = {
         allCOs.map(function (co) {
           return '<button class="filter-btn acc-co-btn' + (self._activeCO === co ? ' active' : '') + '" data-co="' + co + '">CO' + co + '</button>';
         }).join('') +
+      '</div>';
+
+    var typeFilterHtml =
+      '<div class="acc-type-filter">' +
+        '<span class="filter-label">Type</span>' +
+        '<button class="filter-btn acc-w-btn' + (self._activeW ? ' active' : '') + '" data-w="1">W</button>' +
       '</div>';
 
     var acNav =
@@ -82,6 +89,12 @@ Pages.accessories = {
         self._applyFilter();
       });
 
+      $('#acc-page').on('click', '.acc-w-btn', function () {
+        self._activeW = !self._activeW;
+        $(this).toggleClass('active', self._activeW);
+        self._applyFilter();
+      });
+
       $('#acc-page').on('input', '#acc-search', function () {
         self._searchQuery = $(this).val();
         self._applyFilter();
@@ -101,6 +114,7 @@ Pages.accessories = {
           '<input type="text" class="search-box" id="acc-search" placeholder="Search accessories by name..." />' +
         '</div>' +
         coFilterHtml +
+        typeFilterHtml +
         acNav +
         sectionsHtml +
         '<a class="back-to-top" id="acc-back-top" href="#">&#8593; Top</a>' +
@@ -110,6 +124,7 @@ Pages.accessories = {
 
   _applyFilter: function () {
     var co    = this._activeCO;
+    var w     = this._activeW;
     var query = (this._searchQuery || '').trim().toLowerCase();
     $('#acc-page .ac-section').each(function () {
       var $section = $(this);
@@ -117,9 +132,11 @@ Pages.accessories = {
       $section.find('.acc-card-wrap').each(function () {
         var cos  = $(this).data('cos');
         var name = decodeURIComponent($(this).data('name') || '');
+        var isW  = $(this).data('w') === 1;
         var coOk     = co === null || (cos && cos.indexOf(co) !== -1);
+        var wOk      = !w || isW;
         var searchOk = !query || name.indexOf(query) !== -1;
-        var show = coOk && searchOk;
+        var show = coOk && wOk && searchOk;
         $(this).toggle(show);
         if (show) sectionHasMatch = true;
       });
@@ -156,7 +173,7 @@ Pages.accessories = {
       var nameAttr = encodeURIComponent(displayName.toLowerCase());
 
       return (
-        '<div class="col-12 col-sm-6 col-lg-4 col-xl-3 acc-card-wrap" data-cos=\'' + cosAttr + '\' data-name="' + nameAttr + '">' +
+        '<div class="col-12 col-sm-6 col-lg-4 col-xl-3 acc-card-wrap" data-cos=\'' + cosAttr + '\' data-name="' + nameAttr + '" data-w="' + (isW ? 1 : 0) + '">' +
           '<div class="acc-card">' +
             '<div class="acc-card-icon">' +
               '<img class="acc-statetype-icon" src="' + stateIcon + '" alt="" />' +
@@ -190,6 +207,7 @@ Pages.accessories = {
 
   destroy: function () {
     this._activeCO = null;
+    this._activeW = false;
     this._searchQuery = '';
   },
 };

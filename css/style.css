@@ -2542,6 +2542,20 @@ a.material-item:hover .material-icon-wrap {
   color: #e0e7ff;
 }
 
+.acc-type-filter {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+.filter-btn.acc-w-btn.active {
+  background: rgba(249, 115, 22, 0.3);
+  border-color: #f97316;
+  color: #fed7aa;
+}
+
 /* ── Builder page ────────────────────────────────────────────────────── */
 
 .builder-uid-row {

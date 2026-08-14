@@ -31,6 +31,20 @@ var Glossary = (function () {
     '4011081': 'Funnel Field'
   };
 
+  // Some backpack skills tag a nested Code ability using their own skill ID
+  // as the mainSkill reference (e.g. Juggernaut's passive and its granted
+  // [Weapon Switch] Code both use ID 62304), so the raw data has no separate
+  // ID for the nested ability. Transcribed from data/screenshots/backpacks.
+  var BACKPACK_CODE_SKILLS = {
+    '62304': {
+      name: 'Weapon Switch',
+      icon: 'Icon_skill_order_5008',
+      Ap: 0,
+      CD: 0,
+      effect: 'After use, swaps the weapon equipped in hand with the weapon mounted in the Weapon Backpack, then allows continued action using remaining Movement.\nCan be used up to <color=#F74848>1</color> time per turn.\nCan only be used when both Arms are undestroyed.'
+    }
+  };
+
   function parseEffects(text) {
     if (!text) return '';
 
@@ -214,6 +228,25 @@ var Glossary = (function () {
         if (hs.icon) hEntry.icon = hs.icon;
         data.skill[synthId] = hEntry;
       });
+    });
+
+    // Backpack skills reference themselves in their own effect text
+    // (e.g. Juggernaut's <skill mainSkill=62304>[Weapon Switch]</skill>),
+    // so seed them here too or that self-reference can never resolve.
+    // A BACKPACK_CODE_SKILLS override takes priority, since the referenced
+    // ID is really the nested Code ability, not the passive itself.
+    var backpacks = (window.BackpacksData || {}).backpacks || [];
+    backpacks.forEach(function (b) {
+      var sk = b.skill;
+      if (!sk || !sk.ID || !sk.name) return;
+      if (data.skill[sk.ID]) return;
+      if (BACKPACK_CODE_SKILLS[sk.ID]) {
+        data.skill[sk.ID] = BACKPACK_CODE_SKILLS[sk.ID];
+        return;
+      }
+      var entry = { name: sk.name, effect: sk.SpecificEffects || '' };
+      if (sk.icon) entry.icon = sk.icon;
+      data.skill[sk.ID] = entry;
     });
 
     rebuildNameIndex();
