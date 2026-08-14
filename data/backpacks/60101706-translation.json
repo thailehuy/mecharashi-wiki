@@ -1,11 +1,11 @@
 {
-  "name": "Raider",
+  "name": "Juggernaut",
   "ac": 10,
   "version": "2.2",
   "skills": {
     "62304": {
-      "name": "Raider Drive · DMG UP",
-      "SpecificEffects": "Gains Code <skill mainSkill=62304>[Weapon Switch]</skill>, usable up to <color=#F74848>1</color> time per turn. At the end of action, if both arms are intact, can additionally use <skill mainSkill=62304>[Weapon Switch]</skill>, usable up to <color=#F74848>1</color> time every <color=#F74848>2</color> turns.\nWhen in combat, enemy DMG Taken <color=#F74848>+10%</color>.\nST gains an additional <color=#F74848>300</color> Power, Body HP <color=#F74848>+10%</color> and DMG Dealt <color=#F74848>+5%</color>."
+      "name": "Juggernaut Drive – DMG UP",
+      "SpecificEffects": "Can use the Code <skill mainSkill=62304>[Weapon Switch]</skill> up to <color=#F74848>1</color> time per turn. After taking action, if both Arms are undestroyed, can use <skill mainSkill=62304>[Weapon Switch]</skill> an additional <color=#F74848>1</color> time every <color=#F74848>2</color> turns.\nIn combat, Enemy DMG Taken <color=#F74848>+10%</color>.\nST gains an extra <color=#F74848>300</color> Power, Body HP <color=#F74848>+10%</color>, and DMG <color=#F74848>+5%</color>."
     }
   }
 }

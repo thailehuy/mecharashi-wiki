@@ -3552,8 +3552,8 @@
             "date": 1740643579000
           },
           "ID": "20504",
-          "name": "Remnant Core Mod",
-          "SpecificEffects": "Every time an enemy takes <buf ID=900017>[Fixed DMG]</buf> or Splash DMG, gains DMG increases by <color=#F74848>6%</color>, stacking up to <color=#F74848>5</color> times, lasting for <color=#F74848>2</color> turns.",
+          "name": "Zanshin",
+          "SpecificEffects": "Each time an enemy ST is hit by an attack that includes <buf ID=900017>[Fixed DMG]</buf> or Splash DMG, DMG increases by <color=#F74848>6%</color> for <color=#F74848>2</color> turns. Stacks up to <color=#F74848>5</color> times.",
           "BufCarried": "205041",
           "SkillIcon": "Icon_skill_passive_1171",
           "icon": "Icon_skill_passive_1171",
@@ -3568,8 +3568,8 @@
             "date": 1740643581000
           },
           "ID": "30408",
-          "name": "Flanking Mod",
-          "SpecificEffects": "When attacking enemies on any terrain effect, DMG dealt increases by <color=#F74848>18%</color>, <buf ID=900017>[Fixed DMG]</buf> dealt increases by <color=#F74848>25%</color>.",
+          "name": "Ravage Mod",
+          "SpecificEffects": "When attacking a target on any terrain effect, DMG <color=#F74848>+18%</color>. <buf ID=900017>[Fixed DMG]</buf> dealt is increased by <color=#F74848>25%</color>.",
           "BufCarried": "304081/304083",
           "SkillIcon": "Icon_entry_10091",
           "icon": "Icon_entry_10091",

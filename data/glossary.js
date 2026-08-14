@@ -925,16 +925,16 @@ window.GlossaryData = {
       "effect": "When this module reaches maximum level, activates the Hidden Mod of each part."
     },
     "2018502": {
-      "name": "Blazing Flame",
-      "effect": "When actively attacked by Adele and allies, triggers [Blazing Detonation]"
+      "name": "Hellstorm",
+      "effect": "After being actively attacked, [Adele] triggers [Hellstorm Burst]."
     },
     "900129": {
-      "name": "Blazing Detonation",
-      "effect": "Deals [Fixed DMG] equal to <color=#F74848>0.2</color> times Adele's Flamethrower attack to all parts of the target unit and all enemies within range, then remove [Blazing Flame]. This DMG can destroy parts. If the other affected targets are carrying [Blazing Flame], [Blazing Detonation] effect will be applied to those targets."
+      "name": "Hellstorm Burst I",
+      "effect": "Deals [Fixed DMG] equal to <color=#F74848>0.2</color>x [Adele]'s Flamethrower ATK to all parts of the target and all enemy units within <color=#F74848>1</color> tile. This damage can destroy parts. After attacking, removes [Hellstorm]. If other affected targets are afflicted with [Hellstorm] when [Hellstorm Burst] is triggered, [Hellstorm Burst] is triggered again on those targets."
     },
     "2018506": {
-      "name": "Flaming Heart",
-      "effect": "Increases Flamethrower ATK by <color=#F74848>1%</color>, stacking up to <color=#F74848>10</color> times."
+      "name": "Scorching Will",
+      "effect": "Flamethrower Weapon ATK increased by <color=#F74848>1%</color>. Stacks up to <color=#F74848>10</color> times."
     },
     "900139": {
       "name": "Fire DMG",

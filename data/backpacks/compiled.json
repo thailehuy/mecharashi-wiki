@@ -693,7 +693,7 @@
     },
     {
       "ID": "60101706",
-      "name": "Raider",
+      "name": "Juggernaut",
       "quality": "SSSR",
       "weight": "150",
       "BackpackMainType": "BackupEquipment",
@@ -703,9 +703,9 @@
       "RelatedDescription": "\u65e7\u5f0f\u51fa\u529b\u5e72\u6270\u80cc\u5305\u7684\u6539\u826f\u5347\u7ea7\u6b3e\uff0c\u901a\u8fc7\u5916\u90e8\u6302\u8f7d\u7684\u5c0f\u578b\u529f\u80fd\u88c5\u7f6e\u4e3a\u673a\u5175\u63d0\u4f9b\u989d\u5916\u7684\u51fa\u529b\uff0c\u4f7f\u5176\u62e5\u6709\u66f4\u9ad8\u7684\u4f5c\u6218\u5168\u91cd\u4e0a\u9650\u3002\u540c\u65f6\u96c6\u6210\u4e86\u5bf9\u654c\u673a\u906d\u53d7\u4f24\u5bb3\u63d0\u5347\u548c\u521b\u65b0\u6027\u7684\u6b66\u5668\u5207\u6362\u529f\u80fd\u3002",
       "skill": {
         "ID": "62304",
-        "name": "Raider Drive \u00b7 DMG UP",
+        "name": "Juggernaut Drive \u2013 DMG UP",
         "icon": "Icon_skill_passive_5234",
-        "SpecificEffects": "Gains Code <skill mainSkill=62304>[Weapon Switch]</skill>, usable up to <color=#F74848>1</color> time per turn. At the end of action, if both arms are intact, can additionally use <skill mainSkill=62304>[Weapon Switch]</skill>, usable up to <color=#F74848>1</color> time every <color=#F74848>2</color> turns.\nWhen in combat, enemy DMG Taken <color=#F74848>+10%</color>.\nST gains an additional <color=#F74848>300</color> Power, Body HP <color=#F74848>+10%</color> and DMG Dealt <color=#F74848>+5%</color>."
+        "SpecificEffects": "Can use the Code <skill mainSkill=62304>[Weapon Switch]</skill> up to <color=#F74848>1</color> time per turn. After taking action, if both Arms are undestroyed, can use <skill mainSkill=62304>[Weapon Switch]</skill> an additional <color=#F74848>1</color> time every <color=#F74848>2</color> turns.\nIn combat, Enemy DMG Taken <color=#F74848>+10%</color>.\nST gains an extra <color=#F74848>300</color> Power, Body HP <color=#F74848>+10%</color>, and DMG <color=#F74848>+5%</color>."
       },
       "crafting": [
         {
@@ -739,7 +739,7 @@
     },
     {
       "ID": "60802406",
-      "name": "Navigator",
+      "name": "Architect",
       "quality": "SSSR",
       "weight": "150",
       "BackpackMainType": "Radar",
@@ -749,9 +749,9 @@
       "RelatedDescription": "\u65e7\u5f0f\u96f7\u8fbe\u5f3a\u5316\u80cc\u5305\u7684\u6539\u826f\u5347\u7ea7\u6b3e\uff0c\u5c0f\u578b\u5316\u7684\u673a\u5175\u5b9a\u4f4d\u88c5\u7f6e\uff0c\u5f00\u542f\u80fd\u8ba9\u53cb\u65b9\u673a\u5175\u83b7\u5f97\u5b9a\u4f4d\uff0c\u5f15\u5bfc\u98de\u5f39\u5bf9\u8303\u56f4\u5185\u76ee\u6807\u8fdb\u884c\u7cbe\u51c6\u6253\u51fb\u3002\u540c\u65f6\u96c6\u6210\u4e86\u5f3a\u5316\u673a\u5175\u6bcf\u56de\u5408\u9996\u6b21\u653b\u51fb\u80fd\u529b\u7684\u529f\u80fd\u3002",
       "skill": {
         "ID": "62305",
-        "name": "Navigator Drive \u00b7 First Strike",
+        "name": "Architect Drive \u2013 First Strike",
         "icon": "Icon_skill_passive_5237",
-        "SpecificEffects": "Enables the ST's adjacent <color=#F74848>2</color>-tile area to become a valid attack zone for allied Missile Launcher and Rocket Launcher attacks. Attacks directed by this effect gain Hit Rate <color=#F74848>+25%</color>.\nWhen actively attacking for the <color=#F74848>1st</color> time each turn, DMG <color=#F74848>+7.5%</color> and Crit Rate <color=#F74848>+5%</color>.\nST Body HP <color=#F74848>+10%</color> and DMG Dealt <color=#F74848>+5%</color>."
+        "SpecificEffects": "Enables the ST's adjacent <color=#F74848>2</color>-tile area to become a valid attack zone for ally Missile Launcher and Rocket Launcher attacks. Hit Rate <color=#F74848>+25%</color> for attacks induced by Backpack effects.\nWhen initiating combat for the first time each turn: DMG <color=#F74848>+7.5%</color> and Crit Rate <color=#F74848>+5%</color>.\nST Body HP <color=#F74848>+10%</color> and DMG <color=#F74848>+5%</color>."
       },
       "crafting": [
         {

@@ -1253,8 +1253,8 @@
       "PassiveSkill": [
         {
           "ID": "53068",
-          "name": "Piercing Pulse",
-          "SpecificEffects": "When actively attacking with a Rail Gun, DMG dealt to targets carrying a debuff <color=#F74848>+20%</color>.",
+          "name": "Penetrating Pulse",
+          "SpecificEffects": "When actively attacking with a Rail Gun, DMG <color=#F74848>+20%</color> against targets with debuff effects.",
           "BufCarried": "530681",
           "SkillIcon": "Icon_skill_passive_1146",
           "icon": "Icon_skill_passive_1146",
@@ -1263,8 +1263,8 @@
         },
         {
           "ID": "53069",
-          "name": "Total Sweep",
-          "SpecificEffects": "Enhanced [Perfectionism]: When deploying a <buf ID=900085>[Tokamak Sphere]</buf>, the redirect direction expands to the selected direction and the <color=#F74848>2</color> adjacent directions, and the redirected attack's DMG multiplier <color=#F74848>+0.2</color>. When actively attacking, if the target carries <color=#F74848>5</color> or more debuffs, inflicts <buf ID=1009083>[Intimidation]</buf> after combat, lasting <color=#F74848>1</color> turn. When actively attacking, for every <color=#F74848>15</color> debuffs inflicted (cumulative), immediately gains <color=#F74848>1</color> AP.",
+          "name": "Tridentate Deflector",
+          "SpecificEffects": "Enhanced [Perfectionism] Effect: When deploying <buf ID=900085>[Tokamak Spheres]</buf>, the Redirection direction will change to the selected direction and the adjacent <color=#F74848>2</color> directions, with the redirected attack increased by <color=#F74848>0.2x</color>. When actively attacking, if the target is afflicted with <color=#F74848>5</color> or more debuffs, inflicts <buf ID=1009083>[Intimidation]</buf> on the target after combat, lasting for <color=#F74848>1</color> turn. When actively attacking, for every <color=#F74848>15</color> debuffs applied, immediately gains <color=#F74848>1</color> AP.",
           "BufCarried": "530699/530693/530692/530694/530695",
           "SkillIcon": "Icon_skill_passive_5257",
           "icon": "Icon_skill_passive_5257",
@@ -1274,7 +1274,7 @@
         {
           "ID": "53067",
           "name": "Ammo Regeneration",
-          "SpecificEffects": "When actively attacking with a Rail Gun, if <color=#F74848>3</color> or more targets are hit, restores <color=#F74848>1</color> Ammo after combat. This effect can trigger again after an interval of <color=#F74848>2</color> turns.",
+          "SpecificEffects": "When actively attacking a target with a Rail Gun and hitting <color=#F74848>3</color> or more targets, recovers <color=#F74848>1</color> round of Ammo after combat. Can trigger a maximum of <color=#F74848>1</color> time every <color=#F74848>2</color> turns.",
           "BufCarried": "530671",
           "SkillIcon": "Icon_skill_passive_5150",
           "icon": "Icon_skill_passive_5150",
@@ -1337,7 +1337,7 @@
         {
           "ID": "53067",
           "name": "Ammo Regeneration",
-          "SpecificEffects": "When actively attacking with a Rail Gun, if <color=#F74848>3</color> or more targets are hit, restores <color=#F74848>1</color> Ammo after combat. This effect can trigger again after an interval of <color=#F74848>2</color> turns.",
+          "SpecificEffects": "When actively attacking a target with a Rail Gun and hitting <color=#F74848>3</color> or more targets, recovers <color=#F74848>1</color> round of Ammo after combat. Can trigger a maximum of <color=#F74848>1</color> time every <color=#F74848>2</color> turns.",
           "BufCarried": "530671",
           "SkillIcon": "Icon_skill_passive_5150",
           "icon": "Icon_skill_passive_5150",
@@ -1396,7 +1396,7 @@
       "PassiveSkill": [
         {
           "ID": "53068",
-          "name": "Piercing Pulse",
+          "name": "Penetrating Pulse",
           "SpecificEffects": "Rail Gun Ammo capacity <color=#F74848>+1</color>. When attacking with a Rail Gun, Crit Rate <color=#F74848>+20%</color>.",
           "BufCarried": "530681",
           "SkillIcon": "Icon_skill_passive_1146",
@@ -1416,7 +1416,7 @@
         },
         {
           "ID": "53069",
-          "name": "Total Sweep",
+          "name": "Tridentate Deflector",
           "SpecificEffects": "Enhanced [Doctrine of Sin]: When a target initiates combat against an ally, inflicts [Magnetic Lock-On] on the target. Can trigger <color=#F74848>2</color> times per turn. When actively attacking with a Rail Gun, for every <color=#F74848>1</color> target destroyed, reloads <color=#F74848>1</color> Rail Gun Ammo. Can trigger <color=#F74848>3</color> times per turn. For every <color=#F74848>1</color> time [Magnetic Lock-On] is inflicted, gains <color=#F74848>1</color> stack of [Magnetic Buff], up to <color=#F74848>10</color> stacks.",
           "BufCarried": "530699/530693/530692/530694/530695",
           "SkillIcon": "Icon_skill_passive_5257",
@@ -2875,8 +2875,8 @@
       "PassiveSkill": [
         {
           "ID": "53065",
-          "name": "Regenerative Arm Plating",
-          "SpecificEffects": "After combat, if the shield-carrying Arm is destroyed, immediately repairs it and restores <color=#F74848>50%</color> HP. Can trigger again after an interval of <color=#F74848>3</color> turns.",
+          "name": "Nano Regenerator",
+          "SpecificEffects": "After combat, if the shield Arm is destroyed, immediately restores the shield Arm and recovers <color=#F74848>50%</color> of its HP. This effect can trigger again after an interval of <color=#F74848>3</color> turns.",
           "BufCarried": "530651",
           "SkillIcon": "Icon_skill_passive_3124",
           "icon": "Icon_skill_passive_3124",
@@ -2886,7 +2886,7 @@
         {
           "ID": "53066",
           "name": "Oath",
-          "SpecificEffects": "Enhanced [EVA-00 Pilot]: Allies within <buf ID=900022>[Guard]</buf> range take <color=#F74848>25%</color> less DMG from Code and AoE attacks. When <buf ID=1014820>[Sync Ratio]</buf> is above <color=#F74848>65%</color>, DMG Dealt and <buf ID=900017>[Fixed DMG]</buf> Dealt <color=#F74848>+25%</color>.",
+          "SpecificEffects": "Enhanced [EVA-00 Pilot] Effect: Allies within <buf ID=900022>[Guard]</buf> range take <color=#F74848>25%</color> less DMG from code and AoE attack damage. When <buf ID=1014820>[Sync Ratio]</buf> is above <color=#F74848>65%</color>, DMG and <buf ID=900017>[Fixed DMG]</buf> are increased by <color=#F74848>25%</color>.",
           "BufCarried": "530662/530663/530664/530665",
           "SkillIcon": "Icon_skill_passive_5256",
           "icon": "Icon_skill_passive_5256",
@@ -2896,7 +2896,7 @@
         {
           "ID": "53064",
           "name": "Reinforced Alloy",
-          "SpecificEffects": "The base HP provided by the Shield increases by <color=#F74848>100%</color>.",
+          "SpecificEffects": "Shield base HP <color=#F74848>+100%</color>.",
           "SkillIcon": "Icon_skill_passive_2118",
           "icon": "Icon_skill_passive_2118",
           "Status": 1,
@@ -2987,7 +2987,7 @@
         {
           "ID": "53064",
           "name": "Reinforced Alloy",
-          "SpecificEffects": "The base HP provided by the Shield increases by <color=#F74848>100%</color>.",
+          "SpecificEffects": "Shield base HP <color=#F74848>+100%</color>.",
           "SkillIcon": "Icon_skill_passive_2118",
           "icon": "Icon_skill_passive_2118",
           "Status": 1,

@@ -1112,8 +1112,8 @@
       "quality": "SSR",
       "Talent0_2Ability": {
         "ID": "201850",
-        "name": "Blazing Heart",
-        "SpecificEffects": "When attacking with a Flamethrower, applies <buf ID=2018502>[Blazing Flame]</buf> to the target. When target carrying <buf ID=2018502>[Blazing Flame]</buf> is attacked, triggers <buf ID=900129>[Blazing Detonation]</buf> after combat.",
+        "name": "Hellstorm Allure",
+        "SpecificEffects": "When attacking with a Flamethrower, applies <buf ID=2018502>[Hellstorm]</buf> to the target. When target carrying <buf ID=2018502>[Hellstorm]</buf> is attacked, triggers <buf ID=900129>[Hellstorm Burst I]</buf> after combat.",
         "BufCarried": "2018501/2018507/2018516",
         "SkillIcon": "Icon_skill_talent_5151",
         "icon": "Icon_skill_talent_5151",
@@ -1122,8 +1122,8 @@
       },
       "Talent3_5Ability": {
         "ID": "201851",
-        "name": "Blazing Heart",
-        "SpecificEffects": "When attacking with a Flamethrower, applies <buf ID=2018502>[Blazing Flame]</buf> to the target. When target carrying <buf ID=2018502>[Blazing Flame]</buf> is attacked, triggers <buf ID=900129>[Blazing Detonation]</buf> after combat.\nWhen attacking targets on <terrian ID=4003081 />, <buf ID=900129>[Blazing Detonation]</buf> DMG multiplier increases by <color=#F74848>+0.1</color>.",
+        "name": "Hellstorm Allure",
+        "SpecificEffects": "When attacking with a Flamethrower, immediately inflicts <buf ID=2018502>[Hellstorm]</buf> on the target. When the enemy suffers an active attack, if afflicted with <buf ID=2018502>[Hellstorm]</buf>, <buf ID=900129>[Hellstorm Burst I]</buf> is triggered after combat. When <buf ID=900129>[Hellstorm Burst I]</buf> is triggered, if the target is on <terrian ID=4003081 />, the base damage multiplier is increased by <color=#F74848>0.1</color>.",
         "BufCarried": "2018501/2018511/2018507/2018516",
         "SkillIcon": "Icon_skill_talent_5151",
         "icon": "Icon_skill_talent_5151",
@@ -1418,7 +1418,7 @@
                 "PassiveSkill": {
                   "ID": "201841",
                   "name": "Flame Dancer 1",
-                  "SpecificEffects": "When an enemy takes DMG from <terrian ID=4003081 />, applies <buf ID=2018502>[Blazing Flame]</buf> to that enemy.",
+                  "SpecificEffects": "While on the battlefield, whenever an enemy unit takes <terrian ID=4003081 /> damage, inflicts <buf ID=2018502>[Hellstorm]</buf> on that unit.",
                   "BufCarried": "2018411",
                   "SkillIcon": "Icon_skill_passive_5254",
                   "icon": "Icon_skill_passive_5254",
@@ -1455,7 +1455,7 @@
                 "PassiveSkill": {
                   "ID": "200043",
                   "name": "Adaptive Warfare 2",
-                  "SpecificEffects": "If not moved before an Active Attack, <buf ID=900004>[Re-ATK]</buf> can be triggered, effective up to <color=#F74848>1</color> time per turn. Unable to move before attacking.\nEffects similar to <buf ID=900004>[Re-ATK]</buf> cannot be re-triggered.",
+                  "SpecificEffects": "Before actively attacking without having moved, can trigger <buf ID=900004>[Re-ATK]</buf>. Can only trigger <color=#F74848>1</color> time per turn. Unable to move before attacking. Only triggers if no other <buf ID=900004>[Re-ATK]</buf> effect is triggered this turn.",
                   "BufCarried": "2000431",
                   "SkillIcon": "Icon_skill_passive_5155",
                   "icon": "Icon_skill_passive_5155",
@@ -1474,7 +1474,7 @@
                 "PassiveSkill": {
                   "ID": "201844",
                   "name": "Flame Dancer 2",
-                  "SpecificEffects": "After triggering <buf ID=900129>[Blazing Detonation]</buf> on a target, applies <terrian ID=4003081 /> to that tile, lasting <color=#F74848>2</color> turns.",
+                  "SpecificEffects": "After triggering <buf ID=900129>[Hellstorm Burst]</buf>, inflicts <terrian ID=4003081 /> on the target's tile, lasting for <color=#F74848>2</color> turns.",
                   "BufCarried": "2018441",
                   "SkillIcon": "Icon_skill_passive_5254",
                   "icon": "Icon_skill_passive_5254",
@@ -1493,7 +1493,7 @@
                 "PassiveSkill": {
                   "ID": "201845",
                   "name": "Flame Dancer 3",
-                  "SpecificEffects": "<buf ID=900129>[Blazing Detonation]</buf> effect range is expanded to include the target and all enemies within <color=#F74848>1</color> ring around the target.",
+                  "SpecificEffects": "The damage range of <buf ID=900129>[Hellstorm Burst]</buf> is expanded to the target and <color=#F74848>1</color> ring around it.",
                   "BufCarried": "2018451/2018452/2018454",
                   "SkillIcon": "Icon_skill_passive_5254",
                   "icon": "Icon_skill_passive_5254",
@@ -1512,7 +1512,7 @@
                 "PassiveSkill": {
                   "ID": "201846",
                   "name": "Flame Dancer 4",
-                  "SpecificEffects": "Every time <buf ID=900129>[Blazing Detonation]</buf> is triggered, gains <color=#F74848>1</color> stack of <buf ID=2018506>[Flaming Heart]</buf>, up to a maximum of <color=#F74848>10</color> stacks.",
+                  "SpecificEffects": "Each time <buf ID=900129>[Hellstorm Burst]</buf> is triggered, gains <color=#F74848>1</color> stack of <buf ID=2018506>[Scorching Will]</buf>. Can stack up to <color=#F74848>10</color> times.",
                   "BufCarried": "2018461",
                   "SkillIcon": "Icon_skill_passive_5254",
                   "icon": "Icon_skill_passive_5254",
@@ -1741,8 +1741,8 @@
           "weight": 2504,
           "skill": {
             "ID": "201802",
-            "name": "Rose Thorns",
-            "SpecificEffects": "Reduces DMG taken by <color=#F74848>10%</color>. After being attacked, inflicts <buf ID=2018502>[Blazing Flame]</buf> on the attacker.",
+            "name": "Rose Thorn",
+            "SpecificEffects": "DMG Taken <color=#F74848>-10%</color>. After being actively attacked, inflicts <buf ID=2018502>[Hellstorm]</buf> on the attacker.",
             "BufCarried": "2018021/2018022",
             "SkillIcon": "Icon_skill_passive_2125",
             "icon": "Icon_skill_passive_2125",
@@ -1767,8 +1767,8 @@
           "skill": {
             "ID": "201803",
             "remarks": "\u963f\u9edb\u52d2-\u4eff\u751f\u7535\u8111",
-            "name": "Overwhelming Affection",
-            "describe": "Uses a Flamethrower to attack all targets within <range type=2>4 straight</range> tiles or <color=#F74848>3</color> diagonal tiles, dealing <color=#F74848>0.7</color> AOE DMG.",
+            "name": "Shared Resolve",
+            "describe": "Uses a Flamethrower to attack all targets in a <color=#F74848>1x4</color>-tile line or a diagonal <color=#F74848>3</color>-tile range, dealing <color=#F74848>0.7x</color> AoE DMG.",
             "type": "SpecialAssault",
             "Ap": "3",
             "matchingWeaponType": "\u55b7\u706b\u5668",
@@ -1795,8 +1795,8 @@
           "skill": {
             "ID": "201804",
             "remarks": "\u963f\u9edb\u52d2-\u4eff\u751f\u7535\u8111",
-            "name": "Fiery Steps",
-            "describe": "Jumps with both Flamethrowers to an unoccopied tile within <color=#F74848>2</color> to <color=#F74848>4</color> straight range, dealing <color=#F74848>0.3x</color> AOE DMG to all enemies in the path. Applies <terrian ID=4003081 /> to the tiles traversed, lasting for <color=#F74848>2</color> turns. Can trigger <buf ID=900004>[Re-ATK]</buf> after jumping.",
+            "name": "Flame Stomp",
+            "describe": "Jumps to an empty tile <color=#F74848>2</color> to <color=#F74848>4</color> tiles away in a vertical line and uses two Flamethrowers to deal <color=#F74848>0.3x</color> AoE DMG to enemy STs along the path. After combat, applies <terrian ID=4003081 /> to tiles along the path for <color=#F74848>2</color> turns. After jumping, can trigger <buf ID=900004>[Re-ATK]</buf>. Cannot move before attacking.",
             "type": "SpecialAssault",
             "CD": "2",
             "Ap": "1",
@@ -1823,8 +1823,8 @@
           "weight": 2507,
           "skill": {
             "ID": "201805",
-            "name": "Elegant Style",
-            "SpecificEffects": "At the end of action, if on <terrian ID=4003081 />, restores <color=#F74848>10%</color> HP.",
+            "name": "Poised Grace",
+            "SpecificEffects": "At end of action, if on allied <terrian ID=4003081 />, restores <color=#F74848>10%</color> of own HP.",
             "BufCarried": "2018051",
             "SkillIcon": "Icon_skill_passive_3132",
             "icon": "Icon_skill_passive_3132",
@@ -1849,8 +1849,8 @@
           "skill": {
             "ID": "201806",
             "remarks": "\u963f\u9edb\u52d2-\u4eff\u751f\u7535\u8111",
-            "name": "Dance Invitation",
-            "describe": "Uses both Flamethrowers to attack a target, dealing <color=#F74848>2\u00d70.75</color> DMG. Before combat, applies <buf ID=2018502>[Blazing Flame]</buf> to all enemies within <color=#F74848>1</color> ring around the target.",
+            "name": "Invitation to Dance",
+            "describe": "Simultaneously uses two Flamethrowers to attack a target, dealing <color=#F74848>0.75x</color> DMG <color=#F74848>2</color> times. Before combat, inflicts <buf ID=2018502>[Hellstorm]</buf> on enemies within <color=#F74848>1</color> ring around the target.",
             "type": "EquipmentSkill",
             "Ap": "4",
             "matchingWeaponType": "\u55b7\u706b\u5668",
@@ -1877,7 +1877,7 @@
           "skill": {
             "ID": "201807",
             "name": "Flame Tango",
-            "SpecificEffects": "When traversing <terrian ID=4003081 />, movement cost is halved.",
+            "SpecificEffects": "When passing through <terrian ID=4003081 />, Movement consumption is halved.",
             "BufCarried": "2018071",
             "SkillIcon": "Icon_skill_passive_5118",
             "icon": "Icon_skill_passive_5118",
@@ -1902,8 +1902,8 @@
           "skill": {
             "ID": "201808",
             "remarks": "\u963f\u9edb\u52d2-\u4eff\u751f\u7535\u8111",
-            "name": "Final Bow",
-            "describe": "Uses both Flamethrowers to deal <color=#F74848>2\u00d70.35</color> DMG to all enemies within range. If <buf ID=900129>[Blazing Detonation]</buf> is triggered with this attack, <buf ID=900017>[Fixed DMG]</buf> dealt is increased by <color=#F74848>30%</color>.",
+            "name": "Final Salute",
+            "describe": "Simultaneously uses two Flamethrowers to deal <color=#F74848>0.35x</color> DMG <color=#F74848>2</color> times to all enemy units within range. When <buf ID=900129>[Hellstorm Burst]</buf> is triggered during this attack, <buf ID=900017>[Fixed DMG]</buf> is increased by <color=#F74848>30%</color>.",
             "type": "SpecialAssault",
             "Ap": "5",
             "matchingWeaponType": "\u55b7\u706b\u5668",
@@ -2188,12 +2188,12 @@
       "enTranslation": true,
       "hiddenSkills": [
         {
-          "name": "Warm Greeting",
+          "name": "Warm Greetings",
           "icon": "Icon_skill_main_1151",
           "type": "EquipmentSkill",
           "Ap": "3",
           "CD": "0",
-          "describe": "Uses a Flamethrower to attack a target, dealing <color=#F74848>1.3x</color> DMG and <color=#F74848>10%</color> <buf ID=900139>[Fire DMG]</buf> to other targets along the path. After combat, applies <terrian ID=4003081 /> to all tiles along the attack path, lasting <color=#F74848>2</color> turns."
+          "describe": "Uses a Flamethrower to attack the main target, dealing <color=#F74848>1.3x</color> DMG and dealing <color=#F74848>10%</color> <buf ID=900065>[Flame DMG]</buf> to other targets in the path. After combat, applies <terrian ID=4003081 /> to tiles hit, lasting for <color=#F74848>2</color> turns."
         }
       ],
       "statRanks": {

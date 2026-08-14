@@ -1,4 +1,4 @@
-var GLOBAL_VERSION = 2.1;
+var GLOBAL_VERSION = 2.2;
 
 $(function () {
   // Glossary data is pre-loaded via data/glossary.js; just init tooltips
