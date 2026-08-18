@@ -6,11 +6,11 @@
   "Occupation": "Raider",
   "Talent0_2Ability": {
     "name": "Hellstorm Allure",
-    "SpecificEffects": "When attacking with a Flamethrower, applies <buf ID=2018502>[Hellstorm]</buf> to the target. When target carrying <buf ID=2018502>[Hellstorm]</buf> is attacked, triggers <buf ID=900129>[Hellstorm Burst I]</buf> after combat."
+    "SpecificEffects": "When attacking with a Flamethrower, immediately inflicts <buf ID=2018502>[Hellstorm]</buf> on the target. When the enemy suffers an active attack, if afflicted with <buf ID=2018502>[Hellstorm]</buf>, <buf ID=900129>[Hellstorm Burst I]</buf> is triggered after combat."
   },
   "Talent3_5Ability": {
     "name": "Hellstorm Allure",
-    "SpecificEffects": "When attacking with a Flamethrower, immediately inflicts <buf ID=2018502>[Hellstorm]</buf> on the target. When the enemy suffers an active attack, if afflicted with <buf ID=2018502>[Hellstorm]</buf>, <buf ID=900129>[Hellstorm Burst I]</buf> is triggered after combat. When <buf ID=900129>[Hellstorm Burst I]</buf> is triggered, if the target is on <terrian ID=4003081 />, the base damage multiplier is increased by <color=#F74848>0.1</color>."
+    "SpecificEffects": "When attacking with a Flamethrower, immediately inflicts <buf ID=2018502>[Hellstorm]</buf> on the target. When the enemy suffers an active attack, if afflicted with <buf ID=2018502>[Hellstorm]</buf>, <buf ID=900129>[Hellstorm Burst I]</buf> is triggered after combat.\nWhen <buf ID=900129>[Hellstorm Burst I]</buf> is triggered, if the target is on <terrian ID=4003081 />, the base damage multiplier is increased by <color=#F74848>0.1</color>."
   },
   "skills": {
     "200001": {
