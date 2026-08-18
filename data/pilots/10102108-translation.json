@@ -24,8 +24,8 @@
       "SpecificEffects": "During an Active Attack in combat, if the target has the <buf ID=900053>[Short Circuit]</buf> effect, trigger <buf ID=900053>[Short Circuit]</buf>'s Fixed DMG immediately after combat."
     },
     "300603": {
-      "name": "Nerf",
-      "describe": "=VLOOKUP(F234,[EN_TranslateExcel.xlsx]翻译数据表!$A:$B,2,0)",
+      "name": "Tactical Nerf",
+      "describe": "Uses a Sniper Rifle to attack a target, dealing <color=#F74848>1.35x</color> DMG. Inflicts <buf ID=7101701>[Armor Down I]</buf>, <buf ID=7101003>[Hit Rate Down II]</buf> and <buf ID=7101103>[Dodge Rate Down II]</buf> based on the part hit, each lasting for <color=#F74848>1</color> turn.",
       "SpecificEffects": ""
     },
     "700013": {

@@ -82287,8 +82287,8 @@
           "skill": {
             "ID": "300603",
             "remarks": "\u6e29\u65af\u987f-\u4eff\u751f\u7535\u8111",
-            "name": "Nerf",
-            "describe": "=VLOOKUP(F234,[EN_TranslateExcel.xlsx]\u7ffb\u8bd1\u6570\u636e\u8868!$A:$B,2,0)",
+            "name": "Tactical Nerf",
+            "describe": "Uses a Sniper Rifle to attack a target, dealing <color=#F74848>1.35x</color> DMG. Inflicts <buf ID=7101701>[Armor Down I]</buf>, <buf ID=7101003>[Hit Rate Down II]</buf> and <buf ID=7101103>[Dodge Rate Down II]</buf> based on the part hit, each lasting for <color=#F74848>1</color> turn.",
             "type": "EquipmentSkill",
             "Ap": "2",
             "matchingWeaponType": "SR",
