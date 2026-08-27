@@ -2070,8 +2070,8 @@
             "date": 1740643579000
           },
           "ID": "20494",
-          "name": "Last Stand Mod",
-          "SpecificEffects": "When initiating combat, <color=#F74848>20%</color> chance to trigger <buf ID=900001>[Flurry Strike]</buf>, dealing <color=#F74848>0.25</color> DMG. For every <color=#F74848>15%</color> missing HP, trigger chance increases by <color=#F74848>20%</color>.",
+          "name": "Hrodvitnir Unit",
+          "SpecificEffects": "When initiating combat, has a <color=#F74848>20%</color> chance to trigger <buf ID=900001>[Flurry Strike]</buf>, dealing <color=#F74848>0.25x</color> DMG. For every <color=#F74848>15%</color> decrease in HP percentage, trigger chance increases by <color=#F74848>20%</color>.",
           "BufCarried": "204941/204942/204943/204944/204945",
           "SkillIcon": "Icon_skill_passive_5242",
           "icon": "Icon_skill_passive_5242",
@@ -2086,8 +2086,8 @@
             "date": 1740643581000
           },
           "ID": "30398",
-          "name": "Berserk Mod",
-          "SpecificEffects": "When attacking, if the user's HP percentage is below <color=#F74848>60%</color>, ignores <color=#F74848>35%</color> target's defense and <color=#F74848>18%</color> target's dodge rate.\nThis unit movement increases by <color=#F74848>1</color> tile, ignores unit obstruction when moving. When attacking target within movement range, <buf ID=900001>[Flurry Strike]</buf> is upgraded to <buf ID=900010>[Gutsy Strike]</buf>",
+          "name": "Ulfhednar Mod",
+          "SpecificEffects": "When attacking, if this unit's HP percentage is below <color=#F74848>60%</color>, ignores <color=#F74848>35%</color> of the target's Armor and <color=#F74848>18%</color> of Dodge.\nST Movement increased by <color=#F74848>1</color> tile. Ignores unit obstruction when moving, and when attacking enemy STs along the movement path, its triggered <buf ID=900001>[Flurry Strike]</buf> effect is replaced with <buf ID=900010>[Gutsy Strike]</buf>.",
           "BufCarried": "303981/303983/303984",
           "SkillIcon": "Icon_entry_10090",
           "icon": "Icon_entry_10090",

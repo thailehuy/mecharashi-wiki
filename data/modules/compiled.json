@@ -425,20 +425,20 @@
       }
     },
     "3039": {
-      "name": "Berserk Mod",
+      "name": "Ulfhednar Mod",
       "icon": "Icon_entry_10090",
       "category": "GeneralSuit",
       "maxLevel": 8,
       "currentLevel": 8,
       "levels": {
-        "1": "When attacking, if the user's HP percentage is below <color=#F74848>40%</color>, ignores <color=#F74848>6%</color> target's defense and <color=#F74848>3%</color> target's dodge rate.",
-        "2": "When attacking, if the user's HP percentage is below <color=#F74848>40%</color>, ignores <color=#F74848>8%</color> target's defense and <color=#F74848>4%</color> target's dodge rate.",
-        "3": "When attacking, if the user's HP percentage is below <color=#F74848>40%</color>, ignores <color=#F74848>12%</color> target's defense and <color=#F74848>6%</color> target's dodge rate.",
-        "4": "When attacking, if the user's HP percentage is below <color=#F74848>50%</color>, ignores <color=#F74848>16%</color> target's defense and <color=#F74848>8%</color> target's dodge rate.",
-        "5": "When attacking, if the user's HP percentage is below <color=#F74848>50%</color>, ignores <color=#F74848>19%</color> target's defense and <color=#F74848>10%</color> target's dodge rate.",
-        "6": "When attacking, if the user's HP percentage is below <color=#F74848>60%</color>, ignores <color=#F74848>23%</color> target's defense and <color=#F74848>12%</color> target's dodge rate.",
-        "7": "When attacking, if the user's HP percentage is below <color=#F74848>60%</color>, ignores <color=#F74848>27%</color> target's defense and <color=#F74848>14%</color> target's dodge rate.",
-        "8": "When attacking, if the user's HP percentage is below <color=#F74848>60%</color>, ignores <color=#F74848>35%</color> target's defense and <color=#F74848>18%</color> target's dodge rate.\nThis unit movement increases by <color=#F74848>1</color> tile, ignores unit obstruction when moving. When attacking target within movement range, <buf ID=900001>[Flurry Strike]</buf> is upgraded to <buf ID=900010>[Gutsy Strike]</buf>"
+        "1": "When attacking, if this unit's HP percentage is below <color=#F74848>40%</color>, ignores <color=#F74848>6%</color> of the target's Armor and <color=#F74848>3%</color> of Dodge.",
+        "2": "When attacking, if this unit's HP percentage is below <color=#F74848>40%</color>, ignores <color=#F74848>8%</color> of the target's Armor and <color=#F74848>4%</color> of Dodge.",
+        "3": "When attacking, if this unit's HP percentage is below <color=#F74848>40%</color>, ignores <color=#F74848>12%</color> of the target's Armor and <color=#F74848>6%</color> of Dodge.",
+        "4": "When attacking, if this unit's HP percentage is below <color=#F74848>50%</color>, ignores <color=#F74848>16%</color> of the target's Armor and <color=#F74848>8%</color> of Dodge.",
+        "5": "When attacking, if this unit's HP percentage is below <color=#F74848>50%</color>, ignores <color=#F74848>19%</color> of the target's Armor and <color=#F74848>10%</color> of Dodge.",
+        "6": "When attacking, if this unit's HP percentage is below <color=#F74848>60%</color>, ignores <color=#F74848>23%</color> of the target's Armor and <color=#F74848>12%</color> of Dodge.",
+        "7": "When attacking, if this unit's HP percentage is below <color=#F74848>60%</color>, ignores <color=#F74848>27%</color> of the target's Armor and <color=#F74848>14%</color> of Dodge.",
+        "8": "When attacking, if this unit's HP percentage is below <color=#F74848>60%</color>, ignores <color=#F74848>35%</color> of the target's Armor and <color=#F74848>18%</color> of Dodge.\nST Movement increased by <color=#F74848>1</color> tile. Ignores unit obstruction when moving, and when attacking enemy STs along the movement path, its triggered <buf ID=900001>[Flurry Strike]</buf> effect is replaced with <buf ID=900010>[Gutsy Strike]</buf>."
       }
     },
     "3038": {
@@ -805,14 +805,14 @@
       "maxLevel": 8,
       "currentLevel": 8,
       "levels": {
-        "1": "Before actively attacking, if distance moved is <color=#F74848>2</color> tiles or less, DMG <color=#F74848>+3%</color>",
-        "2": "Before actively attacking, if distance moved is <color=#F74848>2</color> tiles or less, DMG <color=#F74848>+4%</color>",
-        "3": "Before actively attacking, if distance moved is <color=#F74848>2</color> tiles or less, DMG <color=#F74848>+6%</color>",
-        "4": "Before actively attacking, if distance moved is <color=#F74848>2</color> tiles or less, DMG <color=#F74848>+8%</color>",
-        "5": "Before actively attacking, if distance moved is <color=#F74848>2</color> tiles or less, DMG <color=#F74848>+10%</color>",
-        "6": "Before actively attacking, if distance moved is <color=#F74848>2</color> tiles or less, DMG <color=#F74848>+12%</color>",
-        "7": "Before actively attacking, if distance moved is <color=#F74848>2</color> tiles or less, DMG <color=#F74848>+14%</color>",
-        "8": "Before actively attacking, if distance moved is <color=#F74848>2</color> tiles or less, DMG <color=#F74848>+18%</color>;\nAt end of action, immediately gain <color=#F74848>1</color> AP. This effect has a <color=#F74848>1</color>-turn trigger interval."
+        "1": "Before actively attacking, if distance moved is <color=#F74848>2</color> tiles or less, DMG +<color=#F74848>3%</color>",
+        "2": "Before actively attacking, if distance moved is <color=#F74848>2</color> tiles or less, DMG +<color=#F74848>4%</color>",
+        "3": "Before actively attacking, if distance moved is <color=#F74848>2</color> tiles or less, DMG +<color=#F74848>6%</color>",
+        "4": "Before actively attacking, if distance moved is <color=#F74848>2</color> tiles or less, DMG +<color=#F74848>8%</color>",
+        "5": "Before actively attacking, if distance moved is <color=#F74848>2</color> tiles or less, DMG +<color=#F74848>10%</color>",
+        "6": "Before actively attacking, if distance moved is <color=#F74848>2</color> tiles or less, DMG +<color=#F74848>12%</color>",
+        "7": "Before actively attacking, if distance moved is <color=#F74848>2</color> tiles or less, DMG +<color=#F74848>14%</color>",
+        "8": "Before actively attacking, if distance moved is <color=#F74848>2</color> tiles or less, DMG +<color=#F74848>18%</color>;\nAt end of action, immediately gains <color=#F74848>1</color> AP. This effect has a <color=#F74848>1</color>-turn trigger interval."
       }
     },
     "3005": {
@@ -1096,16 +1096,16 @@
       }
     },
     "2049": {
-      "name": "Last Stand Mod",
+      "name": "Hrodvitnir Unit",
       "icon": "Icon_skill_passive_5242",
       "category": "SuitS",
       "maxLevel": 4,
       "currentLevel": 4,
       "levels": {
-        "1": "When initiating combat, <color=#F74848>4%</color> chance to trigger <buf ID=900001>[Flurry Strike]</buf>, dealing <color=#F74848>0.25</color> DMG. For every <color=#F74848>15%</color> missing HP, trigger chance increases by <color=#F74848>4%</color>.",
-        "2": "When initiating combat, <color=#F74848>8%</color> chance to trigger <buf ID=900001>[Flurry Strike]</buf>, dealing <color=#F74848>0.25</color> DMG. For every <color=#F74848>15%</color> missing HP, trigger chance increases by <color=#F74848>8%</color>.",
-        "3": "When initiating combat, <color=#F74848>14%</color> chance to trigger <buf ID=900001>[Flurry Strike]</buf>, dealing <color=#F74848>0.25</color> DMG. For every <color=#F74848>15%</color> missing HP, trigger chance increases by <color=#F74848>14%</color>.",
-        "4": "When initiating combat, <color=#F74848>20%</color> chance to trigger <buf ID=900001>[Flurry Strike]</buf>, dealing <color=#F74848>0.25</color> DMG. For every <color=#F74848>15%</color> missing HP, trigger chance increases by <color=#F74848>20%</color>."
+        "1": "When initiating combat, has a <color=#F74848>4%</color> chance to trigger <buf ID=900001>[Flurry Strike]</buf>, dealing <color=#F74848>0.25x</color> DMG. For every <color=#F74848>15%</color> decrease in HP percentage, trigger chance increases by <color=#F74848>4%</color>.",
+        "2": "When initiating combat, has a <color=#F74848>8%</color> chance to trigger <buf ID=900001>[Flurry Strike]</buf>, dealing <color=#F74848>0.25x</color> DMG. For every <color=#F74848>15%</color> decrease in HP percentage, trigger chance increases by <color=#F74848>8%</color>.",
+        "3": "When initiating combat, has a <color=#F74848>14%</color> chance to trigger <buf ID=900001>[Flurry Strike]</buf>, dealing <color=#F74848>0.25x</color> DMG. For every <color=#F74848>15%</color> decrease in HP percentage, trigger chance increases by <color=#F74848>14%</color>.",
+        "4": "When initiating combat, has a <color=#F74848>20%</color> chance to trigger <buf ID=900001>[Flurry Strike]</buf>, dealing <color=#F74848>0.25x</color> DMG. For every <color=#F74848>15%</color> decrease in HP percentage, trigger chance increases by <color=#F74848>20%</color>."
       }
     },
     "2047": {
@@ -1541,74 +1541,6 @@
         "8": "If this unit doesn't move before actively attacking, Crit Rate <color=#F74848>+24%</color>. If a critical hit occurs when attacking, Crit DMG <color=#F74848>+3%</color> after combat. This effect can stack up to a maximum increase of <color=#F74848>15%</color>."
       }
     },
-    "3045": {
-      "name": "Support Mod",
-      "icon": "Icon_entry_10097",
-      "category": "GeneralSuit",
-      "maxLevel": 8,
-      "currentLevel": 8,
-      "levels": {
-        "1": "When attacking, if there are allies within <color=#F74848>4</color> adjacent tiles, DMG dealt increases by <color=#F74848>3%</color>.",
-        "2": "When attacking, if there are allies within <color=#F74848>4</color> adjacent tiles, DMG dealt increases by <color=#F74848>4%</color>.",
-        "3": "When attacking, if there are allies within <color=#F74848>4</color> adjacent tiles, DMG dealt increases by <color=#F74848>6%</color>.",
-        "4": "When attacking, if there are allies within <color=#F74848>4</color> adjacent tiles, DMG dealt increases by <color=#F74848>8%</color>.",
-        "5": "When attacking, if there are allies within <color=#F74848>4</color> adjacent tiles, DMG dealt increases by <color=#F74848>10%</color>.",
-        "6": "When attacking, if there are allies within <color=#F74848>4</color> adjacent tiles, DMG dealt increases by <color=#F74848>12%</color>.",
-        "7": "When attacking, if there are allies within <color=#F74848>4</color> adjacent tiles, DMG dealt increases by <color=#F74848>14%</color>.",
-        "8": "When attacking, if there are allies within <color=#F74848>4</color> adjacent tiles, DMG dealt increases by <color=#F74848>18%</color>.\nAt the end of turn, if <color=#F74848>2</color> or more code or attack skills are used this turn, recovers <color=#F74848>1</color> AP."
-      }
-    },
-    "3031": {
-      "name": "Skirmishing Mod",
-      "icon": "Icon_skill_passive_1154",
-      "category": "GeneralSuit",
-      "maxLevel": 8,
-      "currentLevel": 8,
-      "levels": {
-        "1": "When in combat against enemies within <color=#F74848>2</color> tiles, DMG <color=#F74848>+3%</color>.",
-        "2": "When in combat against enemies within <color=#F74848>2</color> tiles, DMG <color=#F74848>+4%</color>.",
-        "3": "When in combat against enemies within <color=#F74848>2</color> tiles, DMG <color=#F74848>+6%</color>.",
-        "4": "When in combat against enemies within <color=#F74848>2</color> tiles, DMG <color=#F74848>+8%</color>.",
-        "5": "When in combat against enemies within <color=#F74848>2</color> tiles, DMG <color=#F74848>+10%</color>.",
-        "6": "When in combat against enemies within <color=#F74848>2</color> tiles, DMG <color=#F74848>+12%</color>.",
-        "7": "When in combat against enemies within <color=#F74848>2</color> tiles, DMG <color=#F74848>+14%</color>.",
-        "8": "When in combat against enemies within <color=#F74848>2</color> tiles, DMG <color=#F74848>+18%</color>.\nWhen initiating combat, if the target is hit, steals <color=#F74848>1</color> AP from the target after combat. Can only trigger <color=#F74848>1</color> time per turn."
-      }
-    },
-    "3033": {
-      "name": "Sentinel Mod",
-      "icon": "Icon_entry_10084",
-      "category": "GeneralSuit",
-      "maxLevel": 8,
-      "currentLevel": 8,
-      "levels": {
-        "1": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, DMG <color=#F74848>+3%</color>.",
-        "2": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, DMG <color=#F74848>+4%</color>.",
-        "3": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, DMG <color=#F74848>+6%</color>.",
-        "4": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, DMG <color=#F74848>+8%</color>.",
-        "5": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, DMG <color=#F74848>+10%</color>.",
-        "6": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, DMG <color=#F74848>+12%</color>.",
-        "7": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, DMG <color=#F74848>+14%</color>.",
-        "8": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, DMG <color=#F74848>+18%</color>.\nWhen in combat with a target at <buf ID=900011>[Ideal Range]</buf>, Bullets <color=#F74848>+1</color>."
-      }
-    },
-    "3034": {
-      "name": "Eruption Mod",
-      "icon": "Icon_entry_10086",
-      "category": "GeneralSuit",
-      "maxLevel": 8,
-      "currentLevel": 8,
-      "levels": {
-        "1": "When attacking a target within the attack range of both the held weapon and the backpack weapon, DMG Dealt <color=#F74848>+3%</color>",
-        "2": "When attacking a target within the attack range of both the held weapon and the backpack weapon, DMG Dealt <color=#F74848>+4%</color>",
-        "3": "When attacking a target within the attack range of both the held weapon and the backpack weapon, DMG Dealt <color=#F74848>+6%</color>",
-        "4": "When attacking a target within the attack range of both the held weapon and the backpack weapon, DMG Dealt <color=#F74848>+8%</color>",
-        "5": "When attacking a target within the attack range of both the held weapon and the backpack weapon, DMG Dealt <color=#F74848>+10%</color>",
-        "6": "When attacking a target within the attack range of both the held weapon and the backpack weapon, DMG Dealt <color=#F74848>+12%</color>",
-        "7": "When attacking a target within the attack range of both the held weapon and the backpack weapon, DMG Dealt <color=#F74848>+14%</color>",
-        "8": "When attacking a target within the attack range of both the held weapon and the backpack weapon, DMG Dealt <color=#F74848>+18%</color>;\nEnters the <buf ID=900121>[Restriction Removal]</buf> state, activating the extra module effect integrated within the part."
-      }
-    },
     "3027": {
       "name": "Maverick Mod",
       "icon": "Icon_skill_passive_1106",
@@ -1643,6 +1575,40 @@
         "8": "When executing Code attacks, DMG <color=#F74848>+18%</color>.\nWhen actively attacking with a Tactical Weapon, if <color=#F74848>3</color> or more targets are hit, randomly reloads <color=#F74848>1</color> Ammo after combat, up to <color=#F74848>1</color> time per turn."
       }
     },
+    "3031": {
+      "name": "Skirmishing Mod",
+      "icon": "Icon_skill_passive_1154",
+      "category": "GeneralSuit",
+      "maxLevel": 8,
+      "currentLevel": 8,
+      "levels": {
+        "1": "When in combat against enemies within <color=#F74848>2</color> tiles, DMG <color=#F74848>+3%</color>.",
+        "2": "When in combat against enemies within <color=#F74848>2</color> tiles, DMG <color=#F74848>+4%</color>.",
+        "3": "When in combat against enemies within <color=#F74848>2</color> tiles, DMG <color=#F74848>+6%</color>.",
+        "4": "When in combat against enemies within <color=#F74848>2</color> tiles, DMG <color=#F74848>+8%</color>.",
+        "5": "When in combat against enemies within <color=#F74848>2</color> tiles, DMG <color=#F74848>+10%</color>.",
+        "6": "When in combat against enemies within <color=#F74848>2</color> tiles, DMG <color=#F74848>+12%</color>.",
+        "7": "When in combat against enemies within <color=#F74848>2</color> tiles, DMG <color=#F74848>+14%</color>.",
+        "8": "When in combat against enemies within <color=#F74848>2</color> tiles, DMG <color=#F74848>+18%</color>.\nWhen initiating combat, if the target is hit, steals <color=#F74848>1</color> AP from the target after combat. Can only trigger <color=#F74848>1</color> time per turn."
+      }
+    },
+    "3045": {
+      "name": "Support Mod",
+      "icon": "Icon_entry_10097",
+      "category": "GeneralSuit",
+      "maxLevel": 8,
+      "currentLevel": 8,
+      "levels": {
+        "1": "When attacking, if there are allies within <color=#F74848>4</color> adjacent tiles, DMG dealt increases by <color=#F74848>3%</color>.",
+        "2": "When attacking, if there are allies within <color=#F74848>4</color> adjacent tiles, DMG dealt increases by <color=#F74848>4%</color>.",
+        "3": "When attacking, if there are allies within <color=#F74848>4</color> adjacent tiles, DMG dealt increases by <color=#F74848>6%</color>.",
+        "4": "When attacking, if there are allies within <color=#F74848>4</color> adjacent tiles, DMG dealt increases by <color=#F74848>8%</color>.",
+        "5": "When attacking, if there are allies within <color=#F74848>4</color> adjacent tiles, DMG dealt increases by <color=#F74848>10%</color>.",
+        "6": "When attacking, if there are allies within <color=#F74848>4</color> adjacent tiles, DMG dealt increases by <color=#F74848>12%</color>.",
+        "7": "When attacking, if there are allies within <color=#F74848>4</color> adjacent tiles, DMG dealt increases by <color=#F74848>14%</color>.",
+        "8": "When attacking, if there are allies within <color=#F74848>4</color> adjacent tiles, DMG dealt increases by <color=#F74848>18%</color>.\nAt the end of turn, if <color=#F74848>2</color> or more code or attack skills are used this turn, recovers <color=#F74848>1</color> AP."
+      }
+    },
     "3040": {
       "name": "Ravage Mod",
       "icon": "Icon_entry_10091",
@@ -1658,6 +1624,40 @@
         "6": "When attacking a target on any terrain effect, DMG <color=#F74848>+12%</color>.",
         "7": "When attacking a target on any terrain effect, DMG <color=#F74848>+14%</color>.",
         "8": "When attacking a target on any terrain effect, DMG <color=#F74848>+18%</color>. <buf ID=900017>[Fixed DMG]</buf> dealt is increased by <color=#F74848>25%</color>."
+      }
+    },
+    "3033": {
+      "name": "Sentinel Mod",
+      "icon": "Icon_entry_10084",
+      "category": "GeneralSuit",
+      "maxLevel": 8,
+      "currentLevel": 8,
+      "levels": {
+        "1": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, DMG <color=#F74848>+3%</color>.",
+        "2": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, DMG <color=#F74848>+4%</color>.",
+        "3": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, DMG <color=#F74848>+6%</color>.",
+        "4": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, DMG <color=#F74848>+8%</color>.",
+        "5": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, DMG <color=#F74848>+10%</color>.",
+        "6": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, DMG <color=#F74848>+12%</color>.",
+        "7": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, DMG <color=#F74848>+14%</color>.",
+        "8": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, DMG <color=#F74848>+18%</color>.\nWhen in combat with a target at <buf ID=900011>[Ideal Range]</buf>, Bullets <color=#F74848>+1</color>."
+      }
+    },
+    "3034": {
+      "name": "Eruption Mod",
+      "icon": "Icon_entry_10086",
+      "category": "GeneralSuit",
+      "maxLevel": 8,
+      "currentLevel": 8,
+      "levels": {
+        "1": "When attacking a target within the attack range of both the held weapon and the backpack weapon, DMG Dealt <color=#F74848>+3%</color>",
+        "2": "When attacking a target within the attack range of both the held weapon and the backpack weapon, DMG Dealt <color=#F74848>+4%</color>",
+        "3": "When attacking a target within the attack range of both the held weapon and the backpack weapon, DMG Dealt <color=#F74848>+6%</color>",
+        "4": "When attacking a target within the attack range of both the held weapon and the backpack weapon, DMG Dealt <color=#F74848>+8%</color>",
+        "5": "When attacking a target within the attack range of both the held weapon and the backpack weapon, DMG Dealt <color=#F74848>+10%</color>",
+        "6": "When attacking a target within the attack range of both the held weapon and the backpack weapon, DMG Dealt <color=#F74848>+12%</color>",
+        "7": "When attacking a target within the attack range of both the held weapon and the backpack weapon, DMG Dealt <color=#F74848>+14%</color>",
+        "8": "When attacking a target within the attack range of both the held weapon and the backpack weapon, DMG Dealt <color=#F74848>+18%</color>;\nEnters the <buf ID=900121>[Restriction Removal]</buf> state, activating the extra module effect integrated within the part."
       }
     }
   }

@@ -941,16 +941,16 @@ window.GlossaryData = {
       "effect": "DMG dealt based on the main skill's multiplier."
     },
     "1016514": {
-      "name": "Unyielding Will",
-      "effect": "Body is immune to <buf ID=900109>[Execution]</buf> effect. When body suffers overdamage, trigger <buf ID=900003>[Guts]</buf>, locking its HP to <color=#F74848>1</color>. After combat, repairs all parts to <color=#F74848>50%</color> of their max HP, and repairs all destroyed parts. Effect is removed after triggering."
+      "name": "Absolute Will",
+      "effect": "Body is immune to <buf ID=900109>[Execution]</buf> effects. When the Body suffers overdamage, triggers <buf ID=900003>[Guts]</buf>, locking at <color=#F74848>1</color> HP. After combat, restores <color=#F74848>50%</color> of Max HP to all parts and repairs all destroyed parts. Removed after triggering."
     },
     "900127": {
-      "name": "Invigorate",
-      "effect": "DMG dealt increases by <color=#F74848>4%</color>. Final DMG taken reduces by <color=#F74848>6%</color>. Repair AMT received increases by <color=#F74848>4%</color>. Stacking up to <color=#F74848>5</color> times."
+      "name": "Heroism",
+      "effect": "Final DMG <color=#F74848>+4%</color>, Final DMG Taken <color=#F74848>-6%</color>, and Repair AMT <color=#F74848>+4%</color>. Stacks up to <color=#F74848>5</color> times."
     },
     "1016502": {
-      "name": "Invigorate I",
-      "effect": "DMG dealt increases by <color=#F74848>4%</color>. Final DMG taken reduces by <color=#F74848>6%</color>. Repair AMT received increases by <color=#F74848>4%</color>. Stacking up to <color=#F74848>5</color> times."
+      "name": "Heroism I",
+      "effect": "Final DMG <color=#F74848>+4%</color>, Final DMG Taken <color=#F74848>-6%</color>, and Repair AMT <color=#F74848>+4%</color>. Stacks up to <color=#F74848>5</color> times."
     },
     "1017503": {
       "name": "Condensed I",

@@ -61739,8 +61739,8 @@
       "quality": "SSR",
       "Talent0_2Ability": {
         "ID": "101650",
-        "name": "Battlefield Veteran",
-        "SpecificEffects": "After being actively attacked, if HP falls below <color=#F74848>50%</color>, triggers <color=#F74848>1</color> repair effect from equipped backpack after combat, and gains <buf ID=1016502>[Invigorate I]</buf> based on loss HP. Every <color=#F74848>10%</color> lost HP grants <color=#F74848>1</color> stack, up to <color=#F74848>5</color> stacks.",
+        "name": "Field-Tested",
+        "SpecificEffects": "After being actively attacked, if HP is below <color=#F74848>50%</color>, immediately triggers <color=#F74848>1</color> Manipulator passive repair effect after combat. Gains <buf ID=1016502>[Heroism I]</buf> based on current HP lost, gaining <color=#F74848>1</color> stack for every <color=#F74848>10%</color> HP lost. Can stack up to <color=#F74848>5</color> times.",
         "BufCarried": "1016501/1016504/1016506",
         "SkillIcon": "Icon_skill_talent_3106",
         "icon": "Icon_skill_talent_3106",
@@ -61749,8 +61749,8 @@
       },
       "Talent3_5Ability": {
         "ID": "101651",
-        "name": "Battlefield Veteran",
-        "SpecificEffects": "After being actively attacked, if HP falls below <color=#F74848>50%</color>, triggers <color=#F74848>1</color> repair effect from equipped backpack after combat, and gains <buf ID=1016502>[Invigorate I]</buf> based on loss HP. Every <color=#F74848>10%</color> lost HP grants <color=#F74848>1</color> stack, up to <color=#F74848>5</color> stacks.\nRepair effect from talent can restore <color=#F74848>1</color> destroyed part. At the start of battle, gains <buf ID=1016514>[Unyielding Will]</buf>",
+        "name": "Field-Tested",
+        "SpecificEffects": "After being actively attacked, if HP is below <color=#F74848>50%</color>, immediately triggers <color=#F74848>1</color> Manipulator passive repair effect after combat. Gains <buf ID=1016502>[Heroism I]</buf> based on current HP lost, gaining <color=#F74848>1</color> stack for every <color=#F74848>10%</color> HP lost. Can stack up to <color=#F74848>5</color> times.\nWhen a repair effect is triggered by the talent, can repair <color=#F74848>1</color> destroyed part. When deployed, gains <buf ID=1016514>[Absolute Will]</buf>.",
         "BufCarried": "1016501/1016504/1016506/1016511/1016513",
         "SkillIcon": "Icon_skill_talent_3106",
         "icon": "Icon_skill_talent_3106",
@@ -62044,7 +62044,7 @@
                 "type": 3,
                 "PassiveSkill": {
                   "ID": "101641",
-                  "name": "Islander 1",
+                  "name": "The Exiled 1",
                   "SpecificEffects": "With a Chainsaw, if unable to retaliate in combat, <buf ID=900008>[Pursuit]</buf> can trigger, allowing the unit to move <color=#F74848>3</color> tiles toward the attacker after combat. If successfully reached the target, uses Chainsaw to launch a <buf ID=900009>[Pursuit Retaliation]</buf>, dealing <color=#F74848>0.8</color> DMG. Returns to original position after trigger.",
                   "BufCarried": "1016411",
                   "SkillIcon": "Icon_skill_passive_5255",
@@ -62100,8 +62100,8 @@
                 "type": 3,
                 "PassiveSkill": {
                   "ID": "101644",
-                  "name": "Islander 2",
-                  "SpecificEffects": "At the end of action, if <buf ID=900127>[Invigorate]</buf> stacks are <color=#F74848>5</color> or more, restores <color=#F74848>1</color> AP.",
+                  "name": "The Exiled 2",
+                  "SpecificEffects": "At the end of action, if <buf ID=900127>[Heroism]</buf> stacks are <color=#F74848>5</color> or more, restores <color=#F74848>1</color> AP.",
                   "BufCarried": "1016441",
                   "SkillIcon": "Icon_skill_passive_5255",
                   "icon": "Icon_skill_passive_5255",
@@ -62119,7 +62119,7 @@
                 "type": 3,
                 "PassiveSkill": {
                   "ID": "101645",
-                  "name": "Islander 3",
+                  "name": "The Exiled 3",
                   "SpecificEffects": "Repair skill multiplier increases by <color=#F74848>+0.3</color>",
                   "BufCarried": "1016451",
                   "SkillIcon": "Icon_skill_passive_5255",
@@ -62138,8 +62138,8 @@
                 "type": 3,
                 "PassiveSkill": {
                   "ID": "101646",
-                  "name": "Islander 4",
-                  "SpecificEffects": "<buf ID=900127>[Invigorate]</buf> maximum stacks increase by <color=#F74848>3</color>, each stack additionally increases Final DMG dealt by <color=#F74848>4%</color>.",
+                  "name": "The Exiled 4",
+                  "SpecificEffects": "<buf ID=900127>[Heroism]</buf> maximum stacks increase by <color=#F74848>3</color>, each stack additionally increases Final DMG dealt by <color=#F74848>4%</color>.",
                   "BufCarried": "1016461/1016462",
                   "SkillIcon": "Icon_skill_passive_5255",
                   "icon": "Icon_skill_passive_5255",
@@ -62369,8 +62369,8 @@
           "skill": {
             "ID": "101602",
             "remarks": "\u6000\u4e9a\u7279-\u4eff\u751f\u7535\u8111",
-            "name": "Battlefield Repair",
-            "describe": "Restores HP of all parts of an ST for <color=#F74848>1.6</color> Repair AMT of the equipped backpack. Can restore <color=#F74848>1</color> destroyed part. For each <color=#F74848>1</color> stack of <buf ID=900127>[Invigorate]</buf>, the Repair multiplier is increased by <color=#F74848>+0.1</color>.",
+            "name": "Battlefield Regroup",
+            "describe": "Restores HP equal to <color=#F74848>1.6x</color> Manipulator Repair AMT to all parts of a single ST. Can repair <color=#F74848>1</color> destroyed part. For each <color=#F74848>1</color> stack of <buf ID=900127>[Heroism]</buf>, repair multiplier is increased by <color=#F74848>0.1</color>.",
             "type": "Order",
             "Ap": "2",
             "matchingWeaponType": "\u4fee\u7406\u80cc\u5305",
@@ -62396,8 +62396,8 @@
           "weight": 2469,
           "skill": {
             "ID": "101603",
-            "name": "Feigning Weakness",
-            "SpecificEffects": "In combat, if own HP percentage is less than enemy, critical hit chance and critical hit damage are increased by <color=#F74848>10%</color>.",
+            "name": "Hidden Fangs",
+            "SpecificEffects": "During combat, if this unit's HP percentage is lower than the target's, Crit Rate and Crit DMG <color=#F74848>+10%</color>.",
             "BufCarried": "1016031",
             "SkillIcon": "Icon_skill_passive_4127",
             "icon": "Icon_skill_passive_4127",
@@ -62449,8 +62449,8 @@
           "weight": 2471,
           "skill": {
             "ID": "101605",
-            "name": "High Spirits",
-            "SpecificEffects": "When talent repair effect is triggered, dispels <color=#F74848>1</color> debuff from this unit.",
+            "name": "Rising Morale",
+            "SpecificEffects": "When triggering talent's repair effect, dispels <color=#F74848>1</color> debuff from self.",
             "BufCarried": "1016051",
             "SkillIcon": "Icon_skill_passive_5239",
             "icon": "Icon_skill_passive_5239",
@@ -62475,8 +62475,8 @@
           "skill": {
             "ID": "101606",
             "remarks": "\u6000\u4e9a\u7279-\u4eff\u751f\u7535\u8111",
-            "name": "Decisive Strike",
-            "describe": "Uses a Chainsaw to attack a target, dealing <color=#F74848>1.8</color> DMG. For each <color=#F74848>1</color> stack of <buf ID=900127>[Invigorate]</buf>, increases the DMG multiplier by <color=#F74848>+0.15</color>.",
+            "name": "Finishing Strike",
+            "describe": "Uses a Chainsaw to attack a target, dealing <color=#F74848>1.8x</color> DMG. For each stack of <buf ID=900127>[Heroism]</buf>, damage multiplier is increased by <color=#F74848>0.15</color>.",
             "type": "EquipmentSkill",
             "Ap": "4",
             "matchingWeaponType": "\u7535\u952f",
@@ -62502,8 +62502,8 @@
           "weight": 2473,
           "skill": {
             "ID": "101607",
-            "name": "Counter-Attack Master",
-            "SpecificEffects": "During enemy turn, increases DMG dealt by <color=#F74848>15%</color>, reduces DMG taken by <color=#F74848>10%</color>.",
+            "name": "Counter Master",
+            "SpecificEffects": "During the Enemy Turn, DMG Dealt <color=#F74848>+15%</color> and DMG Taken <color=#F74848>-10%</color>.",
             "BufCarried": "1016071",
             "SkillIcon": "Icon_skill_passive_4124",
             "icon": "Icon_skill_passive_4124",
@@ -62528,8 +62528,8 @@
           "skill": {
             "ID": "101608",
             "remarks": "\u6000\u4e9a\u7279-\u4eff\u751f\u7535\u8111",
-            "name": "Desperate Measure",
-            "describe": "Reduces own HP by <color=#F74848>50%</color> of max HP, this effect cannot destroy part. Gains <color=#F74848>3</color> AP and <buf ID=7100901>[Movement UP]</buf>, lasting for <color=#F74848>2</color> turns. Then triggers <buf ID=900005>[Re-Act]</buf> with full movement.",
+            "name": "Zero Hour",
+            "describe": "Deducts HP from all of own parts equal to <color=#F74848>50%</color> of their Max HP, without destroying any parts, and gains <color=#F74848>3</color> AP and <buf ID=7100901>[Movement UP]</buf> for <color=#F74848>2</color> turns. Can then trigger <buf ID=900005>[Re-Act]</buf> and move using full Movement.",
             "type": "Order",
             "CD": "3",
             "Ap": "0",
@@ -62812,7 +62812,7 @@
       "enTranslation": true,
       "hiddenSkills": [
         {
-          "name": "Critical Strike",
+          "name": "Critical Smash",
           "icon": "Icon_skill_main_1156",
           "type": "EquipmentSkill",
           "Ap": "2",
