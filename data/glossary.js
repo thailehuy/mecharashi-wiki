@@ -953,7 +953,7 @@ window.GlossaryData = {
       "effect": "Final DMG <color=#F74848>+4%</color>, Final DMG Taken <color=#F74848>-6%</color>, and Repair AMT <color=#F74848>+4%</color>. Stacks up to <color=#F74848>5</color> times."
     },
     "1017503": {
-      "name": "Condensed I",
+      "name": "Poised",
       "effect": "DMG dealt increases by <color=#F74848>3%</color>, up to a maximum of <color=#F74848>5</color> stacks."
     },
     "900138": {
@@ -1161,7 +1161,7 @@ window.GlossaryData = {
       "effect": "Before attacking, if possessing <color=#F74848>15</color> stacks of [Heating Up], restores <color=#F74848>2</color> AP after combat, then removes all [Heating Up] stacks after triggering the corresponding effect."
     },
     "530742": {
-      "name": "Poised to Strike",
+      "name": "Locked & Reloaded",
       "effect": "When actively attacking with a Machine Gun, DMG <color=#F74848>+20%</color> and Bullets <color=#F74848>+1</color>. Removed after triggering."
     },
     "530786": {

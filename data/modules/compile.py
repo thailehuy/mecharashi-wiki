@@ -57,7 +57,7 @@ MANUAL_TEMPLATES = {
 # max" module on the site — so the remaining levels are filled in using that
 # same, already-established curve rather than guessed from nothing.
 STANDARD_18_CURVE = ['3%', '4%', '6%', '8%', '10%', '12%', '14%', '18%']
-SYNTHETIC_18_FAMILIES = {'3034', '3045', '3027', '3031', '3036', '3033', '3040'}
+SYNTHETIC_18_FAMILIES = {'3034', '3045', '3027', '3031', '3036', '3033', '3040', '3041'}
 
 # Thermostatic Mod (family 2029, Thanatos) only has a translated instance at
 # its max level ("Can only trigger 1 time per turn"), but its early levels use
