@@ -12,8 +12,8 @@
       "quality": "SSR",
       "Talent0_2Ability": {
         "ID": "101750",
-        "name": "Condensed Starburst",
-        "SpecificEffects": "When actively attacking, for each <color=#F74848>1</color> target hit, gains <color=#F74848>1</color> stack of <buf ID=1017503>[Condensed I]</buf>, up to <color=#F74848>5</color> stacks. After active attack, if possesses <color=#F74848>5</color> or more stacks of <buf ID=1017503>[Condensed I]</buf>, removes <color=#F74848>5</color> stacks of <buf ID=1017503>[Condensed I]</buf> and gains <color=#F74848>3</color> AP and <buf ID=900138>[Temporary AP cap]</buf>, then triggers <buf ID=900005>[Re-Act]</buf>. This effect can trigger <color=#F74848>1</color> times per turn.",
+        "name": "Poised Starburst",
+        "SpecificEffects": "When actively attacking, for each <color=#F74848>1</color> target hit, gains <color=#F74848>1</color> stack of <buf ID=1017503>[Poised]</buf> after combat, stacking up to <color=#F74848>5</color> times. After actively attacking, if possessing <color=#F74848>5</color> or more stacks of <buf ID=1017503>[Poised]</buf>, immediately removes <color=#F74848>5</color> stacks of <buf ID=1017503>[Poised]</buf>, gains <color=#F74848>3</color> AP and the corresponding <buf ID=900138>[Temporary AP Cap]</buf>, and triggers <buf ID=900005>[Re-Act]</buf>. Can only trigger <color=#F74848>1</color> time per turn.",
         "BufCarried": "1017501/1017502/900119",
         "SkillIcon": "Icon_skill_talent_1124",
         "icon": "Icon_skill_talent_1124",
@@ -22,8 +22,8 @@
       },
       "Talent3_5Ability": {
         "ID": "101751",
-        "name": "Condensed Starburst",
-        "SpecificEffects": "When actively attacking, for each <color=#F74848>1</color> target hit, gains <color=#F74848>1</color> stack of <buf ID=1017503>[Condensed I]</buf>, up to <color=#F74848>5</color> stacks. After active attack, if possesses <color=#F74848>5</color> or more stacks of <buf ID=1017503>[Condensed I]</buf>, removes <color=#F74848>5</color> stacks of <buf ID=1017503>[Condensed I]</buf> and gains <color=#F74848>3</color> AP and <buf ID=900138>[Temporary AP cap]</buf>, then triggers <buf ID=900005>[Re-Act]</buf>. This effect can trigger <color=#F74848>1</color> times per turn.\nAt the start of battle, gains <color=#F74848>2</color> stacks of <buf ID=1017503>[Condensed I]</buf>. At the start of turn, if <buf ID=900133>[Condensed]</buf> AP recovery effect was triggered in previous turn, additionally gains <color=#F74848>1</color> AP.",
+        "name": "Poised Starburst",
+        "SpecificEffects": "When actively attacking, for each <color=#F74848>1</color> target hit, gains <color=#F74848>1</color> stack of <buf ID=1017503>[Poised]</buf> after combat, stacking up to <color=#F74848>5</color> times. After actively attacking, if possessing <color=#F74848>5</color> or more stacks of <buf ID=1017503>[Poised]</buf>, immediately removes <color=#F74848>5</color> stacks of <buf ID=1017503>[Poised]</buf>, gains <color=#F74848>3</color> AP and the corresponding <buf ID=900138>[Temporary AP Cap]</buf>, and triggers <buf ID=900005>[Re-Act]</buf>. Can only trigger <color=#F74848>1</color> time per turn.\nUpon deployment, gains <color=#F74848>2</color> stacks of <buf ID=1017503>[Poised]</buf>. At start of action, if the last action triggered the <buf ID=900133>[Poised]</buf> AP regen effect, additionally regens <color=#F74848>1</color> AP.",
         "BufCarried": "1017501/1017502/1017512/1017514/900119",
         "SkillIcon": "Icon_skill_talent_1124",
         "icon": "Icon_skill_talent_1124",
@@ -317,8 +317,8 @@
                 "type": 3,
                 "PassiveSkill": {
                   "ID": "101741",
-                  "name": "Twin Star Edge 1",
-                  "SpecificEffects": "While possessing <buf ID=900133>[Condensed]</buf>, movement increases by <color=#F74848>+1</color>.",
+                  "name": "Binary Starflare 1",
+                  "SpecificEffects": "When possessing <buf ID=900133>[Poised]</buf>, Movement <color=#F74848>+1</color>.",
                   "BufCarried": "1017411",
                   "SkillIcon": "Icon_skill_passive_5259",
                   "icon": "Icon_skill_passive_5259",
@@ -355,7 +355,7 @@
                 "PassiveSkill": {
                   "ID": "100043",
                   "name": "Power Innovation 3",
-                  "SpecificEffects": "When destroying a target, additionally restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>2</color> times per turn.",
+                  "SpecificEffects": "When destroying a target, additionally restores <color=#F74848>1</color> AP after combat. Can trigger up to <color=#F74848>2</color> times per turn.",
                   "BufCarried": "1000431",
                   "SkillIcon": "Icon_skill_passive_5006",
                   "icon": "Icon_skill_passive_5006",
@@ -373,8 +373,8 @@
                 "type": 3,
                 "PassiveSkill": {
                   "ID": "101744",
-                  "name": "Twin Star Edge 2",
-                  "SpecificEffects": "<buf ID=900133>[Condensed]</buf> can stack up <color=#F74848>7</color> times.",
+                  "name": "Binary Starflare 2",
+                  "SpecificEffects": "<buf ID=900133>[Poised]</buf> can stack up to <color=#F74848>7</color> times.",
                   "BufCarried": "1017441/1017442",
                   "SkillIcon": "Icon_skill_passive_5259",
                   "icon": "Icon_skill_passive_5259",
@@ -392,8 +392,8 @@
                 "type": 3,
                 "PassiveSkill": {
                   "ID": "101745",
-                  "name": "Twin Star Edge 3",
-                  "SpecificEffects": "<buf ID=900133>[Condensed]</buf> additionally increases critical hit chance by <color=#F74848>3%</color>.",
+                  "name": "Binary Starflare 3",
+                  "SpecificEffects": "<buf ID=900133>[Poised]</buf> additionally increases Crit Rate by <color=#F74848>3%</color>.",
                   "BufCarried": "1017451/1017452",
                   "SkillIcon": "Icon_skill_passive_5259",
                   "icon": "Icon_skill_passive_5259",
@@ -411,8 +411,8 @@
                 "type": 3,
                 "PassiveSkill": {
                   "ID": "101746",
-                  "name": "Twin Star Edge 4",
-                  "SpecificEffects": "Talent effect increases to restoring <color=#F74848>5</color> AP and additionally grants <buf ID=1017466>[Starburst]</buf>, lasting for <color=#F74848>1</color> turn.",
+                  "name": "Binary Starflare 4",
+                  "SpecificEffects": "Talent effect is enhanced to restore <color=#F74848>5</color> AP, and additionally grants <buf ID=1017466>[Stellar Burst]</buf> for <color=#F74848>1</color> turn.",
                   "BufCarried": "1017461",
                   "SkillIcon": "Icon_skill_passive_5259",
                   "icon": "Icon_skill_passive_5259",
@@ -641,8 +641,8 @@
           "weight": 1316,
           "skill": {
             "ID": "101702",
-            "name": "Shatter Steel",
-            "SpecificEffects": "When attacking, increases DMG dealt to part with <color=#F74848>50%</color> HP or more by <color=#F74848>15%</color>.",
+            "name": "Shatter Defense",
+            "SpecificEffects": "When actively attacking, DMG <color=#F74848>+15%</color> to parts with HP above or equal to <color=#F74848>50%</color>.",
             "BufCarried": "1017021",
             "SkillIcon": "Icon_skill_passive_1106",
             "icon": "Icon_skill_passive_1106",
@@ -666,8 +666,8 @@
           "weight": 1317,
           "skill": {
             "ID": "101703",
-            "name": "Mirror Heart",
-            "SpecificEffects": "When attacked by melee or ranged weapons, if equipped with Alter-Blade in both hands and both hands are intact, activates <buf ID=900136>[Insight]</buf>, dealing <color=#F74848>1.2x</color> DMG. Can trigger <color=#F74848>1</color> times per turn.",
+            "name": "Serene Core",
+            "SpecificEffects": "When attacked by Melee or Ranged Weapons, if equipped with two Alter-Blades and both Arms are undestroyed, triggers <buf ID=900136>[Critical Sense]</buf>, dealing <color=#F74848>1.2x</color> DMG. Can only trigger <color=#F74848>1</color> time per turn.",
             "BufCarried": "1017031",
             "SkillIcon": "Icon_skill_passive_5238",
             "icon": "Icon_skill_passive_5238",
@@ -693,7 +693,7 @@
             "ID": "101704",
             "remarks": "\u827e\u8fbe-\u4eff\u751f\u7535\u8111",
             "name": "Starfall Flash",
-            "describe": "Selects <color=#F74848>1</color> target (including flying target) within <color=#F74848>4</color> adjacent tiles and strikes with Alter-Blade, dealing <color=#F74848>1.2</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking. After attacking, this unit will be positioned on a random unoccupied tile within <color=#F74848>1</color> ring around the target.",
+            "describe": "Selects <color=#F74848>1</color> target within <color=#F74848>4</color> adjacent tiles (including flying targets) and strikes using Alter-Blades to deal <color=#F74848>1.2x</color> DMG. Can enter <buf ID=900014>[Aiming]</buf> Mode before attacking, then remains on a random empty tile within <color=#F74848>1</color> ring around the target after hitting.",
             "type": "SpecialAssault",
             "Ap": "3",
             "matchingWeaponType": "\u5200\u5251",
@@ -719,8 +719,8 @@
           "weight": 1319,
           "skill": {
             "ID": "101705",
-            "name": "Restoring Light",
-            "SpecificEffects": "When any arm is destroyed, up to <color=#F74848>1</color> arm can be restored with <color=#F74848>50%</color> max HP after combat. This effect has a <color=#F74848>3</color> turns CD.",
+            "name": "Nano Reassembly",
+            "SpecificEffects": "When any Arm is destroyed, restores <color=#F74848>50%</color> HP to <color=#F74848>1</color> Arm after combat. This effect can trigger again after an interval of <color=#F74848>3</color> turns.",
             "BufCarried": "1017051",
             "SkillIcon": "Icon_skill_passive_3119",
             "icon": "Icon_skill_passive_3119",
@@ -745,8 +745,8 @@
           "skill": {
             "ID": "101706",
             "remarks": "\u827e\u8fbe-\u4eff\u751f\u7535\u8111",
-            "name": "Skyfall Slash",
-            "describe": "Uses two Alter-Blades to attack all enemies within an <range type=2>I-shaped (3x1-tile)</range> or <range type=2>L-shaped (3x1-tile)</range> area ahead, dealing <color=#F74848>1.5</color> AOE DMG. Can enter <buf ID=900014>[Aiming]</buf> on each target individually.",
+            "name": "Skybreaker Slash",
+            "describe": "Uses two Alter-Blades to attack all targets within an <range type=2>I-shaped (3x1-tile)</range> area or <range type=2>L-shaped (3x1-tile)</range> area ahead. Before attacking, can Aim at all targets separately, dealing <color=#F74848>1.5x</color> AoE DMG.",
             "type": "SpecialAssault",
             "Ap": "4",
             "matchingWeaponType": "\u5200\u5251",
@@ -772,8 +772,8 @@
           "weight": 1321,
           "skill": {
             "ID": "101707",
-            "name": "Combo Breaker",
-            "SpecificEffects": "At the start of turn, if there are <color=#F74848>3</color> or more enemies within <color=#F74848>3</color> adjacent tiles, gains <color=#F74848>2</color> stacks of <buf ID=1017503>[Condensed I]</buf>.",
+            "name": "Focus Breaker",
+            "SpecificEffects": "At start of action, if there are <color=#F74848>3</color> or more enemies within <color=#F74848>3</color> tiles, gains <color=#F74848>2</color> stacks of <buf ID=1017503>[Poised]</buf>.",
             "BufCarried": "1017071",
             "SkillIcon": "Icon_skill_passive_5258",
             "icon": "Icon_skill_passive_5258",
@@ -798,8 +798,8 @@
           "skill": {
             "ID": "101708",
             "remarks": "\u827e\u8fbe-\u4eff\u751f\u7535\u8111",
-            "name": "Fading Starlight",
-            "describe": "Use two Alter-Blades to attack a target, dealing <color=#F74848>2.4x</color> DMG. This attack prioritizes the body and grants <color=#F74848>2</color> stacks of <buf ID=1017503>[Condensed I]</buf>.",
+            "name": "Radiant End",
+            "describe": "Uses two Alter-Blades to attack a target, dealing <color=#F74848>2.4x</color> DMG. This attack prioritizes the Body, and grants <color=#F74848>2</color> stacks of <buf ID=1017503>[Poised]</buf>.",
             "type": "EquipmentSkill",
             "Ap": "5",
             "matchingWeaponType": "\u5200\u5251",
@@ -1084,12 +1084,12 @@
       "enTranslation": true,
       "hiddenSkills": [
         {
-          "name": "Flash Strike",
+          "name": "Blitz Strike",
           "icon": "Icon_skill_main_1159",
           "type": "EquipmentSkill",
           "Ap": "2",
           "CD": "0",
-          "describe": "Uses two Alter-Blades to attack a single target, dealing <color=#F74848>2\u00d70.85</color> DMG."
+          "describe": "Attacks a target with two Alter-Blades, dealing <color=#F74848>0.85x</color> DMG <color=#F74848>2</color> times."
         }
       ],
       "statRanks": {

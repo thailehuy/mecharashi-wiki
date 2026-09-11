@@ -601,7 +601,7 @@
     },
     {
       "ID": "60902106",
-      "name": "Quartermaster",
+      "name": "Supplier",
       "quality": "SSSR",
       "weight": "150",
       "BackpackMainType": "Ammo",
@@ -611,9 +611,9 @@
       "RelatedDescription": "\u65e7\u5f0f\u5f39\u836f\u5f3a\u5316\u80cc\u5305\u7684\u6539\u826f\u5347\u7ea7\u6b3e\uff0c\u50a8\u5b58\u4e86\u6218\u672f\u6b66\u5668\u5f39\u836f\uff0c\u8ba9\u673a\u5175\u706b\u7bad\u6216\u5bfc\u5f39\u6709\u4e86\u66f4\u591a\u7684\u53d1\u5c04\u673a\u4f1a\u3002\u540c\u65f6\u96c6\u6210\u4e86\u5f3a\u5316\u673a\u5175\u518d\u653b\u51fb\u80fd\u529b\u7684\u529f\u80fd\u3002",
       "skill": {
         "ID": "62306",
-        "name": "Quartermaster Drive \u00b7 Re-ATK",
+        "name": "Supplier Drive \u2013 Re-ATK",
         "icon": "Icon_skill_passive_5163",
-        "SpecificEffects": "Tactical Weapon Ammo Capacity <color=#F74848>+2</color>.\nWhen re-attacking, Hit Rate <color=#F74848>+10%</color> and Crit Rate <color=#F74848>+5%</color>.\nGains Code <skill mainSkill=62306>[Quick Load]</skill>, sharing cooldown with other Ammo Reload skills.\nST Body HP <color=#F74848>+10%</color> and DMG Dealt <color=#F74848>+5%</color>."
+        "SpecificEffects": "Tactical Weapon Ammo Capacity <color=#F74848>+2</color>.\nAfter triggering [Re-ATK], Hit Rate <color=#F74848>+10%</color> and Crit Rate <color=#F74848>+5%</color>.\nCan use the <skill mainSkill=62306>[Quick Load]</skill> Code, sharing cooldown turns with other Tactical Weapon loading skills.\nST Body HP <color=#F74848>+10%</color> and DMG <color=#F74848>+5%</color>."
       },
       "crafting": [
         {
@@ -657,9 +657,9 @@
       "RelatedDescription": "\u65e7\u5f0f\u8bf1\u5bfc\u5e72\u6270\u80cc\u5305\u7684\u6539\u826f\u5347\u7ea7\u6b3e\uff0c\u901a\u8fc7\u53d1\u5c04\u7535\u78c1\u6ce2\u5bf9\u98de\u5f39\u8fdb\u884c\u538b\u5236\u6027\u4fe1\u53f7\u5e72\u6270\uff0c\u6270\u4e71\u7535\u5b50\u8bbe\u5907\uff0c\u4ece\u800c\u8fbe\u5230\u524a\u5f31\u6218\u672f\u6b66\u5668\u5a01\u529b\u7684\u6548\u679c\u3002\u540c\u65f6\u96c6\u6210\u4e86\u5f71\u54cd\u654c\u673a\u653b\u51fb\u80fd\u529b\u7684\u529f\u80fd\u3002",
       "skill": {
         "ID": "62307",
-        "name": "Resistor Drive \u00b7 Attack",
+        "name": "Resistor Drive \u2013 ATK",
         "icon": "Icon_skill_passive_5232",
-        "SpecificEffects": "No ST type restriction.\nWhen hit by a Tactical attack, DMG Taken <color=#F74848>-25%</color>. Similar effects cannot stack.\nWhenever any enemy on the battlefield actively attacks with a Tactical Weapon, gains <color=#F74848>1</color> stack of <buf ID=623076>[Counter Charge]</buf> before combat; if self is the attack target, gains an additional <color=#F74848>1</color> stack. Upon reaching <color=#F74848>6</color> stacks of <buf ID=623076>[Counter Charge]</buf>, repairs <color=#F74848>15%</color> HP to all parts and restores <color=#F74848>1</color> AP after combat, then removes all stacks and cannot gain <buf ID=623076>[Counter Charge]</buf> again this turn.\nWhen in combat, enemy DMG Dealt <color=#F74848>-10%</color>.\nST Body HP <color=#F74848>+10%</color>."
+        "SpecificEffects": "No ST type restriction.\nDMG Taken <color=#F74848>-25%</color> from Tactical Attacks. Effects of the same type cannot stack.\nWhen any enemy actively uses Tactical Weapons to attack, gains <color=#F74848>1</color> stack of <buf ID=623076>[Countercharge]</buf> before combat. If this unit is the target, gains an additional <color=#F74848>1</color> stack. Upon gaining <color=#F74848>6</color> stacks of <buf ID=623076>[Countercharge]</buf>, restores <color=#F74848>15%</color> HP to all parts and regens <color=#F74848>1</color> AP after combat. All stacks are removed after triggering, and no more <buf ID=623076>[Countercharge]</buf> stacks can be gained this turn.\nIn combat, enemy DMG <color=#F74848>-10%</color>.\nST Body HP <color=#F74848>+10%</color>."
       },
       "crafting": [
         {

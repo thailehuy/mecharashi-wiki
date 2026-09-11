@@ -476,18 +476,18 @@
     "version": "2.2"
   },
   "20115122": {
-    "name": "Dusk Star Continuity",
+    "name": "Evenstar Successor",
     "passiveSkills": {
       "53074": {
-        "name": "Defiance",
-        "SpecificEffects": "After retaliating with a Machine Gun, gains <buf ID=530742>[Momentum]</buf>."
+        "name": "Repel",
+        "SpecificEffects": "After retaliating with a Machine Gun, gains <buf ID=530742>[Locked & Reloaded]</buf>."
       },
       "53075": {
         "name": "Sudden Surge",
-        "SpecificEffects": "Enhanced [Veiled Razor]: While carrying <buf ID=2015509>[Retaliation Enhancement]</buf> and both Arms are intact, can trigger <buf ID=900022>[Guard]</buf>, protecting allies within <color=#F74848>1</color> adjacent tile from Assault, Ranged, and Melee attacks. If also carrying <buf ID=2015081>[Turning Point]</buf>, <buf ID=900022>[Guard]</buf> range increases to <color=#F74848>2</color> tiles. If equipped with two Machine Guns, when triggering <buf ID=900096>[Retaliation]</buf> or <buf ID=900023>[Quick Draw]</buf>, for every <color=#F74848>1</color> stack of <buf ID=2015509>[Retaliation Enhancement]</buf>, gains a <color=#F74848>20%</color> chance to use all Machine Guns to trigger <buf ID=900028>[Add Strike]</buf>, dealing <color=#F74848>0.35x</color> DMG."
+        "SpecificEffects": "Enhanced [Veiled Razor] Effect: When <buf ID=2015509>[Retaliation Enhancement]</buf> is active and both Arms are undestroyed, <buf ID=900022>[Guard]</buf> can be triggered, protecting allies within <color=#F74848>1</color> adjacent tile from Assault, Ranged, and Melee Weapon attacks. If <buf ID=2015081>[Turning Point]</buf> is also active, <buf ID=900022>[Guard]</buf> range increases to <color=#F74848>2</color> adjacent tiles. If equipped with two Machine Guns, when triggering <buf ID=900096>[Retaliation]</buf> or <buf ID=900023>[Quick Draw]</buf>, for each <color=#F74848>1</color> stack of <buf ID=2015509>[Retaliation Enhancement]</buf>, has a <color=#F74848>20%</color> chance to use all Machine Guns simultaneously to trigger <buf ID=900028>[Add Strike]</buf>, dealing <color=#F74848>0.35x</color> damage."
       },
       "53073": {
-        "name": "Fire of Retaliation",
+        "name": "Blaze of Retaliation",
         "SpecificEffects": "When retaliating, Crit Rate and Hit Rate <color=#F74848>+15%</color>."
       }
     },
@@ -499,16 +499,16 @@
     "name": "Δ-09",
     "passiveSkills": {
       "53071": {
-        "name": "Dominance",
-        "SpecificEffects": "After triggering <buf ID=900109>[Execution]</buf>, inflicts <buf ID=7101203>[DMG Down II]</buf> and <buf ID=7101803>[DMG Taken UP II]</buf> on the target and enemies within <color=#F74848>1</color> tile, lasting <color=#F74848>1</color> turn."
+        "name": "Might",
+        "SpecificEffects": "After triggering the <buf ID=900109>[Execution]</buf> effect, inflicts <buf ID=7101203>[DMG Down II]</buf> and <buf ID=7101803>[DMG Taken UP II]</buf> on the target and enemy units within <color=#F74848>1</color> ring, lasting for <color=#F74848>1</color> turn."
       },
       "53072": {
         "name": "Σ-04Ω",
-        "SpecificEffects": "Enhanced [Σ-04]: When using an Alter-Blade to chain-attack the same target, Hit Weighting on the first part hit <color=#F74848>+50</color>; this effect is removed once the target acts. At the start of action, only <color=#F74848>1</color> stack of <buf ID=900100>[Critical Sense]</buf> is removed. While carrying <color=#F74848>3</color> stacks of <buf ID=900100>[Critical Sense]</buf>, DMG <color=#F74848>+15%</color> and DMG Taken <color=#F74848>-15%</color>."
+        "SpecificEffects": "Enhanced [Σ-04] Effect: When using an Alter-Blade to perform a Gusty Strike on the same target, increases the Hit Weighting of the first part hit by <color=#F74848>50</color>. This effect is removed at the end of the target's action. At start of action, only removes <color=#F74848>1</color> stack of <buf ID=900100>[Critical Sense]</buf>. When possessing <color=#F74848>3</color> stacks of <buf ID=900100>[Critical Sense]</buf>, DMG <color=#F74848>+15%</color> and DMG Taken <color=#F74848>-15%</color>."
       },
       "53070": {
-        "name": "Repeat Slash",
-        "SpecificEffects": "When triggering <buf ID=900004>[Re-ATK]</buf>, DMG and Hit Rate <color=#F74848>+10%</color>."
+        "name": "Re-Slash",
+        "SpecificEffects": "After triggering <buf ID=900004>[Re-ATK]</buf>, DMG and Hit Rate <color=#F74848>+10%</color>."
       }
     },
     "pilot": "Ophelia",

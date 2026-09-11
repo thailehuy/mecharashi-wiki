@@ -281,11 +281,11 @@ window.GlossaryData = {
       "effect": "HMG bullets <color=#F74848>+1</color>."
     },
     "900133": {
-      "name": "Condensed",
+      "name": "Poised",
       "effect": "DMG dealt increases by <color=#F74848>3%</color>, up to a maximum of <color=#F74848>5</color> stacks."
     },
     "900136": {
-      "name": "Insight",
+      "name": "Critical Sense",
       "effect": "When attacked by melee or ranged weapons, if equipped with Alter-Blade in both hands and both hands are intact, activates [Insight Counterattack], dealing <color=#F74848>1.2x</color> DMG. [Insight Counterattack] ignores [Target Shift]. Each stack increases DMG dealt by <color=#F74848>5%</color> and dodge rate by <color=#F74848>5%</color>. <color=#F74848>1</color> stack is removed upon activation."
     },
     "1002502": {
@@ -957,11 +957,11 @@ window.GlossaryData = {
       "effect": "DMG dealt increases by <color=#F74848>3%</color>, up to a maximum of <color=#F74848>5</color> stacks."
     },
     "900138": {
-      "name": "Temporary AP cap",
+      "name": "Temporary AP Cap",
       "effect": "AP cap is temporarily increased. This effect is removed at the end of turn."
     },
     "1017466": {
-      "name": "Starburst",
+      "name": "Stellar Burst",
       "effect": "Critical hit chance increases by <color=#F74848>15%</color>. Critical hit DMG increases by <color=#F74848>10%</color>."
     },
     "1099900": {
@@ -1161,8 +1161,8 @@ window.GlossaryData = {
       "effect": "Before attacking, if possessing <color=#F74848>15</color> stacks of [Heating Up], restores <color=#F74848>2</color> AP after combat, then removes all [Heating Up] stacks after triggering the corresponding effect."
     },
     "530742": {
-      "name": "Momentum",
-      "effect": "When actively attacking with a Machine Gun, DMG dealt <color=#F74848>+20%</color> and Bullets <color=#F74848>+1</color>. Removed after taking effect."
+      "name": "Poised to Strike",
+      "effect": "When actively attacking with a Machine Gun, DMG <color=#F74848>+20%</color> and Bullets <color=#F74848>+1</color>. Removed after triggering."
     },
     "530786": {
       "name": "Sync Miracle",

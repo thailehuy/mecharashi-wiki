@@ -1,11 +1,11 @@
 {
-  "name": "Quartermaster",
+  "name": "Supplier",
   "ac": 11,
   "version": "2.3",
   "skills": {
     "62306": {
-      "name": "Quartermaster Drive · Re-ATK",
-      "SpecificEffects": "Tactical Weapon Ammo Capacity <color=#F74848>+2</color>.\nWhen re-attacking, Hit Rate <color=#F74848>+10%</color> and Crit Rate <color=#F74848>+5%</color>.\nGains Code <skill mainSkill=62306>[Quick Load]</skill>, sharing cooldown with other Ammo Reload skills.\nST Body HP <color=#F74848>+10%</color> and DMG Dealt <color=#F74848>+5%</color>."
+      "name": "Supplier Drive – Re-ATK",
+      "SpecificEffects": "Tactical Weapon Ammo Capacity <color=#F74848>+2</color>.\nAfter triggering [Re-ATK], Hit Rate <color=#F74848>+10%</color> and Crit Rate <color=#F74848>+5%</color>.\nCan use the <skill mainSkill=62306>[Quick Load]</skill> Code, sharing cooldown turns with other Tactical Weapon loading skills.\nST Body HP <color=#F74848>+10%</color> and DMG <color=#F74848>+5%</color>."
     }
   }
 }
