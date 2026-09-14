@@ -1,0 +1,109 @@
+{
+  "data": {
+    "data": [
+      {
+        "ID": "<MECH_ID>",
+        "name": "<MechName>",
+        "position": "Body",
+        "type": "Light",
+        "quality": "SSR",
+        "aircraftWeight": "0",
+        "durable": "0",
+        "Armor": "0",
+        "fire": "0",
+        "Antiriot": "0",
+        "output": "0",
+        "ModuleCarried": [],
+        "icon": "Icon_mecha_<placeholder>",
+        "introduce": "<Mech flavor text / lore description>",
+        "mechaIcon": "Icon_<placeholder>_1",
+        "lihuiIcon": "icon_lihui_<placeholder>",
+        "manji": {
+          "name": "<MechName>",
+          "durable": "0",
+          "Armor": "0",
+          "fire": "0",
+          "output": "0",
+          "Antiriot": "0",
+          "Interface": "Ⅰ型接口",
+          "ModuleCarried": []
+        }
+      },
+      {
+        "ID": "<MECH_ID>_ARM_L",
+        "name": "<MechName>",
+        "position": "L-Arm",
+        "type": "Light",
+        "quality": "SSR",
+        "aircraftWeight": "0",
+        "durable": "0",
+        "Armor": "0",
+        "fire": "0",
+        "Hit": "0",
+        "ModuleCarried": [],
+        "introduce": "<Mech flavor text / lore description>",
+        "mechaIcon": "Icon_<placeholder>_1",
+        "manji": {
+          "name": "<MechName>",
+          "durable": "0",
+          "Armor": "0",
+          "fire": "0",
+          "Hit": "0",
+          "Interface": "Ⅱ型接口",
+          "ModuleCarried": []
+        },
+        "icon": "Icon_mecha_<placeholder>"
+      },
+      {
+        "ID": "<MECH_ID>_ARM_R",
+        "name": "<MechName>",
+        "position": "R-Arm",
+        "type": "Light",
+        "quality": "SSR",
+        "aircraftWeight": "0",
+        "durable": "0",
+        "Armor": "0",
+        "fire": "0",
+        "Hit": "0",
+        "ModuleCarried": [],
+        "introduce": "<Mech flavor text / lore description>",
+        "mechaIcon": "Icon_<placeholder>_1",
+        "manji": {
+          "name": "<MechName>",
+          "durable": "0",
+          "Armor": "0",
+          "fire": "0",
+          "Hit": "0",
+          "Interface": "Ⅱ型接口",
+          "ModuleCarried": []
+        },
+        "icon": "Icon_mecha_<placeholder>"
+      },
+      {
+        "ID": "<MECH_ID>_LEGS",
+        "name": "<MechName>",
+        "position": "Legs",
+        "type": "Light",
+        "quality": "SSR",
+        "aircraftWeight": "0",
+        "durable": "0",
+        "Armor": "0",
+        "fire": "0",
+        "Dodge": "0",
+        "ModuleCarried": [],
+        "introduce": "<Mech flavor text / lore description>",
+        "mechaIcon": "Icon_<placeholder>_1",
+        "manji": {
+          "name": "<MechName>",
+          "durable": "0",
+          "Armor": "0",
+          "fire": "0",
+          "Dodge": "0",
+          "Interface": "Ⅰ型接口",
+          "ModuleCarried": []
+        },
+        "icon": "Icon_mecha_<placeholder>"
+      }
+    ]
+  }
+}

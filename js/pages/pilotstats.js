@@ -106,7 +106,8 @@ Pages.pilotstats = {
       var p         = r.pilot;
       var rankClass = QUALITY_CLASS[p.quality] || '';
       var bgSrc     = QUALITY_BG[p.quality] || '';
-      var imgSrc    = AVATAR_BASE + encodeURIComponent(p.PortraitHeroIcon) + '.png';
+      var imgSrc      = AVATAR_BASE + encodeURIComponent(p.PortraitHeroIcon) + '.png';
+      var imgFallback = LOCAL_AVATAR_BASE + encodeURIComponent(p.PortraitHeroIcon) + '.png';
       var nameEsc   = $('<span>').text(p.PilotName).html();
 
       return (
@@ -114,7 +115,7 @@ Pages.pilotstats = {
           '<td class="ststats-name-cell">' +
             '<a class="dispatch-cell" href="#pilots/' + encodeURIComponent(p.PilotName) + '">' +
               '<span class="dispatch-cell-icon ' + rankClass + '" style="background-image:url(\'' + bgSrc + '\')">' +
-                '<img src="' + imgSrc + '" alt="' + nameEsc + '" loading="lazy" />' +
+                '<img src="' + imgSrc + '" onerror="this.onerror=null;this.src=\'' + imgFallback + '\';" alt="' + nameEsc + '" loading="lazy" />' +
               '</span>' +
               '<span class="dispatch-cell-name">' + nameEsc + '</span>' +
             '</a>' +

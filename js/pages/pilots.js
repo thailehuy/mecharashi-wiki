@@ -9,6 +9,10 @@ var QUALITY_BG = {
 };
 var AVATAR_BASE    = 'https://media.zlongame.com/media/pictures/cn/community/img/gl/gameInfo/characterHalf/';
 var PORTRAIT_BASE  = 'https://media.zlongame.com/media/pictures/cn/community/img/gl/gameInfo/character/';
+// Manually-added pilots (post-CN-source) have no CDN asset; their art lives
+// locally under data/unlisted/ instead, named by the same icon key.
+var LOCAL_AVATAR_BASE   = 'data/unlisted/pilot_images_half/';
+var LOCAL_PORTRAIT_BASE = 'data/unlisted/pilot_images_raw/';
 var SKILL_BASE      = 'https://media.zlongame.com/media/pictures/cn/community/img/gl/gameInfo/skill/';
 var OCCUPATION_BASE  = 'https://media.zlongame.com/media/pictures/cn/community/img/gl/gameInfo/occupation/';
 var WEAPON_IMG_BASE  = 'https://media.zlongame.com/media/pictures/cn/community/img/gl/gameInfo/weapons/';
@@ -160,7 +164,8 @@ Pages.pilots = {
       var rankLabel = QUALITY_LABEL[p.quality] || p.quality;
       var rankClass = QUALITY_CLASS[p.quality] || '';
       var bgSrc     = QUALITY_BG[p.quality] || '';
-      var imgSrc    = AVATAR_BASE + encodeURIComponent(p.PortraitHeroIcon) + '.png';
+      var imgSrc      = AVATAR_BASE + encodeURIComponent(p.PortraitHeroIcon) + '.png';
+      var imgFallback = LOCAL_AVATAR_BASE + encodeURIComponent(p.PortraitHeroIcon) + '.png';
 
       var weapon = allWeapons.find(function (w) { return w.pilot === p.PilotName; });
       var weaponIconHtml = '';
@@ -173,7 +178,7 @@ Pages.pilots = {
         '<div class="col-6 col-sm-4 col-md-3 col-xl-2">' +
           '<div class="pilot-card" data-pilot="' + encodeURIComponent(p.PilotName) + '">' +
             '<div class="pilot-avatar" style="background-image:url(\'' + bgSrc + '\')">' +
-              '<img src="' + imgSrc + '" alt="' + $('<span>').text(p.PilotName).html() + '" loading="lazy" />' +
+              '<img src="' + imgSrc + '" onerror="this.onerror=null;this.src=\'' + imgFallback + '\';" alt="' + $('<span>').text(p.PilotName).html() + '" loading="lazy" />' +
               '<span class="version-badge">v' + $('<span>').text(p.version).html() + '</span>' +
               '<span class="rank-badge ' + rankClass + '">' + rankLabel + '</span>' +
             '</div>' +
@@ -227,14 +232,28 @@ Pages.pilots = {
     if (this._skinIndex == null || this._skinIndex >= skinLetters.length) this._skinIndex = 0;
     var skinIdx = this._skinIndex;
 
+    function avatarKeyFor(letter) {
+      return p.AvatarHeroIcon.replace(/^(.*)A_Raw$/, '$1' + letter + '_Raw');
+    }
+    function thumbKeyFor(letter) {
+      return p.PortraitHeroIcon.replace(/^(.*)A_half$/, '$1' + letter + '_half');
+    }
     function avatarSrcFor(letter) {
-      return PORTRAIT_BASE + encodeURIComponent(p.AvatarHeroIcon.replace(/^(.*)A_Raw$/, '$1' + letter + '_Raw')) + '.png';
+      return PORTRAIT_BASE + encodeURIComponent(avatarKeyFor(letter)) + '.png';
     }
     function thumbSrcFor(letter) {
-      return AVATAR_BASE + encodeURIComponent(p.PortraitHeroIcon.replace(/^(.*)A_half$/, '$1' + letter + '_half')) + '.png';
+      return AVATAR_BASE + encodeURIComponent(thumbKeyFor(letter)) + '.png';
     }
-    var portraitSrc = avatarSrcFor(skinLetters[skinIdx]);
-    var thumbSrc     = thumbSrcFor(skinLetters[skinIdx]);
+    function avatarFallbackFor(letter) {
+      return LOCAL_PORTRAIT_BASE + encodeURIComponent(avatarKeyFor(letter)) + '.png';
+    }
+    function thumbFallbackFor(letter) {
+      return LOCAL_AVATAR_BASE + encodeURIComponent(thumbKeyFor(letter)) + '.png';
+    }
+    var portraitSrc     = avatarSrcFor(skinLetters[skinIdx]);
+    var portraitFallback = avatarFallbackFor(skinLetters[skinIdx]);
+    var thumbSrc         = thumbSrcFor(skinLetters[skinIdx]);
+    var thumbFallback    = thumbFallbackFor(skinLetters[skinIdx]);
 
     var skinNavHtml = '';
     if (skinLetters.length > 1) {
@@ -252,8 +271,10 @@ Pages.pilots = {
         if (self._skinTransitioning) return;
         var dir = $(this).data('skin-nav') === 'next' ? 1 : -1;
         var nextIdx = (self._skinIndex + dir + skinLetters.length) % skinLetters.length;
-        var newSrc   = avatarSrcFor(skinLetters[nextIdx]);
-        var newThumb = thumbSrcFor(skinLetters[nextIdx]);
+        var newSrc      = avatarSrcFor(skinLetters[nextIdx]);
+        var newSrcFallback = avatarFallbackFor(skinLetters[nextIdx]);
+        var newThumb    = thumbSrcFor(skinLetters[nextIdx]);
+        var newThumbFallback = thumbFallbackFor(skinLetters[nextIdx]);
 
         self._skinIndex = nextIdx;
         self._skinTransitioning = true;
@@ -268,11 +289,10 @@ Pages.pilots = {
         $img.addClass(outCls);
         $thumb.css('opacity', 0);
 
-        var preload = new Image();
-        preload.onload = preload.onerror = function () {
+        var settle = function (finalSrc) {
           $loading.removeClass('active');
-          $img.attr('src', newSrc).removeClass(outCls).addClass(inCls);
-          $thumb.attr('src', newThumb);
+          $img.attr('src', finalSrc).removeClass(outCls).addClass(inCls);
+          $thumb.attr('onerror', "this.onerror=null;this.src='" + newThumbFallback + "';").attr('src', newThumb);
           // force reflow so the browser registers the "in" starting position
           // before we remove it, otherwise the transition wouldn't play
           void $img[0].offsetWidth;
@@ -281,6 +301,13 @@ Pages.pilots = {
             $thumb.css('opacity', 1);
           });
           setTimeout(function () { self._skinTransitioning = false; }, 260);
+        };
+        var preload = new Image();
+        preload.onload = function () { settle(newSrc); };
+        preload.onerror = function () {
+          var fallbackPreload = new Image();
+          fallbackPreload.onload = fallbackPreload.onerror = function () { settle(newSrcFallback); };
+          fallbackPreload.src = newSrcFallback;
         };
         preload.src = newSrc;
 
@@ -303,7 +330,7 @@ Pages.pilots = {
       cnWarning +
       '<a href="#pilots" class="btn-back">&#8592; Back to Pilots</a>' +
       '<div class="detail-name-row">' +
-        '<img class="detail-name-avatar" src="' + thumbSrc + '" alt="' + $('<span>').text(p.PilotName).html() + '" style="background-image:url(\'' + bgSrc + '\')" />' +
+        '<img class="detail-name-avatar" src="' + thumbSrc + '" onerror="this.onerror=null;this.src=\'' + thumbFallback + '\';" alt="' + $('<span>').text(p.PilotName).html() + '" style="background-image:url(\'' + bgSrc + '\')" />' +
         '<div>' +
           '<h2 class="detail-name">' + occIconHtml + $('<span>').text(p.PilotName).html() + '</h2>' +
           '<p class="detail-realname">' + $('<span>').text(p.RealName).html() + '</p>' +
@@ -320,7 +347,7 @@ Pages.pilots = {
       '<div class="detail-layout">' +
         '<div class="detail-portrait-col">' +
           '<div class="detail-portrait" style="background-image:url(\'' + bgSrc + '\')">' +
-            '<img class="detail-portrait-img" src="' + portraitSrc + '" alt="' + $('<span>').text(p.PilotName).html() + '" />' +
+            '<img class="detail-portrait-img" src="' + portraitSrc + '" onerror="this.onerror=null;this.src=\'' + portraitFallback + '\';" alt="' + $('<span>').text(p.PilotName).html() + '" />' +
             skinNavHtml +
           '</div>' +
         '</div>' +
