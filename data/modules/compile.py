@@ -101,6 +101,24 @@ MANUAL_LEVEL_OVERRIDES = {
         '2': 'For each buff gained, DMG <color=#F74848>+4%</color>, up to <color=#F74848>12%</color>. Lasts for <color=#F74848>2</color> turns.',
         '3': 'For each buff gained, DMG <color=#F74848>+4%</color>, up to <color=#F74848>20%</color>. Lasts for <color=#F74848>2</color> turns.',
     },
+    # Fortification Mod (family 3009) has a CN "每携带1个" ("for each 1 buff
+    # carried") number at levels 1-7 that the EN template (translated from
+    # level 8) never tags, since level 8's own text is the only translated
+    # instance and its primary clause has the same 3-number count purely by
+    # coincidence (1, DMG%, cap%) as the untagged levels — the generic
+    # positional substitution shifts every number one slot to the right,
+    # spilling the cap% into a duration clause that doesn't even exist below
+    # level 8. Hand-authored from the raw CN (no duration clause until max
+    # level): 自身每携带1个增益效果，伤害提升X%，最多Y%.
+    '3009': {
+        '1': 'For each buff possessed, DMG <color=#F74848>+1%</color>, up to <color=#F74848>3%</color>. This effect cannot stack with similar effects.',
+        '2': 'For each buff possessed, DMG <color=#F74848>+1%</color>, up to <color=#F74848>4%</color>. This effect cannot stack with similar effects.',
+        '3': 'For each buff possessed, DMG <color=#F74848>+2%</color>, up to <color=#F74848>6%</color>. This effect cannot stack with similar effects.',
+        '4': 'For each buff possessed, DMG <color=#F74848>+2%</color>, up to <color=#F74848>8%</color>. This effect cannot stack with similar effects.',
+        '5': 'For each buff possessed, DMG <color=#F74848>+2.5%</color>, up to <color=#F74848>10%</color>. This effect cannot stack with similar effects.',
+        '6': 'For each buff possessed, DMG <color=#F74848>+3%</color>, up to <color=#F74848>12%</color>. This effect cannot stack with similar effects.',
+        '7': 'For each buff possessed, DMG <color=#F74848>+3.5%</color>, up to <color=#F74848>14%</color>. This effect cannot stack with similar effects.',
+    },
     # Poke Mod (family 3018) unlocks a bonus Aura clause only at level 8 that
     # the generic template substitution can't produce (has_bonus_clause_pattern
     # makes MANUAL_TEMPLATES only ever read/write the primary clause) — hand-
