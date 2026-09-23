@@ -55,7 +55,7 @@
             "remarks": "Kaidan The Invincible",
             "name": "α",
             "TypeComputing": "Alpha",
-            "ListAssembled": "Attack/Dodge/Critical",
+            "ListAssembled": "Attack/Dodge/Dodge",
             "ListActivationEffects": [
               {
                 "ActivationEffectID": "1010318200",
@@ -344,7 +344,7 @@
             "remarks": "Kaidan The Invincible",
             "name": "γ2",
             "TypeComputing": "Gamma",
-            "ListAssembled": "Attack/Dodge/Dodge",
+            "ListAssembled": "Attack/Dodge/Critical",
             "ListActivationEffects": [
               {
                 "ActivationEffectID": "1010318212",
@@ -458,7 +458,7 @@
                 "PassiveSkill": {
                   "ID": "182573",
                   "name": "Prototype Hyper-Aptamer 4",
-                  "SpecificEffects": "After initiating combat, if <buf ID=900004>[Re-ATK]</buf> is not triggered and there are enemy units within <color=#F74848>3</color> adjacent tiles, inflicts <color=#F74848>1</color> stack of <buf ID=182900>[Suppression]</buf> to all those enemies and gains <color=#F74848>1</color> AP for each <color=#F74848>1</color> stack applied, up to <color=#F74848>3</color> AP, then triggers <buf ID=900005>[Re-Act]</buf>. This effect can trigger <color=#F74848>1</color> time per turn.",
+                  "SpecificEffects": "After actively attacking, if <buf ID=900004>[Re-ATK]</buf> is not triggered and there are enemy units within <color=#F74848>3</color> adjacent tiles, inflicts <color=#F74848>1</color> stack of <buf ID=182900>[Suppression]</buf> to all those enemies and gains <color=#F74848>1</color> AP for each <color=#F74848>1</color> stack applied, up to <color=#F74848>3</color> AP, then triggers <buf ID=900005>[Re-Act]</buf>. This effect can trigger <color=#F74848>1</color> time per turn.",
                   "SkillIcon": "Icon_skill_passive_5304",
                   "icon": "Icon_skill_passive_5304",
                   "Status": 1,

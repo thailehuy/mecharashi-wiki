@@ -142,61 +142,78 @@ MANUAL_LEVEL_OVERRIDES = {
 # would otherwise skip them entirely (leaving them absent from the Modules
 # page and unable to get a real level slider on the mech's own detail page).
 #
-# When adding a new one here, `levels` MUST cover every level from 1 to
-# `maxLevel`, not just the mech's current/max level — the mech-page slider
-# (ModuleSlider in js/pages/sts.js) looks up `mod.levels[String(level)]`
-# directly with no fallback, so any level missing from this dict renders as
-# blank text the moment the slider is dragged there (this happened for real
-# with the first two entries below, '9010' and '1050', when they only had
-# their max level filled in). The intake form should already have the full
-# per-level number progression (e.g. "3/6/9/15%") — turn that into one
-# `levels[str(i)]` entry per number, using a small text-builder function like
-# `_origin_core_text`/`_descension_module_text` below to avoid repeating the
-# template prose per level. If a bonus clause only unlocks at max level (see
-# `_descension_module_text`'s `bonus` param), only pass it on the final
-# level — same pattern as the scraped-catalog modules' bonus clauses
-# elsewhere in this file (e.g. family 3012 "Vigilant Mod").
-def _origin_core_text(pct):
-    return ('During own turn, increases Dodge Rate by <color=#F74848>' + pct + '%</color> of Firepower. '
-            'During enemy turn, increases Firepower by <color=#F74848>' + pct + '%</color> of Dodge Rate.')
-
-
-def _descension_module_text(pct, bonus=False):
-    text = ('Increases DMG dealt to targets within 2 adjacent tiles by <color=#F74848>' + pct + '%</color>. '
-            'Reduces DMG taken from attacker beyond 2 adjacent tiles by <color=#F74848>' + pct + '%</color>.')
-    if bonus:
-        text += ('\n<buf ID=9990001>[Favorable Event]</buf> trigger rate increases by <color=#F74848>+10%</color>. '
-                 'DMG calculation will use the highest number of pilot\'s attributes')
-    return text
-
-
-MANUAL_MODULES = {
+# The wording itself is NOT duplicated here — it's read straight out of the
+# mech's own JSON (via build_local_index()) at `templateLevel`, so editing the
+# SpecificEffects text on the mech file is the single source of truth and
+# flows through automatically on the next compile. Only the per-level %
+# progression is hand-authored here (the mech file only ever stores one
+# level's instance, so the other levels' numbers can't be derived from it) —
+# `pcts` MUST cover every level from 1 to `maxLevel`, not just the mech's
+# current/max level, since the mech-page slider (ModuleSlider in
+# js/pages/sts.js) looks up `mod.levels[String(level)]` directly with no
+# fallback, and a level missing here would render as blank text the moment
+# the slider is dragged there.
+MANUAL_MODULE_SPECS = {
     '9010': {
         'name': 'Origin Core',
         'icon': 'Icon_entry_40042',
         'category': 'GeneralSuit',
         'maxLevel': 4,
-        'currentLevel': 4,
-        'levels': {
-            str(i + 1): _origin_core_text(pct) for i, pct in enumerate(['3', '6', '9', '15'])
-        },
+        'templateLevel': 4,
+        'pcts': ['3', '6', '9', '15'],
     },
     '1050': {
         'name': 'Descension Module',
         'icon': 'Icon_entry_10109',
         'category': 'GeneralSuit',
         'maxLevel': 8,
-        'currentLevel': 8,
+        'templateLevel': 8,
         # The [Favorable Event]/highest-attribute bonus clause only unlocks
         # at max level (same "extra effect unlocked at max level" pattern as
-        # e.g. family 3012 "Vigilant Mod" above) — levels 1-7 only get the
-        # primary DMG dealt/taken clause.
-        'levels': {
-            str(i + 1): _descension_module_text(pct, bonus=(i == 7))
-            for i, pct in enumerate(['4', '6', '8', '10', '14', '16', '18', '24'])
-        },
+        # e.g. family 3012 "Vigilant Mod" above) — build_manual_modules()
+        # strips it via primary_clause() for levels below templateLevel.
+        'pcts': ['4', '6', '8', '10', '14', '16', '18', '24'],
     },
 }
+
+
+def build_manual_modules(local_modules):
+    """Derive MANUAL_MODULE_SPECS' full per-level `levels` dict from the
+    mech-editable template text (see MANUAL_MODULE_SPECS' comment) rather
+    than a hardcoded copy of the wording, so a wording fix on the mech JSON
+    doesn't also need a matching edit here."""
+    modules = {}
+    for family, spec in MANUAL_MODULE_SPECS.items():
+        template_text = next(
+            (info['cn_text'] for info in local_modules.values()
+             if info['family'] == family and info['level'] == spec['templateLevel']),
+            None
+        )
+        if template_text is None:
+            # The mech that carries this module was removed/renumbered —
+            # skip rather than silently reintroduce stale hardcoded text.
+            continue
+
+        primary_template = primary_clause(template_text)
+        template_nums = extract_nums(primary_template)
+
+        level_effects = {}
+        for i, pct in enumerate(spec['pcts'], 1):
+            if i == spec['templateLevel']:
+                level_effects[str(i)] = template_text
+                continue
+            level_nums = [pct + '%'] * len(template_nums)
+            level_effects[str(i)] = substitute(primary_template, template_nums, level_nums)
+
+        modules[family] = {
+            'name': spec['name'],
+            'icon': spec['icon'],
+            'category': spec['category'],
+            'maxLevel': spec['maxLevel'],
+            'currentLevel': spec['templateLevel'],
+            'levels': level_effects,
+        }
+    return modules
 
 
 def primary_clause(text):
@@ -505,7 +522,7 @@ def main():
         }
         synthesized_families.append(cn_name)
 
-    for family, manual_mod in MANUAL_MODULES.items():
+    for family, manual_mod in build_manual_modules(local_modules).items():
         modules.setdefault(family, manual_mod)
 
     out = {'modules': modules}
