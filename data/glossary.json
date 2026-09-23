@@ -1,1907 +1,1911 @@
 {
-  "buf": {
-    "900001": {
-      "name": "Flurry Strike",
-      "effect": "After enemy retaliation in combat, launch an additional attack."
-    },
-    "900002": {
-      "name": "Link Attack",
-      "effect": "An attack launched in coordination with an ally's attack."
-    },
-    "900003": {
-      "name": "Guts",
-      "effect": "When suffering lethal damage, survive with 1 HP."
-    },
-    "900004": {
-      "name": "Re-ATK",
-      "effect": "After the current attack ends, trigger one additional attack. Unable to move before the additional attack unless stated otherwise."
-    },
-    "900005": {
-      "name": "Re-Act",
-      "effect": "Can launch active attacks again. Before attacking, can move with full movement distance."
-    },
-    "900006": {
-      "name": "Reaction Attack",
-      "effect": "Launch a counter-attack in response to being attacked."
-    },
-    "900008": {
-      "name": "Pursuit",
-      "effect": "Automatically moves toward any enemy that attacks you."
-    },
-    "900009": {
-      "name": "Pursuit Retaliation",
-      "effect": "Retaliate against an attacker after triggering [Pursuit]."
-    },
-    "900010": {
-      "name": "Gusty Strike",
-      "effect": "Launch an additional attack before the enemy's retaliation."
-    },
-    "900011": {
-      "name": "Ideal Range",
-      "effect": "The optimal engagement distance for a ranged weapon. Grants bonus effects when the target is within this range."
-    },
-    "900013": {
-      "name": "Vigilant Shot",
-      "effect": "Before an incoming enemy attack within weapon range lands, trigger a pre-emptive ranged attack."
-    },
-    "900014": {
-      "name": "Aiming",
-      "effect": "Before attacking, designate a specific part of the target to focus all damage on that part."
-    },
-    "900016": {
-      "name": "Salvo",
-      "effect": "Fire multiple projectiles simultaneously at a target in a single action."
-    },
-    "900017": {
-      "name": "Fixed DMG",
-      "effect": "Ignores Armor and DMG Reduction to deal damage once."
-    },
-    "900018": {
-      "name": "Passive Repair",
-      "effect": "No manual casting required. Repairs an ally once."
-    },
-    "900019": {
-      "name": "Link Repair",
-      "effect": "When an ally performs repairs, cooperate to trigger an additional repair on the same target."
-    },
-    "900020": {
-      "name": "Assist Repair",
-      "effect": "After an ally's action, perform [Passive Repair] on that ally."
-    },
-    "900021": {
-      "name": "Pochy Repair",
-      "effect": "Restores HP equal to 2.0x Manipulator Repair AMT to all parts of a single ST. Can repair 1 destroyed part."
-    },
-    "900022": {
-      "name": "Guard",
-      "effect": "Protects allies within 2 adjacent tiles from Assault and Ranged attacks. Triggers up to 2 times per turn and lasts 2 turns. Additionally, gains [Defensive Stance I]. Can only trigger 1 time per turn."
-    },
-    "900023": {
-      "name": "Quick Draw",
-      "effect": "Launches a retaliation before enemy active attacks."
-    },
-    "900024": {
-      "name": "Selfless Guard",
-      "effect": "Intercept attacks targeting nearby allies without triggering a retaliation."
-    },
-    "900025": {
-      "name": "Rack",
-      "effect": "Stationary deployment. Unable to move but gain a Special Bonus."
-    },
-    "900026": {
-      "name": "Retract",
-      "effect": "Exit [Rack] Mode."
-    },
-    "900027": {
-      "name": "Target Shift",
-      "effect": "Ensures the enemy's attack hits the designated part."
-    },
-    "900028": {
-      "name": "Add Strike",
-      "effect": "After retaliation, trigger an additional retaliation."
-    },
-    "900029": {
-      "name": "Auto Load",
-      "effect": "When a tactical weapon's magazine is depleted, automatically begin reloading. Reload takes several turns to complete."
-    },
-    "900030": {
-      "name": "Cleave",
-      "effect": "Uses a Polearm to attack all targets within an I-shaped (3x1-tile) or L-shaped (3x1-tile) area ahead, dealing <color=#F74848>0.4x</color> AOE DMG"
-    },
-    "900031": {
-      "name": "Extra Strike",
-      "effect": "Deal one additional hit to the target on top of the current attack."
-    },
-    "900033": {
-      "name": "Stealth",
-      "effect": "Reduces targeting priority. Enemies will not actively select this unit as their primary target."
-    },
-    "900034": {
-      "name": "Instability",
-      "effect": "Hit Rate and Dodge Rate Down."
-    },
-    "900035": {
-      "name": "Timidity",
-      "effect": "AP Cost UP for Normal Attacks, Skills and Codes."
-    },
-    "900036": {
-      "name": "Mental Pressure Aura",
-      "effect": "An aura that inflicts psychological pressure on nearby enemies, reducing their combat performance."
-    },
-    "900038": {
-      "name": "Regular Repair",
-      "effect": "Perform a standard HP repair action on a unit or part."
-    },
-    "900042": {
-      "name": "Hit Down",
-      "effect": "Reduces the target's hit rate, making their attacks less accurate."
-    },
-    "900045": {
-      "name": "DMG Taken UP",
-      "effect": "DMG Taken <color=#F74848>+10%</color>"
-    },
-    "900046": {
-      "name": "Active Skill Disabled",
-      "effect": "Cannot use active skills for the duration of this effect."
-    },
-    "900049": {
-      "name": "Exposure II",
-      "effect": "Affected Part Hit Weighting +45."
-    },
-    "900050": {
-      "name": "Euphoria",
-      "effect": "When actively attacking, Crit Rate UP."
-    },
-    "900051": {
-      "name": "Improved Hit",
-      "effect": "Increases accuracy, making attacks more likely to connect."
-    },
-    "900052": {
-      "name": "Improved Attack",
-      "effect": "Increases attack damage output."
-    },
-    "900053": {
-      "name": "Short Circuit",
-      "effect": "At the end of the action, all body parts lose <color=#F74848>7%</color> of their maximum HP as [Fixed DMG]. This [Fixed DMG] cannot destroy parts."
-    },
-    "3006442": {
-      "name": "Short Circuit II",
-      "effect": "At the end of the action, all body parts lose <color=#F74848>7%</color> of their maximum HP as [Fixed DMG]. This [Fixed DMG] cannot destroy parts."
-    },
-    "900054": {
-      "name": "SP Ammo",
-      "effect": "Special ammunition loaded into a weapon, granting additional effects on hit."
-    },
-    "900055": {
-      "name": "Armor Care",
-      "effect": "Restores or maintains armor integrity, recovering armor value."
-    },
-    "900056": {
-      "name": "Attack Hindrance",
-      "effect": "Impedes the target's ability to attack effectively."
-    },
-    "900059": {
-      "name": "Sentinel Ward",
-      "effect": "After performing active repairs, apply an extra repair effect to the target."
-    },
-    "900060": {
-      "name": "Diagonal Shot",
-      "effect": "Enables a Rail Gun to execute Diagonal Attacks with a Range of -1."
-    },
-    "900061": {
-      "name": "Link Retaliation",
-      "effect": "After the enemy attacks other allies, launches a retaliation."
-    },
-    "900064": {
-      "name": "Peripheral Vision",
-      "effect": "Before the target retaliates, launches an attack on a random target within range. [Peripheral Vision] is unaffected by Ideal Range."
-    },
-    "900065": {
-      "name": "Flame DMG",
-      "effect": "Damage dealt is based on the multiplier percentage of the main skill."
-    },
-    "900071": {
-      "name": "Stay Lit!",
-      "effect": "When executing a single-target repair skill, restores additional AP to eligible targets."
-    },
-    "900078": {
-      "name": "Turns Left",
-      "effect": "Turns left cannot exceed the duration of the effect at the time of acquisition."
-    },
-    "900079": {
-      "name": "Displacement",
-      "effect": "Pulled, pushed back, or replaced."
-    },
-    "900080": {
-      "name": "Guard Disabled",
-      "effect": "Unable to perform [Guard] or [Selfless Guard]."
-    },
-    "900081": {
-      "name": "Ignore Guard",
-      "effect": "Cannot be the target of [Guard] or [Selfless Guard]."
-    },
-    "900085": {
-      "name": "Tokamak Sphere",
-      "effect": "Can choose a direction when deployed. Redirects Fia's Rail Gun/Flamethrower AoE attacks when they pass through it. Destroyed after redirection. Can be retrieved at end of action."
-    },
-    "900086": {
-      "name": "Redirection",
-      "effect": "Extends attack range toward the direction of the Tokamak Sphere, but Max Range -1."
-    },
-    "900088": {
-      "name": "Synchronization",
-      "effect": "Has a special [Sync Ratio] with the ST, which changes during battle. The higher the sync ratio, the stronger the pilot's ability."
-    },
-    "900089": {
-      "name": "Balance",
-      "effect": "Redistributes HP% evenly across all intact parts."
-    },
-    "900095": {
-      "name": "Dual Gun Retaliation",
-      "effect": "After the enemy attacks this unit, uses two Machine Guns to retaliate."
-    },
-    "900096": {
-      "name": "Retaliation",
-      "effect": "After the enemy attacks this unit, launches a retaliation."
-    },
-    "900999": {
-      "name": "Substitute",
-      "effect": "If an ally with HP below 30% is attacked during combat, a [Guard] effect can be activated regardless of skill range. Removed after activation."
-    },
-    "900097": {
-      "name": "Link Salvo",
-      "effect": "After an ally actively attacks, simultaneously uses two Tactical Weapons to launch an Extra Strike on the same target."
-    },
-    "900101": {
-      "name": "Terminator",
-      "effect": "After actively attacking with an Alter-Blade, if the HP of the part hit is below a certain percentage, triggers the <buf ID=900109>[Execution]</buf> effect, directly destroying that part after combat."
-    },
-    "900109": {
-      "name": "Execution",
-      "effect": "When specific conditions are met, the part is directly destroyed after combat. This effect ignores <buf ID=900003>[Guts]</buf>."
-    },
-    "900111": {
-      "name": "Directional Rack",
-      "effect": "Stationary deployment. Unable to move. Attack range changes to a fixed direction area, but grants a special bonus."
-    },
-    "900112": {
-      "name": "Positional Advantage I",
-      "effect": "Critical hit chance increases by <color=#F74848>3%</color> and DMG taken is reduced by <color=#F74848>2%</color> per stack, up to <color=#F74848>8</color> stacks. All stacks are removed after exiting [Directional Rack]"
-    },
-    "900118": {
-      "name": "Valhalla's Call",
-      "effect": "When attacking for the first time each turn, AP Cost <color=#F74848>-1</color>, minimum <color=#F74848>1</color>.\nAfter actively attacking, if the target is destroyed, triggers <buf ID=900004>[Re-ATK]</buf> after combat, granting full Movement. Can only trigger <color=#F74848>1</color> time per turn.\nWhen the duration ends, resets <buf ID=900120>[Awakening]</buf> level."
-    },
-    "900120": {
-      "name": "Awakening",
-      "effect": "Lv.1: Movement <color=#F74848>+1</color>.\nLv.2: Unlocks <buf ID=900011>[Ideal Range]</buf> for Assault Weapons. When battling targets on an <buf ID=900011>[Ideal Range]</buf> tile, Final DMG Dealt <color=#F74848>+15%</color>.\nLv.3: When a part is destroyed, restores <color=#F74848>1</color> AP after combat. Can only trigger <color=#F74848>1</color> time per turn.\nLv.4: When actively attacking with a Cutter, can repeatedly select the same target. Subsequent attacks against the same target deal <color=#F74848>40%</color> of base DMG.\nLv.5: Gains <buf ID=900118>[Valhalla's Call]</buf>."
-    },
-    "900125": {
-      "name": "Firepower Fulcrum",
-      "effect": "HMG bullets <color=#F74848>+1</color>."
-    },
-    "900133": {
-      "name": "Poised",
-      "effect": "DMG dealt increases by <color=#F74848>3%</color>, up to a maximum of <color=#F74848>5</color> stacks."
-    },
-    "900136": {
-      "name": "Critical Sense",
-      "effect": "When attacked by melee or ranged weapons, if equipped with Alter-Blade in both hands and both hands are intact, activates [Insight Counterattack], dealing <color=#F74848>1.2x</color> DMG. [Insight Counterattack] ignores [Target Shift]. Each stack increases DMG dealt by <color=#F74848>5%</color> and dodge rate by <color=#F74848>5%</color>. <color=#F74848>1</color> stack is removed upon activation."
-    },
-    "1002502": {
-      "name": "Impulsive I",
-      "effect": "Offensive aggression +5%, defensive stability -5%."
-    },
-    "1002512": {
-      "name": "Impulsive II",
-      "effect": "Offensive aggression +10%, defensive stability -10%."
-    },
-    "1004021": {
-      "name": "Weapon Inhibition",
-      "effect": "Cannot execute weapon skills or attack codes except for normal attacks."
-    },
-    "1004022": {
-      "name": "Repair Inhibition",
-      "effect": "Repair AMT Received -50%. Cannot repair destroyed parts."
-    },
-    "1004061": {
-      "name": "Code Hindrance",
-      "effect": "Disrupts the use of Code-type skills."
-    },
-    "1004412": {
-      "name": "Instability II",
-      "effect": "Hit Rate -4% and Dodge Rate -4%. Stacks up to 5 times."
-    },
-    "1004502": {
-      "name": "Instability I",
-      "effect": "Instability debuff level I; reduces combat effectiveness by 5%."
-    },
-    "1006502": {
-      "name": "Timidity I",
-      "effect": "Timidity debuff level I; reduces offensive capability by 5%."
-    },
-    "1008062": {
-      "name": "Absolute Dodge",
-      "effect": "When attacked and retaliating, ensures a Perfect Dodge. Effect is removed after triggering."
-    },
-    "1008072": {
-      "name": "Iron Will",
-      "effect": "Crit Rate +6%. Stacks up to 5 times. Lasts until a critical hit is landed."
-    },
-    "1008503": {
-      "name": "Euphoria II",
-      "effect": "Dodge Rate +3%. When actively attacking, Crit Rate +5%. Stacks up to 5 times."
-    },
-    "1009083": {
-      "name": "Intimidation",
-      "effect": "Unable to move."
-    },
-    "1009502": {
-      "name": "Mental Pressure Aura I",
-      "effect": "Applies 5% mental pressure to nearby enemies, reducing their combat performance."
-    },
-    "1009503": {
-      "name": "Mental Pressure Aura II",
-      "effect": "DMG Dealt -12%. DMG Taken +12%."
-    },
-    "1012042": {
-      "name": "Ready",
-      "effect": "Crit Rate +5%, up to 5 stacks, lasting until landing a critical hit."
-    },
-    "1012081": {
-      "name": "Oath",
-      "effect": "At start of action, if a unit is within 6 tiles of [Camilla], targeted skills can only select [Camilla] as the target. Non-targeted skills remain unaffected."
-    },
-    "1012512": {
-      "name": "Magnetic Armor",
-      "effect": "Armor +30%. Stacks up to 3 times. Upon taking damage, removes 1 stack after combat."
-    },
-    "1013503": {
-      "name": "Vigor",
-      "effect": "DMG +1.5%, DMG Taken -1.5%."
-    },
-    "1014363": {
-      "name": "Eminence",
-      "effect": "When actively attacking, skill multiplier +0.15. Removed when taking damage."
-    },
-    "1014820": {
-      "name": "Sync Ratio",
-      "effect": "When Sync Ratio is greater than 50%, each 1% Sync Ratio increases pilot Suitability by 0.2%, otherwise, it reduces pilot Suitability."
-    },
-    "1015052": {
-      "name": "Critical State",
-      "effect": "Final DMG Dealt <color=#F74848>+20%</color>. Crit Rate and Crit DMG <color=#F74848>+20%</color>. After actively attacking, triggers <buf ID=900004>[Re-ATK]</buf>. Can move <color=#F74848>2</color> tiles before attacking. This <buf ID=900004>[Re-ATK]</buf> effect has no limit on the number of times it can trigger and lasts until the end of the action."
-    },
-    "1015311": {
-      "name": "Terminator 1",
-      "effect": "After actively attacking with an Alter-Blade, if the part hit is below <color=#F74848>15%</color> HP, triggers the <buf ID=900109>[Execution]</buf> effect, directly destroying that part after combat."
-    },
-    "1015414": {
-      "name": "Critical Sense",
-      "effect": "When attacked by Melee and Ranged Weapons, if equipped with two Alter-Blades and both Arms are undestroyed, interrupts the attack and triggers [Incisive Retaliation], dealing <color=#F74848>1.2</color>x DMG. After triggering, <color=#F74848>1</color> stack is removed. [Incisive Retaliation] ignores the Large Shield <buf ID=900027>[Target Shift]</buf> effect.\nFor each stack of Critical Sense possessed, DMG <color=#F74848>+5%</color> and Dodge Rate <color=#F74848>+5%</color>."
-    },
-    "2004022": {
-      "name": "Hit UP",
-      "effect": "Increases hit rate."
-    },
-    "2004081": {
-      "name": "Retaliation Disabled",
-      "effect": "Cannot perform counter-attacks or retaliations."
-    },
-    "2004501": {
-      "name": "Sharpshooter",
-      "effect": "Enhanced ranged accuracy and precision."
-    },
-    "2005513": {
-      "name": "Cross Fire",
-      "effect": "Coordinate fire from multiple angles to catch enemies in overlapping fields of fire."
-    },
-    "2006041": {
-      "name": "DMG Taken Down",
-      "effect": "Reduces damage received from incoming attacks."
-    },
-    "2006501": {
-      "name": "Lead by Example",
-      "effect": "Inspires nearby allies, granting them combat bonuses."
-    },
-    "2006502": {
-      "name": "Improved Attack I",
-      "effect": "ATK +5%."
-    },
-    "2007501": {
-      "name": "Adorable",
-      "effect": "A unique status effect associated with specific pilot abilities."
-    },
-    "2009022": {
-      "name": "Crit Rate UP",
-      "effect": "Increases critical hit rate."
-    },
-    "2009501": {
-      "name": "Fearless Army",
-      "effect": "A morale buff that enhances the entire unit's combat resolve."
-    },
-    "2011442": {
-      "name": "Intimidation",
-      "effect": "Reduces the target's combat performance through psychological pressure."
-    },
-    "2012032": {
-      "name": "Ultrahot!",
-      "effect": "Flame DMG +10%."
-    },
-    "2012061": {
-      "name": "Afterglow",
-      "effect": "When attacked, all parts take Fixed DMG equal to 0.05x [Erisa]'s Weapon ATK after combat. This effect lasts until the action ends."
-    },
-    "2012512": {
-      "name": "Joint Melt",
-      "effect": "After actively attacking or executing a Code skill, all parts take Fixed DMG equal to 5% of their Max HP."
-    },
-    "2015041": {
-      "name": "Counter Burst",
-      "effect": "When retaliating with a Machine Gun, Bullets +1. Stacks up to 3 times."
-    },
-    "2015061": {
-      "name": "Sanctuary",
-      "effect": "Immune to \"Cannot be protected by [Guard]\" effects. When attacked by a Assault or Ranged Weapon, if within 3 tiles of [Cassha], she blocks the attack."
-    },
-    "2015081": {
-      "name": "Turning Point",
-      "effect": "DMG Taken -30%. Removed at start of action."
-    },
-    "2015087": {
-      "name": "Maelstrom",
-      "effect": "At start of action, if not incapacitated and both Arms are undestroyed, uses two Machine Guns simultaneously to deal 0.6x DMG 2 times to all enemies within range. If unable to attack, gains 3 AP."
-    },
-    "2015509": {
-      "name": "Retaliation Enhancement",
-      "effect": "When attacked and drawn into combat, triggers [Quick Draw] before the enemy strikes, and Retaliation DMG +15%. Stacks up to 5 times. Each stack is independent and does not accumulate. When [Retaliation] or [Quick Draw] is triggered, 1 stack is removed after combat."
-    },
-    "2016080": {
-      "name": "Rondo - Flamethrower",
-      "effect": "When initiating combat with a single-handed Assault Weapon, deals [Fixed DMG] after combat equal to <color=#F74848>0.35</color>x Weapon ATK to all parts of the target in total."
-    },
-    "2016085": {
-      "name": "Rondo - Shotgun",
-      "effect": "When attacking with an Assault Weapon, ignores <color=#F74848>50%</color> of the target's Armor."
-    },
-    "2016087": {
-      "name": "Rondo - Machine Gun",
-      "effect": "When attacking with an Assault Weapon, increases DMG dealt in this skirmish based on hits. For each hit, DMG increases by <color=#F74848>2%</color>, up to <color=#F74848>20%</color>. Resets after attacking."
-    },
-    "2016410": {
-      "name": "Hawk Rush 1",
-      "effect": "When actively attacking with a single-handed Assault Weapon, after combat gains <color=#F74848>1</color> stack of <buf ID=2016503>[Dual Gun Efficiency]</buf>. Stacks up to <color=#F74848>3</color> times. Can only trigger <color=#F74848>1</color> time per turn."
-    },
-    "2016452": {
-      "name": "Hawk Rush",
-      "effect": "When actively attacking with a single-handed Assault Weapon, after combat gains <color=#F74848>1</color> stack of <buf ID=2016503>[Dual Gun Efficiency]</buf>. Stacks up to <color=#F74848>3</color> times. Can only trigger <color=#F74848>1</color> time per turn."
-    },
-    "2016503": {
-      "name": "Dual Gun Efficiency",
-      "effect": "When actively attacking with two Assault Weapons, consumes all stacks, reducing AP Cost by <color=#F74848>1</color> for each stack, down to a minimum of <color=#F74848>1</color>."
-    },
-    "2017072": {
-      "name": "Fury Unleashed",
-      "effect": "Can consume <buf ID=2017500>[Fury]</buf> stack to improve the skill effect. For each stack consumed, increases AP cost by <color=#F74848>1</color> and the number of bullets by <color=#F74848>40%</color>. Up to 2 stacks can be consumed."
-    },
-    "2017442": {
-      "name": "Firepower Supremacy",
-      "effect": "HMG Range <color=#F74848>+1</color>. This effect can stack."
-    },
-    "2017500": {
-      "name": "Fury",
-      "effect": "DMG Dealt <color=#F74848>+25%</color>. Effect cannot stack. Consumed when <buf ID=2017072>[Fury Unleashed]</buf> is activated."
-    },
-    "3004501": {
-      "name": "Shadow of Calamity",
-      "effect": "A debuff aura associated with a specific pilot's ability."
-    },
-    "3004502": {
-      "name": "Stealth I",
-      "effect": "Cannot be targeted by active attacks. Forcibly removed when actively attacking, being attacked and taking damage, or if enemies exist within 2 adjacent tiles."
-    },
-    "3005412": {
-      "name": "Global Repair Effect Down",
-      "effect": "Reduces the effectiveness of all repair actions on the target."
-    },
-    "3005443": {
-      "name": "Repair Damaged Part Disabled",
-      "effect": "Cannot repair parts that are already damaged."
-    },
-    "3005501": {
-      "name": "Investor",
-      "effect": "A buff that provides resource or AP generation bonuses."
-    },
-    "3006053": {
-      "name": "Skilled",
-      "effect": "Enhanced combat proficiency granting bonuses to attack actions."
-    },
-    "3006502": {
-      "name": "Short Circuit I",
-      "effect": "At the end of action, all parts take Fixed DMG equal to <color=#F74848>7%</color> of their Max HP."
-    },
-    "3008061": {
-      "name": "Guard Disabled",
-      "effect": "Cannot perform Guard interceptions."
-    },
-    "3008081": {
-      "name": "Ignore Guard",
-      "effect": "Attacks bypass Guard effects entirely."
-    },
-    "3008501": {
-      "name": "Epiphyllum's Move",
-      "effect": "When attacking with a Light Rifle, [Aiming] mode can be accessed while equipped with a Small Shield. This skill allows movement after combat using any remaining movement."
-    },
-    "3009032": {
-      "name": "Serenity",
-      "effect": "Crit Rate +5%, Crit DMG +5%, up to 3 stacks. Lose all effects upon taking damage."
-    },
-    "3009411": {
-      "name": "Intelligence Collection",
-      "effect": "Gathering tactical intelligence that may reveal enemy positions or grant combat bonuses."
-    },
-    "3009451": {
-      "name": "Intelligence Collection",
-      "effect": "Gathering tactical intelligence that may reveal enemy positions or grant combat bonuses."
-    },
-    "3010502": {
-      "name": "Reinforced Ammo",
-      "effect": "Gains <buf ID=3010504>[Improved Fire]</buf> after executing the <skill mainSkill=301050>[Special Load]</skill> code."
-    },
-    "3010504": {
-      "name": "Improved Fire",
-      "effect": "When actively attacking with a Ranged Weapon, skill multiplier +0.15. Can trigger 1 time. Removed after triggering or when action ends."
-    },
-    "3011512": {
-      "name": "Positional Advantage I",
-      "effect": "Critical hit chance increases by <color=#F74848>3%</color> and DMG taken is reduced by <color=#F74848>2%</color> per stack, up to <color=#F74848>8</color> stacks. All stacks are removed after exiting [Directional Rack]"
-    },
-    "4002062": {
-      "name": "Missile DMG UP",
-      "effect": "Increases damage dealt by missile attacks."
-    },
-    "4002065": {
-      "name": "Rocket DMG UP",
-      "effect": "Increases damage dealt by rocket attacks."
-    },
-    "4002501": {
-      "name": "Thirst for Knowledge",
-      "effect": "A buff that generates bonuses through information gathering or tactical awareness."
-    },
-    "4003063": {
-      "name": "Repair Hindrance",
-      "effect": "Reduces the effectiveness of repair actions on the target."
-    },
-    "4003064": {
-      "name": "Repair Disabled",
-      "effect": "Cannot perform or receive repair actions."
-    },
-    "4003503": {
-      "name": "SP Ammo I",
-      "effect": "Special ammunition level I; grants an additional 5% effect on hit."
-    },
-    "4004501": {
-      "name": "Unceasing Thunderfire",
-      "effect": "Talent buff for Eileen."
-    },
-    "4008051": {
-      "name": "Precision Mode",
-      "effect": "When attacking with a Missile Launcher, Final DMG <color=#F74848>+50%</color>, and no longer causes splash damage."
-    },
-    "4008058": {
-      "name": "Standard Mode",
-      "effect": "When attacking with a Missile Launcher, deals Splash DMG equal to <color=#F74848>50%</color> of the damage dealt to all parts except the part hit."
-    },
-    "4008509": {
-      "name": "Lock",
-      "effect": "Arthur can use Missile Launcher active attacks and <buf ID=900002>[Link Attacks]</buf> to attack units regardless of distance."
-    },
-    "4010082": {
-      "name": "Ambush Tactics",
-      "effect": "When actively attacking, Crit Rate <color=#F74848>+15%</color>. Stacks up to <color=#F74848>5</color> times. Removed after actively attacking."
-    },
-    "4010500": {
-      "name": "Intel",
-      "effect": "Each stack increases all allies' DMG by <color=#F74848>0.8%</color>. Stacks up to <color=#F74848>25</color> times. Loses <color=#F74848>1</color> stack at start of action."
-    },
-    "5002072": {
-      "name": "Repair AMT UP",
-      "effect": "Increases the amount of HP restored by repair actions."
-    },
-    "5003502": {
-      "name": "Armor Care I",
-      "effect": "Restores armor value by 5%."
-    },
-    "5004502": {
-      "name": "Regular Repair II",
-      "effect": "After actively attacking, restores HP equal to <color=#F74848>0.45x</color> [Melissa's] Manipulator Repair AMT to undestroyed parts. Can trigger <color=#F74848>2</color> times. Cannot repair destroyed parts."
-    },
-    "5004512": {
-      "name": "Magnetized Repair",
-      "effect": "After combat, if there are any destroyed parts, repairs <color=#F74848>1</color> of them. Repair amount is <color=#F74848>0.2x</color> that of the Manipulator. Can trigger once."
-    },
-    "5005071": {
-      "name": "Specific Repair Skills",
-      "effect": "[Pochy Assist!] Skill and [Full Power!] Skill"
-    },
-    "5006031": {
-      "name": "Limit Relief",
-      "effect": "Negates one instance of [Re-ATK] or [Re-Act] deduction. Removed after taking effect."
-    },
-    "5006052": {
-      "name": "Immune to Repair Inhibition",
-      "effect": "Immune to [Repair AMT Received Down] and [Destroyed Part Repair Disabled]."
-    },
-    "5007022": {
-      "name": "Crit Reduction",
-      "effect": "When under attack, Crit RES +10%, and Crit DMG Taken -10%."
-    },
-    "5007072": {
-      "name": "Primed",
-      "effect": "After actively attacking, inflicts 1 random debuff on the target hit after combat, lasting for 2 turns. Removed after triggering."
-    },
-    "5007083": {
-      "name": "Full Rewind",
-      "effect": "Records the unit's part status, HP, AP, and Tactical Weapon Capacity when applied. At the start of the next action, returns to the recorded status."
-    },
-    "5007516": {
-      "name": "Weapon Inhibition",
-      "effect": "Cannot execute weapon skills or attack codes except for normal attacks."
-    },
-    "6002042": {
-      "name": "Passive Repair",
-      "effect": "Automatically repair HP under specific conditions or at the end of action."
-    },
-    "6002081": {
-      "name": "Battlefield Fortress",
-      "effect": "A defensive stance that greatly increases survivability in place."
-    },
-    "6003061": {
-      "name": "Weapon Hindrance",
-      "effect": "Reduces the target's weapon effectiveness."
-    },
-    "6003502": {
-      "name": "Attack Hindrance I",
-      "effect": "Reduces the target's attack effectiveness by 5%."
-    },
-    "6004041": {
-      "name": "Aggressive",
-      "effect": "When Retaliating, Crit Rate +10%, Crit DMG +10%."
-    },
-    "6004081": {
-      "name": "Reaction Hysteresis",
-      "effect": "When initiating combat, an action delay allows the target to retaliate first."
-    },
-    "6004501": {
-      "name": "Initiative",
-      "effect": "Grants priority to act first or trigger effects before opponents."
-    },
-    "6005052": {
-      "name": "Raging Guardian",
-      "effect": "When actively attacking, DMG +10%. Stacks up to 3 times."
-    },
-    "6005461": {
-      "name": "Movement Down Immunity",
-      "effect": "Immune to [Movement Down]."
-    },
-    "6005462": {
-      "name": "Guard Disabled Immunity",
-      "effect": "Immune to [Guard Disabled]."
-    },
-    "6008041": {
-      "name": "Magnetoresistive Field",
-      "effect": "When on the battlefield, if enemies pass within 1 ring of this unit or a [Defense Field], they must expend 1 additional Movement. Also, their Jetpack's ability to bypass obstacles is disabled."
-    },
-    "6008061": {
-      "name": "Airspace Blockade",
-      "effect": "When actively attacking with a Tactical Weapon, cannot deal damage to enemies within enemy [Defense Fields]. Removed when action ends."
-    },
-    "7000142": {
-      "name": "Bide",
-      "effect": "Accumulate power while withstanding attacks, releasing it in a stronger follow-up action."
-    },
-    "7000452": {
-      "name": "Fury",
-      "effect": "DMG +5%. Stacks up to 4 times."
-    },
-    "7100102": {
-      "name": "Hit Rate UP I",
-      "effect": "Hit rate +4%."
-    },
-    "7100103": {
-      "name": "Hit Rate UP II",
-      "effect": "Hit rate +8%."
-    },
-    "7100104": {
-      "name": "Hit Rate UP II",
-      "effect": "Hit rate +8%."
-    },
-    "7100105": {
-      "name": "Hit Rate UP III",
-      "effect": "Hit Rate +12%."
-    },
-    "7100205": {
-      "name": "Dodge Rate UP III",
-      "effect": "Dodge rate +15%."
-    },
-    "7100207": {
-      "name": "Dodge Rate UP IV",
-      "effect": "Dodge rate +20%."
-    },
-    "7100300": {
-      "name": "DMG UP",
-      "effect": "DMG increases according to buff level."
-    },
-    "7100303": {
-      "name": "DMG UP II",
-      "effect": "DMG +10%."
-    },
-    "7100304": {
-      "name": "DMG UP II",
-      "effect": "DMG +10%."
-    },
-    "7100305": {
-      "name": "DMG UP III",
-      "effect": "DMG +15%."
-    },
-    "7100306": {
-      "name": "DMG UP III",
-      "effect": "DMG +15%."
-    },
-    "7100308": {
-      "name": "DMG UP IV",
-      "effect": "DMG +20%."
-    },
-    "7100309": {
-      "name": "DMG UP V",
-      "effect": "DMG +25%."
-    },
-    "7100106": {
-      "name": "Hit Rate UP IV",
-      "effect": "Hit Rate +16%."
-    },
-    "7100107": {
-      "name": "Hit Rate UP V",
-      "effect": "Hit Rate +20%."
-    },
-    "7100401": {
-      "name": "Crit Rate UP I",
-      "effect": "Crit rate +10%."
-    },
-    "7100403": {
-      "name": "Crit Rate UP II",
-      "effect": "Crit Rate +15%."
-    },
-    "7100404": {
-      "name": "Crit Rate UP II",
-      "effect": "Crit rate +15%."
-    },
-    "7100405": {
-      "name": "Crit Rate UP III",
-      "effect": "Crit Rate +20%."
-    },
-    "7100406": {
-      "name": "Crit Rate UP IV",
-      "effect": "Crit Rate +25%."
-    },
-    "7100501": {
-      "name": "Crit DMG UP I",
-      "effect": "Crit DMG +10%."
-    },
-    "7100503": {
-      "name": "Crit DMG UP II",
-      "effect": "Crit DMG +15%."
-    },
-    "7100601": {
-      "name": "Armor UP I",
-      "effect": "Armor +5%."
-    },
-    "7100701": {
-      "name": "Fully Prepared",
-      "effect": "For every 10% decrease in HP, DMG Taken -3%, up to 15%."
-    },
-    "7100702": {
-      "name": "Defensive Stance II",
-      "effect": "DMG Taken -10%."
-    },
-    "7100703": {
-      "name": "Defensive Stance III",
-      "effect": "DMG Taken -50%."
-    },
-    "7100901": {
-      "name": "Movement UP",
-      "effect": "Movement +1."
-    },
-    "7101003": {
-      "name": "Hit Rate Down II",
-      "effect": "Hit rate -10%."
-    },
-    "7101103": {
-      "name": "Dodge Rate Down II",
-      "effect": "Dodge Rate -8%."
-    },
-    "7101104": {
-      "name": "Dodge Rate Down III",
-      "effect": "Dodge Rate -12%."
-    },
-    "7101107": {
-      "name": "Dodge Rate Down V",
-      "effect": "Dodge Rate -20%."
-    },
-    "7101201": {
-      "name": "DMG Down I",
-      "effect": "DMG -5%."
-    },
-    "7101203": {
-      "name": "DMG Down II",
-      "effect": "DMG -10%."
-    },
-    "7101505": {
-      "name": "Crash",
-      "effect": "Unable to take action!"
-    },
-    "7101506": {
-      "name": "Movement Inhibition I",
-      "effect": "Movement -1."
-    },
-    "7101507": {
-      "name": "Movement Inhibition II",
-      "effect": "Movement -2"
-    },
-    "7101601": {
-      "name": "Armor Down Immunity",
-      "effect": "Immune to armor reduction debuffs."
-    },
-    "7101603": {
-      "name": "Hit Down Immunity",
-      "effect": "Immune to hit rate reduction debuffs."
-    },
-    "7101604": {
-      "name": "DMG Taken Immunity",
-      "effect": "Immune to increased damage taken debuffs."
-    },
-    "7101606": {
-      "name": "DMG Down Immunity",
-      "effect": "Immune to damage reduction debuffs."
-    },
-    "7101701": {
-      "name": "Armor Down I",
-      "effect": "Armor -35%."
-    },
-    "7101702": {
-      "name": "Armor Down II",
-      "effect": "Armor -50%."
-    },
-    "7101704": {
-      "name": "Armor Down I",
-      "effect": "Armor -35%."
-    },
-    "7101801": {
-      "name": "DMG Taken UP I",
-      "effect": "DMG Taken +10%."
-    },
-    "7101803": {
-      "name": "DMG Taken UP II",
-      "effect": "DMG Taken +15%."
-    },
-    "7102005": {
-      "name": "DMG Taken Down III",
-      "effect": "DMG Taken -12%."
-    },
-    "900100": {
-      "name": "Critical Sense",
-      "effect": "When attacked by Melee and Ranged Weapons, if equipped with two Alter-Blades and both Arms are undestroyed, interrupts the attack and triggers [Incisive Retaliation], dealing <color=#F74848>1.2</color>x DMG. After triggering, <color=#F74848>1</color> stack is removed. [Incisive Retaliation] ignores the Large Shield <buf ID=900027>[Target Shift]</buf> effect.\nFor each stack of Critical Sense possessed, DMG <color=#F74848>+5%</color> and Dodge Rate <color=#F74848>+5%</color>."
-    },
-    "900104": {
-      "name": "Hologram I",
-      "effect": "Replicant. Copies the unit's part status and HP upon creation. It cannot attack, move, or be guarded, and is removed at the start of [Your Turn]."
-    },
-    "900106": {
-      "name": "Dummy Trick",
-      "effect": "When this unit is attacked in combat and its Body would be destroyed, triggers Guts until end of combat. After combat, the unit is beamed to Anderson's side, gaining Stealth I for 2 turns, and leaving 1 Hologram I in its place. Triggers once per battle."
-    },
-    "900108": {
-      "name": "Hologram",
-      "effect": "Replicant. Copies the unit's part status and HP upon creation. It cannot attack, move, or be guarded, and is removed at the start of [Your Turn]."
-    },
-    "900039": {
-      "name": "Rack",
-      "effect": "Unable to move. When an ally ends their action within the adjacent area, automatically performs Passive Repair on them."
-    },
-    "900072": {
-      "name": "Percentage DMG",
-      "effect": "Damage dealt as a percentage of the target's current or max HP."
-    },
-    "900073": {
-      "name": "Special Load",
-      "effect": "A special ammunition or loading state that enhances subsequent attacks."
-    },
-    "900094": {
-      "name": "Percentage-Based Fixed DMG",
-      "effect": "Fixed DMG based on own HP Percentage."
-    },
-    "900121": {
-      "name": "Restriction Removal",
-      "effect": "When this module reaches maximum level, activates the Hidden Mod of each part."
-    },
-    "2018502": {
-      "name": "Hellstorm",
-      "effect": "After being actively attacked, [Adele] triggers [Hellstorm Burst]."
-    },
-    "900129": {
-      "name": "Hellstorm Burst I",
-      "effect": "Deals [Fixed DMG] equal to <color=#F74848>0.2</color>x [Adele]'s Flamethrower ATK to all parts of the target and all enemy units within <color=#F74848>1</color> tile. This damage can destroy parts. After attacking, removes [Hellstorm]. If other affected targets are afflicted with [Hellstorm] when [Hellstorm Burst] is triggered, [Hellstorm Burst] is triggered again on those targets."
-    },
-    "2018506": {
-      "name": "Scorching Will",
-      "effect": "Flamethrower Weapon ATK increased by <color=#F74848>1%</color>. Stacks up to <color=#F74848>10</color> times."
-    },
-    "900139": {
-      "name": "Fire DMG",
-      "effect": "DMG dealt based on the main skill's multiplier."
-    },
-    "1016514": {
-      "name": "Absolute Will",
-      "effect": "Body is immune to <buf ID=900109>[Execution]</buf> effects. When the Body suffers overdamage, triggers <buf ID=900003>[Guts]</buf>, locking at <color=#F74848>1</color> HP. After combat, restores <color=#F74848>50%</color> of Max HP to all parts and repairs all destroyed parts. Removed after triggering."
-    },
-    "900127": {
-      "name": "Heroism",
-      "effect": "Final DMG <color=#F74848>+4%</color>, Final DMG Taken <color=#F74848>-6%</color>, and Repair AMT <color=#F74848>+4%</color>. Stacks up to <color=#F74848>5</color> times."
-    },
-    "1016502": {
-      "name": "Heroism I",
-      "effect": "Final DMG <color=#F74848>+4%</color>, Final DMG Taken <color=#F74848>-6%</color>, and Repair AMT <color=#F74848>+4%</color>. Stacks up to <color=#F74848>5</color> times."
-    },
-    "1017503": {
-      "name": "Poised",
-      "effect": "DMG dealt increases by <color=#F74848>3%</color>, up to a maximum of <color=#F74848>5</color> stacks."
-    },
-    "900138": {
-      "name": "Temporary AP Cap",
-      "effect": "AP cap is temporarily increased. This effect is removed at the end of turn."
-    },
-    "1017466": {
-      "name": "Stellar Burst",
-      "effect": "Critical hit chance increases by <color=#F74848>15%</color>. Critical hit DMG increases by <color=#F74848>10%</color>."
-    },
-    "1099900": {
-      "name": "Goo Goo",
-      "effect": "[Sapientia]'s personal ST that is deployed automatically when sortie, possesses skills [Super Goo Goo!], [Goo Goo Cover!], [Goo Goo Boost!] and [Goo Goo Shift!]."
-    },
-    "1099901": {
-      "name": "Support Defend",
-      "effect": "Blocks attacks from a specific weapon type for an ally within <color=#F74848>1</color> adjacent tile."
-    },
-    "1099902": {
-      "name": "Short Circuit Impact!",
-      "effect": "When attacked, applies [Short Circuit III] to the attacker after combat with effect: At the end of the action, all body parts lose <color=#F74848>7%</color> of their maximum HP as [Fixed DMG]. This [Fixed DMG] increases by <color=#F74848>1%</color> for each debuff the target carries, up to a maximum of <color=#F74848>12%</color>. This [Fixed DMG] cannot destroy parts."
-    },
-    "1099903": {
-      "name": "Command Block",
-      "effect": "Cannot execute command skills."
-    },
-    "1099904": {
-      "name": "Short Circuit III",
-      "effect": "At the end of the action, all body parts lose <color=#F74848>7%</color> of their maximum HP as [Fixed DMG]. This [Fixed DMG] increases by <color=#F74848>1%</color> for each debuff the target carries, up to a maximum of <color=#F74848>12%</color>. This [Fixed DMG] cannot destroy parts."
-    },
-    "1099905": {
-      "name": "Command Block Immunity",
-      "effect": "Immune to <buf ID=1099903>[Command Block]</buf> effect."
-    },
-    "1099906": {
-      "name": "Blur III",
-      "effect": "Dodge Rate +35%."
-    },
-    "1099907": {
-      "name": "Reconstruction III",
-      "effect": "Repair AMT +25%."
-    },
-    "900137": {
-      "name": "Battle Wound",
-      "effect": "Applies debuff based on the part hit: <buf ID=9001371>[Battle Wound - Body]</buf>, <buf ID=9001372>[Battle Wound - Left Arm]</buf>, <buf ID=9001373>[Battle Wound - Right Arm]</buf>, or <buf ID=9001374>[Battle Wound - Leg]</buf>."
-    },
-    "9001371": {
-      "name": "Battle Wound - Body",
-      "effect": "Reduces AP by <color=#F74848>-1</color> when triggering <buf ID=900004>[Re-ATK]</buf>."
-    },
-    "9001372": {
-      "name": "Battle Wound - Left Arm",
-      "effect": "When actively attacking, reduces Final DMG by <color=#F74848>20%</color> for the first hit."
-    },
-    "9001373": {
-      "name": "Battle Wound - Right Arm",
-      "effect": "When actively attacking, if the number of hits are more than <color=#F74848>5</color>, reduces the number of hits by <color=#F74848>20%</color>."
-    },
-    "9001374": {
-      "name": "Battle Wound - Leg",
-      "effect": "When leg is intact, loses <color=#F74848>10%</color> of leg maximum HP while standing still, with an additional <color=#F74848>10%</color> for every tile moved. Effect removed after triggering."
-    },
-    "900141": {
-      "name": "Hunting",
-      "effect": "Applies buff based on the part destroyed: Body grants <buf ID=9001411>[Precision]</buf>, Arms grants <buf ID=9001412>[Rapid]</buf>, Leg grants <buf ID=9001413>[Direct Shot]</buf>. All effects require a ranged weapon to activate, and are removed after triggering."
-    },
-    "9001411": {
-      "name": "Precision",
-      "effect": "Next basic attack will enter <buf ID=900014>[Aiming]</buf> Mode."
-    },
-    "9001412": {
-      "name": "Rapid",
-      "effect": "Next active attack gets <color=#F74848>+1</color> range."
-    },
-    "9001413": {
-      "name": "Direct Shot",
-      "effect": "Next attack multiplier increases by <color=#F74848>+0.1</color>."
-    },
-    "6010502": {
-      "name": "Magnetic Lock-On",
-      "effect": "Can be targeted by [Vengeful Strike] and [Vengeful Strike β]."
-    },
-    "4011502": {
-      "name": "Appointment",
-      "effect": "[Collin] can select target within <color=#F74848>4</color> tiles of this unit with a cutter."
-    },
-    "4011043": {
-      "name": "Subtask - Defense",
-      "effect": "When actively attacked, all intact parts gain temporary HP equal to <color=#F74848>18%</color> of their max HP. The temporary HP is removed after combat. This effect can trigger up to <color=#F74848>4</color> times per turn, and is removed at the start of next action."
-    },
-    "4011041": {
-      "name": "Subtask - Attack",
-      "effect": "After this unit initiates combat, [Collin] uses cautter to perform a [Link Attack], dealing <color=#F74848>0.75x</color> DMG. This effect can trigger up to <color=#F74848>4</color> times per turn, and is removed at the start of next action."
-    },
-    "4011061": {
-      "name": "Clean Up",
-      "effect": "At the end of action or after being destroyed, [Collin] uses cutter to attack all enemies within <color=#F74848>3</color> tiles of this target, dealing <color=#F74848>0.8x</color> AoE DMG."
-    },
-    "6011014": {
-      "name": "Provocation",
-      "effect": "If [Zoey] is within <color=#F74848>6</color> adjacent tiles, skills and attacks can only select [Zoey] as target. Hit rate is reduced by <color=#F74848>15%</color> when attacking [Zoey]. This effect has lower priority than <buf ID=1012081>[Oath]</buf>."
-    },
-    "6011042": {
-      "name": "Advantage",
-      "effect": "Increases Dodge Rate by <color=#F74848>10%</color> per stack, up to <color=#F74848>3</color> stacks. <color=#F74848>1</color> stack is removed upon being attacked."
-    },
-    "1018041": {
-      "name": "Good Chance!",
-      "effect": "The next active attack DMG increases by <color=#F74848>5%</color> for every <color=#F74848>1</color> AP consumed, up to <color=#F74848>40%</color>. This effect is removed after attacking."
-    },
-    "1018463": {
-      "name": "Hope",
-      "effect": "Final DMG increases by <color=#F74848>5%</color>, stacking up to <color=#F74848>3</color> times. This effect is removed at the end of the team turn."
-    },
-    "2019506": {
-      "name": "Tiger Might",
-      "effect": "Critical Hit chance and Dodge Rate increase by <color=#F74848>3%</color> per stack."
-    },
-    "2019443": {
-      "name": "Tiger King Resilience",
-      "effect": "Next attack AP cost is reduced by <color=#F74848>-2</color>, to a minimum of <color=#F74848>1</color> AP. DMG taken from [Retaliation] reduces by 30%. This effect is removed after actively attacking."
-    },
-    "5009418": {
-      "name": "Resonance Pulse",
-      "effect": "After being actively attacked or repaired by Martini, the part with lowest HP receives <color=#F74848>0.3x</color> Martini's Manipulator Repair AMT as [Fixed DMG]. This effect is removed after triggering."
-    },
-    "900150": {
-      "name": "Twin-Gun Basic Attack",
-      "effect": "Use two machine guns to launch a normal attack on the target."
-    },
-    "900069": {
-      "name": "Twin-Gun Link Attack",
-      "effect": "After an ally launches an attack, use two machine guns to launch a [Link Attack] on the target they attacked."
-    },
-    "900153": {
-      "name": "Weapon Skill",
-      "effect": "Active combat skills other than [Normal Attack]."
-    },
-    "2020468": {
-      "name": "Overheating",
-      "effect": "Cannot use any active combat and command skills other than [Normal Attack]. [Overcharged Bullet] will not be gained nor consumed for <color=#F74848>1</color> turn. After exiting [Overheating] state, all [Overcharged Bullet] stacks will be removed."
-    },
-    "2020505": {
-      "name": "Overcharged Bullet",
-      "effect": "For each <color=#F74848>40</color> stacks, increases Machine Gun <buf ID=900011>[Ideal Range]</buf> by <color=#F74848>+1</color>, stacking up to <color=#F74848>3</color> times. When activating <buf ID=900153>[Weapon Skill]</buf> with Machine Gun, for each <color=#F74848>40</color> stacks, increases Machine Gun bullet count by <color=#F74848>+1</color>, DMG dealt and Critical Hit chance by <color=#F74848>10%</color>, stacking up to <color=#F74848>3</color> times. <color=#F74848>20</color> stacks are removed for each <color=#F74848>1</color> AP consumed after combat. Upon reaching <color=#F74848>200</color> stacks, enters <buf ID=2020468>[Overheating]</buf> state."
-    },
-    "2020082": {
-      "name": "Focus Fire",
-      "effect": "[Link Attack] DMG increases by <color=#F74848>50%</color>. This effect is removed at the start of next action."
-    },
-    "206242": {
-      "name": "Sentry Mod",
-      "effect": "Before performing <buf ID=900002>[Link Attack]</buf>, DMG dealt increases by <color=#F74848>5%</color> and Critical Hit chance increases by <color=#F74848>2%</color>, stacking up to <color=#F74848>5</color> times, lasting for <color=#F74848>2</color> turns."
-    },
-    "3013504": {
-      "name": "Personal Aide",
-      "effect": "When positioned within <color=#F74848>3</color> adjacent tiles of [Audrey], [Audrey]'s DMG dealt and Critical Hit chance increase by <color=#F74848>15%</color>. If [Audrey]'s attack triggers a <buf ID=900148>[Ricochet]</buf> and there are no valid enemy target, this unit will become the target for <buf ID=900148>[Ricochet]</buf> but will not receive DMG."
-    },
-    "900148": {
-      "name": "Ricochet",
-      "effect": "Selects the nearest target within <color=#F74848>3</color> adjacent tiles of the last target to attack, prioritizing hitting the same target as the first attack. This effect is halted if an attack misses. [Ricochet] is guaranteed to hit if the target is <buf ID=3013504>[Personal Aide]</buf>."
-    },
-    "900149": {
-      "name": "Leader Crest",
-      "effect": "Critical Hit chance increases by <color=#F74848>20%</color>, Critical Hit DMG increases by <color=#F74848>10%</color> and <buf ID=900148>[Ricochet]<buf> hit count increases by <color=#F74848>2</color>. This effect is removed at the end of turn."
-    },
-    "9001544": {
-      "name": "Convergence",
-      "effect": "Cannot gain another turn through any <buf ID=900151>[Reset]</buf> type effect. This effect is removed at the start of next action."
-    },
-    "900151": {
-      "name": "Reset",
-      "effect": "Allows units that have already finished their turn to act again."
-    },
-    "900152": {
-      "name": "Concealed Edge",
-      "effect": "Critical Hit chance and Critical Hit DMG are reduced by <color=#F74848>20%</color>."
-    },
-    "3013061": {
-      "name": "Loyalty",
-      "effect": "When [Audrey] is initiated combat against by assault or ranged weapons, if this unit is within <color=#F74848>3</color> adjacent tiles, activate <buf ID=900022>[Guard]</buf>. DMG taken is reduced by <color=#F74848>25%</color>. This effect is removed after triggering."
-    },
-    "900160": {
-      "name": "DMG Reduction",
-      "effect": "Includes DMG taken reduction, Final DMG taken reduction, and DMG taken reduction from shields."
-    },
-    "4010044": {
-      "name": "All-Out Assault Tactics",
-      "effect": "Final DMG <color=#F74848>+20%</color>. Removed at end of action."
-    },
-    "4010045": {
-      "name": "Full Assault",
-      "effect": "DMG <color=#F74848>+25%</color>. Removed at end of action."
-    },
-    "530572": {
-      "name": "Instability III",
-      "effect": "Hit Rate <color=#F74848>-4%</color>, Dodge Rate <color=#F74848>-4%</color>, and DMG <color=#F74848>-3%</color>. Stacks up to <color=#F74848>5</color> times."
-    },
-    "530622": {
-      "name": "Chainsaw Heating Up",
-      "effect": "Chainsaw Hits <color=#F74848>+1</color>. Stacks up to <color=#F74848>3</color> times. Loses <color=#F74848>1</color> stack after taking action."
-    },
-    "530391": {
-      "name": "Heating Up",
-      "effect": "Before attacking, if possessing <color=#F74848>15</color> stacks of [Heating Up], restores <color=#F74848>2</color> AP after combat, then removes all [Heating Up] stacks after triggering the corresponding effect."
-    },
-    "530742": {
-      "name": "Locked & Reloaded",
-      "effect": "When actively attacking with a Machine Gun, DMG <color=#F74848>+20%</color> and Bullets <color=#F74848>+1</color>. Removed after triggering."
-    },
-    "530786": {
-      "name": "Sync Miracle",
-      "effect": "When actively attacking, Crit Rate <color=#F74848>+40%</color>, and the first <color=#F74848>4</color> hits ignore the target's DMG Reduction effects. Removed after taking effect."
-    },
-    "7101303": {
-      "name": "Crit Rate Down II",
-      "effect": "Crit rate -15%."
-    },
-    "530872": {
-      "name": "Burning Intent",
-      "effect": "Each stack grants Crit Rate <color=#F74848>+2%</color> when attacking with a Missile Launcher."
-    },
-    "530962": {
-      "name": "Code DMG Reduction",
-      "effect": "Reduces DMG taken from the next code attack by <color=#F74848>30%</color>. Removed after taking effect."
-    },
-    "530965": {
-      "name": "No Time to Lose",
-      "effect": "When actively repairing with <color=#F74848>3</color> stacks, reduces the CD of <color=#F74848>1</color> repair skill by <color=#F74848>1</color> and gains <color=#F74848>1</color> AP, then removes all stacks. Can trigger <color=#F74848>1</color> time per turn."
-    },
-    "531032": {
-      "name": "Fire Control Delay",
-      "effect": "Each stack reduces Crit Rate and Crit DMG by <color=#F74848>3%</color>."
-    },
-    "5008941": {
-      "name": "You Forgoo-Goot Me!",
-      "effect": "When actively attacking targets other than <buf ID=1099900>[Goo Goo]</buf>, DMG dealt <color=#F74848>-25%</color>. Removed after taking effect."
-    },
-    "531145": {
-      "name": "Magnetic Buff",
-      "effect": "Each stack: Final DMG dealt <color=#F74848>+2%</color>, Final DMG taken <color=#F74848>-2%</color>."
-    },
-    "5009502": {
-      "name": "False Intentions",
-      "effect": "Each stack: DMG dealt and Repair AMT <color=#F74848>+1%</color>. For every <color=#F74848>5</color> stacks, Melee Attack multiplier <color=#F74848>+0.05</color>. While carrying <color=#F74848>10</color> or more stacks, AP Regen <color=#F74848>+1</color>."
-    },
-    "5009051": {
-      "name": "Eternal Bloom",
-      "effect": "Heavy Machine Gun DMG <color=#F74848>+25%</color> and Bullets <color=#F74848>+40%</color>. Removed at the start of turn."
-    },
-    "900199": {
-      "name": "Particle Energy",
-      "effect": "Gains <color=#F74848>1</color> stack at the start of each action and upon <buf ID=900155>[Activation]</buf>. Accumulating <color=#F74848>5</color> stacks allows the usage of <skill activeSkill=8001504>[Particle Burst]</skill>."
-    },
-    "900154": {
-      "name": "Pending Activation",
-      "effect": "Temporarily ends the action, can act again if conditions are met."
-    },
-    "900155": {
-      "name": "Activation",
-      "effect": "Gains an extra action without triggering any start or end of turn effect."
-    },
-    "900156": {
-      "name": "Form Shift",
-      "effect": "Changes to a next corresponding form.\n<b>Vanguard</b>: can only equip melee and ranged weapons. Movement increases by <color=#F74848>+1</color>. When actively attacking, DMG dealt and Critical Hit chance increase by <color=#F74848>15%</color>.\n<b>Assault</b>: can only equip assault weapons. Can perform <buf ID=900002>[Link Attack]</buf> up to <color=#F74848>2</color> times per turn. When actively attacking, assault bullet count <color=#F74848>+1</color>.\n<b>Tactical</b>: can only equip tactical weapon. Active attack does not consume tactical ammo. Can continue to move with remaining movement after attacking. When actively attacking, DMG dealt increases by <color=#F74848>5%</color> for each <color=#F74848>1</color> AP spent, up to <color=#F74848>25%</color>."
-    },
-    "900157": {
-      "name": "Form Buff",
-      "effect": "<b>Vanguard</b>: When initiating combat with melee or ranged weapons, Hit Rate is increased by <color=#F74848>15%</color> and <buf ID=900010>[Gutsy Strike]</buf> can be triggered, dealing <color=#F74848>0.3x</color> DMG.\n<b>Assault</b>: When actively attacking with assault weapons, Critical Hit chance is increased by <color=#F74848>15%</color>. After combat, deals <buf ID=900017>[Fixed DMG]</buf> equal to <color=#F74848>0.4x</color> weapon attack to all parts of the target.\n<b>Tactical</b>: When actively attacking with tactical weapons, DMG dealt is increased by <color=#F74848>15%</color>. After combat, applies <buf ID=7101803>[DMG Taken UP II]</buf> to targets for <color=#F74848>2</color> turns.\nAll effects are removed upon triggering."
-    },
-    "500923": {
-      "name": "Renovate II",
-      "effect": "Repair AMT <color=#F74848>+20%</color>."
-    },
-    "5009234": {
-      "name": "Vengeful Edge",
-      "effect": "When [Maat] uses [Splitter], [Severance] or [Thorn Annihilation], each stack increases hit count by <color=#F74848>1</color>."
-    },
-    "1019509": {
-      "name": "Hook Charge",
-      "effect": "Each use of [Hook] skills consumes <color=#F74848>1</color> charge. Can store up to <color=#F74848>3</color> charges."
-    },
-    "1019500": {
-      "name": "Hook",
-      "effect": "Collective term for <skill activeSkill=1019501>[Hook - Grab]</skill> and <skill activeSkill=1019511>[Hook - Chase]</skill>."
-    },
-    "4012502": {
-      "name": "Structural Damage",
-      "effect": "When [Hardaway] actively attacks this unit with Rocket Launchers, Critical Hit chance increases by <color=#F74848>3%</color> for each <color=#F74848>1</color> stack, stacking up to <color=#F74848>10</color> times. If a critical hit occurs, causes this target to receive <buf ID=900017>[Fixed DMG]</buf> equal to <color=#F74848>0.05x</color> Rocket Launcher ATK for <color=#F74848>3</color> times after combat. The <buf ID=900017>[Fixed DMG]</buf> effect does not stack. This effect lasts for <color=#F74848>2</color> turns and can stack up to <color=#F74848>10</color> times."
-    },
-    "5010502": {
-      "name": "Stratagem",
-      "effect": "[Tang] can consume these stacks to activate personal skills. This effect stacks up to <color=#F74848>5</color> times."
-    },
-    "50105021": {
-      "name": "Rejuvenation",
-      "effect": "After combat, if any part is destroyed, repairs <color=#F74848>1</color> destroyed part and restores HP to all parts equal to <color=#F74848>20%</color> max HP. This effect is removed after triggering."
-    },
-    "5010468": {
-      "name": "Stratagem Infusion",
-      "effect": "Consumes <color=#F74848>1</color> additional stack of <buf ID=5010502>[Stratagem]</buf> to enhance this skill's effect."
-    },
-    "50105023": {
-      "name": "Ambition",
-      "effect": "When actively attacking, AP consumption increases by <color=#F74848>+1</color>, skill multiplier increases by <color=#F74848>+0.1</color> (this effect is reduced to <color=#F74848>1/4</color> for Rocket Launchers) and DMG dealt increases by <color=#F74848>20%</color>. This effect is removed after triggering."
-    },
-    "50105024": {
-      "name": "Ambition II",
-      "effect": "When actively attacking, AP consumption increases by <color=#F74848>+2</color>, skill multiplier increases by <color=#F74848>+0.2</color> (this effect is reduced to <color=#F74848>1/4</color> for Rocket Launchers) and DMG dealt increases by <color=#F74848>30%</color>. This effect is removed after triggering."
-    },
-    "50105025": {
-      "name": "Indulgence",
-      "effect": "Final DMG dealt reduces by <color=#F74848>-15%</color>, lasting for <color=#F74848>1</color> turn."
-    },
-    "50105026": {
-      "name": "Indulgence II",
-      "effect": "Final DMG dealt reduces by <color=#F74848>-25%</color>, lasting for <color=#F74848>1</color> turn."
-    },
-    "5010506": {
-      "name": "Shrewdness",
-      "effect": "For each <color=#F74848>1</color> stack, increases Flamethrower ATK and Repair AMT by <color=#F74848>2%</color>, stacking up to <color=#F74848>15</color> times."
-    },
-    "5010061": {
-      "name": "Firewalk",
-      "effect": "Final DMG taken reduces by <color=#F74848>50%</color>. After actively attacking, if this unit is on friendly <terrian ID=4003081 />, consumes the terrain effect and triggers <buf ID=900004>[Re-ATK]</buf>, allowing movement of <color=#F74848>2</color> tiles before attacking. This effect is removed at the end of turn."
-    },
-    "900166": {
-      "name": "Feral Spirit",
-      "effect": "Can be consumed for [Giselle]'s special skills to deal <buf ID=900017>[Fixed DMG]</buf> equal to the consumed stacks."
-    },
-    "900167": {
-      "name": "Crusher",
-      "effect": "After actively attacking with Polearm, if the hit part's HP is below a certain percentage, triggers <buf ID=900109>[Execution]</buf> after combat to immediately destroy that part."
-    },
-    "3014505": {
-      "name": "Arch-Enemy",
-      "effect": "Attacks from [Bertha] cannot be blocked by <buf ID=900024>[Selfless Guard]</buf> or <buf ID=900022>[Guard]</buf>. Dodge Rate is reduced by <color=#F74848>20%</color>."
-    },
-    "3014508": {
-      "name": "Determination",
-      "effect": "DMG dealt increases by <color=#F74848>5%</color> when using <buf ID=900153>[Weapon Skill]</buf>, stacking up to <color=#F74848>5</color> times. This effect is removed upon triggering."
-    },
-    "3014053": {
-      "name": "Duelist Soul",
-      "effect": "<buf ID=3014508>[Determination]</buf> max stacks increases by <color=#F74848>1</color>. Always retains at least <color=#F74848>1</color> stack of <buf ID=3014508>[Determination]</buf> after combat. This effect can stack up to <color=#F74848>2</color> times."
-    },
-    "3014464": {
-      "name": "Global Repair Reduction",
-      "effect": "Repair AMT Received reduces by <color=#F74848>25%</color>."
-    },
-    "182900": {
-      "name": "Suppression",
-      "effect": "Armor reduced by <color=#F74848>4%</color>, chance of receiving a critical hit increased by <color=#F74848>2%</color>, stacking up to <color=#F74848>5</color> times, lasting for <color=#F74848>2</color> turns."
-    },
-    "182903": {
-      "name": "Phantom",
-      "effect": "Ignores unit obstruction when moving."
-    }
+ "buf": {
+  "900001": {
+   "name": "Flurry Strike",
+   "effect": "After enemy retaliation in combat, launch an additional attack."
   },
-  "skill": {
-    "20342": {
-      "name": "Shock Wave",
-      "Ap": "1",
-      "CD": "0",
-      "icon": "Icon_skill_order_1126",
-      "effect": "Knocks all targets in a 1x3-tile line back 2 tiles."
-    },
-    "20343": {
-      "name": "High Tide",
-      "Ap": "2",
-      "CD": "0",
-      "icon": "Icon_skill_order_1127",
-      "effect": "Knocks all targets in a cone ahead back 2 tiles."
-    },
-    "301144": {
-      "name": "Rapid Realignment",
-      "Ap": "0",
-      "CD": "1",
-      "effect": "Quickly moves to an empty tile within <color=#F74848>3</color> tiles and reselects rack direction without exiting [Directional Rack] Mode",
-      "icon": "Icon_skill_order_5004"
-    },
-    "301150": {
-      "name": "Directional Rack",
-      "Ap": "0",
-      "CD": "1",
-      "effect": "Enters [Directional Rack] Mode: Unable to move, Sniper Rifle's attack range becomes fixed-direction <color=#F5C542>fan-shaped 5-tile</color> area. Can continue attacking after using [Directional Rack]. Automatically exits [Directional Rack] Mode en an Arm is destroyed. <color=#F5C542>[Retract]</color> is available in [Directional Rack] Mode. After retracting, can continue moving.",
-      "icon": "Icon_skill_order_5004"
-    },
-    "4010041": {
-      "name": "All-Out Assault Tactics",
-      "Ap": "2",
-      "CD": "2",
-      "icon": "Icon_skill_order_5141",
-      "effect": "Designates a single ally across the map to receive <buf ID=4010044>[All-Out Assault Tactics]</buf> until the end of action, while gaining <color=#F74848>2</color> stacks of <buf ID=4010500>[Intel]</buf>."
-    },
-    "4010042": {
-      "name": "Maneuverability Tactics",
-      "Ap": "3",
-      "CD": "2",
-      "icon": "Icon_skill_order_5142",
-      "effect": "Grants all allies <buf ID=7100901>[Movement UP]</buf>, lasting for <color=#F74848>1</color> turn, while gaining <color=#F74848>3</color> stacks of <buf ID=4010500>[Intel]</buf>."
-    },
-    "4010043": {
-      "name": "Total Offensive Tactics",
-      "Ap": "4",
-      "CD": "2",
-      "icon": "Icon_skill_order_5143",
-      "effect": "Grants other allies <buf ID=4010045>[Full Assault]</buf> until the end of action, while gaining <color=#F74848>4</color> stacks of <buf ID=4010500>[Intel]</buf>."
-    },
-    "500746": {
-      "name": "Position Recall",
-      "Ap": "0",
-      "CD": "0",
-      "icon": "Icon_skill_order_1020",
-      "effect": "Removes <buf ID=900108>[Hologram]</buf> and teleports the original unit to the <buf ID=900108>[Hologram]</buf>'s location."
-    },
-    "600850": {
-      "name": "Defense Field",
-      "Ap": "1",
-      "CD": "2",
-      "icon": "Icon_skill_order_5138",
-      "effect": "Applies a [Defense Field] to the designated tile and the surrounding 1-ring radius for 3 turns. Can continue action with remaining Movement."
-    },
-    "601050": {
-      "name": "Vengeful Strike",
-      "Ap": "1",
-      "CD": "0",
-      "icon": "Icon_skill_order_5146",
-      "effect": "Selects <color=#F74848>1</color> enemy target carrying <buf ID=6010502>[Magnetic Lock-On]</buf>, consumes all Railgun ammo to attack all enemies within the selected <range type=1>1-tile cross-shaped</range>, <range type=2>3x3 square</range> or <range type=2>2-tile diamond</range> area. The number of attacks is equal to the ammo consumed, priotizing unhit targets. Each attack deals <color=#F74848>0.6x</color> DMG to the target and all enemies within <color=#F74848>1</color> adjacent tile. All attacks will prioritize hitting body. Repeat attacks on the same target deal <color=#F74848>60%</color> reduced DMG. Removes <buf ID=6010502>[Magnetic Lock-On]</buf> after the skill ends."
-    },
-    "601051": {
-      "name": "Vengeful Strike β",
-      "Ap": "0",
-      "CD": "0",
-      "icon": "Icon_skill_order_5146",
-      "effect": "Uses Railgun to attack all enemies carrying <buf ID=6010502>[Magnetic Lock-On]</buf> in order from nearest to furthest. All attacks prioritize hitting body and priotize unhit targets. Each attack deals <color=#F74848>0.4x</color> DMG to the target and all enemies within <color=#F74848>1</color> adjacent tile. Repeat attacks on the same target deal <color=#F74848>60%</color> reduced DMG. This attack does not consume Railgun ammo and does not remove <buf ID=6010502>[Magnetic Lock-On]</buf>."
-    },
-    "6011501": {
-      "name": "Polearm Throw",
-      "Ap": "0",
-      "CD": "0",
-      "icon": "Icon_skill_passive_5185",
-      "effect": "Uses Polearm to attack a target within <color=#F74848>4</color> adjacent tiles, dealing <color=#F74848>0.6x</color> DMG to the target as well as all enemies along the path to the target. This skill is considered a [Retaliation]."
-    },
-    "301350": {
-      "name": "Marshall Edict",
-      "Ap": "0",
-      "CD": "0",
-      "icon": "Icon_skill_order_5151",
-      "effect": "Designates <color=#F74848>1</color> ally within <color=#F74848>4</color> adjacent tiles as <buf ID=3013504>[Personal Aide]</buf>, then continues to act with remaining movement. This skill can only be used once per battle."
-    },
-    "301304": {
-      "name": "Servitude",
-      "Ap": "2",
-      "CD": "4",
-      "icon": "Icon_skill_order_5152",
-      "effect": "Applies <buf ID=900151>[Reset]</buf> to [Audrey] who has finished her action, allowing [Audrey] to act again and gain <color=#F74848>2</color> AP. Grants <buf ID=900149>[Leader Crest]</buf> and <buf ID=9001544>[Convergence]</buf> to [Audrey] as well as <buf ID=900152>[Concealed Edge]</buf> to self, lasting for 1 turn."
-    },
-    "500894": {
-      "name": "It's a Goo-Good Day to Die!",
-      "Ap": "4",
-      "icon": "Icon_skill_order_1125",
-      "effect": "Uses a Machine Gun to attack all targets within a <range type=2>3x3 tile area</range> in front, dealing <color=#F74848>0.6x</color> AoE DMG, and inflicts <buf ID=5008941>[You Forgoo-Goot Me!]</buf> on targets hit."
-    },
-    "8001504": {
-      "name": "Particle Burst",
-      "Ap": "0",
-      "CD": "0",
-      "icon": "Icon_skill_order_5155",
-      "effect": "Consumes all <buf ID=900199>[Particle Energy]</buf> and switches to <skill passiveSkill=800159>[Virtual Particle Form]</skill>. Gains all <buf ID=900157>[Form Buff]</buf> and deals <buf ID=900017>[Fixed DMG]</buf> equal to <color=#F74848>15%</color> of [Hailis]'s ST Body max HP to all enemies within <color=#F74848>2</color> adjacent tiles. Returns to current form after <color=#F74848>2</color> actions. This skill does not consume AP."
-    },
-    "800159": {
-      "name": "Virtual Particle Form",
-      "effect": "The restricted state of particle form. Accumulating <color=#F74848>5</color> stacks of <buf ID=900199>[Particle Energy]</buf> allows the usage of <skill activeSkill=8001504>[Particle Burst]</skill> to remove this restriction. Cannot change weapon or skills in this form. Can only use <skill activeSkill=7300431 noDisplay>[Particle Blade]</skill>, <skill activeSkill=7300441 noDisplay>[Particle Cannon]</skill> and <skill activeSkill=7300451 noDisplay>[Particle Matrix]</skill>. Returns to current form after <color=#F74848>2</color> actions. Cannot be targeted by <buf ID=900023>[Quick Draw]</buf>, <buf ID=900013>[Vigilant Shot]</buf>, <buf ID=900006>[Reaction Attack]</buf> and <buf ID=900136>[Insight]</buf>."
-    },
-    "7300431": {
-      "name": "Particle Blade",
-      "Ap": "3",
-      "CD": "0",
-      "icon": "Icon_skill_main_1162",
-      "effect": "Uses condensed star virtual particle to attack a target, dealing <color=#F74848>1.4x</color> DMG. This attack always hits the body."
-    },
-    "7300441": {
-      "name": "Particle Cannon",
-      "Ap": "4",
-      "CD": "0",
-      "icon": "Icon_skill_main_1027",
-      "effect": "Uses condensed meteorite virtual particle to attack a target, dealing <color=#F74848>0.8x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking. This attack ignores target's Armor and prioritize hitting the same part."
-    },
-    "7300451": {
-      "name": "Particle Matrix",
-      "Ap": "4",
-      "CD": "0",
-      "icon": "Icon_skill_order_1013",
-      "effect": "Uses condensed cosmic virtual particle to attack all targets within <color=#F74848>4</color>-tile fan-shaped area in front, dealing <color=#F74848>1.1x</color> AoE DMG. After combat, if the part hit is at <color=#F74848>15%</color> HP or less, that part is instantly destroyed."
-    },
-    "7300432": {
-      "name": "Particle Blade EX",
-      "Ap": "3",
-      "CD": "0",
-      "icon": "Icon_skill_main_1162",
-      "effect": "Uses condensed star virtual particle to attack a target, dealing <color=#F74848>1.8x</color> DMG. This attack always hits the body and ignores target's DMG Reduction effect."
-    },
-    "7300442": {
-      "name": "Particle Cannon EX",
-      "Ap": "4",
-      "CD": "0",
-      "icon": "Icon_skill_main_1027",
-      "effect": "Uses condensed meteorite virtual particle to attack a target, dealing <color=#F74848>1.1x</color> DMG. If the target's HP is at <color=#F74848>60%</color> or more, this skill multiplier increases by <color=#F74848>10%</color>, up to <color=#F74848>40%</color>. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking. This attack ignores target's Armor and prioritize hitting the same part."
-    },
-    "7300452": {
-      "name": "Particle Matrix EX",
-      "Ap": "5",
-      "CD": "0",
-      "icon": "Icon_skill_order_1013",
-      "effect": "Uses condensed cosmic virtual particle to attack all targets within <color=#F74848>4</color>-tile fan-shaped area in front, dealing <color=#F74848>1.4x</color> AoE DMG. After combat, if the part hit is at <color=#F74848>15%</color> HP or less, that part is instantly destroyed. For each <color=#F74848>1</color> part destroyed, gains <color=#F74848>1</color> AP, up to <color=#F74848>3</color> AP."
-    },
-    "7300461": {
-      "name": "World Chaser",
-      "Ap": "5",
-      "CD": "0",
-      "icon": "Icon_skill_main_1172",
-      "effect": "Unleashes a chain attack using all Particle Weapons in order. Cosmic virtual particle deals <color=#F74848>1.2x</color> DMG to the target. Meteorite virtual particle deals <color=#F74848>1x</color> DMG to the target's part with highest HP. Star virtual particle deals <color=#F74848>1.2x</color> DMG to the target body. After combat, deploys <terrian ID=6008502 /> on the area within <color=#F74848>1</color>-ring of self, lasting for <color=#F74848>2</color> turns."
-    },
-    "730015": {
-      "name": "Rising Dragon",
-      "Ap": "3",
-      "CD": "0",
-      "icon": "Icon_skill_main_1113",
-      "effect": "Uses a Knuckle or Pilebunker to attack a target, dealing <color=#F74848>1.4x</color> DMG. This attack always hits the body part."
-    },
-    "7300162": {
-      "name": "Mountain Splitter",
-      "Ap": "4",
-      "CD": "0",
-      "icon": "Icon_skill_main_1106",
-      "effect": "Uses two Melee Weapons to attack a target, dealing <color=#F74848>0.9x</color> DMG <color=#F74848>2</color> times. The <color=#F74848>1st</color> attack hits the part with the highest HP. If this part is not destroyed, the <color=#F74848>2nd</color> attack will hit the same part."
-    },
-    "7300171": {
-      "name": "Shadow Rush",
-      "Ap": "3",
-      "CD": "0",
-      "icon": "Icon_skill_order_1103",
-      "effect": "Uses Polearm to <range type=1>thrust 4 tiles forward</range>, dealing <color=#F74848>1.4x</color> DMG to the <color=#F74848>1st</color> target hit. Inflicts <buf ID=7101505>[Crash]</buf> on the target, lasting <color=#F74848>1</color> turn."
-    },
-    "7300181": {
-      "name": "Sky Piercer",
-      "Ap": "4",
-      "CD": "0",
-      "icon": "Icon_skill_order_9902",
-      "effect": "Throws a Polearm at all targets within a <range type=1>4-tile line</range> (including flying targets), dealing <color=#F74848>1.3x</color> AoE DMG. Can enter <buf ID=900014>[Aiming]</buf> Mode before combat."
-    },
-    "7300191": {
-      "name": "Double-Edged Saw",
-      "Ap": "3",
-      "CD": "0",
-      "icon": "Icon_skill_main_1157",
-      "effect": "Uses a Chainsaw to attack a target, dealing <color=#F74848>1.35x</color> DMG. This attack always hits the body part.\nBefore combat, reduces own HP by <color=#F74848>20%</color> of max HP from all parts, then deals <color=#F74848>20%</color> of target max HP as <buf ID=900017>[Fixed DMG]</buf>. The HP reduction as well as the <buf ID=900017>[Fixed DMG]</buf> cannot destroy any part."
-    },
-    "7300201": {
-      "name": "Critical Strike",
-      "Ap": "4",
-      "CD": "0",
-      "icon": "Icon_skill_main_1157",
-      "effect": "Uses a Chainsaw to attack a target, dealing <color=#F74848>1.8x</color> DMG. This attack always hits the part with lowest HP."
-    },
-    "7300211": {
-      "name": "Starfall Flash",
-      "Ap": "3",
-      "CD": "0",
-      "icon": "Icon_skill_main_1162",
-      "effect": "Selects <color=#F74848>1</color> target (including flying target) within <color=#F74848>4</color> adjacent tiles and strikes with Alter-Blade, dealing <color=#F74848>1.3x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking. After attacking, this unit will be positioned on a random unoccupied tile within <color=#F74848>1</color> ring around the target."
-    },
-    "7300221": {
-      "name": "Rotating Slash",
-      "Ap": "4",
-      "CD": "0",
-      "icon": "Icon_skill_order_1131",
-      "effect": "Uses two Alter-Blades to attack in a designated direction, dealing <color=#F74848>1.5x</color> DMG to the target. Prioritizes attacking parts with less than full HP. If there are adjacent enemies in that direction, can continue to attack adjacent units (attacking up to <color=#F74848>4</color> enemy units), then stops on the opposite side of the farthest target."
-    },
-    "7300231": {
-      "name": "Quick Snipe",
-      "Ap": "3",
-      "CD": "0",
-      "icon": "Icon_skill_main_1117",
-      "effect": "Uses a Sniper Rifle to shoot a target <color=#F74848>2</color> times, with each shot dealing <color=#F74848>0.9x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking."
-    },
-    "7300241": {
-      "name": "Penetrating Shot",
-      "Ap": "4",
-      "CD": "0",
-      "icon": "Icon_skill_order_1133",
-      "effect": "Uses a Sniper Rifle to attack the target and all enemy units along the path within range, dealing <color=#F74848>1.1x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking. If any part is destroyed, the same attack is launched again with <color=#F74848>50%</color> reduced multiplier. This effect can be repeated <color=#F74848>1</color> time."
-    },
-    "7300251": {
-      "name": "Chain Shot",
-      "Ap": "3",
-      "CD": "0",
-      "icon": "Icon_skill_main_1117",
-      "effect": "Uses a Light Rifle to shoot a target <color=#F74848>2</color> times, with each shot dealing <color=#F74848>0.9x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking."
-    },
-    "7300261": {
-      "name": "Marking Shot",
-      "Ap": "4",
-      "CD": "0",
-      "icon": "Icon_skill_main_1128",
-      "effect": "Uses Light Rifle to attack a target, dealing <color=#F74848>1.5x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking. Applies <buf ID=900049>[Exposure II]</buf> to the part hit after combat, lasting for <color=#F74848>2</color> turns."
-    },
-    "7300271": {
-      "name": "Cluster Shot",
-      "Ap": "3",
-      "CD": "0",
-      "icon": "Icon_skill_main_1121",
-      "effect": "Uses Machine Gun to attack a target, dealing <color=#F74848>1.5x</color> DMG. Hit Weighting against the part with lowest HP increases by <color=#F74848>+50</color>."
-    },
-    "7300281": {
-      "name": "Chain Finisher",
-      "Ap": "4",
-      "CD": "0",
-      "icon": "Icon_skill_main_1129",
-      "effect": "Uses two Machine Guns to attack a target, dealing <color=#F74848>2x0.8</color> DMG. For each <color=#F74848>10%</color> HP missing from the target, increases Critical Hit chance by <color=#F74848>5%</color>, up to <color=#F74848>30%</color>."
-    },
-    "7300291": {
-      "name": "Dual Barrage",
-      "Ap": "3",
-      "CD": "1",
-      "icon": "Icon_skill_order_1107",
-      "effect": "Simultaneously uses two Shotguns to attack all targets within a <range type=1>3x2-tile area ahead</range>, dealing <color=#F74848>0.6x</color> AoE DMG <color=#F74848>2</color> times."
-    },
-    "7300301": {
-      "name": "Desperate Shot",
-      "Ap": "4",
-      "CD": "0",
-      "icon": "Icon_skill_main_1141",
-      "effect": "Uses a Shotgun to attack a target, dealing <color=#F74848>1.6x</color> DMG. This attack cannot be dodged."
-    },
-    "7300311": {
-      "name": "Burning Spirit",
-      "Ap": "3",
-      "CD": "0",
-      "icon": "Icon_skill_main_1151",
-      "effect": "Uses a Flamethrower to attack the main target, dealing <color=#F74848>1.4x</color> DMG and dealing <color=#F74848>20%</color> <buf ID=900065>[Flame DMG]</buf> to other targets in the path. If the main target is on allied <terrian ID=4003081 />, the terrain effect triggers once after combat."
-    },
-    "7300321": {
-      "name": "Crimson Invasion",
-      "Ap": "4",
-      "CD": "0",
-      "icon": "Icon_skill_main_1166",
-      "effect": "Uses both Flamethrowers to attack a target, dealing <color=#F74848>2×0.8</color> DMG. If the target is on allied <terrian ID=4003081 />, the skill multiplier increases by <color=#F74848>+0.1</color>."
-    },
-    "7300331": {
-      "name": "Bullet Storm",
-      "Ap": "3",
-      "CD": "0",
-      "icon": "Icon_skill_order_1010",
-      "effect": "Uses Heavy Machine Gun to attack all targets within range, dealing <color=#F74848>0.5x</color> AoE DMG. DMG dealt increases by <color=#F74848>20%</color> against parts with <color=#F74848>50%</color> or more HP remaining."
-    },
-    "7300341": {
-      "name": "Iron Curtain",
-      "Ap": "4",
-      "CD": "0",
-      "icon": "Icon_skill_main_4105",
-      "effect": "Uses Heavy Machine Gun to attack a target, dealing <color=#F74848>1.5x</color> DMG. Inflicts <buf ID=2004081>[Retaliation Disabled]</buf> on target before combat."
-    },
-    "7300351": {
-      "name": "Concentrated Strike",
-      "Ap": "3",
-      "CD": "0",
-      "icon": "Icon_skill_order_1114",
-      "effect": "Uses two Missile Launchers to attack a target, dealing <color=#F74848>2x0.8</color> DMG. Both missiles will hit the same part, and cause <color=#F74848>50%</color> Splash DMG to parts other than the part hit."
-    },
-    "7300361": {
-      "name": "Bombardment Command",
-      "Ap": "4",
-      "CD": "0",
-      "icon": "Icon_skill_order_1129",
-      "effect": "Uses Missile Launcher to attack a target, dealing <color=#F74848>1.4x</color> DMG to the part hit and <color=#F74848>50%</color> Splash DMG to other parts. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking. Enables all allies to launch <buf ID=900002>[Link Attacks]</buf> against it. These <buf ID=900002>[Link Attacks]</buf> do not require allies to possess a specific skill and do not consume any Link chances."
-    },
-    "7300371": {
-      "name": "Fiery Rain",
-      "Ap": "3",
-      "CD": "0",
-      "icon": "Icon_skill_order_1121",
-      "effect": "Uses Rocket Launcher to attack all targets within the selected 3x3-tile area, dealing <color=#F74848>0.25x</color> AoE DMG to all parts. After combat, applies <terrian ID=4003081 /> to the tiles hit."
-    },
-    "7300381": {
-      "name": "Carpet Bombing",
-      "Ap": "4",
-      "CD": "0",
-      "icon": "Icon_skill_order_1135",
-      "effect": "Uses two Rocket Launcher to attack all targets within the selected 5x5-tile area, dealing <color=#F74848>2x0.15x</color> AoE DMG to all parts. After combat, grants <color=#F74848>1</color> random buff to all allies, lasting for <color=#F74848>2</color> turns."
-    },
-    "7300391": {
-      "name": "Ray Of Light",
-      "Ap": "3",
-      "CD": "0",
-      "icon": "Icon_skill_order_1111",
-      "effect": "Uses a Rail Gun to attack the same part of all targets within a <range type=1>1x5-tile line</range> or a 4-tile diagonal area and deals <color=#F74848>0.9x</color> AoE DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking."
-    },
-    "7300401": {
-      "name": "Piercing Thorn",
-      "Ap": "4",
-      "CD": "0",
-      "icon": "Icon_skill_order_5115",
-      "effect": "Uses a Rail Gun to attack all targets within a <range type=1>3x5-tile area</range>, dealing <color=#F74848>0.95x</color> AoE DMG. This attack always hits the body part."
-    },
-    "7300411": {
-      "name": "Meteor Shower",
-      "Ap": "3",
-      "CD": "0",
-      "icon": "Icon_skill_order_1012",
-      "effect": "Uses Cutter to attack up to <color=#F74848>4</color> targets within attack range, dealing <color=#F74848>1.2x</color> AoE DMG. Can select same target repeatedly. Repeated attack on the same target deals <color=#F74848>40%</color> increased DMG."
-    },
-    "7300421": {
-      "name": "Total Assault",
-      "Ap": "4",
-      "CD": "0",
-      "icon": "Icon_skill_order_1132",
-      "effect": "Uses a Cutter to attack all targets within <color=#F74848>4</color> tiles, dealing <color=#F74848>1.3x</color> AoE DMG. If a target is destroyed after combat, grants all allies <buf ID=7100305>[DMG UP III]</buf>, lasting for <color=#F74848>1</color> turn."
-    },
-    "730016": {
-      "name": "Weakness Strike",
-      "Ap": "2",
-      "CD": "0",
-      "icon": "Icon_skill_main_1102",
-      "effect": "Uses a Knuckle or Pilebunker to attack a target, dealing <color=#F74848>1.35x</color> DMG. This attack always hits the part with lowest HP."
-    },
-    "7300172": {
-      "name": "Spear Strike",
-      "Ap": "2",
-      "CD": "0",
-      "icon": "Icon_skill_main_1110",
-      "effect": "Uses a Polearm to attack a target, dealing <color=#F74848>1.35x</color> DMG. This attack always hits the part with lowest HP."
-    },
-    "7300192": {
-      "name": "Saw Strike",
-      "Ap": "2",
-      "CD": "0",
-      "icon": "Icon_skill_main_1155",
-      "effect": "Uses a Chainsaw to attack a target, dealing <color=#F74848>1.35x</color> DMG. This attack always hits the part with lowest HP."
-    },
-    "7300212": {
-      "name": "Blade Strike",
-      "Ap": "2",
-      "CD": "0",
-      "icon": "Icon_skill_main_1159",
-      "effect": "Uses an Alter-Blade to attack a target, dealing <color=#F74848>1.35x</color> DMG. This attack always hits the part with lowest HP."
-    },
-    "7300232": {
-      "name": "Snipe",
-      "Ap": "2",
-      "CD": "0",
-      "icon": "Icon_skill_main_1144",
-      "effect": "Uses a Sniper Rifle to attack a target, dealing <color=#F74848>1.3x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking."
-    },
-    "7300252": {
-      "name": "Lock-On",
-      "Ap": "2",
-      "CD": "0",
-      "icon": "Icon_skill_main_1016",
-      "effect": "Uses a Light Rifle to attack a target, dealing <color=#F74848>1.3x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking."
-    },
-    "7300272": {
-      "name": "Concentrated Fire",
-      "Ap": "3",
-      "CD": "0",
-      "icon": "Icon_skill_main_1125",
-      "effect": "Uses Machine Gun to attack a target, dealing <color=#F74848>1.3x</color> DMG. Before combat, grants <buf ID=7100105>[Hit Rate UP III]</buf> to self, lasting for <color=#F74848>1</color> turn."
-    },
-    "7300292": {
-      "name": "Turbo Shot",
-      "Ap": "3",
-      "CD": "0",
-      "icon": "Icon_skill_main_1105",
-      "effect": "Uses Shotgun to attack a target, dealing <color=#F74848>1.3x</color> DMG. DMG dealt increases by <color=#F74848>15%</color> against part with <color=#F74848>50%</color> HP or less."
-    },
-    "7300312": {
-      "name": "Flame Strike",
-      "Ap": "3",
-      "CD": "0",
-      "icon": "Icon_skill_main_1150",
-      "effect": "Uses Flamethrower to attack a target, dealing <color=#F74848>1.3x</color> DMG and dealing <color=#F74848>20%</color> <buf ID=900065>[Flame DMG]</buf> to other targets in the path. Applies <terrian ID=4003081 /> to all tiles along the attack path, lasting for <color=#F74848>2</color> turns."
-    },
-    "7300332": {
-      "name": "Bullet Rain",
-      "Ap": "3",
-      "CD": "0",
-      "icon": "Icon_skill_main_2102",
-      "effect": "Uses Heavy Machine Gun to attack a target, dealing <color=#F74848>1.3x</color> DMG. Inflicts <buf ID=7101104>[Dodge Rate Down III]</buf> on the target hit, lasting for <color=#F74848>2</color> turns."
-    },
-    "7300352": {
-      "name": "Piercing Wind",
-      "Ap": "3",
-      "CD": "0",
-      "icon": "Icon_skill_order_1006",
-      "effect": "Uses Missile Launcher to attack a target, dealing <color=#F74848>2.2x</color> DMG to the part hit. This attack prioritizes attacking part without full HP."
-    },
-    "7300372": {
-      "name": "Sweeping Barrage",
-      "Ap": "4",
-      "CD": "0",
-      "icon": "Icon_skill_order_1008",
-      "effect": "Uses Rocket Launcher to attack all targets within the selected 3x3-tile area, dealing <color=#F74848>0.275x</color> AoE DMG to all parts. After combat, inflicts <buf ID=3006502>[Short Circuit I]</buf> to all targets hit."
-    },
-    "7300392": {
-      "name": "Magnetized Shot",
-      "Ap": "3",
-      "CD": "0",
-      "icon": "Icon_skill_order_1007",
-      "effect": "Uses a Rail Gun to attack the same part of all targets within a <range type=1>1x5-tile line</range>, dealing <color=#F74848>1x</color> AoE DMG. Inflicts <buf ID=7101506>[Movement Inhibition I]</buf> on the target hit, lasting for <color=#F74848>1</color> turn."
-    },
-    "7300412": {
-      "name": "Floating Cannon",
-      "Ap": "3",
-      "CD": "0",
-      "icon": "Icon_skill_order_1132",
-      "effect": "Uses Cutter to attack all targets within the selected <color=#F74848>2</color>-tile radius area, dealing <color=#F74848>1.25x</color> AoE DMG."
-    },
-    "1019512": {
-      "name": "Corrupting Shadow",
-      "Ap": "0",
-      "CD": "0",
-      "icon": "Icon_skill_order_1119",
-      "effect": "Uses Chainsaw to attack all targets within <color=#F74848>1</color> ring area, dealing <color=#F74848>0.25x</color> AoE DMG. Inflicts <buf ID=7101701>[Armor Down I]</buf> on targets hit, lasting for <color=#F74848>1</color> turn. Also inflicts <color=#F74848>1</color> stack of <buf ID=5009234>[Vengeful Edge]</buf> to all targets hit."
-    },
-    "1019501": {
-      "name": "Hook - Grab",
-      "Ap": "0",
-      "CD": "0",
-      "icon": "Icon_skill_order_1151",
-      "effect": "Grapples to an ally or enemy target with hook and drags them to [Maat]'s front tile, ignoring unit collision on the path. Then triggers <buf ID=900004>[Re-ATK]</buf>, allowing movement of <color=#F74848>2</color> tiles before attacking. This effect can only displace each unit <color=#F74848>1</color> time per turn."
-    },
-    "1019511": {
-      "name": "Hook - Chase",
-      "Ap": "0",
-      "CD": "0",
-      "icon": "Icon_skill_order_1150",
-      "effect": "Grapples to an ally or enemy target with hook and drags [Maat] to the target's side, ignoring unit collision on the path. Then triggers <buf ID=900004>[Re-ATK]</buf>, allowing movement of <color=#F74848>2</color> tiles before attacking."
-    },
-    "4012082": {
-      "name": "Final Barrage",
-      "Ap": "4",
-      "CD": "0",
-      "icon": "Icon_skill_order_1147",
-      "effect": "Attacks all targets within [Annihilation Zone] with both Rocket Launchers, dealing <color=#F74848>2x0.2</color> AoE DMG. For each <color=#F74848>1</color> stack of <buf ID=4012502>[Structural Damage]</buf> the target carries, Final DMG dealt increases by <color=#F74848>15%</color>. Removes all [Structural Damage] stacks on targets hit after combat. Switches to <skill activeSkill=401208>[Annihilation Beacon]</skill> after use. This skill cannot be used again after switching in current turn. If not used by the end of turn, removes [Annihilation Zone] and switchs back to <skill activeSkill=401208>[Annihilation Beacon]</skill>."
-    },
-    "4012041": {
-      "name": "Command Override",
-      "Ap": "0",
-      "CD": "0",
-      "icon": "Icon_skill_order_1140",
-      "effect": "If the target actively uses a Command Skill this turn, inflicts <buf ID=1099903>[Command Block]</buf> to the target, lasting for <color=#F74848>1</color> turn. Otherwise, inflicts <color=#F74848>2</color> stacks of <buf ID=4012502>[Structural Damage]</buf> to the target. This effect is removed after triggering."
-    },
-    "4012042": {
-      "name": "Weapon Override",
-      "Ap": "0",
-      "CD": "0",
-      "icon": "Icon_skill_order_1140",
-      "effect": "If the target actively uses a Weapon Skill this turn, inflicts <buf ID=1004021>[Weapon Inhibition]</buf> to the target, lasting for <color=#F74848>1</color> turn. Otherwise, inflicts <color=#F74848>2</color> stacks of <buf ID=4012502>[Structural Damage]</buf> to the target. This effect is removed after triggering."
-    },
-    "5010501": {
-      "name": "Stratagem - Respite",
-      "Ap": "0",
-      "CD": "0",
-      "icon": "Icon_skill_order_3118",
-      "effect": "Consumes <color=#F74848>1</color> stack of <buf ID=5010502>[Stratagem]</buf>. Selects <color=#F74848>1</color> ally within <color=#F74848>3</color> adjacent tiles, restores HP to all parts equal to <color=#F74848>20%</color> [Tang]'s body max HP. Can repair <color=#F74848>1</color> destroyed part, dispel <color=#F74848>1</color> debuff and apply <buf ID=50105021>[Rejuvenation]</buf> to the target. Applies the same repair effect to <color=#F74848>1</color> other ally with lowest HP percentage. Can activate <buf ID=5010468>[Stratagem Infusion]</buf> to increase Repair AMT to <color=#F74848>25%</color> and affect <color=#F74848>1</color> additional ally."
-    },
-    "5010502": {
-      "name": "Stratagem - Encouragement",
-      "Ap": "0",
-      "CD": "0",
-      "icon": "Icon_skill_order_1153",
-      "effect": "Consumes <color=#F74848>1</color> stack of <buf ID=5010502>[Stratagem]</buf>. Selects and grants <buf ID=50105023>[Ambition]</buf> to <color=#F74848>1</color> ally within <color=#F74848>3</color> adjacent tiles. Can activate <buf ID=5010468>[Stratagem Infusion]</buf> to upgrade <buf ID=50105023>[Ambition]</buf> to <buf ID=50105024>[Ambition II]</buf>."
-    },
-    "5010503": {
-      "name": "Stratagem - Bribery",
-      "Ap": "0",
-      "CD": "0",
-      "icon": "Icon_skill_order_5159",
-      "effect": "Consumes <color=#F74848>1</color> stack of <buf ID=5010502>[Stratagem]</buf>. Selects and applies <buf ID=50105025>[Indulgence]</buf> to <color=#F74848>1</color> enemy within <color=#F74848>4</color> adjacent tiles. Can activate <buf ID=5010468>[Stratagem Infusion]</buf> to upgrade <buf ID=50105025>[Indulgence]</buf> to <buf ID=50105026>[Indulgence II]</buf>."
-    },
-    "5010031": {
-      "name": "Stratagem - Investment",
-      "Ap": "0",
-      "CD": "0",
-      "icon": "Icon_skill_order_5156",
-      "effect": "All allies lose <color=#F74848>1</color> AP and gain <color=#F74848>2</color> AP at the start of next turn. Can activate <buf ID=5010468>[Stratagem Infusion]</buf> to avoid AP reduction in this turn. Can continue to act with remaining movement."
-    },
-    "5010032": {
-      "name": "Stratagem - Prepayment",
-      "Ap": "0",
-      "CD": "0",
-      "icon": "Icon_skill_order_5157",
-      "effect": "All allies gain <color=#F74848>1</color> AP and lose <color=#F74848>3</color> AP at the start of next turn. Can activate <buf ID=5010468>[Stratagem Infusion]</buf> to reduce AP loss to <color=#F74848>2</color> at the start of next turn. Can continue to act with remaining movement."
-    },
-    "301452": {
-      "name": "Deploy Sentry",
-      "Ap": "0",
-      "CD": "0",
-      "icon": "Icon_skill_order_5161",
-      "effect": "Redeploys <terrian ID=3014501 /> to a tile within <color=#F74848>4</color> adjacent tiles of [Bertha] or within <color=#F74848>3</color> adjacent tiles of the original <terrian ID=3014501 />, then triggers <buf ID=900004>[Re-ATK]</buf> in place. This skill can be used <color=#F74848>1</color> time per turn."
-    },
-    "301453": {
-      "name": "Sworn Enemy",
-      "Ap": "0",
-      "CD": "0",
-      "icon": "Icon_skill_order_5162",
-      "effect": "Desinates <color=#F74848>1</color> enemy within <color=#F74848>4</color> adjacent tiles of [Bertha] or within <terrian ID=3014501 /> as <buf ID=3014505>[Arch-Enemy]</buf>. Only <color=#F74848>1</color> <buf ID=3014505>[Arch-Enemy]</buf> can exist at a time. Can continue to act with remaining movement. This skill can be used <color=#F74848>1</color> time per turn."
-    },
-    "53104": {
-      "name": "Optimized Posture",
-      "effect": "When in combat, if equipped with a Machine Gun and a Small Shield, Machine Gun Final DMG <color=#F74848>+10%</color>, and Final DMG Taken <color=#F74848>-15%</color>."
-    },
-    "53103": {
-      "name": "Malfunction Implant",
-      "effect": "When attacking with a Machine Gun, inflicts <color=#F74848>1</color> stack of <buf ID=531032>[Fire Control Delay]</buf> on the target, up to <color=#F74848>5</color> stacks."
-    },
-    "182901": {
-      "name": "Boundless Hunt",
-      "Ap": "0",
-      "icon": "Icon_skill_order_1107",
-      "effect": "Uses a Shotgun to launch an Extra Strike, dealing <color=#F74848>0.25</color>x DMG to all targets within a <color=#F74848>2</color>-tile radius affected by <buf ID=182900>[Suppression]</buf>. This attack can also trigger the <buf ID=900004>[Re-ATK]</buf> effect of Mobile Warfare."
-    },
-    "182902": {
-      "name": "Flurry Strike",
-      "effect": "Uses the opposite arm to launch an additional attack, dealing bonus DMG. The multiplier is increased by the <skill ID=182560>[Gun Heart, Blade Soul]</skill> passive line."
-    }
+  "900002": {
+   "name": "Link Attack",
+   "effect": "An attack launched in coordination with an ally's attack."
   },
-  "terrain": {
-    "4003081": {
-      "name": "Burning Terrain",
-      "effect": "Deals [Fixed DMG] equal to 12% of Max HP to all parts of enemies that remain on this tile."
-    },
-    "3014501": {
-      "name": "Sentry Zone",
-      "effect": "[Bertha] can ignore range and directly attack enemy units within this area when using a Sniper Rifle. This terrain can exist together with other terrains."
-    },
-    "4011081": {
-      "name": "Restricted Area",
-      "effect": "[Collin] will use cutters to attack enemy stopping on this tile, dealing <color=#F74848>0.6x</color> damage. This terrain has high priority."
-    },
-    "6008501": {
-      "name": "Defense Field",
-      "effect": "Grants DMG Taken <color=#F74848>-15%</color> to allies that remain on this tile. This terrain effect has high priority."
-    },
-    "6008502": {
-      "name": "Particle Domain",
-      "effect": "Grants DMG Taken <color=#F74848>-15%</color> to allies that remain on this tile. This terrain effect has high priority."
-    }
+  "900003": {
+   "name": "Guts",
+   "effect": "When suffering lethal damage, survive with 1 HP."
+  },
+  "900004": {
+   "name": "Re-ATK",
+   "effect": "After the current attack ends, trigger one additional attack. Unable to move before the additional attack unless stated otherwise."
+  },
+  "900005": {
+   "name": "Re-Act",
+   "effect": "Can launch active attacks again. Before attacking, can move with full movement distance."
+  },
+  "900006": {
+   "name": "Reaction Attack",
+   "effect": "Launch a counter-attack in response to being attacked."
+  },
+  "900008": {
+   "name": "Pursuit",
+   "effect": "Automatically moves toward any enemy that attacks you."
+  },
+  "900009": {
+   "name": "Pursuit Retaliation",
+   "effect": "Retaliate against an attacker after triggering [Pursuit]."
+  },
+  "900010": {
+   "name": "Gusty Strike",
+   "effect": "Launch an additional attack before the enemy's retaliation."
+  },
+  "900011": {
+   "name": "Ideal Range",
+   "effect": "The optimal engagement distance for a ranged weapon. Grants bonus effects when the target is within this range."
+  },
+  "900013": {
+   "name": "Vigilant Shot",
+   "effect": "Before an incoming enemy attack within weapon range lands, trigger a pre-emptive ranged attack."
+  },
+  "900014": {
+   "name": "Aiming",
+   "effect": "Before attacking, designate a specific part of the target to focus all damage on that part."
+  },
+  "900016": {
+   "name": "Salvo",
+   "effect": "Fire multiple projectiles simultaneously at a target in a single action."
+  },
+  "900017": {
+   "name": "Fixed DMG",
+   "effect": "Ignores Armor and DMG Reduction to deal damage once."
+  },
+  "900018": {
+   "name": "Passive Repair",
+   "effect": "No manual casting required. Repairs an ally once."
+  },
+  "900019": {
+   "name": "Link Repair",
+   "effect": "When an ally performs repairs, cooperate to trigger an additional repair on the same target."
+  },
+  "900020": {
+   "name": "Assist Repair",
+   "effect": "After an ally's action, perform [Passive Repair] on that ally."
+  },
+  "900021": {
+   "name": "Pochy Repair",
+   "effect": "Restores HP equal to 2.0x Manipulator Repair AMT to all parts of a single ST. Can repair 1 destroyed part."
+  },
+  "900022": {
+   "name": "Guard",
+   "effect": "Protects allies within 2 adjacent tiles from Assault and Ranged attacks. Triggers up to 2 times per turn and lasts 2 turns. Additionally, gains [Defensive Stance I]. Can only trigger 1 time per turn."
+  },
+  "900023": {
+   "name": "Quick Draw",
+   "effect": "Launches a retaliation before enemy active attacks."
+  },
+  "900024": {
+   "name": "Selfless Guard",
+   "effect": "Intercept attacks targeting nearby allies without triggering a retaliation."
+  },
+  "900025": {
+   "name": "Rack",
+   "effect": "Stationary deployment. Unable to move but gain a Special Bonus."
+  },
+  "900026": {
+   "name": "Retract",
+   "effect": "Exit [Rack] Mode."
+  },
+  "900027": {
+   "name": "Target Shift",
+   "effect": "Ensures the enemy's attack hits the designated part."
+  },
+  "900028": {
+   "name": "Add Strike",
+   "effect": "After retaliation, trigger an additional retaliation."
+  },
+  "900029": {
+   "name": "Auto Load",
+   "effect": "When a tactical weapon's magazine is depleted, automatically begin reloading. Reload takes several turns to complete."
+  },
+  "900030": {
+   "name": "Cleave",
+   "effect": "Uses a Polearm to attack all targets within an I-shaped (3x1-tile) or L-shaped (3x1-tile) area ahead, dealing <color=#F74848>0.4x</color> AOE DMG"
+  },
+  "900031": {
+   "name": "Extra Strike",
+   "effect": "Deal one additional hit to the target on top of the current attack."
+  },
+  "900033": {
+   "name": "Stealth",
+   "effect": "Reduces targeting priority. Enemies will not actively select this unit as their primary target."
+  },
+  "900034": {
+   "name": "Instability",
+   "effect": "Hit Rate and Dodge Rate Down."
+  },
+  "900035": {
+   "name": "Timidity",
+   "effect": "AP Cost UP for Normal Attacks, Skills and Codes."
+  },
+  "900036": {
+   "name": "Mental Pressure Aura",
+   "effect": "An aura that inflicts psychological pressure on nearby enemies, reducing their combat performance."
+  },
+  "900038": {
+   "name": "Regular Repair",
+   "effect": "Perform a standard HP repair action on a unit or part."
+  },
+  "900042": {
+   "name": "Hit Down",
+   "effect": "Reduces the target's hit rate, making their attacks less accurate."
+  },
+  "900045": {
+   "name": "DMG Taken UP",
+   "effect": "DMG Taken <color=#F74848>+10%</color>"
+  },
+  "900046": {
+   "name": "Active Skill Disabled",
+   "effect": "Cannot use active skills for the duration of this effect."
+  },
+  "900049": {
+   "name": "Exposure II",
+   "effect": "Affected Part Hit Weighting +45."
+  },
+  "900050": {
+   "name": "Euphoria",
+   "effect": "When actively attacking, Crit Rate UP."
+  },
+  "900051": {
+   "name": "Improved Hit",
+   "effect": "Increases accuracy, making attacks more likely to connect."
+  },
+  "900052": {
+   "name": "Improved Attack",
+   "effect": "Increases attack damage output."
+  },
+  "900053": {
+   "name": "Short Circuit",
+   "effect": "At the end of the action, all body parts lose <color=#F74848>7%</color> of their maximum HP as [Fixed DMG]. This [Fixed DMG] cannot destroy parts."
+  },
+  "3006442": {
+   "name": "Short Circuit II",
+   "effect": "At the end of the action, all body parts lose <color=#F74848>7%</color> of their maximum HP as [Fixed DMG]. This [Fixed DMG] cannot destroy parts."
+  },
+  "900054": {
+   "name": "SP Ammo",
+   "effect": "Special ammunition loaded into a weapon, granting additional effects on hit."
+  },
+  "900055": {
+   "name": "Armor Care",
+   "effect": "Restores or maintains armor integrity, recovering armor value."
+  },
+  "900056": {
+   "name": "Attack Hindrance",
+   "effect": "Impedes the target's ability to attack effectively."
+  },
+  "900059": {
+   "name": "Sentinel Ward",
+   "effect": "After performing active repairs, apply an extra repair effect to the target."
+  },
+  "900060": {
+   "name": "Diagonal Shot",
+   "effect": "Enables a Rail Gun to execute Diagonal Attacks with a Range of -1."
+  },
+  "900061": {
+   "name": "Link Retaliation",
+   "effect": "After the enemy attacks other allies, launches a retaliation."
+  },
+  "900064": {
+   "name": "Peripheral Vision",
+   "effect": "Before the target retaliates, launches an attack on a random target within range. [Peripheral Vision] is unaffected by Ideal Range."
+  },
+  "900065": {
+   "name": "Flame DMG",
+   "effect": "Damage dealt is based on the multiplier percentage of the main skill."
+  },
+  "900071": {
+   "name": "Stay Lit!",
+   "effect": "When executing a single-target repair skill, restores additional AP to eligible targets."
+  },
+  "900078": {
+   "name": "Turns Left",
+   "effect": "Turns left cannot exceed the duration of the effect at the time of acquisition."
+  },
+  "900079": {
+   "name": "Displacement",
+   "effect": "Pulled, pushed back, or replaced."
+  },
+  "900080": {
+   "name": "Guard Disabled",
+   "effect": "Unable to perform [Guard] or [Selfless Guard]."
+  },
+  "900081": {
+   "name": "Ignore Guard",
+   "effect": "Cannot be the target of [Guard] or [Selfless Guard]."
+  },
+  "900085": {
+   "name": "Tokamak Sphere",
+   "effect": "Can choose a direction when deployed. Redirects Fia's Rail Gun/Flamethrower AoE attacks when they pass through it. Destroyed after redirection. Can be retrieved at end of action."
+  },
+  "900086": {
+   "name": "Redirection",
+   "effect": "Extends attack range toward the direction of the Tokamak Sphere, but Max Range -1."
+  },
+  "900088": {
+   "name": "Synchronization",
+   "effect": "Has a special [Sync Ratio] with the ST, which changes during battle. The higher the sync ratio, the stronger the pilot's ability."
+  },
+  "900089": {
+   "name": "Balance",
+   "effect": "Redistributes HP% evenly across all intact parts."
+  },
+  "900095": {
+   "name": "Dual Gun Retaliation",
+   "effect": "After the enemy attacks this unit, uses two Machine Guns to retaliate."
+  },
+  "900096": {
+   "name": "Retaliation",
+   "effect": "After the enemy attacks this unit, launches a retaliation."
+  },
+  "900999": {
+   "name": "Substitute",
+   "effect": "If an ally with HP below 30% is attacked during combat, a [Guard] effect can be activated regardless of skill range. Removed after activation."
+  },
+  "900097": {
+   "name": "Link Salvo",
+   "effect": "After an ally actively attacks, simultaneously uses two Tactical Weapons to launch an Extra Strike on the same target."
+  },
+  "900101": {
+   "name": "Terminator",
+   "effect": "After actively attacking with an Alter-Blade, if the HP of the part hit is below a certain percentage, triggers the <buf ID=900109>[Execution]</buf> effect, directly destroying that part after combat."
+  },
+  "900109": {
+   "name": "Execution",
+   "effect": "When specific conditions are met, the part is directly destroyed after combat. This effect ignores <buf ID=900003>[Guts]</buf>."
+  },
+  "900111": {
+   "name": "Directional Rack",
+   "effect": "Stationary deployment. Unable to move. Attack range changes to a fixed direction area, but grants a special bonus."
+  },
+  "900112": {
+   "name": "Positional Advantage I",
+   "effect": "Critical hit chance increases by <color=#F74848>3%</color> and DMG taken is reduced by <color=#F74848>2%</color> per stack, up to <color=#F74848>8</color> stacks. All stacks are removed after exiting [Directional Rack]"
+  },
+  "900118": {
+   "name": "Valhalla's Call",
+   "effect": "When attacking for the first time each turn, AP Cost <color=#F74848>-1</color>, minimum <color=#F74848>1</color>.\nAfter actively attacking, if the target is destroyed, triggers <buf ID=900004>[Re-ATK]</buf> after combat, granting full Movement. Can only trigger <color=#F74848>1</color> time per turn.\nWhen the duration ends, resets <buf ID=900120>[Awakening]</buf> level."
+  },
+  "900120": {
+   "name": "Awakening",
+   "effect": "Lv.1: Movement <color=#F74848>+1</color>.\nLv.2: Unlocks <buf ID=900011>[Ideal Range]</buf> for Assault Weapons. When battling targets on an <buf ID=900011>[Ideal Range]</buf> tile, Final DMG Dealt <color=#F74848>+15%</color>.\nLv.3: When a part is destroyed, restores <color=#F74848>1</color> AP after combat. Can only trigger <color=#F74848>1</color> time per turn.\nLv.4: When actively attacking with a Cutter, can repeatedly select the same target. Subsequent attacks against the same target deal <color=#F74848>40%</color> of base DMG.\nLv.5: Gains <buf ID=900118>[Valhalla's Call]</buf>."
+  },
+  "900125": {
+   "name": "Firepower Fulcrum",
+   "effect": "HMG bullets <color=#F74848>+1</color>."
+  },
+  "900133": {
+   "name": "Poised",
+   "effect": "DMG dealt increases by <color=#F74848>3%</color>, up to a maximum of <color=#F74848>5</color> stacks."
+  },
+  "900136": {
+   "name": "Critical Sense",
+   "effect": "When attacked by melee or ranged weapons, if equipped with Alter-Blade in both hands and both hands are intact, activates [Insight Counterattack], dealing <color=#F74848>1.2x</color> DMG. [Insight Counterattack] ignores [Target Shift]. Each stack increases DMG dealt by <color=#F74848>5%</color> and dodge rate by <color=#F74848>5%</color>. <color=#F74848>1</color> stack is removed upon activation."
+  },
+  "1002502": {
+   "name": "Impulsive I",
+   "effect": "Offensive aggression +5%, defensive stability -5%."
+  },
+  "1002512": {
+   "name": "Impulsive II",
+   "effect": "Offensive aggression +10%, defensive stability -10%."
+  },
+  "1004021": {
+   "name": "Weapon Inhibition",
+   "effect": "Cannot execute weapon skills or attack codes except for normal attacks."
+  },
+  "1004022": {
+   "name": "Repair Inhibition",
+   "effect": "Repair AMT Received -50%. Cannot repair destroyed parts."
+  },
+  "1004061": {
+   "name": "Code Hindrance",
+   "effect": "Disrupts the use of Code-type skills."
+  },
+  "1004412": {
+   "name": "Instability II",
+   "effect": "Hit Rate -4% and Dodge Rate -4%. Stacks up to 5 times."
+  },
+  "1004502": {
+   "name": "Instability I",
+   "effect": "Instability debuff level I; reduces combat effectiveness by 5%."
+  },
+  "1006502": {
+   "name": "Timidity I",
+   "effect": "Timidity debuff level I; reduces offensive capability by 5%."
+  },
+  "1008062": {
+   "name": "Absolute Dodge",
+   "effect": "When attacked and retaliating, ensures a Perfect Dodge. Effect is removed after triggering."
+  },
+  "1008072": {
+   "name": "Iron Will",
+   "effect": "Crit Rate +6%. Stacks up to 5 times. Lasts until a critical hit is landed."
+  },
+  "1008503": {
+   "name": "Euphoria II",
+   "effect": "Dodge Rate +3%. When actively attacking, Crit Rate +5%. Stacks up to 5 times."
+  },
+  "1009083": {
+   "name": "Intimidation",
+   "effect": "Unable to move."
+  },
+  "1009502": {
+   "name": "Mental Pressure Aura I",
+   "effect": "Applies 5% mental pressure to nearby enemies, reducing their combat performance."
+  },
+  "1009503": {
+   "name": "Mental Pressure Aura II",
+   "effect": "DMG Dealt -12%. DMG Taken +12%."
+  },
+  "1012042": {
+   "name": "Ready",
+   "effect": "Crit Rate +5%, up to 5 stacks, lasting until landing a critical hit."
+  },
+  "1012081": {
+   "name": "Oath",
+   "effect": "At start of action, if a unit is within 6 tiles of [Camilla], targeted skills can only select [Camilla] as the target. Non-targeted skills remain unaffected."
+  },
+  "1012512": {
+   "name": "Magnetic Armor",
+   "effect": "Armor +30%. Stacks up to 3 times. Upon taking damage, removes 1 stack after combat."
+  },
+  "1013503": {
+   "name": "Vigor",
+   "effect": "DMG +1.5%, DMG Taken -1.5%."
+  },
+  "1014363": {
+   "name": "Eminence",
+   "effect": "When actively attacking, skill multiplier +0.15. Removed when taking damage."
+  },
+  "1014820": {
+   "name": "Sync Ratio",
+   "effect": "When Sync Ratio is greater than 50%, each 1% Sync Ratio increases pilot Suitability by 0.2%, otherwise, it reduces pilot Suitability."
+  },
+  "1015052": {
+   "name": "Critical State",
+   "effect": "Final DMG Dealt <color=#F74848>+20%</color>. Crit Rate and Crit DMG <color=#F74848>+20%</color>. After actively attacking, triggers <buf ID=900004>[Re-ATK]</buf>. Can move <color=#F74848>2</color> tiles before attacking. This <buf ID=900004>[Re-ATK]</buf> effect has no limit on the number of times it can trigger and lasts until the end of the action."
+  },
+  "1015311": {
+   "name": "Terminator 1",
+   "effect": "After actively attacking with an Alter-Blade, if the part hit is below <color=#F74848>15%</color> HP, triggers the <buf ID=900109>[Execution]</buf> effect, directly destroying that part after combat."
+  },
+  "1015414": {
+   "name": "Critical Sense",
+   "effect": "When attacked by Melee and Ranged Weapons, if equipped with two Alter-Blades and both Arms are undestroyed, interrupts the attack and triggers [Incisive Retaliation], dealing <color=#F74848>1.2</color>x DMG. After triggering, <color=#F74848>1</color> stack is removed. [Incisive Retaliation] ignores the Large Shield <buf ID=900027>[Target Shift]</buf> effect.\nFor each stack of Critical Sense possessed, DMG <color=#F74848>+5%</color> and Dodge Rate <color=#F74848>+5%</color>."
+  },
+  "2004022": {
+   "name": "Hit UP",
+   "effect": "Increases hit rate."
+  },
+  "2004081": {
+   "name": "Retaliation Disabled",
+   "effect": "Cannot perform counter-attacks or retaliations."
+  },
+  "2004501": {
+   "name": "Sharpshooter",
+   "effect": "Enhanced ranged accuracy and precision."
+  },
+  "2005513": {
+   "name": "Cross Fire",
+   "effect": "Coordinate fire from multiple angles to catch enemies in overlapping fields of fire."
+  },
+  "2006041": {
+   "name": "DMG Taken Down",
+   "effect": "Reduces damage received from incoming attacks."
+  },
+  "2006501": {
+   "name": "Lead by Example",
+   "effect": "Inspires nearby allies, granting them combat bonuses."
+  },
+  "2006502": {
+   "name": "Improved Attack I",
+   "effect": "ATK +5%."
+  },
+  "2007501": {
+   "name": "Adorable",
+   "effect": "A unique status effect associated with specific pilot abilities."
+  },
+  "2009022": {
+   "name": "Crit Rate UP",
+   "effect": "Increases critical hit rate."
+  },
+  "2009501": {
+   "name": "Fearless Army",
+   "effect": "A morale buff that enhances the entire unit's combat resolve."
+  },
+  "2011442": {
+   "name": "Intimidation",
+   "effect": "Reduces the target's combat performance through psychological pressure."
+  },
+  "2012032": {
+   "name": "Ultrahot!",
+   "effect": "Flame DMG +10%."
+  },
+  "2012061": {
+   "name": "Afterglow",
+   "effect": "When attacked, all parts take Fixed DMG equal to 0.05x [Erisa]'s Weapon ATK after combat. This effect lasts until the action ends."
+  },
+  "2012512": {
+   "name": "Joint Melt",
+   "effect": "After actively attacking or executing a Code skill, all parts take Fixed DMG equal to 5% of their Max HP."
+  },
+  "2015041": {
+   "name": "Counter Burst",
+   "effect": "When retaliating with a Machine Gun, Bullets +1. Stacks up to 3 times."
+  },
+  "2015061": {
+   "name": "Sanctuary",
+   "effect": "Immune to \"Cannot be protected by [Guard]\" effects. When attacked by a Assault or Ranged Weapon, if within 3 tiles of [Cassha], she blocks the attack."
+  },
+  "2015081": {
+   "name": "Turning Point",
+   "effect": "DMG Taken -30%. Removed at start of action."
+  },
+  "2015087": {
+   "name": "Maelstrom",
+   "effect": "At start of action, if not incapacitated and both Arms are undestroyed, uses two Machine Guns simultaneously to deal 0.6x DMG 2 times to all enemies within range. If unable to attack, gains 3 AP."
+  },
+  "2015509": {
+   "name": "Retaliation Enhancement",
+   "effect": "When attacked and drawn into combat, triggers [Quick Draw] before the enemy strikes, and Retaliation DMG +15%. Stacks up to 5 times. Each stack is independent and does not accumulate. When [Retaliation] or [Quick Draw] is triggered, 1 stack is removed after combat."
+  },
+  "2016080": {
+   "name": "Rondo - Flamethrower",
+   "effect": "When initiating combat with a single-handed Assault Weapon, deals [Fixed DMG] after combat equal to <color=#F74848>0.35</color>x Weapon ATK to all parts of the target in total."
+  },
+  "2016085": {
+   "name": "Rondo - Shotgun",
+   "effect": "When attacking with an Assault Weapon, ignores <color=#F74848>50%</color> of the target's Armor."
+  },
+  "2016087": {
+   "name": "Rondo - Machine Gun",
+   "effect": "When attacking with an Assault Weapon, increases DMG dealt in this skirmish based on hits. For each hit, DMG increases by <color=#F74848>2%</color>, up to <color=#F74848>20%</color>. Resets after attacking."
+  },
+  "2016410": {
+   "name": "Hawk Rush 1",
+   "effect": "When actively attacking with a single-handed Assault Weapon, after combat gains <color=#F74848>1</color> stack of <buf ID=2016503>[Dual Gun Efficiency]</buf>. Stacks up to <color=#F74848>3</color> times. Can only trigger <color=#F74848>1</color> time per turn."
+  },
+  "2016452": {
+   "name": "Hawk Rush",
+   "effect": "When actively attacking with a single-handed Assault Weapon, after combat gains <color=#F74848>1</color> stack of <buf ID=2016503>[Dual Gun Efficiency]</buf>. Stacks up to <color=#F74848>3</color> times. Can only trigger <color=#F74848>1</color> time per turn."
+  },
+  "2016503": {
+   "name": "Dual Gun Efficiency",
+   "effect": "When actively attacking with two Assault Weapons, consumes all stacks, reducing AP Cost by <color=#F74848>1</color> for each stack, down to a minimum of <color=#F74848>1</color>."
+  },
+  "2017072": {
+   "name": "Fury Unleashed",
+   "effect": "Can consume <buf ID=2017500>[Fury]</buf> stack to improve the skill effect. For each stack consumed, increases AP cost by <color=#F74848>1</color> and the number of bullets by <color=#F74848>40%</color>. Up to 2 stacks can be consumed."
+  },
+  "2017442": {
+   "name": "Firepower Supremacy",
+   "effect": "HMG Range <color=#F74848>+1</color>. This effect can stack."
+  },
+  "2017500": {
+   "name": "Fury",
+   "effect": "DMG Dealt <color=#F74848>+25%</color>. Effect cannot stack. Consumed when <buf ID=2017072>[Fury Unleashed]</buf> is activated."
+  },
+  "3004501": {
+   "name": "Shadow of Calamity",
+   "effect": "A debuff aura associated with a specific pilot's ability."
+  },
+  "3004502": {
+   "name": "Stealth I",
+   "effect": "Cannot be targeted by active attacks. Forcibly removed when actively attacking, being attacked and taking damage, or if enemies exist within 2 adjacent tiles."
+  },
+  "3005412": {
+   "name": "Global Repair Effect Down",
+   "effect": "Reduces the effectiveness of all repair actions on the target."
+  },
+  "3005443": {
+   "name": "Repair Damaged Part Disabled",
+   "effect": "Cannot repair parts that are already damaged."
+  },
+  "3005501": {
+   "name": "Investor",
+   "effect": "A buff that provides resource or AP generation bonuses."
+  },
+  "3006053": {
+   "name": "Skilled",
+   "effect": "Enhanced combat proficiency granting bonuses to attack actions."
+  },
+  "3006502": {
+   "name": "Short Circuit I",
+   "effect": "At the end of action, all parts take Fixed DMG equal to <color=#F74848>7%</color> of their Max HP."
+  },
+  "3008061": {
+   "name": "Guard Disabled",
+   "effect": "Cannot perform Guard interceptions."
+  },
+  "3008081": {
+   "name": "Ignore Guard",
+   "effect": "Attacks bypass Guard effects entirely."
+  },
+  "3008501": {
+   "name": "Epiphyllum's Move",
+   "effect": "When attacking with a Light Rifle, [Aiming] mode can be accessed while equipped with a Small Shield. This skill allows movement after combat using any remaining movement."
+  },
+  "3009032": {
+   "name": "Serenity",
+   "effect": "Crit Rate +5%, Crit DMG +5%, up to 3 stacks. Lose all effects upon taking damage."
+  },
+  "3009411": {
+   "name": "Intelligence Collection",
+   "effect": "Gathering tactical intelligence that may reveal enemy positions or grant combat bonuses."
+  },
+  "3009451": {
+   "name": "Intelligence Collection",
+   "effect": "Gathering tactical intelligence that may reveal enemy positions or grant combat bonuses."
+  },
+  "3010502": {
+   "name": "Reinforced Ammo",
+   "effect": "Gains <buf ID=3010504>[Improved Fire]</buf> after executing the <skill mainSkill=301050>[Special Load]</skill> code."
+  },
+  "3010504": {
+   "name": "Improved Fire",
+   "effect": "When actively attacking with a Ranged Weapon, skill multiplier +0.15. Can trigger 1 time. Removed after triggering or when action ends."
+  },
+  "3011512": {
+   "name": "Positional Advantage I",
+   "effect": "Critical hit chance increases by <color=#F74848>3%</color> and DMG taken is reduced by <color=#F74848>2%</color> per stack, up to <color=#F74848>8</color> stacks. All stacks are removed after exiting [Directional Rack]"
+  },
+  "4002062": {
+   "name": "Missile DMG UP",
+   "effect": "Increases damage dealt by missile attacks."
+  },
+  "4002065": {
+   "name": "Rocket DMG UP",
+   "effect": "Increases damage dealt by rocket attacks."
+  },
+  "4002501": {
+   "name": "Thirst for Knowledge",
+   "effect": "A buff that generates bonuses through information gathering or tactical awareness."
+  },
+  "4003063": {
+   "name": "Repair Hindrance",
+   "effect": "Reduces the effectiveness of repair actions on the target."
+  },
+  "4003064": {
+   "name": "Repair Disabled",
+   "effect": "Cannot perform or receive repair actions."
+  },
+  "4003503": {
+   "name": "SP Ammo I",
+   "effect": "Special ammunition level I; grants an additional 5% effect on hit."
+  },
+  "4004501": {
+   "name": "Unceasing Thunderfire",
+   "effect": "Talent buff for Eileen."
+  },
+  "4008051": {
+   "name": "Precision Mode",
+   "effect": "When attacking with a Missile Launcher, Final DMG <color=#F74848>+50%</color>, and no longer causes splash damage."
+  },
+  "4008058": {
+   "name": "Standard Mode",
+   "effect": "When attacking with a Missile Launcher, deals Splash DMG equal to <color=#F74848>50%</color> of the damage dealt to all parts except the part hit."
+  },
+  "4008509": {
+   "name": "Lock",
+   "effect": "Arthur can use Missile Launcher active attacks and <buf ID=900002>[Link Attacks]</buf> to attack units regardless of distance."
+  },
+  "4010082": {
+   "name": "Ambush Tactics",
+   "effect": "When actively attacking, Crit Rate <color=#F74848>+15%</color>. Stacks up to <color=#F74848>5</color> times. Removed after actively attacking."
+  },
+  "4010500": {
+   "name": "Intel",
+   "effect": "Each stack increases all allies' DMG by <color=#F74848>0.8%</color>. Stacks up to <color=#F74848>25</color> times. Loses <color=#F74848>1</color> stack at start of action."
+  },
+  "5002072": {
+   "name": "Repair AMT UP",
+   "effect": "Increases the amount of HP restored by repair actions."
+  },
+  "5003502": {
+   "name": "Armor Care I",
+   "effect": "Restores armor value by 5%."
+  },
+  "5004502": {
+   "name": "Regular Repair II",
+   "effect": "After actively attacking, restores HP equal to <color=#F74848>0.45x</color> [Melissa's] Manipulator Repair AMT to undestroyed parts. Can trigger <color=#F74848>2</color> times. Cannot repair destroyed parts."
+  },
+  "5004512": {
+   "name": "Magnetized Repair",
+   "effect": "After combat, if there are any destroyed parts, repairs <color=#F74848>1</color> of them. Repair amount is <color=#F74848>0.2x</color> that of the Manipulator. Can trigger once."
+  },
+  "5005071": {
+   "name": "Specific Repair Skills",
+   "effect": "[Pochy Assist!] Skill and [Full Power!] Skill"
+  },
+  "5006031": {
+   "name": "Limit Relief",
+   "effect": "Negates one instance of [Re-ATK] or [Re-Act] deduction. Removed after taking effect."
+  },
+  "5006052": {
+   "name": "Immune to Repair Inhibition",
+   "effect": "Immune to [Repair AMT Received Down] and [Destroyed Part Repair Disabled]."
+  },
+  "5007022": {
+   "name": "Crit Reduction",
+   "effect": "When under attack, Crit RES +10%, and Crit DMG Taken -10%."
+  },
+  "5007072": {
+   "name": "Primed",
+   "effect": "After actively attacking, inflicts 1 random debuff on the target hit after combat, lasting for 2 turns. Removed after triggering."
+  },
+  "5007083": {
+   "name": "Full Rewind",
+   "effect": "Records the unit's part status, HP, AP, and Tactical Weapon Capacity when applied. At the start of the next action, returns to the recorded status."
+  },
+  "5007516": {
+   "name": "Weapon Inhibition",
+   "effect": "Cannot execute weapon skills or attack codes except for normal attacks."
+  },
+  "6002042": {
+   "name": "Passive Repair",
+   "effect": "Automatically repair HP under specific conditions or at the end of action."
+  },
+  "6002081": {
+   "name": "Battlefield Fortress",
+   "effect": "A defensive stance that greatly increases survivability in place."
+  },
+  "6003061": {
+   "name": "Weapon Hindrance",
+   "effect": "Reduces the target's weapon effectiveness."
+  },
+  "6003502": {
+   "name": "Attack Hindrance I",
+   "effect": "Reduces the target's attack effectiveness by 5%."
+  },
+  "6004041": {
+   "name": "Aggressive",
+   "effect": "When Retaliating, Crit Rate +10%, Crit DMG +10%."
+  },
+  "6004081": {
+   "name": "Reaction Hysteresis",
+   "effect": "When initiating combat, an action delay allows the target to retaliate first."
+  },
+  "6004501": {
+   "name": "Initiative",
+   "effect": "Grants priority to act first or trigger effects before opponents."
+  },
+  "6005052": {
+   "name": "Raging Guardian",
+   "effect": "When actively attacking, DMG +10%. Stacks up to 3 times."
+  },
+  "6005461": {
+   "name": "Movement Down Immunity",
+   "effect": "Immune to [Movement Down]."
+  },
+  "6005462": {
+   "name": "Guard Disabled Immunity",
+   "effect": "Immune to [Guard Disabled]."
+  },
+  "6008041": {
+   "name": "Magnetoresistive Field",
+   "effect": "When on the battlefield, if enemies pass within 1 ring of this unit or a [Defense Field], they must expend 1 additional Movement. Also, their Jetpack's ability to bypass obstacles is disabled."
+  },
+  "6008061": {
+   "name": "Airspace Blockade",
+   "effect": "When actively attacking with a Tactical Weapon, cannot deal damage to enemies within enemy [Defense Fields]. Removed when action ends."
+  },
+  "7000142": {
+   "name": "Bide",
+   "effect": "Accumulate power while withstanding attacks, releasing it in a stronger follow-up action."
+  },
+  "7000452": {
+   "name": "Fury",
+   "effect": "DMG +5%. Stacks up to 4 times."
+  },
+  "7100102": {
+   "name": "Hit Rate UP I",
+   "effect": "Hit rate +4%."
+  },
+  "7100103": {
+   "name": "Hit Rate UP II",
+   "effect": "Hit rate +8%."
+  },
+  "7100104": {
+   "name": "Hit Rate UP II",
+   "effect": "Hit rate +8%."
+  },
+  "7100105": {
+   "name": "Hit Rate UP III",
+   "effect": "Hit Rate +12%."
+  },
+  "7100205": {
+   "name": "Dodge Rate UP III",
+   "effect": "Dodge rate +15%."
+  },
+  "7100207": {
+   "name": "Dodge Rate UP IV",
+   "effect": "Dodge rate +20%."
+  },
+  "7100300": {
+   "name": "DMG UP",
+   "effect": "DMG increases according to buff level."
+  },
+  "7100303": {
+   "name": "DMG UP II",
+   "effect": "DMG +10%."
+  },
+  "7100304": {
+   "name": "DMG UP II",
+   "effect": "DMG +10%."
+  },
+  "7100305": {
+   "name": "DMG UP III",
+   "effect": "DMG +15%."
+  },
+  "7100306": {
+   "name": "DMG UP III",
+   "effect": "DMG +15%."
+  },
+  "7100308": {
+   "name": "DMG UP IV",
+   "effect": "DMG +20%."
+  },
+  "7100309": {
+   "name": "DMG UP V",
+   "effect": "DMG +25%."
+  },
+  "7100106": {
+   "name": "Hit Rate UP IV",
+   "effect": "Hit Rate +16%."
+  },
+  "7100107": {
+   "name": "Hit Rate UP V",
+   "effect": "Hit Rate +20%."
+  },
+  "7100401": {
+   "name": "Crit Rate UP I",
+   "effect": "Crit rate +10%."
+  },
+  "7100403": {
+   "name": "Crit Rate UP II",
+   "effect": "Crit Rate +15%."
+  },
+  "7100404": {
+   "name": "Crit Rate UP II",
+   "effect": "Crit rate +15%."
+  },
+  "7100405": {
+   "name": "Crit Rate UP III",
+   "effect": "Crit Rate +20%."
+  },
+  "7100406": {
+   "name": "Crit Rate UP IV",
+   "effect": "Crit Rate +25%."
+  },
+  "7100501": {
+   "name": "Crit DMG UP I",
+   "effect": "Crit DMG +10%."
+  },
+  "7100503": {
+   "name": "Crit DMG UP II",
+   "effect": "Crit DMG +15%."
+  },
+  "7100601": {
+   "name": "Armor UP I",
+   "effect": "Armor +5%."
+  },
+  "7100701": {
+   "name": "Fully Prepared",
+   "effect": "For every 10% decrease in HP, DMG Taken -3%, up to 15%."
+  },
+  "7100702": {
+   "name": "Defensive Stance II",
+   "effect": "DMG Taken -10%."
+  },
+  "7100703": {
+   "name": "Defensive Stance III",
+   "effect": "DMG Taken -50%."
+  },
+  "7100901": {
+   "name": "Movement UP",
+   "effect": "Movement +1."
+  },
+  "7101003": {
+   "name": "Hit Rate Down II",
+   "effect": "Hit rate -10%."
+  },
+  "7101103": {
+   "name": "Dodge Rate Down II",
+   "effect": "Dodge Rate -8%."
+  },
+  "7101104": {
+   "name": "Dodge Rate Down III",
+   "effect": "Dodge Rate -12%."
+  },
+  "7101107": {
+   "name": "Dodge Rate Down V",
+   "effect": "Dodge Rate -20%."
+  },
+  "7101201": {
+   "name": "DMG Down I",
+   "effect": "DMG -5%."
+  },
+  "7101203": {
+   "name": "DMG Down II",
+   "effect": "DMG -10%."
+  },
+  "7101505": {
+   "name": "Crash",
+   "effect": "Unable to take action!"
+  },
+  "7101506": {
+   "name": "Movement Inhibition I",
+   "effect": "Movement -1."
+  },
+  "7101507": {
+   "name": "Movement Inhibition II",
+   "effect": "Movement -2"
+  },
+  "7101601": {
+   "name": "Armor Down Immunity",
+   "effect": "Immune to armor reduction debuffs."
+  },
+  "7101603": {
+   "name": "Hit Down Immunity",
+   "effect": "Immune to hit rate reduction debuffs."
+  },
+  "7101604": {
+   "name": "DMG Taken Immunity",
+   "effect": "Immune to increased damage taken debuffs."
+  },
+  "7101606": {
+   "name": "DMG Down Immunity",
+   "effect": "Immune to damage reduction debuffs."
+  },
+  "7101701": {
+   "name": "Armor Down I",
+   "effect": "Armor -35%."
+  },
+  "7101702": {
+   "name": "Armor Down II",
+   "effect": "Armor -50%."
+  },
+  "7101704": {
+   "name": "Armor Down I",
+   "effect": "Armor -35%."
+  },
+  "7101801": {
+   "name": "DMG Taken UP I",
+   "effect": "DMG Taken +10%."
+  },
+  "7101803": {
+   "name": "DMG Taken UP II",
+   "effect": "DMG Taken +15%."
+  },
+  "7102005": {
+   "name": "DMG Taken Down III",
+   "effect": "DMG Taken -12%."
+  },
+  "900100": {
+   "name": "Critical Sense",
+   "effect": "When attacked by Melee and Ranged Weapons, if equipped with two Alter-Blades and both Arms are undestroyed, interrupts the attack and triggers [Incisive Retaliation], dealing <color=#F74848>1.2</color>x DMG. After triggering, <color=#F74848>1</color> stack is removed. [Incisive Retaliation] ignores the Large Shield <buf ID=900027>[Target Shift]</buf> effect.\nFor each stack of Critical Sense possessed, DMG <color=#F74848>+5%</color> and Dodge Rate <color=#F74848>+5%</color>."
+  },
+  "900104": {
+   "name": "Hologram I",
+   "effect": "Replicant. Copies the unit's part status and HP upon creation. It cannot attack, move, or be guarded, and is removed at the start of [Your Turn]."
+  },
+  "900106": {
+   "name": "Dummy Trick",
+   "effect": "When this unit is attacked in combat and its Body would be destroyed, triggers Guts until end of combat. After combat, the unit is beamed to Anderson's side, gaining Stealth I for 2 turns, and leaving 1 Hologram I in its place. Triggers once per battle."
+  },
+  "900108": {
+   "name": "Hologram",
+   "effect": "Replicant. Copies the unit's part status and HP upon creation. It cannot attack, move, or be guarded, and is removed at the start of [Your Turn]."
+  },
+  "900039": {
+   "name": "Rack",
+   "effect": "Unable to move. When an ally ends their action within the adjacent area, automatically performs Passive Repair on them."
+  },
+  "900072": {
+   "name": "Percentage DMG",
+   "effect": "Damage dealt as a percentage of the target's current or max HP."
+  },
+  "900073": {
+   "name": "Special Load",
+   "effect": "A special ammunition or loading state that enhances subsequent attacks."
+  },
+  "900094": {
+   "name": "Percentage-Based Fixed DMG",
+   "effect": "Fixed DMG based on own HP Percentage."
+  },
+  "900121": {
+   "name": "Restriction Removal",
+   "effect": "When this module reaches maximum level, activates the Hidden Mod of each part."
+  },
+  "2018502": {
+   "name": "Hellstorm",
+   "effect": "After being actively attacked, [Adele] triggers [Hellstorm Burst]."
+  },
+  "900129": {
+   "name": "Hellstorm Burst I",
+   "effect": "Deals [Fixed DMG] equal to <color=#F74848>0.2</color>x [Adele]'s Flamethrower ATK to all parts of the target and all enemy units within <color=#F74848>1</color> tile. This damage can destroy parts. After attacking, removes [Hellstorm]. If other affected targets are afflicted with [Hellstorm] when [Hellstorm Burst] is triggered, [Hellstorm Burst] is triggered again on those targets."
+  },
+  "2018506": {
+   "name": "Scorching Will",
+   "effect": "Flamethrower Weapon ATK increased by <color=#F74848>1%</color>. Stacks up to <color=#F74848>10</color> times."
+  },
+  "900139": {
+   "name": "Fire DMG",
+   "effect": "DMG dealt based on the main skill's multiplier."
+  },
+  "1016514": {
+   "name": "Absolute Will",
+   "effect": "Body is immune to <buf ID=900109>[Execution]</buf> effects. When the Body suffers overdamage, triggers <buf ID=900003>[Guts]</buf>, locking at <color=#F74848>1</color> HP. After combat, restores <color=#F74848>50%</color> of Max HP to all parts and repairs all destroyed parts. Removed after triggering."
+  },
+  "900127": {
+   "name": "Heroism",
+   "effect": "Final DMG <color=#F74848>+4%</color>, Final DMG Taken <color=#F74848>-6%</color>, and Repair AMT <color=#F74848>+4%</color>. Stacks up to <color=#F74848>5</color> times."
+  },
+  "1016502": {
+   "name": "Heroism I",
+   "effect": "Final DMG <color=#F74848>+4%</color>, Final DMG Taken <color=#F74848>-6%</color>, and Repair AMT <color=#F74848>+4%</color>. Stacks up to <color=#F74848>5</color> times."
+  },
+  "1017503": {
+   "name": "Poised",
+   "effect": "DMG dealt increases by <color=#F74848>3%</color>, up to a maximum of <color=#F74848>5</color> stacks."
+  },
+  "900138": {
+   "name": "Temporary AP Cap",
+   "effect": "AP cap is temporarily increased. This effect is removed at the end of turn."
+  },
+  "1017466": {
+   "name": "Stellar Burst",
+   "effect": "Critical hit chance increases by <color=#F74848>15%</color>. Critical hit DMG increases by <color=#F74848>10%</color>."
+  },
+  "1099900": {
+   "name": "Goo Goo",
+   "effect": "[Sapientia]'s personal ST that is deployed automatically when sortie, possesses skills [Super Goo Goo!], [Goo Goo Cover!], [Goo Goo Boost!] and [Goo Goo Shift!]."
+  },
+  "1099901": {
+   "name": "Support Defend",
+   "effect": "Blocks attacks from a specific weapon type for an ally within <color=#F74848>1</color> adjacent tile."
+  },
+  "1099902": {
+   "name": "Short Circuit Impact!",
+   "effect": "When attacked, applies [Short Circuit III] to the attacker after combat with effect: At the end of the action, all body parts lose <color=#F74848>7%</color> of their maximum HP as [Fixed DMG]. This [Fixed DMG] increases by <color=#F74848>1%</color> for each debuff the target carries, up to a maximum of <color=#F74848>12%</color>. This [Fixed DMG] cannot destroy parts."
+  },
+  "1099903": {
+   "name": "Command Block",
+   "effect": "Cannot execute command skills."
+  },
+  "1099904": {
+   "name": "Short Circuit III",
+   "effect": "At the end of the action, all body parts lose <color=#F74848>7%</color> of their maximum HP as [Fixed DMG]. This [Fixed DMG] increases by <color=#F74848>1%</color> for each debuff the target carries, up to a maximum of <color=#F74848>12%</color>. This [Fixed DMG] cannot destroy parts."
+  },
+  "1099905": {
+   "name": "Command Block Immunity",
+   "effect": "Immune to <buf ID=1099903>[Command Block]</buf> effect."
+  },
+  "1099906": {
+   "name": "Blur III",
+   "effect": "Dodge Rate +35%."
+  },
+  "1099907": {
+   "name": "Reconstruction III",
+   "effect": "Repair AMT +25%."
+  },
+  "900137": {
+   "name": "Battle Wound",
+   "effect": "Applies debuff based on the part hit: <buf ID=9001371>[Battle Wound - Body]</buf>, <buf ID=9001372>[Battle Wound - Left Arm]</buf>, <buf ID=9001373>[Battle Wound - Right Arm]</buf>, or <buf ID=9001374>[Battle Wound - Leg]</buf>."
+  },
+  "9001371": {
+   "name": "Battle Wound - Body",
+   "effect": "Reduces AP by <color=#F74848>-1</color> when triggering <buf ID=900004>[Re-ATK]</buf>."
+  },
+  "9001372": {
+   "name": "Battle Wound - Left Arm",
+   "effect": "When actively attacking, reduces Final DMG by <color=#F74848>20%</color> for the first hit."
+  },
+  "9001373": {
+   "name": "Battle Wound - Right Arm",
+   "effect": "When actively attacking, if the number of hits are more than <color=#F74848>5</color>, reduces the number of hits by <color=#F74848>20%</color>."
+  },
+  "9001374": {
+   "name": "Battle Wound - Leg",
+   "effect": "When leg is intact, loses <color=#F74848>10%</color> of leg maximum HP while standing still, with an additional <color=#F74848>10%</color> for every tile moved. Effect removed after triggering."
+  },
+  "900141": {
+   "name": "Hunting",
+   "effect": "Applies buff based on the part destroyed: Body grants <buf ID=9001411>[Precision]</buf>, Arms grants <buf ID=9001412>[Rapid]</buf>, Leg grants <buf ID=9001413>[Direct Shot]</buf>. All effects require a ranged weapon to activate, and are removed after triggering."
+  },
+  "9001411": {
+   "name": "Precision",
+   "effect": "Next basic attack will enter <buf ID=900014>[Aiming]</buf> Mode."
+  },
+  "9001412": {
+   "name": "Rapid",
+   "effect": "Next active attack gets <color=#F74848>+1</color> range."
+  },
+  "9001413": {
+   "name": "Direct Shot",
+   "effect": "Next attack multiplier increases by <color=#F74848>+0.1</color>."
+  },
+  "6010502": {
+   "name": "Magnetic Lock-On",
+   "effect": "Can be targeted by [Vengeful Strike] and [Vengeful Strike β]."
+  },
+  "4011502": {
+   "name": "Appointment",
+   "effect": "[Collin] can select target within <color=#F74848>4</color> tiles of this unit with a cutter."
+  },
+  "4011043": {
+   "name": "Subtask - Defense",
+   "effect": "When actively attacked, all intact parts gain temporary HP equal to <color=#F74848>18%</color> of their max HP. The temporary HP is removed after combat. This effect can trigger up to <color=#F74848>4</color> times per turn, and is removed at the start of next action."
+  },
+  "4011041": {
+   "name": "Subtask - Attack",
+   "effect": "After this unit initiates combat, [Collin] uses cautter to perform a [Link Attack], dealing <color=#F74848>0.75x</color> DMG. This effect can trigger up to <color=#F74848>4</color> times per turn, and is removed at the start of next action."
+  },
+  "4011061": {
+   "name": "Clean Up",
+   "effect": "At the end of action or after being destroyed, [Collin] uses cutter to attack all enemies within <color=#F74848>3</color> tiles of this target, dealing <color=#F74848>0.8x</color> AoE DMG."
+  },
+  "6011014": {
+   "name": "Provocation",
+   "effect": "If [Zoey] is within <color=#F74848>6</color> adjacent tiles, skills and attacks can only select [Zoey] as target. Hit rate is reduced by <color=#F74848>15%</color> when attacking [Zoey]. This effect has lower priority than <buf ID=1012081>[Oath]</buf>."
+  },
+  "6011042": {
+   "name": "Advantage",
+   "effect": "Increases Dodge Rate by <color=#F74848>10%</color> per stack, up to <color=#F74848>3</color> stacks. <color=#F74848>1</color> stack is removed upon being attacked."
+  },
+  "1018041": {
+   "name": "Good Chance!",
+   "effect": "The next active attack DMG increases by <color=#F74848>5%</color> for every <color=#F74848>1</color> AP consumed, up to <color=#F74848>40%</color>. This effect is removed after attacking."
+  },
+  "1018463": {
+   "name": "Hope",
+   "effect": "Final DMG increases by <color=#F74848>5%</color>, stacking up to <color=#F74848>3</color> times. This effect is removed at the end of the team turn."
+  },
+  "2019506": {
+   "name": "Tiger Might",
+   "effect": "Critical Hit chance and Dodge Rate increase by <color=#F74848>3%</color> per stack."
+  },
+  "2019443": {
+   "name": "Tiger King Resilience",
+   "effect": "Next attack AP cost is reduced by <color=#F74848>-2</color>, to a minimum of <color=#F74848>1</color> AP. DMG taken from [Retaliation] reduces by 30%. This effect is removed after actively attacking."
+  },
+  "5009418": {
+   "name": "Resonance Pulse",
+   "effect": "After being actively attacked or repaired by Martini, the part with lowest HP receives <color=#F74848>0.3x</color> Martini's Manipulator Repair AMT as [Fixed DMG]. This effect is removed after triggering."
+  },
+  "900150": {
+   "name": "Twin-Gun Basic Attack",
+   "effect": "Use two machine guns to launch a normal attack on the target."
+  },
+  "900069": {
+   "name": "Twin-Gun Link Attack",
+   "effect": "After an ally launches an attack, use two machine guns to launch a [Link Attack] on the target they attacked."
+  },
+  "900153": {
+   "name": "Weapon Skill",
+   "effect": "Active combat skills other than [Normal Attack]."
+  },
+  "2020468": {
+   "name": "Overheating",
+   "effect": "Cannot use any active combat and command skills other than [Normal Attack]. [Overcharged Bullet] will not be gained nor consumed for <color=#F74848>1</color> turn. After exiting [Overheating] state, all [Overcharged Bullet] stacks will be removed."
+  },
+  "2020505": {
+   "name": "Overcharged Bullet",
+   "effect": "For each <color=#F74848>40</color> stacks, increases Machine Gun <buf ID=900011>[Ideal Range]</buf> by <color=#F74848>+1</color>, stacking up to <color=#F74848>3</color> times. When activating <buf ID=900153>[Weapon Skill]</buf> with Machine Gun, for each <color=#F74848>40</color> stacks, increases Machine Gun bullet count by <color=#F74848>+1</color>, DMG dealt and Critical Hit chance by <color=#F74848>10%</color>, stacking up to <color=#F74848>3</color> times. <color=#F74848>20</color> stacks are removed for each <color=#F74848>1</color> AP consumed after combat. Upon reaching <color=#F74848>200</color> stacks, enters <buf ID=2020468>[Overheating]</buf> state."
+  },
+  "2020082": {
+   "name": "Focus Fire",
+   "effect": "[Link Attack] DMG increases by <color=#F74848>50%</color>. This effect is removed at the start of next action."
+  },
+  "206242": {
+   "name": "Sentry Mod",
+   "effect": "Before performing <buf ID=900002>[Link Attack]</buf>, DMG dealt increases by <color=#F74848>5%</color> and Critical Hit chance increases by <color=#F74848>2%</color>, stacking up to <color=#F74848>5</color> times, lasting for <color=#F74848>2</color> turns."
+  },
+  "3013504": {
+   "name": "Personal Aide",
+   "effect": "When positioned within <color=#F74848>3</color> adjacent tiles of [Audrey], [Audrey]'s DMG dealt and Critical Hit chance increase by <color=#F74848>15%</color>. If [Audrey]'s attack triggers a <buf ID=900148>[Ricochet]</buf> and there are no valid enemy target, this unit will become the target for <buf ID=900148>[Ricochet]</buf> but will not receive DMG."
+  },
+  "900148": {
+   "name": "Ricochet",
+   "effect": "Selects the nearest target within <color=#F74848>3</color> adjacent tiles of the last target to attack, prioritizing hitting the same target as the first attack. This effect is halted if an attack misses. [Ricochet] is guaranteed to hit if the target is <buf ID=3013504>[Personal Aide]</buf>."
+  },
+  "900149": {
+   "name": "Leader Crest",
+   "effect": "Critical Hit chance increases by <color=#F74848>20%</color>, Critical Hit DMG increases by <color=#F74848>10%</color> and <buf ID=900148>[Ricochet]<buf> hit count increases by <color=#F74848>2</color>. This effect is removed at the end of turn."
+  },
+  "9001544": {
+   "name": "Convergence",
+   "effect": "Cannot gain another turn through any <buf ID=900151>[Reset]</buf> type effect. This effect is removed at the start of next action."
+  },
+  "900151": {
+   "name": "Reset",
+   "effect": "Allows units that have already finished their turn to act again."
+  },
+  "900152": {
+   "name": "Concealed Edge",
+   "effect": "Critical Hit chance and Critical Hit DMG are reduced by <color=#F74848>20%</color>."
+  },
+  "3013061": {
+   "name": "Loyalty",
+   "effect": "When [Audrey] is initiated combat against by assault or ranged weapons, if this unit is within <color=#F74848>3</color> adjacent tiles, activate <buf ID=900022>[Guard]</buf>. DMG taken is reduced by <color=#F74848>25%</color>. This effect is removed after triggering."
+  },
+  "900160": {
+   "name": "DMG Reduction",
+   "effect": "Includes DMG taken reduction, Final DMG taken reduction, and DMG taken reduction from shields."
+  },
+  "4010044": {
+   "name": "All-Out Assault Tactics",
+   "effect": "Final DMG <color=#F74848>+20%</color>. Removed at end of action."
+  },
+  "4010045": {
+   "name": "Full Assault",
+   "effect": "DMG <color=#F74848>+25%</color>. Removed at end of action."
+  },
+  "530572": {
+   "name": "Instability III",
+   "effect": "Hit Rate <color=#F74848>-4%</color>, Dodge Rate <color=#F74848>-4%</color>, and DMG <color=#F74848>-3%</color>. Stacks up to <color=#F74848>5</color> times."
+  },
+  "530622": {
+   "name": "Chainsaw Heating Up",
+   "effect": "Chainsaw Hits <color=#F74848>+1</color>. Stacks up to <color=#F74848>3</color> times. Loses <color=#F74848>1</color> stack after taking action."
+  },
+  "530391": {
+   "name": "Heating Up",
+   "effect": "Before attacking, if possessing <color=#F74848>15</color> stacks of [Heating Up], restores <color=#F74848>2</color> AP after combat, then removes all [Heating Up] stacks after triggering the corresponding effect."
+  },
+  "530742": {
+   "name": "Locked & Reloaded",
+   "effect": "When actively attacking with a Machine Gun, DMG <color=#F74848>+20%</color> and Bullets <color=#F74848>+1</color>. Removed after triggering."
+  },
+  "530786": {
+   "name": "Sync Miracle",
+   "effect": "When actively attacking, Crit Rate <color=#F74848>+40%</color>, and the first <color=#F74848>4</color> hits ignore the target's DMG Reduction effects. Removed after taking effect."
+  },
+  "7101303": {
+   "name": "Crit Rate Down II",
+   "effect": "Crit rate -15%."
+  },
+  "530872": {
+   "name": "Burning Intent",
+   "effect": "Each stack grants Crit Rate <color=#F74848>+2%</color> when attacking with a Missile Launcher."
+  },
+  "530962": {
+   "name": "Code DMG Reduction",
+   "effect": "Reduces DMG taken from the next code attack by <color=#F74848>30%</color>. Removed after taking effect."
+  },
+  "530965": {
+   "name": "No Time to Lose",
+   "effect": "When actively repairing with <color=#F74848>3</color> stacks, reduces the CD of <color=#F74848>1</color> repair skill by <color=#F74848>1</color> and gains <color=#F74848>1</color> AP, then removes all stacks. Can trigger <color=#F74848>1</color> time per turn."
+  },
+  "531032": {
+   "name": "Fire Control Delay",
+   "effect": "Each stack reduces Crit Rate and Crit DMG by <color=#F74848>3%</color>."
+  },
+  "5008941": {
+   "name": "You Forgoo-Goot Me!",
+   "effect": "When actively attacking targets other than <buf ID=1099900>[Goo Goo]</buf>, DMG dealt <color=#F74848>-25%</color>. Removed after taking effect."
+  },
+  "531145": {
+   "name": "Magnetic Buff",
+   "effect": "Each stack: Final DMG dealt <color=#F74848>+2%</color>, Final DMG taken <color=#F74848>-2%</color>."
+  },
+  "5009502": {
+   "name": "False Intentions",
+   "effect": "Each stack: DMG dealt and Repair AMT <color=#F74848>+1%</color>. For every <color=#F74848>5</color> stacks, Melee Attack multiplier <color=#F74848>+0.05</color>. While carrying <color=#F74848>10</color> or more stacks, AP Regen <color=#F74848>+1</color>."
+  },
+  "5009051": {
+   "name": "Eternal Bloom",
+   "effect": "Heavy Machine Gun DMG <color=#F74848>+25%</color> and Bullets <color=#F74848>+40%</color>. Removed at the start of turn."
+  },
+  "900199": {
+   "name": "Particle Energy",
+   "effect": "Gains <color=#F74848>1</color> stack at the start of each action and upon <buf ID=900155>[Activation]</buf>. Accumulating <color=#F74848>5</color> stacks allows the usage of <skill activeSkill=8001504>[Particle Burst]</skill>."
+  },
+  "900154": {
+   "name": "Pending Activation",
+   "effect": "Temporarily ends the action, can act again if conditions are met."
+  },
+  "900155": {
+   "name": "Activation",
+   "effect": "Gains an extra action without triggering any start or end of turn effect."
+  },
+  "900156": {
+   "name": "Form Shift",
+   "effect": "Changes to a next corresponding form.\n<b>Vanguard</b>: can only equip melee and ranged weapons. Movement increases by <color=#F74848>+1</color>. When actively attacking, DMG dealt and Critical Hit chance increase by <color=#F74848>15%</color>.\n<b>Assault</b>: can only equip assault weapons. Can perform <buf ID=900002>[Link Attack]</buf> up to <color=#F74848>2</color> times per turn. When actively attacking, assault bullet count <color=#F74848>+1</color>.\n<b>Tactical</b>: can only equip tactical weapon. Active attack does not consume tactical ammo. Can continue to move with remaining movement after attacking. When actively attacking, DMG dealt increases by <color=#F74848>5%</color> for each <color=#F74848>1</color> AP spent, up to <color=#F74848>25%</color>."
+  },
+  "900157": {
+   "name": "Form Buff",
+   "effect": "<b>Vanguard</b>: When initiating combat with melee or ranged weapons, Hit Rate is increased by <color=#F74848>15%</color> and <buf ID=900010>[Gusty Strike]</buf> can be triggered, dealing <color=#F74848>0.3x</color> DMG.\n<b>Assault</b>: When actively attacking with assault weapons, Critical Hit chance is increased by <color=#F74848>15%</color>. After combat, deals <buf ID=900017>[Fixed DMG]</buf> equal to <color=#F74848>0.4x</color> weapon attack to all parts of the target.\n<b>Tactical</b>: When actively attacking with tactical weapons, DMG dealt is increased by <color=#F74848>15%</color>. After combat, applies <buf ID=7101803>[DMG Taken UP II]</buf> to targets for <color=#F74848>2</color> turns.\nAll effects are removed upon triggering."
+  },
+  "500923": {
+   "name": "Renovate II",
+   "effect": "Repair AMT <color=#F74848>+20%</color>."
+  },
+  "5009234": {
+   "name": "Vengeful Edge",
+   "effect": "When [Maat] uses [Splitter], [Severance] or [Thorn Annihilation], each stack increases hit count by <color=#F74848>1</color>."
+  },
+  "1019509": {
+   "name": "Hook Charge",
+   "effect": "Each use of [Hook] skills consumes <color=#F74848>1</color> charge. Can store up to <color=#F74848>3</color> charges."
+  },
+  "1019500": {
+   "name": "Hook",
+   "effect": "Collective term for <skill activeSkill=1019501>[Hook - Grab]</skill> and <skill activeSkill=1019511>[Hook - Chase]</skill>."
+  },
+  "4012502": {
+   "name": "Structural Damage",
+   "effect": "When [Hardaway] actively attacks this unit with Rocket Launchers, Critical Hit chance increases by <color=#F74848>3%</color> for each <color=#F74848>1</color> stack, stacking up to <color=#F74848>10</color> times. If a critical hit occurs, causes this target to receive <buf ID=900017>[Fixed DMG]</buf> equal to <color=#F74848>0.05x</color> Rocket Launcher ATK for <color=#F74848>3</color> times after combat. The <buf ID=900017>[Fixed DMG]</buf> effect does not stack. This effect lasts for <color=#F74848>2</color> turns and can stack up to <color=#F74848>10</color> times."
+  },
+  "5010502": {
+   "name": "Stratagem",
+   "effect": "[Tang] can consume these stacks to activate personal skills. This effect stacks up to <color=#F74848>5</color> times."
+  },
+  "50105021": {
+   "name": "Rejuvenation",
+   "effect": "After combat, if any part is destroyed, repairs <color=#F74848>1</color> destroyed part and restores HP to all parts equal to <color=#F74848>20%</color> max HP. This effect is removed after triggering."
+  },
+  "5010468": {
+   "name": "Stratagem Infusion",
+   "effect": "Consumes <color=#F74848>1</color> additional stack of <buf ID=5010502>[Stratagem]</buf> to enhance this skill's effect."
+  },
+  "50105023": {
+   "name": "Ambition",
+   "effect": "When actively attacking, AP consumption increases by <color=#F74848>+1</color>, skill multiplier increases by <color=#F74848>+0.1</color> (this effect is reduced to <color=#F74848>1/4</color> for Rocket Launchers) and DMG dealt increases by <color=#F74848>20%</color>. This effect is removed after triggering."
+  },
+  "50105024": {
+   "name": "Ambition II",
+   "effect": "When actively attacking, AP consumption increases by <color=#F74848>+2</color>, skill multiplier increases by <color=#F74848>+0.2</color> (this effect is reduced to <color=#F74848>1/4</color> for Rocket Launchers) and DMG dealt increases by <color=#F74848>30%</color>. This effect is removed after triggering."
+  },
+  "50105025": {
+   "name": "Indulgence",
+   "effect": "Final DMG dealt reduces by <color=#F74848>-15%</color>, lasting for <color=#F74848>1</color> turn."
+  },
+  "50105026": {
+   "name": "Indulgence II",
+   "effect": "Final DMG dealt reduces by <color=#F74848>-25%</color>, lasting for <color=#F74848>1</color> turn."
+  },
+  "5010506": {
+   "name": "Shrewdness",
+   "effect": "For each <color=#F74848>1</color> stack, increases Flamethrower ATK and Repair AMT by <color=#F74848>2%</color>, stacking up to <color=#F74848>15</color> times."
+  },
+  "5010061": {
+   "name": "Firewalk",
+   "effect": "Final DMG taken reduces by <color=#F74848>50%</color>. After actively attacking, if this unit is on friendly <terrian ID=4003081 />, consumes the terrain effect and triggers <buf ID=900004>[Re-ATK]</buf>, allowing movement of <color=#F74848>2</color> tiles before attacking. This effect is removed at the end of turn."
+  },
+  "900166": {
+   "name": "Feral Spirit",
+   "effect": "Can be consumed for [Giselle]'s special skills to deal <buf ID=900017>[Fixed DMG]</buf> equal to the consumed stacks."
+  },
+  "900167": {
+   "name": "Crusher",
+   "effect": "After actively attacking with Polearm, if the hit part's HP is below a certain percentage, triggers <buf ID=900109>[Execution]</buf> after combat to immediately destroy that part."
+  },
+  "3014505": {
+   "name": "Arch-Enemy",
+   "effect": "Attacks from [Bertha] cannot be blocked by <buf ID=900024>[Selfless Guard]</buf> or <buf ID=900022>[Guard]</buf>. Dodge Rate is reduced by <color=#F74848>20%</color>."
+  },
+  "3014508": {
+   "name": "Determination",
+   "effect": "DMG dealt increases by <color=#F74848>5%</color> when using <buf ID=900153>[Weapon Skill]</buf>, stacking up to <color=#F74848>5</color> times. This effect is removed upon triggering."
+  },
+  "3014053": {
+   "name": "Duelist Soul",
+   "effect": "<buf ID=3014508>[Determination]</buf> max stacks increases by <color=#F74848>1</color>. Always retains at least <color=#F74848>1</color> stack of <buf ID=3014508>[Determination]</buf> after combat. This effect can stack up to <color=#F74848>2</color> times."
+  },
+  "3014464": {
+   "name": "Global Repair Reduction",
+   "effect": "Repair AMT Received reduces by <color=#F74848>25%</color>."
+  },
+  "182900": {
+   "name": "Suppression",
+   "effect": "Armor reduced by <color=#F74848>4%</color>, chance of receiving a critical hit increased by <color=#F74848>2%</color>, stacking up to <color=#F74848>5</color> times, lasting for <color=#F74848>2</color> turns."
+  },
+  "182903": {
+   "name": "Phantom",
+   "effect": "Ignores unit obstruction when moving."
+  },
+  "9990001": {
+   "name": "Favorable Event",
+   "effect": "Includes Critical Hit chance, Hit rate, Dodge Rate, Component proc rate, Module proc rate, <buf ID=900001>[Flurry Strike]</buf> and <buf ID=900010>[Gusty Strike]</buf> proc rate"
   }
+ },
+ "skill": {
+  "20342": {
+   "name": "Shock Wave",
+   "Ap": "1",
+   "CD": "0",
+   "icon": "Icon_skill_order_1126",
+   "effect": "Knocks all targets in a 1x3-tile line back 2 tiles."
+  },
+  "20343": {
+   "name": "High Tide",
+   "Ap": "2",
+   "CD": "0",
+   "icon": "Icon_skill_order_1127",
+   "effect": "Knocks all targets in a cone ahead back 2 tiles."
+  },
+  "301144": {
+   "name": "Rapid Realignment",
+   "Ap": "0",
+   "CD": "1",
+   "effect": "Quickly moves to an empty tile within <color=#F74848>3</color> tiles and reselects rack direction without exiting [Directional Rack] Mode",
+   "icon": "Icon_skill_order_5004"
+  },
+  "301150": {
+   "name": "Directional Rack",
+   "Ap": "0",
+   "CD": "1",
+   "effect": "Enters [Directional Rack] Mode: Unable to move, Sniper Rifle's attack range becomes fixed-direction <color=#F5C542>fan-shaped 5-tile</color> area. Can continue attacking after using [Directional Rack]. Automatically exits [Directional Rack] Mode en an Arm is destroyed. <color=#F5C542>[Retract]</color> is available in [Directional Rack] Mode. After retracting, can continue moving.",
+   "icon": "Icon_skill_order_5004"
+  },
+  "4010041": {
+   "name": "All-Out Assault Tactics",
+   "Ap": "2",
+   "CD": "2",
+   "icon": "Icon_skill_order_5141",
+   "effect": "Designates a single ally across the map to receive <buf ID=4010044>[All-Out Assault Tactics]</buf> until the end of action, while gaining <color=#F74848>2</color> stacks of <buf ID=4010500>[Intel]</buf>."
+  },
+  "4010042": {
+   "name": "Maneuverability Tactics",
+   "Ap": "3",
+   "CD": "2",
+   "icon": "Icon_skill_order_5142",
+   "effect": "Grants all allies <buf ID=7100901>[Movement UP]</buf>, lasting for <color=#F74848>1</color> turn, while gaining <color=#F74848>3</color> stacks of <buf ID=4010500>[Intel]</buf>."
+  },
+  "4010043": {
+   "name": "Total Offensive Tactics",
+   "Ap": "4",
+   "CD": "2",
+   "icon": "Icon_skill_order_5143",
+   "effect": "Grants other allies <buf ID=4010045>[Full Assault]</buf> until the end of action, while gaining <color=#F74848>4</color> stacks of <buf ID=4010500>[Intel]</buf>."
+  },
+  "500746": {
+   "name": "Position Recall",
+   "Ap": "0",
+   "CD": "0",
+   "icon": "Icon_skill_order_1020",
+   "effect": "Removes <buf ID=900108>[Hologram]</buf> and teleports the original unit to the <buf ID=900108>[Hologram]</buf>'s location."
+  },
+  "600850": {
+   "name": "Defense Field",
+   "Ap": "1",
+   "CD": "2",
+   "icon": "Icon_skill_order_5138",
+   "effect": "Applies a [Defense Field] to the designated tile and the surrounding 1-ring radius for 3 turns. Can continue action with remaining Movement."
+  },
+  "601050": {
+   "name": "Vengeful Strike",
+   "Ap": "1",
+   "CD": "0",
+   "icon": "Icon_skill_order_5146",
+   "effect": "Selects <color=#F74848>1</color> enemy target carrying <buf ID=6010502>[Magnetic Lock-On]</buf>, consumes all Railgun ammo to attack all enemies within the selected <range type=1>1-tile cross-shaped</range>, <range type=2>3x3 square</range> or <range type=2>2-tile diamond</range> area. The number of attacks is equal to the ammo consumed, priotizing unhit targets. Each attack deals <color=#F74848>0.6x</color> DMG to the target and all enemies within <color=#F74848>1</color> adjacent tile. All attacks will prioritize hitting body. Repeat attacks on the same target deal <color=#F74848>60%</color> reduced DMG. Removes <buf ID=6010502>[Magnetic Lock-On]</buf> after the skill ends."
+  },
+  "601051": {
+   "name": "Vengeful Strike β",
+   "Ap": "0",
+   "CD": "0",
+   "icon": "Icon_skill_order_5146",
+   "effect": "Uses Railgun to attack all enemies carrying <buf ID=6010502>[Magnetic Lock-On]</buf> in order from nearest to furthest. All attacks prioritize hitting body and priotize unhit targets. Each attack deals <color=#F74848>0.4x</color> DMG to the target and all enemies within <color=#F74848>1</color> adjacent tile. Repeat attacks on the same target deal <color=#F74848>60%</color> reduced DMG. This attack does not consume Railgun ammo and does not remove <buf ID=6010502>[Magnetic Lock-On]</buf>."
+  },
+  "6011501": {
+   "name": "Polearm Throw",
+   "Ap": "0",
+   "CD": "0",
+   "icon": "Icon_skill_passive_5185",
+   "effect": "Uses Polearm to attack a target within <color=#F74848>4</color> adjacent tiles, dealing <color=#F74848>0.6x</color> DMG to the target as well as all enemies along the path to the target. This skill is considered a [Retaliation]."
+  },
+  "301350": {
+   "name": "Marshall Edict",
+   "Ap": "0",
+   "CD": "0",
+   "icon": "Icon_skill_order_5151",
+   "effect": "Designates <color=#F74848>1</color> ally within <color=#F74848>4</color> adjacent tiles as <buf ID=3013504>[Personal Aide]</buf>, then continues to act with remaining movement. This skill can only be used once per battle."
+  },
+  "301304": {
+   "name": "Servitude",
+   "Ap": "2",
+   "CD": "4",
+   "icon": "Icon_skill_order_5152",
+   "effect": "Applies <buf ID=900151>[Reset]</buf> to [Audrey] who has finished her action, allowing [Audrey] to act again and gain <color=#F74848>2</color> AP. Grants <buf ID=900149>[Leader Crest]</buf> and <buf ID=9001544>[Convergence]</buf> to [Audrey] as well as <buf ID=900152>[Concealed Edge]</buf> to self, lasting for 1 turn."
+  },
+  "500894": {
+   "name": "It's a Goo-Good Day to Die!",
+   "Ap": "4",
+   "icon": "Icon_skill_order_1125",
+   "effect": "Uses a Machine Gun to attack all targets within a <range type=2>3x3 tile area</range> in front, dealing <color=#F74848>0.6x</color> AoE DMG, and inflicts <buf ID=5008941>[You Forgoo-Goot Me!]</buf> on targets hit."
+  },
+  "8001504": {
+   "name": "Particle Burst",
+   "Ap": "0",
+   "CD": "0",
+   "icon": "Icon_skill_order_5155",
+   "effect": "Consumes all <buf ID=900199>[Particle Energy]</buf> and switches to <skill passiveSkill=800159>[Virtual Particle Form]</skill>. Gains all <buf ID=900157>[Form Buff]</buf> and deals <buf ID=900017>[Fixed DMG]</buf> equal to <color=#F74848>15%</color> of [Hailis]'s ST Body max HP to all enemies within <color=#F74848>2</color> adjacent tiles. Returns to current form after <color=#F74848>2</color> actions. This skill does not consume AP."
+  },
+  "800159": {
+   "name": "Virtual Particle Form",
+   "effect": "The restricted state of particle form. Accumulating <color=#F74848>5</color> stacks of <buf ID=900199>[Particle Energy]</buf> allows the usage of <skill activeSkill=8001504>[Particle Burst]</skill> to remove this restriction. Cannot change weapon or skills in this form. Can only use <skill activeSkill=7300431 noDisplay>[Particle Blade]</skill>, <skill activeSkill=7300441 noDisplay>[Particle Cannon]</skill> and <skill activeSkill=7300451 noDisplay>[Particle Matrix]</skill>. Returns to current form after <color=#F74848>2</color> actions. Cannot be targeted by <buf ID=900023>[Quick Draw]</buf>, <buf ID=900013>[Vigilant Shot]</buf>, <buf ID=900006>[Reaction Attack]</buf> and <buf ID=900136>[Insight]</buf>."
+  },
+  "7300431": {
+   "name": "Particle Blade",
+   "Ap": "3",
+   "CD": "0",
+   "icon": "Icon_skill_main_1162",
+   "effect": "Uses condensed star virtual particle to attack a target, dealing <color=#F74848>1.4x</color> DMG. This attack always hits the body."
+  },
+  "7300441": {
+   "name": "Particle Cannon",
+   "Ap": "4",
+   "CD": "0",
+   "icon": "Icon_skill_main_1027",
+   "effect": "Uses condensed meteorite virtual particle to attack a target, dealing <color=#F74848>0.8x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking. This attack ignores target's Armor and prioritize hitting the same part."
+  },
+  "7300451": {
+   "name": "Particle Matrix",
+   "Ap": "4",
+   "CD": "0",
+   "icon": "Icon_skill_order_1013",
+   "effect": "Uses condensed cosmic virtual particle to attack all targets within <color=#F74848>4</color>-tile fan-shaped area in front, dealing <color=#F74848>1.1x</color> AoE DMG. After combat, if the part hit is at <color=#F74848>15%</color> HP or less, that part is instantly destroyed."
+  },
+  "7300432": {
+   "name": "Particle Blade EX",
+   "Ap": "3",
+   "CD": "0",
+   "icon": "Icon_skill_main_1162",
+   "effect": "Uses condensed star virtual particle to attack a target, dealing <color=#F74848>1.8x</color> DMG. This attack always hits the body and ignores target's DMG Reduction effect."
+  },
+  "7300442": {
+   "name": "Particle Cannon EX",
+   "Ap": "4",
+   "CD": "0",
+   "icon": "Icon_skill_main_1027",
+   "effect": "Uses condensed meteorite virtual particle to attack a target, dealing <color=#F74848>1.1x</color> DMG. If the target's HP is at <color=#F74848>60%</color> or more, this skill multiplier increases by <color=#F74848>10%</color>, up to <color=#F74848>40%</color>. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking. This attack ignores target's Armor and prioritize hitting the same part."
+  },
+  "7300452": {
+   "name": "Particle Matrix EX",
+   "Ap": "5",
+   "CD": "0",
+   "icon": "Icon_skill_order_1013",
+   "effect": "Uses condensed cosmic virtual particle to attack all targets within <color=#F74848>4</color>-tile fan-shaped area in front, dealing <color=#F74848>1.4x</color> AoE DMG. After combat, if the part hit is at <color=#F74848>15%</color> HP or less, that part is instantly destroyed. For each <color=#F74848>1</color> part destroyed, gains <color=#F74848>1</color> AP, up to <color=#F74848>3</color> AP."
+  },
+  "7300461": {
+   "name": "World Chaser",
+   "Ap": "5",
+   "CD": "0",
+   "icon": "Icon_skill_main_1172",
+   "effect": "Unleashes a chain attack using all Particle Weapons in order. Cosmic virtual particle deals <color=#F74848>1.2x</color> DMG to the target. Meteorite virtual particle deals <color=#F74848>1x</color> DMG to the target's part with highest HP. Star virtual particle deals <color=#F74848>1.2x</color> DMG to the target body. After combat, deploys <terrian ID=6008502 /> on the area within <color=#F74848>1</color>-ring of self, lasting for <color=#F74848>2</color> turns."
+  },
+  "730015": {
+   "name": "Rising Dragon",
+   "Ap": "3",
+   "CD": "0",
+   "icon": "Icon_skill_main_1113",
+   "effect": "Uses a Knuckle or Pilebunker to attack a target, dealing <color=#F74848>1.4x</color> DMG. This attack always hits the body part."
+  },
+  "7300162": {
+   "name": "Mountain Splitter",
+   "Ap": "4",
+   "CD": "0",
+   "icon": "Icon_skill_main_1106",
+   "effect": "Uses two Melee Weapons to attack a target, dealing <color=#F74848>0.9x</color> DMG <color=#F74848>2</color> times. The <color=#F74848>1st</color> attack hits the part with the highest HP. If this part is not destroyed, the <color=#F74848>2nd</color> attack will hit the same part."
+  },
+  "7300171": {
+   "name": "Shadow Rush",
+   "Ap": "3",
+   "CD": "0",
+   "icon": "Icon_skill_order_1103",
+   "effect": "Uses Polearm to <range type=1>thrust 4 tiles forward</range>, dealing <color=#F74848>1.4x</color> DMG to the <color=#F74848>1st</color> target hit. Inflicts <buf ID=7101505>[Crash]</buf> on the target, lasting <color=#F74848>1</color> turn."
+  },
+  "7300181": {
+   "name": "Sky Piercer",
+   "Ap": "4",
+   "CD": "0",
+   "icon": "Icon_skill_order_9902",
+   "effect": "Throws a Polearm at all targets within a <range type=1>4-tile line</range> (including flying targets), dealing <color=#F74848>1.3x</color> AoE DMG. Can enter <buf ID=900014>[Aiming]</buf> Mode before combat."
+  },
+  "7300191": {
+   "name": "Double-Edged Saw",
+   "Ap": "3",
+   "CD": "0",
+   "icon": "Icon_skill_main_1157",
+   "effect": "Uses a Chainsaw to attack a target, dealing <color=#F74848>1.35x</color> DMG. This attack always hits the body part.\nBefore combat, reduces own HP by <color=#F74848>20%</color> of max HP from all parts, then deals <color=#F74848>20%</color> of target max HP as <buf ID=900017>[Fixed DMG]</buf>. The HP reduction as well as the <buf ID=900017>[Fixed DMG]</buf> cannot destroy any part."
+  },
+  "7300201": {
+   "name": "Critical Strike",
+   "Ap": "4",
+   "CD": "0",
+   "icon": "Icon_skill_main_1157",
+   "effect": "Uses a Chainsaw to attack a target, dealing <color=#F74848>1.8x</color> DMG. This attack always hits the part with lowest HP."
+  },
+  "7300211": {
+   "name": "Starfall Flash",
+   "Ap": "3",
+   "CD": "0",
+   "icon": "Icon_skill_main_1162",
+   "effect": "Selects <color=#F74848>1</color> target (including flying target) within <color=#F74848>4</color> adjacent tiles and strikes with Alter-Blade, dealing <color=#F74848>1.3x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking. After attacking, this unit will be positioned on a random unoccupied tile within <color=#F74848>1</color> ring around the target."
+  },
+  "7300221": {
+   "name": "Rotating Slash",
+   "Ap": "4",
+   "CD": "0",
+   "icon": "Icon_skill_order_1131",
+   "effect": "Uses two Alter-Blades to attack in a designated direction, dealing <color=#F74848>1.5x</color> DMG to the target. Prioritizes attacking parts with less than full HP. If there are adjacent enemies in that direction, can continue to attack adjacent units (attacking up to <color=#F74848>4</color> enemy units), then stops on the opposite side of the farthest target."
+  },
+  "7300231": {
+   "name": "Quick Snipe",
+   "Ap": "3",
+   "CD": "0",
+   "icon": "Icon_skill_main_1117",
+   "effect": "Uses a Sniper Rifle to shoot a target <color=#F74848>2</color> times, with each shot dealing <color=#F74848>0.9x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking."
+  },
+  "7300241": {
+   "name": "Penetrating Shot",
+   "Ap": "4",
+   "CD": "0",
+   "icon": "Icon_skill_order_1133",
+   "effect": "Uses a Sniper Rifle to attack the target and all enemy units along the path within range, dealing <color=#F74848>1.1x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking. If any part is destroyed, the same attack is launched again with <color=#F74848>50%</color> reduced multiplier. This effect can be repeated <color=#F74848>1</color> time."
+  },
+  "7300251": {
+   "name": "Chain Shot",
+   "Ap": "3",
+   "CD": "0",
+   "icon": "Icon_skill_main_1117",
+   "effect": "Uses a Light Rifle to shoot a target <color=#F74848>2</color> times, with each shot dealing <color=#F74848>0.9x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking."
+  },
+  "7300261": {
+   "name": "Marking Shot",
+   "Ap": "4",
+   "CD": "0",
+   "icon": "Icon_skill_main_1128",
+   "effect": "Uses Light Rifle to attack a target, dealing <color=#F74848>1.5x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking. Applies <buf ID=900049>[Exposure II]</buf> to the part hit after combat, lasting for <color=#F74848>2</color> turns."
+  },
+  "7300271": {
+   "name": "Cluster Shot",
+   "Ap": "3",
+   "CD": "0",
+   "icon": "Icon_skill_main_1121",
+   "effect": "Uses Machine Gun to attack a target, dealing <color=#F74848>1.5x</color> DMG. Hit Weighting against the part with lowest HP increases by <color=#F74848>+50</color>."
+  },
+  "7300281": {
+   "name": "Chain Finisher",
+   "Ap": "4",
+   "CD": "0",
+   "icon": "Icon_skill_main_1129",
+   "effect": "Uses two Machine Guns to attack a target, dealing <color=#F74848>2x0.8</color> DMG. For each <color=#F74848>10%</color> HP missing from the target, increases Critical Hit chance by <color=#F74848>5%</color>, up to <color=#F74848>30%</color>."
+  },
+  "7300291": {
+   "name": "Dual Barrage",
+   "Ap": "3",
+   "CD": "1",
+   "icon": "Icon_skill_order_1107",
+   "effect": "Simultaneously uses two Shotguns to attack all targets within a <range type=1>3x2-tile area ahead</range>, dealing <color=#F74848>0.6x</color> AoE DMG <color=#F74848>2</color> times."
+  },
+  "7300301": {
+   "name": "Desperate Shot",
+   "Ap": "4",
+   "CD": "0",
+   "icon": "Icon_skill_main_1141",
+   "effect": "Uses a Shotgun to attack a target, dealing <color=#F74848>1.6x</color> DMG. This attack cannot be dodged."
+  },
+  "7300311": {
+   "name": "Burning Spirit",
+   "Ap": "3",
+   "CD": "0",
+   "icon": "Icon_skill_main_1151",
+   "effect": "Uses a Flamethrower to attack the main target, dealing <color=#F74848>1.4x</color> DMG and dealing <color=#F74848>20%</color> <buf ID=900065>[Flame DMG]</buf> to other targets in the path. If the main target is on allied <terrian ID=4003081 />, the terrain effect triggers once after combat."
+  },
+  "7300321": {
+   "name": "Crimson Invasion",
+   "Ap": "4",
+   "CD": "0",
+   "icon": "Icon_skill_main_1166",
+   "effect": "Uses both Flamethrowers to attack a target, dealing <color=#F74848>2×0.8</color> DMG. If the target is on allied <terrian ID=4003081 />, the skill multiplier increases by <color=#F74848>+0.1</color>."
+  },
+  "7300331": {
+   "name": "Bullet Storm",
+   "Ap": "3",
+   "CD": "0",
+   "icon": "Icon_skill_order_1010",
+   "effect": "Uses Heavy Machine Gun to attack all targets within range, dealing <color=#F74848>0.5x</color> AoE DMG. DMG dealt increases by <color=#F74848>20%</color> against parts with <color=#F74848>50%</color> or more HP remaining."
+  },
+  "7300341": {
+   "name": "Iron Curtain",
+   "Ap": "4",
+   "CD": "0",
+   "icon": "Icon_skill_main_4105",
+   "effect": "Uses Heavy Machine Gun to attack a target, dealing <color=#F74848>1.5x</color> DMG. Inflicts <buf ID=2004081>[Retaliation Disabled]</buf> on target before combat."
+  },
+  "7300351": {
+   "name": "Concentrated Strike",
+   "Ap": "3",
+   "CD": "0",
+   "icon": "Icon_skill_order_1114",
+   "effect": "Uses two Missile Launchers to attack a target, dealing <color=#F74848>2x0.8</color> DMG. Both missiles will hit the same part, and cause <color=#F74848>50%</color> Splash DMG to parts other than the part hit."
+  },
+  "7300361": {
+   "name": "Bombardment Command",
+   "Ap": "4",
+   "CD": "0",
+   "icon": "Icon_skill_order_1129",
+   "effect": "Uses Missile Launcher to attack a target, dealing <color=#F74848>1.4x</color> DMG to the part hit and <color=#F74848>50%</color> Splash DMG to other parts. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking. Enables all allies to launch <buf ID=900002>[Link Attacks]</buf> against it. These <buf ID=900002>[Link Attacks]</buf> do not require allies to possess a specific skill and do not consume any Link chances."
+  },
+  "7300371": {
+   "name": "Fiery Rain",
+   "Ap": "3",
+   "CD": "0",
+   "icon": "Icon_skill_order_1121",
+   "effect": "Uses Rocket Launcher to attack all targets within the selected 3x3-tile area, dealing <color=#F74848>0.25x</color> AoE DMG to all parts. After combat, applies <terrian ID=4003081 /> to the tiles hit."
+  },
+  "7300381": {
+   "name": "Carpet Bombing",
+   "Ap": "4",
+   "CD": "0",
+   "icon": "Icon_skill_order_1135",
+   "effect": "Uses two Rocket Launcher to attack all targets within the selected 5x5-tile area, dealing <color=#F74848>2x0.15x</color> AoE DMG to all parts. After combat, grants <color=#F74848>1</color> random buff to all allies, lasting for <color=#F74848>2</color> turns."
+  },
+  "7300391": {
+   "name": "Ray Of Light",
+   "Ap": "3",
+   "CD": "0",
+   "icon": "Icon_skill_order_1111",
+   "effect": "Uses a Rail Gun to attack the same part of all targets within a <range type=1>1x5-tile line</range> or a 4-tile diagonal area and deals <color=#F74848>0.9x</color> AoE DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking."
+  },
+  "7300401": {
+   "name": "Piercing Thorn",
+   "Ap": "4",
+   "CD": "0",
+   "icon": "Icon_skill_order_5115",
+   "effect": "Uses a Rail Gun to attack all targets within a <range type=1>3x5-tile area</range>, dealing <color=#F74848>0.95x</color> AoE DMG. This attack always hits the body part."
+  },
+  "7300411": {
+   "name": "Meteor Shower",
+   "Ap": "3",
+   "CD": "0",
+   "icon": "Icon_skill_order_1012",
+   "effect": "Uses Cutter to attack up to <color=#F74848>4</color> targets within attack range, dealing <color=#F74848>1.2x</color> AoE DMG. Can select same target repeatedly. Repeated attack on the same target deals <color=#F74848>40%</color> increased DMG."
+  },
+  "7300421": {
+   "name": "Total Assault",
+   "Ap": "4",
+   "CD": "0",
+   "icon": "Icon_skill_order_1132",
+   "effect": "Uses a Cutter to attack all targets within <color=#F74848>4</color> tiles, dealing <color=#F74848>1.3x</color> AoE DMG. If a target is destroyed after combat, grants all allies <buf ID=7100305>[DMG UP III]</buf>, lasting for <color=#F74848>1</color> turn."
+  },
+  "730016": {
+   "name": "Weakness Strike",
+   "Ap": "2",
+   "CD": "0",
+   "icon": "Icon_skill_main_1102",
+   "effect": "Uses a Knuckle or Pilebunker to attack a target, dealing <color=#F74848>1.35x</color> DMG. This attack always hits the part with lowest HP."
+  },
+  "7300172": {
+   "name": "Spear Strike",
+   "Ap": "2",
+   "CD": "0",
+   "icon": "Icon_skill_main_1110",
+   "effect": "Uses a Polearm to attack a target, dealing <color=#F74848>1.35x</color> DMG. This attack always hits the part with lowest HP."
+  },
+  "7300192": {
+   "name": "Saw Strike",
+   "Ap": "2",
+   "CD": "0",
+   "icon": "Icon_skill_main_1155",
+   "effect": "Uses a Chainsaw to attack a target, dealing <color=#F74848>1.35x</color> DMG. This attack always hits the part with lowest HP."
+  },
+  "7300212": {
+   "name": "Blade Strike",
+   "Ap": "2",
+   "CD": "0",
+   "icon": "Icon_skill_main_1159",
+   "effect": "Uses an Alter-Blade to attack a target, dealing <color=#F74848>1.35x</color> DMG. This attack always hits the part with lowest HP."
+  },
+  "7300232": {
+   "name": "Snipe",
+   "Ap": "2",
+   "CD": "0",
+   "icon": "Icon_skill_main_1144",
+   "effect": "Uses a Sniper Rifle to attack a target, dealing <color=#F74848>1.3x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking."
+  },
+  "7300252": {
+   "name": "Lock-On",
+   "Ap": "2",
+   "CD": "0",
+   "icon": "Icon_skill_main_1016",
+   "effect": "Uses a Light Rifle to attack a target, dealing <color=#F74848>1.3x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking."
+  },
+  "7300272": {
+   "name": "Concentrated Fire",
+   "Ap": "3",
+   "CD": "0",
+   "icon": "Icon_skill_main_1125",
+   "effect": "Uses Machine Gun to attack a target, dealing <color=#F74848>1.3x</color> DMG. Before combat, grants <buf ID=7100105>[Hit Rate UP III]</buf> to self, lasting for <color=#F74848>1</color> turn."
+  },
+  "7300292": {
+   "name": "Turbo Shot",
+   "Ap": "3",
+   "CD": "0",
+   "icon": "Icon_skill_main_1105",
+   "effect": "Uses Shotgun to attack a target, dealing <color=#F74848>1.3x</color> DMG. DMG dealt increases by <color=#F74848>15%</color> against part with <color=#F74848>50%</color> HP or less."
+  },
+  "7300312": {
+   "name": "Flame Strike",
+   "Ap": "3",
+   "CD": "0",
+   "icon": "Icon_skill_main_1150",
+   "effect": "Uses Flamethrower to attack a target, dealing <color=#F74848>1.3x</color> DMG and dealing <color=#F74848>20%</color> <buf ID=900065>[Flame DMG]</buf> to other targets in the path. Applies <terrian ID=4003081 /> to all tiles along the attack path, lasting for <color=#F74848>2</color> turns."
+  },
+  "7300332": {
+   "name": "Bullet Rain",
+   "Ap": "3",
+   "CD": "0",
+   "icon": "Icon_skill_main_2102",
+   "effect": "Uses Heavy Machine Gun to attack a target, dealing <color=#F74848>1.3x</color> DMG. Inflicts <buf ID=7101104>[Dodge Rate Down III]</buf> on the target hit, lasting for <color=#F74848>2</color> turns."
+  },
+  "7300352": {
+   "name": "Piercing Wind",
+   "Ap": "3",
+   "CD": "0",
+   "icon": "Icon_skill_order_1006",
+   "effect": "Uses Missile Launcher to attack a target, dealing <color=#F74848>2.2x</color> DMG to the part hit. This attack prioritizes attacking part without full HP."
+  },
+  "7300372": {
+   "name": "Sweeping Barrage",
+   "Ap": "4",
+   "CD": "0",
+   "icon": "Icon_skill_order_1008",
+   "effect": "Uses Rocket Launcher to attack all targets within the selected 3x3-tile area, dealing <color=#F74848>0.275x</color> AoE DMG to all parts. After combat, inflicts <buf ID=3006502>[Short Circuit I]</buf> to all targets hit."
+  },
+  "7300392": {
+   "name": "Magnetized Shot",
+   "Ap": "3",
+   "CD": "0",
+   "icon": "Icon_skill_order_1007",
+   "effect": "Uses a Rail Gun to attack the same part of all targets within a <range type=1>1x5-tile line</range>, dealing <color=#F74848>1x</color> AoE DMG. Inflicts <buf ID=7101506>[Movement Inhibition I]</buf> on the target hit, lasting for <color=#F74848>1</color> turn."
+  },
+  "7300412": {
+   "name": "Floating Cannon",
+   "Ap": "3",
+   "CD": "0",
+   "icon": "Icon_skill_order_1132",
+   "effect": "Uses Cutter to attack all targets within the selected <color=#F74848>2</color>-tile radius area, dealing <color=#F74848>1.25x</color> AoE DMG."
+  },
+  "1019512": {
+   "name": "Corrupting Shadow",
+   "Ap": "0",
+   "CD": "0",
+   "icon": "Icon_skill_order_1119",
+   "effect": "Uses Chainsaw to attack all targets within <color=#F74848>1</color> ring area, dealing <color=#F74848>0.25x</color> AoE DMG. Inflicts <buf ID=7101701>[Armor Down I]</buf> on targets hit, lasting for <color=#F74848>1</color> turn. Also inflicts <color=#F74848>1</color> stack of <buf ID=5009234>[Vengeful Edge]</buf> to all targets hit."
+  },
+  "1019501": {
+   "name": "Hook - Grab",
+   "Ap": "0",
+   "CD": "0",
+   "icon": "Icon_skill_order_1151",
+   "effect": "Grapples to an ally or enemy target with hook and drags them to [Maat]'s front tile, ignoring unit collision on the path. Then triggers <buf ID=900004>[Re-ATK]</buf>, allowing movement of <color=#F74848>2</color> tiles before attacking. This effect can only displace each unit <color=#F74848>1</color> time per turn."
+  },
+  "1019511": {
+   "name": "Hook - Chase",
+   "Ap": "0",
+   "CD": "0",
+   "icon": "Icon_skill_order_1150",
+   "effect": "Grapples to an ally or enemy target with hook and drags [Maat] to the target's side, ignoring unit collision on the path. Then triggers <buf ID=900004>[Re-ATK]</buf>, allowing movement of <color=#F74848>2</color> tiles before attacking."
+  },
+  "4012082": {
+   "name": "Final Barrage",
+   "Ap": "4",
+   "CD": "0",
+   "icon": "Icon_skill_order_1147",
+   "effect": "Attacks all targets within [Annihilation Zone] with both Rocket Launchers, dealing <color=#F74848>2x0.2</color> AoE DMG. For each <color=#F74848>1</color> stack of <buf ID=4012502>[Structural Damage]</buf> the target carries, Final DMG dealt increases by <color=#F74848>15%</color>. Removes all [Structural Damage] stacks on targets hit after combat. Switches to <skill activeSkill=401208>[Annihilation Beacon]</skill> after use. This skill cannot be used again after switching in current turn. If not used by the end of turn, removes [Annihilation Zone] and switchs back to <skill activeSkill=401208>[Annihilation Beacon]</skill>."
+  },
+  "4012041": {
+   "name": "Command Override",
+   "Ap": "0",
+   "CD": "0",
+   "icon": "Icon_skill_order_1140",
+   "effect": "If the target actively uses a Command Skill this turn, inflicts <buf ID=1099903>[Command Block]</buf> to the target, lasting for <color=#F74848>1</color> turn. Otherwise, inflicts <color=#F74848>2</color> stacks of <buf ID=4012502>[Structural Damage]</buf> to the target. This effect is removed after triggering."
+  },
+  "4012042": {
+   "name": "Weapon Override",
+   "Ap": "0",
+   "CD": "0",
+   "icon": "Icon_skill_order_1140",
+   "effect": "If the target actively uses a Weapon Skill this turn, inflicts <buf ID=1004021>[Weapon Inhibition]</buf> to the target, lasting for <color=#F74848>1</color> turn. Otherwise, inflicts <color=#F74848>2</color> stacks of <buf ID=4012502>[Structural Damage]</buf> to the target. This effect is removed after triggering."
+  },
+  "5010501": {
+   "name": "Stratagem - Respite",
+   "Ap": "0",
+   "CD": "0",
+   "icon": "Icon_skill_order_3118",
+   "effect": "Consumes <color=#F74848>1</color> stack of <buf ID=5010502>[Stratagem]</buf>. Selects <color=#F74848>1</color> ally within <color=#F74848>3</color> adjacent tiles, restores HP to all parts equal to <color=#F74848>20%</color> [Tang]'s body max HP. Can repair <color=#F74848>1</color> destroyed part, dispel <color=#F74848>1</color> debuff and apply <buf ID=50105021>[Rejuvenation]</buf> to the target. Applies the same repair effect to <color=#F74848>1</color> other ally with lowest HP percentage. Can activate <buf ID=5010468>[Stratagem Infusion]</buf> to increase Repair AMT to <color=#F74848>25%</color> and affect <color=#F74848>1</color> additional ally."
+  },
+  "5010502": {
+   "name": "Stratagem - Encouragement",
+   "Ap": "0",
+   "CD": "0",
+   "icon": "Icon_skill_order_1153",
+   "effect": "Consumes <color=#F74848>1</color> stack of <buf ID=5010502>[Stratagem]</buf>. Selects and grants <buf ID=50105023>[Ambition]</buf> to <color=#F74848>1</color> ally within <color=#F74848>3</color> adjacent tiles. Can activate <buf ID=5010468>[Stratagem Infusion]</buf> to upgrade <buf ID=50105023>[Ambition]</buf> to <buf ID=50105024>[Ambition II]</buf>."
+  },
+  "5010503": {
+   "name": "Stratagem - Bribery",
+   "Ap": "0",
+   "CD": "0",
+   "icon": "Icon_skill_order_5159",
+   "effect": "Consumes <color=#F74848>1</color> stack of <buf ID=5010502>[Stratagem]</buf>. Selects and applies <buf ID=50105025>[Indulgence]</buf> to <color=#F74848>1</color> enemy within <color=#F74848>4</color> adjacent tiles. Can activate <buf ID=5010468>[Stratagem Infusion]</buf> to upgrade <buf ID=50105025>[Indulgence]</buf> to <buf ID=50105026>[Indulgence II]</buf>."
+  },
+  "5010031": {
+   "name": "Stratagem - Investment",
+   "Ap": "0",
+   "CD": "0",
+   "icon": "Icon_skill_order_5156",
+   "effect": "All allies lose <color=#F74848>1</color> AP and gain <color=#F74848>2</color> AP at the start of next turn. Can activate <buf ID=5010468>[Stratagem Infusion]</buf> to avoid AP reduction in this turn. Can continue to act with remaining movement."
+  },
+  "5010032": {
+   "name": "Stratagem - Prepayment",
+   "Ap": "0",
+   "CD": "0",
+   "icon": "Icon_skill_order_5157",
+   "effect": "All allies gain <color=#F74848>1</color> AP and lose <color=#F74848>3</color> AP at the start of next turn. Can activate <buf ID=5010468>[Stratagem Infusion]</buf> to reduce AP loss to <color=#F74848>2</color> at the start of next turn. Can continue to act with remaining movement."
+  },
+  "301452": {
+   "name": "Deploy Sentry",
+   "Ap": "0",
+   "CD": "0",
+   "icon": "Icon_skill_order_5161",
+   "effect": "Redeploys <terrian ID=3014501 /> to a tile within <color=#F74848>4</color> adjacent tiles of [Bertha] or within <color=#F74848>3</color> adjacent tiles of the original <terrian ID=3014501 />, then triggers <buf ID=900004>[Re-ATK]</buf> in place. This skill can be used <color=#F74848>1</color> time per turn."
+  },
+  "301453": {
+   "name": "Sworn Enemy",
+   "Ap": "0",
+   "CD": "0",
+   "icon": "Icon_skill_order_5162",
+   "effect": "Desinates <color=#F74848>1</color> enemy within <color=#F74848>4</color> adjacent tiles of [Bertha] or within <terrian ID=3014501 /> as <buf ID=3014505>[Arch-Enemy]</buf>. Only <color=#F74848>1</color> <buf ID=3014505>[Arch-Enemy]</buf> can exist at a time. Can continue to act with remaining movement. This skill can be used <color=#F74848>1</color> time per turn."
+  },
+  "53104": {
+   "name": "Optimized Posture",
+   "effect": "When in combat, if equipped with a Machine Gun and a Small Shield, Machine Gun Final DMG <color=#F74848>+10%</color>, and Final DMG Taken <color=#F74848>-15%</color>."
+  },
+  "53103": {
+   "name": "Malfunction Implant",
+   "effect": "When attacking with a Machine Gun, inflicts <color=#F74848>1</color> stack of <buf ID=531032>[Fire Control Delay]</buf> on the target, up to <color=#F74848>5</color> stacks."
+  },
+  "182901": {
+   "name": "Boundless Hunt",
+   "Ap": "0",
+   "icon": "Icon_skill_order_1107",
+   "effect": "Uses a Shotgun to launch an Extra Strike, dealing <color=#F74848>0.25</color>x DMG to all targets within a <color=#F74848>2</color>-tile radius affected by <buf ID=182900>[Suppression]</buf>. This attack can also trigger the <buf ID=900004>[Re-ATK]</buf> effect of Mobile Warfare."
+  },
+  "182902": {
+   "name": "Flurry Strike",
+   "effect": "Uses the opposite arm to launch an additional attack, dealing bonus DMG. The multiplier is increased by the <skill ID=182560>[Gun Heart, Blade Soul]</skill> passive line."
+  }
+ },
+ "terrain": {
+  "4003081": {
+   "name": "Burning Terrain",
+   "effect": "Deals [Fixed DMG] equal to 12% of Max HP to all parts of enemies that remain on this tile."
+  },
+  "3014501": {
+   "name": "Sentry Zone",
+   "effect": "[Bertha] can ignore range and directly attack enemy units within this area when using a Sniper Rifle. This terrain can exist together with other terrains."
+  },
+  "4011081": {
+   "name": "Restricted Area",
+   "effect": "[Collin] will use cutters to attack enemy stopping on this tile, dealing <color=#F74848>0.6x</color> damage. This terrain has high priority."
+  },
+  "6008501": {
+   "name": "Defense Field",
+   "effect": "Grants DMG Taken <color=#F74848>-15%</color> to allies that remain on this tile. This terrain effect has high priority."
+  },
+  "6008502": {
+   "name": "Particle Domain",
+   "effect": "Grants DMG Taken <color=#F74848>-15%</color> to allies that remain on this tile. This terrain effect has high priority."
+  }
+ }
 }

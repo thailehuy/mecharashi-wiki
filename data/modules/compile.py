@@ -136,6 +136,69 @@ MANUAL_LEVEL_OVERRIDES = {
 }
 
 
+# Modules exclusive to a manually-added mech (see data/mechs/INTAKE_TEMPLATE.md)
+# have no CN catalog entry at all — build_local_index() finds them equipped on
+# a mech, but they never match any `scraped` entry, so the main loop below
+# would otherwise skip them entirely (leaving them absent from the Modules
+# page and unable to get a real level slider on the mech's own detail page).
+#
+# When adding a new one here, `levels` MUST cover every level from 1 to
+# `maxLevel`, not just the mech's current/max level — the mech-page slider
+# (ModuleSlider in js/pages/sts.js) looks up `mod.levels[String(level)]`
+# directly with no fallback, so any level missing from this dict renders as
+# blank text the moment the slider is dragged there (this happened for real
+# with the first two entries below, '9010' and '1050', when they only had
+# their max level filled in). The intake form should already have the full
+# per-level number progression (e.g. "3/6/9/15%") — turn that into one
+# `levels[str(i)]` entry per number, using a small text-builder function like
+# `_origin_core_text`/`_descension_module_text` below to avoid repeating the
+# template prose per level. If a bonus clause only unlocks at max level (see
+# `_descension_module_text`'s `bonus` param), only pass it on the final
+# level — same pattern as the scraped-catalog modules' bonus clauses
+# elsewhere in this file (e.g. family 3012 "Vigilant Mod").
+def _origin_core_text(pct):
+    return ('During own turn, increases Dodge Rate by <color=#F74848>' + pct + '%</color> of Firepower. '
+            'During enemy turn, increases Firepower by <color=#F74848>' + pct + '%</color> of Dodge Rate.')
+
+
+def _descension_module_text(pct, bonus=False):
+    text = ('Increases DMG dealt to targets within 2 adjacent tiles by <color=#F74848>' + pct + '%</color>. '
+            'Reduces DMG taken from attacker beyond 2 adjacent tiles by <color=#F74848>' + pct + '%</color>.')
+    if bonus:
+        text += ('\n<buf ID=9990001>[Favorable Event]</buf> trigger rate increases by <color=#F74848>+10%</color>. '
+                 'DMG calculation will use the highest number of pilot\'s attributes')
+    return text
+
+
+MANUAL_MODULES = {
+    '9010': {
+        'name': 'Origin Core',
+        'icon': 'Icon_entry_40042',
+        'category': 'GeneralSuit',
+        'maxLevel': 4,
+        'currentLevel': 4,
+        'levels': {
+            str(i + 1): _origin_core_text(pct) for i, pct in enumerate(['3', '6', '9', '15'])
+        },
+    },
+    '1050': {
+        'name': 'Descension Module',
+        'icon': 'Icon_entry_10109',
+        'category': 'GeneralSuit',
+        'maxLevel': 8,
+        'currentLevel': 8,
+        # The [Favorable Event]/highest-attribute bonus clause only unlocks
+        # at max level (same "extra effect unlocked at max level" pattern as
+        # e.g. family 3012 "Vigilant Mod" above) — levels 1-7 only get the
+        # primary DMG dealt/taken clause.
+        'levels': {
+            str(i + 1): _descension_module_text(pct, bonus=(i == 7))
+            for i, pct in enumerate(['4', '6', '8', '10', '14', '16', '18', '24'])
+        },
+    },
+}
+
+
 def primary_clause(text):
     """Some modules unlock an extra clause only at their max level (e.g.
     "...DMG Taken -18%; HP >= 50%: DMG +20%"). That bonus clause is always
@@ -441,6 +504,9 @@ def main():
             'levels': level_effects,
         }
         synthesized_families.append(cn_name)
+
+    for family, manual_mod in MANUAL_MODULES.items():
+        modules.setdefault(family, manual_mod)
 
     out = {'modules': modules}
     with open(os.path.join(DIR, 'compiled.json'), 'w', encoding='utf-8') as f:

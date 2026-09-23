@@ -123,7 +123,7 @@ Pages.ststats = {
       var m = r.mech;
       var rankClass = MECH_QUALITY_CLASS[m.quality] || '';
       var bgSrc     = MECH_QUALITY_BG[m.quality] || '';
-      var iconSrc   = MECH_AVATAR_BASE + encodeURIComponent(m.icon) + '.png';
+      var iconSrc   = mechIconSrc(m);
       var nameEsc   = $('<span>').text(m.name).html();
 
       return (
@@ -131,7 +131,7 @@ Pages.ststats = {
           '<td class="ststats-name-cell">' +
             '<a class="dispatch-cell" href="#sts/' + encodeURIComponent(m.name) + '">' +
               '<span class="dispatch-cell-icon ' + rankClass + '" style="background-image:url(\'' + bgSrc + '\')">' +
-                '<img src="' + iconSrc + '" alt="' + nameEsc + '" loading="lazy" />' +
+                '<img src="' + iconSrc + '"' + mechIconErrorAttr(m) + ' alt="' + nameEsc + '" loading="lazy" />' +
               '</span>' +
               '<span class="dispatch-cell-name">' + nameEsc + '</span>' +
             '</a>' +

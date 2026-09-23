@@ -139,7 +139,7 @@ Pages.modules = {
 
     var cards = sorted.map(function (fam) {
       var mod = modules[fam];
-      var iconSrc = MODULE_ICON_BASE + encodeURIComponent(mod.icon) + '.png';
+      var iconSrc = moduleIconSrc(mod.icon);
       // mod.currentLevel is just whichever mech instance happened to supply
       // the translation template at compile time — meaningless as a default
       // here (no specific mech to be "current" for), so default to max level.
@@ -152,7 +152,7 @@ Pages.modules = {
         '<div class="col-12 col-sm-6 col-lg-4 col-xl-3 module-card-wrap" data-name="' + encodeURIComponent(mod.name.toLowerCase()) + '">' +
           '<div class="module-card">' +
             '<div class="module-card-header">' +
-              '<img class="module-card-icon" src="' + iconSrc + '" alt="" />' +
+              '<img class="module-card-icon" src="' + iconSrc + '"' + moduleIconErrorAttr(mod.icon) + ' alt="" />' +
               '<span class="module-card-name">' + $('<span>').text(mod.name).html() + '</span>' +
             '</div>' +
             mechIconsHtml +
@@ -182,14 +182,14 @@ Pages.modules = {
     return (
       '<div class="module-card-mechs">' +
         mechs.map(function (m) {
-          var iconSrc  = MECH_AVATAR_BASE + encodeURIComponent(m.icon) + '.png';
+          var iconSrc  = mechIconSrc(m);
           var bgSrc    = MECH_QUALITY_BG[m.quality] || '';
           var rankClass = MECH_QUALITY_CLASS[m.quality] || '';
           var nameEsc  = $('<span>').text(m.name).html();
           return (
             '<a class="module-card-mech-icon-wrap" href="#sts/' + encodeURIComponent(m.name) + '">' +
               '<span class="module-card-mech-icon ' + rankClass + '" style="background-image:url(\'' + bgSrc + '\')">' +
-                '<img src="' + iconSrc + '" alt="' + nameEsc + '" />' +
+                '<img src="' + iconSrc + '"' + mechIconErrorAttr(m) + ' alt="' + nameEsc + '" />' +
               '</span>' +
               '<span class="module-card-mech-tooltip">' + nameEsc + '</span>' +
             '</a>'
@@ -202,7 +202,7 @@ Pages.modules = {
   // ── Detail ─────────────────────────────────────────────────────────────────
 
   _renderDetail: function (family, mod) {
-    var iconSrc = MODULE_ICON_BASE + encodeURIComponent(mod.icon) + '.png';
+    var iconSrc = moduleIconSrc(mod.icon);
 
     var levelsHtml = '';
     for (var lv = 1; lv <= mod.maxLevel; lv++) {
@@ -225,10 +225,10 @@ Pages.modules = {
         '<div class="module-mech-list">' +
           (mechs.length
             ? mechs.map(function (m) {
-                var mImgSrc = MECH_AVATAR_BASE + encodeURIComponent(m.icon) + '.png';
+                var mImgSrc = mechIconSrc(m);
                 return (
                   '<a class="module-mech-card" href="#sts/' + encodeURIComponent(m.name) + '">' +
-                    '<img class="module-mech-avatar" src="' + mImgSrc + '" alt="' + $('<span>').text(m.name).html() + '" />' +
+                    '<img class="module-mech-avatar" src="' + mImgSrc + '"' + mechIconErrorAttr(m) + ' alt="' + $('<span>').text(m.name).html() + '" />' +
                     '<div class="module-mech-name">' + $('<span>').text(m.name).html() + '</div>' +
                   '</a>'
                 );
@@ -244,7 +244,7 @@ Pages.modules = {
 
       '<div class="module-detail-header">' +
         '<div class="module-detail-portrait">' +
-          '<img src="' + iconSrc + '" alt="' + $('<span>').text(mod.name).html() + '" />' +
+          '<img src="' + iconSrc + '"' + moduleIconErrorAttr(mod.icon) + ' alt="' + $('<span>').text(mod.name).html() + '" />' +
         '</div>' +
         '<div class="module-header-name-row">' +
           '<h2 class="detail-name">' + $('<span>').text(mod.name).html() + '</h2>' +

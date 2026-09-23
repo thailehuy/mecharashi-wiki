@@ -1,0 +1,201 @@
+{
+  "data": {
+    "data": [
+      {
+        "ID": "90010102",
+        "name": "MobiuX",
+        "position": "Body",
+        "type": "Light",
+        "quality": "SSR",
+        "aircraftWeight": "285",
+        "durable": "9703",
+        "Armor": "470",
+        "fire": "1215",
+        "Antiriot": "4472",
+        "output": "1595",
+        "ModuleCarried": [
+          {
+            "ID": "90104",
+            "name": "Origin Core",
+            "SpecificEffects": "During own turn, increases Dodge Rate by <color=#F74848>15%</color> of Firepower. During enemy turn, increases Firepower by <color=#F74848>15%</color> of Dodge Rate.",
+            "BufCarried": "901041",
+            "SkillIcon": "Icon_entry_40042",
+            "icon": "Icon_entry_40042",
+            "Status": 1,
+            "weight": 100,
+            "id": "9010",
+            "level": 4
+          },
+          {
+            "ID": "40024",
+            "name": "Crit Rate Mod",
+            "SpecificEffects": "Crit Rate <color=#F74848>+10%</color>.",
+            "BufCarried": "400241",
+            "SkillIcon": "Icon_entry_40021",
+            "icon": "Icon_entry_40021",
+            "Status": 1,
+            "weight": 868,
+            "id": "4002",
+            "level": 4
+          },
+          {
+            "ID": "10508",
+            "name": "Descension Module",
+            "SpecificEffects": "Increases DMG dealt to targets within 2 adjacent tiles by <color=#F74848>24%</color>. Reduces DMG taken from attacker beyond 2 adjacent tiles by <color=#F74848>24%</color>.\n<buf ID=9990001>[Favorable Event]</buf> trigger rate increases by <color=#F74848>+10%</color>. DMG calculation will use the highest number of pilot's attributes",
+            "BufCarried": "105081",
+            "SkillIcon": "Icon_entry_10109",
+            "icon": "Icon_entry_10109",
+            "Status": 1,
+            "weight": 100,
+            "id": "1050",
+            "level": 8
+          }
+        ],
+        "icon": "Icon_mecha_wap1052",
+        "introduce": "",
+        "mechaIcon": "Icon_wap1052_1",
+        "lihuiIcon": "icon_lihui_wap1052",
+        "Status": 1,
+        "weight": 0,
+        "manji": {
+          "name": "MobiuX",
+          "durable": "9703",
+          "Armor": "470",
+          "fire": "1215",
+          "output": "1595",
+          "Antiriot": "4472",
+          "Interface": "Ⅰ型接口",
+          "ModuleCarried": [
+            {
+              "ID": "90104",
+              "name": "Origin Core",
+              "SpecificEffects": "During own turn, increases Dodge Rate by <color=#F74848>15%</color> of Firepower. During enemy turn, increases Firepower by <color=#F74848>15%</color> of Dodge Rate.",
+              "BufCarried": "901041",
+              "SkillIcon": "Icon_entry_40042",
+              "icon": "Icon_entry_40042",
+              "Status": 1,
+              "weight": 100,
+              "id": "9010",
+              "level": 4
+            },
+            {
+              "ID": "40024",
+              "name": "Crit Rate Mod",
+              "SpecificEffects": "Crit Rate <color=#F74848>+10%</color>.",
+              "BufCarried": "400241",
+              "SkillIcon": "Icon_entry_40021",
+              "icon": "Icon_entry_40021",
+              "Status": 1,
+              "weight": 868,
+              "id": "4002",
+              "level": 4
+            },
+            {
+              "ID": "10508",
+              "name": "Descension Module",
+              "SpecificEffects": "Increases DMG dealt to targets within 2 adjacent tiles by <color=#F74848>24%</color>. Reduces DMG taken from attacker beyond 2 adjacent tiles by <color=#F74848>24%</color>.\n<buf ID=9990001>[Favorable Event]</buf> trigger rate increases by <color=#F74848>+10%</color>. DMG calculation will use the highest number of pilot's attributes",
+              "BufCarried": "105081",
+              "SkillIcon": "Icon_entry_10109",
+              "icon": "Icon_entry_10109",
+              "Status": 1,
+              "weight": 100,
+              "id": "1050",
+              "level": 8
+            }
+          ],
+          "Status": 1,
+          "weight": 0
+        }
+      },
+      {
+        "ID": "90010202",
+        "name": "MobiuX",
+        "position": "L-Arm",
+        "type": "Light",
+        "quality": "SSR",
+        "aircraftWeight": "100",
+        "durable": "5115",
+        "Armor": "0",
+        "fire": "1215",
+        "Hit": "1974",
+        "ModuleCarried": [],
+        "introduce": "",
+        "mechaIcon": "Icon_wap1052_2",
+        "Status": 1,
+        "weight": 1,
+        "manji": {
+          "name": "MobiuX",
+          "durable": "5115",
+          "Armor": "0",
+          "fire": "1215",
+          "Hit": "1974",
+          "Interface": "Ⅱ型接口",
+          "ModuleCarried": [],
+          "Status": 1,
+          "weight": 1
+        },
+        "icon": "Icon_mecha_wap1052"
+      },
+      {
+        "ID": "90010302",
+        "name": "MobiuX",
+        "position": "R-Arm",
+        "type": "Light",
+        "quality": "SSR",
+        "aircraftWeight": "100",
+        "durable": "5115",
+        "Armor": "0",
+        "fire": "1215",
+        "Hit": "1974",
+        "ModuleCarried": [],
+        "introduce": "",
+        "mechaIcon": "Icon_wap1052_3",
+        "Status": 1,
+        "weight": 2,
+        "manji": {
+          "name": "MobiuX",
+          "durable": "5115",
+          "Armor": "0",
+          "fire": "1215",
+          "Hit": "1974",
+          "Interface": "Ⅱ型接口",
+          "ModuleCarried": [],
+          "Status": 1,
+          "weight": 2
+        },
+        "icon": "Icon_mecha_wap1052"
+      },
+      {
+        "ID": "90010402",
+        "name": "MobiuX",
+        "position": "Legs",
+        "type": "Light",
+        "quality": "SSR",
+        "aircraftWeight": "160",
+        "durable": "8452",
+        "Armor": "0",
+        "fire": "1215",
+        "Dodge": "5233",
+        "move": "4",
+        "ModuleCarried": [],
+        "introduce": "",
+        "mechaIcon": "Icon_wap1052_4",
+        "Status": 1,
+        "weight": 3,
+        "manji": {
+          "name": "MobiuX",
+          "durable": "8452",
+          "Armor": "0",
+          "fire": "1215",
+          "Dodge": "5233",
+          "move": "4",
+          "Interface": "Ⅰ型接口",
+          "ModuleCarried": [],
+          "Status": 1,
+          "weight": 3
+        },
+        "icon": "Icon_mecha_wap1052"
+      }
+    ]
+  }
+}

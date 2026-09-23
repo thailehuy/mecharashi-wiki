@@ -73,13 +73,13 @@ Pages.shops = {
       );
     }
 
-    var iconSrc = MECH_AVATAR_BASE + encodeURIComponent(mech.icon) + '.png';
+    var iconSrc = mechIconSrc(mech);
     var bgSrc = MECH_QUALITY_BG[mech.quality] || '';
     var rankClass = MECH_QUALITY_CLASS[mech.quality] || '';
     return (
       '<a class="dispatch-cell" href="#sts/' + encodeURIComponent(mech.name) + '">' +
         '<span class="dispatch-cell-icon ' + rankClass + '" style="background-image:url(\'' + bgSrc + '\')">' +
-          '<img src="' + iconSrc + '" alt="' + nameEsc + '" loading="lazy" />' +
+          '<img src="' + iconSrc + '"' + mechIconErrorAttr(mech) + ' alt="' + nameEsc + '" loading="lazy" />' +
         '</span>' +
         '<span class="dispatch-cell-name">' + nameEsc + '</span>' +
       '</a>'
@@ -108,7 +108,7 @@ Pages.shops = {
     }
 
     var iconHtml = icon
-      ? '<img class="shop-mod-chip-icon" src="' + MODULE_ICON_BASE + encodeURIComponent(icon) + '.png" alt="" />'
+      ? '<img class="shop-mod-chip-icon" src="' + moduleIconSrc(icon) + '"' + moduleIconErrorAttr(icon) + ' alt="" />'
       : '<span class="shop-mod-chip-icon shop-mod-chip-icon-empty"></span>';
 
     if (family) {

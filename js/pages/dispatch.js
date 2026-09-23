@@ -34,13 +34,13 @@ Pages.dispatch = {
           '</div>'
         );
       }
-      var iconSrc  = MECH_AVATAR_BASE + encodeURIComponent(m.icon) + '.png';
+      var iconSrc  = mechIconSrc(m);
       var bgSrc    = MECH_QUALITY_BG[m.quality] || '';
       var rankClass = MECH_QUALITY_CLASS[m.quality] || '';
       return (
         '<a class="dispatch-cell" href="#sts/' + encodeURIComponent(m.name) + '">' +
           '<span class="dispatch-cell-icon ' + rankClass + '" style="background-image:url(\'' + bgSrc + '\')">' +
-            '<img src="' + iconSrc + '" alt="' + nameEsc + '" loading="lazy" />' +
+            '<img src="' + iconSrc + '"' + mechIconErrorAttr(m) + ' alt="' + nameEsc + '" loading="lazy" />' +
           '</span>' +
           '<span class="dispatch-cell-name">' + nameEsc + '</span>' +
         '</a>'

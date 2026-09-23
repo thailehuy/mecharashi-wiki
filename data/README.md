@@ -76,6 +76,13 @@ To build the file by hand instead:
 
 ## Adding a mech
 
+The easiest way to hand off a new mech: fill in
+`data/mechs/INTAKE_TEMPLATE.md` (name, type, per-part stats, modules
+carried, image filenames) and ask Claude to generate the mech from it — it
+follows the same TEMPLATE.json shape and rules below.
+
+To build the file by hand instead:
+
 1. Copy `data/mechs/TEMPLATE.json` to `data/mechs/<ID>.json`. It's a list of
    4 part objects: `Body`, `L-Arm`, `R-Arm`, `Legs` — `compile.py` expects
    exactly this order/shape (`position` value drives the "which part is
@@ -90,11 +97,18 @@ To build the file by hand instead:
      and `Antiriot` on Body only; `Hit` on the arms; `Dodge` on the legs
    - `icon`, `mechaIcon`, `lihuiIcon` (Body only) — CDN image keys, see
      **Images** below
+   - `AlternateSkins` (Body only, optional) — array of local skin variant
+     tokens, see **Images** below
    - `introduce` — flavor text (Body only; that's what's shown on the
      detail page)
    - `ModuleCarried` — array of module objects the part can equip; the
      `manji` version supersedes base stats/modules when a mech is at max
-     level, same fallback rule as pilots
+     level, same fallback rule as pilots. A module family entirely new to
+     this repo (no existing module to reuse) has no CN catalog entry, so it
+     also needs a `MANUAL_MODULES` entry in `data/modules/compile.py` with
+     the full per-level effect text (every level, not just the mech's
+     current one) — see the comment above `MANUAL_MODULES` in that file for
+     why and the exact shape.
 3. Run `python3 compile.py` and confirm the mech appears in
    `data/mechs/compiled.json` under `"mechs"`.
 
@@ -118,9 +132,32 @@ Just drop the PNGs there named exactly after the pilot's `PortraitHeroIcon`
 automatic (see `LOCAL_AVATAR_BASE`/`LOCAL_PORTRAIT_BASE` in
 `js/pages/pilots.js`).
 
-Mechs have no such fallback wired up yet — a `mechaIcon`/`icon`/`lihuiIcon`
-without a CN CDN asset will just render as a broken image until one is
-added.
+Mechs get a similar local fallback for `icon` (grid/detail thumbnail) and
+the detail-page portrait:
+
+- `data/unlisted/mechs/Icon/<Type>/<icon>.png` (e.g.
+  `data/unlisted/mechs/Icon/Light/Icon_mecha_wap1002.png`)
+- `data/unlisted/mechs/Raw/<Type>/<icon-with-Icon_mecha_-prefix-stripped>_SN_Raw.png`
+  (e.g. `data/unlisted/mechs/Raw/Light/Icon_mecha_wap1002_SN_Raw.png`)
+
+`<Type>` is the mech's `Light`/`Medium`/`Heavy` weight class. No field or
+code changes needed, the fallback is automatic (see `mechIconSrc`/
+`mechPortraitSrc` in `js/pages/sts.js`). `mechaIcon` has no local
+fallback — a mech without a CN CDN asset for it will just render as a
+broken image where `mechaIcon` is used (currently unused in `js/`, so this
+mostly doesn't matter in practice).
+
+Alternate skins (the swipeable variants on the detail-page portrait, same UX
+as pilots' `AlternateSkins`) live under
+`data/unlisted/mechs/Skins/<Type>/Img_Skin_<wap-id>_<variant>.png`, where
+`<wap-id>` is the mech's `icon` field with its `Icon_mecha_` prefix stripped
+(e.g. `wap1002`) and `<variant>` is an arbitrary suffix token used by the
+existing scraped filenames (`01`, `02`, `S1`, ...). List each variant token
+the mech has a file for in a Body-only `AlternateSkins` array (e.g.
+`["01", "S1"]`) — the mech's default look ("A") always reuses the normal Raw
+portrait above and needs no Skins file of its own. Mech module icons get the
+same local-first treatment from `data/unlisted/mech_modules/` (flat, no
+weight-class split) — see `moduleIconSrc` in `js/pages/sts.js`.
 
 Talent/Skill/Neural icons (`SkillIcon`/`icon` on those blocks) are also
 sourced from the CN CDN by key — the intake form asks for these directly

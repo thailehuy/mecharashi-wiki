@@ -53,6 +53,8 @@ for path in sorted(glob.glob(f'{DIR}/[0-9]*.json')):
     manji = body.get('manji', {})
     entry['manjiFirepower'] = manji.get('fire', body.get('fire', ''))
     entry['modules']        = manji.get('ModuleCarried', [])
+    if body.get('AlternateSkins'):
+        entry['AlternateSkins'] = body['AlternateSkins']
 
     t_path = f'{DIR}/{mid}-translation.json'
     t = json.load(open(t_path, 'r', encoding='utf8')) if os.path.exists(t_path) else {}

@@ -10,6 +10,54 @@ var MECH_QUALITY_BG = {
 var MECH_AVATAR_BASE    = 'https://media.zlongame.com/media/pictures/cn/community/img/gl/gameInfo/mecha/';
 var MECH_PORTRAIT_BASE  = 'https://media.zlongame.com/media/pictures/cn/community/img/gl/gameInfo/mechaLive/';
 var MODULE_ICON_BASE    = 'https://media.zlongame.com/media/pictures/cn/community/img/gl/gameInfo/skill/';
+// Mech icons/portraits are now sourced locally, split by weight class.
+var LOCAL_MECH_ICON_BASE    = 'data/unlisted/mechs/Icon/';
+var LOCAL_MECH_PORTRAIT_BASE = 'data/unlisted/mechs/Raw/';
+var LOCAL_MECH_SKIN_BASE     = 'data/unlisted/mechs/Skins/';
+// Mech module icons are now sourced locally (flat, no weight-class split).
+var LOCAL_MODULE_ICON_BASE = 'data/unlisted/mech_modules/';
+
+function moduleIconSrc(iconName) {
+  return LOCAL_MODULE_ICON_BASE + encodeURIComponent(iconName) + '.png';
+}
+
+function moduleIconErrorAttr(iconName) {
+  var fallback = MODULE_ICON_BASE + encodeURIComponent(iconName) + '.png';
+  return ' onerror="this.onerror=null;this.src=\'' + fallback + '\';"';
+}
+
+function mechIconSrc(m) {
+  return LOCAL_MECH_ICON_BASE + m.type + '/' + encodeURIComponent(m.icon) + '.png';
+}
+
+function mechIconErrorAttr(m) {
+  var fallback = MECH_AVATAR_BASE + encodeURIComponent(m.icon) + '.png';
+  return ' onerror="this.onerror=null;this.src=\'' + fallback + '\';"';
+}
+
+function mechWapId(m) {
+  return (m.icon || '').replace('Icon_mecha_', '');
+}
+
+function mechPortraitSrc(m) {
+  return LOCAL_MECH_PORTRAIT_BASE + m.type + '/Icon_mecha_' + encodeURIComponent(mechWapId(m)) + '_SN_Raw.png';
+}
+
+function mechPortraitErrorAttr(m) {
+  var fallback = MECH_PORTRAIT_BASE + encodeURIComponent(m.lihuiIcon) + '.jpg';
+  return ' onerror="this.onerror=null;this.src=\'' + fallback + '\';"';
+}
+
+// Alternate skins (data/unlisted/mechs/Skins/<Type>/) are keyed by a variant
+// suffix (e.g. "01", "S1") rather than a pilot-style letter — the mech's
+// default look ("A") just reuses its normal Raw portrait, no Skins file.
+function mechSkinSrc(m, variant) {
+  return LOCAL_MECH_SKIN_BASE + m.type + '/Img_Skin_' + encodeURIComponent(mechWapId(m)) + '_' + encodeURIComponent(variant) + '.png';
+}
+
+function mechSkinSrcFor(m, variant) {
+  return variant === 'A' ? mechPortraitSrc(m) : mechSkinSrc(m, variant);
+}
 
 Pages.sts = {
   title: 'STs',
@@ -19,6 +67,8 @@ Pages.sts = {
   _activeVersions: {},
   _lastViewed:     null,
   _searchQuery:    '',
+  _skinIndex:         null,
+  _skinTransitioning: false,
 
   // ── Routing entry point ────────────────────────────────────────────────────
   render: function (param) {
@@ -118,13 +168,13 @@ Pages.sts = {
       var rankLabel = MECH_QUALITY_LABEL[m.quality] || m.quality;
       var rankClass = MECH_QUALITY_CLASS[m.quality] || '';
       var bgSrc     = MECH_QUALITY_BG[m.quality] || '';
-      var imgSrc    = MECH_AVATAR_BASE + encodeURIComponent(m.icon) + '.png';
+      var imgSrc    = mechIconSrc(m);
 
       return (
         '<div class="col-6 col-sm-4 col-md-3 col-xl-2">' +
           '<div class="pilot-card" data-mech="' + encodeURIComponent(m.name) + '">' +
             '<div class="pilot-avatar" style="background-image:url(\'' + bgSrc + '\')">' +
-              '<img src="' + imgSrc + '" alt="' + $('<span>').text(m.name).html() + '" loading="lazy" />' +
+              '<img src="' + imgSrc + '"' + mechIconErrorAttr(m) + ' alt="' + $('<span>').text(m.name).html() + '" loading="lazy" />' +
               '<span class="version-badge">v' + $('<span>').text(m.version).html() + '</span>' +
               '<span class="rank-badge ' + rankClass + '">' + rankLabel + '</span>' +
             '</div>' +
@@ -164,9 +214,68 @@ Pages.sts = {
   },
 
   _buildDetail: function (m) {
+    var self = this;
     var rankLabel   = MECH_QUALITY_LABEL[m.quality] || m.quality;
     var rankClass   = MECH_QUALITY_CLASS[m.quality] || '';
-    var portraitSrc = MECH_PORTRAIT_BASE + encodeURIComponent(m.lihuiIcon) + '.jpg';
+    var bgSrc       = MECH_QUALITY_BG[m.quality] || '';
+
+    var skinVariants = ['A'].concat(m.AlternateSkins || []);
+    if (this._skinIndex == null || this._skinIndex >= skinVariants.length) this._skinIndex = 0;
+    var skinIdx     = this._skinIndex;
+    var portraitSrc = mechSkinSrcFor(m, skinVariants[skinIdx]);
+    var portraitErrorAttr = skinVariants[skinIdx] === 'A'
+      ? mechPortraitErrorAttr(m)
+      : ' onerror="this.onerror=null;this.src=\'' + mechPortraitSrc(m) + '\';"';
+
+    var skinNavHtml = '';
+    if (skinVariants.length > 1) {
+      skinNavHtml =
+        '<button class="skin-nav skin-nav-prev" data-skin-nav="prev" aria-label="Previous skin">&#10094;</button>' +
+        '<button class="skin-nav skin-nav-next" data-skin-nav="next" aria-label="Next skin">&#10095;</button>' +
+        '<div class="portrait-loading"></div>' +
+        '<div class="skin-dots">' +
+          skinVariants.map(function (v, i) {
+            return '<span class="skin-dot' + (i === skinIdx ? ' active' : '') + '"></span>';
+          }).join('') +
+        '</div>';
+
+      $(document).off('click.sts-skin').on('click.sts-skin', '[data-skin-nav]', function () {
+        if (self._skinTransitioning) return;
+        var dir     = $(this).data('skin-nav') === 'next' ? 1 : -1;
+        var nextIdx = (self._skinIndex + dir + skinVariants.length) % skinVariants.length;
+        var newSrc         = mechSkinSrcFor(m, skinVariants[nextIdx]);
+        var newSrcFallback = mechPortraitSrc(m);
+
+        self._skinIndex = nextIdx;
+        self._skinTransitioning = true;
+
+        var $img     = $('.detail-portrait-img');
+        var $loading = $('.portrait-loading');
+        var outCls   = dir === 1 ? 'skin-slide-out-left'  : 'skin-slide-out-right';
+        var inCls    = dir === 1 ? 'skin-slide-in-right'  : 'skin-slide-in-left';
+
+        $loading.addClass('active');
+        $img.addClass(outCls);
+
+        var settle = function (finalSrc) {
+          $loading.removeClass('active');
+          $img.attr('onerror', "this.onerror=null;this.src='" + newSrcFallback + "';").attr('src', finalSrc).removeClass(outCls).addClass(inCls);
+          // force reflow so the browser registers the "in" starting position
+          // before we remove it, otherwise the transition wouldn't play
+          void $img[0].offsetWidth;
+          requestAnimationFrame(function () {
+            $img.removeClass(inCls);
+          });
+          setTimeout(function () { self._skinTransitioning = false; }, 260);
+        };
+        var preload = new Image();
+        preload.onload = function () { settle(newSrc); };
+        preload.onerror = function () { settle(newSrcFallback); };
+        preload.src = newSrc;
+
+        $('.skin-dot').removeClass('active').eq(nextIdx).addClass('active');
+      });
+    }
 
     // Weight
     var bodyOutput  = parseInt(m.output, 10) || 0;
@@ -216,14 +325,15 @@ Pages.sts = {
 
     // Modules
     var moduleCards = (m.modules || []).map(function (mod) {
-      var iconSrc    = MODULE_ICON_BASE + encodeURIComponent(mod.SkillIcon || mod.icon) + '.png';
+      var iconName   = mod.SkillIcon || mod.icon;
+      var iconSrc    = moduleIconSrc(iconName);
       var lv         = mod.level || '';
       var sliderHtml = (typeof ModuleSlider !== 'undefined') ? ModuleSlider.html(mod.id, mod.level) : null;
       var body       = sliderHtml || ('<div class="talent-desc">' + Pages.sts._parseEffects(mod.SpecificEffects || '') + '</div>');
       return (
         '<div class="talent-card">' +
           '<div class="talent-header">' +
-            '<img class="talent-icon" src="' + iconSrc + '" alt="' + $('<span>').text(mod.name).html() + '" />' +
+            '<img class="talent-icon" src="' + iconSrc + '"' + moduleIconErrorAttr(iconName) + ' alt="' + $('<span>').text(mod.name).html() + '" />' +
             '<div>' +
               '<div class="talent-name">' +
                 $('<span>').text(mod.name).html() +
@@ -237,13 +347,14 @@ Pages.sts = {
     }).join('') || '<p class="text-secondary" style="font-size:0.8rem">No modules.</p>';
 
     var hiddenCards = (m.hiddenModules || []).map(function (mod) {
-      var iconSrc = MODULE_ICON_BASE + encodeURIComponent(mod.icon || 'Icon_entry_10086') + '.png';
+      var iconName = mod.icon || 'Icon_entry_10086';
+      var iconSrc  = moduleIconSrc(iconName);
       var desc    = Pages.sts._parseEffects(mod.SpecificEffects || '');
       var partTag = mod.part ? '<span class="module-level">' + $('<span>').text(mod.part).html() + '</span>' : '';
       return (
         '<div class="talent-card">' +
           '<div class="talent-header">' +
-            '<img class="talent-icon" src="' + iconSrc + '" alt="' + $('<span>').text(mod.name).html() + '" />' +
+            '<img class="talent-icon" src="' + iconSrc + '"' + moduleIconErrorAttr(iconName) + ' alt="' + $('<span>').text(mod.name).html() + '" />' +
             '<div>' +
               '<div class="talent-name">' + $('<span>').text(mod.name).html() + partTag + '</div>' +
             '</div>' +
@@ -264,10 +375,11 @@ Pages.sts = {
       // ── Top: portrait + info side by side
       '<div class="detail-layout">' +
         '<div class="detail-portrait-col">' +
-          '<div class="detail-portrait">' +
-            '<img src="' + portraitSrc + '" alt="' + $('<span>').text(m.name).html() + '" />' +
+          '<div class="detail-portrait" style="background-image:url(\'' + bgSrc + '\')">' +
+            '<img class="detail-portrait-img" src="' + portraitSrc + '"' + portraitErrorAttr + ' alt="' + $('<span>').text(m.name).html() + '" />' +
             '<span class="version-badge">v' + $('<span>').text(m.version).html() + '</span>' +
             '<span class="rank-badge ' + rankClass + '">' + rankLabel + '</span>' +
+            skinNavHtml +
           '</div>' +
         '</div>' +
         '<div class="detail-info-col">' +
@@ -306,10 +418,13 @@ Pages.sts = {
   destroy: function () {
     $(document).off('click.sts');
     $(document).off('input.sts');
-    this._activeRanks    = {};
-    this._activeTypes    = {};
-    this._activeVersions = {};
-    this._searchQuery    = '';
+    $(document).off('click.sts-skin');
+    this._activeRanks       = {};
+    this._activeTypes       = {};
+    this._activeVersions    = {};
+    this._searchQuery       = '';
+    this._skinIndex         = null;
+    this._skinTransitioning = false;
   }
 };
 

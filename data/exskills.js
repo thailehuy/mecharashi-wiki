@@ -58,7 +58,7 @@ window.ExSkillsData = {
     },
     {
       "name": "Multi-Vector Strike",
-      "icon": "Icon_entry_40311",
+      "icon": "Icon_skill_order_1011",
       "type": "Code",
       "Ap": "4",
       "CD": "0",
@@ -101,7 +101,7 @@ window.ExSkillsData = {
     },
     {
       "name": "Rend",
-      "icon": "Icon_entry_40301",
+      "icon": "Icon_skill_main_1026",
       "type": "Active",
       "Ap": "2",
       "Wpn": "Alter-Blade",

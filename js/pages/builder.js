@@ -566,7 +566,7 @@ Pages.builder = {
     }
 
     var items = mechs.map(function (m) {
-      return { value: m.ID, label: m.name, iconSrc: MECH_AVATAR_BASE + encodeURIComponent(m.icon) + '.png' };
+      return { value: m.ID, label: m.name, iconSrc: mechIconSrc(m), iconFallback: MECH_AVATAR_BASE + encodeURIComponent(m.icon) + '.png' };
     });
     return self._customSelect({
       group: 'mech',
@@ -1144,7 +1144,7 @@ Pages.builder = {
       // misleading for those.
       var sourceMech = p.mod.category === 'SuitS' ? self._moduleSourceMechName(p.family) : null;
       var label = sourceMech ? (p.mod.name + ' (' + sourceMech + ')') : p.mod.name;
-      return { value: p.family, label: label, iconSrc: MODULE_ICON_BASE + encodeURIComponent(p.mod.icon) + '.png' };
+      return { value: p.family, label: label, iconSrc: moduleIconSrc(p.mod.icon), iconFallback: MODULE_ICON_BASE + encodeURIComponent(p.mod.icon) + '.png' };
     });
     var levels = self._effectiveModuleLevels(mech);
 
@@ -1170,12 +1170,12 @@ Pages.builder = {
   },
 
   _modulePreviewHtml: function (mod, level) {
-    var iconSrc = MODULE_ICON_BASE + encodeURIComponent(mod.icon) + '.png';
+    var iconSrc = moduleIconSrc(mod.icon);
     var effect  = mod.levels[String(level)] || '';
     return (
       '<div class="skill-card builder-preview-card">' +
         '<div class="skill-header">' +
-          '<img class="skill-icon" src="' + iconSrc + '" alt="" />' +
+          '<img class="skill-icon" src="' + iconSrc + '"' + moduleIconErrorAttr(mod.icon) + ' alt="" />' +
           '<div class="skill-header-info">' +
             '<div class="skill-name-row">' +
               '<span class="skill-name">' + $('<span>').text(mod.name).html() + '</span>' +
@@ -1196,9 +1196,10 @@ Pages.builder = {
     if (!mech) return '';
 
     var mechModsHtml = (mech.modules || []).map(function (mod) {
-      var iconSrc = MODULE_ICON_BASE + encodeURIComponent(mod.SkillIcon || mod.icon) + '.png';
+      var iconName = mod.SkillIcon || mod.icon;
+      var iconSrc = moduleIconSrc(iconName);
       var levelLabel = mod.level ? ('Lv.' + mod.level) : '';
-      return self._compactModuleCard(iconSrc, mod.name, levelLabel, mod.SpecificEffects || '');
+      return self._compactModuleCard(iconSrc, mod.name, levelLabel, mod.SpecificEffects || '', moduleIconErrorAttr(iconName));
     }).join('') || '<p class="builder-slot-empty">None.</p>';
 
     var levels    = self._effectiveModuleLevels(mech);
@@ -1207,8 +1208,8 @@ Pages.builder = {
       var mod = modules[family];
       if (!mod) return '';
       var lvl = levels[family];
-      var iconSrc = MODULE_ICON_BASE + encodeURIComponent(mod.icon) + '.png';
-      return self._compactModuleCard(iconSrc, mod.name, 'Lv.' + lvl + '/' + mod.maxLevel, mod.levels[String(lvl)] || '');
+      var iconSrc = moduleIconSrc(mod.icon);
+      return self._compactModuleCard(iconSrc, mod.name, 'Lv.' + lvl + '/' + mod.maxLevel, mod.levels[String(lvl)] || '', moduleIconErrorAttr(mod.icon));
     }).join('') || '<p class="builder-slot-empty">None selected.</p>';
 
     var weaponsHtml = self._allEquippedWeapons().map(function (w) {
@@ -1258,10 +1259,10 @@ Pages.builder = {
     return list;
   },
 
-  _compactModuleCard: function (iconSrc, name, levelLabel, effect) {
+  _compactModuleCard: function (iconSrc, name, levelLabel, effect, iconErrorAttr) {
     return (
       '<div class="builder-module-compact">' +
-        '<img class="builder-module-compact-icon" src="' + iconSrc + '" alt="" />' +
+        '<img class="builder-module-compact-icon" src="' + iconSrc + '"' + (iconErrorAttr || '') + ' alt="" />' +
         '<div class="builder-module-compact-info">' +
           '<div class="builder-module-compact-name">' +
             $('<span>').text(name).html() +

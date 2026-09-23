@@ -1222,7 +1222,7 @@ window.GlossaryData = {
     },
     "900157": {
       "name": "Form Buff",
-      "effect": "<b>Vanguard</b>: When initiating combat with melee or ranged weapons, Hit Rate is increased by <color=#F74848>15%</color> and <buf ID=900010>[Gutsy Strike]</buf> can be triggered, dealing <color=#F74848>0.3x</color> DMG.\n<b>Assault</b>: When actively attacking with assault weapons, Critical Hit chance is increased by <color=#F74848>15%</color>. After combat, deals <buf ID=900017>[Fixed DMG]</buf> equal to <color=#F74848>0.4x</color> weapon attack to all parts of the target.\n<b>Tactical</b>: When actively attacking with tactical weapons, DMG dealt is increased by <color=#F74848>15%</color>. After combat, applies <buf ID=7101803>[DMG Taken UP II]</buf> to targets for <color=#F74848>2</color> turns.\nAll effects are removed upon triggering."
+      "effect": "<b>Vanguard</b>: When initiating combat with melee or ranged weapons, Hit Rate is increased by <color=#F74848>15%</color> and <buf ID=900010>[Gusty Strike]</buf> can be triggered, dealing <color=#F74848>0.3x</color> DMG.\n<b>Assault</b>: When actively attacking with assault weapons, Critical Hit chance is increased by <color=#F74848>15%</color>. After combat, deals <buf ID=900017>[Fixed DMG]</buf> equal to <color=#F74848>0.4x</color> weapon attack to all parts of the target.\n<b>Tactical</b>: When actively attacking with tactical weapons, DMG dealt is increased by <color=#F74848>15%</color>. After combat, applies <buf ID=7101803>[DMG Taken UP II]</buf> to targets for <color=#F74848>2</color> turns.\nAll effects are removed upon triggering."
     },
     "500923": {
       "name": "Renovate II",
@@ -1311,6 +1311,10 @@ window.GlossaryData = {
     "182903": {
       "name": "Phantom",
       "effect": "Ignores unit obstruction when moving."
+    },
+    "9990001": {
+      "name": "Favorable Event",
+      "effect": "Includes Critical Hit chance, Hit rate, Dodge Rate, Component proc rate, Module proc rate, <buf ID=900001>[Flurry Strike]</buf> and <buf ID=900010>[Gusty Strike]</buf> proc rate"
     }
   },
   "skill": {
