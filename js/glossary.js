@@ -2,9 +2,17 @@ var Glossary = (function () {
   var data = { buf: {}, skill: {}, terrain: {} };
   var nameIndex = { buf: {}, skill: {}, terrain: {} };
   var ICON_BASE = 'https://media.zlongame.com/media/pictures/cn/community/img/gl/gameInfo/skill/';
+  // Icons are checked locally first (data/unlisted/pilot_skills/), since
+  // that's where manually-added pilots' icons live; falls back to the CDN
+  // on 404 (mirrors pilots.js).
+  var LOCAL_ICON_BASE = 'data/unlisted/pilot_skills/';
 
   function iconSrc(icon) {
-    return icon ? ICON_BASE + encodeURIComponent(icon) + '.png' : '';
+    return icon ? LOCAL_ICON_BASE + encodeURIComponent(icon) + '.png' : '';
+  }
+
+  function iconErrorAttr(icon) {
+    return icon ? ' onerror="this.onerror=null;this.src=\'' + ICON_BASE + encodeURIComponent(icon) + '.png\';"' : '';
   }
 
   function lookup(type, id) {
@@ -274,7 +282,7 @@ var Glossary = (function () {
         var refEntry = lookup(ref.type, ref.id);
         if (!refEntry) return '';
         var refIconHtml = refEntry.icon
-          ? '<img class="kw-tip-nested-icon" src="' + iconSrc(refEntry.icon) + '" alt="" />'
+          ? '<img class="kw-tip-nested-icon" src="' + iconSrc(refEntry.icon) + '"' + iconErrorAttr(refEntry.icon) + ' alt="" />'
           : '';
         return (
           '<div class="kw-tip-nested">' +
@@ -291,7 +299,7 @@ var Glossary = (function () {
       var headerHtml = entry.icon
         ? (
             '<div class="kw-tip-header">' +
-              '<img class="kw-tip-icon" src="' + iconSrc(entry.icon) + '" alt="" />' +
+              '<img class="kw-tip-icon" src="' + iconSrc(entry.icon) + '"' + iconErrorAttr(entry.icon) + ' alt="" />' +
               '<div class="kw-tip-header-text">' + nameHtml + statsHtml + '</div>' +
             '</div>'
           )

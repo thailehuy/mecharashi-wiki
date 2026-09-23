@@ -1303,6 +1303,14 @@ window.GlossaryData = {
     "3014464": {
       "name": "Global Repair Reduction",
       "effect": "Repair AMT Received reduces by <color=#F74848>25%</color>."
+    },
+    "182900": {
+      "name": "Suppression",
+      "effect": "Armor reduced by <color=#F74848>4%</color>, chance of receiving a critical hit increased by <color=#F74848>2%</color>, stacking up to <color=#F74848>5</color> times, lasting for <color=#F74848>2</color> turns."
+    },
+    "182903": {
+      "name": "Phantom",
+      "effect": "Ignores unit obstruction when moving."
     }
   },
   "skill": {
@@ -1862,6 +1870,16 @@ window.GlossaryData = {
     "53103": {
       "name": "Malfunction Implant",
       "effect": "When attacking with a Machine Gun, inflicts <color=#F74848>1</color> stack of <buf ID=531032>[Fire Control Delay]</buf> on the target, up to <color=#F74848>5</color> stacks."
+    },
+    "182901": {
+      "name": "Boundless Hunt",
+      "Ap": "0",
+      "icon": "Icon_skill_order_1107",
+      "effect": "Uses a Shotgun to launch an Extra Strike, dealing <color=#F74848>0.25</color>x DMG to all targets within a <color=#F74848>2</color>-tile radius affected by <buf ID=182900>[Suppression]</buf>. This attack can also trigger the <buf ID=900004>[Re-ATK]</buf> effect of Mobile Warfare."
+    },
+    "182902": {
+      "name": "Flurry Strike",
+      "effect": "Uses the opposite arm to launch an additional attack, dealing bonus DMG. The multiplier is increased by the <skill ID=182560>[Gun Heart, Blade Soul]</skill> passive line."
     }
   },
   "terrain": {

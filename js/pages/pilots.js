@@ -14,8 +14,20 @@ var PORTRAIT_BASE  = 'https://media.zlongame.com/media/pictures/cn/community/img
 var LOCAL_AVATAR_BASE   = 'data/unlisted/pilot_images_half/';
 var LOCAL_PORTRAIT_BASE = 'data/unlisted/pilot_images_raw/';
 var SKILL_BASE      = 'https://media.zlongame.com/media/pictures/cn/community/img/gl/gameInfo/skill/';
+// Talent/skill/neural icons are checked locally first (data/unlisted/pilot_skills/)
+// since that's where manually-added pilots' icons live; falls back to the CDN on 404.
+var LOCAL_SKILL_BASE = 'data/unlisted/pilot_skills/';
 var OCCUPATION_BASE  = 'https://media.zlongame.com/media/pictures/cn/community/img/gl/gameInfo/occupation/';
 var WEAPON_IMG_BASE  = 'https://media.zlongame.com/media/pictures/cn/community/img/gl/gameInfo/weapons/';
+
+function skillIconSrc(iconName) {
+  return LOCAL_SKILL_BASE + encodeURIComponent(iconName) + '.png';
+}
+
+function skillIconErrorAttr(iconName) {
+  var fallback = SKILL_BASE + encodeURIComponent(iconName) + '.png';
+  return ' onerror="this.onerror=null;this.src=\'' + fallback + '\';"';
+}
 
 // Release order for pilots introduced after the initial 1.0 roster, oldest to newest.
 // Pilots not listed here were part of the default 1.0 launch roster.
@@ -24,7 +36,7 @@ var PILOT_RELEASE_ORDER = [
   'Dean', 'Asuka', 'Shinji', 'Rei', 'Cassha', 'Arthur', 'Ophelia', 'Anderson', 'Fregata',
   'Rosa: Judgement', 'Paloma', 'Matilda', 'Rosemary', 'Adele', 'Wyatt', 'Ada', 'Sapientia',
   'Veronica', 'Verna', 'Collin', 'Zoey', 'Wataru', 'Toraoh', 'Martini', 'Lexuan', 'Audrey',
-  'Hailis', 'Maat', 'Hardaway', 'Tang', 'Giselle', 'Bertha',
+  'Hailis', 'Maat', 'Hardaway', 'Tang', 'Giselle', 'Bertha', 'Kaidan The Invincible',
 ];
 
 function pilotReleaseOrder(pilotName) {
@@ -164,8 +176,8 @@ Pages.pilots = {
       var rankLabel = QUALITY_LABEL[p.quality] || p.quality;
       var rankClass = QUALITY_CLASS[p.quality] || '';
       var bgSrc     = QUALITY_BG[p.quality] || '';
-      var imgSrc      = AVATAR_BASE + encodeURIComponent(p.PortraitHeroIcon) + '.png';
-      var imgFallback = LOCAL_AVATAR_BASE + encodeURIComponent(p.PortraitHeroIcon) + '.png';
+      var imgSrc      = LOCAL_AVATAR_BASE + encodeURIComponent(p.PortraitHeroIcon) + '.png';
+      var imgFallback = AVATAR_BASE + encodeURIComponent(p.PortraitHeroIcon) + '.png';
 
       var weapon = allWeapons.find(function (w) { return w.pilot === p.PilotName; });
       var weaponIconHtml = '';
@@ -239,16 +251,16 @@ Pages.pilots = {
       return p.PortraitHeroIcon.replace(/^(.*)A_half$/, '$1' + letter + '_half');
     }
     function avatarSrcFor(letter) {
-      return PORTRAIT_BASE + encodeURIComponent(avatarKeyFor(letter)) + '.png';
-    }
-    function thumbSrcFor(letter) {
-      return AVATAR_BASE + encodeURIComponent(thumbKeyFor(letter)) + '.png';
-    }
-    function avatarFallbackFor(letter) {
       return LOCAL_PORTRAIT_BASE + encodeURIComponent(avatarKeyFor(letter)) + '.png';
     }
-    function thumbFallbackFor(letter) {
+    function thumbSrcFor(letter) {
       return LOCAL_AVATAR_BASE + encodeURIComponent(thumbKeyFor(letter)) + '.png';
+    }
+    function avatarFallbackFor(letter) {
+      return PORTRAIT_BASE + encodeURIComponent(avatarKeyFor(letter)) + '.png';
+    }
+    function thumbFallbackFor(letter) {
+      return AVATAR_BASE + encodeURIComponent(thumbKeyFor(letter)) + '.png';
     }
     var portraitSrc     = avatarSrcFor(skinLetters[skinIdx]);
     var portraitFallback = avatarFallbackFor(skinLetters[skinIdx]);
@@ -424,13 +436,13 @@ Pages.pilots = {
 
   _renderTalent: function (talent, label) {
     if (!talent || !talent.name) return '';
-    var iconSrc = SKILL_BASE + encodeURIComponent(talent.SkillIcon) + '.png';
+    var iconSrc = skillIconSrc(talent.SkillIcon);
     var desc    = this._parseEffects(talent.SpecificEffects || '');
 
     return (
       '<div class="talent-card">' +
         '<div class="talent-header">' +
-          '<img class="talent-icon" src="' + iconSrc + '" alt="' + $('<span>').text(talent.name).html() + '" />' +
+          '<img class="talent-icon" src="' + iconSrc + '"' + skillIconErrorAttr(talent.SkillIcon) + ' alt="' + $('<span>').text(talent.name).html() + '" />' +
           '<div>' +
             '<div class="talent-label">' + label + '</div>' +
             '<div class="talent-name">' + $('<span>').text(talent.name).html() + '</div>' +
@@ -494,7 +506,7 @@ Pages.pilots = {
       var typeLabel = overrideLabel || (type ? (TYPE_LABEL[type] || type) : 'Passive');
       var typeCls   = overrideCls  || (type ? (TYPE_CLASS[type] || '') : 'skill-type-passive');
       var desc      = self._parseEffects(sk.describe || sk.SpecificEffects || '');
-      var iconSrc   = SKILL_BASE + encodeURIComponent(sk.SkillIcon) + '.png';
+      var iconSrc   = skillIconSrc(sk.SkillIcon);
 
       var statBadges = type && !overrideLabel ? (
         '<span class="skill-stat"><span class="skill-stat-label">AP</span>' + (sk.Ap || '—') + '</span>' +
@@ -514,7 +526,7 @@ Pages.pilots = {
       return (
         '<div class="skill-card">' +
           '<div class="skill-header">' +
-            '<img class="skill-icon" src="' + iconSrc + '" alt="' + $('<span>').text(sk.name).html() + '" />' +
+            '<img class="skill-icon" src="' + iconSrc + '"' + skillIconErrorAttr(sk.SkillIcon) + ' alt="' + $('<span>').text(sk.name).html() + '" />' +
             '<div class="skill-header-info">' +
               '<div class="skill-name-row">' +
                 '<span class="skill-name">' + $('<span>').text(sk.name).html() + '</span>' +
@@ -554,7 +566,7 @@ Pages.pilots = {
 
     var talentIcon = ((p.Talent0_2Ability || {}).SkillIcon || (p.Talent0_2Ability || {}).icon) || '';
     var talentIconHtml = talentIcon
-      ? '<img class="skill-icon summon-section-icon" src="' + SKILL_BASE + encodeURIComponent(talentIcon) + '.png" alt="" />'
+      ? '<img class="skill-icon summon-section-icon" src="' + skillIconSrc(talentIcon) + '"' + skillIconErrorAttr(talentIcon) + ' alt="" />'
       : '';
     var talentName = (p.Talent0_2Ability || {}).name || 'Summon';
 
@@ -566,7 +578,7 @@ Pages.pilots = {
       var typeLabel = type ? (TYPE_LABEL[type] || type) : 'Passive';
       var typeCls   = type ? (TYPE_CLASS[type] || '') : 'skill-type-passive';
       var desc      = self._parseEffects(sk.describe || sk.SpecificEffects || '');
-      var iconSrc   = SKILL_BASE + encodeURIComponent(sk.icon.replace(/\.png$/, '')) + '.png';
+      var iconSrc   = skillIconSrc(sk.icon.replace(/\.png$/, ''));
 
       var statBadges = type
         ? '<span class="skill-stat"><span class="skill-stat-label">AP</span>' + (sk.Ap || '—') + '</span>' +
@@ -626,7 +638,7 @@ Pages.pilots = {
 
     return groups.map(function (group) {
       var iconHtml = group.icon
-        ? '<img class="skill-icon summon-section-icon" src="' + SKILL_BASE + encodeURIComponent(group.icon) + '.png" alt="" />'
+        ? '<img class="skill-icon summon-section-icon" src="' + skillIconSrc(group.icon) + '"' + skillIconErrorAttr(group.icon) + ' alt="" />'
         : '';
 
       var formsHtml = (group.groups || []).map(function (form) {
@@ -635,7 +647,7 @@ Pages.pilots = {
           var typeLabel = type ? (TYPE_LABEL[type] || type) : 'Passive';
           var typeCls   = type ? (TYPE_CLASS[type] || '') : 'skill-type-passive';
           var desc      = self._parseEffects(sk.describe || sk.SpecificEffects || '');
-          var iconSrc   = SKILL_BASE + encodeURIComponent(sk.icon) + '.png';
+          var iconSrc   = skillIconSrc(sk.icon);
           var statBadges =
             '<span class="skill-stat"><span class="skill-stat-label">AP</span>' + (sk.Ap || '—') + '</span>' +
             '<span class="skill-stat"><span class="skill-stat-label">CD</span>' + (sk.CD || '0') + '</span>';
@@ -643,7 +655,7 @@ Pages.pilots = {
           return (
             '<div class="skill-card">' +
               '<div class="skill-header">' +
-                '<img class="skill-icon" src="' + iconSrc + '" alt="' + $('<span>').text(sk.name).html() + '" />' +
+                '<img class="skill-icon" src="' + iconSrc + '"' + skillIconErrorAttr(sk.icon) + ' alt="' + $('<span>').text(sk.name).html() + '" />' +
                 '<div class="skill-header-info">' +
                   '<div class="skill-name-row">' +
                     '<span class="skill-name">' + $('<span>').text(sk.name).html() + '</span>' +
@@ -700,12 +712,12 @@ Pages.pilots = {
       var effects = (part.ListActivationEffects || []).map(function (eff) {
         var ps = eff.PassiveSkill;
         if (!ps) return '';
-        var iconSrc = SKILL_BASE + encodeURIComponent(ps.SkillIcon) + '.png';
+        var iconSrc = skillIconSrc(ps.SkillIcon);
         var desc    = self._parseEffects(ps.SpecificEffects || '');
         return (
           '<div class="nd-effect">' +
             '<div class="nd-effect-header">' +
-              '<img class="talent-icon" src="' + iconSrc + '" alt="' + $('<span>').text(ps.name).html() + '" />' +
+              '<img class="talent-icon" src="' + iconSrc + '"' + skillIconErrorAttr(ps.SkillIcon) + ' alt="' + $('<span>').text(ps.name).html() + '" />' +
               '<div>' +
                 '<div class="nd-effect-name">' + $('<span>').text(ps.name).html() + '</div>' +
                 '<div class="nd-effect-req">' + eff.MinimumSum + ' pts to unlock</div>' +

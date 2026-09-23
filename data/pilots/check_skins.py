@@ -1,31 +1,19 @@
-"""Probe for alternate pilot skin art (Pilot_{ID}B_half, Pilot_{ID}C_half, ...) and
-record which letters exist as an `AlternateSkins` list in each pilot's raw JSON.
+"""Scan the local pilot_images_half folder for alternate pilot skin art
+(Pilot_{ID}B_half, Pilot_{ID}C_half, ...) and record which letters exist as
+an `AlternateSkins` list in each pilot's raw JSON.
 
-The CDN returns HTTP 200 for real assets and a 302 (to a 404 fallback host) for
-missing ones, so a HEAD request without following redirects tells them apart.
-Shells out to curl (via subprocess) rather than urllib because the local Python
-install's SSL trust store fails to verify this CDN's certificate.
+Portraits/avatars are all sourced locally now, so this just checks for the
+presence of the corresponding local PNG files instead of probing the CDN.
 """
-import json, glob, os, string, subprocess, sys
+import json, glob, os, string, sys
 
 DIR = os.path.dirname(os.path.abspath(__file__))
-AVATAR_BASE = 'https://media.zlongame.com/media/pictures/cn/community/img/gl/gameInfo/characterHalf/'
-UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0 Safari/537.36'
-REFERER = 'https://www.mecharashi.com/'
+IMAGES_DIR = os.path.join(DIR, '..', 'unlisted', 'pilot_images_half')
 MAX_LETTER = 'H'  # probe B..H; leaves headroom past any known skin count
 
 
-def exists(icon_name):
-    url = AVATAR_BASE + icon_name + '.png'
-    result = subprocess.run(
-        ['curl', '-s', '-o', '/dev/null', '-w', '%{http_code}', '-I',
-         '-A', UA, '-e', REFERER, url],
-        capture_output=True, text=True, timeout=15,
-    )
-    return result.stdout.strip() == '200'
-
-
 def main():
+    local_files = set(os.listdir(IMAGES_DIR))
     updated = 0
     for path in sorted(glob.glob(f'{DIR}/[0-9]*.json')):
         if path.endswith('-translation.json'):
@@ -40,8 +28,8 @@ def main():
 
         alt_letters = []
         for letter in string.ascii_uppercase[1:string.ascii_uppercase.index(MAX_LETTER) + 1]:
-            candidate = base_icon.replace('A_half', letter + '_half')
-            if exists(candidate):
+            candidate = base_icon.replace('A_half', letter + '_half') + '.png'
+            if candidate in local_files:
                 alt_letters.append(letter)
 
         existing = data.get('AlternateSkins')

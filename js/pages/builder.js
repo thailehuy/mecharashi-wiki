@@ -312,7 +312,7 @@ Pages.builder = {
     var selectedItem = allItems.filter(function (it) { return it.value === opts.selectedValue; })[0];
 
     var btnIconHtml = selectedItem && selectedItem.iconSrc
-      ? '<img class="builder-cselect-icon" src="' + selectedItem.iconSrc + '" alt="" />'
+      ? '<img class="builder-cselect-icon" src="' + selectedItem.iconSrc + '"' + (selectedItem.iconFallback ? ' onerror="this.onerror=null;this.src=\'' + selectedItem.iconFallback + '\';"' : '') + ' alt="" />'
       : '<span class="builder-cselect-icon builder-cselect-icon-empty"></span>';
 
     var disabledValues = opts.disabledValues || [];
@@ -321,7 +321,7 @@ Pages.builder = {
       var isSelected = it.value === opts.selectedValue;
       var isDisabled = disabledValues.indexOf(it.value) !== -1;
       var iconHtml = it.iconSrc
-        ? '<img class="builder-cselect-option-icon" src="' + it.iconSrc + '" alt="" />'
+        ? '<img class="builder-cselect-option-icon" src="' + it.iconSrc + '"' + (it.iconFallback ? ' onerror="this.onerror=null;this.src=\'' + it.iconFallback + '\';"' : '') + ' alt="" />'
         : '<span class="builder-cselect-option-icon builder-cselect-icon-empty"></span>';
       return (
         '<div class="builder-cselect-option' + (isSelected ? ' selected' : '') + (isDisabled ? ' disabled' : '') + '" data-value="' + $('<span>').text(it.value).html() + '">' +
@@ -592,7 +592,8 @@ Pages.builder = {
 
     var pool      = self._pilotSkillPool(pilot);
     var poolItems = pool.map(function (sk) {
-      return { value: sk.ID, label: sk.name, iconSrc: SKILL_BASE + encodeURIComponent(sk.SkillIcon || sk.icon) + '.png' };
+      var icon = sk.SkillIcon || sk.icon;
+      return { value: sk.ID, label: sk.name, iconSrc: skillIconSrc(icon), iconFallback: SKILL_BASE + encodeURIComponent(icon) + '.png' };
     });
 
     var skillsHtml = [0, 1, 2].map(function (idx) {
@@ -621,7 +622,7 @@ Pages.builder = {
     var exItems  = [];
     exskills.forEach(function (sk, i) {
       if (sk.occupation && sk.occupation !== pilot.Occupation) return;
-      exItems.push({ value: String(i), label: sk.name, iconSrc: SKILL_BASE + encodeURIComponent(sk.icon) + '.png' });
+      exItems.push({ value: String(i), label: sk.name, iconSrc: skillIconSrc(sk.icon), iconFallback: SKILL_BASE + encodeURIComponent(sk.icon) + '.png' });
     });
     var exChosen = self._exSkillIdx != null ? exskills[self._exSkillIdx] : null;
     if (exChosen) self._previewCache.exskill = self._exSkillPreviewHtml(exChosen);
@@ -636,7 +637,8 @@ Pages.builder = {
   },
 
   _skillPreviewHtml: function (sk) {
-    var iconSrc = SKILL_BASE + encodeURIComponent(sk.SkillIcon || sk.icon) + '.png';
+    var icon    = sk.SkillIcon || sk.icon;
+    var iconSrc = skillIconSrc(icon);
     var desc    = Glossary.parseEffects(sk.describe || sk.SpecificEffects || '');
     var statBadges =
       '<span class="skill-stat"><span class="skill-stat-label">AP</span>' + (sk.Ap || '—') + '</span>' +
@@ -644,7 +646,7 @@ Pages.builder = {
     return (
       '<div class="skill-card builder-preview-card">' +
         '<div class="skill-header">' +
-          '<img class="skill-icon" src="' + iconSrc + '" alt="" />' +
+          '<img class="skill-icon" src="' + iconSrc + '"' + skillIconErrorAttr(icon) + ' alt="" />' +
           '<div class="skill-header-info">' +
             '<div class="skill-name-row"><span class="skill-name">' + $('<span>').text(sk.name).html() + '</span></div>' +
             '<div class="skill-stats">' + statBadges + '</div>' +
@@ -656,7 +658,7 @@ Pages.builder = {
   },
 
   _exSkillPreviewHtml: function (sk) {
-    var iconSrc = SKILL_BASE + encodeURIComponent(sk.icon) + '.png';
+    var iconSrc = skillIconSrc(sk.icon);
     var desc    = Glossary.parseEffects(sk.SpecificEffects || '');
     var statBadges =
       '<span class="skill-stat"><span class="skill-stat-label">AP</span>' + (sk.Ap || '—') + '</span>' +
@@ -664,7 +666,7 @@ Pages.builder = {
     return (
       '<div class="skill-card builder-preview-card">' +
         '<div class="skill-header">' +
-          '<img class="skill-icon" src="' + iconSrc + '" alt="" />' +
+          '<img class="skill-icon" src="' + iconSrc + '"' + skillIconErrorAttr(sk.icon) + ' alt="" />' +
           '<div class="skill-header-info">' +
             '<div class="skill-name-row"><span class="skill-name">' + $('<span>').text(sk.name).html() + '</span></div>' +
             '<div class="skill-stats">' + statBadges + '</div>' +

@@ -106,8 +106,8 @@ Pages.pilotstats = {
       var p         = r.pilot;
       var rankClass = QUALITY_CLASS[p.quality] || '';
       var bgSrc     = QUALITY_BG[p.quality] || '';
-      var imgSrc      = AVATAR_BASE + encodeURIComponent(p.PortraitHeroIcon) + '.png';
-      var imgFallback = LOCAL_AVATAR_BASE + encodeURIComponent(p.PortraitHeroIcon) + '.png';
+      var imgSrc      = LOCAL_AVATAR_BASE + encodeURIComponent(p.PortraitHeroIcon) + '.png';
+      var imgFallback = AVATAR_BASE + encodeURIComponent(p.PortraitHeroIcon) + '.png';
       var nameEsc   = $('<span>').text(p.PilotName).html();
 
       return (
