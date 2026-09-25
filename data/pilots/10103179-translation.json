@@ -115,7 +115,7 @@
     },
     "202041": {
       "name": "Zone Contract 1",
-      "SpecificEffects": "All allies <buf ID=900002>[Link Attack]</buf> DMG increases by <color=#F74848>15%</color>, and assault and ranged weapons gains <color=#F74848>+1</color> <buf ID=900002>[Link Attack]</buf> count."
+      "SpecificEffects": "All allies <buf ID=900002>[Link Attack]</buf> DMG increases by <color=#F74848>15%</color>, and assault and ranged weapons gains <color=#F74848>+1</color> range when performing <buf ID=900002>[Link Attack]</buf>."
     },
     "200042": {
       "name": "AP Optimization 4",
@@ -131,7 +131,7 @@
     },
     "202045": {
       "name": "Zone Contract 3",
-      "SpecificEffects": "<buf ID=2000011>[Zone Contract 1]</buf> grants additionally <color=#F74848>+1</color> <buf ID=900002>[Link Attack]</buf> count. For each <color=#F74848>4</color> <buf ID=900002>[Link Attack]</buf> triggered, gains <color=#F74848>1</color> AP."
+      "SpecificEffects": "<buf ID=900002>[Link Attack]</buf> count of <buf ID=200001>[CEC 1]</buf> increases by <color=#F74848>+1</color>. For each <color=#F74848>4</color> <buf ID=900002>[Link Attack]</buf> triggered, gains <color=#F74848>1</color> AP."
     },
     "202046": {
       "name": "Zone Contract 4",
