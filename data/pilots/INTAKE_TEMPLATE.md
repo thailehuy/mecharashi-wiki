@@ -64,29 +64,29 @@ pilot from this template (10103182, Kaidan The Invincible):
 
 ## Basics
 
-- Pilot ID: 10103182
-- Pilot Name: Kaidan The Invincible
-- Real Name: Kaidan Newman
-- Gender: Male
-- Profession: Striker
-- Occupation: Fighter
+- Pilot ID: 10103160
+- Pilot Name: Ann
+- Real Name: Ann Olum
+- Gender: Female
+- Profession: Assault
+- Occupation: Raider
 - Quality: SSR
-- License: Light
+- License: Medium
 - Game version introduced: 3.3
 
 ## Images
 <!-- portrait is prefixed with data/unlisted/pilot_images_half/ -->
 <!-- avatar is prefixed with data/unlisted/pilot_images_raw/ -->
-- Portrait (half-body) file: Pilot_10103182A_half.png
-- Avatar (full portrait) file: Pilot_10103182A_raw.png
+- Portrait (half-body) file: Pilot_10103160A_half.png
+- Avatar (full portrait) file: Pilot_10103160A_raw.png
 
 ## Attributes
-- Ranged: 668
-- Tactical: 934
-- Assault: 5193
-- Melee: 5365
-- Mechanic: 609
-- Defense: 4059
+- Ranged: 2015
+- Tactical: 2329
+- Assault: 5036
+- Melee: 1700
+- Mechanic: 1386
+- Defense: 4053
 - Initial Base Starting AP: 5
 - Max Base Starting AP: 5
 - AP Recovery: 2
@@ -97,7 +97,7 @@ pilot from this template (10103182, Kaidan The Invincible):
 ### Basic Talent (Talent0_2Ability)
 - Name: GKD One
 - Effect text: At the start of action, or after destroying a part, inflicts 1 stack of [Suppression] on all enemy units within a 3-tile radius. When performing an active attack, follow up with [Boundless Hunt]
-- Icon name: Icon_skill_talent_5164.png
+- Icon name: Icon_skill_talent_5165.png
 
 ### Ascended Talent (Talent3_5Ability)
 <!-- Ascended talent has same name and icon as basic one, with a line split -->
@@ -108,7 +108,7 @@ pilot from this template (10103182, Kaidan The Invincible):
 <!-- Each skill the pilot uses on their neuron board (Core Neuron slots).
      type = EquipmentSkill (weapon attack) / Order (self-buff) / passive -->
 ### Skill 0 (innate)
-- Mobile Warfare 1 (same skill as other fighters with ID 100001)
+- CEC 1 (same skill as other raiders with ID 200001)
 
 ### Skill 1
 - Name: Raging Gale
@@ -184,12 +184,7 @@ pilot from this template (10103182, Kaidan The Invincible):
 <!-- Alpha and Beta section will be the same with other pilots in same class -->
 ### γ1
 <!-- Name / Effect text / Icon name -->
-- 1:  Gun Heart, Blade Soul 1 / When initiating combat, if a Critical hit occurs, uses the opposite arm to launch a [Flurry Strike], dealing 0.5x DMG / Icon_skill_passive_5303
-- 4:  AP Optimization 3 (same as other fighter pilots ID 100032)
-- 7:  Mobile Warfare 4 (same as other fighter pilots ID 100033)
-- 10: Gun Heart, Blade Soul 2 / When initiating combat, if second weapon [Type] is used, increases DMG dealt by 20% for that weapon. / Icon_skill_passive_5303
-- 13: Gun Heart, Blade Soul 3 / When attacked by Melee or Assault weapons, DMG taken is reduced by 20% and Critical Hit DMG taken is reduced by 15% / Icon_skill_passive_5303
-- 16: Gun Heart, Blade Soul 4 / The [Flurry Strike] multiplier of [Gun Heart, Blade Soul 1] effect increases to 1x / Icon_skill_passive_5303
+- Same as Frida's section y1
 
 ### γ2
 - 1:  Prototype Hyper-Aptamer 1 / [Boundless Hunt] DMG multiplier increases to 0.5x / Icon_skill_passive_5304
