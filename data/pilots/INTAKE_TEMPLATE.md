@@ -95,13 +95,13 @@ pilot from this template (10103182, Kaidan The Invincible):
 <!-- all talents, skills and neural icons are prefixed with data/unlisted/pilot_skills/ -->
 
 ### Basic Talent (Talent0_2Ability)
-- Name: GKD One
-- Effect text: At the start of action, or after destroying a part, inflicts 1 stack of [Suppression] on all enemy units within a 3-tile radius. When performing an active attack, follow up with [Boundless Hunt]
+- Name: Dual Rookie
+- Effect text: At the start of battle, enters [GKD Stance]. At the end of action, can trigger [Stance Adjustment] once. Gains 1 stack of [Collective Advantage] for each 1 stack of [Suppression] or [Instability] inflicted on enemies, up to 20 stacks.
 - Icon name: Icon_skill_talent_5165.png
 
 ### Ascended Talent (Talent3_5Ability)
 <!-- Ascended talent has same name and icon as basic one, with a line split -->
-- Effect text: At the start of action, or after destroying a part, inflicts 1 stack of [Suppression] on all enemy units within a 3-tile radius. When performing an active attack, follow up with [Boundless Hunt].\nAfter actively attacking with a Melee weapon, the AP cost of next Assault weapon attack is reduced by 1. Inversely, after actively attacking with an Assault weapon, the AP cost of next Melee weapon attack is reduced by 1. Each effect can reduce cost to a minimum of 1 AP and can trigger 1 times per turn.
+- Effect text: At the start of battle, enters [GKD Stance]. At the end of action, can trigger [Stance Adjustment] once. Gains 1 stack of [Collective Advantage] for each 1 stack of [Suppression] or [Instability] inflicted on enemies, up to 20 stacks.\n Heavy Machine Gun DMG dealt increases by 15%. When both hands are intact, Heavy Machine Gun range increases by +1.
 
 ## Skills
 
@@ -111,69 +111,74 @@ pilot from this template (10103182, Kaidan The Invincible):
 - CEC 1 (same skill as other raiders with ID 200001)
 
 ### Skill 1
-- Name: Raging Gale
-- Type: Order <!-- EquipmentSkill / Order / passive -->
-- AP cost: 3
+- Name: Electric Eel Penetration
+- Type: EquipmentSkill <!-- EquipmentSkill / Order / passive -->
+- AP cost: 32
 - Cooldown:             <!-- if any -->
-- Weapon type: Melee <!-- if EquipmentSkill, e.g. SG / AR / SR / MG / Melee -->
-- Effect text: Dash 3 tiles in a selected direction using a Knuckle or Pile Bunker, dealing 1.2x AoE DMG to all targets hit. Enters [Aiming] Mode before attacking. Inflicts 1 stack of [Suppression] to all targets hit as well as all enemy units within 2 adjacent tile of this unit at the end of the movement.
-- Icon name: Icon_skill_order_1160
+- Weapon type: HMG <!-- if EquipmentSkill, e.g. SG / AR / SR / MG / Melee -->
+- Effect text: Uses a Heavy Machine Gun to attack a target, dealing 0.9x DMG. Changes to [Electric Eel Stance] before attacking. If the target has 3 or more stacks or [Instability], they cannot retaliate. Otherwise, applies 2 stacks of [Instability III] to the target, lasting for 2 turns.
+- Icon name: Icon_skill_main_1127
 
 ### Skill 2
-- Name: Shield Breaker
-- Type: EquipmentSkill
-- AP cost: 2
+- Name: GKD Assault
+- Type: SpecialAssault
+- AP cost: 3
 - Cooldown:
-- Weapon type: SG
-- Effect text: Uses a Shotgun firing a slug or a Melee weapon to attack a target, dealing 0.45x or 1.1x DMG accordingly. Enters [Aiming] Mode before attacking.
-- Icon name: Icon_skill_main_1174
+- Weapon type: HMG
+- Effect text: Uses a Heavy Machine Gun to attack all targets within a fan-shaped area in front, dealing 0.45x AoE DMG. Changes to [GKD Stance] and applies [Armor Down I] to all targets before attacking. If a target has 3 or more stacks or [Suppression], upgrades [Armor Down I] to [Armor Down II]
+- Icon name: Icon_skill_order_1010
 
 ### Skill 3
-- Name: Total Annihilation
+- Name: Concussive Shot
+- Type: EquipmentSkill
+- AP cost: 3
+- Cooldown:
+- Weapon type: HMG
+- Effect text: Uses a Heavy Machine Gun to attack a target, 1.25x DMG. If the target has 5 or more stacks of [Instability] after combat, removes all stacks and inflicts [Structural Instability].
+- Icon name: Icon_skill_main_1140
+
+### Skill 4
+- Name: Suppressive Fire
 - Type: EquipmentSkill
 - AP cost: 4
 - Cooldown:
-- Weapon type: SG
-- Effect text: Uses a Shotgun to attack a target, 1.3x DMG. For each 1 stack of [Suppression] carried by enemy units within 3 adjacent tiles of this unit, performs 1 additional attack, dealing 0.2x DMG, up to 5 additional attacks.
-- Icon name: Icon_skill_main_1175
-
-### Skill 4
-- Name: Burst Strike
-- Type: EquipmentSkill
-- AP cost: 5
-- Cooldown:
-- Weapon type: Melee/SG
-- Effect text: Uses a Melee weapon to attack a target, 1.6x DMG. This attack always hits the body. Then follows up with a Shotgun slug shot, dealing 0.5x DMG, prioritizing the part with lowest HP percentage. Critical hit rate increases by 20% for this attack. Inflicts 2 stacks of [Suppression] on the target before combat. This skill requires both a Melee weapon and a Shotgun to be used.
-- Icon name: Icon_skill_main_1176
+- Weapon type: HMG
+- Effect text: Uses a Heavy Machine Gun to attack a target, 1.4x DMG. Inflicts 2 stacks of [Suppression] before combat. After combat, if the target has 5 or more stacks of [Suppression], additionally inflicts [GKD Mark]
+- Icon name: Icon_skill_main_1179
 
 ### Skill 5
-- Name: Ultimate Mastery (same skill as Rosa: Judgment)
+- Name: Team Rally
+- Type: Order
+- AP cost: 0
+- Cooldown: 3
+- Weapon type: HMG
+- Effect text: Selects any ally to grant them [GKD Support] or [Electric Eel Support] for 2 turns. This unit enters [Pending Activation] state and gains [Activation] after selected ally takes action.
+- Icon name: Icon_skill_order_5164
 
 ### Skill 6
-- Name: Fleeting Shadow
+- Name: Team Spirit
 - Type: Passive
-- Effect text: At the end of turn, if there are no enemies carrying [Suppression] within 3 adjacent tiles, gains [Movement UP] and [Phantom] for 2 turns
-- Icon name: Icon_skill_passive_5123
+- Effect text: At the start of action, if there are other members from GKD or Electric Eel within 4 adjacent tiles, gains 5 stacks of [Collective Advantage]
+- Icon name: Icon_skill_passive_5305
 
 ### Skill 7
-- Name: Weakness Hunt
+- Name: Dual Stance Synergy
 - Type: Passive
-- Effect text: When attacking target carrying [Suppression], if there is a part with less than 50% max HP, ignores all target's DMG Reduction effects.
-- Icon name: Icon_skill_passive_5317
+- Effect text: When other allies from GKD or Electric Eel initiates an attack, uses Heavy Machine Gun to launch a [Link Attack], dealing 0.3x DMG. This effect can trigger 2 times per turn.
+- Icon name: Icon_skill_passive_5152
 
 ### Skill 8
-- Name: Tranquil Heart
+- Name: Optimistic Side
 - Type: Passive
-- Resource: PP
-- Effect text: After actively attacking an enemy carrying [Suppression], if possesses 4 or less AP, consumes 1 PP to recover 3 AP. This effect can trigger 1 time per turn. Gains 2 PP at the start of battle.
-- Icon name: Icon_skill_pp_1107
-
+- Effect text: When switching to a new stance, gains a random buff, lasting for 2 turns. When this effect is triggered for the first time each turn, reduces AP cost of the next active attack by 1.
+- Icon name: Icon_skill_passive_5306
 
 ## Chip slots setup
+<!-- Red = Attack / Blue = Dodge / Yellow = Critical-->
 - Alpha: red/yellow/yellow
 - Beta: red/yellow/blue
-- Gamma 1: red/yellow/yellow
-- Gamma 2: red/yellow/blue
+- Gamma 1: red/yellow/blue
+- Gamma 2: red/yellow/yellow
 
 ## Neural passives (Gamma partition — pilot-specific)
 
@@ -187,23 +192,28 @@ pilot from this template (10103182, Kaidan The Invincible):
 - Same as Frida's section y1
 
 ### γ2
-- 1:  Prototype Hyper-Aptamer 1 / [Boundless Hunt] DMG multiplier increases to 0.5x / Icon_skill_passive_5304
+- 1:  Ultimate Prospector 1 / Ally units from GKD or Electric Eel gains +5% DMG dealt and +5% Critical Hit chance. DMG dealt additionally increases by 5% for eac 10 stacks of [Collective Advantage] / Icon_skill_passive_5307
 - 4:  AP Optimization 4 (same as other fighter pilots ID 100042)
 - 7:  Power Innovation 3 (same as other fighter pilots ID 100043)
-- 10: Prototype Hyper-Aptamer 2 / When attacking target carrying [Suppression], Hit Chance increases by 10% and Final DMG dealt increases by 15%. The target cannot be affected by [Guard] or Large Shield [Target Shift] during this skirmish / Icon_skill_passive_5304
-- 13: Prototype Hyper-Aptamer 3 / [Boundless Hunt] DMG multiplier increases to 0.75x / Icon_skill_passive_5304
-- 16: Prototype Hyper-Aptamer 4 / After initiating combat, if [Re-ATK] is not triggered and there are enemy units within 3 adjacent tiles, inflicts 1 stack of [Suppression] to all those enemies and gains 1 AP for each 1 stack applied, up to 3 AP, then triggers [Re-Act]. This effect can trigger 1 time per turn. / Icon_skill_passive_5304
+- 10: Ultimate Prospector 2 / When carrying 10 or more stacks of [Collective Advantage], HMG Final DMG dealt increases by 10%. At 20 or more stacks, AP recovery increases by +1 / Icon_skill_passive_5307
+- 13: Ultimate Prospector 3 / Each 10 stacks of [Collective Advantage] increases HMG bullet count by +1 / Icon_skill_passive_5307
+- 16: Ultimate Prospector 4 / When other allies inflict [Suppression] or [Instability], [Ann] also gains [Collective Advantage]. The maximum number of stacks for [Collective Advantage] increases to 30. / Icon_skill_passive_5307
 
 
 ### Glossary buf 1
 <!-- Pick a random unique ID for this in the <buf> tag and add the tag to all referenced text from this pilot -->
-- Suppression: Armor reduced by 4%, chance of receiving a critical hit increased by 2%, stacking up to 5 times, lasting for 2 turns.
-- Phantom: Ignores unit obstruction when moving.
+- GKD Stance: Movement +1. After attacking, inflicts 1 stack of [Suppression] on the target, lasting for 2 turns.
+- Electric Eel Stance: After actively attacking, extends the remaning duration of maximum 5 debuffs on the target by 1 turn. Also applies 1 stack of [Instability III] to the target, lasting for 2 turns.
+- Collective Advantage: DMG dealt increases by 2%, Critical Hit chance increases by 1% per stack, up to 20 stacks.
+- Structural Instability: When actively attacked in combat, Final DMG taken increases by 30% and the attacker ignores all standard [DMG Reduction] effects. This effect is removed upon triggering.
+- GKD Mark: When actively attacked, chance of being critically hit increases by 15% and Critical DMG taken increases by 10%. The attacker recovers 1 AP after combat. This effect is removed upon triggering.
+- GKD Support: Movement increases by +1. After initiating combat, inflicts 1 stack of [Suppression] on the target. This unit is considered a member of GKD for 2 turns.
+- Electric Eel Support: After initiating combat, extends the remaning duration of maximum 5 debuffs on the target by 1 turn. Also applies 1 stack of [Instability III] to the target. This unit is considered a member of Electric Eel for 2 turns.
 
 ### Glossary skill 1
 <!-- Pick a random unique ID for this in the <skill> tag and add the tag to all referenced text from this pilot -->
 <!-- Also scan the skill text itself and link necessary tags -->
-- Name: Boundless Hunt
+- Name: Stance Adjustment
 - AP: 0
-- Icon: Icon_skill_order_1107
-- Effect: Uses a Shotgun to launch an [Extra Strike], dealing 0.25x DMG to all targets within a 2-tile radius affected by [Suppression]. This attack can also trigger the [Re-ATK] effect of [Mobile Warfare].
+- Icon: Icon_skill_order_5137
+- Effect: Switches between [GKD Stance] or [Electric Eel Stance]

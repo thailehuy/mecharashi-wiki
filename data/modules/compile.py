@@ -45,6 +45,11 @@ MANUAL_TEMPLATES = {
     '打桩机模组':   {'name': 'PB Mod',           'template': 'Pile Bunker DMG <color=#F74848>+3%</color>.'},
     '冲阵模组':     {'name': 'Poke Mod',         'template': 'Within <color=#F74848>2</color> adjacent tiles, if there are <color=#F74848>3</color> or more enemies, DMG Taken <color=#F74848>-3%</color>.'},
     '警戒模组':     {'name': 'Vigilant Mod',     'template': 'When triggering [Vigilant Shot], DMG <color=#F74848>+5%</color>.'},
+    # Crit DMG Mod (family 4003, scraped catalog only — no mech in this repo
+    # carries it yet, so there's no in-game EN translation to derive from;
+    # hand-authored from the raw CN ladder (3/5/7/10% Crit DMG) like the
+    # other manual templates above).
+    '增伤模组':     {'name': 'Crit DMG Mod',     'template': 'Crit DMG <color=#F74848>+3%</color>.'},
 }
 
 # These families are equipped and translated on real mechs, but aren't in the
@@ -173,6 +178,57 @@ MANUAL_MODULE_SPECS = {
         # e.g. family 3012 "Vigilant Mod" above) — build_manual_modules()
         # strips it via primary_clause() for levels below templateLevel.
         'pcts': ['4', '6', '8', '10', '14', '16', '18', '24'],
+    },
+}
+
+
+# Modules exclusive to a manually-added mech whose per-level ladder has
+# MULTIPLE independently-scaling numbers (not a single % that scales the
+# same way at every level) can't use MANUAL_MODULE_SPECS' single-`pcts`
+# substitution — so their full `levels` text is hand-authored directly here
+# instead, straight from the mech intake form's per-level breakdown.
+MANUAL_MODULE_LEVELS = {
+    # Deep Linker (Nephthys, family 9020): the intake gave an explicit
+    # 4-level split for all three numbers (main DMG%, per-debuff DMG%, and
+    # stack cap), so every level is transcribed verbatim rather than derived.
+    '9020': {
+        'name': 'Deep Linker',
+        'icon': 'Icon_skill_passive_1146',
+        'category': 'GeneralSuit',
+        'maxLevel': 4,
+        'currentLevel': 4,
+        'levels': {
+            '1': 'DMG dealt increases by <color=#F74848>3%</color>. For each 1 debuff applied, DMG dealt additionally increases by <color=#F74848>2%</color>, stacking up to <color=#F74848>3</color> times, lasting for <color=#F74848>2</color> turns.',
+            '2': 'DMG dealt increases by <color=#F74848>6%</color>. For each 1 debuff applied, DMG dealt additionally increases by <color=#F74848>3%</color>, stacking up to <color=#F74848>3</color> times, lasting for <color=#F74848>2</color> turns.',
+            '3': 'DMG dealt increases by <color=#F74848>10%</color>. For each 1 debuff applied, DMG dealt additionally increases by <color=#F74848>3%</color>, stacking up to <color=#F74848>5</color> times, lasting for <color=#F74848>2</color> turns.',
+            '4': 'DMG dealt increases by <color=#F74848>15%</color>. For each 1 debuff applied, DMG dealt additionally increases by <color=#F74848>4%</color>, stacking up to <color=#F74848>5</color> times, lasting for <color=#F74848>2</color> turns.',
+        },
+    },
+    # Momentum Module (Nephthys, family 9030): the intake was later updated
+    # with the full 8-level ladder for both scaling numbers (main DMG% and
+    # per-debuff DMG%/cap), so every level is transcribed verbatim rather
+    # than a placeholder. The [Flurry Strike] trigger-chance clause (25%
+    # base, +25% per debuff) does not scale with module level per the intake
+    # text, so it stays identical across all 8 levels.
+    '9030': {
+        'name': 'Momentum Module',
+        'icon': 'Icon_entry_10110',
+        'category': 'GeneralSuit',
+        'maxLevel': 8,
+        'currentLevel': 8,
+        'levels': {
+            str(i): (
+                f'DMG dealt increases by <color=#F74848>{main}%</color>. DMG dealt additionally increases by '
+                f'<color=#F74848>{per}%</color> for each 1 debuff the enemy team carries, up to <color=#F74848>{main}%</color>.\n'
+                'When initiating combat, there is a <color=#F74848>25%</color> chance to trigger <buf ID=900001>[Flurry Strike]</buf> '
+                "following the enemy's attack, dealing <color=#F74848>0.25</color>x DMG. This trigger chance increases by "
+                '<color=#F74848>25%</color> for each debuff the target carries before combat.'
+            )
+            for i, (main, per) in enumerate([
+                ('2', '0.5'), ('3', '0.5'), ('4', '0.5'), ('5', '1'),
+                ('7', '1'), ('8', '1'), ('9', '1.5'), ('12', '1.5'),
+            ], 1)
+        },
     },
 }
 
@@ -523,6 +579,8 @@ def main():
         synthesized_families.append(cn_name)
 
     for family, manual_mod in build_manual_modules(local_modules).items():
+        modules.setdefault(family, manual_mod)
+    for family, manual_mod in MANUAL_MODULE_LEVELS.items():
         modules.setdefault(family, manual_mod)
 
     out = {'modules': modules}

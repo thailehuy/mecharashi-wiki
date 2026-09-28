@@ -356,7 +356,7 @@
       "icon": "Icon_entry_40031",
       "category": "PropertyS",
       "maxLevel": 4,
-      "currentLevel": 4,
+      "currentLevel": 1,
       "levels": {
         "1": "Crit DMG <color=#F74848>+3%</color>.",
         "2": "Crit DMG <color=#F74848>+5%</color>.",
@@ -805,14 +805,14 @@
       "maxLevel": 8,
       "currentLevel": 8,
       "levels": {
-        "1": "Before actively attacking, if distance moved is <color=#F74848>2</color> tiles or less, DMG <color=#F74848>+3%</color>",
-        "2": "Before actively attacking, if distance moved is <color=#F74848>2</color> tiles or less, DMG <color=#F74848>+4%</color>",
-        "3": "Before actively attacking, if distance moved is <color=#F74848>2</color> tiles or less, DMG <color=#F74848>+6%</color>",
-        "4": "Before actively attacking, if distance moved is <color=#F74848>2</color> tiles or less, DMG <color=#F74848>+8%</color>",
-        "5": "Before actively attacking, if distance moved is <color=#F74848>2</color> tiles or less, DMG <color=#F74848>+10%</color>",
-        "6": "Before actively attacking, if distance moved is <color=#F74848>2</color> tiles or less, DMG <color=#F74848>+12%</color>",
-        "7": "Before actively attacking, if distance moved is <color=#F74848>2</color> tiles or less, DMG <color=#F74848>+14%</color>",
-        "8": "Before actively attacking, if distance moved is <color=#F74848>2</color> tiles or less, DMG <color=#F74848>+18%</color>;\nAt end of action, immediately gain <color=#F74848>1</color> AP. This effect has a <color=#F74848>1</color>-turn trigger interval."
+        "1": "Before actively attacking, if distance moved is <color=#F74848>2</color> tiles or less, DMG +<color=#F74848>3%</color>",
+        "2": "Before actively attacking, if distance moved is <color=#F74848>2</color> tiles or less, DMG +<color=#F74848>4%</color>",
+        "3": "Before actively attacking, if distance moved is <color=#F74848>2</color> tiles or less, DMG +<color=#F74848>6%</color>",
+        "4": "Before actively attacking, if distance moved is <color=#F74848>2</color> tiles or less, DMG +<color=#F74848>8%</color>",
+        "5": "Before actively attacking, if distance moved is <color=#F74848>2</color> tiles or less, DMG +<color=#F74848>10%</color>",
+        "6": "Before actively attacking, if distance moved is <color=#F74848>2</color> tiles or less, DMG +<color=#F74848>12%</color>",
+        "7": "Before actively attacking, if distance moved is <color=#F74848>2</color> tiles or less, DMG +<color=#F74848>14%</color>",
+        "8": "Before actively attacking, if distance moved is <color=#F74848>2</color> tiles or less, DMG +<color=#F74848>18%</color>;\nAt end of action, immediately gains <color=#F74848>1</color> AP. This effect has a <color=#F74848>1</color>-turn trigger interval."
       }
     },
     "3005": {
@@ -1541,21 +1541,21 @@
         "8": "If this unit doesn't move before actively attacking, Crit Rate <color=#F74848>+24%</color>. If a critical hit occurs when attacking, Crit DMG <color=#F74848>+3%</color> after combat. This effect can stack up to a maximum increase of <color=#F74848>15%</color>."
       }
     },
-    "3041": {
-      "name": "Augmenter",
-      "icon": "Icon_entry_10093",
+    "3045": {
+      "name": "Support Mod",
+      "icon": "Icon_entry_10097",
       "category": "GeneralSuit",
       "maxLevel": 8,
       "currentLevel": 8,
       "levels": {
-        "1": "When attacking a part with HP above <color=#F74848>60%</color>, DMG <color=#F74848>+3%</color>.",
-        "2": "When attacking a part with HP above <color=#F74848>60%</color>, DMG <color=#F74848>+4%</color>.",
-        "3": "When attacking a part with HP above <color=#F74848>60%</color>, DMG <color=#F74848>+6%</color>.",
-        "4": "When attacking a part with HP above <color=#F74848>60%</color>, DMG <color=#F74848>+8%</color>.",
-        "5": "When attacking a part with HP above <color=#F74848>60%</color>, DMG <color=#F74848>+10%</color>.",
-        "6": "When attacking a part with HP above <color=#F74848>60%</color>, DMG <color=#F74848>+12%</color>.",
-        "7": "When attacking a part with HP above <color=#F74848>60%</color>, DMG <color=#F74848>+14%</color>.",
-        "8": "When attacking a part with HP above <color=#F74848>60%</color>, DMG <color=#F74848>+18%</color>. CP <color=#F74848>+3</color> in the lowest unlocked Neural Drive Sector."
+        "1": "When attacking, if there are allies within <color=#F74848>4</color> adjacent tiles, DMG dealt increases by <color=#F74848>3%</color>.",
+        "2": "When attacking, if there are allies within <color=#F74848>4</color> adjacent tiles, DMG dealt increases by <color=#F74848>4%</color>.",
+        "3": "When attacking, if there are allies within <color=#F74848>4</color> adjacent tiles, DMG dealt increases by <color=#F74848>6%</color>.",
+        "4": "When attacking, if there are allies within <color=#F74848>4</color> adjacent tiles, DMG dealt increases by <color=#F74848>8%</color>.",
+        "5": "When attacking, if there are allies within <color=#F74848>4</color> adjacent tiles, DMG dealt increases by <color=#F74848>10%</color>.",
+        "6": "When attacking, if there are allies within <color=#F74848>4</color> adjacent tiles, DMG dealt increases by <color=#F74848>12%</color>.",
+        "7": "When attacking, if there are allies within <color=#F74848>4</color> adjacent tiles, DMG dealt increases by <color=#F74848>14%</color>.",
+        "8": "When attacking, if there are allies within <color=#F74848>4</color> adjacent tiles, DMG dealt increases by <color=#F74848>18%</color>.\nAt the end of turn, if <color=#F74848>2</color> or more code or attack skills are used this turn, recovers <color=#F74848>1</color> AP."
       }
     },
     "3033": {
@@ -1575,23 +1575,6 @@
         "8": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, DMG <color=#F74848>+18%</color>.\nWhen in combat with a target at <buf ID=900011>[Ideal Range]</buf>, Bullets <color=#F74848>+1</color>."
       }
     },
-    "3040": {
-      "name": "Ravage Mod",
-      "icon": "Icon_entry_10091",
-      "category": "GeneralSuit",
-      "maxLevel": 8,
-      "currentLevel": 8,
-      "levels": {
-        "1": "When attacking a target on any terrain effect, DMG <color=#F74848>+3%</color>.",
-        "2": "When attacking a target on any terrain effect, DMG <color=#F74848>+4%</color>.",
-        "3": "When attacking a target on any terrain effect, DMG <color=#F74848>+6%</color>.",
-        "4": "When attacking a target on any terrain effect, DMG <color=#F74848>+8%</color>.",
-        "5": "When attacking a target on any terrain effect, DMG <color=#F74848>+10%</color>.",
-        "6": "When attacking a target on any terrain effect, DMG <color=#F74848>+12%</color>.",
-        "7": "When attacking a target on any terrain effect, DMG <color=#F74848>+14%</color>.",
-        "8": "When attacking a target on any terrain effect, DMG <color=#F74848>+18%</color>. <buf ID=900017>[Fixed DMG]</buf> dealt is increased by <color=#F74848>25%</color>."
-      }
-    },
     "3027": {
       "name": "Maverick Mod",
       "icon": "Icon_skill_passive_1106",
@@ -1607,40 +1590,6 @@
         "6": "When there are no allies within <color=#F74848>2</color> adjacent tiles, DMG +<color=#F74848>12%</color>",
         "7": "When there are no allies within <color=#F74848>2</color> adjacent tiles, DMG +<color=#F74848>14%</color>",
         "8": "When there are no allies within <color=#F74848>2</color> adjacent tiles, DMG +<color=#F74848>18%</color>;\nAt start of action, if there are no allies within <color=#F74848>2</color> adjacent tiles, AP cost of the first attack initiated this turn <color=#F74848>-1</color>, down to a minimum of <color=#F74848>1</color> AP."
-      }
-    },
-    "3036": {
-      "name": "Bombardment Mod",
-      "icon": "Icon_entry_10087",
-      "category": "GeneralSuit",
-      "maxLevel": 8,
-      "currentLevel": 8,
-      "levels": {
-        "1": "When executing Code attacks, DMG <color=#F74848>+3%</color>.",
-        "2": "When executing Code attacks, DMG <color=#F74848>+4%</color>.",
-        "3": "When executing Code attacks, DMG <color=#F74848>+6%</color>.",
-        "4": "When executing Code attacks, DMG <color=#F74848>+8%</color>.",
-        "5": "When executing Code attacks, DMG <color=#F74848>+10%</color>.",
-        "6": "When executing Code attacks, DMG <color=#F74848>+12%</color>.",
-        "7": "When executing Code attacks, DMG <color=#F74848>+14%</color>.",
-        "8": "When executing Code attacks, DMG <color=#F74848>+18%</color>.\nWhen actively attacking with a Tactical Weapon, if <color=#F74848>3</color> or more targets are hit, randomly reloads <color=#F74848>1</color> Ammo after combat, up to <color=#F74848>1</color> time per turn."
-      }
-    },
-    "3045": {
-      "name": "Support Mod",
-      "icon": "Icon_entry_10097",
-      "category": "GeneralSuit",
-      "maxLevel": 8,
-      "currentLevel": 8,
-      "levels": {
-        "1": "When attacking, if there are allies within <color=#F74848>4</color> adjacent tiles, DMG dealt increases by <color=#F74848>3%</color>.",
-        "2": "When attacking, if there are allies within <color=#F74848>4</color> adjacent tiles, DMG dealt increases by <color=#F74848>4%</color>.",
-        "3": "When attacking, if there are allies within <color=#F74848>4</color> adjacent tiles, DMG dealt increases by <color=#F74848>6%</color>.",
-        "4": "When attacking, if there are allies within <color=#F74848>4</color> adjacent tiles, DMG dealt increases by <color=#F74848>8%</color>.",
-        "5": "When attacking, if there are allies within <color=#F74848>4</color> adjacent tiles, DMG dealt increases by <color=#F74848>10%</color>.",
-        "6": "When attacking, if there are allies within <color=#F74848>4</color> adjacent tiles, DMG dealt increases by <color=#F74848>12%</color>.",
-        "7": "When attacking, if there are allies within <color=#F74848>4</color> adjacent tiles, DMG dealt increases by <color=#F74848>14%</color>.",
-        "8": "When attacking, if there are allies within <color=#F74848>4</color> adjacent tiles, DMG dealt increases by <color=#F74848>18%</color>.\nAt the end of turn, if <color=#F74848>2</color> or more code or attack skills are used this turn, recovers <color=#F74848>1</color> AP."
       }
     },
     "3034": {
@@ -1677,6 +1626,57 @@
         "8": "When in combat against enemies within <color=#F74848>2</color> tiles, DMG <color=#F74848>+18%</color>.\nWhen initiating combat, if the target is hit, steals <color=#F74848>1</color> AP from the target after combat. Can only trigger <color=#F74848>1</color> time per turn."
       }
     },
+    "3041": {
+      "name": "Augmenter",
+      "icon": "Icon_entry_10093",
+      "category": "GeneralSuit",
+      "maxLevel": 8,
+      "currentLevel": 8,
+      "levels": {
+        "1": "When attacking a part with HP above <color=#F74848>60%</color>, DMG <color=#F74848>+3%</color>.",
+        "2": "When attacking a part with HP above <color=#F74848>60%</color>, DMG <color=#F74848>+4%</color>.",
+        "3": "When attacking a part with HP above <color=#F74848>60%</color>, DMG <color=#F74848>+6%</color>.",
+        "4": "When attacking a part with HP above <color=#F74848>60%</color>, DMG <color=#F74848>+8%</color>.",
+        "5": "When attacking a part with HP above <color=#F74848>60%</color>, DMG <color=#F74848>+10%</color>.",
+        "6": "When attacking a part with HP above <color=#F74848>60%</color>, DMG <color=#F74848>+12%</color>.",
+        "7": "When attacking a part with HP above <color=#F74848>60%</color>, DMG <color=#F74848>+14%</color>.",
+        "8": "When attacking a part with HP above <color=#F74848>60%</color>, DMG <color=#F74848>+18%</color>. CP <color=#F74848>+3</color> in the lowest unlocked Neural Drive Sector."
+      }
+    },
+    "3036": {
+      "name": "Bombardment Mod",
+      "icon": "Icon_entry_10087",
+      "category": "GeneralSuit",
+      "maxLevel": 8,
+      "currentLevel": 8,
+      "levels": {
+        "1": "When executing Code attacks, DMG <color=#F74848>+3%</color>.",
+        "2": "When executing Code attacks, DMG <color=#F74848>+4%</color>.",
+        "3": "When executing Code attacks, DMG <color=#F74848>+6%</color>.",
+        "4": "When executing Code attacks, DMG <color=#F74848>+8%</color>.",
+        "5": "When executing Code attacks, DMG <color=#F74848>+10%</color>.",
+        "6": "When executing Code attacks, DMG <color=#F74848>+12%</color>.",
+        "7": "When executing Code attacks, DMG <color=#F74848>+14%</color>.",
+        "8": "When executing Code attacks, DMG <color=#F74848>+18%</color>.\nWhen actively attacking with a Tactical Weapon, if <color=#F74848>3</color> or more targets are hit, randomly reloads <color=#F74848>1</color> Ammo after combat, up to <color=#F74848>1</color> time per turn."
+      }
+    },
+    "3040": {
+      "name": "Ravage Mod",
+      "icon": "Icon_entry_10091",
+      "category": "GeneralSuit",
+      "maxLevel": 8,
+      "currentLevel": 8,
+      "levels": {
+        "1": "When attacking a target on any terrain effect, DMG <color=#F74848>+3%</color>.",
+        "2": "When attacking a target on any terrain effect, DMG <color=#F74848>+4%</color>.",
+        "3": "When attacking a target on any terrain effect, DMG <color=#F74848>+6%</color>.",
+        "4": "When attacking a target on any terrain effect, DMG <color=#F74848>+8%</color>.",
+        "5": "When attacking a target on any terrain effect, DMG <color=#F74848>+10%</color>.",
+        "6": "When attacking a target on any terrain effect, DMG <color=#F74848>+12%</color>.",
+        "7": "When attacking a target on any terrain effect, DMG <color=#F74848>+14%</color>.",
+        "8": "When attacking a target on any terrain effect, DMG <color=#F74848>+18%</color>. <buf ID=900017>[Fixed DMG]</buf> dealt is increased by <color=#F74848>25%</color>."
+      }
+    },
     "9010": {
       "name": "Origin Core",
       "icon": "Icon_entry_40042",
@@ -1705,6 +1705,36 @@
         "6": "Increases DMG dealt to targets within 2 adjacent tiles by <color=#F74848>16%</color>. Reduces DMG taken from attacker beyond 2 adjacent tiles by <color=#F74848>16%</color>.",
         "7": "Increases DMG dealt to targets within 2 adjacent tiles by <color=#F74848>18%</color>. Reduces DMG taken from attacker beyond 2 adjacent tiles by <color=#F74848>18%</color>.",
         "8": "Increases DMG dealt to targets within 2 adjacent tiles by <color=#F74848>24%</color>. Reduces DMG taken from attacker beyond 2 adjacent tiles by <color=#F74848>24%</color>.\n<buf ID=9990001>[Favorable Event]</buf> trigger rate increases by <color=#F74848>+10%</color>. DMG calculation will use the highest number of pilot's attributes"
+      }
+    },
+    "9020": {
+      "name": "Deep Linker",
+      "icon": "Icon_skill_passive_1146",
+      "category": "GeneralSuit",
+      "maxLevel": 4,
+      "currentLevel": 4,
+      "levels": {
+        "1": "DMG dealt increases by <color=#F74848>3%</color>. For each 1 debuff applied, DMG dealt additionally increases by <color=#F74848>2%</color>, stacking up to <color=#F74848>3</color> times, lasting for <color=#F74848>2</color> turns.",
+        "2": "DMG dealt increases by <color=#F74848>6%</color>. For each 1 debuff applied, DMG dealt additionally increases by <color=#F74848>3%</color>, stacking up to <color=#F74848>3</color> times, lasting for <color=#F74848>2</color> turns.",
+        "3": "DMG dealt increases by <color=#F74848>10%</color>. For each 1 debuff applied, DMG dealt additionally increases by <color=#F74848>3%</color>, stacking up to <color=#F74848>5</color> times, lasting for <color=#F74848>2</color> turns.",
+        "4": "DMG dealt increases by <color=#F74848>15%</color>. For each 1 debuff applied, DMG dealt additionally increases by <color=#F74848>4%</color>, stacking up to <color=#F74848>5</color> times, lasting for <color=#F74848>2</color> turns."
+      }
+    },
+    "9030": {
+      "name": "Momentum Module",
+      "icon": "Icon_entry_10110",
+      "category": "GeneralSuit",
+      "maxLevel": 8,
+      "currentLevel": 8,
+      "levels": {
+        "1": "DMG dealt increases by <color=#F74848>2%</color>. DMG dealt additionally increases by <color=#F74848>0.5%</color> for each 1 debuff the enemy team carries, up to <color=#F74848>2%</color>.\nWhen initiating combat, there is a <color=#F74848>25%</color> chance to trigger <buf ID=900001>[Flurry Strike]</buf> following the enemy's attack, dealing <color=#F74848>0.25</color>x DMG. This trigger chance increases by <color=#F74848>25%</color> for each debuff the target carries before combat.",
+        "2": "DMG dealt increases by <color=#F74848>3%</color>. DMG dealt additionally increases by <color=#F74848>0.5%</color> for each 1 debuff the enemy team carries, up to <color=#F74848>3%</color>.\nWhen initiating combat, there is a <color=#F74848>25%</color> chance to trigger <buf ID=900001>[Flurry Strike]</buf> following the enemy's attack, dealing <color=#F74848>0.25</color>x DMG. This trigger chance increases by <color=#F74848>25%</color> for each debuff the target carries before combat.",
+        "3": "DMG dealt increases by <color=#F74848>4%</color>. DMG dealt additionally increases by <color=#F74848>0.5%</color> for each 1 debuff the enemy team carries, up to <color=#F74848>4%</color>.\nWhen initiating combat, there is a <color=#F74848>25%</color> chance to trigger <buf ID=900001>[Flurry Strike]</buf> following the enemy's attack, dealing <color=#F74848>0.25</color>x DMG. This trigger chance increases by <color=#F74848>25%</color> for each debuff the target carries before combat.",
+        "4": "DMG dealt increases by <color=#F74848>5%</color>. DMG dealt additionally increases by <color=#F74848>1%</color> for each 1 debuff the enemy team carries, up to <color=#F74848>5%</color>.\nWhen initiating combat, there is a <color=#F74848>25%</color> chance to trigger <buf ID=900001>[Flurry Strike]</buf> following the enemy's attack, dealing <color=#F74848>0.25</color>x DMG. This trigger chance increases by <color=#F74848>25%</color> for each debuff the target carries before combat.",
+        "5": "DMG dealt increases by <color=#F74848>7%</color>. DMG dealt additionally increases by <color=#F74848>1%</color> for each 1 debuff the enemy team carries, up to <color=#F74848>7%</color>.\nWhen initiating combat, there is a <color=#F74848>25%</color> chance to trigger <buf ID=900001>[Flurry Strike]</buf> following the enemy's attack, dealing <color=#F74848>0.25</color>x DMG. This trigger chance increases by <color=#F74848>25%</color> for each debuff the target carries before combat.",
+        "6": "DMG dealt increases by <color=#F74848>8%</color>. DMG dealt additionally increases by <color=#F74848>1%</color> for each 1 debuff the enemy team carries, up to <color=#F74848>8%</color>.\nWhen initiating combat, there is a <color=#F74848>25%</color> chance to trigger <buf ID=900001>[Flurry Strike]</buf> following the enemy's attack, dealing <color=#F74848>0.25</color>x DMG. This trigger chance increases by <color=#F74848>25%</color> for each debuff the target carries before combat.",
+        "7": "DMG dealt increases by <color=#F74848>9%</color>. DMG dealt additionally increases by <color=#F74848>1.5%</color> for each 1 debuff the enemy team carries, up to <color=#F74848>9%</color>.\nWhen initiating combat, there is a <color=#F74848>25%</color> chance to trigger <buf ID=900001>[Flurry Strike]</buf> following the enemy's attack, dealing <color=#F74848>0.25</color>x DMG. This trigger chance increases by <color=#F74848>25%</color> for each debuff the target carries before combat.",
+        "8": "DMG dealt increases by <color=#F74848>12%</color>. DMG dealt additionally increases by <color=#F74848>1.5%</color> for each 1 debuff the enemy team carries, up to <color=#F74848>12%</color>.\nWhen initiating combat, there is a <color=#F74848>25%</color> chance to trigger <buf ID=900001>[Flurry Strike]</buf> following the enemy's attack, dealing <color=#F74848>0.25</color>x DMG. This trigger chance increases by <color=#F74848>25%</color> for each debuff the target carries before combat."
       }
     }
   }

@@ -1315,6 +1315,34 @@ window.GlossaryData = {
     "9990001": {
       "name": "Favorable Event",
       "effect": "Includes Critical Hit chance, Hit rate, Dodge Rate, Component proc rate, Module proc rate, <buf ID=900001>[Flurry Strike]</buf> and <buf ID=900010>[Gusty Strike]</buf> proc rate"
+    },
+    "160900": {
+      "name": "GKD Stance",
+      "effect": "Movement <color=#F74848>+1</color>. After attacking, inflicts <color=#F74848>1</color> stack of <buf ID=182900>[Suppression]</buf> on the target, lasting for <color=#F74848>2</color> turns."
+    },
+    "160901": {
+      "name": "Electric Eel Stance",
+      "effect": "After actively attacking, extends the remaining duration of maximum <color=#F74848>5</color> debuffs on the target by <color=#F74848>1</color> turn. Also applies <color=#F74848>1</color> stack of <buf ID=530572>[Instability III]</buf> to the target, lasting for <color=#F74848>2</color> turns."
+    },
+    "160902": {
+      "name": "Collective Advantage",
+      "effect": "DMG dealt increases by <color=#F74848>2%</color>, Critical Hit chance increases by <color=#F74848>1%</color> per stack, up to <color=#F74848>20</color> stacks."
+    },
+    "160903": {
+      "name": "Structural Instability",
+      "effect": "When actively attacked in combat, Final DMG taken increases by <color=#F74848>30%</color> and the attacker ignores all standard DMG Reduction effects. This effect is removed upon triggering."
+    },
+    "160904": {
+      "name": "GKD Mark",
+      "effect": "When actively attacked, chance of being critically hit increases by <color=#F74848>15%</color> and Critical DMG taken increases by <color=#F74848>10%</color>. The attacker recovers <color=#F74848>1</color> AP after combat. This effect is removed upon triggering."
+    },
+    "160905": {
+      "name": "GKD Support",
+      "effect": "Movement increases by <color=#F74848>+1</color>. After initiating combat, inflicts <color=#F74848>1</color> stack of <buf ID=182900>[Suppression]</buf> on the target. This unit is considered a member of GKD for <color=#F74848>2</color> turns."
+    },
+    "160906": {
+      "name": "Electric Eel Support",
+      "effect": "After initiating combat, extends the remaining duration of maximum <color=#F74848>5</color> debuffs on the target by <color=#F74848>1</color> turn. Also applies <color=#F74848>1</color> stack of <buf ID=530572>[Instability III]</buf> to the target. This unit is considered a member of Electric Eel for <color=#F74848>2</color> turns."
     }
   },
   "skill": {
@@ -1884,6 +1912,12 @@ window.GlossaryData = {
     "182902": {
       "name": "Flurry Strike",
       "effect": "Uses the opposite arm to launch an additional attack, dealing bonus DMG. The multiplier is increased by the <skill ID=182560>[Gun Heart, Blade Soul]</skill> passive line."
+    },
+    "160950": {
+      "name": "Stance Adjustment",
+      "Ap": "0",
+      "icon": "Icon_skill_order_5137",
+      "effect": "Switches between <buf ID=160900>[GKD Stance]</buf> or <buf ID=160901>[Electric Eel Stance]</buf>."
     }
   },
   "terrain": {

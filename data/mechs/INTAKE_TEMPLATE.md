@@ -73,74 +73,73 @@ Checklist for whoever (or whichever agent) turns this into the JSON file:
 ## Basics
 
 - Mech ID: <8-digit numeric ID, check `ls data/mechs` for collisions>
-- Mech Name: MobiuX
-- Type (weight class): Light
+- Mech Name: Nephthys
+- Type (weight class): Medium
 - Quality: SSR
 - Game version introduced: 3.3
-- Dispatch version: 3.4
+- Dispatch version: 3.6
 - Flavor text / lore description:
 
 ## Images
 <!-- icon is prefixed with data/unlisted/mechs/Icon/<Type>/ -->
 <!-- portrait (Raw) is prefixed with data/unlisted/mechs/Raw/<Type>/ -->
 <!-- alternate skins (if any) are prefixed with data/unlisted/mechs/Skins/<Type>/ -->
-- Icon file (all 4 parts share this): Icon_mecha_wap1052.png
-- Portrait/Raw file (Body only): Icon_mecha_wap1052_SN_Raw.png
-- mechaIcon (CDN key, per part, only if a CN CDN asset exists): Icon_wap1052_1
-- lihuiIcon (CDN key, Body only, only if a CN CDN asset exists): icon_lihui_wap1052
+- Icon file (all 4 parts share this): Icon_mecha_wap2040.png
+- Portrait/Raw file (Body only): Icon_mecha_wap2040_SN_Raw.png
+- mechaIcon (CDN key, per part, only if a CN CDN asset exists): Icon_wap2040_1
+- lihuiIcon (CDN key, Body only, only if a CN CDN asset exists): icon_lihui_wap2040
 - Alternate skins (Body only, list each variant token you have a
-  `Img_Skin_wap1052_<variant>.png` file for, or "none"): none
+  `Img_Skin_wap2040_<variant>.png` file for, or "none"): none
 
 ### Body — max level (manji) overrides
-- Durable: 9703
+- Durable: 12400
 - Armor: 470
-- Fire: 1215
-- Output: 1595
-- Weight: 285
+- Fire: 1245
+- Output: 1970
+- Weight: 280
 - Antiriot: 4472
 
 ### L-Arm — max level (manji) overrides
-- Durable: 5115
-- Weight: 100
-- Fire: 1215
-- Hit: 1974
+- Durable: 6756
+- Weight: 170
+- Fire: 1245
+- Hit: 1794
 
 ### R-Arm — max level (manji) overrides
-- Durable: 5115
-- Weight: 100
-- Fire: 1215
-- Hit: 1974
+- Durable: 6756
+- Weight: 170
+- Fire: 1245
+- Hit: 1794
 
 ### Legs — max level (manji) overrides
-- Durable: 8452
-- Weight: 160
-- Fire: 1215
-- Dodge: 5233
-- Move: 4
+- Durable: 9731
+- Weight: 200
+- Fire: 1245
+- Dodge: 3885
+- Move: 3
 
 ## Modules
 <!-- Copy this block for each distinct module referenced above. -->
 ### Module 1
-- Name: Origin Core
+- Name: Deep Linker
 - Level: 4/4
-- Effect text: During own turn, increases Dodge Rate by 3/6/9/15% of Firepower. During enemy turn, increases Firepower by 3/6/9/15% of Dodge Rate. <!-- numbers must be wrapped as <color=#F74848>NUMBER</color>, same convention as pilot skill text, record the different level effect based on the numbers split -->
-- Icon name: Icon_entry_40042
+- Effect text: DMG dealt increases by 3/6/10/15%. For each 1 debuff applied, DMG dealt additionally increases by 2/3/3/4%, stacking up to 3/3/5/5 times, lasting for 2 turns. <!-- numbers must be wrapped as <color=#F74848>NUMBER</color>, same convention as pilot skill text, record the different level effect based on the numbers split -->
+- Icon name: Icon_skill_passive_1146
 
 ### Module 2
-- Name: Crit Rate Mod
+- Name: Crit DMG Mod
 - Level: 4/4
-- Effect text: Same as others, ID 40024
-- Icon name: Same as others, ID 40024
+- Effect text: Same as others, ID 40034
+- Icon name: Same as others, ID 40034
 
 ### Module 3
-- Name: Descension Module
+- Name: Momentum Module
 - Level: 8/8
-- Effect text: Increases DMG dealt to targets within 2 adjacent tiles by 4/6/8/10/14/16/18/24%. Reduces DMG taken from attacker beyond 2 adjacent tiles by 4/6/8/10/14/16/18/24%.\n[Favorable Event] trigger rate increases by +10%. DMG calculation will use the highest number of pilot's attributes<!-- numbers must be wrapped as <color=#F74848>NUMBER</color>, same convention as pilot skill text, record the different level effect based on the numbers split -->
-- Icon name: Icon_entry_10109
+- Effect text: DMG dealt increases by 2/3/4/5/7/8/9/12%. DMG dealt additionally increases by 0.5/0.5/0.5/1/1/1/1.5/1.5% for each 1 debuff the enemy team carries, up to 2/3/4/5/7/8/9/12%.\nWhen initiating combat, there is a 25% chance to trigger [Flurry Strike] following the enemy's attack, dealing 0.25x DMG. This trigger chance increases by 25% for each debuff the target carries before combat.<!-- numbers must be wrapped as <color=#F74848>NUMBER</color>, same convention as pilot skill text, record the different level effect based on the numbers split -->
+- Icon name: Icon_entry_10110
 
 ### Glossary buf 1
 <!-- Pick a random unique ID for this in the <buf> tag and add the tag to all referenced text from this pilot -->
-- Favorable Event: Includes Critical Hit chance, Hit rate, Dodge Rate, Component proc rate, Module proc rate, [Flurry Strike] and [Gusty Strike] proc rate
 
 ### Glossary skill 1
 <!-- Pick a random unique ID for this in the <skill> tag and add the tag to all referenced text from this pilot -->

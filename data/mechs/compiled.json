@@ -4299,6 +4299,100 @@
       "enTranslation": true
     },
     {
+      "ID": "20620103",
+      "name": "Nephthys",
+      "type": "Medium",
+      "quality": "SSR",
+      "icon": "Icon_mecha_wap2040",
+      "mechaIcon": "Icon_wap2040_1",
+      "lihuiIcon": "icon_lihui_wap2040",
+      "introduce": "",
+      "output": "1970",
+      "durable": "446",
+      "Armor": "941",
+      "fire": "127",
+      "Antiriot": "770",
+      "parts": [
+        {
+          "position": "Body",
+          "aircraftWeight": "280",
+          "maxHp": "12400",
+          "Armor": "470",
+          "Hit": null,
+          "Dodge": null,
+          "Antiriot": "4472"
+        },
+        {
+          "position": "L-Arm",
+          "aircraftWeight": "170",
+          "maxHp": "6756",
+          "Armor": "470",
+          "Hit": "1794",
+          "Dodge": null,
+          "Antiriot": null
+        },
+        {
+          "position": "R-Arm",
+          "aircraftWeight": "170",
+          "maxHp": "6756",
+          "Armor": "470",
+          "Hit": "1794",
+          "Dodge": null,
+          "Antiriot": null
+        },
+        {
+          "position": "Legs",
+          "aircraftWeight": "200",
+          "maxHp": "9731",
+          "Armor": "470",
+          "Hit": null,
+          "Dodge": "3885",
+          "Antiriot": null
+        }
+      ],
+      "manjiFirepower": "1245",
+      "modules": [
+        {
+          "ID": "90204",
+          "name": "Deep Linker",
+          "SpecificEffects": "DMG dealt increases by <color=#F74848>15%</color>. For each 1 debuff applied, DMG dealt additionally increases by <color=#F74848>4%</color>, stacking up to <color=#F74848>5</color> times, lasting for <color=#F74848>2</color> turns.",
+          "BufCarried": "902041",
+          "SkillIcon": "Icon_skill_passive_1146",
+          "icon": "Icon_skill_passive_1146",
+          "Status": 1,
+          "weight": 1,
+          "id": "9020",
+          "level": 4
+        },
+        {
+          "ID": "40034",
+          "name": "Crit DMG Mod",
+          "SpecificEffects": "Crit DMG <color=#F74848>+10%</color>.",
+          "BufCarried": "400341",
+          "SkillIcon": "Icon_entry_40031",
+          "icon": "Icon_entry_40031",
+          "Status": 1,
+          "weight": 2,
+          "id": "4003",
+          "level": 4
+        },
+        {
+          "ID": "90308",
+          "name": "Momentum Module",
+          "SpecificEffects": "DMG dealt increases by <color=#F74848>12%</color>. DMG dealt additionally increases by <color=#F74848>1.5%</color> for each 1 debuff the enemy team carries, up to <color=#F74848>12%</color>.\nWhen initiating combat, there is a <color=#F74848>25%</color> chance to trigger <buf ID=900001>[Flurry Strike]</buf> following the enemy's attack, dealing <color=#F74848>0.25</color>x DMG. This trigger chance increases by <color=#F74848>25%</color> for each debuff the target carries before combat.",
+          "BufCarried": "903081",
+          "SkillIcon": "Icon_entry_10110",
+          "icon": "Icon_entry_10110",
+          "Status": 1,
+          "weight": 3,
+          "id": "9030",
+          "level": 8
+        }
+      ],
+      "version": "3.3",
+      "enTranslation": true
+    },
+    {
       "ID": "20570103",
       "name": "Nightglow",
       "type": "Medium",
