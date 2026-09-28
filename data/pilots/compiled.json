@@ -3336,7 +3336,7 @@
       "Talent3_5Ability": {
         "ID": "160551",
         "name": "Dual Rookie",
-        "SpecificEffects": "At the start of battle, enters <buf ID=160900>[GKD Stance]</buf>. At the end of action, can trigger <skill ID=160950>[Stance Adjustment]</skill> once. Gains <color=#F74848>1</color> stack of <buf ID=160902>[Collective Advantage]</buf> for each <color=#F74848>1</color> stack of <buf ID=182900>[Suppression]</buf> or <buf ID=900034>[Instability]</buf> inflicted on enemies, up to <color=#F74848>20</color> stacks.\nHeavy Machine Gun DMG dealt increases by <color=#F74848>15%</color>. When both hands are intact, Heavy Machine Gun range increases by <color=#F74848>+1</color>.",
+        "SpecificEffects": "At the start of battle, enters <buf ID=160900>[GKD Stance]</buf>. At the end of action, can trigger <skill ID=160950>[Stance Adjustment]</skill> once. Gains <color=#F74848>1</color> stack of <buf ID=160902>[Collective Advantage]</buf> for each <color=#F74848>1</color> stack of <buf ID=182900>[Suppression]</buf> or <buf ID=900034>[Instability]</buf> inflicted on enemies, up to <color=#F74848>20</color> stacks.\nHeavy Machine Gun DMG dealt increases by <color=#F74848>15%</color>. When both hands are intact, Heavy Machine Gun range and AoE range increase by <color=#F74848>+1</color>.",
         "SkillIcon": "Icon_skill_talent_5165",
         "icon": "Icon_skill_talent_5165",
         "Status": 1,
@@ -4158,7 +4158,7 @@
           "skill": {
             "ID": "160507",
             "name": "Dual Stance Synergy",
-            "SpecificEffects": "When other allies from GKD or Electric Eel initiates an attack, uses Heavy Machine Gun to launch a <buf ID=900002>[Link Attack]</buf>, dealing <color=#F74848>0.3</color>x DMG. This effect can trigger <color=#F74848>2</color> times per turn.",
+            "SpecificEffects": "When other allies from GKD or Electric Eel initiates combat, uses Heavy Machine Gun to launch a <buf ID=900002>[Link Attack]</buf>, dealing <color=#F74848>0.3</color>x DMG. This effect can trigger <color=#F74848>2</color> times per turn.",
             "SkillIcon": "Icon_skill_passive_5152",
             "icon": "Icon_skill_passive_5152",
             "Status": 1,
