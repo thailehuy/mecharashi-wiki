@@ -64,21 +64,21 @@ pilot from this template (10103182, Kaidan The Invincible):
 
 ## Basics
 
-- Pilot ID: 10103167
-- Pilot Name: Blackout
-- Real Name: --------
+- Pilot ID: 10103175
+- Pilot Name: Niall
+- Real Name: Niall Kunschteit
 - Gender: Male
-- Profession: Defender
-- Occupation: Guardian <!-- Use the correct profession icon -->
+- Profession: Launcher
+- Occupation: Tactician <!-- Use the correct profession icon -->
 - Quality: SSR
-- License: Heavy
+- License: Medium
 - Game version introduced: 3.4
 
 ## Images
 <!-- portrait is prefixed with data/unlisted/pilot_images_half/ -->
 <!-- avatar is prefixed with data/unlisted/pilot_images_raw/ -->
-- Portrait (half-body) file: Pilot_10103167A_half.png
-- Avatar (full portrait) file: Pilot_10103167A_raw.png
+- Portrait (half-body) file: Pilot_10103175A_half.png
+- Avatar (full portrait) file: Pilot_10103175A_raw.png
 
 ## Attributes
 - Ranged: 2270
@@ -201,8 +201,8 @@ pilot from this template (10103182, Kaidan The Invincible):
 ### Glossary buf 1
 <!-- Pick a random unique ID for this in the <buf> tag and add the tag to all referenced text from this pilot -->
 - Fate Hunt: Active attacks cannot be retaliated. Hit Rate increases by 15%. After attacking, restores HP equal to 25% DMG dealt to all intact parts. This effect is removed at the start of next turn.
-- Chain Execution: After actively attacking, can launch a [Chain Attack], allowing movement of 1 tile before attacking. This effect can trigger 1 time per turn and is removed at the start of next turn.
-- Chain Attack: Allows launching another active attack
+- Chain Execution: After actively attacking, can launch a [Re-ATK], allowing movement of 1 tile before attacking. This effect can trigger 1 time per turn and is removed at the start of next turn.
+- Re-ATK: Allows launching another active attack
 - Assault Field: An aura around self which reduces DMG dealt of enemy units within 3 adjacent tiles by 10% and increaes the movement cost to exit [Assault Field] by 2. If an enemy remains within [Assault Field] after action, uses Machine Gun to launch an [Suppression Attack] dealing 0.4x DMG and inflicts a random debuff to the targetfor 2 turns (this effect can trigger 3 times per turn).
 - Suppression Attack: Launches an attack against an enemy after they complete their action
 - Rampage: Final DMG dealt increases by 30%. This effect is removed at the start of next turn.
@@ -217,4 +217,4 @@ pilot from this template (10103182, Kaidan The Invincible):
 - AP: 3
 - CD: 1
 - Icon: Icon_skill_order_1165
-- Effect: If not affected by [Fate Hunt], this skill AP cost is reduced by 3, reset after use. This skill can only be activated when legs are intact. Jumps to an empty tile within 4 adjacent tiles and gains [Fate Hunt], [Rampage] and [Chain Execution]. The trigger count for [Suppression Attack] increases by 3, and remaining movement can be used to launch a [Chain Attack]. This skill can be used 1 time per turn
+- Effect: If not affected by [Fate Hunt], this skill AP cost is reduced by 3, reset after use. This skill can only be activated when legs are intact. Jumps to an empty tile within 4 adjacent tiles and gains [Fate Hunt], [Rampage] and [Chain Execution]. The trigger count for [Suppression Attack] increases by 3, and remaining movement can be used to launch a [Re-ATK]. This skill can be used 1 time per turn

@@ -1350,11 +1350,7 @@ window.GlossaryData = {
     },
     "167901": {
       "name": "Chain Execution",
-      "effect": "After actively attacking, can launch a <buf ID=167902>[Chain Attack]</buf>, allowing movement of <color=#F74848>1</color> tile before attacking. This effect can trigger <color=#F74848>1</color> time per turn and is removed at the start of next turn."
-    },
-    "167902": {
-      "name": "Chain Attack",
-      "effect": "Allows launching another active attack."
+      "effect": "After actively attacking, can launch a <buf ID=900004>[Re-ATK]</buf>, allowing movement of <color=#F74848>1</color> tile before attacking. This effect can trigger <color=#F74848>1</color> time per turn and is removed at the start of next turn."
     },
     "167903": {
       "name": "Assault Field",
@@ -1370,7 +1366,7 @@ window.GlossaryData = {
     },
     "167906": {
       "name": "Undying",
-      "effect": "Body is immune to <buf ID=900109>[Execution]</buf> effect. When the Body suffers overdamage, triggers <buf ID=900003>[Guts]</buf>, locking at <color=#F74848>1</color> HP. Consumes <color=#F74848>1</color> stack upon activation. Stacks up to a maximum of <color=#F74848>3</color> times."
+      "effect": "Body is immune to <buf ID=900109>[Execution]</buf> effect. When any part suffers overdamage, triggers <buf ID=900003>[Guts]</buf>, locking at <color=#F74848>1</color> HP. Consumes <color=#F74848>1</color> stack upon activation. Stacks up to a maximum of <color=#F74848>3</color> times."
     },
     "167907": {
       "name": "Move Again",
@@ -1960,7 +1956,7 @@ window.GlossaryData = {
       "Ap": "3",
       "CD": "1",
       "icon": "Icon_skill_order_1165",
-      "effect": "If not affected by <buf ID=167900>[Fate Hunt]</buf>, this skill's AP cost is reduced by <color=#F74848>3</color>, reset after use. This skill can only be activated when legs are intact. Jumps to an empty tile within <color=#F74848>4</color> adjacent tiles and gains <buf ID=167900>[Fate Hunt]</buf>, <buf ID=167905>[Rampage]</buf> and <buf ID=167901>[Chain Execution]</buf>. The trigger count for <buf ID=167904>[Suppression Attack]</buf> increases by <color=#F74848>3</color>, and remaining movement can be used to launch a <buf ID=167902>[Chain Attack]</buf>. This skill can be used <color=#F74848>1</color> time per turn."
+      "effect": "At the end of turn, if not affected by <buf ID=167900>[Fate Hunt]</buf>, this skill's AP cost is reduced by <color=#F74848>3</color>. This effect is reset after use. This skill can only be activated when legs are intact. Jumps to an empty tile within <color=#F74848>4</color> adjacent tiles and gains <buf ID=167900>[Fate Hunt]</buf> and <buf ID=167901>[Chain Execution]</buf>. The trigger count for <buf ID=167904>[Suppression Attack]</buf> increases by <color=#F74848>3</color>, and remaining movement can be used to launch a <buf ID=900004>[Re-ATK]</buf>. This skill can be used <color=#F74848>1</color> time per turn."
     }
   },
   "terrain": {
