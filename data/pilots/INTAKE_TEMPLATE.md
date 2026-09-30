@@ -65,14 +65,14 @@ pilot from this template (10103182, Kaidan The Invincible):
 ## Basics
 
 - Pilot ID: 10103175
-- Pilot Name: Niall
-- Real Name: Niall Kunschteit
+- Pilot Name: Alena
+- Real Name: Alena Vera
 - Gender: Female
-- Profession: Launcher
-- Occupation: Tactician <!-- Use the correct profession icon -->
+- Profession: Assault
+- Occupation: Raider <!-- Use the correct profession icon -->
 - Quality: SSR
-- License: Medium
-- Game version introduced: 3.4
+- License: Heavy
+- Game version introduced: 3.5
 
 ## Images
 <!-- portrait is prefixed with data/unlisted/pilot_images_half/ -->
@@ -97,7 +97,7 @@ pilot from this template (10103182, Kaidan The Invincible):
 ### Basic Talent (Talent0_2Ability)
 - Name: Truth Seeker
 - Effect text: When any unit on the field tkes non-percentage [Fixed DMG], gains 2 stacks of [Effective Data]. When an ally triggers [Percentage HP Reduction], gains 4 stacks of [Effective Data].
-- Icon name: Icon_skill_talent_5167
+- Icon name: Icon_skill_talent_5168
 
 ### Ascended Talent (Talent3_5Ability)
 <!-- Ascended talent has same name and icon as basic one, with a line split -->

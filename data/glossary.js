@@ -1967,7 +1967,7 @@ window.GlossaryData = {
       "name": "Limit Break",
       "Ap": "3",
       "CD": "1",
-      "icon": "Icon_skill_order_1165",
+      "icon": "Icon_skill_order_5167",
       "effect": "At the end of turn, if not affected by <buf ID=167900>[Fate Hunt]</buf>, this skill's AP cost is reduced by <color=#F74848>3</color>. This effect is reset after use. This skill can only be activated when legs are intact. Jumps to an empty tile within <color=#F74848>4</color> adjacent tiles and gains <buf ID=167900>[Fate Hunt]</buf> and <buf ID=167901>[Chain Execution]</buf>. The trigger count for <buf ID=167904>[Suppression Attack]</buf> increases by <color=#F74848>3</color>, and remaining movement can be used to launch a <buf ID=900004>[Re-ATK]</buf>. This skill can be used <color=#F74848>1</color> time per turn."
     }
   },
