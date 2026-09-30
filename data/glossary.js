@@ -1375,6 +1375,18 @@ window.GlossaryData = {
     "167908": {
       "name": "Re-Act Prohibition",
       "effect": "Cannot trigger <buf ID=900004>[Re-ATK]</buf> or <buf ID=900005>[Re-Act]</buf>."
+    },
+    "175900": {
+      "name": "Effective Data",
+      "effect": "Can be consumed to enhance [Niall]'s skill effects. For each stack consumed, the attack's DMG dealt and Critical Hit chance increase by <color=#F74848>2.5%</color>, stacking up to <color=#F74848>30</color> times."
+    },
+    "175901": {
+      "name": "DMG Immunity",
+      "effect": "Negates DMG dealt from a single attack. This effect is removed after triggering."
+    },
+    "175902": {
+      "name": "Percentage HP Reduction",
+      "effect": "Directly reduces HP by a percentage. This effect is not affected by <buf ID=900017>[Fixed DMG]</buf> modifiers or <buf ID=175901>[DMG Immunity]</buf> effects."
     }
   },
   "skill": {

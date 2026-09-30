@@ -73,8 +73,8 @@ Checklist for whoever (or whichever agent) turns this into the JSON file:
 ## Basics
 
 - Mech ID: <8-digit numeric ID, check `ls data/mechs` for collisions>
-- Mech Name: Nidhogg
-- Type (weight class): Heavy
+- Mech Name: Prism
+- Type (weight class): Medium
 - Quality: SSR
 - Game version introduced: 3.4
 - Dispatch version: 3.6
@@ -84,59 +84,59 @@ Checklist for whoever (or whichever agent) turns this into the JSON file:
 <!-- icon is prefixed with data/unlisted/mechs/Icon/<Type>/ -->
 <!-- portrait (Raw) is prefixed with data/unlisted/mechs/Raw/<Type>/ -->
 <!-- alternate skins (if any) are prefixed with data/unlisted/mechs/Skins/<Type>/ -->
-- Icon file (all 4 parts share this): Icon_mecha_wap3047.png
-- Portrait/Raw file (Body only): Icon_mecha_wap3047_SN_Raw.png
-- mechaIcon (CDN key, per part, only if a CN CDN asset exists): Icon_wap3047_1
-- lihuiIcon (CDN key, Body only, only if a CN CDN asset exists): icon_lihui_wap3047
+- Icon file (all 4 parts share this): Icon_mecha_wap2062.png
+- Portrait/Raw file (Body only): Icon_mecha_wap2062_SN_Raw.png
+- mechaIcon (CDN key, per part, only if a CN CDN asset exists): Icon_wap2062_1
+- lihuiIcon (CDN key, Body only, only if a CN CDN asset exists): icon_lihui_wap2062
 - Alternate skins (Body only, list each variant token you have a
-  `Img_Skin_wap3047_<variant>.png` file for, or "none"): none
+  `Img_Skin_wap2062_<variant>.png` file for, or "none"): none
 
 ### Body — max level (manji) overrides
-- Durable: 13067
-- Fire: 1166
-- Weight: 370
-- Output: 2090
+- Durable: 10926
+- Fire: 1255
+- Weight: 290
+- Output: 2880
 - Antiriot: 4472
-- Armor: 1412
+- Armor: 706
 
 ### L-Arm — max level (manji) overrides
-- Durable: 6645
-- Fire: 1166
-- Weight: 175
-- Hit: 1852
+- Durable: 6561
+- Fire: 1255
+- Weight: 165
+- Hit: 1794
 
 ### R-Arm — max level (manji) overrides
-- Durable: 6645
-- Fire: 1166
-- Weight: 175
-- Hit: 1852
+- Durable: 6561
+- Fire: 1255
+- Weight: 165
+- Hit: 1794
 
 ### Legs — max level (manji) overrides
-- Durable: 19732
-- Fire: 1166
-- Weight: 220
-- Dodge: 3287
+- Durable: 9536
+- Fire: 1255
+- Weight: 210
+- Dodge: 3885
 - Move: 3
 
 ## Modules
 <!-- Copy this block for each distinct module referenced above. -->
 ### Module 1
-- Name: Doomsday Core
+- Name: Refraction Array
 - Level: 4/4
-- Effect text: Reduces DMG taken by 3/6/10/15% when attacked by enemies afflicted with debuffs. DMG Dealth increases by 3/6/10/15% when attacking enemies afflicted with debuffs. DMG dealt additionally increases by 1/2/2/3% for each 1 debuff present, up to 6/12/20/30%. <!-- numbers must be wrapped as <color=#F74848>NUMBER</color>, same convention as pilot skill text, record the different level effect based on the numbers split -->
-- Icon name: Icon_skill_passive_1179
+- Effect text: When attacking with Tactical weapons, DMG Dealt increases by 4/8/14/20%. When attacking with shoulder-mounted weapons, Critical Hit chance increases by 3/6/10/15% <!-- numbers must be wrapped as <color=#F74848>NUMBER</color>, same convention as pilot skill text, record the different level effect based on the numbers split -->
+- Icon name: Icon_skill_passive_1180
 
 ### Module 2
-- Name: HP Mod
+- Name: Crit Rate Mod
 - Level: 4/4
-- Effect text: Same as others, ID 40054
-- Icon name: Same as others, ID 40054
+- Effect text: Same as others, ID 40024
+- Icon name: Same as others, ID 40024
 
 ### Module 3
-- Name: Force Field Module
+- Name: Last Stand Module
 - Level: 8/8
-- Effect text: When attacking a target carrying debuffs, all intact parts gain Temporary HP equal to 0.5/0.5/0.5/1/1/1/1.5/1.5% of max HP, up to a maximum of 4/6/8/10/14/16/18/24% of mmax HP.\nReduces the skill multiplier of all enemies within 3 adjacent tile by 0.1 (this effect is reduced to 1/4 against Rocket weapons). For every affected target within range, this unit's skill multiplier increases by 0.025, up to a maximum of 0.1.<!-- numbers must be wrapped as <color=#F74848>NUMBER</color>, same convention as pilot skill text, record the different level effect based on the numbers split -->
-- Icon name: Icon_entry_10111
+- Effect text: When own HP is not full, DMG Dealt increases by 4/6/8/10/14/16/18/24%.\nWhen actively attacking, the attack multiplier increases by 0.025 for each ally without full HP, up to +0.1. This effect is reduced to 1/4 if equipped with Rocket Launcher.<!-- numbers must be wrapped as <color=#F74848>NUMBER</color>, same convention as pilot skill text, record the different level effect based on the numbers split -->
+- Icon name: Icon_entry_10112
 
 ### Glossary buf 1
 <!-- Pick a random unique ID for this in the <buf> tag and add the tag to all referenced text from this pilot -->

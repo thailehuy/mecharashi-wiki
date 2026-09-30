@@ -275,6 +275,44 @@ MANUAL_MODULE_LEVELS = {
             ], 1)
         },
     },
+    # Refraction Array (Prism, family 9022): the intake gave a 4-level split
+    # for both numbers (Tactical DMG% and shoulder-weapon Crit chance%).
+    '9022': {
+        'name': 'Refraction Array',
+        'icon': 'Icon_skill_passive_1180',
+        'category': 'GeneralSuit',
+        'maxLevel': 4,
+        'currentLevel': 4,
+        'levels': {
+            str(i): (
+                f'When attacking with Tactical weapons, DMG dealt increases by <color=#F74848>{dmg}%</color>. '
+                f'When attacking with shoulder-mounted weapons, Critical Hit chance increases by <color=#F74848>{crit}%</color>.'
+            )
+            for i, (dmg, crit) in enumerate([
+                ('4', '3'), ('8', '6'), ('14', '10'), ('20', '15'),
+            ], 1)
+        },
+    },
+    # Last Stand Module (Prism, family 9032): the intake gave the full 8-level
+    # ladder for the DMG% clause; the attack-multiplier clause only unlocks at
+    # max level (8), same pattern as Force Field Module above.
+    '9032': {
+        'name': 'Last Stand Module',
+        'icon': 'Icon_entry_10112',
+        'category': 'GeneralSuit',
+        'maxLevel': 8,
+        'currentLevel': 8,
+        'levels': {
+            str(i): (
+                f'When own HP is not full, DMG dealt increases by <color=#F74848>{pct}%</color>.'
+            ) + ('' if i < 8 else (
+                '\nWhen actively attacking, the attack multiplier increases by <color=#F74848>0.025</color> for each '
+                'ally without full HP, up to <color=#F74848>+0.1</color>. This effect is reduced to '
+                '<color=#F74848>1/4</color> if equipped with Rocket Launcher.'
+            ))
+            for i, pct in enumerate(['4', '6', '8', '10', '14', '16', '18', '24'], 1)
+        },
+    },
 }
 
 

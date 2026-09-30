@@ -14,6 +14,8 @@ var STSTATS_COLUMNS = [
   { key: 'remaining', label: 'Remaining Weight', cls: 'ststats-col-weight' },
 ];
 
+var STSTATS_POSITION_EN = { '躯干': 'Body', '左臂': 'L-Arm', '右臂': 'R-Arm', '腿部': 'Legs' };
+
 Pages.ststats = {
   title: 'ST Stats Table',
 
@@ -25,10 +27,14 @@ Pages.ststats = {
     var mechs = (window.MechsData || {}).mechs || [];
     return mechs.filter(function (m) { return m.quality === 'SSR'; }).map(function (m) {
       var parts = m.parts || [];
-      var body  = parts.find(function (p) { return p.position === '躯干'; }) || {};
-      var lArm  = parts.find(function (p) { return p.position === '左臂'; }) || {};
-      var rArm  = parts.find(function (p) { return p.position === '右臂'; }) || {};
-      var legs  = parts.find(function (p) { return p.position === '腿部'; }) || {};
+      // Older mechs store Chinese part positions; 3.3+ mechs store English ones.
+      var byPos = function (pos) {
+        return parts.find(function (p) { return (STSTATS_POSITION_EN[p.position] || p.position) === pos; }) || {};
+      };
+      var body  = byPos('Body');
+      var lArm  = byPos('L-Arm');
+      var rArm  = byPos('R-Arm');
+      var legs  = byPos('Legs');
 
       var bodyOutput  = parseInt(m.output, 10) || 0;
       var partsWeight = parts.reduce(function (sum, p) { return sum + (parseInt(p.aircraftWeight, 10) || 0); }, 0);

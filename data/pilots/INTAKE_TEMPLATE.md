@@ -67,7 +67,7 @@ pilot from this template (10103182, Kaidan The Invincible):
 - Pilot ID: 10103175
 - Pilot Name: Niall
 - Real Name: Niall Kunschteit
-- Gender: Male
+- Gender: Female
 - Profession: Launcher
 - Occupation: Tactician <!-- Use the correct profession icon -->
 - Quality: SSR
@@ -81,100 +81,102 @@ pilot from this template (10103182, Kaidan The Invincible):
 - Avatar (full portrait) file: Pilot_10103175A_raw.png
 
 ## Attributes
-- Ranged: 2270
-- Tactical: 1808
-- Assault: 4773
-- Melee: 1504
-- Mechanic: 1651
-- Defense: 4548
+- Ranged: 1592
+- Tactical: 4865
+- Assault: 1916
+- Melee: 2408
+- Mechanic: 1749
+- Defense: 4013
 - Initial Base Starting AP: 5
-- Max Base Starting AP: 5
+- Max Base Starting AP: 6
 - AP Recovery: 2
 
 ## Talents
 <!-- all talents, skills and neural icons are prefixed with data/unlisted/pilot_skills/ -->
 
 ### Basic Talent (Talent0_2Ability)
-- Name: Punisher
-- Effect text: Can use command skill [Limit Break]. Carries [Assault Field] aura.
-- Icon name: Icon_skill_talent_5166.png
+- Name: Truth Seeker
+- Effect text: When any unit on the field tkes non-percentage [Fixed DMG], gains 2 stacks of [Effective Data]. When an ally triggers [Percentage HP Reduction], gains 4 stacks of [Effective Data].
+- Icon name: Icon_skill_talent_5167
 
 ### Ascended Talent (Talent3_5Ability)
 <!-- Ascended talent has same name and icon as basic one, with a line split -->
-- Effect text: Can use command skill [Limit Break]. Carries [Assault Field] aura.\n[Guard] range increases to 2 tile. Using [Limit Break] additionally grants [Rampage] effect.
+- Effect text: When any unit on the field tkes non-percentage [Fixed DMG], gains 2 stacks of [Effective Data]. When an ally triggers [Percentage HP Reduction], gains 4 stacks of [Effective Data].\nMissile range +1. Final DMG dealt increases by 10%.
 
 ## Skills
 
 <!-- Each skill the pilot uses on their neuron board (Core Neuron slots).
      type = EquipmentSkill (weapon attack) / Order (self-buff) / passive -->
 ### Skill 0 (innate)
-- Entrenched 1 (same skill as other Guardian with ID 600001)
+- Strategic Bombing 1 (same skill as other Tactician with ID 400001)
 
 ### Skill 1
-- Name: Formation Guard
-- Type: Order <!-- EquipmentSkill / Order / passive -->
-- AP cost: 1
-- Cooldown: 2            <!-- if any -->
-- Weapon type: MG <!-- if EquipmentSkill, e.g. SG / AR / SR / MG / Melee -->
-- Effect text: Protects allies within 2 adjacent tiles from Assault and Ranged attacks. Triggers up to 2 times per turn and lasts 2 turns. Additionally, gains 1 stack [Undying].
-- Icon name: Icon_skill_order_5110
+- Name: Self Sampling
+- Type: SpecialAssault <!-- EquipmentSkill / Order / passive -->
+- AP cost: 2
+- Cooldown:             <!-- if any -->
+- Weapon type: ML <!-- if EquipmentSkill, e.g. SG / AR / SR / MG / Melee -->
+- Effect text: Deals 10% [Percentage HP Reduction] to all self parts. This effect will not destroy parts. Then uses Missile Launcher to attack a target, dealing 0.9x DMG to the part hit and 50% Splash DMG to other parts. Upon hitting, deals [Fixed DMG] equal to 10% max HP to all parts of all enemy units within 1-tile cross-shaped area around the original target.
+- Icon name: Icon_skill_order_1139
 
 ### Skill 2
-- Name: Strike Back
-- Type: EquipmentSkill
-- AP cost: 0
-- Cooldown:
-- Weapon type: MG
-- Effect text: Uses Machine Gun to attack a target, dealing 1.2x DMG and inflicts 1 random debuff for 2 turns. Before combat, deals DMG to all self parts equal to 20% of their max HP. This effect will not destroy parts. This skill cannot be used if own HP percentage is less than 30%
-- Icon name: Icon_skill_main_1123
-
-### Skill 3
-- Name: Final Burial
-- Type: EquipmentSkill
+- Name: Contained Fission
+- Type: SpecialAssault
 - AP cost: 3
 - Cooldown:
-- Weapon type: MG
-- Effect text: Uses both Machine Gun to attack a target, dealing 2x0.5 DMG. Inflicts one random debuff on the target for 2 turns before combat. This skill multiplier increases by 0.075 for each debuff the target carries, to a maximum of 2x1.1. While [Fate Hunt] is active, additionally inflicts [Intimidation] on the target for 1 turn.
-- Icon name: Icon_skill_main_1178
+- Weapon type: ML
+- Effect text: Uses Missile Launcher to attack a target, dealing 1.2x DMG to the part hit and 50% Splash DMG to other parts. Inflicts [Retaliation Disabled] on the target after combat, this effect is removed after triggering. If possesses 10 or more stacks of [Effective Data], consumes 10 stacks to increase Splash DMG percentage by 35%.
+- Icon name: Icon_skill_order_1129
+
+### Skill 3
+- Name: Data Readjustment
+- Type: Order
+- AP cost: 0
+- Cooldown: 2
+- Weapon type: ML
+- Effect text: Selects up to 4 allies within 4 adjacent tiles. Inflicts [Percentage HP Reduction] equal to 10% max HP to all selected allies. This effect will not destroy parts. For each 1 ally selected, restores 2 rounds of ammo for Missile Launcher and gains 1 AP. Can continue to act with remaining movement.
+- Icon name: Icon_skill_order_5168
 
 ### Skill 4
-- Name: Kill Zone
+- Name: System Disintegration
+- Type: SpecialAssault
+- AP cost: 5
+- Cooldown:
+- Weapon type: ML
+- Effect text: Uses both Missile Launcher to attack a target, dealing 2x0.8 DMG to the part hit and 50% Splash DMG to other parts. If possesses 10 or more stacks of [Effective Data], consumes 10 stacks to deal 15% of target max HP as [Fixed DMG] to all target's parts. [Fixed DMG] dealt increases by 35% for this attack.
+- Icon name: Icon_skill_order_1162
+
+### Skill 5
+- Name: Chain Collapse
 - Type: SpecialAssault
 - AP cost: 4
 - Cooldown:
-- Weapon type: MG
-- Effect text: Uses both Machine Gun to attack, dealing 2x0.4 DMG to all targets within range. Before combat, inflicts 3 random debuffs on all targets for 2 turns. This skill multiplier increases by 0.15 against units carrying 5 or more debuffs. While under the effect of [Fate Hunt], this skill ignores enemy armor.
-- Icon name: Icon_skill_order_1161
-
-### Skill 5
-- Name: Judgment Of The Damned
-- Type: Passive
-- Effect text: When an ally initiated combat against an enemy unit within [Assault Field], if the target is afflicted with 3 or more debuffs after combat, uses Machine Gun to launch an attack against that target, dealing 0.4x DMG and inflicts 1 random debuff on the target for 2 turns. This effect can trigger 2 times per turn
-- Icon name: Icon_skill_assive_5224
+- Weapon type: ML
+- Effect text: Uses both Missile Launcher to attack a target 2 times, each time dealing 2x0.3 DMG to the part hit and 50% Splash DMG to other parts. If possesses 5 or more stacks of [Effective Data], consumes 5 stacks to add 1 extra attack, up to a maximum of 3 extra attack. These extra attacks do not consume AP nor ammo.
+- Icon name: Icon_skill_order_1163
 
 ### Skill 6
-- Name: Reversal Cage
+- Name: Balance the Scale
 - Type: Passive
-- Effect text: After being actively attacked, reflects up to 5 dispellable debuffs on self to the attacker. This effect can trigger 1 time per turn
-- Icon name: Icon_skill_passive_1069
+- Effect text: At the start of action, deals [Percentage HP Reduction] equal to 5% max HP to all self parts and gains 1 random buff lasting for 2 turns. This effect will not destroy parts.
+- Icon name: Icon_skill_passive_5310
 
 ### Skill 7
-- Name: Undying Soldier
+- Name: Unstable Strain
 - Type: Passive
-- Resource: PP
-- Effect text: When any part is destroyed, consumes 1 PP to restore that part to max HP after combat. Gains 2 PP at the start of battle.
-- Icon name: Icon_skill_pp_1108
+- Effect text: When HP is not full, DMG dealt increases by 10% and DMG taken reduces by 10%.
+- Icon name: Icon_skill_passive_1157
 
 ### Skill 8
-- Name: Banishment
+- Name: Optimized Program
 - Type: Passive
-- Effect text: All enemies within the range of [Assault Field] cannot trigger [Re-ATK], [Re-Act] or [Move Again]. This effect is not applied to targets immune to [Re-Act Prohibition]
-- Icon name: Icon_skill_passive_5308
+- Effect text: Increases Critifcal Hit chance and Critical Hit DMG of missile attacks that consume [Effective Data] by 10%.
+- Icon name: Icon_skill_passive_4132
 
 ## Chip slots setup
-<!-- Red = Attack / Blue = Dodge / Yellow = Critical-->
-- Alpha: red/yellow/blue
-- Beta: red/yellow/blue
+<!-- Red = Attack / Blue = Critical / Yellow = Dodge (verified: Eileen β is red/blue/blue in game = Attack/Critical/Critical in CN data; matches .slot-* colors in css/style.css) -->
+- Alpha: red/yellow/yellow
+- Beta: red/blue/blue
 - Gamma 1: red/blue/blue
 - Gamma 2: red/yellow/yellow
 
@@ -187,34 +189,28 @@ pilot from this template (10103182, Kaidan The Invincible):
 <!-- Alpha and Beta section will be the same with other pilots in same class -->
 ### γ1
 <!-- Name / Effect text / Icon name -->
-- Same as Rei Ayanami's section y1
+- 1:  Tactical Firepower 1 / After the first attack with a Tactical Weapon each turn, [Re-ATK] can be triggered, effective up to 1 time per turn. Unable to move before attacking. / Icon_skill_passive_5023
+- 4:  AP Optimization 4 (same as other Tactician pilots ID 400032)
+- 7:  Strategic Bombing 4 (same as other Tactician pilots ID 400033)
+- 10: Tactical Firepower 2 / When [Tactical Firepower 1] effect triggers, gains 1 AP / Icon_skill_passive_5023
+- 13: Tactical Firepower 3 / When [Tactical Firepower 1] effect triggers, DMG dealt and Critical Hit chance of next active attack increase by 20% / Icon_skill_passive_5023
+- 16: Tactical Firepower 4 / When [Tactical Firepower 1] effect triggers, AP cost of next active attack is reduced by 1 (to a minimum of 1) and Final DMG dealt increases by 15% / Icon_skill_passive_5023
 
 ### γ2
-- 1:  Undertaker 1 / When not affected by [Fate Hunt], Final DMG Taken reduces by 20%, AP recovery increases by +1. [Guard] can additionally block Melee attack / Icon_skill_passive_5309
-- 4:  AP Optimization 4 (same as other Guardian pilots ID 600042)
-- 7:  Entrenched 4 (same as other Guardian pilots ID 600043)
-- 10: Undertaker 2 / Gains 1 stack of [Undying] at the start of battle. Gainst 1 stack of [Undying] for each 4 Machine Gun attack. This effect can trigger 2 times per turn / Icon_skill_passive_5309
-- 13: Undertaker 3 / DMG Dealt increases by 30% to enemy units within [Assault Field] / Icon_skill_passive_5309
-- 16: Undertaker 4 / For each 1 attack launched with Machine Gun, Machine Gun bullet count +1, up to a maximum of 4 / Icon_skill_passive_5309
+- 1:  Theory Of Everything 1 / At the end of turn, if 10 or more stacks of [Effective Data] were consumed during the turn, restores 1 AP and 1 ammo of Missile Launcher / Icon_skill_passive_5311
+- 4:  AP Optimization 4 (same as other Tactician pilots ID 100042)
+- 7:  Power Innovation 3 (same as other Tactician pilots ID 100043)
+- 10: Theory Of Everything 2 / If an attack consuming [Effective Data] triggers a Critical hit, 3 stacks of [Effective Data] are refunded after the attack / Icon_skill_passive_5311
+- 13: Theory Of Everything 3 / Missile DMG dealt and Hit Rate increase by 15% / Icon_skill_passive_5311
+- 16: Theory Of Everything 4 / When actively attacking, for each 5 stacks of [Effective Data] consumed, Final DMG dealt increases by 7.5% / Icon_skill_passive_5311
 
 
 ### Glossary buf 1
 <!-- Pick a random unique ID for this in the <buf> tag and add the tag to all referenced text from this pilot -->
-- Fate Hunt: Active attacks cannot be retaliated. Hit Rate increases by 15%. After attacking, restores HP equal to 25% DMG dealt to all intact parts. This effect is removed at the start of next turn.
-- Chain Execution: After actively attacking, can launch a [Re-ATK], allowing movement of 1 tile before attacking. This effect can trigger 1 time per turn and is removed at the start of next turn.
-- Re-ATK: Allows launching another active attack
-- Assault Field: An aura around self which reduces DMG dealt of enemy units within 3 adjacent tiles by 10% and increaes the movement cost to exit [Assault Field] by 2. If an enemy remains within [Assault Field] after action, uses Machine Gun to launch an [Suppression Attack] dealing 0.4x DMG and inflicts a random debuff to the targetfor 2 turns (this effect can trigger 3 times per turn).
-- Suppression Attack: Launches an attack against an enemy after they complete their action
-- Rampage: Final DMG dealt increases by 30%. This effect is removed at the start of next turn.
-- Undying: Body is immune to [Execution] effect. When the Body suffers overdamage, triggers [Guts], locking at 1 HP. Consumes 1 stack upon activation. Stacks up to maximum 3 times.
-- Move Again: Can move again with remaining movement. Cannot attack after moving
-- Re-Act Prohibition: Cannot trigger [Re-ATK] or [Re-Act]
+- Effective Data: Can be comsume to enhance [Niall]'s skill effects. For each stack concumed, the attack's DMG dealt and Critical Hit chance increase by 2.5%, stacking up to 30 times.
+- DMG Immunity: Negates DMG dealt from a single attack. This effect is removed after triggering
+- Percentage HP Reduction: Directly reduces HP by a percentage. This effect is not affected by [Fixed DMG] modifiers or [DMG Immunity] effects.
 
 ### Glossary skill 1
 <!-- Pick a random unique ID for this in the <skill> tag and add the tag to all referenced text from this pilot -->
 <!-- Also scan the skill text itself and link necessary tags -->
-- Name: Limit Break
-- AP: 3
-- CD: 1
-- Icon: Icon_skill_order_1165
-- Effect: If not affected by [Fate Hunt], this skill AP cost is reduced by 3, reset after use. This skill can only be activated when legs are intact. Jumps to an empty tile within 4 adjacent tiles and gains [Fate Hunt], [Rampage] and [Chain Execution]. The trigger count for [Suppression Attack] increases by 3, and remaining movement can be used to launch a [Re-ATK]. This skill can be used 1 time per turn

@@ -1920,7 +1920,7 @@
       ],
       "dispatchGroup": "GeekX",
       "dispatchVersion": "1.6",
-      "version": "1.0",
+      "version": "1.4",
       "enTranslation": true
     },
     {
@@ -4437,7 +4437,7 @@
         {
           "position": "Legs",
           "aircraftWeight": "220",
-          "maxHp": "19732",
+          "maxHp": "9732",
           "Armor": "941",
           "Hit": null,
           "Dodge": "3287",
@@ -5080,6 +5080,100 @@
       "dispatchGroup": "Sparkplug",
       "dispatchVersion": "3.4",
       "version": "3.2",
+      "enTranslation": true
+    },
+    {
+      "ID": "20630103",
+      "name": "Prism",
+      "type": "Medium",
+      "quality": "SSR",
+      "icon": "Icon_mecha_wap2062",
+      "mechaIcon": "Icon_wap2062_1",
+      "lihuiIcon": "icon_lihui_wap2062",
+      "introduce": "",
+      "output": "2880",
+      "durable": "446",
+      "Armor": "941",
+      "fire": "127",
+      "Antiriot": "770",
+      "parts": [
+        {
+          "position": "Body",
+          "aircraftWeight": "290",
+          "maxHp": "10926",
+          "Armor": "706",
+          "Hit": null,
+          "Dodge": null,
+          "Antiriot": "4472"
+        },
+        {
+          "position": "L-Arm",
+          "aircraftWeight": "165",
+          "maxHp": "6561",
+          "Armor": "470",
+          "Hit": "1794",
+          "Dodge": null,
+          "Antiriot": null
+        },
+        {
+          "position": "R-Arm",
+          "aircraftWeight": "165",
+          "maxHp": "6561",
+          "Armor": "470",
+          "Hit": "1794",
+          "Dodge": null,
+          "Antiriot": null
+        },
+        {
+          "position": "Legs",
+          "aircraftWeight": "210",
+          "maxHp": "9536",
+          "Armor": "470",
+          "Hit": null,
+          "Dodge": "3885",
+          "Antiriot": null
+        }
+      ],
+      "manjiFirepower": "1255",
+      "modules": [
+        {
+          "ID": "90224",
+          "name": "Refraction Array",
+          "SpecificEffects": "When attacking with Tactical weapons, DMG dealt increases by <color=#F74848>20%</color>. When attacking with shoulder-mounted weapons, Critical Hit chance increases by <color=#F74848>15%</color>.",
+          "BufCarried": "902241",
+          "SkillIcon": "Icon_skill_passive_1180",
+          "icon": "Icon_skill_passive_1180",
+          "Status": 1,
+          "weight": 1,
+          "id": "9022",
+          "level": 4
+        },
+        {
+          "ID": "40024",
+          "name": "Crit Rate Mod",
+          "SpecificEffects": "Crit Rate <color=#F74848>+10%</color>.",
+          "BufCarried": "400241",
+          "SkillIcon": "Icon_entry_40021",
+          "icon": "Icon_entry_40021",
+          "Status": 1,
+          "weight": 2,
+          "id": "4002",
+          "level": 4
+        },
+        {
+          "ID": "90328",
+          "name": "Last Stand Module",
+          "SpecificEffects": "When own HP is not full, DMG dealt increases by <color=#F74848>24%</color>.\nWhen actively attacking, the attack multiplier increases by <color=#F74848>0.025</color> for each ally without full HP, up to <color=#F74848>+0.1</color>. This effect is reduced to <color=#F74848>1/4</color> if equipped with Rocket Launcher.",
+          "BufCarried": "903281",
+          "SkillIcon": "Icon_entry_10112",
+          "icon": "Icon_entry_10112",
+          "Status": 1,
+          "weight": 3,
+          "id": "9032",
+          "level": 8
+        }
+      ],
+      "version": "3.4",
       "enTranslation": true
     },
     {
