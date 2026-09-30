@@ -313,6 +313,49 @@ MANUAL_MODULE_LEVELS = {
             for i, pct in enumerate(['4', '6', '8', '10', '14', '16', '18', '24'], 1)
         },
     },
+    # Roaring Frame (Avalanche, family 9023): the intake gave a 4-level split
+    # for both numbers (Max HP% and no-movement DMG%).
+    '9023': {
+        'name': 'Roaring Frame',
+        'icon': 'Icon_skill_passive_3138',
+        'category': 'GeneralSuit',
+        'maxLevel': 4,
+        'currentLevel': 4,
+        'levels': {
+            str(i): (
+                f'Max HP increases by <color=#F74848>{hp}%</color>. '
+                f'DMG dealt increases by <color=#F74848>{dmg}%</color> if no movement was made before the attack.'
+            )
+            for i, (hp, dmg) in enumerate([
+                ('3', '5'), ('6', '10'), ('10', '15'), ('15', '25'),
+            ], 1)
+        },
+    },
+    # Pack Hunt Module (Avalanche, family 9033): the intake gave the full
+    # 8-level ladder for the main DMG%, per-unit DMG% and cap; the Fixed DMG /
+    # Firepower clause only unlocks at max level (8), same pattern as Force
+    # Field Module above.
+    '9033': {
+        'name': 'Pack Hunt Module',
+        'icon': 'Icon_entry_10114',
+        'category': 'GeneralSuit',
+        'maxLevel': 8,
+        'currentLevel': 8,
+        'levels': {
+            str(i): (
+                f'DMG dealt increases by <color=#F74848>{main}%</color>. When there are <color=#F74848>2</color> or more '
+                f'enemy units within attack range, DMG dealt additionally increases by <color=#F74848>{per}%</color> for '
+                f'each <color=#F74848>1</color> additional unit, up to <color=#F74848>{main}%</color>.'
+            ) + ('' if i < 8 else (
+                '\n<buf ID=900017>[Fixed DMG]</buf> dealt increases by <color=#F74848>25%</color>. When actively '
+                'attacking, Firepower increases by <color=#F74848>2%</color> of current HP.'
+            ))
+            for i, (main, per) in enumerate([
+                ('3', '1.5'), ('4', '2'), ('5', '2.5'), ('6', '3'),
+                ('7', '3.5'), ('8', '4'), ('9', '4.5'), ('12', '6'),
+            ], 1)
+        },
+    },
 }
 
 

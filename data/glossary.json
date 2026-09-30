@@ -1387,6 +1387,30 @@
   "175902": {
    "name": "Percentage HP Reduction",
    "effect": "Directly reduces HP by a percentage. This effect is not affected by <buf ID=900017>[Fixed DMG]</buf> modifiers or <buf ID=175901>[DMG Immunity]</buf> effects."
+  },
+  "185900": {
+   "name": "Bunker",
+   "effect": "Cannot move. Final DMG taken and percentage <buf ID=900017>[Fixed DMG]</buf> taken are reduced by <color=#F74848>10%</color>. Flamethrower ATK increases by <color=#F74848>15%</color>. Flamethrower attack range becomes a fixed-direction <color=#F74848>5</color>-tile fan-shaped area and all tiles are treated as <buf ID=900011>[Ideal Range]</buf>. This state ends automatically if an arm is destroyed."
+  },
+  "185901": {
+   "name": "War Flame",
+   "effect": "DMG taken is reduced by <color=#F74848>3%</color>, stacking up to <color=#F74848>6</color> times. When possessing <color=#F74848>4</color> or more stacks, can use command skill <skill ID=185952>[Rapid Raid]</skill>."
+  },
+  "185902": {
+   "name": "Flame Fusion",
+   "effect": "While in <buf ID=185900>[Bunker]</buf> state, can use Flamethrower to launch a <buf ID=900002>[Link Attack]</buf>, dealing <color=#F74848>0.3</color>x DMG. <color=#F74848>1</color> stack is removed upon triggering. Can stack up to <color=#F74848>2</color> times."
+  },
+  "185903": {
+   "name": "Thermal Corrosion",
+   "effect": "When actively attacked, this unit takes <buf ID=900017>[Fixed DMG]</buf> equal to <color=#F74848>15%</color> of the attacking arm's max HP to all parts after combat. This effect can trigger up to <color=#F74848>5</color> times and is removed after <color=#F74848>1</color> turn."
+  },
+  "185904": {
+   "name": "Blazing Barrier",
+   "effect": "DMG taken is reduced by <color=#F74848>10%</color>. When attacked, deals <buf ID=900017>[Fixed DMG]</buf> equal to <color=#F74848>10%</color> of own max HP to all parts of the attacker and grants [Alena] <color=#F74848>1</color> stack of <buf ID=185901>[War Flame]</buf>. This effect is removed after triggering."
+  },
+  "185905": {
+   "name": "Flame Surge",
+   "effect": "Reduces AP cost of Flamethrower active attacks by <color=#F74848>1</color>, to a minimum of <color=#F74848>1</color> AP. Consumes <color=#F74848>1</color> stack upon triggering. Stacks up to <color=#F74848>2</color> times."
   }
  },
  "skill": {
@@ -1969,6 +1993,27 @@
    "CD": "1",
    "icon": "Icon_skill_order_5167",
    "effect": "At the end of turn, if not affected by <buf ID=167900>[Fate Hunt]</buf>, this skill's AP cost is reduced by <color=#F74848>3</color>. This effect is reset after use. This skill can only be activated when legs are intact. Jumps to an empty tile within <color=#F74848>4</color> adjacent tiles and gains <buf ID=167900>[Fate Hunt]</buf> and <buf ID=167901>[Chain Execution]</buf>. The trigger count for <buf ID=167904>[Suppression Attack]</buf> increases by <color=#F74848>3</color>, and remaining movement can be used to launch a <buf ID=900004>[Re-ATK]</buf>. This skill can be used <color=#F74848>1</color> time per turn."
+  },
+  "185950": {
+   "name": "Bunker Down",
+   "Ap": "0",
+   "CD": "1",
+   "icon": "Icon_skill_order_5169",
+   "effect": "Enters <buf ID=185900>[Bunker]</buf> state. This state is cancelled if an arm is destroyed. Attacks can be made in this state. Can use command skill <skill ID=185951>[Disengage]</skill>."
+  },
+  "185951": {
+   "name": "Disengage",
+   "Ap": "0",
+   "CD": "0",
+   "icon": "Icon_skill_order_5169",
+   "effect": "Exits <buf ID=185900>[Bunker]</buf> state. Can continue to move with remaining movement."
+  },
+  "185952": {
+   "name": "Rapid Raid",
+   "Ap": "0",
+   "CD": "0",
+   "icon": "Icon_skill_order_5170",
+   "effect": "Selects an empty tile within <color=#F74848>5</color> adjacent tiles and jumps to it, then triggers <buf ID=900005>[Re-Act]</buf>. If in <buf ID=185900>[Bunker]</buf> state, exits the state and resets the CD of <skill ID=185950>[Bunker Down]</skill>. This skill can only be used <color=#F74848>1</color> time per turn and only when legs are intact."
   }
  },
  "terrain": {

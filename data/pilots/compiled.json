@@ -1096,8 +1096,8 @@
         "Combat": 4,
         "Shooting": 56,
         "Assault": 42,
-        "Tactics": 32,
-        "Engineering": 58
+        "Tactics": 33,
+        "Engineering": 59
       }
     },
     {
@@ -2200,8 +2200,1160 @@
         "Combat": 33,
         "Shooting": 27,
         "Assault": 10,
-        "Tactics": 69,
-        "Engineering": 38
+        "Tactics": 70,
+        "Engineering": 39
+      }
+    },
+    {
+      "ID": "10103185",
+      "PilotName": "Alena",
+      "PortraitHeroIcon": "Pilot_13037A_half",
+      "AvatarHeroIcon": "Pilot_13037A_Raw",
+      "RealName": "Alena Vera",
+      "Gender": "Female",
+      "Profession": "Assault",
+      "Occupation": "Raider",
+      "quality": "SSR",
+      "Talent0_2Ability": {
+        "ID": "185550",
+        "name": "Snowfield Afterglow",
+        "SpecificEffects": "When equipped with Flamethrower and Large Shield, can use command skill <skill ID=185950>[Bunker Down]</skill>. At the start of turn, if in <buf ID=185900>[Bunker]</buf> state, immediately uses Flamethrower to attack all enemies within range, dealing <color=#F74848>0.5</color>x DMG. When attacking with Flamethrower, gains <color=#F74848>1</color> stack of <buf ID=185901>[War Flame]</buf> for each <color=#F74848>1</color> target hit.",
+        "SkillIcon": "Icon_skill_talent_5168",
+        "icon": "Icon_skill_talent_5168",
+        "Status": 1,
+        "weight": 1,
+        "lang": "en"
+      },
+      "Talent3_5Ability": {
+        "ID": "185551",
+        "name": "Snowfield Afterglow",
+        "SpecificEffects": "When equipped with Flamethrower and Large Shield, can use command skill <skill ID=185950>[Bunker Down]</skill>. At the start of turn, if in <buf ID=185900>[Bunker]</buf> state, immediately uses Flamethrower to attack all enemies within range, dealing <color=#F74848>0.5</color>x DMG. When attacking with Flamethrower, gains <color=#F74848>1</color> stack of <buf ID=185901>[War Flame]</buf> for each <color=#F74848>1</color> target hit.\nGains <color=#F74848>3</color> stacks of <buf ID=185901>[War Flame]</buf> upon deployment. Gains <color=#F74848>+1</color> AP after using <skill ID=185952>[Rapid Raid]</skill>.",
+        "SkillIcon": "Icon_skill_talent_5168",
+        "icon": "Icon_skill_talent_5168",
+        "Status": 1,
+        "weight": 2,
+        "lang": "en"
+      },
+      "NeuralDriveTemplate": {
+        "ID": "10103185",
+        "remarks": "Alena",
+        "ListChipPartition": [
+          {
+            "ChipPartitioningID": "1010318500",
+            "remarks": "Alena",
+            "name": "\u03b1",
+            "TypeComputing": "Alpha",
+            "ListAssembled": "Attack/Dodge/Dodge",
+            "ListActivationEffects": [
+              {
+                "ActivationEffectID": "1010318500",
+                "remarks": "\u03b1-1\u7ea7",
+                "MinimumSum": "1",
+                "PassiveSkillID": "200011",
+                "Status": 1,
+                "weight": 138,
+                "type": 3,
+                "lang": "en",
+                "PassiveSkill": {
+                  "ID": "200011",
+                  "name": "CEC 2",
+                  "SpecificEffects": "<buf ID=900002>[Link Attack]</buf>'s effective times per turn <color=#F74848>+1</color>.",
+                  "BufCarried": "2000111/2000112",
+                  "SkillIcon": "Icon_skill_passive_1003",
+                  "icon": "Icon_skill_passive_1003",
+                  "Status": 1,
+                  "weight": 1408,
+                  "lang": "en"
+                }
+              },
+              {
+                "ActivationEffectID": "1010318501",
+                "remarks": "\u03b1-2\u7ea7",
+                "MinimumSum": "4",
+                "PassiveSkillID": "200012",
+                "Status": 1,
+                "weight": 139,
+                "type": 3,
+                "lang": "en",
+                "PassiveSkill": {
+                  "ID": "200012",
+                  "name": "Power Innovation 1",
+                  "SpecificEffects": "AP Regen <color=#F74848>+1</color>.",
+                  "SkillIcon": "Icon_skill_passive_5006",
+                  "icon": "Icon_skill_passive_5006",
+                  "Status": 1,
+                  "weight": 1409,
+                  "lang": "en"
+                }
+              },
+              {
+                "ActivationEffectID": "1010318502",
+                "remarks": "\u03b1-3\u7ea7",
+                "MinimumSum": "7",
+                "PassiveSkillID": "200013",
+                "Status": 1,
+                "weight": 140,
+                "type": 3,
+                "lang": "en",
+                "PassiveSkill": {
+                  "ID": "200013",
+                  "name": "AP Optimization 1",
+                  "SpecificEffects": "Initial AP <color=#F74848>+1</color>.",
+                  "SkillIcon": "Icon_skill_passive_5004",
+                  "icon": "Icon_skill_passive_5004",
+                  "Status": 1,
+                  "weight": 1410,
+                  "lang": "en"
+                }
+              }
+            ],
+            "IconPath": "Icon_zoneskill_0001",
+            "icon": "Icon_zoneskill_0001",
+            "Status": 1,
+            "weight": 32,
+            "type": 2,
+            "lang": "en"
+          },
+          {
+            "ChipPartitioningID": "1010318501",
+            "remarks": "Alena",
+            "name": "\u03b2",
+            "TypeComputing": "Beta",
+            "ListAssembled": "Attack/Critical/Critical",
+            "ListActivationEffects": [
+              {
+                "ActivationEffectID": "1010318503",
+                "remarks": "\u03b2-1\u7ea7",
+                "MinimumSum": "1",
+                "PassiveSkillID": "200021",
+                "Status": 1,
+                "weight": 141,
+                "type": 3,
+                "lang": "en",
+                "PassiveSkill": {
+                  "ID": "200021",
+                  "name": "CEC 3",
+                  "SpecificEffects": "<buf ID=900002>[Link Attack]</buf>'s damage multiplier is increased to <color=#F74848>0.3</color>.",
+                  "BufCarried": "2000211",
+                  "SkillIcon": "Icon_skill_passive_1003",
+                  "icon": "Icon_skill_passive_1003",
+                  "Status": 1,
+                  "weight": 1411,
+                  "lang": "en"
+                }
+              },
+              {
+                "ActivationEffectID": "1010318504",
+                "remarks": "\u03b2-2\u7ea7",
+                "MinimumSum": "4",
+                "PassiveSkillID": "200022",
+                "Status": 1,
+                "weight": 142,
+                "type": 3,
+                "lang": "en",
+                "PassiveSkill": {
+                  "ID": "200022",
+                  "name": "Power Innovation 2",
+                  "SpecificEffects": "When breaking a part, restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>1</color> time per turn.",
+                  "BufCarried": "2000221",
+                  "SkillIcon": "Icon_skill_passive_5006",
+                  "icon": "Icon_skill_passive_5006",
+                  "Status": 1,
+                  "weight": 1412,
+                  "lang": "en"
+                }
+              },
+              {
+                "ActivationEffectID": "1010318505",
+                "remarks": "\u03b2-3\u7ea7",
+                "MinimumSum": "7",
+                "PassiveSkillID": "200023",
+                "Status": 1,
+                "weight": 143,
+                "type": 3,
+                "lang": "en",
+                "PassiveSkill": {
+                  "ID": "200023",
+                  "name": "AP Optimization 2",
+                  "SpecificEffects": "AP Cap <color=#F74848>+1</color>.",
+                  "SkillIcon": "Icon_skill_passive_5004",
+                  "icon": "Icon_skill_passive_5004",
+                  "Status": 1,
+                  "weight": 1413,
+                  "lang": "en"
+                }
+              }
+            ],
+            "IconPath": "Icon_zoneskill_0002",
+            "icon": "Icon_zoneskill_0002",
+            "Status": 1,
+            "weight": 33,
+            "type": 2,
+            "lang": "en"
+          },
+          {
+            "ChipPartitioningID": "1010318502",
+            "remarks": "Alena",
+            "name": "\u03b31",
+            "TypeComputing": "Gamma",
+            "ListAssembled": "Attack/Critical/Critical",
+            "ListActivationEffects": [
+              {
+                "ActivationEffectID": "1010318506",
+                "remarks": "\u03b31-1\u7ea7",
+                "MinimumSum": "1",
+                "PassiveSkillID": "200031",
+                "Status": 1,
+                "weight": 144,
+                "type": 3,
+                "lang": "en",
+                "PassiveSkill": {
+                  "ID": "200031",
+                  "name": "Perfect Position 1",
+                  "SpecificEffects": "Unlock the Assault Weapon's <buf ID=900011>[Ideal Range]</buf> ability. When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, final DMG <color=#F74848>+15%</color>.",
+                  "BufCarried": "2000311/2000312",
+                  "SkillIcon": "Icon_skill_passive_5007",
+                  "icon": "Icon_skill_passive_5007",
+                  "Status": 1,
+                  "weight": 1414,
+                  "lang": "en"
+                }
+              },
+              {
+                "ActivationEffectID": "1010318507",
+                "remarks": "\u03b31-2\u7ea7",
+                "MinimumSum": "4",
+                "PassiveSkillID": "200032",
+                "Status": 1,
+                "weight": 145,
+                "type": 3,
+                "lang": "en",
+                "PassiveSkill": {
+                  "ID": "200032",
+                  "name": "AP Optimization 3",
+                  "SpecificEffects": "AP Cap <color=#F74848>+1</color>.",
+                  "SkillIcon": "Icon_skill_passive_5004",
+                  "icon": "Icon_skill_passive_5004",
+                  "Status": 1,
+                  "weight": 1415,
+                  "lang": "en"
+                }
+              },
+              {
+                "ActivationEffectID": "1010318508",
+                "remarks": "\u03b31-3\u7ea7",
+                "MinimumSum": "7",
+                "PassiveSkillID": "200033",
+                "Status": 1,
+                "weight": 146,
+                "type": 3,
+                "lang": "en",
+                "PassiveSkill": {
+                  "ID": "200033",
+                  "name": "Adaptive Warfare 1",
+                  "SpecificEffects": "At the end of the action, if an Active Attack was not initiated this turn, an extra <color=#F74848>2</color> tiles can be moved.",
+                  "BufCarried": "2000331",
+                  "SkillIcon": "Icon_skill_passive_5155",
+                  "icon": "Icon_skill_passive_5155",
+                  "Status": 1,
+                  "weight": 1416,
+                  "lang": "en"
+                }
+              },
+              {
+                "ActivationEffectID": "1010318509",
+                "remarks": "\u03b31-4\u7ea7",
+                "MinimumSum": "10",
+                "PassiveSkillID": "200034",
+                "Status": 1,
+                "weight": 147,
+                "type": 3,
+                "lang": "en",
+                "PassiveSkill": {
+                  "ID": "200034",
+                  "name": "Perfect Position 2",
+                  "SpecificEffects": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, Hit Rate <color=#F74848>+12%</color>.",
+                  "BufCarried": "2000341",
+                  "SkillIcon": "Icon_skill_passive_5007",
+                  "icon": "Icon_skill_passive_5007",
+                  "Status": 1,
+                  "weight": 1417,
+                  "lang": "en"
+                }
+              },
+              {
+                "ActivationEffectID": "1010318510",
+                "remarks": "\u03b31-5\u7ea7",
+                "MinimumSum": "13",
+                "PassiveSkillID": "200035",
+                "Status": 1,
+                "weight": 148,
+                "type": 3,
+                "lang": "en",
+                "PassiveSkill": {
+                  "ID": "200035",
+                  "name": "Perfect Position 3",
+                  "SpecificEffects": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, Crit Rate <color=#F74848>+12%</color>.",
+                  "BufCarried": "2000351",
+                  "SkillIcon": "Icon_skill_passive_5007",
+                  "icon": "Icon_skill_passive_5007",
+                  "Status": 1,
+                  "weight": 1418,
+                  "lang": "en"
+                }
+              },
+              {
+                "ActivationEffectID": "1010318511",
+                "remarks": "\u03b31-6\u7ea7",
+                "MinimumSum": "16",
+                "PassiveSkillID": "200036",
+                "Status": 1,
+                "weight": 149,
+                "type": 3,
+                "lang": "en",
+                "PassiveSkill": {
+                  "ID": "200036",
+                  "name": "Perfect Position 4",
+                  "SpecificEffects": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, final DMG <color=#F74848>+30%</color>.",
+                  "BufCarried": "2000361",
+                  "SkillIcon": "Icon_skill_passive_5007",
+                  "icon": "Icon_skill_passive_5007",
+                  "Status": 1,
+                  "weight": 1419,
+                  "lang": "en"
+                }
+              }
+            ],
+            "IconPath": "Icon_zoneskill_0004",
+            "icon": "Icon_zoneskill_0004",
+            "Status": 1,
+            "weight": 34,
+            "type": 2,
+            "lang": "en"
+          },
+          {
+            "ChipPartitioningID": "1010318503",
+            "remarks": "Alena",
+            "name": "\u03b32",
+            "TypeComputing": "Gamma",
+            "ListAssembled": "Attack/Dodge/Dodge",
+            "ListActivationEffects": [
+              {
+                "ActivationEffectID": "1010318512",
+                "remarks": "\u03b32-1\u7ea7",
+                "MinimumSum": "1",
+                "PassiveSkillID": "185570",
+                "Status": 1,
+                "weight": 1,
+                "type": 3,
+                "lang": "en",
+                "PassiveSkill": {
+                  "ID": "185570",
+                  "name": "Frostfire Sentinel 1",
+                  "SpecificEffects": "Flamethrower bullet count <color=#F74848>+2</color>. This effect is doubled in <buf ID=185900>[Bunker]</buf> state.",
+                  "SkillIcon": "Icon_skill_passive_5315",
+                  "icon": "Icon_skill_passive_5315",
+                  "Status": 1,
+                  "weight": 1,
+                  "lang": "en"
+                }
+              },
+              {
+                "ActivationEffectID": "1010318513",
+                "remarks": "\u03b32-2\u7ea7",
+                "MinimumSum": "4",
+                "PassiveSkillID": "200042",
+                "Status": 1,
+                "weight": 2,
+                "type": 3,
+                "lang": "en",
+                "PassiveSkill": {
+                  "ID": "200042",
+                  "name": "AP Optimization 4",
+                  "SpecificEffects": "AP Cap <color=#F74848>+1</color>.",
+                  "SkillIcon": "Icon_skill_passive_5004",
+                  "icon": "Icon_skill_passive_5004",
+                  "Status": 1,
+                  "weight": 1420,
+                  "lang": "en"
+                }
+              },
+              {
+                "ActivationEffectID": "1010318514",
+                "remarks": "\u03b32-3\u7ea7",
+                "MinimumSum": "7",
+                "PassiveSkillID": "200043",
+                "Status": 1,
+                "weight": 3,
+                "type": 3,
+                "lang": "en",
+                "PassiveSkill": {
+                  "ID": "200043",
+                  "name": "Adaptive Warfare 2",
+                  "SpecificEffects": "If not moved before an Active Attack, <buf ID=900004>[Re-ATK]</buf> can be triggered, effective up to <color=#F74848>1</color> time per turn. Unable to move before attacking.\nEffects similar to <buf ID=900004>[Re-ATK]</buf> cannot be re-triggered.",
+                  "BufCarried": "2000431",
+                  "SkillIcon": "Icon_skill_passive_5155",
+                  "icon": "Icon_skill_passive_5155",
+                  "Status": 1,
+                  "weight": 1421,
+                  "lang": "en"
+                }
+              },
+              {
+                "ActivationEffectID": "1010318515",
+                "remarks": "\u03b32-4\u7ea7",
+                "MinimumSum": "10",
+                "PassiveSkillID": "185571",
+                "Status": 1,
+                "weight": 4,
+                "type": 3,
+                "lang": "en",
+                "PassiveSkill": {
+                  "ID": "185571",
+                  "name": "Frostfire Sentinel 2",
+                  "SpecificEffects": "Attack multiplier of this unit's talent attack and <buf ID=900002>[Link Attack]</buf> increases by <color=#F74848>0.15</color>.",
+                  "SkillIcon": "Icon_skill_passive_5315",
+                  "icon": "Icon_skill_passive_5315",
+                  "Status": 1,
+                  "weight": 1,
+                  "lang": "en"
+                }
+              },
+              {
+                "ActivationEffectID": "1010318516",
+                "remarks": "\u03b32-5\u7ea7",
+                "MinimumSum": "13",
+                "PassiveSkillID": "185572",
+                "Status": 1,
+                "weight": 5,
+                "type": 3,
+                "lang": "en",
+                "PassiveSkill": {
+                  "ID": "185572",
+                  "name": "Frostfire Sentinel 3",
+                  "SpecificEffects": "Max HP increases by <color=#F74848>15%</color>.",
+                  "SkillIcon": "Icon_skill_passive_5315",
+                  "icon": "Icon_skill_passive_5315",
+                  "Status": 1,
+                  "weight": 1,
+                  "lang": "en"
+                }
+              },
+              {
+                "ActivationEffectID": "1010318517",
+                "remarks": "\u03b32-6\u7ea7",
+                "MinimumSum": "16",
+                "PassiveSkillID": "185573",
+                "Status": 1,
+                "weight": 6,
+                "type": 3,
+                "lang": "en",
+                "PassiveSkill": {
+                  "ID": "185573",
+                  "name": "Frostfire Sentinel 4",
+                  "SpecificEffects": "After actively attacking with Large Shield, gains <color=#F74848>2</color> stacks of <buf ID=185905>[Flame Surge]</buf> and can continue to act with remaining AP. This effect can trigger <color=#F74848>1</color> time per turn.",
+                  "SkillIcon": "Icon_skill_passive_5315",
+                  "icon": "Icon_skill_passive_5315",
+                  "Status": 1,
+                  "weight": 1,
+                  "lang": "en"
+                }
+              }
+            ],
+            "IconPath": "Icon_zoneskill_0005",
+            "icon": "Icon_zoneskill_0005",
+            "Status": 1,
+            "weight": 35,
+            "type": 2,
+            "lang": "en"
+          }
+        ],
+        "Status": 1,
+        "weight": 9,
+        "type": 1,
+        "lang": "en"
+      },
+      "biomimetic_computer_data": [
+        {
+          "ID": "1010318500",
+          "PilotName": "Alena",
+          "name": "Alena",
+          "UnitNumber": "0",
+          "LocationOnMap": "0",
+          "TitleUnitDetails": "Profession Neuron - 1",
+          "UnitName": "Profession Neuron",
+          "UnitType": "6",
+          "ActivateUnitConsumption": "2:1:10801000:2/",
+          "describe": "In cooperation with allies, use Assault Weapons to launch a <buf ID=900002>[Link Attack]</buf> against the target, dealing <color=#F74848>0.2x</color> DMG, effective up to <color=#F74848>1</color> time per turn.",
+          "skill3": "200001",
+          "icon": "Icon_pilotclass_002_l",
+          "Status": 1,
+          "weight": 2168,
+          "skill": {
+            "ID": "200001",
+            "name": "CEC 1",
+            "SpecificEffects": "In cooperation with allies, use Assault Weapons to launch a <buf ID=900002>[Link Attack]</buf> against the target, dealing <color=#F74848>0.2x</color> DMG, effective up to <color=#F74848>1</color> time per turn.",
+            "BufCarried": "2000011",
+            "SkillIcon": "Icon_skill_passive_1003",
+            "icon": "Icon_skill_passive_1003",
+            "Status": 1,
+            "weight": 1,
+            "lang": "en"
+          }
+        },
+        {
+          "ID": "1010318501",
+          "PilotName": "Alena",
+          "name": "Alena",
+          "UnitNumber": "17",
+          "LocationOnMap": "17",
+          "TitleUnitDetails": "Capacity Neuron - 1",
+          "UnitName": "Capacity Neuron",
+          "UnitType": "5",
+          "ActivateUnitConsumption": "2:1:10802005:5/2:1:10802004:8/",
+          "AttributeBonus": "PilotGammaChipBandwidthAdd:3",
+          "icon": "Icon_zoneskill_0003",
+          "Status": 1,
+          "weight": 2169
+        },
+        {
+          "ID": "1010318502",
+          "PilotName": "Alena",
+          "name": "Alena",
+          "UnitNumber": "19",
+          "LocationOnMap": "19",
+          "TitleUnitDetails": "Capacity Neuron - 2",
+          "UnitName": "Capacity Neuron",
+          "UnitType": "5",
+          "ActivateUnitConsumption": "2:1:10802005:5/2:1:10802004:8/",
+          "AttributeBonus": "PilotAlphaChipBandwidthAdd:3",
+          "icon": "Icon_zoneskill_0001",
+          "Status": 1,
+          "weight": 2170
+        },
+        {
+          "ID": "1010318503",
+          "PilotName": "Alena",
+          "name": "Alena",
+          "UnitNumber": "23",
+          "LocationOnMap": "23",
+          "TitleUnitDetails": "Capacity Neuron - 3",
+          "UnitName": "Capacity Neuron",
+          "UnitType": "5",
+          "ActivateUnitConsumption": "2:1:10802006:6/2:1:10802005:10/",
+          "AttributeBonus": "PilotGammaChipBandwidthAdd:3",
+          "icon": "Icon_zoneskill_0003",
+          "Status": 1,
+          "weight": 2171
+        },
+        {
+          "ID": "1010318504",
+          "PilotName": "Alena",
+          "name": "Alena",
+          "UnitNumber": "25",
+          "LocationOnMap": "25",
+          "TitleUnitDetails": "Capacity Neuron - 4",
+          "UnitName": "Capacity Neuron",
+          "UnitType": "5",
+          "ActivateUnitConsumption": "2:1:10802006:6/2:1:10802005:10/",
+          "AttributeBonus": "PilotBetaChipBandwidthAdd:3",
+          "icon": "Icon_zoneskill_0002",
+          "Status": 1,
+          "weight": 2172
+        },
+        {
+          "ID": "1010318505",
+          "PilotName": "Alena",
+          "name": "Alena",
+          "UnitNumber": "29",
+          "LocationOnMap": "29",
+          "TitleUnitDetails": "Capacity Neuron - 5",
+          "UnitName": "Capacity Neuron",
+          "UnitType": "5",
+          "ActivateUnitConsumption": "2:1:10802007:5/2:1:10804007:5/2:1:10802006:8/2:1:10804006:8/",
+          "AttributeBonus": "PilotGammaChipBandwidthAdd:3",
+          "icon": "Icon_zoneskill_0003",
+          "Status": 1,
+          "weight": 2173
+        },
+        {
+          "ID": "1010318506",
+          "PilotName": "Alena",
+          "name": "Alena",
+          "UnitNumber": "33",
+          "LocationOnMap": "33",
+          "TitleUnitDetails": "Capacity Neuron - 6",
+          "UnitName": "Capacity Neuron",
+          "UnitType": "5",
+          "ActivateUnitConsumption": "2:1:10802008:6/2:1:10804008:6/2:1:10802007:10/2:1:10804007:10/",
+          "AttributeBonus": "PilotGammaChipBandwidthAdd:3",
+          "icon": "Icon_zoneskill_0003",
+          "Status": 1,
+          "weight": 2174
+        },
+        {
+          "ID": "1010318507",
+          "PilotName": "Alena",
+          "name": "Alena",
+          "UnitNumber": "35",
+          "LocationOnMap": "35",
+          "TitleUnitDetails": "Capacity Neuron - 7",
+          "UnitName": "Capacity Neuron",
+          "UnitType": "5",
+          "ActivateUnitConsumption": "2:1:10801008:12/2:1:10802008:12/2:1:10801007:20/2:1:10802007:20/",
+          "AttributeBonus": "PilotGammaChipBandwidthAdd:3",
+          "icon": "Icon_zoneskill_0003",
+          "Status": 1,
+          "weight": 2175
+        },
+        {
+          "ID": "1010318508",
+          "PilotName": "Alena",
+          "name": "Alena",
+          "UnitNumber": "3",
+          "LocationOnMap": "3",
+          "TitleUnitDetails": "Crystal Neuron - 1",
+          "UnitName": "Crystal Neuron",
+          "UnitType": "1",
+          "ActivateUnitConsumption": "2:1:10801002:2/",
+          "describe": "Neural Drive unlocks the \u03b1 partition, initial \u03b1 computing power: <color=#F74848>4</color>\n\nAt computing power <color=#F74848>1</color>:\n\u00b7 <buf ID=900002>[Link Attack]</buf>'s effective times per turn <color=#F74848>+1</color>.\nAt computing power <color=#F74848>4</color>:\n\u00b7 AP Regen <color=#F74848>+1</color>.\nAt computing power <color=#F74848>7</color>:\n\u00b7 Initial AP <color=#F74848>+1</color>.\n",
+          "icon": "Icon_zoneskill_0001",
+          "Status": 1,
+          "weight": 2176
+        },
+        {
+          "ID": "1010318509",
+          "PilotName": "Alena",
+          "name": "Alena",
+          "UnitNumber": "11",
+          "LocationOnMap": "11",
+          "TitleUnitDetails": "Crystal Neuron - 2",
+          "UnitName": "Crystal Neuron",
+          "UnitType": "1",
+          "ActivateUnitConsumption": "2:1:10801004:4/2:1:10801003:6/",
+          "describe": "Neural Drive unlocks the \u03b2 partition, initial \u03b2 computing power: <color=#F74848>4</color>\n\nAt computing power <color=#F74848>1</color>:\n\u00b7 <buf ID=900002>[Link Attack]</buf>'s damage multiplier is increased to <color=#F74848>0.3</color>.\nAt computing power <color=#F74848>4</color>:\n\u00b7 When breaking a part, restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>1</color> time per turn.\nAt computing power <color=#F74848>7</color>:\n\u00b7 AP Cap <color=#F74848>+1</color>.\n",
+          "icon": "Icon_zoneskill_0002",
+          "Status": 1,
+          "weight": 2177
+        },
+        {
+          "ID": "1010318510",
+          "PilotName": "Alena",
+          "name": "Alena",
+          "UnitNumber": "15",
+          "LocationOnMap": "15",
+          "TitleUnitDetails": "Crystal Neuron - 3",
+          "UnitName": "Crystal Neuron",
+          "UnitType": "1",
+          "ActivateUnitConsumption": "2:1:10801005:5/2:1:10801004:8/",
+          "describe": "Neural Drive unlocks the \u03b3 partition, initial \u03b3 computing power: <color=#F74848>4</color>\n\nAt computing power <color=#F74848>1</color>:\n\u00b7 Unlock the Assault Weapon's <buf ID=900011>[Ideal Range]</buf> ability. When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, final DMG <color=#F74848>+15%</color>.\nAt computing power <color=#F74848>4</color>:\n\u00b7 AP Cap <color=#F74848>+1</color>.\nAt computing power <color=#F74848>7</color>:\n\u00b7 At the end of the action, if an Active Attack was not initiated this turn, an extra <color=#F74848>2</color> tiles can be moved.\nAt computing power <color=#F74848>10</color>:\n\u00b7 When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, Hit Rate <color=#F74848>+12%</color>.\nAt computing power <color=#F74848>13</color>:\n\u00b7 When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, Crit Rate <color=#F74848>+12%</color>.\nAt computing power <color=#F74848>16</color>:\n\u00b7 When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, final DMG <color=#F74848>+30%</color>.\n",
+          "icon": "Icon_zoneskill_0004",
+          "Status": 1,
+          "weight": 2178
+        },
+        {
+          "ID": "1010318511",
+          "PilotName": "Alena",
+          "name": "Alena",
+          "UnitNumber": "27",
+          "LocationOnMap": "27",
+          "TitleUnitDetails": "Crystal Neuron - 4",
+          "UnitName": "Crystal Neuron",
+          "UnitType": "1",
+          "ActivateUnitConsumption": "2:1:10801007:5/2:1:10803007:5/2:1:10801006:8/2:1:10803006:8/",
+          "describe": "Neural Drive unlocks the \u03b3 partition\n\nAt computing power <color=#F74848>1</color>:\n\u00b7 Flamethrower bullet count <color=#F74848>+2</color>. This effect is doubled in <buf ID=185900>[Bunker]</buf> state.\nAt computing power <color=#F74848>4</color>:\n\u00b7 AP Cap <color=#F74848>+1</color>.\nAt computing power <color=#F74848>7</color>:\n\u00b7 If not moved before an Active Attack, <buf ID=900004>[Re-ATK]</buf> can be triggered, effective up to <color=#F74848>1</color> time per turn. Unable to move before attacking.\nEffects similar to <buf ID=900004>[Re-ATK]</buf> cannot be re-triggered.\nAt computing power <color=#F74848>10</color>:\n\u00b7 Attack multiplier of this unit's talent attack and <buf ID=900002>[Link Attack]</buf> increases by <color=#F74848>0.15</color>.\nAt computing power <color=#F74848>13</color>:\n\u00b7 Max HP increases by <color=#F74848>15%</color>.\nAt computing power <color=#F74848>16</color>:\n\u00b7 After actively attacking with Large Shield, gains <color=#F74848>2</color> stacks of <buf ID=185905>[Flame Surge]</buf> and can continue to act with remaining AP. This effect can trigger <color=#F74848>1</color> time per turn.\n",
+          "AttributeBonus": "PilotGammaChipBandwidthAdd:4",
+          "icon": "Icon_zoneskill_0005",
+          "Status": 1,
+          "weight": 2179
+        },
+        {
+          "ID": "1010318512",
+          "PilotName": "Alena",
+          "name": "Alena",
+          "UnitNumber": "1",
+          "LocationOnMap": "1",
+          "TitleUnitDetails": "Core Neuron - 1",
+          "UnitName": "Core Neuron",
+          "UnitType": "0",
+          "ActivateUnitConsumption": "2:1:10801001:2/",
+          "AttributeBonus": "PilotBasePropertyMeleeAdd:77/PilotBasePropertyAssaultAdd:227",
+          "Status": 1,
+          "weight": 2180,
+          "skill": {
+            "ID": "185501",
+            "name": "Scorch Earth",
+            "describe": "Uses a Large Shield to attack a target, dealing <buf ID=900017>[Fixed DMG]</buf> equal to <color=#F74848>50%</color> max HP of current arm. Applies <terrian ID=4003081 /> to all tiles within <color=#F74848>1</color> ring around the target for <color=#F74848>2</color> turns. If possesses <color=#F74848>2</color> or more stacks of <buf ID=185901>[War Flame]</buf>, consumes <color=#F74848>2</color> stacks to additionally deal <buf ID=900017>[Fixed DMG]</buf> equal to <color=#F74848>20%</color> of own max HP to the target and all enemy units within <color=#F74848>1</color> ring around the target.",
+            "type": "EquipmentSkill",
+            "Ap": "3",
+            "matchingWeaponType": "LS",
+            "SkillIcon": "Icon_skill_main_1179",
+            "icon": "Icon_skill_main_1179",
+            "Status": 1,
+            "weight": 1,
+            "lang": "en"
+          },
+          "skill1": "185501"
+        },
+        {
+          "ID": "1010318513",
+          "PilotName": "Alena",
+          "name": "Alena",
+          "UnitNumber": "5",
+          "LocationOnMap": "5",
+          "TitleUnitDetails": "Core Neuron - 2",
+          "UnitName": "Core Neuron",
+          "UnitType": "0",
+          "ActivateUnitConsumption": "2:1:10802002:2/",
+          "AttributeBonus": "PilotBasePropertyMeleeAdd:115/PilotBasePropertyAssaultAdd:341",
+          "Status": 1,
+          "weight": 2181,
+          "skill": {
+            "ID": "185502",
+            "name": "Blazing Wind",
+            "describe": "Uses a Flamethrower to attack all enemies along the path within range, dealing <color=#F74848>0.7</color>x DMG.",
+            "type": "SpecialAssault",
+            "Ap": "2",
+            "matchingWeaponType": "FL",
+            "SkillIcon": "Icon_skill_order_1127",
+            "icon": "Icon_skill_order_1127",
+            "Status": 1,
+            "weight": 1,
+            "lang": "en"
+          },
+          "skill2": "185502"
+        },
+        {
+          "ID": "1010318514",
+          "PilotName": "Alena",
+          "name": "Alena",
+          "UnitNumber": "7",
+          "LocationOnMap": "7",
+          "TitleUnitDetails": "Core Neuron - 3",
+          "UnitName": "Core Neuron",
+          "UnitType": "0",
+          "ActivateUnitConsumption": "2:1:10801003:3/2:1:10801002:5/",
+          "AttributeBonus": "PilotBasePropertyDefenseAdd:227",
+          "Status": 1,
+          "weight": 2182,
+          "skill": {
+            "ID": "185503",
+            "name": "Converging Flame",
+            "describe": "Uses a Flamethrower to attack a target, dealing <color=#F74848>1.2</color>x DMG and <color=#F74848>20%</color> <buf ID=900139>[Fire DMG]</buf> to other targets along the path. When in <buf ID=185900>[Bunker]</buf> state, applies <color=#F74848>2</color> stacks of <buf ID=185902>[Flame Fusion]</buf> to self.",
+            "type": "EquipmentSkill",
+            "Ap": "3",
+            "matchingWeaponType": "FL",
+            "SkillIcon": "Icon_skill_main_1024",
+            "icon": "Icon_skill_main_1024",
+            "Status": 1,
+            "weight": 1,
+            "lang": "en"
+          },
+          "skill1": "185503"
+        },
+        {
+          "ID": "1010318515",
+          "PilotName": "Alena",
+          "name": "Alena",
+          "UnitNumber": "9",
+          "LocationOnMap": "9",
+          "TitleUnitDetails": "Core Neuron - 4",
+          "UnitName": "Core Neuron",
+          "UnitType": "0",
+          "ActivateUnitConsumption": "2:1:10802003:3/2:1:10802002:5/",
+          "AttributeBonus": "PilotBasePropertyDefenseAdd:272",
+          "Status": 1,
+          "weight": 2183,
+          "skill": {
+            "ID": "185504",
+            "name": "Incinerate",
+            "describe": "Uses a Large Shield to attack a target, consuming all <buf ID=185901>[War Flame]</buf> stacks, dealing <buf ID=900017>[Fixed DMG]</buf> equal to <color=#F74848>70%</color> of current arm max HP, additionally increased by <color=#F74848>10%</color> for each <color=#F74848>1</color> stack of <buf ID=185901>[War Flame]</buf> consumed. This attack always hits the body and deals <color=#F74848>50%</color> Splash DMG to other parts. If <color=#F74848>4</color> or more stacks of <buf ID=185901>[War Flame]</buf> are consumed, inflicts <buf ID=185903>[Thermal Corrosion]</buf> on the target.",
+            "type": "EquipmentSkill",
+            "Ap": "4",
+            "matchingWeaponType": "LS",
+            "SkillIcon": "Icon_skill_main_1180",
+            "icon": "Icon_skill_main_1180",
+            "Status": 1,
+            "weight": 1,
+            "lang": "en"
+          },
+          "skill2": "185504"
+        },
+        {
+          "ID": "1010318516",
+          "PilotName": "Alena",
+          "name": "Alena",
+          "UnitNumber": "13",
+          "LocationOnMap": "13",
+          "TitleUnitDetails": "Core Neuron - 5",
+          "UnitName": "Core Neuron",
+          "UnitType": "0",
+          "ActivateUnitConsumption": "2:1:10802004:4/2:1:10802003:6/",
+          "AttributeBonus": "PilotBasePropertyMeleeAdd:161/PilotBasePropertyAssaultAdd:477",
+          "Status": 1,
+          "weight": 2184,
+          "skill": {
+            "ID": "185505",
+            "name": "Fearless Scorch",
+            "SpecificEffects": "At the start of turn, deals <buf ID=175902>[Percentage HP Reduction]</buf> equal to <color=#F74848>5%</color> max HP to all parts of self. Applies <terrian ID=4003081 /> to all tiles within <color=#F74848>1</color> ring around this unit for <color=#F74848>2</color> turns. Gains <color=#F74848>2</color> stacks of <buf ID=185901>[War Flame]</buf>.",
+            "SkillIcon": "Icon_skill_passive_5322",
+            "icon": "Icon_skill_passive_5322",
+            "Status": 1,
+            "weight": 1,
+            "lang": "en"
+          },
+          "skill1": "185505"
+        },
+        {
+          "ID": "1010318517",
+          "PilotName": "Alena",
+          "name": "Alena",
+          "UnitNumber": "21",
+          "LocationOnMap": "21",
+          "TitleUnitDetails": "Core Neuron - 6",
+          "UnitName": "Core Neuron",
+          "UnitType": "0",
+          "ActivateUnitConsumption": "2:1:10801006:6/2:1:10801005:10/",
+          "AttributeBonus": "PilotBasePropertyDefenseAdd:566",
+          "Status": 1,
+          "weight": 2185,
+          "skill": {
+            "ID": "185506",
+            "name": "Ice Shield",
+            "SpecificEffects": "Reduces percentage <buf ID=900017>[Fixed DMG]</buf> taken by allies by <color=#F74848>10%</color>.",
+            "SkillIcon": "Icon_skill_passive_2124",
+            "icon": "Icon_skill_passive_2124",
+            "Status": 1,
+            "weight": 1,
+            "lang": "en"
+          },
+          "skill2": "185506"
+        },
+        {
+          "ID": "1010318518",
+          "PilotName": "Alena",
+          "name": "Alena",
+          "UnitNumber": "31",
+          "LocationOnMap": "31",
+          "TitleUnitDetails": "Core Neuron - 7",
+          "UnitName": "Core Neuron",
+          "UnitType": "0",
+          "ActivateUnitConsumption": "2:1:10801008:6/2:1:10803008:6/2:1:10801007:10/2:1:10803007:10/",
+          "AttributeBonus": "PilotBasePropertyMeleeAdd:556/PilotBasePropertyAssaultAdd:1649",
+          "Status": 1,
+          "weight": 2186,
+          "skill": {
+            "ID": "185507",
+            "name": "Flame Forged Blood",
+            "resource": "PP",
+            "SpecificEffects": "When shield arm is destroyed, spends <color=#F74848>1</color> PP after combat to restore the arm to <color=#F74848>60%</color> of max HP and gains <color=#F74848>3</color> stacks of <buf ID=185901>[War Flame]</buf>. Gains <color=#F74848>2</color> PP at the start of battle.",
+            "SkillIcon": "Icon_skill_pp_1109",
+            "icon": "Icon_skill_pp_1109",
+            "Status": 1,
+            "weight": 1,
+            "lang": "en"
+          },
+          "skill1": "185507"
+        },
+        {
+          "ID": "1010318536",
+          "PilotName": "Alena",
+          "name": "Alena",
+          "UnitNumber": "3",
+          "LocationOnMap": "3",
+          "TitleUnitDetails": "Core Neuron - 8",
+          "UnitType": "0",
+          "Status": 1,
+          "skill": {
+            "ID": "185508",
+            "name": "Blazing Barrier",
+            "SpecificEffects": "At the start of battle, if equipped with Large Shield, grants Temporary HP equal to <color=#F74848>10%</color> of [Alena]'s body max HP to all bodies of allies within <color=#F74848>2</color> adjacent tiles and applies <buf ID=185904>[Blazing Barrier]</buf> to them.",
+            "SkillIcon": "Icon_skill_passive_5286",
+            "icon": "Icon_skill_passive_5286",
+            "Status": 1,
+            "weight": 1,
+            "lang": "en"
+          },
+          "skill1": "185508",
+          "UnitName": "Core Neuron"
+        },
+        {
+          "ID": "1010318519",
+          "PilotName": "Alena",
+          "name": "Alena",
+          "UnitNumber": "2",
+          "LocationOnMap": "2",
+          "TitleUnitDetails": "Synapse Neuron - 1",
+          "UnitName": "Synapse Neuron",
+          "UnitType": "2",
+          "ActivateUnitConsumption": "2:1:10802001:2/",
+          "AttributeBonus": "PilotBasePropertyDefenseAdd:170",
+          "icon": "3-1",
+          "Status": 1,
+          "weight": 2187
+        },
+        {
+          "ID": "1010318520",
+          "PilotName": "Alena",
+          "name": "Alena",
+          "UnitNumber": "4",
+          "LocationOnMap": "4",
+          "TitleUnitDetails": "Synapse Neuron - 2",
+          "UnitName": "Synapse Neuron",
+          "UnitType": "2",
+          "ActivateUnitConsumption": "2:1:10801002:2/",
+          "AttributeBonus": "PilotBasePropertyDefenseAdd:204",
+          "icon": "3-1",
+          "Status": 1,
+          "weight": 2188
+        },
+        {
+          "ID": "1010318521",
+          "PilotName": "Alena",
+          "name": "Alena",
+          "UnitNumber": "6",
+          "LocationOnMap": "6",
+          "TitleUnitDetails": "Synapse Neuron - 3",
+          "UnitName": "Synapse Neuron",
+          "UnitType": "2",
+          "ActivateUnitConsumption": "2:1:10802002:2/",
+          "AttributeBonus": "PilotBasePropertyMeleeAdd:96/PilotBasePropertyAssaultAdd:284",
+          "icon": "3-1",
+          "Status": 1,
+          "weight": 2189
+        },
+        {
+          "ID": "1010318522",
+          "PilotName": "Alena",
+          "name": "Alena",
+          "UnitNumber": "8",
+          "LocationOnMap": "8",
+          "TitleUnitDetails": "Synapse Neuron - 4",
+          "UnitName": "Synapse Neuron",
+          "UnitType": "2",
+          "ActivateUnitConsumption": "2:1:10801003:3/2:1:10801002:5/",
+          "AttributeBonus": "PilotBasePropertyMeleeAdd:138/PilotBasePropertyAssaultAdd:409",
+          "icon": "3-1",
+          "Status": 1,
+          "weight": 2190
+        },
+        {
+          "ID": "1010318523",
+          "PilotName": "Alena",
+          "name": "Alena",
+          "UnitNumber": "10",
+          "LocationOnMap": "10",
+          "TitleUnitDetails": "Synapse Neuron - 5",
+          "UnitName": "Synapse Neuron",
+          "UnitType": "2",
+          "ActivateUnitConsumption": "2:1:10802003:3/2:1:10802002:5/",
+          "AttributeBonus": "PilotBasePropertyMeleeAdd:115/PilotBasePropertyAssaultAdd:341",
+          "icon": "3-1",
+          "Status": 1,
+          "weight": 2191
+        },
+        {
+          "ID": "1010318524",
+          "PilotName": "Alena",
+          "name": "Alena",
+          "UnitNumber": "12",
+          "LocationOnMap": "12",
+          "TitleUnitDetails": "Synapse Neuron - 6",
+          "UnitName": "Synapse Neuron",
+          "UnitType": "2",
+          "ActivateUnitConsumption": "2:1:10801004:4/2:1:10801003:6/",
+          "AttributeBonus": "PilotBasePropertyDefenseAdd:339",
+          "icon": "3-1",
+          "Status": 1,
+          "weight": 2192
+        },
+        {
+          "ID": "1010318525",
+          "PilotName": "Alena",
+          "name": "Alena",
+          "UnitNumber": "14",
+          "LocationOnMap": "14",
+          "TitleUnitDetails": "Synapse Neuron - 7",
+          "UnitName": "Synapse Neuron",
+          "UnitType": "2",
+          "ActivateUnitConsumption": "2:1:10802004:4/2:1:10802003:6/",
+          "AttributeBonus": "PilotBasePropertyDefenseAdd:283",
+          "icon": "3-1",
+          "Status": 1,
+          "weight": 2193
+        },
+        {
+          "ID": "1010318526",
+          "PilotName": "Alena",
+          "name": "Alena",
+          "UnitNumber": "16",
+          "LocationOnMap": "16",
+          "TitleUnitDetails": "Synapse Neuron - 8",
+          "UnitName": "Synapse Neuron",
+          "UnitType": "2",
+          "ActivateUnitConsumption": "2:1:10801005:5/2:1:10801004:8/",
+          "AttributeBonus": "PilotBasePropertyMeleeAdd:276/PilotBasePropertyAssaultAdd:818",
+          "icon": "3-1",
+          "Status": 1,
+          "weight": 2194
+        },
+        {
+          "ID": "1010318527",
+          "PilotName": "Alena",
+          "name": "Alena",
+          "UnitNumber": "18",
+          "LocationOnMap": "18",
+          "TitleUnitDetails": "Synapse Neuron - 9",
+          "UnitName": "Synapse Neuron",
+          "UnitType": "2",
+          "ActivateUnitConsumption": "2:1:10801005:5/2:1:10801004:8/",
+          "AttributeBonus": "PilotBasePropertyDefenseAdd:543",
+          "icon": "3-1",
+          "Status": 1,
+          "weight": 2195
+        },
+        {
+          "ID": "1010318528",
+          "PilotName": "Alena",
+          "name": "Alena",
+          "UnitNumber": "20",
+          "LocationOnMap": "20",
+          "TitleUnitDetails": "Synapse Neuron - 10",
+          "UnitName": "Synapse Neuron",
+          "UnitType": "2",
+          "ActivateUnitConsumption": "2:1:10802005:5/2:1:10802004:8/",
+          "AttributeBonus": "PilotBasePropertyMeleeAdd:230/PilotBasePropertyAssaultAdd:682",
+          "icon": "3-1",
+          "Status": 1,
+          "weight": 2196
+        },
+        {
+          "ID": "1010318529",
+          "PilotName": "Alena",
+          "name": "Alena",
+          "UnitNumber": "22",
+          "LocationOnMap": "22",
+          "TitleUnitDetails": "Synapse Neuron - 11",
+          "UnitName": "Synapse Neuron",
+          "UnitType": "2",
+          "ActivateUnitConsumption": "2:1:10801006:6/2:1:10801005:10/",
+          "AttributeBonus": "PilotBasePropertyDefenseAdd:679",
+          "icon": "3-1",
+          "Status": 1,
+          "weight": 2197
+        },
+        {
+          "ID": "1010318530",
+          "PilotName": "Alena",
+          "name": "Alena",
+          "UnitNumber": "24",
+          "LocationOnMap": "24",
+          "TitleUnitDetails": "Synapse Neuron - 12",
+          "UnitName": "Synapse Neuron",
+          "UnitType": "2",
+          "ActivateUnitConsumption": "2:1:10801006:6/2:1:10801005:10/",
+          "AttributeBonus": "PilotBasePropertyMeleeAdd:345/PilotBasePropertyAssaultAdd:1023",
+          "icon": "3-1",
+          "Status": 1,
+          "weight": 2198
+        },
+        {
+          "ID": "1010318531",
+          "PilotName": "Alena",
+          "name": "Alena",
+          "UnitNumber": "26",
+          "LocationOnMap": "26",
+          "TitleUnitDetails": "Synapse Neuron - 13",
+          "UnitName": "Synapse Neuron",
+          "UnitType": "2",
+          "ActivateUnitConsumption": "2:1:10802006:6/2:1:10802005:10/",
+          "AttributeBonus": "PilotBasePropertyMeleeAdd:288/PilotBasePropertyAssaultAdd:852",
+          "icon": "3-1",
+          "Status": 1,
+          "weight": 2199
+        },
+        {
+          "ID": "1010318532",
+          "PilotName": "Alena",
+          "name": "Alena",
+          "UnitNumber": "28",
+          "LocationOnMap": "28",
+          "TitleUnitDetails": "Synapse Neuron - 14",
+          "UnitName": "Synapse Neuron",
+          "UnitType": "2",
+          "ActivateUnitConsumption": "2:1:10801007:5/2:1:10803007:5/2:1:10801006:8/2:1:10803006:8/",
+          "AttributeBonus": "PilotBasePropertyMeleeAdd:438/PilotBasePropertyAssaultAdd:1296",
+          "icon": "3-1",
+          "Status": 1,
+          "weight": 2200
+        },
+        {
+          "ID": "1010318533",
+          "PilotName": "Alena",
+          "name": "Alena",
+          "UnitNumber": "30",
+          "LocationOnMap": "30",
+          "TitleUnitDetails": "Synapse Neuron - 15",
+          "UnitName": "Synapse Neuron",
+          "UnitType": "2",
+          "ActivateUnitConsumption": "2:1:10802007:5/2:1:10804007:5/2:1:10802006:8/2:1:10804006:8/",
+          "AttributeBonus": "PilotBasePropertyDefenseAdd:793",
+          "icon": "3-1",
+          "Status": 1,
+          "weight": 2201
+        },
+        {
+          "ID": "1010318534",
+          "PilotName": "Alena",
+          "name": "Alena",
+          "UnitNumber": "32",
+          "LocationOnMap": "32",
+          "TitleUnitDetails": "Synapse Neuron - 16",
+          "UnitName": "Synapse Neuron",
+          "UnitType": "2",
+          "ActivateUnitConsumption": "2:1:10801008:6/2:1:10803008:6/2:1:10801007:10/2:1:10803007:10/",
+          "AttributeBonus": "PilotBasePropertyDefenseAdd:1359",
+          "icon": "3-1",
+          "Status": 1,
+          "weight": 2202
+        },
+        {
+          "ID": "1010318535",
+          "PilotName": "Alena",
+          "name": "Alena",
+          "UnitNumber": "34",
+          "LocationOnMap": "34",
+          "TitleUnitDetails": "Synapse Neuron - 17",
+          "UnitName": "Synapse Neuron",
+          "UnitType": "2",
+          "ActivateUnitConsumption": "2:1:10802008:6/2:1:10804008:6/2:1:10802007:10/2:1:10804007:10/",
+          "AttributeBonus": "PilotBasePropertyDefenseAdd:1132",
+          "icon": "3-1",
+          "Status": 1,
+          "weight": 2203
+        }
+      ],
+      "AllowedMechaDriveList_DriveAllowedList": "Heavy",
+      "AlternateSkins": "",
+      "stats": {
+        "Combat": "1858",
+        "Assault": "5100",
+        "Shooting": "1386",
+        "Tactics": "2172",
+        "Defense": "4023",
+        "Engineering": "2015",
+        "InitialPilotAPValue_PilotAPInitBase": "5",
+        "MaximumPilotAPValue_PilotAPMaxBase": "5",
+        "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
+      },
+      "version": "3.5",
+      "enTranslation": true,
+      "statRanks": {
+        "Combat": 44,
+        "Shooting": 58,
+        "Assault": 6,
+        "Tactics": 25,
+        "Engineering": 27
       }
     },
     {
@@ -3306,10 +4458,10 @@
       "version": "1.7",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 64,
+        "Combat": 65,
         "Shooting": 50,
         "Assault": 34,
-        "Tactics": 51,
+        "Tactics": 52,
         "Engineering": 5
       }
     },
@@ -4462,11 +5614,11 @@
       "version": "3.3",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 48,
+        "Combat": 49,
         "Shooting": 39,
         "Assault": 9,
         "Tactics": 20,
-        "Engineering": 55
+        "Engineering": 56
       }
     },
     {
@@ -5576,7 +6728,7 @@
       "version": "1.6",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 61,
+        "Combat": 62,
         "Shooting": 42,
         "Assault": 38,
         "Tactics": 8,
@@ -6692,10 +7844,10 @@
       "enTranslation": true,
       "statRanks": {
         "Combat": 7,
-        "Shooting": 74,
+        "Shooting": 75,
         "Assault": 4,
-        "Tactics": 72,
-        "Engineering": 71
+        "Tactics": 73,
+        "Engineering": 72
       }
     },
     {
@@ -7793,8 +8945,8 @@
         "Combat": 38,
         "Shooting": 3,
         "Assault": 46,
-        "Tactics": 37,
-        "Engineering": 44
+        "Tactics": 38,
+        "Engineering": 45
       }
     },
     {
@@ -8891,8 +10043,8 @@
         "Combat": 35,
         "Shooting": 4,
         "Assault": 65,
-        "Tactics": 27,
-        "Engineering": 29
+        "Tactics": 28,
+        "Engineering": 30
       }
     },
     {
@@ -10043,11 +11195,11 @@
       "version": "3.4",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 56,
+        "Combat": 57,
         "Shooting": 29,
         "Assault": 17,
-        "Tactics": 35,
-        "Engineering": 40
+        "Tactics": 36,
+        "Engineering": 41
       }
     },
     {
@@ -11159,7 +12311,7 @@
         "Shooting": 23,
         "Assault": 74,
         "Tactics": 18,
-        "Engineering": 76
+        "Engineering": 77
       }
     },
     {
@@ -12271,11 +13423,11 @@
       "version": "1.6",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 59,
+        "Combat": 60,
         "Shooting": 37,
         "Assault": 10,
         "Tactics": 24,
-        "Engineering": 30
+        "Engineering": 31
       }
     },
     {
@@ -13464,10 +14616,10 @@
       "enTranslation": true,
       "statRanks": {
         "Combat": 11,
-        "Shooting": 58,
+        "Shooting": 59,
         "Assault": 48,
-        "Tactics": 35,
-        "Engineering": 28
+        "Tactics": 36,
+        "Engineering": 29
       }
     },
     {
@@ -14563,11 +15715,11 @@
         }
       ],
       "statRanks": {
-        "Combat": 60,
+        "Combat": 61,
         "Shooting": 18,
         "Assault": 60,
         "Tactics": 4,
-        "Engineering": 64
+        "Engineering": 65
       }
     },
     {
@@ -15737,7 +16889,7 @@
       "version": "1.0",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 62,
+        "Combat": 63,
         "Shooting": 8,
         "Assault": 51,
         "Tactics": 19,
@@ -16853,8 +18005,8 @@
         "Combat": 5,
         "Shooting": 48,
         "Assault": 44,
-        "Tactics": 26,
-        "Engineering": 63
+        "Tactics": 27,
+        "Engineering": 64
       }
     },
     {
@@ -18043,8 +19195,8 @@
         "Combat": 24,
         "Shooting": 46,
         "Assault": 30,
-        "Tactics": 57,
-        "Engineering": 53
+        "Tactics": 58,
+        "Engineering": 54
       }
     },
     {
@@ -19147,7 +20299,7 @@
       "version": "1.0",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 65,
+        "Combat": 66,
         "Shooting": 22,
         "Assault": 58,
         "Tactics": 9,
@@ -20252,7 +21404,7 @@
         "Combat": 35,
         "Shooting": 57,
         "Assault": 15,
-        "Tactics": 46,
+        "Tactics": 47,
         "Engineering": 16
       }
     },
@@ -21364,11 +22516,11 @@
       "version": "1.4",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 58,
+        "Combat": 59,
         "Shooting": 51,
         "Assault": 24,
         "Tactics": 12,
-        "Engineering": 67
+        "Engineering": 68
       }
     },
     {
@@ -22484,9 +23636,9 @@
       "enTranslation": true,
       "statRanks": {
         "Combat": 40,
-        "Shooting": 63,
+        "Shooting": 64,
         "Assault": 13,
-        "Tactics": 52,
+        "Tactics": 53,
         "Engineering": 12
       }
     },
@@ -23684,10 +24836,10 @@
       "version": "1.0",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 54,
+        "Combat": 55,
         "Shooting": 27,
         "Assault": 5,
-        "Tactics": 58,
+        "Tactics": 59,
         "Engineering": 22
       }
     },
@@ -24785,10 +25937,10 @@
       ],
       "statRanks": {
         "Combat": 2,
-        "Shooting": 72,
+        "Shooting": 73,
         "Assault": 73,
         "Tactics": 2,
-        "Engineering": 72
+        "Engineering": 73
       }
     },
     {
@@ -25975,10 +27127,10 @@
       "version": "1.0",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 71,
-        "Shooting": 68,
+        "Combat": 72,
+        "Shooting": 69,
         "Assault": 22,
-        "Tactics": 44,
+        "Tactics": 45,
         "Engineering": 8
       }
     },
@@ -27173,8 +28325,8 @@
         "Combat": 12,
         "Shooting": 54,
         "Assault": 37,
-        "Tactics": 31,
-        "Engineering": 62
+        "Tactics": 32,
+        "Engineering": 63
       }
     },
     {
@@ -29819,7 +30971,7 @@
         }
       ],
       "statRanks": {
-        "Combat": 46,
+        "Combat": 47,
         "Shooting": 50,
         "Assault": 45,
         "Tactics": 5,
@@ -31017,8 +32169,8 @@
         "Combat": 6,
         "Shooting": 24,
         "Assault": 64,
-        "Tactics": 41,
-        "Engineering": 57
+        "Tactics": 42,
+        "Engineering": 58
       }
     },
     {
@@ -32186,10 +33338,10 @@
       "enTranslation": true,
       "statRanks": {
         "Combat": 15,
-        "Shooting": 70,
+        "Shooting": 71,
         "Assault": 22,
-        "Tactics": 57,
-        "Engineering": 68
+        "Tactics": 58,
+        "Engineering": 69
       }
     },
     {
@@ -33336,10 +34488,10 @@
       "enTranslation": true,
       "statRanks": {
         "Combat": 1,
-        "Shooting": 73,
+        "Shooting": 74,
         "Assault": 3,
-        "Tactics": 68,
-        "Engineering": 74
+        "Tactics": 69,
+        "Engineering": 75
       }
     },
     {
@@ -34450,8 +35602,8 @@
         "Combat": 29,
         "Shooting": 9,
         "Assault": 43,
-        "Tactics": 55,
-        "Engineering": 33
+        "Tactics": 56,
+        "Engineering": 34
       }
     },
     {
@@ -35550,10 +36702,10 @@
         }
       ],
       "statRanks": {
-        "Combat": 54,
+        "Combat": 55,
         "Shooting": 47,
         "Assault": 7,
-        "Tactics": 29,
+        "Tactics": 30,
         "Engineering": 22
       }
     },
@@ -36661,10 +37813,10 @@
       "version": "1.2",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 67,
+        "Combat": 68,
         "Shooting": 18,
         "Assault": 65,
-        "Tactics": 46,
+        "Tactics": 47,
         "Engineering": 7
       }
     },
@@ -37762,8 +38914,8 @@
         "Combat": 3,
         "Shooting": 30,
         "Assault": 59,
-        "Tactics": 49,
-        "Engineering": 34
+        "Tactics": 50,
+        "Engineering": 35
       }
     },
     {
@@ -38961,8 +40113,8 @@
         "Combat": 19,
         "Shooting": 49,
         "Assault": 12,
-        "Tactics": 70,
-        "Engineering": 69
+        "Tactics": 71,
+        "Engineering": 70
       }
     },
     {
@@ -40064,9 +41216,9 @@
       ],
       "statRanks": {
         "Combat": 13,
-        "Shooting": 67,
+        "Shooting": 68,
         "Assault": 76,
-        "Tactics": 71,
+        "Tactics": 72,
         "Engineering": 2
       }
     },
@@ -41183,11 +42335,11 @@
       "version": "2.1",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 48,
+        "Combat": 49,
         "Shooting": 28,
         "Assault": 6,
-        "Tactics": 34,
-        "Engineering": 46
+        "Tactics": 35,
+        "Engineering": 47
       }
     },
     {
@@ -42377,10 +43529,10 @@
       "version": "1.0",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 47,
+        "Combat": 48,
         "Shooting": 20,
         "Assault": 60,
-        "Tactics": 67,
+        "Tactics": 68,
         "Engineering": 6
       }
     },
@@ -43570,7 +44722,7 @@
       "version": "1.0",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 44,
+        "Combat": 45,
         "Shooting": 25,
         "Assault": 73,
         "Tactics": 10,
@@ -44769,10 +45921,10 @@
       "version": "1.0",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 62,
+        "Combat": 63,
         "Shooting": 7,
         "Assault": 35,
-        "Tactics": 61,
+        "Tactics": 62,
         "Engineering": 13
       }
     },
@@ -45923,7 +47075,7 @@
         "Shooting": 50,
         "Assault": 53,
         "Tactics": 6,
-        "Engineering": 37
+        "Engineering": 38
       }
     },
     {
@@ -47044,10 +48196,10 @@
       "enTranslation": true,
       "statRanks": {
         "Combat": 9,
-        "Shooting": 64,
+        "Shooting": 65,
         "Assault": 49,
         "Tactics": 21,
-        "Engineering": 41
+        "Engineering": 42
       }
     },
     {
@@ -48161,7 +49313,7 @@
         "Combat": 41,
         "Shooting": 6,
         "Assault": 47,
-        "Tactics": 50,
+        "Tactics": 51,
         "Engineering": 19
       }
     },
@@ -49279,8 +50431,8 @@
         "Combat": 33,
         "Shooting": 33,
         "Assault": 23,
-        "Tactics": 39,
-        "Engineering": 60
+        "Tactics": 40,
+        "Engineering": 61
       }
     },
     {
@@ -50476,11 +51628,11 @@
       "version": "1.0",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 60,
-        "Shooting": 60,
+        "Combat": 61,
+        "Shooting": 61,
         "Assault": 16,
         "Tactics": 11,
-        "Engineering": 73
+        "Engineering": 74
       }
     },
     {
@@ -51596,11 +52748,11 @@
       "version": "2.0",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 72,
-        "Shooting": 65,
+        "Combat": 73,
+        "Shooting": 66,
         "Assault": 14,
         "Tactics": 3,
-        "Engineering": 70
+        "Engineering": 71
       }
     },
     {
@@ -52700,7 +53852,7 @@
       "enTranslation": true,
       "statRanks": {
         "Combat": 34,
-        "Shooting": 61,
+        "Shooting": 62,
         "Assault": 56,
         "Tactics": 7,
         "Engineering": 15
@@ -53845,10 +54997,10 @@
         }
       ],
       "statRanks": {
-        "Combat": 48,
-        "Shooting": 63,
+        "Combat": 49,
+        "Shooting": 64,
         "Assault": 33,
-        "Tactics": 65,
+        "Tactics": 66,
         "Engineering": 1
       }
     },
@@ -55035,10 +56187,10 @@
       "version": "1.0",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 51,
+        "Combat": 52,
         "Shooting": 57,
         "Assault": 32,
-        "Tactics": 63,
+        "Tactics": 64,
         "Engineering": 3
       }
     },
@@ -56231,11 +57383,11 @@
       "version": "1.0",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 70,
+        "Combat": 71,
         "Shooting": 11,
         "Assault": 68,
         "Tactics": 14,
-        "Engineering": 49
+        "Engineering": 50
       }
     },
     {
@@ -57342,11 +58494,11 @@
       "version": "1.5",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 68,
+        "Combat": 69,
         "Shooting": 2,
         "Assault": 11,
-        "Tactics": 68,
-        "Engineering": 75
+        "Tactics": 69,
+        "Engineering": 76
       }
     },
     {
@@ -58535,8 +59687,8 @@
         "Combat": 25,
         "Shooting": 10,
         "Assault": 43,
-        "Tactics": 62,
-        "Engineering": 48
+        "Tactics": 63,
+        "Engineering": 49
       }
     },
     {
@@ -59636,10 +60788,10 @@
         }
       ],
       "statRanks": {
-        "Combat": 73,
-        "Shooting": 71,
+        "Combat": 74,
+        "Shooting": 72,
         "Assault": 1,
-        "Tactics": 66,
+        "Tactics": 67,
         "Engineering": 4
       }
     },
@@ -60750,8 +61902,8 @@
         "Combat": 28,
         "Shooting": 31,
         "Assault": 25,
-        "Tactics": 56,
-        "Engineering": 44
+        "Tactics": 57,
+        "Engineering": 45
       }
     },
     {
@@ -61853,8 +63005,8 @@
         "Combat": 36,
         "Shooting": 54,
         "Assault": 8,
-        "Tactics": 41,
-        "Engineering": 27
+        "Tactics": 42,
+        "Engineering": 28
       }
     },
     {
@@ -62952,7 +64104,7 @@
         "Shooting": 50,
         "Assault": 45,
         "Tactics": 13,
-        "Engineering": 37
+        "Engineering": 38
       }
     },
     {
@@ -64046,11 +65198,11 @@
         }
       ],
       "statRanks": {
-        "Combat": 51,
+        "Combat": 52,
         "Shooting": 5,
         "Assault": 41,
         "Tactics": 23,
-        "Engineering": 52
+        "Engineering": 53
       }
     },
     {
@@ -65149,8 +66301,8 @@
         "Combat": 6,
         "Shooting": 38,
         "Assault": 54,
-        "Tactics": 45,
-        "Engineering": 50
+        "Tactics": 46,
+        "Engineering": 51
       }
     },
     {
@@ -66344,7 +67496,7 @@
         "Combat": 26,
         "Shooting": 50,
         "Assault": 15,
-        "Tactics": 64,
+        "Tactics": 65,
         "Engineering": 25
       }
     },
@@ -67443,9 +68595,9 @@
       ],
       "statRanks": {
         "Combat": 10,
-        "Shooting": 69,
+        "Shooting": 70,
         "Assault": 63,
-        "Tactics": 59,
+        "Tactics": 60,
         "Engineering": 11
       }
     },
@@ -68636,10 +69788,10 @@
       "version": "1.0",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 63,
+        "Combat": 64,
         "Shooting": 16,
         "Assault": 36,
-        "Tactics": 42,
+        "Tactics": 43,
         "Engineering": 18
       }
     },
@@ -69741,8 +70893,8 @@
         "Combat": 14,
         "Shooting": 45,
         "Assault": 69,
-        "Tactics": 28,
-        "Engineering": 31
+        "Tactics": 29,
+        "Engineering": 32
       }
     },
     {
@@ -70912,10 +72064,10 @@
       "version": "1.0",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 45,
+        "Combat": 46,
         "Shooting": 12,
         "Assault": 67,
-        "Tactics": 40,
+        "Tactics": 41,
         "Engineering": 15
       }
     },
@@ -72090,8 +73242,8 @@
         "Combat": 27,
         "Shooting": 55,
         "Assault": 31,
-        "Tactics": 60,
-        "Engineering": 36
+        "Tactics": 61,
+        "Engineering": 37
       }
     },
     {
@@ -73262,11 +74414,11 @@
       "version": "1.0",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 55,
+        "Combat": 56,
         "Shooting": 19,
         "Assault": 47,
-        "Tactics": 30,
-        "Engineering": 39
+        "Tactics": 31,
+        "Engineering": 40
       }
     },
     {
@@ -74433,11 +75585,11 @@
       "version": "1.0",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 55,
+        "Combat": 56,
         "Shooting": 14,
         "Assault": 40,
-        "Tactics": 25,
-        "Engineering": 61
+        "Tactics": 26,
+        "Engineering": 62
       }
     },
     {
@@ -75609,7 +76761,7 @@
         "Shooting": 52,
         "Assault": 39,
         "Tactics": 16,
-        "Engineering": 53
+        "Engineering": 54
       }
     },
     {
@@ -76775,10 +77927,10 @@
       "version": "1.0",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 66,
+        "Combat": 67,
         "Shooting": 36,
         "Assault": 21,
-        "Tactics": 43,
+        "Tactics": 44,
         "Engineering": 20
       }
     },
@@ -77953,7 +79105,7 @@
         "Shooting": 41,
         "Assault": 72,
         "Tactics": 22,
-        "Engineering": 54
+        "Engineering": 55
       }
     },
     {
@@ -79143,10 +80295,10 @@
       "version": "1.0",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 57,
+        "Combat": 58,
         "Shooting": 21,
         "Assault": 71,
-        "Tactics": 54,
+        "Tactics": 55,
         "Engineering": 9
       }
     },
@@ -80320,7 +81472,7 @@
         "Combat": 32,
         "Shooting": 55,
         "Assault": 19,
-        "Tactics": 60,
+        "Tactics": 61,
         "Engineering": 26
       }
     },
@@ -81491,8 +82643,8 @@
         "Combat": 18,
         "Shooting": 35,
         "Assault": 61,
-        "Tactics": 64,
-        "Engineering": 27
+        "Tactics": 65,
+        "Engineering": 28
       }
     },
     {
@@ -82660,11 +83812,11 @@
       "version": "1.0",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 51,
-        "Shooting": 69,
+        "Combat": 52,
+        "Shooting": 70,
         "Assault": 26,
         "Tactics": 15,
-        "Engineering": 65
+        "Engineering": 66
       }
     },
     {
@@ -83834,8 +84986,8 @@
         "Combat": 42,
         "Shooting": 32,
         "Assault": 20,
-        "Tactics": 36,
-        "Engineering": 63
+        "Tactics": 37,
+        "Engineering": 64
       }
     },
     {
@@ -85006,10 +86158,10 @@
       "enTranslation": true,
       "statRanks": {
         "Combat": 17,
-        "Shooting": 66,
+        "Shooting": 67,
         "Assault": 55,
-        "Tactics": 26,
-        "Engineering": 39
+        "Tactics": 27,
+        "Engineering": 40
       }
     },
     {
@@ -86179,11 +87331,11 @@
       "version": "1.0",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 52,
+        "Combat": 53,
         "Shooting": 34,
         "Assault": 18,
-        "Tactics": 38,
-        "Engineering": 51
+        "Tactics": 39,
+        "Engineering": 52
       }
     },
     {
@@ -87353,8 +88505,8 @@
         "Combat": 30,
         "Shooting": 13,
         "Assault": 50,
-        "Tactics": 53,
-        "Engineering": 47
+        "Tactics": 54,
+        "Engineering": 48
       }
     },
     {
@@ -88201,8 +89353,8 @@
         "Combat": 23,
         "Shooting": 53,
         "Assault": 62,
-        "Tactics": 56,
-        "Engineering": 35
+        "Tactics": 57,
+        "Engineering": 36
       }
     },
     {
@@ -89064,10 +90216,10 @@
       "version": "1.0",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 69,
+        "Combat": 70,
         "Shooting": 26,
         "Assault": 70,
-        "Tactics": 50,
+        "Tactics": 51,
         "Engineering": 10
       }
     },
@@ -89916,8 +91068,8 @@
         "Combat": 43,
         "Shooting": 49,
         "Assault": 28,
-        "Tactics": 54,
-        "Engineering": 43
+        "Tactics": 55,
+        "Engineering": 44
       }
     },
     {
@@ -90759,11 +91911,11 @@
       "version": "1.0",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 50,
-        "Shooting": 59,
+        "Combat": 51,
+        "Shooting": 60,
         "Assault": 29,
-        "Tactics": 33,
-        "Engineering": 42
+        "Tactics": 34,
+        "Engineering": 43
       }
     },
     {
@@ -91611,8 +92763,8 @@
         "Combat": 22,
         "Shooting": 17,
         "Assault": 75,
-        "Tactics": 59,
-        "Engineering": 66
+        "Tactics": 60,
+        "Engineering": 67
       }
     },
     {
@@ -92450,11 +93602,11 @@
       "version": "1.0",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 53,
+        "Combat": 54,
         "Shooting": 40,
         "Assault": 66,
         "Tactics": 17,
-        "Engineering": 32
+        "Engineering": 33
       }
     },
     {
@@ -93299,11 +94451,11 @@
       "version": "1.0",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 62,
+        "Combat": 63,
         "Shooting": 43,
         "Assault": 27,
-        "Tactics": 47,
-        "Engineering": 45
+        "Tactics": 48,
+        "Engineering": 46
       }
     },
     {
@@ -94146,10 +95298,10 @@
       "enTranslation": true,
       "statRanks": {
         "Combat": 20,
-        "Shooting": 62,
+        "Shooting": 63,
         "Assault": 57,
-        "Tactics": 48,
-        "Engineering": 47
+        "Tactics": 49,
+        "Engineering": 48
       }
     },
     {
@@ -94997,8 +96149,8 @@
         "Combat": 21,
         "Shooting": 44,
         "Assault": 62,
-        "Tactics": 48,
-        "Engineering": 59
+        "Tactics": 49,
+        "Engineering": 60
       }
     },
     {
@@ -95843,11 +96995,11 @@
       "version": "1.0",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 49,
+        "Combat": 50,
         "Shooting": 15,
         "Assault": 52,
-        "Tactics": 41,
-        "Engineering": 56
+        "Tactics": 42,
+        "Engineering": 57
       }
     }
   ]

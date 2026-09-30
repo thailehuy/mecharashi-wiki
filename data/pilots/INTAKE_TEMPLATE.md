@@ -64,7 +64,7 @@ pilot from this template (10103182, Kaidan The Invincible):
 
 ## Basics
 
-- Pilot ID: 10103175
+- Pilot ID: 10103185
 - Pilot Name: Alena
 - Real Name: Alena Vera
 - Gender: Female
@@ -77,101 +77,102 @@ pilot from this template (10103182, Kaidan The Invincible):
 ## Images
 <!-- portrait is prefixed with data/unlisted/pilot_images_half/ -->
 <!-- avatar is prefixed with data/unlisted/pilot_images_raw/ -->
-- Portrait (half-body) file: Pilot_10103175A_half.png
-- Avatar (full portrait) file: Pilot_10103175A_raw.png
+- Portrait (half-body) file: Pilot_10103185A_half.png
+- Avatar (full portrait) file: Pilot_10103185A_raw.png
 
 ## Attributes
-- Ranged: 1592
-- Tactical: 4865
-- Assault: 1916
-- Melee: 2408
-- Mechanic: 1749
-- Defense: 4013
+- Ranged: 1386
+- Tactical: 2172
+- Assault: 5100
+- Melee: 1858
+- Mechanic: 2015
+- Defense: 4023
 - Initial Base Starting AP: 5
-- Max Base Starting AP: 6
+- Max Base Starting AP: 5
 - AP Recovery: 2
 
 ## Talents
 <!-- all talents, skills and neural icons are prefixed with data/unlisted/pilot_skills/ -->
 
 ### Basic Talent (Talent0_2Ability)
-- Name: Truth Seeker
-- Effect text: When any unit on the field tkes non-percentage [Fixed DMG], gains 2 stacks of [Effective Data]. When an ally triggers [Percentage HP Reduction], gains 4 stacks of [Effective Data].
+- Name: Snowfield Afterglow
+- Effect text: When equipped with Flamethrower and Large Shield, can use command skill [Bunker Down]. At the start of turn, if in [Bunker] state, immediately uses Flamethrower to attack all enemies within range, dealing 0.5x DMG. When attacking with Flamethrower, gains 1 stack of [War Flame] for each 1 target hit.
 - Icon name: Icon_skill_talent_5168
 
 ### Ascended Talent (Talent3_5Ability)
 <!-- Ascended talent has same name and icon as basic one, with a line split -->
-- Effect text: When any unit on the field tkes non-percentage [Fixed DMG], gains 2 stacks of [Effective Data]. When an ally triggers [Percentage HP Reduction], gains 4 stacks of [Effective Data].\nMissile range +1. Final DMG dealt increases by 10%.
+- Effect text: When equipped with Flamethrower and Large Shield, can use command skill [Bunker Down]. At the start of turn, if in [Bunker] state, immediately uses Flamethrower to attack all enemies within range, dealing 0.5x DMG. When attacking with Flamethrower, gains 1 stack of [War Flame] for each 1 target hit.\nGains 3 stacks of [War Flame] upon deployment. Gains +1 AP after using [Rapid Raid].
 
 ## Skills
 
 <!-- Each skill the pilot uses on their neuron board (Core Neuron slots).
      type = EquipmentSkill (weapon attack) / Order (self-buff) / passive -->
 ### Skill 0 (innate)
-- Strategic Bombing 1 (same skill as other Tactician with ID 400001)
+- CEC 1 (same skill as other Raiders)
 
 ### Skill 1
-- Name: Self Sampling
-- Type: SpecialAssault <!-- EquipmentSkill / Order / passive -->
-- AP cost: 2
+- Name: Scorch Earth
+- Type: EquipmentSkill <!-- EquipmentSkill / Order / passive -->
+- AP cost: 3
 - Cooldown:             <!-- if any -->
-- Weapon type: ML <!-- if EquipmentSkill, e.g. SG / AR / SR / MG / Melee -->
-- Effect text: Deals 10% [Percentage HP Reduction] to all self parts. This effect will not destroy parts. Then uses Missile Launcher to attack a target, dealing 0.9x DMG to the part hit and 50% Splash DMG to other parts. Upon hitting, deals [Fixed DMG] equal to 10% max HP to all parts of all enemy units within 1-tile cross-shaped area around the original target.
-- Icon name: Icon_skill_order_1139
+- Weapon type: LS <!-- if EquipmentSkill, e.g. SG / AR / SR / MG / Melee -->
+- Effect text: Uses a Large Shield to attack a target, dealing [Fixed DMG] equal to 50% max HP of current arm. Applies [Burning Terrain] to all tiles within 1 ring around the target for 2 turns. If possesses 2 or more stacks of [War Flame], consumes 2 stacks to additionally deal [Fixed DMG] equal to 20% of own max HP to the target and all enemy units within 1 ring around the target.
+- Icon name: Icon_skill_main_1179
 
 ### Skill 2
-- Name: Contained Fission
+- Name: Blazing Wind
 - Type: SpecialAssault
-- AP cost: 3
+- AP cost: 2
 - Cooldown:
-- Weapon type: ML
-- Effect text: Uses Missile Launcher to attack a target, dealing 1.2x DMG to the part hit and 50% Splash DMG to other parts. Inflicts [Retaliation Disabled] on the target after combat, this effect is removed after triggering. If possesses 10 or more stacks of [Effective Data], consumes 10 stacks to increase Splash DMG percentage by 35%.
-- Icon name: Icon_skill_order_1129
+- Weapon type: FL
+- Effect text: Uses a Flamethrower to attack all enemies along the path within range, dealing 0.7x DMG.
+- Icon name: Icon_skill_order_1127
 
 ### Skill 3
-- Name: Data Readjustment
-- Type: Order
-- AP cost: 0
-- Cooldown: 2
-- Weapon type: ML
-- Effect text: Selects up to 4 allies within 4 adjacent tiles. Inflicts [Percentage HP Reduction] equal to 10% max HP to all selected allies. This effect will not destroy parts. For each 1 ally selected, restores 2 rounds of ammo for Missile Launcher and gains 1 AP. Can continue to act with remaining movement.
-- Icon name: Icon_skill_order_5168
+- Name: Converging Flame
+- Type: EquipmentSkill
+- AP cost: 3
+- Cooldown:
+- Weapon type: FL
+- Effect text: Uses a Flamethrower to attack a target, dealing 1.2x DMG and 20% [Fire DMG] to other targets along the path. When in [Bunker] state, applies 2 stacks of [Flame Fusion] to self.
+- Icon name: Icon_skill_main_1024
 
 ### Skill 4
-- Name: System Disintegration
-- Type: SpecialAssault
-- AP cost: 5
-- Cooldown:
-- Weapon type: ML
-- Effect text: Uses both Missile Launcher to attack a target, dealing 2x0.8 DMG to the part hit and 50% Splash DMG to other parts. If possesses 10 or more stacks of [Effective Data], consumes 10 stacks to deal 15% of target max HP as [Fixed DMG] to all target's parts. [Fixed DMG] dealt increases by 35% for this attack.
-- Icon name: Icon_skill_order_1162
-
-### Skill 5
-- Name: Chain Collapse
-- Type: SpecialAssault
+- Name: Incinerate
+- Type: EquipmentSkill
 - AP cost: 4
 - Cooldown:
-- Weapon type: ML
-- Effect text: Uses both Missile Launcher to attack a target 2 times, each time dealing 2x0.3 DMG to the part hit and 50% Splash DMG to other parts. If possesses 5 or more stacks of [Effective Data], consumes 5 stacks to add 1 extra attack, up to a maximum of 3 extra attack. These extra attacks do not consume AP nor ammo.
-- Icon name: Icon_skill_order_1163
+- Weapon type: LS
+- Effect text: Uses Large Shield to attack a target, consuming all [War Flame] stacks, dealing [Fixed DMG] equal to 70% current arm max HP, additionally increases by 10% for each 1 stack of [War Flame] consumed. This attack always hit the body and deals 50% Splash DMG to other parts. If 4 or more stacks of [War Flame] are consumed, inflicts [Thermal Corrosion] to the target.
+- Icon name: Icon_skill_main_1180
+
+### Skill 5
+- Name: Fearless Scorch
+- Type: Passive
+- AP cost:
+- Cooldown:
+- Weapon type: FL
+- Effect text: At the start of turn, deals [Percentage HP Reduction] equal to 5% max HP to all parts of self. Applies [Burning Terrain] to all tiles within 1 ring around this unit for 2 turns. Gains 2 stacks of [War Flame]
+- Icon name: Icon_skill_passive_5322
 
 ### Skill 6
-- Name: Balance the Scale
+- Name: Ice Shield
 - Type: Passive
-- Effect text: At the start of action, deals [Percentage HP Reduction] equal to 5% max HP to all self parts and gains 1 random buff lasting for 2 turns. This effect will not destroy parts.
-- Icon name: Icon_skill_passive_5310
+- Effect text: Reduces percentage [Fixed DMG] taken by allies by 10%.
+- Icon name: Icon_skill_passive_2124
 
 ### Skill 7
-- Name: Unstable Strain
+- Name: Flame Forged Blood
 - Type: Passive
-- Effect text: When HP is not full, DMG dealt increases by 10% and DMG taken reduces by 10%.
-- Icon name: Icon_skill_passive_1157
+- Resouce: PP
+- Effect text: When shield arm is destroyed, spend 1 PP after combat to restore the arm to 60% of max HP and gains 3 stacks of [War Flame]. Gains 2 PP at the start of battle
+- Icon name: Icon_skill_pp_1109
 
 ### Skill 8
-- Name: Optimized Program
+- Name: Blazing Barrier
 - Type: Passive
-- Effect text: Increases Critifcal Hit chance and Critical Hit DMG of missile attacks that consume [Effective Data] by 10%.
-- Icon name: Icon_skill_passive_4132
+- Effect text: At the start of battle, if equipped with Large Shield, grants Temporary HP equal to 10% of [Alena]'s body max HP to all bodies of allies within 2 adjacent tiles and applies [Blazing Barrier] to them
+- Icon name: Icon_skill_passive_5286
 
 ## Chip slots setup
 <!-- Red = Attack / Blue = Critical / Yellow = Dodge (verified: Eileen β is red/blue/blue in game = Attack/Critical/Critical in CN data; matches .slot-* colors in css/style.css) -->
@@ -189,28 +190,49 @@ pilot from this template (10103182, Kaidan The Invincible):
 <!-- Alpha and Beta section will be the same with other pilots in same class -->
 ### γ1
 <!-- Name / Effect text / Icon name -->
-- 1:  Tactical Firepower 1 / After the first attack with a Tactical Weapon each turn, [Re-ATK] can be triggered, effective up to 1 time per turn. Unable to move before attacking. / Icon_skill_passive_5023
-- 4:  AP Optimization 4 (same as other Tactician pilots ID 400032)
-- 7:  Strategic Bombing 4 (same as other Tactician pilots ID 400033)
-- 10: Tactical Firepower 2 / When [Tactical Firepower 1] effect triggers, gains 1 AP / Icon_skill_passive_5023
-- 13: Tactical Firepower 3 / When [Tactical Firepower 1] effect triggers, DMG dealt and Critical Hit chance of next active attack increase by 20% / Icon_skill_passive_5023
-- 16: Tactical Firepower 4 / When [Tactical Firepower 1] effect triggers, AP cost of next active attack is reduced by 1 (to a minimum of 1) and Final DMG dealt increases by 15% / Icon_skill_passive_5023
+- Same as Frida's gamma 1 section
 
 ### γ2
-- 1:  Theory Of Everything 1 / At the end of turn, if 10 or more stacks of [Effective Data] were consumed during the turn, restores 1 AP and 1 ammo of Missile Launcher / Icon_skill_passive_5311
-- 4:  AP Optimization 4 (same as other Tactician pilots ID 100042)
-- 7:  Power Innovation 3 (same as other Tactician pilots ID 100043)
-- 10: Theory Of Everything 2 / If an attack consuming [Effective Data] triggers a Critical hit, 3 stacks of [Effective Data] are refunded after the attack / Icon_skill_passive_5311
-- 13: Theory Of Everything 3 / Missile DMG dealt and Hit Rate increase by 15% / Icon_skill_passive_5311
-- 16: Theory Of Everything 4 / When actively attacking, for each 5 stacks of [Effective Data] consumed, Final DMG dealt increases by 7.5% / Icon_skill_passive_5311
+- 1:  Frostfire Sentinel 1 / Flamethrower bullet count +2. This effect is doubled in [Bunker] state / Icon_skill_passive_5315
+- 4: (same as other pilots same occupation)
+- 7: (same as other pilots with same occupation)
+- 10: Theory Of Everything 2 / Attack multiplier of this unit talent's attack and [Link attack] increase by 0.15 / Icon_skill_passive_5315
+- 13: Theory Of Everything 3 / Max HP increase by 15% / Icon_skill_passive_5315
+- 16: Theory Of Everything 4 / After actively attacking with Large Shield, gains 2 stacks of [Flame Surge] and can continue to act with remaining AP. This effect can trigger 1 time per turn. / Icon_skill_passive_5315
 
 
-### Glossary buf 1
+### Glossary buf
 <!-- Pick a random unique ID for this in the <buf> tag and add the tag to all referenced text from this pilot -->
-- Effective Data: Can be comsume to enhance [Niall]'s skill effects. For each stack concumed, the attack's DMG dealt and Critical Hit chance increase by 2.5%, stacking up to 30 times.
-- DMG Immunity: Negates DMG dealt from a single attack. This effect is removed after triggering
-- Percentage HP Reduction: Directly reduces HP by a percentage. This effect is not affected by [Fixed DMG] modifiers or [DMG Immunity] effects.
+- Bunker: Cannot move. Final DMG taken and percentage [Fixed DMG] taken are reduced by 10%. Flamethrower ATK increases by 15%. Flamethrower attack range becomes a fixed-direction 5-tile fan shaped area and all tiles are treated as [Ideal Range]. This state ends automatically if an arm is destroyed
+- War Flame: DMG taken reduces by 3%, stacking up to 6 times. When possessing 4 or more stacks, can use command skill [Rapid Raid].
+- Flame Fusion: While in [Bunker] state, can use Flamethrower to launch [Link Attack], dealing 0.3x DMG. 1 stack is removed upon triggering. Can stack up to 2 times.
+- Thermal Corrosion: When actively attacked, this unit takes [Fixed DMG] equal to 15% of attacking arm max HP to all parts after combat. This effect can trigger up to 5 times and is removed after 1 turn.
+- Blazing Barrier: DMG taken reduces by 10%. When attacked, deals [Fixed DMG] equal to 10% max HP of self to all parts of the attacker and grants [Alena] 1 stack of [War Flame]. This effect is removed after triggering
+- Flame Surge: Reduces AP cost of Flamethrower active attack by 1, to a minimum of 1 AP. Consumes 1 stack upon triggering. Stacks up to 2 times.
 
 ### Glossary skill 1
 <!-- Pick a random unique ID for this in the <skill> tag and add the tag to all referenced text from this pilot -->
 <!-- Also scan the skill text itself and link necessary tags -->
+- Name: Bunker Down
+- AP: 0
+- CD: 1
+- Effect: Enters [Bunker] state. This state is cancelled if arm is destroyed. Attacks can be made in this state. Can use command skill [Disengage].
+- Icon: Icon_skill_order_5169
+
+### Glossary skill 2
+<!-- Pick a random unique ID for this in the <skill> tag and add the tag to all referenced text from this pilot -->
+<!-- Also scan the skill text itself and link necessary tags -->
+- Name: Disengage
+- AP: 0
+- CD: 0
+- Effect: Exits [Bunker] state. Can continue to move with remaining movement
+- Icon: Icon_skill_order_5169
+
+### Glossary skill 3
+<!-- Pick a random unique ID for this in the <skill> tag and add the tag to all referenced text from this pilot -->
+<!-- Also scan the skill text itself and link necessary tags -->
+- Name: Rapid Raid
+- AP: 0
+- CD: 0
+- Effect: Selects an empty tile within 5 adjacent tiles and jumps to it, then trigger [Re-Act]. If in [Bunker] state, exits the state and reset [Bunker Down] CD. This skill can only be used 1 time per turn and when legs are intact.
+- Icon: Icon_skill_order_5170

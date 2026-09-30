@@ -73,10 +73,10 @@ Checklist for whoever (or whichever agent) turns this into the JSON file:
 ## Basics
 
 - Mech ID: <8-digit numeric ID, check `ls data/mechs` for collisions>
-- Mech Name: Prism
-- Type (weight class): Medium
+- Mech Name: Avalanche
+- Type (weight class): Heavy
 - Quality: SSR
-- Game version introduced: 3.4
+- Game version introduced: 3.5
 - Dispatch version: 3.6
 - Flavor text / lore description:
 
@@ -84,59 +84,59 @@ Checklist for whoever (or whichever agent) turns this into the JSON file:
 <!-- icon is prefixed with data/unlisted/mechs/Icon/<Type>/ -->
 <!-- portrait (Raw) is prefixed with data/unlisted/mechs/Raw/<Type>/ -->
 <!-- alternate skins (if any) are prefixed with data/unlisted/mechs/Skins/<Type>/ -->
-- Icon file (all 4 parts share this): Icon_mecha_wap2062.png
-- Portrait/Raw file (Body only): Icon_mecha_wap2062_SN_Raw.png
-- mechaIcon (CDN key, per part, only if a CN CDN asset exists): Icon_wap2062_1
-- lihuiIcon (CDN key, Body only, only if a CN CDN asset exists): icon_lihui_wap2062
+- Icon file (all 4 parts share this): Icon_mecha_wap3034.png
+- Portrait/Raw file (Body only): Icon_mecha_wap3034_SN_Raw.png
+- mechaIcon (CDN key, per part, only if a CN CDN asset exists): Icon_wap3034_1
+- lihuiIcon (CDN key, Body only, only if a CN CDN asset exists): icon_lihui_wap3034
 - Alternate skins (Body only, list each variant token you have a
-  `Img_Skin_wap2062_<variant>.png` file for, or "none"): none
+  `Img_Skin_wap3034_<variant>.png` file for, or "none"): none
 
 ### Body — max level (manji) overrides
-- Durable: 10926
-- Fire: 1255
-- Weight: 290
-- Output: 2880
+- Durable: 13151
+- Fire: 1176
+- Weight: 360
+- Output: 2060
 - Antiriot: 4472
-- Armor: 706
+- Armor: 1412
 
 ### L-Arm — max level (manji) overrides
-- Durable: 6561
-- Fire: 1255
-- Weight: 165
-- Hit: 1794
+- Durable: 7479
+- Fire: 1176
+- Weight: 180
+- Hit: 1672
 
 ### R-Arm — max level (manji) overrides
-- Durable: 6561
-- Fire: 1255
-- Weight: 165
-- Hit: 1794
+- Durable: 7479
+- Fire: 1176
+- Weight: 180
+- Hit: 1672
 
 ### Legs — max level (manji) overrides
-- Durable: 9536
-- Fire: 1255
-- Weight: 210
-- Dodge: 3885
+- Durable: 10732
+- Fire: 1176
+- Weight: 230
+- Dodge: 3287
 - Move: 3
 
 ## Modules
 <!-- Copy this block for each distinct module referenced above. -->
 ### Module 1
-- Name: Refraction Array
+- Name: Roaring Frame
 - Level: 4/4
-- Effect text: When attacking with Tactical weapons, DMG Dealt increases by 4/8/14/20%. When attacking with shoulder-mounted weapons, Critical Hit chance increases by 3/6/10/15% <!-- numbers must be wrapped as <color=#F74848>NUMBER</color>, same convention as pilot skill text, record the different level effect based on the numbers split -->
-- Icon name: Icon_skill_passive_1180
+- Effect text: Max HP increases by 3/6/10/15%. DMG Dealt increases by 5/10/15/25% if no movement was made before the attack. <!-- numbers must be wrapped as <color=#F74848>NUMBER</color>, same convention as pilot skill text, record the different level effect based on the numbers split -->
+- Icon name: Icon_skill_passive_3138
 
 ### Module 2
-- Name: Crit Rate Mod
+- Name: Accuracy Mod
 - Level: 4/4
-- Effect text: Same as others, ID 40024
-- Icon name: Same as others, ID 40024
+- Effect text: Same as others, ID 40014
+- Icon name: Same as others, ID 40014
 
 ### Module 3
-- Name: Last Stand Module
+- Name: Pack Hunt Module
 - Level: 8/8
-- Effect text: When own HP is not full, DMG Dealt increases by 4/6/8/10/14/16/18/24%.\nWhen actively attacking, the attack multiplier increases by 0.025 for each ally without full HP, up to +0.1. This effect is reduced to 1/4 if equipped with Rocket Launcher.<!-- numbers must be wrapped as <color=#F74848>NUMBER</color>, same convention as pilot skill text, record the different level effect based on the numbers split -->
-- Icon name: Icon_entry_10112
+- Effect text: DMG Dealt increases by 3/4/5/6/7/8/9/12%. When there are 2 or more enemy units within attack range, DMG Dealt additionally increases by 1.5/2/2.5/3/3.5/4/4.5/6% for each 1 additional unit, up to 3/4/5/6/7/8/9/12%.\n[Fixed DMG] dealt increases by 25%. When actively attacking, Firepower increases by 2% of current HP.<!-- numbers must be wrapped as <color=#F74848>NUMBER</color>, same convention as pilot skill text, record the different level effect based on the numbers split -->
+- Icon name: Icon_entry_10114
 
 ### Glossary buf 1
 <!-- Pick a random unique ID for this in the <buf> tag and add the tag to all referenced text from this pilot -->

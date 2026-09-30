@@ -36,7 +36,7 @@ var PILOT_RELEASE_ORDER = [
   'Dean', 'Asuka', 'Shinji', 'Rei', 'Cassha', 'Arthur', 'Ophelia', 'Anderson', 'Fregata',
   'Rosa: Judgement', 'Paloma', 'Matilda', 'Rosemary', 'Adele', 'Wyatt', 'Ada', 'Sapientia',
   'Veronica', 'Verna', 'Collin', 'Zoey', 'Wataru', 'Toraoh', 'Martini', 'Lexuan', 'Audrey',
-  'Hailis', 'Maat', 'Hardaway', 'Tang', 'Giselle', 'Bertha', 'Kaidan The Invincible', 'Ann', 'Blackout', 'Niall',
+  'Hailis', 'Maat', 'Hardaway', 'Tang', 'Giselle', 'Bertha', 'Kaidan The Invincible', 'Ann', 'Blackout', 'Niall', 'Alena',
 ];
 
 function pilotReleaseOrder(pilotName) {

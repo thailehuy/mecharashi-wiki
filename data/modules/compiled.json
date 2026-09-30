@@ -1541,108 +1541,6 @@
         "8": "If this unit doesn't move before actively attacking, Crit Rate <color=#F74848>+24%</color>. If a critical hit occurs when attacking, Crit DMG <color=#F74848>+3%</color> after combat. This effect can stack up to a maximum increase of <color=#F74848>15%</color>."
       }
     },
-    "3034": {
-      "name": "Eruption Mod",
-      "icon": "Icon_entry_10086",
-      "category": "GeneralSuit",
-      "maxLevel": 8,
-      "currentLevel": 8,
-      "levels": {
-        "1": "When attacking a target within the attack range of both the held weapon and the backpack weapon, DMG Dealt <color=#F74848>+3%</color>",
-        "2": "When attacking a target within the attack range of both the held weapon and the backpack weapon, DMG Dealt <color=#F74848>+4%</color>",
-        "3": "When attacking a target within the attack range of both the held weapon and the backpack weapon, DMG Dealt <color=#F74848>+6%</color>",
-        "4": "When attacking a target within the attack range of both the held weapon and the backpack weapon, DMG Dealt <color=#F74848>+8%</color>",
-        "5": "When attacking a target within the attack range of both the held weapon and the backpack weapon, DMG Dealt <color=#F74848>+10%</color>",
-        "6": "When attacking a target within the attack range of both the held weapon and the backpack weapon, DMG Dealt <color=#F74848>+12%</color>",
-        "7": "When attacking a target within the attack range of both the held weapon and the backpack weapon, DMG Dealt <color=#F74848>+14%</color>",
-        "8": "When attacking a target within the attack range of both the held weapon and the backpack weapon, DMG Dealt <color=#F74848>+18%</color>;\nEnters the <buf ID=900121>[Restriction Removal]</buf> state, activating the extra module effect integrated within the part."
-      }
-    },
-    "3040": {
-      "name": "Ravage Mod",
-      "icon": "Icon_entry_10091",
-      "category": "GeneralSuit",
-      "maxLevel": 8,
-      "currentLevel": 8,
-      "levels": {
-        "1": "When attacking a target on any terrain effect, DMG <color=#F74848>+3%</color>.",
-        "2": "When attacking a target on any terrain effect, DMG <color=#F74848>+4%</color>.",
-        "3": "When attacking a target on any terrain effect, DMG <color=#F74848>+6%</color>.",
-        "4": "When attacking a target on any terrain effect, DMG <color=#F74848>+8%</color>.",
-        "5": "When attacking a target on any terrain effect, DMG <color=#F74848>+10%</color>.",
-        "6": "When attacking a target on any terrain effect, DMG <color=#F74848>+12%</color>.",
-        "7": "When attacking a target on any terrain effect, DMG <color=#F74848>+14%</color>.",
-        "8": "When attacking a target on any terrain effect, DMG <color=#F74848>+18%</color>. <buf ID=900017>[Fixed DMG]</buf> dealt is increased by <color=#F74848>25%</color>."
-      }
-    },
-    "3033": {
-      "name": "Sentinel Mod",
-      "icon": "Icon_entry_10084",
-      "category": "GeneralSuit",
-      "maxLevel": 8,
-      "currentLevel": 8,
-      "levels": {
-        "1": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, DMG <color=#F74848>+3%</color>.",
-        "2": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, DMG <color=#F74848>+4%</color>.",
-        "3": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, DMG <color=#F74848>+6%</color>.",
-        "4": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, DMG <color=#F74848>+8%</color>.",
-        "5": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, DMG <color=#F74848>+10%</color>.",
-        "6": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, DMG <color=#F74848>+12%</color>.",
-        "7": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, DMG <color=#F74848>+14%</color>.",
-        "8": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, DMG <color=#F74848>+18%</color>.\nWhen in combat with a target at <buf ID=900011>[Ideal Range]</buf>, Bullets <color=#F74848>+1</color>."
-      }
-    },
-    "3041": {
-      "name": "Augmenter",
-      "icon": "Icon_entry_10093",
-      "category": "GeneralSuit",
-      "maxLevel": 8,
-      "currentLevel": 8,
-      "levels": {
-        "1": "When attacking a part with HP above <color=#F74848>60%</color>, DMG <color=#F74848>+3%</color>.",
-        "2": "When attacking a part with HP above <color=#F74848>60%</color>, DMG <color=#F74848>+4%</color>.",
-        "3": "When attacking a part with HP above <color=#F74848>60%</color>, DMG <color=#F74848>+6%</color>.",
-        "4": "When attacking a part with HP above <color=#F74848>60%</color>, DMG <color=#F74848>+8%</color>.",
-        "5": "When attacking a part with HP above <color=#F74848>60%</color>, DMG <color=#F74848>+10%</color>.",
-        "6": "When attacking a part with HP above <color=#F74848>60%</color>, DMG <color=#F74848>+12%</color>.",
-        "7": "When attacking a part with HP above <color=#F74848>60%</color>, DMG <color=#F74848>+14%</color>.",
-        "8": "When attacking a part with HP above <color=#F74848>60%</color>, DMG <color=#F74848>+18%</color>. CP <color=#F74848>+3</color> in the lowest unlocked Neural Drive Sector."
-      }
-    },
-    "3036": {
-      "name": "Bombardment Mod",
-      "icon": "Icon_entry_10087",
-      "category": "GeneralSuit",
-      "maxLevel": 8,
-      "currentLevel": 8,
-      "levels": {
-        "1": "When executing Code attacks, DMG <color=#F74848>+3%</color>.",
-        "2": "When executing Code attacks, DMG <color=#F74848>+4%</color>.",
-        "3": "When executing Code attacks, DMG <color=#F74848>+6%</color>.",
-        "4": "When executing Code attacks, DMG <color=#F74848>+8%</color>.",
-        "5": "When executing Code attacks, DMG <color=#F74848>+10%</color>.",
-        "6": "When executing Code attacks, DMG <color=#F74848>+12%</color>.",
-        "7": "When executing Code attacks, DMG <color=#F74848>+14%</color>.",
-        "8": "When executing Code attacks, DMG <color=#F74848>+18%</color>.\nWhen actively attacking with a Tactical Weapon, if <color=#F74848>3</color> or more targets are hit, randomly reloads <color=#F74848>1</color> Ammo after combat, up to <color=#F74848>1</color> time per turn."
-      }
-    },
-    "3045": {
-      "name": "Support Mod",
-      "icon": "Icon_entry_10097",
-      "category": "GeneralSuit",
-      "maxLevel": 8,
-      "currentLevel": 8,
-      "levels": {
-        "1": "When attacking, if there are allies within <color=#F74848>4</color> adjacent tiles, DMG dealt increases by <color=#F74848>3%</color>.",
-        "2": "When attacking, if there are allies within <color=#F74848>4</color> adjacent tiles, DMG dealt increases by <color=#F74848>4%</color>.",
-        "3": "When attacking, if there are allies within <color=#F74848>4</color> adjacent tiles, DMG dealt increases by <color=#F74848>6%</color>.",
-        "4": "When attacking, if there are allies within <color=#F74848>4</color> adjacent tiles, DMG dealt increases by <color=#F74848>8%</color>.",
-        "5": "When attacking, if there are allies within <color=#F74848>4</color> adjacent tiles, DMG dealt increases by <color=#F74848>10%</color>.",
-        "6": "When attacking, if there are allies within <color=#F74848>4</color> adjacent tiles, DMG dealt increases by <color=#F74848>12%</color>.",
-        "7": "When attacking, if there are allies within <color=#F74848>4</color> adjacent tiles, DMG dealt increases by <color=#F74848>14%</color>.",
-        "8": "When attacking, if there are allies within <color=#F74848>4</color> adjacent tiles, DMG dealt increases by <color=#F74848>18%</color>.\nAt the end of turn, if <color=#F74848>2</color> or more code or attack skills are used this turn, recovers <color=#F74848>1</color> AP."
-      }
-    },
     "3027": {
       "name": "Maverick Mod",
       "icon": "Icon_skill_passive_1106",
@@ -1675,6 +1573,108 @@
         "6": "When in combat against enemies within <color=#F74848>2</color> tiles, DMG <color=#F74848>+12%</color>.",
         "7": "When in combat against enemies within <color=#F74848>2</color> tiles, DMG <color=#F74848>+14%</color>.",
         "8": "When in combat against enemies within <color=#F74848>2</color> tiles, DMG <color=#F74848>+18%</color>.\nWhen initiating combat, if the target is hit, steals <color=#F74848>1</color> AP from the target after combat. Can only trigger <color=#F74848>1</color> time per turn."
+      }
+    },
+    "3040": {
+      "name": "Ravage Mod",
+      "icon": "Icon_entry_10091",
+      "category": "GeneralSuit",
+      "maxLevel": 8,
+      "currentLevel": 8,
+      "levels": {
+        "1": "When attacking a target on any terrain effect, DMG <color=#F74848>+3%</color>.",
+        "2": "When attacking a target on any terrain effect, DMG <color=#F74848>+4%</color>.",
+        "3": "When attacking a target on any terrain effect, DMG <color=#F74848>+6%</color>.",
+        "4": "When attacking a target on any terrain effect, DMG <color=#F74848>+8%</color>.",
+        "5": "When attacking a target on any terrain effect, DMG <color=#F74848>+10%</color>.",
+        "6": "When attacking a target on any terrain effect, DMG <color=#F74848>+12%</color>.",
+        "7": "When attacking a target on any terrain effect, DMG <color=#F74848>+14%</color>.",
+        "8": "When attacking a target on any terrain effect, DMG <color=#F74848>+18%</color>. <buf ID=900017>[Fixed DMG]</buf> dealt is increased by <color=#F74848>25%</color>."
+      }
+    },
+    "3045": {
+      "name": "Support Mod",
+      "icon": "Icon_entry_10097",
+      "category": "GeneralSuit",
+      "maxLevel": 8,
+      "currentLevel": 8,
+      "levels": {
+        "1": "When attacking, if there are allies within <color=#F74848>4</color> adjacent tiles, DMG dealt increases by <color=#F74848>3%</color>.",
+        "2": "When attacking, if there are allies within <color=#F74848>4</color> adjacent tiles, DMG dealt increases by <color=#F74848>4%</color>.",
+        "3": "When attacking, if there are allies within <color=#F74848>4</color> adjacent tiles, DMG dealt increases by <color=#F74848>6%</color>.",
+        "4": "When attacking, if there are allies within <color=#F74848>4</color> adjacent tiles, DMG dealt increases by <color=#F74848>8%</color>.",
+        "5": "When attacking, if there are allies within <color=#F74848>4</color> adjacent tiles, DMG dealt increases by <color=#F74848>10%</color>.",
+        "6": "When attacking, if there are allies within <color=#F74848>4</color> adjacent tiles, DMG dealt increases by <color=#F74848>12%</color>.",
+        "7": "When attacking, if there are allies within <color=#F74848>4</color> adjacent tiles, DMG dealt increases by <color=#F74848>14%</color>.",
+        "8": "When attacking, if there are allies within <color=#F74848>4</color> adjacent tiles, DMG dealt increases by <color=#F74848>18%</color>.\nAt the end of turn, if <color=#F74848>2</color> or more code or attack skills are used this turn, recovers <color=#F74848>1</color> AP."
+      }
+    },
+    "3041": {
+      "name": "Augmenter",
+      "icon": "Icon_entry_10093",
+      "category": "GeneralSuit",
+      "maxLevel": 8,
+      "currentLevel": 8,
+      "levels": {
+        "1": "When attacking a part with HP above <color=#F74848>60%</color>, DMG <color=#F74848>+3%</color>.",
+        "2": "When attacking a part with HP above <color=#F74848>60%</color>, DMG <color=#F74848>+4%</color>.",
+        "3": "When attacking a part with HP above <color=#F74848>60%</color>, DMG <color=#F74848>+6%</color>.",
+        "4": "When attacking a part with HP above <color=#F74848>60%</color>, DMG <color=#F74848>+8%</color>.",
+        "5": "When attacking a part with HP above <color=#F74848>60%</color>, DMG <color=#F74848>+10%</color>.",
+        "6": "When attacking a part with HP above <color=#F74848>60%</color>, DMG <color=#F74848>+12%</color>.",
+        "7": "When attacking a part with HP above <color=#F74848>60%</color>, DMG <color=#F74848>+14%</color>.",
+        "8": "When attacking a part with HP above <color=#F74848>60%</color>, DMG <color=#F74848>+18%</color>. CP <color=#F74848>+3</color> in the lowest unlocked Neural Drive Sector."
+      }
+    },
+    "3033": {
+      "name": "Sentinel Mod",
+      "icon": "Icon_entry_10084",
+      "category": "GeneralSuit",
+      "maxLevel": 8,
+      "currentLevel": 8,
+      "levels": {
+        "1": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, DMG <color=#F74848>+3%</color>.",
+        "2": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, DMG <color=#F74848>+4%</color>.",
+        "3": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, DMG <color=#F74848>+6%</color>.",
+        "4": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, DMG <color=#F74848>+8%</color>.",
+        "5": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, DMG <color=#F74848>+10%</color>.",
+        "6": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, DMG <color=#F74848>+12%</color>.",
+        "7": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, DMG <color=#F74848>+14%</color>.",
+        "8": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, DMG <color=#F74848>+18%</color>.\nWhen in combat with a target at <buf ID=900011>[Ideal Range]</buf>, Bullets <color=#F74848>+1</color>."
+      }
+    },
+    "3036": {
+      "name": "Bombardment Mod",
+      "icon": "Icon_entry_10087",
+      "category": "GeneralSuit",
+      "maxLevel": 8,
+      "currentLevel": 8,
+      "levels": {
+        "1": "When executing Code attacks, DMG <color=#F74848>+3%</color>.",
+        "2": "When executing Code attacks, DMG <color=#F74848>+4%</color>.",
+        "3": "When executing Code attacks, DMG <color=#F74848>+6%</color>.",
+        "4": "When executing Code attacks, DMG <color=#F74848>+8%</color>.",
+        "5": "When executing Code attacks, DMG <color=#F74848>+10%</color>.",
+        "6": "When executing Code attacks, DMG <color=#F74848>+12%</color>.",
+        "7": "When executing Code attacks, DMG <color=#F74848>+14%</color>.",
+        "8": "When executing Code attacks, DMG <color=#F74848>+18%</color>.\nWhen actively attacking with a Tactical Weapon, if <color=#F74848>3</color> or more targets are hit, randomly reloads <color=#F74848>1</color> Ammo after combat, up to <color=#F74848>1</color> time per turn."
+      }
+    },
+    "3034": {
+      "name": "Eruption Mod",
+      "icon": "Icon_entry_10086",
+      "category": "GeneralSuit",
+      "maxLevel": 8,
+      "currentLevel": 8,
+      "levels": {
+        "1": "When attacking a target within the attack range of both the held weapon and the backpack weapon, DMG Dealt <color=#F74848>+3%</color>",
+        "2": "When attacking a target within the attack range of both the held weapon and the backpack weapon, DMG Dealt <color=#F74848>+4%</color>",
+        "3": "When attacking a target within the attack range of both the held weapon and the backpack weapon, DMG Dealt <color=#F74848>+6%</color>",
+        "4": "When attacking a target within the attack range of both the held weapon and the backpack weapon, DMG Dealt <color=#F74848>+8%</color>",
+        "5": "When attacking a target within the attack range of both the held weapon and the backpack weapon, DMG Dealt <color=#F74848>+10%</color>",
+        "6": "When attacking a target within the attack range of both the held weapon and the backpack weapon, DMG Dealt <color=#F74848>+12%</color>",
+        "7": "When attacking a target within the attack range of both the held weapon and the backpack weapon, DMG Dealt <color=#F74848>+14%</color>",
+        "8": "When attacking a target within the attack range of both the held weapon and the backpack weapon, DMG Dealt <color=#F74848>+18%</color>;\nEnters the <buf ID=900121>[Restriction Removal]</buf> state, activating the extra module effect integrated within the part."
       }
     },
     "9010": {
@@ -1795,6 +1795,36 @@
         "6": "When own HP is not full, DMG dealt increases by <color=#F74848>16%</color>.",
         "7": "When own HP is not full, DMG dealt increases by <color=#F74848>18%</color>.",
         "8": "When own HP is not full, DMG dealt increases by <color=#F74848>24%</color>.\nWhen actively attacking, the attack multiplier increases by <color=#F74848>0.025</color> for each ally without full HP, up to <color=#F74848>+0.1</color>. This effect is reduced to <color=#F74848>1/4</color> if equipped with Rocket Launcher."
+      }
+    },
+    "9023": {
+      "name": "Roaring Frame",
+      "icon": "Icon_skill_passive_3138",
+      "category": "GeneralSuit",
+      "maxLevel": 4,
+      "currentLevel": 4,
+      "levels": {
+        "1": "Max HP increases by <color=#F74848>3%</color>. DMG dealt increases by <color=#F74848>5%</color> if no movement was made before the attack.",
+        "2": "Max HP increases by <color=#F74848>6%</color>. DMG dealt increases by <color=#F74848>10%</color> if no movement was made before the attack.",
+        "3": "Max HP increases by <color=#F74848>10%</color>. DMG dealt increases by <color=#F74848>15%</color> if no movement was made before the attack.",
+        "4": "Max HP increases by <color=#F74848>15%</color>. DMG dealt increases by <color=#F74848>25%</color> if no movement was made before the attack."
+      }
+    },
+    "9033": {
+      "name": "Pack Hunt Module",
+      "icon": "Icon_entry_10114",
+      "category": "GeneralSuit",
+      "maxLevel": 8,
+      "currentLevel": 8,
+      "levels": {
+        "1": "DMG dealt increases by <color=#F74848>3%</color>. When there are <color=#F74848>2</color> or more enemy units within attack range, DMG dealt additionally increases by <color=#F74848>1.5%</color> for each <color=#F74848>1</color> additional unit, up to <color=#F74848>3%</color>.",
+        "2": "DMG dealt increases by <color=#F74848>4%</color>. When there are <color=#F74848>2</color> or more enemy units within attack range, DMG dealt additionally increases by <color=#F74848>2%</color> for each <color=#F74848>1</color> additional unit, up to <color=#F74848>4%</color>.",
+        "3": "DMG dealt increases by <color=#F74848>5%</color>. When there are <color=#F74848>2</color> or more enemy units within attack range, DMG dealt additionally increases by <color=#F74848>2.5%</color> for each <color=#F74848>1</color> additional unit, up to <color=#F74848>5%</color>.",
+        "4": "DMG dealt increases by <color=#F74848>6%</color>. When there are <color=#F74848>2</color> or more enemy units within attack range, DMG dealt additionally increases by <color=#F74848>3%</color> for each <color=#F74848>1</color> additional unit, up to <color=#F74848>6%</color>.",
+        "5": "DMG dealt increases by <color=#F74848>7%</color>. When there are <color=#F74848>2</color> or more enemy units within attack range, DMG dealt additionally increases by <color=#F74848>3.5%</color> for each <color=#F74848>1</color> additional unit, up to <color=#F74848>7%</color>.",
+        "6": "DMG dealt increases by <color=#F74848>8%</color>. When there are <color=#F74848>2</color> or more enemy units within attack range, DMG dealt additionally increases by <color=#F74848>4%</color> for each <color=#F74848>1</color> additional unit, up to <color=#F74848>8%</color>.",
+        "7": "DMG dealt increases by <color=#F74848>9%</color>. When there are <color=#F74848>2</color> or more enemy units within attack range, DMG dealt additionally increases by <color=#F74848>4.5%</color> for each <color=#F74848>1</color> additional unit, up to <color=#F74848>9%</color>.",
+        "8": "DMG dealt increases by <color=#F74848>12%</color>. When there are <color=#F74848>2</color> or more enemy units within attack range, DMG dealt additionally increases by <color=#F74848>6%</color> for each <color=#F74848>1</color> additional unit, up to <color=#F74848>12%</color>.\n<buf ID=900017>[Fixed DMG]</buf> dealt increases by <color=#F74848>25%</color>. When actively attacking, Firepower increases by <color=#F74848>2%</color> of current HP."
       }
     }
   }
