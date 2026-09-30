@@ -73,10 +73,10 @@ Checklist for whoever (or whichever agent) turns this into the JSON file:
 ## Basics
 
 - Mech ID: <8-digit numeric ID, check `ls data/mechs` for collisions>
-- Mech Name: Nephthys
-- Type (weight class): Medium
+- Mech Name: Nidhogg
+- Type (weight class): Heavy
 - Quality: SSR
-- Game version introduced: 3.3
+- Game version introduced: 3.4
 - Dispatch version: 3.6
 - Flavor text / lore description:
 
@@ -84,59 +84,59 @@ Checklist for whoever (or whichever agent) turns this into the JSON file:
 <!-- icon is prefixed with data/unlisted/mechs/Icon/<Type>/ -->
 <!-- portrait (Raw) is prefixed with data/unlisted/mechs/Raw/<Type>/ -->
 <!-- alternate skins (if any) are prefixed with data/unlisted/mechs/Skins/<Type>/ -->
-- Icon file (all 4 parts share this): Icon_mecha_wap2040.png
-- Portrait/Raw file (Body only): Icon_mecha_wap2040_SN_Raw.png
-- mechaIcon (CDN key, per part, only if a CN CDN asset exists): Icon_wap2040_1
-- lihuiIcon (CDN key, Body only, only if a CN CDN asset exists): icon_lihui_wap2040
+- Icon file (all 4 parts share this): Icon_mecha_wap3047.png
+- Portrait/Raw file (Body only): Icon_mecha_wap3047_SN_Raw.png
+- mechaIcon (CDN key, per part, only if a CN CDN asset exists): Icon_wap3047_1
+- lihuiIcon (CDN key, Body only, only if a CN CDN asset exists): icon_lihui_wap3047
 - Alternate skins (Body only, list each variant token you have a
-  `Img_Skin_wap2040_<variant>.png` file for, or "none"): none
+  `Img_Skin_wap3047_<variant>.png` file for, or "none"): none
 
 ### Body — max level (manji) overrides
-- Durable: 12400
-- Armor: 470
-- Fire: 1245
-- Output: 1970
-- Weight: 280
+- Durable: 13067
+- Fire: 1166
+- Weight: 370
+- Output: 2090
 - Antiriot: 4472
+- Armor: 1412
 
 ### L-Arm — max level (manji) overrides
-- Durable: 6756
-- Weight: 170
-- Fire: 1245
-- Hit: 1794
+- Durable: 6645
+- Fire: 1166
+- Weight: 175
+- Hit: 1852
 
 ### R-Arm — max level (manji) overrides
-- Durable: 6756
-- Weight: 170
-- Fire: 1245
-- Hit: 1794
+- Durable: 6645
+- Fire: 1166
+- Weight: 175
+- Hit: 1852
 
 ### Legs — max level (manji) overrides
-- Durable: 9731
-- Weight: 200
-- Fire: 1245
-- Dodge: 3885
+- Durable: 19732
+- Fire: 1166
+- Weight: 220
+- Dodge: 3287
 - Move: 3
 
 ## Modules
 <!-- Copy this block for each distinct module referenced above. -->
 ### Module 1
-- Name: Deep Linker
+- Name: Doomsday Core
 - Level: 4/4
-- Effect text: DMG dealt increases by 3/6/10/15%. For each 1 debuff applied, DMG dealt additionally increases by 2/3/3/4%, stacking up to 3/3/5/5 times, lasting for 2 turns. <!-- numbers must be wrapped as <color=#F74848>NUMBER</color>, same convention as pilot skill text, record the different level effect based on the numbers split -->
-- Icon name: Icon_skill_passive_1146
+- Effect text: Reduces DMG taken by 3/6/10/15% when attacked by enemies afflicted with debuffs. DMG Dealth increases by 3/6/10/15% when attacking enemies afflicted with debuffs. DMG dealt additionally increases by 1/2/2/3% for each 1 debuff present, up to 6/12/20/30%. <!-- numbers must be wrapped as <color=#F74848>NUMBER</color>, same convention as pilot skill text, record the different level effect based on the numbers split -->
+- Icon name: Icon_skill_passive_1179
 
 ### Module 2
-- Name: Crit DMG Mod
+- Name: HP Mod
 - Level: 4/4
-- Effect text: Same as others, ID 40034
-- Icon name: Same as others, ID 40034
+- Effect text: Same as others, ID 40054
+- Icon name: Same as others, ID 40054
 
 ### Module 3
-- Name: Momentum Module
+- Name: Force Field Module
 - Level: 8/8
-- Effect text: DMG dealt increases by 2/3/4/5/7/8/9/12%. DMG dealt additionally increases by 0.5/0.5/0.5/1/1/1/1.5/1.5% for each 1 debuff the enemy team carries, up to 2/3/4/5/7/8/9/12%.\nWhen initiating combat, there is a 25% chance to trigger [Flurry Strike] following the enemy's attack, dealing 0.25x DMG. This trigger chance increases by 25% for each debuff the target carries before combat.<!-- numbers must be wrapped as <color=#F74848>NUMBER</color>, same convention as pilot skill text, record the different level effect based on the numbers split -->
-- Icon name: Icon_entry_10110
+- Effect text: When attacking a target carrying debuffs, all intact parts gain Temporary HP equal to 0.5/0.5/0.5/1/1/1/1.5/1.5% of max HP, up to a maximum of 4/6/8/10/14/16/18/24% of mmax HP.\nReduces the skill multiplier of all enemies within 3 adjacent tile by 0.1 (this effect is reduced to 1/4 against Rocket weapons). For every affected target within range, this unit's skill multiplier increases by 0.025, up to a maximum of 0.1.<!-- numbers must be wrapped as <color=#F74848>NUMBER</color>, same convention as pilot skill text, record the different level effect based on the numbers split -->
+- Icon name: Icon_entry_10111
 
 ### Glossary buf 1
 <!-- Pick a random unique ID for this in the <buf> tag and add the tag to all referenced text from this pilot -->

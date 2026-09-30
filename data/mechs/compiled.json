@@ -4393,6 +4393,100 @@
       "enTranslation": true
     },
     {
+      "ID": "30380103",
+      "name": "Nidhogg",
+      "type": "Heavy",
+      "quality": "SSR",
+      "icon": "Icon_mecha_wap3047",
+      "mechaIcon": "Icon_wap3047_1",
+      "lihuiIcon": "icon_lihui_wap3047",
+      "introduce": "",
+      "output": "2090",
+      "durable": "470",
+      "Armor": "144",
+      "fire": "119",
+      "Antiriot": "770",
+      "parts": [
+        {
+          "position": "Body",
+          "aircraftWeight": "370",
+          "maxHp": "13067",
+          "Armor": "1412",
+          "Hit": null,
+          "Dodge": null,
+          "Antiriot": "4472"
+        },
+        {
+          "position": "L-Arm",
+          "aircraftWeight": "175",
+          "maxHp": "6645",
+          "Armor": "941",
+          "Hit": "1852",
+          "Dodge": null,
+          "Antiriot": null
+        },
+        {
+          "position": "R-Arm",
+          "aircraftWeight": "175",
+          "maxHp": "6645",
+          "Armor": "941",
+          "Hit": "1852",
+          "Dodge": null,
+          "Antiriot": null
+        },
+        {
+          "position": "Legs",
+          "aircraftWeight": "220",
+          "maxHp": "19732",
+          "Armor": "941",
+          "Hit": null,
+          "Dodge": "3287",
+          "Antiriot": null
+        }
+      ],
+      "manjiFirepower": "1166",
+      "modules": [
+        {
+          "ID": "90214",
+          "name": "Doomsday Core",
+          "SpecificEffects": "Reduces DMG taken by <color=#F74848>15%</color> when attacked by enemies afflicted with debuffs. DMG dealt increases by <color=#F74848>15%</color> when attacking enemies afflicted with debuffs. DMG dealt additionally increases by <color=#F74848>3%</color> for each <color=#F74848>1</color> debuff present, up to <color=#F74848>30%</color>.",
+          "BufCarried": "902141",
+          "SkillIcon": "Icon_skill_passive_1179",
+          "icon": "Icon_skill_passive_1179",
+          "Status": 1,
+          "weight": 1,
+          "id": "9021",
+          "level": 4
+        },
+        {
+          "ID": "40054",
+          "name": "HP Mod",
+          "SpecificEffects": "HP <color=#F74848>+10%</color>.",
+          "BufCarried": "400541",
+          "SkillIcon": "Icon_entry_40051",
+          "icon": "Icon_entry_40051",
+          "Status": 1,
+          "weight": 2,
+          "id": "4005",
+          "level": 4
+        },
+        {
+          "ID": "90318",
+          "name": "Force Field Module",
+          "SpecificEffects": "When attacking a target carrying debuffs, all intact parts gain Temporary HP equal to <color=#F74848>1.5%</color> of max HP, up to a maximum of <color=#F74848>24%</color> of max HP.\nReduces the skill multiplier of all enemies within <color=#F74848>3</color> adjacent tiles by <color=#F74848>0.1</color> (this effect is reduced to <color=#F74848>1/4</color> against Rocket weapons). For every affected target within range, this unit's skill multiplier increases by <color=#F74848>0.025</color>, up to a maximum of <color=#F74848>0.1</color>.",
+          "BufCarried": "903181",
+          "SkillIcon": "Icon_entry_10111",
+          "icon": "Icon_entry_10111",
+          "Status": 1,
+          "weight": 3,
+          "id": "9031",
+          "level": 8
+        }
+      ],
+      "version": "3.4",
+      "enTranslation": true
+    },
+    {
       "ID": "20570103",
       "name": "Nightglow",
       "type": "Medium",
@@ -4815,7 +4909,7 @@
           },
           "ID": "30068",
           "name": "Accumulator Mod",
-          "SpecificEffects": "Before actively attacking, if distance moved is <color=#F74848>2</color> tiles or less, DMG +<color=#F74848>18%</color>;\nAt end of action, immediately gains <color=#F74848>1</color> AP. This effect has a <color=#F74848>1</color>-turn trigger interval.",
+          "SpecificEffects": "Before actively attacking, if distance moved is <color=#F74848>2</color> tiles or less, DMG <color=#F74848>+18%</color>;\nAt end of action, immediately gain <color=#F74848>1</color> AP. This effect has a <color=#F74848>1</color>-turn trigger interval.",
           "BufCarried": "300681/300683",
           "SkillIcon": "Icon_entry_10052",
           "icon": "Icon_entry_10052",

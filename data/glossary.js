@@ -1343,6 +1343,42 @@ window.GlossaryData = {
     "160906": {
       "name": "Electric Eel Support",
       "effect": "After initiating combat, extends the remaining duration of maximum <color=#F74848>5</color> debuffs on the target by <color=#F74848>1</color> turn. Also applies <color=#F74848>1</color> stack of <buf ID=530572>[Instability III]</buf> to the target. This unit is considered a member of Electric Eel for <color=#F74848>2</color> turns."
+    },
+    "167900": {
+      "name": "Fate Hunt",
+      "effect": "Active attacks cannot be retaliated. Hit Rate increases by <color=#F74848>15%</color>. After attacking, restores HP equal to <color=#F74848>25%</color> of DMG dealt to all intact parts. This effect is removed at the start of next turn."
+    },
+    "167901": {
+      "name": "Chain Execution",
+      "effect": "After actively attacking, can launch a <buf ID=167902>[Chain Attack]</buf>, allowing movement of <color=#F74848>1</color> tile before attacking. This effect can trigger <color=#F74848>1</color> time per turn and is removed at the start of next turn."
+    },
+    "167902": {
+      "name": "Chain Attack",
+      "effect": "Allows launching another active attack."
+    },
+    "167903": {
+      "name": "Assault Field",
+      "effect": "An aura around self which reduces DMG dealt of enemy units within <color=#F74848>3</color> adjacent tiles by <color=#F74848>10%</color> and increases the movement cost to exit <buf ID=167903>[Assault Field]</buf> by <color=#F74848>2</color>. If an enemy remains within <buf ID=167903>[Assault Field]</buf> after action, uses Machine Gun to launch a <buf ID=167904>[Suppression Attack]</buf> dealing <color=#F74848>0.4</color>x DMG and inflicts a random debuff on the target for <color=#F74848>2</color> turns (this effect can trigger <color=#F74848>3</color> times per turn)."
+    },
+    "167904": {
+      "name": "Suppression Attack",
+      "effect": "Launches an attack against an enemy after they complete their action."
+    },
+    "167905": {
+      "name": "Rampage",
+      "effect": "Final DMG dealt increases by <color=#F74848>30%</color>. This effect is removed at the start of next turn."
+    },
+    "167906": {
+      "name": "Undying",
+      "effect": "Body is immune to <buf ID=900109>[Execution]</buf> effect. When the Body suffers overdamage, triggers <buf ID=900003>[Guts]</buf>, locking at <color=#F74848>1</color> HP. Consumes <color=#F74848>1</color> stack upon activation. Stacks up to a maximum of <color=#F74848>3</color> times."
+    },
+    "167907": {
+      "name": "Move Again",
+      "effect": "Can move again with remaining movement. Cannot attack after moving."
+    },
+    "167908": {
+      "name": "Re-Act Prohibition",
+      "effect": "Cannot trigger <buf ID=900004>[Re-ATK]</buf> or <buf ID=900005>[Re-Act]</buf>."
     }
   },
   "skill": {
@@ -1918,6 +1954,13 @@ window.GlossaryData = {
       "Ap": "0",
       "icon": "Icon_skill_order_5137",
       "effect": "Switches between <buf ID=160900>[GKD Stance]</buf> or <buf ID=160901>[Electric Eel Stance]</buf>."
+    },
+    "167950": {
+      "name": "Limit Break",
+      "Ap": "3",
+      "CD": "1",
+      "icon": "Icon_skill_order_1165",
+      "effect": "If not affected by <buf ID=167900>[Fate Hunt]</buf>, this skill's AP cost is reduced by <color=#F74848>3</color>, reset after use. This skill can only be activated when legs are intact. Jumps to an empty tile within <color=#F74848>4</color> adjacent tiles and gains <buf ID=167900>[Fate Hunt]</buf>, <buf ID=167905>[Rampage]</buf> and <buf ID=167901>[Chain Execution]</buf>. The trigger count for <buf ID=167904>[Suppression Attack]</buf> increases by <color=#F74848>3</color>, and remaining movement can be used to launch a <buf ID=167902>[Chain Attack]</buf>. This skill can be used <color=#F74848>1</color> time per turn."
     }
   },
   "terrain": {

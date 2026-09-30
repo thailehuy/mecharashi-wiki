@@ -230,6 +230,51 @@ MANUAL_MODULE_LEVELS = {
             ], 1)
         },
     },
+    # Doomsday Core (Nidhogg, family 9021): the intake gave a 4-level split
+    # for all three numbers (DMG taken/dealt %, per-debuff DMG %, and cap).
+    '9021': {
+        'name': 'Doomsday Core',
+        'icon': 'Icon_skill_passive_1179',
+        'category': 'GeneralSuit',
+        'maxLevel': 4,
+        'currentLevel': 4,
+        'levels': {
+            str(i): (
+                f'Reduces DMG taken by <color=#F74848>{main}%</color> when attacked by enemies afflicted with debuffs. '
+                f'DMG dealt increases by <color=#F74848>{main}%</color> when attacking enemies afflicted with debuffs. '
+                f'DMG dealt additionally increases by <color=#F74848>{per}%</color> for each <color=#F74848>1</color> debuff present, '
+                f'up to <color=#F74848>{cap}%</color>.'
+            )
+            for i, (main, per, cap) in enumerate([
+                ('3', '1', '6'), ('6', '2', '12'), ('10', '2', '20'), ('15', '3', '30'),
+            ], 1)
+        },
+    },
+    # Force Field Module (Nidhogg, family 9031): the intake gave the full
+    # 8-level ladder for the Temporary HP gain and its cap; the skill
+    # multiplier aura clause only unlocks at max level (8).
+    '9031': {
+        'name': 'Force Field Module',
+        'icon': 'Icon_entry_10111',
+        'category': 'GeneralSuit',
+        'maxLevel': 8,
+        'currentLevel': 8,
+        'levels': {
+            str(i): (
+                f'When attacking a target carrying debuffs, all intact parts gain Temporary HP equal to '
+                f'<color=#F74848>{gain}%</color> of max HP, up to a maximum of <color=#F74848>{cap}%</color> of max HP.'
+            ) + ('' if i < 8 else (
+                '\nReduces the skill multiplier of all enemies within <color=#F74848>3</color> adjacent tiles by '
+                '<color=#F74848>0.1</color> (this effect is reduced to <color=#F74848>1/4</color> against Rocket weapons). '
+                "For every affected target within range, this unit's skill multiplier increases by "
+                '<color=#F74848>0.025</color>, up to a maximum of <color=#F74848>0.1</color>.'
+            ))
+            for i, (gain, cap) in enumerate([
+                ('0.5', '4'), ('0.5', '6'), ('0.5', '8'), ('1', '10'),
+                ('1', '14'), ('1', '16'), ('1.5', '18'), ('1.5', '24'),
+            ], 1)
+        },
+    },
 }
 
 
@@ -321,7 +366,7 @@ def build_local_index():
     equipped in-game (local ID = family code + level digit), its raw CN name,
     and (if translated) its English name/effect at that specific level."""
     raw_files = [
-        f for f in glob.glob(os.path.join(MECHS_DIR, '[0-9]*.json'))
+        f for f in sorted(glob.glob(os.path.join(MECHS_DIR, '[0-9]*.json')))
         if not f.endswith('-translation.json')
     ]
     local_modules = {}
@@ -354,7 +399,7 @@ def build_local_index():
                     }
 
     en_by_local_id = {}
-    for tf in glob.glob(os.path.join(MECHS_DIR, '*-translation.json')):
+    for tf in sorted(glob.glob(os.path.join(MECHS_DIR, '*-translation.json'))):
         d = json.load(open(tf, encoding='utf-8'))
         for lid, mod in (d.get('modules') or {}).items():
             if lid not in en_by_local_id:
