@@ -1,1 +1,189 @@
-{"data":{"data":[{"ID":"20630103","name":"Prism","position":"Body","type":"Medium","quality":"SSR","aircraftWeight":"290","durable":"446","Armor":"941","fire":"127","Antiriot":"770","output":"2880","Interface":"Ⅰ型接口","ModuleCarried":[{"ID":"90224","name":"Refraction Array","SpecificEffects":"When attacking with Tactical weapons, DMG dealt increases by <color=#F74848>20%</color>. When attacking with shoulder-mounted weapons, Critical Hit chance increases by <color=#F74848>15%</color>.","BufCarried":"902241","SkillIcon":"Icon_skill_passive_1180","icon":"Icon_skill_passive_1180","Status":1,"weight":1,"id":"9022","level":4},{"ID":"40024","name":"Crit Rate Mod","SpecificEffects":"Crit Rate <color=#F74848>+10%</color>.","BufCarried":"400241","SkillIcon":"Icon_entry_40021","icon":"Icon_entry_40021","Status":1,"weight":2,"id":"4002","level":4},{"ID":"90328","name":"Last Stand Module","SpecificEffects":"When own HP is not full, DMG dealt increases by <color=#F74848>24%</color>.\nWhen actively attacking, the attack multiplier increases by <color=#F74848>0.025</color> for each ally without full HP, up to <color=#F74848>+0.1</color>. This effect is reduced to <color=#F74848>1/4</color> if equipped with Rocket Launcher.","BufCarried":"903281","SkillIcon":"Icon_entry_10112","icon":"Icon_entry_10112","Status":1,"weight":3,"id":"9032","level":8}],"icon":"Icon_mecha_wap2062","introduce":"","mechaIcon":"Icon_wap2062_1","lihuiIcon":"icon_lihui_wap2062","AlternateSkins":[],"Status":1,"weight":1,"manji":{"name":"Prism","durable":"10926","Armor":"706","fire":"1255","output":"2880","Antiriot":"4472","Interface":"Ⅱ型接口","ModuleCarried":[{"ID":"90224","name":"Refraction Array","SpecificEffects":"When attacking with Tactical weapons, DMG dealt increases by <color=#F74848>20%</color>. When attacking with shoulder-mounted weapons, Critical Hit chance increases by <color=#F74848>15%</color>.","BufCarried":"902241","SkillIcon":"Icon_skill_passive_1180","icon":"Icon_skill_passive_1180","Status":1,"weight":1,"id":"9022","level":4},{"ID":"40024","name":"Crit Rate Mod","SpecificEffects":"Crit Rate <color=#F74848>+10%</color>.","BufCarried":"400241","SkillIcon":"Icon_entry_40021","icon":"Icon_entry_40021","Status":1,"weight":2,"id":"4002","level":4},{"ID":"90328","name":"Last Stand Module","SpecificEffects":"When own HP is not full, DMG dealt increases by <color=#F74848>24%</color>.\nWhen actively attacking, the attack multiplier increases by <color=#F74848>0.025</color> for each ally without full HP, up to <color=#F74848>+0.1</color>. This effect is reduced to <color=#F74848>1/4</color> if equipped with Rocket Launcher.","BufCarried":"903281","SkillIcon":"Icon_entry_10112","icon":"Icon_entry_10112","Status":1,"weight":3,"id":"9032","level":8}]}},{"ID":"20630103_ARM_L","name":"Prism","position":"L-Arm","type":"Medium","quality":"SSR","aircraftWeight":"165","durable":"243","Armor":"48","fire":"127","Hit":"309","ModuleCarried":[],"introduce":"","mechaIcon":"Icon_wap2062_1","manji":{"name":"Prism","durable":"6561","Armor":"470","fire":"1255","Hit":"1794","Interface":"Ⅱ型接口","ModuleCarried":[]},"icon":"Icon_mecha_wap2062"},{"ID":"20630103_ARM_R","name":"Prism","position":"R-Arm","type":"Medium","quality":"SSR","aircraftWeight":"165","durable":"243","Armor":"48","fire":"127","Hit":"309","ModuleCarried":[],"introduce":"","mechaIcon":"Icon_wap2062_1","manji":{"name":"Prism","durable":"6561","Armor":"470","fire":"1255","Hit":"1794","Interface":"Ⅱ型接口","ModuleCarried":[]},"icon":"Icon_mecha_wap2062"},{"ID":"20630103_LEGS","name":"Prism","position":"Legs","type":"Medium","quality":"SSR","aircraftWeight":"210","durable":"350","Armor":"48","fire":"127","Dodge":"669","move":"3000","ModuleCarried":[],"introduce":"","mechaIcon":"Icon_wap2062_1","manji":{"name":"Prism","durable":"9536","Armor":"470","fire":"1255","Dodge":"3885","move":"3000","Interface":"Ⅰ型接口","ModuleCarried":[]},"icon":"Icon_mecha_wap2062"}]}}
+{
+    "data": {
+      "data": [
+        {
+          "ID": "20630103",
+          "name": "Prism",
+          "position": "Body",
+          "type": "Medium",
+          "quality": "SSR",
+          "aircraftWeight": "290",
+          "durable": "446",
+          "Armor": "941",
+          "fire": "127",
+          "Antiriot": "770",
+          "output": "2880",
+          "Interface": "Ⅰ型接口",
+          "ModuleCarried": [
+            {
+              "ID": "90224",
+              "name": "Refraction Array",
+              "SpecificEffects": "When attacking with Tactical weapons, DMG dealt increases by <color=#F74848>20%</color>. When attacking with shoulder-mounted weapons, Critical Hit chance increases by <color=#F74848>15%</color>.",
+              "BufCarried": "902241",
+              "SkillIcon": "Icon_skill_passive_1180",
+              "icon": "Icon_skill_passive_1180",
+              "Status": 1,
+              "weight": 1,
+              "id": "9022",
+              "level": 4
+            },
+            {
+              "ID": "40024",
+              "name": "Crit Rate Mod",
+              "SpecificEffects": "Crit Rate <color=#F74848>+10%</color>.",
+              "BufCarried": "400241",
+              "SkillIcon": "Icon_entry_40021",
+              "icon": "Icon_entry_40021",
+              "Status": 1,
+              "weight": 2,
+              "id": "4002",
+              "level": 4
+            },
+            {
+              "ID": "90328",
+              "name": "Last Stand Module",
+              "SpecificEffects": "When own HP is not full, DMG dealt increases by <color=#F74848>24%</color>.\nWhen actively attacking, the attack multiplier increases by <color=#F74848>0.025</color> for each ally without full HP, up to <color=#F74848>+0.1</color>. This effect is reduced to <color=#F74848>1/4</color> if equipped with Rocket Launcher.",
+              "BufCarried": "903281",
+              "SkillIcon": "Icon_entry_10112",
+              "icon": "Icon_entry_10112",
+              "Status": 1,
+              "weight": 3,
+              "id": "9032",
+              "level": 8
+            }
+          ],
+          "icon": "Icon_mecha_wap2062",
+          "introduce": "",
+          "mechaIcon": "Icon_wap2062_1",
+          "lihuiIcon": "icon_lihui_wap2062",
+          "AlternateSkins": [],
+          "Status": 1,
+          "weight": 1,
+          "manji": {
+            "name": "Prism",
+            "durable": "10926",
+            "Armor": "706",
+            "fire": "1255",
+            "output": "2880",
+            "Antiriot": "4472",
+            "Interface": "Ⅱ型接口",
+            "ModuleCarried": [
+              {
+                "ID": "90224",
+                "name": "Refraction Array",
+                "SpecificEffects": "When attacking with Tactical weapons, DMG dealt increases by <color=#F74848>20%</color>. When attacking with both shoulder-mounted weapons, Critical Hit chance increases by <color=#F74848>15%</color>.",
+                "BufCarried": "902241",
+                "SkillIcon": "Icon_skill_passive_1180",
+                "icon": "Icon_skill_passive_1180",
+                "Status": 1,
+                "weight": 1,
+                "id": "9022",
+                "level": 4
+              },
+              {
+                "ID": "40024",
+                "name": "Crit Rate Mod",
+                "SpecificEffects": "Crit Rate <color=#F74848>+10%</color>.",
+                "BufCarried": "400241",
+                "SkillIcon": "Icon_entry_40021",
+                "icon": "Icon_entry_40021",
+                "Status": 1,
+                "weight": 2,
+                "id": "4002",
+                "level": 4
+              },
+              {
+                "ID": "90328",
+                "name": "Last Stand Module",
+                "SpecificEffects": "When own HP is not full, DMG dealt increases by <color=#F74848>24%</color>.\nWhen actively attacking, the attack multiplier increases by <color=#F74848>0.025</color> for each ally without full HP, up to <color=#F74848>+0.1</color>. This effect is reduced to <color=#F74848>1/4</color> if equipped with Rocket Launcher.",
+                "BufCarried": "903281",
+                "SkillIcon": "Icon_entry_10112",
+                "icon": "Icon_entry_10112",
+                "Status": 1,
+                "weight": 3,
+                "id": "9032",
+                "level": 8
+              }
+            ]
+          }
+        },
+        {
+          "ID": "20630103_ARM_L",
+          "name": "Prism",
+          "position": "L-Arm",
+          "type": "Medium",
+          "quality": "SSR",
+          "aircraftWeight": "165",
+          "durable": "243",
+          "Armor": "48",
+          "fire": "127",
+          "Hit": "309",
+          "ModuleCarried": [],
+          "introduce": "",
+          "mechaIcon": "Icon_wap2062_1",
+          "manji": {
+            "name": "Prism",
+            "durable": "6561",
+            "Armor": "470",
+            "fire": "1255",
+            "Hit": "1794",
+            "Interface": "Ⅱ型接口",
+            "ModuleCarried": []
+          },
+          "icon": "Icon_mecha_wap2062"
+        },
+        {
+          "ID": "20630103_ARM_R",
+          "name": "Prism",
+          "position": "R-Arm",
+          "type": "Medium",
+          "quality": "SSR",
+          "aircraftWeight": "165",
+          "durable": "243",
+          "Armor": "48",
+          "fire": "127",
+          "Hit": "309",
+          "ModuleCarried": [],
+          "introduce": "",
+          "mechaIcon": "Icon_wap2062_1",
+          "manji": {
+            "name": "Prism",
+            "durable": "6561",
+            "Armor": "470",
+            "fire": "1255",
+            "Hit": "1794",
+            "Interface": "Ⅱ型接口",
+            "ModuleCarried": []
+          },
+          "icon": "Icon_mecha_wap2062"
+        },
+        {
+          "ID": "20630103_LEGS",
+          "name": "Prism",
+          "position": "Legs",
+          "type": "Medium",
+          "quality": "SSR",
+          "aircraftWeight": "210",
+          "durable": "350",
+          "Armor": "48",
+          "fire": "127",
+          "Dodge": "669",
+          "move": "3000",
+          "ModuleCarried": [],
+          "introduce": "",
+          "mechaIcon": "Icon_wap2062_1",
+          "manji": {
+            "name": "Prism",
+            "durable": "9536",
+            "Armor": "470",
+            "fire": "1255",
+            "Dodge": "3885",
+            "move": "3000",
+            "Interface": "Ⅰ型接口",
+            "ModuleCarried": []
+          },
+          "icon": "Icon_mecha_wap2062"
+        }
+      ]
+    }
+  }

@@ -27,7 +27,7 @@
       "Talent0_2Ability": {
         "ID": "175550",
         "name": "Truth Seeker",
-        "SpecificEffects": "When any unit on the field takes non-percentage <buf ID=900017>[Fixed DMG]</buf>, gains <color=#F74848>2</color> stacks of <buf ID=175900>[Effective Data]</buf>. When an ally triggers <buf ID=175902>[Percentage HP Reduction]</buf>, gains <color=#F74848>4</color> stacks of <buf ID=175900>[Effective Data]</buf>.",
+        "SpecificEffects": "When any unit on the field takes percentage <buf ID=900017>[Fixed DMG]</buf>, gains <color=#F74848>2</color> stacks of <buf ID=175900>[Effective Data]</buf>. When an ally triggers <buf ID=175902>[Percentage HP Reduction]</buf>, gains <color=#F74848>4</color> stacks of <buf ID=175900>[Effective Data]</buf>.",
         "SkillIcon": "Icon_skill_talent_5167",
         "icon": "Icon_skill_talent_5167",
         "Status": 1,
@@ -37,7 +37,7 @@
       "Talent3_5Ability": {
         "ID": "175551",
         "name": "Truth Seeker",
-        "SpecificEffects": "When any unit on the field takes non-percentage <buf ID=900017>[Fixed DMG]</buf>, gains <color=#F74848>2</color> stacks of <buf ID=175900>[Effective Data]</buf>. When an ally triggers <buf ID=175902>[Percentage HP Reduction]</buf>, gains <color=#F74848>4</color> stacks of <buf ID=175900>[Effective Data]</buf>.\nMissile range <color=#F74848>+1</color>. Final DMG dealt increases by <color=#F74848>10%</color>.",
+        "SpecificEffects": "When any unit on the field takes percentage <buf ID=900017>[Fixed DMG]</buf>, gains <color=#F74848>2</color> stacks of <buf ID=175900>[Effective Data]</buf>. When an ally triggers <buf ID=175902>[Percentage HP Reduction]</buf>, gains <color=#F74848>4</color> stacks of <buf ID=175900>[Effective Data]</buf>.\nMissile range <color=#F74848>+1</color>. Final DMG dealt increases by <color=#F74848>10%</color>.",
         "SkillIcon": "Icon_skill_talent_5167",
         "icon": "Icon_skill_talent_5167",
         "Status": 1,
@@ -217,7 +217,7 @@
                 "PassiveSkill": {
                   "ID": "175570",
                   "name": "Tactical Firepower 1",
-                  "SpecificEffects": "After the first attack with a Tactical Weapon each turn, <buf ID=900004>[Re-ATK]</buf> can be triggered, effective up to <color=#F74848>1</color> time per turn. Unable to move before attacking.",
+                  "SpecificEffects": "If not moved before an Active Attack with a Tactical weapon, <buf ID=900004>[Re-ATK]</buf> can be triggered, effective up to <color=#F74848>1</color> time per turn. Unable to move before attacking.\nEffects similar to <buf ID=900004>[Re-ATK]</buf> cannot be re-triggered.",
                   "SkillIcon": "Icon_skill_passive_5023",
                   "icon": "Icon_skill_passive_5023",
                   "Status": 1,
@@ -755,6 +755,7 @@
             "describe": "Selects up to <color=#F74848>4</color> allies within <color=#F74848>4</color> adjacent tiles. Inflicts <buf ID=175902>[Percentage HP Reduction]</buf> equal to <color=#F74848>10%</color> max HP to all selected allies. This effect will not destroy parts. For each <color=#F74848>1</color> ally selected, restores <color=#F74848>2</color> rounds of ammo for Missile Launcher and gains <color=#F74848>1</color> AP. Can continue to act with remaining movement.",
             "type": "Order",
             "Ap": "0",
+            "CD": "2",
             "matchingWeaponType": "ML",
             "SkillIcon": "Icon_skill_order_5168",
             "icon": "Icon_skill_order_5168",
