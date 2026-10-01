@@ -185,178 +185,171 @@ MANUAL_MODULE_SPECS = {
 # Modules exclusive to a manually-added mech whose per-level ladder has
 # MULTIPLE independently-scaling numbers (not a single % that scales the
 # same way at every level) can't use MANUAL_MODULE_SPECS' single-`pcts`
-# substitution — so their full `levels` text is hand-authored directly here
-# instead, straight from the mech intake form's per-level breakdown.
+# substitution. Like MANUAL_MODULE_SPECS, the wording is NOT duplicated here:
+# it's read from the mech's own JSON at `maxLevel` (the max level is used
+# verbatim). Only the per-level numbers are hand-authored, straight from the
+# mech intake form's per-level breakdown:
+#   - `tags`:   which <color> tags of the mech text scale with level (0-based,
+#               in order of appearance); every other tag stays as written.
+#   - `ladder`: one tuple per level 1..maxLevel, one value per entry in
+#               `tags`. The last row must match the mech text's numbers —
+#               build_manual_level_modules() refuses to compile otherwise.
+#   - `bonusAtMax`: the clause after the first newline only unlocks at max
+#               level, so it's dropped for every lower level.
 MANUAL_MODULE_LEVELS = {
-    # Deep Linker (Nephthys, family 9020): the intake gave an explicit
-    # 4-level split for all three numbers (main DMG%, per-debuff DMG%, and
-    # stack cap), so every level is transcribed verbatim rather than derived.
+    # Deep Linker (Nephthys): main DMG%, per-debuff DMG%, stack cap.
     '9020': {
         'name': 'Deep Linker',
         'icon': 'Icon_skill_passive_1146',
         'category': 'GeneralSuit',
         'maxLevel': 4,
-        'currentLevel': 4,
-        'levels': {
-            '1': 'DMG dealt increases by <color=#F74848>3%</color>. For each 1 debuff applied, DMG dealt additionally increases by <color=#F74848>2%</color>, stacking up to <color=#F74848>3</color> times, lasting for <color=#F74848>2</color> turns.',
-            '2': 'DMG dealt increases by <color=#F74848>6%</color>. For each 1 debuff applied, DMG dealt additionally increases by <color=#F74848>3%</color>, stacking up to <color=#F74848>3</color> times, lasting for <color=#F74848>2</color> turns.',
-            '3': 'DMG dealt increases by <color=#F74848>10%</color>. For each 1 debuff applied, DMG dealt additionally increases by <color=#F74848>3%</color>, stacking up to <color=#F74848>5</color> times, lasting for <color=#F74848>2</color> turns.',
-            '4': 'DMG dealt increases by <color=#F74848>15%</color>. For each 1 debuff applied, DMG dealt additionally increases by <color=#F74848>4%</color>, stacking up to <color=#F74848>5</color> times, lasting for <color=#F74848>2</color> turns.',
-        },
+        'tags': [0, 1, 2],
+        'ladder': [('3', '2', '3'), ('6', '3', '3'), ('10', '3', '5'), ('15', '4', '5')],
     },
-    # Momentum Module (Nephthys, family 9030): the intake was later updated
-    # with the full 8-level ladder for both scaling numbers (main DMG% and
-    # per-debuff DMG%/cap), so every level is transcribed verbatim rather
-    # than a placeholder. The [Flurry Strike] trigger-chance clause (25%
-    # base, +25% per debuff) does not scale with module level per the intake
-    # text, so it stays identical across all 8 levels.
+    # Momentum Module (Nephthys): main DMG%, per-debuff DMG%, cap (= main).
+    # The [Flurry Strike] clause is present and identical at every level.
     '9030': {
         'name': 'Momentum Module',
         'icon': 'Icon_entry_10110',
         'category': 'GeneralSuit',
         'maxLevel': 8,
-        'currentLevel': 8,
-        'levels': {
-            str(i): (
-                f'DMG dealt increases by <color=#F74848>{main}%</color>. DMG dealt additionally increases by '
-                f'<color=#F74848>{per}%</color> for each 1 debuff the enemy team carries, up to <color=#F74848>{main}%</color>.\n'
-                'When initiating combat, there is a <color=#F74848>25%</color> chance to trigger <buf ID=900001>[Flurry Strike]</buf> '
-                "following the enemy's attack, dealing <color=#F74848>0.25</color>x DMG. This trigger chance increases by "
-                '<color=#F74848>25%</color> for each debuff the target carries before combat.'
-            )
-            for i, (main, per) in enumerate([
-                ('2', '0.5'), ('3', '0.5'), ('4', '0.5'), ('5', '1'),
-                ('7', '1'), ('8', '1'), ('9', '1.5'), ('12', '1.5'),
-            ], 1)
-        },
+        'tags': [0, 1, 2],
+        'ladder': [(main, per, main) for main, per in [
+            ('2', '0.5'), ('3', '0.5'), ('4', '0.5'), ('5', '1'),
+            ('7', '1'), ('8', '1'), ('9', '1.5'), ('12', '1.5'),
+        ]],
     },
-    # Doomsday Core (Nidhogg, family 9021): the intake gave a 4-level split
-    # for all three numbers (DMG taken/dealt %, per-debuff DMG %, and cap).
+    # Doomsday Core (Nidhogg): DMG taken/dealt % (shared), per-debuff DMG%, cap.
     '9021': {
         'name': 'Doomsday Core',
         'icon': 'Icon_skill_passive_1179',
         'category': 'GeneralSuit',
         'maxLevel': 4,
-        'currentLevel': 4,
-        'levels': {
-            str(i): (
-                f'Reduces DMG taken by <color=#F74848>{main}%</color> when attacked by enemies afflicted with debuffs. '
-                f'DMG dealt increases by <color=#F74848>{main}%</color> when attacking enemies afflicted with debuffs. '
-                f'DMG dealt additionally increases by <color=#F74848>{per}%</color> for each <color=#F74848>1</color> debuff present, '
-                f'up to <color=#F74848>{cap}%</color>.'
-            )
-            for i, (main, per, cap) in enumerate([
-                ('3', '1', '6'), ('6', '2', '12'), ('10', '2', '20'), ('15', '3', '30'),
-            ], 1)
-        },
+        'tags': [0, 1, 2, 4],
+        'ladder': [(main, main, per, cap) for main, per, cap in [
+            ('3', '1', '6'), ('6', '2', '12'), ('10', '2', '20'), ('15', '3', '30'),
+        ]],
     },
-    # Force Field Module (Nidhogg, family 9031): the intake gave the full
-    # 8-level ladder for the Temporary HP gain and its cap; the skill
-    # multiplier aura clause only unlocks at max level (8).
+    # Force Field Module (Nidhogg): Temporary HP gain and cap; the skill
+    # multiplier aura clause only unlocks at max level.
     '9031': {
         'name': 'Force Field Module',
         'icon': 'Icon_entry_10111',
         'category': 'GeneralSuit',
         'maxLevel': 8,
-        'currentLevel': 8,
-        'levels': {
-            str(i): (
-                f'When attacking a target carrying debuffs, all intact parts gain Temporary HP equal to '
-                f'<color=#F74848>{gain}%</color> of max HP, up to a maximum of <color=#F74848>{cap}%</color> of max HP.'
-            ) + ('' if i < 8 else (
-                '\nReduces the skill multiplier of all enemies within <color=#F74848>3</color> adjacent tiles by '
-                '<color=#F74848>0.1</color> (this effect is reduced to <color=#F74848>1/4</color> against Rocket weapons). '
-                "For every affected target within range, this unit's skill multiplier increases by "
-                '<color=#F74848>0.025</color>, up to a maximum of <color=#F74848>0.1</color>.'
-            ))
-            for i, (gain, cap) in enumerate([
-                ('0.5', '4'), ('0.5', '6'), ('0.5', '8'), ('1', '10'),
-                ('1', '14'), ('1', '16'), ('1.5', '18'), ('1.5', '24'),
-            ], 1)
-        },
+        'bonusAtMax': True,
+        'tags': [0, 1],
+        'ladder': [
+            ('0.5', '4'), ('0.5', '6'), ('0.5', '8'), ('1', '10'),
+            ('1', '14'), ('1', '16'), ('1.5', '18'), ('1.5', '24'),
+        ],
     },
-    # Refraction Array (Prism, family 9022): the intake gave a 4-level split
-    # for both numbers (Tactical DMG% and shoulder-weapon Crit chance%).
+    # Refraction Array (Prism): Tactical DMG% and shoulder-weapon Crit chance%.
     '9022': {
         'name': 'Refraction Array',
         'icon': 'Icon_skill_passive_1180',
         'category': 'GeneralSuit',
         'maxLevel': 4,
-        'currentLevel': 4,
-        'levels': {
-            str(i): (
-                f'When attacking with Tactical weapons, DMG dealt increases by <color=#F74848>{dmg}%</color>. '
-                f'When attacking with shoulder-mounted weapons, Critical Hit chance increases by <color=#F74848>{crit}%</color>.'
-            )
-            for i, (dmg, crit) in enumerate([
-                ('4', '3'), ('8', '6'), ('14', '10'), ('20', '15'),
-            ], 1)
-        },
+        'tags': [0, 1],
+        'ladder': [('4', '3'), ('8', '6'), ('14', '10'), ('20', '15')],
     },
-    # Last Stand Module (Prism, family 9032): the intake gave the full 8-level
-    # ladder for the DMG% clause; the attack-multiplier clause only unlocks at
-    # max level (8), same pattern as Force Field Module above.
+    # Last Stand Module (Prism): DMG%; the attack-multiplier clause only
+    # unlocks at max level.
     '9032': {
         'name': 'Last Stand Module',
         'icon': 'Icon_entry_10112',
         'category': 'GeneralSuit',
         'maxLevel': 8,
-        'currentLevel': 8,
-        'levels': {
-            str(i): (
-                f'When own HP is not full, DMG dealt increases by <color=#F74848>{pct}%</color>.'
-            ) + ('' if i < 8 else (
-                '\nWhen actively attacking, the attack multiplier increases by <color=#F74848>0.025</color> for each '
-                'ally without full HP, up to <color=#F74848>+0.1</color>. This effect is reduced to '
-                '<color=#F74848>1/4</color> if equipped with Rocket Launcher.'
-            ))
-            for i, pct in enumerate(['4', '6', '8', '10', '14', '16', '18', '24'], 1)
-        },
+        'bonusAtMax': True,
+        'tags': [0],
+        'ladder': [(pct,) for pct in ['4', '6', '8', '10', '14', '16', '18', '24']],
     },
-    # Roaring Frame (Avalanche, family 9023): the intake gave a 4-level split
-    # for both numbers (Max HP% and no-movement DMG%).
+    # Roaring Frame (Avalanche): Max HP% and no-movement DMG%.
     '9023': {
         'name': 'Roaring Frame',
         'icon': 'Icon_skill_passive_3138',
         'category': 'GeneralSuit',
         'maxLevel': 4,
-        'currentLevel': 4,
-        'levels': {
-            str(i): (
-                f'Max HP increases by <color=#F74848>{hp}%</color>. '
-                f'DMG dealt increases by <color=#F74848>{dmg}%</color> if no movement was made before the attack.'
-            )
-            for i, (hp, dmg) in enumerate([
-                ('3', '5'), ('6', '10'), ('10', '15'), ('15', '25'),
-            ], 1)
-        },
+        'tags': [0, 1],
+        'ladder': [('3', '5'), ('6', '10'), ('10', '15'), ('15', '25')],
     },
-    # Pack Hunt Module (Avalanche, family 9033): the intake gave the full
-    # 8-level ladder for the main DMG%, per-unit DMG% and cap; the Fixed DMG /
-    # Firepower clause only unlocks at max level (8), same pattern as Force
-    # Field Module above.
+    # Pack Hunt Module (Avalanche): main DMG%, per-unit DMG%, cap (= main);
+    # the Fixed DMG / Firepower clause only unlocks at max level.
     '9033': {
         'name': 'Pack Hunt Module',
         'icon': 'Icon_entry_10114',
         'category': 'GeneralSuit',
         'maxLevel': 8,
-        'currentLevel': 8,
-        'levels': {
-            str(i): (
-                f'DMG dealt increases by <color=#F74848>{main}%</color>. When there are <color=#F74848>2</color> or more '
-                f'enemy units within attack range, DMG dealt additionally increases by <color=#F74848>{per}%</color> for '
-                f'each <color=#F74848>1</color> additional unit, up to <color=#F74848>{main}%</color>.'
-            ) + ('' if i < 8 else (
-                '\n<buf ID=900017>[Fixed DMG]</buf> dealt increases by <color=#F74848>25%</color>. When actively '
-                'attacking, Firepower increases by <color=#F74848>2%</color> of current HP.'
-            ))
-            for i, (main, per) in enumerate([
-                ('3', '1.5'), ('4', '2'), ('5', '2.5'), ('6', '3'),
-                ('7', '3.5'), ('8', '4'), ('9', '4.5'), ('12', '6'),
-            ], 1)
-        },
+        'bonusAtMax': True,
+        'tags': [0, 2, 4],
+        'ladder': [(main, per, main) for main, per in [
+            ('3', '1.5'), ('4', '2'), ('5', '2.5'), ('6', '3'),
+            ('7', '3.5'), ('8', '4'), ('9', '4.5'), ('12', '6'),
+        ]],
     },
 }
+
+LEADING_NUM_RE = re.compile(r'\d+(?:\.\d+)?')
+
+
+def build_manual_level_modules(local_modules):
+    """Build MANUAL_MODULE_LEVELS' `levels` dicts from the mech JSON's
+    max-level text, substituting each level's ladder numbers into the
+    scaling tags (see MANUAL_MODULE_LEVELS' comment)."""
+    modules = {}
+    for family, spec in MANUAL_MODULE_LEVELS.items():
+        max_level = spec['maxLevel']
+        template_text = next(
+            (info['cn_text'] for info in local_modules.values()
+             if info['family'] == family and info['level'] == max_level),
+            None
+        )
+        if template_text is None:
+            # The mech that carries this module was removed/renumbered —
+            # skip rather than silently reintroduce stale hardcoded text.
+            continue
+        if len(spec['ladder']) != max_level:
+            raise ValueError(f'{spec["name"]} ({family}): ladder has {len(spec["ladder"])} rows, '
+                             f'expected {max_level}')
+
+        tag_values = NUM_RE.findall(template_text)
+        primary = template_text.split('\n', 1)[0] if spec.get('bonusAtMax') else template_text
+        primary_tag_count = len(NUM_RE.findall(primary))
+        for t in spec['tags']:
+            if t >= primary_tag_count:
+                raise ValueError(f'{spec["name"]} ({family}): scaling tag {t} is not in the mech '
+                                 f'text\'s {"primary clause" if spec.get("bonusAtMax") else "text"}')
+        mech_nums = tuple(LEADING_NUM_RE.search(tag_values[t]).group(0) for t in spec['tags'])
+        if mech_nums != tuple(spec['ladder'][-1]):
+            raise ValueError(f'{spec["name"]} ({family}): mech JSON max-level numbers {mech_nums} '
+                             f'don\'t match the ladder\'s last row {tuple(spec["ladder"][-1])} — '
+                             f'update one of them')
+
+        level_effects = {}
+        for i, row in enumerate(spec['ladder'], 1):
+            if i == max_level:
+                level_effects[str(i)] = template_text
+                continue
+            values = dict(zip(spec['tags'], row))
+            counter = iter(range(primary_tag_count))
+
+            def repl(m):
+                idx = next(counter)
+                if idx not in values:
+                    return m.group(0)
+                return '<color=#F74848>' + LEADING_NUM_RE.sub(values[idx], m.group(1), count=1) + '</color>'
+
+            level_effects[str(i)] = NUM_RE.sub(repl, primary)
+
+        modules[family] = {
+            'name': spec['name'],
+            'icon': spec['icon'],
+            'category': spec['category'],
+            'maxLevel': max_level,
+            'currentLevel': max_level,
+            'levels': level_effects,
+        }
+    return modules
 
 
 def build_manual_modules(local_modules):
@@ -706,7 +699,7 @@ def main():
 
     for family, manual_mod in build_manual_modules(local_modules).items():
         modules.setdefault(family, manual_mod)
-    for family, manual_mod in MANUAL_MODULE_LEVELS.items():
+    for family, manual_mod in build_manual_level_modules(local_modules).items():
         modules.setdefault(family, manual_mod)
 
     out = {'modules': modules}

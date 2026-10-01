@@ -1,1 +1,189 @@
-{"data":{"data":[{"ID":"30390103","name":"Avalanche","type":"Heavy","quality":"SSR","position":"Body","aircraftWeight":"360","durable":"470","Armor":"144","fire":"119","Antiriot":"770","output":"2060","Interface":"Ⅰ型接口","ModuleCarried":[{"ID":"90234","name":"Roaring Frame","SpecificEffects":"Max HP increases by <color=#F74848>15%</color>. DMG dealt increases by <color=#F74848>25%</color> if no movement was made before the attack.","BufCarried":"902341","SkillIcon":"Icon_skill_passive_3138","icon":"Icon_skill_passive_3138","Status":1,"weight":1,"id":"9023","level":4},{"ID":"40014","name":"Accuracy Mod","SpecificEffects":"Hit Rate <color=#F74848>+10%</color>.","BufCarried":"400141","SkillIcon":"Icon_entry_40011","icon":"Icon_entry_40011","Status":1,"weight":2,"id":"4001","level":4},{"ID":"90338","name":"Pack Hunt Module","SpecificEffects":"DMG dealt increases by <color=#F74848>12%</color>. When there are <color=#F74848>2</color> or more enemy units within attack range, DMG dealt additionally increases by <color=#F74848>6%</color> for each <color=#F74848>1</color> additional unit, up to <color=#F74848>12%</color>.\n<buf ID=900017>[Fixed DMG]</buf> dealt increases by <color=#F74848>25%</color>. When actively attacking, Firepower increases by <color=#F74848>2%</color> of current HP.","BufCarried":"903381","SkillIcon":"Icon_entry_10114","icon":"Icon_entry_10114","Status":1,"weight":3,"id":"9033","level":8}],"icon":"Icon_mecha_wap3034","introduce":"","mechaIcon":"Icon_wap3034_1","lihuiIcon":"icon_lihui_wap3034","AlternateSkins":[],"Status":1,"weight":1,"manji":{"name":"Avalanche","durable":"13151","Armor":"1412","fire":"1176","output":"2060","Antiriot":"4472","Interface":"Ⅱ型接口","ModuleCarried":[{"ID":"90234","name":"Roaring Frame","SpecificEffects":"Max HP increases by <color=#F74848>15%</color>. DMG dealt increases by <color=#F74848>25%</color> if no movement was made before the attack.","BufCarried":"902341","SkillIcon":"Icon_skill_passive_3138","icon":"Icon_skill_passive_3138","Status":1,"weight":1,"id":"9023","level":4},{"ID":"40014","name":"Accuracy Mod","SpecificEffects":"Hit Rate <color=#F74848>+10%</color>.","BufCarried":"400141","SkillIcon":"Icon_entry_40011","icon":"Icon_entry_40011","Status":1,"weight":2,"id":"4001","level":4},{"ID":"90338","name":"Pack Hunt Module","SpecificEffects":"DMG dealt increases by <color=#F74848>12%</color>. When there are <color=#F74848>2</color> or more enemy units within attack range, DMG dealt additionally increases by <color=#F74848>6%</color> for each <color=#F74848>1</color> additional unit, up to <color=#F74848>12%</color>.\n<buf ID=900017>[Fixed DMG]</buf> dealt increases by <color=#F74848>25%</color>. When actively attacking, Firepower increases by <color=#F74848>2%</color> of current HP.","BufCarried":"903381","SkillIcon":"Icon_entry_10114","icon":"Icon_entry_10114","Status":1,"weight":3,"id":"9033","level":8}]}},{"ID":"30390103_ARM_L","name":"Avalanche","type":"Heavy","quality":"SSR","position":"L-Arm","aircraftWeight":"180","durable":"239","Armor":"96","fire":"119","Hit":"319","ModuleCarried":[],"introduce":"","mechaIcon":"Icon_wap3034_1","manji":{"name":"Avalanche","durable":"7479","Armor":"941","fire":"1176","Hit":"1672","Interface":"Ⅱ型接口","ModuleCarried":[]},"icon":"Icon_mecha_wap3034"},{"ID":"30390103_ARM_R","name":"Avalanche","type":"Heavy","quality":"SSR","position":"R-Arm","aircraftWeight":"180","durable":"239","Armor":"96","fire":"119","Hit":"319","ModuleCarried":[],"introduce":"","mechaIcon":"Icon_wap3034_1","manji":{"name":"Avalanche","durable":"7479","Armor":"941","fire":"1176","Hit":"1672","Interface":"Ⅱ型接口","ModuleCarried":[]},"icon":"Icon_mecha_wap3034"},{"ID":"30390103_LEGS","name":"Avalanche","type":"Heavy","quality":"SSR","position":"Legs","aircraftWeight":"230","durable":"710","Armor":"96","fire":"119","Dodge":"566","move":"3000","ModuleCarried":[],"introduce":"","mechaIcon":"Icon_wap3034_1","manji":{"name":"Avalanche","durable":"10732","Armor":"941","fire":"1176","Dodge":"3287","move":"3000","Interface":"Ⅱ型接口","ModuleCarried":[]},"icon":"Icon_mecha_wap3034"}]}}
+{
+    "data": {
+      "data": [
+        {
+          "ID": "30390103",
+          "name": "Avalanche",
+          "type": "Heavy",
+          "quality": "SSR",
+          "position": "Body",
+          "aircraftWeight": "360",
+          "durable": "470",
+          "Armor": "144",
+          "fire": "119",
+          "Antiriot": "770",
+          "output": "2060",
+          "Interface": "Ⅰ型接口",
+          "ModuleCarried": [
+            {
+              "ID": "90234",
+              "name": "Roaring Frame",
+              "SpecificEffects": "Max HP increases by <color=#F74848>15%</color>. When actively attacking, DMG dealt increases by <color=#F74848>25%</color> if no movement was made before the attack.",
+              "BufCarried": "902341",
+              "SkillIcon": "Icon_skill_passive_3138",
+              "icon": "Icon_skill_passive_3138",
+              "Status": 1,
+              "weight": 1,
+              "id": "9023",
+              "level": 4
+            },
+            {
+              "ID": "40014",
+              "name": "Accuracy Mod",
+              "SpecificEffects": "Hit Rate <color=#F74848>+10%</color>.",
+              "BufCarried": "400141",
+              "SkillIcon": "Icon_entry_40011",
+              "icon": "Icon_entry_40011",
+              "Status": 1,
+              "weight": 2,
+              "id": "4001",
+              "level": 4
+            },
+            {
+              "ID": "90338",
+              "name": "Pack Hunt Module",
+              "SpecificEffects": "DMG dealt increases by <color=#F74848>12%</color>. When there are <color=#F74848>2</color> or more enemy units within attack range, DMG dealt additionally increases by <color=#F74848>6%</color> for each <color=#F74848>1</color> additional unit above 2, up to <color=#F74848>12%</color>.\n<buf ID=900017>[Fixed DMG]</buf> dealt increases by <color=#F74848>25%</color>. When attacking, Firepower increases by <color=#F74848>2%</color> of current HP.",
+              "BufCarried": "903381",
+              "SkillIcon": "Icon_entry_10114",
+              "icon": "Icon_entry_10114",
+              "Status": 1,
+              "weight": 3,
+              "id": "9033",
+              "level": 8
+            }
+          ],
+          "icon": "Icon_mecha_wap3034",
+          "introduce": "",
+          "mechaIcon": "Icon_wap3034_1",
+          "lihuiIcon": "icon_lihui_wap3034",
+          "AlternateSkins": [],
+          "Status": 1,
+          "weight": 1,
+          "manji": {
+            "name": "Avalanche",
+            "durable": "13151",
+            "Armor": "1412",
+            "fire": "1176",
+            "output": "2060",
+            "Antiriot": "4472",
+            "Interface": "Ⅱ型接口",
+            "ModuleCarried": [
+              {
+                "ID": "90234",
+                "name": "Roaring Frame",
+                "SpecificEffects": "Max HP increases by <color=#F74848>15%</color>. When actively attacking, DMG dealt increases by <color=#F74848>25%</color> if no movement was made before the attack.",
+                "BufCarried": "902341",
+                "SkillIcon": "Icon_skill_passive_3138",
+                "icon": "Icon_skill_passive_3138",
+                "Status": 1,
+                "weight": 1,
+                "id": "9023",
+                "level": 4
+              },
+              {
+                "ID": "40014",
+                "name": "Accuracy Mod",
+                "SpecificEffects": "Hit Rate <color=#F74848>+10%</color>.",
+                "BufCarried": "400141",
+                "SkillIcon": "Icon_entry_40011",
+                "icon": "Icon_entry_40011",
+                "Status": 1,
+                "weight": 2,
+                "id": "4001",
+                "level": 4
+              },
+              {
+                "ID": "90338",
+                "name": "Pack Hunt Module",
+                "SpecificEffects": "DMG dealt increases by <color=#F74848>12%</color>. When there are <color=#F74848>2</color> or more enemy units within attack range, DMG dealt additionally increases by <color=#F74848>6%</color> for each <color=#F74848>1</color> additional unit above 2, up to <color=#F74848>12%</color>.\n<buf ID=900017>[Fixed DMG]</buf> dealt increases by <color=#F74848>25%</color>. When attacking, Firepower increases by <color=#F74848>2%</color> of current HP.",
+                "BufCarried": "903381",
+                "SkillIcon": "Icon_entry_10114",
+                "icon": "Icon_entry_10114",
+                "Status": 1,
+                "weight": 3,
+                "id": "9033",
+                "level": 8
+              }
+            ]
+          }
+        },
+        {
+          "ID": "30390103_ARM_L",
+          "name": "Avalanche",
+          "type": "Heavy",
+          "quality": "SSR",
+          "position": "L-Arm",
+          "aircraftWeight": "180",
+          "durable": "239",
+          "Armor": "96",
+          "fire": "119",
+          "Hit": "319",
+          "ModuleCarried": [],
+          "introduce": "",
+          "mechaIcon": "Icon_wap3034_1",
+          "manji": {
+            "name": "Avalanche",
+            "durable": "7479",
+            "Armor": "941",
+            "fire": "1176",
+            "Hit": "1672",
+            "Interface": "Ⅱ型接口",
+            "ModuleCarried": []
+          },
+          "icon": "Icon_mecha_wap3034"
+        },
+        {
+          "ID": "30390103_ARM_R",
+          "name": "Avalanche",
+          "type": "Heavy",
+          "quality": "SSR",
+          "position": "R-Arm",
+          "aircraftWeight": "180",
+          "durable": "239",
+          "Armor": "96",
+          "fire": "119",
+          "Hit": "319",
+          "ModuleCarried": [],
+          "introduce": "",
+          "mechaIcon": "Icon_wap3034_1",
+          "manji": {
+            "name": "Avalanche",
+            "durable": "7479",
+            "Armor": "941",
+            "fire": "1176",
+            "Hit": "1672",
+            "Interface": "Ⅱ型接口",
+            "ModuleCarried": []
+          },
+          "icon": "Icon_mecha_wap3034"
+        },
+        {
+          "ID": "30390103_LEGS",
+          "name": "Avalanche",
+          "type": "Heavy",
+          "quality": "SSR",
+          "position": "Legs",
+          "aircraftWeight": "230",
+          "durable": "710",
+          "Armor": "96",
+          "fire": "119",
+          "Dodge": "566",
+          "move": "3000",
+          "ModuleCarried": [],
+          "introduce": "",
+          "mechaIcon": "Icon_wap3034_1",
+          "manji": {
+            "name": "Avalanche",
+            "durable": "10732",
+            "Armor": "941",
+            "fire": "1176",
+            "Dodge": "3287",
+            "move": "3000",
+            "Interface": "Ⅱ型接口",
+            "ModuleCarried": []
+          },
+          "icon": "Icon_mecha_wap3034"
+        }
+      ]
+    }
+  }

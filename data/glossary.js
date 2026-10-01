@@ -1402,7 +1402,7 @@ window.GlossaryData = {
     },
     "185903": {
       "name": "Thermal Corrosion",
-      "effect": "When actively attacked, this unit takes <buf ID=900017>[Fixed DMG]</buf> equal to <color=#F74848>15%</color> of the attacking arm's max HP to all parts after combat. This effect can trigger up to <color=#F74848>5</color> times and is removed after <color=#F74848>1</color> turn."
+      "effect": "When actively attacked, this unit takes <buf ID=900017>[Fixed DMG]</buf> equal to <color=#F74848>15%</color> of the [Alena]'s Shield arm's max HP to all parts after combat. This effect can trigger up to <color=#F74848>5</color> times and is removed after <color=#F74848>1</color> turn."
     },
     "185904": {
       "name": "Blazing Barrier",
@@ -1999,7 +1999,7 @@ window.GlossaryData = {
       "Ap": "0",
       "CD": "1",
       "icon": "Icon_skill_order_5169",
-      "effect": "Enters <buf ID=185900>[Bunker]</buf> state. This state is cancelled if an arm is destroyed. Attacks can be made in this state. Can use command skill <skill ID=185951>[Disengage]</skill>."
+      "effect": "Enters <buf ID=185900>[Bunker]</buf> state. Can continue to attack without moving. This state is cancelled if an arm is destroyed. Can use command skill <skill ID=185951>[Disengage]</skill>."
     },
     "185951": {
       "name": "Disengage",
