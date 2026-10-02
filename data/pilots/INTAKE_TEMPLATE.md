@@ -206,9 +206,9 @@ pilot from this template (10103182, Kaidan The Invincible):
 - 1: Storm Symbiosis 1 / After actively attacking with Alter-Blade or [Mystic Arc], if the part hit is below 15% HP, triggers the <buf ID=900109>[Execution]</buf> effect, directly destroying that part after combat. / Icon_skill_passive_5316
 - 4: (same as other pilots same occupation)
 - 7: Configuration Shift 4 / [Configuration Shift 3] trigger count increases by +1 time per turn. When attacking, DMG calculation uses the highest pilot attributes / Icon_skill_passive_5205
-- 10: Storm Symbiosis 2 / [Storm Symbiosis 1] part destruction effect threshold increased to 25% HP. / Icon_skill_passive_5317
-- 13: Storm Symbiosis 3 / Critical Hit chance and Critical Hit DMG of Alter-Blade and [Mystic Arc] increase by 10% / Icon_skill_passive_5317
-- 16: Storm Symbiosis 4 / After using [Configuration Shift], refunds 1 [Shift Energy]. This effect can trigger 2 times per turn / Icon_skill_passive_5317
+- 10: Storm Symbiosis 2 / [Storm Symbiosis 1] part destruction effect threshold increased to 25% HP. / Icon_skill_passive_5316
+- 13: Storm Symbiosis 3 / Critical Hit chance and Critical Hit DMG of Alter-Blade and [Mystic Arc] increase by 10% / Icon_skill_passive_5316
+- 16: Storm Symbiosis 4 / After using [Configuration Shift], refunds 1 [Shift Energy]. This effect can trigger 2 times per turn / Icon_skill_passive_5316
 
 ### γ2
 - 1:  Star Miracle 1 / Machine Gun and [Night Ember] bullet count +1, which additionally increases by +1 after each action. This effect is reset at the end of turn. / - Icon_skill_passive_5317
