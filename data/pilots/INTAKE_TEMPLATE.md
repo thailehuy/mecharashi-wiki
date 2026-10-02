@@ -225,7 +225,7 @@ pilot from this template (10103182, Kaidan The Invincible):
 - Cruise Form: Weapons are fixed to [Night Ember] and [Mystic Arc]. Cannot change weapon loadout. Movement type become [Flying]. Movement +1, Dodge Rate increases by 20%.
 - Flying: Ignores low obstacles and unit collision while moving. Can stop over low obstacles. Melee weapon can attack flying targets. Immune to melee attacks. Does not trigger ground-based Terrain effect. Vision can span over low obstacles in Mist Mode.
 - Shift Energy: Can be used for [Configuration Shift]. Stacks up to 5 times.
-- Configuration Shift: Shift the ST form based on the situation
+- Configuration Shift: Shift the ST form based on the situation. Can use [Mech Form Shift] or [Cruise Form Shift] at the end of action.
 - Steady Guard: Final DMG Taken reduces by 50%. This effect is removed after triggering.
 - Offense Boost: DMG Dealt increases by 25% for this action. This effect is removed after this action.
 - Evasion Boost: Dodge Rate increases by 15% for this action. This effect is removed after this action.
@@ -254,7 +254,7 @@ pilot from this template (10103182, Kaidan The Invincible):
 - Name: Star Chaser
 - AP: 3
 - CD: 0
-- Effect: Uses Alter-Blade to attack a target within 4 adjacent tiles, dealing 1.3x DMG. Enters [Aiming] Mode before attacking. Selects and warps an ally within 4 adjacentile after combat.
+- Effect: Uses Alter-Blade to attack a target within 4 adjacent tiles, dealing 1.3x DMG. Enters [Aiming] Mode before attacking. Selects and warps back to an ally within 4 adjacentile after the attack.
 - Icon: Icon_skill_order_1164
 
 ### Glossary skill 4
@@ -263,7 +263,7 @@ pilot from this template (10103182, Kaidan The Invincible):
 - Name: Moon Raker
 - AP: 3
 - CD: 0
-- Effect: Dashes 4 tiles in the selected direction using [Mystic Arc], dealing 1.2x AoE DMG to all targets hit (including flying units). This attack prioritizes hitting the body. Before activation, selects an ally within 2 adjacent tiles to warp them to this unit's side after the dash.
+- Effect: Dashes 4 tiles in the selected direction using [Mystic Arc], dealing 1.2x AoE DMG to all targets hit (including flying units). This attack prioritizes hitting the body. Before activation, selects an ally within 2 adjacent tiles to warp them to this unit's side after the dash. This skill can only be used 1 time per turn
 - Icon: Icon_skill_order_1164
 
 ### Glossary skill 5
@@ -299,5 +299,23 @@ pilot from this template (10103182, Kaidan The Invincible):
 - Name: Sky's Edge
 - AP: 4
 - CD: 0
-- Effect: Selects a target within 4 tiles in a straight line and dashes toward it. Uses [Mystic Arc] to deal 1.4x AoE DMG to the target's body. This attack cannot miss and deals 35% of the aforementioned DMG as [Fixed DMG] to all enemy units' bodies within 2 adjacent tiles of the target.
+- Effect: Selects a target within 4 tiles in a straight line and dashes toward it. Uses [Mystic Arc] to deal 1.4x AoE DMG to the target's body. This attack cannot miss and deals 35% of the aforementioned DMG as [Fixed DMG] to all enemy units' bodies within 2 adjacent tiles of the target. The AP cost of this skill increases by 1 after each use, and reset when shifting to another form.
 - Icon: Icon_skill_order_1166
+
+### Glossary skill 9
+<!-- Pick a random unique ID for this in the <skill> tag and add the tag to all referenced text from this pilot -->
+<!-- Also scan the skill text itself and link necessary tags -->
+- Name: Mech Form Shift
+- AP: 0
+- CD: 0
+- Effect: Consumes 2 [Shift Energy] to shift to [Mech Form], allowing another action with full Movement
+- Icon: Icon_skill_order_5171
+
+### Glossary skill 10
+<!-- Pick a random unique ID for this in the <skill> tag and add the tag to all referenced text from this pilot -->
+<!-- Also scan the skill text itself and link necessary tags -->
+- Name: Cruise Form Shift
+- AP: 0
+- CD: 0
+- Effect: Consumes 2 [Shift Energy] to shift to [Cruise Form], allowing another action with full Movement
+- Icon: Icon_skill_order_5172

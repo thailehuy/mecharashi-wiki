@@ -1432,7 +1432,7 @@
   },
   "173904": {
    "name": "Configuration Shift",
-   "effect": "Shifts the ST form based on the situation."
+   "effect": "Shifts the ST form based on the situation. Can use <skill ID=173958>[Mech Form Shift]</skill> or <skill ID=173959>[Cruise Form Shift]</skill> at the end of an action."
   },
   "173905": {
    "name": "Steady Guard",
@@ -2081,14 +2081,14 @@
    "Ap": "3",
    "CD": "0",
    "icon": "Icon_skill_order_1164",
-   "effect": "Uses an Alter-Blade to attack a target within <color=#F74848>4</color> adjacent tiles, dealing <color=#F74848>1.3</color>x DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking. After combat, selects an ally within <color=#F74848>4</color> adjacent tiles and warps them."
+   "effect": "Uses an Alter-Blade to attack a target within <color=#F74848>4</color> adjacent tiles, dealing <color=#F74848>1.3</color>x DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking. After the attack, selects an ally within <color=#F74848>4</color> adjacent tiles and warps back to them."
   },
   "173953": {
    "name": "Moon Raker",
    "Ap": "3",
    "CD": "0",
    "icon": "Icon_skill_order_1164",
-   "effect": "Dashes <color=#F74848>4</color> tiles in the selected direction using <buf ID=173909>[Mystic Arc]</buf>, dealing <color=#F74848>1.2</color>x AoE DMG to all targets hit (including flying units). This attack prioritizes hitting the body. Before activation, selects an ally within <color=#F74848>2</color> adjacent tiles to warp to this unit's side after the dash."
+   "effect": "Dashes <color=#F74848>4</color> tiles in the selected direction using <buf ID=173909>[Mystic Arc]</buf>, dealing <color=#F74848>1.2</color>x AoE DMG to all targets hit (including flying units). This attack prioritizes hitting the body. Before activation, selects an ally within <color=#F74848>2</color> adjacent tiles to warp to this unit's side after the dash. This skill can only be used <color=#F74848>1</color> time per turn."
   },
   "173954": {
    "name": "Void Crown",
@@ -2116,7 +2116,21 @@
    "Ap": "4",
    "CD": "0",
    "icon": "Icon_skill_order_1166",
-   "effect": "Selects a target within <color=#F74848>4</color> tiles in a straight line and dashes toward it, using <buf ID=173909>[Mystic Arc]</buf> to deal <color=#F74848>1.4</color>x AoE DMG to the target's body. This attack cannot miss, and deals <color=#F74848>35%</color> of that DMG as <buf ID=900017>[Fixed DMG]</buf> to the bodies of all enemy units within <color=#F74848>2</color> adjacent tiles of the target."
+   "effect": "Selects a target within <color=#F74848>4</color> tiles in a straight line and dashes toward it, using <buf ID=173909>[Mystic Arc]</buf> to deal <color=#F74848>1.4</color>x AoE DMG to the target's body. This attack cannot miss, and deals <color=#F74848>35%</color> of that DMG as <buf ID=900017>[Fixed DMG]</buf> to the bodies of all enemy units within <color=#F74848>2</color> adjacent tiles of the target. The AP cost of this skill increases by <color=#F74848>1</color> after each use, and resets when shifting to another form."
+  },
+  "173958": {
+   "name": "Mech Form Shift",
+   "Ap": "0",
+   "CD": "0",
+   "icon": "Icon_skill_order_5171",
+   "effect": "Consumes <color=#F74848>2</color> <buf ID=173903>[Shift Energy]</buf> to shift to <buf ID=173900>[Mech Form]</buf>, allowing another action with full Movement."
+  },
+  "173959": {
+   "name": "Cruise Form Shift",
+   "Ap": "0",
+   "CD": "0",
+   "icon": "Icon_skill_order_5172",
+   "effect": "Consumes <color=#F74848>2</color> <buf ID=173903>[Shift Energy]</buf> to shift to <buf ID=173901>[Cruise Form]</buf>, allowing another action with full Movement."
   }
  },
  "terrain": {
