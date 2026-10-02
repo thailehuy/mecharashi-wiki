@@ -6,11 +6,11 @@
   "Occupation": "Machinist",
   "Talent0_2Ability": {
     "name": "Coexistence Theory",
-    "SpecificEffects": "Auto deploy <buf ID=1099900>[Goo Goo]</buf> after sortie. <buf ID=1099900>[Goo Goo]</buf> can protect allies within <color=#F74848>1</color> adjacent tile from melee, assault and ranged attack. <buf ID=1099900>[Goo Goo]</buf> inherits <color=#F74848>75%</color> max HP and <color=#F74848>100%</color> of other attributes from [Sapientia]."
+    "SpecificEffects": "Automatically deploys <buf ID=1099900>[Guggle]</buf> when entering the battlefield. <buf ID=1099900>[Guggle]</buf> can block Melee, Assault, and Ranged Weapon attacks for allies within <color=#F74848>1</color> adjacent block. <buf ID=1099900>[Guggle]</buf> inherits <color=#F74848>75%</color> of Sapientia's ST's Max HP and <color=#F74848>100%</color> of its other attributes."
   },
   "Talent3_5Ability": {
     "name": "Coexistence Theory",
-    "SpecificEffects": "Auto deploy <buf ID=1099900>[Goo Goo]</buf> after sortie. <buf ID=1099900>[Goo Goo]</buf> can protect allies within <color=#F74848>1</color> adjacent tile from melee, assault and ranged attack. <buf ID=1099900>[Goo Goo]</buf> inherits <color=#F74848>75%</color> max HP and <color=#F74848>100%</color> of other attributes from [Sapientia].\n<buf ID=1099900>[Goo Goo]</buf>'s armor is increased by <color=#F74848>35%</color>, DMG taken is reduced by <color=#F74848>10%</color>, and <buf ID=1099900>[Goo Goo]</buf> gains <color=#F74848>1</color> additional AP upon deployment."
+    "SpecificEffects": "Automatically deploys <buf ID=1099900>[Guggle]</buf> when entering the battlefield. <buf ID=1099900>[Guggle]</buf> can block Melee, Assault, and Ranged Weapon attacks for allies within <color=#F74848>1</color> adjacent block. <buf ID=1099900>[Guggle]</buf> inherits <color=#F74848>75%</color> of Sapientia's ST's Max HP and <color=#F74848>100%</color> of its other attributes.\n<buf ID=1099900>[Guggle]</buf>'s Armor is increased by <color=#F74848>35%</color>, its DMG Taken is reduced by <color=#F74848>10%</color>, and it gains an extra <color=#F74848>1</color> AP when deployed."
   },
   "skills": {
     "500001": {
@@ -19,57 +19,57 @@
       "SpecificEffects": "In cooperation with allies, launch a <buf ID=900002>[Link Attack]</buf> against the target, dealing <color=#F74848>0.2x</color> DMG, effective up to <color=#F74848>1</color> time per turn."
     },
     "700015": {
-      "name": "Rotation",
+      "name": "Strategic Redundancy",
       "describe": "",
-      "SpecificEffects": "At the end of the action, if no damage was dealt this turn, restore <color=#F74848>1</color> AP."
+      "SpecificEffects": "At end of action, if no damage was dealt this turn, restores <color=#F74848>1</color> AP."
     },
     "500803": {
       "name": "Damage Control",
       "describe": "",
-      "SpecificEffects": "While being within <color=#F74848>2</color> tiles around <buf ID=1099900>[Goo Goo]</buf>, DMG taken is reduced by <color=#F74848>20%</color>."
+      "SpecificEffects": "When <buf ID=1099900>[Guggle]</buf> is within <color=#F74848>2</color> adjacent tiles, DMG Taken <color=#F74848>-20%</color>."
     },
     "500804": {
-      "name": "Synchronization Repair",
-      "describe": "Restores HP of all allies within <range type=2>2-tile</range> diamond around <buf ID=1099900>[Goo Goo]</buf> and this unit for <color=#F74848>0.85</color> Manipulator Repair AMT. Can restore <color=#F74848>1</color> destroyed part.",
+      "name": "Synchronized Maintenance",
+      "describe": "Restores HP to self and all allies within a <range type=2>2-tile diamond area</range> around <buf ID=1099900>[Guggle]</buf>. Repair AMT is equal to <color=#F74848>0.85x</color> Manipulator Repair AMT. Can repair <color=#F74848>1</color> destroyed part.",
       "SpecificEffects": ""
     },
     "500805": {
-      "name": "Safety Protocol",
+      "name": "Security Topology",
       "describe": "",
-      "SpecificEffects": "After active repairs, grants <buf ID=1099905>[Command Block Immunity]</buf> to the targets, lasting for <color=#F74848>2</color> turns."
+      "SpecificEffects": "After performing active repairs, grants <buf ID=1099905>[Immune to Code Inhibition]</buf> to the target, lasting for <color=#F74848>2</color> turns."
     },
     "500806": {
-      "name": "Double Preparation",
-      "describe": "Selects <color=#F74848>2</color> separated allies within <color=#F74848>4</color> adjacent tiles, restores <color=#F74848>1.75</color> Manipulator Repair AMT to all parts. Can restore <color=#F74848>1</color> destroyed part.",
+      "name": "Dual Maintenance",
+      "describe": "Selects <color=#F74848>2</color> allies within a <color=#F74848>4</color>-tile range. Restores HP to all parts of selected STs. Repair AMT is equal to <color=#F74848>1.75x</color> Manipulator Repair AMT. Can repair <color=#F74848>1</color> destroyed part.",
       "SpecificEffects": ""
     },
     "500807": {
-      "name": "Integrity Validation",
+      "name": "Integrity Verification",
       "describe": "",
-      "SpecificEffects": "<buf ID=1099900>[Goo Goo]</buf> restores <color=#F74848>35%</color> HP to the lowest HP part at the end of turn."
+      "SpecificEffects": "At the end of <buf ID=1099900>[Guggle]</buf>'s action, restores <color=#F74848>35%</color> of Max HP to the part with the lowest HP."
     },
     "500808": {
       "name": "Optimal Reconstruction",
-      "describe": "Restores HP equal to <color=#F74848>2.6</color> Manipulator Repair AMT to all parts of a target and restores all destroyed parts. Also refreshes the turn count of all buffs and reduces CD of <color=#F74848>1</color> active command skill by <color=#F74848>1</color> turn.",
+      "describe": "Restores HP equal to <color=#F74848>2.6x</color> Manipulator Repair AMT to all parts of a single ST. Can repair all destroyed parts, refreshes the remaining turn count of all buffs, and reduces the active cooldown of <color=#F74848>1</color> Code by <color=#F74848>1</color> turn.",
       "SpecificEffects": ""
     },
     "500809": {
-      "name": "Regulated Repair",
+      "name": "Standard Diagnostics",
       "SkillIcon": "Icon_skill_order_3103",
-      "describe": "Restores HP equal to <color=#F74848>2.0</color>x Manipulator Repair AMT to all parts of a single ST. Can repair <color=#F74848>1</color> destroyed part. If the target is <buf ID=1099900>[Goo Goo]</buf>, grants <buf ID=7100901>[Movement Up]</buf> for <color=#F74848>1</color> turn.",
+      "describe": "Restores HP equal to <color=#F74848>2.0x</color> Manipulator Repair AMT to all parts of a single ST. Can repair <color=#F74848>1</color> destroyed part. If the target is <buf ID=1099900>[Guggle]</buf>, additionally applies <buf ID=7100901>[Movement UP]</buf>, lasting for <color=#F74848>1</color> turn.",
       "SpecificEffects": ""
     }
   },
   "summonSkills": [
     {
-      "name": "Super Goo Goo!",
+      "name": "Super Guggle!",
       "describe": "",
-      "SpecificEffects": "Can use <buf ID=1099901>[Support Defend]</buf> to protect allies within <color=#F74848>1</color> adjacent tile from melee, assault and ranged attack. This effect can trigger up to <color=#F74848>3</color> times per turn. Gains <color=#F74848>1</color> AP after triggering.",
+      "SpecificEffects": "Performs <buf ID=1099901>[Guard]</buf>, protecting allies within <color=#F74848>1</color> adjacent tile from Melee, Assault, and Ranged attacks. Can trigger up to <color=#F74848>3</color> times per turn. When performing <buf ID=1099901>[Guard]</buf>, restores <color=#F74848>1</color> AP after combat.",
       "icon": "Icon_skill_passive_5295"
     },
     {
-      "name": "For The Greater Goo-Good!",
-      "describe": "Protect allies within <color=#F74848>2</color> adjacent tiles from melee, assault and ranged attack. This effect can trigger up to <color=#F74848>3</color> times per turn, lasting for <color=#F74848>2</color> turns. Also grants <buf ID=1099902>[Short Circuit Impact!]</buf> for <color=#F74848>2</color> turns, and allows the unit to move <color=#F74848>2</color> additional tiles.",
+      "name": "Guggle's Grand Plan!",
+      "describe": "Protects allies within <color=#F74848>2</color> adjacent tiles from Melee, Assault, and Ranged attacks. Can trigger up to <color=#F74848>3</color> times per turn. Lasts for <color=#F74848>2</color> turns. Additionally, gains <buf ID=1099902>[Short-Circuit Strike!]</buf> for <color=#F74848>2</color> turns, then gains <color=#F74848>2</color> Extra Movement.",
       "SpecificEffects": "",
       "type": "Order",
       "Ap": "1",
@@ -77,8 +77,8 @@
       "icon": "Icon_skill_order_1031"
     },
     {
-      "name": "Keep On Goo-Gooing!",
-      "describe": "Restores <color=#F74848>2</color> AP to an ally within <color=#F74848>2</color> adjacent tiles.",
+      "name": "Guggle's Encouragement!",
+      "describe": "Selects <color=#F74848>1</color> other ally within a <color=#F74848>2</color>-block range and restores <color=#F74848>2</color> AP to them.",
       "SpecificEffects": "",
       "type": "Order",
       "Ap": "4",
@@ -86,8 +86,8 @@
       "icon": "Icon_skill_order_5002"
     },
     {
-      "name": "Goo-Goo-Goo-Goone!",
-      "describe": "Swap position with an ally within <color=#F74848>3</color> adjacent tiles. Can continue to move with remaining movement.",
+      "name": "Guggle's Star Shift!",
+      "describe": "Can select any <color=#F74848>1</color> ally within <color=#F74848>3</color> adjacent tiles, swap positions with them, and then continue to act using remaining Movement.",
       "SpecificEffects": "",
       "type": "Order",
       "Ap": "1",
@@ -145,8 +145,8 @@
       "SpecificEffects": "The number of targets that <buf ID=900018>[Passive Repair]</buf> can repair increases by <color=#F74848>1</color>."
     },
     "500841": {
-      "name": "Machine Intelligence 1",
-      "SpecificEffects": "Repair skills targeting <buf ID=1099900>[Goo Goo]</buf> can ignore range restriction."
+      "name": "Intelligent Mecha Innovation 1",
+      "SpecificEffects": "When casting an active repair skill on <buf ID=1099900>[Guggle]</buf>, ignores distance."
     },
     "500042": {
       "name": "AP Optimization 4",
@@ -154,19 +154,19 @@
     },
     "500043": {
       "name": "Part Maintenance 3",
-      "SpecificEffects": "Each turn, the AP Cost of the 1st repair skill decreases by <color=#F74848>1</color>, with a minimum cost of <color=#F74848>1</color> AP."
+      "SpecificEffects": "Each turn, the AP Cost of the 1st repair skill used decreases by <color=#F74848>1</color>, with a minimum cost of <color=#F74848>1</color> AP."
     },
     "500844": {
-      "name": "Machine Intelligence 2",
-      "SpecificEffects": "<buf ID=1099900>[Goo Goo]</buf> inherits <color=#F74848>100%</color> of [Sapientia] HP."
+      "name": "Intelligent Mecha Innovation 2",
+      "SpecificEffects": "<buf ID=1099900>[Guggle]</buf> inherits <color=#F74848>100%</color> of [Sapientia]'s HP."
     },
     "500845": {
-      "name": "Machine Intelligence 3",
-      "SpecificEffects": "While <buf ID=1099900>[Goo Goo]</buf> is present, [Sapientia]'s Repair AMT is increased by <color=#F74848>15%</color>, and she is immune to <buf ID=1099903>[Command Block]</buf> effect."
+      "name": "Intelligent Mecha Innovation 3",
+      "SpecificEffects": "When <buf ID=1099900>[Guggle]</buf> is present, [Sapientia]'s Repair AMT increases by <color=#F74848>15%</color>, and she is immune to <buf ID=1099903>[Code Inhibition]</buf> effects."
     },
     "500846": {
-      "name": "Machine Intelligence 4",
-      "SpecificEffects": "Allies within <color=#F74848>2</color> adjacent tiles around <buf ID=1099900>[Goo Goo]</buf> can be targeted with Repair skills."
+      "name": "Intelligent Mecha Innovation 4",
+      "SpecificEffects": "Allies within <color=#F74848>2</color> adjacent tiles of <buf ID=1099900>[Guggle]</buf> can also be targets of active repair skills."
     }
   },
   "version": "2.3"

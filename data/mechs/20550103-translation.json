@@ -7,12 +7,12 @@
       "SpecificEffects": "Dodge Rate <color=#F74848>+10%</color>."
     },
     "20524": {
-      "name": "Watcher Mod",
-      "SpecificEffects": "After active repair, grants <buf ID=7100305>[DMG UP III]</buf> to all targets, lasting for <color=#F74848>2</color> turns. If the target already possesses <buf ID=7100300>[DMG UP]</buf> buff, increases the buff level by <color=#F74848>1</color>, up to <buf ID=7100309>[DMG UP V]</buf>."
+      "name": "Sentinel Unit",
+      "SpecificEffects": "After performing active repairs, applies <buf ID=7100305>[DMG UP III]</buf> to all repaired targets, lasting for <color=#F74848>2</color> turns. If the target already has a <buf ID=7100300>[DMG UP]</buf> effect, increases the effect by <color=#F74848>1</color> level, up to a maximum of <buf ID=7100309>[DMG UP V]</buf>."
     },
     "30428": {
-      "name": "Life Support Mod",
-      "SpecificEffects": "When executing active repairs, increases repair AMT by <color=#F74848>12%</color>, with an additional <color=#F74848>24%</color> to the lowest HP part.\nWhen this unit or their summon unit suffers overdamage, they will not be destroyed. After combat, fully repairs all destroyed parts as well as fully restores HP to all parts of all allies within <color=#F74848>2</color> adjacent tiles with <color=#F74848>30%</color> of their max HP or less. This effect can trigger up to <color=#F74848>1</color> times per battle."
+      "name": "Sustain Mod",
+      "SpecificEffects": "When performing active repairs, Repair AMT increases by <color=#F74848>12%</color>, with an additional increase of <color=#F74848>24%</color> to the part with the lowest HP.\nThis unit and the first summoned unit will not be destroyed when taking fatal damage. After battle, repairs all destroyed parts and restores <color=#F74848>30%</color> of Max HP to all allies within a <color=#F74848>2</color>-block range. This effect can be activated <color=#F74848>1</color> time per deployment."
     }
   },
   "version": "2.3",

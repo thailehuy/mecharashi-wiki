@@ -965,19 +965,19 @@ window.GlossaryData = {
       "effect": "Critical hit chance increases by <color=#F74848>15%</color>. Critical hit DMG increases by <color=#F74848>10%</color>."
     },
     "1099900": {
-      "name": "Goo Goo",
-      "effect": "[Sapientia]'s personal ST that is deployed automatically when sortie, possesses skills [Super Goo Goo!], [Goo Goo Cover!], [Goo Goo Boost!] and [Goo Goo Shift!]."
+      "name": "Guggle",
+      "effect": "[Sapientia]'s personal ST that is deployed automatically when entering the battlefield, possesses skills [Super Guggle!], [Guggle's Grand Plan!], [Guggle's Encouragement!] and [Guggle's Star Shift!]."
     },
     "1099901": {
-      "name": "Support Defend",
+      "name": "Guard",
       "effect": "Blocks attacks from a specific weapon type for an ally within <color=#F74848>1</color> adjacent tile."
     },
     "1099902": {
-      "name": "Short Circuit Impact!",
-      "effect": "When attacked, applies [Short Circuit III] to the attacker after combat with effect: At the end of the action, all body parts lose <color=#F74848>7%</color> of their maximum HP as [Fixed DMG]. This [Fixed DMG] increases by <color=#F74848>1%</color> for each debuff the target carries, up to a maximum of <color=#F74848>12%</color>. This [Fixed DMG] cannot destroy parts."
+      "name": "Short-Circuit Strike!",
+      "effect": "When attacked, inflicts <buf ID=1099904>[Short Circuit III]</buf> on the target after combat."
     },
     "1099903": {
-      "name": "Command Block",
+      "name": "Code Inhibition",
       "effect": "Cannot execute command skills."
     },
     "1099904": {
@@ -985,8 +985,8 @@ window.GlossaryData = {
       "effect": "At the end of the action, all body parts lose <color=#F74848>7%</color> of their maximum HP as [Fixed DMG]. This [Fixed DMG] increases by <color=#F74848>1%</color> for each debuff the target carries, up to a maximum of <color=#F74848>12%</color>. This [Fixed DMG] cannot destroy parts."
     },
     "1099905": {
-      "name": "Command Block Immunity",
-      "effect": "Immune to <buf ID=1099903>[Command Block]</buf> effect."
+      "name": "Immune to Code Inhibition",
+      "effect": "Immune to <buf ID=1099903>[Code Inhibition]</buf> effects."
     },
     "1099906": {
       "name": "Blur III",
@@ -1189,8 +1189,8 @@ window.GlossaryData = {
       "effect": "Each stack reduces Crit Rate and Crit DMG by <color=#F74848>3%</color>."
     },
     "5008941": {
-      "name": "You Forgoo-Goot Me!",
-      "effect": "When actively attacking targets other than <buf ID=1099900>[Goo Goo]</buf>, DMG dealt <color=#F74848>-25%</color>. Removed after taking effect."
+      "name": "Guggle's Forever!",
+      "effect": "When actively attacking targets other than <buf ID=1099900>[Guggle]</buf>, DMG dealt <color=#F74848>-25%</color>. Removed after taking effect."
     },
     "531145": {
       "name": "Magnetic Buff",
@@ -1559,10 +1559,10 @@ window.GlossaryData = {
       "effect": "Applies <buf ID=900151>[Reset]</buf> to [Audrey] who has finished her action, allowing [Audrey] to act again and gain <color=#F74848>2</color> AP. Grants <buf ID=900149>[Leader Crest]</buf> and <buf ID=9001544>[Convergence]</buf> to [Audrey] as well as <buf ID=900152>[Concealed Edge]</buf> to self, lasting for 1 turn."
     },
     "500894": {
-      "name": "It's a Goo-Good Day to Die!",
+      "name": "Heroic Guggle!",
       "Ap": "4",
       "icon": "Icon_skill_order_1125",
-      "effect": "Uses a Machine Gun to attack all targets within a <range type=2>3x3 tile area</range> in front, dealing <color=#F74848>0.6x</color> AoE DMG, and inflicts <buf ID=5008941>[You Forgoo-Goot Me!]</buf> on targets hit."
+      "effect": "Uses a Machine Gun to attack all targets within a <range type=2>3x3 tile area</range> in front, dealing <color=#F74848>0.6x</color> AoE DMG, and inflicts <buf ID=5008941>[Guggle's Forever!]</buf> on targets hit."
     },
     "8001504": {
       "name": "Particle Burst",
@@ -1952,7 +1952,7 @@ window.GlossaryData = {
       "Ap": "0",
       "CD": "0",
       "icon": "Icon_skill_order_1140",
-      "effect": "If the target actively uses a Command Skill this turn, inflicts <buf ID=1099903>[Command Block]</buf> to the target, lasting for <color=#F74848>1</color> turn. Otherwise, inflicts <color=#F74848>2</color> stacks of <buf ID=4012502>[Structural Damage]</buf> to the target. This effect is removed after triggering."
+      "effect": "If the target actively uses a Command Skill this turn, inflicts <buf ID=1099903>[Code Inhibition]</buf> to the target, lasting for <color=#F74848>1</color> turn. Otherwise, inflicts <color=#F74848>2</color> stacks of <buf ID=4012502>[Structural Damage]</buf> to the target. This effect is removed after triggering."
     },
     "4012042": {
       "name": "Weapon Override",
