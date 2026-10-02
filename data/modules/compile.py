@@ -307,6 +307,17 @@ MANUAL_MODULE_LEVELS = {
         'tags': [0],
         'ladder': [(pct,) for pct in ['4', '6', '8', '10', '14', '16', '18', '24']],
     },
+    # Stargazer Unit (Asteria): no scaling numbers; the end-of-turn AP /
+    # [Shift Energy] and [Lustre] CP clause only unlocks at max level.
+    '9040': {
+        'name': 'Stargazer Unit',
+        'icon': 'Icon_skill_passive_5319',
+        'category': 'GeneralSuit',
+        'maxLevel': 2,
+        'bonusAtMax': True,
+        'tags': [],
+        'ladder': [(), ()],
+    },
 }
 
 LEADING_NUM_RE = re.compile(r'\d+(?:\.\d+)?')

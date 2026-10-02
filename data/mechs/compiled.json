@@ -533,6 +533,18 @@
           "weight": 3,
           "id": "9034",
           "level": 8
+        },
+        {
+          "ID": "90402",
+          "name": "Stargazer Unit",
+          "SpecificEffects": "Removes restriction, grants effect: <buf ID=173900>[Mech Form]</buf>: when actively attacking, if Hit Rate is <color=#F74848>90%</color> or more, this attack cannot miss. <buf ID=173901>[Cruise Form]</buf>: Movement <color=#F74848>+1</color>, Vision range <color=#F74848>+1</color>.\nAt the end of turn, if <buf ID=173904>[Configuration Shift]</buf> has been used <color=#F74848>2</color> or more times, gains <color=#F74848>1</color> AP, otherwise gains <color=#F74848>1</color> <buf ID=173903>[Shift Energy]</buf>. When piloted by [Lustre], CP <color=#F74848>+3</color> in the lowest unlocked Neural Drive Sector.",
+          "BufCarried": "904021",
+          "SkillIcon": "Icon_skill_passive_5319",
+          "icon": "Icon_skill_passive_5319",
+          "Status": 1,
+          "weight": 4,
+          "id": "9040",
+          "level": 2
         }
       ],
       "version": "3.5",
