@@ -12,12 +12,6 @@ var BUILDER_WEAPON_POSITION_FALLBACK = {
   Missile: 'Shoulder', Rocket: 'Shoulder',
 };
 
-// A pilot's innate skill (always active, not player-chosen) is normally
-// identified by the "<profession>00001" ID pattern (professions 1-7).
-// Hailis's Shifter profession (8) doesn't follow that numbering, so her
-// innate (Form Shift 1) is called out by ID instead — mirrors js/pages/pilots.js.
-var BUILDER_EXTRA_INNATE_IDS = { '800101': true };
-
 // Rail Gun (WeaponType2 RailGun) and Manipulator (the Heal-type backpack)
 // are hand-restricted to Medium mechs in the source data, but a handful of
 // pilots' talents explicitly override that ("Can equip Railgun...") in
@@ -484,7 +478,9 @@ Pages.builder = {
   },
 
   _isInnateSkillEntry: function (e) {
-    return /^[1-7]00001$/.test(e.skill3 || '') || !!BUILDER_EXTRA_INNATE_IDS[e.skill3];
+    // A pilot's innate skill (always active, not player-chosen) lives on the
+    // Profession Neuron (UnitType 6) — mirrors js/pages/pilots.js.
+    return e.UnitType === '6';
   },
 
   // A pilot's selectable skill pool is every "core unit" chip entry that

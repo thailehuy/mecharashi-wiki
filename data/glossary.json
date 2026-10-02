@@ -1411,6 +1411,52 @@
   "185905": {
    "name": "Flame Surge",
    "effect": "Reduces AP cost of Flamethrower active attacks by <color=#F74848>1</color>, to a minimum of <color=#F74848>1</color> AP. Consumes <color=#F74848>1</color> stack upon triggering. Stacks up to <color=#F74848>2</color> times."
+  },
+  "173900": {
+   "name": "Mech Form",
+   "kind": "form",
+   "effect": "Can only use Assault, Melee and Ranged weapons. DMG dealt increases by <color=#F74848>+20%</color>, DMG taken is reduced by <color=#F74848>20%</color>, Critical Hit chance increases by <color=#F74848>10%</color>."
+  },
+  "173901": {
+   "name": "Cruise Form",
+   "kind": "form",
+   "effect": "Weapons are fixed to <buf ID=173908>[Night Ember]</buf> and <buf ID=173909>[Mystic Arc]</buf> and the weapon loadout cannot be changed. Movement type becomes <buf ID=173902>[Flying]</buf>. Movement <color=#F74848>+1</color>, Dodge Rate increases by <color=#F74848>20%</color>."
+  },
+  "173902": {
+   "name": "Flying",
+   "effect": "Ignores low obstacles and unit collision while moving, and can stop over low obstacles. Melee weapons can attack flying targets. Immune to melee attacks. Does not trigger ground-based terrain effects. Vision can span over low obstacles in Mist Mode."
+  },
+  "173903": {
+   "name": "Shift Energy",
+   "effect": "Can be used for <buf ID=173904>[Configuration Shift]</buf>. Stacks up to <color=#F74848>5</color> times."
+  },
+  "173904": {
+   "name": "Configuration Shift",
+   "effect": "Shifts the ST form based on the situation."
+  },
+  "173905": {
+   "name": "Steady Guard",
+   "effect": "Final DMG taken is reduced by <color=#F74848>50%</color>. This effect is removed after triggering."
+  },
+  "173906": {
+   "name": "Offense Boost",
+   "effect": "DMG dealt increases by <color=#F74848>25%</color> for this action. This effect is removed after this action."
+  },
+  "173907": {
+   "name": "Evasion Boost",
+   "effect": "Dodge Rate increases by <color=#F74848>15%</color> for this action. This effect is removed after this action."
+  },
+  "107090": {
+   "name": "Storm Surge",
+   "effect": "DMG dealt increases by <color=#F74848>5%</color>, Critical Hit chance increases by <color=#F74848>4%</color>. Each stack lasts for <color=#F74848>2</color> turns."
+  },
+  "173908": {
+   "name": "Night Ember",
+   "effect": "Fixed Machine Gun type weapon equipped in <buf ID=173901>[Cruise Form]</buf>."
+  },
+  "173909": {
+   "name": "Mystic Arc",
+   "effect": "Fixed Alter-Blade type weapon equipped in <buf ID=173901>[Cruise Form]</buf>."
   }
  },
  "skill": {
@@ -1527,6 +1573,7 @@
   },
   "800159": {
    "name": "Virtual Particle Form",
+   "kind": "form",
    "effect": "The restricted state of particle form. Accumulating <color=#F74848>5</color> stacks of <buf ID=900199>[Particle Energy]</buf> allows the usage of <skill activeSkill=8001504>[Particle Burst]</skill> to remove this restriction. Cannot change weapon or skills in this form. Can only use <skill activeSkill=7300431 noDisplay>[Particle Blade]</skill>, <skill activeSkill=7300441 noDisplay>[Particle Cannon]</skill> and <skill activeSkill=7300451 noDisplay>[Particle Matrix]</skill>. Returns to current form after <color=#F74848>2</color> actions. Cannot be targeted by <buf ID=900023>[Quick Draw]</buf>, <buf ID=900013>[Vigilant Shot]</buf>, <buf ID=900006>[Reaction Attack]</buf> and <buf ID=900136>[Insight]</buf>."
   },
   "7300431": {
@@ -2014,6 +2061,62 @@
    "CD": "0",
    "icon": "Icon_skill_order_5170",
    "effect": "Selects an empty tile within <color=#F74848>5</color> adjacent tiles and jumps to it, then triggers <buf ID=900005>[Re-Act]</buf>. If in <buf ID=185900>[Bunker]</buf> state, exits the state and resets the CD of <skill ID=185950>[Bunker Down]</skill>. This skill can only be used <color=#F74848>1</color> time per turn and only when legs are intact."
+  },
+  "173950": {
+   "name": "Shadow Ray",
+   "Ap": "3",
+   "CD": "0",
+   "icon": "Icon_skill_main_1118",
+   "effect": "Uses a Machine Gun to attack a target, dealing <color=#F74848>1.25</color>x DMG. Critical Hit chance increases by <color=#F74848>20%</color> for this attack."
+  },
+  "173951": {
+   "name": "Tainted Blade",
+   "Ap": "3",
+   "CD": "0",
+   "icon": "Icon_skill_main_1162",
+   "effect": "Uses an Alter-Blade to attack a target, dealing <color=#F74848>1.6</color>x DMG. This attack hits the part with the highest HP."
+  },
+  "173952": {
+   "name": "Star Chaser",
+   "Ap": "3",
+   "CD": "0",
+   "icon": "Icon_skill_order_1164",
+   "effect": "Uses an Alter-Blade to attack a target within <color=#F74848>4</color> adjacent tiles, dealing <color=#F74848>1.3</color>x DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking. After combat, selects an ally within <color=#F74848>4</color> adjacent tiles and warps them."
+  },
+  "173953": {
+   "name": "Moon Raker",
+   "Ap": "3",
+   "CD": "0",
+   "icon": "Icon_skill_order_1164",
+   "effect": "Dashes <color=#F74848>4</color> tiles in the selected direction using <buf ID=173909>[Mystic Arc]</buf>, dealing <color=#F74848>1.2</color>x AoE DMG to all targets hit (including flying units). This attack prioritizes hitting the body. Before activation, selects an ally within <color=#F74848>2</color> adjacent tiles to warp to this unit's side after the dash."
+  },
+  "173954": {
+   "name": "Void Crown",
+   "Ap": "4",
+   "CD": "0",
+   "icon": "Icon_skill_order_1165",
+   "effect": "Uses an Alter-Blade to attack all targets within an <range type=2>I-shaped (3x1-tile)</range> or <range type=2>L-shaped (3x1-tile)</range> area ahead. Before attacking, can Aim at each target separately, dealing <color=#F74848>1.6</color>x AoE DMG. If this attack destroys a part, gains <color=#F74848>1</color> <buf ID=173903>[Shift Energy]</buf>."
+  },
+  "173955": {
+   "name": "Falling Sky",
+   "Ap": "4",
+   "CD": "0",
+   "icon": "Icon_skill_main_1129",
+   "effect": "Uses a Machine Gun to attack a target, dealing <color=#F74848>1.45</color>x DMG. Hit Weighting of the part with the lowest HP <color=#F74848>+50</color>. If this attack destroys a part, gains <color=#F74848>1</color> <buf ID=173903>[Shift Energy]</buf>."
+  },
+  "173956": {
+   "name": "Night Requiem",
+   "Ap": "4",
+   "CD": "0",
+   "icon": "Icon_skill_main_1105",
+   "effect": "Uses a Machine Gun to attack a target, dealing <color=#F74848>1.2</color>x DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before combat. This attack prioritizes the aimed part. If this unit is not destroyed after combat, all parts are restored to their pre-combat HP and the target suffers <buf ID=900017>[Fixed DMG]</buf> equal to the DMG this unit took during combat."
+  },
+  "173957": {
+   "name": "Sky's Edge",
+   "Ap": "4",
+   "CD": "0",
+   "icon": "Icon_skill_order_1166",
+   "effect": "Selects a target within <color=#F74848>4</color> tiles in a straight line and dashes toward it, using <buf ID=173909>[Mystic Arc]</buf> to deal <color=#F74848>1.4</color>x AoE DMG to the target's body. This attack cannot miss, and deals <color=#F74848>35%</color> of that DMG as <buf ID=900017>[Fixed DMG]</buf> to the bodies of all enemy units within <color=#F74848>2</color> adjacent tiles of the target."
   }
  },
  "terrain": {

@@ -287,6 +287,26 @@ MANUAL_MODULE_LEVELS = {
             ('7', '3.5'), ('8', '4'), ('9', '4.5'), ('12', '6'),
         ]],
     },
+    # Radiant Core (Asteria): deployment [Storm Surge] stacks and stack cap.
+    '9024': {
+        'name': 'Radiant Core',
+        'icon': 'Icon_skill_passive_5318',
+        'category': 'GeneralSuit',
+        'maxLevel': 4,
+        'tags': [0, 1],
+        'ladder': [('1', '2'), ('1', '3'), ('1', '4'), ('2', '5')],
+    },
+    # Xeno-Gear Module (Asteria): DMG%; the next-attack multiplier clause
+    # only unlocks at max level.
+    '9034': {
+        'name': 'Xeno-Gear Module',
+        'icon': 'Icon_entry_10113',
+        'category': 'GeneralSuit',
+        'maxLevel': 8,
+        'bonusAtMax': True,
+        'tags': [0],
+        'ladder': [(pct,) for pct in ['4', '6', '8', '10', '14', '16', '18', '24']],
+    },
 }
 
 LEADING_NUM_RE = re.compile(r'\d+(?:\.\d+)?')

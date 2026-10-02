@@ -445,6 +445,100 @@
       "enTranslation": true
     },
     {
+      "ID": "10700103",
+      "name": "Asteria",
+      "type": "Light",
+      "quality": "SSR",
+      "icon": "Icon_mecha_wap1070",
+      "mechaIcon": "Icon_wap1070_1",
+      "lihuiIcon": "icon_lihui_wap1070",
+      "introduce": "",
+      "output": "1785",
+      "durable": "352",
+      "Armor": "48",
+      "fire": "123",
+      "Antiriot": "770",
+      "parts": [
+        {
+          "position": "Body",
+          "aircraftWeight": "270",
+          "maxHp": "9536",
+          "Armor": "470",
+          "Hit": null,
+          "Dodge": null,
+          "Antiriot": "4472"
+        },
+        {
+          "position": "L-Arm",
+          "aircraftWeight": "105",
+          "maxHp": "4809",
+          "Armor": "313",
+          "Hit": "1974",
+          "Dodge": null,
+          "Antiriot": null
+        },
+        {
+          "position": "R-Arm",
+          "aircraftWeight": "105",
+          "maxHp": "4809",
+          "Armor": "313",
+          "Hit": "1974",
+          "Dodge": null,
+          "Antiriot": null
+        },
+        {
+          "position": "Legs",
+          "aircraftWeight": "155",
+          "maxHp": "7896",
+          "Armor": "313",
+          "Hit": null,
+          "Dodge": "5233",
+          "Antiriot": null
+        }
+      ],
+      "manjiFirepower": "1225",
+      "modules": [
+        {
+          "ID": "90244",
+          "name": "Radiant Core",
+          "SpecificEffects": "Upon deployment, gains <color=#F74848>2</color> stacks of <buf ID=107090>[Storm Surge]</buf>, up to <color=#F74848>5</color> stacks. After acting, if there are enemy units within <color=#F74848>3</color> adjacent tiles, gains <color=#F74848>1</color> stack of <buf ID=107090>[Storm Surge]</buf>.",
+          "BufCarried": "902441",
+          "SkillIcon": "Icon_skill_passive_5318",
+          "icon": "Icon_skill_passive_5318",
+          "Status": 1,
+          "weight": 1,
+          "id": "9024",
+          "level": 4
+        },
+        {
+          "ID": "40274",
+          "name": "Firepower Module",
+          "SpecificEffects": "Firepower <color=#F74848>+10%</color>.",
+          "BufCarried": "402741",
+          "SkillIcon": "Icon_skill_passive_1126",
+          "icon": "Icon_skill_passive_1126",
+          "Status": 1,
+          "weight": 2,
+          "id": "4027",
+          "level": 4
+        },
+        {
+          "ID": "90348",
+          "name": "Xeno-Gear Module",
+          "SpecificEffects": "DMG dealt increases by <color=#F74848>24%</color> while equipped with <color=#F74848>2</color> different weapon types.\nAfter an action, the DMG multiplier of the next active attack increases by <color=#F74848>+0.1</color>.",
+          "BufCarried": "903481",
+          "SkillIcon": "Icon_entry_10113",
+          "icon": "Icon_entry_10113",
+          "Status": 1,
+          "weight": 3,
+          "id": "9034",
+          "level": 8
+        }
+      ],
+      "version": "3.5",
+      "enTranslation": true
+    },
+    {
       "ID": "20190103",
       "name": "Aurora",
       "type": "Medium",
@@ -643,6 +737,8 @@
           "level": 8
         }
       ],
+      "dispatchGroup": "Arsenal",
+      "dispatchVersion": "3.6",
       "version": "3.5",
       "enTranslation": true
     },
@@ -4483,6 +4579,8 @@
           "level": 8
         }
       ],
+      "dispatchGroup": "GeekX",
+      "dispatchVersion": "3.6",
       "version": "3.3",
       "enTranslation": true
     },
@@ -4577,6 +4675,8 @@
           "level": 8
         }
       ],
+      "dispatchGroup": "Sparkplug",
+      "dispatchVersion": "3.6",
       "version": "3.4",
       "enTranslation": true
     },
@@ -5267,6 +5367,8 @@
           "level": 8
         }
       ],
+      "dispatchGroup": "InnovativE",
+      "dispatchVersion": "3.6",
       "version": "3.4",
       "enTranslation": true
     },

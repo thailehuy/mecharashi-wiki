@@ -1,0 +1,189 @@
+{
+  "data": {
+    "data": [
+      {
+        "ID": "10700103",
+        "name": "Asteria",
+        "type": "Light",
+        "quality": "SSR",
+        "position": "Body",
+        "aircraftWeight": "270",
+        "durable": "352",
+        "Armor": "48",
+        "fire": "123",
+        "Antiriot": "770",
+        "output": "1785",
+        "Interface": "Ⅰ型接口",
+        "ModuleCarried": [
+          {
+            "ID": "90244",
+            "name": "Radiant Core",
+            "SpecificEffects": "Upon deployment, gains <color=#F74848>2</color> stacks of <buf ID=107090>[Storm Surge]</buf>, up to <color=#F74848>5</color> stacks. After acting, if there are enemy units within <color=#F74848>3</color> adjacent tiles, gains <color=#F74848>1</color> stack of <buf ID=107090>[Storm Surge]</buf>.",
+            "BufCarried": "902441",
+            "SkillIcon": "Icon_skill_passive_5318",
+            "icon": "Icon_skill_passive_5318",
+            "Status": 1,
+            "weight": 1,
+            "id": "9024",
+            "level": 4
+          },
+          {
+            "ID": "40274",
+            "name": "Firepower Module",
+            "SpecificEffects": "Firepower <color=#F74848>+10%</color>.",
+            "BufCarried": "402741",
+            "SkillIcon": "Icon_skill_passive_1126",
+            "icon": "Icon_skill_passive_1126",
+            "Status": 1,
+            "weight": 2,
+            "id": "4027",
+            "level": 4
+          },
+          {
+            "ID": "90348",
+            "name": "Xeno-Gear Module",
+            "SpecificEffects": "DMG dealt increases by <color=#F74848>24%</color> while equipped with <color=#F74848>2</color> different weapon types.\nAfter an action, the DMG multiplier of the next active attack increases by <color=#F74848>+0.1</color>.",
+            "BufCarried": "903481",
+            "SkillIcon": "Icon_entry_10113",
+            "icon": "Icon_entry_10113",
+            "Status": 1,
+            "weight": 3,
+            "id": "9034",
+            "level": 8
+          }
+        ],
+        "icon": "Icon_mecha_wap1070",
+        "introduce": "",
+        "mechaIcon": "Icon_wap1070_1",
+        "lihuiIcon": "icon_lihui_wap1070",
+        "AlternateSkins": [],
+        "Status": 1,
+        "weight": 1,
+        "manji": {
+          "name": "Asteria",
+          "durable": "9536",
+          "Armor": "470",
+          "fire": "1225",
+          "output": "1785",
+          "Antiriot": "4472",
+          "Interface": "Ⅱ型接口",
+          "ModuleCarried": [
+            {
+              "ID": "90244",
+              "name": "Radiant Core",
+              "SpecificEffects": "Upon deployment, gains <color=#F74848>2</color> stacks of <buf ID=107090>[Storm Surge]</buf>, up to <color=#F74848>5</color> stacks. After acting, if there are enemy units within <color=#F74848>3</color> adjacent tiles, gains <color=#F74848>1</color> stack of <buf ID=107090>[Storm Surge]</buf>.",
+              "BufCarried": "902441",
+              "SkillIcon": "Icon_skill_passive_5318",
+              "icon": "Icon_skill_passive_5318",
+              "Status": 1,
+              "weight": 1,
+              "id": "9024",
+              "level": 4
+            },
+            {
+              "ID": "40274",
+              "name": "Firepower Module",
+              "SpecificEffects": "Firepower <color=#F74848>+10%</color>.",
+              "BufCarried": "402741",
+              "SkillIcon": "Icon_skill_passive_1126",
+              "icon": "Icon_skill_passive_1126",
+              "Status": 1,
+              "weight": 2,
+              "id": "4027",
+              "level": 4
+            },
+            {
+              "ID": "90348",
+              "name": "Xeno-Gear Module",
+              "SpecificEffects": "DMG dealt increases by <color=#F74848>24%</color> while equipped with <color=#F74848>2</color> different weapon types.\nAfter an action, the DMG multiplier of the next active attack increases by <color=#F74848>+0.1</color>.",
+              "BufCarried": "903481",
+              "SkillIcon": "Icon_entry_10113",
+              "icon": "Icon_entry_10113",
+              "Status": 1,
+              "weight": 3,
+              "id": "9034",
+              "level": 8
+            }
+          ]
+        }
+      },
+      {
+        "ID": "10700103_ARM_L",
+        "name": "Asteria",
+        "type": "Light",
+        "quality": "SSR",
+        "position": "L-Arm",
+        "aircraftWeight": "105",
+        "durable": "174",
+        "Armor": "32",
+        "fire": "123",
+        "Hit": "340",
+        "ModuleCarried": [],
+        "introduce": "",
+        "mechaIcon": "Icon_wap1070_1",
+        "manji": {
+          "name": "Asteria",
+          "durable": "4809",
+          "Armor": "313",
+          "fire": "1225",
+          "Hit": "1974",
+          "Interface": "Ⅱ型接口",
+          "ModuleCarried": []
+        },
+        "icon": "Icon_mecha_wap1070"
+      },
+      {
+        "ID": "10700103_ARM_R",
+        "name": "Asteria",
+        "type": "Light",
+        "quality": "SSR",
+        "position": "R-Arm",
+        "aircraftWeight": "105",
+        "durable": "174",
+        "Armor": "32",
+        "fire": "123",
+        "Hit": "340",
+        "ModuleCarried": [],
+        "introduce": "",
+        "mechaIcon": "Icon_wap1070_1",
+        "manji": {
+          "name": "Asteria",
+          "durable": "4809",
+          "Armor": "313",
+          "fire": "1225",
+          "Hit": "1974",
+          "Interface": "Ⅱ型接口",
+          "ModuleCarried": []
+        },
+        "icon": "Icon_mecha_wap1070"
+      },
+      {
+        "ID": "10700103_LEGS",
+        "name": "Asteria",
+        "type": "Light",
+        "quality": "SSR",
+        "position": "Legs",
+        "aircraftWeight": "155",
+        "durable": "287",
+        "Armor": "32",
+        "fire": "123",
+        "Dodge": "901",
+        "move": "4000",
+        "ModuleCarried": [],
+        "introduce": "",
+        "mechaIcon": "Icon_wap1070_1",
+        "manji": {
+          "name": "Asteria",
+          "durable": "7896",
+          "Armor": "313",
+          "fire": "1225",
+          "Dodge": "5233",
+          "move": "4000",
+          "Interface": "Ⅱ型接口",
+          "ModuleCarried": []
+        },
+        "icon": "Icon_mecha_wap1070"
+      }
+    ]
+  }
+}

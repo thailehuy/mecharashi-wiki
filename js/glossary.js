@@ -53,6 +53,13 @@ var Glossary = (function () {
     }
   };
 
+  // A glossary entry can set `kind` to style it apart from a regular
+  // buf/skill — e.g. "form" for a Shifter's ST forms ([Mech Form]), which
+  // are states of the mech rather than real buffs.
+  function kindClass(entry) {
+    return entry && entry.kind ? ' kw-' + entry.kind : '';
+  }
+
   function parseEffects(text) {
     if (!text) return '';
 
@@ -72,7 +79,7 @@ var Glossary = (function () {
     text = text.replace(/<buf ID=(\d+)[^>]*>\[?([^\]<]*)\]?<\/buf>/g, function (_, id, name) {
       var key = '\x00KW' + (idx++) + '\x00';
       var entry = lookup('buf', id);
-      var cls = entry ? 'kw kw-buf' : 'kw kw-buf kw-unknown';
+      var cls = entry ? 'kw kw-buf' + kindClass(entry) : 'kw kw-buf kw-unknown';
       kwMap[key] = '<span class="' + cls + '" data-kw-type="buf" data-kw-id="' + id + '">[' + name + ']</span>';
       return key;
     });
@@ -80,7 +87,7 @@ var Glossary = (function () {
     text = text.replace(/<skill[^>]+?(?:mainSkill|activeSkill|passiveSkill|ID)=(\d+)[^>]*>\[?([^\]<]*)\]?<\/skill>/g, function (_, id, name) {
       var key = '\x00KW' + (idx++) + '\x00';
       var entry = lookup('skill', id);
-      var cls = entry ? 'kw kw-skill' : 'kw kw-skill kw-unknown';
+      var cls = entry ? 'kw kw-skill' + kindClass(entry) : 'kw kw-skill kw-unknown';
       kwMap[key] = '<span class="' + cls + '" data-kw-type="skill" data-kw-id="' + id + '">[' + name + ']</span>';
       return key;
     });
@@ -109,7 +116,7 @@ var Glossary = (function () {
       }
       var type = bufId ? 'buf' : skillId ? 'skill' : 'terrain';
       var id = bufId || skillId || terrainId;
-      kwMap[key] = '<span class="kw kw-' + type + '" data-kw-type="' + type + '" data-kw-id="' + id + '">[' + name + ']</span>';
+      kwMap[key] = '<span class="kw kw-' + type + kindClass(lookup(type, id)) + '" data-kw-type="' + type + '" data-kw-id="' + id + '">[' + name + ']</span>';
       return key;
     });
 

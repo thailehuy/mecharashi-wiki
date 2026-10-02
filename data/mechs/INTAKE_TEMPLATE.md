@@ -73,73 +73,74 @@ Checklist for whoever (or whichever agent) turns this into the JSON file:
 ## Basics
 
 - Mech ID: <8-digit numeric ID, check `ls data/mechs` for collisions>
-- Mech Name: Avalanche
-- Type (weight class): Heavy
+- Mech Name: Asteria
+- Type (weight class): Light
 - Quality: SSR
 - Game version introduced: 3.5
-- Dispatch version: 3.6
+- Dispatch version: N/A
 - Flavor text / lore description:
 
 ## Images
 <!-- icon is prefixed with data/unlisted/mechs/Icon/<Type>/ -->
 <!-- portrait (Raw) is prefixed with data/unlisted/mechs/Raw/<Type>/ -->
 <!-- alternate skins (if any) are prefixed with data/unlisted/mechs/Skins/<Type>/ -->
-- Icon file (all 4 parts share this): Icon_mecha_wap3034.png
-- Portrait/Raw file (Body only): Icon_mecha_wap3034_SN_Raw.png
-- mechaIcon (CDN key, per part, only if a CN CDN asset exists): Icon_wap3034_1
-- lihuiIcon (CDN key, Body only, only if a CN CDN asset exists): icon_lihui_wap3034
+- Icon file (all 4 parts share this): Icon_mecha_wap1070.png
+- Portrait/Raw file (Body only): Icon_mecha_wap1070_SN_Raw.png
+- mechaIcon (CDN key, per part, only if a CN CDN asset exists): Icon_wap1070_1
+- lihuiIcon (CDN key, Body only, only if a CN CDN asset exists): icon_lihui_wap1070
 - Alternate skins (Body only, list each variant token you have a
-  `Img_Skin_wap3034_<variant>.png` file for, or "none"): none
+  `Img_Skin_wap1070_<variant>.png` file for, or "none"): none
 
 ### Body — max level (manji) overrides
-- Durable: 13151
-- Fire: 1176
-- Weight: 360
-- Output: 2060
+- Durable: 9536
+- Fire: 1125
+- Weight: 270
+- Output: 1785
 - Antiriot: 4472
-- Armor: 1412
+- Armor: 470
 
 ### L-Arm — max level (manji) overrides
-- Durable: 7479
-- Fire: 1176
-- Weight: 180
-- Hit: 1672
+- Durable: 4809
+- Fire: 1225
+- Weight: 105
+- Hit: 1974
 
 ### R-Arm — max level (manji) overrides
-- Durable: 7479
-- Fire: 1176
-- Weight: 180
-- Hit: 1672
+- Durable: 4809
+- Fire: 1225
+- Weight: 105
+- Hit: 1974
 
 ### Legs — max level (manji) overrides
-- Durable: 10732
-- Fire: 1176
-- Weight: 230
-- Dodge: 3287
-- Move: 3
+- Durable: 7896
+- Fire: 1225
+- Weight: 155
+- Dodge: 5233
+- Move: 4
 
 ## Modules
 <!-- Copy this block for each distinct module referenced above. -->
 ### Module 1
-- Name: Roaring Frame
+- Name: Radiant Core
 - Level: 4/4
-- Effect text: Max HP increases by 3/6/10/15%. DMG Dealt increases by 5/10/15/25% if no movement was made before the attack. <!-- numbers must be wrapped as <color=#F74848>NUMBER</color>, same convention as pilot skill text, record the different level effect based on the numbers split -->
-- Icon name: Icon_skill_passive_3138
+- Effect text: Upon deployment, gains 1/1/1/2 stacks of [Storm Surge], up to 2/3/4/5. After acting, if there are enemy units present within 3 adjacent tiles, gains 1 stack of [Storm Surge] <!-- numbers must be wrapped as <color=#F74848>NUMBER</color>, same convention as pilot skill text, record the different level effect based on the numbers split -->
+- Icon name: Icon_skill_passive_5318
 
 ### Module 2
-- Name: Accuracy Mod
+- Name: Firepower Module
 - Level: 4/4
-- Effect text: Same as others, ID 40014
-- Icon name: Same as others, ID 40014
+- Effect text: Same as others, ID 40274
+- Icon name: Same as others, ID 40274
 
 ### Module 3
-- Name: Pack Hunt Module
+- Name: Xeno-Gear Module
 - Level: 8/8
-- Effect text: DMG Dealt increases by 3/4/5/6/7/8/9/12%. When there are 2 or more enemy units within attack range, DMG Dealt additionally increases by 1.5/2/2.5/3/3.5/4/4.5/6% for each 1 additional unit, up to 3/4/5/6/7/8/9/12%.\n[Fixed DMG] dealt increases by 25%. When actively attacking, Firepower increases by 2% of current HP.<!-- numbers must be wrapped as <color=#F74848>NUMBER</color>, same convention as pilot skill text, record the different level effect based on the numbers split -->
-- Icon name: Icon_entry_10114
+- Effect text: DMG Dealt increases by 4/6/8/10/14/16/18/24% while equipped with 2 different weapon types.\nAfter an action, DMG multiplier of next active attack increases by +0.1.<!-- numbers must be wrapped as <color=#F74848>NUMBER</color>, same convention as pilot skill text, record the different level effect based on the numbers split -->
+- Icon name: Icon_entry_10113
 
 ### Glossary buf 1
 <!-- Pick a random unique ID for this in the <buf> tag and add the tag to all referenced text from this pilot -->
+- Storm Surge: DMG Dealt increases by 5%, Critical Hit chance increases by 4%. Each stack lasts for 2 turns.
 
 ### Glossary skill 1
 <!-- Pick a random unique ID for this in the <skill> tag and add the tag to all referenced text from this pilot -->

@@ -36,7 +36,7 @@ var PILOT_RELEASE_ORDER = [
   'Dean', 'Asuka', 'Shinji', 'Rei', 'Cassha', 'Arthur', 'Ophelia', 'Anderson', 'Fregata',
   'Rosa: Judgement', 'Paloma', 'Matilda', 'Rosemary', 'Adele', 'Wyatt', 'Ada', 'Sapientia',
   'Veronica', 'Verna', 'Collin', 'Zoey', 'Wataru', 'Toraoh', 'Martini', 'Lexuan', 'Audrey',
-  'Hailis', 'Maat', 'Hardaway', 'Tang', 'Giselle', 'Bertha', 'Kaidan The Invincible', 'Ann', 'Blackout', 'Niall', 'Alena',
+  'Hailis', 'Maat', 'Hardaway', 'Tang', 'Giselle', 'Bertha', 'Kaidan The Invincible', 'Ann', 'Blackout', 'Niall', 'Lustre', 'Alena',
 ];
 
 function pilotReleaseOrder(pilotName) {
@@ -491,11 +491,10 @@ Pages.pilots = {
     var TYPE_LABEL = { EquipmentSkill: 'Attack', Order: 'Code', SpecialAssault: 'Code + Attack' };
     var TYPE_CLASS = { EquipmentSkill: 'skill-type-attack', Order: 'skill-type-code', SpecialAssault: 'skill-type-special' };
 
-    // Innate skills are normally identified by the "<profession>00001" ID
-    // pattern (professions 1-7). Hailis's Shifter profession (8) doesn't
-    // follow that numbering, so her innate (Form Shift 1) is called out by ID.
-    var EXTRA_INNATE_IDS = { '800101': true };
-    var isInnate  = function (e) { return /^[1-7]00001$/.test(e.skill3) || EXTRA_INNATE_IDS[e.skill3]; };
+    // The innate skill lives on the Profession Neuron (UnitType 6). Skill IDs
+    // aren't reliable for this: Shifters (Hailis, Lustre) and manually-added
+    // pilots don't follow the CN "<profession>00001" numbering.
+    var isInnate  = function (e) { return e.UnitType === '6'; };
     var withSkill = (bcd || []).filter(function (e) { return e.skill && e.skill.SkillIcon; });
     var innate    = withSkill.filter(isInnate);
     var regular   = withSkill.filter(function (e) { return !isInnate(e); });
