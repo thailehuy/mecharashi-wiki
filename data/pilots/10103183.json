@@ -696,7 +696,7 @@
           "skill": {
             "ID": "183501",
             "name": "Death Ray",
-            "describe": "Uses Rail Gun to attack all enemies within a cross-shaped area around a target within <color=#F74848>5</color> adjacent tiles, dealing <color=#F74848>0.5</color>x DMG. DMG multiplier increases to <color=#F74848>0.9</color>x against the target in the center. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking. This attack can target <buf ID=183900>[Resonance Node]</buf>.",
+            "describe": "Uses Rail Gun to attack all enemies within a cross-shaped area around a target within <color=#F74848>5</color> adjacent tiles, dealing <color=#F74848>0.5</color>x DMG. DMG multiplier increases by <color=#F74848>+0.9</color>x against the target in the center. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking. This attack can target <buf ID=183900>[Resonance Node]</buf>.",
             "type": "SpecialAssault",
             "Ap": "3",
             "matchingWeaponType": "RG",
@@ -809,7 +809,7 @@
           "skill": {
             "ID": "183505",
             "name": "ND Maneuver",
-            "describe": "Selects an empty tile within <color=#F74848>4</color> adjacent tiles of <buf ID=183900>[Resonance Node]</buf> and teleports to the selected tile. Can continue to act with remaining movement.",
+            "describe": "Selects an empty tile within <color=#F74848>4</color> adjacent tiles of <buf ID=183900>[Resonance Node]</buf> and teleports that unit to the selected tile. Can continue to act with remaining movement.",
             "type": "Order",
             "Ap": "1",
             "CD": "2",
