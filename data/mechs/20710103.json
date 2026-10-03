@@ -1,0 +1,189 @@
+{
+  "data": {
+    "data": [
+      {
+        "ID": "20710103",
+        "name": "Blue Anonymous Bird",
+        "position": "Body",
+        "type": "Medium",
+        "quality": "SSR",
+        "aircraftWeight": "280",
+        "durable": "446",
+        "Armor": "941",
+        "fire": "127",
+        "Antiriot": "770",
+        "output": "2725",
+        "Interface": "Ⅰ型接口",
+        "ModuleCarried": [
+          {
+            "ID": "90264",
+            "name": "Raptor Unit",
+            "SpecificEffects": "When actively attacking with a Melee Weapon, Critical Hit chance increases by <color=#F74848>20%</color>. If the target part is at full HP, DMG Dealt increases by <color=#F74848>20%</color>.",
+            "BufCarried": "902641",
+            "SkillIcon": "Icon_skill_passive_4133",
+            "icon": "Icon_skill_passive_4133",
+            "Status": 1,
+            "weight": 1,
+            "id": "9026",
+            "level": 4
+          },
+          {
+            "ID": "40034",
+            "name": "Crit DMG Mod",
+            "SpecificEffects": "Crit DMG <color=#F74848>+10%</color>.",
+            "BufCarried": "400341",
+            "SkillIcon": "Icon_entry_40031",
+            "icon": "Icon_entry_40031",
+            "Status": 1,
+            "weight": 2,
+            "id": "4003",
+            "level": 4
+          },
+          {
+            "ID": "90368",
+            "name": "Raiding Module",
+            "SpecificEffects": "When actively attacking with a Melee Weapon, DMG Dealt increases by <color=#F74848>12%</color>. For each <color=#F74848>1</color> <buf ID=900004>[Re-ATK]</buf> triggered during the turn, DMG Dealt additionally increases by <color=#F74848>6%</color>, up to <color=#F74848>18%</color>. This effect is removed at the end of turn.\nAfter triggering <buf ID=900004>[Re-ATK]</buf>, Critical Hit chance and Critical Hit DMG increase by <color=#F74848>15%</color>.",
+            "BufCarried": "903681",
+            "SkillIcon": "Icon_entry_10115",
+            "icon": "Icon_entry_10115",
+            "Status": 1,
+            "weight": 3,
+            "id": "9036",
+            "level": 8
+          }
+        ],
+        "icon": "Icon_mecha_wap2071",
+        "introduce": "",
+        "mechaIcon": "Icon_wap2071_1",
+        "lihuiIcon": "icon_lihui_wap2071",
+        "AlternateSkins": [],
+        "Status": 1,
+        "weight": 1,
+        "manji": {
+          "name": "Blue Anonymous Bird",
+          "durable": "11149",
+          "Armor": "706",
+          "fire": "1264",
+          "output": "2725",
+          "Antiriot": "4472",
+          "Interface": "Ⅱ型接口",
+          "ModuleCarried": [
+            {
+              "ID": "90264",
+              "name": "Raptor Unit",
+              "SpecificEffects": "When actively attacking with a Melee Weapon, Critical Hit chance increases by <color=#F74848>20%</color>. If the target part is at full HP, DMG Dealt increases by <color=#F74848>20%</color>.",
+              "BufCarried": "902641",
+              "SkillIcon": "Icon_skill_passive_4133",
+              "icon": "Icon_skill_passive_4133",
+              "Status": 1,
+              "weight": 1,
+              "id": "9026",
+              "level": 4
+            },
+            {
+              "ID": "40034",
+              "name": "Crit DMG Mod",
+              "SpecificEffects": "Crit DMG <color=#F74848>+10%</color>.",
+              "BufCarried": "400341",
+              "SkillIcon": "Icon_entry_40031",
+              "icon": "Icon_entry_40031",
+              "Status": 1,
+              "weight": 2,
+              "id": "4003",
+              "level": 4
+            },
+            {
+              "ID": "90368",
+              "name": "Raiding Module",
+              "SpecificEffects": "When actively attacking with a Melee Weapon, DMG Dealt increases by <color=#F74848>12%</color>. For each <color=#F74848>1</color> <buf ID=900004>[Re-ATK]</buf> triggered during the turn, DMG Dealt additionally increases by <color=#F74848>6%</color>, up to <color=#F74848>18%</color>. This effect is removed at the end of turn.\nAfter triggering <buf ID=900004>[Re-ATK]</buf>, Critical Hit chance and Critical Hit DMG increase by <color=#F74848>15%</color>.",
+              "BufCarried": "903681",
+              "SkillIcon": "Icon_entry_10115",
+              "icon": "Icon_entry_10115",
+              "Status": 1,
+              "weight": 3,
+              "id": "9036",
+              "level": 8
+            }
+          ]
+        }
+      },
+      {
+        "ID": "20710103_ARM_L",
+        "name": "Blue Anonymous Bird",
+        "position": "L-Arm",
+        "type": "Medium",
+        "quality": "SSR",
+        "aircraftWeight": "170",
+        "durable": "243",
+        "Armor": "48",
+        "fire": "127",
+        "Hit": "309",
+        "ModuleCarried": [],
+        "introduce": "",
+        "mechaIcon": "Icon_wap2071_1",
+        "manji": {
+          "name": "Blue Anonymous Bird",
+          "durable": "5810",
+          "Armor": "470",
+          "fire": "1264",
+          "Hit": "2091",
+          "Interface": "Ⅱ型接口",
+          "ModuleCarried": []
+        },
+        "icon": "Icon_mecha_wap2071"
+      },
+      {
+        "ID": "20710103_ARM_R",
+        "name": "Blue Anonymous Bird",
+        "position": "R-Arm",
+        "type": "Medium",
+        "quality": "SSR",
+        "aircraftWeight": "170",
+        "durable": "243",
+        "Armor": "48",
+        "fire": "127",
+        "Hit": "309",
+        "ModuleCarried": [],
+        "introduce": "",
+        "mechaIcon": "Icon_wap2071_1",
+        "manji": {
+          "name": "Blue Anonymous Bird",
+          "durable": "5810",
+          "Armor": "470",
+          "fire": "1264",
+          "Hit": "2091",
+          "Interface": "Ⅱ型接口",
+          "ModuleCarried": []
+        },
+        "icon": "Icon_mecha_wap2071"
+      },
+      {
+        "ID": "20710103_LEGS",
+        "name": "Blue Anonymous Bird",
+        "position": "Legs",
+        "type": "Medium",
+        "quality": "SSR",
+        "aircraftWeight": "205",
+        "durable": "350",
+        "Armor": "48",
+        "fire": "127",
+        "Dodge": "669",
+        "move": "3000",
+        "ModuleCarried": [],
+        "introduce": "",
+        "mechaIcon": "Icon_wap2071_1",
+        "manji": {
+          "name": "Blue Anonymous Bird",
+          "durable": "9480",
+          "Armor": "470",
+          "fire": "1264",
+          "Dodge": "3885",
+          "move": "3000",
+          "Interface": "Ⅰ型接口",
+          "ModuleCarried": []
+        },
+        "icon": "Icon_mecha_wap2071"
+      }
+    ]
+  }
+}

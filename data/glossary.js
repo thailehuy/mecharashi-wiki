@@ -1469,6 +1469,22 @@ window.GlossaryData = {
     "183902": {
       "name": "System Failure",
       "effect": "Incapacitated, cannot move or attack."
+    },
+    "184900": {
+      "name": "Edge Momentum",
+      "effect": "Holds <color=#F74848>8</color> stacks or more to enhance active skills effect. Can consume <color=#F74848>5</color> stacks to trigger <buf ID=184902>[Breakthrough]</buf> for active skills. Stacks up to <color=#F74848>15</color> times. <color=#F74848>3</color> stacks are removed at the end of turn."
+    },
+    "184901": {
+      "name": "Razor Feather",
+      "effect": "Chainsaw DMG Dealt increases by <color=#F74848>5%</color>, stacking up to <color=#F74848>5</color> times."
+    },
+    "184902": {
+      "name": "Breakthrough",
+      "effect": "Greatly improves active skills effect."
+    },
+    "184903": {
+      "name": "Laceration",
+      "effect": "DMG Taken from Chainsaw attack increases by <color=#F74848>5%</color>, stacking up to <color=#F74848>4</color> times. This effect is removed at the end of turn."
     }
   },
   "skill": {

@@ -1093,11 +1093,11 @@
         }
       ],
       "statRanks": {
-        "Combat": 4,
-        "Shooting": 57,
+        "Combat": 5,
+        "Shooting": 58,
         "Assault": 43,
         "Tactics": 34,
-        "Engineering": 60
+        "Engineering": 61
       }
     },
     {
@@ -2197,11 +2197,11 @@
         }
       ],
       "statRanks": {
-        "Combat": 33,
+        "Combat": 34,
         "Shooting": 27,
         "Assault": 11,
         "Tactics": 71,
-        "Engineering": 40
+        "Engineering": 41
       }
     },
     {
@@ -3349,11 +3349,11 @@
       "version": "3.5",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 44,
-        "Shooting": 59,
+        "Combat": 45,
+        "Shooting": 60,
         "Assault": 7,
         "Tactics": 26,
-        "Engineering": 28
+        "Engineering": 29
       }
     },
     {
@@ -4458,8 +4458,8 @@
       "version": "1.7",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 65,
-        "Shooting": 51,
+        "Combat": 66,
+        "Shooting": 52,
         "Assault": 35,
         "Tactics": 53,
         "Engineering": 5
@@ -5614,11 +5614,11 @@
       "version": "3.3",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 49,
+        "Combat": 50,
         "Shooting": 39,
         "Assault": 10,
         "Tactics": 21,
-        "Engineering": 57
+        "Engineering": 58
       }
     },
     {
@@ -6728,7 +6728,7 @@
       "version": "1.6",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 62,
+        "Combat": 63,
         "Shooting": 43,
         "Assault": 39,
         "Tactics": 9,
@@ -7843,11 +7843,11 @@
       "version": "1.5",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 7,
-        "Shooting": 76,
+        "Combat": 8,
+        "Shooting": 77,
         "Assault": 5,
         "Tactics": 74,
-        "Engineering": 73
+        "Engineering": 74
       }
     },
     {
@@ -8942,11 +8942,11 @@
         }
       ],
       "statRanks": {
-        "Combat": 38,
+        "Combat": 39,
         "Shooting": 3,
         "Assault": 47,
         "Tactics": 39,
-        "Engineering": 46
+        "Engineering": 47
       }
     },
     {
@@ -10040,11 +10040,11 @@
         }
       ],
       "statRanks": {
-        "Combat": 35,
+        "Combat": 36,
         "Shooting": 4,
         "Assault": 66,
         "Tactics": 29,
-        "Engineering": 31
+        "Engineering": 32
       }
     },
     {
@@ -11195,11 +11195,11 @@
       "version": "3.4",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 57,
+        "Combat": 58,
         "Shooting": 29,
         "Assault": 18,
         "Tactics": 37,
-        "Engineering": 42
+        "Engineering": 43
       }
     },
     {
@@ -12307,11 +12307,11 @@
       "version": "1.1",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 8,
+        "Combat": 9,
         "Shooting": 23,
-        "Assault": 75,
+        "Assault": 76,
         "Tactics": 19,
-        "Engineering": 78
+        "Engineering": 79
       }
     },
     {
@@ -13423,11 +13423,11 @@
       "version": "1.6",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 60,
+        "Combat": 61,
         "Shooting": 37,
         "Assault": 11,
         "Tactics": 25,
-        "Engineering": 32
+        "Engineering": 33
       }
     },
     {
@@ -14615,11 +14615,11 @@
       "version": "1.0",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 11,
-        "Shooting": 60,
+        "Combat": 12,
+        "Shooting": 61,
         "Assault": 49,
         "Tactics": 37,
-        "Engineering": 30
+        "Engineering": 31
       }
     },
     {
@@ -15715,11 +15715,1162 @@
         }
       ],
       "statRanks": {
-        "Combat": 61,
+        "Combat": 62,
         "Shooting": 18,
         "Assault": 61,
         "Tactics": 4,
-        "Engineering": 66
+        "Engineering": 67
+      }
+    },
+    {
+      "ID": "10103184",
+      "PilotName": "Cosette",
+      "PortraitHeroIcon": "Pilot_11021A_half",
+      "AvatarHeroIcon": "Pilot_11021A_Raw",
+      "RealName": "Cosette Cecil",
+      "Gender": "Female",
+      "Profession": "Striker",
+      "Occupation": "Fighter",
+      "quality": "SSR",
+      "Talent0_2Ability": {
+        "ID": "184550",
+        "name": "Feather Of Tomorrow",
+        "SpecificEffects": "When equipped with Chainsaw, gains <color=#F74848>1</color> stack of <buf ID=184900>[Edge Momentum]</buf> for each <color=#F74848>1</color> tile moved, up to <color=#F74848>5</color> stacks per action. Upon consuming <buf ID=184900>[Edge Momentum]</buf> to trigger active skill <buf ID=184902>[Breakthrough]</buf>, gains <buf ID=184901>[Razor Feather]</buf> and triggers <buf ID=900004>[Re-ATK]</buf>, allowing movement of <color=#F74848>2</color> tiles before attacking. This effect can trigger <color=#F74848>1</color> time per turn.",
+        "SkillIcon": "Icon_skill_talent_1126",
+        "icon": "Icon_skill_talent_1126",
+        "Status": 1,
+        "weight": 1425,
+        "lang": "en"
+      },
+      "Talent3_5Ability": {
+        "ID": "184551",
+        "name": "Feather Of Tomorrow",
+        "SpecificEffects": "When equipped with Chainsaw, gains <color=#F74848>1</color> stack of <buf ID=184900>[Edge Momentum]</buf> for each <color=#F74848>1</color> tile moved, up to <color=#F74848>5</color> stacks per action. Upon consuming <buf ID=184900>[Edge Momentum]</buf> to trigger active skill <buf ID=184902>[Breakthrough]</buf>, gains <buf ID=184901>[Razor Feather]</buf> and triggers <buf ID=900004>[Re-ATK]</buf>, allowing movement of <color=#F74848>2</color> tiles before attacking. This effect can trigger <color=#F74848>1</color> time per turn.\nAt the start of battle, gains <color=#F74848>5</color> stacks of <buf ID=184900>[Edge Momentum]</buf> and increases maximum stack limit by <color=#F74848>+5</color>. For each <color=#F74848>50</color> surplus power, DMG Dealt increases by <color=#F74848>+1%</color>, up to <color=#F74848>20%</color>.",
+        "SkillIcon": "Icon_skill_talent_1126",
+        "icon": "Icon_skill_talent_1126",
+        "Status": 1,
+        "weight": 1426,
+        "lang": "en"
+      },
+      "NeuralDriveTemplate": {
+        "ID": "10103184",
+        "remarks": "Cosette",
+        "ListChipPartition": [
+          {
+            "ChipPartitioningID": "1010318400",
+            "remarks": "Cosette",
+            "name": "\u03b1",
+            "TypeComputing": "Alpha",
+            "ListAssembled": "Attack/Dodge/Critical",
+            "ListActivationEffects": [
+              {
+                "ActivationEffectID": "1010318400",
+                "remarks": "\u03b1-1\u7ea7",
+                "MinimumSum": "1",
+                "PassiveSkillID": "100011",
+                "Status": 1,
+                "weight": 408,
+                "type": 3,
+                "lang": "en",
+                "PassiveSkill": {
+                  "ID": "100011",
+                  "name": "Mobile Warfare 2",
+                  "SpecificEffects": "Upon triggering <buf ID=900004>[Re-ATK]</buf>, allows movement of <color=#F74848>2</color> tiles before attacking.",
+                  "BufCarried": "1000111",
+                  "SkillIcon": "Icon_skill_passive_5010",
+                  "icon": "Icon_skill_passive_5010",
+                  "Status": 1,
+                  "weight": 1304,
+                  "lang": "en"
+                }
+              },
+              {
+                "ActivationEffectID": "1010318401",
+                "remarks": "\u03b1-2\u7ea7",
+                "MinimumSum": "4",
+                "PassiveSkillID": "100012",
+                "Status": 1,
+                "weight": 409,
+                "type": 3,
+                "lang": "en",
+                "PassiveSkill": {
+                  "ID": "100012",
+                  "name": "Power Innovation 1",
+                  "SpecificEffects": "AP Regen <color=#F74848>+1</color>.",
+                  "SkillIcon": "Icon_skill_passive_5006",
+                  "icon": "Icon_skill_passive_5006",
+                  "Status": 1,
+                  "weight": 1305,
+                  "lang": "en"
+                }
+              },
+              {
+                "ActivationEffectID": "1010318402",
+                "remarks": "\u03b1-3\u7ea7",
+                "MinimumSum": "7",
+                "PassiveSkillID": "100013",
+                "Status": 1,
+                "weight": 410,
+                "type": 3,
+                "lang": "en",
+                "PassiveSkill": {
+                  "ID": "100013",
+                  "name": "AP Optimization 1",
+                  "SpecificEffects": "Initial AP <color=#F74848>+1</color>.",
+                  "SkillIcon": "Icon_skill_passive_5004",
+                  "icon": "Icon_skill_passive_5004",
+                  "Status": 1,
+                  "weight": 1306,
+                  "lang": "en"
+                }
+              }
+            ],
+            "IconPath": "Icon_zoneskill_0001",
+            "icon": "Icon_zoneskill_0001",
+            "Status": 1,
+            "weight": 92,
+            "type": 2,
+            "lang": "en"
+          },
+          {
+            "ChipPartitioningID": "1010318401",
+            "remarks": "Cosette",
+            "name": "\u03b2",
+            "TypeComputing": "Beta",
+            "ListAssembled": "Attack/Dodge/Dodge",
+            "ListActivationEffects": [
+              {
+                "ActivationEffectID": "1010318403",
+                "remarks": "\u03b2-1\u7ea7",
+                "MinimumSum": "1",
+                "PassiveSkillID": "100021",
+                "Status": 1,
+                "weight": 411,
+                "type": 3,
+                "lang": "en",
+                "PassiveSkill": {
+                  "ID": "100021",
+                  "name": "Mobile Warfare 3",
+                  "SpecificEffects": "Destroying the target can trigger <buf ID=900005>[Re-Act]</buf>, allowing action with full movement distance.",
+                  "BufCarried": "1000211",
+                  "SkillIcon": "Icon_skill_passive_5010",
+                  "icon": "Icon_skill_passive_5010",
+                  "Status": 1,
+                  "weight": 1307,
+                  "lang": "en"
+                }
+              },
+              {
+                "ActivationEffectID": "1010318404",
+                "remarks": "\u03b2-2\u7ea7",
+                "MinimumSum": "4",
+                "PassiveSkillID": "100022",
+                "Status": 1,
+                "weight": 412,
+                "type": 3,
+                "lang": "en",
+                "PassiveSkill": {
+                  "ID": "100022",
+                  "name": "Power Innovation 2",
+                  "SpecificEffects": "When breaking a part, restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>1</color> time per turn.",
+                  "BufCarried": "1000221",
+                  "SkillIcon": "Icon_skill_passive_5006",
+                  "icon": "Icon_skill_passive_5006",
+                  "Status": 1,
+                  "weight": 1308,
+                  "lang": "en"
+                }
+              },
+              {
+                "ActivationEffectID": "1010318405",
+                "remarks": "\u03b2-3\u7ea7",
+                "MinimumSum": "7",
+                "PassiveSkillID": "100023",
+                "Status": 1,
+                "weight": 413,
+                "type": 3,
+                "lang": "en",
+                "PassiveSkill": {
+                  "ID": "100023",
+                  "name": "AP Optimization 2",
+                  "SpecificEffects": "AP Cap <color=#F74848>+1</color>.",
+                  "SkillIcon": "Icon_skill_passive_5004",
+                  "icon": "Icon_skill_passive_5004",
+                  "Status": 1,
+                  "weight": 1309,
+                  "lang": "en"
+                }
+              }
+            ],
+            "IconPath": "Icon_zoneskill_0002",
+            "icon": "Icon_zoneskill_0002",
+            "Status": 1,
+            "weight": 93,
+            "type": 2,
+            "lang": "en"
+          },
+          {
+            "ChipPartitioningID": "1010318402",
+            "remarks": "Cosette",
+            "name": "\u03b31",
+            "TypeComputing": "Gamma",
+            "ListAssembled": "Attack/Dodge/Critical",
+            "ListActivationEffects": [
+              {
+                "ActivationEffectID": "1010318406",
+                "remarks": "\u03b31-1\u7ea7",
+                "MinimumSum": "1",
+                "PassiveSkillID": "100031",
+                "Status": 1,
+                "weight": 1,
+                "type": 3,
+                "lang": "en",
+                "PassiveSkill": {
+                  "ID": "100031",
+                  "name": "Alacrity 1",
+                  "SpecificEffects": "During an Active Attack with a Melee Weapon, there is a <color=#F74848>20%</color> chance to trigger <buf ID=900001>[Flurry Strike]</buf> following the enemy's attack, dealing <color=#F74848>0.5x</color> DMG.",
+                  "BufCarried": "1000311",
+                  "SkillIcon": "Icon_skill_passive_5011",
+                  "icon": "Icon_skill_passive_5011",
+                  "Status": 1,
+                  "weight": 1,
+                  "lang": "en"
+                }
+              },
+              {
+                "ActivationEffectID": "1010318407",
+                "remarks": "\u03b31-2\u7ea7",
+                "MinimumSum": "4",
+                "PassiveSkillID": "100032",
+                "Status": 1,
+                "weight": 2,
+                "type": 3,
+                "lang": "en",
+                "PassiveSkill": {
+                  "ID": "100032",
+                  "name": "AP Optimization 3",
+                  "SpecificEffects": "AP Cap <color=#F74848>+1</color>.",
+                  "SkillIcon": "Icon_skill_passive_5004",
+                  "icon": "Icon_skill_passive_5004",
+                  "Status": 1,
+                  "weight": 1,
+                  "lang": "en"
+                }
+              },
+              {
+                "ActivationEffectID": "1010318408",
+                "remarks": "\u03b31-3\u7ea7",
+                "MinimumSum": "7",
+                "PassiveSkillID": "100033",
+                "Status": 1,
+                "weight": 3,
+                "type": 3,
+                "lang": "en",
+                "PassiveSkill": {
+                  "ID": "100033",
+                  "name": "Mobile Warfare 4",
+                  "SpecificEffects": "<buf ID=900004>[Re-ATK]</buf> or <buf ID=900005>[Re-Act]</buf>'s effective times per turn <color=#F74848>+1</color>.",
+                  "BufCarried": "1000331/1000332/1000333",
+                  "SkillIcon": "Icon_skill_passive_5010",
+                  "icon": "Icon_skill_passive_5010",
+                  "Status": 1,
+                  "weight": 1,
+                  "lang": "en"
+                }
+              },
+              {
+                "ActivationEffectID": "1010318409",
+                "remarks": "\u03b31-4\u7ea7",
+                "MinimumSum": "10",
+                "PassiveSkillID": "100034",
+                "Status": 1,
+                "weight": 4,
+                "type": 3,
+                "lang": "en",
+                "PassiveSkill": {
+                  "ID": "100034",
+                  "name": "Alacrity 2",
+                  "SpecificEffects": "Before an Active Attack, the probability of triggering <buf ID=900001>[Flurry Strike]</buf> increases by <color=#F74848>6%</color> for each <color=#F74848>1</color> tile moved, up to <color=#F74848>30%</color>.",
+                  "BufCarried": "1000341",
+                  "SkillIcon": "Icon_skill_passive_5011",
+                  "icon": "Icon_skill_passive_5011",
+                  "Status": 1,
+                  "weight": 1,
+                  "lang": "en"
+                }
+              },
+              {
+                "ActivationEffectID": "1010318410",
+                "remarks": "\u03b31-5\u7ea7",
+                "MinimumSum": "13",
+                "PassiveSkillID": "100035",
+                "Status": 1,
+                "weight": 5,
+                "type": 3,
+                "lang": "en",
+                "PassiveSkill": {
+                  "ID": "100035",
+                  "name": "Alacrity 3",
+                  "SpecificEffects": "<buf ID=900001>[Flurry Strike]</buf> damage multiplier is increased to <color=#F74848>0.75</color>.",
+                  "BufCarried": "1000351",
+                  "SkillIcon": "Icon_skill_passive_5011",
+                  "icon": "Icon_skill_passive_5011",
+                  "Status": 1,
+                  "weight": 1,
+                  "lang": "en"
+                }
+              },
+              {
+                "ActivationEffectID": "1010318411",
+                "remarks": "\u03b31-6\u7ea7",
+                "MinimumSum": "16",
+                "PassiveSkillID": "100036",
+                "Status": 1,
+                "weight": 6,
+                "type": 3,
+                "lang": "en",
+                "PassiveSkill": {
+                  "ID": "100036",
+                  "name": "Alacrity 4",
+                  "SpecificEffects": "When triggering <buf ID=900001>[Flurry Strike]</buf>, prioritize hitting the part with the lowest HP.",
+                  "BufCarried": "1000361",
+                  "SkillIcon": "Icon_skill_passive_5011",
+                  "icon": "Icon_skill_passive_5011",
+                  "Status": 1,
+                  "weight": 1,
+                  "lang": "en"
+                }
+              }
+            ],
+            "IconPath": "Icon_zoneskill_0004",
+            "icon": "Icon_zoneskill_0004",
+            "Status": 1,
+            "weight": 34,
+            "type": 2,
+            "lang": "en"
+          },
+          {
+            "ChipPartitioningID": "1010318403",
+            "remarks": "Cosette",
+            "name": "\u03b32",
+            "TypeComputing": "Gamma",
+            "ListAssembled": "Attack/Dodge/Dodge",
+            "ListActivationEffects": [
+              {
+                "ActivationEffectID": "1010318412",
+                "remarks": "\u03b32-1\u7ea7",
+                "MinimumSum": "1",
+                "PassiveSkillID": "184570",
+                "Status": 1,
+                "weight": 1,
+                "type": 3,
+                "lang": "en",
+                "PassiveSkill": {
+                  "ID": "184570",
+                  "name": "Heir Of Danube 1",
+                  "SpecificEffects": "Maximum <buf ID=184900>[Edge Momentum]</buf> stacks gain per action increases to <color=#F74848>8</color>. Talent <buf ID=900004>[Re-ATK]</buf> effect is upgraded to <buf ID=900005>[Re-Act]</buf>.",
+                  "SkillIcon": "Icon_skill_passive_5324",
+                  "icon": "Icon_skill_passive_5324",
+                  "Status": 1,
+                  "weight": 1,
+                  "lang": "en"
+                }
+              },
+              {
+                "ActivationEffectID": "1010318413",
+                "remarks": "\u03b32-2\u7ea7",
+                "MinimumSum": "4",
+                "PassiveSkillID": "100042",
+                "Status": 1,
+                "weight": 2,
+                "type": 3,
+                "lang": "en",
+                "PassiveSkill": {
+                  "ID": "100042",
+                  "name": "AP Optimization 4",
+                  "SpecificEffects": "AP Cap <color=#F74848>+1</color>.",
+                  "SkillIcon": "Icon_skill_passive_5004",
+                  "icon": "Icon_skill_passive_5004",
+                  "Status": 1,
+                  "weight": 1,
+                  "lang": "en"
+                }
+              },
+              {
+                "ActivationEffectID": "1010318414",
+                "remarks": "\u03b32-3\u7ea7",
+                "MinimumSum": "7",
+                "PassiveSkillID": "100043",
+                "Status": 1,
+                "weight": 3,
+                "type": 3,
+                "lang": "en",
+                "PassiveSkill": {
+                  "ID": "100043",
+                  "name": "Power Innovation 3",
+                  "SpecificEffects": "When destroying a target, additionally restores <color=#F74848>1</color> AP after combat. Can trigger up to <color=#F74848>2</color> times per turn.",
+                  "SkillIcon": "Icon_skill_passive_5006",
+                  "icon": "Icon_skill_passive_5006",
+                  "Status": 1,
+                  "weight": 1,
+                  "lang": "en"
+                }
+              },
+              {
+                "ActivationEffectID": "1010318415",
+                "remarks": "\u03b32-4\u7ea7",
+                "MinimumSum": "10",
+                "PassiveSkillID": "184571",
+                "Status": 1,
+                "weight": 4,
+                "type": 3,
+                "lang": "en",
+                "PassiveSkill": {
+                  "ID": "184571",
+                  "name": "Heir Of Danube 2",
+                  "SpecificEffects": "When actively attacking, if the target's body is at full HP, ignores <color=#F74848>25%</color> target's Armor and Critical Hit chance increases by <color=#F74848>10%</color>.",
+                  "SkillIcon": "Icon_skill_passive_5324",
+                  "icon": "Icon_skill_passive_5324",
+                  "Status": 1,
+                  "weight": 1,
+                  "lang": "en"
+                }
+              },
+              {
+                "ActivationEffectID": "1010318416",
+                "remarks": "\u03b32-5\u7ea7",
+                "MinimumSum": "13",
+                "PassiveSkillID": "184572",
+                "Status": 1,
+                "weight": 5,
+                "type": 3,
+                "lang": "en",
+                "PassiveSkill": {
+                  "ID": "184572",
+                  "name": "Heir Of Danube 3",
+                  "SpecificEffects": "Chainsaw Final DMG Dealt increases by <color=#F74848>10%</color>. When possessing <color=#F74848>3</color> or more stacks of <buf ID=184901>[Razor Feather]</buf>, Chainsaw Final DMG Dealt additionally increases by <color=#F74848>15%</color>.",
+                  "SkillIcon": "Icon_skill_passive_5324",
+                  "icon": "Icon_skill_passive_5324",
+                  "Status": 1,
+                  "weight": 1,
+                  "lang": "en"
+                }
+              },
+              {
+                "ActivationEffectID": "1010318417",
+                "remarks": "\u03b32-6\u7ea7",
+                "MinimumSum": "16",
+                "PassiveSkillID": "184573",
+                "Status": 1,
+                "weight": 6,
+                "type": 3,
+                "lang": "en",
+                "PassiveSkill": {
+                  "ID": "184573",
+                  "name": "Heir Of Danube 4",
+                  "SpecificEffects": "When possessing <color=#F74848>5</color> or more stacks of <buf ID=184900>[Edge Momentum]</buf>, if AP is insufficient to cast any skill, can consume <color=#F74848>5</color> stacks of <buf ID=184900>[Edge Momentum]</buf> to pay for <color=#F74848>1</color> AP cost. This effect can trigger <color=#F74848>2</color> times per turn.",
+                  "SkillIcon": "Icon_skill_passive_5324",
+                  "icon": "Icon_skill_passive_5324",
+                  "Status": 1,
+                  "weight": 1,
+                  "lang": "en"
+                }
+              }
+            ],
+            "IconPath": "Icon_zoneskill_0005",
+            "icon": "Icon_zoneskill_0005",
+            "Status": 1,
+            "weight": 35,
+            "type": 2,
+            "lang": "en"
+          }
+        ],
+        "Status": 1,
+        "weight": 9,
+        "type": 1,
+        "lang": "en"
+      },
+      "biomimetic_computer_data": [
+        {
+          "ID": "1010318400",
+          "PilotName": "Cosette",
+          "name": "Cosette",
+          "UnitNumber": "0",
+          "LocationOnMap": "0",
+          "TitleUnitDetails": "Profession Neuron - 1",
+          "UnitName": "Profession Neuron",
+          "UnitType": "6",
+          "ActivateUnitConsumption": "2:1:10801000:2/",
+          "describe": "After breaking a part, <buf ID=900004>[Re-ATK]</buf> can be triggered. Unable to move before the attack, and this can be effective up to <color=#F74848>2</color> times per turn.",
+          "skill3": "100001",
+          "icon": "Icon_pilotclass_001_l",
+          "Status": 1,
+          "weight": 2168,
+          "skill": {
+            "ID": "100001",
+            "name": "Mobile Warfare 1",
+            "SpecificEffects": "After breaking a part, <buf ID=900004>[Re-ATK]</buf> can be triggered. Unable to move before the attack, and this can be effective up to <color=#F74848>2</color> times per turn.",
+            "BufCarried": "1000011",
+            "SkillIcon": "Icon_skill_passive_5010",
+            "icon": "Icon_skill_passive_5010",
+            "Status": 1,
+            "weight": 1303,
+            "lang": "en"
+          }
+        },
+        {
+          "ID": "1010318401",
+          "PilotName": "Cosette",
+          "name": "Cosette",
+          "UnitNumber": "17",
+          "LocationOnMap": "17",
+          "TitleUnitDetails": "Capacity Neuron - 1",
+          "UnitName": "Capacity Neuron",
+          "UnitType": "5",
+          "ActivateUnitConsumption": "2:1:10802005:5/2:1:10802004:8/",
+          "AttributeBonus": "PilotGammaChipBandwidthAdd:3",
+          "icon": "Icon_zoneskill_0003",
+          "Status": 1,
+          "weight": 2169
+        },
+        {
+          "ID": "1010318402",
+          "PilotName": "Cosette",
+          "name": "Cosette",
+          "UnitNumber": "19",
+          "LocationOnMap": "19",
+          "TitleUnitDetails": "Capacity Neuron - 2",
+          "UnitName": "Capacity Neuron",
+          "UnitType": "5",
+          "ActivateUnitConsumption": "2:1:10802005:5/2:1:10802004:8/",
+          "AttributeBonus": "PilotAlphaChipBandwidthAdd:3",
+          "icon": "Icon_zoneskill_0001",
+          "Status": 1,
+          "weight": 2170
+        },
+        {
+          "ID": "1010318403",
+          "PilotName": "Cosette",
+          "name": "Cosette",
+          "UnitNumber": "23",
+          "LocationOnMap": "23",
+          "TitleUnitDetails": "Capacity Neuron - 3",
+          "UnitName": "Capacity Neuron",
+          "UnitType": "5",
+          "ActivateUnitConsumption": "2:1:10802006:6/2:1:10802005:10/",
+          "AttributeBonus": "PilotGammaChipBandwidthAdd:3",
+          "icon": "Icon_zoneskill_0003",
+          "Status": 1,
+          "weight": 2171
+        },
+        {
+          "ID": "1010318404",
+          "PilotName": "Cosette",
+          "name": "Cosette",
+          "UnitNumber": "25",
+          "LocationOnMap": "25",
+          "TitleUnitDetails": "Capacity Neuron - 4",
+          "UnitName": "Capacity Neuron",
+          "UnitType": "5",
+          "ActivateUnitConsumption": "2:1:10802006:6/2:1:10802005:10/",
+          "AttributeBonus": "PilotBetaChipBandwidthAdd:3",
+          "icon": "Icon_zoneskill_0002",
+          "Status": 1,
+          "weight": 2172
+        },
+        {
+          "ID": "1010318405",
+          "PilotName": "Cosette",
+          "name": "Cosette",
+          "UnitNumber": "29",
+          "LocationOnMap": "29",
+          "TitleUnitDetails": "Capacity Neuron - 5",
+          "UnitName": "Capacity Neuron",
+          "UnitType": "5",
+          "ActivateUnitConsumption": "2:1:10802007:5/2:1:10804007:5/2:1:10802006:8/2:1:10804006:8/",
+          "AttributeBonus": "PilotGammaChipBandwidthAdd:3",
+          "icon": "Icon_zoneskill_0003",
+          "Status": 1,
+          "weight": 2173
+        },
+        {
+          "ID": "1010318406",
+          "PilotName": "Cosette",
+          "name": "Cosette",
+          "UnitNumber": "33",
+          "LocationOnMap": "33",
+          "TitleUnitDetails": "Capacity Neuron - 6",
+          "UnitName": "Capacity Neuron",
+          "UnitType": "5",
+          "ActivateUnitConsumption": "2:1:10802008:6/2:1:10804008:6/2:1:10802007:10/2:1:10804007:10/",
+          "AttributeBonus": "PilotGammaChipBandwidthAdd:3",
+          "icon": "Icon_zoneskill_0003",
+          "Status": 1,
+          "weight": 2174
+        },
+        {
+          "ID": "1010318407",
+          "PilotName": "Cosette",
+          "name": "Cosette",
+          "UnitNumber": "35",
+          "LocationOnMap": "35",
+          "TitleUnitDetails": "Capacity Neuron - 7",
+          "UnitName": "Capacity Neuron",
+          "UnitType": "5",
+          "ActivateUnitConsumption": "2:1:10801008:12/2:1:10802008:12/2:1:10801007:20/2:1:10802007:20/",
+          "AttributeBonus": "PilotGammaChipBandwidthAdd:3",
+          "icon": "Icon_zoneskill_0003",
+          "Status": 1,
+          "weight": 2175
+        },
+        {
+          "ID": "1010318408",
+          "PilotName": "Cosette",
+          "name": "Cosette",
+          "UnitNumber": "3",
+          "LocationOnMap": "3",
+          "TitleUnitDetails": "Crystal Neuron - 1",
+          "UnitName": "Crystal Neuron",
+          "UnitType": "1",
+          "ActivateUnitConsumption": "2:1:10801002:2/",
+          "describe": "Neural Drive unlocks the \u03b1 partition, initial \u03b1 computing power: <color=#F74848>4</color>\n\nAt computing power <color=#F74848>1</color>:\n\u00b7 Upon triggering [Re-ATK], allows movement of <color=#F74848>2</color> tiles before attacking.\nAt computing power <color=#F74848>4</color>:\n\u00b7 AP Regen <color=#F74848>+1</color>.\nAt computing power <color=#F74848>7</color>:\n\u00b7 Initial AP <color=#F74848>+1</color>.\n",
+          "icon": "Icon_zoneskill_0001",
+          "Status": 1,
+          "weight": 2176
+        },
+        {
+          "ID": "1010318409",
+          "PilotName": "Cosette",
+          "name": "Cosette",
+          "UnitNumber": "11",
+          "LocationOnMap": "11",
+          "TitleUnitDetails": "Crystal Neuron - 2",
+          "UnitName": "Crystal Neuron",
+          "UnitType": "1",
+          "ActivateUnitConsumption": "2:1:10801004:4/2:1:10801003:6/",
+          "describe": "Neural Drive unlocks the \u03b2 partition, initial \u03b2 computing power: <color=#F74848>4</color>\n\nAt computing power <color=#F74848>1</color>:\n\u00b7 Destroying the target can trigger [Re-Act], allowing action with full movement distance.\nAt computing power <color=#F74848>4</color>:\n\u00b7 When breaking a part, restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>1</color> time per turn.\nAt computing power <color=#F74848>7</color>:\n\u00b7 AP Cap <color=#F74848>+1</color>.\n",
+          "icon": "Icon_zoneskill_0002",
+          "Status": 1,
+          "weight": 2177
+        },
+        {
+          "ID": "1010318410",
+          "PilotName": "Cosette",
+          "name": "Cosette",
+          "UnitNumber": "15",
+          "LocationOnMap": "15",
+          "TitleUnitDetails": "Crystal Neuron - 3",
+          "UnitName": "Crystal Neuron",
+          "UnitType": "1",
+          "ActivateUnitConsumption": "2:1:10801005:5/2:1:10801004:8/",
+          "describe": "Neural Drive unlocks the \u03b3 partition, initial \u03b3 computing power: <color=#F74848>4</color>\n\nAt computing power <color=#F74848>1</color>:\n\u00b7 During an Active Attack with a Melee Weapon, there is a <color=#F74848>20%</color> chance to trigger [Flurry Strike] following the enemy's attack, dealing <color=#F74848>0.5x</color> DMG.\nAt computing power <color=#F74848>4</color>:\n\u00b7 AP Cap <color=#F74848>+1</color>.\nAt computing power <color=#F74848>7</color>:\n\u00b7 [Re-ATK] or [Re-Act]'s effective times per turn <color=#F74848>+1</color>.\nAt computing power <color=#F74848>10</color>:\n\u00b7 Before an Active Attack, the probability of triggering [Flurry Strike] increases by <color=#F74848>6%</color> for each <color=#F74848>1</color> tile moved, up to <color=#F74848>30%</color>.\nAt computing power <color=#F74848>13</color>:\n\u00b7 [Flurry Strike] damage multiplier is increased to <color=#F74848>0.75</color>.\nAt computing power <color=#F74848>16</color>:\n\u00b7 When triggering [Flurry Strike], prioritize hitting the part with the lowest HP.\n",
+          "icon": "Icon_zoneskill_0004",
+          "Status": 1,
+          "weight": 2178
+        },
+        {
+          "ID": "1010318411",
+          "PilotName": "Cosette",
+          "name": "Cosette",
+          "UnitNumber": "27",
+          "LocationOnMap": "27",
+          "TitleUnitDetails": "Crystal Neuron - 4",
+          "UnitName": "Crystal Neuron",
+          "UnitType": "1",
+          "ActivateUnitConsumption": "2:1:10801007:5/2:1:10803007:5/2:1:10801006:8/2:1:10803006:8/",
+          "describe": "Neural Drive unlocks the \u03b3 partition\n\nAt computing power <color=#F74848>1</color>:\n\u00b7 Maximum [Edge Momentum] stacks gain per action increases to <color=#F74848>8</color>. Talent [Re-ATK] effect is upgraded to [Re-Act].\nAt computing power <color=#F74848>4</color>:\n\u00b7 AP Cap <color=#F74848>+1</color>.\nAt computing power <color=#F74848>7</color>:\n\u00b7 When destroying a target, additionally restores <color=#F74848>1</color> AP after combat. Can trigger up to <color=#F74848>2</color> times per turn.\nAt computing power <color=#F74848>10</color>:\n\u00b7 When actively attacking, if the target's body is at full HP, ignores <color=#F74848>25%</color> target's Armor and Critical Hit chance increases by <color=#F74848>10%</color>.\nAt computing power <color=#F74848>13</color>:\n\u00b7 Chainsaw Final DMG Dealt increases by <color=#F74848>10%</color>. When possessing <color=#F74848>3</color> or more stacks of [Razor Feather], Chainsaw Final DMG Dealt additionally increases by <color=#F74848>15%</color>.\nAt computing power <color=#F74848>16</color>:\n\u00b7 When possessing <color=#F74848>5</color> or more stacks of [Edge Momentum], if AP is insufficient to cast any skill, can consume <color=#F74848>5</color> stacks of [Edge Momentum] to pay for <color=#F74848>1</color> AP cost. This effect can trigger <color=#F74848>2</color> times per turn.\n",
+          "AttributeBonus": "PilotGammaChipBandwidthAdd:4",
+          "icon": "Icon_zoneskill_0005",
+          "Status": 1,
+          "weight": 2179
+        },
+        {
+          "ID": "1010318412",
+          "PilotName": "Cosette",
+          "name": "Cosette",
+          "UnitNumber": "1",
+          "LocationOnMap": "1",
+          "TitleUnitDetails": "Core Neuron - 1",
+          "UnitName": "Core Neuron",
+          "UnitType": "0",
+          "ActivateUnitConsumption": "2:1:10801001:2/",
+          "AttributeBonus": "PilotBasePropertyMeleeAdd:242/PilotBasePropertyAssaultAdd:234",
+          "Status": 1,
+          "weight": 2180,
+          "skill": {
+            "ID": "184501",
+            "name": "Whirling Sweep",
+            "describe": "Uses Chainsaw to attack all enemies within <color=#F74848>3</color>-tile horizontal area in front, dealing <color=#F74848>0.8</color>x AoE DMG. When <buf ID=184900>[Edge Momentum]</buf> is at <color=#F74848>8</color> stacks or more, this skill multiplier increases by <color=#F74848>+0.1</color>. Can consume <color=#F74848>5</color> stacks of <buf ID=184900>[Edge Momentum]</buf> to increase Critical Hit DMG of this attack by <color=#F74848>+15%</color> and expand the area to half circle in front, prioritizing the part with lowest HP.",
+            "type": "SpecialAssault",
+            "Ap": "2",
+            "matchingWeaponType": "CS",
+            "SkillIcon": "Icon_skill_order_1102",
+            "icon": "Icon_skill_order_1102",
+            "Status": 1,
+            "weight": 1,
+            "lang": "en"
+          },
+          "skill1": "184501"
+        },
+        {
+          "ID": "1010318413",
+          "PilotName": "Cosette",
+          "name": "Cosette",
+          "UnitNumber": "5",
+          "LocationOnMap": "5",
+          "TitleUnitDetails": "Core Neuron - 2",
+          "UnitName": "Core Neuron",
+          "UnitType": "0",
+          "ActivateUnitConsumption": "2:1:10802002:2/",
+          "AttributeBonus": "PilotBasePropertyMeleeAdd:363/PilotBasePropertyAssaultAdd:352",
+          "Status": 1,
+          "weight": 2181,
+          "skill": {
+            "ID": "184502",
+            "name": "Azure Blitz",
+            "describe": "Selects a tile in a straight direction, then selects an end tile in <color=#F74848>3</color> possible directions, covering up to <color=#F74848>4</color> tiles. Uses Chainsaw to attack all enemies along the path, dealing <color=#F74848>1.2</color>x AoE DMG. This attack prioritizes the part with lowest HP. When <buf ID=184900>[Edge Momentum]</buf> is at <color=#F74848>8</color> stacks or more, this skill multiplier increases by <color=#F74848>+0.2</color>. Can consume <color=#F74848>5</color> stacks of <buf ID=184900>[Edge Momentum]</buf> to increase the number of selectable tiles by <color=#F74848>+2</color> and change the priority to the part with highest HP.",
+            "type": "SpecialAssault",
+            "Ap": "3",
+            "matchingWeaponType": "CS",
+            "SkillIcon": "Icon_skill_order_1167",
+            "icon": "Icon_skill_order_1167",
+            "Status": 1,
+            "weight": 1,
+            "lang": "en"
+          },
+          "skill2": "184502"
+        },
+        {
+          "ID": "1010318414",
+          "PilotName": "Cosette",
+          "name": "Cosette",
+          "UnitNumber": "7",
+          "LocationOnMap": "7",
+          "TitleUnitDetails": "Core Neuron - 3",
+          "UnitName": "Core Neuron",
+          "UnitType": "0",
+          "ActivateUnitConsumption": "2:1:10801003:3/2:1:10801002:5/",
+          "AttributeBonus": "PilotBasePropertyDefenseAdd:227",
+          "Status": 1,
+          "weight": 2182,
+          "skill": {
+            "ID": "184503",
+            "name": "Raging Tide",
+            "describe": "Gains <color=#F74848>3</color> stacks of <buf ID=184900>[Edge Momentum]</buf> as well as <buf ID=182903>[Phantom]</buf> for <color=#F74848>2</color> turns. Movement increases by <color=#F74848>+1</color> for this turn. Can continue to act with full movement. When <buf ID=184900>[Edge Momentum]</buf> is at <color=#F74848>8</color> stacks or more, additionally gains <color=#F74848>2</color> stacks of <buf ID=184900>[Edge Momentum]</buf> and <color=#F74848>+1</color> extra movement for the current turn.",
+            "type": "Order",
+            "Ap": "1",
+            "CD": "2",
+            "matchingWeaponType": "CS",
+            "SkillIcon": "Icon_skill_order_5174",
+            "icon": "Icon_skill_order_5174",
+            "Status": 1,
+            "weight": 1,
+            "lang": "en"
+          },
+          "skill1": "184503"
+        },
+        {
+          "ID": "1010318415",
+          "PilotName": "Cosette",
+          "name": "Cosette",
+          "UnitNumber": "9",
+          "LocationOnMap": "9",
+          "TitleUnitDetails": "Core Neuron - 4",
+          "UnitName": "Core Neuron",
+          "UnitType": "0",
+          "ActivateUnitConsumption": "2:1:10802003:3/2:1:10802002:5/",
+          "AttributeBonus": "PilotBasePropertyDefenseAdd:272",
+          "Status": 1,
+          "weight": 2183,
+          "skill": {
+            "ID": "184504",
+            "name": "Radiant Cleave",
+            "describe": "Uses Chainsaw to attack a main target, dealing <color=#F74848>1.0</color>x DMG, then attacks all enemies within <color=#F74848>1</color> ring AoE around the target, dealing <color=#F74848>0.6</color>x AoE DMG. When <buf ID=184900>[Edge Momentum]</buf> is at <color=#F74848>8</color> stacks or more, this skill multiplier increases by <color=#F74848>+0.1</color>. Can consume <color=#F74848>5</color> stacks of <buf ID=184900>[Edge Momentum]</buf> to make this attack always hit the body, and if the main target's body is at <color=#F74848>50%</color> or higher, additionally deals <buf ID=900017>[Fixed DMG]</buf> equal to <color=#F74848>15%</color> of [Cosette]'s body max HP to all hit enemies' bodies after combat. This <buf ID=900017>[Fixed DMG]</buf> effect can trigger <skill ID=100001>[Mobile Warfare 1]</skill> <buf ID=900004>[Re-ATK]</buf> effect.",
+            "type": "EquipmentSkill",
+            "Ap": "3",
+            "matchingWeaponType": "CS",
+            "SkillIcon": "Icon_skill_main_1181",
+            "icon": "Icon_skill_main_1181",
+            "Status": 1,
+            "weight": 1,
+            "lang": "en"
+          },
+          "skill2": "184504"
+        },
+        {
+          "ID": "1010318416",
+          "PilotName": "Cosette",
+          "name": "Cosette",
+          "UnitNumber": "13",
+          "LocationOnMap": "13",
+          "TitleUnitDetails": "Core Neuron - 5",
+          "UnitName": "Core Neuron",
+          "UnitType": "0",
+          "ActivateUnitConsumption": "2:1:10802004:4/2:1:10802003:6/",
+          "AttributeBonus": "PilotBasePropertyMeleeAdd:509/PilotBasePropertyAssaultAdd:492",
+          "Status": 1,
+          "weight": 2184,
+          "skill": {
+            "ID": "184505",
+            "name": "Sharpened Momentum",
+            "SpecificEffects": "When actively attacking with Chainsaw, gains <color=#F74848>1</color> stack of <buf ID=184900>[Edge Momentum]</buf>. This effect can trigger <color=#F74848>2</color> times per turn.",
+            "SkillIcon": "Icon_skill_passive_5169",
+            "icon": "Icon_skill_passive_5169",
+            "Status": 1,
+            "weight": 1,
+            "lang": "en"
+          },
+          "skill1": "184505"
+        },
+        {
+          "ID": "1010318417",
+          "PilotName": "Cosette",
+          "name": "Cosette",
+          "UnitNumber": "21",
+          "LocationOnMap": "21",
+          "TitleUnitDetails": "Core Neuron - 6",
+          "UnitName": "Core Neuron",
+          "UnitType": "0",
+          "ActivateUnitConsumption": "2:1:10801006:6/2:1:10801005:10/",
+          "AttributeBonus": "PilotBasePropertyDefenseAdd:567",
+          "Status": 1,
+          "weight": 2185,
+          "skill": {
+            "ID": "184506",
+            "name": "Mercenary Tempo",
+            "SpecificEffects": "If <buf ID=184900>[Edge Momentum]</buf> is at <color=#F74848>6</color> stacks or more after an action, gains <color=#F74848>1</color> AP. This effect can trigger <color=#F74848>1</color> time per turn.",
+            "SkillIcon": "Icon_skill_passive_5175",
+            "icon": "Icon_skill_passive_5175",
+            "Status": 1,
+            "weight": 1,
+            "lang": "en"
+          },
+          "skill2": "184506"
+        },
+        {
+          "ID": "1010318418",
+          "PilotName": "Cosette",
+          "name": "Cosette",
+          "UnitNumber": "31",
+          "LocationOnMap": "31",
+          "TitleUnitDetails": "Core Neuron - 7",
+          "UnitName": "Core Neuron",
+          "UnitType": "0",
+          "ActivateUnitConsumption": "2:1:10801008:6/2:1:10803008:6/2:1:10801007:10/2:1:10803007:10/",
+          "AttributeBonus": "PilotBasePropertyMeleeAdd:1756/PilotBasePropertyAssaultAdd:1700",
+          "Status": 1,
+          "weight": 2186,
+          "skill": {
+            "ID": "184507",
+            "name": "Rending Chain",
+            "SpecificEffects": "When actively attacking, if <buf ID=184900>[Edge Momentum]</buf> is at <color=#F74848>8</color> stacks or more, inflicts <buf ID=184903>[Laceration]</buf> to the primary target hit.",
+            "SkillIcon": "Icon_skill_passive_5279",
+            "icon": "Icon_skill_passive_5279",
+            "Status": 1,
+            "weight": 1,
+            "lang": "en"
+          },
+          "skill1": "184507"
+        },
+        {
+          "ID": "1010318436",
+          "PilotName": "Cosette",
+          "name": "Cosette",
+          "UnitNumber": "3",
+          "LocationOnMap": "3",
+          "TitleUnitDetails": "Core Neuron - 8",
+          "UnitType": "0",
+          "Status": 1,
+          "skill": {
+            "ID": "184508",
+            "name": "Tactical Compensation",
+            "SpecificEffects": "After consuming <buf ID=184900>[Edge Momentum]</buf> to trigger <buf ID=184902>[Breakthrough]</buf>, <buf ID=184900>[Edge Momentum]</buf> will not be reduced at the end of turn.",
+            "SkillIcon": "Icon_skill_passive_5323",
+            "icon": "Icon_skill_passive_5323",
+            "Status": 1,
+            "weight": 1,
+            "lang": "en"
+          },
+          "skill1": "184508",
+          "UnitName": "Core Neuron"
+        },
+        {
+          "ID": "1010318419",
+          "PilotName": "Cosette",
+          "name": "Cosette",
+          "UnitNumber": "2",
+          "LocationOnMap": "2",
+          "TitleUnitDetails": "Synapse Neuron - 1",
+          "UnitName": "Synapse Neuron",
+          "UnitType": "2",
+          "ActivateUnitConsumption": "2:1:10802001:2/",
+          "AttributeBonus": "PilotBasePropertyDefenseAdd:170",
+          "icon": "3-1",
+          "Status": 1,
+          "weight": 2187
+        },
+        {
+          "ID": "1010318420",
+          "PilotName": "Cosette",
+          "name": "Cosette",
+          "UnitNumber": "4",
+          "LocationOnMap": "4",
+          "TitleUnitDetails": "Synapse Neuron - 2",
+          "UnitName": "Synapse Neuron",
+          "UnitType": "2",
+          "ActivateUnitConsumption": "2:1:10801002:2/",
+          "AttributeBonus": "PilotBasePropertyDefenseAdd:204",
+          "icon": "3-1",
+          "Status": 1,
+          "weight": 2188
+        },
+        {
+          "ID": "1010318421",
+          "PilotName": "Cosette",
+          "name": "Cosette",
+          "UnitNumber": "6",
+          "LocationOnMap": "6",
+          "TitleUnitDetails": "Synapse Neuron - 3",
+          "UnitName": "Synapse Neuron",
+          "UnitType": "2",
+          "ActivateUnitConsumption": "2:1:10802002:2/",
+          "AttributeBonus": "PilotBasePropertyMeleeAdd:303/PilotBasePropertyAssaultAdd:293",
+          "icon": "3-1",
+          "Status": 1,
+          "weight": 2189
+        },
+        {
+          "ID": "1010318422",
+          "PilotName": "Cosette",
+          "name": "Cosette",
+          "UnitNumber": "8",
+          "LocationOnMap": "8",
+          "TitleUnitDetails": "Synapse Neuron - 4",
+          "UnitName": "Synapse Neuron",
+          "UnitType": "2",
+          "ActivateUnitConsumption": "2:1:10801003:3/2:1:10801002:5/",
+          "AttributeBonus": "PilotBasePropertyMeleeAdd:436/PilotBasePropertyAssaultAdd:422",
+          "icon": "3-1",
+          "Status": 1,
+          "weight": 2190
+        },
+        {
+          "ID": "1010318423",
+          "PilotName": "Cosette",
+          "name": "Cosette",
+          "UnitNumber": "10",
+          "LocationOnMap": "10",
+          "TitleUnitDetails": "Synapse Neuron - 5",
+          "UnitName": "Synapse Neuron",
+          "UnitType": "2",
+          "ActivateUnitConsumption": "2:1:10802003:3/2:1:10802002:5/",
+          "AttributeBonus": "PilotBasePropertyMeleeAdd:363/PilotBasePropertyAssaultAdd:352",
+          "icon": "3-1",
+          "Status": 1,
+          "weight": 2191
+        },
+        {
+          "ID": "1010318424",
+          "PilotName": "Cosette",
+          "name": "Cosette",
+          "UnitNumber": "12",
+          "LocationOnMap": "12",
+          "TitleUnitDetails": "Synapse Neuron - 6",
+          "UnitName": "Synapse Neuron",
+          "UnitType": "2",
+          "ActivateUnitConsumption": "2:1:10801004:4/2:1:10801003:6/",
+          "AttributeBonus": "PilotBasePropertyDefenseAdd:340",
+          "icon": "3-1",
+          "Status": 1,
+          "weight": 2192
+        },
+        {
+          "ID": "1010318425",
+          "PilotName": "Cosette",
+          "name": "Cosette",
+          "UnitNumber": "14",
+          "LocationOnMap": "14",
+          "TitleUnitDetails": "Synapse Neuron - 7",
+          "UnitName": "Synapse Neuron",
+          "UnitType": "2",
+          "ActivateUnitConsumption": "2:1:10802004:4/2:1:10802003:6/",
+          "AttributeBonus": "PilotBasePropertyDefenseAdd:283",
+          "icon": "3-1",
+          "Status": 1,
+          "weight": 2193
+        },
+        {
+          "ID": "1010318426",
+          "PilotName": "Cosette",
+          "name": "Cosette",
+          "UnitNumber": "16",
+          "LocationOnMap": "16",
+          "TitleUnitDetails": "Synapse Neuron - 8",
+          "UnitName": "Synapse Neuron",
+          "UnitType": "2",
+          "ActivateUnitConsumption": "2:1:10801005:5/2:1:10801004:8/",
+          "AttributeBonus": "PilotBasePropertyMeleeAdd:872/PilotBasePropertyAssaultAdd:844",
+          "icon": "3-1",
+          "Status": 1,
+          "weight": 2194
+        },
+        {
+          "ID": "1010318427",
+          "PilotName": "Cosette",
+          "name": "Cosette",
+          "UnitNumber": "18",
+          "LocationOnMap": "18",
+          "TitleUnitDetails": "Synapse Neuron - 9",
+          "UnitName": "Synapse Neuron",
+          "UnitType": "2",
+          "ActivateUnitConsumption": "2:1:10801005:5/2:1:10801004:8/",
+          "AttributeBonus": "PilotBasePropertyDefenseAdd:544",
+          "icon": "3-1",
+          "Status": 1,
+          "weight": 2195
+        },
+        {
+          "ID": "1010318428",
+          "PilotName": "Cosette",
+          "name": "Cosette",
+          "UnitNumber": "20",
+          "LocationOnMap": "20",
+          "TitleUnitDetails": "Synapse Neuron - 10",
+          "UnitName": "Synapse Neuron",
+          "UnitType": "2",
+          "ActivateUnitConsumption": "2:1:10802005:5/2:1:10802004:8/",
+          "AttributeBonus": "PilotBasePropertyMeleeAdd:727/PilotBasePropertyAssaultAdd:703",
+          "icon": "3-1",
+          "Status": 1,
+          "weight": 2196
+        },
+        {
+          "ID": "1010318429",
+          "PilotName": "Cosette",
+          "name": "Cosette",
+          "UnitNumber": "22",
+          "LocationOnMap": "22",
+          "TitleUnitDetails": "Synapse Neuron - 11",
+          "UnitName": "Synapse Neuron",
+          "UnitType": "2",
+          "ActivateUnitConsumption": "2:1:10801006:6/2:1:10801005:10/",
+          "AttributeBonus": "PilotBasePropertyDefenseAdd:680",
+          "icon": "3-1",
+          "Status": 1,
+          "weight": 2197
+        },
+        {
+          "ID": "1010318430",
+          "PilotName": "Cosette",
+          "name": "Cosette",
+          "UnitNumber": "24",
+          "LocationOnMap": "24",
+          "TitleUnitDetails": "Synapse Neuron - 12",
+          "UnitName": "Synapse Neuron",
+          "UnitType": "2",
+          "ActivateUnitConsumption": "2:1:10801006:6/2:1:10801005:10/",
+          "AttributeBonus": "PilotBasePropertyMeleeAdd:1090/PilotBasePropertyAssaultAdd:1055",
+          "icon": "3-1",
+          "Status": 1,
+          "weight": 2198
+        },
+        {
+          "ID": "1010318431",
+          "PilotName": "Cosette",
+          "name": "Cosette",
+          "UnitNumber": "26",
+          "LocationOnMap": "26",
+          "TitleUnitDetails": "Synapse Neuron - 13",
+          "UnitName": "Synapse Neuron",
+          "UnitType": "2",
+          "ActivateUnitConsumption": "2:1:10802006:6/2:1:10802005:10/",
+          "AttributeBonus": "PilotBasePropertyMeleeAdd:908/PilotBasePropertyAssaultAdd:879",
+          "icon": "3-1",
+          "Status": 1,
+          "weight": 2199
+        },
+        {
+          "ID": "1010318432",
+          "PilotName": "Cosette",
+          "name": "Cosette",
+          "UnitNumber": "28",
+          "LocationOnMap": "28",
+          "TitleUnitDetails": "Synapse Neuron - 14",
+          "UnitName": "Synapse Neuron",
+          "UnitType": "2",
+          "ActivateUnitConsumption": "2:1:10801007:5/2:1:10803007:5/2:1:10801006:8/2:1:10803006:8/",
+          "AttributeBonus": "PilotBasePropertyMeleeAdd:1381/PilotBasePropertyAssaultAdd:1336",
+          "icon": "3-1",
+          "Status": 1,
+          "weight": 2200
+        },
+        {
+          "ID": "1010318433",
+          "PilotName": "Cosette",
+          "name": "Cosette",
+          "UnitNumber": "30",
+          "LocationOnMap": "30",
+          "TitleUnitDetails": "Synapse Neuron - 15",
+          "UnitName": "Synapse Neuron",
+          "UnitType": "2",
+          "ActivateUnitConsumption": "2:1:10802007:5/2:1:10804007:5/2:1:10802006:8/2:1:10804006:8/",
+          "AttributeBonus": "PilotBasePropertyDefenseAdd:794",
+          "icon": "3-1",
+          "Status": 1,
+          "weight": 2201
+        },
+        {
+          "ID": "1010318434",
+          "PilotName": "Cosette",
+          "name": "Cosette",
+          "UnitNumber": "32",
+          "LocationOnMap": "32",
+          "TitleUnitDetails": "Synapse Neuron - 16",
+          "UnitName": "Synapse Neuron",
+          "UnitType": "2",
+          "ActivateUnitConsumption": "2:1:10801008:6/2:1:10803008:6/2:1:10801007:10/2:1:10803007:10/",
+          "AttributeBonus": "PilotBasePropertyDefenseAdd:1361",
+          "icon": "3-1",
+          "Status": 1,
+          "weight": 2202
+        },
+        {
+          "ID": "1010318435",
+          "PilotName": "Cosette",
+          "name": "Cosette",
+          "UnitNumber": "34",
+          "LocationOnMap": "34",
+          "TitleUnitDetails": "Synapse Neuron - 17",
+          "UnitName": "Synapse Neuron",
+          "UnitType": "2",
+          "ActivateUnitConsumption": "2:1:10802008:6/2:1:10804008:6/2:1:10802007:10/2:1:10804007:10/",
+          "AttributeBonus": "PilotBasePropertyDefenseAdd:1134",
+          "icon": "3-1",
+          "Status": 1,
+          "weight": 2203
+        }
+      ],
+      "AllowedMechaDriveList_DriveAllowedList": "Medium",
+      "AlternateSkins": "",
+      "stats": {
+        "Combat": "5281",
+        "Assault": "1337",
+        "Shooting": "1799",
+        "Tactics": "1956",
+        "Defense": "4062",
+        "Engineering": "2103",
+        "InitialPilotAPValue_PilotAPInitBase": "5",
+        "MaximumPilotAPValue_PilotAPMaxBase": "5",
+        "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
+      },
+      "version": "3.6",
+      "enTranslation": true,
+      "statRanks": {
+        "Combat": 3,
+        "Shooting": 45,
+        "Assault": 70,
+        "Tactics": 33,
+        "Engineering": 26
       }
     },
     {
@@ -16889,7 +18040,7 @@
       "version": "1.0",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 63,
+        "Combat": 64,
         "Shooting": 8,
         "Assault": 52,
         "Tactics": 20,
@@ -18002,11 +19153,11 @@
       "version": "1.4",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 5,
-        "Shooting": 49,
+        "Combat": 6,
+        "Shooting": 50,
         "Assault": 45,
         "Tactics": 28,
-        "Engineering": 65
+        "Engineering": 66
       }
     },
     {
@@ -19192,11 +20343,11 @@
       "version": "1.0",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 24,
-        "Shooting": 47,
+        "Combat": 25,
+        "Shooting": 48,
         "Assault": 31,
         "Tactics": 59,
-        "Engineering": 55
+        "Engineering": 56
       }
     },
     {
@@ -20299,7 +21450,7 @@
       "version": "1.0",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 66,
+        "Combat": 67,
         "Shooting": 22,
         "Assault": 59,
         "Tactics": 10,
@@ -21401,8 +22552,8 @@
         }
       ],
       "statRanks": {
-        "Combat": 35,
-        "Shooting": 58,
+        "Combat": 36,
+        "Shooting": 59,
         "Assault": 16,
         "Tactics": 48,
         "Engineering": 16
@@ -22516,11 +23667,11 @@
       "version": "1.4",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 59,
-        "Shooting": 52,
+        "Combat": 60,
+        "Shooting": 53,
         "Assault": 25,
         "Tactics": 13,
-        "Engineering": 69
+        "Engineering": 70
       }
     },
     {
@@ -23635,8 +24786,8 @@
       "version": "1.8",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 40,
-        "Shooting": 65,
+        "Combat": 41,
+        "Shooting": 66,
         "Assault": 14,
         "Tactics": 54,
         "Engineering": 12
@@ -24836,7 +25987,7 @@
       "version": "1.0",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 55,
+        "Combat": 56,
         "Shooting": 27,
         "Assault": 6,
         "Tactics": 60,
@@ -25937,10 +27088,10 @@
       ],
       "statRanks": {
         "Combat": 2,
-        "Shooting": 74,
-        "Assault": 74,
+        "Shooting": 75,
+        "Assault": 75,
         "Tactics": 2,
-        "Engineering": 74
+        "Engineering": 75
       }
     },
     {
@@ -27127,8 +28278,8 @@
       "version": "1.0",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 72,
-        "Shooting": 70,
+        "Combat": 73,
+        "Shooting": 71,
         "Assault": 23,
         "Tactics": 46,
         "Engineering": 8
@@ -28322,11 +29473,11 @@
       "version": "1.0",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 12,
-        "Shooting": 55,
+        "Combat": 13,
+        "Shooting": 56,
         "Assault": 38,
         "Tactics": 33,
-        "Engineering": 64
+        "Engineering": 65
       }
     },
     {
@@ -29872,7 +31023,7 @@
         }
       ],
       "statRanks": {
-        "Combat": 5,
+        "Combat": 6,
         "Shooting": 1,
         "Assault": 3,
         "Tactics": 1,
@@ -30971,11 +32122,11 @@
         }
       ],
       "statRanks": {
-        "Combat": 47,
-        "Shooting": 51,
+        "Combat": 48,
+        "Shooting": 52,
         "Assault": 46,
         "Tactics": 6,
-        "Engineering": 26
+        "Engineering": 27
       }
     },
     {
@@ -32166,11 +33317,11 @@
       "version": "1.0",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 6,
+        "Combat": 7,
         "Shooting": 24,
         "Assault": 65,
         "Tactics": 43,
-        "Engineering": 59
+        "Engineering": 60
       }
     },
     {
@@ -33337,11 +34488,11 @@
       "version": "1.0",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 15,
-        "Shooting": 72,
+        "Combat": 16,
+        "Shooting": 73,
         "Assault": 23,
         "Tactics": 59,
-        "Engineering": 70
+        "Engineering": 71
       }
     },
     {
@@ -34488,10 +35639,10 @@
       "enTranslation": true,
       "statRanks": {
         "Combat": 1,
-        "Shooting": 75,
+        "Shooting": 76,
         "Assault": 4,
         "Tactics": 70,
-        "Engineering": 76
+        "Engineering": 77
       }
     },
     {
@@ -35599,11 +36750,11 @@
       "version": "1.3",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 29,
+        "Combat": 30,
         "Shooting": 9,
         "Assault": 44,
         "Tactics": 57,
-        "Engineering": 35
+        "Engineering": 36
       }
     },
     {
@@ -36702,8 +37853,8 @@
         }
       ],
       "statRanks": {
-        "Combat": 55,
-        "Shooting": 48,
+        "Combat": 56,
+        "Shooting": 49,
         "Assault": 8,
         "Tactics": 31,
         "Engineering": 23
@@ -37813,7 +38964,7 @@
       "version": "1.2",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 68,
+        "Combat": 69,
         "Shooting": 18,
         "Assault": 66,
         "Tactics": 48,
@@ -38959,11 +40110,11 @@
       "version": "3.5",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 4,
+        "Combat": 5,
         "Shooting": 40,
         "Assault": 2,
         "Tactics": 27,
-        "Engineering": 56
+        "Engineering": 57
       }
     },
     {
@@ -40057,11 +41208,11 @@
         }
       ],
       "statRanks": {
-        "Combat": 3,
+        "Combat": 4,
         "Shooting": 30,
         "Assault": 60,
         "Tactics": 51,
-        "Engineering": 36
+        "Engineering": 37
       }
     },
     {
@@ -41256,11 +42407,11 @@
       "version": "1.0",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 19,
-        "Shooting": 50,
+        "Combat": 20,
+        "Shooting": 51,
         "Assault": 13,
         "Tactics": 72,
-        "Engineering": 71
+        "Engineering": 72
       }
     },
     {
@@ -42361,9 +43512,9 @@
         }
       ],
       "statRanks": {
-        "Combat": 13,
-        "Shooting": 69,
-        "Assault": 77,
+        "Combat": 14,
+        "Shooting": 70,
+        "Assault": 78,
         "Tactics": 73,
         "Engineering": 2
       }
@@ -43481,11 +44632,11 @@
       "version": "2.1",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 49,
+        "Combat": 50,
         "Shooting": 28,
         "Assault": 7,
         "Tactics": 36,
-        "Engineering": 48
+        "Engineering": 49
       }
     },
     {
@@ -44675,7 +45826,7 @@
       "version": "1.0",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 48,
+        "Combat": 49,
         "Shooting": 20,
         "Assault": 61,
         "Tactics": 69,
@@ -45868,9 +47019,9 @@
       "version": "1.0",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 45,
+        "Combat": 46,
         "Shooting": 25,
-        "Assault": 74,
+        "Assault": 75,
         "Tactics": 11,
         "Engineering": 14
       }
@@ -47067,7 +48218,7 @@
       "version": "1.0",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 63,
+        "Combat": 64,
         "Shooting": 7,
         "Assault": 36,
         "Tactics": 63,
@@ -48217,11 +49368,11 @@
       "version": "3.4",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 31,
-        "Shooting": 51,
+        "Combat": 32,
+        "Shooting": 52,
         "Assault": 54,
         "Tactics": 7,
-        "Engineering": 39
+        "Engineering": 40
       }
     },
     {
@@ -49341,11 +50492,11 @@
       "version": "1.7",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 9,
-        "Shooting": 66,
+        "Combat": 10,
+        "Shooting": 67,
         "Assault": 50,
         "Tactics": 22,
-        "Engineering": 43
+        "Engineering": 44
       }
     },
     {
@@ -50456,7 +51607,7 @@
       "version": "2.0",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 41,
+        "Combat": 42,
         "Shooting": 6,
         "Assault": 48,
         "Tactics": 52,
@@ -51574,11 +52725,11 @@
       "version": "1.5",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 33,
+        "Combat": 34,
         "Shooting": 33,
         "Assault": 24,
         "Tactics": 41,
-        "Engineering": 62
+        "Engineering": 63
       }
     },
     {
@@ -52774,11 +53925,11 @@
       "version": "1.0",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 61,
-        "Shooting": 62,
+        "Combat": 62,
+        "Shooting": 63,
         "Assault": 17,
         "Tactics": 12,
-        "Engineering": 75
+        "Engineering": 76
       }
     },
     {
@@ -53894,11 +55045,11 @@
       "version": "2.0",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 73,
-        "Shooting": 67,
+        "Combat": 74,
+        "Shooting": 68,
         "Assault": 15,
         "Tactics": 3,
-        "Engineering": 72
+        "Engineering": 73
       }
     },
     {
@@ -54997,8 +56148,8 @@
       "version": "2.1",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 34,
-        "Shooting": 63,
+        "Combat": 35,
+        "Shooting": 64,
         "Assault": 57,
         "Tactics": 8,
         "Engineering": 15
@@ -56143,8 +57294,8 @@
         }
       ],
       "statRanks": {
-        "Combat": 49,
-        "Shooting": 65,
+        "Combat": 50,
+        "Shooting": 66,
         "Assault": 34,
         "Tactics": 67,
         "Engineering": 1
@@ -57333,8 +58484,8 @@
       "version": "1.0",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 52,
-        "Shooting": 58,
+        "Combat": 53,
+        "Shooting": 59,
         "Assault": 33,
         "Tactics": 65,
         "Engineering": 3
@@ -58529,11 +59680,11 @@
       "version": "1.0",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 71,
+        "Combat": 72,
         "Shooting": 11,
         "Assault": 69,
         "Tactics": 15,
-        "Engineering": 51
+        "Engineering": 52
       }
     },
     {
@@ -59640,11 +60791,11 @@
       "version": "1.5",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 69,
+        "Combat": 70,
         "Shooting": 2,
         "Assault": 12,
         "Tactics": 70,
-        "Engineering": 77
+        "Engineering": 78
       }
     },
     {
@@ -60796,7 +61947,7 @@
       "version": "3.6",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 42,
+        "Combat": 43,
         "Shooting": 36,
         "Assault": 66,
         "Tactics": 5,
@@ -61986,11 +63137,11 @@
       "version": "1.0",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 25,
+        "Combat": 26,
         "Shooting": 10,
         "Assault": 44,
         "Tactics": 64,
-        "Engineering": 50
+        "Engineering": 51
       }
     },
     {
@@ -63090,8 +64241,8 @@
         }
       ],
       "statRanks": {
-        "Combat": 74,
-        "Shooting": 73,
+        "Combat": 75,
+        "Shooting": 74,
         "Assault": 1,
         "Tactics": 68,
         "Engineering": 4
@@ -64201,11 +65352,11 @@
       "version": "1.3",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 28,
+        "Combat": 29,
         "Shooting": 31,
         "Assault": 26,
         "Tactics": 58,
-        "Engineering": 46
+        "Engineering": 47
       }
     },
     {
@@ -65304,11 +66455,11 @@
         }
       ],
       "statRanks": {
-        "Combat": 36,
-        "Shooting": 55,
+        "Combat": 37,
+        "Shooting": 56,
         "Assault": 9,
         "Tactics": 43,
-        "Engineering": 29
+        "Engineering": 30
       }
     },
     {
@@ -66402,11 +67553,11 @@
         }
       ],
       "statRanks": {
-        "Combat": 37,
-        "Shooting": 51,
+        "Combat": 38,
+        "Shooting": 52,
         "Assault": 46,
         "Tactics": 14,
-        "Engineering": 39
+        "Engineering": 40
       }
     },
     {
@@ -67500,11 +68651,11 @@
         }
       ],
       "statRanks": {
-        "Combat": 52,
+        "Combat": 53,
         "Shooting": 5,
         "Assault": 42,
         "Tactics": 24,
-        "Engineering": 54
+        "Engineering": 55
       }
     },
     {
@@ -68600,11 +69751,11 @@
         }
       ],
       "statRanks": {
-        "Combat": 6,
+        "Combat": 7,
         "Shooting": 38,
         "Assault": 55,
         "Tactics": 47,
-        "Engineering": 52
+        "Engineering": 53
       }
     },
     {
@@ -69795,11 +70946,11 @@
       "version": "1.0",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 26,
-        "Shooting": 51,
+        "Combat": 27,
+        "Shooting": 52,
         "Assault": 16,
         "Tactics": 66,
-        "Engineering": 26
+        "Engineering": 27
       }
     },
     {
@@ -70896,8 +72047,8 @@
         }
       ],
       "statRanks": {
-        "Combat": 10,
-        "Shooting": 71,
+        "Combat": 11,
+        "Shooting": 72,
         "Assault": 64,
         "Tactics": 61,
         "Engineering": 11
@@ -72090,7 +73241,7 @@
       "version": "1.0",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 64,
+        "Combat": 65,
         "Shooting": 16,
         "Assault": 37,
         "Tactics": 44,
@@ -73192,11 +74343,11 @@
         }
       ],
       "statRanks": {
-        "Combat": 14,
-        "Shooting": 46,
-        "Assault": 70,
+        "Combat": 15,
+        "Shooting": 47,
+        "Assault": 71,
         "Tactics": 30,
-        "Engineering": 33
+        "Engineering": 34
       }
     },
     {
@@ -74366,7 +75517,7 @@
       "version": "1.0",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 46,
+        "Combat": 47,
         "Shooting": 12,
         "Assault": 68,
         "Tactics": 42,
@@ -75541,11 +76692,11 @@
       "version": "1.0",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 27,
-        "Shooting": 56,
+        "Combat": 28,
+        "Shooting": 57,
         "Assault": 32,
         "Tactics": 62,
-        "Engineering": 38
+        "Engineering": 39
       }
     },
     {
@@ -76716,11 +77867,11 @@
       "version": "1.0",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 56,
+        "Combat": 57,
         "Shooting": 19,
         "Assault": 48,
         "Tactics": 32,
-        "Engineering": 41
+        "Engineering": 42
       }
     },
     {
@@ -77887,11 +79038,11 @@
       "version": "1.0",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 56,
+        "Combat": 57,
         "Shooting": 14,
         "Assault": 41,
         "Tactics": 27,
-        "Engineering": 63
+        "Engineering": 64
       }
     },
     {
@@ -79059,11 +80210,11 @@
       "version": "1.0",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 39,
-        "Shooting": 53,
+        "Combat": 40,
+        "Shooting": 54,
         "Assault": 40,
         "Tactics": 17,
-        "Engineering": 55
+        "Engineering": 56
       }
     },
     {
@@ -80229,7 +81380,7 @@
       "version": "1.0",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 67,
+        "Combat": 68,
         "Shooting": 36,
         "Assault": 22,
         "Tactics": 45,
@@ -81403,11 +82554,11 @@
       "version": "1.0",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 16,
+        "Combat": 17,
         "Shooting": 42,
-        "Assault": 73,
+        "Assault": 74,
         "Tactics": 23,
-        "Engineering": 56
+        "Engineering": 57
       }
     },
     {
@@ -82597,9 +83748,9 @@
       "version": "1.0",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 58,
+        "Combat": 59,
         "Shooting": 21,
-        "Assault": 72,
+        "Assault": 73,
         "Tactics": 56,
         "Engineering": 9
       }
@@ -83771,11 +84922,11 @@
       "version": "1.0",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 32,
-        "Shooting": 56,
+        "Combat": 33,
+        "Shooting": 57,
         "Assault": 20,
         "Tactics": 62,
-        "Engineering": 27
+        "Engineering": 28
       }
     },
     {
@@ -84942,11 +86093,11 @@
       "version": "1.0",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 18,
+        "Combat": 19,
         "Shooting": 35,
         "Assault": 62,
         "Tactics": 66,
-        "Engineering": 29
+        "Engineering": 30
       }
     },
     {
@@ -86114,11 +87265,11 @@
       "version": "1.0",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 52,
-        "Shooting": 71,
+        "Combat": 53,
+        "Shooting": 72,
         "Assault": 27,
         "Tactics": 16,
-        "Engineering": 67
+        "Engineering": 68
       }
     },
     {
@@ -87285,11 +88436,11 @@
       "version": "1.0",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 42,
+        "Combat": 43,
         "Shooting": 32,
         "Assault": 21,
         "Tactics": 38,
-        "Engineering": 65
+        "Engineering": 66
       }
     },
     {
@@ -88459,11 +89610,11 @@
       "version": "1.0",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 17,
-        "Shooting": 68,
+        "Combat": 18,
+        "Shooting": 69,
         "Assault": 56,
         "Tactics": 28,
-        "Engineering": 41
+        "Engineering": 42
       }
     },
     {
@@ -89633,11 +90784,11 @@
       "version": "1.0",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 53,
+        "Combat": 54,
         "Shooting": 34,
         "Assault": 19,
         "Tactics": 40,
-        "Engineering": 53
+        "Engineering": 54
       }
     },
     {
@@ -90804,11 +91955,11 @@
       "version": "1.0",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 30,
+        "Combat": 31,
         "Shooting": 13,
         "Assault": 51,
         "Tactics": 55,
-        "Engineering": 49
+        "Engineering": 50
       }
     },
     {
@@ -91652,11 +92803,11 @@
       "version": "1.0",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 23,
-        "Shooting": 54,
+        "Combat": 24,
+        "Shooting": 55,
         "Assault": 63,
         "Tactics": 58,
-        "Engineering": 37
+        "Engineering": 38
       }
     },
     {
@@ -92518,9 +93669,9 @@
       "version": "1.0",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 70,
+        "Combat": 71,
         "Shooting": 26,
-        "Assault": 71,
+        "Assault": 72,
         "Tactics": 52,
         "Engineering": 10
       }
@@ -93367,11 +94518,11 @@
       "version": "1.0",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 43,
-        "Shooting": 50,
+        "Combat": 44,
+        "Shooting": 51,
         "Assault": 29,
         "Tactics": 56,
-        "Engineering": 45
+        "Engineering": 46
       }
     },
     {
@@ -94213,11 +95364,11 @@
       "version": "1.0",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 51,
-        "Shooting": 61,
+        "Combat": 52,
+        "Shooting": 62,
         "Assault": 30,
         "Tactics": 35,
-        "Engineering": 44
+        "Engineering": 45
       }
     },
     {
@@ -95062,11 +96213,11 @@
       "version": "1.0",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 22,
+        "Combat": 23,
         "Shooting": 17,
-        "Assault": 76,
+        "Assault": 77,
         "Tactics": 61,
-        "Engineering": 68
+        "Engineering": 69
       }
     },
     {
@@ -95904,11 +97055,11 @@
       "version": "1.0",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 54,
+        "Combat": 55,
         "Shooting": 41,
         "Assault": 67,
         "Tactics": 18,
-        "Engineering": 34
+        "Engineering": 35
       }
     },
     {
@@ -96753,11 +97904,11 @@
       "version": "1.0",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 63,
+        "Combat": 64,
         "Shooting": 44,
         "Assault": 28,
         "Tactics": 49,
-        "Engineering": 47
+        "Engineering": 48
       }
     },
     {
@@ -97599,11 +98750,11 @@
       "version": "1.0",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 20,
-        "Shooting": 64,
+        "Combat": 21,
+        "Shooting": 65,
         "Assault": 58,
         "Tactics": 50,
-        "Engineering": 49
+        "Engineering": 50
       }
     },
     {
@@ -98448,11 +99599,11 @@
       "version": "1.0",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 21,
-        "Shooting": 45,
+        "Combat": 22,
+        "Shooting": 46,
         "Assault": 63,
         "Tactics": 50,
-        "Engineering": 61
+        "Engineering": 62
       }
     },
     {
@@ -99297,11 +100448,11 @@
       "version": "1.0",
       "enTranslation": true,
       "statRanks": {
-        "Combat": 50,
+        "Combat": 51,
         "Shooting": 15,
         "Assault": 53,
         "Tactics": 43,
-        "Engineering": 58
+        "Engineering": 59
       }
     }
   ]

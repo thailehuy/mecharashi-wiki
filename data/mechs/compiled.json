@@ -1102,6 +1102,100 @@
       "enTranslation": true
     },
     {
+      "ID": "20710103",
+      "name": "Blue Anonymous Bird",
+      "type": "Medium",
+      "quality": "SSR",
+      "icon": "Icon_mecha_wap2071",
+      "mechaIcon": "Icon_wap2071_1",
+      "lihuiIcon": "icon_lihui_wap2071",
+      "introduce": "",
+      "output": "2725",
+      "durable": "446",
+      "Armor": "941",
+      "fire": "127",
+      "Antiriot": "770",
+      "parts": [
+        {
+          "position": "Body",
+          "aircraftWeight": "280",
+          "maxHp": "11149",
+          "Armor": "706",
+          "Hit": null,
+          "Dodge": null,
+          "Antiriot": "4472"
+        },
+        {
+          "position": "L-Arm",
+          "aircraftWeight": "170",
+          "maxHp": "5810",
+          "Armor": "470",
+          "Hit": "2091",
+          "Dodge": null,
+          "Antiriot": null
+        },
+        {
+          "position": "R-Arm",
+          "aircraftWeight": "170",
+          "maxHp": "5810",
+          "Armor": "470",
+          "Hit": "2091",
+          "Dodge": null,
+          "Antiriot": null
+        },
+        {
+          "position": "Legs",
+          "aircraftWeight": "205",
+          "maxHp": "9480",
+          "Armor": "470",
+          "Hit": null,
+          "Dodge": "3885",
+          "Antiriot": null
+        }
+      ],
+      "manjiFirepower": "1264",
+      "modules": [
+        {
+          "ID": "90264",
+          "name": "Raptor Unit",
+          "SpecificEffects": "When actively attacking with a Melee Weapon, Critical Hit chance increases by <color=#F74848>20%</color>. If the target part is at full HP, DMG Dealt increases by <color=#F74848>20%</color>.",
+          "BufCarried": "902641",
+          "SkillIcon": "Icon_skill_passive_4133",
+          "icon": "Icon_skill_passive_4133",
+          "Status": 1,
+          "weight": 1,
+          "id": "9026",
+          "level": 4
+        },
+        {
+          "ID": "40034",
+          "name": "Crit DMG Mod",
+          "SpecificEffects": "Crit DMG <color=#F74848>+10%</color>.",
+          "BufCarried": "400341",
+          "SkillIcon": "Icon_entry_40031",
+          "icon": "Icon_entry_40031",
+          "Status": 1,
+          "weight": 2,
+          "id": "4003",
+          "level": 4
+        },
+        {
+          "ID": "90368",
+          "name": "Raiding Module",
+          "SpecificEffects": "When actively attacking with a Melee Weapon, DMG Dealt increases by <color=#F74848>12%</color>. For each <color=#F74848>1</color> <buf ID=900004>[Re-ATK]</buf> triggered during the turn, DMG Dealt additionally increases by <color=#F74848>6%</color>, up to <color=#F74848>18%</color>. This effect is removed at the end of turn.\nAfter triggering <buf ID=900004>[Re-ATK]</buf>, Critical Hit chance and Critical Hit DMG increase by <color=#F74848>15%</color>.",
+          "BufCarried": "903681",
+          "SkillIcon": "Icon_entry_10115",
+          "icon": "Icon_entry_10115",
+          "Status": 1,
+          "weight": 3,
+          "id": "9036",
+          "level": 8
+        }
+      ],
+      "version": "3.6",
+      "enTranslation": true
+    },
+    {
       "ID": "20220103",
       "name": "Blue Bird",
       "type": "Medium",

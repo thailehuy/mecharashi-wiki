@@ -330,6 +330,29 @@ MANUAL_MODULE_LEVELS = {
             ('7', '2', '6'), ('8', '2', '8'), ('9', '3', '9'), ('12', '3', '12'),
         ],
     },
+    # Raptor Unit (Blue Anonymous Bird): Melee Crit chance% and full-HP DMG%.
+    '9026': {
+        'name': 'Raptor Unit',
+        'icon': 'Icon_skill_passive_4133',
+        'category': 'GeneralSuit',
+        'maxLevel': 4,
+        'tags': [0, 1],
+        'ladder': [('4', '4'), ('8', '8'), ('14', '14'), ('20', '20')],
+    },
+    # Raiding Module (Blue Anonymous Bird): Melee DMG%, per-[Re-ATK] DMG%,
+    # cap; the post-[Re-ATK] Crit clause only unlocks at max level.
+    '9036': {
+        'name': 'Raiding Module',
+        'icon': 'Icon_entry_10115',
+        'category': 'GeneralSuit',
+        'maxLevel': 8,
+        'bonusAtMax': True,
+        'tags': [0, 2, 3],
+        'ladder': [
+            ('2', '1', '3'), ('3', '1.5', '4.5'), ('4', '2', '6'), ('5', '2.5', '7.5'),
+            ('7', '3.5', '10.5'), ('8', '4', '12'), ('9', '4.5', '13.5'), ('12', '6', '18'),
+        ],
+    },
     # Stargazer Unit (Asteria): no scaling numbers; the end-of-turn AP /
     # [Shift Energy] and [Lustre] CP clause only unlocks at max level.
     '9040': {

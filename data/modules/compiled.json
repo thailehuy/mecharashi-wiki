@@ -1541,23 +1541,6 @@
         "8": "If this unit doesn't move before actively attacking, Crit Rate <color=#F74848>+24%</color>. If a critical hit occurs when attacking, Crit DMG <color=#F74848>+3%</color> after combat. This effect can stack up to a maximum increase of <color=#F74848>15%</color>."
       }
     },
-    "3045": {
-      "name": "Support Mod",
-      "icon": "Icon_entry_10097",
-      "category": "GeneralSuit",
-      "maxLevel": 8,
-      "currentLevel": 8,
-      "levels": {
-        "1": "When attacking, if there are allies within <color=#F74848>4</color> adjacent tiles, DMG dealt increases by <color=#F74848>3%</color>.",
-        "2": "When attacking, if there are allies within <color=#F74848>4</color> adjacent tiles, DMG dealt increases by <color=#F74848>4%</color>.",
-        "3": "When attacking, if there are allies within <color=#F74848>4</color> adjacent tiles, DMG dealt increases by <color=#F74848>6%</color>.",
-        "4": "When attacking, if there are allies within <color=#F74848>4</color> adjacent tiles, DMG dealt increases by <color=#F74848>8%</color>.",
-        "5": "When attacking, if there are allies within <color=#F74848>4</color> adjacent tiles, DMG dealt increases by <color=#F74848>10%</color>.",
-        "6": "When attacking, if there are allies within <color=#F74848>4</color> adjacent tiles, DMG dealt increases by <color=#F74848>12%</color>.",
-        "7": "When attacking, if there are allies within <color=#F74848>4</color> adjacent tiles, DMG dealt increases by <color=#F74848>14%</color>.",
-        "8": "When attacking, if there are allies within <color=#F74848>4</color> adjacent tiles, DMG dealt increases by <color=#F74848>18%</color>.\nAt the end of turn, if <color=#F74848>2</color> or more code or attack skills are used this turn, recovers <color=#F74848>1</color> AP."
-      }
-    },
     "3031": {
       "name": "Skirmishing Mod",
       "icon": "Icon_skill_passive_1154",
@@ -1609,6 +1592,23 @@
         "8": "When there are no allies within <color=#F74848>2</color> adjacent tiles, DMG +<color=#F74848>18%</color>;\nAt start of action, if there are no allies within <color=#F74848>2</color> adjacent tiles, AP cost of the first attack initiated this turn <color=#F74848>-1</color>, down to a minimum of <color=#F74848>1</color> AP."
       }
     },
+    "3045": {
+      "name": "Support Mod",
+      "icon": "Icon_entry_10097",
+      "category": "GeneralSuit",
+      "maxLevel": 8,
+      "currentLevel": 8,
+      "levels": {
+        "1": "When attacking, if there are allies within <color=#F74848>4</color> adjacent tiles, DMG dealt increases by <color=#F74848>3%</color>.",
+        "2": "When attacking, if there are allies within <color=#F74848>4</color> adjacent tiles, DMG dealt increases by <color=#F74848>4%</color>.",
+        "3": "When attacking, if there are allies within <color=#F74848>4</color> adjacent tiles, DMG dealt increases by <color=#F74848>6%</color>.",
+        "4": "When attacking, if there are allies within <color=#F74848>4</color> adjacent tiles, DMG dealt increases by <color=#F74848>8%</color>.",
+        "5": "When attacking, if there are allies within <color=#F74848>4</color> adjacent tiles, DMG dealt increases by <color=#F74848>10%</color>.",
+        "6": "When attacking, if there are allies within <color=#F74848>4</color> adjacent tiles, DMG dealt increases by <color=#F74848>12%</color>.",
+        "7": "When attacking, if there are allies within <color=#F74848>4</color> adjacent tiles, DMG dealt increases by <color=#F74848>14%</color>.",
+        "8": "When attacking, if there are allies within <color=#F74848>4</color> adjacent tiles, DMG dealt increases by <color=#F74848>18%</color>.\nAt the end of turn, if <color=#F74848>2</color> or more code or attack skills are used this turn, recovers <color=#F74848>1</color> AP."
+      }
+    },
     "3033": {
       "name": "Sentinel Mod",
       "icon": "Icon_entry_10084",
@@ -1626,23 +1626,6 @@
         "8": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, DMG <color=#F74848>+18%</color>.\nWhen in combat with a target at <buf ID=900011>[Ideal Range]</buf>, Bullets <color=#F74848>+1</color>."
       }
     },
-    "3036": {
-      "name": "Bombardment Mod",
-      "icon": "Icon_entry_10087",
-      "category": "GeneralSuit",
-      "maxLevel": 8,
-      "currentLevel": 8,
-      "levels": {
-        "1": "When executing Code attacks, DMG <color=#F74848>+3%</color>.",
-        "2": "When executing Code attacks, DMG <color=#F74848>+4%</color>.",
-        "3": "When executing Code attacks, DMG <color=#F74848>+6%</color>.",
-        "4": "When executing Code attacks, DMG <color=#F74848>+8%</color>.",
-        "5": "When executing Code attacks, DMG <color=#F74848>+10%</color>.",
-        "6": "When executing Code attacks, DMG <color=#F74848>+12%</color>.",
-        "7": "When executing Code attacks, DMG <color=#F74848>+14%</color>.",
-        "8": "When executing Code attacks, DMG <color=#F74848>+18%</color>.\nWhen actively attacking with a Tactical Weapon, if <color=#F74848>3</color> or more targets are hit, randomly reloads <color=#F74848>1</color> Ammo after combat, up to <color=#F74848>1</color> time per turn."
-      }
-    },
     "3040": {
       "name": "Ravage Mod",
       "icon": "Icon_entry_10091",
@@ -1658,6 +1641,23 @@
         "6": "When attacking a target on any terrain effect, DMG <color=#F74848>+12%</color>.",
         "7": "When attacking a target on any terrain effect, DMG <color=#F74848>+14%</color>.",
         "8": "When attacking a target on any terrain effect, DMG <color=#F74848>+18%</color>. <buf ID=900017>[Fixed DMG]</buf> dealt is increased by <color=#F74848>25%</color>."
+      }
+    },
+    "3036": {
+      "name": "Bombardment Mod",
+      "icon": "Icon_entry_10087",
+      "category": "GeneralSuit",
+      "maxLevel": 8,
+      "currentLevel": 8,
+      "levels": {
+        "1": "When executing Code attacks, DMG <color=#F74848>+3%</color>.",
+        "2": "When executing Code attacks, DMG <color=#F74848>+4%</color>.",
+        "3": "When executing Code attacks, DMG <color=#F74848>+6%</color>.",
+        "4": "When executing Code attacks, DMG <color=#F74848>+8%</color>.",
+        "5": "When executing Code attacks, DMG <color=#F74848>+10%</color>.",
+        "6": "When executing Code attacks, DMG <color=#F74848>+12%</color>.",
+        "7": "When executing Code attacks, DMG <color=#F74848>+14%</color>.",
+        "8": "When executing Code attacks, DMG <color=#F74848>+18%</color>.\nWhen actively attacking with a Tactical Weapon, if <color=#F74848>3</color> or more targets are hit, randomly reloads <color=#F74848>1</color> Ammo after combat, up to <color=#F74848>1</color> time per turn."
       }
     },
     "3034": {
@@ -1885,6 +1885,36 @@
         "6": "Critical Hit chance increases by <color=#F74848>8%</color>. When actively attacking, Critical Hit chance additionally increases by <color=#F74848>2%</color> for each <color=#F74848>1</color> target within skill range, up to a maximum of <color=#F74848>8%</color>.",
         "7": "Critical Hit chance increases by <color=#F74848>9%</color>. When actively attacking, Critical Hit chance additionally increases by <color=#F74848>3%</color> for each <color=#F74848>1</color> target within skill range, up to a maximum of <color=#F74848>9%</color>.",
         "8": "Critical Hit chance increases by <color=#F74848>12%</color>. When actively attacking, Critical Hit chance additionally increases by <color=#F74848>3%</color> for each <color=#F74848>1</color> target within skill range, up to a maximum of <color=#F74848>12%</color>.\nIf Critical Hit chance exceeds <color=#F74848>50%</color>, Critical Hit DMG increases by <color=#F74848>1%</color> for each <color=#F74848>1%</color> of Critical Hit chance above the threshold, up to <color=#F74848>+15%</color>. If an active attack scores a Critical Hit on <color=#F74848>2</color> or more targets, gains <color=#F74848>1</color> AP. This effect can trigger <color=#F74848>1</color> time per turn."
+      }
+    },
+    "9026": {
+      "name": "Raptor Unit",
+      "icon": "Icon_skill_passive_4133",
+      "category": "GeneralSuit",
+      "maxLevel": 4,
+      "currentLevel": 4,
+      "levels": {
+        "1": "When actively attacking with a Melee Weapon, Critical Hit chance increases by <color=#F74848>4%</color>. If the target part is at full HP, DMG Dealt increases by <color=#F74848>4%</color>.",
+        "2": "When actively attacking with a Melee Weapon, Critical Hit chance increases by <color=#F74848>8%</color>. If the target part is at full HP, DMG Dealt increases by <color=#F74848>8%</color>.",
+        "3": "When actively attacking with a Melee Weapon, Critical Hit chance increases by <color=#F74848>14%</color>. If the target part is at full HP, DMG Dealt increases by <color=#F74848>14%</color>.",
+        "4": "When actively attacking with a Melee Weapon, Critical Hit chance increases by <color=#F74848>20%</color>. If the target part is at full HP, DMG Dealt increases by <color=#F74848>20%</color>."
+      }
+    },
+    "9036": {
+      "name": "Raiding Module",
+      "icon": "Icon_entry_10115",
+      "category": "GeneralSuit",
+      "maxLevel": 8,
+      "currentLevel": 8,
+      "levels": {
+        "1": "When actively attacking with a Melee Weapon, DMG Dealt increases by <color=#F74848>2%</color>. For each <color=#F74848>1</color> <buf ID=900004>[Re-ATK]</buf> triggered during the turn, DMG Dealt additionally increases by <color=#F74848>1%</color>, up to <color=#F74848>3%</color>. This effect is removed at the end of turn.",
+        "2": "When actively attacking with a Melee Weapon, DMG Dealt increases by <color=#F74848>3%</color>. For each <color=#F74848>1</color> <buf ID=900004>[Re-ATK]</buf> triggered during the turn, DMG Dealt additionally increases by <color=#F74848>1.5%</color>, up to <color=#F74848>4.5%</color>. This effect is removed at the end of turn.",
+        "3": "When actively attacking with a Melee Weapon, DMG Dealt increases by <color=#F74848>4%</color>. For each <color=#F74848>1</color> <buf ID=900004>[Re-ATK]</buf> triggered during the turn, DMG Dealt additionally increases by <color=#F74848>2%</color>, up to <color=#F74848>6%</color>. This effect is removed at the end of turn.",
+        "4": "When actively attacking with a Melee Weapon, DMG Dealt increases by <color=#F74848>5%</color>. For each <color=#F74848>1</color> <buf ID=900004>[Re-ATK]</buf> triggered during the turn, DMG Dealt additionally increases by <color=#F74848>2.5%</color>, up to <color=#F74848>7.5%</color>. This effect is removed at the end of turn.",
+        "5": "When actively attacking with a Melee Weapon, DMG Dealt increases by <color=#F74848>7%</color>. For each <color=#F74848>1</color> <buf ID=900004>[Re-ATK]</buf> triggered during the turn, DMG Dealt additionally increases by <color=#F74848>3.5%</color>, up to <color=#F74848>10.5%</color>. This effect is removed at the end of turn.",
+        "6": "When actively attacking with a Melee Weapon, DMG Dealt increases by <color=#F74848>8%</color>. For each <color=#F74848>1</color> <buf ID=900004>[Re-ATK]</buf> triggered during the turn, DMG Dealt additionally increases by <color=#F74848>4%</color>, up to <color=#F74848>12%</color>. This effect is removed at the end of turn.",
+        "7": "When actively attacking with a Melee Weapon, DMG Dealt increases by <color=#F74848>9%</color>. For each <color=#F74848>1</color> <buf ID=900004>[Re-ATK]</buf> triggered during the turn, DMG Dealt additionally increases by <color=#F74848>4.5%</color>, up to <color=#F74848>13.5%</color>. This effect is removed at the end of turn.",
+        "8": "When actively attacking with a Melee Weapon, DMG Dealt increases by <color=#F74848>12%</color>. For each <color=#F74848>1</color> <buf ID=900004>[Re-ATK]</buf> triggered during the turn, DMG Dealt additionally increases by <color=#F74848>6%</color>, up to <color=#F74848>18%</color>. This effect is removed at the end of turn.\nAfter triggering <buf ID=900004>[Re-ATK]</buf>, Critical Hit chance and Critical Hit DMG increase by <color=#F74848>15%</color>."
       }
     },
     "9040": {
