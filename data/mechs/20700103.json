@@ -1,0 +1,189 @@
+{
+  "data": {
+    "data": [
+      {
+        "ID": "20700103",
+        "name": "Medusa MKII",
+        "position": "Body",
+        "type": "Medium",
+        "quality": "SSR",
+        "aircraftWeight": "295",
+        "durable": "446",
+        "Armor": "941",
+        "fire": "127",
+        "Antiriot": "770",
+        "output": "2605",
+        "Interface": "Ⅰ型接口",
+        "ModuleCarried": [
+          {
+            "ID": "90254",
+            "name": "Asynchronous Sensor",
+            "SpecificEffects": "DMG Dealt increases by <color=#F74848>15%</color>. When the target is more than <color=#F74848>2</color> tiles away, DMG Dealt additionally increases by <color=#F74848>5%</color> for each <color=#F74848>1</color> tile further away, up to <color=#F74848>20%</color>.",
+            "BufCarried": "902541",
+            "SkillIcon": "Icon_skill_passive_1127",
+            "icon": "Icon_skill_passive_1127",
+            "Status": 1,
+            "weight": 1,
+            "id": "9025",
+            "level": 4
+          },
+          {
+            "ID": "40034",
+            "name": "Crit DMG Mod",
+            "SpecificEffects": "Crit DMG <color=#F74848>+10%</color>.",
+            "BufCarried": "400341",
+            "SkillIcon": "Icon_entry_40031",
+            "icon": "Icon_entry_40031",
+            "Status": 1,
+            "weight": 2,
+            "id": "4003",
+            "level": 4
+          },
+          {
+            "ID": "90358",
+            "name": "Annihilation Module",
+            "SpecificEffects": "Critical Hit chance increases by <color=#F74848>12%</color>. When actively attacking, Critical Hit chance additionally increases by <color=#F74848>3%</color> for each <color=#F74848>1</color> target within skill range, up to a maximum of <color=#F74848>12%</color>.\nIf Critical Hit chance exceeds <color=#F74848>50%</color>, Critical Hit DMG increases by <color=#F74848>1%</color> for each <color=#F74848>1%</color> of Critical Hit chance above the threshold, up to <color=#F74848>+15%</color>. If an active attack scores a Critical Hit on <color=#F74848>2</color> or more targets, gains <color=#F74848>1</color> AP. This effect can trigger <color=#F74848>1</color> time per turn.",
+            "BufCarried": "903581",
+            "SkillIcon": "Icon_entry_40042",
+            "icon": "Icon_entry_40042",
+            "Status": 1,
+            "weight": 3,
+            "id": "9035",
+            "level": 8
+          }
+        ],
+        "icon": "Icon_mecha_wap2070",
+        "introduce": "",
+        "mechaIcon": "Icon_wap2070_1",
+        "lihuiIcon": "icon_lihui_wap2070",
+        "AlternateSkins": [],
+        "Status": 1,
+        "weight": 1,
+        "manji": {
+          "name": "Medusa MKII",
+          "durable": "12706",
+          "Armor": "706",
+          "fire": "1264",
+          "output": "2605",
+          "Antiriot": "4472",
+          "Interface": "Ⅱ型接口",
+          "ModuleCarried": [
+            {
+              "ID": "90254",
+              "name": "Asynchronous Sensor",
+              "SpecificEffects": "DMG Dealt increases by <color=#F74848>15%</color>. When the target is more than <color=#F74848>2</color> tiles away, DMG Dealt additionally increases by <color=#F74848>5%</color> for each <color=#F74848>1</color> tile further away, up to <color=#F74848>20%</color>.",
+              "BufCarried": "902541",
+              "SkillIcon": "Icon_skill_passive_1127",
+              "icon": "Icon_skill_passive_1127",
+              "Status": 1,
+              "weight": 1,
+              "id": "9025",
+              "level": 4
+            },
+            {
+              "ID": "40034",
+              "name": "Crit DMG Mod",
+              "SpecificEffects": "Crit DMG <color=#F74848>+10%</color>.",
+              "BufCarried": "400341",
+              "SkillIcon": "Icon_entry_40031",
+              "icon": "Icon_entry_40031",
+              "Status": 1,
+              "weight": 2,
+              "id": "4003",
+              "level": 4
+            },
+            {
+              "ID": "90358",
+              "name": "Annihilation Module",
+              "SpecificEffects": "Critical Hit chance increases by <color=#F74848>12%</color>. When actively attacking, Critical Hit chance additionally increases by <color=#F74848>3%</color> for each <color=#F74848>1</color> target within skill range, up to a maximum of <color=#F74848>12%</color>.\nIf Critical Hit chance exceeds <color=#F74848>50%</color>, Critical Hit DMG increases by <color=#F74848>1%</color> for each <color=#F74848>1%</color> of Critical Hit chance above the threshold, up to <color=#F74848>+15%</color>. If an active attack scores a Critical Hit on <color=#F74848>2</color> or more targets, gains <color=#F74848>1</color> AP. This effect can trigger <color=#F74848>1</color> time per turn.",
+              "BufCarried": "903581",
+              "SkillIcon": "Icon_entry_40042",
+              "icon": "Icon_entry_40042",
+              "Status": 1,
+              "weight": 3,
+              "id": "9035",
+              "level": 8
+            }
+          ]
+        }
+      },
+      {
+        "ID": "20700103_ARM_L",
+        "name": "Medusa MKII",
+        "position": "L-Arm",
+        "type": "Medium",
+        "quality": "SSR",
+        "aircraftWeight": "160",
+        "durable": "243",
+        "Armor": "48",
+        "fire": "127",
+        "Hit": "309",
+        "ModuleCarried": [],
+        "introduce": "",
+        "mechaIcon": "Icon_wap2070_1",
+        "manji": {
+          "name": "Medusa MKII",
+          "durable": "6088",
+          "Armor": "470",
+          "fire": "1264",
+          "Hit": "1794",
+          "Interface": "Ⅱ型接口",
+          "ModuleCarried": []
+        },
+        "icon": "Icon_mecha_wap2070"
+      },
+      {
+        "ID": "20700103_ARM_R",
+        "name": "Medusa MKII",
+        "position": "R-Arm",
+        "type": "Medium",
+        "quality": "SSR",
+        "aircraftWeight": "160",
+        "durable": "243",
+        "Armor": "48",
+        "fire": "127",
+        "Hit": "309",
+        "ModuleCarried": [],
+        "introduce": "",
+        "mechaIcon": "Icon_wap2070_1",
+        "manji": {
+          "name": "Medusa MKII",
+          "durable": "6088",
+          "Armor": "470",
+          "fire": "1264",
+          "Hit": "1794",
+          "Interface": "Ⅱ型接口",
+          "ModuleCarried": []
+        },
+        "icon": "Icon_mecha_wap2070"
+      },
+      {
+        "ID": "20700103_LEGS",
+        "name": "Medusa MKII",
+        "position": "Legs",
+        "type": "Medium",
+        "quality": "SSR",
+        "aircraftWeight": "220",
+        "durable": "350",
+        "Armor": "48",
+        "fire": "127",
+        "Dodge": "669",
+        "move": "3000",
+        "ModuleCarried": [],
+        "introduce": "",
+        "mechaIcon": "Icon_wap2070_1",
+        "manji": {
+          "name": "Medusa MKII",
+          "durable": "9036",
+          "Armor": "470",
+          "fire": "1264",
+          "Dodge": "3885",
+          "move": "3000",
+          "Interface": "Ⅰ型接口",
+          "ModuleCarried": []
+        },
+        "icon": "Icon_mecha_wap2070"
+      }
+    ]
+  }
+}

@@ -1457,6 +1457,18 @@ window.GlossaryData = {
     "173909": {
       "name": "Mystic Arc",
       "effect": "Fixed Alter-Blade type weapon equipped in <buf ID=173901>[Cruise Form]</buf>."
+    },
+    "183900": {
+      "name": "Resonance Node",
+      "effect": "Designated unit to assist [Sylar]. When this unit is within [Sylar]'s Rail Gun skill range, [Sylar]'s attack ignores the target's standard <buf ID=900160>[DMG Reduction]</buf> effect, and DMG Dealt and Hit Rate are increased by <color=#F74848>10%</color>."
+    },
+    "183901": {
+      "name": "Hunter Mode",
+      "effect": "DMG Dealt increases by <color=#F74848>30%</color> and Critical Hit chance increases by <color=#F74848>20%</color> while using Rail Gun. Critical Hit chance additionally increases by <color=#F74848>20%</color> against Boss units. Rail Gun skill range and AoE increase by <color=#F74848>+2</color> (<color=#F74848>+1</color> for <skill ID=183506>[Petal Storm]</skill> and <skill ID=183501>[Death Ray]</skill>). Movement decreases by <color=#F74848>-2</color> and Final DMG Taken increases by <color=#F74848>+100%</color>."
+    },
+    "183902": {
+      "name": "System Failure",
+      "effect": "Incapacitated, cannot move or attack."
     }
   },
   "skill": {
@@ -2131,6 +2143,33 @@ window.GlossaryData = {
       "CD": "0",
       "icon": "Icon_skill_order_5172",
       "effect": "Consumes <color=#F74848>2</color> <buf ID=173903>[Shift Energy]</buf> to shift to <buf ID=173901>[Cruise Form]</buf>, allowing another action with full Movement."
+    },
+    "183950": {
+      "name": "Resonance Link",
+      "Ap": "0",
+      "icon": "Icon_skill_order_5176",
+      "effect": "Designates <color=#F74848>1</color> ally within <color=#F74848>4</color> adjacent tiles as <buf ID=183900>[Resonance Node]</buf>. Can continue to act with remaining movement. This skill can only be used <color=#F74848>1</color> time per battle."
+    },
+    "183951": {
+      "name": "Hunter Mode",
+      "Ap": "0",
+      "CD": "1",
+      "icon": "Icon_skill_order_5177",
+      "effect": "Gains <color=#F74848>1</color> AP and enters <buf ID=183901>[Hunter Mode]</buf>. Triggers <buf ID=900004>[Re-ATK]</buf> after activation. While in <buf ID=183901>[Hunter Mode]</buf>, can use command skill <skill ID=183952>[Tactical Reboot]</skill>."
+    },
+    "183952": {
+      "name": "Tactical Reboot",
+      "Ap": "0",
+      "CD": "0",
+      "icon": "Icon_skill_order_5175",
+      "effect": "Exits <buf ID=183901>[Hunter Mode]</buf>. Can continue to move with remaining movement. Movement <color=#F74848>+2</color> for this action. Reloads all Rail Gun ammo at the start of next action."
+    },
+    "183953": {
+      "name": "Attraction Beacon",
+      "Ap": "1",
+      "CD": "1",
+      "icon": "Icon_skill_order_1171",
+      "effect": "[Sylar] uses <skill ID=183506>[Petal Storm]</skill> at the selected tile, with skill multiplier reduced by <color=#F74848>-0.4</color>x. This attack does not consume AP or Rail Gun ammo and is treated as an active attack by [Sylar]. Can continue to act with remaining movement."
     }
   },
   "terrain": {

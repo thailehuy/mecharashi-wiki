@@ -307,6 +307,29 @@ MANUAL_MODULE_LEVELS = {
         'tags': [0],
         'ladder': [(pct,) for pct in ['4', '6', '8', '10', '14', '16', '18', '24']],
     },
+    # Asynchronous Sensor (Medusa MKII): DMG%, per-tile DMG%, per-tile cap.
+    '9025': {
+        'name': 'Asynchronous Sensor',
+        'icon': 'Icon_skill_passive_1127',
+        'category': 'GeneralSuit',
+        'maxLevel': 4,
+        'tags': [0, 2, 4],
+        'ladder': [('3', '1', '4'), ('6', '2', '8'), ('10', '3.5', '14'), ('15', '5', '20')],
+    },
+    # Annihilation Module (Medusa MKII): Crit chance%, per-target Crit
+    # chance%, cap; the Crit DMG / AP clause only unlocks at max level.
+    '9035': {
+        'name': 'Annihilation Module',
+        'icon': 'Icon_entry_40042',
+        'category': 'GeneralSuit',
+        'maxLevel': 8,
+        'bonusAtMax': True,
+        'tags': [0, 1, 3],
+        'ladder': [
+            ('2', '2', '2'), ('3', '2', '3'), ('4', '2', '4'), ('5', '2', '5'),
+            ('7', '2', '6'), ('8', '2', '8'), ('9', '3', '9'), ('12', '3', '12'),
+        ],
+    },
     # Stargazer Unit (Asteria): no scaling numbers; the end-of-turn AP /
     # [Shift Energy] and [Lustre] CP clause only unlocks at max level.
     '9040': {

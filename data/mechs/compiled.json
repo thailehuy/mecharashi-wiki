@@ -4185,6 +4185,100 @@
       "enTranslation": true
     },
     {
+      "ID": "20700103",
+      "name": "Medusa MKII",
+      "type": "Medium",
+      "quality": "SSR",
+      "icon": "Icon_mecha_wap2070",
+      "mechaIcon": "Icon_wap2070_1",
+      "lihuiIcon": "icon_lihui_wap2070",
+      "introduce": "",
+      "output": "2605",
+      "durable": "446",
+      "Armor": "941",
+      "fire": "127",
+      "Antiriot": "770",
+      "parts": [
+        {
+          "position": "Body",
+          "aircraftWeight": "295",
+          "maxHp": "12706",
+          "Armor": "706",
+          "Hit": null,
+          "Dodge": null,
+          "Antiriot": "4472"
+        },
+        {
+          "position": "L-Arm",
+          "aircraftWeight": "160",
+          "maxHp": "6088",
+          "Armor": "470",
+          "Hit": "1794",
+          "Dodge": null,
+          "Antiriot": null
+        },
+        {
+          "position": "R-Arm",
+          "aircraftWeight": "160",
+          "maxHp": "6088",
+          "Armor": "470",
+          "Hit": "1794",
+          "Dodge": null,
+          "Antiriot": null
+        },
+        {
+          "position": "Legs",
+          "aircraftWeight": "220",
+          "maxHp": "9036",
+          "Armor": "470",
+          "Hit": null,
+          "Dodge": "3885",
+          "Antiriot": null
+        }
+      ],
+      "manjiFirepower": "1264",
+      "modules": [
+        {
+          "ID": "90254",
+          "name": "Asynchronous Sensor",
+          "SpecificEffects": "DMG Dealt increases by <color=#F74848>15%</color>. When the target is more than <color=#F74848>2</color> tiles away, DMG Dealt additionally increases by <color=#F74848>5%</color> for each <color=#F74848>1</color> tile further away, up to <color=#F74848>20%</color>.",
+          "BufCarried": "902541",
+          "SkillIcon": "Icon_skill_passive_1127",
+          "icon": "Icon_skill_passive_1127",
+          "Status": 1,
+          "weight": 1,
+          "id": "9025",
+          "level": 4
+        },
+        {
+          "ID": "40034",
+          "name": "Crit DMG Mod",
+          "SpecificEffects": "Crit DMG <color=#F74848>+10%</color>.",
+          "BufCarried": "400341",
+          "SkillIcon": "Icon_entry_40031",
+          "icon": "Icon_entry_40031",
+          "Status": 1,
+          "weight": 2,
+          "id": "4003",
+          "level": 4
+        },
+        {
+          "ID": "90358",
+          "name": "Annihilation Module",
+          "SpecificEffects": "Critical Hit chance increases by <color=#F74848>12%</color>. When actively attacking, Critical Hit chance additionally increases by <color=#F74848>3%</color> for each <color=#F74848>1</color> target within skill range, up to a maximum of <color=#F74848>12%</color>.\nIf Critical Hit chance exceeds <color=#F74848>50%</color>, Critical Hit DMG increases by <color=#F74848>1%</color> for each <color=#F74848>1%</color> of Critical Hit chance above the threshold, up to <color=#F74848>+15%</color>. If an active attack scores a Critical Hit on <color=#F74848>2</color> or more targets, gains <color=#F74848>1</color> AP. This effect can trigger <color=#F74848>1</color> time per turn.",
+          "BufCarried": "903581",
+          "SkillIcon": "Icon_entry_40042",
+          "icon": "Icon_entry_40042",
+          "Status": 1,
+          "weight": 3,
+          "id": "9035",
+          "level": 8
+        }
+      ],
+      "version": "3.6",
+      "enTranslation": true
+    },
+    {
       "ID": "20500103",
       "name": "Mithril",
       "type": "Medium",
