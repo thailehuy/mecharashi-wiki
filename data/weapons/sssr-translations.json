@@ -847,5 +847,105 @@
     "pilot": "Matilda",
     "ac": 19,
     "version": "3.3"
+  },
+  "10915122": {
+    "name": "Wataru's Alter-Blade",
+    "passiveSkills": {
+      "90007": {
+        "name": "Equipped Passive",
+        "SpecificEffects": "When actively attacking with an Alter-Blade, if consumed greater than or equal to <color=#F74848>5</color> AP, CD Turns <color=#F74848>-1</color> for <color=#F74848>1</color> skill on cooldown. Can only trigger <color=#F74848>1</color> time per turn."
+      },
+      "90008": {
+        "name": "Carried Passive",
+        "SpecificEffects": "Enhanced [Savior]: Talent range expands to the entire map. For every <color=#F74848>1</color> buff carried, DMG <color=#F74848>+5%</color>, up to <color=#F74848>30%</color>. When actively attacking, if HP is full, target cannot be guarded or trigger Large Shield [Target Shift]."
+      },
+      "90009": {
+        "name": "Used Passive",
+        "SpecificEffects": "When in combat, DMG <color=#F74848>+15%</color>. When in combat against a boss, additionally DMG <color=#F74848>+15%</color>."
+      }
+    },
+    "pilot": "Wataru",
+    "ac": 20,
+    "version": "3.6"
+  },
+  "20315123": {
+    "name": "Toraoh's Shotgun",
+    "passiveSkills": {
+      "90010": {
+        "name": "Equipped Passive",
+        "SpecificEffects": "When simultaneously using two Shotguns, Bullets <color=#F74848>+3</color>."
+      },
+      "90011": {
+        "name": "Carried Passive",
+        "SpecificEffects": "Enhanced [Demon Prince]: Max [Tiger Prowess] stacks <color=#F74848>+3</color>. For every stack of [Tiger Prowess], DMG Taken <color=#F74848>-3%</color>. If possessing at least <color=#F74848>5</color> stacks of [Tiger Prowess], AP Regen <color=#F74848>+1</color>."
+      },
+      "90012": {
+        "name": "Used Passive",
+        "SpecificEffects": "When actively attacking, if possessing at least <color=#F74848>3</color> buffs, DMG <color=#F74848>+20%</color>."
+      }
+    },
+    "pilot": "Toraoh",
+    "ac": 20,
+    "version": "3.6"
+  },
+  "10315124": {
+    "name": "Zoey's Polearm",
+    "passiveSkills": {
+      "90013": {
+        "name": "Equipped Passive",
+        "SpecificEffects": "When attacking with a Polearm, DMG <color=#F74848>+15%</color>, Hit Rate <color=#F74848>+10%</color>. This effect doubles during the enemy turn."
+      },
+      "90014": {
+        "name": "Carried Passive",
+        "SpecificEffects": "Enhanced [Fearless Fangs]: When sortied, gains <color=#F74848>2</color> stacks of [Advantage]. Stacks up to <color=#F74848>3</color> times. At the end of action, for every <color=#F74848>1</color> enemy within a <color=#F74848>6</color> tile range inflicted with [Provocation], gains <color=#F74848>1</color> stack of [Advantage]. When attacking with a Polearm, deals <color=#F74848>35%</color> Splash DMG to another part with the lowest HP percentage. For every <color=#F74848>1</color> enemy inflicted with [Provocation] within a <color=#F74848>6</color> tile range, attack multiplier <color=#F74848>+0.05</color>, up to <color=#F74848>0.2</color>."
+      },
+      "90015": {
+        "name": "Used Passive",
+        "SpecificEffects": "After attacking, inflicts target with [Hit Rate Down III] and [Dodge Rate Down II], lasting for <color=#F74848>1</color> turn."
+      }
+    },
+    "pilot": "Zoey",
+    "ac": 20,
+    "version": "3.6"
+  },
+  "30215124": {
+    "name": "Audrey's Sniper Rifle",
+    "passiveSkills": {
+      "90016": {
+        "name": "Equipped Passive",
+        "SpecificEffects": "When actively attacking with a Sniper Rifle, if more than <color=#F74848>2</color> Hits, immediately regens <color=#F74848>1</color> AP. Can only trigger <color=#F74848>1</color> time per turn."
+      },
+      "90017": {
+        "name": "Carried Passive",
+        "SpecificEffects": "Enhanced [Iron-Blooded Commander]: [Ricochet] <color=#F74848>+1</color>. Proportion of [Ricochet] DMG <color=#F74848>+5%</color>. For every enemy targeted by [Ricochet], additionally inflicts <color=#F74848>1</color> stack of [Collapse Mark]. Can stack up to <color=#F74848>10</color> times."
+      },
+      "90018": {
+        "name": "Used Passive",
+        "SpecificEffects": "When actively attacking, if there are allies within <color=#F74848>3</color> tiles, Hit Rate and Crit Rate <color=#F74848>+10%</color>."
+      }
+    },
+    "pilot": "Audrey",
+    "ac": 20,
+    "version": "3.6"
+  },
+  "20115124": {
+    "name": "Lexuan's Machine Gun",
+    "passiveSkills": {
+      "90019": {
+        "name": "Equipped Passive",
+        "SpecificEffects": "Machine Gun Bullets <color=#F74848>+1</color>, additionally <color=#F74848>+1</color> if triggering [Link Attack]. Effect cannot trigger multiple times."
+      },
+      "90020": {
+        "name": "Carried Passive",
+        "SpecificEffects": "Enhanced [Saturated Strike]: When [Tidal Reserve] is at least <color=#F74848>80</color> stacks, Machine Gun attack Multiplier <color=#F74848>+0.05</color>, DMG and Hit Rate <color=#F74848>+10%</color>. When using [Weapon Skills], this effect doubles. When sortied, gains <color=#F74848>20</color> stacks of [Tidal Reserve]."
+      },
+      "90021": {
+        "name": "Used Passive",
+        "SpecificEffects": "When simultaneously attacking with two weapons, ignores <color=#F74848>35%</color> of target's Armor."
+      }
+    },
+    "pilot": "Lexuan",
+    "ac": 20,
+    "version": "3.6"
   }
 }

@@ -34,14 +34,35 @@ var WEAPON_TYPE2_LABEL = {
   ShotGun:        'Shotgun',
 };
 
-// Some weapon icons aren't in the remote CDN scrape at all (404s) — serve a
-// locally-saved copy instead for those specific weapons, keyed by ID.
+// Weapon icons are served locally, grouped into one folder per weapon type.
+var WEAPON_ICON_DIR = 'data/weapons/icons/';
+var WEAPON_ICON_FOLDER = {
+  Blade:          'AB',
+  Buckler:        'SS',
+  Flamethrower:   'FT',
+  Funnel:         'CT',
+  HeavyMachineGun:'HMG',
+  HeavySniper:    'SR',
+  LightSniper:    'LR',
+  MachineGun:     'MG',
+  Missile:        'ML',
+  PileBunker:     'PB',
+  RailGun:        'RG',
+  Rocket:         'RL',
+  Rod:            'PA',
+  Saw:            'CH',
+  Shield:         'LS',
+  ShotGun:        'SG',
+};
+
+// Per-weapon icon replacements for where the scraped icon ID is wrong, keyed by ID.
 var WEAPON_ICON_OVERRIDE = {
-  '20215123': 'data/weapons/unlisted-icons/Icon_weapon_20400501.webp', // HMG-29C
+  '10215123': 'Icon_weapon_10200501', // False Smile (Martini)
 };
 
 function weaponIconSrc(w) {
-  return WEAPON_ICON_OVERRIDE[w.ID] || (WEAPON_IMG_BASE + encodeURIComponent(w.icon) + '.png');
+  var icon = WEAPON_ICON_OVERRIDE[w.ID] || w.icon;
+  return WEAPON_ICON_DIR + WEAPON_ICON_FOLDER[w.type] + '/' + encodeURIComponent(icon) + '.png';
 }
 
 var GRIP_LABEL = {
