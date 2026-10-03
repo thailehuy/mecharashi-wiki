@@ -216,7 +216,7 @@
                 "type": 3,
                 "PassiveSkill": {
                   "ID": "175570",
-                  "name": "Tactical Firepower 1",
+                  "name": "Emplaced Firepower 1",
                   "SpecificEffects": "If not moved before an Active Attack with a Tactical weapon, <buf ID=900004>[Re-ATK]</buf> can be triggered, effective up to <color=#F74848>1</color> time per turn. Unable to move before attacking.\nEffects similar to <buf ID=900004>[Re-ATK]</buf> cannot be re-triggered.",
                   "SkillIcon": "Icon_skill_passive_5023",
                   "icon": "Icon_skill_passive_5023",
@@ -277,8 +277,8 @@
                 "type": 3,
                 "PassiveSkill": {
                   "ID": "175571",
-                  "name": "Tactical Firepower 2",
-                  "SpecificEffects": "When [Tactical Firepower 1] effect triggers, gains <color=#F74848>1</color> AP.",
+                  "name": "Emplaced Firepower 2",
+                  "SpecificEffects": "When [Emplaced Firepower 1] effect triggers, gains <color=#F74848>1</color> AP.",
                   "SkillIcon": "Icon_skill_passive_5023",
                   "icon": "Icon_skill_passive_5023",
                   "Status": 1,
@@ -297,8 +297,8 @@
                 "type": 3,
                 "PassiveSkill": {
                   "ID": "175572",
-                  "name": "Tactical Firepower 3",
-                  "SpecificEffects": "When [Tactical Firepower 1] effect triggers, DMG dealt and Critical Hit chance of the next active attack increase by <color=#F74848>20%</color>.",
+                  "name": "Emplaced Firepower 3",
+                  "SpecificEffects": "When [Emplaced Firepower 1] effect triggers, DMG dealt and Critical Hit chance of the next active attack increase by <color=#F74848>20%</color>.",
                   "SkillIcon": "Icon_skill_passive_5023",
                   "icon": "Icon_skill_passive_5023",
                   "Status": 1,
@@ -317,8 +317,8 @@
                 "type": 3,
                 "PassiveSkill": {
                   "ID": "175573",
-                  "name": "Tactical Firepower 4",
-                  "SpecificEffects": "When [Tactical Firepower 1] effect triggers, AP cost of the next active attack is reduced by <color=#F74848>1</color> (to a minimum of <color=#F74848>1</color>) and Final DMG dealt increases by <color=#F74848>15%</color>.",
+                  "name": "Emplaced Firepower 4",
+                  "SpecificEffects": "When [Emplaced Firepower 1] effect triggers, AP cost of the next active attack is reduced by <color=#F74848>1</color> (to a minimum of <color=#F74848>1</color>) and Final DMG dealt increases by <color=#F74848>15%</color>.",
                   "SkillIcon": "Icon_skill_passive_5023",
                   "icon": "Icon_skill_passive_5023",
                   "Status": 1,
@@ -658,7 +658,7 @@
           "UnitName": "Crystal Neuron",
           "UnitType": "1",
           "ActivateUnitConsumption": "2:1:10805005:5/2:1:10805004:8/",
-          "describe": "Unlocks the Neural Drive γ partition, initial γ chip points: 4\n\nReach chip points <color=#F74848>1</color> to activate:\n· After the first attack with a Tactical Weapon each turn, <buf ID=900004>[Re-ATK]</buf> can be triggered, effective up to <color=#F74848>1</color> time per turn. Unable to move before attacking.\nReach chip points <color=#F74848>4</color> to activate:\n· AP Cap <color=#F74848>+1</color>.\nReach chip points <color=#F74848>7</color> to activate:\n· When <buf ID=900029>[Auto Load]</buf> is complete, restore <color=#F74848>1</color> AP.\nReach chip points <color=#F74848>10</color> to activate:\n· When [Tactical Firepower 1] effect triggers, gains <color=#F74848>1</color> AP.\nReach chip points <color=#F74848>13</color> to activate:\n· When [Tactical Firepower 1] effect triggers, DMG dealt and Critical Hit chance of the next active attack increase by <color=#F74848>20%</color>.\nReach chip points <color=#F74848>16</color> to activate:\n· When [Tactical Firepower 1] effect triggers, AP cost of the next active attack is reduced by <color=#F74848>1</color> (to a minimum of <color=#F74848>1</color>) and Final DMG dealt increases by <color=#F74848>15%</color>.\n",
+          "describe": "Unlocks the Neural Drive γ partition, initial γ chip points: 4\n\nReach chip points <color=#F74848>1</color> to activate:\n· After the first attack with a Tactical Weapon each turn, <buf ID=900004>[Re-ATK]</buf> can be triggered, effective up to <color=#F74848>1</color> time per turn. Unable to move before attacking.\nReach chip points <color=#F74848>4</color> to activate:\n· AP Cap <color=#F74848>+1</color>.\nReach chip points <color=#F74848>7</color> to activate:\n· When <buf ID=900029>[Auto Load]</buf> is complete, restore <color=#F74848>1</color> AP.\nReach chip points <color=#F74848>10</color> to activate:\n· When [Emplaced Firepower 1] effect triggers, gains <color=#F74848>1</color> AP.\nReach chip points <color=#F74848>13</color> to activate:\n· When [Emplaced Firepower 1] effect triggers, DMG dealt and Critical Hit chance of the next active attack increase by <color=#F74848>20%</color>.\nReach chip points <color=#F74848>16</color> to activate:\n· When [Emplaced Firepower 1] effect triggers, AP cost of the next active attack is reduced by <color=#F74848>1</color> (to a minimum of <color=#F74848>1</color>) and Final DMG dealt increases by <color=#F74848>15%</color>.\n",
           "icon": "Icon_zoneskill_0004",
           "Status": 1,
           "weight": 2574

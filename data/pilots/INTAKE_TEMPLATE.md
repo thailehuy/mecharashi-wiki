@@ -64,124 +64,122 @@ pilot from this template (10103182, Kaidan The Invincible):
 
 ## Basics
 
-- Pilot ID: 10103173
-- Pilot Name: Lustre
-- Real Name: Yao
+- Pilot ID: 10103183
+- Pilot Name: Sylar
+- Real Name: Sylar Valencia
 - Gender: Female
-- Profession: Shifter
-- Occupation: Shifter <!-- Use the correct profession icon -->
+- Profession: Tactician
+- Occupation: Tactician <!-- Use the correct profession icon -->
 - Quality: SSR
-- License: Light
-- Game version introduced: 3.5
+- License: Medium
+- Game version introduced: 3.6
 
 ## Images
 <!-- portrait is prefixed with data/unlisted/pilot_images_half/ -->
 <!-- avatar is prefixed with data/unlisted/pilot_images_raw/ -->
-- Portrait (half-body) file: Pilot_10103173A_half.png
-- Avatar (full portrait) file: Pilot_10103173A_raw.png
+- Portrait (half-body) file: Pilot_10103183A_half.png
+- Avatar (full portrait) file: Pilot_10103183A_raw.png
 
 ## Attributes
-- Ranged: 2005
-- Tactical: 2152
-- Assault: 5216
-- Melee: 5216
-- Mechanic: 1396
-- Defense: 3942
+- Ranged: 2084
+- Tactical: 4904
+- Assault: 1425
+- Melee: 1916
+- Mechanic: 2241
+- Defense: 3972
 - Initial Base Starting AP: 5
-- Max Base Starting AP: 5
+- Max Base Starting AP: 6
 - AP Recovery: 2
 
 ## Talents
 <!-- all talents, skills and neural icons are prefixed with data/unlisted/pilot_skills/ -->
 
 ### Basic Talent (Talent0_2Ability)
-- Name: Mystic Shifting
-- Effect text: Can switch piloted ST between [Mech Form] and [Cruise Form], granting unique effects for each. Gains 2 stacks of [Shift Energy] at the start of turn and at the start of combat.
-- Icon name: Icon_skill_talent_5169
+- Name: Eternal Shadowwalker
+- Effect text: Can use command skill [Resonance Link]. When equipped with Rail Gun, can use command skill [Hunter Mode].
+- Icon name: Icon_skill_talent_5170
 
 ### Ascended Talent (Talent3_5Ability)
 <!-- Ascended talent has same name and icon as basic one, with a line split -->
-- Effect text: an switch piloted ST between [Mech Form] and [Cruise Form], granting unique effects for each. Gains 2 stacks of [Shift Energy] at the start of turn and at the start of combat.\nWhile possessing [Shift Energy], Final DMG Dealt increases by 15%.
+- Effect text: Can use command skill [Resonance Link]. When equipped with Rail Gun, can use command skill [Hunter Mode].\nWhile in [Hunter Mode], Final DMG Dealt increases by 15%.
 
 ## Skills
 
 <!-- Each skill the pilot uses on their neuron board (Core Neuron slots).
      type = EquipmentSkill (weapon attack) / Order (self-buff) / passive -->
 ### Skill 0 (innate)
-- Configuration Shift 1: Can use command skill [Configuration Shift] after taking an action.
-- Icon Name: Icon_skill_passive_5205
+- Strategic Bombing 1: same as other tacticians
 
 ### Skill 1
-- Name: Tainted Blade / Shadow Ray
-- Type: EquipmentSkill <!-- EquipmentSkill / Order / passive -->
+- Name: Breathtaking Lightray
+- Type: SpecialAssault <!-- EquipmentSkill / Order / passive -->
 - AP cost: 3
 - Cooldown:             <!-- if any -->
-- Weapon type: MG/AB <!-- if EquipmentSkill, e.g. SG / AR / SR / MG / Melee -->
-- Effect text: Chooses to use either [Tainted Sword] or [Shadow Ray]
-- Icon name: Icon_skill_main_1179
+- Weapon type: RG <!-- if EquipmentSkill, e.g. SG / AR / SR / MG / Melee -->
+- Effect text: Uses Rail Gun to attack all enemies within a cross-shaped area around a target within 5 adjacent tile, dealing 0.5x DMG. DMG multiplier increases to 0.9x against the target in the center. Enters [Aiming] Mode before attacking. This attack can target [Resonance Node].
+- Icon name: Icon_skill_order_1108
 
 ### Skill 2
-- Name: Star Chaser / Moon Raker
+- Name: Thunder Sweep
 - Type: SpecialAssault
-- AP cost: 3
+- AP cost: 2
 - Cooldown:
-- Weapon type: MG/AB
-- Effect text: Changes to [Star Chaser] in [Mech Form] and [Moon Raker] in [Cruise Form]
-- Icon name: Icon_skill_order_1164
+- Weapon type: RG
+- Effect text: Uses Rail Gun to attack all targets within a 3x5 area in front, dealing 0.75x AoE DMG and knocking them back by 2 tiles. If a target is blocked by obstacles during knock back, inflicts [Movement Inhibition II] for 1 turn. Triggers [Re-ATK] in place after combat. This skill can only be used 1 time per turn.
+- Icon name: Icon_skill_order_1109
 
 ### Skill 3
-- Name: Reflective Link
-- Type: Passive
-- AP cost:
-- Cooldown:
-- Weapon type: MB/AB
-- Effect text: When equipped with both Alter-Blade and Machine Gun, 25% of Machine Gun's weapon crit are added to Alter-Blade, and 25% of Alter-Blade's weapon hit are added to Machine Gun.
-- Icon name: Icon_skill_passive_4135
+- Name: Steady Calibration
+- Type: Order
+- AP cost: 0
+- Cooldown: 3
+- Weapon type: RG
+- Effect text: Fully reloads all Rail Gun ammo. Next active attack multiplier increases by +0.2x. Triggers [Re-ATK] in place after use.
+- Icon name: Icon_skill_order_5160
 
 ### Skill 4
-- Name: Shadow Evasion
-- Type: Passive
-- AP cost:
-- Cooldown:
-- Weapon type:
-- Effect text: In [Cruise Form], when actively attacked by Ranged weapon or Missile, completely dodge the attack. This effect can trigger 1 time per turn.
-- Icon name: Icon_skill_passive_4134
-
-### Skill 5
-- Name: Void Crown / Falling Sky
+- Name: Dawn Annihilation
 - Type: SpecialAssault
 - AP cost: 4
 - Cooldown:
-- Weapon type: AB/MG
-- Effect text: Chooses to use either [Void Crown] or [Falling Sky]
-- Icon name: Icon_skill_order_1165
+- Weapon type: RG
+- Effect text: Consumes 2 Rail Gun ammo, uses Rail Gun to attack all targets within a 3x5 area in front, dealing 0.85x AoE DMG. Enters [Aiming] Mode before attacking.
+- Icon name: Icon_skill_order_1168
+
+### Skill 5
+- Name: ND Maneuver
+- Type: Order
+- AP cost: 1
+- Cooldown: 2
+- Weapon type: RG
+- Effect text: Selects an empty tile within 4 adjacent tiles of [Resonance Node] and teleports to the selected tile. Can continue to act with remaining movement.
+- Icon name: Icon_skill_order_5175
 
 ### Skill 6
-- Name: Sky's Edge / Night Requiem
-- Type: Equipment Skill
+- Name: Petal Storm
+- Type: SpecialAssault
 - AP Cost: 4
 - Cooldown:
-- Effect text: Changes to [Night Requiem] in [Mech Form] and [Sky's Edge] in [Cruise Form].
-- Icon name: Icon_skill_main_1150
+- Effect text: Consumes 2 Rail Gun ammo, uses Rail Gun to attack all targets within 2 adjacent tiles of the target, dealing 1.1x AoE DMG. This attack ignores low obstacles and always hits the body. This skill can target any tile within 4 adjacent tile of [Resonance Node]. Grants [Attraction Beacon] skill to [Resonance Node]
+- Icon name: Icon_skill_main_1169
 
 ### Skill 7
-- Name: Reversion
+- Name: Resonance Anchor
 - Type: Passive
-- Resouce: PP
-- Effect text: When any part is destroyed, after combat, consumes 1 PP to restore that part to 50% of max HP and gains [Steady Guard]. Gains 2 PP at the start of battle
-- Icon name: Icon_skill_pp_1110
+- Effect text: Outside of ally turn, this unit and [Resonance Node] are immune to all displacement effects.
+- Icon name: Icon_skill_passive_1013
 
 ### Skill 8
-- Name: Shifting Radiance
+- Name: Vow Of Tomorrow
 - Type: Passive
-- Effect text: After each [Configuration Shift], [Mech Form] gains [Offense Boost] and [Cruise Form] gains [Evasion Boost]
-- Icon name: Icon_skill_passive_4127
+- Effect text: When [Resonance Node] takes fatal DMG, restores all their parts to 50% of max HP, inflicts [System Failure] and teleports them to [Sylar]'s side. This effect can trigger 1 time per battle.
+- Icon name: Icon_skill_passive_5325
 
 ## Chip slots setup
 <!-- Red = Attack / Blue = Critical / Yellow = Dodge (verified: Eileen β is red/blue/blue in game = Attack/Critical/Critical in CN data; matches .slot-* colors in css/style.css) -->
-- Alpha: red/yellow/yellow
-- Beta: red/blue/blue
-- Gamma 1: red/blue/blue
+- Alpha: red/yellow/blue
+- Beta: red/yellow/blue
+- Gamma 1: red/yellow/blue
 - Gamma 2: red/yellow/yellow
 
 ## Neural passives (Gamma partition — pilot-specific)
@@ -191,131 +189,58 @@ pilot from this template (10103182, Kaidan The Invincible):
      Fill in Name / Effect text / Icon name for all 12 (6 per section). -->
 <!-- Some pilots will share same threshold effects -->
 <!-- Alpha and Beta section will be the same with other pilots in same class -->
-### Alpha
-- 1: Configuration Shift 2 / Gains 2 AP when [Configuration Shift] is used / Icon_skill_passive_5205
-- 4: Same as other alpha sections
-- 7: Same as other alpha sections
-
-### Beta
-- 1: Configuration Shift 3 / When breaking a part with an active attack, gains 1 [Shift Energy]. This effect can trigger 2 times per turn / Icon_skill_passive_5205
-- 4: Same as other beta sections
-- 7: Same as other beta sections
 
 ### γ1
 <!-- Name / Effect text / Icon name -->
-- 1: Storm Symbiosis 1 / After actively attacking with Alter-Blade or [Mystic Arc], if the part hit is below 15% HP, triggers the <buf ID=900109>[Execution]</buf> effect, directly destroying that part after combat. / Icon_skill_passive_5316
-- 4: (same as other pilots same occupation)
-- 7: Configuration Shift 4 / [Configuration Shift 3] trigger count increases by +1 time per turn. When attacking, DMG calculation uses the highest pilot attributes / Icon_skill_passive_5205
-- 10: Storm Symbiosis 2 / [Storm Symbiosis 1] part destruction effect threshold increased to 25% HP. / Icon_skill_passive_5316
-- 13: Storm Symbiosis 3 / Critical Hit chance and Critical Hit DMG of Alter-Blade and [Mystic Arc] increase by 10% / Icon_skill_passive_5316
-- 16: Storm Symbiosis 4 / After using [Configuration Shift], refunds 1 [Shift Energy]. This effect can trigger 2 times per turn / Icon_skill_passive_5316
+- Same as Niall
 
 ### γ2
-- 1:  Star Miracle 1 / Machine Gun and [Night Ember] bullet count +1, which additionally increases by +1 after each action. This effect is reset at the end of turn. / - Icon_skill_passive_5317
+- 1:  Legacy Of Ophiuchus 1 / At the start of action, if this unit was not attacked in previous turn, gains 1 AP and 1 Rail Gun ammo. / Icon_skill_passive_5326
 - 4: (same as other pilots same occupation)
 - 7: (same as other pilots with same occupation)
-- 10: Star Miracle 2 / Machine Gun and [Night Ember] range +1. While in [Cruise Form], [Night Ember] attack ignores low obstacle / Icon_skill_passive_5317
-- 13: Star Miracle 3 / Machine Gun and [Night Ember] Final DMG Dealt increases by 10%. / Icon_skill_passive_5317
-- 16: Star Miracle 4 / After action, the AP cost of next action is reduced by 1, to a minimum of 1. This effect can trigger 2 times per turn. / Icon_skill_passive_5317
+- 10: Legacy Of Ophiuchus 2 / When actively attacking with Rail Gun, if [Resonance Node] is within skill range, or if the attack destroys a target, gains 1 Rail Gun ammo after combat. This effect can trigger 2 times per turn. / Icon_skill_passive_5326
+- 13: Legacy Of Ophiuchus 3 / When actively attacking with Rail Gun, for each 1 enemy unit or [Resonance Node] within the skill range, DMG Dealt and Critical Hit chance increase by 5%, up to 15%. / Icon_skill_passive_5326
+- 16: Legacy Of Ophiuchus 4 / If there are no enemies within 2 adjacent tiles, Final DMG Dealt increases by +25%. / Icon_skill_passive_5326
 
 
 ### Glossary buf
 <!-- Pick a random unique ID for this in the <buf> tag and add the tag to all referenced text from this pilot -->
-- Mech Form: Can only use Assault, Melee and Ranged weapons. DMG Dealt increases by +20%, DMG taken reduces by 20%, Critical Hit chance increases by 10%.
-- Cruise Form: Weapons are fixed to [Night Ember] and [Mystic Arc]. Cannot change weapon loadout. Movement type become [Flying]. Movement +1, Dodge Rate increases by 20%.
-- Flying: Ignores low obstacles and unit collision while moving. Can stop over low obstacles. Melee weapon can attack flying targets. Immune to melee attacks. Does not trigger ground-based Terrain effect. Vision can span over low obstacles in Mist Mode.
-- Shift Energy: Can be used for [Configuration Shift]. Stacks up to 5 times.
-- Configuration Shift: Shift the ST form based on the situation. Can use [Mech Form Shift] or [Cruise Form Shift] at the end of action.
-- Steady Guard: Final DMG Taken reduces by 50%. This effect is removed after triggering.
-- Offense Boost: DMG Dealt increases by 25% for this action. This effect is removed after this action.
-- Evasion Boost: Dodge Rate increases by 15% for this action. This effect is removed after this action.
+- Resonance Node: Desinated unit to assist [Sylar]. When this unit is within [Sylar]'s Rail Gun skill range, [Sylar]'s attack ignores the target's standard [DMG Reduction] effect, and DMG Dealt and Hit Rate are increased by 10%.
+- Hunter Mode: DMG Dealt increases by 30% and Critical Hit chance increases by 20% while using Rail Gun. Critical Hit chance additionally increases by 20% against Boss units. Rail Gun skill range and AoE increase by +2 (+1 for [Petal Storm] and [Death Ray]). Movement decreases by -2 and Final DMG Taken increases by +100%.
+- System Failure: Incapacitated, cannot move or attack.
 
 ### Glossary skill 1
 <!-- Pick a random unique ID for this in the <skill> tag and add the tag to all referenced text from this pilot -->
 <!-- Also scan the skill text itself and link necessary tags -->
-- Name: Shadow Ray
-- AP: 3
+- Name: Resonance Link
+- AP: 0
 - CD:
-- Effect: Uses Machine Gun to attack a target, dealing 1.25x DMG. Critical Hit chance increases by 20% for this attack
-- Icon: Icon_skill_main_1118
+- Effect: Desinates 1 ally within 4 adjacent tile as [Resonance Node]. Can continue to act with remaining movement. This skill can only be used 1 time per battle.
+- Icon: Icon_skill_order_5176
 
 ### Glossary skill 2
 <!-- Pick a random unique ID for this in the <skill> tag and add the tag to all referenced text from this pilot -->
 <!-- Also scan the skill text itself and link necessary tags -->
-- Name: Tainted Blade
-- AP: 3
-- CD: 0
-- Effect: Uses Alter-Blade to attack a target, dealing 1.6x DMG. This attack will hit the part with highest HP.
-- Icon: Icon_skill_main_1162
+- Name: Hunter Mode
+- AP: 0
+- CD: 1
+- Effect: Gains 1 AP and enters [Hunter Mode]. Triggers [Re-ATK] after activation. While in [Hunter Mode], can use command skill [Tactical Reboot].
+- Icon: Icon_skill_order_5177
 
 ### Glossary skill 3
 <!-- Pick a random unique ID for this in the <skill> tag and add the tag to all referenced text from this pilot -->
 <!-- Also scan the skill text itself and link necessary tags -->
-- Name: Star Chaser
-- AP: 3
+- Name: Tactical Reboot
+- AP: 0
 - CD: 0
-- Effect: Uses Alter-Blade to attack a target within 4 adjacent tiles, dealing 1.3x DMG. Enters [Aiming] Mode before attacking. Selects and warps back to an ally within 4 adjacentile after the attack.
-- Icon: Icon_skill_order_1164
+- Effect: Exits [Hunter Mode]. Can continue to move with remaining movement. Movement +2 for this action. Reloads all Rail Gun ammo at the start of next action.
+- Icon: Icon_skill_order_5175
 
 ### Glossary skill 4
 <!-- Pick a random unique ID for this in the <skill> tag and add the tag to all referenced text from this pilot -->
 <!-- Also scan the skill text itself and link necessary tags -->
-- Name: Moon Raker
-- AP: 3
-- CD: 0
-- Effect: Dashes 4 tiles in the selected direction using [Mystic Arc], dealing 1.2x AoE DMG to all targets hit (including flying units). This attack prioritizes hitting the body. Before activation, selects an ally within 2 adjacent tiles to warp them to this unit's side after the dash. This skill can only be used 1 time per turn
-- Icon: Icon_skill_order_1164
-
-### Glossary skill 5
-<!-- Pick a random unique ID for this in the <skill> tag and add the tag to all referenced text from this pilot -->
-<!-- Also scan the skill text itself and link necessary tags -->
-- Name: Void Crown
-- AP: 4
-- CD: 0
-- Effect: Uses Alter-Blade to attack all targets within an <range type=2>I-shaped (3x1-tile)</range> area or <range type=2>L-shaped (3x1-tile)</range> area ahead. Before attacking, can Aim at all targets separately, dealing 1.6x AoE DMG. If this attack destroys a part, gains 1 [Shift Energy].
-- Icon: Icon_skill_order_1165
-
-### Glossary skill 6
-<!-- Pick a random unique ID for this in the <skill> tag and add the tag to all referenced text from this pilot -->
-<!-- Also scan the skill text itself and link necessary tags -->
-- Name: Falling Sky
-- AP: 4
-- CD: 0
-- Effect: Uses Machine Gun to attack a target, dealing 1.45x DMG. Hit weighting of part with lowest HP increases by +50. If this attack destroys a part, gains 1 [Shift Energy].
-- Icon: Icon_skill_main_1129
-
-### Glossary skill 7
-<!-- Pick a random unique ID for this in the <skill> tag and add the tag to all referenced text from this pilot -->
-<!-- Also scan the skill text itself and link necessary tags -->
-- Name: Night Requiem
-- AP: 4
-- CD: 0
-- Effect: Uses Machine Gun to attack a target, dealing 1.2x DMG. Enters [Aiming] Mode before combat. This attack prioritizes the same aimed part. If this unit is not destroyed after combat, all parts are restored to pre-combat HP and the target suffers [Fixed DMG] equal to the DMG this unit took during combat.
-- Icon: Icon_skill_main_1049
-
-### Glossary skill 8
-<!-- Pick a random unique ID for this in the <skill> tag and add the tag to all referenced text from this pilot -->
-<!-- Also scan the skill text itself and link necessary tags -->
-- Name: Sky's Edge
-- AP: 4
-- CD: 0
-- Effect: Selects a target within 4 tiles in a straight line and dashes toward it. Uses [Mystic Arc] to deal 1.4x AoE DMG to the target's body. This attack cannot miss and deals 35% of the aforementioned DMG as [Fixed DMG] to all enemy units' bodies within 2 adjacent tiles of the target. The AP cost of this skill increases by 1 after each use, and reset when shifting to another form.
-- Icon: Icon_skill_order_1166
-
-### Glossary skill 9
-<!-- Pick a random unique ID for this in the <skill> tag and add the tag to all referenced text from this pilot -->
-<!-- Also scan the skill text itself and link necessary tags -->
-- Name: Mech Form Shift
-- AP: 0
-- CD: 0
-- Effect: Consumes 2 [Shift Energy] to shift to [Mech Form], allowing another action with full Movement
-- Icon: Icon_skill_order_5171
-
-### Glossary skill 10
-<!-- Pick a random unique ID for this in the <skill> tag and add the tag to all referenced text from this pilot -->
-<!-- Also scan the skill text itself and link necessary tags -->
-- Name: Cruise Form Shift
-- AP: 0
-- CD: 0
-- Effect: Consumes 2 [Shift Energy] to shift to [Cruise Form], allowing another action with full Movement
-- Icon: Icon_skill_order_5172
+- Name: Attraction Beacon
+- AP: 1
+- CD: 1
+- Effect: [Sylar] uses [Petal Storm] at the selected tile, with skill multiplier reduced by -0.4x. This attack does not consume AP or Rail Gun ammo and is treated as an active attack by [Sylar]. Can continue to act with remaining movement.
+- Icon: Icon_skill_order_1711

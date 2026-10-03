@@ -73,10 +73,10 @@ Checklist for whoever (or whichever agent) turns this into the JSON file:
 ## Basics
 
 - Mech ID: <8-digit numeric ID, check `ls data/mechs` for collisions>
-- Mech Name: Asteria
-- Type (weight class): Light
+- Mech Name: Medusa MKII
+- Type (weight class): Medium
 - Quality: SSR
-- Game version introduced: 3.5
+- Game version introduced: 3.6
 - Dispatch version: N/A
 - Flavor text / lore description:
 
@@ -84,63 +84,62 @@ Checklist for whoever (or whichever agent) turns this into the JSON file:
 <!-- icon is prefixed with data/unlisted/mechs/Icon/<Type>/ -->
 <!-- portrait (Raw) is prefixed with data/unlisted/mechs/Raw/<Type>/ -->
 <!-- alternate skins (if any) are prefixed with data/unlisted/mechs/Skins/<Type>/ -->
-- Icon file (all 4 parts share this): Icon_mecha_wap1070.png
-- Portrait/Raw file (Body only): Icon_mecha_wap1070_SN_Raw.png
-- mechaIcon (CDN key, per part, only if a CN CDN asset exists): Icon_wap1070_1
-- lihuiIcon (CDN key, Body only, only if a CN CDN asset exists): icon_lihui_wap1070
+- Icon file (all 4 parts share this): Icon_mecha_wap2070.png
+- Portrait/Raw file (Body only): Icon_mecha_wap2070_SN_Raw.png
+- mechaIcon (CDN key, per part, only if a CN CDN asset exists): Icon_wap2070_1
+- lihuiIcon (CDN key, Body only, only if a CN CDN asset exists): icon_lihui_wap2070
 - Alternate skins (Body only, list each variant token you have a
-  `Img_Skin_wap1070_<variant>.png` file for, or "none"): none
+  `Img_Skin_wap2070_<variant>.png` file for, or "none"): none
 
 ### Body — max level (manji) overrides
-- Durable: 9536
-- Fire: 1125
-- Weight: 270
-- Output: 1785
+- Durable: 12706
+- Fire: 1264
+- Weight: 295
+- Output: 2605
 - Antiriot: 4472
-- Armor: 470
+- Armor: 706
 
 ### L-Arm — max level (manji) overrides
-- Durable: 4809
-- Fire: 1225
-- Weight: 105
-- Hit: 1974
+- Durable: 6088
+- Fire: 1264
+- Weight: 160
+- Hit: 1794
 
 ### R-Arm — max level (manji) overrides
-- Durable: 4809
-- Fire: 1225
-- Weight: 105
-- Hit: 1974
+- Durable: 6088
+- Fire: 1264
+- Weight: 160
+- Hit: 1794
 
 ### Legs — max level (manji) overrides
-- Durable: 7896
-- Fire: 1225
-- Weight: 155
-- Dodge: 5233
-- Move: 4
+- Durable: 9036
+- Fire: 1264
+- Weight: 220
+- Dodge: 3885
+- Move: 3
 
 ## Modules
 <!-- Copy this block for each distinct module referenced above. -->
 ### Module 1
-- Name: Radiant Core
+- Name: Asynchronous Sensor
 - Level: 4/4
-- Effect text: Upon deployment, gains 1/1/1/2 stacks of [Storm Surge], up to 2/3/4/5. After acting, if there are enemy units present within 3 adjacent tiles, gains 1 stack of [Storm Surge] <!-- numbers must be wrapped as <color=#F74848>NUMBER</color>, same convention as pilot skill text, record the different level effect based on the numbers split -->
-- Icon name: Icon_skill_passive_5318
+- Effect text: DMG Dealt increases by 3/6/10/15%. When the target is more than 2 tiles away, DMG Dealt additionally increases by 1/2/3.5/5% for each 1 tile further away, up to 4/8/14/20%. <!-- numbers must be wrapped as <color=#F74848>NUMBER</color>, same convention as pilot skill text, record the different level effect based on the numbers split -->
+- Icon name: Icon_skill_passive_1127
 
 ### Module 2
-- Name: Firepower Module
+- Name: Crit DMG Mod
 - Level: 4/4
-- Effect text: Same as others, ID 40274
-- Icon name: Same as others, ID 40274
+- Effect text: Same as others, ID 40034
+- Icon name: Same as others, ID 40034
 
 ### Module 3
-- Name: Xeno-Gear Module
+- Name: Annihilation Module
 - Level: 8/8
-- Effect text: DMG Dealt increases by 4/6/8/10/14/16/18/24% while equipped with 2 different weapon types.\nAfter an action, DMG multiplier of next active attack increases by +0.1.<!-- numbers must be wrapped as <color=#F74848>NUMBER</color>, same convention as pilot skill text, record the different level effect based on the numbers split -->
-- Icon name: Icon_entry_10113
+- Effect text: Critical Hit chance increases by 2/3/4/5/7/8/9/12%. When actively attacking, Critical Hit chance additionally increases by 2/2/2/2/2/2/3/3% for each 1 target within skill range, up to a maximum of 2/3/4/5/6/8/9/12%.\nIf Critical Hit chance exceeds 50%, Critical Hit DMG increases by 1% for each 1% of Critical Hit chance above the threshold, up to +15%. If an active attack scores a Critical Hit on 2 or more targets, gains 1 AP. This effect can trigger 1 time per turn.<!-- numbers must be wrapped as <color=#F74848>NUMBER</color>, same convention as pilot skill text, record the different level effect based on the numbers split -->
+- Icon name: Icon_entry_40042
 
 ### Glossary buf 1
 <!-- Pick a random unique ID for this in the <buf> tag and add the tag to all referenced text from this pilot -->
-- Storm Surge: DMG Dealt increases by 5%, Critical Hit chance increases by 4%. Each stack lasts for 2 turns.
 
 ### Glossary skill 1
 <!-- Pick a random unique ID for this in the <skill> tag and add the tag to all referenced text from this pilot -->
