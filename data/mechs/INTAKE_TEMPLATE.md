@@ -73,7 +73,7 @@ Checklist for whoever (or whichever agent) turns this into the JSON file:
 ## Basics
 
 - Mech ID: <8-digit numeric ID, check `ls data/mechs` for collisions>
-- Mech Name: Medusa MKII
+- Mech Name: Blue Anonymous Bird
 - Type (weight class): Medium
 - Quality: SSR
 - Game version introduced: 3.6
@@ -84,47 +84,47 @@ Checklist for whoever (or whichever agent) turns this into the JSON file:
 <!-- icon is prefixed with data/unlisted/mechs/Icon/<Type>/ -->
 <!-- portrait (Raw) is prefixed with data/unlisted/mechs/Raw/<Type>/ -->
 <!-- alternate skins (if any) are prefixed with data/unlisted/mechs/Skins/<Type>/ -->
-- Icon file (all 4 parts share this): Icon_mecha_wap2070.png
-- Portrait/Raw file (Body only): Icon_mecha_wap2070_SN_Raw.png
-- mechaIcon (CDN key, per part, only if a CN CDN asset exists): Icon_wap2070_1
-- lihuiIcon (CDN key, Body only, only if a CN CDN asset exists): icon_lihui_wap2070
+- Icon file (all 4 parts share this): Icon_mecha_wap2071.png
+- Portrait/Raw file (Body only): Icon_mecha_wap2071_SN_Raw.png
+- mechaIcon (CDN key, per part, only if a CN CDN asset exists): Icon_wap2071_1
+- lihuiIcon (CDN key, Body only, only if a CN CDN asset exists): icon_lihui_wap2071
 - Alternate skins (Body only, list each variant token you have a
-  `Img_Skin_wap2070_<variant>.png` file for, or "none"): none
+  `Img_Skin_wap2071_<variant>.png` file for, or "none"): none
 
 ### Body — max level (manji) overrides
-- Durable: 12706
+- Durable: 11149
 - Fire: 1264
-- Weight: 295
-- Output: 2605
+- Weight: 280
+- Output: 2725
 - Antiriot: 4472
 - Armor: 706
 
 ### L-Arm — max level (manji) overrides
-- Durable: 6088
+- Durable: 5810
 - Fire: 1264
-- Weight: 160
-- Hit: 1794
+- Weight: 170
+- Hit: 2091
 
 ### R-Arm — max level (manji) overrides
-- Durable: 6088
+- Durable: 5810
 - Fire: 1264
-- Weight: 160
-- Hit: 1794
+- Weight: 170
+- Hit: 2091
 
 ### Legs — max level (manji) overrides
-- Durable: 9036
+- Durable: 9480
 - Fire: 1264
-- Weight: 220
+- Weight: 205
 - Dodge: 3885
 - Move: 3
 
 ## Modules
 <!-- Copy this block for each distinct module referenced above. -->
 ### Module 1
-- Name: Asynchronous Sensor
+- Name: Raptor Unit
 - Level: 4/4
-- Effect text: DMG Dealt increases by 3/6/10/15%. When the target is more than 2 tiles away, DMG Dealt additionally increases by 1/2/3.5/5% for each 1 tile further away, up to 4/8/14/20%. <!-- numbers must be wrapped as <color=#F74848>NUMBER</color>, same convention as pilot skill text, record the different level effect based on the numbers split -->
-- Icon name: Icon_skill_passive_1127
+- Effect text: When actively attacking with a Melee Weapon, Critical Hit chance increases by 4/8/14/20%. If the target part is at full HP, DMG Dealt increases by 4/8/14/20% <!-- numbers must be wrapped as <color=#F74848>NUMBER</color>, same convention as pilot skill text, record the different level effect based on the numbers split -->
+- Icon name: Icon_skill_passive_4133
 
 ### Module 2
 - Name: Crit DMG Mod
@@ -133,10 +133,10 @@ Checklist for whoever (or whichever agent) turns this into the JSON file:
 - Icon name: Same as others, ID 40034
 
 ### Module 3
-- Name: Annihilation Module
+- Name: Raiding Module
 - Level: 8/8
-- Effect text: Critical Hit chance increases by 2/3/4/5/7/8/9/12%. When actively attacking, Critical Hit chance additionally increases by 2/2/2/2/2/2/3/3% for each 1 target within skill range, up to a maximum of 2/3/4/5/6/8/9/12%.\nIf Critical Hit chance exceeds 50%, Critical Hit DMG increases by 1% for each 1% of Critical Hit chance above the threshold, up to +15%. If an active attack scores a Critical Hit on 2 or more targets, gains 1 AP. This effect can trigger 1 time per turn.<!-- numbers must be wrapped as <color=#F74848>NUMBER</color>, same convention as pilot skill text, record the different level effect based on the numbers split -->
-- Icon name: Icon_entry_40042
+- Effect text: When actively attacking with a Melee Weapon, DMG Dealt increases by 2/3/4/5/7/8/9/12%. For each 1 [Re-ATK] triggered during the turn, DMG Dealt additionally increases by 1/1.5/2/2.5/3.5/4/4.5/6%, up to 3/4.5/6/7.5/10.5/12/13.5/18%. This effect is removed at the end of turn.\nAfter triggering [Re-ATK], Critical Hit chance and Critical Hit DMG increase by 15%.<!-- numbers must be wrapped as <color=#F74848>NUMBER</color>, same convention as pilot skill text, record the different level effect based on the numbers split -->
+- Icon name: Icon_entry_10115
 
 ### Glossary buf 1
 <!-- Pick a random unique ID for this in the <buf> tag and add the tag to all referenced text from this pilot -->
