@@ -215,7 +215,7 @@ def misc_routes(index_html):
 
 
 def page_html(index_html, depth, title, description=None, image=None, url=None):
-    out = index_html.replace('})(/*depth*/0);', f'}})(/*depth*/{depth});', 1)
+    out = index_html.replace('<base href="./" />', f'<base href="{"../" * depth}" />', 1)
     out = re.sub(r'<title>.*?</title>', f'<title>{html.escape(title)} | {SITE_NAME}</title>', out, count=1)
     if description is None:
         # List pages keep index.html's generic preview, just retitled.
@@ -263,8 +263,8 @@ def main():
         return
 
     site_url = (sys.argv[1] if len(sys.argv) > 1 else DEFAULT_SITE_URL).rstrip('/') + '/'
-    if '/*depth*/0' not in index_html:
-        sys.exit('index.html is missing the /*depth*/0 base-path marker')
+    if '<base href="./" />' not in index_html:
+        sys.exit('index.html is missing the <base href="./" /> base-path marker')
 
     misc = misc_routes(index_html)
     home_image = re.search(r'<meta property="og:image" content="([^"]+)"', index_html).group(1)
