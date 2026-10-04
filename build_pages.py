@@ -45,9 +45,23 @@ def slugify(s):
     return re.sub(r'[^a-z0-9]+', '-', s).strip('-')
 
 
+_terrain_names = None
+
+
+def terrain_name(tid):
+    """Mirrors the <terrian> lookup in js/glossary.js (incl. its TERRAIN_NAMES)."""
+    global _terrain_names
+    if _terrain_names is None:
+        _terrain_names = {'4003081': 'Burning Terrain', '3014501': 'Sentry Zone', '4011081': 'Funnel Field'}
+        _terrain_names.update({k: v['name'] for k, v in load('data/glossary.json').get('terrain', {}).items() if v.get('name')})
+    return _terrain_names.get(tid, 'Terrain')
+
+
 def plain(text):
     """Game rich text (<color>, <buf>, <skill>, ...) → one line of plain text."""
-    text = re.sub(r'<[^>]+>', '', text or '')
+    # Terrain tags are self-closing — the name comes from the glossary.
+    text = re.sub(r'<terr(?:ian|ain) ID=(\d+)\s*/>', lambda m: f'[{terrain_name(m.group(1))}]', text or '')
+    text = re.sub(r'<[^>]+>', '', text)
     return re.sub(r'\s+', ' ', text).strip()
 
 
@@ -88,23 +102,40 @@ def join(*parts):
 def pilots():
     for p in load('data/pilots/compiled.json')['pilots']:
         icon = p['PortraitHeroIcon']
-        meta = ' · '.join(x for x in [
-            RANK_LABEL.get(p.get('quality'), ''), p.get('Profession'), p.get('Occupation'),
-            p.get('AllowedMechaDriveList_DriveAllowedList') and p['AllowedMechaDriveList_DriveAllowedList'] + ' ST',
-        ] if x)
+        # e.g. "v3.6 S-rank Tactician (Medium License) ", then the basic talent
+        # on its own line. The trailing space keeps it readable where the line
+        # break gets collapsed (Facebook).
+        license = p.get('AllowedMechaDriveList_DriveAllowedList')
+        meta = join(
+            p.get('version') and 'v' + p['version'],
+            RANK_LABEL.get(p.get('quality'), ''), p.get('Occupation'),
+            license and f'({license} License)',
+        )
         yield ('pilots', p['PilotName'], p['PilotName'] + ' — Pilot',
-               join(meta + '.', 'Talent — ' + skill_line(p.get('Talent3_5Ability'))),
+               meta + ' \n' + skill_line(p.get('Talent0_2Ability')),
                local_or_cdn(f'data/unlisted/pilot_images_half/{icon}.png', CDN + f'characterHalf/{quote(icon)}.png'))
 
 
 def mechs():
     for m in load('data/mechs/compiled.json')['mechs']:
-        meta = ' · '.join(x for x in [
-            RANK_LABEL.get(m.get('quality'), ''), m.get('type', '') + ' ST', m.get('version') and 'v' + m['version'],
+        # Same layout as pilots: "v1.2 S-rank ST (Medium License) ", then
+        # "FP: 1098 / Hit: 1794 / Weight: 1810" — the numbers the ST page shows
+        # (Firepower, R-Arm Hit, Remaining weight).
+        meta = join(
+            m.get('version') and 'v' + m['version'],
+            RANK_LABEL.get(m.get('quality'), ''), 'ST',
+            m.get('type') and f'({m["type"]} License)',
+        )
+        parts = m.get('parts') or []
+        r_arm = next((p for p in parts if p.get('position') in ('右臂', 'R-Arm')), {})
+        remaining = int(m.get('output') or 0) - sum(int(p.get('aircraftWeight') or 0) for p in parts)
+        stats = ' / '.join(x for x in [
+            f'FP: {m.get("manjiFirepower") or m.get("fire")}',
+            r_arm.get('Hit') and f'Hit: {r_arm["Hit"]}',
+            f'Weight: {remaining}',
         ] if x)
-        modules = ', '.join(mod['name'] for mod in m.get('modules') or [] if mod.get('name'))
         yield ('sts', m['name'], m['name'] + ' — ST',
-               join(meta + '.', modules and 'Modules: ' + modules + '.'),
+               meta + ' \n' + stats,
                local_or_cdn(f'data/unlisted/mechs/Icon/{m["type"]}/{m["icon"]}.png', CDN + f'mecha/{quote(m["icon"])}.png'))
 
 
@@ -112,23 +143,29 @@ def weapons():
     for w in load('data/weapons/compiled.json')['weapons']:
         if w.get('quality') != 'SSSR' or not w.get('version'):
             continue
-        meta = 'SSSR signature weapon' + (' of ' + w['pilot'] if w.get('pilot') else '') + ' · v' + w['version'] + '.'
+        # "v1.6 Erisa's signature ", then the first passive on its own line
+        # (trailing space: see pilots()).
+        meta = join('v' + w['version'], w.get('pilot') and w['pilot'] + "'s signature")
         passive = (w.get('PassiveSkill') or [None])[0]
         # Mirrors weaponIconSrc() (incl. WEAPON_ICON_OVERRIDE) in js/pages/weapons.js.
         icon = {'10215123': 'Icon_weapon_10200501'}.get(w['ID'], w['icon'])
         yield ('weapons', w['name'], w['name'] + ' — Weapon',
-               join(meta, skill_line(passive)),
+               meta + ' \n' + skill_line(passive),
                local_or_cdn(f'data/weapons/icons/{WEAPON_ICON_FOLDER.get(w["type"], "")}/{icon}.png', CDN + f'weapons/{quote(icon)}.png'))
 
 
 def backpacks():
     for b in load('data/backpacks/compiled.json')['backpacks']:
-        meta = ' · '.join(x for x in [
-            RANK_LABEL.get(b.get('quality'), '') + ' backpack', b.get('weight') and 'Weight ' + str(b['weight']),
-            b.get('version') and 'v' + b['version'],
+        # Weapon layout: "v3.6 Strider (Light ST, Weight 150) ", then the skill
+        # on its own line. Only Special backpacks have a version. No rarity here;
+        # it's in the title, since names repeat across tiers.
+        fit = ', '.join(x for x in [
+            b.get('AssemblableAirmenType') and b['AssemblableAirmenType'] + ' ST',
+            b.get('weight') and f'Weight {b["weight"]}',
         ] if x)
+        meta = join(b.get('version') and 'v' + b['version'], b['name'], fit and f'({fit})')
         yield ('backpacks', b['name'] + '/' + b['quality'], f'{b["name"]} ({RANK_LABEL.get(b["quality"], b["quality"])}) — Backpack',
-               join(meta + '.', skill_line(b.get('skill'))),
+               meta + ' \n' + skill_line(b.get('skill')),
                quote(f'data/backpacks/icons/{b["icon"]}.png'))
 
 
@@ -137,8 +174,11 @@ def modules():
         levels = mod.get('levels') or {}
         top = str(mod.get('maxLevel', ''))
         effect = plain(levels.get(top, ''))
+        # Weapon layout: "Cutter Mod (Standalone Module) ", then the max-level
+        # effect on its own line. Modules have no version.
+        meta = f'{mod["name"]} ({MODULE_CATEGORY_LABEL.get(mod.get("category"), "Module")})'
         yield ('modules', mod['name'].lower(), mod['name'] + ' — Module',
-               join(MODULE_CATEGORY_LABEL.get(mod.get('category'), 'Module') + '.', effect and f'Lv.{top}: {effect}'),
+               meta + ' \n' + (effect and f'Lv.{top}: {effect}'),
                local_or_cdn(f'data/unlisted/mech_modules/{mod["icon"]}.png', CDN + f'skill/{quote(mod["icon"])}.png'))
 
 
@@ -157,6 +197,23 @@ def route_titles(index_html):
     return titles
 
 
+# Preview text for the pages under the "Misc." nav dropdown. They reuse the
+# home page's og:image, shown small (twitter:card=summary).
+MISC_DESCRIPTIONS = {
+    'dispatch':   'Patch-by-patch schedule of which STs were released in each dispatch group.',
+    'exskills':   'Reference of the universal EX skills for each weapon type.',
+    'shops':      'What the Arena and Border Conflict shops sell, and what each item does.',
+    'ststats':    'Sortable comparison table of firepower, HP and weight for every S-rank ST.',
+    'pilotstats': 'Sortable comparison table of combat stats for every pilot.',
+    'builder':    'Theorycraft an ST loadout (pilot, skills, weapons, backpack and modules) and share it as a link.',
+}
+
+
+def misc_routes(index_html):
+    """Routes linked from the "Misc." nav dropdown in index.html."""
+    return re.findall(r'class="nav-dropdown-item" href="#\w+" data-page="(\w+)"', index_html)
+
+
 def page_html(index_html, depth, title, description=None, image=None, url=None):
     out = index_html.replace('})(/*depth*/0);', f'}})(/*depth*/{depth});', 1)
     out = re.sub(r'<title>.*?</title>', f'<title>{html.escape(title)} | {SITE_NAME}</title>', out, count=1)
@@ -164,7 +221,8 @@ def page_html(index_html, depth, title, description=None, image=None, url=None):
         # List pages keep index.html's generic preview, just retitled.
         return re.sub(r'(<meta (?:property="og:title"|name="twitter:title") content=")[^"]*', r'\g<1>' + html.escape(title), out)
 
-    e = html.escape
+    # &#10; keeps line breaks (pilot descriptions) out of the tag indentation below.
+    e = lambda s: html.escape(s).replace('\n', '&#10;')
     tags = '\n'.join([
         '<meta property="og:type" content="website" />',
         f'<meta property="og:site_name" content="{SITE_NAME}" />',
@@ -208,9 +266,16 @@ def main():
     if '/*depth*/0' not in index_html:
         sys.exit('index.html is missing the /*depth*/0 base-path marker')
 
+    misc = misc_routes(index_html)
+    home_image = re.search(r'<meta property="og:image" content="([^"]+)"', index_html).group(1)
+    home_description = re.search(r'<meta property="og:description" content="([^"]+)"', index_html).group(1)
     for r, label in routes.items():
         shutil.rmtree(os.path.join(ROOT, r), ignore_errors=True)
-        write(r, page_html(index_html, 1, label))
+        if r in misc:
+            write(r, page_html(index_html, 1, label, MISC_DESCRIPTIONS.get(r, html.unescape(home_description)),
+                               absolute(site_url, home_image), site_url + r + '/'))
+        else:
+            write(r, page_html(index_html, 1, label))
 
     count = 0
     for items in (pilots, mechs, weapons, backpacks, modules):

@@ -90,7 +90,7 @@ data/
 - All levels stacked with parsed effect text
 - "Carried By" list of STs that innately carry the module, linking to `#sts/<name>`
 
-## Builder (`#builder`)
+## Builder (`builder/`)
 
 Mech loadout theorycrafting tool:
 
@@ -146,6 +146,38 @@ Edit the `<ID>-translation.json` with English values and push. GitHub Pages serv
 ```bash
 python3 -m http.server 8080
 ```
+
+### Running locally
+
+From the repo root:
+
+```bash
+python3 build_pages.py        # generate the per-route/per-item pages
+python3 -m http.server 8080
+```
+
+Then open `http://localhost:8080/`, or an item page directly, e.g. `http://localhost:8080/pilots/ada/` or `http://localhost:8080/sts/fenrisulfr/`.
+
+- `build_pages.py` is only needed for loading or reloading path URLs like `/pilots/ada/` — without it those 404, since the files only exist after the build. Opening `http://localhost:8080/` and clicking around (or using `#pilots/Ada`-style links) works without it.
+- Re-run `build_pages.py` after `compile.py` or after editing `index.html`, since each generated page is a copy of `index.html` filled in from the compiled data.
+- `python3 build_pages.py --clean` removes the generated folders. They're gitignored, so leaving them is harmless — the deploy workflow regenerates them on every push.
+
+### Link previews
+
+Facebook/Discord don't run JavaScript and ignore the `#...` part of a URL, so the preview card comes from the `og:`/`twitter:` meta tags in each generated page's static HTML. `build_pages.py` writes those per page:
+
+| Page | Preview |
+|---|---|
+| Pilot / ST / Weapon / Backpack / Module | Item icon (`twitter:card=summary`) + two-line description, e.g. `v3.6 S-rank Tactician (Medium License)` then the basic talent |
+| Misc. pages (Dispatch, EX Skills, Shops, ST/Pilot Stats, Builder) | Home page portrait as a small icon + summary from `MISC_DESCRIPTIONS` |
+| Other list pages and the home page | `index.html`'s own generic preview, retitled |
+
+Previews can't be seen by opening the page in a browser. To check them:
+
+- **Locally:** inspect the generated HTML, e.g. `head -40 pilots/ada/index.html`, and look at the `og:` and `twitter:` lines.
+- **After deploy:** paste the link into [Facebook's Sharing Debugger](https://developers.facebook.com/tools/debug/) (use "Scrape Again" to refresh its cache), or into a Discord message. Discord also caches previews for a while.
+
+The `og:url`/`og:image` URLs point at `https://mecharashi-wiki.cc/` (`DEFAULT_SITE_URL` in `build_pages.py`); pass a different root as the first argument to override it.
 
 ## Translation file schema
 
