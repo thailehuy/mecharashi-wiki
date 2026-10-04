@@ -58,6 +58,14 @@ var Glossary = (function () {
       Ap: 0,
       CD: 3,
       effect: 'Applies [Tracing Mark] to targets hit by next active attack. Triggers <buf ID=900004>[Re-ATK]</buf> in place after use.'
+    },
+    // Supplier's [Quick Load]
+    '6230611': {
+      name: 'Quick Load',
+      icon: 'Icon_skill_order_1016',
+      Ap: 0,
+      CD: 3,
+      effect: 'Fully restores all Tactical ammo. Can continue to act with remaining movement. Shares CD with other Tactical weapons reloading skills.'
     }
   };
 
