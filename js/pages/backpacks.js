@@ -1,7 +1,6 @@
 var Pages = window.Pages || {};
 
-var BACKPACK_ICON_BASE      = 'https://media.zlongame.com/media/pictures/cn/community/img/gl/gameInfo/pack/';
-var BACKPACK_SKILL_BASE     = 'https://media.zlongame.com/media/pictures/cn/community/img/gl/gameInfo/skill/';
+var BACKPACK_ICON_BASE      = 'data/backpacks/icons/';
 var BACKPACK_MATERIALS_BASE = 'data/backpacks/';
 
 var BACKPACK_QUALITY_LABEL = { SSSR: 'Special', UR: 'Composite', SSR: 'S', SR: 'A', R: 'B' };
@@ -190,14 +189,13 @@ Pages.backpacks = {
 
     var skillHtml = '';
     if (b.skill && b.skill.name) {
-      var skillIconSrc = BACKPACK_SKILL_BASE + encodeURIComponent(b.skill.icon) + '.png';
       var desc = Glossary.parseEffects(b.skill.SpecificEffects || '');
       skillHtml =
         '<div class="nd-section backpack-skill-section">' +
           '<div class="detail-talents">' +
             '<div class="talent-card">' +
               '<div class="talent-header">' +
-                '<img class="talent-icon" src="' + skillIconSrc + '" alt="' + $('<span>').text(b.skill.name).html() + '" />' +
+                '<img class="talent-icon" src="' + skillIconSrc(b.skill.icon) + '"' + skillIconErrorAttr(b.skill.icon) + ' alt="' + $('<span>').text(b.skill.name).html() + '" />' +
                 '<div>' +
                   '<div class="talent-name">' + $('<span>').text(b.skill.name).html() + '</div>' +
                 '</div>' +

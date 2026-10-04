@@ -69,6 +69,14 @@ function pilotAvatarErrorAttr(p) {
   return ' onerror="this.onerror=null;this.src=\'' + AVATAR_BASE + encodeURIComponent(p.PortraitHeroIcon) + '.png\';"';
 }
 
+// A pilot can own both a signature weapon and its later upgrade; the
+// signature one is the earliest (lowest AC).
+function pilotSignatureWeapon(pilotName) {
+  var all = (window.WeaponsData || {}).weapons || [];
+  return all.filter(function (w) { return w.pilot === pilotName; })
+    .sort(function (a, b) { return (a.ac || 0) - (b.ac || 0); })[0];
+}
+
 function weaponIconSrc(w) {
   var icon = WEAPON_ICON_OVERRIDE[w.ID] || w.icon;
   return WEAPON_ICON_DIR + WEAPON_ICON_FOLDER[w.type] + '/' + encodeURIComponent(icon) + '.png';

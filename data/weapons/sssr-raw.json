@@ -3574,5 +3574,104 @@
       "switch": null,
       "info": 0
     }
+  },
+  {
+    "ID": "50216121",
+    "name": "Heaven's Judgment",
+    "quality": "SSSR",
+    "WeaponType1": "Heavy",
+    "WeaponType2": "Funnel",
+    "type": "Funnel",
+    "icon": "Icon_weapon_40300401",
+    "detail": {
+      "data": {
+        "data": [
+          {
+            "ID": "50216121",
+            "name": "Heaven's Judgment",
+            "quality": "SSSR",
+            "grade": "70",
+            "WeaponType1": "Heavy",
+            "WeaponType2": "Funnel",
+            "type": "Funnel",
+            "LimitedModelOfWeapon": "Medium",
+            "RestrictionsPositionOfWeapon": "Back",
+            "range": "1-4",
+            "WeaponWeight": "1100",
+            "WeaponBasicAttackingPower": "876",
+            "WeaponHitPoint": "5241",
+            "WeaponUnderstanding": "4603",
+            "NumberOfBullets": "3",
+            "InitiativeSkill": [
+              {
+                "ID": "4031",
+                "remarks": "浮游炮普通攻击",
+                "name": "多向歼击",
+                "describe": "使用浮游炮攻击范围内最多<color=#F74848>4</color>个目标，造成<color=#F74848>1</color>倍范围伤害",
+                "type": "SpecialAssault",
+                "CD": "0",
+                "Ap": "3",
+                "matchingWeaponType": "浮游炮",
+                "SkillIcon": "Icon_skill_order_1011",
+                "icon": "Icon_skill_order_1011",
+                "Status": 1,
+                "weight": 666
+              }
+            ],
+            "PassiveSkill": [
+              {
+                "ID": "53059",
+                "name": "空域主宰",
+                "SpecificEffects": "驾驶等级为<buf ID=900119>[超适体]</buf>的机师装备时，浮游炮武器射程与技能范围<color=#F74848>+1</color>，伤害提升<color=#F74848>20%</color>",
+                "BufCarried": "530591/530592",
+                "SkillIcon": "Icon_skill_passive_5148",
+                "icon": "Icon_skill_passive_5148",
+                "Status": 1,
+                "weight": 1212
+              },
+              {
+                "ID": "53060",
+                "name": "伯伦希尔",
+                "SpecificEffects": "强化<buf ID=900117>[瓦尔基里]</buf>效果：激活飞行效果，移动时无视低障碍和敌机阻挡；<buf ID=900118>[女武神模式]</buf>持续回合数<color=#F74848>+1</color>；<buf ID=900118>[女武神模式]</buf>下，浮游炮子弹数<color=#F74848>+2</color>",
+                "BufCarried": "530601/530606",
+                "SkillIcon": "Icon_skill_passive_5250",
+                "icon": "Icon_skill_passive_5250",
+                "Status": 1,
+                "weight": 1213
+              },
+              {
+                "ID": "61254",
+                "name": "首攻强化Ⅲ",
+                "SpecificEffects": "每回合第<color=#F74848>1</color>次主动攻击时，伤害提升<color=#F74848>7.5%</color>，暴击率提升<color=#F74848>5%</color>；\n机兵躯干耐久值提升<color=#F74848>10%</color>，造成伤害提升<color=#F74848>5%</color>",
+                "BufCarried": "600433",
+                "SkillIcon": "Icon_skill_passive_5119",
+                "icon": "Icon_skill_passive_5119",
+                "Status": 1,
+                "weight": 1556
+              },
+              {
+                "ID": "53058",
+                "name": "续航协议",
+                "SpecificEffects": "浮游炮最大弹药数<color=#F74848>+1</color>；使用浮游炮主动攻击<color=#F74848>4</color>个及以上目标时，战后回复<color=#F74848>1</color>枚弹药，每<color=#F74848>2</color>回合最多发动<color=#F74848>1</color>次",
+                "BufCarried": "530582",
+                "SkillIcon": "Icon_skill_passive_5223",
+                "icon": "Icon_skill_passive_5223",
+                "Status": 1,
+                "weight": 1211
+              }
+            ],
+            "IconResourcePath": "Icon_weapon_40300401",
+            "icon": "Icon_weapon_40300401",
+            "describe": "她看到，自己将铁雨带到大地，把昙花落于火海。她还听到，那些熟悉的、悲伤的、冒失的声音，一次又一次的呼唤自己……直至黄昏到来。既然长梦已醒，那就不要再睡去，接受一切，背负一切，去给那些高高在上的众神……带来属于他们的「审判」。",
+            "Status": 1,
+            "weight": 733
+          }
+        ],
+        "now": "2026-07-01 10:47:16"
+      },
+      "status": 1,
+      "switch": null,
+      "info": 0
+    }
   }
 ]

@@ -1489,6 +1489,10 @@ window.GlossaryData = {
     "900172": {
       "name": "Shatter Mark",
       "effect": "DMG Taken from [Audrey] and <buf ID=3013504>[Personal Aide]</buf> increases by <color=#F74848>2.5%</color>, stacking up to <color=#F74848>10</color> times."
+    },
+    "7101004": {
+      "name": "Hit Rate Down III",
+      "effect": "Hit rate -15%."
     }
   },
   "skill": {

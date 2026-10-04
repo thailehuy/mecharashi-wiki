@@ -170,8 +170,6 @@ Pages.pilots = {
         || parseFloat(b.ID) - parseFloat(a.ID);
     });
 
-    var allWeapons = (window.WeaponsData || {}).weapons || [];
-
     var cards = filtered.map(function (p) {
       var rankLabel = QUALITY_LABEL[p.quality] || p.quality;
       var rankClass = QUALITY_CLASS[p.quality] || '';
@@ -179,7 +177,7 @@ Pages.pilots = {
       var imgSrc      = LOCAL_AVATAR_BASE + encodeURIComponent(p.PortraitHeroIcon) + '.png';
       var imgFallback = AVATAR_BASE + encodeURIComponent(p.PortraitHeroIcon) + '.png';
 
-      var weapon = allWeapons.find(function (w) { return w.pilot === p.PilotName; });
+      var weapon = pilotSignatureWeapon(p.PilotName);
       var weaponIconHtml = '';
       if (weapon) {
         var wImgSrc = weaponIconSrc(weapon);
@@ -454,8 +452,7 @@ Pages.pilots = {
   },
 
   _renderWeaponTalent: function (pilotName) {
-    var weapons = (window.WeaponsData || {}).weapons || [];
-    var weapon  = weapons.find(function (w) { return w.pilot === pilotName; });
+    var weapon  = pilotSignatureWeapon(pilotName);
     if (!weapon) return '';
 
     var ps = (weapon.PassiveSkill || []).find(function (p) {

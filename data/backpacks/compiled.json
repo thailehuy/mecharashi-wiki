@@ -1,6 +1,187 @@
 {
   "backpacks": [
     {
+      "ID": "60402116",
+      "name": "Marauder",
+      "quality": "SSSR",
+      "weight": "150",
+      "BackpackMainType": "Flow",
+      "AssemblableAirmenType": "Light",
+      "icon": "Icon_backpack_60350201",
+      "version": "3.6",
+      "ac": 20,
+      "skill": {
+        "ID": "",
+        "name": "Marauder Drive \u00b7 Re-ATK",
+        "icon": "Icon_skill_passive_5310",
+        "SpecificEffects": "Melee Weapons can now attack airborne units.\nST Movement Type changes to Levitating, enabling ST to pass over low obstacles.\nWhen re-attacking, Hit Rate <color=#F74848>+10%</color>, Crit Rate <color=#F74848>+5%</color>.\nST Body HP <color=#F74848>+10%</color> and DMG <color=#F74848>+5%</color>."
+      },
+      "crafting": [
+        {
+          "kind": "item",
+          "id": "60402105",
+          "qty": 1,
+          "composite": true
+        },
+        {
+          "kind": "generic",
+          "icon": "materials/random-ssr.png",
+          "label": "Random Composite Backpack",
+          "qty": 1,
+          "composite": true
+        },
+        {
+          "kind": "generic",
+          "icon": "materials/random-ssr.png",
+          "label": "Random S-Grade Backpack",
+          "qty": 3
+        },
+        {
+          "kind": "generic",
+          "icon": "materials/ac-blueprint.png",
+          "label": "AC Blueprint",
+          "qty": 1
+        }
+      ],
+      "enTranslation": true
+    },
+    {
+      "ID": "60701116",
+      "name": "Rejuvenator",
+      "quality": "SSSR",
+      "weight": "1000",
+      "BackpackMainType": "Heal",
+      "AssemblableAirmenType": "Light",
+      "icon": "Icon_backpack_60400201",
+      "version": "3.6",
+      "ac": 20,
+      "skill": {
+        "ID": "",
+        "name": "Rejuvenator Drive \u00b7 Attack",
+        "icon": "Icon_skill_passive_3130",
+        "SpecificEffects": "At the start of action, repairs self <color=#F74848>1</color> time, equal to <color=#F74848>0.6x</color> Manipulator Repair AMT. Simultaneously repairs <color=#F74848>1</color> ally with the lowest HP percentage, equal to <color=#F74848>0.6x</color> Manipulator Repair AMT. Cannot repair destroyed parts.\nWhen in combat, enemy DMG <color=#F74848>-10%</color>."
+      },
+      "AmountOfRepair": "211",
+      "crafting": [
+        {
+          "kind": "item",
+          "id": "60701105",
+          "qty": 1,
+          "composite": true
+        },
+        {
+          "kind": "generic",
+          "icon": "materials/random-ssr.png",
+          "label": "Random Composite Backpack",
+          "qty": 1,
+          "composite": true
+        },
+        {
+          "kind": "generic",
+          "icon": "materials/random-ssr.png",
+          "label": "Random S-Grade Backpack",
+          "qty": 3
+        },
+        {
+          "kind": "generic",
+          "icon": "materials/ac-blueprint.png",
+          "label": "AC Blueprint",
+          "qty": 1
+        }
+      ],
+      "enTranslation": true
+    },
+    {
+      "ID": "60201206",
+      "name": "Strider",
+      "quality": "SSSR",
+      "weight": "150",
+      "BackpackMainType": "MovePointAdd",
+      "AssemblableAirmenType": "Light",
+      "icon": "Icon_backpack_60500201",
+      "version": "3.6",
+      "ac": 20,
+      "skill": {
+        "ID": "",
+        "name": "Strider Drive \u00b7 Hit",
+        "icon": "Icon_skill_passive_1153",
+        "SpecificEffects": "When actively attacking, if having moved at least <color=#F74848>5</color> tiles, gains <buf ID=<color=#F74848>1008062</color>>[Absolute Dodge]</buf>. Removes after triggering. Can trigger again after an interval of <color=#F74848>2</color> turns.\nST Movement <color=#F74848>+1</color>.\nWhen in combat, enemy Hit Rate <color=#F74848>-10%</color>.\nST Body HP <color=#F74848>+10%</color> and DMG <color=#F74848>+5%</color>."
+      },
+      "crafting": [
+        {
+          "kind": "item",
+          "id": "60201205",
+          "qty": 1,
+          "composite": true
+        },
+        {
+          "kind": "generic",
+          "icon": "materials/random-ssr.png",
+          "label": "Random Composite Backpack",
+          "qty": 1,
+          "composite": true
+        },
+        {
+          "kind": "generic",
+          "icon": "materials/random-ssr.png",
+          "label": "Random S-Grade Backpack",
+          "qty": 3
+        },
+        {
+          "kind": "generic",
+          "icon": "materials/ac-blueprint.png",
+          "label": "AC Blueprint",
+          "qty": 1
+        }
+      ],
+      "enTranslation": true
+    },
+    {
+      "ID": "60902416",
+      "name": "Devastator",
+      "quality": "SSSR",
+      "weight": "150",
+      "BackpackMainType": "Ammo",
+      "AssemblableAirmenType": "Medium",
+      "icon": "Icon_backpack_61100101",
+      "version": "3.3",
+      "ac": 19,
+      "skill": {
+        "ID": "",
+        "name": "Devastator Drive \u00b7 First Strike",
+        "icon": "Icon_skill_passive_5227",
+        "SpecificEffects": "After actively attacking, if spent <color=#F74848>2</color> or more Ammo, gains <color=#F74848>1</color> random Buff, lasting for <color=#F74848>2</color> turns.\nTactical Weapon Magazine Capacity <color=#F74848>+2</color>.\nWhen actively attacking for the first time each turn, DMG <color=#F74848>+7.5%</color> and Crit Rate <color=#F74848>+5%</color>.\nST Body HP <color=#F74848>+10%</color> and DMG <color=#F74848>+5%</color>."
+      },
+      "crafting": [
+        {
+          "kind": "item",
+          "id": "60902405",
+          "qty": 1,
+          "composite": true
+        },
+        {
+          "kind": "generic",
+          "icon": "materials/random-ssr.png",
+          "label": "Random Composite Backpack",
+          "qty": 1,
+          "composite": true
+        },
+        {
+          "kind": "generic",
+          "icon": "materials/random-ssr.png",
+          "label": "Random S-Grade Backpack",
+          "qty": 3
+        },
+        {
+          "kind": "generic",
+          "icon": "materials/ac-blueprint.png",
+          "label": "AC Blueprint",
+          "qty": 1
+        }
+      ],
+      "enTranslation": true
+    },
+    {
       "ID": "60402106",
       "name": "Enforcer",
       "quality": "SSSR",

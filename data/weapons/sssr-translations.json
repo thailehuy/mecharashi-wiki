@@ -240,6 +240,7 @@
     "ac": 5
   },
   "50116121": {
+    "name": "Adjudicator",
     "passiveSkills": {
       "53032": {
         "name": "Ammo Surplus",
@@ -252,8 +253,15 @@
       "53031": {
         "name": "Ammo Recycling",
         "SpecificEffects": "When actively attacking with a Rail Gun, if a part is destroyed, reloads <color=#F74848>1</color> Ammo after combat. This effect can trigger again after an interval of <color=#F74848>1</color> turn."
+      },
+      "61254": {
+        "name": "First Strike Enhancement III",
+        "SpecificEffects": "When actively attacking for the first time each turn, DMG <color=#F74848>+7.5%</color> and Crit Rate <color=#F74848>+5%</color>.\nST Body HP <color=#F74848>+10%</color> and DMG <color=#F74848>+5%</color>."
       }
-    }
+    },
+    "pilot": "Shawnee",
+    "version": "1.7",
+    "ac": 7
   },
   "10315122": {
     "name": "Sivri",
@@ -776,17 +784,28 @@
     "version": "2.2"
   },
   "50116122": {
+    "name": "Sugarcoated Destroyer",
     "passiveSkills": {
       "53068": {
-        "SpecificEffects": "Rail Gun Ammo capacity <color=#F74848>+1</color>. When attacking with a Rail Gun, Crit Rate <color=#F74848>+20%</color>."
+        "name": "Penetrating Pulse",
+        "SpecificEffects": "When actively attacking with a Rail Gun, DMG <color=#F74848>+20%</color> against targets with debuff effects."
       },
       "53069": {
-        "SpecificEffects": "Enhanced [Doctrine of Sin]: When a target initiates combat against an ally, inflicts [Magnetic Lock-On] on the target. Can trigger <color=#F74848>2</color> times per turn. When actively attacking with a Rail Gun, for every <color=#F74848>1</color> target destroyed, reloads <color=#F74848>1</color> Rail Gun Ammo. Can trigger <color=#F74848>3</color> times per turn. For every <color=#F74848>1</color> time [Magnetic Lock-On] is inflicted, gains <color=#F74848>1</color> stack of [Magnetic Buff], up to <color=#F74848>10</color> stacks."
+        "name": "Tridentate Deflector",
+        "SpecificEffects": "Enhanced [Perfectionism] Effect: When deploying <buf ID=900085>[Tokamak Spheres]</buf>, the Redirection direction will change to the selected direction and the adjacent <color=#F74848>2</color> directions, with the redirected attack increased by <color=#F74848>0.2x</color>. When actively attacking, if the target is afflicted with <color=#F74848>5</color> or more debuffs, inflicts <buf ID=1009083>[Intimidation]</buf> on the target after combat, lasting for <color=#F74848>1</color> turn. When actively attacking, for every <color=#F74848>15</color> debuffs applied, immediately gains <color=#F74848>1</color> AP."
       },
       "53067": {
-        "SpecificEffects": "When attacking with a Rail Gun, for every <color=#F74848>1</color> Ammo remaining, DMG Dealt and Hit Rate <color=#F74848>+4%</color>, up to <color=#F74848>20%</color>."
+        "name": "Ammo Regeneration",
+        "SpecificEffects": "When actively attacking a target with a Rail Gun and hitting <color=#F74848>3</color> or more targets, recovers <color=#F74848>1</color> round of Ammo after combat. Can trigger a maximum of <color=#F74848>1</color> time every <color=#F74848>2</color> turns."
+      },
+      "61254": {
+        "name": "First Strike Enhancement III",
+        "SpecificEffects": "When actively attacking for the first time each turn, DMG <color=#F74848>+7.5%</color> and Crit Rate <color=#F74848>+5%</color>.\nST Body HP <color=#F74848>+10%</color> and DMG <color=#F74848>+5%</color>."
       }
-    }
+    },
+    "pilot": "Fia",
+    "version": "2.5",
+    "ac": 13
   },
   "10815122": {
     "name": "Shattered Fang",
@@ -947,5 +966,29 @@
     "pilot": "Lexuan",
     "ac": 20,
     "version": "3.6"
+  },
+  "50216121": {
+    "name": "Heaven's Judgment",
+    "passiveSkills": {
+      "53059": {
+        "name": "Airspace Domination",
+        "SpecificEffects": "When equipped by a pilot with [Hyper-Aptamer] Suitability, Cutter Weapon Range <color=#F74848>+1</color> and DMG <color=#F74848>+20%</color>."
+      },
+      "53060": {
+        "name": "Brynhild",
+        "SpecificEffects": "Enhanced [Valkyrie]: Activates flight functionality, ignoring low obstacles and enemy unit obstruction while moving. <buf ID=900118>[Valhalla's Call]</buf> duration <color=#F74848>+1</color> turn. In <buf ID=900118>[Valhalla's Call]</buf> Mode, Cutter Ammo <color=#F74848>+2</color>."
+      },
+      "53058": {
+        "name": "Sustainability Protocol",
+        "SpecificEffects": "Maximum Cutter Ammo <color=#F74848>+1</color>. When using Cutter to actively attack <color=#F74848>4</color> or more targets, reloads <color=#F74848>1</color> Ammo after combat. This effect can trigger <color=#F74848>1</color> time every <color=#F74848>2</color> turns."
+      },
+      "61254": {
+        "name": "First Strike Enhancement III",
+        "SpecificEffects": "When actively attacking for the first time each turn, DMG <color=#F74848>+7.5%</color> and Crit Rate <color=#F74848>+5%</color>.\nST Body HP <color=#F74848>+10%</color> and DMG <color=#F74848>+5%</color>."
+      }
+    },
+    "pilot": "Rosa: Judgement",
+    "version": "3.3",
+    "ac": 19
   }
 }

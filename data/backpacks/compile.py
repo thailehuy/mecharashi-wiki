@@ -172,7 +172,26 @@ for b in raw:
 
     backpacks.append(entry)
 
-order = {'SSSR': 0, 'UR': 1, 'SSR': 2, 'SR': 3, 'R': 4}
+# Hand-built SSSR entries from the community spreadsheet that the CN API
+# doesn't list (yet). Already in English; skipped once the API has the ID.
+existing_ids = {b['ID'] for b in backpacks}
+for e in json.load(open(os.path.join(DIR, 'sssr-extra.json'), 'r', encoding='utf-8')):
+    if e['ID'] in existing_ids:
+        continue
+    entry = {k: v for k, v in e.items() if k != 'predecessor'}
+    p = e.get('predecessor')
+    ur_id = ur_lookup.get((p['base'], p['modifier'])) if p else None
+    if ur_id:
+        entry['crafting'] = [
+            material_item(ur_id, composite=True),
+            material_generic('random-ssr.png', 'Random Composite Backpack', composite=True),
+            material_generic('random-ssr.png', 'Random S-Grade Backpack', 3),
+            material_generic('ac-blueprint.png', 'AC Blueprint'),
+        ]
+    entry['enTranslation'] = True
+    backpacks.append(entry)
+
+order ={'SSSR': 0, 'UR': 1, 'SSR': 2, 'SR': 3, 'R': 4}
 
 
 def version_sort_key(b):
