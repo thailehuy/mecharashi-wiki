@@ -728,7 +728,7 @@
           "skill": {
             "ID": "184502",
             "name": "Azure Blitz",
-            "describe": "Selects a tile in a straight direction, then selects an end tile in <color=#F74848>3</color> possible directions, covering up to <color=#F74848>4</color> tiles. Uses Chainsaw to attack all enemies along the path, dealing <color=#F74848>1.2</color>x AoE DMG. This attack prioritizes the part with lowest HP. When <buf ID=184900>[Edge Momentum]</buf> is at <color=#F74848>8</color> stacks or more, this skill multiplier increases by <color=#F74848>+0.2</color>. Can consume <color=#F74848>5</color> stacks of <buf ID=184900>[Edge Momentum]</buf> to increase the number of selectable tiles by <color=#F74848>+2</color> and change the priority to the part with highest HP.",
+            "describe": "Selects a tile in a straight direction, then selects an end tile in <color=#F74848>3</color> possible directions, covering up to <color=#F74848>4</color> tiles, and dashes to the ending tile. Uses Chainsaw to attack all enemies along the path, dealing <color=#F74848>1.2</color>x AoE DMG. This attack prioritizes the part with lowest HP. When <buf ID=184900>[Edge Momentum]</buf> is at <color=#F74848>8</color> stacks or more, this skill multiplier increases by <color=#F74848>+0.2</color>. Can consume <color=#F74848>5</color> stacks of <buf ID=184900>[Edge Momentum]</buf> to increase the number of selectable tiles by <color=#F74848>+2</color> and change the priority to the part with highest HP.",
             "type": "SpecialAssault",
             "Ap": "3",
             "matchingWeaponType": "CS",
