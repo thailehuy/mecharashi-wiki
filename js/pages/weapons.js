@@ -33,6 +33,11 @@ var WEAPON_TYPE2_LABEL = {
 };
 
 // Weapon icons are served locally, grouped into one folder per weapon type.
+// Small note shown under an Armed Conquest section, keyed by AC number.
+var AC_FOOTNOTES = {
+  20: 'You can acquire 1 copy of Zoey (Void Severance), Wataru (Radiant Dragon Blade) and Toraoh (Shadow Tiger Roar) signature weapons in v3.5 Special Event Armed Conquest. Then they are craftable from v3.6 Armed Conquest materials.'
+};
+
 var WEAPON_ICON_DIR = 'data/weapons/icons/';
 var WEAPON_ICON_FOLDER = {
   Blade:          'AB',
@@ -143,6 +148,7 @@ Pages.weapons = {
       return '<div class="ac-section" id="ac-' + g.ac + '" data-ac="' + g.ac + '">' +
         (g.ac ? '<h2 class="ac-section-title">Armed Conquest ' + g.ac + '</h2>' : '') +
         '<div class="row g-3 weapon-grid-section"></div>' +
+        (AC_FOOTNOTES[g.ac] ? '<p class="ac-section-footnote">* ' + AC_FOOTNOTES[g.ac] + '</p>' : '') +
       '</div>';
     }).join('');
 

@@ -2355,6 +2355,18 @@ a.material-item:hover .material-icon-wrap {
   margin-bottom: 1rem;
 }
 
+.ac-section-footnote {
+  font-size: 0.8rem;
+  font-style: italic;
+  color: #cbd5e1;
+  background-color: rgba(15, 23, 42, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  padding: 0.5rem 0.75rem;
+  margin: 0.75rem 0 0;
+  backdrop-filter: blur(4px);
+}
+
 .tag-ac {
   background: rgba(233, 69, 96, 0.15);
   color: #e94560;

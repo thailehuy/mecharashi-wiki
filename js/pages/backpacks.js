@@ -1,5 +1,10 @@
 var Pages = window.Pages || {};
 
+// Small note shown on a backpack's detail page, keyed by backpack ID.
+var BACKPACK_FOOTNOTES = {
+  '60402116': 'You can acquire 1 copy of Marauder in v3.5 Special Event Armed Conquest. Then it is craftable from v3.6 Armed Conquest materials.'
+};
+
 var BACKPACK_ICON_BASE      = 'data/backpacks/icons/';
 var BACKPACK_MATERIALS_BASE = 'data/backpacks/';
 
@@ -224,6 +229,7 @@ Pages.backpacks = {
             (b.version ? '<div class="backpack-meta-item"><span class="stat-label">Version</span><span class="stat-value">v' + $('<span>').text(b.version).html() + '</span></div>' : '') +
           '</div>' +
           skillHtml +
+          (BACKPACK_FOOTNOTES[b.ID] ? '<p class="ac-section-footnote">* ' + BACKPACK_FOOTNOTES[b.ID] + '</p>' : '') +
         '</div>' +
       '</div>' +
       this._renderCrafting(b)
