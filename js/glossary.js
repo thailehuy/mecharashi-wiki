@@ -5,7 +5,7 @@ var Glossary = (function () {
   // Icons are checked locally first (data/unlisted/pilot_skills/), since
   // that's where manually-added pilots' icons live; falls back to the CDN
   // on 404 (mirrors pilots.js).
-  var LOCAL_ICON_BASE = 'data/unlisted/pilot_skills/';
+  var LOCAL_ICON_BASE = ASSET_BASE + 'data/unlisted/pilot_skills/';
 
   function iconSrc(icon) {
     return icon ? LOCAL_ICON_BASE + encodeURIComponent(icon) + '.png' : '';

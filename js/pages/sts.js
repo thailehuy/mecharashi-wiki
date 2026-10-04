@@ -3,19 +3,19 @@ var Pages = window.Pages || {};
 var MECH_QUALITY_LABEL = { R: 'B-rank', SR: 'A-rank', SSR: 'S-rank' };
 var MECH_QUALITY_CLASS  = { R: 'rank-b',  SR: 'rank-a',  SSR: 'rank-s'  };
 var MECH_QUALITY_BG = {
-  SSR: 'data/background/quality-ssr.png',
-  SR:  'data/background/quality-sr.png',
-  R:   'data/background/quality-r.png',
+  SSR: ASSET_BASE + 'data/background/quality-ssr.png',
+  SR:  ASSET_BASE + 'data/background/quality-sr.png',
+  R:   ASSET_BASE + 'data/background/quality-r.png',
 };
 var MECH_AVATAR_BASE    = 'https://media.zlongame.com/media/pictures/cn/community/img/gl/gameInfo/mecha/';
 var MECH_PORTRAIT_BASE  = 'https://media.zlongame.com/media/pictures/cn/community/img/gl/gameInfo/mechaLive/';
 var MODULE_ICON_BASE    = 'https://media.zlongame.com/media/pictures/cn/community/img/gl/gameInfo/skill/';
 // Mech icons/portraits are now sourced locally, split by weight class.
-var LOCAL_MECH_ICON_BASE    = 'data/unlisted/mechs/Icon/';
-var LOCAL_MECH_PORTRAIT_BASE = 'data/unlisted/mechs/Raw/';
-var LOCAL_MECH_SKIN_BASE     = 'data/unlisted/mechs/Skins/';
+var LOCAL_MECH_ICON_BASE    = ASSET_BASE + 'data/unlisted/mechs/Icon/';
+var LOCAL_MECH_PORTRAIT_BASE = ASSET_BASE + 'data/unlisted/mechs/Raw/';
+var LOCAL_MECH_SKIN_BASE     = ASSET_BASE + 'data/unlisted/mechs/Skins/';
 // Mech module icons are now sourced locally (flat, no weight-class split).
-var LOCAL_MODULE_ICON_BASE = 'data/unlisted/mech_modules/';
+var LOCAL_MODULE_ICON_BASE = ASSET_BASE + 'data/unlisted/mech_modules/';
 
 function moduleIconSrc(iconName) {
   return LOCAL_MODULE_ICON_BASE + encodeURIComponent(iconName) + '.png';

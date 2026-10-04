@@ -98,6 +98,12 @@
 
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Images and icons live in a separate repo (mecharashi-wiki-assets) with
+    // its own Pages site, so text-only deploys don't re-upload them. Paths
+    // under it mirror the old in-repo layout (data/unlisted/..., etc.).
+    var ASSET_BASE = 'https://assets.mecharashi-wiki.cc/';
+  </script>
   <script src="data/pilots/compiled.js"></script>
   <script src="data/mechs/compiled.js"></script>
   <script src="data/weapons/compiled.js"></script>

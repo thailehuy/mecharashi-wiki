@@ -1,4 +1,4 @@
-"""Scan the local pilot_images_half folder for alternate pilot skin art
+"""Scan the pilot_images_half folder (in the assets repo) for alternate pilot skin art
 (Pilot_{ID}B_half, Pilot_{ID}C_half, ...) and record which letters exist as
 an `AlternateSkins` list in each pilot's raw JSON.
 
@@ -8,7 +8,8 @@ presence of the corresponding local PNG files instead of probing the CDN.
 import json, glob, os, string, sys
 
 DIR = os.path.dirname(os.path.abspath(__file__))
-IMAGES_DIR = os.path.join(DIR, '..', 'unlisted', 'pilot_images_half')
+# The images live in the mecharashi-wiki-assets repo, checked out next to this one.
+IMAGES_DIR = os.path.join(DIR, '..', '..', '..', 'mecharashi-wiki-assets', 'data', 'unlisted', 'pilot_images_half')
 MAX_LETTER = 'H'  # probe B..H; leaves headroom past any known skin count
 
 

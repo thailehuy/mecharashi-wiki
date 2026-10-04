@@ -3,20 +3,20 @@ var Pages = window.Pages || {};
 var QUALITY_LABEL = { R: 'B-rank', SR: 'A-rank', SSR: 'S-rank' };
 var QUALITY_CLASS  = { R: 'rank-b',  SR: 'rank-a',  SSR: 'rank-s'  };
 var QUALITY_BG = {
-  SSR: 'data/background/quality-ssr.png',
-  SR:  'data/background/quality-sr.png',
-  R:   'data/background/quality-r.png',
+  SSR: ASSET_BASE + 'data/background/quality-ssr.png',
+  SR:  ASSET_BASE + 'data/background/quality-sr.png',
+  R:   ASSET_BASE + 'data/background/quality-r.png',
 };
 var AVATAR_BASE    = 'https://media.zlongame.com/media/pictures/cn/community/img/gl/gameInfo/characterHalf/';
 var PORTRAIT_BASE  = 'https://media.zlongame.com/media/pictures/cn/community/img/gl/gameInfo/character/';
 // Manually-added pilots (post-CN-source) have no CDN asset; their art lives
 // locally under data/unlisted/ instead, named by the same icon key.
-var LOCAL_AVATAR_BASE   = 'data/unlisted/pilot_images_half/';
-var LOCAL_PORTRAIT_BASE = 'data/unlisted/pilot_images_raw/';
+var LOCAL_AVATAR_BASE   = ASSET_BASE + 'data/unlisted/pilot_images_half/';
+var LOCAL_PORTRAIT_BASE = ASSET_BASE + 'data/unlisted/pilot_images_raw/';
 var SKILL_BASE      = 'https://media.zlongame.com/media/pictures/cn/community/img/gl/gameInfo/skill/';
 // Talent/skill/neural icons are checked locally first (data/unlisted/pilot_skills/)
 // since that's where manually-added pilots' icons live; falls back to the CDN on 404.
-var LOCAL_SKILL_BASE = 'data/unlisted/pilot_skills/';
+var LOCAL_SKILL_BASE = ASSET_BASE + 'data/unlisted/pilot_skills/';
 var OCCUPATION_BASE  = 'https://media.zlongame.com/media/pictures/cn/community/img/gl/gameInfo/occupation/';
 var WEAPON_IMG_BASE  = 'https://media.zlongame.com/media/pictures/cn/community/img/gl/gameInfo/weapons/';
 

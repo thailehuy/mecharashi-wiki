@@ -2,6 +2,8 @@
 
 A static fan wiki for **Mecharashi**, built with Bootstrap 5 and jQuery. Hosted on GitHub Pages.
 
+Images and icons live in a separate repo, [mecharashi-wiki-assets](https://github.com/thailehuy/mecharashi-wiki-assets), served from `https://assets.mecharashi-wiki.cc/` (`ASSET_BASE` in `index.html`), so the frequent text/translation deploys here stay small. Its paths mirror the old layout here, e.g. `data/unlisted/pilot_images_half/<icon>.png`.
+
 > Fan project — not affiliated with Tentree Games / BlackJack Studio, non-commercial.
 
 ## Features
@@ -48,11 +50,10 @@ data/
   pilots/                         # compile.py, <ID>.json, <ID>-translation.json → compiled.js/json (PilotsData)
   mechs/                          # compile.py, <ID>.json, <ID>-translation.json → compiled.js/json (MechsData)
   weapons/                        # compile.py, scrape/helper scripts → compiled.js/json (WeaponsData)
-  backpacks/                      # compile.py, materials/, translations → compiled.js/json (BackpacksData)
+  backpacks/                      # compile.py, translations → compiled.js/json (BackpacksData)
   modules/                        # compile.py, scrape-modules.js → compiled.js/json (ModulesData)
-  accessories/                    # compiled.js/json, icons/
+  accessories/                    # compiled.js/json
   builder/                        # generate-index-maps.py → index-maps.js/json (BuilderIndexMaps)
-  background/                     # quality-rank background images (R/SR/SSR/SSSR)
   glossary.json                   # → GlossaryData
   dispatch.json                   # → dispatch table data
   exskills.json                   # → ExSkillsData
@@ -148,6 +149,8 @@ python3 -m http.server 8080
 ```
 
 ### Running locally
+
+Clone [mecharashi-wiki-assets](https://github.com/thailehuy/mecharashi-wiki-assets) next to this repo (`../mecharashi-wiki-assets`): `build_pages.py` reads its file listing to pick link-preview images (or set `ASSETS_DIR` to point elsewhere). Images themselves load from the live `assets.mecharashi-wiki.cc` even when running locally.
 
 From the repo root:
 

@@ -1,7 +1,7 @@
 var Pages = window.Pages || {};
 
 var ACC_SKILL_BASE = 'https://media.zlongame.com/media/pictures/cn/community/img/gl/gameInfo/skill/';
-var ACC_ICON_BASE  = 'data/accessories/icons/';
+var ACC_ICON_BASE  = ASSET_BASE + 'data/accessories/icons/';
 
 var ACC_TAG_LABEL = {
   '戰後效果': 'Post-Combat',

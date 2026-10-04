@@ -5,18 +5,18 @@ var BACKPACK_FOOTNOTES = {
   '60402116': 'You can acquire 1 copy of Marauder in v3.5 Special Event Armed Conquest. Then it is craftable from v3.6 Armed Conquest materials.'
 };
 
-var BACKPACK_ICON_BASE      = 'data/backpacks/icons/';
-var BACKPACK_MATERIALS_BASE = 'data/backpacks/';
+var BACKPACK_ICON_BASE      = ASSET_BASE + 'data/backpacks/icons/';
+var BACKPACK_MATERIALS_BASE = ASSET_BASE + 'data/backpacks/';
 
 var BACKPACK_QUALITY_LABEL = { SSSR: 'Special', UR: 'Composite', SSR: 'S', SR: 'A', R: 'B' };
 var BACKPACK_QUALITY_CLASS = { SSSR: 'rank-sssr', UR: 'rank-ur', SSR: 'rank-s', SR: 'rank-a', R: 'rank-b' };
 var BACKPACK_QUALITY_ORDER = ['SSSR', 'UR', 'SSR', 'SR', 'R'];
 var BACKPACK_QUALITY_BG = {
-  SSSR: 'data/background/quality-sssr.png',
-  UR:   'data/background/quality-ssr.png',
-  SSR:  'data/background/quality-ssr.png',
-  SR:   'data/background/quality-sr.png',
-  R:    'data/background/quality-r.png',
+  SSSR: ASSET_BASE + 'data/background/quality-sssr.png',
+  UR:   ASSET_BASE + 'data/background/quality-ssr.png',
+  SSR:  ASSET_BASE + 'data/background/quality-ssr.png',
+  SR:   ASSET_BASE + 'data/background/quality-sr.png',
+  R:    ASSET_BASE + 'data/background/quality-r.png',
 };
 
 // Backpack names repeat across quality tiers (e.g. "Jammer - Hit" exists as

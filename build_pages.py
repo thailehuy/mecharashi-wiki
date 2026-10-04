@@ -15,13 +15,18 @@ SITE_URL is the absolute site root used for og:url/og:image (default: the
 site's custom domain). Run `python3 build_pages.py --clean` to delete the output.
 """
 
-import html, json, os, re, shutil, sys, unicodedata
+import html, json, os, re, shutil, subprocess, sys, unicodedata
 from urllib.parse import quote
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 DEFAULT_SITE_URL = 'https://mecharashi-wiki.cc/'
 SITE_NAME = 'Mecharashi Wiki'
 CDN = 'https://media.zlongame.com/media/pictures/cn/community/img/gl/gameInfo/'
+# Images live in the mecharashi-wiki-assets repo; must match ASSET_BASE in index.html.
+ASSET_URL = 'https://assets.mecharashi-wiki.cc/'
+# A checkout of that repo, used only to see which images exist. CI makes a
+# blobless one (file listing only); locally it's expected next to this repo.
+ASSETS_DIR = os.environ.get('ASSETS_DIR', os.path.join(ROOT, '..', 'mecharashi-wiki-assets'))
 DESCRIPTION_LIMIT = 300
 
 RANK_LABEL = {'SSSR': 'Special', 'UR': 'Composite', 'SSR': 'S-rank', 'SR': 'A-rank', 'R': 'B-rank'}
@@ -76,11 +81,27 @@ def load(path):
         return json.load(f)
 
 
+_asset_files = None
+
+
+def asset_files():
+    """Paths of every file in the assets repo. Read from git (not the working
+    tree) so a blobless, no-checkout clone is enough."""
+    global _asset_files
+    if _asset_files is None:
+        if not os.path.isdir(os.path.join(ASSETS_DIR, '.git')):
+            sys.exit(f'Assets repo not found at {ASSETS_DIR} — clone mecharashi-wiki-assets there or set ASSETS_DIR')
+        out = subprocess.run(['git', '-C', ASSETS_DIR, 'ls-tree', '-r', '--name-only', 'HEAD'],
+                             check=True, capture_output=True, text=True).stdout
+        _asset_files = set(out.splitlines())
+    return _asset_files
+
+
 def local_or_cdn(local_path, cdn_url):
-    """Local file (as a site-relative path) if present, else the CDN URL — same
-    local-first order the pages use."""
-    if os.path.isfile(os.path.join(ROOT, local_path)):
-        return quote(local_path)
+    """Our own copy (on the assets site) if present, else the game CDN URL —
+    same order the pages use."""
+    if local_path in asset_files():
+        return ASSET_URL + quote(local_path)
     return cdn_url
 
 
@@ -166,7 +187,7 @@ def backpacks():
         meta = join(b.get('version') and 'v' + b['version'], b['name'], fit and f'({fit})')
         yield ('backpacks', b['name'] + '/' + b['quality'], f'{b["name"]} ({RANK_LABEL.get(b["quality"], b["quality"])}) — Backpack',
                meta + ' \n' + skill_line(b.get('skill')),
-               quote(f'data/backpacks/icons/{b["icon"]}.png'))
+               ASSET_URL + quote(f'data/backpacks/icons/{b["icon"]}.png'))
 
 
 def modules():

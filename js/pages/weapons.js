@@ -4,7 +4,7 @@ var WEAPON_IMG_BASE    = 'https://media.zlongame.com/media/pictures/cn/community
 
 var WEAPON_QUALITY_LABEL = { SSSR: 'SSSR', UR: 'UR' };
 var WEAPON_QUALITY_CLASS  = { SSSR: 'rank-sssr', UR: 'rank-ur' };
-var WEAPON_QUALITY_BG = { SSSR: 'data/background/quality-sssr.png' };
+var WEAPON_QUALITY_BG = { SSSR: ASSET_BASE + 'data/background/quality-sssr.png' };
 
 var WEAPON_TYPE1_LABEL = {
   Melee:   'Melee',
@@ -38,7 +38,7 @@ var AC_FOOTNOTES = {
   20: 'You can acquire 1 copy of Zoey (Void Severance), Wataru (Radiant Dragon Blade) and Toraoh (Shadow Tiger Roar) signature weapons in v3.5 Special Event Armed Conquest. Then they are craftable from v3.6 Armed Conquest materials.'
 };
 
-var WEAPON_ICON_DIR = 'data/weapons/icons/';
+var WEAPON_ICON_DIR = ASSET_BASE + 'data/weapons/icons/';
 var WEAPON_ICON_FOLDER = {
   Blade:          'AB',
   Buckler:        'SS',
