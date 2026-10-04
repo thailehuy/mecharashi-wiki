@@ -135,7 +135,7 @@ Pages.backpacks = {
             '</div>'
           );
           $card.find('.backpack-card').on('click', function () {
-            window.location.hash = '#backpacks/' + encodeURIComponent(backpackSlug(b));
+            App.go('#backpacks/' + encodeURIComponent(backpackSlug(b)));
           });
           $grid.append($card);
         });

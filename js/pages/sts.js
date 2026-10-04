@@ -202,7 +202,7 @@ Pages.sts = {
     $(document).on('click.sts', '.pilot-card[data-mech]', function () {
       var name = decodeURIComponent($(this).data('mech'));
       self._lastViewed = name;
-      window.location.hash = '#sts/' + encodeURIComponent(name);
+      App.go('#sts/' + encodeURIComponent(name));
     });
   },
 

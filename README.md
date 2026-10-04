@@ -6,7 +6,8 @@ A static fan wiki for **Mecharashi**, built with Bootstrap 5 and jQuery. Hosted 
 
 ## Features
 
-- Single-page app with hash-based routing (`#page` or `#page/param`)
+- Single-page app with path routing (`pilots/ada/`); legacy `#page/param` links still work and are rewritten to the path form
+- Per-item link previews (Facebook/Discord) — `build_pages.py` generates a copy of `index.html` with its own og:/twitter: tags for every pilot/ST/weapon/backpack/module, run by the deploy workflow
 - **Pilots** listing + detail — avatar, rank/version badges, filters, talents, skills, Neural Drive
 - **STs (mechs)** listing + detail — avatar, rank/version badges, filters, firepower/HP/weight stats, modules
 - **Weapons** listing + detail — signature (SSSR) weapons grouped by release batch, paired-pilot linking, passive skills
@@ -26,8 +27,9 @@ A static fan wiki for **Mecharashi**, built with Bootstrap 5 and jQuery. Hosted 
 index.html                        # Entry point
 css/style.css                     # All styles
 compile.py                        # Orchestrates the full data build (see below)
+build_pages.py                    # Generates per-route/per-item pages (gitignored; run in CI)
 js/
-  app.js                          # Hash router, nav (incl. "Misc." dropdown), version badge
+  app.js                          # Path/hash router, nav (incl. "Misc." dropdown), version badge
   translations.js                 # Runtime translation loader
   glossary.js                     # Keyword/tooltip engine shared by all pages
   pages/

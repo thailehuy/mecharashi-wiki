@@ -209,7 +209,7 @@ Pages.weapons = {
             '</div>'
           );
           $card.find('.weapon-card').on('click', function () {
-            window.location.hash = '#weapons/' + encodeURIComponent(w.name);
+            App.go('#weapons/' + encodeURIComponent(w.name));
           });
           $grid.append($card);
         });

@@ -221,7 +221,7 @@ Pages.pilots = {
     $(document).on('click.pilots', '.pilot-card', function () {
       var name = decodeURIComponent($(this).data('pilot'));
       self._lastViewed = name;
-      window.location.hash = '#pilots/' + encodeURIComponent(name);
+      App.go('#pilots/' + encodeURIComponent(name));
     });
   },
 

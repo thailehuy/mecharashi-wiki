@@ -25,6 +25,9 @@ jobs:
 
       - uses: actions/configure-pages@v5
 
+      # Per-item copies of index.html with their own link-preview tags
+      - run: python3 build_pages.py
+
       - uses: actions/upload-pages-artifact@v3
         with:
           path: '.'

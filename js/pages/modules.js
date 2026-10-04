@@ -94,7 +94,7 @@ Pages.modules = {
       });
 
       $('#module-page').on('click', '.module-card-header', function () {
-        window.location.hash = '#modules/' + ($(this).closest('.module-card-wrap').data('name') || '');
+        App.go('#modules/' + ($(this).closest('.module-card-wrap').data('name') || ''));
       });
 
       $('#module-search').val(self._searchQuery);

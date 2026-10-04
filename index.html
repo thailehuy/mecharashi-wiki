@@ -2,6 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <script>
+    // This file is also served from generated sub-folders (pilots/ada/ etc.,
+    // see build_pages.py), and the router changes the path via pushState —
+    // pin relative URLs to the site root. The depth argument is the number of
+    // folders below the root this copy lives at; build_pages.py rewrites it.
+    (function (depth) {
+      var path = location.pathname.replace(/[^\/]*$/, '');
+      for (var i = 0; i < depth; i++) path = path.replace(/[^\/]*\/$/, '');
+      var base = document.createElement('base');
+      base.href = path;
+      document.head.appendChild(base);
+    })(/*depth*/0);
+  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mecharashi Wiki</title>
   <link rel="icon" type="image/png" href="mech.png" />

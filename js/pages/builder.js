@@ -224,7 +224,7 @@ Pages.builder = {
   // it to the clipboard, with brief button-text feedback either way.
   _copyBuildUrl: function ($btn) {
     var uid = this._computeBuildUID();
-    var url = window.location.origin + window.location.pathname + '#builder/' + uid;
+    var url = App.url('builder', uid);
     var originalLabel = $btn.text();
 
     function flash(label) {
