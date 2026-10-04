@@ -1,8 +1,6 @@
 var Pages = window.Pages || {};
 
 var WEAPON_IMG_BASE    = 'https://media.zlongame.com/media/pictures/cn/community/img/gl/gameInfo/weapons/';
-var WEAPON_SKILL_BASE  = 'https://media.zlongame.com/media/pictures/cn/community/img/gl/gameInfo/skill/';
-var PILOT_AVATAR_BASE  = 'https://media.zlongame.com/media/pictures/cn/community/img/gl/gameInfo/characterHalf/';
 
 var WEAPON_QUALITY_LABEL = { SSSR: 'SSSR', UR: 'UR' };
 var WEAPON_QUALITY_CLASS  = { SSSR: 'rank-sssr', UR: 'rank-ur' };
@@ -59,6 +57,17 @@ var WEAPON_ICON_FOLDER = {
 var WEAPON_ICON_OVERRIDE = {
   '10215123': 'Icon_weapon_10200501', // False Smile (Martini)
 };
+
+// Pilot avatars and skill icons are served locally (data/unlisted/), falling
+// back to the CDN on 404 like the pilots page. skillIconSrc/skillIconErrorAttr
+// and the avatar bases come from pilots.js.
+function pilotAvatarSrc(p) {
+  return LOCAL_AVATAR_BASE + encodeURIComponent(p.PortraitHeroIcon) + '.png';
+}
+
+function pilotAvatarErrorAttr(p) {
+  return ' onerror="this.onerror=null;this.src=\'' + AVATAR_BASE + encodeURIComponent(p.PortraitHeroIcon) + '.png\';"';
+}
 
 function weaponIconSrc(w) {
   var icon = WEAPON_ICON_OVERRIDE[w.ID] || w.icon;
@@ -170,8 +179,7 @@ Pages.weapons = {
           if (w.pilot) {
             var pilot = allPilots.find(function (p) { return p.PilotName === w.pilot; });
             if (pilot) {
-              var pSrc = PILOT_AVATAR_BASE + encodeURIComponent(pilot.PortraitHeroIcon) + '.png';
-              pilotIconHtml = '<img class="weapon-card-pilot-icon" src="' + pSrc + '" alt="' + $('<span>').text(pilot.PilotName).html() + '" loading="lazy" />';
+              pilotIconHtml = '<img class="weapon-card-pilot-icon" src="' + pilotAvatarSrc(pilot) + '"' + pilotAvatarErrorAttr(pilot) + ' alt="' + $('<span>').text(pilot.PilotName).html() + '" loading="lazy" />';
             }
           }
 
@@ -256,11 +264,10 @@ Pages.weapons = {
       var pilots = (window.PilotsData || {}).pilots || [];
       var pilot  = pilots.find(function (p) { return p.PilotName === w.pilot; });
       if (pilot) {
-        var pAvatarSrc = PILOT_AVATAR_BASE + encodeURIComponent(pilot.PortraitHeroIcon) + '.png';
         var pBgSrc     = (typeof QUALITY_BG !== 'undefined' ? QUALITY_BG[pilot.quality] : '') || '';
         pilotHtml =
           '<a class="weapon-pilot-card" href="#pilots/' + encodeURIComponent(pilot.PilotName) + '">' +
-            '<img class="weapon-pilot-avatar" src="' + pAvatarSrc + '" alt="' + $('<span>').text(pilot.PilotName).html() + '" style="background-image:url(\'' + pBgSrc + '\')" />' +
+            '<img class="weapon-pilot-avatar" src="' + pilotAvatarSrc(pilot) + '"' + pilotAvatarErrorAttr(pilot) + ' alt="' + $('<span>').text(pilot.PilotName).html() + '" style="background-image:url(\'' + pBgSrc + '\')" />' +
             '<div class="weapon-pilot-name">' + $('<span>').text(pilot.PilotName).html() + '</div>' +
           '</a>';
       }
@@ -300,12 +307,12 @@ Pages.weapons = {
           '<div class="section-heading">Passive Skills</div>' +
           '<div class="detail-talents">' +
             w.PassiveSkill.map(function (ps) {
-              var iconSrc = WEAPON_SKILL_BASE + encodeURIComponent(ps.SkillIcon || ps.icon) + '.png';
+              var icon = ps.SkillIcon || ps.icon;
               var desc = linkTalent(Glossary.parseEffects(ps.SpecificEffects || ''));
               return (
                 '<div class="talent-card">' +
                   '<div class="talent-header">' +
-                    '<img class="talent-icon" src="' + iconSrc + '" alt="' + $('<span>').text(ps.name).html() + '" />' +
+                    '<img class="talent-icon" src="' + skillIconSrc(icon) + '"' + skillIconErrorAttr(icon) + ' alt="' + $('<span>').text(ps.name).html() + '" />' +
                     '<div>' +
                       '<div class="talent-name">' + $('<span>').text(ps.name).html() + '</div>' +
                     '</div>' +

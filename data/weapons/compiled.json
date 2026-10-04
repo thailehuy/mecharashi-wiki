@@ -488,51 +488,6 @@
       "ac": 2
     },
     {
-      "ID": "20115124",
-      "name": "Lexuan's Machine Gun",
-      "quality": "SSSR",
-      "WeaponType1": "Assault",
-      "WeaponType2": "MachineGun",
-      "type": "MachineGun",
-      "icon": "Icon_weapon_20100602",
-      "grade": "70",
-      "LimitedModelOfWeapon": "Light/Medium/Heavy",
-      "RestrictionsPositionOfWeapon": "Hand",
-      "range": "1-3",
-      "PassiveSkill": [
-        {
-          "ID": "90019",
-          "name": "Equipped Passive",
-          "SpecificEffects": "Machine Gun Bullets <color=#F74848>+1</color>, additionally <color=#F74848>+1</color> if triggering [Link Attack]. Effect cannot trigger multiple times.",
-          "SkillIcon": "Icon_skill_passive_1146",
-          "icon": "Icon_skill_passive_1146",
-          "Status": 1,
-          "weight": 90019
-        },
-        {
-          "ID": "90020",
-          "name": "Carried Passive",
-          "SpecificEffects": "Enhanced [Saturated Strike]: When [Tidal Reserve] is at least <color=#F74848>80</color> stacks, Machine Gun attack Multiplier <color=#F74848>+0.05</color>, DMG and Hit Rate <color=#F74848>+10%</color>. When using [Weapon Skills], this effect doubles. When sortied, gains <color=#F74848>20</color> stacks of [Tidal Reserve].",
-          "SkillIcon": "Icon_skill_talent_5159",
-          "icon": "Icon_skill_talent_5159",
-          "Status": 1,
-          "weight": 90020
-        },
-        {
-          "ID": "90021",
-          "name": "Used Passive",
-          "SpecificEffects": "When simultaneously attacking with two weapons, ignores <color=#F74848>35%</color> of target's Armor.",
-          "SkillIcon": "Icon_skill_passive_1114",
-          "icon": "Icon_skill_passive_1114",
-          "Status": 1,
-          "weight": 90021
-        }
-      ],
-      "pilot": "Lexuan",
-      "version": "3.6",
-      "ac": 20
-    },
-    {
       "ID": "20115123",
       "name": "Peace Function",
       "quality": "SSSR",
@@ -584,6 +539,51 @@
       "pilot": "Sapientia",
       "version": "3.0",
       "ac": 16
+    },
+    {
+      "ID": "20115124",
+      "name": "Rapid Gatling",
+      "quality": "SSSR",
+      "WeaponType1": "Assault",
+      "WeaponType2": "MachineGun",
+      "type": "MachineGun",
+      "icon": "Icon_weapon_20100602",
+      "grade": "70",
+      "LimitedModelOfWeapon": "Light/Medium/Heavy",
+      "RestrictionsPositionOfWeapon": "Hand",
+      "range": "1-3",
+      "PassiveSkill": [
+        {
+          "ID": "90019",
+          "name": "Extended Ammo Belt",
+          "SpecificEffects": "Machine Gun Bullets <color=#F74848>+1</color>, additionally <color=#F74848>+1</color> if triggering [Link Attack]. Effect cannot trigger multiple times.",
+          "SkillIcon": "Icon_skill_passive_5142",
+          "icon": "Icon_skill_passive_5142",
+          "Status": 1,
+          "weight": 90019
+        },
+        {
+          "ID": "90020",
+          "name": "Bullet Frenzy",
+          "SpecificEffects": "Enhanced <skill mainSkill=202050>[Saturated Fire]</skill>: When <buf ID=2020505>[Overcharged Bullet]</buf> is at least <color=#F74848>80</color> stacks, Machine Gun attack Multiplier <color=#F74848>+0.05</color>, DMG and Hit Rate <color=#F74848>+10%</color>. When using <buf ID=900153>[Weapon Skill]</buf>, this effect doubles. When sortied, gains <color=#F74848>20</color> stacks of <buf ID=2020505>[Overcharged Bullet]</buf>.",
+          "SkillIcon": "Icon_skill_talent_5159",
+          "icon": "Icon_skill_talent_5159",
+          "Status": 1,
+          "weight": 90020
+        },
+        {
+          "ID": "90021",
+          "name": "Synchronized Firepower",
+          "SpecificEffects": "When simultaneously attacking with two weapons, ignores <color=#F74848>35%</color> of target's Armor.",
+          "SkillIcon": "Icon_skill_passive_1126",
+          "icon": "Icon_skill_passive_1126",
+          "Status": 1,
+          "weight": 90021
+        }
+      ],
+      "pilot": "Lexuan",
+      "version": "3.6",
+      "ac": 20
     },
     {
       "ID": "20114121",
@@ -730,7 +730,7 @@
     },
     {
       "ID": "20315123",
-      "name": "Toraoh's Shotgun",
+      "name": "Shadow Tiger Roar",
       "quality": "SSSR",
       "WeaponType1": "Assault",
       "WeaponType2": "ShotGun",
@@ -743,17 +743,17 @@
       "PassiveSkill": [
         {
           "ID": "90010",
-          "name": "Equipped Passive",
+          "name": "Two Roars - One Hunt",
           "SpecificEffects": "When simultaneously using two Shotguns, Bullets <color=#F74848>+3</color>.",
-          "SkillIcon": "Icon_skill_passive_1146",
-          "icon": "Icon_skill_passive_1146",
+          "SkillIcon": "Icon_skill_passive_5142",
+          "icon": "Icon_skill_passive_5142",
           "Status": 1,
           "weight": 90010
         },
         {
           "ID": "90011",
-          "name": "Carried Passive",
-          "SpecificEffects": "Enhanced [Demon Prince]: Max [Tiger Prowess] stacks <color=#F74848>+3</color>. For every stack of [Tiger Prowess], DMG Taken <color=#F74848>-3%</color>. If possessing at least <color=#F74848>5</color> stacks of [Tiger Prowess], AP Regen <color=#F74848>+1</color>.",
+          "name": "Tiger Soul Radiance",
+          "SpecificEffects": "Enhanced <skill mainSkill=201950>[Demon Prince]</skill>: Max <buf ID=2019506>[Tiger Might]</buf> stacks <color=#F74848>+3</color>. For every stack of <buf ID=2019506>[Tiger Might]</buf>, DMG Taken <color=#F74848>-3%</color>. If possessing at least <color=#F74848>5</color> stacks of <buf ID=2019506>[Tiger Might]</buf>, AP Regen <color=#F74848>+1</color>.",
           "SkillIcon": "Icon_skill_talent_9501",
           "icon": "Icon_skill_talent_9501",
           "Status": 1,
@@ -761,10 +761,10 @@
         },
         {
           "ID": "90012",
-          "name": "Used Passive",
+          "name": "Heart Of Rebel",
           "SpecificEffects": "When actively attacking, if possessing at least <color=#F74848>3</color> buffs, DMG <color=#F74848>+20%</color>.",
-          "SkillIcon": "Icon_skill_passive_1114",
-          "icon": "Icon_skill_passive_1114",
+          "SkillIcon": "Icon_skill_passive_5150",
+          "icon": "Icon_skill_passive_5150",
           "Status": 1,
           "weight": 90012
         }
@@ -1755,7 +1755,7 @@
     },
     {
       "ID": "10915122",
-      "name": "Wataru's Alter-Blade",
+      "name": "Radiant Dragon Blade",
       "quality": "SSSR",
       "WeaponType1": "Melee",
       "WeaponType2": "Blade",
@@ -1768,17 +1768,17 @@
       "PassiveSkill": [
         {
           "ID": "90007",
-          "name": "Equipped Passive",
+          "name": "Prismatic Flow",
           "SpecificEffects": "When actively attacking with an Alter-Blade, if consumed greater than or equal to <color=#F74848>5</color> AP, CD Turns <color=#F74848>-1</color> for <color=#F74848>1</color> skill on cooldown. Can only trigger <color=#F74848>1</color> time per turn.",
-          "SkillIcon": "Icon_skill_passive_1146",
-          "icon": "Icon_skill_passive_1146",
+          "SkillIcon": "Icon_skill_passive_5115",
+          "icon": "Icon_skill_passive_5115",
           "Status": 1,
           "weight": 90007
         },
         {
           "ID": "90008",
-          "name": "Carried Passive",
-          "SpecificEffects": "Enhanced [Savior]: Talent range expands to the entire map. For every <color=#F74848>1</color> buff carried, DMG <color=#F74848>+5%</color>, up to <color=#F74848>30%</color>. When actively attacking, if HP is full, target cannot be guarded or trigger Large Shield [Target Shift].",
+          "name": "Heroic Radiance",
+          "SpecificEffects": "Enhanced <skill mainSkill=101850>[World Savior]</skill>: Talent range expands to the entire map. For every <color=#F74848>1</color> buff carried, DMG <color=#F74848>+5%</color>, up to <color=#F74848>30%</color>. When actively attacking, if HP is full, target cannot be guarded or trigger Large Shield [Target Shift].",
           "SkillIcon": "Icon_skill_talent_9601",
           "icon": "Icon_skill_talent_9601",
           "Status": 1,
@@ -1786,10 +1786,10 @@
         },
         {
           "ID": "90009",
-          "name": "Used Passive",
+          "name": "Heart Of Courage",
           "SpecificEffects": "When in combat, DMG <color=#F74848>+15%</color>. When in combat against a boss, additionally DMG <color=#F74848>+15%</color>.",
-          "SkillIcon": "Icon_skill_passive_1114",
-          "icon": "Icon_skill_passive_1114",
+          "SkillIcon": "Icon_skill_passive_1101",
+          "icon": "Icon_skill_passive_1101",
           "Status": 1,
           "weight": 90009
         }
@@ -2579,7 +2579,7 @@
     },
     {
       "ID": "10315124",
-      "name": "Zoey's Polearm",
+      "name": "Void Severance",
       "quality": "SSSR",
       "WeaponType1": "Melee",
       "WeaponType2": "Rod",
@@ -2592,17 +2592,17 @@
       "PassiveSkill": [
         {
           "ID": "90013",
-          "name": "Equipped Passive",
+          "name": "Mighty Swing",
           "SpecificEffects": "When attacking with a Polearm, DMG <color=#F74848>+15%</color>, Hit Rate <color=#F74848>+10%</color>. This effect doubles during the enemy turn.",
-          "SkillIcon": "Icon_skill_passive_1146",
-          "icon": "Icon_skill_passive_1146",
+          "SkillIcon": "Icon_skill_passive_1181",
+          "icon": "Icon_skill_passive_1181",
           "Status": 1,
           "weight": 90013
         },
         {
           "ID": "90014",
-          "name": "Carried Passive",
-          "SpecificEffects": "Enhanced [Fearless Fangs]: When sortied, gains <color=#F74848>2</color> stacks of [Advantage]. Stacks up to <color=#F74848>3</color> times. At the end of action, for every <color=#F74848>1</color> enemy within a <color=#F74848>6</color> tile range inflicted with [Provocation], gains <color=#F74848>1</color> stack of [Advantage]. When attacking with a Polearm, deals <color=#F74848>35%</color> Splash DMG to another part with the lowest HP percentage. For every <color=#F74848>1</color> enemy inflicted with [Provocation] within a <color=#F74848>6</color> tile range, attack multiplier <color=#F74848>+0.05</color>, up to <color=#F74848>0.2</color>.",
+          "name": "Predator Hunt",
+          "SpecificEffects": "Enhanced <skill mainSkill=601150>[Fearless Hunting Fang]</skill>: When sortied, gains <color=#F74848>2</color> stacks of [Advantage]. Stacks up to <color=#F74848>3</color> times. At the end of action, for every <color=#F74848>1</color> enemy within a <color=#F74848>6</color> tile range inflicted with [Provocation], gains <color=#F74848>1</color> stack of [Advantage]. When attacking with a Polearm, deals <color=#F74848>35%</color> Splash DMG to another part with the lowest HP percentage. For every <color=#F74848>1</color> enemy inflicted with [Provocation] within a <color=#F74848>6</color> tile range, attack multiplier <color=#F74848>+0.05</color>, up to <color=#F74848>0.2</color>.",
           "SkillIcon": "Icon_skill_talent_5155",
           "icon": "Icon_skill_talent_5155",
           "Status": 1,
@@ -2610,10 +2610,10 @@
         },
         {
           "ID": "90015",
-          "name": "Used Passive",
+          "name": "Menace",
           "SpecificEffects": "After attacking, inflicts target with [Hit Rate Down III] and [Dodge Rate Down II], lasting for <color=#F74848>1</color> turn.",
-          "SkillIcon": "Icon_skill_passive_1114",
-          "icon": "Icon_skill_passive_1114",
+          "SkillIcon": "Icon_skill_passive_5187",
+          "icon": "Icon_skill_passive_5187",
           "Status": 1,
           "weight": 90015
         }
@@ -3208,7 +3208,7 @@
     },
     {
       "ID": "30215124",
-      "name": "Audrey's Sniper Rifle",
+      "name": "Conquest",
       "quality": "SSSR",
       "WeaponType1": "Sniper",
       "WeaponType2": "HeavySniper",
@@ -3221,17 +3221,17 @@
       "PassiveSkill": [
         {
           "ID": "90016",
-          "name": "Equipped Passive",
+          "name": "Battle Rhythm",
           "SpecificEffects": "When actively attacking with a Sniper Rifle, if more than <color=#F74848>2</color> Hits, immediately regens <color=#F74848>1</color> AP. Can only trigger <color=#F74848>1</color> time per turn.",
-          "SkillIcon": "Icon_skill_passive_1146",
-          "icon": "Icon_skill_passive_1146",
+          "SkillIcon": "Icon_skill_passive_5208",
+          "icon": "Icon_skill_passive_5208",
           "Status": 1,
           "weight": 90016
         },
         {
           "ID": "90017",
-          "name": "Carried Passive",
-          "SpecificEffects": "Enhanced [Iron-Blooded Commander]: [Ricochet] <color=#F74848>+1</color>. Proportion of [Ricochet] DMG <color=#F74848>+5%</color>. For every enemy targeted by [Ricochet], additionally inflicts <color=#F74848>1</color> stack of [Collapse Mark]. Can stack up to <color=#F74848>10</color> times.",
+          "name": "Boundless Conquest",
+          "SpecificEffects": "Enhanced <skill mainSkill=301350>[Iron-blooded Commander]</skill>: [Ricochet] <color=#F74848>+1</color>. Proportion of [Ricochet] DMG <color=#F74848>+5%</color>. For every enemy targeted by [Ricochet], additionally inflicts <color=#F74848>1</color> stack of <buf ID=900172>[Shatter Mark]</buf>. Can stack up to <color=#F74848>10</color> times.",
           "SkillIcon": "Icon_skill_talent_5157",
           "icon": "Icon_skill_talent_5157",
           "Status": 1,
@@ -3239,10 +3239,10 @@
         },
         {
           "ID": "90018",
-          "name": "Used Passive",
+          "name": "Disciplined Formation",
           "SpecificEffects": "When actively attacking, if there are allies within <color=#F74848>3</color> tiles, Hit Rate and Crit Rate <color=#F74848>+10%</color>.",
-          "SkillIcon": "Icon_skill_passive_1114",
-          "icon": "Icon_skill_passive_1114",
+          "SkillIcon": "Icon_skill_passive_4118",
+          "icon": "Icon_skill_passive_4118",
           "Status": 1,
           "weight": 90018
         }

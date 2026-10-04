@@ -1215,8 +1215,8 @@ Pages.builder = {
       // apply to any pilot) — the 2nd is the signature-pilot-exclusive bonus.
       var passives  = matches ? all.slice(0, 3) : [all[0], all[2]].filter(Boolean);
       return passives.map(function (ps) {
-        var iconSrc = WEAPON_SKILL_BASE + encodeURIComponent(ps.SkillIcon || ps.icon) + '.png';
-        return self._compactModuleCard(iconSrc, w.name + ' — ' + ps.name, '', ps.SpecificEffects || '');
+        var icon = ps.SkillIcon || ps.icon;
+        return self._compactModuleCard(skillIconSrc(icon), w.name + ' — ' + ps.name, '', ps.SpecificEffects || '', skillIconErrorAttr(icon));
       }).join('');
     }).join('') || '<p class="builder-slot-empty">None equipped.</p>';
 
