@@ -1493,6 +1493,10 @@ window.GlossaryData = {
     "7101004": {
       "name": "Hit Rate Down III",
       "effect": "Hit rate -15%."
+    },
+    "guide:tracing-mark": {
+      "name": "Tracing Mark",
+      "effect": "Prevents this unit from entering <buf ID=900033>[Stealth]</buf> and reduces Dodge Rate by <color=#F74848>15%</color>, lasting for <color=#F74848>1</color> turn."
     }
   },
   "skill": {

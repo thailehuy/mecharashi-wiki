@@ -50,6 +50,14 @@ var Glossary = (function () {
       Ap: 0,
       CD: 0,
       effect: 'After use, swaps the weapon equipped in hand with the weapon mounted in the Weapon Backpack, then allows continued action using remaining Movement.\nCan be used up to <color=#F74848>1</color> time per turn.\nCan only be used when both Arms are undestroyed.'
+    },
+    // Guide's [Tracer Coating]
+    '62319': {
+      name: 'Tracer Coating',
+      icon: 'Icon_skill_order_1038',
+      Ap: 0,
+      CD: 3,
+      effect: 'Applies [Tracing Mark] to targets hit by next active attack. Triggers <buf ID=900004>[Re-ATK]</buf> in place after use.'
     }
   };
 
