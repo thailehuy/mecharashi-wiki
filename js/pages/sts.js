@@ -177,6 +177,7 @@ Pages.sts = {
               '<img src="' + imgSrc + '"' + mechIconErrorAttr(m) + ' alt="' + $('<span>').text(m.name).html() + '" loading="lazy" />' +
               '<span class="version-badge">v' + $('<span>').text(m.version).html() + '</span>' +
               '<span class="rank-badge ' + rankClass + '">' + rankLabel + '</span>' +
+              ((m.AlternateSkins || []).length ? SKIN_BADGE_HTML : '') +
             '</div>' +
             '<div class="pilot-info">' +
               '<div class="pilot-name">' + $('<span>').text(m.name).html() + '</div>' +

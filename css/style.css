@@ -680,6 +680,21 @@ a.dispatch-cell:hover .dispatch-cell-name {
   color: #c0c0d0;
 }
 
+.skin-badge {
+  position: absolute;
+  bottom: 6px;
+  right: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.55);
+  color: #e0e0f0;
+  pointer-events: none;
+}
+
 .rank-b {
   background-color: #4a6fa5;
   color: #ffffff;

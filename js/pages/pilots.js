@@ -19,6 +19,13 @@ var SKILL_BASE      = 'https://media.zlongame.com/media/pictures/cn/community/im
 var LOCAL_SKILL_BASE = ASSET_BASE + 'data/unlisted/pilot_skills/';
 var OCCUPATION_BASE  = 'https://media.zlongame.com/media/pictures/cn/community/img/gl/gameInfo/occupation/';
 var WEAPON_IMG_BASE  = 'https://media.zlongame.com/media/pictures/cn/community/img/gl/gameInfo/weapons/';
+// Shirt icon shown on listing cards (pilots and STs) that have alternate skins.
+var SKIN_BADGE_HTML =
+  '<span class="skin-badge" title="Alternate skin available" aria-label="Alternate skin available">' +
+    '<svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true">' +
+      '<path d="M16 3l5 3-2 5-2-1v11H7V10l-2 1-2-5 5-3c.5 1.7 2.1 3 4 3s3.5-1.3 4-3z"/>' +
+    '</svg>' +
+  '</span>';
 
 function skillIconSrc(iconName) {
   return LOCAL_SKILL_BASE + encodeURIComponent(iconName) + '.png';
@@ -191,6 +198,7 @@ Pages.pilots = {
               '<img src="' + imgSrc + '" onerror="this.onerror=null;this.src=\'' + imgFallback + '\';" alt="' + $('<span>').text(p.PilotName).html() + '" loading="lazy" />' +
               '<span class="version-badge">v' + $('<span>').text(p.version).html() + '</span>' +
               '<span class="rank-badge ' + rankClass + '">' + rankLabel + '</span>' +
+              ((p.AlternateSkins || []).length ? SKIN_BADGE_HTML : '') +
             '</div>' +
             '<div class="pilot-info">' +
               '<div class="pilot-info-text">' +
