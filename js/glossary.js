@@ -280,6 +280,13 @@ var Glossary = (function () {
       data.skill[sk.ID] = entry;
     });
 
+    // Some Code abilities have their own ID distinct from the backpack's
+    // skill ID (e.g. Supplier's 62306 grants [Quick Load] as 6230611), so
+    // register any override not already seeded by the loop above.
+    Object.keys(BACKPACK_CODE_SKILLS).forEach(function (id) {
+      if (!data.skill[id]) data.skill[id] = BACKPACK_CODE_SKILLS[id];
+    });
+
     rebuildNameIndex();
 
     var $tip = $('<div id="kw-tooltip" role="tooltip"></div>').appendTo('body');
