@@ -2,6 +2,7 @@ var Pages = window.Pages || {};
 
 var QUALITY_LABEL = { R: 'B-rank', SR: 'A-rank', SSR: 'S-rank' };
 var QUALITY_CLASS  = { R: 'rank-b',  SR: 'rank-a',  SSR: 'rank-s'  };
+var RANK_ORDER     = { R: 1,         SR: 2,         SSR: 3         };
 var QUALITY_BG = {
   SSR: ASSET_BASE + 'data/background/quality-ssr.png',
   SR:  ASSET_BASE + 'data/background/quality-sr.png',
@@ -172,7 +173,8 @@ Pages.pilots = {
       var searchOk = !query || (p.PilotName || '').toLowerCase().indexOf(query) !== -1;
       return rankOk && occOk && verOk && licOk && searchOk;
     }).slice().sort(function (a, b) {
-      return pilotReleaseOrder(b.PilotName) - pilotReleaseOrder(a.PilotName)
+      return (RANK_ORDER[b.quality] || 0) - (RANK_ORDER[a.quality] || 0)
+        || pilotReleaseOrder(b.PilotName) - pilotReleaseOrder(a.PilotName)
         || parseFloat(b.version) - parseFloat(a.version)
         || parseFloat(b.ID) - parseFloat(a.ID);
     });

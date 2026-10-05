@@ -161,7 +161,9 @@ Pages.sts = {
       var searchOk = !query || (m.name || '').toLowerCase().indexOf(query) !== -1;
       return rankOk && typeOk && verOk && searchOk;
     }).slice().sort(function (a, b) {
-      return parseFloat(b.version) - parseFloat(a.version) || parseFloat(b.ID) - parseFloat(a.ID);
+      return (RANK_ORDER[b.quality] || 0) - (RANK_ORDER[a.quality] || 0)
+        || parseFloat(b.version) - parseFloat(a.version)
+        || parseFloat(b.ID) - parseFloat(a.ID);
     });
 
     var cards = filtered.map(function (m) {
