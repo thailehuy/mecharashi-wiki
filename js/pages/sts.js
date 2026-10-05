@@ -112,6 +112,7 @@ Pages.sts = {
         '<div class="filter-group"><span class="filter-label">Rank</span>' + rankButtons + '</div>' +
         '<div class="filter-group"><span class="filter-label">Type</span>' + typeButtons + '</div>' +
         '<div class="filter-group"><span class="filter-label">Version</span>' + verButtons + '</div>' +
+        availabilityLegendHtml() +
       '</div>' +
       '<div class="row g-3" id="mech-grid"></div>'
     );
@@ -180,6 +181,7 @@ Pages.sts = {
               '<span class="version-badge">v' + $('<span>').text(m.version).html() + '</span>' +
               '<span class="rank-badge ' + rankClass + '">' + rankLabel + '</span>' +
               ((m.AlternateSkins || []).length ? SKIN_BADGE_HTML : '') +
+              availabilityBadgeHtml(MECH_AVAILABILITY[m.name], 'avail-badge-card') +
             '</div>' +
             '<div class="pilot-info">' +
               '<div class="pilot-name">' + $('<span>').text(m.name).html() + '</div>' +
@@ -386,7 +388,8 @@ Pages.sts = {
           '</div>' +
         '</div>' +
         '<div class="detail-info-col">' +
-          '<h2 class="detail-name">' + $('<span>').text(m.name).html() + '</h2>' +
+          '<h2 class="detail-name">' + $('<span>').text(m.name).html() +
+            availabilityBadgeHtml(MECH_AVAILABILITY[m.name], 'avail-badge-inline') + '</h2>' +
           '<div class="detail-tags mb-3">' +
             '<span class="tag tag-license">' + $('<span>').text(m.type).html() + '</span>' +
             (m.dispatchGroup ? '<span class="tag tag-dispatch">' + m.dispatchGroup + '</span>' : '') +
@@ -403,6 +406,9 @@ Pages.sts = {
       // ── Below: modules full width
       '<div class="nd-section">' +
         '<div class="section-heading">Modules</div>' +
+        (/^C?L$/.test(MECH_AVAILABILITY[m.name] || '')
+          ? '<div class="cn-warning">Limited STs cannot be made into modules</div>'
+          : '') +
         '<div class="detail-talents">' + moduleCards + '</div>' +
       '</div>' +
       (hiddenCards ? (
