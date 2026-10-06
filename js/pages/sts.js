@@ -112,7 +112,6 @@ Pages.sts = {
         '<div class="filter-group"><span class="filter-label">Rank</span>' + rankButtons + '</div>' +
         '<div class="filter-group"><span class="filter-label">Type</span>' + typeButtons + '</div>' +
         '<div class="filter-group"><span class="filter-label">Version</span>' + verButtons + '</div>' +
-        availabilityLegendHtml() +
       '</div>' +
       '<div class="row g-3" id="mech-grid"></div>'
     );
@@ -181,7 +180,6 @@ Pages.sts = {
               '<span class="version-badge">v' + $('<span>').text(m.version).html() + '</span>' +
               '<span class="rank-badge ' + rankClass + '">' + rankLabel + '</span>' +
               ((m.AlternateSkins || []).length ? SKIN_BADGE_HTML : '') +
-              availabilityBadgeHtml(MECH_AVAILABILITY[m.name], 'avail-badge-card') +
             '</div>' +
             '<div class="pilot-info">' +
               '<div class="pilot-name">' + $('<span>').text(m.name).html() + '</div>' +
@@ -388,12 +386,12 @@ Pages.sts = {
           '</div>' +
         '</div>' +
         '<div class="detail-info-col">' +
-          '<h2 class="detail-name">' + $('<span>').text(m.name).html() +
-            availabilityBadgeHtml(MECH_AVAILABILITY[m.name], 'avail-badge-inline') + '</h2>' +
+          '<h2 class="detail-name">' + $('<span>').text(m.name).html() + '</h2>' +
           '<div class="detail-tags mb-3">' +
             '<span class="tag tag-license">' + $('<span>').text(m.type).html() + '</span>' +
             (m.dispatchGroup ? '<span class="tag tag-dispatch">' + m.dispatchGroup + '</span>' : '') +
             (m.dispatchVersion ? '<span class="tag tag-dispatch-ver">Dispatch v' + m.dispatchVersion + '</span>' : '') +
+            availabilityTagHtml(MECH_AVAILABILITY[m.name]) +
           '</div>' +
           '<div class="mech-stats">' +
             '<div class="mech-stat mech-stat-fire"><span class="mech-stat-label">Firepower</span><span class="mech-stat-value">' + (m.manjiFirepower || m.fire) + '</span></div>' +

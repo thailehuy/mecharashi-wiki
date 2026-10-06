@@ -30,9 +30,9 @@ var SKIN_BADGE_HTML =
 
 // Availability tags (shared with sts.js): collab / limited / collab-limited units.
 var AVAILABILITY_INFO = {
-  C:  { cls: 'avail-c',  desc: 'Collab unit' },
-  L:  { cls: 'avail-l',  desc: 'Limited unit (will be rerun, added to the normal pool after 1 year)' },
-  CL: { cls: 'avail-cl', desc: 'Collab limited unit (will not be added to the normal pool nor rerun again)' },
+  C:  { cls: 'avail-c',  label: 'Collab',         desc: 'Collab unit' },
+  L:  { cls: 'avail-l',  label: 'Limited',        desc: 'Limited unit (will be rerun, added to the normal pool after 1 year)' },
+  CL: { cls: 'avail-cl', label: 'Collab Limited', desc: 'Collab limited unit (will not be added to the normal pool nor rerun again)' },
 };
 var PILOT_AVAILABILITY = {
   'Asuka': 'CL', 'Shinji': 'CL', 'Rei': 'CL',
@@ -43,22 +43,16 @@ var MECH_AVAILABILITY = {
   'REV-00': 'CL', 'REV-01': 'CL', 'REV-02': 'CL',
   'Erinys': 'L', 'Demiurge': 'L', 'Asteria': 'L',
   'Shadowrabbit': 'C', 'Blue Anonymous Bird': 'C', 'Medusa MKII': 'C',
+  'Eye Of Faith': 'C', 'Pascal': 'C',
 };
 
-// extraCls: 'avail-badge-card' (absolute, on listing avatar) or 'avail-badge-inline' (next to a name).
-function availabilityBadgeHtml(tag, extraCls) {
+// Full-name tag for detail pages; the description pops up on hover/focus (tap on touch).
+function availabilityTagHtml(tag) {
   var info = AVAILABILITY_INFO[tag];
   if (!info) return '';
-  return '<span class="avail-badge ' + info.cls + ' ' + extraCls + '" title="' + tag + ' = ' + info.desc + '">' + tag + '</span>';
-}
-
-function availabilityLegendHtml() {
-  return '<div class="avail-legend">' + ['C', 'L', 'CL'].map(function (tag) {
-    return '<span class="avail-legend-item">' +
-      '<span class="avail-badge ' + AVAILABILITY_INFO[tag].cls + '">' + tag + '</span>' +
-      AVAILABILITY_INFO[tag].desc +
-    '</span>';
-  }).join('') + '</div>';
+  return '<span class="tag avail-tag ' + info.cls + '" tabindex="0">' + info.label +
+    '<span class="avail-tooltip" role="tooltip">' + info.desc + '</span>' +
+  '</span>';
 }
 
 function skillIconSrc(iconName) {
@@ -149,7 +143,6 @@ Pages.pilots = {
         '<div class="filter-row">' +
           '<div class="filter-group"><span class="filter-label">Version</span>' + verButtons + '</div>' +
         '</div>' +
-        availabilityLegendHtml() +
       '</div>' +
       '<div class="row g-3" id="pilot-grid"></div>'
     );
@@ -235,7 +228,6 @@ Pages.pilots = {
               '<span class="version-badge">v' + $('<span>').text(p.version).html() + '</span>' +
               '<span class="rank-badge ' + rankClass + '">' + rankLabel + '</span>' +
               ((p.AlternateSkins || []).length ? SKIN_BADGE_HTML : '') +
-              availabilityBadgeHtml(PILOT_AVAILABILITY[p.PilotName], 'avail-badge-card') +
             '</div>' +
             '<div class="pilot-info">' +
               '<div class="pilot-info-text">' +
@@ -387,14 +379,14 @@ Pages.pilots = {
       '<div class="detail-name-row">' +
         '<img class="detail-name-avatar" src="' + thumbSrc + '" onerror="this.onerror=null;this.src=\'' + thumbFallback + '\';" alt="' + $('<span>').text(p.PilotName).html() + '" style="background-image:url(\'' + bgSrc + '\')" />' +
         '<div>' +
-          '<h2 class="detail-name">' + occIconHtml + $('<span>').text(p.PilotName).html() +
-            availabilityBadgeHtml(PILOT_AVAILABILITY[p.PilotName], 'avail-badge-inline') + '</h2>' +
+          '<h2 class="detail-name">' + occIconHtml + $('<span>').text(p.PilotName).html() + '</h2>' +
           '<p class="detail-realname">' + $('<span>').text(p.RealName).html() + '</p>' +
           '<div class="detail-tags">' +
             '<span class="tag">' + $('<span>').text(p.Gender).html() + '</span>' +
             '<span class="tag">' + $('<span>').text(p.Occupation).html() + '</span>' +
             (p.AllowedMechaDriveList_DriveAllowedList ? '<span class="tag tag-license">' + $('<span>').text(p.AllowedMechaDriveList_DriveAllowedList + ' License').html() + '</span>' : '') +
             '<span class="version-badge-inline">v' + $('<span>').text(p.version).html() + '</span>' +
+            availabilityTagHtml(PILOT_AVAILABILITY[p.PilotName]) +
             '<span class="rank-badge ' + rankClass + '">' + rankLabel + '</span>' +
           '</div>' +
         '</div>' +
