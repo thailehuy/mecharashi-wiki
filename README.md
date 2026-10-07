@@ -2,7 +2,22 @@
 
 A static fan wiki for **Mecharashi**, built with Bootstrap 5 and jQuery. Hosted on GitHub Pages.
 
-Images and icons live in a separate repo, [mecharashi-wiki-assets](https://github.com/thailehuy/mecharashi-wiki-assets), served from `https://assets.mecharashi-wiki.cc/` (`ASSET_BASE` in `index.html`), so the frequent text/translation deploys here stay small. Its paths mirror the old layout here, e.g. `data/unlisted/pilot_images_half/<icon>.png`.
+Images and icons live in a separate repo, [mecharashi-wiki-assets](https://github.com/thailehuy/mecharashi-wiki-assets), served from `https://assets.mecharashi-wiki.cc/` (`ASSET_BASE` in `index.html`), so the frequent text/translation deploys here stay small. Its paths mirror the old layout here; the page code prepends `ASSET_BASE` to them. Where we have no copy of an image, the pages and `build_pages.py` fall back to the game's CDN (`media.zlongame.com`).
+
+| Assets path | Contents |
+|---|---|
+| `data/unlisted/pilot_images_half/` | Pilot half-body portraits (`<icon>.png`) |
+| `data/unlisted/pilot_images_raw/` | Full pilot artwork |
+| `data/unlisted/pilot_images_other/` | Extra portraits, e.g. `Pilot_13038A_half.png` (the home page's link-preview image) |
+| `data/unlisted/pilot_skills/` | Pilot skill/talent icons |
+| `data/unlisted/mechs/{Icon,Raw,Skins}/{Light,Medium,Heavy}/` | ST icons, full artwork and skins, by weight class |
+| `data/unlisted/mech_modules/` | Module icons (color subfolders by module category) |
+| `data/weapons/icons/<type>/` | Signature weapon icons, by weapon type (`AB`, `MG`, `SR`, …) |
+| `data/backpacks/icons/`, `data/backpacks/materials/` | Backpack and crafting-material icons |
+| `data/accessories/icons/` | Accessory icons |
+| `data/background/` | Rarity frame backgrounds (`quality-{r,sr,ssr,sssr}.png`) |
+
+Add new images to the matching folder in that repo; pushing its `main` deploys them.
 
 > Fan project — not affiliated with Tentree Games / BlackJack Studio, non-commercial.
 
@@ -172,7 +187,7 @@ Facebook/Discord don't run JavaScript and ignore the `#...` part of a URL, so th
 | Page | Preview |
 |---|---|
 | Pilot / ST / Weapon / Backpack / Module | Item icon (`twitter:card=summary`) + two-line description, e.g. `v3.6 S-rank Tactician (Medium License)` then the basic talent |
-| Misc. pages (Dispatch, EX Skills, Shops, ST/Pilot Stats, Builder) | Home page portrait as a small icon + summary from `MISC_DESCRIPTIONS` |
+| Misc. pages (Dispatch, EX Skills, Shops, ST/Pilot Stats, Builder) | Home page image (`Pilot_13038A_half.png`, read from `index.html`'s `og:image`) as a small icon + summary from `MISC_DESCRIPTIONS` |
 | Other list pages and the home page | `index.html`'s own generic preview, retitled |
 
 Previews can't be seen by opening the page in a browser. To check them:
@@ -180,7 +195,7 @@ Previews can't be seen by opening the page in a browser. To check them:
 - **Locally:** inspect the generated HTML, e.g. `head -40 pilots/ada/index.html`, and look at the `og:` and `twitter:` lines.
 - **After deploy:** paste the link into [Facebook's Sharing Debugger](https://developers.facebook.com/tools/debug/) (use "Scrape Again" to refresh its cache), or into a Discord message. Discord also caches previews for a while.
 
-The `og:url`/`og:image` URLs point at `https://mecharashi-wiki.cc/` (`DEFAULT_SITE_URL` in `build_pages.py`); pass a different root as the first argument to override it.
+The `og:url` URLs point at `https://mecharashi-wiki.cc/` (`DEFAULT_SITE_URL` in `build_pages.py`); pass a different root as the first argument to override it. `og:image` URLs are absolute already: our copy on `https://assets.mecharashi-wiki.cc/` (`ASSET_URL` in `build_pages.py`, which must match `ASSET_BASE` in `index.html`) when the assets repo has it, otherwise the game CDN.
 
 ## Translation file schema
 
