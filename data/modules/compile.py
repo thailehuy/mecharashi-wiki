@@ -356,7 +356,7 @@ MANUAL_MODULE_LEVELS = {
     # Frostedge Amplifier (Nivequus): DMG% and straight-line DMG%.
     '9027': {
         'name': 'Frostedge Amplifier',
-        'icon': 'Icon_skill_passive_5238',
+        'icon': 'Icon_skill_passive_1101',
         'category': 'GeneralSuit',
         'maxLevel': 4,
         'tags': [0, 1],
@@ -366,7 +366,7 @@ MANUAL_MODULE_LEVELS = {
     # only unlocks at max level.
     '9037': {
         'name': 'First Strike Module',
-        'icon': 'Icon_entry_10001',
+        'icon': 'Icon_entry_10117',
         'category': 'GeneralSuit',
         'maxLevel': 8,
         'bonusAtMax': True,
