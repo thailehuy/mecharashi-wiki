@@ -135,7 +135,7 @@ Checklist for whoever (or whichever agent) turns this into the JSON file:
 ### Module 3
 - Name: First Strike Module
 - Level: 8/8
-- Effect text: If 2 or less allies have acted, DMG Dealt increases by 4/6/8/10/14/16/18/24%.\nWhen actively attacking with two Melee weapons, skill multiplier increases by +0.1.<!-- numbers must be wrapped as <color=#F74848>NUMBER</color>, same convention as pilot skill text, record the different level effect based on the numbers split -->
+- Effect text: If 2 or less allies have acted, DMG Dealt increases by 4/6/8/10/14/16/18/24%.\nWhen attacking with two Melee weapons, skill multiplier increases by +0.1.<!-- numbers must be wrapped as <color=#F74848>NUMBER</color>, same convention as pilot skill text, record the different level effect based on the numbers split -->
 - Icon name: Icon_entry_10001
 
 ### Glossary buf 1

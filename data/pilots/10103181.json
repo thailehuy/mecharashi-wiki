@@ -360,7 +360,7 @@
                 "PassiveSkill": {
                   "ID": "181570",
                   "name": "Ice Blossom Blade 1",
-                  "SpecificEffects": "When triggering <buf ID=181900>[Opening]</buf>, gains <color=#F74848>1</color> AP and <color=#F74848>1</color> stack of <buf ID=181901>[Fighting Spirit]</buf>.",
+                  "SpecificEffects": "When triggering <buf ID=181900>[Opening]</buf>, gains <color=#F74848>1</color> AP and <color=#F74848>1</color> stack of <buf ID=181901>[Fighting Spirit]</buf>. This effect can trigger <color=#F74848>1</color> time per turn.",
                   "SkillIcon": "Icon_skill_passive_5330",
                   "icon": "Icon_skill_passive_5330",
                   "Status": 1,
@@ -421,7 +421,7 @@
                 "PassiveSkill": {
                   "ID": "181571",
                   "name": "Ice Blossom Blade 2",
-                  "SpecificEffects": "When triggering <buf ID=181900>[Opening]</buf> on a Boss unit, <buf ID=181900>[Opening]</buf> is regenerated after combat. This effect can trigger <color=#F74848>1</color> time per turn. DMG Dealt increases by <color=#F74848>25%</color> against Boss units.",
+                  "SpecificEffects": "When triggering <buf ID=181900>[Opening]</buf> on a Boss unit, <buf ID=181900>[Opening]</buf> is regenerated after combat. This effect can trigger <color=#F74848>1</color> time per turn per Boss. DMG Dealt increases by <color=#F74848>25%</color> against Boss units.",
                   "SkillIcon": "Icon_skill_passive_5330",
                   "icon": "Icon_skill_passive_5330",
                   "Status": 1,
@@ -461,7 +461,7 @@
                 "PassiveSkill": {
                   "ID": "181573",
                   "name": "Ice Blossom Blade 4",
-                  "SpecificEffects": "Final DMG Dealt increases by <color=#F74848>25%</color>. This effect decreases by <color=#F74848>4%</color> after each ally's action, and resets at the start of turn.",
+                  "SpecificEffects": "Final DMG Dealt increases by <color=#F74848>25%</color>. This effect decreases by <color=#F74848>4%</color> after each ally's action, to a minimum of <color=#F74848>5%</color>, and resets at the start of turn.",
                   "SkillIcon": "Icon_skill_passive_5330",
                   "icon": "Icon_skill_passive_5330",
                   "Status": 1,
@@ -679,7 +679,7 @@
           "UnitName": "Crystal Neuron",
           "UnitType": "1",
           "ActivateUnitConsumption": "2:1:10801007:5/2:1:10803007:5/2:1:10801006:8/2:1:10803006:8/",
-          "describe": "Neural Drive unlocks the γ partition\n\nAt computing power <color=#F74848>1</color>:\n· When triggering [Opening], gains <color=#F74848>1</color> AP and <color=#F74848>1</color> stack of [Fighting Spirit].\nAt computing power <color=#F74848>4</color>:\n· AP Cap <color=#F74848>+1</color>.\nAt computing power <color=#F74848>7</color>:\n· When destroying a target, additionally restores <color=#F74848>1</color> AP after combat. Can trigger up to <color=#F74848>2</color> times per turn.\nAt computing power <color=#F74848>10</color>:\n· When triggering [Opening] on a Boss unit, [Opening] is regenerated after combat. This effect can trigger <color=#F74848>1</color> time per turn. DMG Dealt increases by <color=#F74848>25%</color> against Boss units.\nAt computing power <color=#F74848>13</color>:\n· After [Opening] is triggered, gains <color=#F74848>1</color> AP and triggers [Re-Act]. This effect can trigger <color=#F74848>1</color> time per turn.\nAt computing power <color=#F74848>16</color>:\n· Final DMG Dealt increases by <color=#F74848>25%</color>. This effect decreases by <color=#F74848>4%</color> after each ally's action, and resets at the start of turn.\n",
+          "describe": "Neural Drive unlocks the γ partition\n\nAt computing power <color=#F74848>1</color>:\n· When triggering [Opening], gains <color=#F74848>1</color> AP and <color=#F74848>1</color> stack of [Fighting Spirit]. This effect can trigger <color=#F74848>1</color> time per turn.\nAt computing power <color=#F74848>4</color>:\n· AP Cap <color=#F74848>+1</color>.\nAt computing power <color=#F74848>7</color>:\n· When destroying a target, additionally restores <color=#F74848>1</color> AP after combat. Can trigger up to <color=#F74848>2</color> times per turn.\nAt computing power <color=#F74848>10</color>:\n· When triggering [Opening] on a Boss unit, [Opening] is regenerated after combat. This effect can trigger <color=#F74848>1</color> time per turn per Boss. DMG Dealt increases by <color=#F74848>25%</color> against Boss units.\nAt computing power <color=#F74848>13</color>:\n· After [Opening] is triggered, gains <color=#F74848>1</color> AP and triggers [Re-Act]. This effect can trigger <color=#F74848>1</color> time per turn.\nAt computing power <color=#F74848>16</color>:\n· Final DMG Dealt increases by <color=#F74848>25%</color>. This effect decreases by <color=#F74848>4%</color> after each ally's action, to a minimum of <color=#F74848>5%</color>, and resets at the start of turn.\n",
           "AttributeBonus": "PilotGammaChipBandwidthAdd:4",
           "icon": "Icon_zoneskill_0005",
           "Status": 1,
@@ -729,7 +729,7 @@
           "skill": {
             "ID": "181502",
             "name": "Soaring Swan",
-            "describe": "Dashes <color=#F74848>3</color> tiles forward in a selected direction with both Alter-Blades, dealing <color=#F74848>1.5</color>x DMG to all targets hit. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking. Inflicts <buf ID=181900>[Opening]</buf> to all targets hit.",
+            "describe": "Dashes <color=#F74848>3</color> tiles forward in a selected direction with both Alter-Blades, dealing <color=#F74848>1.5</color>x DMG to all targets hit. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking. Can trigger <buf ID=181900>[Opening]</buf> on all targets hit from the correct direction.",
             "type": "SpecialAssault",
             "Ap": "4",
             "matchingWeaponType": "AB",
