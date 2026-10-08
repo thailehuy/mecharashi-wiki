@@ -990,5 +990,45 @@
     "pilot": "Rosa: Judgement",
     "version": "3.3",
     "ac": 19
+  },
+  "40215123": {
+    "name": "Hardaway's Rocket Launcher",
+    "passiveSkills": {
+      "90022": {
+        "name": "Equipped Passive",
+        "SpecificEffects": "When actively attacking targets with debuffs with a Rocket Launcher, Hit Rate and Crit Rate <color=#F74848>+20%</color>."
+      },
+      "90023": {
+        "name": "Carried Passive",
+        "SpecificEffects": "Enhanced <skill mainSkill=401250>[Complete Calculation]</skill>: At the start of the turn, inflicts all enemy units on the battlefield with <color=#F74848>1</color> stack of <buf ID=4012502>[Structural Damage]</buf>. This effect doubles against bosses. When attacking with a Rocket Launcher, for every <color=#F74848>1</color> stack of <buf ID=4012502>[Structural Damage]</buf> the target possesses, Skill Multiplier <color=#F74848>+0.01</color>, up to <color=#F74848>+0.12</color>. After the enemy unit is initiated against in combat, can ignore distance and perform <buf ID=900031>[Extra Strike]</buf>, dealing <color=#F74848>0.1</color> AoE DMG to all enemy units in a <color=#F74848>3x3</color> tile range, and inflicts hit targets with <color=#F74848>1</color> stack of <buf ID=4012502>[Structural Damage]</buf>. Can trigger up to <color=#F74848>3</color> times per turn."
+      },
+      "90024": {
+        "name": "Used Passive",
+        "SpecificEffects": "When HP is full, Rocket Launcher DMG <color=#F74848>+20%</color>."
+      }
+    },
+    "pilot": "Hardaway",
+    "ac": 21,
+    "version": "3.7"
+  },
+  "10815123": {
+    "name": "Maat's Chainsaw",
+    "passiveSkills": {
+      "90025": {
+        "name": "Equipped Passive",
+        "SpecificEffects": "When actively attacking with a Chainsaw, for every <color=#F74848>1</color> enemy unit within a <color=#F74848>2</color> tile radius, Hit Rate and DMG <color=#F74848>+5%</color>, up to <color=#F74848>20%</color>."
+      },
+      "90026": {
+        "name": "Carried Passive",
+        "SpecificEffects": "Enhanced <skill mainSkill=101950>[Corrupting Shadow]</skill>: When moving, ignores enemy unit obstruction. When activating <skill activeSkill=1019512>[Corrupting Shadow]</skill>, if the target already has Armor Down, effect increases by <color=#F74848>1</color> level, up to <buf ID=7101703>[Armor Down III]</buf>. For every <color=#F74848>1</color> enemy unit with <buf ID=5009234>[Vengeful Edge]</buf> on the battlefield, Chainsaw attack multiplier <color=#F74848>+0.06</color>, up to <color=#F74848>+0.24</color>."
+      },
+      "90027": {
+        "name": "Used Passive",
+        "SpecificEffects": "When actively attacking enemies with damaged parts, DMG and Crit Rate <color=#F74848>+15%</color>."
+      }
+    },
+    "pilot": "Maat",
+    "ac": 21,
+    "version": "3.7"
   }
 }

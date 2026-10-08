@@ -3673,5 +3673,125 @@
       "switch": null,
       "info": 0
     }
+  },
+  {
+    "ID": "40215123",
+    "name": "Hardaway's Rocket Launcher",
+    "quality": "SSSR",
+    "WeaponType1": "Heavy",
+    "WeaponType2": "Rocket",
+    "type": "Rocket",
+    "icon": "Icon_weapon_40200501",
+    "detail": {
+      "data": {
+        "data": [
+          {
+            "ID": "40215123",
+            "name": "Hardaway's Rocket Launcher",
+            "quality": "SSSR",
+            "WeaponType1": "Heavy",
+            "WeaponType2": "Rocket",
+            "type": "Rocket",
+            "icon": "Icon_weapon_40200501",
+            "PassiveSkill": [
+              {
+                "ID": "90022",
+                "name": "Equipped Passive",
+                "SpecificEffects": "",
+                "SkillIcon": "Icon_skill_passive_4127",
+                "icon": "Icon_skill_passive_4127",
+                "Status": 1,
+                "weight": 90022
+              },
+              {
+                "ID": "90023",
+                "name": "Carried Passive",
+                "SpecificEffects": "",
+                "SkillIcon": "Icon_skill_passive_5331",
+                "icon": "Icon_skill_passive_5331",
+                "Status": 1,
+                "weight": 90023
+              },
+              {
+                "ID": "90024",
+                "name": "Used Passive",
+                "SpecificEffects": "",
+                "SkillIcon": "Icon_skill_passive_1135",
+                "icon": "Icon_skill_passive_1135",
+                "Status": 1,
+                "weight": 90024
+              }
+            ],
+            "grade": "70",
+            "LimitedModelOfWeapon": "Light/Medium/Heavy",
+            "RestrictionsPositionOfWeapon": "Shoulder",
+            "range": "3-6"
+          }
+        ]
+      },
+      "status": 1,
+      "switch": null,
+      "info": 0
+    }
+  },
+  {
+    "ID": "10815123",
+    "name": "Maat's Chainsaw",
+    "quality": "SSSR",
+    "WeaponType1": "Melee",
+    "WeaponType2": "Saw",
+    "type": "Saw",
+    "icon": "Icon_weapon_50100602",
+    "detail": {
+      "data": {
+        "data": [
+          {
+            "ID": "10815123",
+            "name": "Maat's Chainsaw",
+            "quality": "SSSR",
+            "WeaponType1": "Melee",
+            "WeaponType2": "Saw",
+            "type": "Saw",
+            "icon": "Icon_weapon_50100602",
+            "PassiveSkill": [
+              {
+                "ID": "90025",
+                "name": "Equipped Passive",
+                "SpecificEffects": "",
+                "SkillIcon": "Icon_skill_passive_1103",
+                "icon": "Icon_skill_passive_1103",
+                "Status": 1,
+                "weight": 90025
+              },
+              {
+                "ID": "90026",
+                "name": "Carried Passive",
+                "SpecificEffects": "",
+                "SkillIcon": "Icon_skill_passive_5332",
+                "icon": "Icon_skill_passive_5332",
+                "Status": 1,
+                "weight": 90026
+              },
+              {
+                "ID": "90027",
+                "name": "Used Passive",
+                "SpecificEffects": "",
+                "SkillIcon": "Icon_skill_passive_1122",
+                "icon": "Icon_skill_passive_1122",
+                "Status": 1,
+                "weight": 90027
+              }
+            ],
+            "grade": "70",
+            "LimitedModelOfWeapon": "Light/Medium/Heavy",
+            "RestrictionsPositionOfWeapon": "DoubleHand",
+            "range": "1（可斜向）"
+          }
+        ]
+      },
+      "status": 1,
+      "switch": null,
+      "info": 0
+    }
   }
 ]

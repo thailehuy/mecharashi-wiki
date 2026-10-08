@@ -1505,6 +1505,10 @@ window.GlossaryData = {
     "181901": {
       "name": "Fighting Spirit",
       "effect": "DMG Dealt increases by <color=#F74848>4%</color>, stacking up to <color=#F74848>6</color> times. Can be consumed to enhance [Sonya]'s skills."
+    },
+    "7101703": {
+      "name": "Armor Down III",
+      "effect": "Armor -65%."
     }
   },
   "skill": {
@@ -2206,6 +2210,13 @@ window.GlossaryData = {
       "CD": "1",
       "icon": "Icon_skill_order_1171",
       "effect": "[Sylar] uses <skill ID=183506>[Petal Storm]</skill> at the selected tile, with skill multiplier reduced by <color=#F74848>-0.4</color>x. This attack does not consume AP or Rail Gun ammo and is treated as an active attack by [Sylar]. Can continue to act with remaining movement."
+    },
+    "608011": {
+      "name": "High Altitude Detection",
+      "Ap": "0",
+      "CD": "3",
+      "icon": "Icon_skill_order_5123",
+      "effect": "Disperses Arashi Fog in a <color=#F74848>3x3</color> area, lasting for <color=#F74848>1</color> turn. Then triggers <buf ID=900004>[Re-ATK]</buf> in place."
     }
   },
   "terrain": {

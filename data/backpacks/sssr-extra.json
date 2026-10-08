@@ -83,5 +83,47 @@
       "icon": "Icon_skill_passive_1153",
       "SpecificEffects": "When actively attacking, if having moved at least <color=#F74848>5</color> tiles, gains <buf ID=1008062>[Absolute Dodge]</buf>. Removes after triggering. Can trigger again after an interval of <color=#F74848>2</color> turns.\nST Movement <color=#F74848>+1</color>.\nWhen in combat, enemy Hit Rate <color=#F74848>-10%</color>.\nST Body HP <color=#F74848>+10%</color> and DMG <color=#F74848>+5%</color>."
     }
+  },
+  {
+    "ID": "60902426",
+    "name": "Ammo Crate · First Strike",
+    "quality": "SSSR",
+    "weight": "150",
+    "BackpackMainType": "Ammo",
+    "AssemblableAirmenType": "Medium",
+    "icon": "Icon_backpack_61100101",
+    "version": "3.7",
+    "ac": 21,
+    "predecessor": {
+      "base": "60900104",
+      "modifier": "60600404"
+    },
+    "skill": {
+      "ID": "",
+      "name": "Ammo Crate Drive · First Strike",
+      "icon": "Icon_skill_passive_5163",
+      "SpecificEffects": "Tactical Weapon Magazine Capacity <color=#F74848>+3</color>. Reload Cooldown <color=#F74848>+1</color> Turn.\nWhen actively attacking for the first time each turn, DMG <color=#F74848>+7.5%</color> and Crit Rate <color=#F74848>+5%</color>.\nST Body HP <color=#F74848>+10%</color> and DMG <color=#F74848>+5%</color>."
+    }
+  },
+  {
+    "ID": "60801106",
+    "name": "Mini Radar · Attack",
+    "quality": "SSSR",
+    "weight": "150",
+    "BackpackMainType": "Radar",
+    "AssemblableAirmenType": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60800201",
+    "version": "3.7",
+    "ac": 21,
+    "predecessor": {
+      "base": "60800104",
+      "modifier": "60500104"
+    },
+    "skill": {
+      "ID": "",
+      "name": "Mini Radar Drive · Attack",
+      "icon": "Icon_skill_passive_5103",
+      "SpecificEffects": "View Distance <color=#F74848>+1</color> in Arashi Fog Stages. Can use Code <skill ID=608011>[High Altitude Detection]</skill>. Enables the ST's adjacent <color=#F74848>2</color>-tile area to become a valid attack zone for ally Missile Launcher and Rocket Launcher attacks.\nWhen in combat, enemy DMG Taken <color=#F74848>+10%</color>.\nST Body HP <color=#F74848>+10%</color> and DMG <color=#F74848>+5%</color>."
+    }
   }
 ]
