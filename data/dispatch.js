@@ -81,7 +81,7 @@ window.DispatchData = {
       "cnPatch": "3.2",
       "Arsenal": "Benxiao",
       "InnovativE": "Martyr",
-      "GeekX": "Monarch",
+      "GeekX": "Regalia",
       "Sparkplug": "Erinys"
     },
     {
@@ -94,7 +94,7 @@ window.DispatchData = {
     {
       "cnPatch": "3.6",
       "Arsenal": "Avalanche",
-      "InnovativE": "Prism",
+      "InnovativE": "Prisma",
       "GeekX": "Nephthys",
       "Sparkplug": "Nidhogg"
     }

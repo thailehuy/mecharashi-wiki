@@ -64,29 +64,29 @@ pilot from this template (10103182, Kaidan The Invincible):
 
 ## Basics
 
-- Pilot ID: 10103184
-- Pilot Name: Cosette
-- Real Name: Cosette Cecil
+- Pilot ID: 10103181
+- Pilot Name: Sonya
+- Real Name: Sonya Volokova
 - Gender: Female
 - Profession: Striker
 - Occupation: Fighter <!-- Use the correct profession icon -->
 - Quality: SSR
-- License: Medium
-- Game version introduced: 3.6
+- License: Light
+- Game version introduced: 3.7
 
 ## Images
 <!-- portrait is prefixed with data/unlisted/pilot_images_half/ -->
 <!-- avatar is prefixed with data/unlisted/pilot_images_raw/ -->
-- Portrait (half-body) file: Pilot_11021A_half.png
-- Avatar (full portrait) file: Pilot_11021A_raw.png
+- Portrait (half-body) file: Pilot_10103181A_half.png
+- Avatar (full portrait) file: Pilot_10103181A_raw.png
 
 ## Attributes
-- Ranged: 1799
-- Tactical: 1956
-- Assault: 1337
-- Melee: 5281
-- Mechanic: 2103
-- Defense: 4062
+- Ranged: 0
+- Tactical: 0
+- Assault: 0
+- Melee: 0
+- Mechanic: 0
+- Defense: 0
 - Initial Base Starting AP: 5
 - Max Base Starting AP: 5
 - AP Recovery: 2
@@ -95,13 +95,13 @@ pilot from this template (10103182, Kaidan The Invincible):
 <!-- all talents, skills and neural icons are prefixed with data/unlisted/pilot_skills/ -->
 
 ### Basic Talent (Talent0_2Ability)
-- Name: Feather Of Tomorrow
-- Effect text: When equipped with Chainsaw, gains 1 stack of [Edge Momentum] for each 1 tile moved, up to 5 stacks per action. Upon consuming [Edge Momentum] to trigger active skill [Breakthrough], gains [Razor Feather] and triggers [Re-ATK], allowing movement of 2 tiles before attacking. This effect can trigger 1 time per turn.
-- Icon name: Icon_skill_talent_1126
+- Name: Frost Gaze Flame Heart
+- Effect text: At the start of action, inflicts [Opening] in a random direction to all enemies not carrying [Opening], and inflicts [Opening] in the direction facing this unit to the closest enemy, lasting for 1 turn. Gains 1 stack of [Fighting Spirit] for each 1 stack of [Opening] inflicted.
+- Icon name: Icon_skill_talent_5172
 
 ### Ascended Talent (Talent3_5Ability)
 <!-- Ascended talent has same name and icon as basic one, with a line split -->
-- Effect text: When equipped with Chainsaw, gains 1 stack of [Edge Momentum] for each 1 tile moved, up to 5 stacks per action. Upon consuming [Edge Momentum] to trigger active skill [Breakthrough], gains [Razor Feather] and triggers [Re-ATK], allowing movement of 2 tiles before attacking. This effect can trigger 1 time per turn.\nAt the start of battle, gains 5 stack of [Edge Momentum] and increases maximum stack limit by +5. For each 50 surplus power, DMG Dealt increases by +1%, up to 20%.
+- Effect text: At the start of action, inflicts [Opening] in a random direction to all enemies not carrying [Opening], and inflicts [Opening] in the direction facing this unit to the closest enemy, lasting for 1 turn. Gains 1 stack of [Fighting Spirit] for each 1 stack of [Opening] inflicted.\nGains 4 stacks of [Fighting Spirit] at the start of battle. Skill multiplier increases by +0.1 when attacking [Opening].
 
 ## Skills
 
@@ -111,74 +111,75 @@ pilot from this template (10103182, Kaidan The Invincible):
 - Mobile Warfare 1: same as other fighters
 
 ### Skill 1
-- Name: Whirling Sweep
-- Type: SpecialAssault <!-- EquipmentSkill / Order / passive -->
-- AP cost: 2
+- Name: Glacial Gleam
+- Type: EquipmentSkill <!-- EquipmentSkill / Order / passive -->
+- AP cost: 3
 - Cooldown:             <!-- if any -->
-- Weapon type: CS <!-- if EquipmentSkill, e.g. SG / AR / SR / MG / Melee -->
-- Effect text: Uses Chainsaw to attack all enemies within 3-tile horizontal area in front, dealing 0.8x AoE DMG. When [Edge Momentum] is at 8 stacks or more, this skill multiplier increases by +0.1. Can consume 5 stacks of [Edge Momentum] to increase Critical Hit DMG of this attack by +15% and expand the area to half circle in front, prioritizing the part with lowest HP.
-- Icon name: Icon_skill_order_1102
+- Weapon type: AB <!-- if EquipmentSkill, e.g. SG / AR / SR / MG / Melee -->
+- Effect text: Uses Alter-Blades to attack a target, dealing 2x0.6 DMG, prioritizing the body part. Can consume up to 2 stacks of [Fighting Spirit] to increase the skill multiplier by +0.1 per stack consumed.
+- Icon name: Icon_skill_main_1161
 
 ### Skill 2
-- Name: Azure Blitz
+- Name: Soaring Swan
 - Type: SpecialAssault
-- AP cost: 3
+- AP cost: 4
 - Cooldown:
-- Weapon type: CS
-- Effect text: Selects a tile in a straight direction, then selects an end tile in 3 possible directions, covering up to 4 tiles. Uses Chainsaw to attack all enemies along the path, dealing 1.2x AoE DMG. This attack prioritizes the part with lowest HP. When [Edge Momentum] is at 8 stacks or more, this skill multiplier increases by +0.2. Can consume 5 stacks of [Edge Momentum] to increase the number of selectable tiles by +2 and change the priority to the part with highest HP.
-- Icon name: Icon_skill_order_1167
+- Weapon type: AB
+- Effect text: Dashes 3 tiles forward in a selected direction with both Alter-Blades, dealing 1.5x DMG to all targets hit. Enters [Aiming] Mode before attacking. Inflicts [Opening] to all targets hit.
+- Icon name: Icon_skill_order_1174
 
 ### Skill 3
-- Name: Raging Tide
-- Type: Order
-- AP cost: 1
-- Cooldown: 2
-- Weapon type: CS
-- Effect text: Gains 3 stacks of [Edge Momentum] as well as [Phantom] for 2 turns. Movement increases by +1 for this turn. Can continue to act with full movement. When [Edge Momentum] is at 8 stacks or more, additionally gains 2 stacks of [Edge Momentum] and +1 extra movement for the current turn.
-- Icon name: Icon_skill_order_5174
+- Name: Nightfall
+- Type: SpecialAssault
+- AP cost: 3
+- Cooldown: 0
+- Weapon type: AB
+- Effect text: Selects <color=#F74848>1</color> target within <color=#F74848>4</color> adjacent tiles (including flying targets) and strikes using Alter-Blades to deal <color=#F74848>1.2x</color> DMG. Can enter <buf ID=900014>[Aiming]</buf> Mode before attacking, then remains on a random empty tile within <color=#F74848>1</color> ring around the target after hitting. Critical Hit DMG increases by 20% for this attack
+- Icon name: Icon_skill_order_1172
 
 ### Skill 4
-- Name: Radiant Cleave
-- Type: EquipmentSkill
-- AP cost: 3
+- Name: Frostmark
+- Type: Order
+- AP cost: 0
 - Cooldown:
-- Weapon type: CS
-- Effect text: Uses Chainsaw to attack a main target, dealing 1.0x DMG, then attacks all enemies within 1 ring AoE around the target, dealing 0.6x AoE DMG. When [Edge Momentum] is at 8 stacks or more, this skill multiplier increases by +0.1. Can consume 5 stacks of [Edge Momentum] to make this attack always hits body, and if the main target's body is at 50% or higher, additionally deals [Fixed DMG] equal to 15% of [Cosette]'s body max HP to all hit enemies' bodies after combat. This [Fixed DMG] effect can trigger [Mobile Warfare 1] [Re-ATK] effect.
-- Icon name: Icon_skill_main_1181
+- Weapon type: AB
+- Effect text: Selects 1 target within 4 adjacent tiles, inflicts [Opening] in the direction facing [Sonya] to that target. Can continue to act with remaining movement. This skill can only be used 1 time per turn.
+- Icon name: Icon_skill_order_5180
 
 ### Skill 5
-- Name: Sharpened Momentum
-- Type: Passive
-- AP cost: 
-- Cooldown: 
-- Weapon type: CS
-- Effect text: When actively attacking with Chainsaw, gains 1 stack of [Edge Momentum]. This effect can trigger 2 times per turn.
-- Icon name: Icon_skill_order_5169
+- Name: Moon Splitter
+- Type: SpecialAssault
+- AP cost: 4
+- Cooldown:
+- Weapon type: AB
+- Effect text: Selects 1 target within 4 adjacent tiles and attacks 2 times with both Alter-Blades, dealing 0.7x DMG each, prioritizing body part. Before attacking, consumes all stacks of [Fighting Spirit]. For each 2 stacks consumed, perform 1 addtional attack on a random target within 1 ring around the target, prioritizing targets that have not been attacked.
+- Icon name: Icon_skill_order_1173
 
 ### Skill 6
-- Name: Mercenary Tempo
+- Name: Opening Guard
 - Type: Passive
-- AP Cost: 
+- AP Cost:
 - Cooldown:
-- Effect text: If [Edge Momentum] is at 6 stacks or more after an action, gains 1 AP. This effect can trigger 1 time per turn
-- Icon name: Icon_skill_main_1065
+- Effect text: When attacked by Melee or Ranged Weapons, if equipped with two Alter-Blades and both Arms are undestroyed, triggers <buf ID=900136>[Critical Sense]</buf>, dealing <color=#F74848>1.2x</color> DMG. Can only trigger <color=#F74848>1</color> time per turn.
+- Icon name: Icon_skill_passive_5238
 
 ### Skill 7
-- Name: Rending Chain
+- Name: Ice Stride
 - Type: Passive
-- Effect text: When actively attacking, if [Edge Momentum] is at 8 stacks or more, inflicts [Laceration] to the primary target hit.
-- Icon name: Icon_skill_passive_5279
+- Effect text: At the start of turn, dispels 2 debuffs from self
+- Icon name: Icon_skill_passive_3124
 
 ### Skill 8
-- Name: Tactical Compensation
+- Name: Combat Flow
 - Type: Passive
-- Effect text: After consuming [Edge Momentum] to trigger [Breakthrough], [Edge Momentum] will not be reduced at the end of turn.
-- Icon name: Icon_skill_passive_5323
+- Resource: PP
+- Effect text: From turn 2, at the start of turn, if possesses 2 or less stacks of [Fighting Spirit], consumes 1 PP to gains 3 stacks of [Fighting Spirit]. Gains 2 PP at the start of battle
+- Icon name: Icon_skill_pp_1112
 
 ## Chip slots setup
 <!-- Red = Attack / Blue = Critical / Yellow = Dodge (verified: Eileen β is red/blue/blue in game = Attack/Critical/Critical in CN data; matches .slot-* colors in css/style.css) -->
-- Alpha: red/yellow/blue
-- Beta: red/yellow/yellow
+- Alpha: red/yellow/yellow
+- Beta: red/yellow/blue
 - Gamma 1: red/yellow/blue
 - Gamma 2: red/yellow/yellow
 
@@ -192,23 +193,21 @@ pilot from this template (10103182, Kaidan The Invincible):
 
 ### γ1
 <!-- Name / Effect text / Icon name -->
-- Same as Hong
+- Same as Ada
 
 ### γ2
-- 1:  Heir Of Danube 1 / Maximum [Edge Momentum] stacks gain per action increases to 8. Talent [Re-ATK] effect is upgraded to [Re-Act]. / Icon_skill_passive_5324
+- 1:  Ice Blossom Blade 1 / When triggering [Opening], gains 1 AP and 1 stack of [Fighting Spirit]. / Icon_skill_passive_5330
 - 4: (same as other pilots same occupation)
 - 7: (same as other pilots with same occupation)
-- 10: Heir Of Danube 2 / When actively attacking, if the target's body is at full HP, ignores 25% target's Armor and Critical Hit chance increases by 10%. / Icon_skill_passive_5324
-- 13: Heir Of Danube 3 / Chainsaw Final DMG Dealt increases by 10%. When possessing 3 or more stacks of [Razor Feather], Chainsaw Final DMG Dealt additionally increases by 15%. / Icon_skill_passive_5324
-- 16: Heir Of Danube 4 / When possessing 5 or more stacks of [Edge Momentum], if AP is insufficient to cast any skill, can consumes 5 stacks of [Edge Momentum] to pay for 1 AP cost. This effect can trigger 2 times per turn. / Icon_skill_passive_5324
+- 10: Ice Blossom Blade 2 / When triggering [Opening] on a Boss unit, [Weakness] is regenerated after combat. This effect can trigger 1 time per turn. DMG Dealt increases by 25% against Boss unit. / Icon_skill_passive_5330
+- 13: Ice Blossom Blade 3 / After [Opening] is triggered, gains 1 AP and trigger [Re-Act]. This effect can trigger 1 time per turn. / Icon_skill_passive_5330
+- 16: Ice Blossom Blade 4 / Final DMG Dealt increases by 25%. This effect is decreased by 4% after each ally's action, and resets at the start of turn. / Icon_skill_passive_5330
 
 
 ### Glossary buf
 <!-- Pick a random unique ID for this in the <buf> tag and add the tag to all referenced text from this pilot -->
-- Edge Momentum: Holding 8 stacks or more to enhance active skills effect. Can consume 5 stacks to trigger [Breakthough] for active skills. Stacks up to 15 times. 3 stacks are removed at the end of turn.
-- Razor Feather: Chainsaw DMG Dealt increases by 5%, stacking up to 5 times.
-- Breakthrough: Greatly improves active skills effect.
-- Laceration: DMG Taken from Chainsaw attack increases by 5%, stacking up to 4 times. This effect is removed at the end of turn.
+- Opening: When [Sonya] uses a melee weapon to attack this target from the direction indicated by this debuff and landing a hit, DMG Dealt increases by 20% and the attack will score a Critical Hit. This effect is removed after combat.
+- Fighting Spirit: DMG Dealt increases by 4%, stacking up to 6 times. Can be consumed to enhance [Sonya]'s skills.
 
 ### Glossary skill 1
 <!-- Pick a random unique ID for this in the <skill> tag and add the tag to all referenced text from this pilot -->

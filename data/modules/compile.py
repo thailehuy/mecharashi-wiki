@@ -244,7 +244,7 @@ MANUAL_MODULE_LEVELS = {
             ('1', '14'), ('1', '16'), ('1.5', '18'), ('1.5', '24'),
         ],
     },
-    # Refraction Array (Prism): Tactical DMG% and shoulder-weapon Crit chance%.
+    # Refraction Array (Prisma): Tactical DMG% and shoulder-weapon Crit chance%.
     '9022': {
         'name': 'Refraction Array',
         'icon': 'Icon_skill_passive_1180',
@@ -253,7 +253,7 @@ MANUAL_MODULE_LEVELS = {
         'tags': [0, 1],
         'ladder': [('4', '3'), ('8', '6'), ('14', '10'), ('20', '15')],
     },
-    # Last Stand Module (Prism): DMG%; the attack-multiplier clause only
+    # Last Stand Module (Prisma): DMG%; the attack-multiplier clause only
     # unlocks at max level.
     '9032': {
         'name': 'Last Stand Module',
@@ -352,6 +352,26 @@ MANUAL_MODULE_LEVELS = {
             ('2', '1', '3'), ('3', '1.5', '4.5'), ('4', '2', '6'), ('5', '2.5', '7.5'),
             ('7', '3.5', '10.5'), ('8', '4', '12'), ('9', '4.5', '13.5'), ('12', '6', '18'),
         ],
+    },
+    # Frostedge Amplifier (Nivequus): DMG% and straight-line DMG%.
+    '9027': {
+        'name': 'Frostedge Amplifier',
+        'icon': 'Icon_skill_passive_5238',
+        'category': 'GeneralSuit',
+        'maxLevel': 4,
+        'tags': [0, 1],
+        'ladder': [('4', '3'), ('8', '6'), ('14', '10'), ('20', '15')],
+    },
+    # First Strike Module (Nivequus): DMG%; the two-Melee multiplier clause
+    # only unlocks at max level.
+    '9037': {
+        'name': 'First Strike Module',
+        'icon': 'Icon_entry_10001',
+        'category': 'GeneralSuit',
+        'maxLevel': 8,
+        'bonusAtMax': True,
+        'tags': [1],
+        'ladder': [(pct,) for pct in ['4', '6', '8', '10', '14', '16', '18', '24']],
     },
     # Stargazer Unit (Asteria): no scaling numbers; the end-of-turn AP /
     # [Shift Energy] and [Lustre] CP clause only unlocks at max level.

@@ -73,23 +73,23 @@ Checklist for whoever (or whichever agent) turns this into the JSON file:
 ## Basics
 
 - Mech ID: <8-digit numeric ID, check `ls data/mechs` for collisions>
-- Mech Name: Blue Anonymous Bird
-- Type (weight class): Medium
+- Mech Name: Nivequus
+- Type (weight class): Light
 - Quality: SSR
-- Game version introduced: 3.6
-- Dispatch version: N/A
+- Game version introduced: 3.7
+- Dispatch version: 3.8
 - Flavor text / lore description:
 
 ## Images
 <!-- icon is prefixed with data/unlisted/mechs/Icon/<Type>/ -->
 <!-- portrait (Raw) is prefixed with data/unlisted/mechs/Raw/<Type>/ -->
 <!-- alternate skins (if any) are prefixed with data/unlisted/mechs/Skins/<Type>/ -->
-- Icon file (all 4 parts share this): Icon_mecha_wap2071.png
-- Portrait/Raw file (Body only): Icon_mecha_wap2071_SN_Raw.png
-- mechaIcon (CDN key, per part, only if a CN CDN asset exists): Icon_wap2071_1
-- lihuiIcon (CDN key, Body only, only if a CN CDN asset exists): icon_lihui_wap2071
+- Icon file (all 4 parts share this): Icon_mecha_wap1071.png
+- Portrait/Raw file (Body only): Icon_mecha_wap1071_SN_Raw.png
+- mechaIcon (CDN key, per part, only if a CN CDN asset exists): Icon_wap1071_1
+- lihuiIcon (CDN key, Body only, only if a CN CDN asset exists): icon_lihui_wap1071
 - Alternate skins (Body only, list each variant token you have a
-  `Img_Skin_wap2071_<variant>.png` file for, or "none"): none
+  `Img_Skin_wap1071_<variant>.png` file for, or "none"): none
 
 ### Body — max level (manji) overrides
 - Durable: 11149
@@ -121,22 +121,22 @@ Checklist for whoever (or whichever agent) turns this into the JSON file:
 ## Modules
 <!-- Copy this block for each distinct module referenced above. -->
 ### Module 1
-- Name: Raptor Unit
+- Name: Frostedge Amplifier
 - Level: 4/4
-- Effect text: When actively attacking with a Melee Weapon, Critical Hit chance increases by 4/8/14/20%. If the target part is at full HP, DMG Dealt increases by 4/8/14/20% <!-- numbers must be wrapped as <color=#F74848>NUMBER</color>, same convention as pilot skill text, record the different level effect based on the numbers split -->
-- Icon name: Icon_skill_passive_4133
+- Effect text: DMG Dealt increases by 4/8/1420%. When actively attacking, if the target is in a straight line with this unit, DMG Dealt additionally increases by 3/6/10/15% <!-- numbers must be wrapped as <color=#F74848>NUMBER</color>, same convention as pilot skill text, record the different level effect based on the numbers split -->
+- Icon name: Icon_skill_passive_5238
 
 ### Module 2
-- Name: Crit DMG Mod
+- Name: Firepower Module
 - Level: 4/4
-- Effect text: Same as others, ID 40034
-- Icon name: Same as others, ID 40034
+- Effect text: Same as others, ID 40274
+- Icon name: Same as others, ID 40274
 
 ### Module 3
-- Name: Raiding Module
+- Name: First Strike Module
 - Level: 8/8
-- Effect text: When actively attacking with a Melee Weapon, DMG Dealt increases by 2/3/4/5/7/8/9/12%. For each 1 [Re-ATK] triggered during the turn, DMG Dealt additionally increases by 1/1.5/2/2.5/3.5/4/4.5/6%, up to 3/4.5/6/7.5/10.5/12/13.5/18%. This effect is removed at the end of turn.\nAfter triggering [Re-ATK], Critical Hit chance and Critical Hit DMG increase by 15%.<!-- numbers must be wrapped as <color=#F74848>NUMBER</color>, same convention as pilot skill text, record the different level effect based on the numbers split -->
-- Icon name: Icon_entry_10115
+- Effect text: If 2 or less allies have acted, DMG Dealt increases by 4/6/8/10/14/16/18/24%.\nWhen actively attacking with two Melee weapons, skill multiplier increases by +0.1.<!-- numbers must be wrapped as <color=#F74848>NUMBER</color>, same convention as pilot skill text, record the different level effect based on the numbers split -->
+- Icon name: Icon_entry_10001
 
 ### Glossary buf 1
 <!-- Pick a random unique ID for this in the <buf> tag and add the tag to all referenced text from this pilot -->

@@ -1497,6 +1497,14 @@
   "guide:tracing-mark": {
    "name": "Tracing Mark",
    "effect": "Prevents this unit from entering <buf ID=900033>[Stealth]</buf> and reduces Dodge Rate by <color=#F74848>15%</color>, lasting for <color=#F74848>1</color> turn."
+  },
+  "181900": {
+   "name": "Opening",
+   "effect": "When [Sonya] uses a Melee weapon to attack this target from the direction indicated by this debuff and lands a hit, DMG Dealt increases by <color=#F74848>20%</color> and the attack scores a Critical Hit. This effect is removed after combat."
+  },
+  "181901": {
+   "name": "Fighting Spirit",
+   "effect": "DMG Dealt increases by <color=#F74848>4%</color>, stacking up to <color=#F74848>6</color> times. Can be consumed to enhance [Sonya]'s skills."
   }
  },
  "skill": {

@@ -1,0 +1,189 @@
+{
+  "data": {
+    "data": [
+      {
+        "ID": "10710103",
+        "name": "Nivequus",
+        "type": "Light",
+        "quality": "SSR",
+        "position": "Body",
+        "aircraftWeight": "260",
+        "durable": "339",
+        "Armor": "48",
+        "fire": "124",
+        "Antiriot": "770",
+        "output": "1550",
+        "Interface": "Ⅰ型接口",
+        "ModuleCarried": [
+          {
+            "ID": "90274",
+            "name": "Frostedge Amplifier",
+            "SpecificEffects": "DMG Dealt increases by <color=#F74848>20%</color>. When actively attacking, if the target is in a straight line with this unit, DMG Dealt additionally increases by <color=#F74848>15%</color>.",
+            "BufCarried": "902741",
+            "SkillIcon": "Icon_skill_passive_5238",
+            "icon": "Icon_skill_passive_5238",
+            "Status": 1,
+            "weight": 1,
+            "id": "9027",
+            "level": 4
+          },
+          {
+            "ID": "40274",
+            "name": "Firepower Module",
+            "SpecificEffects": "Firepower <color=#F74848>+10%</color>.",
+            "BufCarried": "402741",
+            "SkillIcon": "Icon_skill_passive_1126",
+            "icon": "Icon_skill_passive_1126",
+            "Status": 1,
+            "weight": 2,
+            "id": "4027",
+            "level": 4
+          },
+          {
+            "ID": "90378",
+            "name": "First Strike Module",
+            "SpecificEffects": "If <color=#F74848>2</color> or fewer allies have acted, DMG Dealt increases by <color=#F74848>24%</color>.\nWhen actively attacking with two Melee weapons, skill multiplier increases by <color=#F74848>+0.1</color>.",
+            "BufCarried": "903781",
+            "SkillIcon": "Icon_entry_10001",
+            "icon": "Icon_entry_10001",
+            "Status": 1,
+            "weight": 3,
+            "id": "9037",
+            "level": 8
+          }
+        ],
+        "icon": "Icon_mecha_wap1071",
+        "introduce": "",
+        "mechaIcon": "Icon_wap1071_1",
+        "lihuiIcon": "icon_lihui_wap1071",
+        "AlternateSkins": [],
+        "Status": 1,
+        "weight": 1,
+        "manji": {
+          "name": "Nivequus",
+          "durable": "9425",
+          "Armor": "470",
+          "fire": "1215",
+          "output": "1550",
+          "Antiriot": "4472",
+          "Interface": "Ⅱ型接口",
+          "ModuleCarried": [
+            {
+              "ID": "90274",
+              "name": "Frostedge Amplifier",
+              "SpecificEffects": "DMG Dealt increases by <color=#F74848>20%</color>. When actively attacking, if the target is in a straight line with this unit, DMG Dealt additionally increases by <color=#F74848>15%</color>.",
+              "BufCarried": "902741",
+              "SkillIcon": "Icon_skill_passive_5238",
+              "icon": "Icon_skill_passive_5238",
+              "Status": 1,
+              "weight": 1,
+              "id": "9027",
+              "level": 4
+            },
+            {
+              "ID": "40274",
+              "name": "Firepower Module",
+              "SpecificEffects": "Firepower <color=#F74848>+10%</color>.",
+              "BufCarried": "402741",
+              "SkillIcon": "Icon_skill_passive_1126",
+              "icon": "Icon_skill_passive_1126",
+              "Status": 1,
+              "weight": 2,
+              "id": "4027",
+              "level": 4
+            },
+            {
+              "ID": "90378",
+              "name": "First Strike Module",
+              "SpecificEffects": "If <color=#F74848>2</color> or fewer allies have acted, DMG Dealt increases by <color=#F74848>24%</color>.\nWhen actively attacking with two Melee weapons, skill multiplier increases by <color=#F74848>+0.1</color>.",
+              "BufCarried": "903781",
+              "SkillIcon": "Icon_entry_10001",
+              "icon": "Icon_entry_10001",
+              "Status": 1,
+              "weight": 3,
+              "id": "9037",
+              "level": 8
+            }
+          ]
+        }
+      },
+      {
+        "ID": "10710103_ARM_L",
+        "name": "Nivequus",
+        "type": "Light",
+        "quality": "SSR",
+        "position": "L-Arm",
+        "aircraftWeight": "90",
+        "durable": "154",
+        "Armor": "32",
+        "fire": "124",
+        "Hit": "340",
+        "ModuleCarried": [],
+        "introduce": "",
+        "mechaIcon": "Icon_wap1071_1",
+        "manji": {
+          "name": "Nivequus",
+          "durable": "4281",
+          "Armor": "313",
+          "fire": "1215",
+          "Hit": "1974",
+          "Interface": "Ⅱ型接口",
+          "ModuleCarried": []
+        },
+        "icon": "Icon_mecha_wap1071"
+      },
+      {
+        "ID": "10710103_ARM_R",
+        "name": "Nivequus",
+        "type": "Light",
+        "quality": "SSR",
+        "position": "R-Arm",
+        "aircraftWeight": "90",
+        "durable": "154",
+        "Armor": "32",
+        "fire": "124",
+        "Hit": "340",
+        "ModuleCarried": [],
+        "introduce": "",
+        "mechaIcon": "Icon_wap1071_1",
+        "manji": {
+          "name": "Nivequus",
+          "durable": "4281",
+          "Armor": "313",
+          "fire": "1215",
+          "Hit": "1974",
+          "Interface": "Ⅱ型接口",
+          "ModuleCarried": []
+        },
+        "icon": "Icon_mecha_wap1071"
+      },
+      {
+        "ID": "10710103_LEGS",
+        "name": "Nivequus",
+        "type": "Light",
+        "quality": "SSR",
+        "position": "Legs",
+        "aircraftWeight": "160",
+        "durable": "256",
+        "Armor": "32",
+        "fire": "124",
+        "Dodge": "901",
+        "move": "4000",
+        "ModuleCarried": [],
+        "introduce": "",
+        "mechaIcon": "Icon_wap1071_1",
+        "manji": {
+          "name": "Nivequus",
+          "durable": "7117",
+          "Armor": "313",
+          "fire": "1215",
+          "Dodge": "5233",
+          "move": "4000",
+          "Interface": "Ⅱ型接口",
+          "ModuleCarried": []
+        },
+        "icon": "Icon_mecha_wap1071"
+      }
+    ]
+  }
+}
