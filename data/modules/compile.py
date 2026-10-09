@@ -758,7 +758,7 @@ def main():
         }
 
     synthesized_families = []
-    for family in SYNTHETIC_18_FAMILIES:
+    for family in sorted(SYNTHETIC_18_FAMILIES):
         instances = sorted(
             (info for info in local_modules.values() if info['family'] == family),
             key=lambda info: info['level']
