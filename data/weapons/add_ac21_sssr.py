@@ -48,7 +48,7 @@ WEAPONS = [
     },
     {
         'ID': '10815123', 'type': 'Saw', 'pilot': 'Maat', 'icon': 'Icon_weapon_50100602',
-        'talent': ('101950', 'Corrupting Shadow'),
+        'talent': ('101950', 'Devouring Shadow'),
         'tags': {
             # Outside "Enhanced [...]", [Corrupting Shadow] is the talent's active strike.
             'Corrupting Shadow': '<skill activeSkill=1019512>[Corrupting Shadow]</skill>',
@@ -59,7 +59,7 @@ WEAPONS = [
         'skillIcons': ('Icon_skill_passive_1103', 'Icon_skill_passive_5332', 'Icon_skill_passive_1122'),
         'skills': (
             "When actively attacking with a Chainsaw, for every 1 enemy unit within a 2 tile radius, Hit Rate and DMG +5%, up to 20%.",
-            "Enhanced [Corrupting Shadow]: When moving, ignores enemy unit obstruction. When activating [Corrupting Shadow], "
+            "Enhanced [Devouring Shadow]: When moving, ignores enemy unit obstruction. When activating [Corrupting Shadow], "
             "if the target already has Armor Down, effect increases by 1 level, up to [Armor Down III]. For every 1 enemy unit with "
             "[Vengeful Edge] on the battlefield, Chainsaw attack multiplier +0.06, up to +0.24.",
             "When actively attacking enemies with damaged parts, DMG and Crit Rate +15%.",
