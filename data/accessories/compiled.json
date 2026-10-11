@@ -14,10 +14,13 @@
       "en_name": "Thrive",
       "en_describe": "After combat, dispels <color=#F74848>1</color> debuff from self",
       "en_type": "After-Combat Effects",
-      "notes": "Two-handed weapons and backpack weapons only.Only triggers once per turn",
+      "notes": "Two-Handed weapons and Backpack Weapons only.\nOnly triggers 1 time per turn",
       "cos": [
         16
-      ]
+      ],
+      "occurrence": {
+        "16": 2
+      }
     },
     {
       "statetype": "Function_W",
@@ -33,12 +36,17 @@
       "en_name": "Shudder",
       "en_describe": "Inflicts <buf ID=7101107>[Dodge Rate Down V]</buf> on the target after combat, lasting for <color=#F74848>1</color> turn",
       "en_type": "After-Combat Effects",
-      "notes": "The same debuff effect cannot stack.Two-handed weapons and backpack weapons only.Only triggers once per turn",
+      "notes": "Two-Handed Weapons and Backpack Weapons only.\nThe same debuff effect cannot stack.\nOnly triggers 1 time per turn",
       "cos": [
         14,
         15,
         16
-      ]
+      ],
+      "occurrence": {
+        "14": 3,
+        "15": 2,
+        "16": 2
+      }
     },
     {
       "statetype": "Function_W",
@@ -54,10 +62,13 @@
       "en_name": "Maneuver",
       "en_describe": "When retaliated against, triggers <buf ID=1008062>[Absolute Dodge]</buf>",
       "en_type": "In-Combat Effects",
-      "notes": "Two-handed weapons only.Not triggerable by Tactical Weapons",
+      "notes": "Two-Handed Weapons only.\nNot triggerable by Tactical Weapons",
       "cos": [
         15
-      ]
+      ],
+      "occurrence": {
+        "15": 1
+      }
     },
     {
       "statetype": "Function_W",
@@ -73,12 +84,17 @@
       "en_name": "Augmented",
       "en_describe": "Increases this attack’s multiplier by +<color=#F74848>0.1</color>",
       "en_type": "Special Effects",
-      "notes": "Cannot be triggered outside of combat.Two-handed weapons and backpack weapons only",
+      "notes": "Two-Handed Weapons and Backpack Weapons only.\nCannot be triggered outside of combat",
       "cos": [
         12,
         13,
         14
-      ]
+      ],
+      "occurrence": {
+        "12": 2,
+        "13": 1,
+        "14": 1
+      }
     },
     {
       "statetype": "Function_W",
@@ -94,13 +110,19 @@
       "en_name": "Command",
       "en_describe": "Orders allies within <color=#F74848>3</color> adjacent tiles to perform a <buf ID=900002>[Link Attack]</buf> together",
       "en_type": "Special Effects",
-      "notes": "Only for Two-Handed Weapon use.Not triggerable by Tactical Weapons. 1-turn cooldownbetween triggers. Link Attacks deal 0.2x DMG(attacks require no ally skill prerequisites and consume no Link charges)",
+      "notes": "Two-Handed Weapons only\nNot triggerable by Tactical Weapons. 1-turn cooldown\nbetween triggers. Link Attacks deal 0.2x DMG\n(attacks require no ally skill prerequisites and consume no Link Charges)",
       "cos": [
         13,
         14,
         15,
         16
-      ]
+      ],
+      "occurrence": {
+        "13": 1,
+        "14": 1,
+        "15": 1,
+        "16": 2
+      }
     },
     {
       "statetype": "Function_W",
@@ -116,11 +138,15 @@
       "en_name": "Innervate",
       "en_describe": "Gains <buf ID=7100406>[Crit Rate Up IV]</buf> after combat, lasting for <color=#F74848>1</color> turn",
       "en_type": "After-Combat Effects",
-      "notes": "Two-handed weapons and backpack weapons only.The same buff effect cannot stack",
+      "notes": "Two-Handed Weapons and Backpack Weapons only.\nThe same buff effect cannot stack",
       "cos": [
         13,
         14
-      ]
+      ],
+      "occurrence": {
+        "13": 1,
+        "14": 1
+      }
     },
     {
       "statetype": "Function_W",
@@ -136,11 +162,15 @@
       "en_name": "Energized",
       "en_describe": "Gains <buf ID=7100107>[Hit Rate Up V]</buf> after combat, lasting for <color=#F74848>1</color> turn",
       "en_type": "After-Combat Effects",
-      "notes": "Two-handed weapons and backpack weapons only.The same buff effect cannot stack",
+      "notes": "Two-Handed Weapons and Backpack Weapons only.\nThe same buff effect cannot stack",
       "cos": [
         15,
         16
-      ]
+      ],
+      "occurrence": {
+        "15": 1,
+        "16": 2
+      }
     },
     {
       "statetype": "Function_W",
@@ -156,14 +186,21 @@
       "en_name": "High-Spirited",
       "en_describe": "Gains <buf ID=7100309>[DMG Up V]</buf> after combat, lasting for <color=#F74848>1</color> turn",
       "en_type": "After-Combat Effects",
-      "notes": "Two-handed weapons and backpack weapons only.The same buff effect cannot stack",
+      "notes": "Two-Handed Weapons and Backpack Weapons only.\nThe same buff effect cannot stack",
       "cos": [
         12,
         13,
         14,
         15,
         16
-      ]
+      ],
+      "occurrence": {
+        "12": 2,
+        "13": 2,
+        "14": 3,
+        "15": 2,
+        "16": 2
+      }
     },
     {
       "statetype": "Function_W",
@@ -179,10 +216,13 @@
       "en_name": "Reorganized",
       "en_describe": "After combat, restores HP equal to <color=#F74848>30%</color> of damage dealt in this skirmish. Can take effect only <color=#F74848>1</color> time per turn",
       "en_type": "After-Combat Effects",
-      "notes": "Cannot trigger on missed attacks.Two-handed weapons and backpack weapons only.Only triggers once per turn",
+      "notes": "Two-Handed Weapons and Backpack Weapons only.\nCannot trigger on missed attacks.\nOnly triggers 1 time per turn",
       "cos": [
         16
-      ]
+      ],
+      "occurrence": {
+        "16": 2
+      }
     },
     {
       "statetype": "Function_W",
@@ -198,10 +238,13 @@
       "en_name": "Emergency",
       "en_describe": "Restores <color=#F74848>10%</color> of HP after combat. Can take effect only <color=#F74848>1</color> time per turn",
       "en_type": "After-Combat Effects",
-      "notes": "Two-handed weapons and backpack weapons only.Only triggers once per turn",
+      "notes": "Two-Handed Weapons and Backpack weapons only.\nOnly triggers 1 time per turn",
       "cos": [
         13
-      ]
+      ],
+      "occurrence": {
+        "13": 1
+      }
     },
     {
       "statetype": "Function_W",
@@ -217,12 +260,17 @@
       "en_name": "Splash",
       "en_describe": "Deals Splash DMG to <color=#F74848>1</color> part, except the part hit, equal to <color=#F74848>20%</color> of damage dealt",
       "en_type": "In-Combat Effects",
-      "notes": "Two-handed weapons and backpack weapons only.Single-shot weapons only.Cannot be triggered outside of combat.Cannot trigger on missed attacks",
+      "notes": "Two-Handed Weapons and Backpack Weapons only.\nSingle-Shot Weapons only.\nCannot be triggered outside of combat.\nCannot trigger on missed attacks",
       "cos": [
         13,
         15,
         16
-      ]
+      ],
+      "occurrence": {
+        "13": 2,
+        "15": 1,
+        "16": 2
+      }
     },
     {
       "statetype": "Function_W",
@@ -238,13 +286,19 @@
       "en_name": "Explosive Charge",
       "en_describe": "Deals <color=#F74848>30%</color> of Weapon ATK as Fixed DMG to <color=#F74848>1</color> part excluding the part hit",
       "en_type": "In-Combat Effects",
-      "notes": "Single-shot weapons only.Cannot be triggered outside of combat.Cannot trigger on missed attacks.Two-handed weapons and backpack weapons only",
+      "notes": "Two-Handed Weapons and Backpack Weapons only.\nSingle-Shot Weapons only.\nCannot be triggered outside of combat.\nCannot trigger on missed attacks",
       "cos": [
         12,
         13,
         14,
         15
-      ]
+      ],
+      "occurrence": {
+        "12": 1,
+        "13": 2,
+        "14": 1,
+        "15": 1
+      }
     },
     {
       "statetype": "Function_W",
@@ -260,11 +314,15 @@
       "en_name": "Piercing",
       "en_describe": "Ignores <color=#F74848>50%</color> of the target’s Armor",
       "en_type": "In-Combat Effects",
-      "notes": "Two-handed weapons and backpack weapons only",
+      "notes": "Two-Handed Weapons and Backpack Weapons only",
       "cos": [
         12,
         13
-      ]
+      ],
+      "occurrence": {
+        "12": 1,
+        "13": 3
+      }
     },
     {
       "statetype": "Function_W",
@@ -280,12 +338,17 @@
       "en_name": "Legs Fractured",
       "en_describe": "DMG +<color=#F74848>40%</color> against Legs",
       "en_type": "In-Combat Effects",
-      "notes": "Two-handed weapons and backpack weapons only",
+      "notes": "Two-Handed Weapons and Backpack Weapons only",
       "cos": [
         14,
         15,
         16
-      ]
+      ],
+      "occurrence": {
+        "14": 1,
+        "15": 1,
+        "16": 2
+      }
     },
     {
       "statetype": "Function_W",
@@ -301,14 +364,21 @@
       "en_name": "Broken Arm",
       "en_describe": "DMG +<color=#F74848>40%</color> against Arms",
       "en_type": "In-Combat Effects",
-      "notes": "Two-handed weapons and backpack weapons only",
+      "notes": "Two-Handed Weapons and Backpack Weapons only",
       "cos": [
         12,
         13,
         14,
         15,
         16
-      ]
+      ],
+      "occurrence": {
+        "12": 2,
+        "13": 3,
+        "14": 1,
+        "15": 2,
+        "16": 2
+      }
     },
     {
       "statetype": "Function_W",
@@ -324,13 +394,19 @@
       "en_name": "Slamming",
       "en_describe": "DMG +<color=#F74848>20%</color>",
       "en_type": "In-Combat Effects",
-      "notes": "Two-handed weapons and backpack weapons only",
+      "notes": "Two-Handed Weapons and Backpack Weapons only",
       "cos": [
         13,
         14,
         15,
         16
-      ]
+      ],
+      "occurrence": {
+        "13": 3,
+        "14": 1,
+        "15": 1,
+        "16": 2
+      }
     },
     {
       "statetype": "Condition_W",
@@ -346,10 +422,13 @@
       "en_name": "Prevail",
       "en_describe": "When actively attacking, if possessing <color=#F74848>3</color> or more buffs",
       "en_type": "Special Effects",
-      "notes": "Two-handed weapons and backpack weapons only",
+      "notes": "Two-Handed Weapons and Backpack weapons only",
       "cos": [
         16
-      ]
+      ],
+      "occurrence": {
+        "16": 2
+      }
     },
     {
       "statetype": "Condition_W",
@@ -365,12 +444,17 @@
       "en_name": "Spring",
       "en_describe": "When actively attacking, if HP is at <color=#F74848>100%</color>",
       "en_type": "HP Related",
-      "notes": "Two-handed weapons and backpack weapons only",
+      "notes": "Two-Handed Weapons and Backpack weapons only",
       "cos": [
         14,
         15,
         16
-      ]
+      ],
+      "occurrence": {
+        "14": 3,
+        "15": 2,
+        "16": 2
+      }
     },
     {
       "statetype": "Condition_W",
@@ -386,13 +470,19 @@
       "en_name": "Equanimity",
       "en_describe": "Before actively attacking without having moved this turn",
       "en_type": "Movement Related",
-      "notes": "Two-handed weapons and backpack weapons only",
+      "notes": "Two-Handed Weapons and Backpack weapons only",
       "cos": [
         13,
         14,
         15,
         16
-      ]
+      ],
+      "occurrence": {
+        "13": 3,
+        "14": 3,
+        "15": 1,
+        "16": 2
+      }
     },
     {
       "statetype": "Condition_W",
@@ -408,12 +498,17 @@
       "en_name": "Oppress",
       "en_describe": "When initiating combat, if the target cannot retaliate",
       "en_type": "Distance Related",
-      "notes": "Only for Two-Handed Weapon use.Not triggerable by Tactical Weapons",
+      "notes": "Two-Handed Weapons only.\nNot triggerable by Tactical Weapons",
       "cos": [
         12,
         13,
         14
-      ]
+      ],
+      "occurrence": {
+        "12": 3,
+        "13": 2,
+        "14": 1
+      }
     },
     {
       "statetype": "Condition_W",
@@ -429,10 +524,13 @@
       "en_name": "Break",
       "en_describe": "When initiating combat and breaking a part",
       "en_type": "Attack Result",
-      "notes": "Only for Two-Handed Weapon use.Not triggerable by Tactical Weapons",
+      "notes": "Two-Handed Weapons only.\nNot triggerable by Tactical Weapons",
       "cos": [
         15
-      ]
+      ],
+      "occurrence": {
+        "15": 1
+      }
     },
     {
       "statetype": "Condition_W",
@@ -448,11 +546,15 @@
       "en_name": "Discharge",
       "en_describe": "When executing skills that cost <color=#F74848>4</color> or more AP",
       "en_type": "AP Related",
-      "notes": "Two-handed weapons and backpack weapons only",
+      "notes": "Two-Handed Weapons and Backpack weapons only",
       "cos": [
         12,
         13
-      ]
+      ],
+      "occurrence": {
+        "12": 2,
+        "13": 2
+      }
     },
     {
       "statetype": "Condition_W",
@@ -468,11 +570,15 @@
       "en_name": "Accurate",
       "en_describe": "When initiating combat, if Hit Rate exceeds <color=#F74848>80%</color>",
       "en_type": "Hit Related",
-      "notes": "Only for Two-Handed Weapon use.Not triggerable by Tactical Weapons",
+      "notes": "Two-Handed Weapons only.\nNot triggerable by Tactical Weapons",
       "cos": [
         15,
         16
-      ]
+      ],
+      "occurrence": {
+        "15": 1,
+        "16": 2
+      }
     },
     {
       "statetype": "Condition_W",
@@ -488,11 +594,15 @@
       "en_name": "Annihilate",
       "en_describe": "When initiating combat, if target’s HP is lower than <color=#F74848>50%</color>",
       "en_type": "HP Related",
-      "notes": "Only for Two-Handed Weapon use.Not triggerable by Tactical Weapons",
+      "notes": "Two-Handed Weapons only.\nNot triggerable by Tactical Weapons",
       "cos": [
         14,
         15
-      ]
+      ],
+      "occurrence": {
+        "14": 1,
+        "15": 1
+      }
     },
     {
       "statetype": "Condition_W",
@@ -508,10 +618,13 @@
       "en_name": "Tackle",
       "en_describe": "When initiating combat, if target’s HP is higher than <color=#F74848>50%</color>",
       "en_type": "HP Related",
-      "notes": "Only for Two-Handed Weapon use.Not triggerable by Tactical Weapons",
+      "notes": "Two-Handed Weapons only.\nNot triggerable by Tactical Weapons",
       "cos": [
         13
-      ]
+      ],
+      "occurrence": {
+        "13": 2
+      }
     },
     {
       "statetype": "Condition_W",
@@ -527,13 +640,19 @@
       "en_name": "Crisis",
       "en_describe": "When actively attacking, if HP is lower than <color=#F74848>50%</color>",
       "en_type": "HP Related",
-      "notes": "Two-handed weapons and backpack weapons only",
+      "notes": "Two-Handed Weapons and Backpack weapons only",
       "cos": [
         13,
         14,
         15,
         16
-      ]
+      ],
+      "occurrence": {
+        "13": 1,
+        "14": 1,
+        "15": 1,
+        "16": 2
+      }
     },
     {
       "statetype": "Condition_W",
@@ -549,12 +668,17 @@
       "en_name": "Confront",
       "en_describe": "When actively attacking, if HP is higher than <color=#F74848>50%</color>",
       "en_type": "HP Related",
-      "notes": "Two-handed weapons and backpack weapons only",
+      "notes": "Two-Handed Weapons and Backpack weapons only",
       "cos": [
         12,
         13,
         14
-      ]
+      ],
+      "occurrence": {
+        "12": 1,
+        "13": 2,
+        "14": 3
+      }
     },
     {
       "statetype": "Condition_W",
@@ -570,13 +694,19 @@
       "en_name": "Collaborate",
       "en_describe": "When launching a Link Attack",
       "en_type": "Attack Type",
-      "notes": "Only for Two-Handed Weapon use.Not triggerable by Tactical Weapons.Not triggerable by Melee Weapons",
+      "notes": "Two-Handed Weapons only.\nNot triggerable by Tactical Weapons.\nNot triggerable by Melee Weapons",
       "cos": [
         13,
         14,
         15,
         16
-      ]
+      ],
+      "occurrence": {
+        "13": 3,
+        "14": 1,
+        "15": 2,
+        "16": 1
+      }
     },
     {
       "statetype": "Condition_W",
@@ -592,14 +722,21 @@
       "en_name": "Combo",
       "en_describe": "When triggering a Flurry Strike or Gusty Strike",
       "en_type": "Attack Type",
-      "notes": "Only for Two-Handed Weapon use.Not triggerable by Tactical Weapons",
+      "notes": "Two-Handed Weapons only.\nNot triggerable by Tactical Weapons",
       "cos": [
         12,
         13,
         14,
         15,
         16
-      ]
+      ],
+      "occurrence": {
+        "12": 2,
+        "13": 1,
+        "14": 1,
+        "15": 1,
+        "16": 2
+      }
     },
     {
       "statetype": "Condition_W",
@@ -615,10 +752,13 @@
       "en_name": "Vigilant",
       "en_describe": "When triggering Vigilant Shot",
       "en_type": "Attack Type",
-      "notes": "Ranged Weapons only.Two-handed weapons and backpack weapons only",
+      "notes": "Two-Handed Weapons and Backpack weapons only\nRanged Weapons only",
       "cos": [
         16
-      ]
+      ],
+      "occurrence": {
+        "16": 1
+      }
     },
     {
       "statetype": "Condition_W",
@@ -634,13 +774,19 @@
       "en_name": "Retaliation",
       "en_describe": "When retaliating",
       "en_type": "Attack Type",
-      "notes": "Only for Two-Handed Weapon use.Not triggerable by Tactical Weapons",
+      "notes": "Two-Handed Weapons only.\nNot triggerable by Tactical Weapons",
       "cos": [
         13,
         14,
         15,
         16
-      ]
+      ],
+      "occurrence": {
+        "13": 1,
+        "14": 1,
+        "15": 1,
+        "16": 2
+      }
     },
     {
       "statetype": "Condition_W",
@@ -656,14 +802,21 @@
       "en_name": "Invasion",
       "en_describe": "When actively executing an AoE Skill",
       "en_type": "Attack Type",
-      "notes": "Two-handed weapons and backpack weapons only",
+      "notes": "Two-Handed Weapons and Backpack weapons only",
       "cos": [
         12,
         13,
         14,
         15,
         16
-      ]
+      ],
+      "occurrence": {
+        "12": 2,
+        "13": 2,
+        "14": 1,
+        "15": 1,
+        "16": 2
+      }
     },
     {
       "statetype": "Function",
@@ -679,10 +832,13 @@
       "en_name": "Transcendent",
       "en_describe": "After combat, randomly extends the <buf ID=900078>[Turns Left]</buf> of <color=#F74848>2</color> buffs on self by <color=#F74848>1</color>",
       "en_type": "After-Combat Effects",
-      "notes": "The same buff effect cannot stack.Only triggers once per turn",
+      "notes": "The same buff effect cannot stack.\nOnly triggers 1 time per turn",
       "cos": [
         16
-      ]
+      ],
+      "occurrence": {
+        "16": 6
+      }
     },
     {
       "statetype": "Function",
@@ -701,7 +857,10 @@
       "notes": "",
       "cos": [
         16
-      ]
+      ],
+      "occurrence": {
+        "16": 5
+      }
     },
     {
       "statetype": "Function",
@@ -717,10 +876,13 @@
       "en_name": "Frustration",
       "en_describe": "Reduces the target pilot's Suitability by <color=#F74848>15%</color> for <color=#F74848>1</color> turn",
       "en_type": "After-Combat Effects",
-      "notes": "The same buff effect cannot stack.Only triggers once per turn",
+      "notes": "The same buff effect cannot stack.\nOnly triggers 1 time per turn",
       "cos": [
         16
-      ]
+      ],
+      "occurrence": {
+        "16": 6
+      }
     },
     {
       "statetype": "Function",
@@ -740,7 +902,11 @@
       "cos": [
         15,
         16
-      ]
+      ],
+      "occurrence": {
+        "15": 6,
+        "16": 6
+      }
     },
     {
       "statetype": "Function",
@@ -760,7 +926,11 @@
       "cos": [
         15,
         16
-      ]
+      ],
+      "occurrence": {
+        "15": 5,
+        "16": 6
+      }
     },
     {
       "statetype": "Function",
@@ -776,11 +946,15 @@
       "en_name": "Reconstruction",
       "en_describe": "Gains <buf ID=1099907>[Reconstruction III]</buf> after combat, lasting for <color=#F74848>1</color> turn",
       "en_type": "After-Combat Effects",
-      "notes": "Buff effects of the same type cannot stack.Only triggers once per turn",
+      "notes": "Buff effects of the same type cannot stack.\nOnly triggers 1 time per turn",
       "cos": [
         15,
         16
-      ]
+      ],
+      "occurrence": {
+        "15": 6,
+        "16": 6
+      }
     },
     {
       "statetype": "Function",
@@ -796,12 +970,17 @@
       "en_name": "Ballistics Block",
       "en_describe": "After combat, puts the target's Tactical Weapon into a reloading stateand deals <color=#F74848>5%</color> of Max HP as <buf ID=900017>[Fixed DMG]</buf> to all its parts",
       "en_type": "After-Combat Effects",
-      "notes": "Not triggerable by Tactical Weapons.Only triggers once per turn",
+      "notes": "Not triggerable by Tactical Weapons.\nOnly triggers 1 time per turn",
       "cos": [
         14,
         15,
         16
-      ]
+      ],
+      "occurrence": {
+        "14": 4,
+        "15": 4,
+        "16": 2
+      }
     },
     {
       "statetype": "Function",
@@ -822,7 +1001,12 @@
         14,
         15,
         16
-      ]
+      ],
+      "occurrence": {
+        "14": 6,
+        "15": 6,
+        "16": 6
+      }
     },
     {
       "statetype": "Function",
@@ -838,12 +1022,17 @@
       "en_name": "Blur",
       "en_describe": "Gains <buf ID=1099906>[Blur III]</buf> after combat, lasting for <color=#F74848>1</color> turn",
       "en_type": "After-Combat Effects",
-      "notes": "Buff effects of the same type cannot stack.Only triggers once per turn",
+      "notes": "Buff effects of the same type cannot stack.\nOnly triggers 1 time per turn",
       "cos": [
         14,
         15,
         16
-      ]
+      ],
+      "occurrence": {
+        "14": 5,
+        "15": 5,
+        "16": 6
+      }
     },
     {
       "statetype": "Function",
@@ -859,12 +1048,17 @@
       "en_name": "Thrive",
       "en_describe": "After combat, dispels <color=#F74848>1</color> debuff from self",
       "en_type": "After-Combat Effects",
-      "notes": "Only triggers once per turn",
+      "notes": "Only triggers 1 time per turn",
       "cos": [
         13,
         14,
         15
-      ]
+      ],
+      "occurrence": {
+        "13": 6,
+        "14": 6,
+        "15": 6
+      }
     },
     {
       "statetype": "Function",
@@ -886,7 +1080,13 @@
         14,
         15,
         16
-      ]
+      ],
+      "occurrence": {
+        "13": 6,
+        "14": 6,
+        "15": 6,
+        "16": 6
+      }
     },
     {
       "statetype": "Function",
@@ -902,11 +1102,15 @@
       "en_name": "Augmentation",
       "en_describe": "Bullets +<color=#F74848>1</color>",
       "en_type": "Special Effects",
-      "notes": "Only for Assault Weapon Use.Cannot be triggered outside of combat",
+      "notes": "Assault Weapons only.\nCannot be triggered outside of combat",
       "cos": [
         13,
         14
-      ]
+      ],
+      "occurrence": {
+        "13": 4,
+        "14": 2
+      }
     },
     {
       "statetype": "Function",
@@ -922,12 +1126,17 @@
       "en_name": "Shudder",
       "en_describe": "Inflicts <buf ID=7101107>[Dodge Rate Down V]</buf> on the target after combat, lasting for <color=#F74848>1</color> turn",
       "en_type": "After-Combat Effects",
-      "notes": "The same debuff effect cannot stack.Only triggers once per turn",
+      "notes": "The same debuff effect cannot stack.\nOnly triggers 1 time per turn",
       "cos": [
         12,
         13,
         14
-      ]
+      ],
+      "occurrence": {
+        "12": 5,
+        "13": 5,
+        "14": 6
+      }
     },
     {
       "statetype": "Function",
@@ -950,7 +1159,14 @@
         14,
         15,
         16
-      ]
+      ],
+      "occurrence": {
+        "12": 5,
+        "13": 5,
+        "14": 3,
+        "15": 5,
+        "16": 2
+      }
     },
     {
       "statetype": "Function",
@@ -966,11 +1182,15 @@
       "en_name": "Augmented",
       "en_describe": "Increases this attack’s multiplier by +<color=#F74848>0.1</color>",
       "en_type": "Special Effects",
-      "notes": "Cannot be triggered outside of combat.Rocket Launcher triggers 75% reduced effect",
+      "notes": "Cannot be triggered outside of combat.\nRocket Launcher triggers 75% reduced effect",
       "cos": [
         11,
         12
-      ]
+      ],
+      "occurrence": {
+        "11": 5,
+        "12": 6
+      }
     },
     {
       "statetype": "Function",
@@ -986,14 +1206,21 @@
       "en_name": "Command",
       "en_describe": "Orders allies within <color=#F74848>3</color> adjacent tiles to perform a <buf ID=900002>[Link Attack]</buf> together",
       "en_type": "Special Effects",
-      "notes": "Not triggerable by Tactical Weapons. 1-turn cooldownbetween triggers. Link Attacks deal 0.2x DMG(attacks require no ally skill prerequisites and consume no Link charges)",
+      "notes": "Not triggerable by Tactical Weapons. 1-turn cooldown\nbetween triggers. Link Attacks deal 0.2x DMG\n(attacks require no ally skill prerequisites and consume no Link Charges)",
       "cos": [
         11,
         12,
         13,
         14,
         15
-      ]
+      ],
+      "occurrence": {
+        "11": 4,
+        "12": 5,
+        "13": 5,
+        "14": 3,
+        "15": 3
+      }
     },
     {
       "statetype": "Function",
@@ -1012,7 +1239,10 @@
       "notes": "The same buff effect cannot stack",
       "cos": [
         12
-      ]
+      ],
+      "occurrence": {
+        "12": 5
+      }
     },
     {
       "statetype": "Function",
@@ -1036,7 +1266,15 @@
         14,
         15,
         16
-      ]
+      ],
+      "occurrence": {
+        "11": 11,
+        "12": 6,
+        "13": 5,
+        "14": 6,
+        "15": 6,
+        "16": 6
+      }
     },
     {
       "statetype": "Function",
@@ -1056,7 +1294,11 @@
       "cos": [
         12,
         13
-      ]
+      ],
+      "occurrence": {
+        "12": 6,
+        "13": 6
+      }
     },
     {
       "statetype": "Function",
@@ -1072,7 +1314,7 @@
       "en_name": "Reorganized",
       "en_describe": "After combat, restores HP equal to <color=#F74848>30%</color> of damage dealt in this skirmish. Can take effect only <color=#F74848>1</color> time per turn",
       "en_type": "After-Combat Effects",
-      "notes": "Cannot trigger on missed attacks.Only triggers once per turn",
+      "notes": "Cannot trigger on missed attacks.\nOnly triggers 1 time per turn",
       "cos": [
         11,
         12,
@@ -1080,7 +1322,15 @@
         14,
         15,
         16
-      ]
+      ],
+      "occurrence": {
+        "11": 11,
+        "12": 5,
+        "13": 6,
+        "14": 5,
+        "15": 5,
+        "16": 6
+      }
     },
     {
       "statetype": "Function",
@@ -1096,11 +1346,15 @@
       "en_name": "Emergency",
       "en_describe": "Restores <color=#F74848>10%</color> of HP after combat. Can take effect only <color=#F74848>1</color> time per turn",
       "en_type": "After-Combat Effects",
-      "notes": "Only triggers once per turn",
+      "notes": "Only triggers 1 time per turn",
       "cos": [
         12,
         16
-      ]
+      ],
+      "occurrence": {
+        "12": 6,
+        "16": 6
+      }
     },
     {
       "statetype": "Function",
@@ -1116,7 +1370,7 @@
       "en_name": "Splash",
       "en_describe": "Deals Splash DMG to <color=#F74848>1</color> part, except the part hit, equal to <color=#F74848>20%</color> of damage dealt",
       "en_type": "In-Combat Effects",
-      "notes": "Single-shot weapons only.Cannot be triggered outside of combat.Cannot trigger on missed attacks",
+      "notes": "Single-Shot Weapons only.\nCannot be triggered outside of combat.\nCannot trigger on missed attacks",
       "cos": [
         11,
         12,
@@ -1124,7 +1378,15 @@
         14,
         15,
         16
-      ]
+      ],
+      "occurrence": {
+        "11": 5,
+        "12": 5,
+        "13": 4,
+        "14": 6,
+        "15": 5,
+        "16": 5
+      }
     },
     {
       "statetype": "Function",
@@ -1140,12 +1402,17 @@
       "en_name": "Explosive Charge",
       "en_describe": "Deals <color=#F74848>30%</color> of Weapon ATK as Fixed DMG to <color=#F74848>1</color> part excluding the part hit",
       "en_type": "In-Combat Effects",
-      "notes": "Single-shot weapons only.Cannot be triggered outside of combat.Cannot trigger on missed attacks",
+      "notes": "Single-Shot Weapons only.\nCannot be triggered outside of combat.\nCannot trigger on missed attacks",
       "cos": [
         11,
         12,
         13
-      ]
+      ],
+      "occurrence": {
+        "11": 3,
+        "12": 5,
+        "13": 2
+      }
     },
     {
       "statetype": "Function",
@@ -1168,7 +1435,14 @@
         13,
         14,
         15
-      ]
+      ],
+      "occurrence": {
+        "11": 5,
+        "12": 6,
+        "13": 6,
+        "14": 6,
+        "15": 6
+      }
     },
     {
       "statetype": "Function",
@@ -1184,14 +1458,21 @@
       "en_name": "Resistance",
       "en_describe": "DMG Taken -<color=#F74848>20%</color>",
       "en_type": "In-Combat Effects",
-      "notes": "Cannot be triggered outside of combat.Shield weapons only",
+      "notes": "Shield Weapons only.\nCannot be triggered outside of combat.",
       "cos": [
         12,
         13,
         14,
         15,
         16
-      ]
+      ],
+      "occurrence": {
+        "12": 1,
+        "13": 1,
+        "14": 1,
+        "15": 2,
+        "16": 3
+      }
     },
     {
       "statetype": "Function",
@@ -1213,7 +1494,13 @@
         12,
         13,
         14
-      ]
+      ],
+      "occurrence": {
+        "11": 6,
+        "12": 5,
+        "13": 5,
+        "14": 6
+      }
     },
     {
       "statetype": "Function",
@@ -1234,7 +1521,12 @@
         11,
         12,
         13
-      ]
+      ],
+      "occurrence": {
+        "11": 5,
+        "12": 6,
+        "13": 6
+      }
     },
     {
       "statetype": "Function",
@@ -1257,7 +1549,14 @@
         13,
         14,
         15
-      ]
+      ],
+      "occurrence": {
+        "11": 10,
+        "12": 6,
+        "13": 6,
+        "14": 6,
+        "15": 6
+      }
     },
     {
       "statetype": "Condition",
@@ -1276,7 +1575,10 @@
       "notes": "Not triggerable by Tactical Weapons",
       "cos": [
         16
-      ]
+      ],
+      "occurrence": {
+        "16": 4
+      }
     },
     {
       "statetype": "Condition",
@@ -1295,7 +1597,10 @@
       "notes": "",
       "cos": [
         16
-      ]
+      ],
+      "occurrence": {
+        "16": 5
+      }
     },
     {
       "statetype": "Condition",
@@ -1314,7 +1619,10 @@
       "notes": "Not triggerable by Tactical Weapons",
       "cos": [
         16
-      ]
+      ],
+      "occurrence": {
+        "16": 2
+      }
     },
     {
       "statetype": "Condition",
@@ -1334,7 +1642,11 @@
       "cos": [
         15,
         16
-      ]
+      ],
+      "occurrence": {
+        "15": 4,
+        "16": 2
+      }
     },
     {
       "statetype": "Condition",
@@ -1354,7 +1666,11 @@
       "cos": [
         15,
         16
-      ]
+      ],
+      "occurrence": {
+        "15": 5,
+        "16": 4
+      }
     },
     {
       "statetype": "Condition",
@@ -1374,7 +1690,11 @@
       "cos": [
         15,
         16
-      ]
+      ],
+      "occurrence": {
+        "15": 5,
+        "16": 6
+      }
     },
     {
       "statetype": "Condition",
@@ -1394,7 +1714,11 @@
       "cos": [
         14,
         15
-      ]
+      ],
+      "occurrence": {
+        "14": 4,
+        "15": 4
+      }
     },
     {
       "statetype": "Condition",
@@ -1415,7 +1739,12 @@
         14,
         15,
         16
-      ]
+      ],
+      "occurrence": {
+        "14": 5,
+        "15": 6,
+        "16": 6
+      }
     },
     {
       "statetype": "Condition",
@@ -1431,12 +1760,17 @@
       "en_name": "Expanse",
       "en_describe": "When actively attacking targets that are <color=#F74848>4</color> or more tiles away",
       "en_type": "Distance Related",
-      "notes": "Not triggerable by Tactical Weapons.Not triggerable by Melee Weapons",
+      "notes": "Not triggerable by Tactical Weapons.\nNot triggerable by Melee Weapons",
       "cos": [
         14,
         15,
         16
-      ]
+      ],
+      "occurrence": {
+        "14": 3,
+        "15": 2,
+        "16": 2
+      }
     },
     {
       "statetype": "Condition",
@@ -1456,7 +1790,11 @@
       "cos": [
         13,
         14
-      ]
+      ],
+      "occurrence": {
+        "13": 5,
+        "14": 3
+      }
     },
     {
       "statetype": "Condition",
@@ -1478,7 +1816,13 @@
         14,
         15,
         16
-      ]
+      ],
+      "occurrence": {
+        "13": 6,
+        "14": 6,
+        "15": 6,
+        "16": 6
+      }
     },
     {
       "statetype": "Condition",
@@ -1500,7 +1844,13 @@
         14,
         15,
         16
-      ]
+      ],
+      "occurrence": {
+        "13": 5,
+        "14": 6,
+        "15": 6,
+        "16": 6
+      }
     },
     {
       "statetype": "Condition",
@@ -1523,7 +1873,14 @@
         14,
         15,
         16
-      ]
+      ],
+      "occurrence": {
+        "12": 6,
+        "13": 6,
+        "14": 6,
+        "15": 6,
+        "16": 6
+      }
     },
     {
       "statetype": "Condition",
@@ -1544,7 +1901,12 @@
         12,
         13,
         14
-      ]
+      ],
+      "occurrence": {
+        "12": 5,
+        "13": 5,
+        "14": 6
+      }
     },
     {
       "statetype": "Condition",
@@ -1564,7 +1926,11 @@
       "cos": [
         11,
         12
-      ]
+      ],
+      "occurrence": {
+        "11": 3,
+        "12": 5
+      }
     },
     {
       "statetype": "Condition",
@@ -1585,7 +1951,12 @@
         11,
         12,
         13
-      ]
+      ],
+      "occurrence": {
+        "11": 6,
+        "12": 3,
+        "13": 5
+      }
     },
     {
       "statetype": "Condition",
@@ -1605,7 +1976,11 @@
       "cos": [
         11,
         12
-      ]
+      ],
+      "occurrence": {
+        "11": 6,
+        "12": 4
+      }
     },
     {
       "statetype": "Condition",
@@ -1629,7 +2004,15 @@
         14,
         15,
         16
-      ]
+      ],
+      "occurrence": {
+        "11": 3,
+        "12": 3,
+        "13": 4,
+        "14": 3,
+        "15": 5,
+        "16": 6
+      }
     },
     {
       "statetype": "Condition",
@@ -1650,7 +2033,12 @@
         11,
         12,
         13
-      ]
+      ],
+      "occurrence": {
+        "11": 3,
+        "12": 5,
+        "13": 5
+      }
     },
     {
       "statetype": "Condition",
@@ -1673,7 +2061,14 @@
         14,
         15,
         16
-      ]
+      ],
+      "occurrence": {
+        "12": 3,
+        "13": 4,
+        "14": 4,
+        "15": 5,
+        "16": 6
+      }
     },
     {
       "statetype": "Condition",
@@ -1696,7 +2091,14 @@
         13,
         14,
         15
-      ]
+      ],
+      "occurrence": {
+        "11": 11,
+        "12": 6,
+        "13": 6,
+        "14": 6,
+        "15": 6
+      }
     },
     {
       "statetype": "Condition",
@@ -1716,7 +2118,11 @@
       "cos": [
         12,
         16
-      ]
+      ],
+      "occurrence": {
+        "12": 5,
+        "16": 6
+      }
     },
     {
       "statetype": "Condition",
@@ -1739,7 +2145,14 @@
         14,
         15,
         16
-      ]
+      ],
+      "occurrence": {
+        "12": 1,
+        "13": 2,
+        "14": 1,
+        "15": 2,
+        "16": 2
+      }
     },
     {
       "statetype": "Condition",
@@ -1762,7 +2175,14 @@
         13,
         14,
         15
-      ]
+      ],
+      "occurrence": {
+        "11": 7,
+        "12": 6,
+        "13": 4,
+        "14": 4,
+        "15": 5
+      }
     },
     {
       "statetype": "Condition",
@@ -1785,7 +2205,14 @@
         14,
         15,
         16
-      ]
+      ],
+      "occurrence": {
+        "12": 6,
+        "13": 5,
+        "14": 4,
+        "15": 5,
+        "16": 5
+      }
     },
     {
       "statetype": "Condition",
@@ -1805,7 +2232,11 @@
       "cos": [
         11,
         12
-      ]
+      ],
+      "occurrence": {
+        "11": 2,
+        "12": 2
+      }
     },
     {
       "statetype": "Condition",
@@ -1828,7 +2259,14 @@
         13,
         14,
         15
-      ]
+      ],
+      "occurrence": {
+        "11": 7,
+        "12": 5,
+        "13": 4,
+        "14": 4,
+        "15": 3
+      }
     },
     {
       "statetype": "Condition",
@@ -1850,7 +2288,13 @@
         12,
         13,
         14
-      ]
+      ],
+      "occurrence": {
+        "11": 4,
+        "12": 4,
+        "13": 4,
+        "14": 5
+      }
     }
   ]
 }

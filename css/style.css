@@ -2485,15 +2485,6 @@ a.material-item:hover .material-icon-wrap {
 
 /* ── Accessories ─────────────────────────────────────────── */
 
-.acc-card {
-  display: flex;
-  gap: 0.75rem;
-  background-color: #1a1a20;
-  border: 1px solid #2a2a4a;
-  border-radius: 8px;
-  padding: 0.75rem;
-  height: 100%;
-}
 
 .acc-card-icon {
   position: relative;
@@ -2533,18 +2524,7 @@ a.material-item:hover .material-icon-wrap {
   height: 65%;
 }
 
-.acc-card-body {
-  flex: 1;
-  min-width: 0;
-}
 
-.acc-card-header {
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
-  flex-wrap: wrap;
-  margin-bottom: 0.3rem;
-}
 
 .acc-name {
   font-weight: 700;
@@ -2562,49 +2542,153 @@ a.material-item:hover .material-icon-wrap {
   border: 1px solid rgba(234, 179, 8, 0.3);
 }
 
+
+
+
+
+
+
+.acc-table th,
+.acc-table td {
+  padding: 0.45rem 0.6rem;
+  font-size: 0.8rem;
+}
+
+.acc-table {
+  table-layout: fixed;
+  min-width: 860px;
+}
+
+.acc-table .acc-th-name {
+  text-align: left;
+}
+
+.acc-table .acc-th-type {
+  width: 170px;
+}
+
+.acc-table .acc-th-lv {
+  width: 64px;
+}
+
+.acc-table thead .acc-col-co {
+  width: 72px;
+}
+
+@media (max-width: 767px) {
+  .acc-table {
+    min-width: 620px;
+  }
+
+  .acc-table th,
+  .acc-table td {
+    padding: 0.4rem 0.4rem;
+  }
+
+  .acc-table .acc-th-type {
+    width: 96px;
+  }
+
+  .acc-table .acc-th-lv {
+    width: 44px;
+  }
+
+  .acc-table thead .acc-col-co {
+    width: 54px;
+  }
+
+  .acc-name-wrap {
+    gap: 0.5rem;
+  }
+
+  .acc-name-wrap .acc-card-icon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .acc-table .acc-desc {
+    font-size: 0.72rem;
+  }
+}
+
+.acc-th-sortable {
+  cursor: pointer;
+  user-select: none;
+}
+
+.acc-th-sortable:hover {
+  background-color: rgba(233, 69, 96, 0.3);
+}
+
+.acc-sort-arrow::after {
+  margin-left: 0.25rem;
+  font-size: 0.65rem;
+}
+
+.acc-sort-asc .acc-sort-arrow::after {
+  content: '\25B2';
+}
+
+.acc-sort-desc .acc-sort-arrow::after {
+  content: '\25BC';
+}
+
+.acc-name-cell {
+  text-align: left !important;
+}
+
+.acc-name-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.acc-name-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.acc-name-header {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: 0.2rem;
+}
+
+.acc-type-cell {
+  color: #94a3b8;
+  white-space: nowrap;
+}
+
 .acc-level {
-  font-size: 0.72rem;
   font-weight: 700;
   color: #cbd5e1;
-  margin-left: auto;
 }
 
-.acc-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.25rem;
-  margin-bottom: 0.4rem;
-}
-
-.acc-co-tags {
-  margin-top: 10px;
-}
-
-.acc-tag {
-  font-size: 0.68rem;
-  padding: 0.1rem 0.4rem;
-  border-radius: 3px;
-  background: rgba(255,255,255,0.06);
-  border: 1px solid rgba(255,255,255,0.1);
-  color: #94a3b8;
-}
-
-.acc-desc {
+.acc-table .acc-desc {
   font-size: 0.78rem;
   color: #94a3b8;
   line-height: 1.5;
   margin: 0;
 }
 
-.acc-co-badge {
-  font-size: 0.65rem;
-  padding: 0.1rem 0.35rem;
-  border-radius: 3px;
-  background: rgba(99, 102, 241, 0.15);
-  border: 1px solid rgba(99, 102, 241, 0.35);
-  color: #a5b4fc;
-  font-weight: 600;
-  letter-spacing: 0.02em;
+.acc-occ {
+  font-weight: 700;
+  color: #e2e8f0;
+  min-width: 3.2rem;
+}
+
+.acc-occ-none {
+  color: #475569;
+  font-weight: 400;
+}
+
+.acc-table .acc-col-active {
+  background-color: rgba(99, 102, 241, 0.18);
+}
+
+.acc-table thead th.acc-col-active {
+  background-color: rgba(99, 102, 241, 0.4);
 }
 
 .acc-co-filter {
@@ -2615,7 +2699,8 @@ a.material-item:hover .material-icon-wrap {
   margin-bottom: 1rem;
 }
 
-.filter-btn.acc-co-btn.active {
+.filter-btn.acc-co-btn.active,
+.filter-btn.acc-cat-btn.active {
   background: rgba(99, 102, 241, 0.3);
   border-color: #6366f1;
   color: #e0e7ff;

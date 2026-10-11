@@ -22,7 +22,10 @@ Pages.accessories = {
 
   _activeCO: null,
   _activeW: false,
+  _activeType: null,
   _searchQuery: '',
+  _sortKey: null,
+  _sortDir: -1,
 
   render: function () {
     var self = this;
@@ -47,9 +50,22 @@ Pages.accessories = {
         }).join('') +
       '</div>';
 
+    var allTypes = [];
+    all.forEach(function (a) {
+      var t = self._typeLabel(a);
+      if (t && allTypes.indexOf(t) === -1) allTypes.push(t);
+    });
+    allTypes.sort();
+
     var typeFilterHtml =
       '<div class="acc-type-filter">' +
         '<span class="filter-label">Type</span>' +
+        allTypes.map(function (t) {
+          return '<button class="filter-btn acc-cat-btn' + (self._activeType === t ? ' active' : '') + '" data-type="' + encodeURIComponent(t) + '">' + $('<span>').text(t).html() + '</button>';
+        }).join('') +
+      '</div>' +
+      '<div class="acc-type-filter">' +
+        '<span class="filter-label">Variant</span>' +
         '<button class="filter-btn acc-w-btn' + (self._activeW ? ' active' : '') + '" data-w="1">W</button>' +
       '</div>';
 
@@ -60,8 +76,8 @@ Pages.accessories = {
       '</div>';
 
     var sectionsHtml =
-      this._renderSection('Triggers', triggers) +
-      this._renderSection('Reactions', reactions);
+      this._renderSection('Triggers', triggers, allCOs) +
+      this._renderSection('Reactions', reactions, allCOs);
 
     setTimeout(function () {
       $('#acc-page').on('click', '.ac-nav-item', function (e) {
@@ -89,6 +105,21 @@ Pages.accessories = {
         self._applyFilter();
       });
 
+      $('#acc-page').on('click', '.acc-th-sortable', function () {
+        var key = $(this).data('sort-key');
+        self._sortDir = self._sortKey === key ? -self._sortDir : -1;
+        self._sortKey = key;
+        self._applySort();
+      });
+
+      $('#acc-page').on('click', '.acc-cat-btn', function () {
+        var t = decodeURIComponent($(this).data('type'));
+        self._activeType = self._activeType === t ? null : t;
+        $('.acc-cat-btn').removeClass('active');
+        if (self._activeType !== null) $(this).addClass('active');
+        self._applyFilter();
+      });
+
       $('#acc-page').on('click', '.acc-w-btn', function () {
         self._activeW = !self._activeW;
         $(this).toggleClass('active', self._activeW);
@@ -101,6 +132,7 @@ Pages.accessories = {
       });
 
       $('#acc-search').val(self._searchQuery);
+      self._applySort();
       self._applyFilter();
     }, 0);
 
@@ -125,82 +157,133 @@ Pages.accessories = {
   _applyFilter: function () {
     var co    = this._activeCO;
     var w     = this._activeW;
+    var type  = this._activeType;
     var query = (this._searchQuery || '').trim().toLowerCase();
     $('#acc-page .ac-section').each(function () {
       var $section = $(this);
       var sectionHasMatch = false;
-      $section.find('.acc-card-wrap').each(function () {
+      $section.find('.acc-row').each(function () {
         var cos  = $(this).data('cos');
         var name = decodeURIComponent($(this).data('name') || '');
         var isW  = $(this).data('w') === 1;
+        var typeOk   = type === null || decodeURIComponent($(this).data('type')) === type;
         var coOk     = co === null || (cos && cos.indexOf(co) !== -1);
         var wOk      = !w || isW;
         var searchOk = !query || name.indexOf(query) !== -1;
-        var show = coOk && wOk && searchOk;
+        var show = coOk && wOk && typeOk && searchOk;
         $(this).toggle(show);
         if (show) sectionHasMatch = true;
       });
       $section.toggle(sectionHasMatch);
     });
+    $('#acc-page .acc-col-co').removeClass('acc-col-active');
+    if (co !== null) $('#acc-page .acc-col-co[data-co="' + co + '"]').addClass('acc-col-active');
   },
 
-  _renderSection: function (title, items) {
+  _applySort: function () {
+    var key = this._sortKey;
+    var dir = this._sortDir;
+    $('#acc-page .acc-th-sortable').removeClass('acc-sort-asc acc-sort-desc');
+    if (key) {
+      $('#acc-page .acc-th-sortable[data-sort-key="' + key + '"]').addClass(dir === 1 ? 'acc-sort-asc' : 'acc-sort-desc');
+    }
+    $('#acc-page .acc-table tbody').each(function () {
+      var $rows = $(this).children('.acc-row').get();
+      $rows.sort(function (a, b) {
+        if (key) {
+          var va = $(a).data('sort-' + key) || 0;
+          var vb = $(b).data('sort-' + key) || 0;
+          if (va !== vb) return (va - vb) * dir;
+        }
+        return $(a).data('order') - $(b).data('order');
+      });
+      $(this).append($rows);
+    });
+  },
+
+  _typeLabel: function (a) {
+    return a.en_type || a.tags.map(function (t) { return ACC_TAG_LABEL[t] || t; }).join(', ');
+  },
+
+  _renderSection: function (title, items, allCOs) {
+    var self = this;
     var anchorId = title === 'Triggers' ? 'acc-triggers' : 'acc-reactions';
     var sorted = items.slice().sort(function (a, b) {
-      var la = a.en_type || (a.tags.map(function (t) { return ACC_TAG_LABEL[t] || t; }).join(', '));
-      var lb = b.en_type || (b.tags.map(function (t) { return ACC_TAG_LABEL[t] || t; }).join(', '));
+      var la = self._typeLabel(a);
+      var lb = self._typeLabel(b);
       if (la < lb) return -1;
       if (la > lb) return 1;
       var na = a.en_name || a.name;
       var nb = b.en_name || b.name;
-      return na < nb ? -1 : na > nb ? 1 : 0;
+      if (na !== nb) return na < nb ? -1 : 1;
+      // W variant first
+      return (b.statetype.indexOf('_W') !== -1) - (a.statetype.indexOf('_W') !== -1);
     });
-    var cards = sorted.map(function (a) {
+
+    var headHtml =
+      '<th class="acc-th-name">Name</th>' +
+      '<th class="acc-th-type">Type</th>' +
+      '<th class="acc-th-sortable acc-th-lv" data-sort-key="lv">Lv.<span class="acc-sort-arrow"></span></th>' +
+      allCOs.map(function (co) {
+        return '<th class="acc-th-sortable acc-col-co" data-co="' + co + '" data-sort-key="co' + co + '">CO' + co + '<span class="acc-sort-arrow"></span></th>';
+      }).join('');
+
+    var rows = sorted.map(function (a, i) {
       var stateIcon = ACC_ICON_BASE + 'statetype_' + a.statetype + '.png';
       var skillIcon = ACC_SKILL_BASE + encodeURIComponent(a.icon) + '.png';
 
       var displayName = a.en_name || a.name.replace(/^[應觸]元件W?[-—]/, '');
       var isW = a.statetype.indexOf('_W') !== -1;
+      var tagLabel = self._typeLabel(a);
+      var lv = parseInt((a.level || '').replace(/\D/g, ''), 10) || 0;
 
-      var tagLabel = a.en_type || (a.tags.map(function (t) { return ACC_TAG_LABEL[t] || t; }).join(', '));
-      var tagsHtml = tagLabel ? '<span class="acc-tag">' + $('<span>').text(tagLabel).html() + '</span>' : '';
-
-      var cosHtml = (a.cos || []).map(function (c) {
-        return '<span class="acc-co-badge">CO' + c + '</span>';
+      var occ = a.occurrence || {};
+      var sortAttrs = ' data-sort-lv="' + lv + '"';
+      var coCells = allCOs.map(function (co) {
+        var n = occ[co] || 0;
+        sortAttrs += ' data-sort-co' + co + '="' + n + '"';
+        return '<td class="acc-col-co acc-occ' + (n ? '' : ' acc-occ-none') + '" data-co="' + co + '">' + n + '</td>';
       }).join('');
 
       var cosAttr = JSON.stringify(a.cos || []);
       var nameAttr = encodeURIComponent(displayName.toLowerCase());
 
       return (
-        '<div class="col-12 col-sm-6 col-lg-4 col-xl-3 acc-card-wrap" data-cos=\'' + cosAttr + '\' data-name="' + nameAttr + '" data-w="' + (isW ? 1 : 0) + '">' +
-          '<div class="acc-card">' +
-            '<div class="acc-card-icon">' +
-              '<img class="acc-statetype-icon" src="' + stateIcon + '" alt="" />' +
-              '<img class="acc-skill-icon' +
-                (a.statetype === 'Condition_W' ? ' acc-skill-icon--trigger-w' : '') +
-                (a.statetype === 'Function_W'  ? ' acc-skill-icon--reaction-w' : '') +
-              '" src="' + skillIcon + '" alt="" />' +
-            '</div>' +
-            '<div class="acc-card-body">' +
-              '<div class="acc-card-header">' +
-                '<span class="acc-name">' + $('<span>').text(displayName).html() + '</span>' +
-                (isW ? '<span class="acc-w-badge">W</span>' : '') +
-                '<span class="acc-level">' + (a.level || '') + '</span>' +
+        '<tr class="acc-row" data-order="' + i + '" data-cos=\'' + cosAttr + '\' data-name="' + nameAttr + '" data-w="' + (isW ? 1 : 0) + '" data-type="' + encodeURIComponent(tagLabel) + '"' + sortAttrs + '>' +
+          '<td class="acc-name-cell">' +
+            '<div class="acc-name-wrap">' +
+              '<div class="acc-card-icon">' +
+                '<img class="acc-statetype-icon" src="' + stateIcon + '" alt="" />' +
+                '<img class="acc-skill-icon' +
+                  (a.statetype === 'Condition_W' ? ' acc-skill-icon--trigger-w' : '') +
+                  (a.statetype === 'Function_W'  ? ' acc-skill-icon--reaction-w' : '') +
+                '" src="' + skillIcon + '" alt="" />' +
               '</div>' +
-              (tagsHtml ? '<div class="acc-tags">' + tagsHtml + '</div>' : '') +
-              '<p class="acc-desc">' + Glossary.parseEffects(a.en_describe || a.describe) + '</p>' +
-              (cosHtml ? '<div class="acc-tags acc-co-tags">' + cosHtml + '</div>' : '') +
+              '<div class="acc-name-body">' +
+                '<div class="acc-name-header">' +
+                  '<span class="acc-name">' + $('<span>').text(displayName).html() + '</span>' +
+                  (isW ? '<span class="acc-w-badge">W</span>' : '') +
+                '</div>' +
+                '<p class="acc-desc">' + Glossary.parseEffects(a.en_describe || a.describe) + '</p>' +
+              '</div>' +
             '</div>' +
-          '</div>' +
-        '</div>'
+          '</td>' +
+          '<td class="acc-type-cell">' + $('<span>').text(tagLabel).html() + '</td>' +
+          '<td class="acc-level">' + (lv || '') + '</td>' +
+          coCells +
+        '</tr>'
       );
     }).join('');
 
     return (
       '<div class="ac-section" id="' + anchorId + '">' +
         '<h2 class="ac-section-title">' + title + ' <span class="badge bg-secondary ms-2" style="font-size:0.7rem">' + items.length + '</span></h2>' +
-        '<div class="row g-3">' + cards + '</div>' +
+        '<div class="dispatch-table-wrap">' +
+          '<table class="dispatch-table acc-table">' +
+            '<thead><tr>' + headHtml + '</tr></thead>' +
+            '<tbody>' + rows + '</tbody>' +
+          '</table>' +
+        '</div>' +
       '</div>'
     );
   },
@@ -208,6 +291,9 @@ Pages.accessories = {
   destroy: function () {
     this._activeCO = null;
     this._activeW = false;
+    this._activeType = null;
     this._searchQuery = '';
+    this._sortKey = null;
+    this._sortDir = -1;
   },
 };
