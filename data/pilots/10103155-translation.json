@@ -6,11 +6,11 @@
   "Occupation": "Sniper",
   "Talent0_2Ability": {
     "name": "Trauma Profiling",
-    "SpecificEffects": "When actively attacking with a Light Rifle, inflicts different <buf ID=900137>[Battle Wound]</buf> based on the part hit, lasting for <color=#F74848>2</color> turns. When inflicting <buf ID=900137>[Battle Wound]</buf> with an active attack, triggers <buf ID=900004>[Re-ATK]</buf>, allowing movement of <color=#F74848>2</color> tiles. This effect can trigger <color=#F74848>1</color> times per turn."
+    "SpecificEffects": "When actively attacking with a Light Rifle and hitting an enemy, applies different <buf ID=900137>[Scar]</buf> effects based on the part type, lasting for <color=#F74848>2</color> turns. When an active attack applies <buf ID=900137>[Scar]</buf>, can additionally activate <buf ID=900004>[Re-ATK]</buf>, and can move <color=#F74848>2</color> tiles before attacking. Can only trigger <color=#F74848>1</color> time per turn."
   },
   "Talent3_5Ability": {
     "name": "Trauma Profiling",
-    "SpecificEffects": "When actively attacking with a Light Rifle, inflicts different <buf ID=900137>[Battle Wound]</buf> based on the part hit, lasting for <color=#F74848>2</color> turns. When inflicting <buf ID=900137>[Battle Wound]</buf> with an active attack, triggers <buf ID=900004>[Re-ATK]</buf>, allowing movement of <color=#F74848>2</color> tiles. This effect can trigger <color=#F74848>1</color> times per turn.\nWhen own HP percentage is <color=#F74848>80%</color> or above, ranged weapon attack increases by <color=#F74848>15%</color>."
+    "SpecificEffects": "When actively attacking with a Light Rifle and hitting an enemy, applies different <buf ID=900137>[Scar]</buf> effects based on the part type, lasting for <color=#F74848>2</color> turns. When an active attack applies <buf ID=900137>[Scar]</buf>, can additionally activate <buf ID=900004>[Re-ATK]</buf>, and can move <color=#F74848>2</color> tiles before attacking. Can only trigger <color=#F74848>1</color> time per turn.\nWhen HP is above <color=#F74848>80%</color>, Ranged Weapon ATK increases by <color=#F74848>15%</color>."
   },
   "skills": {
     "300001": {
@@ -24,32 +24,32 @@
       "SpecificEffects": "During an Active Attack, deals an additional <color=#F74848>20%</color> DMG to the part with HP below <color=#F74848>50%</color>."
     },
     "301203": {
-      "name": "Evidence Collection",
+      "name": "Forensics",
       "describe": "Chooses <color=#F74848>1</color> enemy within <range type=0>4-tile diamond</range> area, inflicts <color=#F74848>1</color> <buf ID=900137>[Battle Wound]</buf> according to the lowest HP part. Can continue to act without moving.",
       "SpecificEffects": ""
     },
     "301204": {
-      "name": "Distress Recovery",
+      "name": "Scar Retrieval",
       "describe": "",
       "SpecificEffects": "When initiating combat and destroying a part carrying <buf ID=900137>[Battle Wound]</buf>, restores all AP consumed by the skill, up to the maximum of <color=#F74848>3</color> AP. This effect can trigger <color=#F74848>1</color> times per turn."
     },
     "301205": {
-      "name": "Remote Analysis",
+      "name": "Remote Deconstruction",
       "describe": "",
       "SpecificEffects": "When actively attacking, for each <color=#F74848>1</color> tile away from the target, hit rate increases by <color=#F74848>4%</color>, up to <color=#F74848>20%</color>."
     },
     "301206": {
-      "name": "Full Evaluation",
+      "name": "Total Deconstruction",
       "describe": "Attacks a target with Light Rifle, dealing <color=#F74848>1.5x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking. After combat, applies all <buf ID=900137>[Battle Wound]</buf> debuffs to the target, lasting for <color=#F74848>2</color> turns.",
       "SpecificEffects": ""
     },
     "301207": {
-      "name": "Deep Insights",
+      "name": "Battlefield Awareness",
       "describe": "",
-      "SpecificEffects": "For each <color=#F74848>1</color> <buf ID=900137>[Battle Wound]</buf> on the field, increases critical damage by <color=#F74848>4%</color>, up to <color=#F74848>20%</color>."
+      "SpecificEffects": "For each <buf ID=900137>[Scar]</buf> effect on the battlefield, Crit DMG <color=#F74848>+4%</color>, up to <color=#F74848>20%</color>."
     },
     "301208": {
-      "name": "Multi-Phase Plan",
+      "name": "Multi-Vector Mapping",
       "describe": "Attacks a target with Light Rifle, dealing <color=#F74848>0.7x</color> DMG. Selects <color=#F74848>2</color> additional target to deal <color=#F74848>0.7x</color> each. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking. Can select the same target multiple times. Only the first target will counter attack.",
       "SpecificEffects": ""
     }
@@ -80,7 +80,7 @@
       "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
     },
     "301231": {
-      "name": "Hunting Mark 1",
+      "name": "Hunter's Mark 1",
       "SpecificEffects": "When actively attacking and breaking parts with a ranged weapon, gains <buf ID=900141>[Hunting]</buf> according to the part hit. Can trigger <color=#F74848>2</color> times per turn."
     },
     "300032": {
@@ -92,19 +92,19 @@
       "SpecificEffects": "<buf ID=900004>[Re-ATK]</buf>'s effective times per turn <color=#F74848>+1</color>."
     },
     "301234": {
-      "name": "Hunting Mark 2",
+      "name": "Hunter's Mark 2",
       "SpecificEffects": "After actively attacking and destroying a target with a ranged weapon, can additionally move <color=#F74848>3</color> tiles."
     },
     "301235": {
-      "name": "Hunting Mark 3",
-      "SpecificEffects": "<buf ID=900142>[Hunting Mark 1]</buf> no longer has trigger limit"
+      "name": "Hunter's Mark 3",
+      "SpecificEffects": "<buf ID=900142>[Hunter's Mark 1]</buf> no longer has trigger limit"
     },
     "301236": {
-      "name": "Hunting Mark 4",
+      "name": "Hunter's Mark 4",
       "SpecificEffects": "At the start of action, randomly gains <color=#F74848>1</color> of unobtained <buf ID=900141>[Hunting]</buf> buffs."
     },
     "301241": {
-      "name": "Unveiling 1",
+      "name": "Veilpiercer 1",
       "SpecificEffects": "After initiating combat, if the target is inflicted with <buf ID=900137>[Battle Wound]</buf>, triggers <buf ID=900004>[Re-ATK]</buf>. Can move <color=#F74848>2</color> tiles before attacking. Can trigger <color=#F74848>1</color> times per turn."
     },
     "300042": {
@@ -116,22 +116,22 @@
       "SpecificEffects": "When destroying a target, additionally restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>2</color> times per turn."
     },
     "301244": {
-      "name": "Unveiling 2",
+      "name": "Veilpiercer 2",
       "SpecificEffects": "Each time talent is triggered, applies <buf ID=900137>[Battle Wound]</buf> to enemies of the same type within <color=#F74848>1</color> ring of the target."
     },
     "301245": {
-      "name": "Unveiling 3",
+      "name": "Veilpiercer 3",
       "SpecificEffects": "When attacking target carrying <buf ID=900137>[Battle Wound]</buf>, Final DMG dealt is increased by <color=#F74848>5%</color>, with an additional <color=#F74848>5%</color> for each <color=#F74848>1</color> additional stack of <buf ID=900137>[Battle Wound]</buf>, up to<color=#F74848>15%</color>."
     },
     "301246": {
-      "name": "Unveiling 4",
+      "name": "Veilpiercer 4",
       "SpecificEffects": "Talent <buf ID=900004>[Re-ATK]</buf> effect changes to <buf ID=900005>[Re-Act]</buf>."
     }
   },
   "version": "2.4",
   "hiddenSkills": [
     {
-      "name": "Injury Assessment",
+      "name": "Targeted Diagnosis",
       "icon": "Icon_skill_main_1115",
       "type": "EquipmentSkill",
       "Ap": "2",

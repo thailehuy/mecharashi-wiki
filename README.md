@@ -69,6 +69,7 @@ data/
   modules/                        # compile.py, scrape-modules.js → compiled.js/json (ModulesData)
   accessories/                    # compiled.js/json; extract-chain-traits.py → chain-traits.js/json (ChainTraitsData, SSR TA/RA pairs from the mined DB)
   builder/                        # generate-index-maps.py → index-maps.js/json (BuilderIndexMaps)
+  rd/                             # build_rd_totals.py → rd-totals.json (max R&D bonuses from the mined DB, for the DMG calculator)
   glossary.json                   # → GlossaryData
   dispatch.json                   # → dispatch table data
   exskills.json                   # → ExSkillsData
@@ -192,7 +193,7 @@ sqlite3 data/screenshots/mined/mecharashi.db \
 
 **Rules for updating wiki data from the DB**
 
-- **Global is behind CN.** The DB has no data for ~20 CN-only pilots and STs, so they still need manual entry ([data/README.md](data/README.md)). Don't add new pilots/STs from the DB without deciding to.
+- **Global is behind CN.** The DB covers Global only up to **v2.5**: every pilot and ST up to v2.5 is in it, and none from v2.6 on. v2.6–3.2 are CN-only (not on Global yet) and v3.3+ will come with a future extraction, so these keep the wiki's own data, and v3.3+ still need manual entry ([data/README.md](data/README.md)). When joining wiki data to the DB, expect v2.6+ entries to have no match. Don't add new pilots/STs from the DB without deciding to.
 - **Never overwrite English text.** To tell Chinese from English, look for CJK characters (`[　-鿿＀-￯]`), not "any non-ASCII": English text often contains em-dashes, curly quotes or accents (Fenrisúlfr).
 - **Write overrides to `<ID>-translation.json`, not the raw `<ID>.json`.** Pilot bios go in `Introduction`; ST descriptions go in `introduce`. Keep the file's formatting: 2-space indent, `ensure_ascii=False`, and its trailing newline (some files have one, some don't).
 - **Glossary: match by exact buff ID *and* name, via `buffs`.** Don't use the name-keyed `glossary` table: one name there covers many buff IDs, so it hands out the wrong text (e.g. Short Circuit getting Stealth's description, Guts becoming "Guts (Test Use)"). The DB's text is sometimes vaguer than ours (e.g. Guard, Poised, Heroism); keep ours when it's more specific.
@@ -200,6 +201,22 @@ sqlite3 data/screenshots/mined/mecharashi.db \
 - **Renaming is a separate decision.** The DB uses official global names, which sometimes differ from ours (e.g. Improved Attack → Attack Enhancement). Pages resolve bare `[Name]` references through the glossary name index, so a rename must be applied everywhere the name is used (`js/pages/*.js`, `data/dispatch.json`, `data/shops.js`, weapon `pilot` fields, effect text). Some DB names are internal labels (`Bionic Computer 7`, `EVA-01 Pilot`); don't use those.
 - **The DB has no image or icon keys.** Icons still come from the existing files and the assets repo.
 - Run `python3 compile.py` after any change.
+
+**R&D totals (for the DMG calculator)**
+
+`data/rd/rd-totals.json` holds the maximum R&D bonuses, i.e. what a fully researched tree gives, exported from the DB's `rd_totals` table. Regenerate it with `python3 data/rd/build_rd_totals.py`. It is split into:
+
+- `pilot`: by class (Fighter, Guardian, Machinist, Raider, Sniper, Tactician). Flat and % bonuses to the six attributes (`PilotBaseProperty<Attr>Add` / `Multi`).
+- `mech`: Light/Medium/Heavy ST, plus a "SS Quality (Prismatic)" version of each. Per-part HP and Armor, Fire value, Dodge and Hit, crit defense.
+- `weapon`: by weapon type (`HMG weapons`, `SR weapons`, …). That type's Attack and Hit value (`<Type>AttackAdd` / `HitValueAdd`), plus crit (`ActorWeaponCriticalAppendAdd`).
+
+Each stat is `{ "total": …, "nodes": … }` (`nodes` = how many R&D nodes add up to it). `*Add` stats are flat; `*Multi` stats are fractions (`0.2` = +20%). R&D flat values go in *before* the % bonuses:
+
+```
+Pilot attribute = (Lv70 base + neurons + chips + R&D flat) × (1 + potential bonus + R&D %)
+```
+
+The individual nodes and features are in the `rd_nodes` and `rd_features` tables if the calculator needs them.
 
 ### Running locally
 

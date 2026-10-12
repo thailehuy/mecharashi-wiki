@@ -6,11 +6,11 @@
   "Occupation": "Fighter",
   "Talent0_2Ability": {
     "name": "Extreme Will",
-    "SpecificEffects": "During an Active Attack, if a part is broken, gain <buf ID=1008503>[Euphoria II]</buf> after combat, up to <color=#F74848>5</color> stacks, lasting for <color=#F74848>2</color> turns."
+    "SpecificEffects": "When actively attacking, if a part is destroyed, gains <buf ID=1008503>[Euphoria I]</buf> after combat. Stacks up to <color=#F74848>5</color> times. Lasts for <color=#F74848>2</color> turns."
   },
   "Talent3_5Ability": {
     "name": "Extreme Will",
-    "SpecificEffects": "During an Active Attack, if a part is broken, gain <buf ID=1008503>[Euphoria II]</buf> after combat, up to <color=#F74848>5</color> stacks, lasting for <color=#F74848>2</color> turns.\nIgnore unit obstruction when moving."
+    "SpecificEffects": "When actively attacking, if a part is destroyed, gains <buf ID=1008503>[Euphoria I]</buf> after combat. Stacks up to <color=#F74848>5</color> times. Lasts for <color=#F74848>2</color> turns.\nIgnores unit obstruction when moving."
   },
   "skills": {
     "100001": {
@@ -50,7 +50,7 @@
     },
     "100808": {
       "name": "Double Bolt",
-      "describe": "Uses two Melee Weapons to attack a target, dealing <color=#F74848>0.85x</color> DMG <color=#F74848>2</color> times. The <color=#F74848>1st</color> attack hits the part with the highest HP. If this part is not destroyed, the <color=#F74848>2nd</color> attack will hit the same part.",
+      "describe": "Uses two Melee Weapons to attack a target, dealing <color=#F74848>0.85x</color> DMG <color=#F74848>2</color> times. The first attack hits the part with the highest HP. If this part is not destroyed, the second attack will hit the same part.",
       "SpecificEffects": ""
     },
     "100809": {

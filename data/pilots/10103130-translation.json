@@ -6,11 +6,11 @@
   "Occupation": "Fighter",
   "Talent0_2Ability": {
     "name": "Courage Burst",
-    "SpecificEffects": "In combat, if a part is destroyed, gains <color=#F74848>1</color> stack of <buf ID=1013503>[Vigor]</buf>. If a target is destroyed, gains an additional <color=#F74848>1</color> stack of <buf ID=1013503>[Vigor]</buf>. <buf ID=1013503>[Vigor]</buf> stacks up to <color=#F74848>10</color> times. At end of action, deducts <color=#F74848>1</color> stack of <buf ID=1013503>[Vigor]</buf>."
+    "SpecificEffects": "In combat, if a part is destroyed, gains <color=#F74848>1</color> stack of <buf ID=1013503>[Vigor]</buf>. If a target is destroyed, gains an additional stack. <buf ID=1013503>[Vigor]</buf> stacks up to <color=#F74848>10</color> times. When action ends, deducts <color=#F74848>1</color> stack of <buf ID=1013503>[Vigor]</buf>."
   },
   "Talent3_5Ability": {
     "name": "Courage Burst",
-    "SpecificEffects": "In combat, if a part is destroyed, gains <color=#F74848>1</color> stack of <buf ID=1013503>[Vigor]</buf>. If a target is destroyed, gains an additional <color=#F74848>1</color> stack of <buf ID=1013503>[Vigor]</buf>. <buf ID=1013503>[Vigor]</buf> stacks up to <color=#F74848>10</color> times. At end of action, deducts <color=#F74848>1</color> stack of <buf ID=1013503>[Vigor]</buf>. When attacking with a Chainsaw, ignores <color=#F74848>7.5%</color> of the target's Armor for every <color=#F74848>1</color> hit. Resets after attacking."
+    "SpecificEffects": "In combat, if a part is destroyed, gains <color=#F74848>1</color> stack of <buf ID=1013503>[Vigor]</buf>. If a target is destroyed, gains an additional stack. <buf ID=1013503>[Vigor]</buf> stacks up to <color=#F74848>10</color> times. At end of action, deducts <color=#F74848>1</color> stack of <buf ID=1013503>[Vigor]</buf>.\nWhen attacking with a Chainsaw, ignores <color=#F74848>7.5%</color> of the target's Armor for every <color=#F74848>1</color> hit. Resets after attacking."
   },
   "skills": {
     "100001": {

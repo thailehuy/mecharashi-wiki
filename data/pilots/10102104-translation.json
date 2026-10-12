@@ -6,11 +6,11 @@
   "Occupation": "Fighter",
   "Talent0_2Ability": {
     "name": "Overbearing",
-    "SpecificEffects": "During an Active Attack in combat, inflict <buf ID=1006502>[Timidity I]</buf> on the target after combat, effective <color=#F74848>1</color> time and lasting for <color=#F74848>1</color> turn."
+    "SpecificEffects": "When initiating combat, inflicts <buf ID=1006502>[Timidity I]</buf> on the target after combat. Can trigger <color=#F74848>1</color> time. Lasts for <color=#F74848>1</color> turn."
   },
   "Talent3_5Ability": {
     "name": "Overbearing",
-    "SpecificEffects": "During an Active Attack in combat, inflict <buf ID=1006502>[Timidity I]</buf> on the target after combat, effective <color=#F74848>1</color> time and lasting for <color=#F74848>1</color> turn.\nWhen inflicting debuffs, the duration <color=#F74848>+1</color>."
+    "SpecificEffects": "When initiating combat, inflicts <buf ID=1006502>[Timidity I]</buf> on the target after combat. Can trigger <color=#F74848>1</color> time. Lasts for <color=#F74848>1</color> turn.\nWhen inflicting debuffs, duration <color=#F74848>+1</color>."
   },
   "skills": {
     "100001": {
@@ -49,7 +49,7 @@
       "SpecificEffects": "When casting an AoE Attack, if <color=#F74848>3</color> or more targets are hit, restore <color=#F74848>1</color> AP after combat."
     },
     "100608": {
-      "name": "Whirlwind",
+      "name": "Warcry",
       "describe": "Uses Polearm to attack all targets within a <range type=2>1-ring</range> area, dealing <color=#F74848>0.9x</color> AoE DMG. After combat, targets hit lose <color=#F74848>1</color> AP.",
       "SpecificEffects": ""
     }
@@ -128,5 +128,15 @@
       "SpecificEffects": "When destroying a target that has <buf ID=900035>[Timidity]</buf>, restore <color=#F74848>1</color> AP to yourself, effective up to <color=#F74848>2</color> times per turn."
     }
   },
-  "version": "1.0"
+  "version": "1.0",
+  "hiddenSkills": [
+    {
+      "name": "Chop",
+      "icon": "Icon_skill_main_1013",
+      "type": "EquipmentSkill",
+      "Ap": "2",
+      "CD": "0",
+      "describe": "Uses a Polearm to attack a target, dealing <color=#F74848>1.6x</color> DMG."
+    }
+  ]
 }

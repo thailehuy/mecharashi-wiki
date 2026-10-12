@@ -14,7 +14,7 @@ var BUILDER_WEAPON_POSITION_FALLBACK = {
 
 // Rail Gun (WeaponType2 RailGun) and Manipulator (the Heal-type backpack)
 // are hand-restricted to Medium mechs in the source data, but a handful of
-// pilots' talents explicitly override that ("Can equip Railgun...") in
+// pilots' talents explicitly override that ("Can equip Rail Guns...") in
 // addition to reducing that item's effective weight — found by scanning
 // every pilot's talent text for a weight-reduction clause. `unlock: true`
 // lets that weapon/backpack type appear for any mech type when this pilot
@@ -711,7 +711,7 @@ Pages.builder = {
   },
 
   // `pilot`, if given, lets a talent-unlock override (e.g. Verna's "Can
-  // equip Railgun") include a weapon/backpack whose own model/mech-type
+  // equip Rail Guns") include a weapon/backpack whose own model/mech-type
   // restriction wouldn't otherwise allow it.
   _weaponsForMech: function (mechType, pilot) {
     var self = this;

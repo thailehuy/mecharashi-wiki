@@ -6,11 +6,11 @@
   "Occupation": "Guardian",
   "Talent0_2Ability": {
     "name": "Frontline Tending",
-    "SpecificEffects": "When receiving active repairs, the Repair AMT for the part with the lowest HP <color=#F74848>+50%</color>, while the Repair AMT for other parts <color=#F74848>-10%</color>."
+    "SpecificEffects": "When receiving active repairs, Repair AMT for the part with the lowest HP percentage <color=#F74848>+50%</color>. Repair AMT for other parts <color=#F74848>-10%</color>."
   },
   "Talent3_5Ability": {
     "name": "Frontline Tending",
-    "SpecificEffects": "When receiving active repairs, the Repair AMT for the part with the lowest HP <color=#F74848>+50%</color>, while the Repair AMT for other parts <color=#F74848>-10%</color>.\nAfter receiving active repairs, gain DMG Taken <color=#F74848>-5%</color>, up to <color=#F74848>3</color> stacks, lasting for <color=#F74848>2</color> turns."
+    "SpecificEffects": "When receiving active repairs, Repair AMT for the part with the lowest HP percentage <color=#F74848>+50%</color>. Repair AMT for other parts <color=#F74848>-10%</color>.\nAfter receiving active repairs, DMG Taken <color=#F74848>-5%</color>. Stacks up to <color=#F74848>3</color> times. Lasts for <color=#F74848>2</color> turns."
   },
   "skills": {
     "600001": {
@@ -128,5 +128,15 @@
       "SpecificEffects": "When receiving active repairs, all parts gain an additional effect of Repair AMT <color=#F74848>+20%</color>."
     }
   },
-  "version": "1.0"
+  "version": "1.0",
+  "hiddenSkills": [
+    {
+      "name": "Guard",
+      "icon": "Icon_skill_order_1031",
+      "type": "Order",
+      "Ap": "1",
+      "CD": "2",
+      "describe": "Protects allies within <color=#F74848>2</color> adjacent tiles from Assault and Ranged attacks. Triggers up to <color=#F74848>2</color> times per turn and lasts <color=#F74848>2</color> turns. Additionally, gains <buf ID=7100702>[Defensive Stance I]</buf>. Can only trigger <color=#F74848>1</color> time per turn."
+    }
+  ]
 }

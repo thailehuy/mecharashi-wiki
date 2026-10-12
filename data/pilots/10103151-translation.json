@@ -6,7 +6,7 @@
   "Occupation": "Raider",
   "Talent0_2Ability": {
     "name": "EVA-01 Pilot",
-    "SpecificEffects": "Can perform <buf ID=900088>[Synchronization]</buf> with ST. After initiating combat, if possessing <color=#F74848>3</color> or more buffs, triggers <buf ID=900004>[Re-ATK]</buf>. Cannot move before attacking. Can trigger <color=#F74848>1</color> time per turn."
+    "SpecificEffects": "Can perform <buf ID=900088>[Synchronization]</buf> with ST. After actively attacking, if possessing <color=#F74848>3</color> or more buff effects, triggers <buf ID=900004>[Re-ATK]</buf>. Cannot move before attacking. Can trigger <color=#F74848>1</color> time per turn."
   },
   "Talent3_5Ability": {
     "name": "EVA-01 Pilot",
@@ -106,7 +106,7 @@
     },
     "201434": {
       "name": "Overloaded Mode 2",
-      "SpecificEffects": "After initiating combat, randomly duplicates <color=#F74848>1</color> dispellable buff from the target. Can trigger up to <color=#F74848>2</color> times per turn."
+      "SpecificEffects": "After initiating combat, randomly replicates <color=#F74848>1</color> dispellable buff from the target. Can trigger up to twice per turn."
     },
     "201435": {
       "name": "Overloaded Mode 3",

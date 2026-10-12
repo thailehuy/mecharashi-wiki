@@ -6,11 +6,11 @@
   "Occupation": "Raider",
   "Talent0_2Ability": {
     "name": "Fearless Army",
-    "SpecificEffects": "In combat, for each enemy within range, DMG <color=#F74848>+5%</color>, up to <color=#F74848>20%</color>."
+    "SpecificEffects": "In combat, for every <color=#F74848>1</color> enemy within range, DMG <color=#F74848>+5%</color>, up to <color=#F74848>20%</color>."
   },
   "Talent3_5Ability": {
     "name": "Fearless Army",
-    "SpecificEffects": "In combat, for every <color=#F74848>1</color> enemy within range, DMG <color=#F74848>+5%</color> and Crit Rate <color=#F74848>+5%</color>, up to <color=#F74848>20%</color> each.\nWhen an Arm's HP is above <color=#F74848>60%</color>, its DMG Taken <color=#F74848>-25%</color>."
+    "SpecificEffects": "In combat, for every <color=#F74848>1</color> enemy within range, DMG <color=#F74848>+5%</color>, up to <color=#F74848>20%</color>.\nWhen Arm HP is greater than or equal to <color=#F74848>60%</color>, Arm DMG Taken <color=#F74848>-25%</color>."
   },
   "skills": {
     "200001": {
@@ -102,7 +102,7 @@
     },
     "200035": {
       "name": "Perfect Position 3",
-      "SpecificEffects": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, Crit Rate <color=#F74848>+12%</color>."
+      "SpecificEffects": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, Crit Rate <color=#F74848>+15%</color>."
     },
     "200036": {
       "name": "Perfect Position 4",

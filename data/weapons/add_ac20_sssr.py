@@ -55,14 +55,14 @@ WEAPONS = [
     },
     {
         'ID': '10315124', 'type': 'Rod', 'pilot': 'Zoey', 'icon': 'Icon_weapon_10300601',
-        'talent': ('601150', 'Fearless Hunting Fang'),
+        'talent': ('601150', 'Intrepid Fang'),
         'name': 'Void Severance',
         'talentIcon': 'Icon_skill_talent_5155', 'skillIds': ('90013', '90014', '90015'),
         'skillIcons': ('Icon_skill_passive_1181', None, 'Icon_skill_passive_5187'),
         'skillNames': ('Mighty Swing', 'Predator Hunt', 'Menace'),
         'skills': (
             "When attacking with a Polearm, DMG +15%, Hit Rate +10%. This effect doubles during the enemy turn.",
-            "Enhanced [Fearless Hunting Fang]: When sortied, gains 2 stacks of [Advantage]. Stacks up to 3 times. At the end of action, for every 1 enemy within a 6 tile range inflicted with [Provocation], gains 1 stack of [Advantage]. When attacking with a Polearm, deals 35% Splash DMG to another part with the lowest HP percentage. For every 1 enemy inflicted with [Provocation] within a 6 tile range, attack multiplier +0.05, up to 0.2.",
+            "Enhanced [Intrepid Fang]: When sortied, gains 2 stacks of [Advantage]. Stacks up to 3 times. At the end of action, for every 1 enemy within a 6 tile range inflicted with [Provocation], gains 1 stack of [Advantage]. When attacking with a Polearm, deals 35% Splash DMG to another part with the lowest HP percentage. For every 1 enemy inflicted with [Provocation] within a 6 tile range, attack multiplier +0.05, up to 0.2.",
             "After attacking, inflicts target with [Hit Rate Down III] and [Dodge Rate Down II], lasting for 1 turn.",
         ),
     },

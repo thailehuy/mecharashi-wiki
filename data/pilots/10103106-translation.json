@@ -6,15 +6,15 @@
   "Occupation": "Tactician",
   "Talent0_2Ability": {
     "name": "Elite Hacker",
-    "SpecificEffects": "When both shoulders are equipped with Missile Launchers, the <buf ID=900016>[Salvo]</buf> code can be used to launch an attack, dealing <color=#F74848>0.75x</color> DMG <color=#F74848>2</color> times to a part and Splash DMG equal to <color=#F74848>50%</color> of this damage to other parts."
+    "SpecificEffects": "When both shoulders are equipped with Missile Launchers, can use the <buf ID=900016>[Salvo]</buf> code to launch an attack, dealing <color=#F74848>0.7x</color> DMG <color=#F74848>2</color> times to the part hit and Splash DMG equal to <color=#F74848>50%</color> of this damage to other parts."
   },
   "Talent3_5Ability": {
     "name": "Elite Hacker",
-    "SpecificEffects": "When both shoulders are equipped with Missile Launchers, the <buf ID=900016>[Salvo]</buf> code can be used to launch an attack, dealing <color=#F74848>0.75x</color> DMG <color=#F74848>2</color> times to a part and Splash DMG equal to <color=#F74848>50%</color> of this damage to other parts;\n<buf ID=900016>[Salvo]</buf>-style skill DMG <color=#F74848>+15%</color>."
+    "SpecificEffects": "When both shoulders are equipped with Missile Launchers, can use the <buf ID=900016>[Salvo]</buf> code to launch an attack, dealing <color=#F74848>0.7x</color> DMG to the part hit <color=#F74848>2</color> times and Splash DMG equal to <color=#F74848>50%</color> of this damage to other parts.\n<buf ID=900016>[Salvo]</buf>-style skill DMG <color=#F74848>+15%</color>."
   },
   "skills": {
     "400001": {
-      "name": "Strategic Bombing 1",
+      "name": "Strategic Strike 1",
       "describe": "",
       "SpecificEffects": "When a Tactical Weapon runs out of ammo, trigger <buf ID=900029>[Auto Load]</buf>. This process takes <color=#F74848>3</color> turns."
     },
@@ -61,7 +61,7 @@
   },
   "neuralPassives": {
     "400011": {
-      "name": "Strategic Bombing 2",
+      "name": "Strategic Strike 2",
       "SpecificEffects": "Tactical Weapon Magazine Capacity <color=#F74848>+1</color>."
     },
     "400012": {
@@ -73,7 +73,7 @@
       "SpecificEffects": "Initial AP <color=#F74848>+1</color>."
     },
     "400021": {
-      "name": "Strategic Bombing 3",
+      "name": "Strategic Strike 3",
       "SpecificEffects": "Tactical Weapons Reload CD <color=#F74848>-1</color>."
     },
     "400022": {
@@ -93,7 +93,7 @@
       "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
     },
     "400033": {
-      "name": "Strategic Bombing 4",
+      "name": "Strategic Strike 4",
       "SpecificEffects": "When <buf ID=900029>[Auto Load]</buf> is complete, restore <color=#F74848>1</color> AP."
     },
     "400034": {
@@ -109,8 +109,8 @@
       "SpecificEffects": "After triggering <buf ID=900004>[Re-ATK]</buf>, it no longer reduces final damage."
     },
     "400541": {
-      "name": "Ether Rats 1",
-      "SpecificEffects": "The damage multiplier for <buf ID=900016>[Salvo]</buf> is increased to <color=#F74848>2 * 0.75x</color>."
+      "name": "Ether Rat 1",
+      "SpecificEffects": "<buf ID=900016>[Salvo]</buf> damage multiplier per shot increased to <color=#F74848>0.75</color>."
     },
     "400042": {
       "name": "AP Optimization 4",
@@ -121,15 +121,15 @@
       "SpecificEffects": "When destroying a target, additionally restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>2</color> times per turn."
     },
     "400544": {
-      "name": "Ether Rats 2",
+      "name": "Ether Rat 2",
       "SpecificEffects": "Arm's HP <color=#F74848>+30%</color>."
     },
     "400545": {
-      "name": "Ether Rats 3",
+      "name": "Ether Rat 3",
       "SpecificEffects": "When attacking with the first Ammo in the Missile Launcher magazine, DMG <color=#F74848>+20%</color>."
     },
     "400546": {
-      "name": "Ether Rats 4",
+      "name": "Ether Rat 4",
       "SpecificEffects": "When executing <buf ID=900016>[Salvo]</buf>-style skills, has a <color=#F74848>50%</color> chance of not consuming any Ammo."
     }
   },

@@ -6,11 +6,11 @@
   "Occupation": "Sniper",
   "Talent0_2Ability": {
     "name": "Sophisticated Scientist",
-    "SpecificEffects": "During an Active Attack in combat, inflict <buf ID=3006502>[Short Circuit I]</buf> on the target after combat, effective for <color=#F74848>1</color> time."
+    "SpecificEffects": "When initiating combat, inflicts <buf ID=3006502>[Short Circuit I]</buf> on the target after combat. Can trigger <color=#F74848>1</color> time."
   },
   "Talent3_5Ability": {
     "name": "Sophisticated Scientist",
-    "SpecificEffects": "During an Active Attack, inflict <buf ID=3006502>[Short Circuit I]</buf> on the hit target, effective <color=#F74848>1</color> time.\nIf the target's HP is full, DMG <color=#F74848>+15%</color>."
+    "SpecificEffects": "When initiating combat, inflicts <buf ID=3006502>[Short Circuit I]</buf> on the target after combat. Can trigger <color=#F74848>1</color> time.\nWhen the target's HP is full, DMG <color=#F74848>+15%</color>."
   },
   "skills": {
     "300001": {
@@ -34,7 +34,7 @@
       "SpecificEffects": "When attacking a target that carries debuffs, DMG <color=#F74848>+15%</color>."
     },
     "300605": {
-      "name": "Proficient",
+      "name": "Proficiency",
       "describe": "",
       "SpecificEffects": "At the end of the action, if a debuff was inflicted on <color=#F74848>3</color> targets during this turn, grant <buf ID=3006053>[Skilled]</buf> to self, effective <color=#F74848>2</color> times, lasting for <color=#F74848>1</color> turn."
     },
@@ -81,7 +81,7 @@
     },
     "300031": {
       "name": "Forbidden Zone 1",
-      "SpecificEffects": "With a Ranged Weapon, launch <buf ID=900013>[Vigilant Shot]</buf> before the enemy attack within range, dealing <color=#F74848>0.35x</color> DMG, effective up to <color=#F74848>1</color> time per turn."
+      "SpecificEffects": "Before enemies within range initiate combat, triggers <buf ID=900013>[Vigilant Shot]</buf> with a Ranged Weapon, dealing <color=#F74848>0.5x</color> DMG. Can trigger <color=#F74848>1</color> time per turn."
     },
     "300032": {
       "name": "AP Optimization 3",
@@ -97,11 +97,11 @@
     },
     "300035": {
       "name": "Forbidden Zone 3",
-      "SpecificEffects": "<buf ID=900013>[Vigilant Shot]</buf>'s damage multiplier is increased to <color=#F74848>0.5</color>."
+      "SpecificEffects": "<buf ID=900013>[Vigilant Shot]</buf> Damage Multiplier <color=#F74848>+0.15</color>."
     },
     "300036": {
       "name": "Forbidden Zone 4",
-      "SpecificEffects": "<buf ID=900013>[Vigilant Shot]</buf> is launched against an enemy that has not attacked. Targets the part with the lowest HP."
+      "SpecificEffects": "<buf ID=900013>[Vigilant Shot]</buf> targets the part with the lowest HP, inflicting DMG Dealt <color=#F74848>-35%</color> on the target hit until the end of this attack."
     },
     "300641": {
       "name": "Lust for Victory 1",
@@ -128,5 +128,15 @@
       "SpecificEffects": "<buf ID=900053>[Short Circuit]</buf>'s Fixed DMG can break the part."
     }
   },
-  "version": "1.0"
+  "version": "1.0",
+  "hiddenSkills": [
+    {
+      "name": "Accurate Fire",
+      "icon": "Icon_skill_main_1017",
+      "type": "EquipmentSkill",
+      "Ap": "3",
+      "CD": "0",
+      "describe": "Uses a Sniper Rifle to attack a target, dealing <color=#F74848>1.0x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking and gains Hit Rate <color=#F74848>+15%</color>."
+    }
+  ]
 }

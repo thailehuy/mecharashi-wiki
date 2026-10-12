@@ -6,11 +6,11 @@
   "Occupation": "Sniper",
   "Talent0_2Ability": {
     "name": "Safety Distance",
-    "SpecificEffects": "During an Active Attack in combat, if the target cannot retaliate, DMG <color=#F74848>+8%</color>."
+    "SpecificEffects": "When initiating combat, if the target cannot retaliate, DMG <color=#F74848>+8%</color>."
   },
   "Talent3_5Ability": {
     "name": "Safety Distance",
-    "SpecificEffects": "During an Active Attack in combat, if the target cannot retaliate, DMG <color=#F74848>+8%</color>."
+    "SpecificEffects": "When initiating combat, if the target cannot retaliate, DMG <color=#F74848>+12%</color>."
   },
   "skills": {
     "300001": {
@@ -71,7 +71,7 @@
     },
     "300031": {
       "name": "Forbidden Zone 1",
-      "SpecificEffects": "With a Ranged Weapon, launch <buf ID=900013>[Vigilant Shot]</buf> before the enemy attack within range, dealing <color=#F74848>0.35x</color> DMG, effective up to <color=#F74848>1</color> time per turn."
+      "SpecificEffects": "Before enemies within range initiate combat, triggers <buf ID=900013>[Vigilant Shot]</buf> with a Ranged Weapon, dealing <color=#F74848>0.5x</color> DMG. Can trigger <color=#F74848>1</color> time per turn."
     },
     "300032": {
       "name": "AP Optimization 3",
@@ -87,12 +87,22 @@
     },
     "300035": {
       "name": "Forbidden Zone 3",
-      "SpecificEffects": "<buf ID=900013>[Vigilant Shot]</buf>'s damage multiplier is increased to <color=#F74848>0.5</color>."
+      "SpecificEffects": "<buf ID=900013>[Vigilant Shot]</buf> Damage Multiplier <color=#F74848>+0.15</color>."
     },
     "300036": {
       "name": "Forbidden Zone 4",
-      "SpecificEffects": "<buf ID=900013>[Vigilant Shot]</buf> is launched against an enemy that has not attacked. Targets the part with the lowest HP."
+      "SpecificEffects": "<buf ID=900013>[Vigilant Shot]</buf> targets the part with the lowest HP, inflicting DMG Dealt <color=#F74848>-35%</color> on the target hit until the end of this attack."
     }
   },
-  "version": "1.0"
+  "version": "1.0",
+  "hiddenSkills": [
+    {
+      "name": "Polyenergy Shot",
+      "icon": "Icon_skill_main_1022",
+      "type": "EquipmentSkill",
+      "Ap": "2",
+      "CD": "0",
+      "describe": "Uses a Light Rifle to attack a target, dealing <color=#F74848>1.6x</color> DMG."
+    }
+  ]
 }

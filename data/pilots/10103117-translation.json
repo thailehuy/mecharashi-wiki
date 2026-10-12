@@ -6,11 +6,11 @@
   "Occupation": "Raider",
   "Talent0_2Ability": {
     "name": "Sharpshooter",
-    "SpecificEffects": "When attacking with an Assault Weapon, if the Hit Rate is above <color=#F74848>90%</color>, all bullets are sure to hit."
+    "SpecificEffects": "When attacking with an Assault Weapon, if the Hit Rate is greater than or equal to <color=#F74848>90%</color>, all bullets are guaranteed to hit."
   },
   "Talent3_5Ability": {
     "name": "Sharpshooter",
-    "SpecificEffects": "When attacking with an Assault Weapon, if the Hit Rate is above <color=#F74848>90%</color>, all bullets are sure to hit.\nThe weight of the Shotgun is reduced by <color=#F74848>125</color>."
+    "SpecificEffects": "When attacking with an Assault Weapon, if the Hit Rate is greater than or equal to <color=#F74848>90%</color>, all bullets are guaranteed to hit.\nShotgun weight is reduced by <color=#F74848>125</color>."
   },
   "skills": {
     "200001": {
@@ -19,7 +19,7 @@
       "SpecificEffects": "In cooperation with allies, use Assault Weapons to launch a <buf ID=900002>[Link Attack]</buf> against the target, dealing <color=#F74848>0.2x</color> DMG, effective up to <color=#F74848>1</color> time per turn."
     },
     "200402": {
-      "name": "Warm-Up",
+      "name": "Acclimation",
       "describe": "",
       "SpecificEffects": "When attacking with an Assault Weapon, if no Miss occurs, gain <buf ID=2004022>[Hit UP]</buf> after combat, up to <color=#F74848>3</color> stacks, lasting for <color=#F74848>2</color> turns."
     },
@@ -46,11 +46,11 @@
     "200407": {
       "name": "Gun Spinner",
       "describe": "",
-      "SpecificEffects": "When performing a perfect dodge, restore <color=#F74848>1 AP</color> after combat, effective up to <color=#F74848>1</color> time per turn."
+      "SpecificEffects": "Upon executing a perfect dodge, restores <color=#F74848>1</color> AP after combat. Can trigger once per turn."
     },
     "200408": {
       "name": "High Noon",
-      "describe": "Simultaneously uses 2 Shotguns to attack a target, dealing <color=#F74848>2* 0.9x</color> DMG and inflicting <buf ID=2004081>[Retaliation Disabled]</buf>.",
+      "describe": "Simultaneously uses two Shotguns to attack a target, dealing <color=#F74848>0.9x</color> DMG <color=#F74848>2</color> times. The target is unable to retaliate against this attack.",
       "SpecificEffects": ""
     }
   },
@@ -97,7 +97,7 @@
     },
     "200035": {
       "name": "Perfect Position 3",
-      "SpecificEffects": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, Crit Rate <color=#F74848>+12%</color>."
+      "SpecificEffects": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, Crit Rate <color=#F74848>+15%</color>."
     },
     "200036": {
       "name": "Perfect Position 4",
@@ -128,5 +128,15 @@
       "SpecificEffects": "The trigger condition for <buf ID=2004501>[Sharpshooter]</buf> has been changed to a Hit Rate of <color=#F74848>80%</color> or higher."
     }
   },
-  "version": "1.0"
+  "version": "1.0",
+  "hiddenSkills": [
+    {
+      "name": "Turbo Shooting",
+      "icon": "Icon_skill_main_1014",
+      "type": "EquipmentSkill",
+      "Ap": "3",
+      "CD": "0",
+      "describe": "Uses a Shotgun to attack a target, dealing <color=#F74848>1.3x</color> DMG."
+    }
+  ]
 }

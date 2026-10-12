@@ -6,11 +6,11 @@
   "Occupation": "Sniper",
   "Talent0_2Ability": {
     "name": "Post-War Summary",
-    "SpecificEffects": "When breaking a part, restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>1</color> time per turn."
+    "SpecificEffects": "When destroying a part, restores <color=#F74848>1</color> AP after combat. Can only trigger <color=#F74848>1</color> time per turn."
   },
   "Talent3_5Ability": {
     "name": "Post-War Summary",
-    "SpecificEffects": "When a part is broken, restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>1</color> time per turn.\nWhen accessing <buf ID=900014>[Aiming]</buf> mode, Crit Rate <color=#F74848>+7.5%</color> and Crit DMG <color=#F74848>+7.5%</color>."
+    "SpecificEffects": "When a part is destroyed, restores <color=#F74848>1</color> AP after combat. Can only trigger <color=#F74848>1</color> time per turn.\nWhen in <buf ID=900014>[Aiming]</buf> Mode, Crit Rate <color=#F74848>+7.5%</color> and Crit DMG <color=#F74848>+7.5%</color>."
   },
   "skills": {
     "300001": {
@@ -46,11 +46,11 @@
     "300307": {
       "name": "Exemplary",
       "describe": "",
-      "SpecificEffects": "Each turn, the AP cost of the 1st skill decreases by <color=#F74848>1</color>, with a minimum cost of <color=#F74848>1</color> AP."
+      "SpecificEffects": "Each turn, the AP cost of the first skill used is reduced by <color=#F74848>1</color>, with a minimum cost of <color=#F74848>1</color> AP."
     },
     "300308": {
       "name": "Curtain Call",
-      "describe": "Uses Sniper Rifle to shoot a target <color=#F74848>2</color> times, with each shot dealing <color=#F74848>0.8x</color> DMG. Before combat, access <buf ID=900014>[Aiming]</buf> mode. The <color=#F74848>2nd</color> shot will hit a random part",
+      "describe": "Uses a Sniper Rifle to shoot a target <color=#F74848>2</color> times, with each shot dealing <color=#F74848>1.0x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking. The 2nd shot will hit a random part.",
       "SpecificEffects": ""
     }
   },
@@ -81,7 +81,7 @@
     },
     "300031": {
       "name": "Forbidden Zone 1",
-      "SpecificEffects": "With a Ranged Weapon, launch <buf ID=900013>[Vigilant Shot]</buf> before the enemy attack within range, dealing <color=#F74848>0.35x</color> DMG, effective up to <color=#F74848>1</color> time per turn."
+      "SpecificEffects": "Before enemies within range initiate combat, triggers <buf ID=900013>[Vigilant Shot]</buf> with a Ranged Weapon, dealing <color=#F74848>0.5x</color> DMG. Can trigger <color=#F74848>1</color> time per turn."
     },
     "300032": {
       "name": "AP Optimization 3",
@@ -97,11 +97,11 @@
     },
     "300035": {
       "name": "Forbidden Zone 3",
-      "SpecificEffects": "<buf ID=900013>[Vigilant Shot]</buf>'s damage multiplier is increased to <color=#F74848>0.5</color>."
+      "SpecificEffects": "<buf ID=900013>[Vigilant Shot]</buf> Damage Multiplier <color=#F74848>+0.15</color>."
     },
     "300036": {
       "name": "Forbidden Zone 4",
-      "SpecificEffects": "<buf ID=900013>[Vigilant Shot]</buf> is launched against an enemy that has not attacked. Targets the part with the lowest HP."
+      "SpecificEffects": "<buf ID=900013>[Vigilant Shot]</buf> targets the part with the lowest HP, inflicting DMG Dealt <color=#F74848>-35%</color> on the target hit until the end of this attack."
     },
     "300341": {
       "name": "Cum Laude 1",
@@ -128,5 +128,15 @@
       "SpecificEffects": "If the first active attack each turn defeats the target, skill AP Cost will be refunded after combat, up to <color=#F74848>3</color> AP."
     }
   },
-  "version": "1.0"
+  "version": "1.0",
+  "hiddenSkills": [
+    {
+      "name": "Accurate Fire",
+      "icon": "Icon_skill_main_1017",
+      "type": "EquipmentSkill",
+      "Ap": "3",
+      "CD": "0",
+      "describe": "Uses a Sniper Rifle to attack a target, dealing <color=#F74848>1.0x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking and gains Hit Rate <color=#F74848>+15%</color>."
+    }
+  ]
 }

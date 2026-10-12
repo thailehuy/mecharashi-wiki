@@ -6,11 +6,11 @@
   "Occupation": "Guardian",
   "Talent0_2Ability": {
     "name": "Injury Insurance",
-    "SpecificEffects": "When equipping a shield, shield's HP <color=#F74848>+70%</color>."
+    "SpecificEffects": "When equipping a shield, shield HP <color=#F74848>+70%</color>."
   },
   "Talent3_5Ability": {
     "name": "Injury Insurance",
-    "SpecificEffects": "When equipping a shield, shield's HP <color=#F74848>+100%</color>."
+    "SpecificEffects": "When equipping a Shield, Shield HP <color=#F74848>+100%</color>."
   },
   "skills": {
     "600001": {
@@ -26,7 +26,7 @@
     "700052": {
       "name": "Loaf Around",
       "describe": "",
-      "SpecificEffects": "If unable to retaliate in combat, DMG Taken <color=#F74848>-15%</color>."
+      "SpecificEffects": "If unable to retaliate in combat, DMG Taken <color=#F74848>-12%</color>."
     },
     "600104": {
       "name": "Overtime",
@@ -94,5 +94,15 @@
       "SpecificEffects": "When any part suffers overdamage, trigger <buf ID=900003>[Guts]</buf>."
     }
   },
-  "version": "1.0"
+  "version": "1.0",
+  "hiddenSkills": [
+    {
+      "name": "Guard",
+      "icon": "Icon_skill_order_1031",
+      "type": "Order",
+      "Ap": "1",
+      "CD": "2",
+      "describe": "Protects allies within <color=#F74848>2</color> adjacent tiles from Assault and Ranged attacks. Triggers up to <color=#F74848>2</color> times per turn and lasts <color=#F74848>2</color> turns. Additionally, gains <buf ID=7100702>[Defensive Stance I]</buf>. Can only trigger <color=#F74848>1</color> time per turn."
+    }
+  ]
 }

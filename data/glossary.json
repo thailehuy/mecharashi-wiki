@@ -289,11 +289,11 @@
    "effect": "When attacked by melee or ranged weapons, if equipped with Alter-Blade in both hands and both hands are intact, activates [Insight Counterattack], dealing <color=#F74848>1.2x</color> DMG. [Insight Counterattack] ignores [Target Shift]. Each stack increases DMG dealt by <color=#F74848>5%</color> and dodge rate by <color=#F74848>5%</color>. <color=#F74848>1</color> stack is removed upon activation."
   },
   "1002502": {
-   "name": "Impulsive I",
+   "name": "Passionate I",
    "effect": "Offensive aggression +5%, defensive stability -5%."
   },
   "1002512": {
-   "name": "Impulsive II",
+   "name": "Passionate II",
    "effect": "Offensive aggression +10%, defensive stability -10%."
   },
   "1004021": {
@@ -529,7 +529,7 @@
    "effect": "Attacks bypass Guard effects entirely."
   },
   "3008501": {
-   "name": "Epiphyllum's Move",
+   "name": "Epiphyllum Move",
    "effect": "When attacking with a Light Rifle, [Aiming] mode can be accessed while equipped with a Small Shield. This skill allows movement after combat using any remaining movement."
   },
   "3009032": {
@@ -1033,8 +1033,8 @@
    "effect": "Next attack multiplier increases by <color=#F74848>+0.1</color>."
   },
   "6010502": {
-   "name": "Magnetic Lock-On",
-   "effect": "Can be targeted by [Vengeful Strike] and [Vengeful Strike β]."
+   "name": "Magnetic Lock",
+   "effect": "Can be targeted by [Vengeance Strike] and [Vengeance Strike β]."
   },
   "4011502": {
    "name": "Appointment",
@@ -1509,6 +1509,14 @@
   "7101703": {
    "name": "Armor Down III",
    "effect": "Armor -65%."
+  },
+  "3002502": {
+   "name": "Focus I",
+   "effect": "Crit Rate <color=#F74848>+5%</color>. Stacks up to <color=#F74848>3</color> times. It is removed after landing a critical hit."
+  },
+  "3002512": {
+   "name": "Focus II",
+   "effect": "Crit Rate <color=#F74848>+5%</color>. Stacks up to <color=#F74848>5</color> times. It is removed after landing a critical hit."
   }
  },
  "skill": {
@@ -1576,18 +1584,18 @@
    "effect": "Applies a [Defense Field] to the designated tile and the surrounding 1-ring radius for 3 turns. Can continue action with remaining Movement."
   },
   "601050": {
-   "name": "Vengeful Strike",
+   "name": "Vengeance Strike",
    "Ap": "1",
    "CD": "0",
    "icon": "Icon_skill_order_5146",
-   "effect": "Selects <color=#F74848>1</color> enemy target carrying <buf ID=6010502>[Magnetic Lock-On]</buf>, consumes all Railgun ammo to attack all enemies within the selected <range type=1>1-tile cross-shaped</range>, <range type=2>3x3 square</range> or <range type=2>2-tile diamond</range> area. The number of attacks is equal to the ammo consumed, priotizing unhit targets. Each attack deals <color=#F74848>0.6x</color> DMG to the target and all enemies within <color=#F74848>1</color> adjacent tile. All attacks will prioritize hitting body. Repeat attacks on the same target deal <color=#F74848>60%</color> reduced DMG. Removes <buf ID=6010502>[Magnetic Lock-On]</buf> after the skill ends."
+   "effect": "Selects <color=#F74848>1</color> enemy target carrying <buf ID=6010502>[Magnetic Lock]</buf>, consumes all Rail Gun ammo to attack all enemies within the selected <range type=1>1-tile cross-shaped</range>, <range type=2>3x3 square</range> or <range type=2>2-tile diamond</range> area. The number of attacks is equal to the ammo consumed, priotizing unhit targets. Each attack deals <color=#F74848>0.6x</color> DMG to the target and all enemies within <color=#F74848>1</color> adjacent tile. All attacks will prioritize hitting body. Repeat attacks on the same target deal <color=#F74848>60%</color> reduced DMG. Removes <buf ID=6010502>[Magnetic Lock]</buf> after the skill ends."
   },
   "601051": {
-   "name": "Vengeful Strike β",
+   "name": "Vengeance Strike β",
    "Ap": "0",
    "CD": "0",
    "icon": "Icon_skill_order_5146",
-   "effect": "Uses Railgun to attack all enemies carrying <buf ID=6010502>[Magnetic Lock-On]</buf> in order from nearest to furthest. All attacks prioritize hitting body and priotize unhit targets. Each attack deals <color=#F74848>0.4x</color> DMG to the target and all enemies within <color=#F74848>1</color> adjacent tile. Repeat attacks on the same target deal <color=#F74848>60%</color> reduced DMG. This attack does not consume Railgun ammo and does not remove <buf ID=6010502>[Magnetic Lock-On]</buf>."
+   "effect": "Uses Rail Gun to attack all enemies carrying <buf ID=6010502>[Magnetic Lock]</buf> in order from nearest to furthest. All attacks prioritize hitting body and priotize unhit targets. Each attack deals <color=#F74848>0.4x</color> DMG to the target and all enemies within <color=#F74848>1</color> adjacent tile. Repeat attacks on the same target deal <color=#F74848>60%</color> reduced DMG. This attack does not consume Rail Gun ammo and does not remove <buf ID=6010502>[Magnetic Lock]</buf>."
   },
   "6011501": {
    "name": "Polearm Throw",

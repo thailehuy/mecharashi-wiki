@@ -6,11 +6,11 @@
   "Occupation": "Guardian",
   "Talent0_2Ability": {
     "name": "Orator",
-    "SpecificEffects": "When retaliating, inflict <buf ID=6003502>[Attack Hindrance I]</buf> on the target after combat, up to <color=#F74848>2</color> stacks, lasting for <color=#F74848>1</color> turn."
+    "SpecificEffects": "When retaliating, inflicts <buf ID=6003502>[Attack Inhibition I]</buf> on targets hit after combat. Stacks up to <color=#F74848>2</color> times. Lasts for <color=#F74848>1</color> turn."
   },
   "Talent3_5Ability": {
     "name": "Orator",
-    "SpecificEffects": "When retaliating, inflict <buf ID=6003502>[Attack Hindrance I]</buf> on the target after combat, up to <color=#F74848>2</color> stacks and lasting for <color=#F74848>1</color> turn..\nWhen inflicting debuffs, the duration <color=#F74848>+1</color>."
+    "SpecificEffects": "When retaliating, inflicts <buf ID=6003502>[Attack Inhibition I]</buf> on targets hit after combat. Stacks up to <color=#F74848>2</color> times. Lasts for <color=#F74848>1</color> turn.\nWhen inflicting debuffs, duration <color=#F74848>+1</color>."
   },
   "skills": {
     "600001": {
@@ -50,7 +50,7 @@
     },
     "600308": {
       "name": "Impeachment",
-      "describe": "Uses Light Rifle to attack a target, dealing <color=#F74848>1.25x</color> DMG. This attack prioritizes the Body. For each <color=#F74848>1</color> debuff the target carries, the damage multiplier increases by <color=#F74848>0.15</color>, up to <color=#F74848>0.45</color>.",
+      "describe": "Uses a Light Rifle to attack a target, dealing <color=#F74848>1.25x</color> DMG. This attack prioritizes the Body. For each debuff on the target, damage multiplier <color=#F74848>+0.15</color>, up to <color=#F74848>0.45</color>.",
       "SpecificEffects": ""
     }
   },
@@ -128,5 +128,15 @@
       "SpecificEffects": "When <buf ID=900056>[Attack Hindrance]</buf> reaches <color=#F74848>3</color> stacks, also inflict <buf ID=6003061>[Weapon Hindrance]</buf> on the target, lasting for <color=#F74848>1</color> turn."
     }
   },
-  "version": "1.0"
+  "version": "1.0",
+  "hiddenSkills": [
+    {
+      "name": "Guard",
+      "icon": "Icon_skill_order_1031",
+      "type": "Order",
+      "Ap": "1",
+      "CD": "2",
+      "describe": "Protects allies within <color=#F74848>2</color> adjacent tiles from Assault and Ranged attacks. Triggers up to <color=#F74848>2</color> times per turn and lasts <color=#F74848>2</color> turns. Additionally, gains <buf ID=7100702>[Defensive Stance I]</buf>. Can only trigger <color=#F74848>1</color> time per turn."
+    }
+  ]
 }

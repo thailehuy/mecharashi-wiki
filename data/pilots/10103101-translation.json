@@ -6,11 +6,11 @@
   "Occupation": "Fighter",
   "Talent0_2Ability": {
     "name": "Hyper-reaction",
-    "SpecificEffects": "With a Melee Weapon, <buf ID=900006>[Reaction Attack]</buf> can be triggered against the enemy within attack range, dealing <color=#F74848>0.6x</color> DMG, with a trigger interval of <color=#F74848>1</color> turn."
+    "SpecificEffects": "Uses a Melee Weapon to execute <buf ID=900006>[Reaction Attack]</buf> against enemies within attack range, dealing <color=#F74848>0.6x</color> DMG. This effect has a <color=#F74848>1</color>-turn trigger interval."
   },
   "Talent3_5Ability": {
     "name": "Hyper-reaction",
-    "SpecificEffects": "With a Melee Weapon, trigger <buf ID=900006>[Reaction Attack]</buf> against the enemy within range, dealing <color=#F74848>0.6x</color> DMG, with a trigger interval of <color=#F74848>1</color> turn.\nWhen in combat with an enemy in the adjacent (<color=#F74848>1</color> tile) area, Hit Rate <color=#F74848>+12%</color> and Dodge Rate <color=#F74848>+12%</color>."
+    "SpecificEffects": "Uses a Melee Weapon to execute <buf ID=900006>[Reaction Attack]</buf> against enemies within attack range, dealing <color=#F74848>0.6x</color> DMG. This effect has a <color=#F74848>1</color>-turn trigger interval.\nWhen in combat against enemies within <color=#F74848>1</color> adjacent tile, Hit Rate <color=#F74848>+12%</color> and Dodge Rate <color=#F74848>+12%</color>."
   },
   "skills": {
     "100001": {
@@ -19,7 +19,7 @@
       "SpecificEffects": "After breaking a part, <buf ID=900004>[Re-ATK]</buf> can be triggered. Unable to move before the attack, and this can be effective up to <color=#F74848>2</color> times per turn."
     },
     "700057": {
-      "name": "First-mover Advantage",
+      "name": "First-Mover Advantage",
       "describe": "",
       "SpecificEffects": "During an Active Attack in combat, Crit DMG <color=#F74848>+15%</color>."
     },
@@ -40,11 +40,11 @@
     },
     "100306": {
       "name": "Weakness Strike",
-      "describe": "Uses Shotgun or Melee Weapon to attack a target, dealing <color=#F74848>1.2x</color> DMG or <color=#F74848>1.55x</color> DMG. Shotgun DMG <color=#F74848>+50%</color> when attacking the part with the lowest HP. When using Melee Weapon, Hit Weight for part with the lowest HP <color=#F74848>+40%</color>.",
+      "describe": "Use a Shotgun, Pile Bunker, or Knuckles to attack a target, dealing <color=#F74848>1.2x</color> or <color=#F74848>1.55x</color> DMG. Shotgun's DMG Dealt <color=#F74848>+50%</color> to the part with the lowest HP. When using a Melee Weapon, Hit Weighting of the part with the lowest HP <color=#F74848>+50</color>.",
       "SpecificEffects": ""
     },
     "700034": {
-      "name": "Impending Victory",
+      "name": "Within Our Grasp",
       "describe": "",
       "SpecificEffects": "During an Active Attack in combat, if the HP% is higher than the target's, DMG <color=#F74848>+15%</color>."
     },
@@ -104,7 +104,7 @@
       "SpecificEffects": "When triggering <buf ID=900001>[Flurry Strike]</buf>, prioritize hitting the part with the lowest HP."
     },
     "100341": {
-      "name": "Head of GKD 1",
+      "name": "GKD Alpha 1",
       "SpecificEffects": "The damage multiplier for <buf ID=900006>[Reaction Attack]</buf> is increased to <color=#F74848>0.9</color>."
     },
     "100042": {
@@ -116,17 +116,27 @@
       "SpecificEffects": "When destroying a target, additionally restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>2</color> times per turn."
     },
     "100344": {
-      "name": "Head of GKD 2",
+      "name": "GKD Alpha 2",
       "SpecificEffects": "When triggering <buf ID=900006>[Reaction Attack]</buf>, prioritize targeting the part with the lowest HP."
     },
     "100345": {
-      "name": "Head of GKD 3",
+      "name": "GKD Alpha 3",
       "SpecificEffects": "Enable <buf ID=900006>[Reaction Attack]</buf> to be effective <color=#F74848>1</color> time per turn."
     },
     "100346": {
-      "name": "Head of GKD 4",
+      "name": "GKD Alpha 4",
       "SpecificEffects": "Able to use a Shotgun to launch <buf ID=900006>[Reaction Attack]</buf> against the enemy, dealing <color=#F74848>0.7x</color> DMG."
     }
   },
-  "version": "1.0"
+  "version": "1.0",
+  "hiddenSkills": [
+    {
+      "name": "Crush Arm",
+      "icon": "Icon_skill_main_1104",
+      "type": "EquipmentSkill",
+      "Ap": "2",
+      "CD": "0",
+      "describe": "Uses a Pile Bunker or Knuckles to attack a target, dealing <color=#F74848>1.25x</color> DMG. This attack prioritizes Arms."
+    }
+  ]
 }

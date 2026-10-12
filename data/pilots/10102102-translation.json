@@ -6,11 +6,11 @@
   "Occupation": "Sniper",
   "Talent0_2Ability": {
     "name": "Dawnstar Tech",
-    "SpecificEffects": "Rail Gun DMG <color=#F74848>+20%</color> and gains <buf ID=900060>[Diagonal Shot]</buf>. When a Rail Gun runs out of ammo, trigger <buf ID=900029>[Auto Load]</buf>. This process takes <color=#F74848>3</color> turns."
+    "SpecificEffects": "Rail Gun DMG <color=#F74848>+20%</color>. Enables <buf ID=900060>[Diagonal Shot]</buf>. When a Rail Gun runs out of Ammo, triggers <buf ID=900029>[Auto Load]</buf>. This process takes <color=#F74848>3</color> turns."
   },
   "Talent3_5Ability": {
     "name": "Dawnstar Tech",
-    "SpecificEffects": "Rail Gun DMG <color=#F74848>+20%</color> and gains <buf ID=900060>[Diagonal Shot]</buf>. When a Rail Gun runs out of ammo, trigger <buf ID=900029>[Auto Load]</buf>. This process takes <color=#F74848>2</color> turns."
+    "SpecificEffects": "Rail Gun DMG <color=#F74848>+20%</color>. Enables <buf ID=900060>[Diagonal Shot]</buf>. When a Rail Gun runs out of ammo, triggers <buf ID=900029>[Auto Load]</buf>. This process takes <color=#F74848>2</color> turns."
   },
   "skills": {
     "300001": {
@@ -86,7 +86,7 @@
     },
     "300031": {
       "name": "Forbidden Zone 1",
-      "SpecificEffects": "With a Ranged Weapon, launch <buf ID=900013>[Vigilant Shot]</buf> before the enemy attack within range, dealing <color=#F74848>0.35x</color> DMG, effective up to <color=#F74848>1</color> time per turn."
+      "SpecificEffects": "Before enemies within range initiate combat, triggers <buf ID=900013>[Vigilant Shot]</buf> with a Ranged Weapon, dealing <color=#F74848>0.5x</color> DMG. Can trigger <color=#F74848>1</color> time per turn."
     },
     "300032": {
       "name": "AP Optimization 3",
@@ -102,11 +102,11 @@
     },
     "300035": {
       "name": "Forbidden Zone 3",
-      "SpecificEffects": "<buf ID=900013>[Vigilant Shot]</buf>'s damage multiplier is increased to <color=#F74848>0.5</color>."
+      "SpecificEffects": "<buf ID=900013>[Vigilant Shot]</buf> Damage Multiplier <color=#F74848>+0.15</color>."
     },
     "300036": {
       "name": "Forbidden Zone 4",
-      "SpecificEffects": "<buf ID=900013>[Vigilant Shot]</buf> is launched against an enemy that has not attacked. Targets the part with the lowest HP."
+      "SpecificEffects": "<buf ID=900013>[Vigilant Shot]</buf> targets the part with the lowest HP, inflicting DMG Dealt <color=#F74848>-35%</color> on the target hit until the end of this attack."
     },
     "300741": {
       "name": "Railgun Specialist 1",

@@ -6,11 +6,11 @@
   "Occupation": "Raider",
   "Talent0_2Ability": {
     "name": "Cross Fire",
-    "SpecificEffects": "When attacking with a Shotgun, gain Machine Gun Normal Attack AP Cost <color=#F74848>-1</color> after combat. When attacking with a Machine Gun, gain Shotgun Normal Attack AP Cost <color=#F74848>-1</color> after combat. This is effective <color=#F74848>1</color> time per turn."
+    "SpecificEffects": "When initiating combat with a Shotgun, Machine Gun Normal Attack AP Cost <color=#F74848>-1</color> after combat. When initiating combat with a Machine Gun, Shotgun Normal Attack AP Cost <color=#F74848>-1</color> after combat. Can only trigger <color=#F74848>1</color> time per turn."
   },
   "Talent3_5Ability": {
     "name": "Cross Fire",
-    "SpecificEffects": "When attacking with a Shotgun, gain Machine Gun Normal Attack AP Cost <color=#F74848>-1</color> after combat. When attacking with a Machine Gun, gain Shotgun Normal Attack AP Cost <color=#F74848>-1</color> after combat. This is effective <color=#F74848>1</color> time per turn.\nDuring an Active Attack in combat, DMG Taken <color=#F74848>-10%</color>."
+    "SpecificEffects": "When initiating combat with a Shotgun, Machine Gun Normal Attack AP Cost <color=#F74848>-1</color> after combat. When initiating combat with a Machine Gun, Shotgun Normal Attack AP Cost <color=#F74848>-1</color> after combat. Can only trigger <color=#F74848>1</color> time per turn.\nWhen initiating combat, DMG Taken <color=#F74848>-10%</color>."
   },
   "skills": {
     "200001": {
@@ -97,7 +97,7 @@
     },
     "200035": {
       "name": "Perfect Position 3",
-      "SpecificEffects": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, Crit Rate <color=#F74848>+12%</color>."
+      "SpecificEffects": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, Crit Rate <color=#F74848>+15%</color>."
     },
     "200036": {
       "name": "Perfect Position 4",
@@ -128,5 +128,15 @@
       "SpecificEffects": "The effect of reducing AP Cost from <buf ID=2005513>[Cross Fire]</buf> will now apply to all attacks, not just Normal Attacks."
     }
   },
-  "version": "1.0"
+  "version": "1.0",
+  "hiddenSkills": [
+    {
+      "name": "Full Rudder",
+      "icon": "Icon_skill_passive_5126",
+      "type": null,
+      "Ap": "",
+      "CD": "",
+      "SpecificEffects": "When initiating combat, if a part is destroyed, <buf ID=900004>[Re-ATK]</buf> can trigger after combat. Can only trigger <color=#F74848>1</color> time per turn. Unable to move before attacking."
+    }
+  ]
 }

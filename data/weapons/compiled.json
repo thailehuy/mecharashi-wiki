@@ -83,7 +83,7 @@
         {
           "ID": "53093",
           "name": "ND Amplifier",
-          "SpecificEffects": "Enhanced [Kalavinka]: Upon deployment, gains <color=#F74848>2</color> stacks of <buf ID=2016503>[Dual Gun Efficiency]</buf>. When in combat with a target within <buf ID=900011>[Ideal Range]</buf> using two Assault Weapons, Final DMG <color=#F74848>+15%</color>. After actively attacking, if carrying <color=#F74848>5</color> or more buffs, immediately restores <color=#F74848>1</color> AP. Can trigger <color=#F74848>1</color> time per turn.",
+          "SpecificEffects": "Enhanced [KALAVINKA]: Upon deployment, gains <color=#F74848>2</color> stacks of <buf ID=2016503>[Dual Gun Efficiency]</buf>. When in combat with a target within <buf ID=900011>[Ideal Range]</buf> using two Assault Weapons, Final DMG <color=#F74848>+15%</color>. After actively attacking, if carrying <color=#F74848>5</color> or more buffs, immediately restores <color=#F74848>1</color> AP. Can trigger <color=#F74848>1</color> time per turn.",
           "BufCarried": "530931/530932/530933/530934",
           "SkillIcon": "Icon_skill_passive_5281",
           "icon": "Icon_skill_passive_5281",
@@ -954,7 +954,7 @@
       ],
       "describe": "\u5979\u770b\u5230\uff0c\u81ea\u5df1\u5c06\u94c1\u96e8\u5e26\u5230\u5927\u5730\uff0c\u628a\u6619\u82b1\u843d\u4e8e\u706b\u6d77\u3002\u5979\u8fd8\u542c\u5230\uff0c\u90a3\u4e9b\u719f\u6089\u7684\u3001\u60b2\u4f24\u7684\u3001\u5192\u5931\u7684\u58f0\u97f3\uff0c\u4e00\u6b21\u53c8\u4e00\u6b21\u7684\u547c\u5524\u81ea\u5df1\u2026\u2026\u76f4\u81f3\u9ec4\u660f\u5230\u6765\u3002\u65e2\u7136\u957f\u68a6\u5df2\u9192\uff0c\u90a3\u5c31\u4e0d\u8981\u518d\u7761\u53bb\uff0c\u63a5\u53d7\u4e00\u5207\uff0c\u80cc\u8d1f\u4e00\u5207\uff0c\u53bb\u7ed9\u90a3\u4e9b\u9ad8\u9ad8\u5728\u4e0a\u7684\u4f17\u795e\u2026\u2026\u5e26\u6765\u5c5e\u4e8e\u4ed6\u4eec\u7684\u300c\u5ba1\u5224\u300d\u3002",
       "pilot": "Rosa: Judgment",
-      "version": "3.3",
+      "version": "3.4",
       "ac": 19
     },
     {
@@ -987,7 +987,7 @@
         {
           "ID": "53111",
           "name": "Perfected Edge",
-          "SpecificEffects": "Enhanced [Strategic Planning]: For every <color=#F74848>1</color> ally on the field carrying <buf ID=4011502>[Appointment]</buf>, own Cutter skill multiplier <color=#F74848>+0.07</color>. When an ally carrying <buf ID=4011502>[Appointment]</buf> initiates combat, inflicts <buf ID=4011041>[Subtask - Attack]</buf> on them beforehand. Can trigger <color=#F74848>1</color> time per turn. If not triggered by the end of own action, grants <buf ID=4011043>[Subtask - Defense]</buf> to the lowest-HP ally carrying <buf ID=4011502>[Appointment]</buf>.",
+          "SpecificEffects": "Enhanced [Covert Tactics]: For every <color=#F74848>1</color> ally on the field carrying <buf ID=4011502>[Appointment]</buf>, own Cutter skill multiplier <color=#F74848>+0.07</color>. When an ally carrying <buf ID=4011502>[Appointment]</buf> initiates combat, inflicts <buf ID=4011041>[Subtask - Attack]</buf> on them beforehand. Can trigger <color=#F74848>1</color> time per turn. If not triggered by the end of own action, grants <buf ID=4011043>[Subtask - Defense]</buf> to the lowest-HP ally carrying <buf ID=4011502>[Appointment]</buf>.",
           "BufCarried": "531111/531112",
           "SkillIcon": "Icon_skill_passive_5298",
           "icon": "Icon_skill_passive_5298",
@@ -1153,7 +1153,7 @@
         {
           "ID": "53087",
           "name": "Restless Spirit",
-          "SpecificEffects": "Enhanced [Blazing Heart]: Upon deployment, gains <color=#F74848>5</color> stacks of <buf ID=530872>[Burning Intent]</buf>. After the talent triggers <buf ID=900002>[Link Attack]</buf>, or after actively attacking, for every <color=#F74848>1</color> Ammo consumed, gains <color=#F74848>1</color> stack of <buf ID=530872>[Burning Intent]</buf>, up to <color=#F74848>15</color> stacks. While carrying <color=#F74848>10</color> or more stacks, AP Regen <color=#F74848>+1</color>. <buf ID=4008509>[Lock]</buf> increases DMG multiplier of Arthur's active attacks and all <buf ID=900002>[Link Attack]</buf> against the target by <color=#F74848>+0.1</color>.",
+          "SpecificEffects": "Enhanced [Fiery Will]: Upon deployment, gains <color=#F74848>5</color> stacks of <buf ID=530872>[Burning Intent]</buf>. After the talent triggers <buf ID=900002>[Link Attack]</buf>, or after actively attacking, for every <color=#F74848>1</color> Ammo consumed, gains <color=#F74848>1</color> stack of <buf ID=530872>[Burning Intent]</buf>, up to <color=#F74848>15</color> stacks. While carrying <color=#F74848>10</color> or more stacks, AP Regen <color=#F74848>+1</color>. <buf ID=4008509>[Lock]</buf> increases DMG multiplier of Arthur's active attacks and all <buf ID=900002>[Link Attack]</buf> against the target by <color=#F74848>+0.1</color>.",
           "BufCarried": "530871/530873/530874/530875/530876/530878",
           "SkillIcon": "Icon_skill_passive_5271",
           "icon": "Icon_skill_passive_5271",
@@ -1382,7 +1382,7 @@
         {
           "ID": "53114",
           "name": "Glory of Sin",
-          "SpecificEffects": "Enhanced [Creed Of Sin]: When an enemy initiates combat against another ally, inflicts <buf ID=6010502>[Magnetic Lock-On]</buf> on the attacker. Can trigger <color=#F74848>2</color> times per turn. When actively attacking with a Rail Gun, for every <color=#F74848>1</color> target destroyed, restores <color=#F74848>1</color> Rail Gun Ammo, up to <color=#F74848>3</color> times per turn. For every <color=#F74848>1</color> time <buf ID=6010502>[Magnetic Lock-On]</buf> is inflicted, gains <color=#F74848>1</color> stack of <buf ID=531145>[Magnetic Buff]</buf>, up to <color=#F74848>10</color> stacks.",
+          "SpecificEffects": "Enhanced [Creed of Sin]: When an enemy initiates combat against another ally, inflicts <buf ID=6010502>[Magnetic Lock]</buf> on the attacker. Can trigger <color=#F74848>2</color> times per turn. When actively attacking with a Rail Gun, for every <color=#F74848>1</color> target destroyed, restores <color=#F74848>1</color> Rail Gun Ammo, up to <color=#F74848>3</color> times per turn. For every <color=#F74848>1</color> time <buf ID=6010502>[Magnetic Lock]</buf> is inflicted, gains <color=#F74848>1</color> stack of <buf ID=531145>[Magnetic Buff]</buf>, up to <color=#F74848>10</color> stacks.",
           "BufCarried": "531141/531143/531144/531146",
           "SkillIcon": "Icon_skill_passive_5301",
           "icon": "Icon_skill_passive_5301",
@@ -2744,7 +2744,7 @@
         {
           "ID": "90014",
           "name": "Predator Hunt",
-          "SpecificEffects": "Enhanced <skill mainSkill=601150>[Fearless Hunting Fang]</skill>: When sortied, gains <color=#F74848>2</color> stacks of [Advantage]. Stacks up to <color=#F74848>3</color> times. At the end of action, for every <color=#F74848>1</color> enemy within a <color=#F74848>6</color> tile range inflicted with [Provocation], gains <color=#F74848>1</color> stack of [Advantage]. When attacking with a Polearm, deals <color=#F74848>70%</color> Splash DMG to another part with the lowest HP percentage. For every <color=#F74848>1</color> enemy inflicted with [Provocation] within a <color=#F74848>6</color> tile range, attack multiplier <color=#F74848>+0.1</color>, up to <color=#F74848>0.4</color>.",
+          "SpecificEffects": "Enhanced <skill mainSkill=601150>[Intrepid Fang]</skill>: When sortied, gains <color=#F74848>2</color> stacks of [Advantage]. Stacks up to <color=#F74848>3</color> times. At the end of action, for every <color=#F74848>1</color> enemy within a <color=#F74848>6</color> tile range inflicted with [Provocation], gains <color=#F74848>1</color> stack of [Advantage]. When attacking with a Polearm, deals <color=#F74848>70%</color> Splash DMG to another part with the lowest HP percentage. For every <color=#F74848>1</color> enemy inflicted with [Provocation] within a <color=#F74848>6</color> tile range, attack multiplier <color=#F74848>+0.1</color>, up to <color=#F74848>0.4</color>.",
           "SkillIcon": "Icon_skill_talent_5155",
           "icon": "Icon_skill_talent_5155",
           "Status": 1,
@@ -3778,7 +3778,7 @@
         {
           "ID": "53027",
           "name": "May Flourish",
-          "SpecificEffects": "Enhanced [Epiphyllum's Move]: When in <buf ID=900014>[Aiming]</buf> Mode, DMG <color=#F74848>+20%</color>. If the target part is undestroyed, DMG is further increased by <color=#F74848>10%</color>. When equipped with a Small Shield, can move with full movement after destroying the target.",
+          "SpecificEffects": "Enhanced [Epiphyllum Move]: When in <buf ID=900014>[Aiming]</buf> Mode, DMG <color=#F74848>+20%</color>. If the target part is undestroyed, DMG is further increased by <color=#F74848>10%</color>. When equipped with a Small Shield, can move with full movement after destroying the target.",
           "BufCarried": "530271/530272/530273/530274",
           "SkillIcon": "Icon_skill_passive_1160",
           "icon": "Icon_skill_passive_1160",

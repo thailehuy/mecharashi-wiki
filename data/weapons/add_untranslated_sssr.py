@@ -214,7 +214,7 @@ ENTRIES = {
             },
             "53093": {
                 "name": "ND Amplifier",
-                "SpecificEffects": "Enhanced [Kalavinka]: Upon deployment, gains <color=#F74848>2</color> stacks of <buf ID=2016503>[Dual Gun Efficiency]</buf>. When in combat with a target within <buf ID=900011>[Ideal Range]</buf> using two Assault Weapons, Final DMG <color=#F74848>+15%</color>. After actively attacking, if carrying <color=#F74848>5</color> or more buffs, immediately restores <color=#F74848>1</color> AP. Can trigger <color=#F74848>1</color> time per turn.",
+                "SpecificEffects": "Enhanced [KALAVINKA]: Upon deployment, gains <color=#F74848>2</color> stacks of <buf ID=2016503>[Dual Gun Efficiency]</buf>. When in combat with a target within <buf ID=900011>[Ideal Range]</buf> using two Assault Weapons, Final DMG <color=#F74848>+15%</color>. After actively attacking, if carrying <color=#F74848>5</color> or more buffs, immediately restores <color=#F74848>1</color> AP. Can trigger <color=#F74848>1</color> time per turn.",
             },
             "53091": {
                 "name": "Calibration Unit",
@@ -366,7 +366,7 @@ ENTRIES = {
             },
             "53114": {
                 "name": "Glory of Sin",
-                "SpecificEffects": "Enhanced [Doctrine of Sin]: When another ally is actively attacked, inflicts <buf ID=6010502>[Magnetic Lock-On]</buf> on the attacker. Can trigger <color=#F74848>2</color> times per turn. When actively attacking with a Rail Gun, for every <color=#F74848>1</color> target destroyed, restores <color=#F74848>1</color> Rail Gun Ammo, up to <color=#F74848>3</color> times per turn. For every <color=#F74848>1</color> time <buf ID=6010502>[Magnetic Lock-On]</buf> is inflicted, gains <color=#F74848>1</color> stack of <buf ID=531145>[Magnetic Buff]</buf>, up to <color=#F74848>10</color> stacks.",
+                "SpecificEffects": "Enhanced [Doctrine of Sin]: When another ally is actively attacked, inflicts <buf ID=6010502>[Magnetic Lock]</buf> on the attacker. Can trigger <color=#F74848>2</color> times per turn. When actively attacking with a Rail Gun, for every <color=#F74848>1</color> target destroyed, restores <color=#F74848>1</color> Rail Gun Ammo, up to <color=#F74848>3</color> times per turn. For every <color=#F74848>1</color> time <buf ID=6010502>[Magnetic Lock]</buf> is inflicted, gains <color=#F74848>1</color> stack of <buf ID=531145>[Magnetic Buff]</buf>, up to <color=#F74848>10</color> stacks.",
             },
             "53112": {
                 "name": "Arc Bargain",

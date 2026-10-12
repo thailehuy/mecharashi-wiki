@@ -5,12 +5,12 @@
   "Profession": "Defender",
   "Occupation": "Guardian",
   "Talent0_2Ability": {
-    "name": "Fearless Hunting Fang",
-    "SpecificEffects": "When actively attacked from within <color=#F74848>4</color> adjacent tiles and both hands are intact, activates <skill activeSkill=6011501>[Polearm Throw]</skill> after combat. <buf ID=900022>[Guard]</buf> can additionally block melee attack."
+    "name": "Intrepid Fang",
+    "SpecificEffects": "When actively attacked from within <color=#F74848>4</color> tiles and both Arms are undestroyed, launches <skill activeSkill=6011501>[Polearm Toss]</skill> after combat. <buf ID=900022>[Guard]</buf> can additionally block Melee attacks."
   },
   "Talent3_5Ability": {
-    "name": "Fearless Hunting Fang",
-    "SpecificEffects": "When actively attacked from within <color=#F74848>4</color> adjacent tiles and both hands are intact, activates <skill activeSkill=6011501>[Polearm Throw]</skill> after combat. <buf ID=900022>[Guard]</buf> can additionally block melee attack.\nWhile [Zoey] is on the field, enemies inflicted with <buf ID=6011014>[Provocation]</buf> take <color=#F74848>15%</color> more DMG from [Zoey] and deal <color=#F74848>15%</color> less DMG to units other than [Zoey]."
+    "name": "Intrepid Fang",
+    "SpecificEffects": "When actively attacked from within <color=#F74848>4</color> tiles and both Arms are undestroyed, launches <skill activeSkill=6011501>[Polearm Toss]</skill> after combat. <buf ID=900022>[Guard]</buf> can additionally block Melee attacks.\nWhen [Zoey] is on the battlefield, enemy units with <buf ID=6011014>[Provocation]</buf> deal <color=#F74848>15%</color> less damage when attacking targets other than [Zoey], and take <color=#F74848>15%</color> increased damage from [Zoey]."
   },
   "skills": {
     "600001": {
@@ -19,37 +19,37 @@
       "SpecificEffects": "Trigger <buf ID=900022>[Guard]</buf> to protect adjacent (<color=#F74848>1</color> tile) allies from Assault and Ranged attacks, effective up to <color=#F74848>2</color> times per turn."
     },
     "601102": {
-      "name": "Parry",
+      "name": "Unbreakable Will",
       "describe": "",
       "SpecificEffects": "When both arms are intact, DMG taken on arms are reduced by <color=#F74848>25%</color>."
     },
     "601103": {
-      "name": "Ambush",
+      "name": "Encroach",
       "describe": "Uses a Polearm to attack a target, dealing <color=#F74848>1.5x</color> DMG. When being retaliated against, gains <color=#F74848>20%</color> Dodge Rate.",
       "SpecificEffects": ""
     },
     "601104": {
-      "name": "First Strike",
-      "describe": "Uses a Polearm to attack all targets within an I-shaped (3x1-tile) or L-shaped (3x1-tile) area ahead, dealing <color=#F74848>0.9x</color> AoE DMG. For each <color=#F74848>1</color> target hit, gains <color=#F74848>1</color> stack of <buf ID=6011042>[Advantage]</buf>, up to <color=#F74848>3</color> stacks.",
+      "name": "Challenge Formation",
+      "describe": "Uses a Polearm to attack all targets within an I-shaped (<color=#F74848>3x1</color>-tile) area or L-shaped (<color=#F74848>3x1</color>-tile) area ahead, dealing <color=#F74848>0.9x</color> AoE DMG. Gains <color=#F74848>1</color> stack of <buf ID=6011042>[Upper Hand]</buf> for each target hit, stacking up to <color=#F74848>3</color> times.",
       "SpecificEffects": ""
     },
     "601105": {
-      "name": "Seizing Momentum",
+      "name": "Seize Momentum",
       "describe": "",
       "SpecificEffects": "When completely dodging an attack, recovers <color=#F74848>1</color> AP. This effect can trigger <color=#F74848>1</color> time per turn."
     },
     "601106": {
-      "name": "Flash Hunt",
-      "describe": "Uses Polearm to <range type=1>thrust 4 tiles forward</range>, dealing <color=#F74848>1.7x</color> DMG to the <color=#F74848>1st</color> target hit and applies <buf ID=6011014>[Provocation]</buf>, lasting for <color=#F74848>2</color> turns.",
+      "name": "Lightning Hunt",
+      "describe": "Uses a Polearm to <range type=1>thrust 4 tiles forward</range>, dealing <color=#F74848>1.7x</color> DMG to the first target hit and inflicting <buf ID=6011014>[Provocation]</buf>, lasting for <color=#F74848>2</color> turns.",
       "SpecificEffects": ""
     },
     "601107": {
-      "name": "Chaotic Steps",
+      "name": "Chaotic Advance",
       "describe": "",
-      "SpecificEffects": "For each <color=#F74848>1</color> enemies carrying <buf ID=6011014>[Provocation]</buf>, Dodge Rate increases by <color=#F74848>4%</color>, up to a maximum of <color=#F74848>12%</color>."
+      "SpecificEffects": "For each enemy on the battlefield with <buf ID=6011014>[Provocation]</buf>, gains Dodge Rate <color=#F74848>+4%</color>, up to <color=#F74848>12%</color>."
     },
     "601108": {
-      "name": "Verdict",
+      "name": "Final Verdict",
       "describe": "Selects an empty tile within <range type=0>4-adjacent</range> tiles, jumps to the target type and uses Polearm to deal <color=#F74848>1.1x</color> AoE DMG to all enemies within <range type=1>2-adjacent</range> tiles of the target, inflicting <buf ID=6011014>[Provocation]</buf> on all enemies hit, lasting for <color=#F74848>2</color> turns.",
       "SpecificEffects": ""
     }
@@ -80,7 +80,7 @@
       "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
     },
     "601131": {
-      "name": "Survival Instinct 1",
+      "name": "Survival Protocol 1",
       "SpecificEffects": "When actively attacked, if a Dodge is triggered, recovers <color=#F74848>4%</color> max HP to all undestroyed parts. For each <color=#F74848>1</color> hit dodged, additionally recovers <color=#F74848>1%</color> more HP, up to <color=#F74848>8%</color> additional HP."
     },
     "600032": {
@@ -92,19 +92,19 @@
       "SpecificEffects": "At the end of the action, if an Active Attack was not initiated this turn, an extra <color=#F74848>2</color> tiles can be moved."
     },
     "601134": {
-      "name": "Survival Instinct 2",
-      "SpecificEffects": "When completely dodging an attack, <buf ID=6011311>[Survival Instinct 1]</buf> effect can additionally restore <color=#F74848>1</color> destroyed part."
+      "name": "Survival Protocol 2",
+      "SpecificEffects": "When completely dodging an attack, <buf ID=6011311>[Survival Protocol 1]</buf> effect can additionally restore <color=#F74848>1</color> destroyed part."
     },
     "601135": {
-      "name": "Survival Instinct 3",
-      "SpecificEffects": "When attacked and HP dropped below <color=#F74848>50%</color> of max HP, gains <buf ID=1008062>[Absolute Dodge]</buf> after combat. This effect has a <color=#F74848>3</color> turns CD."
+      "name": "Survival Protocol 3",
+      "SpecificEffects": "When HP drops below <color=#F74848>50%</color> after taking damage, gains <buf ID=1008062>[Absolute Dodge]</buf> after combat. Can trigger <color=#F74848>1</color> time, with a trigger interval of <color=#F74848>3</color> turns."
     },
     "601136": {
-      "name": "Survival Instinct 4",
-      "SpecificEffects": "<buf ID=6011311>[Survival Instinct 1]</buf> after-combat recovery increases to <color=#F74848>10%</color> max HP for all undestroyed parts."
+      "name": "Survival Protocol 4",
+      "SpecificEffects": "<buf ID=6011311>[Survival Protocol 1]</buf> after-combat recovery increases to <color=#F74848>10%</color> max HP for all undestroyed parts."
     },
     "601141": {
-      "name": "Hunting Impulse 1",
+      "name": "Predatory Impulse 1",
       "SpecificEffects": "After using <skill activeSkill=6011501>[Polearm Throw]</skill> for <color=#F74848>3</color> times, the next active attack will not consume AP, and can trigger <buf ID=900004>[Re-ATK]</buf>, allowing movement of <color=#F74848>2</color> tiles before attacking. This effect is removed after triggering."
     },
     "600042": {
@@ -116,26 +116,26 @@
       "SpecificEffects": "<buf ID=900022>[Guard]</buf> can now be triggered an unlimited number of times per turn."
     },
     "601144": {
-      "name": "Hunting Impulse 2",
+      "name": "Predatory Impulse 2",
       "SpecificEffects": "AP recovery <color=#F74848>+1</color>."
     },
     "601145": {
-      "name": "Hunting Impulse 3",
+      "name": "Predatory Impulse 3",
       "SpecificEffects": "After activating <skill activeSkill=6011501>[Polearm Throw]</skill>, applies <buf ID=6011014>[Provocation]</buf> to all targets hit, lasting for <color=#F74848>2</color> turns."
     },
     "601146": {
-      "name": "Hunting Impulse 4",
+      "name": "Predatory Impulse 4",
       "SpecificEffects": "<skill activeSkill=6011501>[Polearm Throw]</skill> DMG dealt increases to <color=#F74848>1x</color> AoE DMG."
     }
   },
   "version": "2.5",
   "hiddenSkills": [
     {
-      "name": "Rear Guard",
+      "name": "Sync-Guard",
       "icon": "Icon_skill_order_5112",
       "type": "Order",
       "Ap": "1",
-      "CD": "0",
+      "CD": "2",
       "describe": "Protects allies within <color=#F74848>2</color> adjacent tiles from assault and ranged attacks, up to <color=#F74848>2</color> times per turn, lasting for <color=#F74848>2</color> turns. Additionally inflicts <buf ID=6011014>[Provocation]</buf> on all enemies within <color=#F74848>2</color> adjacent tiles for <color=#F74848>2</color> turns."
     }
   ],

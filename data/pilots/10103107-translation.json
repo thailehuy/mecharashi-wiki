@@ -6,11 +6,11 @@
   "Occupation": "Raider",
   "Talent0_2Ability": {
     "name": "Prototype",
-    "SpecificEffects": "If you cast a One-Handed Machine Gun skill during an Active Attack, use the opposite arm to launch <buf ID=900001>[Flurry Strike]</buf> after the enemy's Retaliation, dealing <color=#F74848>0.2x</color> DMG."
+    "SpecificEffects": "When initiating combat with a One-Handed Machine Gun skill, uses the opposite arm to launch a <buf ID=900001>[Flurry Strike]</buf> after the enemy's Retaliation, dealing <color=#F74848>0.2x</color> DMG."
   },
   "Talent3_5Ability": {
     "name": "Prototype",
-    "SpecificEffects": "When initiating combat with a One-Handed Machine Gun skill, uses the opposite arm to launch <buf ID=900001>[Flurry Strike]</buf> after the enemy retaliates, dealing <color=#F74848>0.25x</color> DMG. Machine Gun Weight <color=#F74848>-80</color>."
+    "SpecificEffects": "When initiating combat with a One-Handed Machine Gun skill, uses the opposite arm to launch a <buf ID=900001>[Flurry Strike]</buf> after the enemy retaliates, dealing <color=#F74848>0.25x</color> DMG. Machine Gun Weight <color=#F74848>-80</color>."
   },
   "skills": {
     "200001": {
@@ -29,7 +29,7 @@
       "SpecificEffects": ""
     },
     "200804": {
-      "name": "One Mech Army",
+      "name": "One-Mech Army",
       "describe": "Simultaneously uses two Machine Guns to attack a target, dealing <color=#F74848>0.7x</color> DMG <color=#F74848>2</color> times. After combat, repairs undestroyed parts, restoring HP equal to <color=#F74848>40%</color> of damage dealt.",
       "SpecificEffects": ""
     },
@@ -102,14 +102,14 @@
     },
     "200035": {
       "name": "Perfect Position 3",
-      "SpecificEffects": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, Crit Rate <color=#F74848>+12%</color>."
+      "SpecificEffects": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, Crit Rate <color=#F74848>+15%</color>."
     },
     "200036": {
       "name": "Perfect Position 4",
       "SpecificEffects": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, final DMG <color=#F74848>+30%</color>."
     },
     "200841": {
-      "name": "Dominate Field 1",
+      "name": "Domination Field 1",
       "SpecificEffects": "Rail Gun AP Cost <color=#F74848>-1</color>."
     },
     "200042": {
@@ -121,16 +121,16 @@
       "SpecificEffects": "Before actively attacking without having moved, can trigger <buf ID=900004>[Re-ATK]</buf>. Can only trigger <color=#F74848>1</color> time per turn. Unable to move before attacking. Only triggers if no other [Re-ATK] effect is triggered this turn.\nEffects similar to <buf ID=900004>[Re-ATK]</buf> cannot be re-triggered."
     },
     "200844": {
-      "name": "Dominate Field 2",
+      "name": "Domination Field 2",
       "SpecificEffects": "Rail Gun DMG <color=#F74848>+15%</color>."
     },
     "200845": {
-      "name": "Dominate Field 3",
+      "name": "Domination Field 3",
       "SpecificEffects": "After an Active Attack in combat, automatically use a Rail Gun to launch <buf ID=900031>[Extra Strike]</buf> once against the target, dealing <color=#F74848>0.2x</color> DMG without consuming any Ammo."
     },
     "200846": {
-      "name": "Dominate Field 4",
-      "SpecificEffects": "When launching <buf ID=900031>[Extra Strike]</buf>, if the target is within the cross area, deals <color=#F74848>0.3x</color> AoE DMG to all targets within a Line (<color=#F74848>5</color> tiles) in which the target is located."
+      "name": "Domination Field 4",
+      "SpecificEffects": "When launching an <buf ID=900031>[Extra Strike]</buf>, if the target is within the cross area, deals <color=#F74848>0.3x</color> AoE DMG to all targets in the line (<color=#F74848>1x5</color> tiles) in which the target is located."
     }
   },
   "version": "1.0"

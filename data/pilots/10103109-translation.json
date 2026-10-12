@@ -6,11 +6,11 @@
   "Occupation": "Fighter",
   "Talent0_2Ability": {
     "name": "Unto Death",
-    "SpecificEffects": "With a Polearm, if unable to retaliate in combat, <buf ID=900008>[Pursuit]</buf> can trigger, allowing the unit to move <color=#F74848>3</color> tiles toward the attacker after combat. If successful in reaching the target, use the melee weapon to cast <buf ID=900030>[Cleave]</buf>, dealing <color=#F74848>0.4x</color> DMG."
+    "SpecificEffects": "When equipped with a Polearm, if unable to retaliate in combat, triggers <buf ID=900008>[Pursuit]</buf>, allowing the unit to move <color=#F74848>3</color> tiles toward the attacker after combat. Upon successfully reaching the target, executes <buf ID=900030>[Cleave]</buf>, dealing <color=#F74848>0.4x</color> DMG."
   },
   "Talent3_5Ability": {
     "name": "Unto Death",
-    "SpecificEffects": "With a Polearm, if unable to retaliate in combat, <buf ID=900008>[Pursuit]</buf> can trigger, allowing the unit to move <color=#F74848>4</color> tiles toward the attacker after combat. If successful in reaching the target, cast <buf ID=900030>[Cleave]</buf>, dealing <color=#F74848>0.4x</color> DMG. When triggering <buf ID=900008>[Pursuit]</buf>, for every <color=#F74848>1</color> tile moved, Dodge Rate <color=#F74848>+5%</color>, up to <color=#F74848>15%</color>. This effect lasts until your next turn starts."
+    "SpecificEffects": "When equipped with a Polearm, if unable to retaliate in combat, triggers <buf ID=900008>[Pursuit]</buf>, allowing the unit to move <color=#F74848>3</color> tiles toward the attacker after combat. Upon successfully reaching the target, executes <buf ID=900030>[Cleave]</buf>, dealing <color=#F74848>0.4x</color> DMG.\nWhen triggering <buf ID=900008>[Pursuit]</buf>, for every <color=#F74848>1</color> tile moved, Dodge Rate <color=#F74848>+5%</color>, up to <color=#F74848>15%</color>. This effect lasts until the next turn starts."
   },
   "skills": {
     "100001": {

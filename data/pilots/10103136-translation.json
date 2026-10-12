@@ -6,11 +6,11 @@
   "Occupation": "Raider",
   "Talent0_2Ability": {
     "name": "Hot! Hot! Hot!",
-    "SpecificEffects": "When initiating combat with a Flamethrower, triggers <buf ID=900064>[Peripheral Vision]</buf>. Prioritizes attacking other targets within range using the opposite Arm's Flamethrower, dealing <color=#F74848>20%</color> <buf ID=900065>[Flame DMG]</buf> to all targets in the path."
+    "SpecificEffects": "When initiating combat with a Flamethrower, triggers <buf ID=900064>[Peripheral Vision]</buf>. Prioritizes attacking other targets within range using the opposite Arm's Flamethrower, dealing <color=#F74848>15%</color> <buf ID=900065>[Flame DMG]</buf> to all targets in the path."
   },
   "Talent3_5Ability": {
     "name": "Hot! Hot! Hot!",
-    "SpecificEffects": "When initiating combat with a Flamethrower, triggers <buf ID=900064>[Peripheral Vision]</buf>. Prioritizes attacking other targets within range using the opposite Arm's Flamethrower, dealing <color=#F74848>20%</color> <buf ID=900065>[Flame DMG]</buf> to all targets in the path.\nAfter initiating combat, inflicts <buf ID=2012512>[Joint Melt]</buf> on all targets hit, lasting for <color=#F74848>1</color> turn."
+    "SpecificEffects": "When initiating combat with a Flamethrower, triggers <buf ID=900064>[Peripheral Vision]</buf>. Prioritizes attacking other targets within range using the opposite Arm's Flamethrower, dealing <color=#F74848>15%</color> <buf ID=900065>[Flame DMG]</buf> to all targets in the path.\nAfter initiating combat, inflicts <buf ID=2012512>[Joint Melt]</buf> on all targets hit, lasting for <color=#F74848>1</color> turn."
   },
   "skills": {
     "200001": {
@@ -97,7 +97,7 @@
     },
     "200035": {
       "name": "Perfect Position 3",
-      "SpecificEffects": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, Crit Rate <color=#F74848>+12%</color>."
+      "SpecificEffects": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, Crit Rate <color=#F74848>+15%</color>."
     },
     "200036": {
       "name": "Perfect Position 4",

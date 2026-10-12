@@ -6,11 +6,11 @@
   "Occupation": "Sniper",
   "Talent0_2Ability": {
     "name": "Shadow of Calamity",
-    "SpecificEffects": "At the end of the action, if there are no enemies within the adjacent (<color=#F74848>2 tiles</color>) area, grant self <buf ID=900033>[Stealth I]</buf> status, which lasts for <color=#F74848>2</color> turns, with a trigger interval of <color=#F74848>2</color> turns."
+    "SpecificEffects": "At end of action, if there are no enemies within <color=#F74848>2</color> adjacent tiles, gains <buf ID=900033>[Stealth I]</buf> status, lasting for <color=#F74848>2</color> turns. This effect has a <color=#F74848>2</color>-turn trigger interval."
   },
   "Talent3_5Ability": {
     "name": "Shadow of Calamity",
-    "SpecificEffects": "At the end of the action, if there are no enemies within the adjacent (<color=#F74848>2</color> tiles) area, grant self <buf ID=3004502>[Stealth I]</buf> status, which lasts for <color=#F74848>2</color> turns, with a trigger interval of <color=#F74848>2</color> turns.\nCrit DMG <color=#F74848>+10%</color>."
+    "SpecificEffects": "At end of action, if there are no enemies within <color=#F74848>2</color> adjacent tiles, gains <buf ID=3004502>[Stealth I]</buf> status, lasting for <color=#F74848>2</color> turns. This effect has a <color=#F74848>2</color>-turn trigger interval.\nCrit DMG <color=#F74848>+10%</color>."
   },
   "skills": {
     "300001": {
@@ -34,7 +34,7 @@
       "SpecificEffects": "For each damaged part on the target, Crit DMG <color=#F74848>+10%</color>."
     },
     "700043": {
-      "name": "Excellent status",
+      "name": "Superb",
       "describe": "",
       "SpecificEffects": "When self's HP is full, DMG <color=#F74848>+15%</color>."
     },
@@ -81,7 +81,7 @@
     },
     "300031": {
       "name": "Forbidden Zone 1",
-      "SpecificEffects": "With a Ranged Weapon, launch <buf ID=900013>[Vigilant Shot]</buf> before the enemy attack within range, dealing <color=#F74848>0.35x</color> DMG, effective up to <color=#F74848>1</color> time per turn."
+      "SpecificEffects": "Before enemies within range initiate combat, triggers <buf ID=900013>[Vigilant Shot]</buf> with a Ranged Weapon, dealing <color=#F74848>0.5x</color> DMG. Can trigger <color=#F74848>1</color> time per turn."
     },
     "300032": {
       "name": "AP Optimization 3",
@@ -97,11 +97,11 @@
     },
     "300035": {
       "name": "Forbidden Zone 3",
-      "SpecificEffects": "<buf ID=900013>[Vigilant Shot]</buf>'s damage multiplier is increased to <color=#F74848>0.5</color>."
+      "SpecificEffects": "<buf ID=900013>[Vigilant Shot]</buf> Damage Multiplier <color=#F74848>+0.15</color>."
     },
     "300036": {
       "name": "Forbidden Zone 4",
-      "SpecificEffects": "<buf ID=900013>[Vigilant Shot]</buf> is launched against an enemy that has not attacked. Targets the part with the lowest HP."
+      "SpecificEffects": "<buf ID=900013>[Vigilant Shot]</buf> targets the part with the lowest HP, inflicting DMG Dealt <color=#F74848>-35%</color> on the target hit until the end of this attack."
     },
     "300441": {
       "name": "Pathfinder 1",
@@ -128,5 +128,15 @@
       "SpecificEffects": "Enable <buf ID=3004501>[Shadow of Calamity]</buf> to trigger again after <color=#F74848>1</color> turn."
     }
   },
-  "version": "1.0"
+  "version": "1.0",
+  "hiddenSkills": [
+    {
+      "name": "Accurate Fire",
+      "icon": "Icon_skill_main_1017",
+      "type": "EquipmentSkill",
+      "Ap": "3",
+      "CD": "0",
+      "describe": "Uses a Sniper Rifle to attack a target, dealing <color=#F74848>1.0x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking and gains Hit Rate <color=#F74848>+15%</color>."
+    }
+  ]
 }

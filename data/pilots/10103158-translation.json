@@ -6,7 +6,7 @@
   "Occupation": "Fighter",
   "Talent0_2Ability": {
     "name": "Field-Tested",
-    "SpecificEffects": "After being actively attacked, if HP is below <color=#F74848>50%</color>, immediately triggers <color=#F74848>1</color> Manipulator passive repair effect after combat. Gains <buf ID=1016502>[Heroism I]</buf> based on current HP lost, gaining <color=#F74848>1</color> stack for every <color=#F74848>10%</color> HP lost. Can stack up to <color=#F74848>5</color> times."
+    "SpecificEffects": "After being actively attacked, if HP is below <color=#F74848>50%</color>, immediately triggers <color=#F74848>1</color> Manipulator passive repair effect after combat. Gains <buf ID=1016502>[Heroism I]</buf> according to current lost HP, gaining <color=#F74848>1</color> stack for every <color=#F74848>10%</color> HP lost, up to <color=#F74848>5</color> stacks."
   },
   "Talent3_5Ability": {
     "name": "Field-Tested",
@@ -29,7 +29,7 @@
       "SpecificEffects": "During combat, if this unit's HP percentage is lower than the target's, Crit Rate and Crit DMG <color=#F74848>+10%</color>."
     },
     "101604": {
-      "name": "Double-Edged Saw",
+      "name": "Twin-Blade Saw",
       "describe": "Uses a Chainsaw to attack a target, dealing <color=#F74848>1.35</color> DMG. This attack always hits the body part.\nBefore combat, reduces own HP by <color=#F74848>20%</color> of max HP from all parts, then deals <color=#F74848>20%</color> of target max HP as <buf ID=900017>[Fixed DMG]</buf>. The HP reduction as well as the <buf ID=900017>[Fixed DMG]</buf> cannot destroy any part.",
       "SpecificEffects": ""
     },

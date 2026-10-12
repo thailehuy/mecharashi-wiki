@@ -6,15 +6,15 @@
   "Occupation": "Tactician",
   "Talent0_2Ability": {
     "name": "Unceasing Thunderfire",
-    "SpecificEffects": "When attacking with a Rocket Launcher, if <color=#F74848>3</color> or more targets are hit, restores <color=#F74848>2</color> AP after combat. Can only trigger <color=#F74848>1</color> time per turn."
+    "SpecificEffects": "When attacking with a Rocket Launcher, if <color=#F74848>3</color> or more targets are hit, restores <color=#F74848>1</color> AP after combat. Can only trigger <color=#F74848>1</color> time per turn."
   },
   "Talent3_5Ability": {
     "name": "Unceasing Thunderfire",
-    "SpecificEffects": "When attacking with a Rocket Launcher, if <color=#F74848>3</color> or more targets are hit, restores <color=#F74848>2</color> AP after combat. Can only trigger <color=#F74848>1</color> time per turn. Rocket Launcher Weight: <color=#F74848>-130</color>."
+    "SpecificEffects": "When attacking with a Rocket Launcher, if <color=#F74848>3</color> or more targets are hit, restores <color=#F74848>1</color> AP after combat. Can trigger <color=#F74848>1</color> time per turn.\nRocket Launcher Weight: <color=#F74848>-130</color>."
   },
   "skills": {
     "400001": {
-      "name": "Strategic Bombing 1",
+      "name": "Strategic Strike 1",
       "describe": "",
       "SpecificEffects": "When a Tactical Weapon runs out of ammo, trigger <buf ID=900029>[Auto Load]</buf>. This process takes <color=#F74848>3</color> turns."
     },
@@ -61,7 +61,7 @@
   },
   "neuralPassives": {
     "400011": {
-      "name": "Strategic Bombing 2",
+      "name": "Strategic Strike 2",
       "SpecificEffects": "Tactical Weapon Magazine Capacity <color=#F74848>+1</color>."
     },
     "400012": {
@@ -73,7 +73,7 @@
       "SpecificEffects": "Initial AP <color=#F74848>+1</color>."
     },
     "400021": {
-      "name": "Strategic Bombing 3",
+      "name": "Strategic Strike 3",
       "SpecificEffects": "Tactical Weapons Reload CD <color=#F74848>-1</color>."
     },
     "400022": {
@@ -93,7 +93,7 @@
       "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
     },
     "400033": {
-      "name": "Strategic Bombing 4",
+      "name": "Strategic Strike 4",
       "SpecificEffects": "When <buf ID=900029>[Auto Load]</buf> is complete, restore <color=#F74848>1</color> AP."
     },
     "400034": {

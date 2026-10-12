@@ -6,7 +6,7 @@
   "Occupation": "Machinist",
   "Talent0_2Ability": {
     "name": "Coexistence Theory",
-    "SpecificEffects": "Automatically deploys <buf ID=1099900>[Guggle]</buf> when entering the battlefield. <buf ID=1099900>[Guggle]</buf> can block Melee, Assault, and Ranged Weapon attacks for allies within <color=#F74848>1</color> adjacent block. <buf ID=1099900>[Guggle]</buf> inherits <color=#F74848>75%</color> of Sapientia's ST's Max HP and <color=#F74848>100%</color> of its other attributes."
+    "SpecificEffects": "When sortieing, automatically deploys <buf ID=1099900>[Guggle]</buf>. <buf ID=1099900>[Guggle]</buf> can block Melee, Assault, and Ranged Weapon attacks for adjacent allies. <buf ID=1099900>[Guggle]</buf> inherits <color=#F74848>75%</color> of Sapientia's ST's Max HP and <color=#F74848>100%</color> of its other attributes."
   },
   "Talent3_5Ability": {
     "name": "Coexistence Theory",
@@ -121,7 +121,7 @@
       "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
     },
     "500031": {
-      "name": "Emergency Repair 1",
+      "name": "Salvage Repair 1",
       "SpecificEffects": "At the end of the action, randomly select a single adjacent (<color=#F74848>1</color> tile) ally to perform <buf ID=900018>[Passive Repair]</buf>. The repair amount is <color=#F74848>0.6x</color> the Manipulator's Manipulator Repair AMT and cannot repair damaged parts."
     },
     "500032": {
@@ -133,15 +133,15 @@
       "SpecificEffects": "After performing active repairs, an additional <color=#F74848>2</color> tiles can be moved."
     },
     "500034": {
-      "name": "Emergency Repair 2",
+      "name": "Salvage Repair 2",
       "SpecificEffects": "<buf ID=900018>[Passive Repair]</buf> selects targets within the adjacent (<color=#F74848>2</color> tiles) area."
     },
     "500035": {
-      "name": "Emergency Repair 3",
+      "name": "Salvage Repair 3",
       "SpecificEffects": "<buf ID=900018>[Passive Repair]</buf>'s Manipulator Repair AMT is now <color=#F74848>1x</color> that of the Manipulator."
     },
     "500036": {
-      "name": "Emergency Repair 4",
+      "name": "Salvage Repair 4",
       "SpecificEffects": "The number of targets that <buf ID=900018>[Passive Repair]</buf> can repair increases by <color=#F74848>1</color>."
     },
     "500841": {

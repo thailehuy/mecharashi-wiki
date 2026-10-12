@@ -5,11 +5,11 @@
   "Profession": "Assault",
   "Occupation": "Raider",
   "Talent0_2Ability": {
-    "name": "Fully Prepared",
+    "name": "Full-Proof Plan",
     "SpecificEffects": "When HP is at <color=#F74848>100%</color>, DMG Dealt <color=#F74848>+8%</color>."
   },
   "Talent3_5Ability": {
-    "name": "Fully Prepared",
+    "name": "Full-Proof Plan",
     "SpecificEffects": "When HP is at <color=#F74848>100%</color>, DMG Dealt <color=#F74848>+12%</color>."
   },
   "skills": {
@@ -29,7 +29,7 @@
       "SpecificEffects": "When launching a <buf ID=900002>[Link Attack]</buf>, DMG <color=#F74848>+15%</color> and Hit Rate <color=#F74848>+10%</color>."
     },
     "200304": {
-      "name": "Embrittling Sweep",
+      "name": "Embrittling Spray",
       "describe": "Uses Heavy Machine Gun to attack all targets <range type=1>in a cone in front</range>, dealing <color=#F74848>0.55x</color> AoE DMG. After combat, it inflicts <buf ID=7101801>[DMG Taken UP I]</buf> on targets hit, lasting <color=#F74848>1</color> turn.",
       "SpecificEffects": ""
     },
@@ -39,7 +39,7 @@
       "SpecificEffects": "Movement <color=#F74848>-1</color>, while Heavy Machine Gun Range <color=#F74848>+1</color>."
     },
     "200306": {
-      "name": "Full Power",
+      "name": "Fully Power",
       "describe": "Uses Heavy Machine Gun to attack a target, dealing <color=#F74848>1.55x</color> DMG.",
       "SpecificEffects": ""
     }
@@ -87,12 +87,22 @@
     },
     "200035": {
       "name": "Perfect Position 3",
-      "SpecificEffects": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, Crit Rate <color=#F74848>+12%</color>."
+      "SpecificEffects": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, Crit Rate <color=#F74848>+15%</color>."
     },
     "200036": {
       "name": "Perfect Position 4",
       "SpecificEffects": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, final DMG <color=#F74848>+30%</color>."
     }
   },
-  "version": "1.0"
+  "version": "1.0",
+  "hiddenSkills": [
+    {
+      "name": "Rampage Shot",
+      "icon": "Icon_skill_main_1015",
+      "type": "EquipmentSkill",
+      "Ap": "3",
+      "CD": "0",
+      "describe": "Uses a Heavy Machine Gun to attack a target, dealing <color=#F74848>1.3x</color> DMG."
+    }
+  ]
 }

@@ -103,7 +103,7 @@
     },
     "200035": {
       "name": "Perfect Position 3",
-      "SpecificEffects": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, Crit Rate <color=#F74848>+12%</color>."
+      "SpecificEffects": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, Crit Rate <color=#F74848>+15%</color>."
     },
     "200036": {
       "name": "Perfect Position 4",
@@ -131,7 +131,7 @@
     },
     "201146": {
       "name": "High Pressure Vibration 4",
-      "SpecificEffects": "When knocking back a target, if the path is blocked, additionally deals <buf ID=900017>[Fixed DMG]</buf> once for <color=#F74848>0.35x</color> DMG to the target."
+      "SpecificEffects": "When knocking back a target, if the path is blocked, additionally deals <color=#F74848>0.35x</color> <buf ID=900017>[Fixed DMG]</buf> to the target <color=#F74848>1</color> time."
     }
   },
   "version": "1.0"

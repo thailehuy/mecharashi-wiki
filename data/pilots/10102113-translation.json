@@ -6,15 +6,15 @@
   "Occupation": "Tactician",
   "Talent0_2Ability": {
     "name": "Ammo Upgrade",
-    "SpecificEffects": "After sortie, gain <color=#F74848>2</color> stacks of <buf ID=4003503>[SP Ammo I]</buf>, up to <color=#F74848>2</color> stacks. After an Active Attack with a Rail Gun, remove <color=#F74848>1</color> stack."
+    "SpecificEffects": "After sortie, gains <color=#F74848>2</color> stacks of <buf ID=4003503>[SP Ammo I]</buf>. Stacks up to <color=#F74848>2</color> times. After attacking with a Rail Gun, <color=#F74848>1</color> stack is removed."
   },
   "Talent3_5Ability": {
     "name": "Ammo Upgrade",
-    "SpecificEffects": "After sortie, gain <color=#F74848>2</color> stacks of <buf ID=4003503>[SP Ammo I]</buf>, up to <color=#F74848>2</color> stacks. After an Active Attack with a Rail Gun, remove <color=#F74848>1</color> stack.\nWhenever [Your Turn] starts, gain <color=#F74848>1</color> stack of <buf ID=4003503>[SP Ammo I]</buf>."
+    "SpecificEffects": "After sortie, gains <color=#F74848>2</color> stacks of <buf ID=4003503>[SP Ammo I]</buf>. Stacks up to <color=#F74848>2</color> times. After actively attacking with a Rail Gun, <color=#F74848>1</color> stack is removed.\nAt start of action, gains <color=#F74848>1</color> stack of <buf ID=4003503>[SP Ammo I]</buf>."
   },
   "skills": {
     "400001": {
-      "name": "Strategic Bombing 1",
+      "name": "Strategic Strike 1",
       "describe": "",
       "SpecificEffects": "When a Tactical Weapon runs out of ammo, trigger <buf ID=900029>[Auto Load]</buf>. This process takes <color=#F74848>3</color> turns."
     },
@@ -29,7 +29,7 @@
       "SpecificEffects": "During an Active Attack, deals an additional <color=#F74848>20%</color> DMG to the part with HP below <color=#F74848>50%</color>."
     },
     "700030": {
-      "name": "Dash",
+      "name": "Rush Order",
       "describe": "Gain <buf ID=7100901>[Movement UP]</buf> and <buf ID=7100403>[Crit Rate UP II]</buf>, lasting for <color=#F74848>1</color> turn. Can continue the action with the remaining movement.",
       "SpecificEffects": ""
     },
@@ -39,7 +39,7 @@
       "SpecificEffects": "During an Active Attack, if critical hits are landed, restore <color=#F74848>1</color> AP after combat, effective <color=#F74848>1</color> time per turn."
     },
     "400306": {
-      "name": "Repair Disabled Rail Gun",
+      "name": "Anti-Repair Rail Gun",
       "describe": "Uses Rail Gun to attack all targets within a <range type=1>Line (1*5 tiles) area</range>, dealing <color=#F74848>1.0x</color> AoE DMG. After combat, it inflicts <buf ID=4003063>[Repair Hindrance]</buf> on affected targets, lasting <color=#F74848>1</color> turn.",
       "SpecificEffects": ""
     },
@@ -56,7 +56,7 @@
   },
   "neuralPassives": {
     "400011": {
-      "name": "Strategic Bombing 2",
+      "name": "Strategic Strike 2",
       "SpecificEffects": "Tactical Weapon Magazine Capacity <color=#F74848>+1</color>."
     },
     "400012": {
@@ -68,7 +68,7 @@
       "SpecificEffects": "Initial AP <color=#F74848>+1</color>."
     },
     "400021": {
-      "name": "Strategic Bombing 3",
+      "name": "Strategic Strike 3",
       "SpecificEffects": "Tactical Weapons Reload CD <color=#F74848>-1</color>."
     },
     "400022": {
@@ -88,7 +88,7 @@
       "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
     },
     "400033": {
-      "name": "Strategic Bombing 4",
+      "name": "Strategic Strike 4",
       "SpecificEffects": "When <buf ID=900029>[Auto Load]</buf> is complete, restore <color=#F74848>1</color> AP."
     },
     "400034": {
@@ -125,8 +125,18 @@
     },
     "400346": {
       "name": "Middle Management 4",
-      "SpecificEffects": "When attacking with a Rail Gun, if a part is broken, deal <buf ID=900017>[Fixed DMG]</buf> once for <color=#F74848>0.35x</color> DMG to enemies within a <color=#F74848>1</color>-tile range around the target after combat."
+      "SpecificEffects": "When attacking with a Rail Gun, if a part is destroyed, deals <buf ID=900017>[Fixed DMG]</buf> equal to <color=#F74848>0.4x</color> DMG to enemies within <color=#F74848>1</color> tile of the target after combat."
     }
   },
-  "version": "1.0"
+  "version": "1.0",
+  "hiddenSkills": [
+    {
+      "name": "Powerful Strike",
+      "icon": "Icon_skill_order_1007",
+      "type": "Order",
+      "Ap": "2",
+      "CD": "0",
+      "describe": "Uses a Rail Gun to attack all targets in a <color=#F74848>1x3</color>-tile line, dealing <color=#F74848>1.0x</color> AoE DMG."
+    }
+  ]
 }

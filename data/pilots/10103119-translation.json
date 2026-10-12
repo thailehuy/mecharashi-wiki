@@ -5,11 +5,11 @@
   "Profession": "Gunner",
   "Occupation": "Sniper",
   "Talent0_2Ability": {
-    "name": "Epiphyllum's Move",
-    "SpecificEffects": "When initiating combat with a Light Rifle, can enter <buf ID=900014>[Aiming]</buf> Mode when equipped with a Small Shield. After combat, can continue moving using any remaining Movement."
+    "name": "Epiphyllum Move",
+    "SpecificEffects": "When initiating combat with a Light Rifle, <buf ID=900014>[Aiming]</buf> Mode can be entered while equipped with a Small Shield. This skill allows for movement after combat using any remaining Movement."
   },
   "Talent3_5Ability": {
-    "name": "Epiphyllum's Move",
+    "name": "Epiphyllum Move",
     "SpecificEffects": "When initiating combat with a Light Rifle, can enter <buf ID=900014>[Aiming]</buf> Mode when equipped with a Small Shield. After combat, can continue moving using any remaining Movement.\nIn combat, if there are other enemies within <color=#F74848>2</color> adjacent tiles, Crit Rate <color=#F74848>+15%</color>."
   },
   "skills": {
@@ -86,7 +86,7 @@
     },
     "300031": {
       "name": "Forbidden Zone 1",
-      "SpecificEffects": "With a Ranged Weapon, launch <buf ID=900013>[Vigilant Shot]</buf> before the enemy attack within range, dealing <color=#F74848>0.35x</color> DMG, effective up to <color=#F74848>1</color> time per turn."
+      "SpecificEffects": "Before enemies within range initiate combat, triggers <buf ID=900013>[Vigilant Shot]</buf> with a Ranged Weapon, dealing <color=#F74848>0.5x</color> DMG. Can trigger <color=#F74848>1</color> time per turn."
     },
     "300032": {
       "name": "AP Optimization 3",
@@ -102,11 +102,11 @@
     },
     "300035": {
       "name": "Forbidden Zone 3",
-      "SpecificEffects": "<buf ID=900013>[Vigilant Shot]</buf>'s damage multiplier is increased to <color=#F74848>0.5</color>."
+      "SpecificEffects": "<buf ID=900013>[Vigilant Shot]</buf> Damage Multiplier <color=#F74848>+0.15</color>."
     },
     "300036": {
       "name": "Forbidden Zone 4",
-      "SpecificEffects": "<buf ID=900013>[Vigilant Shot]</buf> is launched against an enemy that has not attacked. Targets the part with the lowest HP."
+      "SpecificEffects": "<buf ID=900013>[Vigilant Shot]</buf> targets the part with the lowest HP, inflicting DMG Dealt <color=#F74848>-35%</color> on the target hit until the end of this attack."
     },
     "300841": {
       "name": "Epiphyllum's Heart 1",
@@ -130,7 +130,7 @@
     },
     "300846": {
       "name": "Epiphyllum's Heart 4",
-      "SpecificEffects": "The <buf ID=3008501>[Epiphyllum's Move]</buf> no longer requires the Small Shield to activate."
+      "SpecificEffects": "The <buf ID=3008501>[Epiphyllum Move]</buf> no longer requires the Small Shield to activate."
     }
   },
   "version": "1.0"

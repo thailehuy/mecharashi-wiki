@@ -6,11 +6,11 @@
   "Occupation": "Raider",
   "Talent0_2Ability": {
     "name": "Adorable",
-    "SpecificEffects": "Activate the Aura: Grants a DMG <color=#F74848>+6%</color> and a Hit Rate <color=#F74848>+3%</color> to allies within the adjacent (<color=#F74848>2</color> tiles) area."
+    "SpecificEffects": "Aura: Grants DMG <color=#F74848>+6%</color> and Hit Rate <color=#F74848>+3%</color> to other allies within <color=#F74848>2</color> adjacent tiles."
   },
   "Talent3_5Ability": {
     "name": "Adorable",
-    "SpecificEffects": "Activate the Aura: Grants a DMG <color=#F74848>+6%</color> and a Hit Rate <color=#F74848>+3%</color> to allies within the adjacent (<color=#F74848>2</color> tiles) area.\nWhen the Power of the ST is in surplus, for every <color=#F74848>80</color> points of Power surplus, DMG <color=#F74848>+5%</color>, up to <color=#F74848>15%</color>."
+    "SpecificEffects": "Aura: Grants DMG <color=#F74848>+6%</color> and Hit Rate <color=#F74848>+3%</color> to other allies within <color=#F74848>2</color> adjacent tiles.\nWhen there is a surplus of ST Power, for every <color=#F74848>80</color> surplus Power, DMG <color=#F74848>+5%</color>, up to <color=#F74848>15%</color>."
   },
   "skills": {
     "200001": {
@@ -29,7 +29,7 @@
       "SpecificEffects": ""
     },
     "700015": {
-      "name": "Rotation",
+      "name": "Strategic Redundancy",
       "describe": "",
       "SpecificEffects": "At the end of the action, if no damage was dealt this turn, restore <color=#F74848>1</color> AP."
     },
@@ -97,7 +97,7 @@
     },
     "200035": {
       "name": "Perfect Position 3",
-      "SpecificEffects": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, Crit Rate <color=#F74848>+12%</color>."
+      "SpecificEffects": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, Crit Rate <color=#F74848>+15%</color>."
     },
     "200036": {
       "name": "Perfect Position 4",
@@ -128,5 +128,15 @@
       "SpecificEffects": "Pilot Suitability <color=#F74848>+1</color>."
     }
   },
-  "version": "1.0"
+  "version": "1.0",
+  "hiddenSkills": [
+    {
+      "name": "Rampage Shot",
+      "icon": "Icon_skill_main_1015",
+      "type": "EquipmentSkill",
+      "Ap": "3",
+      "CD": "0",
+      "describe": "Uses a Heavy Machine Gun to attack a target, dealing <color=#F74848>1.3x</color> DMG."
+    }
+  ]
 }

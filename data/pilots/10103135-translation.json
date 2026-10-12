@@ -6,11 +6,11 @@
   "Occupation": "Machinist",
   "Talent0_2Ability": {
     "name": "Dummy Trick",
-    "SpecificEffects": "When other allied STs in the team are attacked in combat, if their Body would be destroyed, immediately triggers <buf ID=900003>[Guts]</buf> until the end of the combat. After combat, they are beamed to Anderson's side, gaining <buf ID=3004502>[Stealth I]</buf> for <color=#F74848>2</color> turns, and leaving <color=#F74848>1</color> <buf ID=900104>[Hologram I]</buf> in their place. This effect can only be triggered once per battle."
+    "SpecificEffects": "When other allies are forced into combat and their Body suffers overdamage, immediately triggers <buf ID=900003>[Guts]</buf> <color=#F74848>1</color> time. After combat, they are teleported to Anderson's side, gaining <buf ID=3004502>[Stealth I]</buf> and leaving <color=#F74848>1</color> <buf ID=900108>[Hologram]</buf> at their original position. This effect can only trigger <color=#F74848>1</color> time per attack."
   },
   "Talent3_5Ability": {
     "name": "Dummy Trick",
-    "SpecificEffects": "When other allied STs in the team are attacked in combat, if their Body would be destroyed, immediately triggers <buf ID=900003>[Guts]</buf> until the end of the combat. After combat, they are beamed to Anderson's side, gaining <buf ID=3004502>[Stealth I]</buf> for <color=#F74848>2</color> turns, and leaving <color=#F74848>1</color> <buf ID=900104>[Hologram I]</buf> in their place. This effect can only be triggered once per battle.\nWhen <buf ID=900104>[Hologram I]</buf> is destroyed, the attacker is unable to activate any <buf ID=900004>[Re-ATK]</buf> effects and is inflicted with <buf ID=5007516>[Weapon Inhibition]</buf> for <color=#F74848>2</color> turns. Does not affect certain units."
+    "SpecificEffects": "When other allies are forced into combat and their Body suffers overdamage, immediately triggers <buf ID=900003>[Guts]</buf> <color=#F74848>1</color> time. After combat, they are teleported to Anderson's side, gaining <buf ID=3004502>[Stealth I]</buf> and leaving <color=#F74848>1</color> <buf ID=900108>[Hologram]</buf> at their original position. This effect can only trigger <color=#F74848>1</color> time per attack.\nWhen <buf ID=900104>[Hologram I]</buf> is destroyed, it prevents the attacker from triggering any <buf ID=900004>[Re-ATK]</buf> effects and inflicts <buf ID=5007516>[Weapon Inhibition]</buf> on them for <color=#F74848>2</color> turns."
   },
   "skills": {
     "500001": {
@@ -98,15 +98,15 @@
     },
     "500034": {
       "name": "Salvage Repair 2",
-      "SpecificEffects": "Salvage Repair 1's selectable range is extended to <color=#F74848>2</color> adjacent tiles."
+      "SpecificEffects": "[Salvage Repair 1] selects targets within <color=#F74848>2</color> adjacent tiles."
     },
     "500035": {
       "name": "Salvage Repair 3",
-      "SpecificEffects": "Salvage Repair 1's Repair AMT is now <color=#F74848>1</color>x that of the Manipulator."
+      "SpecificEffects": "[Salvage Repair 1]'s Repair AMT is now <color=#F74848>1x</color> Manipulator Repair AMT."
     },
     "500036": {
       "name": "Salvage Repair 4",
-      "SpecificEffects": "Salvage Repair 1's repair target count <color=#F74848>+1</color>."
+      "SpecificEffects": "[Salvage Repair 1] repair targets <color=#F74848>+1</color>."
     },
     "500741": {
       "name": "Truth in Lies 1",

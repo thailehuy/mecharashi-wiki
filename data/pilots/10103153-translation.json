@@ -6,11 +6,11 @@
   "Occupation": "Sniper",
   "Talent0_2Ability": {
     "name": "Experimental Observation",
-    "SpecificEffects": "Can use <skill ID=301150>[Directional Rack]</skill> code. While in <buf ID=900111>[Directional Rack]</buf> Mode, each <color=#F74848>1</color> hit on an enemy unit grants <color=#F74848>1</color> stack of <buf ID=3011512>[Positional Advantage I]</buf>. While in <buf ID=900111>[Directional Rack]</buf> Mode, if there are no enemy units within <color=#F74848>3</color> tiles, gains <buf ID=3004502>[Stealth I]</buf> lasting for <color=#F74848>2</color> turns."
+    "SpecificEffects": "Can use the <skill ID=301150>[Directional Rack]</skill> code. While in <buf ID=900111>[Directional Rack]</buf> Mode, each <color=#F74848>1</color> hit on an enemy unit grants <color=#F74848>1</color> stack of <buf ID=3011512>[Positional Advantage I]</buf>. While in <buf ID=900111>[Directional Rack]</buf> Mode, after using a code or active attack, if there are no enemy units within <color=#F74848>3</color> tiles, gains <buf ID=3004502>[Stealth I]</buf>, lasting for <color=#F74848>2</color> turns."
   },
   "Talent3_5Ability": {
     "name": "Experimental Observation",
-    "SpecificEffects": "Can use <skill ID=301150>[Directional Rack]</skill> code. While in <buf ID=900111>[Directional Rack]</buf> Mode, each <color=#F74848>1</color> hit on an enemy unit grants <color=#F74848>1</color> stack of <buf ID=3011512>[Positional Advantage I]</buf>. While in <buf ID=900111>[Directional Rack]</buf> Mode, if there are no enemy units within <color=#F74848>3</color> tiles, gains <buf ID=3004502>[Stealth I]</buf> lasting for <color=#F74848>2</color> turns.\nThe <buf ID=3011512>[Positional Advantage I]</buf> stack limit increase to <color=#F74848>4</color>."
+    "SpecificEffects": "Can use the <skill ID=301150>[Directional Rack]</skill> code. While in <buf ID=900111>[Directional Rack]</buf> Mode, each <color=#F74848>1</color> hit on an enemy unit grants <color=#F74848>1</color> stack of <buf ID=3011512>[Positional Advantage I]</buf>. While in <buf ID=900111>[Directional Rack]</buf> Mode, after using a code or active attack, if there are no enemy units within <color=#F74848>3</color> tiles, gains <buf ID=3004502>[Stealth I]</buf>, lasting for <color=#F74848>2</color> turns.\nThe <buf ID=3011512>[Positional Advantage I]</buf> stack limit increases by <color=#F74848>4</color>."
   },
   "skills": {
     "300001": {
@@ -29,12 +29,12 @@
       "SpecificEffects": ""
     },
     "301103": {
-      "name": "Impromtu Experiment",
+      "name": "Impromptu Experiment",
       "describe": "Uses a Sniper Rifle to attack a target, dealing <color=#F74848>0.8</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking. Triggers <buf ID=900004>[Re-ATK]</buf> after combat. Cannot move before attacking. Can only use <color=#F74848>1</color> time per turn.",
       "SpecificEffects": ""
     },
     "301104": {
-      "name": "You'll Pay For That!",
+      "name": "You'll Pay for That!",
       "describe": "",
       "SpecificEffects": "When unable to retaliate during combat, immediately restores <color=#F74848>1</color>AP. Can trigger up to <color=#F74848>2</color> times per turn"
     },
@@ -86,7 +86,7 @@
     },
     "300031": {
       "name": "Forbidden Zone 1",
-      "SpecificEffects": "With a Ranged Weapon, launch <buf ID=900013>[Vigilant Shot]</buf> before the enemy attack within range, dealing <color=#F74848>0.35x</color> DMG, effective up to <color=#F74848>1</color> time per turn."
+      "SpecificEffects": "Before enemies within range initiate combat, triggers <buf ID=900013>[Vigilant Shot]</buf> with a Ranged Weapon, dealing <color=#F74848>0.5x</color> DMG. Can trigger <color=#F74848>1</color> time per turn."
     },
     "300032": {
       "name": "AP Optimization 3",
@@ -102,11 +102,11 @@
     },
     "300035": {
       "name": "Forbidden Zone 3",
-      "SpecificEffects": "<buf ID=900013>[Vigilant Shot]</buf>'s damage multiplier is increased to <color=#F74848>0.5</color>."
+      "SpecificEffects": "<buf ID=900013>[Vigilant Shot]</buf> Damage Multiplier <color=#F74848>+0.15</color>."
     },
     "300036": {
       "name": "Forbidden Zone 4",
-      "SpecificEffects": "<buf ID=900013>[Vigilant Shot]</buf> is launched against an enemy that has not attacked. Targets the part with the lowest HP."
+      "SpecificEffects": "<buf ID=900013>[Vigilant Shot]</buf> targets the part with the lowest HP, inflicting DMG Dealt <color=#F74848>-35%</color> on the target hit until the end of this attack."
     },
     "301141": {
       "name": "Trickster 1",

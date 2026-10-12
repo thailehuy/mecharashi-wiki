@@ -6,15 +6,15 @@
   "Occupation": "Tactician",
   "Talent0_2Ability": {
     "name": "Thirst for Knowledge",
-    "SpecificEffects": "When self's HP is full, AP Regen per turn <color=#F74848>+1</color>."
+    "SpecificEffects": "When HP is full, AP Regen per turn <color=#F74848>+1</color>."
   },
   "Talent3_5Ability": {
     "name": "Thirst for Knowledge",
-    "SpecificEffects": "When HP is full, AP Regen per turn <color=#F74848>+1</color>.\nWhen attacking with a Tactical Weapon, for each <color=#F74848>1</color> AP that you possess, Crit Rate <color=#F74848>+3%</color>, up to <color=#F74848>15%</color>."
+    "SpecificEffects": "When HP is full, AP Regen per turn <color=#F74848>+1</color>.\nWhen attacking with a Tactical Weapon, for each <color=#F74848>1</color> AP possessed, Crit Rate <color=#F74848>+3%</color>, up to <color=#F74848>15%</color>."
   },
   "skills": {
     "400001": {
-      "name": "Strategic Bombing 1",
+      "name": "Strategic Strike 1",
       "describe": "",
       "SpecificEffects": "When a Tactical Weapon runs out of ammo, trigger <buf ID=900029>[Auto Load]</buf>. This process takes <color=#F74848>3</color> turns."
     },
@@ -40,7 +40,7 @@
     },
     "400206": {
       "name": "New Initiatives",
-      "describe": "Fully restore Tactical Weapon Ammo and gain <buf ID=4002062>[Missile DMG UP]</buf> and <buf ID=4002065>[Rocket DMG UP]</buf>, with each buff effective for <color=#F74848>1</color> time. Can continue the action with the remaining movement.",
+      "describe": "Fully reloads the Tactical Weapon's ammo. Gains <buf ID=4002062>[Missile DMG UP]</buf> and <buf ID=4002065>[Rocket DMG UP]</buf>, with each triggering once. Can continue action with remaining Movement.",
       "SpecificEffects": ""
     },
     "400207": {
@@ -56,7 +56,7 @@
   },
   "neuralPassives": {
     "400011": {
-      "name": "Strategic Bombing 2",
+      "name": "Strategic Strike 2",
       "SpecificEffects": "Tactical Weapon Magazine Capacity <color=#F74848>+1</color>."
     },
     "400012": {
@@ -68,7 +68,7 @@
       "SpecificEffects": "Initial AP <color=#F74848>+1</color>."
     },
     "400021": {
-      "name": "Strategic Bombing 3",
+      "name": "Strategic Strike 3",
       "SpecificEffects": "Tactical Weapons Reload CD <color=#F74848>-1</color>."
     },
     "400022": {
@@ -88,7 +88,7 @@
       "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
     },
     "400033": {
-      "name": "Strategic Bombing 4",
+      "name": "Strategic Strike 4",
       "SpecificEffects": "When <buf ID=900029>[Auto Load]</buf> is complete, restore <color=#F74848>1</color> AP."
     },
     "400034": {
@@ -128,5 +128,15 @@
       "SpecificEffects": "The HP required for <buf ID=4002501>[Thirst for Knowledge]</buf> to take effect has been lowered to <color=#F74848>70%</color>."
     }
   },
-  "version": "1.0"
+  "version": "1.0",
+  "hiddenSkills": [
+    {
+      "name": "Math Talent",
+      "icon": "Icon_skill_passive_4111",
+      "type": null,
+      "Ap": "",
+      "CD": "",
+      "SpecificEffects": "After attacking with a Tactical Weapon, gains [Battlefield Mastery]. Stacks up to <color=#F74848>4</color> times. Lasts for <color=#F74848>2</color> turns. All stacks of [Battlefield Mastery] are lost upon taking damage."
+    }
+  ]
 }

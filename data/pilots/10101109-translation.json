@@ -5,12 +5,12 @@
   "Profession": "Striker",
   "Occupation": "Fighter",
   "Talent0_2Ability": {
-    "name": "Impulsive",
-    "SpecificEffects": "After an Active Attack, gain <buf ID=1002502>[Impulsive I]</buf>, up to <color=#F74848>3</color> stacks, lasting for <color=#F74848>1</color> turn."
+    "name": "Passionate",
+    "SpecificEffects": "After initiating combat, gains <buf ID=1002502>[Passionate I]</buf>. Stacks up to <color=#F74848>3</color> times. Lasts for <color=#F74848>1</color> turn."
   },
   "Talent3_5Ability": {
-    "name": "Impulsive",
-    "SpecificEffects": "After an Active Attack in combat, gain <buf ID=1002512>[Impulsive II]</buf>, up to <color=#F74848>5</color> stacks, lasting for <color=#F74848>1</color> turn."
+    "name": "Passionate",
+    "SpecificEffects": "After initiating combat, gains <buf ID=1002512>[Passionate II]</buf>. Stacks up to <color=#F74848>5</color> times. Lasts for <color=#F74848>1</color> turn."
   },
   "skills": {
     "100001": {
@@ -19,7 +19,7 @@
       "SpecificEffects": "After breaking a part, <buf ID=900004>[Re-ATK]</buf> can be triggered. Unable to move before the attack, and this can be effective up to <color=#F74848>2</color> times per turn."
     },
     "100202": {
-      "name": "Perseverance",
+      "name": "Steadiness",
       "describe": "",
       "SpecificEffects": "If there are <color=#F74848>3</color> or more enemies within the adjacent (<color=#F74848>2</color> tiles) area, DMG Taken <color=#F74848>-12%</color>."
     },
@@ -94,5 +94,15 @@
       "SpecificEffects": "When triggering <buf ID=900001>[Flurry Strike]</buf>, prioritize hitting the part with the lowest HP."
     }
   },
-  "version": "1.0"
+  "version": "1.0",
+  "hiddenSkills": [
+    {
+      "name": "Chop",
+      "icon": "Icon_skill_main_1013",
+      "type": "EquipmentSkill",
+      "Ap": "2",
+      "CD": "0",
+      "describe": "Uses a Polearm to attack a target, dealing <color=#F74848>1.6x</color> DMG."
+    }
+  ]
 }

@@ -1,16 +1,16 @@
 {
   "PilotName": "Verna",
-  "RealName": "Verna Luno",
+  "RealName": "Vincenza \"Verna\" Luno",
   "Gender": "Female",
   "Profession": "Defender",
   "Occupation": "Guardian",
   "Talent0_2Ability": {
-    "name": "Creed Of Sin",
-    "SpecificEffects": "Can equip Railgun, Railgun weight reduced by <color=#F74848>-360</color>. Can use command skill <skill mainSkill=601050>[Vengeful Strike]</skill>. When actively attacked, recovers <color=#F74848>1</color> tactical ammo and applies <buf ID=6010502>[Magnetic Lock-On]</buf> to the attacker"
+    "name": "Creed of Sin",
+    "SpecificEffects": "Can equip Rail Guns, reducing Rail Gun Weight by <color=#F74848>360</color>. Can use the <skill mainSkill=601050>[Vengeance Strike]</skill> Code. When receiving an active attack, recovers <color=#F74848>1</color> Rail Gun Ammo and applies <buf ID=6010502>[Magnetic Lock]</buf> to the enemy."
   },
   "Talent3_5Ability": {
-    "name": "Creed Of Sin",
-    "SpecificEffects": "Can equip Railgun, Railgun weight reduced by <color=#F74848>-360</color>. Can use command skill <skill mainSkill=601050>[Vengeful Strike]</skill>. When actively attacked, recovers <color=#F74848>1</color> tactical ammo and applies <buf ID=6010502>[Magnetic Lock-On]</buf> to the attacker\nFor each <color=#F74848>1</color> enemy carrying <buf ID=6010502>[Magnetic Lock-On]</buf>, increases DMG dealt by <color=#F74848>5%</color> and reduces DMG taken by <color=#F74848>5%</color>, up to <color=#F74848>20%</color>. <buf ID=900022>[Guard]</buf> can additionally block missiles and melee attack."
+    "name": "Creed of Sin",
+    "SpecificEffects": "Can equip Rail Guns, reducing Rail Gun Weight by <color=#F74848>360</color>. Can use the <skill mainSkill=601050>[Vengeance Strike]</skill> Code. When receiving an active attack, recovers <color=#F74848>1</color> Rail Gun Ammo and applies <buf ID=6010502>[Magnetic Lock]</buf> to the enemy.\nFor each enemy unit on the battlefield with <buf ID=6010502>[Magnetic Lock]</buf>, DMG <color=#F74848>+5%</color> and DMG Taken <color=#F74848>-5%</color>, up to a maximum of <color=#F74848>20%</color>. <buf ID=900022>[Guard]</buf> can additionally block enemy Missile Launcher and Melee attacks."
   },
   "skills": {
     "600001": {
@@ -19,38 +19,38 @@
       "SpecificEffects": "Trigger <buf ID=900022>[Guard]</buf> to protect adjacent (<color=#F74848>1</color> tile) allies from Assault and Ranged attacks, effective up to <color=#F74848>2</color> times per turn."
     },
     "601002": {
-      "name": "Unconcerned",
+      "name": "Code Lock",
       "describe": "",
-      "SpecificEffects": "At the end of turn, reload <color=#F74848>1</color> ammo to Railgun magazine"
+      "SpecificEffects": "At the end of turn, reload <color=#F74848>1</color> ammo to Rail Gun magazine"
     },
     "601003": {
-      "name": "Repulsion",
+      "name": "Magnetic Barrier",
       "describe": "",
-      "SpecificEffects": "Reduces DMG taken by <color=#F74848>12.5%</color>. If the attacker carries <buf ID=6010502>[Magnetic Lock-On]</buf>, additionally reduces DMG taken by <color=#F74848>12.5%</color>."
+      "SpecificEffects": "Reduces DMG taken by <color=#F74848>12.5%</color>. If the attacker carries <buf ID=6010502>[Magnetic Lock]</buf>, additionally reduces DMG taken by <color=#F74848>12.5%</color>."
     },
     "601004": {
-      "name": "An Offer They Cannot Refuse",
-      "describe": "Uses Railgun to attack <color=#F74848>1</color> enemy within <color=#F74848>5</color> adjacent tiles, dealing <color=#F74848>1.0x</color> DMG, as well as all enemies within <range type=1>1-tile cross-shaped</range> area around the target, dealing <color=#F74848>0.5x</color> DMG. After combat, applies <buf ID=6010502>[Magnetic Lock-On]</buf> to all the targets hit, then triggers <buf ID=900004>[Re-ATK]</buf>, cannot move before attacking. This skill can be used <color=#F74848>1</color> time per turn.",
+      "name": "Unilateral Agreement",
+      "describe": "Uses a Rail Gun to attack <color=#F74848>1</color> enemy unit within <color=#F74848>5</color> tiles, dealing <color=#F74848>0.5x</color> AoE DMG to all enemy units within a <range type=1>1-tile cross</range> area. After combat, applies <buf ID=6010502>[Magnetic Lock]</buf> to all targets, then can trigger <buf ID=900004>[Re-ATK]</buf>. Cannot move before attacking. Can be used up to <color=#F74848>1</color> time per turn.",
       "SpecificEffects": ""
     },
     "601005": {
-      "name": "Tempo Surge",
+      "name": "Electro-Surge",
       "describe": "",
-      "SpecificEffects": "When initiating combat against a target carrying <buf ID=6010502>[Magnetic Lock-On]</buf> using a Shield, applies <buf ID=3006442>[Short Circuit II]</buf> and <buf ID=7101507>[Movement Inhibition II]</buf> to the target before attacking, lasting for <color=#F74848>2</color> turns."
+      "SpecificEffects": "When initiating combat against a target carrying <buf ID=6010502>[Magnetic Lock]</buf> using a Shield, applies <buf ID=3006442>[Short Circuit II]</buf> and <buf ID=7101507>[Movement Inhibition II]</buf> to the target before attacking, lasting for <color=#F74848>2</color> turns."
     },
     "600106": {
       "name": "Hunting Prelude",
       "describe": "",
-      "SpecificEffects": "Throws a powerful magnetic projectile with a Large Shield or Small Shield at any tile within <range type=1>4-tile diamond area</range>, dealing <color=#F74848>0.1x</color> AoE DMG to the body of all enemies within <color=#F74848>3</color> tiles of the target, then forcibly moves them <color=#F74848>2</color> tiles toward the center. Applies <buf ID=6010502>[Magnetic Lock-On]</buf> to all targets hit, and triggers <buf ID=900004>[Re-ATK]</buf> in place."
+      "SpecificEffects": "Throws a powerful magnetic projectile with a Large Shield or Small Shield at any tile within <range type=1>4-tile diamond area</range>, dealing <color=#F74848>0.1x</color> AoE DMG to the body of all enemies within <color=#F74848>3</color> tiles of the target, then forcibly moves them <color=#F74848>2</color> tiles toward the center. Applies <buf ID=6010502>[Magnetic Lock]</buf> to all targets hit, and triggers <buf ID=900004>[Re-ATK]</buf> in place."
     },
     "601007": {
-      "name": "Shared Vengeance",
+      "name": "Shared Hatred",
       "describe": "",
       "SpecificEffects": "When an ally with <color=#F74848>30%</color> or lower HP is attacked, <buf ID=900022>[Guard]</buf> can be triggered regardless of distance. Can trigger <color=#F74848>2</color> times per turn."
     },
     "601008": {
-      "name": "Luno's Oath",
-      "describe": "Protects allies within <color=#F74848>2</color> adjacent tiles from assault and ranged attacks. Can trigger <color=#F74848>2</color> times per turn, lasting for <color=#F74848>2</color> turns. After using this skill, fully reloads Railgun ammo magazine and triggers <buf ID=900004>[Re-ATK]</buf>.",
+      "name": "Luno Oath",
+      "describe": "Protects allies within <color=#F74848>2</color> adjacent tiles from assault and ranged attacks. Can trigger <color=#F74848>2</color> times per turn, lasting for <color=#F74848>2</color> turns. After using this skill, fully reloads Rail Gun ammo magazine and triggers <buf ID=900004>[Re-ATK]</buf>.",
       "SpecificEffects": ""
     }
   },
@@ -104,8 +104,8 @@
       "SpecificEffects": "After taking damage, if HP is below <color=#F74848>50%</color>, trigger <buf ID=900089>[Balance]</buf> and repair <color=#F74848>1</color> destroyed part. Can trigger again after <color=#F74848>3</color> turns."
     },
     "601041": {
-      "name": "Zero-sum Game 1",
-      "SpecificEffects": "At the start of turn, if there are enemies carrying <buf ID=6010502>[Magnetic Lock-On]</buf>, immediately release <skill mainSkill=601051>[Vengeful Strike β]</skill>"
+      "name": "Zero-Sum Game 1",
+      "SpecificEffects": "At the start of turn, if there are enemies carrying <buf ID=6010502>[Magnetic Lock]</buf>, immediately release <skill mainSkill=601051>[Vengeance Strike β]</skill>"
     },
     "600042": {
       "name": "AP Optimization 4",
@@ -116,27 +116,27 @@
       "SpecificEffects": "<buf ID=900022>[Guard]</buf> can now be triggered an unlimited number of times per turn."
     },
     "601044": {
-      "name": "Zero-sum Game 2",
-      "SpecificEffects": "Railgun magazine capacity <color=#F74848>+2</color>"
+      "name": "Zero-Sum Game 2",
+      "SpecificEffects": "Rail Gun magazine capacity <color=#F74848>+2</color>"
     },
     "601045": {
-      "name": "Zero-sum Game 3",
-      "SpecificEffects": "Railgun DMG dealt increases by <color=#F74848>20%</color>"
+      "name": "Zero-Sum Game 3",
+      "SpecificEffects": "Rail Gun DMG dealt increases by <color=#F74848>20%</color>"
     },
     "601046": {
-      "name": "Zero-sum Game 4",
-      "SpecificEffects": "<skill mainSkill=601050>[Vengeful Strike]</skill> and <skill mainSkill=601051>[Vengeful Strike β]</skill> base attack count increases by <color=#F74848>+1</color>."
+      "name": "Zero-Sum Game 4",
+      "SpecificEffects": "<skill mainSkill=601050>[Vengeance Strike]</skill> and <skill mainSkill=601051>[Vengeance Strike β]</skill> base attack count increases by <color=#F74848>+1</color>."
     }
   },
   "version": "2.4",
   "hiddenSkills": [
     {
-      "name": "Hunting Prelude",
+      "name": "Hunter's Prelude",
       "icon": "Icon_skill_order_1138",
       "type": "SpecialAssault",
       "Ap": "4",
       "CD": "2",
-      "describe": "Throws a powerful magnetic projectile with a Large Shield or Small Shield at any tile within <range type=1>4-tile diamond area</range>, dealing <color=#F74848>0.1x</color> AoE DMG to the body of all enemies within <color=#F74848>3</color> tiles of the target, then forcibly moves them <color=#F74848>2</color> tiles toward the center. Applies <buf ID=6010502>[Magnetic Lock-On]</buf> to all targets hit, and triggers <buf ID=900004>[Re-ATK]</buf> in place. This attack is guaranteed to hit."
+      "describe": "Throws a powerful magnetic projectile with a Large Shield or Small Shield at any tile within <range type=1>4-tile diamond area</range>, dealing <color=#F74848>0.1x</color> AoE DMG to the body of all enemies within <color=#F74848>3</color> tiles of the target, then forcibly moves them <color=#F74848>2</color> tiles toward the center. Applies <buf ID=6010502>[Magnetic Lock]</buf> to all targets hit, and triggers <buf ID=900004>[Re-ATK]</buf> in place. This attack is guaranteed to hit."
     },
     {
       "name": "Guard",
@@ -144,7 +144,8 @@
       "SpecificEffects": "",
       "type": "Order",
       "Ap": "1",
-      "icon": "Icon_skill_order_1031"
+      "icon": "Icon_skill_order_1031",
+      "CD": "2"
     }
   ],
   "Introduction": "Heiress to the powerful Luno Family, she rose to lead in a time of turmoil, upholding its legacy through firepower and negotiation."

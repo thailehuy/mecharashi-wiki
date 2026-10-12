@@ -5,58 +5,58 @@
   "Profession": "Launcher",
   "Occupation": "Tactician",
   "Talent0_2Ability": {
-    "name": "Strategic Planning",
-    "SpecificEffects": "At the start of battle and at the start of action, applies <buf ID=4011502>[Appointment]</buf> to <color=#F74848>1</color> furthest ally not carrying <buf ID=4011502>[Appointment]</buf> for <color=#F74848>3</color> turns. Up to <color=#F74848>3</color> allies can carry <buf ID=4011502>[Appointment]</buf>."
+    "name": "Covert Tactics",
+    "SpecificEffects": "At start of action, applies <buf ID=4011502>[Appointed]</buf> to the farthest <color=#F74848>1</color> other teammate without <buf ID=4011502>[Appointed]</buf>, lasting for <color=#F74848>3</color> turns. A maximum of <color=#F74848>3</color> <buf ID=4011502>[Appointed]</buf> effects can exist simultaneously."
   },
   "Talent3_5Ability": {
-    "name": "Strategic Planning",
-    "SpecificEffects": "At the start of battle and at the start of action, applies <buf ID=4011502>[Appointment]</buf> to <color=#F74848>1</color> furthest ally not carrying <buf ID=4011502>[Appointment]</buf> for <color=#F74848>3</color> turns. Up to <color=#F74848>3</color> allies can carry <buf ID=4011502>[Appointment]</buf>.\nFor each <color=#F74848>1</color> ally carrying <buf ID=4011502>[Appointment]</buf>, DMG dealt increases by <color=#F74848>7.5%</color>, up to <color=#F74848>22.5%</color>."
+    "name": "Covert Tactics",
+    "SpecificEffects": "At the start of battle and action, applies <buf ID=4011502>[Appointed]</buf> to the farthest <color=#F74848>1</color> other teammate without <buf ID=4011502>[Appointed]</buf>, lasting for <color=#F74848>3</color> turns. A maximum of <color=#F74848>3</color> <buf ID=4011502>[Appointed]</buf> effects can exist simultaneously.\nFor each <color=#F74848>1</color> ally on the battlefield with <buf ID=4011502>[Appointed]</buf>, DMG increases by <color=#F74848>7.5%</color>, up to a maximum of <color=#F74848>22.5%</color>."
   },
   "skills": {
     "400001": {
-      "name": "Strategic Bombing 1",
+      "name": "Strategic Strike 1",
       "describe": "",
       "SpecificEffects": "When a Tactical Weapon runs out of ammo, trigger <buf ID=900029>[Auto Load]</buf>. This process takes <color=#F74848>3</color> turns."
     },
     "401102": {
-      "name": "Teamwork",
+      "name": "Link",
       "describe": "",
       "SpecificEffects": "Allies carrying <buf ID=4011502>[Appointment]</buf> have DMG dealt increases by <color=#F74848>5%</color> and DMG taken reduces by <color=#F74848>5%</color>."
     },
     "401103": {
-      "name": "Respite",
+      "name": "Bide Time",
       "describe": "Fully reload cutter ammo and grants self and allies carrying <buf ID=4011502>[Appointment]</buf> <buf ID=7100104>[Hit rate UP II]</buf>, lasting for <color=#F74848>2</color> turns. Can continue to act with remaining movement.",
       "SpecificEffects": ""
     },
     "401104": {
-      "name": "Official Position",
+      "name": "Formation Protocol",
       "describe": "Consumes <color=#F74848>1</color> cutter ammo, selects <color=#F74848>1</color> ally within range and applies <buf ID=4011043>[Subtask - Defense]</buf> or <buf ID=4011041>[Subtask - Attack]</buf> to that target.",
       "SpecificEffects": ""
     },
     "401105": {
-      "name": "Helping Hand",
+      "name": "Hidden Arrow",
       "describe": "",
       "SpecificEffects": "When an ally carrying <buf ID=4011502>[Appointment]</buf> is attacked, uses <color=#F74848>2</color> cutters to launch <buf ID=900061>[Link Retaliation]</buf>, dealing <color=#F74848>2×0.5</color> DMG. This effect can trigger <color=#F74848>2</color> times per turn."
     },
     "401106": {
-      "name": "Delayed Response",
+      "name": "Delayed Engagement",
       "describe": "Uses cutter to attack an enemy, dealing <color=#F74848>4×0.6</color> DMG and applies <buf ID=4011061>[Clean Up]</buf> to the target.",
       "SpecificEffects": ""
     },
     "401107": {
-      "name": "Mental Support",
+      "name": "Decoy Shell",
       "describe": "",
       "SpecificEffects": "When any part suffers overdamage, if there are allies carrying <buf ID=4011502>[Appointment]</buf>, triggers <buf ID=900003>[Guts]</buf>, locking HP at <color=#F74848>1</color>. Upon triggering, consumes <color=#F74848>1</color> <buf ID=4011502>[Appointment]</buf> from an ally."
     },
     "401108": {
-      "name": "Restriction Order",
+      "name": "Eventide Cage",
       "describe": "Consumes <color=#F74848>2</color> cutter ammo, attacks all enemies within a <range type=2>3-tile radius</range> area, dealing <color=#F74848>1.6x</color> AoE DMG, and applies <terrian ID=4011081 /> to the targeted tiles, lasting for <color=#F74848>1</color> turn",
       "SpecificEffects": ""
     }
   },
   "neuralPassives": {
     "400011": {
-      "name": "Strategic Bombing 2",
+      "name": "Strategic Strike 2",
       "SpecificEffects": "Tactical Weapon Magazine Capacity <color=#F74848>+1</color>."
     },
     "400012": {
@@ -68,7 +68,7 @@
       "SpecificEffects": "Initial AP <color=#F74848>+1</color>."
     },
     "400021": {
-      "name": "Strategic Bombing 3",
+      "name": "Strategic Strike 3",
       "SpecificEffects": "Tactical Weapons Reload CD <color=#F74848>-1</color>."
     },
     "400022": {
@@ -88,7 +88,7 @@
       "SpecificEffects": "AP Cap <color=#F74848>+1</color>."
     },
     "400033": {
-      "name": "Strategic Bombing 4",
+      "name": "Strategic Strike 4",
       "SpecificEffects": "When <buf ID=900029>[Auto Load]</buf> is complete, restore <color=#F74848>1</color> AP."
     },
     "400034": {
@@ -104,8 +104,8 @@
       "SpecificEffects": "After triggering <buf ID=900004>[Re-ATK]</buf>, it no longer reduces final damage."
     },
     "401141": {
-      "name": "Firm decision 1",
-      "SpecificEffects": "After triggering <buf ID=900004>[Re-ATK]</buf>, AP cost of attack skills or <skill mainSkill=401104>[Official Position]</skill> reduces by <color=#F74848>-1</color>, to a minimum of <color=#F74848>1</color> AP."
+      "name": "Victory from Afar 1",
+      "SpecificEffects": "After triggering <buf ID=900004>[Re-ATK]</buf>, AP cost of attack skills or <skill mainSkill=401104>[Formation Protocol]</skill> reduces by <color=#F74848>-1</color>, to a minimum of <color=#F74848>1</color> AP."
     },
     "600042": {
       "name": "AP Optimization 4",
@@ -116,22 +116,22 @@
       "SpecificEffects": "When destroying a target, additionally restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>2</color> times per turn."
     },
     "401144": {
-      "name": "Firm decision 2",
+      "name": "Victory from Afar 2",
       "SpecificEffects": "When any ally carrying <buf ID=4011502>[Appointment]</buf> breaks a part, [Colin] recovers <color=#F74848>1</color> cutter ammo. This effect can trigger <color=#F74848>2</color> times per turn."
     },
     "401145": {
-      "name": "Firm decision 3",
+      "name": "Victory from Afar 3",
       "SpecificEffects": "When any ally carrying <buf ID=4011502>[Appointment]</buf> destroys a target, [Colin] recovers <color=#F74848>1</color> AP. This effect can trigger <color=#F74848>2</color> times per turn."
     },
     "401146": {
-      "name": "Firm decision 4",
+      "name": "Victory from Afar 4",
       "SpecificEffects": "For each <color=#F74848>1</color> ally carrying <buf ID=4011502>[Appointment]</buf>, cutter hit count increases by <color=#F74848>+1</color>, up to a maximum of <color=#F74848>+3</color>."
     }
   },
   "version": "2.5",
   "hiddenSkills": [
     {
-      "name": "Borrowed Strength",
+      "name": "Proxy Strike",
       "icon": "Icon_skill_order_1132",
       "type": "SpecialAssault",
       "Ap": "3",

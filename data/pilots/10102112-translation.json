@@ -6,11 +6,11 @@
   "Occupation": "Fighter",
   "Talent0_2Ability": {
     "name": "Dog Chasing Cars",
-    "SpecificEffects": "With a Melee Weapon, if unable to retaliate in combat, <buf ID=900008>[Pursuit]</buf> can be triggered, allowing the unit to move <color=#F74848>2</color> tiles toward the attacker after combat. If successful in reaching the target, use the melee weapon to cast <buf ID=900009>[Pursuit Retaliation]</buf>, dealing <color=#F74848>0.6x</color> DMG."
+    "SpecificEffects": "When attacked and drawn into combat with a Melee Weapon equipped, if unable to retaliate, triggers <buf ID=900008>[Pursuit]</buf> and moves <color=#F74848>2</color> tiles toward the attacker after combat. When successfully reaching the target, executes <buf ID=900009>[Pursuit Retaliation]</buf>, dealing <color=#F74848>0.6x</color> DMG."
   },
   "Talent3_5Ability": {
     "name": "Dog Chasing Cars",
-    "SpecificEffects": "With a Melee Weapon, if unable to retaliate in combat, <buf ID=900008>[Pursuit]</buf> can be triggered, allowing the unit to move <color=#F74848>2</color> tiles toward the attacker after combat. If successful in reaching the target, use the melee weapon to cast <buf ID=900009>[Pursuit Retaliation]</buf>, dealing <color=#F74848>0.6x</color> DMG.\nIf there are no allies within the adjacent (<color=#F74848>2</color> tiles) area, DMG Taken <color=#F74848>-15%</color>."
+    "SpecificEffects": "When attacked and drawn into combat with a Melee Weapon equipped, if unable to retaliate, triggers <buf ID=900008>[Pursuit]</buf> and moves <color=#F74848>2</color> tiles toward the attacker after combat. When successfully reaching the target, executes <buf ID=900009>[Pursuit Retaliation]</buf>, dealing <color=#F74848>0.6x</color> DMG.\nIf there are no allies within <color=#F74848>2</color> adjacent tiles, DMG Taken <color=#F74848>-15%</color>."
   },
   "skills": {
     "100001": {
@@ -19,7 +19,7 @@
       "SpecificEffects": "After breaking a part, <buf ID=900004>[Re-ATK]</buf> can be triggered. Unable to move before the attack, and this can be effective up to <color=#F74848>2</color> times per turn."
     },
     "700014": {
-      "name": "Perseverance",
+      "name": "Unbreakable",
       "describe": "",
       "SpecificEffects": "After taking damage, grant <buf ID=7000142>[Bide]</buf> to self, up to <color=#F74848>3</color> stacks, lasting for <color=#F74848>1</color> turn."
     },
@@ -40,11 +40,11 @@
     },
     "100706": {
       "name": "Bola Strike",
-      "describe": "Simultaneously uses 2 Melee Weapons to attack a target, dealing <color=#F74848>2*0.85x</color> DMG. When hitting the Body, inflicts <buf ID=7101505>[Crash]</buf> on the target after combat, lasting <color=#F74848>1</color> turn.",
+      "describe": "Simultaneously uses two Melee Weapons to attack a target, dealing <color=#F74848>0.85x</color> DMG <color=#F74848>2</color> times. When hitting the Body, inflicts <buf ID=7101505>[Crash]</buf> on the target after combat, lasting for <color=#F74848>1</color> turn.",
       "SpecificEffects": ""
     },
     "100707": {
-      "name": "Desprate Beast",
+      "name": "Desperate Beast",
       "describe": "",
       "SpecificEffects": "During an Active Attack in combat, for each enemy ST within the adjacent (<color=#F74848>2</color> tiles) area, gain DMG <color=#F74848>+5%</color>, up to <color=#F74848>15%</color>."
     },
@@ -128,5 +128,15 @@
       "SpecificEffects": "When triggering <buf ID=900009>[Pursuit Retaliation]</buf>, target the part with the lowest HP."
     }
   },
-  "version": "1.0"
+  "version": "1.0",
+  "hiddenSkills": [
+    {
+      "name": "Heavy Strike",
+      "icon": "Icon_skill_main_1020",
+      "type": "EquipmentSkill",
+      "Ap": "2",
+      "CD": "0",
+      "describe": "Uses a Pile Bunker or Knuckles to attack a target, dealing <color=#F74848>1.6x</color> DMG."
+    }
+  ]
 }
