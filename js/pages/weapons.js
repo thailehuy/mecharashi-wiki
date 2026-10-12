@@ -66,9 +66,9 @@ var PASSIVE_TRIGGER_LABEL = {
   used:     'Effective when used',
 };
 var PASSIVE_TRIGGER_DESC = {
-  equipped: 'this takes effect when the weapon is equipped on hands/shoulders/back, not in Juggernaut',
-  carried:  'this takes effect when the weapon is equipped anywhere, including Juggernaut',
-  used:     'this takes effect only when the weapon is used to actively attacking, linking or retaliating, or casting skills with',
+  equipped: 'Takes effect when the weapon is equipped on the hands, shoulders, or back, but not in the Juggernaut slot.',
+  carried:  'Takes effect when the weapon is equipped in any slot, including the Juggernaut slot. This upgrade only affects the pilot carrying this talent.',
+  used:     'Takes effect only when the weapon is used to actively attack, link, retaliate, or cast skills.',
 };
 
 // Per-weapon icon replacements for where the scraped icon ID is wrong, keyed by ID.
