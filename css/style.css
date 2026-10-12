@@ -2589,10 +2589,6 @@ a.material-item:hover .material-icon-wrap {
   width: 170px;
 }
 
-.acc-table .acc-th-lv {
-  width: 64px;
-}
-
 .acc-table thead .acc-col-co {
   width: 72px;
 }
@@ -2609,10 +2605,6 @@ a.material-item:hover .material-icon-wrap {
 
   .acc-table .acc-th-type {
     width: 96px;
-  }
-
-  .acc-table .acc-th-lv {
-    width: 44px;
   }
 
   .acc-table thead .acc-col-co {
@@ -2683,8 +2675,9 @@ a.material-item:hover .material-icon-wrap {
 }
 
 .acc-level {
+  font-size: 0.75rem;
   font-weight: 700;
-  color: #cbd5e1;
+  color: #94a3b8;
 }
 
 .acc-table .acc-desc {
@@ -2711,6 +2704,44 @@ a.material-item:hover .material-icon-wrap {
 
 .acc-table thead th.acc-col-active {
   background-color: rgba(99, 102, 241, 0.4);
+}
+
+/* Sticky header: only where the table fits without horizontal scroll,
+   since a scrolling wrapper would trap position: sticky. */
+@media (min-width: 601px) and (max-width: 991px) {
+  .acc-table {
+    min-width: 0;
+  }
+
+  .acc-table .acc-th-type {
+    width: 96px;
+  }
+
+  .acc-table thead .acc-col-co {
+    width: 54px;
+  }
+}
+
+@media (min-width: 601px) {
+  #acc-page .dispatch-table-wrap {
+    overflow: visible;
+  }
+
+  .acc-table thead th {
+    position: sticky;
+    top: var(--acc-sticky-top, 0);
+    z-index: 2;
+    background-color: #39202a;
+    box-shadow: inset 0 -1px 0 #2a2a4a;
+  }
+
+  .acc-table thead th.acc-th-sortable:hover {
+    background-color: #582733;
+  }
+
+  .acc-table thead th.acc-col-active {
+    background-color: #373874;
+  }
 }
 
 .acc-co-filter {

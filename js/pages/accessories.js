@@ -80,6 +80,8 @@ Pages.accessories = {
       this._renderSection('Reactions', reactions, allCOs);
 
     setTimeout(function () {
+      $('#acc-page').css('--acc-sticky-top', ($('.navbar').outerHeight() || 0) + 'px');
+
       $('#acc-page').on('click', '.ac-nav-item', function (e) {
         e.preventDefault();
         var $el = $($(this).attr('href'));
@@ -223,7 +225,6 @@ Pages.accessories = {
     var headHtml =
       '<th class="acc-th-name">Name</th>' +
       '<th class="acc-th-type">Type</th>' +
-      '<th class="acc-th-sortable acc-th-lv" data-sort-key="lv">Lv.<span class="acc-sort-arrow"></span></th>' +
       allCOs.map(function (co) {
         return '<th class="acc-th-sortable acc-col-co" data-co="' + co + '" data-sort-key="co' + co + '">CO' + co + '<span class="acc-sort-arrow"></span></th>';
       }).join('');
@@ -238,7 +239,7 @@ Pages.accessories = {
       var lv = parseInt((a.level || '').replace(/\D/g, ''), 10) || 0;
 
       var occ = a.occurrence || {};
-      var sortAttrs = ' data-sort-lv="' + lv + '"';
+      var sortAttrs = '';
       var coCells = allCOs.map(function (co) {
         var n = occ[co] || 0;
         sortAttrs += ' data-sort-co' + co + '="' + n + '"';
@@ -263,13 +264,13 @@ Pages.accessories = {
                 '<div class="acc-name-header">' +
                   '<span class="acc-name">' + $('<span>').text(displayName).html() + '</span>' +
                   (isW ? '<span class="acc-w-badge">W</span>' : '') +
+                  (lv ? '<span class="acc-level">Lv.' + lv + '</span>' : '') +
                 '</div>' +
                 '<p class="acc-desc">' + Glossary.parseEffects(a.en_describe || a.describe) + '</p>' +
               '</div>' +
             '</div>' +
           '</td>' +
           '<td class="acc-type-cell">' + $('<span>').text(tagLabel).html() + '</td>' +
-          '<td class="acc-level">' + (lv || '') + '</td>' +
           coCells +
         '</tr>'
       );
