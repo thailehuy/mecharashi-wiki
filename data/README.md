@@ -5,6 +5,11 @@ version 3.2 — anything released after that has to be entered by hand. This
 document explains how a new pilot or mech file must be shaped so
 `compile.py` can pick it up and the site can display it correctly.
 
+Before writing English text or stats by hand, check the mined global-client
+database (`data/screenshots/mined/mecharashi.db`). It may already have the
+official values. See "Using the mined game database" in the root
+[README](../README.md).
+
 After adding or editing any file described here, recompile from the repo
 root:
 

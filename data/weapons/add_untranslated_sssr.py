@@ -319,7 +319,7 @@ ENTRIES = {
     },
     "50215122": {
         "name": "Thousand Legion",
-        "pilot": "Collin",
+        "pilot": "Colin",
         "ac": 17,
         "skills": {
             "53110": {

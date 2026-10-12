@@ -54,7 +54,7 @@ window.DispatchData = {
       "Arsenal": "Odysseus",
       "InnovativE": "Alicorn",
       "GeekX": "Shadowrabbit",
-      "Sparkplug": "Eye Of Faith"
+      "Sparkplug": "Eye of Faith"
     },
     {
       "cnPatch": "2.3",

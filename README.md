@@ -34,7 +34,7 @@ Add new images to the matching folder in that repo; pushing its `main` deploys t
 - **Dispatch** table — patch-version × dispatch-group grid linking to ST detail pages
 - **EX Skills** reference — universal weapon-type basic attacks/codes
 - **ST Stats** table — sortable/filterable comparison of all SSR-quality STs
-- **Builder** — mech loadout theorycrafting tool; state is encoded into a shareable Build UID (URL hash), not localStorage
+- **Builder** — mech loadout theorycrafting tool, incl. 4 accessory slots per weapon (at least 1 trigger TA + 1 reaction RA) with each TA + RA chain's trigger chance; state is encoded into a shareable Build UID (URL hash), not localStorage
 - **Glossary** — shared keyword/tooltip engine (buffs, skills, terrain, jump-links) used across all pages
 - Runtime translation loading — editing a `<ID>-translation.json` file and pushing takes effect on GitHub Pages without recompiling
 
@@ -67,7 +67,7 @@ data/
   weapons/                        # compile.py, scrape/helper scripts → compiled.js/json (WeaponsData)
   backpacks/                      # compile.py, translations → compiled.js/json (BackpacksData)
   modules/                        # compile.py, scrape-modules.js → compiled.js/json (ModulesData)
-  accessories/                    # compiled.js/json
+  accessories/                    # compiled.js/json; extract-chain-traits.py → chain-traits.js/json (ChainTraitsData, SSR TA/RA pairs from the mined DB)
   builder/                        # generate-index-maps.py → index-maps.js/json (BuilderIndexMaps)
   glossary.json                   # → GlossaryData
   dispatch.json                   # → dispatch table data
@@ -163,6 +163,44 @@ Edit the `<ID>-translation.json` with English values and push. GitHub Pages serv
 python3 -m http.server 8080
 ```
 
+### Using the mined game database
+
+`data/screenshots/mined/mecharashi.db` is a SQLite database mined from the **global (EN) client**. Its `about` table records the game build and extraction date; the copy used so far is build `191_ZiLongENA`, extracted 2026-10-11. It holds English names and descriptions, stats, skills, buffs and more. `data/screenshots/*` is gitignored (the file is ~17 MB), so each contributor needs their own copy at that path. The folder also has `README.txt` and two offline HTML viewers (`Mecharashi_Wiki.html`, `Damage_Bench.html`) built from the same data.
+
+Open it with the `sqlite3` CLI, Python's built-in `sqlite3`, or a viewer such as DB Browser for SQLite. Start with the `about` table: it describes every table and the conventions (percentages are fractions, `0.15` = 15%).
+
+**Tables that map onto wiki data**
+
+| Wiki data | DB table | Join on |
+|---|---|---|
+| Pilot (`data/pilots/<ID>.json`) | `pilots` (name, `full_name`, `bio`), `pilot_stats`, `pilot_skills` | `pilot_id` = wiki pilot ID |
+| ST (`data/mechs/<ID>.json`, ID = body part) | `st_parts` → `sts` (name, `description`), `st_max` | `st_parts.part_id` = wiki ID, then `st_id` |
+| Glossary `buf` entries (`data/glossary.json`) | `buffs` (`name`, `description`) | `buff_id` = glossary key |
+| Weapons, modules, backpacks, chips, accessories | `weapons`, `modules`, `backpacks`, `chips`, `wep_components` | their own IDs |
+
+```bash
+# ST name + description for a wiki mech ID
+sqlite3 data/screenshots/mined/mecharashi.db \
+  "select s.name, s.description from st_parts p join sts s using (st_id) where p.part_id = 30030102"
+```
+
+**Stat conventions (verified against the wiki)**
+
+- Pilot stats on the wiki = potential 5 + Bionic Computer neurons: `(pilot_stats.<attr> at potential 0 + neural_<attr>) × 1.10`. DB column names differ: Combat = `melee`, Shooting = `ranged`, Tactics = `tactical`, Engineering = `mechanics`.
+  - Exception: Kaidan, Dana and Grant are ~7.2% above this formula, which doesn't model their quality ascension (A → S). Keep the wiki values for them.
+- ST stats on the wiki = the top-grade row of `st_max` (highest `grade_step`). `st_max.arm_hit` is the **left** arm only. For STs whose arms differ (e.g. Dreadtalon, Wolverine), scale the right arm by its `st_parts.base_hit` ratio.
+
+**Rules for updating wiki data from the DB**
+
+- **Global is behind CN.** The DB has no data for ~20 CN-only pilots and STs, so they still need manual entry ([data/README.md](data/README.md)). Don't add new pilots/STs from the DB without deciding to.
+- **Never overwrite English text.** To tell Chinese from English, look for CJK characters (`[　-鿿＀-￯]`), not "any non-ASCII": English text often contains em-dashes, curly quotes or accents (Fenrisúlfr).
+- **Write overrides to `<ID>-translation.json`, not the raw `<ID>.json`.** Pilot bios go in `Introduction`; ST descriptions go in `introduce`. Keep the file's formatting: 2-space indent, `ensure_ascii=False`, and its trailing newline (some files have one, some don't).
+- **Glossary: match by exact buff ID *and* name, via `buffs`.** Don't use the name-keyed `glossary` table: one name there covers many buff IDs, so it hands out the wrong text (e.g. Short Circuit getting Stealth's description, Guts becoming "Guts (Test Use)"). The DB's text is sometimes vaguer than ours (e.g. Guard, Poised, Heroism); keep ours when it's more specific.
+- **DB text is plain.** It has no `<color=#F74848>` highlights or `<buf ID=…>` links; re-add them where the existing text had them.
+- **Renaming is a separate decision.** The DB uses official global names, which sometimes differ from ours (e.g. Improved Attack → Attack Enhancement). Pages resolve bare `[Name]` references through the glossary name index, so a rename must be applied everywhere the name is used (`js/pages/*.js`, `data/dispatch.json`, `data/shops.js`, weapon `pilot` fields, effect text). Some DB names are internal labels (`Bionic Computer 7`, `EVA-01 Pilot`); don't use those.
+- **The DB has no image or icon keys.** Icons still come from the existing files and the assets repo.
+- Run `python3 compile.py` after any change.
+
 ### Running locally
 
 Clone [mecharashi-wiki-assets](https://github.com/thailehuy/mecharashi-wiki-assets) next to this repo (`../mecharashi-wiki-assets`): `build_pages.py` reads its file listing to pick link-preview images (or set `ASSETS_DIR` to point elsewhere). Images themselves load from the live `assets.mecharashi-wiki.cc` even when running locally.
@@ -208,6 +246,7 @@ The `og:url` URLs point at `https://mecharashi-wiki.cc/` (`DEFAULT_SITE_URL` in 
   "Gender": "...",
   "Profession": "...",
   "Occupation": "...",
+  "Introduction": "...",
   "Talent0_2Ability": { "name": "...", "SpecificEffects": "..." },
   "Talent3_5Ability": { "name": "...", "SpecificEffects": "..." },
   "skills": { "<SkillID>": { "name": "...", "describe": "...", "SpecificEffects": "..." } },

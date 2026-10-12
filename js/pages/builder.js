@@ -59,6 +59,21 @@ var BUILDER_REV02_DOUBLED_SLOTS = { head: true, leg: true };
 // Power-granting backpack — its bonus scales with its own effective level.
 var BUILDER_POWER_MOD_FAMILY = '4026';
 
+// Weapon-capable equipment slots, in display order. Each weapon has
+// BUILDER_ACCESSORY_SLOTS accessory slots, each holding a trigger (TA) or a
+// reaction (RA), with at least 1 of each; see _chainSlots for how a
+// two-handed weapon mirrored across a pair gets only one set.
+var BUILDER_WEAPON_SLOTS = [
+  { key: 'leftHand',      label: 'L Hand' },
+  { key: 'rightHand',     label: 'R Hand' },
+  { key: 'backpack',      label: 'Backpack' },
+  { key: 'leftShoulder',  label: 'L Shoulder' },
+  { key: 'rightShoulder', label: 'R Shoulder' },
+  { key: 'extra1',        label: 'Extra 1' },
+  { key: 'extra2',        label: 'Extra 2' },
+];
+var BUILDER_ACCESSORY_SLOTS = 4;
+
 // _previewCache keys the pilot row's Expand button reveals inline (the
 // mech row's Expand button instead toggles the module/passives panel below).
 var BUILDER_PILOT_DETAIL_GROUPS = ['skill:0', 'skill:1', 'skill:2', 'exskill'];
@@ -72,6 +87,7 @@ Pages.builder = {
   _exSkillIdx:     null,
   _equip:          null,
   _moduleIds:      null,
+  _accessories:    null,
   _previewCache:   null,
   _expanded:       null,
   _ascendedTalent: true,
@@ -89,6 +105,13 @@ Pages.builder = {
       leftHand: null, rightHand: null, backpack: null, leftShoulder: null, rightShoulder: null,
       extra1: null, extra2: null,
     };
+    this._resetAccessories();
+  },
+
+  _resetAccessories: function () {
+    var acc = {};
+    BUILDER_WEAPON_SLOTS.forEach(function (slot) { acc[slot.key] = [null, null, null, null]; });
+    this._accessories = acc;
   },
 
   render: function (param) {
@@ -394,6 +417,14 @@ Pages.builder = {
       return;
     }
 
+    // Accessory groups: acc:<weaponSlot>:<0-3>, value <ta|ra>:<component ID>.
+    if (group.indexOf('acc:') === 0) {
+      var accParts = group.split(':');
+      self._accessories[accParts[1]][parseInt(accParts[2], 10)] = self._decodeVal(value);
+      self._renderBody();
+      return;
+    }
+
     // Equipment groups: leftHand, rightHand, backpack, leftShoulder, rightShoulder, extra1, extra2.
     self._setEquip(group, self._decodeVal(value));
     self._renderBody();
@@ -405,6 +436,7 @@ Pages.builder = {
     var mech  = self._getMech();
 
     self._previewCache = {};
+    self._sanitizeAccessories();
 
     var row1 = self._heroRowHtml('pilot', pilot, self._pilotHeroSelectHtml(), self._subrowHtml(self._skillCellsHtml(pilot)), self._ascendedTalentCheckboxHtml(pilot), BUILDER_PILOT_DETAIL_GROUPS);
     // The mech row's Expand/Collapse button controls the module/passives
@@ -827,10 +859,12 @@ Pages.builder = {
   // since the build has to be reconstructible from it.
   _UID_BASE: 11,
   // Field 17 (Ascended Talent) was added after field count 17 was already
-  // in the wild — accept either length so old shared links keep decoding
-  // (missing field 17 defaults to Ascended, matching the toggle's default).
-  _UID_FIELD_COUNT: 18,
-  _UID_FIELD_COUNT_LEGACY: 17,
+  // in the wild, and fields 18-45 (each weapon slot's 4 accessory slots, in
+  // BUILDER_WEAPON_SLOTS order; prefixed 1 for a TA or 2 for an RA, like
+  // the backpack slot's kind digit) after 18 — accept every length so old
+  // shared links keep decoding (missing field 17 defaults to Ascended,
+  // matching the toggle's default; missing accessories default to none).
+  _UID_FIELD_COUNTS: [17, 18, 18 + 7 * 4],
 
   _indexMapCache: null,
 
@@ -914,6 +948,12 @@ Pages.builder = {
       self._idxOrEmpty('module', self._moduleIds.leg),
       self._ascendedTalent ? '1' : '0',
     ];
+    BUILDER_WEAPON_SLOTS.forEach(function (slot) {
+      self._accessories[slot.key].forEach(function (v) {
+        var idx = v ? self._idxOrEmpty(v.kind, v.id) : '';
+        fields.push(idx === '' ? '' : (v.kind === 'ta' ? '1' : '2') + idx);
+      });
+    });
     var raw = '|' + fields.join('|');
 
     var acc = 0n;
@@ -944,7 +984,7 @@ Pages.builder = {
     var raw = digits.reverse().join('');
     if (raw.charAt(0) !== '|') return; // missing sentinel — not a UID we produced
     var fields = raw.slice(1).split('|');
-    if (fields.length !== this._UID_FIELD_COUNT && fields.length !== this._UID_FIELD_COUNT_LEGACY) return;
+    if (this._UID_FIELD_COUNTS.indexOf(fields.length) === -1) return;
 
     this._pilotId = this._idFromIdx('pilot', fields[0]);
     this._mechId  = this._idFromIdx('mech', fields[1]);
@@ -979,6 +1019,17 @@ Pages.builder = {
     // Missing (legacy 17-field link) defaults to Ascended, matching the
     // toggle's own default.
     this._ascendedTalent = fields[17] === undefined ? true : fields[17] === '1';
+    var self = this;
+    BUILDER_WEAPON_SLOTS.forEach(function (slot, i) {
+      var list = [];
+      for (var j = 0; j < BUILDER_ACCESSORY_SLOTS; j++) {
+        var tok  = fields[18 + i * BUILDER_ACCESSORY_SLOTS + j] || '';
+        var kind = tok.charAt(0) === '1' ? 'ta' : 'ra';
+        var id   = tok === '' ? null : self._idFromIdx(kind, tok.slice(1));
+        list.push(id ? { kind: kind, id: id } : null);
+      }
+      self._accessories[slot.key] = list;
+    });
 
     this._renderBody();
   },
@@ -1064,9 +1115,227 @@ Pages.builder = {
       html += self._subrowHtml(extraCells);
     }
 
+    html += self._chainSectionHtml();
     html += '<div class="builder-subsection-heading">Modules</div>' + self._subrowHtml(self._moduleCellsHtml(mech));
 
     return html;
+  },
+
+  // The weapon slots that get their own accessories: every slot holding a
+  // weapon, except the second half of a two-handed weapon mirrored across a
+  // pair (it's one physical weapon, so its accessories live on the first
+  // slot). The Extra slots only count while Raider is equipped.
+  _chainSlots: function () {
+    var self = this;
+    var bpEquip = self._equip.backpack;
+    var hasRaider = !!(bpEquip && bpEquip.kind === 'backpack' && bpEquip.id === BUILDER_RAIDER_BACKPACK_ID);
+    var mech = self._getMech();
+    var list = [];
+    BUILDER_WEAPON_SLOTS.forEach(function (slot) {
+      var v = self._equip[slot.key];
+      if (!v || v.kind !== 'weapon') return;
+      if ((slot.key === 'extra1' || slot.key === 'extra2') && !hasRaider) return;
+      if ((slot.key === 'leftShoulder' || slot.key === 'rightShoulder') && !(mech && mech.type === 'Medium')) return;
+      var pairFirst = { rightHand: 'leftHand', extra2: 'extra1' }[slot.key];
+      if (pairFirst) {
+        var first = self._equip[pairFirst];
+        if (first && first.kind === 'weapon' && first.id === v.id && self._isDoubleHandEquip(v)) return;
+      }
+      var w = self._weaponById(v.id);
+      if (w) list.push({ key: slot.key, label: slot.label, weapon: w });
+    });
+    return list;
+  },
+
+  _chainData: function () {
+    return window.ChainTraitsData || { ta: {}, ra: {}, pairs: {} };
+  },
+
+  _chainChance: function (taId, raId) {
+    var pairs = this._chainData().pairs[taId];
+    return pairs && pairs[raId] !== undefined ? pairs[raId] : null;
+  },
+
+  // Drops any accessory that no longer applies: its slot no longer holds a
+  // (first-of-pair) weapon, the weapon's type isn't in its fits, it repeats
+  // an earlier slot's series (same-type TAs/RAs are incompatible), or it
+  // would leave no room for the other kind (at least 1 TA and 1 RA).
+  _sanitizeAccessories: function () {
+    var self  = this;
+    var data  = self._chainData();
+    var slots = {};
+    self._chainSlots().forEach(function (s) { slots[s.key] = s.weapon; });
+    BUILDER_WEAPON_SLOTS.forEach(function (slot) {
+      var list = self._accessories[slot.key];
+      var w    = slots[slot.key];
+      var seen = {};
+      var count = { ta: 0, ra: 0 };
+      for (var i = 0; i < list.length; i++) {
+        var v = list[i];
+        var c = v && w ? data[v.kind][v.id] : null;
+        var seriesKey = c ? v.kind + c.series : null;
+        if (!c || c.fits.indexOf(w.WeaponType2) === -1 || seen[seriesKey] || count[v.kind] >= BUILDER_ACCESSORY_SLOTS - 1) {
+          list[i] = null;
+          continue;
+        }
+        seen[seriesKey] = true;
+        count[v.kind]++;
+      }
+    });
+  },
+
+  _formatChance: function (chance) {
+    return (Math.round(chance * 1000) / 10) + '%';
+  },
+
+  _chainLabel: function (c) {
+    return c.name + (c.w ? ' (W)' : '');
+  },
+
+  _chainIconSrc: function (c) {
+    return c.icon ? ACC_SKILL_BASE + encodeURIComponent(c.icon) + '.png' : '';
+  },
+
+  // Four accessory pickers per weapon (each a TA or an RA), and below them
+  // every TA + RA chain the weapon ends up with: each TA can set off each
+  // RA, with its own chance per pair.
+  _chainSectionHtml: function () {
+    var self  = this;
+    var slots = self._chainSlots();
+    if (!slots.length) return '';
+
+    var cellsHtml = slots.map(function (s) {
+      var pickers = '';
+      for (var i = 0; i < BUILDER_ACCESSORY_SLOTS; i++) pickers += self._chainPickerHtml(s, i);
+      return (
+        '<div class="builder-cell">' +
+          '<div class="builder-cell-label">' + s.label + ' Accessories</div>' +
+          '<div class="builder-chain-slots">' + pickers + '</div>' +
+        '</div>'
+      );
+    }).join('');
+
+    var linesHtml = slots.map(function (s) { return self._chainLinesHtml(s); }).join('');
+
+    return (
+      '<div class="builder-subsection-heading">Accessories</div>' +
+      self._subrowHtml(cellsHtml) +
+      (linesHtml ? '<ul class="builder-chain-list">' + linesHtml + '</ul>' : '')
+    );
+  },
+
+  // One accessory slot's picker: Triggers and Reactions that fit the weapon,
+  // minus any whose series another slot already uses, and minus a whole
+  // kind once the other slots hold 3 of it (at least 1 of each is needed).
+  _chainPickerHtml: function (s, idx) {
+    var self  = this;
+    var data  = self._chainData();
+    var type  = s.weapon.WeaponType2;
+    var list  = self._accessories[s.key];
+    var count = { ta: 0, ra: 0 };
+    var usedSeries = {};
+    list.forEach(function (v, i) {
+      if (!v || i === idx) return;
+      count[v.kind]++;
+      usedSeries[v.kind + data[v.kind][v.id].series] = true;
+    });
+
+    var disabled = [];
+    var groups = ['ta', 'ra'].map(function (kind) {
+      var kindFull = count[kind] >= BUILDER_ACCESSORY_SLOTS - 1;
+      var items = [];
+      Object.keys(data[kind]).forEach(function (id) {
+        var c = data[kind][id];
+        if (c.fits.indexOf(type) === -1) return;
+        var value = self._encodeVal(kind, id);
+        if (kindFull || usedSeries[kind + c.series]) disabled.push(value);
+        items.push({ value: value, label: self._chainLabel(c), iconSrc: self._chainIconSrc(c) });
+      });
+      items.sort(function (a, b) { return a.label.localeCompare(b.label); });
+      return { label: kind === 'ta' ? 'Triggers (TA)' : 'Reactions (RA)', items: items };
+    });
+
+    var group  = 'acc:' + s.key + ':' + idx;
+    var chosen = list[idx];
+    if (chosen) self._previewCache[group] = self._chainPreviewHtml(chosen.kind, data[chosen.kind][chosen.id]);
+
+    return self._customSelect({
+      group: group,
+      groups: groups,
+      selectedValue: chosen ? self._encodeVal(chosen.kind, chosen.id) : '',
+      disabledValues: disabled,
+      emptyLabel: '— Empty —',
+    });
+  },
+
+  // A weapon's chains, grouped by TA: "<trigger>, 40% chance to trigger
+  // <effect>" when it sets off one RA, or the trigger followed by one
+  // bullet per RA when it sets off several. A TA + RA pair the game doesn't
+  // allow is listed as not chaining.
+  _chainLinesHtml: function (s) {
+    var self = this;
+    var data = self._chainData();
+    var list = self._accessories[s.key].filter(Boolean);
+    var tas  = list.filter(function (v) { return v.kind === 'ta'; });
+    var ras  = list.filter(function (v) { return v.kind === 'ra'; });
+    if (!list.length) return '';
+
+    var body;
+    if (!tas.length || !ras.length) {
+      body = '<span class="builder-chain-warning">Needs at least 1 Trigger (TA) and 1 Reaction (RA).</span>';
+    } else {
+      body = tas.map(function (tv) {
+        var ta = data.ta[tv.id];
+        var trigger = ta.trigger.replace(/[\s,]+$/, '');
+        var parts = [];
+        var unchained = [];
+        ras.forEach(function (rv) {
+          var ra = data.ra[rv.id];
+          var chance = self._chainChance(tv.id, rv.id);
+          if (chance === null) unchained.push(self._chainLabel(ra));
+          else parts.push(Glossary.parseEffects('<color=#F74848>' + self._formatChance(chance) + '</color> chance to trigger ' + ra.effect));
+        });
+        if (unchained.length) {
+          var warning = '<span class="builder-chain-warning">' + $('<span>').text(self._chainLabel(ta) + ' doesn\'t chain with ' + unchained.join(', ')).html() + '</span>';
+          if (!parts.length) return '<div class="builder-chain-text">' + warning + '</div>';
+          parts.push(warning);
+        }
+        if (parts.length === 1) {
+          return '<div class="builder-chain-text">' + Glossary.parseEffects(trigger) + ', ' + parts[0] + '</div>';
+        }
+        return (
+          '<div class="builder-chain-text">' + Glossary.parseEffects(trigger) + ':' +
+            '<ul class="builder-chain-effects">' + parts.map(function (p) { return '<li>' + p + '</li>'; }).join('') + '</ul>' +
+          '</div>'
+        );
+      }).join('');
+    }
+
+    return (
+      '<li class="builder-chain-line">' +
+        '<span class="builder-chain-slot">' + $('<span>').text(s.label + ' — ' + s.weapon.name).html() + '</span>' +
+        body +
+      '</li>'
+    );
+  },
+
+  _chainPreviewHtml: function (kind, c) {
+    var text = kind === 'ta' ? c.trigger : c.effect;
+    var restriction = c.restriction ? '<hr class="builder-preview-sep" />' + $('<span>').text(c.restriction).html().replace(/\n/g, '<br>') : '';
+    return (
+      '<div class="skill-card builder-preview-card">' +
+        '<div class="skill-header">' +
+          '<img class="skill-icon" src="' + this._chainIconSrc(c) + '" alt="" />' +
+          '<div class="skill-header-info">' +
+            '<div class="skill-name-row">' +
+              '<span class="skill-name">' + $('<span>').text(this._chainLabel(c)).html() + '</span>' +
+              '<span class="skill-type-badge">' + (kind === 'ta' ? 'Trigger' : 'Reaction') + '</span>' +
+            '</div>' +
+          '</div>' +
+        '</div>' +
+        '<div class="talent-desc">' + Glossary.parseEffects(text) + restriction + '</div>' +
+      '</div>'
+    );
   },
 
   // Standalone (PropertyS) and Producible (SuitS) modules are all 4-level

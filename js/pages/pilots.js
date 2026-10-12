@@ -36,14 +36,14 @@ var AVAILABILITY_INFO = {
 };
 var PILOT_AVAILABILITY = {
   'Asuka': 'CL', 'Shinji': 'CL', 'Rei': 'CL',
-  'Rosa: Judgement': 'L', 'Hailis': 'L', 'Lustre': 'L',
+  'Rosa: Judgment': 'L', 'Hailis': 'L', 'Lustre': 'L',
   'Fregata': 'C', 'Cosette': 'C', 'Sylar': 'C',
 };
 var MECH_AVAILABILITY = {
   'REV-00': 'CL', 'REV-01': 'CL', 'REV-02': 'CL',
   'Erinys': 'L', 'Demiurge': 'L', 'Asteria': 'L',
   'Shadowrabbit': 'C', 'Blue Anonymous Bird': 'C', 'Medusa MKII': 'C',
-  'Eye Of Faith': 'C', 'Pascal': 'C',
+  'Eye of Faith': 'C', 'Pascal': 'C',
 };
 
 // Full-name tag for detail pages; the description pops up on hover/focus (tap on touch).
@@ -69,8 +69,8 @@ function skillIconErrorAttr(iconName) {
 var PILOT_RELEASE_ORDER = [
   'Rosa', 'Hong', 'Sylvie', 'Eileen', 'Camilla', 'Erisa', 'Lorna', 'Kelly', 'Tiphys', 'Fia',
   'Dean', 'Asuka', 'Shinji', 'Rei', 'Cassha', 'Arthur', 'Ophelia', 'Anderson', 'Fregata',
-  'Rosa: Judgement', 'Paloma', 'Matilda', 'Rosemary', 'Adele', 'Wyatt', 'Ada', 'Sapientia',
-  'Veronica', 'Verna', 'Collin', 'Zoey', 'Wataru', 'Toraoh', 'Martini', 'Lexuan', 'Audrey',
+  'Rosa: Judgment', 'Paloma', 'Matilda', 'Rosemary', 'Adele', 'Wyatt', 'Ada', 'Sapientia',
+  'Veronica', 'Verna', 'Colin', 'Zoey', 'Wataru', 'Toraoh', 'Martini', 'Lexuan', 'Audrey',
   'Hailis', 'Maat', 'Hardaway', 'Tang', 'Giselle', 'Bertha', 'Kaidan The Invincible', 'Ann', 'Blackout', 'Niall', 'Lustre', 'Alena', 'Sylar', 'Cosette', 'Sonya',
 ];
 

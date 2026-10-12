@@ -7,7 +7,6 @@ var DISPATCH_GROUPS = ['Arsenal', 'InnovativE', 'GeekX', 'Sparkplug'];
 // dispatch label to the real MechsData name so the link/icon still resolve.
 var DISPATCH_NAME_ALIASES = {
   'Shadow Rabbit': 'Shadowrabbit',
-  'Eye of Faith':  'Eye Of Faith',
   'Snowy Owl':     'Snowyowl',
   'Illusioner':    'Illusion',
   'Nemesis':       'Erinys',

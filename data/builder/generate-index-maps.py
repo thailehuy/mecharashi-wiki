@@ -8,7 +8,7 @@ makes a Build UID stay valid forever: a real game ID can be reused in a
 lower/higher spot by a future content patch without disturbing any index
 already handed out to an existing pilot/mech/weapon/backpack/module.
 
-Run this after adding new pilots/mechs/weapons/backpacks/modules to the site
+Run this after adding new pilots/mechs/weapons/backpacks/modules/accessories to the site
 (or anytime, harmlessly — it's a no-op if nothing new is eligible). It reads
 the existing index-maps.json first so previously-assigned indices are always
 preserved, then writes the updated JSON + a `window.BuilderIndexMaps = ...`
@@ -22,7 +22,7 @@ ROOT = os.path.join(DIR, '..')
 MAP_JSON = os.path.join(DIR, 'index-maps.json')
 MAP_JS = os.path.join(DIR, 'index-maps.js')
 
-CATEGORIES = ['pilot', 'mech', 'weapon', 'backpack', 'module']
+CATEGORIES = ['pilot', 'mech', 'weapon', 'backpack', 'module', 'ta', 'ra']
 
 
 def load_json(path):
@@ -60,6 +60,12 @@ def eligible_ids():
         family for family, m in modules.items()
         if m.get('category') in ('PropertyS', 'SuitS')
     ]
+
+    # Weapon accessories (trigger TA / reaction RA), from the chain-traits
+    # extract — see data/accessories/extract-chain-traits.py.
+    chain = load_json(os.path.join(ROOT, 'accessories', 'chain-traits.json'))
+    ids['ta'] = list(chain['ta'].keys())
+    ids['ra'] = list(chain['ra'].keys())
 
     return ids
 

@@ -3184,6 +3184,59 @@ a.material-item:hover .material-icon-wrap {
   margin: 0.4rem 0;
 }
 
+/* Per-weapon accessory pickers: 4 TA/RA icon slots under one slot label,
+   then each weapon's TA + RA chains with their trigger chances. */
+.builder-chain-slots {
+  display: flex;
+  gap: 0.3rem;
+}
+
+.builder-chain-slots .builder-cselect-btn {
+  width: 48px;
+  height: 48px;
+}
+
+.builder-chain-list {
+  list-style: none;
+  margin: 0.4rem 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.builder-chain-line {
+  font-size: 0.82rem;
+  line-height: 1.4;
+  color: #e0e0ff;
+  background: rgba(20, 20, 36, 0.7);
+  border-radius: 4px;
+  padding: 4px 8px;
+  overflow-wrap: anywhere;
+}
+
+.builder-chain-effects {
+  margin: 0.1rem 0 0;
+  padding-left: 1.2rem;
+}
+
+.builder-chain-text + .builder-chain-text {
+  margin-top: 0.25rem;
+}
+
+.builder-chain-warning {
+  color: #e0b030;
+}
+
+.builder-chain-slot {
+  display: block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #c8c8ff;
+}
+
 /* Aggregated module panel — a compact, non-interactive readout (no level
    slider) of the mech's own built-in modules alongside whichever
    standalone/producible modules are currently slotted in. */
