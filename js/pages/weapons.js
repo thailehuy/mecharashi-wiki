@@ -58,9 +58,24 @@ var WEAPON_ICON_FOLDER = {
   ShotGun:        'SG',
 };
 
+// When each weapon passive takes effect; see _passiveTriggers for how they're assigned.
+var PASSIVE_TRIGGERS = ['equipped', 'carried', 'used'];
+var PASSIVE_TRIGGER_LABEL = {
+  equipped: 'Effective when equipped',
+  carried:  'Effective when carried',
+  used:     'Effective when used',
+};
+var PASSIVE_TRIGGER_DESC = {
+  equipped: 'this takes effect when the weapon is equipped on hands/shoulders/back, not in Juggernaut',
+  carried:  'this takes effect when the weapon is equipped anywhere, including Juggernaut',
+  used:     'this takes effect only when the weapon is used to actively attacking, linking or retaliating, or casting skills with',
+};
+
 // Per-weapon icon replacements for where the scraped icon ID is wrong, keyed by ID.
 var WEAPON_ICON_OVERRIDE = {
   '10215123': 'Icon_weapon_10200501', // False Smile (Martini)
+  '40215123': 'Icon_weapon_40200502', // Zero Protocol
+  '10815123': 'Icon_weapon_10600403', // Oathreaper
 };
 
 // Pilot avatars and skill icons are served locally (data/unlisted/), falling
@@ -316,13 +331,15 @@ Pages.weapons = {
 
     var passiveHtml = '';
     if (w.PassiveSkill && w.PassiveSkill.length) {
+      var triggers = this._passiveTriggers(w);
       passiveHtml =
         '<div class="nd-section">' +
           '<div class="section-heading">Passive Skills</div>' +
           '<div class="detail-talents">' +
-            w.PassiveSkill.map(function (ps) {
+            w.PassiveSkill.map(function (ps, i) {
               var icon = ps.SkillIcon || ps.icon;
               var desc = linkTalent(Glossary.parseEffects(ps.SpecificEffects || ''));
+              var trigger = triggers[i] ? PASSIVE_TRIGGER_LABEL[triggers[i]] : '';
               return (
                 '<div class="talent-card">' +
                   '<div class="talent-header">' +
@@ -330,10 +347,16 @@ Pages.weapons = {
                     '<div>' +
                       '<div class="talent-name">' + $('<span>').text(ps.name).html() + '</div>' +
                     '</div>' +
+                    (trigger ? '<div class="talent-label passive-trigger">' + trigger + '</div>' : '') +
                   '</div>' +
                   (desc ? '<div class="talent-desc">' + desc + '</div>' : '') +
                 '</div>'
               );
+            }).join('') +
+          '</div>' +
+          '<div class="passive-trigger-legend">' +
+            PASSIVE_TRIGGERS.map(function (t) {
+              return '<div><span class="passive-trigger-legend-term">' + PASSIVE_TRIGGER_LABEL[t] + ':</span> ' + PASSIVE_TRIGGER_DESC[t] + '</div>';
             }).join('') +
           '</div>' +
         '</div>';
@@ -366,6 +389,17 @@ Pages.weapons = {
 
       passiveHtml
     );
+  },
+
+  // SSSR passives are listed in trigger order (equipped, carried, used). UR weapons
+  // keep only the SSSR's "used" passive. The shared First Strike Enhancement passive
+  // on some SSSRs sits outside that order, so it gets no label.
+  _passiveTriggers: function (w) {
+    if (w.quality === 'UR') return ['used'];
+    var order = PASSIVE_TRIGGERS.slice();
+    return w.PassiveSkill.map(function (ps) {
+      return ps.name === 'First Strike Enhancement III' ? null : order.shift();
+    });
   },
 
   _formatRange: function (range) {
