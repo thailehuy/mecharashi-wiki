@@ -331,15 +331,15 @@ Pages.weapons = {
 
     var passiveHtml = '';
     if (w.PassiveSkill && w.PassiveSkill.length) {
-      var triggers = this._passiveTriggers(w);
       passiveHtml =
         '<div class="nd-section">' +
           '<div class="section-heading">Passive Skills</div>' +
           '<div class="detail-talents">' +
-            w.PassiveSkill.map(function (ps, i) {
+            this._passivesByTrigger(w).map(function (entry) {
+              var ps = entry.ps;
               var icon = ps.SkillIcon || ps.icon;
               var desc = linkTalent(Glossary.parseEffects(ps.SpecificEffects || ''));
-              var trigger = triggers[i] ? PASSIVE_TRIGGER_LABEL[triggers[i]] : '';
+              var trigger = PASSIVE_TRIGGER_LABEL[entry.trigger];
               return (
                 '<div class="talent-card">' +
                   '<div class="talent-header">' +
@@ -393,13 +393,18 @@ Pages.weapons = {
 
   // SSSR passives are listed in trigger order (equipped, carried, used). UR weapons
   // keep only the SSSR's "used" passive. The shared First Strike Enhancement passive
-  // on some SSSRs sits outside that order, so it gets no label.
-  _passiveTriggers: function (w) {
-    if (w.quality === 'UR') return ['used'];
+  // on some SSSRs sits outside that order; it's a "used" passive, so it's moved after
+  // the weapon's own "used" passive.
+  _passivesByTrigger: function (w) {
+    if (w.quality === 'UR') return w.PassiveSkill.map(function (ps) { return { ps: ps, trigger: 'used' }; });
     var order = PASSIVE_TRIGGERS.slice();
-    return w.PassiveSkill.map(function (ps) {
-      return ps.name === 'First Strike Enhancement III' ? null : order.shift();
+    var extra = [];
+    var entries = [];
+    w.PassiveSkill.forEach(function (ps) {
+      if (ps.name === 'First Strike Enhancement III') extra.push({ ps: ps, trigger: 'used' });
+      else entries.push({ ps: ps, trigger: order.shift() });
     });
+    return entries.concat(extra);
   },
 
   _formatRange: function (range) {
