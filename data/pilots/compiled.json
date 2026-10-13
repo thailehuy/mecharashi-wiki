@@ -2941,7 +2941,7 @@
           "skill": {
             "ID": "185503",
             "name": "Converging Flame",
-            "describe": "Uses a Flamethrower to attack a target, dealing <color=#F74848>1.2</color>x DMG and <color=#F74848>20%</color> <buf ID=900139>[Fire DMG]</buf> to other targets along the path. When in <buf ID=185900>[Bunker]</buf> state, applies <color=#F74848>2</color> stacks of <buf ID=185902>[Flame Fusion]</buf> to self.",
+            "describe": "Uses a Flamethrower to attack a target, dealing <color=#F74848>1.2</color>x DMG and <color=#F74848>20%</color> <buf ID=900139>[Flame DMG]</buf> to other targets along the path. When in <buf ID=185900>[Bunker]</buf> state, applies <color=#F74848>2</color> stacks of <buf ID=185902>[Flame Fusion]</buf> to self.",
             "type": "EquipmentSkill",
             "Ap": "3",
             "matchingWeaponType": "FL",
@@ -49450,7 +49450,7 @@
       "quality": "SSR",
       "Talent0_2Ability": {
         "ID": "101550",
-        "name": "\u03a3-04",
+        "name": "\u2211-04",
         "SpecificEffects": "When using an Alter-Blade to actively attack and destroy a target, gains <color=#F74848>1</color> stack of <buf ID=1015414>[Critical Sense]</buf> after combat, stacking up to <color=#F74848>3</color> times. Removed at the start of the next action.",
         "BufCarried": "1015501/1015513/1015415/1015416",
         "SkillIcon": "Icon_skill_talent_5143",
@@ -49460,7 +49460,7 @@
       },
       "Talent3_5Ability": {
         "ID": "101551",
-        "name": "\u03a3-04",
+        "name": "\u2211-04",
         "SpecificEffects": "When using an Alter-Blade to actively attack and destroy a target, gains <color=#F74848>1</color> stack of <buf ID=1015414>[Critical Sense]</buf> after combat, stacking up to <color=#F74848>3</color> times. Removed at the start of the next action.\nWhen deployed, gains <color=#F74848>1</color> stack of <buf ID=1015414>[Critical Sense]</buf>. When an Arm would be destroyed, triggers <buf ID=900003>[Guts]</buf> to lock its HP at <color=#F74848>1</color>. Can trigger again after <color=#F74848>3</color> turns.",
         "BufCarried": "1015501/1015511/1015512/1015513/1015415/1015416",
         "SkillIcon": "Icon_skill_talent_5143",
@@ -65471,7 +65471,7 @@
           "type": "EquipmentSkill",
           "Ap": "3",
           "CD": "0",
-          "describe": "Uses a Flamethrower to attack a target, dealing <color=#F74848>1.2x</color> DMG and <color=#F74848>20%</color> <buf ID=900139>[Fire DMG]</buf> to other targets along the path. After combat, applies <terrian ID=4003081 /> to all tiles along the attack path, lasting <color=#F74848>2</color> turns. Can activate <buf ID=5010468>[Stratagem Infusion]</buf> to increase <buf ID=900139>[Fire DMG]</buf> to <color=#F74848>40%</color>."
+          "describe": "Uses a Flamethrower to attack a target, dealing <color=#F74848>1.2x</color> DMG and <color=#F74848>20%</color> <buf ID=900139>[Flame DMG]</buf> to other targets along the path. After combat, applies <terrian ID=4003081 /> to all tiles along the attack path, lasting <color=#F74848>2</color> turns. Can activate <buf ID=5010468>[Stratagem Infusion]</buf> to increase <buf ID=900139>[Flame DMG]</buf> to <color=#F74848>40%</color>."
         }
       ],
       "statRanks": {

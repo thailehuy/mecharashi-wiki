@@ -29,7 +29,7 @@
       },
       "53009": {
         "name": "Cookie! Cookie!",
-        "SpecificEffects": "Enhanced <buf ID=900021>[Pochy Repair]</buf>: Pochy can also execute the [Wide-Range Repair] Code."
+        "SpecificEffects": "Enhanced <skill mainSkill=500550>[Pochy!]</skill>: Pochy can also execute the [Wide-Range Repair] Code."
       },
       "53007": {
         "name": "Deflection Protection",
@@ -92,7 +92,7 @@
       },
       "53012": {
         "name": "Intel Preparations",
-        "SpecificEffects": "Enhanced <buf ID=300950>[Intel Collection]</buf>: <buf ID=300950>[Intel Collection]</buf> additionally restores <color=#F74848>1</color> AP. When an ST is destroyed within range, gains <color=#F74848>5%</color> additional Crit Rate, up to <color=#F74848>25%</color>."
+        "SpecificEffects": "Enhanced <skill mainSkill=300950>[Intel Collection]</skill>: <skill mainSkill=300950>[Intel Collection]</skill> additionally restores <color=#F74848>1</color> AP. When an ST is destroyed within range, gains <color=#F74848>5%</color> additional Crit Rate, up to <color=#F74848>25%</color>."
       },
       "53010": {
         "name": "Steady Aim",
@@ -306,11 +306,11 @@
       },
       "53039": {
         "name": "Whoosh!",
-        "SpecificEffects": "Enhanced [Hot! Hot! Hot!]: At end of action, applies <terrian ID=4003081 /> to tiles along the path of this action, lasting for <color=#F74848>2</color> turns. For each <color=#F74848>1</color> tile of <terrian ID=4003081 /> applied, gains <color=#F74848>1</color> stack of <buf ID=530391>[Heating Up]</buf>. Can stack up to <color=#F74848>15</color> times. If on <terrian ID=4003081 />, Flamethrower Bullets <color=#F74848>+1</color> and <buf ID=900139>[Fire DMG]</buf> multiplier <color=#F74848>+10%</color>."
+        "SpecificEffects": "Enhanced [Hot! Hot! Hot!]: At end of action, applies <terrian ID=4003081 /> to tiles along the path of this action, lasting for <color=#F74848>2</color> turns. For each <color=#F74848>1</color> tile of <terrian ID=4003081 /> applied, gains <color=#F74848>1</color> stack of <buf ID=530391>[Heating Up]</buf>. Can stack up to <color=#F74848>15</color> times. If on <terrian ID=4003081 />, Flamethrower Bullets <color=#F74848>+1</color> and <buf ID=900139>[Flame DMG]</buf> multiplier <color=#F74848>+10%</color>."
       },
       "53037": {
         "name": "Piercing Flame Stream",
-        "SpecificEffects": "When initiating combat, the trail of <buf ID=900139>[Fire DMG]</buf> is extended by <color=#F74848>1</color> tile."
+        "SpecificEffects": "When initiating combat, the trail of <buf ID=900139>[Flame DMG]</buf> is extended by <color=#F74848>1</color> tile."
       }
     },
     "pilot": "Erisa",
@@ -348,7 +348,7 @@
       },
       "53048": {
         "name": "Vital Surge",
-        "SpecificEffects": "Enhanced <buf ID=900071>[Stay Lit!]</buf>: After executing a single-target repair skill, grants the target [Crit Rate Up I] and <buf ID=7100103>[Hit Rate UP II]</buf>, lasting for <color=#F74848>1</color> turn. If there is AP remaining, transfers <color=#F74848>1</color> AP to the target."
+        "SpecificEffects": "Enhanced <buf ID=900071>[Stay Lit!]</buf>: After executing a single-target repair skill, grants the target [Crit Rate UP I] and <buf ID=7100103>[Hit Rate UP II]</buf>, lasting for <color=#F74848>1</color> turn. If there is AP remaining, transfers <color=#F74848>1</color> AP to the target."
       },
       "53046": {
         "name": "Maintenance Spares",
@@ -364,7 +364,7 @@
     "name": "Dawnstar Rampart",
     "passiveSkills": {
       "53053": {
-        "name": "Fight Fire With Fire",
+        "name": "Fight Fire with Fire",
         "SpecificEffects": "When retaliating, DMG increased by current DMG Taken Down effect. Retaliation DMG <color=#F74848>+1.5%</color> for every <color=#F74848>1%</color> DMG Taken Down, up to <color=#F74848>100%</color>."
       },
       "53054": {
@@ -535,8 +535,8 @@
         "SpecificEffects": "After triggering the <buf ID=900109>[Execution]</buf> effect, inflicts <buf ID=7101203>[DMG Down II]</buf> and <buf ID=7101803>[DMG Taken UP II]</buf> on the target and enemy units within <color=#F74848>1</color> ring, lasting for <color=#F74848>1</color> turn."
       },
       "53072": {
-        "name": "Σ-04Ω",
-        "SpecificEffects": "Enhanced [Σ-04] Effect: When using an Alter-Blade to attack the same target continuously, increases the Hit Weighting of the first part hit by <color=#F74848>50</color>. This effect is removed at the end of the target's action. At start of action, only removes <color=#F74848>1</color> stack of <buf ID=900100>[Critical Sense]</buf>. When possessing <color=#F74848>3</color> stacks of <buf ID=900100>[Critical Sense]</buf>, DMG <color=#F74848>+15%</color> and DMG Taken <color=#F74848>-15%</color>."
+        "name": "∑-04Ω",
+        "SpecificEffects": "Enhanced [∑-04] Effect: When using an Alter-Blade to attack the same target continuously, increases the Hit Weighting of the first part hit by <color=#F74848>50</color>. This effect is removed at the end of the target's action. At start of action, only removes <color=#F74848>1</color> stack of <buf ID=900100>[Critical Sense]</buf>. When possessing <color=#F74848>3</color> stacks of <buf ID=900100>[Critical Sense]</buf>, DMG <color=#F74848>+15%</color> and DMG Taken <color=#F74848>-15%</color>."
       },
       "53070": {
         "name": "Re-Slash",
@@ -553,7 +553,7 @@
     "passiveSkills": {
       "53080": {
         "name": "Practice Makes Perfect",
-        "SpecificEffects": "After actively repairing <color=#F74848>3</color> cumulative times, gains <color=#F74848>1</color> AP and <buf ID=500923>[Renovate II]</buf>, lasting <color=#F74848>1</color> turn."
+        "SpecificEffects": "After actively repairing <color=#F74848>3</color> cumulative times, gains <color=#F74848>1</color> AP and <buf ID=500923>[Reconstruction II]</buf>, lasting <color=#F74848>1</color> turn."
       },
       "53081": {
         "name": "Canary's Song",
@@ -578,7 +578,7 @@
       },
       "53078": {
         "name": "Gospel of Hope",
-        "SpecificEffects": "Enhanced [EVA-01 Pilot]: Heavy Machine Gun range <color=#F74848>+1</color>, <buf ID=1014820>[Sync Ratio]</buf> correction effect <color=#F74848>+25%</color>. Every time <buf ID=900004>[Re-ATK]</buf> is triggered, <buf ID=1014820>[Sync Ratio]</buf> <color=#F74848>+3%</color>. After actively attacking, gains <buf ID=530786>[Sync Miracle]</buf>. Effective up to <color=#F74848>1</color> time per turn."
+        "SpecificEffects": "Enhanced [EVA-01 Pilot]: Heavy Machine Gun range <color=#F74848>+1</color>, <buf ID=1014820>[Sync Ratio]</buf> correction effect <color=#F74848>+25%</color>. Every time <buf ID=900004>[Re-ATK]</buf> is triggered, <buf ID=1014820>[Sync Ratio]</buf> <color=#F74848>+3%</color>. After actively attacking, gains <buf ID=530786>[Synchronized Miracle]</buf>. Effective up to <color=#F74848>1</color> time per turn."
       },
       "53076": {
         "name": "Firepower Advantage",
@@ -620,11 +620,11 @@
       },
       "53087": {
         "name": "Agitated Resolve",
-        "SpecificEffects": "Enhanced [Fiery Will]: Upon deployment, gains <color=#F74848>5</color> stacks of <buf ID=530872>[Burning Intent]</buf>. After the talent triggers <buf ID=900002>[Link Attack]</buf>, or after actively attacking, for every <color=#F74848>1</color> Ammo consumed, gains <color=#F74848>1</color> stack of <buf ID=530872>[Burning Intent]</buf>, up to <color=#F74848>15</color> stacks. While carrying <color=#F74848>10</color> or more stacks, AP Regen <color=#F74848>+1</color>. <buf ID=4008509>[Lock]</buf> increases DMG multiplier of Arthur's active attacks and all <buf ID=900002>[Link Attack]</buf> against the target by <color=#F74848>+0.1</color>."
+        "SpecificEffects": "Enhanced [Fiery Will]: Upon deployment, gains <color=#F74848>5</color> stacks of <buf ID=530872>[Scorching Intent]</buf>. After the talent triggers <buf ID=900002>[Link Attack]</buf>, or after actively attacking, for every <color=#F74848>1</color> Ammo consumed, gains <color=#F74848>1</color> stack of <buf ID=530872>[Scorching Intent]</buf>, up to <color=#F74848>15</color> stacks. While carrying <color=#F74848>10</color> or more stacks, AP Regen <color=#F74848>+1</color>. <buf ID=4008509>[Lock]</buf> increases DMG multiplier of Arthur's active attacks and all <buf ID=900002>[Link Attack]</buf> against the target by <color=#F74848>+0.1</color>."
       },
       "53085": {
         "name": "Reserve Pod",
-        "SpecificEffects": "After actively attacking with a Missile Launcher, randomly reloads Ammo to carried Missile Launchers equal to the amount spent this action. Can trigger again after an interval of <color=#F74848>1</color> turn."
+        "SpecificEffects": "After actively attacking with a Missile Launcher, randomly reloads Ammo to carried Missile Launchers equal to the AP Cost of that attack. Can trigger again after an interval of <color=#F74848>1</color> turn."
       }
     },
     "pilot": "Arthur",
@@ -814,7 +814,7 @@
     "describe": "\"...I had a bad feeling the moment you said we were picking something up from the dock warehouse—but I never imagined your idea of a 'little snack' would be a rail gun! I-I mean, I was surprised, but maybe next time you give someone a gift, you should check what they actually want first... And also—don't just paint something like 'Little Fia' on the shipping container for everyone to see!\""
   },
   "50116122": {
-    "name": "Sugarcoated Destroyer",
+    "name": "Sugar-Coated Destroyer",
     "passiveSkills": {
       "53068": {
         "name": "Penetrating Pulse",
