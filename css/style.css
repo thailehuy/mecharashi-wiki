@@ -2171,6 +2171,27 @@ a.material-item:hover .material-icon-wrap {
   font-weight: 500;
 }
 
+/* Credits section */
+.home-credits {
+  background: #12121f;
+  border: 1px solid #2a2a4a;
+  border-radius: 10px;
+  padding: 1.5rem 2rem;
+  margin-bottom: 1.25rem;
+}
+.credits-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: #a0a0b0;
+  font-size: 0.88rem;
+  line-height: 1.9;
+}
+.credits-name {
+  font-weight: 600;
+  color: #e94560;
+}
+
 /* License tag */
 .tag-license {
   color: #7dd3fc;

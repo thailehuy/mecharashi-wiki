@@ -35,6 +35,7 @@ Add new images to the matching folder in that repo; pushing its `main` deploys t
 - **EX Skills** reference — universal weapon-type basic attacks/codes
 - **ST Stats** table — sortable/filterable comparison of all SSR-quality STs
 - **Builder** — mech loadout theorycrafting tool, incl. 4 accessory slots per weapon (at least 1 trigger TA + 1 reaction RA) with each TA + RA chain's trigger chance; state is encoded into a shareable Build UID (URL hash), not localStorage
+- **DMG Calc (Beta)** — standalone page at `dmgcalc/` (linked from "Misc."): the mined Damage Bench, comparing two setups' damage per attack and attacks to kill against a boss; saved loadouts stay in the browser (localStorage)
 - **Glossary** — shared keyword/tooltip engine (buffs, skills, terrain, jump-links) used across all pages
 - Runtime translation loading — editing a `<ID>-translation.json` file and pushing takes effect on GitHub Pages without recompiling
 
@@ -42,6 +43,7 @@ Add new images to the matching folder in that repo; pushing its `main` deploys t
 
 ```
 index.html                        # Entry point
+dmgcalc/                          # DMG Calc (Beta), a standalone page: index.html (markup, kept by hand), bench.js/css (generated)
 css/style.css                     # All styles
 compile.py                        # Orchestrates the full data build (see below)
 build_pages.py                    # Generates per-route/per-item pages (gitignored; run in CI)
@@ -69,6 +71,7 @@ data/
   modules/                        # compile.py, scrape-modules.js → compiled.js/json (ModulesData)
   accessories/                    # compiled.js/json; extract-chain-traits.py → chain-traits.js/json (ChainTraitsData, SSR TA/RA pairs from the mined DB)
   builder/                        # generate-index-maps.py → index-maps.js/json (BuilderIndexMaps)
+  dmgcalc/                        # extract-bench.py → bench-data.js (BenchData) + dmgcalc/bench.js/css, from the mined Damage_Bench.html
   rd/                             # build_rd_totals.py → rd-totals.json (max R&D bonuses from the mined DB, for the DMG calculator)
   glossary.json                   # → GlossaryData
   dispatch.json                   # → dispatch table data
@@ -217,6 +220,22 @@ Pilot attribute = (Lv70 base + neurons + chips + R&D flat) × (1 + potential bon
 ```
 
 The individual nodes and features are in the `rd_nodes` and `rd_features` tables if the calculator needs them.
+
+**DMG Calc (`dmgcalc/`)**
+
+The DMG Calc page is the mined `Damage_Bench.html`, split into files the site serves. The calculation is final, so updates should only bring new data (e.g. new pilots). To update it after a new extraction:
+
+1. Put the new mined files in `data/screenshots/mined/` (the script reads `Damage_Bench.html`).
+2. Run `python3 data/dmgcalc/extract-bench.py`. It regenerates:
+   - `dmgcalc/bench.css`: the bench's `<style>` block.
+   - `dmgcalc/bench.js`: the bench's script, with its embedded `const D = {...}` replaced by `const D = window.BenchData;`.
+   - `data/dmgcalc/bench-data.js`: `window.BenchData = {...}` (~1.8 MB, loaded only by this page).
+
+   It prints the game build and data date, and warns if `dmgcalc/index.html` is missing an element id the script looks up.
+3. If it warned, copy the changed markup from `Damage_Bench.html` into `dmgcalc/index.html`. That file is kept by hand: it's the bench's markup plus the page title, the "DMG Calc · Beta" heading, the "← Mecharashi Wiki" link and the two `<script>` tags. Don't overwrite it wholesale.
+4. Open `dmgcalc/` locally (see Running locally) and check the console for errors, then commit the three generated files.
+
+Don't take the data from the DB's `bench_data` table: it lacks some weapons, accessories and effects that the HTML has, and its helper sections differ (`alias_src` / `impr_tbl` / `fixed_ids` instead of `alias` / `units` / `meta`). Like the DB, the bench data covers Global only up to v2.5, so newer pilots, STs and weapons aren't in the calculator yet.
 
 ### Running locally
 

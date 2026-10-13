@@ -51,6 +51,15 @@ Pages.home = {
             '<div class="qa-a">Any pilot/ST not released on Global will need to be translated word by word from CN by me, so it would not be quick. At maximum I can update 2&ndash;4 pilots/STs per week.</div>' +
           '</div>' +
         '</div>' +
+        '<div class="home-credits">' +
+          '<h2 class="home-disclaimer-title">Special Thanks to</h2>' +
+          '<ul class="credits-list">' +
+            '<li><span class="credits-name">@Juff</span> for proofreading and translation fix</li>' +
+            '<li><span class="credits-name">@Milkmamas</span> for images and icons</li>' +
+            '<li><span class="credits-name">@plushy</span> for EN data text and numbers</li>' +
+            '<li><span class="credits-name">@PopSnoopy</span> for CN data text and numbers</li>' +
+          '</ul>' +
+        '</div>' +
         '<div class="home-disclaimer">' +
           '<h2 class="home-disclaimer-title">Disclaimer</h2>' +
           '<p>This site is an unofficial, fan‑made wiki and is not affiliated with, endorsed by, or sponsored by the official rights holders. It is created for informational and educational purposes only, and no copyright infringement is intended.</p>' +
