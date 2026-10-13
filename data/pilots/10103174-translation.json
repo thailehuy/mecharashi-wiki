@@ -126,7 +126,7 @@
     },
     "300043": {
       "name": "Power Innovation 3",
-      "SpecificEffects": "When destroying a target, additionally restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>2</color> times per turn."
+      "SpecificEffects": "When destroying a target, additionally restores <color=#F74848>1</color> AP after combat. Can trigger up to <color=#F74848>2</color> times per turn."
     },
     "800144": {
       "name": "Singularity Deferrence 2",
@@ -550,7 +550,7 @@
               "type": "EquipmentSkill",
               "Ap": "3",
               "CD": "0",
-              "describe": "Uses Heavy Machine Gun to attack a target, dealing <color=#F74848>1.3x</color> DMG. Inflicts <buf ID=7101104>[Dodge Rate Down III]</buf> on the target hit, lasting for <color=#F74848>2</color> turns."
+              "describe": "Uses Heavy Machine Gun to attack a target, dealing <color=#F74848>1.3x</color> DMG. Inflicts <buf ID=7101104>[Dodge Rate Down II]</buf> on the target hit, lasting for <color=#F74848>2</color> turns."
             }
           ]
         },

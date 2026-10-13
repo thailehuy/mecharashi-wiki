@@ -197,6 +197,20 @@ MANUAL_MODULE_SPECS = {
 #   - `bonusAtMax`: the clause after the first newline only unlocks at max
 #               level, so it's dropped for every lower level.
 MANUAL_MODULE_LEVELS = {
+    # Counterblade Mod (Hector) isn't in the CN catalog scrape either; Hector
+    # is a CN-sourced mech, so the template is its translation's level-8
+    # text. Ladder from the mined DB's `modules` table: hit-rate threshold,
+    # Retaliation DMG%. The skill-multiplier clause only unlocks at level 8.
+    '3046': {
+        'name': 'Counterblade Mod',
+        'icon': 'Icon_entry_10096',
+        'category': 'GeneralSuit',
+        'maxLevel': 8,
+        'bonusAtMax': True,
+        'tags': [0, 1],
+        'ladder': [('50', '4'), ('50', '6'), ('50', '8'), ('60', '10'),
+                   ('60', '14'), ('70', '16'), ('70', '18'), ('70', '24')],
+    },
     # Deep Linker (Nephthys): main DMG%, per-debuff DMG%, stack cap.
     '9020': {
         'name': 'Deep Linker',
@@ -389,15 +403,17 @@ MANUAL_MODULE_LEVELS = {
 LEADING_NUM_RE = re.compile(r'\d+(?:\.\d+)?')
 
 
-def build_manual_level_modules(local_modules):
+def build_manual_level_modules(local_modules, en_by_local_id):
     """Build MANUAL_MODULE_LEVELS' `levels` dicts from the mech JSON's
     max-level text, substituting each level's ladder numbers into the
-    scaling tags (see MANUAL_MODULE_LEVELS' comment)."""
+    scaling tags (see MANUAL_MODULE_LEVELS' comment). A CN-sourced mech's
+    raw text is Chinese, so its translation's text is used when present."""
     modules = {}
     for family, spec in MANUAL_MODULE_LEVELS.items():
         max_level = spec['maxLevel']
         template_text = next(
-            (info['cn_text'] for info in local_modules.values()
+            ((en_by_local_id.get(lid) or {}).get('effect') or info['cn_text']
+             for lid, info in local_modules.items()
              if info['family'] == family and info['level'] == max_level),
             None
         )
@@ -796,7 +812,7 @@ def main():
 
     for family, manual_mod in build_manual_modules(local_modules).items():
         modules.setdefault(family, manual_mod)
-    for family, manual_mod in build_manual_level_modules(local_modules).items():
+    for family, manual_mod in build_manual_level_modules(local_modules, en_by_local_id).items():
         modules.setdefault(family, manual_mod)
 
     out = {'modules': modules}

@@ -391,37 +391,37 @@
       }
     },
     "3044": {
-      "name": "Sturdy Shield Mod",
+      "name": "Bulwark Array Mod",
       "icon": "Icon_entry_10095",
       "category": "GeneralSuit",
       "maxLevel": 8,
       "currentLevel": 8,
       "levels": {
-        "1": "When attacked, if not possessing temporary HP, any undestroyed part having <color=#F74848>30%</color> or less HP gain temporary HP equal to <color=#F74848>3%</color>",
-        "2": "When attacked, if not possessing temporary HP, any undestroyed part having <color=#F74848>30%</color> or less HP gain temporary HP equal to <color=#F74848>4%</color>",
-        "3": "When attacked, if not possessing temporary HP, any undestroyed part having <color=#F74848>30%</color> or less HP gain temporary HP equal to <color=#F74848>5%</color>",
-        "4": "When attacked, if not possessing temporary HP, any undestroyed part having <color=#F74848>50%</color> or less HP gain temporary HP equal to <color=#F74848>6%</color>",
-        "5": "When attacked, if not possessing temporary HP, any undestroyed part having <color=#F74848>50%</color> or less HP gain temporary HP equal to <color=#F74848>8%</color>",
-        "6": "When attacked, if not possessing temporary HP, any undestroyed part having <color=#F74848>70%</color> or less HP gain temporary HP equal to <color=#F74848>10%</color>",
-        "7": "When attacked, if not possessing temporary HP, any undestroyed part having <color=#F74848>70%</color> or less HP gain temporary HP equal to <color=#F74848>12%</color>",
-        "8": "When attacked, if not possessing temporary HP, any undestroyed part having <color=#F74848>70%</color> or less HP gain temporary HP equal to <color=#F74848>15%</color> of that part max HP. When gaining temporary HP, grants <buf ID=7100306>[DMG UP III]</buf> and <buf ID=7100106>[Hit Rate UP III]</buf> to self and <color=#F74848>1</color> random ally within <color=#F74848>2-tile diamond</color> area around self, lasting for <color=#F74848>2</color> turns."
+        "1": "When actively attacked and hit, if not possessing a shield, a part that was hit but not destroyed, with HP percentage lower than <color=#F74848>30%</color>, gains a shield equal to <color=#F74848>3%</color> of its Max HP after combat. This shield lasts until it is broken.",
+        "2": "When actively attacked and hit, if not possessing a shield, a part that was hit but not destroyed, with HP percentage lower than <color=#F74848>30%</color>, gains a shield equal to <color=#F74848>4%</color> of its Max HP after combat. This shield lasts until it is broken.",
+        "3": "When actively attacked and hit, if not possessing a shield, a part that was hit but not destroyed, with HP percentage lower than <color=#F74848>30%</color>, gains a shield equal to <color=#F74848>5%</color> of its Max HP after combat. This shield lasts until it is broken.",
+        "4": "When actively attacked and hit, if not possessing a shield, a part that was hit but not destroyed, with HP percentage lower than <color=#F74848>50%</color>, gains a shield equal to <color=#F74848>6%</color> of its Max HP after combat. This shield lasts until it is broken.",
+        "5": "When actively attacked and hit, if not possessing a shield, a part that was hit but not destroyed, with HP percentage lower than <color=#F74848>50%</color>, gains a shield equal to <color=#F74848>8%</color> of its Max HP after combat. This shield lasts until it is broken.",
+        "6": "When actively attacked and hit, if not possessing a shield, a part that was hit but not destroyed, with HP percentage lower than <color=#F74848>70%</color>, gains a shield equal to <color=#F74848>10%</color> of its Max HP after combat. This shield lasts until it is broken.",
+        "7": "When actively attacked and hit, if not possessing a shield, a part that was hit but not destroyed, with HP percentage lower than <color=#F74848>70%</color>, gains a shield equal to <color=#F74848>12%</color> of its Max HP after combat. This shield lasts until it is broken.",
+        "8": "When actively attacked and hit, if not possessing a shield, a part that was hit but not destroyed, with HP percentage lower than <color=#F74848>70%</color>, gains a shield equal to <color=#F74848>15%</color> of its Max HP after combat. This shield lasts until it is broken.\nUpon gaining a shield, applies <buf ID=7100306>[DMG UP III]</buf> and <buf ID=7100106>[Hit Rate UP III]</buf> to self and <color=#F74848>1</color> random ally within a diamond-shaped <color=#F74848>2-tile</color> range. Lasts for <color=#F74848>2</color> turns."
       }
     },
     "3043": {
-      "name": "Aggression Mod",
+      "name": "Crit Lock Mod",
       "icon": "Icon_entry_10094",
       "category": "GeneralSuit",
       "maxLevel": 8,
       "currentLevel": 8,
       "levels": {
-        "1": "When actively attacking, critical hit chance increases by <color=#F74848>3%</color>. If the attack does not score a critical hit, the next attack critical hit chance increases by additionally <color=#F74848>3%</color>. This effect is reset upon scoring a critical hit.",
-        "2": "When actively attacking, critical hit chance increases by <color=#F74848>5%</color>. If the attack does not score a critical hit, the next attack critical hit chance increases by additionally <color=#F74848>4%</color>. This effect is reset upon scoring a critical hit.",
-        "3": "When actively attacking, critical hit chance increases by <color=#F74848>7%</color>. If the attack does not score a critical hit, the next attack critical hit chance increases by additionally <color=#F74848>5%</color>. This effect is reset upon scoring a critical hit.",
-        "4": "When actively attacking, critical hit chance increases by <color=#F74848>9%</color>. If the attack does not score a critical hit, the next attack critical hit chance increases by additionally <color=#F74848>6%</color>. This effect is reset upon scoring a critical hit.",
-        "5": "When actively attacking, critical hit chance increases by <color=#F74848>11%</color>. If the attack does not score a critical hit, the next attack critical hit chance increases by additionally <color=#F74848>8%</color>. This effect is reset upon scoring a critical hit.",
-        "6": "When actively attacking, critical hit chance increases by <color=#F74848>13%</color>. If the attack does not score a critical hit, the next attack critical hit chance increases by additionally <color=#F74848>10%</color>. This effect is reset upon scoring a critical hit.",
-        "7": "When actively attacking, critical hit chance increases by <color=#F74848>16%</color>. If the attack does not score a critical hit, the next attack critical hit chance increases by additionally <color=#F74848>12%</color>. This effect is reset upon scoring a critical hit.",
-        "8": "When actively attacking, critical hit chance increases by <color=#F74848>20%</color>. If the attack does not score a critical hit, the next attack critical hit chance increases by additionally <color=#F74848>15%</color>. This effect is reset upon scoring a critical hit.\nWhen entering <buf ID=900014>[Aiming]</buf> Mode, the attack multiplier is increased by <color=#F74848>+0.1</color>."
+        "1": "When actively attacking, Crit Rate <color=#F74848>+3%</color>. If a critical hit does not occur, Crit Rate increases by <color=#F74848>3%</color> for the next active attack. This effect can stack and is cleared upon landing a critical hit.",
+        "2": "When actively attacking, Crit Rate <color=#F74848>+5%</color>. If a critical hit does not occur, Crit Rate increases by <color=#F74848>4%</color> for the next active attack. This effect can stack and is cleared upon landing a critical hit.",
+        "3": "When actively attacking, Crit Rate <color=#F74848>+7%</color>. If a critical hit does not occur, Crit Rate increases by <color=#F74848>5%</color> for the next active attack. This effect can stack and is cleared upon landing a critical hit.",
+        "4": "When actively attacking, Crit Rate <color=#F74848>+9%</color>. If a critical hit does not occur, Crit Rate increases by <color=#F74848>6%</color> for the next active attack. This effect can stack and is cleared upon landing a critical hit.",
+        "5": "When actively attacking, Crit Rate <color=#F74848>+11%</color>. If a critical hit does not occur, Crit Rate increases by <color=#F74848>8%</color> for the next active attack. This effect can stack and is cleared upon landing a critical hit.",
+        "6": "When actively attacking, Crit Rate <color=#F74848>+13%</color>. If a critical hit does not occur, Crit Rate increases by <color=#F74848>10%</color> for the next active attack. This effect can stack and is cleared upon landing a critical hit.",
+        "7": "When actively attacking, Crit Rate <color=#F74848>+16%</color>. If a critical hit does not occur, Crit Rate increases by <color=#F74848>12%</color> for the next active attack. This effect can stack and is cleared upon landing a critical hit.",
+        "8": "When actively attacking, Crit Rate <color=#F74848>+20%</color>. If a critical hit does not occur, Crit Rate increases by <color=#F74848>15%</color> for the next active attack. This effect can stack and is cleared upon landing a critical hit.\nWhen entering <buf ID=900014>[Aiming]</buf> Mode, skill multiplier <color=#F74848>+0.1</color>."
       }
     },
     "3039": {
@@ -1005,55 +1005,55 @@
       }
     },
     "2056": {
-      "name": "Rebel Mod",
+      "name": "Defiant Unit",
       "icon": "Icon_skill_passive_1171",
       "category": "SuitS",
       "maxLevel": 4,
       "currentLevel": 4,
       "levels": {
-        "1": "When attacked, for each <color=#F74848>1</color> hit dodged, DMG dealt increases by <color=#F74848>1%</color>, up to <color=#F74848>8%</color>. This effect is reduced by <color=#F74848>2%</color> at the end of turn.",
-        "2": "When attacked, for each <color=#F74848>1</color> hit dodged, DMG dealt increases by <color=#F74848>1.5%</color>, up to <color=#F74848>15%</color>. This effect is reduced by <color=#F74848>4%</color> at the end of turn.",
-        "3": "When attacked, for each <color=#F74848>1</color> hit dodged, DMG dealt increases by <color=#F74848>2%</color>, up to <color=#F74848>24%</color>. This effect is reduced by <color=#F74848>7%</color> at the end of turn.",
-        "4": "When attacked, for each <color=#F74848>1</color> hit dodged, DMG dealt increases by <color=#F74848>2.5%</color>, up to <color=#F74848>35%</color>. This effect is reduced by <color=#F74848>10%</color> at the end of turn."
+        "1": "When attacked, for each <color=#F74848>1</color> attack dodged, gains DMG <color=#F74848>+1%</color>, up to <color=#F74848>8%</color>. At end of action, DMG <color=#F74848>-2%</color>.",
+        "2": "When attacked, for each <color=#F74848>1</color> attack dodged, gains DMG <color=#F74848>+1.5%</color>, up to <color=#F74848>15%</color>. At end of action, DMG <color=#F74848>-4%</color>.",
+        "3": "When attacked, for each <color=#F74848>1</color> attack dodged, gains DMG <color=#F74848>+2%</color>, up to <color=#F74848>24%</color>. At end of action, DMG <color=#F74848>-7%</color>.",
+        "4": "When attacked, for each <color=#F74848>1</color> attack dodged, gains DMG <color=#F74848>+2.5%</color>, up to <color=#F74848>35%</color>. At end of action, DMG <color=#F74848>-10%</color>."
       }
     },
     "2055": {
-      "name": "Air Glow Mod",
+      "name": "Nebula System",
       "icon": "Icon_skill_passive_1122",
       "category": "SuitS",
       "maxLevel": 4,
       "currentLevel": 4,
       "levels": {
-        "1": "When actively attacking, for each <color=#F74848>1</color> AP consumes, increases DMG dealt by <color=#F74848>2%</color> before battle, up to <color=#F74848>8%</color>. After combat, this increment is reduced by <color=#F74848>4%</color>.",
-        "2": "When actively attacking, for each <color=#F74848>1</color> AP consumes, increases DMG dealt by <color=#F74848>3%</color> before battle, up to <color=#F74848>15%</color>. After combat, this increment is reduced by <color=#F74848>6%</color>.",
-        "3": "When actively attacking, for each <color=#F74848>1</color> AP consumes, increases DMG dealt by <color=#F74848>4%</color> before battle, up to <color=#F74848>24%</color>. After combat, this increment is reduced by <color=#F74848>8%</color>.",
-        "4": "When actively attacking, for each <color=#F74848>1</color> AP consumes, increases DMG dealt by <color=#F74848>5%</color> before battle, up to <color=#F74848>35%</color>. After combat, this increment is reduced by <color=#F74848>10%</color>."
+        "1": "When actively attacking, for every <color=#F74848>1</color> AP consumed, DMG Dealt <color=#F74848>+2%</color> before combat, up to <color=#F74848>8%</color>, and <color=#F74848>-4%</color> after combat.",
+        "2": "When actively attacking, for every <color=#F74848>1</color> AP consumed, DMG Dealt <color=#F74848>+3%</color> before combat, up to <color=#F74848>15%</color>, and <color=#F74848>-6%</color> after combat.",
+        "3": "When actively attacking, for every <color=#F74848>1</color> AP consumed, DMG Dealt <color=#F74848>+4%</color> before combat, up to <color=#F74848>24%</color>, and <color=#F74848>-8%</color> after combat.",
+        "4": "When actively attacking, for every <color=#F74848>1</color> AP consumed, DMG Dealt <color=#F74848>+5%</color> before combat, up to <color=#F74848>35%</color>, and <color=#F74848>-10%</color> after combat."
       }
     },
     "2054": {
-      "name": "Iron Rain Mod",
+      "name": "Iron Rain Transmuter",
       "icon": "Icon_skill_passive_1130",
       "category": "SuitS",
       "maxLevel": 4,
       "currentLevel": 4,
       "levels": {
-        "1": "Increases DMG dealt by <color=#F74848>3%</color> when attacking with tactical weapon. For each <color=#F74848>1</color> tactical ammo consumed, additionally increases DMG dealt by <color=#F74848>2%</color>, up to <color=#F74848>3</color> stacks, lasting for <color=#F74848>2</color> turns.",
-        "2": "Increases DMG dealt by <color=#F74848>6%</color> when attacking with tactical weapon. For each <color=#F74848>1</color> tactical ammo consumed, additionally increases DMG dealt by <color=#F74848>3%</color>, up to <color=#F74848>3</color> stacks, lasting for <color=#F74848>2</color> turns.",
-        "3": "Increases DMG dealt by <color=#F74848>10%</color> when attacking with tactical weapon. For each <color=#F74848>1</color> tactical ammo consumed, additionally increases DMG dealt by <color=#F74848>3%</color>, up to <color=#F74848>5</color> stacks, lasting for <color=#F74848>2</color> turns.",
-        "4": "Increases DMG dealt by <color=#F74848>15%</color> when attacking with tactical weapon. For each <color=#F74848>1</color> tactical ammo consumed, additionally increases DMG dealt by <color=#F74848>4%</color>, up to <color=#F74848>5</color> stacks, lasting for <color=#F74848>2</color> turns."
+        "1": "When attacking with a Tactical Weapon, DMG <color=#F74848>+3%</color>. For every <color=#F74848>1</color> Ammo consumed, increases DMG Dealt by <color=#F74848>2%</color>, stacking up to <color=#F74848>3</color> times. Lasts for <color=#F74848>2</color> turns.",
+        "2": "When attacking with a Tactical Weapon, DMG <color=#F74848>+6%</color>. For every <color=#F74848>1</color> Ammo consumed, increases DMG Dealt by <color=#F74848>3%</color>, stacking up to <color=#F74848>3</color> times. Lasts for <color=#F74848>2</color> turns.",
+        "3": "When attacking with a Tactical Weapon, DMG <color=#F74848>+10%</color>. For every <color=#F74848>1</color> Ammo consumed, increases DMG Dealt by <color=#F74848>3%</color>, stacking up to <color=#F74848>5</color> times. Lasts for <color=#F74848>2</color> turns.",
+        "4": "When attacking with a Tactical Weapon, DMG <color=#F74848>+15%</color>. For every <color=#F74848>1</color> Ammo consumed, increases DMG Dealt by <color=#F74848>4%</color>, stacking up to <color=#F74848>5</color> times. Lasts for <color=#F74848>2</color> turns."
       }
     },
     "2053": {
-      "name": "Heartsplitter Mod",
+      "name": "Delphi System",
       "icon": "Icon_skill_passive_5220",
       "category": "SuitS",
       "maxLevel": 4,
       "currentLevel": 4,
       "levels": {
-        "1": "During combat, for each <color=#F74848>1</color> debuff the target carries, increases own DMG dealt by <color=#F74848>2%</color> and target DMG taken by <color=#F74848>1%</color>, stacking up to <color=#F74848>3</color> times, lasting for <color=#F74848>2</color> turns.",
-        "2": "During combat, for each <color=#F74848>1</color> debuff the target carries, increases own DMG dealt by <color=#F74848>3%</color> and target DMG taken by <color=#F74848>2%</color>, stacking up to <color=#F74848>3</color> times, lasting for <color=#F74848>2</color> turns.",
-        "3": "During combat, for each <color=#F74848>1</color> debuff the target carries, increases own DMG dealt by <color=#F74848>3%</color> and target DMG taken by <color=#F74848>2%</color>, stacking up to <color=#F74848>5</color> times, lasting for <color=#F74848>2</color> turns.",
-        "4": "During combat, for each <color=#F74848>1</color> debuff the target carries, increases own DMG dealt by <color=#F74848>5%</color> and target DMG taken by <color=#F74848>2%</color>, stacking up to <color=#F74848>5</color> times, lasting for <color=#F74848>2</color> turns."
+        "1": "In battle, for each <color=#F74848>1</color> debuff inflicted, gains DMG Dealt <color=#F74848>+2%</color>, and the target takes <color=#F74848>1%</color> increased damage. Stacks up to <color=#F74848>3</color> times. Lasts for <color=#F74848>2</color> turns.",
+        "2": "In battle, for each <color=#F74848>1</color> debuff inflicted, gains DMG Dealt <color=#F74848>+3%</color>, and the target takes <color=#F74848>2%</color> increased damage. Stacks up to <color=#F74848>3</color> times. Lasts for <color=#F74848>2</color> turns.",
+        "3": "In battle, for each <color=#F74848>1</color> debuff inflicted, gains DMG Dealt <color=#F74848>+3%</color>, and the target takes <color=#F74848>2%</color> increased damage. Stacks up to <color=#F74848>5</color> times. Lasts for <color=#F74848>2</color> turns.",
+        "4": "In battle, for each <color=#F74848>1</color> debuff inflicted, gains DMG Dealt <color=#F74848>+5%</color>, and the target takes <color=#F74848>2%</color> increased damage. Stacks up to <color=#F74848>5</color> times. Lasts for <color=#F74848>2</color> turns."
       }
     },
     "2052": {
@@ -1661,20 +1661,20 @@
       }
     },
     "3045": {
-      "name": "Support Mod",
+      "name": "Coordinated Support Mod",
       "icon": "Icon_entry_10097",
       "category": "GeneralSuit",
       "maxLevel": 8,
       "currentLevel": 8,
       "levels": {
-        "1": "When attacking, if there are allies within <color=#F74848>4</color> adjacent tiles, DMG dealt increases by <color=#F74848>3%</color>.",
-        "2": "When attacking, if there are allies within <color=#F74848>4</color> adjacent tiles, DMG dealt increases by <color=#F74848>4%</color>.",
-        "3": "When attacking, if there are allies within <color=#F74848>4</color> adjacent tiles, DMG dealt increases by <color=#F74848>6%</color>.",
-        "4": "When attacking, if there are allies within <color=#F74848>4</color> adjacent tiles, DMG dealt increases by <color=#F74848>8%</color>.",
-        "5": "When attacking, if there are allies within <color=#F74848>4</color> adjacent tiles, DMG dealt increases by <color=#F74848>10%</color>.",
-        "6": "When attacking, if there are allies within <color=#F74848>4</color> adjacent tiles, DMG dealt increases by <color=#F74848>12%</color>.",
-        "7": "When attacking, if there are allies within <color=#F74848>4</color> adjacent tiles, DMG dealt increases by <color=#F74848>14%</color>.",
-        "8": "When attacking, if there are allies within <color=#F74848>4</color> adjacent tiles, DMG dealt increases by <color=#F74848>18%</color>.\nAt the end of turn, if <color=#F74848>2</color> or more code or attack skills are used this turn, recovers <color=#F74848>1</color> AP."
+        "1": "When attacking, if there are other allies within <color=#F74848>4</color> tiles of the target, DMG <color=#F74848>+3%</color>.",
+        "2": "When attacking, if there are other allies within <color=#F74848>4</color> tiles of the target, DMG <color=#F74848>+4%</color>.",
+        "3": "When attacking, if there are other allies within <color=#F74848>4</color> tiles of the target, DMG <color=#F74848>+6%</color>.",
+        "4": "When attacking, if there are other allies within <color=#F74848>4</color> tiles of the target, DMG <color=#F74848>+8%</color>.",
+        "5": "When attacking, if there are other allies within <color=#F74848>4</color> tiles of the target, DMG <color=#F74848>+10%</color>.",
+        "6": "When attacking, if there are other allies within <color=#F74848>4</color> tiles of the target, DMG <color=#F74848>+12%</color>.",
+        "7": "When attacking, if there are other allies within <color=#F74848>4</color> tiles of the target, DMG <color=#F74848>+14%</color>.",
+        "8": "When attacking, if there are other allies within <color=#F74848>4</color> tiles of the target, DMG <color=#F74848>+18%</color>.\nAt end of action, if <color=#F74848>2</color> attacks or Code skills were used this turn, regens <color=#F74848>1</color> AP."
       }
     },
     "9010": {
@@ -1705,6 +1705,23 @@
         "6": "Increases DMG dealt to targets within 2 adjacent tiles by <color=#F74848>16%</color>. Reduces DMG taken from attacker beyond 2 adjacent tiles by <color=#F74848>16%</color>.",
         "7": "Increases DMG dealt to targets within 2 adjacent tiles by <color=#F74848>18%</color>. Reduces DMG taken from attacker beyond 2 adjacent tiles by <color=#F74848>18%</color>.",
         "8": "Increases DMG dealt to targets within 2 adjacent tiles by <color=#F74848>24%</color>. Reduces DMG taken from attacker beyond 2 adjacent tiles by <color=#F74848>24%</color>.\n<buf ID=9990001>[Favorable Event]</buf> trigger rate increases by <color=#F74848>+10%</color>. DMG calculation will use the highest number of pilot's attributes"
+      }
+    },
+    "3046": {
+      "name": "Counterblade Mod",
+      "icon": "Icon_entry_10096",
+      "category": "GeneralSuit",
+      "maxLevel": 8,
+      "currentLevel": 8,
+      "levels": {
+        "1": "When attacked, if the attacker's Hit Rate is less than or equal to <color=#F74848>50%</color>, Retaliation DMG Dealt <color=#F74848>+4%</color>.",
+        "2": "When attacked, if the attacker's Hit Rate is less than or equal to <color=#F74848>50%</color>, Retaliation DMG Dealt <color=#F74848>+6%</color>.",
+        "3": "When attacked, if the attacker's Hit Rate is less than or equal to <color=#F74848>50%</color>, Retaliation DMG Dealt <color=#F74848>+8%</color>.",
+        "4": "When attacked, if the attacker's Hit Rate is less than or equal to <color=#F74848>60%</color>, Retaliation DMG Dealt <color=#F74848>+10%</color>.",
+        "5": "When attacked, if the attacker's Hit Rate is less than or equal to <color=#F74848>60%</color>, Retaliation DMG Dealt <color=#F74848>+14%</color>.",
+        "6": "When attacked, if the attacker's Hit Rate is less than or equal to <color=#F74848>70%</color>, Retaliation DMG Dealt <color=#F74848>+16%</color>.",
+        "7": "When attacked, if the attacker's Hit Rate is less than or equal to <color=#F74848>70%</color>, Retaliation DMG Dealt <color=#F74848>+18%</color>.",
+        "8": "When attacked, if the attacker's Hit Rate is less than or equal to <color=#F74848>70%</color>, Retaliation DMG Dealt <color=#F74848>+24%</color>.\nAfter each Retaliation, increases own skill multiplier by <color=#F74848>+0.05</color>, up to <color=#F74848>+0.15</color>. Resets at end of action."
       }
     },
     "9020": {

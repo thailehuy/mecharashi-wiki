@@ -16,7 +16,7 @@
     "600001": {
       "name": "Entrenched 1",
       "describe": "",
-      "SpecificEffects": "Trigger <buf ID=900022>[Guard]</buf> to protect adjacent (<color=#F74848>1</color> tile) allies from Assault and Ranged attacks, effective up to <color=#F74848>2</color> times per turn."
+      "SpecificEffects": "Triggers <buf ID=900022>[Guard]</buf> to protect allies within <color=#F74848>1</color> adjacent tile from Assault and Ranged attacks. Can trigger up to <color=#F74848>2</color> times per turn."
     },
     "600402": {
       "name": "Broken Arm",
@@ -55,7 +55,7 @@
     },
     "600509": {
       "name": "Guard",
-      "describe": "Protects allies within <color=#F74848>2</color> adjacent tiles from Assault and Ranged attacks. Triggers up to <color=#F74848>2</color> times per turn and lasts <color=#F74848>2</color> turns. Additionally, gains <buf ID=7100702>[Defensive Stance I]</buf>. Can only trigger <color=#F74848>1</color> time per turn.",
+      "describe": "Protects allies within <color=#F74848>2</color> adjacent tiles from Assault and Ranged attacks. Triggers up to <color=#F74848>2</color> times per turn and lasts <color=#F74848>2</color> turns. Additionally, gains <buf ID=7100701>[Defensive Stance I]</buf>. Can only trigger <color=#F74848>1</color> time per turn.",
       "SpecificEffects": ""
     }
   },
@@ -66,7 +66,7 @@
     },
     "600012": {
       "name": "Armor Specialization 1",
-      "SpecificEffects": "DMG <color=#F74848>+20%</color> on Retaliation."
+      "SpecificEffects": "DMG <color=#F74848>+20%</color> on retaliation."
     },
     "600013": {
       "name": "AP Optimization 1",
@@ -74,11 +74,11 @@
     },
     "600021": {
       "name": "Entrenched 3",
-      "SpecificEffects": "<buf ID=900022>[Guard]</buf>'s effective times per turn <color=#F74848>+1</color>."
+      "SpecificEffects": "<buf ID=900022>[Guard]</buf> triggers per turn <color=#F74848>+1</color>."
     },
     "600022": {
       "name": "Armor Specialization 2",
-      "SpecificEffects": "When performing <buf ID=900022>[Guard]</buf>, restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>1</color> time per turn."
+      "SpecificEffects": "When performing <buf ID=900022>[Guard]</buf>, restores <color=#F74848>1</color> AP after combat. Can only trigger <color=#F74848>1</color> time per turn."
     },
     "600023": {
       "name": "AP Optimization 2",
@@ -94,7 +94,7 @@
     },
     "600033": {
       "name": "Adaptive Warfare 1",
-      "SpecificEffects": "At the end of the action, if an Active Attack was not initiated this turn, an extra <color=#F74848>2</color> tiles can be moved."
+      "SpecificEffects": "At end of action, if no active attacks were used this turn, can move an extra <color=#F74848>2</color> tiles."
     },
     "600034": {
       "name": "Indestructible 2",
@@ -114,7 +114,7 @@
     },
     "600043": {
       "name": "Entrenched 4",
-      "SpecificEffects": "<buf ID=900022>[Guard]</buf> can now be triggered an unlimited number of times per turn."
+      "SpecificEffects": "<buf ID=900022>[Guard]</buf> can now trigger an unlimited number of times per turn."
     },
     "600441": {
       "name": "Northern Spirit 1",

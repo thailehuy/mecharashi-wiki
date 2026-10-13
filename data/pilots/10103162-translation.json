@@ -16,41 +16,41 @@
     "400001": {
       "name": "Strategic Strike 1",
       "describe": "",
-      "SpecificEffects": "When a Tactical Weapon runs out of ammo, trigger <buf ID=900029>[Auto Load]</buf>. This process takes <color=#F74848>3</color> turns."
+      "SpecificEffects": "When a tactical weapon runs out of Ammo, triggers <buf ID=900029>[Auto Load]</buf>. This process takes <color=#F74848>3</color> turns."
     },
     "401102": {
       "name": "Link",
       "describe": "",
-      "SpecificEffects": "Allies carrying <buf ID=4011502>[Appointment]</buf> have DMG dealt increases by <color=#F74848>5%</color> and DMG taken reduces by <color=#F74848>5%</color>."
+      "SpecificEffects": "Allies with <buf ID=4011502>[Appointed]</buf> gain DMG <color=#F74848>+5%</color> and DMG Taken <color=#F74848>-5%</color>."
     },
     "401103": {
       "name": "Bide Time",
-      "describe": "Fully reload cutter ammo and grants self and allies carrying <buf ID=4011502>[Appointment]</buf> <buf ID=7100104>[Hit rate UP II]</buf>, lasting for <color=#F74848>2</color> turns. Can continue to act with remaining movement.",
+      "describe": "Fully reloads all Cutter Ammo. Self and allies with <buf ID=4011502>[Appointed]</buf> gain <buf ID=7100104>[Hit Rate UP II]</buf> for <color=#F74848>2</color> turns. Can continue action with remaining Movement.",
       "SpecificEffects": ""
     },
     "401104": {
       "name": "Formation Protocol",
-      "describe": "Consumes <color=#F74848>1</color> cutter ammo, selects <color=#F74848>1</color> ally within range and applies <buf ID=4011043>[Subtask - Defense]</buf> or <buf ID=4011041>[Subtask - Attack]</buf> to that target.",
+      "describe": "Selects <color=#F74848>1</color> other ally within range, consuming <color=#F74848>1</color> Cutter Ammo to apply <buf ID=4011043>[BIT - Bulwark Mode]</buf> or <buf ID=4011041>[BIT - Assault Mode]</buf> to them.",
       "SpecificEffects": ""
     },
     "401105": {
       "name": "Hidden Arrow",
       "describe": "",
-      "SpecificEffects": "When an ally carrying <buf ID=4011502>[Appointment]</buf> is attacked, uses <color=#F74848>2</color> cutters to launch <buf ID=900061>[Link Retaliation]</buf>, dealing <color=#F74848>2×0.5</color> DMG. This effect can trigger <color=#F74848>2</color> times per turn."
+      "SpecificEffects": "When an ally possessing <buf ID=4011502>[Appointed]</buf> is attacked and drawn into combat, can use <color=#F74848>2</color> Cutters to launch a <buf ID=900061>[Link Retaliation]</buf>, dealing <color=#F74848>0.5x</color> DMG <color=#F74848>2</color> times. Can trigger up to <color=#F74848>2</color> times per turn."
     },
     "401106": {
       "name": "Delayed Engagement",
-      "describe": "Uses cutter to attack an enemy, dealing <color=#F74848>4×0.6</color> DMG and applies <buf ID=4011061>[Clean Up]</buf> to the target.",
+      "describe": "Uses a Cutter to attack a target, dealing <color=#F74848>0.6x</color> DMG <color=#F74848>4</color> times, and inflicts <buf ID=4011061>[Delayed Spray]</buf> on the target.",
       "SpecificEffects": ""
     },
     "401107": {
       "name": "Decoy Shell",
       "describe": "",
-      "SpecificEffects": "When any part suffers overdamage, if there are allies carrying <buf ID=4011502>[Appointment]</buf>, triggers <buf ID=900003>[Guts]</buf>, locking HP at <color=#F74848>1</color>. Upon triggering, consumes <color=#F74848>1</color> <buf ID=4011502>[Appointment]</buf> from an ally."
+      "SpecificEffects": "When any part suffers overdamage and there is another ally on the battlefield with <buf ID=4011502>[Appointed]</buf>, triggers <buf ID=900003>[Guts]</buf>, locking at <color=#F74848>1</color> HP. After triggering this effect, immediately removes <color=#F74848>1</color> <buf ID=4011502>[Appointed]</buf> effect."
     },
     "401108": {
       "name": "Eventide Cage",
-      "describe": "Consumes <color=#F74848>2</color> cutter ammo, attacks all enemies within a <range type=2>3-tile radius</range> area, dealing <color=#F74848>1.6x</color> AoE DMG, and applies <terrian ID=4011081 /> to the targeted tiles, lasting for <color=#F74848>1</color> turn",
+      "describe": "Consumes <color=#F74848>2</color> rounds of Cutter Ammo. Uses a Cutter to attack all targets within the selected <range type=2>3-tile area</range>, dealing <color=#F74848>1.6x</color> AoE DMG, and applies <terrian ID=4011081 /> to the tile hit, lasting for <color=#F74848>1</color> turn.",
       "SpecificEffects": ""
     }
   },
@@ -69,7 +69,7 @@
     },
     "400021": {
       "name": "Strategic Strike 3",
-      "SpecificEffects": "Tactical Weapons Reload CD <color=#F74848>-1</color>."
+      "SpecificEffects": "Tactical Weapon Reload Cooldown <color=#F74848>-1</color>."
     },
     "400022": {
       "name": "Power Innovation 2",
@@ -81,7 +81,7 @@
     },
     "400031": {
       "name": "Indiscriminate 1",
-      "SpecificEffects": "After the first attack with a Tactical Weapon each turn, <buf ID=900004>[Re-ATK]</buf> can be triggered, with Final DMG <color=#F74848>-30%</color>, effective up to <color=#F74848>1</color> time per turn. Unable to move before attacking."
+      "SpecificEffects": "After the first attack with a Tactical Weapon each turn, <buf ID=900004>[Re-ATK]</buf> can trigger, with Final DMG <color=#F74848>-30%</color>. Can only trigger <color=#F74848>1</color> time per turn. Unable to move before attacking."
     },
     "400032": {
       "name": "AP Optimization 3",
@@ -89,7 +89,7 @@
     },
     "400033": {
       "name": "Strategic Strike 4",
-      "SpecificEffects": "When <buf ID=900029>[Auto Load]</buf> is complete, restore <color=#F74848>1</color> AP."
+      "SpecificEffects": "When <buf ID=900029>[Auto Load]</buf> is complete, restores <color=#F74848>1</color> AP."
     },
     "400034": {
       "name": "Indiscriminate 2",
@@ -97,15 +97,15 @@
     },
     "400035": {
       "name": "Indiscriminate 3",
-      "SpecificEffects": "When <buf ID=900004>[Re-ATK]</buf> is triggered, allow continued moving with the remaining movement."
+      "SpecificEffects": "When triggering [Indiscriminate 1]'s <buf ID=900004>[Re-ATK]</buf> effect, this unit can move using any remaining Movement."
     },
     "400036": {
       "name": "Indiscriminate 4",
-      "SpecificEffects": "After triggering <buf ID=900004>[Re-ATK]</buf>, it no longer reduces final damage."
+      "SpecificEffects": "When triggering [Indiscriminate 1]'s <buf ID=900004>[Re-ATK]</buf> effect, Final Damage is not reduced."
     },
     "401141": {
       "name": "Victory from Afar 1",
-      "SpecificEffects": "After triggering <buf ID=900004>[Re-ATK]</buf>, AP cost of attack skills or <skill mainSkill=401104>[Formation Protocol]</skill> reduces by <color=#F74848>-1</color>, to a minimum of <color=#F74848>1</color> AP."
+      "SpecificEffects": "For the first <buf ID=900004>[Re-ATK]</buf> each action, the AP cost of attack skills or <skill mainSkill=401104>[Formation Protocol]</skill> is reduced by <color=#F74848>1</color>, down to a minimum cost of <color=#F74848>1</color> AP."
     },
     "600042": {
       "name": "AP Optimization 4",
@@ -113,19 +113,19 @@
     },
     "400043": {
       "name": "Power Innovation 3",
-      "SpecificEffects": "When destroying a target, additionally restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>2</color> times per turn."
+      "SpecificEffects": "When destroying a target, additionally restores <color=#F74848>1</color> AP after combat. Can trigger up to <color=#F74848>2</color> times per turn."
     },
     "401144": {
       "name": "Victory from Afar 2",
-      "SpecificEffects": "When any ally carrying <buf ID=4011502>[Appointment]</buf> breaks a part, [Colin] recovers <color=#F74848>1</color> cutter ammo. This effect can trigger <color=#F74848>2</color> times per turn."
+      "SpecificEffects": "When a teammate possessing <buf ID=4011502>[Appointed]</buf> destroys a target part, [Colin] recovers <color=#F74848>1</color> Cutter Ammo. Can trigger up to <color=#F74848>2</color> times per turn."
     },
     "401145": {
       "name": "Victory from Afar 3",
-      "SpecificEffects": "When any ally carrying <buf ID=4011502>[Appointment]</buf> destroys a target, [Colin] recovers <color=#F74848>1</color> AP. This effect can trigger <color=#F74848>2</color> times per turn."
+      "SpecificEffects": "When a teammate with <buf ID=4011502>[Appointed]</buf> destroys an enemy unit, [Colin] recovers <color=#F74848>1</color> AP. Can trigger up to <color=#F74848>2</color> times per turn."
     },
     "401146": {
       "name": "Victory from Afar 4",
-      "SpecificEffects": "For each <color=#F74848>1</color> ally carrying <buf ID=4011502>[Appointment]</buf>, cutter hit count increases by <color=#F74848>+1</color>, up to a maximum of <color=#F74848>+3</color>."
+      "SpecificEffects": "For each <color=#F74848>1</color> ally on the battlefield possessing <buf ID=4011502>[Appointed]</buf>, Cutter Hits <color=#F74848>+1</color>, up to a maximum of <color=#F74848>+3</color>."
     }
   },
   "version": "2.5",
@@ -136,7 +136,7 @@
       "type": "SpecialAssault",
       "Ap": "3",
       "CD": "0",
-      "describe": "Uses cutter to attack all targets within a <color=#F74848>2</color>-tile radius area, dealing <color=#F74848>1.2x</color> AoE DMG."
+      "describe": "Uses a Cutter to attack all targets within the selected <color=#F74848>2</color>-tile range, dealing <color=#F74848>1.2x</color> AoE DMG."
     }
   ],
   "Introduction": "An enforcer of the Dawnstar League's High Council, a seasoned operative with deep experience in special ops and intelligence, slick and hard to read."

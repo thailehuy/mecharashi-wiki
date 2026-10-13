@@ -16,17 +16,17 @@
     "600001": {
       "name": "Entrenched 1",
       "describe": "",
-      "SpecificEffects": "Trigger <buf ID=900022>[Guard]</buf> to protect adjacent (<color=#F74848>1</color> tile) allies from Assault and Ranged attacks, effective up to <color=#F74848>2</color> times per turn."
+      "SpecificEffects": "Triggers <buf ID=900022>[Guard]</buf> to protect allies within <color=#F74848>1</color> adjacent tile from Assault and Ranged attacks. Can trigger up to <color=#F74848>2</color> times per turn."
     },
     "601002": {
       "name": "Code Lock",
       "describe": "",
-      "SpecificEffects": "At the end of turn, reload <color=#F74848>1</color> ammo to Rail Gun magazine"
+      "SpecificEffects": "At end of action, loads <color=#F74848>1</color> Rail Gun Ammo."
     },
     "601003": {
       "name": "Magnetic Barrier",
       "describe": "",
-      "SpecificEffects": "Reduces DMG taken by <color=#F74848>12.5%</color>. If the attacker carries <buf ID=6010502>[Magnetic Lock]</buf>, additionally reduces DMG taken by <color=#F74848>12.5%</color>."
+      "SpecificEffects": "DMG Taken <color=#F74848>-12.5%</color>. If the enemy unit has <buf ID=6010502>[Magnetic Lock]</buf>, DMG Taken is reduced by an additional <color=#F74848>12.5%</color>."
     },
     "601004": {
       "name": "Unilateral Agreement",
@@ -36,7 +36,7 @@
     "601005": {
       "name": "Electro-Surge",
       "describe": "",
-      "SpecificEffects": "When initiating combat against a target carrying <buf ID=6010502>[Magnetic Lock]</buf> using a Shield, applies <buf ID=3006442>[Short Circuit II]</buf> and <buf ID=7101507>[Movement Inhibition II]</buf> to the target before attacking, lasting for <color=#F74848>2</color> turns."
+      "SpecificEffects": "When using a shield to attack a target possessing <buf ID=6010502>[Magnetic Lock]</buf>, applies <buf ID=3006442>[Short Circuit II]</buf> and <buf ID=7101507>[Movement Inhibition II]</buf> to the target before combat, lasting for <color=#F74848>2</color> turns."
     },
     "600106": {
       "name": "Hunting Prelude",
@@ -46,11 +46,11 @@
     "601007": {
       "name": "Shared Hatred",
       "describe": "",
-      "SpecificEffects": "When an ally with <color=#F74848>30%</color> or lower HP is attacked, <buf ID=900022>[Guard]</buf> can be triggered regardless of distance. Can trigger <color=#F74848>2</color> times per turn."
+      "SpecificEffects": "If an ally with HP below <color=#F74848>30%</color> is attacked during combat, a <buf ID=900022>[Guard]</buf> effect can be activated regardless of skill range. Can only trigger <color=#F74848>2</color> times per turn."
     },
     "601008": {
       "name": "Luno Oath",
-      "describe": "Protects allies within <color=#F74848>2</color> adjacent tiles from assault and ranged attacks. Can trigger <color=#F74848>2</color> times per turn, lasting for <color=#F74848>2</color> turns. After using this skill, fully reloads Rail Gun ammo magazine and triggers <buf ID=900004>[Re-ATK]</buf>.",
+      "describe": "Protects allies within <color=#F74848>2</color> adjacent tiles from Assault and Ranged attacks. Can trigger up to <color=#F74848>2</color> times per turn. Lasts for <color=#F74848>2</color> turns. After activation, fully restores Rail Gun Ammo and can <buf ID=900004>[Re-ATK]</buf> in place.",
       "SpecificEffects": ""
     }
   },
@@ -61,7 +61,7 @@
     },
     "600012": {
       "name": "Armor Specialization 1",
-      "SpecificEffects": "DMG <color=#F74848>+20%</color> on Retaliation."
+      "SpecificEffects": "DMG <color=#F74848>+20%</color> on retaliation."
     },
     "600013": {
       "name": "AP Optimization 1",
@@ -69,11 +69,11 @@
     },
     "600021": {
       "name": "Entrenched 3",
-      "SpecificEffects": "<buf ID=900022>[Guard]</buf>'s effective times per turn <color=#F74848>+1</color>."
+      "SpecificEffects": "<buf ID=900022>[Guard]</buf> triggers per turn <color=#F74848>+1</color>."
     },
     "600022": {
       "name": "Armor Specialization 2",
-      "SpecificEffects": "When performing <buf ID=900022>[Guard]</buf>, restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>1</color> time per turn."
+      "SpecificEffects": "When performing <buf ID=900022>[Guard]</buf>, restores <color=#F74848>1</color> AP after combat. Can only trigger <color=#F74848>1</color> time per turn."
     },
     "600023": {
       "name": "AP Optimization 2",
@@ -81,7 +81,7 @@
     },
     "600931": {
       "name": "Phase Shift 1",
-      "SpecificEffects": "At the start of action, <buf ID=900089>[Balance]</buf> the HP% of all intact parts."
+      "SpecificEffects": "At start of action, balances the percentage of HP of all undestroyed parts with <buf ID=900089>[Balance]</buf>."
     },
     "600032": {
       "name": "AP Optimization 3",
@@ -89,11 +89,11 @@
     },
     "600033": {
       "name": "Adaptive Warfare 1",
-      "SpecificEffects": "At the end of the action, if an Active Attack was not initiated this turn, an extra <color=#F74848>2</color> tiles can be moved."
+      "SpecificEffects": "At end of action, if no active attacks were used this turn, can move an extra <color=#F74848>2</color> tiles."
     },
     "600934": {
       "name": "Phase Shift 2",
-      "SpecificEffects": "After <buf ID=900089>[Balance]</buf>, all intact parts additionally recover <color=#F74848>10%</color> HP."
+      "SpecificEffects": "After <buf ID=900089>[Balance]</buf>, all undestroyed parts additionally recover <color=#F74848>10%</color> HP."
     },
     "600935": {
       "name": "Phase Shift 3",
@@ -101,11 +101,11 @@
     },
     "600936": {
       "name": "Phase Shift 4",
-      "SpecificEffects": "After taking damage, if HP is below <color=#F74848>50%</color>, trigger <buf ID=900089>[Balance]</buf> and repair <color=#F74848>1</color> destroyed part. Can trigger again after <color=#F74848>3</color> turns."
+      "SpecificEffects": "After taking damage, if HP is below <color=#F74848>50%</color>, triggers <buf ID=900089>[Balance]</buf> and repairs <color=#F74848>1</color> destroyed part. Can trigger again after <color=#F74848>3</color> turns."
     },
     "601041": {
       "name": "Zero-Sum Game 1",
-      "SpecificEffects": "At the start of turn, if there are enemies carrying <buf ID=6010502>[Magnetic Lock]</buf>, immediately release <skill mainSkill=601051>[Vengeance Strike β]</skill>"
+      "SpecificEffects": "At start of action, if there is an enemy unit on the battlefield with <buf ID=6010502>[Magnetic Lock]</buf>, immediately unleashes <skill mainSkill=601051>[Vengeance Strike β]</skill>."
     },
     "600042": {
       "name": "AP Optimization 4",
@@ -113,19 +113,19 @@
     },
     "600043": {
       "name": "Entrenched 4",
-      "SpecificEffects": "<buf ID=900022>[Guard]</buf> can now be triggered an unlimited number of times per turn."
+      "SpecificEffects": "<buf ID=900022>[Guard]</buf> can now trigger an unlimited number of times per turn."
     },
     "601044": {
       "name": "Zero-Sum Game 2",
-      "SpecificEffects": "Rail Gun magazine capacity <color=#F74848>+2</color>"
+      "SpecificEffects": "Rail Gun Ammo Capacity <color=#F74848>+2</color>."
     },
     "601045": {
       "name": "Zero-Sum Game 3",
-      "SpecificEffects": "Rail Gun DMG dealt increases by <color=#F74848>20%</color>"
+      "SpecificEffects": "Rail Gun DMG <color=#F74848>+20%</color>."
     },
     "601046": {
       "name": "Zero-Sum Game 4",
-      "SpecificEffects": "<skill mainSkill=601050>[Vengeance Strike]</skill> and <skill mainSkill=601051>[Vengeance Strike β]</skill> base attack count increases by <color=#F74848>+1</color>."
+      "SpecificEffects": "<skill mainSkill=601050>[Vengeance Strike]</skill> and <skill mainSkill=601051>[Vengeance Strike β]</skill> base attack count <color=#F74848>+1</color>."
     }
   },
   "version": "2.4",
@@ -136,11 +136,11 @@
       "type": "SpecialAssault",
       "Ap": "4",
       "CD": "2",
-      "describe": "Throws a powerful magnetic projectile with a Large Shield or Small Shield at any tile within <range type=1>4-tile diamond area</range>, dealing <color=#F74848>0.1x</color> AoE DMG to the body of all enemies within <color=#F74848>3</color> tiles of the target, then forcibly moves them <color=#F74848>2</color> tiles toward the center. Applies <buf ID=6010502>[Magnetic Lock]</buf> to all targets hit, and triggers <buf ID=900004>[Re-ATK]</buf> in place. This attack is guaranteed to hit."
+      "describe": "Uses a Large Shield or Small Shield to throw a magnetic grenade at any tile within a <range type=1>4-tile diamond area</range>, dealing <color=#F74848>0.1x</color> AoE DMG to the Body of all enemy units within <color=#F74848>3</color> tiles of the location, and forcibly displacing them <color=#F74848>2</color> tiles toward the center. This attack is guaranteed to hit. After attacking, applies <buf ID=6010502>[Magnetic Lock]</buf> to all targets, and can then trigger <buf ID=900004>[Re-ATK]</buf>. Cannot move before attacking."
     },
     {
       "name": "Guard",
-      "describe": "Protects allies within <color=#F74848>2</color> adjacent tiles from Assault and Ranged attacks. Triggers up to <color=#F74848>2</color> times per turn and lasts <color=#F74848>2</color> turns. Additionally, gains <buf ID=7100702>[Defensive Stance I]</buf>. Can only trigger <color=#F74848>1</color> time per turn.",
+      "describe": "Protects allies within <color=#F74848>2</color> adjacent tiles from Assault and Ranged attacks. Triggers up to <color=#F74848>2</color> times per turn and lasts <color=#F74848>2</color> turns. Additionally, gains <buf ID=7100701>[Defensive Stance I]</buf>. Can only trigger <color=#F74848>1</color> time per turn.",
       "SpecificEffects": "",
       "type": "Order",
       "Ap": "1",

@@ -16,7 +16,7 @@
     "400001": {
       "name": "Strategic Strike 1",
       "describe": "",
-      "SpecificEffects": "When a Tactical Weapon runs out of ammo, trigger <buf ID=900029>[Auto Load]</buf>. This process takes <color=#F74848>3</color> turns."
+      "SpecificEffects": "When a tactical weapon runs out of Ammo, triggers <buf ID=900029>[Auto Load]</buf>. This process takes <color=#F74848>3</color> turns."
     },
     "400909": {
       "name": "Ballistic Bundle",
@@ -74,7 +74,7 @@
     },
     "400021": {
       "name": "Strategic Strike 3",
-      "SpecificEffects": "Tactical Weapons Reload CD <color=#F74848>-1</color>."
+      "SpecificEffects": "Tactical Weapon Reload Cooldown <color=#F74848>-1</color>."
     },
     "400022": {
       "name": "Power Innovation 2",

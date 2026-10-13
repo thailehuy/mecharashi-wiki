@@ -328,7 +328,7 @@ ENTRIES = {
             },
             "53111": {
                 "name": "Perfected Edge",
-                "SpecificEffects": "Enhanced [Strategize]: For every <color=#F74848>1</color> ally on the field carrying <buf ID=4011502>[Appointment]</buf>, own Cutter skill multiplier <color=#F74848>+0.07</color>. When an ally carrying <buf ID=4011502>[Appointment]</buf> initiates combat, inflicts <buf ID=4011041>[Subtask - Attack]</buf> on them beforehand. Can trigger <color=#F74848>1</color> time per turn. If not triggered by the end of own action, grants <buf ID=4011043>[Subtask - Defense]</buf> to the lowest-HP ally carrying <buf ID=4011502>[Appointment]</buf>.",
+                "SpecificEffects": "Enhanced [Strategize]: For every <color=#F74848>1</color> ally on the field carrying <buf ID=4011502>[Appointed]</buf>, own Cutter skill multiplier <color=#F74848>+0.07</color>. When an ally carrying <buf ID=4011502>[Appointed]</buf> initiates combat, inflicts <buf ID=4011041>[BIT - Assault Mode]</buf> on them beforehand. Can trigger <color=#F74848>1</color> time per turn. If not triggered by the end of own action, grants <buf ID=4011043>[BIT - Bulwark Mode]</buf> to the lowest-HP ally carrying <buf ID=4011502>[Appointed]</buf>.",
             },
             "53109": {
                 "name": "Piercing Distance",

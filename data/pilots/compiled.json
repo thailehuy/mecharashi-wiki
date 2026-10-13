@@ -5746,7 +5746,7 @@
                 "PassiveSkill": {
                   "ID": "400021",
                   "name": "Strategic Strike 3",
-                  "SpecificEffects": "Tactical Weapons Reload CD <color=#F74848>-1</color>.",
+                  "SpecificEffects": "Tactical Weapon Reload Cooldown <color=#F74848>-1</color>.",
                   "BufCarried": "4000211",
                   "SkillIcon": "Icon_skill_passive_5012",
                   "icon": "Icon_skill_passive_5012",
@@ -5815,7 +5815,7 @@
                 "PassiveSkill": {
                   "ID": "400031",
                   "name": "Indiscriminate 1",
-                  "SpecificEffects": "After the first attack with a Tactical Weapon each turn, <buf ID=900004>[Re-ATK]</buf> can be triggered, with Final DMG <color=#F74848>-30%</color>, effective up to <color=#F74848>1</color> time per turn. Unable to move before attacking.",
+                  "SpecificEffects": "After the first attack with a Tactical Weapon each turn, <buf ID=900004>[Re-ATK]</buf> can trigger, with Final DMG <color=#F74848>-30%</color>. Can only trigger <color=#F74848>1</color> time per turn. Unable to move before attacking.",
                   "BufCarried": "4000311/4000312",
                   "SkillIcon": "Icon_skill_passive_5013",
                   "icon": "Icon_skill_passive_5013",
@@ -5852,7 +5852,7 @@
                 "PassiveSkill": {
                   "ID": "400033",
                   "name": "Strategic Strike 4",
-                  "SpecificEffects": "When <buf ID=900029>[Auto Load]</buf> is complete, restore <color=#F74848>1</color> AP.",
+                  "SpecificEffects": "When <buf ID=900029>[Auto Load]</buf> is complete, restores <color=#F74848>1</color> AP.",
                   "BufCarried": "4000331",
                   "SkillIcon": "Icon_skill_passive_5012",
                   "icon": "Icon_skill_passive_5012",
@@ -5890,7 +5890,7 @@
                 "PassiveSkill": {
                   "ID": "400035",
                   "name": "Indiscriminate 3",
-                  "SpecificEffects": "When <buf ID=900004>[Re-ATK]</buf> is triggered, allow continued moving with the remaining movement.",
+                  "SpecificEffects": "When triggering [Indiscriminate 1]'s <buf ID=900004>[Re-ATK]</buf> effect, this unit can move using any remaining Movement.",
                   "BufCarried": "4000351/4000312",
                   "SkillIcon": "Icon_skill_passive_5013",
                   "icon": "Icon_skill_passive_5013",
@@ -5909,7 +5909,7 @@
                 "PassiveSkill": {
                   "ID": "400036",
                   "name": "Indiscriminate 4",
-                  "SpecificEffects": "After triggering <buf ID=900004>[Re-ATK]</buf>, it no longer reduces final damage.",
+                  "SpecificEffects": "When triggering [Indiscriminate 1]'s <buf ID=900004>[Re-ATK]</buf> effect, Final Damage is not reduced.",
                   "BufCarried": "4000361",
                   "SkillIcon": "Icon_skill_passive_5013",
                   "icon": "Icon_skill_passive_5013",
@@ -6075,7 +6075,7 @@
           "skill": {
             "ID": "400001",
             "name": "Strategic Strike 1",
-            "SpecificEffects": "When a Tactical Weapon runs out of ammo, trigger <buf ID=900029>[Auto Load]</buf>. This process takes <color=#F74848>3</color> turns.",
+            "SpecificEffects": "When a tactical weapon runs out of Ammo, triggers <buf ID=900029>[Auto Load]</buf>. This process takes <color=#F74848>3</color> turns.",
             "BufCarried": "4000011",
             "SkillIcon": "Icon_skill_passive_5012",
             "icon": "Icon_skill_passive_5012",
@@ -7909,7 +7909,7 @@
                 "PassiveSkill": {
                   "ID": "300011",
                   "name": "Sniper Warfare 2",
-                  "SpecificEffects": "After breaking a part, trigger <buf ID=900004>[Re-ATK]</buf>.",
+                  "SpecificEffects": "[Sniper Warfare 1] can trigger after destroying a part.",
                   "BufCarried": "3000111",
                   "SkillIcon": "Icon_skill_passive_5008",
                   "icon": "Icon_skill_passive_5008",
@@ -7978,7 +7978,7 @@
                 "PassiveSkill": {
                   "ID": "300021",
                   "name": "Sniper Warfare 3",
-                  "SpecificEffects": "Upon triggering <buf ID=900004>[Re-ATK]</buf>, allows movement of <color=#F74848>2</color> tiles before attacking.",
+                  "SpecificEffects": "Upon triggering [Sniper Warfare 1]'s <buf ID=900004>[Re-ATK]</buf>, can move <color=#F74848>2</color> tiles before attacking.",
                   "BufCarried": "3000211/3000212",
                   "SkillIcon": "Icon_skill_passive_5008",
                   "icon": "Icon_skill_passive_5008",
@@ -7997,7 +7997,7 @@
                 "PassiveSkill": {
                   "ID": "300022",
                   "name": "Power Innovation 2",
-                  "SpecificEffects": "When breaking a part, restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>1</color> time per turn.",
+                  "SpecificEffects": "When destroying a part, restores <color=#F74848>1</color> AP after combat. Can only trigger <color=#F74848>1</color> time per turn.",
                   "BufCarried": "3000221",
                   "SkillIcon": "Icon_skill_passive_5006",
                   "icon": "Icon_skill_passive_5006",
@@ -8048,7 +8048,7 @@
                 "PassiveSkill": {
                   "ID": "301231",
                   "name": "Hunter's Mark 1",
-                  "SpecificEffects": "When actively attacking and breaking parts with a ranged weapon, gains <buf ID=900141>[Hunting]</buf> according to the part hit. Can trigger <color=#F74848>2</color> times per turn.",
+                  "SpecificEffects": "When actively attacking with a Ranged Weapon and destroying a part, gains different <buf ID=900141>[Hunter's Boon]</buf> effects based on the part type. Can only trigger <color=#F74848>2</color> times per turn.",
                   "BufCarried": "3012311",
                   "SkillIcon": "Icon_skill_passive_5022",
                   "icon": "Icon_skill_passive_5022",
@@ -8085,7 +8085,7 @@
                 "PassiveSkill": {
                   "ID": "300033",
                   "name": "Sniper Warfare 4",
-                  "SpecificEffects": "<buf ID=900004>[Re-ATK]</buf>'s effective times per turn <color=#F74848>+1</color>.",
+                  "SpecificEffects": "<buf ID=900004>[Re-ATK]</buf> trigger chances per turn <color=#F74848>+1</color>.",
                   "BufCarried": "3000331/3000332/3000333/3000334",
                   "SkillIcon": "Icon_skill_passive_5008",
                   "icon": "Icon_skill_passive_5008",
@@ -8104,7 +8104,7 @@
                 "PassiveSkill": {
                   "ID": "301234",
                   "name": "Hunter's Mark 2",
-                  "SpecificEffects": "After actively attacking and destroying a target with a ranged weapon, can additionally move <color=#F74848>3</color> tiles.",
+                  "SpecificEffects": "When actively attacking with a Ranged Weapon, if the target is destroyed, can move an extra <color=#F74848>3</color> tiles.",
                   "BufCarried": "3012341",
                   "SkillIcon": "Icon_skill_passive_5022",
                   "icon": "Icon_skill_passive_5022",
@@ -8123,7 +8123,7 @@
                 "PassiveSkill": {
                   "ID": "301235",
                   "name": "Hunter's Mark 3",
-                  "SpecificEffects": "<buf ID=900142>[Hunter's Mark 1]</buf> no longer has trigger limit",
+                  "SpecificEffects": "[Hunter's Mark 1] can now trigger an unlimited number of times per turn.",
                   "BufCarried": "3012351",
                   "SkillIcon": "Icon_skill_passive_5022",
                   "icon": "Icon_skill_passive_5022",
@@ -8142,7 +8142,7 @@
                 "PassiveSkill": {
                   "ID": "301236",
                   "name": "Hunter's Mark 4",
-                  "SpecificEffects": "At the start of action, randomly gains <color=#F74848>1</color> of unobtained <buf ID=900141>[Hunting]</buf> buffs.",
+                  "SpecificEffects": "At start of action, randomly gains <color=#F74848>1</color> unacquired <buf ID=900141>[Hunter's Boon]</buf> effect.",
                   "BufCarried": "3012361",
                   "SkillIcon": "Icon_skill_passive_5022",
                   "icon": "Icon_skill_passive_5022",
@@ -8212,7 +8212,7 @@
                 "PassiveSkill": {
                   "ID": "300043",
                   "name": "Power Innovation 3",
-                  "SpecificEffects": "When destroying a target, additionally restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>2</color> times per turn.",
+                  "SpecificEffects": "When destroying a target, additionally restores <color=#F74848>1</color> AP after combat. Can trigger up to <color=#F74848>2</color> times per turn.",
                   "BufCarried": "3000431",
                   "SkillIcon": "Icon_skill_passive_5006",
                   "icon": "Icon_skill_passive_5006",
@@ -8308,7 +8308,7 @@
           "skill": {
             "ID": "300001",
             "name": "Sniper Warfare 1",
-            "SpecificEffects": "When destroying a target, <buf ID=900004>[Re-ATK]</buf> can be triggered, effective up to <color=#F74848>2</color> times per turn. Unable to move before attacking.",
+            "SpecificEffects": "After destroying the target, triggers <buf ID=900004>[Re-ATK]</buf>. Can trigger up to <color=#F74848>2</color> times per turn. Unable to move before attacking.",
             "BufCarried": "3000011",
             "SkillIcon": "Icon_skill_passive_5008",
             "icon": "Icon_skill_passive_5008",
@@ -9009,7 +9009,7 @@
                 "PassiveSkill": {
                   "ID": "300011",
                   "name": "Sniper Warfare 2",
-                  "SpecificEffects": "After breaking a part, trigger <buf ID=900004>[Re-ATK]</buf>.",
+                  "SpecificEffects": "[Sniper Warfare 1] can trigger after destroying a part.",
                   "BufCarried": "3000111",
                   "SkillIcon": "Icon_skill_passive_5008",
                   "icon": "Icon_skill_passive_5008",
@@ -9078,7 +9078,7 @@
                 "PassiveSkill": {
                   "ID": "300021",
                   "name": "Sniper Warfare 3",
-                  "SpecificEffects": "Upon triggering <buf ID=900004>[Re-ATK]</buf>, allows movement of <color=#F74848>2</color> tiles before attacking.",
+                  "SpecificEffects": "Upon triggering [Sniper Warfare 1]'s <buf ID=900004>[Re-ATK]</buf>, can move <color=#F74848>2</color> tiles before attacking.",
                   "BufCarried": "3000211/3000212",
                   "SkillIcon": "Icon_skill_passive_5008",
                   "icon": "Icon_skill_passive_5008",
@@ -9097,7 +9097,7 @@
                 "PassiveSkill": {
                   "ID": "300022",
                   "name": "Power Innovation 2",
-                  "SpecificEffects": "When breaking a part, restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>1</color> time per turn.",
+                  "SpecificEffects": "When destroying a part, restores <color=#F74848>1</color> AP after combat. Can only trigger <color=#F74848>1</color> time per turn.",
                   "BufCarried": "3000221",
                   "SkillIcon": "Icon_skill_passive_5006",
                   "icon": "Icon_skill_passive_5006",
@@ -9148,7 +9148,7 @@
                 "PassiveSkill": {
                   "ID": "301231",
                   "name": "Hunter's Mark 1",
-                  "SpecificEffects": "When actively attacking and breaking parts with a ranged weapon, gains <buf ID=900141>[Hunting]</buf> according to the part hit. Can trigger <color=#F74848>2</color> times per turn.",
+                  "SpecificEffects": "When actively attacking with a Ranged Weapon and destroying a part, gains different <buf ID=900141>[Hunter's Boon]</buf> effects based on the part type. Can only trigger <color=#F74848>2</color> times per turn.",
                   "BufCarried": "3012311",
                   "SkillIcon": "Icon_skill_passive_5022",
                   "icon": "Icon_skill_passive_5022",
@@ -9185,7 +9185,7 @@
                 "PassiveSkill": {
                   "ID": "300033",
                   "name": "Sniper Warfare 4",
-                  "SpecificEffects": "<buf ID=900004>[Re-ATK]</buf>'s effective times per turn <color=#F74848>+1</color>.",
+                  "SpecificEffects": "<buf ID=900004>[Re-ATK]</buf> trigger chances per turn <color=#F74848>+1</color>.",
                   "BufCarried": "3000331/3000332/3000333/3000334",
                   "SkillIcon": "Icon_skill_passive_5008",
                   "icon": "Icon_skill_passive_5008",
@@ -9204,7 +9204,7 @@
                 "PassiveSkill": {
                   "ID": "301234",
                   "name": "Hunter's Mark 2",
-                  "SpecificEffects": "After actively attacking and destroying a target with a ranged weapon, can additionally move <color=#F74848>3</color> tiles.",
+                  "SpecificEffects": "When actively attacking with a Ranged Weapon, if the target is destroyed, can move an extra <color=#F74848>3</color> tiles.",
                   "BufCarried": "3012341",
                   "SkillIcon": "Icon_skill_passive_5022",
                   "icon": "Icon_skill_passive_5022",
@@ -9223,7 +9223,7 @@
                 "PassiveSkill": {
                   "ID": "301235",
                   "name": "Hunter's Mark 3",
-                  "SpecificEffects": "<buf ID=900142>[Hunter's Mark 1]</buf> no longer has trigger limit",
+                  "SpecificEffects": "[Hunter's Mark 1] can now trigger an unlimited number of times per turn.",
                   "BufCarried": "3012351",
                   "SkillIcon": "Icon_skill_passive_5022",
                   "icon": "Icon_skill_passive_5022",
@@ -9242,7 +9242,7 @@
                 "PassiveSkill": {
                   "ID": "301236",
                   "name": "Hunter's Mark 4",
-                  "SpecificEffects": "At the start of action, randomly gains <color=#F74848>1</color> of unobtained <buf ID=900141>[Hunting]</buf> buffs.",
+                  "SpecificEffects": "At start of action, randomly gains <color=#F74848>1</color> unacquired <buf ID=900141>[Hunter's Boon]</buf> effect.",
                   "BufCarried": "3012361",
                   "SkillIcon": "Icon_skill_passive_5022",
                   "icon": "Icon_skill_passive_5022",
@@ -9312,7 +9312,7 @@
                 "PassiveSkill": {
                   "ID": "300043",
                   "name": "Power Innovation 3",
-                  "SpecificEffects": "When destroying a target, additionally restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>2</color> times per turn.",
+                  "SpecificEffects": "When destroying a target, additionally restores <color=#F74848>1</color> AP after combat. Can trigger up to <color=#F74848>2</color> times per turn.",
                   "BufCarried": "3000431",
                   "SkillIcon": "Icon_skill_passive_5006",
                   "icon": "Icon_skill_passive_5006",
@@ -9408,7 +9408,7 @@
           "skill": {
             "ID": "300001",
             "name": "Sniper Warfare 1",
-            "SpecificEffects": "When destroying a target, <buf ID=900004>[Re-ATK]</buf> can be triggered, effective up to <color=#F74848>2</color> times per turn. Unable to move before attacking.",
+            "SpecificEffects": "After destroying the target, triggers <buf ID=900004>[Re-ATK]</buf>. Can trigger up to <color=#F74848>2</color> times per turn. Unable to move before attacking.",
             "BufCarried": "3000011",
             "SkillIcon": "Icon_skill_passive_5008",
             "icon": "Icon_skill_passive_5008",
@@ -14755,7 +14755,7 @@
                 "PassiveSkill": {
                   "ID": "400021",
                   "name": "Strategic Strike 3",
-                  "SpecificEffects": "Tactical Weapons Reload CD <color=#F74848>-1</color>.",
+                  "SpecificEffects": "Tactical Weapon Reload Cooldown <color=#F74848>-1</color>.",
                   "BufCarried": "4000211",
                   "SkillIcon": "Icon_skill_passive_5012",
                   "icon": "Icon_skill_passive_5012",
@@ -14824,7 +14824,7 @@
                 "PassiveSkill": {
                   "ID": "400031",
                   "name": "Indiscriminate 1",
-                  "SpecificEffects": "After the first attack with a Tactical Weapon each turn, <buf ID=900004>[Re-ATK]</buf> can be triggered, with Final DMG <color=#F74848>-30%</color>, effective up to <color=#F74848>1</color> time per turn. Unable to move before attacking.",
+                  "SpecificEffects": "After the first attack with a Tactical Weapon each turn, <buf ID=900004>[Re-ATK]</buf> can trigger, with Final DMG <color=#F74848>-30%</color>. Can only trigger <color=#F74848>1</color> time per turn. Unable to move before attacking.",
                   "BufCarried": "4000311/4000312",
                   "SkillIcon": "Icon_skill_passive_5013",
                   "icon": "Icon_skill_passive_5013",
@@ -14861,7 +14861,7 @@
                 "PassiveSkill": {
                   "ID": "400033",
                   "name": "Strategic Strike 4",
-                  "SpecificEffects": "When <buf ID=900029>[Auto Load]</buf> is complete, restore <color=#F74848>1</color> AP.",
+                  "SpecificEffects": "When <buf ID=900029>[Auto Load]</buf> is complete, restores <color=#F74848>1</color> AP.",
                   "BufCarried": "4000331",
                   "SkillIcon": "Icon_skill_passive_5012",
                   "icon": "Icon_skill_passive_5012",
@@ -14899,7 +14899,7 @@
                 "PassiveSkill": {
                   "ID": "400035",
                   "name": "Indiscriminate 3",
-                  "SpecificEffects": "When <buf ID=900004>[Re-ATK]</buf> is triggered, allow continued moving with the remaining movement.",
+                  "SpecificEffects": "When triggering [Indiscriminate 1]'s <buf ID=900004>[Re-ATK]</buf> effect, this unit can move using any remaining Movement.",
                   "BufCarried": "4000351/4000312",
                   "SkillIcon": "Icon_skill_passive_5013",
                   "icon": "Icon_skill_passive_5013",
@@ -14918,7 +14918,7 @@
                 "PassiveSkill": {
                   "ID": "400036",
                   "name": "Indiscriminate 4",
-                  "SpecificEffects": "After triggering <buf ID=900004>[Re-ATK]</buf>, it no longer reduces final damage.",
+                  "SpecificEffects": "When triggering [Indiscriminate 1]'s <buf ID=900004>[Re-ATK]</buf> effect, Final Damage is not reduced.",
                   "BufCarried": "4000361",
                   "SkillIcon": "Icon_skill_passive_5013",
                   "icon": "Icon_skill_passive_5013",
@@ -14951,7 +14951,7 @@
                 "PassiveSkill": {
                   "ID": "401141",
                   "name": "Victory from Afar 1",
-                  "SpecificEffects": "After triggering <buf ID=900004>[Re-ATK]</buf>, AP cost of attack skills or <skill mainSkill=401104>[Formation Protocol]</skill> reduces by <color=#F74848>-1</color>, to a minimum of <color=#F74848>1</color> AP.",
+                  "SpecificEffects": "For the first <buf ID=900004>[Re-ATK]</buf> each action, the AP cost of attack skills or <skill mainSkill=401104>[Formation Protocol]</skill> is reduced by <color=#F74848>1</color>, down to a minimum cost of <color=#F74848>1</color> AP.",
                   "BufCarried": "4011411",
                   "SkillIcon": "Icon_skill_passive_5269",
                   "icon": "Icon_skill_passive_5269",
@@ -14988,7 +14988,7 @@
                 "PassiveSkill": {
                   "ID": "400043",
                   "name": "Power Innovation 3",
-                  "SpecificEffects": "When destroying a target, additionally restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>2</color> times per turn.",
+                  "SpecificEffects": "When destroying a target, additionally restores <color=#F74848>1</color> AP after combat. Can trigger up to <color=#F74848>2</color> times per turn.",
                   "BufCarried": "4000431",
                   "SkillIcon": "Icon_skill_passive_5006",
                   "icon": "Icon_skill_passive_5006",
@@ -15007,7 +15007,7 @@
                 "PassiveSkill": {
                   "ID": "401144",
                   "name": "Victory from Afar 2",
-                  "SpecificEffects": "When any ally carrying <buf ID=4011502>[Appointment]</buf> breaks a part, [Colin] recovers <color=#F74848>1</color> cutter ammo. This effect can trigger <color=#F74848>2</color> times per turn.",
+                  "SpecificEffects": "When a teammate possessing <buf ID=4011502>[Appointed]</buf> destroys a target part, [Colin] recovers <color=#F74848>1</color> Cutter Ammo. Can trigger up to <color=#F74848>2</color> times per turn.",
                   "BufCarried": "4011441/4011442",
                   "SkillIcon": "Icon_skill_passive_5269",
                   "icon": "Icon_skill_passive_5269",
@@ -15026,7 +15026,7 @@
                 "PassiveSkill": {
                   "ID": "401145",
                   "name": "Victory from Afar 3",
-                  "SpecificEffects": "When any ally carrying <buf ID=4011502>[Appointment]</buf> destroys a target, [Colin] recovers <color=#F74848>1</color> AP. This effect can trigger <color=#F74848>2</color> times per turn.",
+                  "SpecificEffects": "When a teammate with <buf ID=4011502>[Appointed]</buf> destroys an enemy unit, [Colin] recovers <color=#F74848>1</color> AP. Can trigger up to <color=#F74848>2</color> times per turn.",
                   "BufCarried": "4011451/4011452",
                   "SkillIcon": "Icon_skill_passive_5269",
                   "icon": "Icon_skill_passive_5269",
@@ -15045,7 +15045,7 @@
                 "PassiveSkill": {
                   "ID": "401146",
                   "name": "Victory from Afar 4",
-                  "SpecificEffects": "For each <color=#F74848>1</color> ally carrying <buf ID=4011502>[Appointment]</buf>, cutter hit count increases by <color=#F74848>+1</color>, up to a maximum of <color=#F74848>+3</color>.",
+                  "SpecificEffects": "For each <color=#F74848>1</color> ally on the battlefield possessing <buf ID=4011502>[Appointed]</buf>, Cutter Hits <color=#F74848>+1</color>, up to a maximum of <color=#F74848>+3</color>.",
                   "BufCarried": "4011461",
                   "SkillIcon": "Icon_skill_passive_5269",
                   "icon": "Icon_skill_passive_5269",
@@ -15084,7 +15084,7 @@
           "skill": {
             "ID": "400001",
             "name": "Strategic Strike 1",
-            "SpecificEffects": "When a Tactical Weapon runs out of ammo, trigger <buf ID=900029>[Auto Load]</buf>. This process takes <color=#F74848>3</color> turns.",
+            "SpecificEffects": "When a tactical weapon runs out of Ammo, triggers <buf ID=900029>[Auto Load]</buf>. This process takes <color=#F74848>3</color> turns.",
             "BufCarried": "4000011",
             "SkillIcon": "Icon_skill_passive_5012",
             "icon": "Icon_skill_passive_5012",
@@ -15275,7 +15275,7 @@
           "skill": {
             "ID": "401102",
             "name": "Link",
-            "SpecificEffects": "Allies carrying <buf ID=4011502>[Appointment]</buf> have DMG dealt increases by <color=#F74848>5%</color> and DMG taken reduces by <color=#F74848>5%</color>.",
+            "SpecificEffects": "Allies with <buf ID=4011502>[Appointed]</buf> gain DMG <color=#F74848>+5%</color> and DMG Taken <color=#F74848>-5%</color>.",
             "BufCarried": "4011021",
             "SkillIcon": "Icon_skill_passive_4136",
             "icon": "Icon_skill_passive_4136",
@@ -15301,7 +15301,7 @@
             "ID": "401103",
             "remarks": "\u79d1\u6797-\u4eff\u751f\u7535\u8111",
             "name": "Bide Time",
-            "describe": "Fully reload cutter ammo and grants self and allies carrying <buf ID=4011502>[Appointment]</buf> <buf ID=7100104>[Hit rate UP II]</buf>, lasting for <color=#F74848>2</color> turns. Can continue to act with remaining movement.",
+            "describe": "Fully reloads all Cutter Ammo. Self and allies with <buf ID=4011502>[Appointed]</buf> gain <buf ID=7100104>[Hit Rate UP II]</buf> for <color=#F74848>2</color> turns. Can continue action with remaining Movement.",
             "type": "Order",
             "CD": "3",
             "Ap": "0",
@@ -15329,7 +15329,7 @@
             "ID": "401104",
             "remarks": "\u79d1\u6797-\u4eff\u751f\u7535\u8111",
             "name": "Formation Protocol",
-            "describe": "Consumes <color=#F74848>1</color> cutter ammo, selects <color=#F74848>1</color> ally within range and applies <buf ID=4011043>[Subtask - Defense]</buf> or <buf ID=4011041>[Subtask - Attack]</buf> to that target.",
+            "describe": "Selects <color=#F74848>1</color> other ally within range, consuming <color=#F74848>1</color> Cutter Ammo to apply <buf ID=4011043>[BIT - Bulwark Mode]</buf> or <buf ID=4011041>[BIT - Assault Mode]</buf> to them.",
             "type": "Order",
             "CD": "1",
             "Ap": "3",
@@ -15357,7 +15357,7 @@
           "skill": {
             "ID": "401105",
             "name": "Hidden Arrow",
-            "SpecificEffects": "When an ally carrying <buf ID=4011502>[Appointment]</buf> is attacked, uses <color=#F74848>2</color> cutters to launch <buf ID=900061>[Link Retaliation]</buf>, dealing <color=#F74848>2\u00d70.5</color> DMG. This effect can trigger <color=#F74848>2</color> times per turn.",
+            "SpecificEffects": "When an ally possessing <buf ID=4011502>[Appointed]</buf> is attacked and drawn into combat, can use <color=#F74848>2</color> Cutters to launch a <buf ID=900061>[Link Retaliation]</buf>, dealing <color=#F74848>0.5x</color> DMG <color=#F74848>2</color> times. Can trigger up to <color=#F74848>2</color> times per turn.",
             "BufCarried": "4011051/4011052/4011053",
             "SkillIcon": "Icon_skill_passive_5258",
             "icon": "Icon_skill_passive_5258",
@@ -15383,7 +15383,7 @@
             "ID": "401106",
             "remarks": "\u79d1\u6797-\u4eff\u751f\u7535\u8111",
             "name": "Delayed Engagement",
-            "describe": "Uses cutter to attack an enemy, dealing <color=#F74848>4\u00d70.6</color> DMG and applies <buf ID=4011061>[Clean Up]</buf> to the target.",
+            "describe": "Uses a Cutter to attack a target, dealing <color=#F74848>0.6x</color> DMG <color=#F74848>4</color> times, and inflicts <buf ID=4011061>[Delayed Spray]</buf> on the target.",
             "type": "SpecialAssault",
             "Ap": "4",
             "matchingWeaponType": "\u6d6e\u6e38\u70ae",
@@ -15410,7 +15410,7 @@
           "skill": {
             "ID": "401107",
             "name": "Decoy Shell",
-            "SpecificEffects": "When any part suffers overdamage, if there are allies carrying <buf ID=4011502>[Appointment]</buf>, triggers <buf ID=900003>[Guts]</buf>, locking HP at <color=#F74848>1</color>. Upon triggering, consumes <color=#F74848>1</color> <buf ID=4011502>[Appointment]</buf> from an ally.",
+            "SpecificEffects": "When any part suffers overdamage and there is another ally on the battlefield with <buf ID=4011502>[Appointed]</buf>, triggers <buf ID=900003>[Guts]</buf>, locking at <color=#F74848>1</color> HP. After triggering this effect, immediately removes <color=#F74848>1</color> <buf ID=4011502>[Appointed]</buf> effect.",
             "BufCarried": "4011071",
             "SkillIcon": "Icon_skill_passive_5171",
             "icon": "Icon_skill_passive_5171",
@@ -15436,7 +15436,7 @@
             "ID": "401108",
             "remarks": "\u79d1\u6797-\u4eff\u751f\u7535\u8111",
             "name": "Eventide Cage",
-            "describe": "Consumes <color=#F74848>2</color> cutter ammo, attacks all enemies within a <range type=2>3-tile radius</range> area, dealing <color=#F74848>1.6x</color> AoE DMG, and applies <terrian ID=4011081 /> to the targeted tiles, lasting for <color=#F74848>1</color> turn",
+            "describe": "Consumes <color=#F74848>2</color> rounds of Cutter Ammo. Uses a Cutter to attack all targets within the selected <range type=2>3-tile area</range>, dealing <color=#F74848>1.6x</color> AoE DMG, and applies <terrian ID=4011081 /> to the tile hit, lasting for <color=#F74848>1</color> turn.",
             "type": "SpecialAssault",
             "Ap": "6",
             "matchingWeaponType": "\u6d6e\u6e38\u70ae",
@@ -15725,7 +15725,7 @@
           "type": "SpecialAssault",
           "Ap": "3",
           "CD": "0",
-          "describe": "Uses cutter to attack all targets within a <color=#F74848>2</color>-tile radius area, dealing <color=#F74848>1.2x</color> AoE DMG."
+          "describe": "Uses a Cutter to attack all targets within the selected <color=#F74848>2</color>-tile range, dealing <color=#F74848>1.2x</color> AoE DMG."
         }
       ],
       "statRanks": {
@@ -16943,7 +16943,7 @@
                 "PassiveSkill": {
                   "ID": "300011",
                   "name": "Sniper Warfare 2",
-                  "SpecificEffects": "After breaking a part, trigger <buf ID=900004>[Re-ATK]</buf>.",
+                  "SpecificEffects": "[Sniper Warfare 1] can trigger after destroying a part.",
                   "BufCarried": "3000111",
                   "SkillIcon": "Icon_skill_passive_5008",
                   "icon": "Icon_skill_passive_5008",
@@ -17019,7 +17019,7 @@
                 "PassiveSkill": {
                   "ID": "300021",
                   "name": "Sniper Warfare 3",
-                  "SpecificEffects": "Upon triggering <buf ID=900004>[Re-ATK]</buf>, allows movement of <color=#F74848>2</color> tiles before attacking.",
+                  "SpecificEffects": "Upon triggering [Sniper Warfare 1]'s <buf ID=900004>[Re-ATK]</buf>, can move <color=#F74848>2</color> tiles before attacking.",
                   "BufCarried": "3000211/3000212",
                   "SkillIcon": "Icon_skill_passive_5008",
                   "icon": "Icon_skill_passive_5008",
@@ -17040,7 +17040,7 @@
                 "PassiveSkill": {
                   "ID": "300022",
                   "name": "Power Innovation 2",
-                  "SpecificEffects": "When breaking a part, restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>1</color> time per turn.",
+                  "SpecificEffects": "When destroying a part, restores <color=#F74848>1</color> AP after combat. Can only trigger <color=#F74848>1</color> time per turn.",
                   "BufCarried": "3000221",
                   "SkillIcon": "Icon_skill_passive_5006",
                   "icon": "Icon_skill_passive_5006",
@@ -17137,7 +17137,7 @@
                 "PassiveSkill": {
                   "ID": "300033",
                   "name": "Sniper Warfare 4",
-                  "SpecificEffects": "<buf ID=900004>[Re-ATK]</buf>'s effective times per turn <color=#F74848>+1</color>.",
+                  "SpecificEffects": "<buf ID=900004>[Re-ATK]</buf> trigger chances per turn <color=#F74848>+1</color>.",
                   "BufCarried": "3000331/3000332/3000333/3000334",
                   "SkillIcon": "Icon_skill_passive_5008",
                   "icon": "Icon_skill_passive_5008",
@@ -17277,7 +17277,7 @@
                 "PassiveSkill": {
                   "ID": "300043",
                   "name": "Power Innovation 3",
-                  "SpecificEffects": "When destroying a target, additionally restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>2</color> times per turn.",
+                  "SpecificEffects": "When destroying a target, additionally restores <color=#F74848>1</color> AP after combat. Can trigger up to <color=#F74848>2</color> times per turn.",
                   "BufCarried": "3000431",
                   "SkillIcon": "Icon_skill_passive_5006",
                   "icon": "Icon_skill_passive_5006",
@@ -17383,7 +17383,7 @@
           "skill": {
             "ID": "300001",
             "name": "Sniper Warfare 1",
-            "SpecificEffects": "When destroying a target, <buf ID=900004>[Re-ATK]</buf> can be triggered, effective up to <color=#F74848>2</color> times per turn. Unable to move before attacking.",
+            "SpecificEffects": "After destroying the target, triggers <buf ID=900004>[Re-ATK]</buf>. Can trigger up to <color=#F74848>2</color> times per turn. Unable to move before attacking.",
             "BufCarried": "3000011",
             "SkillIcon": "Icon_skill_passive_5008",
             "icon": "Icon_skill_passive_5008",
@@ -19263,7 +19263,7 @@
                 "PassiveSkill": {
                   "ID": "600012",
                   "name": "Armor Specialization 1",
-                  "SpecificEffects": "DMG <color=#F74848>+20%</color> on Retaliation.",
+                  "SpecificEffects": "DMG <color=#F74848>+20%</color> on retaliation.",
                   "BufCarried": "6000121",
                   "SkillIcon": "Icon_skill_passive_2002",
                   "icon": "Icon_skill_passive_2002",
@@ -19319,7 +19319,7 @@
                 "PassiveSkill": {
                   "ID": "600021",
                   "name": "Entrenched 3",
-                  "SpecificEffects": "<buf ID=900022>[Guard]</buf>'s effective times per turn <color=#F74848>+1</color>.",
+                  "SpecificEffects": "<buf ID=900022>[Guard]</buf> triggers per turn <color=#F74848>+1</color>.",
                   "BufCarried": "6000211/6000212",
                   "SkillIcon": "Icon_skill_passive_2001",
                   "icon": "Icon_skill_passive_2001",
@@ -19340,7 +19340,7 @@
                 "PassiveSkill": {
                   "ID": "600022",
                   "name": "Armor Specialization 2",
-                  "SpecificEffects": "When performing <buf ID=900022>[Guard]</buf>, restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>1</color> time per turn.",
+                  "SpecificEffects": "When performing <buf ID=900022>[Guard]</buf>, restores <color=#F74848>1</color> AP after combat. Can only trigger <color=#F74848>1</color> time per turn.",
                   "BufCarried": "6000221",
                   "SkillIcon": "Icon_skill_passive_2002",
                   "icon": "Icon_skill_passive_2002",
@@ -19437,7 +19437,7 @@
                 "PassiveSkill": {
                   "ID": "600033",
                   "name": "Adaptive Warfare 1",
-                  "SpecificEffects": "At the end of the action, if an Active Attack was not initiated this turn, an extra <color=#F74848>2</color> tiles can be moved.",
+                  "SpecificEffects": "At end of action, if no active attacks were used this turn, can move an extra <color=#F74848>2</color> tiles.",
                   "BufCarried": "6000331",
                   "SkillIcon": "Icon_skill_passive_5155",
                   "icon": "Icon_skill_passive_5155",
@@ -19576,7 +19576,7 @@
                 "PassiveSkill": {
                   "ID": "600043",
                   "name": "Entrenched 4",
-                  "SpecificEffects": "<buf ID=900022>[Guard]</buf> can now be triggered an unlimited number of times per turn.",
+                  "SpecificEffects": "<buf ID=900022>[Guard]</buf> can now trigger an unlimited number of times per turn.",
                   "BufCarried": "6000431/6000432",
                   "SkillIcon": "Icon_skill_passive_2002",
                   "icon": "Icon_skill_passive_2002",
@@ -19682,7 +19682,7 @@
           "skill": {
             "ID": "600001",
             "name": "Entrenched 1",
-            "SpecificEffects": "Trigger <buf ID=900022>[Guard]</buf> to protect adjacent (<color=#F74848>1</color> tile) allies from Assault and Ranged attacks, effective up to <color=#F74848>2</color> times per turn.",
+            "SpecificEffects": "Triggers <buf ID=900022>[Guard]</buf> to protect allies within <color=#F74848>1</color> adjacent tile from Assault and Ranged attacks. Can trigger up to <color=#F74848>2</color> times per turn.",
             "BufCarried": "6000011",
             "SkillIcon": "Icon_skill_passive_2001",
             "icon": "Icon_skill_passive_2001",
@@ -19940,7 +19940,7 @@
             "ID": "600504",
             "remarks": "\u8fea\u62c9\u5361-\u4eff\u751f\u7535\u8111",
             "name": "Fully Prepared",
-            "describe": "Protects allies within <color=#F74848>2</color> adjacent tiles from Assault and Ranged attacks. Can trigger up to <color=#F74848>2</color> times per turn. Gains <buf ID=7100701>[Fully Prepared]</buf>, lasting for <color=#F74848>2</color> turns.",
+            "describe": "Protects allies within <color=#F74848>2</color> adjacent tiles from Assault and Ranged attacks. Can trigger up to <color=#F74848>2</color> times per turn. Gains <buf ID=6005041>[Fully Prepared]</buf>, lasting for <color=#F74848>2</color> turns.",
             "type": "Order",
             "CD": "3",
             "Ap": "2",
@@ -20072,7 +20072,7 @@
           "skill": {
             "ID": "600509",
             "name": "Guard",
-            "describe": "Protects allies within <color=#F74848>2</color> adjacent tiles from Assault and Ranged attacks. Triggers up to <color=#F74848>2</color> times per turn and lasts <color=#F74848>2</color> turns. Additionally, gains <buf ID=7100702>[Defensive Stance I]</buf>. Can only trigger <color=#F74848>1</color> time per turn.",
+            "describe": "Protects allies within <color=#F74848>2</color> adjacent tiles from Assault and Ranged attacks. Triggers up to <color=#F74848>2</color> times per turn and lasts <color=#F74848>2</color> turns. Additionally, gains <buf ID=7100701>[Defensive Stance I]</buf>. Can only trigger <color=#F74848>1</color> time per turn.",
             "type": "Order",
             "Ap": "1",
             "CD": "2",
@@ -20498,7 +20498,7 @@
                 "PassiveSkill": {
                   "ID": "400021",
                   "name": "Strategic Strike 3",
-                  "SpecificEffects": "Tactical Weapons Reload CD <color=#F74848>-1</color>.",
+                  "SpecificEffects": "Tactical Weapon Reload Cooldown <color=#F74848>-1</color>.",
                   "BufCarried": "4000211",
                   "SkillIcon": "Icon_skill_passive_5012",
                   "icon": "Icon_skill_passive_5012",
@@ -20567,7 +20567,7 @@
                 "PassiveSkill": {
                   "ID": "400031",
                   "name": "Indiscriminate 1",
-                  "SpecificEffects": "After the first attack with a Tactical Weapon each turn, <buf ID=900004>[Re-ATK]</buf> can be triggered, with Final DMG <color=#F74848>-30%</color>, effective up to <color=#F74848>1</color> time per turn. Unable to move before attacking.",
+                  "SpecificEffects": "After the first attack with a Tactical Weapon each turn, <buf ID=900004>[Re-ATK]</buf> can trigger, with Final DMG <color=#F74848>-30%</color>. Can only trigger <color=#F74848>1</color> time per turn. Unable to move before attacking.",
                   "BufCarried": "4000311/4000312",
                   "SkillIcon": "Icon_skill_passive_5013",
                   "icon": "Icon_skill_passive_5013",
@@ -20604,7 +20604,7 @@
                 "PassiveSkill": {
                   "ID": "400033",
                   "name": "Strategic Strike 4",
-                  "SpecificEffects": "When <buf ID=900029>[Auto Load]</buf> is complete, restore <color=#F74848>1</color> AP.",
+                  "SpecificEffects": "When <buf ID=900029>[Auto Load]</buf> is complete, restores <color=#F74848>1</color> AP.",
                   "BufCarried": "4000331",
                   "SkillIcon": "Icon_skill_passive_5012",
                   "icon": "Icon_skill_passive_5012",
@@ -20642,7 +20642,7 @@
                 "PassiveSkill": {
                   "ID": "400035",
                   "name": "Indiscriminate 3",
-                  "SpecificEffects": "When <buf ID=900004>[Re-ATK]</buf> is triggered, allow continued moving with the remaining movement.",
+                  "SpecificEffects": "When triggering [Indiscriminate 1]'s <buf ID=900004>[Re-ATK]</buf> effect, this unit can move using any remaining Movement.",
                   "BufCarried": "4000351/4000312",
                   "SkillIcon": "Icon_skill_passive_5013",
                   "icon": "Icon_skill_passive_5013",
@@ -20661,7 +20661,7 @@
                 "PassiveSkill": {
                   "ID": "400036",
                   "name": "Indiscriminate 4",
-                  "SpecificEffects": "After triggering <buf ID=900004>[Re-ATK]</buf>, it no longer reduces final damage.",
+                  "SpecificEffects": "When triggering [Indiscriminate 1]'s <buf ID=900004>[Re-ATK]</buf> effect, Final Damage is not reduced.",
                   "BufCarried": "4000361",
                   "SkillIcon": "Icon_skill_passive_5013",
                   "icon": "Icon_skill_passive_5013",
@@ -20731,7 +20731,7 @@
                 "PassiveSkill": {
                   "ID": "400043",
                   "name": "Power Innovation 3",
-                  "SpecificEffects": "When destroying a target, additionally restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>2</color> times per turn.",
+                  "SpecificEffects": "When destroying a target, additionally restores <color=#F74848>1</color> AP after combat. Can trigger up to <color=#F74848>2</color> times per turn.",
                   "BufCarried": "4000431",
                   "SkillIcon": "Icon_skill_passive_5006",
                   "icon": "Icon_skill_passive_5006",
@@ -20827,7 +20827,7 @@
           "skill": {
             "ID": "400001",
             "name": "Strategic Strike 1",
-            "SpecificEffects": "When a Tactical Weapon runs out of ammo, trigger <buf ID=900029>[Auto Load]</buf>. This process takes <color=#F74848>3</color> turns.",
+            "SpecificEffects": "When a tactical weapon runs out of Ammo, triggers <buf ID=900029>[Auto Load]</buf>. This process takes <color=#F74848>3</color> turns.",
             "BufCarried": "4000011",
             "SkillIcon": "Icon_skill_passive_5012",
             "icon": "Icon_skill_passive_5012",
@@ -22709,7 +22709,7 @@
                 "PassiveSkill": {
                   "ID": "400021",
                   "name": "Strategic Strike 3",
-                  "SpecificEffects": "Tactical Weapons Reload CD <color=#F74848>-1</color>.",
+                  "SpecificEffects": "Tactical Weapon Reload Cooldown <color=#F74848>-1</color>.",
                   "BufCarried": "4000211",
                   "SkillIcon": "Icon_skill_passive_5012",
                   "icon": "Icon_skill_passive_5012",
@@ -22778,7 +22778,7 @@
                 "PassiveSkill": {
                   "ID": "400031",
                   "name": "Indiscriminate 1",
-                  "SpecificEffects": "After the first attack with a Tactical Weapon each turn, <buf ID=900004>[Re-ATK]</buf> can be triggered, with Final DMG <color=#F74848>-30%</color>. Unable to move before attacking. Effective up to <color=#F74848>1</color> time per turn.",
+                  "SpecificEffects": "After the first attack with a Tactical Weapon each turn, <buf ID=900004>[Re-ATK]</buf> can trigger, with Final DMG <color=#F74848>-30%</color>. Can only trigger <color=#F74848>1</color> time per turn. Unable to move before attacking.",
                   "BufCarried": "4000311/4000312",
                   "SkillIcon": "Icon_skill_passive_5013",
                   "icon": "Icon_skill_passive_5013",
@@ -22815,7 +22815,7 @@
                 "PassiveSkill": {
                   "ID": "400033",
                   "name": "Strategic Strike 4",
-                  "SpecificEffects": "When <buf ID=900029>[Auto Load]</buf> is complete, restore <color=#F74848>1</color> AP.",
+                  "SpecificEffects": "When <buf ID=900029>[Auto Load]</buf> is complete, restores <color=#F74848>1</color> AP.",
                   "BufCarried": "4000331",
                   "SkillIcon": "Icon_skill_passive_5012",
                   "icon": "Icon_skill_passive_5012",
@@ -22853,7 +22853,7 @@
                 "PassiveSkill": {
                   "ID": "400035",
                   "name": "Indiscriminate 3",
-                  "SpecificEffects": "When <buf ID=900004>[Re-ATK]</buf> is triggered, allow continued moving with the remaining movement.",
+                  "SpecificEffects": "When triggering [Indiscriminate 1]'s <buf ID=900004>[Re-ATK]</buf> effect, this unit can move using any remaining Movement.",
                   "BufCarried": "4000351/4000312",
                   "SkillIcon": "Icon_skill_passive_5013",
                   "icon": "Icon_skill_passive_5013",
@@ -22872,7 +22872,7 @@
                 "PassiveSkill": {
                   "ID": "400036",
                   "name": "Indiscriminate 4",
-                  "SpecificEffects": "After triggering <buf ID=900004>[Re-ATK]</buf>, it no longer reduces final damage.",
+                  "SpecificEffects": "When triggering [Indiscriminate 1]'s <buf ID=900004>[Re-ATK]</buf> effect, Final Damage is not reduced.",
                   "BufCarried": "4000361",
                   "SkillIcon": "Icon_skill_passive_5013",
                   "icon": "Icon_skill_passive_5013",
@@ -23038,7 +23038,7 @@
           "skill": {
             "ID": "400001",
             "name": "Strategic Strike 1",
-            "SpecificEffects": "When a Tactical Weapon runs out of ammo, trigger <buf ID=900029>[Auto Load]</buf>. This process takes <color=#F74848>3</color> turns.",
+            "SpecificEffects": "When a tactical weapon runs out of Ammo, triggers <buf ID=900029>[Auto Load]</buf>. This process takes <color=#F74848>3</color> turns.",
             "BufCarried": "4000011",
             "SkillIcon": "Icon_skill_passive_5012",
             "icon": "Icon_skill_passive_5012",
@@ -29871,7 +29871,7 @@
                 "PassiveSkill": {
                   "ID": "300043",
                   "name": "Power Innovation 3",
-                  "SpecificEffects": "When destroying a target, additionally restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>2</color> times per turn.",
+                  "SpecificEffects": "When destroying a target, additionally restores <color=#F74848>1</color> AP after combat. Can trigger up to <color=#F74848>2</color> times per turn.",
                   "BufCarried": "3000431",
                   "SkillIcon": "Icon_skill_passive_5006",
                   "icon": "Icon_skill_passive_5006",
@@ -31015,7 +31015,7 @@
                   "type": "EquipmentSkill",
                   "Ap": "3",
                   "CD": "0",
-                  "describe": "Uses Heavy Machine Gun to attack a target, dealing <color=#F74848>1.3x</color> DMG. Inflicts <buf ID=7101104>[Dodge Rate Down III]</buf> on the target hit, lasting for <color=#F74848>2</color> turns."
+                  "describe": "Uses Heavy Machine Gun to attack a target, dealing <color=#F74848>1.3x</color> DMG. Inflicts <buf ID=7101104>[Dodge Rate Down II]</buf> on the target hit, lasting for <color=#F74848>2</color> turns."
                 }
               ]
             },
@@ -31187,7 +31187,7 @@
                 "PassiveSkill": {
                   "ID": "400021",
                   "name": "Strategic Strike 3",
-                  "SpecificEffects": "Tactical Weapons Reload CD <color=#F74848>-1</color>.",
+                  "SpecificEffects": "Tactical Weapon Reload Cooldown <color=#F74848>-1</color>.",
                   "BufCarried": "4000211",
                   "SkillIcon": "Icon_skill_passive_5012",
                   "icon": "Icon_skill_passive_5012",
@@ -31256,7 +31256,7 @@
                 "PassiveSkill": {
                   "ID": "400031",
                   "name": "Indiscriminate 1",
-                  "SpecificEffects": "After the first attack with a Tactical Weapon each turn, <buf ID=900004>[Re-ATK]</buf> can be triggered, with Final DMG <color=#F74848>-30%</color>, effective up to <color=#F74848>1</color> time per turn. Unable to move before attacking.",
+                  "SpecificEffects": "After the first attack with a Tactical Weapon each turn, <buf ID=900004>[Re-ATK]</buf> can trigger, with Final DMG <color=#F74848>-30%</color>. Can only trigger <color=#F74848>1</color> time per turn. Unable to move before attacking.",
                   "BufCarried": "4000311/4000312",
                   "SkillIcon": "Icon_skill_passive_5013",
                   "icon": "Icon_skill_passive_5013",
@@ -31293,7 +31293,7 @@
                 "PassiveSkill": {
                   "ID": "400033",
                   "name": "Strategic Strike 4",
-                  "SpecificEffects": "When <buf ID=900029>[Auto Load]</buf> is complete, restore <color=#F74848>1</color> AP.",
+                  "SpecificEffects": "When <buf ID=900029>[Auto Load]</buf> is complete, restores <color=#F74848>1</color> AP.",
                   "BufCarried": "4000331",
                   "SkillIcon": "Icon_skill_passive_5012",
                   "icon": "Icon_skill_passive_5012",
@@ -31331,7 +31331,7 @@
                 "PassiveSkill": {
                   "ID": "400035",
                   "name": "Indiscriminate 3",
-                  "SpecificEffects": "When <buf ID=900004>[Re-ATK]</buf> is triggered, allow continued moving with the remaining movement.",
+                  "SpecificEffects": "When triggering [Indiscriminate 1]'s <buf ID=900004>[Re-ATK]</buf> effect, this unit can move using any remaining Movement.",
                   "BufCarried": "4000351/4000312",
                   "SkillIcon": "Icon_skill_passive_5013",
                   "icon": "Icon_skill_passive_5013",
@@ -31350,7 +31350,7 @@
                 "PassiveSkill": {
                   "ID": "400036",
                   "name": "Indiscriminate 4",
-                  "SpecificEffects": "After triggering <buf ID=900004>[Re-ATK]</buf>, it no longer reduces final damage.",
+                  "SpecificEffects": "When triggering [Indiscriminate 1]'s <buf ID=900004>[Re-ATK]</buf> effect, Final Damage is not reduced.",
                   "BufCarried": "4000361",
                   "SkillIcon": "Icon_skill_passive_5013",
                   "icon": "Icon_skill_passive_5013",
@@ -31420,7 +31420,7 @@
                 "PassiveSkill": {
                   "ID": "400043",
                   "name": "Power Innovation 3",
-                  "SpecificEffects": "When destroying a target, additionally restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>2</color> times per turn.",
+                  "SpecificEffects": "When destroying a target, additionally restores <color=#F74848>1</color> AP after combat. Can trigger up to <color=#F74848>2</color> times per turn.",
                   "BufCarried": "4000431",
                   "SkillIcon": "Icon_skill_passive_5006",
                   "icon": "Icon_skill_passive_5006",
@@ -31516,7 +31516,7 @@
           "skill": {
             "ID": "400001",
             "name": "Strategic Strike 1",
-            "SpecificEffects": "When a Tactical Weapon runs out of ammo, trigger <buf ID=900029>[Auto Load]</buf>. This process takes <color=#F74848>3</color> turns.",
+            "SpecificEffects": "When a tactical weapon runs out of Ammo, triggers <buf ID=900029>[Auto Load]</buf>. This process takes <color=#F74848>3</color> turns.",
             "BufCarried": "4000011",
             "SkillIcon": "Icon_skill_passive_5012",
             "icon": "Icon_skill_passive_5012",
@@ -35748,7 +35748,7 @@
                 "PassiveSkill": {
                   "ID": "300011",
                   "name": "Sniper Warfare 2",
-                  "SpecificEffects": "After breaking a part, trigger <buf ID=900004>[Re-ATK]</buf>.",
+                  "SpecificEffects": "[Sniper Warfare 1] can trigger after destroying a part.",
                   "BufCarried": "3000111",
                   "SkillIcon": "Icon_skill_passive_5008",
                   "icon": "Icon_skill_passive_5008",
@@ -35817,7 +35817,7 @@
                 "PassiveSkill": {
                   "ID": "300021",
                   "name": "Sniper Warfare 3",
-                  "SpecificEffects": "Upon triggering <buf ID=900004>[Re-ATK]</buf>, allows movement of <color=#F74848>2</color> tiles before attacking.",
+                  "SpecificEffects": "Upon triggering [Sniper Warfare 1]'s <buf ID=900004>[Re-ATK]</buf>, can move <color=#F74848>2</color> tiles before attacking.",
                   "BufCarried": "3000211/3000212",
                   "SkillIcon": "Icon_skill_passive_5008",
                   "icon": "Icon_skill_passive_5008",
@@ -35836,7 +35836,7 @@
                 "PassiveSkill": {
                   "ID": "300022",
                   "name": "Power Innovation 2",
-                  "SpecificEffects": "When breaking a part, restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>1</color> time per turn.",
+                  "SpecificEffects": "When destroying a part, restores <color=#F74848>1</color> AP after combat. Can only trigger <color=#F74848>1</color> time per turn.",
                   "BufCarried": "3000221",
                   "SkillIcon": "Icon_skill_passive_5006",
                   "icon": "Icon_skill_passive_5006",
@@ -35924,7 +35924,7 @@
                 "PassiveSkill": {
                   "ID": "300033",
                   "name": "Sniper Warfare 4",
-                  "SpecificEffects": "<buf ID=900004>[Re-ATK]</buf>'s effective times per turn <color=#F74848>+1</color>.",
+                  "SpecificEffects": "<buf ID=900004>[Re-ATK]</buf> trigger chances per turn <color=#F74848>+1</color>.",
                   "BufCarried": "3000331/3000332/3000333/3000334",
                   "SkillIcon": "Icon_skill_passive_5008",
                   "icon": "Icon_skill_passive_5008",
@@ -36051,7 +36051,7 @@
                 "PassiveSkill": {
                   "ID": "300043",
                   "name": "Power Innovation 3",
-                  "SpecificEffects": "When destroying a target, additionally restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>2</color> times per turn.",
+                  "SpecificEffects": "When destroying a target, additionally restores <color=#F74848>1</color> AP after combat. Can trigger up to <color=#F74848>2</color> times per turn.",
                   "BufCarried": "3000431",
                   "SkillIcon": "Icon_skill_passive_5006",
                   "icon": "Icon_skill_passive_5006",
@@ -36147,7 +36147,7 @@
           "skill": {
             "ID": "300001",
             "name": "Sniper Warfare 1",
-            "SpecificEffects": "When destroying a target, <buf ID=900004>[Re-ATK]</buf> can be triggered, effective up to <color=#F74848>2</color> times per turn. Unable to move before attacking.",
+            "SpecificEffects": "After destroying the target, triggers <buf ID=900004>[Re-ATK]</buf>. Can trigger up to <color=#F74848>2</color> times per turn. Unable to move before attacking.",
             "BufCarried": "3000011",
             "SkillIcon": "Icon_skill_passive_5008",
             "icon": "Icon_skill_passive_5008",
@@ -46023,7 +46023,7 @@
                 "PassiveSkill": {
                   "ID": "400021",
                   "name": "Strategic Strike 3",
-                  "SpecificEffects": "Tactical Weapons Reload CD <color=#F74848>-1</color>.",
+                  "SpecificEffects": "Tactical Weapon Reload Cooldown <color=#F74848>-1</color>.",
                   "BufCarried": "4000211",
                   "SkillIcon": "Icon_skill_passive_5012",
                   "icon": "Icon_skill_passive_5012",
@@ -46099,7 +46099,7 @@
                 "PassiveSkill": {
                   "ID": "400031",
                   "name": "Indiscriminate 1",
-                  "SpecificEffects": "After the first attack with a Tactical Weapon each turn, <buf ID=900004>[Re-ATK]</buf> can be triggered, with Final DMG <color=#F74848>-30%</color>, effective up to <color=#F74848>1</color> time per turn. Unable to move before attacking.",
+                  "SpecificEffects": "After the first attack with a Tactical Weapon each turn, <buf ID=900004>[Re-ATK]</buf> can trigger, with Final DMG <color=#F74848>-30%</color>. Can only trigger <color=#F74848>1</color> time per turn. Unable to move before attacking.",
                   "BufCarried": "4000311/4000312",
                   "SkillIcon": "Icon_skill_passive_5013",
                   "icon": "Icon_skill_passive_5013",
@@ -46140,7 +46140,7 @@
                 "PassiveSkill": {
                   "ID": "400033",
                   "name": "Strategic Strike 4",
-                  "SpecificEffects": "When <buf ID=900029>[Auto Load]</buf> is complete, restore <color=#F74848>1</color> AP.",
+                  "SpecificEffects": "When <buf ID=900029>[Auto Load]</buf> is complete, restores <color=#F74848>1</color> AP.",
                   "BufCarried": "4000331",
                   "SkillIcon": "Icon_skill_passive_5012",
                   "icon": "Icon_skill_passive_5012",
@@ -46182,7 +46182,7 @@
                 "PassiveSkill": {
                   "ID": "400035",
                   "name": "Indiscriminate 3",
-                  "SpecificEffects": "When <buf ID=900004>[Re-ATK]</buf> is triggered, allow continued moving with the remaining movement.",
+                  "SpecificEffects": "When triggering [Indiscriminate 1]'s <buf ID=900004>[Re-ATK]</buf> effect, this unit can move using any remaining Movement.",
                   "BufCarried": "4000351/4000312",
                   "SkillIcon": "Icon_skill_passive_5013",
                   "icon": "Icon_skill_passive_5013",
@@ -46203,7 +46203,7 @@
                 "PassiveSkill": {
                   "ID": "400036",
                   "name": "Indiscriminate 4",
-                  "SpecificEffects": "After triggering <buf ID=900004>[Re-ATK]</buf>, it no longer reduces final damage.",
+                  "SpecificEffects": "When triggering [Indiscriminate 1]'s <buf ID=900004>[Re-ATK]</buf> effect, Final Damage is not reduced.",
                   "BufCarried": "4000361",
                   "SkillIcon": "Icon_skill_passive_5013",
                   "icon": "Icon_skill_passive_5013",
@@ -46280,7 +46280,7 @@
                 "PassiveSkill": {
                   "ID": "400043",
                   "name": "Power Innovation 3",
-                  "SpecificEffects": "When destroying a target, additionally restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>2</color> times per turn.",
+                  "SpecificEffects": "When destroying a target, additionally restores <color=#F74848>1</color> AP after combat. Can trigger up to <color=#F74848>2</color> times per turn.",
                   "BufCarried": "4000431",
                   "SkillIcon": "Icon_skill_passive_5006",
                   "icon": "Icon_skill_passive_5006",
@@ -46385,7 +46385,7 @@
           "skill": {
             "ID": "400001",
             "name": "Strategic Strike 1",
-            "SpecificEffects": "When a Tactical Weapon runs out of ammo, trigger <buf ID=900029>[Auto Load]</buf>. This process takes <color=#F74848>3</color> turns.",
+            "SpecificEffects": "When a tactical weapon runs out of Ammo, triggers <buf ID=900029>[Auto Load]</buf>. This process takes <color=#F74848>3</color> turns.",
             "BufCarried": "4000011",
             "SkillIcon": "Icon_skill_passive_5012",
             "icon": "Icon_skill_passive_5012",
@@ -47142,7 +47142,7 @@
                 "PassiveSkill": {
                   "ID": "300011",
                   "name": "Sniper Warfare 2",
-                  "SpecificEffects": "After breaking a part, trigger <buf ID=900004>[Re-ATK]</buf>.",
+                  "SpecificEffects": "[Sniper Warfare 1] can trigger after destroying a part.",
                   "BufCarried": "3000111",
                   "SkillIcon": "Icon_skill_passive_5008",
                   "icon": "Icon_skill_passive_5008",
@@ -47218,7 +47218,7 @@
                 "PassiveSkill": {
                   "ID": "300021",
                   "name": "Sniper Warfare 3",
-                  "SpecificEffects": "Upon triggering <buf ID=900004>[Re-ATK]</buf>, allows movement of <color=#F74848>2</color> tiles before attacking.",
+                  "SpecificEffects": "Upon triggering [Sniper Warfare 1]'s <buf ID=900004>[Re-ATK]</buf>, can move <color=#F74848>2</color> tiles before attacking.",
                   "BufCarried": "3000211/3000212",
                   "SkillIcon": "Icon_skill_passive_5008",
                   "icon": "Icon_skill_passive_5008",
@@ -47239,7 +47239,7 @@
                 "PassiveSkill": {
                   "ID": "300022",
                   "name": "Power Innovation 2",
-                  "SpecificEffects": "When breaking a part, restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>1</color> time per turn.",
+                  "SpecificEffects": "When destroying a part, restores <color=#F74848>1</color> AP after combat. Can only trigger <color=#F74848>1</color> time per turn.",
                   "BufCarried": "3000221",
                   "SkillIcon": "Icon_skill_passive_5006",
                   "icon": "Icon_skill_passive_5006",
@@ -47336,7 +47336,7 @@
                 "PassiveSkill": {
                   "ID": "300033",
                   "name": "Sniper Warfare 4",
-                  "SpecificEffects": "<buf ID=900004>[Re-ATK]</buf>'s effective times per turn <color=#F74848>+1</color>.",
+                  "SpecificEffects": "<buf ID=900004>[Re-ATK]</buf> trigger chances per turn <color=#F74848>+1</color>.",
                   "BufCarried": "3000331/3000332/3000333/3000334",
                   "SkillIcon": "Icon_skill_passive_5008",
                   "icon": "Icon_skill_passive_5008",
@@ -47476,7 +47476,7 @@
                 "PassiveSkill": {
                   "ID": "300043",
                   "name": "Power Innovation 3",
-                  "SpecificEffects": "When destroying a target, additionally restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>2</color> times per turn.",
+                  "SpecificEffects": "When destroying a target, additionally restores <color=#F74848>1</color> AP after combat. Can trigger up to <color=#F74848>2</color> times per turn.",
                   "BufCarried": "3000431",
                   "SkillIcon": "Icon_skill_passive_5006",
                   "icon": "Icon_skill_passive_5006",
@@ -47582,7 +47582,7 @@
           "skill": {
             "ID": "300001",
             "name": "Sniper Warfare 1",
-            "SpecificEffects": "When destroying a target, <buf ID=900004>[Re-ATK]</buf> can be triggered, effective up to <color=#F74848>2</color> times per turn. Unable to move before attacking.",
+            "SpecificEffects": "After destroying the target, triggers <buf ID=900004>[Re-ATK]</buf>. Can trigger up to <color=#F74848>2</color> times per turn. Unable to move before attacking.",
             "BufCarried": "3000011",
             "SkillIcon": "Icon_skill_passive_5008",
             "icon": "Icon_skill_passive_5008",
@@ -50615,7 +50615,7 @@
                 "PassiveSkill": {
                   "ID": "300011",
                   "name": "Sniper Warfare 2",
-                  "SpecificEffects": "After breaking a part, trigger <buf ID=900004>[Re-ATK]</buf>.",
+                  "SpecificEffects": "[Sniper Warfare 1] can trigger after destroying a part.",
                   "BufCarried": "3000111",
                   "SkillIcon": "Icon_skill_passive_5008",
                   "icon": "Icon_skill_passive_5008",
@@ -50684,7 +50684,7 @@
                 "PassiveSkill": {
                   "ID": "300021",
                   "name": "Sniper Warfare 3",
-                  "SpecificEffects": "Upon triggering <buf ID=900004>[Re-ATK]</buf>, allows movement of <color=#F74848>2</color> tiles before attacking.",
+                  "SpecificEffects": "Upon triggering [Sniper Warfare 1]'s <buf ID=900004>[Re-ATK]</buf>, can move <color=#F74848>2</color> tiles before attacking.",
                   "BufCarried": "3000211/3000212",
                   "SkillIcon": "Icon_skill_passive_5008",
                   "icon": "Icon_skill_passive_5008",
@@ -50703,7 +50703,7 @@
                 "PassiveSkill": {
                   "ID": "300022",
                   "name": "Power Innovation 2",
-                  "SpecificEffects": "When breaking a part, restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>1</color> time per turn.",
+                  "SpecificEffects": "When destroying a part, restores <color=#F74848>1</color> AP after combat. Can only trigger <color=#F74848>1</color> time per turn.",
                   "BufCarried": "3000221",
                   "SkillIcon": "Icon_skill_passive_5006",
                   "icon": "Icon_skill_passive_5006",
@@ -50791,7 +50791,7 @@
                 "PassiveSkill": {
                   "ID": "300033",
                   "name": "Sniper Warfare 4",
-                  "SpecificEffects": "<buf ID=900004>[Re-ATK]</buf>'s effective times per turn <color=#F74848>+1</color>.",
+                  "SpecificEffects": "<buf ID=900004>[Re-ATK]</buf> trigger chances per turn <color=#F74848>+1</color>.",
                   "BufCarried": "3000331/3000332/3000333/3000334",
                   "SkillIcon": "Icon_skill_passive_5008",
                   "icon": "Icon_skill_passive_5008",
@@ -50918,7 +50918,7 @@
                 "PassiveSkill": {
                   "ID": "300043",
                   "name": "Power Innovation 3",
-                  "SpecificEffects": "When destroying a target, additionally restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>2</color> times per turn.",
+                  "SpecificEffects": "When destroying a target, additionally restores <color=#F74848>1</color> AP after combat. Can trigger up to <color=#F74848>2</color> times per turn.",
                   "BufCarried": "3000431",
                   "SkillIcon": "Icon_skill_passive_5006",
                   "icon": "Icon_skill_passive_5006",
@@ -51014,7 +51014,7 @@
           "skill": {
             "ID": "300001",
             "name": "Sniper Warfare 1",
-            "SpecificEffects": "When destroying a target, <buf ID=900004>[Re-ATK]</buf> can be triggered, effective up to <color=#F74848>2</color> times per turn. Unable to move before attacking.",
+            "SpecificEffects": "After destroying the target, triggers <buf ID=900004>[Re-ATK]</buf>. Can trigger up to <color=#F74848>2</color> times per turn. Unable to move before attacking.",
             "BufCarried": "3000011",
             "SkillIcon": "Icon_skill_passive_5008",
             "icon": "Icon_skill_passive_5008",
@@ -51750,7 +51750,7 @@
                 "PassiveSkill": {
                   "ID": "600012",
                   "name": "Armor Specialization 1",
-                  "SpecificEffects": "DMG <color=#F74848>+20%</color> on Retaliation.",
+                  "SpecificEffects": "DMG <color=#F74848>+20%</color> on retaliation.",
                   "BufCarried": "6000121",
                   "SkillIcon": "Icon_skill_passive_2002",
                   "icon": "Icon_skill_passive_2002",
@@ -51801,7 +51801,7 @@
                 "PassiveSkill": {
                   "ID": "600021",
                   "name": "Entrenched 3",
-                  "SpecificEffects": "<buf ID=900022>[Guard]</buf>'s effective times per turn <color=#F74848>+1</color>.",
+                  "SpecificEffects": "<buf ID=900022>[Guard]</buf> triggers per turn <color=#F74848>+1</color>.",
                   "BufCarried": "6000211/6000212",
                   "SkillIcon": "Icon_skill_passive_2001",
                   "icon": "Icon_skill_passive_2001",
@@ -51820,7 +51820,7 @@
                 "PassiveSkill": {
                   "ID": "600022",
                   "name": "Armor Specialization 2",
-                  "SpecificEffects": "When performing <buf ID=900022>[Guard]</buf>, restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>1</color> time per turn.",
+                  "SpecificEffects": "When performing <buf ID=900022>[Guard]</buf>, restores <color=#F74848>1</color> AP after combat. Can only trigger <color=#F74848>1</color> time per turn.",
                   "BufCarried": "6000221",
                   "SkillIcon": "Icon_skill_passive_2002",
                   "icon": "Icon_skill_passive_2002",
@@ -51871,7 +51871,7 @@
                 "PassiveSkill": {
                   "ID": "600931",
                   "name": "Phase Shift 1",
-                  "SpecificEffects": "At the start of action, <buf ID=900089>[Balance]</buf> the HP% of all intact parts.",
+                  "SpecificEffects": "At start of action, balances the percentage of HP of all undestroyed parts with <buf ID=900089>[Balance]</buf>.",
                   "BufCarried": "6009311",
                   "SkillIcon": "Icon_skill_passive_3126",
                   "icon": "Icon_skill_passive_3126",
@@ -51908,7 +51908,7 @@
                 "PassiveSkill": {
                   "ID": "600033",
                   "name": "Adaptive Warfare 1",
-                  "SpecificEffects": "At the end of the action, if an Active Attack was not initiated this turn, an extra <color=#F74848>2</color> tiles can be moved.",
+                  "SpecificEffects": "At end of action, if no active attacks were used this turn, can move an extra <color=#F74848>2</color> tiles.",
                   "BufCarried": "6000331",
                   "SkillIcon": "Icon_skill_passive_5155",
                   "icon": "Icon_skill_passive_5155",
@@ -51927,7 +51927,7 @@
                 "PassiveSkill": {
                   "ID": "600934",
                   "name": "Phase Shift 2",
-                  "SpecificEffects": "After <buf ID=900089>[Balance]</buf>, all intact parts additionally recover <color=#F74848>10%</color> HP.",
+                  "SpecificEffects": "After <buf ID=900089>[Balance]</buf>, all undestroyed parts additionally recover <color=#F74848>10%</color> HP.",
                   "BufCarried": "6009341",
                   "SkillIcon": "Icon_skill_passive_3126",
                   "icon": "Icon_skill_passive_3126",
@@ -51965,7 +51965,7 @@
                 "PassiveSkill": {
                   "ID": "600936",
                   "name": "Phase Shift 4",
-                  "SpecificEffects": "After taking damage, if HP is below <color=#F74848>50%</color>, trigger <buf ID=900089>[Balance]</buf> and repair <color=#F74848>1</color> destroyed part. Can trigger again after <color=#F74848>3</color> turns.",
+                  "SpecificEffects": "After taking damage, if HP is below <color=#F74848>50%</color>, triggers <buf ID=900089>[Balance]</buf> and repairs <color=#F74848>1</color> destroyed part. Can trigger again after <color=#F74848>3</color> turns.",
                   "BufCarried": "6009361",
                   "SkillIcon": "Icon_skill_passive_3126",
                   "icon": "Icon_skill_passive_3126",
@@ -52035,7 +52035,7 @@
                 "PassiveSkill": {
                   "ID": "600043",
                   "name": "Entrenched 4",
-                  "SpecificEffects": "<buf ID=900022>[Guard]</buf> can now be triggered an unlimited number of times per turn.",
+                  "SpecificEffects": "<buf ID=900022>[Guard]</buf> can now trigger an unlimited number of times per turn.",
                   "BufCarried": "6000431/6000432",
                   "SkillIcon": "Icon_skill_passive_2002",
                   "icon": "Icon_skill_passive_2002",
@@ -52131,7 +52131,7 @@
           "skill": {
             "ID": "600001",
             "name": "Entrenched 1",
-            "SpecificEffects": "Trigger <buf ID=900022>[Guard]</buf> to protect adjacent (<color=#F74848>1</color> tile) allies from Assault and Ranged attacks, effective up to <color=#F74848>2</color> times per turn.",
+            "SpecificEffects": "Triggers <buf ID=900022>[Guard]</buf> to protect allies within <color=#F74848>1</color> adjacent tile from Assault and Ranged attacks. Can trigger up to <color=#F74848>2</color> times per turn.",
             "BufCarried": "6000011",
             "SkillIcon": "Icon_skill_passive_2001",
             "icon": "Icon_skill_passive_2001",
@@ -54119,7 +54119,7 @@
                 "PassiveSkill": {
                   "ID": "400021",
                   "name": "Strategic Strike 3",
-                  "SpecificEffects": "Tactical Weapons Reload CD <color=#F74848>-1</color>.",
+                  "SpecificEffects": "Tactical Weapon Reload Cooldown <color=#F74848>-1</color>.",
                   "BufCarried": "4000211",
                   "SkillIcon": "Icon_skill_passive_5012",
                   "icon": "Icon_skill_passive_5012",
@@ -54448,7 +54448,7 @@
           "skill": {
             "ID": "400001",
             "name": "Strategic Strike 1",
-            "SpecificEffects": "When a Tactical Weapon runs out of ammo, trigger <buf ID=900029>[Auto Load]</buf>. This process takes <color=#F74848>3</color> turns.",
+            "SpecificEffects": "When a tactical weapon runs out of Ammo, triggers <buf ID=900029>[Auto Load]</buf>. This process takes <color=#F74848>3</color> turns.",
             "BufCarried": "4000011",
             "SkillIcon": "Icon_skill_passive_5012",
             "icon": "Icon_skill_passive_5012",
@@ -55241,7 +55241,7 @@
                 "PassiveSkill": {
                   "ID": "400021",
                   "name": "Strategic Strike 3",
-                  "SpecificEffects": "Tactical Weapons Reload CD <color=#F74848>-1</color>.",
+                  "SpecificEffects": "Tactical Weapon Reload Cooldown <color=#F74848>-1</color>.",
                   "BufCarried": "4000211",
                   "SkillIcon": "Icon_skill_passive_5012",
                   "icon": "Icon_skill_passive_5012",
@@ -55310,7 +55310,7 @@
                 "PassiveSkill": {
                   "ID": "400031",
                   "name": "Indiscriminate 1",
-                  "SpecificEffects": "After the first attack with a Tactical Weapon each turn, <buf ID=900004>[Re-ATK]</buf> can be triggered, with Final DMG <color=#F74848>-30%</color>, effective up to <color=#F74848>1</color> time per turn. Unable to move before attacking.",
+                  "SpecificEffects": "After the first attack with a Tactical Weapon each turn, <buf ID=900004>[Re-ATK]</buf> can trigger, with Final DMG <color=#F74848>-30%</color>. Can only trigger <color=#F74848>1</color> time per turn. Unable to move before attacking.",
                   "BufCarried": "4000311/4000312",
                   "SkillIcon": "Icon_skill_passive_5013",
                   "icon": "Icon_skill_passive_5013",
@@ -55347,7 +55347,7 @@
                 "PassiveSkill": {
                   "ID": "400033",
                   "name": "Strategic Strike 4",
-                  "SpecificEffects": "When <buf ID=900029>[Auto Load]</buf> is complete, restore <color=#F74848>1</color> AP.",
+                  "SpecificEffects": "When <buf ID=900029>[Auto Load]</buf> is complete, restores <color=#F74848>1</color> AP.",
                   "BufCarried": "4000331",
                   "SkillIcon": "Icon_skill_passive_5012",
                   "icon": "Icon_skill_passive_5012",
@@ -55385,7 +55385,7 @@
                 "PassiveSkill": {
                   "ID": "400035",
                   "name": "Indiscriminate 3",
-                  "SpecificEffects": "When <buf ID=900004>[Re-ATK]</buf> is triggered, allow continued moving with the remaining movement.",
+                  "SpecificEffects": "When triggering [Indiscriminate 1]'s <buf ID=900004>[Re-ATK]</buf> effect, this unit can move using any remaining Movement.",
                   "BufCarried": "4000351/4000312",
                   "SkillIcon": "Icon_skill_passive_5013",
                   "icon": "Icon_skill_passive_5013",
@@ -55404,7 +55404,7 @@
                 "PassiveSkill": {
                   "ID": "400036",
                   "name": "Indiscriminate 4",
-                  "SpecificEffects": "After triggering <buf ID=900004>[Re-ATK]</buf>, it no longer reduces final damage.",
+                  "SpecificEffects": "When triggering [Indiscriminate 1]'s <buf ID=900004>[Re-ATK]</buf> effect, Final Damage is not reduced.",
                   "BufCarried": "4000361",
                   "SkillIcon": "Icon_skill_passive_5013",
                   "icon": "Icon_skill_passive_5013",
@@ -55570,7 +55570,7 @@
           "skill": {
             "ID": "400001",
             "name": "Strategic Strike 1",
-            "SpecificEffects": "When a Tactical Weapon runs out of ammo, trigger <buf ID=900029>[Auto Load]</buf>. This process takes <color=#F74848>3</color> turns.",
+            "SpecificEffects": "When a tactical weapon runs out of Ammo, triggers <buf ID=900029>[Auto Load]</buf>. This process takes <color=#F74848>3</color> turns.",
             "BufCarried": "4000011",
             "SkillIcon": "Icon_skill_passive_5012",
             "icon": "Icon_skill_passive_5012",
@@ -58618,7 +58618,7 @@
                 "PassiveSkill": {
                   "ID": "300011",
                   "name": "Sniper Warfare 2",
-                  "SpecificEffects": "After breaking a part, trigger <buf ID=900004>[Re-ATK]</buf>.",
+                  "SpecificEffects": "[Sniper Warfare 1] can trigger after destroying a part.",
                   "BufCarried": "3000111",
                   "SkillIcon": "Icon_skill_passive_5008",
                   "icon": "Icon_skill_passive_5008",
@@ -58694,7 +58694,7 @@
                 "PassiveSkill": {
                   "ID": "300021",
                   "name": "Sniper Warfare 3",
-                  "SpecificEffects": "Upon triggering <buf ID=900004>[Re-ATK]</buf>, allows movement of <color=#F74848>2</color> tiles before attacking.",
+                  "SpecificEffects": "Upon triggering [Sniper Warfare 1]'s <buf ID=900004>[Re-ATK]</buf>, can move <color=#F74848>2</color> tiles before attacking.",
                   "BufCarried": "3000211/3000212",
                   "SkillIcon": "Icon_skill_passive_5008",
                   "icon": "Icon_skill_passive_5008",
@@ -58715,7 +58715,7 @@
                 "PassiveSkill": {
                   "ID": "300022",
                   "name": "Power Innovation 2",
-                  "SpecificEffects": "When breaking a part, restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>1</color> time per turn.",
+                  "SpecificEffects": "When destroying a part, restores <color=#F74848>1</color> AP after combat. Can only trigger <color=#F74848>1</color> time per turn.",
                   "BufCarried": "3000221",
                   "SkillIcon": "Icon_skill_passive_5006",
                   "icon": "Icon_skill_passive_5006",
@@ -58812,7 +58812,7 @@
                 "PassiveSkill": {
                   "ID": "300033",
                   "name": "Sniper Warfare 4",
-                  "SpecificEffects": "<buf ID=900004>[Re-ATK]</buf>'s effective times per turn <color=#F74848>+1</color>.",
+                  "SpecificEffects": "<buf ID=900004>[Re-ATK]</buf> trigger chances per turn <color=#F74848>+1</color>.",
                   "BufCarried": "3000331/3000332/3000333/3000334",
                   "SkillIcon": "Icon_skill_passive_5008",
                   "icon": "Icon_skill_passive_5008",
@@ -58952,7 +58952,7 @@
                 "PassiveSkill": {
                   "ID": "300043",
                   "name": "Power Innovation 3",
-                  "SpecificEffects": "When destroying a target, additionally restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>2</color> times per turn.",
+                  "SpecificEffects": "When destroying a target, additionally restores <color=#F74848>1</color> AP after combat. Can trigger up to <color=#F74848>2</color> times per turn.",
                   "BufCarried": "3000431",
                   "SkillIcon": "Icon_skill_passive_5006",
                   "icon": "Icon_skill_passive_5006",
@@ -59058,7 +59058,7 @@
           "skill": {
             "ID": "300001",
             "name": "Sniper Warfare 1",
-            "SpecificEffects": "When destroying a target, <buf ID=900004>[Re-ATK]</buf> can be triggered, effective up to <color=#F74848>2</color> times per turn. Unable to move before attacking.",
+            "SpecificEffects": "After destroying the target, triggers <buf ID=900004>[Re-ATK]</buf>. Can trigger up to <color=#F74848>2</color> times per turn. Unable to move before attacking.",
             "BufCarried": "3000011",
             "SkillIcon": "Icon_skill_passive_5008",
             "icon": "Icon_skill_passive_5008",
@@ -63241,7 +63241,7 @@
                 "PassiveSkill": {
                   "ID": "300011",
                   "name": "Sniper Warfare 2",
-                  "SpecificEffects": "After breaking a part, trigger <buf ID=900004>[Re-ATK]</buf>.",
+                  "SpecificEffects": "[Sniper Warfare 1] can trigger after destroying a part.",
                   "BufCarried": "3000111",
                   "SkillIcon": "Icon_skill_passive_5008",
                   "icon": "Icon_skill_passive_5008",
@@ -63317,7 +63317,7 @@
                 "PassiveSkill": {
                   "ID": "300021",
                   "name": "Sniper Warfare 3",
-                  "SpecificEffects": "Upon triggering <buf ID=900004>[Re-ATK]</buf>, allows movement of <color=#F74848>2</color> tiles before attacking.",
+                  "SpecificEffects": "Upon triggering [Sniper Warfare 1]'s <buf ID=900004>[Re-ATK]</buf>, can move <color=#F74848>2</color> tiles before attacking.",
                   "BufCarried": "3000211/3000212",
                   "SkillIcon": "Icon_skill_passive_5008",
                   "icon": "Icon_skill_passive_5008",
@@ -63338,7 +63338,7 @@
                 "PassiveSkill": {
                   "ID": "300022",
                   "name": "Power Innovation 2",
-                  "SpecificEffects": "When breaking a part, restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>1</color> time per turn.",
+                  "SpecificEffects": "When destroying a part, restores <color=#F74848>1</color> AP after combat. Can only trigger <color=#F74848>1</color> time per turn.",
                   "BufCarried": "3000221",
                   "SkillIcon": "Icon_skill_passive_5006",
                   "icon": "Icon_skill_passive_5006",
@@ -63435,7 +63435,7 @@
                 "PassiveSkill": {
                   "ID": "300033",
                   "name": "Sniper Warfare 4",
-                  "SpecificEffects": "<buf ID=900004>[Re-ATK]</buf>'s effective times per turn <color=#F74848>+1</color>.",
+                  "SpecificEffects": "<buf ID=900004>[Re-ATK]</buf> trigger chances per turn <color=#F74848>+1</color>.",
                   "BufCarried": "3000331/3000332/3000333/3000334",
                   "SkillIcon": "Icon_skill_passive_5008",
                   "icon": "Icon_skill_passive_5008",
@@ -63575,7 +63575,7 @@
                 "PassiveSkill": {
                   "ID": "300043",
                   "name": "Power Innovation 3",
-                  "SpecificEffects": "When destroying a target, additionally restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>2</color> times per turn.",
+                  "SpecificEffects": "When destroying a target, additionally restores <color=#F74848>1</color> AP after combat. Can trigger up to <color=#F74848>2</color> times per turn.",
                   "BufCarried": "3000431",
                   "SkillIcon": "Icon_skill_passive_5006",
                   "icon": "Icon_skill_passive_5006",
@@ -63681,7 +63681,7 @@
           "skill": {
             "ID": "300001",
             "name": "Sniper Warfare 1",
-            "SpecificEffects": "When destroying a target, <buf ID=900004>[Re-ATK]</buf> can be triggered, effective up to <color=#F74848>2</color> times per turn. Unable to move before attacking.",
+            "SpecificEffects": "After destroying the target, triggers <buf ID=900004>[Re-ATK]</buf>. Can trigger up to <color=#F74848>2</color> times per turn. Unable to move before attacking.",
             "BufCarried": "3000011",
             "SkillIcon": "Icon_skill_passive_5008",
             "icon": "Icon_skill_passive_5008",
@@ -65553,7 +65553,7 @@
                 "PassiveSkill": {
                   "ID": "600012",
                   "name": "Armor Specialization 1",
-                  "SpecificEffects": "DMG <color=#F74848>+20%</color> on Retaliation.",
+                  "SpecificEffects": "DMG <color=#F74848>+20%</color> on retaliation.",
                   "BufCarried": "6000121",
                   "SkillIcon": "Icon_skill_passive_2002",
                   "icon": "Icon_skill_passive_2002",
@@ -65604,7 +65604,7 @@
                 "PassiveSkill": {
                   "ID": "600021",
                   "name": "Entrenched 3",
-                  "SpecificEffects": "<buf ID=900022>[Guard]</buf>'s effective times per turn <color=#F74848>+1</color>.",
+                  "SpecificEffects": "<buf ID=900022>[Guard]</buf> triggers per turn <color=#F74848>+1</color>.",
                   "BufCarried": "6000211/6000212",
                   "SkillIcon": "Icon_skill_passive_2001",
                   "icon": "Icon_skill_passive_2001",
@@ -65623,7 +65623,7 @@
                 "PassiveSkill": {
                   "ID": "600022",
                   "name": "Armor Specialization 2",
-                  "SpecificEffects": "When performing <buf ID=900022>[Guard]</buf>, restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>1</color> time per turn.",
+                  "SpecificEffects": "When performing <buf ID=900022>[Guard]</buf>, restores <color=#F74848>1</color> AP after combat. Can only trigger <color=#F74848>1</color> time per turn.",
                   "BufCarried": "6000221",
                   "SkillIcon": "Icon_skill_passive_2002",
                   "icon": "Icon_skill_passive_2002",
@@ -65711,7 +65711,7 @@
                 "PassiveSkill": {
                   "ID": "600033",
                   "name": "Adaptive Warfare 1",
-                  "SpecificEffects": "At the end of the action, if an Active Attack was not initiated this turn, an extra <color=#F74848>2</color> tiles can be moved.",
+                  "SpecificEffects": "At end of action, if no active attacks were used this turn, can move an extra <color=#F74848>2</color> tiles.",
                   "BufCarried": "6000331",
                   "SkillIcon": "Icon_skill_passive_5155",
                   "icon": "Icon_skill_passive_5155",
@@ -65838,7 +65838,7 @@
                 "PassiveSkill": {
                   "ID": "600043",
                   "name": "Entrenched 4",
-                  "SpecificEffects": "<buf ID=900022>[Guard]</buf> can now be triggered an unlimited number of times per turn.",
+                  "SpecificEffects": "<buf ID=900022>[Guard]</buf> can now trigger an unlimited number of times per turn.",
                   "BufCarried": "6000431/6000432",
                   "SkillIcon": "Icon_skill_passive_2002",
                   "icon": "Icon_skill_passive_2002",
@@ -65934,7 +65934,7 @@
           "skill": {
             "ID": "600001",
             "name": "Entrenched 1",
-            "SpecificEffects": "Trigger <buf ID=900022>[Guard]</buf> to protect adjacent (<color=#F74848>1</color> tile) allies from Assault and Ranged attacks, effective up to <color=#F74848>2</color> times per turn.",
+            "SpecificEffects": "Triggers <buf ID=900022>[Guard]</buf> to protect allies within <color=#F74848>1</color> adjacent tile from Assault and Ranged attacks. Can trigger up to <color=#F74848>2</color> times per turn.",
             "BufCarried": "6000011",
             "SkillIcon": "Icon_skill_passive_2001",
             "icon": "Icon_skill_passive_2001",
@@ -66305,7 +66305,7 @@
           "skill": {
             "ID": "600509",
             "name": "Guard",
-            "describe": "Protects allies within <color=#F74848>2</color> adjacent tiles from Assault and Ranged attacks. Triggers up to <color=#F74848>2</color> times per turn and lasts <color=#F74848>2</color> turns. Additionally, gains <buf ID=7100702>[Defensive Stance I]</buf>. Can only trigger <color=#F74848>1</color> time per turn.",
+            "describe": "Protects allies within <color=#F74848>2</color> adjacent tiles from Assault and Ranged attacks. Triggers up to <color=#F74848>2</color> times per turn and lasts <color=#F74848>2</color> turns. Additionally, gains <buf ID=7100701>[Defensive Stance I]</buf>. Can only trigger <color=#F74848>1</color> time per turn.",
             "type": "Order",
             "Ap": "1",
             "CD": "2",
@@ -67769,7 +67769,7 @@
                 "PassiveSkill": {
                   "ID": "600012",
                   "name": "Armor Specialization 1",
-                  "SpecificEffects": "DMG <color=#F74848>+20%</color> on Retaliation.",
+                  "SpecificEffects": "DMG <color=#F74848>+20%</color> on retaliation.",
                   "BufCarried": "6000121",
                   "SkillIcon": "Icon_skill_passive_2002",
                   "icon": "Icon_skill_passive_2002",
@@ -67820,7 +67820,7 @@
                 "PassiveSkill": {
                   "ID": "600021",
                   "name": "Entrenched 3",
-                  "SpecificEffects": "<buf ID=900022>[Guard]</buf>'s effective times per turn <color=#F74848>+1</color>.",
+                  "SpecificEffects": "<buf ID=900022>[Guard]</buf> triggers per turn <color=#F74848>+1</color>.",
                   "BufCarried": "6000211/6000212",
                   "SkillIcon": "Icon_skill_passive_2001",
                   "icon": "Icon_skill_passive_2001",
@@ -67839,7 +67839,7 @@
                 "PassiveSkill": {
                   "ID": "600022",
                   "name": "Armor Specialization 2",
-                  "SpecificEffects": "When performing <buf ID=900022>[Guard]</buf>, restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>1</color> time per turn.",
+                  "SpecificEffects": "When performing <buf ID=900022>[Guard]</buf>, restores <color=#F74848>1</color> AP after combat. Can only trigger <color=#F74848>1</color> time per turn.",
                   "BufCarried": "6000221",
                   "SkillIcon": "Icon_skill_passive_2002",
                   "icon": "Icon_skill_passive_2002",
@@ -67890,7 +67890,7 @@
                 "PassiveSkill": {
                   "ID": "600931",
                   "name": "Phase Shift 1",
-                  "SpecificEffects": "At the start of action, <buf ID=900089>[Balance]</buf> the HP% of all intact parts.",
+                  "SpecificEffects": "At start of action, balances the percentage of HP of all undestroyed parts with <buf ID=900089>[Balance]</buf>.",
                   "BufCarried": "6009311",
                   "SkillIcon": "Icon_skill_passive_3126",
                   "icon": "Icon_skill_passive_3126",
@@ -67927,7 +67927,7 @@
                 "PassiveSkill": {
                   "ID": "600033",
                   "name": "Adaptive Warfare 1",
-                  "SpecificEffects": "At the end of the action, if an Active Attack was not initiated this turn, an extra <color=#F74848>2</color> tiles can be moved.",
+                  "SpecificEffects": "At end of action, if no active attacks were used this turn, can move an extra <color=#F74848>2</color> tiles.",
                   "BufCarried": "6000331",
                   "SkillIcon": "Icon_skill_passive_5155",
                   "icon": "Icon_skill_passive_5155",
@@ -67946,7 +67946,7 @@
                 "PassiveSkill": {
                   "ID": "600934",
                   "name": "Phase Shift 2",
-                  "SpecificEffects": "After <buf ID=900089>[Balance]</buf>, all intact parts additionally recover <color=#F74848>10%</color> HP.",
+                  "SpecificEffects": "After <buf ID=900089>[Balance]</buf>, all undestroyed parts additionally recover <color=#F74848>10%</color> HP.",
                   "BufCarried": "6009341",
                   "SkillIcon": "Icon_skill_passive_3126",
                   "icon": "Icon_skill_passive_3126",
@@ -67984,7 +67984,7 @@
                 "PassiveSkill": {
                   "ID": "600936",
                   "name": "Phase Shift 4",
-                  "SpecificEffects": "After taking damage, if HP is below <color=#F74848>50%</color>, trigger <buf ID=900089>[Balance]</buf> and repair <color=#F74848>1</color> destroyed part. Can trigger again after <color=#F74848>3</color> turns.",
+                  "SpecificEffects": "After taking damage, if HP is below <color=#F74848>50%</color>, triggers <buf ID=900089>[Balance]</buf> and repairs <color=#F74848>1</color> destroyed part. Can trigger again after <color=#F74848>3</color> turns.",
                   "BufCarried": "6009361",
                   "SkillIcon": "Icon_skill_passive_3126",
                   "icon": "Icon_skill_passive_3126",
@@ -68017,7 +68017,7 @@
                 "PassiveSkill": {
                   "ID": "601041",
                   "name": "Zero-Sum Game 1",
-                  "SpecificEffects": "At the start of turn, if there are enemies carrying <buf ID=6010502>[Magnetic Lock]</buf>, immediately release <skill mainSkill=601051>[Vengeance Strike \u03b2]</skill>",
+                  "SpecificEffects": "At start of action, if there is an enemy unit on the battlefield with <buf ID=6010502>[Magnetic Lock]</buf>, immediately unleashes <skill mainSkill=601051>[Vengeance Strike \u03b2]</skill>.",
                   "BufCarried": "6010081",
                   "SkillIcon": "Icon_skill_passive_5266",
                   "icon": "Icon_skill_passive_5266",
@@ -68054,7 +68054,7 @@
                 "PassiveSkill": {
                   "ID": "600043",
                   "name": "Entrenched 4",
-                  "SpecificEffects": "<buf ID=900022>[Guard]</buf> can now be triggered an unlimited number of times per turn.",
+                  "SpecificEffects": "<buf ID=900022>[Guard]</buf> can now trigger an unlimited number of times per turn.",
                   "BufCarried": "6000431/6000432",
                   "SkillIcon": "Icon_skill_passive_2002",
                   "icon": "Icon_skill_passive_2002",
@@ -68073,7 +68073,7 @@
                 "PassiveSkill": {
                   "ID": "601044",
                   "name": "Zero-Sum Game 2",
-                  "SpecificEffects": "Rail Gun magazine capacity <color=#F74848>+2</color>",
+                  "SpecificEffects": "Rail Gun Ammo Capacity <color=#F74848>+2</color>.",
                   "BufCarried": "6010411",
                   "SkillIcon": "Icon_skill_passive_5266",
                   "icon": "Icon_skill_passive_5266",
@@ -68092,7 +68092,7 @@
                 "PassiveSkill": {
                   "ID": "601045",
                   "name": "Zero-Sum Game 3",
-                  "SpecificEffects": "Rail Gun DMG dealt increases by <color=#F74848>20%</color>",
+                  "SpecificEffects": "Rail Gun DMG <color=#F74848>+20%</color>.",
                   "BufCarried": "6010451",
                   "SkillIcon": "Icon_skill_passive_5266",
                   "icon": "Icon_skill_passive_5266",
@@ -68111,7 +68111,7 @@
                 "PassiveSkill": {
                   "ID": "601046",
                   "name": "Zero-Sum Game 4",
-                  "SpecificEffects": "<skill mainSkill=601050>[Vengeance Strike]</skill> and <skill mainSkill=601051>[Vengeance Strike \u03b2]</skill> base attack count increases by <color=#F74848>+1</color>.",
+                  "SpecificEffects": "<skill mainSkill=601050>[Vengeance Strike]</skill> and <skill mainSkill=601051>[Vengeance Strike \u03b2]</skill> base attack count <color=#F74848>+1</color>.",
                   "BufCarried": "6010461",
                   "SkillIcon": "Icon_skill_passive_5266",
                   "icon": "Icon_skill_passive_5266",
@@ -68150,7 +68150,7 @@
           "skill": {
             "ID": "600001",
             "name": "Entrenched 1",
-            "SpecificEffects": "Trigger <buf ID=900022>[Guard]</buf> to protect adjacent (<color=#F74848>1</color> tile) allies from Assault and Ranged attacks, effective up to <color=#F74848>2</color> times per turn.",
+            "SpecificEffects": "Triggers <buf ID=900022>[Guard]</buf> to protect allies within <color=#F74848>1</color> adjacent tile from Assault and Ranged attacks. Can trigger up to <color=#F74848>2</color> times per turn.",
             "BufCarried": "6000011",
             "SkillIcon": "Icon_skill_passive_2001",
             "icon": "Icon_skill_passive_2001",
@@ -68341,7 +68341,7 @@
           "skill": {
             "ID": "601002",
             "name": "Code Lock",
-            "SpecificEffects": "At the end of turn, reload <color=#F74848>1</color> ammo to Rail Gun magazine",
+            "SpecificEffects": "At end of action, loads <color=#F74848>1</color> Rail Gun Ammo.",
             "BufCarried": "6010021",
             "SkillIcon": "Icon_skill_passive_5223",
             "icon": "Icon_skill_passive_5223",
@@ -68367,7 +68367,7 @@
           "skill": {
             "ID": "601003",
             "name": "Magnetic Barrier",
-            "SpecificEffects": "Reduces DMG taken by <color=#F74848>12.5%</color>. If the attacker carries <buf ID=6010502>[Magnetic Lock]</buf>, additionally reduces DMG taken by <color=#F74848>12.5%</color>.",
+            "SpecificEffects": "DMG Taken <color=#F74848>-12.5%</color>. If the enemy unit has <buf ID=6010502>[Magnetic Lock]</buf>, DMG Taken is reduced by an additional <color=#F74848>12.5%</color>.",
             "BufCarried": "6010031/6010032",
             "SkillIcon": "Icon_skill_passive_2118",
             "icon": "Icon_skill_passive_2118",
@@ -68420,7 +68420,7 @@
           "skill": {
             "ID": "601005",
             "name": "Electro-Surge",
-            "SpecificEffects": "When initiating combat against a target carrying <buf ID=6010502>[Magnetic Lock]</buf> using a Shield, applies <buf ID=3006442>[Short Circuit II]</buf> and <buf ID=7101507>[Movement Inhibition II]</buf> to the target before attacking, lasting for <color=#F74848>2</color> turns.",
+            "SpecificEffects": "When using a shield to attack a target possessing <buf ID=6010502>[Magnetic Lock]</buf>, applies <buf ID=3006442>[Short Circuit II]</buf> and <buf ID=7101507>[Movement Inhibition II]</buf> to the target before combat, lasting for <color=#F74848>2</color> turns.",
             "BufCarried": "6010051",
             "SkillIcon": "Icon_skill_passive_5162",
             "icon": "Icon_skill_passive_5162",
@@ -68461,7 +68461,7 @@
           "skill": {
             "ID": "601007",
             "name": "Shared Hatred",
-            "SpecificEffects": "When an ally with <color=#F74848>30%</color> or lower HP is attacked, <buf ID=900022>[Guard]</buf> can be triggered regardless of distance. Can trigger <color=#F74848>2</color> times per turn.",
+            "SpecificEffects": "If an ally with HP below <color=#F74848>30%</color> is attacked during combat, a <buf ID=900022>[Guard]</buf> effect can be activated regardless of skill range. Can only trigger <color=#F74848>2</color> times per turn.",
             "BufCarried": "6010071",
             "SkillIcon": "Icon_skill_passive_5234",
             "icon": "Icon_skill_passive_5234",
@@ -68487,7 +68487,7 @@
             "ID": "601008",
             "remarks": "\u7ef4\u5a1c-\u4eff\u751f\u7535\u8111",
             "name": "Luno Oath",
-            "describe": "Protects allies within <color=#F74848>2</color> adjacent tiles from assault and ranged attacks. Can trigger <color=#F74848>2</color> times per turn, lasting for <color=#F74848>2</color> turns. After using this skill, fully reloads Rail Gun ammo magazine and triggers <buf ID=900004>[Re-ATK]</buf>.",
+            "describe": "Protects allies within <color=#F74848>2</color> adjacent tiles from Assault and Ranged attacks. Can trigger up to <color=#F74848>2</color> times per turn. Lasts for <color=#F74848>2</color> turns. After activation, fully restores Rail Gun Ammo and can <buf ID=900004>[Re-ATK]</buf> in place.",
             "type": "Order",
             "CD": "3",
             "Ap": "2",
@@ -68778,11 +68778,11 @@
           "type": "SpecialAssault",
           "Ap": "4",
           "CD": "2",
-          "describe": "Throws a powerful magnetic projectile with a Large Shield or Small Shield at any tile within <range type=1>4-tile diamond area</range>, dealing <color=#F74848>0.1x</color> AoE DMG to the body of all enemies within <color=#F74848>3</color> tiles of the target, then forcibly moves them <color=#F74848>2</color> tiles toward the center. Applies <buf ID=6010502>[Magnetic Lock]</buf> to all targets hit, and triggers <buf ID=900004>[Re-ATK]</buf> in place. This attack is guaranteed to hit."
+          "describe": "Uses a Large Shield or Small Shield to throw a magnetic grenade at any tile within a <range type=1>4-tile diamond area</range>, dealing <color=#F74848>0.1x</color> AoE DMG to the Body of all enemy units within <color=#F74848>3</color> tiles of the location, and forcibly displacing them <color=#F74848>2</color> tiles toward the center. This attack is guaranteed to hit. After attacking, applies <buf ID=6010502>[Magnetic Lock]</buf> to all targets, and can then trigger <buf ID=900004>[Re-ATK]</buf>. Cannot move before attacking."
         },
         {
           "name": "Guard",
-          "describe": "Protects allies within <color=#F74848>2</color> adjacent tiles from Assault and Ranged attacks. Triggers up to <color=#F74848>2</color> times per turn and lasts <color=#F74848>2</color> turns. Additionally, gains <buf ID=7100702>[Defensive Stance I]</buf>. Can only trigger <color=#F74848>1</color> time per turn.",
+          "describe": "Protects allies within <color=#F74848>2</color> adjacent tiles from Assault and Ranged attacks. Triggers up to <color=#F74848>2</color> times per turn and lasts <color=#F74848>2</color> turns. Additionally, gains <buf ID=7100701>[Defensive Stance I]</buf>. Can only trigger <color=#F74848>1</color> time per turn.",
           "SpecificEffects": "",
           "type": "Order",
           "Ap": "1",
@@ -68850,7 +68850,7 @@
                 "PassiveSkill": {
                   "ID": "300011",
                   "name": "Sniper Warfare 2",
-                  "SpecificEffects": "After breaking a part, trigger <buf ID=900004>[Re-ATK]</buf>.",
+                  "SpecificEffects": "[Sniper Warfare 1] can trigger after destroying a part.",
                   "BufCarried": "3000111",
                   "SkillIcon": "Icon_skill_passive_5008",
                   "icon": "Icon_skill_passive_5008",
@@ -68919,7 +68919,7 @@
                 "PassiveSkill": {
                   "ID": "300021",
                   "name": "Sniper Warfare 3",
-                  "SpecificEffects": "Upon triggering <buf ID=900004>[Re-ATK]</buf>, allows movement of <color=#F74848>2</color> tiles before attacking.",
+                  "SpecificEffects": "Upon triggering [Sniper Warfare 1]'s <buf ID=900004>[Re-ATK]</buf>, can move <color=#F74848>2</color> tiles before attacking.",
                   "BufCarried": "3000211/3000212",
                   "SkillIcon": "Icon_skill_passive_5008",
                   "icon": "Icon_skill_passive_5008",
@@ -68938,7 +68938,7 @@
                 "PassiveSkill": {
                   "ID": "300022",
                   "name": "Power Innovation 2",
-                  "SpecificEffects": "When breaking a part, restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>1</color> time per turn.",
+                  "SpecificEffects": "When destroying a part, restores <color=#F74848>1</color> AP after combat. Can only trigger <color=#F74848>1</color> time per turn.",
                   "BufCarried": "3000221",
                   "SkillIcon": "Icon_skill_passive_5006",
                   "icon": "Icon_skill_passive_5006",
@@ -68989,7 +68989,7 @@
                 "PassiveSkill": {
                   "ID": "301231",
                   "name": "Hunter's Mark 1",
-                  "SpecificEffects": "When actively attacking and breaking parts with a ranged weapon, gains <buf ID=900141>[Hunting]</buf> according to the part hit. Can trigger <color=#F74848>2</color> times per turn.",
+                  "SpecificEffects": "When actively attacking with a Ranged Weapon and destroying a part, gains different <buf ID=900141>[Hunter's Boon]</buf> effects based on the part type. Can only trigger <color=#F74848>2</color> times per turn.",
                   "BufCarried": "3012311",
                   "SkillIcon": "Icon_skill_passive_5022",
                   "icon": "Icon_skill_passive_5022",
@@ -69026,7 +69026,7 @@
                 "PassiveSkill": {
                   "ID": "300033",
                   "name": "Sniper Warfare 4",
-                  "SpecificEffects": "<buf ID=900004>[Re-ATK]</buf>'s effective times per turn <color=#F74848>+1</color>.",
+                  "SpecificEffects": "<buf ID=900004>[Re-ATK]</buf> trigger chances per turn <color=#F74848>+1</color>.",
                   "BufCarried": "3000331/3000332/3000333/3000334",
                   "SkillIcon": "Icon_skill_passive_5008",
                   "icon": "Icon_skill_passive_5008",
@@ -69045,7 +69045,7 @@
                 "PassiveSkill": {
                   "ID": "301234",
                   "name": "Hunter's Mark 2",
-                  "SpecificEffects": "After actively attacking and destroying a target with a ranged weapon, can additionally move <color=#F74848>3</color> tiles.",
+                  "SpecificEffects": "When actively attacking with a Ranged Weapon, if the target is destroyed, can move an extra <color=#F74848>3</color> tiles.",
                   "BufCarried": "3012341",
                   "SkillIcon": "Icon_skill_passive_5022",
                   "icon": "Icon_skill_passive_5022",
@@ -69064,7 +69064,7 @@
                 "PassiveSkill": {
                   "ID": "301235",
                   "name": "Hunter's Mark 3",
-                  "SpecificEffects": "<buf ID=900142>[Hunter's Mark 1]</buf> no longer has trigger limit",
+                  "SpecificEffects": "[Hunter's Mark 1] can now trigger an unlimited number of times per turn.",
                   "BufCarried": "3012351",
                   "SkillIcon": "Icon_skill_passive_5022",
                   "icon": "Icon_skill_passive_5022",
@@ -69083,7 +69083,7 @@
                 "PassiveSkill": {
                   "ID": "301236",
                   "name": "Hunter's Mark 4",
-                  "SpecificEffects": "At the start of action, randomly gains <color=#F74848>1</color> of unobtained <buf ID=900141>[Hunting]</buf> buffs.",
+                  "SpecificEffects": "At start of action, randomly gains <color=#F74848>1</color> unacquired <buf ID=900141>[Hunter's Boon]</buf> effect.",
                   "BufCarried": "3012361",
                   "SkillIcon": "Icon_skill_passive_5022",
                   "icon": "Icon_skill_passive_5022",
@@ -69116,7 +69116,7 @@
                 "PassiveSkill": {
                   "ID": "301241",
                   "name": "Veilpiercer 1",
-                  "SpecificEffects": "After initiating combat, if the target is inflicted with <buf ID=900137>[Battle Wound]</buf>, triggers <buf ID=900004>[Re-ATK]</buf>. Can move <color=#F74848>2</color> tiles before attacking. Can trigger <color=#F74848>1</color> times per turn.",
+                  "SpecificEffects": "After actively attacking, if the target has <buf ID=900137>[Scar]</buf>, <buf ID=900004>[Re-ATK]</buf> triggers after combat. Can move <color=#F74848>2</color> tiles before attacking. Can trigger <color=#F74848>1</color> time per turn.",
                   "BufCarried": "3012411",
                   "SkillIcon": "Icon_skill_passive_5265",
                   "icon": "Icon_skill_passive_5265",
@@ -69153,7 +69153,7 @@
                 "PassiveSkill": {
                   "ID": "300043",
                   "name": "Power Innovation 3",
-                  "SpecificEffects": "When destroying a target, additionally restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>2</color> times per turn.",
+                  "SpecificEffects": "When destroying a target, additionally restores <color=#F74848>1</color> AP after combat. Can trigger up to <color=#F74848>2</color> times per turn.",
                   "BufCarried": "3000431",
                   "SkillIcon": "Icon_skill_passive_5006",
                   "icon": "Icon_skill_passive_5006",
@@ -69172,7 +69172,7 @@
                 "PassiveSkill": {
                   "ID": "301244",
                   "name": "Veilpiercer 2",
-                  "SpecificEffects": "Each time talent is triggered, applies <buf ID=900137>[Battle Wound]</buf> to enemies of the same type within <color=#F74848>1</color> ring of the target.",
+                  "SpecificEffects": "Each time Core Talent is triggered, simultaneously applies <buf ID=900137>[Scar]</buf> to units of the same faction within <color=#F74848>1</color> ring around the target.",
                   "BufCarried": "3012441",
                   "SkillIcon": "Icon_skill_passive_5265",
                   "icon": "Icon_skill_passive_5265",
@@ -69191,7 +69191,7 @@
                 "PassiveSkill": {
                   "ID": "301245",
                   "name": "Veilpiercer 3",
-                  "SpecificEffects": "When attacking target carrying <buf ID=900137>[Battle Wound]</buf>, Final DMG dealt is increased by <color=#F74848>5%</color>, with an additional <color=#F74848>5%</color> for each <color=#F74848>1</color> additional stack of <buf ID=900137>[Battle Wound]</buf>, up to<color=#F74848>15%</color>.",
+                  "SpecificEffects": "When attacking a target affected by <buf ID=900137>[Scar]</buf>, Final DMG <color=#F74848>+5%</color>. For each additional <color=#F74848>1</color> <buf ID=900137>[Scar]</buf>, DMG increases by an extra <color=#F74848>5%</color>, up to <color=#F74848>15%</color>.",
                   "BufCarried": "3012451",
                   "SkillIcon": "Icon_skill_passive_5265",
                   "icon": "Icon_skill_passive_5265",
@@ -69210,7 +69210,7 @@
                 "PassiveSkill": {
                   "ID": "301246",
                   "name": "Veilpiercer 4",
-                  "SpecificEffects": "Talent <buf ID=900004>[Re-ATK]</buf> effect changes to <buf ID=900005>[Re-Act]</buf>.",
+                  "SpecificEffects": "After triggering talent's <buf ID=900004>[Re-ATK]</buf> effect, changes to <buf ID=900005>[Re-Act]</buf>.",
                   "BufCarried": "3012461",
                   "SkillIcon": "Icon_skill_passive_5265",
                   "icon": "Icon_skill_passive_5265",
@@ -69249,7 +69249,7 @@
           "skill": {
             "ID": "300001",
             "name": "Sniper Warfare 1",
-            "SpecificEffects": "When destroying a target, <buf ID=900004>[Re-ATK]</buf> can be triggered, effective up to <color=#F74848>2</color> times per turn. Unable to move before attacking.",
+            "SpecificEffects": "After destroying the target, triggers <buf ID=900004>[Re-ATK]</buf>. Can trigger up to <color=#F74848>2</color> times per turn. Unable to move before attacking.",
             "BufCarried": "3000011",
             "SkillIcon": "Icon_skill_passive_5008",
             "icon": "Icon_skill_passive_5008",
@@ -69440,7 +69440,7 @@
           "skill": {
             "ID": "700048",
             "name": "Sabotage",
-            "SpecificEffects": "During an Active Attack, deals an additional <color=#F74848>20%</color> DMG to the part with HP below <color=#F74848>50%</color>.",
+            "SpecificEffects": "When actively attacking, deals an additional <color=#F74848>20%</color> DMG to parts with HP below <color=#F74848>50%</color>.",
             "BufCarried": "7000481",
             "SkillIcon": "Icon_skill_passive_1009",
             "icon": "Icon_skill_passive_1009",
@@ -69466,7 +69466,7 @@
             "ID": "301203",
             "remarks": "\u7ef4\u7f57\u59ae\u5361-\u4eff\u751f\u7535\u8111",
             "name": "Forensics",
-            "describe": "Chooses <color=#F74848>1</color> enemy within <range type=0>4-tile diamond</range> area, inflicts <color=#F74848>1</color> <buf ID=900137>[Battle Wound]</buf> according to the lowest HP part. Can continue to act without moving.",
+            "describe": "Designates <color=#F74848>1</color> enemy unit within a <range type=0>4-tile diamond</range> range, applying <color=#F74848>1</color> corresponding <buf ID=900137>[Scar]</buf> effect to its lowest-HP part. Can continue to act afterward, but cannot move before attacking.",
             "type": "Order",
             "CD": "2",
             "Ap": "1",
@@ -69493,7 +69493,7 @@
           "skill": {
             "ID": "301204",
             "name": "Scar Retrieval",
-            "SpecificEffects": "When initiating combat and destroying a part carrying <buf ID=900137>[Battle Wound]</buf>, restores all AP consumed by the skill, up to the maximum of <color=#F74848>3</color> AP. This effect can trigger <color=#F74848>1</color> times per turn.",
+            "SpecificEffects": "When performing an active attack, if the target part affected with the corresponding <buf ID=900137>[Scar]</buf> effect is destroyed, all AP consumed by the skill used is returned after combat, up to <color=#F74848>3</color>. Can only trigger <color=#F74848>1</color> time per turn.",
             "BufCarried": "3012041/3012053",
             "SkillIcon": "Icon_skill_passive_5148",
             "icon": "Icon_skill_passive_5148",
@@ -69518,7 +69518,7 @@
           "skill": {
             "ID": "301205",
             "name": "Remote Deconstruction",
-            "SpecificEffects": "When actively attacking, for each <color=#F74848>1</color> tile away from the target, hit rate increases by <color=#F74848>4%</color>, up to <color=#F74848>20%</color>.",
+            "SpecificEffects": "When actively attacking, Hit Rate <color=#F74848>+4%</color> for every <color=#F74848>1</color> tile away from the target, up to <color=#F74848>20%</color>.",
             "BufCarried": "3012051",
             "SkillIcon": "Icon_skill_passive_4111",
             "icon": "Icon_skill_passive_4111",
@@ -69544,7 +69544,7 @@
             "ID": "301206",
             "remarks": "\u7ef4\u7f57\u59ae\u5361-\u4eff\u751f\u7535\u8111",
             "name": "Total Deconstruction",
-            "describe": "Attacks a target with Light Rifle, dealing <color=#F74848>1.5x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking. After combat, applies all <buf ID=900137>[Battle Wound]</buf> debuffs to the target, lasting for <color=#F74848>2</color> turns.",
+            "describe": "Uses a Light Rifle to attack a target, dealing <color=#F74848>1.5x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking. After combat, applies all <buf ID=900137>[Scar]</buf> effects to the target hit, lasting for <color=#F74848>2</color> turns.",
             "type": "EquipmentSkill",
             "Ap": "3",
             "matchingWeaponType": "\u8f7b\u578b\u6b65\u67aa",
@@ -69597,7 +69597,7 @@
             "ID": "301208",
             "remarks": "\u7ef4\u7f57\u59ae\u5361-\u4eff\u751f\u7535\u8111",
             "name": "Multi-Vector Mapping",
-            "describe": "Attacks a target with Light Rifle, dealing <color=#F74848>0.7x</color> DMG. Selects <color=#F74848>2</color> additional target to deal <color=#F74848>0.7x</color> each. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking. Can select the same target multiple times. Only the first target will counter attack.",
+            "describe": "Uses a Light Rifle to attack a target, dealing <color=#F74848>0.7x</color> DMG. Can choose <color=#F74848>2</color> additional targets, each dealing <color=#F74848>0.7x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking and can repeatedly lock onto the same target. Can be retaliated against by the main target.",
             "type": "EquipmentSkill",
             "Ap": "4",
             "matchingWeaponType": "\u8f7b\u578b\u6b65\u67aa",
@@ -69886,7 +69886,7 @@
           "type": "EquipmentSkill",
           "Ap": "2",
           "CD": "0",
-          "describe": "Attacks a target with Light Rifle, dealing <color=#F74848>1.25x</color> DMG. If there are no allies within <color=#F74848>2</color> adjacent tiles of this unit, can enter <buf ID=900014>[Aiming]</buf> Mode before attacking."
+          "describe": "Uses a Light Rifle to attack a target, dealing <color=#F74848>1.25x</color> DMG. If there are no allied units within <color=#F74848>2</color> tiles, enters <buf ID=900014>[Aiming]</buf> Mode before attacking."
         }
       ],
       "statRanks": {
@@ -73372,7 +73372,7 @@
                 "PassiveSkill": {
                   "ID": "600012",
                   "name": "Armor Specialization 1",
-                  "SpecificEffects": "DMG <color=#F74848>+20%</color> on Retaliation.",
+                  "SpecificEffects": "DMG <color=#F74848>+20%</color> on retaliation.",
                   "BufCarried": "6000121",
                   "SkillIcon": "Icon_skill_passive_2002",
                   "icon": "Icon_skill_passive_2002",
@@ -73428,7 +73428,7 @@
                 "PassiveSkill": {
                   "ID": "600021",
                   "name": "Entrenched 3",
-                  "SpecificEffects": "<buf ID=900022>[Guard]</buf>'s effective times per turn <color=#F74848>+1</color>.",
+                  "SpecificEffects": "<buf ID=900022>[Guard]</buf> triggers per turn <color=#F74848>+1</color>.",
                   "BufCarried": "6000211/6000212",
                   "SkillIcon": "Icon_skill_passive_2001",
                   "icon": "Icon_skill_passive_2001",
@@ -73449,7 +73449,7 @@
                 "PassiveSkill": {
                   "ID": "600022",
                   "name": "Armor Specialization 2",
-                  "SpecificEffects": "When performing <buf ID=900022>[Guard]</buf>, restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>1</color> time per turn.",
+                  "SpecificEffects": "When performing <buf ID=900022>[Guard]</buf>, restores <color=#F74848>1</color> AP after combat. Can only trigger <color=#F74848>1</color> time per turn.",
                   "BufCarried": "6000221",
                   "SkillIcon": "Icon_skill_passive_2002",
                   "icon": "Icon_skill_passive_2002",
@@ -73546,7 +73546,7 @@
                 "PassiveSkill": {
                   "ID": "600033",
                   "name": "Adaptive Warfare 1",
-                  "SpecificEffects": "At the end of the action, if an Active Attack was not initiated this turn, an extra <color=#F74848>2</color> tiles can be moved.",
+                  "SpecificEffects": "At end of action, if no active attacks were used this turn, can move an extra <color=#F74848>2</color> tiles.",
                   "BufCarried": "6000331",
                   "SkillIcon": "Icon_skill_passive_5155",
                   "icon": "Icon_skill_passive_5155",
@@ -73686,7 +73686,7 @@
                 "PassiveSkill": {
                   "ID": "600043",
                   "name": "Entrenched 4",
-                  "SpecificEffects": "<buf ID=900022>[Guard]</buf> can now be triggered an unlimited number of times per turn.",
+                  "SpecificEffects": "<buf ID=900022>[Guard]</buf> can now trigger an unlimited number of times per turn.",
                   "BufCarried": "6000431/6000432",
                   "SkillIcon": "Icon_skill_passive_2002",
                   "icon": "Icon_skill_passive_2002",
@@ -73792,7 +73792,7 @@
           "skill": {
             "ID": "600001",
             "name": "Entrenched 1",
-            "SpecificEffects": "Trigger <buf ID=900022>[Guard]</buf> to protect adjacent (<color=#F74848>1</color> tile) allies from Assault and Ranged attacks, effective up to <color=#F74848>2</color> times per turn.",
+            "SpecificEffects": "Triggers <buf ID=900022>[Guard]</buf> to protect allies within <color=#F74848>1</color> adjacent tile from Assault and Ranged attacks. Can trigger up to <color=#F74848>2</color> times per turn.",
             "BufCarried": "6000011",
             "SkillIcon": "Icon_skill_passive_2001",
             "icon": "Icon_skill_passive_2001",
@@ -74457,7 +74457,7 @@
           "skill": {
             "ID": "600509",
             "name": "Guard",
-            "describe": "Protects allies within <color=#F74848>2</color> adjacent tiles from Assault and Ranged attacks. Triggers up to <color=#F74848>2</color> times per turn and lasts <color=#F74848>2</color> turns. Additionally, gains <buf ID=7100702>[Defensive Stance I]</buf>. Can only trigger <color=#F74848>1</color> time per turn.",
+            "describe": "Protects allies within <color=#F74848>2</color> adjacent tiles from Assault and Ranged attacks. Triggers up to <color=#F74848>2</color> times per turn and lasts <color=#F74848>2</color> turns. Additionally, gains <buf ID=7100701>[Defensive Stance I]</buf>. Can only trigger <color=#F74848>1</color> time per turn.",
             "type": "Order",
             "Ap": "1",
             "CD": "2",
@@ -74562,7 +74562,7 @@
                 "PassiveSkill": {
                   "ID": "600012",
                   "name": "Armor Specialization 1",
-                  "SpecificEffects": "DMG <color=#F74848>+20%</color> on Retaliation.",
+                  "SpecificEffects": "DMG <color=#F74848>+20%</color> on retaliation.",
                   "BufCarried": "6000121",
                   "SkillIcon": "Icon_skill_passive_2002",
                   "icon": "Icon_skill_passive_2002",
@@ -74613,7 +74613,7 @@
                 "PassiveSkill": {
                   "ID": "600021",
                   "name": "Entrenched 3",
-                  "SpecificEffects": "<buf ID=900022>[Guard]</buf>'s effective times per turn <color=#F74848>+1</color>.",
+                  "SpecificEffects": "<buf ID=900022>[Guard]</buf> triggers per turn <color=#F74848>+1</color>.",
                   "BufCarried": "6000211/6000212",
                   "SkillIcon": "Icon_skill_passive_2001",
                   "icon": "Icon_skill_passive_2001",
@@ -74632,7 +74632,7 @@
                 "PassiveSkill": {
                   "ID": "600022",
                   "name": "Armor Specialization 2",
-                  "SpecificEffects": "When performing <buf ID=900022>[Guard]</buf>, restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>1</color> time per turn.",
+                  "SpecificEffects": "When performing <buf ID=900022>[Guard]</buf>, restores <color=#F74848>1</color> AP after combat. Can only trigger <color=#F74848>1</color> time per turn.",
                   "BufCarried": "6000221",
                   "SkillIcon": "Icon_skill_passive_2002",
                   "icon": "Icon_skill_passive_2002",
@@ -74683,7 +74683,7 @@
                 "PassiveSkill": {
                   "ID": "601131",
                   "name": "Survival Protocol 1",
-                  "SpecificEffects": "When actively attacked, if a Dodge is triggered, recovers <color=#F74848>4%</color> max HP to all undestroyed parts. For each <color=#F74848>1</color> hit dodged, additionally recovers <color=#F74848>1%</color> more HP, up to <color=#F74848>8%</color> additional HP.",
+                  "SpecificEffects": "When dodging an active attack, restores <color=#F74848>4%</color> HP to undestroyed parts after combat. For each <color=#F74848>1</color> combo hit dodged, additionally restores <color=#F74848>1%</color> HP, up to an additional <color=#F74848>8%</color> HP.",
                   "BufCarried": "6011311/6011313/6011315",
                   "SkillIcon": "Icon_skill_passive_3135",
                   "icon": "Icon_skill_passive_3135",
@@ -74720,7 +74720,7 @@
                 "PassiveSkill": {
                   "ID": "600033",
                   "name": "Adaptive Warfare 1",
-                  "SpecificEffects": "At the end of the action, if an Active Attack was not initiated this turn, an extra <color=#F74848>2</color> tiles can be moved.",
+                  "SpecificEffects": "At end of action, if no active attacks were used this turn, can move an extra <color=#F74848>2</color> tiles.",
                   "BufCarried": "6000331",
                   "SkillIcon": "Icon_skill_passive_5155",
                   "icon": "Icon_skill_passive_5155",
@@ -74739,7 +74739,7 @@
                 "PassiveSkill": {
                   "ID": "601134",
                   "name": "Survival Protocol 2",
-                  "SpecificEffects": "When completely dodging an attack, <buf ID=6011311>[Survival Protocol 1]</buf> effect can additionally restore <color=#F74848>1</color> destroyed part.",
+                  "SpecificEffects": "When completely dodging an attack, <buf ID=6011311>[Survival Protocol 1]</buf> can additionally repair <color=#F74848>1</color> destroyed part.",
                   "BufCarried": "6011341",
                   "SkillIcon": "Icon_skill_passive_3135",
                   "icon": "Icon_skill_passive_3135",
@@ -74777,7 +74777,7 @@
                 "PassiveSkill": {
                   "ID": "601136",
                   "name": "Survival Protocol 4",
-                  "SpecificEffects": "<buf ID=6011311>[Survival Protocol 1]</buf> after-combat recovery increases to <color=#F74848>10%</color> max HP for all undestroyed parts.",
+                  "SpecificEffects": "<buf ID=6011311>[Survival Protocol 1]</buf> additionally restores <color=#F74848>10%</color> HP to undestroyed parts after combat.",
                   "BufCarried": "6011361/6011363",
                   "SkillIcon": "Icon_skill_passive_3135",
                   "icon": "Icon_skill_passive_3135",
@@ -74810,7 +74810,7 @@
                 "PassiveSkill": {
                   "ID": "601141",
                   "name": "Predatory Impulse 1",
-                  "SpecificEffects": "After using <skill activeSkill=6011501>[Polearm Throw]</skill> for <color=#F74848>3</color> times, the next active attack will not consume AP, and can trigger <buf ID=900004>[Re-ATK]</buf>, allowing movement of <color=#F74848>2</color> tiles before attacking. This effect is removed after triggering.",
+                  "SpecificEffects": "After triggering <skill activeSkill=6011501>[Polearm Toss]</skill> <color=#F74848>3</color> times, the next active attack does not consume AP and triggers <buf ID=900004>[Re-ATK]</buf> after attacking. Can move <color=#F74848>2</color> tiles before attacking. Removed after triggering.",
                   "BufCarried": "6011411",
                   "SkillIcon": "Icon_skill_passive_5268",
                   "icon": "Icon_skill_passive_5268",
@@ -74847,7 +74847,7 @@
                 "PassiveSkill": {
                   "ID": "600043",
                   "name": "Entrenched 4",
-                  "SpecificEffects": "<buf ID=900022>[Guard]</buf> can now be triggered an unlimited number of times per turn.",
+                  "SpecificEffects": "<buf ID=900022>[Guard]</buf> can now trigger an unlimited number of times per turn.",
                   "BufCarried": "6000431/6000432",
                   "SkillIcon": "Icon_skill_passive_2002",
                   "icon": "Icon_skill_passive_2002",
@@ -74866,7 +74866,7 @@
                 "PassiveSkill": {
                   "ID": "601144",
                   "name": "Predatory Impulse 2",
-                  "SpecificEffects": "AP recovery <color=#F74848>+1</color>.",
+                  "SpecificEffects": "AP Regen <color=#F74848>+1</color>.",
                   "BufCarried": "6011441/6011453",
                   "SkillIcon": "Icon_skill_passive_5268",
                   "icon": "Icon_skill_passive_5268",
@@ -74885,7 +74885,7 @@
                 "PassiveSkill": {
                   "ID": "601145",
                   "name": "Predatory Impulse 3",
-                  "SpecificEffects": "After activating <skill activeSkill=6011501>[Polearm Throw]</skill>, applies <buf ID=6011014>[Provocation]</buf> to all targets hit, lasting for <color=#F74848>2</color> turns.",
+                  "SpecificEffects": "After activating <skill activeSkill=6011501>[Polearm Toss]</skill>, applies <buf ID=6011014>[Provocation]</buf> to all targets hit, lasting for <color=#F74848>2</color> turns.",
                   "BufCarried": "6011454",
                   "SkillIcon": "Icon_skill_passive_5268",
                   "icon": "Icon_skill_passive_5268",
@@ -74904,7 +74904,7 @@
                 "PassiveSkill": {
                   "ID": "601146",
                   "name": "Predatory Impulse 4",
-                  "SpecificEffects": "<skill activeSkill=6011501>[Polearm Throw]</skill> DMG dealt increases to <color=#F74848>1x</color> AoE DMG.",
+                  "SpecificEffects": "<skill activeSkill=6011501>[Polearm Toss]</skill> DMG increased to <color=#F74848>1x</color> AoE DMG.",
                   "BufCarried": "6011461",
                   "SkillIcon": "Icon_skill_passive_5268",
                   "icon": "Icon_skill_passive_5268",
@@ -74943,7 +74943,7 @@
           "skill": {
             "ID": "600001",
             "name": "Entrenched 1",
-            "SpecificEffects": "Trigger <buf ID=900022>[Guard]</buf> to protect adjacent (<color=#F74848>1</color> tile) allies from Assault and Ranged attacks, effective up to <color=#F74848>2</color> times per turn.",
+            "SpecificEffects": "Triggers <buf ID=900022>[Guard]</buf> to protect allies within <color=#F74848>1</color> adjacent tile from Assault and Ranged attacks. Can trigger up to <color=#F74848>2</color> times per turn.",
             "BufCarried": "6000011",
             "SkillIcon": "Icon_skill_passive_2001",
             "icon": "Icon_skill_passive_2001",
@@ -75134,7 +75134,7 @@
           "skill": {
             "ID": "601102",
             "name": "Unbreakable Will",
-            "SpecificEffects": "When both arms are intact, DMG taken on arms are reduced by <color=#F74848>25%</color>.",
+            "SpecificEffects": "When both Arms are intact, Arm DMG Taken <color=#F74848>-25%</color>.",
             "BufCarried": "6011021",
             "SkillIcon": "Icon_skill_passive_2111",
             "icon": "Icon_skill_passive_2111",
@@ -75160,7 +75160,7 @@
             "ID": "601103",
             "remarks": "\u4f50\u4f0a-\u4eff\u751f\u7535\u8111",
             "name": "Encroach",
-            "describe": "Uses a Polearm to attack a target, dealing <color=#F74848>1.5x</color> DMG. When being retaliated against, gains <color=#F74848>20%</color> Dodge Rate.",
+            "describe": "Uses a Polearm to attack a target, dealing <color=#F74848>1.5x</color> DMG. Dodge Rate <color=#F74848>+20%</color> when retaliated against.",
             "type": "EquipmentSkill",
             "Ap": "2",
             "matchingWeaponType": "\u957f\u67c4",
@@ -75215,7 +75215,7 @@
           "skill": {
             "ID": "601105",
             "name": "Seize Momentum",
-            "SpecificEffects": "When completely dodging an attack, recovers <color=#F74848>1</color> AP. This effect can trigger <color=#F74848>1</color> time per turn.",
+            "SpecificEffects": "After a perfect dodge, restores <color=#F74848>1</color> AP after combat. Can trigger up to <color=#F74848>1</color> time per turn.",
             "BufCarried": "6011051",
             "SkillIcon": "Icon_skill_passive_5129",
             "icon": "Icon_skill_passive_5129",
@@ -75294,7 +75294,7 @@
             "ID": "601108",
             "remarks": "\u4f50\u4f0a-\u4eff\u751f\u7535\u8111",
             "name": "Final Verdict",
-            "describe": "Selects an empty tile within <range type=0>4-adjacent</range> tiles, jumps to the target type and uses Polearm to deal <color=#F74848>1.1x</color> AoE DMG to all enemies within <range type=1>2-adjacent</range> tiles of the target, inflicting <buf ID=6011014>[Provocation]</buf> on all enemies hit, lasting for <color=#F74848>2</color> turns.",
+            "describe": "Jumps to any empty tile within <range type=0>4 adjacent tiles</range>, then uses a Polearm to deal <color=#F74848>1.1x</color> AoE DMG to all enemy targets within <range type=1>2 tiles</range>. Applies <buf ID=6011014>[Provocation]</buf> to all targets hit, lasting for <color=#F74848>2</color> turns.",
             "type": "SpecialAssault",
             "Ap": "4",
             "matchingWeaponType": "\u957f\u67c4",
@@ -75583,7 +75583,7 @@
           "type": "Order",
           "Ap": "1",
           "CD": "2",
-          "describe": "Protects allies within <color=#F74848>2</color> adjacent tiles from assault and ranged attacks, up to <color=#F74848>2</color> times per turn, lasting for <color=#F74848>2</color> turns. Additionally inflicts <buf ID=6011014>[Provocation]</buf> on all enemies within <color=#F74848>2</color> adjacent tiles for <color=#F74848>2</color> turns."
+          "describe": "Protects allies within <color=#F74848>2</color> adjacent tiles from Assault and Ranged attacks. Can trigger up to <color=#F74848>2</color> times per turn. Lasts for <color=#F74848>2</color> turns. Also applies <buf ID=6011014>[Provocation]</buf> to all enemy units within <color=#F74848>2</color> adjacent tiles, lasting for <color=#F74848>2</color> turns."
         }
       ],
       "statRanks": {
@@ -75649,7 +75649,7 @@
                 "PassiveSkill": {
                   "ID": "300011",
                   "name": "Sniper Warfare 2",
-                  "SpecificEffects": "After breaking a part, trigger <buf ID=900004>[Re-ATK]</buf>.",
+                  "SpecificEffects": "[Sniper Warfare 1] can trigger after destroying a part.",
                   "BufCarried": "3000111",
                   "SkillIcon": "Icon_skill_passive_5008",
                   "icon": "Icon_skill_passive_5008",
@@ -75725,7 +75725,7 @@
                 "PassiveSkill": {
                   "ID": "300021",
                   "name": "Sniper Warfare 3",
-                  "SpecificEffects": "Upon triggering <buf ID=900004>[Re-ATK]</buf>, allows movement of <color=#F74848>2</color> tiles before attacking.",
+                  "SpecificEffects": "Upon triggering [Sniper Warfare 1]'s <buf ID=900004>[Re-ATK]</buf>, can move <color=#F74848>2</color> tiles before attacking.",
                   "BufCarried": "3000211/3000212",
                   "SkillIcon": "Icon_skill_passive_5008",
                   "icon": "Icon_skill_passive_5008",
@@ -75746,7 +75746,7 @@
                 "PassiveSkill": {
                   "ID": "300022",
                   "name": "Power Innovation 2",
-                  "SpecificEffects": "When breaking a part, restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>1</color> time per turn.",
+                  "SpecificEffects": "When destroying a part, restores <color=#F74848>1</color> AP after combat. Can only trigger <color=#F74848>1</color> time per turn.",
                   "BufCarried": "3000221",
                   "SkillIcon": "Icon_skill_passive_5006",
                   "icon": "Icon_skill_passive_5006",
@@ -75843,7 +75843,7 @@
                 "PassiveSkill": {
                   "ID": "300033",
                   "name": "Sniper Warfare 4",
-                  "SpecificEffects": "<buf ID=900004>[Re-ATK]</buf>'s effective times per turn <color=#F74848>+1</color>.",
+                  "SpecificEffects": "<buf ID=900004>[Re-ATK]</buf> trigger chances per turn <color=#F74848>+1</color>.",
                   "BufCarried": "3000331/3000332/3000333/3000334",
                   "SkillIcon": "Icon_skill_passive_5008",
                   "icon": "Icon_skill_passive_5008",
@@ -75983,7 +75983,7 @@
                 "PassiveSkill": {
                   "ID": "300043",
                   "name": "Power Innovation 3",
-                  "SpecificEffects": "When destroying a target, additionally restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>2</color> times per turn.",
+                  "SpecificEffects": "When destroying a target, additionally restores <color=#F74848>1</color> AP after combat. Can trigger up to <color=#F74848>2</color> times per turn.",
                   "BufCarried": "3000431",
                   "SkillIcon": "Icon_skill_passive_5006",
                   "icon": "Icon_skill_passive_5006",
@@ -76089,7 +76089,7 @@
           "skill": {
             "ID": "300001",
             "name": "Sniper Warfare 1",
-            "SpecificEffects": "When destroying a target, <buf ID=900004>[Re-ATK]</buf> can be triggered, effective up to <color=#F74848>2</color> times per turn. Unable to move before attacking.",
+            "SpecificEffects": "After destroying the target, triggers <buf ID=900004>[Re-ATK]</buf>. Can trigger up to <color=#F74848>2</color> times per turn. Unable to move before attacking.",
             "BufCarried": "3000011",
             "SkillIcon": "Icon_skill_passive_5008",
             "icon": "Icon_skill_passive_5008",
@@ -76855,7 +76855,7 @@
                 "PassiveSkill": {
                   "ID": "600012",
                   "name": "Armor Specialization 1",
-                  "SpecificEffects": "DMG <color=#F74848>+20%</color> on Retaliation.",
+                  "SpecificEffects": "DMG <color=#F74848>+20%</color> on retaliation.",
                   "BufCarried": "6000121",
                   "SkillIcon": "Icon_skill_passive_2002",
                   "icon": "Icon_skill_passive_2002",
@@ -76911,7 +76911,7 @@
                 "PassiveSkill": {
                   "ID": "600021",
                   "name": "Entrenched 3",
-                  "SpecificEffects": "<buf ID=900022>[Guard]</buf>'s effective times per turn <color=#F74848>+1</color>.",
+                  "SpecificEffects": "<buf ID=900022>[Guard]</buf> triggers per turn <color=#F74848>+1</color>.",
                   "BufCarried": "6000211/6000212",
                   "SkillIcon": "Icon_skill_passive_2001",
                   "icon": "Icon_skill_passive_2001",
@@ -76932,7 +76932,7 @@
                 "PassiveSkill": {
                   "ID": "600022",
                   "name": "Armor Specialization 2",
-                  "SpecificEffects": "When performing <buf ID=900022>[Guard]</buf>, restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>1</color> time per turn.",
+                  "SpecificEffects": "When performing <buf ID=900022>[Guard]</buf>, restores <color=#F74848>1</color> AP after combat. Can only trigger <color=#F74848>1</color> time per turn.",
                   "BufCarried": "6000221",
                   "SkillIcon": "Icon_skill_passive_2002",
                   "icon": "Icon_skill_passive_2002",
@@ -77029,7 +77029,7 @@
                 "PassiveSkill": {
                   "ID": "600033",
                   "name": "Adaptive Warfare 1",
-                  "SpecificEffects": "At the end of the action, if an Active Attack was not initiated this turn, an extra <color=#F74848>2</color> tiles can be moved.",
+                  "SpecificEffects": "At end of action, if no active attacks were used this turn, can move an extra <color=#F74848>2</color> tiles.",
                   "BufCarried": "6000331",
                   "SkillIcon": "Icon_skill_passive_5155",
                   "icon": "Icon_skill_passive_5155",
@@ -77169,7 +77169,7 @@
                 "PassiveSkill": {
                   "ID": "600043",
                   "name": "Entrenched 4",
-                  "SpecificEffects": "<buf ID=900022>[Guard]</buf> can now be triggered an unlimited number of times per turn.",
+                  "SpecificEffects": "<buf ID=900022>[Guard]</buf> can now trigger an unlimited number of times per turn.",
                   "BufCarried": "6000431/6000432",
                   "SkillIcon": "Icon_skill_passive_2002",
                   "icon": "Icon_skill_passive_2002",
@@ -77275,7 +77275,7 @@
           "skill": {
             "ID": "600001",
             "name": "Entrenched 1",
-            "SpecificEffects": "Trigger <buf ID=900022>[Guard]</buf> to protect adjacent (<color=#F74848>1</color> tile) allies from Assault and Ranged attacks, effective up to <color=#F74848>2</color> times per turn.",
+            "SpecificEffects": "Triggers <buf ID=900022>[Guard]</buf> to protect allies within <color=#F74848>1</color> adjacent tile from Assault and Ranged attacks. Can trigger up to <color=#F74848>2</color> times per turn.",
             "BufCarried": "6000011",
             "SkillIcon": "Icon_skill_passive_2001",
             "icon": "Icon_skill_passive_2001",
@@ -77533,7 +77533,7 @@
             "ID": "600204",
             "remarks": "\u5b89\u5a1c-\u4eff\u751f\u7535\u8111",
             "name": "Step Forward",
-            "describe": "Protects adjacent (<color=#F74848>2</color> tiles) allies from Assault and Ranged attacks, effective up to <color=#F74848>2</color> times per turn. Gains <buf ID=7100701>[Passive Repair]</buf>, effective <color=#F74848>2</color> times, lasting for <color=#F74848>1</color> turn.",
+            "describe": "Protects adjacent (<color=#F74848>2</color> tiles) allies from Assault and Ranged attacks, effective up to <color=#F74848>2</color> times per turn. Gains <buf ID=6002041>[Passive Repair]</buf>, effective <color=#F74848>2</color> times, lasting for <color=#F74848>1</color> turn.",
             "type": "Order",
             "CD": "3",
             "Ap": "2",
@@ -77954,7 +77954,7 @@
           "type": "Order",
           "Ap": "1",
           "CD": "2",
-          "describe": "Protects allies within <color=#F74848>2</color> adjacent tiles from Assault and Ranged attacks. Triggers up to <color=#F74848>2</color> times per turn and lasts <color=#F74848>2</color> turns. Additionally, gains <buf ID=7100702>[Defensive Stance I]</buf>. Can only trigger <color=#F74848>1</color> time per turn."
+          "describe": "Protects allies within <color=#F74848>2</color> adjacent tiles from Assault and Ranged attacks. Triggers up to <color=#F74848>2</color> times per turn and lasts <color=#F74848>2</color> turns. Additionally, gains <buf ID=7100701>[Defensive Stance I]</buf>. Can only trigger <color=#F74848>1</color> time per turn."
         }
       ],
       "statRanks": {
@@ -78041,7 +78041,7 @@
                 "PassiveSkill": {
                   "ID": "600012",
                   "name": "Armor Specialization 1",
-                  "SpecificEffects": "DMG <color=#F74848>+20%</color> on Retaliation.",
+                  "SpecificEffects": "DMG <color=#F74848>+20%</color> on retaliation.",
                   "BufCarried": "6000121",
                   "SkillIcon": "Icon_skill_passive_2002",
                   "icon": "Icon_skill_passive_2002",
@@ -78097,7 +78097,7 @@
                 "PassiveSkill": {
                   "ID": "600021",
                   "name": "Entrenched 3",
-                  "SpecificEffects": "<buf ID=900022>[Guard]</buf>'s effective times per turn <color=#F74848>+1</color>.",
+                  "SpecificEffects": "<buf ID=900022>[Guard]</buf> triggers per turn <color=#F74848>+1</color>.",
                   "BufCarried": "6000211/6000212",
                   "SkillIcon": "Icon_skill_passive_2001",
                   "icon": "Icon_skill_passive_2001",
@@ -78118,7 +78118,7 @@
                 "PassiveSkill": {
                   "ID": "600022",
                   "name": "Armor Specialization 2",
-                  "SpecificEffects": "When performing <buf ID=900022>[Guard]</buf>, restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>1</color> time per turn.",
+                  "SpecificEffects": "When performing <buf ID=900022>[Guard]</buf>, restores <color=#F74848>1</color> AP after combat. Can only trigger <color=#F74848>1</color> time per turn.",
                   "BufCarried": "6000221",
                   "SkillIcon": "Icon_skill_passive_2002",
                   "icon": "Icon_skill_passive_2002",
@@ -78215,7 +78215,7 @@
                 "PassiveSkill": {
                   "ID": "600033",
                   "name": "Adaptive Warfare 1",
-                  "SpecificEffects": "At the end of the action, if an Active Attack was not initiated this turn, an extra <color=#F74848>2</color> tiles can be moved.",
+                  "SpecificEffects": "At end of action, if no active attacks were used this turn, can move an extra <color=#F74848>2</color> tiles.",
                   "BufCarried": "6000331",
                   "SkillIcon": "Icon_skill_passive_5155",
                   "icon": "Icon_skill_passive_5155",
@@ -78355,7 +78355,7 @@
                 "PassiveSkill": {
                   "ID": "600043",
                   "name": "Entrenched 4",
-                  "SpecificEffects": "<buf ID=900022>[Guard]</buf> can now be triggered an unlimited number of times per turn.",
+                  "SpecificEffects": "<buf ID=900022>[Guard]</buf> can now trigger an unlimited number of times per turn.",
                   "BufCarried": "6000431/6000432",
                   "SkillIcon": "Icon_skill_passive_2002",
                   "icon": "Icon_skill_passive_2002",
@@ -78461,7 +78461,7 @@
           "skill": {
             "ID": "600001",
             "name": "Entrenched 1",
-            "SpecificEffects": "Trigger <buf ID=900022>[Guard]</buf> to protect adjacent (<color=#F74848>1</color> tile) allies from Assault and Ranged attacks, effective up to <color=#F74848>2</color> times per turn.",
+            "SpecificEffects": "Triggers <buf ID=900022>[Guard]</buf> to protect allies within <color=#F74848>1</color> adjacent tile from Assault and Ranged attacks. Can trigger up to <color=#F74848>2</color> times per turn.",
             "BufCarried": "6000011",
             "SkillIcon": "Icon_skill_passive_2001",
             "icon": "Icon_skill_passive_2001",
@@ -79140,7 +79140,7 @@
           "type": "Order",
           "Ap": "1",
           "CD": "2",
-          "describe": "Protects allies within <color=#F74848>2</color> adjacent tiles from Assault and Ranged attacks. Triggers up to <color=#F74848>2</color> times per turn and lasts <color=#F74848>2</color> turns. Additionally, gains <buf ID=7100702>[Defensive Stance I]</buf>. Can only trigger <color=#F74848>1</color> time per turn."
+          "describe": "Protects allies within <color=#F74848>2</color> adjacent tiles from Assault and Ranged attacks. Triggers up to <color=#F74848>2</color> times per turn and lasts <color=#F74848>2</color> turns. Additionally, gains <buf ID=7100701>[Defensive Stance I]</buf>. Can only trigger <color=#F74848>1</color> time per turn."
         }
       ],
       "statRanks": {
@@ -79206,7 +79206,7 @@
                 "PassiveSkill": {
                   "ID": "300011",
                   "name": "Sniper Warfare 2",
-                  "SpecificEffects": "After breaking a part, trigger <buf ID=900004>[Re-ATK]</buf>.",
+                  "SpecificEffects": "[Sniper Warfare 1] can trigger after destroying a part.",
                   "BufCarried": "3000111",
                   "SkillIcon": "Icon_skill_passive_5008",
                   "icon": "Icon_skill_passive_5008",
@@ -79282,7 +79282,7 @@
                 "PassiveSkill": {
                   "ID": "300021",
                   "name": "Sniper Warfare 3",
-                  "SpecificEffects": "Upon triggering <buf ID=900004>[Re-ATK]</buf>, allows movement of <color=#F74848>2</color> tiles before attacking.",
+                  "SpecificEffects": "Upon triggering [Sniper Warfare 1]'s <buf ID=900004>[Re-ATK]</buf>, can move <color=#F74848>2</color> tiles before attacking.",
                   "BufCarried": "3000211/3000212",
                   "SkillIcon": "Icon_skill_passive_5008",
                   "icon": "Icon_skill_passive_5008",
@@ -79303,7 +79303,7 @@
                 "PassiveSkill": {
                   "ID": "300022",
                   "name": "Power Innovation 2",
-                  "SpecificEffects": "When breaking a part, restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>1</color> time per turn.",
+                  "SpecificEffects": "When destroying a part, restores <color=#F74848>1</color> AP after combat. Can only trigger <color=#F74848>1</color> time per turn.",
                   "BufCarried": "3000221",
                   "SkillIcon": "Icon_skill_passive_5006",
                   "icon": "Icon_skill_passive_5006",
@@ -79400,7 +79400,7 @@
                 "PassiveSkill": {
                   "ID": "300033",
                   "name": "Sniper Warfare 4",
-                  "SpecificEffects": "<buf ID=900004>[Re-ATK]</buf>'s effective times per turn <color=#F74848>+1</color>.",
+                  "SpecificEffects": "<buf ID=900004>[Re-ATK]</buf> trigger chances per turn <color=#F74848>+1</color>.",
                   "BufCarried": "3000331/3000332/3000333/3000334",
                   "SkillIcon": "Icon_skill_passive_5008",
                   "icon": "Icon_skill_passive_5008",
@@ -79540,7 +79540,7 @@
                 "PassiveSkill": {
                   "ID": "300043",
                   "name": "Power Innovation 3",
-                  "SpecificEffects": "When destroying a target, additionally restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>2</color> times per turn.",
+                  "SpecificEffects": "When destroying a target, additionally restores <color=#F74848>1</color> AP after combat. Can trigger up to <color=#F74848>2</color> times per turn.",
                   "BufCarried": "3000431",
                   "SkillIcon": "Icon_skill_passive_5006",
                   "icon": "Icon_skill_passive_5006",
@@ -79646,7 +79646,7 @@
           "skill": {
             "ID": "300001",
             "name": "Sniper Warfare 1",
-            "SpecificEffects": "When destroying a target, <buf ID=900004>[Re-ATK]</buf> can be triggered, effective up to <color=#F74848>2</color> times per turn. Unable to move before attacking.",
+            "SpecificEffects": "After destroying the target, triggers <buf ID=900004>[Re-ATK]</buf>. Can trigger up to <color=#F74848>2</color> times per turn. Unable to move before attacking.",
             "BufCarried": "3000011",
             "SkillIcon": "Icon_skill_passive_5008",
             "icon": "Icon_skill_passive_5008",
@@ -80463,7 +80463,7 @@
                 "PassiveSkill": {
                   "ID": "400021",
                   "name": "Strategic Strike 3",
-                  "SpecificEffects": "Tactical Weapons Reload CD <color=#F74848>-1</color>.",
+                  "SpecificEffects": "Tactical Weapon Reload Cooldown <color=#F74848>-1</color>.",
                   "BufCarried": "4000211",
                   "SkillIcon": "Icon_skill_passive_5012",
                   "icon": "Icon_skill_passive_5012",
@@ -80539,7 +80539,7 @@
                 "PassiveSkill": {
                   "ID": "400031",
                   "name": "Indiscriminate 1",
-                  "SpecificEffects": "After the first attack with a Tactical Weapon each turn, <buf ID=900004>[Re-ATK]</buf> can be triggered, with Final DMG <color=#F74848>-30%</color>, effective up to <color=#F74848>1</color> time per turn. Unable to move before attacking.",
+                  "SpecificEffects": "After the first attack with a Tactical Weapon each turn, <buf ID=900004>[Re-ATK]</buf> can trigger, with Final DMG <color=#F74848>-30%</color>. Can only trigger <color=#F74848>1</color> time per turn. Unable to move before attacking.",
                   "BufCarried": "4000311/4000312",
                   "SkillIcon": "Icon_skill_passive_5013",
                   "icon": "Icon_skill_passive_5013",
@@ -80580,7 +80580,7 @@
                 "PassiveSkill": {
                   "ID": "400033",
                   "name": "Strategic Strike 4",
-                  "SpecificEffects": "When <buf ID=900029>[Auto Load]</buf> is complete, restore <color=#F74848>1</color> AP.",
+                  "SpecificEffects": "When <buf ID=900029>[Auto Load]</buf> is complete, restores <color=#F74848>1</color> AP.",
                   "BufCarried": "4000331",
                   "SkillIcon": "Icon_skill_passive_5012",
                   "icon": "Icon_skill_passive_5012",
@@ -80622,7 +80622,7 @@
                 "PassiveSkill": {
                   "ID": "400035",
                   "name": "Indiscriminate 3",
-                  "SpecificEffects": "When <buf ID=900004>[Re-ATK]</buf> is triggered, allow continued moving with the remaining movement.",
+                  "SpecificEffects": "When triggering [Indiscriminate 1]'s <buf ID=900004>[Re-ATK]</buf> effect, this unit can move using any remaining Movement.",
                   "BufCarried": "4000351/4000312",
                   "SkillIcon": "Icon_skill_passive_5013",
                   "icon": "Icon_skill_passive_5013",
@@ -80643,7 +80643,7 @@
                 "PassiveSkill": {
                   "ID": "400036",
                   "name": "Indiscriminate 4",
-                  "SpecificEffects": "After triggering <buf ID=900004>[Re-ATK]</buf>, it no longer reduces final damage.",
+                  "SpecificEffects": "When triggering [Indiscriminate 1]'s <buf ID=900004>[Re-ATK]</buf> effect, Final Damage is not reduced.",
                   "BufCarried": "4000361",
                   "SkillIcon": "Icon_skill_passive_5013",
                   "icon": "Icon_skill_passive_5013",
@@ -80720,7 +80720,7 @@
                 "PassiveSkill": {
                   "ID": "400043",
                   "name": "Power Innovation 3",
-                  "SpecificEffects": "When destroying a target, additionally restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>2</color> times per turn.",
+                  "SpecificEffects": "When destroying a target, additionally restores <color=#F74848>1</color> AP after combat. Can trigger up to <color=#F74848>2</color> times per turn.",
                   "BufCarried": "4000431",
                   "SkillIcon": "Icon_skill_passive_5006",
                   "icon": "Icon_skill_passive_5006",
@@ -80826,7 +80826,7 @@
           "skill": {
             "ID": "400001",
             "name": "Strategic Strike 1",
-            "SpecificEffects": "When a Tactical Weapon runs out of ammo, trigger <buf ID=900029>[Auto Load]</buf>. This process takes <color=#F74848>3</color> turns.",
+            "SpecificEffects": "When a tactical weapon runs out of Ammo, triggers <buf ID=900029>[Auto Load]</buf>. This process takes <color=#F74848>3</color> turns.",
             "BufCarried": "4000011",
             "SkillIcon": "Icon_skill_passive_5012",
             "icon": "Icon_skill_passive_5012",
@@ -87574,7 +87574,7 @@
                 "PassiveSkill": {
                   "ID": "400021",
                   "name": "Strategic Strike 3",
-                  "SpecificEffects": "Tactical Weapons Reload CD <color=#F74848>-1</color>.",
+                  "SpecificEffects": "Tactical Weapon Reload Cooldown <color=#F74848>-1</color>.",
                   "BufCarried": "4000211",
                   "SkillIcon": "Icon_skill_passive_5012",
                   "icon": "Icon_skill_passive_5012",
@@ -87650,7 +87650,7 @@
                 "PassiveSkill": {
                   "ID": "400031",
                   "name": "Indiscriminate 1",
-                  "SpecificEffects": "After the first attack with a Tactical Weapon each turn, <buf ID=900004>[Re-ATK]</buf> can be triggered, with Final DMG <color=#F74848>-30%</color>, effective up to <color=#F74848>1</color> time per turn. Unable to move before attacking.",
+                  "SpecificEffects": "After the first attack with a Tactical Weapon each turn, <buf ID=900004>[Re-ATK]</buf> can trigger, with Final DMG <color=#F74848>-30%</color>. Can only trigger <color=#F74848>1</color> time per turn. Unable to move before attacking.",
                   "BufCarried": "4000311/4000312",
                   "SkillIcon": "Icon_skill_passive_5013",
                   "icon": "Icon_skill_passive_5013",
@@ -87691,7 +87691,7 @@
                 "PassiveSkill": {
                   "ID": "400033",
                   "name": "Strategic Strike 4",
-                  "SpecificEffects": "When <buf ID=900029>[Auto Load]</buf> is complete, restore <color=#F74848>1</color> AP.",
+                  "SpecificEffects": "When <buf ID=900029>[Auto Load]</buf> is complete, restores <color=#F74848>1</color> AP.",
                   "BufCarried": "4000331",
                   "SkillIcon": "Icon_skill_passive_5012",
                   "icon": "Icon_skill_passive_5012",
@@ -87733,7 +87733,7 @@
                 "PassiveSkill": {
                   "ID": "400035",
                   "name": "Indiscriminate 3",
-                  "SpecificEffects": "When <buf ID=900004>[Re-ATK]</buf> is triggered, allow continued moving with the remaining movement.",
+                  "SpecificEffects": "When triggering [Indiscriminate 1]'s <buf ID=900004>[Re-ATK]</buf> effect, this unit can move using any remaining Movement.",
                   "BufCarried": "4000351/4000312",
                   "SkillIcon": "Icon_skill_passive_5013",
                   "icon": "Icon_skill_passive_5013",
@@ -87754,7 +87754,7 @@
                 "PassiveSkill": {
                   "ID": "400036",
                   "name": "Indiscriminate 4",
-                  "SpecificEffects": "After triggering <buf ID=900004>[Re-ATK]</buf>, it no longer reduces final damage.",
+                  "SpecificEffects": "When triggering [Indiscriminate 1]'s <buf ID=900004>[Re-ATK]</buf> effect, Final Damage is not reduced.",
                   "BufCarried": "4000361",
                   "SkillIcon": "Icon_skill_passive_5013",
                   "icon": "Icon_skill_passive_5013",
@@ -87831,7 +87831,7 @@
                 "PassiveSkill": {
                   "ID": "400043",
                   "name": "Power Innovation 3",
-                  "SpecificEffects": "When destroying a target, additionally restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>2</color> times per turn.",
+                  "SpecificEffects": "When destroying a target, additionally restores <color=#F74848>1</color> AP after combat. Can trigger up to <color=#F74848>2</color> times per turn.",
                   "BufCarried": "4000431",
                   "SkillIcon": "Icon_skill_passive_5006",
                   "icon": "Icon_skill_passive_5006",
@@ -87937,7 +87937,7 @@
           "skill": {
             "ID": "400001",
             "name": "Strategic Strike 1",
-            "SpecificEffects": "When a Tactical Weapon runs out of ammo, trigger <buf ID=900029>[Auto Load]</buf>. This process takes <color=#F74848>3</color> turns.",
+            "SpecificEffects": "When a tactical weapon runs out of Ammo, triggers <buf ID=900029>[Auto Load]</buf>. This process takes <color=#F74848>3</color> turns.",
             "BufCarried": "4000011",
             "SkillIcon": "Icon_skill_passive_5012",
             "icon": "Icon_skill_passive_5012",
@@ -88167,7 +88167,7 @@
           "skill": {
             "ID": "700048",
             "name": "Sabotage",
-            "SpecificEffects": "During an Active Attack, deals an additional <color=#F74848>20%</color> DMG to the part with HP below <color=#F74848>50%</color>.",
+            "SpecificEffects": "When actively attacking, deals an additional <color=#F74848>20%</color> DMG to parts with HP below <color=#F74848>50%</color>.",
             "BufCarried": "7000481",
             "SkillIcon": "Icon_skill_passive_1009",
             "icon": "Icon_skill_passive_1009",
@@ -92234,7 +92234,7 @@
                 "PassiveSkill": {
                   "ID": "300011",
                   "name": "Sniper Warfare 2",
-                  "SpecificEffects": "After breaking a part, trigger <buf ID=900004>[Re-ATK]</buf>.",
+                  "SpecificEffects": "[Sniper Warfare 1] can trigger after destroying a part.",
                   "BufCarried": "3000111",
                   "SkillIcon": "Icon_skill_passive_5008",
                   "icon": "Icon_skill_passive_5008",
@@ -92310,7 +92310,7 @@
                 "PassiveSkill": {
                   "ID": "300021",
                   "name": "Sniper Warfare 3",
-                  "SpecificEffects": "Upon triggering <buf ID=900004>[Re-ATK]</buf>, allows movement of <color=#F74848>2</color> tiles before attacking.",
+                  "SpecificEffects": "Upon triggering [Sniper Warfare 1]'s <buf ID=900004>[Re-ATK]</buf>, can move <color=#F74848>2</color> tiles before attacking.",
                   "BufCarried": "3000211/3000212",
                   "SkillIcon": "Icon_skill_passive_5008",
                   "icon": "Icon_skill_passive_5008",
@@ -92331,7 +92331,7 @@
                 "PassiveSkill": {
                   "ID": "300022",
                   "name": "Power Innovation 2",
-                  "SpecificEffects": "When breaking a part, restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>1</color> time per turn.",
+                  "SpecificEffects": "When destroying a part, restores <color=#F74848>1</color> AP after combat. Can only trigger <color=#F74848>1</color> time per turn.",
                   "BufCarried": "3000221",
                   "SkillIcon": "Icon_skill_passive_5006",
                   "icon": "Icon_skill_passive_5006",
@@ -92428,7 +92428,7 @@
                 "PassiveSkill": {
                   "ID": "300033",
                   "name": "Sniper Warfare 4",
-                  "SpecificEffects": "<buf ID=900004>[Re-ATK]</buf>'s effective times per turn <color=#F74848>+1</color>.",
+                  "SpecificEffects": "<buf ID=900004>[Re-ATK]</buf> trigger chances per turn <color=#F74848>+1</color>.",
                   "BufCarried": "3000331/3000332/3000333/3000334",
                   "SkillIcon": "Icon_skill_passive_5008",
                   "icon": "Icon_skill_passive_5008",
@@ -92568,7 +92568,7 @@
                 "PassiveSkill": {
                   "ID": "300043",
                   "name": "Power Innovation 3",
-                  "SpecificEffects": "When destroying a target, additionally restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>2</color> times per turn.",
+                  "SpecificEffects": "When destroying a target, additionally restores <color=#F74848>1</color> AP after combat. Can trigger up to <color=#F74848>2</color> times per turn.",
                   "BufCarried": "3000431",
                   "SkillIcon": "Icon_skill_passive_5006",
                   "icon": "Icon_skill_passive_5006",
@@ -92674,7 +92674,7 @@
           "skill": {
             "ID": "300001",
             "name": "Sniper Warfare 1",
-            "SpecificEffects": "When destroying a target, <buf ID=900004>[Re-ATK]</buf> can be triggered, effective up to <color=#F74848>2</color> times per turn. Unable to move before attacking.",
+            "SpecificEffects": "After destroying the target, triggers <buf ID=900004>[Re-ATK]</buf>. Can trigger up to <color=#F74848>2</color> times per turn. Unable to move before attacking.",
             "BufCarried": "3000011",
             "SkillIcon": "Icon_skill_passive_5008",
             "icon": "Icon_skill_passive_5008",
@@ -93435,7 +93435,7 @@
                 "PassiveSkill": {
                   "ID": "600012",
                   "name": "Armor Specialization 1",
-                  "SpecificEffects": "DMG <color=#F74848>+20%</color> on Retaliation.",
+                  "SpecificEffects": "DMG <color=#F74848>+20%</color> on retaliation.",
                   "BufCarried": "6000121",
                   "SkillIcon": "Icon_skill_passive_2002",
                   "icon": "Icon_skill_passive_2002",
@@ -93491,7 +93491,7 @@
                 "PassiveSkill": {
                   "ID": "600021",
                   "name": "Entrenched 3",
-                  "SpecificEffects": "<buf ID=900022>[Guard]</buf>'s effective times per turn <color=#F74848>+1</color>.",
+                  "SpecificEffects": "<buf ID=900022>[Guard]</buf> triggers per turn <color=#F74848>+1</color>.",
                   "BufCarried": "6000211/6000212",
                   "SkillIcon": "Icon_skill_passive_2001",
                   "icon": "Icon_skill_passive_2001",
@@ -93512,7 +93512,7 @@
                 "PassiveSkill": {
                   "ID": "600022",
                   "name": "Armor Specialization 2",
-                  "SpecificEffects": "When performing <buf ID=900022>[Guard]</buf>, restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>1</color> time per turn.",
+                  "SpecificEffects": "When performing <buf ID=900022>[Guard]</buf>, restores <color=#F74848>1</color> AP after combat. Can only trigger <color=#F74848>1</color> time per turn.",
                   "BufCarried": "6000221",
                   "SkillIcon": "Icon_skill_passive_2002",
                   "icon": "Icon_skill_passive_2002",
@@ -93609,7 +93609,7 @@
                 "PassiveSkill": {
                   "ID": "600033",
                   "name": "Adaptive Warfare 1",
-                  "SpecificEffects": "At the end of the action, if an Active Attack was not initiated this turn, an extra <color=#F74848>2</color> tiles can be moved.",
+                  "SpecificEffects": "At end of action, if no active attacks were used this turn, can move an extra <color=#F74848>2</color> tiles.",
                   "BufCarried": "6000331",
                   "SkillIcon": "Icon_skill_passive_5155",
                   "icon": "Icon_skill_passive_5155",
@@ -93715,7 +93715,7 @@
           "skill": {
             "ID": "600001",
             "name": "Entrenched 1",
-            "SpecificEffects": "Trigger <buf ID=900022>[Guard]</buf> to protect adjacent (<color=#F74848>1</color> tile) allies from Assault and Ranged attacks, effective up to <color=#F74848>2</color> times per turn.",
+            "SpecificEffects": "Triggers <buf ID=900022>[Guard]</buf> to protect allies within <color=#F74848>1</color> adjacent tile from Assault and Ranged attacks. Can trigger up to <color=#F74848>2</color> times per turn.",
             "BufCarried": "6000011",
             "SkillIcon": "Icon_skill_passive_2001",
             "icon": "Icon_skill_passive_2001",
@@ -94209,7 +94209,7 @@
           "type": "Order",
           "Ap": "1",
           "CD": "2",
-          "describe": "Protects allies within <color=#F74848>2</color> adjacent tiles from Assault and Ranged attacks. Triggers up to <color=#F74848>2</color> times per turn and lasts <color=#F74848>2</color> turns. Additionally, gains <buf ID=7100702>[Defensive Stance I]</buf>. Can only trigger <color=#F74848>1</color> time per turn."
+          "describe": "Protects allies within <color=#F74848>2</color> adjacent tiles from Assault and Ranged attacks. Triggers up to <color=#F74848>2</color> times per turn and lasts <color=#F74848>2</color> turns. Additionally, gains <buf ID=7100701>[Defensive Stance I]</buf>. Can only trigger <color=#F74848>1</color> time per turn."
         }
       ],
       "statRanks": {
@@ -96859,7 +96859,7 @@
                 "PassiveSkill": {
                   "ID": "300011",
                   "name": "Sniper Warfare 2",
-                  "SpecificEffects": "After breaking a part, trigger <buf ID=900004>[Re-ATK]</buf>.",
+                  "SpecificEffects": "[Sniper Warfare 1] can trigger after destroying a part.",
                   "BufCarried": "3000111",
                   "SkillIcon": "Icon_skill_passive_5008",
                   "icon": "Icon_skill_passive_5008",
@@ -96935,7 +96935,7 @@
                 "PassiveSkill": {
                   "ID": "300021",
                   "name": "Sniper Warfare 3",
-                  "SpecificEffects": "Upon triggering <buf ID=900004>[Re-ATK]</buf>, allows movement of <color=#F74848>2</color> tiles before attacking.",
+                  "SpecificEffects": "Upon triggering [Sniper Warfare 1]'s <buf ID=900004>[Re-ATK]</buf>, can move <color=#F74848>2</color> tiles before attacking.",
                   "BufCarried": "3000211/3000212",
                   "SkillIcon": "Icon_skill_passive_5008",
                   "icon": "Icon_skill_passive_5008",
@@ -96956,7 +96956,7 @@
                 "PassiveSkill": {
                   "ID": "300022",
                   "name": "Power Innovation 2",
-                  "SpecificEffects": "When breaking a part, restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>1</color> time per turn.",
+                  "SpecificEffects": "When destroying a part, restores <color=#F74848>1</color> AP after combat. Can only trigger <color=#F74848>1</color> time per turn.",
                   "BufCarried": "3000221",
                   "SkillIcon": "Icon_skill_passive_5006",
                   "icon": "Icon_skill_passive_5006",
@@ -97053,7 +97053,7 @@
                 "PassiveSkill": {
                   "ID": "300033",
                   "name": "Sniper Warfare 4",
-                  "SpecificEffects": "<buf ID=900004>[Re-ATK]</buf>'s effective times per turn <color=#F74848>+1</color>.",
+                  "SpecificEffects": "<buf ID=900004>[Re-ATK]</buf> trigger chances per turn <color=#F74848>+1</color>.",
                   "BufCarried": "3000331/3000332/3000333/3000334",
                   "SkillIcon": "Icon_skill_passive_5008",
                   "icon": "Icon_skill_passive_5008",
@@ -97159,7 +97159,7 @@
           "skill": {
             "ID": "300001",
             "name": "Sniper Warfare 1",
-            "SpecificEffects": "When destroying a target, <buf ID=900004>[Re-ATK]</buf> can be triggered, effective up to <color=#F74848>2</color> times per turn. Unable to move before attacking.",
+            "SpecificEffects": "After destroying the target, triggers <buf ID=900004>[Re-ATK]</buf>. Can trigger up to <color=#F74848>2</color> times per turn. Unable to move before attacking.",
             "BufCarried": "3000011",
             "SkillIcon": "Icon_skill_passive_5008",
             "icon": "Icon_skill_passive_5008",
@@ -97794,7 +97794,7 @@
                 "PassiveSkill": {
                   "ID": "400021",
                   "name": "Strategic Strike 3",
-                  "SpecificEffects": "Tactical Weapons Reload CD <color=#F74848>-1</color>.",
+                  "SpecificEffects": "Tactical Weapon Reload Cooldown <color=#F74848>-1</color>.",
                   "BufCarried": "4000211",
                   "SkillIcon": "Icon_skill_passive_5012",
                   "icon": "Icon_skill_passive_5012",
@@ -97870,7 +97870,7 @@
                 "PassiveSkill": {
                   "ID": "400031",
                   "name": "Indiscriminate 1",
-                  "SpecificEffects": "After the first attack with a Tactical Weapon each turn, <buf ID=900004>[Re-ATK]</buf> can be triggered, with Final DMG <color=#F74848>-30%</color>, effective up to <color=#F74848>1</color> time per turn. Unable to move before attacking.",
+                  "SpecificEffects": "After the first attack with a Tactical Weapon each turn, <buf ID=900004>[Re-ATK]</buf> can trigger, with Final DMG <color=#F74848>-30%</color>. Can only trigger <color=#F74848>1</color> time per turn. Unable to move before attacking.",
                   "BufCarried": "4000311/4000312",
                   "SkillIcon": "Icon_skill_passive_5013",
                   "icon": "Icon_skill_passive_5013",
@@ -97911,7 +97911,7 @@
                 "PassiveSkill": {
                   "ID": "400033",
                   "name": "Strategic Strike 4",
-                  "SpecificEffects": "When <buf ID=900029>[Auto Load]</buf> is complete, restore <color=#F74848>1</color> AP.",
+                  "SpecificEffects": "When <buf ID=900029>[Auto Load]</buf> is complete, restores <color=#F74848>1</color> AP.",
                   "BufCarried": "4000331",
                   "SkillIcon": "Icon_skill_passive_5012",
                   "icon": "Icon_skill_passive_5012",
@@ -97953,7 +97953,7 @@
                 "PassiveSkill": {
                   "ID": "400035",
                   "name": "Indiscriminate 3",
-                  "SpecificEffects": "When <buf ID=900004>[Re-ATK]</buf> is triggered, allow continued moving with the remaining movement.",
+                  "SpecificEffects": "When triggering [Indiscriminate 1]'s <buf ID=900004>[Re-ATK]</buf> effect, this unit can move using any remaining Movement.",
                   "BufCarried": "4000351/4000312",
                   "SkillIcon": "Icon_skill_passive_5013",
                   "icon": "Icon_skill_passive_5013",
@@ -97974,7 +97974,7 @@
                 "PassiveSkill": {
                   "ID": "400036",
                   "name": "Indiscriminate 4",
-                  "SpecificEffects": "After triggering <buf ID=900004>[Re-ATK]</buf>, it no longer reduces final damage.",
+                  "SpecificEffects": "When triggering [Indiscriminate 1]'s <buf ID=900004>[Re-ATK]</buf> effect, Final Damage is not reduced.",
                   "BufCarried": "4000361",
                   "SkillIcon": "Icon_skill_passive_5013",
                   "icon": "Icon_skill_passive_5013",
@@ -98017,7 +98017,7 @@
           "skill": {
             "ID": "400001",
             "name": "Strategic Strike 1",
-            "SpecificEffects": "When a Tactical Weapon runs out of ammo, trigger <buf ID=900029>[Auto Load]</buf>. This process takes <color=#F74848>3</color> turns.",
+            "SpecificEffects": "When a tactical weapon runs out of Ammo, triggers <buf ID=900029>[Auto Load]</buf>. This process takes <color=#F74848>3</color> turns.",
             "BufCarried": "4000011",
             "SkillIcon": "Icon_skill_passive_5012",
             "icon": "Icon_skill_passive_5012",
@@ -101149,7 +101149,7 @@
                 "PassiveSkill": {
                   "ID": "300011",
                   "name": "Sniper Warfare 2",
-                  "SpecificEffects": "After breaking a part, trigger <buf ID=900004>[Re-ATK]</buf>.",
+                  "SpecificEffects": "[Sniper Warfare 1] can trigger after destroying a part.",
                   "BufCarried": "3000111",
                   "SkillIcon": "Icon_skill_passive_5008",
                   "icon": "Icon_skill_passive_5008",
@@ -101225,7 +101225,7 @@
                 "PassiveSkill": {
                   "ID": "300021",
                   "name": "Sniper Warfare 3",
-                  "SpecificEffects": "Upon triggering <buf ID=900004>[Re-ATK]</buf>, allows movement of <color=#F74848>2</color> tiles before attacking.",
+                  "SpecificEffects": "Upon triggering [Sniper Warfare 1]'s <buf ID=900004>[Re-ATK]</buf>, can move <color=#F74848>2</color> tiles before attacking.",
                   "BufCarried": "3000211/3000212",
                   "SkillIcon": "Icon_skill_passive_5008",
                   "icon": "Icon_skill_passive_5008",
@@ -101246,7 +101246,7 @@
                 "PassiveSkill": {
                   "ID": "300022",
                   "name": "Power Innovation 2",
-                  "SpecificEffects": "When breaking a part, restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>1</color> time per turn.",
+                  "SpecificEffects": "When destroying a part, restores <color=#F74848>1</color> AP after combat. Can only trigger <color=#F74848>1</color> time per turn.",
                   "BufCarried": "3000221",
                   "SkillIcon": "Icon_skill_passive_5006",
                   "icon": "Icon_skill_passive_5006",
@@ -101343,7 +101343,7 @@
                 "PassiveSkill": {
                   "ID": "300033",
                   "name": "Sniper Warfare 4",
-                  "SpecificEffects": "<buf ID=900004>[Re-ATK]</buf>'s effective times per turn <color=#F74848>+1</color>.",
+                  "SpecificEffects": "<buf ID=900004>[Re-ATK]</buf> trigger chances per turn <color=#F74848>+1</color>.",
                   "BufCarried": "3000331/3000332/3000333/3000334",
                   "SkillIcon": "Icon_skill_passive_5008",
                   "icon": "Icon_skill_passive_5008",
@@ -101449,7 +101449,7 @@
           "skill": {
             "ID": "300001",
             "name": "Sniper Warfare 1",
-            "SpecificEffects": "When destroying a target, <buf ID=900004>[Re-ATK]</buf> can be triggered, effective up to <color=#F74848>2</color> times per turn. Unable to move before attacking.",
+            "SpecificEffects": "After destroying the target, triggers <buf ID=900004>[Re-ATK]</buf>. Can trigger up to <color=#F74848>2</color> times per turn. Unable to move before attacking.",
             "BufCarried": "3000011",
             "SkillIcon": "Icon_skill_passive_5008",
             "icon": "Icon_skill_passive_5008",

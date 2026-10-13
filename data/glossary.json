@@ -757,12 +757,12 @@
    "effect": "DMG +25%."
   },
   "7100106": {
-   "name": "Hit Rate UP IV",
-   "effect": "Hit Rate +16%."
+   "name": "Hit Rate UP III",
+   "effect": "Hit Rate +12%."
   },
   "7100107": {
-   "name": "Hit Rate UP V",
-   "effect": "Hit Rate +20%."
+   "name": "Hit Rate UP IV",
+   "effect": "Hit Rate +16%."
   },
   "7100401": {
    "name": "Crit Rate UP I",
@@ -781,8 +781,8 @@
    "effect": "Crit Rate +20%."
   },
   "7100406": {
-   "name": "Crit Rate UP IV",
-   "effect": "Crit Rate +25%."
+   "name": "Crit Rate UP III",
+   "effect": "Crit Rate +20%."
   },
   "7100501": {
    "name": "Crit DMG UP I",
@@ -797,8 +797,8 @@
    "effect": "Armor +35%."
   },
   "7100701": {
-   "name": "Fully Prepared",
-   "effect": "For every 10% decrease in HP, DMG Taken -3%, up to 15%."
+   "name": "Defensive Stance I",
+   "effect": "DMG Taken -15%."
   },
   "7100702": {
    "name": "Defensive Stance II",
@@ -821,12 +821,12 @@
    "effect": "Dodge Rate -8%."
   },
   "7101104": {
-   "name": "Dodge Rate Down III",
-   "effect": "Dodge Rate -12%."
+   "name": "Dodge Rate Down II",
+   "effect": "Dodge Rate -8%."
   },
   "7101107": {
-   "name": "Dodge Rate Down V",
-   "effect": "Dodge Rate -20%."
+   "name": "Dodge Rate Down IV",
+   "effect": "Dodge Rate -16%."
   },
   "7101201": {
    "name": "DMG Down I",
@@ -997,27 +997,27 @@
    "effect": "Repair AMT +25%."
   },
   "900137": {
-   "name": "Battle Wound",
-   "effect": "Applies debuff based on the part hit: <buf ID=9001371>[Battle Wound - Body]</buf>, <buf ID=9001372>[Battle Wound - Left Arm]</buf>, <buf ID=9001373>[Battle Wound - Right Arm]</buf>, or <buf ID=9001374>[Battle Wound - Leg]</buf>."
+   "name": "Scar",
+   "effect": "Applies debuff based on the part hit: <buf ID=9001371>[Scar - Body]</buf>, <buf ID=9001372>[Scar - L-Arm]</buf>, <buf ID=9001373>[Scar - R-Arm]</buf>, or <buf ID=9001374>[Scar - Legs]</buf>."
   },
   "9001371": {
-   "name": "Battle Wound - Body",
+   "name": "Scar - Body",
    "effect": "Reduces AP by <color=#F74848>-1</color> when triggering <buf ID=900004>[Re-ATK]</buf>."
   },
   "9001372": {
-   "name": "Battle Wound - Left Arm",
+   "name": "Scar - L-Arm",
    "effect": "When actively attacking, reduces Final DMG by <color=#F74848>20%</color> for the first hit."
   },
   "9001373": {
-   "name": "Battle Wound - Right Arm",
+   "name": "Scar - R-Arm",
    "effect": "When actively attacking, if the number of hits are more than <color=#F74848>5</color>, reduces the number of hits by <color=#F74848>20%</color>."
   },
   "9001374": {
-   "name": "Battle Wound - Leg",
+   "name": "Scar - Legs",
    "effect": "When leg is intact, loses <color=#F74848>10%</color> of leg maximum HP while standing still, with an additional <color=#F74848>10%</color> for every tile moved. Effect removed after triggering."
   },
   "900141": {
-   "name": "Hunting",
+   "name": "Hunter's Boon",
    "effect": "Applies buff based on the part destroyed: Body grants <buf ID=9001411>[Precision]</buf>, Arms grants <buf ID=9001412>[Rapid]</buf>, Leg grants <buf ID=9001413>[Direct Shot]</buf>. All effects require a ranged weapon to activate, and are removed after triggering."
   },
   "9001411": {
@@ -1037,19 +1037,19 @@
    "effect": "Can be targeted by [Vengeance Strike] and [Vengeance Strike β]."
   },
   "4011502": {
-   "name": "Appointment",
+   "name": "Appointed",
    "effect": "[Colin] can select target within <color=#F74848>4</color> tiles of this unit with a cutter."
   },
   "4011043": {
-   "name": "Subtask - Defense",
+   "name": "BIT - Bulwark Mode",
    "effect": "When actively attacked, all intact parts gain temporary HP equal to <color=#F74848>18%</color> of their max HP. The temporary HP is removed after combat. This effect can trigger up to <color=#F74848>4</color> times per turn, and is removed at the start of next action."
   },
   "4011041": {
-   "name": "Subtask - Attack",
+   "name": "BIT - Assault Mode",
    "effect": "After this unit initiates combat, [Colin] uses cautter to perform a [Link Attack], dealing <color=#F74848>0.75x</color> DMG. This effect can trigger up to <color=#F74848>4</color> times per turn, and is removed at the start of next action."
   },
   "4011061": {
-   "name": "Clean Up",
+   "name": "Delayed Spray",
    "effect": "At the end of action or after being destroyed, [Colin] uses cutter to attack all enemies within <color=#F74848>3</color> tiles of this target, dealing <color=#F74848>0.8x</color> AoE DMG."
   },
   "6011014": {
@@ -1057,7 +1057,7 @@
    "effect": "If the distance to [Zoey] is less than or equal to <color=#F74848>6</color> blocks, only [Zoey] can be targeted by skills. Priority is lower than <buf ID=1012081>[Oath]</buf>. When attacking [Zoey], Hit Rate is reduced by <color=#F74848>15%</color>."
   },
   "6011042": {
-   "name": "Advantage",
+   "name": "Upper Hand",
    "effect": "Increases Dodge Rate by <color=#F74848>10%</color> per stack, up to <color=#F74848>3</color> stacks. <color=#F74848>1</color> stack is removed upon being attacked."
   },
   "1018041": {
@@ -1491,8 +1491,8 @@
    "effect": "DMG Taken from [Audrey] and <buf ID=3013504>[Personal Aide]</buf> increases by <color=#F74848>2.5%</color>, stacking up to <color=#F74848>10</color> times."
   },
   "7101004": {
-   "name": "Hit Rate Down III",
-   "effect": "Hit rate -15%."
+   "name": "Hit Rate Down II",
+   "effect": "Hit Rate -8%."
   },
   "guide:tracing-mark": {
    "name": "Tracing Mark",
@@ -1517,6 +1517,22 @@
   "3002512": {
    "name": "Focus II",
    "effect": "Crit Rate <color=#F74848>+5%</color>. Stacks up to <color=#F74848>5</color> times. It is removed after landing a critical hit."
+   },
+  "6005041": {
+   "name": "Fully Prepared",
+   "effect": "For every 10% decrease in HP, DMG Taken -3%, up to 15%."
+  },
+  "6002041": {
+   "name": "Passive Repair",
+   "effect": "After taking damage, restores <color=#F74848>20%</color> HP to the part with the lowest HP. Stacks up to <color=#F74848>2</color> times."
+  },
+  "900142": {
+   "name": "Hunter's Mark",
+   "effect": "When attacking with a Ranged Weapon and destroying a part, gains different [Hunter's Boon] effects based on the part type, up to <color=#F74848>2</color> times per turn."
+  },
+  "6011311": {
+   "name": "Survival Protocol 1",
+   "effect": "When attacked, for each combo hit dodged, restores <color=#F74848>1%</color> HP to undestroyed parts after combat, up to a maximum of <color=#F74848>8%</color>."
   }
  },
  "skill": {
@@ -1588,17 +1604,17 @@
    "Ap": "1",
    "CD": "0",
    "icon": "Icon_skill_order_5146",
-   "effect": "Selects <color=#F74848>1</color> enemy target carrying <buf ID=6010502>[Magnetic Lock]</buf>, consumes all Rail Gun ammo to attack all enemies within the selected <range type=1>1-tile cross-shaped</range>, <range type=2>3x3 square</range> or <range type=2>2-tile diamond</range> area. The number of attacks is equal to the ammo consumed, priotizing unhit targets. Each attack deals <color=#F74848>0.6x</color> DMG to the target and all enemies within <color=#F74848>1</color> adjacent tile. All attacks will prioritize hitting body. Repeat attacks on the same target deal <color=#F74848>60%</color> reduced DMG. Removes <buf ID=6010502>[Magnetic Lock]</buf> after the skill ends."
+   "effect": "Selects <color=#F74848>1</color> enemy unit on the battlefield affected by <buf ID=6010502>[Magnetic Lock]</buf>. Fires a Rail Gun, consuming all Ammo to attack targets within the selected <range type=1>1-tile cross-shaped</range>, <range type=2>3x3 square</range> or <range type=2>2-tile diamond</range> area. The number of attacks is equal to the amount of Ammo consumed, prioritizing strikes on different targets. Each attack deals <color=#F74848>0.6x</color> AoE DMG to the target and other enemy units within <color=#F74848>1</color> tile of its location, always targeting the Body. When repeatedly attacking the same target, DMG is reduced by <color=#F74848>60%</color>. After this skill ends, removes <buf ID=6010502>[Magnetic Lock]</buf> from all enemy units attacked."
   },
   "601051": {
    "name": "Vengeance Strike β",
    "Ap": "0",
    "CD": "0",
    "icon": "Icon_skill_order_5146",
-   "effect": "Uses Rail Gun to attack all enemies carrying <buf ID=6010502>[Magnetic Lock]</buf> in order from nearest to furthest. All attacks prioritize hitting body and priotize unhit targets. Each attack deals <color=#F74848>0.4x</color> DMG to the target and all enemies within <color=#F74848>1</color> adjacent tile. Repeat attacks on the same target deal <color=#F74848>60%</color> reduced DMG. This attack does not consume Rail Gun ammo and does not remove <buf ID=6010502>[Magnetic Lock]</buf>."
+   "effect": "Uses a Rail Gun to attack targets with <buf ID=6010502>[Magnetic Lock]</buf>. The number of attacks equals the Rail Gun's Ammo Capacity but does not consume Ammo. Targets are prioritized from near to far, preferring different targets. Each attack deals <color=#F74848>0.4x</color> AoE DMG to the target and other enemies within <color=#F74848>1</color> tile of its location, always targeting the Body. When repeatedly attacking the same target, DMG is reduced by <color=#F74848>60%</color>. This attack will not remove the target's <buf ID=6010502>[Magnetic Lock]</buf>."
   },
   "6011501": {
-   "name": "Polearm Throw",
+   "name": "Polearm Toss",
    "Ap": "0",
    "CD": "0",
    "icon": "Icon_skill_passive_5185",
@@ -1949,7 +1965,7 @@
    "Ap": "3",
    "CD": "0",
    "icon": "Icon_skill_main_2102",
-   "effect": "Uses Heavy Machine Gun to attack a target, dealing <color=#F74848>1.3x</color> DMG. Inflicts <buf ID=7101104>[Dodge Rate Down III]</buf> on the target hit, lasting for <color=#F74848>2</color> turns."
+   "effect": "Uses Heavy Machine Gun to attack a target, dealing <color=#F74848>1.3x</color> DMG. Inflicts <buf ID=7101104>[Dodge Rate Down II]</buf> on the target hit, lasting for <color=#F74848>2</color> turns."
   },
   "7300352": {
    "name": "Piercing Wind",

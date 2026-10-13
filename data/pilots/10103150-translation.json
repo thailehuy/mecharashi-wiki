@@ -16,7 +16,7 @@
     "600001": {
       "name": "Entrenched 1",
       "describe": "",
-      "SpecificEffects": "Trigger <buf ID=900022>[Guard]</buf> to protect adjacent (<color=#F74848>1</color> tile) allies from Assault and Ranged attacks, effective up to <color=#F74848>2</color> times per turn."
+      "SpecificEffects": "Triggers <buf ID=900022>[Guard]</buf> to protect allies within <color=#F74848>1</color> adjacent tile from Assault and Ranged attacks. Can trigger up to <color=#F74848>2</color> times per turn."
     },
     "600902": {
       "name": "Synchronized Strike",
@@ -66,7 +66,7 @@
     },
     "600012": {
       "name": "Armor Specialization 1",
-      "SpecificEffects": "DMG <color=#F74848>+20%</color> on Retaliation."
+      "SpecificEffects": "DMG <color=#F74848>+20%</color> on retaliation."
     },
     "600013": {
       "name": "AP Optimization 1",
@@ -74,11 +74,11 @@
     },
     "600021": {
       "name": "Entrenched 3",
-      "SpecificEffects": "<buf ID=900022>[Guard]</buf>'s effective times per turn <color=#F74848>+1</color>."
+      "SpecificEffects": "<buf ID=900022>[Guard]</buf> triggers per turn <color=#F74848>+1</color>."
     },
     "600022": {
       "name": "Armor Specialization 2",
-      "SpecificEffects": "When performing <buf ID=900022>[Guard]</buf>, restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>1</color> time per turn."
+      "SpecificEffects": "When performing <buf ID=900022>[Guard]</buf>, restores <color=#F74848>1</color> AP after combat. Can only trigger <color=#F74848>1</color> time per turn."
     },
     "600023": {
       "name": "AP Optimization 2",
@@ -86,7 +86,7 @@
     },
     "600931": {
       "name": "Phase Shift 1",
-      "SpecificEffects": "At the start of action, <buf ID=900089>[Balance]</buf> the HP% of all intact parts."
+      "SpecificEffects": "At start of action, balances the percentage of HP of all undestroyed parts with <buf ID=900089>[Balance]</buf>."
     },
     "600032": {
       "name": "AP Optimization 3",
@@ -94,11 +94,11 @@
     },
     "600033": {
       "name": "Adaptive Warfare 1",
-      "SpecificEffects": "At the end of the action, if an Active Attack was not initiated this turn, an extra <color=#F74848>2</color> tiles can be moved."
+      "SpecificEffects": "At end of action, if no active attacks were used this turn, can move an extra <color=#F74848>2</color> tiles."
     },
     "600934": {
       "name": "Phase Shift 2",
-      "SpecificEffects": "After <buf ID=900089>[Balance]</buf>, all intact parts additionally recover <color=#F74848>10%</color> HP."
+      "SpecificEffects": "After <buf ID=900089>[Balance]</buf>, all undestroyed parts additionally recover <color=#F74848>10%</color> HP."
     },
     "600935": {
       "name": "Phase Shift 3",
@@ -106,7 +106,7 @@
     },
     "600936": {
       "name": "Phase Shift 4",
-      "SpecificEffects": "After taking damage, if HP is below <color=#F74848>50%</color>, trigger <buf ID=900089>[Balance]</buf> and repair <color=#F74848>1</color> destroyed part. Can trigger again after <color=#F74848>3</color> turns."
+      "SpecificEffects": "After taking damage, if HP is below <color=#F74848>50%</color>, triggers <buf ID=900089>[Balance]</buf> and repairs <color=#F74848>1</color> destroyed part. Can trigger again after <color=#F74848>3</color> turns."
     },
     "600941": {
       "name": "Link Tactics 1",
@@ -118,7 +118,7 @@
     },
     "600043": {
       "name": "Entrenched 4",
-      "SpecificEffects": "<buf ID=900022>[Guard]</buf> can now be triggered an unlimited number of times per turn."
+      "SpecificEffects": "<buf ID=900022>[Guard]</buf> can now trigger an unlimited number of times per turn."
     },
     "600944": {
       "name": "Link Tactics 2",

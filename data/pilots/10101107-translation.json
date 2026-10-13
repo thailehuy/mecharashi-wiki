@@ -16,7 +16,7 @@
     "400001": {
       "name": "Strategic Strike 1",
       "describe": "",
-      "SpecificEffects": "When a Tactical Weapon runs out of ammo, trigger <buf ID=900029>[Auto Load]</buf>. This process takes <color=#F74848>3</color> turns."
+      "SpecificEffects": "When a tactical weapon runs out of Ammo, triggers <buf ID=900029>[Auto Load]</buf>. This process takes <color=#F74848>3</color> turns."
     },
     "400102": {
       "name": "Cluster Bomb",
@@ -59,7 +59,7 @@
     },
     "400021": {
       "name": "Strategic Strike 3",
-      "SpecificEffects": "Tactical Weapons Reload CD <color=#F74848>-1</color>."
+      "SpecificEffects": "Tactical Weapon Reload Cooldown <color=#F74848>-1</color>."
     },
     "400022": {
       "name": "Power Innovation 2",
@@ -71,7 +71,7 @@
     },
     "400031": {
       "name": "Indiscriminate 1",
-      "SpecificEffects": "After the first attack with a Tactical Weapon each turn, <buf ID=900004>[Re-ATK]</buf> can be triggered, with Final DMG <color=#F74848>-30%</color>, effective up to <color=#F74848>1</color> time per turn. Unable to move before attacking."
+      "SpecificEffects": "After the first attack with a Tactical Weapon each turn, <buf ID=900004>[Re-ATK]</buf> can trigger, with Final DMG <color=#F74848>-30%</color>. Can only trigger <color=#F74848>1</color> time per turn. Unable to move before attacking."
     },
     "400032": {
       "name": "AP Optimization 3",
@@ -79,7 +79,7 @@
     },
     "400033": {
       "name": "Strategic Strike 4",
-      "SpecificEffects": "When <buf ID=900029>[Auto Load]</buf> is complete, restore <color=#F74848>1</color> AP."
+      "SpecificEffects": "When <buf ID=900029>[Auto Load]</buf> is complete, restores <color=#F74848>1</color> AP."
     },
     "400034": {
       "name": "Indiscriminate 2",
@@ -87,11 +87,11 @@
     },
     "400035": {
       "name": "Indiscriminate 3",
-      "SpecificEffects": "When <buf ID=900004>[Re-ATK]</buf> is triggered, allow continued moving with the remaining movement."
+      "SpecificEffects": "When triggering [Indiscriminate 1]'s <buf ID=900004>[Re-ATK]</buf> effect, this unit can move using any remaining Movement."
     },
     "400036": {
       "name": "Indiscriminate 4",
-      "SpecificEffects": "After triggering <buf ID=900004>[Re-ATK]</buf>, it no longer reduces final damage."
+      "SpecificEffects": "When triggering [Indiscriminate 1]'s <buf ID=900004>[Re-ATK]</buf> effect, Final Damage is not reduced."
     }
   },
   "version": "1.0",

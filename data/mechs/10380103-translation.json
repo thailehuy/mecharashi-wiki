@@ -3,12 +3,12 @@
   "introduce": "KX-099HM Hector\nA third-generation Light ST manufactured by Kamadar, favored by special forces from multiple countries for its outstanding maneuverability in combat.\nAs the company's first independently developed high-end Light ST, the KX-099HM Hector effectively fills the gap in Kamadar's product line for high-mobility, strong-attack models. The new arashium alloy framework and sensor monitoring module, improved from the KX-098 Odysseus, combined with a miniaturized high-power propulsion system, allow the Hector to exceed the standard level of third-generation Light STs in terms of protection and mobility. Additionally, the Defiant Units installed at each joint are directly connected to the propulsion system, enabling partial energy recovery from emergency maneuvers and short-term storage, which is then released through the Armed System to achieve highly aggressive tactical counterattacks.",
   "modules": {
     "20564": {
-      "name": "Rebel Mod",
-      "SpecificEffects": "When attacked, for each <color=#F74848>1</color> hit dodged, DMG dealt increases by <color=#F74848>2.5%</color>, up to <color=#F74848>35%</color>. This effect is reduced by <color=#F74848>10%</color> at the end of turn."
+      "name": "Defiant Unit",
+      "SpecificEffects": "When attacked, for each <color=#F74848>1</color> attack dodged, gains DMG <color=#F74848>+2.5%</color>, up to <color=#F74848>35%</color>. At end of action, DMG <color=#F74848>-10%</color>."
     },
     "30468": {
-      "name": "Counterattack Mod",
-      "SpecificEffects": "When attacked, if the attacker hit rate is <color=#F74848>70%</color> or less, increases Retaliation DMG by <color=#F74848>24%</color>；\nAfter each Retaliation, skill multiplier is increased by <color=#F74848>+0.05</color>, up to <color=#F74848>+0.15</color>. This effect is removed at the end of turn."
+      "name": "Counterblade Mod",
+      "SpecificEffects": "When attacked, if the attacker's Hit Rate is less than or equal to <color=#F74848>70%</color>, Retaliation DMG Dealt <color=#F74848>+24%</color>.\nAfter each Retaliation, increases own skill multiplier by <color=#F74848>+0.05</color>, up to <color=#F74848>+0.15</color>. Resets at end of action."
     },
     "40044": {
       "name": "Dodge Mod",

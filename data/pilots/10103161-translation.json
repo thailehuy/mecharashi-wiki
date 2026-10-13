@@ -16,16 +16,16 @@
     "600001": {
       "name": "Entrenched 1",
       "describe": "",
-      "SpecificEffects": "Trigger <buf ID=900022>[Guard]</buf> to protect adjacent (<color=#F74848>1</color> tile) allies from Assault and Ranged attacks, effective up to <color=#F74848>2</color> times per turn."
+      "SpecificEffects": "Triggers <buf ID=900022>[Guard]</buf> to protect allies within <color=#F74848>1</color> adjacent tile from Assault and Ranged attacks. Can trigger up to <color=#F74848>2</color> times per turn."
     },
     "601102": {
       "name": "Unbreakable Will",
       "describe": "",
-      "SpecificEffects": "When both arms are intact, DMG taken on arms are reduced by <color=#F74848>25%</color>."
+      "SpecificEffects": "When both Arms are intact, Arm DMG Taken <color=#F74848>-25%</color>."
     },
     "601103": {
       "name": "Encroach",
-      "describe": "Uses a Polearm to attack a target, dealing <color=#F74848>1.5x</color> DMG. When being retaliated against, gains <color=#F74848>20%</color> Dodge Rate.",
+      "describe": "Uses a Polearm to attack a target, dealing <color=#F74848>1.5x</color> DMG. Dodge Rate <color=#F74848>+20%</color> when retaliated against.",
       "SpecificEffects": ""
     },
     "601104": {
@@ -36,7 +36,7 @@
     "601105": {
       "name": "Seize Momentum",
       "describe": "",
-      "SpecificEffects": "When completely dodging an attack, recovers <color=#F74848>1</color> AP. This effect can trigger <color=#F74848>1</color> time per turn."
+      "SpecificEffects": "After a perfect dodge, restores <color=#F74848>1</color> AP after combat. Can trigger up to <color=#F74848>1</color> time per turn."
     },
     "601106": {
       "name": "Lightning Hunt",
@@ -50,7 +50,7 @@
     },
     "601108": {
       "name": "Final Verdict",
-      "describe": "Selects an empty tile within <range type=0>4-adjacent</range> tiles, jumps to the target type and uses Polearm to deal <color=#F74848>1.1x</color> AoE DMG to all enemies within <range type=1>2-adjacent</range> tiles of the target, inflicting <buf ID=6011014>[Provocation]</buf> on all enemies hit, lasting for <color=#F74848>2</color> turns.",
+      "describe": "Jumps to any empty tile within <range type=0>4 adjacent tiles</range>, then uses a Polearm to deal <color=#F74848>1.1x</color> AoE DMG to all enemy targets within <range type=1>2 tiles</range>. Applies <buf ID=6011014>[Provocation]</buf> to all targets hit, lasting for <color=#F74848>2</color> turns.",
       "SpecificEffects": ""
     }
   },
@@ -61,7 +61,7 @@
     },
     "600012": {
       "name": "Armor Specialization 1",
-      "SpecificEffects": "DMG <color=#F74848>+20%</color> on Retaliation."
+      "SpecificEffects": "DMG <color=#F74848>+20%</color> on retaliation."
     },
     "600013": {
       "name": "AP Optimization 1",
@@ -69,11 +69,11 @@
     },
     "600021": {
       "name": "Entrenched 3",
-      "SpecificEffects": "<buf ID=900022>[Guard]</buf>'s effective times per turn <color=#F74848>+1</color>."
+      "SpecificEffects": "<buf ID=900022>[Guard]</buf> triggers per turn <color=#F74848>+1</color>."
     },
     "600022": {
       "name": "Armor Specialization 2",
-      "SpecificEffects": "When performing <buf ID=900022>[Guard]</buf>, restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>1</color> time per turn."
+      "SpecificEffects": "When performing <buf ID=900022>[Guard]</buf>, restores <color=#F74848>1</color> AP after combat. Can only trigger <color=#F74848>1</color> time per turn."
     },
     "600023": {
       "name": "AP Optimization 2",
@@ -81,7 +81,7 @@
     },
     "601131": {
       "name": "Survival Protocol 1",
-      "SpecificEffects": "When actively attacked, if a Dodge is triggered, recovers <color=#F74848>4%</color> max HP to all undestroyed parts. For each <color=#F74848>1</color> hit dodged, additionally recovers <color=#F74848>1%</color> more HP, up to <color=#F74848>8%</color> additional HP."
+      "SpecificEffects": "When dodging an active attack, restores <color=#F74848>4%</color> HP to undestroyed parts after combat. For each <color=#F74848>1</color> combo hit dodged, additionally restores <color=#F74848>1%</color> HP, up to an additional <color=#F74848>8%</color> HP."
     },
     "600032": {
       "name": "AP Optimization 3",
@@ -89,11 +89,11 @@
     },
     "600033": {
       "name": "Adaptive Warfare 1",
-      "SpecificEffects": "At the end of the action, if an Active Attack was not initiated this turn, an extra <color=#F74848>2</color> tiles can be moved."
+      "SpecificEffects": "At end of action, if no active attacks were used this turn, can move an extra <color=#F74848>2</color> tiles."
     },
     "601134": {
       "name": "Survival Protocol 2",
-      "SpecificEffects": "When completely dodging an attack, <buf ID=6011311>[Survival Protocol 1]</buf> effect can additionally restore <color=#F74848>1</color> destroyed part."
+      "SpecificEffects": "When completely dodging an attack, <buf ID=6011311>[Survival Protocol 1]</buf> can additionally repair <color=#F74848>1</color> destroyed part."
     },
     "601135": {
       "name": "Survival Protocol 3",
@@ -101,11 +101,11 @@
     },
     "601136": {
       "name": "Survival Protocol 4",
-      "SpecificEffects": "<buf ID=6011311>[Survival Protocol 1]</buf> after-combat recovery increases to <color=#F74848>10%</color> max HP for all undestroyed parts."
+      "SpecificEffects": "<buf ID=6011311>[Survival Protocol 1]</buf> additionally restores <color=#F74848>10%</color> HP to undestroyed parts after combat."
     },
     "601141": {
       "name": "Predatory Impulse 1",
-      "SpecificEffects": "After using <skill activeSkill=6011501>[Polearm Throw]</skill> for <color=#F74848>3</color> times, the next active attack will not consume AP, and can trigger <buf ID=900004>[Re-ATK]</buf>, allowing movement of <color=#F74848>2</color> tiles before attacking. This effect is removed after triggering."
+      "SpecificEffects": "After triggering <skill activeSkill=6011501>[Polearm Toss]</skill> <color=#F74848>3</color> times, the next active attack does not consume AP and triggers <buf ID=900004>[Re-ATK]</buf> after attacking. Can move <color=#F74848>2</color> tiles before attacking. Removed after triggering."
     },
     "600042": {
       "name": "AP Optimization 4",
@@ -113,19 +113,19 @@
     },
     "600043": {
       "name": "Entrenched 4",
-      "SpecificEffects": "<buf ID=900022>[Guard]</buf> can now be triggered an unlimited number of times per turn."
+      "SpecificEffects": "<buf ID=900022>[Guard]</buf> can now trigger an unlimited number of times per turn."
     },
     "601144": {
       "name": "Predatory Impulse 2",
-      "SpecificEffects": "AP recovery <color=#F74848>+1</color>."
+      "SpecificEffects": "AP Regen <color=#F74848>+1</color>."
     },
     "601145": {
       "name": "Predatory Impulse 3",
-      "SpecificEffects": "After activating <skill activeSkill=6011501>[Polearm Throw]</skill>, applies <buf ID=6011014>[Provocation]</buf> to all targets hit, lasting for <color=#F74848>2</color> turns."
+      "SpecificEffects": "After activating <skill activeSkill=6011501>[Polearm Toss]</skill>, applies <buf ID=6011014>[Provocation]</buf> to all targets hit, lasting for <color=#F74848>2</color> turns."
     },
     "601146": {
       "name": "Predatory Impulse 4",
-      "SpecificEffects": "<skill activeSkill=6011501>[Polearm Throw]</skill> DMG dealt increases to <color=#F74848>1x</color> AoE DMG."
+      "SpecificEffects": "<skill activeSkill=6011501>[Polearm Toss]</skill> DMG increased to <color=#F74848>1x</color> AoE DMG."
     }
   },
   "version": "2.5",
@@ -136,7 +136,7 @@
       "type": "Order",
       "Ap": "1",
       "CD": "2",
-      "describe": "Protects allies within <color=#F74848>2</color> adjacent tiles from assault and ranged attacks, up to <color=#F74848>2</color> times per turn, lasting for <color=#F74848>2</color> turns. Additionally inflicts <buf ID=6011014>[Provocation]</buf> on all enemies within <color=#F74848>2</color> adjacent tiles for <color=#F74848>2</color> turns."
+      "describe": "Protects allies within <color=#F74848>2</color> adjacent tiles from Assault and Ranged attacks. Can trigger up to <color=#F74848>2</color> times per turn. Lasts for <color=#F74848>2</color> turns. Also applies <buf ID=6011014>[Provocation]</buf> to all enemy units within <color=#F74848>2</color> adjacent tiles, lasting for <color=#F74848>2</color> turns."
     }
   ],
   "Introduction": "Colin's adjutant, a hot-headed and defiant man of action."

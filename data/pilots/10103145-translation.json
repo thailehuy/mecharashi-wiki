@@ -16,7 +16,7 @@
     "300001": {
       "name": "Sniper Warfare 1",
       "describe": "",
-      "SpecificEffects": "When destroying a target, <buf ID=900004>[Re-ATK]</buf> can be triggered, effective up to <color=#F74848>2</color> times per turn. Unable to move before attacking."
+      "SpecificEffects": "After destroying the target, triggers <buf ID=900004>[Re-ATK]</buf>. Can trigger up to <color=#F74848>2</color> times per turn. Unable to move before attacking."
     },
     "301402": {
       "name": "Boiling Blood",
@@ -57,7 +57,7 @@
   "neuralPassives": {
     "300011": {
       "name": "Sniper Warfare 2",
-      "SpecificEffects": "After breaking a part, trigger <buf ID=900004>[Re-ATK]</buf>."
+      "SpecificEffects": "[Sniper Warfare 1] can trigger after destroying a part."
     },
     "300012": {
       "name": "Power Innovation 1",
@@ -69,11 +69,11 @@
     },
     "300021": {
       "name": "Sniper Warfare 3",
-      "SpecificEffects": "Upon triggering <buf ID=900004>[Re-ATK]</buf>, allows movement of <color=#F74848>2</color> tiles before attacking."
+      "SpecificEffects": "Upon triggering [Sniper Warfare 1]'s <buf ID=900004>[Re-ATK]</buf>, can move <color=#F74848>2</color> tiles before attacking."
     },
     "300022": {
       "name": "Power Innovation 2",
-      "SpecificEffects": "When breaking a part, restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>1</color> time per turn."
+      "SpecificEffects": "When destroying a part, restores <color=#F74848>1</color> AP after combat. Can only trigger <color=#F74848>1</color> time per turn."
     },
     "300023": {
       "name": "AP Optimization 2",
@@ -81,7 +81,7 @@
     },
     "301231": {
       "name": "Hunter's Mark 1",
-      "SpecificEffects": "When actively attacking and breaking parts with a ranged weapon, gains <buf ID=900141>[Hunting]</buf> according to the part hit. Can trigger <color=#F74848>2</color> times per turn."
+      "SpecificEffects": "When actively attacking with a Ranged Weapon and destroying a part, gains different <buf ID=900141>[Hunter's Boon]</buf> effects based on the part type. Can only trigger <color=#F74848>2</color> times per turn."
     },
     "300032": {
       "name": "AP Optimization 3",
@@ -89,19 +89,19 @@
     },
     "300033": {
       "name": "Sniper Warfare 4",
-      "SpecificEffects": "<buf ID=900004>[Re-ATK]</buf>'s effective times per turn <color=#F74848>+1</color>."
+      "SpecificEffects": "<buf ID=900004>[Re-ATK]</buf> trigger chances per turn <color=#F74848>+1</color>."
     },
     "301234": {
       "name": "Hunter's Mark 2",
-      "SpecificEffects": "After actively attacking and destroying a target with a ranged weapon, can additionally move <color=#F74848>3</color> tiles."
+      "SpecificEffects": "When actively attacking with a Ranged Weapon, if the target is destroyed, can move an extra <color=#F74848>3</color> tiles."
     },
     "301235": {
       "name": "Hunter's Mark 3",
-      "SpecificEffects": "<buf ID=900142>[Hunter's Mark 1]</buf> no longer has trigger limit"
+      "SpecificEffects": "[Hunter's Mark 1] can now trigger an unlimited number of times per turn."
     },
     "301236": {
       "name": "Hunter's Mark 4",
-      "SpecificEffects": "At the start of action, randomly gains <color=#F74848>1</color> of unobtained <buf ID=900141>[Hunting]</buf> buffs."
+      "SpecificEffects": "At start of action, randomly gains <color=#F74848>1</color> unacquired <buf ID=900141>[Hunter's Boon]</buf> effect."
     },
     "301441": {
       "name": "I Am Legend! 1",
@@ -113,7 +113,7 @@
     },
     "300043": {
       "name": "Power Innovation 3",
-      "SpecificEffects": "When destroying a target, additionally restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>2</color> times per turn."
+      "SpecificEffects": "When destroying a target, additionally restores <color=#F74848>1</color> AP after combat. Can trigger up to <color=#F74848>2</color> times per turn."
     },
     "301444": {
       "name": "I Am Legend! 2",

@@ -62,7 +62,7 @@ WEAPONS = [
         'skillNames': ('Mighty Swing', 'Predator Hunt', 'Menace'),
         'skills': (
             "When attacking with a Polearm, DMG +15%, Hit Rate +10%. This effect doubles during the enemy turn.",
-            "Enhanced [Intrepid Fang]: When sortied, gains 2 stacks of [Advantage]. Stacks up to 3 times. At the end of action, for every 1 enemy within a 6 tile range inflicted with [Provocation], gains 1 stack of [Advantage]. When attacking with a Polearm, deals 35% Splash DMG to another part with the lowest HP percentage. For every 1 enemy inflicted with [Provocation] within a 6 tile range, attack multiplier +0.05, up to 0.2.",
+            "Enhanced [Intrepid Fang]: When sortied, gains 2 stacks of [Upper Hand]. Stacks up to 3 times. At the end of action, for every 1 enemy within a 6 tile range inflicted with [Provocation], gains 1 stack of [Upper Hand]. When attacking with a Polearm, deals 35% Splash DMG to another part with the lowest HP percentage. For every 1 enemy inflicted with [Provocation] within a 6 tile range, attack multiplier +0.05, up to 0.2.",
             "After attacking, inflicts target with [Hit Rate Down III] and [Dodge Rate Down II], lasting for 1 turn.",
         ),
     },

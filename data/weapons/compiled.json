@@ -1047,7 +1047,7 @@
         {
           "ID": "53111",
           "name": "Perfected Edge",
-          "SpecificEffects": "Enhanced [Covert Tactics]: For every <color=#F74848>1</color> ally on the field carrying <buf ID=4011502>[Appointment]</buf>, own Cutter skill multiplier <color=#F74848>+0.07</color>. When an ally carrying <buf ID=4011502>[Appointment]</buf> initiates combat, inflicts <buf ID=4011041>[Subtask - Attack]</buf> on them beforehand. Can trigger <color=#F74848>1</color> time per turn. If not triggered by the end of own action, grants <buf ID=4011043>[Subtask - Defense]</buf> to the lowest-HP ally carrying <buf ID=4011502>[Appointment]</buf>.",
+          "SpecificEffects": "Enhanced [Covert Tactics]: For every <color=#F74848>1</color> ally on the field carrying <buf ID=4011502>[Appointed]</buf>, own Cutter skill multiplier <color=#F74848>+0.07</color>. When an ally carrying <buf ID=4011502>[Appointed]</buf> initiates combat, inflicts <buf ID=4011041>[BIT - Assault Mode]</buf> on them beforehand. Can trigger <color=#F74848>1</color> time per turn. If not triggered by the end of own action, grants <buf ID=4011043>[BIT - Bulwark Mode]</buf> to the lowest-HP ally carrying <buf ID=4011502>[Appointed]</buf>.",
           "BufCarried": "531111/531112",
           "SkillIcon": "Icon_skill_passive_5298",
           "icon": "Icon_skill_passive_5298",
@@ -2834,7 +2834,7 @@
         {
           "ID": "90014",
           "name": "Predator Hunt",
-          "SpecificEffects": "Enhanced <skill mainSkill=601150>[Intrepid Fang]</skill>: When sortied, gains <color=#F74848>2</color> stacks of [Advantage]. Stacks up to <color=#F74848>3</color> times. At the end of action, for every <color=#F74848>1</color> enemy within a <color=#F74848>6</color> tile range inflicted with [Provocation], gains <color=#F74848>1</color> stack of [Advantage]. When attacking with a Polearm, deals <color=#F74848>70%</color> Splash DMG to another part with the lowest HP percentage. For every <color=#F74848>1</color> enemy inflicted with [Provocation] within a <color=#F74848>6</color> tile range, attack multiplier <color=#F74848>+0.1</color>, up to <color=#F74848>0.4</color>.",
+          "SpecificEffects": "Enhanced <skill mainSkill=601150>[Intrepid Fang]</skill>: When sortied, gains <color=#F74848>2</color> stacks of [Upper Hand]. Stacks up to <color=#F74848>3</color> times. At the end of action, for every <color=#F74848>1</color> enemy within a <color=#F74848>6</color> tile range inflicted with [Provocation], gains <color=#F74848>1</color> stack of [Upper Hand]. When attacking with a Polearm, deals <color=#F74848>70%</color> Splash DMG to another part with the lowest HP percentage. For every <color=#F74848>1</color> enemy inflicted with [Provocation] within a <color=#F74848>6</color> tile range, attack multiplier <color=#F74848>+0.1</color>, up to <color=#F74848>0.4</color>.",
           "SkillIcon": "Icon_skill_talent_5155",
           "icon": "Icon_skill_talent_5155",
           "Status": 1,
@@ -3725,7 +3725,7 @@
         {
           "ID": "53108",
           "name": "Trauma Collapse",
-          "SpecificEffects": "Enhanced [Trauma Profiling]: Active attack skills usable with <buf ID=900014>[Aiming]</buf> gain skill multiplier <color=#F74848>+0.25</color> and Crit Rate <color=#F74848>+15%</color>. When actively attacking a target with <buf ID=900137>[Battle Wound]</buf>, the target cannot retaliate; effective <color=#F74848>1</color> time per turn for each target. Restores <color=#F74848>1</color> AP after the first active attack each turn.",
+          "SpecificEffects": "Enhanced [Trauma Profiling]: Active attack skills usable with <buf ID=900014>[Aiming]</buf> gain skill multiplier <color=#F74848>+0.25</color> and Crit Rate <color=#F74848>+15%</color>. When actively attacking a target with <buf ID=900137>[Scar]</buf>, the target cannot retaliate; effective <color=#F74848>1</color> time per turn for each target. Restores <color=#F74848>1</color> AP after the first active attack each turn.",
           "BufCarried": "531081/531082/531083/531084",
           "SkillIcon": "Icon_skill_passive_5297",
           "icon": "Icon_skill_passive_5297",

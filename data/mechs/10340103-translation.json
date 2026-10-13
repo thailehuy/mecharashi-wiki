@@ -7,12 +7,12 @@
       "SpecificEffects": "Hit Rate <color=#F74848>+10%</color>."
     },
     "20534": {
-      "name": "Heartsplitter Mod",
-      "SpecificEffects": "During combat, for each <color=#F74848>1</color> debuff the target carries, increases own DMG dealt by <color=#F74848>5%</color> and target DMG taken by <color=#F74848>2%</color>, stacking up to <color=#F74848>5</color> times, lasting for <color=#F74848>2</color> turns."
+      "name": "Delphi System",
+      "SpecificEffects": "In battle, for each <color=#F74848>1</color> debuff inflicted, gains DMG Dealt <color=#F74848>+5%</color>, and the target takes <color=#F74848>2%</color> increased damage. Stacks up to <color=#F74848>5</color> times. Lasts for <color=#F74848>2</color> turns."
     },
     "30438": {
-      "name": "Aggression Mod",
-      "SpecificEffects": "When actively attacking, critical hit chance increases by <color=#F74848>20%</color>. If the attack does not score a critical hit, the next attack critical hit chance increases by additionally <color=#F74848>15%</color>. This effect is reset upon scoring a critical hit.\nWhen entering <buf ID=900014>[Aiming]</buf> Mode, the attack multiplier is increased by <color=#F74848>+0.1</color>."
+      "name": "Crit Lock Mod",
+      "SpecificEffects": "When actively attacking, Crit Rate <color=#F74848>+20%</color>. If a critical hit does not occur, Crit Rate increases by <color=#F74848>15%</color> for the next active attack. This effect can stack and is cleared upon landing a critical hit.\nWhen entering <buf ID=900014>[Aiming]</buf> Mode, skill multiplier <color=#F74848>+0.1</color>."
     }
   },
   "version": "2.4",
