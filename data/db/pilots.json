@@ -1,0 +1,5175 @@
+{
+  "10103118": {
+    "name": "Ada",
+    "real_name": "Ada Diaz",
+    "gender": "Female",
+    "profession": "Striker",
+    "occupation": "Fighter",
+    "quality": "SSR",
+    "license": "Light",
+    "portrait_icon": "Pilot_10103118A_half",
+    "avatar_icon": "Pilot_10103118A_Raw",
+    "version": "2.3",
+    "skins": [
+      "B"
+    ],
+    "introduction": "Captain of the Reversion Squad, a top pilot of the Dawnstar League, and one of only two perfect Hyper-Aptamers in the world.",
+    "talents": [
+      "101750",
+      "101751"
+    ],
+    "stats": {
+      "combat": "5216",
+      "assault": "2339",
+      "shooting": "1455",
+      "tactics": "1897",
+      "defense": "4331",
+      "engineering": "1307",
+      "ap_init": "5",
+      "ap_max": "5",
+      "ap_regen": "2"
+    },
+    "neural": [
+      {
+        "partition": "fighter-alpha",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "fighter-beta",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "10103118-gamma1",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "10103118-gamma2",
+        "slots": "Attack/Dodge/Dodge"
+      }
+    ],
+    "hidden_skills": [
+      {
+        "name": "Blitz Strike",
+        "icon": "Icon_skill_main_1159",
+        "type": "EquipmentSkill",
+        "Ap": "2",
+        "CD": "0",
+        "describe": "Attacks a target with two Alter-Blades, dealing <color=#F74848>0.85x</color> DMG <color=#F74848>2</color> times."
+      }
+    ]
+  },
+  "10103159": {
+    "name": "Adele",
+    "real_name": "Adele Martin",
+    "gender": "Female",
+    "profession": "Assault",
+    "occupation": "Raider",
+    "quality": "SSR",
+    "license": "Heavy",
+    "portrait_icon": "Pilot_10103159A_half",
+    "avatar_icon": "Pilot_10103159A_Raw",
+    "version": "2.2",
+    "skins": [
+      "B"
+    ],
+    "introduction": "A Harpy special envoy who moves through the fires of war with effortless ease—beautiful, enchanting, elegant, and impossible to read.",
+    "talents": [
+      "201850",
+      "201851"
+    ],
+    "stats": {
+      "combat": "2329",
+      "assault": "5027",
+      "shooting": "2486",
+      "tactics": "914",
+      "defense": "4062",
+      "engineering": "1700",
+      "ap_init": "5",
+      "ap_max": "5",
+      "ap_regen": "2"
+    },
+    "neural": [
+      {
+        "partition": "raider-alpha",
+        "slots": "Attack/Dodge/Dodge"
+      },
+      {
+        "partition": "raider-beta",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "10103159-gamma1",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "10103159-gamma2",
+        "slots": "Attack/Dodge/Dodge"
+      }
+    ],
+    "hidden_skills": [
+      {
+        "name": "Warm Greetings",
+        "icon": "Icon_skill_main_1151",
+        "type": "EquipmentSkill",
+        "Ap": "3",
+        "CD": "0",
+        "describe": "Uses a Flamethrower to attack the main target, dealing <color=#F74848>1.3x</color> DMG and dealing <color=#F74848>10%</color> <buf ID=900065>[Flame DMG]</buf> to other targets in the path. After combat, applies <terrian ID=4003081 /> to tiles hit, lasting for <color=#F74848>2</color> turns."
+      }
+    ]
+  },
+  "10103185": {
+    "name": "Alena",
+    "real_name": "Alena Vera",
+    "gender": "Female",
+    "profession": "Assault",
+    "occupation": "Raider",
+    "quality": "SSR",
+    "license": "Heavy",
+    "portrait_icon": "Pilot_13037A_half",
+    "avatar_icon": "Pilot_13037A_Raw",
+    "version": "3.5",
+    "talents": [
+      "185550",
+      "185551"
+    ],
+    "stats": {
+      "combat": "1858",
+      "assault": "5100",
+      "shooting": "1386",
+      "tactics": "2172",
+      "defense": "4023",
+      "engineering": "2015",
+      "ap_init": "5",
+      "ap_max": "5",
+      "ap_regen": "2"
+    },
+    "neural": [
+      {
+        "partition": "raider-alpha",
+        "slots": "Attack/Critical/Dodge"
+      },
+      {
+        "partition": "raider-beta",
+        "slots": "Attack/Critical/Critical"
+      },
+      {
+        "partition": "10103159-gamma1",
+        "slots": "Attack/Dodge/Dodge"
+      },
+      {
+        "partition": "10103185-gamma2",
+        "slots": "Attack/Dodge/Dodge"
+      }
+    ]
+  },
+  "10103135": {
+    "name": "Anderson",
+    "real_name": "Smiths Anderson",
+    "gender": "Male",
+    "profession": "Mechanic",
+    "occupation": "Machinist",
+    "quality": "SSR",
+    "license": "Medium",
+    "portrait_icon": "Pilot_10103135A_half",
+    "avatar_icon": "Pilot_10103135A_Raw",
+    "version": "1.7",
+    "introduction": "A polite young man, his astuteness and good manners make him an ideal representative of [Madam].",
+    "talents": [
+      "500750",
+      "500751"
+    ],
+    "stats": {
+      "combat": "1278",
+      "assault": "3322",
+      "shooting": "1592",
+      "tactics": "1435",
+      "defense": "3883",
+      "engineering": "5027",
+      "ap_init": "5",
+      "ap_max": "5",
+      "ap_regen": "2"
+    },
+    "neural": [
+      {
+        "partition": "machinist-alpha",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "machinist-beta",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "10103135-gamma1",
+        "slots": "Attack/Critical/Critical"
+      },
+      {
+        "partition": "10103135-gamma2",
+        "slots": "Attack/Dodge/Critical"
+      }
+    ]
+  },
+  "10103160": {
+    "name": "Ann",
+    "real_name": "Ann Aurum",
+    "gender": "Female",
+    "profession": "Assault",
+    "occupation": "Raider",
+    "quality": "SSR",
+    "license": "Medium",
+    "portrait_icon": "Pilot_10103160A_half",
+    "avatar_icon": "Pilot_10103160A_Raw",
+    "version": "3.3",
+    "talents": [
+      "160550",
+      "160551"
+    ],
+    "stats": {
+      "combat": "1700",
+      "assault": "5036",
+      "shooting": "2015",
+      "tactics": "2329",
+      "defense": "4053",
+      "engineering": "1386",
+      "ap_init": "5",
+      "ap_max": "5",
+      "ap_regen": "2"
+    },
+    "neural": [
+      {
+        "partition": "raider-alpha",
+        "slots": "Attack/Dodge/Dodge"
+      },
+      {
+        "partition": "raider-beta",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "10103159-gamma1",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "10103160-gamma2",
+        "slots": "Attack/Dodge/Dodge"
+      }
+    ]
+  },
+  "10103127": {
+    "name": "Arthur",
+    "real_name": "Arthur Nadib",
+    "gender": "Female",
+    "profession": "Launcher",
+    "occupation": "Tactician",
+    "quality": "SSR",
+    "license": "Medium",
+    "portrait_icon": "Pilot_10103127A_half",
+    "avatar_icon": "Pilot_10103127A_Raw",
+    "version": "1.6",
+    "skins": [
+      "B"
+    ],
+    "introduction": "A war orphan of the DL, one of the core members of Vesper.",
+    "talents": [
+      "400850",
+      "400851"
+    ],
+    "stats": {
+      "combat": "1356",
+      "assault": "2526",
+      "shooting": "1857",
+      "tactics": "4774",
+      "defense": "3694",
+      "engineering": "2359",
+      "ap_init": "5",
+      "ap_max": "6",
+      "ap_regen": "2"
+    },
+    "neural": [
+      {
+        "partition": "tactician-alpha",
+        "slots": "Attack/Dodge/Dodge"
+      },
+      {
+        "partition": "tactician-beta",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "10103127-gamma1",
+        "slots": "Attack/Dodge/Dodge"
+      },
+      {
+        "partition": "10103127-gamma2",
+        "slots": "Attack/Critical/Critical"
+      }
+    ]
+  },
+  "10103149": {
+    "name": "Asuka",
+    "real_name": "Asuka Shikinami Langley",
+    "gender": "Female",
+    "profession": "Striker",
+    "occupation": "Fighter",
+    "quality": "SSR",
+    "license": "Light",
+    "portrait_icon": "Pilot_10103149A_half",
+    "avatar_icon": "Pilot_10103149A_Raw",
+    "version": "1.5",
+    "skins": [
+      "B"
+    ],
+    "introduction": "From another world, the pilot of Evangelion Type II—a child prodigy.",
+    "talents": [
+      "101450",
+      "101451"
+    ],
+    "stats": {
+      "combat": "5167",
+      "assault": "5167",
+      "shooting": "600",
+      "tactics": "550",
+      "defense": "4156",
+      "engineering": "826",
+      "ap_init": "5",
+      "ap_max": "5",
+      "ap_regen": "2"
+    },
+    "neural": [
+      {
+        "partition": "fighter-alpha",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "fighter-beta",
+        "slots": "Attack/Dodge/Dodge"
+      },
+      {
+        "partition": "10103149-gamma1",
+        "slots": "Attack/Dodge/Dodge"
+      },
+      {
+        "partition": "10103149-gamma2",
+        "slots": "Attack/Dodge/Critical"
+      }
+    ]
+  },
+  "10103165": {
+    "name": "Audrey",
+    "real_name": "Audrey Bluecher",
+    "gender": "Female",
+    "profession": "Gunner",
+    "occupation": "Sniper",
+    "quality": "SSR",
+    "license": "Medium",
+    "portrait_icon": "Pilot_10103165A_half",
+    "avatar_icon": "Pilot_10103165A_Raw",
+    "version": "2.8",
+    "introduction": "「我们必须承认，奥德莉是布吕希尔家一柄淬炼得过于完美的凶刃——她作战的方式莽得吓人，从来不走迂回路线，就喜欢用最强硬的手段正面突破。可偏偏是这种近乎偏执的直率与笃定自己必将胜利的信念，让她有种奇怪的魅力——她从不掩饰自己想要征服一切的欲望，反而能够凝聚起手下的一切将士，在那些家伙的身上，我们找不到任何进行渗透的机会。\n已经有不少议会上布吕希尔家的坚定反对者，只是和她接触过几次，就被她那种绝对的自信和行动力所吸引，心甘情愿为她效力。说真的，有时候我不禁会想，如果战争注定无法避免，在她这样纯粹的人麾下奋战，或许比我们现在的所作所为更有意义……」——联合安全总署干员私密通讯",
+    "talents": [
+      "301350",
+      "301351"
+    ],
+    "stats": {
+      "combat": "2064",
+      "assault": "2221",
+      "shooting": "4978",
+      "tactics": "1749",
+      "defense": "3942",
+      "engineering": "1592",
+      "ap_init": "5",
+      "ap_max": "5",
+      "ap_regen": "2"
+    },
+    "neural": [
+      {
+        "partition": "sniper-alpha",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "sniper-beta",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "10103165-gamma1",
+        "slots": "Attack/Dodge/Dodge"
+      },
+      {
+        "partition": "10103165-gamma2",
+        "slots": "Attack/Dodge/Critical"
+      }
+    ],
+    "hidden_skills": [
+      {
+        "name": "Landslide Shot",
+        "icon": "Icon_skill_main_1137",
+        "type": "EquipmentSkill",
+        "Ap": "2",
+        "CD": "0",
+        "describe": "Uses a Sniper Rifle to attack a target, dealing <color=#F74848>1x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking."
+      }
+    ]
+  },
+  "10103145": {
+    "name": "Bertha",
+    "real_name": "Bertha Wagner",
+    "gender": "Female",
+    "profession": "Gunner",
+    "occupation": "Sniper",
+    "quality": "SSR",
+    "license": "Heavy",
+    "portrait_icon": "Pilot_13010A_half",
+    "avatar_icon": "Pilot_13010A_Raw",
+    "version": "3.2",
+    "introduction": "「跨边境的物资运输？兄弟，你这预算少了点，不过也不是没有办法……这样，周末你去一趟凯德雷港的仓鼠宠物店，多半能遇见一个叫贝尔莎·瓦格纳的佣兵，她最近刚刚重建自己的佣兵团，正急着接活呢。\n这人虽然名声不大野心不小有时候还显得不太聪明，但胜在性价比……啊不，是胜在真诚努力，她一旦接了你的活儿就肯定帮你完成。唉，你可别瞧不起她啊，她在米赫玛已经混了好几年，没少和各路豪杰干架，甚至跟那个大名鼎鼎的猎豹物流都有过几次交手，结果到现在还活蹦乱跳的，光这一点就证明她还是有点本事的……至少是运气很好。而且就我所知，她和卢诺家族还有角雕商会的关系不错，真要遇到麻烦了也会有人帮忙兜底。不过有一点你要万分注意，如果她开始念叨什么『传奇佣兵的试炼』，一定要把她拉走！不然你就得面对一堆凭空出现的维修成本了。」——某佣兵网站的会员留言",
+    "talents": [
+      "301450",
+      "301451"
+    ],
+    "stats": {
+      "combat": "2241",
+      "assault": "1425",
+      "shooting": "4946",
+      "tactics": "2084",
+      "defense": "3942",
+      "engineering": "1916",
+      "ap_init": "5",
+      "ap_max": "5",
+      "ap_regen": "2"
+    },
+    "neural": [
+      {
+        "partition": "sniper-alpha",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "sniper-beta",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "10103165-gamma1",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "10103145-gamma2",
+        "slots": "Attack/Dodge/Dodge"
+      }
+    ],
+    "hidden_skills": [
+      {
+        "name": "Surefire Plan",
+        "icon": "Icon_skill_main_1135",
+        "type": "EquipmentSkill",
+        "Ap": "3",
+        "describe": "Uses a Sniper Rifle to attack a target, dealing <color=#F74848>1.3x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking. If the target is carrying <buf ID=3014505>[Arch-Enemy]</buf>, this attack cannot be dodged."
+      }
+    ]
+  },
+  "10103167": {
+    "name": "Blackout",
+    "real_name": "--------",
+    "gender": "Male",
+    "profession": "Defender",
+    "occupation": "Guardian",
+    "quality": "SSR",
+    "license": "Heavy",
+    "portrait_icon": "Pilot_10103167A_half",
+    "avatar_icon": "Pilot_10103167A_Raw",
+    "version": "3.4",
+    "talents": [
+      "167550",
+      "167551"
+    ],
+    "stats": {
+      "combat": "1504",
+      "assault": "4773",
+      "shooting": "2270",
+      "tactics": "1808",
+      "defense": "4548",
+      "engineering": "1651",
+      "ap_init": "5",
+      "ap_max": "5",
+      "ap_regen": "2"
+    },
+    "neural": [
+      {
+        "partition": "guardian-alpha",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "guardian-beta",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "10103167-gamma1",
+        "slots": "Attack/Critical/Critical"
+      },
+      {
+        "partition": "10103167-gamma2",
+        "slots": "Attack/Dodge/Dodge"
+      }
+    ]
+  },
+  "10103146": {
+    "name": "Camilla",
+    "real_name": "Camilla Cursed",
+    "gender": "Female",
+    "profession": "Striker",
+    "occupation": "Fighter",
+    "quality": "SSR",
+    "license": "Heavy",
+    "portrait_icon": "Pilot_10103146A_half",
+    "avatar_icon": "Pilot_10103146A_Raw",
+    "version": "1.1",
+    "skins": [
+      "B"
+    ],
+    "introduction": "A grim and disciplined young woman, once a promising test subject destined to become the ultimate predator. Hardened by relentless experimentation, she shows no mercy to her enemies.",
+    "talents": [
+      "101250",
+      "101251"
+    ],
+    "stats": {
+      "combat": "5157",
+      "assault": "885",
+      "shooting": "3017",
+      "tactics": "2870",
+      "defense": "4183",
+      "engineering": "432",
+      "ap_init": "5",
+      "ap_max": "5",
+      "ap_regen": "2"
+    },
+    "neural": [
+      {
+        "partition": "fighter-alpha",
+        "slots": "Attack/Dodge/Dodge"
+      },
+      {
+        "partition": "fighter-beta",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "10103146-gamma1",
+        "slots": "Attack/Critical/Critical"
+      },
+      {
+        "partition": "10103146-gamma2",
+        "slots": "Attack/Dodge/Critical"
+      }
+    ]
+  },
+  "10103126": {
+    "name": "Cassha",
+    "real_name": "Cassha Lumiere",
+    "gender": "Female",
+    "profession": "Assault",
+    "occupation": "Raider",
+    "quality": "SSR",
+    "license": "Heavy",
+    "portrait_icon": "Pilot_10103126A_half",
+    "avatar_icon": "Pilot_10103126A_Raw",
+    "version": "1.6",
+    "skins": [
+      "B"
+    ],
+    "introduction": "A participant in the Milkhama War, one of the leaders of Vesper.",
+    "talents": [
+      "201550",
+      "201551"
+    ],
+    "stats": {
+      "combat": "1435",
+      "assault": "5027",
+      "shooting": "2064",
+      "tactics": "2221",
+      "defense": "3883",
+      "engineering": "1907",
+      "ap_init": "5",
+      "ap_max": "5",
+      "ap_regen": "2"
+    },
+    "neural": [
+      {
+        "partition": "raider-alpha",
+        "slots": "Attack/Dodge/Dodge"
+      },
+      {
+        "partition": "raider-beta",
+        "slots": "Attack/Critical/Critical"
+      },
+      {
+        "partition": "10103159-gamma1",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "10103126-gamma2",
+        "slots": "Attack/Dodge/Critical"
+      }
+    ]
+  },
+  "10103109": {
+    "name": "Catherine",
+    "real_name": "Catherine Serrano",
+    "gender": "Female",
+    "profession": "Striker",
+    "occupation": "Fighter",
+    "quality": "SSR",
+    "license": "Light",
+    "portrait_icon": "Pilot_10103109A_half",
+    "avatar_icon": "Pilot_10103109A_Raw",
+    "version": "1.0",
+    "skins": [
+      "B"
+    ],
+    "introduction": "\"Catherine ignored me again, smashed the base... keeps pushing mods past limits. Not personality, pure crazy. Maybe that's what the lab rats want,  weaponized madness. Efficient use of resources?\" —Lucia's report",
+    "talents": [
+      "101150",
+      "101151"
+    ],
+    "stats": {
+      "combat": "5027",
+      "assault": "2113",
+      "shooting": "1356",
+      "tactics": "1808",
+      "defense": "4276",
+      "engineering": "1956",
+      "ap_init": "5",
+      "ap_max": "5",
+      "ap_regen": "2"
+    },
+    "neural": [
+      {
+        "partition": "fighter-alpha",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "fighter-beta",
+        "slots": "Attack/Attack/Dodge"
+      },
+      {
+        "partition": "10103146-gamma1",
+        "slots": "Dodge/Dodge/Critical"
+      },
+      {
+        "partition": "10103109-gamma2",
+        "slots": "Attack/Critical/Critical"
+      }
+    ]
+  },
+  "10103162": {
+    "name": "Colin",
+    "real_name": "Colin Doyle",
+    "gender": "Male",
+    "profession": "Launcher",
+    "occupation": "Tactician",
+    "quality": "SSR",
+    "license": "Medium",
+    "portrait_icon": "Pilot_10103162A_half",
+    "avatar_icon": "Pilot_10103162A_Raw",
+    "version": "2.5",
+    "introduction": "An enforcer of the Dawnstar League's High Council, a seasoned operative with deep experience in special ops and intelligence, slick and hard to read.",
+    "talents": [
+      "401150",
+      "401151"
+    ],
+    "stats": {
+      "combat": "1425",
+      "assault": "1592",
+      "shooting": "3538",
+      "tactics": "4924",
+      "defense": "3952",
+      "engineering": "1111",
+      "ap_init": "5",
+      "ap_max": "6",
+      "ap_regen": "2"
+    },
+    "neural": [
+      {
+        "partition": "tactician-alpha",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "tactician-beta",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "10103127-gamma1",
+        "slots": "Attack/Dodge/Dodge"
+      },
+      {
+        "partition": "10103162-gamma2",
+        "slots": "Attack/Dodge/Critical"
+      }
+    ],
+    "hidden_skills": [
+      {
+        "name": "Proxy Strike",
+        "icon": "Icon_skill_order_1132",
+        "type": "SpecialAssault",
+        "Ap": "3",
+        "CD": "0",
+        "describe": "Uses a Cutter to attack all targets within the selected <color=#F74848>2</color>-tile range, dealing <color=#F74848>1.2x</color> AoE DMG."
+      }
+    ]
+  },
+  "10103184": {
+    "name": "Cosette",
+    "real_name": "Cosette Cecil",
+    "gender": "Female",
+    "profession": "Striker",
+    "occupation": "Fighter",
+    "quality": "SSR",
+    "license": "Medium",
+    "portrait_icon": "Pilot_11021A_half",
+    "avatar_icon": "Pilot_11021A_Raw",
+    "version": "3.6",
+    "talents": [
+      "184550",
+      "184551"
+    ],
+    "stats": {
+      "combat": "5281",
+      "assault": "1337",
+      "shooting": "1799",
+      "tactics": "1956",
+      "defense": "4062",
+      "engineering": "2103",
+      "ap_init": "5",
+      "ap_max": "5",
+      "ap_regen": "2"
+    },
+    "neural": [
+      {
+        "partition": "fighter-alpha",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "fighter-beta",
+        "slots": "Attack/Dodge/Dodge"
+      },
+      {
+        "partition": "10103146-gamma1",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "10103184-gamma2",
+        "slots": "Attack/Dodge/Dodge"
+      }
+    ]
+  },
+  "10103102": {
+    "name": "Dana",
+    "real_name": "Dana Yano",
+    "gender": "Female",
+    "profession": "Gunner",
+    "occupation": "Sniper",
+    "quality": "SSR",
+    "license": "Medium",
+    "portrait_icon": "Pilot_10103102A_half",
+    "avatar_icon": "Pilot_10103102A_Raw",
+    "version": "1.0",
+    "introduction": "Dana Yano - Enfield ace. Perfect grades, five-year sniper record holder. Eastern blood, cool head, sharp mind. Long-range specialist and a solid teammate.",
+    "talents": [
+      "300350",
+      "300351"
+    ],
+    "stats": {
+      "combat": "1317",
+      "assault": "1966",
+      "shooting": "4831",
+      "tactics": "2447",
+      "defense": "3807",
+      "engineering": "2123",
+      "ap_init": "4",
+      "ap_max": "5",
+      "ap_regen": "2"
+    },
+    "neural": [
+      {
+        "partition": "sniper-alpha",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "sniper-beta",
+        "slots": "Attack/Dodge/Dodge"
+      },
+      {
+        "partition": "10103102-gamma1",
+        "slots": "Attack/Dodge/Dodge"
+      },
+      {
+        "partition": "10103102-gamma2",
+        "slots": "Attack/Critical/Critical"
+      }
+    ],
+    "hidden_skills": [
+      {
+        "name": "Accurate Fire",
+        "icon": "Icon_skill_main_1017",
+        "type": "EquipmentSkill",
+        "Ap": "3",
+        "CD": "0",
+        "describe": "Uses a Sniper Rifle to attack a target, dealing <color=#F74848>1.0x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking and gains Hit Rate <color=#F74848>+15%</color>."
+      }
+    ]
+  },
+  "10103130": {
+    "name": "Dean",
+    "real_name": "Dean Knight",
+    "gender": "Male",
+    "profession": "Striker",
+    "occupation": "Fighter",
+    "quality": "SSR",
+    "license": "Heavy",
+    "portrait_icon": "Pilot_10103130A_half",
+    "avatar_icon": "Pilot_10103130A_Raw",
+    "version": "1.4",
+    "introduction": "A recent graduate of the Garland Military Academy, this rookie is hailed as a rising star of the Alliance forces.",
+    "talents": [
+      "101350",
+      "101351"
+    ],
+    "stats": {
+      "combat": "5196",
+      "assault": "2260",
+      "shooting": "1641",
+      "tactics": "2103",
+      "defense": "4137",
+      "engineering": "1189",
+      "ap_init": "5",
+      "ap_max": "5",
+      "ap_regen": "2"
+    },
+    "neural": [
+      {
+        "partition": "fighter-alpha",
+        "slots": "Attack/Dodge/Dodge"
+      },
+      {
+        "partition": "fighter-beta",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "10103146-gamma1",
+        "slots": "Attack/Dodge/Dodge"
+      },
+      {
+        "partition": "10103130-gamma2",
+        "slots": "Attack/Dodge/Critical"
+      }
+    ]
+  },
+  "10103121": {
+    "name": "Diracca",
+    "real_name": "Diracca Davies",
+    "gender": "Female",
+    "profession": "Defender",
+    "occupation": "Guardian",
+    "quality": "SSR",
+    "license": "Heavy",
+    "portrait_icon": "Pilot_10103121A_half",
+    "avatar_icon": "Pilot_10103121A_Raw",
+    "version": "1.0",
+    "introduction": "\"It's all true, every word! I watched Davies leap from her ST, tear my cockpit open barehanded, and yank me clear! Then, hostiles showed up in STs while we were on foot. I thought I was dead until Davies roared, charged them, grabbed an ST in each hand, and crushed them together...\" —DLAF Defense Corps show transcript",
+    "talents": [
+      "600550",
+      "600551"
+    ],
+    "stats": {
+      "combat": "3145",
+      "assault": "4033",
+      "shooting": "1730",
+      "tactics": "1258",
+      "defense": "4977",
+      "engineering": "1415",
+      "ap_init": "5",
+      "ap_max": "5",
+      "ap_regen": "2"
+    },
+    "neural": [
+      {
+        "partition": "guardian-alpha",
+        "slots": "Attack/Critical/Critical"
+      },
+      {
+        "partition": "guardian-beta",
+        "slots": "Attack/Dodge/Dodge"
+      },
+      {
+        "partition": "10103121-gamma1",
+        "slots": "Attack/Critical/Critical"
+      },
+      {
+        "partition": "10103121-gamma2",
+        "slots": "Attack/Dodge/Critical"
+      }
+    ]
+  },
+  "10103113": {
+    "name": "Eileen",
+    "real_name": "Eileen Dizion",
+    "gender": "Female",
+    "profession": "Launcher",
+    "occupation": "Tactician",
+    "quality": "SSR",
+    "license": "Medium",
+    "portrait_icon": "Pilot_10103113A_half",
+    "avatar_icon": "Pilot_10103113A_Raw",
+    "version": "1.0",
+    "skins": [
+      "B"
+    ],
+    "introduction": "Obsidian's youngest board member and group inspector. A surveillance systems research specialist with exceptional ST piloting skills.",
+    "talents": [
+      "400450",
+      "400451"
+    ],
+    "stats": {
+      "combat": "1189",
+      "assault": "1690",
+      "shooting": "3027",
+      "tactics": "4727",
+      "defense": "3711",
+      "engineering": "2192",
+      "ap_init": "5",
+      "ap_max": "6",
+      "ap_regen": "2"
+    },
+    "neural": [
+      {
+        "partition": "tactician-alpha",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "tactician-beta",
+        "slots": "Attack/Critical/Critical"
+      },
+      {
+        "partition": "10103127-gamma1",
+        "slots": "Attack/Dodge/Dodge"
+      },
+      {
+        "partition": "10103113-gamma2",
+        "slots": "Attack/Dodge/Dodge"
+      }
+    ]
+  },
+  "10103136": {
+    "name": "Erisa",
+    "real_name": "Erisa Shinohara",
+    "gender": "Female",
+    "profession": "Assault",
+    "occupation": "Raider",
+    "quality": "SSR",
+    "license": "Heavy",
+    "portrait_icon": "Pilot_10103136A_half",
+    "avatar_icon": "Pilot_10103136A_Raw",
+    "version": "1.2",
+    "skins": [
+      "B"
+    ],
+    "introduction": "A cryptic war correspondent and one of the elusive Hyper-Aptamers who fled during the UNCS upheaval ignited by Rosa.",
+    "talents": [
+      "201250",
+      "201251"
+    ],
+    "stats": {
+      "combat": "2241",
+      "assault": "4924",
+      "shooting": "1435",
+      "tactics": "1592",
+      "defense": "3952",
+      "engineering": "2398",
+      "ap_init": "5",
+      "ap_max": "5",
+      "ap_regen": "2"
+    },
+    "neural": [
+      {
+        "partition": "raider-alpha",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "raider-beta",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "10103159-gamma1",
+        "slots": "Attack/Dodge/Dodge"
+      },
+      {
+        "partition": "10103136-gamma2",
+        "slots": "Attack/Dodge/Critical"
+      }
+    ],
+    "hidden_skills": [
+      {
+        "name": "Focused Scorch",
+        "icon": "Icon_skill_main_1150",
+        "type": "EquipmentSkill",
+        "Ap": "3",
+        "describe": "Uses a Flamethrower to attack the main target, dealing <color=#F74848>1.2x</color> DMG and dealing <color=#F74848>20%</color> <buf ID=900065>[Flame DMG]</buf> to other targets in the path. After combat, applies <terrian ID=4003081 /> to tiles hit, lasting for <color=#F74848>2</color> turns."
+      }
+    ]
+  },
+  "10103137": {
+    "name": "Fia",
+    "real_name": "Fia Helstota",
+    "gender": "Female",
+    "profession": "Launcher",
+    "occupation": "Tactician",
+    "quality": "SSR",
+    "license": "Medium",
+    "portrait_icon": "Pilot_10103137A_half",
+    "avatar_icon": "Pilot_10103137A_Raw",
+    "version": "1.4",
+    "skins": [
+      "B"
+    ],
+    "introduction": "Once the sole leader of the Hurstotta family, and the only known link to the [Ubiquitous Rain].",
+    "talents": [
+      "400750",
+      "400751"
+    ],
+    "stats": {
+      "combat": "1474",
+      "assault": "4398",
+      "shooting": "1582",
+      "tactics": "4562",
+      "defense": "3787",
+      "engineering": "1012",
+      "ap_init": "5",
+      "ap_max": "6",
+      "ap_regen": "2"
+    },
+    "neural": [
+      {
+        "partition": "tactician-alpha",
+        "slots": "Attack/Critical/Critical"
+      },
+      {
+        "partition": "tactician-beta",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "10103127-gamma1",
+        "slots": "Attack/Dodge/Dodge"
+      },
+      {
+        "partition": "10103137-gamma2",
+        "slots": "Attack/Dodge/Critical"
+      }
+    ]
+  },
+  "10103152": {
+    "name": "Fregata",
+    "real_name": "Fregata Oasis",
+    "gender": "Female",
+    "profession": "Assault",
+    "occupation": "Raider",
+    "quality": "SSR",
+    "license": "Light",
+    "portrait_icon": "Pilot_10103152A_half",
+    "avatar_icon": "Pilot_10103152A_Raw",
+    "version": "1.8",
+    "skins": [
+      "B"
+    ],
+    "introduction": "A tough, sharp-tongued mercenary who's as reliable as she is capable.",
+    "talents": [
+      "201650",
+      "201651"
+    ],
+    "stats": {
+      "combat": "2015",
+      "assault": "4997",
+      "shooting": "1229",
+      "tactics": "1386",
+      "defense": "4092",
+      "engineering": "2801",
+      "ap_init": "5",
+      "ap_max": "5",
+      "ap_regen": "2"
+    },
+    "neural": [
+      {
+        "partition": "raider-alpha",
+        "slots": "Attack/Dodge/Dodge"
+      },
+      {
+        "partition": "raider-beta",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "10103159-gamma1",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "10103152-gamma2",
+        "slots": "Attack/Dodge/Critical"
+      }
+    ]
+  },
+  "10103122": {
+    "name": "Frida",
+    "real_name": "Frida Garcia",
+    "gender": "Female",
+    "profession": "Assault",
+    "occupation": "Raider",
+    "quality": "SSR",
+    "license": "Light",
+    "portrait_icon": "Pilot_10103122A_half",
+    "avatar_icon": "Pilot_10103122A_Raw",
+    "version": "1.0",
+    "skins": [
+      "B"
+    ],
+    "introduction": "\"Boss Frida's a Milkhama legend! Joined when we rebranded to Electric Eel. She cleaned the house and dealt with troublemakers. Everyone says Milkhama's full of chances - it's all traps! Boss got us through and made us strong. We all owe her!\" —Garm, Electric Eel",
+    "talents": [
+      "201150",
+      "201151"
+    ],
+    "stats": {
+      "combat": "1543",
+      "assault": "5157",
+      "shooting": "2486",
+      "tactics": "1229",
+      "defense": "3991",
+      "engineering": "2172",
+      "ap_init": "5",
+      "ap_max": "5",
+      "ap_regen": "2"
+    },
+    "neural": [
+      {
+        "partition": "raider-alpha",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "raider-beta",
+        "slots": "Attack/Dodge/Dodge"
+      },
+      {
+        "partition": "10103159-gamma1",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "10103122-gamma2",
+        "slots": "Attack/Critical/Critical"
+      }
+    ]
+  },
+  "10103168": {
+    "name": "Giselle",
+    "real_name": "Giselle Meyer",
+    "gender": "Female",
+    "profession": "Striker",
+    "occupation": "Fighter",
+    "quality": "SSR",
+    "license": "Medium",
+    "portrait_icon": "Pilot_10103168A_half",
+    "avatar_icon": "Pilot_10103168A_Raw",
+    "version": "3.2",
+    "introduction": "吉赛尔·梅耶来自一个被称作「尼德法尔斯」的边远深山地区，她和她的族人原本过着与世隔绝的部落生活，直到数年前有外人意外造访，带去了文明也带去了战争。她震撼于「机兵」这钢铁巨人的强大力量，也对其仅仅是杀人兵器感到困惑，更对自己的族人沉溺于战争感到遗憾。为了寻找与新世界共存的方法，她毅然离开家乡来到米赫玛岛，亲身感受着时代的巨变。\n二十多年的尼德法尔斯部落人生赋予了吉赛尔看待世界的独特视角，她能凭直觉看见他人内心的「火」，也能感受到象征变化的「风」。凭借过人的体质和出色的学习能力，她当过八角笼里的斗士，也学会了驾驶机兵参与战斗，逐渐在米赫玛站稳脚跟，但她至今仍在寻找和战争、和新世界有关的答案……",
+    "talents": [
+      "102050",
+      "102051"
+    ],
+    "stats": {
+      "combat": "5308",
+      "assault": "1022",
+      "shooting": "678",
+      "tactics": "5129",
+      "defense": "3955",
+      "engineering": "747",
+      "ap_init": "5",
+      "ap_max": "5",
+      "ap_regen": "2"
+    },
+    "neural": [
+      {
+        "partition": "fighter-alpha",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "fighter-beta",
+        "slots": "Attack/Dodge/Dodge"
+      },
+      {
+        "partition": "10103168-gamma1",
+        "slots": "Attack/Dodge/Dodge"
+      },
+      {
+        "partition": "10103168-gamma2",
+        "slots": "Attack/Dodge/Critical"
+      }
+    ],
+    "hidden_skills": [
+      {
+        "name": "Giant Antelope Strike",
+        "icon": "Icon_skill_main_1147",
+        "type": "EquipmentSkill",
+        "Ap": "2",
+        "describe": "Uses a Polearm to attack a target, dealing <color=#F74848>0.9x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking. Can consume <color=#F74848>0%</color>/<color=#F74848>50%</color> of current <buf ID=900166>[Feral Spirit]</buf> stacks to deal <buf ID=900017>[Fixed DMG]</buf> to the part hit equal to the amount consumed."
+      }
+    ]
+  },
+  "10103103": {
+    "name": "Grant",
+    "real_name": "Grant Zakarweski",
+    "gender": "Male",
+    "profession": "Mechanic",
+    "occupation": "Machinist",
+    "quality": "SSR",
+    "license": "Medium",
+    "portrait_icon": "Pilot_10103103A_half",
+    "avatar_icon": "Pilot_10103103A_Raw",
+    "version": "1.0",
+    "introduction": "“I can't figure out how Grant got into Armored Corps! Sure, he's good with machines, but he's always boozing or heading to booze. Keeps modding our STs with weird parts... Can't trust my squad to this mess of a mechanic!” —Captain of the 11th Armored Corps",
+    "talents": [
+      "500250",
+      "500251"
+    ],
+    "stats": {
+      "combat": "865",
+      "assault": "4550",
+      "shooting": "963",
+      "tactics": "1622",
+      "defense": "4027",
+      "engineering": "4726",
+      "ap_init": "4",
+      "ap_max": "5",
+      "ap_regen": "2"
+    },
+    "neural": [
+      {
+        "partition": "machinist-alpha",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "machinist-beta",
+        "slots": "Dodge/Critical/Critical"
+      },
+      {
+        "partition": "10103135-gamma1",
+        "slots": "Attack/Dodge/Dodge"
+      },
+      {
+        "partition": "10103103-gamma2",
+        "slots": "Attack/Attack/Critical"
+      }
+    ]
+  },
+  "10103112": {
+    "name": "Gumusiay",
+    "real_name": "Aynur Derya",
+    "gender": "Female",
+    "profession": "Striker",
+    "occupation": "Fighter",
+    "quality": "SSR",
+    "license": "Heavy",
+    "portrait_icon": "Pilot_10103112A_half",
+    "avatar_icon": "Pilot_10103112A_Raw",
+    "version": "1.0",
+    "skins": [
+      "B"
+    ],
+    "introduction": "\"First time I saw Gumusiay—gentle face, deadly reputation. Didn't want her at first. But she's like us, tortured past, lost loved ones. It has a different style and the same fire inside. Strong as any of us.\" —Hong and Sylvie's chat",
+    "talents": [
+      "100950",
+      "100951"
+    ],
+    "stats": {
+      "combat": "4977",
+      "assault": "2565",
+      "shooting": "1504",
+      "tactics": "1956",
+      "defense": "4331",
+      "engineering": "1199",
+      "ap_init": "5",
+      "ap_max": "5",
+      "ap_regen": "2"
+    },
+    "neural": [
+      {
+        "partition": "fighter-alpha",
+        "slots": "Dodge/Dodge/Critical"
+      },
+      {
+        "partition": "fighter-beta",
+        "slots": "Attack/Critical/Critical"
+      },
+      {
+        "partition": "10103146-gamma1",
+        "slots": "Attack/Dodge/Dodge"
+      },
+      {
+        "partition": "10103112-gamma2",
+        "slots": "Attack/Attack/Critical"
+      }
+    ]
+  },
+  "10103174": {
+    "name": "Hailis",
+    "real_name": "Hailis Mill",
+    "gender": "Female",
+    "profession": "Shifter",
+    "occupation": "Shifter",
+    "quality": "SSR",
+    "license": "Medium",
+    "portrait_icon": "Pilot_10103174A_half",
+    "avatar_icon": "Pilot_10103174A_Raw",
+    "version": "3.0",
+    "introduction": "「防卫军少将之女，仿生智能框架技术奠基人，『遗产』的制作者，晨星同盟科学院院士……即便拥有这些头衔，海莉丝·穆勒也不过是一个不曾脱离象牙塔的学者，她无力反抗战争，甚至不知道如何反抗，就和我们控制的其他科研人员一样。只要注意别让她的技术流入其他势力，并牵制住她的父亲提费斯，主动权就永远在我们这边——这是监察委员会曾经的结论，事实证明它根本大错特错。\n海莉丝·穆勒不仅亲手射杀了卢克芒执政官，还带领几近溃散的维斯珀尔重新站稳脚跟，甚至完成了那部超越时代的机兵……就在所有人都将注意力集中于各大势力在米尔萨斯的博弈时，她已经获得了足以动摇局势的力量。即使她的最首要目标不是同盟，这位新的『维斯珀尔』也无疑是比费列克斯·穆勒更不可控的威胁……我们必须重新拟定今后的对策。」——同盟最高议会内部会议记录",
+    "talents": [
+      "800150",
+      "800151"
+    ],
+    "stats": {
+      "combat": "5196",
+      "assault": "5196",
+      "shooting": "5196",
+      "tactics": "5196",
+      "defense": "3962",
+      "engineering": "2162",
+      "ap_init": "5",
+      "ap_max": "6",
+      "ap_regen": "2"
+    },
+    "neural": [
+      {
+        "partition": "shifter-alpha",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "shifter-beta",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "10103174-gamma1",
+        "slots": "Attack/Dodge/Dodge"
+      },
+      {
+        "partition": "10103174-gamma2",
+        "slots": "Attack/Dodge/Dodge"
+      }
+    ],
+    "hidden_skills": [
+      {
+        "name": "Cluster Matrix",
+        "icon": "Icon_skill_main_1169",
+        "type": "EquipmentSkill",
+        "Ap": "2-4",
+        "CD": "0",
+        "describe": "Launches <color=#F74848>1</color> attack based on the current form and equipped weapon. The attack multiplier and effect vary based on weapon type. See <jump to=form-skills-cluster-matrix>Form Skills</jump> below for each variant."
+      }
+    ],
+    "form_skill_groups": [
+      {
+        "title": "Virtual Particle Form",
+        "icon": "Icon_skill_order_1149",
+        "groups": [
+          {
+            "label": "Base",
+            "skills": [
+              {
+                "name": "Particle Blade",
+                "icon": "Icon_skill_main_1162",
+                "type": "EquipmentSkill",
+                "Ap": "3",
+                "CD": "0",
+                "describe": "Uses condensed star virtual particle to attack a target, dealing <color=#F74848>1.4x</color> DMG. This attack always hits the body."
+              },
+              {
+                "name": "Particle Cannon",
+                "icon": "Icon_skill_main_1027",
+                "type": "EquipmentSkill",
+                "Ap": "4",
+                "CD": "0",
+                "describe": "Uses condensed meteorite virtual particle to attack a target, dealing <color=#F74848>0.8x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking. This attack ignores target's Armor and prioritize hitting the same part."
+              },
+              {
+                "name": "Particle Matrix",
+                "icon": "Icon_skill_order_1013",
+                "type": "EquipmentSkill",
+                "Ap": "4",
+                "CD": "0",
+                "describe": "Uses condensed cosmic virtual particle to attack all targets within <color=#F74848>4</color>-tile fan-shaped area in front, dealing <color=#F74848>1.1x</color> AoE DMG. After combat, if the part hit is at <color=#F74848>15%</color> HP or less, that part is instantly destroyed."
+              }
+            ]
+          },
+          {
+            "label": "Enhanced (EX)",
+            "skills": [
+              {
+                "name": "Particle Blade EX",
+                "icon": "Icon_skill_main_1162",
+                "type": "EquipmentSkill",
+                "Ap": "3",
+                "CD": "0",
+                "describe": "Uses condensed star virtual particle to attack a target, dealing <color=#F74848>1.8x</color> DMG. This attack always hits the body and ignores target's DMG Reduction effect."
+              },
+              {
+                "name": "Particle Cannon EX",
+                "icon": "Icon_skill_main_1027",
+                "type": "EquipmentSkill",
+                "Ap": "4",
+                "CD": "0",
+                "describe": "Uses condensed meteorite virtual particle to attack a target, dealing <color=#F74848>1.1x</color> DMG. If the target's HP is at <color=#F74848>60%</color> or more, this skill multiplier increases by <color=#F74848>10%</color>, up to <color=#F74848>40%</color>. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking. This attack ignores target's Armor and prioritize hitting the same part."
+              },
+              {
+                "name": "Particle Matrix EX",
+                "icon": "Icon_skill_order_1013",
+                "type": "EquipmentSkill",
+                "Ap": "5",
+                "CD": "0",
+                "describe": "Uses condensed cosmic virtual particle to attack all targets within <color=#F74848>4</color>-tile fan-shaped area in front, dealing <color=#F74848>1.4x</color> AoE DMG. After combat, if the part hit is at <color=#F74848>15%</color> HP or less, that part is instantly destroyed. For each <color=#F74848>1</color> part destroyed, gains <color=#F74848>1</color> AP, up to <color=#F74848>3</color> AP."
+              },
+              {
+                "name": "World Chaser",
+                "icon": "Icon_skill_main_1172",
+                "type": "EquipmentSkill",
+                "Ap": "5",
+                "CD": "0",
+                "describe": "Unleashes a chain attack using all Particle Weapons in order. Cosmic virtual particle deals <color=#F74848>1.2x</color> DMG to the target. Meteorite virtual particle deals <color=#F74848>1x</color> DMG to the target's part with highest HP. Star virtual particle deals <color=#F74848>1.2x</color> DMG to the target body. After combat, deploys <terrian ID=6008502 /> on the area within <color=#F74848>1</color>-ring of self, lasting for <color=#F74848>2</color> turns."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Thousand-Form Weapon",
+        "icon": "Icon_skill_main_1168",
+        "groups": [
+          {
+            "label": "Vanguard",
+            "skills": [
+              {
+                "name": "Rising Dragon",
+                "icon": "Icon_skill_main_1113",
+                "type": "EquipmentSkill",
+                "Ap": "3",
+                "CD": "0",
+                "describe": "Uses a Knuckle or Pilebunker to attack a target, dealing <color=#F74848>1.4x</color> DMG. This attack always hits the body part."
+              },
+              {
+                "name": "Mountain Splitter",
+                "icon": "Icon_skill_main_1106",
+                "type": "EquipmentSkill",
+                "Ap": "4",
+                "CD": "0",
+                "describe": "Uses two Melee Weapons to attack a target, dealing <color=#F74848>0.9x</color> DMG <color=#F74848>2</color> times. The <color=#F74848>1st</color> attack hits the part with the highest HP. If this part is not destroyed, the <color=#F74848>2nd</color> attack will hit the same part."
+              },
+              {
+                "name": "Shadow Rush",
+                "icon": "Icon_skill_order_1103",
+                "type": "EquipmentSkill",
+                "Ap": "3",
+                "CD": "0",
+                "describe": "Uses Polearm to <range type=1>thrust 4 tiles forward</range>, dealing <color=#F74848>1.4x</color> DMG to the <color=#F74848>1st</color> target hit. Inflicts <buf ID=7101505>[Crash]</buf> on the target, lasting <color=#F74848>1</color> turn."
+              },
+              {
+                "name": "Sky Piercer",
+                "icon": "Icon_skill_order_9902",
+                "type": "EquipmentSkill",
+                "Ap": "4",
+                "CD": "0",
+                "describe": "Throws a Polearm at all targets within a <range type=1>4-tile line</range> (including flying targets), dealing <color=#F74848>1.3x</color> AoE DMG. Can enter <buf ID=900014>[Aiming]</buf> Mode before combat."
+              },
+              {
+                "name": "Double-Edged Saw",
+                "icon": "Icon_skill_main_1157",
+                "type": "EquipmentSkill",
+                "Ap": "3",
+                "CD": "0",
+                "describe": "Uses a Chainsaw to attack a target, dealing <color=#F74848>1.35x</color> DMG. This attack always hits the body part.\nBefore combat, reduces own HP by <color=#F74848>20%</color> of max HP from all parts, then deals <color=#F74848>20%</color> of target max HP as <buf ID=900017>[Fixed DMG]</buf>. The HP reduction as well as the <buf ID=900017>[Fixed DMG]</buf> cannot destroy any part."
+              },
+              {
+                "name": "Critical Strike",
+                "icon": "Icon_skill_main_1157",
+                "type": "EquipmentSkill",
+                "Ap": "4",
+                "CD": "0",
+                "describe": "Uses a Chainsaw to attack a target, dealing <color=#F74848>1.8x</color> DMG. This attack always hits the part with lowest HP."
+              },
+              {
+                "name": "Starfall Flash",
+                "icon": "Icon_skill_main_1162",
+                "type": "EquipmentSkill",
+                "Ap": "3",
+                "CD": "0",
+                "describe": "Selects <color=#F74848>1</color> target (including flying target) within <color=#F74848>4</color> adjacent tiles and strikes with Alter-Blade, dealing <color=#F74848>1.3x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking. After attacking, this unit will be positioned on a random unoccupied tile within <color=#F74848>1</color> ring around the target."
+              },
+              {
+                "name": "Rotating Slash",
+                "icon": "Icon_skill_order_1131",
+                "type": "EquipmentSkill",
+                "Ap": "4",
+                "CD": "0",
+                "describe": "Uses two Alter-Blades to attack in a designated direction, dealing <color=#F74848>1.5x</color> DMG to the target. Prioritizes attacking parts with less than full HP. If there are adjacent enemies in that direction, can continue to attack adjacent units (attacking up to <color=#F74848>4</color> enemy units), then stops on the opposite side of the farthest target."
+              },
+              {
+                "name": "Quick Snipe",
+                "icon": "Icon_skill_main_1117",
+                "type": "EquipmentSkill",
+                "Ap": "3",
+                "CD": "0",
+                "describe": "Uses a Sniper Rifle to shoot a target <color=#F74848>2</color> times, with each shot dealing <color=#F74848>0.9x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking."
+              },
+              {
+                "name": "Penetrating Shot",
+                "icon": "Icon_skill_order_1133",
+                "type": "EquipmentSkill",
+                "Ap": "4",
+                "CD": "0",
+                "describe": "Uses a Sniper Rifle to attack the target and all enemy units along the path within range, dealing <color=#F74848>1.1x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking. If any part is destroyed, the same attack is launched again with <color=#F74848>50%</color> reduced multiplier. This effect can be repeated <color=#F74848>1</color> time."
+              },
+              {
+                "name": "Chain Shot",
+                "icon": "Icon_skill_main_1117",
+                "type": "EquipmentSkill",
+                "Ap": "3",
+                "CD": "0",
+                "describe": "Uses a Light Rifle to shoot a target <color=#F74848>2</color> times, with each shot dealing <color=#F74848>0.9x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking."
+              },
+              {
+                "name": "Marking Shot",
+                "icon": "Icon_skill_main_1128",
+                "type": "EquipmentSkill",
+                "Ap": "4",
+                "CD": "0",
+                "describe": "Uses Light Rifle to attack a target, dealing <color=#F74848>1.5x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking. Applies <buf ID=900049>[Exposure II]</buf> to the part hit after combat, lasting for <color=#F74848>2</color> turns."
+              }
+            ]
+          },
+          {
+            "label": "Assault",
+            "skills": [
+              {
+                "name": "Cluster Shot",
+                "icon": "Icon_skill_main_1121",
+                "type": "EquipmentSkill",
+                "Ap": "3",
+                "CD": "0",
+                "describe": "Uses Machine Gun to attack a target, dealing <color=#F74848>1.5x</color> DMG. Hit Weighting against the part with lowest HP increases by <color=#F74848>+50</color>."
+              },
+              {
+                "name": "Chain Finisher",
+                "icon": "Icon_skill_main_1129",
+                "type": "EquipmentSkill",
+                "Ap": "4",
+                "CD": "0",
+                "describe": "Uses two Machine Guns to attack a target, dealing <color=#F74848>2x0.8</color> DMG. For each <color=#F74848>10%</color> HP missing from the target, increases Critical Hit chance by <color=#F74848>5%</color>, up to <color=#F74848>30%</color>."
+              },
+              {
+                "name": "Dual Barrage",
+                "icon": "Icon_skill_order_1107",
+                "type": "EquipmentSkill",
+                "Ap": "3",
+                "CD": "1",
+                "describe": "Simultaneously uses two Shotguns to attack all targets within a <range type=1>3x2-tile area ahead</range>, dealing <color=#F74848>0.6x</color> AoE DMG <color=#F74848>2</color> times."
+              },
+              {
+                "name": "Desperate Shot",
+                "icon": "Icon_skill_main_1141",
+                "type": "EquipmentSkill",
+                "Ap": "4",
+                "CD": "0",
+                "describe": "Uses a Shotgun to attack a target, dealing <color=#F74848>1.6x</color> DMG. This attack cannot be dodged."
+              },
+              {
+                "name": "Burning Spirit",
+                "icon": "Icon_skill_main_1151",
+                "type": "EquipmentSkill",
+                "Ap": "3",
+                "CD": "0",
+                "describe": "Uses a Flamethrower to attack the main target, dealing <color=#F74848>1.4x</color> DMG and dealing <color=#F74848>20%</color> <buf ID=900065>[Flame DMG]</buf> to other targets in the path. If the main target is on allied <terrian ID=4003081 />, the terrain effect triggers once after combat."
+              },
+              {
+                "name": "Crimson Invasion",
+                "icon": "Icon_skill_main_1166",
+                "type": "EquipmentSkill",
+                "Ap": "4",
+                "CD": "0",
+                "describe": "Uses both Flamethrowers to attack a target, dealing <color=#F74848>2×0.8</color> DMG. If the target is on allied <terrian ID=4003081 />, the skill multiplier increases by <color=#F74848>+0.1</color>."
+              },
+              {
+                "name": "Bullet Storm",
+                "icon": "Icon_skill_order_1010",
+                "type": "EquipmentSkill",
+                "Ap": "3",
+                "CD": "0",
+                "describe": "Uses Heavy Machine Gun to attack all targets within range, dealing <color=#F74848>0.5x</color> AoE DMG. DMG dealt increases by <color=#F74848>20%</color> against parts with <color=#F74848>50%</color> or more HP remaining."
+              },
+              {
+                "name": "Iron Curtain",
+                "icon": "Icon_skill_main_4105",
+                "type": "EquipmentSkill",
+                "Ap": "4",
+                "CD": "0",
+                "describe": "Uses Heavy Machine Gun to attack a target, dealing <color=#F74848>1.5x</color> DMG. Inflicts <buf ID=2004081>[Retaliation Disabled]</buf> on target before combat."
+              }
+            ]
+          },
+          {
+            "label": "Tactical",
+            "skills": [
+              {
+                "name": "Concentrated Strike",
+                "icon": "Icon_skill_order_1114",
+                "type": "EquipmentSkill",
+                "Ap": "3",
+                "CD": "0",
+                "describe": "Uses two Missile Launchers to attack a target, dealing <color=#F74848>2x0.8</color> DMG. Both missiles will hit the same part, and cause <color=#F74848>50%</color> Splash DMG to parts other than the part hit."
+              },
+              {
+                "name": "Bombardment Command",
+                "icon": "Icon_skill_order_1129",
+                "type": "EquipmentSkill",
+                "Ap": "4",
+                "CD": "0",
+                "describe": "Uses Missile Launcher to attack a target, dealing <color=#F74848>1.4x</color> DMG to the part hit and <color=#F74848>50%</color> Splash DMG to other parts. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking. Enables all allies to launch <buf ID=900002>[Link Attacks]</buf> against it. These <buf ID=900002>[Link Attacks]</buf> do not require allies to possess a specific skill and do not consume any Link chances."
+              },
+              {
+                "name": "Fiery Rain",
+                "icon": "Icon_skill_order_1121",
+                "type": "EquipmentSkill",
+                "Ap": "3",
+                "CD": "0",
+                "describe": "Uses Rocket Launcher to attack all targets within the selected 3x3-tile area, dealing <color=#F74848>0.25x</color> AoE DMG to all parts. After combat, applies <terrian ID=4003081 /> to the tiles hit."
+              },
+              {
+                "name": "Carpet Bombing",
+                "icon": "Icon_skill_order_1135",
+                "type": "EquipmentSkill",
+                "Ap": "4",
+                "CD": "0",
+                "describe": "Uses two Rocket Launcher to attack all targets within the selected 5x5-tile area, dealing <color=#F74848>2x0.15x</color> AoE DMG to all parts. After combat, grants <color=#F74848>1</color> random buff to all allies, lasting for <color=#F74848>2</color> turns."
+              },
+              {
+                "name": "Ray Of Light",
+                "icon": "Icon_skill_order_1111",
+                "type": "EquipmentSkill",
+                "Ap": "3",
+                "CD": "0",
+                "describe": "Uses a Rail Gun to attack the same part of all targets within a <range type=1>1x5-tile line</range> or a 4-tile diagonal area and deals <color=#F74848>0.9x</color> AoE DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking."
+              },
+              {
+                "name": "Piercing Thorn",
+                "icon": "Icon_skill_order_5115",
+                "type": "EquipmentSkill",
+                "Ap": "4",
+                "CD": "0",
+                "describe": "Uses a Rail Gun to attack all targets within a <range type=1>3x5-tile area</range>, dealing <color=#F74848>0.95x</color> AoE DMG. This attack always hits the body part."
+              },
+              {
+                "name": "Meteor Shower",
+                "icon": "Icon_skill_order_1012",
+                "type": "EquipmentSkill",
+                "Ap": "3",
+                "CD": "0",
+                "describe": "Uses Cutter to attack up to <color=#F74848>4</color> targets within attack range, dealing <color=#F74848>1.2x</color> AoE DMG. Can select same target repeatedly. Repeated attack on the same target deals <color=#F74848>40%</color> increased DMG."
+              },
+              {
+                "name": "Total Assault",
+                "icon": "Icon_skill_order_1132",
+                "type": "EquipmentSkill",
+                "Ap": "4",
+                "CD": "0",
+                "describe": "Uses a Cutter to attack all targets within <color=#F74848>4</color> tiles, dealing <color=#F74848>1.3x</color> AoE DMG. If a target is destroyed after combat, grants all allies <buf ID=7100305>[DMG UP III]</buf>, lasting for <color=#F74848>1</color> turn."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Cluster Matrix",
+        "icon": "Icon_skill_main_1169",
+        "groups": [
+          {
+            "label": "Vanguard",
+            "skills": [
+              {
+                "name": "Weakness Strike",
+                "icon": "Icon_skill_main_1102",
+                "type": "EquipmentSkill",
+                "Ap": "2",
+                "CD": "0",
+                "describe": "Uses a Knuckle or Pilebunker to attack a target, dealing <color=#F74848>1.35x</color> DMG. This attack always hits the part with lowest HP."
+              },
+              {
+                "name": "Spear Strike",
+                "icon": "Icon_skill_main_1110",
+                "type": "EquipmentSkill",
+                "Ap": "2",
+                "CD": "0",
+                "describe": "Uses a Polearm to attack a target, dealing <color=#F74848>1.35x</color> DMG. This attack always hits the part with lowest HP."
+              },
+              {
+                "name": "Saw Strike",
+                "icon": "Icon_skill_main_1155",
+                "type": "EquipmentSkill",
+                "Ap": "2",
+                "CD": "0",
+                "describe": "Uses a Chainsaw to attack a target, dealing <color=#F74848>1.35x</color> DMG. This attack always hits the part with lowest HP."
+              },
+              {
+                "name": "Blade Strike",
+                "icon": "Icon_skill_main_1159",
+                "type": "EquipmentSkill",
+                "Ap": "2",
+                "CD": "0",
+                "describe": "Uses an Alter-Blade to attack a target, dealing <color=#F74848>1.35x</color> DMG. This attack always hits the part with lowest HP."
+              },
+              {
+                "name": "Snipe",
+                "icon": "Icon_skill_main_1144",
+                "type": "EquipmentSkill",
+                "Ap": "2",
+                "CD": "0",
+                "describe": "Uses a Sniper Rifle to attack a target, dealing <color=#F74848>1.3x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking."
+              },
+              {
+                "name": "Lock-On",
+                "icon": "Icon_skill_main_1016",
+                "type": "EquipmentSkill",
+                "Ap": "2",
+                "CD": "0",
+                "describe": "Uses a Light Rifle to attack a target, dealing <color=#F74848>1.3x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking."
+              }
+            ]
+          },
+          {
+            "label": "Assault",
+            "skills": [
+              {
+                "name": "Concentrated Fire",
+                "icon": "Icon_skill_main_1125",
+                "type": "EquipmentSkill",
+                "Ap": "3",
+                "CD": "0",
+                "describe": "Uses Machine Gun to attack a target, dealing <color=#F74848>1.3x</color> DMG. Before combat, grants <buf ID=7100105>[Hit Rate UP III]</buf> to self, lasting for <color=#F74848>1</color> turn."
+              },
+              {
+                "name": "Turbo Shot",
+                "icon": "Icon_skill_main_1105",
+                "type": "EquipmentSkill",
+                "Ap": "3",
+                "CD": "0",
+                "describe": "Uses Shotgun to attack a target, dealing <color=#F74848>1.3x</color> DMG. DMG dealt increases by <color=#F74848>15%</color> against part with <color=#F74848>50%</color> HP or less."
+              },
+              {
+                "name": "Flame Strike",
+                "icon": "Icon_skill_main_1150",
+                "type": "EquipmentSkill",
+                "Ap": "3",
+                "CD": "0",
+                "describe": "Uses Flamethrower to attack a target, dealing <color=#F74848>1.3x</color> DMG and dealing <color=#F74848>20%</color> <buf ID=900065>[Flame DMG]</buf> to other targets in the path. Applies <terrian ID=4003081 /> to all tiles along the attack path, lasting for <color=#F74848>2</color> turns."
+              },
+              {
+                "name": "Bullet Rain",
+                "icon": "Icon_skill_main_2102",
+                "type": "EquipmentSkill",
+                "Ap": "3",
+                "CD": "0",
+                "describe": "Uses Heavy Machine Gun to attack a target, dealing <color=#F74848>1.3x</color> DMG. Inflicts <buf ID=7101104>[Dodge Rate Down II]</buf> on the target hit, lasting for <color=#F74848>2</color> turns."
+              }
+            ]
+          },
+          {
+            "label": "Tactical",
+            "skills": [
+              {
+                "name": "Piercing Wind",
+                "icon": "Icon_skill_order_1006",
+                "type": "EquipmentSkill",
+                "Ap": "3",
+                "CD": "0",
+                "describe": "Uses Missile Launcher to attack a target, dealing <color=#F74848>2.2x</color> DMG to the part hit. This attack prioritizes attacking part without full HP."
+              },
+              {
+                "name": "Sweeping Barrage",
+                "icon": "Icon_skill_order_1008",
+                "type": "EquipmentSkill",
+                "Ap": "4",
+                "CD": "0",
+                "describe": "Uses Rocket Launcher to attack all targets within the selected 3x3-tile area, dealing <color=#F74848>0.275x</color> AoE DMG to all parts. After combat, inflicts <buf ID=3006502>[Short Circuit I]</buf> to all targets hit."
+              },
+              {
+                "name": "Magnetized Shot",
+                "icon": "Icon_skill_order_1007",
+                "type": "EquipmentSkill",
+                "Ap": "3",
+                "CD": "0",
+                "describe": "Uses a Rail Gun to attack the same part of all targets within a <range type=1>1x5-tile line</range>, dealing <color=#F74848>1x</color> AoE DMG. Inflicts <buf ID=7101506>[Movement Inhibition I]</buf> on the target hit, lasting for <color=#F74848>1</color> turn."
+              },
+              {
+                "name": "Floating Cannon",
+                "icon": "Icon_skill_order_1132",
+                "type": "EquipmentSkill",
+                "Ap": "3",
+                "CD": "0",
+                "describe": "Uses Cutter to attack all targets within the selected <color=#F74848>2</color>-tile radius area, dealing <color=#F74848>1.25x</color> AoE DMG."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "10103140": {
+    "name": "Hardaway",
+    "real_name": "Vilas Hardaway",
+    "gender": "Male",
+    "profession": "Launcher",
+    "occupation": "Tactician",
+    "quality": "SSR",
+    "license": "Medium",
+    "portrait_icon": "Pilot_10103140A_half",
+    "avatar_icon": "Pilot_10103140A_Raw",
+    "version": "3.1",
+    "introduction": "维拉尔斯·哈达威，隶属于晨星同盟防卫军驻米赫玛岛特遣部队的一等技术中尉，是「防卫军之花」玛蒂尔达·罗西最为信赖的副官。\n他精通电子信息战和多型机械操作，对仿生智能框架技术也有所涉猎；性格认真务实、冷静严谨，擅长收集情报并精准分析，即使面对复杂局势也往往能抽丝剥茧直指核心。在就读桑德斯特军事学院的第一年时，他就以优异成绩通过了二等技术军官考核，被视为防卫军信息作战领域的未来之星。在毕业后，他加入了玛蒂尔达所在的第1机动师35营，协助随意散漫的玛蒂尔达执行部队管理和战术规划，并于新历119年随其一同登岛，从此步入米赫玛乱局。",
+    "talents": [
+      "401250",
+      "401251"
+    ],
+    "stats": {
+      "combat": "1759",
+      "assault": "2241",
+      "shooting": "1592",
+      "tactics": "4885",
+      "defense": "3991",
+      "engineering": "2074",
+      "ap_init": "5",
+      "ap_max": "6",
+      "ap_regen": "2"
+    },
+    "neural": [
+      {
+        "partition": "tactician-alpha",
+        "slots": "Attack/Dodge/Dodge"
+      },
+      {
+        "partition": "tactician-beta",
+        "slots": "Attack/Critical/Critical"
+      },
+      {
+        "partition": "10103127-gamma1",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "10103140-gamma2",
+        "slots": "Attack/Dodge/Critical"
+      }
+    ],
+    "hidden_skills": [
+      {
+        "name": "Pulse Wave",
+        "icon": "Icon_skill_order_1129",
+        "type": "SpecialAssault",
+        "Ap": "3",
+        "describe": "Uses a Rocket Launcher to attack all targets within a <range type=1>1-tile cross-shaped</range> area, dealing <color=#F74848>0.25x</color> AoE DMG to all parts of targets hit. This attack always triggers <buf ID=4012502>[Structural Damage]</buf>'s <buf ID=900017>[Fixed DMG]</buf>. For each <color=#F74848>1</color> stack of <buf ID=4012502>[Structural Damage]</buf>, triggers <color=#F74848>1</color> more instance of <buf ID=900017>[Fixed DMG]</buf>, up to <color=#F74848>3</color> instances. Removes all <buf ID=4012502>[Structural Damage]</buf> stacks from the target after triggering."
+      }
+    ]
+  },
+  "10103110": {
+    "name": "Hong",
+    "real_name": "Hongling Li",
+    "gender": "Female",
+    "profession": "Striker",
+    "occupation": "Fighter",
+    "quality": "SSR",
+    "license": "Light",
+    "portrait_icon": "Pilot_10103110A_half",
+    "avatar_icon": "Pilot_10103110A_Raw",
+    "version": "1.0",
+    "skins": [
+      "B"
+    ],
+    "introduction": "Hong - Epiphyllum's eastern pilot, Sylvie's partner. Spinal injury led to Arashium experiments. Caught Winston's eye with sync rates. Rosa saved her. Now she and Sylvie chase ST and Hyper-Aptamer secrets.",
+    "talents": [
+      "100850",
+      "100851"
+    ],
+    "stats": {
+      "combat": "5177",
+      "assault": "1494",
+      "shooting": "2713",
+      "tactics": "1651",
+      "defense": "4156",
+      "engineering": "1346",
+      "ap_init": "5",
+      "ap_max": "5",
+      "ap_regen": "2"
+    },
+    "neural": [
+      {
+        "partition": "fighter-alpha",
+        "slots": "Dodge/Dodge/Critical"
+      },
+      {
+        "partition": "fighter-beta",
+        "slots": "Attack/Attack/Dodge"
+      },
+      {
+        "partition": "10103146-gamma1",
+        "slots": "Attack/Dodge/Dodge"
+      },
+      {
+        "partition": "10103110-gamma2",
+        "slots": "Attack/Dodge/Critical"
+      }
+    ]
+  },
+  "10103101": {
+    "name": "Kaidan",
+    "real_name": "Kaidan Newman",
+    "gender": "Male",
+    "profession": "Striker",
+    "occupation": "Fighter",
+    "quality": "SSR",
+    "license": "Light",
+    "portrait_icon": "Pilot_10103101A_half",
+    "avatar_icon": "Pilot_10103101A_Raw",
+    "version": "1.0",
+    "introduction": "\"Ex-merc. Bad record. Discipline issues. Teamwork uncertain. Great instincts, reads enemy patterns, can lead small ops.\nOpinion: Train for mobile reserve, temp command ok. Note: Not for my squad. We don't take their kind.\"\n—Rosa Diaz",
+    "talents": [
+      "100350",
+      "100351"
+    ],
+    "stats": {
+      "combat": "4863",
+      "assault": "4550",
+      "shooting": "845",
+      "tactics": "1258",
+      "defense": "4319",
+      "engineering": "914",
+      "ap_init": "4",
+      "ap_max": "5",
+      "ap_regen": "2"
+    },
+    "neural": [
+      {
+        "partition": "fighter-alpha",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "fighter-beta",
+        "slots": "Attack/Attack/Critical"
+      },
+      {
+        "partition": "10103146-gamma1",
+        "slots": "Attack/Dodge/Dodge"
+      },
+      {
+        "partition": "10103101-gamma2",
+        "slots": "Dodge/Critical/Critical"
+      }
+    ],
+    "hidden_skills": [
+      {
+        "name": "Crush Arm",
+        "icon": "Icon_skill_main_1104",
+        "type": "EquipmentSkill",
+        "Ap": "2",
+        "CD": "0",
+        "describe": "Uses a Pile Bunker or Knuckles to attack a target, dealing <color=#F74848>1.25x</color> DMG. This attack prioritizes Arms."
+      }
+    ]
+  },
+  "10103182": {
+    "name": "Kaidan The Invincible",
+    "real_name": "Kaidan Newman",
+    "gender": "Male",
+    "profession": "Striker",
+    "occupation": "Fighter",
+    "quality": "SSR",
+    "license": "Light",
+    "portrait_icon": "Pilot_10103182A_half",
+    "avatar_icon": "Pilot_10103182A_Raw",
+    "version": "3.3",
+    "talents": [
+      "182550",
+      "182551"
+    ],
+    "stats": {
+      "combat": "5365",
+      "assault": "5193",
+      "shooting": "668",
+      "tactics": "934",
+      "defense": "4059",
+      "engineering": "609",
+      "ap_init": "5",
+      "ap_max": "5",
+      "ap_regen": "2"
+    },
+    "neural": [
+      {
+        "partition": "fighter-alpha",
+        "slots": "Attack/Dodge/Dodge"
+      },
+      {
+        "partition": "fighter-beta",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "10103182-gamma1",
+        "slots": "Attack/Dodge/Dodge"
+      },
+      {
+        "partition": "10103182-gamma2",
+        "slots": "Attack/Dodge/Critical"
+      }
+    ]
+  },
+  "10103141": {
+    "name": "Kelly",
+    "real_name": "Kelly Polis",
+    "gender": "Female",
+    "profession": "Gunner",
+    "occupation": "Sniper",
+    "quality": "SSR",
+    "license": "Light",
+    "portrait_icon": "Pilot_10103141A_half",
+    "avatar_icon": "Pilot_10103141A_Raw",
+    "version": "1.3",
+    "skins": [
+      "B"
+    ],
+    "introduction": "An officer of the Dawnstar League Armored Forces from the homeland, a composed and razor-sharp elite sniper.",
+    "talents": [
+      "301050",
+      "301051"
+    ],
+    "stats": {
+      "combat": "2477",
+      "assault": "2310",
+      "shooting": "4794",
+      "tactics": "1307",
+      "defense": "3883",
+      "engineering": "1808",
+      "ap_init": "5",
+      "ap_max": "5",
+      "ap_regen": "2"
+    },
+    "neural": [
+      {
+        "partition": "sniper-alpha",
+        "slots": "Attack/Dodge/Dodge"
+      },
+      {
+        "partition": "sniper-beta",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "10103102-gamma1",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "10103141-gamma2",
+        "slots": "Attack/Dodge/Critical"
+      }
+    ]
+  },
+  "10103179": {
+    "name": "Lexuan",
+    "real_name": "Zheng Lexuan",
+    "gender": "Female",
+    "profession": "Assault",
+    "occupation": "Raider",
+    "quality": "SSR",
+    "license": "Medium",
+    "portrait_icon": "Pilot_10103179A_half",
+    "avatar_icon": "Pilot_10103179A_Raw",
+    "version": "2.8",
+    "skins": [
+      "B"
+    ],
+    "introduction": "郑乐萱，来自异世界的机兵驾驶员，隶属于「亚太战区精神力机甲作战部队」，适配机甲为七号机「霸王」。虽然年轻但训练有素，曾随部队多次成功击退外星污染者，完成包括摧毁成都黑塔、上海黑塔在内的多项重要任务，作战经验丰富。她开朗直率，意志坚定，勇敢正义，既有合格军人的遵规守纪，也能灵活变通，有着良好的合作协同能力，无论在军旅中还是生活里都十分可靠，深得众人的信赖。\n即使意外来到米赫玛岛，郑乐萱仍以极快的速度适应了这片陌生的土地，并与维斯珀尔一同向污染者的阴谋发起了冲击。",
+    "talents": [
+      "202050",
+      "202051"
+    ],
+    "stats": {
+      "combat": "1543",
+      "assault": "5090",
+      "shooting": "1700",
+      "tactics": "2015",
+      "defense": "4043",
+      "engineering": "2172",
+      "ap_init": "5",
+      "ap_max": "5",
+      "ap_regen": "2"
+    },
+    "neural": [
+      {
+        "partition": "raider-alpha",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "raider-beta",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "10103159-gamma1",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "10103179-gamma2",
+        "slots": "Attack/Dodge/Dodge"
+      }
+    ],
+    "hidden_skills": [
+      {
+        "name": "Precision Fire",
+        "icon": "Icon_skill_main_1125",
+        "type": "EquipmentSkill",
+        "Ap": "3",
+        "CD": "0",
+        "describe": "Uses a Machine Gun to attack a target, dealing <color=#F74848>1.3x</color> DMG. When possessing <color=#F74848>80</color> or more stacks of <buf ID=2020505>[Overcharged Bullet]</buf>, Hit Rate and Critical Hit chance increase by <color=#F74848>20%</color>."
+      }
+    ]
+  },
+  "10103138": {
+    "name": "Lorna",
+    "real_name": "Lorna Mahalim",
+    "gender": "Female",
+    "profession": "Mechanic",
+    "occupation": "Machinist",
+    "quality": "SSR",
+    "license": "Medium",
+    "portrait_icon": "Pilot_10103138A_half",
+    "avatar_icon": "Pilot_10103138A_Raw",
+    "version": "1.2",
+    "skins": [
+      "B"
+    ],
+    "introduction": "A streetwise orphan from Free Milkhama, raised by the kindness of the campfolk, never a moment of peace with this little rascal.",
+    "talents": [
+      "500650",
+      "500651"
+    ],
+    "stats": {
+      "combat": "1101",
+      "assault": "1425",
+      "shooting": "3538",
+      "tactics": "1592",
+      "defense": "3952",
+      "engineering": "4924",
+      "ap_init": "5",
+      "ap_max": "5",
+      "ap_regen": "2"
+    },
+    "neural": [
+      {
+        "partition": "machinist-alpha",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "machinist-beta",
+        "slots": "Attack/Critical/Critical"
+      },
+      {
+        "partition": "10103135-gamma1",
+        "slots": "Attack/Dodge/Dodge"
+      },
+      {
+        "partition": "10103138-gamma2",
+        "slots": "Attack/Critical/Critical"
+      }
+    ]
+  },
+  "10103173": {
+    "name": "Lustre",
+    "real_name": "Yao",
+    "gender": "Female",
+    "profession": "Shifter",
+    "occupation": "Shifter",
+    "quality": "SSR",
+    "license": "Light",
+    "portrait_icon": "Pilot_10103173A_half",
+    "avatar_icon": "Pilot_10103173A_Raw",
+    "version": "3.5",
+    "skins": [
+      "B"
+    ],
+    "talents": [
+      "173550",
+      "173551"
+    ],
+    "stats": {
+      "combat": "5216",
+      "assault": "5216",
+      "shooting": "2005",
+      "tactics": "2152",
+      "defense": "3942",
+      "engineering": "1396",
+      "ap_init": "5",
+      "ap_max": "5",
+      "ap_regen": "2"
+    },
+    "neural": [
+      {
+        "partition": "shifter-alpha-2",
+        "slots": "Attack/Critical/Dodge"
+      },
+      {
+        "partition": "shifter-beta-2",
+        "slots": "Attack/Critical/Dodge"
+      },
+      {
+        "partition": "10103173-gamma1",
+        "slots": "Attack/Dodge/Dodge"
+      },
+      {
+        "partition": "10103173-gamma2",
+        "slots": "Attack/Dodge/Dodge"
+      }
+    ]
+  },
+  "10103129": {
+    "name": "Maat",
+    "real_name": "Maat Sharif",
+    "gender": "Female",
+    "profession": "Striker",
+    "occupation": "Fighter",
+    "quality": "SSR",
+    "license": "Heavy",
+    "portrait_icon": "Pilot_10103180A_half",
+    "avatar_icon": "Pilot_10103180A_Raw",
+    "version": "3.0",
+    "introduction": "玛阿特·谢里夫，东米赫玛前任执政官卢克芒的副官。\n她出身于同盟边境小国伊吉帝，该国曾在与邻国的军事争端中陷入劣势，后因议员卢克芒代表晨星同盟介入局势而最终赢得胜利，正是在这一过程中她选择了追随卢克芒，一丝不苟地执行其指示，以忠心换取同盟对伊吉帝的长期支持。然而米尔萨斯爆炸发生后，她过往近十年在晨星同盟中所做的所有努力，都因卢克芒之死而土崩瓦解，伊吉帝的复兴已成虚妄，自己更在战乱中负伤昏迷。当苏醒并知晓一切后，她决心投身于纯粹的复仇当中，以消灭维斯珀尔作为自己最后的生存目的。",
+    "talents": [
+      "101950",
+      "101951"
+    ],
+    "stats": {
+      "combat": "5272",
+      "assault": "1651",
+      "shooting": "2260",
+      "tactics": "1494",
+      "defense": "4082",
+      "engineering": "1799",
+      "ap_init": "5",
+      "ap_max": "5",
+      "ap_regen": "2"
+    },
+    "neural": [
+      {
+        "partition": "fighter-alpha",
+        "slots": "Attack/Dodge/Dodge"
+      },
+      {
+        "partition": "fighter-beta",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "10103146-gamma1",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "10103129-gamma2",
+        "slots": "Attack/Dodge/Dodge"
+      }
+    ],
+    "hidden_skills": [
+      {
+        "name": "Splitter",
+        "icon": "Icon_skill_main_1156",
+        "type": "EquipmentSkill",
+        "Ap": "2",
+        "describe": "Uses a Chainsaw to attack a target, dealing <color=#F74848>1.1x</color> DMG. Consumes all <buf ID=5009234>[Vengeful Edge]</buf> on target hit. This attack always hits the part with lowest HP."
+      }
+    ]
+  },
+  "10103124": {
+    "name": "Marcus",
+    "real_name": "Marcus Davinci",
+    "gender": "Male",
+    "profession": "Assault",
+    "occupation": "Raider",
+    "quality": "SSR",
+    "license": "Light",
+    "portrait_icon": "Pilot_10103124A_half",
+    "avatar_icon": "Pilot_10103124A_Raw",
+    "version": "1.0",
+    "skins": [
+      "B"
+    ],
+    "introduction": "\"Heard Marcus got called up again, by Major William this time! Kid's solid in a fight and reliable, too. Just won't back down. The same attitude that got him in trouble at the academy. Keep that up in the NDF? Matter of time before it bites him.\" —Ex-UNCS grunt",
+    "talents": [
+      "201050",
+      "201051"
+    ],
+    "stats": {
+      "combat": "4588",
+      "assault": "5000",
+      "shooting": "1602",
+      "tactics": "708",
+      "defense": "4024",
+      "engineering": "894",
+      "ap_init": "5",
+      "ap_max": "5",
+      "ap_regen": "2"
+    },
+    "neural": [
+      {
+        "partition": "raider-alpha",
+        "slots": "Attack/Dodge/Dodge"
+      },
+      {
+        "partition": "raider-beta",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "10103159-gamma1",
+        "slots": "Attack/Dodge/Dodge"
+      },
+      {
+        "partition": "10103124-gamma2",
+        "slots": "Attack/Dodge/Critical"
+      }
+    ]
+  },
+  "10103164": {
+    "name": "Martini",
+    "real_name": "Martini Moretti",
+    "gender": "Female",
+    "profession": "Mechanic",
+    "occupation": "Machinist",
+    "quality": "SSR",
+    "license": "Light",
+    "portrait_icon": "Pilot_10103164A_half",
+    "avatar_icon": "Pilot_10103164A_Raw",
+    "version": "2.7",
+    "skins": [
+      "B"
+    ],
+    "introduction": "不知何时起，布吕希尔家的继承人小姐身边多了一位总是笑眯眯的女仆。起初，没人认为奥德莉身边出现的生面孔会带来怎样的影响，直到玛汀妮轻描淡写地将奥德莉身边的一切琐事打理得井井有条，甚至开始作为奥德莉的代言人出席重要的作战会议时，众人才意识到这位深得布吕希尔家族信任的女仆也许大有来头。\n于是，无数刺探的手段开始运作，许多人都想以玛汀妮为切入口探寻布吕希尔家族的秘密——然而，与她那个光芒加身的主人不同，玛汀妮的身上总笼罩着层层的迷雾，轻易便能隔绝所有不怀好意的目光。\n在越来越多用以试探的棋子消失在棋盘中后，人们逐渐意识到，也许猎物和猎人的身份从来都是叠加存在的，那位看似无害、总是彬彬有礼随侍于奥德莉身侧的女仆也能轻易将他们逼入绝境……不过玛汀妮对这样的工作早已习以为常，作为布吕希尔家的专业女仆，这都是她应该完成的事务。",
+    "talents": [
+      "500950",
+      "500951"
+    ],
+    "stats": {
+      "combat": "4940",
+      "assault": "747",
+      "shooting": "1022",
+      "tactics": "678",
+      "defense": "4307",
+      "engineering": "5137",
+      "ap_init": "5",
+      "ap_max": "5",
+      "ap_regen": "2"
+    },
+    "neural": [
+      {
+        "partition": "fighter-alpha",
+        "slots": "Attack/Dodge/Dodge"
+      },
+      {
+        "partition": "fighter-beta",
+        "slots": "Attack/Critical/Critical"
+      },
+      {
+        "partition": "10103164-gamma1",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "10103164-gamma2",
+        "slots": "Attack/Dodge/Critical"
+      }
+    ],
+    "hidden_skills": [
+      {
+        "name": "Tainted Implant",
+        "icon": "Icon_skill_main_1145",
+        "type": "EquipmentSkill",
+        "Ap": "2",
+        "CD": "0",
+        "describe": "Uses a Knuckle or Pilebunker to attack a target, dealing <color=#F74848>1.1x</color> DMG. Can enter <buf ID=900014>[Aiming]</buf> Mode before attacking."
+      }
+    ]
+  },
+  "10103139": {
+    "name": "Matilda",
+    "real_name": "Matilda Rossi",
+    "gender": "Female",
+    "profession": "Assault",
+    "occupation": "Raider",
+    "quality": "SSR",
+    "license": "Light",
+    "portrait_icon": "Pilot_10103139A_half",
+    "avatar_icon": "Pilot_10103139A_Raw",
+    "version": "2.1",
+    "skins": [
+      "B"
+    ],
+    "introduction": "A major in the Dawnstar League Armored Forces, a frontline commander known as the \"Flower of the Armored Forces.\"",
+    "talents": [
+      "201750",
+      "201751"
+    ],
+    "stats": {
+      "combat": "1700",
+      "assault": "5100",
+      "shooting": "2329",
+      "tactics": "1858",
+      "defense": "4033",
+      "engineering": "1543",
+      "ap_init": "5",
+      "ap_max": "5",
+      "ap_regen": "2"
+    },
+    "neural": [
+      {
+        "partition": "raider-alpha",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "raider-beta",
+        "slots": "Attack/Dodge/Dodge"
+      },
+      {
+        "partition": "10103159-gamma1",
+        "slots": "Attack/Dodge/Dodge"
+      },
+      {
+        "partition": "10103139-gamma2",
+        "slots": "Attack/Dodge/Critical"
+      }
+    ]
+  },
+  "10103111": {
+    "name": "Melissa",
+    "real_name": "Melissa Hicks",
+    "gender": "Female",
+    "profession": "Mechanic",
+    "occupation": "Machinist",
+    "quality": "SSR",
+    "license": "Medium",
+    "portrait_icon": "Pilot_10103111A_half",
+    "avatar_icon": "Pilot_10103111A_Raw",
+    "version": "1.0",
+    "skins": [
+      "B"
+    ],
+    "introduction": "\"Canary, Senior Hunter, ST tech/support, Rebecca's partner.\nTogether they've crushed five 30+ ST gangs, cleared 20+ top bounties. Pack platoon-level punch. No direct contact, no custom jobs. \nWant them? Post triple rate - she'll bite. No guarantees.\" —Hunter's Guide",
+    "talents": [
+      "500450",
+      "500451"
+    ],
+    "stats": {
+      "combat": "1749",
+      "assault": "1592",
+      "shooting": "3322",
+      "tactics": "963",
+      "defense": "3942",
+      "engineering": "4977",
+      "ap_init": "5",
+      "ap_max": "5",
+      "ap_regen": "2"
+    },
+    "neural": [
+      {
+        "partition": "machinist-alpha",
+        "slots": "Attack/Critical/Critical"
+      },
+      {
+        "partition": "machinist-beta",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "10103135-gamma1",
+        "slots": "Attack/Critical/Critical"
+      },
+      {
+        "partition": "10103111-gamma2",
+        "slots": "Attack/Dodge/Dodge"
+      }
+    ]
+  },
+  "10103106": {
+    "name": "Naomi",
+    "real_name": "Naomi Romanov",
+    "gender": "Female",
+    "profession": "Launcher",
+    "occupation": "Tactician",
+    "quality": "SSR",
+    "license": "Medium",
+    "portrait_icon": "Pilot_10103106A_half",
+    "avatar_icon": "Pilot_10103106A_Raw",
+    "version": "1.0",
+    "introduction": "Ex-Ether Rats ace hacker. Competitive rebel who cracked codes to expose truth. Got tangled in Obsidian/UNCS plots while running Skynet intel. Natalia helped her escape to GSA.\nDon't let the punk student look fool you—she's a digital wizard no one dares ignore.",
+    "talents": [
+      "400550",
+      "400551"
+    ],
+    "stats": {
+      "combat": "1857",
+      "assault": "1022",
+      "shooting": "2693",
+      "tactics": "4717",
+      "defense": "3730",
+      "engineering": "2526",
+      "ap_init": "5",
+      "ap_max": "6",
+      "ap_regen": "2"
+    },
+    "neural": [
+      {
+        "partition": "tactician-alpha",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "tactician-beta",
+        "slots": "Attack/Dodge/Dodge"
+      },
+      {
+        "partition": "10103127-gamma1",
+        "slots": "Attack/Dodge/Dodge"
+      },
+      {
+        "partition": "10103106-gamma2",
+        "slots": "Attack/Critical/Critical"
+      }
+    ]
+  },
+  "10103105": {
+    "name": "Natalia",
+    "real_name": "Natalia Coronado",
+    "gender": "Female",
+    "profession": "Gunner",
+    "occupation": "Sniper",
+    "quality": "SSR",
+    "license": "Medium",
+    "portrait_icon": "Pilot_10103105A_half",
+    "avatar_icon": "Pilot_10103105A_Raw",
+    "version": "1.0",
+    "skins": [
+      "B"
+    ],
+    "introduction": "Accordion, ghost on Skynet, GSA ace, Naomi's partner. Obsidian and NDF fear her name.\nTrue goals unknown. Beauty and brains, sharp tongue, lethal mix. Trades intel for premium, nothing less.",
+    "talents": [
+      "300950",
+      "300951"
+    ],
+    "stats": {
+      "combat": "1317",
+      "assault": "2772",
+      "shooting": "4833",
+      "tactics": "1160",
+      "defense": "3832",
+      "engineering": "2614",
+      "ap_init": "5",
+      "ap_max": "5",
+      "ap_regen": "2"
+    },
+    "neural": [
+      {
+        "partition": "sniper-alpha",
+        "slots": "Attack/Dodge/Dodge"
+      },
+      {
+        "partition": "sniper-beta",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "10103102-gamma1",
+        "slots": "Attack/Dodge/Dodge"
+      },
+      {
+        "partition": "10103105-gamma2",
+        "slots": "Attack/Critical/Critical"
+      }
+    ]
+  },
+  "10103175": {
+    "name": "Niall",
+    "real_name": "Niall Quenstedt",
+    "gender": "Female",
+    "profession": "Launcher",
+    "occupation": "Tactician",
+    "quality": "SSR",
+    "license": "Medium",
+    "portrait_icon": "Pilot_10103175A_half",
+    "avatar_icon": "Pilot_10103175A_Raw",
+    "version": "3.4",
+    "talents": [
+      "175550",
+      "175551"
+    ],
+    "stats": {
+      "combat": "2408",
+      "assault": "1916",
+      "shooting": "1592",
+      "tactics": "4865",
+      "defense": "4013",
+      "engineering": "1749",
+      "ap_init": "5",
+      "ap_max": "6",
+      "ap_regen": "2"
+    },
+    "neural": [
+      {
+        "partition": "tactician-alpha",
+        "slots": "Attack/Dodge/Dodge"
+      },
+      {
+        "partition": "tactician-beta",
+        "slots": "Attack/Critical/Critical"
+      },
+      {
+        "partition": "10103175-gamma1",
+        "slots": "Attack/Critical/Critical"
+      },
+      {
+        "partition": "10103175-gamma2",
+        "slots": "Attack/Dodge/Dodge"
+      }
+    ]
+  },
+  "10103134": {
+    "name": "Ophelia",
+    "real_name": "Aynis Newman",
+    "gender": "Female",
+    "profession": "Striker",
+    "occupation": "Fighter",
+    "quality": "SSR",
+    "license": "Light",
+    "portrait_icon": "Pilot_10103134A_half",
+    "avatar_icon": "Pilot_10103134A_Raw",
+    "version": "1.7",
+    "skins": [
+      "B",
+      "C"
+    ],
+    "introduction": "Abandoning the Newman surname, she returns to Milkhama as a mercenary. Her strength is unquestioned; her purpose, unknown.",
+    "talents": [
+      "101550",
+      "101551"
+    ],
+    "stats": {
+      "combat": "5120",
+      "assault": "2103",
+      "shooting": "1189",
+      "tactics": "2260",
+      "defense": "4214",
+      "engineering": "1641",
+      "ap_init": "5",
+      "ap_max": "5",
+      "ap_regen": "2"
+    },
+    "neural": [
+      {
+        "partition": "fighter-alpha",
+        "slots": "Attack/Critical/Critical"
+      },
+      {
+        "partition": "fighter-beta",
+        "slots": "Attack/Dodge/Dodge"
+      },
+      {
+        "partition": "10103118-gamma1",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "10103134-gamma2",
+        "slots": "Attack/Dodge/Critical"
+      }
+    ]
+  },
+  "10103153": {
+    "name": "Paloma",
+    "real_name": "Paloma Cognitionis",
+    "gender": "Female",
+    "profession": "Gunner",
+    "occupation": "Sniper",
+    "quality": "SSR",
+    "license": "Heavy",
+    "portrait_icon": "Pilot_10103153A_half",
+    "avatar_icon": "Pilot_10103153A_Raw",
+    "version": "2.0",
+    "introduction": "An elite pilot of the Reversion Squad, and an elusive Mechanical Expert in neuromedicine and bionic mechanics.",
+    "talents": [
+      "301150",
+      "301151"
+    ],
+    "stats": {
+      "combat": "1966",
+      "assault": "2133",
+      "shooting": "4904",
+      "tactics": "1474",
+      "defense": "3760",
+      "engineering": "2290",
+      "ap_init": "5",
+      "ap_max": "5",
+      "ap_regen": "2"
+    },
+    "neural": [
+      {
+        "partition": "sniper-alpha",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "sniper-beta",
+        "slots": "Attack/Dodge/Dodge"
+      },
+      {
+        "partition": "10103102-gamma1",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "10103153-gamma2",
+        "slots": "Attack/Dodge/Critical"
+      }
+    ]
+  },
+  "10103150": {
+    "name": "Rei",
+    "real_name": "Rei Ayanami",
+    "gender": "Female",
+    "profession": "Defender",
+    "occupation": "Guardian",
+    "quality": "SSR",
+    "license": "Heavy",
+    "portrait_icon": "Pilot_10103150A_half",
+    "avatar_icon": "Pilot_10103150A_Raw",
+    "version": "1.5",
+    "skins": [
+      "B"
+    ],
+    "introduction": "From another world, the pilot of Evangelion Type Zero—the First Child.",
+    "talents": [
+      "600950",
+      "600951"
+    ],
+    "stats": {
+      "combat": "2329",
+      "assault": "4457",
+      "shooting": "2172",
+      "tactics": "1700",
+      "defense": "4622",
+      "engineering": "1229",
+      "ap_init": "5",
+      "ap_max": "5",
+      "ap_regen": "2"
+    },
+    "neural": [
+      {
+        "partition": "guardian-alpha",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "guardian-beta",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "10103167-gamma1",
+        "slots": "Attack/Critical/Critical"
+      },
+      {
+        "partition": "10103150-gamma2",
+        "slots": "Attack/Dodge/Critical"
+      }
+    ]
+  },
+  "10103107": {
+    "name": "Rosa",
+    "real_name": "Rosa Diaz",
+    "gender": "Female",
+    "profession": "Assault",
+    "occupation": "Raider",
+    "quality": "SSR",
+    "license": "Medium",
+    "portrait_icon": "Pilot_10103107A_half",
+    "avatar_icon": "Pilot_10103107A_Raw",
+    "version": "1.0",
+    "skins": [
+      "B",
+      "C"
+    ],
+    "introduction": "\"Rosa Diaz, UNCS's Valkyrie ace! Beauty and skill made her a military idol. But beyond the promos and press? Pure mystery. What's her real story? More to come…\" —Weekly Milkhama Entertainment",
+    "talents": [
+      "200850",
+      "200851"
+    ],
+    "stats": {
+      "combat": "1425",
+      "assault": "4864",
+      "shooting": "1327",
+      "tactics": "4588",
+      "defense": "3946",
+      "engineering": "668",
+      "ap_init": "5",
+      "ap_max": "5",
+      "ap_regen": "2"
+    },
+    "neural": [
+      {
+        "partition": "raider-alpha",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "raider-beta",
+        "slots": "Attack/Dodge/Dodge"
+      },
+      {
+        "partition": "10103159-gamma1",
+        "slots": "Attack/Dodge/Dodge"
+      },
+      {
+        "partition": "10103107-gamma2",
+        "slots": "Attack/Critical/Critical"
+      }
+    ]
+  },
+  "10103154": {
+    "name": "Rosa: Judgment",
+    "real_name": "Rosa Diaz",
+    "gender": "Female",
+    "profession": "Launcher",
+    "occupation": "Tactician",
+    "quality": "SSR",
+    "license": "Medium",
+    "portrait_icon": "Pilot_10103154A_half",
+    "avatar_icon": "Pilot_10103154A_Raw",
+    "version": "2.0",
+    "skins": [
+      "B",
+      "C"
+    ],
+    "introduction": "Rosa Díaz, who reawakened in the Reversion Squad's laboratory after the end of the Blair Rebellion.",
+    "talents": [
+      "400950",
+      "400951"
+    ],
+    "stats": {
+      "combat": "786",
+      "assault": "4940",
+      "shooting": "1179",
+      "tactics": "5127",
+      "defense": "3946",
+      "engineering": "865",
+      "ap_init": "5",
+      "ap_max": "6",
+      "ap_regen": "2"
+    },
+    "neural": [
+      {
+        "partition": "tactician-alpha",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "tactician-beta",
+        "slots": "Attack/Dodge/Dodge"
+      },
+      {
+        "partition": "10103154-gamma1",
+        "slots": "Attack/Dodge/Dodge"
+      },
+      {
+        "partition": "10103154-gamma2",
+        "slots": "Attack/Critical/Critical"
+      }
+    ]
+  },
+  "10103133": {
+    "name": "Rosemary",
+    "real_name": "Rosemary Jean",
+    "gender": "Female",
+    "profession": "Launcher",
+    "occupation": "Tactician",
+    "quality": "SSR",
+    "license": "Medium",
+    "portrait_icon": "Pilot_10103133A_half",
+    "avatar_icon": "Pilot_10103133A_Raw",
+    "version": "2.1",
+    "introduction": "The current Director of the GSA, Acting Viceroy of Milkhama, and the intelligence chief who knows everything.",
+    "talents": [
+      "401050",
+      "401051"
+    ],
+    "stats": {
+      "combat": "2290",
+      "assault": "1799",
+      "shooting": "1317",
+      "tactics": "4833",
+      "defense": "3832",
+      "engineering": "2457",
+      "ap_init": "5",
+      "ap_max": "6",
+      "ap_regen": "2"
+    },
+    "neural": [
+      {
+        "partition": "tactician-alpha",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "tactician-beta",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "10103127-gamma1",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "10103133-gamma2",
+        "slots": "Attack/Dodge/Dodge"
+      }
+    ]
+  },
+  "10103157": {
+    "name": "Sapientia",
+    "real_name": "Sapientia Cognitionis",
+    "gender": "Female",
+    "profession": "Mechanic",
+    "occupation": "Machinist",
+    "quality": "SSR",
+    "license": "Medium",
+    "portrait_icon": "Pilot_10103157A_half",
+    "avatar_icon": "Pilot_10103157A_Raw",
+    "version": "2.3",
+    "skins": [
+      "B"
+    ],
+    "introduction": "ST Assembly engineer of the Reversion Squad, a leading theorist in Arashi neuro-mechanical systems.",
+    "talents": [
+      "500850",
+      "500851"
+    ],
+    "stats": {
+      "combat": "1700",
+      "assault": "3430",
+      "shooting": "1229",
+      "tactics": "1071",
+      "defense": "3991",
+      "engineering": "5157",
+      "ap_init": "5",
+      "ap_max": "5",
+      "ap_regen": "2"
+    },
+    "neural": [
+      {
+        "partition": "machinist-alpha",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "machinist-beta",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "10103135-gamma1",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "10103157-gamma2",
+        "slots": "Attack/Critical/Critical"
+      }
+    ],
+    "summon_skills": [
+      {
+        "name": "Super Guggle!",
+        "describe": "",
+        "SpecificEffects": "Performs <buf ID=1099901>[Guard]</buf>, protecting allies within <color=#F74848>1</color> adjacent tile from Melee, Assault, and Ranged attacks. Can trigger up to <color=#F74848>3</color> times per turn. When performing <buf ID=1099901>[Guard]</buf>, restores <color=#F74848>1</color> AP after combat.",
+        "icon": "Icon_skill_passive_5295"
+      },
+      {
+        "name": "Guggle's Grand Plan!",
+        "describe": "Protects allies within <color=#F74848>2</color> adjacent tiles from Melee, Assault, and Ranged attacks. Can trigger up to <color=#F74848>3</color> times per turn. Lasts for <color=#F74848>2</color> turns. Additionally, gains <buf ID=1099902>[Short-Circuit Strike!]</buf> for <color=#F74848>2</color> turns, then gains <color=#F74848>2</color> Extra Movement.",
+        "SpecificEffects": "",
+        "type": "Order",
+        "Ap": "1",
+        "CD": "2",
+        "icon": "Icon_skill_order_1031"
+      },
+      {
+        "name": "Guggle's Encouragement!",
+        "describe": "Selects <color=#F74848>1</color> other ally within a <color=#F74848>2</color>-block range and restores <color=#F74848>2</color> AP to them.",
+        "SpecificEffects": "",
+        "type": "Order",
+        "Ap": "4",
+        "CD": "2",
+        "icon": "Icon_skill_order_5002"
+      },
+      {
+        "name": "Guggle's Star Shift!",
+        "describe": "Can select any <color=#F74848>1</color> ally within <color=#F74848>3</color> adjacent tiles, swap positions with them, and then continue to act using remaining Movement.",
+        "SpecificEffects": "",
+        "type": "Order",
+        "Ap": "1",
+        "CD": "2",
+        "icon": "Icon_skill_order_5138"
+      }
+    ]
+  },
+  "10103120": {
+    "name": "Seven",
+    "real_name": "Seven Favre",
+    "gender": "Female",
+    "profession": "Mechanic",
+    "occupation": "Machinist",
+    "quality": "SSR",
+    "license": "Medium",
+    "portrait_icon": "Pilot_10103120A_half",
+    "avatar_icon": "Pilot_10103120A_Raw",
+    "version": "1.0",
+    "skins": [
+      "B"
+    ],
+    "introduction": "Young mechanic chasing Milkhama dreams. Prefers mods to repairs and is fascinated by Arashium. Runs Lollipop Machine Shop with one rule: top service means she mods your ST her way.",
+    "talents": [
+      "500550",
+      "500551"
+    ],
+    "stats": {
+      "combat": "1592",
+      "assault": "3479",
+      "shooting": "1435",
+      "tactics": "1120",
+      "defense": "3832",
+      "engineering": "5100",
+      "ap_init": "5",
+      "ap_max": "5",
+      "ap_regen": "2"
+    },
+    "neural": [
+      {
+        "partition": "machinist-alpha",
+        "slots": "Dodge/Critical/Critical"
+      },
+      {
+        "partition": "machinist-beta",
+        "slots": "Attack/Attack/Critical"
+      },
+      {
+        "partition": "10103135-gamma1",
+        "slots": "Attack/Critical/Critical"
+      },
+      {
+        "partition": "10103120-gamma2",
+        "slots": "Attack/Dodge/Critical"
+      }
+    ]
+  },
+  "10102102": {
+    "name": "Shawnee",
+    "real_name": "Shawnee Russell",
+    "gender": "Female",
+    "profession": "Gunner",
+    "occupation": "Sniper",
+    "quality": "SSR",
+    "license": "Medium",
+    "portrait_icon": "Pilot_10102102A_half",
+    "avatar_icon": "Pilot_10102102A_Raw",
+    "version": "1.0",
+    "introduction": "\"Shawnee Russell, East Milkhama security chief, DLAF rising star. People see law and order. Don't see the iron fist. Opponents quit races early. Watch that sweet smile. It hides teeth.\" —Naomi's brief to Arnold",
+    "talents": [
+      "300750",
+      "300751"
+    ],
+    "stats": {
+      "combat": "943",
+      "assault": "1366",
+      "shooting": "4629",
+      "tactics": "4466",
+      "defense": "3946",
+      "engineering": "1464",
+      "ap_init": "5",
+      "ap_max": "5",
+      "ap_regen": "2"
+    },
+    "neural": [
+      {
+        "partition": "sniper-alpha",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "sniper-beta",
+        "slots": "Attack/Critical/Critical"
+      },
+      {
+        "partition": "10103102-gamma1",
+        "slots": "Attack/Dodge/Dodge"
+      },
+      {
+        "partition": "10102102-gamma2",
+        "slots": "Attack/Dodge/Critical"
+      }
+    ]
+  },
+  "10103151": {
+    "name": "Shinji",
+    "real_name": "Shinji Ikari",
+    "gender": "Male",
+    "profession": "Assault",
+    "occupation": "Raider",
+    "quality": "SSR",
+    "license": "Medium",
+    "portrait_icon": "Pilot_10103151A_half",
+    "avatar_icon": "Pilot_10103151A_Raw",
+    "version": "1.5",
+    "introduction": "From another world, the pilot of Evangelion Type I—the Third Child.",
+    "talents": [
+      "201450",
+      "201451"
+    ],
+    "stats": {
+      "combat": "1081",
+      "assault": "5017",
+      "shooting": "5017",
+      "tactics": "934",
+      "defense": "3893",
+      "engineering": "560",
+      "ap_init": "5",
+      "ap_max": "5",
+      "ap_regen": "2"
+    },
+    "neural": [
+      {
+        "partition": "raider-alpha",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "raider-beta",
+        "slots": "Attack/Dodge/Dodge"
+      },
+      {
+        "partition": "10103151-gamma1",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "10103151-gamma2",
+        "slots": "Attack/Dodge/Critical"
+      }
+    ]
+  },
+  "10103181": {
+    "name": "Sonya",
+    "real_name": "Sonya Volokova",
+    "gender": "Female",
+    "profession": "Striker",
+    "occupation": "Fighter",
+    "quality": "SSR",
+    "license": "Light",
+    "portrait_icon": "Pilot_10103181A_half",
+    "avatar_icon": "Pilot_10103181A_Raw",
+    "version": "3.7",
+    "talents": [
+      "181550",
+      "181551"
+    ],
+    "stats": {
+      "combat": "5291",
+      "assault": "2260",
+      "shooting": "1494",
+      "tactics": "1651",
+      "defense": "4053",
+      "engineering": "1799",
+      "ap_init": "5",
+      "ap_max": "5",
+      "ap_regen": "2"
+    },
+    "neural": [
+      {
+        "partition": "fighter-alpha",
+        "slots": "Attack/Dodge/Dodge"
+      },
+      {
+        "partition": "fighter-beta",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "10103118-gamma1",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "10103181-gamma2",
+        "slots": "Attack/Dodge/Dodge"
+      }
+    ]
+  },
+  "10103183": {
+    "name": "Sylar",
+    "real_name": "Sylar Valentina",
+    "gender": "Female",
+    "profession": "Launcher",
+    "occupation": "Tactician",
+    "quality": "SSR",
+    "license": "Medium",
+    "portrait_icon": "Pilot_10103183A_half",
+    "avatar_icon": "Pilot_10103183A_Raw",
+    "version": "3.6",
+    "skins": [
+      "B"
+    ],
+    "talents": [
+      "183550",
+      "183551"
+    ],
+    "stats": {
+      "combat": "1916",
+      "assault": "1425",
+      "shooting": "2084",
+      "tactics": "4904",
+      "defense": "3972",
+      "engineering": "2241",
+      "ap_init": "5",
+      "ap_max": "6",
+      "ap_regen": "2"
+    },
+    "neural": [
+      {
+        "partition": "tactician-alpha",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "tactician-beta",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "10103175-gamma1",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "10103183-gamma2",
+        "slots": "Attack/Dodge/Dodge"
+      }
+    ]
+  },
+  "10103119": {
+    "name": "Sylvie",
+    "real_name": "Sylvie Roussel",
+    "gender": "Female",
+    "profession": "Gunner",
+    "occupation": "Sniper",
+    "quality": "SSR",
+    "license": "Light",
+    "portrait_icon": "Pilot_10103119A_half",
+    "avatar_icon": "Pilot_10103119A_Raw",
+    "version": "1.0",
+    "introduction": "Sylvie - Rosa's ally from Hyper-Aptamer days. Valkyrie's most loyal. Hates the labs scattered across Milkhama. Now leads girls like her in fierce rebellion. Strong leader, fate uncertain.",
+    "talents": [
+      "300850",
+      "300851"
+    ],
+    "stats": {
+      "combat": "2978",
+      "assault": "2310",
+      "shooting": "4717",
+      "tactics": "1140",
+      "defense": "3942",
+      "engineering": "1474",
+      "ap_init": "5",
+      "ap_max": "5",
+      "ap_regen": "2"
+    },
+    "neural": [
+      {
+        "partition": "sniper-alpha",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "sniper-beta",
+        "slots": "Attack/Dodge/Dodge"
+      },
+      {
+        "partition": "10103102-gamma1",
+        "slots": "Attack/Dodge/Dodge"
+      },
+      {
+        "partition": "10103119-gamma2",
+        "slots": "Attack/Dodge/Critical"
+      }
+    ]
+  },
+  "10103166": {
+    "name": "Tang",
+    "real_name": "Tang Xiaokui",
+    "gender": "Female",
+    "profession": "Mechanic",
+    "occupation": "Machinist",
+    "quality": "SSR",
+    "license": "Light",
+    "portrait_icon": "Pilot_10103166A_half",
+    "avatar_icon": "Pilot_10103166A_Raw",
+    "version": "3.1",
+    "skins": [
+      "B"
+    ],
+    "introduction": "唐小葵，角雕佣兵业务负责人。年纪轻轻却手段了得，凭借自身的出众才智以及佣兵们的支持，成功跻身商会最核心管理层，帮助角雕周旋于米赫玛各大势力之间，也与多尔、卡塔纳乃至神州势力建立了合作关系。\n因为已逝双亲的遗志和自身从小到大的经历，她对「佣兵」这一旁人敬而远之的危险职业持独特看法——认为他们与劳苦大众并无不同，只是在米赫玛既有规则下讨着生活。他们无法触及真正的利益，也无法对抗剧变的局势。在战争不断激化的当下，她不惜亲身入局，希望利用角雕的力量维持米赫玛局势平衡，为这些佣兵提供尽可能多的生存与发展机会。",
+    "talents": [
+      "501050",
+      "501051"
+    ],
+    "stats": {
+      "combat": "698",
+      "assault": "5237",
+      "shooting": "767",
+      "tactics": "1042",
+      "defense": "4049",
+      "engineering": "5039",
+      "ap_init": "5",
+      "ap_max": "5",
+      "ap_regen": "2"
+    },
+    "neural": [
+      {
+        "partition": "raider-alpha",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "raider-beta",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "10103166-gamma1",
+        "slots": "Attack/Dodge/Dodge"
+      },
+      {
+        "partition": "10103166-gamma2",
+        "slots": "Attack/Dodge/Critical"
+      }
+    ],
+    "hidden_skills": [
+      {
+        "name": "Flame Strike",
+        "icon": "Icon_skill_main_1151",
+        "type": "EquipmentSkill",
+        "Ap": "3",
+        "CD": "0",
+        "describe": "Uses a Flamethrower to attack a target, dealing <color=#F74848>1.2x</color> DMG and <color=#F74848>20%</color> <buf ID=900139>[Flame DMG]</buf> to other targets along the path. After combat, applies <terrian ID=4003081 /> to all tiles along the attack path, lasting <color=#F74848>2</color> turns. Can activate <buf ID=5010468>[Stratagem Infusion]</buf> to increase <buf ID=900139>[Flame DMG]</buf> to <color=#F74848>40%</color>."
+      }
+    ]
+  },
+  "10103131": {
+    "name": "Tiphys",
+    "real_name": "Tiphys Mill",
+    "gender": "Male",
+    "profession": "Defender",
+    "occupation": "Guardian",
+    "quality": "SSR",
+    "license": "Heavy",
+    "portrait_icon": "Pilot_10103131A_half",
+    "avatar_icon": "Pilot_10103131A_Raw",
+    "version": "1.3",
+    "introduction": "Rear Admiral, Milkhama Regional Commander of the Dawnstar League Armored Forces.",
+    "talents": [
+      "600850",
+      "600851"
+    ],
+    "stats": {
+      "combat": "2565",
+      "assault": "4331",
+      "shooting": "2241",
+      "tactics": "1268",
+      "defense": "4548",
+      "engineering": "1592",
+      "ap_init": "5",
+      "ap_max": "5",
+      "ap_regen": "2"
+    },
+    "neural": [
+      {
+        "partition": "guardian-alpha",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "guardian-beta",
+        "slots": "Attack/Critical/Critical"
+      },
+      {
+        "partition": "10103121-gamma1",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "10103131-gamma2",
+        "slots": "Attack/Dodge/Critical"
+      }
+    ]
+  },
+  "10103172": {
+    "name": "Toraoh",
+    "real_name": "Tiger King",
+    "gender": "Male",
+    "profession": "Assault",
+    "occupation": "Raider",
+    "quality": "SSR",
+    "license": "Light",
+    "portrait_icon": "Pilot_10103172A_half",
+    "avatar_icon": "Pilot_10103172A_Raw",
+    "version": "2.6",
+    "introduction": "虎王，来自异世界的少年，大魔王多恶达的儿子。酷爱玩乐的他通过梦境来到米赫玛岛，开启了全新的冒险之旅。",
+    "talents": [
+      "201950",
+      "201951"
+    ],
+    "stats": {
+      "combat": "2113",
+      "assault": "5068",
+      "shooting": "1504",
+      "tactics": "1651",
+      "defense": "4256",
+      "engineering": "1966",
+      "ap_init": "5",
+      "ap_max": "5",
+      "ap_regen": "2"
+    },
+    "neural": [
+      {
+        "partition": "raider-alpha",
+        "slots": "Attack/Dodge/Dodge"
+      },
+      {
+        "partition": "raider-beta",
+        "slots": "Attack/Critical/Critical"
+      },
+      {
+        "partition": "10103172-gamma1",
+        "slots": "Attack/Dodge/Dodge"
+      },
+      {
+        "partition": "10103172-gamma2",
+        "slots": "Attack/Dodge/Critical"
+      }
+    ],
+    "hidden_skills": [
+      {
+        "name": "Fierce Assault",
+        "icon": "Icon_skill_main_1105",
+        "type": "EquipmentSkill",
+        "Ap": "3",
+        "CD": "0",
+        "describe": "Uses a Shotgun to attack a target, dealing <color=#F74848>1.4x</color> DMG. Before attacking, gains <color=#F74848>1</color> random debuff, lasting for <color=#F74848>2</color> turns."
+      }
+    ]
+  },
+  "10103144": {
+    "name": "Verna",
+    "real_name": "Vincenza \"Verna\" Luno",
+    "gender": "Female",
+    "profession": "Defender",
+    "occupation": "Guardian",
+    "quality": "SSR",
+    "license": "Heavy",
+    "portrait_icon": "Pilot_13019A_half",
+    "avatar_icon": "Pilot_13019A_Raw",
+    "version": "2.4",
+    "skins": [
+      "B"
+    ],
+    "introduction": "Heiress to the powerful Luno Family, she rose to lead in a time of turmoil, upholding its legacy through firepower and negotiation.",
+    "talents": [
+      "601050",
+      "601051"
+    ],
+    "stats": {
+      "combat": "2084",
+      "assault": "2241",
+      "shooting": "1592",
+      "tactics": "4477",
+      "defense": "4384",
+      "engineering": "1749",
+      "ap_init": "5",
+      "ap_max": "5",
+      "ap_regen": "2"
+    },
+    "neural": [
+      {
+        "partition": "guardian-alpha",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "guardian-beta",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "10103167-gamma1",
+        "slots": "Attack/Dodge/Dodge"
+      },
+      {
+        "partition": "10103144-gamma2",
+        "slots": "Attack/Critical/Critical"
+      }
+    ],
+    "hidden_skills": [
+      {
+        "name": "Hunter's Prelude",
+        "icon": "Icon_skill_order_1138",
+        "type": "SpecialAssault",
+        "Ap": "4",
+        "CD": "2",
+        "describe": "Uses a Large Shield or Small Shield to throw a magnetic grenade at any tile within a <range type=1>4-tile diamond area</range>, dealing <color=#F74848>0.1x</color> AoE DMG to the Body of all enemy units within <color=#F74848>3</color> tiles of the location, and forcibly displacing them <color=#F74848>2</color> tiles toward the center. This attack is guaranteed to hit. After attacking, applies <buf ID=6010502>[Magnetic Lock]</buf> to all targets, and can then trigger <buf ID=900004>[Re-ATK]</buf>. Cannot move before attacking."
+      },
+      {
+        "name": "Guard",
+        "describe": "Protects allies within <color=#F74848>2</color> adjacent tiles from Assault and Ranged attacks. Triggers up to <color=#F74848>2</color> times per turn and lasts <color=#F74848>2</color> turns. Additionally, gains <buf ID=7100701>[Defensive Stance I]</buf>. Can only trigger <color=#F74848>1</color> time per turn.",
+        "SpecificEffects": "",
+        "type": "Order",
+        "Ap": "1",
+        "icon": "Icon_skill_order_1031",
+        "CD": "2"
+      }
+    ]
+  },
+  "10103155": {
+    "name": "Veronica",
+    "real_name": "Veronica Lopez",
+    "gender": "Female",
+    "profession": "Gunner",
+    "occupation": "Sniper",
+    "quality": "SSR",
+    "license": "Light",
+    "portrait_icon": "Pilot_10103155A_half",
+    "avatar_icon": "Pilot_10103155A_Raw",
+    "version": "2.4",
+    "introduction": "An elite pilot of the Reversion Squad, and a composed, highly professional agent of the Oversight Committee.",
+    "talents": [
+      "301250",
+      "301251"
+    ],
+    "stats": {
+      "combat": "1592",
+      "assault": "2408",
+      "shooting": "4924",
+      "tactics": "2241",
+      "defense": "3952",
+      "engineering": "1425",
+      "ap_init": "5",
+      "ap_max": "5",
+      "ap_regen": "2"
+    },
+    "neural": [
+      {
+        "partition": "sniper-alpha",
+        "slots": "Attack/Dodge/Dodge"
+      },
+      {
+        "partition": "sniper-beta",
+        "slots": "Attack/Critical/Critical"
+      },
+      {
+        "partition": "10103165-gamma1",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "10103155-gamma2",
+        "slots": "Attack/Dodge/Dodge"
+      }
+    ],
+    "hidden_skills": [
+      {
+        "name": "Targeted Diagnosis",
+        "icon": "Icon_skill_main_1115",
+        "type": "EquipmentSkill",
+        "Ap": "2",
+        "CD": "0",
+        "describe": "Uses a Light Rifle to attack a target, dealing <color=#F74848>1.25x</color> DMG. If there are no allied units within <color=#F74848>2</color> tiles, enters <buf ID=900014>[Aiming]</buf> Mode before attacking."
+      }
+    ]
+  },
+  "10103171": {
+    "name": "Wataru",
+    "real_name": "Ikusabe Wataru",
+    "gender": "Male",
+    "profession": "Striker",
+    "occupation": "Fighter",
+    "quality": "SSR",
+    "license": "Heavy",
+    "portrait_icon": "Pilot_10103171A_half",
+    "avatar_icon": "Pilot_10103171A_Raw",
+    "version": "2.6",
+    "skins": [
+      "B"
+    ],
+    "introduction": "战部渡，来自异世界的四年级小学生，为了拯救创界山而勇敢行动的「救世主」，在冒险中经由梦境来到了米赫玛岛。",
+    "talents": [
+      "101850",
+      "101851"
+    ],
+    "stats": {
+      "combat": "5177",
+      "assault": "1897",
+      "shooting": "2044",
+      "tactics": "1602",
+      "defense": "4361",
+      "engineering": "1455",
+      "ap_init": "5",
+      "ap_max": "5",
+      "ap_regen": "2"
+    },
+    "neural": [
+      {
+        "partition": "fighter-alpha",
+        "slots": "Attack/Dodge/Dodge"
+      },
+      {
+        "partition": "fighter-beta",
+        "slots": "Attack/Critical/Critical"
+      },
+      {
+        "partition": "10103171-gamma1",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "10103171-gamma2",
+        "slots": "Attack/Dodge/Critical"
+      }
+    ],
+    "hidden_skills": [
+      {
+        "name": "Light Dragon - Phoenix Blade",
+        "icon": "Icon_skill_main_9601",
+        "type": "EquipmentSkill",
+        "Ap": "3",
+        "CD": "0",
+        "describe": "Uses an Alter-Blade to attack a target, dealing <color=#F74848>1.6x</color> DMG. This attack always hits the part with highest HP."
+      }
+    ]
+  },
+  "10103115": {
+    "name": "William",
+    "real_name": "William Stein",
+    "gender": "Male",
+    "profession": "Assault",
+    "occupation": "Raider",
+    "quality": "SSR",
+    "license": "Heavy",
+    "portrait_icon": "Pilot_10103115A_half",
+    "avatar_icon": "Pilot_10103115A_Raw",
+    "version": "1.0",
+    "skins": [
+      "B"
+    ],
+    "introduction": "NDF Major, 20-year vet. Frontline expert since Milkhama landing. Blair loyalist crushing rebels. Past defeats left him with deep hatred. His savage style terrifies allies and enemies alike.",
+    "talents": [
+      "200950",
+      "200951"
+    ],
+    "stats": {
+      "combat": "2889",
+      "assault": "4924",
+      "shooting": "1592",
+      "tactics": "1111",
+      "defense": "3952",
+      "engineering": "2074",
+      "ap_init": "5",
+      "ap_max": "5",
+      "ap_regen": "2"
+    },
+    "neural": [
+      {
+        "partition": "raider-alpha",
+        "slots": "Attack/Dodge/Dodge"
+      },
+      {
+        "partition": "raider-beta",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "10103159-gamma1",
+        "slots": "Attack/Dodge/Dodge"
+      },
+      {
+        "partition": "10103115-gamma2",
+        "slots": "Attack/Critical/Critical"
+      }
+    ]
+  },
+  "10103158": {
+    "name": "Wyatt",
+    "real_name": "Wyatt Morgan",
+    "gender": "Male",
+    "profession": "Striker",
+    "occupation": "Fighter",
+    "quality": "SSR",
+    "license": "Medium",
+    "portrait_icon": "Pilot_10103158A_half",
+    "avatar_icon": "Pilot_10103158A_Raw",
+    "version": "2.2",
+    "introduction": "Once an ace of the UNCS, now a battle-hardened mercenary. What draws him back to Milkhama is not just secret orders from the military, but a lingering concern over the war itself.",
+    "talents": [
+      "101650",
+      "101651"
+    ],
+    "stats": {
+      "combat": "5100",
+      "assault": "1504",
+      "shooting": "894",
+      "tactics": "1199",
+      "defense": "4224",
+      "engineering": "3636",
+      "ap_init": "5",
+      "ap_max": "5",
+      "ap_regen": "2"
+    },
+    "neural": [
+      {
+        "partition": "fighter-alpha",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "fighter-beta",
+        "slots": "Attack/Critical/Critical"
+      },
+      {
+        "partition": "10103146-gamma1",
+        "slots": "Attack/Dodge/Dodge"
+      },
+      {
+        "partition": "10103158-gamma2",
+        "slots": "Attack/Dodge/Critical"
+      }
+    ],
+    "hidden_skills": [
+      {
+        "name": "Critical Smash",
+        "icon": "Icon_skill_main_1156",
+        "type": "EquipmentSkill",
+        "Ap": "2",
+        "CD": "0",
+        "describe": "Uses a Chainsaw to attack a target, dealing <color=#F74848>1.25x</color> DMG. This attack always hits the part with lowest HP."
+      }
+    ]
+  },
+  "10103123": {
+    "name": "Yevgeny",
+    "real_name": "Yevgeny Ivanovic Goman",
+    "gender": "Male",
+    "profession": "Defender",
+    "occupation": "Guardian",
+    "quality": "SSR",
+    "license": "Heavy",
+    "portrait_icon": "Pilot_10103123A_half",
+    "avatar_icon": "Pilot_10103123A_Raw",
+    "version": "1.0",
+    "introduction": "Goman leads the Ashes—a ghost on Milkhama. Some say UNCS, some say DLAF, and some whisper Ovett. His moves and motives are shadows, but his people trust him blindly.",
+    "talents": [
+      "600450",
+      "600451"
+    ],
+    "stats": {
+      "combat": "1307",
+      "assault": "2644",
+      "shooting": "3942",
+      "tactics": "1641",
+      "defense": "4717",
+      "engineering": "2310",
+      "ap_init": "5",
+      "ap_max": "5",
+      "ap_regen": "2"
+    },
+    "neural": [
+      {
+        "partition": "guardian-alpha",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "guardian-beta",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "10103121-gamma1",
+        "slots": "Attack/Critical/Critical"
+      },
+      {
+        "partition": "10103123-gamma2",
+        "slots": "Attack/Dodge/Dodge"
+      }
+    ]
+  },
+  "10103161": {
+    "name": "Zoey",
+    "real_name": "Zoey Steele",
+    "gender": "Female",
+    "profession": "Defender",
+    "occupation": "Guardian",
+    "quality": "SSR",
+    "license": "Light",
+    "portrait_icon": "Pilot_10103161A_half",
+    "avatar_icon": "Pilot_10103161A_Raw",
+    "version": "2.5",
+    "introduction": "Colin's adjutant, a hot-headed and defiant man of action.",
+    "talents": [
+      "601150",
+      "601151"
+    ],
+    "stats": {
+      "combat": "4874",
+      "assault": "1307",
+      "shooting": "1749",
+      "tactics": "2044",
+      "defense": "4678",
+      "engineering": "1897",
+      "ap_init": "5",
+      "ap_max": "5",
+      "ap_regen": "2"
+    },
+    "neural": [
+      {
+        "partition": "guardian-alpha",
+        "slots": "Attack/Dodge/Dodge"
+      },
+      {
+        "partition": "guardian-beta",
+        "slots": "Attack/Critical/Critical"
+      },
+      {
+        "partition": "10103161-gamma1",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "10103161-gamma2",
+        "slots": "Attack/Dodge/Critical"
+      }
+    ],
+    "hidden_skills": [
+      {
+        "name": "Sync-Guard",
+        "icon": "Icon_skill_order_5112",
+        "type": "Order",
+        "Ap": "1",
+        "CD": "2",
+        "describe": "Protects allies within <color=#F74848>2</color> adjacent tiles from Assault and Ranged attacks. Can trigger up to <color=#F74848>2</color> times per turn. Lasts for <color=#F74848>2</color> turns. Also applies <buf ID=6011014>[Provocation]</buf> to all enemy units within <color=#F74848>2</color> adjacent tiles, lasting for <color=#F74848>2</color> turns."
+      }
+    ]
+  },
+  "10102114": {
+    "name": "Alyson",
+    "real_name": "Alyson Doll",
+    "gender": "Female",
+    "profession": "Gunner",
+    "occupation": "Sniper",
+    "quality": "SR",
+    "license": "Light",
+    "portrait_icon": "Pilot_10102114A_half",
+    "avatar_icon": "Pilot_10102114A_Raw",
+    "version": "1.0",
+    "introduction": "The Young Doll heiress came to Milkhama seeking thrills. Sharp eyes under that rebel act.\nBlair's crew squeezed her family, so she's helping Arnold's faction and backing Kaidan's team.",
+    "talents": [
+      "300550",
+      "300551"
+    ],
+    "stats": {
+      "combat": "1838",
+      "assault": "1376",
+      "shooting": "4416",
+      "tactics": "1681",
+      "defense": "3643",
+      "engineering": "2457",
+      "ap_init": "4",
+      "ap_max": "5",
+      "ap_regen": "2"
+    },
+    "neural": [
+      {
+        "partition": "sniper-alpha",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "sniper-beta",
+        "slots": "Dodge/Critical/Critical"
+      },
+      {
+        "partition": "10103102-gamma1",
+        "slots": "Attack/Dodge/Dodge"
+      },
+      {
+        "partition": "10102114-gamma2",
+        "slots": "Attack/Attack/Critical"
+      }
+    ],
+    "hidden_skills": [
+      {
+        "name": "Bottom Fishing",
+        "icon": "Icon_skill_main_1107",
+        "type": "EquipmentSkill",
+        "Ap": "3",
+        "CD": "0",
+        "describe": "Uses a Light Rifle to attack a target, dealing <color=#F74848>1.6x</color> DMG. This attack prioritizes Legs."
+      }
+    ]
+  },
+  "10102107": {
+    "name": "Ana",
+    "real_name": "Anastasia Ebden",
+    "gender": "Female",
+    "profession": "Defender",
+    "occupation": "Guardian",
+    "quality": "SR",
+    "license": "Heavy",
+    "portrait_icon": "Pilot_10102107A_half",
+    "avatar_icon": "Pilot_10102107A_Raw",
+    "version": "1.0",
+    "introduction": "Ex-7th Mobile Squad under Marcus. Joined NDF at 16, like her dad. Squad's hardest worker until the White Maple incident kicked her out. Time with Kaidan's crew started changing that stubborn streak.",
+    "talents": [
+      "600250",
+      "600251"
+    ],
+    "stats": {
+      "combat": "2654",
+      "assault": "3653",
+      "shooting": "1484",
+      "tactics": "1189",
+      "defense": "4622",
+      "engineering": "1769",
+      "ap_init": "4",
+      "ap_max": "5",
+      "ap_regen": "2"
+    },
+    "neural": [
+      {
+        "partition": "guardian-alpha",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "guardian-beta",
+        "slots": "Attack/Dodge/Dodge"
+      },
+      {
+        "partition": "10103121-gamma1",
+        "slots": "Attack/Critical/Critical"
+      },
+      {
+        "partition": "10102107-gamma2",
+        "slots": "Attack/Critical/Critical"
+      }
+    ],
+    "hidden_skills": [
+      {
+        "name": "Guard",
+        "icon": "Icon_skill_order_1031",
+        "type": "Order",
+        "Ap": "1",
+        "CD": "2",
+        "describe": "Protects allies within <color=#F74848>2</color> adjacent tiles from Assault and Ranged attacks. Triggers up to <color=#F74848>2</color> times per turn and lasts <color=#F74848>2</color> turns. Additionally, gains <buf ID=7100701>[Defensive Stance I]</buf>. Can only trigger <color=#F74848>1</color> time per turn."
+      }
+    ]
+  },
+  "10102105": {
+    "name": "Arnold",
+    "real_name": "Arnold Whiteread",
+    "gender": "Male",
+    "profession": "Defender",
+    "occupation": "Guardian",
+    "quality": "SR",
+    "license": "Heavy",
+    "portrait_icon": "Pilot_10102105A_half",
+    "avatar_icon": "Pilot_10102105A_Raw",
+    "version": "1.0",
+    "introduction": "UNCS council member, a rival to Blair. Dreams of a unified, equal Milkhama. Prepping impeachment under Raven's guard.\nBuilt like a tank under that suit. Clear-eyed about the risks but won't back down from his ideals as things heat up.",
+    "talents": [
+      "600350",
+      "600351"
+    ],
+    "stats": {
+      "combat": "1523",
+      "assault": "2133",
+      "shooting": "3446",
+      "tactics": "1975",
+      "defense": "4632",
+      "engineering": "1681",
+      "ap_init": "4",
+      "ap_max": "5",
+      "ap_regen": "2"
+    },
+    "neural": [
+      {
+        "partition": "guardian-alpha",
+        "slots": "Attack/Critical/Critical"
+      },
+      {
+        "partition": "guardian-beta",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "10103121-gamma1",
+        "slots": "Attack/Critical/Critical"
+      },
+      {
+        "partition": "10102105-gamma2",
+        "slots": "Attack/Dodge/Critical"
+      }
+    ],
+    "hidden_skills": [
+      {
+        "name": "Guard",
+        "icon": "Icon_skill_order_1031",
+        "type": "Order",
+        "Ap": "1",
+        "CD": "2",
+        "describe": "Protects allies within <color=#F74848>2</color> adjacent tiles from Assault and Ranged attacks. Triggers up to <color=#F74848>2</color> times per turn and lasts <color=#F74848>2</color> turns. Additionally, gains <buf ID=7100701>[Defensive Stance I]</buf>. Can only trigger <color=#F74848>1</color> time per turn."
+      }
+    ]
+  },
+  "10102110": {
+    "name": "Bella",
+    "real_name": "Berguzar Dulov",
+    "gender": "Female",
+    "profession": "Gunner",
+    "occupation": "Sniper",
+    "quality": "SR",
+    "license": "Light",
+    "portrait_icon": "Pilot_10102110A_half",
+    "avatar_icon": "Pilot_10102110A_Raw",
+    "version": "1.0",
+    "introduction": "Berguzar leads border refugees, descended from the first Milhamans. Guides her people from West Milkhama's war. Proud, determined. Fighting to restore dignity to those who built Milkhama with sweat and blood.",
+    "talents": [
+      "300450",
+      "300451"
+    ],
+    "stats": {
+      "combat": "1523",
+      "assault": "2457",
+      "shooting": "4364",
+      "tactics": "2152",
+      "defense": "3684",
+      "engineering": "1219",
+      "ap_init": "4",
+      "ap_max": "5",
+      "ap_regen": "2"
+    },
+    "neural": [
+      {
+        "partition": "sniper-alpha",
+        "slots": "Dodge/Dodge/Critical"
+      },
+      {
+        "partition": "sniper-beta",
+        "slots": "Attack/Attack/Critical"
+      },
+      {
+        "partition": "10103102-gamma1",
+        "slots": "Attack/Dodge/Dodge"
+      },
+      {
+        "partition": "10102110-gamma2",
+        "slots": "Attack/Critical/Critical"
+      }
+    ],
+    "hidden_skills": [
+      {
+        "name": "Accurate Fire",
+        "icon": "Icon_skill_main_1017",
+        "type": "EquipmentSkill",
+        "Ap": "3",
+        "CD": "0",
+        "describe": "Uses a Sniper Rifle to attack a target, dealing <color=#F74848>1.0x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking and gains Hit Rate <color=#F74848>+15%</color>."
+      }
+    ]
+  },
+  "10102115": {
+    "name": "Cicero",
+    "real_name": "Cicero Wright",
+    "gender": "Male",
+    "profession": "Launcher",
+    "occupation": "Tactician",
+    "quality": "SR",
+    "license": "Medium",
+    "portrait_icon": "Pilot_10102115A_half",
+    "avatar_icon": "Pilot_10102115A_Raw",
+    "version": "1.0",
+    "introduction": "\"Cicero Wright - trusts power more than science. Don't mistake him for a regular researcher. Showed his hand when he fled UNCS with test subjects to East Milkhama. Yeah, he's valuable to the League, but keep him away from real power. Meanwhile, extract and copy his tech fast.\" —DLAF leadership notes",
+    "talents": [
+      "400250",
+      "400251"
+    ],
+    "stats": {
+      "combat": "2034",
+      "assault": "2506",
+      "shooting": "1572",
+      "tactics": "4384",
+      "defense": "3466",
+      "engineering": "1415",
+      "ap_init": "4",
+      "ap_max": "6",
+      "ap_regen": "2"
+    },
+    "neural": [
+      {
+        "partition": "tactician-alpha",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "tactician-beta",
+        "slots": "Attack/Dodge/Dodge"
+      },
+      {
+        "partition": "10103127-gamma1",
+        "slots": "Attack/Dodge/Dodge"
+      },
+      {
+        "partition": "10102115-gamma2",
+        "slots": "Attack/Critical/Critical"
+      }
+    ],
+    "hidden_skills": [
+      {
+        "name": "Math Talent",
+        "icon": "Icon_skill_passive_4111",
+        "type": null,
+        "Ap": "",
+        "CD": "",
+        "SpecificEffects": "After attacking with a Tactical Weapon, gains [Battlefield Mastery]. Stacks up to <color=#F74848>4</color> times. Lasts for <color=#F74848>2</color> turns. All stacks of [Battlefield Mastery] are lost upon taking damage."
+      }
+    ]
+  },
+  "10102103": {
+    "name": "Emily",
+    "real_name": "Emily Brown",
+    "gender": "Female",
+    "profession": "Assault",
+    "occupation": "Raider",
+    "quality": "SR",
+    "license": "Heavy",
+    "portrait_icon": "Pilot_10102103A_half",
+    "avatar_icon": "Pilot_10102103A_Raw",
+    "version": "1.0",
+    "introduction": "\"Emily's too fragile for transfer. But she won't admit it, doesn't want to be a burden. Maybe she's strongest of us all, no strength but never breaks. That's the spirit Epiphyllum needs.\" —Sylvie's letter to Hong",
+    "talents": [
+      "200750",
+      "200751"
+    ],
+    "stats": {
+      "combat": "1179",
+      "assault": "4593",
+      "shooting": "2084",
+      "tactics": "1631",
+      "defense": "3684",
+      "engineering": "2231",
+      "ap_init": "4",
+      "ap_max": "5",
+      "ap_regen": "2"
+    },
+    "neural": [
+      {
+        "partition": "raider-alpha",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "raider-beta",
+        "slots": "Attack/Critical/Critical"
+      },
+      {
+        "partition": "10103159-gamma1",
+        "slots": "Attack/Dodge/Dodge"
+      },
+      {
+        "partition": "10102103-gamma2",
+        "slots": "Attack/Dodge/Dodge"
+      }
+    ],
+    "hidden_skills": [
+      {
+        "name": "Rampage Shot",
+        "icon": "Icon_skill_main_1015",
+        "type": "EquipmentSkill",
+        "Ap": "3",
+        "CD": "0",
+        "describe": "Uses a Heavy Machine Gun to attack a target, dealing <color=#F74848>1.3x</color> DMG."
+      }
+    ]
+  },
+  "10102109": {
+    "name": "Fenrir",
+    "real_name": "Michael Moura",
+    "gender": "Male",
+    "profession": "Striker",
+    "occupation": "Fighter",
+    "quality": "SR",
+    "license": "Light",
+    "portrait_icon": "Pilot_10102109A_half",
+    "avatar_icon": "Pilot_10102109A_Raw",
+    "version": "1.0",
+    "introduction": "Northwest jungle merc, ex-gang boss. Bad blood with Movme. Luck made him Frida's man, and he claims he's Electric Eel's number two. Crafty showoff declared victory when GKD left his turf.",
+    "talents": [
+      "100450",
+      "100451"
+    ],
+    "stats": {
+      "combat": "4632",
+      "assault": "1111",
+      "shooting": "1966",
+      "tactics": "2251",
+      "defense": "4013",
+      "engineering": "1396",
+      "ap_init": "4",
+      "ap_max": "5",
+      "ap_regen": "2"
+    },
+    "neural": [
+      {
+        "partition": "fighter-alpha",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "fighter-beta",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "10103146-gamma1",
+        "slots": "Attack/Dodge/Dodge"
+      },
+      {
+        "partition": "10102109-gamma2",
+        "slots": "Attack/Critical/Critical"
+      }
+    ],
+    "hidden_skills": [
+      {
+        "name": "Heavy Strike",
+        "icon": "Icon_skill_main_1020",
+        "type": "EquipmentSkill",
+        "Ap": "2",
+        "CD": "0",
+        "describe": "Uses a Pile Bunker or Knuckles to attack a target, dealing <color=#F74848>1.6x</color> DMG."
+      }
+    ]
+  },
+  "10102111": {
+    "name": "Gareth",
+    "real_name": "Gareth Clayton",
+    "gender": "Male",
+    "profession": "Mechanic",
+    "occupation": "Machinist",
+    "quality": "SR",
+    "license": "Medium",
+    "portrait_icon": "Pilot_10102111A_half",
+    "avatar_icon": "Pilot_10102111A_Raw",
+    "version": "1.0",
+    "introduction": "Born to tinker. The master mechanic who dreamed of research. Life pushed him to repairs instead. Lost his spark, except when faced with cutting-edge tech.",
+    "talents": [
+      "500350",
+      "500351"
+    ],
+    "stats": {
+      "combat": "1484",
+      "assault": "1189",
+      "shooting": "3086",
+      "tactics": "1337",
+      "defense": "3552",
+      "engineering": "4717",
+      "ap_init": "4",
+      "ap_max": "5",
+      "ap_regen": "2"
+    },
+    "neural": [
+      {
+        "partition": "machinist-alpha",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "machinist-beta",
+        "slots": "Attack/Critical/Critical"
+      },
+      {
+        "partition": "10103135-gamma1",
+        "slots": "Attack/Critical/Critical"
+      },
+      {
+        "partition": "10102111-gamma2",
+        "slots": "Attack/Dodge/Critical"
+      }
+    ]
+  },
+  "10102101": {
+    "name": "Harvey",
+    "real_name": "Harvey Lynch",
+    "gender": "Female",
+    "profession": "Assault",
+    "occupation": "Raider",
+    "quality": "SR",
+    "license": "Medium",
+    "portrait_icon": "Pilot_10102101A_half",
+    "avatar_icon": "Pilot_10102101A_Raw",
+    "version": "1.0",
+    "introduction": "They call her \"Captain of the Northwest.\" Harvey has the skill and connections to back it up. She believes in fair deals and stays positive when things go south. After that wild run with Kaidan's crew, she found her path and joined GKD.",
+    "talents": [
+      "200550",
+      "200551"
+    ],
+    "stats": {
+      "combat": "2359",
+      "assault": "4632",
+      "shooting": "1484",
+      "tactics": "1189",
+      "defense": "3643",
+      "engineering": "2064",
+      "ap_init": "4",
+      "ap_max": "5",
+      "ap_regen": "2"
+    },
+    "neural": [
+      {
+        "partition": "raider-alpha",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "raider-beta",
+        "slots": "Attack/Critical/Critical"
+      },
+      {
+        "partition": "10103159-gamma1",
+        "slots": "Attack/Dodge/Dodge"
+      },
+      {
+        "partition": "10102101-gamma2",
+        "slots": "Attack/Dodge/Dodge"
+      }
+    ],
+    "hidden_skills": [
+      {
+        "name": "Full Rudder",
+        "icon": "Icon_skill_passive_5126",
+        "type": null,
+        "Ap": "",
+        "CD": "",
+        "SpecificEffects": "When initiating combat, if a part is destroyed, <buf ID=900004>[Re-ATK]</buf> can trigger after combat. Can only trigger <color=#F74848>1</color> time per turn. Unable to move before attacking."
+      }
+    ]
+  },
+  "10102112": {
+    "name": "Hawkwood",
+    "real_name": "Hawkwood Fastolf",
+    "gender": "Male",
+    "profession": "Striker",
+    "occupation": "Fighter",
+    "quality": "SR",
+    "license": "Heavy",
+    "portrait_icon": "Pilot_10102112A_half",
+    "avatar_icon": "Pilot_10102112A_Raw",
+    "version": "1.0",
+    "introduction": "\"The subject shows positive brain mod response. Tests cleared. No negative effects from memory/emotion wipes noted. Combat reliability meets baseline. Recommend live fire data collection.\" —Obsidian internal report",
+    "talents": [
+      "100750",
+      "100751"
+    ],
+    "stats": {
+      "combat": "4593",
+      "assault": "1543",
+      "shooting": "2103",
+      "tactics": "1111",
+      "defense": "4053",
+      "engineering": "1966",
+      "ap_init": "4",
+      "ap_max": "5",
+      "ap_regen": "2"
+    },
+    "neural": [
+      {
+        "partition": "fighter-alpha",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "fighter-beta",
+        "slots": "Attack/Critical/Critical"
+      },
+      {
+        "partition": "10103146-gamma1",
+        "slots": "Attack/Dodge/Dodge"
+      },
+      {
+        "partition": "10102112-gamma2",
+        "slots": "Attack/Dodge/Critical"
+      }
+    ],
+    "hidden_skills": [
+      {
+        "name": "Heavy Strike",
+        "icon": "Icon_skill_main_1020",
+        "type": "EquipmentSkill",
+        "Ap": "2",
+        "CD": "0",
+        "describe": "Uses a Pile Bunker or Knuckles to attack a target, dealing <color=#F74848>1.6x</color> DMG."
+      }
+    ]
+  },
+  "10102113": {
+    "name": "Lucia",
+    "real_name": "Lucia Voight",
+    "gender": "Female",
+    "profession": "Launcher",
+    "occupation": "Tactician",
+    "quality": "SR",
+    "license": "Medium",
+    "portrait_icon": "Pilot_10102113A_half",
+    "avatar_icon": "Pilot_10102113A_Raw",
+    "version": "1.0",
+    "introduction": "\"Want instant wealth? Status? Ultimate protection on killer Milkhama? Call ▇▇▇▇ for Lucia Voight's elite network! Obsidian Corp needs talent like you. Not interested? Keep my card. You will be.\" —Lucia's merc recruitment card",
+    "talents": [
+      "400350",
+      "400351"
+    ],
+    "stats": {
+      "combat": "1592",
+      "assault": "4273",
+      "shooting": "894",
+      "tactics": "4408",
+      "defense": "3366",
+      "engineering": "1101",
+      "ap_init": "4",
+      "ap_max": "6",
+      "ap_regen": "2"
+    },
+    "neural": [
+      {
+        "partition": "tactician-alpha",
+        "slots": "Attack/Dodge/Dodge"
+      },
+      {
+        "partition": "tactician-beta",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "10103127-gamma1",
+        "slots": "Attack/Dodge/Dodge"
+      },
+      {
+        "partition": "10102113-gamma2",
+        "slots": "Attack/Dodge/Critical"
+      }
+    ],
+    "hidden_skills": [
+      {
+        "name": "Powerful Strike",
+        "icon": "Icon_skill_order_1007",
+        "type": "Order",
+        "Ap": "2",
+        "CD": "0",
+        "describe": "Uses a Rail Gun to attack all targets in a <color=#F74848>1x3</color>-tile line, dealing <color=#F74848>1.0x</color> AoE DMG."
+      }
+    ]
+  },
+  "10102106": {
+    "name": "Mary",
+    "real_name": "Mary Rodriguez",
+    "gender": "Female",
+    "profession": "Assault",
+    "occupation": "Raider",
+    "quality": "SR",
+    "license": "Medium",
+    "portrait_icon": "Pilot_10102106A_half",
+    "avatar_icon": "Pilot_10102106A_Raw",
+    "version": "1.0",
+    "introduction": "NDF drill instructor. Master of combat and ST tactics. Makes boot camp hell because war's worse. They call her \"Devil Instructor,\" but she's saved more recruits than she's broken. Best Instructor in 3 years of running proves it.",
+    "talents": [
+      "200650",
+      "200651"
+    ],
+    "stats": {
+      "combat": "1916",
+      "assault": "4622",
+      "shooting": "2211",
+      "tactics": "1769",
+      "defense": "3653",
+      "engineering": "1189",
+      "ap_init": "4",
+      "ap_max": "5",
+      "ap_regen": "2"
+    },
+    "neural": [
+      {
+        "partition": "raider-alpha",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "raider-beta",
+        "slots": "Attack/Dodge/Dodge"
+      },
+      {
+        "partition": "10103159-gamma1",
+        "slots": "Attack/Dodge/Dodge"
+      },
+      {
+        "partition": "10102106-gamma2",
+        "slots": "Attack/Critical/Critical"
+      }
+    ],
+    "hidden_skills": [
+      {
+        "name": "Rampage Shot",
+        "icon": "Icon_skill_main_1015",
+        "type": "EquipmentSkill",
+        "Ap": "3",
+        "CD": "0",
+        "describe": "Uses a Heavy Machine Gun to attack a target, dealing <color=#F74848>1.3x</color> DMG."
+      }
+    ]
+  },
+  "10102104": {
+    "name": "Raven",
+    "real_name": "Raven Bluecher",
+    "gender": "Male",
+    "profession": "Striker",
+    "occupation": "Fighter",
+    "quality": "SR",
+    "license": "Heavy",
+    "portrait_icon": "Pilot_10102104A_half",
+    "avatar_icon": "Pilot_10102104A_Raw",
+    "version": "1.0",
+    "introduction": "\"Raven Bluecher, Blair's boy. Enfield Academy star, active NDF officer. Media calls him the perfect leader-warrior. Truth? Just daddy's sheltered kid.\" —Anonymous cadet",
+    "talents": [
+      "100650",
+      "100651"
+    ],
+    "stats": {
+      "combat": "4622",
+      "assault": "1818",
+      "shooting": "1111",
+      "tactics": "2103",
+      "defense": "4033",
+      "engineering": "1681",
+      "ap_init": "4",
+      "ap_max": "5",
+      "ap_regen": "2"
+    },
+    "neural": [
+      {
+        "partition": "fighter-alpha",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "fighter-beta",
+        "slots": "Dodge/Critical/Critical"
+      },
+      {
+        "partition": "10103146-gamma1",
+        "slots": "Attack/Dodge/Dodge"
+      },
+      {
+        "partition": "10102104-gamma2",
+        "slots": "Attack/Attack/Critical"
+      }
+    ],
+    "hidden_skills": [
+      {
+        "name": "Chop",
+        "icon": "Icon_skill_main_1013",
+        "type": "EquipmentSkill",
+        "Ap": "2",
+        "CD": "0",
+        "describe": "Uses a Polearm to attack a target, dealing <color=#F74848>1.6x</color> DMG."
+      }
+    ]
+  },
+  "10103117": {
+    "name": "Rebecca",
+    "real_name": "Rebecca Klose",
+    "gender": "Female",
+    "profession": "Assault",
+    "occupation": "Raider",
+    "quality": "SR",
+    "license": "Light",
+    "portrait_icon": "Pilot_10103117A_half",
+    "avatar_icon": "Pilot_10103117A_Raw",
+    "version": "1.0",
+    "introduction": "\"Rebecca, Apex Hunter, raid specialist, Canary's partner.\nWild cowgirl pre-Canary, worked UNCS despite DL roots. She was a great solo fighter but dropped 70% of jobs following her whims.\nPartnership cut bad reviews by 90%, seems Canary's got her in line.\" —Hunter's Guide",
+    "talents": [
+      "200450",
+      "200451"
+    ],
+    "stats": {
+      "combat": "1582",
+      "assault": "4717",
+      "shooting": "2162",
+      "tactics": "1730",
+      "defense": "3750",
+      "engineering": "1435",
+      "ap_init": "4",
+      "ap_max": "5",
+      "ap_regen": "2"
+    },
+    "neural": [
+      {
+        "partition": "raider-alpha",
+        "slots": "Attack/Dodge/Dodge"
+      },
+      {
+        "partition": "raider-beta",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "10103159-gamma1",
+        "slots": "Attack/Dodge/Dodge"
+      },
+      {
+        "partition": "10103117-gamma2",
+        "slots": "Attack/Dodge/Critical"
+      }
+    ],
+    "hidden_skills": [
+      {
+        "name": "Turbo Shooting",
+        "icon": "Icon_skill_main_1014",
+        "type": "EquipmentSkill",
+        "Ap": "3",
+        "CD": "0",
+        "describe": "Uses a Shotgun to attack a target, dealing <color=#F74848>1.3x</color> DMG."
+      }
+    ]
+  },
+  "10102108": {
+    "name": "Winston",
+    "real_name": "Winston Gresham",
+    "gender": "Male",
+    "profession": "Gunner",
+    "occupation": "Sniper",
+    "quality": "SR",
+    "license": "Medium",
+    "portrait_icon": "Pilot_10102108A_half",
+    "avatar_icon": "Pilot_10102108A_Raw",
+    "version": "1.0",
+    "introduction": "Winston Gresham, neuro expert, pioneered medical Arashium. Pushed radical experiments in UNCS Hyper program, breaking Newman's limits. Crazy science, but Valentina says he's decent enough.",
+    "talents": [
+      "300650",
+      "300651"
+    ],
+    "stats": {
+      "combat": "2457",
+      "assault": "1995",
+      "shooting": "4384",
+      "tactics": "1376",
+      "defense": "3653",
+      "engineering": "1523",
+      "ap_init": "4",
+      "ap_max": "5",
+      "ap_regen": "2"
+    },
+    "neural": [
+      {
+        "partition": "sniper-alpha",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "sniper-beta",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "10103102-gamma1",
+        "slots": "Attack/Dodge/Dodge"
+      },
+      {
+        "partition": "10102108-gamma2",
+        "slots": "Attack/Critical/Critical"
+      }
+    ],
+    "hidden_skills": [
+      {
+        "name": "Accurate Fire",
+        "icon": "Icon_skill_main_1017",
+        "type": "EquipmentSkill",
+        "Ap": "3",
+        "CD": "0",
+        "describe": "Uses a Sniper Rifle to attack a target, dealing <color=#F74848>1.0x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking and gains Hit Rate <color=#F74848>+15%</color>."
+      }
+    ]
+  },
+  "10101102": {
+    "name": "Adrien",
+    "real_name": "Adrien Corey",
+    "gender": "Male",
+    "profession": "Defender",
+    "occupation": "Guardian",
+    "quality": "R",
+    "license": "Heavy",
+    "portrait_icon": "Pilot_10101102A_half",
+    "avatar_icon": "Pilot_10101102A_Raw",
+    "version": "1.0",
+    "introduction": "Pacific Corp's most punctual guard. Could be Employee of the Month if he weren't such a slacker. He keeps to himself unless you want to talk to STs.",
+    "talents": [
+      "600150",
+      "600151"
+    ],
+    "stats": {
+      "combat": "3538",
+      "assault": "1523",
+      "shooting": "1523",
+      "tactics": "1268",
+      "defense": "4274",
+      "engineering": "1779",
+      "ap_init": "3",
+      "ap_max": "5",
+      "ap_regen": "2"
+    },
+    "neural": [
+      {
+        "partition": "guardian-alpha",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "guardian-beta",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "10101102-gamma",
+        "slots": "Attack/Critical/Critical"
+      }
+    ],
+    "hidden_skills": [
+      {
+        "name": "Guard",
+        "icon": "Icon_skill_order_1031",
+        "type": "Order",
+        "Ap": "1",
+        "CD": "2",
+        "describe": "Protects allies within <color=#F74848>2</color> adjacent tiles from Assault and Ranged attacks. Triggers up to <color=#F74848>2</color> times per turn and lasts <color=#F74848>2</color> turns. Additionally, gains <buf ID=7100701>[Defensive Stance I]</buf>. Can only trigger <color=#F74848>1</color> time per turn."
+      }
+    ]
+  },
+  "10101103": {
+    "name": "Chloe",
+    "real_name": "Chloe Schmidt",
+    "gender": "Female",
+    "profession": "Mechanic",
+    "occupation": "Machinist",
+    "quality": "R",
+    "license": "Medium",
+    "portrait_icon": "Pilot_10101103A_half",
+    "avatar_icon": "Pilot_10101103A_Raw",
+    "version": "1.0",
+    "introduction": "Ask Ashes about Chloe Schmidt, they'll say she is a dedicated medic and a tough captain. Ask Yevgeny, he'll call her a true warrior. Ask her? Just a smile and \"who knows\" as she works.",
+    "talents": [
+      "500150",
+      "500151"
+    ],
+    "stats": {
+      "combat": "1071",
+      "assault": "1209",
+      "shooting": "2654",
+      "tactics": "1474",
+      "defense": "3272",
+      "engineering": "4186",
+      "ap_init": "3",
+      "ap_max": "5",
+      "ap_regen": "2"
+    },
+    "neural": [
+      {
+        "partition": "machinist-alpha",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "machinist-beta",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "10101103-gamma",
+        "slots": "Attack/Critical/Critical"
+      }
+    ]
+  },
+  "10101106": {
+    "name": "Gregory",
+    "real_name": "Gregory Gannibal",
+    "gender": "Male",
+    "profession": "Assault",
+    "occupation": "Raider",
+    "quality": "R",
+    "license": "Medium",
+    "portrait_icon": "Pilot_10101106A_half",
+    "avatar_icon": "Pilot_10101106A_Raw",
+    "version": "1.0",
+    "introduction": "Ovett merchant runs booze and more to Milkhama. Plays the loud friendly trader, deals on profit not politics. Done jobs with GKD. Really a sharp operator working for Ovett's comeback.",
+    "talents": [
+      "200250",
+      "200251"
+    ],
+    "stats": {
+      "combat": "1867",
+      "assault": "4186",
+      "shooting": "1602",
+      "tactics": "1337",
+      "defense": "3272",
+      "engineering": "1602",
+      "ap_init": "3",
+      "ap_max": "5",
+      "ap_regen": "2"
+    },
+    "neural": [
+      {
+        "partition": "raider-alpha",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "raider-beta",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "10101106-gamma",
+        "slots": "Attack/Dodge/Dodge"
+      }
+    ],
+    "hidden_skills": [
+      {
+        "name": "Ballistic Bundle",
+        "icon": "Icon_skill_main_1016",
+        "type": "EquipmentSkill",
+        "Ap": "3",
+        "CD": "0",
+        "describe": "Uses a Machine Gun to attack a target, dealing <color=#F74848>1.3x</color> DMG."
+      }
+    ]
+  },
+  "10101108": {
+    "name": "Jon",
+    "real_name": "Jon Brewster",
+    "gender": "Male",
+    "profession": "Assault",
+    "occupation": "Raider",
+    "quality": "R",
+    "license": "Heavy",
+    "portrait_icon": "Pilot_10101108A_half",
+    "avatar_icon": "Pilot_10101108A_Raw",
+    "version": "1.0",
+    "introduction": "Jon Brewster, ex-NDF merc. War broke him. Lost too many friends. Now works the Northwest jungle. Known for keeping his word—rare for a merc in these parts.",
+    "talents": [
+      "200350",
+      "200351"
+    ],
+    "stats": {
+      "combat": "1612",
+      "assault": "4150",
+      "shooting": "1337",
+      "tactics": "1887",
+      "defense": "3304",
+      "engineering": "1612",
+      "ap_init": "3",
+      "ap_max": "5",
+      "ap_regen": "2"
+    },
+    "neural": [
+      {
+        "partition": "raider-alpha",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "raider-beta",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "10101106-gamma",
+        "slots": "Attack/Dodge/Dodge"
+      }
+    ],
+    "hidden_skills": [
+      {
+        "name": "Rampage Shot",
+        "icon": "Icon_skill_main_1015",
+        "type": "EquipmentSkill",
+        "Ap": "3",
+        "CD": "0",
+        "describe": "Uses a Heavy Machine Gun to attack a target, dealing <color=#F74848>1.3x</color> DMG."
+      }
+    ]
+  },
+  "10101105": {
+    "name": "Kaylen",
+    "real_name": "Kaylen Evans",
+    "gender": "Male",
+    "profession": "Gunner",
+    "occupation": "Sniper",
+    "quality": "R",
+    "license": "Light",
+    "portrait_icon": "Pilot_10101105A_half",
+    "avatar_icon": "Pilot_10101105A_Raw",
+    "version": "1.0",
+    "introduction": "Kaylen Evans, UNCS Coast Guard, claims top connections. Greedy coward who hates combat. Dreams of cashing out and leaving Milkhama rich.",
+    "talents": [
+      "300150",
+      "300151"
+    ],
+    "stats": {
+      "combat": "3704",
+      "assault": "855",
+      "shooting": "3841",
+      "tactics": "1199",
+      "defense": "3182",
+      "engineering": "1022",
+      "ap_init": "3",
+      "ap_max": "5",
+      "ap_regen": "2"
+    },
+    "neural": [
+      {
+        "partition": "sniper-alpha",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "sniper-beta",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "10101105-gamma",
+        "slots": "Attack/Dodge/Dodge"
+      }
+    ],
+    "hidden_skills": [
+      {
+        "name": "Polyenergy Shot",
+        "icon": "Icon_skill_main_1022",
+        "type": "EquipmentSkill",
+        "Ap": "2",
+        "CD": "0",
+        "describe": "Uses a Light Rifle to attack a target, dealing <color=#F74848>1.6x</color> DMG."
+      }
+    ]
+  },
+  "10101107": {
+    "name": "Lily",
+    "real_name": "Lily Stan",
+    "gender": "Female",
+    "profession": "Launcher",
+    "occupation": "Tactician",
+    "quality": "R",
+    "license": "Medium",
+    "portrait_icon": "Pilot_10101107A_half",
+    "avatar_icon": "Pilot_10101107A_Raw",
+    "version": "1.0",
+    "introduction": "Lily Stan, DLAF peacekeeping captain. Battle-hardened White Rose, troops trust her completely. Total faith in DLAF bringing peace to every corner of Milkhama.",
+    "talents": [
+      "400150",
+      "400151"
+    ],
+    "stats": {
+      "combat": "1563",
+      "assault": "1415",
+      "shooting": "1985",
+      "tactics": "3976",
+      "defense": "3113",
+      "engineering": "1838",
+      "ap_init": "3",
+      "ap_max": "6",
+      "ap_regen": "2"
+    },
+    "neural": [
+      {
+        "partition": "tactician-alpha",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "tactician-beta",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "10101107-gamma",
+        "slots": "Attack/Dodge/Dodge"
+      }
+    ],
+    "hidden_skills": [
+      {
+        "name": "Innervate",
+        "icon": "Icon_skill_order_5107",
+        "type": "Order",
+        "Ap": "0",
+        "CD": "3",
+        "describe": "Gains <color=#F74848>1</color> AP. Can continue action with remaining Movement."
+      }
+    ]
+  },
+  "10101101": {
+    "name": "Movme",
+    "real_name": "Movme Bellows",
+    "gender": "Male",
+    "profession": "Assault",
+    "occupation": "Raider",
+    "quality": "R",
+    "license": "Light",
+    "portrait_icon": "Pilot_10101101A_half",
+    "avatar_icon": "Pilot_10101101A_Raw",
+    "version": "1.0",
+    "introduction": "Movme Bellows, Electric Eel freelancer. Loyal to Frida and hates Fenrir's guts. Shady past. Sly, greedy coward with no morals or ambition. Classic bottom-feeder.",
+    "talents": [
+      "200150",
+      "200151"
+    ],
+    "stats": {
+      "combat": "1317",
+      "assault": "4206",
+      "shooting": "1848",
+      "tactics": "1582",
+      "defense": "3343",
+      "engineering": "1582",
+      "ap_init": "3",
+      "ap_max": "5",
+      "ap_regen": "2"
+    },
+    "neural": [
+      {
+        "partition": "raider-alpha",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "raider-beta",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "10101106-gamma",
+        "slots": "Attack/Dodge/Dodge"
+      }
+    ],
+    "hidden_skills": [
+      {
+        "name": "Turbo Shooting",
+        "icon": "Icon_skill_main_1014",
+        "type": "EquipmentSkill",
+        "Ap": "3",
+        "CD": "0",
+        "describe": "Uses a Shotgun to attack a target, dealing <color=#F74848>1.3x</color> DMG."
+      }
+    ]
+  },
+  "10101104": {
+    "name": "Pip",
+    "real_name": "Pip Beswick",
+    "gender": "Male",
+    "profession": "Striker",
+    "occupation": "Fighter",
+    "quality": "R",
+    "license": "Light",
+    "portrait_icon": "Pilot_10101104A_half",
+    "avatar_icon": "Pilot_10101104A_Raw",
+    "version": "1.0",
+    "introduction": "Pip Beswick, mystery bounty hunter. Music lover, born wanderer. Free spirit who treats bounties like shopping lists. The moral compass spins differently. Oddly fixated on Kaidan's GKD.",
+    "talents": [
+      "100150",
+      "100151"
+    ],
+    "stats": {
+      "combat": "4274",
+      "assault": "1779",
+      "shooting": "1268",
+      "tactics": "1523",
+      "defense": "3538",
+      "engineering": "1523",
+      "ap_init": "3",
+      "ap_max": "5",
+      "ap_regen": "2"
+    },
+    "neural": [
+      {
+        "partition": "fighter-alpha",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "fighter-beta",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "10101104-gamma",
+        "slots": "Attack/Dodge/Dodge"
+      }
+    ],
+    "hidden_skills": [
+      {
+        "name": "Heavy Strike",
+        "icon": "Icon_skill_main_1020",
+        "type": "EquipmentSkill",
+        "Ap": "2",
+        "CD": "0",
+        "describe": "Uses a Pile Bunker or Knuckles to attack a target, dealing <color=#F74848>1.6x</color> DMG."
+      }
+    ]
+  },
+  "10101109": {
+    "name": "Taio",
+    "real_name": "Taio Stone",
+    "gender": "Male",
+    "profession": "Striker",
+    "occupation": "Fighter",
+    "quality": "R",
+    "license": "Heavy",
+    "portrait_icon": "Pilot_10101109A_half",
+    "avatar_icon": "Pilot_10101109A_Raw",
+    "version": "1.0",
+    "introduction": "DL trucker hauls anything for a price. Quiet but fierce, personally fought off hijackers multiple times. Senses the storm coming to Milkhama. Planning his survival and escape route home.",
+    "talents": [
+      "100250",
+      "100251"
+    ],
+    "stats": {
+      "combat": "4235",
+      "assault": "1523",
+      "shooting": "1779",
+      "tactics": "1523",
+      "defense": "3567",
+      "engineering": "1268",
+      "ap_init": "3",
+      "ap_max": "5",
+      "ap_regen": "2"
+    },
+    "neural": [
+      {
+        "partition": "fighter-alpha",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "fighter-beta",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "10101104-gamma",
+        "slots": "Attack/Dodge/Dodge"
+      }
+    ],
+    "hidden_skills": [
+      {
+        "name": "Chop",
+        "icon": "Icon_skill_main_1013",
+        "type": "EquipmentSkill",
+        "Ap": "2",
+        "CD": "0",
+        "describe": "Uses a Polearm to attack a target, dealing <color=#F74848>1.6x</color> DMG."
+      }
+    ]
+  },
+  "10101110": {
+    "name": "Valentina",
+    "real_name": "Valentina Kozlova",
+    "gender": "Female",
+    "profession": "Gunner",
+    "occupation": "Sniper",
+    "quality": "R",
+    "license": "Medium",
+    "portrait_icon": "Pilot_10101110A_half",
+    "avatar_icon": "Pilot_10101110A_Raw",
+    "version": "1.0",
+    "introduction": "Ovett native. Enfield Academy grad. All business, all study. Topped tech theory and became Winston's apprentice. Now, it helps research bio-mech fusion.",
+    "talents": [
+      "300250",
+      "300251"
+    ],
+    "stats": {
+      "combat": "1651",
+      "assault": "1926",
+      "shooting": "4050",
+      "tactics": "1651",
+      "defense": "3213",
+      "engineering": "1376",
+      "ap_init": "3",
+      "ap_max": "5",
+      "ap_regen": "2"
+    },
+    "neural": [
+      {
+        "partition": "sniper-alpha",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "sniper-beta",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "10101105-gamma",
+        "slots": "Attack/Dodge/Dodge"
+      }
+    ],
+    "hidden_skills": [
+      {
+        "name": "Accurate Fire",
+        "icon": "Icon_skill_main_1017",
+        "type": "EquipmentSkill",
+        "Ap": "3",
+        "CD": "0",
+        "describe": "Uses a Sniper Rifle to attack a target, dealing <color=#F74848>1.0x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking and gains Hit Rate <color=#F74848>+15%</color>."
+      }
+    ]
+  }
+}

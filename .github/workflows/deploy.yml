@@ -25,6 +25,10 @@ jobs:
 
       - uses: actions/configure-pages@v5
 
+      # Rebuild the page bundles from data/db/, so a pushed table edit
+      # deploys even if compile.py wasn't run locally
+      - run: python3 compile.py
+
       # build_pages.py checks which images exist in the assets repo. A blobless
       # clone with a near-empty sparse checkout gives it the file listing
       # without downloading the images themselves.

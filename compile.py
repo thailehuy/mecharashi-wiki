@@ -1,61 +1,307 @@
 #!/usr/bin/env python3
-"""Compile pilots, mechs and glossary into their respective JS bundles."""
+"""Compile the data/db/ tables into the JS bundles the wiki pages load.
 
-import json, glob, os, sys, subprocess
+data/db/ holds one JSON table per entity, keyed by game ID, with the final
+English text. This script joins them back into the shapes the pages read
+(PilotsData, MechsData, ModulesData, WeaponsData, BackpacksData), writes each
+to data/<kind>/compiled.{json,js}, then compiles glossary/dispatch/exskills
+and refreshes the builder index maps.
+"""
+
+import json, os, sys, subprocess
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
+DATA = os.path.join(ROOT, 'data')
+DB = os.path.join(DATA, 'db')
 
-def run(label, script):
-    print(f'  {label}...', end=' ', flush=True)
-    # Some sub-compilers (e.g. modules) print raw CJK family names in their
-    # diagnostic summary. Without an explicit encoding, subprocess decodes
-    # the child's output using the OS locale default, which on Windows is
-    # often cp1252 and can't decode UTF-8 bytes — force UTF-8 here instead.
+QUALITY_ORDER = {'SSR': 0, 'SR': 1, 'R': 2}
+BACKPACK_QUALITY_ORDER = {'SSSR': 0, 'UR': 1, 'SSR': 2, 'SR': 3, 'R': 4}
+STAT_KEYS = [('combat', 'Combat'), ('assault', 'Assault'), ('shooting', 'Shooting'),
+             ('tactics', 'Tactics'), ('defense', 'Defense'), ('engineering', 'Engineering'),
+             ('ap_init', 'InitialPilotAPValue_PilotAPInitBase'),
+             ('ap_max', 'MaximumPilotAPValue_PilotAPMaxBase'),
+             ('ap_regen', 'PilotAPRecoveryperTurn_PilotAPRecoverBase')]
+RANKED_STATS = ['Combat', 'Shooting', 'Assault', 'Tactics', 'Engineering']
+
+
+def load(name):
+    with open(os.path.join(DB, name + '.json'), encoding='utf-8') as f:
+        return json.load(f)
+
+
+def rename(row, mapping):
+    """Copy present db-named fields of row to their output names."""
+    return {out: row[db] for db, out in mapping if db in row}
+
+
+# ── Validation ───────────────────────────────────────────────────────────────
+
+def validate(t):
+    errors = []
+
+    def ref(table, key, where):
+        if key not in t[table]:
+            errors.append(f'{where}: unknown {table} id {key!r}')
+
+    for pid, p in t['pilots'].items():
+        for sid in p.get('talents', []):
+            ref('skills', sid, f'pilots[{pid}].talents')
+        for n in p.get('neural', []):
+            ref('neural_partitions', n['partition'], f'pilots[{pid}].neural')
+        if pid not in t['pilot_neurons']:
+            errors.append(f'pilots[{pid}]: no pilot_neurons entry')
+    for pid, nodes in t['pilot_neurons'].items():
+        ref('pilots', pid, 'pilot_neurons')
+        for n in nodes:
+            if 'skill' in n:
+                ref('skills', n['skill'], f'pilot_neurons[{pid}][{n["id"]}]')
+    for part_id, part in t['neural_partitions'].items():
+        for e in part['effects']:
+            ref('skills', e['skill'], f'neural_partitions[{part_id}]')
+    for mid, m in t['mechs'].items():
+        for part_id in m.get('parts', []):
+            ref('mech_parts', part_id, f'mechs[{mid}].parts')
+        for mod in m.get('modules', []):
+            fam = t['modules'].get(mod['family'])
+            if not fam or str(mod['level']) not in fam['levels']:
+                errors.append(f'mechs[{mid}].modules: unknown module {mod["family"]} level {mod["level"]}')
+    for part_id, part in t['mech_parts'].items():
+        ref('mechs', part['mech'], f'mech_parts[{part_id}]')
+    for wid, w in t['weapons'].items():
+        for sid in w.get('passives', []):
+            ref('skills', sid, f'weapons[{wid}].passives')
+    for bid, b in t['backpacks'].items():
+        for c in b.get('crafting', []):
+            if 'item' in c:
+                ref('backpacks', c['item'], f'backpacks[{bid}].crafting')
+            else:
+                ref('materials', c['material'], f'backpacks[{bid}].crafting')
+
+    if errors:
+        print('FAILED: data/db has broken references')
+        for e in errors:
+            print('  ' + e)
+        sys.exit(1)
+
+
+# ── Builders ─────────────────────────────────────────────────────────────────
+
+def skill_out(skills, sid):
+    s = skills[sid]
+    out = {'ID': sid, 'name': s.get('name', '')}
+    out.update(rename(s, [('describe', 'describe'), ('effect', 'SpecificEffects')]))
+    out['SkillIcon'] = s.get('skill_icon', s.get('icon', ''))
+    out['icon'] = s.get('icon', '')
+    out.update(rename(s, [('ap', 'Ap'), ('cd', 'CD'), ('type', 'type'), ('resource', 'resource')]))
+    return out
+
+
+def build_pilots(t):
+    skills = t['skills']
+    pilots = []
+    for pid, p in t['pilots'].items():
+        talents = p.get('talents', [])
+        entry = {
+            'ID': pid,
+            'PilotName': p.get('name', ''),
+            'PortraitHeroIcon': p.get('portrait_icon', ''),
+            'AvatarHeroIcon': p.get('avatar_icon', ''),
+            'RealName': p.get('real_name', ''),
+            'Gender': p.get('gender', ''),
+            'Profession': p.get('profession', ''),
+            'Occupation': p.get('occupation', ''),
+            'quality': p.get('quality', ''),
+            'Talent0_2Ability': skill_out(skills, talents[0]) if len(talents) > 0 else '',
+            'Talent3_5Ability': skill_out(skills, talents[1]) if len(talents) > 1 else '',
+            'NeuralDriveTemplate': {
+                'ID': pid,
+                'ListChipPartition': [{
+                    'name': part['name'],
+                    'TypeComputing': part['type'],
+                    'ListAssembled': n['slots'],
+                    'ListActivationEffects': [
+                        {'MinimumSum': e['min'], 'PassiveSkill': skill_out(skills, e['skill'])}
+                        for e in part['effects']
+                    ],
+                } for n in p.get('neural', []) for part in [t['neural_partitions'][n['partition']]]],
+            },
+            'biomimetic_computer_data': [],
+            'AllowedMechaDriveList_DriveAllowedList': p.get('license', ''),
+            'AlternateSkins': p.get('skins', ''),
+            'Introduction': p.get('introduction', ''),
+            'stats': {out: p.get('stats', {}).get(db) for db, out in STAT_KEYS},
+            'version': p.get('version', '1.0'),
+        }
+        for n in t['pilot_neurons'][pid]:
+            node = {'ID': n['id'], 'UnitType': n['type']}
+            node.update(rename(n, [('icon', 'icon'), ('innate', 'skill3')]))
+            if 'skill' in n:
+                node['skill'] = skill_out(skills, n['skill'])
+            entry['biomimetic_computer_data'].append(node)
+        entry.update(rename(p, [('hidden_skills', 'hiddenSkills'), ('summon_skills', 'summonSkills'),
+                                ('form_skill_groups', 'formSkillGroups')]))
+        pilots.append(entry)
+
+    def to_num(v):
+        try:
+            return float(v)
+        except (TypeError, ValueError):
+            return None
+
+    for field in RANKED_STATS:
+        values = sorted({to_num(p['stats'].get(field)) for p in pilots} - {None}, reverse=True)
+        rank_of = {v: i + 1 for i, v in enumerate(values)}
+        for p in pilots:
+            v = to_num(p['stats'].get(field))
+            if v is not None:
+                p.setdefault('statRanks', {})[field] = rank_of[v]
+
+    pilots.sort(key=lambda p: (QUALITY_ORDER.get(p['quality'], 9), p['PilotName']))
+    return {'pilots': pilots}
+
+
+def mech_module_out(modules, fam_id, level):
+    fam = modules[fam_id]
+    lv = fam['levels'][str(level)]
+    icon = lv.get('icon', fam['icon'])
+    return {'ID': lv.get('id', fam_id + str(level)), 'name': fam['name'], 'SpecificEffects': lv['effect'],
+            'SkillIcon': icon, 'icon': icon, 'id': fam_id, 'level': level}
+
+
+def build_mechs(t):
+    mechs = []
+    for mid, m in t['mechs'].items():
+        entry = {'ID': mid}
+        entry.update(rename(m, [('name', 'name'), ('type', 'type'), ('quality', 'quality'), ('icon', 'icon'),
+                                ('portrait_icon', 'lihuiIcon'), ('introduce', 'introduce'), ('output', 'output'),
+                                ('armor', 'Armor'), ('fire', 'fire'), ('antiriot', 'Antiriot')]))
+        entry['parts'] = []
+        for part_id in m.get('parts', []):
+            p = t['mech_parts'][part_id]
+            entry['parts'].append({out: p.get(db) for db, out in [
+                ('position', 'position'), ('weight', 'aircraftWeight'), ('hp', 'maxHp'), ('armor', 'Armor'),
+                ('hit', 'Hit'), ('dodge', 'Dodge'), ('antiriot', 'Antiriot')]})
+        entry['manjiFirepower'] = m.get('firepower', m.get('fire', ''))
+        entry['modules'] = [mech_module_out(t['modules'], x['family'], x['level']) for x in m.get('modules', [])]
+        entry.update(rename(m, [('skins', 'AlternateSkins'), ('hidden_modules', 'hiddenModules'),
+                                ('dispatch_group', 'dispatchGroup'), ('dispatch_version', 'dispatchVersion')]))
+        entry['version'] = m.get('version', '1.0')
+        mechs.append(entry)
+    mechs.sort(key=lambda m: (QUALITY_ORDER.get(m.get('quality', ''), 9), m.get('name', '')))
+    return {'mechs': mechs}
+
+
+def build_modules(t):
+    # Only families with a category are listed on the Modules page; the rest
+    # exist just for the mechs that carry them. File order = page order.
+    return {'modules': {
+        fam_id: {'name': f['name'], 'icon': f['icon'], 'category': f['category'],
+                 'maxLevel': f['max_level'], 'currentLevel': f['current_level'],
+                 'levels': {lv: row['effect'] for lv, row in f['levels'].items()}}
+        for fam_id, f in t['modules'].items() if 'category' in f
+    }}
+
+
+def build_weapons(t):
+    weapons = []
+    for wid, w in t['weapons'].items():
+        entry = {'ID': wid}
+        entry.update(rename(w, [('name', 'name'), ('quality', 'quality'), ('type1', 'WeaponType1'),
+                                ('type2', 'WeaponType2'), ('type', 'type'), ('icon', 'icon'),
+                                ('models', 'LimitedModelOfWeapon'), ('slot', 'RestrictionsPositionOfWeapon'),
+                                ('range', 'range'), ('weight', 'WeaponWeight'), ('atk', 'WeaponBasicAttackingPower'),
+                                ('shield', 'ShieldbloodBase')]))
+        entry['PassiveSkill'] = [skill_out(t['skills'], sid) for sid in w.get('passives', [])]
+        entry.update(rename(w, [('describe', 'describe'), ('pilot', 'pilot'), ('version', 'version'), ('ac', 'ac')]))
+        weapons.append(entry)
+    weapons.sort(key=lambda w: (w.get('WeaponType1', ''), w.get('WeaponType2', ''), w.get('name', '')))
+    return {'weapons': weapons}
+
+
+def build_backpacks(t):
+    backpacks = []
+    for bid, b in t['backpacks'].items():
+        entry = {'ID': bid}
+        entry.update(rename(b, [('name', 'name'), ('quality', 'quality'), ('weight', 'weight'),
+                                ('main_type', 'BackpackMainType'), ('st_type', 'AssemblableAirmenType'),
+                                ('icon', 'icon'), ('version', 'version'), ('ac', 'ac')]))
+        s = b['skill']
+        entry['skill'] = {'ID': s.get('id', ''), 'name': s.get('name', ''), 'icon': s.get('icon', ''),
+                          'SpecificEffects': s.get('effect', '')}
+        if 'crafting' in b:
+            entry['crafting'] = []
+            for c in b['crafting']:
+                if 'item' in c:
+                    out = {'kind': 'item', 'id': c['item'], 'qty': c['qty']}
+                else:
+                    mat = t['materials'][c['material']]
+                    out = {'kind': 'generic', 'icon': 'materials/' + mat['icon'], 'label': mat['label'], 'qty': c['qty']}
+                if c.get('composite'):
+                    out['composite'] = True
+                entry['crafting'].append(out)
+        backpacks.append(entry)
+
+    def version_key(b):
+        # SSSR backpacks sort newest-first; the rest have no version.
+        v = b.get('version')
+        if not v:
+            return (0, 0)
+        major, minor = v.split('.')
+        return (-int(major), -int(minor))
+
+    backpacks.sort(key=lambda b: (BACKPACK_QUALITY_ORDER.get(b.get('quality', ''), 9), version_key(b),
+                                  b.get('BackpackMainType', ''), b.get('name', '')))
+    return {'backpacks': backpacks}
+
+
+# ── Output ───────────────────────────────────────────────────────────────────
+
+def write_bundle(kind, var, out):
+    d = os.path.join(DATA, kind)
+    with open(os.path.join(d, 'compiled.json'), 'w', encoding='utf-8') as f:
+        json.dump(out, f, indent=2)
+    js = f'var {var} = ' + json.dumps(out) + ';\n'
+    with open(os.path.join(d, 'compiled.js'), 'w', encoding='utf-8') as f:
+        f.write(js)
+    return len(js) // 1024
+
+
+def compile_plain(name, var):
+    data = json.load(open(os.path.join(DATA, name + '.json'), encoding='utf-8'))
+    js = f'window.{var} = ' + json.dumps(data, ensure_ascii=False, indent=2) + ';\n'
+    open(os.path.join(DATA, name + '.js'), 'w', encoding='utf-8').write(js)
+
+
+def run(script):
+    # Force UTF-8: on Windows the locale default (cp1252) can't decode the
+    # child's output.
     result = subprocess.run([sys.executable, script], capture_output=True, text=True, encoding='utf-8')
     if result.returncode != 0:
         print('FAILED')
         print(result.stderr)
         sys.exit(1)
-    print('ok')
 
-def compile_glossary():
-    print('  glossary...', end=' ', flush=True)
-    src  = os.path.join(ROOT, 'data', 'glossary.json')
-    dest = os.path.join(ROOT, 'data', 'glossary.js')
-    data = json.load(open(src, encoding='utf-8'))
-    js   = 'window.GlossaryData = ' + json.dumps(data, ensure_ascii=False, indent=2) + ';\n'
-    open(dest, 'w', encoding='utf-8').write(js)
-    print('ok')
 
-def compile_dispatch():
-    print('  dispatch...', end=' ', flush=True)
-    src  = os.path.join(ROOT, 'data', 'dispatch.json')
-    dest = os.path.join(ROOT, 'data', 'dispatch.js')
-    data = json.load(open(src, encoding='utf-8'))
-    js   = 'window.DispatchData = ' + json.dumps(data, ensure_ascii=False, indent=2) + ';\n'
-    open(dest, 'w', encoding='utf-8').write(js)
-    print('ok')
+TABLES = ['pilots', 'pilot_neurons', 'neural_partitions', 'skills', 'mechs', 'mech_parts',
+          'modules', 'weapons', 'backpacks', 'materials']
 
-def compile_exskills():
-    print('  exskills...', end=' ', flush=True)
-    src  = os.path.join(ROOT, 'data', 'exskills.json')
-    dest = os.path.join(ROOT, 'data', 'exskills.js')
-    data = json.load(open(src, encoding='utf-8'))
-    js   = 'window.ExSkillsData = ' + json.dumps(data, ensure_ascii=False, indent=2) + ';\n'
-    open(dest, 'w', encoding='utf-8').write(js)
-    print('ok')
+BUNDLES = [('pilots', 'PilotsData', build_pilots), ('mechs', 'MechsData', build_mechs),
+           ('modules', 'ModulesData', build_modules), ('weapons', 'WeaponsData', build_weapons),
+           ('backpacks', 'BackpacksData', build_backpacks)]
 
 if __name__ == '__main__':
     print('Compiling...')
-    run('pilots',  os.path.join(ROOT, 'data', 'pilots',  'compile.py'))
-    run('mechs',   os.path.join(ROOT, 'data', 'mechs',   'compile.py'))
-    run('modules', os.path.join(ROOT, 'data', 'modules', 'compile.py'))
-    run('weapons', os.path.join(ROOT, 'data', 'weapons', 'compile.py'))
-    run('backpacks', os.path.join(ROOT, 'data', 'backpacks', 'compile.py'))
-    compile_glossary()
-    compile_dispatch()
-    compile_exskills()
-    # Depends on the compiled pilots/mechs/weapons/backpacks/modules above —
-    # must run after them so it sees any newly-added IDs.
-    run('builder index maps', os.path.join(ROOT, 'data', 'builder', 'generate-index-maps.py'))
+    tables = {name: load(name) for name in TABLES}
+    validate(tables)
+    for kind, var, build in BUNDLES:
+        out = build(tables)
+        size = write_bundle(kind, var, out)
+        print(f'  {kind}: {len(next(iter(out.values())))} ({size} KB)')
+    compile_plain('glossary', 'GlossaryData')
+    compile_plain('dispatch', 'DispatchData')
+    compile_plain('exskills', 'ExSkillsData')
+    print('  glossary, dispatch, exskills: ok')
+    # Reads the bundles above, so it must run last.
+    run(os.path.join(DATA, 'builder', 'generate-index-maps.py'))
+    print('  builder index maps: ok')
     print('Done.')

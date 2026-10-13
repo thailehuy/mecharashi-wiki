@@ -264,8 +264,6 @@ Pages.pilots = {
 
   // ── Detail page ────────────────────────────────────────────────────────────
   _renderDetail: function (p) {
-    var self = this;
-    Translations.loadPilot(p, function (merged) { return self._buildDetail(merged); });
     return this._buildDetail(p);
   },
 

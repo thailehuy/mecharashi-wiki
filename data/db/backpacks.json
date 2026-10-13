@@ -1,0 +1,5339 @@
+{
+  "60902426": {
+    "name": "Overload",
+    "quality": "SSSR",
+    "weight": "150",
+    "main_type": "Ammo",
+    "st_type": "Medium",
+    "icon": "Icon_backpack_61100101",
+    "version": "3.7",
+    "ac": 21,
+    "skill": {
+      "id": "",
+      "name": "Overload Drive · First Strike",
+      "icon": "Icon_skill_passive_5163",
+      "effect": "Tactical Weapon Magazine Capacity <color=#F74848>+3</color>. Reload Cooldown <color=#F74848>+1</color> Turn.\nWhen actively attacking for the first time each turn, DMG <color=#F74848>+7.5%</color> and Crit Rate <color=#F74848>+5%</color>.\nST Body HP <color=#F74848>+10%</color> and DMG <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60902405",
+        "qty": 1,
+        "composite": true
+      },
+      {
+        "material": "random-composite",
+        "qty": 1,
+        "composite": true
+      },
+      {
+        "material": "random-s-grade",
+        "qty": 3
+      },
+      {
+        "material": "ac-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60801106": {
+    "name": "Pathfinder",
+    "quality": "SSSR",
+    "weight": "150",
+    "main_type": "Radar",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60800201",
+    "version": "3.7",
+    "ac": 21,
+    "skill": {
+      "id": "",
+      "name": "Pathfinder Drive · Attack",
+      "icon": "Icon_skill_passive_5103",
+      "effect": "View Distance <color=#F74848>+1</color> in Arashi Fog Stages. Can use Code <skill ID=6080111>[High Altitude Detection]</skill>. Enables the ST's adjacent <color=#F74848>2</color>-tile area to become a valid attack zone for ally Missile Launcher and Rocket Launcher attacks.\nWhen in combat, enemy DMG Taken <color=#F74848>+10%</color>.\nST Body HP <color=#F74848>+10%</color> and DMG <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60801105",
+        "qty": 1,
+        "composite": true
+      },
+      {
+        "material": "random-composite",
+        "qty": 1,
+        "composite": true
+      },
+      {
+        "material": "random-s-grade",
+        "qty": 3
+      },
+      {
+        "material": "ac-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60402116": {
+    "name": "Marauder",
+    "quality": "SSSR",
+    "weight": "150",
+    "main_type": "Flow",
+    "st_type": "Light",
+    "icon": "Icon_backpack_60350201",
+    "version": "3.6",
+    "ac": 20,
+    "skill": {
+      "id": "",
+      "name": "Marauder Drive · Re-ATK",
+      "icon": "Icon_skill_passive_5310",
+      "effect": "Melee Weapons can now attack airborne units.\nST Movement Type changes to Levitating, enabling ST to pass over low obstacles.\nWhen re-attacking, Hit Rate <color=#F74848>+10%</color>, Crit Rate <color=#F74848>+5%</color>.\nST Body HP <color=#F74848>+10%</color> and DMG <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60402105",
+        "qty": 1,
+        "composite": true
+      },
+      {
+        "material": "random-composite",
+        "qty": 1,
+        "composite": true
+      },
+      {
+        "material": "random-s-grade",
+        "qty": 3
+      },
+      {
+        "material": "ac-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60701116": {
+    "name": "Rejuvenator",
+    "quality": "SSSR",
+    "weight": "1000",
+    "main_type": "Heal",
+    "st_type": "Light",
+    "icon": "Icon_backpack_60400201",
+    "repair": "211",
+    "version": "3.6",
+    "ac": 20,
+    "skill": {
+      "id": "",
+      "name": "Rejuvenator Drive · Attack",
+      "icon": "Icon_skill_passive_3130",
+      "effect": "At the start of action, repairs self <color=#F74848>1</color> time, equal to <color=#F74848>0.6x</color> Manipulator Repair AMT. Simultaneously repairs <color=#F74848>1</color> ally with the lowest HP percentage on the field equal to <color=#F74848>0.6x</color> Manipulator Repair AMT. This effect cannot repair destroyed parts.\nWhen in combat, enemy DMG <color=#F74848>-10%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60701105",
+        "qty": 1,
+        "composite": true
+      },
+      {
+        "material": "random-composite",
+        "qty": 1,
+        "composite": true
+      },
+      {
+        "material": "random-s-grade",
+        "qty": 3
+      },
+      {
+        "material": "ac-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60201206": {
+    "name": "Strider",
+    "quality": "SSSR",
+    "weight": "150",
+    "main_type": "MovePointAdd",
+    "st_type": "Light",
+    "icon": "Icon_backpack_60500201",
+    "version": "3.6",
+    "ac": 20,
+    "skill": {
+      "id": "",
+      "name": "Strider Drive · Hit",
+      "icon": "Icon_skill_passive_1153",
+      "effect": "When actively attacking, if having moved at least <color=#F74848>5</color> tiles, gains <buf ID=1008062>[Absolute Dodge]</buf>. Removes after triggering. Can trigger again after an interval of <color=#F74848>2</color> turns.\nST Movement <color=#F74848>+1</color>.\nWhen in combat, enemy Hit Rate <color=#F74848>-10%</color>.\nST Body HP <color=#F74848>+10%</color> and DMG <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60201205",
+        "qty": 1,
+        "composite": true
+      },
+      {
+        "material": "random-composite",
+        "qty": 1,
+        "composite": true
+      },
+      {
+        "material": "random-s-grade",
+        "qty": 3
+      },
+      {
+        "material": "ac-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60902416": {
+    "name": "Devastator",
+    "quality": "SSSR",
+    "weight": "150",
+    "main_type": "Ammo",
+    "st_type": "Medium",
+    "icon": "Icon_backpack_61100101",
+    "version": "3.3",
+    "ac": 19,
+    "skill": {
+      "id": "",
+      "name": "Devastator Drive · First Strike",
+      "icon": "Icon_skill_passive_5227",
+      "effect": "After actively attacking, if spent <color=#F74848>2</color> or more Ammo, gains <color=#F74848>1</color> random Buff, lasting for <color=#F74848>2</color> turns.\nTactical Weapon Magazine Capacity <color=#F74848>+2</color>.\nWhen actively attacking for the first time each turn, DMG <color=#F74848>+7.5%</color> and Crit Rate <color=#F74848>+5%</color>.\nST Body HP <color=#F74848>+10%</color> and DMG <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60902405",
+        "qty": 1,
+        "composite": true
+      },
+      {
+        "material": "random-composite",
+        "qty": 1,
+        "composite": true
+      },
+      {
+        "material": "random-s-grade",
+        "qty": 3
+      },
+      {
+        "material": "ac-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60402106": {
+    "name": "Enforcer",
+    "quality": "SSSR",
+    "weight": "150",
+    "main_type": "Flow",
+    "st_type": "Light",
+    "icon": "Icon_backpack_60350201",
+    "how_get": "无",
+    "related_description": "旧式飞行强化背包的改良升级款，喷射装置能够驱动机兵在短距离上飞行，快速越过障碍，前往难以抵达的战场角落。同时集成了强化机兵再攻击能力的功能。",
+    "version": "3.2",
+    "skill": {
+      "id": "62320",
+      "name": "Enforcer Drive · Re-ATK",
+      "icon": "Icon_skill_passive_5240",
+      "effect": "When initiating combat, if the target is on the movement path and a part is destroyed, inflicts <buf ID=1009083>[Intimidation]</buf> on the target, lasting <color=#F74848>1</color> turn. Can trigger <color=#F74848>1</color> time per turn.\nST movement type changes to Levitating, enabling it to pass over low obstacles.\nWhen re-attacking, Hit Rate <color=#F74848>+10%</color> and Crit Rate <color=#F74848>+5%</color>.\nST Body HP <color=#F74848>+10%</color> and DMG Dealt <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60402105",
+        "qty": 1,
+        "composite": true
+      },
+      {
+        "material": "random-composite",
+        "qty": 1,
+        "composite": true
+      },
+      {
+        "material": "random-s-grade",
+        "qty": 3
+      },
+      {
+        "material": "ac-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60802106": {
+    "name": "Guide",
+    "quality": "SSSR",
+    "weight": "150",
+    "main_type": "Radar",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60800201",
+    "how_get": "无",
+    "related_description": "旧式雷达强化背包的改良升级款，小型化的机兵定位装置，开启能让友方机兵获得定位，引导飞弹对范围内目标进行精准打击。同时集成了强化机兵每回合首次攻击能力的功能。",
+    "version": "3.2",
+    "skill": {
+      "id": "62319",
+      "name": "Guide Drive · Re-ATK",
+      "icon": "Icon_skill_passive_5196",
+      "effect": "Gains Code <skill mainSkill=62319>[Tracer Coating]</skill>.\nEnables the ST's adjacent <color=#F74848>2</color>-tile area to become a valid attack zone for allied Missile Launcher and Rocket Launcher attacks.\nWhen re-attacking, Hit Rate <color=#F74848>+10%</color> and Crit Rate <color=#F74848>+5%</color>.\nST Body HP <color=#F74848>+10%</color> and DMG Dealt <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60802105",
+        "qty": 1,
+        "composite": true
+      },
+      {
+        "material": "random-composite",
+        "qty": 1,
+        "composite": true
+      },
+      {
+        "material": "random-s-grade",
+        "qty": 3
+      },
+      {
+        "material": "ac-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60301116": {
+    "name": "Sentinel",
+    "quality": "SSSR",
+    "weight": "150",
+    "main_type": "Interference",
+    "st_type": "Heavy",
+    "icon": "Icon_backpack_60300201",
+    "how_get": "无",
+    "related_description": "旧式诱导干扰背包的改良升级款，通过发射电磁波对飞弹进行压制性信号干扰，扰乱电子设备，从而达到削弱战术武器威力的效果。同时集成了影响敌机攻击能力的功能。",
+    "version": "3.1",
+    "skill": {
+      "id": "62318",
+      "name": "Sentinel Drive · Attack",
+      "icon": "Icon_skill_passive_5235",
+      "effect": "Heavy STs only.\nWhen hit by a Tactical Weapon attack, DMG Taken <color=#F74848>-25%</color>. Similar effects cannot stack.\nAllies within Guard range take <color=#F74848>15%</color> less DMG from Code attacks. Similar effects cannot stack.\nAfter self takes damage from a Code attack, repairs <color=#F74848>15%</color> of Max HP to intact parts. This effect can trigger again after <color=#F74848>1</color> turn.\nWhen in combat, enemy DMG Dealt <color=#F74848>-10%</color>.\nST Body HP <color=#F74848>+10%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60301105",
+        "qty": 1,
+        "composite": true
+      },
+      {
+        "material": "random-composite",
+        "qty": 1,
+        "composite": true
+      },
+      {
+        "material": "random-s-grade",
+        "qty": 3
+      },
+      {
+        "material": "ac-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "61002106": {
+    "name": "Trickster",
+    "quality": "SSSR",
+    "weight": "150",
+    "main_type": "Invisible",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60900201",
+    "how_get": "无",
+    "related_description": "旧式隐形强化背包的改良升级款，先进的光学系统能够扭曲光线，让装配该型号背包的机兵处于某种程度上的隐形状态。同时集成了强化机兵再攻击能力的功能。",
+    "version": "3.1",
+    "skill": {
+      "id": "62317",
+      "name": "Trickster Drive · Re-ATK",
+      "icon": "Icon_skill_passive_5262",
+      "effect": "At the end of action, if there are no enemies within <color=#F74848>2</color> tiles, gains <buf ID=900033>[Stealth]</buf>, lasting <color=#F74848>2</color> turns. This effect has a <color=#F74848>3</color>-turn trigger interval.\nGains Code <skill mainSkill=62317>[Concealment]</skill>: causes self and <color=#F74848>1</color> chosen ally within <color=#F74848>4</color> tiles to enter <buf ID=3004412>[Stealth II]</buf>, lasting <color=#F74848>2</color> turns.\nWhen re-attacking, Hit Rate <color=#F74848>+10%</color> and Crit Rate <color=#F74848>+5%</color>.\nST Body HP <color=#F74848>+10%</color> and DMG Dealt <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "61002105",
+        "qty": 1,
+        "composite": true
+      },
+      {
+        "material": "random-composite",
+        "qty": 1,
+        "composite": true
+      },
+      {
+        "material": "random-s-grade",
+        "qty": 3
+      },
+      {
+        "material": "ac-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60301506": {
+    "name": "Suppressor",
+    "quality": "SSSR",
+    "weight": "150",
+    "main_type": "Interference",
+    "st_type": "Heavy",
+    "icon": "Icon_backpack_60300201",
+    "how_get": "无",
+    "related_description": "旧式诱导干扰背包的改良升级款，通过发射电磁波对飞弹进行压制性信号干扰，扰乱电子设备，从而达到削弱战术武器威力的效果。同时集成了影响敌机暴伤能力的功能。",
+    "version": "3.0",
+    "skill": {
+      "id": "62315",
+      "name": "Suppressor Drive · Crit DMG",
+      "icon": "Icon_skill_passive_5232",
+      "effect": "After being actively attacked by a Tactical Weapon, inflicts <buf ID=623152>[Ammo Jam]</buf> on the attacker. Can only trigger again after <color=#F74848>1</color> turn.\nWhen hit by a Tactical attack, DMG Taken <color=#F74848>-25%</color>. Similar effects cannot stack.\nWhen in combat, enemy Crit DMG <color=#F74848>-10%</color>.\nST Body HP <color=#F74848>+10%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60301505",
+        "qty": 1,
+        "composite": true
+      },
+      {
+        "material": "random-composite",
+        "qty": 1,
+        "composite": true
+      },
+      {
+        "material": "random-s-grade",
+        "qty": 3
+      },
+      {
+        "material": "ac-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "61002416": {
+    "name": "Executioner",
+    "quality": "SSSR",
+    "weight": "150",
+    "main_type": "Invisible",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60900201",
+    "how_get": "无",
+    "related_description": "旧式隐形强化背包的改良升级款，先进的光学系统能够扭曲光线，让装配该型号背包的机兵处于某种程度上的隐形状态。同时集成了强化机兵每回合首次攻击能力的功能。",
+    "version": "3.0",
+    "skill": {
+      "id": "62316",
+      "name": "Executioner Drive · First Strike",
+      "icon": "Icon_skill_passive_4134",
+      "effect": "When actively attacking, if in <buf ID=900033>[Stealth]</buf>, this attack's Crit Rate <color=#F74848>+50%</color>. This effect can only trigger <color=#F74848>1</color> time per sortie.\nAt the end of action, if there are no enemies within <color=#F74848>2</color> tiles, gains <buf ID=3004502>[Stealth I]</buf>, lasting <color=#F74848>2</color> turns. This effect has a <color=#F74848>3</color>-turn trigger interval.\nWhen actively attacking for the <color=#F74848>1st</color> time each turn, DMG <color=#F74848>+7.5%</color> and Crit Rate <color=#F74848>+5%</color>.\nST Body HP <color=#F74848>+10%</color> and DMG Dealt <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "61002405",
+        "qty": 1,
+        "composite": true
+      },
+      {
+        "material": "random-composite",
+        "qty": 1,
+        "composite": true
+      },
+      {
+        "material": "random-s-grade",
+        "qty": 3
+      },
+      {
+        "material": "ac-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60902406": {
+    "name": "Sustainer",
+    "quality": "SSSR",
+    "weight": "150",
+    "main_type": "Ammo",
+    "st_type": "Medium",
+    "icon": "Icon_backpack_61100101",
+    "how_get": "无",
+    "related_description": "旧式弹药强化背包的改良升级款，储存了战术武器弹药，让机兵火箭或导弹有了更多的发射机会。同时集成了强化机兵每回合首次攻击能力的功能。",
+    "version": "2.8",
+    "skill": {
+      "id": "62313",
+      "name": "Sustainer Drive · First Strike",
+      "icon": "Icon_skill_passive_5227",
+      "effect": "At the start of action, reloads <color=#F74848>1</color> Ammo into a random non-exhausted Tactical Weapon.\nTactical Weapon Ammo Capacity <color=#F74848>+2</color>.\nWhen actively attacking for the <color=#F74848>1st</color> time each turn, DMG <color=#F74848>+7.5%</color> and Crit Rate <color=#F74848>+5%</color>.\nST Body HP <color=#F74848>+10%</color> and DMG Dealt <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60902405",
+        "qty": 1,
+        "composite": true
+      },
+      {
+        "material": "random-composite",
+        "qty": 1,
+        "composite": true
+      },
+      {
+        "material": "random-s-grade",
+        "qty": 3
+      },
+      {
+        "material": "ac-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60701406": {
+    "name": "Guardian",
+    "quality": "SSSR",
+    "weight": "1000",
+    "main_type": "Heal",
+    "st_type": "Medium",
+    "icon": "Icon_backpack_60400201",
+    "how_get": "无",
+    "related_description": "旧式修理干扰背包的改良升级款，配备了修理臂的机兵背包，能在战场上为机兵提供全面的专业维修。同时集成了影响敌机暴击能力的功能。",
+    "repair": "211",
+    "version": "2.8",
+    "skill": {
+      "id": "62314",
+      "name": "Guardian Drive · Anti-Crit",
+      "icon": "Icon_skill_passive_3130",
+      "effect": "At the start of action, randomly selects <color=#F74848>3</color> allies within <color=#F74848>3</color> tiles to perform <buf ID=900018>[Passive Repair]</buf>, equal to <color=#F74848>0.4</color>x Manipulator Repair AMT. Cannot repair destroyed parts.\nWhen in combat, enemy Crit Rate is reduced by <color=#F74848>10%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60701405",
+        "qty": 1,
+        "composite": true
+      },
+      {
+        "material": "random-composite",
+        "qty": 1,
+        "composite": true
+      },
+      {
+        "material": "random-s-grade",
+        "qty": 3
+      },
+      {
+        "material": "ac-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60202406": {
+    "name": "Pioneer",
+    "quality": "SSSR",
+    "weight": "150",
+    "main_type": "MovePointAdd",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60500201",
+    "how_get": "无",
+    "related_description": "旧式移动强化背包的改良升级款，直接将额外动能输送到腿部传动装置，无论是使用滑轮还是步行，机兵的移动力都能得到提升。同时集成了强化机兵每回合首次攻击能力的功能。",
+    "version": "2.6",
+    "skill": {
+      "id": "62311",
+      "name": "Pioneer Drive · First Strike",
+      "icon": "Icon_skill_passive_1153",
+      "effect": "No ST type restriction.\nST Movement <color=#F74848>+1</color>.\nWhen actively attacking for the <color=#F74848>1st</color> time each turn, DMG <color=#F74848>+7.5%</color> and Crit Rate <color=#F74848>+5%</color>.\nST Body HP <color=#F74848>+10%</color> and DMG Dealt <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60202405",
+        "qty": 1,
+        "composite": true
+      },
+      {
+        "material": "random-composite",
+        "qty": 1,
+        "composite": true
+      },
+      {
+        "material": "random-s-grade",
+        "qty": 3
+      },
+      {
+        "material": "ac-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60801706": {
+    "name": "Scout",
+    "quality": "SSSR",
+    "weight": "150",
+    "main_type": "Radar",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60800201",
+    "how_get": "无",
+    "related_description": "旧式雷达干扰背包的改良升级款，小型化的机兵定位装置，开启能让友方机兵获得定位，引导飞弹对范围内目标进行精准打击。同时集成了对敌机遭受伤害提升的功能。",
+    "version": "2.6",
+    "skill": {
+      "id": "62312",
+      "name": "Scout Drive · DMG UP",
+      "icon": "Icon_skill_passive_5103",
+      "effect": "View distance <color=#F74848>+1</color> in Arashi Fog stages.\nCan use Code <skill mainSkill=62312>[Radar Detection]</skill>: removes <buf ID=900033>[Stealth]</buf> from all enemy STs within <color=#F74848>4</color> tiles. Triggers <buf ID=900004>[Re-ATK]</buf> in place afterward.\nEnables the ST's adjacent <color=#F74848>2</color>-tile area to become a valid attack zone for allied Missile Launcher and Rocket Launcher attacks.\nWhen in combat, enemy DMG Taken <color=#F74848>+10%</color>.\nST Body HP <color=#F74848>+10%</color> and DMG Dealt <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60801705",
+        "qty": 1,
+        "composite": true
+      },
+      {
+        "material": "random-composite",
+        "qty": 1,
+        "composite": true
+      },
+      {
+        "material": "random-s-grade",
+        "qty": 3
+      },
+      {
+        "material": "ac-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60401706": {
+    "name": "Harrier",
+    "quality": "SSSR",
+    "weight": "150",
+    "main_type": "Flow",
+    "st_type": "Light",
+    "icon": "Icon_backpack_60350201",
+    "how_get": "无",
+    "related_description": "An upgraded version of the legacy Jet Amplifier. This jetpack enables an ST to fly over short distances, quickly traversing obstacles to reach even the most inaccessible corners of the battlefield. It can also inflict a DMG Taken UP effect on the enemy.",
+    "version": "2.5",
+    "skill": {
+      "id": "62310",
+      "name": "Harrier Drive - DMG UP",
+      "icon": "Icon_skill_passive_1142",
+      "effect": "ST Movement <color=#F74848>+1</color>.\nST movement type changes to Levitating, enabling it to pass over low obstacles.\nWhen in combat, enemy DMG Taken <color=#F74848>+10%</color>.\nST Body HP <color=#F74848>+10%</color> and DMG Dealt <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60401705",
+        "qty": 1,
+        "composite": true
+      },
+      {
+        "material": "random-composite",
+        "qty": 1,
+        "composite": true
+      },
+      {
+        "material": "random-s-grade",
+        "qty": 3
+      },
+      {
+        "material": "ac-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "61002406": {
+    "name": "Stalker",
+    "quality": "SSSR",
+    "weight": "150",
+    "main_type": "Invisible",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60900201",
+    "how_get": "无",
+    "related_description": "An upgraded version of the legacy Stealth Amplifier. This advanced optics system can distort light, allowing ST fitted with this backpack model to become somewhat invisible. It can also enhance the capability of an ST's first attack per turn.",
+    "version": "2.4",
+    "skill": {
+      "id": "62308",
+      "name": "Stalker Drive - First Strike",
+      "icon": "Icon_skill_passive_5021",
+      "effect": "Upon deployment, immediately gains <buf ID=3004412>[Stealth II]</buf>, lasting <color=#F74848>2</color> turns.\nAt the end of action, if there are no enemies within <color=#F74848>1</color> tile, gains <buf ID=3004412>[Stealth II]</buf>, lasting <color=#F74848>2</color> turns. This effect has a <color=#F74848>3</color>-turn trigger interval.\nWhen actively attacking for the <color=#F74848>1st</color> time each turn, DMG <color=#F74848>+7.5%</color> and Crit Rate <color=#F74848>+5%</color>.\nST Body HP <color=#F74848>+10%</color> and DMG Dealt <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "61002405",
+        "qty": 1,
+        "composite": true
+      },
+      {
+        "material": "random-composite",
+        "qty": 1,
+        "composite": true
+      },
+      {
+        "material": "random-s-grade",
+        "qty": 3
+      },
+      {
+        "material": "ac-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60202106": {
+    "name": "Assaulter",
+    "quality": "SSSR",
+    "weight": "150",
+    "main_type": "MovePointAdd",
+    "st_type": "Light",
+    "icon": "Icon_backpack_60500201",
+    "how_get": "无",
+    "related_description": "An upgraded version of the legacy Move Amplifier. Channels extra energy directly into the leg actuator to improve the ST's mobility, whether using pulleys or walking. It can also enhance an ST's Re-ATK.",
+    "version": "2.4",
+    "skill": {
+      "id": "62309",
+      "name": "Assaulter Drive - Re-ATK",
+      "icon": "Icon_skill_passive_5123",
+      "effect": "When actively attacking, if having moved <color=#F74848>4</color> or more tiles, gains <buf ID=7100901>[Movement UP]</buf>, lasting <color=#F74848>1</color> turn.\nST Movement <color=#F74848>+1</color>.\nWhen re-attacking, Hit Rate <color=#F74848>+10%</color> and Crit Rate <color=#F74848>+5%</color>.\nST Body HP <color=#F74848>+10%</color> and DMG Dealt <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60202105",
+        "qty": 1,
+        "composite": true
+      },
+      {
+        "material": "random-composite",
+        "qty": 1,
+        "composite": true
+      },
+      {
+        "material": "random-s-grade",
+        "qty": 3
+      },
+      {
+        "material": "ac-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60902106": {
+    "name": "Supplier",
+    "quality": "SSSR",
+    "weight": "150",
+    "main_type": "Ammo",
+    "st_type": "Medium",
+    "icon": "Icon_backpack_61100101",
+    "how_get": "无",
+    "related_description": "An upgraded version of the legacy Ammo Amplifier. An ammo crate containing tactical weapons, allowing STs to fire more rockets or missiles. It can also enhance an ST's Re-ATK.",
+    "version": "2.3",
+    "skill": {
+      "id": "62306",
+      "name": "Supplier Drive – Re-ATK",
+      "icon": "Icon_skill_passive_5163",
+      "effect": "Tactical Weapon Ammo Capacity <color=#F74848>+2</color>.\nAfter triggering [Re-ATK], Hit Rate <color=#F74848>+10%</color> and Crit Rate <color=#F74848>+5%</color>.\nCan use the <skill mainSkill=6230611>[Quick Load]</skill> Code, sharing cooldown turns with other Tactical Weapon loading skills.\nST Body HP <color=#F74848>+10%</color> and DMG <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60902105",
+        "qty": 1,
+        "composite": true
+      },
+      {
+        "material": "random-composite",
+        "qty": 1,
+        "composite": true
+      },
+      {
+        "material": "random-s-grade",
+        "qty": 3
+      },
+      {
+        "material": "ac-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60301106": {
+    "name": "Resistor",
+    "quality": "SSSR",
+    "weight": "150",
+    "main_type": "Interference",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60300201",
+    "how_get": "无",
+    "related_description": "An upgraded version of the legacy Signal Jammer. Unceasingly emits EM waves to suppressively interfere with projectiles and disrupt electronic equipment, thus weakening the power of tactical weapons. It can also affect the ATK of enemy STs.",
+    "version": "2.3",
+    "skill": {
+      "id": "62307",
+      "name": "Resistor Drive – ATK",
+      "icon": "Icon_skill_passive_5232",
+      "effect": "No ST type restriction.\nDMG Taken <color=#F74848>-25%</color> from Tactical Attacks. Effects of the same type cannot stack.\nWhen any enemy actively uses Tactical Weapons to attack, gains <color=#F74848>1</color> stack of <buf ID=623076>[Countercharge]</buf> before combat. If this unit is the target, gains an additional <color=#F74848>1</color> stack. Upon gaining <color=#F74848>6</color> stacks of <buf ID=623076>[Countercharge]</buf>, restores <color=#F74848>15%</color> HP to all parts and regens <color=#F74848>1</color> AP after combat. All stacks are removed after triggering, and no more <buf ID=623076>[Countercharge]</buf> stacks can be gained this turn.\nIn combat, enemy DMG <color=#F74848>-10%</color>.\nST Body HP <color=#F74848>+10%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60301105",
+        "qty": 1,
+        "composite": true
+      },
+      {
+        "material": "random-composite",
+        "qty": 1,
+        "composite": true
+      },
+      {
+        "material": "random-s-grade",
+        "qty": 3
+      },
+      {
+        "material": "ac-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60101706": {
+    "name": "Juggernaut",
+    "quality": "SSSR",
+    "weight": "150",
+    "main_type": "BackupEquipment",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_61400101",
+    "how_get": "无",
+    "related_description": "An upgraded version of the legacy output Jammer. External modular devices provide additional power to the ST, increasing its maximum combat load capacity. It also integrates effects that increase damage taken by enemy units, along with an innovative weapon-switching function.",
+    "version": "2.2",
+    "skill": {
+      "id": "62304",
+      "name": "Juggernaut Drive – DMG UP",
+      "icon": "Icon_skill_passive_5234",
+      "effect": "Can use the Code <skill mainSkill=62304>[Weapon Switch]</skill> up to <color=#F74848>1</color> time per turn. After taking action, if both Arms are undestroyed, can use <skill mainSkill=62304>[Weapon Switch]</skill> an additional <color=#F74848>1</color> time every <color=#F74848>2</color> turns.\nIn combat, Enemy DMG Taken <color=#F74848>+10%</color>.\nST gains an extra <color=#F74848>300</color> Power, Body HP <color=#F74848>+10%</color>, and DMG <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60101705",
+        "qty": 1,
+        "composite": true
+      },
+      {
+        "material": "random-composite",
+        "qty": 1,
+        "composite": true
+      },
+      {
+        "material": "random-s-grade",
+        "qty": 3
+      },
+      {
+        "material": "ac-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60802406": {
+    "name": "Architect",
+    "quality": "SSSR",
+    "weight": "150",
+    "main_type": "Radar",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60800201",
+    "how_get": "无",
+    "related_description": "An upgraded version of the legacy radar Amplifier. This miniaturized ST positioning device enables allied STs to gain targeting data, guiding missiles to accurately strike enemies within range. It also enhances the ST's first attack each turn.",
+    "version": "2.2",
+    "skill": {
+      "id": "62305",
+      "name": "Architect Drive – First Strike",
+      "icon": "Icon_skill_passive_5237",
+      "effect": "Enables the ST's adjacent <color=#F74848>2</color>-tile area to become a valid attack zone for ally Missile Launcher and Rocket Launcher attacks. Hit Rate <color=#F74848>+25%</color> for attacks induced by Backpack effects.\nWhen initiating combat for the first time each turn: DMG <color=#F74848>+7.5%</color> and Crit Rate <color=#F74848>+5%</color>.\nST Body HP <color=#F74848>+10%</color> and DMG <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60802405",
+        "qty": 1,
+        "composite": true
+      },
+      {
+        "material": "random-composite",
+        "qty": 1,
+        "composite": true
+      },
+      {
+        "material": "random-s-grade",
+        "qty": 3
+      },
+      {
+        "material": "ac-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60402406": {
+    "name": "Overlord",
+    "quality": "SSSR",
+    "weight": "150",
+    "main_type": "Flow",
+    "st_type": "Light",
+    "icon": "Icon_backpack_60350201",
+    "how_get": "无",
+    "related_description": "An upgraded version of the legacy flying Amplifier. Its jet system allows an ST to fly over short distances, rapidly bypassing obstacles and reaching otherwise inaccessible areas of the battlefield. It also enhances the ST's first attack each turn.",
+    "version": "2.1",
+    "skill": {
+      "id": "62302",
+      "name": "Overlord Drive · First Strike",
+      "icon": "Icon_skill_passive_5155",
+      "effect": "ST movement type changes to Levitating, enabling ST to pass over low obstacles.\nBefore initiating combat with an active attack, if the target is on the movement path, guaranteed to Dodge when retaliated against, up to <color=#F74848>1</color> time per turn.\nWhen initiating combat for the first time each turn, DMG <color=#F74848>+7.5%</color> and Crit Rate <color=#F74848>+5%</color>. ST Body HP <color=#F74848>+10%</color> and DMG <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60402405",
+        "qty": 1,
+        "composite": true
+      },
+      {
+        "material": "random-composite",
+        "qty": 1,
+        "composite": true
+      },
+      {
+        "material": "random-s-grade",
+        "qty": 3
+      },
+      {
+        "material": "ac-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60701106": {
+    "name": "Savior",
+    "quality": "SSSR",
+    "weight": "1000",
+    "main_type": "Heal",
+    "st_type": "Medium",
+    "icon": "Icon_backpack_60400201",
+    "how_get": "无",
+    "related_description": "An upgraded version of the legacy repair Jammer. This engineering backpack is equipped with a mechanical repair arm, providing comprehensive professional maintenance for STs on the battlefield. It also integrates a function that interferes with enemy STs' attack capabilities.",
+    "repair": "211",
+    "version": "2.1",
+    "skill": {
+      "id": "62303",
+      "name": "Savior Drive - ATK",
+      "icon": "Icon_skill_passive_3130",
+      "effect": "At start of action, repairs self and allies within <color=#F74848>1</color> ring <color=#F74848>1</color> time, restoring HP equal to <color=#F74848>0.6</color>x Manipulator Repair AMT. This cannot repair destroyed parts.\nIn combat, Enemy DMG <color=#F74848>-10%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60701105",
+        "qty": 1,
+        "composite": true
+      },
+      {
+        "material": "random-composite",
+        "qty": 1,
+        "composite": true
+      },
+      {
+        "material": "random-s-grade",
+        "qty": 3
+      },
+      {
+        "material": "ac-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "61001706": {
+    "name": "Concealer",
+    "quality": "SSSR",
+    "weight": "150",
+    "main_type": "Invisible",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60900201",
+    "how_get": "无",
+    "related_description": "An improved upgrade of the outdated jammer, this advanced optics system can distort light, allowing STs fitted with this backpack model to become somewhat invisible and cause the enemy to take increased damage.",
+    "version": "1.7",
+    "skill": {
+      "id": "62301",
+      "name": "Concealer Drive · DMG UP",
+      "icon": "Icon_skill_passive_5120",
+      "effect": "At the end of action, if there are no enemies within <color=#F74848>2</color> tiles, gains <buf ID=3004502>[Stealth I]</buf>, lasting <color=#F74848>2</color> turns. This effect has a <color=#F74848>3</color>-turn trigger interval.\nAt the start of action, if in <buf ID=900033>[Stealth]</buf>, immediately recovers <color=#F74848>1</color> AP.\nWhen in combat, enemy DMG Taken <color=#F74848>+10%</color>.\nST Body HP <color=#F74848>+10%</color> and DMG Dealt <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "61001705",
+        "qty": 1,
+        "composite": true
+      },
+      {
+        "material": "random-composite",
+        "qty": 1,
+        "composite": true
+      },
+      {
+        "material": "random-s-grade",
+        "qty": 3
+      },
+      {
+        "material": "ac-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60302506": {
+    "name": "Custodian",
+    "quality": "SSSR",
+    "weight": "150",
+    "main_type": "Interference",
+    "st_type": "Heavy",
+    "icon": "Icon_backpack_60300201",
+    "how_get": "无",
+    "related_description": "An improved version of the old induction enhancement pack, constantly emits EM waves to interfere with projectiles and disrupt electronic equipment, thus weakening the power of tactical weapons. It can also enhance an ST's Retaliation.",
+    "version": "1.6",
+    "skill": {
+      "id": "62179",
+      "name": "Custodian Field · Retaliation",
+      "icon": "Icon_skill_passive_5232",
+      "effect": "Activates Aura: Allies within <color=#F74848>1</color> adjacent tile take <color=#F74848>25%</color> less DMG from Tactical attacks. Similar effects cannot stack.\nWhen allies within <color=#F74848>1</color> adjacent tile are hit by a Missile attack, the <color=#F74848>1st</color> missile is unable to hit. This effect can only trigger <color=#F74848>1</color> time per sortie.\nWhen retaliating, DMG <color=#F74848>+15%</color> and Crit Rate <color=#F74848>+10%</color>.\nST Body HP <color=#F74848>+10%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60302505",
+        "qty": 1,
+        "composite": true
+      },
+      {
+        "material": "random-composite",
+        "qty": 1,
+        "composite": true
+      },
+      {
+        "material": "random-s-grade",
+        "qty": 3
+      },
+      {
+        "material": "ac-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60201606": {
+    "name": "Conqueror",
+    "quality": "SSSR",
+    "weight": "150",
+    "main_type": "MovePointAdd",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60500201",
+    "how_get": "无",
+    "related_description": "An improved version of the old Jammer, channels extra energy directly into the leg actuator to improve the ST's mobility, whether using pulleys or walking. It can also affect the Armor of enemy STs.",
+    "version": "1.6",
+    "skill": {
+      "id": "62207",
+      "name": "Conqueror Drive · Armor",
+      "icon": "Icon_skill_passive_5233",
+      "effect": "No ST type restriction.\nST Movement <color=#F74848>+1</color>.\nWhen in combat, enemy Armor is reduced by <color=#F74848>50%</color>.\nST Body HP <color=#F74848>+10%</color> and DMG Dealt <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60201605",
+        "qty": 1,
+        "composite": true
+      },
+      {
+        "material": "random-composite",
+        "qty": 1,
+        "composite": true
+      },
+      {
+        "material": "random-s-grade",
+        "qty": 3
+      },
+      {
+        "material": "ac-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60902405": {
+    "name": "Ammo Amplifier - First Strike",
+    "quality": "UR",
+    "weight": "150",
+    "main_type": "Ammo",
+    "st_type": "Medium",
+    "icon": "Icon_backpack_61100101",
+    "how_get": "无",
+    "related_description": "An ammo crate containing tactical weapons, allowing STs to fire more rockets or missiles. It can also enhance the capability of an ST's first attack per turn.",
+    "skill": {
+      "id": "61191",
+      "name": "TacW Capacity UP II · First Strike",
+      "icon": "Icon_skill_passive_5163",
+      "effect": "Tactical Weapon Ammo Capacity <color=#F74848>+2</color>.\nOn the <color=#F74848>1st</color> active attack per turn, DMG <color=#F74848>+7.5%</color> and Crit Rate <color=#F74848>+5%</color>.\nST Body's HP <color=#F74848>+10%</color>, DMG Dealt <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60900104",
+        "qty": 1
+      },
+      {
+        "item": "60600404",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60902105": {
+    "name": "Ammo Amplifier - Re-ATK",
+    "quality": "UR",
+    "weight": "150",
+    "main_type": "Ammo",
+    "st_type": "Medium",
+    "icon": "Icon_backpack_61100101",
+    "how_get": "无",
+    "related_description": "An ammo crate containing tactical weapons, allowing STs to fire more rockets or missiles. It can also enhance an ST's Re-ATK.",
+    "skill": {
+      "id": "61190",
+      "name": "TacW Capacity UP II · Re-ATK",
+      "icon": "Icon_skill_passive_5163",
+      "effect": "Tactical Weapon Ammo Capacity <color=#F74848>+2</color>.\nAfter triggering [Re-ATK], Hit Rate <color=#F74848>+10%</color>, Crit Rate <color=#F74848>+5%</color>.\nST Body's HP <color=#F74848>+10%</color>, DMG Dealt <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60900104",
+        "qty": 1
+      },
+      {
+        "item": "60600104",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60402605": {
+    "name": "Jet Amplifier - Ballistics",
+    "quality": "UR",
+    "weight": "150",
+    "main_type": "Flow",
+    "st_type": "Light",
+    "icon": "Icon_BackPack_60350101",
+    "how_get": "无",
+    "related_description": "This jetpack enables an ST to fly over short distances, quickly traversing obstacles to reach even the most inaccessible corners of the battlefield. It can also enhance the ST's destructive power at Ideal Range.",
+    "skill": {
+      "id": "61212",
+      "name": "Flying Device I · Ballistics",
+      "icon": "Icon_skill_passive_5127",
+      "effect": "ST Move Method changes to levitation, enabling ST to pass over low obstacles.\nWhen engaging in combat with a target at Ideal Range, gain DMG <color=#F74848>+10%</color> and Crit Rate <color=#F74848>+5%</color>.\nST Body's HP <color=#F74848>+10%</color>, DMG Dealt <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60400104",
+        "qty": 1
+      },
+      {
+        "item": "60600604",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60402405": {
+    "name": "Jet Amplifier - First Strike",
+    "quality": "UR",
+    "weight": "150",
+    "main_type": "Flow",
+    "st_type": "Light",
+    "icon": "Icon_BackPack_60350101",
+    "how_get": "无",
+    "related_description": "This jetpack enables an ST to fly over short distances, quickly traversing obstacles to reach even the most inaccessible corners of the battlefield. It can also enhance the capability of an ST's first attack per turn.",
+    "skill": {
+      "id": "61211",
+      "name": "Flying Device I · First Strike",
+      "icon": "Icon_skill_passive_5127",
+      "effect": "ST Move Method changes to levitation, enabling ST to pass over low obstacles.\nOn the <color=#F74848>1st</color> active attack per turn, DMG <color=#F74848>+7.5%</color> and Crit Rate <color=#F74848>+5%</color>.\nST Body's HP <color=#F74848>+10%</color>, DMG Dealt <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60400104",
+        "qty": 1
+      },
+      {
+        "item": "60600404",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60402205": {
+    "name": "Jet Amplifier - Flurry Strike",
+    "quality": "UR",
+    "weight": "150",
+    "main_type": "Flow",
+    "st_type": "Light",
+    "icon": "Icon_BackPack_60350101",
+    "how_get": "无",
+    "related_description": "This jetpack enables an ST to fly over short distances, quickly traversing obstacles to reach even the most inaccessible corners of the battlefield. It can also enhance an ST's Flurry Strike and Gusty Strike.",
+    "skill": {
+      "id": "61213",
+      "name": "Flying Device I · Flurry Strike",
+      "icon": "Icon_skill_passive_5127",
+      "effect": "ST Move Method changes to levitation, enabling ST to pass over low obstacles.\nWhen launching Flurry Strike or Gusty Strike, Hit Rate <color=#F74848>+15%</color> and Crit Rate <color=#F74848>+10%</color>.\nST Body's HP <color=#F74848>+10%</color>, DMG Dealt <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60400104",
+        "qty": 1
+      },
+      {
+        "item": "60600204",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60402705": {
+    "name": "Jet Amplifier - Link",
+    "quality": "UR",
+    "weight": "150",
+    "main_type": "Flow",
+    "st_type": "Light",
+    "icon": "Icon_BackPack_60350101",
+    "how_get": "无",
+    "related_description": "This jetpack enables an ST to fly over short distances, quickly traversing obstacles to reach even the most inaccessible corners of the battlefield. It can also enhance an ST's Link Attack.",
+    "skill": {
+      "id": "61214",
+      "name": "Flying Device I · Link",
+      "icon": "Icon_skill_passive_5127",
+      "effect": "ST Move Method changes to levitation, enabling ST to pass over low obstacles.\nWhen launching Link Attack, DMG <color=#F74848>+15%</color> and Crit Rate <color=#F74848>+10%</color>.\nST Body's HP <color=#F74848>+10%</color>, DMG Dealt <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60400104",
+        "qty": 1
+      },
+      {
+        "item": "60600704",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60402105": {
+    "name": "Jet Amplifier - Re-ATK",
+    "quality": "UR",
+    "weight": "150",
+    "main_type": "Flow",
+    "st_type": "Light",
+    "icon": "Icon_BackPack_60350101",
+    "how_get": "无",
+    "related_description": "This jetpack enables an ST to fly over short distances, quickly traversing obstacles to reach even the most inaccessible corners of the battlefield. It can also enhance an ST's Re-ATK.",
+    "skill": {
+      "id": "61210",
+      "name": "Flying Device I · Re-ATK",
+      "icon": "Icon_skill_passive_5127",
+      "effect": "ST Move Method changes to levitation, enabling ST to pass over low obstacles.\nAfter triggering [Re-ATK], Hit Rate <color=#F74848>+10%</color>, Crit Rate <color=#F74848>+5%</color>.\nST Body's HP <color=#F74848>+10%</color>, DMG Dealt <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60400104",
+        "qty": 1
+      },
+      {
+        "item": "60600104",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60402505": {
+    "name": "Jet Amplifier - Retaliation",
+    "quality": "UR",
+    "weight": "150",
+    "main_type": "Flow",
+    "st_type": "Light",
+    "icon": "Icon_BackPack_60350101",
+    "how_get": "无",
+    "related_description": "This jetpack enables an ST to fly over short distances, quickly traversing obstacles to reach even the most inaccessible corners of the battlefield. It can also enhance an ST's Retaliation.",
+    "skill": {
+      "id": "61240",
+      "name": "Flying Device I · Retaliation",
+      "icon": "Icon_skill_passive_5127",
+      "effect": "ST Move Method changes to levitation, enabling ST to pass over low obstacles.\nWhen Retaliating, Hit Rate <color=#F74848>+15%</color> and Crit Rate <color=#F74848>+10%</color>.\nST Body's HP <color=#F74848>+10%</color>, DMG Dealt <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60400104",
+        "qty": 1
+      },
+      {
+        "item": "60600504",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60402305": {
+    "name": "Jet Amplifier - Vigilant",
+    "quality": "UR",
+    "weight": "150",
+    "main_type": "Flow",
+    "st_type": "Light",
+    "icon": "Icon_BackPack_60350101",
+    "how_get": "无",
+    "related_description": "This jetpack enables an ST to fly over short distances, quickly traversing obstacles to reach even the most inaccessible corners of the battlefield. It can also enhance an ST's Vigilant Shot.",
+    "skill": {
+      "id": "61239",
+      "name": "Flying Device I · Vigilant",
+      "icon": "Icon_skill_passive_5127",
+      "effect": "ST Move Method changes to levitation, enabling ST to pass over low obstacles.\nWhen launching Vigilant Shot, Hit Rate <color=#F74848>+15%</color> and Crit Rate <color=#F74848>+10%</color>.\nST Body's HP <color=#F74848>+10%</color>, DMG Dealt <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60400104",
+        "qty": 1
+      },
+      {
+        "item": "60600304",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60401105": {
+    "name": "Jet Jammer - ATK",
+    "quality": "UR",
+    "weight": "150",
+    "main_type": "Flow",
+    "st_type": "Light",
+    "icon": "Icon_BackPack_60350101",
+    "how_get": "无",
+    "related_description": "This jetpack enables an ST to fly over short distances, quickly traversing obstacles to reach even the most inaccessible corners of the battlefield. It can also affect the ATK of enemy STs.",
+    "skill": {
+      "id": "61244",
+      "name": "Flying Device I · ATK",
+      "icon": "Icon_skill_passive_5127",
+      "effect": "ST Move Method changes to levitation, enabling ST to pass over low obstacles.\nIn combat, the enemy's DMG <color=#F74848>-10%</color>.\nST Body's HP <color=#F74848>+10%</color>, DMG Dealt <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60400104",
+        "qty": 1
+      },
+      {
+        "item": "60500104",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60401605": {
+    "name": "Jet Jammer - Armor",
+    "quality": "UR",
+    "weight": "150",
+    "main_type": "Flow",
+    "st_type": "Light",
+    "icon": "Icon_BackPack_60350101",
+    "how_get": "无",
+    "related_description": "This jetpack enables an ST to fly over short distances, quickly traversing obstacles to reach even the most inaccessible corners of the battlefield. It can also affect the Armor of enemy STs.",
+    "skill": {
+      "id": "61217",
+      "name": "Flying Device I · Armor",
+      "icon": "Icon_skill_passive_5127",
+      "effect": "ST Move Method changes to levitation, enabling ST to pass over low obstacles.\nIn combat, the enemy's Armor <color=#F74848>-50%</color>.\nST Body's HP <color=#F74848>+10%</color>, DMG Dealt <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60400104",
+        "qty": 1
+      },
+      {
+        "item": "60500604",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60401405": {
+    "name": "Jet Jammer - Crit",
+    "quality": "UR",
+    "weight": "150",
+    "main_type": "Flow",
+    "st_type": "Light",
+    "icon": "Icon_BackPack_60350101",
+    "how_get": "无",
+    "related_description": "This jetpack enables an ST to fly over short distances, quickly traversing obstacles to reach even the most inaccessible corners of the battlefield. It can also affect the Crit of enemy STs.",
+    "skill": {
+      "id": "61242",
+      "name": "Flying Device I · Crit",
+      "icon": "Icon_skill_passive_5127",
+      "effect": "ST Move Method changes to levitation, enabling ST to pass over low obstacles.\nIn combat, the enemy's Crit Rate <color=#F74848>-10%</color>.\nST Body's HP <color=#F74848>+10%</color>, DMG Dealt <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60400104",
+        "qty": 1
+      },
+      {
+        "item": "60500404",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60401505": {
+    "name": "Jet Jammer - Crit DMG",
+    "quality": "UR",
+    "weight": "150",
+    "main_type": "Flow",
+    "st_type": "Light",
+    "icon": "Icon_BackPack_60350101",
+    "how_get": "无",
+    "related_description": "This jetpack enables an ST to fly over short distances, quickly traversing obstacles to reach even the most inaccessible corners of the battlefield. It can also affect the Crit DMG of enemy STs.",
+    "skill": {
+      "id": "61243",
+      "name": "Flying Device I · Crit DMG",
+      "icon": "Icon_skill_passive_5127",
+      "effect": "ST Move Method changes to levitation, enabling ST to pass over low obstacles.\nIn combat, the enemy's Crit DMG <color=#F74848>-10%</color>.\nST Body's HP <color=#F74848>+10%</color>, DMG Dealt <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60400104",
+        "qty": 1
+      },
+      {
+        "item": "60500504",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60401705": {
+    "name": "Jet Jammer - DMG UP",
+    "quality": "UR",
+    "weight": "150",
+    "main_type": "Flow",
+    "st_type": "Light",
+    "icon": "Icon_BackPack_60350101",
+    "how_get": "无",
+    "related_description": "This jetpack enables an ST to fly over short distances, quickly traversing obstacles to reach even the most inaccessible corners of the battlefield. It can also inflict a DMG Taken UP effect on the enemy.",
+    "skill": {
+      "id": "61218",
+      "name": "Flying Device I · DMG UP",
+      "icon": "Icon_skill_passive_5127",
+      "effect": "ST Move Method changes to levitation, enabling ST to pass over low obstacles.\nIn combat, the enemy's DMG Taken <color=#F74848>+10%</color>.\nST Body's HP <color=#F74848>+10%</color>, DMG Dealt <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60400104",
+        "qty": 1
+      },
+      {
+        "item": "60500704",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60401305": {
+    "name": "Jet Jammer - Dodge",
+    "quality": "UR",
+    "weight": "150",
+    "main_type": "Flow",
+    "st_type": "Light",
+    "icon": "Icon_BackPack_60350101",
+    "how_get": "无",
+    "related_description": "This jetpack enables an ST to fly over short distances, quickly traversing obstacles to reach even the most inaccessible corners of the battlefield. It can also affect the Dodge of enemy STs.",
+    "skill": {
+      "id": "61216",
+      "name": "Flying Device I · Dodge",
+      "icon": "Icon_skill_passive_5127",
+      "effect": "ST Move Method changes to levitation, enabling ST to pass over low obstacles.\nIn combat, the enemy's Dodge Rate <color=#F74848>-10%</color>.\nST Body's HP <color=#F74848>+10%</color>, DMG Dealt <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60400104",
+        "qty": 1
+      },
+      {
+        "item": "60500304",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60401205": {
+    "name": "Jet Jammer - Hit",
+    "quality": "UR",
+    "weight": "150",
+    "main_type": "Flow",
+    "st_type": "Light",
+    "icon": "Icon_BackPack_60350101",
+    "how_get": "无",
+    "related_description": "This jetpack enables an ST to fly over short distances, quickly traversing obstacles to reach even the most inaccessible corners of the battlefield. It can also affect the Hit of enemy STs.",
+    "skill": {
+      "id": "61215",
+      "name": "Flying Device I · Hit",
+      "icon": "Icon_skill_passive_5127",
+      "effect": "ST Move Method changes to levitation, enabling ST to pass over low obstacles.\nIn combat, the enemy's Hit Rate <color=#F74848>-10%</color>.\nST Body's HP <color=#F74848>+10%</color>, DMG Dealt <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60400104",
+        "qty": 1
+      },
+      {
+        "item": "60500204",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60702705": {
+    "name": "Repair Amplifier - Link",
+    "quality": "UR",
+    "weight": "1000",
+    "main_type": "Heal",
+    "st_type": "Medium",
+    "icon": "Icon_backpack_60400101",
+    "how_get": "无",
+    "related_description": "An engineering backpack fitted with a high-precision robotic arm that provides professional repairs on the battlefield. It can also enhance an ST's Link Attack.",
+    "repair": "204",
+    "skill": {
+      "id": "61230",
+      "name": "Repair Unit I - Link",
+      "icon": "Icon_skill_passive_3102",
+      "effect": "When the action starts, repair yourself <color=#F74848>once</color>, restoring HP equal to <color=#F74848>0.6x</color> the Manipulator's Repair AMT. This cannot repair damaged parts.\nWhen launching Link Attack, DMG <color=#F74848>+15%</color> and Crit Rate <color=#F74848>+10%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60700104",
+        "qty": 1
+      },
+      {
+        "item": "60600704",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60702505": {
+    "name": "Repair Amplifier - Retaliation",
+    "quality": "UR",
+    "weight": "1000",
+    "main_type": "Heal",
+    "st_type": "Medium",
+    "icon": "Icon_backpack_60400101",
+    "how_get": "无",
+    "related_description": "An engineering backpack fitted with a high-precision robotic arm that provides professional repairs on the battlefield. It can also enhance an ST's Retaliation.",
+    "repair": "204",
+    "skill": {
+      "id": "61250",
+      "name": "Repair Unit I - Retaliation",
+      "icon": "Icon_skill_passive_3102",
+      "effect": "When the action starts, repair yourself <color=#F74848>once</color>, restoring HP equal to <color=#F74848>0.6x</color> the Manipulator's Repair AMT. This cannot repair damaged parts.\nWhen Retaliating, Hit Rate <color=#F74848>+15%</color> and Crit Rate <color=#F74848>+10%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60700104",
+        "qty": 1
+      },
+      {
+        "item": "60600504",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60701105": {
+    "name": "Repair Jammer - ATK",
+    "quality": "UR",
+    "weight": "1000",
+    "main_type": "Heal",
+    "st_type": "Medium",
+    "icon": "Icon_backpack_60400101",
+    "how_get": "无",
+    "related_description": "An engineering backpack fitted with a high-precision robotic arm that provides professional repairs on the battlefield. It can also affect the ATK of enemy STs.",
+    "repair": "204",
+    "skill": {
+      "id": "61253",
+      "name": "Repair Unit I - ATK",
+      "icon": "Icon_skill_passive_3102",
+      "effect": "When the action starts, repair yourself <color=#F74848>once</color>, restoring HP equal to <color=#F74848>0.6x</color> the Manipulator's Repair AMT. This cannot repair damaged parts.\nIn combat, the enemy's DMG <color=#F74848>-10%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60700104",
+        "qty": 1
+      },
+      {
+        "item": "60500104",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60701605": {
+    "name": "Repair Jammer - Armor",
+    "quality": "UR",
+    "weight": "1000",
+    "main_type": "Heal",
+    "st_type": "Medium",
+    "icon": "Icon_backpack_60400101",
+    "how_get": "无",
+    "related_description": "An engineering backpack fitted with a high-precision robotic arm that provides professional repairs on the battlefield. It can also affect the Armor of enemy STs.",
+    "repair": "204",
+    "skill": {
+      "id": "61233",
+      "name": "Repair Unit I - Armor",
+      "icon": "Icon_skill_passive_3102",
+      "effect": "When the action starts, repair yourself <color=#F74848>once</color>, restoring HP equal to <color=#F74848>0.6x</color> the Manipulator's Repair AMT. This cannot repair damaged parts.\nIn combat, the enemy's Armor <color=#F74848>-50%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60700104",
+        "qty": 1
+      },
+      {
+        "item": "60500604",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60701405": {
+    "name": "Repair Jammer - Crit",
+    "quality": "UR",
+    "weight": "1000",
+    "main_type": "Heal",
+    "st_type": "Medium",
+    "icon": "Icon_backpack_60400101",
+    "how_get": "无",
+    "related_description": "An engineering backpack fitted with a high-precision robotic arm that provides professional repairs on the battlefield. It can also affect the Crit of enemy STs.",
+    "repair": "204",
+    "skill": {
+      "id": "61251",
+      "name": "Repair Unit I - Crit",
+      "icon": "Icon_skill_passive_3102",
+      "effect": "When the action starts, repair yourself <color=#F74848>once</color>, restoring HP equal to <color=#F74848>0.6x</color> the Manipulator's Repair AMT. This cannot repair damaged parts.\nIn combat, the enemy's Crit Rate <color=#F74848>-10%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60700104",
+        "qty": 1
+      },
+      {
+        "item": "60500404",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60701505": {
+    "name": "Repair Jammer - Crit DMG",
+    "quality": "UR",
+    "weight": "1000",
+    "main_type": "Heal",
+    "st_type": "Medium",
+    "icon": "Icon_backpack_60400101",
+    "how_get": "无",
+    "related_description": "An engineering backpack fitted with a high-precision robotic arm that provides professional repairs on the battlefield. It can also affect the Crit DMG of enemy STs.",
+    "repair": "204",
+    "skill": {
+      "id": "61252",
+      "name": "Repair Unit I - Crit DMG",
+      "icon": "Icon_skill_passive_3102",
+      "effect": "When the action starts, repair yourself <color=#F74848>once</color>, restoring HP equal to <color=#F74848>0.6x</color> the Manipulator's Repair AMT. This cannot repair damaged parts.\nIn combat, the enemy's Crit DMG <color=#F74848>-10%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60700104",
+        "qty": 1
+      },
+      {
+        "item": "60500504",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60701705": {
+    "name": "Repair Jammer - DMG UP",
+    "quality": "UR",
+    "weight": "1000",
+    "main_type": "Heal",
+    "st_type": "Medium",
+    "icon": "Icon_backpack_60400101",
+    "how_get": "无",
+    "related_description": "An engineering backpack fitted with a high-precision robotic arm that provides professional repairs on the battlefield. It can also inflict a DMG Taken UP effect on the enemy.",
+    "repair": "204",
+    "skill": {
+      "id": "61234",
+      "name": "Repair Unit I - DMG UP",
+      "icon": "Icon_skill_passive_3102",
+      "effect": "When the action starts, repair yourself <color=#F74848>once</color>, restoring HP equal to <color=#F74848>0.6x</color> the Manipulator's Repair AMT. This cannot repair damaged parts.\nIn combat, the enemy's DMG Taken <color=#F74848>+10%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60700104",
+        "qty": 1
+      },
+      {
+        "item": "60500704",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60701305": {
+    "name": "Repair Jammer - Dodge",
+    "quality": "UR",
+    "weight": "1000",
+    "main_type": "Heal",
+    "st_type": "Medium",
+    "icon": "Icon_backpack_60400101",
+    "how_get": "无",
+    "related_description": "An engineering backpack fitted with a high-precision robotic arm that provides professional repairs on the battlefield. It can also affect the Dodge of enemy STs.",
+    "repair": "204",
+    "skill": {
+      "id": "61232",
+      "name": "Repair Unit I - Dodge",
+      "icon": "Icon_skill_passive_3102",
+      "effect": "When the action starts, repair yourself <color=#F74848>once</color>, restoring HP equal to <color=#F74848>0.6x</color> the Manipulator's Repair AMT. This cannot repair damaged parts.\nIn combat, the enemy's Dodge Rate <color=#F74848>-10%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60700104",
+        "qty": 1
+      },
+      {
+        "item": "60500304",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60701205": {
+    "name": "Repair Jammer - Hit",
+    "quality": "UR",
+    "weight": "1000",
+    "main_type": "Heal",
+    "st_type": "Medium",
+    "icon": "Icon_backpack_60400101",
+    "how_get": "无",
+    "related_description": "An engineering backpack fitted with a high-precision robotic arm that provides professional repairs on the battlefield. It can also affect the Hit of enemy STs.",
+    "repair": "204",
+    "skill": {
+      "id": "61231",
+      "name": "Repair Unit I - Hit",
+      "icon": "Icon_skill_passive_3102",
+      "effect": "When the action starts, repair yourself <color=#F74848>once</color>, restoring HP equal to <color=#F74848>0.6x</color> the Manipulator's Repair AMT. This cannot repair damaged parts.\nIn combat, the enemy's Hit Rate <color=#F74848>-10%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60700104",
+        "qty": 1
+      },
+      {
+        "item": "60500204",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60302605": {
+    "name": "Signal Amplifier - Ballistics",
+    "quality": "UR",
+    "weight": "150",
+    "main_type": "Interference",
+    "st_type": "Heavy",
+    "icon": "Icon_backpack_60300101",
+    "how_get": "无",
+    "related_description": "Unceasingly emits EM waves to suppressively interfere with projectiles and disrupt electronic equipment, thus weakening the power of tactical weapons. It can also enhance the ST's destructive power at Ideal Range.",
+    "skill": {
+      "id": "61172",
+      "name": "TacW DMG Reduction II · Ballistics",
+      "icon": "Icon_skill_passive_2007",
+      "effect": "When attacked by a Tactical Weapon, DMG Taken <color=#F74848>-25%</color>.\nWhen engaging in combat with a target at Ideal Range, gain DMG <color=#F74848>+10%</color> and Crit Rate <color=#F74848>+5%</color>.\nST's Body HP <color=#F74848>+10%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60300104",
+        "qty": 1
+      },
+      {
+        "item": "60600604",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60302405": {
+    "name": "Signal Amplifier - First Strike",
+    "quality": "UR",
+    "weight": "150",
+    "main_type": "Interference",
+    "st_type": "Heavy",
+    "icon": "Icon_backpack_60300101",
+    "how_get": "无",
+    "related_description": "Unceasingly emits EM waves to suppressively interfere with projectiles and disrupt electronic equipment, thus weakening the power of tactical weapons. It can also enhance the capability of an ST's first attack per turn.",
+    "skill": {
+      "id": "61171",
+      "name": "TacW DMG Reduction II · First Strike",
+      "icon": "Icon_skill_passive_2007",
+      "effect": "When attacked by a Tactical Weapon, DMG Taken <color=#F74848>-25%</color>.\nOn the <color=#F74848>1st</color> active attack per turn, DMG <color=#F74848>+7.5%</color> and Crit Rate <color=#F74848>+5%</color>.\nST's Body HP <color=#F74848>+10%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60300104",
+        "qty": 1
+      },
+      {
+        "item": "60600404",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60302205": {
+    "name": "Signal Amplifier - Flurry Strike",
+    "quality": "UR",
+    "weight": "150",
+    "main_type": "Interference",
+    "st_type": "Heavy",
+    "icon": "Icon_backpack_60300101",
+    "how_get": "无",
+    "related_description": "Unceasingly emits EM waves to suppressively interfere with projectiles and disrupt electronic equipment, thus weakening the power of tactical weapons. It can also enhance an ST's Flurry Strike and Gusty Strike.",
+    "skill": {
+      "id": "61173",
+      "name": "TacW DMG Reduction II · Flurry Strike",
+      "icon": "Icon_skill_passive_2007",
+      "effect": "When attacked by a Tactical Weapon, DMG Taken <color=#F74848>-25%</color>.\nWhen launching Flurry Strike or Gusty Strike, Hit Rate <color=#F74848>+15%</color> and Crit Rate <color=#F74848>+10%</color>.\nST's Body HP <color=#F74848>+10%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60300104",
+        "qty": 1
+      },
+      {
+        "item": "60600204",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60302805": {
+    "name": "Signal Amplifier - Guard",
+    "quality": "UR",
+    "weight": "150",
+    "main_type": "Interference",
+    "st_type": "Heavy",
+    "icon": "Icon_backpack_60300101",
+    "how_get": "无",
+    "related_description": "Unceasingly emits EM waves to suppressively interfere with projectiles and disrupt electronic equipment, thus weakening the power of tactical weapons. It can also enhance an ST's Guard.",
+    "skill": {
+      "id": "61189",
+      "name": "TacW DMG Reduction II · Guard",
+      "icon": "Icon_skill_passive_2007",
+      "effect": "When attacked by a Tactical Weapon, DMG Taken <color=#F74848>-25%</color>.\nWhen performing Guard, Crit RES <color=#F74848>+15%</color> and Crit DMG RES <color=#F74848>+10%</color>.\nST's Body HP <color=#F74848>+10%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60300104",
+        "qty": 1
+      },
+      {
+        "item": "60600804",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60302705": {
+    "name": "Signal Amplifier - Link",
+    "quality": "UR",
+    "weight": "150",
+    "main_type": "Interference",
+    "st_type": "Heavy",
+    "icon": "Icon_backpack_60300101",
+    "how_get": "无",
+    "related_description": "Unceasingly emits EM waves to suppressively interfere with projectiles and disrupt electronic equipment, thus weakening the power of tactical weapons. It can also enhance an ST's Link Attack.",
+    "skill": {
+      "id": "61174",
+      "name": "TacW DMG Reduction II · Link",
+      "icon": "Icon_skill_passive_2007",
+      "effect": "When attacked by a Tactical Weapon, DMG Taken <color=#F74848>-25%</color>.\nWhen launching Link Attack, DMG <color=#F74848>+15%</color> and Crit Rate <color=#F74848>+10%</color>.\nST's Body HP <color=#F74848>+10%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60300104",
+        "qty": 1
+      },
+      {
+        "item": "60600704",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60302105": {
+    "name": "Signal Amplifier - Re-ATK",
+    "quality": "UR",
+    "weight": "150",
+    "main_type": "Interference",
+    "st_type": "Heavy",
+    "icon": "Icon_backpack_60300101",
+    "how_get": "无",
+    "related_description": "Unceasingly emits EM waves to suppressively interfere with projectiles and disrupt electronic equipment, thus weakening the power of tactical weapons. It can also enhance an ST's Re-ATK.",
+    "skill": {
+      "id": "61170",
+      "name": "TacW DMG Reduction II · Re-ATK",
+      "icon": "Icon_skill_passive_2007",
+      "effect": "When attacked by a Tactical Weapon, DMG Taken <color=#F74848>-25%</color>.\nAfter triggering [Re-ATK], Hit Rate <color=#F74848>+10%</color>, Crit Rate <color=#F74848>+5%</color>.\nST's Body HP <color=#F74848>+10%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60300104",
+        "qty": 1
+      },
+      {
+        "item": "60600104",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60302505": {
+    "name": "Signal Amplifier - Retaliation",
+    "quality": "UR",
+    "weight": "150",
+    "main_type": "Interference",
+    "st_type": "Heavy",
+    "icon": "Icon_backpack_60300101",
+    "how_get": "无",
+    "related_description": "Unceasingly emits EM waves to suppressively interfere with projectiles and disrupt electronic equipment, thus weakening the power of tactical weapons. It can also enhance an ST's Retaliation.",
+    "skill": {
+      "id": "61179",
+      "name": "TacW DMG Reduction II · Retaliation",
+      "icon": "Icon_skill_passive_2007",
+      "effect": "When attacked by a Tactical Weapon, DMG Taken <color=#F74848>-25%</color>.\nWhen Retaliating, Hit Rate <color=#F74848>+15%</color> and Crit Rate <color=#F74848>+10%</color>.\nST's Body HP <color=#F74848>+10%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60300104",
+        "qty": 1
+      },
+      {
+        "item": "60600504",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60301105": {
+    "name": "Signal Jammer - ATK",
+    "quality": "UR",
+    "weight": "150",
+    "main_type": "Interference",
+    "st_type": "Heavy",
+    "icon": "Icon_backpack_60300101",
+    "how_get": "无",
+    "related_description": "Unceasingly emits EM waves to suppressively interfere with projectiles and disrupt electronic equipment, thus weakening the power of tactical weapons. It can also affect the ATK of enemy STs.",
+    "skill": {
+      "id": "61194",
+      "name": "TacW DMG Reduction II · ATK",
+      "icon": "Icon_skill_passive_2007",
+      "effect": "When attacked by a Tactical Weapon, DMG Taken <color=#F74848>-25%</color>.\nIn combat, the enemy's DMG <color=#F74848>-10%</color>.\nST's Body HP <color=#F74848>+10%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60300104",
+        "qty": 1
+      },
+      {
+        "item": "60500104",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60301605": {
+    "name": "Signal Jammer - Armor",
+    "quality": "UR",
+    "weight": "150",
+    "main_type": "Interference",
+    "st_type": "Heavy",
+    "icon": "Icon_backpack_60300101",
+    "how_get": "无",
+    "related_description": "Unceasingly emits EM waves to suppressively interfere with projectiles and disrupt electronic equipment, thus weakening the power of tactical weapons. It can also affect the Armor of enemy STs.",
+    "skill": {
+      "id": "61177",
+      "name": "TacW DMG Reduction II · Armor",
+      "icon": "Icon_skill_passive_2007",
+      "effect": "When attacked by a Tactical Weapon, DMG Taken <color=#F74848>-25%</color>.\nIn combat, the enemy's Armor <color=#F74848>-50%</color>.\nST's Body HP <color=#F74848>+10%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60300104",
+        "qty": 1
+      },
+      {
+        "item": "60500604",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60301405": {
+    "name": "Signal Jammer - Crit",
+    "quality": "UR",
+    "weight": "150",
+    "main_type": "Interference",
+    "st_type": "Heavy",
+    "icon": "Icon_backpack_60300101",
+    "how_get": "无",
+    "related_description": "Unceasingly emits EM waves to suppressively interfere with projectiles and disrupt electronic equipment, thus weakening the power of tactical weapons. It can also affect the Crit of enemy STs.",
+    "skill": {
+      "id": "61192",
+      "name": "TacW DMG Reduction II · Crit",
+      "icon": "Icon_skill_passive_2007",
+      "effect": "When attacked by a Tactical Weapon, DMG Taken <color=#F74848>-25%</color>.\nIn combat, the enemy's Crit Rate <color=#F74848>-10%</color>.\nST's Body HP <color=#F74848>+10%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60300104",
+        "qty": 1
+      },
+      {
+        "item": "60500404",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60301505": {
+    "name": "Signal Jammer - Crit DMG",
+    "quality": "UR",
+    "weight": "150",
+    "main_type": "Interference",
+    "st_type": "Heavy",
+    "icon": "Icon_backpack_60300101",
+    "how_get": "无",
+    "related_description": "Unceasingly emits EM waves to suppressively interfere with projectiles and disrupt electronic equipment, thus weakening the power of tactical weapons. It can also affect the Crit DMG of enemy STs.",
+    "skill": {
+      "id": "61193",
+      "name": "TacW DMG Reduction II · Crit DMG",
+      "icon": "Icon_skill_passive_2007",
+      "effect": "When attacked by a Tactical Weapon, DMG Taken <color=#F74848>-25%</color>.\nIn combat, the enemy's Crit DMG <color=#F74848>-10%</color>.\nST's Body HP <color=#F74848>+10%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60300104",
+        "qty": 1
+      },
+      {
+        "item": "60500504",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60301705": {
+    "name": "Signal Jammer - DMG UP",
+    "quality": "UR",
+    "weight": "150",
+    "main_type": "Interference",
+    "st_type": "Heavy",
+    "icon": "Icon_backpack_60300101",
+    "how_get": "无",
+    "related_description": "Unceasingly emits EM waves to suppressively interfere with projectiles and disrupt electronic equipment, thus weakening the power of tactical weapons. It can also inflict a DMG Taken UP effect on the enemy.",
+    "skill": {
+      "id": "61178",
+      "name": "TacW DMG Reduction II · DMG UP",
+      "icon": "Icon_skill_passive_2007",
+      "effect": "When attacked by a Tactical Weapon, DMG Taken <color=#F74848>-25%</color>.\nIn combat, the enemy's DMG Taken <color=#F74848>+10%</color>.\nST's Body HP <color=#F74848>+10%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60300104",
+        "qty": 1
+      },
+      {
+        "item": "60500704",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60301305": {
+    "name": "Signal Jammer - Dodge",
+    "quality": "UR",
+    "weight": "150",
+    "main_type": "Interference",
+    "st_type": "Heavy",
+    "icon": "Icon_backpack_60300101",
+    "how_get": "无",
+    "related_description": "Unceasingly emits EM waves to suppressively interfere with projectiles and disrupt electronic equipment, thus weakening the power of tactical weapons. It can also affect the Dodge of enemy STs.",
+    "skill": {
+      "id": "61176",
+      "name": "TacW DMG Reduction II · Dodge",
+      "icon": "Icon_skill_passive_2007",
+      "effect": "When attacked by a Tactical Weapon, DMG Taken <color=#F74848>-25%</color>.\nIn combat, the enemy's Dodge Rate <color=#F74848>-10%</color>.\nST's Body HP <color=#F74848>+10%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60300104",
+        "qty": 1
+      },
+      {
+        "item": "60500304",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60301205": {
+    "name": "Signal Jammer - Hit",
+    "quality": "UR",
+    "weight": "150",
+    "main_type": "Interference",
+    "st_type": "Heavy",
+    "icon": "Icon_backpack_60300101",
+    "how_get": "无",
+    "related_description": "Unceasingly emits EM waves to suppressively interfere with projectiles and disrupt electronic equipment, thus weakening the power of tactical weapons. It can also affect the Hit of enemy STs.",
+    "skill": {
+      "id": "61175",
+      "name": "TacW DMG Reduction II · Hit",
+      "icon": "Icon_skill_passive_2007",
+      "effect": "When attacked by a Tactical Weapon, DMG Taken <color=#F74848>-25%</color>.\nIn combat, the enemy's Hit Rate <color=#F74848>-10%</color>.\nST's Body HP <color=#F74848>+10%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60300104",
+        "qty": 1
+      },
+      {
+        "item": "60500204",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "61002605": {
+    "name": "Stealth Amplifier - Ballistics",
+    "quality": "UR",
+    "weight": "150",
+    "main_type": "Invisible",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60900101",
+    "how_get": "无",
+    "related_description": "This advanced optics system can distort light, allowing ST fitted with this backpack model to become somewhat invisible. It can also enhance the ST's destructive power at Ideal Range.",
+    "skill": {
+      "id": "61222",
+      "name": "Stealth Device I - Ballistics",
+      "icon": "Icon_skill_passive_5149",
+      "effect": "At the end of the action, if there are no enemies within the adjacent (<color=#F74848>2</color> tiles) area, gain <buf ID=3004502>[Stealth I]</buf> with a trigger interval of <color=#F74848>3</color> turns.\nWhen engaging in combat with a target at Ideal Range, gain DMG <color=#F74848>+10%</color> and Crit Rate <color=#F74848>+5%</color>.\nST Body's HP <color=#F74848>+10%</color>, DMG Dealt <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "61000104",
+        "qty": 1
+      },
+      {
+        "item": "60600604",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "61002405": {
+    "name": "Stealth Amplifier - First Strike",
+    "quality": "UR",
+    "weight": "150",
+    "main_type": "Invisible",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60900101",
+    "how_get": "无",
+    "related_description": "This advanced optics system can distort light, allowing ST fitted with this backpack model to become somewhat invisible. It can also enhance the capability of an ST's first attack per turn.",
+    "skill": {
+      "id": "61221",
+      "name": "Stealth Device I - First Strike",
+      "icon": "Icon_skill_passive_5149",
+      "effect": "At the end of the action, if there are no enemies within the adjacent (<color=#F74848>2</color> tiles) area, gain <buf ID=3004502>[Stealth I]</buf> with a trigger interval of <color=#F74848>3</color> turns.\nOn the <color=#F74848>1st</color> active attack per turn, DMG <color=#F74848>+7.5%</color> and Crit Rate <color=#F74848>+5%</color>.\nST Body's HP <color=#F74848>+10%</color>, DMG Dealt <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "61000104",
+        "qty": 1
+      },
+      {
+        "item": "60600404",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "61002205": {
+    "name": "Stealth Amplifier - Flurry Strike",
+    "quality": "UR",
+    "weight": "150",
+    "main_type": "Invisible",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60900101",
+    "how_get": "无",
+    "related_description": "This advanced optics system can distort light, allowing ST fitted with this backpack model to become somewhat invisible. It can also enhance an ST's Flurry Strike and Gusty Strike.",
+    "skill": {
+      "id": "61223",
+      "name": "Stealth Device I - Flurry Strike",
+      "icon": "Icon_skill_passive_5149",
+      "effect": "At the end of the action, if there are no enemies within the adjacent (<color=#F74848>2</color> tiles) area, gain <buf ID=3004502>[Stealth I]</buf> with a trigger interval of <color=#F74848>3</color> turns.\nWhen launching Flurry Strike or Gusty Strike, Hit Rate <color=#F74848>+15%</color> and Crit Rate <color=#F74848>+10%</color>.\nST Body's HP <color=#F74848>+10%</color>, DMG Dealt <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "61000104",
+        "qty": 1
+      },
+      {
+        "item": "60600204",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "61002705": {
+    "name": "Stealth Amplifier - Link",
+    "quality": "UR",
+    "weight": "150",
+    "main_type": "Invisible",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60900101",
+    "how_get": "无",
+    "related_description": "This advanced optics system can distort light, allowing ST fitted with this backpack model to become somewhat invisible. It can also enhance an ST's Link Attack.",
+    "skill": {
+      "id": "61224",
+      "name": "Stealth Device I - Link",
+      "icon": "Icon_skill_passive_5149",
+      "effect": "At the end of the action, if there are no enemies within the adjacent (<color=#F74848>2</color> tiles) area, gain <buf ID=3004502>[Stealth I]</buf> with a trigger interval of <color=#F74848>3</color> turns.\nWhen launching Link Attack, DMG <color=#F74848>+15%</color> and Crit Rate <color=#F74848>+10%</color>.\nST Body's HP <color=#F74848>+10%</color>, DMG Dealt <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "61000104",
+        "qty": 1
+      },
+      {
+        "item": "60600704",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "61002105": {
+    "name": "Stealth Amplifier - Re-ATK",
+    "quality": "UR",
+    "weight": "150",
+    "main_type": "Invisible",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60900101",
+    "how_get": "无",
+    "related_description": "This advanced optics system can distort light, allowing ST fitted with this backpack model to become somewhat invisible. It can also enhance an ST's Re-ATK.",
+    "skill": {
+      "id": "61220",
+      "name": "Stealth Device I - Re-ATK",
+      "icon": "Icon_skill_passive_5149",
+      "effect": "At the end of the action, if there are no enemies within the adjacent (<color=#F74848>2</color> tiles) area, gain <buf ID=3004502>[Stealth I]</buf> with a trigger interval of <color=#F74848>3</color> turns.\nAfter triggering [Re-ATK], Hit Rate <color=#F74848>+10%</color>, Crit Rate <color=#F74848>+5%</color>.\nST Body's HP <color=#F74848>+10%</color>, DMG Dealt <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "61000104",
+        "qty": 1
+      },
+      {
+        "item": "60600104",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "61002505": {
+    "name": "Stealth Amplifier - Retaliation",
+    "quality": "UR",
+    "weight": "150",
+    "main_type": "Invisible",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60900101",
+    "how_get": "无",
+    "related_description": "This advanced optics system can distort light, allowing ST fitted with this backpack model to become somewhat invisible. It can also enhance an ST's Retaliation.",
+    "skill": {
+      "id": "61246",
+      "name": "Stealth Device I - Retaliation",
+      "icon": "Icon_skill_passive_5149",
+      "effect": "At the end of the action, if there are no enemies within the adjacent (<color=#F74848>2</color> tiles) area, gain <buf ID=3004502>[Stealth I]</buf> with a trigger interval of <color=#F74848>3</color> turns.\nWhen Retaliating, Hit Rate <color=#F74848>+15%</color> and Crit Rate <color=#F74848>+10%</color>.\nST Body's HP <color=#F74848>+10%</color>, DMG Dealt <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "61000104",
+        "qty": 1
+      },
+      {
+        "item": "60600504",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "61002305": {
+    "name": "Stealth Amplifier - Vigilant",
+    "quality": "UR",
+    "weight": "150",
+    "main_type": "Invisible",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60900101",
+    "how_get": "无",
+    "related_description": "This advanced optics system can distort light, allowing ST fitted with this backpack model to become somewhat invisible. It can also enhance an ST's Vigilant Shot.",
+    "skill": {
+      "id": "61245",
+      "name": "Stealth Device I - Vigilant",
+      "icon": "Icon_skill_passive_5149",
+      "effect": "At the end of the action, if there are no enemies within the adjacent (<color=#F74848>2</color> tiles) area, gain <buf ID=3004502>[Stealth I]</buf> with a trigger interval of <color=#F74848>3</color> turns.\nWhen launching Vigilant Shot, Hit Rate <color=#F74848>+15%</color> and Crit Rate <color=#F74848>+10%</color>.\nST Body's HP <color=#F74848>+10%</color>, DMG Dealt <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "61000104",
+        "qty": 1
+      },
+      {
+        "item": "60600304",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "61001105": {
+    "name": "Stealth Jammer - ATK",
+    "quality": "UR",
+    "weight": "150",
+    "main_type": "Invisible",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60900101",
+    "how_get": "无",
+    "related_description": "This advanced optics system can distort light, allowing ST fitted with this backpack model to become somewhat invisible. It can also affect the ATK of enemy STs.",
+    "skill": {
+      "id": "61249",
+      "name": "Stealth Device I - ATK",
+      "icon": "Icon_skill_passive_5149",
+      "effect": "At the end of the action, if there are no enemies within the adjacent (<color=#F74848>2</color> tiles) area, gain <buf ID=3004502>[Stealth I]</buf> with a trigger interval of <color=#F74848>3</color> turns.\nIn combat, the enemy's DMG <color=#F74848>-10%</color>.\nST Body's HP <color=#F74848>+10%</color>, DMG Dealt <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "61000104",
+        "qty": 1
+      },
+      {
+        "item": "60500104",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "61001605": {
+    "name": "Stealth Jammer - Armor",
+    "quality": "UR",
+    "weight": "150",
+    "main_type": "Invisible",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60900101",
+    "how_get": "无",
+    "related_description": "This advanced optics system can distort light, allowing ST fitted with this backpack model to become somewhat invisible. It can also affect the Armor of enemy STs.",
+    "skill": {
+      "id": "61227",
+      "name": "Stealth Device I - Armor",
+      "icon": "Icon_skill_passive_5149",
+      "effect": "At the end of the action, if there are no enemies within the adjacent (<color=#F74848>2</color> tiles) area, gain <buf ID=3004502>[Stealth I]</buf> with a trigger interval of <color=#F74848>3</color> turns.\nIn combat, the enemy's Armor <color=#F74848>-50%</color>.\nST Body's HP <color=#F74848>+10%</color>, DMG Dealt <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "61000104",
+        "qty": 1
+      },
+      {
+        "item": "60500604",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "61001405": {
+    "name": "Stealth Jammer - Crit",
+    "quality": "UR",
+    "weight": "150",
+    "main_type": "Invisible",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60900101",
+    "how_get": "无",
+    "related_description": "This advanced optics system can distort light, allowing ST fitted with this backpack model to become somewhat invisible. It can also affect the Crit of enemy STs.",
+    "skill": {
+      "id": "61247",
+      "name": "Stealth Device I - Crit",
+      "icon": "Icon_skill_passive_5149",
+      "effect": "At the end of the action, if there are no enemies within the adjacent (<color=#F74848>2</color> tiles) area, gain <buf ID=3004502>[Stealth I]</buf> with a trigger interval of <color=#F74848>3</color> turns.\nIn combat, the enemy's Crit Rate <color=#F74848>-10%</color>.\nST Body's HP <color=#F74848>+10%</color>, DMG Dealt <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "61000104",
+        "qty": 1
+      },
+      {
+        "item": "60500404",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "61001505": {
+    "name": "Stealth Jammer - Crit DMG",
+    "quality": "UR",
+    "weight": "150",
+    "main_type": "Invisible",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60900101",
+    "how_get": "无",
+    "related_description": "This advanced optics system can distort light, allowing ST fitted with this backpack model to become somewhat invisible. It can also affect the Crit DMG of enemy STs.",
+    "skill": {
+      "id": "61248",
+      "name": "Stealth Device I - Crit DMG",
+      "icon": "Icon_skill_passive_5149",
+      "effect": "At the end of the action, if there are no enemies within the adjacent (<color=#F74848>2</color> tiles) area, gain <buf ID=3004502>[Stealth I]</buf> with a trigger interval of <color=#F74848>3</color> turns.\nIn combat, the enemy's Crit DMG <color=#F74848>-10%</color>.\nST Body's HP <color=#F74848>+10%</color>, DMG Dealt <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "61000104",
+        "qty": 1
+      },
+      {
+        "item": "60500504",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "61001705": {
+    "name": "Stealth Jammer - DMG UP",
+    "quality": "UR",
+    "weight": "150",
+    "main_type": "Invisible",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60900101",
+    "how_get": "无",
+    "related_description": "This advanced optics system can distort light, allowing ST fitted with this backpack model to become somewhat invisible. It can also inflict a DMG Taken UP effect on the enemy.",
+    "skill": {
+      "id": "61228",
+      "name": "Stealth Device I - DMG UP",
+      "icon": "Icon_skill_passive_5149",
+      "effect": "At the end of the action, if there are no enemies within the adjacent (<color=#F74848>2</color> tiles) area, gain <buf ID=3004502>[Stealth I]</buf> with a trigger interval of <color=#F74848>3</color> turns.\nIn combat, the enemy's DMG Taken <color=#F74848>+10%</color>.\nST Body's HP <color=#F74848>+10%</color>, DMG Dealt <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "61000104",
+        "qty": 1
+      },
+      {
+        "item": "60500704",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "61001305": {
+    "name": "Stealth Jammer - Dodge",
+    "quality": "UR",
+    "weight": "150",
+    "main_type": "Invisible",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60900101",
+    "how_get": "无",
+    "related_description": "This advanced optics system can distort light, allowing ST fitted with this backpack model to become somewhat invisible. It can also affect the Dodge of enemy STs.",
+    "skill": {
+      "id": "61226",
+      "name": "Stealth Device I - Dodge",
+      "icon": "Icon_skill_passive_5149",
+      "effect": "At the end of the action, if there are no enemies within the adjacent (<color=#F74848>2</color> tiles) area, gain <buf ID=3004502>[Stealth I]</buf> with a trigger interval of <color=#F74848>3</color> turns.\nIn combat, the enemy's Dodge Rate <color=#F74848>-10%</color>.\nST Body's HP <color=#F74848>+10%</color>, DMG Dealt <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "61000104",
+        "qty": 1
+      },
+      {
+        "item": "60500304",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "61001205": {
+    "name": "Stealth Jammer - Hit",
+    "quality": "UR",
+    "weight": "150",
+    "main_type": "Invisible",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60900101",
+    "how_get": "无",
+    "related_description": "This advanced optics system can distort light, allowing ST fitted with this backpack model to become somewhat invisible. It can also affect the Hit of enemy STs.",
+    "skill": {
+      "id": "61225",
+      "name": "Stealth Device I - Hit",
+      "icon": "Icon_skill_passive_5149",
+      "effect": "At the end of the action, if there are no enemies within the adjacent (<color=#F74848>2</color> tiles) area, gain <buf ID=3004502>[Stealth I]</buf> with a trigger interval of <color=#F74848>3</color> turns.\nIn combat, the enemy's Hit Rate <color=#F74848>-10%</color>.\nST Body's HP <color=#F74848>+10%</color>, DMG Dealt <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "61000104",
+        "qty": 1
+      },
+      {
+        "item": "60500204",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60202605": {
+    "name": "Move Amplifier - Ballistics",
+    "quality": "UR",
+    "weight": "150",
+    "main_type": "MovePointAdd",
+    "st_type": "Light",
+    "icon": "Icon_BackPack_60500101",
+    "how_get": "无",
+    "related_description": "Channels extra energy directly into the leg actuator to improve the ST's mobility, whether using pulleys or walking. It can also enhance the ST's destructive power at Ideal Range.",
+    "skill": {
+      "id": "61202",
+      "name": "Movement Enhancement I - Ballistics",
+      "icon": "Icon_skill_passive_5123",
+      "effect": "ST Movement <color=#F74848>+1</color>.\nWhen engaging in combat with a target at Ideal Range, gain DMG <color=#F74848>+10%</color> and Crit Rate <color=#F74848>+5%</color>.\nST Body's HP <color=#F74848>+10%</color>, DMG Dealt <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60200104",
+        "qty": 1
+      },
+      {
+        "item": "60600604",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60202405": {
+    "name": "Move Amplifier - First Strike",
+    "quality": "UR",
+    "weight": "150",
+    "main_type": "MovePointAdd",
+    "st_type": "Light",
+    "icon": "Icon_BackPack_60500101",
+    "how_get": "无",
+    "related_description": "Channels extra energy directly into the leg actuator to improve the ST's mobility, whether using pulleys or walking. It can also enhance the capability of an ST's first attack per turn.",
+    "skill": {
+      "id": "61201",
+      "name": "Movement Enhancement I - First Strike",
+      "icon": "Icon_skill_passive_5123",
+      "effect": "ST Movement <color=#F74848>+1</color>.\nOn the <color=#F74848>1st</color> active attack per turn, DMG <color=#F74848>+7.5%</color> and Crit Rate <color=#F74848>+5%</color>.\nST Body's HP <color=#F74848>+10%</color>, DMG Dealt <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60200104",
+        "qty": 1
+      },
+      {
+        "item": "60600404",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60202205": {
+    "name": "Move Amplifier - Flurry Strike",
+    "quality": "UR",
+    "weight": "150",
+    "main_type": "MovePointAdd",
+    "st_type": "Light",
+    "icon": "Icon_BackPack_60500101",
+    "how_get": "无",
+    "related_description": "Channels extra energy directly into the leg actuator to improve the ST's mobility, whether using pulleys or walking. It can also enhance an ST's Flurry Strike and Gusty Strike.",
+    "skill": {
+      "id": "61203",
+      "name": "Movement Enhancement I - Flurry Strike",
+      "icon": "Icon_skill_passive_5123",
+      "effect": "ST Movement <color=#F74848>+1</color>.\nWhen launching Flurry Strike or Gusty Strike, Hit Rate <color=#F74848>+15%</color> and Crit Rate <color=#F74848>+10%</color>.\nST Body's HP <color=#F74848>+10%</color>, DMG Dealt <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60200104",
+        "qty": 1
+      },
+      {
+        "item": "60600204",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60202805": {
+    "name": "Move Amplifier - Guard",
+    "quality": "UR",
+    "weight": "150",
+    "main_type": "MovePointAdd",
+    "st_type": "Light",
+    "icon": "Icon_BackPack_60500101",
+    "how_get": "无",
+    "related_description": "Channels extra energy directly into the leg actuator to improve the ST's mobility, whether using pulleys or walking. It can also enhance an ST's Guard.",
+    "skill": {
+      "id": "61235",
+      "name": "Movement Enhancement I - Guard",
+      "icon": "Icon_skill_passive_5123",
+      "effect": "ST Movement <color=#F74848>+1</color>.\nWhen performing Guard, Crit RES <color=#F74848>+15%</color> and Crit DMG RES <color=#F74848>+10%</color>.\nST Body's HP <color=#F74848>+10%</color>, DMG Dealt <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60200104",
+        "qty": 1
+      },
+      {
+        "item": "60600804",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60202705": {
+    "name": "Move Amplifier - Link",
+    "quality": "UR",
+    "weight": "150",
+    "main_type": "MovePointAdd",
+    "st_type": "Light",
+    "icon": "Icon_BackPack_60500101",
+    "how_get": "无",
+    "related_description": "Channels extra energy directly into the leg actuator to improve the ST's mobility, whether using pulleys or walking. It can also enhance an ST's Link Attack.",
+    "skill": {
+      "id": "61204",
+      "name": "Movement Enhancement I - Link",
+      "icon": "Icon_skill_passive_5123",
+      "effect": "ST Movement <color=#F74848>+1</color>.\nWhen launching Link Attack, DMG <color=#F74848>+15%</color> and Crit Rate <color=#F74848>+10%</color>.\nST Body's HP <color=#F74848>+10%</color>, DMG Dealt <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60200104",
+        "qty": 1
+      },
+      {
+        "item": "60600704",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60202105": {
+    "name": "Move Amplifier - Re-ATK",
+    "quality": "UR",
+    "weight": "150",
+    "main_type": "MovePointAdd",
+    "st_type": "Light",
+    "icon": "Icon_BackPack_60500101",
+    "how_get": "无",
+    "related_description": "Channels extra energy directly into the leg actuator to improve the ST's mobility, whether using pulleys or walking. It can also enhance an ST's Re-ATK.",
+    "skill": {
+      "id": "61200",
+      "name": "Movement Enhancement I - Re-ATK",
+      "icon": "Icon_skill_passive_5123",
+      "effect": "ST Movement <color=#F74848>+1</color>.\nAfter triggering [Re-ATK], Hit Rate <color=#F74848>+10%</color>, Crit Rate <color=#F74848>+5%</color>.\nST Body's HP <color=#F74848>+10%</color>, DMG Dealt <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60200104",
+        "qty": 1
+      },
+      {
+        "item": "60600104",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60202505": {
+    "name": "Move Amplifier - Retaliation",
+    "quality": "UR",
+    "weight": "150",
+    "main_type": "MovePointAdd",
+    "st_type": "Light",
+    "icon": "Icon_BackPack_60500101",
+    "how_get": "无",
+    "related_description": "Channels extra energy directly into the leg actuator to improve the ST's mobility, whether using pulleys or walking. It can also enhance an ST's Retaliation.",
+    "skill": {
+      "id": "61229",
+      "name": "Movement Enhancement I - Retaliation",
+      "icon": "Icon_skill_passive_5123",
+      "effect": "ST Movement <color=#F74848>+1</color>.\nWhen Retaliating, Hit Rate <color=#F74848>+15%</color> and Crit Rate <color=#F74848>+10%</color>.\nST Body's HP <color=#F74848>+10%</color>, DMG Dealt <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60200104",
+        "qty": 1
+      },
+      {
+        "item": "60600504",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60202305": {
+    "name": "Move Amplifier - Vigilant",
+    "quality": "UR",
+    "weight": "150",
+    "main_type": "MovePointAdd",
+    "st_type": "Light",
+    "icon": "Icon_BackPack_60500101",
+    "how_get": "无",
+    "related_description": "Channels extra energy directly into the leg actuator to improve the ST's mobility, whether using pulleys or walking. It can also enhance an ST's Vigilant Shot.",
+    "skill": {
+      "id": "61219",
+      "name": "Movement Enhancement I - Vigilant",
+      "icon": "Icon_skill_passive_5123",
+      "effect": "ST Movement <color=#F74848>+1</color>.\nWhen launching Vigilant Shot, Hit Rate <color=#F74848>+15%</color> and Crit Rate <color=#F74848>+10%</color>.\nST Body's HP <color=#F74848>+10%</color>, DMG Dealt <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60200104",
+        "qty": 1
+      },
+      {
+        "item": "60600304",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60201105": {
+    "name": "Move Jammer - ATK",
+    "quality": "UR",
+    "weight": "150",
+    "main_type": "MovePointAdd",
+    "st_type": "Light",
+    "icon": "Icon_BackPack_60500101",
+    "how_get": "无",
+    "related_description": "Channels extra energy directly into the leg actuator to improve the ST's mobility, whether using pulleys or walking. It can also affect the ATK of enemy STs.",
+    "skill": {
+      "id": "61238",
+      "name": "Movement Enhancement I - ATK",
+      "icon": "Icon_skill_passive_5123",
+      "effect": "ST Movement <color=#F74848>+1</color>.\nIn combat, the enemy's DMG <color=#F74848>-10%</color>.\nST Body's HP <color=#F74848>+10%</color>, DMG Dealt <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60200104",
+        "qty": 1
+      },
+      {
+        "item": "60500104",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60201605": {
+    "name": "Move Jammer - Armor",
+    "quality": "UR",
+    "weight": "150",
+    "main_type": "MovePointAdd",
+    "st_type": "Light",
+    "icon": "Icon_BackPack_60500101",
+    "how_get": "无",
+    "related_description": "Channels extra energy directly into the leg actuator to improve the ST's mobility, whether using pulleys or walking. It can also affect the Armor of enemy STs.",
+    "skill": {
+      "id": "61207",
+      "name": "Movement Enhancement I - Armor",
+      "icon": "Icon_skill_passive_5123",
+      "effect": "ST Movement <color=#F74848>+1</color>.\nIn combat, the enemy's Armor <color=#F74848>-50%</color>.\nST Body's HP <color=#F74848>+10%</color>, DMG Dealt <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60200104",
+        "qty": 1
+      },
+      {
+        "item": "60500604",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60201405": {
+    "name": "Move Jammer - Crit",
+    "quality": "UR",
+    "weight": "150",
+    "main_type": "MovePointAdd",
+    "st_type": "Light",
+    "icon": "Icon_BackPack_60500101",
+    "how_get": "无",
+    "related_description": "Channels extra energy directly into the leg actuator to improve the ST's mobility, whether using pulleys or walking. It can also affect the Crit of enemy STs.",
+    "skill": {
+      "id": "61236",
+      "name": "Movement Enhancement I - Crit",
+      "icon": "Icon_skill_passive_5123",
+      "effect": "ST Movement <color=#F74848>+1</color>.\nIn combat, the enemy's Crit Rate <color=#F74848>-10%</color>.\nST Body's HP <color=#F74848>+10%</color>, DMG Dealt <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60200104",
+        "qty": 1
+      },
+      {
+        "item": "60500404",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60201505": {
+    "name": "Move Jammer - Crit DMG",
+    "quality": "UR",
+    "weight": "150",
+    "main_type": "MovePointAdd",
+    "st_type": "Light",
+    "icon": "Icon_BackPack_60500101",
+    "how_get": "无",
+    "related_description": "Channels extra energy directly into the leg actuator to improve the ST's mobility, whether using pulleys or walking. It can also affect the Crit DMG of enemy STs.",
+    "skill": {
+      "id": "61237",
+      "name": "Movement Enhancement I - Crit DMG",
+      "icon": "Icon_skill_passive_5123",
+      "effect": "ST Movement <color=#F74848>+1</color>.\nIn combat, the enemy's Crit DMG <color=#F74848>-10%</color>.\nST Body's HP <color=#F74848>+10%</color>, DMG Dealt <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60200104",
+        "qty": 1
+      },
+      {
+        "item": "60500504",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60201705": {
+    "name": "Move Jammer - DMG UP",
+    "quality": "UR",
+    "weight": "150",
+    "main_type": "MovePointAdd",
+    "st_type": "Light",
+    "icon": "Icon_BackPack_60500101",
+    "how_get": "无",
+    "related_description": "Channels extra energy directly into the leg actuator to improve the ST's mobility, whether using pulleys or walking. It can also inflict a DMG Taken UP effect on the enemy.",
+    "skill": {
+      "id": "61208",
+      "name": "Movement Enhancement I - DMG UP",
+      "icon": "Icon_skill_passive_5123",
+      "effect": "ST Movement <color=#F74848>+1</color>.\nIn combat, the enemy's DMG Taken <color=#F74848>+10%</color>.\nST Body's HP <color=#F74848>+10%</color>, DMG Dealt <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60200104",
+        "qty": 1
+      },
+      {
+        "item": "60500704",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60201305": {
+    "name": "Move Jammer - Dodge",
+    "quality": "UR",
+    "weight": "150",
+    "main_type": "MovePointAdd",
+    "st_type": "Light",
+    "icon": "Icon_BackPack_60500101",
+    "how_get": "无",
+    "related_description": "Channels extra energy directly into the leg actuator to improve the ST's mobility, whether using pulleys or walking. It can also affect the Dodge of enemy STs.",
+    "skill": {
+      "id": "61206",
+      "name": "Movement Enhancement I - Dodge",
+      "icon": "Icon_skill_passive_5123",
+      "effect": "ST Movement <color=#F74848>+1</color>.\nIn combat, the enemy's Dodge Rate <color=#F74848>-10%</color>.\nST Body's HP <color=#F74848>+10%</color>, DMG Dealt <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60200104",
+        "qty": 1
+      },
+      {
+        "item": "60500304",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60201205": {
+    "name": "Move Jammer - Hit",
+    "quality": "UR",
+    "weight": "150",
+    "main_type": "MovePointAdd",
+    "st_type": "Light",
+    "icon": "Icon_BackPack_60500101",
+    "how_get": "无",
+    "related_description": "Channels extra energy directly into the leg actuator to improve the ST's mobility, whether using pulleys or walking. It can also affect the Hit of enemy STs.",
+    "skill": {
+      "id": "61205",
+      "name": "Movement Enhancement I - Hit",
+      "icon": "Icon_skill_passive_5123",
+      "effect": "ST Movement <color=#F74848>+1</color>.\nIn combat, the enemy's Hit Rate <color=#F74848>-10%</color>.\nST Body's HP <color=#F74848>+10%</color>, DMG Dealt <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60200104",
+        "qty": 1
+      },
+      {
+        "item": "60500204",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60102605": {
+    "name": "Power Amplifier - Ballistics",
+    "quality": "UR",
+    "weight": "150",
+    "main_type": "PowerAdd",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60100101",
+    "how_get": "无",
+    "related_description": "A miniaturized power supply unit that can be attached to an ST to raise its load limit. It can also enhance the ST's destructive power at Ideal Range.",
+    "skill": {
+      "id": "61002",
+      "name": "Power Boost III · Ballistics",
+      "icon": "Icon_skill_passive_5148",
+      "effect": "ST gains an extra <color=#F74848>300</color> Power.\nWhen engaging in combat with a target at Ideal Range, gain DMG <color=#F74848>+10%</color> and Crit Rate <color=#F74848>+5%</color>.\nST Body's HP <color=#F74848>+10%</color>, DMG Dealt <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60100104",
+        "qty": 1
+      },
+      {
+        "item": "60600604",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60102405": {
+    "name": "Power Amplifier - First Strike",
+    "quality": "UR",
+    "weight": "150",
+    "main_type": "PowerAdd",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60100101",
+    "how_get": "无",
+    "related_description": "A miniaturized power supply unit that can be attached to an ST to raise its load limit. It can also enhance the capability of an ST's first attack per turn.",
+    "skill": {
+      "id": "61001",
+      "name": "Power Boost III · First Strike",
+      "icon": "Icon_skill_passive_5148",
+      "effect": "ST gains an extra <color=#F74848>300</color> Power.\nOn the <color=#F74848>1st</color> active attack per turn, DMG <color=#F74848>+7.5%</color> and Crit Rate <color=#F74848>+5%</color>.\nST Body's HP <color=#F74848>+10%</color>, DMG Dealt <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60100104",
+        "qty": 1
+      },
+      {
+        "item": "60600404",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60102205": {
+    "name": "Power Amplifier - Flurry Strike",
+    "quality": "UR",
+    "weight": "150",
+    "main_type": "PowerAdd",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60100101",
+    "how_get": "无",
+    "related_description": "A miniaturized power supply unit that can be attached to an ST to raise its load limit. It can also enhance an ST's Flurry Strike and Gusty Strike.",
+    "skill": {
+      "id": "61003",
+      "name": "Power Boost III · Flurry Strike",
+      "icon": "Icon_skill_passive_5148",
+      "effect": "ST gains an extra <color=#F74848>300</color> Power.\nWhen launching Flurry Strike or Gusty Strike, Hit Rate <color=#F74848>+15%</color> and Crit Rate <color=#F74848>+10%</color>.\nST Body's HP <color=#F74848>+10%</color>, DMG Dealt <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60100104",
+        "qty": 1
+      },
+      {
+        "item": "60600204",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60102805": {
+    "name": "Power Amplifier - Guard",
+    "quality": "UR",
+    "weight": "150",
+    "main_type": "PowerAdd",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60100101",
+    "how_get": "无",
+    "related_description": "A miniaturized power supply unit that can be attached to an ST to raise its load limit. It can also enhance an ST's Guard.",
+    "skill": {
+      "id": "61011",
+      "name": "Power Boost III · Guard",
+      "icon": "Icon_skill_passive_5148",
+      "effect": "ST gains an extra <color=#F74848>300</color> Power.\nWhen performing Guard, Crit RES <color=#F74848>+15%</color> and Crit DMG RES <color=#F74848>+10%</color>.\nST Body's HP <color=#F74848>+10%</color>, DMG Dealt <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60100104",
+        "qty": 1
+      },
+      {
+        "item": "60600804",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60102705": {
+    "name": "Power Amplifier - Link",
+    "quality": "UR",
+    "weight": "150",
+    "main_type": "PowerAdd",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60100101",
+    "how_get": "无",
+    "related_description": "A miniaturized power supply unit that can be attached to an ST to raise its load limit. It can also enhance an ST's Link Attack.",
+    "skill": {
+      "id": "61004",
+      "name": "Power Boost III · Link",
+      "icon": "Icon_skill_passive_5148",
+      "effect": "ST gains an extra <color=#F74848>300</color> Power.\nWhen launching Link Attack, DMG <color=#F74848>+15%</color> and Crit Rate <color=#F74848>+10%</color>.\nST Body's HP <color=#F74848>+10%</color>, DMG Dealt <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60100104",
+        "qty": 1
+      },
+      {
+        "item": "60600704",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60102105": {
+    "name": "Power Amplifier - Re-ATK",
+    "quality": "UR",
+    "weight": "150",
+    "main_type": "PowerAdd",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60100101",
+    "how_get": "无",
+    "related_description": "A miniaturized power supply unit that can be attached to an ST to raise its load limit. It can also enhance an ST's Re-ATK.",
+    "skill": {
+      "id": "61000",
+      "name": "Power Boost III · Re-ATK",
+      "icon": "Icon_skill_passive_5148",
+      "effect": "ST gains an extra <color=#F74848>300</color> Power.\nAfter triggering [Re-ATK], Hit Rate <color=#F74848>+10%</color>, Crit Rate <color=#F74848>+5%</color>.\nST Body's HP <color=#F74848>+10%</color>, DMG Dealt <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60100104",
+        "qty": 1
+      },
+      {
+        "item": "60600104",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60102505": {
+    "name": "Power Amplifier - Retaliation",
+    "quality": "UR",
+    "weight": "150",
+    "main_type": "PowerAdd",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60100101",
+    "how_get": "无",
+    "related_description": "A miniaturized power supply unit that can be attached to an ST to raise its load limit. It can also enhance an ST's Retaliation.",
+    "skill": {
+      "id": "61010",
+      "name": "Power Boost III · Retaliation",
+      "icon": "Icon_skill_passive_5148",
+      "effect": "ST gains an extra <color=#F74848>300</color> Power.\nWhen Retaliating, Hit Rate <color=#F74848>+15%</color> and Crit Rate <color=#F74848>+10%</color>.\nST Body's HP <color=#F74848>+10%</color>, DMG Dealt <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60100104",
+        "qty": 1
+      },
+      {
+        "item": "60600504",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60102305": {
+    "name": "Power Amplifier - Vigilant",
+    "quality": "UR",
+    "weight": "150",
+    "main_type": "PowerAdd",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60100101",
+    "how_get": "无",
+    "related_description": "A miniaturized power supply unit that can be attached to an ST to raise its load limit. It can also enhance an ST's Vigilant Shot.",
+    "skill": {
+      "id": "61009",
+      "name": "Power Boost III · Vigilant",
+      "icon": "Icon_skill_passive_5148",
+      "effect": "ST gains an extra <color=#F74848>300</color> Power.\nWhen launching Vigilant Shot, Hit Rate <color=#F74848>+15%</color> and Crit Rate <color=#F74848>+10%</color>.\nST Body's HP <color=#F74848>+10%</color>, DMG Dealt <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60100104",
+        "qty": 1
+      },
+      {
+        "item": "60600304",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60101105": {
+    "name": "Power Jammer - ATK",
+    "quality": "UR",
+    "weight": "150",
+    "main_type": "PowerAdd",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60100101",
+    "how_get": "无",
+    "related_description": "A miniaturized power supply unit that can be attached to an ST to raise its load limit. It can also affect the ATK of enemy STs.",
+    "skill": {
+      "id": "61014",
+      "name": "Power Boost III · ATK",
+      "icon": "Icon_skill_passive_5148",
+      "effect": "ST gains an extra <color=#F74848>300</color> Power.\nIn combat, the enemy's DMG <color=#F74848>-10%</color>.\nST Body's HP <color=#F74848>+10%</color>, DMG Dealt <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60100104",
+        "qty": 1
+      },
+      {
+        "item": "60500104",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60101605": {
+    "name": "Power Jammer - Armor",
+    "quality": "UR",
+    "weight": "150",
+    "main_type": "PowerAdd",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60100101",
+    "how_get": "无",
+    "related_description": "A miniaturized power supply unit that can be attached to an ST to raise its load limit. It can also affect the Armor of enemy STs.",
+    "skill": {
+      "id": "61007",
+      "name": "Power Boost III · Armor",
+      "icon": "Icon_skill_passive_5148",
+      "effect": "ST gains an extra <color=#F74848>300</color> Power.\nIn combat, the enemy's Armor <color=#F74848>-50%</color>.\nST Body's HP <color=#F74848>+10%</color>, DMG Dealt <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60100104",
+        "qty": 1
+      },
+      {
+        "item": "60500604",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60101405": {
+    "name": "Power Jammer - Crit",
+    "quality": "UR",
+    "weight": "150",
+    "main_type": "PowerAdd",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60100101",
+    "how_get": "无",
+    "related_description": "A miniaturized power supply unit that can be attached to an ST to raise its load limit. It can also affect the Crit of enemy STs.",
+    "skill": {
+      "id": "61012",
+      "name": "Power Boost III · Crit",
+      "icon": "Icon_skill_passive_5148",
+      "effect": "ST gains an extra <color=#F74848>300</color> Power.\nIn combat, the enemy's Crit Rate <color=#F74848>-10%</color>.\nST Body's HP <color=#F74848>+10%</color>, DMG Dealt <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60100104",
+        "qty": 1
+      },
+      {
+        "item": "60500404",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60101505": {
+    "name": "Power Jammer - Crit DMG",
+    "quality": "UR",
+    "weight": "150",
+    "main_type": "PowerAdd",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60100101",
+    "how_get": "无",
+    "related_description": "A miniaturized power supply unit that can be attached to an ST to raise its load limit. It can also affect the Crit DMG of enemy STs.",
+    "skill": {
+      "id": "61013",
+      "name": "Power Boost III · Crit DMG",
+      "icon": "Icon_skill_passive_5148",
+      "effect": "ST gains an extra <color=#F74848>300</color> Power.\nIn combat, the enemy's Crit DMG <color=#F74848>-10%</color>.\nST Body's HP <color=#F74848>+10%</color>, DMG Dealt <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60100104",
+        "qty": 1
+      },
+      {
+        "item": "60500504",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60101705": {
+    "name": "Power Jammer - DMG UP",
+    "quality": "UR",
+    "weight": "150",
+    "main_type": "PowerAdd",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60100101",
+    "how_get": "无",
+    "related_description": "A miniaturized power supply unit that can be attached to an ST to raise its load limit. It can also inflict a DMG Taken UP effect on the enemy.",
+    "skill": {
+      "id": "61008",
+      "name": "Power Boost III · DMG UP",
+      "icon": "Icon_skill_passive_5148",
+      "effect": "ST gains an extra <color=#F74848>300</color> Power.\nIn combat, the enemy's DMG Taken <color=#F74848>+10%</color>.\nST Body's HP <color=#F74848>+10%</color>, DMG Dealt <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60100104",
+        "qty": 1
+      },
+      {
+        "item": "60500704",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60101305": {
+    "name": "Power Jammer - Dodge",
+    "quality": "UR",
+    "weight": "150",
+    "main_type": "PowerAdd",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60100101",
+    "how_get": "无",
+    "related_description": "A miniaturized power supply unit that can be attached to an ST to raise its load limit. It can also affect the Dodge of enemy STs.",
+    "skill": {
+      "id": "61006",
+      "name": "Power Boost III · Dodge",
+      "icon": "Icon_skill_passive_5148",
+      "effect": "ST gains an extra <color=#F74848>300</color> Power.\nIn combat, the enemy's Dodge Rate <color=#F74848>-10%</color>.\nST Body's HP <color=#F74848>+10%</color>, DMG Dealt <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60100104",
+        "qty": 1
+      },
+      {
+        "item": "60500304",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60101205": {
+    "name": "Power Jammer - Hit",
+    "quality": "UR",
+    "weight": "150",
+    "main_type": "PowerAdd",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60100101",
+    "how_get": "无",
+    "related_description": "A miniaturized power supply unit that can be attached to an ST to raise its load limit. It can also affect the Hit of enemy STs.",
+    "skill": {
+      "id": "61005",
+      "name": "Power Boost III · Hit",
+      "icon": "Icon_skill_passive_5148",
+      "effect": "ST gains an extra <color=#F74848>300</color> Power.\nIn combat, the enemy's Hit Rate <color=#F74848>-10%</color>.\nST Body's HP <color=#F74848>+10%</color>, DMG Dealt <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60100104",
+        "qty": 1
+      },
+      {
+        "item": "60500204",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60802605": {
+    "name": "Radar Amplifier - Ballistics",
+    "quality": "UR",
+    "weight": "150",
+    "main_type": "Radar",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60800101",
+    "how_get": "无",
+    "related_description": "A miniaturized ST positioner that allows ally STs to gain positions and guide missiles to accurately hit targets within range. It can also enhance the ST's destructive power at Ideal Range.",
+    "skill": {
+      "id": "61182",
+      "name": "TacW Guidance II · Ballistics",
+      "icon": "Icon_skill_passive_5119",
+      "effect": "Enables the ST's adjacent (<color=#F74848>2</color> tiles) area to become a valid attack zone for allies' Missile and Rocket attacks.\nWhen engaging in combat with a target at Ideal Range, gain DMG <color=#F74848>+10%</color> and Crit Rate <color=#F74848>+5%</color>.\nST Body's HP <color=#F74848>+10%</color>, DMG Dealt <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60800104",
+        "qty": 1
+      },
+      {
+        "item": "60600604",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60802405": {
+    "name": "Radar Amplifier - First Strike",
+    "quality": "UR",
+    "weight": "150",
+    "main_type": "Radar",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60800101",
+    "how_get": "无",
+    "related_description": "A miniaturized ST positioner that allows ally STs to gain positions and guide missiles to accurately hit targets within range. It can also enhance the capability of an ST's first attack per turn.",
+    "skill": {
+      "id": "61181",
+      "name": "TacW Guidance II · First Strike",
+      "icon": "Icon_skill_passive_5119",
+      "effect": "Enables the ST's adjacent (<color=#F74848>2</color> tiles) area to become a valid attack zone for allies' Missile and Rocket attacks.\nOn the <color=#F74848>1st</color> active attack per turn, DMG <color=#F74848>+7.5%</color> and Crit Rate <color=#F74848>+5%</color>.\nST Body's HP <color=#F74848>+10%</color>, DMG Dealt <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60800104",
+        "qty": 1
+      },
+      {
+        "item": "60600404",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60802205": {
+    "name": "Radar Amplifier - Flurry Strike",
+    "quality": "UR",
+    "weight": "150",
+    "main_type": "Radar",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60800101",
+    "how_get": "无",
+    "related_description": "A miniaturized ST positioner that allows ally STs to gain positions and guide missiles to accurately hit targets within range. It can also enhance an ST's Flurry Strike and Gusty Strike.",
+    "skill": {
+      "id": "61183",
+      "name": "TacW Guidance II · Flurry Strike",
+      "icon": "Icon_skill_passive_5119",
+      "effect": "Enables the ST's adjacent (<color=#F74848>2</color> tiles) area to become a valid attack zone for allies' Missile and Rocket attacks.\nWhen launching Flurry Strike or Gusty Strike, Hit Rate <color=#F74848>+15%</color> and Crit Rate <color=#F74848>+10%</color>.\nST Body's HP <color=#F74848>+10%</color>, DMG Dealt <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60800104",
+        "qty": 1
+      },
+      {
+        "item": "60600204",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60802805": {
+    "name": "Radar Amplifier - Guard",
+    "quality": "UR",
+    "weight": "150",
+    "main_type": "Radar",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60800101",
+    "how_get": "无",
+    "related_description": "A miniaturized ST positioner that allows ally STs to gain positions and guide missiles to accurately hit targets within range. It can also enhance an ST's Guard.",
+    "skill": {
+      "id": "61197",
+      "name": "TacW Guidance II · Guard",
+      "icon": "Icon_skill_passive_5119",
+      "effect": "Enables the ST's adjacent (<color=#F74848>2</color> tiles) area to become a valid attack zone for allies' Missile and Rocket attacks.\nWhen performing Guard, Crit RES <color=#F74848>+15%</color> and Crit DMG RES <color=#F74848>+10%</color>.\nST Body's HP <color=#F74848>+10%</color>, DMG Dealt <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60800104",
+        "qty": 1
+      },
+      {
+        "item": "60600804",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60802705": {
+    "name": "Radar Amplifier - Link",
+    "quality": "UR",
+    "weight": "150",
+    "main_type": "Radar",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60800101",
+    "how_get": "无",
+    "related_description": "A miniaturized ST positioner that allows ally STs to gain positions and guide missiles to accurately hit targets within range. It can also enhance an ST's Link Attack.",
+    "skill": {
+      "id": "61184",
+      "name": "TacW Guidance II · Link",
+      "icon": "Icon_skill_passive_5119",
+      "effect": "Enables the ST's adjacent (<color=#F74848>2</color> tiles) area to become a valid attack zone for allies' Missile and Rocket attacks.\nWhen launching Link Attack, DMG <color=#F74848>+15%</color> and Crit Rate <color=#F74848>+10%</color>.\nST Body's HP <color=#F74848>+10%</color>, DMG Dealt <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60800104",
+        "qty": 1
+      },
+      {
+        "item": "60600704",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60802105": {
+    "name": "Radar Amplifier - Re-ATK",
+    "quality": "UR",
+    "weight": "150",
+    "main_type": "Radar",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60800101",
+    "how_get": "无",
+    "related_description": "A miniaturized ST positioner that allows ally STs to gain positions and guide missiles to accurately hit targets within range. It can also enhance an ST's Re-ATK.",
+    "skill": {
+      "id": "61180",
+      "name": "TacW Guidance II · Re-ATK",
+      "icon": "Icon_skill_passive_5119",
+      "effect": "Enables the ST's adjacent (<color=#F74848>2</color> tiles) area to become a valid attack zone for allies' Missile and Rocket attacks.\nAfter triggering [Re-ATK], Hit Rate <color=#F74848>+10%</color>, Crit Rate <color=#F74848>+5%</color>.\nST Body's HP <color=#F74848>+10%</color>, DMG Dealt <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60800104",
+        "qty": 1
+      },
+      {
+        "item": "60600104",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60802505": {
+    "name": "Radar Amplifier - Retaliation",
+    "quality": "UR",
+    "weight": "150",
+    "main_type": "Radar",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60800101",
+    "how_get": "无",
+    "related_description": "A miniaturized ST positioner that allows ally STs to gain positions and guide missiles to accurately hit targets within range. It can also enhance an ST's Retaliation capability.",
+    "skill": {
+      "id": "61196",
+      "name": "TacW Guidance II · Retaliation",
+      "icon": "Icon_skill_passive_5119",
+      "effect": "Enables the ST's adjacent (<color=#F74848>2</color> tiles) area to become a valid attack zone for allies' Missile and Rocket attacks.\nWhen Retaliating, Hit Rate <color=#F74848>+15%</color> and Crit Rate <color=#F74848>+10%</color>.\nST Body's HP <color=#F74848>+10%</color>, DMG Dealt <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60800104",
+        "qty": 1
+      },
+      {
+        "item": "60600504",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60802305": {
+    "name": "Radar Amplifier - Vigilant",
+    "quality": "UR",
+    "weight": "150",
+    "main_type": "Radar",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60800101",
+    "how_get": "无",
+    "related_description": "A miniaturized ST positioner that allows ally STs to gain positions and guide missiles to accurately hit targets within range. It can also enhance an ST's Vigilant Shot.",
+    "skill": {
+      "id": "61195",
+      "name": "TacW Guidance II · Vigilant",
+      "icon": "Icon_skill_passive_5119",
+      "effect": "Enables the ST's adjacent (<color=#F74848>2</color> tiles) area to become a valid attack zone for allies' Missile and Rocket attacks.\nWhen launching Vigilant Shot, Hit Rate <color=#F74848>+15%</color> and Crit Rate <color=#F74848>+10%</color>.\nST Body's HP <color=#F74848>+10%</color>, DMG Dealt <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60800104",
+        "qty": 1
+      },
+      {
+        "item": "60600304",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60801105": {
+    "name": "Radar Jammer - ATK",
+    "quality": "UR",
+    "weight": "150",
+    "main_type": "Radar",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60800101",
+    "how_get": "无",
+    "related_description": "A miniaturized ST positioner that allows ally STs to gain positions and guide missiles to accurately hit targets within range. It can also affect the ATK of enemy STs.",
+    "skill": {
+      "id": "61209",
+      "name": "TacW Guidance II · ATK",
+      "icon": "Icon_skill_passive_5119",
+      "effect": "Enables the ST's adjacent (<color=#F74848>2</color> tiles) area to become a valid attack zone for allies' Missile and Rocket attacks.\nIn combat, the enemy's DMG <color=#F74848>-10%</color>.\nST Body's HP <color=#F74848>+10%</color>, DMG Dealt <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60800104",
+        "qty": 1
+      },
+      {
+        "item": "60500104",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60801605": {
+    "name": "Radar Jammer - Armor",
+    "quality": "UR",
+    "weight": "150",
+    "main_type": "Radar",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60800101",
+    "how_get": "无",
+    "related_description": "A miniaturized ST positioner that allows ally STs to gain positions and guide missiles to accurately hit targets within range. It can also affect the Armor of enemy STs.",
+    "skill": {
+      "id": "61187",
+      "name": "TacW Guidance II · Armor",
+      "icon": "Icon_skill_passive_5119",
+      "effect": "Enables the ST's adjacent (<color=#F74848>2</color> tiles) area to become a valid attack zone for allies' Missile and Rocket attacks.\nIn combat, the enemy's Armor <color=#F74848>-50%</color>.\nST Body's HP <color=#F74848>+10%</color>, DMG Dealt <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60800104",
+        "qty": 1
+      },
+      {
+        "item": "60500604",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60801405": {
+    "name": "Radar Jammer - Crit",
+    "quality": "UR",
+    "weight": "150",
+    "main_type": "Radar",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60800101",
+    "how_get": "无",
+    "related_description": "A miniaturized ST positioner that allows ally STs to gain positions and guide missiles to accurately hit targets within range. It can also affect the Crit of enemy STs.",
+    "skill": {
+      "id": "61198",
+      "name": "TacW Guidance II · Crit",
+      "icon": "Icon_skill_passive_5119",
+      "effect": "Enables the ST's adjacent (<color=#F74848>2</color> tiles) area to become a valid attack zone for allies' Missile and Rocket attacks.\nIn combat, the enemy's Crit Rate <color=#F74848>-10%</color>.\nST Body's HP <color=#F74848>+10%</color>, DMG Dealt <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60800104",
+        "qty": 1
+      },
+      {
+        "item": "60500404",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60801505": {
+    "name": "Radar Jammer - Crit DMG",
+    "quality": "UR",
+    "weight": "150",
+    "main_type": "Radar",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60800101",
+    "how_get": "无",
+    "related_description": "A miniaturized ST positioner that allows ally STs to gain positions and guide missiles to accurately hit targets within range. It can also affect the Crit DMG of enemy STs.",
+    "skill": {
+      "id": "61199",
+      "name": "TacW Guidance II · Crit DMG",
+      "icon": "Icon_skill_passive_5119",
+      "effect": "Enables the ST's adjacent (<color=#F74848>2</color> tiles) area to become a valid attack zone for allies' Missile and Rocket attacks.\nIn combat, the enemy's Crit DMG <color=#F74848>-10%</color>.\nST Body's HP <color=#F74848>+10%</color>, DMG Dealt <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60800104",
+        "qty": 1
+      },
+      {
+        "item": "60500504",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60801705": {
+    "name": "Radar Jammer - DMG UP",
+    "quality": "UR",
+    "weight": "150",
+    "main_type": "Radar",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60800101",
+    "how_get": "无",
+    "related_description": "A miniaturized ST positioner that allows ally STs to gain positions and guide missiles to accurately hit targets within range. It can also inflict a DMG Taken UP effect on the enemy.",
+    "skill": {
+      "id": "61188",
+      "name": "TacW Guidance II · DMG UP",
+      "icon": "Icon_skill_passive_5119",
+      "effect": "Enables the ST's adjacent (<color=#F74848>2</color> tiles) area to become a valid attack zone for allies' Missile and Rocket attacks.\nIn combat, the enemy's DMG Taken <color=#F74848>+10%</color>.\nST Body's HP <color=#F74848>+10%</color>, DMG Dealt <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60800104",
+        "qty": 1
+      },
+      {
+        "item": "60500704",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60801305": {
+    "name": "Radar Jammer - Dodge",
+    "quality": "UR",
+    "weight": "150",
+    "main_type": "Radar",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60800101",
+    "how_get": "无",
+    "related_description": "A miniaturized ST positioner that allows ally STs to gain positions and guide missiles to accurately hit targets within range. It can also affect the Dodge of enemy STs.",
+    "skill": {
+      "id": "61186",
+      "name": "TacW Guidance II · Dodge",
+      "icon": "Icon_skill_passive_5119",
+      "effect": "Enables the ST's adjacent (<color=#F74848>2</color> tiles) area to become a valid attack zone for allies' Missile and Rocket attacks.\nIn combat, the enemy's Dodge Rate <color=#F74848>-10%</color>.\nST Body's HP <color=#F74848>+10%</color>, DMG Dealt <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60800104",
+        "qty": 1
+      },
+      {
+        "item": "60500304",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60801205": {
+    "name": "Radar Jammer - Hit",
+    "quality": "UR",
+    "weight": "150",
+    "main_type": "Radar",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60800101",
+    "how_get": "无",
+    "related_description": "A miniaturized ST positioner that allows ally STs to gain positions and guide missiles to accurately hit targets within range. It can also affect the Hit of enemy STs.",
+    "skill": {
+      "id": "61185",
+      "name": "TacW Guidance II · Hit",
+      "icon": "Icon_skill_passive_5119",
+      "effect": "Enables the ST's adjacent (<color=#F74848>2</color> tiles) area to become a valid attack zone for allies' Missile and Rocket attacks.\nIn combat, the enemy's Hit Rate <color=#F74848>-10%</color>.\nST Body's HP <color=#F74848>+10%</color>, DMG Dealt <color=#F74848>+5%</color>."
+    },
+    "crafting": [
+      {
+        "item": "60800104",
+        "qty": 1
+      },
+      {
+        "item": "60500204",
+        "qty": 1
+      },
+      {
+        "material": "random-a-grade",
+        "qty": 3
+      },
+      {
+        "material": "precision-blueprint",
+        "qty": 1
+      }
+    ]
+  },
+  "60900104": {
+    "name": "Ammo Crate",
+    "quality": "SSR",
+    "weight": "150",
+    "main_type": "Ammo",
+    "st_type": "Medium",
+    "icon": "Icon_backpack_61100101",
+    "how_get": "无",
+    "related_description": "An ammo crate containing tactical weapons, allowing STs to fire more rockets or missiles.",
+    "skill": {
+      "id": "60192",
+      "name": "TacW Capacity UP II",
+      "icon": "Icon_skill_passive_5163",
+      "effect": "Tactical Weapon Ammo Capacity <color=#F74848>+2</color>.\nST Body's HP <color=#F74848>+10%</color>, DMG Dealt <color=#F74848>+5%</color>."
+    }
+  },
+  "60500104": {
+    "name": "Jammer - ATK",
+    "quality": "SSR",
+    "weight": "150",
+    "main_type": "EMP",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60200101",
+    "how_get": "无",
+    "related_description": "An ST backpack fitted with high-frequency jamming wave emitters that affect the ATK capability of the enemy by overlapping wave bands.",
+    "skill": {
+      "id": "60093",
+      "name": "ATK Suppression III",
+      "icon": "Icon_skill_passive_1107",
+      "effect": "In combat, the enemy's DMG <color=#F74848>-10%</color>.\nST's Body HP <color=#F74848>+10%</color>."
+    }
+  },
+  "60500604": {
+    "name": "Jammer - Armor",
+    "quality": "SSR",
+    "weight": "150",
+    "main_type": "EMP",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60200101",
+    "how_get": "无",
+    "related_description": "An ST backpack fitted with high-frequency jamming wave emitters that affect the Armor capability of the enemy by overlapping wave bands.",
+    "skill": {
+      "id": "60143",
+      "name": "Armor Suppression III",
+      "icon": "Icon_skill_passive_5116",
+      "effect": "In combat, the enemy's Armor <color=#F74848>-50%</color>.\nST's Body HP <color=#F74848>+10%</color>."
+    }
+  },
+  "60500404": {
+    "name": "Jammer - Crit",
+    "quality": "SSR",
+    "weight": "150",
+    "main_type": "EMP",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60200101",
+    "how_get": "无",
+    "related_description": "An ST backpack fitted with high-frequency jamming wave emitters that affect the Crit capability of the enemy by overlapping wave bands.",
+    "skill": {
+      "id": "60123",
+      "name": "Crit Suppression III",
+      "icon": "Icon_skill_passive_5190",
+      "effect": "In combat, the enemy's Crit Rate <color=#F74848>-10%</color>.\nST's Body HP <color=#F74848>+10%</color>."
+    }
+  },
+  "60500504": {
+    "name": "Jammer - Crit DMG",
+    "quality": "SSR",
+    "weight": "150",
+    "main_type": "EMP",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60200101",
+    "how_get": "无",
+    "related_description": "An ST backpack fitted with high-frequency jamming wave emitters that affect the Crit DMG capability of the enemy by overlapping wave bands.",
+    "skill": {
+      "id": "60133",
+      "name": "Crit DMG Suppression III",
+      "icon": "Icon_skill_passive_5157",
+      "effect": "In combat, the enemy's Crit DMG <color=#F74848>-10%</color>.\nST's Body HP <color=#F74848>+10%</color>."
+    }
+  },
+  "60500704": {
+    "name": "Jammer - DMG UP",
+    "quality": "SSR",
+    "weight": "150",
+    "main_type": "EMP",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60200101",
+    "how_get": "无",
+    "related_description": "An ST backpack fitted with high-frequency jamming wave emitters that inflict a DMG Taken UP effect on the enemy by overlapping wave bands.",
+    "skill": {
+      "id": "60153",
+      "name": "DMG Boost III",
+      "icon": "Icon_skill_passive_5112",
+      "effect": "In combat, the enemy's DMG Taken <color=#F74848>+10%</color>.\nST's Body HP <color=#F74848>+10%</color>."
+    }
+  },
+  "60500304": {
+    "name": "Jammer - Dodge",
+    "quality": "SSR",
+    "weight": "150",
+    "main_type": "EMP",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60200101",
+    "how_get": "无",
+    "related_description": "An ST backpack fitted with high-frequency jamming wave emitters that affect the Dodge capability of the enemy by overlapping wave bands.",
+    "skill": {
+      "id": "60113",
+      "name": "Dodge Suppression III",
+      "icon": "Icon_skill_passive_5155",
+      "effect": "In combat, the enemy's Dodge Rate <color=#F74848>-10%</color>.\nST's Body HP <color=#F74848>+10%</color>."
+    }
+  },
+  "60500204": {
+    "name": "Jammer - Hit",
+    "quality": "SSR",
+    "weight": "150",
+    "main_type": "EMP",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60200101",
+    "how_get": "无",
+    "related_description": "An ST backpack fitted with high-frequency jamming wave emitters that affect the Hit capability of the enemy by overlapping wave bands.",
+    "skill": {
+      "id": "60103",
+      "name": "Hit Suppression III",
+      "icon": "Icon_skill_passive_2116",
+      "effect": "In combat, the enemy's Hit Rate <color=#F74848>-10%</color>.\nST's Body HP <color=#F74848>+10%</color>."
+    }
+  },
+  "60600604": {
+    "name": "Amplifier - Ballistics",
+    "quality": "SSR",
+    "weight": "150",
+    "main_type": "Enhance",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60600101",
+    "how_get": "无",
+    "related_description": "This backpack incorporates a special combat-support chip and an all-in-one control unit to enhance the ST's destructive power at Ideal Range.",
+    "skill": {
+      "id": "60063",
+      "name": "Ballistic Calibration III",
+      "icon": "Icon_skill_passive_1146",
+      "effect": "When engaging in combat with a target at Ideal Range, gain DMG <color=#F74848>+10%</color> and Crit Rate <color=#F74848>+5%</color>.\nST's Body HP <color=#F74848>+10%</color>."
+    }
+  },
+  "60600404": {
+    "name": "Amplifier - First Strike",
+    "quality": "SSR",
+    "weight": "150",
+    "main_type": "Enhance",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60600101",
+    "how_get": "无",
+    "related_description": "This backpack incorporates a special combat-support chip and an all-in-one control unit to enhance the capability of the ST's first attack per turn.",
+    "skill": {
+      "id": "60043",
+      "name": "First Strike Enhancement III",
+      "icon": "Icon_skill_passive_1011",
+      "effect": "On the <color=#F74848>1st</color> active attack per turn, DMG <color=#F74848>+7.5%</color> and Crit Rate <color=#F74848>+5%</color>.\nST's Body HP <color=#F74848>+10%</color>."
+    }
+  },
+  "60600204": {
+    "name": "Amplifier - Flurry Strike",
+    "quality": "SSR",
+    "weight": "150",
+    "main_type": "Enhance",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60600101",
+    "how_get": "无",
+    "related_description": "This backpack incorporates a special combat-support chip and an all-in-one control unit to enhance the ST's Flurry Strike and Gusty Strike.",
+    "skill": {
+      "id": "60023",
+      "name": "Flurry Strike Enhancement III",
+      "icon": "Icon_skill_passive_4122",
+      "effect": "When launching Flurry Strike or Gusty Strike, Hit Rate <color=#F74848>+15%</color> and Crit Rate <color=#F74848>+10%</color>.\nST's Body HP <color=#F74848>+10%</color>."
+    }
+  },
+  "60600804": {
+    "name": "Amplifier - Guard",
+    "quality": "SSR",
+    "weight": "150",
+    "main_type": "Enhance",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60600101",
+    "how_get": "无",
+    "related_description": "This backpack incorporates a special combat-support chip and an all-in-one control unit to enhance the ST's Guard.",
+    "skill": {
+      "id": "60083",
+      "name": "Guard Reinforcement III",
+      "icon": "Icon_skill_passive_2001",
+      "effect": "When performing Guard, Crit RES <color=#F74848>+15%</color> and Crit DMG RES <color=#F74848>+10%</color>.\nST's Body HP <color=#F74848>+10%</color>."
+    }
+  },
+  "60600704": {
+    "name": "Amplifier - Link",
+    "quality": "SSR",
+    "weight": "150",
+    "main_type": "Enhance",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60600101",
+    "how_get": "无",
+    "related_description": "This backpack incorporates a special combat-support chip and an all-in-one control unit to enhance the ST's Link Attack.",
+    "skill": {
+      "id": "60073",
+      "name": "Link Coordinator III",
+      "icon": "Icon_skill_passive_1144",
+      "effect": "When launching Link Attack, DMG <color=#F74848>+15%</color> and Crit Rate <color=#F74848>+10%</color>.\nST's Body HP <color=#F74848>+10%</color>."
+    }
+  },
+  "60600104": {
+    "name": "Amplifier - Re-ATK",
+    "quality": "SSR",
+    "weight": "150",
+    "main_type": "Enhance",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60600101",
+    "how_get": "无",
+    "related_description": "This backpack incorporates a special combat-support chip and an all-in-one control unit to enhance the ST's Re-ATK.",
+    "skill": {
+      "id": "60013",
+      "name": "Enhanced Re-ATK III",
+      "icon": "Icon_skill_passive_4111",
+      "effect": "After triggering [Re-ATK], Hit Rate <color=#F74848>+10%</color>, Crit Rate <color=#F74848>+5%</color>.\nST's Body HP <color=#F74848>+10%</color>."
+    }
+  },
+  "60600504": {
+    "name": "Amplifier - Retaliation",
+    "quality": "SSR",
+    "weight": "150",
+    "main_type": "Enhance",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60600101",
+    "how_get": "无",
+    "related_description": "This backpack incorporates a special combat-support chip and an all-in-one control unit to enhance the ST's Retaliation.",
+    "skill": {
+      "id": "60053",
+      "name": "Retaliation Enhancement III",
+      "icon": "Icon_skill_passive_1103",
+      "effect": "When Retaliating, Hit Rate <color=#F74848>+15%</color> and Crit Rate <color=#F74848>+10%</color>.\nST's Body HP <color=#F74848>+10%</color>."
+    }
+  },
+  "60600304": {
+    "name": "Amplifier - Vigilant",
+    "quality": "SSR",
+    "weight": "150",
+    "main_type": "Enhance",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60600101",
+    "how_get": "无",
+    "related_description": "This backpack incorporates a special combat-support chip and an all-in-one control unit to enhance the ST's Vigilant Shot.",
+    "skill": {
+      "id": "60033",
+      "name": "Vigilance Aid III",
+      "icon": "Icon_skill_passive_4001",
+      "effect": "When launching Vigilant Shot, Hit Rate <color=#F74848>+15%</color> and Crit Rate <color=#F74848>+10%</color>.\nST's Body HP <color=#F74848>+10%</color>."
+    }
+  },
+  "60400104": {
+    "name": "Jetpack",
+    "quality": "SSR",
+    "weight": "150",
+    "main_type": "Flow",
+    "st_type": "Light",
+    "icon": "Icon_BackPack_60350101",
+    "how_get": "无",
+    "related_description": "This jetpack enables an ST to fly over short distances, quickly traversing obstacles to reach even the most inaccessible corners of the battlefield.",
+    "skill": {
+      "id": "60211",
+      "name": "Flying Device I",
+      "icon": "Icon_skill_passive_5127",
+      "effect": "ST Move Method changes to levitation, enabling ST to pass over low obstacles.\nST Body's HP <color=#F74848>+10%</color>, DMG Dealt <color=#F74848>+5%</color>."
+    }
+  },
+  "60700104": {
+    "name": "Manipulator",
+    "quality": "SSR",
+    "weight": "1000",
+    "main_type": "Heal",
+    "st_type": "Medium",
+    "icon": "Icon_backpack_60400101",
+    "how_get": "无",
+    "related_description": "An engineering backpack fitted with a high-precision robotic arm that provides professional repairs on the battlefield.",
+    "repair": "204",
+    "skill": {
+      "id": "60231",
+      "name": "Repair Unit I",
+      "icon": "Icon_skill_passive_3102",
+      "effect": "When the action starts, repair yourself <color=#F74848>once</color>, restoring HP equal to <color=#F74848>0.6x</color> the Manipulator's Repair AMT. This cannot repair damaged parts."
+    }
+  },
+  "60300104": {
+    "name": "Inducer",
+    "quality": "SSR",
+    "weight": "150",
+    "main_type": "Interference",
+    "st_type": "Heavy",
+    "icon": "Icon_backpack_60300101",
+    "how_get": "无",
+    "related_description": "Unceasingly emits EM waves to suppressively interfere with projectiles and disrupt electronic equipment, thus weakening the power of tactical weapons.",
+    "skill": {
+      "id": "60172",
+      "name": "TacW DMG Reduction II",
+      "icon": "Icon_skill_passive_2007",
+      "effect": "When attacked by a Tactical Weapon, DMG Taken <color=#F74848>-25%</color>.\nST's Body HP <color=#F74848>+10%</color>."
+    }
+  },
+  "61000104": {
+    "name": "Mirage Generator",
+    "quality": "SSR",
+    "weight": "150",
+    "main_type": "Invisible",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60900101",
+    "how_get": "无",
+    "related_description": "This advanced optics system can distort light, allowing ST fitted with this backpack model to become somewhat invisible.",
+    "skill": {
+      "id": "60221",
+      "name": "Stealth Device I",
+      "icon": "Icon_skill_passive_5149",
+      "effect": "At the end of the action, if there are no enemies within the adjacent (<color=#F74848>2</color> tiles) area, gain <buf ID=3004502>[Stealth I]</buf> with a trigger interval of <color=#F74848>3</color> turns.\nST Body's HP <color=#F74848>+10%</color>, DMG Dealt <color=#F74848>+5%</color>."
+    }
+  },
+  "60200104": {
+    "name": "Accelerator",
+    "quality": "SSR",
+    "weight": "150",
+    "main_type": "MovePointAdd",
+    "st_type": "Light",
+    "icon": "Icon_BackPack_60500101",
+    "how_get": "无",
+    "related_description": "Channels extra energy directly into the leg actuator to improve the ST's mobility, whether using pulleys or walking.",
+    "skill": {
+      "id": "60201",
+      "name": "Movement Enhancement I",
+      "icon": "Icon_skill_passive_5123",
+      "effect": "ST Movement <color=#F74848>+1</color>.\nST Body's HP <color=#F74848>+10%</color>, DMG Dealt <color=#F74848>+5%</color>."
+    }
+  },
+  "60100104": {
+    "name": "Power Bank",
+    "quality": "SSR",
+    "weight": "150",
+    "main_type": "PowerAdd",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60100101",
+    "how_get": "无",
+    "related_description": "A miniaturized power supply unit that can be attached to an ST to raise its load limit.",
+    "skill": {
+      "id": "60003",
+      "name": "Power Boost III",
+      "icon": "Icon_skill_passive_5148",
+      "effect": "ST gains an extra <color=#F74848>300</color> Power.\nST Body's HP <color=#F74848>+10%</color>, DMG Dealt <color=#F74848>+5%</color>."
+    }
+  },
+  "60800104": {
+    "name": "Mini Radar",
+    "quality": "SSR",
+    "weight": "150",
+    "main_type": "Radar",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60800101",
+    "how_get": "无",
+    "related_description": "A miniaturized ST positioner that allows ally STs to gain positions and guide missiles to accurately hit targets within range.",
+    "skill": {
+      "id": "60182",
+      "name": "TacW Guidance II",
+      "icon": "Icon_skill_passive_5119",
+      "effect": "Enables the ST's adjacent (<color=#F74848>2</color> tiles) area to become a valid attack zone for allies' Missile and Rocket attacks.\nST Body's HP <color=#F74848>+10%</color>, DMG Dealt <color=#F74848>+5%</color>."
+    }
+  },
+  "60900103": {
+    "name": "Ammo Crate",
+    "quality": "SR",
+    "weight": "125",
+    "main_type": "Ammo",
+    "st_type": "Medium",
+    "icon": "Icon_backpack_61100101",
+    "how_get": "无",
+    "related_description": "An ammo crate containing tactical weapons, allowing STs to fire more rockets or missiles.",
+    "skill": {
+      "id": "60191",
+      "name": "TacW Capacity UP I",
+      "icon": "Icon_skill_passive_5163",
+      "effect": "Tactical Weapon Ammo Capacity <color=#F74848>+1</color>.\nST Body's HP <color=#F74848>+8%</color>, DMG Dealt <color=#F74848>+3%</color>."
+    }
+  },
+  "60500103": {
+    "name": "Jammer - ATK",
+    "quality": "SR",
+    "weight": "125",
+    "main_type": "EMP",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60200101",
+    "how_get": "无",
+    "related_description": "An ST backpack fitted with high-frequency jamming wave emitters that affect the ATK capability of the enemy by overlapping wave bands.",
+    "skill": {
+      "id": "60092",
+      "name": "ATK Suppression II",
+      "icon": "Icon_skill_passive_1107",
+      "effect": "In combat, the enemy's DMG <color=#F74848>-6%</color>.\nST's Body HP <color=#F74848>+8%</color>."
+    }
+  },
+  "60500603": {
+    "name": "Jammer - Armor",
+    "quality": "SR",
+    "weight": "125",
+    "main_type": "EMP",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60200101",
+    "how_get": "无",
+    "related_description": "An ST backpack fitted with high-frequency jamming wave emitters that affect the Armor capability of the enemy by overlapping wave bands.",
+    "skill": {
+      "id": "60142",
+      "name": "Armor Suppression II",
+      "icon": "Icon_skill_passive_5116",
+      "effect": "In combat, the enemy's Armor <color=#F74848>-30%</color>.\nST's Body HP <color=#F74848>+8%</color>."
+    }
+  },
+  "60500403": {
+    "name": "Jammer - Crit",
+    "quality": "SR",
+    "weight": "125",
+    "main_type": "EMP",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60200101",
+    "how_get": "无",
+    "related_description": "An ST backpack fitted with high-frequency jamming wave emitters that affect the Crit capability of the enemy by overlapping wave bands.",
+    "skill": {
+      "id": "60122",
+      "name": "Crit Suppression II",
+      "icon": "Icon_skill_passive_5190",
+      "effect": "In combat, the enemy's Crit Rate <color=#F74848>-6%</color>.\nST's Body HP <color=#F74848>+8%</color>."
+    }
+  },
+  "60500503": {
+    "name": "Jammer - Crit DMG",
+    "quality": "SR",
+    "weight": "125",
+    "main_type": "EMP",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60200101",
+    "how_get": "无",
+    "related_description": "An ST backpack fitted with high-frequency jamming wave emitters that affect the Crit DMG capability of the enemy by overlapping wave bands.",
+    "skill": {
+      "id": "60132",
+      "name": "Crit DMG Suppression II",
+      "icon": "Icon_skill_passive_5157",
+      "effect": "In combat, the enemy's Crit DMG <color=#F74848>-6%</color>.\nST's Body HP <color=#F74848>+8%</color>."
+    }
+  },
+  "60500703": {
+    "name": "Jammer - DMG UP",
+    "quality": "SR",
+    "weight": "125",
+    "main_type": "EMP",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60200101",
+    "how_get": "无",
+    "related_description": "An ST backpack fitted with high-frequency jamming wave emitters that inflict a DMG Taken UP effect on the enemy by overlapping wave bands.",
+    "skill": {
+      "id": "60152",
+      "name": "DMG Boost II",
+      "icon": "Icon_skill_passive_5112",
+      "effect": "In combat, the enemy's DMG Taken <color=#F74848>+6%</color>.\nST's Body HP <color=#F74848>+8%</color>."
+    }
+  },
+  "60500303": {
+    "name": "Jammer - Dodge",
+    "quality": "SR",
+    "weight": "125",
+    "main_type": "EMP",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60200101",
+    "how_get": "无",
+    "related_description": "An ST backpack fitted with high-frequency jamming wave emitters that affect the Dodge capability of the enemy by overlapping wave bands.",
+    "skill": {
+      "id": "60112",
+      "name": "Dodge Suppression II",
+      "icon": "Icon_skill_passive_5155",
+      "effect": "In combat, the enemy's Dodge Rate <color=#F74848>-6%</color>.\nST's Body HP <color=#F74848>+8%</color>."
+    }
+  },
+  "60500203": {
+    "name": "Jammer - Hit",
+    "quality": "SR",
+    "weight": "125",
+    "main_type": "EMP",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60200101",
+    "how_get": "无",
+    "related_description": "An ST backpack fitted with high-frequency jamming wave emitters that affect the Hit capability of the enemy by overlapping wave bands.",
+    "skill": {
+      "id": "60102",
+      "name": "Hit Suppression II",
+      "icon": "Icon_skill_passive_2116",
+      "effect": "In combat, the enemy's Hit Rate <color=#F74848>-6%</color>.\nST's Body HP <color=#F74848>+8%</color>."
+    }
+  },
+  "60600603": {
+    "name": "Amplifier - Ballistics",
+    "quality": "SR",
+    "weight": "125",
+    "main_type": "Enhance",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60600101",
+    "how_get": "无",
+    "related_description": "This backpack incorporates a special combat-support chip and an all-in-one control unit to enhance the ST's destructive power at Ideal Range.",
+    "skill": {
+      "id": "60062",
+      "name": "Ballistic Calibration II",
+      "icon": "Icon_skill_passive_1146",
+      "effect": "When engaging in combat with a target at Ideal Range, gain DMG <color=#F74848>+6%</color> and Crit Rate <color=#F74848>+3%</color>.\nST's Body HP <color=#F74848>+8%</color>."
+    }
+  },
+  "60600403": {
+    "name": "Amplifier - First Strike",
+    "quality": "SR",
+    "weight": "125",
+    "main_type": "Enhance",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60600101",
+    "how_get": "无",
+    "related_description": "This backpack incorporates a special combat-support chip and an all-in-one control unit to enhance the capability of the ST's first attack per turn.",
+    "skill": {
+      "id": "60042",
+      "name": "First Strike Enhancement II",
+      "icon": "Icon_skill_passive_1011",
+      "effect": "On the <color=#F74848>1st</color> active attack per turn, DMG <color=#F74848>+5%</color> and Crit Rate <color=#F74848>+3%</color>.\nST's Body HP <color=#F74848>+8%</color>."
+    }
+  },
+  "60600203": {
+    "name": "Amplifier - Flurry Strike",
+    "quality": "SR",
+    "weight": "125",
+    "main_type": "Enhance",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60600101",
+    "how_get": "无",
+    "related_description": "This backpack incorporates a special combat-support chip and an all-in-one control unit to enhance the ST's Flurry Strike and Gusty Strike.",
+    "skill": {
+      "id": "60022",
+      "name": "Flurry Strike Enhancement II",
+      "icon": "Icon_skill_passive_4122",
+      "effect": "When launching Flurry Strike or Gusty Strike, Hit Rate <color=#F74848>+9%</color> and Crit Rate <color=#F74848>+6%</color>.\nST's Body HP <color=#F74848>+8%</color>."
+    }
+  },
+  "60600803": {
+    "name": "Amplifier - Guard",
+    "quality": "SR",
+    "weight": "125",
+    "main_type": "Enhance",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60600101",
+    "how_get": "无",
+    "related_description": "This backpack incorporates a special combat-support chip and an all-in-one control unit to enhance the ST's Guard.",
+    "skill": {
+      "id": "60082",
+      "name": "Guard Reinforcement II",
+      "icon": "Icon_skill_passive_2001",
+      "effect": "When performing Guard, Crit RES <color=#F74848>+9%</color> and Crit DMG RES <color=#F74848>+6%</color>.\nST's Body HP <color=#F74848>+8%</color>."
+    }
+  },
+  "60600703": {
+    "name": "Amplifier - Link",
+    "quality": "SR",
+    "weight": "125",
+    "main_type": "Enhance",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60600101",
+    "how_get": "无",
+    "related_description": "This backpack incorporates a special combat-support chip and an all-in-one control unit to enhance the ST's Link Attack.",
+    "skill": {
+      "id": "60072",
+      "name": "Link Coordinator II",
+      "icon": "Icon_skill_passive_1144",
+      "effect": "When launching Link Attack, DMG <color=#F74848>+9%</color> and Crit Rate <color=#F74848>+6%</color>.\nST's Body HP <color=#F74848>+8%</color>."
+    }
+  },
+  "60600103": {
+    "name": "Amplifier - Re-ATK",
+    "quality": "SR",
+    "weight": "125",
+    "main_type": "Enhance",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60600101",
+    "how_get": "无",
+    "related_description": "This backpack incorporates a special combat-support chip and an all-in-one control unit to enhance the ST's Re-ATK.",
+    "skill": {
+      "id": "60012",
+      "name": "Enhanced Re-ATK II",
+      "icon": "Icon_skill_passive_4111",
+      "effect": "After triggering [Re-ATK], Hit Rate <color=#F74848>+6%</color>, Crit Rate <color=#F74848>+3%</color>.\nST's Body HP <color=#F74848>+8%</color>."
+    }
+  },
+  "60600503": {
+    "name": "Amplifier - Retaliation",
+    "quality": "SR",
+    "weight": "125",
+    "main_type": "Enhance",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60600101",
+    "how_get": "无",
+    "related_description": "This backpack incorporates a special combat-support chip and an all-in-one control unit to enhance the ST's Retaliation.",
+    "skill": {
+      "id": "60052",
+      "name": "Retaliation Enhancement II",
+      "icon": "Icon_skill_passive_1103",
+      "effect": "When Retaliating, Hit Rate <color=#F74848>+9%</color> and Crit Rate <color=#F74848>+6%</color>.\nST's Body HP <color=#F74848>+8%</color>."
+    }
+  },
+  "60600303": {
+    "name": "Amplifier - Vigilant",
+    "quality": "SR",
+    "weight": "125",
+    "main_type": "Enhance",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60600101",
+    "how_get": "无",
+    "related_description": "This backpack incorporates a special combat-support chip and an all-in-one control unit to enhance the ST's Vigilant Shot.",
+    "skill": {
+      "id": "60032",
+      "name": "Vigilance Aid II",
+      "icon": "Icon_skill_passive_4001",
+      "effect": "When launching Vigilant Shot, Hit Rate <color=#F74848>+9%</color> and Crit Rate <color=#F74848>+6%</color>.\nST's Body HP <color=#F74848>+8%</color>."
+    }
+  },
+  "60700103": {
+    "name": "Manipulator",
+    "quality": "SR",
+    "weight": "800",
+    "main_type": "Heal",
+    "st_type": "Medium",
+    "icon": "Icon_backpack_60400101",
+    "how_get": "无",
+    "related_description": "An engineering backpack fitted with a high-precision robotic arm that provides professional repairs on the battlefield.",
+    "repair": "183",
+    "skill": {
+      "id": "60231",
+      "name": "Repair Unit I",
+      "icon": "Icon_skill_passive_3102",
+      "effect": "When the action starts, repair yourself <color=#F74848>once</color>, restoring HP equal to <color=#F74848>0.6x</color> the Manipulator's Repair AMT. This cannot repair damaged parts."
+    }
+  },
+  "60300103": {
+    "name": "Inducer",
+    "quality": "SR",
+    "weight": "125",
+    "main_type": "Interference",
+    "st_type": "Heavy",
+    "icon": "Icon_backpack_60300101",
+    "how_get": "无",
+    "related_description": "Unceasingly emits EM waves to suppressively interfere with projectiles and disrupt electronic equipment, thus weakening the power of tactical weapons.",
+    "skill": {
+      "id": "60171",
+      "name": "TacW DMG Reduction I",
+      "icon": "Icon_skill_passive_2007",
+      "effect": "When attacked by a Tactical Weapon, DMG Taken <color=#F74848>-15%</color>.\nST's Body HP <color=#F74848>+8%</color>."
+    }
+  },
+  "60100103": {
+    "name": "Power Bank",
+    "quality": "SR",
+    "weight": "125",
+    "main_type": "PowerAdd",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60100101",
+    "how_get": "无",
+    "related_description": "A miniaturized power supply unit that can be attached to an ST to raise its load limit.",
+    "skill": {
+      "id": "60002",
+      "name": "Power Boost II",
+      "icon": "Icon_skill_passive_5148",
+      "effect": "ST gains an extra <color=#F74848>250</color> Power.\nST Body's HP <color=#F74848>+8%</color>, DMG Dealt <color=#F74848>+3%</color>."
+    }
+  },
+  "60800103": {
+    "name": "Mini Radar",
+    "quality": "SR",
+    "weight": "125",
+    "main_type": "Radar",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60800101",
+    "how_get": "无",
+    "related_description": "A miniaturized ST positioner that allows ally STs to gain positions and guide missiles to accurately hit targets within range.",
+    "skill": {
+      "id": "60181",
+      "name": "TacW Guidance I",
+      "icon": "Icon_skill_passive_5119",
+      "effect": "Enables the ST's adjacent (<color=#F74848>1</color> tile) area to become a valid attack zone for allies' Missile and Rocket attacks.\nST Body's HP <color=#F74848>+8%</color>, DMG Dealt <color=#F74848>+3%</color>."
+    }
+  },
+  "60500102": {
+    "name": "Jammer - ATK",
+    "quality": "R",
+    "weight": "100",
+    "main_type": "EMP",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60200101",
+    "how_get": "无",
+    "related_description": "An ST backpack fitted with high-frequency jamming wave emitters that affect the ATK capability of the enemy by overlapping wave bands.",
+    "skill": {
+      "id": "60091",
+      "name": "ATK Suppression I",
+      "icon": "Icon_skill_passive_1107",
+      "effect": "In combat, the enemy's DMG <color=#F74848>-4%</color>.\nST's Body HP <color=#F74848>+6%</color>."
+    }
+  },
+  "60500602": {
+    "name": "Jammer - Armor",
+    "quality": "R",
+    "weight": "100",
+    "main_type": "EMP",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60200101",
+    "how_get": "无",
+    "related_description": "An ST backpack fitted with high-frequency jamming wave emitters that affect the Armor capability of the enemy by overlapping wave bands.",
+    "skill": {
+      "id": "60141",
+      "name": "Armor Suppression I",
+      "icon": "Icon_skill_passive_5116",
+      "effect": "In combat, the enemy's Armor <color=#F74848>-20%</color>.\nST's Body HP <color=#F74848>+6%</color>."
+    }
+  },
+  "60500402": {
+    "name": "Jammer - Crit",
+    "quality": "R",
+    "weight": "100",
+    "main_type": "EMP",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60200101",
+    "how_get": "无",
+    "related_description": "An ST backpack fitted with high-frequency jamming wave emitters that affect the Crit capability of the enemy by overlapping wave bands.",
+    "skill": {
+      "id": "60121",
+      "name": "Crit Suppression I",
+      "icon": "Icon_skill_passive_5190",
+      "effect": "In combat, the enemy's Crit Rate <color=#F74848>-4%</color>.\nST's Body HP <color=#F74848>+6%</color>."
+    }
+  },
+  "60500502": {
+    "name": "Jammer - Crit DMG",
+    "quality": "R",
+    "weight": "100",
+    "main_type": "EMP",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60200101",
+    "how_get": "无",
+    "related_description": "An ST backpack fitted with high-frequency jamming wave emitters that affect the Crit DMG capability of the enemy by overlapping wave bands.",
+    "skill": {
+      "id": "60131",
+      "name": "Crit DMG Suppression I",
+      "icon": "Icon_skill_passive_5157",
+      "effect": "In combat, the enemy's Crit DMG <color=#F74848>-4%</color>.\nST's Body HP <color=#F74848>+6%</color>."
+    }
+  },
+  "60500702": {
+    "name": "Jammer - DMG UP",
+    "quality": "R",
+    "weight": "100",
+    "main_type": "EMP",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60200101",
+    "how_get": "无",
+    "related_description": "An ST backpack fitted with high-frequency jamming wave emitters that inflict a DMG Taken UP effect on the enemy by overlapping wave bands.",
+    "skill": {
+      "id": "60151",
+      "name": "DMG Boost I",
+      "icon": "Icon_skill_passive_5112",
+      "effect": "In combat, the enemy's DMG Taken <color=#F74848>+4%</color>.\nST's Body HP <color=#F74848>+6%</color>."
+    }
+  },
+  "60500302": {
+    "name": "Jammer - Dodge",
+    "quality": "R",
+    "weight": "100",
+    "main_type": "EMP",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60200101",
+    "how_get": "无",
+    "related_description": "An ST backpack fitted with high-frequency jamming wave emitters that affect the Dodge capability of the enemy by overlapping wave bands.",
+    "skill": {
+      "id": "60111",
+      "name": "Dodge Suppression I",
+      "icon": "Icon_skill_passive_5155",
+      "effect": "In combat, the enemy's Dodge Rate <color=#F74848>-4%</color>.\nST's Body HP <color=#F74848>+6%</color>."
+    }
+  },
+  "60500202": {
+    "name": "Jammer - Hit",
+    "quality": "R",
+    "weight": "100",
+    "main_type": "EMP",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60200101",
+    "how_get": "无",
+    "related_description": "An ST backpack fitted with high-frequency jamming wave emitters that affect the Hit capability of the enemy by overlapping wave bands.",
+    "skill": {
+      "id": "60101",
+      "name": "Hit Suppression I",
+      "icon": "Icon_skill_passive_2116",
+      "effect": "In combat, the enemy's Hit Rate <color=#F74848>-4%</color>.\nST's Body HP <color=#F74848>+6%</color>."
+    }
+  },
+  "60600602": {
+    "name": "Amplifier - Ballistics",
+    "quality": "R",
+    "weight": "100",
+    "main_type": "Enhance",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60600101",
+    "how_get": "无",
+    "related_description": "This backpack incorporates a special combat-support chip and an all-in-one control unit to enhance the ST's destructive power at Ideal Range.",
+    "skill": {
+      "id": "60061",
+      "name": "Ballistic Calibration I",
+      "icon": "Icon_skill_passive_1146",
+      "effect": "When engaging in combat with a target at Ideal Range, gain DMG <color=#F74848>+4%</color> and Crit Rate <color=#F74848>+2%</color>.\nST's Body HP <color=#F74848>+6%</color>."
+    }
+  },
+  "60600402": {
+    "name": "Amplifier - First Strike",
+    "quality": "R",
+    "weight": "100",
+    "main_type": "Enhance",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60600101",
+    "how_get": "无",
+    "related_description": "This backpack incorporates a special combat-support chip and an all-in-one control unit to enhance the capability of the ST's first attack per turn.",
+    "skill": {
+      "id": "60041",
+      "name": "First Strike Enhancement I",
+      "icon": "Icon_skill_passive_1011",
+      "effect": "On the <color=#F74848>1st</color> active attack per turn, DMG <color=#F74848>+3%</color> and Crit Rate <color=#F74848>+2%</color>.\nST's Body HP <color=#F74848>+6%</color>."
+    }
+  },
+  "60600202": {
+    "name": "Amplifier - Flurry Strike",
+    "quality": "R",
+    "weight": "100",
+    "main_type": "Enhance",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60600101",
+    "how_get": "无",
+    "related_description": "This backpack incorporates a special combat-support chip and an all-in-one control unit to enhance the ST's Flurry Strike and Gusty Strike.",
+    "skill": {
+      "id": "60021",
+      "name": "Flurry Strike Enhancement I",
+      "icon": "Icon_skill_passive_4122",
+      "effect": "When launching Flurry Strike or Gusty Strike, Hit Rate <color=#F74848>+6%</color> and Crit Rate <color=#F74848>+4%</color>.\nST's Body HP <color=#F74848>+6%</color>."
+    }
+  },
+  "60600802": {
+    "name": "Amplifier - Guard",
+    "quality": "R",
+    "weight": "100",
+    "main_type": "Enhance",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60600101",
+    "how_get": "无",
+    "related_description": "This backpack incorporates a special combat-support chip and an all-in-one control unit to enhance the ST's Guard.",
+    "skill": {
+      "id": "60081",
+      "name": "Guard Reinforcement I",
+      "icon": "Icon_skill_passive_2001",
+      "effect": "When performing Guard, Crit RES <color=#F74848>+6%</color> and Crit DMG RES <color=#F74848>+4%</color>.\nST's Body HP <color=#F74848>+6%</color>."
+    }
+  },
+  "60600702": {
+    "name": "Amplifier - Link",
+    "quality": "R",
+    "weight": "100",
+    "main_type": "Enhance",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60600101",
+    "how_get": "无",
+    "related_description": "This backpack incorporates a special combat-support chip and an all-in-one control unit to enhance the ST's Link Attack.",
+    "skill": {
+      "id": "60071",
+      "name": "Link Coordinator I",
+      "icon": "Icon_skill_passive_1144",
+      "effect": "When launching Link Attack, DMG <color=#F74848>+6%</color> and Crit Rate <color=#F74848>+4%</color>.\nST's Body HP <color=#F74848>+6%</color>."
+    }
+  },
+  "60600102": {
+    "name": "Amplifier - Re-ATK",
+    "quality": "R",
+    "weight": "100",
+    "main_type": "Enhance",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60600101",
+    "how_get": "无",
+    "related_description": "This backpack incorporates a special combat-support chip and an all-in-one control unit to enhance the ST's Re-ATK.",
+    "skill": {
+      "id": "60011",
+      "name": "Enhanced Re-ATK I",
+      "icon": "Icon_skill_passive_4111",
+      "effect": "After triggering [Re-ATK], Hit Rate <color=#F74848>+4%</color>, Crit Rate <color=#F74848>+2%</color>.\nST's Body HP <color=#F74848>+6%</color>."
+    }
+  },
+  "60600502": {
+    "name": "Amplifier - Retaliation",
+    "quality": "R",
+    "weight": "100",
+    "main_type": "Enhance",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60600101",
+    "how_get": "无",
+    "related_description": "This backpack incorporates a special combat-support chip and an all-in-one control unit to enhance the ST's Retaliation.",
+    "skill": {
+      "id": "60051",
+      "name": "Retaliation Enhancement I",
+      "icon": "Icon_skill_passive_1103",
+      "effect": "When Retaliating, DMG <color=#F74848>+6%</color> and Crit Rate <color=#F74848>+4%</color>.\nST's Body HP <color=#F74848>+6%</color>."
+    }
+  },
+  "60600302": {
+    "name": "Amplifier - Vigilant",
+    "quality": "R",
+    "weight": "100",
+    "main_type": "Enhance",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60600101",
+    "how_get": "无",
+    "related_description": "This backpack incorporates a special combat-support chip and an all-in-one control unit to enhance the ST's Vigilant Shot.",
+    "skill": {
+      "id": "60031",
+      "name": "Vigilance Aid I",
+      "icon": "Icon_skill_passive_4001",
+      "effect": "When launching Vigilant Shot, Hit Rate <color=#F74848>+6%</color> and Crit Rate <color=#F74848>+4%</color>.\nST's Body HP <color=#F74848>+6%</color>."
+    }
+  },
+  "60700102": {
+    "name": "Manipulator",
+    "quality": "R",
+    "weight": "600",
+    "main_type": "Heal",
+    "st_type": "Medium",
+    "icon": "Icon_backpack_60400101",
+    "how_get": "无",
+    "related_description": "An engineering backpack fitted with a high-precision robotic arm that provides professional repairs on the battlefield.",
+    "repair": "167",
+    "skill": {
+      "id": "60231",
+      "name": "Repair Unit I",
+      "icon": "Icon_skill_passive_3102",
+      "effect": "When the action starts, repair yourself <color=#F74848>once</color>, restoring HP equal to <color=#F74848>0.6x</color> the Manipulator's Repair AMT. This cannot repair damaged parts."
+    }
+  },
+  "60100102": {
+    "name": "Power Bank",
+    "quality": "R",
+    "weight": "100",
+    "main_type": "PowerAdd",
+    "st_type": "Light/Medium/Heavy",
+    "icon": "Icon_backpack_60100101",
+    "how_get": "无",
+    "related_description": "A miniaturized power supply unit that can be attached to an ST to raise its load limit.",
+    "skill": {
+      "id": "60001",
+      "name": "Power Boost I",
+      "icon": "Icon_skill_passive_5148",
+      "effect": "ST gains an extra <color=#F74848>200</color> Power.\nST Body's HP <color=#F74848>+6%</color>, DMG Dealt <color=#F74848>+2%</color>."
+    }
+  }
+}

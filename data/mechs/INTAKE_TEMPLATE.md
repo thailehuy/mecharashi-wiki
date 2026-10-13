@@ -1,6 +1,6 @@
 <!--
 Mech intake form — fill this in and hand it back; Claude will turn it into
-data/mechs/<ID>.json (following the TEMPLATE.json structure) and run
+rows in the data/db/ tables (see data/README.md "Adding an ST") and run
 compile.py.
 
 - Leave a field blank / delete a line if it doesn't apply (e.g. no modules
@@ -10,116 +10,100 @@ compile.py.
   file names under data/unlisted/mechs/ (see **Images** below) — reuse an
   existing CDN key if a similar mech already has one, or use the new local
   filenames if this mech's art is only available locally.
-- See data/README.md for what each field means.
 
-Checklist for whoever (or whichever agent) turns this into the JSON file:
+Checklist for whoever (or whichever agent) turns this into table rows:
 
-1. Copy `data/mechs/TEMPLATE.json` structure: exactly 4 part objects, in
-   order `Body` / `L-Arm` / `R-Arm` / `Legs` (`position` drives the "which
-   part is this" logic in compile.py — use these English names, not the
-   Chinese ones some older CN-derived files still have).
-2. Body's `ID` is the mech's overall ID and MUST match the `<ID>.json`
-   filename. The other three parts can reuse suffixed IDs
-   (`<ID>_ARM_L`/`<ID>_ARM_R`/`<ID>_LEGS`) like the template does — they
-   just need to be unique within the file.
-3. Stat fields per part (see data/README.md "Adding a mech" for the full
-   list): `aircraftWeight`/`durable`/`Armor`/`fire` on every part;
-   `output`+`Antiriot` on Body only; `Hit` on both arms; `Dodge` (and
-   usually `move`) on Legs only.
-4. `icon` is required on every part (used for the listing-grid/detail
-   thumbnail). `mechaIcon` and `lihuiIcon` (Body only) are CDN-only keys —
-   leave them as placeholders if there's no CN CDN asset, the local
-   fallback only covers `icon`/portrait, not `mechaIcon`.
-5. `introduce` (flavor text) only needs to be filled on the Body part —
-   that's the only one shown on the detail page, but the template repeats
-   it on all four parts for consistency; keep them identical.
-6. `ModuleCarried` is an array of module objects (can be left as `[]` if
-   the part carries none) — see data/modules/ for the shape of a module
-   object (`ID`/`name`/`SpecificEffects`/`BufCarried`/`icon`/`weight`/`id`/
-   `level`), or ask Claude to look one up from an existing mech with a
-   similar module loadout. Check `data/modules/compiled.json` for the
-   module's family (`id`) first — if a family with that exact ID already
-   exists there and isn't the same module, PICK A DIFFERENT, unused family
-   number instead of overwriting it (this bit a real mech once: reusing an
-   in-use family silently swapped in a real module's slider content). If
-   the module is genuinely new (no existing family/effect to reuse), it has
-   no CN catalog entry to source per-level text from — the intake form's
-   effect text must give the FULL per-level ladder (every level's numbers,
-   not just the max/current one, e.g. "3/6/9/15%" for a 4-level module), and
-   whoever builds the JSON must also add a `MANUAL_MODULES` entry for its
-   family in `data/modules/compile.py` with a `levels` dict covering every
-   level 1..maxLevel (see the existing `9010`/`1050` entries there for the
-   pattern, including how a bonus clause that only unlocks at max level is
-   handled) — skipping this means the module shows blank text the moment
-   the level slider is dragged below max.
-7. `manji` (per part) holds max-level (Lv.60+) stat overrides — fill in the
-   same stat fields at their max values. If omitted entirely, compile.py
-   falls back to the base stats for that part.
-8. Images: every `icon` referenced should exist as a file under
+1. data/db/mechs.json row keyed by the Body part ID (8-digit, unused —
+   check mechs.json and mech_parts.json). Its `parts` list names 4
+   data/db/mech_parts.json rows in Body / L-Arm / R-Arm / Legs order; the
+   non-Body parts can use `<ID>_ARM_L` / `<ID>_ARM_R` / `<ID>_LEGS`.
+2. Part rows hold the max-level stats below: `weight`/`hp`/`armor`
+   on every part; `antiriot` on Body only; `hit` on both arms; `dodge` on
+   Legs only. The mech row's `output` is the Body's weight capacity and
+   `firepower` the max-level Firepower.
+3. `icon` (listing-grid/detail thumbnail) and `portrait_icon`/`mecha_icon`
+   (CDN-only keys, leave out if there's no CN CDN asset) go on the mech row,
+   as does `introduce` (flavor text).
+4. `modules` is a list of `{ "family": "<id>", "level": <n> }` pointing at
+   data/db/modules.json. A module "same as others" reuses that family. A
+   genuinely new module needs a NEW, unused family ID — reusing an in-use
+   family silently swaps in a real module's text (this happened once). If
+   it's listed on the Modules page (`category` set), the intake text must
+   give the FULL per-level ladder (every level's numbers, e.g. "3/6/9/15%"
+   for a 4-level module) so each level row has its own `effect` — otherwise
+   the level slider shows blank text below max.
+5. Images: every `icon` referenced should exist as a file under
    `data/unlisted/mechs/Icon/<Type>/` (grid/detail thumbnail) and, for a
    full detail-page portrait, `data/unlisted/mechs/Raw/<Type>/` — check
    with `ls` before using one. The site tries the local file first and
-   only falls back to the CN CDN if that 404s, so a wrong/missing local
-   filename means a broken icon even if the CDN also doesn't have it. If
-   there are alternate-skin files under `data/unlisted/mechs/Skins/<Type>/`
-   (named `Img_Skin_<wap-id>_<variant>.png`), add each `<variant>` token to
-   the Body part's `AlternateSkins` array so the detail page's skin
-   slider picks them up.
-9. After writing the JSON (+ a `<ID>-translation.json` with just
-   `{ "version": "X.Y" }`), run `python3 compile.py` and confirm the mech
-   shows up in `data/mechs/compiled.json`.
+   only falls back to the CN CDN if that 404s. If there are alternate-skin
+   files under `data/unlisted/mechs/Skins/<Type>/` (named
+   `Img_Skin_<wap-id>_<variant>.png`), list each `<variant>` token in the
+   mech row's `skins`.
+6. Set `version` (and `dispatch_version`/`dispatch_group` if known), run
+   `python3 compile.py` (it fails on any broken ID reference) and confirm
+   the mech shows up in `data/mechs/compiled.json`.
 -->
 
 ## Basics
+<!-- → data/db/mechs.json row -->
 
-- Mech ID: <8-digit numeric ID, check `ls data/mechs` for collisions>
-- Mech Name: Nivequus
-- Type (weight class): Light
-- Quality: SSR
-- Game version introduced: 3.7
-- Dispatch version: 3.8
-- Flavor text / lore description:
+- Mech ID: <8-digit numeric Body part ID, check data/db/mechs.json and mech_parts.json for collisions>
+- Mech Name: Nivequus                      <!-- name -->
+- Type (weight class): Light               <!-- type: Light / Medium / Heavy -->
+- Quality: SSR                             <!-- quality -->
+- Game version introduced: 3.7             <!-- version -->
+- Dispatch version: 3.8                    <!-- dispatch_version (+ dispatch_group if known) -->
+- Flavor text / lore description:          <!-- introduce -->
 
 ## Images
 <!-- icon is prefixed with data/unlisted/mechs/Icon/<Type>/ -->
 <!-- portrait (Raw) is prefixed with data/unlisted/mechs/Raw/<Type>/ -->
 <!-- alternate skins (if any) are prefixed with data/unlisted/mechs/Skins/<Type>/ -->
-- Icon file (all 4 parts share this): Icon_mecha_wap1071.png
-- Portrait/Raw file (Body only): Icon_mecha_wap1071_SN_Raw.png
-- mechaIcon (CDN key, per part, only if a CN CDN asset exists): Icon_wap1071_1
-- lihuiIcon (CDN key, Body only, only if a CN CDN asset exists): icon_lihui_wap1071
-- Alternate skins (Body only, list each variant token you have a
-  `Img_Skin_wap1071_<variant>.png` file for, or "none"): none
+- Icon file: Icon_mecha_wap1071.png        <!-- icon (without .png) -->
+- Portrait/Raw file: Icon_mecha_wap1071_SN_Raw.png  <!-- found from `icon`, no field needed -->
+- CDN mecha icon (only if a CN CDN asset exists): Icon_wap1071_1      <!-- mecha_icon -->
+- CDN portrait key (only if a CN CDN asset exists): icon_lihui_wap1071 <!-- portrait_icon -->
+- Alternate skins (list each variant token you have a
+  `Img_Skin_wap1071_<variant>.png` file for, or "none"): none        <!-- skins -->
 
-### Body — max level (manji) overrides
-- Durable: 11149
-- Fire: 1264
+## Max-level stats
+<!-- Each part → one data/db/mech_parts.json row (Body / L-Arm / R-Arm / Legs).
+     HP → hp, Weight → weight, Armor → armor, Crit RES → antiriot,
+     Hit → hit, Dodge → dodge. Body's Firepower → the mech row's `firepower`,
+     Body's Output → the mech row's `output` (weight capacity).
+     Per-part Firepower and Move aren't stored (not displayed). -->
+
+### Body
+- HP: 11149
+- Firepower: 1264
 - Weight: 280
 - Output: 2725
-- Antiriot: 4472
+- Crit RES: 4472
 - Armor: 706
 
-### L-Arm — max level (manji) overrides
-- Durable: 5810
-- Fire: 1264
+### L-Arm
+- HP: 5810
 - Weight: 170
+- Armor:
 - Hit: 2091
 
-### R-Arm — max level (manji) overrides
-- Durable: 5810
-- Fire: 1264
+### R-Arm
+- HP: 5810
 - Weight: 170
+- Armor:
 - Hit: 2091
 
-### Legs — max level (manji) overrides
-- Durable: 9480
-- Fire: 1264
+### Legs
+- HP: 9480
 - Weight: 205
+- Armor:
 - Dodge: 3885
-- Move: 3
 
 ## Modules
-<!-- Copy this block for each distinct module referenced above. -->
+<!-- Copy this block for each module the ST carries. Each one → a
+     { "family": "<id>", "level": <n> } entry in the mech row's `modules`;
+     a new module also needs a data/db/modules.json family (see checklist 4). -->
 ### Module 1
 - Name: Frostedge Amplifier
 - Level: 4/4
@@ -129,8 +113,8 @@ Checklist for whoever (or whichever agent) turns this into the JSON file:
 ### Module 2
 - Name: Firepower Module
 - Level: 4/4
-- Effect text: Same as others, ID 40274
-- Icon name: Same as others, ID 40274
+- Effect text: Same as others, family 4027 level 4 (ID 40274)
+- Icon name: Same as others
 
 ### Module 3
 - Name: First Strike Module
@@ -139,8 +123,8 @@ Checklist for whoever (or whichever agent) turns this into the JSON file:
 - Icon name: Icon_entry_10001
 
 ### Glossary buf 1
-<!-- Pick a random unique ID for this in the <buf> tag and add the tag to all referenced text from this pilot -->
+<!-- Pick an unused ID for the <buf> tag, add the entry to data/glossary.json (`buf`), and tag every reference in this ST's module text -->
 
 ### Glossary skill 1
-<!-- Pick a random unique ID for this in the <skill> tag and add the tag to all referenced text from this pilot -->
+<!-- Pick an unused ID for the <skill> tag, add the entry to data/glossary.json (`skill`), and tag every reference in this ST's module text -->
 <!-- Also scan the skill text itself and link necessary tags -->

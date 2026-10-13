@@ -1,0 +1,3495 @@
+{
+  "20470103": {
+    "name": "Aglow",
+    "type": "Medium",
+    "quality": "SSR",
+    "icon": "Icon_mecha_wap2047",
+    "mecha_icon": "Icon_wap2047_1",
+    "portrait_icon": "icon_lihui_wap2047",
+    "introduce": "LTX-210 Aglow\nThis model is a cutting-edge medium maintainer ST developed by Laniakea, part of the innovative R&D line that includes the Arcus and Aurora.\nDesignated as Model III, the Aglow features the advanced L1102-M propulsion system, similar to the Aurora, but with a more aggressive Activity Cycle program tailored for its Manipulator and internal drive. While the Aurora excels in pre-battle protection, the Aglow is designed for relentless combat, prioritizing rapid repairs for STs in danger and stability in high-intensity battles. Unfortunately, the lack of a suitable scenario raises significant concerns for Laniakea and the UNCS Industry and Technology Department about the future of its production line.",
+    "output": "2475",
+    "durable": "340",
+    "armor": "72",
+    "fire": "112",
+    "antiriot": "770",
+    "firepower": "1098",
+    "version": "1.2",
+    "skins": [
+      "S1"
+    ],
+    "dispatch_group": "InnovativE",
+    "dispatch_version": "1.4",
+    "parts": [
+      "20470103",
+      "20470203",
+      "20470303",
+      "20470403"
+    ],
+    "modules": [
+      {
+        "family": "4004",
+        "level": 4
+      },
+      {
+        "family": "2032",
+        "level": 4
+      },
+      {
+        "family": "3022",
+        "level": 8
+      }
+    ]
+  },
+  "30280103": {
+    "name": "Alicorn",
+    "type": "Heavy",
+    "quality": "SSR",
+    "icon": "Icon_mecha_wap3028",
+    "mecha_icon": "Icon_wap3028_1",
+    "portrait_icon": "icon_lihui_wap3028",
+    "introduce": "HR-675 Alicorn\nDeveloped by Horizon, this Heavy ST is currently deployed in only a few units of the Dawnstar League Armored Forces.\nFollowing the success of Rex, Horizon introduced this new model. While both Alicorn and Rex are designed for long-range combat, they employ completely opposite design philosophies. If Rex is a glass cannon that sacrifices defense for speed, then Alicorn is a mobile fortress that balances firepower and protection, featuring a complete defensive system. Its composite armor is connected to the fire control system, continuously collecting environmental intel for real-time algorithms, ensuring protection while supporting the pilot's ranged attacks, perfectly showcasing Horizon's expertise in sniper models.",
+    "output": "2070",
+    "durable": "449",
+    "armor": "144",
+    "fire": "119",
+    "antiriot": "770",
+    "firepower": "1166",
+    "version": "2.0",
+    "skins": [
+      "S1"
+    ],
+    "dispatch_group": "InnovativE",
+    "dispatch_version": "2.1",
+    "parts": [
+      "30280103",
+      "30280203",
+      "30280303",
+      "30280403"
+    ],
+    "modules": [
+      {
+        "family": "4001",
+        "level": 4
+      },
+      {
+        "family": "2024",
+        "level": 4
+      },
+      {
+        "family": "3035",
+        "level": 8
+      }
+    ]
+  },
+  "20520103": {
+    "name": "Arbiter",
+    "type": "Medium",
+    "quality": "SSR",
+    "icon": "Icon_mecha_wap2052",
+    "mecha_icon": "Icon_wap2052_1",
+    "portrait_icon": "icon_lihui_wap2052",
+    "introduce": "LTX-219 Arbiter\nA medium tactical ST developed by Laniakea. It is a new ST launched in the Arcus-Aurora development line.\nThe LTX-219 inherits the double advantages of the Arcus series tactical ST and the Aurora series engineering ST. Its core Fireweaver Chip can coordinate the firing strategy and strike method of tactical weapons in real-time according to the battlefield situation. Especially in terms of ammo loading and strike coverage, it has achieved a qualitative improvement compared to previous models. The L1102-X propulsion system, iterated from the Arcus, allows the Arbiter to achieve more stable firing conditions in mobile warfare, minimizing the interference of battlefield movement on strike accuracy.",
+    "output": "3000",
+    "durable": "372",
+    "armor": "72",
+    "fire": "127",
+    "antiriot": "770",
+    "firepower": "1245",
+    "version": "2.1",
+    "skins": [
+      "S1"
+    ],
+    "dispatch_group": "InnovativE",
+    "dispatch_version": "2.3",
+    "parts": [
+      "20520103",
+      "20520203",
+      "20520303",
+      "20520403"
+    ],
+    "modules": [
+      {
+        "family": "2047",
+        "level": 4
+      },
+      {
+        "family": "3036",
+        "level": 8
+      },
+      {
+        "family": "4007",
+        "level": 4
+      }
+    ]
+  },
+  "20270103": {
+    "name": "Arcus",
+    "type": "Medium",
+    "quality": "SSR",
+    "icon": "Icon_mecha_wap2027",
+    "mecha_icon": "Icon_wap2027_1",
+    "portrait_icon": "icon_lihui_wap2027",
+    "introduce": "LTX-212 Arcus\nA medium tactical ST developed by Laniakea and planned for deployment in the NDF Forerunner Tactical Strike Squad.\nIt's shoulder is embedded with a synchronize hub, which uses nano-transistor wires to coordinate its Arashium alloy frame's energy distribution with long-range firepower, maximizing efficiency with tactical weapons. In addition, the L1102-X propulsion system installed in the Arcus exhibits similar performance to the L1102-M used in the Aurora, with an optimized OS that significantly improves battlefield reaction speed, allowing for rapid deployment in high-intensity combat.",
+    "output": "2920",
+    "durable": "309",
+    "armor": "72",
+    "fire": "118",
+    "antiriot": "770",
+    "firepower": "1157",
+    "version": "1.0",
+    "skins": [
+      "01"
+    ],
+    "dispatch_group": "Arsenal",
+    "dispatch_version": "1.0",
+    "parts": [
+      "20270103",
+      "20270203",
+      "20270303",
+      "20270403"
+    ],
+    "modules": [
+      {
+        "family": "2008",
+        "level": 4
+      },
+      {
+        "family": "3017",
+        "level": 8
+      },
+      {
+        "family": "4007",
+        "level": 4
+      }
+    ]
+  },
+  "10700103": {
+    "name": "Asteria",
+    "type": "Light",
+    "quality": "SSR",
+    "icon": "Icon_mecha_wap1070",
+    "mecha_icon": "Icon_wap1070_1",
+    "portrait_icon": "icon_lihui_wap1070",
+    "introduce": "",
+    "output": "1785",
+    "durable": "352",
+    "armor": "48",
+    "fire": "123",
+    "antiriot": "770",
+    "firepower": "1225",
+    "version": "3.5",
+    "parts": [
+      "10700103",
+      "10700103_ARM_L",
+      "10700103_ARM_R",
+      "10700103_LEGS"
+    ],
+    "modules": [
+      {
+        "family": "9024",
+        "level": 4
+      },
+      {
+        "family": "4027",
+        "level": 4
+      },
+      {
+        "family": "9034",
+        "level": 8
+      },
+      {
+        "family": "9040",
+        "level": 2
+      }
+    ]
+  },
+  "20190103": {
+    "name": "Aurora",
+    "type": "Medium",
+    "quality": "SSR",
+    "icon": "Icon_mecha_wap2019",
+    "mecha_icon": "Icon_wap2019_1",
+    "portrait_icon": "icon_lihui_wap2019",
+    "introduce": "LTX-201P Aurora\nA medium maintainer ST developed by Laniakea. Its performance is on par with the DL's Blazer and it enjoys a respectable reputation among the UNCS Border Forces.\nIt is equipped with the L1102-M propulsion system and has been specialized to carry a manipulator on its back, allowing it to maintain its balance while executing repair commands. The additional scanner can detect manipulator damage, enabling more precise repairs.\nCurrently, it is only deployed by the NDF, and there are no plans for commercialization.",
+    "output": "2485",
+    "durable": "343",
+    "armor": "72",
+    "fire": "109",
+    "antiriot": "770",
+    "firepower": "1068",
+    "version": "1.0",
+    "dispatch_group": "GeekX",
+    "dispatch_version": "1.0",
+    "parts": [
+      "20190103",
+      "20190203",
+      "20190303",
+      "20190403"
+    ],
+    "modules": [
+      {
+        "family": "2012",
+        "level": 4
+      },
+      {
+        "family": "3024",
+        "level": 8
+      },
+      {
+        "family": "4008",
+        "level": 4
+      }
+    ]
+  },
+  "30390103": {
+    "name": "Avalanche",
+    "type": "Heavy",
+    "quality": "SSR",
+    "icon": "Icon_mecha_wap3034",
+    "mecha_icon": "Icon_wap3034_1",
+    "portrait_icon": "icon_lihui_wap3034",
+    "introduce": "",
+    "output": "2060",
+    "durable": "470",
+    "armor": "144",
+    "fire": "119",
+    "antiriot": "770",
+    "firepower": "1176",
+    "version": "3.5",
+    "dispatch_group": "Arsenal",
+    "dispatch_version": "3.6",
+    "parts": [
+      "30390103",
+      "30390103_ARM_L",
+      "30390103_ARM_R",
+      "30390103_LEGS"
+    ],
+    "modules": [
+      {
+        "family": "9023",
+        "level": 4
+      },
+      {
+        "family": "4001",
+        "level": 4
+      },
+      {
+        "family": "9033",
+        "level": 8
+      }
+    ]
+  },
+  "20430103": {
+    "name": "Bawang",
+    "type": "Medium",
+    "quality": "SSR",
+    "icon": "Icon_mecha_wap2043",
+    "mecha_icon": "Icon_wap2043_1",
+    "portrait_icon": "icon_lihui_wap2043",
+    "introduce": "MCT-AP07 霸王\n全称为「塔罗斯精神力机甲亚太七号机·霸王」，隶属于亚太战区，适配驾驶员为郑乐萱。\n该机收集了原属世界秦末时期著名将领、军事家西楚霸王项羽的精神粒子作为动力炉内核，以高强度框架与诸多可拓展模块构筑机身，并搭载了独特的玄门磁极引擎·景——这一系列设计确保霸王拥有极为出色的防御与火力投射能力，足以在任何战场胜任「前沿支点」的职责。",
+    "output": "1955",
+    "durable": "450",
+    "armor": "96",
+    "fire": "127",
+    "antiriot": "770",
+    "firepower": "1245",
+    "version": "2.8",
+    "dispatch_group": "Arsenal",
+    "dispatch_version": "3.0",
+    "parts": [
+      "20430103",
+      "20430203",
+      "20430303",
+      "20430403"
+    ],
+    "modules": [
+      {
+        "family": "4002",
+        "level": 4
+      },
+      {
+        "family": "2064",
+        "level": 2
+      },
+      {
+        "family": "3053",
+        "level": 8
+      },
+      {
+        "family": "2062",
+        "level": 4
+      }
+    ]
+  },
+  "10510103": {
+    "name": "Benxiao",
+    "type": "Light",
+    "quality": "SSR",
+    "icon": "Icon_mecha_wap1051",
+    "mecha_icon": "Icon_wap1051_1",
+    "portrait_icon": "icon_lihui_wap1051",
+    "introduce": "DD-217 奔霄\n由神州设计师主导设计，多尔工业与角雕商会联合开发的轻型机兵。\n奔霄在多尔工业成熟的第三世代机兵通用框架上，引入了大量神州独有的机械设计，这使得该型机兵在外型上独树一帜。精细调整的超高增压发动机与XF4S轻量框架为其取得了防护与机动近乎完美的平衡，安装于腿部的KERBS动能循环增强系统与足部驱动轮又为其提供了优秀的战时机动和瞬时输出功率。此外，由角雕商会自行开发的试验型辅助模组「逐鸿核心」配置于机师舱内部，可自动完成对动能的精准化回收与增强，大幅提升作战效能。\n对米赫玛岛而言，无论是在技术层面还是政治层面上，这无疑都是一型有着特殊意义的机兵。",
+    "output": "1765",
+    "durable": "352",
+    "armor": "48",
+    "fire": "123",
+    "antiriot": "770",
+    "firepower": "1206",
+    "version": "3.1",
+    "skins": [
+      "S1"
+    ],
+    "dispatch_group": "Arsenal",
+    "dispatch_version": "3.2",
+    "parts": [
+      "10510103",
+      "10510203",
+      "10510303",
+      "10510403"
+    ],
+    "modules": [
+      {
+        "family": "2068",
+        "level": 4
+      },
+      {
+        "family": "3056",
+        "level": 8
+      },
+      {
+        "family": "4027",
+        "level": 4
+      }
+    ]
+  },
+  "20130103": {
+    "name": "Blazer",
+    "type": "Medium",
+    "quality": "SSR",
+    "icon": "Icon_mecha_wap2013",
+    "mecha_icon": "Icon_wap2013_1",
+    "portrait_icon": "icon_lihui_wap2013",
+    "introduce": "KX-066 Blazer\nThe \"Mobile Repair Station.\" A medium maintainer ST produced by Kamadar Corporation, featuring a unique assist system.\nThe prototype for this ST was the Kamadar engineering SL - KX-037, later improved by the machinist Champmathieu Favre and utilized by rebels. After the Dawnstar League confiscated this model, it was handed over to Kamadar for reverse engineering and optimization, further improving its armor level and terrain adaptability. It was then renamed, put into production, and put into use by the DLAF.",
+    "output": "2690",
+    "durable": "324",
+    "armor": "72",
+    "fire": "116",
+    "antiriot": "770",
+    "firepower": "1137",
+    "version": "1.0",
+    "skins": [
+      "01",
+      "02"
+    ],
+    "dispatch_group": "Sparkplug",
+    "dispatch_version": "1.0",
+    "parts": [
+      "20130103",
+      "20130203",
+      "20130303",
+      "20130403"
+    ],
+    "modules": [
+      {
+        "family": "2011",
+        "level": 4
+      },
+      {
+        "family": "3023",
+        "level": 8
+      },
+      {
+        "family": "4008",
+        "level": 4
+      }
+    ]
+  },
+  "20710103": {
+    "name": "Blue Anonymous Bird",
+    "type": "Medium",
+    "quality": "SSR",
+    "icon": "Icon_mecha_wap2071",
+    "mecha_icon": "Icon_wap2071_1",
+    "portrait_icon": "icon_lihui_wap2071",
+    "introduce": "",
+    "output": "2725",
+    "durable": "446",
+    "armor": "941",
+    "fire": "127",
+    "antiriot": "770",
+    "firepower": "1264",
+    "version": "3.6",
+    "parts": [
+      "20710103",
+      "20710103_ARM_L",
+      "20710103_ARM_R",
+      "20710103_LEGS"
+    ],
+    "modules": [
+      {
+        "family": "9026",
+        "level": 4
+      },
+      {
+        "family": "4003",
+        "level": 4
+      },
+      {
+        "family": "9036",
+        "level": 8
+      }
+    ]
+  },
+  "20220103": {
+    "name": "Blue Bird",
+    "type": "Medium",
+    "quality": "SSR",
+    "icon": "Icon_mecha_wap2022",
+    "mecha_icon": "Icon_wap2022_1",
+    "portrait_icon": "icon_lihui_wap2022",
+    "introduce": "OS-79 Blue Bird\nA cutting-edge medium ST developed by Obsidian that has gained attention for its outstanding performance and unique appearance.\nEquipped with the BM battlefield analysis module, built using data from the legendary XR. By receiving real-time information from reconnaissance devices, the Blue Bird's unique OS quickly generates detailed posture analysis to analyze the behavioral patterns of enemy STs, allowing pilots to make tactical adjustments and launch powerful attacks on weak points in the enemy line.",
+    "output": "1990",
+    "durable": "373",
+    "armor": "96",
+    "fire": "114",
+    "antiriot": "770",
+    "firepower": "1117",
+    "version": "1.0",
+    "skins": [
+      "01"
+    ],
+    "dispatch_group": "InnovativE",
+    "dispatch_version": "1.0",
+    "parts": [
+      "20220103",
+      "20220203",
+      "20220303",
+      "20220403"
+    ],
+    "modules": [
+      {
+        "family": "2002",
+        "level": 4
+      },
+      {
+        "family": "4003",
+        "level": 4
+      },
+      {
+        "family": "3010",
+        "level": 8
+      }
+    ]
+  },
+  "30270103": {
+    "name": "Colossus",
+    "type": "Heavy",
+    "quality": "SSR",
+    "icon": "Icon_mecha_wap3027",
+    "mecha_icon": "Icon_wap3027_1",
+    "portrait_icon": "icon_lihui_wap3027",
+    "introduce": "KX-101HA Colossus\nManufactured by Kamadar, this heavy ST is the culmination of second-generation technology.\nAlthough a newly released model, the KX-101HA Colossus does not rely on a new design as its selling point. Instead, it integrates a large amount of mature and reliable existing technology—heavy composite armor, high-capacity weapon hardpoints, a streamlined shield generator, localized tactical data links, and more. These battle-tested technologies work smoothly together under the integration of the Iron Rain Transmuter, pushing the Colossus's basic performance to the extreme—even significantly ahead of some third-generation STs in certain parameters.",
+    "output": "2075",
+    "durable": "459",
+    "armor": "144",
+    "fire": "118",
+    "antiriot": "770",
+    "firepower": "1157",
+    "version": "2.4",
+    "skins": [
+      "S1"
+    ],
+    "dispatch_group": "Arsenal",
+    "dispatch_version": "2.5",
+    "parts": [
+      "30270103",
+      "30270203",
+      "30270303",
+      "30270403"
+    ],
+    "modules": [
+      {
+        "family": "4005",
+        "level": 4
+      },
+      {
+        "family": "2054",
+        "level": 4
+      },
+      {
+        "family": "3044",
+        "level": 8
+      }
+    ]
+  },
+  "20600103": {
+    "name": "Demiurge",
+    "type": "Medium",
+    "quality": "SSR",
+    "icon": "Icon_mecha_wap2060",
+    "mecha_icon": "Icon_wap2060_1",
+    "portrait_icon": "icon_lihui_wap2060",
+    "introduce": "HRX-112VE 弥造者\n以海莉丝的设计为基础，经地平线公司、防卫军先进武器研究院先后开发，由维斯珀尔最终完成的中型机兵，也是世界上第一部真正的第四世代机兵。\n该机装备了两组新式岚物质自循环引擎，且与全身钢岚合金框架直接链接，不仅可以提供强大的出力，还可通过施加精确的电磁影响，即时控制各处的岚粒子压缩与释放，使得该机在维持较轻重量的同时拥有远超常规的机械强度。此外，全新设计的通用武装接口使得该机不仅可以兼容多型常规武装，还可在特定条件下将岚粒子高效应用于战斗之中。这一系列先进但又过于复杂的机体设计带来了极大的不稳定性，曾一度被认为无法投入实用，但在海莉丝借助「遗产」之力完成了「真知系统」与「帕姆斯阵列」统筹其系统运作之后，HRX-112VE弥造者真正成为了维斯珀尔撼动局势的最终兵器。",
+    "output": "3375",
+    "durable": "459",
+    "armor": "96",
+    "fire": "128",
+    "antiriot": "770",
+    "firepower": "1255",
+    "version": "3.0",
+    "hidden_modules": [
+      {
+        "name": "Universal Singularity",
+        "icon": "Icon_skill_passive_5266",
+        "SpecificEffects": "Removes restrictions, enhances all forms:\n<b>Vanguard</b>: Critical Hit chance and Critical Hit DMG increase by <color=#F74848>10%</color>.\n<b>Assault</b>: Assault weapon bullet count <color=#F74848>+1</color>.\n<b>Tactical</b>: Hit Rate increases by <color=#F74848>3%</color> for every <color=#F74848>1</color> AP consumed when using tactical weapons, up to <color=#F74848>15%</color>.\n<b><skill passiveSkill=800159>[Virtual Particle Form]</skill></b>: AP consumption reduces by <color=#F74848>-1</color>, Final DMG dealt increases by <color=#F74848>15%</color>, movement increases by <color=#F74848>+1</color>.\n<b>Only [Hailis] can activate this module.</b>"
+      }
+    ],
+    "parts": [
+      "20600103",
+      "20600203",
+      "20600303",
+      "20600403"
+    ],
+    "modules": [
+      {
+        "family": "4027",
+        "level": 4
+      },
+      {
+        "family": "2065",
+        "level": 4
+      },
+      {
+        "family": "3054",
+        "level": 8
+      }
+    ]
+  },
+  "30110103": {
+    "name": "Dias",
+    "type": "Heavy",
+    "quality": "SSR",
+    "icon": "Icon_mecha_wap3011",
+    "mecha_icon": "Icon_wap3011_1",
+    "portrait_icon": "icon_lihui_wap3011",
+    "introduce": "HU-35 Dias\nA heavy ST produced by the UKB-1, and ordered and equipped by the NDF.\nThe Dias is equipped with the \"Bloodlust\" core and was initially smuggled into the UNCS for use in underground mech fights. The UNCS military has since seized these black market STs and integrated them into its fighting force.",
+    "output": "2085",
+    "durable": "382",
+    "armor": "144",
+    "fire": "107",
+    "antiriot": "770",
+    "firepower": "1049",
+    "version": "1.0",
+    "dispatch_group": "InnovativE",
+    "dispatch_version": "1.0",
+    "parts": [
+      "30110103",
+      "30110203",
+      "30110303",
+      "30110403"
+    ],
+    "modules": [
+      {
+        "family": "2019",
+        "level": 4
+      },
+      {
+        "family": "3013",
+        "level": 8
+      },
+      {
+        "family": "4005",
+        "level": 4
+      }
+    ]
+  },
+  "10110103": {
+    "name": "Dopplesoldner",
+    "type": "Light",
+    "quality": "SSR",
+    "icon": "Icon_mecha_wap1011",
+    "mecha_icon": "Icon_wap1011_1",
+    "portrait_icon": "icon_lihui_wap1011",
+    "introduce": "OS-07X Dopplesoldner\nOne of Obsidian's high-performance light STs, developed based on the OS-06F Diana's combat data.\nAs a highly maneuverable execution model, it is equipped with the \"Zweihander\" combat core, a modification of the \"Eden Core.\"\nThe balance between the limbs and torso on this ST has been carefully calibrated to maximize it's killing power.",
+    "output": "1425",
+    "durable": "300",
+    "armor": "48",
+    "fire": "118",
+    "antiriot": "770",
+    "firepower": "1157",
+    "version": "1.0",
+    "skins": [
+      "S1"
+    ],
+    "dispatch_group": "Sparkplug",
+    "dispatch_version": "1.0",
+    "parts": [
+      "10110103",
+      "10110203",
+      "10110303",
+      "10110403"
+    ],
+    "modules": [
+      {
+        "family": "3005",
+        "level": 8
+      },
+      {
+        "family": "2001",
+        "level": 4
+      },
+      {
+        "family": "4004",
+        "level": 4
+      }
+    ]
+  },
+  "30150103": {
+    "name": "Dragonrider",
+    "type": "Heavy",
+    "quality": "SSR",
+    "icon": "Icon_mecha_wap3015",
+    "mecha_icon": "Icon_wap3015_1",
+    "portrait_icon": "icon_lihui_wap3015",
+    "introduce": "DD-360 Dragonrider\nA heavy ST manufactured by Dole Industries.\nThe shoulders feature an aberrant Steelstorm frame design with an expanded variable-liquid core. It can maximize shoulder kinetic output according to the pilot's combat habits, enabling more powerful and agile melee strikes.",
+    "output": "1805",
+    "durable": "436",
+    "armor": "144",
+    "fire": "112",
+    "antiriot": "770",
+    "firepower": "1098",
+    "version": "1.1",
+    "skins": [
+      "S1"
+    ],
+    "dispatch_group": "Arsenal",
+    "dispatch_version": "1.4",
+    "parts": [
+      "30150103",
+      "30150203",
+      "30150303",
+      "30150403"
+    ],
+    "modules": [
+      {
+        "family": "3004",
+        "level": 8
+      },
+      {
+        "family": "4006",
+        "level": 4
+      },
+      {
+        "family": "2020",
+        "level": 4
+      }
+    ]
+  },
+  "10180103": {
+    "name": "Dreadtalon",
+    "type": "Light",
+    "quality": "SSR",
+    "icon": "Icon_mecha_wap1018",
+    "mecha_icon": "Icon_wap1018_1",
+    "portrait_icon": "icon_lihui_wap1018",
+    "introduce": "OS-09S Dreadtalon\nOne of Obsidian's high-performance light STs, developed based on the OS-06F Diana's combat data.\nThis ST is designed for precision strikes and excels at processing battlefield information, boasting a high efficiency rate in actual combat.\nEquipped with the \"Dominator\" combat core, this unit can assist the pilot in completing a range of actions such as surveillance, positioning, aiming, and striking.",
+    "output": "1385",
+    "durable": "328",
+    "armor": "48",
+    "fire": "108",
+    "antiriot": "770",
+    "firepower": "1059",
+    "version": "1.0",
+    "skins": [
+      "S1"
+    ],
+    "dispatch_group": "Arsenal",
+    "dispatch_version": "1.1",
+    "parts": [
+      "10180103",
+      "10180203",
+      "10180303",
+      "10180403"
+    ],
+    "modules": [
+      {
+        "family": "2015",
+        "level": 4
+      },
+      {
+        "family": "4001",
+        "level": 4
+      },
+      {
+        "family": "3002",
+        "level": 8
+      }
+    ]
+  },
+  "20180103": {
+    "name": "Erinys",
+    "type": "Medium",
+    "quality": "SSR",
+    "icon": "Icon_mecha_wap2018",
+    "mecha_icon": "Icon_wap2018_1",
+    "portrait_icon": "icon_lihui_wap2018",
+    "introduce": "XR-03-E Erinys\nA Medium ST jointly developed by UNCS and Obsidian. Nominally the successor to \"XR-Rebirth\" and \"XR-Judgment,\" its customization philosophy remains singular in purpose: to serve the transformed Rosa Diaz alone. In addition to matrixing the \"Mirror Core\" mounted on the XR, it also enhances the linkage between assault and tactical weaponry according to Rosa Diaz's personal combat style. Due to anomalous fluctuations observed in XR-03-E's arashi material structure while piloted by Rosa, relevant researchers have already initiated a follow-up investigation. What cannot be denied is this: XR-03-E's rebirth has only one objective—to once again become the blade with which Rosa Diaz passes judgment upon all.",
+    "output": "2930",
+    "durable": "379",
+    "armor": "72",
+    "fire": "125",
+    "antiriot": "770",
+    "firepower": "1225",
+    "version": "2.0",
+    "skins": [
+      "S1"
+    ],
+    "hidden_modules": [
+      {
+        "name": "Restriction Removal",
+        "icon": "Icon_entry_10086",
+        "SpecificEffects": "When Eruption Mod reaches maximum level, activates the Hidden Mod of each part.\nBody activates [Mode - Martial]\nL-Arm activates [Mode - Moonflower]\nR-Arm activates [Mode - Affection]\nLegs activate [Mode - Unhurt]."
+      },
+      {
+        "name": "Mode - Martial",
+        "part": "Body",
+        "icon": "Icon_skill_passive_1130",
+        "SpecificEffects": "A technological marvel born from the Hyper-Aptamer Experiment.\nWhen initiating combat, has a <color=#F74848>35%</color> chance to trigger <buf ID=900010>[Gusty Strike]</buf>, dealing <color=#F74848>0.4</color>x DMG."
+      },
+      {
+        "name": "Mode - Moonflower",
+        "part": "L-Arm",
+        "icon": "Icon_skill_passive_5116",
+        "SpecificEffects": "A technological marvel born from the Hyper-Aptamer Experiment.\nWhen actively attacking, inflicts <buf ID=7101702>[Armor Down II]</buf> on the target before combat, lasting for <color=#F74848>1</color> turn."
+      },
+      {
+        "name": "Mode - Affection",
+        "part": "R-Arm",
+        "icon": "Icon_skill_passive_1156",
+        "SpecificEffects": "A technological marvel born from the Hyper-Aptamer Experiment.\nAura: Grants DMG <color=#F74848>+6%</color> and Hit Rate <color=#F74848>+3%</color> to allies within <color=#F74848>2</color> adjacent tiles."
+      },
+      {
+        "name": "Mode - Unhurt",
+        "part": "Legs",
+        "icon": "Icon_skill_passive_5155",
+        "SpecificEffects": "A technological marvel born from the Hyper-Aptamer Experiment.\nWhen the Legs are broken, Movement does not decrease, and it gains the <buf ID=6005461>[Movement Down Immunity]</buf> effect."
+      }
+    ],
+    "parts": [
+      "20180103",
+      "20180203",
+      "20180303",
+      "20180403"
+    ],
+    "modules": [
+      {
+        "family": "2045",
+        "level": 4
+      },
+      {
+        "family": "3034",
+        "level": 8
+      },
+      {
+        "family": "4027",
+        "level": 4
+      }
+    ]
+  },
+  "30140103": {
+    "name": "Euclase",
+    "type": "Heavy",
+    "quality": "SSR",
+    "icon": "Icon_mecha_wap3014",
+    "mecha_icon": "Icon_wap3014_1",
+    "portrait_icon": "icon_lihui_wap3014",
+    "introduce": "SAT-331 Euclase\nAs SEED's first premium model, this heavy ST showcases exceptional craftsmanship.\nWith versatile angled armor and armament detection modules on both shoulders, it offers affordability and remarkable versatility. Despite the potential for battlefield damage to its external gear, the Euclase delivers outstanding effectiveness, embodying SEED's commitment to value for money.",
+    "output": "2060",
+    "durable": "390",
+    "armor": "144",
+    "fire": "106",
+    "antiriot": "770",
+    "firepower": "1039",
+    "version": "1.4",
+    "dispatch_group": "GeekX",
+    "dispatch_version": "1.6",
+    "parts": [
+      "30140103",
+      "30140203",
+      "30140303",
+      "30140403"
+    ],
+    "modules": [
+      {
+        "family": "3025",
+        "level": 8
+      },
+      {
+        "family": "2033",
+        "level": 4
+      },
+      {
+        "family": "4005",
+        "level": 4
+      }
+    ]
+  },
+  "30360103": {
+    "name": "Eye of Faith",
+    "type": "Heavy",
+    "quality": "SSR",
+    "icon": "Icon_mecha_wap3036",
+    "mecha_icon": "Icon_wap3036_1",
+    "portrait_icon": "icon_lihui_wap3036",
+    "introduce": "ROG-FE01 Eye of Faith\nA Heavy ST jointly developed by renowned hardware manufacturer ROG and Kamadar. The design adopts the cutting-edge and trendy style of the ROG series, equipped with multiple glowing light strips. Internally, it uses Kamadar's mature solutions, with an industry-leading transmission system and arashi alloy frame, allowing the Eye of Faith to stand out in protracted battles.",
+    "output": "2135",
+    "durable": "452",
+    "armor": "144",
+    "fire": "116",
+    "antiriot": "770",
+    "firepower": "1137",
+    "version": "2.1",
+    "dispatch_group": "Sparkplug",
+    "dispatch_version": "2.1",
+    "parts": [
+      "30360103",
+      "30360203",
+      "30360303",
+      "30360403"
+    ],
+    "modules": [
+      {
+        "family": "20483",
+        "level": 2
+      },
+      {
+        "family": "3037",
+        "level": 8
+      },
+      {
+        "family": "4002",
+        "level": 4
+      },
+      {
+        "family": "20481",
+        "level": 2
+      }
+    ]
+  },
+  "20540103": {
+    "name": "Fenrisúlfr",
+    "type": "Medium",
+    "quality": "SSR",
+    "icon": "Icon_mecha_wap2054",
+    "mecha_icon": "Icon_wap2054_1",
+    "portrait_icon": "icon_lihui_wap2054",
+    "introduce": "OS-10S Fenrisúlfr\nA medium melee ST designed by the Cicero Laboratory and workshopped by Obsidian. It is a contemporary of the OS-13S Hela.\nEquipped with the Hrodvitnir Unit, it can bypass most onboard interference systems to lock onto enemy units and provide powerful kinetic energy for the OS-10S's pursuit-strike system. Due to the fall of the Blair regime, the OS-10S was never mass-produced, and the few test types in existence were stored in the Predator Laboratory on Milkhama Island, eventually taken over by the UNCS. Whether Fenrisúlfr will achieve new headway in positioning and tech innovation remains uncertain.",
+    "output": "2675",
+    "durable": "388",
+    "armor": "96",
+    "fire": "128",
+    "antiriot": "770",
+    "firepower": "1255",
+    "version": "2.2",
+    "skins": [
+      "S1"
+    ],
+    "dispatch_group": "Arsenal",
+    "dispatch_version": "2.3",
+    "parts": [
+      "20540103",
+      "20540203",
+      "20540303",
+      "20540403"
+    ],
+    "modules": [
+      {
+        "family": "2049",
+        "level": 4
+      },
+      {
+        "family": "3039",
+        "level": 8
+      },
+      {
+        "family": "4007",
+        "level": 4
+      }
+    ]
+  },
+  "30050103": {
+    "name": "FierceJaw",
+    "type": "Heavy",
+    "quality": "SSR",
+    "icon": "Icon_mecha_wap3005",
+    "mecha_icon": "Icon_wap3005_1",
+    "portrait_icon": "icon_lihui_wap3005",
+    "introduce": "HR-805 FierceJaw\nA Heavy ST manufactured by Horizon.\nFierceJaw is an innovative iteration of its predecessor, the HR-801. The iteration process took into account the self-modifications made by frontline pilots, adding numerous protection plates to the cockpit while significantly optimizing the disassembly of panels and external attachments. This series of iterations allows FierceJaw to better cooperate with Engineering STs in battlefield engagements and adjust its armor according to specific battlefield conditions.",
+    "output": "2105",
+    "durable": "401",
+    "armor": "144",
+    "fire": "117",
+    "antiriot": "770",
+    "firepower": "1147",
+    "version": "1.6",
+    "skins": [
+      "S1"
+    ],
+    "dispatch_group": "Arsenal",
+    "dispatch_version": "1.9",
+    "parts": [
+      "30050103",
+      "30050203",
+      "30050303",
+      "30050403"
+    ],
+    "modules": [
+      {
+        "family": "4007",
+        "level": 4
+      },
+      {
+        "family": "2041",
+        "level": 4
+      },
+      {
+        "family": "3030",
+        "level": 8
+      }
+    ]
+  },
+  "20610103": {
+    "name": "Flourite",
+    "type": "Medium",
+    "quality": "SSR",
+    "icon": "Icon_mecha_wap2061",
+    "mecha_icon": "Icon_wap2061_1",
+    "portrait_icon": "icon_lihui_wap2061",
+    "introduce": "SAT-283 萤石\n由希德制造研发的中型机兵，是该厂「宝石」系列的第二款产品，目前主要列装于晨星同盟防卫军远程打击部队。\n作为一款主要负责远程打击的机兵，SAT-283萤石继承了希德制造重视火力与性价比的优良传统。它有计划地降低了高出力引擎、深度武装接口等新锐技术在设计中的比重，大量采用了成熟部件，包括与SAT-331项目相似的模块化装甲和索敌单元，以及经SAT-209G项目后改进的供能供弹组件。此外，SAT-283萤石头部、双肩、躯干等部位搭载了9组高精度火控校准仪，它们与武装、动力模块直接相连，共同组成了可以高效辅助射击的「日蚀火控核心」，使得该型机兵即使在失去精确引导的劣势战场上依然可以实现远程火力压制。尽管正式入列的时间不算长，但它凭借火力与可靠性取得的累累战果已经足够证明其作为战争兵器的价值。",
+    "output": "3100",
+    "durable": "382",
+    "armor": "72",
+    "fire": "127",
+    "antiriot": "770",
+    "firepower": "1245",
+    "version": "3.1",
+    "dispatch_group": "GeekX",
+    "dispatch_version": "3.4",
+    "parts": [
+      "20610103",
+      "20610203",
+      "20610303",
+      "20610403"
+    ],
+    "modules": [
+      {
+        "family": "4001",
+        "level": 4
+      },
+      {
+        "family": "3052",
+        "level": 8
+      },
+      {
+        "family": "2061",
+        "level": 4
+      }
+    ]
+  },
+  "30070103": {
+    "name": "Gillesrais",
+    "type": "Heavy",
+    "quality": "SSR",
+    "icon": "Icon_mecha_wap3007",
+    "mecha_icon": "Icon_wap3007_1",
+    "portrait_icon": "icon_lihui_wap3007",
+    "introduce": "HU-08M Gillesrais\nMade by the UKB-1, this heavy ST utilizes a unique Arashium alloy smelting technique, distinct from that used by Obsidian.\nThis proprietary smelting method allows the Arashium to form a unique lattice structure in its inner frame and actuator, greatly enhancing durability and facilitating self-repair capabilities.",
+    "output": "1955",
+    "durable": "421",
+    "armor": "144",
+    "fire": "103",
+    "antiriot": "770",
+    "firepower": "1010",
+    "version": "1.0",
+    "skins": [
+      "02"
+    ],
+    "dispatch_group": "GeekX",
+    "dispatch_version": "1.0",
+    "parts": [
+      "30070103",
+      "30070203",
+      "30070303",
+      "30070403"
+    ],
+    "modules": [
+      {
+        "family": "2017",
+        "level": 4
+      },
+      {
+        "family": "3015",
+        "level": 8
+      },
+      {
+        "family": "4009",
+        "level": 4
+      }
+    ]
+  },
+  "20530103": {
+    "name": "Gladiator",
+    "type": "Medium",
+    "quality": "SSR",
+    "icon": "Icon_mecha_wap2053",
+    "mecha_icon": "Icon_wap2053_1",
+    "portrait_icon": "icon_lihui_wap2053",
+    "introduce": "DD-264 猎斗士\n由多尔工业与角雕商会联合研发的中型机兵，是专为佣兵设计的新式模块化作战平台。\nDD-264猎斗士将设计的重心牢牢锁定在「实战」这一点上，它采用了经过多次迭代的XF3S规格钢岚合金框架，搭配具有双冗余设计的T型超高压涡轮动力系统，拥有在绝大多数环境下均可稳定运转的扎实基础。全身的模块化装甲接口和通用武器挂点确保了它具有巨大的替换改装空间，使用者既可在战前根据自身风格精细调整武装倾向，也可在战场上快速更换受损部件或切换任务套件。DD-264猎斗士代表的是一种「可预测可负担的革新」，它或许不受机兵评论家青睐，但对追求效率与生存的佣兵而言无疑是最为可靠的战斗兵器。",
+    "output": "2930",
+    "durable": "391",
+    "armor": "72",
+    "fire": "128",
+    "antiriot": "770",
+    "firepower": "1255",
+    "version": "3.2",
+    "dispatch_group": "InnovativE",
+    "dispatch_version": "3.4",
+    "parts": [
+      "20530103",
+      "20530203",
+      "20530303",
+      "20530403"
+    ],
+    "modules": [
+      {
+        "family": "2069",
+        "level": 4
+      },
+      {
+        "family": "4002",
+        "level": 4
+      },
+      {
+        "family": "3057",
+        "level": 8
+      }
+    ]
+  },
+  "10140103": {
+    "name": "Glasya",
+    "type": "Light",
+    "quality": "SSR",
+    "icon": "Icon_mecha_wap1014",
+    "mecha_icon": "Icon_wap1014_1",
+    "portrait_icon": "icon_lihui_wap1014",
+    "introduce": "DD-117 Glasya\nA light melee ST developed by Doll Industries to compete with the Obsidian-produced Dopplesoldner. \nThe front of this ST's body is equipped with Doll Industries' specially customized \"Equilibrium\" assisted locking system, which consists of three coaxial observation scopes and a positioning chip. This system allows a locked ST to remain within Glasya's attack range.\nGlasya had a short development time at Doll Industries and only a limited number were deployed to the frontline. It is said to have been developed by disassembling and studying a captured ST.",
+    "output": "1500",
+    "durable": "284",
+    "armor": "48",
+    "fire": "120",
+    "antiriot": "770",
+    "firepower": "1176",
+    "version": "1.0",
+    "skins": [
+      "02",
+      "S1"
+    ],
+    "dispatch_group": "InnovativE",
+    "dispatch_version": "1.0",
+    "parts": [
+      "10140103",
+      "10140203",
+      "10140303",
+      "10140403"
+    ],
+    "modules": [
+      {
+        "family": "4001",
+        "level": 4
+      },
+      {
+        "family": "2003",
+        "level": 4
+      },
+      {
+        "family": "3001",
+        "level": 8
+      }
+    ]
+  },
+  "10280103": {
+    "name": "Hasteraze",
+    "type": "Light",
+    "quality": "SSR",
+    "icon": "Icon_mecha_wap1028",
+    "mecha_icon": "Icon_wap1028_1",
+    "portrait_icon": "icon_lihui_wap1028",
+    "introduce": "AST-42HMC Hasteraze\nA Light ST jointly developed by An-Holt Corporation and the Advanced Weapon Research Institute of the Armored Forces.\nServing as a next-generation technology validation platform, it represents an extreme implementation of cutting-edge systems. At its core is the \"Flash Array,\" a multicore micro bionic intelligence framework trained on data from the elite pilot Ada Diaz. Through continuous iteration, it drives the unit's close- to mid-range mobility and melee combat performance to peak levels. This overwhelming capability comes at a cost—both financial and physiological. Its operational demands are lethal to unqualified pilots. Despite extensive optimization efforts by the DLAF, only one unit remains in active service.",
+    "output": "1550",
+    "durable": "339",
+    "armor": "48",
+    "fire": "124",
+    "antiriot": "770",
+    "firepower": "1215",
+    "version": "2.3",
+    "skins": [
+      "S1"
+    ],
+    "dispatch_group": "GeekX",
+    "dispatch_version": "2.5",
+    "parts": [
+      "10280103",
+      "10280203",
+      "10280303",
+      "10280403"
+    ],
+    "modules": [
+      {
+        "family": "4002",
+        "level": 4
+      },
+      {
+        "family": "2051",
+        "level": 4
+      },
+      {
+        "family": "3041",
+        "level": 8
+      }
+    ]
+  },
+  "10380103": {
+    "name": "Hector",
+    "type": "Light",
+    "quality": "SSR",
+    "icon": "Icon_mecha_wap1038",
+    "mecha_icon": "Icon_wap1038_1",
+    "portrait_icon": "icon_lihui_wap1038",
+    "introduce": "KX-099HM Hector\nA third-generation Light ST manufactured by Kamadar, favored by special forces from multiple countries for its outstanding maneuverability in combat.\nAs the company's first independently developed high-end Light ST, the KX-099HM Hector effectively fills the gap in Kamadar's product line for high-mobility, strong-attack models. The new arashium alloy framework and sensor monitoring module, improved from the KX-098 Odysseus, combined with a miniaturized high-power propulsion system, allow the Hector to exceed the standard level of third-generation Light STs in terms of protection and mobility. Additionally, the Defiant Units installed at each joint are directly connected to the propulsion system, enabling partial energy recovery from emergency maneuvers and short-term storage, which is then released through the Armed System to achieve highly aggressive tactical counterattacks.",
+    "output": "1560",
+    "durable": "342",
+    "armor": "48",
+    "fire": "121",
+    "antiriot": "770",
+    "firepower": "1186",
+    "version": "2.5",
+    "dispatch_group": "Sparkplug",
+    "dispatch_version": "3.0",
+    "parts": [
+      "10380103",
+      "10380203",
+      "10380303",
+      "10380403"
+    ],
+    "modules": [
+      {
+        "family": "2056",
+        "level": 4
+      },
+      {
+        "family": "3046",
+        "level": 8
+      },
+      {
+        "family": "4004",
+        "level": 4
+      }
+    ]
+  },
+  "10350103": {
+    "name": "Hela",
+    "type": "Light",
+    "quality": "SSR",
+    "icon": "Icon_mecha_wap1035",
+    "mecha_icon": "Icon_wap1035_1",
+    "portrait_icon": "icon_lihui_wap1035",
+    "introduce": "OS-13S Hela\nA light ST designed by the Cicero Laboratory and workshopped by Obsidian before production.\nThis model was specially designed for Predators, and is optimized for enhanced mobility and survival capabilities.\nThe cockpit of the Hela is equipped with a \"Garm Unit\" that can collect information on the battlefield. In certain situations this unit can facilitate increased pilot-ST integration.",
+    "output": "1515",
+    "durable": "294",
+    "armor": "48",
+    "fire": "111",
+    "antiriot": "770",
+    "firepower": "1088",
+    "version": "1.0",
+    "skins": [
+      "S1"
+    ],
+    "dispatch_group": "InnovativE",
+    "dispatch_version": "1.1",
+    "parts": [
+      "10350103",
+      "10350203",
+      "10350303",
+      "10350403"
+    ],
+    "modules": [
+      {
+        "family": "3019",
+        "level": 8
+      },
+      {
+        "family": "2025",
+        "level": 4
+      },
+      {
+        "family": "4002",
+        "level": 4
+      }
+    ]
+  },
+  "30060103": {
+    "name": "Heracles",
+    "type": "Heavy",
+    "quality": "SSR",
+    "icon": "Icon_mecha_wap3006",
+    "mecha_icon": "Icon_wap3006_1",
+    "portrait_icon": "icon_lihui_wap3006",
+    "introduce": "KX-075 Heracles\nMade by Kamadar, this heavy ST is a modified version of the first high-end SL to utilize Arashium alloy.\nModifications, intended to enhance military effectiveness, include increased load capacity and high-power output characteristics. A miniaturized vibration jammer has been installed on this ST to suppress target vibration, reducing the enemy's dodge rate.",
+    "output": "1835",
+    "durable": "428",
+    "armor": "144",
+    "fire": "109",
+    "antiriot": "770",
+    "firepower": "1068",
+    "version": "1.0",
+    "skins": [
+      "01"
+    ],
+    "dispatch_group": "Sparkplug",
+    "dispatch_version": "1.0",
+    "parts": [
+      "30060103",
+      "30060203",
+      "30060303",
+      "30060403"
+    ],
+    "modules": [
+      {
+        "family": "3008",
+        "level": 8
+      },
+      {
+        "family": "2021",
+        "level": 4
+      },
+      {
+        "family": "4007",
+        "level": 4
+      }
+    ]
+  },
+  "33020103": {
+    "name": "Huilong",
+    "type": "Heavy",
+    "quality": "SSR",
+    "icon": "Icon_mecha_wap3302",
+    "mecha_icon": "Icon_wap3302_1",
+    "portrait_icon": "icon_lihui_wap3302",
+    "introduce": "DMS-000 辉龙\n由温斯顿博士设计，拉尼亚凯亚制造的重型机兵。该机整合了全钢岚合金框架、机械与脑波复合驱动系统等新技术，拥有优秀的基础性能。在受到异世界龙神加护之后，它的外形和操作模式发生了进一步变化。",
+    "output": "2015",
+    "durable": "475",
+    "armor": "144",
+    "fire": "116",
+    "antiriot": "770",
+    "firepower": "1137",
+    "version": "2.6",
+    "parts": [
+      "33020103",
+      "33020203",
+      "33020303",
+      "33020403"
+    ],
+    "modules": [
+      {
+        "family": "30482",
+        "level": 2
+      },
+      {
+        "family": "30481",
+        "level": 2
+      },
+      {
+        "family": "30484",
+        "level": 2
+      },
+      {
+        "family": "2057",
+        "level": 4
+      },
+      {
+        "family": "3047",
+        "level": 8
+      },
+      {
+        "family": "30483",
+        "level": 2
+      },
+      {
+        "family": "4027",
+        "level": 4
+      }
+    ]
+  },
+  "20420103": {
+    "name": "Igniter",
+    "type": "Medium",
+    "quality": "SSR",
+    "icon": "Icon_mecha_wap2042",
+    "mecha_icon": "Icon_wap2042_1",
+    "portrait_icon": "icon_lihui_wap2042",
+    "introduce": "SAT-209 Igniter\nA Medium ST developed by SEED Manufacturing.\nIt features a dual-antenna head design and a back interface compatible with various ammo types, along with asymmetric leg armor. The Igniter is a true one-man tactical unit, capable of independently completing long-range strike locking and guidance without relying on other reconnaissance or intel support. Its \"Lumiflow\" core provides faster and more powerful boosts for ultra-long-range tactical weapons.",
+    "output": "2800",
+    "durable": "338",
+    "armor": "72",
+    "fire": "123",
+    "antiriot": "770",
+    "firepower": "1206",
+    "version": "1.6",
+    "skins": [
+      "S1"
+    ],
+    "dispatch_group": "InnovativE",
+    "dispatch_version": "1.9",
+    "parts": [
+      "20420103",
+      "20420203",
+      "20420303",
+      "20420403"
+    ],
+    "modules": [
+      {
+        "family": "3006",
+        "level": 8
+      },
+      {
+        "family": "4001",
+        "level": 4
+      },
+      {
+        "family": "2040",
+        "level": 4
+      }
+    ]
+  },
+  "10360103": {
+    "name": "Illusion",
+    "type": "Light",
+    "quality": "SSR",
+    "icon": "Icon_mecha_wap1036",
+    "mecha_icon": "Icon_wap1036_1",
+    "portrait_icon": "icon_lihui_wap1036",
+    "introduce": "HU-41E 幻惑\n联合设计局全新研发的轻型机兵，目前仍处于实战验证阶段，尚未成规模列装。\n该机型完全采用奥维特技术打造，不仅拥有独特的外形，其内部的钢岚合金框架、模块连接结构、动力单元乃至主控系统更是与米赫玛岛上的其他机兵有着不小的差别。这种非常规的设计使得HU-41E拥有优秀的基础性能，且可实现非常规的武装搭配，但这同时也意味着只有足够优秀的整备员与机师才能发挥其真正的作战能力。",
+    "output": "1680",
+    "durable": "321",
+    "armor": "48",
+    "fire": "119",
+    "antiriot": "770",
+    "firepower": "1166",
+    "version": "2.7",
+    "skins": [
+      "S1"
+    ],
+    "dispatch_group": "InnovativE",
+    "dispatch_version": "3.0",
+    "parts": [
+      "10360103",
+      "10360203",
+      "10360303",
+      "10360403"
+    ],
+    "modules": [
+      {
+        "family": "4005",
+        "level": 4
+      },
+      {
+        "family": "3051",
+        "level": 8
+      },
+      {
+        "family": "2060",
+        "level": 4
+      }
+    ]
+  },
+  "30200103": {
+    "name": "Kagemusha",
+    "type": "Heavy",
+    "quality": "SSR",
+    "icon": "Icon_mecha_wap3020",
+    "mecha_icon": "Icon_wap3020_1",
+    "portrait_icon": "icon_lihui_wap3020",
+    "introduce": "ART-108 Dragon's True Blade, Export Name: Kagemusha\nA heavy ST jointly developed by Katana and renowned ST designer Masamune Shinohara.\nART-108 retains Shinohara's distinctive personal style, featuring a refined structural design in its exterior armor that balances its stylized appearance with the unique high protection capabilities of Heavy STs. The \"Zanshin\" Chip installed in the torso can adjust power output based on real-time combat conditions. Its formidable continuous combat effectiveness makes the Kagemusha a true battlefield behemoth.",
+    "output": "2055",
+    "durable": "457",
+    "armor": "144",
+    "fire": "120",
+    "antiriot": "770",
+    "firepower": "1176",
+    "version": "2.2",
+    "skins": [
+      "S1"
+    ],
+    "dispatch_group": "GeekX",
+    "dispatch_version": "2.3",
+    "parts": [
+      "30200103",
+      "30200203",
+      "30200303",
+      "30200403"
+    ],
+    "modules": [
+      {
+        "family": "4001",
+        "level": 4
+      },
+      {
+        "family": "2050",
+        "level": 4
+      },
+      {
+        "family": "3040",
+        "level": 8
+      }
+    ]
+  },
+  "30170103": {
+    "name": "Kong",
+    "type": "Heavy",
+    "quality": "SSR",
+    "icon": "Icon_mecha_wap3017",
+    "mecha_icon": "Icon_wap3017_1",
+    "portrait_icon": "icon_lihui_wap3017",
+    "introduce": "LTX-305R Kong\nA heavy ST produced by Laniakea for elite NDF units only.\nEach part of the ST is equipped with an energy storage hub to enhance its suppressive firepower. It can reuse energy generated by its weapons, allowing it to maximize striking power. Its suspension frame includes a custom heavy weapon adapter module, making it ideal for battlefield environments where high firepower is required.",
+    "output": "1850",
+    "durable": "423",
+    "armor": "144",
+    "fire": "108",
+    "antiriot": "770",
+    "firepower": "1059",
+    "version": "1.0",
+    "skins": [
+      "S1"
+    ],
+    "dispatch_group": "Arsenal",
+    "dispatch_version": "1.0",
+    "parts": [
+      "30170103",
+      "30170203",
+      "30170303",
+      "30170403"
+    ],
+    "modules": [
+      {
+        "family": "4002",
+        "level": 4
+      },
+      {
+        "family": "2023",
+        "level": 4
+      },
+      {
+        "family": "3011",
+        "level": 8
+      }
+    ]
+  },
+  "20170103": {
+    "name": "Malthus",
+    "type": "Medium",
+    "quality": "SSR",
+    "icon": "Icon_mecha_wap2017",
+    "mecha_icon": "Icon_wap2017_1",
+    "portrait_icon": "icon_lihui_wap2017",
+    "introduce": "YOS-99 Malthus\nA medium-class tactical mech developed by Obsidian, purpose-built for large-scale battles and primarily deployed across Obsidian's various private military forces.\nDeveloped in parallel with the OS-77 Wolverine, the Malthus emphasizes wide-area firepower over the Wolverine's focus on small-unit strikes. Enhanced rocket and missile saturation capabilities grant it outstanding long-range area denial, enabling significant firepower output in large engagements and paving the way for successful offensive and defensive operations at the tactical level.",
+    "output": "2990",
+    "durable": "305",
+    "armor": "72",
+    "fire": "118",
+    "antiriot": "770",
+    "firepower": "1157",
+    "version": "1.1",
+    "skins": [
+      "01"
+    ],
+    "dispatch_group": "GeekX",
+    "dispatch_version": "1.4",
+    "parts": [
+      "20170103",
+      "20170203",
+      "20170303",
+      "20170403"
+    ],
+    "modules": [
+      {
+        "family": "2009",
+        "level": 4
+      },
+      {
+        "family": "3007",
+        "level": 8
+      },
+      {
+        "family": "4005",
+        "level": 4
+      }
+    ]
+  },
+  "30100103": {
+    "name": "Martyr",
+    "type": "Heavy",
+    "quality": "SSR",
+    "icon": "Icon_mecha_wap3010",
+    "mecha_icon": "Icon_wap3010_1",
+    "portrait_icon": "icon_lihui_wap3010",
+    "introduce": "YOS-95A 殉道士\n黑曜石开发的新式重型机兵，目前仅少量列装于黑曜石机动警卫队。\n该型机兵采用了黑曜石全新改进的XF4R钢岚合金框架及电磁复合装甲，拥有极为可靠的生存能力；双臂多达32组传感器均直接连接火控、动力与操纵模块，即使在高负荷战斗下依然可以瞬时辅助机师调整机体姿态。此外，黑曜石还为其开发了能引起小范围内敌我机兵钢岚合金振动的「荆棘回路」，于战斗瞬时增幅自身的输出功率和结构强度，从而显著提升机动奔袭与近身格斗的作战效能——但同时，它也会给驾驶者带来巨大的操控压力和神经刺激，只有不知恐惧的傀儡或意志坚定的战士才能真正发挥其全部实力。",
+    "output": "1960",
+    "durable": "495",
+    "armor": "144",
+    "fire": "122",
+    "antiriot": "770",
+    "firepower": "1196",
+    "version": "3.0",
+    "dispatch_group": "InnovativE",
+    "dispatch_version": "3.2",
+    "parts": [
+      "30100103",
+      "30100203",
+      "30100303",
+      "30100403"
+    ],
+    "modules": [
+      {
+        "family": "4001",
+        "level": 4
+      },
+      {
+        "family": "2067",
+        "level": 4
+      },
+      {
+        "family": "3055",
+        "level": 8
+      }
+    ]
+  },
+  "20700103": {
+    "name": "Medusa MKII",
+    "type": "Medium",
+    "quality": "SSR",
+    "icon": "Icon_mecha_wap2070",
+    "mecha_icon": "Icon_wap2070_1",
+    "portrait_icon": "icon_lihui_wap2070",
+    "introduce": "",
+    "output": "2605",
+    "durable": "446",
+    "armor": "941",
+    "fire": "127",
+    "antiriot": "770",
+    "firepower": "1264",
+    "version": "3.6",
+    "parts": [
+      "20700103",
+      "20700103_ARM_L",
+      "20700103_ARM_R",
+      "20700103_LEGS"
+    ],
+    "modules": [
+      {
+        "family": "9025",
+        "level": 4
+      },
+      {
+        "family": "4003",
+        "level": 4
+      },
+      {
+        "family": "9035",
+        "level": 8
+      }
+    ]
+  },
+  "20500103": {
+    "name": "Mithril",
+    "type": "Medium",
+    "quality": "SSR",
+    "icon": "Icon_mecha_wap2050",
+    "mecha_icon": "Icon_wap2050_1",
+    "portrait_icon": "icon_lihui_wap2050",
+    "introduce": "AST-07 Mithril\nAn-Holt Corporation's new medium tactical model surpasses its predecessor, Hermes, with enhanced performance, armor, and equipment.\nEquipped with the latest Arashium drive core and optimized for next-gen tactical weapons, it offers premium battlefield adaptability, and the onboard Supercomputer Type-R provides advanced enemy analysis. Rumor has it that the Mithril once housed a [Dive] connection device, indicating it was once a specialized ST project for a unique pilot.",
+    "output": "2430",
+    "durable": "351",
+    "armor": "72",
+    "fire": "128",
+    "antiriot": "770",
+    "firepower": "1255",
+    "version": "1.4",
+    "skins": [
+      "S1"
+    ],
+    "dispatch_group": "Sparkplug",
+    "dispatch_version": "1.6",
+    "parts": [
+      "20500103",
+      "20500203",
+      "20500303",
+      "20500403"
+    ],
+    "modules": [
+      {
+        "family": "3008",
+        "level": 8
+      },
+      {
+        "family": "4001",
+        "level": 4
+      },
+      {
+        "family": "2036",
+        "level": 4
+      }
+    ]
+  },
+  "90010102": {
+    "name": "MobiuX",
+    "type": "Light",
+    "quality": "SSR",
+    "icon": "Icon_mecha_wap1052",
+    "mecha_icon": "Icon_wap1052_1",
+    "portrait_icon": "icon_lihui_wap1052",
+    "introduce": "",
+    "output": "1595",
+    "durable": "9703",
+    "armor": "470",
+    "fire": "1215",
+    "antiriot": "4472",
+    "firepower": "1215",
+    "version": "3.3",
+    "parts": [
+      "90010102",
+      "90010202",
+      "90010302",
+      "90010402"
+    ],
+    "modules": [
+      {
+        "family": "9010",
+        "level": 4
+      },
+      {
+        "family": "4002",
+        "level": 4
+      },
+      {
+        "family": "1050",
+        "level": 8
+      }
+    ]
+  },
+  "20620103": {
+    "name": "Nephthys",
+    "type": "Medium",
+    "quality": "SSR",
+    "icon": "Icon_mecha_wap2040",
+    "mecha_icon": "Icon_wap2040_1",
+    "portrait_icon": "icon_lihui_wap2040",
+    "introduce": "",
+    "output": "1970",
+    "durable": "446",
+    "armor": "941",
+    "fire": "127",
+    "antiriot": "770",
+    "firepower": "1245",
+    "version": "3.3",
+    "dispatch_group": "GeekX",
+    "dispatch_version": "3.6",
+    "parts": [
+      "20620103",
+      "20620103_ARM_L",
+      "20620103_ARM_R",
+      "20620103_LEGS"
+    ],
+    "modules": [
+      {
+        "family": "9020",
+        "level": 4
+      },
+      {
+        "family": "4003",
+        "level": 4
+      },
+      {
+        "family": "9030",
+        "level": 8
+      }
+    ]
+  },
+  "30380103": {
+    "name": "Nidhogg",
+    "type": "Heavy",
+    "quality": "SSR",
+    "icon": "Icon_mecha_wap3047",
+    "mecha_icon": "Icon_wap3047_1",
+    "portrait_icon": "icon_lihui_wap3047",
+    "introduce": "",
+    "output": "2090",
+    "durable": "470",
+    "armor": "144",
+    "fire": "119",
+    "antiriot": "770",
+    "firepower": "1166",
+    "version": "3.4",
+    "dispatch_group": "Sparkplug",
+    "dispatch_version": "3.6",
+    "parts": [
+      "30380103",
+      "30380103_ARM_L",
+      "30380103_ARM_R",
+      "30380103_LEGS"
+    ],
+    "modules": [
+      {
+        "family": "9021",
+        "level": 4
+      },
+      {
+        "family": "4005",
+        "level": 4
+      },
+      {
+        "family": "9031",
+        "level": 8
+      }
+    ]
+  },
+  "20570103": {
+    "name": "Nightglow",
+    "type": "Medium",
+    "quality": "SSR",
+    "icon": "Icon_mecha_wap2057",
+    "mecha_icon": "Icon_wap2057_1",
+    "portrait_icon": "icon_lihui_wap2057",
+    "introduce": "AST-74X Nightglow\nA medium ST jointly developed by An-Holt Corporation and Obsidian, it is also another achievement of the Dawnstar League's fourth-generation ST technology validation project.\nDesigned to counter super pilots, the AST-74X incorporates cutting-edge technologies, including an XF4-spec arashium alloy frame, composite armor with a micro shield generator, and an Aura cycle engine with astonishing output power. These technologies give it a clear advantage in basic performance over third-generation STs. Additionally, the active Electromagnetic Introducer and Bionic Intelligence Frame form the Nebula System, distributed throughout the body, enabling semi-autonomous optimization of weapon resource allocation. This grants it a revolutionary tactical edge: even without Hyper-Aptamer pilots or brainwave control systems, it can efficiently operate remote unmanned attack units similar to the Erinys.",
+    "output": "2890",
+    "durable": "378",
+    "armor": "72",
+    "fire": "127",
+    "antiriot": "770",
+    "firepower": "1245",
+    "version": "2.5",
+    "skins": [
+      "S1"
+    ],
+    "dispatch_group": "GeekX",
+    "dispatch_version": "3.0",
+    "parts": [
+      "20570103",
+      "20570203",
+      "20570303",
+      "20570403"
+    ],
+    "modules": [
+      {
+        "family": "2055",
+        "level": 4
+      },
+      {
+        "family": "3045",
+        "level": 8
+      },
+      {
+        "family": "4027",
+        "level": 4
+      }
+    ]
+  },
+  "10710103": {
+    "name": "Nivequus",
+    "type": "Light",
+    "quality": "SSR",
+    "icon": "Icon_mecha_wap1071",
+    "mecha_icon": "Icon_wap1071_1",
+    "portrait_icon": "icon_lihui_wap1071",
+    "introduce": "",
+    "output": "1575",
+    "durable": "339",
+    "armor": "48",
+    "fire": "124",
+    "antiriot": "770",
+    "firepower": "1218",
+    "version": "3.7",
+    "parts": [
+      "10710103",
+      "10710103_ARM_L",
+      "10710103_ARM_R",
+      "10710103_LEGS"
+    ],
+    "modules": [
+      {
+        "family": "9027",
+        "level": 4
+      },
+      {
+        "family": "4027",
+        "level": 4
+      },
+      {
+        "family": "9037",
+        "level": 8
+      }
+    ]
+  },
+  "20490103": {
+    "name": "Odysseus",
+    "type": "Medium",
+    "quality": "SSR",
+    "icon": "Icon_mecha_wap2049",
+    "mecha_icon": "Icon_wap2049_1",
+    "portrait_icon": "icon_lihui_wap2049",
+    "introduce": "KX-098 Odysseus\nA Medium ST manufactured by Kamadar, belonging to the same series as the KX-075 Heracles Heavy ST.\nOdysseus inherits the KX-075's advanced information sensor system, as well as its superior arashium alloy framework. Fine-tuned around the layout of its repair unit, its kinetic monitor formulates support strategies based on the target ST's condition, turning Odysseus into a true battlefield energy hub.",
+    "output": "2795",
+    "durable": "361",
+    "armor": "72",
+    "fire": "121",
+    "antiriot": "770",
+    "firepower": "1186",
+    "version": "1.7",
+    "dispatch_group": "Arsenal",
+    "dispatch_version": "2.1",
+    "parts": [
+      "20490103",
+      "20490203",
+      "20490303",
+      "20490403"
+    ],
+    "modules": [
+      {
+        "family": "2043",
+        "level": 4
+      },
+      {
+        "family": "3032",
+        "level": 8
+      },
+      {
+        "family": "4007",
+        "level": 4
+      }
+    ]
+  },
+  "10270103": {
+    "name": "Ouroboros",
+    "type": "Light",
+    "quality": "SSR",
+    "icon": "Icon_mecha_wap1027",
+    "mecha_icon": "Icon_wap1027_1",
+    "portrait_icon": "icon_lihui_wap1027",
+    "introduce": "NED-03 Ouroboros\nA Light ST born in the Laniakea Ursprung Laboratory, the third unit in the NED production line, and the latest Ursprung-type ST.\nSimilar to the first two Ursprung-type STs, Ouroboros is equipped with a modified Nova-Frame and Immaculateur, featuring the most advanced Dive and control technologies, offering extremely high operational limits and piloting thresholds. It exhibits a significant generational leap compared to other models produced by the same manufacturer, especially in terms of Dive sync ratio and instantaneous acceleration, making it a true third-generation arashium ST.",
+    "output": "1615",
+    "durable": "294",
+    "armor": "48",
+    "fire": "121",
+    "antiriot": "770",
+    "firepower": "1186",
+    "version": "1.7",
+    "skins": [
+      "S1"
+    ],
+    "dispatch_group": "GeekX",
+    "dispatch_version": "1.9",
+    "parts": [
+      "10270103",
+      "10270203",
+      "10270303",
+      "10270403"
+    ],
+    "modules": [
+      {
+        "family": "4004",
+        "level": 4
+      },
+      {
+        "family": "2042",
+        "level": 4
+      },
+      {
+        "family": "3031",
+        "level": 8
+      }
+    ]
+  },
+  "20900103": {
+    "name": "Pascal",
+    "type": "Medium",
+    "quality": "SSR",
+    "icon": "Icon_mecha_wap2090",
+    "mecha_icon": "Icon_wap2090_1",
+    "portrait_icon": "icon_lihui_wap2090",
+    "introduce": "NV-XX90 Pascal\nThis medium ST model, born from the Obsidian and Nvidia collaboration, showcases their expertise. The striking device combines Nvidia's sleek design and strong performance with custom modifications for Milkhama's environment. Nvidia's focus on innovation will continue to boost its reputation as it explores new technological advancements.",
+    "output": "2675",
+    "durable": "318",
+    "armor": "72",
+    "fire": "119",
+    "antiriot": "770",
+    "firepower": "1166",
+    "version": "1.1",
+    "dispatch_group": "InnovativE",
+    "dispatch_version": "1.6",
+    "parts": [
+      "20900103",
+      "20900203",
+      "20900303",
+      "20900403"
+    ],
+    "modules": [
+      {
+        "family": "20344",
+        "level": 1
+      },
+      {
+        "family": "20343",
+        "level": 1
+      },
+      {
+        "family": "3006",
+        "level": 8
+      },
+      {
+        "family": "20342",
+        "level": 1
+      },
+      {
+        "family": "20341",
+        "level": 1
+      },
+      {
+        "family": "4026",
+        "level": 4
+      }
+    ]
+  },
+  "30370103": {
+    "name": "Portent",
+    "type": "Heavy",
+    "quality": "SSR",
+    "icon": "Icon_mecha_wap3037",
+    "mecha_icon": "Icon_wap3037_1",
+    "portrait_icon": "icon_lihui_wap3037",
+    "introduce": "ASX-666 恶兆\n安赫特公司独自研发的重型机兵，专精于远距精准射击，是晨星同盟第四世代机兵技术验证项目的重要一环。\n鉴于晨星同盟的大力支持，安赫特不计成本地为ASX-666配备了XF4C重锻框架、夹层式复合装甲和E-S全天候主动探测系统等大量尖端技术产物，确保其拥有优越的基础性能；此外还于机体全身设置了24组全波段传感器与火控辅助单元，通过整合了帕姆斯系统的「寂灭驱动」统筹完成自动化监测、判断和锁定，大幅提升远距精准射击能力的同时有效减轻了机师的操作负担，提升了参与体系作战时的作战效能。尽管性能表现如此优秀，但晨星同盟却始终没有将该机正式列装部队，据说这与其开发、测试以及转移过程中发生的一系列事故有所关联。",
+    "output": "2135",
+    "durable": "457",
+    "armor": "144",
+    "fire": "120",
+    "antiriot": "770",
+    "firepower": "1176",
+    "version": "3.2",
+    "skins": [
+      "S1"
+    ],
+    "dispatch_group": "Sparkplug",
+    "dispatch_version": "3.4",
+    "parts": [
+      "30370103",
+      "30370203",
+      "30370303",
+      "30370403"
+    ],
+    "modules": [
+      {
+        "family": "2070",
+        "level": 4
+      },
+      {
+        "family": "4001",
+        "level": 4
+      },
+      {
+        "family": "3058",
+        "level": 8
+      }
+    ]
+  },
+  "20630103": {
+    "name": "Prisma",
+    "type": "Medium",
+    "quality": "SSR",
+    "icon": "Icon_mecha_wap2062",
+    "mecha_icon": "Icon_wap2062_1",
+    "portrait_icon": "icon_lihui_wap2062",
+    "introduce": "",
+    "output": "2880",
+    "durable": "446",
+    "armor": "941",
+    "fire": "127",
+    "antiriot": "770",
+    "firepower": "1255",
+    "version": "3.4",
+    "dispatch_group": "InnovativE",
+    "dispatch_version": "3.6",
+    "parts": [
+      "20630103",
+      "20630103_ARM_L",
+      "20630103_ARM_R",
+      "20630103_LEGS"
+    ],
+    "modules": [
+      {
+        "family": "9022",
+        "level": 4
+      },
+      {
+        "family": "4002",
+        "level": 4
+      },
+      {
+        "family": "9032",
+        "level": 8
+      }
+    ]
+  },
+  "10340103": {
+    "name": "Prometheus",
+    "type": "Light",
+    "quality": "SSR",
+    "icon": "Icon_mecha_wap1034",
+    "mecha_icon": "Icon_wap1034_1",
+    "portrait_icon": "icon_lihui_wap1034",
+    "introduce": "SAT-47SC Prometheus\nA third-generation Light ST primarily developed by SEED, mainly deployed in the Dawnstar League Armored Forces and Oversight Committee.\nAs SEED's flagship model in the high-end Light ST sector, the Prometheus abandons the company's traditional focus on firepower and cost-effectiveness. It utilizes a new Arashium Alloy frame that is lighter and stronger, along with an experimental combat auxiliary system, the \"Delphi System,\" and features AI dynamic function control design. This allows it to efficiently gather battlefield data and deliver precise firepower with low overall energy consumption, effectively targeting high-value targets. Both technical specifications and combat results demonstrate that the Prometheus is an excellent ST for extended solo special operations missions.",
+    "output": "1450",
+    "durable": "361",
+    "armor": "48",
+    "fire": "123",
+    "antiriot": "770",
+    "firepower": "1206",
+    "version": "2.4",
+    "dispatch_group": "InnovativE",
+    "dispatch_version": "2.5",
+    "parts": [
+      "10340103",
+      "10340203",
+      "10340303",
+      "10340403"
+    ],
+    "modules": [
+      {
+        "family": "4001",
+        "level": 4
+      },
+      {
+        "family": "2053",
+        "level": 4
+      },
+      {
+        "family": "3043",
+        "level": 8
+      }
+    ]
+  },
+  "33010103": {
+    "name": "REV-00",
+    "type": "Heavy",
+    "quality": "SSR",
+    "icon": "Icon_mecha_wap3301",
+    "mecha_icon": "Icon_wap3301_1",
+    "portrait_icon": "icon_lihui_wap3301",
+    "introduce": "REV-00 Dawnbringer-00\nA Heavy ST developed by Obsidian. Its factory settings and development positioning were referenced from two other models codenamed Dawnbringer. REV-00 is a Heavy ST developed to adapt to the combat styles of REV-01 and REV-02. Its \"Ascendancy Core\" can continuously boost firepower and kinetic warheads in high-intensity battles, while its efficient external armor can effectively defend against enemy attacks, providing combat space for allies.",
+    "output": "2000",
+    "durable": "426",
+    "armor": "144",
+    "fire": "116",
+    "antiriot": "770",
+    "firepower": "1137",
+    "version": "1.5",
+    "parts": [
+      "33010103",
+      "33010203",
+      "33010303",
+      "33010403"
+    ],
+    "modules": [
+      {
+        "family": "3028",
+        "level": 8
+      },
+      {
+        "family": "2037",
+        "level": 4
+      },
+      {
+        "family": "4005",
+        "level": 4
+      }
+    ]
+  },
+  "23010103": {
+    "name": "REV-01",
+    "type": "Medium",
+    "quality": "SSR",
+    "icon": "Icon_mecha_wap2301",
+    "mecha_icon": "Icon_wap2301_1",
+    "portrait_icon": "icon_lihui_wap2301",
+    "introduce": "REV-01 Dawnbringer-01\nA Medium ST developed jointly by the DL and Horizon, based on an experimental model developed by Peter Ludwig. The REV-01 is equipped with Horizon's latest arashium alloy frame and a customized OS for special pilots. The REV-01 abandons the deployment interface and space for shoulder-based tactical weapons, replacing it with an arashi particle storage device. When the arms are damaged, it can instantly repair them using stored arashi particles, significantly increasing the ST's combat efficiency and adaptability on the battlefield.",
+    "output": "2970",
+    "durable": "332",
+    "armor": "96",
+    "fire": "125",
+    "antiriot": "770",
+    "firepower": "1225",
+    "version": "1.5",
+    "parts": [
+      "23010103",
+      "23010203",
+      "23010303",
+      "23010403"
+    ],
+    "modules": [
+      {
+        "family": "3009",
+        "level": 8
+      },
+      {
+        "family": "4002",
+        "level": 4
+      },
+      {
+        "family": "20383",
+        "level": 2
+      },
+      {
+        "family": "20381",
+        "level": 2
+      }
+    ]
+  },
+  "13010103": {
+    "name": "REV-02",
+    "type": "Light",
+    "quality": "SSR",
+    "icon": "Icon_mecha_wap1301",
+    "mecha_icon": "Icon_wap1301_1",
+    "portrait_icon": "icon_lihui_wap1301",
+    "introduce": "REV-02\nA Light ST jointly developed by the UNCS and Laniakea. Originally developed as a test machine for the next generation of Light Arashium STs, it underwent significant changes during development and became a specially crafted ST for a specific pilot. To accommodate the pilot's fighting style, REV-02 adopts a design approach completely different from regular single-core STs. REV-02 uses a highly compatible polymorphic adaptive framework in the body and legs, allowing the OS for different modules to be temporarily programmed according to the pilot's own style, ensuring compatibility while significantly increasing the efficiency of ST module usage.",
+    "output": "1700",
+    "durable": "279",
+    "armor": "48",
+    "fire": "122",
+    "antiriot": "770",
+    "firepower": "1196",
+    "version": "1.5",
+    "parts": [
+      "13010103",
+      "13010203",
+      "13010303",
+      "13010403"
+    ],
+    "modules": [
+      {
+        "family": "3027",
+        "level": 8
+      },
+      {
+        "family": "20394",
+        "level": 1
+      },
+      {
+        "family": "20393",
+        "level": 1
+      },
+      {
+        "family": "4027",
+        "level": 4
+      },
+      {
+        "family": "20392",
+        "level": 1
+      },
+      {
+        "family": "20391",
+        "level": 1
+      }
+    ]
+  },
+  "30320103": {
+    "name": "Ranger",
+    "type": "Heavy",
+    "quality": "SSR",
+    "icon": "Icon_mecha_wap3032",
+    "mecha_icon": "Icon_wap3032_1",
+    "portrait_icon": "icon_lihui_wap3032",
+    "introduce": "RT-102A Ranger\nThis innovative heavy ST, a collaboration between Katana and Obsidian, represents their second release in the Arashium Frame series.\nWith an advanced arashium transmission core and Obsidian technology, it provides pilots seamless access to its neural system for superior control. Its high operational demands restrict usage to a select few, sparking discussions about its elite user base.",
+    "output": "1880",
+    "durable": "436",
+    "armor": "144",
+    "fire": "119",
+    "antiriot": "770",
+    "firepower": "1166",
+    "version": "1.4",
+    "skins": [
+      "S1"
+    ],
+    "dispatch_group": "Sparkplug",
+    "dispatch_version": "1.9",
+    "parts": [
+      "30320103",
+      "30320203",
+      "30320303",
+      "30320403"
+    ],
+    "modules": [
+      {
+        "family": "3026",
+        "level": 8
+      },
+      {
+        "family": "2035",
+        "level": 4
+      },
+      {
+        "family": "4006",
+        "level": 4
+      }
+    ]
+  },
+  "20560103": {
+    "name": "Regalia",
+    "type": "Medium",
+    "quality": "SSR",
+    "icon": "Icon_mecha_wap2056",
+    "mecha_icon": "Icon_wap2056_1",
+    "portrait_icon": "icon_lihui_wap2056",
+    "introduce": "LTX-AB01 君权\n由拉尼亚凯亚公司为布吕希尔家族专门研发的中型指挥特化机兵，传闻由驾驶员亲自参与设计、调试。\nLTX-AB01在设计上彻底服务于“优势战术”的核心理念，其搭载的“法典”战术决策系统，是拉尼亚凯亚在信息战领域的尖端结晶。该系统能通过机体各部的广域传感器阵列，实时采集并融合战场上的光学、电磁、声纹等一切信息，在布吕希尔家族提供的海量作战数据支持下，通过解构敌方的阵型动态、弹药消耗、通讯模式甚至个体机兵的战术习惯，在驾驶员的最终调整下，能够近乎实时地推演出未来数种战场态势，精准预判敌方的薄弱环节与我方的最优行动路径。最终，系统会将唯一的“最优解”化为简洁的战术敕令呈递给驾驶员，将信息优势转化为不可逆转的胜利。",
+    "output": "1950",
+    "durable": "443",
+    "armor": "96",
+    "fire": "129",
+    "antiriot": "770",
+    "firepower": "1264",
+    "version": "2.8",
+    "skins": [
+      "S1"
+    ],
+    "dispatch_group": "GeekX",
+    "dispatch_version": "3.2",
+    "parts": [
+      "20560103",
+      "20560203",
+      "20560303",
+      "20560403"
+    ],
+    "modules": [
+      {
+        "family": "2059",
+        "level": 4
+      },
+      {
+        "family": "4003",
+        "level": 4
+      },
+      {
+        "family": "3050",
+        "level": 8
+      }
+    ]
+  },
+  "10120103": {
+    "name": "Rex",
+    "type": "Light",
+    "quality": "SSR",
+    "icon": "Icon_mecha_wap1012",
+    "mecha_icon": "Icon_wap1012_1",
+    "portrait_icon": "icon_lihui_wap1012",
+    "introduce": "HR-901 Rex\nIntroducing Rex, Horizon Corporation's light model designed to compete with the Dopplesoldner and the Glasya.\nIt features a heavy weapon balancing module and advanced Arashium transmission. Equipped with the latest [M-SWIR Scope], it delivers exceptional reconnaissance and ballistic correction. Prioritizing speed over armor, it includes plating only in vital areas, relying on agility and dodging strategies for defense.",
+    "output": "1530",
+    "durable": "277",
+    "armor": "48",
+    "fire": "119",
+    "antiriot": "770",
+    "firepower": "1166",
+    "version": "1.3",
+    "dispatch_group": "Arsenal",
+    "dispatch_version": "1.6",
+    "parts": [
+      "10120103",
+      "10120203",
+      "10120303",
+      "10120403"
+    ],
+    "modules": [
+      {
+        "family": "3009",
+        "level": 8
+      },
+      {
+        "family": "4002",
+        "level": 4
+      },
+      {
+        "family": "2031",
+        "level": 4
+      }
+    ]
+  },
+  "10290103": {
+    "name": "SEFAS",
+    "type": "Light",
+    "quality": "SSR",
+    "icon": "Icon_mecha_wap1029",
+    "mecha_icon": "Icon_wap1029_1",
+    "portrait_icon": "icon_lihui_wap1029",
+    "introduce": "ELE-07 SEFAS\nA high-performance model specially developed by Obsidian, and initially commissioned by the Electric Eel.\nMany of this model's parts deviate from international standards, including the thickness of the drive rods, the size of the articulating bearings, and the location of the armor mounts.\nThe body of this ST is fitted with spikes and ramming nails in the knee and shoulder positions—features rarely seen on standard mechs—allowing it to effectively engage in close-quarters combat.",
+    "output": "1475",
+    "durable": "291",
+    "armor": "48",
+    "fire": "118",
+    "antiriot": "770",
+    "firepower": "1157",
+    "version": "1.0",
+    "dispatch_group": "GeekX",
+    "dispatch_version": "1.0",
+    "parts": [
+      "10290103",
+      "10290203",
+      "10290303",
+      "10290403"
+    ],
+    "modules": [
+      {
+        "family": "2005",
+        "level": 4
+      },
+      {
+        "family": "3014",
+        "level": 8
+      },
+      {
+        "family": "4003",
+        "level": 4
+      }
+    ]
+  },
+  "13020103": {
+    "name": "Shadowrabbit",
+    "type": "Light",
+    "quality": "SSR",
+    "icon": "Icon_mecha_wap2302",
+    "mecha_icon": "Icon_wap2302_1",
+    "portrait_icon": "icon_lihui_wap2302",
+    "introduce": "AWT(A) EX-EX Shadowrabbit vAGUE/Head: Shiva\nZeke Steel utilized the production line of Laniakea to develop a Light ST. Its prototype was the model \"ALTER-AWT\" that once thrived in the Complex. Known for being easy to mod and with broad compatibility, it became a favorite in the mercenary market. Leveraging these features, Zeke Steel made significant changes to the AWT. Overcoming the original frame's stability and energy conversion efficiency issues, he replicated ND technology through an arashium alloy frame. The vAGUE body was redesigned based on the BFB unit [Shadow Thunder], and according to Zeke Steel's vision, the \"Shadowrabbit\" was born. Its drive device and fire control system allow it to sport high-speed maneuverability while maintaining ranged precision. It's able to relentlessly engage in high-intensity combat, bolting from foe to foe like a wild rabbit.",
+    "output": "1775",
+    "durable": "281",
+    "armor": "48",
+    "fire": "122",
+    "antiriot": "770",
+    "firepower": "1196",
+    "version": "1.8",
+    "dispatch_group": "GeekX",
+    "dispatch_version": "2.1",
+    "parts": [
+      "13020103",
+      "13020203",
+      "13020303",
+      "13020403"
+    ],
+    "modules": [
+      {
+        "family": "4002",
+        "level": 4
+      },
+      {
+        "family": "2044",
+        "level": 4
+      },
+      {
+        "family": "3033",
+        "level": 8
+      }
+    ]
+  },
+  "13030103": {
+    "name": "Shadowtiger",
+    "type": "Light",
+    "quality": "SSR",
+    "icon": "Icon_mecha_wap1303",
+    "mecha_icon": "Icon_wap1303_1",
+    "portrait_icon": "icon_lihui_wap1303",
+    "introduce": "DMS-001 影虎\n由西塞罗博士设计，多尔工业制造的轻型机兵。该机拥有高纯度岚质框架与新式复合装甲，兼具优秀的攻防性能。此外，精细调整过的传感辅助系统也使得它在中近距离作战中拥有无与伦比的突破能力。",
+    "output": "1655",
+    "durable": "325",
+    "armor": "48",
+    "fire": "122",
+    "antiriot": "770",
+    "firepower": "1196",
+    "version": "2.6",
+    "parts": [
+      "13030103",
+      "13030203",
+      "13030303",
+      "13030403"
+    ],
+    "modules": [
+      {
+        "family": "3049",
+        "level": 8
+      },
+      {
+        "family": "4001",
+        "level": 4
+      },
+      {
+        "family": "2058",
+        "level": 4
+      },
+      {
+        "family": "20581",
+        "level": 2
+      }
+    ]
+  },
+  "20550103": {
+    "name": "Snowyowl",
+    "type": "Medium",
+    "quality": "SSR",
+    "icon": "Icon_mecha_wap2055",
+    "mecha_icon": "Icon_wap2055_1",
+    "portrait_icon": "icon_lihui_wap2055",
+    "introduce": "HR-300X Snowyowl\nA Medium repair and support ST developed under the leadership of Horizon, currently deployed in limited numbers for combat testing and data collection.\nTo effectively support high-intensity ST operations and align its product line with contemporary combat systems, Horizon established the development plan for the HR-300X multifunctional support ST, culminating in the prototype codenamed \"Snowyowl.\" For this model, Horizon shifted focus from precision and burst firepower to armor load, maneuverability, and tactical data links, equipping it with fifteen sets of algorithm accessories for real-time optimal configuration. This series of designs endows the unit with exceptional continuous combat capabilities, while also enabling real-time battlefield monitoring to provide efficient repair and support to multiple ally tactical units.",
+    "output": "2455",
+    "durable": "406",
+    "armor": "72",
+    "fire": "123",
+    "antiriot": "770",
+    "firepower": "1206",
+    "version": "2.3",
+    "dispatch_group": "Sparkplug",
+    "dispatch_version": "2.5",
+    "parts": [
+      "20550103",
+      "20550203",
+      "20550303",
+      "20550403"
+    ],
+    "modules": [
+      {
+        "family": "4004",
+        "level": 4
+      },
+      {
+        "family": "2052",
+        "level": 4
+      },
+      {
+        "family": "3042",
+        "level": 8
+      }
+    ]
+  },
+  "10400103": {
+    "name": "Tengshe",
+    "type": "Light",
+    "quality": "SSR",
+    "icon": "Icon_mecha_wap1040",
+    "mecha_icon": "Icon_wap1040_1",
+    "portrait_icon": "icon_lihui_wap1040",
+    "introduce": "DD-720 Tengshe\nA Light ST developed in collaboration with the Doll Group.\nThe Tengshe features a radical innovations in exterior design and armor material selection, significantly reducing the weight of the body while ensuring standard levels of protection. Its regular power system, along with the optimized energy-efficient \"Flame Core,\" allows the Tengshe to maintain high-speed maneuverability while loading larger and heavier weapons of mass destruction. Overall, the birth of the Tengshe has completely overturned the battlefield role of traditional Light STs.",
+    "output": "1705",
+    "durable": "329",
+    "armor": "48",
+    "fire": "121",
+    "antiriot": "770",
+    "firepower": "1186",
+    "version": "2.1",
+    "skins": [
+      "S1"
+    ],
+    "dispatch_group": "Sparkplug",
+    "dispatch_version": "2.3",
+    "parts": [
+      "10400103",
+      "10400203",
+      "10400303",
+      "10400403"
+    ],
+    "modules": [
+      {
+        "family": "3038",
+        "level": 8
+      },
+      {
+        "family": "4001",
+        "level": 4
+      },
+      {
+        "family": "2046",
+        "level": 4
+      }
+    ]
+  },
+  "30190103": {
+    "name": "Thanatos",
+    "type": "Heavy",
+    "quality": "SSR",
+    "icon": "Icon_mecha_wap3019",
+    "mecha_icon": "Icon_wap3019_1",
+    "portrait_icon": "icon_lihui_wap3019",
+    "introduce": "DD-313G Thanatos\nA heavy mech developed by Dor Heavy Industries, built specifically for special operations in extreme environments.\nThe constant-temperature pilot cabin crafted using the most cutting-edge temperature control technology allows Thanatos to easily adapt to the vast majority of extreme combat environments. Whether it's the raging inferno of a sea of flames or a surprise attack lurking beneath an ice layer, pilots driving Thanatos can maintain full focus throughout and execute combat orders with precision. Its unique \"Flameflow\" core can even precisely calculate the heat capacity of enemy mechs and the environment, providing the pilot with more accurate strike information.",
+    "output": "2010",
+    "durable": "384",
+    "armor": "144",
+    "fire": "111",
+    "antiriot": "770",
+    "firepower": "1088",
+    "version": "1.2",
+    "dispatch_group": "Sparkplug",
+    "dispatch_version": "1.4",
+    "parts": [
+      "30190103",
+      "30190203",
+      "30190303",
+      "30190403"
+    ],
+    "modules": [
+      {
+        "family": "2029",
+        "level": 4
+      },
+      {
+        "family": "3016",
+        "level": 8
+      },
+      {
+        "family": "4001",
+        "level": 4
+      }
+    ]
+  },
+  "10170103": {
+    "name": "Twilight Fang",
+    "type": "Light",
+    "quality": "SSR",
+    "icon": "Icon_mecha_wap1017",
+    "mecha_icon": "Icon_wap1017_1",
+    "portrait_icon": "icon_lihui_wap1017",
+    "introduce": "OS-11A Twilight Fang\nOne of Obsidian's high-performance light STs, developed based on the OS-06F Diana's combat data.\nThe Twilight Fang's built-in \"Fang\" unit can forcibly calibrate the ST's actions when the pilot's operational accuracy is insufficient, ensuring mission completion.\nThis ST was designed in two models—Model A, suitable for urban terrain, and Model B, for jungle and mountain warfare. Ultimately, Obsidian chose the more versatile Model B to be mass-produced.",
+    "output": "1445",
+    "durable": "303",
+    "armor": "48",
+    "fire": "111",
+    "antiriot": "770",
+    "firepower": "1088",
+    "version": "1.0",
+    "skins": [
+      "01"
+    ],
+    "dispatch_group": "Sparkplug",
+    "dispatch_version": "1.1",
+    "parts": [
+      "10170103",
+      "10170203",
+      "10170303",
+      "10170403"
+    ],
+    "modules": [
+      {
+        "family": "2006",
+        "level": 4
+      },
+      {
+        "family": "4005",
+        "level": 4
+      },
+      {
+        "family": "3010",
+        "level": 8
+      }
+    ]
+  },
+  "20140103": {
+    "name": "Wolverine",
+    "type": "Medium",
+    "quality": "SSR",
+    "icon": "Icon_mecha_wap2014",
+    "mecha_icon": "Icon_wap2014_1",
+    "portrait_icon": "icon_lihui_wap2014",
+    "introduce": "OS-77 Wolverine\nA medium tactical ST with impressive firepower support capabilities, developed by Obsidian.\nThis ST is equipped with a high-power radar search and locking system and a cluster energizer to assist in the tracking and timing of projectiles, effectively improving the killing efficiency of its ordinance. Its fully optimized frame structure also ensures a certain degree of mobility, making it capable of working with high-speed armored units in combat.\nDespite its high cost, the Wolverine is desirable due to its excellent performance.",
+    "output": "2455",
+    "durable": "330",
+    "armor": "72",
+    "fire": "118",
+    "antiriot": "770",
+    "firepower": "1157",
+    "version": "1.0",
+    "skins": [
+      "01"
+    ],
+    "dispatch_group": "Arsenal",
+    "dispatch_version": "1.0",
+    "parts": [
+      "20140103",
+      "20140203",
+      "20140303",
+      "20140403"
+    ],
+    "modules": [
+      {
+        "family": "4002",
+        "level": 4
+      },
+      {
+        "family": "3003",
+        "level": 8
+      },
+      {
+        "family": "2010",
+        "level": 4
+      }
+    ]
+  },
+  "20030103": {
+    "name": "XR",
+    "type": "Medium",
+    "quality": "SSR",
+    "icon": "Icon_mecha_wap2003",
+    "mecha_icon": "Icon_wap2003_1",
+    "portrait_icon": "icon_lihui_wap2003",
+    "introduce": "Code Unknown XR\nDesigned by Winston and produced by Obsidian, only one model of this ST was made, for one specific pilot, whose identity is not stored in its records.\nBuilt with no expense spared, the XR is equipped with a device called the \"Mirror Core,\" which operates in conjunction with a hub processor in the cockpit and mirror imagers on the left and right arms to significantly enhance efficiency. The energy circulation management system in the body and legs also ensure the ST's long-term combat capability without requiring resupplies.\nAccording to unidentified sources, the XR is linked to research related to \"Super Pilots.\" More data is needed.",
+    "output": "2740",
+    "durable": "315",
+    "armor": "72",
+    "fire": "120",
+    "antiriot": "770",
+    "firepower": "1176",
+    "version": "1.0",
+    "skins": [
+      "01",
+      "S71"
+    ],
+    "dispatch_group": "GeekX",
+    "dispatch_version": "1.1",
+    "parts": [
+      "20030103",
+      "20030203",
+      "20030303",
+      "20030403"
+    ],
+    "modules": [
+      {
+        "family": "2007",
+        "level": 4
+      },
+      {
+        "family": "3016",
+        "level": 8
+      },
+      {
+        "family": "4001",
+        "level": 4
+      }
+    ]
+  },
+  "10070102": {
+    "name": "Ambusher",
+    "type": "Light",
+    "quality": "SR",
+    "icon": "Icon_mecha_wap1007",
+    "mecha_icon": "Icon_wap1007_1",
+    "portrait_icon": "icon_lihui_wap1007",
+    "introduce": "RT-79S Ambusher\nThis ranged model is a light ST developed by Katana and was the first commercial model released by the company.\nIt was specialized for long-range attacks and equipped with a complete set of automatic targeting devices, providing practical assistance to the armored forces of the UNCS.\nDue to Katana's ability to customize upgrades, this ST has gained a positive reputation on the market.",
+    "output": "1320",
+    "durable": "248",
+    "armor": "36",
+    "fire": "92",
+    "antiriot": "655",
+    "firepower": "946",
+    "version": "1.0",
+    "parts": [
+      "10070102",
+      "10070202",
+      "10070302",
+      "10070402"
+    ],
+    "modules": [
+      {
+        "family": "1003",
+        "level": 4
+      },
+      {
+        "family": "3016",
+        "level": 2
+      },
+      {
+        "family": "4002",
+        "level": 4
+      }
+    ]
+  },
+  "20200102": {
+    "name": "Arash",
+    "type": "Medium",
+    "quality": "SR",
+    "icon": "Icon_mecha_wap2020",
+    "mecha_icon": "Icon_wap2020_1",
+    "portrait_icon": "icon_lihui_wap2020",
+    "introduce": "LTX-24 Arash\nThis Medium ST was developed by Laniakea. It is an excellent ranged model boasting high performance, and is an essential part of the UNCS's tactical forces.\nIts multi-dot assisted aiming system grants this ST high accuracy. In contrast, using advanced polymer materials in some of its armor panels reduces its weight, giving it enough mobility to cope with combat on the front lines.",
+    "output": "1880",
+    "durable": "294",
+    "armor": "72",
+    "fire": "96",
+    "antiriot": "655",
+    "firepower": "987",
+    "version": "1.0",
+    "parts": [
+      "20200102",
+      "20200202",
+      "20200302",
+      "20200402"
+    ],
+    "modules": [
+      {
+        "family": "1003",
+        "level": 4
+      },
+      {
+        "family": "4002",
+        "level": 4
+      },
+      {
+        "family": "3003",
+        "level": 2
+      }
+    ]
+  },
+  "10130102": {
+    "name": "Boyer",
+    "type": "Light",
+    "quality": "SR",
+    "icon": "Icon_mecha_wap1013",
+    "mecha_icon": "Icon_wap1013_1",
+    "portrait_icon": "icon_lihui_wap1013",
+    "introduce": "LTX-17 Boyer\nA mass-produced assault ST developed by Laniakea.\nThe Boyer's excellent structure has made it a standout in the history of mech design, and its stable performance in actual combat has sparked competition and imitation among various factions.\nIt is rumored that the UNCS once attempted to manufacture a more advanced LTX-18 Boyer II, but the development plan was forced to be discontinued for unknown reasons.",
+    "output": "1395",
+    "durable": "241",
+    "armor": "36",
+    "fire": "94",
+    "antiriot": "655",
+    "firepower": "967",
+    "version": "1.0",
+    "parts": [
+      "10130102",
+      "10130202",
+      "10130302",
+      "10130402"
+    ],
+    "modules": [
+      {
+        "family": "4001",
+        "level": 4
+      },
+      {
+        "family": "1002",
+        "level": 4
+      },
+      {
+        "family": "3002",
+        "level": 2
+      }
+    ]
+  },
+  "30260102": {
+    "name": "Charon",
+    "type": "Heavy",
+    "quality": "SR",
+    "icon": "Icon_mecha_wap3026",
+    "mecha_icon": "Icon_wap3026_1",
+    "portrait_icon": "icon_lihui_wap3026",
+    "introduce": "ASX-117 Charon\nA heavy ST produced by An-Holt, specialized in defense and based on the ASX-114.\nThe ASX-117 combat core is equipped with additional impact-resistant components when compared to the ASX-114 used by Gamesaurs, and its armor has been replaced with more robust and complete protective plates. These upgrades in armor make Charon the most significant and heaviest model among contemporary heavy STs.",
+    "output": "1825",
+    "durable": "321",
+    "armor": "108",
+    "fire": "82",
+    "antiriot": "655",
+    "firepower": "843",
+    "version": "1.0",
+    "parts": [
+      "30260102",
+      "30260202",
+      "30260302",
+      "30260402"
+    ],
+    "modules": [
+      {
+        "family": "1008",
+        "level": 4
+      },
+      {
+        "family": "3015",
+        "level": 2
+      },
+      {
+        "family": "4006",
+        "level": 4
+      }
+    ]
+  },
+  "10200102": {
+    "name": "Diana",
+    "type": "Light",
+    "quality": "SR",
+    "icon": "Icon_mecha_wap1020",
+    "mecha_icon": "Icon_wap1020_1",
+    "portrait_icon": "icon_lihui_wap1020",
+    "introduce": "OS-06F Diana\nA balanced light ST produced by Obsidian.\nA special interference pattern coats this ST's armor surface. The lightweight construction of its legs makes it adept at dodging.\nAs a foreign trade model, there are slight differences in the Diana's control system and engine casing for different factions.\nBased on combat data gathered by the OS-06F, Obsidian completed the development of OS-07X, OS-11A, and OS-09S.",
+    "output": "1345",
+    "durable": "260",
+    "armor": "36",
+    "fire": "86",
+    "antiriot": "655",
+    "firepower": "884",
+    "version": "1.0",
+    "parts": [
+      "10200102",
+      "10200202",
+      "10200302",
+      "10200402"
+    ],
+    "modules": [
+      {
+        "family": "1006",
+        "level": 4
+      },
+      {
+        "family": "3014",
+        "level": 2
+      },
+      {
+        "family": "4004",
+        "level": 4
+      }
+    ]
+  },
+  "10020102": {
+    "name": "Flintstone",
+    "type": "Light",
+    "quality": "SR",
+    "icon": "Icon_mecha_wap1002",
+    "mecha_icon": "Icon_wap1002_1",
+    "portrait_icon": "icon_lihui_wap1002",
+    "introduce": "LTX-19 Flintstone\nThis melee model is a light ST developed by Laniakea. It was initially designed as a companion combat model for Arash.\nAfter several design changes, the ST adopted a new type of alloy as its skeleton material, making it both solid and lightweight and striking a good balance between maneuverability and survivability, thus becoming one of the main combat models of the NDF.",
+    "output": "1470",
+    "durable": "230",
+    "armor": "36",
+    "fire": "95",
+    "antiriot": "655",
+    "firepower": "977",
+    "version": "1.0",
+    "parts": [
+      "10020102",
+      "10020202",
+      "10020302",
+      "10020402"
+    ],
+    "modules": [
+      {
+        "family": "3005",
+        "level": 2
+      },
+      {
+        "family": "1001",
+        "level": 4
+      },
+      {
+        "family": "4004",
+        "level": 4
+      }
+    ]
+  },
+  "30120102": {
+    "name": "Gamesaurs",
+    "type": "Heavy",
+    "quality": "SR",
+    "icon": "Icon_mecha_wap3012",
+    "mecha_icon": "Icon_wap3012_1",
+    "portrait_icon": "icon_lihui_wap3012",
+    "introduce": "ASX-114 Gamesaurs\nA heavy ST developed and produced by An-Holt during the Milkhama War.\nEquipped with a large sliding monitor to enhance tracking and locking performance, it uses an ASX-114 combat core that allows it to specialize in combat with agile targets. Its head-mounted electronic jammer can launch electromagnetic pulses to interfere with enemy evasion systems while tracking their trajectory.",
+    "output": "1870",
+    "durable": "305",
+    "armor": "108",
+    "fire": "86",
+    "antiriot": "655",
+    "firepower": "884",
+    "version": "1.0",
+    "parts": [
+      "30120102",
+      "30120202",
+      "30120302",
+      "30120402"
+    ],
+    "modules": [
+      {
+        "family": "3008",
+        "level": 2
+      },
+      {
+        "family": "4008",
+        "level": 4
+      },
+      {
+        "family": "1009",
+        "level": 4
+      }
+    ]
+  },
+  "20260102": {
+    "name": "Hermes",
+    "type": "Medium",
+    "quality": "SR",
+    "icon": "Icon_mecha_wap2026",
+    "mecha_icon": "Icon_wap2026_1",
+    "portrait_icon": "icon_lihui_wap2026",
+    "introduce": "AST-06 Hermes\nAn-Holt Corporation developed this medium ST. It is mainly equipped by the tactical support forces of the Dawnstar League.\nThis model is designed to carry tactical weapons and is equipped with high-power radar, trading mobility for excellent guidance capabilities and allowing for efficient detection and the locking on of distant targets.\nAs part of the DL Tactical System, it often cooperates with the Kaolin in combat.",
+    "output": "2675",
+    "durable": "246",
+    "armor": "54",
+    "fire": "94",
+    "antiriot": "655",
+    "firepower": "967",
+    "version": "1.0",
+    "parts": [
+      "20260102",
+      "20260202",
+      "20260302",
+      "20260402"
+    ],
+    "modules": [
+      {
+        "family": "1004",
+        "level": 4
+      },
+      {
+        "family": "3017",
+        "level": 2
+      },
+      {
+        "family": "4005",
+        "level": 4
+      }
+    ]
+  },
+  "20280102": {
+    "name": "Ironclad",
+    "type": "Medium",
+    "quality": "SR",
+    "icon": "Icon_mecha_wap2028",
+    "mecha_icon": "Icon_wap2028_1",
+    "portrait_icon": "icon_lihui_wap2028",
+    "introduce": "LTX-29 Ironclad\nLaniakea developed this medium assault ST mainly used by the UNCS Rapid Response Mountain Troops.\nThis model features remarkable claw-shaped feet and an automatic adjustable hydraulic transmission system. It is equipped with the \"Pursuer\" quick response buzzer on its lightweight arm, ensuring its ability to attack over complex terrain to the maximum extent. At the same time, thanks to its efficient armor structure, it still benefits from a degree of protection against medium to long-range attacks.",
+    "output": "2040",
+    "durable": "271",
+    "armor": "72",
+    "fire": "98",
+    "antiriot": "655",
+    "firepower": "1008",
+    "version": "1.0",
+    "parts": [
+      "20280102",
+      "20280202",
+      "20280302",
+      "20280402"
+    ],
+    "modules": [
+      {
+        "family": "4001",
+        "level": 4
+      },
+      {
+        "family": "1002",
+        "level": 4
+      },
+      {
+        "family": "3001",
+        "level": 2
+      }
+    ]
+  },
+  "20250102": {
+    "name": "Kaolin",
+    "type": "Medium",
+    "quality": "SR",
+    "icon": "Icon_mecha_wap2025",
+    "mecha_icon": "Icon_wap2025_1",
+    "portrait_icon": "icon_lihui_wap2025",
+    "introduce": "HR-277 Kaolin\nHorizon Corporation developed this medium combat ST primarily deployed in the DLAF's elite troops. \nOnce a classified model of the DL, the shock-generating system built into its shoulder enhances the penetration of its armament, while the tilted armor at the front makes it a highly effective charging and counter-charging weapon, especially in the hands of skilled pilots.",
+    "output": "2315",
+    "durable": "269",
+    "armor": "54",
+    "fire": "90",
+    "antiriot": "655",
+    "firepower": "925",
+    "version": "1.0",
+    "parts": [
+      "20250102",
+      "20250202",
+      "20250302",
+      "20250402"
+    ],
+    "modules": [
+      {
+        "family": "3008",
+        "level": 2
+      },
+      {
+        "family": "1010",
+        "level": 4
+      },
+      {
+        "family": "4008",
+        "level": 4
+      }
+    ]
+  },
+  "20150102": {
+    "name": "Krieger",
+    "type": "Medium",
+    "quality": "SR",
+    "icon": "Icon_mecha_wap2015",
+    "mecha_icon": "Icon_wap2015_1",
+    "portrait_icon": "icon_lihui_wap2015",
+    "introduce": "LTX-26 Krieger\nLaniakea led the development of this Medium ST, known for its cost-effectiveness and stability. It is frequently deployed by the NDF.\nThis model utilizes a planar square structure and laser and electron beam composite welding technology to improve strength while reducing hardware failure rates and deployment time. It comes with a multi-language operating system, which has been well received by members of the NDF.",
+    "output": "2430",
+    "durable": "261",
+    "armor": "54",
+    "fire": "92",
+    "antiriot": "655",
+    "firepower": "946",
+    "version": "1.0",
+    "parts": [
+      "20150102",
+      "20150202",
+      "20150302",
+      "20150402"
+    ],
+    "modules": [
+      {
+        "family": "3007",
+        "level": 2
+      },
+      {
+        "family": "1011",
+        "level": 4
+      },
+      {
+        "family": "4009",
+        "level": 4
+      }
+    ]
+  },
+  "30030102": {
+    "name": "Mandrill",
+    "type": "Heavy",
+    "quality": "SR",
+    "icon": "Icon_mecha_wap3003",
+    "mecha_icon": "Icon_wap3003_1",
+    "portrait_icon": "icon_lihui_wap3003",
+    "introduce": "SAT-309 Mandrill\nA heavy melee ST developed and produced by SEED after the Milkhama War.\nThe body and shoulders of this ST are equipped with a hydraulic system made of Arashium alloy. This system automatically adjusts the pressure and flow of hydraulic systems, using gyroscopic sensors and data from targeting systems to achieve optimal thrust and torque output.",
+    "output": "1780",
+    "durable": "312",
+    "armor": "108",
+    "fire": "90",
+    "antiriot": "655",
+    "firepower": "925",
+    "version": "1.0",
+    "parts": [
+      "30030102",
+      "30030202",
+      "30030302",
+      "30030402"
+    ],
+    "modules": [
+      {
+        "family": "1001",
+        "level": 4
+      },
+      {
+        "family": "4006",
+        "level": 4
+      },
+      {
+        "family": "3020",
+        "level": 2
+      }
+    ]
+  },
+  "30090102": {
+    "name": "MetalMare",
+    "type": "Heavy",
+    "quality": "SR",
+    "icon": "Icon_mecha_wap3009",
+    "mecha_icon": "Icon_wap3009_1",
+    "portrait_icon": "icon_lihui_wap3009",
+    "introduce": "KX-084 MetalMare\nA heavy assault ST developed by Kamadar.\nEquipped with an SAT-1 gas guidance system made from Arashium alloy, it converts a portion of the engine's power into kinetic energy for the firearm, enhancing the lethality of each shot. With a simple, stable design, it serves as an NDF-certified mobile turret.",
+    "output": "1835",
+    "durable": "303",
+    "armor": "108",
+    "fire": "88",
+    "antiriot": "655",
+    "firepower": "905",
+    "version": "1.0",
+    "parts": [
+      "30090102",
+      "30090202",
+      "30090302",
+      "30090402"
+    ],
+    "modules": [
+      {
+        "family": "4001",
+        "level": 4
+      },
+      {
+        "family": "1002",
+        "level": 4
+      },
+      {
+        "family": "3004",
+        "level": 2
+      }
+    ]
+  },
+  "10210102": {
+    "name": "Radiance",
+    "type": "Light",
+    "quality": "SR",
+    "icon": "Icon_mecha_wap1021",
+    "mecha_icon": "Icon_wap1021_1",
+    "portrait_icon": "icon_lihui_wap1021",
+    "introduce": "DD-102 Radiance\nThis ST is a prototype mech developed by Doll Industries. It won the Best Appearance Award in an ST Design Competition held by the Dawnstar League.\nThe design of this ST was inspired by sports cars, giving it a sleek and elegant appearance. It offers outstanding performance in reducing resistance and minimizing noise.\nThe Radiance has achieved remarkable results in various counter-terrorism operations. However, due to its high manufacturing cost only a small number of them are currently in service with the regular army.",
+    "output": "1365",
+    "durable": "251",
+    "armor": "36",
+    "fire": "88",
+    "antiriot": "655",
+    "firepower": "905",
+    "version": "1.0",
+    "parts": [
+      "10210102",
+      "10210202",
+      "10210302",
+      "10210402"
+    ],
+    "modules": [
+      {
+        "family": "1007",
+        "level": 4
+      },
+      {
+        "family": "3008",
+        "level": 2
+      },
+      {
+        "family": "4008",
+        "level": 4
+      }
+    ]
+  },
+  "20230102": {
+    "name": "Roadrunner",
+    "type": "Medium",
+    "quality": "SR",
+    "icon": "Icon_mecha_wap2023",
+    "mecha_icon": "Icon_wap2023_1",
+    "portrait_icon": "icon_lihui_wap2023",
+    "introduce": "OS-10R Roadrunner\nObsidian developed this medium sized ST with a high cost to performance ratio compared to other STs of the same type and generation.\nThis model features a frontal observation device and an external steel frame that can carry additional maintenance equipment. It uses the \"Moho Discontinuity EDGE System\" to improve protection and further reduce costs, which has won it wide acclaim in the market.\nIt is reported that this ST's proprietary technology originally came from the Principality of Ovett.",
+    "output": "2420",
+    "durable": "267",
+    "armor": "54",
+    "fire": "89",
+    "antiriot": "655",
+    "firepower": "915",
+    "version": "1.0",
+    "parts": [
+      "20230102",
+      "20230202",
+      "20230302",
+      "20230402"
+    ],
+    "modules": [
+      {
+        "family": "1005",
+        "level": 4
+      },
+      {
+        "family": "4005",
+        "level": 4
+      },
+      {
+        "family": "3022",
+        "level": 2
+      }
+    ]
+  },
+  "30250102": {
+    "name": "Swampwalker",
+    "type": "Heavy",
+    "quality": "SR",
+    "icon": "Icon_mecha_wap3025",
+    "mecha_icon": "Icon_wap3025_1",
+    "portrait_icon": "icon_lihui_wap3025",
+    "introduce": "HU-21 Swampwalker\nThe UKB-1 designed this heavy tactical ST to tackle the unique terrain of jungle regions.\nIt is best suited for providing firepower support during rainforest combat. With its unique joint design and suspension, it can smoothly traverse swamps and maintain balance even under intense fire.",
+    "output": "1945",
+    "durable": "293",
+    "armor": "108",
+    "fire": "86",
+    "antiriot": "655",
+    "firepower": "884",
+    "version": "1.0",
+    "parts": [
+      "30250102",
+      "30250202",
+      "30250302",
+      "30250402"
+    ],
+    "modules": [
+      {
+        "family": "3007",
+        "level": 2
+      },
+      {
+        "family": "1011",
+        "level": 4
+      },
+      {
+        "family": "4009",
+        "level": 4
+      }
+    ]
+  },
+  "10260101": {
+    "name": "Aker",
+    "type": "Light",
+    "quality": "R",
+    "icon": "Icon_mecha_wap1026",
+    "mecha_icon": "Icon_wap1026_1",
+    "portrait_icon": "icon_lihui_wap1026",
+    "introduce": "HU-04 Aker\nThis light ST was developed by the UKB-1, and is one of the original ST models used in the Milkhama War.\nHighly maneuverable, with thin armor and easy-to-use features, it is mass-produced in all major cities on Milkhama and was once used to escort the Arcus Tactical ST.\nOnce deployed in large numbers with the main force of the NDF, it has since been repurposed for training, surveillance, and patrols, or modified by civilians for security work in peacetime.",
+    "output": "1350",
+    "durable": "198",
+    "armor": "24",
+    "fire": "76",
+    "antiriot": "578",
+    "firepower": "751",
+    "version": "1.0",
+    "parts": [
+      "10260101",
+      "10260201",
+      "10260301",
+      "10260401"
+    ],
+    "modules": []
+  },
+  "30020101": {
+    "name": "Centurion",
+    "type": "Heavy",
+    "quality": "R",
+    "icon": "Icon_mecha_wap3002",
+    "mecha_icon": "Icon_wap3002_1",
+    "portrait_icon": "icon_lihui_wap3002",
+    "introduce": "LTX-32 Centurion\nA Heavy ST produced by Laniakea. One of the original ST models used in the Milkhama War.\nThe design of the Centurion was based on the popular turretless tank design at the time, with polycrystalline ceramic coating on the surface and movable armor protecting the head. This design significantly reduced manufacturing difficulty and increased pilot survival rates. In tactical situations, it often cooperated with the Tiktaalik. It became the mainstay model of the NDF.",
+    "output": "1810",
+    "durable": "261",
+    "armor": "72",
+    "fire": "75",
+    "antiriot": "578",
+    "firepower": "741",
+    "version": "1.0",
+    "parts": [
+      "30020101",
+      "30020201",
+      "30020301",
+      "30020401"
+    ],
+    "modules": []
+  },
+  "20350101": {
+    "name": "Cyclone",
+    "type": "Medium",
+    "quality": "R",
+    "icon": "Icon_mecha_wap2035",
+    "mecha_icon": "Icon_wap2035_1",
+    "portrait_icon": "icon_lihui_wap2035",
+    "introduce": "OS-04 Cyclone\nA Medium ST, developed by Obsidian. This ST played a crucial role as a firepower support platform for the DL during the Milkhama War.\nThis ST is powered by the MA-3000 engine, which was independently developed by Obsidian and is equipped with prefabricated frames, enabling compatibility with multiple heavy weapons.\nAfter the war, the Cyclone was phased out of by front line forces, but remains a powerful asset in the Ashes arsenal.",
+    "output": "2300",
+    "durable": "206",
+    "armor": "36",
+    "fire": "78",
+    "antiriot": "578",
+    "firepower": "771",
+    "version": "1.0",
+    "parts": [
+      "20350101",
+      "20350201",
+      "20350301",
+      "20350401"
+    ],
+    "modules": []
+  },
+  "20360101": {
+    "name": "Ergate",
+    "type": "Medium",
+    "quality": "R",
+    "icon": "Icon_mecha_wap2036",
+    "mecha_icon": "Icon_wap2036_1",
+    "portrait_icon": "icon_lihui_wap2036",
+    "introduce": "HU-06 Ergate\nA Medium ST, improved and upgraded by the UKB-1 based on the civil SL - KS-1.\nExported by the Ovett Principality and deployed worldwide, this ST has some of the strongest armor and module interchangeability among first generation STs and performs well in large-scale group combat on the front line.\nAlthough its performance is inferior to primary battle STs, it is reliable, inexpensive, and easy-to-maintain. These characteristics make it standard for second-line troops and various civilian armed groups.",
+    "output": "2225",
+    "durable": "220",
+    "armor": "36",
+    "fire": "77",
+    "antiriot": "578",
+    "firepower": "761",
+    "version": "1.0",
+    "parts": [
+      "20360101",
+      "20360201",
+      "20360301",
+      "20360401"
+    ],
+    "modules": []
+  },
+  "20370101": {
+    "name": "Falcon",
+    "type": "Medium",
+    "quality": "R",
+    "icon": "Icon_mecha_wap2037",
+    "mecha_icon": "Icon_wap2037_1",
+    "portrait_icon": "icon_lihui_wap2037",
+    "introduce": "LTX-27 Falcon\nA Medium ST developed by Laniakea and specializing in achieving accurate and economical ranged attacks.\nThe Falcon is equipped with the \"Sparrow\" optical sight, lending it excellent firing accuracy. The strength of its other parts is equivalent to the civilian model. This model performs outstandingly in low-intensity regular combat but is put to the test in complex three-dimensional battlefields.",
+    "output": "1870",
+    "durable": "234",
+    "armor": "48",
+    "fire": "79",
+    "antiriot": "578",
+    "firepower": "781",
+    "version": "1.0",
+    "parts": [
+      "20370101",
+      "20370201",
+      "20370301",
+      "20370401"
+    ],
+    "modules": []
+  },
+  "10080101": {
+    "name": "Lanius",
+    "type": "Light",
+    "quality": "R",
+    "icon": "Icon_mecha_wap1008",
+    "mecha_icon": "Icon_wap1008_1",
+    "portrait_icon": "icon_lihui_wap1008",
+    "introduce": "AST-03 Lanius\nThis light ST was developed by An-Holt, and is one of the original ST models used in the Milkhama War.\nIt is equipped with B-type anti-impact cushions inside the legs and knees, and the head is fitted with a reinforced signal transceiver that allows for rapid troop assembly after landing.\nInitially designed for airborne units to operate with Meister, most surviving Lanius units are utilized by second-line forces.",
+    "output": "1270",
+    "durable": "214",
+    "armor": "24",
+    "fire": "79",
+    "antiriot": "578",
+    "firepower": "781",
+    "version": "1.0",
+    "parts": [
+      "10080101",
+      "10080201",
+      "10080301",
+      "10080401"
+    ],
+    "modules": []
+  },
+  "30130101": {
+    "name": "Meister",
+    "type": "Heavy",
+    "quality": "R",
+    "icon": "Icon_mecha_wap3013",
+    "mecha_icon": "Icon_wap3013_1",
+    "portrait_icon": "icon_lihui_wap3013",
+    "introduce": "OS-02 Meister\nThis Heavy ST was produced by Obsidian, and is one of the original ST models used in the Milkhama War.\nAll parts are designed with detachable interfaces for easy assembly and disassembly. Sufficient armor plates can be added, and damaged parts can be easily repaired. During deployment, it often worked in conjunction with the Lanius. Since the war, parts from retired units can be easily found on the black market.",
+    "output": "1800",
+    "durable": "267",
+    "armor": "72",
+    "fire": "69",
+    "antiriot": "578",
+    "firepower": "682",
+    "version": "1.0",
+    "parts": [
+      "30130101",
+      "30130201",
+      "30130301",
+      "30130401"
+    ],
+    "modules": []
+  },
+  "20310101": {
+    "name": "Tiktaalik",
+    "type": "Medium",
+    "quality": "R",
+    "icon": "Icon_mecha_wap2031",
+    "mecha_icon": "Icon_wap2031_1",
+    "portrait_icon": "icon_lihui_wap2031",
+    "introduce": "LTX-22 Tiktaalik\nA Medium ST developed by Laniakea and extensively deployed by the NDF during the Milkhama War.\nThis ST utilizes advanced armor processing technology and is equipped with basic optical observation systems on the head and chest sides, providing specific frontal combat capabilities.\nDue to its simple and reliable characteristics it is still active in various areas of the UNCS.",
+    "output": "1925",
+    "durable": "239",
+    "armor": "48",
+    "fire": "73",
+    "antiriot": "578",
+    "firepower": "721",
+    "version": "1.0",
+    "parts": [
+      "20310101",
+      "20310201",
+      "20310301",
+      "20310401"
+    ],
+    "modules": []
+  },
+  "10250101": {
+    "name": "Ursprung",
+    "type": "Light",
+    "quality": "R",
+    "icon": "Icon_mecha_wap1025",
+    "mecha_icon": "Icon_wap1025_1",
+    "portrait_icon": "icon_lihui_wap1025",
+    "introduce": "NED-00 Ursprung\nA prototype ST designed and produced by Laniakea. \nOriginally designed to carry a specialization unit called the \"Testee,\" this ST was eventually dismantled for unknown reasons.\nOnly a few of these models exist. Their overall performance is slightly higher than the first-generation models currently deployed.",
+    "output": "1350",
+    "durable": "202",
+    "armor": "24",
+    "fire": "77",
+    "antiriot": "578",
+    "firepower": "761",
+    "version": "1.0",
+    "parts": [
+      "10250101",
+      "10250201",
+      "10250301",
+      "10250401"
+    ],
+    "modules": []
+  },
+  "30310101": {
+    "name": "Zealred",
+    "type": "Heavy",
+    "quality": "R",
+    "icon": "Icon_mecha_wap3031",
+    "mecha_icon": "Icon_wap3031_1",
+    "portrait_icon": "icon_lihui_wap3031",
+    "introduce": "HR-605 Zealred\nA Heavy ST developed by Horizon, it was one of the original ST models used in the Milkhama War.\nIt achieves high armor and modularity with low production costs and ample production capacity. Its armed mount system adopts a modular component design compatible with various assault weapons.",
+    "output": "1880",
+    "durable": "244",
+    "armor": "72",
+    "fire": "73",
+    "antiriot": "578",
+    "firepower": "721",
+    "version": "1.0",
+    "parts": [
+      "30310101",
+      "30310201",
+      "30310301",
+      "30310401"
+    ],
+    "modules": []
+  }
+}

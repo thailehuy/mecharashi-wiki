@@ -2,7 +2,7 @@
 
 A static fan wiki for **Mecharashi**, built with Bootstrap 5 and jQuery. Hosted on GitHub Pages.
 
-Images and icons live in a separate repo, [mecharashi-wiki-assets](https://github.com/thailehuy/mecharashi-wiki-assets), served from `https://assets.mecharashi-wiki.cc/` (`ASSET_BASE` in `index.html`), so the frequent text/translation deploys here stay small. Its paths mirror the old layout here; the page code prepends `ASSET_BASE` to them. Where we have no copy of an image, the pages and `build_pages.py` fall back to the game's CDN (`media.zlongame.com`).
+Images and icons live in a separate repo, [mecharashi-wiki-assets](https://github.com/thailehuy/mecharashi-wiki-assets), served from `https://assets.mecharashi-wiki.cc/` (`ASSET_BASE` in `index.html`), so the frequent text deploys here stay small. Its paths mirror the old layout here; the page code prepends `ASSET_BASE` to them. Where we have no copy of an image, the pages and `build_pages.py` fall back to the game's CDN (`media.zlongame.com`).
 
 | Assets path | Contents |
 |---|---|
@@ -38,7 +38,7 @@ Add new images to the matching folder in that repo; pushing its `main` deploys t
 - **R&D Bonus** — max bonuses from a fully researched R&D tree, by pilot class, ST weight class and weapon type
 - **DMG Calc (Beta)** — standalone page at `dmgcalc/` (linked from "Misc."): the mined Damage Bench, comparing two setups' damage per attack and attacks to kill against a boss; saved loadouts stay in the browser (localStorage)
 - **Glossary** — shared keyword/tooltip engine (buffs, skills, terrain, jump-links) used across all pages
-- Runtime translation loading — editing a `<ID>-translation.json` file and pushing takes effect on GitHub Pages without recompiling
+- Table-based data — all text and stats live in `data/db/` (one JSON table per entity); the deploy workflow compiles them, so an edited table goes live on push
 
 ## Project structure
 
@@ -46,11 +46,10 @@ Add new images to the matching folder in that repo; pushing its `main` deploys t
 index.html                        # Entry point
 dmgcalc/                          # DMG Calc (Beta), a standalone page: index.html (markup, kept by hand), bench.js/css (generated)
 css/style.css                     # All styles
-compile.py                        # Orchestrates the full data build (see below)
+compile.py                        # Builds the page bundles from data/db/ (see below)
 build_pages.py                    # Generates per-route/per-item pages (gitignored; run in CI)
 js/
   app.js                          # Path/hash router, nav (incl. "Misc." dropdown), version badge
-  translations.js                 # Runtime translation loader
   glossary.js                     # Keyword/tooltip engine shared by all pages
   pages/
     home.js                       # Landing page
@@ -66,11 +65,12 @@ js/
     builder.js                    # Mech loadout builder
     rdbonus.js                    # R&D Bonus (max R&D bonuses) tables
 data/
-  pilots/                         # compile.py, <ID>.json, <ID>-translation.json → compiled.js/json (PilotsData)
-  mechs/                          # compile.py, <ID>.json, <ID>-translation.json → compiled.js/json (MechsData)
-  weapons/                        # compile.py, scrape/helper scripts → compiled.js/json (WeaponsData)
-  backpacks/                      # compile.py, translations → compiled.js/json (BackpacksData)
-  modules/                        # compile.py, scrape-modules.js → compiled.js/json (ModulesData)
+  db/                             # Source tables: pilots, pilot_neurons, neural_partitions, skills, mechs, mech_parts, modules, weapons, backpacks, materials (see data/README.md)
+  pilots/                         # compiled.js/json (PilotsData); check_skins.py, INTAKE_TEMPLATE.md
+  mechs/                          # compiled.js/json (MechsData); INTAKE_TEMPLATE.md
+  weapons/                        # compiled.js/json (WeaponsData)
+  backpacks/                      # compiled.js/json (BackpacksData)
+  modules/                        # compiled.js/json (ModulesData)
   accessories/                    # compiled.js/json; extract-chain-traits.py → chain-traits.js/json (ChainTraitsData, SSR TA/RA pairs from the mined DB)
   builder/                        # generate-index-maps.py → index-maps.js/json (BuilderIndexMaps)
   dmgcalc/                        # extract-bench.py → bench-data.js (BenchData) + dmgcalc/bench.js/css, from the mined Damage_Bench.html
@@ -124,50 +124,25 @@ Mech loadout theorycrafting tool:
 
 ## Data pipeline
 
-### Scraping
+### Data tables
 
-```bash
-# GL pilots (English)
-curl "https://usma-activity.tentree-games.com/common/infodata/mQuery.do?appkey=1722917077707&target=pilot_data&type=detail&lang=en&query=<ID>"
-
-# CN pilots
-curl "https://ma-activity.zlongame.com/common/infodata/mQuery.do?appkey=1616148215678&target=pilot_data&type=detail&query=<ID>"
-
-# GL mechs (English)
-curl "https://usma-activity.tentree-games.com/common/infodata/mQuery.do?appkey=1722917077707&target=aircraft_data&type=detail&lang=en&query=<Name>"
-
-# CN mechs
-curl "https://ma-activity.zlongame.com/common/infodata/mQuery.do?appkey=1616148215678&target=aircraft_data&type=detail&query=<Name>"
-```
-
-Weapons, backpacks, and modules each have their own scrape/raw-data helper scripts under `data/weapons/`, `data/backpacks/`, and `data/modules/` (e.g. `scrape-ur.js`, `scrape-modules.js`).
+Pilot, ST, module, weapon and backpack data lives in `data/db/`: one JSON table per entity, keyed by game ID, holding the final English text. [data/README.md](data/README.md) documents every table and field, and how to add a pilot or ST. The old CN API dumps, `-translation.json` files and scrapers were removed; they are in git history under the tag `pre-db`.
 
 ### Compiling
 
-Run the full pipeline from the repo root:
+Run the full build from the repo root:
 
 ```bash
 python3 compile.py
 ```
 
-This runs, in order: `data/pilots/compile.py`, `data/mechs/compile.py`, `data/modules/compile.py`, `data/weapons/compile.py`, `data/backpacks/compile.py`, then compiles `glossary.json`/`dispatch.json`/`exskills.json` directly, and finally `data/builder/generate-index-maps.py` (which depends on IDs produced by every preceding step, so it must run last). It exits on the first subprocess failure.
+It loads every `data/db/` table, checks that every referenced ID exists (it exits with a list of broken references otherwise), and joins the tables into `data/<kind>/compiled.js`/`compiled.json` for pilots, mechs, modules, weapons and backpacks. Then it compiles `glossary.json`/`dispatch.json`/`exskills.json` and finally runs `data/builder/generate-index-maps.py`, which reads the bundles and so must run last.
 
-Each `compile.py` merges the corresponding `<ID>-translation.json` files over the raw CN-sourced data and writes `compiled.js`/`compiled.json`.
+The deploy workflow runs `compile.py` before `build_pages.py`, so a pushed table edit is deployed even if it wasn't compiled locally. Commit the regenerated bundles anyway, since the local server reads them.
 
-### Adding a new pilot or ST
+### Editing text
 
-1. Add the ID/name to the relevant `list.json` (and `list-cn.json` if CN-only)
-2. Fetch the raw detail file and save as `<ID>.json`
-3. A `<ID>-translation.json` is generated automatically on the next compile run — fill in English fields for CN-only entries
-4. Run `python3 compile.py` and push
-
-### Translating a CN-only entry (no recompile)
-
-Edit the `<ID>-translation.json` with English values and push. GitHub Pages serves the updated translation file and the detail page picks it up automatically via `fetch()`. For local testing, serve with:
-
-```bash
-python3 -m http.server 8080
-```
+Edit the row in the relevant `data/db/` table (e.g. a skill's text in `skills.json`, a pilot's bio in `pilots.json` → `introduction`) and push. Shared IDs have one row, so a fix to a class-wide skill applies to every pilot that has it.
 
 ### Using the mined game database
 
@@ -179,8 +154,8 @@ Open it with the `sqlite3` CLI, Python's built-in `sqlite3`, or a viewer such as
 
 | Wiki data | DB table | Join on |
 |---|---|---|
-| Pilot (`data/pilots/<ID>.json`) | `pilots` (name, `full_name`, `bio`), `pilot_stats`, `pilot_skills` | `pilot_id` = wiki pilot ID |
-| ST (`data/mechs/<ID>.json`, ID = body part) | `st_parts` → `sts` (name, `description`), `st_max` | `st_parts.part_id` = wiki ID, then `st_id` |
+| Pilot (`data/db/pilots.json`) | `pilots` (name, `full_name`, `bio`), `pilot_stats`, `pilot_skills` | `pilot_id` = wiki pilot ID |
+| ST (`data/db/mechs.json`, ID = body part; parts in `mech_parts.json`) | `st_parts` → `sts` (name, `description`), `st_max` | `st_parts.part_id` = wiki ID, then `st_id` |
 | Glossary `buf` entries (`data/glossary.json`) | `buffs` (`name`, `description`) | `buff_id` = glossary key |
 | Weapons, modules, backpacks, chips, accessories | `weapons`, `modules`, `backpacks`, `chips`, `wep_components` | their own IDs |
 
@@ -200,7 +175,7 @@ sqlite3 data/screenshots/mined/mecharashi.db \
 
 - **Global is behind CN.** The DB covers Global only up to **v2.5**: every pilot and ST up to v2.5 is in it, and none from v2.6 on. v2.6–3.2 are CN-only (not on Global yet) and v3.3+ will come with a future extraction, so these keep the wiki's own data, and v3.3+ still need manual entry ([data/README.md](data/README.md)). When joining wiki data to the DB, expect v2.6+ entries to have no match. Don't add new pilots/STs from the DB without deciding to.
 - **Never overwrite English text.** To tell Chinese from English, look for CJK characters (`[　-鿿＀-￯]`), not "any non-ASCII": English text often contains em-dashes, curly quotes or accents (Fenrisúlfr).
-- **Write overrides to `<ID>-translation.json`, not the raw `<ID>.json`.** Pilot bios go in `Introduction`; ST descriptions go in `introduce`. Keep the file's formatting: 2-space indent, `ensure_ascii=False`, and its trailing newline (some files have one, some don't).
+- **Write changes to the `data/db/` tables.** Pilot bios go in `pilots.json` → `introduction`; ST descriptions go in `mechs.json` → `introduce`; skill text in `skills.json`. Keep the tables' formatting: 2-space indent, `ensure_ascii=False`, trailing newline.
 - **Glossary: match by exact buff ID *and* name, via `buffs`.** Don't use the name-keyed `glossary` table: one name there covers many buff IDs, so it hands out the wrong text (e.g. Short Circuit getting Stealth's description, Guts becoming "Guts (Test Use)"). The DB's text is sometimes vaguer than ours (e.g. Guard, Poised, Heroism); keep ours when it's more specific.
 - **DB text is plain.** It has no `<color=#F74848>` highlights or `<buf ID=…>` links; re-add them where the existing text had them.
 - **Renaming is a separate decision.** The DB uses official global names, which sometimes differ from ours (e.g. Improved Attack → Attack Enhancement). Pages resolve bare `[Name]` references through the glossary name index, so a rename must be applied everywhere the name is used (`js/pages/*.js`, `data/dispatch.json`, `data/shops.js`, weapon `pilot` fields, effect text). Some DB names are internal labels (`Bionic Computer 7`, `EVA-01 Pilot`); don't use those.
@@ -272,33 +247,3 @@ Previews can't be seen by opening the page in a browser. To check them:
 - **After deploy:** paste the link into [Facebook's Sharing Debugger](https://developers.facebook.com/tools/debug/) (use "Scrape Again" to refresh its cache), or into a Discord message. Discord also caches previews for a while.
 
 The `og:url` URLs point at `https://mecharashi-wiki.cc/` (`DEFAULT_SITE_URL` in `build_pages.py`); pass a different root as the first argument to override it. `og:image` URLs are absolute already: our copy on `https://assets.mecharashi-wiki.cc/` (`ASSET_URL` in `build_pages.py`, which must match `ASSET_BASE` in `index.html`) when the assets repo has it, otherwise the game CDN.
-
-## Translation file schema
-
-**Pilots** (`data/pilots/<ID>-translation.json`):
-```json
-{
-  "version": "1.0",
-  "PilotName": "...",
-  "RealName": "...",
-  "Gender": "...",
-  "Profession": "...",
-  "Occupation": "...",
-  "Introduction": "...",
-  "Talent0_2Ability": { "name": "...", "SpecificEffects": "..." },
-  "Talent3_5Ability": { "name": "...", "SpecificEffects": "..." },
-  "skills": { "<SkillID>": { "name": "...", "describe": "...", "SpecificEffects": "..." } },
-  "neuralPassives": { "<PassiveID>": { "name": "...", "SpecificEffects": "..." } }
-}
-```
-
-**STs** (`data/mechs/<ID>-translation.json`):
-```json
-{
-  "version": "1.0",
-  "manjiFirepower": "...",
-  "name": "...",
-  "introduce": "...",
-  "modules": { "<ModuleID>": { "name": "...", "SpecificEffects": "..." } }
-}
-```

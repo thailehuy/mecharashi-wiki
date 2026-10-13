@@ -1,6 +1,7 @@
 <!--
 Pilot intake form — fill this in and hand it back; Claude will turn it into
-data/pilots/<ID>.json (+ TEMPLATE.json structure) and run compile.py.
+rows in the data/db/ tables (see data/README.md "Adding a pilot") and run
+compile.py.
 
 - Leave a field blank / delete a line if it doesn't apply (e.g. no Ascended
   Talent yet, no neural passives beyond the shared Alpha/Beta).
@@ -12,13 +13,16 @@ data/pilots/<ID>.json (+ TEMPLATE.json structure) and run compile.py.
   chips are shared per Occupation (you don't need to fill those in here —
   just confirm the Occupation and they'll be copied from an existing pilot).
 
-Checklist for whoever (or whichever agent) turns this into the JSON file —
+Checklist for whoever (or whichever agent) turns this into table rows —
 each point below came from a real mistake made while building the first
 pilot from this template (10103182, Kaidan The Invincible):
 
 1. Pick a structural template from an EXISTING pilot with the same
    Occupation, license, and (ideally) game version, then copy its
-   `biomimetic_computer_data` wholesale and only swap in IDs/names/skills.
+   data/db/pilot_neurons.json list wholesale and only swap in IDs/skills.
+   Reuse the occupation's shared α/β partitions (`<occupation>-alpha`/
+   `-beta`); only γ1/γ2 are new. The chip slot colours go in the pilot's
+   `neural[].slots`.
    Different content revisions use a different number of Core Neuron slots
    (7 vs 8) — count how many numbered Skills are in this form (Skill 0 is
    the shared innate one; everything after that needs its own Core Neuron
@@ -26,7 +30,7 @@ pilot from this template (10103182, Kaidan The Invincible):
 2. Numbers in every SpecificEffects/describe/effect string must be wrapped
    as `<color=#F74848>NUMBER</color>` (see any existing pilot file for the
    convention) — the plain intake text above is NOT what goes into the
-   JSON verbatim. The `%`/`+`/`-` sign stays inside the tag
+   table verbatim. The `%`/`+`/`-` sign stays inside the tag
    (`<color=#F74848>+15%</color>`); an `x` multiplier suffix stays OUTSIDE
    it (`<color=#F74848>1.2</color>x`).
 3. Every `[BracketedName]` in the effect text must become a real
@@ -40,47 +44,50 @@ pilot from this template (10103182, Kaidan The Invincible):
 4. Any genuinely new buf/skill introduced by "Glossary buf 1"/"Glossary
    skill 1" below must ALSO be added as its own entry in
    data/glossary.json (top-level `buf`/`skill` maps) — adding the tag to
-   the pilot's own file is not enough, the popup looks it up there. Only
+   the pilot's skill text is not enough, the popup looks it up there. Only
    give a glossary entry an `icon` field if one was explicitly specified
    for it in this form; don't borrow another skill's icon just to avoid a
    blank slot, or the popup shows a broken image.
-5. `Type: Passive` core-neuron skills use `SpecificEffects` (not
-   `describe`) and omit the `type` key entirely. `Resource: PP` must
-   become `"resource": "PP"` on the skill object (that's what the site
-   checks to show the PP badge) in addition to it being mentioned in the
-   effect text. A skill that moves the unit as part of the attack (a dash/
-   charge) is `type: "SpecialAssault"`, not `"Order"`, and still needs a
-   `matchingWeaponType`.
+5. `Type: Passive` core-neuron skills use `effect` (not `describe`) and
+   omit the `type` key entirely in data/db/skills.json. `Resource: PP` must
+   become `"resource": "PP"` on the skill row (that's what the site checks
+   to show the PP badge) in addition to it being mentioned in the effect
+   text. A skill that moves the unit as part of the attack (a dash/charge)
+   is `type: "SpecialAssault"`, not `"Order"`.
 6. Icons: every icon name referenced (talent/skill/neural/glossary) should
    already exist as a file under data/unlisted/pilot_skills/ — check with
    `ls` before using one. The site tries the local file first and only
    falls back to the CN CDN if that 404s, so a wrong/missing local
    filename means a broken icon even if the CDN also doesn't have it.
-7. After writing the JSON (+ a `<ID>-translation.json` with just
-   `{ "version": "X.Y" }`), run `python3 compile.py` and confirm the pilot
-   shows up in `data/pilots/compiled.json`, and add the pilot's name to
+7. Set `version` on the pilots.json row, run `python3 compile.py` (it
+   fails on any broken ID reference) and confirm the pilot shows up in
+   `data/pilots/compiled.json`, and add the pilot's name to
    `PILOT_RELEASE_ORDER` in `js/pages/pilots.js` if it's a new release.
 -->
 
 ## Basics
+<!-- → data/db/pilots.json row, keyed by Pilot ID -->
 
 - Pilot ID: 10103181
-- Pilot Name: Sonya
-- Real Name: Sonya Volokova
-- Gender: Female
-- Profession: Striker
-- Occupation: Fighter <!-- Use the correct profession icon -->
-- Quality: SSR
-- License: Light
-- Game version introduced: 3.7
+- Pilot Name: Sonya                  <!-- name -->
+- Real Name: Sonya Volokova         <!-- real_name -->
+- Gender: Female                    <!-- gender -->
+- Profession: Striker               <!-- profession -->
+- Occupation: Fighter <!-- occupation; also picks the shared α/β partitions and the innate Profession Neuron icon -->
+- Quality: SSR                      <!-- quality -->
+- License: Light                    <!-- license -->
+- Game version introduced: 3.7      <!-- version -->
 
 ## Images
 <!-- portrait is prefixed with data/unlisted/pilot_images_half/ -->
 <!-- avatar is prefixed with data/unlisted/pilot_images_raw/ -->
-- Portrait (half-body) file: Pilot_10103181A_half.png
-- Avatar (full portrait) file: Pilot_10103181A_raw.png
+- Portrait (half-body) file: Pilot_10103181A_half.png  <!-- portrait_icon (without .png) -->
+- Avatar (full portrait) file: Pilot_10103181A_raw.png <!-- avatar_icon (without .png) -->
 
 ## Attributes
+<!-- → the pilots.json row's `stats`: Ranged → shooting, Tactical → tactics,
+     Assault → assault, Melee → combat, Mechanic → engineering,
+     Defense → defense, the AP lines → ap_init / ap_max / ap_regen -->
 - Ranged: 0
 - Tactical: 0
 - Assault: 0
@@ -93,20 +100,27 @@ pilot from this template (10103182, Kaidan The Invincible):
 
 ## Talents
 <!-- all talents, skills and neural icons are prefixed with data/unlisted/pilot_skills/ -->
+<!-- Each talent → a data/db/skills.json row (kind "talent", `effect`);
+     the pilots.json row's `talents` is [basic ID, ascended ID] -->
 
-### Basic Talent (Talent0_2Ability)
+### Basic Talent
 - Name: Frost Gaze Flame Heart
 - Effect text: At the start of action, inflicts [Opening] in a random direction to all enemies not carrying [Opening], and inflicts [Opening] in the direction facing this unit to the closest enemy, lasting for 1 turn. Gains 1 stack of [Fighting Spirit] for each 1 stack of [Opening] inflicted.
 - Icon name: Icon_skill_talent_5172
 
-### Ascended Talent (Talent3_5Ability)
+### Ascended Talent
 <!-- Ascended talent has same name and icon as basic one, with a line split -->
 - Effect text: At the start of action, inflicts [Opening] in a random direction to all enemies not carrying [Opening], and inflicts [Opening] in the direction facing this unit to the closest enemy, lasting for 1 turn. Gains 1 stack of [Fighting Spirit] for each 1 stack of [Opening] inflicted.\nGains 4 stacks of [Fighting Spirit] at the start of battle. Skill multiplier increases by +0.1 when attacking [Opening].
 
 ## Skills
 
 <!-- Each skill the pilot uses on their neuron board (Core Neuron slots).
-     type = EquipmentSkill (weapon attack) / Order (self-buff) / passive -->
+     Each → a data/db/skills.json row (kind "skill"), referenced by a
+     neuron's `skill` in data/db/pilot_neurons.json.
+     Type → `type`: EquipmentSkill (weapon attack) / Order (code) /
+     SpecialAssault (code + attack, incl. dashes); passives have no `type`.
+     Actives put their text in `describe`, passives in `effect`.
+     AP cost → `ap`, Cooldown → `cd`, Resource: PP → `resource: "PP"`. -->
 ### Skill 0 (innate)
 - Mobile Warfare 1: same as other fighters
 
@@ -115,7 +129,7 @@ pilot from this template (10103182, Kaidan The Invincible):
 - Type: EquipmentSkill <!-- EquipmentSkill / Order / passive -->
 - AP cost: 3
 - Cooldown:             <!-- if any -->
-- Weapon type: AB <!-- if EquipmentSkill, e.g. SG / AR / SR / MG / Melee -->
+- Weapon type: AB <!-- if EquipmentSkill, e.g. SG / AR / SR / MG / Melee; not stored, the effect text names the weapon -->
 - Effect text: Uses Alter-Blades to attack a target, dealing 2x0.6 DMG, prioritizing the body part. Can consume up to 2 stacks of [Fighting Spirit] to increase the skill multiplier by +0.1 per stack consumed.
 - Icon name: Icon_skill_main_1161
 
@@ -177,7 +191,9 @@ pilot from this template (10103182, Kaidan The Invincible):
 - Icon name: Icon_skill_pp_1112
 
 ## Chip slots setup
-<!-- Red = Attack / Blue = Critical / Yellow = Dodge (verified: Eileen β is red/blue/blue in game = Attack/Critical/Critical in CN data; matches .slot-* colors in css/style.css) -->
+<!-- → `slots` on each entry of the pilots.json row's `neural` list, e.g.
+     red/yellow/yellow = "Attack/Dodge/Dodge".
+     Red = Attack / Blue = Critical / Yellow = Dodge (verified: Eileen β is red/blue/blue in game = Attack/Critical/Critical; matches .slot-* colors in css/style.css) -->
 - Alpha: red/yellow/yellow
 - Beta: red/yellow/blue
 - Gamma 1: red/yellow/blue
@@ -188,8 +204,11 @@ pilot from this template (10103182, Kaidan The Invincible):
 <!-- The γ chip is split into two sections, γ1 and γ2, each with exactly 6
      unlocks at fixed chip-point thresholds: 1 / 4 / 7 / 10 / 13 / 16.
      Fill in Name / Effect text / Icon name for all 12 (6 per section). -->
-<!-- Some pilots will share same threshold effects -->
-<!-- Alpha and Beta section will be the same with other pilots in same class -->
+<!-- Some pilots will share same threshold effects (reuse their skills.json IDs) -->
+<!-- Alpha and Beta are shared per class: reference `<occupation>-alpha` /
+     `<occupation>-beta` in data/db/neural_partitions.json. γ1/γ2 become new
+     partitions `<pilotID>-gamma1` / `<pilotID>-gamma2` (type "Gamma"), each
+     effect a skills.json row (kind "neural", `effect`). -->
 
 ### γ1
 <!-- Name / Effect text / Icon name -->
@@ -205,10 +224,10 @@ pilot from this template (10103182, Kaidan The Invincible):
 
 
 ### Glossary buf
-<!-- Pick a random unique ID for this in the <buf> tag and add the tag to all referenced text from this pilot -->
+<!-- Pick an unused ID for the <buf> tag, add the entry to data/glossary.json (`buf`), and tag every reference in this pilot's text -->
 - Opening: When [Sonya] uses a melee weapon to attack this target from the direction indicated by this debuff and landing a hit, DMG Dealt increases by 20% and the attack will score a Critical Hit. This effect is removed after combat.
 - Fighting Spirit: DMG Dealt increases by 4%, stacking up to 6 times. Can be consumed to enhance [Sonya]'s skills.
 
 ### Glossary skill 1
-<!-- Pick a random unique ID for this in the <skill> tag and add the tag to all referenced text from this pilot -->
+<!-- Pick an unused ID for the <skill> tag, add the entry to data/glossary.json (`skill`), and tag every reference in this pilot's text -->
 <!-- Also scan the skill text itself and link necessary tags -->

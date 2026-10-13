@@ -211,8 +211,6 @@ Pages.sts = {
 
   // ── Detail page ────────────────────────────────────────────────────────────
   _renderDetail: function (m) {
-    var self = this;
-    Translations.loadMech(m, function (merged) { return self._buildDetail(merged); });
     return this._buildDetail(m);
   },
 

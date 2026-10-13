@@ -1,185 +1,270 @@
-# Adding pilots and mechs manually
+# Wiki data (`data/db/`)
 
-The CN game data source this wiki was built from stops updating after
-version 3.2 — anything released after that has to be entered by hand. This
-document explains how a new pilot or mech file must be shaped so
-`compile.py` can pick it up and the site can display it correctly.
+All pilot, ST, module, weapon and backpack data lives in `data/db/` as one
+JSON table per entity, with the final English text the pages display. There
+are no raw API dumps or translation files any more. To change what the wiki
+shows, edit the table row and recompile from the repo root:
+
+```
+python3 compile.py
+```
+
+This rebuilds `data/{pilots,mechs,modules,weapons,backpacks}/compiled.{json,js}`
+(the bundles the pages load), `glossary.js`/`dispatch.js`/`exskills.js`, and
+the builder index maps. The deploy workflow also runs it on every push, so an
+edited table goes live even if you forget, but run it locally to check your
+change. It stops with a list of errors if a row references an ID that doesn't
+exist.
+
+The pre-migration sources (CN dumps, `-translation.json` files, scrapers) are
+in git history under the tag `pre-db`.
 
 Before writing English text or stats by hand, check the mined global-client
 database (`data/screenshots/mined/mecharashi.db`). It may already have the
 official values. See "Using the mined game database" in the root
 [README](../README.md).
 
-After adding or editing any file described here, recompile from the repo
-root:
+## Conventions
 
+- Each table is an object keyed by game ID (a string). The IDs match the
+  mined DB's (`pilot_id`, `skill_id`, `part_id`, module `passive_ids`, …).
+- Text keeps the game markup: numbers as `<color=#F74848>15%</color>`, linked
+  terms as `<buf ID=900004>[Re-ATK]</buf>` / `<skill ID=…>[…]</skill>`. Every
+  `[Bracketed]` term needs its ID in `data/glossary.json` (`buf`/`skill`).
+- Stats are kept as strings, as in the original data.
+- Leave out a field rather than writing an empty value.
+- Formatting: 2-space indent, `ensure_ascii=False`, trailing newline. Row
+  order in the file doesn't matter, except in `modules.json` (see below).
+- Some old entries still have CN-only text (backpack `how_get`, some weapon
+  `range` values and intros). It's displayed as is.
+
+## Tables
+
+| Table | Key | Row |
+|---|---|---|
+| `pilots.json` | pilot ID | One pilot. References talents, neural partitions |
+| `pilot_neurons.json` | pilot ID | The pilot's Bionic Computer board: an ordered list of neurons |
+| `neural_partitions.json` | partition ID | One Neural Drive partition (α, β, γ…) and its unlocks |
+| `skills.json` | skill ID | Every talent, pilot skill, neural passive and weapon passive |
+| `mechs.json` | Body part ID | One ST. References parts, modules |
+| `mech_parts.json` | part ID | One ST part's max-level stats |
+| `modules.json` | module family ID | A module and its text per level |
+| `weapons.json` | weapon ID | One weapon. References its passives in `skills.json` |
+| `backpacks.json` | backpack ID | One backpack, its skill and crafting materials |
+| `materials.json` | material slug | Generic crafting materials (label + icon) |
+
+### `pilots.json`
+
+```json
+"10103118": {
+  "name": "Ada", "real_name": "Ada Diaz", "gender": "Female",
+  "profession": "Striker", "occupation": "Fighter", "quality": "SSR",
+  "license": "Light", "version": "2.3",
+  "portrait_icon": "Pilot_10103118A_half", "avatar_icon": "Pilot_10103118A_Raw",
+  "skins": ["B"],
+  "introduction": "…",
+  "talents": ["101750", "101751"],
+  "stats": { "combat": "5216", "assault": "2339", "shooting": "1455", "tactics": "1897",
+             "defense": "4331", "engineering": "1307", "ap_init": "5", "ap_max": "5", "ap_regen": "2" },
+  "neural": [
+    { "partition": "fighter-alpha", "slots": "Attack/Dodge/Critical" },
+    { "partition": "fighter-beta", "slots": "Attack/Critical/Critical" },
+    { "partition": "10103118-gamma1", "slots": "…" },
+    { "partition": "10103118-gamma2", "slots": "…" }
+  ],
+  "hidden_skills": [ … ], "summon_skills": [ … ], "form_skill_groups": [ … ]
+}
 ```
-python3 compile.py
+
+- `talents`: `[basic, ascended]` skill IDs (`kind: "talent"`).
+- `stats`: the max-level values shown on the wiki (Combat = melee, Shooting =
+  ranged, Tactics = tactical, Engineering = mechanic).
+- `version`: release version, drives the version filter and sort. Defaults to `1.0`.
+- `skins`: alternate skin letters; `python3 data/pilots/check_skins.py`
+  fills this in from the assets repo.
+- `neural[].slots`: chip slot colours, red = `Attack`, yellow = `Dodge`,
+  blue = `Critical`.
+- `hidden_skills` / `summon_skills` / `form_skill_groups` (optional) are
+  copied to the page as is, in the page's own format (`name`, `icon`, `type`,
+  `Ap`, `CD`, `describe`/`SpecificEffects`). See an existing pilot.
+
+### `pilot_neurons.json`
+
+```json
+"10103118": [
+  { "id": "1010311800", "unit": "0", "type": "6", "icon": "Icon_pilotclass_001_l",
+    "innate": "100001", "skill": "100001", "cost": "2:1:10801000:2/" },
+  { "id": "1010311801", "unit": "17", "type": "5", "icon": "Icon_zoneskill_0003",
+    "bonus": "PilotGammaChipBandwidthAdd:3", "cost": "…" },
+  …
+]
 ```
 
-This regenerates `data/pilots/compiled.{json,js}`, `data/mechs/compiled.{json,js}`,
-and the builder index maps. Nothing shows up on the site until you do this.
+List order is display order. `type` `"6"` is the innate Profession Neuron;
+its `icon` is the occupation icon and `innate` its skill ID. `skill` points to
+`skills.json`. The board layout (`unit`/`type`) is the same for every pilot of
+a content revision, so copy the list from a similar pilot and change the
+`id`s, `skill`s and `bonus`es. Newer pilots have 8 Core Neuron skill slots,
+older ones 7; pick a reference pilot with the same count.
 
-## General shape
+### `neural_partitions.json`
 
-Every pilot/mech source file is named `<ID>.json` and wraps the real payload
-in `{"data": {"data": ...}}` (this mirrors the original CN API dumps the
-existing files came from — compile.py unwraps it via `raw['data']['data']`).
-A sibling `<ID>-translation.json` file can override individual fields after
-the fact, but **for manually-added entries you don't need one at all** —
-just write the final English text straight into `<ID>.json`. Only use a
-`-translation.json` file if you want to keep a non-English source file
-untouched and layer English on top of it.
+```json
+"fighter-alpha": {
+  "name": "α", "type": "Alpha",
+  "effects": [ { "min": "1", "skill": "100011" }, { "min": "4", "skill": "100012" }, … ]
+}
+```
 
-Use the ID scheme already used by existing files (an 8-digit numeric ID).
-Pick a new, unused ID — check `ls data/pilots` / `ls data/mechs` for
-collisions.
+α and β are shared by every pilot of an occupation (`<occupation>-alpha`,
+`<occupation>-beta`; Shifter has a second set, `-2`). Reuse them: a new
+pilot only needs its own γ partitions, `<pilotID>-gamma1` and
+`<pilotID>-gamma2` (`name` `γ1`/`γ2`, `type` `Gamma`, 6 unlocks at `min`
+1/4/7/10/13/16). Some older pilots have a single `γ`.
+
+### `skills.json`
+
+```json
+"101704": { "kind": "skill", "name": "Starfall Flash", "describe": "…", "icon": "Icon_skill_order_1172",
+            "ap": "3", "cd": "0", "type": "SpecialAssault", "buffs": "…" }
+"100011": { "kind": "neural", "name": "Mobile Warfare 2", "effect": "…", "icon": "Icon_skill_passive_5010" }
+```
+
+- `kind`: `talent`, `skill` (Bionic Computer skill), `neural` or `weapon` (weapon passive).
+- Active skills use `describe`, passives use `effect`.
+- `type`: `EquipmentSkill` (weapon attack), `Order` (code),
+  `SpecialAssault` (code + attack, including dashes). Leave it out for passives.
+- `resource: "PP"` shows the PP badge.
+- `buffs`: buff IDs the skill carries (from the game data, not displayed).
+- `skill_icon` is only set where the game used a different icon key for
+  the skill card than `icon`.
+- A skill ID shared by several pilots (e.g. the class-wide CEC skills) has
+  one row, so its text is the same everywhere.
+
+### `mechs.json` and `mech_parts.json`
+
+```json
+"20470103": {
+  "name": "Aglow", "type": "Medium", "quality": "SSR", "version": "1.2",
+  "icon": "Icon_mecha_wap2047", "mecha_icon": "Icon_wap2047_1", "portrait_icon": "icon_lihui_wap2047",
+  "introduce": "…",
+  "output": "2725", "firepower": "1098", "fire": "…", "durable": "…", "armor": "…", "antiriot": "…",
+  "parts": ["20470103", "20470203", "20470303", "20470403"],
+  "modules": [ { "family": "3005", "level": 2 }, … ],
+  "skins": ["01"], "dispatch_group": "…", "dispatch_version": "1.4",
+  "hidden_modules": [ … ]
+}
+```
+
+- The key is the Body part's ID.
+- `firepower` is the max-level Firepower shown on the page. `fire`,
+  `durable`, `armor` and `antiriot` are the Body's base values (`output` =
+  weight capacity).
+- `parts` are `mech_parts.json` IDs in Body, L-Arm, R-Arm, Legs order.
+  Each part row holds its max-level stats: `mech`, `position`
+  (`Body`/`L-Arm`/`R-Arm`/`Legs`), `weight`, `hp`, `armor`; plus `antiriot`
+  on Body, `hit` on the arms and `dodge` on Legs. Manually added STs can use
+  `<ID>_ARM_L` / `<ID>_ARM_R` / `<ID>_LEGS` as part IDs.
+- `modules`: family + level from `modules.json`; that level must exist there.
+- `skins`: variant tokens of `data/unlisted/mechs/Skins/<Type>/Img_Skin_<wap-id>_<variant>.png`.
+- `hidden_modules` (optional) is copied to the page as is.
+
+### `modules.json`
+
+```json
+"4032": {
+  "name": "Cutter Mod", "icon": "Icon_entry_40311",
+  "category": "PropertyS", "max_level": 4, "current_level": 1,
+  "levels": { "1": { "effect": "Cutter DMG <color=#F74848>+3%</color>." }, … }
+}
+"4027": { "name": "Firepower Module", "icon": "Icon_skill_passive_1126",
+          "levels": { "4": { "effect": "Firepower +<color=#F74848>10%</color>." } } }
+```
+
+- Families with a `category` (`PropertyS`, `SuitS`, `GeneralSuit`) are listed
+  on the Modules page, in file order, and need text for every level
+  1..`max_level` (the level slider shows each one).
+- Families without one exist only for the STs that carry them and only need
+  the carried levels.
+- A level's game ID is `<family><level>` (e.g. `40274`); a level row sets
+  `id` where it differs. A level row sets `icon` where the carried module's
+  icon differs from the family's.
+- A new module needs a new, unused family ID; reusing one swaps in another
+  module's text.
+
+### `weapons.json`
+
+```json
+"20414121": {
+  "name": "Blaze Howl - B", "quality": "UR", "type1": "Assault", "type2": "Flamethrower",
+  "type": "Flamethrower", "icon": "Icon_weapon_20500301",
+  "models": "Light/Medium/Heavy", "slot": "Hand", "range": "2", "weight": "480", "atk": "1385",
+  "shield": "…", "grade": "70", "hp": "3831", "understanding": "4558",
+  "describe": "…", "pilot": "Rosa", "version": "1.2", "ac": 2,
+  "passives": ["53037"]
+}
+```
+
+`pilot` is the paired pilot's name (signature weapons). `passives` are
+`skills.json` IDs (`kind: "weapon"`). `grade`, `hp` and `understanding`
+aren't displayed.
+
+### `backpacks.json` and `materials.json`
+
+```json
+"60902426": {
+  "name": "Overload", "quality": "SSSR", "weight": "150", "main_type": "Ammo", "st_type": "Medium",
+  "icon": "Icon_backpack_61100101", "version": "3.7", "ac": 21,
+  "skill": { "id": "", "name": "Overload Drive · First Strike", "icon": "…", "effect": "…" },
+  "crafting": [
+    { "item": "60902405", "qty": 1, "composite": true },
+    { "material": "random-composite", "qty": 1, "composite": true },
+    { "material": "random-s-grade", "qty": 3 },
+    { "material": "ac-blueprint", "qty": 1 }
+  ]
+}
+```
+
+A backpack's skill is stored inline. A `crafting` entry is either another
+backpack (`item`) or a `materials.json` slug (`material`). `how_get`,
+`related_description` and `repair` aren't displayed.
 
 ## Adding a pilot
 
-The easiest way to hand off a new pilot: fill in
-`data/pilots/INTAKE_TEMPLATE.md` (name, profession, talent text, skill
-text/cost/effect, neural text/effect, image filenames) and ask Claude to
-generate the pilot from it — it'll produce `data/pilots/<ID>.json` (and a
-matching entry in `PILOT_RELEASE_ORDER` in `js/pages/pilots.js` if needed)
-following the rules below.
+Fill in `data/pilots/INTAKE_TEMPLATE.md` and ask Claude to add the pilot from
+it, or by hand:
 
-To build the file by hand instead:
+1. Pick an unused 8-digit pilot ID.
+2. Add the talents, skills and γ neural passives to `skills.json` (reuse
+   existing IDs for shared ones, e.g. the class's innate skill).
+3. Add `<ID>-gamma1`/`<ID>-gamma2` to `neural_partitions.json`; reference the
+   occupation's shared α/β partitions.
+4. Copy a similar pilot's list in `pilot_neurons.json` and adapt it.
+5. Add the `pilots.json` row, with `version`.
+6. Add the pilot's name to `PILOT_RELEASE_ORDER` in `js/pages/pilots.js` if
+   it's a new release, then run `python3 compile.py`.
 
-1. Copy `data/pilots/TEMPLATE.json` to `data/pilots/<ID>.json`.
-2. Fill in the placeholder (`<...>`) values. Fields `compile.py` actually
-   reads (see `data/pilots/compile.py` FIELDS/STAT_FIELDS):
-   - `ID`, `PilotName`, `RealName`, `Gender`, `Profession`, `Occupation`,
-     `quality` (`SSR`/`SR`/`R`)
-   - `PortraitHeroIcon` / `AvatarHeroIcon` — CDN image keys, see **Images** below
-   - `AllowedMechaDriveList_DriveAllowedList` — license type, e.g. `Light`
-   - `Talent0_2Ability` / `Talent3_5Ability` — the two talent tiers shown on
-     the pilot card (`name` + `SpecificEffects` are what's displayed)
-   - `NeuralDriveTemplate` — the α/β/γ neural drive chip tree (passive
-     skills unlocked at various chip-point thresholds). **The α (Alpha) and
-     β (Beta) partitions are identical for every pilot sharing the same
-     `Occupation`** (e.g. all `Raider`s use the same Alpha/Beta) — copy
-     those two blocks verbatim from any existing pilot with the same
-     `Occupation` instead of reusing the template's (which are Raider's).
-     The γ (Gamma) partition is pilot-specific and is split into two
-     sections, `γ1` and `γ2` (each its own `ListChipPartition` entry with
-     `TypeComputing: "Gamma"`), each with exactly 6 unlocks at fixed
-     `MinimumSum` thresholds `1 / 4 / 7 / 10 / 13 / 16` — only the
-     `PassiveSkill` name/effect at each threshold varies per pilot.
-   - `biomimetic_computer_data` — the neuron board (skills + stat bonuses
-     laid out on the grid). The `UnitNumber`/`LocationOnMap`/`UnitType`
-     layout is structural and shared by every pilot — leave that part of
-     the template as-is and only change `ID`s, `AttributeBonus` values, and
-     the `skill` blocks to match the new pilot's actual kit.
-   - `manji` (optional) — max-level (Lv.60+) stat overrides; if omitted,
-     compile.py falls back to the base stats
-   - Base stats: `Combat`, `Assault`, `Shooting`, `Tactics`, `Defense`,
-     `Engineering`, `InitialPilotAPValue_PilotAPInitBase`,
-     `MaximumPilotAPValue_PilotAPMaxBase`, `PilotAPRecoveryperTurn_PilotAPRecoverBase`
-3. Run `python3 compile.py` and confirm the pilot appears in
-   `data/pilots/compiled.json` under `"pilots"`.
+## Adding an ST
 
-## Adding a mech
+Fill in `data/mechs/INTAKE_TEMPLATE.md` and ask Claude to add the ST from it,
+or by hand:
 
-The easiest way to hand off a new mech: fill in
-`data/mechs/INTAKE_TEMPLATE.md` (name, type, per-part stats, modules
-carried, image filenames) and ask Claude to generate the mech from it — it
-follows the same TEMPLATE.json shape and rules below.
-
-To build the file by hand instead:
-
-1. Copy `data/mechs/TEMPLATE.json` to `data/mechs/<ID>.json`. It's a list of
-   4 part objects: `Body`, `L-Arm`, `R-Arm`, `Legs` — `compile.py` expects
-   exactly this order/shape (`position` value drives the "which part is
-   this" logic; unlike the older CN-derived files you do **not** need to
-   use the Chinese position names — `Body`/`L-Arm`/`R-Arm`/`Legs` works and
-   is what a `-translation.json` override (if you ever add one) has to
-   match).
-2. Fill in the placeholders on each part:
-   - `ID` (Body's ID is used as the mech's overall ID — the filename must
-     match it), `name`, `type` (e.g. `Light`/`Medium`/`Heavy`), `quality`
-   - `aircraftWeight`, `durable`, `Armor`, `fire` on every part; `output`
-     and `Antiriot` on Body only; `Hit` on the arms; `Dodge` on the legs
-   - `icon`, `mechaIcon`, `lihuiIcon` (Body only) — CDN image keys, see
-     **Images** below
-   - `AlternateSkins` (Body only, optional) — array of local skin variant
-     tokens, see **Images** below
-   - `introduce` — flavor text (Body only; that's what's shown on the
-     detail page)
-   - `ModuleCarried` — array of module objects the part can equip; the
-     `manji` version supersedes base stats/modules when a mech is at max
-     level, same fallback rule as pilots. A module family entirely new to
-     this repo (no existing module to reuse) has no CN catalog entry, so it
-     also needs a `MANUAL_MODULES` entry in `data/modules/compile.py` with
-     the full per-level effect text (every level, not just the mech's
-     current one) — see the comment above `MANUAL_MODULES` in that file for
-     why and the exact shape.
-3. Run `python3 compile.py` and confirm the mech appears in
-   `data/mechs/compiled.json` under `"mechs"`.
+1. Pick an unused Body part ID.
+2. Add 4 `mech_parts.json` rows (Body, L-Arm, R-Arm, Legs).
+3. Add any new module to `modules.json` (with every level's text if it's
+   shown on the Modules page).
+4. Add the `mechs.json` row, with `version`, then run `python3 compile.py`.
 
 ## Images
 
-Existing pilots/mechs load images live from Zlongame's CN CDN
-(`https://media.zlongame.com/media/pictures/cn/community/img/gl/gameInfo/...`)
-using the icon-key fields above (`PortraitHeroIcon`, `AvatarHeroIcon`,
-`mechaIcon`, etc.). A pilot added after the CN source's own cutoff has no
-matching CDN asset, so **the pilots pages fall back to a local copy** when
-the CDN image 404s:
+Icon fields hold image keys, not paths. The pages look for a local copy in
+the assets repo first and fall back to the game's CDN:
 
-- `data/unlisted/pilot_images_half/<PortraitHeroIcon>.png` (the half-body
-  thumbnail — grid cards, name-row avatar, `pilotstats.js` table)
-- `data/unlisted/pilot_images_raw/<AvatarHeroIcon>.png` (the full portrait —
-  detail-page art, including per-skin variants)
-
-Just drop the PNGs there named exactly after the pilot's `PortraitHeroIcon`
-/ `AvatarHeroIcon` values (e.g. `Pilot_13037A_half.png`,
-`Pilot_13037A_Raw.png`) — no field or code changes needed, the fallback is
-automatic (see `LOCAL_AVATAR_BASE`/`LOCAL_PORTRAIT_BASE` in
-`js/pages/pilots.js`).
-
-Mechs get a similar local fallback for `icon` (grid/detail thumbnail) and
-the detail-page portrait:
-
-- `data/unlisted/mechs/Icon/<Type>/<icon>.png` (e.g.
-  `data/unlisted/mechs/Icon/Light/Icon_mecha_wap1002.png`)
-- `data/unlisted/mechs/Raw/<Type>/<icon-with-Icon_mecha_-prefix-stripped>_SN_Raw.png`
-  (e.g. `data/unlisted/mechs/Raw/Light/Icon_mecha_wap1002_SN_Raw.png`)
-
-`<Type>` is the mech's `Light`/`Medium`/`Heavy` weight class. No field or
-code changes needed, the fallback is automatic (see `mechIconSrc`/
-`mechPortraitSrc` in `js/pages/sts.js`). `mechaIcon` has no local
-fallback — a mech without a CN CDN asset for it will just render as a
-broken image where `mechaIcon` is used (currently unused in `js/`, so this
-mostly doesn't matter in practice).
-
-Alternate skins (the swipeable variants on the detail-page portrait, same UX
-as pilots' `AlternateSkins`) live under
-`data/unlisted/mechs/Skins/<Type>/Img_Skin_<wap-id>_<variant>.png`, where
-`<wap-id>` is the mech's `icon` field with its `Icon_mecha_` prefix stripped
-(e.g. `wap1002`) and `<variant>` is an arbitrary suffix token used by the
-existing scraped filenames (`01`, `02`, `S1`, ...). List each variant token
-the mech has a file for in a Body-only `AlternateSkins` array (e.g.
-`["01", "S1"]`) — the mech's default look ("A") always reuses the normal Raw
-portrait above and needs no Skins file of its own. Mech module icons get the
-same local-first treatment from `data/unlisted/mech_modules/` (flat, no
-weight-class split) — see `moduleIconSrc` in `js/pages/sts.js`.
-
-Talent/Skill/Neural icons (`SkillIcon`/`icon` on those blocks) are also
-sourced from the CN CDN by key — the intake form asks for these directly
-(reuse an existing icon key with a similar effect, e.g.
-`Icon_skill_passive_5007`, when there's no exact match).
-
-## Version / release ordering
-
-`compile.py` only ever reads `version` from the `-translation.json` file
-(`entry['version'] = t.get('version', '1.0')`) — it ignores any `version`
-key inside the main `<ID>.json`. Since manually-added entries usually skip
-the translation file, add a minimal one just for this:
-
-```json
-{ "version": "3.3" }
-```
-
-as `data/pilots/<ID>-translation.json` or `data/mechs/<ID>-translation.json`.
-This drives the version filter and default sort order on the pilots/mechs
-pages. Without it, the entry defaults to `"1.0"`.
+- Pilots: `data/unlisted/pilot_images_half/<portrait_icon>.png` (thumbnails)
+  and `data/unlisted/pilot_images_raw/<avatar_icon>.png` (detail art).
+- STs: `data/unlisted/mechs/Icon/<Type>/<icon>.png` and
+  `data/unlisted/mechs/Raw/<Type>/<icon without "Icon_mecha_">_SN_Raw.png`.
+  `mecha_icon` has no local fallback (and isn't displayed).
+- Skills, talents and neural passives: `data/unlisted/pilot_skills/<icon>.png`.
+  Check the file exists before using a key.
+- Modules: `data/unlisted/mech_modules/<icon>.png`.
