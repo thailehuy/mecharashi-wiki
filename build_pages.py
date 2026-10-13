@@ -227,6 +227,7 @@ MISC_DESCRIPTIONS = {
     'ststats':    'Sortable comparison table of firepower, HP and weight for every S-rank ST.',
     'pilotstats': 'Sortable comparison table of combat stats for every pilot.',
     'builder':    'Theorycraft an ST loadout (pilot, skills, weapons, backpack and modules) and share it as a link.',
+    'rdbonus':    'Maximum R&D bonuses for pilots, STs and weapons from a fully researched tree.',
 }
 
 

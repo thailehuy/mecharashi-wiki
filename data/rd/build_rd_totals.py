@@ -1,5 +1,5 @@
 """Export R&D totals (max bonus of a fully researched tree) from the mined DB,
-split into pilot / mech / weapon R&D. Run: python3 data/rd/build_rd_totals.py"""
+split into pilot / mech / weapon R&D. Also writes rd-totals.js for the site. Run: python3 data/rd/build_rd_totals.py"""
 import json
 import os
 import sqlite3
@@ -7,6 +7,7 @@ import sqlite3
 HERE = os.path.dirname(os.path.abspath(__file__))
 DB = os.path.join(HERE, '..', 'screenshots', 'mined', 'mecharashi.db')
 OUT = os.path.join(HERE, 'rd-totals.json')
+OUT_JS = os.path.join(HERE, 'rd-totals.js')   # same data for the R&D Bonus page
 
 PILOT_CLASSES = {'Fighter', 'Guardian', 'Machinist', 'Raider', 'Sniper', 'Tactician'}
 
@@ -39,6 +40,10 @@ def main():
     with open(OUT, 'w') as f:
         json.dump(out, f, indent=2, ensure_ascii=False)
         f.write('\n')
+    with open(OUT_JS, 'w') as f:
+        f.write('window.RDTotalsData = ')
+        json.dump(out, f, indent=2, ensure_ascii=False)
+        f.write(';\n')
     print('Wrote %s (%s)' % (OUT, ', '.join('%s: %d' % (k, len(out[k])) for k in ('pilot', 'mech', 'weapon'))))
 
 

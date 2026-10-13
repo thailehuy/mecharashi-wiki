@@ -150,6 +150,7 @@ Pages.accessories = {
         coFilterHtml +
         typeFilterHtml +
         acNav +
+        '<p class="ac-section-footnote acc-co-note">The numbers in the CO columns mean the number of weapons carrying that could drop that accessory. The real drop chance is unknown.</p>' +
         sectionsHtml +
         '<a class="back-to-top" id="acc-back-top" href="#">&#8593; Top</a>' +
       '</div>'

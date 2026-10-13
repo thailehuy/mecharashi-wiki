@@ -35,6 +35,7 @@ Add new images to the matching folder in that repo; pushing its `main` deploys t
 - **EX Skills** reference — universal weapon-type basic attacks/codes
 - **ST Stats** table — sortable/filterable comparison of all SSR-quality STs
 - **Builder** — mech loadout theorycrafting tool, incl. 4 accessory slots per weapon (at least 1 trigger TA + 1 reaction RA) with each TA + RA chain's trigger chance; state is encoded into a shareable Build UID (URL hash), not localStorage
+- **R&D Bonus** — max bonuses from a fully researched R&D tree, by pilot class, ST weight class and weapon type
 - **DMG Calc (Beta)** — standalone page at `dmgcalc/` (linked from "Misc."): the mined Damage Bench, comparing two setups' damage per attack and attacks to kill against a boss; saved loadouts stay in the browser (localStorage)
 - **Glossary** — shared keyword/tooltip engine (buffs, skills, terrain, jump-links) used across all pages
 - Runtime translation loading — editing a `<ID>-translation.json` file and pushing takes effect on GitHub Pages without recompiling
@@ -63,6 +64,7 @@ js/
     exskills.js                   # EX Skills reference
     ststats.js                    # ST stats comparison table
     builder.js                    # Mech loadout builder
+    rdbonus.js                    # R&D Bonus (max R&D bonuses) tables
 data/
   pilots/                         # compile.py, <ID>.json, <ID>-translation.json → compiled.js/json (PilotsData)
   mechs/                          # compile.py, <ID>.json, <ID>-translation.json → compiled.js/json (MechsData)
@@ -72,7 +74,7 @@ data/
   accessories/                    # compiled.js/json; extract-chain-traits.py → chain-traits.js/json (ChainTraitsData, SSR TA/RA pairs from the mined DB)
   builder/                        # generate-index-maps.py → index-maps.js/json (BuilderIndexMaps)
   dmgcalc/                        # extract-bench.py → bench-data.js (BenchData) + dmgcalc/bench.js/css, from the mined Damage_Bench.html
-  rd/                             # build_rd_totals.py → rd-totals.json (max R&D bonuses from the mined DB, for the DMG calculator)
+  rd/                             # build_rd_totals.py → rd-totals.json/js (RDTotalsData, max R&D bonuses from the mined DB, for the R&D Bonus page and DMG calculator)
   glossary.json                   # → GlossaryData
   dispatch.json                   # → dispatch table data
   exskills.json                   # → ExSkillsData
@@ -207,7 +209,7 @@ sqlite3 data/screenshots/mined/mecharashi.db \
 
 **R&D totals (for the DMG calculator)**
 
-`data/rd/rd-totals.json` holds the maximum R&D bonuses, i.e. what a fully researched tree gives, exported from the DB's `rd_totals` table. Regenerate it with `python3 data/rd/build_rd_totals.py`. It is split into:
+`data/rd/rd-totals.json` holds the maximum R&D bonuses, i.e. what a fully researched tree gives, exported from the DB's `rd_totals` table. Regenerate it with `python3 data/rd/build_rd_totals.py`, which also writes `rd-totals.js` for the R&D Bonus page (Misc. → R&D Bonus). It is split into:
 
 - `pilot`: by class (Fighter, Guardian, Machinist, Raider, Sniper, Tactician). Flat and % bonuses to the six attributes (`PilotBaseProperty<Attr>Add` / `Multi`).
 - `mech`: Light/Medium/Heavy ST, plus a "SS Quality (Prismatic)" version of each. Per-part HP and Armor, Fire value, Dodge and Hit, crit defense.
@@ -261,7 +263,7 @@ Facebook/Discord don't run JavaScript and ignore the `#...` part of a URL, so th
 | Page | Preview |
 |---|---|
 | Pilot / ST / Weapon / Backpack / Module | Item icon (`twitter:card=summary`) + two-line description, e.g. `v3.6 S-rank Tactician (Medium License)` then the basic talent |
-| Misc. pages (Dispatch, EX Skills, Shops, ST/Pilot Stats, Builder) | Home page image (`Pilot_13038A_half.png`, read from `index.html`'s `og:image`) as a small icon + summary from `MISC_DESCRIPTIONS` |
+| Misc. pages (Dispatch, EX Skills, Shops, ST/Pilot Stats, Builder, R&D Bonus) | Home page image (`Pilot_13038A_half.png`, read from `index.html`'s `og:image`) as a small icon + summary from `MISC_DESCRIPTIONS` |
 | Other list pages and the home page | `index.html`'s own generic preview, retitled |
 
 Previews can't be seen by opening the page in a browser. To check them:

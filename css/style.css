@@ -2473,6 +2473,10 @@ a.material-item:hover .material-icon-wrap {
   backdrop-filter: blur(4px);
 }
 
+.acc-co-note {
+  margin: 0.75rem 0 1rem;
+}
+
 .tag-ac {
   background: rgba(233, 69, 96, 0.15);
   color: #e94560;
@@ -3323,3 +3327,24 @@ a.material-item:hover .material-icon-wrap {
   line-height: 1.4;
   margin-top: 0.15rem;
 }
+
+/* R&D Bonus page */
+.rd-intro { margin: 0 0 1rem; }
+
+.rd-section-note { margin: 0 0 0.75rem; }
+
+.rd-table th,
+.rd-table td { text-align: center; white-space: nowrap; }
+
+.rd-table .rd-row-label { text-align: left; font-weight: 600; }
+
+.rd-th-sub {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 400;
+  opacity: 0.75;
+}
+
+.rd-cell .rd-flat { display: block; font-weight: 700; color: #e2e8f0; }
+.rd-cell .rd-pct  { display: block; font-size: 0.8rem; color: #60a8ff; }
+.rd-cell.rd-empty { color: #64748b; }
