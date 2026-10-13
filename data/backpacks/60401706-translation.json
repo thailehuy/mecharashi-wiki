@@ -1,11 +1,12 @@
 {
-  "name": "Predator",
+  "name": "Harrier",
   "ac": 13,
   "version": "2.5",
   "skills": {
     "62310": {
-      "name": "Predator Drive · DMG UP",
+      "name": "Harrier Drive - DMG UP",
       "SpecificEffects": "ST Movement <color=#F74848>+1</color>.\nST movement type changes to Levitating, enabling it to pass over low obstacles.\nWhen in combat, enemy DMG Taken <color=#F74848>+10%</color>.\nST Body HP <color=#F74848>+10%</color> and DMG Dealt <color=#F74848>+5%</color>."
     }
-  }
+  },
+  "RelatedDescription": "An upgraded version of the legacy Jet Amplifier. This jetpack enables an ST to fly over short distances, quickly traversing obstacles to reach even the most inaccessible corners of the battlefield. It can also inflict a DMG Taken UP effect on the enemy."
 }

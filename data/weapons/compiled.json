@@ -1,6 +1,66 @@
 {
   "weapons": [
     {
+      "ID": "20414121",
+      "name": "Blaze Howl - B",
+      "quality": "UR",
+      "WeaponType1": "Assault",
+      "WeaponType2": "Flamethrower",
+      "type": "Flamethrower",
+      "icon": "Icon_weapon_20500301",
+      "grade": "70",
+      "LimitedModelOfWeapon": "Light/Medium/Heavy",
+      "RestrictionsPositionOfWeapon": "Hand",
+      "range": "2\uff08\u53ef\u659c\u5411\uff09",
+      "WeaponWeight": "480",
+      "WeaponBasicAttackingPower": "1385",
+      "WeaponHitPoint": "3831",
+      "WeaponUnderstanding": "4558",
+      "PassiveSkill": [
+        {
+          "ID": "53037",
+          "name": "Piercing Flame Stream",
+          "SpecificEffects": "When initiating combat, the trail of <buf ID=900139>[Fire DMG]</buf> is extended by <color=#F74848>1</color> tile.",
+          "BufCarried": "530371",
+          "SkillIcon": "Icon_skill_passive_5228",
+          "icon": "Icon_skill_passive_5228",
+          "Status": 1,
+          "weight": 1190
+        }
+      ],
+      "describe": "A newly refined Blaze Howl flamethrower. Although many complain that the new version lacks the rugged aesthetic UKB-1 is known for, it offers significant improvements in versatility and control compared to the old Blaze Howl."
+    },
+    {
+      "ID": "20414122",
+      "name": "Blaze Howl - B II",
+      "quality": "UR",
+      "WeaponType1": "Assault",
+      "WeaponType2": "Flamethrower",
+      "type": "Flamethrower",
+      "icon": "Icon_weapon_20500301",
+      "grade": "70",
+      "LimitedModelOfWeapon": "Light/Medium/Heavy",
+      "RestrictionsPositionOfWeapon": "Hand",
+      "range": "2\uff08\u53ef\u659c\u5411\uff09",
+      "WeaponWeight": "480",
+      "WeaponBasicAttackingPower": "1385",
+      "WeaponHitPoint": "3831",
+      "WeaponUnderstanding": "4558",
+      "PassiveSkill": [
+        {
+          "ID": "53091",
+          "name": "Calibration Unit",
+          "SpecificEffects": "When in combat with a target within <buf ID=900011>[Ideal Range]</buf>, Crit Rate and Hit Rate <color=#F74848>+15%</color>.",
+          "BufCarried": "530911",
+          "SkillIcon": "Icon_skill_passive_4107",
+          "icon": "Icon_skill_passive_4107",
+          "Status": 1,
+          "weight": 1244
+        }
+      ],
+      "describe": "\u7ecf\u8fc7\u7cbe\u5bc6\u6539\u826f\u540e\u7684\u65b0\u5f0f\u708e\u5578\u55b7\u706b\u5668\u3002\u5c3d\u7ba1\u5f88\u591a\u4eba\u62b1\u6028\u8bf4\uff0c\u65b0\u5f0f\u6539\u826f\u6b3e\u7f3a\u5c11\u4e86\u8054\u5408\u8bbe\u8ba1\u5c40\u5f0f\u7684\u7c97\u72b7\u7f8e\u611f\u3002\u4f46\u5728\u6cdb\u7528\u6027\u548c\u53ef\u63a7\u6027\u4e0a\u76f8\u6bd4\u65e7\u6b3e\u708e\u5578\u90fd\u83b7\u5f97\u4e86\u5927\u5e45\u63d0\u5347\u3002"
+    },
+    {
       "ID": "20415121",
       "name": "Kagutsuchi",
       "quality": "SSSR",
@@ -48,7 +108,7 @@
           "weight": 1190
         }
       ],
-      "describe": "\u539f\u672c\u662f\u5e02\u9762\u4e0a\u5e38\u89c1\u7684\u5c16\u7aef\u55b7\u706b\u5668\u7684\u6539\u6b3e\uff0c\u6ca1\u60f3\u5230\u5728\u7ed8\u68a8\u6c99\u624b\u4e0a\u73a9\u51fa\u4e86\u65b0\u82b1\u6837\u2014\u2014\u8fde\u901a\u52a8\u529b\u5355\u5143\u540e\uff0c\u53ef\u4ee5\u5728\u884c\u8fdb\u8f68\u8ff9\u4e0a\u7559\u4e0b\u718a\u718a\u71c3\u70e7\u7684\u706b\u7130\u5c3e\u8ff9\u2014\u2014\u5bf9\u4e8e\u8fd9\u4f4d\u5e38\u5e74\u88ab\u5404\u5927\u52bf\u529b\u8ffd\u6355\u7684\u72ec\u7acb\u8bb0\u8005\u6765\u8bf4\uff0c\u5979\u7684\u9003\u8131\u6982\u7387\u53c8\u5728100%\u7684\u57fa\u7840\u4e0a\u589e\u52a0\u4e86\u51e0\u4e2a\u767e\u5206\u70b9\u3002",
+      "describe": "Once a common top-end flamethrower, now reworked by Erisa into something new. After connecting the power unit, it leaves a blazing trail of flames behind her. For this independent researcher, who is constantly pursued by the major forces, it boosts her escape probability by a few percentage points on top of the base 100%.",
       "pilot": "Erisa",
       "version": "1.6",
       "ac": 6
@@ -107,66 +167,6 @@
       "ac": 14
     },
     {
-      "ID": "20414121",
-      "name": "\u708e\u5578\u00b7\u6539",
-      "quality": "UR",
-      "WeaponType1": "Assault",
-      "WeaponType2": "Flamethrower",
-      "type": "Flamethrower",
-      "icon": "Icon_weapon_20500301",
-      "grade": "70",
-      "LimitedModelOfWeapon": "Light/Medium/Heavy",
-      "RestrictionsPositionOfWeapon": "Hand",
-      "range": "2\uff08\u53ef\u659c\u5411\uff09",
-      "WeaponWeight": "480",
-      "WeaponBasicAttackingPower": "1385",
-      "WeaponHitPoint": "3831",
-      "WeaponUnderstanding": "4558",
-      "PassiveSkill": [
-        {
-          "ID": "53037",
-          "name": "Piercing Flame Stream",
-          "SpecificEffects": "When initiating combat, the trail of <buf ID=900139>[Fire DMG]</buf> is extended by <color=#F74848>1</color> tile.",
-          "BufCarried": "530371",
-          "SkillIcon": "Icon_skill_passive_5228",
-          "icon": "Icon_skill_passive_5228",
-          "Status": 1,
-          "weight": 1190
-        }
-      ],
-      "describe": "\u7ecf\u8fc7\u7cbe\u5bc6\u6539\u826f\u540e\u7684\u65b0\u5f0f\u708e\u5578\u55b7\u706b\u5668\u3002\u5c3d\u7ba1\u5f88\u591a\u4eba\u62b1\u6028\u8bf4\uff0c\u65b0\u5f0f\u6539\u826f\u6b3e\u7f3a\u5c11\u4e86\u8054\u5408\u8bbe\u8ba1\u5c40\u5f0f\u7684\u7c97\u72b7\u7f8e\u611f\u3002\u4f46\u5728\u6cdb\u7528\u6027\u548c\u53ef\u63a7\u6027\u4e0a\u76f8\u6bd4\u65e7\u6b3e\u708e\u5578\u90fd\u83b7\u5f97\u4e86\u5927\u5e45\u63d0\u5347\u3002"
-    },
-    {
-      "ID": "20414122",
-      "name": "\u708e\u5578\u00b7\u6539\u2161",
-      "quality": "UR",
-      "WeaponType1": "Assault",
-      "WeaponType2": "Flamethrower",
-      "type": "Flamethrower",
-      "icon": "Icon_weapon_20500301",
-      "grade": "70",
-      "LimitedModelOfWeapon": "Light/Medium/Heavy",
-      "RestrictionsPositionOfWeapon": "Hand",
-      "range": "2\uff08\u53ef\u659c\u5411\uff09",
-      "WeaponWeight": "480",
-      "WeaponBasicAttackingPower": "1385",
-      "WeaponHitPoint": "3831",
-      "WeaponUnderstanding": "4558",
-      "PassiveSkill": [
-        {
-          "ID": "53091",
-          "name": "Calibration Unit",
-          "SpecificEffects": "When in combat with a target within <buf ID=900011>[Ideal Range]</buf>, Crit Rate and Hit Rate <color=#F74848>+15%</color>.",
-          "BufCarried": "530911",
-          "SkillIcon": "Icon_skill_passive_4107",
-          "icon": "Icon_skill_passive_4107",
-          "Status": 1,
-          "weight": 1244
-        }
-      ],
-      "describe": "\u7ecf\u8fc7\u7cbe\u5bc6\u6539\u826f\u540e\u7684\u65b0\u5f0f\u708e\u5578\u55b7\u706b\u5668\u3002\u5c3d\u7ba1\u5f88\u591a\u4eba\u62b1\u6028\u8bf4\uff0c\u65b0\u5f0f\u6539\u826f\u6b3e\u7f3a\u5c11\u4e86\u8054\u5408\u8bbe\u8ba1\u5c40\u5f0f\u7684\u7c97\u72b7\u7f8e\u611f\u3002\u4f46\u5728\u6cdb\u7528\u6027\u548c\u53ef\u63a7\u6027\u4e0a\u76f8\u6bd4\u65e7\u6b3e\u708e\u5578\u90fd\u83b7\u5f97\u4e86\u5927\u5e45\u63d0\u5347\u3002"
-    },
-    {
       "ID": "20215121",
       "name": "Bahamut",
       "quality": "SSSR",
@@ -214,10 +214,70 @@
           "weight": 1175
         }
       ],
-      "describe": "\u300c\u4f60\u66fe\u8bf4\u8fc7\u670d\u4ece\u547d\u4ee4\u662f\u519b\u4eba\u7684\u5929\u804c\uff0c\u4f46\u4f60\u6b63\u6267\u884c\u7684\u4efb\u52a1\u5374\u5728\u6096\u9006\u8fd9\u4e00\u4fe1\u6761\u2026\u2026\u544a\u8bc9\u6211\uff0c\u4e2d\u6821\uff0c\u73b0\u5728\u7684\u4f60\uff0c\u662f\u5426\u8fd8\u4fdd\u7559\u7740\u54ea\u6015\u4e00\u4e1d\u4e00\u6beb\u5bf9\u4eba\u6027\u7684\u8ba4\u77e5\uff1f\u300d",
+      "describe": "\"You once said that a soldier's purpose is to obey orders, yet your mission defies that belief. Lieutenant Colonel, do you still have even a hint of compassion for humanity?\"",
       "pilot": "William",
       "version": "1.4",
       "ac": 4
+    },
+    {
+      "ID": "20214121",
+      "name": "Behemoth - B",
+      "quality": "UR",
+      "WeaponType1": "Assault",
+      "WeaponType2": "HeavyMachineGun",
+      "type": "HeavyMachineGun",
+      "icon": "Icon_weapon_20400302",
+      "grade": "70",
+      "LimitedModelOfWeapon": "Light/Medium/Heavy",
+      "RestrictionsPositionOfWeapon": "DoubleHand",
+      "range": "1-3",
+      "WeaponWeight": "1000",
+      "WeaponBasicAttackingPower": "1599",
+      "WeaponHitPoint": "1545",
+      "WeaponUnderstanding": "4558",
+      "PassiveSkill": [
+        {
+          "ID": "53022",
+          "name": "Catharsis",
+          "SpecificEffects": "Wielding a Heavy Machine Gun one-handed does not affect Hit Rate.",
+          "BufCarried": "530221",
+          "SkillIcon": "Icon_skill_passive_5126",
+          "icon": "Icon_skill_passive_5126",
+          "Status": 1,
+          "weight": 1175
+        }
+      ],
+      "describe": "Upgraded with external cooling pipes and multi-box ammunition compartments, it enhances self-cooling and boasts improved safety and durability."
+    },
+    {
+      "ID": "20214122",
+      "name": "Behemoth - B II",
+      "quality": "UR",
+      "WeaponType1": "Assault",
+      "WeaponType2": "HeavyMachineGun",
+      "type": "HeavyMachineGun",
+      "icon": "Icon_weapon_20400302",
+      "grade": "70",
+      "LimitedModelOfWeapon": "Light/Medium/Heavy",
+      "RestrictionsPositionOfWeapon": "DoubleHand",
+      "range": "1-3",
+      "WeaponWeight": "1000",
+      "WeaponBasicAttackingPower": "1599",
+      "WeaponHitPoint": "1545",
+      "WeaponUnderstanding": "4558",
+      "PassiveSkill": [
+        {
+          "ID": "53076",
+          "name": "Firepower Advantage",
+          "SpecificEffects": "When actively attacking, DMG <color=#F74848>+15%</color>. Starting from <color=#F74848>1</color> tile, for every additional <color=#F74848>1</color> tile away from the target, DMG <color=#F74848>+5%</color>, up to <color=#F74848>25%</color>.",
+          "BufCarried": "530761/530762",
+          "SkillIcon": "Icon_skill_passive_1146",
+          "icon": "Icon_skill_passive_1146",
+          "Status": 1,
+          "weight": 1229
+        }
+      ],
+      "describe": "Upgraded with external cooling pipes and multi-box ammunition compartments, it enhances self-cooling and boasts improved safety and durability."
     },
     {
       "ID": "20215122",
@@ -238,7 +298,7 @@
       "PassiveSkill": [
         {
           "ID": "53077",
-          "name": "Resonant Mechanism",
+          "name": "Resonance Unit",
           "SpecificEffects": "When actively attacking with a Heavy Machine Gun, if a part is broken, gains <color=#F74848>1</color> random buff after combat, lasting <color=#F74848>2</color> turns. Can trigger up to <color=#F74848>3</color> times per turn.",
           "BufCarried": "530771",
           "SkillIcon": "Icon_skill_passive_5129",
@@ -258,7 +318,7 @@
         },
         {
           "ID": "53076",
-          "name": "Superior Firepower",
+          "name": "Firepower Advantage",
           "SpecificEffects": "When actively attacking, DMG <color=#F74848>+15%</color>. Starting from <color=#F74848>1</color> tile, for every additional <color=#F74848>1</color> tile away from the target, DMG <color=#F74848>+5%</color>, up to <color=#F74848>25%</color>.",
           "BufCarried": "530761/530762",
           "SkillIcon": "Icon_skill_passive_1146",
@@ -267,7 +327,7 @@
           "weight": 1229
         }
       ],
-      "describe": "\u7a81\u7136\u51fa\u73b0\u5728\u8def\u5fb7\u7ef4\u5e0c\u65e7\u5b9e\u9a8c\u5ba4\u7684\u7279\u5236\u6b66\u88c5\u3002\u5176\u5f00\u53d1\u8005\u4e0e\u5f00\u53d1\u65f6\u95f4\u4e00\u6982\u4e0d\u660e\uff0c\u6280\u672f\u4e5f\u96be\u4ee5\u6eaf\u6e90\uff0c\u4ec5\u80fd\u6839\u636e\u6b8b\u7559\u7684\u6d4b\u8bd5\u6570\u636e\u786e\u5b9a\u2014\u2014\u5b83\u662f\u4e3a\u4e86\u67d0\u4f4d\u5c11\u5e74\u800c\u5b58\u5728\u7684\u3002",
+      "describe": "A specially crafted weapon that suddenly appeared in Ludwig's old laboratory. The developer and development time are completely unknown, and the technology is difficult to trace. It can only be determined from the remaining test data that it was created for a certain young man.",
       "pilot": "Shinji",
       "version": "2.4",
       "ac": 12
@@ -322,66 +382,6 @@
       "ac": 19
     },
     {
-      "ID": "20214121",
-      "name": "\u8d1d\u5e0c\u6469\u65af\u00b7\u6539",
-      "quality": "UR",
-      "WeaponType1": "Assault",
-      "WeaponType2": "HeavyMachineGun",
-      "type": "HeavyMachineGun",
-      "icon": "Icon_weapon_20400302",
-      "grade": "70",
-      "LimitedModelOfWeapon": "Light/Medium/Heavy",
-      "RestrictionsPositionOfWeapon": "DoubleHand",
-      "range": "1-3",
-      "WeaponWeight": "1000",
-      "WeaponBasicAttackingPower": "1599",
-      "WeaponHitPoint": "1545",
-      "WeaponUnderstanding": "4558",
-      "PassiveSkill": [
-        {
-          "ID": "53022",
-          "name": "Catharsis",
-          "SpecificEffects": "Wielding a Heavy Machine Gun one-handed does not affect Hit Rate.",
-          "BufCarried": "530221",
-          "SkillIcon": "Icon_skill_passive_5126",
-          "icon": "Icon_skill_passive_5126",
-          "Status": 1,
-          "weight": 1175
-        }
-      ],
-      "describe": "\u642d\u8f7d\u4e86\u65b0\u5f0f\u5916\u9644\u51b7\u5374\u7ba1\u548c\u591a\u5323\u5f39\u4ed3\uff0c\u5728\u63d0\u5347\u6b66\u5668\u81ea\u51b7\u5374\u7684\u540c\u65f6\u652f\u6301\u5916\u63a5\u673a\u5175\u51b7\u5374\u7cfb\u7edf\u3002\u5728\u5b89\u5168\u6027\u548c\u8010\u7528\u6027\u4e0a\u90fd\u5f97\u5230\u4e86\u5168\u9762\u5347\u7ea7\u3002"
-    },
-    {
-      "ID": "20214122",
-      "name": "\u8d1d\u5e0c\u6469\u65af\u00b7\u6539\u2161",
-      "quality": "UR",
-      "WeaponType1": "Assault",
-      "WeaponType2": "HeavyMachineGun",
-      "type": "HeavyMachineGun",
-      "icon": "Icon_weapon_20400302",
-      "grade": "70",
-      "LimitedModelOfWeapon": "Light/Medium/Heavy",
-      "RestrictionsPositionOfWeapon": "DoubleHand",
-      "range": "1-3",
-      "WeaponWeight": "1000",
-      "WeaponBasicAttackingPower": "1599",
-      "WeaponHitPoint": "1545",
-      "WeaponUnderstanding": "4558",
-      "PassiveSkill": [
-        {
-          "ID": "53076",
-          "name": "Superior Firepower",
-          "SpecificEffects": "When actively attacking, DMG <color=#F74848>+15%</color>. Starting from <color=#F74848>1</color> tile, for every additional <color=#F74848>1</color> tile away from the target, DMG <color=#F74848>+5%</color>, up to <color=#F74848>25%</color>.",
-          "BufCarried": "530761/530762",
-          "SkillIcon": "Icon_skill_passive_1146",
-          "icon": "Icon_skill_passive_1146",
-          "Status": 1,
-          "weight": 1229
-        }
-      ],
-      "describe": "\u642d\u8f7d\u4e86\u65b0\u5f0f\u5916\u9644\u51b7\u5374\u7ba1\u548c\u591a\u5323\u5f39\u4ed3\uff0c\u5728\u63d0\u5347\u6b66\u5668\u81ea\u51b7\u5374\u7684\u540c\u65f6\u652f\u6301\u5916\u63a5\u673a\u5175\u51b7\u5374\u7cfb\u7edf\u3002\u5728\u5b89\u5168\u6027\u548c\u8010\u7528\u6027\u4e0a\u90fd\u5f97\u5230\u4e86\u5168\u9762\u5347\u7ea7\u3002"
-    },
-    {
       "ID": "20115122",
       "name": "Evenstar Successor",
       "quality": "SSSR",
@@ -429,7 +429,7 @@
           "weight": 1226
         }
       ],
-      "describe": "\u4ee5\u591c\u9b47\u4e3a\u539f\u578b\uff0c\u6839\u636e\u5361\u590f\u7684\u6218\u6597\u98ce\u683c\u5b8c\u5168\u6539\u88c5\u7684\u7279\u5236\u673a\u67aa\u3002\u8fd9\u662f\u5df2\u901d\u540c\u4f34\u7684\u793c\u7269\uff0c\u4e5f\u662f\u7ef4\u65af\u73c0\u5c14\u4f7f\u547d\u7684\u8c61\u5f81\u2014\u2014\u5b83\u7684\u8bbe\u8ba1\u8005\u5df2\u5982\u6d41\u661f\u822c\u9668\u843d\uff0c\u4f46\u660f\u661f\u7684\u5149\u8292\u7edd\u4e0d\u4f1a\u5c31\u6b64\u6d88\u901d\u3002",
+      "describe": "A specially modified machine gun based on the Nightwither and tailored entirely to Cassha's combat style. A gift from a fallen comrade and a symbol of Vesper's mission\u2014the designer has long since fallen like a shooting star, but the light of Vesper will never fade.",
       "pilot": "Cassha",
       "version": "2.3",
       "ac": 11
@@ -482,10 +482,100 @@
           "weight": 1154
         }
       ],
-      "describe": "\u6839\u636e\u6d1b\u838e\u00b7\u8fea\u4e9a\u5179\u7684\u6570\u636e\u800c\u7814\u5236\u7684\u7279\u5236\u7248\u591c\u9b47\uff0c\u5728\u63a7\u4ef6\u548c\u6fc0\u53d1\u88c5\u7f6e\u4e0a\u90fd\u91c7\u7528\u4e86\u53ef\u88ab\u8111\u6ce2\u76f4\u63a5\u63a7\u5236\u7684\u94a2\u5c9a\u5408\u91d1\u2026\u2026\u4e0d\u77e5\u662f\u4f55\u539f\u56e0\uff0c\u8fd9\u5957\u6b66\u88c5\u81ea\u51fa\u5382\u540e\u5c31\u4e00\u76f4\u7559\u5728\u6b66\u5668\u5e93\u91cc\uff0c\u90a3\u4f4d\u74e6\u5c14\u57fa\u91cc\u4e00\u6b21\u90fd\u6ca1\u6709\u4f7f\u7528\u8fc7\u3002",
+      "describe": "A special edition Nightwither, created from Rosa Diaz's data, featuring brainwave-controlled Arashium for activation. Surprisingly, this weapon has never been used by Valkyrie, despite being part of her arsenal.",
       "pilot": "Rosa",
       "version": "1.2",
       "ac": 2
+    },
+    {
+      "ID": "20114121",
+      "name": "Nightwither - B",
+      "quality": "UR",
+      "WeaponType1": "Assault",
+      "WeaponType2": "MachineGun",
+      "type": "MachineGun",
+      "icon": "Icon_weapon_20100401",
+      "grade": "70",
+      "LimitedModelOfWeapon": "Light/Medium/Heavy",
+      "RestrictionsPositionOfWeapon": "Hand",
+      "range": "1-3",
+      "WeaponWeight": "500",
+      "WeaponBasicAttackingPower": "1424",
+      "WeaponHitPoint": "3151",
+      "WeaponUnderstanding": "4558",
+      "PassiveSkill": [
+        {
+          "ID": "53001",
+          "name": "Sway",
+          "SpecificEffects": "After actively attacking, if a part is destroyed, moves an additional <color=#F74848>2</color> tiles after combat. Effective only with the current weapon.",
+          "BufCarried": "530011",
+          "SkillIcon": "Icon_skill_passive_5198",
+          "icon": "Icon_skill_passive_5198",
+          "Status": 1,
+          "weight": 1154
+        }
+      ],
+      "describe": "The Nightwither - B, Obsidian's new and improved machine gun with a built-in FCS chip linked to Arashium units. This technology allows pilots to create a direct neural connection, delivering exceptional control and precision in combat."
+    },
+    {
+      "ID": "20114122",
+      "name": "Nightwither - B II",
+      "quality": "UR",
+      "WeaponType1": "Assault",
+      "WeaponType2": "MachineGun",
+      "type": "MachineGun",
+      "icon": "Icon_weapon_20100301",
+      "grade": "70",
+      "LimitedModelOfWeapon": "Light/Medium/Heavy",
+      "RestrictionsPositionOfWeapon": "Hand",
+      "range": "1-3",
+      "WeaponWeight": "420",
+      "WeaponBasicAttackingPower": "1424",
+      "WeaponHitPoint": "3151",
+      "WeaponUnderstanding": "4558",
+      "PassiveSkill": [
+        {
+          "ID": "53073",
+          "name": "Blaze of Retaliation",
+          "SpecificEffects": "When retaliating, Crit Rate and Hit Rate <color=#F74848>+15%</color>.",
+          "BufCarried": "530731",
+          "SkillIcon": "Icon_skill_passive_4119",
+          "icon": "Icon_skill_passive_4119",
+          "Status": 1,
+          "weight": 1226
+        }
+      ],
+      "describe": "The Nightwither - B, Obsidian's new and improved machine gun with a built-in FCS chip linked to Arashium units. This technology allows pilots to create a direct neural connection, delivering exceptional control and precision in combat."
+    },
+    {
+      "ID": "20114123",
+      "name": "Nightwither - B III",
+      "quality": "UR",
+      "WeaponType1": "Assault",
+      "WeaponType2": "MachineGun",
+      "type": "MachineGun",
+      "icon": "Icon_weapon_20100301",
+      "grade": "70",
+      "LimitedModelOfWeapon": "Light/Medium/Heavy",
+      "RestrictionsPositionOfWeapon": "Hand",
+      "range": "1-3",
+      "WeaponWeight": "420",
+      "WeaponBasicAttackingPower": "1424",
+      "WeaponHitPoint": "3151",
+      "WeaponUnderstanding": "4558",
+      "PassiveSkill": [
+        {
+          "ID": "53103",
+          "name": "Malfunction Implant",
+          "SpecificEffects": "When attacking with a Machine Gun, inflicts <color=#F74848>1</color> stack of <buf ID=531032>[Fire Control Delay]</buf> on the target, up to <color=#F74848>5</color> stacks.",
+          "BufCarried": "531031",
+          "SkillIcon": "Icon_skill_passive_5198",
+          "icon": "Icon_skill_passive_5198",
+          "Status": 1,
+          "weight": 1256
+        }
+      ],
+      "describe": "\u9ed1\u66dc\u77f3\u63a8\u51fa\u7684\u65b0\u578b\u673a\u67aa\u6b66\u88c5\uff0c\u662f\u77e5\u540d\u673a\u67aa\u6b66\u5668\u591c\u9b47\u7684\u6700\u65b0\u6539\u578b\u3002\u5185\u7f6e\u4e86\u4e0e\u94a2\u5c9a\u673a\u5175\u76f8\u8fde\u7684\u706b\u63a7\u82af\u7247\uff0c\u652f\u6301\u795e\u7ecf\u76f4\u8fde\u63a7\u5236\u673a\u5175\u6b66\u88c5\u76f4\u63a5\u5f00\u706b\u3002"
     },
     {
       "ID": "20115123",
@@ -590,96 +680,6 @@
       "ac": 20
     },
     {
-      "ID": "20114121",
-      "name": "\u591c\u9b47\u00b7\u6539",
-      "quality": "UR",
-      "WeaponType1": "Assault",
-      "WeaponType2": "MachineGun",
-      "type": "MachineGun",
-      "icon": "Icon_weapon_20100401",
-      "grade": "70",
-      "LimitedModelOfWeapon": "Light/Medium/Heavy",
-      "RestrictionsPositionOfWeapon": "Hand",
-      "range": "1-3",
-      "WeaponWeight": "500",
-      "WeaponBasicAttackingPower": "1424",
-      "WeaponHitPoint": "3151",
-      "WeaponUnderstanding": "4558",
-      "PassiveSkill": [
-        {
-          "ID": "53001",
-          "name": "Sway",
-          "SpecificEffects": "After actively attacking, if a part is destroyed, moves an additional <color=#F74848>2</color> tiles after combat. Effective only with the current weapon.",
-          "BufCarried": "530011",
-          "SkillIcon": "Icon_skill_passive_5198",
-          "icon": "Icon_skill_passive_5198",
-          "Status": 1,
-          "weight": 1154
-        }
-      ],
-      "describe": "\u9ed1\u66dc\u77f3\u63a8\u51fa\u7684\u65b0\u578b\u673a\u67aa\u6b66\u88c5\uff0c\u662f\u77e5\u540d\u673a\u67aa\u6b66\u5668\u591c\u9b47\u7684\u6700\u65b0\u6539\u578b\u3002\u5185\u7f6e\u4e86\u4e0e\u94a2\u5c9a\u673a\u5175\u76f8\u8fde\u7684\u706b\u63a7\u82af\u7247\uff0c\u652f\u6301\u795e\u7ecf\u76f4\u8fde\u63a7\u5236\u673a\u5175\u6b66\u88c5\u76f4\u63a5\u5f00\u706b\u3002"
-    },
-    {
-      "ID": "20114122",
-      "name": "\u591c\u9b47\u00b7\u6539\u2161",
-      "quality": "UR",
-      "WeaponType1": "Assault",
-      "WeaponType2": "MachineGun",
-      "type": "MachineGun",
-      "icon": "Icon_weapon_20100301",
-      "grade": "70",
-      "LimitedModelOfWeapon": "Light/Medium/Heavy",
-      "RestrictionsPositionOfWeapon": "Hand",
-      "range": "1-3",
-      "WeaponWeight": "420",
-      "WeaponBasicAttackingPower": "1424",
-      "WeaponHitPoint": "3151",
-      "WeaponUnderstanding": "4558",
-      "PassiveSkill": [
-        {
-          "ID": "53073",
-          "name": "Blaze of Retaliation",
-          "SpecificEffects": "When retaliating, Crit Rate and Hit Rate <color=#F74848>+15%</color>.",
-          "BufCarried": "530731",
-          "SkillIcon": "Icon_skill_passive_4119",
-          "icon": "Icon_skill_passive_4119",
-          "Status": 1,
-          "weight": 1226
-        }
-      ],
-      "describe": "\u9ed1\u66dc\u77f3\u63a8\u51fa\u7684\u65b0\u578b\u673a\u67aa\u6b66\u88c5\uff0c\u662f\u77e5\u540d\u673a\u67aa\u6b66\u5668\u591c\u9b47\u7684\u6700\u65b0\u6539\u578b\u3002\u5185\u7f6e\u4e86\u4e0e\u94a2\u5c9a\u673a\u5175\u76f8\u8fde\u7684\u706b\u63a7\u82af\u7247\uff0c\u652f\u6301\u795e\u7ecf\u76f4\u8fde\u63a7\u5236\u673a\u5175\u6b66\u88c5\u76f4\u63a5\u5f00\u706b\u3002"
-    },
-    {
-      "ID": "20114123",
-      "name": "\u591c\u9b47\u00b7\u6539\u2162",
-      "quality": "UR",
-      "WeaponType1": "Assault",
-      "WeaponType2": "MachineGun",
-      "type": "MachineGun",
-      "icon": "Icon_weapon_20100301",
-      "grade": "70",
-      "LimitedModelOfWeapon": "Light/Medium/Heavy",
-      "RestrictionsPositionOfWeapon": "Hand",
-      "range": "1-3",
-      "WeaponWeight": "420",
-      "WeaponBasicAttackingPower": "1424",
-      "WeaponHitPoint": "3151",
-      "WeaponUnderstanding": "4558",
-      "PassiveSkill": [
-        {
-          "ID": "53103",
-          "name": "Malfunction Implant",
-          "SpecificEffects": "When attacking with a Machine Gun, inflicts <color=#F74848>1</color> stack of <buf ID=531032>[Fire Control Delay]</buf> on the target, up to <color=#F74848>5</color> stacks.",
-          "BufCarried": "531031",
-          "SkillIcon": "Icon_skill_passive_5198",
-          "icon": "Icon_skill_passive_5198",
-          "Status": 1,
-          "weight": 1256
-        }
-      ],
-      "describe": "\u9ed1\u66dc\u77f3\u63a8\u51fa\u7684\u65b0\u578b\u673a\u67aa\u6b66\u88c5\uff0c\u662f\u77e5\u540d\u673a\u67aa\u6b66\u5668\u591c\u9b47\u7684\u6700\u65b0\u6539\u578b\u3002\u5185\u7f6e\u4e86\u4e0e\u94a2\u5c9a\u673a\u5175\u76f8\u8fde\u7684\u706b\u63a7\u82af\u7247\uff0c\u652f\u6301\u795e\u7ecf\u76f4\u8fde\u63a7\u5236\u673a\u5175\u6b66\u88c5\u76f4\u63a5\u5f00\u706b\u3002"
-    },
-    {
       "ID": "20315121",
       "name": "Cinder",
       "quality": "SSSR",
@@ -727,10 +727,70 @@
           "weight": 1187
         }
       ],
-      "describe": "\u81ea\u8bde\u751f\u8d77\uff0c\u7406\u60f3\u4fbf\u5e76\u4e0d\u72ec\u5c5e\u4e8e\u4efb\u4f55\u4eba\u3002\u6240\u4ee5\uff0c\u5373\u4fbf\u6700\u5148\u53d1\u8d77\u8005\u5df2\u7136\u653e\u5f03\uff0c\u80cc\u53db\uff0c\u7406\u60f3\u4e5f\u80fd\u81ea\u884c\u627e\u5230\u4f20\u627f\u8005\u5ef6\u7eed\u4e0b\u53bb\u2026\u2026\u73b0\u5728\uff0c\u662f\u65f6\u5019\u7531\u4ed6\u6765\u62c5\u8d1f\u8d77\u90a3\u672a\u5c3d\u7684\u804c\u8d23\uff0c\u6295\u8eab\u4e8e\u90a3\u71ce\u91ce\u7684\u721d\u706b\u4e4b\u4e2d\u3002",
+      "describe": "From its inception, an ideal belongs to no one alone. So, even if the initiator has already given up and betrayed that founding notion, an ideal can find its own successor to carry it forward... Now, it is time for him to carry the torch.",
       "pilot": "Marcus",
       "version": "1.5",
       "ac": 5
+    },
+    {
+      "ID": "20314121",
+      "name": "Firebolt - B",
+      "quality": "UR",
+      "WeaponType1": "Assault",
+      "WeaponType2": "ShotGun",
+      "type": "ShotGun",
+      "icon": "Icon_weapon_20300401",
+      "grade": "70",
+      "LimitedModelOfWeapon": "Light/Medium/Heavy",
+      "RestrictionsPositionOfWeapon": "Hand",
+      "range": "1-2",
+      "WeaponWeight": "450",
+      "WeaponBasicAttackingPower": "1642",
+      "WeaponHitPoint": "3151",
+      "WeaponUnderstanding": "4558",
+      "PassiveSkill": [
+        {
+          "ID": "53034",
+          "name": "Thwart",
+          "SpecificEffects": "When actively attacking, if retaliated against, DMG Taken <color=#F74848>-20%</color>.",
+          "BufCarried": "530341",
+          "SkillIcon": "Icon_skill_passive_5179",
+          "icon": "Icon_skill_passive_5179",
+          "Status": 1,
+          "weight": 1187
+        }
+      ],
+      "describe": "In addition to the superior fire control components added to the old Firebolt model, support for the onboard booster module has been completely upgraded. This makes it the absolute king among current mass-produced shotgun weapons."
+    },
+    {
+      "ID": "20314122",
+      "name": "Firebolt - B II",
+      "quality": "UR",
+      "WeaponType1": "Assault",
+      "WeaponType2": "ShotGun",
+      "type": "ShotGun",
+      "icon": "Icon_weapon_20300401",
+      "grade": "70",
+      "LimitedModelOfWeapon": "Light/Medium/Heavy",
+      "RestrictionsPositionOfWeapon": "Hand",
+      "range": "1-2",
+      "WeaponWeight": "370",
+      "WeaponBasicAttackingPower": "1642",
+      "WeaponHitPoint": "3151",
+      "WeaponUnderstanding": "4558",
+      "PassiveSkill": [
+        {
+          "ID": "53055",
+          "name": "Get Them!",
+          "SpecificEffects": "When initiating combat, ignores <color=#F74848>30%</color> of the target's Armor.",
+          "BufCarried": "530551",
+          "SkillIcon": "Icon_skill_passive_1126",
+          "icon": "Icon_skill_passive_1126",
+          "Status": 1,
+          "weight": 1208
+        }
+      ],
+      "describe": "In addition to the superior fire control components added to the old Firebolt model, support for the onboard booster module has been completely upgraded. This makes it the absolute king among current mass-produced shotgun weapons."
     },
     {
       "ID": "20315123",
@@ -829,70 +889,70 @@
           "weight": 1208
         }
       ],
-      "describe": "\u8299\u70c8\u8fbe\u8fd8\u662f\u300c\u897f\u5317\u4e1b\u6797\u4e4b\u738b\u300d\u65f6\u4f7f\u7528\u8fc7\u7684\u6b66\u5668\u3002\u4f46\u4ee4\u4eba\u5947\u602a\u7684\u662f\uff0c\u81ea\u4ece\u5979\u653e\u5f03\u5355\u5e72\u7ec4\u5efa\u4f63\u5175\u56e2\u4e4b\u540e\uff0c\u5979\u7684\u52bf\u529b\u7248\u56fe\u5c31\u4e00\u5929\u4e0d\u5982\u4e00\u5929\u4e86\u3002",
+      "describe": "The weapon Frida used when she was the \"Queen of the Northwest Jungle.\" But strangely, ever since she gave up working alone to form a mercenary group, her territory has been shrinking day by day.",
       "pilot": "Frida",
       "version": "2.1",
       "ac": 9
     },
     {
-      "ID": "20314121",
-      "name": "\u706b\u9a6d\u00b7\u6539",
+      "ID": "50214121",
+      "name": "Foehn - B",
       "quality": "UR",
-      "WeaponType1": "Assault",
-      "WeaponType2": "ShotGun",
-      "type": "ShotGun",
-      "icon": "Icon_weapon_20300401",
+      "WeaponType1": "Heavy",
+      "WeaponType2": "Funnel",
+      "type": "Funnel",
+      "icon": "Icon_weapon_40300301",
       "grade": "70",
-      "LimitedModelOfWeapon": "Light/Medium/Heavy",
-      "RestrictionsPositionOfWeapon": "Hand",
-      "range": "1-2",
-      "WeaponWeight": "450",
-      "WeaponBasicAttackingPower": "1642",
-      "WeaponHitPoint": "3151",
+      "LimitedModelOfWeapon": "Medium",
+      "RestrictionsPositionOfWeapon": "Back",
+      "range": "1-4",
+      "WeaponWeight": "1100",
+      "WeaponBasicAttackingPower": "865",
+      "WeaponHitPoint": "5190",
       "WeaponUnderstanding": "4558",
       "PassiveSkill": [
         {
-          "ID": "53034",
-          "name": "Thwart",
-          "SpecificEffects": "When actively attacking, if retaliated against, DMG Taken <color=#F74848>-20%</color>.",
-          "BufCarried": "530341",
-          "SkillIcon": "Icon_skill_passive_5179",
-          "icon": "Icon_skill_passive_5179",
+          "ID": "53058",
+          "name": "Sustainability Protocol",
+          "SpecificEffects": "Maximum Cutter Ammo <color=#F74848>+1</color>. When using Cutter to actively attack <color=#F74848>4</color> or more targets, reloads <color=#F74848>1</color> Ammo after combat. This effect can trigger <color=#F74848>1</color> time every <color=#F74848>2</color> turns.",
+          "BufCarried": "530582",
+          "SkillIcon": "Icon_skill_passive_5223",
+          "icon": "Icon_skill_passive_5223",
           "Status": 1,
-          "weight": 1187
+          "weight": 1211
         }
       ],
-      "describe": "\u9664\u4e86\u5728\u65e7\u578b\u706b\u9a6d\u7684\u57fa\u7840\u4e0a\u52a0\u88c5\u4e86\u9002\u6027\u66f4\u4f18\u826f\u7684\u706b\u63a7\u7ec4\u4ef6\u5916\uff0c\u5bf9\u673a\u8f7d\u589e\u538b\u6a21\u5757\u7684\u652f\u6301\u4e5f\u5f97\u5230\u4e86\u5168\u65b0\u5347\u7ea7\u3002\u662f\u5f53\u524d\u91cf\u4ea7\u9730\u5f39\u6b66\u5668\u4e2d\u7684\u7edd\u5bf9\u738b\u8005\u3002"
+      "describe": "A new Cutter developed by the Horizon Weapon Laboratory. While its core principles differ little from the original Foehn series, its direct-link Sync Ratio load restrictions have been dramatically relaxed. As a result, aside from a handful of theoretical \"target prototypes,\" it is effectively unusable by standard pilots."
     },
     {
-      "ID": "20314122",
-      "name": "\u706b\u9a6d\u00b7\u6539\u2161",
+      "ID": "50214122",
+      "name": "Foehn - B II",
       "quality": "UR",
-      "WeaponType1": "Assault",
-      "WeaponType2": "ShotGun",
-      "type": "ShotGun",
-      "icon": "Icon_weapon_20300401",
+      "WeaponType1": "Heavy",
+      "WeaponType2": "Funnel",
+      "type": "Funnel",
+      "icon": "Icon_weapon_40300301",
       "grade": "70",
-      "LimitedModelOfWeapon": "Light/Medium/Heavy",
-      "RestrictionsPositionOfWeapon": "Hand",
-      "range": "1-2",
-      "WeaponWeight": "370",
-      "WeaponBasicAttackingPower": "1642",
-      "WeaponHitPoint": "3151",
+      "LimitedModelOfWeapon": "Medium",
+      "RestrictionsPositionOfWeapon": "Back",
+      "range": "1-4",
+      "WeaponWeight": "1100",
+      "WeaponBasicAttackingPower": "865",
+      "WeaponHitPoint": "5190",
       "WeaponUnderstanding": "4558",
       "PassiveSkill": [
         {
-          "ID": "53055",
-          "name": "Get Them!",
-          "SpecificEffects": "When initiating combat, ignores <color=#F74848>30%</color> of the target's Armor.",
-          "BufCarried": "530551",
-          "SkillIcon": "Icon_skill_passive_1126",
-          "icon": "Icon_skill_passive_1126",
+          "ID": "53109",
+          "name": "Piercing Distance",
+          "SpecificEffects": "When attacking with a Cutter, ignores <color=#F74848>35%</color> of the target's Armor. For every <color=#F74848>1</color> tile of distance from the target, DMG <color=#F74848>+5%</color>, up to <color=#F74848>20%</color>.",
+          "BufCarried": "531091",
+          "SkillIcon": "Icon_skill_passive_5116",
+          "icon": "Icon_skill_passive_5116",
           "Status": 1,
-          "weight": 1208
+          "weight": 1262
         }
       ],
-      "describe": "\u9664\u4e86\u5728\u65e7\u578b\u706b\u9a6d\u7684\u57fa\u7840\u4e0a\u52a0\u88c5\u4e86\u9002\u6027\u66f4\u4f18\u826f\u7684\u706b\u63a7\u7ec4\u4ef6\u5916\uff0c\u5bf9\u673a\u8f7d\u589e\u538b\u6a21\u5757\u7684\u652f\u6301\u4e5f\u5f97\u5230\u4e86\u5168\u65b0\u5347\u7ea7\u3002\u662f\u5f53\u524d\u91cf\u4ea7\u9730\u5f39\u6b66\u5668\u4e2d\u7684\u7edd\u5bf9\u738b\u8005\u3002"
+      "describe": "\u8bde\u751f\u4e8e\u5730\u5e73\u7ebf\u6b66\u5668\u5b9e\u9a8c\u5ba4\u7684\u65b0\u5f0f\u6d6e\u6e38\u70ae\u6b66\u5668\uff0c\u5728\u539f\u7406\u4e0a\u4e0e\u539f\u751f\u7684\u711a\u98ce\u7cfb\u5217\u6ca1\u6709\u592a\u5927\u533a\u522b\uff0c\u4f46\u5927\u5e45\u653e\u5bbd\u4e86\u76f4\u8fde\u540c\u6b65\u7387\u7684\u8d1f\u8377\u9650\u5236\uff0c\u9664\u4e86\u7406\u8bba\u4e0a\u7684\u90a3\u51e0\u4f4d\u300c\u76ee\u6807\u539f\u578b\u300d\u5916\uff0c\u51e0\u4e4e\u4e0d\u80fd\u4e3a\u5e38\u89c4\u9a7e\u9a76\u5458\u4f7f\u7528\u3002"
     },
     {
       "ID": "50216121",
@@ -1058,74 +1118,14 @@
           "weight": 1211
         }
       ],
-      "describe": "\u5979\u770b\u5230\uff0c\u81ea\u5df1\u5c06\u94c1\u96e8\u5e26\u5230\u5927\u5730\uff0c\u628a\u6619\u82b1\u843d\u4e8e\u706b\u6d77\u3002\u5979\u8fd8\u542c\u5230\uff0c\u90a3\u4e9b\u719f\u6089\u7684\u3001\u60b2\u4f24\u7684\u3001\u5192\u5931\u7684\u58f0\u97f3\uff0c\u4e00\u6b21\u53c8\u4e00\u6b21\u7684\u547c\u5524\u81ea\u5df1\u2026\u2026\u76f4\u81f3\u9ec4\u660f\u5230\u6765\u3002\u65e2\u7136\u957f\u68a6\u5df2\u9192\uff0c\u90a3\u5c31\u4e0d\u8981\u518d\u7761\u53bb\uff0c\u63a5\u53d7\u4e00\u5207\uff0c\u80cc\u8d1f\u4e00\u5207\uff0c\u53bb\u7ed9\u90a3\u4e9b\u9ad8\u9ad8\u5728\u4e0a\u7684\u4f17\u795e\u2026\u2026\u5e26\u6765\u5c5e\u4e8e\u4ed6\u4eec\u7684\u300c\u5ba1\u5224\u300d\u3002",
+      "describe": "She sees iron rain fall at her command, blossoms cast into flames. She hears the familiar voices\u2014sad, reckless\u2014calling her name, over and over... until dusk comes. The long dream is over. She will not sleep again. She will accept it all, carry it all, and deliver to those high-seated gods... their rightful Judgment.",
       "pilot": "Rosa: Judgment",
       "version": "2.0",
       "ac": 8
     },
     {
-      "ID": "50214121",
-      "name": "\u711a\u98ce\u00b7\u6539",
-      "quality": "UR",
-      "WeaponType1": "Heavy",
-      "WeaponType2": "Funnel",
-      "type": "Funnel",
-      "icon": "Icon_weapon_40300301",
-      "grade": "70",
-      "LimitedModelOfWeapon": "Medium",
-      "RestrictionsPositionOfWeapon": "Back",
-      "range": "1-4",
-      "WeaponWeight": "1100",
-      "WeaponBasicAttackingPower": "865",
-      "WeaponHitPoint": "5190",
-      "WeaponUnderstanding": "4558",
-      "PassiveSkill": [
-        {
-          "ID": "53058",
-          "name": "Sustainability Protocol",
-          "SpecificEffects": "Maximum Cutter Ammo <color=#F74848>+1</color>. When using Cutter to actively attack <color=#F74848>4</color> or more targets, reloads <color=#F74848>1</color> Ammo after combat. This effect can trigger <color=#F74848>1</color> time every <color=#F74848>2</color> turns.",
-          "BufCarried": "530582",
-          "SkillIcon": "Icon_skill_passive_5223",
-          "icon": "Icon_skill_passive_5223",
-          "Status": 1,
-          "weight": 1211
-        }
-      ],
-      "describe": "\u8bde\u751f\u4e8e\u5730\u5e73\u7ebf\u6b66\u5668\u5b9e\u9a8c\u5ba4\u7684\u65b0\u5f0f\u6d6e\u6e38\u70ae\u6b66\u5668\uff0c\u5728\u539f\u7406\u4e0a\u4e0e\u539f\u751f\u7684\u711a\u98ce\u7cfb\u5217\u6ca1\u6709\u592a\u5927\u533a\u522b\uff0c\u4f46\u5927\u5e45\u653e\u5bbd\u4e86\u76f4\u8fde\u540c\u6b65\u7387\u7684\u8d1f\u8377\u9650\u5236\uff0c\u9664\u4e86\u7406\u8bba\u4e0a\u7684\u90a3\u51e0\u4f4d\u300c\u76ee\u6807\u539f\u578b\u300d\u5916\uff0c\u51e0\u4e4e\u4e0d\u80fd\u4e3a\u5e38\u89c4\u9a7e\u9a76\u5458\u4f7f\u7528\u3002"
-    },
-    {
-      "ID": "50214122",
-      "name": "\u711a\u98ce\u00b7\u6539\u2161",
-      "quality": "UR",
-      "WeaponType1": "Heavy",
-      "WeaponType2": "Funnel",
-      "type": "Funnel",
-      "icon": "Icon_weapon_40300301",
-      "grade": "70",
-      "LimitedModelOfWeapon": "Medium",
-      "RestrictionsPositionOfWeapon": "Back",
-      "range": "1-4",
-      "WeaponWeight": "1100",
-      "WeaponBasicAttackingPower": "865",
-      "WeaponHitPoint": "5190",
-      "WeaponUnderstanding": "4558",
-      "PassiveSkill": [
-        {
-          "ID": "53109",
-          "name": "Piercing Distance",
-          "SpecificEffects": "When attacking with a Cutter, ignores <color=#F74848>35%</color> of the target's Armor. For every <color=#F74848>1</color> tile of distance from the target, DMG <color=#F74848>+5%</color>, up to <color=#F74848>20%</color>.",
-          "BufCarried": "531091",
-          "SkillIcon": "Icon_skill_passive_5116",
-          "icon": "Icon_skill_passive_5116",
-          "Status": 1,
-          "weight": 1262
-        }
-      ],
-      "describe": "\u8bde\u751f\u4e8e\u5730\u5e73\u7ebf\u6b66\u5668\u5b9e\u9a8c\u5ba4\u7684\u65b0\u5f0f\u6d6e\u6e38\u70ae\u6b66\u5668\uff0c\u5728\u539f\u7406\u4e0a\u4e0e\u539f\u751f\u7684\u711a\u98ce\u7cfb\u5217\u6ca1\u6709\u592a\u5927\u533a\u522b\uff0c\u4f46\u5927\u5e45\u653e\u5bbd\u4e86\u76f4\u8fde\u540c\u6b65\u7387\u7684\u8d1f\u8377\u9650\u5236\uff0c\u9664\u4e86\u7406\u8bba\u4e0a\u7684\u90a3\u51e0\u4f4d\u300c\u76ee\u6807\u539f\u578b\u300d\u5916\uff0c\u51e0\u4e4e\u4e0d\u80fd\u4e3a\u5e38\u89c4\u9a7e\u9a76\u5458\u4f7f\u7528\u3002"
-    },
-    {
       "ID": "40115122",
-      "name": "Backfire Meteor",
+      "name": "Converse Meteor",
       "quality": "SSSR",
       "WeaponType1": "Heavy",
       "WeaponType2": "Missile",
@@ -1142,7 +1142,7 @@
       "PassiveSkill": [
         {
           "ID": "53086",
-          "name": "Extended Range Effect",
+          "name": "Overdistance Effect",
           "SpecificEffects": "When attacking with a Missile Launcher, if distance from target is <color=#F74848>4</color> or more tiles, DMG <color=#F74848>+30%</color>.",
           "BufCarried": "530861",
           "SkillIcon": "Icon_skill_passive_5237",
@@ -1152,7 +1152,7 @@
         },
         {
           "ID": "53087",
-          "name": "Restless Spirit",
+          "name": "Agitated Resolve",
           "SpecificEffects": "Enhanced [Fiery Will]: Upon deployment, gains <color=#F74848>5</color> stacks of <buf ID=530872>[Burning Intent]</buf>. After the talent triggers <buf ID=900002>[Link Attack]</buf>, or after actively attacking, for every <color=#F74848>1</color> Ammo consumed, gains <color=#F74848>1</color> stack of <buf ID=530872>[Burning Intent]</buf>, up to <color=#F74848>15</color> stacks. While carrying <color=#F74848>10</color> or more stacks, AP Regen <color=#F74848>+1</color>. <buf ID=4008509>[Lock]</buf> increases DMG multiplier of Arthur's active attacks and all <buf ID=900002>[Link Attack]</buf> against the target by <color=#F74848>+0.1</color>.",
           "BufCarried": "530871/530873/530874/530875/530876/530878",
           "SkillIcon": "Icon_skill_passive_5271",
@@ -1162,7 +1162,7 @@
         },
         {
           "ID": "53085",
-          "name": "Reserve Magazine",
+          "name": "Reserve Pod",
           "SpecificEffects": "After actively attacking with a Missile Launcher, randomly reloads Ammo to carried Missile Launchers equal to the amount spent this action. Can trigger again after an interval of <color=#F74848>1</color> turn.",
           "BufCarried": "530851",
           "SkillIcon": "Icon_skill_passive_5223",
@@ -1171,7 +1171,7 @@
           "weight": 1238
         }
       ],
-      "describe": "\u7ecf\u5386\u65e0\u6570\u6b21\u5931\u8d25\u540e\u7ec8\u4e8e\u5b8c\u6210\u7684\u6539\u5236\u5bfc\u5f39\uff0c\u5378\u9664\u4e86\u5b89\u5168\u9650\u5236\u88c5\u7f6e\u53c8\u8ffd\u52a0\u4e86\u5f39\u8231\u3002\u5b83\u7684\u5236\u9020\u8005\u575a\u4fe1\uff0c\u53ea\u8981\u5212\u7834\u7a7a\u6c14\u7684\u5bfc\u5f39\u4f9d\u7136\u70bd\u70c8\uff0c\u7ef4\u65af\u73c0\u5c14\u7684\u5149\u8292\u5c31\u6c38\u8fdc\u4e0d\u4f1a\u6d88\u6563\u3002",
+      "describe": "After countless failed attempts, this redesigned missile launcher was finally completed, with safety mechanisms removed and an additional warhead bay installed. Its creator believes that as long as its missiles streak through the air with burning intensity, the light of Vesper will never fade.",
       "pilot": "Arthur",
       "version": "2.5",
       "ac": 13
@@ -1224,14 +1224,14 @@
           "weight": 1172
         }
       ],
-      "describe": "\u8054\u5408\u5b89\u5168\u603b\u7f72\u4e3a\u7279\u522b\u63a2\u5458\u5b9a\u5236\u7684\u673a\u5175\u5bfc\u5f39\uff0c\u62e5\u6709\u8fdc\u8d85\u5927\u90e8\u5206\u73b0\u5f79\u6218\u672f\u6b66\u5668\u7684\u5353\u8d8a\u6027\u80fd\uff0c\u9884\u8ba1\u5546\u54c1\u540d\u4e3a\u300c\u56e0\u9640\u7f57\u300d\u3002\u53ef\u60dc\u67d0\u63a2\u5458\u5728\u63d0\u53d6\u65b0\u88c5\u5907\u540e\u7684\u7b2c\u4e8c\u5929\u5c31\u5fd8\u8bb0\u4e86\u5b83\u7684\u540d\u5b57\u3002",
+      "describe": "The GSA's advanced ST-mounted missile for special agents was set to be named \"Indra\" due to its superior performance. Unfortunately, the agent forgot its name the day after extraction.",
       "pilot": "Naomi",
       "version": "1.4",
       "ac": 4
     },
     {
       "ID": "40114121",
-      "name": "\u9e20\u6469\u7f57\u00b7\u6539",
+      "name": "Kumara - B",
       "quality": "UR",
       "WeaponType1": "Heavy",
       "WeaponType2": "Missile",
@@ -1257,11 +1257,11 @@
           "weight": 1172
         }
       ],
-      "describe": "\u5f39\u5934\u82af\u7247\u5347\u7ea7\u540e\u7684\u65b0\u6b3e\u9e20\u6469\u7f57\uff0c\u5728\u706b\u529b\u4e0e\u6253\u51fb\u7cbe\u5ea6\u4e0a\u5747\u6709\u663e\u8457\u63d0\u5347\u3002\u5e76\u5728\u71c3\u6599\u652f\u6301\u4e0a\u8fdb\u884c\u4e86\u8fdb\u4e00\u6b65\u62d3\u5c55\uff0c\u4ee5\u9002\u5e94\u591a\u79cd\u73af\u5883\u3001\u591a\u79cd\u573a\u5408\u7684\u6218\u6597\u3002"
+      "describe": "The upgraded Kumara model, equipped with a warhead chip, offers improved firepower and accuracy, along with expanded fuel support for diverse environments and combat situations."
     },
     {
       "ID": "40114122",
-      "name": "\u9e20\u6469\u7f57\u00b7\u6539\u2161",
+      "name": "Kumara - B II",
       "quality": "UR",
       "WeaponType1": "Heavy",
       "WeaponType2": "Missile",
@@ -1278,7 +1278,7 @@
       "PassiveSkill": [
         {
           "ID": "53085",
-          "name": "Reserve Magazine",
+          "name": "Reserve Pod",
           "SpecificEffects": "After actively attacking with a Missile Launcher, randomly reloads Ammo to carried Missile Launchers equal to the amount spent this action. Can trigger again after an interval of <color=#F74848>1</color> turn.",
           "BufCarried": "530851",
           "SkillIcon": "Icon_skill_passive_5223",
@@ -1287,7 +1287,7 @@
           "weight": 1238
         }
       ],
-      "describe": "\u5f39\u5934\u82af\u7247\u5347\u7ea7\u540e\u7684\u65b0\u6b3e\u9e20\u6469\u7f57\uff0c\u5728\u706b\u529b\u4e0e\u6253\u51fb\u7cbe\u5ea6\u4e0a\u5747\u6709\u663e\u8457\u63d0\u5347\u3002\u5e76\u5728\u71c3\u6599\u652f\u6301\u4e0a\u8fdb\u884c\u4e86\u8fdb\u4e00\u6b65\u62d3\u5c55\uff0c\u4ee5\u9002\u5e94\u591a\u79cd\u73af\u5883\u3001\u591a\u79cd\u573a\u5408\u7684\u6218\u6597\u3002"
+      "describe": "The upgraded Kumara model, equipped with a warhead chip, offers improved firepower and accuracy, along with expanded fuel support for diverse environments and combat situations."
     },
     {
       "ID": "50116121",
@@ -1319,7 +1319,7 @@
         {
           "ID": "53033",
           "name": "Renewal",
-          "SpecificEffects": "Enhanced [Dawnstar Tech]: When enemy units end their action, can use a Rail Gun to trigger <buf ID=900013>[Vigilant Shot]</buf>, dealing <color=#F74848>0.35</color>x DMG to all targets within attack range. When using Rail Gun for consecutive attacks, DMG <color=#F74848>+10%</color>. Stacks up to <color=#F74848>3</color> times. Resets after taking action.",
+          "SpecificEffects": "Enhanced [Dawnstar Tech]: When enemy units end their action, can use a Rail Gun to trigger <buf ID=900013>[Vigilant Shot]</buf>, dealing <color=#F74848>0.35</color>x DMG to all targets within attack range. Unlocking [Forbidden Zone 2] increases the same number of times. When using Rail Gun for consecutive attacks, DMG <color=#F74848>+10%</color>. Stacks up to <color=#F74848>3</color> times. Resets after taking action.",
           "BufCarried": "530331/530332/530334",
           "SkillIcon": "Icon_skill_passive_5215",
           "icon": "Icon_skill_passive_5215",
@@ -1347,7 +1347,7 @@
           "weight": 1184
         }
       ],
-      "describe": "\u5c06\u5e72\u6270\u80cc\u5305\u4e0e\u673a\u8f7d\u7535\u78c1\u70ae\u5408\u4e8c\u4e3a\u4e00\u7684\u5168\u65b0\u6770\u4f5c\uff0c\u9996\u6b21\u514b\u670d\u4e86\u80cc\u5305\u4e0e\u7535\u78c1\u70ae\u57fa\u5ea7\u590d\u5408\u7684\u96be\u9898\uff0c\u4f7f\u5f97\u88c1\u51b3\u8005\u7535\u78c1\u70ae\u6210\u4e3a\u517c\u5177\u5e72\u6270\u80cc\u5305\u4e0e\u8fdc\u7a0b\u6218\u672f\u6253\u51fb\u7684\u6218\u573a\u5229\u5668\u3002",
+      "describe": "A new masterpiece that combines a jammer with an onboard rail gun, overcoming the challenge of integrating a backpack with a rail gun base for the very first time. This makes the Adjudicator a unique weapon that combines interference with long-range tactical strikes.",
       "pilot": "Shawnee",
       "version": "1.7",
       "ac": 7
@@ -1435,7 +1435,7 @@
         {
           "ID": "53033",
           "name": "Renewal",
-          "SpecificEffects": "Enhanced [Dawnstar Tech]: When enemy units end their action, can use a Rail Gun to trigger <buf ID=900013>[Vigilant Shot]</buf>, dealing <color=#F74848>0.35</color>x DMG to all targets within attack range. When using Rail Gun for consecutive attacks, DMG <color=#F74848>+10%</color>. Stacks up to <color=#F74848>3</color> times. Resets after taking action.",
+          "SpecificEffects": "Enhanced [Dawnstar Tech]: When enemy units end their action, can use a Rail Gun to trigger <buf ID=900013>[Vigilant Shot]</buf>, dealing <color=#F74848>0.35</color>x DMG to all targets within attack range. Unlocking [Forbidden Zone 2] increases the same number of times. When using Rail Gun for consecutive attacks, DMG <color=#F74848>+10%</color>. Stacks up to <color=#F74848>3</color> times. Resets after taking action.",
           "BufCarried": "530331/530332/530334",
           "SkillIcon": "Icon_skill_passive_5215",
           "icon": "Icon_skill_passive_5215",
@@ -1453,7 +1453,7 @@
           "weight": 1184
         }
       ],
-      "describe": "\u300c\u8096\u59ae\uff0c\u8fd9\u4e2a\u5b89\u4fdd\u8d1f\u8d23\u4eba\u8fd9\u4e2a\u5c97\u4f4d\u6839\u672c\u5c31\u662f\u4ed6\u4eec\u634f\u9020\u51fa\u6765\uff0c\u7528\u6765\u675f\u7f1a\u4f60\u7684\u5c97\u4f4d\uff01\u8fd9\u6837\u4e0b\u53bb\u4f60\u53ea\u4f1a\u4e00\u5473\u5730\u53d7\u8bae\u4f1a\u8c03\u6d3e\uff0c\u6839\u672c\u5c31\u627e\u4e0d\u5230\u673a\u4f1a\u80fd\u2026\u2026\u4f60\u8bf4\u662f\u4e3a\u4e86\u80fd\u5728\u6267\u884c\u5c42\u4fdd\u62a4\u5e73\u6c11\uff1f\u5475\u5475\uff0c\u8fd9\u79cd\u9053\u8c8c\u5cb8\u7136\u7684\u8bdd\uff0c\u4e5f\u53ea\u6709\u6211\u4f1a\u76f8\u4fe1\u4e86\u2026\u2026\u300d",
+      "describe": "\"Shawnee, this security personnel position is nothing but a ruse they fabricated to rope you in! If this continues, you'll only ever be dispatched by the council without any chance to... You say it's to protect civilians at the executive level? Haha, only I'd be dumb enough to believe something like that...\"",
       "pilot": "Shawnee",
       "version": "1.5",
       "ac": 5
@@ -1506,7 +1506,7 @@
           "weight": 1220
         }
       ],
-      "describe": "\u300c\u2026\u2026\u6211\u542c\u8bf4\u8981\u53bb\u7801\u5934\u4ed3\u5e93\u53d6\u8d27\u7684\u65f6\u5019\u5c31\u9884\u611f\u5230\u4e0d\u5999\u4e86\uff0c\u4f46\u8fd8\u662f\u6ca1\u6599\u5230\u4f60\u8bf4\u7684\u5c0f\u96f6\u98df\u7adf\u7136\u662f\u7535\u78c1\u70ae\uff1f\u867d\u3001\u867d\u7136\u6211\u786e\u5b9e\u662f\u5f88\u60ca\u559c\u5c31\u662f\u4e86\uff0c\u4f46\u4e0b\u6b21\u9001\u793c\u7269\u7684\u65f6\u5019\u8fd8\u662f\u6253\u542c\u4e00\u4e0b\u522b\u4eba\u7684\u60f3\u6cd5\u6bd4\u8f83\u597d\u5427\u2026\u2026\u8fd8\u6709\uff0c\u522b\u628a\u300e\u5c0f\u83f2\u5a05\u300f\u8fd9\u79cd\u79f0\u547c\u660e\u76ee\u5f20\u80c6\u5730\u6d82\u5728\u96c6\u88c5\u7bb1\u4e0a\u554a\uff01\u300d",
+      "describe": "\"...I had a bad feeling the moment you said we were picking something up from the dock warehouse\u2014but I never imagined your idea of a 'little snack' would be a rail gun! I-I mean, I was surprised, but maybe next time you give someone a gift, you should check what they actually want first... And also\u2014don't just paint something like 'Little Fia' on the shipping container for everyone to see!\"",
       "pilot": "Fia",
       "version": "2.2",
       "ac": 10
@@ -1569,14 +1569,14 @@
           "weight": 1220
         }
       ],
-      "describe": "\u5c06\u901a\u7528\u5f3a\u5316\u80cc\u5305\u4e0e\u673a\u8f7d\u7535\u78c1\u70ae\u5b8c\u7f8e\u6574\u5408\u7684\u5168\u65b0\u8bd5\u9a8c\u6b66\u88c5\uff0c\u4e3a\u80cc\u5305\u4e0e\u70ae\u5ea7\u7684\u7a7a\u95f4\u4e0e\u80fd\u6e90\u4e4b\u4e89\u63d0\u4f9b\u4e86\u65b0\u7684\u89e3\u6cd5\uff0c\u5176\u4f18\u79c0\u7684\u8fdc\u7a0b\u706b\u529b\u6295\u9001\u80fd\u529b\u6216\u8bb8\u5c06\u6539\u5199\u672a\u6765\u7684\u6218\u573a\u903b\u8f91\u3002",
+      "describe": "A new test armament that perfectly integrates a universal amplifier with an onboard Rail Gun, offering a new solution to the conflict over space and power between pack and turret. Its exceptional long-range firepower may well redefine future battlefield tactics.",
       "pilot": "Fia",
       "version": "2.5",
       "ac": 13
     },
     {
       "ID": "50114121",
-      "name": "\u70ac\u5854\u00b7\u6539",
+      "name": "Torch Tower - B",
       "quality": "UR",
       "WeaponType1": "Heavy",
       "WeaponType2": "RailGun",
@@ -1602,11 +1602,11 @@
           "weight": 1184
         }
       ],
-      "describe": "\u5c06\u7535\u6d46\u5f39\u4e0e\u63a8\u5c04\u5f39\u540c\u65f6\u96c6\u6210\u5728\u4e00\u6b3e\u7535\u78c1\u70ae\u4e0a\u7684\u70ac\u5854\u6539\u6b3e\uff0c\u80fd\u6839\u636e\u5177\u4f53\u7684\u4f5c\u6218\u73af\u5883\u4e0e\u6218\u672f\u9700\u6c42\u9009\u62e9\u66f4\u591a\u6837\u7684\u6253\u51fb\u5f62\u5f0f\u3002"
+      "describe": "A modified Torch Tower that integrates both plasma projectiles and kinetic rounds into a single rail gun, allowing for more diverse strike forms based on specific battlefield environments and tactical needs."
     },
     {
       "ID": "50114122",
-      "name": "\u70ac\u5854\u00b7\u6539\u2161",
+      "name": "Torch Tower - B II",
       "quality": "UR",
       "WeaponType1": "Heavy",
       "WeaponType2": "RailGun",
@@ -1632,11 +1632,11 @@
           "weight": 1220
         }
       ],
-      "describe": "\u5c06\u7535\u6d46\u5f39\u4e0e\u63a8\u5c04\u5f39\u540c\u65f6\u96c6\u6210\u5728\u4e00\u6b3e\u7535\u78c1\u70ae\u4e0a\u7684\u70ac\u5854\u6539\u6b3e\uff0c\u80fd\u6839\u636e\u5177\u4f53\u7684\u4f5c\u6218\u73af\u5883\u4e0e\u6218\u672f\u9700\u6c42\u9009\u62e9\u66f4\u591a\u6837\u7684\u6253\u51fb\u5f62\u5f0f\u3002"
+      "describe": "A modified Torch Tower that integrates both plasma projectiles and kinetic rounds into a single rail gun, allowing for more diverse strike forms based on specific battlefield environments and tactical needs."
     },
     {
       "ID": "50114123",
-      "name": "\u70ac\u5854\u00b7\u6539\u2162",
+      "name": "Torch Tower - B III",
       "quality": "UR",
       "WeaponType1": "Heavy",
       "WeaponType2": "RailGun",
@@ -1663,6 +1663,66 @@
         }
       ],
       "describe": "\u5c06\u7535\u6d46\u5f39\u4e0e\u63a8\u5c04\u5f39\u540c\u65f6\u96c6\u6210\u5728\u4e00\u6b3e\u7535\u78c1\u70ae\u4e0a\u7684\u70ac\u5854\u6539\u6b3e\uff0c\u80fd\u6839\u636e\u5177\u4f53\u7684\u4f5c\u6218\u73af\u5883\u4e0e\u6218\u672f\u9700\u6c42\u9009\u62e9\u66f4\u591a\u6837\u7684\u6253\u51fb\u5f62\u5f0f\u3002"
+    },
+    {
+      "ID": "40214121",
+      "name": "Molten - B",
+      "quality": "UR",
+      "WeaponType1": "Heavy",
+      "WeaponType2": "Rocket",
+      "type": "Rocket",
+      "icon": "Icon_weapon_40200401",
+      "grade": "70",
+      "LimitedModelOfWeapon": "Medium",
+      "RestrictionsPositionOfWeapon": "Shoulder",
+      "range": "3-6",
+      "WeaponWeight": "1200",
+      "WeaponBasicAttackingPower": "935",
+      "WeaponHitPoint": "2781",
+      "WeaponUnderstanding": "4558",
+      "PassiveSkill": [
+        {
+          "ID": "53028",
+          "name": "Initiation",
+          "SpecificEffects": "When attacking with the first Ammo shell in the Magazine, Hit Rate <color=#F74848>+10%</color> and DMG <color=#F74848>+10%</color>.",
+          "BufCarried": "530281",
+          "SkillIcon": "Icon_skill_passive_4104",
+          "icon": "Icon_skill_passive_4104",
+          "Status": 1,
+          "weight": 1181
+        }
+      ],
+      "describe": "Equipped with a newly developed custom guidance module specially crafted by Obsidian, this airborne rocket launcher can execute more refined and precise bombing commands according to pilot requirements, greatly expanding its tactical value."
+    },
+    {
+      "ID": "40214122",
+      "name": "Molten - B II",
+      "quality": "UR",
+      "WeaponType1": "Heavy",
+      "WeaponType2": "Rocket",
+      "type": "Rocket",
+      "icon": "Icon_weapon_40200401",
+      "grade": "70",
+      "LimitedModelOfWeapon": "Medium",
+      "RestrictionsPositionOfWeapon": "Shoulder",
+      "range": "3-6",
+      "WeaponWeight": "1200",
+      "WeaponBasicAttackingPower": "935",
+      "WeaponHitPoint": "2781",
+      "WeaponUnderstanding": "4558",
+      "PassiveSkill": [
+        {
+          "ID": "53100",
+          "name": "Breaker of the Unyielding",
+          "SpecificEffects": "When actively attacking with a Rocket Launcher, DMG to parts at <color=#F74848>100%</color> HP <color=#F74848>+20%</color>.",
+          "BufCarried": "531001",
+          "SkillIcon": "Icon_skill_passive_1114",
+          "icon": "Icon_skill_passive_1114",
+          "Status": 1,
+          "weight": 1253
+        }
+      ],
+      "describe": "\u52a0\u88c5\u4e86\u7531\u9ed1\u66dc\u77f3\u7279\u522b\u7814\u5236\u7684\u65b0\u578b\u81ea\u5236\u5bfc\u7ec4\u4ef6\u7684\u673a\u8f7d\u706b\u7bad\uff0c\u80fd\u6839\u636e\u673a\u5e08\u9700\u6c42\u6267\u884c\u66f4\u52a0\u7cbe\u7ec6\u3001\u7cbe\u786e\u7684\u8f70\u70b8\u547d\u4ee4\uff0c\u5927\u5927\u62d3\u5c55\u4e86\u706b\u7bad\u6b66\u5668\u7684\u6218\u672f\u4ef7\u503c\u3002"
     },
     {
       "ID": "40215121",
@@ -1712,7 +1772,7 @@
           "weight": 1181
         }
       ],
-      "describe": "\u300c\u96c6\u56e2\u79d8\u5bc6\u6700\u9ad8\u5ba1\u6279\u5df2\u901a\u8fc7\uff0c\u827e\u7433\u76d1\u5bdf\u5b98\uff0c\u60a8\u5df2\u53ef\u4ee5\u524d\u5f80\u7c73\u8d6b\u739b\u5c9b\u53bb\u641c\u5bfb\u90a3\u4f20\u95fb\u4e2d\u7684\u5b9e\u9a8c\u4f53\uff0c\u4f46\u6211\u4ecd\u5efa\u8bae\u60a8\u7b49\u5f85\u8463\u4e8b\u4f1a\u7684\u6b63\u5f0f\u8868\u51b3\uff0c\u4ee5\u5f97\u5230\u673a\u52a8\u8b66\u536b\u961f\u7684\u8c03\u7528\u6743\u2026\u2026\u597d\u7684\uff0c\u6700\u540e\u7684\u4f8b\u884c\u786e\u8ba4\uff0c\u60a8\u662f\u8981\u72ec\u81ea\u4e00\u4eba\uff0c\u6295\u8eab\u4e8e\u5730\u72f1\u5f53\u4e2d\uff0c\u5bf9\u5417\uff1f\u300d",
+      "describe": "\"Highest corporate authorization complete. Inspector Eileen, you may proceed to Milkhama Island to search for the rumored test subject, but I still advise you to wait for the board's formal vote to obtain the authority to deploy the Mobile Guard... Alright, final confirmation\u2014you intend to go alone, into the depths of hell, correct?\"",
       "pilot": "Eileen",
       "version": "1.5",
       "ac": 5
@@ -1820,64 +1880,34 @@
       "ac": 21
     },
     {
-      "ID": "40214121",
-      "name": "\u7194\u706b\u00b7\u6539",
+      "ID": "10914121",
+      "name": "Excalibur - B",
       "quality": "UR",
-      "WeaponType1": "Heavy",
-      "WeaponType2": "Rocket",
-      "type": "Rocket",
-      "icon": "Icon_weapon_40200401",
+      "WeaponType1": "Melee",
+      "WeaponType2": "Blade",
+      "type": "Blade",
+      "icon": "Icon_weapon_10700301A",
       "grade": "70",
-      "LimitedModelOfWeapon": "Medium",
-      "RestrictionsPositionOfWeapon": "Shoulder",
-      "range": "3-6",
-      "WeaponWeight": "1200",
-      "WeaponBasicAttackingPower": "935",
-      "WeaponHitPoint": "2781",
+      "LimitedModelOfWeapon": "Light/Medium/Heavy",
+      "RestrictionsPositionOfWeapon": "Hand",
+      "range": "1\uff08\u53ef\u659c\u5411\uff09",
+      "WeaponWeight": "350",
+      "WeaponBasicAttackingPower": "638",
+      "WeaponHitPoint": "3337",
       "WeaponUnderstanding": "4558",
       "PassiveSkill": [
         {
-          "ID": "53028",
-          "name": "Initiation",
-          "SpecificEffects": "When attacking with the first Ammo shell in the Magazine, Hit Rate <color=#F74848>+10%</color> and DMG <color=#F74848>+10%</color>.",
-          "BufCarried": "530281",
-          "SkillIcon": "Icon_skill_passive_4104",
-          "icon": "Icon_skill_passive_4104",
+          "ID": "53070",
+          "name": "Re-Slash",
+          "SpecificEffects": "After triggering <buf ID=900004>[Re-ATK]</buf>, DMG and Hit Rate <color=#F74848>+10%</color>.",
+          "BufCarried": "530701",
+          "SkillIcon": "Icon_skill_passive_4127",
+          "icon": "Icon_skill_passive_4127",
           "Status": 1,
-          "weight": 1181
+          "weight": 1223
         }
       ],
-      "describe": "\u52a0\u88c5\u4e86\u7531\u9ed1\u66dc\u77f3\u7279\u522b\u7814\u5236\u7684\u65b0\u578b\u81ea\u5236\u5bfc\u7ec4\u4ef6\u7684\u673a\u8f7d\u706b\u7bad\uff0c\u80fd\u6839\u636e\u673a\u5e08\u9700\u6c42\u6267\u884c\u66f4\u52a0\u7cbe\u7ec6\u3001\u7cbe\u786e\u7684\u8f70\u70b8\u547d\u4ee4\uff0c\u5927\u5927\u62d3\u5c55\u4e86\u706b\u7bad\u6b66\u5668\u7684\u6218\u672f\u4ef7\u503c\u3002"
-    },
-    {
-      "ID": "40214122",
-      "name": "\u7194\u706b\u00b7\u6539\u2161",
-      "quality": "UR",
-      "WeaponType1": "Heavy",
-      "WeaponType2": "Rocket",
-      "type": "Rocket",
-      "icon": "Icon_weapon_40200401",
-      "grade": "70",
-      "LimitedModelOfWeapon": "Medium",
-      "RestrictionsPositionOfWeapon": "Shoulder",
-      "range": "3-6",
-      "WeaponWeight": "1200",
-      "WeaponBasicAttackingPower": "935",
-      "WeaponHitPoint": "2781",
-      "WeaponUnderstanding": "4558",
-      "PassiveSkill": [
-        {
-          "ID": "53100",
-          "name": "Breaker of the Unyielding",
-          "SpecificEffects": "When actively attacking with a Rocket Launcher, DMG to parts at <color=#F74848>100%</color> HP <color=#F74848>+20%</color>.",
-          "BufCarried": "531001",
-          "SkillIcon": "Icon_skill_passive_1114",
-          "icon": "Icon_skill_passive_1114",
-          "Status": 1,
-          "weight": 1253
-        }
-      ],
-      "describe": "\u52a0\u88c5\u4e86\u7531\u9ed1\u66dc\u77f3\u7279\u522b\u7814\u5236\u7684\u65b0\u578b\u81ea\u5236\u5bfc\u7ec4\u4ef6\u7684\u673a\u8f7d\u706b\u7bad\uff0c\u80fd\u6839\u636e\u673a\u5e08\u9700\u6c42\u6267\u884c\u66f4\u52a0\u7cbe\u7ec6\u3001\u7cbe\u786e\u7684\u8f70\u70b8\u547d\u4ee4\uff0c\u5927\u5927\u62d3\u5c55\u4e86\u706b\u7bad\u6b66\u5668\u7684\u6218\u672f\u4ef7\u503c\u3002"
+      "describe": "The improved model of the general purpose blade Excalibur, fully optimized with a deformation structure and an added micro-control unit, enhancing both handling and contact strength, and significantly boosting combat efficiency."
     },
     {
       "ID": "10915122",
@@ -1976,40 +2006,10 @@
           "weight": 1223
         }
       ],
-      "describe": "\u5317\u9646\u8054\u5408\u7b2c\u4e5d\u7814\u7a76\u6240\u6253\u9020\u7684\u8bd5\u5236\u52a8\u529b\u5251\uff0c\u2211-04\u5965\u83f2\u5229\u4e9a\u6d88\u706d\u5931\u63a7\u5b9e\u9a8c\u4f53\u0394-09\u540e\u7f34\u83b7\u5e76\u4f7f\u7528\u81f3\u4eca\u7684\u6218\u5229\u54c1\u2026\u2026\u6709\u4f20\u95fb\u8bf4\u5979\u4eec\u66fe\u662f\u670b\u53cb\uff0c\u4f46\u5965\u83f2\u5229\u4e9a\u672c\u4eba\u5bf9\u6b64\u4ece\u672a\u505a\u51fa\u8fc7\u4efb\u4f55\u56de\u5e94\u3002",
+      "describe": "A prototype power blade crafted by the UNCS Ninth Research Institute. \u03a3-04 Ophelia took it as a trophy after defeating the runaway experiment \u0394-09, and she's used it ever since... People say they were once friends, but Ophelia has never said a word about it.",
       "pilot": "Ophelia",
       "version": "2.3",
       "ac": 11
-    },
-    {
-      "ID": "10914121",
-      "name": "\u65ad\u94a2\u00b7\u6539",
-      "quality": "UR",
-      "WeaponType1": "Melee",
-      "WeaponType2": "Blade",
-      "type": "Blade",
-      "icon": "Icon_weapon_10700301A",
-      "grade": "70",
-      "LimitedModelOfWeapon": "Light/Medium/Heavy",
-      "RestrictionsPositionOfWeapon": "Hand",
-      "range": "1\uff08\u53ef\u659c\u5411\uff09",
-      "WeaponWeight": "350",
-      "WeaponBasicAttackingPower": "638",
-      "WeaponHitPoint": "3337",
-      "WeaponUnderstanding": "4558",
-      "PassiveSkill": [
-        {
-          "ID": "53070",
-          "name": "Re-Slash",
-          "SpecificEffects": "After triggering <buf ID=900004>[Re-ATK]</buf>, DMG and Hit Rate <color=#F74848>+10%</color>.",
-          "BufCarried": "530701",
-          "SkillIcon": "Icon_skill_passive_4127",
-          "icon": "Icon_skill_passive_4127",
-          "Status": 1,
-          "weight": 1223
-        }
-      ],
-      "describe": "\u901a\u7528\u52a8\u529b\u5251\u65ad\u94a2\u7684\u6539\u8fdb\u578b\u53f7\uff0c\u5168\u9762\u4f18\u5316\u4e86\u5f62\u53d8\u7ed3\u6784\u5e76\u589e\u8bbe\u5fae\u578b\u63a7\u5236\u5355\u5143\uff0c\u64cd\u4f5c\u6027\u548c\u63a5\u89e6\u5f3a\u5ea6\u5747\u5f97\u5230\u8fdb\u4e00\u6b65\u6539\u5584\uff0c\u6218\u6597\u6548\u7387\u660e\u663e\u63d0\u5347\u3002"
     },
     {
       "ID": "10515124",
@@ -2066,7 +2066,7 @@
     },
     {
       "ID": "10515123",
-      "name": "Parting Song Prism",
+      "name": "Elegiac Prism",
       "quality": "SSSR",
       "WeaponType1": "Melee",
       "WeaponType2": "Buckler",
@@ -2093,7 +2093,7 @@
         },
         {
           "ID": "53081",
-          "name": "Goldfinch's Cry",
+          "name": "Canary's Song",
           "SpecificEffects": "Enhanced [Sentinel Ward]: <skill mainSkill=500406>[Repair Synergy]</skill> and <skill mainSkill=500408>[Full-Line Maintenance]</skill> can additionally dispel <color=#F74848>1</color> debuff from the repair target. Every time <buf ID=900038>[Regular Repair]</buf> triggers, dispels <color=#F74848>1</color> debuff.",
           "BufCarried": "530811",
           "SkillIcon": "Icon_skill_passive_3134",
@@ -2103,7 +2103,7 @@
         },
         {
           "ID": "53079",
-          "name": "In Kind",
+          "name": "Full Recoil",
           "SpecificEffects": "When the shield-carrying Arm is attacked, inflicts <buf ID=7101003>[Hit Rate Down II]</buf> and <buf ID=7101303>[Crit Rate Down II]</buf> on the enemy after combat, lasting <color=#F74848>1</color> turn.",
           "BufCarried": "530791",
           "SkillIcon": "Icon_skill_passive_5131",
@@ -2112,10 +2112,129 @@
           "weight": 1232
         }
       ],
-      "describe": "\u300c\u6885\u5229\u838e\uff0c\u76f4\u5230\u6700\u540e\u6211\u624d\u660e\u767d\uff0c\u80fd\u591f\u6253\u5f00\u8fd9\u4e2a\u56da\u7b3c\u7684\u4eba\uff0c\u53ea\u80fd\u662f\u4f60\u81ea\u5df1\u2026\u2026\u8fd9\u662f\u518d\u597d\u4e0d\u8fc7\u7684\u7ed3\u5c40\u4e86\u3002\u300d",
+      "describe": "\"Melissa, only in the end did I realize that the one who could open this cage was you alone... It couldn't have ended any better than this.\"",
       "pilot": "Melissa",
       "version": "2.4",
       "ac": 12
+    },
+    {
+      "ID": "10514121",
+      "name": "Polymeric Barrier - B",
+      "quality": "UR",
+      "WeaponType1": "Melee",
+      "WeaponType2": "Buckler",
+      "type": "Buckler",
+      "icon": "Icon_weapon_10500401",
+      "grade": "70",
+      "LimitedModelOfWeapon": "Light/Medium/Heavy",
+      "RestrictionsPositionOfWeapon": "Hand",
+      "range": "1",
+      "WeaponWeight": "70",
+      "WeaponBasicAttackingPower": "284",
+      "WeaponHitPoint": "3028",
+      "ShieldbloodBase": "839",
+      "PassiveSkill": [
+        {
+          "ID": "53007",
+          "name": "Deflection Protection",
+          "SpecificEffects": "When attacked, the weighting of the DMG Shift effect increases by <color=#F74848>50</color>, and DMG Reduction increases to <color=#F74848>15%</color>.",
+          "SkillIcon": "Icon_skill_passive_2112",
+          "icon": "Icon_skill_passive_2112",
+          "Status": 1,
+          "weight": 1160
+        }
+      ],
+      "describe": "The new Polymeric Barrier replaces the old Jamming Coat and Harvesting Core, significantly improving ballistic deflection protection and expanding the armor's coverage."
+    },
+    {
+      "ID": "10514122",
+      "name": "Polymeric Barrier - B II",
+      "quality": "UR",
+      "WeaponType1": "Melee",
+      "WeaponType2": "Buckler",
+      "type": "Buckler",
+      "icon": "Icon_weapon_10500401",
+      "grade": "70",
+      "LimitedModelOfWeapon": "Light/Medium/Heavy",
+      "RestrictionsPositionOfWeapon": "Hand",
+      "range": "1",
+      "WeaponWeight": "70",
+      "WeaponBasicAttackingPower": "284",
+      "WeaponHitPoint": "3028",
+      "ShieldbloodBase": "839",
+      "PassiveSkill": [
+        {
+          "ID": "53046",
+          "name": "Maintenance Spares",
+          "SpecificEffects": "When attacked, damage shift weighting is increased by an additional <color=#F74848>50</color>. After being attacked, restores <color=#F74848>20%</color> HP to equipped Arm parts. Cannot repair destroyed parts.",
+          "BufCarried": "530461",
+          "SkillIcon": "Icon_skill_passive_3119",
+          "icon": "Icon_skill_passive_3119",
+          "Status": 1,
+          "weight": 1199
+        }
+      ],
+      "describe": "The new Polymeric Barrier replaces the old Jamming Coat and Harvesting Core, significantly improving ballistic deflection protection and expanding the armor's coverage."
+    },
+    {
+      "ID": "10514123",
+      "name": "Polymeric Barrier - B III",
+      "quality": "UR",
+      "WeaponType1": "Melee",
+      "WeaponType2": "Buckler",
+      "type": "Buckler",
+      "icon": "Icon_weapon_10500401",
+      "grade": "70",
+      "LimitedModelOfWeapon": "Light/Medium/Heavy",
+      "RestrictionsPositionOfWeapon": "Hand",
+      "range": "1",
+      "WeaponWeight": "70",
+      "WeaponBasicAttackingPower": "284",
+      "WeaponHitPoint": "3028",
+      "ShieldbloodBase": "839",
+      "PassiveSkill": [
+        {
+          "ID": "53079",
+          "name": "Full Recoil",
+          "SpecificEffects": "When the shield-carrying Arm is attacked, inflicts <buf ID=7101003>[Hit Rate Down II]</buf> and <buf ID=7101303>[Crit Rate Down II]</buf> on the enemy after combat, lasting <color=#F74848>1</color> turn.",
+          "BufCarried": "530791",
+          "SkillIcon": "Icon_skill_passive_5131",
+          "icon": "Icon_skill_passive_5131",
+          "Status": 1,
+          "weight": 1232
+        }
+      ],
+      "describe": "The new Polymeric Barrier replaces the old Jamming Coat and Harvesting Core, significantly improving ballistic deflection protection and expanding the armor's coverage."
+    },
+    {
+      "ID": "10514124",
+      "name": "Polymeric Barrier - B IV",
+      "quality": "UR",
+      "WeaponType1": "Melee",
+      "WeaponType2": "Buckler",
+      "type": "Buckler",
+      "icon": "Icon_weapon_10500401",
+      "grade": "70",
+      "LimitedModelOfWeapon": "Light/Medium/Heavy",
+      "RestrictionsPositionOfWeapon": "Hand",
+      "range": "1",
+      "WeaponWeight": "70",
+      "WeaponBasicAttackingPower": "284",
+      "WeaponHitPoint": "3028",
+      "ShieldbloodBase": "839",
+      "PassiveSkill": [
+        {
+          "ID": "53094",
+          "name": "Opportunist",
+          "SpecificEffects": "When the shield-carrying Arm is attacked in combat, for every <color=#F74848>1</color> debuff the enemy carries, DMG Taken <color=#F74848>-10%</color>, up to <color=#F74848>-30%</color>.",
+          "BufCarried": "530941/530942/530943",
+          "SkillIcon": "Icon_skill_passive_2111",
+          "icon": "Icon_skill_passive_2111",
+          "Status": 1,
+          "weight": 1247
+        }
+      ],
+      "describe": "\u5c06\u65e7\u578b\u5e72\u6270\u6d82\u5c42\u548c\u6536\u675f\u6838\u5fc3\u5b8c\u5168\u66ff\u6362\u540e\u7684\u5347\u7ea7\u6b3e\u805a\u5408\u5c4f\u969c\uff0c\u65e0\u8bba\u662f\u9488\u5bf9\u5f39\u9053\u7684\u504f\u8f6c\u9632\u5fa1\u8fd8\u662f\u7532\u7247\u6269\u5f20\u540e\u7684\u9632\u62a4\u8303\u56f4\uff0c\u5bf9\u6bd4\u65e7\u578b\u90fd\u6709\u7740\u5de8\u5927\u63d0\u5347\u3002"
     },
     {
       "ID": "10515122",
@@ -2165,7 +2284,7 @@
           "weight": 1199
         }
       ],
-      "describe": "\u96be\u6c11\u8425\u4e2d\u7684\u524d\u51e0\u4f4d\u300c\u9a6c\u54c8\u5229\u59c6\u300d\u7559\u4e0b\u7684\u300c\u9057\u4ea7\u300d\uff0c\u7531\u5404\u79cd\u96f6\u788e\u7684\u673a\u5175\u96f6\u4ef6\u7ec4\u88c5\u800c\u6765\u7684\u673a\u5175\u624b\u76fe\uff0c\u4e0e\u4e4b\u914d\u5957\u7684\u8fd8\u6709\u4e00\u5957\u65b9\u4fbf\u8fdb\u884c\u7ef4\u4fee\u7684\u5907\u4ef6\u7bb1\u3002\u7f57\u5a1c\u5e0c\u671b\u901a\u8fc7\u8fd9\u6837\u7684\u65b9\u5f0f\u7eaa\u5ff5\u4ed6\u4eec\u6240\u6709\u4eba\uff0c\u5e76\u671f\u671b\u81ea\u5df1\u80fd\u7528\u5b83\u62ef\u6551\u66f4\u591a\u7684\u300c\u9a6c\u54c8\u5229\u59c6\u300d\u3002",
+      "describe": "The first few \"Mahalim\" in the refugee camp left behind a legacy\u2014a cobbled-together ST made from all kinds of parts, accompanied by a set of spares for convenient repairs. Lorna hopes to commemorate all of them in this way and plans to use it to save more \"Mahalim.\"",
       "pilot": "Lorna",
       "version": "1.7",
       "ac": 7
@@ -2217,129 +2336,10 @@
           "weight": 1160
         }
       ],
-      "describe": "\u68d2\u68d2\u7cd6\u673a\u4fee\u5e97\u7279\u4f9b\u6539\u826f\u7248\u591a\u529f\u80fd\u624b\u76fe\uff0c\u5185\u7f6e\u5f3a\u5316\u62a4\u677f\u3001\u62a2\u4fee\u5907\u4ef6\u3001\u589e\u5e45\u7535\u6c60\u3001\u5fae\u578b\u626b\u96f7\u4eea\u3001\u6ce2\u5947\u9065\u63a7\u5668\u7b49\u591a\u79cd\u5b9e\u7528\u7ec4\u4ef6\u3002\u76ee\u524d\u4ec5\u63a5\u53d7\u5c11\u6570VIP\u5ba2\u6237\u9884\u8ba2\uff0c\u5e97\u957f\u81ea\u7528\u7248\u6682\u4e0d\u51fa\u552e\u3002",
+      "describe": "Designed by the Lollipop Machine Shop, this enhanced multi-functional shield includes reinforced plates, repair parts, amplifier batteries, a mini-minesweeper, and a Pochy remote controller. Pre-orders are limited to select VIP customers, with the store manager's personal version not for sale.",
       "pilot": "Seven",
       "version": "1.2",
       "ac": 2
-    },
-    {
-      "ID": "10514121",
-      "name": "\u805a\u5408\u5c4f\u969c\u00b7\u6539",
-      "quality": "UR",
-      "WeaponType1": "Melee",
-      "WeaponType2": "Buckler",
-      "type": "Buckler",
-      "icon": "Icon_weapon_10500401",
-      "grade": "70",
-      "LimitedModelOfWeapon": "Light/Medium/Heavy",
-      "RestrictionsPositionOfWeapon": "Hand",
-      "range": "1",
-      "WeaponWeight": "70",
-      "WeaponBasicAttackingPower": "284",
-      "WeaponHitPoint": "3028",
-      "ShieldbloodBase": "839",
-      "PassiveSkill": [
-        {
-          "ID": "53007",
-          "name": "Deflection Protection",
-          "SpecificEffects": "When attacked, the weighting of the DMG Shift effect increases by <color=#F74848>50</color>, and DMG Reduction increases to <color=#F74848>15%</color>.",
-          "SkillIcon": "Icon_skill_passive_2112",
-          "icon": "Icon_skill_passive_2112",
-          "Status": 1,
-          "weight": 1160
-        }
-      ],
-      "describe": "\u5c06\u65e7\u578b\u5e72\u6270\u6d82\u5c42\u548c\u6536\u675f\u6838\u5fc3\u5b8c\u5168\u66ff\u6362\u540e\u7684\u5347\u7ea7\u6b3e\u805a\u5408\u5c4f\u969c\uff0c\u65e0\u8bba\u662f\u9488\u5bf9\u5f39\u9053\u7684\u504f\u8f6c\u9632\u5fa1\u8fd8\u662f\u7532\u7247\u6269\u5f20\u540e\u7684\u9632\u62a4\u8303\u56f4\uff0c\u5bf9\u6bd4\u65e7\u578b\u90fd\u6709\u7740\u5de8\u5927\u63d0\u5347\u3002"
-    },
-    {
-      "ID": "10514122",
-      "name": "\u805a\u5408\u5c4f\u969c\u00b7\u6539\u2161",
-      "quality": "UR",
-      "WeaponType1": "Melee",
-      "WeaponType2": "Buckler",
-      "type": "Buckler",
-      "icon": "Icon_weapon_10500401",
-      "grade": "70",
-      "LimitedModelOfWeapon": "Light/Medium/Heavy",
-      "RestrictionsPositionOfWeapon": "Hand",
-      "range": "1",
-      "WeaponWeight": "70",
-      "WeaponBasicAttackingPower": "284",
-      "WeaponHitPoint": "3028",
-      "ShieldbloodBase": "839",
-      "PassiveSkill": [
-        {
-          "ID": "53046",
-          "name": "Maintenance Spares",
-          "SpecificEffects": "When attacked, damage shift weighting is increased by an additional <color=#F74848>50</color>. After being attacked, restores <color=#F74848>20%</color> HP to equipped Arm parts. Cannot repair destroyed parts.",
-          "BufCarried": "530461",
-          "SkillIcon": "Icon_skill_passive_3119",
-          "icon": "Icon_skill_passive_3119",
-          "Status": 1,
-          "weight": 1199
-        }
-      ],
-      "describe": "\u5c06\u65e7\u578b\u5e72\u6270\u6d82\u5c42\u548c\u6536\u675f\u6838\u5fc3\u5b8c\u5168\u66ff\u6362\u540e\u7684\u5347\u7ea7\u6b3e\u805a\u5408\u5c4f\u969c\uff0c\u65e0\u8bba\u662f\u9488\u5bf9\u5f39\u9053\u7684\u504f\u8f6c\u9632\u5fa1\u8fd8\u662f\u7532\u7247\u6269\u5f20\u540e\u7684\u9632\u62a4\u8303\u56f4\uff0c\u5bf9\u6bd4\u65e7\u578b\u90fd\u6709\u7740\u5de8\u5927\u63d0\u5347\u3002"
-    },
-    {
-      "ID": "10514123",
-      "name": "\u805a\u5408\u5c4f\u969c\u00b7\u6539\u2162",
-      "quality": "UR",
-      "WeaponType1": "Melee",
-      "WeaponType2": "Buckler",
-      "type": "Buckler",
-      "icon": "Icon_weapon_10500401",
-      "grade": "70",
-      "LimitedModelOfWeapon": "Light/Medium/Heavy",
-      "RestrictionsPositionOfWeapon": "Hand",
-      "range": "1",
-      "WeaponWeight": "70",
-      "WeaponBasicAttackingPower": "284",
-      "WeaponHitPoint": "3028",
-      "ShieldbloodBase": "839",
-      "PassiveSkill": [
-        {
-          "ID": "53079",
-          "name": "In Kind",
-          "SpecificEffects": "When the shield-carrying Arm is attacked, inflicts <buf ID=7101003>[Hit Rate Down II]</buf> and <buf ID=7101303>[Crit Rate Down II]</buf> on the enemy after combat, lasting <color=#F74848>1</color> turn.",
-          "BufCarried": "530791",
-          "SkillIcon": "Icon_skill_passive_5131",
-          "icon": "Icon_skill_passive_5131",
-          "Status": 1,
-          "weight": 1232
-        }
-      ],
-      "describe": "\u5c06\u65e7\u578b\u5e72\u6270\u6d82\u5c42\u548c\u6536\u675f\u6838\u5fc3\u5b8c\u5168\u66ff\u6362\u540e\u7684\u5347\u7ea7\u6b3e\u805a\u5408\u5c4f\u969c\uff0c\u65e0\u8bba\u662f\u9488\u5bf9\u5f39\u9053\u7684\u504f\u8f6c\u9632\u5fa1\u8fd8\u662f\u7532\u7247\u6269\u5f20\u540e\u7684\u9632\u62a4\u8303\u56f4\uff0c\u5bf9\u6bd4\u65e7\u578b\u90fd\u6709\u7740\u5de8\u5927\u63d0\u5347\u3002"
-    },
-    {
-      "ID": "10514124",
-      "name": "\u805a\u5408\u5c4f\u969c\u00b7\u6539\u2163",
-      "quality": "UR",
-      "WeaponType1": "Melee",
-      "WeaponType2": "Buckler",
-      "type": "Buckler",
-      "icon": "Icon_weapon_10500401",
-      "grade": "70",
-      "LimitedModelOfWeapon": "Light/Medium/Heavy",
-      "RestrictionsPositionOfWeapon": "Hand",
-      "range": "1",
-      "WeaponWeight": "70",
-      "WeaponBasicAttackingPower": "284",
-      "WeaponHitPoint": "3028",
-      "ShieldbloodBase": "839",
-      "PassiveSkill": [
-        {
-          "ID": "53094",
-          "name": "Opportunist",
-          "SpecificEffects": "When the shield-carrying Arm is attacked in combat, for every <color=#F74848>1</color> debuff the enemy carries, DMG Taken <color=#F74848>-10%</color>, up to <color=#F74848>-30%</color>.",
-          "BufCarried": "530941/530942/530943",
-          "SkillIcon": "Icon_skill_passive_2111",
-          "icon": "Icon_skill_passive_2111",
-          "Status": 1,
-          "weight": 1247
-        }
-      ],
-      "describe": "\u5c06\u65e7\u578b\u5e72\u6270\u6d82\u5c42\u548c\u6536\u675f\u6838\u5fc3\u5b8c\u5168\u66ff\u6362\u540e\u7684\u5347\u7ea7\u6b3e\u805a\u5408\u5c4f\u969c\uff0c\u65e0\u8bba\u662f\u9488\u5bf9\u5f39\u9053\u7684\u504f\u8f6c\u9632\u5fa1\u8fd8\u662f\u7532\u7247\u6269\u5f20\u540e\u7684\u9632\u62a4\u8303\u56f4\uff0c\u5bf9\u6bd4\u65e7\u578b\u90fd\u6709\u7740\u5de8\u5927\u63d0\u5347\u3002"
     },
     {
       "ID": "10215123",
@@ -2438,7 +2438,7 @@
           "weight": 1166
         }
       ],
-      "describe": "\u300c\u5361\u7c73\u62c9\uff0c\u8fd9\u662f\u4e3a\u4f60\u51c6\u5907\u7684\u2026\u2026\u6ca1\u9519\uff0c\u6211\u4eec\u5f88\u5feb\u5c31\u8981\u56de\u53bb\u90a3\u5ea7\u5c9b\u3002\u5728\u90a3\u91cc\uff0c\u4e0d\u53ea\u662f\u6211\u6240\u544a\u8bc9\u4f60\u7684\u90a3\u4e9b\uff0c\u8fd8\u6709\u8bb8\u591a\u8bb8\u591a\uff0c\u90a3\u4e9b\u4f60\u6240\u5931\u53bb\u7684\uff0c\u90fd\u5c06\u7531\u4f60\u81ea\u5df1\u593a\u56de\u3002\u300d",
+      "describe": "\"Camilla, this is for you... We'll be going back to that island soon. There, you'll reclaim not just all I've told you about, but everything you've lost.\"",
       "pilot": "Camilla",
       "version": "1.3",
       "ac": 3
@@ -2491,14 +2491,14 @@
           "weight": 1196
         }
       ],
-      "describe": "\u300c\u56de\u9996\u5411\u6765\u8427\u745f\u5904\uff0c\u5f52\u53bb\uff0c\u4e5f\u65e0\u98ce\u96e8\u4e5f\u65e0\u6674\u3002\u300d",
+      "describe": "\"Looking back upon the desolate path behind me... Homeward I go, untouched by rain or shine.\"",
       "pilot": "Hong",
       "version": "1.7",
       "ac": 7
     },
     {
       "ID": "10214121",
-      "name": "\u51ef\u65cb\u00b7\u6539",
+      "name": "Triumph - B",
       "quality": "UR",
       "WeaponType1": "Melee",
       "WeaponType2": "PileBunker",
@@ -2524,11 +2524,11 @@
           "weight": 1166
         }
       ],
-      "describe": "\u5728\u4fdd\u7559\u4e86\u539f\u6709\u7684\u6253\u6869\u673a\u5916\u7ed3\u6784\u7684\u540c\u65f6\uff0c\u589e\u52a0\u4e86\u4e0e\u673a\u5175\u52a8\u529b\u6a21\u5757\u76f4\u8fde\u7684\u65b0\u578b\u63a8\u5c04\u5668\u3002\u5728\u6253\u51fb\u65b9\u9762\u66f4\u52a0\u5feb\u901f\u3001\u7cbe\u51c6\u3001\u53ef\u63a7\u3002"
+      "describe": "The Pile Bunker's original structure remains intact while a new thruster, linked directly to the ST's power module, enables faster, more precise, and controllable strikes."
     },
     {
       "ID": "10214122",
-      "name": "\u51ef\u65cb\u00b7\u6539\u2161",
+      "name": "Triumph - B II",
       "quality": "UR",
       "WeaponType1": "Melee",
       "WeaponType2": "PileBunker",
@@ -2554,7 +2554,7 @@
           "weight": 1196
         }
       ],
-      "describe": "\u5728\u4fdd\u7559\u4e86\u539f\u6709\u7684\u6253\u6869\u673a\u5916\u7ed3\u6784\u7684\u540c\u65f6\uff0c\u589e\u52a0\u4e86\u4e0e\u673a\u5175\u52a8\u529b\u6a21\u5757\u76f4\u8fde\u7684\u65b0\u578b\u63a8\u5c04\u5668\u3002\u5728\u6253\u51fb\u65b9\u9762\u66f4\u52a0\u5feb\u901f\u3001\u7cbe\u51c6\u3001\u53ef\u63a7\u3002"
+      "describe": "The Pile Bunker's original structure remains intact while a new thruster, linked directly to the ST's power module, enables faster, more precise, and controllable strikes."
     },
     {
       "ID": "10315121",
@@ -2604,7 +2604,7 @@
           "weight": 1157
         }
       ],
-      "describe": "\u300c\u60f3\u54ed\uff0c\u60f3\u7b11\uff0c\u60f3\u6012\u543c\uff0c\u60f3\u5954\u8dd1\u2026\u2026\u60f3\u56de\u5230\u6bcd\u4eb2\u7684\u6000\u91cc\uff0c\u6084\u65e0\u58f0\u606f\u5730\u7761\u7740\u2026\u2026\u730e\u7269\u6216\u8005\u730e\u98df\u8005\u3001\u6b7b\u4ea1\u6216\u8005\u6d3b\u4e0b\u53bb\u3001\u88ab\u56de\u5fc6\u7275\u7eca\u6216\u8005\u5f7b\u5e95\u5fd8\u5374\u2026\u2026\u771f\u9057\u61be\u554a\uff0c\u6211\u5df2\u7ecf\u6d41\u4e0d\u51fa\u773c\u6cea\uff0c\u4e5f\u5df2\u7ecf\u6ca1\u6709\u56de\u5934\u8def\u4e86\u3002\u300d",
+      "describe": "\"I yearn to cry, laugh, roar, and run... I miss my mother's embrace and those carefree days. Whether in life or death, haunted by memories or seeking a fresh start, it's a pity my tears won't come, and there's no way back to the past...\"",
       "pilot": "Catherine",
       "version": "1.2",
       "ac": 2
@@ -2663,6 +2663,96 @@
       "ac": 14
     },
     {
+      "ID": "10314121",
+      "name": "Mountains - B",
+      "quality": "UR",
+      "WeaponType1": "Melee",
+      "WeaponType2": "Rod",
+      "type": "Rod",
+      "icon": "Icon_weapon_10300301",
+      "grade": "70",
+      "LimitedModelOfWeapon": "Light/Medium/Heavy",
+      "RestrictionsPositionOfWeapon": "DoubleHand",
+      "range": "1\uff08\u53ef\u659c\u5411\uff09",
+      "WeaponWeight": "800",
+      "WeaponBasicAttackingPower": "730",
+      "WeaponHitPoint": "1452",
+      "WeaponUnderstanding": "4558",
+      "PassiveSkill": [
+        {
+          "ID": "53004",
+          "name": "Lingering Fury",
+          "SpecificEffects": "Wielding a Polearm one-handed will not affect Hit Rate.",
+          "BufCarried": "530041",
+          "SkillIcon": "Icon_skill_passive_5200",
+          "icon": "Icon_skill_passive_5200",
+          "Status": 1,
+          "weight": 1157
+        }
+      ],
+      "describe": "This upgraded polearm from Doll Industries features a built-in drive core that generates kinetic energy for strikes, enhancing flexibility and reducing weight for improved maneuverability."
+    },
+    {
+      "ID": "10314122",
+      "name": "Mountains - B II",
+      "quality": "UR",
+      "WeaponType1": "Melee",
+      "WeaponType2": "Rod",
+      "type": "Rod",
+      "icon": "Icon_weapon_10300301",
+      "grade": "70",
+      "LimitedModelOfWeapon": "Light/Medium/Heavy",
+      "RestrictionsPositionOfWeapon": "DoubleHand",
+      "range": "1\uff08\u53ef\u659c\u5411\uff09",
+      "WeaponWeight": "800",
+      "WeaponBasicAttackingPower": "730",
+      "WeaponHitPoint": "1452",
+      "WeaponUnderstanding": "4558",
+      "PassiveSkill": [
+        {
+          "ID": "53040",
+          "name": "Effortless Command",
+          "SpecificEffects": "When in combat with a target in a diagonal direction, Hit Rate and Crit Rate <color=#F74848>+12%</color>.",
+          "BufCarried": "530401",
+          "SkillIcon": "Icon_skill_passive_4133",
+          "icon": "Icon_skill_passive_4133",
+          "Status": 1,
+          "weight": 1193
+        }
+      ],
+      "describe": "This upgraded polearm from Doll Industries features a built-in drive core that generates kinetic energy for strikes, enhancing flexibility and reducing weight for improved maneuverability."
+    },
+    {
+      "ID": "10314123",
+      "name": "Mountains - B III",
+      "quality": "UR",
+      "WeaponType1": "Melee",
+      "WeaponType2": "Rod",
+      "type": "Rod",
+      "icon": "Icon_weapon_10300301",
+      "grade": "70",
+      "LimitedModelOfWeapon": "Light/Medium/Heavy",
+      "RestrictionsPositionOfWeapon": "DoubleHand",
+      "range": "1\uff08\u53ef\u659c\u5411\uff09",
+      "WeaponWeight": "800",
+      "WeaponBasicAttackingPower": "730",
+      "WeaponHitPoint": "1452",
+      "WeaponUnderstanding": "4558",
+      "PassiveSkill": [
+        {
+          "ID": "53088",
+          "name": "Fleeting Shadow",
+          "SpecificEffects": "When an attack misses, still deals <color=#F74848>40%</color> of the original DMG.",
+          "BufCarried": "530881",
+          "SkillIcon": "Icon_skill_passive_5114",
+          "icon": "Icon_skill_passive_5114",
+          "Status": 1,
+          "weight": 1241
+        }
+      ],
+      "describe": "\u591a\u5c14\u5de5\u4e1a\u91cd\u6574\u673a\u5175\u751f\u4ea7\u7ebf\u540e\u63a8\u51fa\u7684\u6539\u826f\u6b3e\u957f\u67c4\u6b66\u5668\uff0c\u4ee5\u5185\u7f6e\u7684\u9a71\u52a8\u6838\u5fc3\u4ea7\u751f\u7684\u6253\u51fb\u52a8\u80fd\u4ee3\u66ff\u6b66\u5668\u7684\u81ea\u91cd\u6253\u51fb\uff0c\u5927\u5e45\u6539\u5584\u4e86\u64cd\u4f5c\u7684\u7075\u6d3b\u6027\u4e0e\u8f7b\u4fbf\u6027\u3002"
+    },
+    {
       "ID": "10315122",
       "name": "Sivri",
       "quality": "SSSR",
@@ -2710,7 +2800,7 @@
           "weight": 1193
         }
       ],
-      "describe": "\u6709\u7684\u65f6\u5019\u5979\u4f1a\u68a6\u89c1\u90a3\u4e2a\uff0c\u548c\u5979\u6536\u517b\u7684\u5b69\u5b50\u4eec\u4e00\u8d77\u770b\u6708\u4eae\u7684\u591c\u665a\u2026\u2026\u6b63\u56e0\u5982\u6b64\uff0c\u4e3a\u4e86\u4eca\u540e\u65e0\u6570\u4e2a\u540c\u6837\u768e\u6d01\u7684\u6708\u591c\uff0c\u5979\u5fc5\u987b\u7d27\u63e1\u624b\u4e2d\u7684\u6b66\u5668\uff0c\u65e0\u60e7\u65e0\u754f\u5730\u7ee7\u7eed\u6218\u6597\u4e0b\u53bb\u3002",
+      "describe": "Sometimes she dreams of that night, watching the moon with her adopted children... For this reason, she must firmly grasp the weapon in her hand and continue to fight fearlessly for countless more moonlit nights to come.",
       "pilot": "Gumusiay",
       "version": "1.6",
       "ac": 6
@@ -2765,94 +2855,64 @@
       "ac": 20
     },
     {
-      "ID": "10314121",
-      "name": "\u7fa4\u5c71\u4e4b\u529b\u00b7\u6539",
+      "ID": "10814121",
+      "name": "Beowulf - B",
       "quality": "UR",
       "WeaponType1": "Melee",
-      "WeaponType2": "Rod",
-      "type": "Rod",
-      "icon": "Icon_weapon_10300301",
+      "WeaponType2": "Saw",
+      "type": "Saw",
+      "icon": "Icon_weapon_10600201",
       "grade": "70",
       "LimitedModelOfWeapon": "Light/Medium/Heavy",
       "RestrictionsPositionOfWeapon": "DoubleHand",
       "range": "1\uff08\u53ef\u659c\u5411\uff09",
-      "WeaponWeight": "800",
-      "WeaponBasicAttackingPower": "730",
-      "WeaponHitPoint": "1452",
+      "WeaponWeight": "850",
+      "WeaponBasicAttackingPower": "952",
+      "WeaponHitPoint": "1792",
       "WeaponUnderstanding": "4558",
       "PassiveSkill": [
         {
-          "ID": "53004",
-          "name": "Lingering Fury",
-          "SpecificEffects": "Wielding a Polearm one-handed will not affect Hit Rate.",
-          "BufCarried": "530041",
-          "SkillIcon": "Icon_skill_passive_5200",
-          "icon": "Icon_skill_passive_5200",
+          "ID": "53061",
+          "name": "Crushing Strike",
+          "SpecificEffects": "When attacking, if the part hit is not at full HP, it takes <color=#F74848>+20%</color> DMG.",
+          "BufCarried": "530611/530612/530613/530614/530615",
+          "SkillIcon": "Icon_skill_passive_1157",
+          "icon": "Icon_skill_passive_1157",
           "Status": 1,
-          "weight": 1157
+          "weight": 1214
         }
       ],
-      "describe": "\u591a\u5c14\u5de5\u4e1a\u91cd\u6574\u673a\u5175\u751f\u4ea7\u7ebf\u540e\u63a8\u51fa\u7684\u6539\u826f\u6b3e\u957f\u67c4\u6b66\u5668\uff0c\u4ee5\u5185\u7f6e\u7684\u9a71\u52a8\u6838\u5fc3\u4ea7\u751f\u7684\u6253\u51fb\u52a8\u80fd\u4ee3\u66ff\u6b66\u5668\u7684\u81ea\u91cd\u6253\u51fb\uff0c\u5927\u5e45\u6539\u5584\u4e86\u64cd\u4f5c\u7684\u7075\u6d3b\u6027\u4e0e\u8f7b\u4fbf\u6027\u3002"
+      "describe": "An improved version of the Beowulf military combat axe-saw, featuring newly optimized turbo motors that significantly enhance durability and environmental adaptability, allowing the chainsaw weapon to excel in more diverse and complex combat environments."
     },
     {
-      "ID": "10314122",
-      "name": "\u7fa4\u5c71\u4e4b\u529b\u00b7\u6539\u2161",
+      "ID": "10814122",
+      "name": "Beowulf - B II",
       "quality": "UR",
       "WeaponType1": "Melee",
-      "WeaponType2": "Rod",
-      "type": "Rod",
-      "icon": "Icon_weapon_10300301",
+      "WeaponType2": "Saw",
+      "type": "Saw",
+      "icon": "Icon_weapon_10600201",
       "grade": "70",
       "LimitedModelOfWeapon": "Light/Medium/Heavy",
       "RestrictionsPositionOfWeapon": "DoubleHand",
       "range": "1\uff08\u53ef\u659c\u5411\uff09",
-      "WeaponWeight": "800",
-      "WeaponBasicAttackingPower": "730",
-      "WeaponHitPoint": "1452",
+      "WeaponWeight": "850",
+      "WeaponBasicAttackingPower": "952",
+      "WeaponHitPoint": "1792",
       "WeaponUnderstanding": "4558",
       "PassiveSkill": [
         {
-          "ID": "53040",
-          "name": "Effortless Command",
-          "SpecificEffects": "When in combat with a target in a diagonal direction, Hit Rate and Crit Rate <color=#F74848>+12%</color>.",
-          "BufCarried": "530401",
+          "ID": "53115",
+          "name": "Single-Handed Might",
+          "SpecificEffects": "Wielding a Chainsaw one-handed no longer reduces Hit Rate.",
+          "BufCarried": "531151",
           "SkillIcon": "Icon_skill_passive_4133",
           "icon": "Icon_skill_passive_4133",
           "Status": 1,
-          "weight": 1193
+          "weight": 1268
         }
       ],
-      "describe": "\u591a\u5c14\u5de5\u4e1a\u91cd\u6574\u673a\u5175\u751f\u4ea7\u7ebf\u540e\u63a8\u51fa\u7684\u6539\u826f\u6b3e\u957f\u67c4\u6b66\u5668\uff0c\u4ee5\u5185\u7f6e\u7684\u9a71\u52a8\u6838\u5fc3\u4ea7\u751f\u7684\u6253\u51fb\u52a8\u80fd\u4ee3\u66ff\u6b66\u5668\u7684\u81ea\u91cd\u6253\u51fb\uff0c\u5927\u5e45\u6539\u5584\u4e86\u64cd\u4f5c\u7684\u7075\u6d3b\u6027\u4e0e\u8f7b\u4fbf\u6027\u3002"
-    },
-    {
-      "ID": "10314123",
-      "name": "\u7fa4\u5c71\u4e4b\u529b\u00b7\u6539\u2162",
-      "quality": "UR",
-      "WeaponType1": "Melee",
-      "WeaponType2": "Rod",
-      "type": "Rod",
-      "icon": "Icon_weapon_10300301",
-      "grade": "70",
-      "LimitedModelOfWeapon": "Light/Medium/Heavy",
-      "RestrictionsPositionOfWeapon": "DoubleHand",
-      "range": "1\uff08\u53ef\u659c\u5411\uff09",
-      "WeaponWeight": "800",
-      "WeaponBasicAttackingPower": "730",
-      "WeaponHitPoint": "1452",
-      "WeaponUnderstanding": "4558",
-      "PassiveSkill": [
-        {
-          "ID": "53088",
-          "name": "Fleeting Shadow",
-          "SpecificEffects": "When an attack misses, still deals <color=#F74848>40%</color> of the original DMG.",
-          "BufCarried": "530881",
-          "SkillIcon": "Icon_skill_passive_5114",
-          "icon": "Icon_skill_passive_5114",
-          "Status": 1,
-          "weight": 1241
-        }
-      ],
-      "describe": "\u591a\u5c14\u5de5\u4e1a\u91cd\u6574\u673a\u5175\u751f\u4ea7\u7ebf\u540e\u63a8\u51fa\u7684\u6539\u826f\u6b3e\u957f\u67c4\u6b66\u5668\uff0c\u4ee5\u5185\u7f6e\u7684\u9a71\u52a8\u6838\u5fc3\u4ea7\u751f\u7684\u6253\u51fb\u52a8\u80fd\u4ee3\u66ff\u6b66\u5668\u7684\u81ea\u91cd\u6253\u51fb\uff0c\u5927\u5e45\u6539\u5584\u4e86\u64cd\u4f5c\u7684\u7075\u6d3b\u6027\u4e0e\u8f7b\u4fbf\u6027\u3002"
+      "describe": "\u519b\u7528\u683c\u6597\u65a7\u952f\u8d1d\u5965\u6b66\u592b\u7684\u6539\u826f\u6b3e\uff0c\u5168\u65b0\u4f18\u5316\u540e\u7684\u6da1\u8f6e\u9a6c\u8fbe\u5728\u8010\u7528\u6027\u4e0e\u73af\u5883\u9002\u5e94\u6027\u4e0a\u5747\u6709\u663e\u8457\u63d0\u5347\uff0c\u4f7f\u5f97\u7535\u952f\u6b66\u5668\u80fd\u80dc\u4efb\u66f4\u591a\u6837\u3001\u66f4\u590d\u6742\u7684\u6218\u6597\u73af\u5883\u3002"
     },
     {
       "ID": "10815123",
@@ -3004,70 +3064,10 @@
           "weight": 1214
         }
       ],
-      "describe": "\u5907\u53d7\u8fea\u6069\u73cd\u7231\u7684\u6298\u53e0\u5f0f\u7535\u952f\u6b66\u5668\uff0c\u53ef\u5728\u5251\u578b\u4e0e\u65a7\u578b\u4e24\u79cd\u5f62\u6001\u4e2d\u5207\u6362\u3002\u53ea\u8981\u8bf4\u51fa\u8fea\u6069\u7279\u522b\u5b9a\u5236\u7684\u8bed\u97f3\u53e3\u4ee4\u300c\u6211\u8bf4\u53ef\u4ee5\u4e0a\u4e86\uff01\u300d\uff0c\u5c31\u80fd\u8fdb\u884c\u53d8\u5f62\u3002",
+      "describe": "A foldable Chainsaw cherished by Dean, capable of switching between sword and axe forms. Simply quote Dean's specially customized voice prompt \"I say it's good to go!\" to initiate transformation.",
       "pilot": "Dean",
       "version": "2.1",
       "ac": 9
-    },
-    {
-      "ID": "10814121",
-      "name": "\u8d1d\u5965\u6b66\u592b\u00b7\u6539",
-      "quality": "UR",
-      "WeaponType1": "Melee",
-      "WeaponType2": "Saw",
-      "type": "Saw",
-      "icon": "Icon_weapon_10600201",
-      "grade": "70",
-      "LimitedModelOfWeapon": "Light/Medium/Heavy",
-      "RestrictionsPositionOfWeapon": "DoubleHand",
-      "range": "1\uff08\u53ef\u659c\u5411\uff09",
-      "WeaponWeight": "850",
-      "WeaponBasicAttackingPower": "952",
-      "WeaponHitPoint": "1792",
-      "WeaponUnderstanding": "4558",
-      "PassiveSkill": [
-        {
-          "ID": "53061",
-          "name": "Crushing Strike",
-          "SpecificEffects": "When attacking, if the part hit is not at full HP, it takes <color=#F74848>+20%</color> DMG.",
-          "BufCarried": "530611/530612/530613/530614/530615",
-          "SkillIcon": "Icon_skill_passive_1157",
-          "icon": "Icon_skill_passive_1157",
-          "Status": 1,
-          "weight": 1214
-        }
-      ],
-      "describe": "\u519b\u7528\u683c\u6597\u65a7\u952f\u8d1d\u5965\u6b66\u592b\u7684\u6539\u826f\u6b3e\uff0c\u5168\u65b0\u4f18\u5316\u540e\u7684\u6da1\u8f6e\u9a6c\u8fbe\u5728\u8010\u7528\u6027\u4e0e\u73af\u5883\u9002\u5e94\u6027\u4e0a\u5747\u6709\u663e\u8457\u63d0\u5347\uff0c\u4f7f\u5f97\u7535\u952f\u6b66\u5668\u80fd\u80dc\u4efb\u66f4\u591a\u6837\u3001\u66f4\u590d\u6742\u7684\u6218\u6597\u73af\u5883\u3002"
-    },
-    {
-      "ID": "10814122",
-      "name": "\u8d1d\u5965\u6b66\u592b\u00b7\u6539\u2161",
-      "quality": "UR",
-      "WeaponType1": "Melee",
-      "WeaponType2": "Saw",
-      "type": "Saw",
-      "icon": "Icon_weapon_10600201",
-      "grade": "70",
-      "LimitedModelOfWeapon": "Light/Medium/Heavy",
-      "RestrictionsPositionOfWeapon": "DoubleHand",
-      "range": "1\uff08\u53ef\u659c\u5411\uff09",
-      "WeaponWeight": "850",
-      "WeaponBasicAttackingPower": "952",
-      "WeaponHitPoint": "1792",
-      "WeaponUnderstanding": "4558",
-      "PassiveSkill": [
-        {
-          "ID": "53115",
-          "name": "Single-Handed Might",
-          "SpecificEffects": "Wielding a Chainsaw one-handed no longer reduces Hit Rate.",
-          "BufCarried": "531151",
-          "SkillIcon": "Icon_skill_passive_4133",
-          "icon": "Icon_skill_passive_4133",
-          "Status": 1,
-          "weight": 1268
-        }
-      ],
-      "describe": "\u519b\u7528\u683c\u6597\u65a7\u952f\u8d1d\u5965\u6b66\u592b\u7684\u6539\u826f\u6b3e\uff0c\u5168\u65b0\u4f18\u5316\u540e\u7684\u6da1\u8f6e\u9a6c\u8fbe\u5728\u8010\u7528\u6027\u4e0e\u73af\u5883\u9002\u5e94\u6027\u4e0a\u5747\u6709\u663e\u8457\u63d0\u5347\uff0c\u4f7f\u5f97\u7535\u952f\u6b66\u5668\u80fd\u80dc\u4efb\u66f4\u591a\u6837\u3001\u66f4\u590d\u6742\u7684\u6218\u6597\u73af\u5883\u3002"
     },
     {
       "ID": "10415121",
@@ -3116,7 +3116,7 @@
           "weight": 1169
         }
       ],
-      "describe": "\u5bc6\u5bc6\u9ebb\u9ebb\u7684\u540d\u5b57\u523b\u6ee1\u4e86\u88c5\u7532\u7684\u5185\u4fa7\uff0c\u4e0e\u5176\u8bf4\u662f\u6b66\u5668\uff0c\u4e0d\u5982\u8bf4\u662f\u575f\u7891\u3002\u8fd9\u4e2a\u5965\u7ef4\u7279\u7684\u4ea1\u9b42\u4fbf\u662f\u7528\u8fd9\u6837\u7684\u65b9\u5f0f\u5b88\u62a4\u90a3\u5df2\u4e0d\u5b58\u5728\u7684\u4e00\u5207\u2026\u2026\u5931\u53bb\u4e86\u5f52\u5904\u7684\u4ea1\u8005\u4ec0\u4e48\u90fd\u4e0d\u662f\uff0c\u800c\u4ed6\u4f1a\u80cc\u8d1f\u7740\u4ea1\u8005\u4eec\u7ee7\u7eed\u6218\u6597\u4e0b\u53bb\u3002",
+      "describe": "The back of this shield is intricately engraved with names, a gravestone selected by the Ghost of Ovett to honor what no longer exists. Though the dead have lost their place of return, he upholds their will and continues to fight.",
       "pilot": "Yevgeny",
       "version": "1.3",
       "ac": 3
@@ -3169,67 +3169,14 @@
           "weight": 1205
         }
       ],
-      "describe": "\u6839\u636e\u8fea\u62c9\u5361\u7684\u63cf\u8ff0\uff0c\u8fd9\u9762\u7279\u5236\u7684\u5927\u76fe\u6b66\u5668\u662f\u5979\u5728\u9632\u536b\u8425\u6273\u624b\u8155\u5927\u8d5b\u4e2d\u8d62\u5f97\u7684\u6218\u5229\u54c1\u3002\u81ea\u6b64\u4e4b\u540e\uff0c\u6273\u624b\u8155\u51e0\u4e4e\u6210\u4e86\u540c\u76df\u519b\u4f11\u95f2\u65f6\u671f\u7684\u5fc5\u5907\u5a31\u4e50\u9879\u76ee\u3002",
+      "describe": "According to Diracca, this specially crafted Large Shield is the unexpected reward she won in a DLAF arm-wrestling competition at the Defense Camp. Since then, arm-wrestling has become a staple pastime during the DLAF's off-duty hours.",
       "pilot": "Diracca",
       "version": "2.0",
       "ac": 8
     },
     {
-      "ID": "10415124",
-      "name": "Glory's Ward",
-      "quality": "SSSR",
-      "WeaponType1": "Melee",
-      "WeaponType2": "Shield",
-      "type": "Shield",
-      "icon": "Icon_weapon_10400701",
-      "grade": "70",
-      "LimitedModelOfWeapon": "Heavy",
-      "RestrictionsPositionOfWeapon": "Hand",
-      "range": "1",
-      "WeaponWeight": "390",
-      "WeaponBasicAttackingPower": "385",
-      "WeaponHitPoint": "3494",
-      "ShieldbloodBase": "2427",
-      "PassiveSkill": [
-        {
-          "ID": "53083",
-          "name": "Command of the Field",
-          "SpecificEffects": "Before being actively attacked, if on allied terrain, immediately restores <color=#F74848>1</color> AP. Can trigger <color=#F74848>1</color> time per turn.",
-          "BufCarried": "530831",
-          "SkillIcon": "Icon_skill_passive_5189",
-          "icon": "Icon_skill_passive_5189",
-          "Status": 1,
-          "weight": 1236
-        },
-        {
-          "ID": "53084",
-          "name": "Battle-Hardened Commander",
-          "SpecificEffects": "Enhanced [Battle-Hardened]: <terrian ID=6008501 /> area expands to the selected tile and its surrounding <color=#F74848>2</color> tiles. Movement cost for Tiphys within <terrian ID=6008501 /> reduces by <color=#F74848>50%</color>. All allied units within <terrian ID=6008501 /> gain DMG <color=#F74848>+20%</color>, and when actively attacked, no part can take more than <color=#F74848>85%</color> of its Max HP in damage.",
-          "BufCarried": "530841/530842/530843/530845",
-          "SkillIcon": "Icon_skill_passive_5270",
-          "icon": "Icon_skill_passive_5270",
-          "Status": 1,
-          "weight": 1237
-        },
-        {
-          "ID": "53082",
-          "name": "Total Defense",
-          "SpecificEffects": "When the shield-carrying Arm takes damage, DMG Taken <color=#F74848>-10%</color> and Crit DMG Taken <color=#F74848>-20%</color>.",
-          "BufCarried": "530821",
-          "SkillIcon": "Icon_skill_passive_2111",
-          "icon": "Icon_skill_passive_2111",
-          "Status": 1,
-          "weight": 1235
-        }
-      ],
-      "describe": "\u5e2e\u63d0\u8d39\u65af\u62b5\u5fa1\u4e86\u65e0\u6570\u653b\u51fb\uff0c\u89c1\u8bc1\u4ed6\u6210\u4e3a\u540c\u76df\u82f1\u96c4\u7684\u7279\u5236\u76fe\u724c\u3002\u65e9\u5e94\u5728\u8363\u5149\u4e2d\u9000\u53bb\u7684\u5b83\u5982\u4eca\u4f9d\u7136\u6d3b\u8dc3\u5728\u6218\u573a\uff0c\u5b88\u62a4\u7740\u540c\u4f34\u2026\u2026\u6b63\u5982\u5b83\u7684\u4e3b\u4eba\u4e00\u6837\u3002",
-      "pilot": "Tiphys",
-      "version": "2.5",
-      "ac": 13
-    },
-    {
       "ID": "10415123",
-      "name": "Vow of Protection",
+      "name": "Elysium's Embrace",
       "quality": "SSSR",
       "WeaponType1": "Melee",
       "WeaponType2": "Shield",
@@ -3274,14 +3221,67 @@
           "weight": 1217
         }
       ],
-      "describe": "\u300c\u6211\u4f1a\u4fdd\u62a4\u4f60\u3002\u300d",
+      "describe": "\"I'll protect you.\"",
       "pilot": "Rei",
       "version": "2.2",
       "ac": 10
     },
     {
+      "ID": "10415124",
+      "name": "Glory Bastion",
+      "quality": "SSSR",
+      "WeaponType1": "Melee",
+      "WeaponType2": "Shield",
+      "type": "Shield",
+      "icon": "Icon_weapon_10400701",
+      "grade": "70",
+      "LimitedModelOfWeapon": "Heavy",
+      "RestrictionsPositionOfWeapon": "Hand",
+      "range": "1",
+      "WeaponWeight": "390",
+      "WeaponBasicAttackingPower": "385",
+      "WeaponHitPoint": "3494",
+      "ShieldbloodBase": "2427",
+      "PassiveSkill": [
+        {
+          "ID": "53083",
+          "name": "Position Control",
+          "SpecificEffects": "Before being actively attacked, if on allied terrain, immediately restores <color=#F74848>1</color> AP. Can trigger <color=#F74848>1</color> time per turn.",
+          "BufCarried": "530831",
+          "SkillIcon": "Icon_skill_passive_5189",
+          "icon": "Icon_skill_passive_5189",
+          "Status": 1,
+          "weight": 1236
+        },
+        {
+          "ID": "53084",
+          "name": "Veteran Commander",
+          "SpecificEffects": "Enhanced [Battle-Hardened]: <terrian ID=6008501 /> area expands to the selected tile and its surrounding <color=#F74848>2</color> tiles. Movement cost for Tiphys within <terrian ID=6008501 /> reduces by <color=#F74848>50%</color>. All allied units within <terrian ID=6008501 /> gain DMG <color=#F74848>+20%</color>, and when actively attacked, no part can take more than <color=#F74848>85%</color> of its Max HP in damage.",
+          "BufCarried": "530841/530842/530843/530845",
+          "SkillIcon": "Icon_skill_passive_5270",
+          "icon": "Icon_skill_passive_5270",
+          "Status": 1,
+          "weight": 1237
+        },
+        {
+          "ID": "53082",
+          "name": "Fortress Mantle",
+          "SpecificEffects": "When the shield-carrying Arm takes damage, DMG Taken <color=#F74848>-10%</color> and Crit DMG Taken <color=#F74848>-20%</color>.",
+          "BufCarried": "530821",
+          "SkillIcon": "Icon_skill_passive_2111",
+          "icon": "Icon_skill_passive_2111",
+          "Status": 1,
+          "weight": 1235
+        }
+      ],
+      "describe": "A specially forged shield that helped Tiphys withstand countless attacks, witnessing his rise as a hero of the DL. It should have retired in glory, yet it remains active on the battlefield, guarding his comrades... just as its master does.",
+      "pilot": "Tiphys",
+      "version": "2.5",
+      "ac": 13
+    },
+    {
       "ID": "10414121",
-      "name": "\u7fa4\u661f\u00b7\u6539",
+      "name": "Starfield - B",
       "quality": "UR",
       "WeaponType1": "Melee",
       "WeaponType2": "Shield",
@@ -3306,11 +3306,11 @@
           "weight": 1169
         }
       ],
-      "describe": "\u91c7\u7528\u4e86UKB-1\u6676\u683c\u51b6\u70bc\u6280\u672f\u800c\u8bde\u751f\u7684\u7fa4\u661f\u5927\u76fe\uff0c\u9540\u6709\u5168\u65b0\u7b94\u4f53\u6d82\u5c42\u7684\u51b2\u538b\u62a4\u677f\u5728\u63d0\u9ad8\u5f3a\u5ea6\u7684\u540c\u65f6\u589e\u52a0\u4e86\u5e72\u6270\u4eea\u7684\u4f5c\u7528\u8303\u56f4\uff0c\u7efc\u5408\u9632\u62a4\u6027\u80fd\u5927\u5e45\u63d0\u5347\u3002"
+      "describe": "The Starfield shield, utilizing UKB-1 lattice smelting technology, has a newly coated stamped plate that boosts strength and extends the interference device's range, greatly enhancing protection."
     },
     {
       "ID": "10414122",
-      "name": "\u7fa4\u661f\u00b7\u6539\u2161",
+      "name": "Starfield - B II",
       "quality": "UR",
       "WeaponType1": "Melee",
       "WeaponType2": "Shield",
@@ -3336,11 +3336,11 @@
           "weight": 1205
         }
       ],
-      "describe": "\u91c7\u7528\u4e86UKB-1\u6676\u683c\u51b6\u70bc\u6280\u672f\u800c\u8bde\u751f\u7684\u7fa4\u661f\u5927\u76fe\uff0c\u9540\u6709\u5168\u65b0\u7b94\u4f53\u6d82\u5c42\u7684\u51b2\u538b\u62a4\u677f\u5728\u63d0\u9ad8\u5f3a\u5ea6\u7684\u540c\u65f6\u589e\u52a0\u4e86\u5e72\u6270\u4eea\u7684\u4f5c\u7528\u8303\u56f4\uff0c\u7efc\u5408\u9632\u62a4\u6027\u80fd\u5927\u5e45\u63d0\u5347\u3002"
+      "describe": "The Starfield shield, utilizing UKB-1 lattice smelting technology, has a newly coated stamped plate that boosts strength and extends the interference device's range, greatly enhancing protection."
     },
     {
       "ID": "10414123",
-      "name": "\u7fa4\u661f\u00b7\u6539\u2162",
+      "name": "Starfield - B III",
       "quality": "UR",
       "WeaponType1": "Melee",
       "WeaponType2": "Shield",
@@ -3365,11 +3365,11 @@
           "weight": 1217
         }
       ],
-      "describe": "\u91c7\u7528\u4e86UKB-1\u6676\u683c\u51b6\u70bc\u6280\u672f\u800c\u8bde\u751f\u7684\u7fa4\u661f\u5927\u76fe\uff0c\u9540\u6709\u5168\u65b0\u7b94\u4f53\u6d82\u5c42\u7684\u51b2\u538b\u62a4\u677f\u5728\u63d0\u9ad8\u5f3a\u5ea6\u7684\u540c\u65f6\u589e\u52a0\u4e86\u5e72\u6270\u4eea\u7684\u4f5c\u7528\u8303\u56f4\uff0c\u7efc\u5408\u9632\u62a4\u6027\u80fd\u5927\u5e45\u63d0\u5347\u3002"
+      "describe": "The Starfield shield, utilizing UKB-1 lattice smelting technology, has a newly coated stamped plate that boosts strength and extends the interference device's range, greatly enhancing protection."
     },
     {
       "ID": "10414124",
-      "name": "\u7fa4\u661f\u00b7\u6539\u2163",
+      "name": "Starfield - B IV",
       "quality": "UR",
       "WeaponType1": "Melee",
       "WeaponType2": "Shield",
@@ -3386,7 +3386,7 @@
       "PassiveSkill": [
         {
           "ID": "53082",
-          "name": "Total Defense",
+          "name": "Fortress Mantle",
           "SpecificEffects": "When the shield-carrying Arm takes damage, DMG Taken <color=#F74848>-10%</color> and Crit DMG Taken <color=#F74848>-20%</color>.",
           "BufCarried": "530821",
           "SkillIcon": "Icon_skill_passive_2111",
@@ -3395,7 +3395,7 @@
           "weight": 1235
         }
       ],
-      "describe": "\u91c7\u7528\u4e86UKB-1\u6676\u683c\u51b6\u70bc\u6280\u672f\u800c\u8bde\u751f\u7684\u7fa4\u661f\u5927\u76fe\uff0c\u9540\u6709\u5168\u65b0\u7b94\u4f53\u6d82\u5c42\u7684\u51b2\u538b\u62a4\u677f\u5728\u63d0\u9ad8\u5f3a\u5ea6\u7684\u540c\u65f6\u589e\u52a0\u4e86\u5e72\u6270\u4eea\u7684\u4f5c\u7528\u8303\u56f4\uff0c\u7efc\u5408\u9632\u62a4\u6027\u80fd\u5927\u5e45\u63d0\u5347\u3002"
+      "describe": "The Starfield shield, utilizing UKB-1 lattice smelting technology, has a newly coated stamped plate that boosts strength and extends the interference device's range, greatly enhancing protection."
     },
     {
       "ID": "30215124",
@@ -3547,14 +3547,104 @@
           "weight": 1163
         }
       ],
-      "describe": "\u4e50\u5668\uff0c\u6b4c\u5267\uff0c\u72d9\u51fb\u67aa\uff0c\u6216\u662f\u624b\u98ce\u7434\u4e0a\u7684\u97f3\u6813\u2026\u2026\u540c\u6837\u7684\u540d\u5b57\uff0c\u540c\u6837\u7684\u81f4\u547d\u3002\u4f46\u6700\u53ef\u6015\u7684\u5374\u662f\uff0c\u5f53\u5979\u53cd\u95ee\u81ea\u5df1\uff0c\u82e5\u8fd8\u80fd\u56de\u5230\u6f14\u594f\u7ec8\u6b62\u7684\u90a3\u4e00\u5929\uff0c\u5979\u662f\u5426\u4f1a\u9009\u62e9\u5176\u4ed6\u547d\u8fd0\u2026\u2026\u5979\u9009\u62e9\u4e86\u72b9\u8c6b\u3002",
+      "describe": "Instruments, operas, rifles, and accordion sound pegs share the same name and lethality. The most haunting thought is whether she would choose a different path, if given the chance to return to the day the performance ended. She hesitates.",
       "pilot": "Natalia",
       "version": "1.3",
       "ac": 3
     },
     {
+      "ID": "30214121",
+      "name": "Red Fox - B",
+      "quality": "UR",
+      "WeaponType1": "Sniper",
+      "WeaponType2": "HeavySniper",
+      "type": "HeavySniper",
+      "icon": "Icon_weapon_30200301",
+      "grade": "70",
+      "LimitedModelOfWeapon": "Light/Medium/Heavy",
+      "RestrictionsPositionOfWeapon": "DoubleHand",
+      "range": "2-4",
+      "WeaponWeight": "1000",
+      "WeaponBasicAttackingPower": "638",
+      "WeaponHitPoint": "1545",
+      "WeaponUnderstanding": "4558",
+      "PassiveSkill": [
+        {
+          "ID": "53010",
+          "name": "Steady Aim",
+          "SpecificEffects": "Before a Normal Attack, if no movement has occurred this action, enters <buf ID=900014>[Aiming]</buf> Mode for this attack. Can trigger up to <color=#F74848>3</color> times per turn.",
+          "BufCarried": "530101/530102",
+          "SkillIcon": "Icon_skill_passive_5186",
+          "icon": "Icon_skill_passive_5186",
+          "Status": 1,
+          "weight": 1163
+        }
+      ],
+      "describe": "The Red Fox - B sniper rifle now boasts an advanced calibration chip and sampling module in its particle beam sight, using ST detectors and trajectory simulation technology to enhance accuracy and usability."
+    },
+    {
+      "ID": "30214122",
+      "name": "Red Fox - B II",
+      "quality": "UR",
+      "WeaponType1": "Sniper",
+      "WeaponType2": "HeavySniper",
+      "type": "HeavySniper",
+      "icon": "Icon_weapon_30200301",
+      "grade": "70",
+      "LimitedModelOfWeapon": "Light/Medium/Heavy",
+      "RestrictionsPositionOfWeapon": "DoubleHand",
+      "range": "2-4",
+      "WeaponWeight": "1000",
+      "WeaponBasicAttackingPower": "638",
+      "WeaponHitPoint": "1545",
+      "WeaponUnderstanding": "4558",
+      "PassiveSkill": [
+        {
+          "ID": "53049",
+          "name": "Hold Your Breath",
+          "SpecificEffects": "When in <buf ID=900014>[Aiming]</buf> Mode, DMG Dealt <color=#F74848>+15%</color>.",
+          "BufCarried": "530491",
+          "SkillIcon": "Icon_skill_passive_5103",
+          "icon": "Icon_skill_passive_5103",
+          "Status": 1,
+          "weight": 1202
+        }
+      ],
+      "describe": "The Red Fox - B sniper rifle now boasts an advanced calibration chip and sampling module in its particle beam sight, using ST detectors and trajectory simulation technology to enhance accuracy and usability."
+    },
+    {
+      "ID": "30214123",
+      "name": "Red Fox - B III",
+      "quality": "UR",
+      "WeaponType1": "Sniper",
+      "WeaponType2": "HeavySniper",
+      "type": "HeavySniper",
+      "icon": "Icon_weapon_30200301",
+      "grade": "70",
+      "LimitedModelOfWeapon": "Light/Medium/Heavy",
+      "RestrictionsPositionOfWeapon": "DoubleHand",
+      "range": "2-4",
+      "WeaponWeight": "1000",
+      "WeaponBasicAttackingPower": "638",
+      "WeaponHitPoint": "1545",
+      "WeaponUnderstanding": "4558",
+      "PassiveSkill": [
+        {
+          "ID": "53097",
+          "name": "Stay Back!",
+          "SpecificEffects": "When actively attacking, if <color=#F74848>3</color> or more tiles from the target, Hit Rate and Crit Rate <color=#F74848>+15%</color>.",
+          "BufCarried": "530971",
+          "SkillIcon": "Icon_skill_passive_4118",
+          "icon": "Icon_skill_passive_4118",
+          "Status": 1,
+          "weight": 1250
+        }
+      ],
+      "describe": "\u9876\u5c16\u72d9\u51fb\u67aa\u8d64\u72d0\u7684\u6700\u65b0\u6539\u6b3e\uff0c\u5728\u7c92\u5b50\u5c04\u7ebf\u7784\u51c6\u5668\u4e0a\u52a0\u88c5\u4e86\u66f4\u52a0\u5148\u8fdb\u7684\u6821\u51c6\u82af\u7247\u548c\u91c7\u6837\u6a21\u7ec4\u3002\u901a\u8fc7\u8c03\u7528\u673a\u5175\u4fa6\u6d4b\u5668\u548c\u8f68\u8ff9\u6a21\u62df\u6280\u672f\u8fdb\u4e00\u6b65\u63d0\u9ad8\u547d\u4e2d\u7387\u548c\u6613\u7528\u6027\u3002"
+    },
+    {
       "ID": "30215122",
-      "name": "Venus MK47",
+      "name": "Venus MK7",
       "quality": "SSSR",
       "WeaponType1": "Sniper",
       "WeaponType2": "HeavySniper",
@@ -3600,100 +3690,10 @@
           "weight": 1202
         }
       ],
-      "describe": "\u7531\u5b89\u8d6b\u7279\u516c\u53f8\u7279\u5236\u7684\u6559\u5b66\u7528\u72d9\u51fb\u6b66\u5668\u6539\u578b\uff0c\u4e0a\u9762\u94ed\u523b\u7740\u7531\u51ef\u8389\u00b7\u6ce2\u5229\u65af\u4fdd\u6301\u7684\u72d9\u51fb\u51fb\u843d\u8bb0\u5f55\u3002\u6216\u8bb8\u5bf9\u4e8e\u51ef\u8389\u6765\u8bf4\uff0c\u8fd9\u628a\u6539\u88c5\u540e\u7684\u300c\u6559\u5177\u300d\u8fdc\u6bd4\u90a3\u4e9b\u5236\u5f0f\u6b66\u5668\u66f4\u6709\u5a01\u529b\u3002",
+      "describe": "A training sniper weapon specially commissioned by An-Holt, etched with the sniper takedown record set by Kelly Polis. To Kelly, this customized \"teaching tool\" likely outperforms any mass-produced standard weapon.",
       "pilot": "Kelly",
       "version": "2.0",
       "ac": 8
-    },
-    {
-      "ID": "30214121",
-      "name": "\u8d64\u72d0\u00b7\u6539",
-      "quality": "UR",
-      "WeaponType1": "Sniper",
-      "WeaponType2": "HeavySniper",
-      "type": "HeavySniper",
-      "icon": "Icon_weapon_30200301",
-      "grade": "70",
-      "LimitedModelOfWeapon": "Light/Medium/Heavy",
-      "RestrictionsPositionOfWeapon": "DoubleHand",
-      "range": "2-4",
-      "WeaponWeight": "1000",
-      "WeaponBasicAttackingPower": "638",
-      "WeaponHitPoint": "1545",
-      "WeaponUnderstanding": "4558",
-      "PassiveSkill": [
-        {
-          "ID": "53010",
-          "name": "Steady Aim",
-          "SpecificEffects": "Before a Normal Attack, if no movement has occurred this action, enters <buf ID=900014>[Aiming]</buf> Mode for this attack. Can trigger up to <color=#F74848>3</color> times per turn.",
-          "BufCarried": "530101/530102",
-          "SkillIcon": "Icon_skill_passive_5186",
-          "icon": "Icon_skill_passive_5186",
-          "Status": 1,
-          "weight": 1163
-        }
-      ],
-      "describe": "\u9876\u5c16\u72d9\u51fb\u67aa\u8d64\u72d0\u7684\u6700\u65b0\u6539\u6b3e\uff0c\u5728\u7c92\u5b50\u5c04\u7ebf\u7784\u51c6\u5668\u4e0a\u52a0\u88c5\u4e86\u66f4\u52a0\u5148\u8fdb\u7684\u6821\u51c6\u82af\u7247\u548c\u91c7\u6837\u6a21\u7ec4\u3002\u901a\u8fc7\u8c03\u7528\u673a\u5175\u4fa6\u6d4b\u5668\u548c\u8f68\u8ff9\u6a21\u62df\u6280\u672f\u8fdb\u4e00\u6b65\u63d0\u9ad8\u547d\u4e2d\u7387\u548c\u6613\u7528\u6027\u3002"
-    },
-    {
-      "ID": "30214122",
-      "name": "\u8d64\u72d0\u00b7\u6539\u2161",
-      "quality": "UR",
-      "WeaponType1": "Sniper",
-      "WeaponType2": "HeavySniper",
-      "type": "HeavySniper",
-      "icon": "Icon_weapon_30200301",
-      "grade": "70",
-      "LimitedModelOfWeapon": "Light/Medium/Heavy",
-      "RestrictionsPositionOfWeapon": "DoubleHand",
-      "range": "2-4",
-      "WeaponWeight": "1000",
-      "WeaponBasicAttackingPower": "638",
-      "WeaponHitPoint": "1545",
-      "WeaponUnderstanding": "4558",
-      "PassiveSkill": [
-        {
-          "ID": "53049",
-          "name": "Hold Your Breath",
-          "SpecificEffects": "When in <buf ID=900014>[Aiming]</buf> Mode, DMG Dealt <color=#F74848>+15%</color>.",
-          "BufCarried": "530491",
-          "SkillIcon": "Icon_skill_passive_5103",
-          "icon": "Icon_skill_passive_5103",
-          "Status": 1,
-          "weight": 1202
-        }
-      ],
-      "describe": "\u9876\u5c16\u72d9\u51fb\u67aa\u8d64\u72d0\u7684\u6700\u65b0\u6539\u6b3e\uff0c\u5728\u7c92\u5b50\u5c04\u7ebf\u7784\u51c6\u5668\u4e0a\u52a0\u88c5\u4e86\u66f4\u52a0\u5148\u8fdb\u7684\u6821\u51c6\u82af\u7247\u548c\u91c7\u6837\u6a21\u7ec4\u3002\u901a\u8fc7\u8c03\u7528\u673a\u5175\u4fa6\u6d4b\u5668\u548c\u8f68\u8ff9\u6a21\u62df\u6280\u672f\u8fdb\u4e00\u6b65\u63d0\u9ad8\u547d\u4e2d\u7387\u548c\u6613\u7528\u6027\u3002"
-    },
-    {
-      "ID": "30214123",
-      "name": "\u8d64\u72d0\u00b7\u6539\u2162",
-      "quality": "UR",
-      "WeaponType1": "Sniper",
-      "WeaponType2": "HeavySniper",
-      "type": "HeavySniper",
-      "icon": "Icon_weapon_30200301",
-      "grade": "70",
-      "LimitedModelOfWeapon": "Light/Medium/Heavy",
-      "RestrictionsPositionOfWeapon": "DoubleHand",
-      "range": "2-4",
-      "WeaponWeight": "1000",
-      "WeaponBasicAttackingPower": "638",
-      "WeaponHitPoint": "1545",
-      "WeaponUnderstanding": "4558",
-      "PassiveSkill": [
-        {
-          "ID": "53097",
-          "name": "Stay Back!",
-          "SpecificEffects": "When actively attacking, if <color=#F74848>3</color> or more tiles from the target, Hit Rate and Crit Rate <color=#F74848>+15%</color>.",
-          "BufCarried": "530971",
-          "SkillIcon": "Icon_skill_passive_4118",
-          "icon": "Icon_skill_passive_4118",
-          "Status": 1,
-          "weight": 1250
-        }
-      ],
-      "describe": "\u9876\u5c16\u72d9\u51fb\u67aa\u8d64\u72d0\u7684\u6700\u65b0\u6539\u6b3e\uff0c\u5728\u7c92\u5b50\u5c04\u7ebf\u7784\u51c6\u5668\u4e0a\u52a0\u88c5\u4e86\u66f4\u52a0\u5148\u8fdb\u7684\u6821\u51c6\u82af\u7247\u548c\u91c7\u6837\u6a21\u7ec4\u3002\u901a\u8fc7\u8c03\u7528\u673a\u5175\u4fa6\u6d4b\u5668\u548c\u8f68\u8ff9\u6a21\u62df\u6280\u672f\u8fdb\u4e00\u6b65\u63d0\u9ad8\u547d\u4e2d\u7387\u548c\u6613\u7528\u6027\u3002"
     },
     {
       "ID": "30115122",
@@ -3749,6 +3749,66 @@
       "ac": 17
     },
     {
+      "ID": "30114121",
+      "name": "Maxx - B",
+      "quality": "UR",
+      "WeaponType1": "Sniper",
+      "WeaponType2": "LightSniper",
+      "type": "LightSniper",
+      "icon": "Icon_weapon_30100401",
+      "grade": "70",
+      "LimitedModelOfWeapon": "Light/Medium/Heavy",
+      "RestrictionsPositionOfWeapon": "Hand",
+      "range": "2-4",
+      "WeaponWeight": "600",
+      "WeaponBasicAttackingPower": "537",
+      "WeaponHitPoint": "3028",
+      "WeaponUnderstanding": "4558",
+      "PassiveSkill": [
+        {
+          "ID": "53025",
+          "name": "Tranquility",
+          "SpecificEffects": "When initiating combat, if the target cannot retaliate, gains Hit Rate <color=#F74848>+10%</color> and Crit Rate <color=#F74848>+10%</color> for this attack.",
+          "BufCarried": "530251",
+          "SkillIcon": "Icon_skill_passive_4128",
+          "icon": "Icon_skill_passive_4128",
+          "Status": 1,
+          "weight": 1178
+        }
+      ],
+      "describe": "Equipped with An-Holt's latest optical sight and sampling prediction system, it improves maneuverability and durability over the original Maxx."
+    },
+    {
+      "ID": "30114122",
+      "name": "Maxx - B II",
+      "quality": "UR",
+      "WeaponType1": "Sniper",
+      "WeaponType2": "LightSniper",
+      "type": "LightSniper",
+      "icon": "Icon_weapon_30100401",
+      "grade": "70",
+      "LimitedModelOfWeapon": "Light/Medium/Heavy",
+      "RestrictionsPositionOfWeapon": "Hand",
+      "range": "2-4",
+      "WeaponWeight": "600",
+      "WeaponBasicAttackingPower": "537",
+      "WeaponHitPoint": "3028",
+      "WeaponUnderstanding": "4558",
+      "PassiveSkill": [
+        {
+          "ID": "53106",
+          "name": "Draining Metabolism",
+          "SpecificEffects": "When actively attacking, for every <color=#F74848>1</color> debuff the target carries, DMG Taken by the target <color=#F74848>+5%</color>, up to <color=#F74848>25%</color>.",
+          "BufCarried": "531061",
+          "SkillIcon": "Icon_skill_passive_5175",
+          "icon": "Icon_skill_passive_5175",
+          "Status": 1,
+          "weight": 1259
+        }
+      ],
+      "describe": "\u914d\u5907\u4e86\u5b89\u8d6b\u7279\u516c\u53f8\u6700\u65b0\u7814\u53d1\u7684\u5149\u7784\u5177\u4e0e\u91c7\u6837\u9884\u6d4b\u7cfb\u7edf\uff0c\u5e76\u5728\u65e7\u5f0f\u9ea6\u514b\u65af\u7684\u57fa\u7840\u4e0a\u8fdb\u4e00\u6b65\u63d0\u5347\u4e86\u64cd\u63a7\u6027\u548c\u8010\u7528\u6027\u3002"
+    },
+    {
       "ID": "30115121",
       "name": "Veiled Scent",
       "quality": "SSSR",
@@ -3796,70 +3856,10 @@
           "weight": 1178
         }
       ],
-      "describe": "\u300c\u6211\u77e5\u9053\u4f60\u4e0d\u559c\u6b22\u82b1\u554a\u8863\u670d\u554a\u4ec0\u4e48\u7684\uff0c\u6240\u4ee5\u5c31\u7ed9\u4f60\u5b9a\u4e86\u8fd9\u4e2a\u3002\u56e0\u4e3a\u4f60\u4ece\u672a\u8fc7\u8fc7\u751f\u65e5\uff0c\u6216\u8bb8\u8fde\u65e5\u671f\u90fd\u4e0d\u8bb0\u5f97\u4e86\u3002\u4f46\u6ca1\u5173\u7cfb\uff0c\u4ece\u73b0\u5728\u5f00\u59cb\uff0c\u6bcf\u5e74\u7684\u4eca\u5929\u5c31\u662f\u6211\u4eec\u5171\u540c\u7684\u751f\u65e5\u3002\u751f\u65e5\u5feb\u4e50\uff0c\u59d0\u59d0\uff01\u300d",
+      "describe": "\"I know flowers and clothes aren't your style, so I got you something different. Since you've never celebrated a birthday before, let's make today our shared birthday every year. Happy birthday, sis!\"",
       "pilot": "Sylvie",
       "version": "1.4",
       "ac": 4
-    },
-    {
-      "ID": "30114121",
-      "name": "\u9ea6\u514b\u65af\u00b7\u6539",
-      "quality": "UR",
-      "WeaponType1": "Sniper",
-      "WeaponType2": "LightSniper",
-      "type": "LightSniper",
-      "icon": "Icon_weapon_30100401",
-      "grade": "70",
-      "LimitedModelOfWeapon": "Light/Medium/Heavy",
-      "RestrictionsPositionOfWeapon": "Hand",
-      "range": "2-4",
-      "WeaponWeight": "600",
-      "WeaponBasicAttackingPower": "537",
-      "WeaponHitPoint": "3028",
-      "WeaponUnderstanding": "4558",
-      "PassiveSkill": [
-        {
-          "ID": "53025",
-          "name": "Tranquility",
-          "SpecificEffects": "When initiating combat, if the target cannot retaliate, gains Hit Rate <color=#F74848>+10%</color> and Crit Rate <color=#F74848>+10%</color> for this attack.",
-          "BufCarried": "530251",
-          "SkillIcon": "Icon_skill_passive_4128",
-          "icon": "Icon_skill_passive_4128",
-          "Status": 1,
-          "weight": 1178
-        }
-      ],
-      "describe": "\u914d\u5907\u4e86\u5b89\u8d6b\u7279\u516c\u53f8\u6700\u65b0\u7814\u53d1\u7684\u5149\u7784\u5177\u4e0e\u91c7\u6837\u9884\u6d4b\u7cfb\u7edf\uff0c\u5e76\u5728\u65e7\u5f0f\u9ea6\u514b\u65af\u7684\u57fa\u7840\u4e0a\u8fdb\u4e00\u6b65\u63d0\u5347\u4e86\u64cd\u63a7\u6027\u548c\u8010\u7528\u6027\u3002"
-    },
-    {
-      "ID": "30114122",
-      "name": "\u9ea6\u514b\u65af\u00b7\u6539\u2161",
-      "quality": "UR",
-      "WeaponType1": "Sniper",
-      "WeaponType2": "LightSniper",
-      "type": "LightSniper",
-      "icon": "Icon_weapon_30100401",
-      "grade": "70",
-      "LimitedModelOfWeapon": "Light/Medium/Heavy",
-      "RestrictionsPositionOfWeapon": "Hand",
-      "range": "2-4",
-      "WeaponWeight": "600",
-      "WeaponBasicAttackingPower": "537",
-      "WeaponHitPoint": "3028",
-      "WeaponUnderstanding": "4558",
-      "PassiveSkill": [
-        {
-          "ID": "53106",
-          "name": "Draining Metabolism",
-          "SpecificEffects": "When actively attacking, for every <color=#F74848>1</color> debuff the target carries, DMG Taken by the target <color=#F74848>+5%</color>, up to <color=#F74848>25%</color>.",
-          "BufCarried": "531061",
-          "SkillIcon": "Icon_skill_passive_5175",
-          "icon": "Icon_skill_passive_5175",
-          "Status": 1,
-          "weight": 1259
-        }
-      ],
-      "describe": "\u914d\u5907\u4e86\u5b89\u8d6b\u7279\u516c\u53f8\u6700\u65b0\u7814\u53d1\u7684\u5149\u7784\u5177\u4e0e\u91c7\u6837\u9884\u6d4b\u7cfb\u7edf\uff0c\u5e76\u5728\u65e7\u5f0f\u9ea6\u514b\u65af\u7684\u57fa\u7840\u4e0a\u8fdb\u4e00\u6b65\u63d0\u5347\u4e86\u64cd\u63a7\u6027\u548c\u8010\u7528\u6027\u3002"
     }
   ]
 }

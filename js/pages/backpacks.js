@@ -28,7 +28,7 @@ function backpackSlug(b) {
 var BACKPACK_TYPE_LABEL = {
   Heal:            'Repair',
   PowerAdd:        'Power',
-  MovePointAdd:    'Maneuver',
+  MovePointAdd:    'Move',
   Interference:    'Signal',
   Flow:            'Jet',
   EMP:             'Jammer',

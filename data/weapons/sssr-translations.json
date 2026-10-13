@@ -17,7 +17,8 @@
     },
     "pilot": "Rosa",
     "version": "1.2",
-    "ac": 2
+    "ac": 2,
+    "describe": "A special edition Nightwither, created from Rosa Diaz's data, featuring brainwave-controlled Arashium for activation. Surprisingly, this weapon has never been used by Valkyrie, despite being part of her arsenal."
   },
   "10515121": {
     "name": "Sandwich Cookie",
@@ -37,7 +38,8 @@
     },
     "pilot": "Seven",
     "version": "1.2",
-    "ac": 2
+    "ac": 2,
+    "describe": "Designed by the Lollipop Machine Shop, this enhanced multi-functional shield includes reinforced plates, repair parts, amplifier batteries, a mini-minesweeper, and a Pochy remote controller. Pre-orders are limited to select VIP customers, with the store manager's personal version not for sale."
   },
   "10315121": {
     "name": "False Obsession",
@@ -57,7 +59,8 @@
     },
     "pilot": "Catherine",
     "version": "1.2",
-    "ac": 2
+    "ac": 2,
+    "describe": "\"I yearn to cry, laugh, roar, and run... I miss my mother's embrace and those carefree days. Whether in life or death, haunted by memories or seeking a fresh start, it's a pity my tears won't come, and there's no way back to the past...\""
   },
   "10215121": {
     "name": "Hunter's Sting",
@@ -77,7 +80,8 @@
     },
     "pilot": "Camilla",
     "version": "1.3",
-    "ac": 3
+    "ac": 3,
+    "describe": "\"Camilla, this is for you... We'll be going back to that island soon. There, you'll reclaim not just all I've told you about, but everything you've lost.\""
   },
   "30215121": {
     "name": "Magic Flute",
@@ -97,7 +101,8 @@
     },
     "pilot": "Natalia",
     "version": "1.3",
-    "ac": 3
+    "ac": 3,
+    "describe": "Instruments, operas, rifles, and accordion sound pegs share the same name and lethality. The most haunting thought is whether she would choose a different path, if given the chance to return to the day the performance ended. She hesitates."
   },
   "10415121": {
     "name": "Cold Stele",
@@ -117,7 +122,8 @@
     },
     "pilot": "Yevgeny",
     "version": "1.3",
-    "ac": 3
+    "ac": 3,
+    "describe": "The back of this shield is intricately engraved with names, a gravestone selected by the Ghost of Ovett to honor what no longer exists. Though the dead have lost their place of return, he upholds their will and continues to fight."
   },
   "20215121": {
     "name": "Bahamut",
@@ -137,7 +143,8 @@
     },
     "pilot": "William",
     "version": "1.4",
-    "ac": 4
+    "ac": 4,
+    "describe": "\"You once said that a soldier's purpose is to obey orders, yet your mission defies that belief. Lieutenant Colonel, do you still have even a hint of compassion for humanity?\""
   },
   "30115121": {
     "name": "Veiled Scent",
@@ -157,7 +164,8 @@
     },
     "pilot": "Sylvie",
     "version": "1.4",
-    "ac": 4
+    "ac": 4,
+    "describe": "\"I know flowers and clothes aren't your style, so I got you something different. Since you've never celebrated a birthday before, let's make today our shared birthday every year. Happy birthday, sis!\""
   },
   "40115121": {
     "name": "Cooool!",
@@ -177,7 +185,8 @@
     },
     "pilot": "Naomi",
     "version": "1.4",
-    "ac": 4
+    "ac": 4,
+    "describe": "The GSA's advanced ST-mounted missile for special agents was set to be named \"Indra\" due to its superior performance. Unfortunately, the agent forgot its name the day after extraction."
   },
   "20315121": {
     "name": "Cinder",
@@ -197,7 +206,8 @@
     },
     "pilot": "Marcus",
     "version": "1.5",
-    "ac": 5
+    "ac": 5,
+    "describe": "From its inception, an ideal belongs to no one alone. So, even if the initiator has already given up and betrayed that founding notion, an ideal can find its own successor to carry it forward... Now, it is time for him to carry the torch."
   },
   "40215121": {
     "name": "RA-09",
@@ -217,7 +227,8 @@
     },
     "pilot": "Eileen",
     "version": "1.5",
-    "ac": 5
+    "ac": 5,
+    "describe": "\"Highest corporate authorization complete. Inspector Eileen, you may proceed to Milkhama Island to search for the rumored test subject, but I still advise you to wait for the board's formal vote to obtain the authority to deploy the Mobile Guard... Alright, final confirmation—you intend to go alone, into the depths of hell, correct?\""
   },
   "50115121": {
     "name": "Lucent",
@@ -228,7 +239,7 @@
       },
       "53033": {
         "name": "Renewal",
-        "SpecificEffects": "Enhanced [Dawnstar Tech]: When enemy units end their action, can use a Rail Gun to trigger <buf ID=900013>[Vigilant Shot]</buf>, dealing <color=#F74848>0.35</color>x DMG to all targets within attack range. When using Rail Gun for consecutive attacks, DMG <color=#F74848>+10%</color>. Stacks up to <color=#F74848>3</color> times. Resets after taking action."
+        "SpecificEffects": "Enhanced [Dawnstar Tech]: When enemy units end their action, can use a Rail Gun to trigger <buf ID=900013>[Vigilant Shot]</buf>, dealing <color=#F74848>0.35</color>x DMG to all targets within attack range. Unlocking [Forbidden Zone 2] increases the same number of times. When using Rail Gun for consecutive attacks, DMG <color=#F74848>+10%</color>. Stacks up to <color=#F74848>3</color> times. Resets after taking action."
       },
       "53031": {
         "name": "Ammo Recycling",
@@ -237,7 +248,8 @@
     },
     "pilot": "Shawnee",
     "version": "1.5",
-    "ac": 5
+    "ac": 5,
+    "describe": "\"Shawnee, this security personnel position is nothing but a ruse they fabricated to rope you in! If this continues, you'll only ever be dispatched by the council without any chance to... You say it's to protect civilians at the executive level? Haha, only I'd be dumb enough to believe something like that...\""
   },
   "50116121": {
     "name": "Adjudicator",
@@ -248,7 +260,7 @@
       },
       "53033": {
         "name": "Renewal",
-        "SpecificEffects": "Enhanced [Dawnstar Tech]: When enemy units end their action, can use a Rail Gun to trigger <buf ID=900013>[Vigilant Shot]</buf>, dealing <color=#F74848>0.35</color>x DMG to all targets within attack range. When using Rail Gun for consecutive attacks, DMG <color=#F74848>+10%</color>. Stacks up to <color=#F74848>3</color> times. Resets after taking action."
+        "SpecificEffects": "Enhanced [Dawnstar Tech]: When enemy units end their action, can use a Rail Gun to trigger <buf ID=900013>[Vigilant Shot]</buf>, dealing <color=#F74848>0.35</color>x DMG to all targets within attack range. Unlocking [Forbidden Zone 2] increases the same number of times. When using Rail Gun for consecutive attacks, DMG <color=#F74848>+10%</color>. Stacks up to <color=#F74848>3</color> times. Resets after taking action."
       },
       "53031": {
         "name": "Ammo Recycling",
@@ -261,7 +273,8 @@
     },
     "pilot": "Shawnee",
     "version": "1.7",
-    "ac": 7
+    "ac": 7,
+    "describe": "A new masterpiece that combines a jammer with an onboard rail gun, overcoming the challenge of integrating a backpack with a rail gun base for the very first time. This makes the Adjudicator a unique weapon that combines interference with long-range tactical strikes."
   },
   "10315122": {
     "name": "Sivri",
@@ -281,7 +294,8 @@
     },
     "pilot": "Gumusiay",
     "version": "1.6",
-    "ac": 6
+    "ac": 6,
+    "describe": "Sometimes she dreams of that night, watching the moon with her adopted children... For this reason, she must firmly grasp the weapon in her hand and continue to fight fearlessly for countless more moonlit nights to come."
   },
   "20415121": {
     "name": "Kagutsuchi",
@@ -301,7 +315,8 @@
     },
     "pilot": "Erisa",
     "version": "1.6",
-    "ac": 6
+    "ac": 6,
+    "describe": "Once a common top-end flamethrower, now reworked by Erisa into something new. After connecting the power unit, it leaves a blazing trail of flames behind her. For this independent researcher, who is constantly pursued by the major forces, it boosts her escape probability by a few percentage points on top of the base 100%."
   },
   "10215122": {
     "name": "Storm Stiller",
@@ -321,7 +336,8 @@
     },
     "pilot": "Hong",
     "version": "1.7",
-    "ac": 7
+    "ac": 7,
+    "describe": "\"Looking back upon the desolate path behind me... Homeward I go, untouched by rain or shine.\""
   },
   "10515122": {
     "name": "Power of the Mahalim",
@@ -341,7 +357,8 @@
     },
     "pilot": "Lorna",
     "version": "1.7",
-    "ac": 7
+    "ac": 7,
+    "describe": "The first few \"Mahalim\" in the refugee camp left behind a legacy—a cobbled-together ST made from all kinds of parts, accompanied by a set of spares for convenient repairs. Lorna hopes to commemorate all of them in this way and plans to use it to save more \"Mahalim.\""
   },
   "10415122": {
     "name": "Dawnstar Rampart",
@@ -361,10 +378,11 @@
     },
     "pilot": "Diracca",
     "version": "2.0",
-    "ac": 8
+    "ac": 8,
+    "describe": "According to Diracca, this specially crafted Large Shield is the unexpected reward she won in a DLAF arm-wrestling competition at the Defense Camp. Since then, arm-wrestling has become a staple pastime during the DLAF's off-duty hours."
   },
   "30215122": {
-    "name": "Venus MK47",
+    "name": "Venus MK7",
     "passiveSkills": {
       "53050": {
         "name": "Heatwave",
@@ -381,7 +399,8 @@
     },
     "pilot": "Kelly",
     "version": "2.0",
-    "ac": 8
+    "ac": 8,
+    "describe": "A training sniper weapon specially commissioned by An-Holt, etched with the sniper takedown record set by Kelly Polis. To Kelly, this customized \"teaching tool\" likely outperforms any mass-produced standard weapon."
   },
   "50215121": {
     "name": "Twilight of the Gods",
@@ -401,7 +420,8 @@
     },
     "pilot": "Rosa: Judgment",
     "version": "2.0",
-    "ac": 8
+    "ac": 8,
+    "describe": "She sees iron rain fall at her command, blossoms cast into flames. She hears the familiar voices—sad, reckless—calling her name, over and over... until dusk comes. The long dream is over. She will not sleep again. She will accept it all, carry it all, and deliver to those high-seated gods... their rightful Judgment."
   },
   "10815121": {
     "name": "Z15 Kinetic Axe",
@@ -421,7 +441,8 @@
     },
     "pilot": "Dean",
     "ac": 9,
-    "version": "2.1"
+    "version": "2.1",
+    "describe": "A foldable Chainsaw cherished by Dean, capable of switching between sword and axe forms. Simply quote Dean's specially customized voice prompt \"I say it's good to go!\" to initiate transformation."
   },
   "20315122": {
     "name": "Tropic Calamity",
@@ -441,7 +462,8 @@
     },
     "pilot": "Frida",
     "ac": 9,
-    "version": "2.1"
+    "version": "2.1",
+    "describe": "The weapon Frida used when she was the \"Queen of the Northwest Jungle.\" But strangely, ever since she gave up working alone to form a mercenary group, her territory has been shrinking day by day."
   },
   "50115123": {
     "name": "Codex of Sin",
@@ -464,7 +486,7 @@
     "version": "3.2"
   },
   "10415123": {
-    "name": "Vow of Protection",
+    "name": "Elysium's Embrace",
     "passiveSkills": {
       "53065": {
         "name": "Nano Regenerator",
@@ -481,7 +503,8 @@
     },
     "pilot": "Rei",
     "ac": 10,
-    "version": "2.2"
+    "version": "2.2",
+    "describe": "\"I'll protect you.\""
   },
   "20115122": {
     "name": "Evenstar Successor",
@@ -501,7 +524,8 @@
     },
     "pilot": "Cassha",
     "ac": 11,
-    "version": "2.3"
+    "version": "2.3",
+    "describe": "A specially modified machine gun based on the Nightwither and tailored entirely to Cassha's combat style. A gift from a fallen comrade and a symbol of Vesper's mission—the designer has long since fallen like a shooting star, but the light of Vesper will never fade."
   },
   "10915121": {
     "name": "Δ-09",
@@ -521,33 +545,35 @@
     },
     "pilot": "Ophelia",
     "ac": 11,
-    "version": "2.3"
+    "version": "2.3",
+    "describe": "A prototype power blade crafted by the UNCS Ninth Research Institute. Σ-04 Ophelia took it as a trophy after defeating the runaway experiment Δ-09, and she's used it ever since... People say they were once friends, but Ophelia has never said a word about it."
   },
   "10515123": {
-    "name": "Parting Song Prism",
+    "name": "Elegiac Prism",
     "passiveSkills": {
       "53080": {
         "name": "Practice Makes Perfect",
         "SpecificEffects": "After actively repairing <color=#F74848>3</color> cumulative times, gains <color=#F74848>1</color> AP and <buf ID=500923>[Renovate II]</buf>, lasting <color=#F74848>1</color> turn."
       },
       "53081": {
-        "name": "Goldfinch's Cry",
+        "name": "Canary's Song",
         "SpecificEffects": "Enhanced [Sentinel Ward]: <skill mainSkill=500406>[Repair Synergy]</skill> and <skill mainSkill=500408>[Full-Line Maintenance]</skill> can additionally dispel <color=#F74848>1</color> debuff from the repair target. Every time <buf ID=900038>[Regular Repair]</buf> triggers, dispels <color=#F74848>1</color> debuff."
       },
       "53079": {
-        "name": "In Kind",
+        "name": "Full Recoil",
         "SpecificEffects": "When the shield-carrying Arm is attacked, inflicts <buf ID=7101003>[Hit Rate Down II]</buf> and <buf ID=7101303>[Crit Rate Down II]</buf> on the enemy after combat, lasting <color=#F74848>1</color> turn."
       }
     },
     "pilot": "Melissa",
     "ac": 12,
-    "version": "2.4"
+    "version": "2.4",
+    "describe": "\"Melissa, only in the end did I realize that the one who could open this cage was you alone... It couldn't have ended any better than this.\""
   },
   "20215122": {
     "name": "Gaius",
     "passiveSkills": {
       "53077": {
-        "name": "Resonant Mechanism",
+        "name": "Resonance Unit",
         "SpecificEffects": "When actively attacking with a Heavy Machine Gun, if a part is broken, gains <color=#F74848>1</color> random buff after combat, lasting <color=#F74848>2</color> turns. Can trigger up to <color=#F74848>3</color> times per turn."
       },
       "53078": {
@@ -555,53 +581,56 @@
         "SpecificEffects": "Enhanced [EVA-01 Pilot]: Heavy Machine Gun range <color=#F74848>+1</color>, <buf ID=1014820>[Sync Ratio]</buf> correction effect <color=#F74848>+25%</color>. Every time <buf ID=900004>[Re-ATK]</buf> is triggered, <buf ID=1014820>[Sync Ratio]</buf> <color=#F74848>+3%</color>. After actively attacking, gains <buf ID=530786>[Sync Miracle]</buf>. Effective up to <color=#F74848>1</color> time per turn."
       },
       "53076": {
-        "name": "Superior Firepower",
+        "name": "Firepower Advantage",
         "SpecificEffects": "When actively attacking, DMG <color=#F74848>+15%</color>. Starting from <color=#F74848>1</color> tile, for every additional <color=#F74848>1</color> tile away from the target, DMG <color=#F74848>+5%</color>, up to <color=#F74848>25%</color>."
       }
     },
     "pilot": "Shinji",
     "ac": 12,
-    "version": "2.4"
+    "version": "2.4",
+    "describe": "A specially crafted weapon that suddenly appeared in Ludwig's old laboratory. The developer and development time are completely unknown, and the technology is difficult to trace. It can only be determined from the remaining test data that it was created for a certain young man."
   },
   "10415124": {
-    "name": "Glory's Ward",
+    "name": "Glory Bastion",
     "passiveSkills": {
       "53083": {
-        "name": "Command of the Field",
+        "name": "Position Control",
         "SpecificEffects": "Before being actively attacked, if on allied terrain, immediately restores <color=#F74848>1</color> AP. Can trigger <color=#F74848>1</color> time per turn."
       },
       "53084": {
-        "name": "Battle-Hardened Commander",
+        "name": "Veteran Commander",
         "SpecificEffects": "Enhanced [Battle-Hardened]: <terrian ID=6008501 /> area expands to the selected tile and its surrounding <color=#F74848>2</color> tiles. Movement cost for Tiphys within <terrian ID=6008501 /> reduces by <color=#F74848>50%</color>. All allied units within <terrian ID=6008501 /> gain DMG <color=#F74848>+20%</color>, and when actively attacked, no part can take more than <color=#F74848>85%</color> of its Max HP in damage."
       },
       "53082": {
-        "name": "Total Defense",
+        "name": "Fortress Mantle",
         "SpecificEffects": "When the shield-carrying Arm takes damage, DMG Taken <color=#F74848>-10%</color> and Crit DMG Taken <color=#F74848>-20%</color>."
       }
     },
     "pilot": "Tiphys",
     "ac": 13,
-    "version": "2.5"
+    "version": "2.5",
+    "describe": "A specially forged shield that helped Tiphys withstand countless attacks, witnessing his rise as a hero of the DL. It should have retired in glory, yet it remains active on the battlefield, guarding his comrades... just as its master does."
   },
   "40115122": {
-    "name": "Backfire Meteor",
+    "name": "Converse Meteor",
     "passiveSkills": {
       "53086": {
-        "name": "Extended Range Effect",
+        "name": "Overdistance Effect",
         "SpecificEffects": "When attacking with a Missile Launcher, if distance from target is <color=#F74848>4</color> or more tiles, DMG <color=#F74848>+30%</color>."
       },
       "53087": {
-        "name": "Restless Spirit",
+        "name": "Agitated Resolve",
         "SpecificEffects": "Enhanced [Fiery Will]: Upon deployment, gains <color=#F74848>5</color> stacks of <buf ID=530872>[Burning Intent]</buf>. After the talent triggers <buf ID=900002>[Link Attack]</buf>, or after actively attacking, for every <color=#F74848>1</color> Ammo consumed, gains <color=#F74848>1</color> stack of <buf ID=530872>[Burning Intent]</buf>, up to <color=#F74848>15</color> stacks. While carrying <color=#F74848>10</color> or more stacks, AP Regen <color=#F74848>+1</color>. <buf ID=4008509>[Lock]</buf> increases DMG multiplier of Arthur's active attacks and all <buf ID=900002>[Link Attack]</buf> against the target by <color=#F74848>+0.1</color>."
       },
       "53085": {
-        "name": "Reserve Magazine",
+        "name": "Reserve Pod",
         "SpecificEffects": "After actively attacking with a Missile Launcher, randomly reloads Ammo to carried Missile Launchers equal to the amount spent this action. Can trigger again after an interval of <color=#F74848>1</color> turn."
       }
     },
     "pilot": "Arthur",
     "ac": 13,
-    "version": "2.5"
+    "version": "2.5",
+    "describe": "After countless failed attempts, this redesigned missile launcher was finally completed, with safety mechanisms removed and an additional warhead bay installed. Its creator believes that as long as its missiles streak through the air with burning intensity, the light of Vesper will never fade."
   },
   "20415122": {
     "name": "Mirage Haze",
@@ -781,7 +810,8 @@
     },
     "pilot": "Fia",
     "ac": 10,
-    "version": "2.2"
+    "version": "2.2",
+    "describe": "\"...I had a bad feeling the moment you said we were picking something up from the dock warehouse—but I never imagined your idea of a 'little snack' would be a rail gun! I-I mean, I was surprised, but maybe next time you give someone a gift, you should check what they actually want first... And also—don't just paint something like 'Little Fia' on the shipping container for everyone to see!\""
   },
   "50116122": {
     "name": "Sugarcoated Destroyer",
@@ -805,7 +835,8 @@
     },
     "pilot": "Fia",
     "version": "2.5",
-    "ac": 13
+    "ac": 13,
+    "describe": "A new test armament that perfectly integrates a universal amplifier with an onboard Rail Gun, offering a new solution to the conflict over space and power between pack and turret. Its exceptional long-range firepower may well redefine future battlefield tactics."
   },
   "10815122": {
     "name": "Shattered Fang",
