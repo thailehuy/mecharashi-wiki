@@ -20,7 +20,7 @@ Pages.bosses = {
     // "Dias (Centurion parts)": link the ST when the wiki has a page for it.
     function mechHtml(mech) {
       var m    = /^(.*?)(?: \((.*)\))?$/.exec(mech);
-      var name = mechNames[m[1]] ? '<a href="#sts/' + encodeURIComponent(m[1]) + '">' + esc(m[1]) + '</a>' : esc(m[1]);
+      var name = mechNames[m[1]] ? '<a href="' + App.href('sts', m[1]) + '">' + esc(m[1]) + '</a>' : esc(m[1]);
       return name + (m[2] ? ' <span class="boss-mech-parts">' + esc(m[2]) + '</span>' : '');
     }
 
@@ -39,7 +39,7 @@ Pages.bosses = {
       var b     = bosses[stage.boss] || { name: stage.boss };
       var pilot = b.pilot_id && pilotById[b.pilot_id];
       var name  = pilot
-        ? '<a href="#pilots/' + encodeURIComponent(pilot.PilotName) + '">' + esc(b.name) + '</a>'
+        ? '<a href="' + App.href('pilots', pilot.PilotName) + '">' + esc(b.name) + '</a>'
         : esc(b.name);
       // AC stages have HP per difficulty (one block each, toggled), CO stages one.
       var hp = stage.difficulties
@@ -67,11 +67,11 @@ Pages.bosses = {
     // Weapons of this AC and the backpacks released with it.
     function gearHtml(season) {
       var items = weapons.filter(function (w) { return w.ac === season.number; }).map(function (w) {
-        return { href: '#weapons/' + encodeURIComponent(w.name), icon: weaponIconSrc(w), name: w.name };
+        return { href: App.href('weapons', w.name), icon: weaponIconSrc(w), name: w.name };
       }).concat(backpacks.filter(function (b) {
         return b.ac ? b.ac === season.number : b.version === season.version;
       }).map(function (b) {
-        return { href: '#backpacks/' + encodeURIComponent(backpackSlug(b)), icon: BACKPACK_ICON_BASE + encodeURIComponent(b.icon) + '.png', name: b.name };
+        return { href: App.href('backpacks', backpackSlug(b)), icon: BACKPACK_ICON_BASE + encodeURIComponent(b.icon) + '.png', name: b.name };
       }));
       if (!items.length) return '';
       return (

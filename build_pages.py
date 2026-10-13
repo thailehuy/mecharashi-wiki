@@ -234,7 +234,7 @@ MISC_DESCRIPTIONS = {
 
 def misc_routes(index_html):
     """Routes linked from the "Misc." nav dropdown in index.html."""
-    return re.findall(r'class="nav-dropdown-item" href="#\w+" data-page="(\w+)"', index_html)
+    return re.findall(r'class="nav-dropdown-item" href="\w+/" data-page="(\w+)"', index_html)
 
 
 def page_html(index_html, depth, title, description=None, image=None, url=None):

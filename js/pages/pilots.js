@@ -373,7 +373,7 @@ Pages.pilots = {
 
     return (
       cnWarning +
-      '<a href="#pilots" class="btn-back">&#8592; Back to Pilots</a>' +
+      '<a href="' + App.href('pilots') + '" class="btn-back">&#8592; Back to Pilots</a>' +
       '<div class="detail-name-row">' +
         '<img class="detail-name-avatar" src="' + thumbSrc + '" onerror="this.onerror=null;this.src=\'' + thumbFallback + '\';" alt="' + $('<span>').text(p.PilotName).html() + '" style="background-image:url(\'' + bgSrc + '\')" />' +
         '<div>' +
@@ -502,7 +502,7 @@ Pages.pilots = {
     return (
       '<div class="talent-card">' +
         '<div class="talent-header">' +
-          '<a href="#weapons/' + encodeURIComponent(weapon.name) + '" class="talent-weapon-icon-link">' +
+          '<a href="' + App.href('weapons', weapon.name) + '" class="talent-weapon-icon-link">' +
             '<img class="talent-icon talent-weapon-icon" src="' + weaponImgSrc + '" alt="' + $('<span>').text(weapon.name).html() + '" />' +
           '</a>' +
           '<div>' +

@@ -295,7 +295,7 @@ Pages.weapons = {
       if (pilot) {
         var pBgSrc     = (typeof QUALITY_BG !== 'undefined' ? QUALITY_BG[pilot.quality] : '') || '';
         pilotHtml =
-          '<a class="weapon-pilot-card" href="#pilots/' + encodeURIComponent(pilot.PilotName) + '">' +
+          '<a class="weapon-pilot-card" href="' + App.href('pilots', pilot.PilotName) + '">' +
             '<img class="weapon-pilot-avatar" src="' + pilotAvatarSrc(pilot) + '"' + pilotAvatarErrorAttr(pilot) + ' alt="' + $('<span>').text(pilot.PilotName).html() + '" style="background-image:url(\'' + pBgSrc + '\')" />' +
             '<div class="weapon-pilot-name">' + $('<span>').text(pilot.PilotName).html() + '</div>' +
           '</a>';
@@ -319,7 +319,7 @@ Pages.weapons = {
         var talentName = (p2.Talent0_2Ability || {}).name;
         if (talentName) {
           var esc = talentName.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-          var pilotHref = '#pilots/' + encodeURIComponent(w.pilot);
+          var pilotHref = App.href('pilots', w.pilot);
           var re = new RegExp('\\[' + esc + '\\]', 'g');
           linkTalent = function (desc) {
             return desc.replace(re,
@@ -364,7 +364,7 @@ Pages.weapons = {
 
     return (
       cnWarning +
-      '<a href="#weapons" class="btn-back">&#8592; Back to Weapons</a>' +
+      '<a href="' + App.href('weapons') + '" class="btn-back">&#8592; Back to Weapons</a>' +
 
       '<div class="detail-layout">' +
         '<div class="detail-portrait-col">' +

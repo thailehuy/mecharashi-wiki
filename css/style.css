@@ -3365,6 +3365,12 @@ a.material-item:hover .material-icon-wrap {
   font-size: 1.4rem;
   font-weight: 700;
   margin: 2rem 0 1rem;
+  padding: 0.4rem 0.85rem;
+  border-left: 3px solid #e94560;
+  border-radius: 6px;
+  background-color: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(4px);
+  color: #ffffff;
   scroll-margin-top: 80px;
 }
 
@@ -3376,8 +3382,13 @@ a.material-item:hover .material-icon-wrap {
   align-items: baseline;
   gap: 0.25rem 0.75rem;
   margin-bottom: 0.75rem;
+  padding: 0.4rem 0.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  background-color: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(4px);
 }
-.boss-group-head h3 { font-size: 1.1rem; font-weight: 700; margin: 0; }
+.boss-group-head h3 { font-size: 1.1rem; font-weight: 700; margin: 0; color: #ffffff; }
 .boss-group-sub { display: flex; flex-wrap: wrap; gap: 0.25rem; }
 
 .boss-card {
@@ -3432,6 +3443,11 @@ a.material-item:hover .material-icon-wrap {
   flex-wrap: wrap;
   gap: 0.4rem;
   margin-top: 0.75rem;
+  padding: 0.4rem 0.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  background-color: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(4px);
 }
 .boss-gear-item {
   display: inline-flex;
@@ -3448,4 +3464,4 @@ a.material-item:hover .material-icon-wrap {
 .boss-gear-item:hover { border-color: #e94560; }
 .boss-gear-item img { width: 28px; height: 28px; object-fit: contain; }
 .boss-gear { align-items: center; }
-.boss-gear-label { font-size: 0.8rem; font-weight: 600; color: #a0a0b0; margin-right: 0.25rem; }
+.boss-gear-label { font-size: 0.8rem; font-weight: 600; color: #cbd5e1; margin-right: 0.25rem; }

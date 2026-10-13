@@ -187,7 +187,7 @@ Pages.modules = {
           var rankClass = MECH_QUALITY_CLASS[m.quality] || '';
           var nameEsc  = $('<span>').text(m.name).html();
           return (
-            '<a class="module-card-mech-icon-wrap" href="#sts/' + encodeURIComponent(m.name) + '">' +
+            '<a class="module-card-mech-icon-wrap" href="' + App.href('sts', m.name) + '">' +
               '<span class="module-card-mech-icon ' + rankClass + '" style="background-image:url(\'' + bgSrc + '\')">' +
                 '<img src="' + iconSrc + '"' + mechIconErrorAttr(m) + ' alt="' + nameEsc + '" />' +
               '</span>' +
@@ -227,7 +227,7 @@ Pages.modules = {
             ? mechs.map(function (m) {
                 var mImgSrc = mechIconSrc(m);
                 return (
-                  '<a class="module-mech-card" href="#sts/' + encodeURIComponent(m.name) + '">' +
+                  '<a class="module-mech-card" href="' + App.href('sts', m.name) + '">' +
                     '<img class="module-mech-avatar" src="' + mImgSrc + '"' + mechIconErrorAttr(m) + ' alt="' + $('<span>').text(m.name).html() + '" />' +
                     '<div class="module-mech-name">' + $('<span>').text(m.name).html() + '</div>' +
                   '</a>'
@@ -240,7 +240,7 @@ Pages.modules = {
     }
 
     return (
-      '<a href="#modules" class="btn-back">&#8592; Back to Modules</a>' +
+      '<a href="' + App.href('modules') + '" class="btn-back">&#8592; Back to Modules</a>' +
 
       '<div class="module-detail-header">' +
         '<div class="module-detail-portrait">' +

@@ -371,7 +371,7 @@ Pages.sts = {
 
     return (
       cnWarning +
-      '<a href="#sts" class="btn-back">&#8592; Back to STs</a>' +
+      '<a href="' + App.href('sts') + '" class="btn-back">&#8592; Back to STs</a>' +
 
       // ── Top: portrait + info side by side
       '<div class="detail-layout">' +

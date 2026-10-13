@@ -11,23 +11,23 @@ Pages.home = {
           '<p class="home-subtitle">An unofficial community reference for Mecharashi</p>' +
         '</div>' +
         '<div class="home-nav-cards">' +
-          '<a href="#pilots" class="home-card">' +
+          '<a href="' + App.href('pilots') + '" class="home-card">' +
             '<div class="home-card-title">Pilots</div>' +
             '<div class="home-card-desc">Browse all pilots, skills, and neural drive data</div>' +
           '</a>' +
-          '<a href="#sts" class="home-card">' +
+          '<a href="' + App.href('sts') + '" class="home-card">' +
             '<div class="home-card-title">STs</div>' +
             '<div class="home-card-desc">Browse all STs, modules, and part stats</div>' +
           '</a>' +
-          '<a href="#weapons" class="home-card">' +
+          '<a href="' + App.href('weapons') + '" class="home-card">' +
             '<div class="home-card-title">Weapons</div>' +
             '<div class="home-card-desc">Browse all signature weapons, skills, and pilot pairings</div>' +
           '</a>' +
-          '<a href="#backpacks" class="home-card">' +
+          '<a href="' + App.href('backpacks') + '" class="home-card">' +
             '<div class="home-card-title">Backpacks</div>' +
             '<div class="home-card-desc">Browse all backpacks, skills, and crafting materials</div>' +
           '</a>' +
-          '<a href="#accessories" class="home-card">' +
+          '<a href="' + App.href('accessories') + '" class="home-card">' +
             '<div class="home-card-title">Accessories</div>' +
             '<div class="home-card-desc">Browse all Trigger and Reaction accessories</div>' +
           '</a>' +

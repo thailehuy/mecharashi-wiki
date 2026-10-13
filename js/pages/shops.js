@@ -77,7 +77,7 @@ Pages.shops = {
     var bgSrc = MECH_QUALITY_BG[mech.quality] || '';
     var rankClass = MECH_QUALITY_CLASS[mech.quality] || '';
     return (
-      '<a class="dispatch-cell" href="#sts/' + encodeURIComponent(mech.name) + '">' +
+      '<a class="dispatch-cell" href="' + App.href('sts', mech.name) + '">' +
         '<span class="dispatch-cell-icon ' + rankClass + '" style="background-image:url(\'' + bgSrc + '\')">' +
           '<img src="' + iconSrc + '"' + mechIconErrorAttr(mech) + ' alt="' + nameEsc + '" loading="lazy" />' +
         '</span>' +
@@ -113,7 +113,7 @@ Pages.shops = {
 
     if (family) {
       return (
-        '<a class="shop-mod-chip" href="#modules/' + encodeURIComponent(lookupName.toLowerCase()) + '" title="' + $('<span>').text(titleText).html() + '">' +
+        '<a class="shop-mod-chip" href="' + App.href('modules', lookupName.toLowerCase()) + '" title="' + $('<span>').text(titleText).html() + '">' +
           iconHtml +
           '<span class="shop-mod-chip-name">' + nameEsc + '</span>' +
         '</a>'

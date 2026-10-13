@@ -213,7 +213,7 @@ Pages.backpacks = {
 
     return (
       cnWarning +
-      '<a href="#backpacks" class="btn-back">&#8592; Back to Backpacks</a>' +
+      '<a href="' + App.href('backpacks') + '" class="btn-back">&#8592; Back to Backpacks</a>' +
       '<h2 class="detail-name mb-3">' + $('<span>').text(b.name).html() + '</h2>' +
       '<div class="backpack-detail-row">' +
         '<div class="detail-portrait-col backpack-portrait-col">' +
@@ -257,7 +257,7 @@ Pages.backpacks = {
         var style = 'background-image:url(\'' + refIconSrc + '\'), url(\'' + refBgSrc + '\');' +
           'background-size: auto 100%, cover; background-position: center, center;';
         return (
-          '<a class="material-item" href="#backpacks/' + encodeURIComponent(backpackSlug(ref)) + '">' +
+          '<a class="material-item" href="' + App.href('backpacks', backpackSlug(ref)) + '">' +
             '<div class="material-icon-wrap" style="' + style + '">' +
               (m.composite ? compositeBadge : '') +
               (m.qty > 1 ? '<span class="material-qty">x' + m.qty + '</span>' : '') +

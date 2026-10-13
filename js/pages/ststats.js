@@ -135,7 +135,7 @@ Pages.ststats = {
       return (
         '<tr>' +
           '<td class="ststats-name-cell">' +
-            '<a class="dispatch-cell" href="#sts/' + encodeURIComponent(m.name) + '">' +
+            '<a class="dispatch-cell" href="' + App.href('sts', m.name) + '">' +
               '<span class="dispatch-cell-icon ' + rankClass + '" style="background-image:url(\'' + bgSrc + '\')">' +
                 '<img src="' + iconSrc + '"' + mechIconErrorAttr(m) + ' alt="' + nameEsc + '" loading="lazy" />' +
               '</span>' +

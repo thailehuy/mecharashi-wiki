@@ -113,7 +113,7 @@ Pages.pilotstats = {
       return (
         '<tr>' +
           '<td class="ststats-name-cell">' +
-            '<a class="dispatch-cell" href="#pilots/' + encodeURIComponent(p.PilotName) + '">' +
+            '<a class="dispatch-cell" href="' + App.href('pilots', p.PilotName) + '">' +
               '<span class="dispatch-cell-icon ' + rankClass + '" style="background-image:url(\'' + bgSrc + '\')">' +
                 '<img src="' + imgSrc + '" onerror="this.onerror=null;this.src=\'' + imgFallback + '\';" alt="' + nameEsc + '" loading="lazy" />' +
               '</span>' +

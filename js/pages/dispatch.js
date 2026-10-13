@@ -37,7 +37,7 @@ Pages.dispatch = {
       var bgSrc    = MECH_QUALITY_BG[m.quality] || '';
       var rankClass = MECH_QUALITY_CLASS[m.quality] || '';
       return (
-        '<a class="dispatch-cell" href="#sts/' + encodeURIComponent(m.name) + '">' +
+        '<a class="dispatch-cell" href="' + App.href('sts', m.name) + '">' +
           '<span class="dispatch-cell-icon ' + rankClass + '" style="background-image:url(\'' + bgSrc + '\')">' +
             '<img src="' + iconSrc + '"' + mechIconErrorAttr(m) + ' alt="' + nameEsc + '" loading="lazy" />' +
           '</span>' +
