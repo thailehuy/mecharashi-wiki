@@ -168,7 +168,7 @@ $(function () {
 
     $('[data-page]').removeClass('active');
     $('[data-page="' + page + '"]').addClass('active');
-    $('#miscDropdownToggle').toggleClass('active', page === 'dispatch' || page === 'exskills' || page === 'shops' || page === 'ststats' || page === 'pilotstats' || page === 'builder' || page === 'rdbonus');
+    $('#miscDropdownToggle').toggleClass('active', page === 'dispatch' || page === 'exskills' || page === 'shops' || page === 'ststats' || page === 'pilotstats' || page === 'builder' || page === 'rdbonus' || page === 'bosses');
 
     // Pages expect the param still URI-encoded, as it used to come straight from the hash.
     $('#app-content').html(p.render(param == null ? null : encodeURIComponent(param)));
