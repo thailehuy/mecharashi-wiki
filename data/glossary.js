@@ -1618,7 +1618,7 @@ window.GlossaryData = {
       "Ap": "0",
       "CD": "0",
       "icon": "Icon_skill_passive_5185",
-      "effect": "Uses Polearm to attack a target within <color=#F74848>4</color> adjacent tiles, dealing <color=#F74848>0.6x</color> DMG to the target as well as all enemies along the path to the target. This skill is considered a [Retaliation]."
+      "effect": "Uses Polearm to attack a target within <color=#F74848>4</color> adjacent tiles, dealing <color=#F74848>0.6x</color> AoE DMG to the target as well as all enemies along the path to the target. This skill is considered a [Retaliation]."
     },
     "301350": {
       "name": "Marshall Edict",
