@@ -26,7 +26,10 @@ const pct = (x, d = 1) => Number.isFinite(x) ? (x * 100).toFixed(d) + "%" : "–
 const sgn = (v, f) => PCT.has(f) ? (v >= 0 ? "+" : "") + +(v * 100).toFixed(1) + "%" : (v >= 0 ? "+" : "") + fmt(v, Math.abs(v) < 10 && v % 1 ? 2 : 0);
 const $ = id => document.getElementById(id);
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;"}[c]));
-const opt = (v, label, sel) => `<option value="${esc(v)}"${sel ? " selected" : ""}>${esc(label)}</option>`;
+const opt = (v, label, sel, icon) => `<option value="${esc(v)}"${sel ? " selected" : ""}${icon ? ` data-icon="${esc(icon)}"` : ""}>${esc(label)}</option>`;
+/* dropdown icons from bench-icons.js (built by data/dmgcalc/build-icons.py): a path on the assets site or a full URL */
+const ICONS = window.BenchIcons || {}, ASSET_BASE = "https://assets.mecharashi-wiki.cc/";
+const icon = (kind, k) => { const p = ICONS[kind] && ICONS[kind][k]; return p ? (/^https?:/.test(p) ? p : ASSET_BASE + p) : ""; };
 const byName = (o, f = x => x.n) => Object.keys(o).sort((a, b) => String(f(o[a])).localeCompare(String(f(o[b]))));
 const pilotIds = byName(D.pilots, p => p.name);
 /* the bench lists SSR STs, SSR / SSSR weapons (game ID tier 4 = the "- B" weapons, 5-6 = SSSR) and SSR accessories;
@@ -1180,17 +1183,17 @@ function simulate(O, conf, nFights) {
 /* ------------------------------------------------------------------ rendering: setup */
 /* attacks this setup can make: Normal Attack, the equipped attack skills / EX, and attacks other skills unlock */
 function attackOpts(s, weap) {
-  const W = weap[s.atk.slot] && D.weapons[weap[s.atk.slot].id], P = D.pilots[s.pilot], out = [["normal", "Normal Attack"]];
+  const W = weap[s.atk.slot] && D.weapons[weap[s.atk.slot].id], P = D.pilots[s.pilot], out = [["normal", "Normal Attack", W ? icon("weapon", weap[s.atk.slot].id) : ""]];
   const fits = k => D.skills[k] && D.skills[k].atk && (!W || D.skills[k].atk[W.type]);
-  for (const k of [...s.skills, s.ex]) if (k && fits(k) && !out.some(o => o[0] === k)) out.push([k, (k === s.ex ? "EX: " : "") + D.skills[k].n]);
-  for (const x of P.xatk || []) if (fits(x.k) && !out.some(o => o[0] === x.k)) out.push([x.k, `${D.skills[x.k].n} (${x.via.toLowerCase()})`]);
+  for (const k of [...s.skills, s.ex]) if (k && fits(k) && !out.some(o => o[0] === k)) out.push([k, (k === s.ex ? "EX: " : "") + D.skills[k].n, icon("skill", k)]);
+  for (const x of P.xatk || []) if (fits(x.k) && !out.some(o => o[0] === x.k)) out.push([x.k, `${D.skills[x.k].n} (${x.via.toLowerCase()})`, icon("skill", x.k)]);
   return out;
 }
 function attackName(s) { return s.atk.skill && s.atk.skill !== "normal" && D.skills[s.atk.skill] ? D.skills[s.atk.skill].n : "Normal Attack"; }
-function sel(id, opts, cur, empty) { return `<select id="${id}">${empty ? opt("", empty, !cur) : ""}${opts.map(([v, l]) => opt(v, l, String(v) === String(cur))).join("")}</select>`; }
+function sel(id, opts, cur, empty) { return `<select id="${id}">${empty ? opt("", empty, !cur) : ""}${opts.map(([v, l, ic]) => opt(v, l, String(v) === String(cur), ic)).join("")}</select>`; }
 function featureOpts(port, who, slotIdx, taken) {
   return byName(D.features).filter(k => { const F = D.features[k]; return F.port === port && (!who || F.for === who || F.for === "any" || !F.for)
-    && (!F.slots || F.slots.split(",").includes(["I", "II", "III"][slotIdx])) && !(taken || []).some((x, j) => j !== slotIdx && x === k); }).map(k => [k, D.features[k].n]);
+    && (!F.slots || F.slots.split(",").includes(["I", "II", "III"][slotIdx])) && !(taken || []).some((x, j) => j !== slotIdx && x === k); }).map(k => [k, D.features[k].n, icon("feature", k)]);
 }
 let SHOW_ALL_STATS = false;
 const EXTRA_FIELDS = [["attr", "Attribute +"], ["dmgB", "Damage %"], ["finalB", "Final damage %"], ["hitrate", "Hit chance +"],
@@ -1206,8 +1209,8 @@ function renderSide(id) {
   const star = P.stars[Math.min(s.star, P.stars.length - 1)];
   const weap = equipped(s), fixed = fixedWeapons(s);
   const unitOpts = D.units.map((u, i) => [i, `${D.pilots[u.pilot].name} · ${u.from}`]);
-  const skillOpts = P.skills.map(k => [k, `${D.skills[k].n} (${D.skills[k].type === "ActiveAttack" ? "ActiveAttack" : D.skills[k].type === "Code" ? "code" : "passive"})`]);
-  const exOpts = D.ex.map(k => [k, D.skills[k].n]);
+  const skillOpts = P.skills.map(k => [k, `${D.skills[k].n} (${D.skills[k].type === "ActiveAttack" ? "ActiveAttack" : D.skills[k].type === "Code" ? "code" : "passive"})`, icon("skill", k)]);
+  const exOpts = D.ex.map(k => [k, D.skills[k].n, icon("skill", k)]);
   const wcls = st.cls;
   const drive = p => D.pilots[p].stars[0] && D.pilots[p].stars[0].drive;
   const fitPilots = pilotIds.filter(p => drive(p) === wcls);
@@ -1219,8 +1222,8 @@ function renderSide(id) {
     return `<div class="sector"><div class="lbl">${secName(sec)}</div>` + ks.map((k, i) => { const fixed = i < fixedN, on = secOn(s, sec, i), always = fixed;
       return `<label class="lvl${on ? "" : " dim"}"><input type="checkbox" ${always ? `${on ? "checked " : ""}disabled` : `data-sect="${sec}:${i - 1}" ${on ? "checked" : ""}`}>
         <span><b>L${i + 1} · ${esc(D.skills[k].n)}</b>${always ? ` <span class="pill">${on ? "always on" : "no chip power"}</span>` : ""}<span class="desc">${esc(D.skills[k].d || "")}</span></span></label>`; }).join("") + `</div>`; };
-  const moduleOpts = byName(D.modules).flatMap(mid => D.modules[mid].items.map(it => [it.id, it.n + (it.plus > 1 ? " (gold, counts 2)" : "") + ` · max L${D.modules[mid].max}`]));
-  const backOpts = [["", "Empty"], ...backList(wcls, s.back).map((k, i, L) => ["bp:" + k, backLabel(k, L)]),
+  const moduleOpts = byName(D.modules).flatMap(mid => D.modules[mid].items.map(it => [it.id, it.n + (it.plus > 1 ? " (gold, counts 2)" : "") + ` · max L${D.modules[mid].max}`, icon("module", it.id)]));
+  const backOpts = [["", "Empty"], ...backList(wcls, s.back).map((k, i, L) => ["bp:" + k, backLabel(k, L), icon("back", k)]),
     ...(wcls === "Medium" ? [["w", "Weapon (Rail Gun / Cutter / Missile Launcher)"]] : [])];
   el.innerHTML = `
     <div class="head"><span class="tag">${id}</span>
@@ -1229,8 +1232,8 @@ function renderSide(id) {
       <div class="loaded" id="${id}-loaded"${s.loaded ? "" : " hidden"}></div></div>
     <div class="readout" id="${id}-out"></div>
     <details class="sec" id="${id}-d-st"><summary><h3>ST</h3><span class="sub">${esc(st.mixed ? "Mixed · body " + st.n : st.n)} · ${esc(st.cls)}</span></summary><div class="sbody">
-      <div class="grid4"><label class="f"><span class="lbl">Body ST</span>${sel(id + "-st", withCur(stIds, s.st).map(k => [k, `${D.sts[k].n} · ${D.sts[k].cls} (${stRange(k)})`]), s.st)}</label>
-        ${PARTS.slice(1).map(p => `<label class="f"><span class="lbl">${p} ST</span>${sel(`${id}-pst-${p}`, [["", "Same as body"], ...withCur(stIds, partST(s, p) === s.st ? null : partST(s, p)).filter(k => k !== s.st && D.sts[k].cls === st.cls).map(k => [k, D.sts[k].n])], partST(s, p) === s.st ? "" : partST(s, p))}</label>`).join("")}
+      <div class="grid4"><label class="f"><span class="lbl">Body ST</span>${sel(id + "-st", withCur(stIds, s.st).map(k => [k, `${D.sts[k].n} · ${D.sts[k].cls} (${stRange(k)})`, icon("st", k)]), s.st)}</label>
+        ${PARTS.slice(1).map(p => `<label class="f"><span class="lbl">${p} ST</span>${sel(`${id}-pst-${p}`, [["", "Same as body"], ...withCur(stIds, partST(s, p) === s.st ? null : partST(s, p)).filter(k => k !== s.st && D.sts[k].cls === st.cls).map(k => [k, D.sts[k].n, icon("st", k)])], partST(s, p) === s.st ? "" : partST(s, p))}</label>`).join("")}
         ${PARTS.map(p => `<label class="f"><span class="lbl">${p} grade · Lv70</span>${sel(`${id}-gr-${p}`, st.parts[p].grades.map((g, i) => [i, qualityLabel(st.parts[p].grades, i)]), s.grades[p])}</label>`).join("")}
         ${PARTS.map(p => `<label class="f"><span class="lbl">${p} module</span>${sel(`${id}-md-${p}`, moduleOpts, s.mods[p], "—")}</label>`).join("")}</div>
       ${D.sts[s.st].hidden ? `<div class="meta">${hiddenOn(s) ? "Hidden modules active (full set, all parts SS)" : "Hidden modules off: they need all four parts from this ST, every part at rainbow (SS)"}; their effects also need Eruption Mod at L8.</div>` : ""}
@@ -1244,7 +1247,7 @@ function renderSide(id) {
     </div></details>
     <details class="sec" id="${id}-d-pilot"><summary><h3>Pilot</h3><span class="sub">${esc(P.name)} · ${esc(P.class || "")} · potential ${s.star}</span></summary><div class="sbody">
       <div class="grid">
-        <label class="f span2"><span class="lbl">Pilot</span>${sel(id + "-pilot", (fitPilots.includes(s.pilot) ? fitPilots : [s.pilot, ...fitPilots]).map(p => [p, D.pilots[p].name + (D.pilots[p].class ? " · " + D.pilots[p].class : "")]), s.pilot)}</label>
+        <label class="f span2"><span class="lbl">Pilot</span>${sel(id + "-pilot", (fitPilots.includes(s.pilot) ? fitPilots : [s.pilot, ...fitPilots]).map(p => [p, D.pilots[p].name + (D.pilots[p].class ? " · " + D.pilots[p].class : ""), icon("pilot", p)]), s.pilot)}</label>
         <label class="f"><span class="lbl">Potential</span>${sel(id + "-star", P.stars.map((x, i) => [i, `${i} · ${D.suit[String(x.rank)] ? D.suit[String(x.rank)].n : ""}`]), s.star)}</label>
       </div>
       <div class="lbl">Stats on your pilot screen <span class="meta">(leave blank to use the calculated value; only the stats your weapons use are shown)</span><label class="stk"><input type="checkbox" id="${id}-showall" ${SHOW_ALL_STATS ? "checked" : ""}> show all stats</label></div>
@@ -1286,6 +1289,7 @@ function renderSide(id) {
   $(id + "-out").innerHTML = L ? L.out : `<div class="meta">Press <b>Calculate</b> to see damage.</div>`;
   if (L) { $(id + "-src").innerHTML = L.src; $(id + "-bd").innerHTML = L.bd; }
   wireSide(id);
+  iconSelects(el);
   if (!$("view-rd").hidden) renderRD();
   fillSaves(id);
 }
@@ -1297,7 +1301,7 @@ function slotHtml(id, s, slot, label, weap, fixed) {
   if ((slot === "RS" || slot === "LS") && (cls !== "Medium" || Object.keys(fixed).length)) return `<div class="slot"><div class="sh"><span class="lbl">${label}</span><span class="pill">${cls !== "Medium" ? "Medium STs only" : "blocked by built-in weapons"}</span></div></div>`;
   if (slot === "BK" && s.back !== "w") return "";
   const w = s.w[slot], W = w && D.weapons[w.id];
-  const opts = slotOptions(s, slot).map(k => [k, `${D.weapons[k].tn} · ${D.weapons[k].n}`]);
+  const opts = slotOptions(s, slot).map(k => [k, `${D.weapons[k].tn} · ${D.weapons[k].n}`, icon("weapon", k)]);
   let h = `<div class="slot${s.atk.slot === slot ? " atk" : ""}"><div class="sh"><span class="lbl">${label}</span>${atkRadio(id, s, slot, weap)}</div>
     <label class="f">${sel(`${id}-w-${slot}`, opts, w ? w.id : "", "Empty")}</label>`;
   if (W && W.adv && (W.impr || W.adv[1])) {
@@ -1306,8 +1310,8 @@ function slotHtml(id, s, slot, label, weap, fixed) {
       <div class="f" style="display:grid;gap:4px;align-content:start"><span class="lbl">Improvement</span><span style="padding:5px 0">${esc((W.impr_n || "").replace(/^Improvement:\s*/, "") || "refit")} <b>+${rdOv(s, "impr|" + W.type) ?? (typeof w.impr === "number" ? w.impr : W.impr || 0)}</b> <span class="meta">(${rdOv(s, "impr|" + W.type) != null ? "your value" : typeof w.impr === "number" ? (w.impr === (W.impr || 0) ? "max, as loaded" : "as loaded") : "max"})</span></span></div>
       <label class="f span2"><span class="lbl">Advanced ATK <span id="${id}-wav-${slot}">+${w.atk}</span> (${W.adv[0]}–${W.adv[1]})</span><input type="range" id="${id}-wa-${slot}" min="${W.adv[0]}" max="${W.adv[1]}" value="${w.atk || W.adv[0]}"></label>
       ${[0, 1].map(i => { const o = w.opts[i], po = o && pool.find(x => x.fx === o.fx);
-        const own = o && !po && D.fx[o.fx] ? [[o.fx, `${D.fx[o.fx][0].n || "current"} (yours)`]] : [];
-        return `<label class="f span2"><span class="lbl">Advanced option ${i + 1}</span>${sel(`${id}-wo-${slot}-${i}`, own.concat(pool.filter(x => !w.opts.some((y, j) => j !== i && y && y.fx === x.fx)).map(x => [x.fx, `${x.n} (${x.lo}–${x.hi})`])), o ? o.fx : "", "—")}</label>
+        const own = o && !po && D.fx[o.fx] ? [[o.fx, `${D.fx[o.fx][0].n || "current"} (yours)`, icon("adv", o.fx)]] : [];
+        return `<label class="f span2"><span class="lbl">Advanced option ${i + 1}</span>${sel(`${id}-wo-${slot}-${i}`, own.concat(pool.filter(x => !w.opts.some((y, j) => j !== i && y && y.fx === x.fx)).map(x => [x.fx, `${x.n} (${x.lo}–${x.hi})`, icon("adv", x.fx)])), o ? o.fx : "", "—")}</label>
           <label class="f"><span class="lbl">Value</span><input type="number" id="${id}-wov-${slot}-${i}" ${po ? `min="${po.lo}" max="${po.hi}"` : o ? "" : "disabled"} value="${o && o.v != null ? o.v : po ? po.hi : ""}"></label>
           ${o ? `<div class="desc span3">${esc(po ? po.d : fxText(o.fx))}</div>` : ""}`; }).join("")}
       <label class="f span3"><span class="lbl">Drop ability</span>${sel(`${id}-wd-${slot}`, W.drops.map(d => [d.id, d.n]), w.drop || "", W.drops.length ? "—" : "none for this weapon")}</label>
@@ -1338,8 +1342,8 @@ function accHtml(id, s, slot, w, W) {
       (0.4 ÷ TA factor ÷ RA factor per pair), assuming the triggers' conditions happen. Pick Not triggered if they won't, or Triggered to see the damage when it does.</div>`;
   h += w.comps.map((c, i) => D.components[c.id] ? row(c, i) : "").join("");
   if (w.comps.length < cap) h += `<div class="grid">
-    ${tas.length < 3 ? `<label class="f span2"><span class="lbl">Add trigger (TA)</span>${sel(`${id}-addta-${slot}`, fits("TA").map(c => [c, D.components[c].n + (D.components[c].w ? " (two-handed only)" : "")]), "", "—")}</label>` : ""}
-    ${ras.length < 3 ? `<label class="f span2"><span class="lbl">Add reaction (RA)</span>${sel(`${id}-addra-${slot}`, fits("RA").map(c => [c, D.components[c].n + (D.components[c].w ? " (two-handed only)" : "")]), "", "—")}</label>` : ""}</div>`;
+    ${tas.length < 3 ? `<label class="f span2"><span class="lbl">Add trigger (TA)</span>${sel(`${id}-addta-${slot}`, fits("TA").map(c => [c, D.components[c].n + (D.components[c].w ? " (two-handed only)" : ""), icon("comp", c)]), "", "—")}</label>` : ""}
+    ${ras.length < 3 ? `<label class="f span2"><span class="lbl">Add reaction (RA)</span>${sel(`${id}-addra-${slot}`, fits("RA").map(c => [c, D.components[c].n + (D.components[c].w ? " (two-handed only)" : ""), icon("comp", c)]), "", "—")}</label>` : ""}</div>`;
   return h;
 }
 
@@ -2171,6 +2175,62 @@ async function deleteLoadout(id) {
   await refreshSaves();
 }
 
+/* ------------------------------------------------------------------ icon dropdowns */
+/* a native <select> can't show images, so a select whose options carry data-icon gets a button + list in its place;
+   the select stays (hidden) as the source of truth: picking sets its value and fires "change" for the wiring */
+let ICON_MENU = null;
+function closeIconMenu(focus) { if (!ICON_MENU) return; const m = ICON_MENU; ICON_MENU = null; m.list.remove(); m.btn.setAttribute("aria-expanded", "false"); if (focus) m.btn.focus(); }
+const iconImg = (src, cls) => src ? `<img class="${cls}" src="${esc(src)}" alt="" loading="lazy" onerror="this.style.visibility='hidden'">` : `<span class="${cls}"></span>`;
+function iconSelects(root) {
+  root.querySelectorAll("select").forEach(selEl => {
+    if (selEl.dataset.iconized || !selEl.querySelector("option[data-icon]")) return;
+    selEl.dataset.iconized = "1"; selEl.hidden = true;
+    const btn = document.createElement("button");
+    btn.type = "button"; btn.className = "isel"; btn.setAttribute("aria-haspopup", "listbox"); btn.setAttribute("aria-expanded", "false");
+    const paint = () => { const o = selEl.options[selEl.selectedIndex];
+      btn.innerHTML = iconImg(o && o.dataset.icon, "ico") + `<span class="t">${esc(o ? o.text : "")}</span><span class="car" aria-hidden="true">▾</span>`; btn.disabled = selEl.disabled; };
+    paint(); selEl.after(btn);
+    selEl.addEventListener("change", paint);
+    btn.addEventListener("click", () => ICON_MENU && ICON_MENU.btn === btn ? closeIconMenu() : openIconMenu(selEl, btn));
+    btn.addEventListener("keydown", e => { if (["ArrowDown", "ArrowUp", "Enter", " "].includes(e.key) && !ICON_MENU) { e.preventDefault(); openIconMenu(selEl, btn); } });
+  });
+}
+function openIconMenu(selEl, btn) {
+  closeIconMenu();
+  const list = document.createElement("div"); list.className = "isel-list"; list.setAttribute("role", "listbox");
+  const opts = [...selEl.options], many = opts.length > 12;
+  list.innerHTML = (many ? `<input type="text" class="isel-q" placeholder="Filter…" aria-label="Filter">` : "") + `<div class="isel-items">` +
+    [...selEl.children].map(c => c.tagName === "OPTGROUP" ? `<div class="isel-g">${esc(c.label)}</div>` + [...c.children].map(o => itemHtml(o)).join("") : itemHtml(c)).join("") + `</div>`;
+  function itemHtml(o) { return `<div class="isel-o${o.selected ? " on" : ""}" role="option" data-i="${o.index}" aria-selected="${o.selected}">${iconImg(o.dataset.icon, "ico")}<span>${esc(o.text)}</span></div>`; }
+  document.body.append(list);
+  const r = btn.getBoundingClientRect(), below = innerHeight - r.bottom, up = below < 260 && r.top > below;
+  list.style.left = Math.max(8, Math.min(r.left, innerWidth - Math.max(r.width, 260) - 8)) + "px"; list.style.minWidth = r.width + "px";
+  list.style.maxHeight = Math.max(160, Math.min(380, (up ? r.top : below) - 12)) + "px";
+  if (up) list.style.bottom = (innerHeight - r.top + 4) + "px"; else list.style.top = (r.bottom + 4) + "px";
+  ICON_MENU = {list, btn};
+  btn.setAttribute("aria-expanded", "true");
+  const items = () => [...list.querySelectorAll(".isel-o:not([hidden])")];
+  let cur = items().findIndex(x => x.classList.contains("on"));
+  const mark = i => { const its = items(); if (!its.length) return; cur = (i + its.length) % its.length; its.forEach((x, j) => x.classList.toggle("hi", j === cur)); its[cur].scrollIntoView({block: "nearest"}); };
+  const pick = el => { const i = +el.dataset.i; closeIconMenu(true); if (selEl.selectedIndex !== i) { selEl.selectedIndex = i; selEl.dispatchEvent(new Event("change", {bubbles: true})); } };
+  list.addEventListener("mousedown", e => { if (!e.target.closest(".isel-q")) e.preventDefault(); });
+  list.addEventListener("click", e => { const o = e.target.closest(".isel-o"); if (o) pick(o); });
+  list.addEventListener("keydown", e => {
+    if (e.key === "ArrowDown" || e.key === "ArrowUp") { e.preventDefault(); mark(cur + (e.key === "ArrowDown" ? 1 : -1)); }
+    else if (e.key === "Enter") { e.preventDefault(); const its = items(); if (its[cur]) pick(its[cur]); }
+    else if (e.key === "Escape" || e.key === "Tab") { e.preventDefault(); closeIconMenu(true); } });
+  const q = list.querySelector(".isel-q");
+  if (q) q.addEventListener("input", () => { const t = q.value.trim().toLowerCase();
+    list.querySelectorAll(".isel-o").forEach(o => { o.hidden = !!t && !o.textContent.toLowerCase().includes(t); });
+    list.querySelectorAll(".isel-g").forEach(g => { let n = g.nextElementSibling, any = false; while (n && !n.classList.contains("isel-g")) { any ||= !n.hidden; n = n.nextElementSibling; } g.hidden = !any; });
+    mark(0); });
+  list.tabIndex = -1; (q || list).focus({preventScroll: true});
+  if (cur >= 0) mark(cur);
+}
+document.addEventListener("mousedown", e => { if (ICON_MENU && !ICON_MENU.list.contains(e.target) && !ICON_MENU.btn.contains(e.target)) closeIconMenu(); });
+addEventListener("resize", () => closeIconMenu());
+addEventListener("scroll", e => { if (ICON_MENU && !ICON_MENU.list.contains(e.target)) closeIconMenu(); }, true);
+
 /* ------------------------------------------------------------------ init */
 function init() {
   $("meta").textContent = `Damage Bench v${BENCH_VERSION}`;      // 1.0 = ready for regular use
@@ -2179,9 +2239,10 @@ function init() {
   { let v = "bench"; try { v = localStorage.getItem("bench-view") || "bench"; } catch (e) {} showView(v === "rd" ? "rd" : "bench"); }
   const groups = {};
   D.targets.forEach((t, i) => (groups[t.content] ||= []).push(i));
-  $("t-target").innerHTML = Object.entries(groups).map(([g, is]) => `<optgroup label="${esc(g)}">` + is.map(i => opt(i, D.targets[i].label, i === T.target)).join("") + `</optgroup>`).join("");
+  $("t-target").innerHTML = Object.entries(groups).map(([g, is]) => `<optgroup label="${esc(g)}">` + is.map(i => opt(i, D.targets[i].label, i === T.target, icon("boss", D.targets[i].boss))).join("") + `</optgroup>`).join("");
   $("calc-btn").addEventListener("click", calculateSoon);
   $("t-target").addEventListener("change", e => { T.target = +e.target.value; update(); });
+  iconSelects($("t-target").parentNode);
   $("t-fx").addEventListener("change", e => { const b = e.target.dataset.tfx, l = e.target.dataset.tlvl; if (!b && !l) return;
     const set = (T.tfx[T.target] ||= {}), k = b || l, cur = set[k] || (set[k] = {});
     if (b) cur.on = e.target.checked; else cur.lvl = Math.max(1, Math.min(+e.target.max || 99, Math.round(+e.target.value) || 1));

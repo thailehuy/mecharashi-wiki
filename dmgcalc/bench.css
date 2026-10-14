@@ -159,3 +159,20 @@ table.terms tr.sum td { font-weight: 600; color: var(--ink) }
 .calc-fab:disabled { cursor: progress; opacity: .8 }
 .stale { opacity: .45; transition: opacity .15s }
 @media (max-width: 720px) { .calc-fab { top: auto; bottom: 16px; transform: none } }
+/* icon dropdowns (iconSelects in bench.js) */
+select[hidden] { display: none }
+.isel { display: flex; align-items: center; gap: 7px; width: 100%; min-width: 0; font: 13.5px var(--f-body); letter-spacing: 0; text-transform: none; text-align: left;
+  color: var(--ink); background: var(--bg); border: 1px solid var(--line); border-radius: 4px; padding: 3px 7px; min-height: 31px }
+.isel .t { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap }
+.isel .car { color: var(--muted); font-size: 11px }
+.isel:disabled { opacity: .55; cursor: default }
+.isel .ico, .isel-o .ico { width: 22px; height: 22px; flex: none; object-fit: contain; border-radius: 3px }
+.isel-list { position: fixed; z-index: 50; display: flex; flex-direction: column; max-width: min(420px, calc(100vw - 16px)); background: var(--panel);
+  border: 1px solid var(--line); border-radius: var(--r); box-shadow: 0 8px 24px rgba(0,0,0,.18); overflow: hidden }
+.isel-list:focus { outline: none }
+.isel-q { margin: 6px; width: auto !important }
+.isel-items { overflow-y: auto; padding: 3px 0 }
+.isel-g { font: 600 11px var(--f-display); letter-spacing: .06em; text-transform: uppercase; color: var(--muted); padding: 7px 10px 3px }
+.isel-o { display: flex; align-items: center; gap: 8px; padding: 4px 10px; font-size: 13px; cursor: pointer }
+.isel-o:hover, .isel-o.hi { background: var(--sunk) }
+.isel-o.on { font-weight: 600 }

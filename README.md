@@ -76,7 +76,7 @@ data/
   modules/                        # compiled.js/json (ModulesData)
   accessories/                    # compiled.js/json; extract-chain-traits.py → chain-traits.js/json (ChainTraitsData, SSR TA/RA pairs from the mined DB)
   builder/                        # generate-index-maps.py → index-maps.js/json (BuilderIndexMaps)
-  dmgcalc/                        # extract-bench.py → bench-data.js (BenchData) + dmgcalc/bench.js/css, from the mined Damage_Bench.html
+  dmgcalc/                        # extract-bench.py → bench-data.js (BenchData) + dmgcalc/bench.js/css, from the mined Damage_Bench.html; build-icons.py → bench-icons.js (BenchIcons, dropdown icons)
   features/                       # build_features.py → features.json/js (FeaturesData, every R&D feature from the mined DB, for the Features page)
   rd/                             # build_rd_totals.py → rd-totals.json/js (RDTotalsData, max R&D bonuses from the mined DB, for the R&D Bonus page and DMG calculator)
   glossary.json                   # → GlossaryData
@@ -217,6 +217,8 @@ The DMG Calc page is the mined `Damage_Bench.html`, split into files the site se
    - `data/dmgcalc/bench-data.js`: `window.BenchData = {...}` (~1.8 MB, loaded only by this page).
 
    It prints the game build and data date, and warns if `dmgcalc/index.html` is missing an element id the script looks up.
+
+   Then run `python3 data/dmgcalc/build-icons.py`. It writes `data/dmgcalc/bench-icons.js` (`window.BenchIcons`): an icon for each ST, pilot, weapon, skill, module, feature, backpack, accessory and boss in the bench data, matched by ID or name to the wiki's compiled data. `bench.js` draws dropdowns whose options have icons as a button and list in place of the native `<select>` (`iconSelects`). Items it can't match just show no icon.
 3. If it warned, copy the changed markup from `Damage_Bench.html` into `dmgcalc/index.html`. That file is kept by hand: it's the bench's markup plus the page title, the "DMG Calc · Beta" heading, the "← Mecharashi Wiki" link and the two `<script>` tags. Don't overwrite it wholesale.
 4. Open `dmgcalc/` locally (see Running locally) and check the console for errors, then commit the three generated files.
 
