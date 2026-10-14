@@ -151,3 +151,11 @@ table.terms tr.sum td { font-weight: 600; color: var(--ink) }
 @media (max-width: 980px) { .cols { grid-template-columns: minmax(0, 1fr) } .row.w2 { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) } .row.w2 > :first-child { grid-column: 1 / -1 } }
 @media (max-width: 720px) { .sectors { grid-template-columns: minmax(0, 1fr) } }
 @media (max-width: 520px) { .kpis, .range { grid-template-columns: repeat(2, minmax(0, 1fr)) } .grid, .grid4 { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) } .big .n { font-size: 30px } }
+/* Calculate: floats on the right; results are only worked out when it is pressed, and dim once a setting changes */
+.calc-fab { position: fixed; right: 16px; top: 50%; transform: translateY(-50%); z-index: 20; padding: 12px 18px; font-size: 15px;
+  border-radius: var(--r); box-shadow: 0 4px 14px rgb(0 0 0 / .18); background: var(--panel); color: var(--muted) }
+.calc-fab.ready { background: var(--b); border-color: var(--b); color: var(--panel) }
+.calc-fab.ready:hover { filter: brightness(1.08); border-color: var(--b) }
+.calc-fab:disabled { cursor: progress; opacity: .8 }
+.stale { opacity: .45; transition: opacity .15s }
+@media (max-width: 720px) { .calc-fab { top: auto; bottom: 16px; transform: none } }

@@ -6,7 +6,14 @@ the files served at /dmgcalc/. Run: python3 data/dmgcalc/extract-bench.py
   data/dmgcalc/bench-data.js  window.BenchData = the bench's embedded `const D = {...}`
 
 dmgcalc/index.html (the markup, plus the link back to the wiki) is kept by hand;
-the script warns if an element id the script looks up is missing from it."""
+the script warns if an element id the script looks up is missing from it.
+
+bench.js and bench.css now carry hand edits (Calculate button, rarity filters):
+use --data-only to rewrite bench-data.js alone.
+
+The data is pruned to what the bench can still use: SSR STs, SSR / SSSR weapons
+(game ID tier 4+, plus the STs' built-in arms), SSR accessories, SR+ backpacks,
+and the effects / buff categories / aliases those still reach."""
 import json
 import os
 import re
@@ -20,8 +27,69 @@ OUT_CSS = os.path.join(PAGE_DIR, 'bench.css')
 OUT_JS = os.path.join(PAGE_DIR, 'bench.js')
 OUT_DATA = os.path.join(HERE, 'bench-data.js')
 PAGE = os.path.join(PAGE_DIR, 'index.html')
+MECHS = os.path.join(HERE, '..', 'db', 'mechs.json')
 
 DATA_PREFIX = 'const D = '
+
+
+RARITY = ['C', 'R', 'SR', 'SSR', 'SSSR']
+
+
+def weapon_tier(k):
+    return int(k[4]) if len(k) == 8 else 0
+
+
+def prune(data):
+    """Drop what the bench's pickers no longer offer, then every effect, buff
+    category and alias nothing kept refers to (references are found by scanning
+    the kept data for the keys, so nothing reached by key is lost)."""
+    data['sts'] = {k: v for k, v in data['sts'].items() if v.get('q') == 'SSR'}
+    fixed = {str(w) for st in data['sts'].values() for p in st['parts'].values()
+             for w in (p.get('fixed') or {}).values()}
+    data['weapons'] = {k: v for k, v in data['weapons'].items() if weapon_tier(k) >= 4 or k in fixed}
+    data['components'] = {k: v for k, v in data['components'].items() if v.get('q') == 'SSR'}
+    data['backs'] = {k: v for k, v in data['backs'].items() if RARITY.index(v['q']) >= RARITY.index('SR')}
+    data['alias'] = {k: v for k, v in data['alias'].items() if v in data['weapons']}
+    types = {w['type'] for w in data['weapons'].values()}
+    data['adv'] = {k: v for k, v in data['adv'].items() if k in types}
+    data.pop('catShown', None)                       # never read by bench.js
+
+    rest = tokens({k: v for k, v in data.items() if k not in ('fx', 'bcat')})
+    data['fx'] = {k: v for k, v in data['fx'].items() if k in rest}
+    # fields bench.js never reads, and empty (null) effect fields it only tests for truthiness
+    for t in data['targets']:
+        for b in t.get('bfx') or []:
+            b.pop('mine', None)
+            b.pop('tag', None)
+        for w in t.get('ctr') or []:
+            w.pop('n', None)
+            w.pop('part', None)
+    data['fx'] = {k: [drop_nulls(e) for e in v] for k, v in data['fx'].items()}
+    used = rest | tokens(data['fx'])
+    data['bcat'] = {k: v for k, v in data['bcat'].items() if k in used}
+
+
+def drop_nulls(x):
+    if isinstance(x, dict):
+        return {k: drop_nulls(v) for k, v in x.items() if v is not None}
+    if isinstance(x, list):
+        return [drop_nulls(v) for v in x]
+    return x
+
+
+def tokens(x, out=None):
+    """every string, number (as text) and dict key inside x"""
+    out = set() if out is None else out
+    if isinstance(x, dict):
+        for k, v in x.items():
+            out.add(str(k))
+            tokens(v, out)
+    elif isinstance(x, list):
+        for v in x:
+            tokens(v, out)
+    elif isinstance(x, (str, int)) and not isinstance(x, bool):
+        out.add(str(x))
+    return out
 
 
 def main():
@@ -37,13 +105,22 @@ def main():
     if data_line is None:
         sys.exit('Damage_Bench.html: "%s{...}" line not found' % DATA_PREFIX)
     data = json.loads(lines[data_line][len(DATA_PREFIX):].rstrip().rstrip(';'))
+    # ST rarity (q: SR / SSR) from the wiki's mech DB, keyed by the ST's body part id
+    with open(MECHS, encoding='utf-8') as f:
+        mechs = json.load(f)
+    for st in data['sts'].values():
+        m = mechs.get(str(st['parts']['Body']['id']))
+        if m and m.get('quality'):
+            st['q'] = m['quality']
+    prune(data)
     code = lines[:data_line] + ['const D = window.BenchData;'] + lines[data_line + 1:]
 
     os.makedirs(PAGE_DIR, exist_ok=True)
-    with open(OUT_CSS, 'w', encoding='utf-8') as f:
-        f.write(css.group(1))
-    with open(OUT_JS, 'w', encoding='utf-8') as f:
-        f.write('\n'.join(code))
+    if '--data-only' not in sys.argv:
+        with open(OUT_CSS, 'w', encoding='utf-8') as f:
+            f.write(css.group(1))
+        with open(OUT_JS, 'w', encoding='utf-8') as f:
+            f.write('\n'.join(code))
     with open(OUT_DATA, 'w', encoding='utf-8') as f:
         f.write('window.BenchData = ')
         json.dump(data, f, ensure_ascii=False, separators=(',', ':'))

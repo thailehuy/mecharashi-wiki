@@ -29,7 +29,12 @@ const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&": "&amp;", "<": "&
 const opt = (v, label, sel) => `<option value="${esc(v)}"${sel ? " selected" : ""}>${esc(label)}</option>`;
 const byName = (o, f = x => x.n) => Object.keys(o).sort((a, b) => String(f(o[a])).localeCompare(String(f(o[b]))));
 const pilotIds = byName(D.pilots, p => p.name);
-const stIds = byName(D.sts);
+/* the bench lists SSR STs, SSR / SSSR weapons (game ID tier 4 = the "- B" weapons, 5-6 = SSSR) and SSR accessories;
+   an item a loaded setup already has stays listed */
+const stIds = byName(D.sts).filter(k => D.sts[k].q === "SSR");
+const wTier = k => String(k).length === 8 ? +String(k)[4] : 0;
+const wOk = k => wTier(k) >= 4;
+const withCur = (L, cur) => !cur || L.includes(cur) ? L : [cur, ...L];
 const shownAttr = a => D.shown[a] || a;
 const catLabel = c => ({Melee: "Melee", Assault: "Assault", Sniper: "Ranged", Heavy: "Tactical"}[c] || c);
 const SEC_N = {"α": "a", "β": "b", "γ1": "y1", "γ2": "y2"};      // chip sectors as the game writes them (Neural Drive - y1); the data and saved loadouts keep the Greek keys
@@ -48,7 +53,7 @@ function blankSide(pilot) {
     sect: {"γ1": [false, false, false, false, false], "γ2": [false, false, false, false, false]}, st, pst: {}, grades: {}, mods: {}, back: null,
     w: {}, atk: {slot: "RH", skill: "normal"}, tog: {}, stk: {}, extra: {dmgB: 0, finalB: 0, hitrate: 0, crit_rate: 0, crit_fin: 0, shred: 0, attr: 0}};
   PARTS.forEach(p => { s.grades[p] = D.sts[st].parts[p].grades.length - 1; s.mods[p] = null; });
-  const wid = Object.keys(D.weapons).find(k => D.weapons[k].slot === "Hand" && D.weapons[k].cat === "Assault" && D.weapons[k].cls.includes(dcls));
+  const wid = Object.keys(D.weapons).find(k => D.weapons[k].slot === "Hand" && D.weapons[k].cat === "Assault" && D.weapons[k].cls.includes(dcls) && wOk(k));
   if (wid) s.w.RH = newWeapon(wid);
   return s;
 }
@@ -120,6 +125,7 @@ function slotOptions(s, slot) {
   return Object.keys(D.weapons).filter(k => {
     const W = D.weapons[k];
     if (W.type === "FixedArms") return false;          // built into the ST's arms
+    if (!wOk(k) && !(s.w[slot] && s.w[slot].id === k)) return false;
     if (!W.cls.includes(cls)) return false;
     if (slot === "RH" || slot === "LH") return W.slot === "Hand" || (W.slot === "DoubleHand" && slot === "RH");
     if (slot === "RS" || slot === "LS") return W.slot === "Shoulder" && cls === "Medium";
@@ -1223,8 +1229,8 @@ function renderSide(id) {
       <div class="loaded" id="${id}-loaded"${s.loaded ? "" : " hidden"}></div></div>
     <div class="readout" id="${id}-out"></div>
     <details class="sec" id="${id}-d-st"><summary><h3>ST</h3><span class="sub">${esc(st.mixed ? "Mixed · body " + st.n : st.n)} · ${esc(st.cls)}</span></summary><div class="sbody">
-      <div class="grid4"><label class="f"><span class="lbl">Body ST</span>${sel(id + "-st", stIds.map(k => [k, `${D.sts[k].n} · ${D.sts[k].cls} (${stRange(k)})`]), s.st)}</label>
-        ${PARTS.slice(1).map(p => `<label class="f"><span class="lbl">${p} ST</span>${sel(`${id}-pst-${p}`, [["", "Same as body"], ...stIds.filter(k => k !== s.st && D.sts[k].cls === st.cls).map(k => [k, D.sts[k].n])], partST(s, p) === s.st ? "" : partST(s, p))}</label>`).join("")}
+      <div class="grid4"><label class="f"><span class="lbl">Body ST</span>${sel(id + "-st", withCur(stIds, s.st).map(k => [k, `${D.sts[k].n} · ${D.sts[k].cls} (${stRange(k)})`]), s.st)}</label>
+        ${PARTS.slice(1).map(p => `<label class="f"><span class="lbl">${p} ST</span>${sel(`${id}-pst-${p}`, [["", "Same as body"], ...withCur(stIds, partST(s, p) === s.st ? null : partST(s, p)).filter(k => k !== s.st && D.sts[k].cls === st.cls).map(k => [k, D.sts[k].n])], partST(s, p) === s.st ? "" : partST(s, p))}</label>`).join("")}
         ${PARTS.map(p => `<label class="f"><span class="lbl">${p} grade · Lv70</span>${sel(`${id}-gr-${p}`, st.parts[p].grades.map((g, i) => [i, qualityLabel(st.parts[p].grades, i)]), s.grades[p])}</label>`).join("")}
         ${PARTS.map(p => `<label class="f"><span class="lbl">${p} module</span>${sel(`${id}-md-${p}`, moduleOpts, s.mods[p], "—")}</label>`).join("")}</div>
       ${D.sts[s.st].hidden ? `<div class="meta">${hiddenOn(s) ? "Hidden modules active (full set, all parts SS)" : "Hidden modules off: they need all four parts from this ST, every part at rainbow (SS)"}; their effects also need Eruption Mod at L8.</div>` : ""}
@@ -1276,6 +1282,9 @@ function renderSide(id) {
       <div class="saves"><label class="f"><span class="lbl">Saved loadouts</span><select id="${id}-svlist"></select></label>
       <button type="button" id="${id}-load">Load</button><button type="button" id="${id}-del">Delete</button></div>
       <div class="toast" id="${id}-svmsg" aria-live="polite"></div></div></details>`;
+  const L = LAST[id];                     // the last calculated results, until Calculate runs again
+  $(id + "-out").innerHTML = L ? L.out : `<div class="meta">Press <b>Calculate</b> to see damage.</div>`;
+  if (L) { $(id + "-src").innerHTML = L.src; $(id + "-bd").innerHTML = L.bd; }
   wireSide(id);
   if (!$("view-rd").hidden) renderRD();
   fillSaves(id);
@@ -1315,7 +1324,7 @@ function accHtml(id, s, slot, w, W) {
   const cap = W.load || 0;
   if (!cap) return `<div class="meta">No accessory slots.</div>`;
   const tas = w.comps.filter(c => D.components[c.id] && D.components[c.id].k === "TA"), ras = w.comps.filter(c => D.components[c.id] && D.components[c.id].k === "RA");
-  const fits = k => Object.keys(D.components).filter(c => { const C = D.components[c]; return C.k === k && (!C.own || w.comps.some(x => x.id === c)) && (!C.fits || C.fits === "Any weapon" || C.fits.split(", ").includes(W.type)); })
+  const fits = k => Object.keys(D.components).filter(c => { const C = D.components[c]; return C.k === k && C.q === "SSR" && (!C.own || w.comps.some(x => x.id === c)) && (!C.fits || C.fits === "Any weapon" || C.fits.split(", ").includes(W.type)); })
     .sort((a, b) => D.components[a].n.localeCompare(D.components[b].n));
   const row = (c, i) => { const C = D.components[c.id]; const isTA = C.k === "TA";
     return `<div class="acc"><span><b>${esc(C.n)}</b> <span class="pill">${C.q}</span></span>
@@ -2024,6 +2033,30 @@ function update() {
   if (tg.shield) $("t-shield").innerHTML = `<b>This boss carries a shield</b> (${esc(tg.shield)}${tg.shield_hp ? `, shield HP ${fmt(tg.shield_hp)}` : ""}). Shield blocking isn't modelled yet: hits the shield takes and its HP aren't counted, so attacks to kill and break may come out lower than in the fight.`;
   const nOn = bossFx(tg).filter(e => e.use).length;
   $("t-fxsum").textContent = nOn ? `${nOn} damage-taken effect${nOn > 1 ? "s" : ""} on` : tg.buffs ? "boss buffs in its stats" : "";
+  // the input panels follow every change (one compute per setup); the results wait for Calculate
+  for (const id of ["A", "B"]) { showLoaded(id); const R = S[id] && compute(S[id]); renderSit(id, R); renderFx(id, R); }
+  setStale(true);
+}
+/* results: the panels Calculate fills, dimmed while a change hasn't been calculated yet */
+const RESULT_IDS = () => ["compare", "A-out", "B-out", "A-src", "B-src", "A-bd", "B-bd"];
+let STALE = true, CALCULATED = false, CALC_BUSY = false;
+const LAST = {};
+function setStale(on) {
+  STALE = on;
+  RESULT_IDS().forEach(k => { const e = $(k); if (e) e.classList.toggle("stale", on && CALCULATED); });
+  const b = $("calc-btn"); if (!b) return;
+  b.classList.toggle("ready", on);
+  b.disabled = CALC_BUSY;
+  b.querySelector(".t").textContent = CALC_BUSY ? "Calculating…" : on ? "Calculate" : "Up to date";
+  b.title = on ? "Settings changed since the last calculation" : "Results match the current settings";
+}
+function calculateSoon() {
+  if (CALC_BUSY) return;
+  CALC_BUSY = true; setStale(STALE);
+  // let the button paint "Calculating…" before the simulation blocks the page
+  setTimeout(() => { try { calculate(); } finally { CALC_BUSY = false; setStale(false); } }, 30);
+}
+function calculate() {
   const O = {};
   for (const id of ["A", "B"]) O[id] = outcomes(S[id]);
   const nF = Math.min(...["A", "B"].filter(id => O[id]).map(id => fightCount(O[id])));      // same number of fights for both
@@ -2036,7 +2069,9 @@ function update() {
   if (ra && rb) { const lo = Math.min(ra.lo, rb.lo), hi = Math.max(ra.hi, rb.hi), own = Math.max(ra.hi - ra.lo, rb.hi - rb.lo);
     if (hi - lo <= 2 * own + 4) scales.A = scales.B = {lo, hi, max: Math.max(ra.max, rb.max), shared: true};
     else { scales.A = {...ra, solo: true}; scales.B = {...rb, solo: true}; } }
-  for (const id of ["A", "B"]) { showLoaded(id); const R = O[id] && O[id].base; renderOut(id, O[id], id === "B" ? O.A : null, scales[id]); renderSit(id, R); renderFx(id, R); renderSrc(id, R); renderBd(id, R); }
+  for (const id of ["A", "B"]) { const R = O[id] && O[id].base; renderOut(id, O[id], id === "B" ? O.A : null, scales[id]); renderSrc(id, R); renderBd(id, R); }
+  for (const id of ["A", "B"]) LAST[id] = {out: $(id + "-out").innerHTML, src: $(id + "-src").innerHTML, bd: $(id + "-bd").innerHTML};
+  CALCULATED = true;
   if (O.A && O.B) {
     const dd = (b, a, lbl, isPts) => { const x = isPts ? (b - a) * 100 : (a ? b / a - 1 : 0) * 100;
       return `<span>${lbl} <span class="delta ${x > 0.05 ? "up" : x < -0.05 ? "down" : ""}">${x >= 0 ? "+" : ""}${x.toFixed(1)}${isPts ? " pts" : "%"}</span></span>`; };
@@ -2074,7 +2109,7 @@ async function loadRD() {
     if (STORE) { const d = await STORE.doc("rd").get(); RDO = d && d.exists ? JSON.parse(d.data().v || "{}") : {}; }
     else RDO = JSON.parse(localStorage.getItem("bench-rd") || "{}");
   } catch (e) { RDO = {}; }
-  renderSide("A"); renderSide("B"); renderRD(); update();
+  renderSide("A"); renderSide("B"); renderRD(); update(); calculateSoon();
 }
 async function refreshSaves() {
   if (STORE) {
@@ -2145,6 +2180,7 @@ function init() {
   const groups = {};
   D.targets.forEach((t, i) => (groups[t.content] ||= []).push(i));
   $("t-target").innerHTML = Object.entries(groups).map(([g, is]) => `<optgroup label="${esc(g)}">` + is.map(i => opt(i, D.targets[i].label, i === T.target)).join("") + `</optgroup>`).join("");
+  $("calc-btn").addEventListener("click", calculateSoon);
   $("t-target").addEventListener("change", e => { T.target = +e.target.value; update(); });
   $("t-fx").addEventListener("change", e => { const b = e.target.dataset.tfx, l = e.target.dataset.tlvl; if (!b && !l) return;
     const set = (T.tfx[T.target] ||= {}), k = b || l, cur = set[k] || (set[k] = {});
