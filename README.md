@@ -12,6 +12,7 @@ Images and icons live in a separate repo, [mecharashi-wiki-assets](https://githu
 | `data/unlisted/pilot_skills/` | Pilot skill/talent icons |
 | `data/unlisted/mechs/{Icon,Raw,Skins}/{Light,Medium,Heavy}/` | ST icons, full artwork and skins, by weight class |
 | `data/unlisted/mech_modules/` | Module icons (color subfolders by module category) |
+| `data/unlisted/rnd/` | R&D icons: `Icon_RnD_N_*` pilot attribute % features, `Icon_RnD_E_*` other features (Hybrid Training is `E_3031`), `Icon_RnD_F_*` matrix/port frames |
 | `data/weapons/icons/<type>/` | Signature weapon icons, by weapon type (`AB`, `MG`, `SR`, …) |
 | `data/backpacks/icons/`, `data/backpacks/materials/` | Backpack and crafting-material icons |
 | `data/accessories/icons/` | Accessory icons |
@@ -36,6 +37,7 @@ Add new images to the matching folder in that repo; pushing its `main` deploys t
 - **ST Stats** table — sortable/filterable comparison of all SSR-quality STs
 - **Builder** — mech loadout theorycrafting tool, incl. 4 accessory slots per weapon (at least 1 trigger TA + 1 reaction RA) with each TA + RA chain's trigger chance; state is encoded into a shareable Build UID (URL hash), not localStorage
 - **R&D Bonus** — max bonuses from a fully researched R&D tree, by pilot class, ST weight class and weapon type
+- **Features** — every R&D feature (pilot / ST / weapon), split by pilot class, ST weight class and weapon R&D tree, with port, effect and unlock cost
 - **DMG Calc (Beta)** — standalone page at `dmgcalc/` (linked from "Misc."): the mined Damage Bench, comparing two setups' damage per attack and attacks to kill against a boss; saved loadouts stay in the browser (localStorage)
 - **Glossary** — shared keyword/tooltip engine (buffs, skills, terrain, jump-links) used across all pages
 - Table-based data — all text and stats live in `data/db/` (one JSON table per entity); the deploy workflow compiles them, so an edited table goes live on push
@@ -64,6 +66,7 @@ js/
     ststats.js                    # ST stats comparison table
     builder.js                    # Mech loadout builder
     rdbonus.js                    # R&D Bonus (max R&D bonuses) tables
+    features.js                   # Features (R&D features) listing
 data/
   db/                             # Source tables: pilots, pilot_neurons, neural_partitions, skills, mechs, mech_parts, modules, weapons, backpacks, materials (see data/README.md)
   pilots/                         # compiled.js/json (PilotsData); check_skins.py, INTAKE_TEMPLATE.md
@@ -74,6 +77,7 @@ data/
   accessories/                    # compiled.js/json; extract-chain-traits.py → chain-traits.js/json (ChainTraitsData, SSR TA/RA pairs from the mined DB)
   builder/                        # generate-index-maps.py → index-maps.js/json (BuilderIndexMaps)
   dmgcalc/                        # extract-bench.py → bench-data.js (BenchData) + dmgcalc/bench.js/css, from the mined Damage_Bench.html
+  features/                       # build_features.py → features.json/js (FeaturesData, every R&D feature from the mined DB, for the Features page)
   rd/                             # build_rd_totals.py → rd-totals.json/js (RDTotalsData, max R&D bonuses from the mined DB, for the R&D Bonus page and DMG calculator)
   glossary.json                   # → GlossaryData
   dispatch.json                   # → dispatch table data
@@ -182,6 +186,10 @@ sqlite3 data/screenshots/mined/mecharashi.db \
 - **The DB has no image or icon keys.** Icons still come from the existing files and the assets repo.
 - Run `python3 compile.py` after any change.
 
+**R&D features**
+
+`data/features/features.json` lists every R&D feature from the DB's `rd_features` table, grouped as `pilot` (by class), `st` (Light/Medium/Heavy) and `weapon` (by the R&D tree that unlocks it: Melee, Assault, Ranged, Tactical, Shield; the feature ID's second digit). Regenerate it with `python3 data/features/build_features.py`, which also writes `features.js` for the Features page (Misc. → Features). For filtering in a loadout picker (e.g. the Builder), each feature has `slots` (the feature ports it fits), `for` (pilot class, or ST weight class / `any`), `weapon_types` (weapon features: the `WeaponType2` codes it affects, `null` = every weapon) and, on Basic features, a `basic` key (a feature and its II version can't be equipped together); `pilot_classes` maps the wiki's pilot `Profession` (Striker, …) to the R&D class (Fighter, …). The script reads the DMG calc's `bench-data.js` for the weapon types and `data/pilots/compiled.json` for the classes. The mined data has no icon field, so the script assigns them: pilot attribute % features by attribute (`ATTR_ICONS`, `Icon_RnD_N_*`; Hybrid Training `E_3031`), ST refits by type and weight class (`ST_ICONS`), and the rest by feature ID (`FEATURE_ICONS`). Some are confirmed, the rest worked out from the icon art (comments in the script say which); a few reuse a pilot passive or module icon (full asset path in `FEATURE_ICONS`).
+
 **R&D totals (for the DMG calculator)**
 
 `data/rd/rd-totals.json` holds the maximum R&D bonuses, i.e. what a fully researched tree gives, exported from the DB's `rd_totals` table. Regenerate it with `python3 data/rd/build_rd_totals.py`, which also writes `rd-totals.js` for the R&D Bonus page (Misc. → R&D Bonus). It is split into:
@@ -238,7 +246,7 @@ Facebook/Discord don't run JavaScript and ignore the `#...` part of a URL, so th
 | Page | Preview |
 |---|---|
 | Pilot / ST / Weapon / Backpack / Module | Item icon (`twitter:card=summary`) + two-line description, e.g. `v3.6 S-rank Tactician (Medium License)` then the basic talent |
-| Misc. pages (Dispatch, EX Skills, Shops, ST/Pilot Stats, Builder, R&D Bonus) | Home page image (`Pilot_13038A_half.png`, read from `index.html`'s `og:image`) as a small icon + summary from `MISC_DESCRIPTIONS` |
+| Misc. pages (Dispatch, EX Skills, Shops, ST/Pilot Stats, Builder, R&D Bonus, Features, Bosses) | Home page image (`Pilot_13038A_half.png`, read from `index.html`'s `og:image`) as a small icon + summary from `MISC_DESCRIPTIONS` |
 | Other list pages and the home page | `index.html`'s own generic preview, retitled |
 
 Previews can't be seen by opening the page in a browser. To check them:

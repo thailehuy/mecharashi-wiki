@@ -3465,3 +3465,30 @@ a.material-item:hover .material-icon-wrap {
 .boss-gear-item img { width: 28px; height: 28px; object-fit: contain; }
 .boss-gear { align-items: center; }
 .boss-gear-label { font-size: 0.8rem; font-weight: 600; color: #cbd5e1; margin-right: 0.25rem; }
+
+/* Features page */
+.feat-note { margin: 0 0 0.75rem; }
+.feat-group { scroll-margin-top: 80px; }
+
+.feat-table th,
+.feat-table td { text-align: left; }
+.feat-table th:nth-child(2),
+.feat-table .feat-port { text-align: center; white-space: nowrap; }
+
+.feat-name { font-weight: 600; color: #ffffff; min-width: 14rem; }
+.feat-name > span { vertical-align: middle; }
+.feat-icon {
+  width: 32px;
+  height: 32px;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+  filter: drop-shadow(0 0 1px rgba(0, 0, 0, 0.6));
+}
+.feat-tags { display: inline-flex; gap: 0.25rem; margin-left: 0.4rem; vertical-align: middle; }
+.feat-tags .tag { font-size: 0.65rem; font-weight: 600; }
+
+.feat-effect { color: #d0d0e0; min-width: 16rem; }
+
+.feat-cost { font-size: 0.8rem; color: #a0a0c0; min-width: 11rem; }
+.feat-cost-item { display: block; white-space: nowrap; }
+.feat-cost-item b { color: #e2e8f0; }
