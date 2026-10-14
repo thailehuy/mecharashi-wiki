@@ -75,30 +75,31 @@ Checklist for whoever (or whichever agent) turns this into table rows:
      Per-part Firepower and Move aren't stored (not displayed). -->
 
 ### Body
-- HP: 11149
-- Firepower: 1264
-- Weight: 280
-- Output: 2725
+- HP: 10120
+- Firepower: 1215
+- Weight: 275
+- Output: 1575
 - Crit RES: 4472
 - Armor: 706
 
 ### L-Arm
-- HP: 5810
-- Weight: 170
+- HP: 4976
+- Weight: 90
 - Armor:
-- Hit: 2091
+- Hit: 1974
 
 ### R-Arm
-- HP: 5810
-- Weight: 170
+- HP: 4976
+- Weight: 90
 - Armor:
-- Hit: 2091
+- Hit: 1974
 
 ### Legs
-- HP: 9480
-- Weight: 205
+- HP: 8368
+- Weight: 170
 - Armor:
-- Dodge: 3885
+- Dodge: 5233
+- Move: 4
 
 ## Modules
 <!-- Copy this block for each module the ST carries. Each one → a
