@@ -97,11 +97,16 @@ def main():
     def mod_name(n):
         return re.sub(r'\s+(Mod|Module)?\s*(I|II|III)?$', '', (n or '').replace('‌', '')).strip().lower()
     mods = {mod_name(m['name']): m['icon'] for m in load('modules/compiled.json')['modules'].values()}
-    for M in D['modules'].values():
+    db_mods = load('db/modules.json')                # keyed by module group (the bench's modules key)
+    for g, M in D['modules'].items():
+        group_icon = None                            # a Mod II with no icon of its own reuses its Mod I's
         for it in M['items']:
-            icon = (local(f"data/unlisted/mech_modules/Icon_entry_{it['id']}.png") and f"Icon_entry_{it['id']}") or mods.get(mod_name(it['n']))
+            icon = ((local(f"data/unlisted/mech_modules/Icon_entry_{it['id']}.png") and f"Icon_entry_{it['id']}")
+                    or mods.get(mod_name(it['n'])) or (db_mods.get(g) or {}).get('icon') or group_icon)
             if icon:
-                out['module'][it['id']] = local(f'data/unlisted/mech_modules/{icon}.png') or f'{CDN}skill/{icon}.png'
+                group_icon = group_icon or icon
+                out['module'][it['id']] = skill_icon(icon) if icon.startswith('Icon_skill') else \
+                    local(f'data/unlisted/mech_modules/{icon}.png') or f'{CDN}skill/{icon}.png'
 
     feats = load('features/features.json')
     for port in ('pilot', 'st', 'weapon'):

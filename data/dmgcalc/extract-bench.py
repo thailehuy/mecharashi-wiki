@@ -30,6 +30,8 @@ PAGE = os.path.join(PAGE_DIR, 'index.html')
 MECHS = os.path.join(HERE, '..', 'db', 'mechs.json')
 
 DATA_PREFIX = 'const D = '
+# The bench's names for the last two Armed Conquest difficulties -> their in-game names.
+DIFFICULTY_NAMES = {'Hell': 'Extreme', 'Difficulty 4': 'Inferno'}
 
 
 RARITY = ['C', 'R', 'SR', 'SSR', 'SSSR']
@@ -53,6 +55,9 @@ def prune(data):
     types = {w['type'] for w in data['weapons'].values()}
     data['adv'] = {k: v for k, v in data['adv'].items() if k in types}
     data.pop('catShown', None)                       # never read by bench.js
+    for M in data['modules'].values():              # placeholder items in the module picker
+        M['items'] = [it for it in M['items'] if it['n'] != 'TEST']
+    data['modules'].pop('3021', None)                # Matrix Mod: defensive only, no effects in the bench
 
     rest = tokens({k: v for k, v in data.items() if k not in ('fx', 'bcat')})
     data['fx'] = {k: v for k, v in data['fx'].items() if k in rest}
@@ -113,6 +118,9 @@ def main():
         if m and m.get('quality'):
             st['q'] = m['quality']
     prune(data)
+    for t in data['targets']:
+        for old, new in DIFFICULTY_NAMES.items():
+            t['label'] = t['label'].replace(f' · {old} ', f' · {new} ')
     code = lines[:data_line] + ['const D = window.BenchData;'] + lines[data_line + 1:]
 
     os.makedirs(PAGE_DIR, exist_ok=True)
