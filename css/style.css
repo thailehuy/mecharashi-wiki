@@ -843,10 +843,17 @@ a.dispatch-cell:hover .dispatch-cell-name {
   display: flex;
   flex-direction: column;
   gap: 0.2rem;
-  margin: 0 0 0 auto;
+  margin: 0;
   padding: 0.5rem 0.75rem;
-  width: 320px;
-  flex-shrink: 0;
+  flex: 1 1 240px;
+}
+
+/* Below 900px the chart fills what's left of the row, or the whole row once
+   it wraps under the name. */
+@media (min-width: 901px) {
+  .detail-name-row > .pilot-attr-chart {
+    max-width: 320px;
+  }
 }
 
 .pilot-attr {
@@ -914,10 +921,6 @@ a.dispatch-cell:hover .dispatch-cell-name {
 @media (max-width: 700px) {
   .detail-name-row {
     flex-wrap: wrap;
-  }
-  .detail-name-row > .pilot-attr-chart {
-    width: 100%;
-    margin-left: 0;
   }
   .pilot-attr .avail-tooltip {
     top: calc(100% + 4px);
@@ -1090,6 +1093,24 @@ a.dispatch-cell:hover .dispatch-cell-name {
   border: 1px solid #2a2a4a;
   flex-shrink: 0;
   transition: opacity 0.22s ease;
+}
+
+.detail-name-row > .detail-avatar-col {
+  align-items: center;
+  gap: 0.3rem;
+}
+
+/* The avatar fills whatever height the tag below leaves it. */
+.detail-avatar-col .detail-name-avatar {
+  flex: 1 1 0;
+  height: auto;
+  min-height: 64px;
+}
+
+.detail-avatar-col .tag {
+  font-size: 0.75rem;
+  padding: 3px 8px;
+  text-align: center;
 }
 
 .detail-name-row .detail-tags {

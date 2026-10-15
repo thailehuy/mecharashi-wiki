@@ -379,7 +379,10 @@ Pages.pilots = {
       cnWarning +
       '<a href="' + App.href('pilots') + '" class="btn-back">&#8592; Back to Pilots</a>' +
       '<div class="detail-name-row">' +
-        '<img class="detail-name-avatar" src="' + thumbSrc + '" onerror="this.onerror=null;this.src=\'' + thumbFallback + '\';" alt="' + $('<span>').text(p.PilotName).html() + '" style="background-image:url(\'' + bgSrc + '\')" />' +
+        '<div class="detail-avatar-col">' +
+          '<img class="detail-name-avatar" src="' + thumbSrc + '" onerror="this.onerror=null;this.src=\'' + thumbFallback + '\';" alt="' + $('<span>').text(p.PilotName).html() + '" style="background-image:url(\'' + bgSrc + '\')" />' +
+          availabilityTagHtml(PILOT_AVAILABILITY[p.PilotName]) +
+        '</div>' +
         '<div>' +
           '<h2 class="detail-name">' + occIconHtml + $('<span>').text(p.PilotName).html() + '</h2>' +
           '<p class="detail-realname">' + $('<span>').text(p.RealName).html() + '</p>' +
@@ -388,7 +391,6 @@ Pages.pilots = {
             '<span class="tag">' + $('<span>').text(p.Occupation).html() + '</span>' +
             (p.AllowedMechaDriveList_DriveAllowedList ? '<span class="tag tag-license">' + $('<span>').text(p.AllowedMechaDriveList_DriveAllowedList + ' License').html() + '</span>' : '') +
             '<span class="version-badge-inline">v' + $('<span>').text(p.version).html() + '</span>' +
-            availabilityTagHtml(PILOT_AVAILABILITY[p.PilotName]) +
             '<span class="rank-badge ' + rankClass + '">' + rankLabel + '</span>' +
           '</div>' +
         '</div>' +
