@@ -431,7 +431,7 @@ function pvRound(s, R, raOverride) {
   const R2 = compute({...s, atk: {...s.atk, slot: other}, _noPV: true}, raOverride);
   if (!R2) return null;
   const SF = base + R2.g("splash");
-  // same combat, same target: the PV round meets the armor the main round left (e.g. RA - Piercing fired by the attacking hand's
+  // same combat, same target: the PV round meets the armor the main round left (e.g. Piercing fired by the attacking hand's
   // accessories at the start of combat covers both rounds), not the opposite weapon's own accessories
   // the round's own DMG% bucket (yours + the target's DMG taken for the part hit) and the target's damage factor; no FinalDMG%
   const armor = R.armor, H0 = H_START(), mult = (p, H) => Math.max(0, R2.skillM) * Math.max(0, SF) * Math.max(0, 1 + R2.dB(p, H)) * R2.npcF(p, H);
@@ -1544,7 +1544,7 @@ function renderFx(id, R) {
   $(id + "-fx").innerHTML = h || `<div class="meta">No bonuses that affect damage.</div>`;
   $(id + "-fxsum").textContent = `${onN} active`;
 }
-/* shots per attack: a range when a weighted accessory (e.g. RA - Augmentation, bullets +1) changes it, with what sets the top */
+/* shots per attack: a range when a weighted accessory (e.g. Augmentation, bullets +1) changes it, with what sets the top */
 /* one shot of a round by where it lands: limb / body (or the focused part), with crit */
 function perPart(by, critDmg) {
   if (T.mode === "focus") return `<b>${fmt(by[T.part], 1)}</b> (crit ${fmt(by[T.part] * (1 + critDmg), 1)}) on the ${esc(T.part.toLowerCase())}`;
@@ -1937,7 +1937,7 @@ function bdPV(R) {
       ["SkillM", R2.skillM.toFixed(2), "the same skill as the main round"],
       ["SplashFactor_base", P.base.toFixed(2), "TCS 1 0.20 (Core Talent 1 alone 0.15), from the game data"],
       ["Flame DMG %", pct(flame, 1), esc(contrib(R2, "splash", true).join(" + ") || "none") + " (FlamethrowerSplashFactorAdd)"],
-      ["eArmor", fmt(P.armor, 1) + (T.mode === "focus" ? "" : ` limb · ${fmt(R.armorBy.Body, 1)} body`), (T.mode === "focus" ? "" : "shots scatter like the main round; ") + "the main round's target armor: armor cuts from the attacking hand's accessories (RA - Piercing) cover both rounds"],
+      ["eArmor", fmt(P.armor, 1) + (T.mode === "focus" ? "" : ` limb · ${fmt(R.armorBy.Body, 1)} body`), (T.mode === "focus" ? "" : "shots scatter like the main round; ") + "the main round's target armor: armor cuts from the attacking hand's accessories (Piercing) cover both rounds"],
       ["DMG%", pct(R2.dB(T.part, H_START()), 1), "same buckets as the main round, incl. the target's damage taken on the part hit"],
       ...(npc !== 1 ? [["eDMGFactor%", pct(npc - 1, 1), esc(tTerms(R2, "npcB", T.part).join(" + ")) + ": the target's own damage factor, a separate (1 + x), as in the main round"]] : []),
       ["FinalDMG%", "—", "not applied to the follow-up round (Perfect Position +15% counts only on the main round)"],

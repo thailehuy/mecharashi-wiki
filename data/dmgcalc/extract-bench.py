@@ -28,6 +28,7 @@ OUT_JS = os.path.join(PAGE_DIR, 'bench.js')
 OUT_DATA = os.path.join(HERE, 'bench-data.js')
 PAGE = os.path.join(PAGE_DIR, 'index.html')
 MECHS = os.path.join(HERE, '..', 'db', 'mechs.json')
+ACCESSORIES = os.path.join(HERE, '..', 'accessories', 'compiled.json')
 
 DATA_PREFIX = 'const D = '
 # The bench's names for the last two Armed Conquest difficulties -> their in-game names.
@@ -74,6 +75,18 @@ def prune(data):
     data['bcat'] = {k: v for k, v in data['bcat'].items() if k in used}
 
 
+def rename_components(data):
+    """The bench names accessories "TA - Invasion", "TA W - Invasion" or "TA-W - Invasion";
+    use the wiki's name instead ("Invasion", "Invasion W"), matched on the name and W flag."""
+    with open(ACCESSORIES, encoding='utf-8') as f:
+        wiki = {(a['statetype'].endswith('_W'), a['en_name'].lower()): a['en_name']
+                for a in json.load(f)['accessories']}
+    for C in data['components'].values():
+        n = re.sub(r'^(TA|RA)([ -]W)? - ', '', C['n'])
+        n = wiki.get((C['w'], n.lower()), n)
+        C['n'] = n + ' W' if C['w'] else n
+
+
 def drop_nulls(x):
     if isinstance(x, dict):
         return {k: drop_nulls(v) for k, v in x.items() if v is not None}
@@ -118,6 +131,7 @@ def main():
         if m and m.get('quality'):
             st['q'] = m['quality']
     prune(data)
+    rename_components(data)
     for t in data['targets']:
         for old, new in DIFFICULTY_NAMES.items():
             t['label'] = t['label'].replace(f' · {old} ', f' · {new} ')

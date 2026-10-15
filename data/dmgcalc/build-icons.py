@@ -124,9 +124,11 @@ def main():
         if icon:
             out['back'][k] = local(f'data/backpacks/icons/{icon}.png')
 
-    accs = {a['en_name']: a['icon'] for a in load('accessories/compiled.json')['accessories']}
+    # extract-bench.py gives components the wiki's names, "X" or "X W" (the W ones have their own *_W entries)
+    accs = {(a['statetype'].endswith('_W'), a['en_name']): a['icon'] for a in load('accessories/compiled.json')['accessories']}
     for k, C in D['components'].items():
-        icon = accs.get(re.sub(r'^(TA|RA) - ', '', C['n']))
+        n = re.sub(r' W$', '', C['n']) if C['w'] else C['n']
+        icon = accs.get((C['w'], n)) or accs.get((False, n))
         if icon:
             out['comp'][k] = skill_icon(icon)
 
