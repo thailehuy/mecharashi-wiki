@@ -19,6 +19,22 @@ var Glossary = (function () {
     return (data[type] || {})[id] || null;
   }
 
+  // Href of the pilot, ST or module page called `name`, or null.
+  function pageHref(name) {
+    if (typeof App === 'undefined') return null;
+    if (((window.PilotsData || {}).pilots || []).some(function (p) { return p.PilotName === name; })) {
+      return App.href('pilots', name);
+    }
+    if (((window.MechsData || {}).mechs || []).some(function (m) { return m.name === name; })) {
+      return App.href('sts', name);
+    }
+    var modules = (window.ModulesData || {}).modules || {};
+    if (Object.keys(modules).some(function (fam) { return modules[fam].name === name; })) {
+      return App.href('modules', name.toLowerCase());
+    }
+    return null;
+  }
+
   // Effect text frequently references other keywords as bare "[Name]" with no
   // <buf ID=..> wrapper (the glossary source data itself is often written this
   // way). Build a name -> id lookup so those can still be resolved and linked.
@@ -127,7 +143,12 @@ var Glossary = (function () {
       var skillId = !bufId && nameIndex.skill[name];
       var terrainId = !bufId && !skillId && nameIndex.terrain[name];
       if (!bufId && !skillId && !terrainId) {
-        kwMap[key] = '[' + name + ']';
+        // A pilot, ST or module name (e.g. Stargazer Unit's "When piloted by
+        // [Lustre]") links to that item's page.
+        var href = pageHref(name);
+        kwMap[key] = href
+          ? '<a href="' + href + '" class="kw kw-pilot">[' + name + ']</a>'
+          : '[' + name + ']';
         return key;
       }
       var type = bufId ? 'buf' : skillId ? 'skill' : 'terrain';
@@ -240,10 +261,18 @@ var Glossary = (function () {
       ['Talent0_2Ability', 'Talent3_5Ability'].forEach(function (key) {
         var t = p[key];
         if (!t || !t.ID || !t.name) return;
-        if (data.skill[t.ID]) return;
+        // Some talents share their ID with a Code they grant (e.g. Verna's
+        // Creed of Sin and Vengeance Strike are both 601050), so register
+        // those under a synthetic ID or bare "[Talent]" references can't resolve.
+        var tId = t.ID;
+        if (data.skill[tId]) {
+          if (data.skill[tId].name === t.name) return;
+          tId = 'talent:' + t.ID;
+          if (data.skill[tId]) return;
+        }
         var tEntry = { name: t.name, effect: t.SpecificEffects || '' };
         if (t.SkillIcon || t.icon) tEntry.icon = t.SkillIcon || t.icon;
-        data.skill[t.ID] = tEntry;
+        data.skill[tId] = tEntry;
       });
       // Hidden skills (e.g. a weapon-granted bonus skill) have no stable
       // numeric ID in the source data, so give them a synthetic one scoped

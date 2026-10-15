@@ -500,6 +500,66 @@ window.GlossaryData = {
       "name": "Stealth I",
       "effect": "Cannot be targeted by active attacks. [Stealth] is forcibly removed when actively attacking, being attacked and taking damage, or if enemies exist within 2 adjacent tiles."
     },
+    "3004412": {
+      "name": "Stealth II",
+      "effect": "Cannot be targeted by active attacks. [Stealth] is forcibly removed when actively attacking, being attacked and taking damage, or if enemies exist within 1 adjacent tile."
+    },
+    "3004452": {
+      "name": "Stealth III",
+      "effect": "Cannot be targeted by active attacks. [Stealth] is forcibly removed when actively attacking, being attacked and taking damage, or if enemies exist within 1 adjacent tile."
+    },
+    "623076": {
+      "name": "Countercharge",
+      "effect": "Upon gaining 6 stacks, restores 15% HP to all parts and 1 AP after combat. Removes all stacks after triggering. Can only trigger 1 time per turn."
+    },
+    "900119": {
+      "name": "Hyper-Aptamer",
+      "effect": "A super pilot capable of directly controlling STs and weapons through resonance with arashi matter."
+    },
+    "530212": {
+      "name": "Energy Optimization",
+      "effect": "Next Missile Launcher attack's AP Cost -1."
+    },
+    "7101005": {
+      "name": "Hit Rate Down III",
+      "effect": "Hit Rate -12%."
+    },
+    "530172": {
+      "name": "Retaliation DMG UP",
+      "effect": "DMG +15% on retaliation. Stacks up to 5 times."
+    },
+    "900116": {
+      "name": "Reckless Retaliation",
+      "effect": "Triggers [Selfless Guard] to endure attacks, then immediately launches a retaliation."
+    },
+    "530544": {
+      "name": "Standing Tall",
+      "effect": "DMG Taken -5% per stack. Removed at start of action."
+    },
+    "204312": {
+      "name": "Kinetic Monitor",
+      "effect": "Next active attack's AP Cost -1, down to a minimum of 1 AP. Removed after triggering."
+    },
+    "900047": {
+      "name": "Weapon Type",
+      "effect": "Weapon types include Melee, Assault, Ranged, and Tactical."
+    },
+    "204551": {
+      "name": "Mode - Martial",
+      "effect": "When initiating combat, has a <color=#F74848>35%</color> chance to trigger <buf ID=900010>[Gusty Strike]</buf>, dealing <color=#F74848>0.4</color>x DMG."
+    },
+    "204561": {
+      "name": "Mode - Moonflower",
+      "effect": "When actively attacking, inflicts <buf ID=7101702>[Armor Down II]</buf> on the target before combat, lasting for <color=#F74848>1</color> turn."
+    },
+    "204571": {
+      "name": "Mode - Affection",
+      "effect": "Aura: Grants DMG <color=#F74848>+6%</color> and Hit Rate <color=#F74848>+3%</color> to allies within <color=#F74848>2</color> adjacent tiles."
+    },
+    "204581": {
+      "name": "Mode - Unhurt",
+      "effect": "When the Legs are broken, Movement does not decrease, and it gains the <buf ID=6005461>[Movement Down Immunity]</buf> effect."
+    },
     "3005412": {
       "name": "Global Repair Effect Down",
       "effect": "Repair AMT Received -25%."

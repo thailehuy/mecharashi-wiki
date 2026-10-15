@@ -1781,7 +1781,7 @@
         {
           "ID": "53047",
           "name": "Frontline Repair",
-          "SpecificEffects": "Repair AMT of [Salvage Repair] is further increased by <color=#F74848>0.35</color>x Manipulator Repair AMT.",
+          "SpecificEffects": "Repair AMT of [Salvage Repair 1] is further increased by <color=#F74848>0.35</color>x Manipulator Repair AMT.",
           "SkillIcon": "Icon_skill_passive_3131",
           "icon": "Icon_skill_passive_3131"
         },
@@ -1871,7 +1871,7 @@
         {
           "ID": "90002",
           "name": "Good Medicine Tastes Bitter",
-          "SpecificEffects": "Enhanced <buf ID=5009501>[Good Medicine Tastes Bitter]</buf>: Upon deployment, gains <color=#F74848>5</color> stacks of [False Intentions]. After actively attacking using <buf ID=5009501>[Good Medicine Tastes Bitter]</buf> or <buf ID=5009418>[Resonance Pulse]</buf> and dealing <buf ID=900017>[Fixed DMG]</buf>, gains <color=#F74848>1</color> stack of [False Intentions], up to <color=#F74848>20</color> stacks.",
+          "SpecificEffects": "Enhanced [Good Medicine Tastes Bitter]: Upon deployment, gains <color=#F74848>5</color> stacks of [False Intentions]. After actively attacking using [Good Medicine Tastes Bitter] or <buf ID=5009418>[Resonance Pulse]</buf> and dealing <buf ID=900017>[Fixed DMG]</buf>, gains <color=#F74848>1</color> stack of [False Intentions], up to <color=#F74848>20</color> stacks.",
           "SkillIcon": "Icon_skill_talent_3107",
           "icon": "Icon_skill_talent_3107"
         },
@@ -2195,7 +2195,7 @@
         {
           "ID": "53042",
           "name": "Lunar Snare",
-          "SpecificEffects": "Enhanced [Lunar Snare]: At start of action, if there are <color=#F74848>3</color> or more enemy units within aura range, this unit gains <color=#F74848>1</color> AP. If there are enemies within aura range affected by <buf ID=7101505>[Crash]</buf> or <buf ID=1009083>[Intimidation]</buf>, DMG <color=#F74848>+15%</color>, DMG Taken <color=#F74848>-15%</color>.",
+          "SpecificEffects": "Enhanced [Intimidating Moonlight]: At start of action, if there are <color=#F74848>3</color> or more enemy units within aura range, this unit gains <color=#F74848>1</color> AP. If there are enemies within aura range affected by <buf ID=7101505>[Crash]</buf> or <buf ID=1009083>[Intimidation]</buf>, DMG <color=#F74848>+15%</color>, DMG Taken <color=#F74848>-15%</color>.",
           "SkillIcon": "Icon_skill_passive_5231",
           "icon": "Icon_skill_passive_5231"
         },
