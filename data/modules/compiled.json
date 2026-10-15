@@ -917,6 +917,110 @@
         "8": "When attacking a target with HP higher than <color=#F74848>60%</color>, DMG <color=#F74848>+18%</color>.\nIf a part is not broken, trigger <buf ID=900001>[Flurry Strike]</buf>, dealing <color=#F74848>0.25x</color> DMG."
       }
     },
+    "9027": {
+      "name": "Frostedge Amplifier",
+      "icon": "Icon_skill_passive_1101",
+      "category": "SuitS",
+      "maxLevel": 4,
+      "currentLevel": 4,
+      "levels": {
+        "1": "DMG Dealt increases by <color=#F74848>4%</color>. When actively attacking, if the target is in a straight line with this unit, DMG Dealt additionally increases by <color=#F74848>3%</color>.",
+        "2": "DMG Dealt increases by <color=#F74848>8%</color>. When actively attacking, if the target is in a straight line with this unit, DMG Dealt additionally increases by <color=#F74848>6%</color>.",
+        "3": "DMG Dealt increases by <color=#F74848>14%</color>. When actively attacking, if the target is in a straight line with this unit, DMG Dealt additionally increases by <color=#F74848>10%</color>.",
+        "4": "DMG Dealt increases by <color=#F74848>20%</color>. When actively attacking, if the target is in a straight line with this unit, DMG Dealt additionally increases by <color=#F74848>15%</color>."
+      }
+    },
+    "9026": {
+      "name": "Raptor Unit",
+      "icon": "Icon_skill_passive_4133",
+      "category": "SuitS",
+      "maxLevel": 4,
+      "currentLevel": 4,
+      "levels": {
+        "1": "When actively attacking with a Melee Weapon, Critical Hit chance increases by <color=#F74848>4%</color>. If the target part has no destroyed parts, DMG Dealt increases by <color=#F74848>4%</color>.",
+        "2": "When actively attacking with a Melee Weapon, Critical Hit chance increases by <color=#F74848>8%</color>. If the target part has no destroyed parts, DMG Dealt increases by <color=#F74848>8%</color>.",
+        "3": "When actively attacking with a Melee Weapon, Critical Hit chance increases by <color=#F74848>14%</color>. If the target part has no destroyed parts, DMG Dealt increases by <color=#F74848>14%</color>.",
+        "4": "When actively attacking with a Melee Weapon, Critical Hit chance increases by <color=#F74848>20%</color>. If the target part has no destroyed parts, DMG Dealt increases by <color=#F74848>20%</color>."
+      }
+    },
+    "9025": {
+      "name": "Asynchronous Sensor",
+      "icon": "Icon_skill_passive_1127",
+      "category": "SuitS",
+      "maxLevel": 4,
+      "currentLevel": 4,
+      "levels": {
+        "1": "DMG Dealt increases by <color=#F74848>3%</color>. When the target is more than <color=#F74848>2</color> tiles away, DMG Dealt additionally increases by <color=#F74848>1%</color> for each <color=#F74848>1</color> tile further away, up to <color=#F74848>4%</color>.",
+        "2": "DMG Dealt increases by <color=#F74848>6%</color>. When the target is more than <color=#F74848>2</color> tiles away, DMG Dealt additionally increases by <color=#F74848>2%</color> for each <color=#F74848>1</color> tile further away, up to <color=#F74848>8%</color>.",
+        "3": "DMG Dealt increases by <color=#F74848>10%</color>. When the target is more than <color=#F74848>2</color> tiles away, DMG Dealt additionally increases by <color=#F74848>3.5%</color> for each <color=#F74848>1</color> tile further away, up to <color=#F74848>14%</color>.",
+        "4": "DMG Dealt increases by <color=#F74848>15%</color>. When the target is more than <color=#F74848>2</color> tiles away, DMG Dealt additionally increases by <color=#F74848>5%</color> for each <color=#F74848>1</color> tile further away, up to <color=#F74848>20%</color>."
+      }
+    },
+    "9023": {
+      "name": "Roaring Frame",
+      "icon": "Icon_skill_passive_3138",
+      "category": "SuitS",
+      "maxLevel": 4,
+      "currentLevel": 4,
+      "levels": {
+        "1": "Max HP increases by <color=#F74848>3%</color>. When actively attacking, DMG dealt increases by <color=#F74848>5%</color> if no movement was made before the attack.",
+        "2": "Max HP increases by <color=#F74848>6%</color>. When actively attacking, DMG dealt increases by <color=#F74848>10%</color> if no movement was made before the attack.",
+        "3": "Max HP increases by <color=#F74848>10%</color>. When actively attacking, DMG dealt increases by <color=#F74848>15%</color> if no movement was made before the attack.",
+        "4": "Max HP increases by <color=#F74848>15%</color>. When actively attacking, DMG dealt increases by <color=#F74848>25%</color> if no movement was made before the attack."
+      }
+    },
+    "9022": {
+      "name": "Refraction Array",
+      "icon": "Icon_skill_passive_1180",
+      "category": "SuitS",
+      "maxLevel": 4,
+      "currentLevel": 4,
+      "levels": {
+        "1": "When attacking with Tactical weapons, DMG dealt increases by <color=#F74848>4%</color>. When attacking with shoulder-mounted weapons, Critical Hit chance increases by <color=#F74848>3%</color>.",
+        "2": "When attacking with Tactical weapons, DMG dealt increases by <color=#F74848>8%</color>. When attacking with shoulder-mounted weapons, Critical Hit chance increases by <color=#F74848>6%</color>.",
+        "3": "When attacking with Tactical weapons, DMG dealt increases by <color=#F74848>14%</color>. When attacking with shoulder-mounted weapons, Critical Hit chance increases by <color=#F74848>10%</color>.",
+        "4": "When attacking with Tactical weapons, DMG dealt increases by <color=#F74848>20%</color>. When attacking with shoulder-mounted weapons, Critical Hit chance increases by <color=#F74848>15%</color>."
+      }
+    },
+    "9021": {
+      "name": "Doomsday Core",
+      "icon": "Icon_skill_passive_1179",
+      "category": "SuitS",
+      "maxLevel": 4,
+      "currentLevel": 4,
+      "levels": {
+        "1": "Reduces DMG taken by <color=#F74848>3%</color> when attacked by enemies afflicted with debuffs. DMG dealt increases by <color=#F74848>3%</color> when attacking enemies afflicted with debuffs. DMG dealt additionally increases by <color=#F74848>1%</color> for each <color=#F74848>1</color> debuff present, up to <color=#F74848>6%</color>.",
+        "2": "Reduces DMG taken by <color=#F74848>6%</color> when attacked by enemies afflicted with debuffs. DMG dealt increases by <color=#F74848>6%</color> when attacking enemies afflicted with debuffs. DMG dealt additionally increases by <color=#F74848>2%</color> for each <color=#F74848>1</color> debuff present, up to <color=#F74848>12%</color>.",
+        "3": "Reduces DMG taken by <color=#F74848>10%</color> when attacked by enemies afflicted with debuffs. DMG dealt increases by <color=#F74848>10%</color> when attacking enemies afflicted with debuffs. DMG dealt additionally increases by <color=#F74848>2%</color> for each <color=#F74848>1</color> debuff present, up to <color=#F74848>20%</color>.",
+        "4": "Reduces DMG taken by <color=#F74848>15%</color> when attacked by enemies afflicted with debuffs. DMG dealt increases by <color=#F74848>15%</color> when attacking enemies afflicted with debuffs. DMG dealt additionally increases by <color=#F74848>3%</color> for each <color=#F74848>1</color> debuff present, up to <color=#F74848>30%</color>."
+      }
+    },
+    "9020": {
+      "name": "Deep Linker",
+      "icon": "Icon_skill_passive_1146",
+      "category": "SuitS",
+      "maxLevel": 4,
+      "currentLevel": 4,
+      "levels": {
+        "1": "DMG dealt increases by <color=#F74848>3%</color>. For each 1 debuff applied, DMG dealt additionally increases by <color=#F74848>2%</color>, stacking up to <color=#F74848>3</color> times, lasting for <color=#F74848>2</color> turns.",
+        "2": "DMG dealt increases by <color=#F74848>6%</color>. For each 1 debuff applied, DMG dealt additionally increases by <color=#F74848>3%</color>, stacking up to <color=#F74848>3</color> times, lasting for <color=#F74848>2</color> turns.",
+        "3": "DMG dealt increases by <color=#F74848>10%</color>. For each 1 debuff applied, DMG dealt additionally increases by <color=#F74848>3%</color>, stacking up to <color=#F74848>5</color> times, lasting for <color=#F74848>2</color> turns.",
+        "4": "DMG dealt increases by <color=#F74848>15%</color>. For each 1 debuff applied, DMG dealt additionally increases by <color=#F74848>4%</color>, stacking up to <color=#F74848>5</color> times, lasting for <color=#F74848>2</color> turns."
+      }
+    },
+    "9010": {
+      "name": "Origin Core",
+      "icon": "Icon_entry_40042",
+      "category": "SuitS",
+      "maxLevel": 4,
+      "currentLevel": 4,
+      "levels": {
+        "1": "During enemy turn, increases Dodge Rate by <color=#F74848>3%</color> of Firepower. During own turn, increases Firepower by <color=#F74848>3%</color> of Dodge Rate.",
+        "2": "During enemy turn, increases Dodge Rate by <color=#F74848>6%</color> of Firepower. During own turn, increases Firepower by <color=#F74848>6%</color> of Dodge Rate.",
+        "3": "During enemy turn, increases Dodge Rate by <color=#F74848>9%</color> of Firepower. During own turn, increases Firepower by <color=#F74848>9%</color> of Dodge Rate.",
+        "4": "During enemy turn, increases Dodge Rate by <color=#F74848>15%</color> of Firepower. During own turn, increases Firepower by <color=#F74848>15%</color> of Dodge Rate."
+      }
+    },
     "2070": {
       "name": "Annihilation Drive",
       "icon": "Icon_skill_passive_1132",
@@ -1694,19 +1798,6 @@
         "8": "When attacking, if there are other allies within <color=#F74848>4</color> tiles of the target, DMG <color=#F74848>+18%</color>.\nAt end of action, if <color=#F74848>2</color> attacks or Code skills were used this turn, regens <color=#F74848>1</color> AP."
       }
     },
-    "9010": {
-      "name": "Origin Core",
-      "icon": "Icon_entry_40042",
-      "category": "GeneralSuit",
-      "maxLevel": 4,
-      "currentLevel": 4,
-      "levels": {
-        "1": "During enemy turn, increases Dodge Rate by <color=#F74848>3%</color> of Firepower. During own turn, increases Firepower by <color=#F74848>3%</color> of Dodge Rate.",
-        "2": "During enemy turn, increases Dodge Rate by <color=#F74848>6%</color> of Firepower. During own turn, increases Firepower by <color=#F74848>6%</color> of Dodge Rate.",
-        "3": "During enemy turn, increases Dodge Rate by <color=#F74848>9%</color> of Firepower. During own turn, increases Firepower by <color=#F74848>9%</color> of Dodge Rate.",
-        "4": "During enemy turn, increases Dodge Rate by <color=#F74848>15%</color> of Firepower. During own turn, increases Firepower by <color=#F74848>15%</color> of Dodge Rate."
-      }
-    },
     "1050": {
       "name": "Descension Module",
       "icon": "Icon_entry_10109",
@@ -1741,19 +1832,6 @@
         "8": "When attacked, if the attacker's Hit Rate is less than or equal to <color=#F74848>70%</color>, Retaliation DMG Dealt <color=#F74848>+24%</color>.\nAfter each Retaliation, increases own skill multiplier by <color=#F74848>+0.05</color>, up to <color=#F74848>+0.15</color>. Resets at end of action."
       }
     },
-    "9020": {
-      "name": "Deep Linker",
-      "icon": "Icon_skill_passive_1146",
-      "category": "GeneralSuit",
-      "maxLevel": 4,
-      "currentLevel": 4,
-      "levels": {
-        "1": "DMG dealt increases by <color=#F74848>3%</color>. For each 1 debuff applied, DMG dealt additionally increases by <color=#F74848>2%</color>, stacking up to <color=#F74848>3</color> times, lasting for <color=#F74848>2</color> turns.",
-        "2": "DMG dealt increases by <color=#F74848>6%</color>. For each 1 debuff applied, DMG dealt additionally increases by <color=#F74848>3%</color>, stacking up to <color=#F74848>3</color> times, lasting for <color=#F74848>2</color> turns.",
-        "3": "DMG dealt increases by <color=#F74848>10%</color>. For each 1 debuff applied, DMG dealt additionally increases by <color=#F74848>3%</color>, stacking up to <color=#F74848>5</color> times, lasting for <color=#F74848>2</color> turns.",
-        "4": "DMG dealt increases by <color=#F74848>15%</color>. For each 1 debuff applied, DMG dealt additionally increases by <color=#F74848>4%</color>, stacking up to <color=#F74848>5</color> times, lasting for <color=#F74848>2</color> turns."
-      }
-    },
     "9030": {
       "name": "Momentum Module",
       "icon": "Icon_entry_10110",
@@ -1769,19 +1847,6 @@
         "6": "DMG dealt increases by <color=#F74848>8%</color>. DMG dealt additionally increases by <color=#F74848>1%</color> for each 1 debuff the enemy team carries, up to <color=#F74848>8%</color>.\nWhen initiating combat, there is a <color=#F74848>25%</color> chance to trigger <buf ID=900001>[Flurry Strike]</buf> following the enemy's attack, dealing <color=#F74848>0.25</color>x DMG. This trigger chance increases by <color=#F74848>25%</color> for each debuff the target carries before combat.",
         "7": "DMG dealt increases by <color=#F74848>9%</color>. DMG dealt additionally increases by <color=#F74848>1.5%</color> for each 1 debuff the enemy team carries, up to <color=#F74848>9%</color>.\nWhen initiating combat, there is a <color=#F74848>25%</color> chance to trigger <buf ID=900001>[Flurry Strike]</buf> following the enemy's attack, dealing <color=#F74848>0.25</color>x DMG. This trigger chance increases by <color=#F74848>25%</color> for each debuff the target carries before combat.",
         "8": "DMG dealt increases by <color=#F74848>12%</color>. DMG dealt additionally increases by <color=#F74848>1.5%</color> for each 1 debuff the enemy team carries, up to <color=#F74848>12%</color>.\nWhen initiating combat, there is a <color=#F74848>25%</color> chance to trigger <buf ID=900001>[Flurry Strike]</buf> following the enemy's attack, dealing <color=#F74848>0.25</color>x DMG. This trigger chance increases by <color=#F74848>25%</color> for each debuff the target carries before combat."
-      }
-    },
-    "9021": {
-      "name": "Doomsday Core",
-      "icon": "Icon_skill_passive_1179",
-      "category": "GeneralSuit",
-      "maxLevel": 4,
-      "currentLevel": 4,
-      "levels": {
-        "1": "Reduces DMG taken by <color=#F74848>3%</color> when attacked by enemies afflicted with debuffs. DMG dealt increases by <color=#F74848>3%</color> when attacking enemies afflicted with debuffs. DMG dealt additionally increases by <color=#F74848>1%</color> for each <color=#F74848>1</color> debuff present, up to <color=#F74848>6%</color>.",
-        "2": "Reduces DMG taken by <color=#F74848>6%</color> when attacked by enemies afflicted with debuffs. DMG dealt increases by <color=#F74848>6%</color> when attacking enemies afflicted with debuffs. DMG dealt additionally increases by <color=#F74848>2%</color> for each <color=#F74848>1</color> debuff present, up to <color=#F74848>12%</color>.",
-        "3": "Reduces DMG taken by <color=#F74848>10%</color> when attacked by enemies afflicted with debuffs. DMG dealt increases by <color=#F74848>10%</color> when attacking enemies afflicted with debuffs. DMG dealt additionally increases by <color=#F74848>2%</color> for each <color=#F74848>1</color> debuff present, up to <color=#F74848>20%</color>.",
-        "4": "Reduces DMG taken by <color=#F74848>15%</color> when attacked by enemies afflicted with debuffs. DMG dealt increases by <color=#F74848>15%</color> when attacking enemies afflicted with debuffs. DMG dealt additionally increases by <color=#F74848>3%</color> for each <color=#F74848>1</color> debuff present, up to <color=#F74848>30%</color>."
       }
     },
     "9031": {
@@ -1801,19 +1866,6 @@
         "8": "When attacking a target carrying debuffs, all intact parts gain Temporary HP equal to <color=#F74848>1.5%</color> of max HP, up to a maximum of <color=#F74848>24%</color> of max HP.\nReduces the skill multiplier of all enemies within <color=#F74848>3</color> adjacent tiles by <color=#F74848>0.1</color> (this effect is reduced to <color=#F74848>1/4</color> against Rocket weapons). For every affected target within range, this unit's skill multiplier increases by <color=#F74848>0.025</color>, up to a maximum of <color=#F74848>0.1</color>."
       }
     },
-    "9022": {
-      "name": "Refraction Array",
-      "icon": "Icon_skill_passive_1180",
-      "category": "GeneralSuit",
-      "maxLevel": 4,
-      "currentLevel": 4,
-      "levels": {
-        "1": "When attacking with Tactical weapons, DMG dealt increases by <color=#F74848>4%</color>. When attacking with shoulder-mounted weapons, Critical Hit chance increases by <color=#F74848>3%</color>.",
-        "2": "When attacking with Tactical weapons, DMG dealt increases by <color=#F74848>8%</color>. When attacking with shoulder-mounted weapons, Critical Hit chance increases by <color=#F74848>6%</color>.",
-        "3": "When attacking with Tactical weapons, DMG dealt increases by <color=#F74848>14%</color>. When attacking with shoulder-mounted weapons, Critical Hit chance increases by <color=#F74848>10%</color>.",
-        "4": "When attacking with Tactical weapons, DMG dealt increases by <color=#F74848>20%</color>. When attacking with shoulder-mounted weapons, Critical Hit chance increases by <color=#F74848>15%</color>."
-      }
-    },
     "9032": {
       "name": "Last Stand Module",
       "icon": "Icon_entry_10112",
@@ -1829,19 +1881,6 @@
         "6": "When own HP is not full, DMG dealt increases by <color=#F74848>16%</color>.",
         "7": "When own HP is not full, DMG dealt increases by <color=#F74848>18%</color>.",
         "8": "When own HP is not full, DMG dealt increases by <color=#F74848>24%</color>.\nWhen actively attacking, the attack multiplier increases by <color=#F74848>0.025</color> for each ally without full HP, up to <color=#F74848>+0.1</color>. This effect is reduced to <color=#F74848>1/4</color> if equipped with Rocket Launcher."
-      }
-    },
-    "9023": {
-      "name": "Roaring Frame",
-      "icon": "Icon_skill_passive_3138",
-      "category": "GeneralSuit",
-      "maxLevel": 4,
-      "currentLevel": 4,
-      "levels": {
-        "1": "Max HP increases by <color=#F74848>3%</color>. When actively attacking, DMG dealt increases by <color=#F74848>5%</color> if no movement was made before the attack.",
-        "2": "Max HP increases by <color=#F74848>6%</color>. When actively attacking, DMG dealt increases by <color=#F74848>10%</color> if no movement was made before the attack.",
-        "3": "Max HP increases by <color=#F74848>10%</color>. When actively attacking, DMG dealt increases by <color=#F74848>15%</color> if no movement was made before the attack.",
-        "4": "Max HP increases by <color=#F74848>15%</color>. When actively attacking, DMG dealt increases by <color=#F74848>25%</color> if no movement was made before the attack."
       }
     },
     "9033": {
@@ -1891,19 +1930,6 @@
         "8": "DMG dealt increases by <color=#F74848>24%</color> while equipped with <color=#F74848>2</color> different weapon types.\nAfter an action, the DMG multiplier of the next active attack increases by <color=#F74848>+0.1</color>."
       }
     },
-    "9025": {
-      "name": "Asynchronous Sensor",
-      "icon": "Icon_skill_passive_1127",
-      "category": "GeneralSuit",
-      "maxLevel": 4,
-      "currentLevel": 4,
-      "levels": {
-        "1": "DMG Dealt increases by <color=#F74848>3%</color>. When the target is more than <color=#F74848>2</color> tiles away, DMG Dealt additionally increases by <color=#F74848>1%</color> for each <color=#F74848>1</color> tile further away, up to <color=#F74848>4%</color>.",
-        "2": "DMG Dealt increases by <color=#F74848>6%</color>. When the target is more than <color=#F74848>2</color> tiles away, DMG Dealt additionally increases by <color=#F74848>2%</color> for each <color=#F74848>1</color> tile further away, up to <color=#F74848>8%</color>.",
-        "3": "DMG Dealt increases by <color=#F74848>10%</color>. When the target is more than <color=#F74848>2</color> tiles away, DMG Dealt additionally increases by <color=#F74848>3.5%</color> for each <color=#F74848>1</color> tile further away, up to <color=#F74848>14%</color>.",
-        "4": "DMG Dealt increases by <color=#F74848>15%</color>. When the target is more than <color=#F74848>2</color> tiles away, DMG Dealt additionally increases by <color=#F74848>5%</color> for each <color=#F74848>1</color> tile further away, up to <color=#F74848>20%</color>."
-      }
-    },
     "9035": {
       "name": "Annihilation Module",
       "icon": "Icon_entry_40042",
@@ -1921,19 +1947,6 @@
         "8": "Critical Hit chance increases by <color=#F74848>12%</color>. When actively attacking, Critical Hit chance additionally increases by <color=#F74848>3%</color> for each <color=#F74848>1</color> target within skill range, up to a maximum of <color=#F74848>12%</color>.\nIf Critical Hit chance exceeds <color=#F74848>50%</color>, Critical Hit DMG increases by <color=#F74848>1%</color> for each <color=#F74848>1%</color> of Critical Hit chance above the threshold, up to <color=#F74848>+15%</color>. If an active attack scores a Critical Hit on <color=#F74848>2</color> or more targets, gains <color=#F74848>1</color> AP. This effect can trigger <color=#F74848>1</color> time per turn."
       }
     },
-    "9026": {
-      "name": "Raptor Unit",
-      "icon": "Icon_skill_passive_4133",
-      "category": "GeneralSuit",
-      "maxLevel": 4,
-      "currentLevel": 4,
-      "levels": {
-        "1": "When actively attacking with a Melee Weapon, Critical Hit chance increases by <color=#F74848>4%</color>. If the target part has no destroyed parts, DMG Dealt increases by <color=#F74848>4%</color>.",
-        "2": "When actively attacking with a Melee Weapon, Critical Hit chance increases by <color=#F74848>8%</color>. If the target part has no destroyed parts, DMG Dealt increases by <color=#F74848>8%</color>.",
-        "3": "When actively attacking with a Melee Weapon, Critical Hit chance increases by <color=#F74848>14%</color>. If the target part has no destroyed parts, DMG Dealt increases by <color=#F74848>14%</color>.",
-        "4": "When actively attacking with a Melee Weapon, Critical Hit chance increases by <color=#F74848>20%</color>. If the target part has no destroyed parts, DMG Dealt increases by <color=#F74848>20%</color>."
-      }
-    },
     "9036": {
       "name": "Raiding Module",
       "icon": "Icon_entry_10115",
@@ -1949,19 +1962,6 @@
         "6": "When actively attacking with a Melee Weapon, DMG Dealt increases by <color=#F74848>8%</color>. For each <color=#F74848>1</color> <buf ID=900004>[Re-ATK]</buf> triggered during the turn, DMG Dealt additionally increases by <color=#F74848>4%</color>, up to <color=#F74848>12%</color>. This effect is removed at the end of turn.",
         "7": "When actively attacking with a Melee Weapon, DMG Dealt increases by <color=#F74848>9%</color>. For each <color=#F74848>1</color> <buf ID=900004>[Re-ATK]</buf> triggered during the turn, DMG Dealt additionally increases by <color=#F74848>4.5%</color>, up to <color=#F74848>13.5%</color>. This effect is removed at the end of turn.",
         "8": "When actively attacking with a Melee Weapon, DMG Dealt increases by <color=#F74848>12%</color>. For each <color=#F74848>1</color> <buf ID=900004>[Re-ATK]</buf> triggered during the turn, DMG Dealt additionally increases by <color=#F74848>6%</color>, up to <color=#F74848>18%</color>. This effect is removed at the end of turn.\nAfter triggering <buf ID=900004>[Re-ATK]</buf>, Critical Hit chance and Critical Hit DMG increase by <color=#F74848>15%</color>."
-      }
-    },
-    "9027": {
-      "name": "Frostedge Amplifier",
-      "icon": "Icon_skill_passive_1101",
-      "category": "GeneralSuit",
-      "maxLevel": 4,
-      "currentLevel": 4,
-      "levels": {
-        "1": "DMG Dealt increases by <color=#F74848>4%</color>. When actively attacking, if the target is in a straight line with this unit, DMG Dealt additionally increases by <color=#F74848>3%</color>.",
-        "2": "DMG Dealt increases by <color=#F74848>8%</color>. When actively attacking, if the target is in a straight line with this unit, DMG Dealt additionally increases by <color=#F74848>6%</color>.",
-        "3": "DMG Dealt increases by <color=#F74848>14%</color>. When actively attacking, if the target is in a straight line with this unit, DMG Dealt additionally increases by <color=#F74848>10%</color>.",
-        "4": "DMG Dealt increases by <color=#F74848>20%</color>. When actively attacking, if the target is in a straight line with this unit, DMG Dealt additionally increases by <color=#F74848>15%</color>."
       }
     },
     "9037": {
