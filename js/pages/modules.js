@@ -108,7 +108,7 @@ Pages.modules = {
           '<span class="badge bg-secondary ms-3">' + families.length + '</span>' +
         '</div>' +
         '<div class="search-box-wrap">' +
-          '<input type="text" class="search-box" id="module-search" placeholder="Search modules by name..." />' +
+          '<input type="text" class="search-box" id="module-search" placeholder="Search modules by name or ST..." />' +
         '</div>' +
         sectionsHtml +
         '<a class="back-to-top" id="module-back-top" href="#">&#8593; Top</a>' +
@@ -122,8 +122,8 @@ Pages.modules = {
       var $section = $(this);
       var sectionHasMatch = false;
       $section.find('.module-card-wrap').each(function () {
-        var name = decodeURIComponent($(this).data('name') || '');
-        var show = !query || name.indexOf(query) !== -1;
+        var text = decodeURIComponent($(this).data('search') || '');
+        var show = !query || text.indexOf(query) !== -1;
         $(this).toggle(show);
         if (show) sectionHasMatch = true;
       });
@@ -146,10 +146,13 @@ Pages.modules = {
       var sliderHtml = ModuleSlider.html(fam, mod.maxLevel);
       // Standalone (weapon-type) modules are player-equipped independently —
       // they aren't part of any specific mech's fixed kit.
-      var mechIconsHtml = mod.category === 'PropertyS' ? '' : self._mechIconsHtml(fam);
+      var mechs = mod.category === 'PropertyS' ? [] : self._carriers(fam);
+      var mechIconsHtml = self._mechIconsHtml(mechs);
+      // Search matches the module name or any ST shown on the card.
+      var searchText = [mod.name].concat(mechs.map(function (m) { return m.name; })).join('\n').toLowerCase();
 
       return (
-        '<div class="col-12 col-sm-6 col-lg-4 col-xl-3 module-card-wrap" data-name="' + encodeURIComponent(mod.name.toLowerCase()) + '">' +
+        '<div class="col-12 col-sm-6 col-lg-4 col-xl-3 module-card-wrap" data-name="' + encodeURIComponent(mod.name.toLowerCase()) + '" data-search="' + encodeURIComponent(searchText) + '">' +
           '<div class="module-card">' +
             '<div class="module-card-header">' +
               '<img class="module-card-icon" src="' + iconSrc + '"' + moduleIconErrorAttr(mod.icon) + ' alt="" />' +
@@ -174,10 +177,13 @@ Pages.modules = {
   // Small mech-icon row shown on listing cards: quality background behind
   // the icon, quality-colored border, and the mech name shown via a custom
   // CSS hover tooltip (native title tooltips are slow/unreliable to trigger).
-  _mechIconsHtml: function (family) {
-    var mechs = ((window.MechsData || {}).mechs || []).filter(function (m) {
+  _carriers: function (family) {
+    return ((window.MechsData || {}).mechs || []).filter(function (m) {
       return (m.modules || []).some(function (carried) { return carried.id === family; });
     });
+  },
+
+  _mechIconsHtml: function (mechs) {
     if (!mechs.length) return '';
     return (
       '<div class="module-card-mechs">' +
