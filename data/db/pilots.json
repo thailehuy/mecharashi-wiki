@@ -5171,5 +5171,50 @@
         "describe": "Uses a Sniper Rifle to attack a target, dealing <color=#F74848>1.0x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking and gains Hit Rate <color=#F74848>+15%</color>."
       }
     ]
+  },
+  "10103187": {
+    "name": "Morgana",
+    "real_name": "Morgana Slyce",
+    "gender": "Female",
+    "profession": "Assault",
+    "occupation": "Raider",
+    "quality": "SSR",
+    "license": "Heavy",
+    "portrait_icon": "Pilot_13038A_half",
+    "avatar_icon": "Pilot_13038A_Raw",
+    "version": "3.7",
+    "talents": [
+      "187550",
+      "187551"
+    ],
+    "stats": {
+      "combat": "0",
+      "assault": "0",
+      "shooting": "0",
+      "tactics": "0",
+      "defense": "0",
+      "engineering": "0",
+      "ap_init": "5",
+      "ap_max": "5",
+      "ap_regen": "2"
+    },
+    "neural": [
+      {
+        "partition": "raider-alpha",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "raider-beta",
+        "slots": "Attack/Dodge/Dodge"
+      },
+      {
+        "partition": "10103159-gamma1",
+        "slots": "Attack/Dodge/Dodge"
+      },
+      {
+        "partition": "10103187-gamma2",
+        "slots": "Attack/Dodge/Critical"
+      }
+    ]
   }
 }

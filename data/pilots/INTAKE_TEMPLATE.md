@@ -68,21 +68,21 @@ pilot from this template (10103182, Kaidan The Invincible):
 ## Basics
 <!-- → data/db/pilots.json row, keyed by Pilot ID -->
 
-- Pilot ID: 10103181
-- Pilot Name: Sonya                  <!-- name -->
-- Real Name: Sonya Volokova         <!-- real_name -->
+- Pilot ID: 10103187
+- Pilot Name: Morgana                  <!-- name -->
+- Real Name: Morgana Slyce         <!-- real_name -->
 - Gender: Female                    <!-- gender -->
-- Profession: Striker               <!-- profession -->
-- Occupation: Fighter <!-- occupation; also picks the shared α/β partitions and the innate Profession Neuron icon -->
+- Profession: Assault               <!-- profession -->
+- Occupation: Raider <!-- occupation; also picks the shared α/β partitions and the innate Profession Neuron icon -->
 - Quality: SSR                      <!-- quality -->
-- License: Light                    <!-- license -->
+- License: Heavy                    <!-- license -->
 - Game version introduced: 3.7      <!-- version -->
 
 ## Images
 <!-- portrait is prefixed with data/unlisted/pilot_images_half/ -->
 <!-- avatar is prefixed with data/unlisted/pilot_images_raw/ -->
-- Portrait (half-body) file: Pilot_10103181A_half.png  <!-- portrait_icon (without .png) -->
-- Avatar (full portrait) file: Pilot_10103181A_raw.png <!-- avatar_icon (without .png) -->
+- Portrait (half-body) file: Pilot_13038A_half.png  <!-- portrait_icon (without .png) -->
+- Avatar (full portrait) file: Pilot_13038A_raw.png <!-- avatar_icon (without .png) -->
 
 ## Attributes
 <!-- → the pilots.json row's `stats`: Ranged → shooting, Tactical → tactics,
@@ -104,13 +104,13 @@ pilot from this template (10103182, Kaidan The Invincible):
      the pilots.json row's `talents` is [basic ID, ascended ID] -->
 
 ### Basic Talent
-- Name: Frost Gaze Flame Heart
-- Effect text: At the start of action, inflicts [Opening] in a random direction to all enemies not carrying [Opening], and inflicts [Opening] in the direction facing this unit to the closest enemy, lasting for 1 turn. Gains 1 stack of [Fighting Spirit] for each 1 stack of [Opening] inflicted.
-- Icon name: Icon_skill_talent_5172
+- Name: Deathbound Wanderer
+- Effect text: When eqipped with 2 Shotguns, can perform [Dual Shotgun Attack], [Dual Shotgun Flurry Strike], [Dual Shotgun Retaliation] and [Dual Shotgun Link Attack]. Each attack grants 1 stack of [Predation], up to 30 stacks. When initiating combat, if the distance to the target is 1 tile, can trigger [Re-Act] after combat (up to 1 time per turn).
+- Icon name: Icon_skill_talent_5171
 
 ### Ascended Talent
 <!-- Ascended talent has same name and icon as basic one, with a line split -->
-- Effect text: At the start of action, inflicts [Opening] in a random direction to all enemies not carrying [Opening], and inflicts [Opening] in the direction facing this unit to the closest enemy, lasting for 1 turn. Gains 1 stack of [Fighting Spirit] for each 1 stack of [Opening] inflicted.\nGains 4 stacks of [Fighting Spirit] at the start of battle. Skill multiplier increases by +0.1 when attacking [Opening].
+- Effect text: When eqipped with 2 Shotguns, can perform [Dual Shotgun Attack], [Dual Shotgun Flurry Strike], [Dual Shotgun Retaliation] and [Dual Shotgun Link Attack]. Each attack grants 1 stack of [Predation], up to 30 stacks. When initiating combat, if the distance to the target is 1 tile, can trigger [Re-Act] after combat (up to 1 time per turn).\nAt the start of battle, gains 5 stacks of [Predation]. Movement ignores unit collision.
 
 ## Skills
 
@@ -122,82 +122,79 @@ pilot from this template (10103182, Kaidan The Invincible):
      Actives put their text in `describe`, passives in `effect`.
      AP cost → `ap`, Cooldown → `cd`, Resource: PP → `resource: "PP"`. -->
 ### Skill 0 (innate)
-- Mobile Warfare 1: same as other fighters
+- CEC 1: same as other raiders
 
 ### Skill 1
-- Name: Glacial Gleam
+- Name: No Forgiveness - No Mercy
 - Type: EquipmentSkill <!-- EquipmentSkill / Order / passive -->
-- AP cost: 3
+- AP cost: 4
 - Cooldown:             <!-- if any -->
-- Weapon type: AB <!-- if EquipmentSkill, e.g. SG / AR / SR / MG / Melee; not stored, the effect text names the weapon -->
-- Effect text: Uses Alter-Blades to attack a target, dealing 2x0.6 DMG, prioritizing the body part. Can consume up to 2 stacks of [Fighting Spirit] to increase the skill multiplier by +0.1 per stack consumed.
-- Icon name: Icon_skill_main_1161
+- Weapon type: SG <!-- if EquipmentSkill, e.g. SG / AR / SR / MG / Melee; not stored, the effect text names the weapon -->
+- Effect text: Uses both Shotgun to simultaneously attack a target, dealing 2x0.65 DMG. For each 1 stack of [Predation], this skill multiplier is increased by 0.01x. For each 1 [Basic Attack] performed during current turn, this skill AP cost is reduced by -1, to a minimum of 1. This AP cost is reset after used.
+- Icon name: Icon_skill_main_1182
 
 ### Skill 2
-- Name: Soaring Swan
-- Type: SpecialAssault
-- AP cost: 4
-- Cooldown:
-- Weapon type: AB
-- Effect text: Dashes 3 tiles forward in a selected direction with both Alter-Blades, dealing 1.5x DMG to all targets hit. Enters [Aiming] Mode before attacking. Inflicts [Opening] to all targets hit.
-- Icon name: Icon_skill_order_1174
-
-### Skill 3
-- Name: Nightfall
-- Type: SpecialAssault
-- AP cost: 3
-- Cooldown: 0
-- Weapon type: AB
-- Effect text: Selects <color=#F74848>1</color> target within <color=#F74848>4</color> adjacent tiles (including flying targets) and strikes using Alter-Blades to deal <color=#F74848>1.2x</color> DMG. Can enter <buf ID=900014>[Aiming]</buf> Mode before attacking, then remains on a random empty tile within <color=#F74848>1</color> ring around the target after hitting. Critical Hit DMG increases by 20% for this attack
-- Icon name: Icon_skill_order_1172
-
-### Skill 4
-- Name: Frostmark
+- Name: Predator Rite
 - Type: Order
 - AP cost: 0
+- Cooldown: 3
+- Weapon type: SG
+- Effect text: Gains 5 stacks of [Predation] as well as 2 AP. Can move up to 2 tiles after use and can attack after moving.
+- Icon name: Icon_skill_order_5178
+
+### Skill 3
+- Name: Blood Oath
+- Type: Order
+- AP cost: 0
+- Cooldown: 2
+- Weapon type: SG
+- Effect text: Gains [Blood Pact] for 1 turn. Can continue to act with remaining movement.
+- Icon name: Icon_skill_order_5179
+
+### Skill 4
+- Name: Calamity Covenant
+- Type: Passive
+- AP cost: 0
 - Cooldown:
-- Weapon type: AB
-- Effect text: Selects 1 target within 4 adjacent tiles, inflicts [Opening] in the direction facing [Sonya] to that target. Can continue to act with remaining movement. This skill can only be used 1 time per turn.
-- Icon name: Icon_skill_order_5180
+- Weapon type: SG
+- Effect text: For each 15% HP lost before the attack, DMG Dealt increases by 10%, up to 40%.
+- Icon name: Icon_skill_order_5320
 
 ### Skill 5
-- Name: Moon Splitter
-- Type: SpecialAssault
-- AP cost: 4
+- Name: Shadow Raven Stride
+- Type: Passive
+- AP cost: 0
 - Cooldown:
-- Weapon type: AB
-- Effect text: Selects 1 target within 4 adjacent tiles and attacks 2 times with both Alter-Blades, dealing 0.7x DMG each, prioritizing body part. Before attacking, consumes all stacks of [Fighting Spirit]. For each 2 stacks consumed, perform 1 addtional attack on a random target within 1 ring around the target, prioritizing targets that have not been attacked.
-- Icon name: Icon_skill_order_1173
+- Weapon type: SG
+- Effect text: When a [Basic Attack] lands a Critical Hit, gains Movement +1 for 2 turns, stacking up to 2 times.
+- Icon name: Icon_skill_passive_5329
 
 ### Skill 6
-- Name: Opening Guard
+- Name: Piercing Mastery
 - Type: Passive
 - AP Cost:
 - Cooldown:
-- Effect text: When attacked by Melee or Ranged Weapons, if equipped with two Alter-Blades and both Arms are undestroyed, triggers <buf ID=900136>[Critical Sense]</buf>, dealing <color=#F74848>1.2x</color> DMG. Can only trigger <color=#F74848>1</color> time per turn.
+- Effect text: After performing [Basic Attack], Critical Hit DMG +5%, stacking up to 5 times. Stacks last till the end of action.
 - Icon name: Icon_skill_passive_5238
 
 ### Skill 7
-- Name: Ice Stride
-- Type: Passive
-- Effect text: At the start of turn, dispels 2 debuffs from self
-- Icon name: Icon_skill_passive_3124
+- Missing
 
 ### Skill 8
-- Name: Combat Flow
+- Name: Final Pursuit
 - Type: Passive
 - Resource: PP
-- Effect text: From turn 2, at the start of turn, if possesses 2 or less stacks of [Fighting Spirit], consumes 1 PP to gains 3 stacks of [Fighting Spirit]. Gains 2 PP at the start of battle
-- Icon name: Icon_skill_pp_1112
+- Effect text: When body takes over damage, consumes 1 PP to restores body to 20% of max HP, recovers 5 AP and gains [Last Whisper]. This effect has a 3 turns trigger interval. Gains 2 PP at the start of battle.
+- Icon name: Icon_skill_pp_1111
 
 ## Chip slots setup
 <!-- → `slots` on each entry of the pilots.json row's `neural` list, e.g.
      red/yellow/yellow = "Attack/Dodge/Dodge".
      Red = Attack / Blue = Critical / Yellow = Dodge (verified: Eileen β is red/blue/blue in game = Attack/Critical/Critical; matches .slot-* colors in css/style.css) -->
-- Alpha: red/yellow/yellow
-- Beta: red/yellow/blue
-- Gamma 1: red/yellow/blue
-- Gamma 2: red/yellow/yellow
+- Alpha: red/yellow/blue
+- Beta: red/yellow/yellow
+- Gamma 1: red/yellow/yellow
+- Gamma 2: red/yellow/blue
 
 ## Neural passives (Gamma partition — pilot-specific)
 
@@ -212,22 +209,56 @@ pilot from this template (10103182, Kaidan The Invincible):
 
 ### γ1
 <!-- Name / Effect text / Icon name -->
-- Same as Ada
+- Same as Frida
 
 ### γ2
-- 1:  Ice Blossom Blade 1 / When triggering [Opening], gains 1 AP and 1 stack of [Fighting Spirit]. / Icon_skill_passive_5330
+- 1:  Predator Elite 1 / Talent's [Re-Act] trigger count +1. / Icon_skill_passive_5329
 - 4: (same as other pilots same occupation)
 - 7: (same as other pilots with same occupation)
-- 10: Ice Blossom Blade 2 / When triggering [Opening] on a Boss unit, [Weakness] is regenerated after combat. This effect can trigger 1 time per turn. DMG Dealt increases by 25% against Boss unit. / Icon_skill_passive_5330
-- 13: Ice Blossom Blade 3 / After [Opening] is triggered, gains 1 AP and trigger [Re-Act]. This effect can trigger 1 time per turn. / Icon_skill_passive_5330
-- 16: Ice Blossom Blade 4 / Final DMG Dealt increases by 25%. This effect is decreased by 4% after each ally's action, and resets at the start of turn. / Icon_skill_passive_5330
+- 10: Predator Elite 2 / When initiating combat, if the distance to target is 1 tile, triggers [Dual Shotgun Flurry Strike], up to 2 times per turn / Icon_skill_passive_5329
+- 13: Predator Elite 3 / Each stack of [Predation] additionally grants 1% Critical Hit chance. / Icon_skill_passive_5329
+- 16: Predator Elite 4 / After performing 2 [Basic Attack], AP cost for [Basic Attack] reduces by -1 for that turn, to a minimum of 1 AP. This effect is reset at the end of action. / Icon_skill_passive_5329
 
 
 ### Glossary buf
 <!-- Pick an unused ID for the <buf> tag, add the entry to data/glossary.json (`buf`), and tag every reference in this pilot's text -->
-- Opening: When [Sonya] uses a melee weapon to attack this target from the direction indicated by this debuff and landing a hit, DMG Dealt increases by 20% and the attack will score a Critical Hit. This effect is removed after combat.
-- Fighting Spirit: DMG Dealt increases by 4%, stacking up to 6 times. Can be consumed to enhance [Sonya]'s skills.
+- Predation: Hit Chance increases by 0.5% and DMG Dealt increases by 1% per stack, up to 30 stacks.
+- Blood Pact: Increases Hit Weighting of own body part by +45. After each [Basic Attack], suffers [Percentage HP Reduction] equal to 10% max HP to all parts. This effect will not destroy parts. Shotgun bullets +2.
+- Last Whisper: Immunes to all DMG. After each active attack, triggers [Re-ATK], allowing movement of 1 tile before attacking. This effect has no trigger limit while active and is removed at the end of turn. Gains [Energy Blockade] for 1 turn after this effect is removed.
+- Energy Blockage: Cannot gain AP.
 
 ### Glossary skill 1
 <!-- Pick an unused ID for the <skill> tag, add the entry to data/glossary.json (`skill`), and tag every reference in this pilot's text -->
 <!-- Also scan the skill text itself and link necessary tags -->
+- Name: Dual Shotgun Attack
+- AP: 2
+- CD: 0
+- Icon: Icon_skill_main_1064
+- Effect: Uses both Shotgun to simultaneously attack a target, dealing 2x0.55 DMG.
+
+### Glossary skill 2
+<!-- Pick an unused ID for the <skill> tag, add the entry to data/glossary.json (`skill`), and tag every reference in this pilot's text -->
+<!-- Also scan the skill text itself and link necessary tags -->
+- Name: Dual Shotgun Flurry Strike
+- AP: 0
+- CD: 0
+- Icon: Icon_skill_main_1064
+- Effect: Uses both Shotgun to simultaneously attack a target, dealing 2x0.2 DMG.
+
+### Glossary skill 3
+<!-- Pick an unused ID for the <skill> tag, add the entry to data/glossary.json (`skill`), and tag every reference in this pilot's text -->
+<!-- Also scan the skill text itself and link necessary tags -->
+- Name: Dual Shotgun Retaliation
+- AP: 0
+- CD: 0
+- Icon: Icon_skill_main_1064
+- Effect: Uses both Shotgun to simultaneously retaliate to a target, dealing 2x0.4 DMG.
+
+### Glossary skill 4
+<!-- Pick an unused ID for the <skill> tag, add the entry to data/glossary.json (`skill`), and tag every reference in this pilot's text -->
+<!-- Also scan the skill text itself and link necessary tags -->
+- Name: Dual Shotgun Link Attack
+- AP: 0
+- CD: 0
+- Icon: Icon_skill_main_1064
+- Effect: After an ally launches an attack, use two Shotguns to launch a [Link Attack] on the target they attacked. dealing 2x0.1 DMG.

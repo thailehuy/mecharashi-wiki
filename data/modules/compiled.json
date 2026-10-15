@@ -917,6 +917,19 @@
         "8": "When attacking a target with HP higher than <color=#F74848>60%</color>, DMG <color=#F74848>+18%</color>.\nIf a part is not broken, trigger <buf ID=900001>[Flurry Strike]</buf>, dealing <color=#F74848>0.25x</color> DMG."
       }
     },
+    "9028": {
+      "name": "Deathmark Module",
+      "icon": "Icon_skill_passive_1123",
+      "category": "SuitS",
+      "maxLevel": 4,
+      "currentLevel": 4,
+      "levels": {
+        "1": "When actively attacking with a skill costing <color=#F74848>4</color> AP or less, DMG Dealt increases by <color=#F74848>4%</color>. For each <color=#F74848>1</color> AP below 4, DMG Dealt additionally increases by <color=#F74848>1%</color>, up to <color=#F74848>3%</color>.",
+        "2": "When actively attacking with a skill costing <color=#F74848>4</color> AP or less, DMG Dealt increases by <color=#F74848>8%</color>. For each <color=#F74848>1</color> AP below 4, DMG Dealt additionally increases by <color=#F74848>2%</color>, up to <color=#F74848>6%</color>.",
+        "3": "When actively attacking with a skill costing <color=#F74848>4</color> AP or less, DMG Dealt increases by <color=#F74848>14%</color>. For each <color=#F74848>1</color> AP below 4, DMG Dealt additionally increases by <color=#F74848>3.5%</color>, up to <color=#F74848>10%</color>.",
+        "4": "When actively attacking with a skill costing <color=#F74848>4</color> AP or less, DMG Dealt increases by <color=#F74848>20%</color>. For each <color=#F74848>1</color> AP below 4, DMG Dealt additionally increases by <color=#F74848>5%</color>, up to <color=#F74848>15%</color>."
+      }
+    },
     "9027": {
       "name": "Frostedge Amplifier",
       "icon": "Icon_skill_passive_1101",
@@ -1979,6 +1992,23 @@
         "6": "If <color=#F74848>2</color> or fewer allies have acted, DMG Dealt increases by <color=#F74848>16%</color>.",
         "7": "If <color=#F74848>2</color> or fewer allies have acted, DMG Dealt increases by <color=#F74848>18%</color>.",
         "8": "If <color=#F74848>2</color> or fewer allies have acted, DMG Dealt increases by <color=#F74848>24%</color>.\nWhen attacking with two Melee weapons, skill multiplier increases by <color=#F74848>+0.1</color>."
+      }
+    },
+    "9038": {
+      "name": "Escalation Module",
+      "icon": "Icon_entry_10116",
+      "category": "GeneralSuit",
+      "maxLevel": 8,
+      "currentLevel": 8,
+      "levels": {
+        "1": "When actively attacking, for each <color=#F74848>1</color> hit scored, DMG Dealt increases by <color=#F74848>0.5%</color> and ignores <color=#F74848>5%</color> of the target's Armor, up to <color=#F74848>3%</color> DMG and <color=#F74848>10%</color> Armor ignored.",
+        "2": "When actively attacking, for each <color=#F74848>1</color> hit scored, DMG Dealt increases by <color=#F74848>0.5%</color> and ignores <color=#F74848>5%</color> of the target's Armor, up to <color=#F74848>4.5%</color> DMG and <color=#F74848>15%</color> Armor ignored.",
+        "3": "When actively attacking, for each <color=#F74848>1</color> hit scored, DMG Dealt increases by <color=#F74848>0.5%</color> and ignores <color=#F74848>5%</color> of the target's Armor, up to <color=#F74848>6%</color> DMG and <color=#F74848>20%</color> Armor ignored.",
+        "4": "When actively attacking, for each <color=#F74848>1</color> hit scored, DMG Dealt increases by <color=#F74848>1%</color> and ignores <color=#F74848>5%</color> of the target's Armor, up to <color=#F74848>7.5%</color> DMG and <color=#F74848>25%</color> Armor ignored.",
+        "5": "When actively attacking, for each <color=#F74848>1</color> hit scored, DMG Dealt increases by <color=#F74848>1%</color> and ignores <color=#F74848>5%</color> of the target's Armor, up to <color=#F74848>10.5%</color> DMG and <color=#F74848>35%</color> Armor ignored.",
+        "6": "When actively attacking, for each <color=#F74848>1</color> hit scored, DMG Dealt increases by <color=#F74848>1%</color> and ignores <color=#F74848>5%</color> of the target's Armor, up to <color=#F74848>12%</color> DMG and <color=#F74848>40%</color> Armor ignored.",
+        "7": "When actively attacking, for each <color=#F74848>1</color> hit scored, DMG Dealt increases by <color=#F74848>1.5%</color> and ignores <color=#F74848>5%</color> of the target's Armor, up to <color=#F74848>13.5%</color> DMG and <color=#F74848>45%</color> Armor ignored.",
+        "8": "When actively attacking, for each <color=#F74848>1</color> hit scored, DMG Dealt increases by <color=#F74848>1.5%</color> and ignores <color=#F74848>5%</color> of the target's Armor, up to <color=#F74848>18%</color> DMG and <color=#F74848>60%</color> Armor ignored.\nAfter initiating combat, if <color=#F74848>18</color> or more hits were scored, restores <color=#F74848>1</color> AP. This effect can trigger <color=#F74848>2</color> times per turn."
       }
     },
     "9040": {

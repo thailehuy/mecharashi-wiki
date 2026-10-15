@@ -1533,6 +1533,22 @@ window.GlossaryData = {
     "6011311": {
       "name": "Survival Protocol 1",
       "effect": "When attacked, for each combo hit dodged, restores <color=#F74848>1%</color> HP to undestroyed parts after combat, up to a maximum of <color=#F74848>8%</color>."
+    },
+    "187900": {
+      "name": "Predation",
+      "effect": "Hit Chance increases by <color=#F74848>0.5%</color> and DMG Dealt increases by <color=#F74848>1%</color> per stack, up to <color=#F74848>30</color> stacks."
+    },
+    "187901": {
+      "name": "Blood Pact",
+      "effect": "Hit Weighting of own body part <color=#F74848>+45</color>. After each [Basic Attack], suffers <buf ID=175902>[Percentage HP Reduction]</buf> equal to <color=#F74848>10%</color> max HP to all parts. This effect will not destroy parts. Shotgun bullets <color=#F74848>+2</color>."
+    },
+    "187902": {
+      "name": "Last Whisper",
+      "effect": "Immune to all DMG. After each active attack, triggers <buf ID=900004>[Re-ATK]</buf>, allowing movement of <color=#F74848>1</color> tile before attacking. This effect has no trigger limit while active and is removed at the end of turn. Gains <buf ID=187903>[Energy Blockade]</buf> for <color=#F74848>1</color> turn after this effect is removed."
+    },
+    "187903": {
+      "name": "Energy Blockade",
+      "effect": "Cannot gain AP."
     }
   },
   "skill": {
@@ -2248,6 +2264,34 @@ window.GlossaryData = {
       "CD": "3",
       "icon": "Icon_skill_order_5114",
       "effect": "Disperses Arashi Fog in a <color=#F74848>3x3</color> area, lasting for <color=#F74848>1</color> turn. Then triggers <buf ID=900004>[Re-ATK]</buf> in place."
+    },
+    "187950": {
+      "name": "Dual Shotgun Attack",
+      "Ap": "2",
+      "CD": "0",
+      "icon": "Icon_skill_main_1004",
+      "effect": "Uses both Shotguns to simultaneously attack a target, dealing <color=#F74848>2x0.55</color> DMG."
+    },
+    "187951": {
+      "name": "Dual Shotgun Flurry Strike",
+      "Ap": "0",
+      "CD": "0",
+      "icon": "Icon_skill_main_1004",
+      "effect": "Uses both Shotguns to simultaneously attack a target, dealing <color=#F74848>2x0.2</color> DMG."
+    },
+    "187952": {
+      "name": "Dual Shotgun Retaliation",
+      "Ap": "0",
+      "CD": "0",
+      "icon": "Icon_skill_main_1004",
+      "effect": "Uses both Shotguns to simultaneously retaliate against a target, dealing <color=#F74848>2x0.4</color> DMG."
+    },
+    "187953": {
+      "name": "Dual Shotgun Link Attack",
+      "Ap": "0",
+      "CD": "0",
+      "icon": "Icon_skill_main_1004",
+      "effect": "After an ally launches an attack, uses both Shotguns to launch a <buf ID=900002>[Link Attack]</buf> on the target they attacked, dealing <color=#F74848>2x0.1</color> DMG."
     }
   },
   "terrain": {

@@ -1566,6 +1566,88 @@
       "version": "1.0"
     },
     {
+      "ID": "30400103",
+      "name": "Eclipse",
+      "type": "Heavy",
+      "quality": "SSR",
+      "icon": "Icon_mecha_wap3051",
+      "lihuiIcon": "icon_lihui_wap3051",
+      "output": "2060",
+      "Armor": "144",
+      "fire": "119",
+      "Antiriot": "770",
+      "parts": [
+        {
+          "position": "Body",
+          "aircraftWeight": "360",
+          "maxHp": "13151",
+          "Armor": "1412",
+          "Hit": null,
+          "Dodge": null,
+          "Antiriot": "4472"
+        },
+        {
+          "position": "L-Arm",
+          "aircraftWeight": "180",
+          "maxHp": "7479",
+          "Armor": "941",
+          "Hit": "1672",
+          "Dodge": null,
+          "Antiriot": null
+        },
+        {
+          "position": "R-Arm",
+          "aircraftWeight": "180",
+          "maxHp": "7479",
+          "Armor": "941",
+          "Hit": "1672",
+          "Dodge": null,
+          "Antiriot": null
+        },
+        {
+          "position": "Legs",
+          "aircraftWeight": "230",
+          "maxHp": "10732",
+          "Armor": "941",
+          "Hit": null,
+          "Dodge": "3287",
+          "Antiriot": null
+        }
+      ],
+      "manjiFirepower": "1176",
+      "modules": [
+        {
+          "ID": "90284",
+          "name": "Deathmark Module",
+          "SpecificEffects": "When actively attacking with a skill costing <color=#F74848>4</color> AP or less, DMG Dealt increases by <color=#F74848>20%</color>. For each <color=#F74848>1</color> AP below 4, DMG Dealt additionally increases by <color=#F74848>5%</color>, up to <color=#F74848>15%</color>.",
+          "SkillIcon": "Icon_skill_passive_1123",
+          "icon": "Icon_skill_passive_1123",
+          "id": "9028",
+          "level": 4
+        },
+        {
+          "ID": "40014",
+          "name": "Accuracy Mod",
+          "SpecificEffects": "Hit Rate <color=#F74848>+10%</color>.",
+          "SkillIcon": "Icon_entry_40011",
+          "icon": "Icon_entry_40011",
+          "id": "4001",
+          "level": 4
+        },
+        {
+          "ID": "90388",
+          "name": "Escalation Module",
+          "SpecificEffects": "When actively attacking, for each <color=#F74848>1</color> hit scored, DMG Dealt increases by <color=#F74848>1.5%</color> and ignores <color=#F74848>5%</color> of the target's Armor, up to <color=#F74848>18%</color> DMG and <color=#F74848>60%</color> Armor ignored.\nAfter initiating combat, if <color=#F74848>18</color> or more hits were scored, restores <color=#F74848>1</color> AP. This effect can trigger <color=#F74848>2</color> times per turn.",
+          "SkillIcon": "Icon_entry_10116",
+          "icon": "Icon_entry_10116",
+          "id": "9038",
+          "level": 8
+        }
+      ],
+      "dispatchVersion": "3.8",
+      "version": "3.7"
+    },
+    {
       "ID": "20180103",
       "name": "Erinys",
       "type": "Medium",

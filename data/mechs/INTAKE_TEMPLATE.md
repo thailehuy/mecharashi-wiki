@@ -49,8 +49,8 @@ Checklist for whoever (or whichever agent) turns this into table rows:
 <!-- → data/db/mechs.json row -->
 
 - Mech ID: <8-digit numeric Body part ID, check data/db/mechs.json and mech_parts.json for collisions>
-- Mech Name: Nivequus                      <!-- name -->
-- Type (weight class): Light               <!-- type: Light / Medium / Heavy -->
+- Mech Name: Eclipse                      <!-- name -->
+- Type (weight class): Heavy               <!-- type: Light / Medium / Heavy -->
 - Quality: SSR                             <!-- quality -->
 - Game version introduced: 3.7             <!-- version -->
 - Dispatch version: 3.8                    <!-- dispatch_version (+ dispatch_group if known) -->
@@ -60,12 +60,12 @@ Checklist for whoever (or whichever agent) turns this into table rows:
 <!-- icon is prefixed with data/unlisted/mechs/Icon/<Type>/ -->
 <!-- portrait (Raw) is prefixed with data/unlisted/mechs/Raw/<Type>/ -->
 <!-- alternate skins (if any) are prefixed with data/unlisted/mechs/Skins/<Type>/ -->
-- Icon file: Icon_mecha_wap1071.png        <!-- icon (without .png) -->
-- Portrait/Raw file: Icon_mecha_wap1071_SN_Raw.png  <!-- found from `icon`, no field needed -->
-- CDN mecha icon (only if a CN CDN asset exists): Icon_wap1071_1      <!-- mecha_icon -->
-- CDN portrait key (only if a CN CDN asset exists): icon_lihui_wap1071 <!-- portrait_icon -->
+- Icon file: Icon_mecha_wap3051.png        <!-- icon (without .png) -->
+- Portrait/Raw file: Icon_mecha_wap3051_SN_Raw.png  <!-- found from `icon`, no field needed -->
+- CDN mecha icon (only if a CN CDN asset exists): Icon_wap3051_1      <!-- mecha_icon -->
+- CDN portrait key (only if a CN CDN asset exists): icon_lihui_wap3051 <!-- portrait_icon -->
 - Alternate skins (list each variant token you have a
-  `Img_Skin_wap1071_<variant>.png` file for, or "none"): none        <!-- skins -->
+  `Img_Skin_wap3051_<variant>.png` file for, or "none"): none        <!-- skins -->
 
 ## Max-level stats
 <!-- Each part → one data/db/mech_parts.json row (Body / L-Arm / R-Arm / Legs).
@@ -99,29 +99,29 @@ Checklist for whoever (or whichever agent) turns this into table rows:
 - Weight: 170
 - Armor:
 - Dodge: 5233
-- Move: 4
+- Move: 3
 
 ## Modules
 <!-- Copy this block for each module the ST carries. Each one → a
      { "family": "<id>", "level": <n> } entry in the mech row's `modules`;
      a new module also needs a data/db/modules.json family (see checklist 4). -->
 ### Module 1
-- Name: Frostedge Amplifier
+- Name: Deathmark Module
 - Level: 4/4
-- Effect text: DMG Dealt increases by 4/8/1420%. When actively attacking, if the target is in a straight line with this unit, DMG Dealt additionally increases by 3/6/10/15% <!-- numbers must be wrapped as <color=#F74848>NUMBER</color>, same convention as pilot skill text, record the different level effect based on the numbers split -->
-- Icon name: Icon_skill_passive_5238
+- Effect text: When actively attacking with a skill costing 4 AP or less, DMG Dealt increases by 20%. For each 1 AP below 4, DMG Dealt additionally increases by 5%, up to 15% <!-- numbers must be wrapped as <color=#F74848>NUMBER</color>, same convention as pilot skill text, record the different level effect based on the numbers split -->
+- Icon name: Icon_skill_passive_1123
 
 ### Module 2
-- Name: Firepower Module
+- Name: Accuracy Module
 - Level: 4/4
-- Effect text: Same as others, family 4027 level 4 (ID 40274)
+- Effect text: Same as others, ID 4001
 - Icon name: Same as others
 
 ### Module 3
-- Name: First Strike Module
+- Name: Escalation Module
 - Level: 8/8
-- Effect text: If 2 or less allies have acted, DMG Dealt increases by 4/6/8/10/14/16/18/24%.\nWhen attacking with two Melee weapons, skill multiplier increases by +0.1.<!-- numbers must be wrapped as <color=#F74848>NUMBER</color>, same convention as pilot skill text, record the different level effect based on the numbers split -->
-- Icon name: Icon_entry_10001
+- Effect text: When actively attacking, for each 1 hit scored, DMG Dealt increases by 1.5% and ignores 5% of target's Armor, up to 18% DMG and 60% Armor ignored.\nAfter initiating combat, if scored 18 or more hits, restores 1 AP. This effect can trigger 2 times per turn.<!-- numbers must be wrapped as <color=#F74848>NUMBER</color>, same convention as pilot skill text, record the different level effect based on the numbers split -->
+- Icon name: Icon_entry_10116
 
 ### Glossary buf 1
 <!-- Pick an unused ID for the <buf> tag, add the entry to data/glossary.json (`buf`), and tag every reference in this ST's module text -->

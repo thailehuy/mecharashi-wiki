@@ -3491,5 +3491,41 @@
       "30310401"
     ],
     "modules": []
+  },
+  "30400103": {
+    "name": "Eclipse",
+    "type": "Heavy",
+    "quality": "SSR",
+    "icon": "Icon_mecha_wap3051",
+    "mecha_icon": "Icon_wap3051_1",
+    "portrait_icon": "icon_lihui_wap3051",
+    "output": "2060",
+    "durable": "470",
+    "armor": "144",
+    "fire": "119",
+    "antiriot": "770",
+    "firepower": "1176",
+    "version": "3.7",
+    "dispatch_version": "3.8",
+    "parts": [
+      "30400103",
+      "30400103_ARM_L",
+      "30400103_ARM_R",
+      "30400103_LEGS"
+    ],
+    "modules": [
+      {
+        "family": "9028",
+        "level": 4
+      },
+      {
+        "family": "4001",
+        "level": 4
+      },
+      {
+        "family": "9038",
+        "level": 8
+      }
+    ]
   }
 }

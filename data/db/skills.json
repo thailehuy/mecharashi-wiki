@@ -10274,5 +10274,97 @@
     "effect": "Enhanced [Epiphyllum Move]: When in <buf ID=900014>[Aiming]</buf> Mode, DMG <color=#F74848>+20%</color>. If the target part is undestroyed, DMG is further increased by <color=#F74848>10%</color>. When equipped with a Small Shield, can move with full movement after destroying the target.",
     "icon": "Icon_skill_passive_1160",
     "buffs": "530271/530272/530273/530274"
+  },
+  "187550": {
+    "kind": "talent",
+    "name": "Deathbound Wanderer",
+    "effect": "When equipped with <color=#F74848>2</color> Shotguns, can perform <skill ID=187950>[Dual Shotgun Attack]</skill>, <skill ID=187951>[Dual Shotgun Flurry Strike]</skill>, <skill ID=187952>[Dual Shotgun Retaliation]</skill> and <skill ID=187953>[Dual Shotgun Link Attack]</skill>. Each attack grants <color=#F74848>1</color> stack of <buf ID=187900>[Predation]</buf>, up to <color=#F74848>30</color> stacks. When initiating combat, if the distance to the target is <color=#F74848>1</color> tile, can trigger <buf ID=900005>[Re-Act]</buf> after combat (up to <color=#F74848>1</color> time per turn).",
+    "icon": "Icon_skill_talent_5171"
+  },
+  "187551": {
+    "kind": "talent",
+    "name": "Deathbound Wanderer",
+    "effect": "When equipped with <color=#F74848>2</color> Shotguns, can perform <skill ID=187950>[Dual Shotgun Attack]</skill>, <skill ID=187951>[Dual Shotgun Flurry Strike]</skill>, <skill ID=187952>[Dual Shotgun Retaliation]</skill> and <skill ID=187953>[Dual Shotgun Link Attack]</skill>. Each attack grants <color=#F74848>1</color> stack of <buf ID=187900>[Predation]</buf>, up to <color=#F74848>30</color> stacks. When initiating combat, if the distance to the target is <color=#F74848>1</color> tile, can trigger <buf ID=900005>[Re-Act]</buf> after combat (up to <color=#F74848>1</color> time per turn).\nAt the start of battle, gains <color=#F74848>5</color> stacks of <buf ID=187900>[Predation]</buf>. Movement ignores unit collision.",
+    "icon": "Icon_skill_talent_5171"
+  },
+  "187501": {
+    "kind": "skill",
+    "name": "No Forgiveness - No Mercy",
+    "describe": "Uses both Shotguns to simultaneously attack a target, dealing <color=#F74848>2x0.65</color> DMG. For each <color=#F74848>1</color> stack of <buf ID=187900>[Predation]</buf>, this skill's multiplier increases by <color=#F74848>0.01</color>x. For each <color=#F74848>1</color> [Basic Attack] performed during the current turn, this skill's AP cost is reduced by <color=#F74848>-1</color>, to a minimum of <color=#F74848>1</color>. The AP cost resets after use.",
+    "icon": "Icon_skill_main_1182",
+    "ap": "4",
+    "type": "EquipmentSkill"
+  },
+  "187502": {
+    "kind": "skill",
+    "name": "Predator Rite",
+    "describe": "Gains <color=#F74848>5</color> stacks of <buf ID=187900>[Predation]</buf> and <color=#F74848>2</color> AP. Can move up to <color=#F74848>2</color> tiles after use and can attack after moving.",
+    "icon": "Icon_skill_order_5178",
+    "ap": "0",
+    "cd": "3",
+    "type": "Order"
+  },
+  "187503": {
+    "kind": "skill",
+    "name": "Blood Oath",
+    "describe": "Gains <buf ID=187901>[Blood Pact]</buf> for <color=#F74848>1</color> turn. Can continue to act with remaining movement.",
+    "icon": "Icon_skill_order_5179",
+    "ap": "0",
+    "cd": "2",
+    "type": "Order"
+  },
+  "187504": {
+    "kind": "skill",
+    "name": "Calamity Covenant",
+    "effect": "For each <color=#F74848>15%</color> HP lost before the attack, DMG Dealt increases by <color=#F74848>10%</color>, up to <color=#F74848>40%</color>.",
+    "icon": "Icon_skill_passive_5320"
+  },
+  "187505": {
+    "kind": "skill",
+    "name": "Shadow Raven Stride",
+    "effect": "When a [Basic Attack] lands a Critical Hit, gains Movement <color=#F74848>+1</color> for <color=#F74848>2</color> turns, stacking up to <color=#F74848>2</color> times.",
+    "icon": "Icon_skill_passive_5329"
+  },
+  "187506": {
+    "kind": "skill",
+    "name": "Piercing Mastery",
+    "effect": "After performing a [Basic Attack], Critical Hit DMG <color=#F74848>+5%</color>, stacking up to <color=#F74848>5</color> times. Stacks last until the end of action.",
+    "icon": "Icon_skill_passive_5238"
+  },
+  "187507": {
+    "kind": "skill",
+    "name": "TBA",
+    "effect": "Not yet available."
+  },
+  "187508": {
+    "kind": "skill",
+    "name": "Final Pursuit",
+    "effect": "When the body takes lethal DMG, consumes <color=#F74848>1</color> PP to restore the body to <color=#F74848>20%</color> of max HP, recovers <color=#F74848>5</color> AP and gains <buf ID=187902>[Last Whisper]</buf>. This effect has a <color=#F74848>3</color>-turn trigger interval. Gains <color=#F74848>2</color> PP at the start of battle.",
+    "icon": "Icon_skill_pp_1111",
+    "resource": "PP"
+  },
+  "187570": {
+    "kind": "neural",
+    "name": "Predator Elite 1",
+    "effect": "Talent's <buf ID=900005>[Re-Act]</buf> trigger count <color=#F74848>+1</color>.",
+    "icon": "Icon_skill_passive_5329"
+  },
+  "187571": {
+    "kind": "neural",
+    "name": "Predator Elite 2",
+    "effect": "When initiating combat, if the distance to the target is <color=#F74848>1</color> tile, triggers <skill ID=187951>[Dual Shotgun Flurry Strike]</skill>, up to <color=#F74848>2</color> times per turn.",
+    "icon": "Icon_skill_passive_5329"
+  },
+  "187572": {
+    "kind": "neural",
+    "name": "Predator Elite 3",
+    "effect": "Each stack of <buf ID=187900>[Predation]</buf> additionally grants <color=#F74848>1%</color> Critical Hit chance.",
+    "icon": "Icon_skill_passive_5329"
+  },
+  "187573": {
+    "kind": "neural",
+    "name": "Predator Elite 4",
+    "effect": "After performing <color=#F74848>2</color> [Basic Attack], [Basic Attack] AP cost is reduced by <color=#F74848>-1</color> for that turn, to a minimum of <color=#F74848>1</color> AP. This effect resets at the end of action.",
+    "icon": "Icon_skill_passive_5329"
   }
 }

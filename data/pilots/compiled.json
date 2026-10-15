@@ -20999,6 +20999,518 @@
       }
     },
     {
+      "ID": "10103187",
+      "PilotName": "Morgana",
+      "PortraitHeroIcon": "Pilot_13038A_half",
+      "AvatarHeroIcon": "Pilot_13038A_Raw",
+      "RealName": "Morgana Slyce",
+      "Gender": "Female",
+      "Profession": "Assault",
+      "Occupation": "Raider",
+      "quality": "SSR",
+      "Talent0_2Ability": {
+        "ID": "187550",
+        "name": "Deathbound Wanderer",
+        "SpecificEffects": "When equipped with <color=#F74848>2</color> Shotguns, can perform <skill ID=187950>[Dual Shotgun Attack]</skill>, <skill ID=187951>[Dual Shotgun Flurry Strike]</skill>, <skill ID=187952>[Dual Shotgun Retaliation]</skill> and <skill ID=187953>[Dual Shotgun Link Attack]</skill>. Each attack grants <color=#F74848>1</color> stack of <buf ID=187900>[Predation]</buf>, up to <color=#F74848>30</color> stacks. When initiating combat, if the distance to the target is <color=#F74848>1</color> tile, can trigger <buf ID=900005>[Re-Act]</buf> after combat (up to <color=#F74848>1</color> time per turn).",
+        "SkillIcon": "Icon_skill_talent_5171",
+        "icon": "Icon_skill_talent_5171"
+      },
+      "Talent3_5Ability": {
+        "ID": "187551",
+        "name": "Deathbound Wanderer",
+        "SpecificEffects": "When equipped with <color=#F74848>2</color> Shotguns, can perform <skill ID=187950>[Dual Shotgun Attack]</skill>, <skill ID=187951>[Dual Shotgun Flurry Strike]</skill>, <skill ID=187952>[Dual Shotgun Retaliation]</skill> and <skill ID=187953>[Dual Shotgun Link Attack]</skill>. Each attack grants <color=#F74848>1</color> stack of <buf ID=187900>[Predation]</buf>, up to <color=#F74848>30</color> stacks. When initiating combat, if the distance to the target is <color=#F74848>1</color> tile, can trigger <buf ID=900005>[Re-Act]</buf> after combat (up to <color=#F74848>1</color> time per turn).\nAt the start of battle, gains <color=#F74848>5</color> stacks of <buf ID=187900>[Predation]</buf>. Movement ignores unit collision.",
+        "SkillIcon": "Icon_skill_talent_5171",
+        "icon": "Icon_skill_talent_5171"
+      },
+      "NeuralDriveTemplate": {
+        "ID": "10103187",
+        "ListChipPartition": [
+          {
+            "name": "\u03b1",
+            "TypeComputing": "Alpha",
+            "ListAssembled": "Attack/Dodge/Critical",
+            "ListActivationEffects": [
+              {
+                "MinimumSum": "1",
+                "PassiveSkill": {
+                  "ID": "200011",
+                  "name": "CEC 2",
+                  "SpecificEffects": "<buf ID=900002>[Link Attack]</buf>'s effective times per turn <color=#F74848>+1</color>.",
+                  "SkillIcon": "Icon_skill_passive_1003",
+                  "icon": "Icon_skill_passive_1003"
+                }
+              },
+              {
+                "MinimumSum": "4",
+                "PassiveSkill": {
+                  "ID": "200012",
+                  "name": "Power Innovation 1",
+                  "SpecificEffects": "AP Regen <color=#F74848>+1</color>.",
+                  "SkillIcon": "Icon_skill_passive_5006",
+                  "icon": "Icon_skill_passive_5006"
+                }
+              },
+              {
+                "MinimumSum": "7",
+                "PassiveSkill": {
+                  "ID": "200013",
+                  "name": "AP Optimization 1",
+                  "SpecificEffects": "Initial AP <color=#F74848>+1</color>.",
+                  "SkillIcon": "Icon_skill_passive_5004",
+                  "icon": "Icon_skill_passive_5004"
+                }
+              }
+            ]
+          },
+          {
+            "name": "\u03b2",
+            "TypeComputing": "Beta",
+            "ListAssembled": "Attack/Dodge/Dodge",
+            "ListActivationEffects": [
+              {
+                "MinimumSum": "1",
+                "PassiveSkill": {
+                  "ID": "200021",
+                  "name": "CEC 3",
+                  "SpecificEffects": "<buf ID=900002>[Link Attack]</buf>'s damage multiplier is increased to <color=#F74848>0.3</color>.",
+                  "SkillIcon": "Icon_skill_passive_1003",
+                  "icon": "Icon_skill_passive_1003"
+                }
+              },
+              {
+                "MinimumSum": "4",
+                "PassiveSkill": {
+                  "ID": "200022",
+                  "name": "Power Innovation 2",
+                  "SpecificEffects": "When breaking a part, restore <color=#F74848>1</color> AP after combat, effective up to <color=#F74848>1</color> time per turn.",
+                  "SkillIcon": "Icon_skill_passive_5006",
+                  "icon": "Icon_skill_passive_5006"
+                }
+              },
+              {
+                "MinimumSum": "7",
+                "PassiveSkill": {
+                  "ID": "200023",
+                  "name": "AP Optimization 2",
+                  "SpecificEffects": "AP Cap <color=#F74848>+1</color>.",
+                  "SkillIcon": "Icon_skill_passive_5004",
+                  "icon": "Icon_skill_passive_5004"
+                }
+              }
+            ]
+          },
+          {
+            "name": "\u03b31",
+            "TypeComputing": "Gamma",
+            "ListAssembled": "Attack/Dodge/Dodge",
+            "ListActivationEffects": [
+              {
+                "MinimumSum": "1",
+                "PassiveSkill": {
+                  "ID": "200031",
+                  "name": "Perfect Position 1",
+                  "SpecificEffects": "Unlock the Assault Weapon's <buf ID=900011>[Ideal Range]</buf> ability. When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, final DMG <color=#F74848>+15%</color>.",
+                  "SkillIcon": "Icon_skill_passive_5007",
+                  "icon": "Icon_skill_passive_5007"
+                }
+              },
+              {
+                "MinimumSum": "4",
+                "PassiveSkill": {
+                  "ID": "200032",
+                  "name": "AP Optimization 3",
+                  "SpecificEffects": "AP Cap <color=#F74848>+1</color>.",
+                  "SkillIcon": "Icon_skill_passive_5004",
+                  "icon": "Icon_skill_passive_5004"
+                }
+              },
+              {
+                "MinimumSum": "7",
+                "PassiveSkill": {
+                  "ID": "200033",
+                  "name": "Adaptive Warfare 1",
+                  "SpecificEffects": "At the end of the action, if no active attacks were used this turn, can move an extra <color=#F74848>2</color> tiles.",
+                  "SkillIcon": "Icon_skill_passive_5155",
+                  "icon": "Icon_skill_passive_5155"
+                }
+              },
+              {
+                "MinimumSum": "10",
+                "PassiveSkill": {
+                  "ID": "200034",
+                  "name": "Perfect Position 2",
+                  "SpecificEffects": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, Hit Rate <color=#F74848>+12%</color>.",
+                  "SkillIcon": "Icon_skill_passive_5007",
+                  "icon": "Icon_skill_passive_5007"
+                }
+              },
+              {
+                "MinimumSum": "13",
+                "PassiveSkill": {
+                  "ID": "200035",
+                  "name": "Perfect Position 3",
+                  "SpecificEffects": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, Crit Rate <color=#F74848>+15%</color>.",
+                  "SkillIcon": "Icon_skill_passive_5007",
+                  "icon": "Icon_skill_passive_5007"
+                }
+              },
+              {
+                "MinimumSum": "16",
+                "PassiveSkill": {
+                  "ID": "200036",
+                  "name": "Perfect Position 4",
+                  "SpecificEffects": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, final DMG <color=#F74848>+30%</color>.",
+                  "SkillIcon": "Icon_skill_passive_5007",
+                  "icon": "Icon_skill_passive_5007"
+                }
+              }
+            ]
+          },
+          {
+            "name": "\u03b32",
+            "TypeComputing": "Gamma",
+            "ListAssembled": "Attack/Dodge/Critical",
+            "ListActivationEffects": [
+              {
+                "MinimumSum": "1",
+                "PassiveSkill": {
+                  "ID": "187570",
+                  "name": "Predator Elite 1",
+                  "SpecificEffects": "Talent's <buf ID=900005>[Re-Act]</buf> trigger count <color=#F74848>+1</color>.",
+                  "SkillIcon": "Icon_skill_passive_5329",
+                  "icon": "Icon_skill_passive_5329"
+                }
+              },
+              {
+                "MinimumSum": "4",
+                "PassiveSkill": {
+                  "ID": "200042",
+                  "name": "AP Optimization 4",
+                  "SpecificEffects": "AP Cap <color=#F74848>+1</color>.",
+                  "SkillIcon": "Icon_skill_passive_5004",
+                  "icon": "Icon_skill_passive_5004"
+                }
+              },
+              {
+                "MinimumSum": "7",
+                "PassiveSkill": {
+                  "ID": "200043",
+                  "name": "Adaptive Warfare 2",
+                  "SpecificEffects": "Before actively attacking without having moved, can trigger <buf ID=900004>[Re-ATK]</buf>. Can only trigger <color=#F74848>1</color> time per turn. Unable to move before attacking. Only triggers if no other <buf ID=900004>[Re-ATK]</buf> effect is triggered this turn.",
+                  "SkillIcon": "Icon_skill_passive_5155",
+                  "icon": "Icon_skill_passive_5155"
+                }
+              },
+              {
+                "MinimumSum": "10",
+                "PassiveSkill": {
+                  "ID": "187571",
+                  "name": "Predator Elite 2",
+                  "SpecificEffects": "When initiating combat, if the distance to the target is <color=#F74848>1</color> tile, triggers <skill ID=187951>[Dual Shotgun Flurry Strike]</skill>, up to <color=#F74848>2</color> times per turn.",
+                  "SkillIcon": "Icon_skill_passive_5329",
+                  "icon": "Icon_skill_passive_5329"
+                }
+              },
+              {
+                "MinimumSum": "13",
+                "PassiveSkill": {
+                  "ID": "187572",
+                  "name": "Predator Elite 3",
+                  "SpecificEffects": "Each stack of <buf ID=187900>[Predation]</buf> additionally grants <color=#F74848>1%</color> Critical Hit chance.",
+                  "SkillIcon": "Icon_skill_passive_5329",
+                  "icon": "Icon_skill_passive_5329"
+                }
+              },
+              {
+                "MinimumSum": "16",
+                "PassiveSkill": {
+                  "ID": "187573",
+                  "name": "Predator Elite 4",
+                  "SpecificEffects": "After performing <color=#F74848>2</color> [Basic Attack], [Basic Attack] AP cost is reduced by <color=#F74848>-1</color> for that turn, to a minimum of <color=#F74848>1</color> AP. This effect resets at the end of action.",
+                  "SkillIcon": "Icon_skill_passive_5329",
+                  "icon": "Icon_skill_passive_5329"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "biomimetic_computer_data": [
+        {
+          "ID": "1010318700",
+          "UnitType": "6",
+          "icon": "Icon_pilotclass_002_l",
+          "skill3": "200001",
+          "skill": {
+            "ID": "200001",
+            "name": "CEC 1",
+            "SpecificEffects": "In cooperation with allies, use Assault Weapons to launch a <buf ID=900002>[Link Attack]</buf> against the target, dealing <color=#F74848>0.2x</color> DMG, effective up to <color=#F74848>1</color> time per turn.",
+            "SkillIcon": "Icon_skill_passive_1003",
+            "icon": "Icon_skill_passive_1003"
+          }
+        },
+        {
+          "ID": "1010318701",
+          "UnitType": "5",
+          "icon": "Icon_zoneskill_0003"
+        },
+        {
+          "ID": "1010318702",
+          "UnitType": "5",
+          "icon": "Icon_zoneskill_0001"
+        },
+        {
+          "ID": "1010318703",
+          "UnitType": "5",
+          "icon": "Icon_zoneskill_0003"
+        },
+        {
+          "ID": "1010318704",
+          "UnitType": "5",
+          "icon": "Icon_zoneskill_0002"
+        },
+        {
+          "ID": "1010318705",
+          "UnitType": "5",
+          "icon": "Icon_zoneskill_0003"
+        },
+        {
+          "ID": "1010318706",
+          "UnitType": "5",
+          "icon": "Icon_zoneskill_0003"
+        },
+        {
+          "ID": "1010318707",
+          "UnitType": "5",
+          "icon": "Icon_zoneskill_0003"
+        },
+        {
+          "ID": "1010318708",
+          "UnitType": "1",
+          "icon": "Icon_zoneskill_0001"
+        },
+        {
+          "ID": "1010318709",
+          "UnitType": "1",
+          "icon": "Icon_zoneskill_0002"
+        },
+        {
+          "ID": "1010318710",
+          "UnitType": "1",
+          "icon": "Icon_zoneskill_0004"
+        },
+        {
+          "ID": "1010318711",
+          "UnitType": "1",
+          "icon": "Icon_zoneskill_0005"
+        },
+        {
+          "ID": "1010318712",
+          "UnitType": "0",
+          "skill": {
+            "ID": "187501",
+            "name": "No Forgiveness - No Mercy",
+            "describe": "Uses both Shotguns to simultaneously attack a target, dealing <color=#F74848>2x0.65</color> DMG. For each <color=#F74848>1</color> stack of <buf ID=187900>[Predation]</buf>, this skill's multiplier increases by <color=#F74848>0.01</color>x. For each <color=#F74848>1</color> [Basic Attack] performed during the current turn, this skill's AP cost is reduced by <color=#F74848>-1</color>, to a minimum of <color=#F74848>1</color>. The AP cost resets after use.",
+            "SkillIcon": "Icon_skill_main_1182",
+            "icon": "Icon_skill_main_1182",
+            "Ap": "4",
+            "type": "EquipmentSkill"
+          }
+        },
+        {
+          "ID": "1010318713",
+          "UnitType": "0",
+          "skill": {
+            "ID": "187502",
+            "name": "Predator Rite",
+            "describe": "Gains <color=#F74848>5</color> stacks of <buf ID=187900>[Predation]</buf> and <color=#F74848>2</color> AP. Can move up to <color=#F74848>2</color> tiles after use and can attack after moving.",
+            "SkillIcon": "Icon_skill_order_5178",
+            "icon": "Icon_skill_order_5178",
+            "Ap": "0",
+            "CD": "3",
+            "type": "Order"
+          }
+        },
+        {
+          "ID": "1010318714",
+          "UnitType": "0",
+          "skill": {
+            "ID": "187503",
+            "name": "Blood Oath",
+            "describe": "Gains <buf ID=187901>[Blood Pact]</buf> for <color=#F74848>1</color> turn. Can continue to act with remaining movement.",
+            "SkillIcon": "Icon_skill_order_5179",
+            "icon": "Icon_skill_order_5179",
+            "Ap": "0",
+            "CD": "2",
+            "type": "Order"
+          }
+        },
+        {
+          "ID": "1010318715",
+          "UnitType": "0",
+          "skill": {
+            "ID": "187504",
+            "name": "Calamity Covenant",
+            "SpecificEffects": "For each <color=#F74848>15%</color> HP lost before the attack, DMG Dealt increases by <color=#F74848>10%</color>, up to <color=#F74848>40%</color>.",
+            "SkillIcon": "Icon_skill_passive_5320",
+            "icon": "Icon_skill_passive_5320"
+          }
+        },
+        {
+          "ID": "1010318716",
+          "UnitType": "0",
+          "skill": {
+            "ID": "187505",
+            "name": "Shadow Raven Stride",
+            "SpecificEffects": "When a [Basic Attack] lands a Critical Hit, gains Movement <color=#F74848>+1</color> for <color=#F74848>2</color> turns, stacking up to <color=#F74848>2</color> times.",
+            "SkillIcon": "Icon_skill_passive_5329",
+            "icon": "Icon_skill_passive_5329"
+          }
+        },
+        {
+          "ID": "1010318717",
+          "UnitType": "0",
+          "skill": {
+            "ID": "187506",
+            "name": "Piercing Mastery",
+            "SpecificEffects": "After performing a [Basic Attack], Critical Hit DMG <color=#F74848>+5%</color>, stacking up to <color=#F74848>5</color> times. Stacks last until the end of action.",
+            "SkillIcon": "Icon_skill_passive_5238",
+            "icon": "Icon_skill_passive_5238"
+          }
+        },
+        {
+          "ID": "1010318718",
+          "UnitType": "0",
+          "skill": {
+            "ID": "187507",
+            "name": "TBA",
+            "SpecificEffects": "Not yet available.",
+            "SkillIcon": "",
+            "icon": ""
+          }
+        },
+        {
+          "ID": "1010318736",
+          "UnitType": "0",
+          "skill": {
+            "ID": "187508",
+            "name": "Final Pursuit",
+            "SpecificEffects": "When the body takes lethal DMG, consumes <color=#F74848>1</color> PP to restore the body to <color=#F74848>20%</color> of max HP, recovers <color=#F74848>5</color> AP and gains <buf ID=187902>[Last Whisper]</buf>. This effect has a <color=#F74848>3</color>-turn trigger interval. Gains <color=#F74848>2</color> PP at the start of battle.",
+            "SkillIcon": "Icon_skill_pp_1111",
+            "icon": "Icon_skill_pp_1111",
+            "resource": "PP"
+          }
+        },
+        {
+          "ID": "1010318719",
+          "UnitType": "2",
+          "icon": "3-1"
+        },
+        {
+          "ID": "1010318720",
+          "UnitType": "2",
+          "icon": "3-1"
+        },
+        {
+          "ID": "1010318721",
+          "UnitType": "2",
+          "icon": "3-1"
+        },
+        {
+          "ID": "1010318722",
+          "UnitType": "2",
+          "icon": "3-1"
+        },
+        {
+          "ID": "1010318723",
+          "UnitType": "2",
+          "icon": "3-1"
+        },
+        {
+          "ID": "1010318724",
+          "UnitType": "2",
+          "icon": "3-1"
+        },
+        {
+          "ID": "1010318725",
+          "UnitType": "2",
+          "icon": "3-1"
+        },
+        {
+          "ID": "1010318726",
+          "UnitType": "2",
+          "icon": "3-1"
+        },
+        {
+          "ID": "1010318727",
+          "UnitType": "2",
+          "icon": "3-1"
+        },
+        {
+          "ID": "1010318728",
+          "UnitType": "2",
+          "icon": "3-1"
+        },
+        {
+          "ID": "1010318729",
+          "UnitType": "2",
+          "icon": "3-1"
+        },
+        {
+          "ID": "1010318730",
+          "UnitType": "2",
+          "icon": "3-1"
+        },
+        {
+          "ID": "1010318731",
+          "UnitType": "2",
+          "icon": "3-1"
+        },
+        {
+          "ID": "1010318732",
+          "UnitType": "2",
+          "icon": "3-1"
+        },
+        {
+          "ID": "1010318733",
+          "UnitType": "2",
+          "icon": "3-1"
+        },
+        {
+          "ID": "1010318734",
+          "UnitType": "2",
+          "icon": "3-1"
+        },
+        {
+          "ID": "1010318735",
+          "UnitType": "2",
+          "icon": "3-1"
+        }
+      ],
+      "AllowedMechaDriveList_DriveAllowedList": "Heavy",
+      "AlternateSkins": "",
+      "Introduction": "",
+      "stats": {
+        "Combat": "0",
+        "Assault": "0",
+        "Shooting": "0",
+        "Tactics": "0",
+        "Defense": "0",
+        "Engineering": "0",
+        "InitialPilotAPValue_PilotAPInitBase": "5",
+        "MaximumPilotAPValue_PilotAPMaxBase": "5",
+        "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
+      },
+      "version": "3.7",
+      "statRanks": {
+        "Combat": 77,
+        "Shooting": 79,
+        "Assault": 79,
+        "Tactics": 75,
+        "Engineering": 80
+      }
+    },
+    {
       "ID": "10103106",
       "PilotName": "Naomi",
       "PortraitHeroIcon": "Pilot_10103106A_half",
