@@ -18,7 +18,7 @@ var SKILL_BASE      = 'https://media.zlongame.com/media/pictures/cn/community/im
 // Talent/skill/neural icons are checked locally first (data/unlisted/pilot_skills/)
 // since that's where manually-added pilots' icons live; falls back to the CDN on 404.
 var LOCAL_SKILL_BASE = ASSET_BASE + 'data/unlisted/pilot_skills/';
-var OCCUPATION_BASE  = 'https://media.zlongame.com/media/pictures/cn/community/img/gl/gameInfo/occupation/';
+var OCCUPATION_BASE  = ASSET_BASE + 'data/unlisted/pilot_classes/';
 var WEAPON_IMG_BASE  = 'https://media.zlongame.com/media/pictures/cn/community/img/gl/gameInfo/weapons/';
 // Starting AP isn't in the mined data (its ap_init doesn't match the game):
 // every pilot starts with 3 (Tacticians 4), and the potential upgrades add 2.
@@ -364,8 +364,9 @@ Pages.pilots = {
       });
     }
 
+    // Profession Neuron (UnitType 6); see _renderSkills for why not skill IDs.
     var innateEntry = (p.biomimetic_computer_data || []).find(function (e) {
-      return /^[1-7]00001$/.test(e.skill3);
+      return e.UnitType === '6';
     });
     var occIconHtml = innateEntry && innateEntry.icon
       ? '<img class="occupation-icon" src="' + OCCUPATION_BASE + encodeURIComponent(innateEntry.icon) + '.png" alt="" />'
