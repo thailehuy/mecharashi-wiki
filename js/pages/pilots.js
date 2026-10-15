@@ -20,6 +20,10 @@ var SKILL_BASE      = 'https://media.zlongame.com/media/pictures/cn/community/im
 var LOCAL_SKILL_BASE = ASSET_BASE + 'data/unlisted/pilot_skills/';
 var OCCUPATION_BASE  = 'https://media.zlongame.com/media/pictures/cn/community/img/gl/gameInfo/occupation/';
 var WEAPON_IMG_BASE  = 'https://media.zlongame.com/media/pictures/cn/community/img/gl/gameInfo/weapons/';
+// Starting AP isn't in the mined data (its ap_init doesn't match the game):
+// every pilot starts with 3 (Tacticians 4), and the potential upgrades add 2.
+var PILOT_BASE_INIT_AP = { _default: 3, Tactician: 4 };
+var PILOT_POTENTIAL_INIT_AP = 2;
 // Shirt icon shown on listing cards (pilots and STs) that have alternate skins.
 var SKIN_BADGE_HTML =
   '<span class="skin-badge" title="Alternate skin available" aria-label="Alternate skin available">' +
@@ -388,8 +392,8 @@ Pages.pilots = {
             '<span class="rank-badge ' + rankClass + '">' + rankLabel + '</span>' +
           '</div>' +
         '</div>' +
+        this._renderStats(p.stats, p.statRanks) +
       '</div>' +
-      this._renderStats(p.stats, p.statRanks) +
       '<div class="detail-layout">' +
         '<div class="detail-portrait-col">' +
           '<div class="detail-portrait" style="background-image:url(\'' + bgSrc + '\')">' +
@@ -408,65 +412,92 @@ Pages.pilots = {
       this._renderSkills(p.biomimetic_computer_data, p.hiddenSkills) +
       this._renderSummonSkills(p) +
       this._renderFormSkillGroups(p) +
-      this._renderNeuralDrive(p.NeuralDriveTemplate)
+      this._renderNeuralDrive(p.NeuralDriveTemplate, p.stats, p.Occupation)
     );
   },
 
   _renderStats: function (stats, ranks) {
     if (!stats) return '';
-    var STAT_LABEL = {
-      Combat: 'Melee',
-      Shooting: 'Ranged',
-      Assault: 'Assault',
-      Tactics: 'Tactical',
-      Engineering: 'Mechanic',
-      Defense: 'Defense',
-      InitialPilotAPValue_PilotAPInitBase: 'Initial Base Starting AP',
-      MaximumPilotAPValue_PilotAPMaxBase: 'Max Base Starting AP',
-      PilotAPRecoveryperTurn_PilotAPRecoverBase: 'AP Recovery'
-    };
-    var LEFT_COLUMN  = ['Combat', 'Shooting', 'Assault', 'Tactics', 'Engineering'];
-    var RIGHT_COLUMN = ['Defense', 'InitialPilotAPValue_PilotAPInitBase',
-      'MaximumPilotAPValue_PilotAPMaxBase', 'PilotAPRecoveryperTurn_PilotAPRecoverBase'];
+    // Icon_RnD_N_100x follows the R&D attribute order (see bench.js ATTRS).
+    var ATTRS = [
+      { key: 'Combat',      label: 'Melee',    icon: 'Icon_RnD_N_1001' },
+      { key: 'Assault',     label: 'Assault',  icon: 'Icon_RnD_N_1002' },
+      { key: 'Shooting',    label: 'Ranged',   icon: 'Icon_RnD_N_1003' },
+      { key: 'Tactics',     label: 'Tactical', icon: 'Icon_RnD_N_1004' },
+      { key: 'Engineering', label: 'Mechanic', icon: 'Icon_RnD_N_1005' },
+      { key: 'Defense',     label: 'Defense',  icon: 'Icon_RnD_N_1006' }
+    ];
+    var present = ATTRS.filter(function (a) { return stats[a.key] !== undefined && stats[a.key] !== ''; });
+    if (!present.length) return '';
+
+    // Bars share one scale: the highest attribute value of any pilot.
+    if (!this._attrMax) {
+      var max = 0;
+      ((window.PilotsData && PilotsData.pilots) || []).forEach(function (pl) {
+        ATTRS.forEach(function (a) { max = Math.max(max, parseFloat((pl.stats || {})[a.key]) || 0); });
+      });
+      this._attrMax = max;
+    }
+    var scale = Math.max(this._attrMax, 1);
 
     ranks = ranks || {};
-    var rankValues = LEFT_COLUMN.map(function (k) { return ranks[k]; }).filter(function (r) { return r != null; });
+    var rankValues = present.map(function (a) { return ranks[a.key]; }).filter(function (r) { return r != null; });
     var bestRank = rankValues.length ? Math.min.apply(Math, rankValues) : null;
 
-    var self = this;
-    function column(keys) {
-      var rows = keys
-        .filter(function (k) { return stats[k] !== undefined && stats[k] !== ''; })
-        .map(function (k) { return self._statRow(STAT_LABEL[k], stats[k], ranks[k], ranks[k] != null && ranks[k] === bestRank); })
-        .join('');
-      return '<div class="pilot-stats-col">' + rows + '</div>';
+    var cells = present.map(function (a) {
+      var value  = parseFloat(stats[a.key]) || 0;
+      var rank   = ranks[a.key];
+      var isBest = rank != null && rank === bestRank;
+      var pct    = Math.min(100, value / scale * 100).toFixed(1);
+      var rankHtml = rank
+        ? '<span class="stat-rank' + (isBest ? ' stat-rank-top' : '') + '">#' + rank + '</span>'
+        : '';
+      return (
+        '<div class="pilot-attr' + (isBest ? ' pilot-attr-top' : '') + '" tabindex="0">' +
+          '<span class="avail-tooltip" role="tooltip">' + a.label + '</span>' +
+          '<img class="pilot-attr-icon" src="' + ASSET_BASE + 'data/unlisted/rnd/' + a.icon + '.png" alt="' + a.label + '" />' +
+          '<div class="pilot-attr-track"><div class="pilot-attr-bar" style="width:' + pct + '%"></div></div>' +
+          '<span class="pilot-attr-value">' + $('<span>').text(String(stats[a.key])).html() + '</span>' +
+          '<span class="pilot-attr-rank">' + rankHtml + '</span>' +
+        '</div>'
+      );
+    }).join('');
+
+    return '<div class="pilot-attr-chart skill-card">' + cells + '</div>';
+  },
+
+  // AP line in the Neural Drive heading.
+  //   Initial: base + Neural (+ potential in brackets), base set by hand above.
+  //   Cap / Recovery: mined base (+ Neural in brackets).
+  // Only unconditional Neural nodes count ("Initial AP +N.", "AP Cap +N.", "AP Regen +N.").
+  _renderApLine: function (stats, nd, occupation) {
+    if (!stats) return '';
+    var ND_KEY = { 'Initial AP': 'init', 'AP Cap': 'max', 'AP Regen': 'rec' };
+    var neural = { init: 0, max: 0, rec: 0 };
+    ((nd && nd.ListChipPartition) || []).forEach(function (part) {
+      (part.ListActivationEffects || []).forEach(function (eff) {
+        var text = ((eff.PassiveSkill || {}).SpecificEffects || '').replace(/<[^>]+>/g, '').trim();
+        var m = /^(Initial AP|AP Cap|AP Regen) \+(\d+)\.?$/.exec(text);
+        if (m) neural[ND_KEY[m[1]]] += parseInt(m[2], 10);
+      });
+    });
+    function fmt(label, base, add) {
+      if (base === undefined || base === '') return null;
+      var n = parseFloat(base);
+      return label + ': ' + base + (add && !isNaN(n) ? '(' + (n + add) + ')' : '');
     }
-
-    var leftHtml  = column(LEFT_COLUMN);
-    var rightHtml = column(RIGHT_COLUMN);
-    if (!leftHtml && !rightHtml) return '';
-
-    return (
-      '<div class="pilot-stats-panel skill-card">' +
-        '<div class="pilot-stats-grid">' +
-          leftHtml +
-          rightHtml +
-        '</div>' +
-      '</div>'
-    );
+    var initBase = (PILOT_BASE_INIT_AP[occupation] || PILOT_BASE_INIT_AP._default) + neural.init;
+    var parts = [
+      fmt('Initial', initBase, PILOT_POTENTIAL_INIT_AP),
+      fmt('Cap', stats.MaximumPilotAPValue_PilotAPMaxBase, neural.max),
+      fmt('Recovery', stats.PilotAPRecoveryperTurn_PilotAPRecoverBase, neural.rec)
+    ].filter(Boolean);
+    return '<span class="nd-ap">AP: ' + $('<span>').text(parts.join(', ')).html() + '</span>';
   },
 
-  _statRow: function (label, value, rank, isBest) {
-    var rankHtml = rank
-      ? '<span class="stat-rank' + (isBest ? ' stat-rank-top' : '') + '">#<span class="stat-rank-num">' + rank + '</span></span>'
-      : '';
-    return (
-      '<div class="stat-row">' +
-        '<span class="stat-label">' + label + '</span>' +
-        '<span class="stat-value">' + $('<span>').text(String(value)).html() + rankHtml + '</span>' +
-      '</div>'
-    );
-  },
+
+
+
 
   _renderTalent: function (talent, label) {
     if (!talent || !talent.name) return '';
@@ -721,15 +752,17 @@ Pages.pilots = {
     }).join('');
   },
 
-  _renderNeuralDrive: function (nd) {
-    if (!nd || !nd.ListChipPartition || !nd.ListChipPartition.length) return '';
+  _renderNeuralDrive: function (nd, stats, occupation) {
+    var apLine = this._renderApLine(stats, nd, occupation);
+    var hasParts = nd && nd.ListChipPartition && nd.ListChipPartition.length;
+    if (!hasParts && !apLine) return '';
 
     var self         = this;
     var COMMON_BASE  = 'https://media.zlongame.com/media/pictures/cn/community/img/gl/gameInfo/common/';
     var SLOT_COLOR   = { Attack: 'slot-attack', Dodge: 'slot-dodge', Critical: 'slot-critical' };
     var gammaCount   = 0;
 
-    var parts = nd.ListChipPartition.map(function (part) {
+    var parts = (hasParts ? nd.ListChipPartition : []).map(function (part) {
       var type = part.TypeComputing; // Alpha | Beta | Gamma
       var iconKey;
       if (type === 'Alpha')      { iconKey = 'alpha'; }
@@ -777,8 +810,8 @@ Pages.pilots = {
 
     return (
       '<div class="nd-section">' +
-        '<div class="section-heading">Neural Drive</div>' +
-        '<div class="nd-parts">' + parts + '</div>' +
+        '<div class="section-heading nd-heading">Neural Drive' + apLine + '</div>' +
+        (parts ? '<div class="nd-parts">' + parts + '</div>' : '') +
       '</div>'
     );
   },
