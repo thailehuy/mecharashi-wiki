@@ -93,10 +93,6 @@ Pages.modules = {
         self._applyFilter();
       });
 
-      $('#module-page').on('click', '.module-card-header', function () {
-        App.go('#modules/' + ($(this).closest('.module-card-wrap').data('name') || ''));
-      });
-
       $('#module-search').val(self._searchQuery);
       self._applyFilter();
     }, 0);
@@ -154,10 +150,10 @@ Pages.modules = {
       return (
         '<div class="col-12 col-sm-6 col-lg-4 col-xl-3 module-card-wrap" data-name="' + encodeURIComponent(mod.name.toLowerCase()) + '" data-search="' + encodeURIComponent(searchText) + '">' +
           '<div class="module-card">' +
-            '<div class="module-card-header">' +
+            '<a class="module-card-header" href="' + App.href('modules', mod.name.toLowerCase()) + '">' +
               '<img class="module-card-icon" src="' + iconSrc + '"' + moduleIconErrorAttr(mod.icon) + ' alt="" />' +
               '<span class="module-card-name">' + $('<span>').text(mod.name).html() + '</span>' +
-            '</div>' +
+            '</a>' +
             mechIconsHtml +
             (sliderHtml || '') +
           '</div>' +

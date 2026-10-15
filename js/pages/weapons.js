@@ -214,7 +214,7 @@ Pages.weapons = {
 
           var $card = $(
             '<div class="col-6 col-sm-4 col-md-3 col-xl-2 weapon-card-wrap" data-name="' + encodeURIComponent(w.name.toLowerCase()) + '">' +
-              '<div class="card-item weapon-card" data-id="' + w.ID + '" data-t1="' + w.WeaponType1 + '" data-t2="' + w.WeaponType2 + '">' +
+              '<a class="card-item weapon-card" href="' + App.href('weapons', w.name) + '" data-id="' + w.ID + '" data-t1="' + w.WeaponType1 + '" data-t2="' + w.WeaponType2 + '">' +
                 '<div class="weapon-card-img" style="background-image:url(\'' + bgSrc + '\')">' +
                   '<img src="' + imgSrc + '" alt="' + $('<span>').text(w.name).html() + '" loading="lazy" />' +
                   (w.version ? '<span class="version-badge">v' + w.version + '</span>' : '') +
@@ -226,12 +226,9 @@ Pages.weapons = {
                   '</div>' +
                   pilotIconHtml +
                 '</div>' +
-              '</div>' +
+              '</a>' +
             '</div>'
           );
-          $card.find('.weapon-card').on('click', function () {
-            App.go('#weapons/' + encodeURIComponent(w.name));
-          });
           $grid.append($card);
         });
       });

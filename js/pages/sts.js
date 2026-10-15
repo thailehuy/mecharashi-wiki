@@ -174,7 +174,7 @@ Pages.sts = {
 
       return (
         '<div class="col-6 col-sm-4 col-md-3 col-xl-2">' +
-          '<div class="pilot-card" data-mech="' + encodeURIComponent(m.name) + '">' +
+          '<a class="pilot-card" href="' + App.href('sts', m.name) + '" data-mech="' + encodeURIComponent(m.name) + '">' +
             '<div class="pilot-avatar" style="background-image:url(\'' + bgSrc + '\')">' +
               '<img src="' + imgSrc + '"' + mechIconErrorAttr(m) + ' alt="' + $('<span>').text(m.name).html() + '" loading="lazy" />' +
               '<span class="version-badge">v' + $('<span>').text(m.version).html() + '</span>' +
@@ -187,7 +187,7 @@ Pages.sts = {
                 '<span class="tag tag-license">' + $('<span>').text(m.type).html() + '</span>' +
               '</div>' +
             '</div>' +
-          '</div>' +
+          '</a>' +
         '</div>'
       );
     }).join('');
@@ -202,10 +202,9 @@ Pages.sts = {
     }
 
     var self = this;
-    $(document).on('click.sts', '.pilot-card[data-mech]', function () {
-      var name = decodeURIComponent($(this).data('mech'));
-      self._lastViewed = name;
-      App.go('#sts/' + encodeURIComponent(name));
+    $(document).on('click.sts', '.pilot-card[data-mech]', function (e) {
+      if (e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+      self._lastViewed = decodeURIComponent($(this).data('mech'));
     });
   },
 

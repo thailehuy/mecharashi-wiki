@@ -152,7 +152,14 @@ $(function () {
     if (e.isDefaultPrevented() || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || this.target) return;
     var url  = new URL(this.href, document.baseURI);
     var root = new URL(document.baseURI);
-    if (url.origin !== root.origin || url.pathname.indexOf(root.pathname) !== 0 || url.hash) return;
+    if (url.origin !== root.origin || url.pathname.indexOf(root.pathname) !== 0) return;
+    // "./#page/param" (routes without a generated file) route in place too.
+    if (url.hash) {
+      if (url.pathname !== root.pathname || !Pages[parseRoute(url.hash).page]) return;
+      e.preventDefault();
+      go(url.hash);
+      return;
+    }
     var r = pathRoute(url.pathname.slice(root.pathname.length));
     if (!Pages[r.page] || /\.\w+$/.test(url.pathname)) return;
     e.preventDefault();

@@ -226,7 +226,7 @@ Pages.pilots = {
 
       return (
         '<div class="col-6 col-sm-4 col-md-3 col-xl-2">' +
-          '<div class="pilot-card" data-pilot="' + encodeURIComponent(p.PilotName) + '">' +
+          '<a class="pilot-card" href="' + App.href('pilots', p.PilotName) + '" data-pilot="' + encodeURIComponent(p.PilotName) + '">' +
             '<div class="pilot-avatar" style="background-image:url(\'' + bgSrc + '\')">' +
               '<img src="' + imgSrc + '" onerror="this.onerror=null;this.src=\'' + imgFallback + '\';" alt="' + $('<span>').text(p.PilotName).html() + '" loading="lazy" />' +
               '<span class="version-badge">v' + $('<span>').text(p.version).html() + '</span>' +
@@ -244,7 +244,7 @@ Pages.pilots = {
               '</div>' +
               weaponIconHtml +
             '</div>' +
-          '</div>' +
+          '</a>' +
         '</div>'
       );
     }).join('');
@@ -259,10 +259,9 @@ Pages.pilots = {
     }
 
     var self = this;
-    $(document).on('click.pilots', '.pilot-card', function () {
-      var name = decodeURIComponent($(this).data('pilot'));
-      self._lastViewed = name;
-      App.go('#pilots/' + encodeURIComponent(name));
+    $(document).on('click.pilots', '.pilot-card', function (e) {
+      if (e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+      self._lastViewed = decodeURIComponent($(this).data('pilot'));
     });
   },
 

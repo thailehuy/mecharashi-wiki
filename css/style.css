@@ -510,6 +510,23 @@ a.dispatch-cell:hover .dispatch-cell-name {
   transform: translateY(-2px);
 }
 
+/* Listing cards rendered as real links (open in new tab, copy link) */
+a.card-item,
+a.pilot-card,
+a.module-card-header {
+  color: inherit;
+  text-decoration: none;
+}
+
+a.card-item,
+a.pilot-card {
+  display: block;
+}
+
+a.weapon-card {
+  display: flex;
+}
+
 .card-item .item-name {
   font-size: 1rem;
   font-weight: 600;

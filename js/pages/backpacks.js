@@ -125,7 +125,7 @@ Pages.backpacks = {
 
           var $card = $(
             '<div class="col-6 col-sm-4 col-md-3 col-xl-2 backpack-card-wrap" data-name="' + encodeURIComponent(b.name.toLowerCase()) + '">' +
-              '<div class="card-item weapon-card backpack-card" data-id="' + b.ID + '">' +
+              '<a class="card-item weapon-card backpack-card" href="' + App.href('backpacks', backpackSlug(b)) + '" data-id="' + b.ID + '">' +
                 '<div class="weapon-card-img" style="background-image:url(\'' + bgSrc + '\')">' +
                   '<img src="' + imgSrc + '" alt="' + $('<span>').text(b.name).html() + '" loading="lazy" />' +
                   (b.version ? '<span class="version-badge">v' + $('<span>').text(b.version).html() + '</span>' : '') +
@@ -136,12 +136,9 @@ Pages.backpacks = {
                     '<div class="card-name">' + $('<span>').text(b.name).html() + '</div>' +
                   '</div>' +
                 '</div>' +
-              '</div>' +
+              '</a>' +
             '</div>'
           );
-          $card.find('.backpack-card').on('click', function () {
-            App.go('#backpacks/' + encodeURIComponent(backpackSlug(b)));
-          });
           $grid.append($card);
         });
       });
