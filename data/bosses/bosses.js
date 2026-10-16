@@ -923,27 +923,38 @@ window.BossesData = {
           "skills": [
             {
               "name": "Malicious Strike",
+              "type": "Active",
+              "icon": "Icon_skill_main_1101",
+              "cost": "3AP",
+              "description": "Uses a Pile Bunker to attack a target, dealing 1.2x DMG.\nIf a part is destroyed, Hayato's Arms recover 10% HP, and Hayato uses a Light Rifle to execute a Link Attack, ignoring distance.",
               "kind": "active"
             },
             {
               "name": "Tactical Buffer",
-              "kind": "passive",
-              "description": "For each hit received, DMG Reduction +2% after combat, up to 150%. Lasts for 2 turns.",
+              "type": "Passive",
+              "icon": "Icon_skill_passive_2007",
+              "description": "After every 1 combo hit, gains 1 stack of [Cilium] after combat. Lasts for 2 turns.",
               "buffs": [
                 {
                   "name": "Cilium",
                   "description": "DMG Taken -2%. Stacks up to 50 times. When action ends, 10 stacks are removed."
                 }
-              ]
+              ],
+              "kind": "passive"
             },
             {
               "name": "Repair Protocol",
+              "type": "Passive",
+              "icon": "Icon_skill_passive_3123",
+              "description": "At start of turn, if the HP ratio of the corresponding Arm is lower than Hayato's, restores 30% of Max HP to the corresponding Arm. Can repair parts.",
               "kind": "passive"
             },
             {
               "name": "Allied Enhancement - EX",
-              "kind": "passive",
-              "description": "At start of turn, if the Hayato is not present, summons the Hayato. If Hayato is within 5 tiles, DMG Dealt +100%."
+              "type": "Talent",
+              "icon": "Icon_skill_talent_3105",
+              "description": "At start of turn, if the Hayato is not present, summons the Hayato. If Hayato is within 5 tiles, DMG Dealt +100%.",
+              "kind": "passive"
             }
           ],
           "extreme_modifiers": [
@@ -961,6 +972,23 @@ window.BossesData = {
                   "description": "Can choose 1 ally unit across the entire map and swap positions with them, then triggers [Re-Act]."
                 }
               ]
+            }
+          ],
+          "clues": [
+            {
+              "name": "Vintage Walkie",
+              "subtitle": "The king of communication in extreme environments.",
+              "text": "Lightweight titanium alloy casing, simple buttons, and simple functions. It has become the battlefield choice for many Mercenaries due to its powerful ultra-long Standby function. Of course, being cheap is also one of its most important advantages. Although there's nothing innovative about its design, Sunny still likes to carry it around. After all, on the battlefield, looks can't help you turn the tide."
+            },
+            {
+              "name": "\"SF301\" Capsule",
+              "subtitle": "A weight loss capsule that helps keep you healthy and slim.",
+              "text": "Resembling an ordinary cold-medicine capsule, it contains green tea extract, grape seed extract, and capsaicin. Take 1 capsule 1-2 times daily and pair with a healthy diet and moderate exercise for optimal results. Sunny mainly chooses it because it doesn't interact with his regular stomach medication. Additionally, taking this capsule allows him to indulge in overeating more comfortably."
+            },
+            {
+              "name": "Sturdy Boots",
+              "subtitle": "So comfortable that nothing else compares with them.",
+              "text": "Breathable leather boots, still intact after accompanying Sunny through treacherous terrains. Unlike other well-known brands, these military boots are crafted by an obscure master from West Milkhama. Though not famous, their comfort level even surpasses that of official military-issue boots. However, the old master is now regrettably unreachable... Hence, Sunny will now lay into anyone who steps on his precious boots."
             }
           ]
         },
@@ -1001,20 +1029,53 @@ window.BossesData = {
           "skills": [
             {
               "name": "Suppression Spray",
-              "kind": "active",
-              "icon": "Icon_skill_order_1010"
+              "type": "Code",
+              "icon": "Icon_skill_order_1010",
+              "cost": "1AP",
+              "cd": "0Turn(s)",
+              "description": "Uses a Heavy Machine Gun to attack all targets in a cone ahead, dealing 0.7x DMG. After combat, applies [Firepower Limitation] to targets hit, lasting for 1 turn.",
+              "buffs": [
+                {
+                  "name": "Firepower Limitation",
+                  "description": "DMG Dealt -50% for 1 turn.",
+                  "tags": [
+                    "Type: Debuff"
+                  ]
+                }
+              ],
+              "kind": "active"
             },
             {
               "name": "Link Storm",
-              "kind": "passive",
-              "description": "Cooperates with allies to launch an Assault Weapon or Ranged Weapon [Link Attack], dealing 0.2x DMG. Can trigger only 1 time per turn.",
-              "icon": "Icon_skill_passive_1139"
+              "type": "Passive",
+              "icon": "Icon_skill_passive_1139",
+              "description": "Gains the [Link Attack] ability. After launching a Link Attack, if both Arms are undestroyed, executes [Link Storm], applying 1 stack of [Deceleration Mark] to the target hit. Lasts for 2 turns.",
+              "kind": "passive"
+            },
+            {
+              "name": "Link Storm",
+              "type": "Code",
+              "icon": "Icon_skill_order_1010",
+              "cost": "0AP",
+              "cd": "0Turn(s)",
+              "description": "Uses a Heavy Machine Gun to attack all targets within attack range, dealing 2.5x AoE DMG. Inflicts 1 stack of [Deceleration Mark] on targets hit, lasting for 2 turns.",
+              "buffs": [
+                {
+                  "name": "Deceleration Mark",
+                  "description": "DMG Taken +20%, Hit Rate -20%.",
+                  "tags": [
+                    "Type: Debuff"
+                  ]
+                }
+              ],
+              "kind": "active"
             },
             {
               "name": "Unwavering",
-              "kind": "passive",
+              "type": "Talent",
+              "icon": "Icon_skill_talent_2103",
               "description": "In a single attack, gains DMG Taken -20% for each hit, up to 100%.",
-              "icon": "Icon_skill_talent_2103"
+              "kind": "passive"
             }
           ],
           "extreme_modifiers": [
@@ -1022,6 +1083,23 @@ window.BossesData = {
               "name": "Global Vulnerability",
               "difficulty": "Extreme",
               "description": "[Ally] DMG Taken +100% during non-ally turns."
+            }
+          ],
+          "clues": [
+            {
+              "name": "Tactical Watch",
+              "subtitle": "A must-have product that balances both work and life.",
+              "text": "A lightweight watch that is waterproof and shockproof, equipped with features such as a timer, location tracking, and heart rate monitoring. Keller has also added a Tactical Simulation System to it. It's not an extraordinary modification, but it undoubtedly has proved useful to Keller's mercenary career. The watch's battery capacity is especially impressive, and the solar charging panel ensures that battery life is never a concern. As his missions grow more demanding, Keller is contemplating whether to add a terrain analysis chip to it."
+            },
+            {
+              "name": "Pen",
+              "subtitle": "Can occasionally be used as a weapon.",
+              "text": "A red retractable ballpoint pen with smooth ink flow. Keller has a habit of sketching—even if no one can understand what he draws, he insists on indulging this habit. Moreover, in some extremely dangerous environments, a ballpoint pen can occasionally serve as a lethal weapon, offering new survival strategies. \"I should use a different color,\" Keller often thinks, but he quickly forgets due to being busy with missions."
+            },
+            {
+              "name": "Tactical Vest",
+              "subtitle": "Can be stored anywhere.",
+              "text": "A sturdy and durable tactical vest equipped with multiple pouches, which can also be used as body armor. The pouches are filled with most of the supplies Keller needs during missions, and he rarely takes it off unless necessary. Due to its heavy weight, wearing this vest requires some effort... but for Keller, it's not a difficult task."
             }
           ]
         },
@@ -1062,33 +1140,65 @@ window.BossesData = {
           "skills": [
             {
               "name": "Rain of Fire",
+              "type": "Code",
+              "icon": "Icon_skill_order_1107",
+              "cost": "1AP",
+              "description": "Uses a Machine Gun to attack a target, dealing 1.0x DMG. Inflicts 1 stack of [Crimson Mark] on targets hit, lasting for 2 turns. Gains [Re-Act] after use, up to 1 time per turn.",
               "kind": "active"
             },
             {
               "name": "Echo Burst",
+              "type": "Active",
+              "icon": "Icon_skill_main_1138",
+              "cost": "1AP",
+              "cd": "1Turn(s)",
+              "description": "Simultaneously uses 2 Machine Guns to attack all targets within a 3x4-tile area, dealing 0.8x AoE DMG 2 times, and gains the corresponding number of [Bloody Echo] based on total stacks of [Crimson Mark] possessed by all enemy units within skill range.",
+              "buffs": [
+                {
+                  "name": "Bloody Echo",
+                  "description": "Fixed DMG +30%. Stacks up to 10 times."
+                }
+              ],
               "kind": "active"
             },
             {
               "name": "Tactical Erosion",
-              "kind": "passive",
-              "description": "After the boss takes action, if its stacks of [Bloody Echo] are greater than or equal to 4, applies 1 stack of [Crimson Mark] to all enemy units."
+              "type": "Passive",
+              "icon": "Icon_skill_passive_5014",
+              "description": "At end of action, if own [Bloody Echo] stacks are greater than or equal to 3, applies 1 stack of [Crimson Mark] to all enemy units.",
+              "kind": "passive"
             },
             {
               "name": "Emergency Arm Repair",
-              "kind": "passive",
-              "description": "If an Arm is destroyed, repairs all current HP of the Arm before the next action and gains . Each Arm can trigger this effect once.",
-              "icon": "Icon_skill_talent_3101"
+              "type": "Talent",
+              "icon": "Icon_skill_talent_3101",
+              "description": "If an Arm is destroyed, repairs all current HP of the Arm before the next action and gains [Underperformance]. Each Arm can trigger this effect once.",
+              "buffs": [
+                {
+                  "name": "Underperformance",
+                  "description": "DMG -50% when attacking with the current weapon.",
+                  "tags": [
+                    "Type: Debuff"
+                  ]
+                }
+              ],
+              "kind": "passive"
             },
             {
               "name": "Erosion Code",
-              "kind": "passive",
-              "description": "When dealing damage, deals additional Fixed DMG equal to 5% of the target's Max HP after combat.\nWhen retaliating and dealing damage, inflicts 1 stack of  on the target, lasting for 2 turns.",
+              "type": "Talent",
+              "icon": "Icon_skill_talent_1123",
+              "description": "When dealing damage, deals additional Fixed DMG equal to 5% of the target's Max HP after combat.\nWhen retaliating and dealing damage, inflicts 1 stack of [Crimson Mark] on the target, lasting for 2 turns.",
               "buffs": [
                 {
                   "name": "Crimson Mark",
-                  "description": "Fixed DMG Taken +30%. Stacks up to 10 times."
+                  "description": "Fixed DMG Taken +30%. Stacks up to 10 times.",
+                  "tags": [
+                    "Type: Debuff"
+                  ]
                 }
-              ]
+              ],
+              "kind": "passive"
             }
           ],
           "extreme_modifiers": [
@@ -1096,6 +1206,23 @@ window.BossesData = {
               "name": "Global Interference",
               "difficulty": "Extreme",
               "description": "Starts with an activated Interference Beacon."
+            }
+          ],
+          "clues": [
+            {
+              "name": "Fingerless Gloves",
+              "subtitle": "Gets a bit stuffy after long wear.",
+              "text": "Black fingerless gloves, designed to fit the natural curves of the hand, balancing grip, cushioning, and breathability. Because of Aiden's line of work, his gloves wear out fast. Over time, he's developed a sharp eye—he can quickly spot a pair that fits perfectly. As for the worn-out ones he tosses aside, unbeknownst to him, his wife mends and keeps them all."
+            },
+            {
+              "name": "Old Cigar Case",
+              "subtitle": "It's basically a catch-all box.",
+              "text": "A refined square wooden cigar box. The gold-plated ornaments and inlaid clasp have been pried off, but it is still a beautiful piece. Aiden spotted it at a junk shop and immediately thought of his wife's loose sewing tools with no proper place to call home. He pulled out his wallet without hesitation. The day she received it, she was overjoyed and carefully tucked it deep inside their wardrobe. The care she took with it made Aiden a little sad. He quietly promised himself he would give her something better someday."
+            },
+            {
+              "name": "M7511 Pistol",
+              "subtitle": "Over all these years, it remains well maintained.",
+              "text": "A subdued silver pistol that spends most of its time resting quietly in its holster. It has some surface scratches upon closer inspection, likely caused by years of battle. This gun was Aiden's reward for completing his first mission. Aiden always ensures he is in a state where he can retaliate with a weapon, and this good habit has indeed helped him cross the line between life and death multiple times. Sometimes Aiden marvels at the longevity of this old friend, wondering if perhaps it will still serve another owner after his death...?"
             }
           ]
         },
@@ -1136,11 +1263,84 @@ window.BossesData = {
           "skills": [
             {
               "name": "Shadow Pierce",
+              "type": "Code",
+              "icon": "Icon_skill_order_1131",
+              "cost": "1AP",
+              "cd": "1Turn(s)",
+              "description": "Uses two Alter-Blades to thrust 4 tiles forward, dealing 1x AoE DMG to all enemies in the path. Applies [Deceleration] to units hit, lasting for 2 turns, and absorbs remaining AP from all enemies within attack range. After absorption, increases own AP.",
+              "buffs": [
+                {
+                  "name": "Deceleration",
+                  "description": "Movement -1, Dodge Rate -20%. Lasts for 2 turns.",
+                  "tags": [
+                    "Type: Debuff"
+                  ]
+                }
+              ],
+              "kind": "active"
+            },
+            {
+              "name": "Shadow Pierce - EX",
+              "type": "Code",
+              "icon": "Icon_skill_order_1131",
+              "cost": "1AP",
+              "cd": "0Turn(s)",
+              "description": "Uses two Alter-Blades to thrust 4 tiles forward, dealing 2x AoE DMG to all enemies in the path. Applies [Deceleration] to targets hit, lasting for 2 turns, and absorbs remaining AP from all enemies within the attack range. Increases own AP after absorption and gains Re-Act after use.",
               "kind": "active"
             },
             {
               "name": "Bloodblade Frenzy",
+              "type": "Active",
+              "icon": "Icon_skill_main_1160",
+              "cost": "2AP",
+              "description": "Uses two Alter-Blades to strike a single target in rapid succession, hitting at least 4 times. Each attack deals 1.0x DMG. After that, each additional 1 attack costs 1 AP until AP runs out. Ignores the Large Shield [Target Shift] effect.",
               "kind": "active"
+            },
+            {
+              "name": "Shadow Domain II",
+              "type": "Passive",
+              "icon": "Icon_skill_passive_5127",
+              "description": "Activates the [Kagemai Field] aura within 1 ring centered on this unit.\nAt start of action, if the number of Alter-Blade retaliations during the enemy's Action Phase is less than or equal to 4, and both Arms are undestroyed, simultaneously uses two Missile Launchers to attack all targets, with each strike dealing 0.75x DMG 2 times to all parts of each target hit.",
+              "buffs": [
+                {
+                  "name": "Kagemai Field",
+                  "description": "When an enemy unit outside the area deals damage to Gutzman, the Applied DMG is reduced by 50%, and Gutzman gains 1 stack of [Shadow Step]."
+                }
+              ],
+              "kind": "passive",
+              "difficulties": [
+                "Extreme",
+                "Inferno"
+              ]
+            },
+            {
+              "name": "Emergency Arm Repair",
+              "type": "Talent",
+              "icon": "Icon_skill_talent_3101",
+              "description": "If an Arm is destroyed, repairs all current HP of the Arm before the next action and gains [Underperformance]. Each Arm can trigger this effect once.",
+              "buffs": [
+                {
+                  "name": "Underperformance",
+                  "description": "DMG -50% when attacking with the current weapon.",
+                  "tags": [
+                    "Type: Debuff"
+                  ]
+                }
+              ],
+              "kind": "passive"
+            },
+            {
+              "name": "Vengeful Heart",
+              "type": "Talent",
+              "icon": "Icon_skill_talent_1117",
+              "description": "After actively attacking with an Alter-Blade, gains 1 stack of [Shadow Step]. When taking extra damage from 2 tiles away, prioritizes Missile Retaliation, dealing 2x Retaliation DMG.\nBefore taking action, if possessing 3 stacks of [Shadow Step], [Shadow Pierce] changes to [Shadow Pierce - EX]. Can only trigger 1 time per turn.\nImmune to [Oath] and [Provocation]. Movement is not blocked by enemy units.\nAll Missile Attacks do not consume Ammo.",
+              "buffs": [
+                {
+                  "name": "Shadow Step",
+                  "description": "Each stack increases Dodge Rate by 5% and Movement by 1, up to 3 stacks, lasting for 2 turns."
+                }
+              ],
+              "kind": "passive"
             },
             {
               "name": "Shadow Domain I",
@@ -1163,46 +1363,6 @@ window.BossesData = {
               "difficulties": [
                 "Normal",
                 "Hard"
-              ]
-            },
-            {
-              "name": "Emergency Arm Repair",
-              "kind": "passive",
-              "description": "If an Arm is destroyed, repairs all current HP of the Arm before the next action and gains . Each Arm can trigger this effect once.",
-              "icon": "Icon_skill_talent_3101"
-            },
-            {
-              "name": "Vengeful Heart",
-              "kind": "passive",
-              "description": "After actively attacking with an Alter-Blade, gains 1 stack of . When taking extra damage from 2 tiles away, prioritizes Missile Retaliation, dealing 2x Retaliation DMG.\nBefore taking action, if possessing 3 stacks of ,  changes to . Can only trigger 1 time per turn.\nImmune to [Oath] and [Provocation]. Movement is not blocked by enemy units.\nAll Missile Attacks do not consume Ammo.",
-              "buffs": [
-                {
-                  "name": "Shadow Step",
-                  "description": "Each stack increases Dodge Rate by 5% and Movement by 1, up to 3 stacks, lasting for 2 turns."
-                }
-              ]
-            },
-            {
-              "name": "Shadow Domain II",
-              "kind": "passive",
-              "description": "Applies a mark to enemies within attack range.\nAt start of action, if the number of Alter-Blade Retaliations during the enemy's Action Phase is less than or equal to 4, fires all Missile Launcher Ammo to attack all targets. Each missile deals 1x DMG to the part hit and Splash DMG equal to 50% of this damage to other parts.\nCounts after countering with Alter-Blades.\nAdds buff if less than or equal to 4.\nActivates a Kagemai Field aura centered on self, and also applies a mark to enemies within range.\nEmpty Mark",
-              "buffs": [
-                {
-                  "name": "Kagemai Field",
-                  "description": "When an enemy unit outside the area deals damage to Gutzman, the Applied DMG is reduced by 50%, and Gutzman gains 1 stack of [Shadow Step]."
-                },
-                {
-                  "name": "Retaliation Count",
-                  "description": "For each Retaliation during the Enemy Action Phase, Gutzman gains 1 stack of this effect."
-                },
-                {
-                  "name": "Shadow Domain",
-                  "description": "Full Barrage"
-                }
-              ],
-              "difficulties": [
-                "Extreme",
-                "Inferno"
               ]
             }
           ],
@@ -1855,6 +2015,7 @@ window.BossesData = {
             {
               "name": "Flames of War",
               "type": "Code",
+              "icon": "Icon_skill_order_1107",
               "cost": "0AP",
               "cd": "1Turn(s)",
               "description": "Prioritizes using this skill. Simultaneously uses two Machine Guns to attack the target and other targets within 1 adjacent tile, prioritizing Superconductive Pochy and dealing 1.5x DMG 2 times, with damage shared among all targets hit. Inflicts 5 stacks of [Nullify Buff] on targets hit.",
@@ -2079,6 +2240,24 @@ window.BossesData = {
               "type": "Passive",
               "icon": "Icon_skill_passive_5155",
               "description": "At start of action, if on [Mist Terrain], triggers [Re-Act]. Can trigger 1 time per turn.\nAt start of action, if not on [Mist Terrain], gains [Risk It All].\nFor each [Gel Conduction], DMG +5%.\nGains [Stable].",
+              "buffs": [
+                {
+                  "name": "Mist Terrain",
+                  "description": "The mist releaser's hostile target cannot select any units that are inside the mist (including its allies) while outside of it. Mist has the highest terrain priority."
+                },
+                {
+                  "name": "Risk It All",
+                  "description": "After actively attacking, creates [Gel Conduction] within the strike range: Applies [Disarm] and [Movement Inhibition I] to units remaining on this terrain, lasting for 1 turn."
+                },
+                {
+                  "name": "Gel Conduction",
+                  "description": "Applies [Disarm] and [Movement Inhibition I] to units remaining on this terrain, lasting for 1 turn."
+                },
+                {
+                  "name": "Stable",
+                  "description": "Immune to Displacement effects."
+                }
+              ],
               "kind": "passive"
             }
           ],

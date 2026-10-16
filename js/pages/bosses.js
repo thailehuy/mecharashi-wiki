@@ -100,9 +100,38 @@ Pages.bosses = {
       }).join('');
     }
 
-    // Skill text with the game's [Terms] highlighted.
+    // Names of the skills and buffs shown on the stage being rendered (set by
+    // stageDetails). Bosses reuse pilot buff names with their own effects, so
+    // these stay plain highlights instead of glossary tooltips.
+    var localTerms = {};
+
+    function collectTerms(st) {
+      var terms = {};
+      function add(list) {
+        (list || []).forEach(function (x) {
+          if (x.name) terms[x.name.toLowerCase()] = true;
+          add(x.buffs);
+        });
+      }
+      add(st.skills);
+      (st.units || []).forEach(function (u) { add(u.skills); });
+      add(st.extreme_modifiers);
+      return terms;
+    }
+
+    // Skill text with the game's [Terms] highlighted; terms the stage doesn't
+    // define link to the glossary (e.g. [Re-ATK]) when it knows them.
     function descHtml(text) {
-      return esc(text).replace(/\[([^\]]+)\]/g, '<span class="boss-term">[$1]</span>').replace(/\n/g, '<br>');
+      var local = [];
+      text = String(text).replace(/\[([^\[\]]+)\]/g, function (m, name) {
+        if (!localTerms[name.toLowerCase()]) return m;
+        local.push(name);
+        return '\x01' + (local.length - 1) + '\x01';
+      });
+      return Glossary.parseEffects(text)
+        // Bare [Terms] the glossary doesn't know (not inside its spans/links).
+        .replace(/\[([^\[\]<>]+)\](?!<\/)/g, '<span class="boss-term">[$1]</span>')
+        .replace(/\x01(\d+)\x01/g, function (_, i) { return '<span class="boss-term">[' + esc(local[i]) + ']</span>'; });
     }
 
     // Marks an element as shown only on some difficulties (data-diffs), hidden
@@ -159,6 +188,7 @@ Pages.bosses = {
     }
 
     function stageDetails(st, firstDiff) {
+      localTerms = collectTerms(st);
       var intro = (st.title || st.description
           ? '<div class="boss-stage-title">' + (st.title ? '<b>' + esc(st.title) + '</b>' : '') +
               (st.description ? ' <span>' + esc(st.description) + '</span>' : '') + '</div>'
