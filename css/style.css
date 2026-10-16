@@ -3533,7 +3533,8 @@ a.material-item:hover .material-icon-wrap {
 }
 
 .boss-info { padding: 0.5rem 0.65rem 0.65rem; }
-.boss-info .pilot-name a { color: inherit; text-decoration: underline; text-decoration-color: #e94560; }
+.boss-info .pilot-name a { color: inherit; text-decoration: none; }
+.boss-info .pilot-name a:hover { color: #e94560; }
 .boss-mech { font-size: 0.85rem; color: #c0c0d0; margin: 0.15rem 0 0.35rem; }
 .boss-mech a { color: #60a8ff; }
 .boss-mech-parts { color: #8a8aa0; font-size: 0.75rem; }
@@ -3587,8 +3588,9 @@ a.material-item:hover .material-icon-wrap {
 .boss-gear { align-items: center; }
 .boss-gear-label { font-size: 0.8rem; font-weight: 600; color: #cbd5e1; margin-right: 0.25rem; }
 
-.boss-group-head h3 a { color: inherit; text-decoration: underline; text-decoration-color: #e94560; }
-.boss-stage { margin-bottom: 1rem; }
+.boss-group-head h3 a { color: inherit; text-decoration: none; }
+.boss-group-head h3 a:hover { color: #e94560; }
+.boss-stage { margin-bottom: 1rem; scroll-margin-top: 4.5rem; }
 .boss-stage .boss-card { height: auto; }
 .boss-skill[hidden] { display: none; }
 .boss-skill .skill-name-row { margin-bottom: 0; }

@@ -99,9 +99,13 @@ $(function () {
     return path.indexOf(root) === 0 ? path.slice(root.length) : path.replace(/^\//, '');
   }
 
+  // On a path URL ("bosses/x/#stage-2") the hash is an in-page anchor, not a route.
   function currentRoute() {
-    if (window.location.hash.length > 1) return parseRoute(window.location.hash);
-    return pathRoute(relativePath());
+    var path = relativePath();
+    if (window.location.hash.length > 1 && !path) return parseRoute(window.location.hash);
+    var r = pathRoute(path);
+    if (window.location.hash.length > 1) r.anchor = window.location.hash.slice(1);
+    return r;
   }
 
   // Route of a path relative to the site root, e.g. "pilots/ada/".
@@ -134,9 +138,9 @@ $(function () {
   // "#pilots/Ada"-style links to their path form without a new history entry.
   function routeFromLocation() {
     var r = currentRoute();
-    var canonical = new URL(urlFor(r.page, r.param), document.baseURI).href;
+    var canonical = new URL(urlFor(r.page, r.param) + (r.anchor ? '#' + r.anchor : ''), document.baseURI).href;
     if (Pages[r.page] && canonical !== window.location.href) history.replaceState(null, '', canonical);
-    navigate(r.page, r.param);
+    navigate(r.page, r.param, r.anchor);
   }
 
   window.App = {
@@ -155,17 +159,19 @@ $(function () {
     var root = new URL(document.baseURI);
     if (url.origin !== root.origin || url.pathname.indexOf(root.pathname) !== 0) return;
     // "./#page/param" (routes without a generated file) route in place too.
-    if (url.hash) {
-      if (url.pathname !== root.pathname || !Pages[parseRoute(url.hash).page]) return;
+    if (url.hash && url.pathname === root.pathname) {
+      if (!Pages[parseRoute(url.hash).page]) return;
       e.preventDefault();
       go(url.hash);
       return;
     }
+    // On a path link the hash is an anchor to scroll to ("bosses/x/#stage-2").
+    var anchor = url.hash.slice(1) || null;
     var r = pathRoute(url.pathname.slice(root.pathname.length));
     if (!Pages[r.page] || /\.\w+$/.test(url.pathname)) return;
     e.preventDefault();
-    history.pushState(null, '', urlFor(r.page, r.param));
-    navigate(r.page, r.param);
+    history.pushState(null, '', urlFor(r.page, r.param) + (anchor ? '#' + anchor : ''));
+    navigate(r.page, r.param, anchor);
   });
 
   // Hash-only links would otherwise resolve against <base> (the site root)
@@ -183,7 +189,7 @@ $(function () {
     }
   });
 
-  function navigate(page, param) {
+  function navigate(page, param, anchor) {
     var p = Pages[page];
     if (!p) {
       $('#app-content').html('<p class="text-danger">Page not found.</p>');
@@ -201,7 +207,8 @@ $(function () {
 
     // Pages expect the param still URI-encoded, as it used to come straight from the hash.
     $('#app-content').html(p.render(param == null ? null : encodeURIComponent(param)));
-    window.scrollTo(0, 0);
+    var target = anchor && document.getElementById(anchor);
+    if (target) target.scrollIntoView(); else window.scrollTo(0, 0);
 
     document.title = p.title + ' — Mecharashi Wiki';
   }

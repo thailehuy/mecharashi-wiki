@@ -36,12 +36,11 @@ Pages.bosses = {
       );
     }
 
-    function cardHtml(stage, firstDiff, col) {
+    // href: where the boss name links (its stage on the season page), if anywhere.
+    function cardHtml(stage, firstDiff, col, href) {
       var b     = bosses[stage.boss] || { name: stage.boss };
       var pilot = b.pilot_id && pilotById[b.pilot_id];
-      var name  = pilot
-        ? '<a href="' + App.href('pilots', pilot.PilotName) + '">' + esc(b.name) + '</a>'
-        : esc(b.name);
+      var name  = href ? '<a href="' + href + '">' + esc(b.name) + '</a>' : esc(b.name);
       // AC stages have HP per difficulty (one block each, toggled), CO stages one.
       var hp = stage.difficulties
         ? stage.difficulties.map(function (d) { return hpHtml(stage.hp[d], d, d !== firstDiff); }).join('')
@@ -192,7 +191,7 @@ Pages.bosses = {
       var diffs = s.stages[0] ? s.stages[0].difficulties : [];
       var stages = s.stages.map(function (st) {
         return (
-          '<div class="row g-3 boss-stage">' +
+          '<div class="row g-3 boss-stage" id="stage-' + st.slot + '">' +
             cardHtml(st, diffs[0], 'col-12 col-sm-5 col-md-3') +
             '<div class="col-12 col-sm-7 col-md-9">' + stageDetails(st, diffs[0]) + '</div>' +
           '</div>'
@@ -233,7 +232,9 @@ Pages.bosses = {
 
     var ac = (data.armed_conquest || []).map(function (s) {
       var diffs = s.stages[0] ? s.stages[0].difficulties : [];
-      var cards = s.stages.map(function (st) { return cardHtml(st, diffs[0]); }).join('');
+      var cards = s.stages.map(function (st) {
+        return cardHtml(st, diffs[0], null, App.href('bosses', s.name) + '#stage-' + st.slot);
+      }).join('');
       return groupHtml(s.number + '. ' + s.name, s.version, diffToggle(diffs), cards, gearHtml(s), App.href('bosses', s.name));
     }).join('');
 
@@ -244,8 +245,8 @@ Pages.bosses = {
     return (
       '<div class="listing-header"><h1>Bosses</h1></div>' +
       '<p class="dispatch-intro">Bosses of each Armed Conquest season and Clearance Ops chapters 11–17, newest first. ' +
-        'The number on each portrait is the stage. Bosses marked <b>Pilot</b> are also playable; their name links to the pilot page. ' +
-        'Pick an Armed Conquest difficulty to see the bosses\' HP on it, or open a season for its bosses\' skills.</p>' +
+        'The number on each portrait is the stage. Bosses marked <b>Pilot</b> are also playable. ' +
+        'Pick an Armed Conquest difficulty to see the bosses\' HP on it, or open a season (or a boss) for its bosses\' skills.</p>' +
       '<div class="boss-jump"><a href="#boss-ac">Armed Conquest</a><a href="#boss-co">Clearance Ops</a></div>' +
       '<h2 class="boss-section" id="boss-ac">Armed Conquest</h2>' + ac +
       '<h2 class="boss-section" id="boss-co">Clearance Ops</h2>' + co
