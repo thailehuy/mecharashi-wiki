@@ -48,11 +48,11 @@ Pages.bosses = {
       return (
         '<div class="' + (col || 'col-6 col-md-3') + '">' +
           '<div class="boss-card">' +
-            '<div class="pilot-avatar boss-avatar">' +
+            (href ? '<a class="pilot-avatar boss-avatar" href="' + href + '">' : '<div class="pilot-avatar boss-avatar">') +
               (b.portrait ? '<img src="' + ASSET_BASE + b.portrait + '" alt="' + esc(b.name) + '" loading="lazy" />' : '') +
               '<span class="version-badge">' + stage.slot + '</span>' +
               (pilot ? '<span class="boss-pilot-badge">Pilot</span>' : '') +
-            '</div>' +
+            (href ? '</a>' : '</div>') +
             '<div class="boss-info">' +
               '<div class="pilot-name">' + name + '</div>' +
               '<div class="boss-mech">' + mechHtml(stage.mech) + '</div>' +

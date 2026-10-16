@@ -1672,6 +1672,10 @@ window.BossesData = {
           "skills": [
             {
               "name": "Inevitable Slash",
+              "type": "Active",
+              "icon": "Icon_skill_main_1155",
+              "cost": "0AP",
+              "description": "Uses a Chainsaw to attack a target, dealing 1.5x DMG. The lower the target's HP, the higher the final damage, up to an increase of 200%. Always hits the part with the lowest HP. This attack ignores 80% of the target's Armor.",
               "kind": "active",
               "difficulties": [
                 "Normal",
@@ -1684,28 +1688,61 @@ window.BossesData = {
               "difficulties": [
                 "Extreme",
                 "Inferno"
-              ]
+              ],
+              "icon": "Icon_skill_main_1155"
             },
             {
               "name": "Absolute Bulwark",
-              "kind": "passive",
-              "description": "At start of action, if there is an enemy unit within 1 ring, randomly applies Hunted to one enemy.\nAt start of action, if there are no enemies within 1 ring, gains 10 stacks of [Resentment].",
+              "type": "Passive",
+              "icon": "Icon_skill_passive_5108",
+              "description": "At start of action, if there are no enemies within 1 ring, gains 10 stacks of [Resentment]. Otherwise, applies [Collapse Effect] to 1 random enemy within 1 ring. Unit is immune to [Oath] and [Provocation].",
               "buffs": [
                 {
                   "name": "Collapse Effect",
-                  "description": "Movement -1. Cannot be repaired or have destroyed parts repaired. At end of action, all parts lose 25% of Max HP as [Fixed DMG]. This unit will be prioritized by Pip for attacks."
-                },
-                {
-                  "name": "EM Explosion",
-                  "description": "At end of action, all parts take Fixed DMG equal to 25% of Max HP."
+                  "description": "Movement -1. Cannot be repaired or have destroyed parts repaired. At end of action, all parts lose 25% of Max HP as [Fixed DMG]. This unit will be prioritized by Pip for attacks.",
+                  "tags": [
+                    "Type: Debuff"
+                  ]
                 }
-              ]
+              ],
+              "kind": "passive"
             },
             {
               "name": "Emergency Arm Repair",
+              "type": "Talent",
+              "icon": "Icon_skill_talent_3101",
+              "description": "If an Arm is destroyed, repairs all current HP of the Arm before the next action and gains [Underperformance]. Each Arm can trigger this effect once.",
+              "buffs": [
+                {
+                  "name": "Underperformance",
+                  "description": "DMG -50% when attacking with the current weapon.",
+                  "tags": [
+                    "Type: Debuff"
+                  ]
+                }
+              ],
+              "kind": "passive"
+            },
+            {
+              "name": "Intrepid Advance II",
+              "type": "Passive",
+              "icon": "Icon_skill_passive_5011",
+              "description": "At the start of battle, gains [Barrier-Breaking Charge] and 5 stacks of [Resentment].\nWhen possessing [Barrier-Breaking Charge], loses 1 stack of [Resentment] when actively attacked within and beyond 3 tiles.\nWhen not possessing [Barrier-Breaking Charge], gains 1 stack of [Resentment] after being actively attacked.\nAt the end of each turn, gains 2 stacks of [Resentment].\nWhen possessing more than 5 stacks of Resentment, gains [Barrier-Breaking Charge]. When not possessing [Resentment], clears [Barrier-Breaking Charge].",
+              "buffs": [
+                {
+                  "name": "Barrier-Breaking Charge",
+                  "description": "Movement +3. Ignores unit obstruction when moving. Immune to displacement. Final DMG +50%. If a part is destroyed, triggers Re-ATK. Can trigger up to 2 times per turn."
+                },
+                {
+                  "name": "Resentment",
+                  "description": "DMG Taken -10%."
+                }
+              ],
               "kind": "passive",
-              "description": "If an Arm is destroyed, repairs all current HP of the Arm before the next action and gains . Each Arm can trigger this effect once.",
-              "icon": "Icon_skill_talent_3101"
+              "difficulties": [
+                "Extreme",
+                "Inferno"
+              ]
             },
             {
               "name": "Intrepid Advance I",
@@ -1724,25 +1761,6 @@ window.BossesData = {
               "difficulties": [
                 "Normal",
                 "Hard"
-              ]
-            },
-            {
-              "name": "Intrepid Advance II",
-              "kind": "passive",
-              "description": "At the start of battle, gains  and 5 stacks of .\nWhen possessing , loses 1 stack of  when actively attacked within and beyond 3 tiles.\nWhen not possessing , gains 1 stack of  after being actively attacked.\nAt the end of each turn, gains 2 stacks of .\nWhen possessing more than 5 stacks of Resentment, gains . When not possessing , clears .",
-              "buffs": [
-                {
-                  "name": "Barrier-Breaking Charge",
-                  "description": "Movement +3. Ignores unit obstruction when moving. Immune to displacement. Final DMG +50%. If a part is destroyed, triggers Re-ATK. Can trigger up to 2 times per turn."
-                },
-                {
-                  "name": "Resentment",
-                  "description": "DMG Taken -10%."
-                }
-              ],
-              "difficulties": [
-                "Extreme",
-                "Inferno"
               ]
             }
           ],
@@ -1779,6 +1797,23 @@ window.BossesData = {
               "name": "Out of Reach",
               "difficulty": "Extreme",
               "description": "Distance for clearing [Resentment] changes from 3 tiles and beyond to 4 tiles and beyond."
+            }
+          ],
+          "clues": [
+            {
+              "name": "A Gold Coin",
+              "subtitle": "Every life has its turning point.",
+              "text": "Diameter of 27 mm, thickness of 1.8 mm, with a circle of anti-counterfeit slanted edge teeth at intervals of varying lengths on the outer rim. The inner ring surface is etched with a pattern of flowers and the ocean. Undoubtedly, this is a commemorative gold coin, a New Year special edition issued by Yongchang Securities Co., with a relatively limited inventory load in the market. After being persuaded by the manager to invest all his assets in financial management, Pip obtained a VIP seat at Yongchang Securities Co., and this gold coin is an additional gift. Pip enjoys using coin flips to clear his mind—when you're dissatisfied with the result of the coin flip, it means you already know what you truly want to do."
+            },
+            {
+              "name": "Metallic Bat",
+              "subtitle": "It is occasionally still used for playing ball.",
+              "text": "An aluminum alloy baseball bat, smooth and shiny, wrapped with several layers of vibrant old cloth strips, with Pip's casual spray paint graffiti. It boasts excellent elasticity and outstanding quality, remaining unbroken even after Pip has used it to smash countless skulls. Using a bat as a weapon makes it hard to be unanticipated, but who can resist the street trend? At least Pip can't. Until he finds cooler equipment, this bat is likely to accompany Pip for a long time."
+            },
+            {
+              "name": "Ring Necklace",
+              "subtitle": "Store it properly, or it may get lost.",
+              "text": "The ring part doesn't reveal its material, but the bright surface suggests it might have a metallic coating. The collar part is a simple handmade woven rope, wrapped in a layer of soft leather, sturdy yet aesthetically pleasing. This necklace doesn't carry any special story, Pip just dislikes having an empty neck, which doesn't suit his taste. Thanks to Pip's careful protection, this ring has not been replaced so far, only showing a few faint scratches on the surface."
             }
           ]
         },
@@ -1819,43 +1854,73 @@ window.BossesData = {
           "skills": [
             {
               "name": "Flames of War",
+              "type": "Code",
+              "cost": "0AP",
+              "cd": "1Turn(s)",
+              "description": "Prioritizes using this skill. Simultaneously uses two Machine Guns to attack the target and other targets within 1 adjacent tile, prioritizing Superconductive Pochy and dealing 1.5x DMG 2 times, with damage shared among all targets hit. Inflicts 5 stacks of [Nullify Buff] on targets hit.",
+              "buffs": [
+                {
+                  "name": "Nullify Buff",
+                  "description": "Immune to the next buff. One stack is removed upon triggering. Stacks up to 10 times.",
+                  "tags": [
+                    "Type: Debuff"
+                  ]
+                }
+              ],
               "kind": "active"
             },
             {
               "name": "Rapid Fire",
+              "type": "Active",
+              "icon": "Icon_skill_main_1138",
+              "cost": "0AP",
+              "description": "Uses a Machine Gun to attack a target, prioritizing targets other than Superconductive Pochy, dealing 1.3x DMG. Inflicts 3 stacks of [Nullify Buff] on the target hit. Can [Re-ATK] after the attack, up to 1 time per turn.",
               "kind": "active"
             },
             {
               "name": "Phantom Step",
-              "kind": "passive",
-              "description": "Grants self Quick Draw before attacking.\nAttacker buffs are sufficient.\nWhen attacked, if the attacker has fewer than 7 dispellable buffs, applies 1 stack of [Buff Failure].\nIf the attacker has fewer than 7 dispellable buffs, gains [Two-Handed Retaliation].\nIf unable to retaliate in combat, triggers [Pursuit] and moves 3 tiles toward the attacker after combat, then executes [Spinning Retaliation].",
-              "buffs": [
-                {
-                  "name": "Deletes Immunity",
-                  "description": "After triggering effect, 1 stack is removed."
-                },
-                {
-                  "name": "Nullify Buff",
-                  "description": "Immune to the next buff. One stack is removed upon triggering. Stacks up to 10 times."
-                }
-              ]
+              "type": "Passive",
+              "icon": "Icon_skill_passive_5011",
+              "description": "When actively attacked, if the attacker has fewer than 7 buffs, retaliates with [Dual Gun Retaliation] and inflicts 1 stack of [Nullify Buff] on the attacker. If Retaliation is disabled, triggers [Pursuit] and automatically moves 3 tiles toward the attacker after combat, then executes [Maelstrom].",
+              "kind": "passive"
+            },
+            {
+              "name": "Maelstrom",
+              "type": "Code",
+              "icon": "Icon_skill_order_5136",
+              "cost": "0AP",
+              "cd": "0Turn(s)",
+              "description": "Simultaneously uses two Machine Guns to deal 0.8x DMG 2 times to all enemy units within attack range.",
+              "kind": "active"
             },
             {
               "name": "Emergency Arm Repair",
-              "kind": "passive",
-              "description": "If an Arm is destroyed, repairs all current HP of the Arm before the next action and gains . Each Arm can trigger this effect once.",
-              "icon": "Icon_skill_talent_3101"
+              "type": "Talent",
+              "icon": "Icon_skill_talent_3101",
+              "description": "If an Arm is destroyed, repairs all current HP of the Arm before the next action and gains [Underperformance]. Each Arm can trigger this effect once.",
+              "buffs": [
+                {
+                  "name": "Underperformance",
+                  "description": "DMG -50% when attacking with the current weapon.",
+                  "tags": [
+                    "Type: Debuff"
+                  ]
+                }
+              ],
+              "kind": "passive"
             },
             {
               "name": "Phantom Disguise",
-              "kind": "passive",
-              "description": "At the start of battle and after taking action, summons 3 Michaela Holograms with  within 1 tile.\nWhen actively attacked, if the attacker has 7 or more buffs, dispels 7 random dispellable buffs from the attacker after combat, up to 2 times per turn.\nWhen on the battlefield, other allies gain .",
+              "type": "Passive",
+              "icon": "Icon_skill_passive_5149",
+              "description": "At the start of battle and after taking action, summons 3 Michaela Holograms with [Shadow Vanguard] within 1 tile.\nWhen actively attacked, if the attacker has 7 or more buffs, dispels 7 random dispellable buffs from the attacker after combat, up to 2 times per turn.\nWhen on the battlefield, other allies gain [Active Dispel].",
               "buffs": [
                 {
                   "name": "Active Dispel",
                   "description": "When actively attacking, dispels 1 buff from the target after combat."
                 }
-              ]
+              ],
+              "kind": "passive"
             }
           ],
           "description": "She points to the distance, claiming the bravest would be the first to conquer the world.",
@@ -1898,6 +1963,46 @@ window.BossesData = {
                 }
               ]
             }
+          ],
+          "clues": [
+            {
+              "name": "CSS Nano Chip",
+              "subtitle": "Officially known as the \"Confidential Security System Mobile Nano Chip.\"",
+              "text": "Ultra-thin flat square design, made of nano composite material, approximately the size of a fingernail. Built-in antenna array, equipped with anti-interference module, supports point-to-point encrypted communication. Such advanced goods are generally not circulated among mercenary groups. Only those guys in the military have the financial and material resources to continuously seek the best in information security. When Michaela received this good stuff from her new client, she immediately inquired if it could be supplied in large quantities—of course, she was refused."
+            },
+            {
+              "name": "Breach Grenade",
+              "subtitle": "It only shows up when it needs to.",
+              "text": "Aggregation carbon fiber shell, resistant to high temperatures and collisions, equipped with dual-mode detonation technology. The smart shrapnel can adjust ballistics based on enemy positions at the moment of explosion. Michaela loves grand scenes, so she spent a fortune to create this series of grenades. For concealment purposes, Michaela tried to persuade the factory to add an optical camouflage layer to the shell, but this might affect the grenade's explosion effect. Finally, the factory stated that if Michaela is willing to manually replace the shell, they will add a new accessory module in the next batch of products to support effect customization."
+            },
+            {
+              "name": "Rusty Warhead",
+              "subtitle": "Michaela says it's a warning.",
+              "text": "9mm caliber, filled with a lead core internally, fully covered with copper alloy externally, offering strong penetration. It has wide applicability in close-range combat fields and can also be used for shooting competitive types or outdoor survival. Michaela collects it because this is the only bullet that almost took her life. The doctor, still shaken after removing it, said that if the ballistics had redirected by just a few millimeters, Michaela wouldn't have had the chance to survive. She must be more cautious—as long as she plans to continue charging in this crazy world."
+            }
+          ],
+          "units": [
+            {
+              "name": "Michaela Hologram",
+              "skills": [
+                {
+                  "name": "Shadow Vanguard",
+                  "type": "Passive",
+                  "icon": "Icon_skill_passive_5021",
+                  "description": "While alive, grants Michaela [Without a Trace], stacking up to 10 times.\nWhen destroyed, applies 1 stack of [Holy Shield] to other Michaela Holograms and grants the killer 1 random buff.",
+                  "buffs": [
+                    {
+                      "name": "Without a Trace",
+                      "description": "Dodge Rate +25%. Hit Rate and DMG +15%. Stacks up to 10 times."
+                    },
+                    {
+                      "name": "Holy Shield",
+                      "description": "DMG Taken -30%."
+                    }
+                  ]
+                }
+              ]
+            }
           ]
         },
         {
@@ -1937,28 +2042,44 @@ window.BossesData = {
           "skills": [
             {
               "name": "MG Spray",
+              "type": "Code",
+              "icon": "Icon_skill_order_1010",
+              "cost": "0AP",
+              "cd": "0Turn(s)",
+              "description": "Uses a Heavy Machine Gun to attack all targets in a cone ahead, dealing 1x DMG.",
               "kind": "active"
             },
             {
               "name": "Electromagnetic Purge",
+              "type": "Active",
+              "icon": "Icon_skill_main_1121",
+              "cost": "0AP",
+              "cd": "0Turn(s)",
+              "description": "Uses a Rail Gun to attack all targets within a 3x5-tile area, dealing 1.0x AoE DMG.",
               "kind": "active"
             },
             {
               "name": "Emergency Arm Repair",
-              "kind": "passive",
-              "description": "If an Arm is destroyed, repairs all current HP of the Arm before the next action and gains . Each Arm can trigger this effect once.",
-              "icon": "Icon_skill_talent_3101"
+              "type": "Talent",
+              "icon": "Icon_skill_talent_3101",
+              "description": "If an Arm is destroyed, repairs all current HP of the Arm before the next action and gains [Underperformance]. Each Arm can trigger this effect once.",
+              "buffs": [
+                {
+                  "name": "Underperformance",
+                  "description": "DMG -50% when attacking with the current weapon.",
+                  "tags": [
+                    "Type: Debuff"
+                  ]
+                }
+              ],
+              "kind": "passive"
             },
             {
               "name": "Phosphorescent Stream",
-              "kind": "passive",
-              "description": "At start of action, if on , triggers [Re-Act]. Can trigger 1 time per turn.\nAt start of action, if not on , gains .\nFor each , DMG +5%.\nGains .",
-              "buffs": [
-                {
-                  "name": "Risk It All",
-                  "description": "After actively attacking, creates  within the strike range: Applies  and  to units remaining on this terrain, lasting for 1 turn."
-                }
-              ]
+              "type": "Passive",
+              "icon": "Icon_skill_passive_5155",
+              "description": "At start of action, if on [Mist Terrain], triggers [Re-Act]. Can trigger 1 time per turn.\nAt start of action, if not on [Mist Terrain], gains [Risk It All].\nFor each [Gel Conduction], DMG +5%.\nGains [Stable].",
+              "kind": "passive"
             }
           ],
           "description": "Under the sunlight, she remains as blazing as ever.",
@@ -1994,6 +2115,23 @@ window.BossesData = {
               "name": "Endless Cycle",
               "difficulty": "Extreme",
               "description": "[Eston] redeploys immediately after being defeated. Can only trigger 1 time."
+            }
+          ],
+          "clues": [
+            {
+              "name": "Demon Mask",
+              "subtitle": "In the past, it was a symbol of order.",
+              "text": "The shell is made of high-strength carbon fiber material, with a layer of nano-ceramic coating on the surface. The part that fits the face is filled with breathable micro-mesh material, balancing lightness, durability, and comfort, suitable for various environments. The design was personally involved by White Flame, and it is said to be inspired by legends from a distant land where people tame demons to punish those who break the rules. In the past, only White Flame, as an enforcer, was qualified to wear this demon mask. Time has passed, and she is no longer an enforcer, yet she is no longer accustomed to showing her true face."
+            },
+            {
+              "name": "Old Umbrella",
+              "subtitle": "There will be no rain under this umbrella.",
+              "text": "A low-key black umbrella, devoid of any patterns. Only the rust on the contact surface between the ribs and the waterproof fabric reveals that this umbrella has been around for years. It was a gift from the former enforcer to White Flame—when the young White Flame was stunned by the brutality witnessed at the enforcement scene, the former enforcer opened this umbrella for her, shielding her from the blood rain and cries. Later, she held this umbrella and followed the former enforcer to the organization, starting a new chapter in her life. Now, she rarely finds herself in need of an umbrella, but she will always remember the shadow that brought her a sense of security."
+            },
+            {
+              "name": "A Broken Blade",
+              "subtitle": "It's already dead, yet the blood remains.",
+              "text": "The handle uses redwood as the core material, wrapped with a layer of fish skin, and then bound with silk rope to enhance grip comfort. The blade is only about 20cm long, made of high-purity jade steel, with a flowing wave pattern on the edge. The cut-off point is smooth and burr-free, which suggests it may have been cut off with a swift and decisive strike. It once accompanied White Flame as an enforcer weapon, stained with the blood of countless traitors. The last person it executed was one of White Flame's closest confidants. He knew her methods and came prepared, severing the blade. In the end, White Flame drove the broken edge straight into his heart."
             }
           ]
         },
@@ -2034,29 +2172,59 @@ window.BossesData = {
           "skills": [
             {
               "name": "Blazing Surge",
+              "type": "Active",
+              "icon": "Icon_skill_main_1150",
+              "cost": "2AP",
+              "description": "Uses a Flamethrower to attack the main target, dealing 1.2x DMG and dealing 20% [Flame DMG] to other targets in the path. After this, randomly attacks 1 other target within range with the Flamethrower on the opposite Arm, dealing 0.15x DMG. After combat, applies [Attrition Strike] to the unit hit: After taking action, takes DMG equal to 5% of Max HP. Destroying the Titan clears this effect.",
+              "buffs": [
+                {
+                  "name": "Attrition Strike",
+                  "description": "At end of action, all parts take [Fixed DMG] equal to 5% of Max HP.",
+                  "tags": [
+                    "Type: Debuff"
+                  ]
+                }
+              ],
               "kind": "active"
             },
             {
               "name": "Punitive Resonance",
-              "kind": "passive",
-              "description": "When actively attacked, grants the attacker [Chain], lasting for 2 turns.",
+              "type": "Passive",
+              "icon": "Icon_skill_passive_5204",
+              "description": "When actively attacked, causes the attacker to gain [Chain], lasting for 1 turn.",
               "buffs": [
                 {
                   "name": "Chain",
-                  "description": "When any ally is actively attacked, takes [Fixed DMG] equal to 25% of own Max HP."
+                  "description": "When any ally is actively attacked, takes [Fixed DMG] equal to 25% of own Max HP.",
+                  "tags": [
+                    "Type: Debuff"
+                  ]
                 }
-              ]
+              ],
+              "kind": "passive"
             },
             {
               "name": "Emergency Arm Repair",
-              "kind": "passive",
-              "description": "If an Arm is destroyed, repairs all current HP of the Arm before the next action and gains . Each Arm can trigger this effect once.",
-              "icon": "Icon_skill_talent_3101"
+              "type": "Talent",
+              "icon": "Icon_skill_talent_3101",
+              "description": "If an Arm is destroyed, repairs all current HP of the Arm before the next action and gains [Underperformance]. Each Arm can trigger this effect once.",
+              "buffs": [
+                {
+                  "name": "Underperformance",
+                  "description": "DMG -50% when attacking with the current weapon.",
+                  "tags": [
+                    "Type: Debuff"
+                  ]
+                }
+              ],
+              "kind": "passive"
             },
             {
               "name": "Repair Engine",
-              "kind": "passive",
-              "description": "When any enemy unit is repaired, restores own HP for 10% of the total Repair AMT applied.\nAfter action starts, gains 2 stacks of , stacking up to 10 times. Triggers 1 time every 3 turns.\nEach time Link Attack DMG is taken, immediately clears 1 stack of . Each time Retaliation DMG is taken, immediately clears 2 stacks of ."
+              "type": "Talent",
+              "icon": "Icon_skill_talent_1110",
+              "description": "When any enemy unit is repaired, restores own HP for 10% of the total Repair AMT applied.\nAfter action starts, gains 2 stacks of [Full-System Repair], stacking up to 10 times. Triggers 1 time every 3 turns.\nEach time Link Attack DMG is taken, immediately clears 1 stack of [Full-System Repair]. Each time Retaliation DMG is taken, immediately clears 2 stacks of [Full-System Repair].",
+              "kind": "passive"
             }
           ],
           "description": "Any treasure he has yet to obtain is a treasure he is destined to acquire.",
