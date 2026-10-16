@@ -35,7 +35,8 @@ function bossKit() {
 
   // href: where the boss name links (its stage, or its Bosses entry), if anywhere.
   // id: an anchor to link the card to. above/below: extra HTML around the card.
-  function cardHtml(stage, firstDiff, col, href, id, above, below) {
+  // nameOnAvatar: show the name on the portrait, after the stage number.
+  function cardHtml(stage, firstDiff, col, href, id, above, below, nameOnAvatar) {
     var b     = bosses[stage.boss] || { name: stage.boss };
     var pilot = b.pilot_id && pilotById[b.pilot_id];
     var name  = href ? '<a href="' + href + '">' + esc(b.name) + '</a>' : esc(b.name);
@@ -49,11 +50,12 @@ function bossKit() {
         '<div class="boss-card">' +
           (href ? '<a class="pilot-avatar boss-avatar" href="' + href + '">' : '<div class="pilot-avatar boss-avatar">') +
             (b.portrait ? '<img src="' + ASSET_BASE + b.portrait + '" alt="' + esc(b.name) + '" loading="lazy" />' : '') +
-            '<span class="version-badge">' + stage.slot + '</span>' +
+            '<span class="version-badge">' + stage.slot +
+              (nameOnAvatar ? '<span class="boss-avatar-name">' + esc(b.name) + '</span>' : '') + '</span>' +
             (pilot ? '<span class="boss-pilot-badge">Pilot</span>' : '') +
           (href ? '</a>' : '</div>') +
           '<div class="boss-info">' +
-            '<div class="pilot-name">' + name + '</div>' +
+            (nameOnAvatar ? '' : '<div class="pilot-name">' + name + '</div>') +
             '<div class="boss-mech">' + mechHtml(stage.mech) + '</div>' +
             (stage.cls ? '<div class="pilot-tags"><span class="tag">' + esc(stage.cls) + '</span></div>' : '') +
             hp +
@@ -119,11 +121,22 @@ function bossKit() {
     return terms;
   }
 
+  // Pilot skill text arrives with its numbers wrapped in <color> tags; the
+  // mined boss text mostly lost them, so add the same highlight to numbers
+  // outside tags and [Terms]. Text that kept its tags is left alone.
+  function highlightNumbers(text) {
+    if (text.indexOf('<color=') !== -1) return text;
+    return text.split(/(<[^>]*>|\[[^\[\]]*\])/).map(function (part, i) {
+      if (i % 2) return part;
+      return part.replace(/(^|[^\w.+\-])([+\-]?\d+(?:\.\d+)?(?:%?[\-~]\d+(?:\.\d+)?)?%?)(?![\w.]?\d)(?!\w)/g, '$1<color=#F74848>$2</color>');
+    }).join('');
+  }
+
   // Skill text with the game's [Terms] highlighted; terms the stage doesn't
   // define link to the glossary (e.g. [Re-ATK]) when it knows them.
   function descHtml(text) {
     var local = [];
-    text = String(text).replace(/\[([^\[\]]+)\]/g, function (m, name) {
+    text = highlightNumbers(String(text)).replace(/\[([^\[\]]+)\]/g, function (m, name) {
       if (!localTerms[name.toLowerCase()]) return m;
       local.push(name);
       return '\x01' + (local.length - 1) + '\x01';
@@ -187,24 +200,30 @@ function bossKit() {
     );
   }
 
+  // The stage's title and blurb, spanning the row above the boss and its skills.
+  function stageIntro(st) {
+    if (!st.title && !st.description) return '';
+    return (
+      '<div class="col-12"><div class="skill-card boss-stage-info"><div class="boss-stage-title">' +
+        (st.title ? '<b>' + esc(st.title) + '</b>' : '') +
+        (st.description ? ' <span>' + esc(st.description) + '</span>' : '') +
+      '</div></div></div>'
+    );
+  }
+
   function stageDetails(st, firstDiff) {
     localTerms = collectTerms(st);
-    var intro = (st.title || st.description
-        ? '<div class="boss-stage-title">' + (st.title ? '<b>' + esc(st.title) + '</b>' : '') +
-            (st.description ? ' <span>' + esc(st.description) + '</span>' : '') + '</div>'
-        : '');
     return (
-      (intro ? '<div class="skill-card boss-stage-info">' + intro + '</div>' : '') +
       '<div class="skill-list">' + (st.skills || []).map(function (sk) { return skillHtml(sk, firstDiff); }).join('') + '</div>' +
       (st.units || []).map(function (u) {
         return '<div class="boss-sub-head">' + esc(u.name) + '</div>' +
           '<div class="skill-list">' + u.skills.map(function (sk) { return skillHtml(sk, firstDiff); }).join('') + '</div>';
       }).join('') +
-      (st.extreme_modifiers ? '<div class="boss-sub-head">Extreme Modifier</div><div class="skill-list">' + st.extreme_modifiers.map(function (m) {
+      (st.extreme_modifiers ? '<div class="skill-list">' + st.extreme_modifiers.map(function (m) {
         return (
           '<div class="skill-card boss-skill">' +
             '<div class="skill-name-row">' + (m.name ? '<span class="skill-name">' + esc(m.name) + '</span>' : '') +
-              (m.difficulty ? '<span class="boss-skill-diffs">' + esc(m.difficulty) + '</span>' : '') + '</div>' +
+              '<span class="boss-skill-diffs">Extreme Modifier</span>' + '</div>' +
             '<div class="talent-desc">' + descHtml(m.description) + '</div>' +
             (m.buffs || []).map(buffHtml).join('') +
           '</div>'
@@ -217,15 +236,16 @@ function bossKit() {
     );
   }
 
-  // Each stage has its own difficulty toggle (above the boss) and bounties
-  // (below its HP); Workshop Craft gear is at the top.
+  // One floating difficulty toggle for every stage; each stage's bounties are
+  // below its HP, and Workshop Craft gear is at the top.
   function seasonPage(s) {
+    var seasonDiffs = (s.stages[0] && s.stages[0].difficulties) || [];
     var stages = s.stages.map(function (st) {
-      var diffs  = st.difficulties || [];
-      var toggle = diffs.length ? '<div class="boss-stage-diffs">' + diffToggle(diffs) + '</div>' : '';
+      var diffs = st.difficulties || [];
       return (
         '<div class="row g-3 boss-stage" id="stage-' + st.slot + '">' +
-          cardHtml(st, diffs[0], 'col-12 col-sm-5 col-md-3', bossHref(st.boss), null, toggle, bountiesHtml(st, diffs[0])) +
+          stageIntro(st) +
+          cardHtml(st, diffs[0], 'col-12 col-sm-5 col-md-3', bossHref(st.boss), null, '', bountiesHtml(st, diffs[0]), true) +
           '<div class="col-12 col-sm-7 col-md-9">' + stageDetails(st, diffs[0]) + '</div>' +
         '</div>'
       );
@@ -235,11 +255,12 @@ function bossKit() {
       '<a href="' + App.href('armedconquest') + '" class="btn-back">&#8592; Back to Armed Conquest</a>' +
       '<div class="listing-header"><h1>' + esc(s.number + '. ' + s.name) + '</h1></div>' +
       '<p class="dispatch-intro">Armed Conquest season ' + s.number + (s.version ? ' (v' + esc(s.version) + ')' : '') + '. ' +
-        'Every boss\'s skills, by stage. Pick a difficulty above each boss: skills only on some difficulties are marked and follow it, as do its HP and bounties. ' +
+        'Every boss\'s skills, by stage. Pick a difficulty on the right: skills only on some difficulties are marked and follow it, as do the bosses\' HP and bounties. ' +
         (guided
           ? 'Skill cards, bounties, minions, Extreme modifiers and clues are from the Armed Conquest guide.</p>'
           : 'Active skill effects aren\'t in the game data yet, so only their names are listed.</p>') +
       '<div class="boss-group boss-season">' +
+        (seasonDiffs.length > 1 ? '<div class="boss-diff-float">' + diffToggle(seasonDiffs) + '</div>' : '') +
         gearHtml(s) +
         stages +
       '</div>'

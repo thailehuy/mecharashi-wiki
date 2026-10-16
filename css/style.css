@@ -3616,8 +3616,24 @@ a.boss-avatar { display: block; }
 .boss-app-co { background-color: rgba(96, 168, 255, 0.2); color: #9cc8ff; }
 .boss-app-stage { color: #8a8aa0; font-size: 0.75rem; }
 .boss-stage .boss-card { height: auto; }
-.boss-stage-diffs { display: flex; flex-wrap: wrap; gap: 0.25rem; margin-bottom: 0.5rem; }
-.boss-stage-diffs .filter-btn { padding: 0.15rem 0.6rem; font-size: 0.75rem; }
+.boss-diff-float {
+  position: fixed;
+  top: 4rem;
+  right: 1rem;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 0.4rem;
+  background: rgba(15, 15, 15, 0.85);
+  border: 1px solid #2a2a4a;
+  border-radius: 6px;
+}
+.boss-diff-float .filter-btn { padding: 0.2rem 0.6rem; font-size: 0.75rem; }
+@media (max-width: 575.98px) {
+  .boss-diff-float { top: auto; bottom: 1rem; flex-direction: row; }
+}
+.boss-avatar .boss-avatar-name { margin-left: 0.4em; padding-left: 0.4em; border-left: 1px solid rgba(255, 255, 255, 0.3); }
 .boss-stage-bounties { margin: 0.75rem 0 0; }
 .boss-stage-bounties .boss-sub-head { margin-top: 0; }
 .boss-season > .boss-gear { margin: 0 0 1.25rem; }
@@ -3638,7 +3654,7 @@ a.boss-avatar { display: block; }
 }
 .boss-buff-name { font-weight: 600; color: #e0e0f0; margin-right: 0.5rem; }
 .boss-buff-tags { font-size: 0.7rem; color: #8a8aa0; }
-.boss-stage-info { margin-bottom: 0.5rem; }
+.boss-stage-info { margin-bottom: 0; }
 .boss-stage-info .boss-sub-head { margin-top: 0.5rem; }
 .boss-stage-title { color: #b0b0c8; font-size: 0.9rem; }
 .boss-stage-title b { color: #ffffff; }
