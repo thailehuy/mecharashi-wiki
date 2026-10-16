@@ -3619,10 +3619,10 @@ a.boss-avatar { display: block; }
 .boss-diff-float {
   position: fixed;
   top: 4rem;
-  right: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 100;
   display: flex;
-  flex-direction: column;
   gap: 0.25rem;
   padding: 0.4rem;
   background: rgba(15, 15, 15, 0.85);
@@ -3631,9 +3631,8 @@ a.boss-avatar { display: block; }
 }
 .boss-diff-float .filter-btn { padding: 0.2rem 0.6rem; font-size: 0.75rem; }
 @media (max-width: 575.98px) {
-  .boss-diff-float { top: auto; bottom: 1rem; flex-direction: row; }
+  .boss-diff-float { top: auto; bottom: 1rem; }
 }
-.boss-avatar .boss-avatar-name { margin-left: 0.4em; padding-left: 0.4em; border-left: 1px solid rgba(255, 255, 255, 0.3); }
 .boss-stage-bounties { margin: 0.75rem 0 0; }
 .boss-stage-bounties .boss-sub-head { margin-top: 0; }
 .boss-season > .boss-gear { margin: 0 0 1.25rem; }

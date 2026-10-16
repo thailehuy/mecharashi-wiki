@@ -35,7 +35,8 @@ function bossKit() {
 
   // href: where the boss name links (its stage, or its Bosses entry), if anywhere.
   // id: an anchor to link the card to. above/below: extra HTML around the card.
-  // nameOnAvatar: show the name on the portrait, after the stage number.
+  // nameOnAvatar: show the name on the portrait instead of the stage number
+  // (the season page puts the number on the stage's title line).
   function cardHtml(stage, firstDiff, col, href, id, above, below, nameOnAvatar) {
     var b     = bosses[stage.boss] || { name: stage.boss };
     var pilot = b.pilot_id && pilotById[b.pilot_id];
@@ -50,8 +51,7 @@ function bossKit() {
         '<div class="boss-card">' +
           (href ? '<a class="pilot-avatar boss-avatar" href="' + href + '">' : '<div class="pilot-avatar boss-avatar">') +
             (b.portrait ? '<img src="' + ASSET_BASE + b.portrait + '" alt="' + esc(b.name) + '" loading="lazy" />' : '') +
-            '<span class="version-badge">' + stage.slot +
-              (nameOnAvatar ? '<span class="boss-avatar-name">' + esc(b.name) + '</span>' : '') + '</span>' +
+            '<span class="version-badge">' + (nameOnAvatar ? esc(b.name) : stage.slot) + '</span>' +
             (pilot ? '<span class="boss-pilot-badge">Pilot</span>' : '') +
           (href ? '</a>' : '</div>') +
           '<div class="boss-info">' +
@@ -200,12 +200,11 @@ function bossKit() {
     );
   }
 
-  // The stage's title and blurb, spanning the row above the boss and its skills.
+  // The stage's number, title and blurb, spanning the row above the boss and its skills.
   function stageIntro(st) {
-    if (!st.title && !st.description) return '';
     return (
       '<div class="col-12"><div class="skill-card boss-stage-info"><div class="boss-stage-title">' +
-        (st.title ? '<b>' + esc(st.title) + '</b>' : '') +
+        '<b>Stage ' + st.slot + (st.title ? ': ' + esc(st.title) : '') + '</b>' +
         (st.description ? ' <span>' + esc(st.description) + '</span>' : '') +
       '</div></div></div>'
     );
@@ -255,7 +254,7 @@ function bossKit() {
       '<a href="' + App.href('armedconquest') + '" class="btn-back">&#8592; Back to Armed Conquest</a>' +
       '<div class="listing-header"><h1>' + esc(s.number + '. ' + s.name) + '</h1></div>' +
       '<p class="dispatch-intro">Armed Conquest season ' + s.number + (s.version ? ' (v' + esc(s.version) + ')' : '') + '. ' +
-        'Every boss\'s skills, by stage. Pick a difficulty on the right: skills only on some difficulties are marked and follow it, as do the bosses\' HP and bounties. ' +
+        'Every boss\'s skills, by stage. Pick a difficulty at the top: skills only on some difficulties are marked and follow it, as do the bosses\' HP and bounties. ' +
         (guided
           ? 'Skill cards, bounties, minions, Extreme modifiers and clues are from the Armed Conquest guide.</p>'
           : 'Active skill effects aren\'t in the game data yet, so only their names are listed.</p>') +
