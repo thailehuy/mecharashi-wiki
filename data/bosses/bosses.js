@@ -318,7 +318,32 @@ window.BossesData = {
               "arm": 140869,
               "legs": 210145
             }
-          }
+          },
+          "title": "Internal Conflict",
+          "skills": [
+            {
+              "name": "Binding Mire",
+              "kind": "active",
+              "icon": "Icon_skill_order_1124"
+            },
+            {
+              "name": "Thunderstorm, Emerge!",
+              "kind": "active",
+              "icon": "Icon_skill_order_1010"
+            },
+            {
+              "name": "Emergency Arm Repair",
+              "kind": "passive",
+              "description": "If an Arm is destroyed, repairs all current HP of the Arm before the next action and gains . Each Arm can trigger this effect once.",
+              "icon": "Icon_skill_talent_3101"
+            },
+            {
+              "name": "Fading Snow",
+              "kind": "passive",
+              "description": "Range +1.\nWhen possessing 3 AP or more, DMG Dealt +5% and Hit Rate +5% for each 1 AP possessed, up to 45%.\nAt start of action, if total AP possessed reaches the cap, gains .",
+              "icon": "Icon_skill_talent_4110"
+            }
+          ]
         },
         {
           "slot": 2,
@@ -352,7 +377,30 @@ window.BossesData = {
               "arm": 134435,
               "legs": 160609
             }
-          }
+          },
+          "title": "Chasing Shadows",
+          "skills": [
+            {
+              "name": "Exorcise",
+              "kind": "active",
+              "icon": "Icon_skill_order_1109"
+            },
+            {
+              "name": "Eliminate",
+              "kind": "active"
+            },
+            {
+              "name": "Sinister Curtain",
+              "kind": "passive",
+              "icon": "Icon_skill_passive_5104"
+            },
+            {
+              "name": "Predatorial Aid",
+              "kind": "passive",
+              "description": "At start of action, for each other allied ST, gains 1 stack of .\nWhen possessing , Machine Gun Bullets +2, Rail Gun Range +1, and Rail Gun can fire diagonally.",
+              "icon": "Icon_skill_talent_5126"
+            }
+          ]
         },
         {
           "slot": 3,
@@ -386,7 +434,33 @@ window.BossesData = {
               "arm": 145505,
               "legs": 173833
             }
-          }
+          },
+          "title": "Power Play",
+          "skills": [
+            {
+              "name": "Gyrating Slash",
+              "kind": "active"
+            },
+            {
+              "name": "Quick Slash",
+              "kind": "active"
+            },
+            {
+              "name": "Deadly Raid",
+              "kind": "active"
+            },
+            {
+              "name": "Emergency Arm Repair",
+              "kind": "passive",
+              "description": "If an Arm is destroyed, repairs all current HP of the Arm before the next action and gains . Each Arm can trigger this effect once.",
+              "icon": "Icon_skill_talent_3101"
+            },
+            {
+              "name": "Blade Flurry",
+              "kind": "passive",
+              "description": "When deployed, gains 10 stacks of , reducing Applied DMG Taken by 50%.\nWhen critically hit, increases the attacker's Crit DMG by 100%. After each critical hit, Crit DMG is reduced by 10%. Resets after attacking.\nWhen possessing 5 stacks of , gains Re-Act. Can use  during Re-Act.\nWhen actively attacking, for every 1 target hit, gains 2 stacks of , stacking up to 10 times.\nImmune to [Oath], [Provocation], and ."
+            }
+          ]
         },
         {
           "slot": 4,
@@ -420,7 +494,48 @@ window.BossesData = {
               "arm": 73009,
               "legs": 88747
             }
-          }
+          },
+          "title": "Distant View",
+          "skills": [
+            {
+              "name": "Chain Shot",
+              "kind": "active"
+            },
+            {
+              "name": "Disruptive Bombing",
+              "kind": "active"
+            },
+            {
+              "name": "Wrist Shatter",
+              "kind": "active"
+            },
+            {
+              "name": "Frenzied Execution",
+              "kind": "active"
+            },
+            {
+              "name": "Bloodfire Offensive",
+              "kind": "passive",
+              "difficulties": [
+                "Normal",
+                "Hard"
+              ]
+            },
+            {
+              "name": "Floating Fortress",
+              "kind": "passive",
+              "description": "After a part is destroyed, automatically repairs before taking action in the next turn. After executing a skill, can trigger [Re-ATK].\nWhen Legs are undestroyed, Melee Weapons can only attack the Legs. After Legs are destroyed, Melee DMG Taken +10%.\nDoes not trigger Burning or Mine-style terrain effects.",
+              "icon": "Icon_skill_talent_5130"
+            },
+            {
+              "name": "Bloodfire Offensive β",
+              "kind": "passive",
+              "difficulties": [
+                "Extreme",
+                "Inferno"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -461,7 +576,37 @@ window.BossesData = {
               "arm": 119732,
               "legs": 143043
             }
-          }
+          },
+          "title": "Twist of Fate",
+          "skills": [
+            {
+              "name": "Ice Break",
+              "kind": "active",
+              "icon": "Icon_skill_main_1150"
+            },
+            {
+              "name": "Melt",
+              "kind": "active",
+              "icon": "Icon_skill_order_1123"
+            },
+            {
+              "name": "Preparation",
+              "kind": "passive",
+              "icon": "Icon_skill_passive_2008"
+            },
+            {
+              "name": "Emergency Arm Repair",
+              "kind": "passive",
+              "description": "If an Arm is destroyed, repairs all current HP of the Arm before the next action and gains . Each Arm can trigger this effect once.",
+              "icon": "Icon_skill_talent_3101"
+            },
+            {
+              "name": "Army of the North",
+              "kind": "passive",
+              "description": "At start of action, if no units have , randomly inflicts  on 3 enemy units for 1 turn.\nIf unable to retaliate in combat, inflicts  on attackers after combat, lasting for 1 turn.",
+              "icon": "Icon_skill_talent_5125"
+            }
+          ]
         },
         {
           "slot": 2,
@@ -495,7 +640,31 @@ window.BossesData = {
               "arm": 145505,
               "legs": 173833
             }
-          }
+          },
+          "title": "Reflections of Loyalty",
+          "skills": [
+            {
+              "name": "Bait Combo",
+              "kind": "active",
+              "icon": "Icon_skill_main_1128"
+            },
+            {
+              "name": "Penetrating Sniper",
+              "kind": "active",
+              "icon": "Icon_skill_order_1108"
+            },
+            {
+              "name": "Know the Way",
+              "kind": "passive",
+              "icon": "Icon_skill_passive_2121"
+            },
+            {
+              "name": "Undying",
+              "kind": "passive",
+              "description": "At end of action, if possessing , inflicts  on all enemies, lasting for 1 turn.",
+              "icon": "Icon_skill_talent_5125"
+            }
+          ]
         },
         {
           "slot": 3,
@@ -529,7 +698,33 @@ window.BossesData = {
               "arm": 124259,
               "legs": 185036
             }
-          }
+          },
+          "title": "Dust and Blood",
+          "skills": [
+            {
+              "name": "Tagging Fire",
+              "kind": "active"
+            },
+            {
+              "name": "Suppressive Blow",
+              "kind": "active"
+            },
+            {
+              "name": "Lethal Vigilance",
+              "kind": "passive"
+            },
+            {
+              "name": "Emergency Arm Repair",
+              "kind": "passive",
+              "description": "If an Arm is destroyed, repairs all current HP of the Arm before the next action and gains . Each Arm can trigger this effect once.",
+              "icon": "Icon_skill_talent_3101"
+            },
+            {
+              "name": "Call Reinforcements",
+              "kind": "passive",
+              "description": "Each time damage is taken from an active attack, 1 corresponding ST is reinforced in the Barracks. When Body HP falls below 50% and 20% for the first time, 1 of each type of ST is instantly summoned around self.When actively attacking, applies 3 stacks of  to all allies on the battlefield.For each 1 hit taken by an ally in a single attack, Dodge Rate increases by 10%, up to 100%. Lasts until the end of this attack."
+            }
+          ]
         },
         {
           "slot": 4,
@@ -563,7 +758,31 @@ window.BossesData = {
               "arm": 140869,
               "legs": 210145
             }
-          }
+          },
+          "title": "Final Creed",
+          "skills": [
+            {
+              "name": "Weaponry Tactics",
+              "kind": "active"
+            },
+            {
+              "name": "Soul Slash",
+              "kind": "active"
+            },
+            {
+              "name": "Reprisal Mandate",
+              "kind": "passive"
+            },
+            {
+              "name": "Emergency Arm Repair - EX",
+              "kind": "passive"
+            },
+            {
+              "name": "Underworld Godfather",
+              "kind": "passive",
+              "description": "When equipped with a [Machine Gun] or [Shield], only takes damage from the first 2 hits of each attack, and DMG Taken is increased by 180%.\nWhen equipped with [Alter-Blades], immune to the first 2 hits of each attack.\nWithin 1 turn, after taking 2 active attacks and each time damage exceeds 5% of Max HP, switches Two-Handed Weapons.\nIf no weapon switch occurs within 1 turn, gains .\nWhen the Body first drops to 50% and 20% of Max HP, immediately gains , and DMG Dealt increases by 20%.\nWhen possessing , if holding [Alter-Blades], Skill Enhancement is set to . If holding [Machine Guns], Skill Enhancement is set to ."
+            }
+          ]
         }
       ]
     },
@@ -604,7 +823,27 @@ window.BossesData = {
               "arm": 91052,
               "legs": 135587
             }
-          }
+          },
+          "title": "A Single Flaw",
+          "skills": [
+            {
+              "name": "Malicious Strike",
+              "kind": "active"
+            },
+            {
+              "name": "Tactical Buffer",
+              "kind": "passive"
+            },
+            {
+              "name": "Repair Protocol",
+              "kind": "passive"
+            },
+            {
+              "name": "Allied Enhancement - EX",
+              "kind": "passive",
+              "description": "At start of turn, if the Hayato is not present, summons the Hayato. If Hayato is within 5 tiles, DMG Dealt +100%."
+            }
+          ]
         },
         {
           "slot": 2,
@@ -638,7 +877,26 @@ window.BossesData = {
               "arm": 147998,
               "legs": 220780
             }
-          }
+          },
+          "title": "Feign East, Strike West",
+          "skills": [
+            {
+              "name": "Suppression Spray",
+              "kind": "active",
+              "icon": "Icon_skill_order_1010"
+            },
+            {
+              "name": "Link Storm",
+              "kind": "passive",
+              "icon": "Icon_skill_passive_1139"
+            },
+            {
+              "name": "Unwavering",
+              "kind": "passive",
+              "description": "In a single attack, gains DMG Taken -20% for each hit, up to 100%.",
+              "icon": "Icon_skill_talent_2103"
+            }
+          ]
         },
         {
           "slot": 3,
@@ -672,7 +930,33 @@ window.BossesData = {
               "arm": 112642,
               "legs": 167738
             }
-          }
+          },
+          "title": "Unexpected Turn",
+          "skills": [
+            {
+              "name": "Rain of Fire",
+              "kind": "active"
+            },
+            {
+              "name": "Echo Burst",
+              "kind": "active"
+            },
+            {
+              "name": "Tactical Erosion",
+              "kind": "passive"
+            },
+            {
+              "name": "Emergency Arm Repair",
+              "kind": "passive",
+              "description": "If an Arm is destroyed, repairs all current HP of the Arm before the next action and gains . Each Arm can trigger this effect once.",
+              "icon": "Icon_skill_talent_3101"
+            },
+            {
+              "name": "Erosion Code",
+              "kind": "passive",
+              "description": "When dealing damage, deals additional Fixed DMG equal to 5% of the target's Max HP after combat.\nWhen retaliating and dealing damage, inflicts 1 stack of  on the target, lasting for 2 turns."
+            }
+          ]
         },
         {
           "slot": 4,
@@ -706,7 +990,45 @@ window.BossesData = {
               "arm": 145505,
               "legs": 173833
             }
-          }
+          },
+          "title": "Trapped Dreams",
+          "skills": [
+            {
+              "name": "Shadow Pierce",
+              "kind": "active"
+            },
+            {
+              "name": "Bloodblade Frenzy",
+              "kind": "active"
+            },
+            {
+              "name": "Shadow Domain I",
+              "kind": "passive",
+              "difficulties": [
+                "Normal",
+                "Hard"
+              ]
+            },
+            {
+              "name": "Emergency Arm Repair",
+              "kind": "passive",
+              "description": "If an Arm is destroyed, repairs all current HP of the Arm before the next action and gains . Each Arm can trigger this effect once.",
+              "icon": "Icon_skill_talent_3101"
+            },
+            {
+              "name": "Vengeful Heart",
+              "kind": "passive",
+              "description": "After actively attacking with an Alter-Blade, gains 1 stack of . When taking extra damage from 2 tiles away, prioritizes Missile Retaliation, dealing 2x Retaliation DMG.\nBefore taking action, if possessing 3 stacks of ,  changes to . Can only trigger 1 time per turn.\nImmune to [Oath] and [Provocation]. Movement is not blocked by enemy units.\nAll Missile Attacks do not consume Ammo."
+            },
+            {
+              "name": "Shadow Domain II",
+              "kind": "passive",
+              "difficulties": [
+                "Extreme",
+                "Inferno"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -747,7 +1069,59 @@ window.BossesData = {
               "arm": 130778,
               "legs": 156239
             }
-          }
+          },
+          "title": "Rekindled",
+          "skills": [
+            {
+              "name": "Flame Ban",
+              "kind": "active",
+              "icon": "Icon_skill_main_1151"
+            },
+            {
+              "name": "Unleash the Thunder!",
+              "kind": "active",
+              "icon": "Icon_skill_order_1109"
+            },
+            {
+              "name": "Emergency Arm Repair",
+              "kind": "passive",
+              "description": "If an Arm is destroyed, repairs all current HP of the Arm before the next action and gains . Each Arm can trigger this effect once.",
+              "icon": "Icon_skill_talent_3101"
+            },
+            {
+              "name": "Starburst - EX",
+              "kind": "passive",
+              "description": "At the start of battle and action, grants  to all allies.\nWhen Body HP falls below 50% for the first time, gains  based on the number of units with , then removes all  stacks. After this, allies cannot gain ."
+            }
+          ],
+          "description": "An island that never disappoints.",
+          "bounties": [
+            {
+              "name": "Quick Resolution",
+              "conditions": {
+                "Normal": "Win within 6 turns",
+                "Hard": "Win within 6 turns",
+                "Extreme": "Win within 6 turns",
+                "Inferno": "Win within 6 turns"
+              }
+            },
+            {
+              "name": "No Smoking",
+              "conditions": {
+                "Normal": "Blazetrudge’s Detonation does not exceed 2 stacks",
+                "Hard": "Blazetrudge’s Detonation does not exceed 2 stacks"
+              }
+            },
+            {
+              "name": "Safe and Sound",
+              "conditions": {
+                "Normal": "All of your team members survive",
+                "Hard": "All of your team members survive",
+                "Extreme": "All of your team members survive",
+                "Inferno": "All of your team members survive"
+              }
+            }
+          ]
         },
         {
           "slot": 2,
@@ -781,7 +1155,61 @@ window.BossesData = {
               "arm": 130176,
               "legs": 194193
             }
-          }
+          },
+          "title": "Cognitive Flood",
+          "skills": [
+            {
+              "name": "Imprisoning Shot",
+              "kind": "active"
+            },
+            {
+              "name": "Electromagnetic Roar",
+              "kind": "active"
+            },
+            {
+              "name": "Predatory Intuition",
+              "kind": "passive"
+            },
+            {
+              "name": "Emergency Arm Repair",
+              "kind": "passive",
+              "description": "If an Arm is destroyed, repairs all current HP of the Arm before the next action and gains . Each Arm can trigger this effect once.",
+              "icon": "Icon_skill_talent_3101"
+            },
+            {
+              "name": "Hunter's Scent",
+              "kind": "passive",
+              "description": "At the start of battle, enters . After initiating combat, applies  to the target hit. At start of action, restores 5% of Max HP to all parts. Can repair destroyed parts and triggers .\nAt start of turn, the first time Overall HP is less than 50%, ends  and enters . Skills are enhanced to  and . When initiating combat, automatically uses  to launch a Flurry Strike on the target after combat and can trigger . Can only trigger 1 time per turn."
+            }
+          ],
+          "description": "Death is just a means to an end.",
+          "bounties": [
+            {
+              "name": "Quick Resolution",
+              "conditions": {
+                "Normal": "Win within 6 turns",
+                "Hard": "Win within 6 turns",
+                "Extreme": "Win within 6 turns",
+                "Inferno": "Win within 6 turns"
+              }
+            },
+            {
+              "name": "Overwhelmed",
+              "conditions": {
+                "Normal": "Skysweep triggers Emergency Arm Repair",
+                "Hard": "Skysweep triggers Emergency Arm Repair"
+              }
+            },
+            {
+              "name": "Safe and Sound",
+              "conditions": {
+                "Normal": "All of your team members survive",
+                "Hard": "All of your team members survive",
+                "Extreme": "All of your team members survive",
+                "Inferno": "All of your team members survive"
+              }
+            }
+          ]
         },
         {
           "slot": 3,
@@ -815,7 +1243,60 @@ window.BossesData = {
               "arm": 145505,
               "legs": 173833
             }
-          }
+          },
+          "title": "Lost Generation",
+          "skills": [
+            {
+              "name": "Acid Burst",
+              "kind": "active",
+              "icon": "Icon_skill_order_1001"
+            },
+            {
+              "name": "Acid Storm",
+              "kind": "active",
+              "icon": "Icon_skill_order_1010"
+            },
+            {
+              "name": "Emergency Arm Repair",
+              "kind": "passive",
+              "description": "If an Arm is destroyed, repairs all current HP of the Arm before the next action and gains . Each Arm can trigger this effect once.",
+              "icon": "Icon_skill_talent_3101"
+            },
+            {
+              "name": "Disperse Acid",
+              "kind": "passive",
+              "description": "When performing a normal attack or retaliating, Range +1. At the start of the battle or at start of action, randomly select an enemy that does not have  and applies 1 stack of  to it.",
+              "icon": "Icon_skill_talent_5106"
+            }
+          ],
+          "description": "Only the strong can recall the past.",
+          "bounties": [
+            {
+              "name": "Quick Resolution",
+              "conditions": {
+                "Normal": "Win within 6 turns",
+                "Hard": "Win within 6 turns",
+                "Extreme": "Win within 6 turns",
+                "Inferno": "Win within 6 turns"
+              }
+            },
+            {
+              "name": "Innumerable",
+              "conditions": {
+                "Normal": "Defeat no more than 5 enemy units, excluding Liliya",
+                "Hard": "Defeat no more than 4 enemy units, excluding Liliya"
+              }
+            },
+            {
+              "name": "Safe and Sound",
+              "conditions": {
+                "Normal": "All of your team members survive",
+                "Hard": "All of your team members survive",
+                "Extreme": "All of your team members survive",
+                "Inferno": "All of your team members survive"
+              }
+            }
+          ]
         },
         {
           "slot": 4,
@@ -849,7 +1330,32 @@ window.BossesData = {
               "arm": 110308,
               "legs": 134117
             }
-          }
+          },
+          "title": "Echoes of Tomorrow",
+          "skills": [
+            {
+              "name": "Fang Barrage",
+              "kind": "active"
+            },
+            {
+              "name": "Destructive Current - EX",
+              "kind": "active"
+            },
+            {
+              "name": "Bulwark Boost",
+              "kind": "passive"
+            },
+            {
+              "name": "Napalm Bombing - EX",
+              "kind": "passive"
+            },
+            {
+              "name": "Leviathan - Liberation",
+              "kind": "passive",
+              "description": "After removing its external Restraining Device, the Mobile Fortress enters its ST Form. In this form, Leviathan cannot move but can attack 2 times and can always use [Scorching Tears]. The Core gains 75% DMG Reduction, which decreases by 25% with each part destroyed. When the Legs are undestroyed, [Serrated Fang]'s Range +2."
+            }
+          ],
+          "description": "Life is born to mend regrets."
         }
       ]
     },
@@ -890,7 +1396,82 @@ window.BossesData = {
               "arm": 110458,
               "legs": 164486
             }
-          }
+          },
+          "title": "Opportunist",
+          "skills": [
+            {
+              "name": "Inevitable Slash",
+              "kind": "active",
+              "difficulties": [
+                "Normal",
+                "Hard"
+              ]
+            },
+            {
+              "name": "Inevitable Slash",
+              "kind": "active",
+              "difficulties": [
+                "Extreme",
+                "Inferno"
+              ]
+            },
+            {
+              "name": "Absolute Bulwark",
+              "kind": "passive"
+            },
+            {
+              "name": "Emergency Arm Repair",
+              "kind": "passive",
+              "description": "If an Arm is destroyed, repairs all current HP of the Arm before the next action and gains . Each Arm can trigger this effect once.",
+              "icon": "Icon_skill_talent_3101"
+            },
+            {
+              "name": "Intrepid Advance I",
+              "kind": "passive",
+              "description": "At the start of battle, gains  and 5 stacks of .\nWhen possessing , loses 1 stack of  when actively attacked within and beyond 3 tiles.\nWhen not possessing , gains 1 stack of  after being actively attacked.\nAt the end of each turn, gains 2 stacks of .\nWhen possessing more than 5 stacks of Resentment, gains . When not possessing , clears .",
+              "difficulties": [
+                "Normal",
+                "Hard"
+              ]
+            },
+            {
+              "name": "Intrepid Advance II",
+              "kind": "passive",
+              "description": "At the start of battle, gains  and 5 stacks of .\nWhen possessing , loses 1 stack of  when actively attacked within and beyond 3 tiles.\nWhen not possessing , gains 1 stack of  after being actively attacked.\nAt the end of each turn, gains 2 stacks of .\nWhen possessing more than 5 stacks of Resentment, gains . When not possessing , clears .",
+              "difficulties": [
+                "Extreme",
+                "Inferno"
+              ]
+            }
+          ],
+          "description": "Everyone wants to live longer – so obey the rules life gives you.",
+          "bounties": [
+            {
+              "name": "Quick Resolution",
+              "conditions": {
+                "Normal": "Win within 6 turns",
+                "Hard": "Win within 6 turns",
+                "Extreme": "Win within 6 turns",
+                "Inferno": "Win within 6 turns"
+              }
+            },
+            {
+              "name": "Innumerable",
+              "conditions": {
+                "Normal": "Resentment never reaches 10 stacks",
+                "Hard": "Resentment never reaches 8 stacks"
+              }
+            },
+            {
+              "name": "Safe and Sound",
+              "conditions": {
+                "Normal": "All of your team members survive",
+                "Hard": "All of your team members survive",
+                "Extreme": "All of your team members survive",
+                "Inferno": "All of your team members survive"
+              }
+            }
+          ]
         },
         {
           "slot": 2,
@@ -924,7 +1505,61 @@ window.BossesData = {
               "arm": 139970,
               "legs": 167221
             }
-          }
+          },
+          "title": "Rock Solid",
+          "skills": [
+            {
+              "name": "Flames of War",
+              "kind": "active"
+            },
+            {
+              "name": "Rapid Fire",
+              "kind": "active"
+            },
+            {
+              "name": "Phantom Step",
+              "kind": "passive"
+            },
+            {
+              "name": "Emergency Arm Repair",
+              "kind": "passive",
+              "description": "If an Arm is destroyed, repairs all current HP of the Arm before the next action and gains . Each Arm can trigger this effect once.",
+              "icon": "Icon_skill_talent_3101"
+            },
+            {
+              "name": "Phantom Disguise",
+              "kind": "passive",
+              "description": "At the start of battle and after taking action, summons 3 Michaela Holograms with  within 1 tile.\nWhen actively attacked, if the attacker has 7 or more buffs, dispels 7 random dispellable buffs from the attacker after combat, up to 2 times per turn.\nWhen on the battlefield, other allies gain ."
+            }
+          ],
+          "description": "She points to the distance, claiming the bravest would be the first to conquer the world.",
+          "bounties": [
+            {
+              "name": "Quick Resolution",
+              "conditions": {
+                "Normal": "Win within 6 turns",
+                "Hard": "Win within 6 turns",
+                "Extreme": "Win within 6 turns",
+                "Inferno": "Win within 6 turns"
+              }
+            },
+            {
+              "name": "Cautiously",
+              "conditions": {
+                "Normal": "Michaela doesn’t trigger Maelstrom",
+                "Hard": "Michaela doesn’t trigger Maelstrom"
+              }
+            },
+            {
+              "name": "Safe and Sound",
+              "conditions": {
+                "Normal": "All of your team members survive",
+                "Hard": "All of your team members survive",
+                "Extreme": "All of your team members survive",
+                "Inferno": "All of your team members survive"
+              }
+            }
+          ]
         },
         {
           "slot": 3,
@@ -958,7 +1593,57 @@ window.BossesData = {
               "arm": 145505,
               "legs": 173833
             }
-          }
+          },
+          "title": "Will-o'-Wisp",
+          "skills": [
+            {
+              "name": "MG Spray",
+              "kind": "active"
+            },
+            {
+              "name": "Electromagnetic Purge",
+              "kind": "active"
+            },
+            {
+              "name": "Emergency Arm Repair",
+              "kind": "passive",
+              "description": "If an Arm is destroyed, repairs all current HP of the Arm before the next action and gains . Each Arm can trigger this effect once.",
+              "icon": "Icon_skill_talent_3101"
+            },
+            {
+              "name": "Phosphorescent Stream",
+              "kind": "passive",
+              "description": "At start of action, if on , triggers [Re-Act]. Can trigger 1 time per turn.\nAt start of action, if not on , gains .\nFor each , DMG +5%.\nGains ."
+            }
+          ],
+          "description": "Under the sunlight, she remains as blazing as ever.",
+          "bounties": [
+            {
+              "name": "Quick Resolution",
+              "conditions": {
+                "Normal": "Win within 6 turns",
+                "Hard": "Win within 6 turns",
+                "Extreme": "Win within 6 turns",
+                "Inferno": "Win within 6 turns"
+              }
+            },
+            {
+              "name": "No Smoking",
+              "conditions": {
+                "Normal": "Whie Flame enters Mist terrain no more than 2 times",
+                "Hard": "Whie Flame enters Mist terrain no more than 2 times"
+              }
+            },
+            {
+              "name": "Safe and Sound",
+              "conditions": {
+                "Normal": "All of your team members survive",
+                "Hard": "All of your team members survive",
+                "Extreme": "All of your team members survive",
+                "Inferno": "All of your team members survive"
+              }
+            }
+          ]
         },
         {
           "slot": 4,
@@ -992,7 +1677,30 @@ window.BossesData = {
               "arm": 112353,
               "legs": 167606
             }
-          }
+          },
+          "title": "Insatiable Desire",
+          "skills": [
+            {
+              "name": "Blazing Surge",
+              "kind": "active"
+            },
+            {
+              "name": "Punitive Resonance",
+              "kind": "passive"
+            },
+            {
+              "name": "Emergency Arm Repair",
+              "kind": "passive",
+              "description": "If an Arm is destroyed, repairs all current HP of the Arm before the next action and gains . Each Arm can trigger this effect once.",
+              "icon": "Icon_skill_talent_3101"
+            },
+            {
+              "name": "Repair Engine",
+              "kind": "passive",
+              "description": "When any enemy unit is repaired, restores own HP for 10% of the total Repair AMT applied.\nAfter action starts, gains 2 stacks of , stacking up to 10 times. Triggers 1 time every 3 turns.\nEach time Link Attack DMG is taken, immediately clears 1 stack of . Each time Retaliation DMG is taken, immediately clears 2 stacks of ."
+            }
+          ],
+          "description": "Any treasure he has yet to obtain is a treasure he is destined to acquire."
         }
       ]
     },
@@ -1033,7 +1741,161 @@ window.BossesData = {
               "arm": 87207,
               "legs": 130094
             }
-          }
+          },
+          "title": "Fuse",
+          "skills": [
+            {
+              "name": "Show of Force",
+              "type": "Talent",
+              "icon": "Icon_skill_talent_4102",
+              "description": "At start of action, if the number of allies within 3 adjacent tiles is greater than or equal to 2, grants [Linebreaker] to self. If less than 2, grants [Overcharged Defense] to self.",
+              "buffs": [
+                {
+                  "name": "Linebreaker",
+                  "description": "DMG +30% until the start of Douglas's next turn.",
+                  "tags": [
+                    "Non-Dispellable",
+                    "Non-Replicable"
+                  ]
+                },
+                {
+                  "name": "Overcharged Defense",
+                  "description": "All parts gain Temporary HP equal to 5% of Max HP.",
+                  "tags": [
+                    "Non-Dispellable",
+                    "Non-Replicable"
+                  ]
+                }
+              ],
+              "kind": "passive"
+            },
+            {
+              "name": "Leader's Protection",
+              "type": "Code",
+              "icon": "Icon_skill_main_2101",
+              "cost": "1AP",
+              "cd": "1Turn(s)",
+              "description": "Grants all allies [Body of Steel] and [Steel Defense], lasting for 2 turns. Then can activate [Re-ATK]. When possessing [Overcharged Defense], gains [Battlefield Shield] for 1 turn.",
+              "buffs": [
+                {
+                  "name": "Body of Steel",
+                  "description": "Immune to debuff effects.",
+                  "tags": [
+                    "Type: Buffs",
+                    "Non-Dispellable",
+                    "Non-Replicable"
+                  ]
+                },
+                {
+                  "name": "Steel Defense",
+                  "description": "Immune to [Percentage-Based Fixed DMG].",
+                  "tags": [
+                    "Type: Buffs",
+                    "Non-Dispellable",
+                    "Non-Replicable"
+                  ]
+                },
+                {
+                  "name": "Battlefield Shield",
+                  "description": "Final DMG Taken -50%.",
+                  "tags": [
+                    "Type: Buffs",
+                    "Non-Dispellable",
+                    "Non-Replicable"
+                  ]
+                }
+              ],
+              "kind": "active"
+            },
+            {
+              "name": "Suppressive Barrage",
+              "type": "Code",
+              "icon": "Icon_skill_order_1117",
+              "cost": "1AP",
+              "cd": "1Turn(s)",
+              "description": "Uses a Heavy Machine Gun to attack all targets within attack range, dealing 0.85x AoE DMG. When possessing [Linebreaker], applies [Electric Surge Terrain] to the tile hit after combat, lasting for 1 turn, then can activate [Re-ATK].",
+              "buffs": [
+                {
+                  "name": "Electric Surge Terrain",
+                  "description": "Terrain card (purple header bar, no tag bullets): Inflicts [FCS Failure] on units that remain on this tile, lasting for 1 turn."
+                }
+              ],
+              "kind": "active"
+            },
+            {
+              "name": "Link Amplification",
+              "type": "Passive",
+              "icon": "Icon_skill_passive_5142",
+              "description": "When possessing [Overcharged Defense], allows allies within 3 tiles to use Assault or Ranged Weapons to launch a [Link Retaliation], dealing 1x DMG.\nWhen possessing [Linebreaker], allows allies within 3 tiles to launch a [Link Attack] on the target, dealing 1x DMG. This Link Attack does not require allies to have Link abilities and does not consume Link uses.",
+              "kind": "passive"
+            },
+            {
+              "name": "Emergency Arm Repair",
+              "type": "Passive",
+              "icon": "Icon_skill_talent_3101",
+              "description": "If an Arm is destroyed, repairs all current HP of the Arm before the next action and gains [Underperformance]. Each Arm can trigger this effect once.",
+              "buffs": [
+                {
+                  "name": "Underperformance",
+                  "description": "DMG -50% when attacking with the current weapon."
+                }
+              ],
+              "kind": "passive"
+            },
+            {
+              "name": "Holmberg",
+              "kind": "passive",
+              "description": "Cannot be protected by [Guard]. After executing a skill, can trigger [Re-ATK].\nWhen the UAV Bay is undestroyed, cannot be attacked by Melee Weapons and does not trigger Burning or Mine-style terrain effects.\nAt the start of battle and the end of [Your Turn], deploys 2 Tracers.\nWhen HP first falls below 50%, enters the  state, UAV Bay HP is restored to 100%, and gains 5 stacks of .",
+              "icon": "Icon_skill_talent_5130"
+            }
+          ],
+          "description": "",
+          "bounties": [
+            {
+              "name": "Quick Resolution",
+              "conditions": {
+                "Normal": "Win within 6 turns",
+                "Hard": "Win within 6 turns",
+                "Extreme": "Win within 6 turns",
+                "Inferno": "Win within 6 turns"
+              }
+            },
+            {
+              "name": "Cautiously",
+              "conditions": {
+                "Normal": "Douglas used [Electric Surge Terrain] no more than once",
+                "Hard": "Douglas used [Electric Surge Terrain] no more than once",
+                "Extreme": "Douglas did not use [Electric Surge Terrain]"
+              }
+            },
+            {
+              "name": "Safe and Sound",
+              "conditions": {
+                "Normal": "All of your team members survive",
+                "Hard": "All of your team members survive",
+                "Extreme": "All of your team members survive",
+                "Inferno": "All of your team members survive"
+              }
+            }
+          ],
+          "extreme_modifiers": [
+            {
+              "name": "Invisible Preparation",
+              "difficulty": "Extreme",
+              "description": "[Enemy] When actively attacking or during a Link Attack, if in [Stealth] status, gains [Covert Attack]. At end of action, gains [Stealth] again for 1 turn.",
+              "buffs": [
+                {
+                  "name": "Covert Attack",
+                  "description": "DMG +50%. Stacks up to 4 times.",
+                  "tags": [
+                    "Type: Buffs",
+                    "Non-Dispellable",
+                    "Non-Replicable"
+                  ]
+                }
+              ]
+            }
+          ]
         },
         {
           "slot": 2,
@@ -1067,7 +1929,121 @@ window.BossesData = {
               "arm": 114025,
               "legs": 136225
             }
-          }
+          },
+          "title": "Reignite",
+          "skills": [
+            {
+              "name": "Crimson Rage",
+              "type": "Talent",
+              "icon": "Icon_skill_talent_5139",
+              "description": "When attacked during the enemy's turn, applies 1 stack of [Collapse Damage] to all enemies that dealt damage, lasting for 2 turns.\nWhen an enemy receives active repairs, applies 1 stack of [Collapse Damage] to it, lasting for 2 turns.\nFor each other ally on the map, reduces damage taken by 10%.\nMovement is increased by 1 tile, and ignores enemy obstruction when moving.",
+              "buffs": [
+                {
+                  "name": "Collapse Damage",
+                  "description": "AP Cost +1 for normal attacks, active skills, and codes. After actively attacking, according to the number of [Collapse Damage] stacks, each stack deals Fixed DMG equal to 10% of Max HP to all parts of this unit. Stacks up to 10 times.",
+                  "tags": [
+                    "Type: Debuff",
+                    "Non-Dispellable",
+                    "Non-Replicable"
+                  ]
+                }
+              ],
+              "kind": "passive"
+            },
+            {
+              "name": "Shatter Storm",
+              "type": "Active",
+              "icon": "Icon_skill_main_1143",
+              "cost": "1AP",
+              "weapon": "SG",
+              "description": "Uses a Shotgun to attack a target, dealing 1.0x DMG, prioritizing the target with the highest [Collapse Damage] stacks. After combat, applies 1 stack of [Collapse Damage] to the target hit, lasting for 2 turns, then can continue moving with remaining Movement.",
+              "kind": "active"
+            },
+            {
+              "name": "Rupture Impact",
+              "type": "Code",
+              "icon": "Icon_skill_main_1147",
+              "cost": "0AP",
+              "cd": "0Turn(s)",
+              "description": "Simultaneously uses two Shotguns to attack the target and all targets within a 1-tile cross-shaped area, dealing 1.0x AoE DMG 2 times. If the difference between the maximum and minimum stacks of [Collapse Damage] possessed by the enemy unit exceeds 3, each excess stack increases the skill multiplier of this attack by 0.5 (considered as 0 stacks if not possessing [Collapse Damage]).",
+              "kind": "active"
+            },
+            {
+              "name": "Interrupt Counter",
+              "type": "Passive",
+              "icon": "Icon_skill_passive_5126",
+              "description": "At start of action, if attacked more than 3 times during the previous enemy turn, applies 3 stacks of [Collapse Damage] to the target with the most stacks of [Collapse Damage] on the battlefield.\nAfter actively attacking, if the difference between the most and least stacks of [Collapse Damage] on enemy units exceeds 3, triggers [Rupture Impact].",
+              "kind": "passive"
+            },
+            {
+              "name": "Emergency Arm Repair",
+              "type": "Passive",
+              "icon": "Icon_skill_talent_3101",
+              "description": "If an Arm is destroyed, repairs all current HP of the Arm before the next action and gains [Underperformance]. Each Arm can trigger this effect once.",
+              "buffs": [
+                {
+                  "name": "Underperformance",
+                  "description": "DMG -50% when attacking with the current weapon."
+                }
+              ],
+              "kind": "passive"
+            }
+          ],
+          "description": "A thousand chimneys lie in silence, waiting for the kindle to reignite.",
+          "bounties": [
+            {
+              "name": "Quick Resolution",
+              "conditions": {
+                "Normal": "Win within 6 turns",
+                "Hard": "Win within 6 turns",
+                "Extreme": "Win within 6 turns",
+                "Inferno": "Win within 6 turns"
+              }
+            },
+            {
+              "name": "Innumerable",
+              "conditions": {
+                "Normal": "The stacks of Collapse Damage never reached 5 stacks",
+                "Hard": "The stacks of Collapse Damage never reached 5 stacks",
+                "Extreme": "The stacks of Collapse Damage never reached 5 stacks"
+              }
+            },
+            {
+              "name": "Safe and Sound",
+              "conditions": {
+                "Normal": "All of your team members survive",
+                "Hard": "All of your team members survive",
+                "Extreme": "All of your team members survive",
+                "Inferno": "All of your team members survive"
+              }
+            }
+          ],
+          "units": [
+            {
+              "name": "Crisis Repair",
+              "skills": [
+                {
+                  "name": "Crisis Repair",
+                  "description": "Device card (icon + name header, no tag bullets): When the enemy is within an adjacent 1 ring, [Precision Reforge] can be used to destroy this device.",
+                  "type": "Other"
+                },
+                {
+                  "name": "Precision Reforge",
+                  "type": "Code",
+                  "cost": "0AP",
+                  "cd": "0Turn(s)",
+                  "description": "Restores HP equal to 20% of Max Part HP to all parts of a single ST. Can repair 1 destroyed part. Removes all [Collapse Damage] and gains 1 AP."
+                }
+              ]
+            }
+          ],
+          "extreme_modifiers": [
+            {
+              "name": "Calibrated Interference",
+              "difficulty": "Extreme",
+              "description": "When activating [Precision Reforge], all [Collapse Damage] effects are removed and changed to removing 3 stacks of [Collapse Damage]."
+            }
+          ]
         },
         {
           "slot": 3,
@@ -1101,7 +2077,99 @@ window.BossesData = {
               "arm": 108274,
               "legs": 161234
             }
-          }
+          },
+          "title": "Blazing Fire",
+          "skills": [
+            {
+              "name": "Steeled Heart",
+              "type": "Talent",
+              "icon": "Icon_skill_talent_2103",
+              "description": "At end of action, gains 1 stack of [Sword Stance]. Every two turns, the number of stacks gained is increased by 1, up to a maximum of 3 stacks. When both Arms are undestroyed and possessing [Sword Stance], during combat against Assault Weapon attacks, immune to DMG from the first 10 bullets hit. If no DMG is taken, immediately gains 1 stack of [Sword Stance]. If DMG is taken, deducts 1 stack of [Sword Stance]. During combat against Melee or Ranged Weapon attacks, if both Arms are undestroyed, consumes 1 stack of [Sword Stance] to trigger [Incisive Retaliation].",
+              "buffs": [
+                {
+                  "name": "Sword Stance",
+                  "description": "After actively attacking, for each stack of Sword Stance, triggers [Re-Act] once. Each [Re-Act] consumes 1 stack of Sword Stance. Can trigger up to 3 times per turn.",
+                  "tags": [
+                    "Type: Buffs",
+                    "Non-Dispellable",
+                    "Non-Replicable"
+                  ]
+                },
+                {
+                  "name": "Incisive Retaliation",
+                  "description": "When attacked by Melee or Ranged Weapons, if equipped with two Alter-Blades and both Arms are undestroyed, interrupts the attack and triggers [Incisive Retaliation], dealing 1.2x DMG, prioritizing hits on Arms carrying a weapon. After triggering, 1 Sword Stance stack is removed.\n[Incisive Retaliation] ignores the Large Shield [Target Shift] effect."
+                }
+              ],
+              "kind": "passive"
+            },
+            {
+              "name": "Twin-Blade Thrust",
+              "type": "Code",
+              "icon": "Icon_skill_main_1160",
+              "cost": "1AP",
+              "cd": "1Turn(s)",
+              "description": "Uses two Alter-Blades to thrust 5 tiles forward, dealing 1x AoE DMG to all enemies in the path. Restores HP of undestroyed parts after combat. Repair AMT is equal to 100% of damage dealt. Gains 1 stack of [Sword Stance] for each enemy unit hit.",
+              "kind": "active"
+            },
+            {
+              "name": "Deadly Slash",
+              "type": "Active",
+              "icon": "Icon_skill_main_1159",
+              "cost": "1AP",
+              "weapon": "Alter-Blade",
+              "description": "Uses an Alter-Blade to attack a target, dealing 1x DMG. This attack targets the part with the lowest HP. If possessing 3 or more stacks of [Sword Stance], after combat, inflicts [Crash] on the target, lasting for 1 turn.",
+              "kind": "active"
+            },
+            {
+              "name": "Emergency Arm Repair",
+              "type": "Passive",
+              "icon": "Icon_skill_talent_3101",
+              "description": "If an Arm is destroyed, repairs all current HP of the Arm before the next action and gains [Underperformance]. Each Arm can trigger this effect once.",
+              "buffs": [
+                {
+                  "name": "Underperformance",
+                  "description": "DMG -50% when attacking with the current weapon."
+                }
+              ],
+              "kind": "passive"
+            }
+          ],
+          "description": "She sees the true unknown flowing, just like the first ray of light traversing the dim universe.",
+          "bounties": [
+            {
+              "name": "Quick Resolution",
+              "conditions": {
+                "Normal": "Win within 6 turns",
+                "Hard": "Win within 6 turns",
+                "Extreme": "Win within 6 turns",
+                "Inferno": "Win within 6 turns"
+              }
+            },
+            {
+              "name": "Stable Survival",
+              "conditions": {
+                "Normal": "Defeat no more than 6 enemy units upon victory",
+                "Hard": "Defeat no more than 4 enemy units upon victory",
+                "Extreme": "Defeat no more than 2 enemy units upon victory"
+              }
+            },
+            {
+              "name": "Safe and Sound",
+              "conditions": {
+                "Normal": "All of your team members survive",
+                "Hard": "All of your team members survive",
+                "Extreme": "All of your team members survive",
+                "Inferno": "All of your team members survive"
+              }
+            }
+          ],
+          "extreme_modifiers": [
+            {
+              "name": "Arms Prohibition",
+              "difficulty": "Extreme",
+              "description": "[Enemy] When actively attacking, applies [Weapon Inhibition] to the target unit hit after combat, lasting for 1 turn."
+            }
+          ]
         },
         {
           "slot": 4,
@@ -1135,7 +2203,75 @@ window.BossesData = {
               "arm": 139807,
               "legs": 169944
             }
-          }
+          },
+          "title": "Frenzy",
+          "skills": [
+            {
+              "name": "Floating Fortress",
+              "type": "Talent",
+              "icon": "Icon_skill_talent_5130",
+              "description": "Immune to Displacement, Crash, Repair Disabled, Skills Disabled, AP Cost UP, and Ammo Reduction-style effects. Reduces [Percentage DMG] by 66%. Body is immune to [Execution] effects, and the HP percentage requirement for triggering [Execution] effects on parts other than the Body is reduced by 66%. Automatically repairs destroyed parts, and after executing a skill, [Re-ATK] can trigger. When Legs are not destroyed, Melee Weapons can only attack the Legs. After Legs are destroyed, Melee DMG Taken +10%.",
+              "kind": "passive"
+            },
+            {
+              "name": "Riptide Spray",
+              "type": "Active",
+              "icon": "Icon_skill_main_1126",
+              "cost": "1AP",
+              "weapon": "HMG",
+              "description": "Uses a Heavy Machine Gun to attack a target, dealing 0.8x DMG. If the target possesses [Ambition], this attack's DMG is increased by 100%.",
+              "buffs": [
+                {
+                  "name": "Ambition",
+                  "description": "DMG +50%. After Gutzman takes action, loses 1 stack of [Ambition]. When an ST with [Ambition] is afflicted with it again, prioritizes destruction of 1 undestroyed part other than the Body. Stacks up to 3 times. Can only trigger once per turn.",
+                  "tags": [
+                    "Type: Debuff",
+                    "Non-Dispellable"
+                  ]
+                }
+              ],
+              "kind": "active"
+            },
+            {
+              "name": "Breach Rocket",
+              "type": "Code",
+              "icon": "Icon_skill_order_1008",
+              "cost": "1AP",
+              "cd": "1Turn(s)",
+              "description": "After 1 turn, uses a Rocket Launcher to attack a random single target within a 3x3-tile area centered on the locked-on target, dealing 0.06x DMG to all parts of the target. Triggers 16 times, with the target being randomly selected each time. After combat, applies 2 stacks of [Ambition] to all targets hit.",
+              "kind": "active"
+            },
+            {
+              "name": "Rail Gun Suppression",
+              "type": "Code",
+              "icon": "Icon_skill_order_1109",
+              "cost": "1AP",
+              "cd": "0Turn(s)",
+              "description": "After 1 turn, uses a Rail Gun to attack all targets in 2 warning directions within a 1x5-tile line, dealing 0.9x AoE DMG. After combat, applies 2 stacks of [Ambition] to all targets hit.",
+              "kind": "active"
+            },
+            {
+              "name": "Malicious Thought",
+              "type": "Passive",
+              "icon": "Icon_skill_passive_5149",
+              "description": "After using an AoE attack, applies 2 stacks of [Ambition] to targets hit. Loses 1 stack of [Ambition] after taking action. At start of action, if the number of enemies with [Ambition] is greater than or equal to 3, prioritizes destroying 1 undestroyed part other than the Body of enemies with [Ambition].\nWhen drawn into combat by an enemy with [Ambition] through an active attack, immune to this instance of damage.",
+              "buffs": [
+                {
+                  "name": "Shock Wave",
+                  "description": "Knocks all targets in a 1x3x5-tile line back 2 tiles."
+                }
+              ],
+              "kind": "passive"
+            }
+          ],
+          "description": "Fate will not always meet your expectations… The more you dominate, the more you lose.",
+          "extreme_modifiers": [
+            {
+              "name": "Arc",
+              "difficulty": "Extreme",
+              "description": "[Enemy] When Gutzman unleashes any AoE attack, after combat, applies [Electric Surge Terrain] to the tiles hit, lasting for 2 turns."
+            }
+          ]
         }
       ]
     },
@@ -1176,7 +2312,102 @@ window.BossesData = {
               "arm": 55039,
               "legs": 163920
             }
-          }
+          },
+          "title": "Testing the Waters",
+          "skills": [
+            {
+              "name": "Opportunistic Plunder",
+              "type": "Talent",
+              "icon": "Icon_skill_talent_1109",
+              "description": "If there is an enemy ST on the battlefield with [Pollution], after initiating combat, can trigger [Re-ATK]. Can only trigger 1 time per turn.\nAt end of action, restores 5% of Max HP to all parts. Can repair destroyed parts. Triggers [Balance].",
+              "buffs": [
+                {
+                  "name": "Pollution",
+                  "description": "Cannot trigger [Re-Act], [Re-ATK], or [Re-Mv].",
+                  "tags": [
+                    "Type: Debuff",
+                    "Non-Dispellable"
+                  ]
+                },
+                {
+                  "name": "Balance",
+                  "description": "Equalizes HP percentage across all parts. Destroyed parts are not included."
+                }
+              ],
+              "kind": "passive"
+            },
+            {
+              "name": "Hyperpressure Impact",
+              "type": "Code",
+              "icon": "Icon_skill_order_1010",
+              "cost": "2AP",
+              "cd": "0Turn(s)",
+              "description": "Uses a Heavy Machine Gun to attack all targets in a cone ahead, dealing 0.7x DMG. DMG +100% against enemies with [Pollution].",
+              "kind": "active"
+            },
+            {
+              "name": "Hyperpressure Overload",
+              "type": "Code",
+              "icon": "Icon_skill_main_1015",
+              "cost": "2AP",
+              "description": "Uses a Heavy Machine Gun to attack a target, dealing 1x DMG. After combat, gains 2 stacks of [Swampwalker].",
+              "buffs": [
+                {
+                  "name": "Swampwalker",
+                  "description": "After being attacked, if both Arms are undestroyed, executes [Hyperpressure Overload - EX]: Uses a Heavy Machine Gun to attack all enemies within attack range, dealing 1x DMG. Inflicts [Pollution] on targets hit, lasting for 2 turns. After executing [Hyperpressure Overload - EX], consumes 1 stack of [Swampwalker].",
+                  "tags": [
+                    "Non-Dispellable",
+                    "Non-Replicable"
+                  ]
+                }
+              ],
+              "kind": "active"
+            },
+            {
+              "name": "Saturation Strike",
+              "type": "Passive",
+              "icon": "Icon_skill_passive_1113",
+              "description": "When both Arms are undestroyed, all skill damage multipliers +0.1.\nWhen wielding a Heavy Machine Gun with one hand, Hit Rate no longer decreases.\nBody is significantly enhanced, and when both Arms suffer overdamage, triggers [Guts]. Can only trigger 1 time per turn.",
+              "kind": "passive"
+            }
+          ],
+          "description": "If I don’t find a way, there’ll be no food – Meritus doesn’t like going hungry.",
+          "bounties": [
+            {
+              "name": "Quick Resolution",
+              "conditions": {
+                "Normal": "Win within 6 turns",
+                "Hard": "Win within 6 turns",
+                "Extreme": "Win within 6 turns",
+                "Inferno": "Win within 6 turns"
+              }
+            },
+            {
+              "name": "Bring It On",
+              "conditions": {
+                "Normal": "Destroy Meritus’s Arm 3 times during your turns",
+                "Hard": "Destroy Meritus’s Arm 4 times during your turns",
+                "Extreme": "Destroy Meritus’s Arm 5 times during your turns",
+                "Inferno": "Destroy Meritus’s Arm 6 times during your turns"
+              }
+            },
+            {
+              "name": "Safe and Sound",
+              "conditions": {
+                "Normal": "All of your team members survive",
+                "Hard": "All of your team members survive",
+                "Extreme": "All of your team members survive",
+                "Inferno": "All of your team members survive"
+              }
+            }
+          ],
+          "extreme_modifiers": [
+            {
+              "name": "Relentless Hunt",
+              "difficulty": "Extreme",
+              "description": "Meritus Weapon Range +1."
+            }
+          ]
         },
         {
           "slot": 2,
@@ -1210,7 +2441,118 @@ window.BossesData = {
               "arm": 128901,
               "legs": 153996
             }
-          }
+          },
+          "title": "As Shadow Follows",
+          "skills": [
+            {
+              "name": "Field Shelter",
+              "type": "Talent",
+              "icon": "Icon_skill_talent_2101",
+              "description": "Applies [Signal Chaos] to all enemy STs within 3 tiles. For each other unit within range, Weapon Range +1.\nOn Turn 3, the effect range of [Field Shelter] expands to 4 tiles. On Turn 5, the effect range of [Field Shelter] expands to 5 tiles.",
+              "buffs": [
+                {
+                  "name": "Signal Chaos",
+                  "description": "When restoring HP, does not repair HP but instead deals an equal amount of damage.",
+                  "tags": [
+                    "Type: Debuff",
+                    "Non-Dispellable"
+                  ]
+                }
+              ],
+              "kind": "passive"
+            },
+            {
+              "name": "Shooting Frenzy - β",
+              "type": "Code",
+              "icon": "Icon_skill_main_1105",
+              "cost": "3AP",
+              "cd": "0Turn(s)",
+              "description": "Uses a Light Rifle to attack a random target within a 3x5-tile area ahead, dealing 0.6x DMG. Fires 5 times, prioritizing targets that have not been attacked before.",
+              "kind": "active"
+            },
+            {
+              "name": "Premium Repairs",
+              "type": "Code",
+              "icon": "Icon_skill_order_3111",
+              "cost": "1AP",
+              "cd": "0Turn(s)",
+              "description": "Repairs all units (including enemy units) within [Field Shelter] range. Repair AMT is equal to 2.5x Manipulator Repair AMT. Can trigger [Re-ATK] after combat.\nFor each other allied unit repaired, gains 1 stack of [Reduction Boost - α], lasting for 1 turn. Stacks up to 8 times.\nOther repaired allied units gain [Reduction Boost - β], lasting for 1 turn. Does not stack.\nRepaired enemy units gain [Intensive Fix], lasting until the end of the player's turn. Does not stack.",
+              "buffs": [
+                {
+                  "name": "Reduction Boost - α",
+                  "description": "DMG Taken -15%. Stacks up to 8 times.",
+                  "tags": [
+                    "Type: Buffs",
+                    "Non-Dispellable",
+                    "Non-Replicable"
+                  ]
+                },
+                {
+                  "name": "Reduction Boost - β",
+                  "description": "DMG Taken -40%.",
+                  "tags": [
+                    "Type: Buffs",
+                    "Non-Dispellable",
+                    "Non-Replicable"
+                  ]
+                },
+                {
+                  "name": "Intensive Fix",
+                  "description": "Repair AMT increased by 50% until the end of the player's turn, then cleared.",
+                  "tags": [
+                    "Type: Buffs",
+                    "Non-Dispellable",
+                    "Non-Replicable"
+                  ]
+                }
+              ],
+              "kind": "active"
+            },
+            {
+              "name": "Firm Defense",
+              "type": "Passive",
+              "icon": "Icon_skill_passive_1001",
+              "description": "Provides covering fire for allies. Triggers [Vigilant Shot] before the enemy's attack, dealing 3x DMG. Always targets the part with the lowest HP.",
+              "kind": "passive"
+            }
+          ],
+          "description": "You can defeat him, but you’ll never escape his shadow.",
+          "bounties": [
+            {
+              "name": "Quick Resolution",
+              "conditions": {
+                "Normal": "Win within 6 turns",
+                "Hard": "Win within 6 turns",
+                "Extreme": "Win within 6 turns",
+                "Inferno": "Win within 6 turns"
+              }
+            },
+            {
+              "name": "Bring It On",
+              "conditions": {
+                "Normal": "Egbert’s DMG Reduction never exceeds 4 stacks",
+                "Hard": "Egbert’s DMG Reduction never exceeds 3 stacks",
+                "Extreme": "Egbert’s DMG Reduction never exceeds 2 stacks",
+                "Inferno": "Egbert’s DMG Reduction never exceeds 2 stacks"
+              }
+            },
+            {
+              "name": "Safe and Sound",
+              "conditions": {
+                "Normal": "All of your team members survive",
+                "Hard": "All of your team members survive",
+                "Extreme": "All of your team members survive",
+                "Inferno": "All of your team members survive"
+              }
+            }
+          ],
+          "extreme_modifiers": [
+            {
+              "name": "Field Diffusion",
+              "difficulty": "Extreme",
+              "description": "Egbert's [Field Shelter] effect range increases by an additional 1 tile."
+            }
+          ]
         },
         {
           "slot": 3,
@@ -1244,7 +2586,113 @@ window.BossesData = {
               "arm": 64286,
               "legs": 95900
             }
-          }
+          },
+          "title": "Misdirection",
+          "skills": [
+            {
+              "name": "Strategic Armament",
+              "type": "Talent",
+              "icon": "Icon_skill_talent_1115",
+              "description": "At the start of battle, gains [Damage Erosion] and 4 stacks of [Weakness Immunity]. At the start of the [Enemy Turn], gains 4 stacks of [Weakness Immunity].\nFor each 1 stack of [Weakness Immunity] possessed, restores 5% of Max HP to all parts at the start of action, and can repair all destroyed parts.\nWhen possessing 5 or more stacks of [Weakness Immunity], own Weapon Range +1.",
+              "buffs": [
+                {
+                  "name": "Damage Erosion",
+                  "description": "When taking damage, final DMG Taken -40%.",
+                  "tags": [
+                    "Non-Dispellable",
+                    "Non-Replicable"
+                  ]
+                },
+                {
+                  "name": "Weakness Immunity",
+                  "description": "Immune to the next debuff. One stack is removed upon triggering. Stacks up to 10 times.",
+                  "tags": [
+                    "Non-Dispellable",
+                    "Non-Replicable"
+                  ]
+                }
+              ],
+              "kind": "passive"
+            },
+            {
+              "name": "Random Settlement",
+              "type": "Code",
+              "icon": "Icon_skill_order_1130",
+              "cost": "2AP",
+              "cd": "2Turn(s)",
+              "description": "Uses a Machine Gun to attack 2 random targets within range, dealing 1.2x DMG to each. After combat, inflicts [Backfire Mark] on targets hit, lasting for 2 turns.",
+              "buffs": [
+                {
+                  "name": "Backfire Mark",
+                  "description": "When Eller takes attack damage, the attacker takes an equal amount of [Fixed DMG].",
+                  "tags": [
+                    "Type: Debuff",
+                    "Non-Dispellable"
+                  ]
+                }
+              ],
+              "kind": "active"
+            },
+            {
+              "name": "Targeted Settlement",
+              "type": "Active",
+              "icon": "Icon_skill_main_1009",
+              "cost": "2AP",
+              "weapon": "MG",
+              "description": "Uses a Machine Gun to attack a target, dealing 1.2x DMG. Inflicts [Backfire Mark] on targets hit, lasting for 2 turns.",
+              "kind": "active"
+            },
+            {
+              "name": "The Reaping",
+              "type": "Passive",
+              "icon": "Icon_skill_passive_5232",
+              "description": "After taking action, inflicts [Isomeric Field] on all enemy tiles, lasting permanently.",
+              "buffs": [
+                {
+                  "name": "Isomeric Field",
+                  "description": "Terrain card (red header bar, no tag bullets): Applies [Backfire Mark] to units that remain on this tile: When Eller takes attack damage, the attacker takes an equal amount of [Fixed DMG]. Lasts for 2 turns. This terrain has the highest priority."
+                }
+              ],
+              "kind": "passive"
+            }
+          ],
+          "description": "We’ll have each other’s back along the way, until the end of days separates us.",
+          "bounties": [
+            {
+              "name": "Quick Resolution",
+              "conditions": {
+                "Normal": "Win within 6 turns",
+                "Hard": "Win within 6 turns",
+                "Extreme": "Win within 6 turns",
+                "Inferno": "Win within 6 turns"
+              }
+            },
+            {
+              "name": "Bring It On",
+              "conditions": {
+                "Normal": "At the end of your turn, Eller’s [Weakness Immunity] never exceeds 2 stacks",
+                "Hard": "At the end of your turn, Eller’s [Weakness Immunity] never exceeds 1 stack",
+                "Extreme": "At the end of your turn, Eller never has [Weakness Immunity]",
+                "Inferno": "At the end of your turn, Eller never has [Weakness Immunity]"
+              }
+            },
+            {
+              "name": "Safe and Sound",
+              "conditions": {
+                "Normal": "All of your team members survive",
+                "Hard": "All of your team members survive",
+                "Extreme": "All of your team members survive",
+                "Inferno": "All of your team members survive"
+              }
+            }
+          ],
+          "extreme_modifiers": [
+            {
+              "name": "Pollution Diffusion",
+              "difficulty": "Extreme",
+              "description": "After taking action, applies [Isomeric Field] to the currently-occupied tile, lasting permanently."
+            }
+          ]
         },
         {
           "slot": 4,
@@ -1278,7 +2726,108 @@ window.BossesData = {
               "arm": 71645,
               "legs": 87089
             }
-          }
+          },
+          "title": "Nameless Ones",
+          "skills": [
+            {
+              "name": "Holmberg",
+              "kind": "passive",
+              "description": "After a part is destroyed, automatically repairs before taking action in the next turn. After executing a skill, can trigger [Re-ATK].\nWhen the UAV Bay is undestroyed, Melee Weapons cannot attack.\nDoes not trigger Burning or Mine-style terrain effects. Cannot be protected by [Guard]. Non-dispellable.",
+              "icon": "Icon_skill_talent_5130"
+            },
+            {
+              "name": "Holmberg",
+              "type": "Talent",
+              "icon": "Icon_skill_talent_5130",
+              "description": "Cannot be protected by [Guard]. After executing a skill, can trigger [Re-ATK]. When the UAV Bay is undestroyed, cannot be attacked by Melee Weapons and does not trigger Burning or Mine-style terrain effects.\nAt the start of battle and the end of [Your Turn], deploys 2 Tracers.\nWhen HP first falls below 50%, enters the [Self-Sustain] state, UAV Bay HP is restored to 100%, and gains 5 stacks of [Fortify].",
+              "buffs": [
+                {
+                  "name": "Self-Sustain",
+                  "description": "All enemies on the battlefield gain AP Regen +3, and deployed units are enhanced from 2 Tracers to 1 DL Captain.",
+                  "tags": [
+                    "Non-Dispellable",
+                    "Non-Replicable"
+                  ]
+                },
+                {
+                  "name": "Fortify",
+                  "description": "DMG Dealt +5%, DMG Taken -5%. Stacks up to 99 times.",
+                  "tags": [
+                    "Non-Dispellable",
+                    "Non-Replicable"
+                  ]
+                }
+              ],
+              "kind": "passive"
+            },
+            {
+              "name": "High-Explosive Bombing",
+              "type": "Code",
+              "icon": "Icon_skill_order_1001",
+              "cost": "1AP",
+              "cd": "0Turn(s)",
+              "description": "Uses a Missile Launcher to attack a target, dealing 0.5x DMG to the part hit and Splash DMG equal to 50% of this damage to other parts. Applies 1 stack of [Enfeebled] to the target hit for 2 turns. Can stack. Cannot be intercepted.\nIf the user is in the [Self-Sustain] state, this effect is enhanced to [High-Explosive Bombing - EX].",
+              "buffs": [
+                {
+                  "name": "Enfeebled",
+                  "description": "DMG Dealt -30%, DMG Taken +30%. Can stack.",
+                  "tags": [
+                    "Non-Dispellable"
+                  ]
+                }
+              ],
+              "kind": "active"
+            },
+            {
+              "name": "High-Explosive Bombing - EX",
+              "type": "Code",
+              "cost": "1AP",
+              "cd": "0Turn(s)",
+              "description": "Uses a Missile Launcher to attack a target, dealing 0.5x DMG to the part hit and Splash DMG equal to 50% of this damage to other parts. Applies 2 stacks of [Enfeebled] to the target hit, lasting for 2 turns. Can stack. Cannot be intercepted.",
+              "kind": "active"
+            },
+            {
+              "name": "Megastorm",
+              "type": "Code",
+              "icon": "Icon_skill_order_5129",
+              "cost": "0AP",
+              "cd": "0Turn(s)",
+              "description": "Locks onto a target. After 1 turn, uses a Rocket Launcher to attack all targets within a 3x3-tile area centered on the selected target, dealing 0.25x AoE DMG to each part. Inflicts 2 stacks of [Daze II] on targets hit, lasting for 2 turns.\nIf the user is under the effect of [Self-Sustain], this effect is enhanced to [Megastorm - EX].",
+              "buffs": [
+                {
+                  "name": "Daze II",
+                  "description": "Hit Rate reduced by 25%. Stacks up to 4 times.\nWhen afflicted with 4 stacks of [Daze II], afflicted with [Crash] for 1 turn. If already afflicted with [Crash], extends the duration of [Crash] by 1 turn.",
+                  "tags": [
+                    "Non-Dispellable"
+                  ]
+                }
+              ],
+              "kind": "active"
+            },
+            {
+              "name": "Megastorm - EX",
+              "type": "Code",
+              "cost": "0AP",
+              "cd": "0Turn(s)",
+              "description": "Locks onto a target. After 1 turn, uses a Rocket Launcher to attack all targets within a 3x3-tile area centered on the selected target, dealing 0.25x AoE DMG to each part. Inflicts 4 stacks of [Daze II] on targets hit, lasting for 2 turns.",
+              "kind": "active"
+            },
+            {
+              "name": "Forced Recycle",
+              "type": "Passive",
+              "icon": "Icon_skill_passive_5115",
+              "description": "After being attacked, absorbs all remaining AP from the attacker. For each 1 AP absorbed, gains 1 stack of [Fortify], lasting for 2 turns.",
+              "kind": "passive"
+            }
+          ],
+          "description": "Every moment death approaches is bathed in golden light – seize it, devour it, for it is the destiny you pursue.",
+          "extreme_modifiers": [
+            {
+              "name": "High-Level Sanction",
+              "difficulty": "Extreme",
+              "description": "After Tracers attack, inflicts [Crash] on the target hit."
+            }
+          ]
         }
       ]
     },
@@ -1319,7 +2868,108 @@ window.BossesData = {
               "arm": 99942,
               "legs": 119399
             }
-          }
+          },
+          "title": "Clouds",
+          "skills": [
+            {
+              "name": "Immediate Obedience",
+              "type": "Talent",
+              "icon": "Icon_skill_talent_5120",
+              "description": "Weapon Range +1.\nWhen any ally executes an active attack anywhere on the battlefield, for every 2 parts hit, inflicts 1 random debuff on the target after combat, lasting for 2 turns.\nIgnores enemy obstruction when moving.",
+              "kind": "passive"
+            },
+            {
+              "name": "Discipline",
+              "type": "Code",
+              "cost": "0AP",
+              "cd": "1Turn(s)",
+              "description": "Uses two Machine Guns to attack all targets within a 3x2-tile area ahead, dealing 0.65x AoE DMG 2 times. After the skill ends, triggers [Re-Act].",
+              "kind": "active"
+            },
+            {
+              "name": "Full Repair",
+              "type": "Code",
+              "icon": "Icon_skill_order_3112",
+              "cost": "0AP",
+              "cd": "2Turn(s)",
+              "description": "Restores HP equal to 2x Manipulator Repair AMT to all parts. Can repair all destroyed parts. After the skill ends, triggers [Re-Act].",
+              "kind": "active"
+            },
+            {
+              "name": "Omni-Directional Suppression",
+              "type": "Passive",
+              "icon": "Icon_skill_passive_1132",
+              "description": "For each 1 debuff the enemy team is afflicted with, DMG Dealt +5%, Repair AMT +5%, and DMG Taken -5%.\nWhen actively attacking and retaliating, if the target is afflicted with 2 or more debuffs, randomly destroys 1 of the target's parts after combat, excluding the Body.",
+              "kind": "passive",
+              "difficulties": [
+                "Normal",
+                "Hard"
+              ]
+            },
+            {
+              "name": "Omni-Directional Suppression",
+              "kind": "passive",
+              "difficulties": [
+                "Extreme",
+                "Inferno"
+              ],
+              "icon": "Icon_skill_passive_1132"
+            }
+          ],
+          "description": "A pall of gloom hung over everyone… everyone except this guy.",
+          "bounties": [
+            {
+              "name": "Quick Resolution",
+              "conditions": {
+                "Normal": "Win within 6 turns",
+                "Hard": "Win within 6 turns",
+                "Extreme": "Win within 6 turns",
+                "Inferno": "Win within 6 turns"
+              }
+            },
+            {
+              "name": "Bring It On",
+              "conditions": {
+                "Normal": "No more than 4 of your units have parts destroyed",
+                "Hard": "No more than 3 of your units have parts destroyed",
+                "Extreme": "No more than 3 of your units have parts destroyed",
+                "Inferno": "No more than 2 of your units have parts destroyed"
+              }
+            },
+            {
+              "name": "Safe and Sound",
+              "conditions": {
+                "Normal": "All of your team members survive",
+                "Hard": "All of your team members survive",
+                "Extreme": "All of your team members survive",
+                "Inferno": "All of your team members survive"
+              }
+            }
+          ],
+          "extreme_modifiers": [
+            {
+              "name": "Frailty",
+              "difficulty": "Extreme",
+              "description": "Reduces the number of debuffs required on the target to 2 for Skysweep [Omni-Directional Suppression] to destroy 1 random part."
+            }
+          ],
+          "clues": [
+            {
+              "name": "Tactical Dagger",
+              "subtitle": "It's pretty intimidating, right?",
+              "text": "The blade of this dagger is expertly crafted, with a prominent blood groove in the middle to reduce resistance during insertion and withdrawal, making it appear even more intimidating. In terms of intimidation, a knife is often more effective than a gun, as not everyone can imagine the moment they are pierced by a bullet. For this reason, the owner rarely has the opportunity to use this dagger... and that's exactly what he wants.But if and when it does, he's prepared."
+            },
+            {
+              "name": "Knit Cap",
+              "subtitle": "It's already a bit small for him.",
+              "text": "This knitted hat is made of soft black wool, providing a warm and comfortable feeling. It shows signs of frequent washing, with the color slightly faded. The red pattern remains vibrant, but the edges of the lines are somewhat worn, giving it a softer appearance, no longer as sharp. This hat accompanied him throughout his childhood, and he will cherish it for the rest of his life. He also wishes that, perhaps, he can use this to hide his baldness in his old age..."
+            },
+            {
+              "name": "Silver Dice",
+              "subtitle": "This is the fairest plan.",
+              "text": "This silver die is intricately designed, with a highly polished surface that presents an impressive sheen. Each face of the die is precisely engraved with deep black numbers, whose font is both modern and simple, creating a stark contrast against the silver background for easy recognition. Everyone in the squad has one of these dice, and whenever a dispute arises, it's time for the dice to make an appearance. At that moment, fate will guide the squad's direction."
+            }
+          ]
         },
         {
           "slot": 2,
@@ -1353,7 +3003,96 @@ window.BossesData = {
               "arm": 126133,
               "legs": 150690
             }
-          }
+          },
+          "title": "Vengeance",
+          "skills": [
+            {
+              "name": "Shadow Guard",
+              "type": "Talent",
+              "icon": "Icon_skill_talent_5123",
+              "description": "At the start of battle and after taking action, gains [Shadow Guard].\nWhen suffering an active attack and taking DMG, loses [Shadow Guard]. Depending on the type of weapon used in the attack, becomes immune to DMG from that type of weapon for 2 turns.\nCan trigger [Re-ATK] 1 time per turn and can move 1 tile before attacking.\nImmune to Movement reduction effects and ignores enemy obstruction when moving.",
+              "kind": "passive"
+            },
+            {
+              "name": "Storm Rocket",
+              "type": "Code",
+              "icon": "Icon_skill_order_1004",
+              "cost": "2AP",
+              "cd": "0Turn(s)",
+              "description": "Simultaneously uses two Rocket Launchers to attack all targets within a 3x3-tile area, dealing 0.1x damage to each part of the target, and applies 1 stack of [Calibration Damage] to all targets within the area, lasting for 2 turns. Gains 1 stack of [Infiltrator] for each target hit. Can only be executed 1 time per turn.",
+              "buffs": [
+                {
+                  "name": "Calibration Damage",
+                  "description": "When [Calibration Damage] is applied again, removes [Calibration Damage] and gains [Destabilized Calibration], lasting for 1 turn.",
+                  "tags": [
+                    "Non-Dispellable"
+                  ]
+                },
+                {
+                  "name": "Infiltrator",
+                  "description": "DMG Dealt +10%, Crit Rate UP +10%, Movement +1. Stacks up to 9 times.",
+                  "tags": [
+                    "Non-Dispellable",
+                    "Non-Replicable"
+                  ]
+                }
+              ],
+              "kind": "active"
+            },
+            {
+              "name": "Strategic Strike",
+              "type": "Code",
+              "icon": "Icon_skill_order_1003",
+              "cost": "2AP",
+              "cd": "0Turn(s)",
+              "description": "Uses a Rocket Launcher to attack all targets within a 3x3-tile area, dealing 0.25x AoE DMG.",
+              "kind": "active"
+            },
+            {
+              "name": "Lurker",
+              "type": "Passive",
+              "icon": "Icon_skill_passive_5114",
+              "description": "At start of action, gains 1 stack of [Infiltrator].\nWhen actively attacked and not possessing [Shadow Guard], removes 1 stack of [Infiltrator].\nWhen possessing 5 or more stacks of [Infiltrator], consumes 5 stacks of [Infiltrator] to execute 1 additional [Storm Rocket], and increases Weapon DMG multiplier of this [Storm Rocket] by 0.15.",
+              "kind": "passive"
+            }
+          ],
+          "description": "Vera will make those people pay the price – and pay dearly",
+          "bounties": [
+            {
+              "name": "Quick Resolution",
+              "conditions": {
+                "Normal": "Win within 6 turns",
+                "Hard": "Win within 6 turns",
+                "Extreme": "Win within 6 turns",
+                "Inferno": "Win within 6 turns"
+              }
+            },
+            {
+              "name": "Shut Out",
+              "conditions": {
+                "Normal": "The boss closes no more than 2 doors",
+                "Hard": "The boss closes no more than 2 doors",
+                "Extreme": "The boss closes no more than 1 door",
+                "Inferno": "The boss closes no more than 1 door"
+              }
+            },
+            {
+              "name": "Safe and Sound",
+              "conditions": {
+                "Normal": "All of your team members survive",
+                "Hard": "All of your team members survive",
+                "Extreme": "All of your team members survive",
+                "Inferno": "All of your team members survive"
+              }
+            }
+          ],
+          "extreme_modifiers": [
+            {
+              "name": "No Escape",
+              "difficulty": "Extreme",
+              "description": "[Enemy] When enemies pass within 1 tile of this unit, they consume 1 additional Movement."
+            }
+          ]
         },
         {
           "slot": 3,
@@ -1387,7 +3126,98 @@ window.BossesData = {
               "arm": 135708,
               "legs": 162129
             }
-          }
+          },
+          "title": "Big and Small",
+          "skills": [
+            {
+              "name": "Ambusher",
+              "type": "Talent",
+              "icon": "Icon_skill_talent_1105",
+              "description": "At the start of battle and end of turn, gains 16 stacks of [Advantage]. Cannot trigger again for two turns after activation.\nAfter actively attacking, deals Fixed DMG equal to 12% of Weapon ATK to the target and all enemies within 2 or 3 tiles (equal to the attack range of the weapon used).\nEach time an enemy unit takes 1 instance of Fixed DMG, gains 1 stack of [Advantage]. When taking Fixed DMG, deducts 1 stack of [Advantage].",
+              "buffs": [
+                {
+                  "name": "Advantage",
+                  "description": "[Fixed DMG] Dealt +10%, DMG Taken -10%. Stacks up to 40 times.",
+                  "tags": [
+                    "Non-Dispellable",
+                    "Non-Replicable"
+                  ]
+                }
+              ],
+              "kind": "passive"
+            },
+            {
+              "name": "MG Penetration",
+              "type": "Code",
+              "icon": "Icon_skill_order_1126",
+              "cost": "1AP",
+              "cd": "2Turn(s)",
+              "description": "Uses a Machine Gun to attack all targets in a 3-tile line, dealing 1.2x AoE DMG. This attack ignores 100% of the target's Armor.",
+              "kind": "active"
+            },
+            {
+              "name": "Turbo Thrust",
+              "type": "Active",
+              "icon": "Icon_skill_main_1123",
+              "cost": "0AP",
+              "weapon": "SG",
+              "description": "Uses a Shotgun to attack a target, dealing 1.5x DMG. After combat, pushes the target back 1 tile. If the path is blocked, inflicts [Crash] on the target, lasting for 1 turn.",
+              "kind": "active"
+            },
+            {
+              "name": "Focused Breakthrough",
+              "type": "Passive",
+              "icon": "Icon_skill_passive_5224",
+              "description": "At end of action, applies [Focused Breakthrough] to 1 random enemy unit. This effect has a 2-turn trigger interval.\nWhen possessing no less than 15 stacks of [Advantage], ATK +50%, the cooldown of [MG Penetration] is reduced to 1 turn, and can trigger [Re-Act] 1 time per turn.",
+              "buffs": [
+                {
+                  "name": "Focused Breakthrough",
+                  "description": "Prioritized by enemy units other than Aiden. When actively attacked by enemy units other than Aiden, Aiden gains 5 stacks of [Advantage].",
+                  "tags": [
+                    "Non-Dispellable"
+                  ]
+                }
+              ],
+              "kind": "passive"
+            }
+          ],
+          "description": "Aiden isn’t afraid of bleeding for the cause. What he fears is that the blood spilled won’t be his own.",
+          "bounties": [
+            {
+              "name": "Quick Resolution",
+              "conditions": {
+                "Normal": "Win within 6 turns",
+                "Hard": "Win within 6 turns",
+                "Extreme": "Win within 6 turns",
+                "Inferno": "Win within 6 turns"
+              }
+            },
+            {
+              "name": "Innumerable",
+              "conditions": {
+                "Normal": "Defeat fewer than 20 enemy units, excluding the boss",
+                "Hard": "Defeat fewer than 18 enemy units, excluding the boss",
+                "Extreme": "Defeat fewer than 16 enemy units, excluding the boss",
+                "Inferno": "Defeat fewer than 14 enemy units, excluding the boss"
+              }
+            },
+            {
+              "name": "Safe and Sound",
+              "conditions": {
+                "Normal": "All of your team members survive",
+                "Hard": "All of your team members survive",
+                "Extreme": "All of your team members survive",
+                "Inferno": "All of your team members survive"
+              }
+            }
+          ],
+          "extreme_modifiers": [
+            {
+              "name": "Self-Destruction Deterrence",
+              "difficulty": "Extreme",
+              "description": "When destroyed, applies [Burning Terrain] to self and tiles within 1 ring, lasting for 5 turns."
+            }
+          ]
         },
         {
           "slot": 4,
@@ -1421,7 +3251,114 @@ window.BossesData = {
               "arm": 58687,
               "legs": 87392
             }
-          }
+          },
+          "title": "The Long Night",
+          "skills": [
+            {
+              "name": "Battlefield Supremacy",
+              "type": "Talent",
+              "icon": "Icon_skill_talent_1120",
+              "description": "At the start of battle, applies [Blackout] to 1 random enemy ST.\nWhen actively attacking, applies 1 stack of [Blackout] to the target after combat.\nAt the start of battle and after taking action, gains 1 stack of [Rock-Solid].\nAt start of turn, if there are no STs with [Weak Armor] on the battlefield, gains 3 stacks of [Rock-Solid].",
+              "buffs": [
+                {
+                  "name": "Blackout",
+                  "description": "Hit Rate -30%. Stacks up to 10 times.",
+                  "tags": [
+                    "Non-Dispellable"
+                  ]
+                },
+                {
+                  "name": "Rock-Solid",
+                  "description": "DMG Dealt +30%. Stacks up to 10 times. After attacking, deals Splash DMG equal to 50% of the damage dealt to parts of the target that were not hit.",
+                  "tags": [
+                    "Non-Dispellable",
+                    "Non-Replicable"
+                  ]
+                }
+              ],
+              "kind": "passive"
+            },
+            {
+              "name": "Weakness Purge",
+              "type": "Active",
+              "icon": "Icon_skill_main_1144",
+              "cost": "1AP",
+              "weapon": "LR",
+              "description": "Uses a Light Rifle to deal 1x DMG. All units afflicted with [Blackout] take [Fixed DMG] equal to 15% of their Max HP.",
+              "kind": "active"
+            },
+            {
+              "name": "Authority",
+              "type": "Passive",
+              "icon": "Icon_skill_passive_1001",
+              "description": "Special Ops Deputy Captain can launch a [Link Attack] during active attacks, ignoring distance and dealing 0.8x DMG to the target.",
+              "kind": "passive"
+            },
+            {
+              "name": "Tactical Adjustment",
+              "type": "Passive",
+              "icon": "Icon_skill_passive_5008",
+              "description": "When actively attacked, if the attacker possesses [Weak Armor], removes the attacker's [Weak Armor] and 1 stack of own [Rock-Solid].\nWhen attacking with a Sniper Rifle, minimum Range -1. When equipped with a Small Shield, the other Arm gains [Guts].",
+              "kind": "passive"
+            }
+          ],
+          "description": "Victoria arrives with the light of the old DL – and this time, history will not repeat itself.",
+          "units": [
+            {
+              "name": "Special Ops Deputy Captain",
+              "skills": [
+                {
+                  "name": "Suppression Preparation",
+                  "type": "Talent",
+                  "icon": "Icon_skill_talent_5123",
+                  "description": "At the start of battle, applies [Weak Armor] to 1 random enemy ST.\nWhen actively attacking, applies 1 stack of [Weak Armor] to the target after combat.\nAt the start of battle and after taking action, gains 1 stack of [Strengthened].\nAt start of turn, if there are no STs possessing [Blackout] on the battlefield, gains 3 stacks of [Strengthened].",
+                  "buffs": [
+                    {
+                      "name": "Weak Armor",
+                      "description": "Armor -30%. Stacks up to 10 times.",
+                      "tags": [
+                        "Non-Dispellable"
+                      ]
+                    },
+                    {
+                      "name": "Strengthened",
+                      "description": "Hit Rate +30%, Armor +30%. Stacks up to 10 times.",
+                      "tags": [
+                        "Non-Dispellable",
+                        "Non-Replicable"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Cull the Weak",
+                  "type": "Active",
+                  "icon": "Icon_skill_main_1009",
+                  "cost": "1AP",
+                  "weapon": "HMG",
+                  "description": "Uses a Heavy Machine Gun to attack a target, dealing 1x DMG. All units afflicted with [Weak Armor] take [Fixed DMG] equal to 15% of their Max HP."
+                },
+                {
+                  "name": "Assist",
+                  "type": "Passive",
+                  "icon": "Icon_skill_passive_1001",
+                  "description": "Victoria can initiate a [Link Attack] regardless of distance when performing active attacks, dealing 0.8x DMG."
+                },
+                {
+                  "name": "Strategic Support",
+                  "type": "Passive",
+                  "description": "When actively attacked, if the attacker possesses [Blackout], removes the attacker's [Blackout] and 1 stack of [Strengthened] from self.\nWhen a single Arm is destroyed, Heavy Machine Gun Hit Rate does not decrease."
+                }
+              ]
+            }
+          ],
+          "extreme_modifiers": [
+            {
+              "name": "Backup Plan",
+              "difficulty": "Extreme",
+              "description": "When either Victoria or Special Ops Deputy Captain is destroyed, the other recovers full HP."
+            }
+          ]
         }
       ]
     },
@@ -1456,7 +3393,149 @@ window.BossesData = {
               "arm": 55608,
               "legs": 66435
             }
-          }
+          },
+          "title": "Shut Out",
+          "skills": [
+            {
+              "name": "Rookie on the Road",
+              "type": "Talent",
+              "icon": "Icon_skill_talent_4108",
+              "description": "After actively attacking, triggers [Re-Act]. Can trigger again after a 1 turn interval. At end of action, gains 1 stack of [Preheat]. Accumulating stacks grants various effects:\nWhen possessing 1 stack of [Preheat], movement ignores collision.\nWhen possessing 3 stacks of [Preheat], after actively attacking with a Tactical Weapon, applies [Blazing Terrain] to the targeted tile, lasting for 2 turns. After actively attacking with an Assault Weapon, applies [Blazing Terrain] to the targeted tile, lasting for 1 turn.\nWhen possessing 5 stacks of [Preheat], gains [Limit Break].",
+              "buffs": [
+                {
+                  "name": "Preheat",
+                  "description": "DMG Taken -10%.",
+                  "tags": [
+                    "Non-Dispellable",
+                    "Non-Replicable"
+                  ]
+                },
+                {
+                  "name": "Limit Break",
+                  "description": "DMG Dealt +100%, Hit Rate +100%.",
+                  "tags": [
+                    "Type: Buffs",
+                    "Non-Dispellable",
+                    "Non-Replicable"
+                  ]
+                },
+                {
+                  "name": "Blazing Terrain",
+                  "description": "Deals [Fixed DMG] equal to 30% of Max HP to all parts of enemies that remain on this tile."
+                }
+              ],
+              "kind": "passive"
+            },
+            {
+              "name": "Multi-Lock",
+              "type": "Code",
+              "icon": "Icon_skill_order_5129",
+              "cost": "1AP",
+              "cd": "0Turn(s)",
+              "description": "Uses two Rocket Launchers to attack 2 targets, dealing 0.25x DMG to each part of all units within range. After combat, applies [Sticky Grenade] to targets, lasting for 2 turns, and inflicts [Burning Terrain] on tiles hit after combat, lasting for 2 turns.",
+              "buffs": [
+                {
+                  "name": "Sticky Grenade",
+                  "description": "Movement -1. Stacks up to 2 times.",
+                  "tags": [
+                    "Type: Debuff",
+                    "Non-Dispellable"
+                  ]
+                },
+                {
+                  "name": "Burning Terrain",
+                  "description": "Deals [Fixed DMG] equal to 12% of Max HP to enemies that remain on this tile."
+                }
+              ],
+              "kind": "active"
+            },
+            {
+              "name": "Incineration",
+              "type": "Code",
+              "icon": "Icon_skill_order_1123",
+              "cost": "3AP",
+              "cd": "1Turn(s)",
+              "description": "Simultaneously uses two Flamethrowers to attack all targets within range, dealing 0.35x DMG 2 times. If the target hit has Movement less than or equal to 2, additionally applies [Temperature Control], lasting for 1 turn.",
+              "buffs": [
+                {
+                  "name": "Temperature Control",
+                  "description": "Final DMG -99%. Before actively attacking, for every 1 tile moved, Final DMG +33%, up to +99%. Cannot deal damage without having moved.",
+                  "tags": [
+                    "Non-Dispellable"
+                  ]
+                }
+              ],
+              "kind": "active"
+            },
+            {
+              "name": "Periphery Bombing",
+              "type": "Passive",
+              "icon": "Icon_skill_passive_1142",
+              "description": "At start of turn, uses a Rocket Launcher to attack all targets within Early Warning range, dealing 10,000 [Fixed DMG] to each part. Can be activated again after an interval of 1 turn.",
+              "kind": "passive"
+            }
+          ],
+          "description": "He looks very honest, easy to bully… – Rebecca",
+          "bounties": [
+            {
+              "name": "Quick Resolution",
+              "conditions": {
+                "Normal": "Win within 6 turns",
+                "Hard": "Win within 6 turns",
+                "Extreme": "Win within 6 turns"
+              }
+            },
+            {
+              "name": "Cautiously",
+              "conditions": {
+                "Normal": "Your team is damaged by Blazing Terrain no more than 2 times",
+                "Hard": "Your team is damaged by Burning Terrain or Blazing Terrain no more than 1 time",
+                "Extreme": "Your team doesn’t take any damage from Burning or Blazing Terrain"
+              }
+            },
+            {
+              "name": "Safe and Sound",
+              "conditions": {
+                "Normal": "All of your team members survive",
+                "Hard": "All of your team members survive",
+                "Extreme": "All of your team members survive"
+              }
+            }
+          ],
+          "extreme_modifiers": [
+            {
+              "name": "Isolation",
+              "difficulty": "Extreme",
+              "description": "[Ally] When there are no allies within 1 adjacent tile, gains [Isolation].",
+              "buffs": [
+                {
+                  "name": "Isolation",
+                  "description": "When there are no allies within 1 adjacent tile, DMG Taken +50%, DMG Dealt -50%.",
+                  "tags": [
+                    "Non-Dispellable",
+                    "Non-Replicable"
+                  ]
+                }
+              ]
+            }
+          ],
+          "clues": [
+            {
+              "name": "Military Waist Bag",
+              "subtitle": "Packed to the brim.",
+              "text": "This military waist pack is made of high-density nylon material that is wear-resistant and waterproof, ensuring its durability and versatility. From ammo to throwables and healing gear, it carries the full gear of a soldier. And in one of the small pouches, it's filled with cigarettes, but he doesn't smoke himself. Probably running errands for someone..."
+            },
+            {
+              "name": "Family Photo",
+              "subtitle": "The moment before departure.",
+              "text": "In the picture, Hayato is wearing a neat uniform, standing in the middle, with his parents on either side. Slightly in front is his sister, and at the very front is a large white dog. The photo was neatly folded and placed in his chest pocket. On the back of the photo, it reads \"Dear Mom, Dad, Sis, and Bobby who's always barking.\""
+            },
+            {
+              "name": "Recruit Medal",
+              "subtitle": "Not worth much.",
+              "text": "This new recruit medal is made of high-hardness alloy, engraved with the Enfield Military Academy insignia, and is awarded to outstanding graduates of the academy. This medal is not placed in a conspicuous spot, as that would attract enemy snipers' attention, so it is kept in the chest pocket—glory needs no audience. A single groove on the surface hints at a moment of danger survived."
+            }
+          ]
         },
         {
           "slot": 2,
@@ -1484,7 +3563,121 @@ window.BossesData = {
               "arm": 59933,
               "legs": 71601
             }
-          }
+          },
+          "title": "Black Humor",
+          "skills": [
+            {
+              "name": "Shrewd Strategist",
+              "type": "Talent",
+              "icon": "Icon_skill_passive_5146",
+              "description": "Both Arms gain permanent [Guts].\nAt start of action, for each 1 Pochy - Support Type on the battlefield, gains 1 stack of [Reserve Supply].\nWhen actively attacking and retaliating, if possessing [Reserve Supply], applies [Disarm] to the target hit after combat, lasting 1 turn.",
+              "buffs": [
+                {
+                  "name": "Reserve Supply",
+                  "description": "When actively attacking and retaliating, skill multiplier +0.2, Hit Rate +10%. Stacks up to 10 times.",
+                  "tags": [
+                    "Type: Buffs",
+                    "Non-Dispellable",
+                    "Non-Replicable"
+                  ]
+                },
+                {
+                  "name": "Disarm",
+                  "description": "Unable to use Normal Attacks, Active Skills, or Codes.",
+                  "tags": [
+                    "Type: Debuff"
+                  ]
+                }
+              ],
+              "kind": "passive"
+            },
+            {
+              "name": "Mobilized Scatter",
+              "type": "Active",
+              "icon": "Icon_skill_main_1138",
+              "cost": "3AP",
+              "weapon": "SG",
+              "description": "Simultaneously uses two Shotguns to attack a target, dealing 0.6x DMG 2 times. Upon destroying a part, triggers [Re-Act].",
+              "kind": "active"
+            },
+            {
+              "name": "Burst Fire",
+              "type": "Code",
+              "cost": "4AP",
+              "cd": "1Turn(s)",
+              "description": "Simultaneously uses two Shotguns to attack all targets within a 3x2-tile area ahead, dealing 0.35x AoE DMG 2 times.",
+              "kind": "active"
+            },
+            {
+              "name": "Evasive Maneuvering",
+              "type": "Passive",
+              "icon": "Icon_skill_passive_4114",
+              "description": "When actively attacking, if a part is destroyed, all allies gain 1 stack of [Prevention].",
+              "buffs": [
+                {
+                  "name": "Prevention",
+                  "description": "DMG Taken -30%. Stacks up to 99 times.",
+                  "tags": [
+                    "Type: Buffs",
+                    "Non-Dispellable",
+                    "Non-Replicable"
+                  ]
+                }
+              ],
+              "kind": "passive"
+            }
+          ],
+          "description": "Everyone knows that Sunny won’t do anything stupid – unless he has to, that is…",
+          "bounties": [
+            {
+              "name": "Quick Resolution",
+              "conditions": {
+                "Normal": "Win within 6 turns",
+                "Hard": "Win within 6 turns",
+                "Extreme": "Win within 6 turns"
+              }
+            },
+            {
+              "name": "Energy Depletion",
+              "conditions": {
+                "Normal": "Reserve supply stacks do not exceed 2",
+                "Hard": "Reserve supply stacks do not exceed 1",
+                "Extreme": "Reserve supply stacks do not exceed 1"
+              }
+            },
+            {
+              "name": "Safe and Sound",
+              "conditions": {
+                "Normal": "All of your team members survive",
+                "Hard": "All of your team members survive",
+                "Extreme": "All of your team members survive"
+              }
+            }
+          ],
+          "extreme_modifiers": [
+            {
+              "name": "Stealth",
+              "difficulty": "Extreme",
+              "description": "[Enemy] When entering the battlefield and at end of action, gains [Stealth] for 1 turn. Non-dispellable."
+            }
+          ],
+          "clues": [
+            {
+              "name": "Luxury Watch",
+              "subtitle": "Isn't it a bit too expensive?",
+              "text": "This high-end watch combines elegant design with exquisite craftsmanship. Its strap is made of premium leather, offering a comfortable wearing experience and a classic appearance. The surface has many scratches, proving it has been well-worn. However, judging by the market price, the wearer's salary seems insufficient for a product of this quality."
+            },
+            {
+              "name": "Identification Tag",
+              "subtitle": "Two copies, different material.",
+              "text": "These two identification tags are made of gold- and silver-colored metallic materials respectively, with personal information such as name, blood type, and service number engraved on the surface. The information is engraved using clear laser technology to ensure readability in various environments. However, the material of one of them seems to be more precious than common stainless steel... The wearer once said that it provides a kind of emergency insurance."
+            },
+            {
+              "name": "A Dose of Antacid",
+              "subtitle": "Keep drinking and you'll lose your life.",
+              "text": "This stomach medicine is primarily used to relieve and treat various stomach discomforts, such as acid reflux, gastritis, or indigestion. The carrier's ST is equipped with several rows of reserves of this type of medicine, which need to be taken twice a day at regular intervals. Alcohol consumption and overeating increase the frequency at which this medication needs to be taken, so for him, it's practically an after-meal snack..."
+            }
+          ]
         },
         {
           "slot": 3,
@@ -1512,7 +3705,94 @@ window.BossesData = {
               "arm": 45014,
               "legs": 67150
             }
-          }
+          },
+          "title": "Choice",
+          "skills": [
+            {
+              "name": "Preparedness",
+              "type": "Talent",
+              "icon": "Icon_skill_passive_2116",
+              "description": "When subjected to an active attack and not possessing extra HP before combat, randomly grants [Partial Armor] to 1 part after combat.\nDamage of enemies within 3 tiles decreases by 20%, with an additional decrease of 40% for each tile closer they are, up to a maximum decrease of 100%.\nIf possessing extra HP during combat, Crit Rate +100%, attacks cannot be dodged, and prioritizes the Body.\nMovement is not reduced due to Legs Vulnerability.",
+              "buffs": [
+                {
+                  "name": "Partial Armor",
+                  "description": "Gains 15% Temporary HP."
+                }
+              ],
+              "kind": "passive"
+            },
+            {
+              "name": "Armor Crush",
+              "type": "Passive",
+              "icon": "Icon_skill_passive_1126",
+              "description": "When all parts are undestroyed, reduces DMG taken by the Body by 50%, while other parts take 25% increased DMG.\nWhen any part is destroyed, [[Preparedness]]'s effect changes, granting [Comprehensive Armor] to all undestroyed parts and dealing Splash DMG equal to 50% of the damage dealt to 3 parts other than the part hit when attacking.",
+              "buffs": [
+                {
+                  "name": "Comprehensive Armor",
+                  "description": "Gains 5% Temporary HP."
+                }
+              ],
+              "kind": "passive"
+            },
+            {
+              "name": "Burst Rush",
+              "type": "Passive",
+              "icon": "Icon_skill_passive_1153",
+              "description": "Movement is not obstructed by enemy units. When attacked, triggers [Pursuit] and moves 2 tiles. When successfully reaching the target, executes [Pursuit Retaliation], dealing 2x1.0 DMG.",
+              "kind": "passive"
+            }
+          ],
+          "description": "Keller now clearly understands what he’s fighting for, which makes him especially dangerous.",
+          "bounties": [
+            {
+              "name": "Quick Resolution",
+              "conditions": {
+                "Normal": "Win within 6 turns",
+                "Hard": "Win within 6 turns",
+                "Extreme": "Win within 6 turns"
+              }
+            },
+            {
+              "name": null,
+              "conditions": {
+                "Normal": "Destroy one of Keller’s parts within 5 turns",
+                "Hard": "Destroy one of Keller’s parts within 4 turns",
+                "Extreme": "Destroy one of Keller’s parts within 3 turns"
+              }
+            },
+            {
+              "name": "Safe and Sound",
+              "conditions": {
+                "Normal": "All of your team members survive",
+                "Hard": "All of your team members survive",
+                "Extreme": "All of your team members survive"
+              }
+            }
+          ],
+          "extreme_modifiers": [
+            {
+              "name": "Acceleration",
+              "difficulty": "Extreme",
+              "description": "[Enemy] [Burst Rush] [Pursuit] distance +1"
+            }
+          ],
+          "clues": [
+            {
+              "name": "Sweatband",
+              "subtitle": "Essential for heavy laborers.",
+              "text": "This tan sweat-absorbing headband is specifically designed for sports and outdoor activities. Primarily functioning to quickly absorb sweat and keep the head dry and comfortable, it is now used as a neckband. In the past, it accompanied its wearer through physically demanding jobs—hauling cargo, waiting tables, delivering parcels—bringing a welcome sense of freshness. Nowadays, most STs are equipped with air conditioning, but he still wears it to remind himself of how he got here."
+            },
+            {
+              "name": "Mercenary Contract",
+              "subtitle": "A clarified work relationship.",
+              "text": "This mercenary contract is a legal document that details the work content, responsibilities, compensation, and other terms between the mercenary and the employer. The contract includes the scope of services, location and duration of tasks, payment details, legal liabilities, a confidentiality agreement, and conditions for contract termination. Additionally, it specifies matters related to casualties, loss handling, and insurance—and this time he was very cautious."
+            },
+            {
+              "name": "Wristband",
+              "subtitle": "Your body is your capital.",
+              "text": "This wristband is made of elastic materials like neoprene, providing excellent compression and support while ensuring comfort and breathability. Its main function is to stabilize the wrist joint, prevent sprains and overuse injuries during exercise, and also help alleviate existing pain and discomfort. The heavy labor of the past left a mark on his strong body, and now he has to be a bit more careful."
+            }
+          ]
         },
         {
           "slot": 4,
@@ -1540,7 +3820,69 @@ window.BossesData = {
               "arm": 60983,
               "legs": 72856
             }
-          }
+          },
+          "title": "Nothing Remains",
+          "skills": [
+            {
+              "name": "Preparation Complete",
+              "type": "Talent",
+              "icon": "Icon_skill_passive_5196",
+              "description": "When attacked, teleports to another gunport after combat. Can only trigger 1 time per turn.",
+              "kind": "passive"
+            },
+            {
+              "name": "Seasoned Operator",
+              "type": "Passive",
+              "icon": "Icon_skill_passive_4127",
+              "description": "When using a Gunport to launch an active attack, Gunport Max Range +2, and Minimum Range -1.",
+              "kind": "passive"
+            }
+          ],
+          "description": "That’s how Milkhama works – the winner takes it all, and the loser is left with nothing. But Sámi refuses to admit it.",
+          "units": [
+            {
+              "name": "Red Palm RL – Type II",
+              "skills": [
+                {
+                  "name": "Guided Strike",
+                  "type": "Weapon",
+                  "description": "After a normal attack, applies [Tracking] to targets hit. When the enemy performs an active attack or uses skills, if the target possesses [Tracking], uses a Rocket Gunport to attack the target and all targets within a 1-ring area, dealing AoE DMG equal to 7.5% of their Max HP to all parts of each target."
+                },
+                {
+                  "name": "Cleanup Bombardment",
+                  "type": "Weapon",
+                  "description": "Normal attacks and Guided Strike inflict [DMG Down I] on the target, lasting for 2 turns."
+                }
+              ]
+            },
+            {
+              "name": "35mm Autocannon – Type III",
+              "skills": [
+                {
+                  "name": "Retaliatory Fire",
+                  "type": "Weapon",
+                  "description": "When an ally is attacked, uses a Machine Gun Gunport to launch [Link Retaliation], dealing 2x DMG."
+                },
+                {
+                  "name": "No Survivors",
+                  "type": "Weapon",
+                  "description": "When allies other than Sámi perform an active attack, launches a [Link Attack] against the target, dealing 2x DMG. Can trigger up to 8 times per turn."
+                },
+                {
+                  "name": "Thirst For Blood",
+                  "type": "Weapon",
+                  "description": "After using a skill, can trigger [Re-ATK] 1 time per turn. After combat or a Link Attack, applies [DMG Taken UP IV] to the target hit, lasting for 2 turns."
+                }
+              ]
+            }
+          ],
+          "extreme_modifiers": [
+            {
+              "name": "Two-Handed Preparation",
+              "difficulty": "Extreme",
+              "description": "[Enemy] When vehicle is destroyed, deploys Struct."
+            }
+          ]
         }
       ]
     },
@@ -1575,7 +3917,119 @@ window.BossesData = {
               "arm": 41072,
               "legs": 61161
             }
-          }
+          },
+          "title": "Hunter or Prey",
+          "skills": [
+            {
+              "name": "Unlimited",
+              "type": "Talent",
+              "icon": "Icon_skill_talent_4111",
+              "description": "When deployed, gains 2 stacks of [Energy Replenishment]. After actively attacking, if a part is destroyed, can trigger [Re-Act] up to 2 times per turn.\nAt start of turn, if not possessing [Power Shortage], designates 2 Marching Crabs to prepare for recovery. Each recovered Marching Crab grants 1 stack of [Energy Replenishment].\nAfter taking action, if all [Energy Replenishment] are lost, immediately gains [Power Shortage] for 1 turn.",
+              "buffs": [
+                {
+                  "name": "Energy Replenishment",
+                  "description": "AP Regen +2. Stacks up to 99 times. At end of action, 1 stack is removed.",
+                  "tags": [
+                    "Non-Dispellable",
+                    "Non-Replicable"
+                  ]
+                },
+                {
+                  "name": "Power Shortage",
+                  "description": "Cannot dodge. DMG Taken +30%. After this effect's duration ends, gains 2 stacks of [Energy Replenishment].",
+                  "tags": [
+                    "Non-Dispellable"
+                  ]
+                }
+              ],
+              "kind": "passive"
+            },
+            {
+              "name": "Deathblow",
+              "type": "Active",
+              "icon": "Icon_skill_main_1010",
+              "cost": "1AP",
+              "weapon": "Alter-Blade",
+              "description": "Uses an Alter-Blade to attack a target, dealing 1.3x DMG. This attack targets the part with the lowest HP. If a part is destroyed, triggers [Flurry Strike] with the opposite Arm's Alter-Blade, dealing 0.5x DMG.",
+              "kind": "active"
+            },
+            {
+              "name": "Evil Assault",
+              "type": "Code",
+              "icon": "Icon_skill_order_1103",
+              "cost": "2AP",
+              "cd": "0Turn(s)",
+              "description": "Uses two Alter-Blades to thrust 5 tiles forward, dealing 1x AoE DMG to all enemies in the path. Applies [Load Anomaly] to targets hit, lasting for 1 turn. If possessing [Energy Replenishment], additionally deals the same AoE DMG to all enemies within 1 tile on both sides of the attack path.",
+              "buffs": [
+                {
+                  "name": "Load Anomaly",
+                  "description": "Before actively attacking or using a code skill, for every 1 tile moved, this attack's AP Cost +1, up to +3.",
+                  "tags": [
+                    "Non-Dispellable"
+                  ]
+                }
+              ],
+              "kind": "active"
+            },
+            {
+              "name": "Inexhaustible",
+              "type": "Passive",
+              "icon": "Icon_skill_passive_3115",
+              "description": "At start of action, if possessing [Energy Replenishment], repairs all destroyed parts and restores 10% of each part's Max HP.",
+              "kind": "passive"
+            }
+          ],
+          "description": "Shh… Be quiet, she’s already here.",
+          "bounties": [
+            {
+              "name": "Quick Resolution",
+              "conditions": {
+                "Normal": "Win within 6 turns",
+                "Hard": "Win within 6 turns",
+                "Extreme": "Win within 6 turns"
+              }
+            },
+            {
+              "name": "Intercepted",
+              "conditions": {
+                "Normal": "Make Morgana gain [Power Shortage] 2 times",
+                "Hard": "Make Morgana gain [Power Shortage] 2 times",
+                "Extreme": "Make Morgana gain [Power Shortage] 2 times"
+              }
+            },
+            {
+              "name": "Safe and Sound",
+              "conditions": {
+                "Normal": "All of your team members survive",
+                "Hard": "All of your team members survive",
+                "Extreme": "All of your team members survive"
+              }
+            }
+          ],
+          "extreme_modifiers": [
+            {
+              "name": "Unstable",
+              "difficulty": "Extreme",
+              "description": "[Enemy] When a Marching Crab is destroyed, deals [Fixed DMG] equal to 50% of Max HP to each part of all targets within 1 ring."
+            }
+          ],
+          "clues": [
+            {
+              "name": "Cat Ear Headset",
+              "subtitle": "What a chaotic world!",
+              "text": "These stealthy headphones combine dark camo and rigid synthetic materials to minimize reflection, featuring distinctive pointed ear cups. \"Are those points for enhanced defense?\" many ask. \"Nah, they're just super kawaii! Meow~\" the user teases with a wink."
+            },
+            {
+              "name": "Arashi Blade",
+              "subtitle": "Slicing through steel? That's child's play.",
+              "text": "A modern military blade in dark crimson, forged from high-strength steel with traces of titanium and tungsten. Its razor-sharp edge and unmatched durability make it a lethal force. Obsidian insiders reveal a secret, infused Arashium creates a psychic bond between blade and wielder. Though now blood-red, the blade was originally pitch black when forged."
+            },
+            {
+              "name": "Notebook",
+              "subtitle": "Record, not log.",
+              "text": "The industrial-grade notebook boasts a rugged waterproof and dustproof cover, with premium acid-free pages that lock in ink for lasting records. Unlike its user's casual demeanor, these pages contain robot-like precision in daily logs. Just another work facade, really."
+            }
+          ]
         },
         {
           "slot": 2,
@@ -1603,7 +4057,132 @@ window.BossesData = {
               "arm": 54696,
               "legs": 65345
             }
-          }
+          },
+          "title": "Venomous",
+          "skills": [
+            {
+              "name": "Disperse Acid",
+              "type": "Talent",
+              "icon": "Icon_skill_talent_5106",
+              "description": "When performing a normal attack or retaliating, Range +1. At the start of the battle or at start of action, randomly select an enemy that does not have [Acid II] and applies 1 stack of [Acid II] to it.",
+              "buffs": [
+                {
+                  "name": "Acid II",
+                  "description": "Repair AMT Received -30%, DMG Dealt -10%. Stacks up to 99 times. At end of action, for each stack of [Acid II], deals Fixed DMG equal to 10% of Max HP to all of own parts. When triggered, applies 1 stack of [Acid II] to this unit and all allies within 2 tiles.",
+                  "tags": [
+                    "Non-Dispellable"
+                  ]
+                }
+              ],
+              "kind": "passive",
+              "difficulties": [
+                "Normal",
+                "Hard"
+              ]
+            },
+            {
+              "name": "Disperse Acid",
+              "kind": "passive",
+              "description": "When performing a normal attack or retaliating, Range +1. At the start of the battle or at start of action, randomly select an enemy that does not have  and applies 1 stack of  to it.",
+              "difficulties": [
+                "Extreme"
+              ],
+              "icon": "Icon_skill_talent_5106"
+            },
+            {
+              "name": "Acid Burst",
+              "type": "Code",
+              "icon": "Icon_skill_order_1001",
+              "cost": "0AP",
+              "cd": "0Turn(s)",
+              "description": "Uses a Missile Launcher to attack a target, dealing 0.7x DMG to the part hit and Splash DMG equal to 35% of this damage to other parts. If the target is afflicted with [Acid II], immediately triggers the [Acid II] effect 1 time.",
+              "kind": "active",
+              "difficulties": [
+                "Normal",
+                "Hard"
+              ]
+            },
+            {
+              "name": "Acid Burst",
+              "kind": "active",
+              "difficulties": [
+                "Extreme"
+              ],
+              "icon": "Icon_skill_order_1001"
+            },
+            {
+              "name": "Acid Storm",
+              "type": "Code",
+              "icon": "Icon_skill_order_1010",
+              "cost": "1AP",
+              "cd": "2Turn(s)",
+              "description": "Uses a Heavy Machine Gun to attack all targets within attack range, dealing 0.5x AoE DMG. Inflicts 3 stacks of [Acid II] on targets hit.",
+              "kind": "active",
+              "difficulties": [
+                "Normal",
+                "Hard"
+              ]
+            },
+            {
+              "name": "Acid Storm",
+              "kind": "active",
+              "difficulties": [
+                "Extreme"
+              ],
+              "icon": "Icon_skill_order_1010"
+            }
+          ],
+          "description": "Curiosity and exploration, Liliya believes, are key to being human.",
+          "bounties": [
+            {
+              "name": "Quick Resolution",
+              "conditions": {
+                "Normal": "Win within 6 turns",
+                "Hard": "Win within 6 turns",
+                "Extreme": "Win within 6 turns"
+              }
+            },
+            {
+              "name": "Fearless of Venomous",
+              "conditions": {
+                "Normal": "Destroy 4 of fewer Neutralizers",
+                "Hard": "Destroy 3 of fewer Neutralizers",
+                "Extreme": "Destroy 3 of fewer Neutralizers"
+              }
+            },
+            {
+              "name": "Safe and Sound",
+              "conditions": {
+                "Normal": "All of your team members survive",
+                "Hard": "All of your team members survive",
+                "Extreme": "All of your team members survive"
+              }
+            }
+          ],
+          "extreme_modifiers": [
+            {
+              "name": "Poison Boost",
+              "difficulty": "Extreme",
+              "description": "[Enemy] [Acid] trigger range is increased to a 2-tile diamond area. [Acid Storm] Range +1."
+            }
+          ],
+          "clues": [
+            {
+              "name": "Tactical Eyepiece",
+              "subtitle": "Take a closer look.",
+              "text": "Crafted from lightweight alloy and high-clarity optics, these goggles deliver maximum comfort and crystal-clear vision with adjustable zoom. Not just for the lab, they're battle-ready tech that helps you uncover the hidden secrets of Arashium."
+            },
+            {
+              "name": "CM4",
+              "subtitle": "This gear's not meant for mere humans.",
+              "text": "These bizarre green reagents stored in transparent test tubes emit an eerie glow in darkness or under UV light, creating an air of mystery. Surprisingly, developers claim they're harmless to humans. Just one tube can paralyze a ST's Arashi Frame, exactly what they were designed to do."
+            },
+            {
+              "name": "Star Pendant",
+              "subtitle": "She's just one of a sea of stars.",
+              "text": "A dual-sided pendant in green and black, crafted from premium metal with a flawless paint finish for lasting vibrancy. Liliya never parts with it on any mission, the first gift she received from Andrea."
+            }
+          ]
         },
         {
           "slot": 3,
@@ -1631,7 +4210,123 @@ window.BossesData = {
               "arm": 46815,
               "legs": 55929
             }
-          }
+          },
+          "title": "Watchdog",
+          "skills": [
+            {
+              "name": "Predatorial Aid",
+              "type": "Talent",
+              "icon": "Icon_skill_talent_5126",
+              "description": "At start of action, for each ally on the battlefield, gains 1 stack of [Predatorial Aid], lasting for 1 turn. When possessing [Predatorial Aid], Machine Gun Bullets +2, Rail Gun Range +1, and Rail Gun can shoot diagonally.",
+              "buffs": [
+                {
+                  "name": "Predatorial Aid",
+                  "description": "DMG Dealt +10%, DMG Taken -10%. Stacks up to 3 times. After being attacked, 1 stack is removed.",
+                  "tags": [
+                    "Type: Buffs",
+                    "Non-Replicable"
+                  ]
+                }
+              ],
+              "kind": "passive"
+            },
+            {
+              "name": "Exorcise",
+              "type": "Code",
+              "icon": "Icon_skill_order_1109",
+              "cost": "1AP",
+              "cd": "1Turn(s)",
+              "description": "Uses a Rail Gun to attack all targets within a 3x5-tile area, dealing 1.0x AoE DMG. Gains an additional 50% DMG Bonus for units with HP below 50%. Inflicts [Suppression] on targets hit, lasting for 1 turn.",
+              "buffs": [
+                {
+                  "name": "Suppression",
+                  "description": "AP Cap becomes 2.",
+                  "tags": [
+                    "Type: Debuff",
+                    "Non-Dispellable"
+                  ]
+                }
+              ],
+              "kind": "active"
+            },
+            {
+              "name": "Eliminate",
+              "type": "Code",
+              "cost": "1AP",
+              "cd": "1Turn(s)",
+              "description": "Uses two Machine Guns to attack all targets within a 5x3-tile area ahead, dealing 0.5x AoE DMG 2 times. If possessing [Predatorial Aid], this attack cannot be dodged.",
+              "kind": "active"
+            },
+            {
+              "name": "Sinister Curtain",
+              "type": "Passive",
+              "icon": "Icon_skill_passive_5104",
+              "description": "When any part's HP falls below 50%, gains [Sinister Curtain] after combat, lasting for 1 turn. Can trigger 1 time per part.",
+              "buffs": [
+                {
+                  "name": "Sinister Curtain",
+                  "description": "Unselectable",
+                  "tags": [
+                    "Type: Buffs",
+                    "Non-Dispellable",
+                    "Non-Replicable"
+                  ]
+                }
+              ],
+              "kind": "passive"
+            }
+          ],
+          "description": "Libby wishes to know everyone’s personal color and hopes you can assist.",
+          "bounties": [
+            {
+              "name": "Quick Resolution",
+              "conditions": {
+                "Normal": "Win within 6 turns",
+                "Hard": "Win within 6 turns",
+                "Extreme": "Win within 6 turns"
+              }
+            },
+            {
+              "name": "Bring It On",
+              "conditions": {
+                "Normal": "Destroy less than 5 Signal Transmitters",
+                "Hard": "Destroy less than 4 Signal Transmitters",
+                "Extreme": "Destroy less than 3 Signal Transmitters"
+              }
+            },
+            {
+              "name": "Safe and Sound",
+              "conditions": {
+                "Normal": "All of your team members survive",
+                "Hard": "All of your team members survive",
+                "Extreme": "All of your team members survive"
+              }
+            }
+          ],
+          "extreme_modifiers": [
+            {
+              "name": "Deathproof",
+              "difficulty": "Extreme",
+              "description": "[Enemy] When deployed, gains [DMG Immunity]. Can trigger 1 time."
+            }
+          ],
+          "clues": [
+            {
+              "name": "Bow Tie Hairband",
+              "subtitle": "It adds a lovely touch of elegance to her.",
+              "text": "The butterfly hairband exudes elegance with its pristine edges and delicate craftsmanship. Using a special Predator material, Libby created this accessory despite her blindness, a feat that amazes many. Her secret? An unwavering passion for beauty."
+            },
+            {
+              "name": "Stinger",
+              "subtitle": "Swift and silent, lethal without leaving a mark.",
+              "text": "The white compact \"Stinger\" is an exquisitely crafted pistol. Its lightweight alloy frame and matte white finish minimize visibility in action. How does a blind warrior wield a gun? The answer lies in its name, strike from close range, just like a stinger."
+            },
+            {
+              "name": "Arashi Eye Mask",
+              "subtitle": "The seen and unseen collide.",
+              "text": "A sleek, matte-black metal eyepiece forged from ultra-light alloy. The stealth finish reduces glare and boosts durability. Though it has no optical sensors and renders the wearer blind, it unlocks perception beyond normal sight. Through Dive synchronization, researchers confirm it reveals glimpses into the mysterious Arashi Realm."
+            }
+          ]
         },
         {
           "slot": 4,
@@ -1659,7 +4354,76 @@ window.BossesData = {
               "arm": 51743,
               "legs": 61817
             }
-          }
+          },
+          "title": "Missive From Wintry Ovett",
+          "skills": [
+            {
+              "name": "Army of the North",
+              "type": "Talent",
+              "icon": "Icon_skill_talent_5125",
+              "description": "At start of action, if no units have [Cold Seal], randomly inflicts [Cold Seal] on 3 enemy units for 1 turn.\nIf unable to retaliate in combat, inflicts [Cold Seal] on attackers after combat, lasting for 1 turn.",
+              "buffs": [
+                {
+                  "name": "Cold Seal",
+                  "description": "Alena prioritizes attacking this unit. DMG Taken +50%.",
+                  "tags": [
+                    "Non-Dispellable",
+                    "Non-Replicable"
+                  ]
+                }
+              ],
+              "kind": "passive"
+            },
+            {
+              "name": "Ice Break",
+              "type": "Active",
+              "icon": "Icon_skill_main_1150",
+              "cost": "4AP",
+              "weapon": "Flamethrower",
+              "description": "Uses a Flamethrower to attack the main target, dealing 1.2x DMG and dealing 50% [Flame DMG] to other targets in the path. After combat, applies [Thermite] to all targets hit, lasting for 1 turn. If the target is already afflicted with [Cold Seal], converts it to [Burning II].",
+              "buffs": [
+                {
+                  "name": "Thermite",
+                  "description": "After actively attacking or executing a code skill, deals Fixed DMG equal to 0.5x Alena's Weapon ATK to the part with the lowest HP. This damage can destroy parts.",
+                  "tags": [
+                    "Non-Dispellable"
+                  ]
+                },
+                {
+                  "name": "Burning II",
+                  "description": "At start of action, after actively attacking or executing a code skill, deals Fixed DMG equal to 2x Alena's Weapon ATK to the part with the lowest HP. This damage can destroy parts.",
+                  "tags": [
+                    "Non-Dispellable"
+                  ]
+                }
+              ],
+              "kind": "active"
+            },
+            {
+              "name": "Melt",
+              "type": "Code",
+              "icon": "Icon_skill_order_1123",
+              "cost": "5AP",
+              "cd": "2Turn(s)",
+              "description": "Simultaneously uses two Flamethrowers to attack all targets within range, dealing 0.35x DMG 2 times. If the target hit is not afflicted with [Cold Seal], applies [Thermite]. If the target hit is afflicted with [Cold Seal], applies [Burning II]. Lasts for 1 turn.",
+              "kind": "active"
+            },
+            {
+              "name": "Preparation",
+              "type": "Passive",
+              "icon": "Icon_skill_passive_2008",
+              "description": "For each 1 [Cold Seal] on the battlefield, all units gain an additional 5% of their Max HP, stacking up to 15%.",
+              "kind": "passive"
+            }
+          ],
+          "description": "Alena brought a letter from a land scarred by storm and wreckage.",
+          "extreme_modifiers": [
+            {
+              "name": "Winter Flame",
+              "difficulty": "Extreme",
+              "description": "[Enemy] When Alena actively attacks, she applies [Maneuver Destruction] to all targets, lasting for 1 turn."
+            }
+          ]
         }
       ]
     },
@@ -1694,7 +4458,91 @@ window.BossesData = {
               "arm": 39088,
               "legs": 46698
             }
-          }
+          },
+          "title": "Loyal Dog",
+          "skills": [
+            {
+              "name": "Energy Supplement",
+              "type": "Talent",
+              "icon": "Icon_skill_talent_5135",
+              "description": "At the start of the battle or the end of the action, gains 2 stacks of [Energy Supplement]. Lasts for 1 turn. Stacks up to 8 times.\nAt start of turn, for every 2 stacks of [Energy Supplement], gains AP Regen +2 and triggers [Re-ATK] once, allowing for 3 tiles of movement before attacking.\nWhen retaliating, gains 2 stacks of [Energy Supplement].\nWhen moving, gains [Ignore Unit Obstruction].",
+              "kind": "passive"
+            },
+            {
+              "name": "The Strong Prevail",
+              "type": "Code",
+              "icon": "Icon_skill_order_1006",
+              "cost": "3AP",
+              "cd": "0Turn(s)",
+              "description": "Uses a Blaster to attack all enemies within a 3x3-tile area, dealing 1.8x AoE DMG and knocking them back 2 tiles. If the path is blocked, inflicts [Crash] on the target, lasting for 1 turn. This skill is guaranteed to hit.",
+              "kind": "active"
+            },
+            {
+              "name": "Repeat Strike",
+              "type": "Passive",
+              "icon": "Icon_skill_passive_5103",
+              "description": "After triggering [Re-ATK], gains [Energy Charge] before combat: AP Cost -1, Hit Rate +20%. Stacks up to 5 times. Removed after action ends.",
+              "kind": "passive"
+            },
+            {
+              "name": "Preemptive Strike",
+              "type": "Passive",
+              "icon": "Icon_skill_passive_5014",
+              "description": "Retaliation DMG +100%. Gains [Quick Draw] when both Arms are undestroyed.",
+              "kind": "passive"
+            }
+          ],
+          "description": "Don’t underestimate Garcia. If you’re going to fight him – shoot to kill.",
+          "bounties": [
+            {
+              "name": "Quick Resolution",
+              "conditions": {
+                "Normal": "Win within 6 turns",
+                "Hard": "Win within 6 turns",
+                "Extreme": "Win within 6 turns"
+              }
+            },
+            {
+              "name": "Keeping the Peace",
+              "conditions": {
+                "Normal": "Fewer than 3 of your units were inflicted by [Crash]",
+                "Hard": "Fewer than 3 of your units were inflicted by [Crash]",
+                "Extreme": "Fewer than 2 of your units were inflicted by [Crash]"
+              }
+            },
+            {
+              "name": "Safe and Sound",
+              "conditions": {
+                "Normal": "All of your team members survive",
+                "Hard": "All of your team members survive",
+                "Extreme": "All of your team members survive"
+              }
+            }
+          ],
+          "extreme_modifiers": [
+            {
+              "name": "Stalker",
+              "difficulty": "Extreme",
+              "description": "[Enemy] When attacking, inflicts [Cost Surge] on targets hit: AP Cost +1 for all active and Code skills. Lasts for 1 turn. Stacks up to 3 times. Non-dispellable."
+            }
+          ],
+          "clues": [
+            {
+              "name": "Gold Collar Stays",
+              "subtitle": "Rock that Gold Collar Stay under your shirt and rise to the top!",
+              "text": "Four gold collar stays glisten in his pocket, for under his collar, just as his father taught: a hallmark of refined gentlemen. A golden collar stay marks true success, they say. He'd often dreamed of that perfect moment: the luxury suit, velvet tie, and those golden stays beneath his collar. But could such finery become his gilded cage? Fate has its own surprising plans."
+            },
+            {
+              "name": "Snuffbox",
+              "subtitle": "The smell of that home, not this one.",
+              "text": "A matte dark gold filigree adorned with sapphires masks a crude reality, the powder inside is fit only for low-tier miners. While Garcia's taste might seem questionable, he keeps these personal indulgences to himself. The dreams and memories tied to this scent remain his alone."
+            },
+            {
+              "name": "Milkhaman Eagle",
+              "subtitle": "He held on with iron resolve until Death's call echoed",
+              "text": "A large-caliber handgun from the New Gold Rush era, cherished by gun lovers for its raw power and iconic design. A gift from Genovese at their first meeting, Garcia used it to blast through 10 bottles of vintage wine in the cabinet's inner shelf, while leaving the whiskey untouched. \"One bottle, 50,000 MHD\"... Garcia's memory blurs on whether that sum was his penalty or his prize."
+            }
+          ]
         },
         {
           "slot": 2,
@@ -1722,7 +4570,102 @@ window.BossesData = {
               "arm": 35883,
               "legs": 53434
             }
-          }
+          },
+          "title": "The Luckiest",
+          "skills": [
+            {
+              "name": "Duty Calls",
+              "type": "Talent",
+              "icon": "Icon_skill_talent_5135",
+              "description": "When actively attacking, if the target is not destroyed, grants 1 stack of [Anger] after combat.\nWhen actively attacking, if a part is destroyed, grants 1 instance of 2-tile Movement [Re-ATK].\nWhen actively attacking, if the target is destroyed, grants 5 stacks of [Anger]. Can trigger 1 time per turn.\nAt start of action, for each ally within 3 tiles, grants 1 stack of [Anger].",
+              "buffs": [
+                {
+                  "name": "Anger",
+                  "description": "Hit Rate +15%, Final DMG +15%. Can stack.",
+                  "tags": [
+                    "Non-Dispellable",
+                    "Non-Replicable"
+                  ]
+                }
+              ],
+              "kind": "passive"
+            },
+            {
+              "name": "Fatal Fire",
+              "type": "Active",
+              "icon": "Icon_skill_main_1115",
+              "cost": "0AP",
+              "description": "Enters [Aiming] Mode. Uses a Sniper Rifle to attack a target, dealing 1.6x DMG.\nIf possessing 5 stacks of Anger, this skill is guaranteed to hit.",
+              "kind": "active"
+            },
+            {
+              "name": "Not This Time!",
+              "type": "Passive",
+              "icon": "Icon_skill_passive_5185",
+              "description": "When actively attacking, Ranged Weapon Maximum Range +1 and Minimum Range -1.\nWhen attacking with a Ranged Weapon, inflicts [AP Failure] on the target after combat, lasting for 1 turn.",
+              "buffs": [
+                {
+                  "name": "AP Failure",
+                  "description": "Loses 2 AP immediately. AP Regen per turn -1.",
+                  "tags": [
+                    "Non-Dispellable"
+                  ]
+                }
+              ],
+              "kind": "passive"
+            }
+          ],
+          "description": "Having the chance to start over fresh from scratch is much luckier than achieving success.",
+          "bounties": [
+            {
+              "name": "Quick Resolution",
+              "conditions": {
+                "Normal": "Win within 6 turns",
+                "Hard": "Win within 6 turns",
+                "Extreme": "Win within 6 turns"
+              }
+            },
+            {
+              "name": "Stop Moving Again",
+              "conditions": {
+                "Normal": "Bertha triggers [Re-ATK] less than 3 times",
+                "Hard": "Bertha triggers [Re-ATK] less than 3 times",
+                "Extreme": "Bertha triggers [Re-ATK] less than 2 times"
+              }
+            },
+            {
+              "name": "Safe and Sound",
+              "conditions": {
+                "Normal": "All of your team members survive",
+                "Hard": "All of your team members survive",
+                "Extreme": "All of your team members survive"
+              }
+            }
+          ],
+          "extreme_modifiers": [
+            {
+              "name": "Full Field Silence",
+              "difficulty": "Extreme",
+              "description": "[Enemy] At end of action, if there are no enemies within 1 adjacent tile, gains [Stealth]."
+            }
+          ],
+          "clues": [
+            {
+              "name": "Mercenary Guidebook",
+              "subtitle": "Strange graffiti everywhere—a perfect reflection of her wild mercenary days.",
+              "text": "Mastering the rules is your first step to becoming a rising star! While reality rarely matches expectations, Bertha knows that true warriors excel at adapting. Need tips on adaptability? Check page 56 of the Mercenary Guidebook, which boldly declares, \"To adapt, become stronger!\" Bertha lives by these words!"
+            },
+            {
+              "name": "Knitting Needles",
+              "subtitle": "Perfect for killing time and kicking butt.",
+              "text": "A pair of metal knitting needles, one with a deadly point, the other wrapped in delicate thread. During quiet days without missions, Bertha keeps her hands busy with these simple tools. She knits everything from hats and gloves to tiny hamster outfits, weaving her mercenary dreams into each stitch. The orphanage lies in ruins now, and with it, the secret iris pattern the dean once taught her, both lost forever to time."
+            },
+            {
+              "name": "Ahtrea",
+              "subtitle": "Squeak, squeak, squeak!",
+              "text": "A hamster with mottled fur of indeterminate breed. Two distinct notches at its mouth corners give it a perpetual smile. Bertha named it Ahtrea, meaning \"Best Companion\" in hamster-speak. Perhaps blessed with some of Bertha's lucky traits, Ahtrea remains her only \"companion\" that hasn't met an untimely end."
+            }
+          ]
         },
         {
           "slot": 3,
@@ -1750,7 +4693,126 @@ window.BossesData = {
               "arm": 47170,
               "legs": 70367
             }
-          }
+          },
+          "title": "Departure",
+          "skills": [
+            {
+              "name": "Unwavering",
+              "type": "Talent",
+              "icon": "Icon_skill_talent_2103",
+              "description": "In a single attack, gains DMG Taken -20% for each hit, up to 100%.",
+              "kind": "passive"
+            },
+            {
+              "name": "Suppression Spray",
+              "type": "Code",
+              "icon": "Icon_skill_order_1010",
+              "cost": "1AP",
+              "cd": "0Turn(s)",
+              "description": "Uses a Heavy Machine Gun to attack all targets in a cone ahead, dealing 0.7x DMG. After combat, applies [Firepower Limitation] to targets hit, lasting for 1 turn.",
+              "buffs": [
+                {
+                  "name": "Firepower Limitation",
+                  "description": "DMG Dealt -50% for 1 turn.",
+                  "tags": [
+                    "Type: Debuff",
+                    "Non-Dispellable"
+                  ]
+                }
+              ],
+              "kind": "active"
+            },
+            {
+              "name": "Link Storm",
+              "type": "Passive",
+              "icon": "Icon_skill_passive_1139",
+              "description": "Gains the [Link Attack] ability. After launching a Link Attack, if both Arms are undestroyed, executes [Link Storm], applying 1 stack of [Deceleration Mark] to the target hit. Lasts for 2 turns.",
+              "buffs": [
+                {
+                  "name": "Deceleration Mark",
+                  "description": "DMG Taken +20%, Hit Rate -20%.",
+                  "tags": [
+                    "Non-Dispellable"
+                  ]
+                }
+              ],
+              "kind": "passive"
+            }
+          ],
+          "description": "Deborah hit the gas, now is the moment for the “Rook” to protect the “King”.",
+          "bounties": [
+            {
+              "name": "Quick Resolution",
+              "conditions": {
+                "Normal": "Win within 6 turns",
+                "Hard": "Win within 6 turns",
+                "Extreme": "Win within 6 turns"
+              }
+            },
+            {
+              "name": "Innumerable",
+              "conditions": {
+                "Normal": "Less than 10 enemy units defeated",
+                "Hard": "Less than 10 enemy units defeated",
+                "Extreme": "Less than 8 enemy units defeated"
+              }
+            },
+            {
+              "name": "Safe and Sound",
+              "conditions": {
+                "Normal": "All of your team members survive",
+                "Hard": "All of your team members survive",
+                "Extreme": "All of your team members survive"
+              }
+            }
+          ],
+          "units": [
+            {
+              "name": "Luno Mercenary",
+              "skills": [
+                {
+                  "name": "Defeat",
+                  "type": "Passive",
+                  "icon": "Icon_skill_passive_5107",
+                  "description": "When destroyed, applies 1 stack of [Maneuvering Pursuit] to the killer: DMG +55% for each tile moved before attacking. Removed when the action ends."
+                }
+              ]
+            }
+          ],
+          "extreme_modifiers": [
+            {
+              "name": "Final Retaliation",
+              "difficulty": "Extreme",
+              "description": "[Enemy] When destroyed, deals [Fixed DMG] equal to 10% of Max HP to each part of all enemies within 1 ring. After combat, applies [Grievance] to targets hit.",
+              "buffs": [
+                {
+                  "name": "Grievance",
+                  "description": "DMG Taken +25%.",
+                  "tags": [
+                    "Type: Debuff",
+                    "Non-Dispellable"
+                  ]
+                }
+              ]
+            }
+          ],
+          "clues": [
+            {
+              "name": "Motorcycle Helmet",
+              "subtitle": "Life's purpose is right here.",
+              "text": "Deborah's motorcycle helmet radiates her signature pinkish-purple flair, with traces of her perfume lingering within. The other side bears etched racing records—a chronicle of speed. Although she has clinched many underground racing titles, this helmet, with its runner-up mark, remains her most treasured trophy."
+            },
+            {
+              "name": "Gatling Gun",
+              "subtitle": "Not the perfect fit, but it'll get the job done",
+              "text": "She's not exactly a Gatling enthusiast, give her close combat over suppressing fire any day. But duty calls for her to anchor the team's core as their deadliest damage dealer. Whether shielding allies or mowing down enemies, she can't always rein in Vincenza's charges. Still, upholding her authority as leader remains vital to the mission."
+            },
+            {
+              "name": "Motorcycle Key",
+              "subtitle": "A gateway to a new world beckons.",
+              "text": "What path would Deborah have chosen without Vincenza, the motorcycle, and that fateful race? She can't say, but knows that every new start comes with its own regrets. Imperfection is reality, just like her runner-up finish... The real victory is embracing destiny's twists and turns along the way."
+            }
+          ]
         },
         {
           "slot": 4,
@@ -1778,7 +4840,115 @@ window.BossesData = {
               "arm": 19372,
               "legs": 23548
             }
-          }
+          },
+          "title": "End of the Old Days",
+          "skills": [
+            {
+              "name": "Tonatiuh",
+              "type": "Talent",
+              "icon": "Icon_skill_talent_5116",
+              "description": "After a part is destroyed, automatically repairs before taking action in the next turn. When Legs are undestroyed, can trigger [Re-ATK] after executing a skill.",
+              "kind": "passive"
+            },
+            {
+              "name": "Rocket Scatter",
+              "type": "Code",
+              "icon": "Icon_skill_order_1003",
+              "cost": "3AP",
+              "cd": "0Turn(s)",
+              "description": "Uses a Rocket Launcher to attack all targets within a 3x3-tile area, dealing 0.5x DMG to all parts of each target. If possessing [Bloodline Barrier], inflicts [Disarm] on targets hit after combat, lasting for 1 turn.",
+              "buffs": [
+                {
+                  "name": "Disarm",
+                  "description": "Unable to use Normal Attacks, Active Skills, or Codes.",
+                  "tags": [
+                    "Type: Debuff"
+                  ]
+                }
+              ],
+              "kind": "active"
+            },
+            {
+              "name": "Bloodline Barrier",
+              "type": "Passive",
+              "icon": "Icon_skill_passive_2008",
+              "description": "When battle starts, gains 15 stacks of [Bloodline Barrier]. When attacked, 1 stack is removed for every 5 hits taken. After using Main Cannon to actively attack or engage in a Link attack, gains 15 stacks.",
+              "buffs": [
+                {
+                  "name": "Bloodline Barrier",
+                  "description": "Armor +50%.",
+                  "tags": [
+                    "Non-Dispellable",
+                    "Non-Replicable"
+                  ]
+                }
+              ],
+              "kind": "passive"
+            },
+            {
+              "name": "Artillery Coverage",
+              "type": "Passive",
+              "icon": "Icon_skill_passive_1139",
+              "description": "Tonatiuh can use its main cannon to launch a Link Attack once, with a damage multiplier of 1",
+              "kind": "passive"
+            }
+          ],
+          "description": "Genovese faces the new era head-on, refusing to back down.",
+          "units": [
+            {
+              "name": "Vincenza",
+              "skills": [
+                {
+                  "name": "Compound Strike",
+                  "type": "Active",
+                  "icon": "Icon_skill_main_1010",
+                  "cost": "3AP",
+                  "weapon": "PA",
+                  "description": "Uses a Polearm to attack a target, dealing 1x DMG to 1 random part and Splash DMG equal to 20% of this damage to 1 other part. Before combat, gains [Hit Rate UP V], lasting for 1 turn."
+                },
+                {
+                  "name": "King's Move",
+                  "type": "Code",
+                  "icon": "Icon_skill_order_1120",
+                  "cost": "0AP",
+                  "cd": "1Turn(s)",
+                  "description": "Jumps to any empty tile within 4 adjacent tiles, then uses a Polearm to deal 0.5x AoE DMG to all enemies within 1 ring. Applies [Top Target] to all targets hit, lasting for 2 turns. Can only be executed when equipped with a Jetpack.",
+                  "buffs": [
+                    {
+                      "name": "Top Target",
+                      "description": "[Vincenza] prioritizes attacking units with this mark.",
+                      "tags": [
+                        "Non-Dispellable"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Interceptor Strike",
+                  "type": "Passive",
+                  "icon": "Icon_skill_talent_5101",
+                  "description": "When actively attacking, applies [Kinetic Leak] to the target after combat, lasting for 1 turn. Non-dispellable.",
+                  "buffs": [
+                    {
+                      "name": "Kinetic Leak",
+                      "description": "AP Regen per turn -1.",
+                      "tags": [
+                        "Type: Debuff",
+                        "Non-Dispellable"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "extreme_modifiers": [
+            {
+              "name": "Shelter",
+              "difficulty": "Extreme",
+              "description": "[Enemy] After sustaining an attack, grants DMG Taken -15% to all allies (except self). Stacks up to 5 times."
+            }
+          ]
         }
       ]
     },
@@ -1813,7 +4983,114 @@ window.BossesData = {
               "arm": 31040,
               "legs": 37083
             }
-          }
+          },
+          "title": "Spark",
+          "skills": [
+            {
+              "name": "Starburst",
+              "type": "Talent",
+              "icon": "Icon_skill_talent_5135",
+              "description": "At the start of the battle, gains [Kindle]. At end of action, grants [Kindle] to an ally.\nWhen Body HP falls below 50% for the first time, gains [Detonate] based on the number of units with [Kindle], then removes all [Kindle] stacks. After that, allies cannot gain [Kindle].",
+              "buffs": [
+                {
+                  "name": "Kindle",
+                  "description": "After damaging an enemy, repairs all parts, restoring HP equal to 100% of damage dealt. For each ally with [Kindle] on the battlefield, Repair AMT +100%, up to 500%.",
+                  "tags": [
+                    "Non-Dispellable",
+                    "Non-Replicable"
+                  ]
+                },
+                {
+                  "name": "Detonate",
+                  "description": "DMG Dealt +100%. Stacks up to 4 times.",
+                  "tags": [
+                    "Non-Dispellable",
+                    "Non-Replicable"
+                  ]
+                }
+              ],
+              "kind": "passive"
+            },
+            {
+              "name": "Flame Ban",
+              "type": "Code",
+              "icon": "Icon_skill_main_1151",
+              "cost": "3AP",
+              "cd": "1Turn(s)",
+              "description": "Uses a Flamethrower to attack all targets within a 3-tile area ahead, dealing 1x AoE DMG. After combat, applies [Malfunction] to targets hit, lasting for 2 turns.",
+              "buffs": [
+                {
+                  "name": "Malfunction",
+                  "description": "When attacking, targets with [Kindle] cannot be hit.",
+                  "tags": [
+                    "Non-Dispellable",
+                    "Non-Replicable"
+                  ]
+                }
+              ],
+              "kind": "active"
+            },
+            {
+              "name": "Unleash the Thunder!",
+              "type": "Code",
+              "icon": "Icon_skill_order_1109",
+              "cost": "3AP",
+              "cd": "0Turn(s)",
+              "description": "Uses a Rail Gun to attack all targets within a 3x5-tile area ahead, dealing 1x DMG. Before combat, gains [Rail Gun Hit Rate UP]. Deals an additional 50% DMG to targets with [Malfunction]. This skill does not consume any Ammo.",
+              "kind": "active"
+            }
+          ],
+          "description": "Blazetrudge’s flames will not stop until everything is burned to ashes.",
+          "bounties": [
+            {
+              "name": "Quick Resolution",
+              "conditions": {
+                "Normal": "Win within 6 turns",
+                "Hard": "Win within 6 turns",
+                "Extreme": "Win within 6 turns"
+              }
+            },
+            {
+              "name": "Head-on Action",
+              "conditions": {
+                "Normal": "No more than 4 skilled mercenaries destroyed at the time of victory",
+                "Hard": "No more than 3 skilled mercenaries destroyed at the time of victory",
+                "Extreme": "No more than 2 skilled mercenaries destroyed at the time of victory"
+              }
+            },
+            {
+              "name": "Safe and Sound",
+              "conditions": {
+                "Normal": "All of your team members survive",
+                "Hard": "All of your team members survive",
+                "Extreme": "All of your team members survive"
+              }
+            }
+          ],
+          "extreme_modifiers": [
+            {
+              "name": "Heavy Burden",
+              "difficulty": "Extreme",
+              "description": "[Enemy] Whenever an ally is defeated, DMG Dealt +30%. Stacks up to 7 times. Non-Dispellable."
+            }
+          ],
+          "clues": [
+            {
+              "name": "Crimson Mask",
+              "subtitle": "This is his lifelong curse.",
+              "text": "A dark red mask of heat-resistant alloy bears battle scars and smoke marks, gleaming with an enigmatic sheen. Its integrated filter and breath support system not only purges toxic fumes but enhances daily respiratory function. This permanent fixture is purpose-built for lifelong wear, a common sight among fire-zone survivors with damaged lungs."
+            },
+            {
+              "name": "Matches",
+              "subtitle": "The pungent smell of sulfur... Ah... That is the smell of life...",
+              "text": "All-natural wooden matches with sulfur-coated heads and a slightly rough surface for easy ignition through friction. Despite careful preservation by the owner, some of the matches have lost their effectiveness due to being damp for several decades. Despite this, they are silent reminders of their past significance—offering crucial warmth to a child on a cold desert night."
+            },
+            {
+              "name": "Iron Eye Mask",
+              "subtitle": "A mark of defeat, yet no shame mars his honor.",
+              "text": "A titanium alloy eye patch covers Blazetrudge's left eye—purely for intimidation. The scar beneath marks his first clash with Grimbite, who breached the fire curtain to land a devastating strike, even before their ST battles began. Rather than opt for a sleek prosthetic, Blazetrudge chose this metal patch to strike fear into his foes."
+            }
+          ]
         },
         {
           "slot": 2,
@@ -1841,7 +5118,162 @@ window.BossesData = {
               "arm": 32589,
               "legs": 38934
             }
-          }
+          },
+          "title": "Incessant Whizzing",
+          "skills": [
+            {
+              "name": "Undying",
+              "type": "Talent",
+              "icon": "Icon_skill_talent_5125",
+              "description": "At end of action, if possessing [Counter Field], inflicts [Suppression] on all enemies, lasting for 1 turn.",
+              "buffs": [
+                {
+                  "name": "Counter Field",
+                  "description": "Stacks up to 3 times. After taking damage from active or Link Attacks, 1 stack is removed. After combat, for each stack removed, deals [Fixed DMG] equal to 1x the attacker's Weapon ATK to all enemies within 1 ring, up to 3x.",
+                  "tags": [
+                    "Non-Dispellable",
+                    "Non-Replicable"
+                  ]
+                },
+                {
+                  "name": "Suppression",
+                  "description": "AP Cap becomes 2.",
+                  "tags": [
+                    "Non-Dispellable",
+                    "Non-Replicable"
+                  ]
+                }
+              ],
+              "kind": "passive"
+            },
+            {
+              "name": "Bait Combo",
+              "type": "Active",
+              "icon": "Icon_skill_main_1128",
+              "cost": "3AP",
+              "weapon": "SR",
+              "description": "Uses a Sniper Rifle to shoot a target 2 times, with each shot dealing 1x DMG. The first shot hits the part with the lowest HP, while the second shot hits a random part. If the target has destroyed parts, DMG Dealt +100%. After combat, applies [Decoy] to the target hit.",
+              "buffs": [
+                {
+                  "name": "Decoy",
+                  "description": "At end of action, all parts take [Fixed DMG] equal to 12% of Max HP. When actively attacking, applies [Decoy] to all units engaging in a Link Attack after combat.",
+                  "tags": [
+                    "Non-Dispellable",
+                    "Non-Replicable"
+                  ]
+                }
+              ],
+              "kind": "active"
+            },
+            {
+              "name": "Penetrating Sniper",
+              "type": "Code",
+              "icon": "Icon_skill_order_1108",
+              "cost": "3AP",
+              "cd": "1Turn(s)",
+              "description": "Enters [Aiming] Mode. Uses a Sniper Rifle to attack all targets in a 1x4-tile line ahead, dealing 1x DMG to the same part of each target.",
+              "kind": "active"
+            },
+            {
+              "name": "Know the Way",
+              "type": "Passive",
+              "icon": "Icon_skill_passive_2121",
+              "description": "At start of action, if Thunderbolt Elite is alive, gains 1 stack of [Know the Way]. When Thunderbolt Elite is destroyed, removes [Know the Way].",
+              "buffs": [
+                {
+                  "name": "Know the Way",
+                  "description": "DMG Dealt +15%, DMG Taken -10%. Stacks up to 8 times.",
+                  "tags": [
+                    "Non-Dispellable",
+                    "Non-Replicable"
+                  ]
+                }
+              ],
+              "kind": "passive"
+            }
+          ],
+          "description": "Time has taken everything beautiful from Roarlash, yet he refuses to surrender.",
+          "bounties": [
+            {
+              "name": "Quick Resolution",
+              "conditions": {
+                "Normal": "Win within 6 turns",
+                "Hard": "Win within 6 turns",
+                "Extreme": "Win within 6 turns"
+              }
+            },
+            {
+              "name": "Marked for Sale",
+              "conditions": {
+                "Normal": "[Know the Way] never stacks higher than 3",
+                "Hard": "[Know the Way] never stacks higher than 2",
+                "Extreme": "[Know the Way] never stacks higher than 2"
+              }
+            },
+            {
+              "name": "Safe and Sound",
+              "conditions": {
+                "Normal": "All of your team members survive",
+                "Hard": "All of your team members survive",
+                "Extreme": "All of your team members survive"
+              }
+            }
+          ],
+          "units": [
+            {
+              "name": "Thunderbolt Elite",
+              "skills": [
+                {
+                  "name": "Tenacity",
+                  "type": "Talent",
+                  "icon": "Icon_skill_passive_1128",
+                  "description": "At the start of each turn, gains 3 stacks of [Emergency Guard], and grants 3 stacks of [Counter Field] to Roarlash.",
+                  "buffs": [
+                    {
+                      "name": "Emergency Guard",
+                      "description": "Protects allies within 2 adjacent tiles from Assault and Ranged attacks. Stacks up to 3 times. One stack is removed after taking damage from either active or Link Attacks.",
+                      "tags": [
+                        "Non-Dispellable",
+                        "Non-Replicable"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Strengthened Shot",
+                  "type": "Active",
+                  "icon": "Icon_skill_main_2103",
+                  "cost": "2AP",
+                  "weapon": "MG",
+                  "description": "Uses a Machine Gun to attack a target, dealing 1x DMG. Gains [DMG Taken Down I], lasting for 2 turns."
+                }
+              ]
+            }
+          ],
+          "extreme_modifiers": [
+            {
+              "name": "Aim Block",
+              "difficulty": "Extreme",
+              "description": "[Enemy] When there are no enemies within 1 adjacent tile, DMG Taken -50%. Non-Dispellable."
+            }
+          ],
+          "clues": [
+            {
+              "name": "Old Photo",
+              "subtitle": "No use dwelling on the past.",
+              "text": "A time-worn photo with a yellow tint and intricate textures displays a faint image of a team, labeled \"█ 10th Mobile Squad\" on the back. For decades, it lay forgotten in an equipment compartment."
+            },
+            {
+              "name": "Compass",
+              "subtitle": "As Earth spins onward, this device guides the way.",
+              "text": "The transparent casing shows hairline cracks, yet the crimson needle remains true north. Though radar dominates ST warfare and soldiers rarely pack compasses anymore, this warrior of yesteryear keeps faith in this classic navigation tool to light his path."
+            },
+            {
+              "name": "Tactical Goggles",
+              "subtitle": "The barrier stops the sandstorm, but truth finds a way.",
+              "text": "A retro glass-made Tactical Goggles boasts superior durability and scratch resistance, though its hefty weight led to replacement by modern plastics. While piloting an ST, these vintage specs proved surprisingly effective at blocking intense flashes from railguns and similar weapons, enhancing targeting precision. Sadly, these classic goggles are no longer in circulation."
+            }
+          ]
         },
         {
           "slot": 3,
@@ -1869,7 +5301,144 @@ window.BossesData = {
               "arm": 33050,
               "legs": 49303
             }
-          }
+          },
+          "title": "Question & Answer",
+          "skills": [
+            {
+              "name": "Fading Snow",
+              "type": "Talent",
+              "icon": "Icon_skill_talent_4110",
+              "description": "Range +1.\nWhen possessing 3 AP or more, DMG Dealt +5% and Hit Rate +5% for each 1 AP possessed, up to 45%.\nAt start of action, if total AP possessed reaches the cap, gains [Skill Enhancement].",
+              "buffs": [
+                {
+                  "name": "Skill Enhancement",
+                  "description": "Enhances active skill, increasing the damage multiplier and terrain range of [Binding Mire] and [Thunderstorm, Emerge!].",
+                  "tags": [
+                    "Non-Dispellable",
+                    "Non-Replicable"
+                  ]
+                }
+              ],
+              "kind": "passive"
+            },
+            {
+              "name": "Binding Mire",
+              "type": "Code",
+              "icon": "Icon_skill_order_1124",
+              "cost": "4AP",
+              "cd": "1Turn(s)",
+              "description": "Uses a Heavy Machine Gun to attack all targets within attack range, dealing 1x AoE DMG. Inflicts [Movement Inhibition I] on targets hit, lasting for 2 turns.",
+              "kind": "active"
+            },
+            {
+              "name": "Thunderstorm, Emerge!",
+              "type": "Code",
+              "icon": "Icon_skill_order_1010",
+              "cost": "4AP",
+              "cd": "1Turn(s)",
+              "description": "Uses a Heavy Machine Gun to attack all targets within a 1x5-tile area ahead, dealing 1x AoE DMG. Inflicts [FCS Failure] on targets hit. Applies [Electric Surge Terrain] to tiles hit, lasting for 1 turn.",
+              "buffs": [
+                {
+                  "name": "FCS Failure",
+                  "description": "Unable to use any Active Skills or Codes except for the Normal Attack.",
+                  "tags": [
+                    "Non-Replicable"
+                  ]
+                }
+              ],
+              "kind": "active"
+            }
+          ],
+          "description": "Beneath Mirestomp’s smile lies hatred, and buried deeper still is a willingness to compromise.",
+          "bounties": [
+            {
+              "name": "Quick Resolution",
+              "conditions": {
+                "Normal": "Win within 7 turns",
+                "Hard": "Win within 6 turns",
+                "Extreme": "Win within 6 turns"
+              }
+            },
+            {
+              "name": "Piece of Cake",
+              "conditions": {
+                "Normal": "Destroy at least 1 Support ST at the time of victory",
+                "Hard": "At least 1 Support ST must be activated at the time of victory",
+                "Extreme": "2 Support STs have been activated at the time of victory"
+              }
+            },
+            {
+              "name": "Safe and Sound",
+              "conditions": {
+                "Normal": "All of your team members survive",
+                "Hard": "All of your team members survive",
+                "Extreme": "All of your team members survive"
+              }
+            }
+          ],
+          "units": [
+            {
+              "name": "Support ST",
+              "skills": [
+                {
+                  "name": "Supporting Duty",
+                  "type": "Talent",
+                  "icon": "Icon_skill_talent_5135",
+                  "description": "At the start of the battle, gains [Pending]. Lasts until awakened by the Caller Drone.\nAt end of action, if possessing [Pending], Mirestomp restores 1 AP. Otherwise, she restores 4 AP.\nIf not possessing [Pending], gains [Powerful Assist].",
+                  "buffs": [
+                    {
+                      "name": "Pending",
+                      "description": "Unable to take action. Can be awakened by the Signal Drone.",
+                      "tags": [
+                        "Non-Dispellable",
+                        "Non-Replicable"
+                      ]
+                    },
+                    {
+                      "name": "Powerful Assist",
+                      "description": "Mirestomp and all Support STs gain DMG +35% and DMG Taken -35%. Stacks up to 2 times.",
+                      "tags": [
+                        "Non-Dispellable",
+                        "Non-Replicable"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Final Bombardment",
+                  "type": "Code",
+                  "icon": "Icon_skill_order_1118",
+                  "cost": "3AP",
+                  "cd": "0Turn(s)",
+                  "description": "Uses a Rocket Launcher to attack a random target and its allies within 2 adjacent tiles, dealing a total of 8x AoE DMG, shared among all targets."
+                }
+              ]
+            }
+          ],
+          "extreme_modifiers": [
+            {
+              "name": "Transmission Failure",
+              "difficulty": "Extreme",
+              "description": "[Ally] Before actively attacking, for every 1 tile moved, DMG -10%, down to -40%. Non-dispellable."
+            }
+          ],
+          "clues": [
+            {
+              "name": "Snowflake Pendant",
+              "subtitle": "A cheap metal accessory",
+              "text": "A hexagonal snowflake ornament of aluminum alloy, worn long enough for scratches to mimic corrosion on its surface. On Milkhama, where snow rarely falls, this discontinued piece became a collector's item years ago. Though the givers now rest beneath \"The Great Snow,\" their hopeful wishes live on in the girl's cherished memories."
+            },
+            {
+              "name": "Sedative",
+              "subtitle": "It disrupts consciousness—exactly what she needs.",
+              "text": "A quick-relief sleep aid with a 6-hour half-life. While it fights anxiety and seizures, side effects include drowsiness, mood swings, and sluggish reactions. The real danger? Addiction. Quitting brings withdrawal from manic episodes to crushing depression. She knows all this, but can't break free from its grasp."
+            },
+            {
+              "name": "Casket",
+              "subtitle": "The addiction of collecting only grows stronger, like an endless cycle of hatred.",
+              "text": "A battered aluminum box rattles and clanks, bearing the scars of countless battles. Inside lies a stack of military badges, trophies claimed from Dawnstar League soldiers. The collector awaits the perfect moment to add a Roarlash badge to her prized collection."
+            }
+          ]
         },
         {
           "slot": 4,
@@ -1897,7 +5466,68 @@ window.BossesData = {
               "arm": 21503,
               "legs": 26138
             }
-          }
+          },
+          "title": "Invincible",
+          "skills": [
+            {
+              "name": "Floating Fortress",
+              "type": "Talent",
+              "icon": "Icon_skill_talent_5130",
+              "description": "After a part is destroyed, automatically repairs before taking action in the next turn. After executing a skill, can trigger [Re-ATK].\nWhen Legs are undestroyed, Melee Weapons can only attack the Legs. After Legs are destroyed, Melee DMG Taken +10%.\nDoes not trigger Burning or Mine-style terrain effects.",
+              "kind": "passive"
+            },
+            {
+              "name": "Flame Curtain",
+              "type": "Code",
+              "icon": "Icon_skill_order_1008",
+              "cost": "3AP",
+              "cd": "1Turn(s)",
+              "description": "Uses a Rocket Launcher to attack all targets within a 3x3-tile area, dealing 0.25x DMG to all parts of each target. Also, deals 10% extra DMG to units with destroyed parts.",
+              "kind": "active"
+            },
+            {
+              "name": "Muffled Thunder",
+              "type": "Code",
+              "icon": "Icon_skill_order_1109",
+              "cost": "4AP",
+              "cd": "0Turn(s)",
+              "description": "Uses a Rail Gun to attack all targets within a 2x5-tile area ahead, dealing 1x AoE DMG. If the Legs are destroyed, upgrades this skill to [Thunderstorm], and the attack range expands to a 4x5-tile area.",
+              "kind": "active"
+            },
+            {
+              "name": "Thunderstorm",
+              "type": "Code",
+              "cost": "4AP",
+              "cd": "0Turn(s)",
+              "description": "Uses a Rail Gun to attack all targets within a 4x5-tile area ahead, dealing 1x AoE DMG.",
+              "kind": "active"
+            },
+            {
+              "name": "Battle Ghost",
+              "type": "Passive",
+              "icon": "Icon_skill_passive_1139",
+              "description": "For every 1% of HP lost, gains 1 stack of [Decision]. Stacks up to 80 times. Upon exceeding 30 stacks, Crit Rate +30%. Upon exceeding 60 stacks, Hit Rate +60%. Upon exceeding 80 stacks, DMG Dealt +30%.",
+              "buffs": [
+                {
+                  "name": "Decision",
+                  "description": "For every 1% of HP lost, gains 1 stack of [Decision]. Stacks up to 80 times. Upon exceeding 30 stacks, Crit Rate +30%. Upon exceeding 60 stacks, Hit Rate +60%. Upon exceeding 80 stacks, DMG Dealt +30%.",
+                  "tags": [
+                    "Non-Dispellable",
+                    "Non-Replicable"
+                  ]
+                }
+              ],
+              "kind": "passive"
+            }
+          ],
+          "description": "Greatness may lead to death, but Grimbite’s power transcends it.",
+          "extreme_modifiers": [
+            {
+              "name": "Mass Hysteria",
+              "difficulty": "Extreme",
+              "description": "[All] When executing an AoE Attack, for each additional target hit, DMG +25%, up to 125%."
+            }
+          ]
         }
       ]
     },
@@ -1920,7 +5550,99 @@ window.BossesData = {
               "arm": 15127,
               "legs": 22612
             }
-          }
+          },
+          "title": "Avenging Guardian",
+          "skills": [
+            {
+              "name": "Fully Armed",
+              "type": "Talent",
+              "icon": "Icon_skill_talent_4104",
+              "description": "When HP is below 50%, triggers [Reload Core]. Can trigger 1 time.",
+              "buffs": [
+                {
+                  "name": "Reload Core",
+                  "description": "Gains 6 AP and Hit Rate +30%. All parts, except for the Body, recover 100% HP.",
+                  "tags": [
+                    "Non-Dispellable",
+                    "Non-Replicable"
+                  ]
+                }
+              ],
+              "kind": "passive"
+            },
+            {
+              "name": "Massive Gunfire",
+              "type": "Active",
+              "icon": "Icon_skill_main_1131",
+              "cost": "6AP",
+              "weapon": "HMG",
+              "description": "Uses a Heavy Machine Gun to attack a target, dealing 6x DMG. After combat, inflicts [Timidity I] on the target hit, lasting for 1 turn.",
+              "buffs": [
+                {
+                  "name": "Timidity I",
+                  "description": "AP Cost +1 for Normal Attacks, Skills, and Codes. Each stack is independent and does not accumulate. It is removed once activated",
+                  "tags": [
+                    "Non-Replicable"
+                  ]
+                }
+              ],
+              "kind": "active"
+            },
+            {
+              "name": "Polyenergy Bombardment",
+              "type": "Code",
+              "icon": "Icon_skill_order_1003",
+              "cost": "1AP",
+              "cd": "0Turn(s)",
+              "description": "Uses a Rocket Launcher to attack all targets within a 3x3-tile area, dealing 0.25x AoE DMG to all parts of each target. Restores 1 AP for each target within attack range.",
+              "kind": "active"
+            },
+            {
+              "name": "Shrapnel Offset",
+              "type": "Passive",
+              "icon": "Icon_skill_passive_2110",
+              "description": "Significantly increases Armor.\nWhen attacked, becomes immune to all damage below 70.",
+              "kind": "passive"
+            }
+          ],
+          "description": "After the destruction of the Iguana Mercenaries, Castilla had been looking for an opportunity to counterattack Belsuth, and now Crotti has extended her hand to him.",
+          "bounties": [
+            {
+              "name": "Quick Resolution",
+              "conditions": {
+                "Normal": "Win within 6 turns"
+              }
+            },
+            {
+              "name": "Rocket Evasion",
+              "conditions": {
+                "Normal": "Castilla’s rockets hit fewer than 3 units"
+              }
+            },
+            {
+              "name": "Safe and Sound",
+              "conditions": {
+                "Normal": "All of your team members survive"
+              }
+            }
+          ],
+          "clues": [
+            {
+              "name": "SDF ID Card",
+              "subtitle": "A document revealing his former identity",
+              "text": "The ID Card shows a standard rectangular shape, its edges worn and corners slightly curled from frequent handling—a well-preserved memento. Behind the protective plastic window, a slightly faded photo reveals Castilla with a bright, energetic smile, radiating youthful vigor."
+            },
+            {
+              "name": "Warrant",
+              "subtitle": "A bounty issued by Belsuth City, the once-great Hero, now has a price on their head.",
+              "text": "A smudged wanted poster bears hasty brushstrokes that capture a once-revered figure on its rough surface. Every mark and number whispers a tale of betrayal and anguish. More than just mockery, this scrap of paper challenges everything he stood for."
+            },
+            {
+              "name": "Duty Log",
+              "subtitle": "Castilla stalks the Belsuth, chronicling every discovery.",
+              "text": "The note's well-worn cover and faded edges hint at frequent readings and deep contemplations. Its varied handwriting records the observations and emotions of a city lover, reflecting both helplessness and hope amid the city's changes."
+            }
+          ]
         },
         {
           "slot": 2,
@@ -1936,7 +5658,99 @@ window.BossesData = {
               "arm": 22820,
               "legs": 20389
             }
-          }
+          },
+          "title": "Drink Till Doomsday",
+          "skills": [
+            {
+              "name": "Call For Off-Field Support!",
+              "type": "Talent",
+              "icon": "Icon_skill_talent_1105",
+              "description": "At start of action, guides rockets to bombard all targets within 2 rings, dealing 10,000 [Fixed DMG] to each part. After combat, inflicts [Maneuver Failure] on targets hit, lasting for 1 turn.",
+              "buffs": [
+                {
+                  "name": "Maneuver Failure",
+                  "description": "Movement -2. Cannot [Guard].",
+                  "tags": [
+                    "Non-Replicable"
+                  ]
+                }
+              ],
+              "kind": "passive"
+            },
+            {
+              "name": "Destructive Slam",
+              "type": "Active",
+              "icon": "Icon_skill_main_1101",
+              "cost": "0AP",
+              "weapon": "PB",
+              "description": "Uses a Pile Bunker to attack a target, dealing 1.2x DMG and ignoring the Large Shield [Target Shift] effect. This attack targets the part with the lowest HP.",
+              "kind": "active"
+            },
+            {
+              "name": "Attack Ban",
+              "type": "Active",
+              "icon": "Icon_skill_main_1141",
+              "cost": "0AP",
+              "weapon": "SG",
+              "description": "Uses a Shotgun to attack a target, dealing 1.3x DMG. After combat, inflicts [Attack Ban] on targets hit, lasting for 1 turn.",
+              "buffs": [
+                {
+                  "name": "Attack Ban",
+                  "description": "Unable to use Normal Attacks, Active Skills, or Codes.",
+                  "tags": [
+                    "Non-Dispellable",
+                    "Non-Replicable"
+                  ]
+                }
+              ],
+              "kind": "active"
+            },
+            {
+              "name": "Chain Reaction",
+              "type": "Passive",
+              "icon": "Icon_skill_passive_5011",
+              "description": "When initiating combat, if there are allies within 2 adjacent tiles, triggers [Re-Act]. Can trigger only 1 time per turn.",
+              "kind": "passive"
+            }
+          ],
+          "description": "No matter how many bottles he gets through, to Mann, the world seems lifeless, empty. He’s made up his mind to change it.",
+          "bounties": [
+            {
+              "name": "Quick Resolution",
+              "conditions": {
+                "Normal": "Win within 6 turns"
+              }
+            },
+            {
+              "name": "Stop Moving Again",
+              "conditions": {
+                "Normal": "Mann has not triggered [Re-Act]"
+              }
+            },
+            {
+              "name": "Safe and Sound",
+              "conditions": {
+                "Normal": "All of your team members survive"
+              }
+            }
+          ],
+          "clues": [
+            {
+              "name": "Silver-Plated Flask",
+              "subtitle": "Yesterday brought Brandy, today brings Rum... tomorrow? Let's wing it!",
+              "text": "The flask boasts intricate silver-plating craftsmanship, blending classical and modern design. Its slender, curved form and smooth surface reflect years of use. The faint scratches on the bottle stopper hint at countless whispered moments of temporary escape, adding character."
+            },
+            {
+              "name": "Talisman",
+              "subtitle": "A worn talisman from his hometown",
+              "text": "This talisman, a weathered metal or wooden disc, exudes an ancient aura. Its wear and marks bear the history of numerous hands. Each scratch and abrasion holds a story of belief, nostalgia, or an enduring fixation on the past. Every touch evokes the image of its owner lost in thought, habitually rubbing it."
+            },
+            {
+              "name": "Sunglasses",
+              "subtitle": "Shades are awesome, perfect for rocking that cool look while keeping your gaze mysterious",
+              "text": "The sunglasses flaunt trendy brown lenses and a sleek metal frame, blending vintage and modern styles. The slightly tilted lens exudes a cool, mysterious vibe. Each scratch tells an untold story, capturing moments of keen observation while evading the world's scrutiny."
+            }
+          ]
         },
         {
           "slot": 3,
@@ -1952,7 +5766,42 @@ window.BossesData = {
               "arm": 34535,
               "legs": 41259
             }
-          }
+          },
+          "title": "Attack of the Dead",
+          "skills": [
+            {
+              "name": "Immediate Obedience",
+              "type": "Talent",
+              "icon": "Icon_skill_talent_5120",
+              "description": "All ally attacks inflict 1 random debuff after combat for every 7 hits on their targets. Lasts for 2 turns.",
+              "kind": "passive"
+            },
+            {
+              "name": "Discipline",
+              "type": "Code",
+              "cost": "0AP",
+              "cd": "1Turn(s)",
+              "description": "Uses 2 Machine Guns to attack all targets within a 3x3-tile area ahead, dealing 0.65x AoE DMG 2 times.",
+              "kind": "active"
+            },
+            {
+              "name": "Full Repair",
+              "type": "Code",
+              "icon": "Icon_skill_order_3112",
+              "cost": "0AP",
+              "cd": "2Turn(s)",
+              "description": "Restores HP equal to 2x Manipulator Repair AMT to all parts. Can repair all destroyed parts. After executing repairs, triggers [Re-Act].",
+              "kind": "active"
+            },
+            {
+              "name": "March of the Charge",
+              "type": "Passive",
+              "icon": "Icon_skill_passive_1132",
+              "description": "For each 1 debuff the enemy team is afflicted with, DMG Dealt +5%, Repair AMT +5%, and DMG Taken -5%.\nWhen actively attacking or retaliating, if the target has 2 or more debuffs, destroys 1 random part of the target after combat.",
+              "kind": "passive"
+            }
+          ],
+          "description": "Now is the moment of the final assault, and Crotti has already prepared."
         }
       ]
     }

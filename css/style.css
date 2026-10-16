@@ -3587,6 +3587,37 @@ a.material-item:hover .material-icon-wrap {
 .boss-gear { align-items: center; }
 .boss-gear-label { font-size: 0.8rem; font-weight: 600; color: #cbd5e1; margin-right: 0.25rem; }
 
+.boss-group-head h3 a { color: inherit; text-decoration: underline; text-decoration-color: #e94560; }
+.boss-stage { margin-bottom: 1rem; }
+.boss-stage .boss-card { height: auto; }
+.boss-skill[hidden] { display: none; }
+.boss-skill .skill-name-row { margin-bottom: 0; }
+.boss-skill .talent-desc { margin-top: 0.4rem; font-size: 0.9rem; }
+.boss-skill-diffs { font-size: 0.7rem; color: #ffcf5c; }
+.boss-skill-meta { font-size: 0.75rem; color: #8a8aa0; }
+.boss-skill-icon { width: 32px; height: 32px; border-radius: 6px; }
+.boss-term { color: #ffcf5c; }
+.boss-buff {
+  margin-top: 0.5rem;
+  padding: 0.4rem 0.6rem;
+  border-left: 2px solid #3a3a5a;
+  font-size: 0.85rem;
+  color: #b0b0c8;
+}
+.boss-buff-name { font-weight: 600; color: #e0e0f0; margin-right: 0.5rem; }
+.boss-buff-tags { font-size: 0.7rem; color: #8a8aa0; }
+.boss-stage-info { margin-bottom: 0.5rem; }
+.boss-stage-info .boss-sub-head { margin-top: 0.5rem; }
+.boss-stage-title { color: #b0b0c8; font-size: 0.9rem; }
+.boss-stage-title b { color: #ffffff; }
+.boss-sub-head { margin: 0.75rem 0 0.35rem; text-shadow: 0 1px 2px #000; font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; color: #8a8aa0; }
+.boss-bounties { margin: 0; padding-left: 1.25rem; font-size: 0.9rem; color: #b0b0c8; }
+.boss-bounties b { color: #e0e0f0; }
+.boss-clues { margin-top: 0.75rem; padding: 0.6rem 0.7rem; background-color: #1a1a20; border: 1px solid #2a2a4a; border-radius: 8px; font-size: 0.9rem; color: #b0b0c8; }
+.boss-clues summary { cursor: pointer; color: #cbd5e1; font-weight: 600; }
+.boss-clue { margin-top: 0.5rem; }
+.boss-clue b { color: #e0e0f0; }
+
 /* Features page */
 .feat-note { margin: 0 0 0.75rem; }
 .feat-group { scroll-margin-top: 80px; }

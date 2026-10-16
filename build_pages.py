@@ -203,6 +203,18 @@ def modules():
                local_or_cdn(f'data/unlisted/mech_modules/{mod["icon"]}.png', CDN + f'skill/{quote(mod["icon"])}.png'))
 
 
+def ac_seasons():
+    data = load('data/bosses/bosses.json')
+    for season in data['armed_conquest']:
+        # "Armed Conquest season 13 (v2.5) ", then the bosses by stage on
+        # their own line (trailing space: see pilots()). Image: the last boss.
+        meta = join(f'Armed Conquest season {season["number"]}', season.get('version') and f'(v{season["version"]})')
+        names = [st['boss'] for st in season['stages']]
+        yield ('bosses', season['name'], season['name'] + ' — Armed Conquest',
+               meta + ' \nBosses and skills: ' + ', '.join(names),
+               ASSET_URL + quote(data['bosses'][names[-1]]['portrait']))
+
+
 # ── Output ────────────────────────────────────────────────────────────────────
 
 def route_titles(index_html):
@@ -302,7 +314,7 @@ def main():
             write(r, page_html(index_html, 1, label))
 
     count = 0
-    for items in (pilots, mechs, weapons, backpacks, modules):
+    for items in (pilots, mechs, weapons, backpacks, modules, ac_seasons):
         seen = {}
         for route, param, title, description, image in items():
             slug = slugify(param)

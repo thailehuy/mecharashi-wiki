@@ -73,6 +73,7 @@ $(function () {
         .map(function (w) { return w.name; });
     },
     backpacks: function () { return ((window.BackpacksData || {}).backpacks || []).map(backpackSlug); },
+    bosses:    function () { return ((window.BossesData || {}).armed_conquest || []).map(function (s) { return s.name; }); },
     modules:   function () {
       var modules = (window.ModulesData || {}).modules || {};
       return Object.keys(modules).map(function (fam) { return modules[fam].name.toLowerCase(); });
