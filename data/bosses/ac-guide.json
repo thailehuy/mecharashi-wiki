@@ -3550,6 +3550,13 @@
             "Purgatory": "All of your team members survive"
           }
         }
+      ],
+      "extreme_modifiers": [
+        {
+          "name": "Out of Reach",
+          "difficulty": "Extreme",
+          "description": "Distance for clearing [Resentment] changes from 3 tiles and beyond to 4 tiles and beyond."
+        }
       ]
     },
     {
@@ -3582,6 +3589,19 @@
             "Extreme": "All of your team members survive",
             "Purgatory": "All of your team members survive"
           }
+        }
+      ],
+      "extreme_modifiers": [
+        {
+          "name": "Shadow of Vengeance",
+          "difficulty": "Extreme",
+          "description": "Michaela Hologram inflicts [Breach Strike] on the killer after death, lasting for 1 turn. Stacks up to 10 times.",
+          "buffs": [
+            {
+              "name": "Breach Strike",
+              "description": "After actively attacking, triggers Detonation, dealing Fixed DMG equal to 5% per stack."
+            }
+          ]
         }
       ]
     },
@@ -3616,13 +3636,33 @@
             "Purgatory": "All of your team members survive"
           }
         }
+      ],
+      "extreme_modifiers": [
+        {
+          "name": "Endless Cycle",
+          "difficulty": "Extreme",
+          "description": "[Eston] redeploys immediately after being defeated. Can only trigger 1 time."
+        }
       ]
     },
     {
       "ac": 9,
       "boss": "Kaylen",
       "title": "Insatiable Desire",
-      "description": "Any treasure he has yet to obtain is a treasure he is destined to acquire."
+      "description": "Any treasure he has yet to obtain is a treasure he is destined to acquire.",
+      "extreme_modifiers": [
+        {
+          "name": "Repair Chain",
+          "difficulty": "Extreme",
+          "description": "[Enemy] After actively attacking, applies 1 stack of [Full-System Repair] to Kaylen.",
+          "buffs": [
+            {
+              "name": "Full-System Repair",
+              "description": "Repair AMT +100%."
+            }
+          ]
+        }
+      ]
     },
     {
       "ac": 10,
@@ -3654,6 +3694,19 @@
             "Extreme": "All of your team members survive",
             "Purgatory": "All of your team members survive"
           }
+        }
+      ],
+      "extreme_modifiers": [
+        {
+          "name": "Spark Combustion",
+          "difficulty": "Extreme",
+          "description": "[Ally] At the start of battle, all allies receive [Spark].",
+          "buffs": [
+            {
+              "name": "Spark",
+              "description": "At end of action, all parts take [Fixed DMG] equal to 10% of Max HP. Deals an additional 10% [Fixed DMG] for each additional ST with [Spark] on the battlefield."
+            }
+          ]
         }
       ]
     },
@@ -3688,6 +3741,13 @@
             "Purgatory": "All of your team members survive"
           }
         }
+      ],
+      "extreme_modifiers": [
+        {
+          "name": "Force Field Amplification",
+          "difficulty": "Extreme",
+          "description": "Repulsion Unit skill is enhanced to [Shock Wave - EX]."
+        }
       ]
     },
     {
@@ -3721,13 +3781,96 @@
             "Purgatory": "All of your team members survive"
           }
         }
+      ],
+      "extreme_modifiers": [
+        {
+          "name": "Acid Discharge",
+          "difficulty": "Extreme",
+          "description": "[Ally] At the start of battle, all allies gain 1 stack of [Acid II].",
+          "buffs": [
+            {
+              "name": "Acid II",
+              "tags": [
+                "Non-Dispellable"
+              ],
+              "description": "Repair AMT Received -30%, DMG Dealt -10%. Stacks up to 99 times. At end of action, for each stack of [Acid II], deals Fixed DMG equal to 10% of Max HP to all of own parts. When triggered, applies 1 stack of [Acid II] to this unit and all allies within 2 tiles."
+            }
+          ]
+        }
       ]
     },
     {
       "ac": 10,
       "boss": "Heinz",
       "title": "Echoes of Tomorrow",
-      "description": "Life is born to mend regrets."
+      "description": "Life is born to mend regrets.",
+      "extreme_modifiers": [
+        {
+          "name": "Bulwark Deployment",
+          "difficulty": "Extreme",
+          "description": "[Enemy] Leviathan gains 1 stack of [Arashi Barrier] at the start of turn.",
+          "buffs": [
+            {
+              "name": "Arashi Barrier",
+              "description": "Final DMG Taken -10%. Stacks up to 4 times."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ac": 11,
+      "boss": "Sunny",
+      "extreme_modifiers": [
+        {
+          "difficulty": "Extreme",
+          "description": "[Fixed-Point Transfer] AP Cost +1.",
+          "buffs": [
+            {
+              "name": "Fixed-Point Transfer",
+              "tags": [
+                "Code",
+                "0AP",
+                "CD 0"
+              ],
+              "description": "Can choose 1 ally unit across the entire map and swap positions with them, then triggers [Re-Act]."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ac": 11,
+      "boss": "Keller",
+      "extreme_modifiers": [
+        {
+          "name": "Global Vulnerability",
+          "difficulty": "Extreme",
+          "description": "[Ally] DMG Taken +100% during non-ally turns."
+        }
+      ]
+    },
+    {
+      "ac": 11,
+      "boss": "Aiden",
+      "extreme_modifiers": [
+        {
+          "name": "Global Interference",
+          "difficulty": "Extreme",
+          "description": "Starts with an activated Interference Beacon."
+        }
+      ]
+    },
+    {
+      "ac": 11,
+      "boss": "Gutzman",
+      "extreme_modifiers": [
+        {
+          "name": "Berserker Storm",
+          "difficulty": "Extreme",
+          "description": "[Enemy] Gutzman can trigger Full Barrage if the number of Alter-Blade Retaliations during the enemy's Action Phase is less than or equal to 4."
+        }
+      ]
     }
   ]
 }

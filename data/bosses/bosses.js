@@ -392,12 +392,25 @@ window.BossesData = {
             {
               "name": "Sinister Curtain",
               "kind": "passive",
+              "description": "When Body HP is below 50%, this unit becomes unselectable after combat.\nWhen Left Arm HP is below 50%, this unit becomes unselectable after combat.\nWhen Leg HP is below 50%, this unit becomes unselectable after combat.\nWhen Right Arm HP is below 50%, this unit becomes unselectable after combat.",
+              "buffs": [
+                {
+                  "name": "Sinister Curtain",
+                  "description": "Unselectable"
+                }
+              ],
               "icon": "Icon_skill_passive_5104"
             },
             {
               "name": "Predatorial Aid",
               "kind": "passive",
               "description": "At start of action, for each other allied ST, gains 1 stack of .\nWhen possessing , Machine Gun Bullets +2, Rail Gun Range +1, and Rail Gun can fire diagonally.",
+              "buffs": [
+                {
+                  "name": "Predatorial Aid",
+                  "description": "DMG +10%, DMG Taken -10%. Stacks up to 5 times. After being attacked, 1 stack is removed."
+                }
+              ],
               "icon": "Icon_skill_talent_5126"
             }
           ]
@@ -458,7 +471,13 @@ window.BossesData = {
             {
               "name": "Blade Flurry",
               "kind": "passive",
-              "description": "When deployed, gains 10 stacks of , reducing Applied DMG Taken by 50%.\nWhen critically hit, increases the attacker's Crit DMG by 100%. After each critical hit, Crit DMG is reduced by 10%. Resets after attacking.\nWhen possessing 5 stacks of , gains Re-Act. Can use  during Re-Act.\nWhen actively attacking, for every 1 target hit, gains 2 stacks of , stacking up to 10 times.\nImmune to [Oath], [Provocation], and ."
+              "description": "When deployed, gains 10 stacks of , reducing Applied DMG Taken by 50%.\nWhen critically hit, increases the attacker's Crit DMG by 100%. After each critical hit, Crit DMG is reduced by 10%. Resets after attacking.\nWhen possessing 5 stacks of , gains Re-Act. Can use  during Re-Act.\nWhen actively attacking, for every 1 target hit, gains 2 stacks of , stacking up to 10 times.\nImmune to [Oath], [Provocation], and .",
+              "buffs": [
+                {
+                  "name": "Blade Momentum",
+                  "description": "Applied DMG and Armor +10%. Can stack. After being critically hit, 1 stack is removed."
+                }
+              ]
             }
           ]
         },
@@ -516,6 +535,17 @@ window.BossesData = {
             {
               "name": "Bloodfire Offensive",
               "kind": "passive",
+              "description": "When the boss is present, all allied units on the battlefield can launch [Link Retaliation] with Range +2.\nAfter each retaliation, gains [Crossfire Boost].\nIf boss skill hits 2 or more targets simultaneously, triggers [Voltage Surge].",
+              "buffs": [
+                {
+                  "name": "Crossfire Boost",
+                  "description": "Each stack increases Final DMG by 10% and Weapon Range by 1. At 3 stacks, executes after combat. Removed after executing."
+                },
+                {
+                  "name": "Voltage Surge",
+                  "description": "Deals Fixed DMG equal to 10% of Max HP to enemy units within 1 tile of all units hit."
+                }
+              ],
               "difficulties": [
                 "Normal",
                 "Hard"
@@ -530,6 +560,17 @@ window.BossesData = {
             {
               "name": "Bloodfire Offensive β",
               "kind": "passive",
+              "description": "When the boss is present, all allied units on the battlefield can launch [Link Retaliation] with Range +2.\nAfter each retaliation, gains [Crossfire Boost].\nIf boss skill hits 2 or more targets simultaneously, triggers [Voltage Surge].",
+              "buffs": [
+                {
+                  "name": "Crossfire Boost",
+                  "description": "Each stack increases Final DMG by 10% and Weapon Range by 1. At 3 stacks, executes after combat. Removed after executing."
+                },
+                {
+                  "name": "Voltage Surge",
+                  "description": "Deals Fixed DMG equal to 10% of Max HP to enemy units within 1 tile of all units hit."
+                }
+              ],
               "difficulties": [
                 "Extreme",
                 "Inferno"
@@ -603,7 +644,13 @@ window.BossesData = {
             {
               "name": "Army of the North",
               "kind": "passive",
-              "description": "At start of action, if no units have , randomly inflicts  on 3 enemy units for 1 turn.\nIf unable to retaliate in combat, inflicts  on attackers after combat, lasting for 1 turn.",
+              "description": "At start of action, if no units have [Cold Seal], randomly inflicts [Cold Seal] on 3 enemy units for 1 turn.\nIf unable to retaliate in combat, inflicts [Cold Seal] on attackers after combat, lasting for 1 turn.",
+              "buffs": [
+                {
+                  "name": "Cold Seal",
+                  "description": "Prioritizes attacking the caster. DMG Taken +50%."
+                }
+              ],
               "icon": "Icon_skill_talent_5125"
             }
           ]
@@ -662,6 +709,16 @@ window.BossesData = {
               "name": "Undying",
               "kind": "passive",
               "description": "At end of action, if possessing , inflicts  on all enemies, lasting for 1 turn.",
+              "buffs": [
+                {
+                  "name": "Suppression",
+                  "description": "AP Cap becomes 2."
+                },
+                {
+                  "name": "Counter Field",
+                  "description": "Stacks up to 3 times. After taking damage from active or Link Attacks, 1 stack is removed. After combat, for each stack removed, deals [Fixed DMG] equal to 1x the attacker's Weapon ATK to all enemies within 1 ring, up to 3x."
+                }
+              ],
               "icon": "Icon_skill_talent_5125"
             }
           ]
@@ -711,7 +768,8 @@ window.BossesData = {
             },
             {
               "name": "Lethal Vigilance",
-              "kind": "passive"
+              "kind": "passive",
+              "description": "Can trigger Vigilant Shot 1 time per turn, dealing 0.5x DMG. Always hits the part with the lowest HP."
             },
             {
               "name": "Emergency Arm Repair",
@@ -722,7 +780,13 @@ window.BossesData = {
             {
               "name": "Call Reinforcements",
               "kind": "passive",
-              "description": "Each time damage is taken from an active attack, 1 corresponding ST is reinforced in the Barracks. When Body HP falls below 50% and 20% for the first time, 1 of each type of ST is instantly summoned around self.When actively attacking, applies 3 stacks of  to all allies on the battlefield.For each 1 hit taken by an ally in a single attack, Dodge Rate increases by 10%, up to 100%. Lasts until the end of this attack."
+              "description": "Each time damage is taken from an active attack, 1 corresponding ST is reinforced in the Barracks. When Body HP falls below 50% and 20% for the first time, 1 of each type of ST is instantly summoned around self.When actively attacking, applies 3 stacks of  to all allies on the battlefield.For each 1 hit taken by an ally in a single attack, Dodge Rate increases by 10%, up to 100%. Lasts until the end of this attack.",
+              "buffs": [
+                {
+                  "name": "Presence",
+                  "description": "Stacks up to 8 times. At full stacks, DMG Dealt +30%, Weapon Range +1, and Movement +2. Removed after 2 actions. If both [Presence] and [Morale] are at full stacks, DMG Dealt +50%, Final DMG Taken -50%, and gains 1 [Re-Act]."
+                }
+              ]
             }
           ]
         },
@@ -771,16 +835,47 @@ window.BossesData = {
             },
             {
               "name": "Reprisal Mandate",
-              "kind": "passive"
+              "kind": "passive",
+              "description": "When equipped with a [Machine Gun], inflicts [Weapon Inhibition] on the target hit when retaliating, lasting for 1 turn.\nWhen attacked, moves 2 tiles toward the attacker after combat. After switching weapons, this Pursuit Retaliation cannot be triggered immediately.\nWhen equipped with [Alter-Blades] and both Arms are undestroyed, upon being actively attacked, triggers [Pursuit], allowing the unit to move 3 tiles toward the attacker after combat. Uses Alter-Blades to attack all targets within a 3-tile horizontal range in front, dealing 1.0x AoE DMG and causing targets hit to lose 1 AP. After switching weapons, this Pursuit Retaliation cannot be triggered immediately.",
+              "buffs": [
+                {
+                  "name": "Underworld Godfather",
+                  "description": "Loses 1 AP."
+                },
+                {
+                  "name": "Weapon Inhibition",
+                  "description": "Cannot execute weapon skills or attack codes except for normal attacks."
+                },
+                {
+                  "name": "Blazing Resolve",
+                  "description": "DMG +20%. Stacks up to 2 times."
+                }
+              ]
             },
             {
               "name": "Emergency Arm Repair - EX",
-              "kind": "passive"
+              "kind": "passive",
+              "buffs": [
+                {
+                  "name": "Defense Disabled",
+                  "description": "Shield's Target Shift ability is nullified."
+                },
+                {
+                  "name": "Emergency Arm Repair - EX",
+                  "description": "If an Arm is destroyed, immediately restores 100% of the current Arm's HP and gains [Partial Repair] and [Defense Disabled]. If an Arm is destroyed, immediately restores 100% of the current Arm's HP and gains [Partial Repair]."
+                }
+              ]
             },
             {
               "name": "Underworld Godfather",
               "kind": "passive",
-              "description": "When equipped with a [Machine Gun] or [Shield], only takes damage from the first 2 hits of each attack, and DMG Taken is increased by 180%.\nWhen equipped with [Alter-Blades], immune to the first 2 hits of each attack.\nWithin 1 turn, after taking 2 active attacks and each time damage exceeds 5% of Max HP, switches Two-Handed Weapons.\nIf no weapon switch occurs within 1 turn, gains .\nWhen the Body first drops to 50% and 20% of Max HP, immediately gains , and DMG Dealt increases by 20%.\nWhen possessing , if holding [Alter-Blades], Skill Enhancement is set to . If holding [Machine Guns], Skill Enhancement is set to ."
+              "description": "When equipped with a [Machine Gun] or [Shield], only takes damage from the first 2 hits of each attack, and DMG Taken is increased by 180%.\nWhen equipped with [Alter-Blades], immune to the first 2 hits of each attack.\nWithin 1 turn, after taking 2 active attacks and each time damage exceeds 5% of Max HP, switches Two-Handed Weapons.\nIf no weapon switch occurs within 1 turn, gains .\nWhen the Body first drops to 50% and 20% of Max HP, immediately gains , and DMG Dealt increases by 20%.\nWhen possessing , if holding [Alter-Blades], Skill Enhancement is set to . If holding [Machine Guns], Skill Enhancement is set to .",
+              "buffs": [
+                {
+                  "name": "Blazing Resolve",
+                  "description": "DMG +20%. Stacks up to 2 times."
+                }
+              ]
             }
           ]
         }
@@ -832,7 +927,14 @@ window.BossesData = {
             },
             {
               "name": "Tactical Buffer",
-              "kind": "passive"
+              "kind": "passive",
+              "description": "For each hit received, DMG Reduction +2% after combat, up to 150%. Lasts for 2 turns.",
+              "buffs": [
+                {
+                  "name": "Cilium",
+                  "description": "DMG Taken -2%. Stacks up to 50 times. When action ends, 10 stacks are removed."
+                }
+              ]
             },
             {
               "name": "Repair Protocol",
@@ -842,6 +944,23 @@ window.BossesData = {
               "name": "Allied Enhancement - EX",
               "kind": "passive",
               "description": "At start of turn, if the Hayato is not present, summons the Hayato. If Hayato is within 5 tiles, DMG Dealt +100%."
+            }
+          ],
+          "extreme_modifiers": [
+            {
+              "difficulty": "Extreme",
+              "description": "[Fixed-Point Transfer] AP Cost +1.",
+              "buffs": [
+                {
+                  "name": "Fixed-Point Transfer",
+                  "tags": [
+                    "Code",
+                    "0AP",
+                    "CD 0"
+                  ],
+                  "description": "Can choose 1 ally unit across the entire map and swap positions with them, then triggers [Re-Act]."
+                }
+              ]
             }
           ]
         },
@@ -888,6 +1007,7 @@ window.BossesData = {
             {
               "name": "Link Storm",
               "kind": "passive",
+              "description": "Cooperates with allies to launch an Assault Weapon or Ranged Weapon [Link Attack], dealing 0.2x DMG. Can trigger only 1 time per turn.",
               "icon": "Icon_skill_passive_1139"
             },
             {
@@ -895,6 +1015,13 @@ window.BossesData = {
               "kind": "passive",
               "description": "In a single attack, gains DMG Taken -20% for each hit, up to 100%.",
               "icon": "Icon_skill_talent_2103"
+            }
+          ],
+          "extreme_modifiers": [
+            {
+              "name": "Global Vulnerability",
+              "difficulty": "Extreme",
+              "description": "[Ally] DMG Taken +100% during non-ally turns."
             }
           ]
         },
@@ -943,7 +1070,8 @@ window.BossesData = {
             },
             {
               "name": "Tactical Erosion",
-              "kind": "passive"
+              "kind": "passive",
+              "description": "After the boss takes action, if its stacks of [Bloody Echo] are greater than or equal to 4, applies 1 stack of [Crimson Mark] to all enemy units."
             },
             {
               "name": "Emergency Arm Repair",
@@ -954,7 +1082,20 @@ window.BossesData = {
             {
               "name": "Erosion Code",
               "kind": "passive",
-              "description": "When dealing damage, deals additional Fixed DMG equal to 5% of the target's Max HP after combat.\nWhen retaliating and dealing damage, inflicts 1 stack of  on the target, lasting for 2 turns."
+              "description": "When dealing damage, deals additional Fixed DMG equal to 5% of the target's Max HP after combat.\nWhen retaliating and dealing damage, inflicts 1 stack of  on the target, lasting for 2 turns.",
+              "buffs": [
+                {
+                  "name": "Crimson Mark",
+                  "description": "Fixed DMG Taken +30%. Stacks up to 10 times."
+                }
+              ]
+            }
+          ],
+          "extreme_modifiers": [
+            {
+              "name": "Global Interference",
+              "difficulty": "Extreme",
+              "description": "Starts with an activated Interference Beacon."
             }
           ]
         },
@@ -1004,6 +1145,21 @@ window.BossesData = {
             {
               "name": "Shadow Domain I",
               "kind": "passive",
+              "description": "At start of action, if the number of Alter-Blade Retaliations during the enemy's Action Phase is less than or equal to 3, fires all Missile Launcher Ammo to attack all targets. Each missile deals 1x DMG to the part hit and Splash DMG equal to 50% of this damage to other parts.\nCounts after countering with Alter-Blades.\nAdds buff if less than or equal to 3.\nApplies a mark to enemies within attack range.\nActivates a Kagemai Field aura centered on self, and also applies a mark to enemies within range.\nEmpty Mark",
+              "buffs": [
+                {
+                  "name": "Kagemai Field",
+                  "description": "When an enemy unit outside the area deals damage to Gutzman, the Applied DMG is reduced by 50%, and Gutzman gains 1 stack of [Shadow Step]."
+                },
+                {
+                  "name": "Retaliation Count",
+                  "description": "For each Retaliation during the Enemy Action Phase, Gutzman gains 1 stack of this effect."
+                },
+                {
+                  "name": "Shadow Domain",
+                  "description": "Full Barrage"
+                }
+              ],
               "difficulties": [
                 "Normal",
                 "Hard"
@@ -1018,15 +1174,43 @@ window.BossesData = {
             {
               "name": "Vengeful Heart",
               "kind": "passive",
-              "description": "After actively attacking with an Alter-Blade, gains 1 stack of . When taking extra damage from 2 tiles away, prioritizes Missile Retaliation, dealing 2x Retaliation DMG.\nBefore taking action, if possessing 3 stacks of ,  changes to . Can only trigger 1 time per turn.\nImmune to [Oath] and [Provocation]. Movement is not blocked by enemy units.\nAll Missile Attacks do not consume Ammo."
+              "description": "After actively attacking with an Alter-Blade, gains 1 stack of . When taking extra damage from 2 tiles away, prioritizes Missile Retaliation, dealing 2x Retaliation DMG.\nBefore taking action, if possessing 3 stacks of ,  changes to . Can only trigger 1 time per turn.\nImmune to [Oath] and [Provocation]. Movement is not blocked by enemy units.\nAll Missile Attacks do not consume Ammo.",
+              "buffs": [
+                {
+                  "name": "Shadow Step",
+                  "description": "Each stack increases Dodge Rate by 5% and Movement by 1, up to 3 stacks, lasting for 2 turns."
+                }
+              ]
             },
             {
               "name": "Shadow Domain II",
               "kind": "passive",
+              "description": "Applies a mark to enemies within attack range.\nAt start of action, if the number of Alter-Blade Retaliations during the enemy's Action Phase is less than or equal to 4, fires all Missile Launcher Ammo to attack all targets. Each missile deals 1x DMG to the part hit and Splash DMG equal to 50% of this damage to other parts.\nCounts after countering with Alter-Blades.\nAdds buff if less than or equal to 4.\nActivates a Kagemai Field aura centered on self, and also applies a mark to enemies within range.\nEmpty Mark",
+              "buffs": [
+                {
+                  "name": "Kagemai Field",
+                  "description": "When an enemy unit outside the area deals damage to Gutzman, the Applied DMG is reduced by 50%, and Gutzman gains 1 stack of [Shadow Step]."
+                },
+                {
+                  "name": "Retaliation Count",
+                  "description": "For each Retaliation during the Enemy Action Phase, Gutzman gains 1 stack of this effect."
+                },
+                {
+                  "name": "Shadow Domain",
+                  "description": "Full Barrage"
+                }
+              ],
               "difficulties": [
                 "Extreme",
                 "Inferno"
               ]
+            }
+          ],
+          "extreme_modifiers": [
+            {
+              "name": "Berserker Storm",
+              "difficulty": "Extreme",
+              "description": "[Enemy] Gutzman can trigger Full Barrage if the number of Alter-Blade Retaliations during the enemy's Action Phase is less than or equal to 4."
             }
           ]
         }
@@ -1091,7 +1275,13 @@ window.BossesData = {
             {
               "name": "Starburst - EX",
               "kind": "passive",
-              "description": "At the start of battle and action, grants  to all allies.\nWhen Body HP falls below 50% for the first time, gains  based on the number of units with , then removes all  stacks. After this, allies cannot gain ."
+              "description": "At the start of battle and action, grants  to all allies.\nWhen Body HP falls below 50% for the first time, gains  based on the number of units with , then removes all  stacks. After this, allies cannot gain .",
+              "buffs": [
+                {
+                  "name": "Detonate",
+                  "description": "DMG Dealt +100%. Stacks up to 4 times."
+                }
+              ]
             }
           ],
           "description": "An island that never disappoints.",
@@ -1120,6 +1310,19 @@ window.BossesData = {
                 "Extreme": "All of your team members survive",
                 "Inferno": "All of your team members survive"
               }
+            }
+          ],
+          "extreme_modifiers": [
+            {
+              "name": "Spark Combustion",
+              "difficulty": "Extreme",
+              "description": "[Ally] At the start of battle, all allies receive [Spark].",
+              "buffs": [
+                {
+                  "name": "Spark",
+                  "description": "At end of action, all parts take [Fixed DMG] equal to 10% of Max HP. Deals an additional 10% [Fixed DMG] for each additional ST with [Spark] on the battlefield."
+                }
+              ]
             }
           ]
         },
@@ -1179,7 +1382,13 @@ window.BossesData = {
             {
               "name": "Hunter's Scent",
               "kind": "passive",
-              "description": "At the start of battle, enters . After initiating combat, applies  to the target hit. At start of action, restores 5% of Max HP to all parts. Can repair destroyed parts and triggers .\nAt start of turn, the first time Overall HP is less than 50%, ends  and enters . Skills are enhanced to  and . When initiating combat, automatically uses  to launch a Flurry Strike on the target after combat and can trigger . Can only trigger 1 time per turn."
+              "description": "At the start of battle, enters . After initiating combat, applies  to the target hit. At start of action, restores 5% of Max HP to all parts. Can repair destroyed parts and triggers .\nAt start of turn, the first time Overall HP is less than 50%, ends  and enters . Skills are enhanced to  and . When initiating combat, automatically uses  to launch a Flurry Strike on the target after combat and can trigger . Can only trigger 1 time per turn.",
+              "buffs": [
+                {
+                  "name": "Prey Brand",
+                  "description": "DMG Taken +10%. Repair effect reduced by 30%."
+                }
+              ]
             }
           ],
           "description": "Death is just a means to an end.",
@@ -1208,6 +1417,13 @@ window.BossesData = {
                 "Extreme": "All of your team members survive",
                 "Inferno": "All of your team members survive"
               }
+            }
+          ],
+          "extreme_modifiers": [
+            {
+              "name": "Force Field Amplification",
+              "difficulty": "Extreme",
+              "description": "Repulsion Unit skill is enhanced to [Shock Wave - EX]."
             }
           ]
         },
@@ -1265,7 +1481,13 @@ window.BossesData = {
             {
               "name": "Disperse Acid",
               "kind": "passive",
-              "description": "When performing a normal attack or retaliating, Range +1. At the start of the battle or at start of action, randomly select an enemy that does not have  and applies 1 stack of  to it.",
+              "description": "When performing a normal attack or retaliating, Range +1. At the start of the battle or at start of action, randomly select an enemy that does not have [Acid II] and applies 1 stack of [Acid II] to it.",
+              "buffs": [
+                {
+                  "name": "Acid II",
+                  "description": "Repair AMT Received -30%, DMG Dealt -10%. Stacks up to 99 times. At end of action, for each stack of , deals Fixed DMG equal to 10% of Max HP to all of own parts. When triggered, applies 1 stack of  to this unit and all allies within 2 tiles."
+                }
+              ],
               "icon": "Icon_skill_talent_5106"
             }
           ],
@@ -1295,6 +1517,22 @@ window.BossesData = {
                 "Extreme": "All of your team members survive",
                 "Inferno": "All of your team members survive"
               }
+            }
+          ],
+          "extreme_modifiers": [
+            {
+              "name": "Acid Discharge",
+              "difficulty": "Extreme",
+              "description": "[Ally] At the start of battle, all allies gain 1 stack of [Acid II].",
+              "buffs": [
+                {
+                  "name": "Acid II",
+                  "tags": [
+                    "Non-Dispellable"
+                  ],
+                  "description": "Repair AMT Received -30%, DMG Dealt -10%. Stacks up to 99 times. At end of action, for each stack of [Acid II], deals Fixed DMG equal to 10% of Max HP to all of own parts. When triggered, applies 1 stack of [Acid II] to this unit and all allies within 2 tiles."
+                }
+              ]
             }
           ]
         },
@@ -1343,11 +1581,31 @@ window.BossesData = {
             },
             {
               "name": "Bulwark Boost",
-              "kind": "passive"
+              "kind": "passive",
+              "description": "After actively attacking and retaliating, applies 1 stack of [EMP] to the target hit.\nBefore the boss takes action, if 4 stacks of [Thunder Power] have been accumulated, all AoE strikes this turn are guaranteed to trigger [Overload].\nAfter triggering Overload, removes all [Thunder Power].",
+              "buffs": [
+                {
+                  "name": "Overload",
+                  "description": "DMG +50%, and applies to all enemies hit. Inflicts [Electric Paralysis] on all enemies hit."
+                },
+                {
+                  "name": "Turbulent Disruption",
+                  "description": "When dealing damage with an active attack, inflicts [Crash] on self after combat, lasting for 1 turn."
+                },
+                {
+                  "name": "EMP",
+                  "description": "Range -1 and Dodge Rate -10%. Can stack."
+                },
+                {
+                  "name": "Arashi Barrier",
+                  "description": "Final DMG Taken -10%. Stacks up to 4 times."
+                }
+              ]
             },
             {
               "name": "Napalm Bombing - EX",
-              "kind": "passive"
+              "kind": "passive",
+              "description": "At end of turn, executes Rocket Launcher skill."
             },
             {
               "name": "Leviathan - Liberation",
@@ -1355,7 +1613,20 @@ window.BossesData = {
               "description": "After removing its external Restraining Device, the Mobile Fortress enters its ST Form. In this form, Leviathan cannot move but can attack 2 times and can always use [Scorching Tears]. The Core gains 75% DMG Reduction, which decreases by 25% with each part destroyed. When the Legs are undestroyed, [Serrated Fang]'s Range +2."
             }
           ],
-          "description": "Life is born to mend regrets."
+          "description": "Life is born to mend regrets.",
+          "extreme_modifiers": [
+            {
+              "name": "Bulwark Deployment",
+              "difficulty": "Extreme",
+              "description": "[Enemy] Leviathan gains 1 stack of [Arashi Barrier] at the start of turn.",
+              "buffs": [
+                {
+                  "name": "Arashi Barrier",
+                  "description": "Final DMG Taken -10%. Stacks up to 4 times."
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -1417,7 +1688,18 @@ window.BossesData = {
             },
             {
               "name": "Absolute Bulwark",
-              "kind": "passive"
+              "kind": "passive",
+              "description": "At start of action, if there is an enemy unit within 1 ring, randomly applies Hunted to one enemy.\nAt start of action, if there are no enemies within 1 ring, gains 10 stacks of [Resentment].",
+              "buffs": [
+                {
+                  "name": "Collapse Effect",
+                  "description": "Movement -1. Cannot be repaired or have destroyed parts repaired. At end of action, all parts lose 25% of Max HP as [Fixed DMG]. This unit will be prioritized by Pip for attacks."
+                },
+                {
+                  "name": "EM Explosion",
+                  "description": "At end of action, all parts take Fixed DMG equal to 25% of Max HP."
+                }
+              ]
             },
             {
               "name": "Emergency Arm Repair",
@@ -1429,6 +1711,16 @@ window.BossesData = {
               "name": "Intrepid Advance I",
               "kind": "passive",
               "description": "At the start of battle, gains  and 5 stacks of .\nWhen possessing , loses 1 stack of  when actively attacked within and beyond 3 tiles.\nWhen not possessing , gains 1 stack of  after being actively attacked.\nAt the end of each turn, gains 2 stacks of .\nWhen possessing more than 5 stacks of Resentment, gains . When not possessing , clears .",
+              "buffs": [
+                {
+                  "name": "Barrier-Breaking Charge",
+                  "description": "Movement +3. Ignores unit obstruction when moving. Immune to displacement. Final DMG +50%. If a part is destroyed, triggers Re-ATK. Can trigger up to 2 times per turn."
+                },
+                {
+                  "name": "Resentment",
+                  "description": "DMG Taken -10%."
+                }
+              ],
               "difficulties": [
                 "Normal",
                 "Hard"
@@ -1438,6 +1730,16 @@ window.BossesData = {
               "name": "Intrepid Advance II",
               "kind": "passive",
               "description": "At the start of battle, gains  and 5 stacks of .\nWhen possessing , loses 1 stack of  when actively attacked within and beyond 3 tiles.\nWhen not possessing , gains 1 stack of  after being actively attacked.\nAt the end of each turn, gains 2 stacks of .\nWhen possessing more than 5 stacks of Resentment, gains . When not possessing , clears .",
+              "buffs": [
+                {
+                  "name": "Barrier-Breaking Charge",
+                  "description": "Movement +3. Ignores unit obstruction when moving. Immune to displacement. Final DMG +50%. If a part is destroyed, triggers Re-ATK. Can trigger up to 2 times per turn."
+                },
+                {
+                  "name": "Resentment",
+                  "description": "DMG Taken -10%."
+                }
+              ],
               "difficulties": [
                 "Extreme",
                 "Inferno"
@@ -1470,6 +1772,13 @@ window.BossesData = {
                 "Extreme": "All of your team members survive",
                 "Inferno": "All of your team members survive"
               }
+            }
+          ],
+          "extreme_modifiers": [
+            {
+              "name": "Out of Reach",
+              "difficulty": "Extreme",
+              "description": "Distance for clearing [Resentment] changes from 3 tiles and beyond to 4 tiles and beyond."
             }
           ]
         },
@@ -1518,7 +1827,18 @@ window.BossesData = {
             },
             {
               "name": "Phantom Step",
-              "kind": "passive"
+              "kind": "passive",
+              "description": "Grants self Quick Draw before attacking.\nAttacker buffs are sufficient.\nWhen attacked, if the attacker has fewer than 7 dispellable buffs, applies 1 stack of [Buff Failure].\nIf the attacker has fewer than 7 dispellable buffs, gains [Two-Handed Retaliation].\nIf unable to retaliate in combat, triggers [Pursuit] and moves 3 tiles toward the attacker after combat, then executes [Spinning Retaliation].",
+              "buffs": [
+                {
+                  "name": "Deletes Immunity",
+                  "description": "After triggering effect, 1 stack is removed."
+                },
+                {
+                  "name": "Nullify Buff",
+                  "description": "Immune to the next buff. One stack is removed upon triggering. Stacks up to 10 times."
+                }
+              ]
             },
             {
               "name": "Emergency Arm Repair",
@@ -1529,7 +1849,13 @@ window.BossesData = {
             {
               "name": "Phantom Disguise",
               "kind": "passive",
-              "description": "At the start of battle and after taking action, summons 3 Michaela Holograms with  within 1 tile.\nWhen actively attacked, if the attacker has 7 or more buffs, dispels 7 random dispellable buffs from the attacker after combat, up to 2 times per turn.\nWhen on the battlefield, other allies gain ."
+              "description": "At the start of battle and after taking action, summons 3 Michaela Holograms with  within 1 tile.\nWhen actively attacked, if the attacker has 7 or more buffs, dispels 7 random dispellable buffs from the attacker after combat, up to 2 times per turn.\nWhen on the battlefield, other allies gain .",
+              "buffs": [
+                {
+                  "name": "Active Dispel",
+                  "description": "When actively attacking, dispels 1 buff from the target after combat."
+                }
+              ]
             }
           ],
           "description": "She points to the distance, claiming the bravest would be the first to conquer the world.",
@@ -1558,6 +1884,19 @@ window.BossesData = {
                 "Extreme": "All of your team members survive",
                 "Inferno": "All of your team members survive"
               }
+            }
+          ],
+          "extreme_modifiers": [
+            {
+              "name": "Shadow of Vengeance",
+              "difficulty": "Extreme",
+              "description": "Michaela Hologram inflicts [Breach Strike] on the killer after death, lasting for 1 turn. Stacks up to 10 times.",
+              "buffs": [
+                {
+                  "name": "Breach Strike",
+                  "description": "After actively attacking, triggers Detonation, dealing Fixed DMG equal to 5% per stack."
+                }
+              ]
             }
           ]
         },
@@ -1613,7 +1952,13 @@ window.BossesData = {
             {
               "name": "Phosphorescent Stream",
               "kind": "passive",
-              "description": "At start of action, if on , triggers [Re-Act]. Can trigger 1 time per turn.\nAt start of action, if not on , gains .\nFor each , DMG +5%.\nGains ."
+              "description": "At start of action, if on , triggers [Re-Act]. Can trigger 1 time per turn.\nAt start of action, if not on , gains .\nFor each , DMG +5%.\nGains .",
+              "buffs": [
+                {
+                  "name": "Risk It All",
+                  "description": "After actively attacking, creates  within the strike range: Applies  and  to units remaining on this terrain, lasting for 1 turn."
+                }
+              ]
             }
           ],
           "description": "Under the sunlight, she remains as blazing as ever.",
@@ -1642,6 +1987,13 @@ window.BossesData = {
                 "Extreme": "All of your team members survive",
                 "Inferno": "All of your team members survive"
               }
+            }
+          ],
+          "extreme_modifiers": [
+            {
+              "name": "Endless Cycle",
+              "difficulty": "Extreme",
+              "description": "[Eston] redeploys immediately after being defeated. Can only trigger 1 time."
             }
           ]
         },
@@ -1686,7 +2038,14 @@ window.BossesData = {
             },
             {
               "name": "Punitive Resonance",
-              "kind": "passive"
+              "kind": "passive",
+              "description": "When actively attacked, grants the attacker [Chain], lasting for 2 turns.",
+              "buffs": [
+                {
+                  "name": "Chain",
+                  "description": "When any ally is actively attacked, takes [Fixed DMG] equal to 25% of own Max HP."
+                }
+              ]
             },
             {
               "name": "Emergency Arm Repair",
@@ -1700,7 +2059,20 @@ window.BossesData = {
               "description": "When any enemy unit is repaired, restores own HP for 10% of the total Repair AMT applied.\nAfter action starts, gains 2 stacks of , stacking up to 10 times. Triggers 1 time every 3 turns.\nEach time Link Attack DMG is taken, immediately clears 1 stack of . Each time Retaliation DMG is taken, immediately clears 2 stacks of ."
             }
           ],
-          "description": "Any treasure he has yet to obtain is a treasure he is destined to acquire."
+          "description": "Any treasure he has yet to obtain is a treasure he is destined to acquire.",
+          "extreme_modifiers": [
+            {
+              "name": "Repair Chain",
+              "difficulty": "Extreme",
+              "description": "[Enemy] After actively attacking, applies 1 stack of [Full-System Repair] to Kaylen.",
+              "buffs": [
+                {
+                  "name": "Full-System Repair",
+                  "description": "Repair AMT +100%."
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -1849,7 +2221,6 @@ window.BossesData = {
               "icon": "Icon_skill_talent_5130"
             }
           ],
-          "description": "",
           "bounties": [
             {
               "name": "Quick Resolution",
@@ -2018,6 +2389,13 @@ window.BossesData = {
               }
             }
           ],
+          "extreme_modifiers": [
+            {
+              "name": "Calibrated Interference",
+              "difficulty": "Extreme",
+              "description": "When activating [Precision Reforge], all [Collapse Damage] effects are removed and changed to removing 3 stacks of [Collapse Damage]."
+            }
+          ],
           "units": [
             {
               "name": "Crisis Repair",
@@ -2035,13 +2413,6 @@ window.BossesData = {
                   "description": "Restores HP equal to 20% of Max Part HP to all parts of a single ST. Can repair 1 destroyed part. Removes all [Collapse Damage] and gains 1 AP."
                 }
               ]
-            }
-          ],
-          "extreme_modifiers": [
-            {
-              "name": "Calibrated Interference",
-              "difficulty": "Extreme",
-              "description": "When activating [Precision Reforge], all [Collapse Damage] effects are removed and changed to removing 3 stacks of [Collapse Damage]."
             }
           ]
         },
@@ -2909,6 +3280,17 @@ window.BossesData = {
             {
               "name": "Omni-Directional Suppression",
               "kind": "passive",
+              "description": "For each debuff the enemy team is afflicted with, DMG Dealt +5%, Repair AMT +5%, and DMG Taken -5%.\nDestroys a random part.",
+              "buffs": [
+                {
+                  "name": "Inferno Hidden Buff - Check Self",
+                  "description": "Checks if self has 3 debuffs when performing action."
+                },
+                {
+                  "name": "Inferno Hidden Buff - Randomly Destroys a Part",
+                  "description": "If the target is afflicted with 3 or more debuffs, randomly destroys a part."
+                }
+              ],
               "difficulties": [
                 "Extreme",
                 "Inferno"
@@ -3303,6 +3685,13 @@ window.BossesData = {
             }
           ],
           "description": "Victoria arrives with the light of the old DL – and this time, history will not repeat itself.",
+          "extreme_modifiers": [
+            {
+              "name": "Backup Plan",
+              "difficulty": "Extreme",
+              "description": "When either Victoria or Special Ops Deputy Captain is destroyed, the other recovers full HP."
+            }
+          ],
           "units": [
             {
               "name": "Special Ops Deputy Captain",
@@ -3350,13 +3739,6 @@ window.BossesData = {
                   "description": "When actively attacked, if the attacker possesses [Blackout], removes the attacker's [Blackout] and 1 stack of [Strengthened] from self.\nWhen a single Arm is destroyed, Heavy Machine Gun Hit Rate does not decrease."
                 }
               ]
-            }
-          ],
-          "extreme_modifiers": [
-            {
-              "name": "Backup Plan",
-              "difficulty": "Extreme",
-              "description": "When either Victoria or Special Ops Deputy Captain is destroyed, the other recovers full HP."
             }
           ]
         }
@@ -3839,6 +4221,13 @@ window.BossesData = {
             }
           ],
           "description": "That’s how Milkhama works – the winner takes it all, and the loser is left with nothing. But Sámi refuses to admit it.",
+          "extreme_modifiers": [
+            {
+              "name": "Two-Handed Preparation",
+              "difficulty": "Extreme",
+              "description": "[Enemy] When vehicle is destroyed, deploys Struct."
+            }
+          ],
           "units": [
             {
               "name": "Red Palm RL – Type II",
@@ -3874,13 +4263,6 @@ window.BossesData = {
                   "description": "After using a skill, can trigger [Re-ATK] 1 time per turn. After combat or a Link Attack, applies [DMG Taken UP IV] to the target hit, lasting for 2 turns."
                 }
               ]
-            }
-          ],
-          "extreme_modifiers": [
-            {
-              "name": "Two-Handed Preparation",
-              "difficulty": "Extreme",
-              "description": "[Enemy] When vehicle is destroyed, deploys Struct."
             }
           ]
         }
@@ -4083,7 +4465,13 @@ window.BossesData = {
             {
               "name": "Disperse Acid",
               "kind": "passive",
-              "description": "When performing a normal attack or retaliating, Range +1. At the start of the battle or at start of action, randomly select an enemy that does not have  and applies 1 stack of  to it.",
+              "description": "When performing a normal attack or retaliating, Range +1. At the start of the battle or at start of action, randomly select an enemy that does not have [Acid II] and applies 1 stack of [Acid II] to it.",
+              "buffs": [
+                {
+                  "name": "Acid II",
+                  "description": "Repair AMT Received -30%, DMG Dealt -10%. Stacks up to 99 times. At end of action, for each stack of , deals Fixed DMG equal to 10% of Max HP to all of own parts. When triggered, applies 1 stack of  to this unit and all allies within 2 tiles."
+                }
+              ],
               "difficulties": [
                 "Extreme"
               ],
@@ -4766,19 +5154,6 @@ window.BossesData = {
               }
             }
           ],
-          "units": [
-            {
-              "name": "Luno Mercenary",
-              "skills": [
-                {
-                  "name": "Defeat",
-                  "type": "Passive",
-                  "icon": "Icon_skill_passive_5107",
-                  "description": "When destroyed, applies 1 stack of [Maneuvering Pursuit] to the killer: DMG +55% for each tile moved before attacking. Removed when the action ends."
-                }
-              ]
-            }
-          ],
           "extreme_modifiers": [
             {
               "name": "Final Retaliation",
@@ -4811,6 +5186,19 @@ window.BossesData = {
               "name": "Motorcycle Key",
               "subtitle": "A gateway to a new world beckons.",
               "text": "What path would Deborah have chosen without Vincenza, the motorcycle, and that fateful race? She can't say, but knows that every new start comes with its own regrets. Imperfection is reality, just like her runner-up finish... The real victory is embracing destiny's twists and turns along the way."
+            }
+          ],
+          "units": [
+            {
+              "name": "Luno Mercenary",
+              "skills": [
+                {
+                  "name": "Defeat",
+                  "type": "Passive",
+                  "icon": "Icon_skill_passive_5107",
+                  "description": "When destroyed, applies 1 stack of [Maneuvering Pursuit] to the killer: DMG +55% for each tile moved before attacking. Removed when the action ends."
+                }
+              ]
             }
           ]
         },
@@ -4894,6 +5282,13 @@ window.BossesData = {
             }
           ],
           "description": "Genovese faces the new era head-on, refusing to back down.",
+          "extreme_modifiers": [
+            {
+              "name": "Shelter",
+              "difficulty": "Extreme",
+              "description": "[Enemy] After sustaining an attack, grants DMG Taken -15% to all allies (except self). Stacks up to 5 times."
+            }
+          ],
           "units": [
             {
               "name": "Vincenza",
@@ -4940,13 +5335,6 @@ window.BossesData = {
                   ]
                 }
               ]
-            }
-          ],
-          "extreme_modifiers": [
-            {
-              "name": "Shelter",
-              "difficulty": "Extreme",
-              "description": "[Enemy] After sustaining an attack, grants DMG Taken -15% to all allies (except self). Stacks up to 5 times."
             }
           ]
         }
@@ -5219,6 +5607,30 @@ window.BossesData = {
               }
             }
           ],
+          "extreme_modifiers": [
+            {
+              "name": "Aim Block",
+              "difficulty": "Extreme",
+              "description": "[Enemy] When there are no enemies within 1 adjacent tile, DMG Taken -50%. Non-Dispellable."
+            }
+          ],
+          "clues": [
+            {
+              "name": "Old Photo",
+              "subtitle": "No use dwelling on the past.",
+              "text": "A time-worn photo with a yellow tint and intricate textures displays a faint image of a team, labeled \"█ 10th Mobile Squad\" on the back. For decades, it lay forgotten in an equipment compartment."
+            },
+            {
+              "name": "Compass",
+              "subtitle": "As Earth spins onward, this device guides the way.",
+              "text": "The transparent casing shows hairline cracks, yet the crimson needle remains true north. Though radar dominates ST warfare and soldiers rarely pack compasses anymore, this warrior of yesteryear keeps faith in this classic navigation tool to light his path."
+            },
+            {
+              "name": "Tactical Goggles",
+              "subtitle": "The barrier stops the sandstorm, but truth finds a way.",
+              "text": "A retro glass-made Tactical Goggles boasts superior durability and scratch resistance, though its hefty weight led to replacement by modern plastics. While piloting an ST, these vintage specs proved surprisingly effective at blocking intense flashes from railguns and similar weapons, enhancing targeting precision. Sadly, these classic goggles are no longer in circulation."
+            }
+          ],
           "units": [
             {
               "name": "Thunderbolt Elite",
@@ -5248,30 +5660,6 @@ window.BossesData = {
                   "description": "Uses a Machine Gun to attack a target, dealing 1x DMG. Gains [DMG Taken Down I], lasting for 2 turns."
                 }
               ]
-            }
-          ],
-          "extreme_modifiers": [
-            {
-              "name": "Aim Block",
-              "difficulty": "Extreme",
-              "description": "[Enemy] When there are no enemies within 1 adjacent tile, DMG Taken -50%. Non-Dispellable."
-            }
-          ],
-          "clues": [
-            {
-              "name": "Old Photo",
-              "subtitle": "No use dwelling on the past.",
-              "text": "A time-worn photo with a yellow tint and intricate textures displays a faint image of a team, labeled \"█ 10th Mobile Squad\" on the back. For decades, it lay forgotten in an equipment compartment."
-            },
-            {
-              "name": "Compass",
-              "subtitle": "As Earth spins onward, this device guides the way.",
-              "text": "The transparent casing shows hairline cracks, yet the crimson needle remains true north. Though radar dominates ST warfare and soldiers rarely pack compasses anymore, this warrior of yesteryear keeps faith in this classic navigation tool to light his path."
-            },
-            {
-              "name": "Tactical Goggles",
-              "subtitle": "The barrier stops the sandstorm, but truth finds a way.",
-              "text": "A retro glass-made Tactical Goggles boasts superior durability and scratch resistance, though its hefty weight led to replacement by modern plastics. While piloting an ST, these vintage specs proved surprisingly effective at blocking intense flashes from railguns and similar weapons, enhancing targeting precision. Sadly, these classic goggles are no longer in circulation."
             }
           ]
         },
@@ -5376,6 +5764,30 @@ window.BossesData = {
               }
             }
           ],
+          "extreme_modifiers": [
+            {
+              "name": "Transmission Failure",
+              "difficulty": "Extreme",
+              "description": "[Ally] Before actively attacking, for every 1 tile moved, DMG -10%, down to -40%. Non-dispellable."
+            }
+          ],
+          "clues": [
+            {
+              "name": "Snowflake Pendant",
+              "subtitle": "A cheap metal accessory",
+              "text": "A hexagonal snowflake ornament of aluminum alloy, worn long enough for scratches to mimic corrosion on its surface. On Milkhama, where snow rarely falls, this discontinued piece became a collector's item years ago. Though the givers now rest beneath \"The Great Snow,\" their hopeful wishes live on in the girl's cherished memories."
+            },
+            {
+              "name": "Sedative",
+              "subtitle": "It disrupts consciousness—exactly what she needs.",
+              "text": "A quick-relief sleep aid with a 6-hour half-life. While it fights anxiety and seizures, side effects include drowsiness, mood swings, and sluggish reactions. The real danger? Addiction. Quitting brings withdrawal from manic episodes to crushing depression. She knows all this, but can't break free from its grasp."
+            },
+            {
+              "name": "Casket",
+              "subtitle": "The addiction of collecting only grows stronger, like an endless cycle of hatred.",
+              "text": "A battered aluminum box rattles and clanks, bearing the scars of countless battles. Inside lies a stack of military badges, trophies claimed from Dawnstar League soldiers. The collector awaits the perfect moment to add a Roarlash badge to her prized collection."
+            }
+          ],
           "units": [
             {
               "name": "Support ST",
@@ -5413,30 +5825,6 @@ window.BossesData = {
                   "description": "Uses a Rocket Launcher to attack a random target and its allies within 2 adjacent tiles, dealing a total of 8x AoE DMG, shared among all targets."
                 }
               ]
-            }
-          ],
-          "extreme_modifiers": [
-            {
-              "name": "Transmission Failure",
-              "difficulty": "Extreme",
-              "description": "[Ally] Before actively attacking, for every 1 tile moved, DMG -10%, down to -40%. Non-dispellable."
-            }
-          ],
-          "clues": [
-            {
-              "name": "Snowflake Pendant",
-              "subtitle": "A cheap metal accessory",
-              "text": "A hexagonal snowflake ornament of aluminum alloy, worn long enough for scratches to mimic corrosion on its surface. On Milkhama, where snow rarely falls, this discontinued piece became a collector's item years ago. Though the givers now rest beneath \"The Great Snow,\" their hopeful wishes live on in the girl's cherished memories."
-            },
-            {
-              "name": "Sedative",
-              "subtitle": "It disrupts consciousness—exactly what she needs.",
-              "text": "A quick-relief sleep aid with a 6-hour half-life. While it fights anxiety and seizures, side effects include drowsiness, mood swings, and sluggish reactions. The real danger? Addiction. Quitting brings withdrawal from manic episodes to crushing depression. She knows all this, but can't break free from its grasp."
-            },
-            {
-              "name": "Casket",
-              "subtitle": "The addiction of collecting only grows stronger, like an endless cycle of hatred.",
-              "text": "A battered aluminum box rattles and clanks, bearing the scars of countless battles. Inside lies a stack of military badges, trophies claimed from Dawnstar League soldiers. The collector awaits the perfect moment to add a Roarlash badge to her prized collection."
             }
           ]
         },

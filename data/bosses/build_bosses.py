@@ -93,10 +93,13 @@ def ac_skills(bosses):
     Each skill: name, kind ('active' or 'passive'), description (passives in
     enemy_skills only; active skills have none in the DB) and, when the skill
     isn't on every difficulty, the difficulties it's on (e.g. a β passive on
-    Extreme and Inferno).
+    Extreme and Inferno). Passives also get their effects from enemy_buffs:
+    see passive_effects().
     """
     con = sqlite3.connect(DB)
     described = dict(con.execute("SELECT skill_id, description FROM enemy_skills WHERE description != ''"))
+    effects = passive_effects(con)
+    linked = linked_buffs(con)
     rows = con.execute('SELECT "group", stage, difficulty, boss_pilot, stage_name, main_skills, passives FROM bosses '
                        "WHERE content = 'Armed Conquest' ORDER BY rowid").fetchall()
     con.close()
@@ -111,8 +114,25 @@ def ac_skills(bosses):
                 sk = st['skills'].setdefault(sid, {'name': name, 'kind': kind, 'diffs': []})
                 sk['diffs'].append(diff)
                 desc = described.get(int(sid))
-                if desc:
+                if desc and 'effects' not in sk:   # once: the gaps get filled below
                     sk['description'] = desc.strip()
+                if kind == 'passive' and 'effects' not in sk:
+                    text, buffs = effects_for(effects.get(int(sid), []), boss)
+                    if text and not sk.get('description'):
+                        sk['description'] = text
+                        sk['composed'] = True   # a guide card replaces it (add_guide)
+                    shown = linked(int(sid))
+                    if sk.get('description'):
+                        sk['description'] = fill_holes(sk['description'], int(sid), shown)
+                    for b in shown:
+                        if b['description'] and b['name'] not in [x['name'] for x in buffs]:
+                            buffs.append({'name': b['name'], 'description': b['description']})
+                    if buffs:
+                        sk['buffs'] = buffs
+                    sk['effects'] = True
+    for st in out.values():
+        for sk in st['skills'].values():
+            sk.pop('effects', None)
     result = {}
     for key, st in out.items():
         skills = []
@@ -126,6 +146,90 @@ def ac_skills(bosses):
         skills.sort(key=lambda sk: sk['kind'] != 'active')
         result[key] = (st['boss'], st['title'], skills)
     return result
+
+
+
+def passive_effects(con):
+    """Passive skill ID -> its Armed Conquest buff rows in enemy_buffs
+    (source_ids lists "PassiveSkill <ID>"): (name, kind, units, description)."""
+    out = {}
+    rows = con.execute("SELECT name, kind, units, description, source_ids FROM enemy_buffs "
+                       "WHERE content LIKE '%Armed Conquest%' ORDER BY rowid")
+    for name, kind, units, desc, sources in rows:
+        for sid in re.findall(r'PassiveSkill (\d+)', sources or ''):
+            out.setdefault(int(sid), []).append((name, kind, set((units or '').split(', ')), (desc or '').strip()))
+    return out
+
+
+
+# Buff categories of helper buffs; buffs in any other category are the ones
+# the game shows by name (Cold Seal is "Spark", Acid II "ShortCircuit").
+HELPER_CATEGORIES = {None, '', 'None', 'PilotSetupPassiveSkill', 'EquipmentPassiveSkill'}
+# Where enemy_skills dropped a buff name from a description it left a gap:
+# "gains . At end of action, grants  to an ally."
+HOLE = re.compile(r'(?<=\S) (?=[ .,;:)\n]|$)')
+
+
+def linked_buffs(con):
+    """Passive skill ID -> the shown buffs it links to ({id, name,
+    description}), lowest ID first: buffs in its skill_effects chains,
+    link_skill_buff and enemy_buffs rows, plus its own ID range (passive
+    9824201 owns buffs 98242010-98242019)."""
+    info = {int(b): (n, c, (d or '').strip()) for b, n, c, d in
+            con.execute('SELECT buff_id, name, categories, description FROM buffs')}
+    links = {}
+    for sid, chain in con.execute("SELECT skill_id, buff_chain FROM skill_effects WHERE skill_table = 'PassiveSkillInfo'"):
+        for b in filter(None, (chain or '').split(' > ')):
+            links.setdefault(int(sid), set()).add(int(b))
+    for sid, b in con.execute("SELECT skill_id, buff_id FROM link_skill_buff WHERE skill_table = 'PassiveSkillInfo'"):
+        links.setdefault(int(sid), set()).add(int(b))
+    for b, sources in con.execute('SELECT buff_id, source_ids FROM enemy_buffs'):
+        for sid in re.findall(r'PassiveSkill (\d+)', sources or ''):
+            links.setdefault(int(sid), set()).add(int(b))
+
+    def shown(sid):
+        own = range(sid * 10, sid * 10 + 10) if sid < 10 ** 7 else ()
+        out = []
+        for b in sorted(links.get(sid, set()) | set(own)):
+            name, cat, desc = info.get(b, (None, None, ''))
+            if name and cat not in HELPER_CATEGORIES and not INTERNAL.match(name) and name not in [x['name'] for x in out]:
+                out.append({'id': b, 'name': name, 'description': '' if desc == name else desc})
+        return out
+    return shown
+
+
+def fill_holes(text, sid, shown):
+    """Fill the gaps in a passive's description, only in the one case that
+    held against the guide: the passive links exactly one shown buff and it
+    is the passive's own first buff (9824201 -> Cold Seal 98242010)."""
+    if HOLE.search(text) and len(shown) == 1 and shown[0]['id'] == sid * 10:
+        filled = HOLE.sub(' [%s]' % shown[0]['name'], text)
+        # "[X] changes to [X]": a second, unlinked buff was meant.
+        if not re.search(r'\[([^\]]+)\],? (?:changes |turns |converts )?(?:to|into) \[\1\]', filled):
+            return filled
+    return text
+
+
+# Internal buff names (helpers the game doesn't show): their text describes
+# the passive itself rather than a buff the player sees.
+INTERNAL = re.compile(r'^(?:$|Boss \d|Hidden|Passive|\(Hidden\)|.*\(Hidden\)$|.*[.]$|Adds |Grants |Before |Cleared |Counts|Link \d|'
+                      r'Applies |Attacker |Display |Restores |Boss can |(?:Body|Left Arm|Right Arm|Legs) \d+%)', re.I)
+
+
+def effects_for(rows, boss):
+    """A passive's buff rows for one boss -> (description from the internal
+    rows' text, named buffs [{name, description}])."""
+    text, named = [], {}
+    for name, kind, units, desc in rows:
+        if boss not in units or not desc or desc == name:
+            continue
+        desc = re.sub(r'^Hidden - ', '', desc)
+        if INTERNAL.match(name or '') or kind == 'mechanic' and name and desc.startswith(name):
+            if desc not in text:
+                text.append(desc)
+        elif desc not in named.setdefault(name, []):
+            named[name].append(desc)
+    return '\n'.join(text), [{'name': n, 'description': ' '.join(d)} for n, d in named.items() if d]
 
 
 # The guide's card types -> the DB's skill kinds.
@@ -163,13 +267,19 @@ def add_guide(s, st, entry, warn):
     replace the DB's (empty or buff-less) descriptions; skills the DB doesn't
     list are added, and DB skills the guide lacks are kept."""
     where = 'AC%d %s' % (s['number'], st['boss'])
-    if entry['title'].replace('’', "'").lower() != st['title'].lower():
+    # Seasons after the guide only have what was added by hand (e.g. modifiers).
+    if 'title' in entry and entry['title'].replace('’', "'").lower() != st['title'].lower():
         warn('%s: guide calls the stage "%s", DB "%s"' % (where, entry['title'], st['title']))
-    st['description'] = entry['description']
+    if entry.get('description'):
+        st['description'] = entry['description']
     if entry.get('bounties'):
         # The guide calls the fourth difficulty Purgatory.
         st['bounties'] = [dict(b, conditions={('Inferno' if d == 'Purgatory' else d): c for d, c in b['conditions'].items()})
                           for b in entry['bounties']]
+    if entry.get('extreme_modifiers'):
+        st['extreme_modifiers'] = entry['extreme_modifiers']
+    if entry.get('clues'):
+        st['clues'] = entry['clues']
     if 'skills' not in entry:
         return
     own = guide_cards([c for c in entry['skills'] if not c.get('unit')])
@@ -186,7 +296,7 @@ def add_guide(s, st, entry, warn):
         # on the copy whose numbers match it; the other keeps the DB text.
         nums = NUM.findall(g['description'])
         match = next((sk for sk in same if NUM.findall(sk.get('description', '')) == nums), same[0])
-        if match.get('description') and NUM.findall(match['description']) != nums:
+        if match.get('description') and not match.get('composed') and NUM.findall(match['description']) != nums:
             # The DB is the game data: keep its text, take the rest from the card.
             warn('%s: "%s" numbers differ: guide %s, DB %s (DB text kept)' % (where, g['name'], nums, NUM.findall(match['description'])))
             g = dict(g, description=match['description'])
@@ -208,10 +318,6 @@ def add_guide(s, st, entry, warn):
             units.setdefault(c['unit'], []).append(c)
     if units:
         st['units'] = [{'name': name, 'skills': guide_cards(cards)} for name, cards in units.items()]
-    if entry.get('extreme_modifiers'):
-        st['extreme_modifiers'] = entry['extreme_modifiers']
-    if entry.get('clues'):
-        st['clues'] = entry['clues']
 
 
 def add_icons(seasons):
@@ -307,6 +413,10 @@ def main():
     for ac_no, boss in guide:
         warnings.append('AC%d %s: in the guide but not in any season' % (ac_no, boss))
     add_icons(ac.values())
+    for s in ac.values():
+        for st in s['stages']:
+            for sk in st['skills']:
+                sk.pop('composed', None)
     for w in warnings:
         print('guide:', w)
 

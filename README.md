@@ -80,7 +80,7 @@ data/
   dmgcalc/                        # extract-bench.py → bench-data.js (BenchData) + dmgcalc/bench.js/css, from the mined Damage_Bench.html; build-icons.py → bench-icons.js (BenchIcons, dropdown icons)
   features/                       # build_features.py → features.json/js (FeaturesData, every R&D feature from the mined DB, for the Features page)
   bosses/                         # build_bosses.py → bosses.json/js (BossesData: line-ups and HP from bench-data.js, AC boss skills from the mined DB, merged with ac-guide.json)
-    ac-guide.json                 # transcribed from the Armed Conquest guide PDF (data/screenshots/mined/); build_bosses.py prints where it disagrees with the DB; skill `icon`s were matched by image from the guide's screenshots to the assets repo's pilot_skills icons (DB-only skills take a same-named card's icon)
+    ac-guide.json                 # transcribed from the Armed Conquest guide PDF (data/screenshots/mined/), plus Extreme modifiers added by hand for AC9–11; build_bosses.py prints where it disagrees with the DB; skill `icon`s were matched by image from the guide's screenshots to the assets repo's pilot_skills icons (DB-only skills take a same-named card's icon)
   rd/                             # build_rd_totals.py → rd-totals.json/js (RDTotalsData, max R&D bonuses from the mined DB, for the R&D Bonus page and DMG calculator)
   glossary.json                   # → GlossaryData
   dispatch.json                   # → dispatch table data

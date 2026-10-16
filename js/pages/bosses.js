@@ -174,7 +174,7 @@ Pages.bosses = {
         (st.extreme_modifiers ? '<div class="boss-sub-head">Extreme Modifier</div><div class="skill-list">' + st.extreme_modifiers.map(function (m) {
           return (
             '<div class="skill-card boss-skill">' +
-              '<div class="skill-name-row"><span class="skill-name">' + esc(m.name) + '</span>' +
+              '<div class="skill-name-row">' + (m.name ? '<span class="skill-name">' + esc(m.name) + '</span>' : '') +
                 (m.difficulty ? '<span class="boss-skill-diffs">' + esc(m.difficulty) + '</span>' : '') + '</div>' +
               '<div class="talent-desc">' + descHtml(m.description) + '</div>' +
               (m.buffs || []).map(buffHtml).join('') +
