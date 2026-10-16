@@ -254,7 +254,7 @@ function bossKit() {
       '<a href="' + App.href('armedconquest') + '" class="btn-back">&#8592; Back to Armed Conquest</a>' +
       '<div class="listing-header"><h1>' + esc(s.number + '. ' + s.name) + '</h1></div>' +
       '<p class="dispatch-intro">Armed Conquest season ' + s.number + (s.version ? ' (v' + esc(s.version) + ')' : '') + '. ' +
-        'Every boss\'s skills, by stage. Pick a difficulty at the top: skills only on some difficulties are marked and follow it, as do the bosses\' HP and bounties. ' +
+        'Every boss\'s skills, by stage. Pick a difficulty on the right: skills only on some difficulties are marked and follow it, as do the bosses\' HP and bounties. ' +
         (guided
           ? 'Skill cards, bounties, minions, Extreme modifiers and clues are from the Armed Conquest guide.</p>'
           : 'Active skill effects aren\'t in the game data yet, so only their names are listed.</p>') +

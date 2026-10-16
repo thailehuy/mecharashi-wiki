@@ -3618,11 +3618,12 @@ a.boss-avatar { display: block; }
 .boss-stage .boss-card { height: auto; }
 .boss-diff-float {
   position: fixed;
-  top: 4rem;
-  left: 50%;
-  transform: translateX(-50%);
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
   z-index: 100;
   display: flex;
+  flex-direction: column;
   gap: 0.25rem;
   padding: 0.4rem;
   background: rgba(15, 15, 15, 0.85);
@@ -3631,7 +3632,7 @@ a.boss-avatar { display: block; }
 }
 .boss-diff-float .filter-btn { padding: 0.2rem 0.6rem; font-size: 0.75rem; }
 @media (max-width: 575.98px) {
-  .boss-diff-float { top: auto; bottom: 1rem; }
+  .boss-diff-float { top: auto; bottom: 1rem; transform: none; flex-direction: row; }
 }
 .boss-stage-bounties { margin: 0.75rem 0 0; }
 .boss-stage-bounties .boss-sub-head { margin-top: 0; }
