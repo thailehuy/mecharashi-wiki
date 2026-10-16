@@ -1974,7 +1974,7 @@ a.material-item:hover .material-icon-wrap {
   .detail-layout {
     flex-direction: column;
     align-items: stretch;
-    gap: 0;
+    gap: 1rem;
   }
   .detail-layout > .detail-portrait-col {
     min-width: 0;
