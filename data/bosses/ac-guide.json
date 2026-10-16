@@ -216,6 +216,14 @@
       "boss": "Crotti",
       "title": "Attack of the Dead",
       "description": "Now is the moment of the final assault, and Crotti has already prepared.",
+      "bounties": [
+        {
+          "name": "Safe and Sound",
+          "conditions": {
+            "Normal": "All of your team members survive"
+          }
+        }
+      ],
       "skills": [
         {
           "card": "skill",
@@ -699,6 +707,16 @@
       "boss": "Grimbite",
       "title": "Invincible",
       "description": "Greatness may lead to death, but Grimbite’s power transcends it.",
+      "bounties": [
+        {
+          "name": "Safe and Sound",
+          "conditions": {
+            "Normal": "All of your team members survive",
+            "Hard": "All of your team members survive",
+            "Extreme": "All of your team members survive"
+          }
+        }
+      ],
       "skills": [
         {
           "card": "skill",
@@ -1110,6 +1128,16 @@
       "boss": "Genovese",
       "title": "End of the Old Days",
       "description": "Genovese faces the new era head-on, refusing to back down.",
+      "bounties": [
+        {
+          "name": "Safe and Sound",
+          "conditions": {
+            "Normal": "All of your team members survive",
+            "Hard": "All of your team members survive",
+            "Extreme": "All of your team members survive"
+          }
+        }
+      ],
       "skills": [
         {
           "card": "skill",
@@ -1589,6 +1617,16 @@
       "boss": "Alena",
       "title": "Missive From Wintry Ovett",
       "description": "Alena brought a letter from a land scarred by storm and wreckage.",
+      "bounties": [
+        {
+          "name": "Safe and Sound",
+          "conditions": {
+            "Normal": "All of your team members survive",
+            "Hard": "All of your team members survive",
+            "Extreme": "All of your team members survive"
+          }
+        }
+      ],
       "skills": [
         {
           "card": "skill",
@@ -1965,7 +2003,7 @@
           }
         },
         {
-          "name": null,
+          "name": "Bring It On",
           "conditions": {
             "Normal": "Destroy one of Keller’s parts within 5 turns",
             "Hard": "Destroy one of Keller’s parts within 4 turns",
@@ -2054,6 +2092,16 @@
       "boss": "Sámi",
       "title": "Nothing Remains",
       "description": "That’s how Milkhama works – the winner takes it all, and the loser is left with nothing. But Sámi refuses to admit it.",
+      "bounties": [
+        {
+          "name": "Safe and Sound",
+          "conditions": {
+            "Normal": "All of your team members survive",
+            "Hard": "All of your team members survive",
+            "Extreme": "All of your team members survive"
+          }
+        }
+      ],
       "skills": [
         {
           "card": "skill",
@@ -2430,6 +2478,17 @@
       "boss": "Victoria",
       "title": "The Long Night",
       "description": "Victoria arrives with the light of the old DL – and this time, history will not repeat itself.",
+      "bounties": [
+        {
+          "name": "Safe and Sound",
+          "conditions": {
+            "Normal": "All of your team members survive",
+            "Hard": "All of your team members survive",
+            "Extreme": "All of your team members survive",
+            "Purgatory": "All of your team members survive"
+          }
+        }
+      ],
       "skills": [
         {
           "card": "skill",
@@ -2924,6 +2983,17 @@
       "boss": "Ridgewald",
       "title": "Nameless Ones",
       "description": "Every moment death approaches is bathed in golden light – seize it, devour it, for it is the destiny you pursue.",
+      "bounties": [
+        {
+          "name": "Safe and Sound",
+          "conditions": {
+            "Normal": "All of your team members survive",
+            "Hard": "All of your team members survive",
+            "Extreme": "All of your team members survive",
+            "Purgatory": "All of your team members survive"
+          }
+        }
+      ],
       "skills": [
         {
           "card": "skill",
@@ -3035,7 +3105,7 @@
       "ac": 8,
       "boss": "Douglas",
       "title": "Fuse",
-      "description": "",
+      "description": "His soul is beyond redemption, instigating him not to give up any bit of profit he can covet.",
       "bounties": [
         {
           "name": "Quick Resolution",
@@ -3051,7 +3121,8 @@
           "conditions": {
             "Normal": "Douglas used [Electric Surge Terrain] no more than once",
             "Hard": "Douglas used [Electric Surge Terrain] no more than once",
-            "Extreme": "Douglas did not use [Electric Surge Terrain]"
+            "Extreme": "Douglas did not use [Electric Surge Terrain]",
+            "Purgatory": "Douglas did not use [Electric Surge Terrain]"
           }
         },
         {
@@ -3217,7 +3288,8 @@
           "conditions": {
             "Normal": "The stacks of Collapse Damage never reached 5 stacks",
             "Hard": "The stacks of Collapse Damage never reached 5 stacks",
-            "Extreme": "The stacks of Collapse Damage never reached 5 stacks"
+            "Extreme": "The stacks of Collapse Damage never reached 5 stacks",
+            "Purgatory": "The stacks of Collapse Damage never reached 5 stacks"
           }
         },
         {
@@ -3346,7 +3418,8 @@
           "conditions": {
             "Normal": "Defeat no more than 6 enemy units upon victory",
             "Hard": "Defeat no more than 4 enemy units upon victory",
-            "Extreme": "Defeat no more than 2 enemy units upon victory"
+            "Extreme": "Defeat no more than 2 enemy units upon victory",
+            "Purgatory": "Defeat no more than 2 enemy units upon victory"
           }
         },
         {
@@ -3437,6 +3510,17 @@
       "boss": "Gutzman",
       "title": "Frenzy",
       "description": "Fate will not always meet your expectations… The more you dominate, the more you lose.",
+      "bounties": [
+        {
+          "name": "Safe and Sound",
+          "conditions": {
+            "Normal": "All of your team members survive",
+            "Hard": "All of your team members survive",
+            "Extreme": "All of your team members survive",
+            "Purgatory": "All of your team members survive"
+          }
+        }
+      ],
       "skills": [
         {
           "card": "skill",
@@ -3538,7 +3622,9 @@
           "name": "Innumerable",
           "conditions": {
             "Normal": "Resentment never reaches 10 stacks",
-            "Hard": "Resentment never reaches 8 stacks"
+            "Hard": "Resentment never reaches 8 stacks",
+            "Extreme": "Resentment never reaches 7 stacks",
+            "Purgatory": "Resentment never reaches 6 stacks"
           }
         },
         {
@@ -3660,7 +3746,9 @@
           "name": "Cautiously",
           "conditions": {
             "Normal": "Michaela doesn’t trigger Maelstrom",
-            "Hard": "Michaela doesn’t trigger Maelstrom"
+            "Hard": "Michaela doesn’t trigger Maelstrom",
+            "Extreme": "Michaela doesn’t trigger Maelstrom",
+            "Purgatory": "Michaela doesn’t trigger Maelstrom"
           }
         },
         {
@@ -3827,7 +3915,9 @@
           "name": "No Smoking",
           "conditions": {
             "Normal": "Whie Flame enters Mist terrain no more than 2 times",
-            "Hard": "Whie Flame enters Mist terrain no more than 2 times"
+            "Hard": "Whie Flame enters Mist terrain no more than 2 times",
+            "Extreme": "Whie Flame enters Mist terrain no more than 2 times",
+            "Purgatory": "Whie Flame enters Mist terrain no more than 2 times"
           }
         },
         {
@@ -3940,6 +4030,17 @@
       "boss": "Kaylen",
       "title": "Insatiable Desire",
       "description": "Any treasure he has yet to obtain is a treasure he is destined to acquire.",
+      "bounties": [
+        {
+          "name": "Safe and Sound",
+          "conditions": {
+            "Normal": "All of your team members survive",
+            "Hard": "All of your team members survive",
+            "Extreme": "All of your team members survive",
+            "Purgatory": "All of your team members survive"
+          }
+        }
+      ],
       "skills": [
         {
           "card": "skill",
@@ -4036,7 +4137,9 @@
           "name": "No Smoking",
           "conditions": {
             "Normal": "Blazetrudge’s Detonation does not exceed 2 stacks",
-            "Hard": "Blazetrudge’s Detonation does not exceed 2 stacks"
+            "Hard": "Blazetrudge’s Detonation does not exceed 2 stacks",
+            "Extreme": "Blazetrudge’s Detonation does not exceed 2 stacks",
+            "Purgatory": "Blazetrudge’s Detonation does not exceed 2 stacks"
           }
         },
         {
@@ -4082,7 +4185,9 @@
           "name": "Overwhelmed",
           "conditions": {
             "Normal": "Skysweep triggers Emergency Arm Repair",
-            "Hard": "Skysweep triggers Emergency Arm Repair"
+            "Hard": "Skysweep triggers Emergency Arm Repair",
+            "Extreme": "Skysweep triggers Emergency Arm Repair",
+            "Purgatory": "Skysweep triggers Emergency Arm Repair"
           }
         },
         {
@@ -4122,7 +4227,9 @@
           "name": "Innumerable",
           "conditions": {
             "Normal": "Defeat no more than 5 enemy units, excluding Liliya",
-            "Hard": "Defeat no more than 4 enemy units, excluding Liliya"
+            "Hard": "Defeat no more than 4 enemy units, excluding Liliya",
+            "Extreme": "Defeat no more than 3 enemy units, excluding Liliya",
+            "Purgatory": "Defeat no more than 2 enemy units, excluding Liliya"
           }
         },
         {
@@ -4157,6 +4264,17 @@
       "boss": "Heinz",
       "title": "Echoes of Tomorrow",
       "description": "Life is born to mend regrets.",
+      "bounties": [
+        {
+          "name": "Safe and Sound",
+          "conditions": {
+            "Normal": "All of your team members survive",
+            "Hard": "All of your team members survive",
+            "Extreme": "All of your team members survive",
+            "Purgatory": "All of your team members survive"
+          }
+        }
+      ],
       "extreme_modifiers": [
         {
           "name": "Bulwark Deployment",
@@ -4174,6 +4292,36 @@
     {
       "ac": 11,
       "boss": "Sunny",
+      "description": "Another drink – sometimes it requires careful consideration.",
+      "bounties": [
+        {
+          "name": "Quick Resolution",
+          "conditions": {
+            "Normal": "Win within 6 turns",
+            "Hard": "Win within 6 turns",
+            "Extreme": "Win within 6 turns",
+            "Purgatory": "Win within 6 turns"
+          }
+        },
+        {
+          "name": "Lossless",
+          "conditions": {
+            "Normal": "All of your team's parts are undestroyed at the time of victory",
+            "Hard": "All of your team's parts are undestroyed at the time of victory",
+            "Extreme": "All of your team's parts are undestroyed at the time of victory",
+            "Purgatory": "All of your team's parts are undestroyed at the time of victory"
+          }
+        },
+        {
+          "name": "Safe and Sound",
+          "conditions": {
+            "Normal": "All of your team members survive",
+            "Hard": "All of your team members survive",
+            "Extreme": "All of your team members survive",
+            "Purgatory": "All of your team members survive"
+          }
+        }
+      ],
       "skills": [
         {
           "card": "skill",
@@ -4256,6 +4404,36 @@
     {
       "ac": 11,
       "boss": "Keller",
+      "description": "He deeply understands that “improvisation” is the key to surviving longer in this land.",
+      "bounties": [
+        {
+          "name": "Quick Resolution",
+          "conditions": {
+            "Normal": "Win within 6 turns",
+            "Hard": "Win within 6 turns",
+            "Extreme": "Win within 6 turns",
+            "Purgatory": "Win within 6 turns"
+          }
+        },
+        {
+          "name": "Full-Throttle",
+          "conditions": {
+            "Normal": "Have a single unit trigger [Maneuvering Pursuit] 5 times",
+            "Hard": "Have a single unit trigger [Maneuvering Pursuit] 5 times",
+            "Extreme": "Have a single unit trigger [Maneuvering Pursuit] 5 times",
+            "Purgatory": "Have a single unit trigger [Maneuvering Pursuit] 5 times"
+          }
+        },
+        {
+          "name": "Safe and Sound",
+          "conditions": {
+            "Normal": "All of your team members survive",
+            "Hard": "All of your team members survive",
+            "Extreme": "All of your team members survive",
+            "Purgatory": "All of your team members survive"
+          }
+        }
+      ],
       "skills": [
         {
           "card": "skill",
@@ -4342,6 +4520,36 @@
     {
       "ac": 11,
       "boss": "Aiden",
+      "description": "Waiting – sometimes it’s a special technique for getting out of the maze.",
+      "bounties": [
+        {
+          "name": "Quick Resolution",
+          "conditions": {
+            "Normal": "Win within 6 turns",
+            "Hard": "Win within 6 turns",
+            "Extreme": "Win within 6 turns",
+            "Purgatory": "Win within 6 turns"
+          }
+        },
+        {
+          "name": "Cautiously Does It",
+          "conditions": {
+            "Normal": "Echo Burst hits no more than 3 targets",
+            "Hard": "Echo Burst hits no more than 3 targets",
+            "Extreme": "Echo Burst hits no more than 2 targets",
+            "Purgatory": "Echo Burst hits no more than 2 targets"
+          }
+        },
+        {
+          "name": "Safe and Sound",
+          "conditions": {
+            "Normal": "All of your team members survive",
+            "Hard": "All of your team members survive",
+            "Extreme": "All of your team members survive",
+            "Purgatory": "All of your team members survive"
+          }
+        }
+      ],
       "skills": [
         {
           "card": "skill",
@@ -4441,6 +4649,18 @@
     {
       "ac": 11,
       "boss": "Gutzman",
+      "description": "In the end, we will rest eternally in this cage of steel.",
+      "bounties": [
+        {
+          "name": "Safe and Sound",
+          "conditions": {
+            "Normal": "All of your team members survive",
+            "Hard": "All of your team members survive",
+            "Extreme": "All of your team members survive",
+            "Purgatory": "All of your team members survive"
+          }
+        }
+      ],
       "skills": [
         {
           "card": "skill",
@@ -4533,6 +4753,36 @@
           "name": "Berserker Storm",
           "difficulty": "Extreme",
           "description": "[Enemy] Gutzman can trigger Full Barrage if the number of Alter-Blade Retaliations during the enemy's Action Phase is less than or equal to 4."
+        }
+      ]
+    },
+    {
+      "ac": 12,
+      "boss": "Genovese",
+      "bounties": [
+        {
+          "name": "Safe and Sound",
+          "conditions": {
+            "Normal": "All of your team members survive",
+            "Hard": "All of your team members survive",
+            "Extreme": "All of your team members survive",
+            "Purgatory": "All of your team members survive"
+          }
+        }
+      ]
+    },
+    {
+      "ac": 13,
+      "boss": "Douglas",
+      "bounties": [
+        {
+          "name": "Safe and Sound",
+          "conditions": {
+            "Normal": "All of your team members survive",
+            "Hard": "All of your team members survive",
+            "Extreme": "All of your team members survive",
+            "Purgatory": "All of your team members survive"
+          }
         }
       ]
     }

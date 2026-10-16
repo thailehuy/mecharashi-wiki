@@ -576,6 +576,17 @@
                 "Inferno"
               ]
             }
+          ],
+          "bounties": [
+            {
+              "name": "Safe and Sound",
+              "conditions": {
+                "Normal": "All of your team members survive",
+                "Hard": "All of your team members survive",
+                "Extreme": "All of your team members survive",
+                "Inferno": "All of your team members survive"
+              }
+            }
           ]
         }
       ]
@@ -877,6 +888,17 @@
                 }
               ]
             }
+          ],
+          "bounties": [
+            {
+              "name": "Safe and Sound",
+              "conditions": {
+                "Normal": "All of your team members survive",
+                "Hard": "All of your team members survive",
+                "Extreme": "All of your team members survive",
+                "Inferno": "All of your team members survive"
+              }
+            }
           ]
         }
       ]
@@ -955,6 +977,36 @@
               "icon": "Icon_skill_talent_3105",
               "description": "At start of turn, if the Hayato is not present, summons the Hayato. If Hayato is within 5 tiles, DMG Dealt +100%.",
               "kind": "passive"
+            }
+          ],
+          "description": "Another drink – sometimes it requires careful consideration.",
+          "bounties": [
+            {
+              "name": "Quick Resolution",
+              "conditions": {
+                "Normal": "Win within 6 turns",
+                "Hard": "Win within 6 turns",
+                "Extreme": "Win within 6 turns",
+                "Inferno": "Win within 6 turns"
+              }
+            },
+            {
+              "name": "Lossless",
+              "conditions": {
+                "Normal": "All of your team's parts are undestroyed at the time of victory",
+                "Hard": "All of your team's parts are undestroyed at the time of victory",
+                "Extreme": "All of your team's parts are undestroyed at the time of victory",
+                "Inferno": "All of your team's parts are undestroyed at the time of victory"
+              }
+            },
+            {
+              "name": "Safe and Sound",
+              "conditions": {
+                "Normal": "All of your team members survive",
+                "Hard": "All of your team members survive",
+                "Extreme": "All of your team members survive",
+                "Inferno": "All of your team members survive"
+              }
             }
           ],
           "extreme_modifiers": [
@@ -1078,6 +1130,36 @@
               "kind": "passive"
             }
           ],
+          "description": "He deeply understands that “improvisation” is the key to surviving longer in this land.",
+          "bounties": [
+            {
+              "name": "Quick Resolution",
+              "conditions": {
+                "Normal": "Win within 6 turns",
+                "Hard": "Win within 6 turns",
+                "Extreme": "Win within 6 turns",
+                "Inferno": "Win within 6 turns"
+              }
+            },
+            {
+              "name": "Full-Throttle",
+              "conditions": {
+                "Normal": "Have a single unit trigger [Maneuvering Pursuit] 5 times",
+                "Hard": "Have a single unit trigger [Maneuvering Pursuit] 5 times",
+                "Extreme": "Have a single unit trigger [Maneuvering Pursuit] 5 times",
+                "Inferno": "Have a single unit trigger [Maneuvering Pursuit] 5 times"
+              }
+            },
+            {
+              "name": "Safe and Sound",
+              "conditions": {
+                "Normal": "All of your team members survive",
+                "Hard": "All of your team members survive",
+                "Extreme": "All of your team members survive",
+                "Inferno": "All of your team members survive"
+              }
+            }
+          ],
           "extreme_modifiers": [
             {
               "name": "Global Vulnerability",
@@ -1199,6 +1281,36 @@
                 }
               ],
               "kind": "passive"
+            }
+          ],
+          "description": "Waiting – sometimes it’s a special technique for getting out of the maze.",
+          "bounties": [
+            {
+              "name": "Quick Resolution",
+              "conditions": {
+                "Normal": "Win within 6 turns",
+                "Hard": "Win within 6 turns",
+                "Extreme": "Win within 6 turns",
+                "Inferno": "Win within 6 turns"
+              }
+            },
+            {
+              "name": "Cautiously Does It",
+              "conditions": {
+                "Normal": "Echo Burst hits no more than 3 targets",
+                "Hard": "Echo Burst hits no more than 3 targets",
+                "Extreme": "Echo Burst hits no more than 2 targets",
+                "Inferno": "Echo Burst hits no more than 2 targets"
+              }
+            },
+            {
+              "name": "Safe and Sound",
+              "conditions": {
+                "Normal": "All of your team members survive",
+                "Hard": "All of your team members survive",
+                "Extreme": "All of your team members survive",
+                "Inferno": "All of your team members survive"
+              }
             }
           ],
           "extreme_modifiers": [
@@ -1366,6 +1478,18 @@
               ]
             }
           ],
+          "description": "In the end, we will rest eternally in this cage of steel.",
+          "bounties": [
+            {
+              "name": "Safe and Sound",
+              "conditions": {
+                "Normal": "All of your team members survive",
+                "Hard": "All of your team members survive",
+                "Extreme": "All of your team members survive",
+                "Inferno": "All of your team members survive"
+              }
+            }
+          ],
           "extreme_modifiers": [
             {
               "name": "Berserker Storm",
@@ -1459,7 +1583,9 @@
               "name": "No Smoking",
               "conditions": {
                 "Normal": "Blazetrudge’s Detonation does not exceed 2 stacks",
-                "Hard": "Blazetrudge’s Detonation does not exceed 2 stacks"
+                "Hard": "Blazetrudge’s Detonation does not exceed 2 stacks",
+                "Extreme": "Blazetrudge’s Detonation does not exceed 2 stacks",
+                "Inferno": "Blazetrudge’s Detonation does not exceed 2 stacks"
               }
             },
             {
@@ -1566,7 +1692,9 @@
               "name": "Overwhelmed",
               "conditions": {
                 "Normal": "Skysweep triggers Emergency Arm Repair",
-                "Hard": "Skysweep triggers Emergency Arm Repair"
+                "Hard": "Skysweep triggers Emergency Arm Repair",
+                "Extreme": "Skysweep triggers Emergency Arm Repair",
+                "Inferno": "Skysweep triggers Emergency Arm Repair"
               }
             },
             {
@@ -1666,7 +1794,9 @@
               "name": "Innumerable",
               "conditions": {
                 "Normal": "Defeat no more than 5 enemy units, excluding Liliya",
-                "Hard": "Defeat no more than 4 enemy units, excluding Liliya"
+                "Hard": "Defeat no more than 4 enemy units, excluding Liliya",
+                "Extreme": "Defeat no more than 3 enemy units, excluding Liliya",
+                "Inferno": "Defeat no more than 2 enemy units, excluding Liliya"
               }
             },
             {
@@ -1774,6 +1904,17 @@
             }
           ],
           "description": "Life is born to mend regrets.",
+          "bounties": [
+            {
+              "name": "Safe and Sound",
+              "conditions": {
+                "Normal": "All of your team members survive",
+                "Hard": "All of your team members survive",
+                "Extreme": "All of your team members survive",
+                "Inferno": "All of your team members survive"
+              }
+            }
+          ],
           "extreme_modifiers": [
             {
               "name": "Bulwark Deployment",
@@ -1939,7 +2080,9 @@
               "name": "Innumerable",
               "conditions": {
                 "Normal": "Resentment never reaches 10 stacks",
-                "Hard": "Resentment never reaches 8 stacks"
+                "Hard": "Resentment never reaches 8 stacks",
+                "Extreme": "Resentment never reaches 7 stacks",
+                "Inferno": "Resentment never reaches 6 stacks"
               }
             },
             {
@@ -2099,7 +2242,9 @@
               "name": "Cautiously",
               "conditions": {
                 "Normal": "Michaela doesn’t trigger Maelstrom",
-                "Hard": "Michaela doesn’t trigger Maelstrom"
+                "Hard": "Michaela doesn’t trigger Maelstrom",
+                "Extreme": "Michaela doesn’t trigger Maelstrom",
+                "Inferno": "Michaela doesn’t trigger Maelstrom"
               }
             },
             {
@@ -2276,7 +2421,9 @@
               "name": "No Smoking",
               "conditions": {
                 "Normal": "Whie Flame enters Mist terrain no more than 2 times",
-                "Hard": "Whie Flame enters Mist terrain no more than 2 times"
+                "Hard": "Whie Flame enters Mist terrain no more than 2 times",
+                "Extreme": "Whie Flame enters Mist terrain no more than 2 times",
+                "Inferno": "Whie Flame enters Mist terrain no more than 2 times"
               }
             },
             {
@@ -2407,6 +2554,17 @@
             }
           ],
           "description": "Any treasure he has yet to obtain is a treasure he is destined to acquire.",
+          "bounties": [
+            {
+              "name": "Safe and Sound",
+              "conditions": {
+                "Normal": "All of your team members survive",
+                "Hard": "All of your team members survive",
+                "Extreme": "All of your team members survive",
+                "Inferno": "All of your team members survive"
+              }
+            }
+          ],
           "extreme_modifiers": [
             {
               "name": "Repair Chain",
@@ -2568,6 +2726,7 @@
               "icon": "Icon_skill_talent_5130"
             }
           ],
+          "description": "His soul is beyond redemption, instigating him not to give up any bit of profit he can covet.",
           "bounties": [
             {
               "name": "Quick Resolution",
@@ -2583,7 +2742,8 @@
               "conditions": {
                 "Normal": "Douglas used [Electric Surge Terrain] no more than once",
                 "Hard": "Douglas used [Electric Surge Terrain] no more than once",
-                "Extreme": "Douglas did not use [Electric Surge Terrain]"
+                "Extreme": "Douglas did not use [Electric Surge Terrain]",
+                "Inferno": "Douglas did not use [Electric Surge Terrain]"
               }
             },
             {
@@ -2723,7 +2883,8 @@
               "conditions": {
                 "Normal": "The stacks of Collapse Damage never reached 5 stacks",
                 "Hard": "The stacks of Collapse Damage never reached 5 stacks",
-                "Extreme": "The stacks of Collapse Damage never reached 5 stacks"
+                "Extreme": "The stacks of Collapse Damage never reached 5 stacks",
+                "Inferno": "The stacks of Collapse Damage never reached 5 stacks"
               }
             },
             {
@@ -2868,7 +3029,8 @@
               "conditions": {
                 "Normal": "Defeat no more than 6 enemy units upon victory",
                 "Hard": "Defeat no more than 4 enemy units upon victory",
-                "Extreme": "Defeat no more than 2 enemy units upon victory"
+                "Extreme": "Defeat no more than 2 enemy units upon victory",
+                "Inferno": "Defeat no more than 2 enemy units upon victory"
               }
             },
             {
@@ -2983,6 +3145,17 @@
             }
           ],
           "description": "Fate will not always meet your expectations… The more you dominate, the more you lose.",
+          "bounties": [
+            {
+              "name": "Safe and Sound",
+              "conditions": {
+                "Normal": "All of your team members survive",
+                "Hard": "All of your team members survive",
+                "Extreme": "All of your team members survive",
+                "Inferno": "All of your team members survive"
+              }
+            }
+          ],
           "extreme_modifiers": [
             {
               "name": "Arc",
@@ -3539,6 +3712,17 @@
             }
           ],
           "description": "Every moment death approaches is bathed in golden light – seize it, devour it, for it is the destiny you pursue.",
+          "bounties": [
+            {
+              "name": "Safe and Sound",
+              "conditions": {
+                "Normal": "All of your team members survive",
+                "Hard": "All of your team members survive",
+                "Extreme": "All of your team members survive",
+                "Inferno": "All of your team members survive"
+              }
+            }
+          ],
           "extreme_modifiers": [
             {
               "name": "High-Level Sanction",
@@ -4032,6 +4216,17 @@
             }
           ],
           "description": "Victoria arrives with the light of the old DL – and this time, history will not repeat itself.",
+          "bounties": [
+            {
+              "name": "Safe and Sound",
+              "conditions": {
+                "Normal": "All of your team members survive",
+                "Hard": "All of your team members survive",
+                "Extreme": "All of your team members survive",
+                "Inferno": "All of your team members survive"
+              }
+            }
+          ],
           "extreme_modifiers": [
             {
               "name": "Backup Plan",
@@ -4482,7 +4677,7 @@
               }
             },
             {
-              "name": null,
+              "name": "Bring It On",
               "conditions": {
                 "Normal": "Destroy one of Keller’s parts within 5 turns",
                 "Hard": "Destroy one of Keller’s parts within 4 turns",
@@ -4568,6 +4763,16 @@
             }
           ],
           "description": "That’s how Milkhama works – the winner takes it all, and the loser is left with nothing. But Sámi refuses to admit it.",
+          "bounties": [
+            {
+              "name": "Safe and Sound",
+              "conditions": {
+                "Normal": "All of your team members survive",
+                "Hard": "All of your team members survive",
+                "Extreme": "All of your team members survive"
+              }
+            }
+          ],
           "extreme_modifiers": [
             {
               "name": "Two-Handed Preparation",
@@ -5152,6 +5357,16 @@
             }
           ],
           "description": "Alena brought a letter from a land scarred by storm and wreckage.",
+          "bounties": [
+            {
+              "name": "Safe and Sound",
+              "conditions": {
+                "Normal": "All of your team members survive",
+                "Hard": "All of your team members survive",
+                "Extreme": "All of your team members survive"
+              }
+            }
+          ],
           "extreme_modifiers": [
             {
               "name": "Winter Flame",
@@ -5629,6 +5844,16 @@
             }
           ],
           "description": "Genovese faces the new era head-on, refusing to back down.",
+          "bounties": [
+            {
+              "name": "Safe and Sound",
+              "conditions": {
+                "Normal": "All of your team members survive",
+                "Hard": "All of your team members survive",
+                "Extreme": "All of your team members survive"
+              }
+            }
+          ],
           "extreme_modifiers": [
             {
               "name": "Shelter",
@@ -6256,6 +6481,16 @@
             }
           ],
           "description": "Greatness may lead to death, but Grimbite’s power transcends it.",
+          "bounties": [
+            {
+              "name": "Safe and Sound",
+              "conditions": {
+                "Normal": "All of your team members survive",
+                "Hard": "All of your team members survive",
+                "Extreme": "All of your team members survive"
+              }
+            }
+          ],
           "extreme_modifiers": [
             {
               "name": "Mass Hysteria",
@@ -6536,7 +6771,15 @@
               "kind": "passive"
             }
           ],
-          "description": "Now is the moment of the final assault, and Crotti has already prepared."
+          "description": "Now is the moment of the final assault, and Crotti has already prepared.",
+          "bounties": [
+            {
+              "name": "Safe and Sound",
+              "conditions": {
+                "Normal": "All of your team members survive"
+              }
+            }
+          ]
         }
       ]
     }
