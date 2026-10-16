@@ -218,7 +218,7 @@ function bossKit() {
         return '<div class="boss-sub-head">' + esc(u.name) + '</div>' +
           '<div class="skill-list">' + u.skills.map(function (sk) { return skillHtml(sk, firstDiff); }).join('') + '</div>';
       }).join('') +
-      (st.extreme_modifiers ? '<div class="skill-list">' + st.extreme_modifiers.map(function (m) {
+      (st.extreme_modifiers ? '<div class="skill-list boss-extreme-list">' + st.extreme_modifiers.map(function (m) {
         return (
           '<div class="skill-card boss-skill">' +
             '<div class="skill-name-row">' + (m.name ? '<span class="skill-name">' + esc(m.name) + '</span>' : '') +
