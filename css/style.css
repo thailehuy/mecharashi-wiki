@@ -852,6 +852,14 @@ a.weapon-card {
   align-items: flex-start;
 }
 
+/* Let the talents shrink rather than squeeze the portrait. */
+.detail-layout > .detail-portrait-col {
+  min-width: 320px;
+}
+.detail-layout > .detail-info-col {
+  flex-shrink: 1;
+}
+
 .detail-name-row > .pilot-attr-chart {
   display: flex;
   flex-direction: column;
@@ -1960,11 +1968,16 @@ a.material-item:hover .material-icon-wrap {
   margin-top: 1px;
 }
 
-@media (max-width: 900px) {
+/* Stack once the content area (viewport minus the 210px sidebar and padding)
+   drops below ~900px. Below 768px the sidebar becomes a drawer. */
+@media (max-width: 1160px) {
   .detail-layout {
     flex-direction: column;
     align-items: stretch;
     gap: 0;
+  }
+  .detail-layout > .detail-portrait-col {
+    min-width: 0;
   }
   .detail-info-col {
     max-width: 100%;
