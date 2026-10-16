@@ -18,7 +18,7 @@ body {
 .navbar-row {
   display: flex;
   align-items: center;
-  padding: 0.5rem 0;
+  padding: 0.5rem 1rem;
 }
 
 .navbar-brand {
@@ -26,21 +26,8 @@ body {
   font-weight: 700;
   letter-spacing: 0.05em;
   padding: 0;
+  margin-right: auto;
   flex-shrink: 0;
-}
-
-.navbar-nav-center {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-}
-
-.navbar-nav-center-inner {
-  display: flex;
-  background: rgba(255, 255, 255, 0.07);
-  border-radius: 5px;
-  padding: 3px;
-  gap: 2px;
 }
 
 .nav-link {
@@ -63,76 +50,7 @@ body {
   background-color: #e94560;
 }
 
-/* "Misc." nav dropdown */
-.nav-dropdown {
-  position: relative;
-}
-
-.nav-dropdown-toggle {
-  display: flex;
-  align-items: center;
-  gap: 0.25rem;
-}
-
-.nav-dropdown-caret {
-  font-size: 0.65em;
-  transition: transform 0.15s;
-}
-
-.nav-dropdown.open .nav-dropdown-caret,
-.nav-dropdown:hover .nav-dropdown-caret {
-  transform: rotate(180deg);
-}
-
-.nav-dropdown-menu {
-  display: none;
-  position: absolute;
-  /* Flush against the toggle (no gap) so the mouse never leaves a hoverable
-     box while moving from the toggle down into the menu — a gap here would
-     create a "dead zone" that breaks :hover and closes the menu early. The
-     visual gap is faked with padding-top instead. */
-  top: 100%;
-  left: 0;
-  min-width: 160px;
-  padding-top: 6px;
-  z-index: 1030;
-}
-
-.nav-dropdown-menu-inner {
-  background: #1a1a20;
-  border: 1px solid #3a3a6e;
-  border-radius: 6px;
-  padding: 0.35rem;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
-}
-
-.nav-dropdown.open .nav-dropdown-menu,
-.nav-dropdown:hover .nav-dropdown-menu {
-  display: block;
-}
-
-.nav-dropdown-item {
-  display: block;
-  color: #a0a0b0;
-  font-weight: 500;
-  font-size: 0.9rem;
-  padding: 0.45rem 0.7rem;
-  border-radius: 4px;
-  white-space: nowrap;
-  text-decoration: none;
-}
-
-.nav-dropdown-item:hover {
-  color: #ffffff;
-  background-color: rgba(233, 69, 96, 0.15);
-}
-
-.nav-dropdown-item.active {
-  color: #ffffff;
-  background-color: #e94560;
-}
-
-/* Mobile drawer: non-clickable group label above nested items */
+/* Group label above nested menu items */
 .nav-drawer-group-label {
   padding: 0.6rem 1rem 0.1rem;
   font-size: 0.72rem;
@@ -251,13 +169,55 @@ body {
   flex-shrink: 0;
 }
 
-/* Mobile: show hamburger, hide inline tabs */
+/* Page layout: menu panel on the left, content fills the rest */
+.site-layout {
+  display: flex;
+  align-items: flex-start;
+}
+
+.site-main {
+  flex: 1;
+  min-width: 0;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+/* Desktop: the drawer is a sticky sidebar under the top bar */
+@media (min-width: 768px) {
+  .nav-drawer {
+    position: sticky;
+    top: var(--navbar-h, 0px);
+    bottom: auto;
+    height: calc(100vh - var(--navbar-h, 0px));
+    width: 210px;
+    flex-shrink: 0;
+    transform: none;
+    transition: none;
+    z-index: 1010;
+  }
+  .nav-drawer-header,
+  .nav-drawer-footer {
+    display: none;
+  }
+  .nav-drawer-links {
+    gap: 0.15rem;
+  }
+  .nav-drawer-item {
+    padding: 0.45rem 0.85rem !important;
+  }
+  .nav-drawer-subitem {
+    padding-left: 1.35rem !important;
+  }
+}
+
+/* Mobile: hamburger opens the drawer */
 @media (max-width: 767px) {
   .nav-hamburger {
     display: flex;
   }
-  .navbar-nav-center {
-    display: none;
+  .site-main {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
   }
 }
 
@@ -310,6 +270,15 @@ body {
   color: #ffffff;
   font-weight: 700;
   white-space: nowrap;
+}
+
+.ac-section-title.shop-section-title {
+  display: inline-block;
+  color: #e0e0ff;
+  background-color: #2a2a4a;
+  border: 1px solid #3a3a5a;
+  border-radius: 6px;
+  padding: 0.35rem 0.85rem;
 }
 
 .shop-version-cell {
@@ -575,35 +544,45 @@ a.weapon-card {
   border-color: #e94560;
 }
 
-/* Filter bar */
+/* Filter bar — two-column table: label cell | values cell */
 .filter-bar {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+  display: grid;
+  grid-template-columns: max-content 1fr;
   margin-bottom: 1.25rem;
-}
-
-.filter-row {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 0.75rem;
+  border: 1px solid #3a3a5a;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: rgba(18, 18, 30, 0.75);
 }
 
 .filter-group {
+  display: contents;
+}
+
+.filter-label {
+  display: flex;
+  align-items: center;
+  padding: 0.45rem 0.85rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #e0e0ff;
+  background-color: #2a2a4a;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+}
+
+.filter-values {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: 0.4rem;
+  padding: 0.4rem 0.6rem;
 }
 
-.filter-label {
-  font-size: 0.8rem;
-  font-weight: 600;
-  color: #9090c0;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  margin-right: 0.2rem;
+.filter-group + .filter-group > .filter-label,
+.filter-group + .filter-group > .filter-values {
+  border-top: 1px solid #3a3a5a;
 }
 
 .filter-btn {
@@ -2890,27 +2869,11 @@ a.material-item:hover .material-icon-wrap {
   }
 }
 
-.acc-co-filter {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 0.4rem;
-  margin-bottom: 1rem;
-}
-
 .filter-btn.acc-co-btn.active,
 .filter-btn.acc-cat-btn.active {
   background: rgba(99, 102, 241, 0.3);
   border-color: #6366f1;
   color: #e0e7ff;
-}
-
-.acc-type-filter {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 0.4rem;
-  margin-bottom: 1rem;
 }
 
 .filter-btn.acc-w-btn.active {

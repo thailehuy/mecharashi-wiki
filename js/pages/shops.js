@@ -44,7 +44,7 @@ Pages.shops = {
 
     return (
       '<div class="ac-section">' +
-        '<h2 class="ac-section-title">' + SHOP_LABEL[shopKey] + '</h2>' +
+        '<h2 class="ac-section-title shop-section-title">' + SHOP_LABEL[shopKey] + '</h2>' +
         '<div class="dispatch-table-wrap">' +
           '<table class="dispatch-table">' +
             '<thead><tr>' +
@@ -93,9 +93,7 @@ Pages.shops = {
 
   _modChipHtml: function (name) {
     var modules = ((window.ModulesData || {}).modules || {});
-    var aliases = (window.ShopsData || {}).modAliases || {};
-    var lookupName = aliases[name] || name;
-    var family = Object.keys(modules).find(function (fam) { return modules[fam].name === lookupName; });
+    var family = Object.keys(modules).find(function (fam) { return modules[fam].name === name; });
     var nameEsc = $('<span>').text(name).html();
 
     var icon = null;
@@ -113,7 +111,7 @@ Pages.shops = {
 
     if (family) {
       return (
-        '<a class="shop-mod-chip" href="' + App.href('modules', lookupName.toLowerCase()) + '" title="' + $('<span>').text(titleText).html() + '">' +
+        '<a class="shop-mod-chip" href="' + App.href('modules', name.toLowerCase()) + '" title="' + $('<span>').text(titleText).html() + '">' +
           iconHtml +
           '<span class="shop-mod-chip-name">' + nameEsc + '</span>' +
         '</a>'

@@ -17,6 +17,43 @@ var LOCAL_MECH_SKIN_BASE     = ASSET_BASE + 'data/unlisted/mechs/Skins/';
 // Mech module icons are now sourced locally (flat, no weight-class split).
 var LOCAL_MODULE_ICON_BASE = ASSET_BASE + 'data/unlisted/mech_modules/';
 
+// Release order within each version, oldest to newest. Each pilot's signature
+// mech (matching license type) follows PILOT_RELEASE_ORDER; universal mechs
+// (Pascal, Eye of Faith) go last here so they show first in their version.
+// Mechs not listed (the rest of the 1.0 roster) fall back to ID order.
+var MECH_RELEASE_ORDER = [
+  'XR', 'Glasya', 'Dreadtalon', 'Malthus',
+  'Dragonrider', 'Pascal',
+  'Thanatos', 'Aglow',
+  'Rex', 'Euclase',
+  'Mithril', 'Ranger',
+  'REV-02', 'REV-01', 'REV-00',
+  'FierceJaw', 'Igniter',
+  'Ouroboros', 'Odysseus',
+  'Shadowrabbit',
+  'Erinys', 'Alicorn',
+  'Tengshe', 'Arbiter', 'Eye of Faith',
+  'Kagemusha', 'Fenrisúlfr',
+  'Hasteraze', 'Snowyowl',
+  'Prometheus', 'Colossus',
+  'Nightglow', 'Hector',
+  'Huilong', 'Shadowtiger',
+  'Illusion',
+  'Bawang', 'Regalia',
+  'Demiurge', 'Martyr',
+  'Flourite', 'Benxiao',
+  'Gladiator', 'Portent',
+  'MobiuX', 'Nephthys',
+  'Nidhogg', 'Prisma',
+  'Asteria', 'Avalanche',
+  'Medusa MKII', 'Blue Anonymous Bird',
+  'Nivequus', 'Eclipse',
+];
+
+function mechReleaseOrder(mechName) {
+  return MECH_RELEASE_ORDER.indexOf(mechName);
+}
+
 function moduleIconSrc(iconName) {
   return LOCAL_MODULE_ICON_BASE + encodeURIComponent(iconName) + '.png';
 }
@@ -109,9 +146,9 @@ Pages.sts = {
         '<input type="text" class="search-box" id="mech-search" placeholder="Search STs by name..." />' +
       '</div>' +
       '<div class="filter-bar">' +
-        '<div class="filter-group"><span class="filter-label">Rank</span>' + rankButtons + '</div>' +
-        '<div class="filter-group"><span class="filter-label">Type</span>' + typeButtons + '</div>' +
-        '<div class="filter-group"><span class="filter-label">Version</span>' + verButtons + '</div>' +
+        '<div class="filter-group"><span class="filter-label">Rank</span><div class="filter-values">' + rankButtons + '</div></div>' +
+        '<div class="filter-group"><span class="filter-label">Type</span><div class="filter-values">' + typeButtons + '</div></div>' +
+        '<div class="filter-group"><span class="filter-label">Version</span><div class="filter-values">' + verButtons + '</div></div>' +
       '</div>' +
       '<div class="row g-3" id="mech-grid"></div>'
     );
@@ -163,6 +200,7 @@ Pages.sts = {
     }).slice().sort(function (a, b) {
       return (RANK_ORDER[b.quality] || 0) - (RANK_ORDER[a.quality] || 0)
         || parseFloat(b.version) - parseFloat(a.version)
+        || mechReleaseOrder(b.name) - mechReleaseOrder(a.name)
         || parseFloat(b.ID) - parseFloat(a.ID);
     });
 

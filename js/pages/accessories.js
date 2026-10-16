@@ -24,6 +24,7 @@ Pages.accessories = {
   _activeW: false,
   _activeType: null,
   _searchQuery: '',
+  _activeSections: {},
   _sortKey: null,
   _sortDir: -1,
 
@@ -43,11 +44,13 @@ Pages.accessories = {
     allCOs.sort(function (a, b) { return a - b; });
 
     var coFilterHtml =
-      '<div class="acc-co-filter">' +
+      '<div class="filter-group">' +
         '<span class="filter-label">Clearance Ops</span>' +
-        allCOs.map(function (co) {
-          return '<button class="filter-btn acc-co-btn' + (self._activeCO === co ? ' active' : '') + '" data-co="' + co + '">CO' + co + '</button>';
-        }).join('') +
+        '<div class="filter-values">' +
+          allCOs.map(function (co) {
+            return '<button class="filter-btn acc-co-btn' + (self._activeCO === co ? ' active' : '') + '" data-co="' + co + '">CO' + co + '</button>';
+          }).join('') +
+        '</div>' +
       '</div>';
 
     var allTypes = [];
@@ -58,21 +61,28 @@ Pages.accessories = {
     allTypes.sort();
 
     var typeFilterHtml =
-      '<div class="acc-type-filter">' +
+      '<div class="filter-group">' +
         '<span class="filter-label">Type</span>' +
-        allTypes.map(function (t) {
-          return '<button class="filter-btn acc-cat-btn' + (self._activeType === t ? ' active' : '') + '" data-type="' + encodeURIComponent(t) + '">' + $('<span>').text(t).html() + '</button>';
-        }).join('') +
+        '<div class="filter-values">' +
+          allTypes.map(function (t) {
+            return '<button class="filter-btn acc-cat-btn' + (self._activeType === t ? ' active' : '') + '" data-type="' + encodeURIComponent(t) + '">' + $('<span>').text(t).html() + '</button>';
+          }).join('') +
+        '</div>' +
       '</div>' +
-      '<div class="acc-type-filter">' +
+      '<div class="filter-group">' +
         '<span class="filter-label">Variant</span>' +
-        '<button class="filter-btn acc-w-btn' + (self._activeW ? ' active' : '') + '" data-w="1">W</button>' +
+        '<div class="filter-values">' +
+          '<button class="filter-btn acc-w-btn' + (self._activeW ? ' active' : '') + '" data-w="1">W</button>' +
+        '</div>' +
       '</div>';
 
     var acNav =
-      '<div class="ac-nav">' +
-        '<a class="ac-nav-item" href="#acc-triggers">Triggers</a>' +
-        '<a class="ac-nav-item" href="#acc-reactions">Reactions</a>' +
+      '<div class="filter-group">' +
+        '<span class="filter-label">Slot</span>' +
+        '<div class="filter-values">' +
+          '<button class="filter-btn filter-occ" data-filter-section="acc-triggers">Triggers</button>' +
+          '<button class="filter-btn filter-occ" data-filter-section="acc-reactions">Reactions</button>' +
+        '</div>' +
       '</div>';
 
     var sectionsHtml =
@@ -82,10 +92,11 @@ Pages.accessories = {
     setTimeout(function () {
       $('#acc-page').css('--acc-sticky-top', ($('.navbar').outerHeight() || 0) + 'px');
 
-      $('#acc-page').on('click', '.ac-nav-item', function (e) {
-        e.preventDefault();
-        var $el = $($(this).attr('href'));
-        if ($el.length) $('html, body').animate({ scrollTop: $el.offset().top - 70 }, 200);
+      $('#acc-page').on('click', '[data-filter-section]', function () {
+        var key = $(this).data('filter-section');
+        self._activeSections[key] = !self._activeSections[key];
+        $(this).toggleClass('active', !!self._activeSections[key]);
+        self._applyFilter();
       });
 
       $('#acc-page').on('click', '#acc-back-top', function (e) {
@@ -147,9 +158,11 @@ Pages.accessories = {
         '<div class="search-box-wrap">' +
           '<input type="text" class="search-box" id="acc-search" placeholder="Search accessories by name..." />' +
         '</div>' +
-        coFilterHtml +
-        typeFilterHtml +
-        acNav +
+        '<div class="filter-bar">' +
+          coFilterHtml +
+          typeFilterHtml +
+          acNav +
+        '</div>' +
         '<p class="ac-section-footnote acc-co-note">The numbers in the CO columns mean the number of weapons carrying that could drop that accessory. The real drop chance is unknown.</p>' +
         sectionsHtml +
         '<a class="back-to-top" id="acc-back-top" href="#">&#8593; Top</a>' +
@@ -157,13 +170,21 @@ Pages.accessories = {
     );
   },
 
+  _sectionOk: function (id) {
+    var active = this._activeSections;
+    var any = Object.keys(active).some(function (k) { return active[k]; });
+    return !any || !!active[id];
+  },
+
   _applyFilter: function () {
     var co    = this._activeCO;
     var w     = this._activeW;
     var type  = this._activeType;
     var query = (this._searchQuery || '').trim().toLowerCase();
+    var self = this;
     $('#acc-page .ac-section').each(function () {
       var $section = $(this);
+      if (!self._sectionOk(this.id)) { $section.hide(); return; }
       var sectionHasMatch = false;
       $section.find('.acc-row').each(function () {
         var cos  = $(this).data('cos');
@@ -291,6 +312,7 @@ Pages.accessories = {
   },
 
   destroy: function () {
+    this._activeSections = {};
     this._activeCO = null;
     this._activeW = false;
     this._activeType = null;

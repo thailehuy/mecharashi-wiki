@@ -32,25 +32,12 @@ $(function () {
     if (window.innerWidth >= 768) closeDrawer();
   });
 
-  // "Misc." nav dropdown — the toggle itself doesn't navigate anywhere,
-  // it just reveals a menu of actual pages (e.g. Dispatch Table).
-  var $miscDropdown = $('#miscDropdown');
-
-  $('#miscDropdownToggle').on('click', function (e) {
-    e.preventDefault();
-    $miscDropdown.toggleClass('open');
-  });
-
-  $(document).on('click', function (e) {
-    if (!$(e.target).closest('#miscDropdown').length) {
-      $miscDropdown.removeClass('open');
-    }
-  });
-
-  $miscDropdown.on('click', '.nav-dropdown-item', function () {
-    $miscDropdown.removeClass('open');
-  });
-
+  // The sidebar sticks just below the top bar, whose height can vary.
+  function syncNavHeight() {
+    document.documentElement.style.setProperty('--navbar-h', ($('.navbar').outerHeight() || 0) + 'px');
+  }
+  syncNavHeight();
+  $(window).on('resize', syncNavHeight);
 
   var DEFAULT_PAGE = 'pilots';
   var currentPage  = null;
@@ -203,7 +190,6 @@ $(function () {
 
     $('[data-page]').removeClass('active');
     $('[data-page="' + page + '"]').addClass('active');
-    $('#miscDropdownToggle').toggleClass('active', page === 'dispatch' || page === 'exskills' || page === 'shops' || page === 'ststats' || page === 'pilotstats' || page === 'builder' || page === 'rdbonus' || page === 'features' || page === 'bosses' || page === 'armedconquest' || page === 'clearanceops');
 
     // Pages expect the param still URI-encoded, as it used to come straight from the hash.
     $('#app-content').html(p.render(param == null ? null : encodeURIComponent(param)));

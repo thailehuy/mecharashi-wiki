@@ -49,7 +49,7 @@ Pages.pilotstats = {
         '<span class="badge bg-secondary ms-3" id="pilotstats-count">' + rows.length + '</span>' +
       '</div>' +
       '<div class="filter-bar">' +
-        '<div class="filter-group"><span class="filter-label">Rank</span>' + rankButtons + '</div>' +
+        '<div class="filter-group"><span class="filter-label">Rank</span><div class="filter-values">' + rankButtons + '</div></div>' +
       '</div>' +
       '<div class="dispatch-table-wrap">' +
         '<table class="dispatch-table ststats-table">' +

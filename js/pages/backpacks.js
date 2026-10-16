@@ -62,6 +62,7 @@ Pages.backpacks = {
   title: 'Backpacks',
 
   _searchQuery: '',
+  _activeSections: {},
 
   render: function (param) {
     var backpacks = (window.BackpacksData || {}).backpacks || [];
@@ -84,11 +85,11 @@ Pages.backpacks = {
       return { quality: q, items: backpacks.filter(function (b) { return b.quality === q; }) };
     }).filter(function (g) { return g.items.length; });
 
-    var qualNav = '<div class="ac-nav">' +
+    var qualNav = '<div class="filter-bar"><div class="filter-group"><span class="filter-label">Rarity</span><div class="filter-values">' +
       groups.map(function (g) {
-        return '<a class="ac-nav-item" href="#bp-' + g.quality + '">' + BACKPACK_QUALITY_LABEL[g.quality] + '</a>';
+        return '<button class="filter-btn filter-occ" data-filter-section="bp-' + g.quality + '">' + BACKPACK_QUALITY_LABEL[g.quality] + '</button>';
       }).join('') +
-    '</div>';
+    '</div></div></div>';
 
     var sectionsHtml = groups.map(function (g) {
       return '<div class="ac-section" id="bp-' + g.quality + '" data-quality="' + g.quality + '">' +
@@ -98,10 +99,11 @@ Pages.backpacks = {
     }).join('');
 
     setTimeout(function () {
-      $('#backpack-page').on('click', '.ac-nav-item', function (e) {
-        e.preventDefault();
-        var $el = $($(this).attr('href'));
-        if ($el.length) $('html, body').animate({ scrollTop: $el.offset().top - 70 }, 200);
+      $('#backpack-page').on('click', '[data-filter-section]', function () {
+        var key = $(this).data('filter-section');
+        self._activeSections[key] = !self._activeSections[key];
+        $(this).toggleClass('active', !!self._activeSections[key]);
+        self._applyFilter();
       });
 
       $('#backpack-page').on('click', '#backpack-back-top', function (e) {
@@ -160,11 +162,19 @@ Pages.backpacks = {
     );
   },
 
+  _sectionOk: function (id) {
+    var active = this._activeSections;
+    var any = Object.keys(active).some(function (k) { return active[k]; });
+    return !any || !!active[id];
+  },
+
   _applyFilter: function () {
     var query = (this._searchQuery || '').trim().toLowerCase();
     var visibleCount = 0;
+    var self = this;
     $('#backpack-page .ac-section').each(function () {
       var $section = $(this);
+      if (!self._sectionOk(this.id)) { $section.hide(); return; }
       var sectionHasMatch = false;
       $section.find('.backpack-card-wrap').each(function () {
         var name = decodeURIComponent($(this).data('name') || '');
@@ -283,6 +293,7 @@ Pages.backpacks = {
   },
 
   destroy: function () {
+    this._activeSections = {};
     this._searchQuery = '';
   },
 };

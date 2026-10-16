@@ -2,6 +2,13 @@ var Pages = window.Pages || {};
 
 var MODULE_ICON_BASE = 'https://media.zlongame.com/media/pictures/cn/community/img/gl/gameInfo/skill/';
 
+// Short labels for the listing page's Type filter row.
+var MODULE_CATEGORY_SHORT = {
+  PropertyS:   'Standalone',
+  SuitS:       'Producible',
+  GeneralSuit: 'Innate',
+};
+
 var MODULE_CATEGORY_LABEL = {
   PropertyS:   'Standalone Module',
   GeneralSuit: 'Innate ST Module',
@@ -54,6 +61,7 @@ Pages.modules = {
   title: 'Modules',
 
   _searchQuery: '',
+  _activeSections: {},
 
   render: function (param) {
     var modules = ((window.ModulesData || {}).modules || {});
@@ -77,12 +85,25 @@ Pages.modules = {
       (groups[cat] = groups[cat] || []).push(fam);
     });
 
-    var order = ['PropertyS', 'GeneralSuit', 'SuitS'];
-    var sectionsHtml = order.filter(function (cat) { return groups[cat]; }).map(function (cat) {
+    var order = ['PropertyS', 'SuitS', 'GeneralSuit'].filter(function (cat) { return groups[cat]; });
+    var sectionsHtml = order.map(function (cat) {
       return self._renderSection(cat, groups[cat], modules);
     }).join('');
 
+    var typeNav = '<div class="filter-bar"><div class="filter-group"><span class="filter-label">Type</span><div class="filter-values">' +
+      order.map(function (cat) {
+        return '<button class="filter-btn filter-occ" data-filter-section="mod-' + cat + '">' + MODULE_CATEGORY_SHORT[cat] + '</button>';
+      }).join('') +
+    '</div></div></div>';
+
     setTimeout(function () {
+      $('#module-page').on('click', '[data-filter-section]', function () {
+        var key = $(this).data('filter-section');
+        self._activeSections[key] = !self._activeSections[key];
+        $(this).toggleClass('active', !!self._activeSections[key]);
+        self._applyFilter();
+      });
+
       $('#module-page').on('click', '#module-back-top', function (e) {
         e.preventDefault();
         $('html, body').animate({ scrollTop: 0 }, 200);
@@ -106,16 +127,25 @@ Pages.modules = {
         '<div class="search-box-wrap">' +
           '<input type="text" class="search-box" id="module-search" placeholder="Search modules by name or ST..." />' +
         '</div>' +
+        typeNav +
         sectionsHtml +
         '<a class="back-to-top" id="module-back-top" href="#">&#8593; Top</a>' +
       '</div>'
     );
   },
 
+  _sectionOk: function (id) {
+    var active = this._activeSections;
+    var any = Object.keys(active).some(function (k) { return active[k]; });
+    return !any || !!active[id];
+  },
+
   _applyFilter: function () {
     var query = (this._searchQuery || '').trim().toLowerCase();
+    var self = this;
     $('#module-page .ac-section').each(function () {
       var $section = $(this);
+      if (!self._sectionOk(this.id)) { $section.hide(); return; }
       var sectionHasMatch = false;
       $section.find('.module-card-wrap').each(function () {
         var text = decodeURIComponent($(this).data('search') || '');
@@ -162,7 +192,7 @@ Pages.modules = {
     }).join('');
 
     return (
-      '<div class="ac-section">' +
+      '<div class="ac-section" id="mod-' + category + '">' +
         '<h2 class="ac-section-title">' + (MODULE_CATEGORY_LABEL[category] || category) +
           ' <span class="badge bg-secondary ms-2" style="font-size:0.7rem">' + familyIds.length + '</span></h2>' +
         '<div class="row g-3">' + cards + '</div>' +
@@ -265,6 +295,7 @@ Pages.modules = {
   },
 
   destroy: function () {
+    this._activeSections = {};
     this._searchQuery = '';
   },
 };

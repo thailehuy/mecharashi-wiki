@@ -114,6 +114,7 @@ Pages.weapons = {
   title: 'Weapons',
 
   _searchQuery: '',
+  _activeSections: {},
   _activeTypes: {},
 
   render: function (param) {
@@ -143,12 +144,12 @@ Pages.weapons = {
     });
     acGroups.sort(function (a, b) { return b.ac - a.ac; });
 
-    var acNav = '<div class="ac-nav">' +
+    var acNav = '<div class="filter-group"><span class="filter-label">Source</span><div class="filter-values">' +
       acGroups.filter(function (g) { return g.ac; }).map(function (g) {
         var version = (g.weapons[0] || {}).version;
-        return '<a class="ac-nav-item" href="#ac-' + g.ac + '">AC' + g.ac + (version ? ' - v' + version : '') + '</a>';
+        return '<button class="filter-btn filter-occ" data-filter-section="ac-' + g.ac + '">AC' + g.ac + (version ? ' - v' + version : '') + '</button>';
       }).join('') +
-    '</div>';
+    '</div></div>';
 
     var weaponTypes = [...new Set(weapons.map(function (w) { return w.WeaponType2; }))]
       .filter(Boolean)
@@ -168,13 +169,11 @@ Pages.weapons = {
     }).join('');
 
     setTimeout(function () {
-      $('#weapon-page').on('click', '.ac-nav-item', function (e) {
-        e.preventDefault();
-        var target = $(this).attr('href');
-        var $el = $(target);
-        if ($el.length) {
-          $('html, body').animate({ scrollTop: $el.offset().top - 70 }, 200);
-        }
+      $('#weapon-page').on('click', '[data-filter-section]', function () {
+        var key = $(this).data('filter-section');
+        self._activeSections[key] = !self._activeSections[key];
+        $(this).toggleClass('active', !!self._activeSections[key]);
+        self._applyFilter();
       });
 
       $('#weapon-page').on('click', '#weapon-back-top', function (e) {
@@ -244,21 +243,29 @@ Pages.weapons = {
           '<input type="text" class="search-box" id="weapon-search" placeholder="Search weapons by name..." />' +
         '</div>' +
         '<div class="filter-bar">' +
-          '<div class="filter-group"><span class="filter-label">Type</span>' + typeButtons + '</div>' +
+          '<div class="filter-group"><span class="filter-label">Type</span><div class="filter-values">' + typeButtons + '</div></div>' +
+          acNav +
         '</div>' +
-        acNav +
         sectionsHtml +
         '<a class="back-to-top" id="weapon-back-top" href="#">&#8593; Top</a>' +
       '</div>'
     );
   },
 
+  _sectionOk: function (id) {
+    var active = this._activeSections;
+    var any = Object.keys(active).some(function (k) { return active[k]; });
+    return !any || !!active[id];
+  },
+
   _applyFilter: function () {
     var query = (this._searchQuery || '').trim().toLowerCase();
     var activeTypes = Object.keys(this._activeTypes).filter(function (k) { return this._activeTypes[k]; }, this);
     var visibleCount = 0;
+    var self = this;
     $('#weapon-page .ac-section').each(function () {
       var $section = $(this);
+      if (!self._sectionOk(this.id)) { $section.hide(); return; }
       var sectionHasMatch = false;
       $section.find('.weapon-card-wrap').each(function () {
         var $wrap = $(this);
@@ -419,6 +426,7 @@ Pages.weapons = {
   },
 
   destroy: function () {
+    this._activeSections = {};
     this._searchQuery = '';
     this._activeTypes = {};
   },

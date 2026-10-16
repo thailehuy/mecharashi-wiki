@@ -72,7 +72,7 @@ Pages.ststats = {
         '<span class="badge bg-secondary ms-3" id="ststats-count">' + rows.length + '</span>' +
       '</div>' +
       '<div class="filter-bar">' +
-        '<div class="filter-group"><span class="filter-label">Type</span>' + typeButtons + '</div>' +
+        '<div class="filter-group"><span class="filter-label">Type</span><div class="filter-values">' + typeButtons + '</div></div>' +
       '</div>' +
       '<div class="dispatch-table-wrap">' +
         '<table class="dispatch-table ststats-table">' +

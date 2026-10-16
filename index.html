@@ -30,40 +30,11 @@
 <body>
 
   <nav class="navbar sticky-top">
-    <div class="container navbar-row">
+    <div class="container-fluid navbar-row">
       <button class="nav-hamburger" id="navToggle" aria-label="Open menu">
         <span></span><span></span><span></span>
       </button>
       <a class="navbar-brand" href="home/" data-page="home">Mecharashi Wiki</a>
-      <div class="navbar-nav-center">
-        <div class="navbar-nav-center-inner">
-          <a class="nav-link" href="./" data-page="pilots">Pilots</a>
-          <a class="nav-link" href="sts/" data-page="sts">STs</a>
-          <a class="nav-link" href="weapons/" data-page="weapons">Weapons</a>
-          <a class="nav-link" href="backpacks/" data-page="backpacks">Backpacks</a>
-          <a class="nav-link" href="accessories/" data-page="accessories">Accessories</a>
-          <a class="nav-link" href="modules/" data-page="modules">Modules</a>
-          <div class="nav-dropdown" id="miscDropdown">
-            <a class="nav-link nav-dropdown-toggle" href="#" id="miscDropdownToggle">Misc. <span class="nav-dropdown-caret">&#9662;</span></a>
-            <div class="nav-dropdown-menu">
-              <div class="nav-dropdown-menu-inner">
-                <a class="nav-dropdown-item" href="dispatch/" data-page="dispatch">Dispatch Table</a>
-                <a class="nav-dropdown-item" href="exskills/" data-page="exskills">EX Skills</a>
-                <a class="nav-dropdown-item" href="shops/" data-page="shops">Shops</a>
-                <a class="nav-dropdown-item" href="ststats/" data-page="ststats">ST Stats Table</a>
-                <a class="nav-dropdown-item" href="pilotstats/" data-page="pilotstats">Pilot Stats Table</a>
-                <a class="nav-dropdown-item" href="builder/" data-page="builder">Builder</a>
-                <a class="nav-dropdown-item" href="rdbonus/" data-page="rdbonus">R&amp;D Bonus</a>
-                <a class="nav-dropdown-item" href="features/" data-page="features">Features</a>
-                <a class="nav-dropdown-item" href="bosses/" data-page="bosses">Bosses</a>
-                <a class="nav-dropdown-item" href="armedconquest/" data-page="armedconquest">Armed Conquest</a>
-                <a class="nav-dropdown-item" href="clearanceops/" data-page="clearanceops">Clearance Ops</a>
-                <a class="nav-dropdown-item" href="dmgcalc/">DMG Calc (Beta)</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
       <div class="navbar-right">
         <a class="cn-wiki-link" href="https://gitfenix1113.github.io/mecharashi-tools/" target="_blank" rel="noopener">CN/TW Wiki ↗</a>
         <span class="global-version-badge"></span>
@@ -71,42 +42,45 @@
     </div>
   </nav>
 
-  <div class="nav-overlay" id="navOverlay"></div>
-  <div class="nav-drawer" id="navDrawer">
-    <div class="nav-drawer-header">
-      <span class="nav-drawer-brand">Mecharashi Wiki</span>
-      <button class="nav-drawer-close" id="navClose" aria-label="Close menu">&times;</button>
-    </div>
-    <div class="nav-drawer-links">
-      <a class="nav-link nav-drawer-item" href="./" data-page="pilots">Pilots</a>
-      <a class="nav-link nav-drawer-item" href="sts/" data-page="sts">STs</a>
-      <a class="nav-link nav-drawer-item" href="weapons/" data-page="weapons">Weapons</a>
-      <a class="nav-link nav-drawer-item" href="backpacks/" data-page="backpacks">Backpacks</a>
-      <a class="nav-link nav-drawer-item" href="accessories/" data-page="accessories">Accessories</a>
-      <a class="nav-link nav-drawer-item" href="modules/" data-page="modules">Modules</a>
-      <div class="nav-drawer-group-label">Misc.</div>
-      <a class="nav-link nav-drawer-item nav-drawer-subitem" href="dispatch/" data-page="dispatch">Dispatch Table</a>
-      <a class="nav-link nav-drawer-item nav-drawer-subitem" href="exskills/" data-page="exskills">EX Skills</a>
-      <a class="nav-link nav-drawer-item nav-drawer-subitem" href="shops/" data-page="shops">Shops</a>
-      <a class="nav-link nav-drawer-item nav-drawer-subitem" href="ststats/" data-page="ststats">ST Stats Table</a>
-      <a class="nav-link nav-drawer-item nav-drawer-subitem" href="pilotstats/" data-page="pilotstats">Pilot Stats Table</a>
-      <a class="nav-link nav-drawer-item nav-drawer-subitem" href="builder/" data-page="builder">Builder</a>
-      <a class="nav-link nav-drawer-item nav-drawer-subitem" href="rdbonus/" data-page="rdbonus">R&amp;D Bonus</a>
-      <a class="nav-link nav-drawer-item nav-drawer-subitem" href="features/" data-page="features">Features</a>
-      <a class="nav-link nav-drawer-item nav-drawer-subitem" href="bosses/" data-page="bosses">Bosses</a>
-      <a class="nav-link nav-drawer-item nav-drawer-subitem" href="armedconquest/" data-page="armedconquest">Armed Conquest</a>
-      <a class="nav-link nav-drawer-item nav-drawer-subitem" href="clearanceops/" data-page="clearanceops">Clearance Ops</a>
-      <a class="nav-link nav-drawer-item nav-drawer-subitem" href="dmgcalc/">DMG Calc (Beta)</a>
-    </div>
-    <div class="nav-drawer-footer">
-      <a class="cn-wiki-link" href="https://gitfenix1113.github.io/mecharashi-tools/" target="_blank" rel="noopener">CN/TW Wiki ↗</a>
-      <span class="global-version-badge"></span>
-    </div>
-  </div>
+  <div class="site-layout">
+    <div class="nav-overlay" id="navOverlay"></div>
+    <!-- Sticky left sidebar on desktop; slide-out drawer behind the hamburger on mobile. -->
+    <aside class="nav-drawer" id="navDrawer">
+      <div class="nav-drawer-header">
+        <span class="nav-drawer-brand">Mecharashi Wiki</span>
+        <button class="nav-drawer-close" id="navClose" aria-label="Close menu">&times;</button>
+      </div>
+      <div class="nav-drawer-links">
+        <a class="nav-link nav-drawer-item" href="./" data-page="pilots">Pilots</a>
+        <a class="nav-link nav-drawer-item" href="sts/" data-page="sts">STs</a>
+        <a class="nav-link nav-drawer-item" href="weapons/" data-page="weapons">Weapons</a>
+        <a class="nav-link nav-drawer-item" href="backpacks/" data-page="backpacks">Backpacks</a>
+        <a class="nav-link nav-drawer-item" href="accessories/" data-page="accessories">Accessories</a>
+        <a class="nav-link nav-drawer-item" href="modules/" data-page="modules">Modules</a>
+        <div class="nav-drawer-group-label">Misc.</div>
+        <a class="nav-link nav-drawer-item nav-drawer-subitem" href="dispatch/" data-page="dispatch">Dispatch Table</a>
+        <a class="nav-link nav-drawer-item nav-drawer-subitem" href="exskills/" data-page="exskills">EX Skills</a>
+        <a class="nav-link nav-drawer-item nav-drawer-subitem" href="shops/" data-page="shops">Shops</a>
+        <a class="nav-link nav-drawer-item nav-drawer-subitem" href="ststats/" data-page="ststats">ST Stats Table</a>
+        <a class="nav-link nav-drawer-item nav-drawer-subitem" href="pilotstats/" data-page="pilotstats">Pilot Stats Table</a>
+        <a class="nav-link nav-drawer-item nav-drawer-subitem" href="builder/" data-page="builder">Builder</a>
+        <a class="nav-link nav-drawer-item nav-drawer-subitem" href="rdbonus/" data-page="rdbonus">R&amp;D Bonus</a>
+        <a class="nav-link nav-drawer-item nav-drawer-subitem" href="features/" data-page="features">Features</a>
+        <a class="nav-link nav-drawer-item nav-drawer-subitem" href="bosses/" data-page="bosses">Bosses</a>
+        <a class="nav-link nav-drawer-item nav-drawer-subitem" href="armedconquest/" data-page="armedconquest">Armed Conquest</a>
+        <a class="nav-link nav-drawer-item nav-drawer-subitem" href="clearanceops/" data-page="clearanceops">Clearance Ops</a>
+        <a class="nav-link nav-drawer-item nav-drawer-subitem" href="dmgcalc/">DMG Calc (Beta)</a>
+      </div>
+      <div class="nav-drawer-footer">
+        <a class="cn-wiki-link" href="https://gitfenix1113.github.io/mecharashi-tools/" target="_blank" rel="noopener">CN/TW Wiki ↗</a>
+        <span class="global-version-badge"></span>
+      </div>
+    </aside>
 
-  <main class="container py-4">
-    <div id="app-content"></div>
-  </main>
+    <main class="site-main py-4">
+      <div id="app-content"></div>
+    </main>
+  </div>
 
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

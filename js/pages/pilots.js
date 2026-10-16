@@ -137,16 +137,10 @@ Pages.pilots = {
         '<input type="text" class="search-box" id="pilot-search" placeholder="Search pilots by name..." />' +
       '</div>' +
       '<div class="filter-bar">' +
-        '<div class="filter-row">' +
-          '<div class="filter-group"><span class="filter-label">Rank</span>' + rankButtons + '</div>' +
-          '<div class="filter-group"><span class="filter-label">License</span>' + licButtons + '</div>' +
-        '</div>' +
-        '<div class="filter-row">' +
-          '<div class="filter-group"><span class="filter-label">Occupation</span>' + occButtons + '</div>' +
-        '</div>' +
-        '<div class="filter-row">' +
-          '<div class="filter-group"><span class="filter-label">Version</span>' + verButtons + '</div>' +
-        '</div>' +
+        '<div class="filter-group"><span class="filter-label">Rank</span><div class="filter-values">' + rankButtons + '</div></div>' +
+        '<div class="filter-group"><span class="filter-label">License</span><div class="filter-values">' + licButtons + '</div></div>' +
+        '<div class="filter-group"><span class="filter-label">Occupation</span><div class="filter-values">' + occButtons + '</div></div>' +
+        '<div class="filter-group"><span class="filter-label">Version</span><div class="filter-values">' + verButtons + '</div></div>' +
       '</div>' +
       '<div class="row g-3" id="pilot-grid"></div>'
     );

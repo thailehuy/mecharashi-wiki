@@ -230,7 +230,7 @@ def route_titles(index_html):
     return titles
 
 
-# Preview text for the pages under the "Misc." nav dropdown. They reuse the
+# Preview text for the pages under the "Misc." nav group. They reuse the
 # home page's og:image, shown small (twitter:card=summary).
 MISC_DESCRIPTIONS = {
     'dispatch':   'Patch-by-patch schedule of which STs were released in each dispatch group.',
@@ -248,8 +248,8 @@ MISC_DESCRIPTIONS = {
 
 
 def misc_routes(index_html):
-    """Routes linked from the "Misc." nav dropdown in index.html."""
-    return re.findall(r'class="nav-dropdown-item" href="\w+/" data-page="(\w+)"', index_html)
+    """Routes linked under the "Misc." nav group in index.html."""
+    return re.findall(r'class="[^"]*\bnav-drawer-subitem\b[^"]*" href="\w+/" data-page="(\w+)"', index_html)
 
 
 def page_html(index_html, depth, title, description=None, image=None, url=None):

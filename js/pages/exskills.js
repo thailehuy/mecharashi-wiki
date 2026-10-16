@@ -12,7 +12,7 @@ Pages.exskills = {
     var cardsHtml = skills.map(function (sk) {
       var typeLabel = EXSKILL_TYPE_LABEL[sk.type] || sk.type;
       var typeCls   = EXSKILL_TYPE_CLASS[sk.type] || '';
-      var iconSrc   = SKILL_BASE + encodeURIComponent(sk.icon) + '.png';
+      var iconSrc   = skillIconSrc(sk.icon);
       var desc      = Glossary.parseEffects(sk.SpecificEffects || '');
 
       var statBadges =
@@ -30,7 +30,7 @@ Pages.exskills = {
       return (
         '<div class="skill-card">' +
           '<div class="skill-header">' +
-            '<img class="skill-icon" src="' + iconSrc + '" alt="' + $('<span>').text(sk.name).html() + '" />' +
+            '<img class="skill-icon" src="' + iconSrc + '"' + skillIconErrorAttr(sk.icon) + ' alt="' + $('<span>').text(sk.name).html() + '" />' +
             '<div class="skill-header-info">' +
               '<div class="skill-name-row">' +
                 '<span class="skill-name">' + $('<span>').text(sk.name).html() + '</span>' +
