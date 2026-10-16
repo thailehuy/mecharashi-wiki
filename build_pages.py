@@ -220,7 +220,7 @@ def ac_seasons():
 def route_titles(index_html):
     """Every top-level route → its nav label, taken from the links in index.html."""
     titles = {}
-    for route, label in re.findall(r'data-page="(\w+)">([^<]+)<', index_html):
+    for route, label in re.findall(r'data-page="(\w+)">(?:<i [^>]*></i>|<svg .*?</svg>)?([^<]+)<', index_html):
         label = html.unescape(label).strip()
         titles.setdefault(route, 'Home' if label == SITE_NAME else label)
     # Generated folders sit next to the site's own files — never clobber those.

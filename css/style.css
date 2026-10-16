@@ -163,6 +163,23 @@ body {
   border-radius: 6px;
 }
 
+.nav-drawer-item .bi {
+  display: inline-block;
+  width: 1.1em;
+  margin-right: 0.6rem;
+  text-align: center;
+  opacity: 0.85;
+}
+
+svg.bi {
+  height: 1em;
+  vertical-align: -0.125em;
+}
+
+.nav-drawer-item.active .bi {
+  opacity: 1;
+}
+
 .nav-drawer-footer {
   padding: 1rem 1.25rem;
   border-top: 1px solid #2a2a4a;
