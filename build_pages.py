@@ -210,7 +210,7 @@ def ac_seasons():
         # their own line (trailing space: see pilots()). Image: the last boss.
         meta = join(f'Armed Conquest season {season["number"]}', season.get('version') and f'(v{season["version"]})')
         names = [st['boss'] for st in season['stages']]
-        yield ('bosses', season['name'], season['name'] + ' — Armed Conquest',
+        yield ('armedconquest', season['name'], season['name'] + ' — Armed Conquest',
                meta + ' \nBosses and skills: ' + ', '.join(names),
                ASSET_URL + quote(data['bosses'][names[-1]]['portrait']))
 
@@ -241,7 +241,9 @@ MISC_DESCRIPTIONS = {
     'builder':    'Theorycraft an ST loadout (pilot, skills, weapons, backpack and modules) and share it as a link.',
     'rdbonus':    'Maximum R&D bonuses for pilots, STs and weapons from a fully researched tree.',
     'features':   'Every R&D feature for pilots, STs and weapons, by class and R&D tree.',
-    'bosses':     'Bosses of every Armed Conquest season and Clearance Ops chapters 11-17.',
+    'bosses':     'Every Armed Conquest and Clearance Ops boss, with the seasons and chapters it appears in.',
+    'armedconquest': 'Bosses and HP per difficulty of every Armed Conquest season, each with a page of its bosses\' skills.',
+    'clearanceops':  'Bosses and HP of Clearance Ops chapters 11-17.',
 }
 
 

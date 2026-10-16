@@ -3592,7 +3592,36 @@ a.boss-avatar { display: block; }
 .boss-group-head h3 a { color: inherit; text-decoration: none; }
 .boss-group-head h3 a:hover { color: #e94560; }
 .boss-stage { margin-bottom: 1rem; scroll-margin-top: 4.5rem; }
+.boss-anchor { scroll-margin-top: 4.5rem; }
+
+/* Bosses page: each stage a boss is in */
+.boss-entry { display: flex; height: 100%; }
+.boss-entry .boss-avatar { flex: 0 0 38%; max-width: 38%; }
+.boss-entry .boss-info { flex: 1; min-width: 0; }
+.boss-appearances { list-style: none; margin: 0.35rem 0 0; padding: 0; display: flex; flex-direction: column; gap: 0.35rem; }
+.boss-appearances a { color: #e0e0f0; text-decoration: none; font-size: 0.85rem; }
+.boss-appearances a:hover { color: #e94560; }
+.boss-appearances .boss-mech { margin: 0; font-size: 0.75rem; }
+.boss-app-tag {
+  display: inline-block;
+  min-width: 2.6rem;
+  margin-right: 0.35rem;
+  padding: 0 0.3rem;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-align: center;
+}
+.boss-app-ac { background-color: rgba(233, 69, 96, 0.2); color: #ff8fa3; }
+.boss-app-co { background-color: rgba(96, 168, 255, 0.2); color: #9cc8ff; }
+.boss-app-stage { color: #8a8aa0; font-size: 0.75rem; }
 .boss-stage .boss-card { height: auto; }
+.boss-stage-diffs { display: flex; flex-wrap: wrap; gap: 0.25rem; margin-bottom: 0.5rem; }
+.boss-stage-diffs .filter-btn { padding: 0.15rem 0.6rem; font-size: 0.75rem; }
+.boss-stage-bounties { margin: 0.75rem 0 0; }
+.boss-stage-bounties .boss-sub-head { margin-top: 0; }
+.boss-season > .boss-gear { margin: 0 0 1.25rem; }
+.boss-season .boss-gear-item img { width: 42px; height: 42px; }
 .boss-skill[hidden] { display: none; }
 .boss-skill .skill-name-row { margin-bottom: 0; }
 .boss-skill .talent-desc { margin-top: 0.4rem; font-size: 0.9rem; }

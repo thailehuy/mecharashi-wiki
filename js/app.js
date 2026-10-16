@@ -73,7 +73,7 @@ $(function () {
         .map(function (w) { return w.name; });
     },
     backpacks: function () { return ((window.BackpacksData || {}).backpacks || []).map(backpackSlug); },
-    bosses:    function () { return ((window.BossesData || {}).armed_conquest || []).map(function (s) { return s.name; }); },
+    armedconquest: function () { return ((window.BossesData || {}).armed_conquest || []).map(function (s) { return s.name; }); },
     modules:   function () {
       var modules = (window.ModulesData || {}).modules || {};
       return Object.keys(modules).map(function (fam) { return modules[fam].name.toLowerCase(); });
@@ -99,7 +99,7 @@ $(function () {
     return path.indexOf(root) === 0 ? path.slice(root.length) : path.replace(/^\//, '');
   }
 
-  // On a path URL ("bosses/x/#stage-2") the hash is an in-page anchor, not a route.
+  // On a path URL ("armedconquest/x/#stage-2") the hash is an in-page anchor, not a route.
   function currentRoute() {
     var path = relativePath();
     if (window.location.hash.length > 1 && !path) return parseRoute(window.location.hash);
@@ -165,7 +165,7 @@ $(function () {
       go(url.hash);
       return;
     }
-    // On a path link the hash is an anchor to scroll to ("bosses/x/#stage-2").
+    // On a path link the hash is an anchor to scroll to ("armedconquest/x/#stage-2").
     var anchor = url.hash.slice(1) || null;
     var r = pathRoute(url.pathname.slice(root.pathname.length));
     if (!Pages[r.page] || /\.\w+$/.test(url.pathname)) return;
@@ -203,7 +203,7 @@ $(function () {
 
     $('[data-page]').removeClass('active');
     $('[data-page="' + page + '"]').addClass('active');
-    $('#miscDropdownToggle').toggleClass('active', page === 'dispatch' || page === 'exskills' || page === 'shops' || page === 'ststats' || page === 'pilotstats' || page === 'builder' || page === 'rdbonus' || page === 'features' || page === 'bosses');
+    $('#miscDropdownToggle').toggleClass('active', page === 'dispatch' || page === 'exskills' || page === 'shops' || page === 'ststats' || page === 'pilotstats' || page === 'builder' || page === 'rdbonus' || page === 'features' || page === 'bosses' || page === 'armedconquest' || page === 'clearanceops');
 
     // Pages expect the param still URI-encoded, as it used to come straight from the hash.
     $('#app-content').html(p.render(param == null ? null : encodeURIComponent(param)));

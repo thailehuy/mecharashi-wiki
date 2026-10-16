@@ -476,6 +476,14 @@
                 {
                   "name": "Blade Momentum",
                   "description": "Applied DMG and Armor +10%. Can stack. After being critically hit, 1 stack is removed."
+                },
+                {
+                  "name": "Oath",
+                  "description": "At start of action, if a unit is within 6 tiles of [Camilla], targeted skills can only select [Camilla] as the target. Non-targeted skills remain unaffected."
+                },
+                {
+                  "name": "Provocation",
+                  "description": "If the distance to [Zoey] is less than or equal to <color=#F74848>6</color> blocks, only [Zoey] can be targeted by skills. Priority is lower than <buf ID=1012081>[Oath]</buf>. When attacking [Zoey], Hit Rate is reduced by <color=#F74848>15%</color>."
                 }
               ]
             }
@@ -544,6 +552,10 @@
                 {
                   "name": "Voltage Surge",
                   "description": "Deals Fixed DMG equal to 10% of Max HP to enemy units within 1 tile of all units hit."
+                },
+                {
+                  "name": "Link Retaliation",
+                  "description": "After the enemy attacks other allies, launches a retaliation."
                 }
               ],
               "difficulties": [
@@ -555,7 +567,13 @@
               "name": "Floating Fortress",
               "kind": "passive",
               "description": "After a part is destroyed, automatically repairs before taking action in the next turn. After executing a skill, can trigger [Re-ATK].\nWhen Legs are undestroyed, Melee Weapons can only attack the Legs. After Legs are destroyed, Melee DMG Taken +10%.\nDoes not trigger Burning or Mine-style terrain effects.",
-              "icon": "Icon_skill_talent_5130"
+              "icon": "Icon_skill_talent_5130",
+              "buffs": [
+                {
+                  "name": "Re-ATK",
+                  "description": "After the current attack ends, trigger one additional attack. Unable to move before the additional attack unless stated otherwise."
+                }
+              ]
             },
             {
               "name": "Bloodfire Offensive β",
@@ -569,6 +587,10 @@
                 {
                   "name": "Voltage Surge",
                   "description": "Deals Fixed DMG equal to 10% of Max HP to enemy units within 1 tile of all units hit."
+                },
+                {
+                  "name": "Link Retaliation",
+                  "description": "After the enemy attacks other allies, launches a retaliation."
                 }
               ],
               "difficulties": [
@@ -728,6 +750,10 @@
                 {
                   "name": "Counter Field",
                   "description": "Stacks up to 3 times. After taking damage from active or Link Attacks, 1 stack is removed. After combat, for each stack removed, deals [Fixed DMG] equal to 1x the attacker's Weapon ATK to all enemies within 1 ring, up to 3x."
+                },
+                {
+                  "name": "Fixed DMG",
+                  "description": "Ignores Armor and DMG Reduction to deal damage once."
                 }
               ],
               "icon": "Icon_skill_talent_5125"
@@ -796,6 +822,18 @@
                 {
                   "name": "Presence",
                   "description": "Stacks up to 8 times. At full stacks, DMG Dealt +30%, Weapon Range +1, and Movement +2. Removed after 2 actions. If both [Presence] and [Morale] are at full stacks, DMG Dealt +50%, Final DMG Taken -50%, and gains 1 [Re-Act]."
+                },
+                {
+                  "name": "Morale",
+                  "description": "Stacks up to 8 times. At full stacks, dispels all negative effects from self, cannot be inflicted with negative effects, and grants [Guts] to all parts, which is removed after 2 actions. If both [Presence] and [Morale] are at full stacks, DMG Dealt +50%, Final DMG Taken -50%, and gains 1 Re-Act."
+                },
+                {
+                  "name": "Re-Act",
+                  "description": "Can launch active attacks again. Before attacking, can move with full movement distance."
+                },
+                {
+                  "name": "Guts",
+                  "description": "When any part suffers overdamage, the part is not destroyed and instead locks at 1 HP. Lasts until the end of the current attack."
                 }
               ]
             }
@@ -860,6 +898,10 @@
                 {
                   "name": "Blazing Resolve",
                   "description": "DMG +20%. Stacks up to 2 times."
+                },
+                {
+                  "name": "Pursuit",
+                  "description": "Automatically moves toward any enemy that attacks you."
                 }
               ]
             },
@@ -874,6 +916,10 @@
                 {
                   "name": "Emergency Arm Repair - EX",
                   "description": "If an Arm is destroyed, immediately restores 100% of the current Arm's HP and gains [Partial Repair] and [Defense Disabled]. If an Arm is destroyed, immediately restores 100% of the current Arm's HP and gains [Partial Repair]."
+                },
+                {
+                  "name": "Partial Repair",
+                  "description": "DMG -50% when attacking with the current weapon."
                 }
               ]
             },
@@ -1022,6 +1068,10 @@
                     "CD 0"
                   ],
                   "description": "Can choose 1 ally unit across the entire map and swap positions with them, then triggers [Re-Act]."
+                },
+                {
+                  "name": "Re-Act",
+                  "description": "Can launch active attacks again. Before attacking, can move with full movement distance."
                 }
               ]
             }
@@ -1102,7 +1152,20 @@
               "type": "Passive",
               "icon": "Icon_skill_passive_1139",
               "description": "Gains the [Link Attack] ability. After launching a Link Attack, if both Arms are undestroyed, executes [Link Storm], applying 1 stack of [Deceleration Mark] to the target hit. Lasts for 2 turns.",
-              "kind": "passive"
+              "kind": "passive",
+              "buffs": [
+                {
+                  "name": "Link Attack",
+                  "description": "After an ally actively attacks, launches an Extra Strike on the same target."
+                },
+                {
+                  "name": "Deceleration Mark",
+                  "description": "DMG Taken +20%, Hit Rate -20%.",
+                  "tags": [
+                    "Type: Debuff"
+                  ]
+                }
+              ]
             },
             {
               "name": "Link Storm",
@@ -1226,7 +1289,20 @@
               "icon": "Icon_skill_order_1107",
               "cost": "1AP",
               "description": "Uses a Machine Gun to attack a target, dealing 1.0x DMG. Inflicts 1 stack of [Crimson Mark] on targets hit, lasting for 2 turns. Gains [Re-Act] after use, up to 1 time per turn.",
-              "kind": "active"
+              "kind": "active",
+              "buffs": [
+                {
+                  "name": "Crimson Mark",
+                  "description": "Fixed DMG Taken +30%. Stacks up to 10 times.",
+                  "tags": [
+                    "Type: Debuff"
+                  ]
+                },
+                {
+                  "name": "Re-Act",
+                  "description": "Can launch active attacks again. Before attacking, can move with full movement distance."
+                }
+              ]
             },
             {
               "name": "Echo Burst",
@@ -1239,6 +1315,13 @@
                 {
                   "name": "Bloody Echo",
                   "description": "Fixed DMG +30%. Stacks up to 10 times."
+                },
+                {
+                  "name": "Crimson Mark",
+                  "description": "Fixed DMG Taken +30%. Stacks up to 10 times.",
+                  "tags": [
+                    "Type: Debuff"
+                  ]
                 }
               ],
               "kind": "active"
@@ -1248,7 +1331,20 @@
               "type": "Passive",
               "icon": "Icon_skill_passive_5014",
               "description": "At end of action, if own [Bloody Echo] stacks are greater than or equal to 3, applies 1 stack of [Crimson Mark] to all enemy units.",
-              "kind": "passive"
+              "kind": "passive",
+              "buffs": [
+                {
+                  "name": "Bloody Echo",
+                  "description": "Fixed DMG +30%. Stacks up to 10 times."
+                },
+                {
+                  "name": "Crimson Mark",
+                  "description": "Fixed DMG Taken +30%. Stacks up to 10 times.",
+                  "tags": [
+                    "Type: Debuff"
+                  ]
+                }
+              ]
             },
             {
               "name": "Emergency Arm Repair",
@@ -1398,7 +1494,16 @@
               "cost": "1AP",
               "cd": "0Turn(s)",
               "description": "Uses two Alter-Blades to thrust 4 tiles forward, dealing 2x AoE DMG to all enemies in the path. Applies [Deceleration] to targets hit, lasting for 2 turns, and absorbs remaining AP from all enemies within the attack range. Increases own AP after absorption and gains Re-Act after use.",
-              "kind": "active"
+              "kind": "active",
+              "buffs": [
+                {
+                  "name": "Deceleration",
+                  "description": "Movement -1, Dodge Rate -20%. Lasts for 2 turns.",
+                  "tags": [
+                    "Type: Debuff"
+                  ]
+                }
+              ]
             },
             {
               "name": "Bloodblade Frenzy",
@@ -1406,7 +1511,13 @@
               "icon": "Icon_skill_main_1160",
               "cost": "2AP",
               "description": "Uses two Alter-Blades to strike a single target in rapid succession, hitting at least 4 times. Each attack deals 1.0x DMG. After that, each additional 1 attack costs 1 AP until AP runs out. Ignores the Large Shield [Target Shift] effect.",
-              "kind": "active"
+              "kind": "active",
+              "buffs": [
+                {
+                  "name": "Target Shift",
+                  "description": "Ensures the enemy's attack hits the designated part."
+                }
+              ]
             },
             {
               "name": "Shadow Domain II",
@@ -1417,6 +1528,10 @@
                 {
                   "name": "Kagemai Field",
                   "description": "When an enemy unit outside the area deals damage to Gutzman, the Applied DMG is reduced by 50%, and Gutzman gains 1 stack of [Shadow Step]."
+                },
+                {
+                  "name": "Shadow Step",
+                  "description": "Each stack increases Dodge Rate by 5% and Movement by 1, up to 3 stacks, lasting for 2 turns."
                 }
               ],
               "kind": "passive",
@@ -1450,6 +1565,14 @@
                 {
                   "name": "Shadow Step",
                   "description": "Each stack increases Dodge Rate by 5% and Movement by 1, up to 3 stacks, lasting for 2 turns."
+                },
+                {
+                  "name": "Oath",
+                  "description": "At start of action, if a unit is within 6 tiles of [Camilla], targeted skills can only select [Camilla] as the target. Non-targeted skills remain unaffected."
+                },
+                {
+                  "name": "Provocation",
+                  "description": "If the distance to [Zoey] is less than or equal to <color=#F74848>6</color> blocks, only [Zoey] can be targeted by skills. Priority is lower than <buf ID=1012081>[Oath]</buf>. When attacking [Zoey], Hit Rate is reduced by <color=#F74848>15%</color>."
                 }
               ],
               "kind": "passive"
@@ -1470,6 +1593,10 @@
                 {
                   "name": "Shadow Domain",
                   "description": "Full Barrage"
+                },
+                {
+                  "name": "Shadow Step",
+                  "description": "Each stack increases Dodge Rate by 5% and Movement by 1, up to 3 stacks, lasting for 2 turns."
                 }
               ],
               "difficulties": [
@@ -1607,6 +1734,10 @@
                 {
                   "name": "Spark",
                   "description": "At end of action, all parts take [Fixed DMG] equal to 10% of Max HP. Deals an additional 10% [Fixed DMG] for each additional ST with [Spark] on the battlefield."
+                },
+                {
+                  "name": "Fixed DMG",
+                  "description": "Ignores Armor and DMG Reduction to deal damage once."
                 }
               ]
             }
@@ -1889,6 +2020,10 @@
                 {
                   "name": "Arashi Barrier",
                   "description": "Final DMG Taken -10%. Stacks up to 4 times."
+                },
+                {
+                  "name": "Crash",
+                  "description": "Unable to take action!"
                 }
               ]
             },
@@ -2004,6 +2139,22 @@
                   "tags": [
                     "Type: Debuff"
                   ]
+                },
+                {
+                  "name": "Resentment",
+                  "description": "DMG Taken -10%."
+                },
+                {
+                  "name": "Oath",
+                  "description": "At start of action, if a unit is within 6 tiles of [Camilla], targeted skills can only select [Camilla] as the target. Non-targeted skills remain unaffected."
+                },
+                {
+                  "name": "Provocation",
+                  "description": "If the distance to [Zoey] is less than or equal to <color=#F74848>6</color> blocks, only [Zoey] can be targeted by skills. Priority is lower than <buf ID=1012081>[Oath]</buf>. When attacking [Zoey], Hit Rate is reduced by <color=#F74848>15%</color>."
+                },
+                {
+                  "name": "Fixed DMG",
+                  "description": "Ignores Armor and DMG Reduction to deal damage once."
                 }
               ],
               "kind": "passive"
@@ -2099,7 +2250,13 @@
             {
               "name": "Out of Reach",
               "difficulty": "Extreme",
-              "description": "Distance for clearing [Resentment] changes from 3 tiles and beyond to 4 tiles and beyond."
+              "description": "Distance for clearing [Resentment] changes from 3 tiles and beyond to 4 tiles and beyond.",
+              "buffs": [
+                {
+                  "name": "Resentment",
+                  "description": "DMG Taken -10%."
+                }
+              ]
             }
           ],
           "clues": [
@@ -2179,14 +2336,44 @@
               "icon": "Icon_skill_main_1138",
               "cost": "0AP",
               "description": "Uses a Machine Gun to attack a target, prioritizing targets other than Superconductive Pochy, dealing 1.3x DMG. Inflicts 3 stacks of [Nullify Buff] on the target hit. Can [Re-ATK] after the attack, up to 1 time per turn.",
-              "kind": "active"
+              "kind": "active",
+              "buffs": [
+                {
+                  "name": "Nullify Buff",
+                  "description": "Immune to the next buff. One stack is removed upon triggering. Stacks up to 10 times.",
+                  "tags": [
+                    "Type: Debuff"
+                  ]
+                },
+                {
+                  "name": "Re-ATK",
+                  "description": "After the current attack ends, trigger one additional attack. Unable to move before the additional attack unless stated otherwise."
+                }
+              ]
             },
             {
               "name": "Phantom Step",
               "type": "Passive",
               "icon": "Icon_skill_passive_5011",
               "description": "When actively attacked, if the attacker has fewer than 7 buffs, retaliates with [Dual Gun Retaliation] and inflicts 1 stack of [Nullify Buff] on the attacker. If Retaliation is disabled, triggers [Pursuit] and automatically moves 3 tiles toward the attacker after combat, then executes [Maelstrom].",
-              "kind": "passive"
+              "kind": "passive",
+              "buffs": [
+                {
+                  "name": "Dual Gun Retaliation",
+                  "description": "After the enemy attacks this unit, uses two Machine Guns to retaliate."
+                },
+                {
+                  "name": "Nullify Buff",
+                  "description": "Immune to the next buff. One stack is removed upon triggering. Stacks up to 10 times.",
+                  "tags": [
+                    "Type: Debuff"
+                  ]
+                },
+                {
+                  "name": "Pursuit",
+                  "description": "Automatically moves toward any enemy that attacks you."
+                }
+              ]
             },
             {
               "name": "Maelstrom",
@@ -2401,6 +2588,18 @@
                 {
                   "name": "Stable",
                   "description": "Immune to Displacement effects."
+                },
+                {
+                  "name": "Re-Act",
+                  "description": "Can launch active attacks again. Before attacking, can move with full movement distance."
+                },
+                {
+                  "name": "Disarm",
+                  "description": "Unable to use Normal Attacks, Active Skills, or Codes."
+                },
+                {
+                  "name": "Movement Inhibition I",
+                  "description": "Movement -1."
                 }
               ],
               "kind": "passive"
@@ -2509,6 +2708,14 @@
                   "tags": [
                     "Type: Debuff"
                   ]
+                },
+                {
+                  "name": "Flame DMG",
+                  "description": "Damage dealt is based on the multiplier percentage of the main skill."
+                },
+                {
+                  "name": "Fixed DMG",
+                  "description": "Ignores Armor and DMG Reduction to deal damage once."
                 }
               ],
               "kind": "active"
@@ -2525,6 +2732,10 @@
                   "tags": [
                     "Type: Debuff"
                   ]
+                },
+                {
+                  "name": "Fixed DMG",
+                  "description": "Ignores Armor and DMG Reduction to deal damage once."
                 }
               ],
               "kind": "passive"
@@ -2550,7 +2761,13 @@
               "type": "Talent",
               "icon": "Icon_skill_talent_1110",
               "description": "When any enemy unit is repaired, restores own HP for 10% of the total Repair AMT applied.\nAfter action starts, gains 2 stacks of [Full-System Repair], stacking up to 10 times. Triggers 1 time every 3 turns.\nEach time Link Attack DMG is taken, immediately clears 1 stack of [Full-System Repair]. Each time Retaliation DMG is taken, immediately clears 2 stacks of [Full-System Repair].",
-              "kind": "passive"
+              "kind": "passive",
+              "buffs": [
+                {
+                  "name": "Full-System Repair",
+                  "description": "Repair AMT +100%."
+                }
+              ]
             }
           ],
           "description": "Any treasure he has yet to obtain is a treasure he is destined to acquire.",
@@ -2680,6 +2897,22 @@
                     "Non-Dispellable",
                     "Non-Replicable"
                   ]
+                },
+                {
+                  "name": "Re-ATK",
+                  "description": "After the current attack ends, trigger one additional attack. Unable to move before the additional attack unless stated otherwise."
+                },
+                {
+                  "name": "Overcharged Defense",
+                  "description": "All parts gain Temporary HP equal to 5% of Max HP.",
+                  "tags": [
+                    "Non-Dispellable",
+                    "Non-Replicable"
+                  ]
+                },
+                {
+                  "name": "Percentage-Based Fixed DMG",
+                  "description": "Fixed DMG based on own HP Percentage."
                 }
               ],
               "kind": "active"
@@ -2694,7 +2927,23 @@
               "buffs": [
                 {
                   "name": "Electric Surge Terrain",
-                  "description": "Terrain card (purple header bar, no tag bullets): Inflicts [FCS Failure] on units that remain on this tile, lasting for 1 turn."
+                  "description": "Inflicts [FCS Failure] on units that remain on this tile, lasting for 1 turn."
+                },
+                {
+                  "name": "Linebreaker",
+                  "description": "DMG +30% until the start of Douglas's next turn.",
+                  "tags": [
+                    "Non-Dispellable",
+                    "Non-Replicable"
+                  ]
+                },
+                {
+                  "name": "Re-ATK",
+                  "description": "After the current attack ends, trigger one additional attack. Unable to move before the additional attack unless stated otherwise."
+                },
+                {
+                  "name": "FCS Failure",
+                  "description": "Unable to use any Active Skills or Codes except for the Normal Attack."
                 }
               ],
               "kind": "active"
@@ -2704,7 +2953,33 @@
               "type": "Passive",
               "icon": "Icon_skill_passive_5142",
               "description": "When possessing [Overcharged Defense], allows allies within 3 tiles to use Assault or Ranged Weapons to launch a [Link Retaliation], dealing 1x DMG.\nWhen possessing [Linebreaker], allows allies within 3 tiles to launch a [Link Attack] on the target, dealing 1x DMG. This Link Attack does not require allies to have Link abilities and does not consume Link uses.",
-              "kind": "passive"
+              "kind": "passive",
+              "buffs": [
+                {
+                  "name": "Overcharged Defense",
+                  "description": "All parts gain Temporary HP equal to 5% of Max HP.",
+                  "tags": [
+                    "Non-Dispellable",
+                    "Non-Replicable"
+                  ]
+                },
+                {
+                  "name": "Link Retaliation",
+                  "description": "After the enemy attacks other allies, launches a retaliation."
+                },
+                {
+                  "name": "Linebreaker",
+                  "description": "DMG +30% until the start of Douglas's next turn.",
+                  "tags": [
+                    "Non-Dispellable",
+                    "Non-Replicable"
+                  ]
+                },
+                {
+                  "name": "Link Attack",
+                  "description": "After an ally actively attacks, launches an Extra Strike on the same target."
+                }
+              ]
             },
             {
               "name": "Emergency Arm Repair",
@@ -2723,7 +2998,21 @@
               "name": "Holmberg",
               "kind": "passive",
               "description": "Cannot be protected by [Guard]. After executing a skill, can trigger [Re-ATK].\nWhen the UAV Bay is undestroyed, cannot be attacked by Melee Weapons and does not trigger Burning or Mine-style terrain effects.\nAt the start of battle and the end of [Your Turn], deploys 2 Tracers.\nWhen HP first falls below 50%, enters the  state, UAV Bay HP is restored to 100%, and gains 5 stacks of .",
-              "icon": "Icon_skill_talent_5130"
+              "icon": "Icon_skill_talent_5130",
+              "buffs": [
+                {
+                  "name": "Guard",
+                  "description": "Protects allies within 2 adjacent tiles from Assault and Ranged attacks. Triggers up to 2 times per turn and lasts 2 turns. Additionally, gains [Defensive Stance I]. Can only trigger 1 time per turn."
+                },
+                {
+                  "name": "Re-ATK",
+                  "description": "After the current attack ends, trigger one additional attack. Unable to move before the additional attack unless stated otherwise."
+                },
+                {
+                  "name": "Defensive Stance I",
+                  "description": "DMG Taken -15%."
+                }
+              ]
             }
           ],
           "description": "His soul is beyond redemption, instigating him not to give up any bit of profit he can covet.",
@@ -2770,6 +3059,10 @@
                     "Non-Dispellable",
                     "Non-Replicable"
                   ]
+                },
+                {
+                  "name": "Stealth",
+                  "description": "Cannot be targeted by active attacks. [Stealth] is forcibly removed when taking damage, or if enemies exist within 1 adjacent tile."
                 }
               ]
             }
@@ -2835,7 +3128,18 @@
               "cost": "1AP",
               "weapon": "SG",
               "description": "Uses a Shotgun to attack a target, dealing 1.0x DMG, prioritizing the target with the highest [Collapse Damage] stacks. After combat, applies 1 stack of [Collapse Damage] to the target hit, lasting for 2 turns, then can continue moving with remaining Movement.",
-              "kind": "active"
+              "kind": "active",
+              "buffs": [
+                {
+                  "name": "Collapse Damage",
+                  "description": "AP Cost +1 for normal attacks, active skills, and codes. After actively attacking, according to the number of [Collapse Damage] stacks, each stack deals Fixed DMG equal to 10% of Max HP to all parts of this unit. Stacks up to 10 times.",
+                  "tags": [
+                    "Type: Debuff",
+                    "Non-Dispellable",
+                    "Non-Replicable"
+                  ]
+                }
+              ]
             },
             {
               "name": "Rupture Impact",
@@ -2844,14 +3148,36 @@
               "cost": "0AP",
               "cd": "0Turn(s)",
               "description": "Simultaneously uses two Shotguns to attack the target and all targets within a 1-tile cross-shaped area, dealing 1.0x AoE DMG 2 times. If the difference between the maximum and minimum stacks of [Collapse Damage] possessed by the enemy unit exceeds 3, each excess stack increases the skill multiplier of this attack by 0.5 (considered as 0 stacks if not possessing [Collapse Damage]).",
-              "kind": "active"
+              "kind": "active",
+              "buffs": [
+                {
+                  "name": "Collapse Damage",
+                  "description": "AP Cost +1 for normal attacks, active skills, and codes. After actively attacking, according to the number of [Collapse Damage] stacks, each stack deals Fixed DMG equal to 10% of Max HP to all parts of this unit. Stacks up to 10 times.",
+                  "tags": [
+                    "Type: Debuff",
+                    "Non-Dispellable",
+                    "Non-Replicable"
+                  ]
+                }
+              ]
             },
             {
               "name": "Interrupt Counter",
               "type": "Passive",
               "icon": "Icon_skill_passive_5126",
               "description": "At start of action, if attacked more than 3 times during the previous enemy turn, applies 3 stacks of [Collapse Damage] to the target with the most stacks of [Collapse Damage] on the battlefield.\nAfter actively attacking, if the difference between the most and least stacks of [Collapse Damage] on enemy units exceeds 3, triggers [Rupture Impact].",
-              "kind": "passive"
+              "kind": "passive",
+              "buffs": [
+                {
+                  "name": "Collapse Damage",
+                  "description": "AP Cost +1 for normal attacks, active skills, and codes. After actively attacking, according to the number of [Collapse Damage] stacks, each stack deals Fixed DMG equal to 10% of Max HP to all parts of this unit. Stacks up to 10 times.",
+                  "tags": [
+                    "Type: Debuff",
+                    "Non-Dispellable",
+                    "Non-Replicable"
+                  ]
+                }
+              ]
             },
             {
               "name": "Emergency Arm Repair",
@@ -2901,7 +3227,18 @@
             {
               "name": "Calibrated Interference",
               "difficulty": "Extreme",
-              "description": "When activating [Precision Reforge], all [Collapse Damage] effects are removed and changed to removing 3 stacks of [Collapse Damage]."
+              "description": "When activating [Precision Reforge], all [Collapse Damage] effects are removed and changed to removing 3 stacks of [Collapse Damage].",
+              "buffs": [
+                {
+                  "name": "Collapse Damage",
+                  "description": "AP Cost +1 for normal attacks, active skills, and codes. After actively attacking, according to the number of [Collapse Damage] stacks, each stack deals Fixed DMG equal to 10% of Max HP to all parts of this unit. Stacks up to 10 times.",
+                  "tags": [
+                    "Type: Debuff",
+                    "Non-Dispellable",
+                    "Non-Replicable"
+                  ]
+                }
+              ]
             }
           ],
           "units": [
@@ -2910,7 +3247,7 @@
               "skills": [
                 {
                   "name": "Crisis Repair",
-                  "description": "Device card (icon + name header, no tag bullets): When the enemy is within an adjacent 1 ring, [Precision Reforge] can be used to destroy this device.",
+                  "description": "When the enemy is within an adjacent 1 ring, [Precision Reforge] can be used to destroy this device.",
                   "type": "Other"
                 },
                 {
@@ -2918,7 +3255,18 @@
                   "type": "Code",
                   "cost": "0AP",
                   "cd": "0Turn(s)",
-                  "description": "Restores HP equal to 20% of Max Part HP to all parts of a single ST. Can repair 1 destroyed part. Removes all [Collapse Damage] and gains 1 AP."
+                  "description": "Restores HP equal to 20% of Max Part HP to all parts of a single ST. Can repair 1 destroyed part. Removes all [Collapse Damage] and gains 1 AP.",
+                  "buffs": [
+                    {
+                      "name": "Collapse Damage",
+                      "description": "AP Cost +1 for normal attacks, active skills, and codes. After actively attacking, according to the number of [Collapse Damage] stacks, each stack deals Fixed DMG equal to 10% of Max HP to all parts of this unit. Stacks up to 10 times.",
+                      "tags": [
+                        "Type: Debuff",
+                        "Non-Dispellable",
+                        "Non-Replicable"
+                      ]
+                    }
+                  ]
                 }
               ]
             }
@@ -2977,6 +3325,14 @@
                 {
                   "name": "Incisive Retaliation",
                   "description": "When attacked by Melee or Ranged Weapons, if equipped with two Alter-Blades and both Arms are undestroyed, interrupts the attack and triggers [Incisive Retaliation], dealing 1.2x DMG, prioritizing hits on Arms carrying a weapon. After triggering, 1 Sword Stance stack is removed.\n[Incisive Retaliation] ignores the Large Shield [Target Shift] effect."
+                },
+                {
+                  "name": "Re-Act",
+                  "description": "Can launch active attacks again. Before attacking, can move with full movement distance."
+                },
+                {
+                  "name": "Target Shift",
+                  "description": "Ensures the enemy's attack hits the designated part."
                 }
               ],
               "kind": "passive"
@@ -2988,7 +3344,22 @@
               "cost": "1AP",
               "cd": "1Turn(s)",
               "description": "Uses two Alter-Blades to thrust 5 tiles forward, dealing 1x AoE DMG to all enemies in the path. Restores HP of undestroyed parts after combat. Repair AMT is equal to 100% of damage dealt. Gains 1 stack of [Sword Stance] for each enemy unit hit.",
-              "kind": "active"
+              "kind": "active",
+              "buffs": [
+                {
+                  "name": "Sword Stance",
+                  "description": "After actively attacking, for each stack of Sword Stance, triggers [Re-Act] once. Each [Re-Act] consumes 1 stack of Sword Stance. Can trigger up to 3 times per turn.",
+                  "tags": [
+                    "Type: Buffs",
+                    "Non-Dispellable",
+                    "Non-Replicable"
+                  ]
+                },
+                {
+                  "name": "Re-Act",
+                  "description": "Can launch active attacks again. Before attacking, can move with full movement distance."
+                }
+              ]
             },
             {
               "name": "Deadly Slash",
@@ -2997,7 +3368,26 @@
               "cost": "1AP",
               "weapon": "Alter-Blade",
               "description": "Uses an Alter-Blade to attack a target, dealing 1x DMG. This attack targets the part with the lowest HP. If possessing 3 or more stacks of [Sword Stance], after combat, inflicts [Crash] on the target, lasting for 1 turn.",
-              "kind": "active"
+              "kind": "active",
+              "buffs": [
+                {
+                  "name": "Sword Stance",
+                  "description": "After actively attacking, for each stack of Sword Stance, triggers [Re-Act] once. Each [Re-Act] consumes 1 stack of Sword Stance. Can trigger up to 3 times per turn.",
+                  "tags": [
+                    "Type: Buffs",
+                    "Non-Dispellable",
+                    "Non-Replicable"
+                  ]
+                },
+                {
+                  "name": "Crash",
+                  "description": "Unable to take action!"
+                },
+                {
+                  "name": "Re-Act",
+                  "description": "Can launch active attacks again. Before attacking, can move with full movement distance."
+                }
+              ]
             },
             {
               "name": "Emergency Arm Repair",
@@ -3047,7 +3437,13 @@
             {
               "name": "Arms Prohibition",
               "difficulty": "Extreme",
-              "description": "[Enemy] When actively attacking, applies [Weapon Inhibition] to the target unit hit after combat, lasting for 1 turn."
+              "description": "[Enemy] When actively attacking, applies [Weapon Inhibition] to the target unit hit after combat, lasting for 1 turn.",
+              "buffs": [
+                {
+                  "name": "Weapon Inhibition",
+                  "description": "Cannot execute weapon skills or attack codes except for normal attacks."
+                }
+              ]
             }
           ]
         },
@@ -3091,7 +3487,21 @@
               "type": "Talent",
               "icon": "Icon_skill_talent_5130",
               "description": "Immune to Displacement, Crash, Repair Disabled, Skills Disabled, AP Cost UP, and Ammo Reduction-style effects. Reduces [Percentage DMG] by 66%. Body is immune to [Execution] effects, and the HP percentage requirement for triggering [Execution] effects on parts other than the Body is reduced by 66%. Automatically repairs destroyed parts, and after executing a skill, [Re-ATK] can trigger. When Legs are not destroyed, Melee Weapons can only attack the Legs. After Legs are destroyed, Melee DMG Taken +10%.",
-              "kind": "passive"
+              "kind": "passive",
+              "buffs": [
+                {
+                  "name": "Percentage DMG",
+                  "description": "Fixed DMG based on HP Percentage."
+                },
+                {
+                  "name": "Execution",
+                  "description": "When specific conditions are met, the part is directly destroyed after combat. This effect ignores Guts."
+                },
+                {
+                  "name": "Re-ATK",
+                  "description": "After the current attack ends, trigger one additional attack. Unable to move before the additional attack unless stated otherwise."
+                }
+              ]
             },
             {
               "name": "Riptide Spray",
@@ -3119,7 +3529,17 @@
               "cost": "1AP",
               "cd": "1Turn(s)",
               "description": "After 1 turn, uses a Rocket Launcher to attack a random single target within a 3x3-tile area centered on the locked-on target, dealing 0.06x DMG to all parts of the target. Triggers 16 times, with the target being randomly selected each time. After combat, applies 2 stacks of [Ambition] to all targets hit.",
-              "kind": "active"
+              "kind": "active",
+              "buffs": [
+                {
+                  "name": "Ambition",
+                  "description": "DMG +50%. After Gutzman takes action, loses 1 stack of [Ambition]. When an ST with [Ambition] is afflicted with it again, prioritizes destruction of 1 undestroyed part other than the Body. Stacks up to 3 times. Can only trigger once per turn.",
+                  "tags": [
+                    "Type: Debuff",
+                    "Non-Dispellable"
+                  ]
+                }
+              ]
             },
             {
               "name": "Rail Gun Suppression",
@@ -3128,7 +3548,17 @@
               "cost": "1AP",
               "cd": "0Turn(s)",
               "description": "After 1 turn, uses a Rail Gun to attack all targets in 2 warning directions within a 1x5-tile line, dealing 0.9x AoE DMG. After combat, applies 2 stacks of [Ambition] to all targets hit.",
-              "kind": "active"
+              "kind": "active",
+              "buffs": [
+                {
+                  "name": "Ambition",
+                  "description": "DMG +50%. After Gutzman takes action, loses 1 stack of [Ambition]. When an ST with [Ambition] is afflicted with it again, prioritizes destruction of 1 undestroyed part other than the Body. Stacks up to 3 times. Can only trigger once per turn.",
+                  "tags": [
+                    "Type: Debuff",
+                    "Non-Dispellable"
+                  ]
+                }
+              ]
             },
             {
               "name": "Malicious Thought",
@@ -3139,6 +3569,14 @@
                 {
                   "name": "Shock Wave",
                   "description": "Knocks all targets in a 1x3x5-tile line back 2 tiles."
+                },
+                {
+                  "name": "Ambition",
+                  "description": "DMG +50%. After Gutzman takes action, loses 1 stack of [Ambition]. When an ST with [Ambition] is afflicted with it again, prioritizes destruction of 1 undestroyed part other than the Body. Stacks up to 3 times. Can only trigger once per turn.",
+                  "tags": [
+                    "Type: Debuff",
+                    "Non-Dispellable"
+                  ]
                 }
               ],
               "kind": "passive"
@@ -3160,7 +3598,17 @@
             {
               "name": "Arc",
               "difficulty": "Extreme",
-              "description": "[Enemy] When Gutzman unleashes any AoE attack, after combat, applies [Electric Surge Terrain] to the tiles hit, lasting for 2 turns."
+              "description": "[Enemy] When Gutzman unleashes any AoE attack, after combat, applies [Electric Surge Terrain] to the tiles hit, lasting for 2 turns.",
+              "buffs": [
+                {
+                  "name": "Electric Surge Terrain",
+                  "description": "Inflicts [FCS Failure] on units that remain on this tile, lasting for 1 turn."
+                },
+                {
+                  "name": "FCS Failure",
+                  "description": "Unable to use any Active Skills or Codes except for the Normal Attack."
+                }
+              ]
             }
           ]
         }
@@ -3223,6 +3671,18 @@
                 {
                   "name": "Balance",
                   "description": "Equalizes HP percentage across all parts. Destroyed parts are not included."
+                },
+                {
+                  "name": "Re-ATK",
+                  "description": "Can trigger a Re-ATK in place. Cannot move before attacking."
+                },
+                {
+                  "name": "Re-Act",
+                  "description": "Can launch active attacks again. Before attacking, can move with full movement distance."
+                },
+                {
+                  "name": "Re-Mv",
+                  "description": "Can continue to move but cannot attack after moving."
                 }
               ],
               "kind": "passive"
@@ -3234,7 +3694,29 @@
               "cost": "2AP",
               "cd": "0Turn(s)",
               "description": "Uses a Heavy Machine Gun to attack all targets in a cone ahead, dealing 0.7x DMG. DMG +100% against enemies with [Pollution].",
-              "kind": "active"
+              "kind": "active",
+              "buffs": [
+                {
+                  "name": "Pollution",
+                  "description": "Cannot trigger [Re-Act], [Re-ATK], or [Re-Mv].",
+                  "tags": [
+                    "Type: Debuff",
+                    "Non-Dispellable"
+                  ]
+                },
+                {
+                  "name": "Re-Act",
+                  "description": "Can launch active attacks again. Before attacking, can move with full movement distance."
+                },
+                {
+                  "name": "Re-ATK",
+                  "description": "Can trigger a Re-ATK in place. Cannot move before attacking."
+                },
+                {
+                  "name": "Re-Mv",
+                  "description": "Can continue to move but cannot attack after moving."
+                }
+              ]
             },
             {
               "name": "Hyperpressure Overload",
@@ -3250,6 +3732,26 @@
                     "Non-Dispellable",
                     "Non-Replicable"
                   ]
+                },
+                {
+                  "name": "Pollution",
+                  "description": "Cannot trigger [Re-Act], [Re-ATK], or [Re-Mv].",
+                  "tags": [
+                    "Type: Debuff",
+                    "Non-Dispellable"
+                  ]
+                },
+                {
+                  "name": "Re-Act",
+                  "description": "Can launch active attacks again. Before attacking, can move with full movement distance."
+                },
+                {
+                  "name": "Re-ATK",
+                  "description": "Can trigger a Re-ATK in place. Cannot move before attacking."
+                },
+                {
+                  "name": "Re-Mv",
+                  "description": "Can continue to move but cannot attack after moving."
                 }
               ],
               "kind": "active"
@@ -3259,7 +3761,13 @@
               "type": "Passive",
               "icon": "Icon_skill_passive_1113",
               "description": "When both Arms are undestroyed, all skill damage multipliers +0.1.\nWhen wielding a Heavy Machine Gun with one hand, Hit Rate no longer decreases.\nBody is significantly enhanced, and when both Arms suffer overdamage, triggers [Guts]. Can only trigger 1 time per turn.",
-              "kind": "passive"
+              "kind": "passive",
+              "buffs": [
+                {
+                  "name": "Guts",
+                  "description": "When any part suffers overdamage, the part is not destroyed and instead locks at 1 HP. Lasts until the end of the current attack."
+                }
+              ]
             }
           ],
           "description": "If I don’t find a way, there’ll be no food – Meritus doesn’t like going hungry.",
@@ -3395,6 +3903,10 @@
                     "Non-Dispellable",
                     "Non-Replicable"
                   ]
+                },
+                {
+                  "name": "Re-ATK",
+                  "description": "Can trigger a Re-ATK in place. Cannot move before attacking."
                 }
               ],
               "kind": "active"
@@ -3404,7 +3916,13 @@
               "type": "Passive",
               "icon": "Icon_skill_passive_1001",
               "description": "Provides covering fire for allies. Triggers [Vigilant Shot] before the enemy's attack, dealing 3x DMG. Always targets the part with the lowest HP.",
-              "kind": "passive"
+              "kind": "passive",
+              "buffs": [
+                {
+                  "name": "Vigilant Shot",
+                  "description": "Preempts an attack before the enemy attempts to attack other allies."
+                }
+              ]
             }
           ],
           "description": "You can defeat him, but you’ll never escape his shadow.",
@@ -3520,6 +4038,10 @@
                     "Type: Debuff",
                     "Non-Dispellable"
                   ]
+                },
+                {
+                  "name": "Fixed DMG",
+                  "description": "Ignores Armor and DMG Reduction to deal damage once."
                 }
               ],
               "kind": "active"
@@ -3531,7 +4053,21 @@
               "cost": "2AP",
               "weapon": "MG",
               "description": "Uses a Machine Gun to attack a target, dealing 1.2x DMG. Inflicts [Backfire Mark] on targets hit, lasting for 2 turns.",
-              "kind": "active"
+              "kind": "active",
+              "buffs": [
+                {
+                  "name": "Backfire Mark",
+                  "description": "When Eller takes attack damage, the attacker takes an equal amount of [Fixed DMG].",
+                  "tags": [
+                    "Type: Debuff",
+                    "Non-Dispellable"
+                  ]
+                },
+                {
+                  "name": "Fixed DMG",
+                  "description": "Ignores Armor and DMG Reduction to deal damage once."
+                }
+              ]
             },
             {
               "name": "The Reaping",
@@ -3541,7 +4077,19 @@
               "buffs": [
                 {
                   "name": "Isomeric Field",
-                  "description": "Terrain card (red header bar, no tag bullets): Applies [Backfire Mark] to units that remain on this tile: When Eller takes attack damage, the attacker takes an equal amount of [Fixed DMG]. Lasts for 2 turns. This terrain has the highest priority."
+                  "description": "Applies [Backfire Mark] to units that remain on this tile: When Eller takes attack damage, the attacker takes an equal amount of [Fixed DMG]. Lasts for 2 turns. This terrain has the highest priority."
+                },
+                {
+                  "name": "Backfire Mark",
+                  "description": "When Eller takes attack damage, the attacker takes an equal amount of [Fixed DMG].",
+                  "tags": [
+                    "Type: Debuff",
+                    "Non-Dispellable"
+                  ]
+                },
+                {
+                  "name": "Fixed DMG",
+                  "description": "Ignores Armor and DMG Reduction to deal damage once."
                 }
               ],
               "kind": "passive"
@@ -3581,7 +4129,25 @@
             {
               "name": "Pollution Diffusion",
               "difficulty": "Extreme",
-              "description": "After taking action, applies [Isomeric Field] to the currently-occupied tile, lasting permanently."
+              "description": "After taking action, applies [Isomeric Field] to the currently-occupied tile, lasting permanently.",
+              "buffs": [
+                {
+                  "name": "Isomeric Field",
+                  "description": "Applies [Backfire Mark] to units that remain on this tile: When Eller takes attack damage, the attacker takes an equal amount of [Fixed DMG]. Lasts for 2 turns. This terrain has the highest priority."
+                },
+                {
+                  "name": "Backfire Mark",
+                  "description": "When Eller takes attack damage, the attacker takes an equal amount of [Fixed DMG].",
+                  "tags": [
+                    "Type: Debuff",
+                    "Non-Dispellable"
+                  ]
+                },
+                {
+                  "name": "Fixed DMG",
+                  "description": "Ignores Armor and DMG Reduction to deal damage once."
+                }
+              ]
             }
           ]
         },
@@ -3624,7 +4190,21 @@
               "name": "Holmberg",
               "kind": "passive",
               "description": "After a part is destroyed, automatically repairs before taking action in the next turn. After executing a skill, can trigger [Re-ATK].\nWhen the UAV Bay is undestroyed, Melee Weapons cannot attack.\nDoes not trigger Burning or Mine-style terrain effects. Cannot be protected by [Guard]. Non-dispellable.",
-              "icon": "Icon_skill_talent_5130"
+              "icon": "Icon_skill_talent_5130",
+              "buffs": [
+                {
+                  "name": "Re-ATK",
+                  "description": "Can attack 2 times."
+                },
+                {
+                  "name": "Guard",
+                  "description": "Protects allies within 2 adjacent tiles from Assault and Ranged attacks. Triggers up to 2 times per turn and lasts 2 turns. Additionally, gains [Defensive Stance I]. Can only trigger 1 time per turn."
+                },
+                {
+                  "name": "Defensive Stance I",
+                  "description": "DMG Taken -15%."
+                }
+              ]
             },
             {
               "name": "Holmberg",
@@ -3647,6 +4227,18 @@
                     "Non-Dispellable",
                     "Non-Replicable"
                   ]
+                },
+                {
+                  "name": "Guard",
+                  "description": "Protects allies within 2 adjacent tiles from Assault and Ranged attacks. Triggers up to 2 times per turn and lasts 2 turns. Additionally, gains [Defensive Stance I]. Can only trigger 1 time per turn."
+                },
+                {
+                  "name": "Re-ATK",
+                  "description": "Can attack 2 times."
+                },
+                {
+                  "name": "Defensive Stance I",
+                  "description": "DMG Taken -15%."
                 }
               ],
               "kind": "passive"
@@ -3665,6 +4257,14 @@
                   "tags": [
                     "Non-Dispellable"
                   ]
+                },
+                {
+                  "name": "Self-Sustain",
+                  "description": "All enemies on the battlefield gain AP Regen +3, and deployed units are enhanced from 2 Tracers to 1 DL Captain.",
+                  "tags": [
+                    "Non-Dispellable",
+                    "Non-Replicable"
+                  ]
                 }
               ],
               "kind": "active"
@@ -3675,7 +4275,16 @@
               "cost": "1AP",
               "cd": "0Turn(s)",
               "description": "Uses a Missile Launcher to attack a target, dealing 0.5x DMG to the part hit and Splash DMG equal to 50% of this damage to other parts. Applies 2 stacks of [Enfeebled] to the target hit, lasting for 2 turns. Can stack. Cannot be intercepted.",
-              "kind": "active"
+              "kind": "active",
+              "buffs": [
+                {
+                  "name": "Enfeebled",
+                  "description": "DMG Dealt -30%, DMG Taken +30%. Can stack.",
+                  "tags": [
+                    "Non-Dispellable"
+                  ]
+                }
+              ]
             },
             {
               "name": "Megastorm",
@@ -3691,6 +4300,18 @@
                   "tags": [
                     "Non-Dispellable"
                   ]
+                },
+                {
+                  "name": "Self-Sustain",
+                  "description": "All enemies on the battlefield gain AP Regen +3, and deployed units are enhanced from 2 Tracers to 1 DL Captain.",
+                  "tags": [
+                    "Non-Dispellable",
+                    "Non-Replicable"
+                  ]
+                },
+                {
+                  "name": "Crash",
+                  "description": "Unable to take action!"
                 }
               ],
               "kind": "active"
@@ -3701,14 +4322,37 @@
               "cost": "0AP",
               "cd": "0Turn(s)",
               "description": "Locks onto a target. After 1 turn, uses a Rocket Launcher to attack all targets within a 3x3-tile area centered on the selected target, dealing 0.25x AoE DMG to each part. Inflicts 4 stacks of [Daze II] on targets hit, lasting for 2 turns.",
-              "kind": "active"
+              "kind": "active",
+              "buffs": [
+                {
+                  "name": "Daze II",
+                  "description": "Hit Rate reduced by 25%. Stacks up to 4 times.\nWhen afflicted with 4 stacks of [Daze II], afflicted with [Crash] for 1 turn. If already afflicted with [Crash], extends the duration of [Crash] by 1 turn.",
+                  "tags": [
+                    "Non-Dispellable"
+                  ]
+                },
+                {
+                  "name": "Crash",
+                  "description": "Unable to take action!"
+                }
+              ]
             },
             {
               "name": "Forced Recycle",
               "type": "Passive",
               "icon": "Icon_skill_passive_5115",
               "description": "After being attacked, absorbs all remaining AP from the attacker. For each 1 AP absorbed, gains 1 stack of [Fortify], lasting for 2 turns.",
-              "kind": "passive"
+              "kind": "passive",
+              "buffs": [
+                {
+                  "name": "Fortify",
+                  "description": "DMG Dealt +5%, DMG Taken -5%. Stacks up to 99 times.",
+                  "tags": [
+                    "Non-Dispellable",
+                    "Non-Replicable"
+                  ]
+                }
+              ]
             }
           ],
           "description": "Every moment death approaches is bathed in golden light – seize it, devour it, for it is the destiny you pursue.",
@@ -3727,7 +4371,13 @@
             {
               "name": "High-Level Sanction",
               "difficulty": "Extreme",
-              "description": "After Tracers attack, inflicts [Crash] on the target hit."
+              "description": "After Tracers attack, inflicts [Crash] on the target hit.",
+              "buffs": [
+                {
+                  "name": "Crash",
+                  "description": "Unable to take action!"
+                }
+              ]
             }
           ]
         }
@@ -3786,7 +4436,13 @@
               "cost": "0AP",
               "cd": "1Turn(s)",
               "description": "Uses two Machine Guns to attack all targets within a 3x2-tile area ahead, dealing 0.65x AoE DMG 2 times. After the skill ends, triggers [Re-Act].",
-              "kind": "active"
+              "kind": "active",
+              "buffs": [
+                {
+                  "name": "Re-Act",
+                  "description": "Can launch active attacks again. Before attacking, can move with full movement distance."
+                }
+              ]
             },
             {
               "name": "Full Repair",
@@ -3795,7 +4451,13 @@
               "cost": "0AP",
               "cd": "2Turn(s)",
               "description": "Restores HP equal to 2x Manipulator Repair AMT to all parts. Can repair all destroyed parts. After the skill ends, triggers [Re-Act].",
-              "kind": "active"
+              "kind": "active",
+              "buffs": [
+                {
+                  "name": "Re-Act",
+                  "description": "Can launch active attacks again. Before attacking, can move with full movement distance."
+                }
+              ]
             },
             {
               "name": "Omni-Directional Suppression",
@@ -3924,7 +4586,13 @@
               "type": "Talent",
               "icon": "Icon_skill_talent_5123",
               "description": "At the start of battle and after taking action, gains [Shadow Guard].\nWhen suffering an active attack and taking DMG, loses [Shadow Guard]. Depending on the type of weapon used in the attack, becomes immune to DMG from that type of weapon for 2 turns.\nCan trigger [Re-ATK] 1 time per turn and can move 1 tile before attacking.\nImmune to Movement reduction effects and ignores enemy obstruction when moving.",
-              "kind": "passive"
+              "kind": "passive",
+              "buffs": [
+                {
+                  "name": "Re-ATK",
+                  "description": "After the current attack ends, trigger one additional attack. Unable to move before the additional attack unless stated otherwise."
+                }
+              ]
             },
             {
               "name": "Storm Rocket",
@@ -3948,6 +4616,10 @@
                     "Non-Dispellable",
                     "Non-Replicable"
                   ]
+                },
+                {
+                  "name": "Destabilized Calibration",
+                  "description": "Hit Rate -100%."
                 }
               ],
               "kind": "active"
@@ -3966,7 +4638,17 @@
               "type": "Passive",
               "icon": "Icon_skill_passive_5114",
               "description": "At start of action, gains 1 stack of [Infiltrator].\nWhen actively attacked and not possessing [Shadow Guard], removes 1 stack of [Infiltrator].\nWhen possessing 5 or more stacks of [Infiltrator], consumes 5 stacks of [Infiltrator] to execute 1 additional [Storm Rocket], and increases Weapon DMG multiplier of this [Storm Rocket] by 0.15.",
-              "kind": "passive"
+              "kind": "passive",
+              "buffs": [
+                {
+                  "name": "Infiltrator",
+                  "description": "DMG Dealt +10%, Crit Rate UP +10%, Movement +1. Stacks up to 9 times.",
+                  "tags": [
+                    "Non-Dispellable",
+                    "Non-Replicable"
+                  ]
+                }
+              ]
             }
           ],
           "description": "Vera will make those people pay the price – and pay dearly",
@@ -4055,6 +4737,10 @@
                     "Non-Dispellable",
                     "Non-Replicable"
                   ]
+                },
+                {
+                  "name": "Fixed DMG",
+                  "description": "Ignores Armor and DMG Reduction to deal damage once."
                 }
               ],
               "kind": "passive"
@@ -4075,7 +4761,13 @@
               "cost": "0AP",
               "weapon": "SG",
               "description": "Uses a Shotgun to attack a target, dealing 1.5x DMG. After combat, pushes the target back 1 tile. If the path is blocked, inflicts [Crash] on the target, lasting for 1 turn.",
-              "kind": "active"
+              "kind": "active",
+              "buffs": [
+                {
+                  "name": "Crash",
+                  "description": "Unable to take action!"
+                }
+              ]
             },
             {
               "name": "Focused Breakthrough",
@@ -4089,6 +4781,22 @@
                   "tags": [
                     "Non-Dispellable"
                   ]
+                },
+                {
+                  "name": "Advantage",
+                  "description": "[Fixed DMG] Dealt +10%, DMG Taken -10%. Stacks up to 40 times.",
+                  "tags": [
+                    "Non-Dispellable",
+                    "Non-Replicable"
+                  ]
+                },
+                {
+                  "name": "Re-Act",
+                  "description": "Can launch active attacks again. Before attacking, can move with full movement distance."
+                },
+                {
+                  "name": "Fixed DMG",
+                  "description": "Ignores Armor and DMG Reduction to deal damage once."
                 }
               ],
               "kind": "passive"
@@ -4128,7 +4836,17 @@
             {
               "name": "Self-Destruction Deterrence",
               "difficulty": "Extreme",
-              "description": "When destroyed, applies [Burning Terrain] to self and tiles within 1 ring, lasting for 5 turns."
+              "description": "When destroyed, applies [Burning Terrain] to self and tiles within 1 ring, lasting for 5 turns.",
+              "buffs": [
+                {
+                  "name": "Burning Terrain",
+                  "description": "Deals [Fixed DMG] equal to 12% of Max HP to all parts of enemies that remain on this tile."
+                },
+                {
+                  "name": "Fixed DMG",
+                  "description": "Ignores Armor and DMG Reduction to deal damage once."
+                }
+              ]
             }
           ]
         },
@@ -4187,6 +4905,13 @@
                     "Non-Dispellable",
                     "Non-Replicable"
                   ]
+                },
+                {
+                  "name": "Weak Armor",
+                  "description": "Armor -30%. Stacks up to 10 times.",
+                  "tags": [
+                    "Non-Dispellable"
+                  ]
                 }
               ],
               "kind": "passive"
@@ -4198,21 +4923,54 @@
               "cost": "1AP",
               "weapon": "LR",
               "description": "Uses a Light Rifle to deal 1x DMG. All units afflicted with [Blackout] take [Fixed DMG] equal to 15% of their Max HP.",
-              "kind": "active"
+              "kind": "active",
+              "buffs": [
+                {
+                  "name": "Fixed DMG",
+                  "description": "Ignores Armor and DMG Reduction to deal damage once."
+                }
+              ]
             },
             {
               "name": "Authority",
               "type": "Passive",
               "icon": "Icon_skill_passive_1001",
               "description": "Special Ops Deputy Captain can launch a [Link Attack] during active attacks, ignoring distance and dealing 0.8x DMG to the target.",
-              "kind": "passive"
+              "kind": "passive",
+              "buffs": [
+                {
+                  "name": "Link Attack",
+                  "description": "After an ally actively attacks, launches an Extra Strike on the same target."
+                }
+              ]
             },
             {
               "name": "Tactical Adjustment",
               "type": "Passive",
               "icon": "Icon_skill_passive_5008",
               "description": "When actively attacked, if the attacker possesses [Weak Armor], removes the attacker's [Weak Armor] and 1 stack of own [Rock-Solid].\nWhen attacking with a Sniper Rifle, minimum Range -1. When equipped with a Small Shield, the other Arm gains [Guts].",
-              "kind": "passive"
+              "kind": "passive",
+              "buffs": [
+                {
+                  "name": "Weak Armor",
+                  "description": "Armor -30%. Stacks up to 10 times.",
+                  "tags": [
+                    "Non-Dispellable"
+                  ]
+                },
+                {
+                  "name": "Rock-Solid",
+                  "description": "DMG Dealt +30%. Stacks up to 10 times. After attacking, deals Splash DMG equal to 50% of the damage dealt to parts of the target that were not hit.",
+                  "tags": [
+                    "Non-Dispellable",
+                    "Non-Replicable"
+                  ]
+                },
+                {
+                  "name": "Guts",
+                  "description": "When any part suffers overdamage, the part is not destroyed and instead locks at 1 HP. Lasts until the end of the current attack."
+                }
+              ]
             }
           ],
           "description": "Victoria arrives with the light of the old DL – and this time, history will not repeat itself.",
@@ -4267,18 +5025,47 @@
                   "icon": "Icon_skill_main_1009",
                   "cost": "1AP",
                   "weapon": "HMG",
-                  "description": "Uses a Heavy Machine Gun to attack a target, dealing 1x DMG. All units afflicted with [Weak Armor] take [Fixed DMG] equal to 15% of their Max HP."
+                  "description": "Uses a Heavy Machine Gun to attack a target, dealing 1x DMG. All units afflicted with [Weak Armor] take [Fixed DMG] equal to 15% of their Max HP.",
+                  "buffs": [
+                    {
+                      "name": "Weak Armor",
+                      "description": "Armor -30%. Stacks up to 10 times.",
+                      "tags": [
+                        "Non-Dispellable"
+                      ]
+                    },
+                    {
+                      "name": "Fixed DMG",
+                      "description": "Ignores Armor and DMG Reduction to deal damage once."
+                    }
+                  ]
                 },
                 {
                   "name": "Assist",
                   "type": "Passive",
                   "icon": "Icon_skill_passive_1001",
-                  "description": "Victoria can initiate a [Link Attack] regardless of distance when performing active attacks, dealing 0.8x DMG."
+                  "description": "Victoria can initiate a [Link Attack] regardless of distance when performing active attacks, dealing 0.8x DMG.",
+                  "buffs": [
+                    {
+                      "name": "Link Attack",
+                      "description": "After an ally actively attacks, launches an Extra Strike on the same target."
+                    }
+                  ]
                 },
                 {
                   "name": "Strategic Support",
                   "type": "Passive",
-                  "description": "When actively attacked, if the attacker possesses [Blackout], removes the attacker's [Blackout] and 1 stack of [Strengthened] from self.\nWhen a single Arm is destroyed, Heavy Machine Gun Hit Rate does not decrease."
+                  "description": "When actively attacked, if the attacker possesses [Blackout], removes the attacker's [Blackout] and 1 stack of [Strengthened] from self.\nWhen a single Arm is destroyed, Heavy Machine Gun Hit Rate does not decrease.",
+                  "buffs": [
+                    {
+                      "name": "Strengthened",
+                      "description": "Hit Rate +30%, Armor +30%. Stacks up to 10 times.",
+                      "tags": [
+                        "Non-Dispellable",
+                        "Non-Replicable"
+                      ]
+                    }
+                  ]
                 }
               ]
             }
@@ -4346,6 +5133,14 @@
                 {
                   "name": "Blazing Terrain",
                   "description": "Deals [Fixed DMG] equal to 30% of Max HP to all parts of enemies that remain on this tile."
+                },
+                {
+                  "name": "Re-Act",
+                  "description": "Can launch active attacks again. Before attacking, can move with full movement distance."
+                },
+                {
+                  "name": "Fixed DMG",
+                  "description": "Ignores Armor and DMG Reduction to deal damage once."
                 }
               ],
               "kind": "passive"
@@ -4369,6 +5164,10 @@
                 {
                   "name": "Burning Terrain",
                   "description": "Deals [Fixed DMG] equal to 12% of Max HP to enemies that remain on this tile."
+                },
+                {
+                  "name": "Fixed DMG",
+                  "description": "Ignores Armor and DMG Reduction to deal damage once."
                 }
               ],
               "kind": "active"
@@ -4396,7 +5195,13 @@
               "type": "Passive",
               "icon": "Icon_skill_passive_1142",
               "description": "At start of turn, uses a Rocket Launcher to attack all targets within Early Warning range, dealing 10,000 [Fixed DMG] to each part. Can be activated again after an interval of 1 turn.",
-              "kind": "passive"
+              "kind": "passive",
+              "buffs": [
+                {
+                  "name": "Fixed DMG",
+                  "description": "Ignores Armor and DMG Reduction to deal damage once."
+                }
+              ]
             }
           ],
           "description": "He looks very honest, easy to bully… – Rebecca",
@@ -4511,6 +5316,10 @@
                   "tags": [
                     "Type: Debuff"
                   ]
+                },
+                {
+                  "name": "Guts",
+                  "description": "When any part suffers overdamage, the part is not destroyed and instead locks at 1 HP. Lasts until the end of the current attack."
                 }
               ],
               "kind": "passive"
@@ -4522,7 +5331,13 @@
               "cost": "3AP",
               "weapon": "SG",
               "description": "Simultaneously uses two Shotguns to attack a target, dealing 0.6x DMG 2 times. Upon destroying a part, triggers [Re-Act].",
-              "kind": "active"
+              "kind": "active",
+              "buffs": [
+                {
+                  "name": "Re-Act",
+                  "description": "Can launch active attacks again. Before attacking, can move with full movement distance."
+                }
+              ]
             },
             {
               "name": "Burst Fire",
@@ -4663,7 +5478,21 @@
               "type": "Passive",
               "icon": "Icon_skill_passive_1153",
               "description": "Movement is not obstructed by enemy units. When attacked, triggers [Pursuit] and moves 2 tiles. When successfully reaching the target, executes [Pursuit Retaliation], dealing 2x1.0 DMG.",
-              "kind": "passive"
+              "kind": "passive",
+              "buffs": [
+                {
+                  "name": "Pursuit",
+                  "description": "Automatically moves toward any enemy that attacks you."
+                },
+                {
+                  "name": "Pursuit Retaliation",
+                  "description": "If unable to retaliate in combat, triggers [Pursuit] and moves 2 tiles toward the attacker after combat. When successfully reaching the target, executes [Two-Handed Retaliation], dealing 1x2 DMG."
+                },
+                {
+                  "name": "Two-Handed Retaliation (Dual Gun Retaliation)",
+                  "description": "After the enemy attacks this unit, uses two Machine Guns to retaliate."
+                }
+              ]
             }
           ],
           "description": "Keller now clearly understands what he’s fighting for, which makes him especially dangerous.",
@@ -4697,7 +5526,13 @@
             {
               "name": "Acceleration",
               "difficulty": "Extreme",
-              "description": "[Enemy] [Burst Rush] [Pursuit] distance +1"
+              "description": "[Enemy] [Burst Rush] [Pursuit] distance +1",
+              "buffs": [
+                {
+                  "name": "Pursuit",
+                  "description": "Automatically moves toward any enemy that attacks you."
+                }
+              ]
             }
           ],
           "clues": [
@@ -4787,12 +5622,24 @@
                 {
                   "name": "Guided Strike",
                   "type": "Weapon",
-                  "description": "After a normal attack, applies [Tracking] to targets hit. When the enemy performs an active attack or uses skills, if the target possesses [Tracking], uses a Rocket Gunport to attack the target and all targets within a 1-ring area, dealing AoE DMG equal to 7.5% of their Max HP to all parts of each target."
+                  "description": "After a normal attack, applies [Tracking] to targets hit. When the enemy performs an active attack or uses skills, if the target possesses [Tracking], uses a Rocket Gunport to attack the target and all targets within a 1-ring area, dealing AoE DMG equal to 7.5% of their Max HP to all parts of each target.",
+                  "buffs": [
+                    {
+                      "name": "Tracking",
+                      "description": "After tracking, actively attacking, or using skills, will be subjected to a guided strike attack. Removed when the turn ends."
+                    }
+                  ]
                 },
                 {
                   "name": "Cleanup Bombardment",
                   "type": "Weapon",
-                  "description": "Normal attacks and Guided Strike inflict [DMG Down I] on the target, lasting for 2 turns."
+                  "description": "Normal attacks and Guided Strike inflict [DMG Down I] on the target, lasting for 2 turns.",
+                  "buffs": [
+                    {
+                      "name": "DMG Down I",
+                      "description": "DMG Dealt -10%. Stacks up to 8 times."
+                    }
+                  ]
                 }
               ]
             },
@@ -4802,17 +5649,39 @@
                 {
                   "name": "Retaliatory Fire",
                   "type": "Weapon",
-                  "description": "When an ally is attacked, uses a Machine Gun Gunport to launch [Link Retaliation], dealing 2x DMG."
+                  "description": "When an ally is attacked, uses a Machine Gun Gunport to launch [Link Retaliation], dealing 2x DMG.",
+                  "buffs": [
+                    {
+                      "name": "Link Retaliation",
+                      "description": "When an ally is attacked, uses a Machine Gun Gunport to launch Link Retaliation, dealing 2x DMG."
+                    }
+                  ]
                 },
                 {
                   "name": "No Survivors",
                   "type": "Weapon",
-                  "description": "When allies other than Sámi perform an active attack, launches a [Link Attack] against the target, dealing 2x DMG. Can trigger up to 8 times per turn."
+                  "description": "When allies other than Sámi perform an active attack, launches a [Link Attack] against the target, dealing 2x DMG. Can trigger up to 8 times per turn.",
+                  "buffs": [
+                    {
+                      "name": "Link Attack",
+                      "description": "After an ally actively attacks, launches an Extra Strike on the same target."
+                    }
+                  ]
                 },
                 {
                   "name": "Thirst For Blood",
                   "type": "Weapon",
-                  "description": "After using a skill, can trigger [Re-ATK] 1 time per turn. After combat or a Link Attack, applies [DMG Taken UP IV] to the target hit, lasting for 2 turns."
+                  "description": "After using a skill, can trigger [Re-ATK] 1 time per turn. After combat or a Link Attack, applies [DMG Taken UP IV] to the target hit, lasting for 2 turns.",
+                  "buffs": [
+                    {
+                      "name": "Re-ATK",
+                      "description": "After the current attack ends, trigger one additional attack. Unable to move before the additional attack unless stated otherwise."
+                    },
+                    {
+                      "name": "DMG Taken UP IV",
+                      "description": "DMG Taken +30%. Stacks up to 5 times."
+                    }
+                  ]
                 }
               ]
             }
@@ -4874,6 +5743,10 @@
                   "tags": [
                     "Non-Dispellable"
                   ]
+                },
+                {
+                  "name": "Re-Act",
+                  "description": "Can launch active attacks again. Before attacking, can move with full movement distance."
                 }
               ],
               "kind": "passive"
@@ -4885,7 +5758,13 @@
               "cost": "1AP",
               "weapon": "Alter-Blade",
               "description": "Uses an Alter-Blade to attack a target, dealing 1.3x DMG. This attack targets the part with the lowest HP. If a part is destroyed, triggers [Flurry Strike] with the opposite Arm's Alter-Blade, dealing 0.5x DMG.",
-              "kind": "active"
+              "kind": "active",
+              "buffs": [
+                {
+                  "name": "Flurry Strike",
+                  "description": "After enemy retaliation, launch an additional attack."
+                }
+              ]
             },
             {
               "name": "Evil Assault",
@@ -4901,6 +5780,14 @@
                   "tags": [
                     "Non-Dispellable"
                   ]
+                },
+                {
+                  "name": "Energy Replenishment",
+                  "description": "AP Regen +2. Stacks up to 99 times. At end of action, 1 stack is removed.",
+                  "tags": [
+                    "Non-Dispellable",
+                    "Non-Replicable"
+                  ]
                 }
               ],
               "kind": "active"
@@ -4910,7 +5797,17 @@
               "type": "Passive",
               "icon": "Icon_skill_passive_3115",
               "description": "At start of action, if possessing [Energy Replenishment], repairs all destroyed parts and restores 10% of each part's Max HP.",
-              "kind": "passive"
+              "kind": "passive",
+              "buffs": [
+                {
+                  "name": "Energy Replenishment",
+                  "description": "AP Regen +2. Stacks up to 99 times. At end of action, 1 stack is removed.",
+                  "tags": [
+                    "Non-Dispellable",
+                    "Non-Replicable"
+                  ]
+                }
+              ]
             }
           ],
           "description": "Shh… Be quiet, she’s already here.",
@@ -4944,7 +5841,13 @@
             {
               "name": "Unstable",
               "difficulty": "Extreme",
-              "description": "[Enemy] When a Marching Crab is destroyed, deals [Fixed DMG] equal to 50% of Max HP to each part of all targets within 1 ring."
+              "description": "[Enemy] When a Marching Crab is destroyed, deals [Fixed DMG] equal to 50% of Max HP to each part of all targets within 1 ring.",
+              "buffs": [
+                {
+                  "name": "Fixed DMG",
+                  "description": "Ignores Armor and DMG Reduction to deal damage once."
+                }
+              ]
             }
           ],
           "clues": [
@@ -5040,6 +5943,15 @@
               "difficulties": [
                 "Normal",
                 "Hard"
+              ],
+              "buffs": [
+                {
+                  "name": "Acid II",
+                  "description": "Repair AMT Received -30%, DMG Dealt -10%. Stacks up to 99 times. At end of action, for each stack of [Acid II], deals Fixed DMG equal to 10% of Max HP to all of own parts. When triggered, applies 1 stack of [Acid II] to this unit and all allies within 2 tiles.",
+                  "tags": [
+                    "Non-Dispellable"
+                  ]
+                }
               ]
             },
             {
@@ -5061,6 +5973,15 @@
               "difficulties": [
                 "Normal",
                 "Hard"
+              ],
+              "buffs": [
+                {
+                  "name": "Acid II",
+                  "description": "Repair AMT Received -30%, DMG Dealt -10%. Stacks up to 99 times. At end of action, for each stack of [Acid II], deals Fixed DMG equal to 10% of Max HP to all of own parts. When triggered, applies 1 stack of [Acid II] to this unit and all allies within 2 tiles.",
+                  "tags": [
+                    "Non-Dispellable"
+                  ]
+                }
               ]
             },
             {
@@ -5103,7 +6024,13 @@
             {
               "name": "Poison Boost",
               "difficulty": "Extreme",
-              "description": "[Enemy] [Acid] trigger range is increased to a 2-tile diamond area. [Acid Storm] Range +1."
+              "description": "[Enemy] [Acid] trigger range is increased to a 2-tile diamond area. [Acid Storm] Range +1.",
+              "buffs": [
+                {
+                  "name": "Acid",
+                  "description": "Repair AMT Received -30%, DMG Dealt -10%. Stacks up to 99 times. At end of action, for each stack of , deals Fixed DMG equal to 10% of Max HP to all of own parts. When triggered, applies 1 stack of  to self and all allies within 1 ring."
+                }
+              ]
             }
           ],
           "clues": [
@@ -5247,7 +6174,13 @@
             {
               "name": "Deathproof",
               "difficulty": "Extreme",
-              "description": "[Enemy] When deployed, gains [DMG Immunity]. Can trigger 1 time."
+              "description": "[Enemy] When deployed, gains [DMG Immunity]. Can trigger 1 time.",
+              "buffs": [
+                {
+                  "name": "DMG Immunity",
+                  "description": "Negates DMG dealt from a single attack. This effect is removed after triggering."
+                }
+              ]
             }
           ],
           "clues": [
@@ -5335,6 +6268,18 @@
                   "tags": [
                     "Non-Dispellable"
                   ]
+                },
+                {
+                  "name": "Flame DMG",
+                  "description": "Damage dealt is based on the multiplier percentage of the main skill."
+                },
+                {
+                  "name": "Cold Seal",
+                  "description": "Alena prioritizes attacking this unit. DMG Taken +50%.",
+                  "tags": [
+                    "Non-Dispellable",
+                    "Non-Replicable"
+                  ]
                 }
               ],
               "kind": "active"
@@ -5346,14 +6291,48 @@
               "cost": "5AP",
               "cd": "2Turn(s)",
               "description": "Simultaneously uses two Flamethrowers to attack all targets within range, dealing 0.35x DMG 2 times. If the target hit is not afflicted with [Cold Seal], applies [Thermite]. If the target hit is afflicted with [Cold Seal], applies [Burning II]. Lasts for 1 turn.",
-              "kind": "active"
+              "kind": "active",
+              "buffs": [
+                {
+                  "name": "Cold Seal",
+                  "description": "Alena prioritizes attacking this unit. DMG Taken +50%.",
+                  "tags": [
+                    "Non-Dispellable",
+                    "Non-Replicable"
+                  ]
+                },
+                {
+                  "name": "Thermite",
+                  "description": "After actively attacking or executing a code skill, deals Fixed DMG equal to 0.5x Alena's Weapon ATK to the part with the lowest HP. This damage can destroy parts.",
+                  "tags": [
+                    "Non-Dispellable"
+                  ]
+                },
+                {
+                  "name": "Burning II",
+                  "description": "At start of action, after actively attacking or executing a code skill, deals Fixed DMG equal to 2x Alena's Weapon ATK to the part with the lowest HP. This damage can destroy parts.",
+                  "tags": [
+                    "Non-Dispellable"
+                  ]
+                }
+              ]
             },
             {
               "name": "Preparation",
               "type": "Passive",
               "icon": "Icon_skill_passive_2008",
               "description": "For each 1 [Cold Seal] on the battlefield, all units gain an additional 5% of their Max HP, stacking up to 15%.",
-              "kind": "passive"
+              "kind": "passive",
+              "buffs": [
+                {
+                  "name": "Cold Seal",
+                  "description": "Alena prioritizes attacking this unit. DMG Taken +50%.",
+                  "tags": [
+                    "Non-Dispellable",
+                    "Non-Replicable"
+                  ]
+                }
+              ]
             }
           ],
           "description": "Alena brought a letter from a land scarred by storm and wreckage.",
@@ -5371,7 +6350,13 @@
             {
               "name": "Winter Flame",
               "difficulty": "Extreme",
-              "description": "[Enemy] When Alena actively attacks, she applies [Maneuver Destruction] to all targets, lasting for 1 turn."
+              "description": "[Enemy] When Alena actively attacks, she applies [Maneuver Destruction] to all targets, lasting for 1 turn.",
+              "buffs": [
+                {
+                  "name": "Maneuver Destruction",
+                  "description": "Cannot move. Cannot Guard."
+                }
+              ]
             }
           ]
         }
@@ -5416,7 +6401,17 @@
               "type": "Talent",
               "icon": "Icon_skill_talent_5135",
               "description": "At the start of the battle or the end of the action, gains 2 stacks of [Energy Supplement]. Lasts for 1 turn. Stacks up to 8 times.\nAt start of turn, for every 2 stacks of [Energy Supplement], gains AP Regen +2 and triggers [Re-ATK] once, allowing for 3 tiles of movement before attacking.\nWhen retaliating, gains 2 stacks of [Energy Supplement].\nWhen moving, gains [Ignore Unit Obstruction].",
-              "kind": "passive"
+              "kind": "passive",
+              "buffs": [
+                {
+                  "name": "Re-ATK",
+                  "description": "After the current attack ends, trigger one additional attack. Unable to move before the additional attack unless stated otherwise."
+                },
+                {
+                  "name": "Ignore Unit Obstruction (Phantom)",
+                  "description": "Ignores unit obstruction when moving."
+                }
+              ]
             },
             {
               "name": "The Strong Prevail",
@@ -5425,21 +6420,43 @@
               "cost": "3AP",
               "cd": "0Turn(s)",
               "description": "Uses a Blaster to attack all enemies within a 3x3-tile area, dealing 1.8x AoE DMG and knocking them back 2 tiles. If the path is blocked, inflicts [Crash] on the target, lasting for 1 turn. This skill is guaranteed to hit.",
-              "kind": "active"
+              "kind": "active",
+              "buffs": [
+                {
+                  "name": "Crash",
+                  "description": "Unable to take action!"
+                }
+              ]
             },
             {
               "name": "Repeat Strike",
               "type": "Passive",
               "icon": "Icon_skill_passive_5103",
               "description": "After triggering [Re-ATK], gains [Energy Charge] before combat: AP Cost -1, Hit Rate +20%. Stacks up to 5 times. Removed after action ends.",
-              "kind": "passive"
+              "kind": "passive",
+              "buffs": [
+                {
+                  "name": "Re-ATK",
+                  "description": "After the current attack ends, trigger one additional attack. Unable to move before the additional attack unless stated otherwise."
+                },
+                {
+                  "name": "Energy Charge",
+                  "description": "Hit Rate +20%."
+                }
+              ]
             },
             {
               "name": "Preemptive Strike",
               "type": "Passive",
               "icon": "Icon_skill_passive_5014",
               "description": "Retaliation DMG +100%. Gains [Quick Draw] when both Arms are undestroyed.",
-              "kind": "passive"
+              "kind": "passive",
+              "buffs": [
+                {
+                  "name": "Quick Draw",
+                  "description": "When attacked in combat, perform Retaliation before the enemy's attack."
+                }
+              ]
             }
           ],
           "description": "Don’t underestimate Garcia. If you’re going to fight him – shoot to kill.",
@@ -5473,7 +6490,13 @@
             {
               "name": "Stalker",
               "difficulty": "Extreme",
-              "description": "[Enemy] When attacking, inflicts [Cost Surge] on targets hit: AP Cost +1 for all active and Code skills. Lasts for 1 turn. Stacks up to 3 times. Non-dispellable."
+              "description": "[Enemy] When attacking, inflicts [Cost Surge] on targets hit: AP Cost +1 for all active and Code skills. Lasts for 1 turn. Stacks up to 3 times. Non-dispellable.",
+              "buffs": [
+                {
+                  "name": "Cost Surge",
+                  "description": "AP Cost +1 for all active skills and codes. Stacks up to 3 times."
+                }
+              ]
             }
           ],
           "clues": [
@@ -5536,6 +6559,10 @@
                     "Non-Dispellable",
                     "Non-Replicable"
                   ]
+                },
+                {
+                  "name": "Re-ATK",
+                  "description": "After the current attack ends, trigger one additional attack. Unable to move before the additional attack unless stated otherwise."
                 }
               ],
               "kind": "passive"
@@ -5546,7 +6573,13 @@
               "icon": "Icon_skill_main_1115",
               "cost": "0AP",
               "description": "Enters [Aiming] Mode. Uses a Sniper Rifle to attack a target, dealing 1.6x DMG.\nIf possessing 5 stacks of Anger, this skill is guaranteed to hit.",
-              "kind": "active"
+              "kind": "active",
+              "buffs": [
+                {
+                  "name": "Aiming",
+                  "description": "Before attacking, designate a specific part of the target to focus all damage on that part."
+                }
+              ]
             },
             {
               "name": "Not This Time!",
@@ -5596,7 +6629,13 @@
             {
               "name": "Full Field Silence",
               "difficulty": "Extreme",
-              "description": "[Enemy] At end of action, if there are no enemies within 1 adjacent tile, gains [Stealth]."
+              "description": "[Enemy] At end of action, if there are no enemies within 1 adjacent tile, gains [Stealth].",
+              "buffs": [
+                {
+                  "name": "Stealth",
+                  "description": "Cannot be targeted by active attacks. [Stealth] is forcibly removed when taking damage, or if enemies exist within 1 adjacent tile."
+                }
+              ]
             }
           ],
           "clues": [
@@ -5684,6 +6723,10 @@
                   "tags": [
                     "Non-Dispellable"
                   ]
+                },
+                {
+                  "name": "Link Attack",
+                  "description": "After an ally actively attacks, launches an Extra Strike on the same target."
                 }
               ],
               "kind": "passive"
@@ -5729,6 +6772,10 @@
                     "Type: Debuff",
                     "Non-Dispellable"
                   ]
+                },
+                {
+                  "name": "Fixed DMG",
+                  "description": "Ignores Armor and DMG Reduction to deal damage once."
                 }
               ]
             }
@@ -5758,7 +6805,13 @@
                   "name": "Defeat",
                   "type": "Passive",
                   "icon": "Icon_skill_passive_5107",
-                  "description": "When destroyed, applies 1 stack of [Maneuvering Pursuit] to the killer: DMG +55% for each tile moved before attacking. Removed when the action ends."
+                  "description": "When destroyed, applies 1 stack of [Maneuvering Pursuit] to the killer: DMG +55% for each tile moved before attacking. Removed when the action ends.",
+                  "buffs": [
+                    {
+                      "name": "Maneuvering Pursuit",
+                      "description": "Before attacking, for every 1 tile moved, DMG Dealt +55%. Removed when action ends."
+                    }
+                  ]
                 }
               ]
             }
@@ -5798,7 +6851,13 @@
               "type": "Talent",
               "icon": "Icon_skill_talent_5116",
               "description": "After a part is destroyed, automatically repairs before taking action in the next turn. When Legs are undestroyed, can trigger [Re-ATK] after executing a skill.",
-              "kind": "passive"
+              "kind": "passive",
+              "buffs": [
+                {
+                  "name": "Re-ATK",
+                  "description": "After the current attack ends, trigger one additional attack. Unable to move before the additional attack unless stated otherwise."
+                }
+              ]
             },
             {
               "name": "Rocket Scatter",
@@ -5871,7 +6930,13 @@
                   "icon": "Icon_skill_main_1010",
                   "cost": "3AP",
                   "weapon": "PA",
-                  "description": "Uses a Polearm to attack a target, dealing 1x DMG to 1 random part and Splash DMG equal to 20% of this damage to 1 other part. Before combat, gains [Hit Rate UP V], lasting for 1 turn."
+                  "description": "Uses a Polearm to attack a target, dealing 1x DMG to 1 random part and Splash DMG equal to 20% of this damage to 1 other part. Before combat, gains [Hit Rate UP V], lasting for 1 turn.",
+                  "buffs": [
+                    {
+                      "name": "Hit Rate UP V",
+                      "description": "Hit Rate +20%."
+                    }
+                  ]
                 },
                 {
                   "name": "King's Move",
@@ -5986,6 +7051,14 @@
                     "Non-Dispellable",
                     "Non-Replicable"
                   ]
+                },
+                {
+                  "name": "Kindle",
+                  "description": "After damaging an enemy, repairs all parts, restoring HP equal to 100% of damage dealt. For each ally with [Kindle] on the battlefield, Repair AMT +100%, up to 500%.",
+                  "tags": [
+                    "Non-Dispellable",
+                    "Non-Replicable"
+                  ]
                 }
               ],
               "kind": "active"
@@ -5997,7 +7070,29 @@
               "cost": "3AP",
               "cd": "0Turn(s)",
               "description": "Uses a Rail Gun to attack all targets within a 3x5-tile area ahead, dealing 1x DMG. Before combat, gains [Rail Gun Hit Rate UP]. Deals an additional 50% DMG to targets with [Malfunction]. This skill does not consume any Ammo.",
-              "kind": "active"
+              "kind": "active",
+              "buffs": [
+                {
+                  "name": "Rail Gun Hit Rate UP",
+                  "description": "Rail Gun Hit Rate +10%."
+                },
+                {
+                  "name": "Malfunction",
+                  "description": "When attacking, targets with [Kindle] cannot be hit.",
+                  "tags": [
+                    "Non-Dispellable",
+                    "Non-Replicable"
+                  ]
+                },
+                {
+                  "name": "Kindle",
+                  "description": "After damaging an enemy, repairs all parts, restoring HP equal to 100% of damage dealt. For each ally with [Kindle] on the battlefield, Repair AMT +100%, up to 500%.",
+                  "tags": [
+                    "Non-Dispellable",
+                    "Non-Replicable"
+                  ]
+                }
+              ]
             }
           ],
           "description": "Blazetrudge’s flames will not stop until everything is burned to ashes.",
@@ -6102,6 +7197,10 @@
                     "Non-Dispellable",
                     "Non-Replicable"
                   ]
+                },
+                {
+                  "name": "Fixed DMG",
+                  "description": "Ignores Armor and DMG Reduction to deal damage once."
                 }
               ],
               "kind": "passive"
@@ -6121,6 +7220,10 @@
                     "Non-Dispellable",
                     "Non-Replicable"
                   ]
+                },
+                {
+                  "name": "Fixed DMG",
+                  "description": "Ignores Armor and DMG Reduction to deal damage once."
                 }
               ],
               "kind": "active"
@@ -6132,7 +7235,13 @@
               "cost": "3AP",
               "cd": "1Turn(s)",
               "description": "Enters [Aiming] Mode. Uses a Sniper Rifle to attack all targets in a 1x4-tile line ahead, dealing 1x DMG to the same part of each target.",
-              "kind": "active"
+              "kind": "active",
+              "buffs": [
+                {
+                  "name": "Aiming",
+                  "description": "Before attacking, designate a specific part of the target to focus all damage on that part."
+                }
+              ]
             },
             {
               "name": "Know the Way",
@@ -6220,6 +7329,18 @@
                         "Non-Dispellable",
                         "Non-Replicable"
                       ]
+                    },
+                    {
+                      "name": "Counter Field",
+                      "description": "Stacks up to 3 times. After taking damage from active or Link Attacks, 1 stack is removed. After combat, for each stack removed, deals [Fixed DMG] equal to 1x the attacker's Weapon ATK to all enemies within 1 ring, up to 3x.",
+                      "tags": [
+                        "Non-Dispellable",
+                        "Non-Replicable"
+                      ]
+                    },
+                    {
+                      "name": "Fixed DMG",
+                      "description": "Ignores Armor and DMG Reduction to deal damage once."
                     }
                   ]
                 },
@@ -6229,7 +7350,13 @@
                   "icon": "Icon_skill_main_2103",
                   "cost": "2AP",
                   "weapon": "MG",
-                  "description": "Uses a Machine Gun to attack a target, dealing 1x DMG. Gains [DMG Taken Down I], lasting for 2 turns."
+                  "description": "Uses a Machine Gun to attack a target, dealing 1x DMG. Gains [DMG Taken Down I], lasting for 2 turns.",
+                  "buffs": [
+                    {
+                      "name": "DMG Taken Down I",
+                      "description": "DMG Taken -4%."
+                    }
+                  ]
                 }
               ]
             }
@@ -6288,7 +7415,13 @@
               "cost": "4AP",
               "cd": "1Turn(s)",
               "description": "Uses a Heavy Machine Gun to attack all targets within attack range, dealing 1x AoE DMG. Inflicts [Movement Inhibition I] on targets hit, lasting for 2 turns.",
-              "kind": "active"
+              "kind": "active",
+              "buffs": [
+                {
+                  "name": "Movement Inhibition I",
+                  "description": "Movement -1."
+                }
+              ]
             },
             {
               "name": "Thunderstorm, Emerge!",
@@ -6304,6 +7437,10 @@
                   "tags": [
                     "Non-Replicable"
                   ]
+                },
+                {
+                  "name": "Electric Surge Terrain",
+                  "description": "Inflicts [FCS Failure] on units that remain on this tile, lasting for 1 turn."
                 }
               ],
               "kind": "active"
@@ -6434,7 +7571,13 @@
               "type": "Talent",
               "icon": "Icon_skill_talent_5130",
               "description": "After a part is destroyed, automatically repairs before taking action in the next turn. After executing a skill, can trigger [Re-ATK].\nWhen Legs are undestroyed, Melee Weapons can only attack the Legs. After Legs are destroyed, Melee DMG Taken +10%.\nDoes not trigger Burning or Mine-style terrain effects.",
-              "kind": "passive"
+              "kind": "passive",
+              "buffs": [
+                {
+                  "name": "Re-ATK",
+                  "description": "After the current attack ends, trigger one additional attack. Unable to move before the additional attack unless stated otherwise."
+                }
+              ]
             },
             {
               "name": "Flame Curtain",
@@ -6643,6 +7786,18 @@
                   "tags": [
                     "Non-Replicable"
                   ]
+                },
+                {
+                  "name": "Fixed DMG",
+                  "description": "Ignores Armor and DMG Reduction to deal damage once."
+                },
+                {
+                  "name": "Guard",
+                  "description": "Protects allies within 2 adjacent tiles from Assault and Ranged attacks. Triggers up to 2 times per turn and lasts 2 turns. Additionally, gains [Defensive Stance I]. Can only trigger 1 time per turn."
+                },
+                {
+                  "name": "Defensive Stance I",
+                  "description": "DMG Taken -15%."
                 }
               ],
               "kind": "passive"
@@ -6654,7 +7809,13 @@
               "cost": "0AP",
               "weapon": "PB",
               "description": "Uses a Pile Bunker to attack a target, dealing 1.2x DMG and ignoring the Large Shield [Target Shift] effect. This attack targets the part with the lowest HP.",
-              "kind": "active"
+              "kind": "active",
+              "buffs": [
+                {
+                  "name": "Target Shift",
+                  "description": "Ensures the enemy's attack hits the designated part."
+                }
+              ]
             },
             {
               "name": "Attack Ban",
@@ -6680,7 +7841,13 @@
               "type": "Passive",
               "icon": "Icon_skill_passive_5011",
               "description": "When initiating combat, if there are allies within 2 adjacent tiles, triggers [Re-Act]. Can trigger only 1 time per turn.",
-              "kind": "passive"
+              "kind": "passive",
+              "buffs": [
+                {
+                  "name": "Re-Act",
+                  "description": "Can launch active attacks again. Before attacking, can move with full movement distance."
+                }
+              ]
             }
           ],
           "description": "No matter how many bottles he gets through, to Mann, the world seems lifeless, empty. He’s made up his mind to change it.",
@@ -6761,7 +7928,13 @@
               "cost": "0AP",
               "cd": "2Turn(s)",
               "description": "Restores HP equal to 2x Manipulator Repair AMT to all parts. Can repair all destroyed parts. After executing repairs, triggers [Re-Act].",
-              "kind": "active"
+              "kind": "active",
+              "buffs": [
+                {
+                  "name": "Re-Act",
+                  "description": "Can launch active attacks again. Before attacking, can move with full movement distance."
+                }
+              ]
             },
             {
               "name": "March of the Charge",

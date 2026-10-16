@@ -38,7 +38,9 @@ Add new images to the matching folder in that repo; pushing its `main` deploys t
 - **Builder** — mech loadout theorycrafting tool, incl. 4 accessory slots per weapon (at least 1 trigger TA + 1 reaction RA) with each TA + RA chain's trigger chance; state is encoded into a shareable Build UID (URL hash), not localStorage
 - **R&D Bonus** — max bonuses from a fully researched R&D tree, by pilot class, ST weight class and weapon type
 - **Features** — every R&D feature (pilot / ST / weapon), split by pilot class, ST weight class and weapon R&D tree, with port, effect and unlock cost
-- **Bosses** — boss line-ups of every Armed Conquest season and Clearance Ops 11–17 with HP per difficulty; each Armed Conquest season has its own page (`bosses/<season>/`) listing every boss's skills from the mined DB, plus what the Armed Conquest guide adds for AC1–10 (skill cards with effects, buffs, minions, bounties, Extreme modifiers, clues)
+- **Bosses** — every Armed Conquest and Clearance Ops boss once, A–Z, listing each season/chapter stage it's in (linked) and the ST it fields there
+- **Armed Conquest** — boss line-ups of every Armed Conquest season with HP per difficulty; each season has its own page (`armedconquest/<season>/`) listing every boss's skills from the mined DB, plus what the Armed Conquest guide adds for AC1–10 (skill cards with effects, buffs, minions, bounties, Extreme modifiers, clues)
+- **Clearance Ops** — boss line-ups and HP of Clearance Ops 11–17
 - **DMG Calc (Beta)** — standalone page at `dmgcalc/` (linked from "Misc."): the mined Damage Bench, comparing two setups' damage per attack and attacks to kill against a boss; saved loadouts stay in the browser (localStorage)
 - **Glossary** — shared keyword/tooltip engine (buffs, skills, terrain, jump-links) used across all pages
 - Table-based data — all text and stats live in `data/db/` (one JSON table per entity); the deploy workflow compiles them, so an edited table goes live on push
@@ -79,7 +81,7 @@ data/
   builder/                        # generate-index-maps.py → index-maps.js/json (BuilderIndexMaps)
   dmgcalc/                        # extract-bench.py → bench-data.js (BenchData) + dmgcalc/bench.js/css, from the mined Damage_Bench.html; build-icons.py → bench-icons.js (BenchIcons, dropdown icons)
   features/                       # build_features.py → features.json/js (FeaturesData, every R&D feature from the mined DB, for the Features page)
-  bosses/                         # build_bosses.py → bosses.json/js (BossesData: line-ups and HP from bench-data.js, AC boss skills from the mined DB, merged with ac-guide.json)
+  bosses/                         # build_bosses.py → bosses.json/js (BossesData: line-ups and HP from bench-data.js, AC boss skills from the mined DB, merged with ac-guide.json; every [Term] a skill uses gets an explanation under it, from the stage, the DB, the glossary or another stage of the season, and any it can't explain are printed)
     ac-guide.json                 # transcribed from the Armed Conquest guide PDF (data/screenshots/mined/), plus Extreme modifiers added by hand for AC9–11; build_bosses.py prints where it disagrees with the DB; skill `icon`s were matched by image from the guide's screenshots to the assets repo's pilot_skills icons (DB-only skills take a same-named card's icon)
   rd/                             # build_rd_totals.py → rd-totals.json/js (RDTotalsData, max R&D bonuses from the mined DB, for the R&D Bonus page and DMG calculator)
   glossary.json                   # → GlossaryData
@@ -251,8 +253,8 @@ Facebook/Discord don't run JavaScript and ignore the `#...` part of a URL, so th
 | Page | Preview |
 |---|---|
 | Pilot / ST / Weapon / Backpack / Module | Item icon (`twitter:card=summary`) + two-line description, e.g. `v3.6 S-rank Tactician (Medium License)` then the basic talent |
-| Armed Conquest season (`bosses/<season>/`) | Last boss's portrait + `Armed Conquest season 13 (v2.5)` then the bosses by stage |
-| Misc. pages (Dispatch, EX Skills, Shops, ST/Pilot Stats, Builder, R&D Bonus, Features, Bosses) | Home page image (`Pilot_13038A_half.png`, read from `index.html`'s `og:image`) as a small icon + summary from `MISC_DESCRIPTIONS` |
+| Armed Conquest season (`armedconquest/<season>/`) | Last boss's portrait + `Armed Conquest season 13 (v2.5)` then the bosses by stage |
+| Misc. pages (Dispatch, EX Skills, Shops, ST/Pilot Stats, Builder, R&D Bonus, Features, Bosses, Armed Conquest, Clearance Ops) | Home page image (`Pilot_13038A_half.png`, read from `index.html`'s `og:image`) as a small icon + summary from `MISC_DESCRIPTIONS` |
 | Other list pages and the home page | `index.html`'s own generic preview, retitled |
 
 Previews can't be seen by opening the page in a browser. To check them:

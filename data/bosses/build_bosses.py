@@ -20,6 +20,8 @@ BENCH = os.path.join(ROOT, 'data', 'dmgcalc', 'bench-data.js')
 WEAPONS = os.path.join(ROOT, 'data', 'weapons', 'compiled.json')
 DB = os.path.join(ROOT, 'data', 'screenshots', 'mined', 'mecharashi.db')
 GUIDE = os.path.join(HERE, 'ac-guide.json')
+GLOSSARY = os.path.join(ROOT, 'data', 'glossary.json')
+PILOTS = os.path.join(ROOT, 'data', 'pilots', 'compiled.json')
 OUT = os.path.join(HERE, 'bosses.json')
 OUT_JS = os.path.join(HERE, 'bosses.js')
 
@@ -94,7 +96,8 @@ def ac_skills(bosses):
     enemy_skills only; active skills have none in the DB) and, when the skill
     isn't on every difficulty, the difficulties it's on (e.g. a β passive on
     Extreme and Inferno). Passives also get their effects from enemy_buffs:
-    see passive_effects().
+    see passive_effects(). Also returns the stage's skill IDs (for
+    explain_terms()).
     """
     con = sqlite3.connect(DB)
     described = dict(con.execute("SELECT skill_id, description FROM enemy_skills WHERE description != ''"))
@@ -106,11 +109,12 @@ def ac_skills(bosses):
     out = {}
     for season, stage, diff, boss, title, main, passives in rows:
         diff = DIFFICULTY_NAMES.get(diff, diff)
-        st = out.setdefault((season, int(stage)), {'boss': canonical(boss, bosses), 'title': title, 'diffs': [], 'skills': {}})
+        st = out.setdefault((season, int(stage)), {'boss': canonical(boss, bosses), 'title': title, 'diffs': [], 'skills': {}, 'ids': set()})
         st['diffs'].append(diff)
         for kind, text in (('active', main), ('passive', passives)):
             for part in filter(None, (text or '').split('; ')):
                 sid, name = SKILL.match(part).groups()
+                st['ids'].add(int(sid))
                 sk = st['skills'].setdefault(sid, {'name': name, 'kind': kind, 'diffs': []})
                 sk['diffs'].append(diff)
                 desc = described.get(int(sid))
@@ -144,7 +148,7 @@ def ac_skills(bosses):
             skills.append(sk)
         # Active skills first, each kind in the game's order.
         skills.sort(key=lambda sk: sk['kind'] != 'active')
-        result[key] = (st['boss'], st['title'], skills)
+        result[key] = (st['boss'], st['title'], skills, st['ids'])
     return result
 
 
@@ -230,6 +234,135 @@ def effects_for(rows, boss):
         elif desc not in named.setdefault(name, []):
             named[name].append(desc)
     return '\n'.join(text), [{'name': n, 'description': ' '.join(d)} for n, d in named.items() if d]
+
+
+# Bracketed words that name a side, a turn, a weapon type or a unit rather
+# than an effect, so they need no explanation. Pilot names are added too.
+NOT_TERMS = {'enemy', 'ally', 'all', 'enemy turn', 'your turn', 'machine gun', 'machine guns', 'shield', 'alter-blades',
+             'eston', 'vincenza'}
+# Terms the skill text calls by another name than the effect's own; the
+# explanation is shown as "Term (Effect)".
+TERM_ALIASES = {
+    'ignore unit obstruction': 'Phantom',
+    'two-handed retaliation': 'Dual Gun Retaliation',   # Cassha's
+}
+
+
+def term_lookup():
+    """(name, stage skill IDs) -> the description of the effect named, or
+    None: the buff of that name the stage's skills link to, else the wiki
+    glossary's entry, else the DB's buff of that name when all its copies
+    agree."""
+    con = sqlite3.connect(DB)
+    by_name = {}
+    for b, name, desc in con.execute('SELECT buff_id, name, description FROM buffs ORDER BY buff_id'):
+        desc = (desc or '').strip()
+        if name and desc and desc != name:
+            by_name.setdefault(name.lower(), []).append((int(b), desc))
+    links = {}
+    for sid, b, chain in con.execute('SELECT skill_id, buff_id, buff_chain FROM skill_effects'):
+        for x in [b] + (chain or '').split(' > '):
+            if str(x or '').isdigit():
+                links.setdefault(int(sid), set()).add(int(x))
+    for sid, b in con.execute('SELECT skill_id, buff_id FROM link_skill_buff'):
+        links.setdefault(int(sid), set()).add(int(b))
+    con.close()
+    with open(GLOSSARY, encoding='utf-8') as f:
+        g = json.load(f)
+    glossary = {}
+    for kind in ('buf', 'skill', 'terrain'):
+        for e in g[kind].values():
+            if e.get('name') and e.get('effect'):
+                glossary.setdefault(e['name'].lower(), e['effect'].strip())
+
+    def own(name, sids):
+        """The stage's buff of that name: one its skills link to, or one in
+        a skill's ID family (Andrea's passive 9837701 -> Morale 98377034).
+        Else a family buff named "<side> <name>" when they all agree
+        (Emergency Arm Repair 1015010 -> L-Arm Partial Repair 10150102)."""
+        linked, families = set(), {sid // 100 for sid in sids}
+        for sid in sids:
+            linked |= links.get(sid, set()) | set(range(sid * 10, sid * 10 + 10))
+        hit = [desc for b, desc in by_name.get(name.lower(), []) if b in linked or b // 1000 in families]
+        if hit:
+            return hit[0]
+        sided = {desc for key, rows in by_name.items() if key.endswith(' ' + name.lower())
+                 for b, desc in rows if b // 1000 in families}
+        return sided.pop() if len(sided) == 1 else None
+
+    def lookup(name, sids, season_sids):
+        """Stage's own buff, the season's, the glossary's, then the DB's
+        keyword buff (ID under 10^6, e.g. Re-Mv 900012) or its only text."""
+        found = own(name, sids) or own(name, season_sids) or glossary.get(name.lower())
+        if found:
+            return found
+        cands = by_name.get(name.lower(), [])
+        keyword = [desc for b, desc in cands if b < 10 ** 6]
+        descs = {desc for _, desc in cands}
+        return keyword[0] if keyword else descs.pop() if len(descs) == 1 else None
+    return lookup
+
+
+def stage_entries(st):
+    """A stage's skills, its minions' skills and its Extreme modifiers."""
+    return list(st['skills']) + [sk for u in st.get('units', []) for sk in u['skills']] + st.get('extreme_modifiers', [])
+
+
+def walk_buffs(x):
+    for b in x.get('buffs', []):
+        yield b
+        yield from walk_buffs(b)
+
+
+def buff_defs(stages):
+    """Lowercased buff name -> the first buff of that name under the
+    stages' skills."""
+    defs = {}
+    for st in stages:
+        for sk in stage_entries(st):
+            for b in walk_buffs(sk):
+                if b.get('description'):
+                    defs.setdefault(b['name'].lower(), b)
+    return defs
+
+
+def explain_terms(where, st, sids, season, lookup, warn):
+    """Give every skill (and Extreme modifier) a buff entry for each [Term]
+    its text uses that isn't explained under it: the stage's own definition
+    from another skill's buffs, else lookup(), else another stage of the
+    season's (season: (its stages' definitions, its skill IDs)). Skill names
+    on the stage (shown as their own cards) and NOT_TERMS are left alone."""
+    entries = stage_entries(st)
+    skill_names = {sk['name'].lower() for sk in entries if sk.get('name')}
+    defs = buff_defs([st])
+    season_defs, season_sids = season
+    for sk in entries:
+        own = {(sk.get('name') or '').lower()} | {b['name'].lower() for b in walk_buffs(sk)}
+        texts = [sk.get('description') or ''] + [b.get('description') or '' for b in walk_buffs(sk)]
+        for text in texts:   # grows as explanations are added
+            for term in re.findall(r'\[([^\[\]<>]+)\]', text):
+                key = term.lower()
+                if key in own or key in skill_names or key in NOT_TERMS:
+                    continue
+                own.add(key)
+                alias = TERM_ALIASES.get(key)
+                if alias:
+                    own.add(alias.lower())
+                    found, desc = None, lookup(alias, sids, season_sids)
+                    term = '%s (%s)' % (term, alias)
+                else:
+                    found = defs.get(key)
+                    desc = not found and lookup(term, sids, season_sids)
+                found = found or not desc and season_defs.get(key)
+                if found:
+                    b = {k: v for k, v in found.items() if k in ('name', 'description', 'tags')}
+                else:
+                    if not desc:
+                        warn('%s: "%s" uses [%s], which nothing explains' % (where, sk.get('name') or 'modifier', term))
+                        continue
+                    b = {'name': term, 'description': desc}
+                sk.setdefault('buffs', []).append(b)
+                texts.append(b['description'])
 
 
 # The guide's card types -> the DB's skill kinds.
@@ -379,9 +512,10 @@ def main():
             c['stages'].setdefault(slot, {'slot': slot, 'boss': canonical(boss, bosses), 'mech': t['mech'], 'cls': mech_class(t), 'hp': part_hp(t)})
 
     skills = ac_skills(bosses)
+    stage_ids = {}
     for s in ac.values():
         for st in s['stages'].values():
-            boss, st['title'], st['skills'] = skills[(s['name'], st['slot'])]
+            boss, st['title'], st['skills'], stage_ids[id(st)] = skills[(s['name'], st['slot'])]
             if boss != st['boss']:
                 raise ValueError('%s stage %d: DMG calc has %s, DB has %s' % (s['name'], st['slot'], st['boss'], boss))
 
@@ -413,6 +547,13 @@ def main():
     for ac_no, boss in guide:
         warnings.append('AC%d %s: in the guide but not in any season' % (ac_no, boss))
     add_icons(ac.values())
+    lookup = term_lookup()
+    with open(PILOTS, encoding='utf-8') as f:
+        NOT_TERMS.update(p['PilotName'].lower() for p in json.load(f)['pilots'])
+    for s in ac.values():
+        season = (buff_defs(s['stages']), set().union(*(stage_ids[id(st)] for st in s['stages'])))
+        for st in s['stages']:
+            explain_terms('AC%d %s' % (s['number'], st['boss']), st, stage_ids[id(st)], season, lookup, warnings.append)
     for s in ac.values():
         for st in s['stages']:
             for sk in st['skills']:
