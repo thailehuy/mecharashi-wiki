@@ -128,7 +128,8 @@ function bossKit() {
     if (text.indexOf('<color=') !== -1) return text;
     return text.split(/(<[^>]*>|\[[^\[\]]*\])/).map(function (part, i) {
       if (i % 2) return part;
-      return part.replace(/(^|[^\w.+\-])([+\-]?\d+(?:\.\d+)?(?:%?[\-~]\d+(?:\.\d+)?)?%?)(?![\w.]?\d)(?!\w)/g, '$1<color=#F74848>$2</color>');
+      // Also multipliers: "1.5x DMG", "2x0.5 DMG".
+      return part.replace(/(^|[^\w.+\-])([+\-]?\d+(?:\.\d+)?(?:%?[\-~]\d+(?:\.\d+)?)?(?:[x×]\d+(?:\.\d+)?)?(?:%|[x×](?![\w.]?\d))?)(?![\w.]?\d)(?!\w)/g, '$1<color=#F74848>$2</color>');
     }).join('');
   }
 
