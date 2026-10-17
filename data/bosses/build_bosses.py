@@ -4,10 +4,12 @@
 The `bosses` map (name, pilot link, images) is kept by hand. This script
 rebuilds `armed_conquest` and `clearance_ops` from the DMG calc's targets
 (data/dmgcalc/bench-data.js), adds each Armed Conquest boss's stage name and
-skills from the mined DB (data/screenshots/mined/mecharashi.db) and what the
-Armed Conquest guide adds (ac-guide.json: descriptions, bounties, skill cards,
-minions, Extreme modifiers, clues), then writes bosses.json and bosses.js.
-Mismatches between the guide and the DB are printed.
+skills from the mined DB (data/screenshots/MRT_FieldWiki/source/mecharashi.db),
+each stage's description, bounties and clues from the game tables
+(RebuildGameUpdate/out/stats.db) and what the Armed Conquest guide adds
+(ac-guide.json: skill cards, minions, Extreme modifiers, and descriptions,
+bounties and clues where the game tables lack them), then writes bosses.json
+and bosses.js. Mismatches between the guide and the game data are printed.
 """
 import json
 import os
@@ -18,7 +20,8 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(os.path.dirname(HERE))
 BENCH = os.path.join(ROOT, 'data', 'dmgcalc', 'bench-data.js')
 WEAPONS = os.path.join(ROOT, 'data', 'weapons', 'compiled.json')
-DB = os.path.join(ROOT, 'data', 'screenshots', 'mined', 'mecharashi.db')
+DB = os.path.join(ROOT, 'data', 'screenshots', 'MRT_FieldWiki', 'source', 'mecharashi.db')
+STATS = os.path.join(ROOT, 'data', 'screenshots', 'MRT_FieldWiki', 'RebuildGameUpdate', 'out', 'stats.db')
 GUIDE = os.path.join(HERE, 'ac-guide.json')
 GLOSSARY = os.path.join(ROOT, 'data', 'glossary.json')
 PILOTS = os.path.join(ROOT, 'data', 'pilots', 'compiled.json')
@@ -88,6 +91,10 @@ def mech_class(t):
 
 
 SKILL = re.compile(r'(\d+) (.*)')                         # "8820601 Massive Gunfire"
+# Chip and equipment passives most bosses carry (stat boosts the guide
+# doesn't show): left out of the line-ups.
+GENERIC_PASSIVE = re.compile(r'^(?:Superconducting Core|Elite Chip [XVI]+|Auto Load|Reinforced Armor [IV]+|'
+                             r'(?:Universal )?Flying Device|Repair Unit|TacW Guidance [IV]+|Strategic Strike \d+)$')
 
 
 def ac_skills(bosses):
@@ -116,6 +123,8 @@ def ac_skills(bosses):
         for kind, text in (('active', main), ('passive', passives)):
             for part in filter(None, (text or '').split('; ')):
                 sid, name = SKILL.match(part).groups()
+                if kind == 'passive' and GENERIC_PASSIVE.match(name):
+                    continue
                 st['ids'].add(int(sid))
                 sk = st['skills'].setdefault(sid, {'name': name, 'kind': kind, 'diffs': []})
                 sk['diffs'].append(diff)
@@ -467,6 +476,66 @@ def add_guide(s, st, entry, warn):
         st['units'] = [{'name': name, 'skills': guide_cards(cards)} for name, cards in units.items()]
 
 
+# Each Armed Conquest season's level lists in ConfigDataRaidDungeonInfo (ID =
+# AC number), one per difficulty; a level's position is its stage slot.
+RAID_LEVELS = [('Normal', 'LevelList'), ('Hard', 'HardLevelList'), ('Extreme', 'HellLevelList'),
+               ('Inferno', 'Difficult4LevelList')]
+# Placeholder bounties left in the tables (AC3's last stage: 'Defeat BOSS
+# "Genovese Luno"', no condition on Hard and up); the guide's are kept.
+PLACEHOLDER_BOUNTY = re.compile(r'^(?:Defeat BOSS|Raid Mission)')
+
+
+def stage_info():
+    """(AC number, slot) -> the stage's title, description, bounties
+    ({name, conditions: {difficulty: text}}) and clues ({name, subtitle,
+    text}, in bounty order: each Normal bounty unlocks one) from the game
+    tables. A season's last stage also has the clues it takes to unlock on
+    each difficulty (clue_unlock; the clues count over all difficulties)."""
+    con = sqlite3.connect(STATS)
+    one = lambda sql, *args: con.execute(sql, args).fetchone()
+    out = {}
+    for row in con.execute('SELECT ID, %s FROM ConfigDataRaidDungeonInfo' % ', '.join(c for _, c in RAID_LEVELS)).fetchall():
+        for (diff, _), levels in zip(RAID_LEVELS, row[1:]):
+            for slot, level in enumerate(json.loads(levels or '[]'), 1):
+                title, desc, offers, clues = one('SELECT NameStrKey_EN, DescStrKey_EN, OfferRewardList, UnlockClueCond '
+                                                 'FROM ConfigDataRaidDungeonLevelInfo WHERE ID = ?', level)
+                st = out.setdefault((row[0], slot), {'title': title, 'description': desc, 'bounties': [], 'clues': [],
+                                                     'clue_unlock': {}})
+                if clues:
+                    st['clue_unlock'][diff] = clues
+                for i, offer in enumerate(json.loads(offers or '[]')):
+                    ach, clue = one('SELECT AchievementId, ClueID FROM ConfigDataRaidDungeonOfferRewardInfo WHERE ID = ?', offer)
+                    name, cond = one('SELECT NameStrKey_EN, DescStrKey_EN FROM ConfigDataBattleAchievementInfo WHERE ID = ?', ach)
+                    if PLACEHOLDER_BOUNTY.match(name):
+                        continue
+                    if i == len(st['bounties']):
+                        st['bounties'].append({'name': name, 'conditions': {}})
+                    st['bounties'][i]['conditions'][diff] = cond.rstrip('.')
+                    if diff == 'Normal' and clue:
+                        st['clues'].append(dict(zip(('name', 'subtitle', 'text'), one(
+                            'SELECT NameStrKey_EN, DescStrKey_EN, DetailsStrKey_EN FROM ConfigDataRaidDungeonClueInfo WHERE ID = ?', clue))))
+    con.close()
+    return out
+
+
+def add_stage_info(s, st, info, warn):
+    """The game tables' description, bounties and clues replace the guide's
+    (and the last stage gets its clue_unlock);
+    a bounty whose numbers differ from the guide's is printed."""
+    where = 'AC%d %s' % (s['number'], st['boss'])
+    if info['title'] != st['title']:
+        warn('%s: game tables call the stage "%s", DB "%s"' % (where, info['title'], st['title']))
+    guide = {b['name'].lower(): b for b in st.get('bounties', [])}
+    for b in info['bounties']:
+        g = guide.get(b['name'].lower())
+        for diff, cond in b['conditions'].items():
+            if g and diff in g['conditions'] and NUM.findall(g['conditions'][diff]) != NUM.findall(cond):
+                warn('%s: bounty "%s" (%s) differs: guide "%s", game "%s"' % (where, b['name'], diff, g['conditions'][diff], cond))
+    for key in ('description', 'bounties', 'clues', 'clue_unlock'):
+        if info[key]:
+            st[key] = info[key]
+
+
 def add_icons(seasons):
     """Skills without a guide card (later seasons, DB-only skills) take the
     icon of a guide card with the same name: the same boss's first, else any
@@ -563,6 +632,10 @@ def main():
                 add_guide(s, st, entry, warnings.append)
     for ac_no, boss in guide:
         warnings.append('AC%d %s: in the guide but not in any season' % (ac_no, boss))
+    info = stage_info()
+    for s in ac.values():
+        for st in s['stages']:
+            add_stage_info(s, st, info[(s['number'], st['slot'])], warnings.append)
     add_icons(ac.values())
     lookup = term_lookup()
     with open(PILOTS, encoding='utf-8') as f:

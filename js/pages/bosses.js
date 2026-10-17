@@ -189,15 +189,20 @@ function bossKit() {
     );
   }
 
-  // Bounties: a condition per difficulty, following the toggle.
+  // Bounties: a condition per difficulty, following the toggle. A season's
+  // last stage also shows the clues it takes to unlock on that difficulty.
   function bountiesHtml(st, firstDiff) {
     if (!st.bounties) return '';
+    var unlock = st.clue_unlock || {};
     return (
       '<div class="skill-card boss-stage-info boss-stage-bounties"><div class="boss-sub-head">Bounties</div><ol class="boss-bounties">' + st.bounties.map(function (b) {
         return '<li>' + (b.name ? '<b>' + esc(b.name) + '</b> ' : '') + Object.keys(b.conditions).map(function (d) {
           return '<span' + diffsAttr([d], firstDiff) + '>' + descHtml(b.conditions[d]) + '</span>';
         }).join('') + '</li>';
-      }).join('') + '</ol></div>'
+      }).join('') + '</ol>' +
+      Object.keys(unlock).map(function (d) {
+        return '<div class="boss-clue-unlock"' + diffsAttr([d], firstDiff) + '>Unlocks with <b>' + unlock[d] + '</b> clues</div>';
+      }).join('') + '</div>'
     );
   }
 
@@ -255,10 +260,8 @@ function bossKit() {
       '<a href="' + App.href('armedconquest') + '" class="btn-back">&#8592; Back to Armed Conquest</a>' +
       '<div class="listing-header"><h1>' + esc(s.number + '. ' + s.name) + '</h1></div>' +
       '<p class="dispatch-intro">Armed Conquest season ' + s.number + (s.version ? ' (v' + esc(s.version) + ')' : '') + '. ' +
-        'Every boss\'s skills, by stage. Pick a difficulty on the right: skills only on some difficulties are marked and follow it, as do the bosses\' HP and bounties. ' +
-        (guided
-          ? 'Skill cards, bounties, minions, Extreme modifiers and clues are from the Armed Conquest guide.</p>'
-          : 'Active skill effects aren\'t in the game data yet, so only their names are listed.</p>') +
+        'Every boss\'s skills, by stage. Pick a difficulty on the right: skills only on some difficulties are marked and follow it, as do the bosses\' HP, bounties and the clues the last stage takes to unlock. ' +
+        (guided ? 'Skill cards, minions and Extreme modifiers are from the Armed Conquest guide.' : '') + '</p>' +
       '<div class="boss-group boss-season">' +
         (seasonDiffs.length > 1 ? '<div class="boss-diff-float">' + diffToggle(seasonDiffs) + '</div>' : '') +
         gearHtml(s) +
