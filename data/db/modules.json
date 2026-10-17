@@ -91,16 +91,16 @@
     "current_level": 4,
     "levels": {
       "1": {
-        "effect": "ST Power +<color=#F74848>25</color>"
+        "effect": "ST Power <color=#F74848>+25</color>."
       },
       "2": {
-        "effect": "ST Power +<color=#F74848>50</color>"
+        "effect": "ST Power <color=#F74848>+50</color>."
       },
       "3": {
-        "effect": "ST Power +<color=#F74848>75</color>"
+        "effect": "ST Power <color=#F74848>+75</color>."
       },
       "4": {
-        "effect": "ST Power +<color=#F74848>100</color>"
+        "effect": "ST Power <color=#F74848>+100</color>."
       }
     }
   },
@@ -448,16 +448,16 @@
     "current_level": 4,
     "levels": {
       "1": {
-        "effect": "Received Repair AMT <color=#F74848>+3%</color>."
+        "effect": "Repair AMT Received <color=#F74848>+3%</color>."
       },
       "2": {
-        "effect": "Received Repair AMT <color=#F74848>+5%</color>."
+        "effect": "Repair AMT Received <color=#F74848>+5%</color>."
       },
       "3": {
-        "effect": "Received Repair AMT <color=#F74848>+7%</color>."
+        "effect": "Repair AMT Received <color=#F74848>+7%</color>."
       },
       "4": {
-        "effect": "Received Repair AMT <color=#F74848>+10%</color>."
+        "effect": "Repair AMT Received <color=#F74848>+10%</color>."
       }
     }
   },
@@ -658,7 +658,7 @@
         "effect": "When actively attacked and hit, if not possessing a shield, a part that was hit but not destroyed, with HP percentage lower than <color=#F74848>70%</color>, gains a shield equal to <color=#F74848>12%</color> of its Max HP after combat. This shield lasts until it is broken."
       },
       "8": {
-        "effect": "When actively attacked and hit, if not possessing a shield, a part that was hit but not destroyed, with HP percentage lower than <color=#F74848>70%</color>, gains a shield equal to <color=#F74848>15%</color> of its Max HP after combat. This shield lasts until it is broken.\nUpon gaining a shield, applies <buf ID=7100306>[DMG UP III]</buf> and <buf ID=7100106>[Hit Rate UP III]</buf> to self and <color=#F74848>1</color> random ally within a diamond-shaped <color=#F74848>2-tile</color> range. Lasts for <color=#F74848>2</color> turns."
+        "effect": "When actively attacked and hit, if not possessing a shield, a part that was hit but not destroyed, with HP percentage lower than <color=#F74848>70%</color>, gains a shield equal to <color=#F74848>15%</color> of its Max HP after combat. This shield lasts until it is broken. Upon gaining a shield, applies <buf ID=7100306>[DMG UP III]</buf> and <buf ID=7100106>[Hit Rate UP III]</buf> to self and <color=#F74848>1</color> random ally within a diamond-shaped <color=#F74848>2-tile</color> range. Lasts for <color=#F74848>2</color> turns."
       }
     }
   },
@@ -691,7 +691,7 @@
         "effect": "When actively attacking, Crit Rate <color=#F74848>+16%</color>. If a critical hit does not occur, Crit Rate increases by <color=#F74848>12%</color> for the next active attack. This effect can stack and is cleared upon landing a critical hit."
       },
       "8": {
-        "effect": "When actively attacking, Crit Rate <color=#F74848>+20%</color>. If a critical hit does not occur, Crit Rate increases by <color=#F74848>15%</color> for the next active attack. This effect can stack and is cleared upon landing a critical hit.\nWhen entering <buf ID=900014>[Aiming]</buf> Mode, skill multiplier <color=#F74848>+0.1</color>."
+        "effect": "When actively attacking, Crit Rate <color=#F74848>+20%</color>. If a critical hit does not occur, Crit Rate increases by <color=#F74848>15%</color> for the next active attack. This effect can stack and is cleared upon landing a critical hit. When entering <buf ID=900014>[Aiming]</buf> Mode, skill multiplier <color=#F74848>+0.1</color>."
       }
     }
   },
@@ -703,25 +703,25 @@
     "current_level": 8,
     "levels": {
       "1": {
-        "effect": "When attacking, if this unit's HP percentage is below <color=#F74848>40%</color>, ignores <color=#F74848>6%</color> of the target's Armor and <color=#F74848>3%</color> of Dodge."
+        "effect": "When attacking, if this unit's HP percentage is lower than <color=#F74848>40%</color>, ignores <color=#F74848>6%</color> of the target's Armor and <color=#F74848>3%</color> Dodge."
       },
       "2": {
-        "effect": "When attacking, if this unit's HP percentage is below <color=#F74848>40%</color>, ignores <color=#F74848>8%</color> of the target's Armor and <color=#F74848>4%</color> of Dodge."
+        "effect": "When attacking, if this unit's HP percentage is lower than <color=#F74848>40%</color>, ignores <color=#F74848>8%</color> of the target's Armor and <color=#F74848>4%</color> Dodge."
       },
       "3": {
-        "effect": "When attacking, if this unit's HP percentage is below <color=#F74848>40%</color>, ignores <color=#F74848>12%</color> of the target's Armor and <color=#F74848>6%</color> of Dodge."
+        "effect": "When attacking, if this unit's HP percentage is lower than <color=#F74848>40%</color>, ignores <color=#F74848>12%</color> of the target's Armor and <color=#F74848>6%</color> Dodge."
       },
       "4": {
-        "effect": "When attacking, if this unit's HP percentage is below <color=#F74848>50%</color>, ignores <color=#F74848>16%</color> of the target's Armor and <color=#F74848>8%</color> of Dodge."
+        "effect": "When attacking, if this unit's HP percentage is lower than <color=#F74848>50%</color>, ignores <color=#F74848>16%</color> of the target's Armor and <color=#F74848>8%</color> Dodge."
       },
       "5": {
-        "effect": "When attacking, if this unit's HP percentage is below <color=#F74848>50%</color>, ignores <color=#F74848>19%</color> of the target's Armor and <color=#F74848>10%</color> of Dodge."
+        "effect": "When attacking, if this unit's HP percentage is lower than <color=#F74848>50%</color>, ignores <color=#F74848>19%</color> of the target's Armor and <color=#F74848>10%</color> Dodge."
       },
       "6": {
-        "effect": "When attacking, if this unit's HP percentage is below <color=#F74848>60%</color>, ignores <color=#F74848>23%</color> of the target's Armor and <color=#F74848>12%</color> of Dodge."
+        "effect": "When attacking, if this unit's HP percentage is lower than <color=#F74848>60%</color>, ignores <color=#F74848>23%</color> of the target's Armor and <color=#F74848>12%</color> Dodge."
       },
       "7": {
-        "effect": "When attacking, if this unit's HP percentage is below <color=#F74848>60%</color>, ignores <color=#F74848>27%</color> of the target's Armor and <color=#F74848>14%</color> of Dodge."
+        "effect": "When attacking, if this unit's HP percentage is lower than <color=#F74848>60%</color>, ignores <color=#F74848>27%</color> of the target's Armor and <color=#F74848>14%</color> Dodge."
       },
       "8": {
         "effect": "When attacking, if this unit's HP percentage is below <color=#F74848>60%</color>, ignores <color=#F74848>35%</color> of the target's Armor and <color=#F74848>18%</color> of Dodge.\nST Movement increased by <color=#F74848>1</color> tile. Ignores unit obstruction when moving, and when attacking enemy STs along the movement path, its triggered <buf ID=900001>[Flurry Strike]</buf> effect is replaced with <buf ID=900010>[Gusty Strike]</buf>."
@@ -736,25 +736,25 @@
     "current_level": 8,
     "levels": {
       "1": {
-        "effect": "When in combat, if this unit's HP percentage is greater than or equal to the target's, DMG <color=#F74848>+3%</color>. If the attack is not an active attack, DMG is additionally <color=#F74848>+2%</color>."
+        "effect": "When in combat, if this unit's HP percentage is greater than or equal to the target's, DMG <color=#F74848>+3%</color>. If the attack is not an active attack, DMG is further increased by <color=#F74848>2%</color>."
       },
       "2": {
-        "effect": "When in combat, if this unit's HP percentage is greater than or equal to the target's, DMG <color=#F74848>+4%</color>. If the attack is not an active attack, DMG is additionally <color=#F74848>+3%</color>."
+        "effect": "When in combat, if this unit's HP percentage is greater than or equal to the target's, DMG <color=#F74848>+4%</color>. If the attack is not an active attack, DMG is further increased by <color=#F74848>3%</color>."
       },
       "3": {
-        "effect": "When in combat, if this unit's HP percentage is greater than or equal to the target's, DMG <color=#F74848>+6%</color>. If the attack is not an active attack, DMG is additionally <color=#F74848>+4%</color>."
+        "effect": "When in combat, if this unit's HP percentage is greater than or equal to the target's, DMG <color=#F74848>+6%</color>. If the attack is not an active attack, DMG is further increased by <color=#F74848>4%</color>."
       },
       "4": {
-        "effect": "When in combat, if this unit's HP percentage is greater than or equal to the target's, DMG <color=#F74848>+8%</color>. If the attack is not an active attack, DMG is additionally <color=#F74848>+5%</color>."
+        "effect": "During combat, if this unit's HP percentage is greater than or equal to the target's, DMG <color=#F74848>+8%</color>. If the attack is not an active attack, DMG is further increased by <color=#F74848>5%</color>."
       },
       "5": {
-        "effect": "When in combat, if this unit's HP percentage is greater than or equal to the target's, DMG <color=#F74848>+10%</color>. If the attack is not an active attack, DMG is additionally <color=#F74848>+7%</color>."
+        "effect": "When in combat, if this unit's HP percentage is greater than or equal to the target's, DMG <color=#F74848>+10%</color>. If the attack is not an active attack, DMG is further increased by <color=#F74848>7%</color>."
       },
       "6": {
-        "effect": "When in combat, if this unit's HP percentage is greater than or equal to the target's, DMG <color=#F74848>+12%</color>. If the attack is not an active attack, DMG is additionally <color=#F74848>+8%</color>."
+        "effect": "When in combat, if this unit's HP percentage is greater than or equal to the target's, DMG <color=#F74848>+12%</color>. If this attack is not an active attack, DMG is further increased by <color=#F74848>8%</color>."
       },
       "7": {
-        "effect": "When in combat, if this unit's HP percentage is greater than or equal to the target's, DMG <color=#F74848>+14%</color>. If the attack is not an active attack, DMG is additionally <color=#F74848>+9%</color>."
+        "effect": "When in combat, if this unit's HP percentage is greater than or equal to the target's, DMG <color=#F74848>+14%</color>. If the attack is not an active attack, DMG is further increased by <color=#F74848>9%</color>."
       },
       "8": {
         "effect": "When in combat, if this unit's HP percentage is greater than or equal to the target's, DMG <color=#F74848>+18%</color>. If the attack is not an active attack, DMG is additionally <color=#F74848>+12%</color>. When actively attacking, if consuming greater than or equal to <color=#F74848>5</color> AP, recovers <color=#F74848>1</color> AP, can be triggered up to <color=#F74848>1</color> time per turn."
@@ -802,25 +802,25 @@
     "current_level": 8,
     "levels": {
       "1": {
-        "effect": "When HP is greater than or equal to <color=#F74848>80%</color>, DMG <color=#F74848>+18%</color>.\nAny Arm that suffers overdamage remains undestroyed. Has a trigger interval of <color=#F74848>4</color> turns."
+        "effect": "When HP is at 100%, DMG <color=#F74848>+3%</color>."
       },
       "2": {
-        "effect": "When HP is greater than or equal to <color=#F74848>80%</color>, DMG <color=#F74848>+18%</color>.\nAny Arm that suffers overdamage remains undestroyed. Has a trigger interval of <color=#F74848>4</color> turns."
+        "effect": "When HP is at 100%, DMG <color=#F74848>+4%</color>."
       },
       "3": {
-        "effect": "When HP is greater than or equal to <color=#F74848>80%</color>, DMG <color=#F74848>+18%</color>.\nAny Arm that suffers overdamage remains undestroyed. Has a trigger interval of <color=#F74848>4</color> turns."
+        "effect": "When HP is at 100%, DMG <color=#F74848>+6%</color>."
       },
       "4": {
-        "effect": "When HP is greater than or equal to <color=#F74848>90%</color>, DMG <color=#F74848>+8%</color>."
+        "effect": "When HP is greater than or equal to <color=#F74848>90%</color>, DMG +<color=#F74848>8%</color>."
       },
       "5": {
         "effect": "When HP is greater than or equal to <color=#F74848>90%</color>, DMG <color=#F74848>+10%</color>."
       },
       "6": {
-        "effect": "When HP is greater than or equal to <color=#F74848>80%</color>, DMG <color=#F74848>+12%</color>."
+        "effect": "When HP is greater than or equal to <color=#F74848>80%</color>, DMG +<color=#F74848>12%</color>."
       },
       "7": {
-        "effect": "When HP is greater than or equal to <color=#F74848>80%</color>, DMG <color=#F74848>+14%</color>."
+        "effect": "When HP is greater than or equal to <color=#F74848>80%</color>, DMG +<color=#F74848>14%</color>."
       },
       "8": {
         "effect": "When HP is greater than or equal to <color=#F74848>80%</color>, DMG <color=#F74848>+18%</color>.\nAny Arm that suffers overdamage remains undestroyed. Has a trigger interval of <color=#F74848>4</color> turns."
@@ -868,28 +868,28 @@
     "current_level": 8,
     "levels": {
       "1": {
-        "effect": "When executing Mass repair skills, Repair AMT <color=#F74848>+3%</color>."
+        "effect": "When executing mass repair skills, Repair AMT <color=#F74848>+3%</color>."
       },
       "2": {
-        "effect": "When executing Mass repair skills, Repair AMT <color=#F74848>+4%</color>."
+        "effect": "When executing mass repair skills, Repair AMT <color=#F74848>+4%</color>."
       },
       "3": {
-        "effect": "When executing Mass repair skills, Repair AMT <color=#F74848>+6%</color>."
+        "effect": "When executing mass repair skills, Repair AMT <color=#F74848>+6%</color>."
       },
       "4": {
-        "effect": "When executing Mass repair skills, Repair AMT <color=#F74848>+8%</color>."
+        "effect": "When executing mass repair skills, Repair AMT <color=#F74848>+8%</color>."
       },
       "5": {
-        "effect": "When executing Mass repair skills, Repair AMT <color=#F74848>+10%</color>."
+        "effect": "When executing mass repair skills, Repair AMT <color=#F74848>+10%</color>."
       },
       "6": {
-        "effect": "When executing Mass repair skills, Repair AMT <color=#F74848>+12%</color>."
+        "effect": "When executing mass repair skills, Repair AMT <color=#F74848>+12%</color>."
       },
       "7": {
-        "effect": "When executing Mass repair skills, Repair AMT <color=#F74848>+14%</color>."
+        "effect": "When executing mass repair skills, Repair AMT <color=#F74848>+14%</color>."
       },
       "8": {
-        "effect": "When executing Mass repair skills, Repair AMT <color=#F74848>+18%</color>.\nImmune to <buf ID=900046>[Active Skill Disabled]</buf>."
+        "effect": "When executing mass repair skills, Repair AMT <color=#F74848>+18%</color>.\nImmune to <buf ID=900046>[Active Skill Disabled]</buf>."
       }
     }
   },
@@ -922,7 +922,7 @@
         "effect": "When performing active repairs, if the target's HP is below <color=#F74848>60%</color>, Repair AMT <color=#F74848>+14%</color>."
       },
       "8": {
-        "effect": "When performing active repairs, if the target's HP is below <color=#F74848>60%</color>, Repair AMT <color=#F74848>+18%</color>.\nRemove <color=#F74848>1</color> debuff after repairs."
+        "effect": "When performing active repairs, if the target's HP is below <color=#F74848>60%</color>, Repair AMT <color=#F74848>+18%</color>.\nAfter performing active repairs, dispels <color=#F74848>1</color> debuff."
       }
     }
   },
@@ -934,28 +934,28 @@
     "current_level": 2,
     "levels": {
       "1": {
-        "effect": "When performing active repairs on parts with the lowest HP, Repair AMT <color=#F74848>+6%</color>."
+        "effect": "When performing active repairs on the part with the lowest HP, Repair AMT <color=#F74848>+6%</color>."
       },
       "2": {
-        "effect": "When performing active repairs on parts with the lowest HP, Repair AMT <color=#F74848>+8%</color>."
+        "effect": "When performing active repairs on the part with the lowest HP, Repair AMT <color=#F74848>+8%</color>."
       },
       "3": {
-        "effect": "When performing active repairs on parts with the lowest HP, Repair AMT <color=#F74848>+12%</color>."
+        "effect": "When performing active repairs on the part with the lowest HP, Repair AMT <color=#F74848>+12%</color>."
       },
       "4": {
-        "effect": "When performing active repairs on parts with the lowest HP, Repair AMT <color=#F74848>+16%</color>."
+        "effect": "When performing active repairs on the part with the lowest HP, Repair AMT <color=#F74848>+16%</color>."
       },
       "5": {
-        "effect": "When performing active repairs on parts with the lowest HP, Repair AMT <color=#F74848>+20%</color>."
+        "effect": "When performing active repairs on the part with the lowest HP, Repair AMT <color=#F74848>+20%</color>."
       },
       "6": {
-        "effect": "When performing active repairs on parts with the lowest HP, Repair AMT <color=#F74848>+24%</color>."
+        "effect": "When performing active repairs on the part with the lowest HP, Repair AMT <color=#F74848>+24%</color>."
       },
       "7": {
-        "effect": "When performing active repairs on parts with the lowest HP, Repair AMT <color=#F74848>+28%</color>."
+        "effect": "When performing active repairs on the part with the lowest HP, Repair AMT <color=#F74848>+28%</color>."
       },
       "8": {
-        "effect": "When performing active repairs on a part with the lowest HP, Repair AMT <color=#F74848>+36%</color>;\nWhen performing active repairs, can repair <color=#F74848>1</color> additional destroyed part."
+        "effect": "When performing active repairs on a part with the lowest HP, Repair AMT <color=#F74848>+36%</color>.\nWhen performing active repairs, can repair <color=#F74848>1</color> additional destroyed part."
       }
     }
   },
@@ -1021,7 +1021,7 @@
         "effect": "If unable to retaliate in combat, DMG Taken <color=#F74848>-14%</color>."
       },
       "8": {
-        "effect": "If unable to retaliate in combat, DMG Taken <color=#F74848>-18%</color>."
+        "effect": "If unable to retaliate in combat, DMG Taken <color=#F74848>-18%</color>.\nAlso gains DMG <color=#F74848>+8%</color> after combat. Stacks up to <color=#F74848>3</color> times. Lasts for <color=#F74848>1</color> turn."
       }
     }
   },
@@ -1054,7 +1054,7 @@
         "effect": "If unable to retaliate in combat, Dodge Rate <color=#F74848>+14%</color>."
       },
       "8": {
-        "effect": "If unable to retaliate in combat, Dodge Rate <color=#F74848>+18%</color>.\nAfter performing a perfect dodge, gain <buf ID=7100901>[Movement UP]</buf>, lasting for <color=#F74848>1</color> turn."
+        "effect": "If unable to retaliate in combat, Dodge Rate <color=#F74848>+18%</color>.\nAfter performing a perfect dodge, gains <buf ID=7100901>[Movement UP]</buf>, lasting for <color=#F74848>1</color> turn."
       }
     }
   },
@@ -1099,28 +1099,28 @@
     "current_level": 2,
     "levels": {
       "1": {
-        "effect": "When there are no enemies within the adjacent (<color=#F74848>2</color> tiles) area, DMG <color=#F74848>+3%</color>."
+        "effect": "When there are no enemies within <color=#F74848>2</color> adjacent tiles, DMG <color=#F74848>+3%</color>."
       },
       "2": {
-        "effect": "When there are no enemies within the adjacent (<color=#F74848>2</color> tiles) area, DMG <color=#F74848>+4%</color>."
+        "effect": "When there are no enemies within <color=#F74848>2</color> adjacent tiles, DMG <color=#F74848>+4%</color>."
       },
       "3": {
-        "effect": "When there are no enemies within the adjacent (<color=#F74848>2</color> tiles) area, DMG <color=#F74848>+6%</color>."
+        "effect": "When there are no enemies within <color=#F74848>2</color> adjacent tiles, DMG <color=#F74848>+6%</color>."
       },
       "4": {
-        "effect": "When there are no enemies within the adjacent (<color=#F74848>2</color> tiles) area, DMG <color=#F74848>+8%</color>."
+        "effect": "When there are no enemies within <color=#F74848>2</color> adjacent tiles, DMG <color=#F74848>+8%</color>."
       },
       "5": {
-        "effect": "When there are no enemies within the adjacent (<color=#F74848>2</color> tiles) area, DMG <color=#F74848>+10%</color>."
+        "effect": "When there are no enemies within <color=#F74848>2</color> adjacent tiles, DMG <color=#F74848>+10%</color>."
       },
       "6": {
-        "effect": "When there are no enemies within the adjacent (<color=#F74848>2</color> tiles) area, DMG <color=#F74848>+12%</color>."
+        "effect": "When there are no enemies within <color=#F74848>2</color> adjacent tiles, DMG <color=#F74848>+12%</color>."
       },
       "7": {
-        "effect": "When there are no enemies within the adjacent (<color=#F74848>2</color> tiles) area, DMG <color=#F74848>+14%</color>."
+        "effect": "When there are no enemies within <color=#F74848>2</color> adjacent tiles, DMG <color=#F74848>+14%</color>."
       },
       "8": {
-        "effect": "When there are no enemies within the adjacent (<color=#F74848>2</color> tiles) area, DMG <color=#F74848>+18%</color>.\nActivate the Aura: Grants a Hit Rate <color=#F74848>+8%</color> to allies within the adjacent (<color=#F74848>2</color> tiles) area."
+        "effect": "When there are no enemies within <color=#F74848>2</color> adjacent tiles, DMG <color=#F74848>+18%</color>.\nAura: Grants Hit Rate <color=#F74848>+8%</color> to other allies within <color=#F74848>2</color> adjacent tiles."
       }
     }
   },
@@ -1141,19 +1141,19 @@
         "effect": "When HP is full, DMG <color=#F74848>+3%</color> and DMG Taken <color=#F74848>-3%</color>."
       },
       "4": {
-        "effect": "When HP is higher than <color=#F74848>90%</color>, DMG <color=#F74848>+4%</color>, DMG Taken <color=#F74848>-4%</color>."
+        "effect": "When HP is greater than or equal to <color=#F74848>90%</color>, DMG <color=#F74848>+4%</color> and DMG Taken <color=#F74848>-4%</color>."
       },
       "5": {
-        "effect": "When HP is higher than <color=#F74848>90%</color>, DMG <color=#F74848>+5%</color>, DMG Taken <color=#F74848>-5%</color>."
+        "effect": "When HP is greater than or equal to <color=#F74848>90%</color>, DMG <color=#F74848>+5%</color> and DMG Taken <color=#F74848>-5%</color>."
       },
       "6": {
-        "effect": "When HP is higher than <color=#F74848>80%</color>, DMG <color=#F74848>+6%</color>, DMG Taken <color=#F74848>-6%</color>."
+        "effect": "When HP is greater than or equal to <color=#F74848>80%</color>, DMG <color=#F74848>+6%</color> and DMG Taken <color=#F74848>-6%</color>."
       },
       "7": {
-        "effect": "When HP is higher than <color=#F74848>80%</color>, DMG <color=#F74848>+7%</color>, DMG Taken <color=#F74848>-7%</color>."
+        "effect": "When HP is greater than or equal to <color=#F74848>80%</color>, DMG <color=#F74848>+7%</color> and DMG Taken <color=#F74848>-7%</color>."
       },
       "8": {
-        "effect": "When HP is higher than <color=#F74848>80%</color>, DMG <color=#F74848>+9%</color>, DMG Taken <color=#F74848>-9%</color>.\nAt the start of each turn, restore <color=#F74848>8%</color> of HP."
+        "effect": "When HP is greater than or equal to <color=#F74848>80%</color>, DMG <color=#F74848>+9%</color> and DMG Taken <color=#F74848>-9%</color>.\nAt start of action, restores <color=#F74848>8%</color> of HP."
       }
     }
   },
@@ -1219,7 +1219,7 @@
         "effect": "When HP is below <color=#F74848>60%</color>, DMG <color=#F74848>+14%</color>."
       },
       "8": {
-        "effect": "When HP is below <color=#F74848>60%</color>, DMG <color=#F74848>+18%</color>.\nThe Body is not destroyed when it suffers overdamage, with a trigger interval of <color=#F74848>5</color> turns."
+        "effect": "When HP is below <color=#F74848>60%</color>, DMG <color=#F74848>+18%</color>.\nBody is not destroyed when taking overdamage. This effect has a trigger interval of <color=#F74848>5</color> turns."
       }
     }
   },
@@ -1252,7 +1252,7 @@
         "effect": "When retaliating, DMG <color=#F74848>+14%</color>."
       },
       "8": {
-        "effect": "When retaliating, DMG <color=#F74848>+18%</color>.\nAdditionally, [Quick Draw] effective times per turn <color=#F74848>+1</color>."
+        "effect": "When retaliating, DMG <color=#F74848>+18%</color>.\nAdditionally, [Quick Draw] trigger chances per turn <color=#F74848>+1</color>."
       }
     }
   },
@@ -1297,28 +1297,28 @@
     "current_level": 8,
     "levels": {
       "1": {
-        "effect": "When triggering <buf ID=900002>[Link Attack]</buf>, DMG <color=#F74848>+5%</color>."
+        "effect": "When engaging in a <buf ID=900002>[Link Attack]</buf>, DMG <color=#F74848>+5%</color>."
       },
       "2": {
-        "effect": "When triggering <buf ID=900002>[Link Attack]</buf>, DMG <color=#F74848>+7%</color>."
+        "effect": "When engaging in a <buf ID=900002>[Link Attack]</buf>, DMG <color=#F74848>+7%</color>."
       },
       "3": {
-        "effect": "When triggering <buf ID=900002>[Link Attack]</buf>, DMG <color=#F74848>+10%</color>."
+        "effect": "When engaging in a <buf ID=900002>[Link Attack]</buf>, DMG <color=#F74848>+10%</color>."
       },
       "4": {
-        "effect": "When triggering <buf ID=900002>[Link Attack]</buf>, DMG <color=#F74848>+13%</color>."
+        "effect": "When engaging in a <buf ID=900002>[Link Attack]</buf>, DMG <color=#F74848>+13%</color>."
       },
       "5": {
-        "effect": "When triggering <buf ID=900002>[Link Attack]</buf>, DMG <color=#F74848>+16%</color>."
+        "effect": "When engaging in a <buf ID=900002>[Link Attack]</buf>, DMG <color=#F74848>+16%</color>."
       },
       "6": {
-        "effect": "When triggering <buf ID=900002>[Link Attack]</buf>, DMG <color=#F74848>+20%</color>."
+        "effect": "When engaging in a <buf ID=900002>[Link Attack]</buf>, DMG <color=#F74848>+20%</color>."
       },
       "7": {
-        "effect": "When triggering <buf ID=900002>[Link Attack]</buf>, DMG <color=#F74848>+24%</color>."
+        "effect": "When engaging in a <buf ID=900002>[Link Attack]</buf>, DMG <color=#F74848>+24%</color>."
       },
       "8": {
-        "effect": "When triggering <buf ID=900002>[Link Attack]</buf>, DMG <color=#F74848>+30%</color>.\nAdditionally, <buf ID=900002>[Link Attack]</buf> effective times per turn <color=#F74848>+1</color>."
+        "effect": "When engaging in a <buf ID=900002>[Link Attack]</buf>, DMG <color=#F74848>+30%</color>.\nAdditionally, <buf ID=900002>[Link Attack]</buf> trigger chances per turn <color=#F74848>+1</color>."
       }
     }
   },
@@ -1330,28 +1330,28 @@
     "current_level": 8,
     "levels": {
       "1": {
-        "effect": "After triggering <buf ID=900004>[Re-ATK]</buf>, DMG <color=#F74848>+3%</color>."
+        "effect": "When triggering <buf ID=900004>[Re-ATK]</buf>, DMG <color=#F74848>+3%</color>."
       },
       "2": {
-        "effect": "After triggering <buf ID=900004>[Re-ATK]</buf>, DMG <color=#F74848>+4%</color>."
+        "effect": "When triggering <buf ID=900004>[Re-ATK]</buf>, DMG <color=#F74848>+4%</color>."
       },
       "3": {
-        "effect": "After triggering <buf ID=900004>[Re-ATK]</buf>, DMG <color=#F74848>+6%</color>."
+        "effect": "When triggering <buf ID=900004>[Re-ATK]</buf>, DMG <color=#F74848>+6%</color>."
       },
       "4": {
-        "effect": "After triggering <buf ID=900004>[Re-ATK]</buf>, DMG <color=#F74848>+8%</color>."
+        "effect": "When triggering <buf ID=900004>[Re-ATK]</buf>, DMG <color=#F74848>+8%</color>."
       },
       "5": {
-        "effect": "After triggering <buf ID=900004>[Re-ATK]</buf>, DMG <color=#F74848>+10%</color>."
+        "effect": "When triggering <buf ID=900004>[Re-ATK]</buf>, DMG <color=#F74848>+10%</color>."
       },
       "6": {
-        "effect": "After triggering <buf ID=900004>[Re-ATK]</buf>, DMG <color=#F74848>+12%</color>."
+        "effect": "When triggering <buf ID=900004>[Re-ATK]</buf>, DMG <color=#F74848>+12%</color>."
       },
       "7": {
-        "effect": "After triggering <buf ID=900004>[Re-ATK]</buf>, DMG <color=#F74848>+14%</color>."
+        "effect": "When triggering <buf ID=900004>[Re-ATK]</buf>, DMG <color=#F74848>+14%</color>."
       },
       "8": {
-        "effect": "After triggering <buf ID=900004>[Re-ATK]</buf>, DMG <color=#F74848>+18%</color>.\nEach turn, after triggering the first <buf ID=900004>[Re-ATK]</buf>, AP Cost <color=#F74848>-1</color>, with a minimum of <color=#F74848>1</color>."
+        "effect": "After triggering <buf ID=900004>[Re-ATK]</buf>, DMG <color=#F74848>+18%</color>.\nEach turn, after triggering the first <buf ID=900004>[Re-ATK]</buf>, AP Cost <color=#F74848>-1</color> (minimum <color=#F74848>1 AP</color>)."
       }
     }
   },
@@ -1363,25 +1363,25 @@
     "current_level": 8,
     "levels": {
       "1": {
-        "effect": "For each buff possessed, DMG <color=#F74848>+1%</color>, up to <color=#F74848>3%</color>. This effect cannot stack with similar effects."
+        "effect": "For every <color=#F74848>1</color> buff carried, DMG <color=#F74848>+1%</color>, up to <color=#F74848>3%</color>."
       },
       "2": {
-        "effect": "For each buff possessed, DMG <color=#F74848>+1%</color>, up to <color=#F74848>4%</color>. This effect cannot stack with similar effects."
+        "effect": "For every <color=#F74848>1</color> buff carried, DMG <color=#F74848>+1%</color>, up to <color=#F74848>4%</color>."
       },
       "3": {
-        "effect": "For each buff possessed, DMG <color=#F74848>+2%</color>, up to <color=#F74848>6%</color>. This effect cannot stack with similar effects."
+        "effect": "For every <color=#F74848>1</color> buff carried, DMG <color=#F74848>+2%</color>, up to <color=#F74848>6%</color>."
       },
       "4": {
-        "effect": "For each buff possessed, DMG <color=#F74848>+2%</color>, up to <color=#F74848>8%</color>. This effect cannot stack with similar effects."
+        "effect": "For every <color=#F74848>1</color> buff carried, DMG <color=#F74848>+2%</color>, up to <color=#F74848>8%</color>."
       },
       "5": {
-        "effect": "For each buff possessed, DMG <color=#F74848>+2.5%</color>, up to <color=#F74848>10%</color>. This effect cannot stack with similar effects."
+        "effect": "For every <color=#F74848>1</color> buff carried, DMG <color=#F74848>+2.5%</color>, up to <color=#F74848>10%</color>."
       },
       "6": {
-        "effect": "For each buff possessed, DMG <color=#F74848>+3%</color>, up to <color=#F74848>12%</color>. This effect cannot stack with similar effects."
+        "effect": "For every <color=#F74848>1</color> buff carried, DMG <color=#F74848>+3%</color>, up to <color=#F74848>12%</color>."
       },
       "7": {
-        "effect": "For each buff possessed, DMG <color=#F74848>+3.5%</color>, up to <color=#F74848>14%</color>. This effect cannot stack with similar effects."
+        "effect": "For every <color=#F74848>1</color> buff carried, DMG <color=#F74848>+3.5%</color>, up to <color=#F74848>14%</color>."
       },
       "8": {
         "effect": "For each buff possessed, DMG <color=#F74848>+4.5%</color>, up to <color=#F74848>18%</color>.\nThe duration of the buff gained increases by <color=#F74848>1</color>. This effect cannot stack with similar effects."
@@ -1396,28 +1396,28 @@
     "current_level": 2,
     "levels": {
       "1": {
-        "effect": "When attacking a target that carries debuffs, DMG <color=#F74848>+3%</color>."
+        "effect": "When actively attacking, DMG <color=#F74848>+3%</color> against targets afflicted with debuffs."
       },
       "2": {
-        "effect": "When attacking a target that carries debuffs, DMG <color=#F74848>+4%</color>."
+        "effect": "When actively attacking, DMG <color=#F74848>+4%</color> against targets afflicted with debuffs."
       },
       "3": {
-        "effect": "When attacking a target that carries debuffs, DMG <color=#F74848>+6%</color>."
+        "effect": "When actively attacking, DMG <color=#F74848>+6%</color> against targets afflicted with debuffs."
       },
       "4": {
-        "effect": "When attacking a target that carries debuffs, DMG <color=#F74848>+8%</color>."
+        "effect": "When actively attacking, DMG <color=#F74848>+8%</color> against targets afflicted with debuffs."
       },
       "5": {
-        "effect": "When attacking a target that carries debuffs, DMG <color=#F74848>+10%</color>."
+        "effect": "When actively attacking, DMG <color=#F74848>+10%</color> against targets afflicted with debuffs."
       },
       "6": {
-        "effect": "When attacking a target that carries debuffs, DMG <color=#F74848>+12%</color>."
+        "effect": "When actively attacking, DMG <color=#F74848>+12%</color> against targets afflicted with debuffs."
       },
       "7": {
-        "effect": "When attacking a target that carries debuffs, DMG <color=#F74848>+14%</color>."
+        "effect": "When actively attacking, DMG <color=#F74848>+14%</color> against targets afflicted with debuffs."
       },
       "8": {
-        "effect": "When attacking a target that carries debuffs, DMG <color=#F74848>+14%</color>.\nWhen inflicting debuffs, the duration <color=#F74848>+1</color>."
+        "effect": "When actively attacking, DMG <color=#F74848>+18%</color> against targets afflicted with debuffs.\nWhen inflicting debuffs, duration <color=#F74848>+1</color>."
       }
     }
   },
@@ -1429,28 +1429,28 @@
     "current_level": 2,
     "levels": {
       "1": {
-        "effect": "When casting an AoE Attack, DMG Dealt <color=#F74848>+3%</color>."
+        "effect": "When executing an AoE Attack, DMG Dealt <color=#F74848>+3%</color>."
       },
       "2": {
-        "effect": "When casting an AoE Attack, DMG Dealt <color=#F74848>+4%</color>."
+        "effect": "When executing an AoE Attack, DMG Dealt <color=#F74848>+4%</color>."
       },
       "3": {
-        "effect": "When casting an AoE Attack, DMG Dealt <color=#F74848>+6%</color>."
+        "effect": "When executing an AoE Attack, DMG Dealt <color=#F74848>+6%</color>."
       },
       "4": {
-        "effect": "When casting an AoE Attack, DMG Dealt <color=#F74848>+8%</color>."
+        "effect": "When executing an AoE Attack, DMG Dealt <color=#F74848>+8%</color>."
       },
       "5": {
-        "effect": "When casting an AoE Attack, DMG Dealt <color=#F74848>+10%</color>."
+        "effect": "When executing an AoE Attack, DMG Dealt <color=#F74848>+10%</color>."
       },
       "6": {
-        "effect": "When casting an AoE Attack, DMG Dealt <color=#F74848>+12%</color>."
+        "effect": "When executing an AoE Attack, DMG Dealt <color=#F74848>+12%</color>."
       },
       "7": {
-        "effect": "When casting an AoE Attack, DMG Dealt <color=#F74848>+14%</color>."
+        "effect": "When executing an AoE Attack, DMG Dealt <color=#F74848>+14%</color>."
       },
       "8": {
-        "effect": "When executing an AoE Attack, DMG Dealt <color=#F74848>+18%</color>.\nIf <color=#F74848>3</color> or more targets are hit, inflicts <buf ID=7101506>[Movement Inhibition I]</buf> on targets hit after combat, lasting for <color=#F74848>2</color> turns."
+        "effect": "When executing an AoE Attack, DMG Dealt <color=#F74848>+18%</color>.\nIf <color=#F74848>3</color> or more targets are hit, inflicts <buf ID=7101504>[Movement Inhibition I]</buf> on targets hit after combat, lasting for <color=#F74848>2</color> turns."
       }
     }
   },
@@ -1462,28 +1462,28 @@
     "current_level": 8,
     "levels": {
       "1": {
-        "effect": "Before actively attacking, if distance moved is <color=#F74848>2</color> tiles or less, DMG <color=#F74848>+3%</color>"
+        "effect": "Before actively attacking, if distance moved is <color=#F74848>2</color> tiles or less, DMG <color=#F74848>+3%</color>."
       },
       "2": {
-        "effect": "Before actively attacking, if distance moved is <color=#F74848>2</color> tiles or less, DMG <color=#F74848>+4%</color>"
+        "effect": "Before actively attacking, if distance moved is <color=#F74848>2</color> tiles or less, DMG <color=#F74848>+4%</color>."
       },
       "3": {
-        "effect": "Before actively attacking, if distance moved is <color=#F74848>2</color> tiles or less, DMG <color=#F74848>+6%</color>"
+        "effect": "Before actively attacking, if distance moved is <color=#F74848>2</color> tiles or less, DMG <color=#F74848>+6%</color>."
       },
       "4": {
-        "effect": "Before actively attacking, if distance moved is <color=#F74848>2</color> tiles or less, DMG <color=#F74848>+8%</color>"
+        "effect": "Before actively attacking, if distance moved is <color=#F74848>2</color> tiles or less, DMG <color=#F74848>+8%</color>."
       },
       "5": {
-        "effect": "Before actively attacking, if distance moved is <color=#F74848>2</color> tiles or less, DMG <color=#F74848>+10%</color>"
+        "effect": "Before actively attacking, if distance moved is <color=#F74848>2</color> tiles or less, DMG <color=#F74848>+10%</color>."
       },
       "6": {
-        "effect": "Before actively attacking, if distance moved is <color=#F74848>2</color> tiles or less, DMG <color=#F74848>+12%</color>"
+        "effect": "Before actively attacking, if distance moved is <color=#F74848>2</color> tiles or less, DMG <color=#F74848>+12%</color>."
       },
       "7": {
-        "effect": "Before actively attacking, if distance moved is <color=#F74848>2</color> tiles or less, DMG <color=#F74848>+14%</color>"
+        "effect": "Before actively attacking, if distance moved is <color=#F74848>2</color> tiles or less, DMG <color=#F74848>+14%</color>."
       },
       "8": {
-        "effect": "Before actively attacking, if distance moved is <color=#F74848>2</color> tiles or less, DMG <color=#F74848>+18%</color>;\nAt end of action, immediately gain <color=#F74848>1</color> AP. This effect has a <color=#F74848>1</color>-turn trigger interval."
+        "effect": "Before actively attacking, if distance moved is <color=#F74848>2</color> tiles or less, DMG <color=#F74848>+18%</color>.\nAt end of action, immediately gains <color=#F74848>1</color> AP. This effect has a <color=#F74848>1</color>-turn trigger interval."
       }
     }
   },
@@ -1495,28 +1495,28 @@
     "current_level": 2,
     "levels": {
       "1": {
-        "effect": "Before an Active Attack in combat, for every <color=#F74848>1</color> tile moved, DMG <color=#F74848>+1%</color>, up to <color=#F74848>3%</color>."
+        "effect": "Before initiating combat, for every <color=#F74848>1</color> tile moved, DMG <color=#F74848>+1%</color>, up to <color=#F74848>3%</color>."
       },
       "2": {
-        "effect": "Before an Active Attack in combat, for every <color=#F74848>1</color> tile moved, DMG <color=#F74848>+1%</color>, up to <color=#F74848>4%</color>."
+        "effect": "Before initiating combat, for every <color=#F74848>1</color> tile moved, DMG <color=#F74848>+1%</color>, up to <color=#F74848>4%</color>."
       },
       "3": {
-        "effect": "Before an Active Attack in combat, for every <color=#F74848>1</color> tile moved, DMG <color=#F74848>+2%</color>, up to <color=#F74848>6%</color>."
+        "effect": "Before initiating combat, for every <color=#F74848>1</color> tile moved, DMG <color=#F74848>+2%</color>, up to <color=#F74848>6%</color>."
       },
       "4": {
-        "effect": "Before an Active Attack in combat, for every <color=#F74848>1</color> tile moved, DMG <color=#F74848>+2%</color>, up to <color=#F74848>8%</color>."
+        "effect": "Before initiating combat, for every <color=#F74848>1</color> tile moved, DMG <color=#F74848>+2%</color>, up to <color=#F74848>8%</color>."
       },
       "5": {
-        "effect": "Before an Active Attack in combat, for every <color=#F74848>1</color> tile moved, DMG <color=#F74848>+2.5%</color>, up to <color=#F74848>10%</color>."
+        "effect": "Before initiating combat, for every <color=#F74848>1</color> tile moved, DMG <color=#F74848>+2.5%</color>, up to <color=#F74848>10%</color>."
       },
       "6": {
-        "effect": "Before an Active Attack in combat, for every <color=#F74848>1</color> tile moved, DMG <color=#F74848>+3%</color>, up to <color=#F74848>12%</color>."
+        "effect": "Before initiating combat, for every <color=#F74848>1</color> tile moved, DMG <color=#F74848>+3%</color>, up to <color=#F74848>12%</color>."
       },
       "7": {
-        "effect": "Before an Active Attack in combat, for every <color=#F74848>1</color> tile moved, DMG <color=#F74848>+3.5%</color>, up to <color=#F74848>14%</color>."
+        "effect": "Before initiating combat, for every <color=#F74848>1</color> tile moved, DMG <color=#F74848>+3.5%</color>, up to <color=#F74848>14%</color>."
       },
       "8": {
-        "effect": "Before an Active Attack in combat, for every <color=#F74848>1</color> tile moved, DMG <color=#F74848>+4.5%</color>, up to <color=#F74848>18%</color>.\nST's Movement <color=#F74848>+1</color>."
+        "effect": "Before initiating combat, for every <color=#F74848>1</color> tile moved, DMG <color=#F74848>+4.5%</color>, up to <color=#F74848>18%</color>.\nST Movement <color=#F74848>+1</color>."
       }
     }
   },
@@ -1528,28 +1528,28 @@
     "current_level": 2,
     "levels": {
       "1": {
-        "effect": "During an Active Attack, if the target cannot retaliate, DMG Taken <color=#F74848>-3%</color>."
+        "effect": "When initiating combat, if the target can retaliate, DMG Taken <color=#F74848>-3%</color>."
       },
       "2": {
-        "effect": "During an Active Attack, if the target cannot retaliate, DMG Taken <color=#F74848>-4%</color>."
+        "effect": "When initiating combat, if the target can retaliate, DMG Taken <color=#F74848>-4%</color>."
       },
       "3": {
-        "effect": "During an Active Attack, if the target cannot retaliate, DMG Taken <color=#F74848>-6%</color>."
+        "effect": "When initiating combat, if the target can retaliate, DMG Taken <color=#F74848>-6%</color>."
       },
       "4": {
-        "effect": "During an Active Attack, if the target cannot retaliate, DMG Taken <color=#F74848>-8%</color>."
+        "effect": "When initiating combat, if the target can retaliate, DMG Taken <color=#F74848>-8%</color>."
       },
       "5": {
-        "effect": "During an Active Attack, if the target cannot retaliate, DMG Taken <color=#F74848>-10%</color>."
+        "effect": "When initiating combat, if the target can retaliate, DMG Taken <color=#F74848>-10%</color>."
       },
       "6": {
-        "effect": "During an Active Attack, if the target cannot retaliate, DMG Taken <color=#F74848>-12%</color>."
+        "effect": "When initiating combat, if the target can retaliate, DMG Taken <color=#F74848>-12%</color>."
       },
       "7": {
-        "effect": "During an Active Attack, if the target cannot retaliate, DMG Taken <color=#F74848>-14%</color>."
+        "effect": "When initiating combat, if the target can retaliate, DMG Taken <color=#F74848>-14%</color>."
       },
       "8": {
-        "effect": "When initiating combat, if the target can retaliate, DMG Taken <color=#F74848>-18%</color>;\nAfter initiating combat, restores HP equal to <color=#F74848>25%</color> of damage dealt."
+        "effect": "When initiating combat, if the target can retaliate, DMG Taken <color=#F74848>-18%</color>.\nAfter initiating combat, restores HP equal to <color=#F74848>25%</color> of damage dealt."
       }
     }
   },
@@ -1561,28 +1561,28 @@
     "current_level": 2,
     "levels": {
       "1": {
-        "effect": "During an Active Attack in combat, if the target cannot retaliate, DMG <color=#F74848>+3%</color>."
+        "effect": "When initiating combat, if the target cannot retaliate, DMG <color=#F74848>+3%</color>."
       },
       "2": {
-        "effect": "During an Active Attack in combat, if the target cannot retaliate, DMG <color=#F74848>+4%</color>."
+        "effect": "When initiating combat, if the target cannot retaliate, DMG <color=#F74848>+4%</color>."
       },
       "3": {
-        "effect": "During an Active Attack in combat, if the target cannot retaliate, DMG <color=#F74848>+6%</color>."
+        "effect": "When initiating combat, if the target cannot retaliate, DMG <color=#F74848>+6%</color>."
       },
       "4": {
-        "effect": "During an Active Attack in combat, if the target cannot retaliate, DMG <color=#F74848>+8%</color>."
+        "effect": "When initiating combat, if the target cannot retaliate, DMG <color=#F74848>+8%</color>."
       },
       "5": {
-        "effect": "During an Active Attack in combat, if the target cannot retaliate, DMG <color=#F74848>+10%</color>."
+        "effect": "When initiating combat, if the target cannot retaliate, DMG <color=#F74848>+10%</color>."
       },
       "6": {
-        "effect": "During an Active Attack in combat, if the target cannot retaliate, DMG <color=#F74848>+12%</color>."
+        "effect": "When initiating combat, if the target cannot retaliate, DMG <color=#F74848>+12%</color>."
       },
       "7": {
-        "effect": "During an Active Attack in combat, if the target cannot retaliate, DMG <color=#F74848>+14%</color>."
+        "effect": "When initiating combat, if the target cannot retaliate, DMG <color=#F74848>+14%</color>."
       },
       "8": {
-        "effect": "During an Active Attack in combat, if the target cannot retaliate, DMG <color=#F74848>+18%</color>.\nEqually, dispel <color=#F74848>1</color> buff from the target before combat."
+        "effect": "When initiating combat, if the target cannot retaliate, DMG <color=#F74848>+18%</color>.\nAlso dispels <color=#F74848>1</color> buff from the target before combat."
       }
     }
   },
@@ -1594,28 +1594,28 @@
     "current_level": 2,
     "levels": {
       "1": {
-        "effect": "When attacking a part with HP lower than <color=#F74848>40%</color>, DMG <color=#F74848>+3%</color>."
+        "effect": "When attacking a part with HP below <color=#F74848>40%</color>, DMG <color=#F74848>+3%</color>."
       },
       "2": {
-        "effect": "When attacking a part with HP lower than <color=#F74848>40%</color>, DMG <color=#F74848>+4%</color>."
+        "effect": "When attacking a part with HP below <color=#F74848>40%</color>, DMG <color=#F74848>+4%</color>."
       },
       "3": {
-        "effect": "When attacking a part with HP lower than <color=#F74848>40%</color>, DMG <color=#F74848>+6%</color>."
+        "effect": "When attacking a part with HP below <color=#F74848>40%</color>, DMG <color=#F74848>+6%</color>."
       },
       "4": {
-        "effect": "When attacking a part with HP lower than <color=#F74848>50%</color>, DMG <color=#F74848>+8%</color>."
+        "effect": "When attacking a part with HP below <color=#F74848>50%</color>, DMG <color=#F74848>+8%</color>."
       },
       "5": {
-        "effect": "When attacking a part with HP lower than <color=#F74848>50%</color>, DMG <color=#F74848>+10%</color>."
+        "effect": "When attacking a part with HP below <color=#F74848>50%</color>, DMG <color=#F74848>+10%</color>."
       },
       "6": {
-        "effect": "When attacking a part with HP lower than <color=#F74848>60%</color>, DMG <color=#F74848>+12%</color>."
+        "effect": "When attacking a part with HP below <color=#F74848>60%</color>, DMG <color=#F74848>+12%</color>."
       },
       "7": {
-        "effect": "When attacking a part with HP lower than <color=#F74848>60%</color>, DMG <color=#F74848>+14%</color>."
+        "effect": "When attacking a part with HP below <color=#F74848>60%</color>, DMG <color=#F74848>+14%</color>."
       },
       "8": {
-        "effect": "When attacking a part with HP lower than <color=#F74848>60%</color>, DMG <color=#F74848>+18%</color>.\nIf a part is broken, trigger <buf ID=900001>[Flurry Strike]</buf> to deal <color=#F74848>0.25x</color> DMG."
+        "effect": "When attacking a part with HP below <color=#F74848>60%</color>, DMG <color=#F74848>+18%</color>.\nIf a part is destroyed, triggers <buf ID=900001>[Flurry Strike]</buf>, dealing <color=#F74848>0.25x</color> DMG."
       }
     }
   },
@@ -1636,19 +1636,19 @@
         "effect": "When attacking a target with full HP, DMG <color=#F74848>+6%</color>."
       },
       "4": {
-        "effect": "When attacking a target with HP higher than <color=#F74848>80%</color>, DMG <color=#F74848>+8%</color>."
+        "effect": "When attacking a target with HP greater than or equal to <color=#F74848>80%</color>, DMG <color=#F74848>+8%</color>."
       },
       "5": {
-        "effect": "When attacking a target with HP higher than <color=#F74848>80%</color>, DMG <color=#F74848>+10%</color>."
+        "effect": "When attacking a target with HP greater than or equal to <color=#F74848>80%</color>, DMG <color=#F74848>+10%</color>."
       },
       "6": {
-        "effect": "When attacking a target with HP higher than <color=#F74848>60%</color>, DMG <color=#F74848>+12%</color>."
+        "effect": "When attacking a target with HP greater than or equal to <color=#F74848>60%</color>, DMG <color=#F74848>+12%</color>."
       },
       "7": {
-        "effect": "When attacking a target with HP higher than <color=#F74848>60%</color>, DMG <color=#F74848>+14%</color>."
+        "effect": "When attacking a target with HP greater than or equal to <color=#F74848>60%</color>, DMG <color=#F74848>+14%</color>."
       },
       "8": {
-        "effect": "When attacking a target with HP higher than <color=#F74848>60%</color>, DMG <color=#F74848>+18%</color>.\nIf a part is not broken, trigger <buf ID=900001>[Flurry Strike]</buf>, dealing <color=#F74848>0.25x</color> DMG."
+        "effect": "When attacking a target with HP greater than or equal to <color=#F74848>60%</color>, DMG <color=#F74848>+18%</color>.\nIf no part is destroyed, triggers <buf ID=900001>[Flurry Strike]</buf> to deal <color=#F74848>0.25x</color> DMG."
       }
     }
   },
@@ -2017,7 +2017,7 @@
     "current_level": 4,
     "levels": {
       "1": {
-        "effect": "When attacked, for each time an attack is dodged, gains DMG <color=#F74848>+1%</color>, up to <color=#F74848>8%</color>. At end of action, DMG <color=#F74848>-2%</color>."
+        "effect": "When attacked, for each time an attack is dodged, gains DMG <color=#F74848>+1%</color>, up to <color=#F74848>+8%</color>. At end of action, DMG <color=#F74848>-2%</color>."
       },
       "2": {
         "effect": "When attacked, for each time an attack is dodged, gains DMG <color=#F74848>+1.5%</color>, up to <color=#F74848>15%</color>. At end of action, DMG <color=#F74848>-4%</color>."
@@ -2143,13 +2143,13 @@
     "current_level": 4,
     "levels": {
       "1": {
-        "effect": "Each time an enemy ST is hit by an attack that includes <buf ID=900017>[Fixed DMG]</buf> or Splash DMG, DMG increases by <color=#F74848>2%</color> for <color=#F74848>3</color> turns. Stacks up to <color=#F74848>2</color> times."
+        "effect": "Each time an enemy ST is hit by an attack that includes <buf ID=900017>[Fixed DMG]</buf> or Splash DMG, DMG increases by <color=#F74848>2%</color> for <color=#F74848>2</color> turns. Stacks up to <color=#F74848>3</color> times."
       },
       "2": {
-        "effect": "Each time an enemy ST is hit by an attack that includes <buf ID=900017>[Fixed DMG]</buf> or Splash DMG, DMG increases by <color=#F74848>4%</color> for <color=#F74848>3</color> turns. Stacks up to <color=#F74848>2</color> times."
+        "effect": "Each time an enemy ST is hit by an attack that includes <buf ID=900017>[Fixed DMG]</buf> or Splash DMG, DMG increases by <color=#F74848>4%</color> for <color=#F74848>2</color> turns. Stacks up to <color=#F74848>3</color> times."
       },
       "3": {
-        "effect": "Each time an enemy ST is hit by an attack that includes <buf ID=900017>[Fixed DMG]</buf> or Splash DMG, DMG increases by <color=#F74848>4%</color> for <color=#F74848>5</color> turns. Stacks up to <color=#F74848>2</color> times."
+        "effect": "Each time an enemy ST is hit by an attack that includes <buf ID=900017>[Fixed DMG]</buf> or Splash DMG, DMG increases by <color=#F74848>4%</color> for <color=#F74848>2</color> turns. Stacks up to <color=#F74848>5</color> times."
       },
       "4": {
         "effect": "Each time an enemy ST is hit by an attack that includes <buf ID=900017>[Fixed DMG]</buf> or Splash DMG, DMG increases by <color=#F74848>6%</color> for <color=#F74848>2</color> turns. Stacks up to <color=#F74848>5</color> times."
@@ -2206,16 +2206,16 @@
     "current_level": 4,
     "levels": {
       "1": {
-        "effect": "When attacking with a skill that costs <color=#F74848>3</color> AP or more, DMG <color=#F74848>+4%</color>. For every <color=#F74848>1</color> additional AP consumed, this effect <color=#F74848>+3%</color>, up to <color=#F74848>7%</color>."
+        "effect": "When attacking with a skill that costs <color=#F74848>3</color> AP or more, DMG <color=#F74848>+4%</color>. For every additional AP consumed, this effect <color=#F74848>+3%</color>, up to <color=#F74848>7%</color>."
       },
       "2": {
-        "effect": "When attacking with a skill that costs <color=#F74848>3</color> AP or more, DMG <color=#F74848>+8%</color>. For every <color=#F74848>1</color> additional AP consumed, this effect <color=#F74848>+3%</color>, up to <color=#F74848>14%</color>."
+        "effect": "When attacking with a skill that costs <color=#F74848>3</color> AP or more, DMG <color=#F74848>+8%</color>. For every additional AP consumed, this effect <color=#F74848>+3%</color>, up to <color=#F74848>14%</color>."
       },
       "3": {
-        "effect": "When attacking with a skill that costs <color=#F74848>3</color> AP or more, DMG <color=#F74848>+14%</color>. For every <color=#F74848>1</color> additional AP consumed, this effect <color=#F74848>+5%</color>, up to <color=#F74848>24%</color>."
+        "effect": "When attacking with a skill that costs <color=#F74848>3</color> AP or more, DMG <color=#F74848>+14%</color>. For every additional AP consumed, this effect <color=#F74848>+5%</color>, up to <color=#F74848>24%</color>."
       },
       "4": {
-        "effect": "When attacking with a skill that costs <color=#F74848>3</color> AP or more, DMG <color=#F74848>+20%</color>. For every <color=#F74848>1</color> additional AP consumed, this effect <color=#F74848>+5%</color>, up to <color=#F74848>35%</color>."
+        "effect": "When attacking with a skill that costs <color=#F74848>3</color> AP or more, DMG <color=#F74848>+20%</color>. For every additional AP consumed, this effect <color=#F74848>+5%</color>, up to <color=#F74848>35%</color>."
       }
     }
   },
@@ -2248,13 +2248,13 @@
     "current_level": 4,
     "levels": {
       "1": {
-        "effect": "After executing a single-target repair skill, if the target's HP is full, grants the target <buf ID=204312>[Kinetic Monitor]</buf>. Can only trigger <color=#F74848>1</color> time per turn."
+        "effect": "After executing a single-target repair skill, if the target's HP is full, has a <color=#F74848>20%</color> chance to grant the target <buf ID=204312>[Kinetic Monitor]</buf>. Can only trigger <color=#F74848>1</color> time per turn."
       },
       "2": {
-        "effect": "After executing a single-target repair skill, if the target's HP is full, grants the target <buf ID=204312>[Kinetic Monitor]</buf>. Can only trigger <color=#F74848>1</color> time per turn."
+        "effect": "After executing a single-target repair skill, if the target's HP is full, has a <color=#F74848>40%</color> chance to grant the target <buf ID=204312>[Kinetic Monitor]</buf>. Can only trigger <color=#F74848>1</color> time per turn."
       },
       "3": {
-        "effect": "After executing a single-target repair skill, if the target's HP is full, grants the target <buf ID=204312>[Kinetic Monitor]</buf>. Can only trigger <color=#F74848>1</color> time per turn."
+        "effect": "After executing a single-target repair skill, if the target's HP is full, has a <color=#F74848>70%</color> chance to grant the target <buf ID=204312>[Kinetic Monitor]</buf>. Can only trigger <color=#F74848>1</color> time per turn."
       },
       "4": {
         "effect": "After executing a single-target repair skill, if the target's HP is full, grants the target <buf ID=204312>[Kinetic Monitor]</buf>. Can only trigger <color=#F74848>1</color> time per turn."
@@ -2311,13 +2311,13 @@
     "current_level": 4,
     "levels": {
       "1": {
-        "effect": "When attacking, DMG <color=#F74848>1</color> for every <color=#F74848>2%</color> tile from the target, up to <color=#F74848>+6%</color>."
+        "effect": "When attacking, DMG <color=#F74848>+2%</color> for every <color=#F74848>1</color> tile from the target, up to <color=#F74848>6%</color>."
       },
       "2": {
-        "effect": "When attacking, DMG <color=#F74848>1</color> for every <color=#F74848>2.5%</color> tile from the target, up to <color=#F74848>+10%</color>."
+        "effect": "When attacking, DMG <color=#F74848>+2.5%</color> for every <color=#F74848>1</color> tile from the target, up to <color=#F74848>10%</color>."
       },
       "3": {
-        "effect": "When attacking, DMG <color=#F74848>1</color> for every <color=#F74848>3%</color> tile from the target, up to <color=#F74848>+15%</color>."
+        "effect": "When attacking, DMG <color=#F74848>+3%</color> for every <color=#F74848>1</color> tile from the target, up to <color=#F74848>+15%</color>."
       },
       "4": {
         "effect": "When attacking, DMG <color=#F74848>+5%</color> for every <color=#F74848>1</color> tile from the target, up to <color=#F74848>+25%</color>."
@@ -2446,7 +2446,7 @@
         "effect": "When actively attacking, if <color=#F74848>3</color> or more targets are hit, restores <color=#F74848>1</color> AP after combat. This effect has a <color=#F74848>1</color>-turn trigger interval."
       },
       "4": {
-        "effect": "When actively attacking, if <color=#F74848>3</color> or more targets are hit, restores <color=#F74848>1</color> AP after combat. Can only trigger <color=#F74848>1</color> time per turn."
+        "effect": "When actively attacking, if <color=#F74848>3</color> or more targets are hit, restores <color=#F74848>1 AP</color> after combat. Can only trigger <color=#F74848>1</color> time per turn."
       }
     }
   },
@@ -2458,16 +2458,16 @@
     "current_level": 4,
     "levels": {
       "1": {
-        "effect": "During the Enemy Turn, DMG <color=#F74848>+6%</color>."
+        "effect": "During the enemy turn, DMG <color=#F74848>+6%</color>."
       },
       "2": {
-        "effect": "During the Enemy Turn, DMG <color=#F74848>+12%</color>."
+        "effect": "During the enemy turn, DMG <color=#F74848>+12%</color>."
       },
       "3": {
-        "effect": "During the Enemy Turn, DMG <color=#F74848>+20%</color>."
+        "effect": "During the enemy turn, DMG <color=#F74848>+20%</color>."
       },
       "4": {
-        "effect": "During the Enemy Turn, DMG <color=#F74848>+30%</color>."
+        "effect": "During the enemy turn, DMG <color=#F74848>+30%</color>."
       }
     }
   },
@@ -2479,16 +2479,16 @@
     "current_level": 4,
     "levels": {
       "1": {
-        "effect": "When there are enemies within the current weapon's range, DMG <color=#F74848>+3%</color>. For each additional <color=#F74848>1</color> enemy, DMG increases by an extra <color=#F74848>1.5%</color>, upto <color=#F74848>6%</color>."
+        "effect": "When there are enemies within the current weapon's range, DMG <color=#F74848>+3%</color>. For each additional <color=#F74848>1</color> enemy, DMG increases by an extra <color=#F74848>1.5%</color>, up to <color=#F74848>6%</color>."
       },
       "2": {
-        "effect": "When there are enemies within the current weapon's range, DMG <color=#F74848>+6%</color>. For each additional <color=#F74848>1</color> enemy, DMG increases by an extra <color=#F74848>1.5%</color>, upto <color=#F74848>12%</color>."
+        "effect": "When there are enemies within the current weapon's range, DMG <color=#F74848>+6%</color>. For each additional <color=#F74848>1</color> enemy, DMG increases by an extra <color=#F74848>1.5%</color>, up to <color=#F74848>12%</color>."
       },
       "3": {
-        "effect": "When there are enemies within the current weapon's range, DMG <color=#F74848>+10%</color>. For each additional <color=#F74848>1</color> enemy, DMG increases by an extra <color=#F74848>2.5%</color>, upto <color=#F74848>20%</color>."
+        "effect": "When there are enemies within the current weapon's range, DMG <color=#F74848>+10%</color>. For each additional <color=#F74848>1</color> enemy, DMG increases by an extra <color=#F74848>2.5%</color>, up to <color=#F74848>20%</color>."
       },
       "4": {
-        "effect": "When there are enemies within the current weapon's range, DMG <color=#F74848>+15%</color>. For each additional <color=#F74848>1</color> enemy, DMG increases by an extra <color=#F74848>2.5%</color>, upto <color=#F74848>30%</color>."
+        "effect": "When there are enemies within the current weapon's range, DMG <color=#F74848>+15%</color>. For each additional <color=#F74848>1</color> enemy, DMG increases by an extra <color=#F74848>2.5%</color>, up to <color=#F74848>30%</color>."
       }
     }
   },
@@ -2500,16 +2500,16 @@
     "current_level": 4,
     "levels": {
       "1": {
-        "effect": "When your AP exceeds <color=#F74848>2</color>, for each point of excess AP, DMG <color=#F74848>+2%</color>, up to <color=#F74848>6%</color>."
+        "effect": "When AP exceeds <color=#F74848>2</color>, for each point of excess AP, DMG <color=#F74848>+2%</color>, up to <color=#F74848>6%</color>."
       },
       "2": {
-        "effect": "When your AP exceeds <color=#F74848>2</color>, for each point of excess AP, DMG <color=#F74848>+4%</color>, up to <color=#F74848>12%</color>."
+        "effect": "When AP exceeds <color=#F74848>2</color>, for each point of excess AP, DMG <color=#F74848>+4%</color>, up to <color=#F74848>12%</color>."
       },
       "3": {
-        "effect": "When your AP exceeds <color=#F74848>2</color>, for each point of excess AP, DMG <color=#F74848>+4%</color>, up to <color=#F74848>20%</color>."
+        "effect": "When AP exceeds <color=#F74848>2</color>, for each point of excess AP, DMG <color=#F74848>+4%</color>, up to <color=#F74848>20%</color>."
       },
       "4": {
-        "effect": "When your AP exceeds <color=#F74848>2</color>, for each point of excess AP, DMG <color=#F74848>+6%</color>, up to <color=#F74848>30%</color>."
+        "effect": "When AP exceeds <color=#F74848>2</color>, for each point of excess AP, DMG <color=#F74848>+6%</color>, up to <color=#F74848>30%</color>."
       }
     }
   },
@@ -2521,16 +2521,16 @@
     "current_level": 4,
     "levels": {
       "1": {
-        "effect": "Activate the Aura: Inflicts a Dodge Rate <color=#F74848>2</color> on enemies within the adjacent <color=#F74848>2.5%</color>-tile area."
+        "effect": "Aura: Inflicts Dodge Rate <color=#F74848>-2.5%</color> on enemies within <color=#F74848>2</color> adjacent tiles."
       },
       "2": {
-        "effect": "Activate the Aura: Inflicts a Dodge Rate <color=#F74848>2</color> on enemies within the adjacent <color=#F74848>5%</color>-tile area."
+        "effect": "Aura: Inflicts Dodge Rate <color=#F74848>-5%</color> on enemies within <color=#F74848>2</color> adjacent tiles."
       },
       "3": {
-        "effect": "Activate the Aura: Inflicts a Dodge Rate <color=#F74848>2</color> on enemies within the adjacent <color=#F74848>8%</color>-tile area."
+        "effect": "Aura: Inflicts Dodge Rate <color=#F74848>-8%</color> on enemies within <color=#F74848>2</color> adjacent tiles."
       },
       "4": {
-        "effect": "Activate the Aura: Inflicts a Dodge Rate <color=#F74848>-12%</color> on enemies within the adjacent <color=#F74848>2</color>-tile area."
+        "effect": "Aura: Inflicts Dodge Rate <color=#F74848>-12%</color> on enemies within <color=#F74848>2</color> adjacent tiles."
       }
     }
   },
@@ -2542,13 +2542,13 @@
     "current_level": 4,
     "levels": {
       "1": {
-        "effect": "When attacking with a skill that costs <color=#F74848>3</color> AP or more, DMG <color=#F74848>+10%</color> and Hit Rate <color=#F74848>+10%</color>. For every additional AP consumed, effect <color=#F74848>+2%</color>, up to <color=#F74848>16%</color>."
+        "effect": "When attacking with a skill that costs <color=#F74848>3</color> AP or more, DMG <color=#F74848>+3%</color> and Hit Rate <color=#F74848>+3%</color>."
       },
       "2": {
-        "effect": "When attacking with a skill that costs <color=#F74848>3</color> AP or more, DMG <color=#F74848>+4%</color> and Hit Rate <color=#F74848>1</color>. For every additional AP consumed, effect <color=#F74848>+1%</color>, up to <color=#F74848>6%</color>."
+        "effect": "When attacking with a skill that costs <color=#F74848>3</color> AP or more, DMG <color=#F74848>+4%</color> and Hit Rate <color=#F74848>+4%</color>. For every additional AP consumed, effect <color=#F74848>+1%</color>, up to <color=#F74848>6%</color>."
       },
       "3": {
-        "effect": "When attacking with a skill that costs <color=#F74848>3</color> AP or more, DMG <color=#F74848>+7%</color> and Hit Rate <color=#F74848>1</color>. For every additional AP consumed, effect <color=#F74848>+2%</color>, up to <color=#F74848>11%</color>."
+        "effect": "When attacking with a skill that costs <color=#F74848>3</color> AP or more, DMG <color=#F74848>+7%</color> and Hit Rate <color=#F74848>+7%</color>. For every additional AP consumed, effect <color=#F74848>+2%</color>, up to <color=#F74848>11%</color>."
       },
       "4": {
         "effect": "When attacking with a skill that costs <color=#F74848>3</color> AP or more, DMG <color=#F74848>+10%</color> and Hit Rate <color=#F74848>+10%</color>. For every additional AP consumed, effect <color=#F74848>+2%</color>, up to <color=#F74848>16%</color>."
@@ -2563,16 +2563,16 @@
     "current_level": 4,
     "levels": {
       "1": {
-        "effect": "After being attacked, gain DMG <color=#F74848>+2%</color> after combat, up to <color=#F74848>3</color> stacks, lasting for <color=#F74848>1</color> turn."
+        "effect": "After being attacked and drawn into combat, DMG <color=#F74848>+2%</color>. Stacks up to <color=#F74848>3</color> times. Lasts for <color=#F74848>1</color> turn."
       },
       "2": {
-        "effect": "After being attacked, gain DMG <color=#F74848>+4%</color> after combat, up to <color=#F74848>3</color> stacks, lasting for <color=#F74848>1</color> turn."
+        "effect": "After being attacked and drawn into combat, DMG <color=#F74848>+4%</color>. Stacks up to <color=#F74848>3</color> times. Lasts for <color=#F74848>1</color> turn."
       },
       "3": {
-        "effect": "After being attacked, gain DMG <color=#F74848>+4%</color> after combat, up to <color=#F74848>5</color> stacks, lasting for <color=#F74848>1</color> turn."
+        "effect": "After being attacked and drawn into combat, DMG <color=#F74848>+4%</color>. Stacks up to <color=#F74848>5</color> times. Lasts for <color=#F74848>1</color> turn."
       },
       "4": {
-        "effect": "After being attacked, gain DMG <color=#F74848>+6%</color> after combat, up to <color=#F74848>5</color> stacks, lasting for <color=#F74848>1</color> turn."
+        "effect": "After being attacked and drawn into combat, DMG <color=#F74848>+6%</color>. Stacks up to <color=#F74848>5</color> times. Lasts for <color=#F74848>1</color> turn."
       }
     }
   },
@@ -2584,16 +2584,16 @@
     "current_level": 4,
     "levels": {
       "1": {
-        "effect": "When HP falls below <color=#F74848>50%</color>, there is a <color=#F74848>40%</color> chance to restore <color=#F74848>3%</color> HP after taking damage, effective up to <color=#F74848>2</color> times per turn."
+        "effect": "When HP is below <color=#F74848>50%</color>, has a <color=#F74848>40%</color> chance to restore <color=#F74848>3%</color> HP after taking damage. Can trigger up to <color=#F74848>2</color> times per turn."
       },
       "2": {
-        "effect": "When HP falls below <color=#F74848>50%</color>, there is a <color=#F74848>60%</color> chance to restore <color=#F74848>4%</color> HP after taking damage, effective up to <color=#F74848>2</color> times per turn."
+        "effect": "When HP is below <color=#F74848>50%</color>, has a <color=#F74848>60%</color> chance to restore <color=#F74848>4%</color> HP after taking damage. Can trigger up to <color=#F74848>2</color> times per turn."
       },
       "3": {
-        "effect": "When HP falls below <color=#F74848>50%</color>, there is a <color=#F74848>80%</color> chance to restore <color=#F74848>5%</color> HP after taking damage, effective up to <color=#F74848>2</color> times per turn."
+        "effect": "When HP is below <color=#F74848>50%</color>, has an <color=#F74848>80%</color> chance to restore <color=#F74848>5%</color> HP after taking damage. Can trigger up to <color=#F74848>2</color> times per turn."
       },
       "4": {
-        "effect": "When HP falls below <color=#F74848>50%</color>, there is a <color=#F74848>100%</color> chance to restore <color=#F74848>6%</color> HP after taking damage, effective up to <color=#F74848>2</color> times per turn."
+        "effect": "When HP is below <color=#F74848>50%</color>, has a <color=#F74848>100%</color> chance to restore <color=#F74848>6%</color> HP after taking damage. Can trigger up to <color=#F74848>2</color> times per turn."
       }
     }
   },
@@ -2605,16 +2605,16 @@
     "current_level": 4,
     "levels": {
       "1": {
-        "effect": "In combat, when Hit Rate exceeds <color=#F74848>70%</color>, each <color=#F74848>1%</color> above that converts into a <color=#F74848>0.5%</color> DMG Bonus, up to <color=#F74848>5%</color>."
+        "effect": "In combat, when the Hit Rate exceeds <color=#F74848>70%</color>, every additional <color=#F74848>1%</color> increases DMG by <color=#F74848>0.5%</color>, capped at <color=#F74848>5%</color>."
       },
       "2": {
-        "effect": "In combat, when Hit Rate exceeds <color=#F74848>70%</color>, each <color=#F74848>1%</color> above that converts into a <color=#F74848>0.5%</color> DMG Bonus, up to <color=#F74848>10%</color>."
+        "effect": "In combat, when the Hit Rate exceeds <color=#F74848>70%</color>, every additional <color=#F74848>1%</color> increases DMG by <color=#F74848>0.5%</color>, capped at <color=#F74848>10%</color>."
       },
       "3": {
-        "effect": "In combat, when Hit Rate exceeds <color=#F74848>70%</color>, each <color=#F74848>1%</color> above that converts into a <color=#F74848>1%</color> DMG Bonus, up to <color=#F74848>16%</color>."
+        "effect": "In combat, when the Hit Rate exceeds <color=#F74848>70%</color>, every additional <color=#F74848>1%</color> increases DMG by <color=#F74848>1%</color>, capped at <color=#F74848>16%</color>."
       },
       "4": {
-        "effect": "In combat, when Hit Rate exceeds <color=#F74848>70%</color>, each <color=#F74848>1%</color> above that converts into a <color=#F74848>1%</color> DMG Bonus, up to <color=#F74848>25%</color>."
+        "effect": "In combat, when the Hit Rate exceeds <color=#F74848>70%</color>, every additional <color=#F74848>1%</color> increases DMG by <color=#F74848>1%</color>, capped at <color=#F74848>25%</color>."
       }
     }
   },
@@ -2626,16 +2626,16 @@
     "current_level": 4,
     "levels": {
       "1": {
-        "effect": "After performing active repairs, any overflow repair amount will temporarily raise the HP cap by up to <color=#F74848>3%</color>."
+        "effect": "After performing active repairs, any overflow repair amount is converted into Temporary HP, up to <color=#F74848>3%</color>."
       },
       "2": {
-        "effect": "After performing active repairs, any overflow repair amount will temporarily raise the HP cap by up to <color=#F74848>6%</color>."
+        "effect": "After performing active repairs, any overflow repair amount is converted into Temporary HP, up to <color=#F74848>6%</color>."
       },
       "3": {
-        "effect": "After performing active repairs, any overflow repair amount will temporarily raise the HP cap by up to <color=#F74848>10%</color>."
+        "effect": "After performing active repairs, any overflow repair amount is converted into Temporary HP, up to <color=#F74848>10%</color>."
       },
       "4": {
-        "effect": "After performing active repairs, any overflow repair amount will temporarily raise the HP cap by up to <color=#F74848>15%</color>."
+        "effect": "After performing active repairs, any overflow repair amount is converted into Temporary HP, up to <color=#F74848>15%</color>."
       }
     }
   },
@@ -2647,16 +2647,16 @@
     "current_level": 4,
     "levels": {
       "1": {
-        "effect": "After performing active repairs, grant the <buf ID=7100305>[DMG UP III]</buf> effect to up to <color=#F74848>3</color> repair targets."
+        "effect": "After performing active repairs, grants <buf ID=7100303>[DMG UP II]</buf> to <color=#F74848>1</color> repaired target, lasting for <color=#F74848>1</color> turn."
       },
       "2": {
-        "effect": "After performing active repairs, grant the <buf ID=7100305>[DMG UP III]</buf> effect to up to <color=#F74848>3</color> repair targets."
+        "effect": "After performing active repairs, grants <buf ID=7100303>[DMG UP II]</buf> to <color=#F74848>2</color> repaired targets, lasting for <color=#F74848>1</color> turn."
       },
       "3": {
-        "effect": "After performing active repairs, grant the <buf ID=7100305>[DMG UP III]</buf> effect to up to <color=#F74848>3</color> repair targets."
+        "effect": "After performing active repairs, grants <buf ID=7100305>[DMG UP III]</buf> to <color=#F74848>2</color> repair targets, lasting for <color=#F74848>1</color> turn."
       },
       "4": {
-        "effect": "After performing active repairs, grant the <buf ID=7100305>[DMG UP III]</buf> effect to up to <color=#F74848>3</color> repair targets."
+        "effect": "After performing active repairs, grants <buf ID=7100305>[DMG UP III]</buf> to <color=#F74848>3</color> repair targets, lasting for <color=#F74848>1</color> turn."
       }
     }
   },
@@ -2668,21 +2668,21 @@
     "current_level": 4,
     "levels": {
       "1": {
-        "effect": "When casting an AoE attack, if it hits <color=#F74848>2</color> or fewer targets, DMG <color=#F74848>+5%</color>."
+        "effect": "When executing an AoE attack, if it hits <color=#F74848>2</color> or fewer targets, DMG <color=#F74848>+5%</color>."
       },
       "2": {
-        "effect": "When casting an AoE attack, if it hits <color=#F74848>2</color> or fewer targets, DMG <color=#F74848>+10%</color>."
+        "effect": "When executing an AoE attack, if it hits <color=#F74848>2</color> or fewer targets, DMG <color=#F74848>+10%</color>."
       },
       "3": {
-        "effect": "When casting an AoE attack, if it hits <color=#F74848>2</color> or fewer targets, DMG <color=#F74848>+16%</color>."
+        "effect": "When executing an AoE attack, if it hits <color=#F74848>2</color> or fewer targets, DMG <color=#F74848>+16%</color>."
       },
       "4": {
-        "effect": "When casting an AoE attack, if it hits <color=#F74848>2</color> or fewer targets, DMG <color=#F74848>+25%</color>."
+        "effect": "When executing an AoE attack, if it hits <color=#F74848>2</color> or fewer targets, DMG <color=#F74848>+25%</color>."
       }
     }
   },
   "2009": {
-    "name": "ThunderCloud FES",
+    "name": "Thundercloud FCS",
     "icon": "Icon_entry_10044",
     "category": "SuitS",
     "max_level": 4,
@@ -2773,16 +2773,16 @@
     "current_level": 4,
     "levels": {
       "1": {
-        "effect": "When fighting enemies within the <color=#F74848>1-ring</color> area, Hit Rate <color=#F74848>+3%</color>"
+        "effect": "When in combat against enemies within <color=#F74848>1 ring</color>, Hit Rate <color=#F74848>+3%</color> and Crit Rate <color=#F74848>+3%</color>."
       },
       "2": {
-        "effect": "When fighting enemies within the <color=#F74848>1-ring</color> area, Hit Rate <color=#F74848>+6%</color>"
+        "effect": "When in combat against enemies within <color=#F74848>1 ring</color>, Hit Rate <color=#F74848>+6%</color> and Crit Rate <color=#F74848>+6%</color>."
       },
       "3": {
-        "effect": "When fighting enemies within the <color=#F74848>1-ring</color> area, Hit Rate <color=#F74848>+10%</color>"
+        "effect": "When in combat against enemies within <color=#F74848>1 ring</color>, Hit Rate <color=#F74848>+10%</color> and Crit Rate <color=#F74848>+10%</color>."
       },
       "4": {
-        "effect": "When fighting enemies within the <color=#F74848>1-ring</color> area, Hit Rate <color=#F74848>+15%</color>, Crit Rate <color=#F74848>+15%</color>."
+        "effect": "When in combat against enemies within <color=#F74848>1 ring</color>, Hit Rate <color=#F74848>+15%</color> and Crit Rate <color=#F74848>+15%</color>."
       }
     }
   },
@@ -2794,16 +2794,16 @@
     "current_level": 4,
     "levels": {
       "1": {
-        "effect": "After landing critical hits, Dodge Rate <color=#F74848>+3%</color>. After a perfect dodge, Crit Rate <color=#F74848>+3%</color>, lasting for <color=#F74848>1</color> turn."
+        "effect": "After landing a critical hit, Dodge Rate <color=#F74848>+3%</color>. After a perfect dodge, Crit Rate <color=#F74848>+3%</color>. Lasts for <color=#F74848>1</color> turn."
       },
       "2": {
-        "effect": "After landing critical hits, Dodge Rate <color=#F74848>+6%</color>. After a perfect dodge, Crit Rate <color=#F74848>+6%</color>, lasting for <color=#F74848>1</color> turn."
+        "effect": "After landing a critical hit, Dodge Rate <color=#F74848>+6%</color>. After a perfect dodge, Crit Rate <color=#F74848>+6%</color>. Lasts for <color=#F74848>1</color> turn."
       },
       "3": {
-        "effect": "After landing critical hits, Dodge Rate <color=#F74848>+10%</color>. After a perfect dodge, Crit Rate <color=#F74848>+10%</color>, lasting for <color=#F74848>1</color> turn."
+        "effect": "After landing a critical hit, Dodge Rate <color=#F74848>+10%</color>. After a perfect dodge, Crit Rate <color=#F74848>+10%</color>. Lasts for <color=#F74848>1</color> turn."
       },
       "4": {
-        "effect": "After landing critical hits, Dodge Rate <color=#F74848>+15%</color>. After a perfect dodge, Crit Rate <color=#F74848>+15%</color>, lasting for <color=#F74848>1</color> turn."
+        "effect": "After landing a critical hit, Dodge Rate <color=#F74848>+15%</color>. After a perfect dodge, Crit Rate <color=#F74848>+15%</color>. Lasts for <color=#F74848>1</color> turn."
       }
     }
   },
@@ -2815,7 +2815,7 @@
     "current_level": 4,
     "levels": {
       "1": {
-        "effect": "When there are <color=#F74848>3</color> or more enemies within the current weapon's range, Crit Rate <color=#F74848>+12%</color>. For each additional enemy, the Crit Rate will continue to increase by <color=#F74848>6%</color>, up to <color=#F74848>24%</color>."
+        "effect": "When there are <color=#F74848>3</color> or more enemies within the current weapon's range, Crit Rate <color=#F74848>+4%</color>."
       },
       "2": {
         "effect": "When there are <color=#F74848>3</color> or more enemies within the current weapon's range, Crit Rate <color=#F74848>+6%</color>. For each additional enemy, the Crit Rate will continue to increase by <color=#F74848>2%</color>, up to <color=#F74848>10%</color>."
@@ -2824,7 +2824,7 @@
         "effect": "When there are <color=#F74848>2</color> or more enemies within the current weapon's range, Crit Rate <color=#F74848>+8%</color>. For each additional enemy, the Crit Rate will continue to increase by <color=#F74848>4%</color>, up to <color=#F74848>16%</color>."
       },
       "4": {
-        "effect": "When there are <color=#F74848>3</color> or more enemies within the current weapon's range, Crit Rate <color=#F74848>+12%</color>. For each additional enemy, the Crit Rate will continue to increase by <color=#F74848>6%</color>, up to <color=#F74848>24%</color>."
+        "effect": "When there are <color=#F74848>2</color> or more enemies within the current weapon's range, Crit Rate <color=#F74848>+12%</color>. For each additional enemy, the Crit Rate will continue to increase by <color=#F74848>6%</color>, up to <color=#F74848>24%</color>."
       }
     }
   },
@@ -2836,22 +2836,22 @@
     "current_level": 4,
     "levels": {
       "1": {
-        "effect": "During an Active Attack, there is a <color=#F74848>20%</color> chance to trigger <buf ID=900001>[Flurry Strike]</buf>, dealing <color=#F74848>0.3x</color> DMG, effective up to <color=#F74848>1</color> time per turn."
+        "effect": "When initiating combat, has a <color=#F74848>20%</color> chance to trigger <buf ID=900001>[Flurry Strike]</buf>, dealing <color=#F74848>0.3x</color> DMG. Can only trigger <color=#F74848>1</color> time per turn."
       },
       "2": {
-        "effect": "During an Active Attack, there is a <color=#F74848>40%</color> chance to trigger <buf ID=900001>[Flurry Strike]</buf>, dealing <color=#F74848>0.3x</color> DMG, effective up to <color=#F74848>1</color> time per turn."
+        "effect": "When initiating combat, has a <color=#F74848>40%</color> chance to trigger <buf ID=900001>[Flurry Strike]</buf>, dealing <color=#F74848>0.3x</color> DMG. Can only trigger <color=#F74848>1</color> time per turn."
       },
       "3": {
-        "effect": "During an Active Attack, there is a <color=#F74848>70%</color> chance to trigger <buf ID=900001>[Flurry Strike]</buf>, dealing <color=#F74848>0.3x</color> DMG, effective up to <color=#F74848>1</color> time per turn."
+        "effect": "When initiating combat, has a <color=#F74848>70%</color> chance to trigger <buf ID=900001>[Flurry Strike]</buf>, dealing <color=#F74848>0.3x</color> DMG. Can only trigger <color=#F74848>1</color> time per turn."
       },
       "4": {
-        "effect": "During an Active Attack, there is a <color=#F74848>100%</color> chance to trigger <buf ID=900001>[Flurry Strike]</buf>, dealing <color=#F74848>0.3x</color> DMG, effective up to <color=#F74848>1</color> time per turn."
+        "effect": "When initiating combat, has a <color=#F74848>100%</color> chance to trigger <buf ID=900001>[Flurry Strike]</buf>, dealing <color=#F74848>0.3x</color> DMG. Can only trigger <color=#F74848>1</color> time per turn."
       }
     }
   },
   "3035": {
     "name": "Focus Mod",
-    "icon": "Icon_entry_10063",
+    "icon": "Icon_entry_10085",
     "category": "GeneralSuit",
     "max_level": 8,
     "current_level": 8,
@@ -2878,8 +2878,7 @@
         "effect": "If this unit doesn't move before actively attacking, Crit Rate <color=#F74848>+18%</color>."
       },
       "8": {
-        "effect": "If this unit doesn't move before actively attacking, Crit Rate <color=#F74848>+24%</color>. If a critical hit occurs when attacking, Crit DMG <color=#F74848>+3%</color> after combat. This effect can stack up to a maximum increase of <color=#F74848>15%</color>.",
-        "icon": "Icon_entry_10085"
+        "effect": "If this unit doesn't move before actively attacking, Crit Rate <color=#F74848>+24%</color>. If a critical hit occurs when attacking, Crit DMG <color=#F74848>+3%</color> after combat. This effect can stack up to a maximum increase of <color=#F74848>15%</color>."
       }
     }
   },
@@ -2891,28 +2890,28 @@
     "current_level": 8,
     "levels": {
       "1": {
-        "effect": "When there are no allies within <color=#F74848>2</color> adjacent tiles, DMG +<color=#F74848>3%</color>"
+        "effect": "When there are no allies within <color=#F74848>2</color> adjacent tiles, DMG <color=#F74848>+3%</color>."
       },
       "2": {
-        "effect": "When there are no allies within <color=#F74848>2</color> adjacent tiles, DMG +<color=#F74848>4%</color>"
+        "effect": "When there are no allies within <color=#F74848>2</color> adjacent tiles, DMG <color=#F74848>+4%</color>."
       },
       "3": {
-        "effect": "When there are no allies within <color=#F74848>2</color> adjacent tiles, DMG +<color=#F74848>6%</color>"
+        "effect": "When there are no allies within <color=#F74848>2</color> adjacent tiles, DMG <color=#F74848>+6%</color>."
       },
       "4": {
-        "effect": "When there are no allies within <color=#F74848>2</color> adjacent tiles, DMG +<color=#F74848>8%</color>"
+        "effect": "When there are no allies within <color=#F74848>2</color> adjacent tiles, DMG <color=#F74848>+8%</color>."
       },
       "5": {
-        "effect": "When there are no allies within <color=#F74848>2</color> adjacent tiles, DMG +<color=#F74848>10%</color>"
+        "effect": "When there are no allies within <color=#F74848>2</color> adjacent tiles, DMG <color=#F74848>+10%</color>."
       },
       "6": {
-        "effect": "When there are no allies within <color=#F74848>2</color> adjacent tiles, DMG +<color=#F74848>12%</color>"
+        "effect": "When there are no allies within <color=#F74848>2</color> adjacent tiles, DMG <color=#F74848>+12%</color>."
       },
       "7": {
-        "effect": "When there are no allies within <color=#F74848>2</color> adjacent tiles, DMG +<color=#F74848>14%</color>"
+        "effect": "When there are no allies within <color=#F74848>2</color> adjacent tiles, DMG <color=#F74848>+14%</color>."
       },
       "8": {
-        "effect": "When there are no allies within <color=#F74848>2</color> adjacent tiles, DMG +<color=#F74848>18%</color>;\nAt start of action, if there are no allies within <color=#F74848>2</color> adjacent tiles, AP cost of the first attack initiated this turn <color=#F74848>-1</color>, down to a minimum of <color=#F74848>1</color> AP."
+        "effect": "When there are no allies within <color=#F74848>2</color> adjacent tiles, DMG <color=#F74848>+18%</color>.\nAt start of action, if there are no allies within <color=#F74848>2</color> adjacent tiles, AP cost of the first attack initiated this turn <color=#F74848>-1</color>, down to a minimum of <color=#F74848>1</color> AP."
       }
     }
   },
@@ -2990,28 +2989,28 @@
     "current_level": 8,
     "levels": {
       "1": {
-        "effect": "When attacking a target within the attack range of both the held weapon and the backpack weapon, DMG Dealt <color=#F74848>+3%</color>"
+        "effect": "When attacking a target within the attack range of both the held weapon and the backpack weapon, DMG Dealt <color=#F74848>+3%</color>."
       },
       "2": {
-        "effect": "When attacking a target within the attack range of both the held weapon and the backpack weapon, DMG Dealt <color=#F74848>+4%</color>"
+        "effect": "When attacking a target within the attack range of both the held weapon and the backpack weapon, DMG Dealt <color=#F74848>+4%</color>."
       },
       "3": {
-        "effect": "When attacking a target within the attack range of both the held weapon and the backpack weapon, DMG Dealt <color=#F74848>+6%</color>"
+        "effect": "When attacking a target within the attack range of both the held weapon and the backpack weapon, DMG Dealt <color=#F74848>+6%</color>."
       },
       "4": {
-        "effect": "When attacking a target within the attack range of both the held weapon and the backpack weapon, DMG Dealt <color=#F74848>+8%</color>"
+        "effect": "When attacking a target within the attack range of both the held weapon and the backpack weapon, DMG Dealt <color=#F74848>+8%</color>."
       },
       "5": {
-        "effect": "When attacking a target within the attack range of both the held weapon and the backpack weapon, DMG Dealt <color=#F74848>+10%</color>"
+        "effect": "When attacking a target within the attack range of both the held weapon and the backpack weapon, DMG Dealt <color=#F74848>+10%</color>."
       },
       "6": {
-        "effect": "When attacking a target within the attack range of both the held weapon and the backpack weapon, DMG Dealt <color=#F74848>+12%</color>"
+        "effect": "When attacking a target within the attack range of both the held weapon and the backpack weapon, DMG Dealt <color=#F74848>+12%</color>."
       },
       "7": {
-        "effect": "When attacking a target within the attack range of both the held weapon and the backpack weapon, DMG Dealt <color=#F74848>+14%</color>"
+        "effect": "When attacking a target within the attack range of both the held weapon and the backpack weapon, DMG Dealt <color=#F74848>+14%</color>."
       },
       "8": {
-        "effect": "When attacking a target within the attack range of both the held weapon and the backpack weapon, DMG Dealt <color=#F74848>+18%</color>;\nEnters the <buf ID=900121>[Restriction Removal]</buf> state, activating the extra module effect integrated within the part."
+        "effect": "When attacking a target within the attack range of both the held weapon and the backpack weapon, DMG Dealt <color=#F74848>+18%</color>.\nEnters the <buf ID=900121>[Restriction Removal]</buf> state, activating the extra module effect integrated within the part."
       }
     }
   },
@@ -3023,28 +3022,28 @@
     "current_level": 8,
     "levels": {
       "1": {
-        "effect": "When executing Code attacks, DMG <color=#F74848>+3%</color>."
+        "effect": "When executing code attacks, DMG <color=#F74848>+3%</color>."
       },
       "2": {
-        "effect": "When executing Code attacks, DMG <color=#F74848>+4%</color>."
+        "effect": "When executing code attacks, DMG <color=#F74848>+4%</color>."
       },
       "3": {
-        "effect": "When executing Code attacks, DMG <color=#F74848>+6%</color>."
+        "effect": "When executing code attacks, DMG <color=#F74848>+6%</color>."
       },
       "4": {
-        "effect": "When executing Code attacks, DMG <color=#F74848>+8%</color>."
+        "effect": "When executing code attacks, DMG <color=#F74848>+8%</color>."
       },
       "5": {
-        "effect": "When executing Code attacks, DMG <color=#F74848>+10%</color>."
+        "effect": "When executing code attacks, DMG <color=#F74848>+10%</color>."
       },
       "6": {
-        "effect": "When executing Code attacks, DMG <color=#F74848>+12%</color>."
+        "effect": "When executing code attacks, DMG <color=#F74848>+12%</color>."
       },
       "7": {
-        "effect": "When executing Code attacks, DMG <color=#F74848>+14%</color>."
+        "effect": "When executing code attacks, DMG <color=#F74848>+14%</color>."
       },
       "8": {
-        "effect": "When executing Code attacks, DMG <color=#F74848>+18%</color>.\nWhen actively attacking with a Tactical Weapon, if <color=#F74848>3</color> or more targets are hit, randomly reloads <color=#F74848>1</color> Ammo after combat, up to <color=#F74848>1</color> time per turn."
+        "effect": "When executing code attacks, DMG <color=#F74848>+18%</color>.\nWhen actively attacking with a Tactical Weapon, if <color=#F74848>3</color> or more targets are hit, randomly reloads <color=#F74848>1</color> Ammo after combat, up to <color=#F74848>1</color> time per turn."
       }
     }
   },
@@ -3089,19 +3088,19 @@
     "current_level": 8,
     "levels": {
       "1": {
-        "effect": "When attacking a part with HP above <color=#F74848>60%</color>, DMG <color=#F74848>+3%</color>."
+        "effect": "When attacking a part with full HP, DMG <color=#F74848>+3%</color>."
       },
       "2": {
-        "effect": "When attacking a part with HP above <color=#F74848>60%</color>, DMG <color=#F74848>+4%</color>."
+        "effect": "When attacking a part with full HP, DMG <color=#F74848>+4%</color>."
       },
       "3": {
-        "effect": "When attacking a part with HP above <color=#F74848>60%</color>, DMG <color=#F74848>+6%</color>."
+        "effect": "When attacking a part with full HP, DMG <color=#F74848>+6%</color>."
       },
       "4": {
-        "effect": "When attacking a part with HP above <color=#F74848>60%</color>, DMG <color=#F74848>+8%</color>."
+        "effect": "When attacking a part with HP above <color=#F74848>80%</color>, DMG <color=#F74848>+8%</color>."
       },
       "5": {
-        "effect": "When attacking a part with HP above <color=#F74848>60%</color>, DMG <color=#F74848>+10%</color>."
+        "effect": "When attacking a part with HP above <color=#F74848>80%</color>, DMG <color=#F74848>+10%</color>."
       },
       "6": {
         "effect": "When attacking a part with HP above <color=#F74848>60%</color>, DMG <color=#F74848>+12%</color>."
@@ -3551,7 +3550,7 @@
     "icon": "Icon_skill_passive_1126",
     "levels": {
       "4": {
-        "effect": "Firepower +<color=#F74848>10%</color>."
+        "effect": "Firepower <color=#F74848>+10%</color>."
       }
     }
   },
@@ -3737,7 +3736,7 @@
     "icon": "Icon_entry_10083",
     "levels": {
       "8": {
-        "effect": "When allies within <color=#F74848>2</color> adjacent tiles have over <color=#F74848>50%</color> HP, DMG Taken <color=#F74848>-12%</color>;\nAfter performing active repairs, can trigger <buf ID=900004>[Re-ATK]</buf>. Cannot move before attacking. Can only trigger <color=#F74848>1</color> time per turn."
+        "effect": "When allies within <color=#F74848>2</color> adjacent tiles have over <color=#F74848>50%</color> HP, DMG Taken <color=#F74848>-12%</color>.\nAfter performing active repairs, can trigger <buf ID=900004>[Re-ATK]</buf>. Cannot move before attacking. Can only trigger <color=#F74848>1</color> time per turn."
       }
     }
   },
@@ -3746,13 +3745,13 @@
     "icon": "Icon_entry_10068",
     "levels": {
       "1": {
-        "effect": "When there is a surplus of ST Power, for every <color=#F74848>50</color> surplus Power, DMG +<color=#F74848>3%</color>, up to <color=#F74848>15%</color>",
+        "effect": "When there is a surplus of ST Power, for every <color=#F74848>50</color> surplus Power, DMG <color=#F74848>+3%</color>, up to <color=#F74848>15%</color>.",
         "id": "20344"
       }
     }
   },
   "20343": {
-    "name": "DLSS",
+    "name": "MMA PTX",
     "icon": "Icon_entry_10067",
     "levels": {
       "1": {
@@ -3762,7 +3761,7 @@
     }
   },
   "20342": {
-    "name": "MMA PTX",
+    "name": "DLSS",
     "icon": "Icon_entry_10067",
     "levels": {
       "1": {
@@ -3795,7 +3794,7 @@
     "icon": "Icon_skill_passive_5177",
     "levels": {
       "8": {
-        "effect": "When there are enemy units within <color=#F74848>2</color> adjacent tiles, DMG <color=#F74848>+9%</color> and DMG Taken <color=#F74848>-9%</color>.\nImmune to <buf ID=900094>[Percentage-Based Fixed DMG]</buf>"
+        "effect": "When there are enemy units within <color=#F74848>2</color> adjacent tiles, DMG <color=#F74848>+9%</color> and DMG Taken -<color=#F74848>9%</color>.\nImmune to <buf ID=900094>[Percentage-Based Fixed DMG]</buf>."
       }
     }
   },
@@ -3804,7 +3803,7 @@
     "icon": "Icon_entry_10073",
     "levels": {
       "4": {
-        "effect": "In combat, gains DMG and Fixed DMG <color=#F74848>+5%</color> every <color=#F74848>5</color> hits. Stacks up to <color=#F74848>5</color> times. Lasts for <color=#F74848>2</color> turns."
+        "effect": "In combat, gains DMG and Fixed DMG +<color=#F74848>5%</color> every <color=#F74848>5</color> hits. Stacks up to <color=#F74848>5</color> times. Lasts for <color=#F74848>2</color> turns."
       }
     }
   },
@@ -3919,7 +3918,7 @@
     "icon": "Icon_entry_10033",
     "levels": {
       "4": {
-        "effect": "When attacking with a Ranged Weapon, there is a <color=#F74848>70%</color> chance to trigger: DMG <color=#F74848>+15%</color>."
+        "effect": "When attacking with a Ranged Weapon, has a <color=#F74848>70%</color> chance to trigger: DMG <color=#F74848>+15%</color>."
       }
     }
   },
@@ -3928,7 +3927,7 @@
     "icon": "Icon_entry_10032",
     "levels": {
       "4": {
-        "effect": "When attacking with an Assault Weapon, there is a <color=#F74848>70%</color> chance to trigger: DMG <color=#F74848>+15%</color>."
+        "effect": "When attacking with an Assault Weapon, has a <color=#F74848>70%</color> chance to trigger: DMG <color=#F74848>+15%</color>."
       }
     }
   },
@@ -3937,7 +3936,7 @@
     "icon": "Icon_entry_10015",
     "levels": {
       "4": {
-        "effect": "When taking damage, there is a <color=#F74848>70%</color> chance to trigger: Armor <color=#F74848>+45%</color>."
+        "effect": "When taking damage, has a <color=#F74848>70%</color> chance to trigger: Armor <color=#F74848>+45%</color>."
       }
     }
   },
@@ -3946,7 +3945,7 @@
     "icon": "Icon_entry_10014",
     "levels": {
       "4": {
-        "effect": "When attacked and retaliated, there is a <color=#F74848>70%</color> chance to trigger: Dodge Rate <color=#F74848>+12%</color>."
+        "effect": "When attacked and retaliating, has a <color=#F74848>70%</color> chance to trigger: Dodge Rate <color=#F74848>+12%</color>."
       }
     }
   },
@@ -3955,7 +3954,7 @@
     "icon": "Icon_entry_10031",
     "levels": {
       "4": {
-        "effect": "When attacking with a Melee Weapon, there is a <color=#F74848>70%</color> chance to trigger: DMG <color=#F74848>+15%</color>."
+        "effect": "When attacking with a Melee Weapon, has a <color=#F74848>70%</color> chance to trigger: DMG <color=#F74848>+15%</color>."
       }
     }
   },
@@ -3964,7 +3963,7 @@
     "icon": "Icon_entry_10016",
     "levels": {
       "4": {
-        "effect": "When attacking, there is a <color=#F74848>70%</color> chance to trigger: target's Dodge Rate <color=#F74848>-12%</color>."
+        "effect": "When attacking, has a <color=#F74848>70%</color> chance to trigger: Target's Dodge Rate <color=#F74848>-12%</color>."
       }
     }
   },
@@ -3973,7 +3972,7 @@
     "icon": "Icon_entry_10034",
     "levels": {
       "4": {
-        "effect": "When attacking with a Tactical Weapon, there is a <color=#F74848>70%</color> chance to trigger: DMG <color=#F74848>+15%</color>."
+        "effect": "When attacking with a Tactical Weapon, has a <color=#F74848>70%</color> chance to trigger: DMG <color=#F74848>+15%</color>."
       }
     }
   },
@@ -3982,7 +3981,7 @@
     "icon": "Icon_entry_10035",
     "levels": {
       "4": {
-        "effect": "When attacking, there is a <color=#F74848>70%</color> chance to trigger: ignore <color=#F74848>45%</color> of the target's Armor."
+        "effect": "When attacking, has a <color=#F74848>70%</color> chance to trigger: Ignores <color=#F74848>45%</color> of the target's Armor."
       }
     }
   },
@@ -3991,7 +3990,7 @@
     "icon": "Icon_entry_10017",
     "levels": {
       "4": {
-        "effect": "When casting a skill with an AP Cost of <color=#F74848>3</color> or more, there is a <color=#F74848>25%</color> chance to trigger and restore <color=#F74848>1</color> AP after combat."
+        "effect": "When executing a skill with an AP Cost of <color=#F74848>3</color> or more, has a <color=#F74848>25%</color> chance to trigger: Restores <color=#F74848>1</color> AP after combat."
       }
     }
   },
@@ -4000,7 +3999,7 @@
     "icon": "Icon_entry_10071",
     "levels": {
       "4": {
-        "effect": "When taking damage, there is a <color=#F74848>70%</color> chance to trigger: DMG Taken <color=#F74848>-15%</color>."
+        "effect": "When taking damage, has a <color=#F74848>70%</color> chance to trigger: DMG Taken <color=#F74848>-15%</color>."
       }
     }
   },
@@ -4009,7 +4008,7 @@
     "icon": "Icon_entry_10007",
     "levels": {
       "4": {
-        "effect": "When performing active repairs, there is a <color=#F74848>70%</color> chance to trigger Repair AMT <color=#F74848>+15%</color>."
+        "effect": "When performing active repairs, has a <color=#F74848>70%</color> chance to trigger: Repair AMT <color=#F74848>+15%</color>."
       }
     }
   }
