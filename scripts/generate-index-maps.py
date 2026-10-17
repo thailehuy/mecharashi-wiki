@@ -17,8 +17,9 @@ JS mirror for the browser.
 import json
 import os
 
-DIR = os.path.dirname(os.path.abspath(__file__))
-ROOT = os.path.join(DIR, '..')
+REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DIR = os.path.join(REPO, 'data', 'builder')
+ROOT = os.path.join(REPO, 'data')
 MAP_JSON = os.path.join(DIR, 'index-maps.json')
 MAP_JS = os.path.join(DIR, 'index-maps.js')
 
@@ -62,7 +63,7 @@ def eligible_ids():
     ]
 
     # Weapon accessories (trigger TA / reaction RA), from the chain-traits
-    # extract — see data/accessories/extract-chain-traits.py.
+    # extract — see scripts/extract-chain-traits.py.
     chain = load_json(os.path.join(ROOT, 'accessories', 'chain-traits.json'))
     ids['ta'] = list(chain['ta'].keys())
     ids['ra'] = list(chain['ra'].keys())

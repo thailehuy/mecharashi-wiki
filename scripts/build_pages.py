@@ -9,16 +9,16 @@ index.html — it boots the same app, and js/app.js routes from the path.
 Run by .github/workflows/deploy.yml before upload; the output folders are
 gitignored. Usage:
 
-    python3 build_pages.py [SITE_URL]
+    python3 scripts/build_pages.py [SITE_URL]
 
 SITE_URL is the absolute site root used for og:url/og:image (default: the
-site's custom domain). Run `python3 build_pages.py --clean` to delete the output.
+site's custom domain). Run `python3 scripts/build_pages.py --clean` to delete the output.
 """
 
 import html, json, os, re, shutil, subprocess, sys, unicodedata
 from urllib.parse import quote
 
-ROOT = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DEFAULT_SITE_URL = 'https://mecharashi-wiki.cc/'
 SITE_NAME = 'Mecharashi Wiki'
 CDN = 'https://media.zlongame.com/media/pictures/cn/community/img/gl/gameInfo/'

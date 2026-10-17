@@ -1,6 +1,6 @@
 """Split the mined Damage Bench
 (data/screenshots/MRT_FieldWiki/working/drafts/Damage_Bench.html) into
-the files served at /dmgcalc/. Run: python3 data/dmgcalc/extract-bench.py
+the files served at /dmgcalc/. Run: python3 scripts/extract-bench.py
 
   dmgcalc/bench.css           the bench's <style> block
   dmgcalc/bench.js            the bench's script, reading its data from window.BenchData
@@ -20,8 +20,8 @@ import os
 import re
 import sys
 
-HERE = os.path.dirname(os.path.abspath(__file__))
-ROOT = os.path.join(HERE, '..', '..')
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+HERE = os.path.join(ROOT, 'data', 'dmgcalc')
 SRC = os.path.join(HERE, '..', 'screenshots', 'MRT_FieldWiki', 'working', 'drafts', 'Damage_Bench.html')
 PAGE_DIR = os.path.join(ROOT, 'dmgcalc')
 OUT_CSS = os.path.join(PAGE_DIR, 'bench.css')

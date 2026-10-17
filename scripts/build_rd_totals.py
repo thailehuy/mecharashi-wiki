@@ -1,10 +1,11 @@
 """Export R&D totals (max bonus of a fully researched tree) from the mined DB,
-split into pilot / mech / weapon R&D. Also writes rd-totals.js for the site. Run: python3 data/rd/build_rd_totals.py"""
+split into pilot / mech / weapon R&D. Also writes rd-totals.js for the site. Run: python3 scripts/build_rd_totals.py"""
 import json
 import os
 import sqlite3
 
-HERE = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+HERE = os.path.join(ROOT, 'data', 'rd')
 DB = os.path.join(HERE, '..', 'screenshots', 'MRT_FieldWiki', 'source', 'mecharashi.db')
 OUT = os.path.join(HERE, 'rd-totals.json')
 OUT_JS = os.path.join(HERE, 'rd-totals.js')   # same data for the R&D Bonus page

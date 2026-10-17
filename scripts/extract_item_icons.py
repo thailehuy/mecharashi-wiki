@@ -8,7 +8,7 @@ the installed copies and any newer ones the game downloaded into its cache
 from the MRT_FieldWiki update scripts' settings.py. Icons already in the
 assets repo are skipped unless --force is given.
 
-    python3 data/bosses/extract_item_icons.py [--force]
+    python3 scripts/extract_item_icons.py [--force]
 
 Needs: pip install UnityPy
 """
@@ -19,8 +19,8 @@ import sys
 
 import UnityPy
 
-HERE = os.path.dirname(os.path.abspath(__file__))
-ROOT = os.path.dirname(os.path.dirname(HERE))
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+HERE = os.path.join(ROOT, 'data', 'bosses')
 sys.path.insert(0, os.path.join(ROOT, 'data', 'screenshots', 'MRT_FieldWiki', 'RebuildGameUpdate'))
 import settings  # noqa: E402
 

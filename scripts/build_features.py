@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Export every R&D feature from the mined DB, grouped the way the Features
 page shows them: pilot class, ST weight class and weapon R&D tree.
-Writes features.json and features.js. Run: python3 data/features/build_features.py
+Writes features.json and features.js. Run: python3 scripts/build_features.py
 
 Each feature also carries what a loadout picker needs to filter it:
   slots         feature ports it fits: ["I"], ["II"], ["III"] or all three
@@ -21,7 +21,8 @@ import os
 import re
 import sqlite3
 
-HERE = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+HERE = os.path.join(ROOT, 'data', 'features')
 DB = os.path.join(HERE, '..', 'screenshots', 'MRT_FieldWiki', 'source', 'mecharashi.db')
 BENCH = os.path.join(HERE, '..', 'dmgcalc', 'bench-data.js')
 PILOTS = os.path.join(HERE, '..', 'pilots', 'compiled.json')

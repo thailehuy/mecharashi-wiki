@@ -22,8 +22,8 @@ import sqlite3
 
 from build_drops import chapter_drops, season_drops
 
-HERE = os.path.dirname(os.path.abspath(__file__))
-ROOT = os.path.dirname(os.path.dirname(HERE))
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+HERE = os.path.join(ROOT, 'data', 'bosses')
 BENCH = os.path.join(ROOT, 'data', 'dmgcalc', 'bench-data.js')
 WEAPONS = os.path.join(ROOT, 'data', 'weapons', 'compiled.json')
 DB = os.path.join(ROOT, 'data', 'screenshots', 'MRT_FieldWiki', 'source', 'mecharashi.db')

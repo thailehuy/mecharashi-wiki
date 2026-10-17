@@ -4,14 +4,15 @@ each pilot's `skins` list in data/db/pilots.json.
 
 Portraits/avatars are all sourced locally now, so this just checks for the
 presence of the corresponding local PNG files instead of probing the CDN.
-Run `python3 compile.py` afterwards.
+Run `python3 scripts/compile.py` afterwards.
 """
 import json, os, string, sys
 
-DIR = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DIR = os.path.join(ROOT, 'data', 'pilots')
 PILOTS_DB = os.path.join(DIR, '..', 'db', 'pilots.json')
 # The images live in the mecharashi-wiki-assets repo, checked out next to this one.
-IMAGES_DIR = os.path.join(DIR, '..', '..', '..', 'mecharashi-wiki-assets', 'data', 'unlisted', 'pilot_images_half')
+IMAGES_DIR = os.path.join(ROOT, '..', 'mecharashi-wiki-assets', 'data', 'unlisted', 'pilot_images_half')
 MAX_LETTER = 'H'  # probe B..H; leaves headroom past any known skin count
 
 

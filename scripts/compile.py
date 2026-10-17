@@ -10,7 +10,7 @@ and refreshes the builder index maps.
 
 import json, os, sys, subprocess
 
-ROOT = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(ROOT, 'data')
 DB = os.path.join(DATA, 'db')
 
@@ -302,6 +302,6 @@ if __name__ == '__main__':
     compile_plain('exskills', 'ExSkillsData')
     print('  glossary, dispatch, exskills: ok')
     # Reads the bundles above, so it must run last.
-    run(os.path.join(DATA, 'builder', 'generate-index-maps.py'))
+    run(os.path.join(ROOT, 'scripts', 'generate-index-maps.py'))
     print('  builder index maps: ok')
     print('Done.')

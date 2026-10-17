@@ -1,7 +1,7 @@
 <!--
 Mech intake form — fill this in and hand it back; Claude will turn it into
 rows in the data/db/ tables (see data/README.md "Adding an ST") and run
-compile.py.
+scripts/compile.py.
 
 - Leave a field blank / delete a line if it doesn't apply (e.g. no modules
   carried by a given part).
@@ -41,7 +41,7 @@ Checklist for whoever (or whichever agent) turns this into table rows:
    `Img_Skin_<wap-id>_<variant>.png`), list each `<variant>` token in the
    mech row's `skins`.
 6. Set `version` (and `dispatch_version`/`dispatch_group` if known), run
-   `python3 compile.py` (it fails on any broken ID reference) and confirm
+   `python3 scripts/compile.py` (it fails on any broken ID reference) and confirm
    the mech shows up in `data/mechs/compiled.json`.
 -->
 

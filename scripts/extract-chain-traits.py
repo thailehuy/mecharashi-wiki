@@ -21,7 +21,7 @@ The DB is gitignored (data/screenshots/MRT_FieldWiki/source/mecharashi.db, see t
 README), so this isn't part of compile.py — rerun it by hand after
 refreshing the DB:
 
-    python3 data/accessories/extract-chain-traits.py
+    python3 scripts/extract-chain-traits.py
 """
 import json
 import os
@@ -29,8 +29,8 @@ import re
 import sqlite3
 import sys
 
-DIR = os.path.dirname(os.path.abspath(__file__))
-ROOT = os.path.join(DIR, '..', '..')
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DIR = os.path.join(ROOT, 'data', 'accessories')
 DB_PATH = os.path.join(ROOT, 'data', 'screenshots', 'MRT_FieldWiki', 'source', 'mecharashi.db')
 OUT_JSON = os.path.join(DIR, 'chain-traits.json')
 OUT_JS = os.path.join(DIR, 'chain-traits.js')

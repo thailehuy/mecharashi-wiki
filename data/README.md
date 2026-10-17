@@ -6,7 +6,7 @@ are no raw API dumps or translation files any more. To change what the wiki
 shows, edit the table row and recompile from the repo root:
 
 ```
-python3 compile.py
+python3 scripts/compile.py
 ```
 
 This rebuilds `data/{pilots,mechs,modules,weapons,backpacks}/compiled.{json,js}`
@@ -80,7 +80,7 @@ official values. See "Using the mined game database" in the root
 - `stats`: the max-level values shown on the wiki (Combat = melee, Shooting =
   ranged, Tactics = tactical, Engineering = mechanic).
 - `version`: release version, drives the version filter and sort. Defaults to `1.0`.
-- `skins`: alternate skin letters; `python3 data/pilots/check_skins.py`
+- `skins`: alternate skin letters; `python3 scripts/check_skins.py`
   fills this in from the assets repo.
 - `neural[].slots`: chip slot colours, red = `Attack`, yellow = `Dodge`,
   blue = `Critical`.
@@ -242,7 +242,7 @@ it, or by hand:
 4. Copy a similar pilot's list in `pilot_neurons.json` and adapt it.
 5. Add the `pilots.json` row, with `version`.
 6. Add the pilot's name to `PILOT_RELEASE_ORDER` in `js/pages/pilots.js` if
-   it's a new release, then run `python3 compile.py`.
+   it's a new release, then run `python3 scripts/compile.py`.
 
 ## Adding an ST
 
@@ -253,7 +253,7 @@ or by hand:
 2. Add 4 `mech_parts.json` rows (Body, L-Arm, R-Arm, Legs).
 3. Add any new module to `modules.json` (with every level's text if it's
    shown on the Modules page).
-4. Add the `mechs.json` row, with `version`, then run `python3 compile.py`.
+4. Add the `mechs.json` row, with `version`, then run `python3 scripts/compile.py`.
 
 ## Images
 

@@ -5,14 +5,15 @@ joins its IDs and names to the wiki's compiled data and writes bench-icons.js:
 A path is relative to the assets site (ASSET_BASE) when the file is in the
 sibling mecharashi-wiki-assets repo, else a full CDN URL. Anything not found
 is left out and its dropdown row shows no icon.
-Run after extract-bench.py: python3 data/dmgcalc/build-icons.py"""
+Run after extract-bench.py: python3 scripts/build-icons.py"""
 import json
 import os
 import re
 
-HERE = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+HERE = os.path.join(ROOT, 'data', 'dmgcalc')
 DATA = os.path.join(HERE, '..')
-ASSETS = os.path.join(HERE, '..', '..', '..', 'mecharashi-wiki-assets')
+ASSETS = os.path.join(ROOT, '..', 'mecharashi-wiki-assets')
 OUT = os.path.join(HERE, 'bench-icons.js')
 CDN = 'https://media.zlongame.com/media/pictures/cn/community/img/gl/gameInfo/'
 

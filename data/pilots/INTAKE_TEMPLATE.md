@@ -1,7 +1,7 @@
 <!--
 Pilot intake form — fill this in and hand it back; Claude will turn it into
 rows in the data/db/ tables (see data/README.md "Adding a pilot") and run
-compile.py.
+scripts/compile.py.
 
 - Leave a field blank / delete a line if it doesn't apply (e.g. no Ascended
   Talent yet, no neural passives beyond the shared Alpha/Beta).
@@ -59,7 +59,7 @@ pilot from this template (10103182, Kaidan The Invincible):
    `ls` before using one. The site tries the local file first and only
    falls back to the CN CDN if that 404s, so a wrong/missing local
    filename means a broken icon even if the CDN also doesn't have it.
-7. Set `version` on the pilots.json row, run `python3 compile.py` (it
+7. Set `version` on the pilots.json row, run `python3 scripts/compile.py` (it
    fails on any broken ID reference) and confirm the pilot shows up in
    `data/pilots/compiled.json`, and add the pilot's name to
    `PILOT_RELEASE_ORDER` in `js/pages/pilots.js` if it's a new release.

@@ -26,10 +26,10 @@ jobs:
       - uses: actions/configure-pages@v5
 
       # Rebuild the page bundles from data/db/, so a pushed table edit
-      # deploys even if compile.py wasn't run locally
-      - run: python3 compile.py
+      # deploys even if scripts/compile.py wasn't run locally
+      - run: python3 scripts/compile.py
 
-      # build_pages.py checks which images exist in the assets repo. A blobless
+      # scripts/build_pages.py checks which images exist in the assets repo. A blobless
       # clone with a near-empty sparse checkout gives it the file listing
       # without downloading the images themselves.
       - uses: actions/checkout@v4
@@ -41,7 +41,7 @@ jobs:
           sparse-checkout-cone-mode: false
 
       # Per-item copies of index.html with their own link-preview tags
-      - run: python3 build_pages.py && rm -rf .assets
+      - run: python3 scripts/build_pages.py && rm -rf .assets
         env:
           ASSETS_DIR: .assets
 

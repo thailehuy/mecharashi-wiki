@@ -16,7 +16,7 @@ Images and icons live in a separate repo, [mecharashi-wiki-assets](https://githu
 | `data/weapons/icons/<type>/` | Signature weapon icons, by weapon type (`AB`, `MG`, `SR`, …) |
 | `data/backpacks/icons/`, `data/backpacks/materials/` | Backpack and crafting-material icons |
 | `data/accessories/icons/` | Accessory icons |
-| `data/items/` | Item icons (`Icon_item_*`, `Icon_currency_*`, …) for boss drops, extracted from the game's bundles by `data/bosses/extract_item_icons.py` |
+| `data/items/` | Item icons (`Icon_item_*`, `Icon_currency_*`, …) for boss drops, extracted from the game's bundles by `scripts/extract_item_icons.py` |
 | `data/background/` | Rarity frame backgrounds (`quality-{r,sr,ssr,sssr}.png`) |
 
 Add new images to the matching folder in that repo; pushing its `main` deploys them.
@@ -52,8 +52,6 @@ Add new images to the matching folder in that repo; pushing its `main` deploys t
 index.html                        # Entry point
 dmgcalc/                          # DMG Calc (Beta), a standalone page: index.html (markup, kept by hand), bench.js/css (generated)
 css/style.css                     # All styles
-compile.py                        # Builds the page bundles from data/db/ (see below)
-build_pages.py                    # Generates per-route/per-item pages (gitignored; run in CI)
 js/
   app.js                          # Path/hash router, nav (incl. "Misc." dropdown), version badge
   glossary.js                     # Keyword/tooltip engine shared by all pages
@@ -71,22 +69,33 @@ js/
     builder.js                    # Mech loadout builder
     rdbonus.js                    # R&D Bonus (max R&D bonuses) tables
     features.js                   # Features (R&D features) listing
+scripts/                          # Every build script; run them from the repo root (python3 scripts/<name>.py)
+  compile.py                      # Builds the page bundles from data/db/ (see below), then runs generate-index-maps.py
+  build_pages.py                  # Generates per-route/per-item pages (gitignored; run in CI)
+  check_skins.py                  # Fills each pilot's skin letters in data/db/pilots.json from the assets repo's half-body portraits
+  extract-chain-traits.py         # → data/accessories/chain-traits.js/json (ChainTraitsData, SSR TA/RA pairs from the mined DB)
+  generate-index-maps.py          # → data/builder/index-maps.js/json (BuilderIndexMaps)
+  extract-bench.py                # → data/dmgcalc/bench-data.js (BenchData) + dmgcalc/bench.js/css, from the mined Damage_Bench.html
+  build-icons.py                  # → data/dmgcalc/bench-icons.js (BenchIcons, the DMG calc's dropdown icons)
+  build_features.py               # → data/features/features.json/js (FeaturesData, every R&D feature from the mined DB, for the Features page)
+  build_rd_totals.py              # → data/rd/rd-totals.json/js (RDTotalsData, max R&D bonuses from the mined DB, for the R&D Bonus page and DMG calculator)
+  build_bosses.py                 # → data/bosses/bosses.json/js (BossesData: line-ups and HP from bench-data.js, AC and CO boss skills from the mined DB, CO chapter blurbs and turn limits, and each CO boss's and AC stage's drops (build_drops.py) from the game tables, AC merged with ac-guide.json; every [Term] a skill uses gets an explanation under it, from the stage, the DB, the glossary or another stage of the season, and any it can't explain are printed)
+  build_drops.py                  # boss drops from stats.db (no odds, those are server-side): CO boss → weapons/items it can drop (DungeonLevelInfo → ItemDropInfo); AC stage → per difficulty, every clear's and first clear's drops and each bounty's reward (RaidDungeonLevelInfo; only AC1 drops weapons, later seasons give medals/handbooks/vouchers); run alone to print them. Drop weapon icons are in the assets repo's data/weapons/icons/<type>/ (Knuckles: KN/)
+  extract_item_icons.py           # the drop items' icons (bosses.json) from the game's itemtype bundles (newest copy, installed or downloaded) → assets repo data/items/; game folder and bundle key from MRT_FieldWiki's settings.py; skips icons already there unless --force. Annihilation Vouchers show their boss's portrait instead
 data/
   db/                             # Source tables: pilots, pilot_neurons, neural_partitions, skills, mechs, mech_parts, modules, weapons, backpacks, materials (see data/README.md)
-  pilots/                         # compiled.js/json (PilotsData); check_skins.py, INTAKE_TEMPLATE.md
+  pilots/                         # compiled.js/json (PilotsData); INTAKE_TEMPLATE.md
   mechs/                          # compiled.js/json (MechsData); INTAKE_TEMPLATE.md
   weapons/                        # compiled.js/json (WeaponsData)
   backpacks/                      # compiled.js/json (BackpacksData)
   modules/                        # compiled.js/json (ModulesData)
-  accessories/                    # compiled.js/json; extract-chain-traits.py → chain-traits.js/json (ChainTraitsData, SSR TA/RA pairs from the mined DB)
-  builder/                        # generate-index-maps.py → index-maps.js/json (BuilderIndexMaps)
-  dmgcalc/                        # extract-bench.py → bench-data.js (BenchData) + dmgcalc/bench.js/css, from the mined Damage_Bench.html; build-icons.py → bench-icons.js (BenchIcons, dropdown icons)
-  features/                       # build_features.py → features.json/js (FeaturesData, every R&D feature from the mined DB, for the Features page)
-  bosses/                         # build_bosses.py → bosses.json/js (BossesData: line-ups and HP from bench-data.js, AC and CO boss skills from the mined DB, CO chapter blurbs and turn limits, and each CO boss's and AC stage's drops (build_drops.py) from the game tables, AC merged with ac-guide.json; every [Term] a skill uses gets an explanation under it, from the stage, the DB, the glossary or another stage of the season, and any it can't explain are printed)
-    build_drops.py                # boss drops from stats.db (no odds, those are server-side): CO boss → weapons/items it can drop (DungeonLevelInfo → ItemDropInfo); AC stage → per difficulty, every clear's and first clear's drops and each bounty's reward (RaidDungeonLevelInfo; only AC1 drops weapons, later seasons give medals/handbooks/vouchers); run alone to print them.
-    extract_item_icons.py         # the drop items' icons (bosses.json) from the game's itemtype bundles (newest copy, installed or downloaded) → assets repo data/items/; game folder and bundle key from MRT_FieldWiki's settings.py; skips icons already there unless --force. Annihilation Vouchers show their boss's portrait instead Drop icons are in the assets repo's data/weapons/icons/<type>/ (Knuckles: KN/)
+  accessories/                    # compiled.js/json; chain-traits.js/json
+  builder/                        # index-maps.js/json
+  dmgcalc/                        # bench-data.js, bench-icons.js
+  features/                       # features.json/js
+  bosses/                         # bosses.json/js
     ac-guide.json                 # transcribed from the Armed Conquest guide PDF (data/screenshots/mined/), plus Extreme modifiers added by hand for AC9–11; build_bosses.py prints where it disagrees with the DB; skill `icon`s were matched by image from the guide's screenshots to the assets repo's pilot_skills icons (DB-only skills take a same-named card's icon)
-  rd/                             # build_rd_totals.py → rd-totals.json/js (RDTotalsData, max R&D bonuses from the mined DB, for the R&D Bonus page and DMG calculator)
+  rd/                             # rd-totals.json/js
   glossary.json                   # → GlossaryData
   dispatch.json                   # → dispatch table data
   exskills.json                   # → ExSkillsData
@@ -145,10 +154,10 @@ Pilot, ST, module, weapon and backpack data lives in `data/db/`: one JSON table 
 Run the full build from the repo root:
 
 ```bash
-python3 compile.py
+python3 scripts/compile.py
 ```
 
-It loads every `data/db/` table, checks that every referenced ID exists (it exits with a list of broken references otherwise), and joins the tables into `data/<kind>/compiled.js`/`compiled.json` for pilots, mechs, modules, weapons and backpacks. Then it compiles `glossary.json`/`dispatch.json`/`exskills.json` and finally runs `data/builder/generate-index-maps.py`, which reads the bundles and so must run last.
+It loads every `data/db/` table, checks that every referenced ID exists (it exits with a list of broken references otherwise), and joins the tables into `data/<kind>/compiled.js`/`compiled.json` for pilots, mechs, modules, weapons and backpacks. Then it compiles `glossary.json`/`dispatch.json`/`exskills.json` and finally runs `scripts/generate-index-maps.py`, which reads the bundles and so must run last.
 
 The deploy workflow runs `compile.py` before `build_pages.py`, so a pushed table edit is deployed even if it wasn't compiled locally. Commit the regenerated bundles anyway, since the local server reads them.
 
@@ -192,15 +201,15 @@ sqlite3 data/screenshots/MRT_FieldWiki/source/mecharashi.db \
 - **DB text is plain.** It has no `<color=#F74848>` highlights or `<buf ID=…>` links; re-add them where the existing text had them.
 - **Renaming is a separate decision.** The DB uses official global names, which sometimes differ from ours (e.g. Improved Attack → Attack Enhancement). Pages resolve bare `[Name]` references through the glossary name index, so a rename must be applied everywhere the name is used (`js/pages/*.js`, `data/dispatch.json`, `data/shops.js`, weapon `pilot` fields, effect text). Some DB names are internal labels (`Bionic Computer 7`, `EVA-01 Pilot`); don't use those.
 - **The DB has no image or icon keys.** Icons still come from the existing files and the assets repo.
-- Run `python3 compile.py` after any change.
+- Run `python3 scripts/compile.py` after any change.
 
 **R&D features**
 
-`data/features/features.json` lists every R&D feature from the DB's `rd_features` table, grouped as `pilot` (by class), `st` (Light/Medium/Heavy) and `weapon` (by the R&D tree that unlocks it: Melee, Assault, Ranged, Tactical, Shield; the feature ID's second digit). Regenerate it with `python3 data/features/build_features.py`, which also writes `features.js` for the Features page (Misc. → Features). For filtering in a loadout picker (e.g. the Builder), each feature has `slots` (the feature ports it fits), `for` (pilot class, or ST weight class / `any`), `weapon_types` (weapon features: the `WeaponType2` codes it affects, `null` = every weapon) and, on Basic features, a `basic` key (a feature and its II version can't be equipped together); `pilot_classes` maps the wiki's pilot `Profession` (Striker, …) to the R&D class (Fighter, …). The script reads the DMG calc's `bench-data.js` for the weapon types and `data/pilots/compiled.json` for the classes. The mined data has no icon field, so the script assigns them: pilot attribute % features by attribute (`ATTR_ICONS`, `Icon_RnD_N_*`; Hybrid Training `E_3031`), ST refits by type and weight class (`ST_ICONS`), and the rest by feature ID (`FEATURE_ICONS`). Some are confirmed, the rest worked out from the icon art (comments in the script say which); a few reuse a pilot passive or module icon (full asset path in `FEATURE_ICONS`).
+`data/features/features.json` lists every R&D feature from the DB's `rd_features` table, grouped as `pilot` (by class), `st` (Light/Medium/Heavy) and `weapon` (by the R&D tree that unlocks it: Melee, Assault, Ranged, Tactical, Shield; the feature ID's second digit). Regenerate it with `python3 scripts/build_features.py`, which also writes `features.js` for the Features page (Misc. → Features). For filtering in a loadout picker (e.g. the Builder), each feature has `slots` (the feature ports it fits), `for` (pilot class, or ST weight class / `any`), `weapon_types` (weapon features: the `WeaponType2` codes it affects, `null` = every weapon) and, on Basic features, a `basic` key (a feature and its II version can't be equipped together); `pilot_classes` maps the wiki's pilot `Profession` (Striker, …) to the R&D class (Fighter, …). The script reads the DMG calc's `bench-data.js` for the weapon types and `data/pilots/compiled.json` for the classes. The mined data has no icon field, so the script assigns them: pilot attribute % features by attribute (`ATTR_ICONS`, `Icon_RnD_N_*`; Hybrid Training `E_3031`), ST refits by type and weight class (`ST_ICONS`), and the rest by feature ID (`FEATURE_ICONS`). Some are confirmed, the rest worked out from the icon art (comments in the script say which); a few reuse a pilot passive or module icon (full asset path in `FEATURE_ICONS`).
 
 **R&D totals (for the DMG calculator)**
 
-`data/rd/rd-totals.json` holds the maximum R&D bonuses, i.e. what a fully researched tree gives, exported from the DB's `rd_totals` table. Regenerate it with `python3 data/rd/build_rd_totals.py`, which also writes `rd-totals.js` for the R&D Bonus page (Misc. → R&D Bonus). It is split into:
+`data/rd/rd-totals.json` holds the maximum R&D bonuses, i.e. what a fully researched tree gives, exported from the DB's `rd_totals` table. Regenerate it with `python3 scripts/build_rd_totals.py`, which also writes `rd-totals.js` for the R&D Bonus page (Misc. → R&D Bonus). It is split into:
 
 - `pilot`: by class (Fighter, Guardian, Machinist, Raider, Sniper, Tactician). Flat and % bonuses to the six attributes (`PilotBaseProperty<Attr>Add` / `Multi`).
 - `mech`: Light/Medium/Heavy ST, plus a "SS Quality (Prismatic)" version of each. Per-part HP and Armor, Fire value, Dodge and Hit, crit defense.
@@ -219,14 +228,14 @@ The individual nodes and features are in the `rd_nodes` and `rd_features` tables
 The DMG Calc page is the mined `Damage_Bench.html`, split into files the site serves. The calculation is final, so updates should only bring new data (e.g. new pilots). To update it after a new extraction:
 
 1. Put the new mined files in `data/screenshots/MRT_FieldWiki/` (the script reads `working/drafts/Damage_Bench.html`).
-2. Run `python3 data/dmgcalc/extract-bench.py`. It regenerates:
+2. Run `python3 scripts/extract-bench.py`. It regenerates:
    - `dmgcalc/bench.css`: the bench's `<style>` block.
    - `dmgcalc/bench.js`: the bench's script, with its embedded `const D = {...}` replaced by `const D = window.BenchData;`.
    - `data/dmgcalc/bench-data.js`: `window.BenchData = {...}` (~1.8 MB, loaded only by this page).
 
    It prints the game build and data date, and warns if `dmgcalc/index.html` is missing an element id the script looks up.
 
-   Then run `python3 data/dmgcalc/build-icons.py`. It writes `data/dmgcalc/bench-icons.js` (`window.BenchIcons`): an icon for each ST, pilot, weapon, skill, module, feature, backpack, accessory and boss in the bench data, matched by ID or name to the wiki's compiled data. `bench.js` draws dropdowns whose options have icons as a button and list in place of the native `<select>` (`iconSelects`). Items it can't match just show no icon.
+   Then run `python3 scripts/build-icons.py`. It writes `data/dmgcalc/bench-icons.js` (`window.BenchIcons`): an icon for each ST, pilot, weapon, skill, module, feature, backpack, accessory and boss in the bench data, matched by ID or name to the wiki's compiled data. `bench.js` draws dropdowns whose options have icons as a button and list in place of the native `<select>` (`iconSelects`). Items it can't match just show no icon.
 3. If it warned, copy the changed markup from `Damage_Bench.html` into `dmgcalc/index.html`. That file is kept by hand: it's the bench's markup plus the page title, the "DMG Calc · Beta" heading, the "← Mecharashi Wiki" link and the two `<script>` tags. Don't overwrite it wholesale.
 4. Open `dmgcalc/` locally (see Running locally) and check the console for errors, then commit the three generated files.
 
@@ -239,7 +248,7 @@ Clone [mecharashi-wiki-assets](https://github.com/thailehuy/mecharashi-wiki-asse
 From the repo root:
 
 ```bash
-python3 build_pages.py        # generate the per-route/per-item pages
+python3 scripts/build_pages.py        # generate the per-route/per-item pages
 python3 -m http.server 8080
 ```
 
@@ -247,7 +256,7 @@ Then open `http://localhost:8080/`, or an item page directly, e.g. `http://local
 
 - `build_pages.py` is only needed for loading or reloading path URLs like `/pilots/ada/` — without it those 404, since the files only exist after the build. Opening `http://localhost:8080/` and clicking around (or using `#pilots/Ada`-style links) works without it.
 - Re-run `build_pages.py` after `compile.py` or after editing `index.html`, since each generated page is a copy of `index.html` filled in from the compiled data.
-- `python3 build_pages.py --clean` removes the generated folders. They're gitignored, so leaving them is harmless — the deploy workflow regenerates them on every push.
+- `python3 scripts/build_pages.py --clean` removes the generated folders. They're gitignored, so leaving them is harmless — the deploy workflow regenerates them on every push.
 
 ### Link previews
 
