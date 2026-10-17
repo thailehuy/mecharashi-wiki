@@ -64,10 +64,6 @@ body {
   color: #6a6a80;
 }
 
-.nav-drawer-subitem {
-  padding-left: 1.5rem !important;
-}
-
 /* Hamburger button */
 .nav-hamburger {
   display: none;
@@ -225,9 +221,6 @@ svg.bi {
   }
   .nav-drawer-item {
     padding: 0.45rem 0.85rem !important;
-  }
-  .nav-drawer-subitem {
-    padding-left: 1.35rem !important;
   }
 }
 
