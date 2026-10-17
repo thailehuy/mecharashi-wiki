@@ -488,8 +488,9 @@ PLACEHOLDER_BOUNTY = re.compile(r'^(?:Defeat BOSS|Raid Mission)')
 def stage_info():
     """(AC number, slot) -> the stage's title, description, bounties
     ({name, conditions: {difficulty: text}}) and clues ({name, subtitle,
-    text}, in bounty order: each Normal bounty unlocks one) from the game
-    tables. A season's last stage also has the clues it takes to unlock on
+    text}, in bounty order: each bounty unlocks one) from the game tables.
+    A clue's text grows with the difficulty it's from, so where the
+    difficulties' texts differ, text is {difficulty: text}. A season's last stage also has the clues it takes to unlock on
     each difficulty (clue_unlock; the clues count over all difficulties)."""
     con = sqlite3.connect(STATS)
     one = lambda sql, *args: con.execute(sql, args).fetchone()
@@ -511,10 +512,18 @@ def stage_info():
                     if i == len(st['bounties']):
                         st['bounties'].append({'name': name, 'conditions': {}})
                     st['bounties'][i]['conditions'][diff] = cond.rstrip('.')
-                    if diff == 'Normal' and clue:
-                        st['clues'].append(dict(zip(('name', 'subtitle', 'text'), one(
-                            'SELECT NameStrKey_EN, DescStrKey_EN, DetailsStrKey_EN FROM ConfigDataRaidDungeonClueInfo WHERE ID = ?', clue))))
+                    found = clue and one('SELECT NameStrKey_EN, DescStrKey_EN, DetailsStrKey_EN '
+                                         'FROM ConfigDataRaidDungeonClueInfo WHERE ID = ?', clue)
+                    if found:
+                        if diff == 'Normal':
+                            st['clues'].append({'name': found[0], 'subtitle': found[1], 'text': {}})
+                        c = next(c for c in st['clues'] if c['name'] == found[0])
+                        c['text'][diff] = found[2]
     con.close()
+    for st in out.values():
+        for c in st['clues']:
+            if len(set(c['text'].values())) == 1:
+                c['text'] = c['text']['Normal']
     return out
 
 

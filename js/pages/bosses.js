@@ -234,9 +234,13 @@ function bossKit() {
           '</div>'
         );
       }).join('') + '</div>' : '') +
+      // A clue's text grows with the difficulty: one text per difficulty
+      // ({difficulty: text}) follows the toggle.
       (st.clues ? '<details class="boss-clues"><summary>Clues</summary>' + st.clues.map(function (c) {
-        return '<div class="boss-clue"><b>' + esc(c.name) + '</b>' + (c.subtitle ? ' <i>' + esc(c.subtitle) + '</i>' : '') +
-          '<div>' + esc(c.text) + '</div></div>';
+        var text = typeof c.text === 'string' ? '<div>' + esc(c.text) + '</div>' : Object.keys(c.text).map(function (d) {
+          return '<div' + diffsAttr([d], firstDiff) + '>' + esc(c.text[d]) + '</div>';
+        }).join('');
+        return '<div class="boss-clue"><b>' + esc(c.name) + '</b>' + (c.subtitle ? ' <i>' + esc(c.subtitle) + '</i>' : '') + text + '</div>';
       }).join('') + '</details>' : '')
     );
   }
