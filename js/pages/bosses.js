@@ -238,16 +238,19 @@ function bossKit() {
             (m.buffs || []).map(buffHtml).join('') +
           '</div>'
         );
-      }).join('') + '</div>' : '') +
-      // A clue's text grows with the difficulty: one text per difficulty
-      // ({difficulty: text}) follows the toggle.
-      (st.clues ? '<details class="boss-clues"><summary>Clues</summary>' + st.clues.map(function (c) {
-        var text = typeof c.text === 'string' ? '<div>' + esc(c.text) + '</div>' : Object.keys(c.text).map(function (d) {
-          return '<div' + diffsAttr([d], firstDiff) + '>' + esc(c.text[d]) + '</div>';
-        }).join('');
-        return '<div class="boss-clue"><b>' + esc(c.name) + '</b>' + (c.subtitle ? ' <i>' + esc(c.subtitle) + '</i>' : '') + text + '</div>';
-      }).join('') + '</details>' : '')
+      }).join('') + '</div>' : '')
     );
+  }
+
+  // A stage's clues. A clue's text grows with the difficulty: one text per
+  // difficulty ({difficulty: text}) follows the toggle.
+  function cluesHtml(st, firstDiff) {
+    return st.clues.map(function (c) {
+      var text = typeof c.text === 'string' ? '<div>' + esc(c.text) + '</div>' : Object.keys(c.text).map(function (d) {
+        return '<div' + diffsAttr([d], firstDiff) + '>' + esc(c.text[d]) + '</div>';
+      }).join('');
+      return '<div class="boss-clue"><b>' + esc(c.name) + '</b>' + (c.subtitle ? ' <i>' + esc(c.subtitle) + '</i>' : '') + text + '</div>';
+    }).join('');
   }
 
   // An item a boss drops: its icon (extracted from the game into the assets
@@ -317,37 +320,42 @@ function bossKit() {
             d.first && 'first-clear reward'].filter(Boolean).join(' + ') || 'none';
   }
 
-  // What a boss can drop (the game lists them, not their odds). Armed Conquest
-  // stages have drops per difficulty ({difficulty: drops}), following the
-  // toggle; Clearance Ops bosses one set.
-  function dropsHtml(st, firstDiff) {
-    var d = st.drops;
-    if (!d) return '';
-    var diffs = st.difficulties;
-    var count = diffs ? diffs.map(function (df) {
+  // What a boss can drop (the game lists them, not their odds), with its
+  // count for the tab. Armed Conquest stages have drops per difficulty
+  // ({difficulty: drops}), following the toggle; Clearance Ops bosses one set.
+  function dropsCountHtml(st, firstDiff) {
+    var d = st.drops, diffs = st.difficulties;
+    return diffs ? diffs.map(function (df) {
       return '<span' + diffsAttr([df], firstDiff) + '>' + (d[df] ? dropCount(d[df]) : 'none') + '</span>';
     }).join('') : dropCount(d);
-    var body = diffs ? diffs.filter(function (df) { return d[df]; }).map(function (df) {
-      return '<div' + diffsAttr([df], firstDiff) + '>' + dropListHtml(d[df]) + '</div>';
-    }).join('') : dropListHtml(d);
-    return '<details class="boss-clues boss-drops"><summary>Drops: ' + count + '</summary>' + body + '</details>';
   }
 
-  // A Clearance Ops boss's skills and drops as two tabs, so a long skill list
-  // and a long drop list don't stack up.
-  function tabsHtml(st) {
-    var tab = function (key, label, active) {
-      return '<button type="button" class="filter-btn filter-occ' + (active ? ' active' : '') + '" data-boss-tab="' + key + '">' + label + '</button>';
-    };
+  function dropsHtml(st, firstDiff) {
+    var d = st.drops, diffs = st.difficulties;
+    return diffs ? diffs.filter(function (df) { return d[df]; }).map(function (df) {
+      return '<div' + diffsAttr([df], firstDiff) + '>' + dropListHtml(d[df]) + '</div>';
+    }).join('') : dropListHtml(d);
+  }
+
+  // A boss's skills, clues and drops as tabs, so a long skill list and long
+  // clue and drop lists don't stack up.
+  function tabsHtml(st, firstDiff) {
+    var tabs = [['skills', 'Skills', stageDetails(st, firstDiff)]];
+    if (st.clues) tabs.push(['clues', 'Clues: ' + st.clues.length, '<div class="boss-clues">' + cluesHtml(st, firstDiff) + '</div>']);
+    if (st.drops) tabs.push(['drops', 'Drops: ' + dropsCountHtml(st, firstDiff), '<div class="boss-clues boss-drops">' + dropsHtml(st, firstDiff) + '</div>']);
+    if (tabs.length === 1) return tabs[0][2];
     return (
-      '<div class="boss-tabs">' + tab('skills', 'Skills', true) + tab('drops', 'Drops: ' + dropCount(st.drops)) + '</div>' +
-      '<div data-boss-pane="skills">' + stageDetails(st) + '</div>' +
-      '<div data-boss-pane="drops" hidden><div class="boss-clues boss-drops">' + dropListHtml(st.drops) + '</div></div>'
+      '<div class="boss-tabs">' + tabs.map(function (t, i) {
+        return '<button type="button" class="filter-btn filter-occ' + (i ? '' : ' active') + '" data-boss-tab="' + t[0] + '">' + t[1] + '</button>';
+      }).join('') + '</div>' +
+      tabs.map(function (t, i) {
+        return '<div data-boss-pane="' + t[0] + '"' + (i ? ' hidden' : '') + '>' + t[2] + '</div>';
+      }).join('')
     );
   }
 
   // A row per stage: its number (and title), the boss with its HP and
-  // bounties, and the boss's skills and drops beside it (tabbed for Clearance Ops).
+  // bounties, and the boss's skills, clues and drops beside it in tabs.
   function stageRows(stages) {
     return stages.map(function (st) {
       var diffs = st.difficulties || [];
@@ -356,7 +364,7 @@ function bossKit() {
           stageIntro(st) +
           cardHtml(st, diffs[0], 'col-12 col-sm-5 col-md-3', bossHref(st.boss), null, '', bountiesHtml(st, diffs[0]), true) +
           '<div class="col-12 col-sm-7 col-md-9">' +
-            (st.drops && !st.difficulties ? tabsHtml(st) : stageDetails(st, diffs[0]) + dropsHtml(st, diffs[0])) +
+            tabsHtml(st, diffs[0]) +
           '</div>' +
         '</div>'
       );
@@ -417,7 +425,7 @@ function bossKit() {
       $group.find('.boss-hp').each(function () { this.hidden = this.getAttribute('data-diff') !== diff; });
       $group.find('[data-diffs]').each(function () { this.hidden = this.getAttribute('data-diffs').split('|').indexOf(diff) === -1; });
     });
-    // Skills / Drops tabs of a Clearance Ops stage.
+    // Skills / Clues / Drops tabs of a stage.
     $(document).on('click.bosses', '[data-boss-tab]', function () {
       var tab    = $(this).attr('data-boss-tab');
       var $stage = $(this).closest('.boss-stage');
