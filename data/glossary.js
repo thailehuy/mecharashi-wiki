@@ -1707,6 +1707,13 @@ window.GlossaryData = {
       "icon": "Icon_skill_order_5138",
       "effect": "Applies <terrian ID=6008501 /> to the designated tile and the surrounding <color=#F74848>1</color>-ring radius for <color=#F74848>2</color> turns. Can continue action with remaining Movement."
     },
+    "301050": {
+      "name": "Special Load",
+      "Ap": "0",
+      "CD": "0",
+      "icon": "Icon_skill_order_5113",
+      "effect": "Consumes <color=#F74848>1</color> stack of <buf ID=3010502>[Reinforced Ammo]</buf> to gain <buf ID=3010504>[Improved Fire]</buf>. Can continue action with remaining Movement.\nAvailable when equipped with a Ranged Weapon."
+    },
     "601050": {
       "name": "Vengeance Strike",
       "Ap": "1",

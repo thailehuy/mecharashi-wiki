@@ -9314,7 +9314,7 @@
   "53039": {
     "kind": "weapon",
     "name": "Whoosh!",
-    "effect": "Enhanced [Hot! Hot! Hot!]: At end of action, applies <terrian ID=4003081 /> to tiles along the path of this action, lasting for <color=#F74848>2</color> turns. For each <color=#F74848>1</color> tile of <terrian ID=4003081 /> applied, gains <color=#F74848>1</color> stack of <buf ID=530391>[Heating Up]</buf>. Can stack up to <color=#F74848>15</color> times. If on <terrian ID=4003081 />, Flamethrower Bullets <color=#F74848>+1</color> and <buf ID=900139>[Flame DMG]</buf> multiplier <color=#F74848>+10%</color>.",
+    "effect": "Enhanced [Hot! Hot! Hot!] Effect: At end of action, applies <terrian ID=4003081 /> to tiles along the path of this action, lasting for <color=#F74848>2</color> turns.\nFor each <color=#F74848>1</color> tile of <terrian ID=4003081 /> applied, gains <color=#F74848>1</color> stack of <buf ID=530391>[Heating Up]</buf>. Can stack up to <color=#F74848>15</color> times.\nIf on <terrian ID=4003081 />, Flamethrower Bullets <color=#F74848>+1</color> and Flame DMG multiplier <color=#F74848>+10%</color>.",
     "icon": "Icon_skill_passive_5230",
     "buffs": "530391/530393/530394/530396"
   },
@@ -9335,14 +9335,14 @@
   "53023": {
     "kind": "weapon",
     "name": "Hyperfire",
-    "effect": "When Heavy Machine Gun's range increases, <buf ID=900011>[Ideal Range]</buf> expands by that same distance.",
+    "effect": "When Heavy Machine Gun's range increases, Ideal Range expands by that same distance.",
     "icon": "Icon_skill_passive_5210",
     "buffs": "530231"
   },
   "53024": {
     "kind": "weapon",
     "name": "Doomed Brigade",
-    "effect": "Enhanced [Fearless Army]: For every enemy within range, gains Bullets +<color=#F74848>1</color>, up to +<color=#F74848>4</color>. When an Arm is destroyed, does not exit <buf ID=900025>[Rack]</buf> Mode.",
+    "effect": "Enhanced [Fearless Army]: For every enemy within range, gains Bullets +<color=#F74848>1</color>, up to <color=#F74848>4</color>. When an Arm is destroyed, does not exit <buf ID=900025>[Rack]</buf> Mode.",
     "icon": "Icon_skill_passive_5211",
     "buffs": "530241"
   },
@@ -9356,21 +9356,21 @@
   "53076": {
     "kind": "weapon",
     "name": "Firepower Advantage",
-    "effect": "When actively attacking, DMG <color=#F74848>+15%</color>. Starting from <color=#F74848>1</color> tile, for every additional <color=#F74848>1</color> tile away from the target, DMG <color=#F74848>+5%</color>, up to <color=#F74848>25%</color>.",
+    "effect": "When actively attacking, DMG <color=#F74848>+15%</color>. Starting from a distance of <color=#F74848>1</color> tile, DMG <color=#F74848>+5%</color> for every additional tile from the target, up to <color=#F74848>25%</color>.",
     "icon": "Icon_skill_passive_1146",
     "buffs": "530761/530762"
   },
   "53077": {
     "kind": "weapon",
     "name": "Resonance Unit",
-    "effect": "When actively attacking with a Heavy Machine Gun, if a part is broken, gains <color=#F74848>1</color> random buff after combat, lasting <color=#F74848>2</color> turns. Can trigger up to <color=#F74848>3</color> times per turn.",
+    "effect": "When actively attacking with a Heavy Machine Gun, if an enemy part is destroyed, gains <color=#F74848>1</color> random buff after combat, lasting for <color=#F74848>2</color> turns. Can trigger up to <color=#F74848>3</color> times per turn.",
     "icon": "Icon_skill_passive_5129",
     "buffs": "530771"
   },
   "53078": {
     "kind": "weapon",
     "name": "Gospel of Hope",
-    "effect": "Enhanced [EVA-01 Pilot]: Heavy Machine Gun range <color=#F74848>+1</color>, <buf ID=1014820>[Sync Ratio]</buf> correction effect <color=#F74848>+25%</color>. Every time <buf ID=900004>[Re-ATK]</buf> is triggered, <buf ID=1014820>[Sync Ratio]</buf> <color=#F74848>+3%</color>. After actively attacking, gains <buf ID=530786>[Synchronized Miracle]</buf>. Effective up to <color=#F74848>1</color> time per turn.",
+    "effect": "Enhanced [EVA-01 Pilot] Effect: Heavy Machine Gun Range <color=#F74848>+1</color>, <buf ID=1014820>[Sync Ratio]</buf> correction effect <color=#F74848>+25%</color>. Each time <buf ID=900004>[Re-ATK]</buf> is activated, <buf ID=1014820>[Sync Ratio]</buf> <color=#F74848>+3%</color>. After actively attacking, gains <buf ID=530786>[Synchronized Miracle]</buf>. Can only take effect <color=#F74848>1</color> time per turn.",
     "icon": "Icon_skill_passive_5267",
     "buffs": "530781/530782/530783/530785"
   },
@@ -9423,7 +9423,7 @@
   "53003": {
     "kind": "weapon",
     "name": "Mega Form",
-    "effect": "Enhanced [Prototype]: When executing a dual Machine Gun skill to initiate combat, gains <buf ID=7100103>[Hit Rate UP II]</buf> and <buf ID=7100404>[Crit Rate UP II]</buf> before combat, lasting for 2 turns. Also triggers <buf ID=900001>[Flurry Strike]</buf> with the opposite Arm after the enemy retaliates, dealing <color=#F74848>0.4</color> (<color=#F74848>0.5</color>)x DMG.",
+    "effect": "Enhanced [Prototype]: When executing a dual machine gun skill to initiate combat, gains <buf ID=7100103>[Hit Rate UP II]</buf> and <buf ID=7100404>[Crit Rate UP II]</buf> before combat, lasting for <color=#F74848>2</color> turns. Also triggers <buf ID=900001>[Flurry Strike]</buf> with the opposite Arm after the enemy retaliates, dealing <color=#F74848>0.4</color> (<color=#F74848>0.5</color>)x DMG.",
     "icon": "Icon_skill_passive_5199",
     "buffs": "530031/530032/530033"
   },
@@ -9536,7 +9536,7 @@
   "53058": {
     "kind": "weapon",
     "name": "Sustainability Protocol",
-    "effect": "Maximum Cutter Ammo <color=#F74848>+1</color>. When using Cutter to actively attack <color=#F74848>4</color> or more targets, reloads <color=#F74848>1</color> Ammo after combat. This effect can trigger <color=#F74848>1</color> time every <color=#F74848>2</color> turns.",
+    "effect": "Maximum Cutter Ammo <color=#F74848>+1</color>. When using Cutter to actively attack <color=#F74848>4</color> or more targets, recovers <color=#F74848>1</color> round of Ammo after combat. Can only trigger <color=#F74848>1</color> time every <color=#F74848>2</color> turns.",
     "icon": "Icon_skill_passive_5223",
     "buffs": "530582"
   },
@@ -9557,7 +9557,7 @@
   "53060": {
     "kind": "weapon",
     "name": "Brynhild",
-    "effect": "Enhanced [Valkyrie]: Activates flight functionality, ignoring low obstacles and enemy unit obstruction while moving. <buf ID=900118>[Valhalla's Call]</buf> duration <color=#F74848>+1</color> turn. In <buf ID=900118>[Valhalla's Call]</buf> Mode, Cutter Ammo <color=#F74848>+2</color>.",
+    "effect": "Enhanced [Valkyrie] Effect: Activates flight functionality, ignoring low obstacles and enemy unit obstruction while moving. <buf ID=900118>[Valhalla's Call]</buf> duration <color=#F74848>+1</color> turn. In <buf ID=900118>[Valhalla's Call]</buf> Mode, Cutter Ammo <color=#F74848>+2</color>.",
     "icon": "Icon_skill_passive_5250",
     "buffs": "530601/530606"
   },
@@ -9585,21 +9585,21 @@
   "53086": {
     "kind": "weapon",
     "name": "Overdistance Effect",
-    "effect": "When attacking with a Missile Launcher, if distance from target is <color=#F74848>4</color> or more tiles, DMG <color=#F74848>+30%</color>.",
+    "effect": "When using a Missile Attack, if the distance to the target is greater than or equal to <color=#F74848>4</color> tiles, DMG increases by <color=#F74848>30%</color>.",
     "icon": "Icon_skill_passive_5237",
     "buffs": "530861"
   },
   "53087": {
     "kind": "weapon",
     "name": "Agitated Resolve",
-    "effect": "Enhanced [Fiery Will]: Upon deployment, gains <color=#F74848>5</color> stacks of <buf ID=530872>[Scorching Intent]</buf>. After the talent triggers <buf ID=900002>[Link Attack]</buf>, or after actively attacking, for every <color=#F74848>1</color> Ammo consumed, gains <color=#F74848>1</color> stack of <buf ID=530872>[Scorching Intent]</buf>, up to <color=#F74848>15</color> stacks. While carrying <color=#F74848>10</color> or more stacks, AP Regen <color=#F74848>+1</color>. <buf ID=4008509>[Lock]</buf> increases DMG multiplier of Arthur's active attacks and all <buf ID=900002>[Link Attack]</buf> against the target by <color=#F74848>+0.1</color>.",
+    "effect": "Enhanced [Fiery Will] Effect: When deployed, gains <color=#F74848>5</color> stacks of <buf ID=530872>[Scorching Intent]</buf>. After a <buf ID=900002>[Link Attack]</buf> is triggered via talent or after each active attack, for every <color=#F74848>1</color> Ammo consumed, gains <color=#F74848>1</color> stack of <buf ID=530872>[Scorching Intent]</buf>. Can stack up to <color=#F74848>15</color> times. When possessing <color=#F74848>10</color> or more stacks, AP recovery <color=#F74848>+1</color>.\n<buf ID=4008509>[Lock]</buf> increases the damage multiplier of Arthur's active attacks and all <buf ID=900002>[Link Attacks]</buf> against the target by <color=#F74848>0.1</color>.",
     "icon": "Icon_skill_passive_5271",
     "buffs": "530871/530873/530874/530875/530876/530878"
   },
   "53085": {
     "kind": "weapon",
     "name": "Reserve Pod",
-    "effect": "After actively attacking with a Missile Launcher, randomly reloads Ammo to carried Missile Launchers equal to the AP Cost of that attack. Can trigger again after an interval of <color=#F74848>1</color> turn.",
+    "effect": "After actively attacking with a Missile Launcher, randomly reloads Ammo to the equipped Missile Launcher, with the reload amount equal to the AP Cost of that attack. This effect can trigger again after an interval of <color=#F74848>1</color> turn.",
     "icon": "Icon_skill_passive_5223",
     "buffs": "530851"
   },
@@ -9676,7 +9676,7 @@
   "53069": {
     "kind": "weapon",
     "name": "Tridentate Deflector",
-    "effect": "Enhanced [Perfectionism] Effect: When deploying <buf ID=900085>[Tokamak Spheres]</buf>, the Redirection direction will change to the selected direction and the adjacent <color=#F74848>2</color> directions, with the redirected attack increased by <color=#F74848>0.2x</color>. When actively attacking, if the target is afflicted with <color=#F74848>5</color> or more debuffs, inflicts <buf ID=1009083>[Intimidation]</buf> on the target after combat, lasting for <color=#F74848>1</color> turn. When actively attacking, for every <color=#F74848>15</color> debuffs applied, immediately gains <color=#F74848>1</color> AP.",
+    "effect": "Enhanced [Perfectionism] Effect: When deploying <buf ID=900085>[Tokamak Spheres]</buf>, the Redirection direction will change to the selected direction and the adjacent <color=#F74848>2</color> directions, with the redirected attack increased by <color=#F74848>0.2x</color>.\nWhen actively attacking, if the target is afflicted with <color=#F74848>5</color> or more debuffs, inflicts <buf ID=1009083>[Intimidation]</buf> on the target after combat, lasting for <color=#F74848>1</color> turn.\nWhen actively attacking, for every <color=#F74848>15</color> debuffs applied, immediately gains <color=#F74848>1</color> AP.",
     "icon": "Icon_skill_passive_5257",
     "buffs": "530699/530693/530692/530694/530695"
   },
@@ -9810,21 +9810,21 @@
   "53080": {
     "kind": "weapon",
     "name": "Practice Makes Perfect",
-    "effect": "After actively repairing <color=#F74848>3</color> cumulative times, gains <color=#F74848>1</color> AP and <buf ID=500923>[Reconstruction II]</buf>, lasting <color=#F74848>1</color> turn.",
+    "effect": "After performing <color=#F74848>3</color> active repairs, gains <color=#F74848>1</color> AP and <buf ID=500923>[Reconstruction II]</buf>, lasting for <color=#F74848>1</color> turn.",
     "icon": "Icon_skill_passive_5212",
     "buffs": "530801"
   },
   "53081": {
     "kind": "weapon",
     "name": "Canary's Song",
-    "effect": "Enhanced [Sentinel Ward]: <skill mainSkill=500406>[Repair Synergy]</skill> and <skill mainSkill=500408>[Full-Line Maintenance]</skill> can additionally dispel <color=#F74848>1</color> debuff from the repair target. Every time <buf ID=900038>[Regular Repair]</buf> triggers, dispels <color=#F74848>1</color> debuff.",
+    "effect": "Enhanced [Sentinel Ward] Effect: <skill mainSkill=500406>[Repair Synergy]</skill> and <skill mainSkill=500408>[Full-Line Maintenance]</skill> can dispel <color=#F74848>1</color> additional debuff from the repair target. <buf ID=900038>[Regular Repair]</buf> dispels <color=#F74848>1</color> debuff each time it is triggered.",
     "icon": "Icon_skill_passive_3134",
     "buffs": "530811"
   },
   "53079": {
     "kind": "weapon",
     "name": "Full Recoil",
-    "effect": "When the shield-carrying Arm is attacked, inflicts <buf ID=7101003>[Hit Rate Down II]</buf> and <buf ID=7101303>[Crit Rate Down II]</buf> on the enemy after combat, lasting <color=#F74848>1</color> turn.",
+    "effect": "When the shield-bearing Arm is attacked, inflicts <buf ID=7101003>[Hit Rate Down II]</buf> and <buf ID=7101303>[Crit Rate Down II]</buf> on the enemy unit after combat, lasting for <color=#F74848>1</color> turn.",
     "icon": "Icon_skill_passive_5131",
     "buffs": "530791"
   },
@@ -9939,7 +9939,7 @@
   "53006": {
     "kind": "weapon",
     "name": "Unswerving",
-    "effect": "Enhanced [Unto Death]: when triggered by <buf ID=900008>[Pursuit]</buf>, <buf ID=900030>[Cleave]</buf> damage multiplier +<color=#F74848>0.2</color>. The unit returns to its original position after attacking.",
+    "effect": "Enhanced [Unto Death]: When triggered by <buf ID=900008>[Pursuit]</buf>, <buf ID=900030>[Cleave]</buf> damage multiplier +<color=#F74848>0.2</color>. The unit returns to its original position after attacking.",
     "icon": "Icon_skill_passive_1154",
     "buffs": "530061/530065"
   },
@@ -9988,7 +9988,7 @@
   "53042": {
     "kind": "weapon",
     "name": "Lunar Snare",
-    "effect": "Enhanced [Intimidating Moonlight]: At start of action, if there are <color=#F74848>3</color> or more enemy units within aura range, this unit gains <color=#F74848>1</color> AP. If there are enemies within aura range affected by <buf ID=7101505>[Crash]</buf> or <buf ID=1009083>[Intimidation]</buf>, DMG <color=#F74848>+15%</color>, DMG Taken <color=#F74848>-15%</color>.",
+    "effect": "Enhanced [Intimidating Moonlight]: At start of action, if there are <color=#F74848>3</color> or more enemy units within aura range, this unit gains <color=#F74848>1</color> AP.\nIf there are enemies within aura range affected by <buf ID=7101505>[Crash]</buf> or <buf ID=1009083>[Intimidation]</buf>, DMG <color=#F74848>+15%</color>, DMG Taken <color=#F74848>-15%</color>.",
     "icon": "Icon_skill_passive_5231",
     "buffs": "530421/530422/530423/530424/530425/530426"
   },
@@ -10080,7 +10080,7 @@
   "53018": {
     "kind": "weapon",
     "name": "Preempting",
-    "effect": "Enhanced [Initiative]: <buf ID=900023>[Quick Draw]</buf> and <buf ID=900028>[Add Strike]</buf> have no trigger limit. After combat, restores HP to a single Arm, prioritizing the Arm with the shield, equal to <color=#F74848>25%</color> of damage dealt.",
+    "effect": "Enhanced [Initiative]: <buf ID=900023>[Quick Draw]</buf> and <buf ID=900028>[Add Strike]</buf> have no trigger limit. After combat, restores HP to a single Arm—prioritizing the Arm with the shield—equal to <color=#F74848>25%</color> of damage dealt.",
     "icon": "Icon_skill_passive_5208",
     "buffs": "530181"
   },
@@ -10093,21 +10093,21 @@
   "53053": {
     "kind": "weapon",
     "name": "Fight Fire with Fire",
-    "effect": "When retaliating, DMG increased by current DMG Taken Down effect. Retaliation DMG <color=#F74848>+1.5%</color> for every <color=#F74848>1%</color> DMG Taken Down, up to <color=#F74848>100%</color>.",
+    "effect": "When retaliating, DMG increased by current DMG Taken Down effect, gaining <color=#F74848>1.5%</color> Retaliation DMG UP for every <color=#F74848>1%</color> DMG Taken Down, up to <color=#F74848>100%</color>.",
     "icon": "Icon_skill_passive_1144",
     "buffs": "530531"
   },
   "53054": {
     "kind": "weapon",
     "name": "Unbroken",
-    "effect": "Enhanced [Stand Behind Me!]: When triggering <buf ID=900024>[Selfless Guard]</buf>, also triggers [Reckless Retaliation], and balances the percentage HP of all undestroyed parts after combat with <buf ID=900089>[Balance]</buf>. Gains <color=#F74848>1</color> stack of [Standing Tall] before retaliation, up to <color=#F74848>3</color> stacks. Removed at the start of the next action.",
+    "effect": "Enhanced [Stand Behind Me!]: When triggering <buf ID=900024>[Selfless Guard]</buf>, also triggers [Reckless Retaliation], and balances the percentage HP of all undestroyed parts after combat with <buf ID=900089>[Balance]</buf>. Gains <color=#F74848>1</color> stack of [Standing Tall] before retaliation, stacking up to <color=#F74848>3</color> times. Removed at the start of the next action.",
     "icon": "Icon_skill_passive_2124",
     "buffs": "530541/530542/530543"
   },
   "53052": {
     "kind": "weapon",
     "name": "Arm Wrestling Champion",
-    "effect": "When the Shield Arm's HP is below <color=#F74848>60%</color>, Repair AMT Received <color=#F74848>+25%</color>.",
+    "effect": "When the shield Arm's HP is below <color=#F74848>60%</color>, Repair AMT Received <color=#F74848>+25%</color>.",
     "icon": "Icon_skill_passive_3101",
     "buffs": "530521"
   },
@@ -10134,21 +10134,21 @@
   "53083": {
     "kind": "weapon",
     "name": "Position Control",
-    "effect": "Before being actively attacked, if on allied terrain, immediately restores <color=#F74848>1</color> AP. Can trigger <color=#F74848>1</color> time per turn.",
+    "effect": "Before being actively attacked, if located on allied terrain, immediately restores <color=#F74848>1</color> AP. Can only trigger <color=#F74848>1</color> time per turn.",
     "icon": "Icon_skill_passive_5189",
     "buffs": "530831"
   },
   "53084": {
     "kind": "weapon",
     "name": "Veteran Commander",
-    "effect": "Enhanced [Battle-Hardened]: <terrian ID=6008501 /> area expands to the selected tile and its surrounding <color=#F74848>2</color> tiles. Movement cost for Tiphys within <terrian ID=6008501 /> reduces by <color=#F74848>50%</color>. All allied units within <terrian ID=6008501 /> gain DMG <color=#F74848>+20%</color>, and when actively attacked, no part can take more than <color=#F74848>85%</color> of its Max HP in damage.",
+    "effect": "Enhanced [Battle-Hardened] Effect: Expands <terrian ID=6008501 /> range to the designated tile and its surrounding <color=#F74848>2</color>-ring area. When moving within <terrian ID=6008501 />, Movement consumption is reduced by <color=#F74848>50%</color>. All allied units within <terrian ID=6008501 /> gain DMG Dealt <color=#F74848>+20%</color>, and when subjected to active attacks, no part can take DMG exceeding <color=#F74848>85%</color> of its Max HP.",
     "icon": "Icon_skill_passive_5270",
     "buffs": "530841/530842/530843/530845"
   },
   "53082": {
     "kind": "weapon",
     "name": "Fortress Mantle",
-    "effect": "When the shield-carrying Arm takes damage, DMG Taken <color=#F74848>-10%</color> and Crit DMG Taken <color=#F74848>-20%</color>.",
+    "effect": "When the shield-bearing Arm takes damage, DMG Taken <color=#F74848>-10%</color>, and Crit DMG Taken <color=#F74848>-20%</color>.",
     "icon": "Icon_skill_passive_2111",
     "buffs": "530821"
   },
@@ -10215,21 +10215,21 @@
   "53049": {
     "kind": "weapon",
     "name": "Hold Your Breath",
-    "effect": "When in <buf ID=900014>[Aiming]</buf> Mode, DMG Dealt <color=#F74848>+15%</color>.",
+    "effect": "While in <buf ID=900014>[Aiming]</buf> Mode, DMG Dealt <color=#F74848>+15%</color>.",
     "icon": "Icon_skill_passive_5103",
     "buffs": "530491"
   },
   "53050": {
     "kind": "weapon",
     "name": "Heatwave",
-    "effect": "After landing a critical hit with a Sniper Rifle active attack, the next active attack's AP Cost <color=#F74848>-1</color> (minimum <color=#F74848>1</color> AP). Can trigger <color=#F74848>1</color> time per turn.",
+    "effect": "After landing a critical hit with a Sniper Rifle active attack, the next active attack's AP Cost <color=#F74848>-1</color>, down to a minimum of <color=#F74848>1</color>. Can only trigger <color=#F74848>1</color> time per turn.",
     "icon": "Icon_skill_passive_5181",
     "buffs": "530501"
   },
   "53051": {
     "kind": "weapon",
     "name": "Stork's Gaze",
-    "effect": "Enhanced [White Stork]: When possessing <buf ID=3010504>[Improved Fire]</buf>, the skill multiplier during attacks is increased from <color=#F74848>0.15</color> to <color=#F74848>0.2</color>. Before using normal attacks, <skill ID=301009>[Tracking Shot]</skill>, and <skill ID=301006>[Shower]</skill>, can enter <buf ID=900014>[Aiming]</buf> Mode. When actively attacking with a Sniper Rifle, if this unit has not moved before attacking, Crit Rate <color=#F74848>+15%</color> for this attack.",
+    "effect": "Enhanced [White Stork] Effect: When possessing <buf ID=3010504>[Improved Fire]</buf>, the skill multiplier during attacks is increased from <color=#F74848>0.15</color> to <color=#F74848>0.2</color>. Before using normal attacks, <skill ID=301009>[Tracking Shot]</skill>, and <skill ID=301006>[Shower]</skill>, can enter <buf ID=900014>[Aiming]</buf> Mode. When actively attacking with a Sniper Rifle, if this unit has not moved before attacking, the Crit Rate of this attack is increased by <color=#F74848>15%</color>.",
     "icon": "Icon_skill_passive_5249",
     "buffs": "530511/530512"
   },
@@ -10271,7 +10271,7 @@
   "53027": {
     "kind": "weapon",
     "name": "May Flourish",
-    "effect": "Enhanced [Epiphyllum Move]: When in <buf ID=900014>[Aiming]</buf> Mode, DMG <color=#F74848>+20%</color>. If the target part is undestroyed, DMG is further increased by <color=#F74848>10%</color>. When equipped with a Small Shield, can move with full movement after destroying the target.",
+    "effect": "Enhanced [Epiphyllum Move]: When in <buf ID=900014>[Aiming]</buf> Mode, DMG <color=#F74848>+20%</color>. If the target part is undestroyed, DMG is further increased by <color=#F74848>10%</color>. When equipped with a Small Shield, can move with full Movement after destroying the target.",
     "icon": "Icon_skill_passive_1160",
     "buffs": "530271/530272/530273/530274"
   },
