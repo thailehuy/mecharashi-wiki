@@ -15,6 +15,15 @@ var CRAFTING_COMPOSITE_BADGE =
     '</svg>' +
   '</span>';
 
+// Quality frame for a game item icon (data/items/), which comes without one;
+// the backpack material icons have theirs baked in.
+function materialQualityBg(m) {
+  if (!/^data\/items\//.test(m.icon)) return '';
+  if (/Blueprint|Arsenal Handbook/.test(m.label)) return ASSET_BASE + 'data/background/quality-sssr.png';
+  if (/Bounty Medal/.test(m.label)) return ASSET_BASE + 'data/background/quality-ssr.png';
+  return '';
+}
+
 // The "Crafting Material" section of a backpack or weapon page. Ingredients
 // without a page of their own (materials, UR weapons) that are crafted too get
 // their recipe on a row below.
@@ -46,7 +55,9 @@ function craftingSectionHtml(crafting) {
     } else {
       name = m.label;
       if (m.crafting) subRecipes.push({ name: m.label, crafting: m.crafting });
-      style = 'background-image:url(\'' + ASSET_BASE + m.icon + '\')';
+      var bg = materialQualityBg(m);
+      style = 'background-image:url(\'' + ASSET_BASE + m.icon + '\')' +
+        (bg ? ', url(\'' + bg + '\'); background-size: auto 100%, cover; background-position: center, center;' : ';');
     }
     var inner =
       '<div class="material-icon-wrap" style="' + style + '">' +
