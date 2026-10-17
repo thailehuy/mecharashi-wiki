@@ -22,7 +22,7 @@ import re
 import sqlite3
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-DB = os.path.join(HERE, '..', 'screenshots', 'mined', 'mecharashi.db')
+DB = os.path.join(HERE, '..', 'screenshots', 'MRT_FieldWiki', 'source', 'mecharashi.db')
 BENCH = os.path.join(HERE, '..', 'dmgcalc', 'bench-data.js')
 PILOTS = os.path.join(HERE, '..', 'pilots', 'compiled.json')
 OUT = os.path.join(HERE, 'features.json')
@@ -244,7 +244,7 @@ def main():
             fs.sort(key=lambda f: (PORT_ORDER[','.join(f['slots'])], f['id']))
 
     out = {
-        '_source': 'data/screenshots/mined/mecharashi.db table rd_features',
+        '_source': 'data/screenshots/MRT_FieldWiki/source/mecharashi.db table rd_features',
         'pilot_classes': pilot_classes(con),
         'pilot': sections['pilot'],
         'st': sections['st'],

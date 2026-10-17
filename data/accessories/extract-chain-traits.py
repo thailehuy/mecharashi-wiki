@@ -17,7 +17,7 @@ Debilitation (Not available)").
   own fits is always the intersection of its TA's and RA's fits (verified
   against the DB's per-pair `fits` column when this script runs).
 
-The DB is gitignored (data/screenshots/mined/mecharashi.db, see the root
+The DB is gitignored (data/screenshots/MRT_FieldWiki/source/mecharashi.db, see the root
 README), so this isn't part of compile.py — rerun it by hand after
 refreshing the DB:
 
@@ -31,7 +31,7 @@ import sys
 
 DIR = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.join(DIR, '..', '..')
-DB_PATH = os.path.join(ROOT, 'data', 'screenshots', 'mined', 'mecharashi.db')
+DB_PATH = os.path.join(ROOT, 'data', 'screenshots', 'MRT_FieldWiki', 'source', 'mecharashi.db')
 OUT_JSON = os.path.join(DIR, 'chain-traits.json')
 OUT_JS = os.path.join(DIR, 'chain-traits.js')
 COMPILED_JSON = os.path.join(DIR, 'compiled.json')

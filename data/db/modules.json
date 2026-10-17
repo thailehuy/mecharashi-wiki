@@ -2017,16 +2017,16 @@
     "current_level": 4,
     "levels": {
       "1": {
-        "effect": "When attacked, for each <color=#F74848>1</color> attack dodged, gains DMG <color=#F74848>+1%</color>, up to <color=#F74848>8%</color>. At end of action, DMG <color=#F74848>-2%</color>."
+        "effect": "When attacked, for each time an attack is dodged, gains DMG <color=#F74848>+1%</color>, up to <color=#F74848>8%</color>. At end of action, DMG <color=#F74848>-2%</color>."
       },
       "2": {
-        "effect": "When attacked, for each <color=#F74848>1</color> attack dodged, gains DMG <color=#F74848>+1.5%</color>, up to <color=#F74848>15%</color>. At end of action, DMG <color=#F74848>-4%</color>."
+        "effect": "When attacked, for each time an attack is dodged, gains DMG <color=#F74848>+1.5%</color>, up to <color=#F74848>15%</color>. At end of action, DMG <color=#F74848>-4%</color>."
       },
       "3": {
-        "effect": "When attacked, for each <color=#F74848>1</color> attack dodged, gains DMG <color=#F74848>+2%</color>, up to <color=#F74848>24%</color>. At end of action, DMG <color=#F74848>-7%</color>."
+        "effect": "When attacked, for each time an attack is dodged, gains DMG <color=#F74848>+2%</color>, up to <color=#F74848>24%</color>. At end of action, DMG <color=#F74848>-7%</color>."
       },
       "4": {
-        "effect": "When attacked, for each <color=#F74848>1</color> attack dodged, gains DMG <color=#F74848>+2.5%</color>, up to <color=#F74848>35%</color>. At end of action, DMG <color=#F74848>-10%</color>."
+        "effect": "When attacked, for each time an attack is dodged, gains DMG <color=#F74848>+2.5%</color>, up to <color=#F74848>35%</color>. At end of action, DMG <color=#F74848>-10%</color>."
       }
     }
   },
@@ -2038,7 +2038,7 @@
     "current_level": 4,
     "levels": {
       "1": {
-        "effect": "When actively attacking, for every <color=#F74848>1</color> AP consumed, DMG Dealt <color=#F74848>+2%</color> before combat, up to <color=#F74848>8%</color>, and <color=#F74848>-4%</color> after combat."
+        "effect": "When actively attacking, for every <color=#F74848>1</color> AP consumed, DMG Dealt <color=#F74848>+2%</color> before combat, up to <color=#F74848>8%</color>, and reduced by <color=#F74848>4%</color> after combat."
       },
       "2": {
         "effect": "When actively attacking, for every <color=#F74848>1</color> AP consumed, DMG Dealt <color=#F74848>+3%</color> before combat, up to <color=#F74848>15%</color>, and <color=#F74848>-6%</color> after combat."
@@ -2080,16 +2080,16 @@
     "current_level": 4,
     "levels": {
       "1": {
-        "effect": "In battle, for each <color=#F74848>1</color> debuff inflicted, gains DMG Dealt <color=#F74848>+2%</color>, and the target takes <color=#F74848>1%</color> increased damage. Stacks up to <color=#F74848>3</color> times. Lasts for <color=#F74848>2</color> turns."
+        "effect": "In battle, gains DMG Dealt <color=#F74848>+2%</color> for each debuff inflicted, and the target takes <color=#F74848>1%</color> increased damage. Stacks up to <color=#F74848>3</color> times. Lasts for <color=#F74848>2</color> turns."
       },
       "2": {
-        "effect": "In battle, for each <color=#F74848>1</color> debuff inflicted, gains DMG Dealt <color=#F74848>+3%</color>, and the target takes <color=#F74848>2%</color> increased damage. Stacks up to <color=#F74848>3</color> times. Lasts for <color=#F74848>2</color> turns."
+        "effect": "In battle, gains DMG Dealt <color=#F74848>+3%</color> for each debuff inflicted, and the target takes <color=#F74848>2%</color> increased damage. Stacks up to <color=#F74848>3</color> times. Lasts for <color=#F74848>2</color> turns."
       },
       "3": {
-        "effect": "In battle, for each <color=#F74848>1</color> debuff inflicted, gains DMG Dealt <color=#F74848>+3%</color>, and the target takes <color=#F74848>2%</color> increased damage. Stacks up to <color=#F74848>5</color> times. Lasts for <color=#F74848>2</color> turns."
+        "effect": "In battle, gains DMG Dealt <color=#F74848>+3%</color> for each debuff inflicted, and the target takes <color=#F74848>2%</color> increased damage. Stacks up to <color=#F74848>5</color> times. Lasts for <color=#F74848>2</color> turns."
       },
       "4": {
-        "effect": "In battle, for each <color=#F74848>1</color> debuff inflicted, gains DMG Dealt <color=#F74848>+5%</color>, and the target takes <color=#F74848>2%</color> increased damage. Stacks up to <color=#F74848>5</color> times. Lasts for <color=#F74848>2</color> turns."
+        "effect": "In battle, gains DMG Dealt <color=#F74848>+5%</color> for each debuff inflicted, and the target takes <color=#F74848>2%</color> increased damage. Stacks up to <color=#F74848>5</color> times. Lasts for <color=#F74848>2</color> turns."
       }
     }
   },

@@ -234,7 +234,7 @@
   },
   "900089": {
    "name": "Balance",
-   "effect": "Equalizes HP percentage across all parts. Destroyed parts are not included."
+   "effect": "Balances the HP percentage of all undestroyed parts."
   },
   "900095": {
    "name": "Dual Gun Retaliation",
@@ -1693,6 +1693,10 @@
    "icon": "Icon_skill_order_5146",
    "effect": "Uses a Rail Gun to attack targets with <buf ID=6010502>[Magnetic Lock]</buf>. The number of attacks equals the Rail Gun's Ammo Capacity but does not consume Ammo. Targets are prioritized from near to far, preferring different targets. Each attack deals <color=#F74848>0.4x</color> AoE DMG to the target and other enemies within <color=#F74848>1</color> tile of its location, always targeting the Body. When repeatedly attacking the same target, DMG is reduced by <color=#F74848>60%</color>. This attack will not remove the target's <buf ID=6010502>[Magnetic Lock]</buf>."
   },
+  "4011051": {
+   "name": "Link Retaliation",
+   "effect": "[Colin] uses two Cutters to attack a target, dealing <color=#F74848>0.4x</color> DMG <color=#F74848>2</color> times."
+  },
   "6011501": {
    "name": "Polearm Toss",
    "Ap": "0",
@@ -2368,8 +2372,8 @@
    "effect": "[Bertha] can ignore range and directly attack enemy units within this area when using a Sniper Rifle. This terrain can exist together with other terrains."
   },
   "4011081": {
-   "name": "Restricted Area",
-   "effect": "[Colin] will use cutters to attack enemy stopping on this tile, dealing <color=#F74848>0.6x</color> damage. This terrain has high priority."
+   "name": "Area Blockade",
+   "effect": "[Colin] uses Cutters to attack enemy units that remain on this tile, dealing <color=#F74848>0.6x</color> damage. Has a high terrain priority."
   },
   "6008501": {
    "name": "Defense Field",

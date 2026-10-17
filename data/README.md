@@ -20,7 +20,7 @@ The pre-migration sources (CN dumps, `-translation.json` files, scrapers) are
 in git history under the tag `pre-db`.
 
 Before writing English text or stats by hand, check the mined global-client
-database (`data/screenshots/mined/mecharashi.db`). It may already have the
+database (`data/screenshots/MRT_FieldWiki/source/mecharashi.db`). It may already have the
 official values. See "Using the mined game database" in the root
 [README](../README.md).
 

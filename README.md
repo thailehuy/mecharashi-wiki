@@ -155,7 +155,7 @@ Edit the row in the relevant `data/db/` table (e.g. a skill's text in `skills.js
 
 ### Using the mined game database
 
-`data/screenshots/mined/mecharashi.db` is a SQLite database mined from the **global (EN) client**. Its `about` table records the game build and extraction date; the copy used so far is build `191_ZiLongENA`, extracted 2026-10-11. It holds English names and descriptions, stats, skills, buffs and more. `data/screenshots/*` is gitignored (the file is ~17 MB), so each contributor needs their own copy at that path. The folder also has `README.txt` and two offline HTML viewers (`Mecharashi_Wiki.html`, `Damage_Bench.html`) built from the same data.
+`data/screenshots/MRT_FieldWiki/source/mecharashi.db` is a SQLite database mined from the **global (EN) client**. Its `about` table records the game build and extraction date; the copy used so far is build `191_ZiLongENA`, extracted 2026-10-11. It holds English names and descriptions, stats, skills, buffs and more. `data/screenshots/*` is gitignored (the file is ~17 MB), so each contributor needs their own copy of the `MRT_FieldWiki` folder at `data/screenshots/MRT_FieldWiki/`. Its `README.md` explains the layout: `source/` holds the database, `RebuildGameUpdate/` the scripts that remake it after a game update, and `working/drafts/` the offline HTML viewers (`Mecharashi_Wiki.html`, `Damage_Bench.html`) built from the same data. The released `Mecharashi_Wiki.html` is at the folder's top level.
 
 Open it with the `sqlite3` CLI, Python's built-in `sqlite3`, or a viewer such as DB Browser for SQLite. Start with the `about` table: it describes every table and the conventions (percentages are fractions, `0.15` = 15%).
 
@@ -170,7 +170,7 @@ Open it with the `sqlite3` CLI, Python's built-in `sqlite3`, or a viewer such as
 
 ```bash
 # ST name + description for a wiki mech ID
-sqlite3 data/screenshots/mined/mecharashi.db \
+sqlite3 data/screenshots/MRT_FieldWiki/source/mecharashi.db \
   "select s.name, s.description from st_parts p join sts s using (st_id) where p.part_id = 30030102"
 ```
 
@@ -215,7 +215,7 @@ The individual nodes and features are in the `rd_nodes` and `rd_features` tables
 
 The DMG Calc page is the mined `Damage_Bench.html`, split into files the site serves. The calculation is final, so updates should only bring new data (e.g. new pilots). To update it after a new extraction:
 
-1. Put the new mined files in `data/screenshots/mined/` (the script reads `Damage_Bench.html`).
+1. Put the new mined files in `data/screenshots/MRT_FieldWiki/` (the script reads `working/drafts/Damage_Bench.html`).
 2. Run `python3 data/dmgcalc/extract-bench.py`. It regenerates:
    - `dmgcalc/bench.css`: the bench's `<style>` block.
    - `dmgcalc/bench.js`: the bench's script, with its embedded `const D = {...}` replaced by `const D = window.BenchData;`.
