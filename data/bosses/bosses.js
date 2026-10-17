@@ -13009,7 +13009,97 @@ window.BossesData = {
                 "name": "Shield Weapon Essence VI",
                 "icon": "Icon_item_10601030"
               }
-            ]
+            ],
+            "accessories": {
+              "ta": [
+                {
+                  "id": 1073,
+                  "name": "Confront",
+                  "w": false,
+                  "icon": "Icon_skill_passive_3121",
+                  "weapons": 6
+                },
+                {
+                  "id": 1163,
+                  "name": "Spring",
+                  "w": false,
+                  "icon": "Icon_skill_passive_3128",
+                  "weapons": 6
+                },
+                {
+                  "id": 1243,
+                  "name": "Dogfight",
+                  "w": false,
+                  "icon": "Icon_skill_passive_5175",
+                  "weapons": 4
+                },
+                {
+                  "id": 1283,
+                  "name": "Excitement",
+                  "w": false,
+                  "icon": "Icon_skill_passive_5128",
+                  "weapons": 4
+                },
+                {
+                  "id": 1063,
+                  "name": "Defend",
+                  "w": false,
+                  "icon": "Icon_skill_passive_3101",
+                  "weapons": 2
+                },
+                {
+                  "id": 1203,
+                  "name": "Expanse",
+                  "w": false,
+                  "icon": "Icon_skill_passive_5237",
+                  "weapons": 2
+                }
+              ],
+              "ra": [
+                {
+                  "id": 2213,
+                  "name": "Blur",
+                  "w": false,
+                  "icon": "Icon_skill_passive_5021",
+                  "weapons": 6
+                },
+                {
+                  "id": 2083,
+                  "name": "Emergency",
+                  "w": false,
+                  "icon": "Icon_skill_passive_3116",
+                  "weapons": 6
+                },
+                {
+                  "id": 2273,
+                  "name": "Frustration",
+                  "w": false,
+                  "icon": "Icon_skill_passive_5220",
+                  "weapons": 6
+                },
+                {
+                  "id": 2243,
+                  "name": "Reconstruction",
+                  "w": false,
+                  "icon": "Icon_skill_passive_3130",
+                  "weapons": 6
+                },
+                {
+                  "id": 2223,
+                  "name": "Short Circuit",
+                  "w": false,
+                  "icon": "Icon_skill_passive_1165",
+                  "weapons": 6
+                },
+                {
+                  "id": 2043,
+                  "name": "Resistance",
+                  "w": false,
+                  "icon": "Icon_skill_passive_2106",
+                  "weapons": 2
+                }
+              ]
+            }
           }
         },
         {
@@ -13242,7 +13332,97 @@ window.BossesData = {
                 "name": "Shield Weapon Essence VI",
                 "icon": "Icon_item_10601030"
               }
-            ]
+            ],
+            "accessories": {
+              "ta": [
+                {
+                  "id": 1173,
+                  "name": "Code Lock",
+                  "w": false,
+                  "icon": "Icon_skill_passive_5168",
+                  "weapons": 6
+                },
+                {
+                  "id": 1183,
+                  "name": "Prevail",
+                  "w": false,
+                  "icon": "Icon_skill_passive_5222",
+                  "weapons": 6
+                },
+                {
+                  "id": 1213,
+                  "name": "Rush",
+                  "w": false,
+                  "icon": "Icon_skill_passive_5155",
+                  "weapons": 6
+                },
+                {
+                  "id": 1233,
+                  "name": "Synergy",
+                  "w": false,
+                  "icon": "Icon_skill_passive_5243",
+                  "weapons": 6
+                },
+                {
+                  "id": 1253,
+                  "name": "Assail",
+                  "w": false,
+                  "icon": "Icon_skill_passive_5217",
+                  "weapons": 2
+                },
+                {
+                  "id": 1263,
+                  "name": "Duel",
+                  "w": false,
+                  "icon": "Icon_skill_passive_1112",
+                  "weapons": 2
+                }
+              ],
+              "ra": [
+                {
+                  "id": 2253,
+                  "name": "Body Break",
+                  "w": false,
+                  "icon": "Icon_skill_passive_1162",
+                  "weapons": 6
+                },
+                {
+                  "id": 2263,
+                  "name": "Burst Apart",
+                  "w": false,
+                  "icon": "Icon_skill_passive_1157",
+                  "weapons": 6
+                },
+                {
+                  "id": 2193,
+                  "name": "Solidarity",
+                  "w": false,
+                  "icon": "Icon_skill_passive_5148",
+                  "weapons": 6
+                },
+                {
+                  "id": 2293,
+                  "name": "Transcendent",
+                  "w": false,
+                  "icon": "Icon_skill_passive_5189",
+                  "weapons": 6
+                },
+                {
+                  "id": 2233,
+                  "name": "Ballistics Block",
+                  "w": false,
+                  "icon": "Icon_skill_passive_5011",
+                  "weapons": 2
+                },
+                {
+                  "id": 2153,
+                  "name": "Maneuver",
+                  "w": false,
+                  "icon": "Icon_skill_passive_5168",
+                  "weapons": 2
+                }
+              ]
+            }
           }
         },
         {
@@ -13461,7 +13641,111 @@ window.BossesData = {
                 "name": "Shield Weapon Essence VI",
                 "icon": "Icon_item_10601030"
               }
-            ]
+            ],
+            "accessories": {
+              "ta": [
+                {
+                  "id": 1113,
+                  "name": "Accurate",
+                  "w": false,
+                  "icon": "Icon_skill_passive_4126",
+                  "weapons": 6
+                },
+                {
+                  "id": 1093,
+                  "name": "Tackle",
+                  "w": false,
+                  "icon": "Icon_skill_passive_3120",
+                  "weapons": 6
+                },
+                {
+                  "id": 3083,
+                  "name": "Crisis",
+                  "w": true,
+                  "icon": "Icon_skill_passive_5194",
+                  "weapons": 2
+                },
+                {
+                  "id": 3153,
+                  "name": "Equanimity",
+                  "w": true,
+                  "icon": "Icon_RnD_P_1003",
+                  "weapons": 2
+                },
+                {
+                  "id": 3183,
+                  "name": "Prevail",
+                  "w": true,
+                  "icon": "Icon_skill_passive_5222",
+                  "weapons": 2
+                },
+                {
+                  "id": 3163,
+                  "name": "Spring",
+                  "w": true,
+                  "icon": "Icon_skill_passive_3128",
+                  "weapons": 2
+                },
+                {
+                  "id": 3053,
+                  "name": "Collaborate",
+                  "w": true,
+                  "icon": "Icon_skill_passive_1110",
+                  "weapons": 1
+                }
+              ],
+              "ra": [
+                {
+                  "id": 2113,
+                  "name": "Energized",
+                  "w": false,
+                  "icon": "Icon_skill_passive_4111",
+                  "weapons": 6
+                },
+                {
+                  "id": 2093,
+                  "name": "Reorganized",
+                  "w": false,
+                  "icon": "Icon_skill_passive_5019",
+                  "weapons": 6
+                },
+                {
+                  "id": 4023,
+                  "name": "Broken Arm",
+                  "w": true,
+                  "icon": "Icon_skill_passive_1147",
+                  "weapons": 2
+                },
+                {
+                  "id": 4133,
+                  "name": "Command",
+                  "w": true,
+                  "icon": "Icon_skill_RnD_P_2001",
+                  "weapons": 2
+                },
+                {
+                  "id": 4033,
+                  "name": "Legs Fractured",
+                  "w": true,
+                  "icon": "Icon_skill_passive_1153",
+                  "weapons": 2
+                },
+                {
+                  "id": 4093,
+                  "name": "Reorganized",
+                  "w": true,
+                  "icon": "Icon_skill_passive_5019",
+                  "weapons": 2
+                },
+                {
+                  "id": 4013,
+                  "name": "Slamming",
+                  "w": true,
+                  "icon": "Icon_skill_passive_1005",
+                  "weapons": 2
+                }
+              ]
+            }
           }
         },
         {
@@ -13654,7 +13938,111 @@ window.BossesData = {
                 "name": "Shield Weapon Essence VI",
                 "icon": "Icon_item_10601030"
               }
-            ]
+            ],
+            "accessories": {
+              "ta": [
+                {
+                  "id": 1043,
+                  "name": "Combo",
+                  "w": false,
+                  "icon": "Icon_skill_passive_1012",
+                  "weapons": 5
+                },
+                {
+                  "id": 1273,
+                  "name": "Swift Strike",
+                  "w": false,
+                  "icon": "Icon_skill_passive_4136",
+                  "weapons": 5
+                },
+                {
+                  "id": 3113,
+                  "name": "Accurate",
+                  "w": true,
+                  "icon": "Icon_skill_passive_4126",
+                  "weapons": 2
+                },
+                {
+                  "id": 3043,
+                  "name": "Combo",
+                  "w": true,
+                  "icon": "Icon_skill_passive_1012",
+                  "weapons": 2
+                },
+                {
+                  "id": 3013,
+                  "name": "Invasion",
+                  "w": true,
+                  "icon": "Icon_skill_passive_1001",
+                  "weapons": 2
+                },
+                {
+                  "id": 3023,
+                  "name": "Retaliation",
+                  "w": true,
+                  "icon": "Icon_skill_passive_1144",
+                  "weapons": 2
+                },
+                {
+                  "id": 3033,
+                  "name": "Vigilant",
+                  "w": true,
+                  "icon": "Icon_skill_passive_1009",
+                  "weapons": 1
+                }
+              ],
+              "ra": [
+                {
+                  "id": 2283,
+                  "name": "Dominant",
+                  "w": false,
+                  "icon": "Icon_skill_passive_4123",
+                  "weapons": 5
+                },
+                {
+                  "id": 2073,
+                  "name": "Splash",
+                  "w": false,
+                  "icon": "Icon_skill_passive_1107",
+                  "weapons": 5
+                },
+                {
+                  "id": 4113,
+                  "name": "Energized",
+                  "w": true,
+                  "icon": "Icon_skill_passive_4111",
+                  "weapons": 2
+                },
+                {
+                  "id": 4103,
+                  "name": "High-Spirited",
+                  "w": true,
+                  "icon": "Icon_skill_passive_1101",
+                  "weapons": 2
+                },
+                {
+                  "id": 4163,
+                  "name": "Shudder",
+                  "w": true,
+                  "icon": "Icon_skill_passive_5187",
+                  "weapons": 2
+                },
+                {
+                  "id": 4073,
+                  "name": "Splash",
+                  "w": true,
+                  "icon": "Icon_skill_passive_1107",
+                  "weapons": 2
+                },
+                {
+                  "id": 4203,
+                  "name": "Thrive",
+                  "w": true,
+                  "icon": "Icon_skill_passive_5002",
+                  "weapons": 2
+                }
+              ]
+            }
           }
         }
       ],
@@ -13904,7 +14292,104 @@ window.BossesData = {
                 "name": "Shield Weapon Essence V",
                 "icon": "Icon_item_10601025"
               }
-            ]
+            ],
+            "accessories": {
+              "ta": [
+                {
+                  "id": 1173,
+                  "name": "Code Lock",
+                  "w": false,
+                  "icon": "Icon_skill_passive_5168",
+                  "weapons": 6
+                },
+                {
+                  "id": 1183,
+                  "name": "Prevail",
+                  "w": false,
+                  "icon": "Icon_skill_passive_5222",
+                  "weapons": 6
+                },
+                {
+                  "id": 1163,
+                  "name": "Spring",
+                  "w": false,
+                  "icon": "Icon_skill_passive_3128",
+                  "weapons": 6
+                },
+                {
+                  "id": 1023,
+                  "name": "Retaliation",
+                  "w": false,
+                  "icon": "Icon_skill_passive_1144",
+                  "weapons": 3
+                },
+                {
+                  "id": 3053,
+                  "name": "Collaborate",
+                  "w": true,
+                  "icon": "Icon_skill_passive_1110",
+                  "weapons": 2
+                },
+                {
+                  "id": 3103,
+                  "name": "Annihilate",
+                  "w": true,
+                  "icon": "Icon_skill_passive_5195",
+                  "weapons": 1
+                },
+                {
+                  "id": 3133,
+                  "name": "Break",
+                  "w": true,
+                  "icon": "Icon_skill_RnD_P_1001",
+                  "weapons": 1
+                }
+              ],
+              "ra": [
+                {
+                  "id": 2263,
+                  "name": "Burst Apart",
+                  "w": false,
+                  "icon": "Icon_skill_passive_1157",
+                  "weapons": 6
+                },
+                {
+                  "id": 2013,
+                  "name": "Slamming",
+                  "w": false,
+                  "icon": "Icon_skill_passive_1005",
+                  "weapons": 6
+                },
+                {
+                  "id": 2203,
+                  "name": "Thrive",
+                  "w": false,
+                  "icon": "Icon_skill_passive_5002",
+                  "weapons": 6
+                },
+                {
+                  "id": 2133,
+                  "name": "Command",
+                  "w": false,
+                  "icon": "Icon_skill_RnD_P_2001",
+                  "weapons": 3
+                },
+                {
+                  "id": 4023,
+                  "name": "Broken Arm",
+                  "w": true,
+                  "icon": "Icon_skill_passive_1147",
+                  "weapons": 2
+                },
+                {
+                  "id": 4133,
+                  "name": "Command",
+                  "w": true,
+                  "icon": "Icon_skill_RnD_P_2001",
+                  "weapons": 1
+                }
+              ]
+            }
           }
         },
         {
@@ -14095,7 +14580,104 @@ window.BossesData = {
                 "name": "Shield Weapon Essence V",
                 "icon": "Icon_item_10601025"
               }
-            ]
+            ],
+            "accessories": {
+              "ta": [
+                {
+                  "id": 1043,
+                  "name": "Combo",
+                  "w": false,
+                  "icon": "Icon_skill_passive_1012",
+                  "weapons": 5
+                },
+                {
+                  "id": 1243,
+                  "name": "Dogfight",
+                  "w": false,
+                  "icon": "Icon_skill_passive_5175",
+                  "weapons": 5
+                },
+                {
+                  "id": 1093,
+                  "name": "Tackle",
+                  "w": false,
+                  "icon": "Icon_skill_passive_3120",
+                  "weapons": 5
+                },
+                {
+                  "id": 3083,
+                  "name": "Crisis",
+                  "w": true,
+                  "icon": "Icon_skill_passive_5194",
+                  "weapons": 1
+                },
+                {
+                  "id": 3013,
+                  "name": "Invasion",
+                  "w": true,
+                  "icon": "Icon_skill_passive_1001",
+                  "weapons": 1
+                },
+                {
+                  "id": 3023,
+                  "name": "Retaliation",
+                  "w": true,
+                  "icon": "Icon_skill_passive_1144",
+                  "weapons": 1
+                }
+              ],
+              "ra": [
+                {
+                  "id": 2213,
+                  "name": "Blur",
+                  "w": false,
+                  "icon": "Icon_skill_passive_5021",
+                  "weapons": 5
+                },
+                {
+                  "id": 2253,
+                  "name": "Body Break",
+                  "w": false,
+                  "icon": "Icon_skill_passive_1162",
+                  "weapons": 5
+                },
+                {
+                  "id": 2153,
+                  "name": "Maneuver",
+                  "w": false,
+                  "icon": "Icon_skill_passive_5168",
+                  "weapons": 5
+                },
+                {
+                  "id": 2093,
+                  "name": "Reorganized",
+                  "w": false,
+                  "icon": "Icon_skill_passive_5019",
+                  "weapons": 5
+                },
+                {
+                  "id": 4113,
+                  "name": "Energized",
+                  "w": true,
+                  "icon": "Icon_skill_passive_4111",
+                  "weapons": 1
+                },
+                {
+                  "id": 4033,
+                  "name": "Legs Fractured",
+                  "w": true,
+                  "icon": "Icon_skill_passive_1153",
+                  "weapons": 1
+                },
+                {
+                  "id": 4013,
+                  "name": "Slamming",
+                  "w": true,
+                  "icon": "Icon_skill_passive_1005",
+                  "weapons": 1
+                }
+              ]
+            }
           }
         },
         {
@@ -14290,7 +14872,104 @@ window.BossesData = {
                 "name": "Shield Weapon Essence V",
                 "icon": "Icon_item_10601025"
               }
-            ]
+            ],
+            "accessories": {
+              "ta": [
+                {
+                  "id": 1083,
+                  "name": "Crisis",
+                  "w": false,
+                  "icon": "Icon_skill_passive_5194",
+                  "weapons": 6
+                },
+                {
+                  "id": 1213,
+                  "name": "Rush",
+                  "w": false,
+                  "icon": "Icon_skill_passive_5155",
+                  "weapons": 6
+                },
+                {
+                  "id": 1053,
+                  "name": "Collaborate",
+                  "w": false,
+                  "icon": "Icon_skill_passive_1110",
+                  "weapons": 5
+                },
+                {
+                  "id": 1253,
+                  "name": "Assail",
+                  "w": false,
+                  "icon": "Icon_skill_passive_5217",
+                  "weapons": 4
+                },
+                {
+                  "id": 1223,
+                  "name": "Obliterate",
+                  "w": false,
+                  "icon": "Icon_skill_passive_5236",
+                  "weapons": 4
+                },
+                {
+                  "id": 3113,
+                  "name": "Accurate",
+                  "w": true,
+                  "icon": "Icon_skill_passive_4126",
+                  "weapons": 1
+                },
+                {
+                  "id": 3153,
+                  "name": "Equanimity",
+                  "w": true,
+                  "icon": "Icon_RnD_P_1003",
+                  "weapons": 1
+                }
+              ],
+              "ra": [
+                {
+                  "id": 2113,
+                  "name": "Energized",
+                  "w": false,
+                  "icon": "Icon_skill_passive_4111",
+                  "weapons": 6
+                },
+                {
+                  "id": 2053,
+                  "name": "Piercing",
+                  "w": false,
+                  "icon": "Icon_skill_passive_5016",
+                  "weapons": 6
+                },
+                {
+                  "id": 2243,
+                  "name": "Reconstruction",
+                  "w": false,
+                  "icon": "Icon_skill_passive_3130",
+                  "weapons": 6
+                },
+                {
+                  "id": 2193,
+                  "name": "Solidarity",
+                  "w": false,
+                  "icon": "Icon_skill_passive_5148",
+                  "weapons": 6
+                },
+                {
+                  "id": 2233,
+                  "name": "Ballistics Block",
+                  "w": false,
+                  "icon": "Icon_skill_passive_5011",
+                  "weapons": 4
+                },
+                {
+                  "id": 4063,
+                  "name": "Explosive Charge",
+                  "w": true,
+                  "icon": "Icon_skill_passive_1006",
+                  "weapons": 1
+                }
+              ]
+            }
           }
         },
         {
@@ -14501,7 +15180,104 @@ window.BossesData = {
                 "name": "Shield Weapon Essence V",
                 "icon": "Icon_item_10601025"
               }
-            ]
+            ],
+            "accessories": {
+              "ta": [
+                {
+                  "id": 1113,
+                  "name": "Accurate",
+                  "w": false,
+                  "icon": "Icon_skill_passive_4126",
+                  "weapons": 5
+                },
+                {
+                  "id": 1233,
+                  "name": "Synergy",
+                  "w": false,
+                  "icon": "Icon_skill_passive_5243",
+                  "weapons": 5
+                },
+                {
+                  "id": 1063,
+                  "name": "Defend",
+                  "w": false,
+                  "icon": "Icon_skill_passive_3101",
+                  "weapons": 2
+                },
+                {
+                  "id": 1203,
+                  "name": "Expanse",
+                  "w": false,
+                  "icon": "Icon_skill_passive_5237",
+                  "weapons": 2
+                },
+                {
+                  "id": 3163,
+                  "name": "Spring",
+                  "w": true,
+                  "icon": "Icon_skill_passive_3128",
+                  "weapons": 2
+                },
+                {
+                  "id": 3043,
+                  "name": "Combo",
+                  "w": true,
+                  "icon": "Icon_skill_passive_1012",
+                  "weapons": 1
+                }
+              ],
+              "ra": [
+                {
+                  "id": 2223,
+                  "name": "Short Circuit",
+                  "w": false,
+                  "icon": "Icon_skill_passive_1165",
+                  "weapons": 6
+                },
+                {
+                  "id": 2073,
+                  "name": "Splash",
+                  "w": false,
+                  "icon": "Icon_skill_passive_1107",
+                  "weapons": 5
+                },
+                {
+                  "id": 2043,
+                  "name": "Resistance",
+                  "w": false,
+                  "icon": "Icon_skill_passive_2106",
+                  "weapons": 2
+                },
+                {
+                  "id": 4103,
+                  "name": "High-Spirited",
+                  "w": true,
+                  "icon": "Icon_skill_passive_1101",
+                  "weapons": 2
+                },
+                {
+                  "id": 4163,
+                  "name": "Shudder",
+                  "w": true,
+                  "icon": "Icon_skill_passive_5187",
+                  "weapons": 2
+                },
+                {
+                  "id": 4153,
+                  "name": "Maneuver",
+                  "w": true,
+                  "icon": "Icon_skill_passive_5168",
+                  "weapons": 1
+                },
+                {
+                  "id": 4073,
+                  "name": "Splash",
+                  "w": true,
+                  "icon": "Icon_skill_passive_1107",
+                  "weapons": 1
+                }
+              ]
+            }
           }
         }
       ],
@@ -14719,7 +15495,104 @@ window.BossesData = {
                 "name": "Shield Weapon Essence IV",
                 "icon": "Icon_item_10601020"
               }
-            ]
+            ],
+            "accessories": {
+              "ta": [
+                {
+                  "id": 1173,
+                  "name": "Code Lock",
+                  "w": false,
+                  "icon": "Icon_skill_passive_5168",
+                  "weapons": 6
+                },
+                {
+                  "id": 1153,
+                  "name": "Equanimity",
+                  "w": false,
+                  "icon": "Icon_RnD_P_1003",
+                  "weapons": 6
+                },
+                {
+                  "id": 1043,
+                  "name": "Combo",
+                  "w": false,
+                  "icon": "Icon_skill_passive_1012",
+                  "weapons": 4
+                },
+                {
+                  "id": 1223,
+                  "name": "Obliterate",
+                  "w": false,
+                  "icon": "Icon_skill_passive_5236",
+                  "weapons": 4
+                },
+                {
+                  "id": 1023,
+                  "name": "Retaliation",
+                  "w": false,
+                  "icon": "Icon_skill_passive_1144",
+                  "weapons": 4
+                },
+                {
+                  "id": 1063,
+                  "name": "Defend",
+                  "w": false,
+                  "icon": "Icon_skill_passive_3101",
+                  "weapons": 1
+                },
+                {
+                  "id": 3043,
+                  "name": "Combo",
+                  "w": true,
+                  "icon": "Icon_skill_passive_1012",
+                  "weapons": 1
+                }
+              ],
+              "ra": [
+                {
+                  "id": 2113,
+                  "name": "Energized",
+                  "w": false,
+                  "icon": "Icon_skill_passive_4111",
+                  "weapons": 6
+                },
+                {
+                  "id": 2013,
+                  "name": "Slamming",
+                  "w": false,
+                  "icon": "Icon_skill_passive_1005",
+                  "weapons": 6
+                },
+                {
+                  "id": 2183,
+                  "name": "Augmentation",
+                  "w": false,
+                  "icon": "Icon_skill_passive_5223",
+                  "weapons": 2
+                },
+                {
+                  "id": 2043,
+                  "name": "Resistance",
+                  "w": false,
+                  "icon": "Icon_skill_passive_2106",
+                  "weapons": 1
+                },
+                {
+                  "id": 4023,
+                  "name": "Broken Arm",
+                  "w": true,
+                  "icon": "Icon_skill_passive_1147",
+                  "weapons": 1
+                },
+                {
+                  "id": 4033,
+                  "name": "Legs Fractured",
+                  "w": true,
+                  "icon": "Icon_skill_passive_1153",
+                  "weapons": 1
+                }
+              ]
+            }
           }
         },
         {
@@ -14920,7 +15793,97 @@ window.BossesData = {
                 "name": "Shield Weapon Essence IV",
                 "icon": "Icon_item_10601020"
               }
-            ]
+            ],
+            "accessories": {
+              "ta": [
+                {
+                  "id": 1013,
+                  "name": "Invasion",
+                  "w": false,
+                  "icon": "Icon_skill_passive_1001",
+                  "weapons": 5
+                },
+                {
+                  "id": 1213,
+                  "name": "Rush",
+                  "w": false,
+                  "icon": "Icon_skill_passive_5155",
+                  "weapons": 5
+                },
+                {
+                  "id": 1113,
+                  "name": "Accurate",
+                  "w": false,
+                  "icon": "Icon_skill_passive_4126",
+                  "weapons": 3
+                },
+                {
+                  "id": 1193,
+                  "name": "Restrain",
+                  "w": false,
+                  "icon": "Icon_skill_passive_5150",
+                  "weapons": 3
+                },
+                {
+                  "id": 3083,
+                  "name": "Crisis",
+                  "w": true,
+                  "icon": "Icon_skill_passive_5194",
+                  "weapons": 1
+                },
+                {
+                  "id": 3143,
+                  "name": "Oppress",
+                  "w": true,
+                  "icon": "Icon_skill_RnD_P_1002",
+                  "weapons": 1
+                }
+              ],
+              "ra": [
+                {
+                  "id": 2213,
+                  "name": "Blur",
+                  "w": false,
+                  "icon": "Icon_skill_passive_5021",
+                  "weapons": 5
+                },
+                {
+                  "id": 2093,
+                  "name": "Reorganized",
+                  "w": false,
+                  "icon": "Icon_skill_passive_5019",
+                  "weapons": 5
+                },
+                {
+                  "id": 2133,
+                  "name": "Command",
+                  "w": false,
+                  "icon": "Icon_skill_RnD_P_2001",
+                  "weapons": 3
+                },
+                {
+                  "id": 2153,
+                  "name": "Maneuver",
+                  "w": false,
+                  "icon": "Icon_skill_passive_5168",
+                  "weapons": 3
+                },
+                {
+                  "id": 4063,
+                  "name": "Explosive Charge",
+                  "w": true,
+                  "icon": "Icon_skill_passive_1006",
+                  "weapons": 1
+                },
+                {
+                  "id": 4013,
+                  "name": "Slamming",
+                  "w": true,
+                  "icon": "Icon_skill_passive_1005",
+                  "weapons": 1
+                }
+              ]
+            }
           }
         },
         {
@@ -15125,7 +16088,104 @@ window.BossesData = {
                 "name": "Shield Weapon Essence IV",
                 "icon": "Icon_item_10601020"
               }
-            ]
+            ],
+            "accessories": {
+              "ta": [
+                {
+                  "id": 1083,
+                  "name": "Crisis",
+                  "w": false,
+                  "icon": "Icon_skill_passive_5194",
+                  "weapons": 6
+                },
+                {
+                  "id": 1163,
+                  "name": "Spring",
+                  "w": false,
+                  "icon": "Icon_skill_passive_3128",
+                  "weapons": 6
+                },
+                {
+                  "id": 3103,
+                  "name": "Annihilate",
+                  "w": true,
+                  "icon": "Icon_skill_passive_5195",
+                  "weapons": 1
+                },
+                {
+                  "id": 3053,
+                  "name": "Collaborate",
+                  "w": true,
+                  "icon": "Icon_skill_passive_1110",
+                  "weapons": 1
+                },
+                {
+                  "id": 3013,
+                  "name": "Invasion",
+                  "w": true,
+                  "icon": "Icon_skill_passive_1001",
+                  "weapons": 1
+                },
+                {
+                  "id": 3023,
+                  "name": "Retaliation",
+                  "w": true,
+                  "icon": "Icon_skill_passive_1144",
+                  "weapons": 1
+                }
+              ],
+              "ra": [
+                {
+                  "id": 2053,
+                  "name": "Piercing",
+                  "w": false,
+                  "icon": "Icon_skill_passive_5016",
+                  "weapons": 6
+                },
+                {
+                  "id": 2223,
+                  "name": "Short Circuit",
+                  "w": false,
+                  "icon": "Icon_skill_passive_1165",
+                  "weapons": 6
+                },
+                {
+                  "id": 2163,
+                  "name": "Shudder",
+                  "w": false,
+                  "icon": "Icon_skill_passive_5187",
+                  "weapons": 6
+                },
+                {
+                  "id": 2193,
+                  "name": "Solidarity",
+                  "w": false,
+                  "icon": "Icon_skill_passive_5148",
+                  "weapons": 6
+                },
+                {
+                  "id": 2073,
+                  "name": "Splash",
+                  "w": false,
+                  "icon": "Icon_skill_passive_1107",
+                  "weapons": 6
+                },
+                {
+                  "id": 4143,
+                  "name": "Augmented",
+                  "w": true,
+                  "icon": "Icon_skill_RnD_P_2002",
+                  "weapons": 1
+                },
+                {
+                  "id": 4123,
+                  "name": "Innervate",
+                  "w": true,
+                  "icon": "Icon_skill_passive_4002",
+                  "weapons": 1
+                }
+              ]
+            }
           }
         },
         {
@@ -15336,7 +16396,104 @@ window.BossesData = {
                 "name": "Shield Weapon Essence IV",
                 "icon": "Icon_item_10601020"
               }
-            ]
+            ],
+            "accessories": {
+              "ta": [
+                {
+                  "id": 1183,
+                  "name": "Prevail",
+                  "w": false,
+                  "icon": "Icon_skill_passive_5222",
+                  "weapons": 6
+                },
+                {
+                  "id": 1053,
+                  "name": "Collaborate",
+                  "w": false,
+                  "icon": "Icon_skill_passive_1110",
+                  "weapons": 4
+                },
+                {
+                  "id": 1093,
+                  "name": "Tackle",
+                  "w": false,
+                  "icon": "Icon_skill_passive_3120",
+                  "weapons": 4
+                },
+                {
+                  "id": 1203,
+                  "name": "Expanse",
+                  "w": false,
+                  "icon": "Icon_skill_passive_5237",
+                  "weapons": 3
+                },
+                {
+                  "id": 3073,
+                  "name": "Confront",
+                  "w": true,
+                  "icon": "Icon_skill_passive_3121",
+                  "weapons": 3
+                },
+                {
+                  "id": 3153,
+                  "name": "Equanimity",
+                  "w": true,
+                  "icon": "Icon_RnD_P_1003",
+                  "weapons": 3
+                },
+                {
+                  "id": 3163,
+                  "name": "Spring",
+                  "w": true,
+                  "icon": "Icon_skill_passive_3128",
+                  "weapons": 3
+                }
+              ],
+              "ra": [
+                {
+                  "id": 2033,
+                  "name": "Legs Fractured",
+                  "w": false,
+                  "icon": "Icon_skill_passive_1153",
+                  "weapons": 6
+                },
+                {
+                  "id": 2203,
+                  "name": "Thrive",
+                  "w": false,
+                  "icon": "Icon_skill_passive_5002",
+                  "weapons": 6
+                },
+                {
+                  "id": 2233,
+                  "name": "Ballistics Block",
+                  "w": false,
+                  "icon": "Icon_skill_passive_5011",
+                  "weapons": 4
+                },
+                {
+                  "id": 4103,
+                  "name": "High-Spirited",
+                  "w": true,
+                  "icon": "Icon_skill_passive_1101",
+                  "weapons": 3
+                },
+                {
+                  "id": 4163,
+                  "name": "Shudder",
+                  "w": true,
+                  "icon": "Icon_skill_passive_5187",
+                  "weapons": 3
+                },
+                {
+                  "id": 4133,
+                  "name": "Command",
+                  "w": true,
+                  "icon": "Icon_skill_RnD_P_2001",
+                  "weapons": 1
+                }
+              ]
+            }
           }
         }
       ],
@@ -15554,7 +16711,104 @@ window.BossesData = {
                 "name": "Shield Weapon Essence III",
                 "icon": "Icon_item_10601015"
               }
-            ]
+            ],
+            "accessories": {
+              "ta": [
+                {
+                  "id": 1083,
+                  "name": "Crisis",
+                  "w": false,
+                  "icon": "Icon_skill_passive_5194",
+                  "weapons": 6
+                },
+                {
+                  "id": 1163,
+                  "name": "Spring",
+                  "w": false,
+                  "icon": "Icon_skill_passive_3128",
+                  "weapons": 6
+                },
+                {
+                  "id": 1113,
+                  "name": "Accurate",
+                  "w": false,
+                  "icon": "Icon_skill_passive_4126",
+                  "weapons": 4
+                },
+                {
+                  "id": 1013,
+                  "name": "Invasion",
+                  "w": false,
+                  "icon": "Icon_skill_passive_1001",
+                  "weapons": 4
+                },
+                {
+                  "id": 1023,
+                  "name": "Retaliation",
+                  "w": false,
+                  "icon": "Icon_skill_passive_1144",
+                  "weapons": 4
+                },
+                {
+                  "id": 1093,
+                  "name": "Tackle",
+                  "w": false,
+                  "icon": "Icon_skill_passive_3120",
+                  "weapons": 4
+                },
+                {
+                  "id": 1033,
+                  "name": "Vigilant",
+                  "w": false,
+                  "icon": "Icon_skill_passive_1009",
+                  "weapons": 2
+                }
+              ],
+              "ra": [
+                {
+                  "id": 2023,
+                  "name": "Broken Arm",
+                  "w": false,
+                  "icon": "Icon_skill_passive_1147",
+                  "weapons": 6
+                },
+                {
+                  "id": 2103,
+                  "name": "High-Spirited",
+                  "w": false,
+                  "icon": "Icon_skill_passive_1101",
+                  "weapons": 6
+                },
+                {
+                  "id": 2053,
+                  "name": "Piercing",
+                  "w": false,
+                  "icon": "Icon_skill_passive_5016",
+                  "weapons": 6
+                },
+                {
+                  "id": 2093,
+                  "name": "Reorganized",
+                  "w": false,
+                  "icon": "Icon_skill_passive_5019",
+                  "weapons": 6
+                },
+                {
+                  "id": 2203,
+                  "name": "Thrive",
+                  "w": false,
+                  "icon": "Icon_skill_passive_5002",
+                  "weapons": 6
+                },
+                {
+                  "id": 2063,
+                  "name": "Explosive Charge",
+                  "w": false,
+                  "icon": "Icon_skill_passive_1006",
+                  "weapons": 2
+                }
+              ]
+            }
           }
         },
         {
@@ -15759,7 +17013,104 @@ window.BossesData = {
                 "name": "Shield Weapon Essence III",
                 "icon": "Icon_item_10601015"
               }
-            ]
+            ],
+            "accessories": {
+              "ta": [
+                {
+                  "id": 1173,
+                  "name": "Code Lock",
+                  "w": false,
+                  "icon": "Icon_skill_passive_5168",
+                  "weapons": 6
+                },
+                {
+                  "id": 1153,
+                  "name": "Equanimity",
+                  "w": false,
+                  "icon": "Icon_RnD_P_1003",
+                  "weapons": 6
+                },
+                {
+                  "id": 3073,
+                  "name": "Confront",
+                  "w": true,
+                  "icon": "Icon_skill_passive_3121",
+                  "weapons": 2
+                },
+                {
+                  "id": 3123,
+                  "name": "Discharge",
+                  "w": true,
+                  "icon": "Icon_skill_passive_1152",
+                  "weapons": 2
+                },
+                {
+                  "id": 3013,
+                  "name": "Invasion",
+                  "w": true,
+                  "icon": "Icon_skill_passive_1001",
+                  "weapons": 2
+                },
+                {
+                  "id": 1063,
+                  "name": "Defend",
+                  "w": false,
+                  "icon": "Icon_skill_passive_3101",
+                  "weapons": 1
+                },
+                {
+                  "id": 3023,
+                  "name": "Retaliation",
+                  "w": true,
+                  "icon": "Icon_skill_passive_1144",
+                  "weapons": 1
+                }
+              ],
+              "ra": [
+                {
+                  "id": 2163,
+                  "name": "Shudder",
+                  "w": false,
+                  "icon": "Icon_skill_passive_5187",
+                  "weapons": 6
+                },
+                {
+                  "id": 4063,
+                  "name": "Explosive Charge",
+                  "w": true,
+                  "icon": "Icon_skill_passive_1006",
+                  "weapons": 2
+                },
+                {
+                  "id": 4103,
+                  "name": "High-Spirited",
+                  "w": true,
+                  "icon": "Icon_skill_passive_1101",
+                  "weapons": 2
+                },
+                {
+                  "id": 4073,
+                  "name": "Splash",
+                  "w": true,
+                  "icon": "Icon_skill_passive_1107",
+                  "weapons": 2
+                },
+                {
+                  "id": 2043,
+                  "name": "Resistance",
+                  "w": false,
+                  "icon": "Icon_skill_passive_2106",
+                  "weapons": 1
+                },
+                {
+                  "id": 4133,
+                  "name": "Command",
+                  "w": true,
+                  "icon": "Icon_skill_RnD_P_2001",
+                  "weapons": 1
+                }
+              ]
+            }
           }
         },
         {
@@ -15968,7 +17319,111 @@ window.BossesData = {
                 "name": "Shield Weapon Essence III",
                 "icon": "Icon_item_10601015"
               }
-            ]
+            ],
+            "accessories": {
+              "ta": [
+                {
+                  "id": 1183,
+                  "name": "Prevail",
+                  "w": false,
+                  "icon": "Icon_skill_passive_5222",
+                  "weapons": 6
+                },
+                {
+                  "id": 1133,
+                  "name": "Break",
+                  "w": false,
+                  "icon": "Icon_skill_RnD_P_1001",
+                  "weapons": 5
+                },
+                {
+                  "id": 3053,
+                  "name": "Collaborate",
+                  "w": true,
+                  "icon": "Icon_skill_passive_1110",
+                  "weapons": 3
+                },
+                {
+                  "id": 3153,
+                  "name": "Equanimity",
+                  "w": true,
+                  "icon": "Icon_RnD_P_1003",
+                  "weapons": 3
+                },
+                {
+                  "id": 3143,
+                  "name": "Oppress",
+                  "w": true,
+                  "icon": "Icon_skill_RnD_P_1002",
+                  "weapons": 2
+                },
+                {
+                  "id": 3093,
+                  "name": "Tackle",
+                  "w": true,
+                  "icon": "Icon_skill_passive_3120",
+                  "weapons": 2
+                },
+                {
+                  "id": 1063,
+                  "name": "Defend",
+                  "w": false,
+                  "icon": "Icon_skill_passive_3101",
+                  "weapons": 1
+                }
+              ],
+              "ra": [
+                {
+                  "id": 2013,
+                  "name": "Slamming",
+                  "w": false,
+                  "icon": "Icon_skill_passive_1005",
+                  "weapons": 6
+                },
+                {
+                  "id": 2193,
+                  "name": "Solidarity",
+                  "w": false,
+                  "icon": "Icon_skill_passive_5148",
+                  "weapons": 6
+                },
+                {
+                  "id": 2153,
+                  "name": "Maneuver",
+                  "w": false,
+                  "icon": "Icon_skill_passive_5168",
+                  "weapons": 5
+                },
+                {
+                  "id": 2073,
+                  "name": "Splash",
+                  "w": false,
+                  "icon": "Icon_skill_passive_1107",
+                  "weapons": 4
+                },
+                {
+                  "id": 4023,
+                  "name": "Broken Arm",
+                  "w": true,
+                  "icon": "Icon_skill_passive_1147",
+                  "weapons": 3
+                },
+                {
+                  "id": 4053,
+                  "name": "Piercing",
+                  "w": true,
+                  "icon": "Icon_skill_passive_5016",
+                  "weapons": 3
+                },
+                {
+                  "id": 4013,
+                  "name": "Slamming",
+                  "w": true,
+                  "icon": "Icon_skill_passive_1005",
+                  "weapons": 3
+                }
+              ]
+            }
           }
         },
         {
@@ -16151,7 +17606,104 @@ window.BossesData = {
                 "name": "Shield Weapon Essence III",
                 "icon": "Icon_item_10601015"
               }
-            ]
+            ],
+            "accessories": {
+              "ta": [
+                {
+                  "id": 1103,
+                  "name": "Annihilate",
+                  "w": false,
+                  "icon": "Icon_skill_passive_5195",
+                  "weapons": 5
+                },
+                {
+                  "id": 1043,
+                  "name": "Combo",
+                  "w": false,
+                  "icon": "Icon_skill_passive_1012",
+                  "weapons": 5
+                },
+                {
+                  "id": 1193,
+                  "name": "Restrain",
+                  "w": false,
+                  "icon": "Icon_skill_passive_5150",
+                  "weapons": 5
+                },
+                {
+                  "id": 1053,
+                  "name": "Collaborate",
+                  "w": false,
+                  "icon": "Icon_skill_passive_1110",
+                  "weapons": 4
+                },
+                {
+                  "id": 3043,
+                  "name": "Combo",
+                  "w": true,
+                  "icon": "Icon_skill_passive_1012",
+                  "weapons": 1
+                },
+                {
+                  "id": 3083,
+                  "name": "Crisis",
+                  "w": true,
+                  "icon": "Icon_skill_passive_5194",
+                  "weapons": 1
+                }
+              ],
+              "ra": [
+                {
+                  "id": 2133,
+                  "name": "Command",
+                  "w": false,
+                  "icon": "Icon_skill_RnD_P_2001",
+                  "weapons": 5
+                },
+                {
+                  "id": 2113,
+                  "name": "Energized",
+                  "w": false,
+                  "icon": "Icon_skill_passive_4111",
+                  "weapons": 5
+                },
+                {
+                  "id": 2033,
+                  "name": "Legs Fractured",
+                  "w": false,
+                  "icon": "Icon_skill_passive_1153",
+                  "weapons": 5
+                },
+                {
+                  "id": 2183,
+                  "name": "Augmentation",
+                  "w": false,
+                  "icon": "Icon_skill_passive_5223",
+                  "weapons": 4
+                },
+                {
+                  "id": 4143,
+                  "name": "Augmented",
+                  "w": true,
+                  "icon": "Icon_skill_RnD_P_2002",
+                  "weapons": 1
+                },
+                {
+                  "id": 4083,
+                  "name": "Emergency",
+                  "w": true,
+                  "icon": "Icon_skill_passive_3116",
+                  "weapons": 1
+                },
+                {
+                  "id": 4123,
+                  "name": "Innervate",
+                  "w": true,
+                  "icon": "Icon_skill_passive_4002",
+                  "weapons": 1
+                }
+              ]
+            }
           }
         }
       ],
@@ -16363,7 +17915,83 @@ window.BossesData = {
                 "name": "Shield Weapon Essence II",
                 "icon": "Icon_item_10601010"
               }
-            ]
+            ],
+            "accessories": {
+              "ta": [
+                {
+                  "id": 1043,
+                  "name": "Combo",
+                  "w": false,
+                  "icon": "Icon_skill_passive_1012",
+                  "weapons": 6
+                },
+                {
+                  "id": 1033,
+                  "name": "Vigilant",
+                  "w": false,
+                  "icon": "Icon_skill_passive_1009",
+                  "weapons": 3
+                },
+                {
+                  "id": 3043,
+                  "name": "Combo",
+                  "w": true,
+                  "icon": "Icon_skill_passive_1012",
+                  "weapons": 2
+                },
+                {
+                  "id": 3123,
+                  "name": "Discharge",
+                  "w": true,
+                  "icon": "Icon_skill_passive_1152",
+                  "weapons": 2
+                },
+                {
+                  "id": 3143,
+                  "name": "Oppress",
+                  "w": true,
+                  "icon": "Icon_skill_RnD_P_1002",
+                  "weapons": 2
+                }
+              ],
+              "ra": [
+                {
+                  "id": 2063,
+                  "name": "Explosive Charge",
+                  "w": false,
+                  "icon": "Icon_skill_passive_1006",
+                  "weapons": 5
+                },
+                {
+                  "id": 2073,
+                  "name": "Splash",
+                  "w": false,
+                  "icon": "Icon_skill_passive_1107",
+                  "weapons": 5
+                },
+                {
+                  "id": 4143,
+                  "name": "Augmented",
+                  "w": true,
+                  "icon": "Icon_skill_RnD_P_2002",
+                  "weapons": 2
+                },
+                {
+                  "id": 4023,
+                  "name": "Broken Arm",
+                  "w": true,
+                  "icon": "Icon_skill_passive_1147",
+                  "weapons": 2
+                },
+                {
+                  "id": 4063,
+                  "name": "Explosive Charge",
+                  "w": true,
+                  "icon": "Icon_skill_passive_1006",
+                  "weapons": 1
+                }
+              ]
+            }
           }
         },
         {
@@ -16578,7 +18206,90 @@ window.BossesData = {
                 "name": "Shield Weapon Essence II",
                 "icon": "Icon_item_10601010"
               }
-            ]
+            ],
+            "accessories": {
+              "ta": [
+                {
+                  "id": 1073,
+                  "name": "Confront",
+                  "w": false,
+                  "icon": "Icon_skill_passive_3121",
+                  "weapons": 5
+                },
+                {
+                  "id": 1123,
+                  "name": "Discharge",
+                  "w": false,
+                  "icon": "Icon_skill_passive_1152",
+                  "weapons": 5
+                },
+                {
+                  "id": 1153,
+                  "name": "Equanimity",
+                  "w": false,
+                  "icon": "Icon_RnD_P_1003",
+                  "weapons": 5
+                },
+                {
+                  "id": 1133,
+                  "name": "Break",
+                  "w": false,
+                  "icon": "Icon_skill_RnD_P_1001",
+                  "weapons": 3
+                },
+                {
+                  "id": 1093,
+                  "name": "Tackle",
+                  "w": false,
+                  "icon": "Icon_skill_passive_3120",
+                  "weapons": 3
+                },
+                {
+                  "id": 1063,
+                  "name": "Defend",
+                  "w": false,
+                  "icon": "Icon_skill_passive_3101",
+                  "weapons": 1
+                }
+              ],
+              "ra": [
+                {
+                  "id": 2123,
+                  "name": "Innervate",
+                  "w": false,
+                  "icon": "Icon_skill_passive_4002",
+                  "weapons": 5
+                },
+                {
+                  "id": 2033,
+                  "name": "Legs Fractured",
+                  "w": false,
+                  "icon": "Icon_skill_passive_1153",
+                  "weapons": 5
+                },
+                {
+                  "id": 2093,
+                  "name": "Reorganized",
+                  "w": false,
+                  "icon": "Icon_skill_passive_5019",
+                  "weapons": 5
+                },
+                {
+                  "id": 2163,
+                  "name": "Shudder",
+                  "w": false,
+                  "icon": "Icon_skill_passive_5187",
+                  "weapons": 5
+                },
+                {
+                  "id": 2043,
+                  "name": "Resistance",
+                  "w": false,
+                  "icon": "Icon_skill_passive_2106",
+                  "weapons": 1
+                }
+              ]
+            }
           }
         },
         {
@@ -16801,7 +18512,83 @@ window.BossesData = {
                 "name": "Shield Weapon Essence II",
                 "icon": "Icon_item_10601010"
               }
-            ]
+            ],
+            "accessories": {
+              "ta": [
+                {
+                  "id": 1083,
+                  "name": "Crisis",
+                  "w": false,
+                  "icon": "Icon_skill_passive_5194",
+                  "weapons": 6
+                },
+                {
+                  "id": 1163,
+                  "name": "Spring",
+                  "w": false,
+                  "icon": "Icon_skill_passive_3128",
+                  "weapons": 6
+                },
+                {
+                  "id": 1013,
+                  "name": "Invasion",
+                  "w": false,
+                  "icon": "Icon_skill_passive_1001",
+                  "weapons": 4
+                },
+                {
+                  "id": 1113,
+                  "name": "Accurate",
+                  "w": false,
+                  "icon": "Icon_skill_passive_4126",
+                  "weapons": 3
+                },
+                {
+                  "id": 3013,
+                  "name": "Invasion",
+                  "w": true,
+                  "icon": "Icon_skill_passive_1001",
+                  "weapons": 2
+                }
+              ],
+              "ra": [
+                {
+                  "id": 2143,
+                  "name": "Augmented",
+                  "w": false,
+                  "icon": "Icon_skill_RnD_P_2002",
+                  "weapons": 6
+                },
+                {
+                  "id": 2083,
+                  "name": "Emergency",
+                  "w": false,
+                  "icon": "Icon_skill_passive_3116",
+                  "weapons": 6
+                },
+                {
+                  "id": 2113,
+                  "name": "Energized",
+                  "w": false,
+                  "icon": "Icon_skill_passive_4111",
+                  "weapons": 6
+                },
+                {
+                  "id": 2013,
+                  "name": "Slamming",
+                  "w": false,
+                  "icon": "Icon_skill_passive_1005",
+                  "weapons": 6
+                },
+                {
+                  "id": 4103,
+                  "name": "High-Spirited",
+                  "w": true,
+                  "icon": "Icon_skill_passive_1101",
+                  "weapons": 2
+                }
+              ]
+            }
           }
         },
         {
@@ -17000,7 +18787,90 @@ window.BossesData = {
                 "name": "Shield Weapon Essence II",
                 "icon": "Icon_item_10601010"
               }
-            ]
+            ],
+            "accessories": {
+              "ta": [
+                {
+                  "id": 1053,
+                  "name": "Collaborate",
+                  "w": false,
+                  "icon": "Icon_skill_passive_1110",
+                  "weapons": 6
+                },
+                {
+                  "id": 1103,
+                  "name": "Annihilate",
+                  "w": false,
+                  "icon": "Icon_skill_passive_5195",
+                  "weapons": 5
+                },
+                {
+                  "id": 1143,
+                  "name": "Oppress",
+                  "w": false,
+                  "icon": "Icon_skill_RnD_P_1002",
+                  "weapons": 5
+                },
+                {
+                  "id": 1023,
+                  "name": "Retaliation",
+                  "w": false,
+                  "icon": "Icon_skill_passive_1144",
+                  "weapons": 5
+                },
+                {
+                  "id": 3073,
+                  "name": "Confront",
+                  "w": true,
+                  "icon": "Icon_skill_passive_3121",
+                  "weapons": 1
+                }
+              ],
+              "ra": [
+                {
+                  "id": 2023,
+                  "name": "Broken Arm",
+                  "w": false,
+                  "icon": "Icon_skill_passive_1147",
+                  "weapons": 6
+                },
+                {
+                  "id": 2103,
+                  "name": "High-Spirited",
+                  "w": false,
+                  "icon": "Icon_skill_passive_1101",
+                  "weapons": 6
+                },
+                {
+                  "id": 2053,
+                  "name": "Piercing",
+                  "w": false,
+                  "icon": "Icon_skill_passive_5016",
+                  "weapons": 6
+                },
+                {
+                  "id": 2133,
+                  "name": "Command",
+                  "w": false,
+                  "icon": "Icon_skill_RnD_P_2001",
+                  "weapons": 5
+                },
+                {
+                  "id": 2153,
+                  "name": "Maneuver",
+                  "w": false,
+                  "icon": "Icon_skill_passive_5168",
+                  "weapons": 5
+                },
+                {
+                  "id": 4053,
+                  "name": "Piercing",
+                  "w": true,
+                  "icon": "Icon_skill_passive_5016",
+                  "weapons": 1
+                }
+              ]
+            }
           }
         }
       ],
@@ -17203,7 +19073,69 @@ window.BossesData = {
                 "name": "Shield Weapon Essence I",
                 "icon": "Icon_item_10601005"
               }
-            ]
+            ],
+            "accessories": {
+              "ta": [
+                {
+                  "id": 1133,
+                  "name": "Break",
+                  "w": false,
+                  "icon": "Icon_skill_RnD_P_1001",
+                  "weapons": 6
+                },
+                {
+                  "id": 1083,
+                  "name": "Crisis",
+                  "w": false,
+                  "icon": "Icon_skill_passive_5194",
+                  "weapons": 6
+                },
+                {
+                  "id": 1123,
+                  "name": "Discharge",
+                  "w": false,
+                  "icon": "Icon_skill_passive_1152",
+                  "weapons": 6
+                },
+                {
+                  "id": 1053,
+                  "name": "Collaborate",
+                  "w": false,
+                  "icon": "Icon_skill_passive_1110",
+                  "weapons": 4
+                },
+                {
+                  "id": 1013,
+                  "name": "Invasion",
+                  "w": false,
+                  "icon": "Icon_skill_passive_1001",
+                  "weapons": 3
+                }
+              ],
+              "ra": [
+                {
+                  "id": 2113,
+                  "name": "Energized",
+                  "w": false,
+                  "icon": "Icon_skill_passive_4111",
+                  "weapons": 6
+                },
+                {
+                  "id": 2033,
+                  "name": "Legs Fractured",
+                  "w": false,
+                  "icon": "Icon_skill_passive_1153",
+                  "weapons": 6
+                },
+                {
+                  "id": 2093,
+                  "name": "Reorganized",
+                  "w": false,
+                  "icon": "Icon_skill_passive_5019",
+                  "weapons": 6
+                }
+              ]
+            }
           }
         },
         {
@@ -17404,7 +19336,62 @@ window.BossesData = {
                 "name": "Shield Weapon Essence I",
                 "icon": "Icon_item_10601005"
               }
-            ]
+            ],
+            "accessories": {
+              "ta": [
+                {
+                  "id": 1113,
+                  "name": "Accurate",
+                  "w": false,
+                  "icon": "Icon_skill_passive_4126",
+                  "weapons": 4
+                },
+                {
+                  "id": 1023,
+                  "name": "Retaliation",
+                  "w": false,
+                  "icon": "Icon_skill_passive_1144",
+                  "weapons": 4
+                },
+                {
+                  "id": 1033,
+                  "name": "Vigilant",
+                  "w": false,
+                  "icon": "Icon_skill_passive_1009",
+                  "weapons": 1
+                }
+              ],
+              "ra": [
+                {
+                  "id": 2143,
+                  "name": "Augmented",
+                  "w": false,
+                  "icon": "Icon_skill_RnD_P_2002",
+                  "weapons": 6
+                },
+                {
+                  "id": 2053,
+                  "name": "Piercing",
+                  "w": false,
+                  "icon": "Icon_skill_passive_5016",
+                  "weapons": 6
+                },
+                {
+                  "id": 2093,
+                  "name": "Reorganized",
+                  "w": false,
+                  "icon": "Icon_skill_passive_5019",
+                  "weapons": 6
+                },
+                {
+                  "id": 2013,
+                  "name": "Slamming",
+                  "w": false,
+                  "icon": "Icon_skill_passive_1005",
+                  "weapons": 6
+                }
+              ]
+            }
           }
         },
         {
@@ -17645,7 +19632,69 @@ window.BossesData = {
                 "name": "Shield Weapon Essence I",
                 "icon": "Icon_item_10601005"
               }
-            ]
+            ],
+            "accessories": {
+              "ta": [
+                {
+                  "id": 1083,
+                  "name": "Crisis",
+                  "w": false,
+                  "icon": "Icon_skill_passive_5194",
+                  "weapons": 6
+                },
+                {
+                  "id": 1103,
+                  "name": "Annihilate",
+                  "w": false,
+                  "icon": "Icon_skill_passive_5195",
+                  "weapons": 3
+                },
+                {
+                  "id": 1013,
+                  "name": "Invasion",
+                  "w": false,
+                  "icon": "Icon_skill_passive_1001",
+                  "weapons": 3
+                },
+                {
+                  "id": 1143,
+                  "name": "Oppress",
+                  "w": false,
+                  "icon": "Icon_skill_RnD_P_1002",
+                  "weapons": 3
+                }
+              ],
+              "ra": [
+                {
+                  "id": 2113,
+                  "name": "Energized",
+                  "w": false,
+                  "icon": "Icon_skill_passive_4111",
+                  "weapons": 6
+                },
+                {
+                  "id": 2013,
+                  "name": "Slamming",
+                  "w": false,
+                  "icon": "Icon_skill_passive_1005",
+                  "weapons": 6
+                },
+                {
+                  "id": 2063,
+                  "name": "Explosive Charge",
+                  "w": false,
+                  "icon": "Icon_skill_passive_1006",
+                  "weapons": 3
+                },
+                {
+                  "id": 2073,
+                  "name": "Splash",
+                  "w": false,
+                  "icon": "Icon_skill_passive_1107",
+                  "weapons": 3
+                }
+              ]
+            }
           }
         },
         {
@@ -17836,7 +19885,55 @@ window.BossesData = {
                 "name": "Shield Weapon Essence I",
                 "icon": "Icon_item_10601005"
               }
-            ]
+            ],
+            "accessories": {
+              "ta": [
+                {
+                  "id": 1023,
+                  "name": "Retaliation",
+                  "w": false,
+                  "icon": "Icon_skill_passive_1144",
+                  "weapons": 4
+                },
+                {
+                  "id": 1053,
+                  "name": "Collaborate",
+                  "w": false,
+                  "icon": "Icon_skill_passive_1110",
+                  "weapons": 3
+                },
+                {
+                  "id": 1033,
+                  "name": "Vigilant",
+                  "w": false,
+                  "icon": "Icon_skill_passive_1009",
+                  "weapons": 1
+                }
+              ],
+              "ra": [
+                {
+                  "id": 2023,
+                  "name": "Broken Arm",
+                  "w": false,
+                  "icon": "Icon_skill_passive_1147",
+                  "weapons": 5
+                },
+                {
+                  "id": 2133,
+                  "name": "Command",
+                  "w": false,
+                  "icon": "Icon_skill_RnD_P_2001",
+                  "weapons": 4
+                },
+                {
+                  "id": 2073,
+                  "name": "Splash",
+                  "w": false,
+                  "icon": "Icon_skill_passive_1107",
+                  "weapons": 2
+                }
+              ]
+            }
           }
         }
       ],

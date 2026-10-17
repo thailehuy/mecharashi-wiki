@@ -260,12 +260,36 @@ function bossKit() {
     return '<span class="boss-gear-item">' + img + '<span>' + esc(it.name) + '</span></span>';
   }
 
+  // An SSR accessory the boss's weapons can roll, drawn like the accessories
+  // listing (its TA/RA plate behind the skill icon), with how many of the
+  // weapons carry it.
+  function dropAccHtml(a, kind) {
+    var state = (kind === 'ta' ? 'Condition' : 'Function') + (a.w ? '_W' : '');
+    var tilt = a.w ? (kind === 'ta' ? ' acc-skill-icon--trigger-w' : ' acc-skill-icon--reaction-w') : '';
+    return (
+      '<span class="boss-gear-item boss-drop-acc" title="On ' + a.weapons + ' weapon' + (a.weapons === 1 ? '' : 's') + '">' +
+        '<span class="acc-card-icon">' +
+          '<img class="acc-statetype-icon" src="' + ACC_ICON_BASE + 'statetype_' + state + '.png" alt="" loading="lazy" />' +
+          '<img class="acc-skill-icon' + tilt + '" src="' + ACC_SKILL_BASE + encodeURIComponent(a.icon) + '.png" alt="" loading="lazy" />' +
+        '</span>' +
+        '<span>' + esc(a.name) + (a.w ? '<small class="boss-drop-q">W</small>' : '') +
+          '<small class="boss-drop-acc-n">×' + a.weapons + '</small></span>' +
+      '</span>'
+    );
+  }
+
   // One set of drops: weapons (best quality first; linked when the wiki has a
-  // page for them, icons falling back to the game's CDN), then the other items
-  // it can drop, the ones every clear gives, and the first clear's.
+  // page for them, icons falling back to the game's CDN), the accessories they
+  // can roll, then the other items it can drop, the ones every clear gives,
+  // and the first clear's.
   function dropListHtml(d) {
     var line = function (label, items) {
       return items ? '<div class="boss-drop-list"><span class="boss-gear-label">' + label + '</span>' + items.map(dropItemHtml).join('') + '</div>' : '';
+    };
+    var accs = d.accessories || {};
+    var accLine = function (kind, label) {
+      return accs[kind] ? '<div class="boss-drop-list"><span class="boss-gear-label">' + label + '</span>' +
+        accs[kind].map(function (a) { return dropAccHtml(a, kind); }).join('') + '</div>' : '';
     };
     return (
       (d.weapons && d.weapons.length ? '<div class="boss-drop-list">' + d.weapons.map(function (w) {
@@ -277,6 +301,8 @@ function bossKit() {
           ? '<a class="boss-gear-item" href="' + App.href('weapons', w.name) + '">' + inner + '</a>'
           : '<span class="boss-gear-item">' + inner + '</span>';
       }).join('') + '</div>' : '') +
+      accLine('ta', 'SSR TA') +
+      accLine('ra', 'SSR RA') +
       line(d.weapons && d.weapons.length ? 'Also drops' : 'Drops', d.items) +
       line('Every clear', d.always) +
       line('First clear', d.first)
@@ -285,8 +311,10 @@ function bossKit() {
 
   function dropCount(d) {
     var w = (d.weapons || []).length, n = (d.items || []).length;
-    var count = function (k, word) { return k && k + ' ' + word + (k === 1 ? '' : 's'); };
-    return [count(w, 'weapon'), count(n, 'item'), d.first && 'first-clear reward'].filter(Boolean).join(' + ') || 'none';
+    var a = d.accessories ? (d.accessories.ta || []).length + (d.accessories.ra || []).length : 0;
+    var count = function (k, word, plural) { return k && k + ' ' + (k === 1 ? word : plural || word + 's'); };
+    return [count(w, 'weapon'), count(a, 'SSR accessory', 'SSR accessories'), count(n, 'item'),
+            d.first && 'first-clear reward'].filter(Boolean).join(' + ') || 'none';
   }
 
   // What a boss can drop (the game lists them, not their odds). Armed Conquest

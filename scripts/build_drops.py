@@ -19,6 +19,15 @@ Boss names come from the mined DB's `bosses` table (boss_id); weapon names and
 qualities from its `weapons` table, weapon type codes and icons from
 ConfigDataWeaponInfo. The game files hold which items a boss can drop, not the
 odds of each: those are server-side.
+
+Accessories don't drop on their own: a dropped weapon comes with them. Each
+EX weapon has an ID per chapter, and the game shows what that weapon can carry
+in its "Accessory Collection" (ConfigDataWeaponEntryDropInfo.DropEntry4ClientShow
+-> a ConfigDataNormalItemInfo whose description tags each accessory's
+ConfigDataWeaponEntryInfo ID). The same row's TA/RA drop pools aren't used: they
+are empty for CO14-15, and where they differ from the shown list (CO16 Bertha's
+weapons, for one) the game shows the list. A Clearance Ops boss's accessories
+are the SSR ones its weapons list, each with how many of its weapons carry it.
 """
 import json
 import os
@@ -36,6 +45,11 @@ RAID_LEVELS = [('Normal', 'LevelList'), ('Hard', 'HardLevelList'), ('Extreme', '
 # "Castilla Annihilation Voucher": most have no icon in the tables (the game
 # draws the boss), so they take the boss's portrait.
 VOUCHER = re.compile(r'^(.*) Annihilation Voucher\.?$')
+# "TA - Invasion", "TA W - Combo", "RA-W - Splash": the accessory's name after it.
+ACC_PREFIX = re.compile(r'^[TR]A[ -]?W? - ')
+# An accessory in an Accessory Collection's text: <ItemTip Type=20 ID=1173>[TA - Code Lock]</ItemTip>.
+ACC_TIP = re.compile(r'<ItemTip Type=20 ID=(\d+)>')
+ACC_KINDS = [('ta', 'WeaponEntryType_Condition'), ('ra', 'WeaponEntryType_Function')]
 
 
 class Drops:
@@ -59,6 +73,18 @@ class Drops:
                 'SELECT ID, NameStrKey_EN, IconPath FROM ConfigDataWapPaintingMarkingInfo')},
         }
         self.boss_names = dict(self.db.execute('SELECT boss_id, boss_pilot FROM bosses'))
+        # Weapon ID -> the accessory IDs its "Accessory Collection" lists.
+        shows = {i: d for i, d in self.stats.execute(
+            "SELECT ID, ColorDescStrKey_EN FROM ConfigDataNormalItemInfo WHERE NormalItemType = 'NormalItemType_OnlyForView'")}
+        self.acc_lists = {wid: [int(a) for a in ACC_TIP.findall(shows.get(show) or '')] for wid, show in self.stats.execute(
+            'SELECT ID, DropEntry4ClientShow FROM ConfigDataWeaponEntryDropInfo')}
+        # SSR accessory ID -> {id, name, w (two-handed only), icon}, and its kind.
+        self.accs = {}
+        for aid, kind, name, icon, plate in self.stats.execute(
+                'SELECT ID, Type, NameStrKey_EN, Icon, IconBaseplateType FROM ConfigDataWeaponEntryInfo '
+                "WHERE Rarity = 'RarityType_SSR'"):
+            self.accs[aid] = (kind, {'id': aid, 'name': ACC_PREFIX.sub('', name), 'w': 'Special' in (plate or ''),
+                                     'icon': icon})
 
     def lists(self, drop_id):
         """Drop ID -> (possible items, guaranteed items), each a list of the game's {type, configId, ...}."""
@@ -82,6 +108,26 @@ class Drops:
             out['boss'] = voucher.group(1)
         elif icon:
             out['icon'] = icon
+        return out
+
+    def accessories(self, weapons, where):
+        """Weapons ({id, quality, ...}) -> {ta, ra}: the SSR accessories they
+        can carry, each as {id, name, w, icon, weapons (how many of them carry
+        it)}, most carried first; empty when none can."""
+        counts = {}
+        for w in weapons:
+            # Only the chapters' EX weapons come with accessories (have a row).
+            aids = self.acc_lists.get(w['id'])
+            if aids == [] and w['quality'] == 'SSR':
+                self.warn('%s: %s (%d) lists no accessories' % (where, w['name'], w['id']))
+            for aid in set(aids or ()):
+                if aid in self.accs:
+                    counts[aid] = counts.get(aid, 0) + 1
+        out = {}
+        for key, kind in ACC_KINDS:
+            accs = [dict(self.accs[aid][1], weapons=n) for aid, n in counts.items() if self.accs[aid][0] == kind]
+            if accs:
+                out[key] = sorted(accs, key=lambda a: (-a['weapons'], a['w'], a['name']))
         return out
 
     def weapon(self, wid):
@@ -134,6 +180,9 @@ def chapter_drops(warn=print):
                 warn('%s: boss not in the mined DB' % where)
             drops = d.resolve(b['NormalReward'], where)
             drops.setdefault('weapons', [])
+            accs = d.accessories(drops['weapons'], where)
+            if accs:
+                drops['accessories'] = accs
             chapter['bosses'].append(dict(boss_id=boss_id, boss=d.boss_names.get(boss_id), **drops))
     return out
 
@@ -179,6 +228,9 @@ def main():
         for b in ch['bosses']:
             extra = ' + ' + ', '.join(it['name'] for it in b['items']) if b.get('items') else ''
             print('  %s: %d weapons%s' % (b['boss'], len(b['weapons']), extra))
+            for key, accs in b.get('accessories', {}).items():
+                print('    %s: %s' % (key.upper(), ', '.join('%s%s ×%d' % (a['name'], ' W' if a['w'] else '', a['weapons'])
+                                                            for a in accs)))
     for (season, slot), diffs in sorted(season_drops(warnings.append).items()):
         for diff, s in diffs.items():
             dr = s['drops']

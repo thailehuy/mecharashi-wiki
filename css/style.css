@@ -3667,6 +3667,10 @@ a.boss-avatar { display: block; }
 .boss-drop-q-ssr { color: #ffcf5c; }
 .boss-drop-q-sr { color: #c084fc; }
 .boss-drop-q-r { color: #60a5fa; }
+.boss-drop-list .boss-drop-acc .acc-card-icon { width: 36px; height: 36px; }
+.boss-drop-list .boss-drop-acc .acc-card-icon img { width: 100%; height: 100%; }
+.boss-drop-list .boss-drop-acc .acc-card-icon .acc-skill-icon { width: 65%; height: 65%; }
+.boss-drop-acc-n { margin-left: 0.35rem; font-size: 0.75rem; font-weight: 700; color: #cbd5e1; }
 .boss-bounty-reward { display: block; font-size: 0.8rem; color: #ffcf5c; }
 .boss-bounty-reward::before { content: 'Reward: '; color: #8a8aa0; }
 
