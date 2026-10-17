@@ -333,8 +333,21 @@ function bossKit() {
     return '<details class="boss-clues boss-drops"><summary>Drops: ' + count + '</summary>' + body + '</details>';
   }
 
+  // A Clearance Ops boss's skills and drops as two tabs, so a long skill list
+  // and a long drop list don't stack up.
+  function tabsHtml(st) {
+    var tab = function (key, label, active) {
+      return '<button type="button" class="filter-btn filter-occ' + (active ? ' active' : '') + '" data-boss-tab="' + key + '">' + label + '</button>';
+    };
+    return (
+      '<div class="boss-tabs">' + tab('skills', 'Skills', true) + tab('drops', 'Drops: ' + dropCount(st.drops)) + '</div>' +
+      '<div data-boss-pane="skills">' + stageDetails(st) + '</div>' +
+      '<div data-boss-pane="drops" hidden><div class="boss-clues boss-drops">' + dropListHtml(st.drops) + '</div></div>'
+    );
+  }
+
   // A row per stage: its number (and title), the boss with its HP and
-  // bounties, and the boss's skills (and Clearance Ops drops) beside it.
+  // bounties, and the boss's skills and drops beside it (tabbed for Clearance Ops).
   function stageRows(stages) {
     return stages.map(function (st) {
       var diffs = st.difficulties || [];
@@ -342,7 +355,9 @@ function bossKit() {
         '<div class="row g-3 boss-stage" id="stage-' + st.slot + '">' +
           stageIntro(st) +
           cardHtml(st, diffs[0], 'col-12 col-sm-5 col-md-3', bossHref(st.boss), null, '', bountiesHtml(st, diffs[0]), true) +
-          '<div class="col-12 col-sm-7 col-md-9">' + stageDetails(st, diffs[0]) + dropsHtml(st, diffs[0]) + '</div>' +
+          '<div class="col-12 col-sm-7 col-md-9">' +
+            (st.drops && !st.difficulties ? tabsHtml(st) : stageDetails(st, diffs[0]) + dropsHtml(st, diffs[0])) +
+          '</div>' +
         '</div>'
       );
     }).join('');
@@ -385,7 +400,7 @@ function bossKit() {
       '<a href="' + App.href('clearanceops') + '" class="btn-back">&#8592; Back to Clearance Ops</a>' +
       '<div class="listing-header"><h1>' + esc(c.chapter + '. ' + c.name) + '</h1></div>' +
       (c.description ? '<p class="dispatch-intro"><i>' + esc(c.description) + '</i></p>' : '') +
-      '<p class="dispatch-intro">Clearance Ops chapter ' + c.chapter + '. Every boss\'s skills, by stage.' +
+      '<p class="dispatch-intro">Clearance Ops chapter ' + c.chapter + '. Every boss\'s skills and drops, by stage.' +
         (c.turns ? ' Turn limit: <b>' + c.turns + '</b>.' : '') + '</p>' +
       '<div class="boss-group boss-season">' + stageRows(c.stages) + companions + '</div>'
     );
@@ -401,6 +416,14 @@ function bossKit() {
       $(this).addClass('active');
       $group.find('.boss-hp').each(function () { this.hidden = this.getAttribute('data-diff') !== diff; });
       $group.find('[data-diffs]').each(function () { this.hidden = this.getAttribute('data-diffs').split('|').indexOf(diff) === -1; });
+    });
+    // Skills / Drops tabs of a Clearance Ops stage.
+    $(document).on('click.bosses', '[data-boss-tab]', function () {
+      var tab    = $(this).attr('data-boss-tab');
+      var $stage = $(this).closest('.boss-stage');
+      $stage.find('[data-boss-tab]').removeClass('active');
+      $(this).addClass('active');
+      $stage.find('[data-boss-pane]').each(function () { this.hidden = this.getAttribute('data-boss-pane') !== tab; });
     });
   }
 
@@ -462,6 +485,7 @@ Pages.clearanceops = {
   // param: a chapter name (its own page with every boss's skills).
   render: function (param) {
     var k = bossKit();
+    k.bindDiffToggle();
 
     if (param) {
       var name    = decodeURIComponent(param);
@@ -486,6 +510,10 @@ Pages.clearanceops = {
         'See <a href="' + App.href('bosses') + '">Bosses</a> for every boss and where else it appears.</p>' +
       chapters
     );
+  },
+
+  destroy: function () {
+    $(document).off('click.bosses');
   },
 };
 

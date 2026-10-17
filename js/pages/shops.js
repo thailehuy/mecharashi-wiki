@@ -24,7 +24,62 @@ Pages.shops = {
     return (
       '<div class="listing-header"><h1>Shops</h1></div>' +
       '<p class="dispatch-intro">' + $('<span>').text(note).html() + '</p>' +
+      self._renderCrisisSection((window.ShopsData || {}).crisis || []) +
       sectionsHtml
+    );
+  },
+
+  _renderCrisisSection: function (entries) {
+    var self = this;
+
+    var bodyRows = entries.map(function (e) {
+      return (
+        '<tr>' +
+          '<td class="shop-version-cell">v' + $('<span>').text(e.version).html() + '</td>' +
+          '<td><div class="shop-pilot-list">' + e.pilots.map(function (n) { return self._pilotCellHtml(n); }).join('') + '</div></td>' +
+        '</tr>'
+      );
+    }).join('');
+
+    return (
+      '<div class="ac-section">' +
+        '<h2 class="ac-section-title shop-section-title">Covert Phantom - Crisis Shop</h2>' +
+        '<p class="dispatch-intro">You can only select to buy 1 out of 2 pilot pledges per version.</p>' +
+        '<div class="dispatch-table-wrap">' +
+          '<table class="dispatch-table">' +
+            '<thead><tr>' +
+              '<th>Version</th>' +
+              '<th>Pilots</th>' +
+            '</tr></thead>' +
+            '<tbody>' + bodyRows + '</tbody>' +
+          '</table>' +
+        '</div>' +
+      '</div>'
+    );
+  },
+
+  _pilotCellHtml: function (name) {
+    var pilot = ((window.PilotsData || {}).pilots || []).find(function (p) { return p.PilotName === name; });
+    var nameEsc = $('<span>').text(name).html();
+
+    if (!pilot) {
+      return (
+        '<div class="dispatch-cell dispatch-cell-unreleased">' +
+          '<span class="dispatch-cell-icon dispatch-cell-icon-empty"></span>' +
+          '<span class="dispatch-cell-name">' + nameEsc + '</span>' +
+        '</div>'
+      );
+    }
+
+    var rankClass = QUALITY_CLASS[pilot.quality] || '';
+    var bgSrc = QUALITY_BG[pilot.quality] || '';
+    return (
+      '<a class="dispatch-cell" href="' + App.href('pilots', pilot.PilotName) + '">' +
+        '<span class="dispatch-cell-icon ' + rankClass + '" style="background-image:url(\'' + bgSrc + '\')">' +
+          '<img src="' + pilotAvatarSrc(pilot) + '"' + pilotAvatarErrorAttr(pilot) + ' alt="' + nameEsc + '" loading="lazy" />' +
+        '</span>' +
+        '<span class="dispatch-cell-name">' + nameEsc + '</span>' +
+      '</a>'
     );
   },
 

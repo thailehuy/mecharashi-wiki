@@ -304,6 +304,12 @@ svg.bi {
   text-align: left !important;
 }
 
+.shop-pilot-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+}
+
 .shop-mod-list {
   display: flex;
   flex-direction: column;
@@ -3655,6 +3661,8 @@ a.boss-avatar { display: block; }
 .boss-clue-unlock b { color: #e0e0f0; }
 .boss-extreme-list { margin-top: 0.75rem; }
 .boss-clues { margin-top: 0.75rem; padding: 0.6rem 0.7rem; background-color: #1a1a20; border: 1px solid #2a2a4a; border-radius: 8px; font-size: 0.9rem; color: #b0b0c8; }
+.boss-tabs { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 0.75rem; }
+[data-boss-pane] > .boss-drops { margin-top: 0; }
 .boss-clues summary { cursor: pointer; color: #cbd5e1; font-weight: 600; }
 .boss-clue { margin-top: 0.5rem; }
 .boss-clue b { color: #e0e0f0; }
