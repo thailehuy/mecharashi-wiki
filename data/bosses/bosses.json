@@ -334,14 +334,26 @@
             {
               "name": "Emergency Arm Repair",
               "kind": "passive",
-              "description": "If an Arm is destroyed, repairs all current HP of the Arm before the next action and gains . Each Arm can trigger this effect once.",
-              "icon": "Icon_skill_talent_3101"
+              "description": "If an Arm is destroyed, repairs all current HP of the Arm before the next action and gains [Underperformance]. Each Arm can trigger this effect once.",
+              "icon": "Icon_skill_talent_3101",
+              "buffs": [
+                {
+                  "name": "Underperformance",
+                  "description": "DMG -50% when attacking with the current weapon."
+                }
+              ]
             },
             {
               "name": "Fading Snow",
               "kind": "passive",
-              "description": "Range +1.\nWhen possessing 3 AP or more, DMG Dealt +5% and Hit Rate +5% for each 1 AP possessed, up to 45%.\nAt start of action, if total AP possessed reaches the cap, gains .",
-              "icon": "Icon_skill_talent_4110"
+              "description": "Range +1.\nWhen possessing 3 AP or more, DMG Dealt +5% and Hit Rate +5% for each 1 AP possessed, up to 45%.\nAt start of action, if total AP possessed reaches the cap, gains [Skill Enhancement].",
+              "icon": "Icon_skill_talent_4110",
+              "buffs": [
+                {
+                  "name": "Skill Enhancement",
+                  "description": "Enhances active skill, increasing the damage multiplier and terrain range of [Binding Mire] and [Thunderstorm, Emerge!]."
+                }
+              ]
             }
           ]
         },
@@ -404,7 +416,7 @@
             {
               "name": "Predatorial Aid",
               "kind": "passive",
-              "description": "At start of action, for each other allied ST, gains 1 stack of .\nWhen possessing , Machine Gun Bullets +2, Rail Gun Range +1, and Rail Gun can fire diagonally.",
+              "description": "At start of action, for each other allied ST, gains 1 stack of [Predatorial Aid].\nWhen possessing [Predatorial Aid], Machine Gun Bullets +2, Rail Gun Range +1, and Rail Gun can fire diagonally.",
               "buffs": [
                 {
                   "name": "Predatorial Aid",
@@ -465,13 +477,19 @@
             {
               "name": "Emergency Arm Repair",
               "kind": "passive",
-              "description": "If an Arm is destroyed, repairs all current HP of the Arm before the next action and gains . Each Arm can trigger this effect once.",
-              "icon": "Icon_skill_talent_3101"
+              "description": "If an Arm is destroyed, repairs all current HP of the Arm before the next action and gains [Underperformance]. Each Arm can trigger this effect once.",
+              "icon": "Icon_skill_talent_3101",
+              "buffs": [
+                {
+                  "name": "Underperformance",
+                  "description": "DMG -50% when attacking with the current weapon."
+                }
+              ]
             },
             {
               "name": "Blade Flurry",
               "kind": "passive",
-              "description": "When deployed, gains 10 stacks of , reducing Applied DMG Taken by 50%.\nWhen critically hit, increases the attacker's Crit DMG by 100%. After each critical hit, Crit DMG is reduced by 10%. Resets after attacking.\nWhen possessing 5 stacks of , gains Re-Act. Can use  during Re-Act.\nWhen actively attacking, for every 1 target hit, gains 2 stacks of , stacking up to 10 times.\nImmune to [Oath], [Provocation], and .",
+              "description": "When deployed, gains 10 stacks of [Blade Momentum], reducing Applied DMG Taken by 50%.\nWhen critically hit, increases the attacker's Crit DMG by 100%. After each critical hit, Crit DMG is reduced by 10%. Resets after attacking.\nWhen possessing 5 stacks of [Blade Momentum], gains Re-Act. Can use [Deadly Raid] during Re-Act.\nWhen actively attacking, for every 1 target hit, gains 2 stacks of [Blade Momentum], stacking up to 10 times.\nImmune to [Oath], [Provocation], and [Movement Down Immunity.].",
               "buffs": [
                 {
                   "name": "Blade Momentum",
@@ -484,6 +502,14 @@
                 {
                   "name": "Provocation",
                   "description": "If the distance to [Zoey] is less than or equal to <color=#F74848>6</color> blocks, only [Zoey] can be targeted by skills. Priority is lower than <buf ID=1012081>[Oath]</buf>. When attacking [Zoey], Hit Rate is reduced by <color=#F74848>15%</color>."
+                },
+                {
+                  "name": "Movement Down Immunity.",
+                  "description": "Immune to [Movement Down]."
+                },
+                {
+                  "name": "Movement Down",
+                  "description": "Reduces ST's Movement."
                 }
               ]
             }
@@ -547,7 +573,7 @@
               "buffs": [
                 {
                   "name": "Crossfire Boost",
-                  "description": "Each stack increases Final DMG by 10% and Weapon Range by 1. At 3 stacks, executes after combat. Removed after executing."
+                  "description": "Each stack increases Final DMG by 10% and Weapon Range by 1. At 3 stacks, executes [Frenzied Execution] after combat. Removed after executing."
                 },
                 {
                   "name": "Voltage Surge",
@@ -582,7 +608,7 @@
               "buffs": [
                 {
                   "name": "Crossfire Boost",
-                  "description": "Each stack increases Final DMG by 10% and Weapon Range by 1. At 3 stacks, executes after combat. Removed after executing."
+                  "description": "Each stack increases Final DMG by 10% and Weapon Range by 1. At 3 stacks, executes [Frenzied Execution] after combat. Removed after executing."
                 },
                 {
                   "name": "Voltage Surge",
@@ -671,8 +697,14 @@
             {
               "name": "Emergency Arm Repair",
               "kind": "passive",
-              "description": "If an Arm is destroyed, repairs all current HP of the Arm before the next action and gains . Each Arm can trigger this effect once.",
-              "icon": "Icon_skill_talent_3101"
+              "description": "If an Arm is destroyed, repairs all current HP of the Arm before the next action and gains [Underperformance]. Each Arm can trigger this effect once.",
+              "icon": "Icon_skill_talent_3101",
+              "buffs": [
+                {
+                  "name": "Underperformance",
+                  "description": "DMG -50% when attacking with the current weapon."
+                }
+              ]
             },
             {
               "name": "Army of the North",
@@ -741,7 +773,7 @@
             {
               "name": "Undying",
               "kind": "passive",
-              "description": "At end of action, if possessing , inflicts  on all enemies, lasting for 1 turn.",
+              "description": "At end of action, if possessing [Counter Field], inflicts [Suppression] on all enemies, lasting for 1 turn.",
               "buffs": [
                 {
                   "name": "Suppression",
@@ -811,13 +843,19 @@
             {
               "name": "Emergency Arm Repair",
               "kind": "passive",
-              "description": "If an Arm is destroyed, repairs all current HP of the Arm before the next action and gains . Each Arm can trigger this effect once.",
-              "icon": "Icon_skill_talent_3101"
+              "description": "If an Arm is destroyed, repairs all current HP of the Arm before the next action and gains [Underperformance]. Each Arm can trigger this effect once.",
+              "icon": "Icon_skill_talent_3101",
+              "buffs": [
+                {
+                  "name": "Underperformance",
+                  "description": "DMG -50% when attacking with the current weapon."
+                }
+              ]
             },
             {
               "name": "Call Reinforcements",
               "kind": "passive",
-              "description": "Each time damage is taken from an active attack, 1 corresponding ST is reinforced in the Barracks. When Body HP falls below 50% and 20% for the first time, 1 of each type of ST is instantly summoned around self.When actively attacking, applies 3 stacks of  to all allies on the battlefield.For each 1 hit taken by an ally in a single attack, Dodge Rate increases by 10%, up to 100%. Lasts until the end of this attack.",
+              "description": "Each time damage is taken from an active attack, 1 corresponding ST is reinforced in the Barracks. When Body HP falls below 50% and 20% for the first time, 1 of each type of ST is instantly summoned around self.When actively attacking, applies 3 stacks of [Presence] to all allies on the battlefield.For each 1 hit taken by an ally in a single attack, Dodge Rate increases by 10%, up to 100%. Lasts until the end of this attack.",
               "buffs": [
                 {
                   "name": "Presence",
@@ -926,11 +964,19 @@
             {
               "name": "Underworld Godfather",
               "kind": "passive",
-              "description": "When equipped with a [Machine Gun] or [Shield], only takes damage from the first 2 hits of each attack, and DMG Taken is increased by 180%.\nWhen equipped with [Alter-Blades], immune to the first 2 hits of each attack.\nWithin 1 turn, after taking 2 active attacks and each time damage exceeds 5% of Max HP, switches Two-Handed Weapons.\nIf no weapon switch occurs within 1 turn, gains .\nWhen the Body first drops to 50% and 20% of Max HP, immediately gains , and DMG Dealt increases by 20%.\nWhen possessing , if holding [Alter-Blades], Skill Enhancement is set to . If holding [Machine Guns], Skill Enhancement is set to .",
+              "description": "When equipped with a [Machine Gun] or [Shield], only takes damage from the first 2 hits of each attack, and DMG Taken is increased by 180%.\nWhen equipped with [Alter-Blades], immune to the first 2 hits of each attack.\nWithin 1 turn, after taking 2 active attacks and each time damage exceeds 5% of Max HP, switches Two-Handed Weapons.\nIf no weapon switch occurs within 1 turn, gains [Combat Focus].\nWhen the Body first drops to 50% and 20% of Max HP, immediately gains [Combat Focus], and DMG Dealt increases by 20%.\nWhen possessing [Combat Focus], if holding [Alter-Blades], Skill Enhancement is set to [Glory Unbound]. If holding [Machine Guns], Skill Enhancement is set to [Frenzied Discipline].",
               "buffs": [
                 {
                   "name": "Blazing Resolve",
                   "description": "DMG +20%. Stacks up to 2 times."
+                },
+                {
+                  "name": "Combat Focus",
+                  "description": "Charge Complete"
+                },
+                {
+                  "name": "Glory Unbound",
+                  "description": "Loses 2 AP."
                 }
               ]
             }
@@ -1680,17 +1726,27 @@
             {
               "name": "Emergency Arm Repair",
               "kind": "passive",
-              "description": "If an Arm is destroyed, repairs all current HP of the Arm before the next action and gains . Each Arm can trigger this effect once.",
-              "icon": "Icon_skill_talent_3101"
+              "description": "If an Arm is destroyed, repairs all current HP of the Arm before the next action and gains [Underperformance]. Each Arm can trigger this effect once.",
+              "icon": "Icon_skill_talent_3101",
+              "buffs": [
+                {
+                  "name": "Underperformance",
+                  "description": "DMG -50% when attacking with the current weapon."
+                }
+              ]
             },
             {
               "name": "Starburst - EX",
               "kind": "passive",
-              "description": "At the start of battle and action, grants  to all allies.\nWhen Body HP falls below 50% for the first time, gains  based on the number of units with , then removes all  stacks. After this, allies cannot gain .",
+              "description": "At the start of battle and action, grants [Kindle] to all allies.\nWhen Body HP falls below 50% for the first time, gains [Detonate] based on the number of units with [Kindle], then removes all [Kindle] stacks. After this, allies cannot gain [Kindle].",
               "buffs": [
                 {
                   "name": "Detonate",
                   "description": "DMG Dealt +100%. Stacks up to 4 times."
+                },
+                {
+                  "name": "Kindle",
+                  "description": "After damaging an enemy, repairs all parts, restoring HP equal to 100% of damage dealt. For each ally with [Kindle] on the battlefield, Repair AMT +100%, up to 500%."
                 }
               ]
             }
@@ -1793,17 +1849,39 @@
             {
               "name": "Emergency Arm Repair",
               "kind": "passive",
-              "description": "If an Arm is destroyed, repairs all current HP of the Arm before the next action and gains . Each Arm can trigger this effect once.",
-              "icon": "Icon_skill_talent_3101"
+              "description": "If an Arm is destroyed, repairs all current HP of the Arm before the next action and gains [Underperformance]. Each Arm can trigger this effect once.",
+              "icon": "Icon_skill_talent_3101",
+              "buffs": [
+                {
+                  "name": "Underperformance",
+                  "description": "DMG -50% when attacking with the current weapon."
+                }
+              ]
             },
             {
               "name": "Hunter's Scent",
               "kind": "passive",
-              "description": "At the start of battle, enters . After initiating combat, applies  to the target hit. At start of action, restores 5% of Max HP to all parts. Can repair destroyed parts and triggers .\nAt start of turn, the first time Overall HP is less than 50%, ends  and enters . Skills are enhanced to  and . When initiating combat, automatically uses  to launch a Flurry Strike on the target after combat and can trigger . Can only trigger 1 time per turn.",
+              "description": "At the start of battle, enters [Hunting Mode]. After initiating combat, applies [Prey Brand] to the target hit. At start of action, restores 5% of Max HP to all parts. Can repair destroyed parts and triggers [Balance].\nAt start of turn, the first time Overall HP is less than 50%, ends [Hunting Mode] and enters [Berserk Mode]. Skills are enhanced to [Imprisoning Shot - EX] and [Electromagnetic Roar - EX]. When initiating combat, automatically uses [Electromagnetic Roar - EX] to launch a Flurry Strike on the target after combat and can trigger [Re-Act]. Can only trigger 1 time per turn.",
               "buffs": [
                 {
                   "name": "Prey Brand",
                   "description": "DMG Taken +10%. Repair effect reduced by 30%."
+                },
+                {
+                  "name": "Hunting Mode",
+                  "description": "After actively attacking, inflicts [Prey Brand] on the target hit. At start of action, restores 5% of Max HP to all parts and repairs destroyed parts, triggering [Balance]."
+                },
+                {
+                  "name": "Balance",
+                  "description": "Equalizes HP percentage across all parts. Destroyed parts are not included."
+                },
+                {
+                  "name": "Berserk Mode",
+                  "description": "Skill enhancement for [Imprisoning Shot - EX] and [Electromagnetic Roar - EX]. When initiating combat, automatically uses [Electromagnetic Roar - EX] to launch a Flurry Strike against the target and can trigger [Re-Act]. Can only trigger 1 time per turn."
+                },
+                {
+                  "name": "Re-Act",
+                  "description": "Can launch active attacks again. Before attacking, can move with full movement distance."
                 }
               ]
             }
@@ -1894,8 +1972,14 @@
             {
               "name": "Emergency Arm Repair",
               "kind": "passive",
-              "description": "If an Arm is destroyed, repairs all current HP of the Arm before the next action and gains . Each Arm can trigger this effect once.",
-              "icon": "Icon_skill_talent_3101"
+              "description": "If an Arm is destroyed, repairs all current HP of the Arm before the next action and gains [Underperformance]. Each Arm can trigger this effect once.",
+              "icon": "Icon_skill_talent_3101",
+              "buffs": [
+                {
+                  "name": "Underperformance",
+                  "description": "DMG -50% when attacking with the current weapon."
+                }
+              ]
             },
             {
               "name": "Disperse Acid",
@@ -1904,7 +1988,7 @@
               "buffs": [
                 {
                   "name": "Acid II",
-                  "description": "Repair AMT Received -30%, DMG Dealt -10%. Stacks up to 99 times. At end of action, for each stack of , deals Fixed DMG equal to 10% of Max HP to all of own parts. When triggered, applies 1 stack of  to this unit and all allies within 2 tiles."
+                  "description": "Repair AMT Received -30%, DMG Dealt -10%. Stacks up to 99 times. At end of action, for each stack of [Acid II], deals Fixed DMG equal to 10% of Max HP to all of own parts. When triggered, applies 1 stack of [Acid II] to this unit and all allies within 2 tiles."
                 }
               ],
               "icon": "Icon_skill_talent_5106"
@@ -2007,7 +2091,7 @@
               "buffs": [
                 {
                   "name": "Overload",
-                  "description": "DMG +50%, and applies to all enemies hit. Inflicts [Electric Paralysis] on all enemies hit."
+                  "description": "DMG +50%, and applies [Turbulent Disruption] to all enemies hit. Inflicts [Electric Paralysis] on all enemies hit."
                 },
                 {
                   "name": "Turbulent Disruption",
@@ -2199,7 +2283,7 @@
             {
               "name": "Intrepid Advance I",
               "kind": "passive",
-              "description": "At the start of battle, gains  and 5 stacks of .\nWhen possessing , loses 1 stack of  when actively attacked within and beyond 3 tiles.\nWhen not possessing , gains 1 stack of  after being actively attacked.\nAt the end of each turn, gains 2 stacks of .\nWhen possessing more than 5 stacks of Resentment, gains . When not possessing , clears .",
+              "description": "At the start of battle, gains [Barrier-Breaking Charge] and 5 stacks of [Resentment].\nWhen possessing [Barrier-Breaking Charge], loses 1 stack of [Resentment] when actively attacked within and beyond 3 tiles.\nWhen not possessing [Barrier-Breaking Charge], gains 1 stack of [Resentment] after being actively attacked.\nAt the end of each turn, gains 2 stacks of [Resentment].\nWhen possessing more than 5 stacks of Resentment, gains [Barrier-Breaking Charge]. When not possessing [Resentment], clears [Barrier-Breaking Charge].",
               "buffs": [
                 {
                   "name": "Barrier-Breaking Charge",
@@ -2997,7 +3081,7 @@
             {
               "name": "Holmberg",
               "kind": "passive",
-              "description": "Cannot be protected by [Guard]. After executing a skill, can trigger [Re-ATK].\nWhen the UAV Bay is undestroyed, cannot be attacked by Melee Weapons and does not trigger Burning or Mine-style terrain effects.\nAt the start of battle and the end of [Your Turn], deploys 2 Tracers.\nWhen HP first falls below 50%, enters the  state, UAV Bay HP is restored to 100%, and gains 5 stacks of .",
+              "description": "Cannot be protected by [Guard]. After executing a skill, can trigger [Re-ATK].\nWhen the UAV Bay is undestroyed, cannot be attacked by Melee Weapons and does not trigger Burning or Mine-style terrain effects.\nAt the start of battle and the end of [Your Turn], deploys 2 Tracers.\nWhen HP first falls below 50%, enters the [Self-Sustain] state, UAV Bay HP is restored to 100%, and gains 5 stacks of [Fortify].",
               "icon": "Icon_skill_talent_5130",
               "buffs": [
                 {
@@ -3007,6 +3091,14 @@
                 {
                   "name": "Re-ATK",
                   "description": "After the current attack ends, trigger one additional attack. Unable to move before the additional attack unless stated otherwise."
+                },
+                {
+                  "name": "Self-Sustain",
+                  "description": "All enemies on the battlefield gain AP Regen +3, and deployed units are enhanced from 2 Tracers to 1 DL Captain."
+                },
+                {
+                  "name": "Fortify",
+                  "description": "DMG Dealt +5%, DMG Taken -5%. Stacks up to 99 times."
                 },
                 {
                   "name": "Defensive Stance I",
@@ -5924,7 +6016,7 @@
               "buffs": [
                 {
                   "name": "Acid II",
-                  "description": "Repair AMT Received -30%, DMG Dealt -10%. Stacks up to 99 times. At end of action, for each stack of , deals Fixed DMG equal to 10% of Max HP to all of own parts. When triggered, applies 1 stack of  to this unit and all allies within 2 tiles."
+                  "description": "Repair AMT Received -30%, DMG Dealt -10%. Stacks up to 99 times. At end of action, for each stack of [Acid II], deals Fixed DMG equal to 10% of Max HP to all of own parts. When triggered, applies 1 stack of [Acid II] to this unit and all allies within 2 tiles."
                 }
               ],
               "difficulties": [
@@ -6028,7 +6120,7 @@
               "buffs": [
                 {
                   "name": "Acid",
-                  "description": "Repair AMT Received -30%, DMG Dealt -10%. Stacks up to 99 times. At end of action, for each stack of , deals Fixed DMG equal to 10% of Max HP to all of own parts. When triggered, applies 1 stack of  to self and all allies within 1 ring."
+                  "description": "Repair AMT Received -30%, DMG Dealt -10%. Stacks up to 99 times. At end of action, for each stack of [Acid], deals Fixed DMG equal to 10% of Max HP to all of own parts. When triggered, applies 1 stack of [Acid] to self and all allies within 1 ring."
                 }
               ]
             }

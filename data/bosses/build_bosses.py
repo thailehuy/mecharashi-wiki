@@ -90,7 +90,8 @@ SKILL = re.compile(r'(\d+) (.*)')                         # "8820601 Massive Gun
 
 
 def ac_skills(bosses):
-    """(season, stage) -> (boss, stage name, skills), from the DB's bosses table.
+    """(season, stage) -> (boss, stage name, skills), from the DB's bosses table
+    (main bosses only; companions such as Hayato come from the guide's units).
 
     Each skill: name, kind ('active' or 'passive'), description (passives in
     enemy_skills only; active skills have none in the DB) and, when the skill
@@ -104,7 +105,7 @@ def ac_skills(bosses):
     effects = passive_effects(con)
     linked = linked_buffs(con)
     rows = con.execute('SELECT "group", stage, difficulty, boss_pilot, stage_name, main_skills, passives FROM bosses '
-                       "WHERE content = 'Armed Conquest' ORDER BY rowid").fetchall()
+                       "WHERE content = 'Armed Conquest' AND role = 'main' ORDER BY rowid").fetchall()
     con.close()
     out = {}
     for season, stage, diff, boss, title, main, passives in rows:
@@ -174,10 +175,22 @@ HELPER_CATEGORIES = {None, '', 'None', 'PilotSetupPassiveSkill', 'EquipmentPassi
 HOLE = re.compile(r'(?<=\S) (?=[ .,;:)\n]|$)')
 
 
+def skill_buff_links(con, table=None):
+    """(skill ID, buff ID) pairs from the buff_ids lists of enemy_skills and
+    pilot_skills, optionally only skills from one skill table."""
+    pairs = set()
+    for t in ('enemy_skills', 'pilot_skills'):
+        sql = 'SELECT skill_id, buff_ids FROM %s' % t
+        for sid, buffs in con.execute(sql + ' WHERE skill_table = ?' if table else sql, (table,) if table else ()):
+            for b in re.findall(r'\d+', str(buffs or '')):
+                pairs.add((int(sid), int(b)))
+    return pairs
+
+
 def linked_buffs(con):
     """Passive skill ID -> the shown buffs it links to ({id, name,
     description}), lowest ID first: buffs in its skill_effects chains,
-    link_skill_buff and enemy_buffs rows, plus its own ID range (passive
+    its buff_ids (skill_buff_links()) and enemy_buffs rows, plus its own ID range (passive
     9824201 owns buffs 98242010-98242019)."""
     info = {int(b): (n, c, (d or '').strip()) for b, n, c, d in
             con.execute('SELECT buff_id, name, categories, description FROM buffs')}
@@ -185,8 +198,8 @@ def linked_buffs(con):
     for sid, chain in con.execute("SELECT skill_id, buff_chain FROM skill_effects WHERE skill_table = 'PassiveSkillInfo'"):
         for b in filter(None, (chain or '').split(' > ')):
             links.setdefault(int(sid), set()).add(int(b))
-    for sid, b in con.execute("SELECT skill_id, buff_id FROM link_skill_buff WHERE skill_table = 'PassiveSkillInfo'"):
-        links.setdefault(int(sid), set()).add(int(b))
+    for sid, b in skill_buff_links(con, 'PassiveSkillInfo'):
+        links.setdefault(sid, set()).add(b)
     for b, sources in con.execute('SELECT buff_id, source_ids FROM enemy_buffs'):
         for sid in re.findall(r'PassiveSkill (\d+)', sources or ''):
             links.setdefault(int(sid), set()).add(int(b))
@@ -264,8 +277,8 @@ def term_lookup():
         for x in [b] + (chain or '').split(' > '):
             if str(x or '').isdigit():
                 links.setdefault(int(sid), set()).add(int(x))
-    for sid, b in con.execute('SELECT skill_id, buff_id FROM link_skill_buff'):
-        links.setdefault(int(sid), set()).add(int(b))
+    for sid, b in skill_buff_links(con):
+        links.setdefault(sid, set()).add(b)
     con.close()
     with open(GLOSSARY, encoding='utf-8') as f:
         g = json.load(f)
