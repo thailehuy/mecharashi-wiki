@@ -67,15 +67,19 @@ def validate(t):
                 errors.append(f'mechs[{mid}].modules: unknown module {mod["family"]} level {mod["level"]}')
     for part_id, part in t['mech_parts'].items():
         ref('mechs', part['mech'], f'mech_parts[{part_id}]')
+    def crafting_refs(row, where):
+        for c in row.get('crafting', []):
+            kind = next(k for k in ('backpack', 'weapon', 'material') if k in c)
+            ref(kind + 's', c[kind], where)
+
     for wid, w in t['weapons'].items():
         for sid in w.get('passives', []):
             ref('skills', sid, f'weapons[{wid}].passives')
+        crafting_refs(w, f'weapons[{wid}].crafting')
     for bid, b in t['backpacks'].items():
-        for c in b.get('crafting', []):
-            if 'item' in c:
-                ref('backpacks', c['item'], f'backpacks[{bid}].crafting')
-            else:
-                ref('materials', c['material'], f'backpacks[{bid}].crafting')
+        crafting_refs(b, f'backpacks[{bid}].crafting')
+    for key, m in t['materials'].items():
+        crafting_refs(m, f'materials[{key}].crafting')
 
     if errors:
         print('FAILED: data/db has broken references')
@@ -202,6 +206,27 @@ def build_modules(t):
     }}
 
 
+def crafting_out(t, crafting):
+    """A crafting list for the pages: backpacks and weapons by ID, materials
+    with their label, icon (a path in the assets repo) and own recipe."""
+    out = []
+    for c in crafting:
+        if 'backpack' in c or 'weapon' in c:
+            kind = 'backpack' if 'backpack' in c else 'weapon'
+            entry = {'kind': kind, 'id': c[kind], 'qty': c['qty']}
+        else:
+            mat = t['materials'][c['material']]
+            icon = ('data/items/' + mat['item_icon'] + '.png' if 'item_icon' in mat
+                    else 'data/backpacks/materials/' + mat['icon'])
+            entry = {'kind': 'material', 'label': mat['label'], 'icon': icon, 'qty': c['qty']}
+            if 'crafting' in mat:
+                entry['crafting'] = crafting_out(t, mat['crafting'])
+        if c.get('composite'):
+            entry['composite'] = True
+        out.append(entry)
+    return out
+
+
 def build_weapons(t):
     weapons = []
     for wid, w in t['weapons'].items():
@@ -213,6 +238,8 @@ def build_weapons(t):
                                 ('shield', 'ShieldbloodBase')]))
         entry['PassiveSkill'] = [skill_out(t['skills'], sid) for sid in w.get('passives', [])]
         entry.update(rename(w, [('describe', 'describe'), ('pilot', 'pilot'), ('version', 'version'), ('ac', 'ac')]))
+        if 'crafting' in w:
+            entry['crafting'] = crafting_out(t, w['crafting'])
         weapons.append(entry)
     weapons.sort(key=lambda w: (w.get('WeaponType1', ''), w.get('WeaponType2', ''), w.get('name', '')))
     return {'weapons': weapons}
@@ -229,16 +256,7 @@ def build_backpacks(t):
         entry['skill'] = {'ID': s.get('id', ''), 'name': s.get('name', ''), 'icon': s.get('icon', ''),
                           'SpecificEffects': s.get('effect', '')}
         if 'crafting' in b:
-            entry['crafting'] = []
-            for c in b['crafting']:
-                if 'item' in c:
-                    out = {'kind': 'item', 'id': c['item'], 'qty': c['qty']}
-                else:
-                    mat = t['materials'][c['material']]
-                    out = {'kind': 'generic', 'icon': 'materials/' + mat['icon'], 'label': mat['label'], 'qty': c['qty']}
-                if c.get('composite'):
-                    out['composite'] = True
-                entry['crafting'].append(out)
+            entry['crafting'] = crafting_out(t, b['crafting'])
         backpacks.append(entry)
 
     def version_key(b):

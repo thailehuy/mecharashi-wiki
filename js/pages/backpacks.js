@@ -6,7 +6,74 @@ var BACKPACK_FOOTNOTES = {
 };
 
 var BACKPACK_ICON_BASE      = ASSET_BASE + 'data/backpacks/icons/';
-var BACKPACK_MATERIALS_BASE = ASSET_BASE + 'data/backpacks/';
+
+var CRAFTING_COMPOSITE_BADGE =
+  '<span class="material-composite-badge">' +
+    '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-double-down" viewBox="0 0 16 16">' +
+      '<path fill-rule="evenodd" d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>' +
+      '<path fill-rule="evenodd" d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>' +
+    '</svg>' +
+  '</span>';
+
+// The "Crafting Material" section of a backpack or weapon page. Ingredients
+// without a page of their own (materials, UR weapons) that are crafted too get
+// their recipe on a row below.
+function craftingSectionHtml(crafting) {
+  if (!crafting || !crafting.length) return '';
+  var allBackpacks = (window.BackpacksData || {}).backpacks || [];
+  var allWeapons = (window.WeaponsData || {}).weapons || [];
+  var esc = function (s) { return $('<span>').text(s).html(); };
+  var subRecipes = [];
+
+  function itemHtml(m) {
+    var name, href, style;
+    if (m.kind === 'backpack') {
+      var b = allBackpacks.find(function (x) { return x.ID === m.id; });
+      if (!b) return '';
+      name = b.name;
+      href = App.href('backpacks', backpackSlug(b));
+      style = 'background-image:url(\'' + BACKPACK_ICON_BASE + encodeURIComponent(b.icon) + '.png\'), url(\'' + (BACKPACK_QUALITY_BG[b.quality] || '') + '\');' +
+        'background-size: auto 100%, cover; background-position: center, center;';
+    } else if (m.kind === 'weapon') {
+      var w = allWeapons.find(function (x) { return x.ID === m.id; });
+      if (!w) return '';
+      name = w.name;
+      // Only SSSR weapons have a page; a UR one shows its own recipe instead.
+      if (w.quality === 'SSSR' && w.version) href = App.href('weapons', w.name);
+      else if (w.crafting) subRecipes.push({ name: w.name, crafting: w.crafting });
+      style = 'background-image:url(\'' + weaponIconSrc(w) + '\'), url(\'' + (WEAPON_QUALITY_BG[w.quality] || '') + '\');' +
+        'background-size: auto 100%, cover; background-position: center, center;';
+    } else {
+      name = m.label;
+      if (m.crafting) subRecipes.push({ name: m.label, crafting: m.crafting });
+      style = 'background-image:url(\'' + ASSET_BASE + m.icon + '\')';
+    }
+    var inner =
+      '<div class="material-icon-wrap" style="' + style + '">' +
+        (m.composite ? CRAFTING_COMPOSITE_BADGE : '') +
+        (m.qty > 1 ? '<span class="material-qty">x' + m.qty + '</span>' : '') +
+      '</div>' +
+      '<div class="material-name">' + esc(name) + '</div>';
+    return href
+      ? '<a class="material-item" href="' + href + '">' + inner + '</a>'
+      : '<div class="material-item">' + inner + '</div>';
+  }
+
+  var html = '<div class="backpack-materials">' + crafting.map(itemHtml).join('') + '</div>';
+  // Rendering a sub-recipe can queue more (a blueprint's handbooks don't, so far).
+  for (var i = 0; i < subRecipes.length; i++) {
+    var r = subRecipes[i];
+    html +=
+      '<div class="material-subrecipe-label">' + esc(r.name) + '</div>' +
+      '<div class="backpack-materials">' + r.crafting.map(itemHtml).join('') + '</div>';
+  }
+  return (
+    '<div class="nd-section">' +
+      '<div class="section-heading">Crafting Material</div>' +
+      html +
+    '</div>'
+  );
+}
 
 var BACKPACK_QUALITY_LABEL = { SSSR: 'Special', UR: 'Composite', SSR: 'S', SR: 'A', R: 'B' };
 var BACKPACK_QUALITY_CLASS = { SSSR: 'rank-sssr', UR: 'rank-ur', SSR: 'rank-s', SR: 'rank-a', R: 'rank-b' };
@@ -239,56 +306,7 @@ Pages.backpacks = {
           (BACKPACK_FOOTNOTES[b.ID] ? '<p class="ac-section-footnote">* ' + BACKPACK_FOOTNOTES[b.ID] + '</p>' : '') +
         '</div>' +
       '</div>' +
-      this._renderCrafting(b)
-    );
-  },
-
-  _renderCrafting: function (b) {
-    if (!b.crafting || !b.crafting.length) return '';
-    var allBackpacks = (window.BackpacksData || {}).backpacks || [];
-
-    var compositeBadge =
-      '<span class="material-composite-badge">' +
-        '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-double-down" viewBox="0 0 16 16">' +
-          '<path fill-rule="evenodd" d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>' +
-          '<path fill-rule="evenodd" d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>' +
-        '</svg>' +
-      '</span>';
-
-    var itemsHtml = b.crafting.map(function (m) {
-      if (m.kind === 'item') {
-        var ref = allBackpacks.find(function (x) { return x.ID === m.id; });
-        if (!ref) return '';
-        var refIconSrc = BACKPACK_ICON_BASE + encodeURIComponent(ref.icon) + '.png';
-        var refBgSrc    = BACKPACK_QUALITY_BG[ref.quality] || '';
-        var style = 'background-image:url(\'' + refIconSrc + '\'), url(\'' + refBgSrc + '\');' +
-          'background-size: auto 100%, cover; background-position: center, center;';
-        return (
-          '<a class="material-item" href="' + App.href('backpacks', backpackSlug(ref)) + '">' +
-            '<div class="material-icon-wrap" style="' + style + '">' +
-              (m.composite ? compositeBadge : '') +
-              (m.qty > 1 ? '<span class="material-qty">x' + m.qty + '</span>' : '') +
-            '</div>' +
-            '<div class="material-name">' + $('<span>').text(ref.name).html() + '</div>' +
-          '</a>'
-        );
-      }
-      return (
-        '<div class="material-item">' +
-          '<div class="material-icon-wrap" style="background-image:url(\'' + BACKPACK_MATERIALS_BASE + m.icon + '\')">' +
-            (m.composite ? compositeBadge : '') +
-            (m.qty > 1 ? '<span class="material-qty">x' + m.qty + '</span>' : '') +
-          '</div>' +
-          '<div class="material-name">' + $('<span>').text(m.label).html() + '</div>' +
-        '</div>'
-      );
-    }).join('');
-
-    return (
-      '<div class="nd-section">' +
-        '<div class="section-heading">Crafting Material</div>' +
-        '<div class="backpack-materials">' + itemsHtml + '</div>' +
-      '</div>'
+      craftingSectionHtml(b.crafting)
     );
   },
 

@@ -4,7 +4,10 @@ var WEAPON_IMG_BASE    = 'https://media.zlongame.com/media/pictures/cn/community
 
 var WEAPON_QUALITY_LABEL = { SSSR: 'SSSR', UR: 'UR' };
 var WEAPON_QUALITY_CLASS  = { SSSR: 'rank-sssr', UR: 'rank-ur' };
-var WEAPON_QUALITY_BG = { SSSR: ASSET_BASE + 'data/background/quality-sssr.png' };
+var WEAPON_QUALITY_BG = {
+  SSSR: ASSET_BASE + 'data/background/quality-sssr.png',
+  UR:   ASSET_BASE + 'data/background/quality-ssr.png',
+};
 
 var WEAPON_TYPE1_LABEL = {
   Melee:   'Melee',
@@ -392,7 +395,8 @@ Pages.weapons = {
         '</div>' +
       '</div>' +
 
-      passiveHtml
+      passiveHtml +
+      craftingSectionHtml(w.crafting)
     );
   },
 

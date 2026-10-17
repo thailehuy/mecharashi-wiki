@@ -22,7 +22,21 @@
           "icon": "Icon_skill_passive_5228"
         }
       ],
-      "describe": "A newly refined Blaze Howl flamethrower. Although many complain that the new version lacks the rugged aesthetic UKB-1 is known for, it offers significant improvements in versatility and control compared to the old Blaze Howl."
+      "describe": "A newly refined Blaze Howl flamethrower. Although many complain that the new version lacks the rugged aesthetic UKB-1 is known for, it offers significant improvements in versatility and control compared to the old Blaze Howl.",
+      "crafting": [
+        {
+          "kind": "material",
+          "label": "DL Bounty Medal II",
+          "icon": "data/items/Icon_item_12100042.png",
+          "qty": 8
+        },
+        {
+          "kind": "material",
+          "label": "DL Bounty Medal I",
+          "icon": "data/items/Icon_item_12100041.png",
+          "qty": 4
+        }
+      ]
     },
     {
       "ID": "20414122",
@@ -87,7 +101,26 @@
       "describe": "Once a common top-end flamethrower, now reworked by Erisa into something new. After connecting the power unit, it leaves a blazing trail of flames behind her. For this independent researcher, who is constantly pursued by the major forces, it boosts her escape probability by a few percentage points on top of the base 100%.",
       "pilot": "Erisa",
       "version": "1.6",
-      "ac": 6
+      "ac": 6,
+      "crafting": [
+        {
+          "kind": "weapon",
+          "id": "20414121",
+          "qty": 1
+        },
+        {
+          "kind": "material",
+          "label": "DL Arsenal Handbook III",
+          "icon": "data/items/Icon_item_12100039.png",
+          "qty": 6
+        },
+        {
+          "kind": "material",
+          "label": "DL Arsenal Handbook IV",
+          "icon": "data/items/Icon_item_12100040.png",
+          "qty": 6
+        }
+      ]
     },
     {
       "ID": "20415122",
@@ -169,7 +202,26 @@
       "describe": "\"You once said that a soldier's purpose is to obey orders, yet your mission defies that belief. Lieutenant Colonel, do you still have even a hint of compassion for humanity?\"",
       "pilot": "William",
       "version": "1.4",
-      "ac": 4
+      "ac": 4,
+      "crafting": [
+        {
+          "kind": "weapon",
+          "id": "20214121",
+          "qty": 1
+        },
+        {
+          "kind": "material",
+          "label": "Predator Arsenal Handbook I",
+          "icon": "data/items/Icon_item_12100019.png",
+          "qty": 6
+        },
+        {
+          "kind": "material",
+          "label": "Predator Arsenal Handbook II",
+          "icon": "data/items/Icon_item_12100020.png",
+          "qty": 6
+        }
+      ]
     },
     {
       "ID": "20214121",
@@ -193,7 +245,21 @@
           "icon": "Icon_skill_passive_5126"
         }
       ],
-      "describe": "Upgraded with external cooling pipes and multi-box ammunition compartments, it enhances self-cooling and boasts improved safety and durability."
+      "describe": "Upgraded with external cooling pipes and multi-box ammunition compartments, it enhances self-cooling and boasts improved safety and durability.",
+      "crafting": [
+        {
+          "kind": "material",
+          "label": "Predator Bounty Medal I",
+          "icon": "data/items/Icon_item_12100022.png",
+          "qty": 8
+        },
+        {
+          "kind": "material",
+          "label": "Predator Bounty Medal II",
+          "icon": "data/items/Icon_item_12100023.png",
+          "qty": 4
+        }
+      ]
     },
     {
       "ID": "20214122",
@@ -217,7 +283,21 @@
           "icon": "Icon_skill_passive_1146"
         }
       ],
-      "describe": "Upgraded with external cooling pipes and multi-box ammunition compartments, it enhances self-cooling and boasts improved safety and durability."
+      "describe": "Upgraded with external cooling pipes and multi-box ammunition compartments, it enhances self-cooling and boasts improved safety and durability.",
+      "crafting": [
+        {
+          "kind": "material",
+          "label": "Carlo Bounty Medal I",
+          "icon": "data/items/Icon_item_12100013.png",
+          "qty": 8
+        },
+        {
+          "kind": "material",
+          "label": "Carlo Bounty Medal II",
+          "icon": "data/items/Icon_item_12100014.png",
+          "qty": 4
+        }
+      ]
     },
     {
       "ID": "20215122",
@@ -258,7 +338,26 @@
       "describe": "A specially crafted weapon that suddenly appeared in Ludwig's old laboratory. The developer and development time are completely unknown, and the technology is difficult to trace. It can only be determined from the remaining test data that it was created for a certain young man.",
       "pilot": "Shinji",
       "version": "2.4",
-      "ac": 12
+      "ac": 12,
+      "crafting": [
+        {
+          "kind": "weapon",
+          "id": "20214122",
+          "qty": 1
+        },
+        {
+          "kind": "material",
+          "label": "Carlo Arsenal Handbook I",
+          "icon": "data/items/Icon_item_12100101.png",
+          "qty": 6
+        },
+        {
+          "kind": "material",
+          "label": "Carlo Arsenal Handbook II",
+          "icon": "data/items/Icon_item_12100011.png",
+          "qty": 6
+        }
+      ]
     },
     {
       "ID": "20215123",
@@ -339,7 +438,26 @@
       "describe": "A specially modified machine gun based on the Nightwither and tailored entirely to Cassha's combat style. A gift from a fallen comrade and a symbol of Vesper's mission\u2014the designer has long since fallen like a shooting star, but the light of Vesper will never fade.",
       "pilot": "Cassha",
       "version": "2.3",
-      "ac": 11
+      "ac": 11,
+      "crafting": [
+        {
+          "kind": "weapon",
+          "id": "20114122",
+          "qty": 1
+        },
+        {
+          "kind": "material",
+          "label": "GSA Arsenal Handbook III",
+          "icon": "data/items/Icon_item_12100050.png",
+          "qty": 6
+        },
+        {
+          "kind": "material",
+          "label": "GSA Arsenal Handbook IV",
+          "icon": "data/items/Icon_item_12100051.png",
+          "qty": 6
+        }
+      ]
     },
     {
       "ID": "20115121",
@@ -380,7 +498,26 @@
       "describe": "A special edition Nightwither, created from Rosa Diaz's data, featuring brainwave-controlled Arashium for activation. Surprisingly, this weapon has never been used by Valkyrie, despite being part of her arsenal.",
       "pilot": "Rosa",
       "version": "1.2",
-      "ac": 2
+      "ac": 2,
+      "crafting": [
+        {
+          "kind": "weapon",
+          "id": "20114121",
+          "qty": 1
+        },
+        {
+          "kind": "material",
+          "label": "Thunderbolt Arsenal Handbook III",
+          "icon": "data/items/Icon_item_12100003.png",
+          "qty": 6
+        },
+        {
+          "kind": "material",
+          "label": "Thunderbolt Arsenal Handbook I",
+          "icon": "data/items/Icon_item_12100001.png",
+          "qty": 6
+        }
+      ]
     },
     {
       "ID": "20114121",
@@ -404,7 +541,21 @@
           "icon": "Icon_skill_passive_5198"
         }
       ],
-      "describe": "The Nightwither - B, Obsidian's new and improved machine gun with a built-in FCS chip linked to Arashium units. This technology allows pilots to create a direct neural connection, delivering exceptional control and precision in combat."
+      "describe": "The Nightwither - B, Obsidian's new and improved machine gun with a built-in FCS chip linked to Arashium units. This technology allows pilots to create a direct neural connection, delivering exceptional control and precision in combat.",
+      "crafting": [
+        {
+          "kind": "material",
+          "label": "Thunderbolt Bounty Medal III",
+          "icon": "data/items/Icon_item_12100006.png",
+          "qty": 8
+        },
+        {
+          "kind": "material",
+          "label": "Thunderbolt Bounty Medal I",
+          "icon": "data/items/Icon_item_12100004.png",
+          "qty": 4
+        }
+      ]
     },
     {
       "ID": "20114122",
@@ -428,7 +579,21 @@
           "icon": "Icon_skill_passive_4119"
         }
       ],
-      "describe": "The Nightwither - B, Obsidian's new and improved machine gun with a built-in FCS chip linked to Arashium units. This technology allows pilots to create a direct neural connection, delivering exceptional control and precision in combat."
+      "describe": "The Nightwither - B, Obsidian's new and improved machine gun with a built-in FCS chip linked to Arashium units. This technology allows pilots to create a direct neural connection, delivering exceptional control and precision in combat.",
+      "crafting": [
+        {
+          "kind": "material",
+          "label": "GSA Bounty Medal II",
+          "icon": "data/items/Icon_item_12100053.png",
+          "qty": 8
+        },
+        {
+          "kind": "material",
+          "label": "GSA Bounty Medal I",
+          "icon": "data/items/Icon_item_12100052.png",
+          "qty": 4
+        }
+      ]
     },
     {
       "ID": "20114123",
@@ -574,7 +739,26 @@
       "describe": "From its inception, an ideal belongs to no one alone. So, even if the initiator has already given up and betrayed that founding notion, an ideal can find its own successor to carry it forward... Now, it is time for him to carry the torch.",
       "pilot": "Marcus",
       "version": "1.5",
-      "ac": 5
+      "ac": 5,
+      "crafting": [
+        {
+          "kind": "weapon",
+          "id": "20314121",
+          "qty": 1
+        },
+        {
+          "kind": "material",
+          "label": "UNSC Arsenal Handbook I",
+          "icon": "data/items/Icon_item_12100028.png",
+          "qty": 6
+        },
+        {
+          "kind": "material",
+          "label": "UNSC Arsenal Handbook II",
+          "icon": "data/items/Icon_item_12100029.png",
+          "qty": 6
+        }
+      ]
     },
     {
       "ID": "20314121",
@@ -598,7 +782,21 @@
           "icon": "Icon_skill_passive_5179"
         }
       ],
-      "describe": "In addition to the superior fire control components added to the old Firebolt model, support for the onboard booster module has been completely upgraded. This makes it the absolute king among current mass-produced shotgun weapons."
+      "describe": "In addition to the superior fire control components added to the old Firebolt model, support for the onboard booster module has been completely upgraded. This makes it the absolute king among current mass-produced shotgun weapons.",
+      "crafting": [
+        {
+          "kind": "material",
+          "label": "UNCS Bounty Medal I",
+          "icon": "data/items/Icon_item_12100031.png",
+          "qty": 8
+        },
+        {
+          "kind": "material",
+          "label": "UNCS Bounty Medal II",
+          "icon": "data/items/Icon_item_12100032.png",
+          "qty": 4
+        }
+      ]
     },
     {
       "ID": "20314122",
@@ -622,7 +820,21 @@
           "icon": "Icon_skill_passive_1126"
         }
       ],
-      "describe": "In addition to the superior fire control components added to the old Firebolt model, support for the onboard booster module has been completely upgraded. This makes it the absolute king among current mass-produced shotgun weapons."
+      "describe": "In addition to the superior fire control components added to the old Firebolt model, support for the onboard booster module has been completely upgraded. This makes it the absolute king among current mass-produced shotgun weapons.",
+      "crafting": [
+        {
+          "kind": "material",
+          "label": "Nightingale Bounty Medal I",
+          "icon": "data/items/Icon_item_12100031.png",
+          "qty": 8
+        },
+        {
+          "kind": "material",
+          "label": "Nightingale Bounty Medal II",
+          "icon": "data/items/Icon_item_12100032.png",
+          "qty": 4
+        }
+      ]
     },
     {
       "ID": "20315123",
@@ -703,7 +915,26 @@
       "describe": "The weapon Frida used when she was the \"Queen of the Northwest Jungle.\" But strangely, ever since she gave up working alone to form a mercenary group, her territory has been shrinking day by day.",
       "pilot": "Frida",
       "version": "2.1",
-      "ac": 9
+      "ac": 9,
+      "crafting": [
+        {
+          "kind": "weapon",
+          "id": "20314122",
+          "qty": 1
+        },
+        {
+          "kind": "material",
+          "label": "Nightingale Arsenal Handbook I",
+          "icon": "data/items/Icon_item_12100028.png",
+          "qty": 6
+        },
+        {
+          "kind": "material",
+          "label": "Nightingale Arsenal Handbook II",
+          "icon": "data/items/Icon_item_12100029.png",
+          "qty": 6
+        }
+      ]
     },
     {
       "ID": "50214121",
@@ -727,7 +958,21 @@
           "icon": "Icon_skill_passive_5223"
         }
       ],
-      "describe": "A new Cutter developed by the Horizon Weapon Laboratory. While its core principles differ little from the original Foehn series, its direct-link Sync Ratio load restrictions have been dramatically relaxed. As a result, aside from a handful of theoretical \"target prototypes,\" it is effectively unusable by standard pilots."
+      "describe": "A new Cutter developed by the Horizon Weapon Laboratory. While its core principles differ little from the original Foehn series, its direct-link Sync Ratio load restrictions have been dramatically relaxed. As a result, aside from a handful of theoretical \"target prototypes,\" it is effectively unusable by standard pilots.",
+      "crafting": [
+        {
+          "kind": "material",
+          "label": "Iguana Bounty Medal III",
+          "icon": "data/items/Icon_item_12100065.png",
+          "qty": 8
+        },
+        {
+          "kind": "material",
+          "label": "Iguana Bounty Medal I",
+          "icon": "data/items/Icon_item_12100063.png",
+          "qty": 4
+        }
+      ]
     },
     {
       "ID": "50214122",
@@ -881,7 +1126,26 @@
       "describe": "She sees iron rain fall at her command, blossoms cast into flames. She hears the familiar voices\u2014sad, reckless\u2014calling her name, over and over... until dusk comes. The long dream is over. She will not sleep again. She will accept it all, carry it all, and deliver to those high-seated gods... their rightful Judgment.",
       "pilot": "Rosa: Judgment",
       "version": "2.0",
-      "ac": 8
+      "ac": 8,
+      "crafting": [
+        {
+          "kind": "weapon",
+          "id": "50214121",
+          "qty": 1
+        },
+        {
+          "kind": "material",
+          "label": "Iguana Arsenal Handbook III",
+          "icon": "data/items/Icon_item_12100061.png",
+          "qty": 6
+        },
+        {
+          "kind": "material",
+          "label": "Iguana Arsenal Handbook I",
+          "icon": "data/items/Icon_item_12100059.png",
+          "qty": 6
+        }
+      ]
     },
     {
       "ID": "40115122",
@@ -922,7 +1186,26 @@
       "describe": "After countless failed attempts, this redesigned missile launcher was finally completed, with safety mechanisms removed and an additional warhead bay installed. Its creator believes that as long as its missiles streak through the air with burning intensity, the light of Vesper will never fade.",
       "pilot": "Arthur",
       "version": "2.5",
-      "ac": 13
+      "ac": 13,
+      "crafting": [
+        {
+          "kind": "weapon",
+          "id": "40114122",
+          "qty": 1
+        },
+        {
+          "kind": "material",
+          "label": "Thunderbolt Arsenal Handbook VI",
+          "icon": "data/items/Icon_item_12100106.png",
+          "qty": 6
+        },
+        {
+          "kind": "material",
+          "label": "Thunderbolt Arsenal Handbook VII",
+          "icon": "data/items/Icon_item_12100107.png",
+          "qty": 6
+        }
+      ]
     },
     {
       "ID": "40115121",
@@ -963,7 +1246,26 @@
       "describe": "The GSA's advanced ST-mounted missile for special agents was set to be named \"Indra\" due to its superior performance. Unfortunately, the agent forgot its name the day after extraction.",
       "pilot": "Naomi",
       "version": "1.4",
-      "ac": 4
+      "ac": 4,
+      "crafting": [
+        {
+          "kind": "weapon",
+          "id": "40114121",
+          "qty": 1
+        },
+        {
+          "kind": "material",
+          "label": "Predator Arsenal Handbook II",
+          "icon": "data/items/Icon_item_12100020.png",
+          "qty": 6
+        },
+        {
+          "kind": "material",
+          "label": "Predator Arsenal Handbook III",
+          "icon": "data/items/Icon_item_12100021.png",
+          "qty": 6
+        }
+      ]
     },
     {
       "ID": "40114121",
@@ -987,7 +1289,21 @@
           "icon": "Icon_skill_passive_5148"
         }
       ],
-      "describe": "The upgraded Kumara model, equipped with a warhead chip, offers improved firepower and accuracy, along with expanded fuel support for diverse environments and combat situations."
+      "describe": "The upgraded Kumara model, equipped with a warhead chip, offers improved firepower and accuracy, along with expanded fuel support for diverse environments and combat situations.",
+      "crafting": [
+        {
+          "kind": "material",
+          "label": "Predator Bounty Medal II",
+          "icon": "data/items/Icon_item_12100023.png",
+          "qty": 8
+        },
+        {
+          "kind": "material",
+          "label": "Predator Bounty Medal III",
+          "icon": "data/items/Icon_item_12100024.png",
+          "qty": 4
+        }
+      ]
     },
     {
       "ID": "40114122",
@@ -1011,7 +1327,21 @@
           "icon": "Icon_skill_passive_5223"
         }
       ],
-      "describe": "The upgraded Kumara model, equipped with a warhead chip, offers improved firepower and accuracy, along with expanded fuel support for diverse environments and combat situations."
+      "describe": "The upgraded Kumara model, equipped with a warhead chip, offers improved firepower and accuracy, along with expanded fuel support for diverse environments and combat situations.",
+      "crafting": [
+        {
+          "kind": "material",
+          "label": "Thunderbolt Bounty Medal V",
+          "icon": "data/items/Icon_item_12100109.png",
+          "qty": 8
+        },
+        {
+          "kind": "material",
+          "label": "Thunderbolt Bounty Medal IV",
+          "icon": "data/items/Icon_item_12100108.png",
+          "qty": 4
+        }
+      ]
     },
     {
       "ID": "50116121",
@@ -1059,7 +1389,52 @@
       "describe": "A new masterpiece that combines a jammer with an onboard rail gun, overcoming the challenge of integrating a backpack with a rail gun base for the very first time. This makes the Adjudicator a unique weapon that combines interference with long-range tactical strikes.",
       "pilot": "Shawnee",
       "version": "1.7",
-      "ac": 7
+      "ac": 7,
+      "crafting": [
+        {
+          "kind": "backpack",
+          "id": "60102405",
+          "qty": 1,
+          "composite": true
+        },
+        {
+          "kind": "weapon",
+          "id": "50115121",
+          "qty": 1
+        },
+        {
+          "kind": "material",
+          "label": "Random S-Grade Backpack",
+          "icon": "data/backpacks/materials/random-ssr.png",
+          "qty": 3
+        },
+        {
+          "kind": "material",
+          "label": "Adjudicator Blueprint",
+          "icon": "data/items/Icon_item_11530008.png",
+          "qty": 1,
+          "crafting": [
+            {
+              "kind": "material",
+              "label": "Monolith Arsenal Handbook II",
+              "icon": "data/items/Icon_item_12100049.png",
+              "qty": 3
+            },
+            {
+              "kind": "material",
+              "label": "Monolith Arsenal Handbook IV",
+              "icon": "data/items/Icon_item_12100051.png",
+              "qty": 3
+            },
+            {
+              "kind": "material",
+              "label": "Monolith Bounty Medal III",
+              "icon": "data/items/Icon_item_12100054.png",
+              "qty": 6
+            }
+          ]
+        }
+      ]
     },
     {
       "ID": "50115123",
@@ -1141,7 +1516,26 @@
       "describe": "\"Shawnee, this security personnel position is nothing but a ruse they fabricated to rope you in! If this continues, you'll only ever be dispatched by the council without any chance to... You say it's to protect civilians at the executive level? Haha, only I'd be dumb enough to believe something like that...\"",
       "pilot": "Shawnee",
       "version": "1.5",
-      "ac": 5
+      "ac": 5,
+      "crafting": [
+        {
+          "kind": "weapon",
+          "id": "50114121",
+          "qty": 1
+        },
+        {
+          "kind": "material",
+          "label": "UNSC Arsenal Handbook III",
+          "icon": "data/items/Icon_item_12100030.png",
+          "qty": 6
+        },
+        {
+          "kind": "material",
+          "label": "UNSC Arsenal Handbook I",
+          "icon": "data/items/Icon_item_12100028.png",
+          "qty": 6
+        }
+      ]
     },
     {
       "ID": "50115122",
@@ -1182,7 +1576,26 @@
       "describe": "\"...I had a bad feeling the moment you said we were picking something up from the dock warehouse\u2014but I never imagined your idea of a 'little snack' would be a rail gun! I-I mean, I was surprised, but maybe next time you give someone a gift, you should check what they actually want first... And also\u2014don't just paint something like 'Little Fia' on the shipping container for everyone to see!\"",
       "pilot": "Fia",
       "version": "2.2",
-      "ac": 10
+      "ac": 10,
+      "crafting": [
+        {
+          "kind": "weapon",
+          "id": "50114122",
+          "qty": 1
+        },
+        {
+          "kind": "material",
+          "label": "Special Task Force Arsenal Handbook III",
+          "icon": "data/items/Icon_item_12100083.png",
+          "qty": 6
+        },
+        {
+          "kind": "material",
+          "label": "Special Task Force Arsenal Handbook IV",
+          "icon": "data/items/Icon_item_12100084.png",
+          "qty": 6
+        }
+      ]
     },
     {
       "ID": "50116122",
@@ -1230,7 +1643,52 @@
       "describe": "A new test armament that perfectly integrates a universal amplifier with an onboard Rail Gun, offering a new solution to the conflict over space and power between pack and turret. Its exceptional long-range firepower may well redefine future battlefield tactics.",
       "pilot": "Fia",
       "version": "2.5",
-      "ac": 13
+      "ac": 13,
+      "crafting": [
+        {
+          "kind": "backpack",
+          "id": "60102405",
+          "qty": 1,
+          "composite": true
+        },
+        {
+          "kind": "weapon",
+          "id": "50115122",
+          "qty": 1
+        },
+        {
+          "kind": "material",
+          "label": "Random S-Grade Backpack",
+          "icon": "data/backpacks/materials/random-ssr.png",
+          "qty": 3
+        },
+        {
+          "kind": "material",
+          "label": "Sugar-Coated Destroyer Blueprint",
+          "icon": "data/items/Icon_item_11530008.png",
+          "qty": 1,
+          "crafting": [
+            {
+              "kind": "material",
+              "label": "Thunderbolt Arsenal Handbook V",
+              "icon": "data/items/Icon_item_12100105.png",
+              "qty": 3
+            },
+            {
+              "kind": "material",
+              "label": "Thunderbolt Arsenal Handbook VII",
+              "icon": "data/items/Icon_item_12100107.png",
+              "qty": 3
+            },
+            {
+              "kind": "material",
+              "label": "Thunderbolt Bounty Medal VI",
+              "icon": "data/items/Icon_item_12100110.png",
+              "qty": 6
+            }
+          ]
+        }
+      ]
     },
     {
       "ID": "50114121",
@@ -1254,7 +1712,21 @@
           "icon": "Icon_skill_passive_5140"
         }
       ],
-      "describe": "A modified Torch Tower that integrates both plasma projectiles and kinetic rounds into a single rail gun, allowing for more diverse strike forms based on specific battlefield environments and tactical needs."
+      "describe": "A modified Torch Tower that integrates both plasma projectiles and kinetic rounds into a single rail gun, allowing for more diverse strike forms based on specific battlefield environments and tactical needs.",
+      "crafting": [
+        {
+          "kind": "material",
+          "label": "UNCS Bounty Medal III",
+          "icon": "data/items/Icon_item_12100033.png",
+          "qty": 8
+        },
+        {
+          "kind": "material",
+          "label": "UNCS Bounty Medal I",
+          "icon": "data/items/Icon_item_12100031.png",
+          "qty": 4
+        }
+      ]
     },
     {
       "ID": "50114122",
@@ -1278,7 +1750,21 @@
           "icon": "Icon_skill_passive_5150"
         }
       ],
-      "describe": "A modified Torch Tower that integrates both plasma projectiles and kinetic rounds into a single rail gun, allowing for more diverse strike forms based on specific battlefield environments and tactical needs."
+      "describe": "A modified Torch Tower that integrates both plasma projectiles and kinetic rounds into a single rail gun, allowing for more diverse strike forms based on specific battlefield environments and tactical needs.",
+      "crafting": [
+        {
+          "kind": "material",
+          "label": "Special Task Force Bounty Medal II",
+          "icon": "data/items/Icon_item_12100086.png",
+          "qty": 8
+        },
+        {
+          "kind": "material",
+          "label": "Special Task Force Bounty Medal I",
+          "icon": "data/items/Icon_item_12100085.png",
+          "qty": 4
+        }
+      ]
     },
     {
       "ID": "50114123",
@@ -1326,7 +1812,21 @@
           "icon": "Icon_skill_passive_4104"
         }
       ],
-      "describe": "Equipped with a newly developed custom guidance module specially crafted by Obsidian, this airborne rocket launcher can execute more refined and precise bombing commands according to pilot requirements, greatly expanding its tactical value."
+      "describe": "Equipped with a newly developed custom guidance module specially crafted by Obsidian, this airborne rocket launcher can execute more refined and precise bombing commands according to pilot requirements, greatly expanding its tactical value.",
+      "crafting": [
+        {
+          "kind": "material",
+          "label": "UNCS Bounty Medal II",
+          "icon": "data/items/Icon_item_12100032.png",
+          "qty": 8
+        },
+        {
+          "kind": "material",
+          "label": "UNCS Bounty Medal III",
+          "icon": "data/items/Icon_item_12100033.png",
+          "qty": 4
+        }
+      ]
     },
     {
       "ID": "40214122",
@@ -1391,7 +1891,26 @@
       "describe": "\"Highest corporate authorization complete. Inspector Eileen, you may proceed to Milkhama Island to search for the rumored test subject, but I still advise you to wait for the board's formal vote to obtain the authority to deploy the Mobile Guard... Alright, final confirmation\u2014you intend to go alone, into the depths of hell, correct?\"",
       "pilot": "Eileen",
       "version": "1.5",
-      "ac": 5
+      "ac": 5,
+      "crafting": [
+        {
+          "kind": "weapon",
+          "id": "40214121",
+          "qty": 1
+        },
+        {
+          "kind": "material",
+          "label": "UNSC Arsenal Handbook II",
+          "icon": "data/items/Icon_item_12100029.png",
+          "qty": 6
+        },
+        {
+          "kind": "material",
+          "label": "UNSC Arsenal Handbook III",
+          "icon": "data/items/Icon_item_12100030.png",
+          "qty": 6
+        }
+      ]
     },
     {
       "ID": "40215122",
@@ -1496,7 +2015,21 @@
           "icon": "Icon_skill_passive_4127"
         }
       ],
-      "describe": "The improved model of the general purpose blade Excalibur, fully optimized with a deformation structure and an added micro-control unit, enhancing both handling and contact strength, and significantly boosting combat efficiency."
+      "describe": "The improved model of the general purpose blade Excalibur, fully optimized with a deformation structure and an added micro-control unit, enhancing both handling and contact strength, and significantly boosting combat efficiency.",
+      "crafting": [
+        {
+          "kind": "material",
+          "label": "GSA Bounty Medal I",
+          "icon": "data/items/Icon_item_12100052.png",
+          "qty": 8
+        },
+        {
+          "kind": "material",
+          "label": "GSA Bounty Medal II",
+          "icon": "data/items/Icon_item_12100053.png",
+          "qty": 4
+        }
+      ]
     },
     {
       "ID": "10915122",
@@ -1577,7 +2110,26 @@
       "describe": "A prototype power blade crafted by the UNCS Ninth Research Institute. \u03a3-04 Ophelia took it as a trophy after defeating the runaway experiment \u0394-09, and she's used it ever since... People say they were once friends, but Ophelia has never said a word about it.",
       "pilot": "Ophelia",
       "version": "2.3",
-      "ac": 11
+      "ac": 11,
+      "crafting": [
+        {
+          "kind": "weapon",
+          "id": "10914121",
+          "qty": 1
+        },
+        {
+          "kind": "material",
+          "label": "GSA Arsenal Handbook I",
+          "icon": "data/items/Icon_item_12100048.png",
+          "qty": 6
+        },
+        {
+          "kind": "material",
+          "label": "GSA Arsenal Handbook II",
+          "icon": "data/items/Icon_item_12100049.png",
+          "qty": 6
+        }
+      ]
     },
     {
       "ID": "10515124",
@@ -1661,7 +2213,26 @@
       "describe": "\"Melissa, only in the end did I realize that the one who could open this cage was you alone... It couldn't have ended any better than this.\"",
       "pilot": "Melissa",
       "version": "2.4",
-      "ac": 12
+      "ac": 12,
+      "crafting": [
+        {
+          "kind": "weapon",
+          "id": "10514123",
+          "qty": 1
+        },
+        {
+          "kind": "material",
+          "label": "Carlo Arsenal Handbook III",
+          "icon": "data/items/Icon_item_12100010.png",
+          "qty": 6
+        },
+        {
+          "kind": "material",
+          "label": "Carlo Arsenal Handbook IV",
+          "icon": "data/items/Icon_item_12100012.png",
+          "qty": 6
+        }
+      ]
     },
     {
       "ID": "10514121",
@@ -1686,7 +2257,21 @@
           "icon": "Icon_skill_passive_2112"
         }
       ],
-      "describe": "The new Polymeric Barrier replaces the old Jamming Coat and Harvesting Core, significantly improving ballistic deflection protection and expanding the armor's coverage."
+      "describe": "The new Polymeric Barrier replaces the old Jamming Coat and Harvesting Core, significantly improving ballistic deflection protection and expanding the armor's coverage.",
+      "crafting": [
+        {
+          "kind": "material",
+          "label": "Thunderbolt Bounty Medal II",
+          "icon": "data/items/Icon_item_12100005.png",
+          "qty": 8
+        },
+        {
+          "kind": "material",
+          "label": "Thunderbolt Bounty Medal III",
+          "icon": "data/items/Icon_item_12100006.png",
+          "qty": 4
+        }
+      ]
     },
     {
       "ID": "10514122",
@@ -1711,7 +2296,21 @@
           "icon": "Icon_skill_passive_3119"
         }
       ],
-      "describe": "The new Polymeric Barrier replaces the old Jamming Coat and Harvesting Core, significantly improving ballistic deflection protection and expanding the armor's coverage."
+      "describe": "The new Polymeric Barrier replaces the old Jamming Coat and Harvesting Core, significantly improving ballistic deflection protection and expanding the armor's coverage.",
+      "crafting": [
+        {
+          "kind": "material",
+          "label": "Monolith Bounty Medal II",
+          "icon": "data/items/Icon_item_12100053.png",
+          "qty": 8
+        },
+        {
+          "kind": "material",
+          "label": "Monolith Bounty Medal I",
+          "icon": "data/items/Icon_item_12100052.png",
+          "qty": 4
+        }
+      ]
     },
     {
       "ID": "10514123",
@@ -1736,7 +2335,21 @@
           "icon": "Icon_skill_passive_5131"
         }
       ],
-      "describe": "The new Polymeric Barrier replaces the old Jamming Coat and Harvesting Core, significantly improving ballistic deflection protection and expanding the armor's coverage."
+      "describe": "The new Polymeric Barrier replaces the old Jamming Coat and Harvesting Core, significantly improving ballistic deflection protection and expanding the armor's coverage.",
+      "crafting": [
+        {
+          "kind": "material",
+          "label": "Carlo Bounty Medal II",
+          "icon": "data/items/Icon_item_12100014.png",
+          "qty": 8
+        },
+        {
+          "kind": "material",
+          "label": "Carlo Bounty Medal I",
+          "icon": "data/items/Icon_item_12100013.png",
+          "qty": 4
+        }
+      ]
     },
     {
       "ID": "10514124",
@@ -1803,7 +2416,26 @@
       "describe": "The first few \"Mahalim\" in the refugee camp left behind a legacy\u2014a cobbled-together ST made from all kinds of parts, accompanied by a set of spares for convenient repairs. Lorna hopes to commemorate all of them in this way and plans to use it to save more \"Mahalim.\"",
       "pilot": "Lorna",
       "version": "1.7",
-      "ac": 7
+      "ac": 7,
+      "crafting": [
+        {
+          "kind": "weapon",
+          "id": "10514122",
+          "qty": 1
+        },
+        {
+          "kind": "material",
+          "label": "Monolith Arsenal Handbook III",
+          "icon": "data/items/Icon_item_12100050.png",
+          "qty": 6
+        },
+        {
+          "kind": "material",
+          "label": "Monolith Arsenal Handbook IV",
+          "icon": "data/items/Icon_item_12100051.png",
+          "qty": 6
+        }
+      ]
     },
     {
       "ID": "10515121",
@@ -1845,7 +2477,26 @@
       "describe": "Designed by the Lollipop Machine Shop, this enhanced multi-functional shield includes reinforced plates, repair parts, amplifier batteries, a mini-minesweeper, and a Pochy remote controller. Pre-orders are limited to select VIP customers, with the store manager's personal version not for sale.",
       "pilot": "Seven",
       "version": "1.2",
-      "ac": 2
+      "ac": 2,
+      "crafting": [
+        {
+          "kind": "weapon",
+          "id": "10514121",
+          "qty": 1
+        },
+        {
+          "kind": "material",
+          "label": "Thunderbolt Arsenal Handbook II",
+          "icon": "data/items/Icon_item_12100002.png",
+          "qty": 6
+        },
+        {
+          "kind": "material",
+          "label": "Thunderbolt Arsenal Handbook III",
+          "icon": "data/items/Icon_item_12100003.png",
+          "qty": 6
+        }
+      ]
     },
     {
       "ID": "10215123",
@@ -1926,7 +2577,26 @@
       "describe": "\"Camilla, this is for you... We'll be going back to that island soon. There, you'll reclaim not just all I've told you about, but everything you've lost.\"",
       "pilot": "Camilla",
       "version": "1.3",
-      "ac": 3
+      "ac": 3,
+      "crafting": [
+        {
+          "kind": "weapon",
+          "id": "10214121",
+          "qty": 1
+        },
+        {
+          "kind": "material",
+          "label": "Luno Arsenal Handbook I",
+          "icon": "data/items/Icon_item_12100010.png",
+          "qty": 6
+        },
+        {
+          "kind": "material",
+          "label": "Luno Arsenal Handbook II",
+          "icon": "data/items/Icon_item_12100011.png",
+          "qty": 6
+        }
+      ]
     },
     {
       "ID": "10215122",
@@ -1967,7 +2637,26 @@
       "describe": "\"Looking back upon the desolate path behind me... Homeward I go, untouched by rain or shine.\"",
       "pilot": "Hong",
       "version": "1.7",
-      "ac": 7
+      "ac": 7,
+      "crafting": [
+        {
+          "kind": "weapon",
+          "id": "10214122",
+          "qty": 1
+        },
+        {
+          "kind": "material",
+          "label": "Monolith Arsenal Handbook I",
+          "icon": "data/items/Icon_item_12100048.png",
+          "qty": 6
+        },
+        {
+          "kind": "material",
+          "label": "Monolith Arsenal Handbook II",
+          "icon": "data/items/Icon_item_12100049.png",
+          "qty": 6
+        }
+      ]
     },
     {
       "ID": "10214121",
@@ -1991,7 +2680,21 @@
           "icon": "Icon_skill_passive_1115"
         }
       ],
-      "describe": "The Pile Bunker's original structure remains intact while a new thruster, linked directly to the ST's power module, enables faster, more precise, and controllable strikes."
+      "describe": "The Pile Bunker's original structure remains intact while a new thruster, linked directly to the ST's power module, enables faster, more precise, and controllable strikes.",
+      "crafting": [
+        {
+          "kind": "material",
+          "label": "Luno Bounty Medal I",
+          "icon": "data/items/Icon_item_12100013.png",
+          "qty": 8
+        },
+        {
+          "kind": "material",
+          "label": "Luno Bounty Medal II",
+          "icon": "data/items/Icon_item_12100014.png",
+          "qty": 4
+        }
+      ]
     },
     {
       "ID": "10214122",
@@ -2015,7 +2718,21 @@
           "icon": "Icon_skill_passive_1101"
         }
       ],
-      "describe": "The Pile Bunker's original structure remains intact while a new thruster, linked directly to the ST's power module, enables faster, more precise, and controllable strikes."
+      "describe": "The Pile Bunker's original structure remains intact while a new thruster, linked directly to the ST's power module, enables faster, more precise, and controllable strikes.",
+      "crafting": [
+        {
+          "kind": "material",
+          "label": "Monolith Bounty Medal I",
+          "icon": "data/items/Icon_item_12100052.png",
+          "qty": 8
+        },
+        {
+          "kind": "material",
+          "label": "Monolith Bounty Medal II",
+          "icon": "data/items/Icon_item_12100053.png",
+          "qty": 4
+        }
+      ]
     },
     {
       "ID": "10315121",
@@ -2056,7 +2773,26 @@
       "describe": "\"I yearn to cry, laugh, roar, and run... I miss my mother's embrace and those carefree days. Whether in life or death, haunted by memories or seeking a fresh start, it's a pity my tears won't come, and there's no way back to the past...\"",
       "pilot": "Catherine",
       "version": "1.2",
-      "ac": 2
+      "ac": 2,
+      "crafting": [
+        {
+          "kind": "weapon",
+          "id": "10314121",
+          "qty": 1
+        },
+        {
+          "kind": "material",
+          "label": "Thunderbolt Arsenal Handbook I",
+          "icon": "data/items/Icon_item_12100001.png",
+          "qty": 6
+        },
+        {
+          "kind": "material",
+          "label": "Thunderbolt Arsenal Handbook II",
+          "icon": "data/items/Icon_item_12100002.png",
+          "qty": 6
+        }
+      ]
     },
     {
       "ID": "10315123",
@@ -2121,7 +2857,21 @@
           "icon": "Icon_skill_passive_5200"
         }
       ],
-      "describe": "This upgraded polearm from Doll Industries features a built-in drive core that generates kinetic energy for strikes, enhancing flexibility and reducing weight for improved maneuverability."
+      "describe": "This upgraded polearm from Doll Industries features a built-in drive core that generates kinetic energy for strikes, enhancing flexibility and reducing weight for improved maneuverability.",
+      "crafting": [
+        {
+          "kind": "material",
+          "label": "Thunderbolt Bounty Medal I",
+          "icon": "data/items/Icon_item_12100004.png",
+          "qty": 8
+        },
+        {
+          "kind": "material",
+          "label": "Thunderbolt Bounty Medal II",
+          "icon": "data/items/Icon_item_12100005.png",
+          "qty": 4
+        }
+      ]
     },
     {
       "ID": "10314122",
@@ -2145,7 +2895,21 @@
           "icon": "Icon_skill_passive_4133"
         }
       ],
-      "describe": "This upgraded polearm from Doll Industries features a built-in drive core that generates kinetic energy for strikes, enhancing flexibility and reducing weight for improved maneuverability."
+      "describe": "This upgraded polearm from Doll Industries features a built-in drive core that generates kinetic energy for strikes, enhancing flexibility and reducing weight for improved maneuverability.",
+      "crafting": [
+        {
+          "kind": "material",
+          "label": "DL Bounty Medal I",
+          "icon": "data/items/Icon_item_12100041.png",
+          "qty": 8
+        },
+        {
+          "kind": "material",
+          "label": "DL Bounty Medal II",
+          "icon": "data/items/Icon_item_12100042.png",
+          "qty": 4
+        }
+      ]
     },
     {
       "ID": "10314123",
@@ -2210,7 +2974,26 @@
       "describe": "Sometimes she dreams of that night, watching the moon with her adopted children... For this reason, she must firmly grasp the weapon in her hand and continue to fight fearlessly for countless more moonlit nights to come.",
       "pilot": "Gumusiay",
       "version": "1.6",
-      "ac": 6
+      "ac": 6,
+      "crafting": [
+        {
+          "kind": "weapon",
+          "id": "10314122",
+          "qty": 1
+        },
+        {
+          "kind": "material",
+          "label": "DL Arsenal Handbook I",
+          "icon": "data/items/Icon_item_12100037.png",
+          "qty": 6
+        },
+        {
+          "kind": "material",
+          "label": "DL Arsenal Handbook II",
+          "icon": "data/items/Icon_item_12100038.png",
+          "qty": 6
+        }
+      ]
     },
     {
       "ID": "10315124",
@@ -2274,7 +3057,21 @@
           "icon": "Icon_skill_passive_1157"
         }
       ],
-      "describe": "An improved version of the Beowulf military combat axe-saw, featuring newly optimized turbo motors that significantly enhance durability and environmental adaptability, allowing the chainsaw weapon to excel in more diverse and complex combat environments."
+      "describe": "An improved version of the Beowulf military combat axe-saw, featuring newly optimized turbo motors that significantly enhance durability and environmental adaptability, allowing the chainsaw weapon to excel in more diverse and complex combat environments.",
+      "crafting": [
+        {
+          "kind": "material",
+          "label": "Nightingale Bounty Medal II",
+          "icon": "data/items/Icon_item_12100032.png",
+          "qty": 8
+        },
+        {
+          "kind": "material",
+          "label": "Nightingale Bounty Medal I",
+          "icon": "data/items/Icon_item_12100031.png",
+          "qty": 4
+        }
+      ]
     },
     {
       "ID": "10814122",
@@ -2420,7 +3217,26 @@
       "describe": "A foldable Chainsaw cherished by Dean, capable of switching between sword and axe forms. Simply quote Dean's specially customized voice prompt \"I say it's good to go!\" to initiate transformation.",
       "pilot": "Dean",
       "version": "2.1",
-      "ac": 9
+      "ac": 9,
+      "crafting": [
+        {
+          "kind": "weapon",
+          "id": "10814121",
+          "qty": 1
+        },
+        {
+          "kind": "material",
+          "label": "Nightingale Arsenal Handbook III",
+          "icon": "data/items/Icon_item_12100030.png",
+          "qty": 6
+        },
+        {
+          "kind": "material",
+          "label": "Nightingale Arsenal Handbook IV",
+          "icon": "data/items/Icon_item_12100073.png",
+          "qty": 6
+        }
+      ]
     },
     {
       "ID": "10415121",
@@ -2462,7 +3278,26 @@
       "describe": "The back of this shield is intricately engraved with names, a gravestone selected by the Ghost of Ovett to honor what no longer exists. Though the dead have lost their place of return, he upholds their will and continues to fight.",
       "pilot": "Yevgeny",
       "version": "1.3",
-      "ac": 3
+      "ac": 3,
+      "crafting": [
+        {
+          "kind": "weapon",
+          "id": "10414121",
+          "qty": 1
+        },
+        {
+          "kind": "material",
+          "label": "Luno Arsenal Handbook III",
+          "icon": "data/items/Icon_item_12100012.png",
+          "qty": 6
+        },
+        {
+          "kind": "material",
+          "label": "Luno Arsenal Handbook I",
+          "icon": "data/items/Icon_item_12100010.png",
+          "qty": 6
+        }
+      ]
     },
     {
       "ID": "10415122",
@@ -2504,7 +3339,26 @@
       "describe": "According to Diracca, this specially crafted Large Shield is the unexpected reward she won in a DLAF arm-wrestling competition at the Defense Camp. Since then, arm-wrestling has become a staple pastime during the DLAF's off-duty hours.",
       "pilot": "Diracca",
       "version": "2.0",
-      "ac": 8
+      "ac": 8,
+      "crafting": [
+        {
+          "kind": "weapon",
+          "id": "10414122",
+          "qty": 1
+        },
+        {
+          "kind": "material",
+          "label": "Iguana Arsenal Handbook I",
+          "icon": "data/items/Icon_item_12100059.png",
+          "qty": 6
+        },
+        {
+          "kind": "material",
+          "label": "Iguana Arsenal Handbook II",
+          "icon": "data/items/Icon_item_12100060.png",
+          "qty": 6
+        }
+      ]
     },
     {
       "ID": "10415123",
@@ -2546,7 +3400,26 @@
       "describe": "\"I'll protect you.\"",
       "pilot": "Rei",
       "version": "2.2",
-      "ac": 10
+      "ac": 10,
+      "crafting": [
+        {
+          "kind": "weapon",
+          "id": "10414123",
+          "qty": 1
+        },
+        {
+          "kind": "material",
+          "label": "Special Task Force Arsenal Handbook I",
+          "icon": "data/items/Icon_item_12100081.png",
+          "qty": 6
+        },
+        {
+          "kind": "material",
+          "label": "Special Task Force Arsenal Handbook II",
+          "icon": "data/items/Icon_item_12100082.png",
+          "qty": 6
+        }
+      ]
     },
     {
       "ID": "10415124",
@@ -2588,7 +3461,26 @@
       "describe": "A specially forged shield that helped Tiphys withstand countless attacks, witnessing his rise as a hero of the DL. It should have retired in glory, yet it remains active on the battlefield, guarding his comrades... just as its master does.",
       "pilot": "Tiphys",
       "version": "2.5",
-      "ac": 13
+      "ac": 13,
+      "crafting": [
+        {
+          "kind": "weapon",
+          "id": "10414124",
+          "qty": 1
+        },
+        {
+          "kind": "material",
+          "label": "Thunderbolt Arsenal Handbook IV",
+          "icon": "data/items/Icon_item_12100104.png",
+          "qty": 6
+        },
+        {
+          "kind": "material",
+          "label": "Thunderbolt Arsenal Handbook V",
+          "icon": "data/items/Icon_item_12100105.png",
+          "qty": 6
+        }
+      ]
     },
     {
       "ID": "10414121",
@@ -2613,7 +3505,21 @@
           "icon": "Icon_skill_passive_2117"
         }
       ],
-      "describe": "The Starfield shield, utilizing UKB-1 lattice smelting technology, has a newly coated stamped plate that boosts strength and extends the interference device's range, greatly enhancing protection."
+      "describe": "The Starfield shield, utilizing UKB-1 lattice smelting technology, has a newly coated stamped plate that boosts strength and extends the interference device's range, greatly enhancing protection.",
+      "crafting": [
+        {
+          "kind": "material",
+          "label": "Luno Bounty Medal III",
+          "icon": "data/items/Icon_item_12100015.png",
+          "qty": 8
+        },
+        {
+          "kind": "material",
+          "label": "Luno Bounty Medal I",
+          "icon": "data/items/Icon_item_12100013.png",
+          "qty": 4
+        }
+      ]
     },
     {
       "ID": "10414122",
@@ -2638,7 +3544,21 @@
           "icon": "Icon_skill_passive_3101"
         }
       ],
-      "describe": "The Starfield shield, utilizing UKB-1 lattice smelting technology, has a newly coated stamped plate that boosts strength and extends the interference device's range, greatly enhancing protection."
+      "describe": "The Starfield shield, utilizing UKB-1 lattice smelting technology, has a newly coated stamped plate that boosts strength and extends the interference device's range, greatly enhancing protection.",
+      "crafting": [
+        {
+          "kind": "material",
+          "label": "Iguana Bounty Medal I",
+          "icon": "data/items/Icon_item_12100063.png",
+          "qty": 8
+        },
+        {
+          "kind": "material",
+          "label": "Iguana Bounty Medal II",
+          "icon": "data/items/Icon_item_12100064.png",
+          "qty": 4
+        }
+      ]
     },
     {
       "ID": "10414123",
@@ -2663,7 +3583,21 @@
           "icon": "Icon_skill_passive_2118"
         }
       ],
-      "describe": "The Starfield shield, utilizing UKB-1 lattice smelting technology, has a newly coated stamped plate that boosts strength and extends the interference device's range, greatly enhancing protection."
+      "describe": "The Starfield shield, utilizing UKB-1 lattice smelting technology, has a newly coated stamped plate that boosts strength and extends the interference device's range, greatly enhancing protection.",
+      "crafting": [
+        {
+          "kind": "material",
+          "label": "Special Task Force Bounty Medal I",
+          "icon": "data/items/Icon_item_12100085.png",
+          "qty": 8
+        },
+        {
+          "kind": "material",
+          "label": "Special Task Force Bounty Medal II",
+          "icon": "data/items/Icon_item_12100086.png",
+          "qty": 4
+        }
+      ]
     },
     {
       "ID": "10414124",
@@ -2688,7 +3622,21 @@
           "icon": "Icon_skill_passive_2111"
         }
       ],
-      "describe": "The Starfield shield, utilizing UKB-1 lattice smelting technology, has a newly coated stamped plate that boosts strength and extends the interference device's range, greatly enhancing protection."
+      "describe": "The Starfield shield, utilizing UKB-1 lattice smelting technology, has a newly coated stamped plate that boosts strength and extends the interference device's range, greatly enhancing protection.",
+      "crafting": [
+        {
+          "kind": "material",
+          "label": "Thunderbolt Bounty Medal IV",
+          "icon": "data/items/Icon_item_12100108.png",
+          "qty": 8
+        },
+        {
+          "kind": "material",
+          "label": "Thunderbolt Bounty Medal V",
+          "icon": "data/items/Icon_item_12100109.png",
+          "qty": 4
+        }
+      ]
     },
     {
       "ID": "30215124",
@@ -2810,7 +3758,26 @@
       "describe": "Instruments, operas, rifles, and accordion sound pegs share the same name and lethality. The most haunting thought is whether she would choose a different path, if given the chance to return to the day the performance ended. She hesitates.",
       "pilot": "Natalia",
       "version": "1.3",
-      "ac": 3
+      "ac": 3,
+      "crafting": [
+        {
+          "kind": "weapon",
+          "id": "30214121",
+          "qty": 1
+        },
+        {
+          "kind": "material",
+          "label": "Luno Arsenal Handbook II",
+          "icon": "data/items/Icon_item_12100011.png",
+          "qty": 6
+        },
+        {
+          "kind": "material",
+          "label": "Luno Arsenal Handbook III",
+          "icon": "data/items/Icon_item_12100012.png",
+          "qty": 6
+        }
+      ]
     },
     {
       "ID": "30214121",
@@ -2834,7 +3801,21 @@
           "icon": "Icon_skill_passive_5186"
         }
       ],
-      "describe": "The Red Fox - B sniper rifle now boasts an advanced calibration chip and sampling module in its particle beam sight, using ST detectors and trajectory simulation technology to enhance accuracy and usability."
+      "describe": "The Red Fox - B sniper rifle now boasts an advanced calibration chip and sampling module in its particle beam sight, using ST detectors and trajectory simulation technology to enhance accuracy and usability.",
+      "crafting": [
+        {
+          "kind": "material",
+          "label": "Luno Bounty Medal II",
+          "icon": "data/items/Icon_item_12100014.png",
+          "qty": 8
+        },
+        {
+          "kind": "material",
+          "label": "Luno Bounty Medal III",
+          "icon": "data/items/Icon_item_12100015.png",
+          "qty": 4
+        }
+      ]
     },
     {
       "ID": "30214122",
@@ -2858,7 +3839,21 @@
           "icon": "Icon_skill_passive_5103"
         }
       ],
-      "describe": "The Red Fox - B sniper rifle now boasts an advanced calibration chip and sampling module in its particle beam sight, using ST detectors and trajectory simulation technology to enhance accuracy and usability."
+      "describe": "The Red Fox - B sniper rifle now boasts an advanced calibration chip and sampling module in its particle beam sight, using ST detectors and trajectory simulation technology to enhance accuracy and usability.",
+      "crafting": [
+        {
+          "kind": "material",
+          "label": "Iguana Bounty Medal II",
+          "icon": "data/items/Icon_item_12100064.png",
+          "qty": 8
+        },
+        {
+          "kind": "material",
+          "label": "Iguana Bounty Medal III",
+          "icon": "data/items/Icon_item_12100065.png",
+          "qty": 4
+        }
+      ]
     },
     {
       "ID": "30214123",
@@ -2923,7 +3918,26 @@
       "describe": "A training sniper weapon specially commissioned by An-Holt, etched with the sniper takedown record set by Kelly Polis. To Kelly, this customized \"teaching tool\" likely outperforms any mass-produced standard weapon.",
       "pilot": "Kelly",
       "version": "2.0",
-      "ac": 8
+      "ac": 8,
+      "crafting": [
+        {
+          "kind": "weapon",
+          "id": "30214122",
+          "qty": 1
+        },
+        {
+          "kind": "material",
+          "label": "Iguana Arsenal Handbook II",
+          "icon": "data/items/Icon_item_12100060.png",
+          "qty": 6
+        },
+        {
+          "kind": "material",
+          "label": "Iguana Arsenal Handbook III",
+          "icon": "data/items/Icon_item_12100061.png",
+          "qty": 6
+        }
+      ]
     },
     {
       "ID": "30115122",
@@ -2988,7 +4002,21 @@
           "icon": "Icon_skill_passive_4128"
         }
       ],
-      "describe": "Equipped with An-Holt's latest optical sight and sampling prediction system, it improves maneuverability and durability over the original Maxx."
+      "describe": "Equipped with An-Holt's latest optical sight and sampling prediction system, it improves maneuverability and durability over the original Maxx.",
+      "crafting": [
+        {
+          "kind": "material",
+          "label": "Predator Bounty Medal I",
+          "icon": "data/items/Icon_item_12100022.png",
+          "qty": 4
+        },
+        {
+          "kind": "material",
+          "label": "Predator Bounty Medal III",
+          "icon": "data/items/Icon_item_12100024.png",
+          "qty": 8
+        }
+      ]
     },
     {
       "ID": "30114122",
@@ -3053,7 +4081,26 @@
       "describe": "\"I know flowers and clothes aren't your style, so I got you something different. Since you've never celebrated a birthday before, let's make today our shared birthday every year. Happy birthday, sis!\"",
       "pilot": "Sylvie",
       "version": "1.4",
-      "ac": 4
+      "ac": 4,
+      "crafting": [
+        {
+          "kind": "weapon",
+          "id": "30114121",
+          "qty": 1
+        },
+        {
+          "kind": "material",
+          "label": "Predator Arsenal Handbook I",
+          "icon": "data/items/Icon_item_12100019.png",
+          "qty": 6
+        },
+        {
+          "kind": "material",
+          "label": "Predator Arsenal Handbook III",
+          "icon": "data/items/Icon_item_12100021.png",
+          "qty": 6
+        }
+      ]
     }
   ]
 }

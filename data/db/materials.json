@@ -15,8 +15,580 @@
     "label": "Random A-Grade Backpack",
     "icon": "random-sr.png"
   },
+  "standard-blueprint": {
+    "label": "Standard Backpack Blueprint",
+    "icon": "standard-blueprint.png"
+  },
   "precision-blueprint": {
-    "label": "Precision Quality Blueprint",
+    "label": "Precision Backpack Blueprint",
     "icon": "precision-blueprint.png"
+  },
+  "juggernaut-backpack-blueprint": {
+    "label": "Juggernaut Backpack Blueprint",
+    "item_icon": "Icon_item_11530012",
+    "crafting": [
+      {
+        "material": "special-task-force-arsenal-handbook-i",
+        "qty": 3
+      },
+      {
+        "material": "special-task-force-arsenal-handbook-iii",
+        "qty": 3
+      },
+      {
+        "material": "special-task-force-bounty-medal-iii",
+        "qty": 6
+      }
+    ]
+  },
+  "assaulter-backpack-blueprint": {
+    "label": "Assaulter Backpack Blueprint",
+    "item_icon": "Icon_item_11530016",
+    "crafting": [
+      {
+        "material": "carlo-arsenal-handbook-ii",
+        "qty": 3
+      },
+      {
+        "material": "carlo-arsenal-handbook-iv",
+        "qty": 3
+      },
+      {
+        "material": "carlo-bounty-medal-iii",
+        "qty": 6
+      }
+    ]
+  },
+  "resistor-backpack-blueprint": {
+    "label": "Resistor Backpack Blueprint",
+    "item_icon": "Icon_item_11530015",
+    "crafting": [
+      {
+        "material": "gsa-arsenal-handbook-ii",
+        "qty": 3
+      },
+      {
+        "material": "gsa-arsenal-handbook-iv",
+        "qty": 3
+      },
+      {
+        "material": "gsa-bounty-medal-iii",
+        "qty": 6
+      }
+    ]
+  },
+  "custodian-blueprint": {
+    "label": "Custodian Blueprint",
+    "item_icon": "Icon_item_11530005",
+    "crafting": [
+      {
+        "material": "dl-arsenal-handbook-i",
+        "qty": 3
+      },
+      {
+        "material": "dl-arsenal-handbook-iii",
+        "qty": 3
+      },
+      {
+        "material": "dl-bounty-medal-iii",
+        "qty": 6
+      }
+    ]
+  },
+  "harrier-backpack-blueprint": {
+    "label": "Harrier Backpack Blueprint",
+    "item_icon": "Icon_item_11530009",
+    "crafting": [
+      {
+        "material": "thunderbolt-arsenal-handbook-iv",
+        "qty": 3
+      },
+      {
+        "material": "thunderbolt-arsenal-handbook-vi",
+        "qty": 3
+      },
+      {
+        "material": "thunderbolt-bounty-medal-vi",
+        "qty": 6
+      }
+    ]
+  },
+  "overlord-backpack-blueprint": {
+    "label": "Overlord Backpack Blueprint",
+    "item_icon": "Icon_item_11530010",
+    "crafting": [
+      {
+        "material": "nightingale-arsenal-handbook-i",
+        "qty": 3
+      },
+      {
+        "material": "nightingale-arsenal-handbook-iii",
+        "qty": 3
+      },
+      {
+        "material": "nightingale-bounty-medal-iii",
+        "qty": 6
+      }
+    ]
+  },
+  "savior-backpack-blueprint": {
+    "label": "Savior Backpack Blueprint",
+    "item_icon": "Icon_item_11530011",
+    "crafting": [
+      {
+        "material": "nightingale-arsenal-handbook-ii",
+        "qty": 3
+      },
+      {
+        "material": "nightingale-arsenal-handbook-iv",
+        "qty": 3
+      },
+      {
+        "material": "nightingale-bounty-medal-iii",
+        "qty": 6
+      }
+    ]
+  },
+  "architect-backpack-blueprint": {
+    "label": "Architect Backpack Blueprint",
+    "item_icon": "Icon_item_11530013",
+    "crafting": [
+      {
+        "material": "special-task-force-arsenal-handbook-ii",
+        "qty": 3
+      },
+      {
+        "material": "special-task-force-arsenal-handbook-iv",
+        "qty": 3
+      },
+      {
+        "material": "special-task-force-bounty-medal-iii",
+        "qty": 6
+      }
+    ]
+  },
+  "supplier-backpack-blueprint": {
+    "label": "Supplier Backpack Blueprint",
+    "item_icon": "Icon_item_11530014",
+    "crafting": [
+      {
+        "material": "gsa-arsenal-handbook-i",
+        "qty": 3
+      },
+      {
+        "material": "gsa-arsenal-handbook-iii",
+        "qty": 3
+      },
+      {
+        "material": "gsa-bounty-medal-iii",
+        "qty": 6
+      }
+    ]
+  },
+  "concealer-blueprint": {
+    "label": "Concealer Blueprint",
+    "item_icon": "Icon_item_11530007",
+    "crafting": [
+      {
+        "material": "monolith-arsenal-handbook-i",
+        "qty": 3
+      },
+      {
+        "material": "monolith-arsenal-handbook-iii",
+        "qty": 3
+      },
+      {
+        "material": "monolith-bounty-medal-iii",
+        "qty": 6
+      }
+    ]
+  },
+  "stalker-backpack-blueprint": {
+    "label": "Stalker Backpack Blueprint",
+    "item_icon": "Icon_item_11530017",
+    "crafting": [
+      {
+        "material": "carlo-arsenal-handbook-i",
+        "qty": 3
+      },
+      {
+        "material": "carlo-arsenal-handbook-iii",
+        "qty": 3
+      },
+      {
+        "material": "carlo-bounty-medal-iii",
+        "qty": 6
+      }
+    ]
+  },
+  "conqueror-blueprint": {
+    "label": "Conqueror Blueprint",
+    "item_icon": "Icon_item_11530006",
+    "crafting": [
+      {
+        "material": "dl-arsenal-handbook-ii",
+        "qty": 3
+      },
+      {
+        "material": "dl-arsenal-handbook-iv",
+        "qty": 3
+      },
+      {
+        "material": "dl-bounty-medal-iii",
+        "qty": 6
+      }
+    ]
+  },
+  "adjudicator-blueprint": {
+    "label": "Adjudicator Blueprint",
+    "item_icon": "Icon_item_11530008",
+    "crafting": [
+      {
+        "material": "monolith-arsenal-handbook-ii",
+        "qty": 3
+      },
+      {
+        "material": "monolith-arsenal-handbook-iv",
+        "qty": 3
+      },
+      {
+        "material": "monolith-bounty-medal-iii",
+        "qty": 6
+      }
+    ]
+  },
+  "sugar-coated-destroyer-blueprint": {
+    "label": "Sugar-Coated Destroyer Blueprint",
+    "item_icon": "Icon_item_11530008",
+    "crafting": [
+      {
+        "material": "thunderbolt-arsenal-handbook-v",
+        "qty": 3
+      },
+      {
+        "material": "thunderbolt-arsenal-handbook-vii",
+        "qty": 3
+      },
+      {
+        "material": "thunderbolt-bounty-medal-vi",
+        "qty": 6
+      }
+    ]
+  },
+  "thunderbolt-bounty-medal-i": {
+    "label": "Thunderbolt Bounty Medal I",
+    "item_icon": "Icon_item_12100004"
+  },
+  "thunderbolt-bounty-medal-ii": {
+    "label": "Thunderbolt Bounty Medal II",
+    "item_icon": "Icon_item_12100005"
+  },
+  "thunderbolt-bounty-medal-iii": {
+    "label": "Thunderbolt Bounty Medal III",
+    "item_icon": "Icon_item_12100006"
+  },
+  "luno-bounty-medal-i": {
+    "label": "Luno Bounty Medal I",
+    "item_icon": "Icon_item_12100013"
+  },
+  "luno-bounty-medal-ii": {
+    "label": "Luno Bounty Medal II",
+    "item_icon": "Icon_item_12100014"
+  },
+  "luno-bounty-medal-iii": {
+    "label": "Luno Bounty Medal III",
+    "item_icon": "Icon_item_12100015"
+  },
+  "predator-bounty-medal-i": {
+    "label": "Predator Bounty Medal I",
+    "item_icon": "Icon_item_12100022"
+  },
+  "predator-bounty-medal-ii": {
+    "label": "Predator Bounty Medal II",
+    "item_icon": "Icon_item_12100023"
+  },
+  "predator-bounty-medal-iii": {
+    "label": "Predator Bounty Medal III",
+    "item_icon": "Icon_item_12100024"
+  },
+  "uncs-bounty-medal-i": {
+    "label": "UNCS Bounty Medal I",
+    "item_icon": "Icon_item_12100031"
+  },
+  "uncs-bounty-medal-ii": {
+    "label": "UNCS Bounty Medal II",
+    "item_icon": "Icon_item_12100032"
+  },
+  "uncs-bounty-medal-iii": {
+    "label": "UNCS Bounty Medal III",
+    "item_icon": "Icon_item_12100033"
+  },
+  "dl-bounty-medal-i": {
+    "label": "DL Bounty Medal I",
+    "item_icon": "Icon_item_12100041"
+  },
+  "dl-bounty-medal-ii": {
+    "label": "DL Bounty Medal II",
+    "item_icon": "Icon_item_12100042"
+  },
+  "monolith-bounty-medal-i": {
+    "label": "Monolith Bounty Medal I",
+    "item_icon": "Icon_item_12100052"
+  },
+  "monolith-bounty-medal-ii": {
+    "label": "Monolith Bounty Medal II",
+    "item_icon": "Icon_item_12100053"
+  },
+  "iguana-bounty-medal-i": {
+    "label": "Iguana Bounty Medal I",
+    "item_icon": "Icon_item_12100063"
+  },
+  "iguana-bounty-medal-ii": {
+    "label": "Iguana Bounty Medal II",
+    "item_icon": "Icon_item_12100064"
+  },
+  "iguana-bounty-medal-iii": {
+    "label": "Iguana Bounty Medal III",
+    "item_icon": "Icon_item_12100065"
+  },
+  "nightingale-bounty-medal-i": {
+    "label": "Nightingale Bounty Medal I",
+    "item_icon": "Icon_item_12100031"
+  },
+  "nightingale-bounty-medal-ii": {
+    "label": "Nightingale Bounty Medal II",
+    "item_icon": "Icon_item_12100032"
+  },
+  "special-task-force-bounty-medal-i": {
+    "label": "Special Task Force Bounty Medal I",
+    "item_icon": "Icon_item_12100085"
+  },
+  "special-task-force-bounty-medal-ii": {
+    "label": "Special Task Force Bounty Medal II",
+    "item_icon": "Icon_item_12100086"
+  },
+  "gsa-bounty-medal-i": {
+    "label": "GSA Bounty Medal I",
+    "item_icon": "Icon_item_12100052"
+  },
+  "gsa-bounty-medal-ii": {
+    "label": "GSA Bounty Medal II",
+    "item_icon": "Icon_item_12100053"
+  },
+  "carlo-bounty-medal-i": {
+    "label": "Carlo Bounty Medal I",
+    "item_icon": "Icon_item_12100013"
+  },
+  "carlo-bounty-medal-ii": {
+    "label": "Carlo Bounty Medal II",
+    "item_icon": "Icon_item_12100014"
+  },
+  "thunderbolt-bounty-medal-iv": {
+    "label": "Thunderbolt Bounty Medal IV",
+    "item_icon": "Icon_item_12100108"
+  },
+  "thunderbolt-bounty-medal-v": {
+    "label": "Thunderbolt Bounty Medal V",
+    "item_icon": "Icon_item_12100109"
+  },
+  "thunderbolt-arsenal-handbook-i": {
+    "label": "Thunderbolt Arsenal Handbook I",
+    "item_icon": "Icon_item_12100001"
+  },
+  "thunderbolt-arsenal-handbook-ii": {
+    "label": "Thunderbolt Arsenal Handbook II",
+    "item_icon": "Icon_item_12100002"
+  },
+  "thunderbolt-arsenal-handbook-iii": {
+    "label": "Thunderbolt Arsenal Handbook III",
+    "item_icon": "Icon_item_12100003"
+  },
+  "luno-arsenal-handbook-i": {
+    "label": "Luno Arsenal Handbook I",
+    "item_icon": "Icon_item_12100010"
+  },
+  "luno-arsenal-handbook-ii": {
+    "label": "Luno Arsenal Handbook II",
+    "item_icon": "Icon_item_12100011"
+  },
+  "luno-arsenal-handbook-iii": {
+    "label": "Luno Arsenal Handbook III",
+    "item_icon": "Icon_item_12100012"
+  },
+  "predator-arsenal-handbook-i": {
+    "label": "Predator Arsenal Handbook I",
+    "item_icon": "Icon_item_12100019"
+  },
+  "predator-arsenal-handbook-ii": {
+    "label": "Predator Arsenal Handbook II",
+    "item_icon": "Icon_item_12100020"
+  },
+  "predator-arsenal-handbook-iii": {
+    "label": "Predator Arsenal Handbook III",
+    "item_icon": "Icon_item_12100021"
+  },
+  "unsc-arsenal-handbook-i": {
+    "label": "UNSC Arsenal Handbook I",
+    "item_icon": "Icon_item_12100028"
+  },
+  "unsc-arsenal-handbook-ii": {
+    "label": "UNSC Arsenal Handbook II",
+    "item_icon": "Icon_item_12100029"
+  },
+  "unsc-arsenal-handbook-iii": {
+    "label": "UNSC Arsenal Handbook III",
+    "item_icon": "Icon_item_12100030"
+  },
+  "dl-arsenal-handbook-i": {
+    "label": "DL Arsenal Handbook I",
+    "item_icon": "Icon_item_12100037"
+  },
+  "dl-arsenal-handbook-ii": {
+    "label": "DL Arsenal Handbook II",
+    "item_icon": "Icon_item_12100038"
+  },
+  "dl-arsenal-handbook-iii": {
+    "label": "DL Arsenal Handbook III",
+    "item_icon": "Icon_item_12100039"
+  },
+  "dl-arsenal-handbook-iv": {
+    "label": "DL Arsenal Handbook IV",
+    "item_icon": "Icon_item_12100040"
+  },
+  "dl-bounty-medal-iii": {
+    "label": "DL Bounty Medal III",
+    "item_icon": "Icon_item_12100043"
+  },
+  "monolith-arsenal-handbook-i": {
+    "label": "Monolith Arsenal Handbook I",
+    "item_icon": "Icon_item_12100048"
+  },
+  "monolith-arsenal-handbook-ii": {
+    "label": "Monolith Arsenal Handbook II",
+    "item_icon": "Icon_item_12100049"
+  },
+  "monolith-arsenal-handbook-iii": {
+    "label": "Monolith Arsenal Handbook III",
+    "item_icon": "Icon_item_12100050"
+  },
+  "monolith-arsenal-handbook-iv": {
+    "label": "Monolith Arsenal Handbook IV",
+    "item_icon": "Icon_item_12100051"
+  },
+  "monolith-bounty-medal-iii": {
+    "label": "Monolith Bounty Medal III",
+    "item_icon": "Icon_item_12100054"
+  },
+  "iguana-arsenal-handbook-i": {
+    "label": "Iguana Arsenal Handbook I",
+    "item_icon": "Icon_item_12100059"
+  },
+  "iguana-arsenal-handbook-ii": {
+    "label": "Iguana Arsenal Handbook II",
+    "item_icon": "Icon_item_12100060"
+  },
+  "iguana-arsenal-handbook-iii": {
+    "label": "Iguana Arsenal Handbook III",
+    "item_icon": "Icon_item_12100061"
+  },
+  "nightingale-arsenal-handbook-i": {
+    "label": "Nightingale Arsenal Handbook I",
+    "item_icon": "Icon_item_12100028"
+  },
+  "nightingale-arsenal-handbook-ii": {
+    "label": "Nightingale Arsenal Handbook II",
+    "item_icon": "Icon_item_12100029"
+  },
+  "nightingale-arsenal-handbook-iii": {
+    "label": "Nightingale Arsenal Handbook III",
+    "item_icon": "Icon_item_12100030"
+  },
+  "nightingale-arsenal-handbook-iv": {
+    "label": "Nightingale Arsenal Handbook IV",
+    "item_icon": "Icon_item_12100073"
+  },
+  "nightingale-bounty-medal-iii": {
+    "label": "Nightingale Bounty Medal III",
+    "item_icon": "Icon_item_12100033"
+  },
+  "special-task-force-arsenal-handbook-i": {
+    "label": "Special Task Force Arsenal Handbook I",
+    "item_icon": "Icon_item_12100081"
+  },
+  "special-task-force-arsenal-handbook-ii": {
+    "label": "Special Task Force Arsenal Handbook II",
+    "item_icon": "Icon_item_12100082"
+  },
+  "special-task-force-arsenal-handbook-iii": {
+    "label": "Special Task Force Arsenal Handbook III",
+    "item_icon": "Icon_item_12100083"
+  },
+  "special-task-force-arsenal-handbook-iv": {
+    "label": "Special Task Force Arsenal Handbook IV",
+    "item_icon": "Icon_item_12100084"
+  },
+  "special-task-force-bounty-medal-iii": {
+    "label": "Special Task Force Bounty Medal III",
+    "item_icon": "Icon_item_12100087"
+  },
+  "gsa-arsenal-handbook-i": {
+    "label": "GSA Arsenal Handbook I",
+    "item_icon": "Icon_item_12100048"
+  },
+  "gsa-arsenal-handbook-ii": {
+    "label": "GSA Arsenal Handbook II",
+    "item_icon": "Icon_item_12100049"
+  },
+  "gsa-arsenal-handbook-iii": {
+    "label": "GSA Arsenal Handbook III",
+    "item_icon": "Icon_item_12100050"
+  },
+  "gsa-arsenal-handbook-iv": {
+    "label": "GSA Arsenal Handbook IV",
+    "item_icon": "Icon_item_12100051"
+  },
+  "gsa-bounty-medal-iii": {
+    "label": "GSA Bounty Medal III",
+    "item_icon": "Icon_item_12100054"
+  },
+  "carlo-arsenal-handbook-i": {
+    "label": "Carlo Arsenal Handbook I",
+    "item_icon": "Icon_item_12100101"
+  },
+  "carlo-arsenal-handbook-ii": {
+    "label": "Carlo Arsenal Handbook II",
+    "item_icon": "Icon_item_12100011"
+  },
+  "carlo-arsenal-handbook-iii": {
+    "label": "Carlo Arsenal Handbook III",
+    "item_icon": "Icon_item_12100010"
+  },
+  "carlo-arsenal-handbook-iv": {
+    "label": "Carlo Arsenal Handbook IV",
+    "item_icon": "Icon_item_12100012"
+  },
+  "carlo-bounty-medal-iii": {
+    "label": "Carlo Bounty Medal III",
+    "item_icon": "Icon_item_12100015"
+  },
+  "thunderbolt-arsenal-handbook-iv": {
+    "label": "Thunderbolt Arsenal Handbook IV",
+    "item_icon": "Icon_item_12100104"
+  },
+  "thunderbolt-arsenal-handbook-v": {
+    "label": "Thunderbolt Arsenal Handbook V",
+    "item_icon": "Icon_item_12100105"
+  },
+  "thunderbolt-arsenal-handbook-vi": {
+    "label": "Thunderbolt Arsenal Handbook VI",
+    "item_icon": "Icon_item_12100106"
+  },
+  "thunderbolt-arsenal-handbook-vii": {
+    "label": "Thunderbolt Arsenal Handbook VII",
+    "item_icon": "Icon_item_12100107"
+  },
+  "thunderbolt-bounty-medal-vi": {
+    "label": "Thunderbolt Bounty Medal VI",
+    "item_icon": "Icon_item_12100110"
   }
 }

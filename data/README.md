@@ -51,7 +51,7 @@ official values. See "Using the mined game database" in the root
 | `modules.json` | module family ID | A module and its text per level |
 | `weapons.json` | weapon ID | One weapon. References its passives in `skills.json` |
 | `backpacks.json` | backpack ID | One backpack, its skill and crafting materials |
-| `materials.json` | material slug | Generic crafting materials (label + icon) |
+| `materials.json` | material slug | Crafting materials (label + icon) and the recipe of crafted ones |
 
 ### `pilots.json`
 
@@ -201,13 +201,18 @@ pilot only needs its own γ partitions, `<pilotID>-gamma1` and
   "models": "Light/Medium/Heavy", "slot": "Hand", "range": "2", "weight": "480", "atk": "1385",
   "shield": "…", "grade": "70", "hp": "3831", "understanding": "4558",
   "describe": "…", "pilot": "Rosa", "version": "1.2", "ac": 2,
-  "passives": ["53037"]
+  "passives": ["53037"],
+  "crafting": [
+    { "material": "dl-bounty-medal-ii", "qty": 8 },
+    { "material": "dl-bounty-medal-i", "qty": 4 }
+  ]
 }
 ```
 
 `pilot` is the paired pilot's name (signature weapons). `passives` are
 `skills.json` IDs (`kind: "weapon"`). `grade`, `hp` and `understanding`
-aren't displayed.
+aren't displayed. `crafting` is the Workshop recipe, in the same format as a
+backpack's (an SSSR weapon's starts with its UR version as `weapon`).
 
 ### `backpacks.json` and `materials.json`
 
@@ -217,7 +222,7 @@ aren't displayed.
   "icon": "Icon_backpack_61100101", "version": "3.7", "ac": 21,
   "skill": { "id": "", "name": "Overload Drive · First Strike", "icon": "…", "effect": "…" },
   "crafting": [
-    { "item": "60902405", "qty": 1, "composite": true },
+    { "backpack": "60902405", "qty": 1, "composite": true },
     { "material": "random-composite", "qty": 1, "composite": true },
     { "material": "random-s-grade", "qty": 3 },
     { "material": "ac-blueprint", "qty": 1 }
@@ -225,9 +230,19 @@ aren't displayed.
 }
 ```
 
-A backpack's skill is stored inline. A `crafting` entry is either another
-backpack (`item`) or a `materials.json` slug (`material`). `how_get`,
+A backpack's skill is stored inline. A `crafting` entry is a `backpack` ID, a
+`weapon` ID or a `materials.json` slug (`material`), with a `qty`;
+`composite: true` marks a Composite backpack. `how_get`,
 `related_description` and `repair` aren't displayed.
+
+`scripts/build_crafting.py` writes the recipes of everything on Global from
+the game's Workshop tables, and the crafted materials (blueprints, Arsenal
+Handbooks, Bounty Medals) in `materials.json`. Entries newer than Global
+(v2.6+) are kept as they are; the Special backpacks among them still use the
+generic `ac-blueprint`. A material has either an `icon` (a file in the assets
+repo's `data/backpacks/materials/`) or an `item_icon` (a game item icon in
+`data/items/`, extracted by `extract_item_icons.py`), and a crafted one has
+its own `crafting` list, shown under the item's recipe.
 
 ## Adding a pilot
 

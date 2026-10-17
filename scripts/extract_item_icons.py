@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
-"""Extract the item icons the boss drops use (bosses.json) from the game's
-bundles into the assets repo (data/items/<icon>.png).
+"""Extract the item icons the boss drops (bosses.json) and crafting materials
+(data/db/materials.json) use from the game's bundles into the assets repo
+(data/items/<icon>.png).
 
 The icons are sprites in the game's ui_uiimages_uiicons_itemtype_abs_* bundles:
 the installed copies and any newer ones the game downloaded into its cache
@@ -25,6 +26,7 @@ sys.path.insert(0, os.path.join(ROOT, 'data', 'screenshots', 'MRT_FieldWiki', 'R
 import settings  # noqa: E402
 
 BOSSES = os.path.join(HERE, 'bosses.json')
+MATERIALS = os.path.join(ROOT, 'data', 'db', 'materials.json')
 ASSETS_DIR = os.environ.get('ASSETS_DIR', os.path.join(os.path.dirname(ROOT), 'mecharashi-wiki-assets'))
 OUT_DIR = os.path.join(ASSETS_DIR, 'data', 'items')
 BUNDLE_DIR = os.path.join(settings.GAME_DIR, 'Mecharashi_Data', 'StreamingAssets', 'ExportAssetBundle')
@@ -33,12 +35,15 @@ PREFIX = 'ui_uiimages_uiicons_itemtype_abs_'
 
 
 def needed_icons():
-    """Every item icon a drop in bosses.json uses."""
+    """Every item icon a drop in bosses.json or a crafting material uses."""
     with open(BOSSES, encoding='utf-8') as f:
         data = json.load(f)
     sets = [st['drops'] for c in data['clearance_ops'] for st in c['stages'] if 'drops' in st]
     sets += [d for s in data['armed_conquest'] for st in s['stages'] for d in st.get('drops', {}).values()]
-    return {it['icon'] for d in sets for key in ('items', 'always', 'first') for it in d.get(key, []) if 'icon' in it}
+    icons = {it['icon'] for d in sets for key in ('items', 'always', 'first') for it in d.get(key, []) if 'icon' in it}
+    with open(MATERIALS, encoding='utf-8') as f:
+        icons |= {m['item_icon'] for m in json.load(f).values() if 'item_icon' in m}
+    return icons
 
 
 def newest_bundles():
