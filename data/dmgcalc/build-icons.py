@@ -139,8 +139,9 @@ def main():
                 out['adv'][o['fx']] = skill_icon(icon)
 
     bosses = load('bosses/bosses.json')['bosses']
+    by_name = {n: b for b in bosses.values() for n in [b['name'], *b.get('aliases', [])]}
     for t in D['targets']:
-        b = bosses.get(t['boss'])
+        b = by_name.get(t['boss'])
         if b and b.get('portrait'):
             out['boss'][t['boss']] = b['portrait']
 

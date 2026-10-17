@@ -1,4 +1,5 @@
-"""Split the mined Damage Bench (data/screenshots/mined/Damage_Bench.html) into
+"""Split the mined Damage Bench
+(data/screenshots/mined/MRT_FieldWiki/working/drafts/Damage_Bench.html) into
 the files served at /dmgcalc/. Run: python3 data/dmgcalc/extract-bench.py
 
   dmgcalc/bench.css           the bench's <style> block
@@ -21,7 +22,7 @@ import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.join(HERE, '..', '..')
-SRC = os.path.join(HERE, '..', 'screenshots', 'mined', 'Damage_Bench.html')
+SRC = os.path.join(HERE, '..', 'screenshots', 'mined', 'MRT_FieldWiki', 'working', 'drafts', 'Damage_Bench.html')
 PAGE_DIR = os.path.join(ROOT, 'dmgcalc')
 OUT_CSS = os.path.join(PAGE_DIR, 'bench.css')
 OUT_JS = os.path.join(PAGE_DIR, 'bench.js')
@@ -110,6 +111,14 @@ def tokens(x, out=None):
     return out
 
 
+def dedent(text):
+    """Remove the indent every non-blank line shares (the bench indents its
+    <style> and <script> blocks)."""
+    lines = text.split('\n')
+    n = min((len(l) - len(l.lstrip(' ')) for l in lines if l.strip()), default=0)
+    return '\n'.join(l[n:] for l in lines)
+
+
 def main():
     html = open(SRC, encoding='utf-8').read()
 
@@ -118,7 +127,7 @@ def main():
     if not css or not script:
         sys.exit('Damage_Bench.html: <style> or <script> block not found')
 
-    lines = script.group(1).split('\n')
+    lines = dedent(script.group(1)).split('\n')
     data_line = next((i for i, l in enumerate(lines) if l.startswith(DATA_PREFIX)), None)
     if data_line is None:
         sys.exit('Damage_Bench.html: "%s{...}" line not found' % DATA_PREFIX)
@@ -140,7 +149,7 @@ def main():
     os.makedirs(PAGE_DIR, exist_ok=True)
     if '--data-only' not in sys.argv:
         with open(OUT_CSS, 'w', encoding='utf-8') as f:
-            f.write(css.group(1))
+            f.write(dedent(css.group(1)))
         with open(OUT_JS, 'w', encoding='utf-8') as f:
             f.write('\n'.join(code))
     with open(OUT_DATA, 'w', encoding='utf-8') as f:

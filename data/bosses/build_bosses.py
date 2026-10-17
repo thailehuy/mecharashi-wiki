@@ -75,9 +75,10 @@ def ac_versions():
 
 
 def part_hp(t):
-    # Both arms always have the same HP.
+    # Both arms have the same HP, except that the DMG calc adds a shield's HP
+    # to the arm holding it; the lower one is the bare arm's.
     hp = t['hp']
-    return {'body': round(hp['Body']), 'arm': round(hp['Left arm']), 'legs': round(hp['Legs'])}
+    return {'body': round(hp['Body']), 'arm': round(min(hp['Left arm'], hp['Right arm'])), 'legs': round(hp['Legs'])}
 
 
 def mech_class(t):
@@ -507,6 +508,9 @@ def main():
 
     ac, co = {}, {}
     for t in load_targets():
+        # Second bosses (Hayato beside Sunny) are listed under the stage's units by the guide.
+        if t.get('role') == 'companion':
+            continue
         if t['content'] == 'Armed Conquest':
             m = AC_LABEL.match(t['label'])
             season, diff, slot, boss = m.group(1), m.group(2), int(m.group(3)), m.group(4)

@@ -32,6 +32,7 @@
       <label class="f"><span class="lbl" title="How sure the attack counts are: 90% = 9 fights in 10 end by then. Also sets the unlucky-attack share (worst 10%).">Certainty <span id="t-confv">90%</span></span><input type="range" id="t-conf" min="50" max="99" value="90"></label>
     </div>
     <div class="tstats" id="t-stats"></div>
+    <div class="checks" id="t-dead" style="margin-top:6px"></div>
     <div class="warnbox" id="t-shield" hidden></div>
     <details class="sec" style="border:0"><summary><span class="lbl">Enemy &amp; stage effects</span><span class="sub" id="t-fxsum"></span></summary>
       <div class="sbody" id="t-fx"></div></details>
@@ -55,9 +56,9 @@
   <div id="view-bench-notes">
 
   <div class="notes">
-    <div><b>How exact is this?</b> Pilot attribute and weapon attack (FP, refits, R&amp;D, features, suitability) match the game's battle values exactly; hit chance fits 98% of observed hit rolls.
+    <div><b>How exact is this?</b> Pilot attribute and weapon attack (FP, refits, R&amp;D, features, suitability) match the game exactly; the hit chance matches 98% of the game's hit rolls.
       Crit chance = crit rate × (1 + features) + crit rate added after features + the crit-points term (your crit points vs the target's crit resist) − the target's crit-rate resist; this matches the in-game attack preview.
-      Buffs gained during a fight (stacks, triggers) are not modelled unless you switch them on; use <i>Extra bonuses</i> for anything else.</div>
+      Buffs gained during a fight (stacks, triggers) are not modelled unless you switch them on or set their stacks under <i>Situation</i>; use <i>Extra bonuses</i> for anything else on your unit and the target's <i>Other buffs on it</i> for anything else on the target.</div>
     <div>DMG_per_shot = (srcAtk × AtrDef_coeff ÷ Nshots_base − eArmor ÷ 10) × SkillM × (1 + DMG%) × (1 + eDMGFactor%, when the target has one) × (1 + FinalDMG%), × (1 + CritDMG%) on a crit. Accessories trigger once per attack; hit and crit roll per shot.</div>
     <div class="meta" id="meta" style="margin-top:8px"></div>
   </div>
