@@ -374,9 +374,17 @@ var Glossary = (function () {
       positionTip(el, $tip);
     }
 
+    // A faded-out tip is still laid out at its last spot, which on a shorter
+    // page (or after navigating) stretches the document past its content:
+    // once the fade is done, park it empty at the top.
+    var hideTimer = null;
     function hideTip() {
       tipEl = null;
       $tip.removeClass('visible');
+      clearTimeout(hideTimer);
+      hideTimer = setTimeout(function () {
+        if (!$tip.hasClass('visible')) $tip.empty().css({ top: 0, left: 0 });
+      }, 150);
     }
 
     $(document).on('mouseenter', '.kw', function () {
@@ -416,6 +424,10 @@ var Glossary = (function () {
     $(document).on('click', function (e) {
       if (tipEl && !$(e.target).closest('#kw-tooltip').length) hideTip();
     });
+
+    // Back/forward swaps the page out from under a hovered keyword without a
+    // mouseleave.
+    $(window).on('popstate', hideTip);
 
     $(document).on('click', '.section-jump-link', function (e) {
       e.preventDefault();

@@ -748,15 +748,19 @@ a.weapon-card {
   white-space: normal;
   box-shadow: 0 4px 16px rgba(0,0,0,0.5);
   pointer-events: none;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.1s;
+  /* display, not visibility/opacity: a hidden tip that is still laid out
+     can stretch the page when its tag sits near the bottom. */
+  display: none;
 }
 
 .avail-tag:hover .avail-tooltip,
 .avail-tag:focus .avail-tooltip {
-  opacity: 1;
-  visibility: visible;
+  display: block;
+  animation: avail-tooltip-in 0.1s;
+}
+
+@keyframes avail-tooltip-in {
+  from { opacity: 0; }
 }
 
 .rank-b {
@@ -906,8 +910,8 @@ a.weapon-card {
 
 .pilot-attr:hover .avail-tooltip,
 .pilot-attr:focus .avail-tooltip {
-  opacity: 1;
-  visibility: visible;
+  display: block;
+  animation: avail-tooltip-in 0.1s;
 }
 
 .pilot-attr-icon {
