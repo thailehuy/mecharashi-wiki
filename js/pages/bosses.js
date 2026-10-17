@@ -12,7 +12,10 @@ function bossKit() {
   ((window.MechsData || {}).mechs || []).forEach(function (m) { mechNames[m.name] = true; });
 
   // Same items as the weapons and backpacks listings show for each AC.
-  var weapons = ((window.WeaponsData || {}).weapons || []).filter(function (w) { return w.quality === 'SSSR' && w.version; });
+  var allWeapons = (window.WeaponsData || {}).weapons || [];
+  var weapons = allWeapons.filter(function (w) { return w.quality === 'SSSR' && w.version; });
+  var weaponNames = {};
+  allWeapons.forEach(function (w) { weaponNames[w.name] = true; });
   var backpacks = ((window.BackpacksData || {}).backpacks || []).filter(function (b) { return b.quality === 'SSSR' && b.version; });
 
   // "Dias (Centurion parts)": link the ST when the wiki has a page for it.
@@ -245,8 +248,34 @@ function bossKit() {
     );
   }
 
+  // What a Clearance Ops boss can drop (the game lists them, not their odds):
+  // weapons, best quality first, then other items, by name. Weapons the wiki
+  // has a page for link to it; icons fall back to the game's CDN.
+  function dropsHtml(st) {
+    var d = st.drops;
+    if (!d) return '';
+    var count = [d.weapons.length ? d.weapons.length + ' weapons' : '', d.items ? d.items.length + ' items' : '']
+      .filter(Boolean).join(' + ');
+    return (
+      '<details class="boss-clues boss-drops"><summary>Drops: ' + count + '</summary>' +
+        (d.weapons.length ? '<div class="boss-drop-list">' + d.weapons.map(function (w) {
+          var cdn = WEAPON_IMG_BASE + encodeURIComponent(w.icon) + '.png';
+          var inner =
+            '<img src="' + weaponIconSrc({ ID: w.id, icon: w.icon, type: w.type }) + '" onerror="this.onerror=null;this.src=\'' + cdn + '\';" alt="" loading="lazy" />' +
+            '<span>' + esc(w.name) + '<small class="boss-drop-q boss-drop-q-' + esc(w.quality.toLowerCase()) + '">' + esc(w.quality) + '</small></span>';
+          return weaponNames[w.name]
+            ? '<a class="boss-gear-item" href="' + App.href('weapons', w.name) + '">' + inner + '</a>'
+            : '<span class="boss-gear-item">' + inner + '</span>';
+        }).join('') + '</div>' : '') +
+        (d.items ? '<div class="boss-clue-unlock">Also drops: ' + d.items.map(function (it) {
+          return '<b>' + esc(it) + '</b>' + ((d.always || []).indexOf(it) >= 0 ? ' (always)' : '');
+        }).join(', ') + '</div>' : '') +
+      '</details>'
+    );
+  }
+
   // A row per stage: its number (and title), the boss with its HP and
-  // bounties, and the boss's skills beside it.
+  // bounties, and the boss's skills (and Clearance Ops drops) beside it.
   function stageRows(stages) {
     return stages.map(function (st) {
       var diffs = st.difficulties || [];
@@ -254,7 +283,7 @@ function bossKit() {
         '<div class="row g-3 boss-stage" id="stage-' + st.slot + '">' +
           stageIntro(st) +
           cardHtml(st, diffs[0], 'col-12 col-sm-5 col-md-3', bossHref(st.boss), null, '', bountiesHtml(st, diffs[0]), true) +
-          '<div class="col-12 col-sm-7 col-md-9">' + stageDetails(st, diffs[0]) + '</div>' +
+          '<div class="col-12 col-sm-7 col-md-9">' + stageDetails(st, diffs[0]) + dropsHtml(st) + '</div>' +
         '</div>'
       );
     }).join('');

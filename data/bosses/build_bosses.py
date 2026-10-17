@@ -10,13 +10,16 @@ stage's description, bounties and clues and each Clearance Ops chapter's
 description and turn limit from the game tables
 (RebuildGameUpdate/out/stats.db) and what the Armed Conquest guide adds
 (ac-guide.json: skill cards, minions, Extreme modifiers, and descriptions,
-bounties and clues where the game tables lack them), then writes bosses.json
-and bosses.js. Mismatches between the guide and the game data are printed.
+bounties and clues where the game tables lack them) and each Clearance Ops
+boss's drops (build_co_drops.py), then writes bosses.json and bosses.js.
+Mismatches between the guide and the game data are printed.
 """
 import json
 import os
 import re
 import sqlite3
+
+from build_co_drops import chapter_drops
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(os.path.dirname(HERE))
@@ -657,12 +660,22 @@ def main():
                 raise ValueError('%s stage %d: DMG calc has %s, DB has %s' % (s['name'], st['slot'], st['boss'], boss))
     co_skills = boss_skills(bosses, 'Clearance Ops')
     chapters = chapter_info()
+    drop_warnings = []
+    drops = chapter_drops(drop_warnings.append)
     for c in co.values():
         group = '%d. %s' % (c['chapter'], c['name'])
+        boss_drops = {canonical(b['boss'], bosses): b for b in drops[c['battle']]['bosses']}
         for st in c['stages'].values():
             boss, _, st['skills'], stage_ids[id(st)] = co_skills[(group, st['slot'])]
             if boss != st['boss']:
                 raise ValueError('%s stage %d: DMG calc has %s, DB has %s' % (group, st['slot'], st['boss'], boss))
+            d = boss_drops.pop(st['boss'], None)
+            if d is None:
+                drop_warnings.append('%s stage %d: no drops for %s' % (group, st['slot'], st['boss']))
+            else:
+                st['drops'] = {k: v for k, v in d.items() if k not in ('boss_id', 'boss')}
+        for boss in boss_drops:
+            drop_warnings.append('%s: drops for %s, who is on no stage' % (group, boss))
         # Companions fight beside the chapter's bosses, on no stage of their own.
         companions = [{'name': k[2], 'mech': companion_mechs.get((group, k[2])), 'skills': v[2], 'ids': v[3]}
                       for k, v in co_skills.items() if k[0] == group and k[1] is None]
@@ -722,6 +735,8 @@ def main():
                 sk.pop('composed', None)
     for w in warnings:
         print('guide:', w)
+    for w in drop_warnings:
+        print('drops:', w)
 
     # Newest first: AC by season number, CO by chapter number.
     data['armed_conquest'] = sorted(ac.values(), key=lambda s: -s['number'])

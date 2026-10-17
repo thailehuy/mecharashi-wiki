@@ -9414,7 +9414,15 @@ window.BossesData = {
                 }
               ]
             }
-          ]
+          ],
+          "drops": {
+            "weapons": [],
+            "items": [
+              "B-Grade Chip Loot",
+              "A-Grade Chip Loot",
+              "S-Grade Chip Loot"
+            ]
+          }
         },
         {
           "slot": 2,
@@ -9467,7 +9475,15 @@ window.BossesData = {
                 }
               ]
             }
-          ]
+          ],
+          "drops": {
+            "weapons": [],
+            "items": [
+              "B-Grade Chip Loot",
+              "A-Grade Chip Loot",
+              "S-Grade Chip Loot"
+            ]
+          }
         },
         {
           "slot": 3,
@@ -9526,7 +9542,15 @@ window.BossesData = {
                 }
               ]
             }
-          ]
+          ],
+          "drops": {
+            "weapons": [],
+            "items": [
+              "B-Grade Chip Loot",
+              "A-Grade Chip Loot",
+              "S-Grade Chip Loot"
+            ]
+          }
         },
         {
           "slot": 4,
@@ -9613,7 +9637,15 @@ window.BossesData = {
                 }
               ]
             }
-          ]
+          ],
+          "drops": {
+            "weapons": [],
+            "items": [
+              "B-Grade Chip Loot",
+              "A-Grade Chip Loot",
+              "S-Grade Chip Loot"
+            ]
+          }
         }
       ],
       "description": "At the crossroads, going left or right is a philosophical question. If given another chance, would they still set foot on Milkhama and choose to become mercenaries?",
@@ -9691,7 +9723,131 @@ window.BossesData = {
                 }
               ]
             }
-          ]
+          ],
+          "drops": {
+            "weapons": [
+              {
+                "id": 10513127,
+                "name": "Polymeric Barrier - EX",
+                "quality": "SSR",
+                "type": "Buckler",
+                "icon": "Icon_weapon_10500401"
+              },
+              {
+                "id": 20413127,
+                "name": "Blaze Howl - EX",
+                "quality": "SSR",
+                "type": "Flamethrower",
+                "icon": "Icon_weapon_20500301"
+              },
+              {
+                "id": 20423127,
+                "name": "Corona - EX",
+                "quality": "SSR",
+                "type": "Flamethrower",
+                "icon": "Icon_weapon_20500401"
+              },
+              {
+                "id": 40123127,
+                "name": "Hanuman - EX",
+                "quality": "SSR",
+                "type": "Missile",
+                "icon": "Icon_weapon_40100301"
+              },
+              {
+                "id": 40113127,
+                "name": "Kumara - EX",
+                "quality": "SSR",
+                "type": "Missile",
+                "icon": "Icon_weapon_40100401"
+              },
+              {
+                "id": 10413127,
+                "name": "Starfield - EX",
+                "quality": "SSR",
+                "type": "Shield",
+                "icon": "Icon_weapon_10400501"
+              },
+              {
+                "id": 10512112,
+                "name": "Aneto",
+                "quality": "SR",
+                "type": "Buckler",
+                "icon": "Icon_weapon_10500201"
+              },
+              {
+                "id": 20412111,
+                "name": "Fafnir",
+                "quality": "SR",
+                "type": "Flamethrower",
+                "icon": "Icon_weapon_20500201"
+              },
+              {
+                "id": 20422111,
+                "name": "Fafnir - LW",
+                "quality": "SR",
+                "type": "Flamethrower",
+                "icon": "Icon_weapon_20500201"
+              },
+              {
+                "id": 40112111,
+                "name": "Thunder",
+                "quality": "SR",
+                "type": "Missile",
+                "icon": "Icon_weapon_40100101"
+              },
+              {
+                "id": 40122111,
+                "name": "Thunder - LW",
+                "quality": "SR",
+                "type": "Missile",
+                "icon": "Icon_weapon_40100101"
+              },
+              {
+                "id": 10412111,
+                "name": "Submerged Reef",
+                "quality": "SR",
+                "type": "Shield",
+                "icon": "Icon_weapon_10400201"
+              },
+              {
+                "id": 50211111,
+                "name": "Raptor's Beak",
+                "quality": "R",
+                "type": "Funnel",
+                "icon": "Icon_weapon_40300101"
+              },
+              {
+                "id": 20211111,
+                "name": "Ifrit",
+                "quality": "R",
+                "type": "HeavyMachineGun",
+                "icon": "Icon_weapon_20400101"
+              },
+              {
+                "id": 10211112,
+                "name": "Heavy Pile",
+                "quality": "R",
+                "type": "PileBunker",
+                "icon": "Icon_weapon_10200101"
+              },
+              {
+                "id": 10811111,
+                "name": "Millstone",
+                "quality": "R",
+                "type": "Saw",
+                "icon": "Icon_weapon_10600101"
+              }
+            ],
+            "items": [
+              "Assault Weapon Essence VI",
+              "Tactical Weapon Essence VI",
+              "Shield Weapon Essence VI"
+            ],
+            "always": [
+              "Shield Weapon Essence VI"
+            ]
+          }
         },
         {
           "slot": 2,
@@ -9788,7 +9944,131 @@ window.BossesData = {
                 }
               ]
             }
-          ]
+          ],
+          "drops": {
+            "weapons": [
+              {
+                "id": 50213127,
+                "name": "Foehn - EX",
+                "quality": "SSR",
+                "type": "Funnel",
+                "icon": "Icon_weapon_40300301"
+              },
+              {
+                "id": 50113127,
+                "name": "Torch Tower - EX",
+                "quality": "SSR",
+                "type": "RailGun",
+                "icon": "Icon_weapon_50100101"
+              },
+              {
+                "id": 40213127,
+                "name": "Molten - EX",
+                "quality": "SSR",
+                "type": "Rocket",
+                "icon": "Icon_weapon_40200401"
+              },
+              {
+                "id": 40223127,
+                "name": "Surging Flame - EX",
+                "quality": "SSR",
+                "type": "Rocket",
+                "icon": "Icon_weapon_40200301"
+              },
+              {
+                "id": 20313127,
+                "name": "Firebolt - EX",
+                "quality": "SSR",
+                "type": "ShotGun",
+                "icon": "Icon_weapon_20300401"
+              },
+              {
+                "id": 20323127,
+                "name": "T-Rex - EX",
+                "quality": "SSR",
+                "type": "ShotGun",
+                "icon": "Icon_weapon_20300301"
+              },
+              {
+                "id": 50212111,
+                "name": "Polaris",
+                "quality": "SR",
+                "type": "Funnel",
+                "icon": "Icon_weapon_40300201"
+              },
+              {
+                "id": 50112111,
+                "name": "Ex-Wisdom",
+                "quality": "SR",
+                "type": "RailGun",
+                "icon": "Icon_weapon_50100201"
+              },
+              {
+                "id": 40212112,
+                "name": "Albatross",
+                "quality": "SR",
+                "type": "Rocket",
+                "icon": "Icon_weapon_40200201"
+              },
+              {
+                "id": 40222112,
+                "name": "Albatross - LW",
+                "quality": "SR",
+                "type": "Rocket",
+                "icon": "Icon_weapon_40200201"
+              },
+              {
+                "id": 20312111,
+                "name": "Gale",
+                "quality": "SR",
+                "type": "ShotGun",
+                "icon": "Icon_weapon_20300201"
+              },
+              {
+                "id": 20322111,
+                "name": "Gale - LW",
+                "quality": "SR",
+                "type": "ShotGun",
+                "icon": "Icon_weapon_20300201"
+              },
+              {
+                "id": 10911112,
+                "name": "Caladbolg",
+                "quality": "R",
+                "type": "Blade",
+                "icon": "Icon_weapon_10700101"
+              },
+              {
+                "id": 40111111,
+                "name": "Gordius",
+                "quality": "R",
+                "type": "Missile",
+                "icon": "Icon_weapon_40100201"
+              },
+              {
+                "id": 10311111,
+                "name": "Torero",
+                "quality": "R",
+                "type": "Rod",
+                "icon": "Icon_weapon_10300101"
+              },
+              {
+                "id": 10411111,
+                "name": "Ferroalloy Shield",
+                "quality": "R",
+                "type": "Shield",
+                "icon": "Icon_weapon_10400101"
+              }
+            ],
+            "items": [
+              "Assault Weapon Essence VI",
+              "Tactical Weapon Essence VI",
+              "Shield Weapon Essence VI"
+            ],
+            "always": [
+              "Shield Weapon Essence VI"
+            ]
+          }
         },
         {
           "slot": 3,
@@ -9871,7 +10151,131 @@ window.BossesData = {
                 }
               ]
             }
-          ]
+          ],
+          "drops": {
+            "weapons": [
+              {
+                "id": 20213127,
+                "name": "Behemoth - EX",
+                "quality": "SSR",
+                "type": "HeavyMachineGun",
+                "icon": "Icon_weapon_20400302"
+              },
+              {
+                "id": 30123127,
+                "name": "Gazer - EX",
+                "quality": "SSR",
+                "type": "LightSniper",
+                "icon": "Icon_weapon_30100301"
+              },
+              {
+                "id": 30113127,
+                "name": "Maxx - EX",
+                "quality": "SSR",
+                "type": "LightSniper",
+                "icon": "Icon_weapon_30100401"
+              },
+              {
+                "id": 20123127,
+                "name": "Mark - EX",
+                "quality": "SSR",
+                "type": "MachineGun",
+                "icon": "Icon_weapon_20100301"
+              },
+              {
+                "id": 20113127,
+                "name": "Nightwither - EX",
+                "quality": "SSR",
+                "type": "MachineGun",
+                "icon": "Icon_weapon_20100401"
+              },
+              {
+                "id": 10813127,
+                "name": "Beowulf - EX",
+                "quality": "SSR",
+                "type": "Saw",
+                "icon": "Icon_weapon_10600201"
+              },
+              {
+                "id": 20212111,
+                "name": "Wrath of Mars",
+                "quality": "SR",
+                "type": "HeavyMachineGun",
+                "icon": "Icon_weapon_20400201"
+              },
+              {
+                "id": 30112112,
+                "name": "Whistle",
+                "quality": "SR",
+                "type": "LightSniper",
+                "icon": "Icon_weapon_30100201"
+              },
+              {
+                "id": 30122112,
+                "name": "Whistle - LW",
+                "quality": "SR",
+                "type": "LightSniper",
+                "icon": "Icon_weapon_30100201"
+              },
+              {
+                "id": 20112111,
+                "name": "Art of Ambush",
+                "quality": "SR",
+                "type": "MachineGun",
+                "icon": "Icon_weapon_20100201"
+              },
+              {
+                "id": 20122111,
+                "name": "Art of Ambush - LW",
+                "quality": "SR",
+                "type": "MachineGun",
+                "icon": "Icon_weapon_20100201"
+              },
+              {
+                "id": 10812111,
+                "name": "Cadmus",
+                "quality": "SR",
+                "type": "Saw",
+                "icon": "Icon_weapon_10600301"
+              },
+              {
+                "id": 20411111,
+                "name": "Hearthspray",
+                "quality": "R",
+                "type": "Flamethrower",
+                "icon": "Icon_weapon_20500101"
+              },
+              {
+                "id": 30211112,
+                "name": "Spruce",
+                "quality": "R",
+                "type": "HeavySniper",
+                "icon": "Icon_weapon_30200101"
+              },
+              {
+                "id": 20111111,
+                "name": "Courage",
+                "quality": "R",
+                "type": "MachineGun",
+                "icon": "Icon_weapon_20100101"
+              },
+              {
+                "id": 50111111,
+                "name": "Prism",
+                "quality": "R",
+                "type": "RailGun",
+                "icon": "Icon_weapon_50100301"
+              }
+            ],
+            "items": [
+              "Melee Weapon Essence VI",
+              "Ranged Weapon Essence VI",
+              "Shield Weapon Essence VI"
+            ],
+            "always": [
+              "Shield Weapon Essence VI"
+            ]
+          }
         },
         {
           "slot": 4,
@@ -9942,7 +10346,117 @@ window.BossesData = {
                 }
               ]
             }
-          ]
+          ],
+          "drops": {
+            "weapons": [
+              {
+                "id": 10913127,
+                "name": "Excalibur - EX",
+                "quality": "SSR",
+                "type": "Blade",
+                "icon": "Icon_weapon_10700301A"
+              },
+              {
+                "id": 30213127,
+                "name": "Red Fox - EX",
+                "quality": "SSR",
+                "type": "HeavySniper",
+                "icon": "Icon_weapon_30200301"
+              },
+              {
+                "id": 10113127,
+                "name": "Hail of Spikes - EX",
+                "quality": "SSR",
+                "type": "Knuckle",
+                "icon": "Icon_weapon_10100301"
+              },
+              {
+                "id": 10213127,
+                "name": "Triumph - EX",
+                "quality": "SSR",
+                "type": "PileBunker",
+                "icon": "Icon_weapon_10200301"
+              },
+              {
+                "id": 10313127,
+                "name": "Mountains - EX",
+                "quality": "SSR",
+                "type": "Rod",
+                "icon": "Icon_weapon_10300301"
+              },
+              {
+                "id": 10912112,
+                "name": "Arondight",
+                "quality": "SR",
+                "type": "Blade",
+                "icon": "Icon_weapon_10700201"
+              },
+              {
+                "id": 30212112,
+                "name": "Firebird",
+                "quality": "SR",
+                "type": "HeavySniper",
+                "icon": "Icon_weapon_30200201"
+              },
+              {
+                "id": 10112112,
+                "name": "Nutcracker",
+                "quality": "SR",
+                "type": "Knuckle",
+                "icon": "Icon_weapon_10100201"
+              },
+              {
+                "id": 10212112,
+                "name": "Thunderbolt",
+                "quality": "SR",
+                "type": "PileBunker",
+                "icon": "Icon_weapon_10200201"
+              },
+              {
+                "id": 10312111,
+                "name": "Gate Breaker",
+                "quality": "SR",
+                "type": "Rod",
+                "icon": "Icon_weapon_10300201"
+              },
+              {
+                "id": 10511112,
+                "name": "Toledo",
+                "quality": "R",
+                "type": "Buckler",
+                "icon": "Icon_weapon_10500101"
+              },
+              {
+                "id": 30111112,
+                "name": "Pioneer",
+                "quality": "R",
+                "type": "LightSniper",
+                "icon": "Icon_weapon_30100101"
+              },
+              {
+                "id": 40211112,
+                "name": "Neanderthal",
+                "quality": "R",
+                "type": "Rocket",
+                "icon": "Icon_weapon_40200101"
+              },
+              {
+                "id": 20311111,
+                "name": "Navigator",
+                "quality": "R",
+                "type": "ShotGun",
+                "icon": "Icon_weapon_20300101"
+              }
+            ],
+            "items": [
+              "Melee Weapon Essence VI",
+              "Ranged Weapon Essence VI",
+              "Shield Weapon Essence VI"
+            ],
+            "always": [
+              "Shield Weapon Essence VI"
+            ]
+          }
         }
       ],
       "description": "For so many years, Milkhama has been like this. A genius rises here, a nova appears there, today a rising star emerges, and tomorrow there will be a supernova. They are all eager to prove themselves, but as for the outcome, that's hard to say.",
@@ -10056,7 +10570,131 @@ window.BossesData = {
                 }
               ]
             }
-          ]
+          ],
+          "drops": {
+            "weapons": [
+              {
+                "id": 50213126,
+                "name": "Foehn - EX",
+                "quality": "SSR",
+                "type": "Funnel",
+                "icon": "Icon_weapon_40300301"
+              },
+              {
+                "id": 20213126,
+                "name": "Behemoth - EX",
+                "quality": "SSR",
+                "type": "HeavyMachineGun",
+                "icon": "Icon_weapon_20400302"
+              },
+              {
+                "id": 20123126,
+                "name": "Mark - EX",
+                "quality": "SSR",
+                "type": "MachineGun",
+                "icon": "Icon_weapon_20100301"
+              },
+              {
+                "id": 20113126,
+                "name": "Nightwither - EX",
+                "quality": "SSR",
+                "type": "MachineGun",
+                "icon": "Icon_weapon_20100401"
+              },
+              {
+                "id": 40213126,
+                "name": "Molten - EX",
+                "quality": "SSR",
+                "type": "Rocket",
+                "icon": "Icon_weapon_40200401"
+              },
+              {
+                "id": 40223126,
+                "name": "Surging Flame - EX",
+                "quality": "SSR",
+                "type": "Rocket",
+                "icon": "Icon_weapon_40200301"
+              },
+              {
+                "id": 50212111,
+                "name": "Polaris",
+                "quality": "SR",
+                "type": "Funnel",
+                "icon": "Icon_weapon_40300201"
+              },
+              {
+                "id": 20212111,
+                "name": "Wrath of Mars",
+                "quality": "SR",
+                "type": "HeavyMachineGun",
+                "icon": "Icon_weapon_20400201"
+              },
+              {
+                "id": 20112111,
+                "name": "Art of Ambush",
+                "quality": "SR",
+                "type": "MachineGun",
+                "icon": "Icon_weapon_20100201"
+              },
+              {
+                "id": 20122111,
+                "name": "Art of Ambush - LW",
+                "quality": "SR",
+                "type": "MachineGun",
+                "icon": "Icon_weapon_20100201"
+              },
+              {
+                "id": 40212112,
+                "name": "Albatross",
+                "quality": "SR",
+                "type": "Rocket",
+                "icon": "Icon_weapon_40200201"
+              },
+              {
+                "id": 40222112,
+                "name": "Albatross - LW",
+                "quality": "SR",
+                "type": "Rocket",
+                "icon": "Icon_weapon_40200201"
+              },
+              {
+                "id": 10511112,
+                "name": "Toledo",
+                "quality": "R",
+                "type": "Buckler",
+                "icon": "Icon_weapon_10500101"
+              },
+              {
+                "id": 50211111,
+                "name": "Raptor's Beak",
+                "quality": "R",
+                "type": "Funnel",
+                "icon": "Icon_weapon_40300101"
+              },
+              {
+                "id": 30211112,
+                "name": "Spruce",
+                "quality": "R",
+                "type": "HeavySniper",
+                "icon": "Icon_weapon_30200101"
+              },
+              {
+                "id": 10811111,
+                "name": "Millstone",
+                "quality": "R",
+                "type": "Saw",
+                "icon": "Icon_weapon_10600101"
+              }
+            ],
+            "items": [
+              "Tactical Weapon Essence V",
+              "Assault Weapon Essence V",
+              "Shield Weapon Essence V"
+            ],
+            "always": [
+              "Shield Weapon Essence V"
+            ]
+          }
         },
         {
           "slot": 2,
@@ -10125,7 +10763,117 @@ window.BossesData = {
                 }
               ]
             }
-          ]
+          ],
+          "drops": {
+            "weapons": [
+              {
+                "id": 20413126,
+                "name": "Blaze Howl - EX",
+                "quality": "SSR",
+                "type": "Flamethrower",
+                "icon": "Icon_weapon_20500301"
+              },
+              {
+                "id": 20423126,
+                "name": "Corona - EX",
+                "quality": "SSR",
+                "type": "Flamethrower",
+                "icon": "Icon_weapon_20500401"
+              },
+              {
+                "id": 10113126,
+                "name": "Hail of Spikes - EX",
+                "quality": "SSR",
+                "type": "Knuckle",
+                "icon": "Icon_weapon_10100301"
+              },
+              {
+                "id": 10213126,
+                "name": "Triumph - EX",
+                "quality": "SSR",
+                "type": "PileBunker",
+                "icon": "Icon_weapon_10200301"
+              },
+              {
+                "id": 10313126,
+                "name": "Mountains - EX",
+                "quality": "SSR",
+                "type": "Rod",
+                "icon": "Icon_weapon_10300301"
+              },
+              {
+                "id": 20412122,
+                "name": "Fafnir",
+                "quality": "SR",
+                "type": "Flamethrower",
+                "icon": "Icon_weapon_20500201"
+              },
+              {
+                "id": 20422122,
+                "name": "Fafnir - LW",
+                "quality": "SR",
+                "type": "Flamethrower",
+                "icon": "Icon_weapon_20500201"
+              },
+              {
+                "id": 10112122,
+                "name": "Nutcracker",
+                "quality": "SR",
+                "type": "Knuckle",
+                "icon": "Icon_weapon_10100201"
+              },
+              {
+                "id": 10212122,
+                "name": "Thunderbolt",
+                "quality": "SR",
+                "type": "PileBunker",
+                "icon": "Icon_weapon_10200201"
+              },
+              {
+                "id": 10312122,
+                "name": "Gate Breaker",
+                "quality": "SR",
+                "type": "Rod",
+                "icon": "Icon_weapon_10300201"
+              },
+              {
+                "id": 10911122,
+                "name": "Caladbolg",
+                "quality": "R",
+                "type": "Blade",
+                "icon": "Icon_weapon_10700101"
+              },
+              {
+                "id": 50111122,
+                "name": "Prism",
+                "quality": "R",
+                "type": "RailGun",
+                "icon": "Icon_weapon_50100301"
+              },
+              {
+                "id": 40211122,
+                "name": "Neanderthal",
+                "quality": "R",
+                "type": "Rocket",
+                "icon": "Icon_weapon_40200101"
+              },
+              {
+                "id": 10411122,
+                "name": "Ferroalloy Shield",
+                "quality": "R",
+                "type": "Shield",
+                "icon": "Icon_weapon_10400101"
+              }
+            ],
+            "items": [
+              "Assault Weapon Essence V",
+              "Melee Weapon Essence V",
+              "Shield Weapon Essence V"
+            ],
+            "always": [
+              "Shield Weapon Essence V"
+            ]
+          }
         },
         {
           "slot": 3,
@@ -10184,7 +10932,131 @@ window.BossesData = {
                 }
               ]
             }
-          ]
+          ],
+          "drops": {
+            "weapons": [
+              {
+                "id": 10913126,
+                "name": "Excalibur - EX",
+                "quality": "SSR",
+                "type": "Blade",
+                "icon": "Icon_weapon_10700301A"
+              },
+              {
+                "id": 30213126,
+                "name": "Red Fox - EX",
+                "quality": "SSR",
+                "type": "HeavySniper",
+                "icon": "Icon_weapon_30200301"
+              },
+              {
+                "id": 40123126,
+                "name": "Hanuman - EX",
+                "quality": "SSR",
+                "type": "Missile",
+                "icon": "Icon_weapon_40100301"
+              },
+              {
+                "id": 40113126,
+                "name": "Kumara - EX",
+                "quality": "SSR",
+                "type": "Missile",
+                "icon": "Icon_weapon_40100401"
+              },
+              {
+                "id": 20313126,
+                "name": "Firebolt - EX",
+                "quality": "SSR",
+                "type": "ShotGun",
+                "icon": "Icon_weapon_20300401"
+              },
+              {
+                "id": 20323126,
+                "name": "T-Rex - EX",
+                "quality": "SSR",
+                "type": "ShotGun",
+                "icon": "Icon_weapon_20300301"
+              },
+              {
+                "id": 10912122,
+                "name": "Arondight",
+                "quality": "SR",
+                "type": "Blade",
+                "icon": "Icon_weapon_10700201"
+              },
+              {
+                "id": 30212122,
+                "name": "Firebird",
+                "quality": "SR",
+                "type": "HeavySniper",
+                "icon": "Icon_weapon_30200201"
+              },
+              {
+                "id": 40112122,
+                "name": "Thunder",
+                "quality": "SR",
+                "type": "Missile",
+                "icon": "Icon_weapon_40100101"
+              },
+              {
+                "id": 40122122,
+                "name": "Thunder - LW",
+                "quality": "SR",
+                "type": "Missile",
+                "icon": "Icon_weapon_40100101"
+              },
+              {
+                "id": 20312122,
+                "name": "Gale",
+                "quality": "SR",
+                "type": "ShotGun",
+                "icon": "Icon_weapon_20300201"
+              },
+              {
+                "id": 20322122,
+                "name": "Gale - LW",
+                "quality": "SR",
+                "type": "ShotGun",
+                "icon": "Icon_weapon_20300201"
+              },
+              {
+                "id": 20411122,
+                "name": "Hearthspray",
+                "quality": "R",
+                "type": "Flamethrower",
+                "icon": "Icon_weapon_20500101"
+              },
+              {
+                "id": 30111122,
+                "name": "Pioneer",
+                "quality": "R",
+                "type": "LightSniper",
+                "icon": "Icon_weapon_30100101"
+              },
+              {
+                "id": 20111122,
+                "name": "Courage",
+                "quality": "R",
+                "type": "MachineGun",
+                "icon": "Icon_weapon_20100101"
+              },
+              {
+                "id": 10211122,
+                "name": "Heavy Pile",
+                "quality": "R",
+                "type": "PileBunker",
+                "icon": "Icon_weapon_10200101"
+              }
+            ],
+            "items": [
+              "Tactical Weapon Essence V",
+              "Ranged Weapon Essence V",
+              "Shield Weapon Essence V"
+            ],
+            "always": [
+              "Shield Weapon Essence V"
+            ]
+          }
         },
         {
           "slot": 4,
@@ -10259,7 +11131,131 @@ window.BossesData = {
               "icon": "Icon_skill_passive_5163",
               "description": "Tactical Weapon Ammo Capacity +2.\nST Body HP +10% and DMG +5%."
             }
-          ]
+          ],
+          "drops": {
+            "weapons": [
+              {
+                "id": 10513126,
+                "name": "Polymeric Barrier - EX",
+                "quality": "SSR",
+                "type": "Buckler",
+                "icon": "Icon_weapon_10500401"
+              },
+              {
+                "id": 30123126,
+                "name": "Gazer - EX",
+                "quality": "SSR",
+                "type": "LightSniper",
+                "icon": "Icon_weapon_30100301"
+              },
+              {
+                "id": 30113126,
+                "name": "Maxx - EX",
+                "quality": "SSR",
+                "type": "LightSniper",
+                "icon": "Icon_weapon_30100401"
+              },
+              {
+                "id": 50113126,
+                "name": "Torch Tower - EX",
+                "quality": "SSR",
+                "type": "RailGun",
+                "icon": "Icon_weapon_50100101"
+              },
+              {
+                "id": 10813126,
+                "name": "Beowulf - EX",
+                "quality": "SSR",
+                "type": "Saw",
+                "icon": "Icon_weapon_10600201"
+              },
+              {
+                "id": 10413126,
+                "name": "Starfield - EX",
+                "quality": "SSR",
+                "type": "Shield",
+                "icon": "Icon_weapon_10400501"
+              },
+              {
+                "id": 10512122,
+                "name": "Aneto",
+                "quality": "SR",
+                "type": "Buckler",
+                "icon": "Icon_weapon_10500201"
+              },
+              {
+                "id": 30112122,
+                "name": "Whistle",
+                "quality": "SR",
+                "type": "LightSniper",
+                "icon": "Icon_weapon_30100201"
+              },
+              {
+                "id": 30122122,
+                "name": "Whistle - LW",
+                "quality": "SR",
+                "type": "LightSniper",
+                "icon": "Icon_weapon_30100201"
+              },
+              {
+                "id": 50112122,
+                "name": "Ex-Wisdom",
+                "quality": "SR",
+                "type": "RailGun",
+                "icon": "Icon_weapon_50100201"
+              },
+              {
+                "id": 10812122,
+                "name": "Cadmus",
+                "quality": "SR",
+                "type": "Saw",
+                "icon": "Icon_weapon_10600301"
+              },
+              {
+                "id": 10412122,
+                "name": "Submerged Reef",
+                "quality": "SR",
+                "type": "Shield",
+                "icon": "Icon_weapon_10400201"
+              },
+              {
+                "id": 20211122,
+                "name": "Ifrit",
+                "quality": "R",
+                "type": "HeavyMachineGun",
+                "icon": "Icon_weapon_20400101"
+              },
+              {
+                "id": 40111122,
+                "name": "Gordius",
+                "quality": "R",
+                "type": "Missile",
+                "icon": "Icon_weapon_40100201"
+              },
+              {
+                "id": 10311122,
+                "name": "Torero",
+                "quality": "R",
+                "type": "Rod",
+                "icon": "Icon_weapon_10300101"
+              },
+              {
+                "id": 20311122,
+                "name": "Navigator",
+                "quality": "R",
+                "type": "ShotGun",
+                "icon": "Icon_weapon_20300101"
+              }
+            ],
+            "items": [
+              "Melee Weapon Essence V",
+              "Ranged Weapon Essence V",
+              "Shield Weapon Essence V"
+            ],
+            "always": [
+              "Shield Weapon Essence V"
+            ]
+          }
         }
       ],
       "description": "The situation in Milkhama is turbulent, with various forces stepping in, intertwining with each other, each harboring ulterior motives and waiting for the best opportunity to intervene.",
@@ -10341,7 +11337,131 @@ window.BossesData = {
                 }
               ]
             }
-          ]
+          ],
+          "drops": {
+            "weapons": [
+              {
+                "id": 20413125,
+                "name": "Blaze Howl - EX",
+                "quality": "SSR",
+                "type": "Flamethrower",
+                "icon": "Icon_weapon_20500301"
+              },
+              {
+                "id": 20423125,
+                "name": "Corona - EX",
+                "quality": "SSR",
+                "type": "Flamethrower",
+                "icon": "Icon_weapon_20500401"
+              },
+              {
+                "id": 40123125,
+                "name": "Hanuman - EX",
+                "quality": "SSR",
+                "type": "Missile",
+                "icon": "Icon_weapon_40100301"
+              },
+              {
+                "id": 40113125,
+                "name": "Kumara - EX",
+                "quality": "SSR",
+                "type": "Missile",
+                "icon": "Icon_weapon_40100401"
+              },
+              {
+                "id": 10813125,
+                "name": "Beowulf - EX",
+                "quality": "SSR",
+                "type": "Saw",
+                "icon": "Icon_weapon_10600201"
+              },
+              {
+                "id": 10413125,
+                "name": "Starfield - EX",
+                "quality": "SSR",
+                "type": "Shield",
+                "icon": "Icon_weapon_10400501"
+              },
+              {
+                "id": 20412111,
+                "name": "Fafnir",
+                "quality": "SR",
+                "type": "Flamethrower",
+                "icon": "Icon_weapon_20500201"
+              },
+              {
+                "id": 20422111,
+                "name": "Fafnir - LW",
+                "quality": "SR",
+                "type": "Flamethrower",
+                "icon": "Icon_weapon_20500201"
+              },
+              {
+                "id": 40112111,
+                "name": "Thunder",
+                "quality": "SR",
+                "type": "Missile",
+                "icon": "Icon_weapon_40100101"
+              },
+              {
+                "id": 40122111,
+                "name": "Thunder - LW",
+                "quality": "SR",
+                "type": "Missile",
+                "icon": "Icon_weapon_40100101"
+              },
+              {
+                "id": 10812111,
+                "name": "Cadmus",
+                "quality": "SR",
+                "type": "Saw",
+                "icon": "Icon_weapon_10600301"
+              },
+              {
+                "id": 10412111,
+                "name": "Submerged Reef",
+                "quality": "SR",
+                "type": "Shield",
+                "icon": "Icon_weapon_10400201"
+              },
+              {
+                "id": 10911112,
+                "name": "Caladbolg",
+                "quality": "R",
+                "type": "Blade",
+                "icon": "Icon_weapon_10700101"
+              },
+              {
+                "id": 10511112,
+                "name": "Toledo",
+                "quality": "R",
+                "type": "Buckler",
+                "icon": "Icon_weapon_10500101"
+              },
+              {
+                "id": 50211111,
+                "name": "Raptor's Beak",
+                "quality": "R",
+                "type": "Funnel",
+                "icon": "Icon_weapon_40300101"
+              },
+              {
+                "id": 30211112,
+                "name": "Spruce",
+                "quality": "R",
+                "type": "HeavySniper",
+                "icon": "Icon_weapon_30200101"
+              }
+            ],
+            "items": [
+              "Tactical Weapon Essence IV",
+              "Shield Weapon Essence IV",
+              "Assault Weapon Essence IV"
+            ],
+            "always": [
+              "Shield Weapon Essence IV"
+            ]
+          }
         },
         {
           "slot": 2,
@@ -10420,7 +11540,117 @@ window.BossesData = {
                 }
               ]
             }
-          ]
+          ],
+          "drops": {
+            "weapons": [
+              {
+                "id": 40213125,
+                "name": "Molten - EX",
+                "quality": "SSR",
+                "type": "Rocket",
+                "icon": "Icon_weapon_40200401"
+              },
+              {
+                "id": 40223125,
+                "name": "Surging Flame - EX",
+                "quality": "SSR",
+                "type": "Rocket",
+                "icon": "Icon_weapon_40200301"
+              },
+              {
+                "id": 10313125,
+                "name": "Mountains - EX",
+                "quality": "SSR",
+                "type": "Rod",
+                "icon": "Icon_weapon_10300301"
+              },
+              {
+                "id": 20313125,
+                "name": "Firebolt - EX",
+                "quality": "SSR",
+                "type": "ShotGun",
+                "icon": "Icon_weapon_20300401"
+              },
+              {
+                "id": 20323125,
+                "name": "T-Rex - EX",
+                "quality": "SSR",
+                "type": "ShotGun",
+                "icon": "Icon_weapon_20300301"
+              },
+              {
+                "id": 40212122,
+                "name": "Albatross",
+                "quality": "SR",
+                "type": "Rocket",
+                "icon": "Icon_weapon_40200201"
+              },
+              {
+                "id": 40222122,
+                "name": "Albatross - LW",
+                "quality": "SR",
+                "type": "Rocket",
+                "icon": "Icon_weapon_40200201"
+              },
+              {
+                "id": 10312122,
+                "name": "Gate Breaker",
+                "quality": "SR",
+                "type": "Rod",
+                "icon": "Icon_weapon_10300201"
+              },
+              {
+                "id": 20312122,
+                "name": "Gale",
+                "quality": "SR",
+                "type": "ShotGun",
+                "icon": "Icon_weapon_20300201"
+              },
+              {
+                "id": 20322122,
+                "name": "Gale - LW",
+                "quality": "SR",
+                "type": "ShotGun",
+                "icon": "Icon_weapon_20300201"
+              },
+              {
+                "id": 10211122,
+                "name": "Heavy Pile",
+                "quality": "R",
+                "type": "PileBunker",
+                "icon": "Icon_weapon_10200101"
+              },
+              {
+                "id": 50111122,
+                "name": "Prism",
+                "quality": "R",
+                "type": "RailGun",
+                "icon": "Icon_weapon_50100301"
+              },
+              {
+                "id": 10811111,
+                "name": "Millstone",
+                "quality": "R",
+                "type": "Saw",
+                "icon": "Icon_weapon_10600101"
+              },
+              {
+                "id": 20311122,
+                "name": "Navigator",
+                "quality": "R",
+                "type": "ShotGun",
+                "icon": "Icon_weapon_20300101"
+              }
+            ],
+            "items": [
+              "Tactical Weapon Essence IV",
+              "Shield Weapon Essence IV",
+              "Melee Weapon Essence IV"
+            ],
+            "always": [
+              "Shield Weapon Essence IV"
+            ]
+          }
         },
         {
           "slot": 3,
@@ -10489,7 +11719,131 @@ window.BossesData = {
               "icon": "Icon_skill_talent_2101",
               "description": "For every 1% decrease in HP, Dodge Rate +0.5%. When dodging completely, repairs all destroyed parts and restores 15% of Max HP to all parts."
             }
-          ]
+          ],
+          "drops": {
+            "weapons": [
+              {
+                "id": 10513125,
+                "name": "Polymeric Barrier - EX",
+                "quality": "SSR",
+                "type": "Buckler",
+                "icon": "Icon_weapon_10500401"
+              },
+              {
+                "id": 20213125,
+                "name": "Behemoth - EX",
+                "quality": "SSR",
+                "type": "HeavyMachineGun",
+                "icon": "Icon_weapon_20400302"
+              },
+              {
+                "id": 10113125,
+                "name": "Hail of Spikes - EX",
+                "quality": "SSR",
+                "type": "Knuckle",
+                "icon": "Icon_weapon_10100301"
+              },
+              {
+                "id": 30123125,
+                "name": "Gazer - EX",
+                "quality": "SSR",
+                "type": "LightSniper",
+                "icon": "Icon_weapon_30100301"
+              },
+              {
+                "id": 30113125,
+                "name": "Maxx - EX",
+                "quality": "SSR",
+                "type": "LightSniper",
+                "icon": "Icon_weapon_30100401"
+              },
+              {
+                "id": 10213125,
+                "name": "Triumph - EX",
+                "quality": "SSR",
+                "type": "PileBunker",
+                "icon": "Icon_weapon_10200301"
+              },
+              {
+                "id": 10512122,
+                "name": "Aneto",
+                "quality": "SR",
+                "type": "Buckler",
+                "icon": "Icon_weapon_10500201"
+              },
+              {
+                "id": 20212122,
+                "name": "Wrath of Mars",
+                "quality": "SR",
+                "type": "HeavyMachineGun",
+                "icon": "Icon_weapon_20400201"
+              },
+              {
+                "id": 10112122,
+                "name": "Nutcracker",
+                "quality": "SR",
+                "type": "Knuckle",
+                "icon": "Icon_weapon_10100201"
+              },
+              {
+                "id": 30112122,
+                "name": "Whistle",
+                "quality": "SR",
+                "type": "LightSniper",
+                "icon": "Icon_weapon_30100201"
+              },
+              {
+                "id": 30122122,
+                "name": "Whistle - LW",
+                "quality": "SR",
+                "type": "LightSniper",
+                "icon": "Icon_weapon_30100201"
+              },
+              {
+                "id": 10212122,
+                "name": "Thunderbolt",
+                "quality": "SR",
+                "type": "PileBunker",
+                "icon": "Icon_weapon_10200201"
+              },
+              {
+                "id": 20111122,
+                "name": "Courage",
+                "quality": "R",
+                "type": "MachineGun",
+                "icon": "Icon_weapon_20100101"
+              },
+              {
+                "id": 40111122,
+                "name": "Gordius",
+                "quality": "R",
+                "type": "Missile",
+                "icon": "Icon_weapon_40100201"
+              },
+              {
+                "id": 40211122,
+                "name": "Neanderthal",
+                "quality": "R",
+                "type": "Rocket",
+                "icon": "Icon_weapon_40200101"
+              },
+              {
+                "id": 10311122,
+                "name": "Torero",
+                "quality": "R",
+                "type": "Rod",
+                "icon": "Icon_weapon_10300101"
+              }
+            ],
+            "items": [
+              "Melee Weapon Essence IV",
+              "Shield Weapon Essence IV",
+              "Ranged Weapon Essence IV"
+            ],
+            "always": [
+              "Shield Weapon Essence IV"
+            ]
+          }
         },
         {
           "slot": 4,
@@ -10564,7 +11918,131 @@ window.BossesData = {
                 }
               ]
             }
-          ]
+          ],
+          "drops": {
+            "weapons": [
+              {
+                "id": 10913125,
+                "name": "Excalibur - EX",
+                "quality": "SSR",
+                "type": "Blade",
+                "icon": "Icon_weapon_10700301A"
+              },
+              {
+                "id": 50213125,
+                "name": "Foehn - EX",
+                "quality": "SSR",
+                "type": "Funnel",
+                "icon": "Icon_weapon_40300301"
+              },
+              {
+                "id": 30213125,
+                "name": "Red Fox - EX",
+                "quality": "SSR",
+                "type": "HeavySniper",
+                "icon": "Icon_weapon_30200301"
+              },
+              {
+                "id": 20123125,
+                "name": "Mark - EX",
+                "quality": "SSR",
+                "type": "MachineGun",
+                "icon": "Icon_weapon_20100301"
+              },
+              {
+                "id": 20113125,
+                "name": "Nightwither - EX",
+                "quality": "SSR",
+                "type": "MachineGun",
+                "icon": "Icon_weapon_20100401"
+              },
+              {
+                "id": 50113125,
+                "name": "Torch Tower - EX",
+                "quality": "SSR",
+                "type": "RailGun",
+                "icon": "Icon_weapon_50100101"
+              },
+              {
+                "id": 10912112,
+                "name": "Arondight",
+                "quality": "SR",
+                "type": "Blade",
+                "icon": "Icon_weapon_10700201"
+              },
+              {
+                "id": 50212111,
+                "name": "Polaris",
+                "quality": "SR",
+                "type": "Funnel",
+                "icon": "Icon_weapon_40300201"
+              },
+              {
+                "id": 30212112,
+                "name": "Firebird",
+                "quality": "SR",
+                "type": "HeavySniper",
+                "icon": "Icon_weapon_30200201"
+              },
+              {
+                "id": 20112111,
+                "name": "Art of Ambush",
+                "quality": "SR",
+                "type": "MachineGun",
+                "icon": "Icon_weapon_20100201"
+              },
+              {
+                "id": 20122111,
+                "name": "Art of Ambush - LW",
+                "quality": "SR",
+                "type": "MachineGun",
+                "icon": "Icon_weapon_20100201"
+              },
+              {
+                "id": 50112111,
+                "name": "Ex-Wisdom",
+                "quality": "SR",
+                "type": "RailGun",
+                "icon": "Icon_weapon_50100201"
+              },
+              {
+                "id": 20411111,
+                "name": "Hearthspray",
+                "quality": "R",
+                "type": "Flamethrower",
+                "icon": "Icon_weapon_20500101"
+              },
+              {
+                "id": 20211111,
+                "name": "Ifrit",
+                "quality": "R",
+                "type": "HeavyMachineGun",
+                "icon": "Icon_weapon_20400101"
+              },
+              {
+                "id": 30111112,
+                "name": "Pioneer",
+                "quality": "R",
+                "type": "LightSniper",
+                "icon": "Icon_weapon_30100101"
+              },
+              {
+                "id": 10411111,
+                "name": "Ferroalloy Shield",
+                "quality": "R",
+                "type": "Shield",
+                "icon": "Icon_weapon_10400101"
+              }
+            ],
+            "items": [
+              "Assault Weapon Essence IV",
+              "Shield Weapon Essence IV",
+              "Ranged Weapon Essence IV"
+            ],
+            "always": [
+              "Shield Weapon Essence IV"
+            ]
+          }
         }
       ],
       "description": "Strength is the only means to ensure balance. Now, the UNCS's military power is weak, forcing the military to employ various forces, even including former fugitives. Of course, this is done privately.",
@@ -10646,7 +12124,131 @@ window.BossesData = {
                 }
               ]
             }
-          ]
+          ],
+          "drops": {
+            "weapons": [
+              {
+                "id": 20413124,
+                "name": "Blaze Howl - EX",
+                "quality": "SSR",
+                "type": "Flamethrower",
+                "icon": "Icon_weapon_20500301"
+              },
+              {
+                "id": 20423124,
+                "name": "Corona - EX",
+                "quality": "SSR",
+                "type": "Flamethrower",
+                "icon": "Icon_weapon_20500401"
+              },
+              {
+                "id": 30123124,
+                "name": "Gazer - EX",
+                "quality": "SSR",
+                "type": "LightSniper",
+                "icon": "Icon_weapon_30100301"
+              },
+              {
+                "id": 30113124,
+                "name": "Maxx - EX",
+                "quality": "SSR",
+                "type": "LightSniper",
+                "icon": "Icon_weapon_30100401"
+              },
+              {
+                "id": 40213124,
+                "name": "Molten - EX",
+                "quality": "SSR",
+                "type": "Rocket",
+                "icon": "Icon_weapon_40200401"
+              },
+              {
+                "id": 40223124,
+                "name": "Surging Flame - EX",
+                "quality": "SSR",
+                "type": "Rocket",
+                "icon": "Icon_weapon_40200301"
+              },
+              {
+                "id": 20412122,
+                "name": "Fafnir",
+                "quality": "SR",
+                "type": "Flamethrower",
+                "icon": "Icon_weapon_20500201"
+              },
+              {
+                "id": 20422122,
+                "name": "Fafnir - LW",
+                "quality": "SR",
+                "type": "Flamethrower",
+                "icon": "Icon_weapon_20500201"
+              },
+              {
+                "id": 30112122,
+                "name": "Whistle",
+                "quality": "SR",
+                "type": "LightSniper",
+                "icon": "Icon_weapon_30100201"
+              },
+              {
+                "id": 30122122,
+                "name": "Whistle - LW",
+                "quality": "SR",
+                "type": "LightSniper",
+                "icon": "Icon_weapon_30100201"
+              },
+              {
+                "id": 40212122,
+                "name": "Albatross",
+                "quality": "SR",
+                "type": "Rocket",
+                "icon": "Icon_weapon_40200201"
+              },
+              {
+                "id": 40222122,
+                "name": "Albatross - LW",
+                "quality": "SR",
+                "type": "Rocket",
+                "icon": "Icon_weapon_40200201"
+              },
+              {
+                "id": 10911122,
+                "name": "Caladbolg",
+                "quality": "R",
+                "type": "Blade",
+                "icon": "Icon_weapon_10700101"
+              },
+              {
+                "id": 20211122,
+                "name": "Ifrit",
+                "quality": "R",
+                "type": "HeavyMachineGun",
+                "icon": "Icon_weapon_20400101"
+              },
+              {
+                "id": 20111122,
+                "name": "Courage",
+                "quality": "R",
+                "type": "MachineGun",
+                "icon": "Icon_weapon_20100101"
+              },
+              {
+                "id": 50111122,
+                "name": "Prism",
+                "quality": "R",
+                "type": "RailGun",
+                "icon": "Icon_weapon_50100301"
+              }
+            ],
+            "items": [
+              "Tactical Weapon Essence III",
+              "Shield Weapon Essence III",
+              "Ranged Weapon Essence III"
+            ],
+            "always": [
+              "Shield Weapon Essence III"
+            ]
+          }
         },
         {
           "slot": 2,
@@ -10715,7 +12317,131 @@ window.BossesData = {
                 }
               ]
             }
-          ]
+          ],
+          "drops": {
+            "weapons": [
+              {
+                "id": 10913124,
+                "name": "Excalibur - EX",
+                "quality": "SSR",
+                "type": "Blade",
+                "icon": "Icon_weapon_10700301A"
+              },
+              {
+                "id": 10513124,
+                "name": "Polymeric Barrier - EX",
+                "quality": "SSR",
+                "type": "Buckler",
+                "icon": "Icon_weapon_10500401"
+              },
+              {
+                "id": 40123124,
+                "name": "Hanuman - EX",
+                "quality": "SSR",
+                "type": "Missile",
+                "icon": "Icon_weapon_40100301"
+              },
+              {
+                "id": 40113124,
+                "name": "Kumara - EX",
+                "quality": "SSR",
+                "type": "Missile",
+                "icon": "Icon_weapon_40100401"
+              },
+              {
+                "id": 50113124,
+                "name": "Torch Tower - EX",
+                "quality": "SSR",
+                "type": "RailGun",
+                "icon": "Icon_weapon_50100101"
+              },
+              {
+                "id": 10313124,
+                "name": "Mountains - EX",
+                "quality": "SSR",
+                "type": "Rod",
+                "icon": "Icon_weapon_10300301"
+              },
+              {
+                "id": 10912112,
+                "name": "Arondight",
+                "quality": "SR",
+                "type": "Blade",
+                "icon": "Icon_weapon_10700201"
+              },
+              {
+                "id": 10512112,
+                "name": "Aneto",
+                "quality": "SR",
+                "type": "Buckler",
+                "icon": "Icon_weapon_10500201"
+              },
+              {
+                "id": 40112111,
+                "name": "Thunder",
+                "quality": "SR",
+                "type": "Missile",
+                "icon": "Icon_weapon_40100101"
+              },
+              {
+                "id": 40122111,
+                "name": "Thunder - LW",
+                "quality": "SR",
+                "type": "Missile",
+                "icon": "Icon_weapon_40100101"
+              },
+              {
+                "id": 50112111,
+                "name": "Ex-Wisdom",
+                "quality": "SR",
+                "type": "RailGun",
+                "icon": "Icon_weapon_50100201"
+              },
+              {
+                "id": 10312111,
+                "name": "Gate Breaker",
+                "quality": "SR",
+                "type": "Rod",
+                "icon": "Icon_weapon_10300201"
+              },
+              {
+                "id": 50211111,
+                "name": "Raptor's Beak",
+                "quality": "R",
+                "type": "Funnel",
+                "icon": "Icon_weapon_40300101"
+              },
+              {
+                "id": 30211112,
+                "name": "Spruce",
+                "quality": "R",
+                "type": "HeavySniper",
+                "icon": "Icon_weapon_30200101"
+              },
+              {
+                "id": 40211112,
+                "name": "Neanderthal",
+                "quality": "R",
+                "type": "Rocket",
+                "icon": "Icon_weapon_40200101"
+              },
+              {
+                "id": 20311111,
+                "name": "Navigator",
+                "quality": "R",
+                "type": "ShotGun",
+                "icon": "Icon_weapon_20300101"
+              }
+            ],
+            "items": [
+              "Tactical Weapon Essence III",
+              "Shield Weapon Essence III",
+              "Melee Weapon Essence III"
+            ],
+            "always": [
+              "Shield Weapon Essence III"
+            ]
+          }
         },
         {
           "slot": 3,
@@ -10788,7 +12514,131 @@ window.BossesData = {
                 }
               ]
             }
-          ]
+          ],
+          "drops": {
+            "weapons": [
+              {
+                "id": 50213124,
+                "name": "Foehn - EX",
+                "quality": "SSR",
+                "type": "Funnel",
+                "icon": "Icon_weapon_40300301"
+              },
+              {
+                "id": 20213124,
+                "name": "Behemoth - EX",
+                "quality": "SSR",
+                "type": "HeavyMachineGun",
+                "icon": "Icon_weapon_20400302"
+              },
+              {
+                "id": 30213124,
+                "name": "Red Fox - EX",
+                "quality": "SSR",
+                "type": "HeavySniper",
+                "icon": "Icon_weapon_30200301"
+              },
+              {
+                "id": 10113124,
+                "name": "Hail of Spikes - EX",
+                "quality": "SSR",
+                "type": "Knuckle",
+                "icon": "Icon_weapon_10100301"
+              },
+              {
+                "id": 10213124,
+                "name": "Triumph - EX",
+                "quality": "SSR",
+                "type": "PileBunker",
+                "icon": "Icon_weapon_10200301"
+              },
+              {
+                "id": 10413124,
+                "name": "Starfield - EX",
+                "quality": "SSR",
+                "type": "Shield",
+                "icon": "Icon_weapon_10400501"
+              },
+              {
+                "id": 50212111,
+                "name": "Polaris",
+                "quality": "SR",
+                "type": "Funnel",
+                "icon": "Icon_weapon_40300201"
+              },
+              {
+                "id": 20212111,
+                "name": "Wrath of Mars",
+                "quality": "SR",
+                "type": "HeavyMachineGun",
+                "icon": "Icon_weapon_20400201"
+              },
+              {
+                "id": 30212112,
+                "name": "Firebird",
+                "quality": "SR",
+                "type": "HeavySniper",
+                "icon": "Icon_weapon_30200201"
+              },
+              {
+                "id": 10112112,
+                "name": "Nutcracker",
+                "quality": "SR",
+                "type": "Knuckle",
+                "icon": "Icon_weapon_10100201"
+              },
+              {
+                "id": 10212112,
+                "name": "Thunderbolt",
+                "quality": "SR",
+                "type": "PileBunker",
+                "icon": "Icon_weapon_10200201"
+              },
+              {
+                "id": 10412111,
+                "name": "Submerged Reef",
+                "quality": "SR",
+                "type": "Shield",
+                "icon": "Icon_weapon_10400201"
+              },
+              {
+                "id": 20411111,
+                "name": "Hearthspray",
+                "quality": "R",
+                "type": "Flamethrower",
+                "icon": "Icon_weapon_20500101"
+              },
+              {
+                "id": 40111111,
+                "name": "Gordius",
+                "quality": "R",
+                "type": "Missile",
+                "icon": "Icon_weapon_40100201"
+              },
+              {
+                "id": 10311111,
+                "name": "Torero",
+                "quality": "R",
+                "type": "Rod",
+                "icon": "Icon_weapon_10300101"
+              },
+              {
+                "id": 10811111,
+                "name": "Millstone",
+                "quality": "R",
+                "type": "Saw",
+                "icon": "Icon_weapon_10600101"
+              }
+            ],
+            "items": [
+              "Assault Weapon Essence III",
+              "Shield Weapon Essence III",
+              "Ranged Weapon Essence III"
+            ],
+            "always": [
+              "Shield Weapon Essence III"
+            ]
+          }
         },
         {
           "slot": 4,
@@ -10849,7 +12699,117 @@ window.BossesData = {
                 }
               ]
             }
-          ]
+          ],
+          "drops": {
+            "weapons": [
+              {
+                "id": 20123124,
+                "name": "Mark - EX",
+                "quality": "SSR",
+                "type": "MachineGun",
+                "icon": "Icon_weapon_20100301"
+              },
+              {
+                "id": 20113124,
+                "name": "Nightwither - EX",
+                "quality": "SSR",
+                "type": "MachineGun",
+                "icon": "Icon_weapon_20100401"
+              },
+              {
+                "id": 10813124,
+                "name": "Beowulf - EX",
+                "quality": "SSR",
+                "type": "Saw",
+                "icon": "Icon_weapon_10600201"
+              },
+              {
+                "id": 20313124,
+                "name": "Firebolt - EX",
+                "quality": "SSR",
+                "type": "ShotGun",
+                "icon": "Icon_weapon_20300401"
+              },
+              {
+                "id": 20323124,
+                "name": "T-Rex - EX",
+                "quality": "SSR",
+                "type": "ShotGun",
+                "icon": "Icon_weapon_20300301"
+              },
+              {
+                "id": 20112122,
+                "name": "Art of Ambush",
+                "quality": "SR",
+                "type": "MachineGun",
+                "icon": "Icon_weapon_20100201"
+              },
+              {
+                "id": 20122122,
+                "name": "Art of Ambush - LW",
+                "quality": "SR",
+                "type": "MachineGun",
+                "icon": "Icon_weapon_20100201"
+              },
+              {
+                "id": 10812111,
+                "name": "Cadmus",
+                "quality": "SR",
+                "type": "Saw",
+                "icon": "Icon_weapon_10600301"
+              },
+              {
+                "id": 20312122,
+                "name": "Gale",
+                "quality": "SR",
+                "type": "ShotGun",
+                "icon": "Icon_weapon_20300201"
+              },
+              {
+                "id": 20322122,
+                "name": "Gale - LW",
+                "quality": "SR",
+                "type": "ShotGun",
+                "icon": "Icon_weapon_20300201"
+              },
+              {
+                "id": 10511122,
+                "name": "Toledo",
+                "quality": "R",
+                "type": "Buckler",
+                "icon": "Icon_weapon_10500101"
+              },
+              {
+                "id": 30111122,
+                "name": "Pioneer",
+                "quality": "R",
+                "type": "LightSniper",
+                "icon": "Icon_weapon_30100101"
+              },
+              {
+                "id": 10211122,
+                "name": "Heavy Pile",
+                "quality": "R",
+                "type": "PileBunker",
+                "icon": "Icon_weapon_10200101"
+              },
+              {
+                "id": 10411122,
+                "name": "Ferroalloy Shield",
+                "quality": "R",
+                "type": "Shield",
+                "icon": "Icon_weapon_10400101"
+              }
+            ],
+            "items": [
+              "Assault Weapon Essence III",
+              "Shield Weapon Essence III",
+              "Melee Weapon Essence III"
+            ],
+            "always": [
+              "Shield Weapon Essence III"
+            ]
+          }
         }
       ],
       "description": "Milkhama has seen countless renowned mercenary teams, some as fleeting as shooting stars, while others rise again and again like wild grass sprouting from the ashes. The Douglas Mercenary group belongs to the latter breed.",
@@ -10925,7 +12885,131 @@ window.BossesData = {
                 }
               ]
             }
-          ]
+          ],
+          "drops": {
+            "weapons": [
+              {
+                "id": 30213123,
+                "name": "Red Fox - EX",
+                "quality": "SSR",
+                "type": "HeavySniper",
+                "icon": "Icon_weapon_30200301"
+              },
+              {
+                "id": 10113123,
+                "name": "Hail of Spikes - EX",
+                "quality": "SSR",
+                "type": "Knuckle",
+                "icon": "Icon_weapon_10100301"
+              },
+              {
+                "id": 30123123,
+                "name": "Gazer - EX",
+                "quality": "SSR",
+                "type": "LightSniper",
+                "icon": "Icon_weapon_30100301"
+              },
+              {
+                "id": 30113123,
+                "name": "Maxx - EX",
+                "quality": "SSR",
+                "type": "LightSniper",
+                "icon": "Icon_weapon_30100401"
+              },
+              {
+                "id": 10213123,
+                "name": "Triumph - EX",
+                "quality": "SSR",
+                "type": "PileBunker",
+                "icon": "Icon_weapon_10200301"
+              },
+              {
+                "id": 10813123,
+                "name": "Beowulf - EX",
+                "quality": "SSR",
+                "type": "Saw",
+                "icon": "Icon_weapon_10600201"
+              },
+              {
+                "id": 30212122,
+                "name": "Firebird",
+                "quality": "SR",
+                "type": "HeavySniper",
+                "icon": "Icon_weapon_30200201"
+              },
+              {
+                "id": 10112122,
+                "name": "Nutcracker",
+                "quality": "SR",
+                "type": "Knuckle",
+                "icon": "Icon_weapon_10100201"
+              },
+              {
+                "id": 30112122,
+                "name": "Whistle",
+                "quality": "SR",
+                "type": "LightSniper",
+                "icon": "Icon_weapon_30100201"
+              },
+              {
+                "id": 30122122,
+                "name": "Whistle - LW",
+                "quality": "SR",
+                "type": "LightSniper",
+                "icon": "Icon_weapon_30100201"
+              },
+              {
+                "id": 10212122,
+                "name": "Thunderbolt",
+                "quality": "SR",
+                "type": "PileBunker",
+                "icon": "Icon_weapon_10200201"
+              },
+              {
+                "id": 10812111,
+                "name": "Cadmus",
+                "quality": "SR",
+                "type": "Saw",
+                "icon": "Icon_weapon_10600301"
+              },
+              {
+                "id": 10911122,
+                "name": "Caladbolg",
+                "quality": "R",
+                "type": "Blade",
+                "icon": "Icon_weapon_10700101"
+              },
+              {
+                "id": 20111122,
+                "name": "Courage",
+                "quality": "R",
+                "type": "MachineGun",
+                "icon": "Icon_weapon_20100101"
+              },
+              {
+                "id": 10311122,
+                "name": "Torero",
+                "quality": "R",
+                "type": "Rod",
+                "icon": "Icon_weapon_10300101"
+              },
+              {
+                "id": 20311122,
+                "name": "Navigator",
+                "quality": "R",
+                "type": "ShotGun",
+                "icon": "Icon_weapon_20300101"
+              }
+            ],
+            "items": [
+              "Shield Weapon Essence II",
+              "Melee Weapon Essence II",
+              "Ranged Weapon Essence II"
+            ],
+            "always": [
+              "Shield Weapon Essence II"
+            ]
+          }
         },
         {
           "slot": 2,
@@ -11018,7 +13102,117 @@ window.BossesData = {
                 }
               ]
             }
-          ]
+          ],
+          "drops": {
+            "weapons": [
+              {
+                "id": 20123123,
+                "name": "Mark - EX",
+                "quality": "SSR",
+                "type": "MachineGun",
+                "icon": "Icon_weapon_20100301"
+              },
+              {
+                "id": 20113123,
+                "name": "Nightwither - EX",
+                "quality": "SSR",
+                "type": "MachineGun",
+                "icon": "Icon_weapon_20100401"
+              },
+              {
+                "id": 40123123,
+                "name": "Hanuman - EX",
+                "quality": "SSR",
+                "type": "Missile",
+                "icon": "Icon_weapon_40100301"
+              },
+              {
+                "id": 40113123,
+                "name": "Kumara - EX",
+                "quality": "SSR",
+                "type": "Missile",
+                "icon": "Icon_weapon_40100401"
+              },
+              {
+                "id": 10413123,
+                "name": "Starfield - EX",
+                "quality": "SSR",
+                "type": "Shield",
+                "icon": "Icon_weapon_10400501"
+              },
+              {
+                "id": 20112122,
+                "name": "Art of Ambush",
+                "quality": "SR",
+                "type": "MachineGun",
+                "icon": "Icon_weapon_20100201"
+              },
+              {
+                "id": 20122122,
+                "name": "Art of Ambush - LW",
+                "quality": "SR",
+                "type": "MachineGun",
+                "icon": "Icon_weapon_20100201"
+              },
+              {
+                "id": 40112122,
+                "name": "Thunder",
+                "quality": "SR",
+                "type": "Missile",
+                "icon": "Icon_weapon_40100101"
+              },
+              {
+                "id": 40122122,
+                "name": "Thunder - LW",
+                "quality": "SR",
+                "type": "Missile",
+                "icon": "Icon_weapon_40100101"
+              },
+              {
+                "id": 10412122,
+                "name": "Submerged Reef",
+                "quality": "SR",
+                "type": "Shield",
+                "icon": "Icon_weapon_10400201"
+              },
+              {
+                "id": 10511122,
+                "name": "Toledo",
+                "quality": "R",
+                "type": "Buckler",
+                "icon": "Icon_weapon_10500101"
+              },
+              {
+                "id": 50211111,
+                "name": "Raptor's Beak",
+                "quality": "R",
+                "type": "Funnel",
+                "icon": "Icon_weapon_40300101"
+              },
+              {
+                "id": 30111122,
+                "name": "Pioneer",
+                "quality": "R",
+                "type": "LightSniper",
+                "icon": "Icon_weapon_30100101"
+              },
+              {
+                "id": 40211122,
+                "name": "Neanderthal",
+                "quality": "R",
+                "type": "Rocket",
+                "icon": "Icon_weapon_40200101"
+              }
+            ],
+            "items": [
+              "Shield Weapon Essence II",
+              "Assault Weapon Essence II",
+              "Tactical Weapon Essence II"
+            ],
+            "always": [
+              "Shield Weapon Essence II"
+            ]
+          }
         },
         {
           "slot": 3,
@@ -11105,7 +13299,131 @@ window.BossesData = {
                 }
               ]
             }
-          ]
+          ],
+          "drops": {
+            "weapons": [
+              {
+                "id": 10913123,
+                "name": "Excalibur - EX",
+                "quality": "SSR",
+                "type": "Blade",
+                "icon": "Icon_weapon_10700301A"
+              },
+              {
+                "id": 10513123,
+                "name": "Polymeric Barrier - EX",
+                "quality": "SSR",
+                "type": "Buckler",
+                "icon": "Icon_weapon_10500401"
+              },
+              {
+                "id": 50113123,
+                "name": "Torch Tower - EX",
+                "quality": "SSR",
+                "type": "RailGun",
+                "icon": "Icon_weapon_50100101"
+              },
+              {
+                "id": 40213123,
+                "name": "Molten - EX",
+                "quality": "SSR",
+                "type": "Rocket",
+                "icon": "Icon_weapon_40200401"
+              },
+              {
+                "id": 40223123,
+                "name": "Surging Flame - EX",
+                "quality": "SSR",
+                "type": "Rocket",
+                "icon": "Icon_weapon_40200301"
+              },
+              {
+                "id": 10313123,
+                "name": "Mountains - EX",
+                "quality": "SSR",
+                "type": "Rod",
+                "icon": "Icon_weapon_10300301"
+              },
+              {
+                "id": 10912122,
+                "name": "Arondight",
+                "quality": "SR",
+                "type": "Blade",
+                "icon": "Icon_weapon_10700201"
+              },
+              {
+                "id": 10512122,
+                "name": "Aneto",
+                "quality": "SR",
+                "type": "Buckler",
+                "icon": "Icon_weapon_10500201"
+              },
+              {
+                "id": 50112122,
+                "name": "Ex-Wisdom",
+                "quality": "SR",
+                "type": "RailGun",
+                "icon": "Icon_weapon_50100201"
+              },
+              {
+                "id": 40212122,
+                "name": "Albatross",
+                "quality": "SR",
+                "type": "Rocket",
+                "icon": "Icon_weapon_40200201"
+              },
+              {
+                "id": 40222122,
+                "name": "Albatross - LW",
+                "quality": "SR",
+                "type": "Rocket",
+                "icon": "Icon_weapon_40200201"
+              },
+              {
+                "id": 10312122,
+                "name": "Gate Breaker",
+                "quality": "SR",
+                "type": "Rod",
+                "icon": "Icon_weapon_10300201"
+              },
+              {
+                "id": 20411122,
+                "name": "Hearthspray",
+                "quality": "R",
+                "type": "Flamethrower",
+                "icon": "Icon_weapon_20500101"
+              },
+              {
+                "id": 10211122,
+                "name": "Heavy Pile",
+                "quality": "R",
+                "type": "PileBunker",
+                "icon": "Icon_weapon_10200101"
+              },
+              {
+                "id": 10811111,
+                "name": "Millstone",
+                "quality": "R",
+                "type": "Saw",
+                "icon": "Icon_weapon_10600101"
+              },
+              {
+                "id": 10411122,
+                "name": "Ferroalloy Shield",
+                "quality": "R",
+                "type": "Shield",
+                "icon": "Icon_weapon_10400101"
+              }
+            ],
+            "items": [
+              "Shield Weapon Essence II",
+              "Melee Weapon Essence II",
+              "Tactical Weapon Essence II"
+            ],
+            "always": [
+              "Shield Weapon Essence II"
+            ]
+          }
         },
         {
           "slot": 4,
@@ -11168,7 +13486,131 @@ window.BossesData = {
                 }
               ]
             }
-          ]
+          ],
+          "drops": {
+            "weapons": [
+              {
+                "id": 20413123,
+                "name": "Blaze Howl - EX",
+                "quality": "SSR",
+                "type": "Flamethrower",
+                "icon": "Icon_weapon_20500301"
+              },
+              {
+                "id": 20423123,
+                "name": "Corona - EX",
+                "quality": "SSR",
+                "type": "Flamethrower",
+                "icon": "Icon_weapon_20500401"
+              },
+              {
+                "id": 50213123,
+                "name": "Foehn - EX",
+                "quality": "SSR",
+                "type": "Funnel",
+                "icon": "Icon_weapon_40300301"
+              },
+              {
+                "id": 20213123,
+                "name": "Behemoth - EX",
+                "quality": "SSR",
+                "type": "HeavyMachineGun",
+                "icon": "Icon_weapon_20400302"
+              },
+              {
+                "id": 20313123,
+                "name": "Firebolt - EX",
+                "quality": "SSR",
+                "type": "ShotGun",
+                "icon": "Icon_weapon_20300401"
+              },
+              {
+                "id": 20323123,
+                "name": "T-Rex - EX",
+                "quality": "SSR",
+                "type": "ShotGun",
+                "icon": "Icon_weapon_20300301"
+              },
+              {
+                "id": 20412122,
+                "name": "Fafnir",
+                "quality": "SR",
+                "type": "Flamethrower",
+                "icon": "Icon_weapon_20500201"
+              },
+              {
+                "id": 20422122,
+                "name": "Fafnir - LW",
+                "quality": "SR",
+                "type": "Flamethrower",
+                "icon": "Icon_weapon_20500201"
+              },
+              {
+                "id": 50212111,
+                "name": "Polaris",
+                "quality": "SR",
+                "type": "Funnel",
+                "icon": "Icon_weapon_40300201"
+              },
+              {
+                "id": 20212122,
+                "name": "Wrath of Mars",
+                "quality": "SR",
+                "type": "HeavyMachineGun",
+                "icon": "Icon_weapon_20400201"
+              },
+              {
+                "id": 20312122,
+                "name": "Gale",
+                "quality": "SR",
+                "type": "ShotGun",
+                "icon": "Icon_weapon_20300201"
+              },
+              {
+                "id": 20322122,
+                "name": "Gale - LW",
+                "quality": "SR",
+                "type": "ShotGun",
+                "icon": "Icon_weapon_20300201"
+              },
+              {
+                "id": 20211122,
+                "name": "Ifrit",
+                "quality": "R",
+                "type": "HeavyMachineGun",
+                "icon": "Icon_weapon_20400101"
+              },
+              {
+                "id": 30211122,
+                "name": "Spruce",
+                "quality": "R",
+                "type": "HeavySniper",
+                "icon": "Icon_weapon_30200101"
+              },
+              {
+                "id": 40111122,
+                "name": "Gordius",
+                "quality": "R",
+                "type": "Missile",
+                "icon": "Icon_weapon_40100201"
+              },
+              {
+                "id": 50111122,
+                "name": "Prism",
+                "quality": "R",
+                "type": "RailGun",
+                "icon": "Icon_weapon_50100301"
+              }
+            ],
+            "items": [
+              "Shield Weapon Essence II",
+              "Assault Weapon Essence II",
+              "Ranged Weapon Essence II"
+            ],
+            "always": [
+              "Shield Weapon Essence II"
+            ]
+          }
         }
       ],
       "description": "The Thepia Wasteland has seen increased activity, with a mobile squadron suspected of secretly working for a DL councilor. A mysterious employer has hired the GKD Squad via Skynet to disrupt their operations.",
@@ -11242,7 +13684,124 @@ window.BossesData = {
                 }
               ]
             }
-          ]
+          ],
+          "drops": {
+            "weapons": [
+              {
+                "id": 20423122,
+                "name": "Corona - EX",
+                "quality": "SSR",
+                "type": "Flamethrower",
+                "icon": "Icon_weapon_20500401"
+              },
+              {
+                "id": 20213122,
+                "name": "Behemoth - EX",
+                "quality": "SSR",
+                "type": "HeavyMachineGun",
+                "icon": "Icon_weapon_20400302"
+              },
+              {
+                "id": 10113122,
+                "name": "Hail of Spikes - EX",
+                "quality": "SSR",
+                "type": "Knuckle",
+                "icon": "Icon_weapon_10100301"
+              },
+              {
+                "id": 30123122,
+                "name": "Gazer - EX",
+                "quality": "SSR",
+                "type": "LightSniper",
+                "icon": "Icon_weapon_30100301"
+              },
+              {
+                "id": 10813122,
+                "name": "Beowulf - EX",
+                "quality": "SSR",
+                "type": "Saw",
+                "icon": "Icon_weapon_10600201"
+              },
+              {
+                "id": 20323122,
+                "name": "T-Rex - EX",
+                "quality": "SSR",
+                "type": "ShotGun",
+                "icon": "Icon_weapon_20300301"
+              },
+              {
+                "id": 20422121,
+                "name": "Fafnir - LW",
+                "quality": "SR",
+                "type": "Flamethrower",
+                "icon": "Icon_weapon_20500201"
+              },
+              {
+                "id": 20212121,
+                "name": "Wrath of Mars",
+                "quality": "SR",
+                "type": "HeavyMachineGun",
+                "icon": "Icon_weapon_20400201"
+              },
+              {
+                "id": 10112121,
+                "name": "Nutcracker",
+                "quality": "SR",
+                "type": "Knuckle",
+                "icon": "Icon_weapon_10100201"
+              },
+              {
+                "id": 30122121,
+                "name": "Whistle - LW",
+                "quality": "SR",
+                "type": "LightSniper",
+                "icon": "Icon_weapon_30100201"
+              },
+              {
+                "id": 10812111,
+                "name": "Cadmus",
+                "quality": "SR",
+                "type": "Saw",
+                "icon": "Icon_weapon_10600301"
+              },
+              {
+                "id": 20322121,
+                "name": "Gale - LW",
+                "quality": "SR",
+                "type": "ShotGun",
+                "icon": "Icon_weapon_20300201"
+              },
+              {
+                "id": 30111121,
+                "name": "Pioneer",
+                "quality": "R",
+                "type": "LightSniper",
+                "icon": "Icon_weapon_30100101"
+              },
+              {
+                "id": 10211121,
+                "name": "Heavy Pile",
+                "quality": "R",
+                "type": "PileBunker",
+                "icon": "Icon_weapon_10200101"
+              },
+              {
+                "id": 40211121,
+                "name": "Neanderthal",
+                "quality": "R",
+                "type": "Rocket",
+                "icon": "Icon_weapon_40200101"
+              }
+            ],
+            "items": [
+              "Melee Weapon Essence I",
+              "Assault Weapon Essence I",
+              "Shield Weapon Essence I"
+            ],
+            "always": [
+              "Shield Weapon Essence I"
+            ]
+          }
         },
         {
           "slot": 2,
@@ -11307,7 +13866,131 @@ window.BossesData = {
                 }
               ]
             }
-          ]
+          ],
+          "drops": {
+            "weapons": [
+              {
+                "id": 10913122,
+                "name": "Excalibur - EX",
+                "quality": "SSR",
+                "type": "Blade",
+                "icon": "Icon_weapon_10700301A"
+              },
+              {
+                "id": 10513122,
+                "name": "Polymeric Barrier - EX",
+                "quality": "SSR",
+                "type": "Buckler",
+                "icon": "Icon_weapon_10500401"
+              },
+              {
+                "id": 30213122,
+                "name": "Red Fox - EX",
+                "quality": "SSR",
+                "type": "HeavySniper",
+                "icon": "Icon_weapon_30200301"
+              },
+              {
+                "id": 20123122,
+                "name": "Mark - EX",
+                "quality": "SSR",
+                "type": "MachineGun",
+                "icon": "Icon_weapon_20100301"
+              },
+              {
+                "id": 40123122,
+                "name": "Hanuman - EX",
+                "quality": "SSR",
+                "type": "Missile",
+                "icon": "Icon_weapon_40100301"
+              },
+              {
+                "id": 40223122,
+                "name": "Surging Flame - EX",
+                "quality": "SSR",
+                "type": "Rocket",
+                "icon": "Icon_weapon_40200301"
+              },
+              {
+                "id": 10912121,
+                "name": "Arondight",
+                "quality": "SR",
+                "type": "Blade",
+                "icon": "Icon_weapon_10700201"
+              },
+              {
+                "id": 10512121,
+                "name": "Aneto",
+                "quality": "SR",
+                "type": "Buckler",
+                "icon": "Icon_weapon_10500201"
+              },
+              {
+                "id": 30212121,
+                "name": "Firebird",
+                "quality": "SR",
+                "type": "HeavySniper",
+                "icon": "Icon_weapon_30200201"
+              },
+              {
+                "id": 20122121,
+                "name": "Art of Ambush - LW",
+                "quality": "SR",
+                "type": "MachineGun",
+                "icon": "Icon_weapon_20100201"
+              },
+              {
+                "id": 40122121,
+                "name": "Thunder - LW",
+                "quality": "SR",
+                "type": "Missile",
+                "icon": "Icon_weapon_40100101"
+              },
+              {
+                "id": 40222121,
+                "name": "Albatross - LW",
+                "quality": "SR",
+                "type": "Rocket",
+                "icon": "Icon_weapon_40200201"
+              },
+              {
+                "id": 50211111,
+                "name": "Raptor's Beak",
+                "quality": "R",
+                "type": "Funnel",
+                "icon": "Icon_weapon_40300101"
+              },
+              {
+                "id": 30211121,
+                "name": "Spruce",
+                "quality": "R",
+                "type": "HeavySniper",
+                "icon": "Icon_weapon_30200101"
+              },
+              {
+                "id": 10411121,
+                "name": "Ferroalloy Shield",
+                "quality": "R",
+                "type": "Shield",
+                "icon": "Icon_weapon_10400101"
+              },
+              {
+                "id": 20311121,
+                "name": "Navigator",
+                "quality": "R",
+                "type": "ShotGun",
+                "icon": "Icon_weapon_20300101"
+              }
+            ],
+            "items": [
+              "Shield Weapon Essence I",
+              "Ranged Weapon Essence I",
+              "Tactical Weapon Essence I"
+            ],
+            "always": [
+              "Shield Weapon Essence I"
+            ]
+          }
         },
         {
           "slot": 3,
@@ -11412,7 +14095,131 @@ window.BossesData = {
                 }
               ]
             }
-          ]
+          ],
+          "drops": {
+            "weapons": [
+              {
+                "id": 20413122,
+                "name": "Blaze Howl - EX",
+                "quality": "SSR",
+                "type": "Flamethrower",
+                "icon": "Icon_weapon_20500301"
+              },
+              {
+                "id": 50213122,
+                "name": "Foehn - EX",
+                "quality": "SSR",
+                "type": "Funnel",
+                "icon": "Icon_weapon_40300301"
+              },
+              {
+                "id": 40113122,
+                "name": "Kumara - EX",
+                "quality": "SSR",
+                "type": "Missile",
+                "icon": "Icon_weapon_40100401"
+              },
+              {
+                "id": 10213122,
+                "name": "Triumph - EX",
+                "quality": "SSR",
+                "type": "PileBunker",
+                "icon": "Icon_weapon_10200301"
+              },
+              {
+                "id": 50113122,
+                "name": "Torch Tower - EX",
+                "quality": "SSR",
+                "type": "RailGun",
+                "icon": "Icon_weapon_50100101"
+              },
+              {
+                "id": 10313122,
+                "name": "Mountains - EX",
+                "quality": "SSR",
+                "type": "Rod",
+                "icon": "Icon_weapon_10300301"
+              },
+              {
+                "id": 20412121,
+                "name": "Fafnir",
+                "quality": "SR",
+                "type": "Flamethrower",
+                "icon": "Icon_weapon_20500201"
+              },
+              {
+                "id": 50212111,
+                "name": "Polaris",
+                "quality": "SR",
+                "type": "Funnel",
+                "icon": "Icon_weapon_40300201"
+              },
+              {
+                "id": 40112121,
+                "name": "Thunder",
+                "quality": "SR",
+                "type": "Missile",
+                "icon": "Icon_weapon_40100101"
+              },
+              {
+                "id": 10212121,
+                "name": "Thunderbolt",
+                "quality": "SR",
+                "type": "PileBunker",
+                "icon": "Icon_weapon_10200201"
+              },
+              {
+                "id": 50112121,
+                "name": "Ex-Wisdom",
+                "quality": "SR",
+                "type": "RailGun",
+                "icon": "Icon_weapon_50100201"
+              },
+              {
+                "id": 10312121,
+                "name": "Gate Breaker",
+                "quality": "SR",
+                "type": "Rod",
+                "icon": "Icon_weapon_10300201"
+              },
+              {
+                "id": 10911121,
+                "name": "Caladbolg",
+                "quality": "R",
+                "type": "Blade",
+                "icon": "Icon_weapon_10700101"
+              },
+              {
+                "id": 10511121,
+                "name": "Toledo",
+                "quality": "R",
+                "type": "Buckler",
+                "icon": "Icon_weapon_10500101"
+              },
+              {
+                "id": 20411121,
+                "name": "Hearthspray",
+                "quality": "R",
+                "type": "Flamethrower",
+                "icon": "Icon_weapon_20500101"
+              },
+              {
+                "id": 20111121,
+                "name": "Courage",
+                "quality": "R",
+                "type": "MachineGun",
+                "icon": "Icon_weapon_20100101"
+              }
+            ],
+            "items": [
+              "Shield Weapon Essence I",
+              "Melee Weapon Essence I",
+              "Tactical Weapon Essence I"
+            ],
+            "always": [
+              "Shield Weapon Essence I"
+            ]
+          }
         },
         {
           "slot": 4,
@@ -11481,7 +14288,117 @@ window.BossesData = {
                 }
               ]
             }
-          ]
+          ],
+          "drops": {
+            "weapons": [
+              {
+                "id": 30113122,
+                "name": "Maxx - EX",
+                "quality": "SSR",
+                "type": "LightSniper",
+                "icon": "Icon_weapon_30100401"
+              },
+              {
+                "id": 20113122,
+                "name": "Nightwither - EX",
+                "quality": "SSR",
+                "type": "MachineGun",
+                "icon": "Icon_weapon_20100401"
+              },
+              {
+                "id": 40213122,
+                "name": "Molten - EX",
+                "quality": "SSR",
+                "type": "Rocket",
+                "icon": "Icon_weapon_40200401"
+              },
+              {
+                "id": 10413122,
+                "name": "Starfield - EX",
+                "quality": "SSR",
+                "type": "Shield",
+                "icon": "Icon_weapon_10400501"
+              },
+              {
+                "id": 20313122,
+                "name": "Firebolt - EX",
+                "quality": "SSR",
+                "type": "ShotGun",
+                "icon": "Icon_weapon_20300401"
+              },
+              {
+                "id": 30112121,
+                "name": "Whistle",
+                "quality": "SR",
+                "type": "LightSniper",
+                "icon": "Icon_weapon_30100201"
+              },
+              {
+                "id": 20112121,
+                "name": "Art of Ambush",
+                "quality": "SR",
+                "type": "MachineGun",
+                "icon": "Icon_weapon_20100201"
+              },
+              {
+                "id": 40212121,
+                "name": "Albatross",
+                "quality": "SR",
+                "type": "Rocket",
+                "icon": "Icon_weapon_40200201"
+              },
+              {
+                "id": 10412121,
+                "name": "Submerged Reef",
+                "quality": "SR",
+                "type": "Shield",
+                "icon": "Icon_weapon_10400201"
+              },
+              {
+                "id": 20312121,
+                "name": "Gale",
+                "quality": "SR",
+                "type": "ShotGun",
+                "icon": "Icon_weapon_20300201"
+              },
+              {
+                "id": 20211121,
+                "name": "Ifrit",
+                "quality": "R",
+                "type": "HeavyMachineGun",
+                "icon": "Icon_weapon_20400101"
+              },
+              {
+                "id": 40111121,
+                "name": "Gordius",
+                "quality": "R",
+                "type": "Missile",
+                "icon": "Icon_weapon_40100201"
+              },
+              {
+                "id": 50111121,
+                "name": "Prism",
+                "quality": "R",
+                "type": "RailGun",
+                "icon": "Icon_weapon_50100301"
+              },
+              {
+                "id": 10811111,
+                "name": "Millstone",
+                "quality": "R",
+                "type": "Saw",
+                "icon": "Icon_weapon_10600101"
+              }
+            ],
+            "items": [
+              "Shield Weapon Essence I",
+              "Assault Weapon Essence I",
+              "Ranged Weapon Essence I"
+            ],
+            "always": [
+              "Shield Weapon Essence I"
+            ]
+          }
         }
       ],
       "description": "After their defeat, the Monolith Valley Armed Forces secured additional funding and deployed senior cadres to strengthen their ranks. They now control a military depot in the Parill Desert, causing unrest among factions in Milkhama. Consequently, GKD Squad has been given a new mission.",
@@ -11559,7 +14476,123 @@ window.BossesData = {
                 }
               ]
             }
-          ]
+          ],
+          "drops": {
+            "weapons": [
+              {
+                "id": 20423102,
+                "name": "Corona",
+                "quality": "SSR",
+                "type": "Flamethrower",
+                "icon": "Icon_weapon_20500401"
+              },
+              {
+                "id": 50213102,
+                "name": "Foehn",
+                "quality": "SSR",
+                "type": "Funnel",
+                "icon": "Icon_weapon_40300301"
+              },
+              {
+                "id": 30123111,
+                "name": "Gazer",
+                "quality": "SSR",
+                "type": "LightSniper",
+                "icon": "Icon_weapon_30100301"
+              },
+              {
+                "id": 50113102,
+                "name": "Torch Tower",
+                "quality": "SSR",
+                "type": "RailGun",
+                "icon": "Icon_weapon_50100101"
+              },
+              {
+                "id": 40223111,
+                "name": "Surging Flame",
+                "quality": "SSR",
+                "type": "Rocket",
+                "icon": "Icon_weapon_40200301"
+              },
+              {
+                "id": 20323102,
+                "name": "T-Rex",
+                "quality": "SSR",
+                "type": "ShotGun",
+                "icon": "Icon_weapon_20300301"
+              },
+              {
+                "id": 20422101,
+                "name": "Fafnir - LW",
+                "quality": "SR",
+                "type": "Flamethrower",
+                "icon": "Icon_weapon_20500201"
+              },
+              {
+                "id": 50212101,
+                "name": "Polaris",
+                "quality": "SR",
+                "type": "Funnel",
+                "icon": "Icon_weapon_40300201"
+              },
+              {
+                "id": 30122111,
+                "name": "Whistle - LW",
+                "quality": "SR",
+                "type": "LightSniper",
+                "icon": "Icon_weapon_30100201"
+              },
+              {
+                "id": 50112101,
+                "name": "Ex-Wisdom",
+                "quality": "SR",
+                "type": "RailGun",
+                "icon": "Icon_weapon_50100201"
+              },
+              {
+                "id": 40222111,
+                "name": "Albatross - LW",
+                "quality": "SR",
+                "type": "Rocket",
+                "icon": "Icon_weapon_40200201"
+              },
+              {
+                "id": 20322101,
+                "name": "Gale - LW",
+                "quality": "SR",
+                "type": "ShotGun",
+                "icon": "Icon_weapon_20300201"
+              },
+              {
+                "id": 10511111,
+                "name": "Toledo",
+                "quality": "R",
+                "type": "Buckler",
+                "icon": "Icon_weapon_10500101"
+              },
+              {
+                "id": 20411101,
+                "name": "Hearthspray",
+                "quality": "R",
+                "type": "Flamethrower",
+                "icon": "Icon_weapon_20500101"
+              },
+              {
+                "id": 40111102,
+                "name": "Gordius",
+                "quality": "R",
+                "type": "Missile",
+                "icon": "Icon_weapon_40100201"
+              },
+              {
+                "id": 10211111,
+                "name": "Heavy Pile",
+                "quality": "R",
+                "type": "PileBunker",
+                "icon": "Icon_weapon_10200101"
+              }
+            ]
+          }
         },
         {
           "slot": 2,
@@ -11616,7 +14649,109 @@ window.BossesData = {
                 }
               ]
             }
-          ]
+          ],
+          "drops": {
+            "weapons": [
+              {
+                "id": 20413102,
+                "name": "Blaze Howl",
+                "quality": "SSR",
+                "type": "Flamethrower",
+                "icon": "Icon_weapon_20500301"
+              },
+              {
+                "id": 20213111,
+                "name": "Behemoth",
+                "quality": "SSR",
+                "type": "HeavyMachineGun",
+                "icon": "Icon_weapon_20400302"
+              },
+              {
+                "id": 10113111,
+                "name": "Hail of Spikes",
+                "quality": "SSR",
+                "type": "Knuckle",
+                "icon": "Icon_weapon_10100301"
+              },
+              {
+                "id": 20123111,
+                "name": "Mark",
+                "quality": "SSR",
+                "type": "MachineGun",
+                "icon": "Icon_weapon_20100301"
+              },
+              {
+                "id": 40123111,
+                "name": "Hanuman",
+                "quality": "SSR",
+                "type": "Missile",
+                "icon": "Icon_weapon_40100301"
+              },
+              {
+                "id": 20412101,
+                "name": "Fafnir",
+                "quality": "SR",
+                "type": "Flamethrower",
+                "icon": "Icon_weapon_20500201"
+              },
+              {
+                "id": 20212102,
+                "name": "Wrath of Mars",
+                "quality": "SR",
+                "type": "HeavyMachineGun",
+                "icon": "Icon_weapon_20400201"
+              },
+              {
+                "id": 10112111,
+                "name": "Nutcracker",
+                "quality": "SR",
+                "type": "Knuckle",
+                "icon": "Icon_weapon_10100201"
+              },
+              {
+                "id": 20122101,
+                "name": "Art of Ambush - LW",
+                "quality": "SR",
+                "type": "MachineGun",
+                "icon": "Icon_weapon_20100201"
+              },
+              {
+                "id": 40122102,
+                "name": "Thunder - LW",
+                "quality": "SR",
+                "type": "Missile",
+                "icon": "Icon_weapon_40100101"
+              },
+              {
+                "id": 20211102,
+                "name": "Ifrit",
+                "quality": "R",
+                "type": "HeavyMachineGun",
+                "icon": "Icon_weapon_20400101"
+              },
+              {
+                "id": 30111111,
+                "name": "Pioneer",
+                "quality": "R",
+                "type": "LightSniper",
+                "icon": "Icon_weapon_30100101"
+              },
+              {
+                "id": 10811101,
+                "name": "Millstone",
+                "quality": "R",
+                "type": "Saw",
+                "icon": "Icon_weapon_10600101"
+              },
+              {
+                "id": 20311101,
+                "name": "Navigator",
+                "quality": "R",
+                "type": "ShotGun",
+                "icon": "Icon_weapon_20300101"
+              }
+            ]
+          }
         },
         {
           "slot": 3,
@@ -11713,7 +14848,123 @@ window.BossesData = {
                 }
               ]
             }
-          ]
+          ],
+          "drops": {
+            "weapons": [
+              {
+                "id": 20113111,
+                "name": "Nightwither",
+                "quality": "SSR",
+                "type": "MachineGun",
+                "icon": "Icon_weapon_20100401"
+              },
+              {
+                "id": 10213111,
+                "name": "Triumph",
+                "quality": "SSR",
+                "type": "PileBunker",
+                "icon": "Icon_weapon_10200301"
+              },
+              {
+                "id": 10313111,
+                "name": "Mountains",
+                "quality": "SSR",
+                "type": "Rod",
+                "icon": "Icon_weapon_10300301"
+              },
+              {
+                "id": 10813111,
+                "name": "Beowulf",
+                "quality": "SSR",
+                "type": "Saw",
+                "icon": "Icon_weapon_10600201"
+              },
+              {
+                "id": 10413102,
+                "name": "Starfield",
+                "quality": "SSR",
+                "type": "Shield",
+                "icon": "Icon_weapon_10400501"
+              },
+              {
+                "id": 20313102,
+                "name": "Firebolt",
+                "quality": "SSR",
+                "type": "ShotGun",
+                "icon": "Icon_weapon_20300401"
+              },
+              {
+                "id": 20112101,
+                "name": "Art of Ambush",
+                "quality": "SR",
+                "type": "MachineGun",
+                "icon": "Icon_weapon_20100201"
+              },
+              {
+                "id": 10212111,
+                "name": "Thunderbolt",
+                "quality": "SR",
+                "type": "PileBunker",
+                "icon": "Icon_weapon_10200201"
+              },
+              {
+                "id": 10312102,
+                "name": "Gate Breaker",
+                "quality": "SR",
+                "type": "Rod",
+                "icon": "Icon_weapon_10300201"
+              },
+              {
+                "id": 10812101,
+                "name": "Cadmus",
+                "quality": "SR",
+                "type": "Saw",
+                "icon": "Icon_weapon_10600301"
+              },
+              {
+                "id": 10412101,
+                "name": "Submerged Reef",
+                "quality": "SR",
+                "type": "Shield",
+                "icon": "Icon_weapon_10400201"
+              },
+              {
+                "id": 20312101,
+                "name": "Gale",
+                "quality": "SR",
+                "type": "ShotGun",
+                "icon": "Icon_weapon_20300201"
+              },
+              {
+                "id": 10911111,
+                "name": "Caladbolg",
+                "quality": "R",
+                "type": "Blade",
+                "icon": "Icon_weapon_10700101"
+              },
+              {
+                "id": 30211111,
+                "name": "Spruce",
+                "quality": "R",
+                "type": "HeavySniper",
+                "icon": "Icon_weapon_30200101"
+              },
+              {
+                "id": 50111101,
+                "name": "Prism",
+                "quality": "R",
+                "type": "RailGun",
+                "icon": "Icon_weapon_50100301"
+              },
+              {
+                "id": 40211111,
+                "name": "Neanderthal",
+                "quality": "R",
+                "type": "Rocket",
+                "icon": "Icon_weapon_40200101"
+              }
+            ]
+          }
         },
         {
           "slot": 4,
@@ -11776,7 +15027,123 @@ window.BossesData = {
                 }
               ]
             }
-          ]
+          ],
+          "drops": {
+            "weapons": [
+              {
+                "id": 10913111,
+                "name": "Excalibur",
+                "quality": "SSR",
+                "type": "Blade",
+                "icon": "Icon_weapon_10700301A"
+              },
+              {
+                "id": 10513111,
+                "name": "Polymeric Barrier",
+                "quality": "SSR",
+                "type": "Buckler",
+                "icon": "Icon_weapon_10500401"
+              },
+              {
+                "id": 30213111,
+                "name": "Red Fox",
+                "quality": "SSR",
+                "type": "HeavySniper",
+                "icon": "Icon_weapon_30200301"
+              },
+              {
+                "id": 30113111,
+                "name": "Maxx",
+                "quality": "SSR",
+                "type": "LightSniper",
+                "icon": "Icon_weapon_30100401"
+              },
+              {
+                "id": 40113111,
+                "name": "Kumara",
+                "quality": "SSR",
+                "type": "Missile",
+                "icon": "Icon_weapon_40100401"
+              },
+              {
+                "id": 40213111,
+                "name": "Molten",
+                "quality": "SSR",
+                "type": "Rocket",
+                "icon": "Icon_weapon_40200401"
+              },
+              {
+                "id": 10912111,
+                "name": "Arondight",
+                "quality": "SR",
+                "type": "Blade",
+                "icon": "Icon_weapon_10700201"
+              },
+              {
+                "id": 10512111,
+                "name": "Aneto",
+                "quality": "SR",
+                "type": "Buckler",
+                "icon": "Icon_weapon_10500201"
+              },
+              {
+                "id": 30212111,
+                "name": "Firebird",
+                "quality": "SR",
+                "type": "HeavySniper",
+                "icon": "Icon_weapon_30200201"
+              },
+              {
+                "id": 30112111,
+                "name": "Whistle",
+                "quality": "SR",
+                "type": "LightSniper",
+                "icon": "Icon_weapon_30100201"
+              },
+              {
+                "id": 40112102,
+                "name": "Thunder",
+                "quality": "SR",
+                "type": "Missile",
+                "icon": "Icon_weapon_40100101"
+              },
+              {
+                "id": 40212111,
+                "name": "Albatross",
+                "quality": "SR",
+                "type": "Rocket",
+                "icon": "Icon_weapon_40200201"
+              },
+              {
+                "id": 50211101,
+                "name": "Raptor's Beak",
+                "quality": "R",
+                "type": "Funnel",
+                "icon": "Icon_weapon_40300101"
+              },
+              {
+                "id": 20111101,
+                "name": "Courage",
+                "quality": "R",
+                "type": "MachineGun",
+                "icon": "Icon_weapon_20100101"
+              },
+              {
+                "id": 10311102,
+                "name": "Torero",
+                "quality": "R",
+                "type": "Rod",
+                "icon": "Icon_weapon_10300101"
+              },
+              {
+                "id": 10411101,
+                "name": "Ferroalloy Shield",
+                "quality": "R",
+                "type": "Shield",
+                "icon": "Icon_weapon_10400101"
+              }
+            ]
+          }
         }
       ],
       "description": "After the battle, the Monolith Valley Armed Forces split, with Meritus and Eller taking a military base in the Parill Desert, angering local interests.",
@@ -11866,7 +15233,109 @@ window.BossesData = {
                 }
               ]
             }
-          ]
+          ],
+          "drops": {
+            "weapons": [
+              {
+                "id": 30213101,
+                "name": "Red Fox",
+                "quality": "SSR",
+                "type": "HeavySniper",
+                "icon": "Icon_weapon_30200301"
+              },
+              {
+                "id": 20123092,
+                "name": "Mark",
+                "quality": "SSR",
+                "type": "MachineGun",
+                "icon": "Icon_weapon_20100301"
+              },
+              {
+                "id": 20113092,
+                "name": "Nightwither",
+                "quality": "SSR",
+                "type": "MachineGun",
+                "icon": "Icon_weapon_20100401"
+              },
+              {
+                "id": 40213101,
+                "name": "Molten",
+                "quality": "SSR",
+                "type": "Rocket",
+                "icon": "Icon_weapon_40200401"
+              },
+              {
+                "id": 40223101,
+                "name": "Surging Flame",
+                "quality": "SSR",
+                "type": "Rocket",
+                "icon": "Icon_weapon_40200301"
+              },
+              {
+                "id": 30212091,
+                "name": "Firebird",
+                "quality": "SR",
+                "type": "HeavySniper",
+                "icon": "Icon_weapon_30200201"
+              },
+              {
+                "id": 20112091,
+                "name": "Art of Ambush",
+                "quality": "SR",
+                "type": "MachineGun",
+                "icon": "Icon_weapon_20100201"
+              },
+              {
+                "id": 20122091,
+                "name": "Art of Ambush - LW",
+                "quality": "SR",
+                "type": "MachineGun",
+                "icon": "Icon_weapon_20100201"
+              },
+              {
+                "id": 40212092,
+                "name": "Albatross",
+                "quality": "SR",
+                "type": "Rocket",
+                "icon": "Icon_weapon_40200201"
+              },
+              {
+                "id": 40222092,
+                "name": "Albatross - LW",
+                "quality": "SR",
+                "type": "Rocket",
+                "icon": "Icon_weapon_40200201"
+              },
+              {
+                "id": 10911101,
+                "name": "Caladbolg",
+                "quality": "R",
+                "type": "Blade",
+                "icon": "Icon_weapon_10700101"
+              },
+              {
+                "id": 20211101,
+                "name": "Ifrit",
+                "quality": "R",
+                "type": "HeavyMachineGun",
+                "icon": "Icon_weapon_20400101"
+              },
+              {
+                "id": 30111101,
+                "name": "Pioneer",
+                "quality": "R",
+                "type": "LightSniper",
+                "icon": "Icon_weapon_30100101"
+              },
+              {
+                "id": 20311092,
+                "name": "Navigator",
+                "quality": "R",
+                "type": "ShotGun",
+                "icon": "Icon_weapon_20300101"
+              }
+            ]
+          }
         },
         {
           "slot": 2,
@@ -11953,7 +15422,123 @@ window.BossesData = {
                 }
               ]
             }
-          ]
+          ],
+          "drops": {
+            "weapons": [
+              {
+                "id": 20423101,
+                "name": "Corona",
+                "quality": "SSR",
+                "type": "Flamethrower",
+                "icon": "Icon_weapon_20500401"
+              },
+              {
+                "id": 50213101,
+                "name": "Foehn",
+                "quality": "SSR",
+                "type": "Funnel",
+                "icon": "Icon_weapon_40300301"
+              },
+              {
+                "id": 10113101,
+                "name": "Hail of Spikes",
+                "quality": "SSR",
+                "type": "Knuckle",
+                "icon": "Icon_weapon_10100301"
+              },
+              {
+                "id": 50113101,
+                "name": "Torch Tower",
+                "quality": "SSR",
+                "type": "RailGun",
+                "icon": "Icon_weapon_50100101"
+              },
+              {
+                "id": 10413101,
+                "name": "Starfield",
+                "quality": "SSR",
+                "type": "Shield",
+                "icon": "Icon_weapon_10400501"
+              },
+              {
+                "id": 20323101,
+                "name": "T-Rex",
+                "quality": "SSR",
+                "type": "ShotGun",
+                "icon": "Icon_weapon_20300301"
+              },
+              {
+                "id": 20422091,
+                "name": "Fafnir - LW",
+                "quality": "SR",
+                "type": "Flamethrower",
+                "icon": "Icon_weapon_20500201"
+              },
+              {
+                "id": 50212091,
+                "name": "Polaris",
+                "quality": "SR",
+                "type": "Funnel",
+                "icon": "Icon_weapon_40300201"
+              },
+              {
+                "id": 10112092,
+                "name": "Nutcracker",
+                "quality": "SR",
+                "type": "Knuckle",
+                "icon": "Icon_weapon_10100201"
+              },
+              {
+                "id": 50112091,
+                "name": "Ex-Wisdom",
+                "quality": "SR",
+                "type": "RailGun",
+                "icon": "Icon_weapon_50100201"
+              },
+              {
+                "id": 10412091,
+                "name": "Submerged Reef",
+                "quality": "SR",
+                "type": "Shield",
+                "icon": "Icon_weapon_10400201"
+              },
+              {
+                "id": 20322092,
+                "name": "Gale - LW",
+                "quality": "SR",
+                "type": "ShotGun",
+                "icon": "Icon_weapon_20300201"
+              },
+              {
+                "id": 10511101,
+                "name": "Toledo",
+                "quality": "R",
+                "type": "Buckler",
+                "icon": "Icon_weapon_10500101"
+              },
+              {
+                "id": 20411091,
+                "name": "Hearthspray",
+                "quality": "R",
+                "type": "Flamethrower",
+                "icon": "Icon_weapon_20500101"
+              },
+              {
+                "id": 10211092,
+                "name": "Heavy Pile",
+                "quality": "R",
+                "type": "PileBunker",
+                "icon": "Icon_weapon_10200101"
+              },
+              {
+                "id": 40211092,
+                "name": "Neanderthal",
+                "quality": "R",
+                "type": "Rocket",
+                "icon": "Icon_weapon_40200101"
+              }
+            ]
+          }
         },
         {
           "slot": 3,
@@ -12022,7 +15607,123 @@ window.BossesData = {
                 }
               ]
             }
-          ]
+          ],
+          "drops": {
+            "weapons": [
+              {
+                "id": 10913101,
+                "name": "Excalibur",
+                "quality": "SSR",
+                "type": "Blade",
+                "icon": "Icon_weapon_10700301A"
+              },
+              {
+                "id": 20413101,
+                "name": "Blaze Howl",
+                "quality": "SSR",
+                "type": "Flamethrower",
+                "icon": "Icon_weapon_20500301"
+              },
+              {
+                "id": 30123101,
+                "name": "Gazer",
+                "quality": "SSR",
+                "type": "LightSniper",
+                "icon": "Icon_weapon_30100301"
+              },
+              {
+                "id": 40123101,
+                "name": "Hanuman",
+                "quality": "SSR",
+                "type": "Missile",
+                "icon": "Icon_weapon_40100301"
+              },
+              {
+                "id": 40113101,
+                "name": "Kumara",
+                "quality": "SSR",
+                "type": "Missile",
+                "icon": "Icon_weapon_40100401"
+              },
+              {
+                "id": 20313101,
+                "name": "Firebolt",
+                "quality": "SSR",
+                "type": "ShotGun",
+                "icon": "Icon_weapon_20300401"
+              },
+              {
+                "id": 10912101,
+                "name": "Arondight",
+                "quality": "SR",
+                "type": "Blade",
+                "icon": "Icon_weapon_10700201"
+              },
+              {
+                "id": 20412091,
+                "name": "Fafnir",
+                "quality": "SR",
+                "type": "Flamethrower",
+                "icon": "Icon_weapon_20500201"
+              },
+              {
+                "id": 30122101,
+                "name": "Whistle - LW",
+                "quality": "SR",
+                "type": "LightSniper",
+                "icon": "Icon_weapon_30100201"
+              },
+              {
+                "id": 40112101,
+                "name": "Thunder",
+                "quality": "SR",
+                "type": "Missile",
+                "icon": "Icon_weapon_40100101"
+              },
+              {
+                "id": 40122101,
+                "name": "Thunder - LW",
+                "quality": "SR",
+                "type": "Missile",
+                "icon": "Icon_weapon_40100101"
+              },
+              {
+                "id": 20312092,
+                "name": "Gale",
+                "quality": "SR",
+                "type": "ShotGun",
+                "icon": "Icon_weapon_20300201"
+              },
+              {
+                "id": 30211091,
+                "name": "Spruce",
+                "quality": "R",
+                "type": "HeavySniper",
+                "icon": "Icon_weapon_30200101"
+              },
+              {
+                "id": 50111091,
+                "name": "Prism",
+                "quality": "R",
+                "type": "RailGun",
+                "icon": "Icon_weapon_50100301"
+              },
+              {
+                "id": 10311101,
+                "name": "Torero",
+                "quality": "R",
+                "type": "Rod",
+                "icon": "Icon_weapon_10300101"
+              },
+              {
+                "id": 10811091,
+                "name": "Millstone",
+                "quality": "R",
+                "type": "Saw",
+                "icon": "Icon_weapon_10600101"
+              }
+            ]
+          }
         },
         {
           "slot": 4,
@@ -12101,7 +15802,123 @@ window.BossesData = {
                 }
               ]
             }
-          ]
+          ],
+          "drops": {
+            "weapons": [
+              {
+                "id": 10513101,
+                "name": "Polymeric Barrier",
+                "quality": "SSR",
+                "type": "Buckler",
+                "icon": "Icon_weapon_10500401"
+              },
+              {
+                "id": 20213101,
+                "name": "Behemoth",
+                "quality": "SSR",
+                "type": "HeavyMachineGun",
+                "icon": "Icon_weapon_20400302"
+              },
+              {
+                "id": 30113101,
+                "name": "Maxx",
+                "quality": "SSR",
+                "type": "LightSniper",
+                "icon": "Icon_weapon_30100401"
+              },
+              {
+                "id": 10213101,
+                "name": "Triumph",
+                "quality": "SSR",
+                "type": "PileBunker",
+                "icon": "Icon_weapon_10200301"
+              },
+              {
+                "id": 10313101,
+                "name": "Mountains",
+                "quality": "SSR",
+                "type": "Rod",
+                "icon": "Icon_weapon_10300301"
+              },
+              {
+                "id": 10813101,
+                "name": "Beowulf",
+                "quality": "SSR",
+                "type": "Saw",
+                "icon": "Icon_weapon_10600201"
+              },
+              {
+                "id": 10512101,
+                "name": "Aneto",
+                "quality": "SR",
+                "type": "Buckler",
+                "icon": "Icon_weapon_10500201"
+              },
+              {
+                "id": 20212101,
+                "name": "Wrath of Mars",
+                "quality": "SR",
+                "type": "HeavyMachineGun",
+                "icon": "Icon_weapon_20400201"
+              },
+              {
+                "id": 30112101,
+                "name": "Whistle",
+                "quality": "SR",
+                "type": "LightSniper",
+                "icon": "Icon_weapon_30100201"
+              },
+              {
+                "id": 10212092,
+                "name": "Thunderbolt",
+                "quality": "SR",
+                "type": "PileBunker",
+                "icon": "Icon_weapon_10200201"
+              },
+              {
+                "id": 10312101,
+                "name": "Gate Breaker",
+                "quality": "SR",
+                "type": "Rod",
+                "icon": "Icon_weapon_10300201"
+              },
+              {
+                "id": 10812091,
+                "name": "Cadmus",
+                "quality": "SR",
+                "type": "Saw",
+                "icon": "Icon_weapon_10600301"
+              },
+              {
+                "id": 50211091,
+                "name": "Raptor's Beak",
+                "quality": "R",
+                "type": "Funnel",
+                "icon": "Icon_weapon_40300101"
+              },
+              {
+                "id": 20111091,
+                "name": "Courage",
+                "quality": "R",
+                "type": "MachineGun",
+                "icon": "Icon_weapon_20100101"
+              },
+              {
+                "id": 40111101,
+                "name": "Gordius",
+                "quality": "R",
+                "type": "Missile",
+                "icon": "Icon_weapon_40100201"
+              },
+              {
+                "id": 10411091,
+                "name": "Ferroalloy Shield",
+                "quality": "R",
+                "type": "Shield",
+                "icon": "Icon_weapon_10400101"
+              }
+            ]
+          }
         }
       ],
       "description": "Behind Milkhama's facade of peace, powers wage shadow wars. Intel ops are too hot for official channels to get outsourced to neutral mercs. And mercs take out other mercs.",
@@ -12157,7 +15974,123 @@ window.BossesData = {
                 }
               ]
             }
-          ]
+          ],
+          "drops": {
+            "weapons": [
+              {
+                "id": 20423091,
+                "name": "Corona",
+                "quality": "SSR",
+                "type": "Flamethrower",
+                "icon": "Icon_weapon_20500401"
+              },
+              {
+                "id": 50213081,
+                "name": "Foehn",
+                "quality": "SSR",
+                "type": "Funnel",
+                "icon": "Icon_weapon_40300301"
+              },
+              {
+                "id": 30123091,
+                "name": "Gazer",
+                "quality": "SSR",
+                "type": "LightSniper",
+                "icon": "Icon_weapon_30100301"
+              },
+              {
+                "id": 20123091,
+                "name": "Mark",
+                "quality": "SSR",
+                "type": "MachineGun",
+                "icon": "Icon_weapon_20100301"
+              },
+              {
+                "id": 50113081,
+                "name": "Torch Tower",
+                "quality": "SSR",
+                "type": "RailGun",
+                "icon": "Icon_weapon_50100101"
+              },
+              {
+                "id": 10413082,
+                "name": "Starfield",
+                "quality": "SSR",
+                "type": "Shield",
+                "icon": "Icon_weapon_10400501"
+              },
+              {
+                "id": 20422081,
+                "name": "Fafnir - LW",
+                "quality": "SR",
+                "type": "Flamethrower",
+                "icon": "Icon_weapon_20500201"
+              },
+              {
+                "id": 50212081,
+                "name": "Polaris",
+                "quality": "SR",
+                "type": "Funnel",
+                "icon": "Icon_weapon_40300201"
+              },
+              {
+                "id": 30122081,
+                "name": "Whistle - LW",
+                "quality": "SR",
+                "type": "LightSniper",
+                "icon": "Icon_weapon_30100201"
+              },
+              {
+                "id": 20122081,
+                "name": "Art of Ambush - LW",
+                "quality": "SR",
+                "type": "MachineGun",
+                "icon": "Icon_weapon_20100201"
+              },
+              {
+                "id": 50112081,
+                "name": "Ex-Wisdom",
+                "quality": "SR",
+                "type": "RailGun",
+                "icon": "Icon_weapon_50100201"
+              },
+              {
+                "id": 10412081,
+                "name": "Submerged Reef",
+                "quality": "SR",
+                "type": "Shield",
+                "icon": "Icon_weapon_10400201"
+              },
+              {
+                "id": 20411081,
+                "name": "Hearthspray",
+                "quality": "R",
+                "type": "Flamethrower",
+                "icon": "Icon_weapon_20500101"
+              },
+              {
+                "id": 20211091,
+                "name": "Ifrit",
+                "quality": "R",
+                "type": "HeavyMachineGun",
+                "icon": "Icon_weapon_20400101"
+              },
+              {
+                "id": 40211091,
+                "name": "Neanderthal",
+                "quality": "R",
+                "type": "Rocket",
+                "icon": "Icon_weapon_40200101"
+              },
+              {
+                "id": 10311081,
+                "name": "Torero",
+                "quality": "R",
+                "type": "Rod",
+                "icon": "Icon_weapon_10300101"
+              }
+            ]
+          }
         },
         {
           "slot": 2,
@@ -12216,7 +16149,109 @@ window.BossesData = {
               "icon": "Icon_skill_talent_5122",
               "description": "After actively attacking, summons 2 Tracers. A maximum of 8 Tracers can exist on the battlefield at the same time."
             }
-          ]
+          ],
+          "drops": {
+            "weapons": [
+              {
+                "id": 30213091,
+                "name": "Red Fox",
+                "quality": "SSR",
+                "type": "HeavySniper",
+                "icon": "Icon_weapon_30200301"
+              },
+              {
+                "id": 40123091,
+                "name": "Hanuman",
+                "quality": "SSR",
+                "type": "Missile",
+                "icon": "Icon_weapon_40100301"
+              },
+              {
+                "id": 10313091,
+                "name": "Mountains",
+                "quality": "SSR",
+                "type": "Rod",
+                "icon": "Icon_weapon_10300301"
+              },
+              {
+                "id": 10813091,
+                "name": "Beowulf",
+                "quality": "SSR",
+                "type": "Saw",
+                "icon": "Icon_weapon_10600201"
+              },
+              {
+                "id": 20323091,
+                "name": "T-Rex",
+                "quality": "SSR",
+                "type": "ShotGun",
+                "icon": "Icon_weapon_20300301"
+              },
+              {
+                "id": 30212081,
+                "name": "Firebird",
+                "quality": "SR",
+                "type": "HeavySniper",
+                "icon": "Icon_weapon_30200201"
+              },
+              {
+                "id": 40122082,
+                "name": "Thunder - LW",
+                "quality": "SR",
+                "type": "Missile",
+                "icon": "Icon_weapon_40100101"
+              },
+              {
+                "id": 10312081,
+                "name": "Gate Breaker",
+                "quality": "SR",
+                "type": "Rod",
+                "icon": "Icon_weapon_10300201"
+              },
+              {
+                "id": 10812081,
+                "name": "Cadmus",
+                "quality": "SR",
+                "type": "Saw",
+                "icon": "Icon_weapon_10600301"
+              },
+              {
+                "id": 20322091,
+                "name": "Gale - LW",
+                "quality": "SR",
+                "type": "ShotGun",
+                "icon": "Icon_weapon_20300201"
+              },
+              {
+                "id": 10911081,
+                "name": "Caladbolg",
+                "quality": "R",
+                "type": "Blade",
+                "icon": "Icon_weapon_10700101"
+              },
+              {
+                "id": 30111081,
+                "name": "Pioneer",
+                "quality": "R",
+                "type": "LightSniper",
+                "icon": "Icon_weapon_30100101"
+              },
+              {
+                "id": 20111081,
+                "name": "Courage",
+                "quality": "R",
+                "type": "MachineGun",
+                "icon": "Icon_weapon_20100101"
+              },
+              {
+                "id": 20311091,
+                "name": "Navigator",
+                "quality": "R",
+                "type": "ShotGun",
+                "icon": "Icon_weapon_20300101"
+              }
+            ]
+          }
         },
         {
           "slot": 3,
@@ -12305,7 +16340,123 @@ window.BossesData = {
                 }
               ]
             }
-          ]
+          ],
+          "drops": {
+            "weapons": [
+              {
+                "id": 10513091,
+                "name": "Polymeric Barrier",
+                "quality": "SSR",
+                "type": "Buckler",
+                "icon": "Icon_weapon_10500401"
+              },
+              {
+                "id": 20413091,
+                "name": "Blaze Howl",
+                "quality": "SSR",
+                "type": "Flamethrower",
+                "icon": "Icon_weapon_20500301"
+              },
+              {
+                "id": 10113091,
+                "name": "Hail of Spikes",
+                "quality": "SSR",
+                "type": "Knuckle",
+                "icon": "Icon_weapon_10100301"
+              },
+              {
+                "id": 30113091,
+                "name": "Maxx",
+                "quality": "SSR",
+                "type": "LightSniper",
+                "icon": "Icon_weapon_30100401"
+              },
+              {
+                "id": 20113091,
+                "name": "Nightwither",
+                "quality": "SSR",
+                "type": "MachineGun",
+                "icon": "Icon_weapon_20100401"
+              },
+              {
+                "id": 40223091,
+                "name": "Surging Flame",
+                "quality": "SSR",
+                "type": "Rocket",
+                "icon": "Icon_weapon_40200301"
+              },
+              {
+                "id": 10512081,
+                "name": "Aneto",
+                "quality": "SR",
+                "type": "Buckler",
+                "icon": "Icon_weapon_10500201"
+              },
+              {
+                "id": 20412081,
+                "name": "Fafnir",
+                "quality": "SR",
+                "type": "Flamethrower",
+                "icon": "Icon_weapon_20500201"
+              },
+              {
+                "id": 10112091,
+                "name": "Nutcracker",
+                "quality": "SR",
+                "type": "Knuckle",
+                "icon": "Icon_weapon_10100201"
+              },
+              {
+                "id": 30112081,
+                "name": "Whistle",
+                "quality": "SR",
+                "type": "LightSniper",
+                "icon": "Icon_weapon_30100201"
+              },
+              {
+                "id": 20112081,
+                "name": "Art of Ambush",
+                "quality": "SR",
+                "type": "MachineGun",
+                "icon": "Icon_weapon_20100201"
+              },
+              {
+                "id": 40222091,
+                "name": "Albatross - LW",
+                "quality": "SR",
+                "type": "Rocket",
+                "icon": "Icon_weapon_40200201"
+              },
+              {
+                "id": 50211081,
+                "name": "Raptor's Beak",
+                "quality": "R",
+                "type": "Funnel",
+                "icon": "Icon_weapon_40300101"
+              },
+              {
+                "id": 40111082,
+                "name": "Gordius",
+                "quality": "R",
+                "type": "Missile",
+                "icon": "Icon_weapon_40100201"
+              },
+              {
+                "id": 10211091,
+                "name": "Heavy Pile",
+                "quality": "R",
+                "type": "PileBunker",
+                "icon": "Icon_weapon_10200101"
+              },
+              {
+                "id": 50111081,
+                "name": "Prism",
+                "quality": "R",
+                "type": "RailGun",
+                "icon": "Icon_weapon_50100301"
+              }
+            ]
+          }
         },
         {
           "slot": 4,
@@ -12364,7 +16515,123 @@ window.BossesData = {
                 }
               ]
             }
-          ]
+          ],
+          "drops": {
+            "weapons": [
+              {
+                "id": 10913091,
+                "name": "Excalibur",
+                "quality": "SSR",
+                "type": "Blade",
+                "icon": "Icon_weapon_10700301A"
+              },
+              {
+                "id": 20213091,
+                "name": "Behemoth",
+                "quality": "SSR",
+                "type": "HeavyMachineGun",
+                "icon": "Icon_weapon_20400302"
+              },
+              {
+                "id": 40113091,
+                "name": "Kumara",
+                "quality": "SSR",
+                "type": "Missile",
+                "icon": "Icon_weapon_40100401"
+              },
+              {
+                "id": 10213091,
+                "name": "Triumph",
+                "quality": "SSR",
+                "type": "PileBunker",
+                "icon": "Icon_weapon_10200301"
+              },
+              {
+                "id": 40213091,
+                "name": "Molten",
+                "quality": "SSR",
+                "type": "Rocket",
+                "icon": "Icon_weapon_40200401"
+              },
+              {
+                "id": 20313091,
+                "name": "Firebolt",
+                "quality": "SSR",
+                "type": "ShotGun",
+                "icon": "Icon_weapon_20300401"
+              },
+              {
+                "id": 10912081,
+                "name": "Arondight",
+                "quality": "SR",
+                "type": "Blade",
+                "icon": "Icon_weapon_10700201"
+              },
+              {
+                "id": 20212091,
+                "name": "Wrath of Mars",
+                "quality": "SR",
+                "type": "HeavyMachineGun",
+                "icon": "Icon_weapon_20400201"
+              },
+              {
+                "id": 40112082,
+                "name": "Thunder",
+                "quality": "SR",
+                "type": "Missile",
+                "icon": "Icon_weapon_40100101"
+              },
+              {
+                "id": 10212091,
+                "name": "Thunderbolt",
+                "quality": "SR",
+                "type": "PileBunker",
+                "icon": "Icon_weapon_10200201"
+              },
+              {
+                "id": 40212091,
+                "name": "Albatross",
+                "quality": "SR",
+                "type": "Rocket",
+                "icon": "Icon_weapon_40200201"
+              },
+              {
+                "id": 20312091,
+                "name": "Gale",
+                "quality": "SR",
+                "type": "ShotGun",
+                "icon": "Icon_weapon_20300201"
+              },
+              {
+                "id": 10511081,
+                "name": "Toledo",
+                "quality": "R",
+                "type": "Buckler",
+                "icon": "Icon_weapon_10500101"
+              },
+              {
+                "id": 30211081,
+                "name": "Spruce",
+                "quality": "R",
+                "type": "HeavySniper",
+                "icon": "Icon_weapon_30200101"
+              },
+              {
+                "id": 10811081,
+                "name": "Millstone",
+                "quality": "R",
+                "type": "Saw",
+                "icon": "Icon_weapon_10600101"
+              },
+              {
+                "id": 10411081,
+                "name": "Ferroalloy Shield",
+                "quality": "R",
+                "type": "Shield",
+                "icon": "Icon_weapon_10400101"
+              }
+            ]
+          }
         }
       ],
       "description": "The Iguanas are back on the high-bounty list. Someone's got a score to settle. Their base lies deep in a dense jungle. Bridges are down. STs and drones patrol a fortified stronghold. Where's the weak point?",
@@ -12430,7 +16697,109 @@ window.BossesData = {
                 }
               ]
             }
-          ]
+          ],
+          "drops": {
+            "weapons": [
+              {
+                "id": 50213072,
+                "name": "Foehn",
+                "quality": "SSR",
+                "type": "Funnel",
+                "icon": "Icon_weapon_40300301"
+              },
+              {
+                "id": 30123072,
+                "name": "Gazer",
+                "quality": "SSR",
+                "type": "LightSniper",
+                "icon": "Icon_weapon_30100301"
+              },
+              {
+                "id": 30113072,
+                "name": "Maxx",
+                "quality": "SSR",
+                "type": "LightSniper",
+                "icon": "Icon_weapon_30100401"
+              },
+              {
+                "id": 50113072,
+                "name": "Torch Tower",
+                "quality": "SSR",
+                "type": "RailGun",
+                "icon": "Icon_weapon_50100101"
+              },
+              {
+                "id": 10313072,
+                "name": "Mountains",
+                "quality": "SSR",
+                "type": "Rod",
+                "icon": "Icon_weapon_10300301"
+              },
+              {
+                "id": 50212071,
+                "name": "Polaris",
+                "quality": "SR",
+                "type": "Funnel",
+                "icon": "Icon_weapon_40300201"
+              },
+              {
+                "id": 30112071,
+                "name": "Whistle",
+                "quality": "SR",
+                "type": "LightSniper",
+                "icon": "Icon_weapon_30100201"
+              },
+              {
+                "id": 30122071,
+                "name": "Whistle - LW",
+                "quality": "SR",
+                "type": "LightSniper",
+                "icon": "Icon_weapon_30100201"
+              },
+              {
+                "id": 50112071,
+                "name": "Ex-Wisdom",
+                "quality": "SR",
+                "type": "RailGun",
+                "icon": "Icon_weapon_50100201"
+              },
+              {
+                "id": 10312071,
+                "name": "Gate Breaker",
+                "quality": "SR",
+                "type": "Rod",
+                "icon": "Icon_weapon_10300201"
+              },
+              {
+                "id": 10911072,
+                "name": "Caladbolg",
+                "quality": "R",
+                "type": "Blade",
+                "icon": "Icon_weapon_10700101"
+              },
+              {
+                "id": 20211072,
+                "name": "Ifrit",
+                "quality": "R",
+                "type": "HeavyMachineGun",
+                "icon": "Icon_weapon_20400101"
+              },
+              {
+                "id": 40111081,
+                "name": "Gordius",
+                "quality": "R",
+                "type": "Missile",
+                "icon": "Icon_weapon_40100201"
+              },
+              {
+                "id": 20311072,
+                "name": "Navigator",
+                "quality": "R",
+                "type": "ShotGun",
+                "icon": "Icon_weapon_20300101"
+              }
+            ]
+          }
         },
         {
           "slot": 2,
@@ -12483,7 +16852,123 @@ window.BossesData = {
                 }
               ]
             }
-          ]
+          ],
+          "drops": {
+            "weapons": [
+              {
+                "id": 10913081,
+                "name": "Excalibur",
+                "quality": "SSR",
+                "type": "Blade",
+                "icon": "Icon_weapon_10700301A"
+              },
+              {
+                "id": 20123081,
+                "name": "Mark",
+                "quality": "SSR",
+                "type": "MachineGun",
+                "icon": "Icon_weapon_20100301"
+              },
+              {
+                "id": 20113081,
+                "name": "Nightwither",
+                "quality": "SSR",
+                "type": "MachineGun",
+                "icon": "Icon_weapon_20100401"
+              },
+              {
+                "id": 10813081,
+                "name": "Beowulf",
+                "quality": "SSR",
+                "type": "Saw",
+                "icon": "Icon_weapon_10600201"
+              },
+              {
+                "id": 20313081,
+                "name": "Firebolt",
+                "quality": "SSR",
+                "type": "ShotGun",
+                "icon": "Icon_weapon_20300401"
+              },
+              {
+                "id": 20323081,
+                "name": "T-Rex",
+                "quality": "SSR",
+                "type": "ShotGun",
+                "icon": "Icon_weapon_20300301"
+              },
+              {
+                "id": 10912072,
+                "name": "Arondight",
+                "quality": "SR",
+                "type": "Blade",
+                "icon": "Icon_weapon_10700201"
+              },
+              {
+                "id": 20112071,
+                "name": "Art of Ambush",
+                "quality": "SR",
+                "type": "MachineGun",
+                "icon": "Icon_weapon_20100201"
+              },
+              {
+                "id": 20122071,
+                "name": "Art of Ambush - LW",
+                "quality": "SR",
+                "type": "MachineGun",
+                "icon": "Icon_weapon_20100201"
+              },
+              {
+                "id": 10812071,
+                "name": "Cadmus",
+                "quality": "SR",
+                "type": "Saw",
+                "icon": "Icon_weapon_10600301"
+              },
+              {
+                "id": 20312072,
+                "name": "Gale",
+                "quality": "SR",
+                "type": "ShotGun",
+                "icon": "Icon_weapon_20300201"
+              },
+              {
+                "id": 20322072,
+                "name": "Gale - LW",
+                "quality": "SR",
+                "type": "ShotGun",
+                "icon": "Icon_weapon_20300201"
+              },
+              {
+                "id": 10511072,
+                "name": "Toledo",
+                "quality": "R",
+                "type": "Buckler",
+                "icon": "Icon_weapon_10500101"
+              },
+              {
+                "id": 50211071,
+                "name": "Raptor's Beak",
+                "quality": "R",
+                "type": "Funnel",
+                "icon": "Icon_weapon_40300101"
+              },
+              {
+                "id": 50111071,
+                "name": "Prism",
+                "quality": "R",
+                "type": "RailGun",
+                "icon": "Icon_weapon_50100301"
+              },
+              {
+                "id": 40211081,
+                "name": "Neanderthal",
+                "quality": "R",
+                "type": "Rocket",
+                "icon": "Icon_weapon_40200101"
+              }
+            ]
+          }
         },
         {
           "slot": 3,
@@ -12548,7 +17033,123 @@ window.BossesData = {
                 }
               ]
             }
-          ]
+          ],
+          "drops": {
+            "weapons": [
+              {
+                "id": 10513081,
+                "name": "Polymeric Barrier",
+                "quality": "SSR",
+                "type": "Buckler",
+                "icon": "Icon_weapon_10500401"
+              },
+              {
+                "id": 20413081,
+                "name": "Blaze Howl",
+                "quality": "SSR",
+                "type": "Flamethrower",
+                "icon": "Icon_weapon_20500301"
+              },
+              {
+                "id": 20423081,
+                "name": "Corona",
+                "quality": "SSR",
+                "type": "Flamethrower",
+                "icon": "Icon_weapon_20500401"
+              },
+              {
+                "id": 20213081,
+                "name": "Behemoth",
+                "quality": "SSR",
+                "type": "HeavyMachineGun",
+                "icon": "Icon_weapon_20400302"
+              },
+              {
+                "id": 30213081,
+                "name": "Red Fox",
+                "quality": "SSR",
+                "type": "HeavySniper",
+                "icon": "Icon_weapon_30200301"
+              },
+              {
+                "id": 10413081,
+                "name": "Starfield",
+                "quality": "SSR",
+                "type": "Shield",
+                "icon": "Icon_weapon_10400501"
+              },
+              {
+                "id": 10512072,
+                "name": "Aneto",
+                "quality": "SR",
+                "type": "Buckler",
+                "icon": "Icon_weapon_10500201"
+              },
+              {
+                "id": 20412071,
+                "name": "Fafnir",
+                "quality": "SR",
+                "type": "Flamethrower",
+                "icon": "Icon_weapon_20500201"
+              },
+              {
+                "id": 20422071,
+                "name": "Fafnir - LW",
+                "quality": "SR",
+                "type": "Flamethrower",
+                "icon": "Icon_weapon_20500201"
+              },
+              {
+                "id": 20212072,
+                "name": "Wrath of Mars",
+                "quality": "SR",
+                "type": "HeavyMachineGun",
+                "icon": "Icon_weapon_20400201"
+              },
+              {
+                "id": 30212071,
+                "name": "Firebird",
+                "quality": "SR",
+                "type": "HeavySniper",
+                "icon": "Icon_weapon_30200201"
+              },
+              {
+                "id": 10412071,
+                "name": "Submerged Reef",
+                "quality": "SR",
+                "type": "Shield",
+                "icon": "Icon_weapon_10400201"
+              },
+              {
+                "id": 30111071,
+                "name": "Pioneer",
+                "quality": "R",
+                "type": "LightSniper",
+                "icon": "Icon_weapon_30100101"
+              },
+              {
+                "id": 20111071,
+                "name": "Courage",
+                "quality": "R",
+                "type": "MachineGun",
+                "icon": "Icon_weapon_20100101"
+              },
+              {
+                "id": 10211081,
+                "name": "Heavy Pile",
+                "quality": "R",
+                "type": "PileBunker",
+                "icon": "Icon_weapon_10200101"
+              },
+              {
+                "id": 10811071,
+                "name": "Millstone",
+                "quality": "R",
+                "type": "Saw",
+                "icon": "Icon_weapon_10600101"
+              }
+            ]
+          }
         },
         {
           "slot": 4,
@@ -12597,7 +17198,123 @@ window.BossesData = {
                 }
               ]
             }
-          ]
+          ],
+          "drops": {
+            "weapons": [
+              {
+                "id": 10113081,
+                "name": "Hail of Spikes",
+                "quality": "SSR",
+                "type": "Knuckle",
+                "icon": "Icon_weapon_10100301"
+              },
+              {
+                "id": 40123081,
+                "name": "Hanuman",
+                "quality": "SSR",
+                "type": "Missile",
+                "icon": "Icon_weapon_40100301"
+              },
+              {
+                "id": 40113081,
+                "name": "Kumara",
+                "quality": "SSR",
+                "type": "Missile",
+                "icon": "Icon_weapon_40100401"
+              },
+              {
+                "id": 10213081,
+                "name": "Triumph",
+                "quality": "SSR",
+                "type": "PileBunker",
+                "icon": "Icon_weapon_10200301"
+              },
+              {
+                "id": 40213081,
+                "name": "Molten",
+                "quality": "SSR",
+                "type": "Rocket",
+                "icon": "Icon_weapon_40200401"
+              },
+              {
+                "id": 40223081,
+                "name": "Surging Flame",
+                "quality": "SSR",
+                "type": "Rocket",
+                "icon": "Icon_weapon_40200301"
+              },
+              {
+                "id": 10112081,
+                "name": "Nutcracker",
+                "quality": "SR",
+                "type": "Knuckle",
+                "icon": "Icon_weapon_10100201"
+              },
+              {
+                "id": 40112081,
+                "name": "Thunder",
+                "quality": "SR",
+                "type": "Missile",
+                "icon": "Icon_weapon_40100101"
+              },
+              {
+                "id": 40122081,
+                "name": "Thunder - LW",
+                "quality": "SR",
+                "type": "Missile",
+                "icon": "Icon_weapon_40100101"
+              },
+              {
+                "id": 10212081,
+                "name": "Thunderbolt",
+                "quality": "SR",
+                "type": "PileBunker",
+                "icon": "Icon_weapon_10200201"
+              },
+              {
+                "id": 40212081,
+                "name": "Albatross",
+                "quality": "SR",
+                "type": "Rocket",
+                "icon": "Icon_weapon_40200201"
+              },
+              {
+                "id": 40222081,
+                "name": "Albatross - LW",
+                "quality": "SR",
+                "type": "Rocket",
+                "icon": "Icon_weapon_40200201"
+              },
+              {
+                "id": 20411071,
+                "name": "Hearthspray",
+                "quality": "R",
+                "type": "Flamethrower",
+                "icon": "Icon_weapon_20500101"
+              },
+              {
+                "id": 30211071,
+                "name": "Spruce",
+                "quality": "R",
+                "type": "HeavySniper",
+                "icon": "Icon_weapon_30200101"
+              },
+              {
+                "id": 10311071,
+                "name": "Torero",
+                "quality": "R",
+                "type": "Rod",
+                "icon": "Icon_weapon_10300101"
+              },
+              {
+                "id": 10411071,
+                "name": "Ferroalloy Shield",
+                "quality": "R",
+                "type": "Shield",
+                "icon": "Icon_weapon_10400101"
+              }
+            ]
+          }
         }
       ],
       "description": "The Lunos started as miners' protection in early Milkhama. As local industry died, they became an iron-fisted crime syndicate. UNCS police can't touch their stronghold despite evidence. They're reduced to posting bounties for unofficial forces.",
@@ -12659,7 +17376,144 @@ window.BossesData = {
                 }
               ]
             }
-          ]
+          ],
+          "drops": {
+            "weapons": [
+              {
+                "id": 20413062,
+                "name": "Blaze Howl",
+                "quality": "SSR",
+                "type": "Flamethrower",
+                "icon": "Icon_weapon_20500301"
+              },
+              {
+                "id": 20423062,
+                "name": "Corona",
+                "quality": "SSR",
+                "type": "Flamethrower",
+                "icon": "Icon_weapon_20500401"
+              },
+              {
+                "id": 10113071,
+                "name": "Hail of Spikes",
+                "quality": "SSR",
+                "type": "Knuckle",
+                "icon": "Icon_weapon_10100301"
+              },
+              {
+                "id": 40123071,
+                "name": "Hanuman",
+                "quality": "SSR",
+                "type": "Missile",
+                "icon": "Icon_weapon_40100301"
+              },
+              {
+                "id": 40113071,
+                "name": "Kumara",
+                "quality": "SSR",
+                "type": "Missile",
+                "icon": "Icon_weapon_40100401"
+              },
+              {
+                "id": 10213071,
+                "name": "Triumph",
+                "quality": "SSR",
+                "type": "PileBunker",
+                "icon": "Icon_weapon_10200301"
+              },
+              {
+                "id": 10413062,
+                "name": "Starfield",
+                "quality": "SSR",
+                "type": "Shield",
+                "icon": "Icon_weapon_10400501"
+              },
+              {
+                "id": 20412062,
+                "name": "Fafnir",
+                "quality": "SR",
+                "type": "Flamethrower",
+                "icon": "Icon_weapon_20500201"
+              },
+              {
+                "id": 20422062,
+                "name": "Fafnir - LW",
+                "quality": "SR",
+                "type": "Flamethrower",
+                "icon": "Icon_weapon_20500201"
+              },
+              {
+                "id": 10112061,
+                "name": "Nutcracker",
+                "quality": "SR",
+                "type": "Knuckle",
+                "icon": "Icon_weapon_10100201"
+              },
+              {
+                "id": 40112062,
+                "name": "Thunder",
+                "quality": "SR",
+                "type": "Missile",
+                "icon": "Icon_weapon_40100101"
+              },
+              {
+                "id": 40122062,
+                "name": "Thunder - LW",
+                "quality": "SR",
+                "type": "Missile",
+                "icon": "Icon_weapon_40100101"
+              },
+              {
+                "id": 10212061,
+                "name": "Thunderbolt",
+                "quality": "SR",
+                "type": "PileBunker",
+                "icon": "Icon_weapon_10200201"
+              },
+              {
+                "id": 10412061,
+                "name": "Submerged Reef",
+                "quality": "SR",
+                "type": "Shield",
+                "icon": "Icon_weapon_10400201"
+              },
+              {
+                "id": 30211061,
+                "name": "Spruce",
+                "quality": "R",
+                "type": "HeavySniper",
+                "icon": "Icon_weapon_30200101"
+              },
+              {
+                "id": 40211071,
+                "name": "Neanderthal",
+                "quality": "R",
+                "type": "Rocket",
+                "icon": "Icon_weapon_40200101"
+              },
+              {
+                "id": 10311062,
+                "name": "Torero",
+                "quality": "R",
+                "type": "Rod",
+                "icon": "Icon_weapon_10300101"
+              },
+              {
+                "id": 10811061,
+                "name": "Millstone",
+                "quality": "R",
+                "type": "Saw",
+                "icon": "Icon_weapon_10600101"
+              },
+              {
+                "id": 20311071,
+                "name": "Navigator",
+                "quality": "R",
+                "type": "ShotGun",
+                "icon": "Icon_weapon_20300101"
+              }
+            ]
+          }
         },
         {
           "slot": 2,
@@ -12716,7 +17570,158 @@ window.BossesData = {
                 }
               ]
             }
-          ]
+          ],
+          "drops": {
+            "weapons": [
+              {
+                "id": 50213071,
+                "name": "Foehn",
+                "quality": "SSR",
+                "type": "Funnel",
+                "icon": "Icon_weapon_40300301"
+              },
+              {
+                "id": 30123071,
+                "name": "Gazer",
+                "quality": "SSR",
+                "type": "LightSniper",
+                "icon": "Icon_weapon_30100301"
+              },
+              {
+                "id": 30113071,
+                "name": "Maxx",
+                "quality": "SSR",
+                "type": "LightSniper",
+                "icon": "Icon_weapon_30100401"
+              },
+              {
+                "id": 20123071,
+                "name": "Mark",
+                "quality": "SSR",
+                "type": "MachineGun",
+                "icon": "Icon_weapon_20100301"
+              },
+              {
+                "id": 20113071,
+                "name": "Nightwither",
+                "quality": "SSR",
+                "type": "MachineGun",
+                "icon": "Icon_weapon_20100401"
+              },
+              {
+                "id": 50113071,
+                "name": "Torch Tower",
+                "quality": "SSR",
+                "type": "RailGun",
+                "icon": "Icon_weapon_50100101"
+              },
+              {
+                "id": 10313071,
+                "name": "Mountains",
+                "quality": "SSR",
+                "type": "Rod",
+                "icon": "Icon_weapon_10300301"
+              },
+              {
+                "id": 10813071,
+                "name": "Beowulf",
+                "quality": "SSR",
+                "type": "Saw",
+                "icon": "Icon_weapon_10600201"
+              },
+              {
+                "id": 50212061,
+                "name": "Polaris",
+                "quality": "SR",
+                "type": "Funnel",
+                "icon": "Icon_weapon_40300201"
+              },
+              {
+                "id": 30112062,
+                "name": "Whistle",
+                "quality": "SR",
+                "type": "LightSniper",
+                "icon": "Icon_weapon_30100201"
+              },
+              {
+                "id": 30122062,
+                "name": "Whistle - LW",
+                "quality": "SR",
+                "type": "LightSniper",
+                "icon": "Icon_weapon_30100201"
+              },
+              {
+                "id": 20112061,
+                "name": "Art of Ambush",
+                "quality": "SR",
+                "type": "MachineGun",
+                "icon": "Icon_weapon_20100201"
+              },
+              {
+                "id": 20122061,
+                "name": "Art of Ambush - LW",
+                "quality": "SR",
+                "type": "MachineGun",
+                "icon": "Icon_weapon_20100201"
+              },
+              {
+                "id": 50112061,
+                "name": "Ex-Wisdom",
+                "quality": "SR",
+                "type": "RailGun",
+                "icon": "Icon_weapon_50100201"
+              },
+              {
+                "id": 10312062,
+                "name": "Gate Breaker",
+                "quality": "SR",
+                "type": "Rod",
+                "icon": "Icon_weapon_10300201"
+              },
+              {
+                "id": 10812061,
+                "name": "Cadmus",
+                "quality": "SR",
+                "type": "Saw",
+                "icon": "Icon_weapon_10600301"
+              },
+              {
+                "id": 10911071,
+                "name": "Caladbolg",
+                "quality": "R",
+                "type": "Blade",
+                "icon": "Icon_weapon_10700101"
+              },
+              {
+                "id": 10511071,
+                "name": "Toledo",
+                "quality": "R",
+                "type": "Buckler",
+                "icon": "Icon_weapon_10500101"
+              },
+              {
+                "id": 20211071,
+                "name": "Ifrit",
+                "quality": "R",
+                "type": "HeavyMachineGun",
+                "icon": "Icon_weapon_20400101"
+              },
+              {
+                "id": 40111062,
+                "name": "Gordius",
+                "quality": "R",
+                "type": "Missile",
+                "icon": "Icon_weapon_40100201"
+              },
+              {
+                "id": 10211061,
+                "name": "Heavy Pile",
+                "quality": "R",
+                "type": "PileBunker",
+                "icon": "Icon_weapon_10200101"
+              }
+            ]
+          }
         },
         {
           "slot": 3,
@@ -12763,7 +17768,165 @@ window.BossesData = {
                 }
               ]
             }
-          ]
+          ],
+          "drops": {
+            "weapons": [
+              {
+                "id": 10913071,
+                "name": "Excalibur",
+                "quality": "SSR",
+                "type": "Blade",
+                "icon": "Icon_weapon_10700301A"
+              },
+              {
+                "id": 10513071,
+                "name": "Polymeric Barrier",
+                "quality": "SSR",
+                "type": "Buckler",
+                "icon": "Icon_weapon_10500401"
+              },
+              {
+                "id": 20213071,
+                "name": "Behemoth",
+                "quality": "SSR",
+                "type": "HeavyMachineGun",
+                "icon": "Icon_weapon_20400302"
+              },
+              {
+                "id": 30213071,
+                "name": "Red Fox",
+                "quality": "SSR",
+                "type": "HeavySniper",
+                "icon": "Icon_weapon_30200301"
+              },
+              {
+                "id": 40213071,
+                "name": "Molten",
+                "quality": "SSR",
+                "type": "Rocket",
+                "icon": "Icon_weapon_40200401"
+              },
+              {
+                "id": 40223071,
+                "name": "Surging Flame",
+                "quality": "SSR",
+                "type": "Rocket",
+                "icon": "Icon_weapon_40200301"
+              },
+              {
+                "id": 20313071,
+                "name": "Firebolt",
+                "quality": "SSR",
+                "type": "ShotGun",
+                "icon": "Icon_weapon_20300401"
+              },
+              {
+                "id": 20323071,
+                "name": "T-Rex",
+                "quality": "SSR",
+                "type": "ShotGun",
+                "icon": "Icon_weapon_20300301"
+              },
+              {
+                "id": 10912071,
+                "name": "Arondight",
+                "quality": "SR",
+                "type": "Blade",
+                "icon": "Icon_weapon_10700201"
+              },
+              {
+                "id": 10512071,
+                "name": "Aneto",
+                "quality": "SR",
+                "type": "Buckler",
+                "icon": "Icon_weapon_10500201"
+              },
+              {
+                "id": 20212071,
+                "name": "Wrath of Mars",
+                "quality": "SR",
+                "type": "HeavyMachineGun",
+                "icon": "Icon_weapon_20400201"
+              },
+              {
+                "id": 30212061,
+                "name": "Firebird",
+                "quality": "SR",
+                "type": "HeavySniper",
+                "icon": "Icon_weapon_30200201"
+              },
+              {
+                "id": 40212071,
+                "name": "Albatross",
+                "quality": "SR",
+                "type": "Rocket",
+                "icon": "Icon_weapon_40200201"
+              },
+              {
+                "id": 40222071,
+                "name": "Albatross - LW",
+                "quality": "SR",
+                "type": "Rocket",
+                "icon": "Icon_weapon_40200201"
+              },
+              {
+                "id": 20312071,
+                "name": "Gale",
+                "quality": "SR",
+                "type": "ShotGun",
+                "icon": "Icon_weapon_20300201"
+              },
+              {
+                "id": 20322071,
+                "name": "Gale - LW",
+                "quality": "SR",
+                "type": "ShotGun",
+                "icon": "Icon_weapon_20300201"
+              },
+              {
+                "id": 20411062,
+                "name": "Hearthspray",
+                "quality": "R",
+                "type": "Flamethrower",
+                "icon": "Icon_weapon_20500101"
+              },
+              {
+                "id": 50211061,
+                "name": "Raptor's Beak",
+                "quality": "R",
+                "type": "Funnel",
+                "icon": "Icon_weapon_40300101"
+              },
+              {
+                "id": 30111062,
+                "name": "Pioneer",
+                "quality": "R",
+                "type": "LightSniper",
+                "icon": "Icon_weapon_30100101"
+              },
+              {
+                "id": 20111061,
+                "name": "Courage",
+                "quality": "R",
+                "type": "MachineGun",
+                "icon": "Icon_weapon_20100101"
+              },
+              {
+                "id": 50111061,
+                "name": "Prism",
+                "quality": "R",
+                "type": "RailGun",
+                "icon": "Icon_weapon_50100301"
+              },
+              {
+                "id": 10411061,
+                "name": "Ferroalloy Shield",
+                "quality": "R",
+                "type": "Shield",
+                "icon": "Icon_weapon_10400101"
+              }
+            ]
+          }
         }
       ],
       "description": "DLAF reports Iguana mercs hit Belsuth boot camp targeting Admiral Sean's officer corps. Until the leak's plugged, the Admiral's bringing in outside contractors to defend camps and eliminate the Iguanas before more recruits die.",
@@ -12819,7 +17982,109 @@ window.BossesData = {
                 }
               ]
             }
-          ]
+          ],
+          "drops": {
+            "weapons": [
+              {
+                "id": 30213061,
+                "name": "Red Fox",
+                "quality": "SSR",
+                "type": "HeavySniper",
+                "icon": "Icon_weapon_30200301"
+              },
+              {
+                "id": 20123052,
+                "name": "Mark",
+                "quality": "SSR",
+                "type": "MachineGun",
+                "icon": "Icon_weapon_20100301"
+              },
+              {
+                "id": 20113052,
+                "name": "Nightwither",
+                "quality": "SSR",
+                "type": "MachineGun",
+                "icon": "Icon_weapon_20100401"
+              },
+              {
+                "id": 40213061,
+                "name": "Molten",
+                "quality": "SSR",
+                "type": "Rocket",
+                "icon": "Icon_weapon_40200401"
+              },
+              {
+                "id": 40223061,
+                "name": "Surging Flame",
+                "quality": "SSR",
+                "type": "Rocket",
+                "icon": "Icon_weapon_40200301"
+              },
+              {
+                "id": 30212051,
+                "name": "Firebird",
+                "quality": "SR",
+                "type": "HeavySniper",
+                "icon": "Icon_weapon_30200201"
+              },
+              {
+                "id": 20112051,
+                "name": "Art of Ambush",
+                "quality": "SR",
+                "type": "MachineGun",
+                "icon": "Icon_weapon_20100201"
+              },
+              {
+                "id": 20122051,
+                "name": "Art of Ambush - LW",
+                "quality": "SR",
+                "type": "MachineGun",
+                "icon": "Icon_weapon_20100201"
+              },
+              {
+                "id": 40212051,
+                "name": "Albatross",
+                "quality": "SR",
+                "type": "Rocket",
+                "icon": "Icon_weapon_40200201"
+              },
+              {
+                "id": 40222051,
+                "name": "Albatross - LW",
+                "quality": "SR",
+                "type": "Rocket",
+                "icon": "Icon_weapon_40200201"
+              },
+              {
+                "id": 50211052,
+                "name": "Raptor's Beak",
+                "quality": "R",
+                "type": "Funnel",
+                "icon": "Icon_weapon_40300101"
+              },
+              {
+                "id": 20211061,
+                "name": "Ifrit",
+                "quality": "R",
+                "type": "HeavyMachineGun",
+                "icon": "Icon_weapon_20400101"
+              },
+              {
+                "id": 10311061,
+                "name": "Torero",
+                "quality": "R",
+                "type": "Rod",
+                "icon": "Icon_weapon_10300101"
+              },
+              {
+                "id": 20311051,
+                "name": "Navigator",
+                "quality": "R",
+                "type": "ShotGun",
+                "icon": "Icon_weapon_20300101"
+              }
+            ]
+          }
         },
         {
           "slot": 2,
@@ -12886,7 +18151,123 @@ window.BossesData = {
                 }
               ]
             }
-          ]
+          ],
+          "drops": {
+            "weapons": [
+              {
+                "id": 50213061,
+                "name": "Foehn",
+                "quality": "SSR",
+                "type": "Funnel",
+                "icon": "Icon_weapon_40300301"
+              },
+              {
+                "id": 10113061,
+                "name": "Hail of Spikes",
+                "quality": "SSR",
+                "type": "Knuckle",
+                "icon": "Icon_weapon_10100301"
+              },
+              {
+                "id": 10213061,
+                "name": "Triumph",
+                "quality": "SSR",
+                "type": "PileBunker",
+                "icon": "Icon_weapon_10200301"
+              },
+              {
+                "id": 10813061,
+                "name": "Beowulf",
+                "quality": "SSR",
+                "type": "Saw",
+                "icon": "Icon_weapon_10600201"
+              },
+              {
+                "id": 20313061,
+                "name": "Firebolt",
+                "quality": "SSR",
+                "type": "ShotGun",
+                "icon": "Icon_weapon_20300401"
+              },
+              {
+                "id": 20323061,
+                "name": "T-Rex",
+                "quality": "SSR",
+                "type": "ShotGun",
+                "icon": "Icon_weapon_20300301"
+              },
+              {
+                "id": 50212052,
+                "name": "Polaris",
+                "quality": "SR",
+                "type": "Funnel",
+                "icon": "Icon_weapon_40300201"
+              },
+              {
+                "id": 10112052,
+                "name": "Nutcracker",
+                "quality": "SR",
+                "type": "Knuckle",
+                "icon": "Icon_weapon_10100201"
+              },
+              {
+                "id": 10212052,
+                "name": "Thunderbolt",
+                "quality": "SR",
+                "type": "PileBunker",
+                "icon": "Icon_weapon_10200201"
+              },
+              {
+                "id": 10812052,
+                "name": "Cadmus",
+                "quality": "SR",
+                "type": "Saw",
+                "icon": "Icon_weapon_10600301"
+              },
+              {
+                "id": 20312051,
+                "name": "Gale",
+                "quality": "SR",
+                "type": "ShotGun",
+                "icon": "Icon_weapon_20300201"
+              },
+              {
+                "id": 20322051,
+                "name": "Gale - LW",
+                "quality": "SR",
+                "type": "ShotGun",
+                "icon": "Icon_weapon_20300201"
+              },
+              {
+                "id": 10911061,
+                "name": "Caladbolg",
+                "quality": "R",
+                "type": "Blade",
+                "icon": "Icon_weapon_10700101"
+              },
+              {
+                "id": 10511061,
+                "name": "Toledo",
+                "quality": "R",
+                "type": "Buckler",
+                "icon": "Icon_weapon_10500101"
+              },
+              {
+                "id": 50111052,
+                "name": "Prism",
+                "quality": "R",
+                "type": "RailGun",
+                "icon": "Icon_weapon_50100301"
+              },
+              {
+                "id": 40211051,
+                "name": "Neanderthal",
+                "quality": "R",
+                "type": "Rocket",
+                "icon": "Icon_weapon_40200101"
+              }
+            ]
+          }
         },
         {
           "slot": 3,
@@ -12943,7 +18324,123 @@ window.BossesData = {
                 }
               ]
             }
-          ]
+          ],
+          "drops": {
+            "weapons": [
+              {
+                "id": 20413061,
+                "name": "Blaze Howl",
+                "quality": "SSR",
+                "type": "Flamethrower",
+                "icon": "Icon_weapon_20500301"
+              },
+              {
+                "id": 20423061,
+                "name": "Corona",
+                "quality": "SSR",
+                "type": "Flamethrower",
+                "icon": "Icon_weapon_20500401"
+              },
+              {
+                "id": 40123061,
+                "name": "Hanuman",
+                "quality": "SSR",
+                "type": "Missile",
+                "icon": "Icon_weapon_40100301"
+              },
+              {
+                "id": 40113061,
+                "name": "Kumara",
+                "quality": "SSR",
+                "type": "Missile",
+                "icon": "Icon_weapon_40100401"
+              },
+              {
+                "id": 50113061,
+                "name": "Torch Tower",
+                "quality": "SSR",
+                "type": "RailGun",
+                "icon": "Icon_weapon_50100101"
+              },
+              {
+                "id": 10413061,
+                "name": "Starfield",
+                "quality": "SSR",
+                "type": "Shield",
+                "icon": "Icon_weapon_10400501"
+              },
+              {
+                "id": 20412061,
+                "name": "Fafnir",
+                "quality": "SR",
+                "type": "Flamethrower",
+                "icon": "Icon_weapon_20500201"
+              },
+              {
+                "id": 20422061,
+                "name": "Fafnir - LW",
+                "quality": "SR",
+                "type": "Flamethrower",
+                "icon": "Icon_weapon_20500201"
+              },
+              {
+                "id": 40112061,
+                "name": "Thunder",
+                "quality": "SR",
+                "type": "Missile",
+                "icon": "Icon_weapon_40100101"
+              },
+              {
+                "id": 40122061,
+                "name": "Thunder - LW",
+                "quality": "SR",
+                "type": "Missile",
+                "icon": "Icon_weapon_40100101"
+              },
+              {
+                "id": 50112052,
+                "name": "Ex-Wisdom",
+                "quality": "SR",
+                "type": "RailGun",
+                "icon": "Icon_weapon_50100201"
+              },
+              {
+                "id": 10412052,
+                "name": "Submerged Reef",
+                "quality": "SR",
+                "type": "Shield",
+                "icon": "Icon_weapon_10400201"
+              },
+              {
+                "id": 30211051,
+                "name": "Spruce",
+                "quality": "R",
+                "type": "HeavySniper",
+                "icon": "Icon_weapon_30200101"
+              },
+              {
+                "id": 30111061,
+                "name": "Pioneer",
+                "quality": "R",
+                "type": "LightSniper",
+                "icon": "Icon_weapon_30100101"
+              },
+              {
+                "id": 10211052,
+                "name": "Heavy Pile",
+                "quality": "R",
+                "type": "PileBunker",
+                "icon": "Icon_weapon_10200101"
+              },
+              {
+                "id": 10811052,
+                "name": "Millstone",
+                "quality": "R",
+                "type": "Saw",
+                "icon": "Icon_weapon_10600101"
+              }
+            ]
+          }
         },
         {
           "slot": 4,
@@ -12978,7 +18475,123 @@ window.BossesData = {
                 }
               ]
             }
-          ]
+          ],
+          "drops": {
+            "weapons": [
+              {
+                "id": 10913061,
+                "name": "Excalibur",
+                "quality": "SSR",
+                "type": "Blade",
+                "icon": "Icon_weapon_10700301A"
+              },
+              {
+                "id": 10513061,
+                "name": "Polymeric Barrier",
+                "quality": "SSR",
+                "type": "Buckler",
+                "icon": "Icon_weapon_10500401"
+              },
+              {
+                "id": 20213061,
+                "name": "Behemoth",
+                "quality": "SSR",
+                "type": "HeavyMachineGun",
+                "icon": "Icon_weapon_20400302"
+              },
+              {
+                "id": 30123061,
+                "name": "Gazer",
+                "quality": "SSR",
+                "type": "LightSniper",
+                "icon": "Icon_weapon_30100301"
+              },
+              {
+                "id": 30113061,
+                "name": "Maxx",
+                "quality": "SSR",
+                "type": "LightSniper",
+                "icon": "Icon_weapon_30100401"
+              },
+              {
+                "id": 10313061,
+                "name": "Mountains",
+                "quality": "SSR",
+                "type": "Rod",
+                "icon": "Icon_weapon_10300301"
+              },
+              {
+                "id": 10912061,
+                "name": "Arondight",
+                "quality": "SR",
+                "type": "Blade",
+                "icon": "Icon_weapon_10700201"
+              },
+              {
+                "id": 10512061,
+                "name": "Aneto",
+                "quality": "SR",
+                "type": "Buckler",
+                "icon": "Icon_weapon_10500201"
+              },
+              {
+                "id": 20212061,
+                "name": "Wrath of Mars",
+                "quality": "SR",
+                "type": "HeavyMachineGun",
+                "icon": "Icon_weapon_20400201"
+              },
+              {
+                "id": 30112061,
+                "name": "Whistle",
+                "quality": "SR",
+                "type": "LightSniper",
+                "icon": "Icon_weapon_30100201"
+              },
+              {
+                "id": 30122061,
+                "name": "Whistle - LW",
+                "quality": "SR",
+                "type": "LightSniper",
+                "icon": "Icon_weapon_30100201"
+              },
+              {
+                "id": 10312061,
+                "name": "Gate Breaker",
+                "quality": "SR",
+                "type": "Rod",
+                "icon": "Icon_weapon_10300201"
+              },
+              {
+                "id": 20411061,
+                "name": "Hearthspray",
+                "quality": "R",
+                "type": "Flamethrower",
+                "icon": "Icon_weapon_20500101"
+              },
+              {
+                "id": 20111051,
+                "name": "Courage",
+                "quality": "R",
+                "type": "MachineGun",
+                "icon": "Icon_weapon_20100101"
+              },
+              {
+                "id": 40111061,
+                "name": "Gordius",
+                "quality": "R",
+                "type": "Missile",
+                "icon": "Icon_weapon_40100201"
+              },
+              {
+                "id": 10411052,
+                "name": "Ferroalloy Shield",
+                "quality": "R",
+                "type": "Shield",
+                "icon": "Icon_weapon_10400101"
+              }
+            ]
+          }
         }
       ],
       "description": "Terrorists control Monolith Valley, cutting off north Maratur. Intel shows foreign merc ties and ST tech acquisitions. Harpy contracts Kaidan to neutralize the Maratur forces.",
@@ -13048,7 +18661,144 @@ window.BossesData = {
                 }
               ]
             }
-          ]
+          ],
+          "drops": {
+            "weapons": [
+              {
+                "id": 30213051,
+                "name": "Red Fox",
+                "quality": "SSR",
+                "type": "HeavySniper",
+                "icon": "Icon_weapon_30200301"
+              },
+              {
+                "id": 20123051,
+                "name": "Mark",
+                "quality": "SSR",
+                "type": "MachineGun",
+                "icon": "Icon_weapon_20100301"
+              },
+              {
+                "id": 20113051,
+                "name": "Nightwither",
+                "quality": "SSR",
+                "type": "MachineGun",
+                "icon": "Icon_weapon_20100401"
+              },
+              {
+                "id": 40123051,
+                "name": "Hanuman",
+                "quality": "SSR",
+                "type": "Missile",
+                "icon": "Icon_weapon_40100301"
+              },
+              {
+                "id": 40113051,
+                "name": "Kumara",
+                "quality": "SSR",
+                "type": "Missile",
+                "icon": "Icon_weapon_40100401"
+              },
+              {
+                "id": 40213042,
+                "name": "Molten",
+                "quality": "SSR",
+                "type": "Rocket",
+                "icon": "Icon_weapon_40200401"
+              },
+              {
+                "id": 40223042,
+                "name": "Surging Flame",
+                "quality": "SSR",
+                "type": "Rocket",
+                "icon": "Icon_weapon_40200301"
+              },
+              {
+                "id": 30212042,
+                "name": "Firebird",
+                "quality": "SR",
+                "type": "HeavySniper",
+                "icon": "Icon_weapon_30200201"
+              },
+              {
+                "id": 20112042,
+                "name": "Art of Ambush",
+                "quality": "SR",
+                "type": "MachineGun",
+                "icon": "Icon_weapon_20100201"
+              },
+              {
+                "id": 20122042,
+                "name": "Art of Ambush - LW",
+                "quality": "SR",
+                "type": "MachineGun",
+                "icon": "Icon_weapon_20100201"
+              },
+              {
+                "id": 40112042,
+                "name": "Thunder",
+                "quality": "SR",
+                "type": "Missile",
+                "icon": "Icon_weapon_40100101"
+              },
+              {
+                "id": 40122042,
+                "name": "Thunder - LW",
+                "quality": "SR",
+                "type": "Missile",
+                "icon": "Icon_weapon_40100101"
+              },
+              {
+                "id": 40212042,
+                "name": "Albatross",
+                "quality": "SR",
+                "type": "Rocket",
+                "icon": "Icon_weapon_40200201"
+              },
+              {
+                "id": 40222042,
+                "name": "Albatross - LW",
+                "quality": "SR",
+                "type": "Rocket",
+                "icon": "Icon_weapon_40200201"
+              },
+              {
+                "id": 10911041,
+                "name": "Caladbolg",
+                "quality": "R",
+                "type": "Blade",
+                "icon": "Icon_weapon_10700101"
+              },
+              {
+                "id": 10511041,
+                "name": "Toledo",
+                "quality": "R",
+                "type": "Buckler",
+                "icon": "Icon_weapon_10500101"
+              },
+              {
+                "id": 30111051,
+                "name": "Pioneer",
+                "quality": "R",
+                "type": "LightSniper",
+                "icon": "Icon_weapon_30100101"
+              },
+              {
+                "id": 10211051,
+                "name": "Heavy Pile",
+                "quality": "R",
+                "type": "PileBunker",
+                "icon": "Icon_weapon_10200101"
+              },
+              {
+                "id": 10311041,
+                "name": "Torero",
+                "quality": "R",
+                "type": "Rod",
+                "icon": "Icon_weapon_10300101"
+              }
+            ]
+          }
         },
         {
           "slot": 2,
@@ -13109,7 +18859,165 @@ window.BossesData = {
                 }
               ]
             }
-          ]
+          ],
+          "drops": {
+            "weapons": [
+              {
+                "id": 10913051,
+                "name": "Excalibur",
+                "quality": "SSR",
+                "type": "Blade",
+                "icon": "Icon_weapon_10700301A"
+              },
+              {
+                "id": 10513051,
+                "name": "Polymeric Barrier",
+                "quality": "SSR",
+                "type": "Buckler",
+                "icon": "Icon_weapon_10500401"
+              },
+              {
+                "id": 20413051,
+                "name": "Blaze Howl",
+                "quality": "SSR",
+                "type": "Flamethrower",
+                "icon": "Icon_weapon_20500301"
+              },
+              {
+                "id": 20423051,
+                "name": "Corona",
+                "quality": "SSR",
+                "type": "Flamethrower",
+                "icon": "Icon_weapon_20500401"
+              },
+              {
+                "id": 20213051,
+                "name": "Behemoth",
+                "quality": "SSR",
+                "type": "HeavyMachineGun",
+                "icon": "Icon_weapon_20400302"
+              },
+              {
+                "id": 10313051,
+                "name": "Mountains",
+                "quality": "SSR",
+                "type": "Rod",
+                "icon": "Icon_weapon_10300301"
+              },
+              {
+                "id": 20313051,
+                "name": "Firebolt",
+                "quality": "SSR",
+                "type": "ShotGun",
+                "icon": "Icon_weapon_20300401"
+              },
+              {
+                "id": 20323051,
+                "name": "T-Rex",
+                "quality": "SSR",
+                "type": "ShotGun",
+                "icon": "Icon_weapon_20300301"
+              },
+              {
+                "id": 10912041,
+                "name": "Arondight",
+                "quality": "SR",
+                "type": "Blade",
+                "icon": "Icon_weapon_10700201"
+              },
+              {
+                "id": 10512041,
+                "name": "Aneto",
+                "quality": "SR",
+                "type": "Buckler",
+                "icon": "Icon_weapon_10500201"
+              },
+              {
+                "id": 20412051,
+                "name": "Fafnir",
+                "quality": "SR",
+                "type": "Flamethrower",
+                "icon": "Icon_weapon_20500201"
+              },
+              {
+                "id": 20422051,
+                "name": "Fafnir - LW",
+                "quality": "SR",
+                "type": "Flamethrower",
+                "icon": "Icon_weapon_20500201"
+              },
+              {
+                "id": 20212051,
+                "name": "Wrath of Mars",
+                "quality": "SR",
+                "type": "HeavyMachineGun",
+                "icon": "Icon_weapon_20400201"
+              },
+              {
+                "id": 10312041,
+                "name": "Gate Breaker",
+                "quality": "SR",
+                "type": "Rod",
+                "icon": "Icon_weapon_10300201"
+              },
+              {
+                "id": 20312042,
+                "name": "Gale",
+                "quality": "SR",
+                "type": "ShotGun",
+                "icon": "Icon_weapon_20300201"
+              },
+              {
+                "id": 20322042,
+                "name": "Gale - LW",
+                "quality": "SR",
+                "type": "ShotGun",
+                "icon": "Icon_weapon_20300201"
+              },
+              {
+                "id": 50211051,
+                "name": "Raptor's Beak",
+                "quality": "R",
+                "type": "Funnel",
+                "icon": "Icon_weapon_40300101"
+              },
+              {
+                "id": 30211042,
+                "name": "Spruce",
+                "quality": "R",
+                "type": "HeavySniper",
+                "icon": "Icon_weapon_30200101"
+              },
+              {
+                "id": 40111042,
+                "name": "Gordius",
+                "quality": "R",
+                "type": "Missile",
+                "icon": "Icon_weapon_40100201"
+              },
+              {
+                "id": 50111051,
+                "name": "Prism",
+                "quality": "R",
+                "type": "RailGun",
+                "icon": "Icon_weapon_50100301"
+              },
+              {
+                "id": 10811051,
+                "name": "Millstone",
+                "quality": "R",
+                "type": "Saw",
+                "icon": "Icon_weapon_10600101"
+              },
+              {
+                "id": 10411051,
+                "name": "Ferroalloy Shield",
+                "quality": "R",
+                "type": "Shield",
+                "icon": "Icon_weapon_10400101"
+              }
+            ]
+          }
         },
         {
           "slot": 3,
@@ -13172,7 +19080,158 @@ window.BossesData = {
                 }
               ]
             }
-          ]
+          ],
+          "drops": {
+            "weapons": [
+              {
+                "id": 50213051,
+                "name": "Foehn",
+                "quality": "SSR",
+                "type": "Funnel",
+                "icon": "Icon_weapon_40300301"
+              },
+              {
+                "id": 10113051,
+                "name": "Hail of Spikes",
+                "quality": "SSR",
+                "type": "Knuckle",
+                "icon": "Icon_weapon_10100301"
+              },
+              {
+                "id": 30123051,
+                "name": "Gazer",
+                "quality": "SSR",
+                "type": "LightSniper",
+                "icon": "Icon_weapon_30100301"
+              },
+              {
+                "id": 30113051,
+                "name": "Maxx",
+                "quality": "SSR",
+                "type": "LightSniper",
+                "icon": "Icon_weapon_30100401"
+              },
+              {
+                "id": 10213051,
+                "name": "Triumph",
+                "quality": "SSR",
+                "type": "PileBunker",
+                "icon": "Icon_weapon_10200301"
+              },
+              {
+                "id": 50113051,
+                "name": "Torch Tower",
+                "quality": "SSR",
+                "type": "RailGun",
+                "icon": "Icon_weapon_50100101"
+              },
+              {
+                "id": 10813051,
+                "name": "Beowulf",
+                "quality": "SSR",
+                "type": "Saw",
+                "icon": "Icon_weapon_10600201"
+              },
+              {
+                "id": 10413051,
+                "name": "Starfield",
+                "quality": "SSR",
+                "type": "Shield",
+                "icon": "Icon_weapon_10400501"
+              },
+              {
+                "id": 50212051,
+                "name": "Polaris",
+                "quality": "SR",
+                "type": "Funnel",
+                "icon": "Icon_weapon_40300201"
+              },
+              {
+                "id": 10112051,
+                "name": "Nutcracker",
+                "quality": "SR",
+                "type": "Knuckle",
+                "icon": "Icon_weapon_10100201"
+              },
+              {
+                "id": 30112051,
+                "name": "Whistle",
+                "quality": "SR",
+                "type": "LightSniper",
+                "icon": "Icon_weapon_30100201"
+              },
+              {
+                "id": 30122051,
+                "name": "Whistle - LW",
+                "quality": "SR",
+                "type": "LightSniper",
+                "icon": "Icon_weapon_30100201"
+              },
+              {
+                "id": 10212051,
+                "name": "Thunderbolt",
+                "quality": "SR",
+                "type": "PileBunker",
+                "icon": "Icon_weapon_10200201"
+              },
+              {
+                "id": 50112051,
+                "name": "Ex-Wisdom",
+                "quality": "SR",
+                "type": "RailGun",
+                "icon": "Icon_weapon_50100201"
+              },
+              {
+                "id": 10812051,
+                "name": "Cadmus",
+                "quality": "SR",
+                "type": "Saw",
+                "icon": "Icon_weapon_10600301"
+              },
+              {
+                "id": 10412051,
+                "name": "Submerged Reef",
+                "quality": "SR",
+                "type": "Shield",
+                "icon": "Icon_weapon_10400201"
+              },
+              {
+                "id": 20411051,
+                "name": "Hearthspray",
+                "quality": "R",
+                "type": "Flamethrower",
+                "icon": "Icon_weapon_20500101"
+              },
+              {
+                "id": 20211051,
+                "name": "Ifrit",
+                "quality": "R",
+                "type": "HeavyMachineGun",
+                "icon": "Icon_weapon_20400101"
+              },
+              {
+                "id": 20111042,
+                "name": "Courage",
+                "quality": "R",
+                "type": "MachineGun",
+                "icon": "Icon_weapon_20100101"
+              },
+              {
+                "id": 40211042,
+                "name": "Neanderthal",
+                "quality": "R",
+                "type": "Rocket",
+                "icon": "Icon_weapon_40200101"
+              },
+              {
+                "id": 20311042,
+                "name": "Navigator",
+                "quality": "R",
+                "type": "ShotGun",
+                "icon": "Icon_weapon_20300101"
+              }
+            ]
+          }
         }
       ],
       "description": "GSA found Ashes outposts. NDF STs deployed for containment. GKD was hired to create chaos and break the blockade, securing escape routes for the Ashes.",
@@ -13238,7 +19297,165 @@ window.BossesData = {
                 }
               ]
             }
-          ]
+          ],
+          "drops": {
+            "weapons": [
+              {
+                "id": 10913032,
+                "name": "Excalibur",
+                "quality": "SSR",
+                "type": "Blade",
+                "icon": "Icon_weapon_10700301A"
+              },
+              {
+                "id": 10513032,
+                "name": "Polymeric Barrier",
+                "quality": "SSR",
+                "type": "Buckler",
+                "icon": "Icon_weapon_10500401"
+              },
+              {
+                "id": 20413041,
+                "name": "Blaze Howl",
+                "quality": "SSR",
+                "type": "Flamethrower",
+                "icon": "Icon_weapon_20500301"
+              },
+              {
+                "id": 20423041,
+                "name": "Corona",
+                "quality": "SSR",
+                "type": "Flamethrower",
+                "icon": "Icon_weapon_20500401"
+              },
+              {
+                "id": 20213032,
+                "name": "Dragonbreath",
+                "quality": "SSR",
+                "type": "HeavyMachineGun",
+                "icon": "Icon_weapon_20400301"
+              },
+              {
+                "id": 30123041,
+                "name": "Gazer",
+                "quality": "SSR",
+                "type": "LightSniper",
+                "icon": "Icon_weapon_30100301"
+              },
+              {
+                "id": 30113041,
+                "name": "Maxx",
+                "quality": "SSR",
+                "type": "LightSniper",
+                "icon": "Icon_weapon_30100401"
+              },
+              {
+                "id": 10313032,
+                "name": "Mountains",
+                "quality": "SSR",
+                "type": "Rod",
+                "icon": "Icon_weapon_10300301"
+              },
+              {
+                "id": 10912031,
+                "name": "Arondight",
+                "quality": "SR",
+                "type": "Blade",
+                "icon": "Icon_weapon_10700201"
+              },
+              {
+                "id": 10512031,
+                "name": "Aneto",
+                "quality": "SR",
+                "type": "Buckler",
+                "icon": "Icon_weapon_10500201"
+              },
+              {
+                "id": 20412031,
+                "name": "Fafnir",
+                "quality": "SR",
+                "type": "Flamethrower",
+                "icon": "Icon_weapon_20500201"
+              },
+              {
+                "id": 20422031,
+                "name": "Fafnir - LW",
+                "quality": "SR",
+                "type": "Flamethrower",
+                "icon": "Icon_weapon_20500201"
+              },
+              {
+                "id": 20212031,
+                "name": "Wrath of Mars",
+                "quality": "SR",
+                "type": "HeavyMachineGun",
+                "icon": "Icon_weapon_20400201"
+              },
+              {
+                "id": 30112031,
+                "name": "Whistle",
+                "quality": "SR",
+                "type": "LightSniper",
+                "icon": "Icon_weapon_30100201"
+              },
+              {
+                "id": 30122031,
+                "name": "Whistle - LW",
+                "quality": "SR",
+                "type": "LightSniper",
+                "icon": "Icon_weapon_30100201"
+              },
+              {
+                "id": 10312031,
+                "name": "Gate Breaker",
+                "quality": "SR",
+                "type": "Rod",
+                "icon": "Icon_weapon_10300201"
+              },
+              {
+                "id": 50211041,
+                "name": "Raptor's Beak",
+                "quality": "R",
+                "type": "Funnel",
+                "icon": "Icon_weapon_40300101"
+              },
+              {
+                "id": 30211041,
+                "name": "Spruce",
+                "quality": "R",
+                "type": "HeavySniper",
+                "icon": "Icon_weapon_30200101"
+              },
+              {
+                "id": 10211041,
+                "name": "Heavy Pile",
+                "quality": "R",
+                "type": "PileBunker",
+                "icon": "Icon_weapon_10200101"
+              },
+              {
+                "id": 50111041,
+                "name": "Prism",
+                "quality": "R",
+                "type": "RailGun",
+                "icon": "Icon_weapon_50100301"
+              },
+              {
+                "id": 40211041,
+                "name": "Neanderthal",
+                "quality": "R",
+                "type": "Rocket",
+                "icon": "Icon_weapon_40200101"
+              },
+              {
+                "id": 10811041,
+                "name": "Millstone",
+                "quality": "R",
+                "type": "Saw",
+                "icon": "Icon_weapon_10600101"
+              }
+            ]
+          }
         },
         {
           "slot": 2,
@@ -13289,7 +19506,144 @@ window.BossesData = {
                 }
               ]
             }
-          ]
+          ],
+          "drops": {
+            "weapons": [
+              {
+                "id": 30213041,
+                "name": "Red Fox",
+                "quality": "SSR",
+                "type": "HeavySniper",
+                "icon": "Icon_weapon_30200301"
+              },
+              {
+                "id": 10113041,
+                "name": "Hail of Spikes",
+                "quality": "SSR",
+                "type": "Knuckle",
+                "icon": "Icon_weapon_10100301"
+              },
+              {
+                "id": 40123041,
+                "name": "Hanuman",
+                "quality": "SSR",
+                "type": "Missile",
+                "icon": "Icon_weapon_40100301"
+              },
+              {
+                "id": 40113041,
+                "name": "Kumara",
+                "quality": "SSR",
+                "type": "Missile",
+                "icon": "Icon_weapon_40100401"
+              },
+              {
+                "id": 10213041,
+                "name": "Triumph",
+                "quality": "SSR",
+                "type": "PileBunker",
+                "icon": "Icon_weapon_10200301"
+              },
+              {
+                "id": 10813041,
+                "name": "Beowulf",
+                "quality": "SSR",
+                "type": "Saw",
+                "icon": "Icon_weapon_10600201"
+              },
+              {
+                "id": 10413041,
+                "name": "Starfield",
+                "quality": "SSR",
+                "type": "Shield",
+                "icon": "Icon_weapon_10400501"
+              },
+              {
+                "id": 30212041,
+                "name": "Firebird",
+                "quality": "SR",
+                "type": "HeavySniper",
+                "icon": "Icon_weapon_30200201"
+              },
+              {
+                "id": 10112041,
+                "name": "Nutcracker",
+                "quality": "SR",
+                "type": "Knuckle",
+                "icon": "Icon_weapon_10100201"
+              },
+              {
+                "id": 40112041,
+                "name": "Thunder",
+                "quality": "SR",
+                "type": "Missile",
+                "icon": "Icon_weapon_40100101"
+              },
+              {
+                "id": 40122041,
+                "name": "Thunder - LW",
+                "quality": "SR",
+                "type": "Missile",
+                "icon": "Icon_weapon_40100101"
+              },
+              {
+                "id": 10212041,
+                "name": "Thunderbolt",
+                "quality": "SR",
+                "type": "PileBunker",
+                "icon": "Icon_weapon_10200201"
+              },
+              {
+                "id": 10812041,
+                "name": "Cadmus",
+                "quality": "SR",
+                "type": "Saw",
+                "icon": "Icon_weapon_10600301"
+              },
+              {
+                "id": 10412031,
+                "name": "Submerged Reef",
+                "quality": "SR",
+                "type": "Shield",
+                "icon": "Icon_weapon_10400201"
+              },
+              {
+                "id": 10911031,
+                "name": "Caladbolg",
+                "quality": "R",
+                "type": "Blade",
+                "icon": "Icon_weapon_10700101"
+              },
+              {
+                "id": 30111031,
+                "name": "Pioneer",
+                "quality": "R",
+                "type": "LightSniper",
+                "icon": "Icon_weapon_30100101"
+              },
+              {
+                "id": 20111041,
+                "name": "Courage",
+                "quality": "R",
+                "type": "MachineGun",
+                "icon": "Icon_weapon_20100101"
+              },
+              {
+                "id": 10311031,
+                "name": "Torero",
+                "quality": "R",
+                "type": "Rod",
+                "icon": "Icon_weapon_10300101"
+              },
+              {
+                "id": 20311041,
+                "name": "Navigator",
+                "quality": "R",
+                "type": "ShotGun",
+                "icon": "Icon_weapon_20300101"
+              }
+            ]
+          }
         },
         {
           "slot": 3,
@@ -13356,7 +19710,158 @@ window.BossesData = {
                 }
               ]
             }
-          ]
+          ],
+          "drops": {
+            "weapons": [
+              {
+                "id": 50213041,
+                "name": "Foehn",
+                "quality": "SSR",
+                "type": "Funnel",
+                "icon": "Icon_weapon_40300301"
+              },
+              {
+                "id": 20123041,
+                "name": "Mark",
+                "quality": "SSR",
+                "type": "MachineGun",
+                "icon": "Icon_weapon_20100301"
+              },
+              {
+                "id": 20113041,
+                "name": "Nightwither",
+                "quality": "SSR",
+                "type": "MachineGun",
+                "icon": "Icon_weapon_20100401"
+              },
+              {
+                "id": 50113041,
+                "name": "Torch Tower",
+                "quality": "SSR",
+                "type": "RailGun",
+                "icon": "Icon_weapon_50100101"
+              },
+              {
+                "id": 40213041,
+                "name": "Molten",
+                "quality": "SSR",
+                "type": "Rocket",
+                "icon": "Icon_weapon_40200401"
+              },
+              {
+                "id": 40223041,
+                "name": "Surging Flame",
+                "quality": "SSR",
+                "type": "Rocket",
+                "icon": "Icon_weapon_40200301"
+              },
+              {
+                "id": 20313041,
+                "name": "Firebolt",
+                "quality": "SSR",
+                "type": "ShotGun",
+                "icon": "Icon_weapon_20300401"
+              },
+              {
+                "id": 20323041,
+                "name": "T-Rex",
+                "quality": "SSR",
+                "type": "ShotGun",
+                "icon": "Icon_weapon_20300301"
+              },
+              {
+                "id": 50212041,
+                "name": "Polaris",
+                "quality": "SR",
+                "type": "Funnel",
+                "icon": "Icon_weapon_40300201"
+              },
+              {
+                "id": 20112041,
+                "name": "Art of Ambush",
+                "quality": "SR",
+                "type": "MachineGun",
+                "icon": "Icon_weapon_20100201"
+              },
+              {
+                "id": 20122041,
+                "name": "Art of Ambush - LW",
+                "quality": "SR",
+                "type": "MachineGun",
+                "icon": "Icon_weapon_20100201"
+              },
+              {
+                "id": 50112041,
+                "name": "Ex-Wisdom",
+                "quality": "SR",
+                "type": "RailGun",
+                "icon": "Icon_weapon_50100201"
+              },
+              {
+                "id": 40212041,
+                "name": "Albatross",
+                "quality": "SR",
+                "type": "Rocket",
+                "icon": "Icon_weapon_40200201"
+              },
+              {
+                "id": 40222041,
+                "name": "Albatross - LW",
+                "quality": "SR",
+                "type": "Rocket",
+                "icon": "Icon_weapon_40200201"
+              },
+              {
+                "id": 20312041,
+                "name": "Gale",
+                "quality": "SR",
+                "type": "ShotGun",
+                "icon": "Icon_weapon_20300201"
+              },
+              {
+                "id": 20322041,
+                "name": "Gale - LW",
+                "quality": "SR",
+                "type": "ShotGun",
+                "icon": "Icon_weapon_20300201"
+              },
+              {
+                "id": 10511031,
+                "name": "Toledo",
+                "quality": "R",
+                "type": "Buckler",
+                "icon": "Icon_weapon_10500101"
+              },
+              {
+                "id": 20411031,
+                "name": "Hearthspray",
+                "quality": "R",
+                "type": "Flamethrower",
+                "icon": "Icon_weapon_20500101"
+              },
+              {
+                "id": 20211031,
+                "name": "Ifrit",
+                "quality": "R",
+                "type": "HeavyMachineGun",
+                "icon": "Icon_weapon_20400101"
+              },
+              {
+                "id": 40111041,
+                "name": "Gordius",
+                "quality": "R",
+                "type": "Missile",
+                "icon": "Icon_weapon_40100201"
+              },
+              {
+                "id": 10411031,
+                "name": "Ferroalloy Shield",
+                "quality": "R",
+                "type": "Shield",
+                "icon": "Icon_weapon_10400101"
+              }
+            ]
+          }
         }
       ],
       "description": "Parill Desert breeds crime and mercs. Enhanced fighters flock here chasing glory and credits. No matter how many get wiped out, they keep coming back like weeds.",
@@ -13410,7 +19915,158 @@ window.BossesData = {
                 }
               ]
             }
-          ]
+          ],
+          "drops": {
+            "weapons": [
+              {
+                "id": 10913031,
+                "name": "Excalibur",
+                "quality": "SSR",
+                "type": "Blade",
+                "icon": "Icon_weapon_10700301A"
+              },
+              {
+                "id": 10513031,
+                "name": "Polymeric Barrier",
+                "quality": "SSR",
+                "type": "Buckler",
+                "icon": "Icon_weapon_10500401"
+              },
+              {
+                "id": 20413021,
+                "name": "Blaze Howl",
+                "quality": "SSR",
+                "type": "Flamethrower",
+                "icon": "Icon_weapon_20500301"
+              },
+              {
+                "id": 20423021,
+                "name": "Corona",
+                "quality": "SSR",
+                "type": "Flamethrower",
+                "icon": "Icon_weapon_20500401"
+              },
+              {
+                "id": 20213031,
+                "name": "Dragonbreath",
+                "quality": "SSR",
+                "type": "HeavyMachineGun",
+                "icon": "Icon_weapon_20400301"
+              },
+              {
+                "id": 10113021,
+                "name": "Hail of Spikes",
+                "quality": "SSR",
+                "type": "Knuckle",
+                "icon": "Icon_weapon_10100301"
+              },
+              {
+                "id": 10213021,
+                "name": "Triumph",
+                "quality": "SSR",
+                "type": "PileBunker",
+                "icon": "Icon_weapon_10200301"
+              },
+              {
+                "id": 10413021,
+                "name": "Starfield",
+                "quality": "SSR",
+                "type": "Shield",
+                "icon": "Icon_weapon_10400501"
+              },
+              {
+                "id": 10912021,
+                "name": "Arondight",
+                "quality": "SR",
+                "type": "Blade",
+                "icon": "Icon_weapon_10700201"
+              },
+              {
+                "id": 10512021,
+                "name": "Aneto",
+                "quality": "SR",
+                "type": "Buckler",
+                "icon": "Icon_weapon_10500201"
+              },
+              {
+                "id": 20412022,
+                "name": "Fafnir",
+                "quality": "SR",
+                "type": "Flamethrower",
+                "icon": "Icon_weapon_20500201"
+              },
+              {
+                "id": 20422022,
+                "name": "Fafnir - LW",
+                "quality": "SR",
+                "type": "Flamethrower",
+                "icon": "Icon_weapon_20500201"
+              },
+              {
+                "id": 20212021,
+                "name": "Wrath of Mars",
+                "quality": "SR",
+                "type": "HeavyMachineGun",
+                "icon": "Icon_weapon_20400201"
+              },
+              {
+                "id": 10112021,
+                "name": "Nutcracker",
+                "quality": "SR",
+                "type": "Knuckle",
+                "icon": "Icon_weapon_10100201"
+              },
+              {
+                "id": 10212021,
+                "name": "Thunderbolt",
+                "quality": "SR",
+                "type": "PileBunker",
+                "icon": "Icon_weapon_10200201"
+              },
+              {
+                "id": 10412021,
+                "name": "Submerged Reef",
+                "quality": "SR",
+                "type": "Shield",
+                "icon": "Icon_weapon_10400201"
+              },
+              {
+                "id": 30211031,
+                "name": "Spruce",
+                "quality": "R",
+                "type": "HeavySniper",
+                "icon": "Icon_weapon_30200101"
+              },
+              {
+                "id": 30111022,
+                "name": "Pioneer",
+                "quality": "R",
+                "type": "LightSniper",
+                "icon": "Icon_weapon_30100101"
+              },
+              {
+                "id": 40111031,
+                "name": "Gordius",
+                "quality": "R",
+                "type": "Missile",
+                "icon": "Icon_weapon_40100201"
+              },
+              {
+                "id": 10311022,
+                "name": "Torero",
+                "quality": "R",
+                "type": "Rod",
+                "icon": "Icon_weapon_10300101"
+              },
+              {
+                "id": 10811021,
+                "name": "Millstone",
+                "quality": "R",
+                "type": "Saw",
+                "icon": "Icon_weapon_10600101"
+              }
+            ]
+          }
         },
         {
           "slot": 2,
@@ -13463,7 +20119,158 @@ window.BossesData = {
                 }
               ]
             }
-          ]
+          ],
+          "drops": {
+            "weapons": [
+              {
+                "id": 50213031,
+                "name": "Foehn",
+                "quality": "SSR",
+                "type": "Funnel",
+                "icon": "Icon_weapon_40300301"
+              },
+              {
+                "id": 30123031,
+                "name": "Gazer",
+                "quality": "SSR",
+                "type": "LightSniper",
+                "icon": "Icon_weapon_30100301"
+              },
+              {
+                "id": 30113031,
+                "name": "Maxx",
+                "quality": "SSR",
+                "type": "LightSniper",
+                "icon": "Icon_weapon_30100401"
+              },
+              {
+                "id": 50113031,
+                "name": "Torch Tower",
+                "quality": "SSR",
+                "type": "RailGun",
+                "icon": "Icon_weapon_50100101"
+              },
+              {
+                "id": 10313031,
+                "name": "Mountains",
+                "quality": "SSR",
+                "type": "Rod",
+                "icon": "Icon_weapon_10300301"
+              },
+              {
+                "id": 10813031,
+                "name": "Beowulf",
+                "quality": "SSR",
+                "type": "Saw",
+                "icon": "Icon_weapon_10600201"
+              },
+              {
+                "id": 20313031,
+                "name": "Firebolt",
+                "quality": "SSR",
+                "type": "ShotGun",
+                "icon": "Icon_weapon_20300401"
+              },
+              {
+                "id": 20323031,
+                "name": "T-Rex",
+                "quality": "SSR",
+                "type": "ShotGun",
+                "icon": "Icon_weapon_20300301"
+              },
+              {
+                "id": 50212031,
+                "name": "Polaris",
+                "quality": "SR",
+                "type": "Funnel",
+                "icon": "Icon_weapon_40300201"
+              },
+              {
+                "id": 30112022,
+                "name": "Whistle",
+                "quality": "SR",
+                "type": "LightSniper",
+                "icon": "Icon_weapon_30100201"
+              },
+              {
+                "id": 30122021,
+                "name": "Whistle - LW",
+                "quality": "SR",
+                "type": "LightSniper",
+                "icon": "Icon_weapon_30100201"
+              },
+              {
+                "id": 50112031,
+                "name": "Ex-Wisdom",
+                "quality": "SR",
+                "type": "RailGun",
+                "icon": "Icon_weapon_50100201"
+              },
+              {
+                "id": 10312022,
+                "name": "Gate Breaker",
+                "quality": "SR",
+                "type": "Rod",
+                "icon": "Icon_weapon_10300201"
+              },
+              {
+                "id": 10812021,
+                "name": "Cadmus",
+                "quality": "SR",
+                "type": "Saw",
+                "icon": "Icon_weapon_10600301"
+              },
+              {
+                "id": 20312031,
+                "name": "Gale",
+                "quality": "SR",
+                "type": "ShotGun",
+                "icon": "Icon_weapon_20300201"
+              },
+              {
+                "id": 20322031,
+                "name": "Gale - LW",
+                "quality": "SR",
+                "type": "ShotGun",
+                "icon": "Icon_weapon_20300201"
+              },
+              {
+                "id": 10911021,
+                "name": "Caladbolg",
+                "quality": "R",
+                "type": "Blade",
+                "icon": "Icon_weapon_10700101"
+              },
+              {
+                "id": 20211021,
+                "name": "Ifrit",
+                "quality": "R",
+                "type": "HeavyMachineGun",
+                "icon": "Icon_weapon_20400101"
+              },
+              {
+                "id": 20111031,
+                "name": "Courage",
+                "quality": "R",
+                "type": "MachineGun",
+                "icon": "Icon_weapon_20100101"
+              },
+              {
+                "id": 10211021,
+                "name": "Heavy Pile",
+                "quality": "R",
+                "type": "PileBunker",
+                "icon": "Icon_weapon_10200101"
+              },
+              {
+                "id": 40211031,
+                "name": "Neanderthal",
+                "quality": "R",
+                "type": "Rocket",
+                "icon": "Icon_weapon_40200101"
+              }
+            ]
+          }
         },
         {
           "slot": 3,
@@ -13510,7 +20317,151 @@ window.BossesData = {
                 }
               ]
             }
-          ]
+          ],
+          "drops": {
+            "weapons": [
+              {
+                "id": 30213031,
+                "name": "Red Fox",
+                "quality": "SSR",
+                "type": "HeavySniper",
+                "icon": "Icon_weapon_30200301"
+              },
+              {
+                "id": 20123031,
+                "name": "Mark",
+                "quality": "SSR",
+                "type": "MachineGun",
+                "icon": "Icon_weapon_20100301"
+              },
+              {
+                "id": 20113031,
+                "name": "Nightwither",
+                "quality": "SSR",
+                "type": "MachineGun",
+                "icon": "Icon_weapon_20100401"
+              },
+              {
+                "id": 40123031,
+                "name": "Hanuman",
+                "quality": "SSR",
+                "type": "Missile",
+                "icon": "Icon_weapon_40100301"
+              },
+              {
+                "id": 40113031,
+                "name": "Kumara",
+                "quality": "SSR",
+                "type": "Missile",
+                "icon": "Icon_weapon_40100401"
+              },
+              {
+                "id": 40213031,
+                "name": "Molten",
+                "quality": "SSR",
+                "type": "Rocket",
+                "icon": "Icon_weapon_40200401"
+              },
+              {
+                "id": 40223031,
+                "name": "Surging Flame",
+                "quality": "SSR",
+                "type": "Rocket",
+                "icon": "Icon_weapon_40200301"
+              },
+              {
+                "id": 30212031,
+                "name": "Firebird",
+                "quality": "SR",
+                "type": "HeavySniper",
+                "icon": "Icon_weapon_30200201"
+              },
+              {
+                "id": 20112031,
+                "name": "Art of Ambush",
+                "quality": "SR",
+                "type": "MachineGun",
+                "icon": "Icon_weapon_20100201"
+              },
+              {
+                "id": 20122031,
+                "name": "Art of Ambush - LW",
+                "quality": "SR",
+                "type": "MachineGun",
+                "icon": "Icon_weapon_20100201"
+              },
+              {
+                "id": 40112031,
+                "name": "Thunder",
+                "quality": "SR",
+                "type": "Missile",
+                "icon": "Icon_weapon_40100101"
+              },
+              {
+                "id": 40122031,
+                "name": "Thunder - LW",
+                "quality": "SR",
+                "type": "Missile",
+                "icon": "Icon_weapon_40100101"
+              },
+              {
+                "id": 40212031,
+                "name": "Albatross",
+                "quality": "SR",
+                "type": "Rocket",
+                "icon": "Icon_weapon_40200201"
+              },
+              {
+                "id": 40222031,
+                "name": "Albatross - LW",
+                "quality": "SR",
+                "type": "Rocket",
+                "icon": "Icon_weapon_40200201"
+              },
+              {
+                "id": 10511021,
+                "name": "Toledo",
+                "quality": "R",
+                "type": "Buckler",
+                "icon": "Icon_weapon_10500101"
+              },
+              {
+                "id": 20411022,
+                "name": "Hearthspray",
+                "quality": "R",
+                "type": "Flamethrower",
+                "icon": "Icon_weapon_20500101"
+              },
+              {
+                "id": 50211031,
+                "name": "Raptor's Beak",
+                "quality": "R",
+                "type": "Funnel",
+                "icon": "Icon_weapon_40300101"
+              },
+              {
+                "id": 50111031,
+                "name": "Prism",
+                "quality": "R",
+                "type": "RailGun",
+                "icon": "Icon_weapon_50100301"
+              },
+              {
+                "id": 10411021,
+                "name": "Ferroalloy Shield",
+                "quality": "R",
+                "type": "Shield",
+                "icon": "Icon_weapon_10400101"
+              },
+              {
+                "id": 20311031,
+                "name": "Navigator",
+                "quality": "R",
+                "type": "ShotGun",
+                "icon": "Icon_weapon_20300101"
+              }
+            ]
+          }
         }
       ],
       "description": "The border zone between DL and UNCS is a lawless haven for mercs and criminals. Big corps provide security for convoys passing through.\nA guerrilla merc group has been hitting these protected convoys hard. The corps have put out a joint bounty to eliminate this threat.",
@@ -13564,7 +20515,88 @@ window.BossesData = {
                 }
               ]
             }
-          ]
+          ],
+          "drops": {
+            "weapons": [
+              {
+                "id": 20213021,
+                "name": "Dragonbreath",
+                "quality": "SSR",
+                "type": "HeavyMachineGun",
+                "icon": "Icon_weapon_20400301"
+              },
+              {
+                "id": 10512012,
+                "name": "Aneto",
+                "quality": "SR",
+                "type": "Buckler",
+                "icon": "Icon_weapon_10500201"
+              },
+              {
+                "id": 20212012,
+                "name": "Wrath of Mars",
+                "quality": "SR",
+                "type": "HeavyMachineGun",
+                "icon": "Icon_weapon_20400201"
+              },
+              {
+                "id": 10112012,
+                "name": "Nutcracker",
+                "quality": "SR",
+                "type": "Knuckle",
+                "icon": "Icon_weapon_10100201"
+              },
+              {
+                "id": 20112012,
+                "name": "Art of Ambush",
+                "quality": "SR",
+                "type": "MachineGun",
+                "icon": "Icon_weapon_20100201"
+              },
+              {
+                "id": 10812012,
+                "name": "Cadmus",
+                "quality": "SR",
+                "type": "Saw",
+                "icon": "Icon_weapon_10600301"
+              },
+              {
+                "id": 10911012,
+                "name": "Caladbolg",
+                "quality": "R",
+                "type": "Blade",
+                "icon": "Icon_weapon_10700101"
+              },
+              {
+                "id": 30111021,
+                "name": "Pioneer",
+                "quality": "R",
+                "type": "LightSniper",
+                "icon": "Icon_weapon_30100101"
+              },
+              {
+                "id": 40111021,
+                "name": "Gordius",
+                "quality": "R",
+                "type": "Missile",
+                "icon": "Icon_weapon_40100201"
+              },
+              {
+                "id": 10311021,
+                "name": "Torero",
+                "quality": "R",
+                "type": "Rod",
+                "icon": "Icon_weapon_10300101"
+              },
+              {
+                "id": 10411012,
+                "name": "Ferroalloy Shield",
+                "quality": "R",
+                "type": "Shield",
+                "icon": "Icon_weapon_10400101"
+              }
+            ]
+          }
         },
         {
           "slot": 2,
@@ -13613,7 +20645,102 @@ window.BossesData = {
                 }
               ]
             }
-          ]
+          ],
+          "drops": {
+            "weapons": [
+              {
+                "id": 30213021,
+                "name": "Red Fox",
+                "quality": "SSR",
+                "type": "HeavySniper",
+                "icon": "Icon_weapon_30200301"
+              },
+              {
+                "id": 10912012,
+                "name": "Arondight",
+                "quality": "SR",
+                "type": "Blade",
+                "icon": "Icon_weapon_10700201"
+              },
+              {
+                "id": 20412021,
+                "name": "Fafnir",
+                "quality": "SR",
+                "type": "Flamethrower",
+                "icon": "Icon_weapon_20500201"
+              },
+              {
+                "id": 30212021,
+                "name": "Firebird",
+                "quality": "SR",
+                "type": "HeavySniper",
+                "icon": "Icon_weapon_30200201"
+              },
+              {
+                "id": 10212012,
+                "name": "Thunderbolt",
+                "quality": "SR",
+                "type": "PileBunker",
+                "icon": "Icon_weapon_10200201"
+              },
+              {
+                "id": 40212021,
+                "name": "Albatross",
+                "quality": "SR",
+                "type": "Rocket",
+                "icon": "Icon_weapon_40200201"
+              },
+              {
+                "id": 10412012,
+                "name": "Submerged Reef",
+                "quality": "SR",
+                "type": "Shield",
+                "icon": "Icon_weapon_10400201"
+              },
+              {
+                "id": 10511012,
+                "name": "Toledo",
+                "quality": "R",
+                "type": "Buckler",
+                "icon": "Icon_weapon_10500101"
+              },
+              {
+                "id": 50211021,
+                "name": "Raptor's Beak",
+                "quality": "R",
+                "type": "Funnel",
+                "icon": "Icon_weapon_40300101"
+              },
+              {
+                "id": 20111012,
+                "name": "Courage",
+                "quality": "R",
+                "type": "MachineGun",
+                "icon": "Icon_weapon_20100101"
+              },
+              {
+                "id": 50111021,
+                "name": "Prism",
+                "quality": "R",
+                "type": "RailGun",
+                "icon": "Icon_weapon_50100301"
+              },
+              {
+                "id": 10811012,
+                "name": "Millstone",
+                "quality": "R",
+                "type": "Saw",
+                "icon": "Icon_weapon_10600101"
+              },
+              {
+                "id": 20311021,
+                "name": "Navigator",
+                "quality": "R",
+                "type": "ShotGun",
+                "icon": "Icon_weapon_20300101"
+              }
+            ]
+          }
         },
         {
           "slot": 3,
@@ -13654,7 +20781,95 @@ window.BossesData = {
                 }
               ]
             }
-          ]
+          ],
+          "drops": {
+            "weapons": [
+              {
+                "id": 20313021,
+                "name": "Firebolt",
+                "quality": "SSR",
+                "type": "ShotGun",
+                "icon": "Icon_weapon_20300401"
+              },
+              {
+                "id": 50212021,
+                "name": "Polaris",
+                "quality": "SR",
+                "type": "Funnel",
+                "icon": "Icon_weapon_40300201"
+              },
+              {
+                "id": 30112021,
+                "name": "Whistle",
+                "quality": "SR",
+                "type": "LightSniper",
+                "icon": "Icon_weapon_30100201"
+              },
+              {
+                "id": 40112021,
+                "name": "Thunder",
+                "quality": "SR",
+                "type": "Missile",
+                "icon": "Icon_weapon_40100101"
+              },
+              {
+                "id": 50112021,
+                "name": "Ex-Wisdom",
+                "quality": "SR",
+                "type": "RailGun",
+                "icon": "Icon_weapon_50100201"
+              },
+              {
+                "id": 10312021,
+                "name": "Gate Breaker",
+                "quality": "SR",
+                "type": "Rod",
+                "icon": "Icon_weapon_10300201"
+              },
+              {
+                "id": 20312021,
+                "name": "Gale",
+                "quality": "SR",
+                "type": "ShotGun",
+                "icon": "Icon_weapon_20300201"
+              },
+              {
+                "id": 20411021,
+                "name": "Hearthspray",
+                "quality": "R",
+                "type": "Flamethrower",
+                "icon": "Icon_weapon_20500101"
+              },
+              {
+                "id": 20211012,
+                "name": "Ifrit",
+                "quality": "R",
+                "type": "HeavyMachineGun",
+                "icon": "Icon_weapon_20400101"
+              },
+              {
+                "id": 30211021,
+                "name": "Spruce",
+                "quality": "R",
+                "type": "HeavySniper",
+                "icon": "Icon_weapon_30200101"
+              },
+              {
+                "id": 10211012,
+                "name": "Heavy Pile",
+                "quality": "R",
+                "type": "PileBunker",
+                "icon": "Icon_weapon_10200101"
+              },
+              {
+                "id": 40211021,
+                "name": "Neanderthal",
+                "quality": "R",
+                "type": "Rocket",
+                "icon": "Icon_weapon_40200101"
+              }
+            ]
+          }
         }
       ],
       "companions": [

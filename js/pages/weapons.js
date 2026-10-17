@@ -46,6 +46,7 @@ var WEAPON_ICON_FOLDER = {
   Funnel:         'CT',
   HeavyMachineGun:'HMG',
   HeavySniper:    'SR',
+  Knuckle:        'KN',
   LightSniper:    'LR',
   MachineGun:     'MG',
   Missile:        'ML',
