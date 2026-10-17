@@ -3726,7 +3726,7 @@
         "type": "EquipmentSkill",
         "Ap": "2",
         "CD": "0",
-        "describe": "Uses a Chainsaw to attack a target, dealing <color=#F74848>1.25x</color> DMG. This attack always hits the part with lowest HP."
+        "describe": "Uses a Chainsaw to attack a target, dealing <color=#F74848>1.25x</color> DMG. This attack is guaranteed to hit the part with the lowest HP."
       }
     ]
   },
@@ -4108,7 +4108,7 @@
         "type": null,
         "Ap": "",
         "CD": "",
-        "SpecificEffects": "After attacking with a Tactical Weapon, gains [Battlefield Mastery]. Stacks up to <color=#F74848>4</color> times. Lasts for <color=#F74848>2</color> turns. All stacks of [Battlefield Mastery] are lost upon taking damage."
+        "SpecificEffects": "After attacking with a Tactical Weapon, gains <buf ID=4002012>[Battlefield Mastery]</buf>. Stacks up to <color=#F74848>4</color> times. Lasts for <color=#F74848>2</color> turns. All stacks of <buf ID=4002012>[Battlefield Mastery]</buf> are lost upon taking damage."
       }
     ]
   },
@@ -4434,7 +4434,7 @@
         "type": "Order",
         "Ap": "2",
         "CD": "0",
-        "describe": "Uses a Rail Gun to attack all targets in a <color=#F74848>1x3</color>-tile line, dealing <color=#F74848>1.0x</color> AoE DMG."
+        "describe": "Uses a Rail Gun to attack all targets in a 1x3-tile line, dealing <color=#F74848>1.0x</color> AoE DMG."
       }
     ]
   },

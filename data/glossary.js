@@ -153,11 +153,11 @@ window.GlossaryData = {
       "effect": "When actively attacking, Crit Rate UP."
     },
     "900051": {
-      "name": "Improved Hit",
+      "name": "Hit Enhancement",
       "effect": "Increases accuracy, making attacks more likely to connect."
     },
     "900052": {
-      "name": "Improved Attack",
+      "name": "Attack Enhancement",
       "effect": "Increases attack damage output."
     },
     "900053": {
@@ -177,7 +177,7 @@ window.GlossaryData = {
       "effect": "DMG Taken Down"
     },
     "900056": {
-      "name": "Attack Hindrance",
+      "name": "Attack Inhibition",
       "effect": "Impedes the target's ability to attack effectively."
     },
     "900059": {
@@ -269,8 +269,8 @@ window.GlossaryData = {
       "effect": "Stationary deployment. Unable to move. Attack range changes to a fixed direction area, but grants a special bonus."
     },
     "900112": {
-      "name": "Positional Advantage I",
-      "effect": "Critical hit chance increases by <color=#F74848>3%</color> and DMG taken is reduced by <color=#F74848>2%</color> per stack, up to <color=#F74848>8</color> stacks. All stacks are removed after exiting [Directional Rack]"
+      "name": "Positional Advantage",
+      "effect": "Effect accumulates by hitting enemies while in <buf ID=900111>[Directional Rack]</buf> Mode. Loses all stacks upon exiting <buf ID=900111>[Directional Rack]</buf> Mode."
     },
     "900118": {
       "name": "Valhalla's Call",
@@ -281,8 +281,8 @@ window.GlossaryData = {
       "effect": "Based on Awakening level, gains the following effects:\nLv.1: Movement <color=#F74848>+1</color>.\nLv.2: Unlocks <buf ID=900011>[Ideal Range]</buf> for Assault Weapons. When battling targets positioned on an <buf ID=900011>[Ideal Range]</buf> tile, Final DMG Dealt <color=#F74848>+15%</color>.\nLv.3: When a part is destroyed, restores <color=#F74848>1</color> AP after combat. Can only trigger <color=#F74848>1</color> time per turn.\nLv.4: When actively attacking with a Cutter, can repeatedly select the same target. Subsequent attacks against the same target deal <color=#F74848>40%</color> of base DMG.\nLv.5: Gains <buf ID=900118>[Valhalla's Call]</buf>."
     },
     "900125": {
-      "name": "Firepower Fulcrum",
-      "effect": "HMG bullets <color=#F74848>+1</color>."
+      "name": "Fury Unleashed",
+      "effect": "Can consume <buf ID=2017500>[Fury]</buf> stack to improve the skill effect. For each stack consumed, increases AP cost by <color=#F74848>1</color> and the number of bullets by <color=#F74848>40%</color>. Up to <color=#F74848>2</color> stacks can be consumed."
     },
     "900133": {
       "name": "Poised",
@@ -304,12 +304,8 @@ window.GlossaryData = {
       "name": "Weapon Inhibition",
       "effect": "Cannot execute weapon skills or attack codes except for normal attacks."
     },
-    "1004022": {
-      "name": "Repair Inhibition",
-      "effect": "Repair AMT Received -50%. Cannot repair destroyed parts."
-    },
     "1004061": {
-      "name": "Code Hindrance",
+      "name": "Code Inhibition",
       "effect": "Disrupts the use of Code-type skills."
     },
     "1004412": {
@@ -333,8 +329,8 @@ window.GlossaryData = {
       "effect": "Crit Rate +6%. Stacks up to 5 times. Lasts until a critical hit is landed."
     },
     "1008503": {
-      "name": "Euphoria II",
-      "effect": "Dodge Rate +3%. When actively attacking, Crit Rate +5%. Stacks up to 5 times."
+      "name": "Euphoria I",
+      "effect": "When actively attacking, Crit Rate <color=#F74848>+5%</color>. Stacks up to <color=#F74848>5</color> times."
     },
     "1009083": {
       "name": "Intimidation",
@@ -409,7 +405,7 @@ window.GlossaryData = {
       "effect": "When actively attacking or triggering a [Link Attack], gains [Attack Enhancement] before combat. Stacks up to 3 times. Lasts for 1 turn."
     },
     "2006502": {
-      "name": "Improved Attack I",
+      "name": "Attack Enhancement I",
       "effect": "ATK +5%."
     },
     "2007501": {
@@ -485,8 +481,8 @@ window.GlossaryData = {
       "effect": "When actively attacking with two Assault Weapons, consumes all stacks, reducing AP Cost by <color=#F74848>1</color> for each stack, down to a minimum of <color=#F74848>1</color>."
     },
     "2017072": {
-      "name": "Fury Unleashed",
-      "effect": "Can consume <buf ID=2017500>[Fury]</buf> stack to improve the skill effect. For each stack consumed, increases AP cost by <color=#F74848>1</color> and the number of bullets by <color=#F74848>40%</color>. Up to 2 stacks can be consumed."
+      "name": "Firepower Fulcrum",
+      "effect": "HMG bullets <color=#F74848>+1</color>."
     },
     "2017442": {
       "name": "Firepower Supremacy",
@@ -494,7 +490,7 @@ window.GlossaryData = {
     },
     "2017500": {
       "name": "Fury",
-      "effect": "DMG Dealt <color=#F74848>+25%</color>. Effect cannot stack. Consumed when <buf ID=2017072>[Fury Unleashed]</buf> is activated."
+      "effect": "DMG Dealt <color=#F74848>+25%</color>. Effect cannot stack. Consumed when <buf ID=900125>[Fury Unleashed]</buf> is activated."
     },
     "3004501": {
       "name": "Shadow of Calamity",
@@ -569,7 +565,7 @@ window.GlossaryData = {
       "effect": "Repair AMT Received -25%."
     },
     "3005443": {
-      "name": "Repair Damaged Part Disabled",
+      "name": "Repair Destroyed Part Disabled",
       "effect": "Cannot repair parts that are already damaged."
     },
     "3005501": {
@@ -577,7 +573,7 @@ window.GlossaryData = {
       "effect": "When initiating combat with a Light Rifle, inflicts [Exposure] on the part hit after combat, lasting for 1 turn. A single unit can carry only be affected by 1 type of Hit Boost effect at a time."
     },
     "3006053": {
-      "name": "Skilled",
+      "name": "Seasoned",
       "effect": "Enhanced combat proficiency granting bonuses to attack actions."
     },
     "3006502": {
@@ -601,11 +597,11 @@ window.GlossaryData = {
       "effect": "Crit Rate +5%, Crit DMG +5%, up to 3 stacks. Lose all effects upon taking damage."
     },
     "3009411": {
-      "name": "Intelligence Collection",
+      "name": "Intel Collection",
       "effect": "Gathering tactical intelligence that may reveal enemy positions or grant combat bonuses."
     },
     "3009451": {
-      "name": "Intelligence Collection",
+      "name": "Intel Collection",
       "effect": "Gathering tactical intelligence that may reveal enemy positions or grant combat bonuses."
     },
     "3010502": {
@@ -633,8 +629,8 @@ window.GlossaryData = {
       "effect": "When HP is full, AP Regen per turn +1."
     },
     "4003063": {
-      "name": "Repair Hindrance",
-      "effect": "Reduces the effectiveness of repair actions on the target."
+      "name": "Repair Inhibition",
+      "effect": "Repair AMT Received <color=#F74848>-50%</color>. Cannot repair destroyed parts."
     },
     "4003064": {
       "name": "Repair Disabled",
@@ -677,8 +673,8 @@ window.GlossaryData = {
       "effect": "DMG Taken -15%."
     },
     "5004502": {
-      "name": "Regular Repair II",
-      "effect": "After actively attacking, restores HP equal to <color=#F74848>0.45x</color> [Melissa's] Manipulator Repair AMT to undestroyed parts. Can trigger <color=#F74848>2</color> times. Cannot repair destroyed parts."
+      "name": "Regular Repair I",
+      "effect": "After actively attacking, restores HP equal to <color=#F74848>0.3x</color> [Melissa's] Manipulator Repair AMT to undestroyed parts. Can trigger <color=#F74848>2</color> times. Cannot repair destroyed parts."
     },
     "5004512": {
       "name": "Magnetized Repair",
@@ -721,11 +717,11 @@ window.GlossaryData = {
       "effect": "Gains [Armor UP I] and [Passive Repair]. Can trigger 2 times. Lasts for 1 turn. Additionally, gains [Guard]. Can trigger 2 times. Lasts for 2 turns."
     },
     "6003061": {
-      "name": "Weapon Hindrance",
+      "name": "Weapon Inhibition",
       "effect": "Reduces the target's weapon effectiveness."
     },
     "6003502": {
-      "name": "Attack Hindrance I",
+      "name": "Attack Inhibition I",
       "effect": "Reduces the target's attack effectiveness by 5%."
     },
     "6004041": {
@@ -1017,7 +1013,7 @@ window.GlossaryData = {
       "effect": "Final DMG <color=#F74848>+4%</color>, Final DMG Taken <color=#F74848>-6%</color>, and Repair AMT <color=#F74848>+4%</color>. Stacks up to <color=#F74848>5</color> times."
     },
     "1017503": {
-      "name": "Poised",
+      "name": "Poised I",
       "effect": "DMG dealt increases by <color=#F74848>3%</color>, up to a maximum of <color=#F74848>5</color> stacks."
     },
     "900138": {
@@ -1613,6 +1609,34 @@ window.GlossaryData = {
     "187903": {
       "name": "Energy Blockade",
       "effect": "Cannot gain AP."
+    },
+    "900007": {
+      "name": "Retaliation Disabled",
+      "effect": "Prevent the enemy from retaliating."
+    },
+    "2015082": {
+      "name": "Maelstrom",
+      "effect": "At start of action, if not incapacitated and both Arms are undestroyed, uses two Machine Guns simultaneously to deal <color=#F74848>0.6x</color> DMG <color=#F74848>2</color> times to all enemies within range. If unable to attack, gains <color=#F74848>3</color> AP."
+    },
+    "900128": {
+      "name": "Hellstorm Burst",
+      "effect": "Deals [Fixed DMG] equal to <color=#F74848>0.2x</color> [Adele]'s Flamethrower ATK to all parts of the target and nearby enemy units. This damage can destroy parts. After attacking, removes [Hellstorm]. If other affected targets are afflicted with [Hellstorm] when [Hellstorm Burst] is triggered, [Hellstorm Burst] is triggered again on those targets."
+    },
+    "900048": {
+      "name": "Exposure",
+      "effect": "Affected Part Hit Weighting <color=#F74848>+36</color>."
+    },
+    "900123": {
+      "name": "Intel",
+      "effect": "Each stack increases DMG for all allies."
+    },
+    "4002012": {
+      "name": "Battlefield Mastery",
+      "effect": "Hit Rate <color=#F74848>+4%</color> per stack, lasting for <color=#F74848>2</color> turns. When stacked, the duration is reset."
+    },
+    "3010012": {
+      "name": "Dodge Invalid",
+      "effect": "Unable to dodge. This effect becomes invalid after being hit <color=#F74848>1</color> time."
     }
   },
   "skill": {
@@ -1634,14 +1658,14 @@ window.GlossaryData = {
       "name": "Rapid Realignment",
       "Ap": "0",
       "CD": "1",
-      "effect": "Quickly moves to an empty tile within <color=#F74848>3</color> tiles and reselects rack direction without exiting [Directional Rack] Mode",
+      "effect": "Quickly moves to an empty tile within <color=#F74848>3</color> tiles and reselects rack direction without exiting <buf ID=900111>[Directional Rack]</buf> Mode.",
       "icon": "Icon_skill_order_5004"
     },
     "301150": {
       "name": "Directional Rack",
       "Ap": "0",
       "CD": "1",
-      "effect": "Enters [Directional Rack] Mode: Unable to move, Sniper Rifle's attack range becomes fixed-direction <color=#F5C542>fan-shaped 5-tile</color> area. Can continue attacking after using [Directional Rack]. Automatically exits [Directional Rack] Mode en an Arm is destroyed. <color=#F5C542>[Retract]</color> is available in [Directional Rack] Mode. After retracting, can continue moving.",
+      "effect": "Enters <buf ID=900111>[Directional Rack]</buf> Mode: Unable to move, Sniper Rifle's attack range becomes a fixed-direction fan-shaped <color=#F74848>5</color>-tile area. Can continue attacking after using <buf ID=900111>[Directional Rack]</buf>. Automatically exits <buf ID=900111>[Directional Rack]</buf> Mode when an Arm is destroyed. <buf ID=900026>[Retract]</buf> is available in <buf ID=900111>[Directional Rack]</buf> Mode. After retracting, can continue moving.",
       "icon": "Icon_skill_order_5004"
     },
     "4010041": {
@@ -1677,7 +1701,7 @@ window.GlossaryData = {
       "Ap": "1",
       "CD": "2",
       "icon": "Icon_skill_order_5138",
-      "effect": "Applies a [Defense Field] to the designated tile and the surrounding 1-ring radius for 3 turns. Can continue action with remaining Movement."
+      "effect": "Applies <terrian ID=6008501 /> to the designated tile and the surrounding <color=#F74848>1</color>-ring radius for <color=#F74848>2</color> turns. Can continue action with remaining Movement."
     },
     "601050": {
       "name": "Vengeance Strike",
