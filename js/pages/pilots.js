@@ -44,7 +44,7 @@ var PILOT_AVAILABILITY = {
   'Fregata': 'C', 'Cosette': 'C', 'Sylar': 'C',
 };
 var MECH_AVAILABILITY = {
-  'REV-00': 'CL', 'REV-01': 'CL', 'REV-02': 'CL',
+  'REV-00': 'CL', 'REV-01': 'CL', 'REV-02': 'CL', 'Huilong': 'CL', 'Shadowtiger': 'CL',
   'Erinys': 'L', 'Demiurge': 'L', 'Asteria': 'L',
   'Shadowrabbit': 'C', 'Blue Anonymous Bird': 'C', 'Medusa MKII': 'C',
   'Eye of Faith': 'C', 'Pascal': 'C',
