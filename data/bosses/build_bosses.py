@@ -11,7 +11,8 @@ description and turn limit from the game tables
 (RebuildGameUpdate/out/stats.db) and what the Armed Conquest guide adds
 (ac-guide.json: skill cards, minions, Extreme modifiers, and descriptions,
 bounties and clues where the game tables lack them) and each Clearance Ops
-boss's drops (build_co_drops.py), then writes bosses.json and bosses.js.
+and Armed Conquest stage's drops (build_drops.py: per difficulty for AC, with
+each bounty's reward), then writes bosses.json and bosses.js.
 Mismatches between the guide and the game data are printed.
 """
 import json
@@ -19,7 +20,7 @@ import os
 import re
 import sqlite3
 
-from build_co_drops import chapter_drops
+from build_drops import chapter_drops, season_drops
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(os.path.dirname(HERE))
@@ -578,6 +579,41 @@ def add_stage_info(s, st, info, warn):
             st[key] = info[key]
 
 
+def link_vouchers(drops, bosses):
+    """A voucher's boss -> its name in bosses.json (for its portrait); dropped
+    when the wiki has no such boss."""
+    for key in ('items', 'always', 'first'):
+        for it in drops.get(key, []):
+            if 'boss' in it:
+                try:
+                    it['boss'] = canonical(it['boss'], bosses)
+                except ValueError:
+                    del it['boss']
+    return drops
+
+
+def add_stage_drops(s, st, drops, bosses, warn):
+    """An Armed Conquest stage's drops ({difficulty: drops}, from
+    build_drops.season_drops) and each bounty's reward on each difficulty
+    (bounty rewards: {difficulty: text})."""
+    where = 'AC%d stage %d' % (s['number'], st['slot'])
+    st_drops = {}
+    for diff in st['difficulties']:
+        d = drops.get(diff)
+        if d is None:
+            warn('%s (%s): no drops in the game tables' % (where, diff))
+            continue
+        if d['boss'] and canonical(d['boss'], bosses) != st['boss']:
+            warn('%s (%s): game tables have %s, not %s' % (where, diff, d['boss'], st['boss']))
+        if d['drops']:
+            st_drops[diff] = link_vouchers(d['drops'], bosses)
+        for b, reward in zip(st.get('bounties', []), d['bounties']):
+            if reward and diff in b['conditions']:
+                b.setdefault('rewards', {})[diff] = reward
+    if st_drops:
+        st['drops'] = st_drops
+
+
 def add_icons(seasons):
     """Skills without a guide card (later seasons, DB-only skills) take the
     icon of a guide card with the same name: the same boss's first, else any
@@ -673,7 +709,7 @@ def main():
             if d is None:
                 drop_warnings.append('%s stage %d: no drops for %s' % (group, st['slot'], st['boss']))
             else:
-                st['drops'] = {k: v for k, v in d.items() if k not in ('boss_id', 'boss')}
+                st['drops'] = link_vouchers({k: v for k, v in d.items() if k not in ('boss_id', 'boss')}, bosses)
         for boss in boss_drops:
             drop_warnings.append('%s: drops for %s, who is on no stage' % (group, boss))
         # Companions fight beside the chapter's bosses, on no stage of their own.
@@ -714,6 +750,10 @@ def main():
     for s in ac.values():
         for st in s['stages']:
             add_stage_info(s, st, info[(s['number'], st['slot'])], warnings.append)
+    stage_drops = season_drops(drop_warnings.append)
+    for s in ac.values():
+        for st in s['stages']:
+            add_stage_drops(s, st, stage_drops.get((s['number'], st['slot']), {}), bosses, drop_warnings.append)
     add_icons(ac.values())
     lookup = term_lookup()
     with open(PILOTS, encoding='utf-8') as f:

@@ -16,6 +16,7 @@ Images and icons live in a separate repo, [mecharashi-wiki-assets](https://githu
 | `data/weapons/icons/<type>/` | Signature weapon icons, by weapon type (`AB`, `MG`, `SR`, …) |
 | `data/backpacks/icons/`, `data/backpacks/materials/` | Backpack and crafting-material icons |
 | `data/accessories/icons/` | Accessory icons |
+| `data/items/` | Item icons (`Icon_item_*`, `Icon_currency_*`, …) for boss drops, extracted from the game's bundles by `data/bosses/extract_item_icons.py` |
 | `data/background/` | Rarity frame backgrounds (`quality-{r,sr,ssr,sssr}.png`) |
 
 Add new images to the matching folder in that repo; pushing its `main` deploys them.
@@ -81,8 +82,9 @@ data/
   builder/                        # generate-index-maps.py → index-maps.js/json (BuilderIndexMaps)
   dmgcalc/                        # extract-bench.py → bench-data.js (BenchData) + dmgcalc/bench.js/css, from the mined Damage_Bench.html; build-icons.py → bench-icons.js (BenchIcons, dropdown icons)
   features/                       # build_features.py → features.json/js (FeaturesData, every R&D feature from the mined DB, for the Features page)
-  bosses/                         # build_bosses.py → bosses.json/js (BossesData: line-ups and HP from bench-data.js, AC and CO boss skills from the mined DB, CO chapter blurbs, turn limits and each CO boss's drops (build_co_drops.py) from the game tables, AC merged with ac-guide.json; every [Term] a skill uses gets an explanation under it, from the stage, the DB, the glossary or another stage of the season, and any it can't explain are printed)
-    build_co_drops.py             # CO boss → weapons/items it can drop (DungeonLevelInfo → ItemDropInfo in stats.db; no odds, those are server-side); run alone to print them. Drop icons are in the assets repo's data/weapons/icons/<type>/ (Knuckles: KN/)
+  bosses/                         # build_bosses.py → bosses.json/js (BossesData: line-ups and HP from bench-data.js, AC and CO boss skills from the mined DB, CO chapter blurbs and turn limits, and each CO boss's and AC stage's drops (build_drops.py) from the game tables, AC merged with ac-guide.json; every [Term] a skill uses gets an explanation under it, from the stage, the DB, the glossary or another stage of the season, and any it can't explain are printed)
+    build_drops.py                # boss drops from stats.db (no odds, those are server-side): CO boss → weapons/items it can drop (DungeonLevelInfo → ItemDropInfo); AC stage → per difficulty, every clear's and first clear's drops and each bounty's reward (RaidDungeonLevelInfo; only AC1 drops weapons, later seasons give medals/handbooks/vouchers); run alone to print them.
+    extract_item_icons.py         # the drop items' icons (bosses.json) from the game's itemtype bundles (newest copy, installed or downloaded) → assets repo data/items/; game folder and bundle key from MRT_FieldWiki's settings.py; skips icons already there unless --force. Annihilation Vouchers show their boss's portrait instead Drop icons are in the assets repo's data/weapons/icons/<type>/ (Knuckles: KN/)
     ac-guide.json                 # transcribed from the Armed Conquest guide PDF (data/screenshots/mined/), plus Extreme modifiers added by hand for AC9–11; build_bosses.py prints where it disagrees with the DB; skill `icon`s were matched by image from the guide's screenshots to the assets repo's pilot_skills icons (DB-only skills take a same-named card's icon)
   rd/                             # build_rd_totals.py → rd-totals.json/js (RDTotalsData, max R&D bonuses from the mined DB, for the R&D Bonus page and DMG calculator)
   glossary.json                   # → GlossaryData

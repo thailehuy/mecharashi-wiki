@@ -386,6 +386,12 @@
                 "Hard": "Win within 6 turns",
                 "Extreme": "Win within 6 turns",
                 "Inferno": "Win within 6 turns"
+              },
+              "rewards": {
+                "Normal": "Memory Fragment ×30",
+                "Hard": "Memory Fragment ×30",
+                "Extreme": "EN Container ×1",
+                "Inferno": "Bay Bits ×40"
               }
             },
             {
@@ -395,6 +401,12 @@
                 "Hard": "Mirestomp never gains Skill Enhancement",
                 "Extreme": "Mirestomp never gains Skill Enhancement",
                 "Inferno": "Mirestomp never gains Skill Enhancement"
+              },
+              "rewards": {
+                "Normal": "Solid Arashium ×20",
+                "Hard": "EN Container ×1",
+                "Extreme": "Solid Arashium ×20",
+                "Inferno": "Solid Arashium ×10"
               }
             },
             {
@@ -404,6 +416,12 @@
                 "Hard": "All of your team members survive",
                 "Extreme": "All of your team members survive",
                 "Inferno": "All of your team members survive"
+              },
+              "rewards": {
+                "Normal": "Solid Arashium ×35",
+                "Hard": "Solid Arashium ×35",
+                "Extreme": "Solid Arashium ×35",
+                "Inferno": "EN Container ×1"
               }
             }
           ],
@@ -438,7 +456,49 @@
                 "Inferno": "A dark brown, boxy backpack with tight stitching and a full waterproof coating. Storage is well-organized, holding magazines, medical supplies, daily essentials, sedatives, and even Mirestomp's go-to firearm. For comfort, the pack is shaped with a streamlined profile to fit the natural curve of the spine. Mirestomp values this backpack a lot—if you care about your life, don't touch it."
               }
             }
-          ]
+          ],
+          "drops": {
+            "Normal": {
+              "items": [
+                {
+                  "name": "Thunderbolt Bounty Medal IV",
+                  "icon": "Icon_item_12100108"
+                },
+                {
+                  "name": "Thunderbolt Bounty Medal V",
+                  "icon": "Icon_item_12100109"
+                }
+              ]
+            },
+            "Hard": {
+              "items": [
+                {
+                  "name": "Thunderbolt Bounty Medal IV",
+                  "icon": "Icon_item_12100108"
+                },
+                {
+                  "name": "Thunderbolt Bounty Medal V",
+                  "icon": "Icon_item_12100109"
+                }
+              ]
+            },
+            "Extreme": {
+              "first": [
+                {
+                  "name": "Mirestomp Annihilation Voucher ×2",
+                  "boss": "Mirestomp"
+                }
+              ]
+            },
+            "Inferno": {
+              "first": [
+                {
+                  "name": "Solid Arashium ×30",
+                  "icon": "Icon_currency_002"
+                }
+              ]
+            }
+          }
         },
         {
           "slot": 2,
@@ -521,6 +581,12 @@
                 "Hard": "Win within 6 turns",
                 "Extreme": "Win within 6 turns",
                 "Inferno": "Win within 6 turns"
+              },
+              "rewards": {
+                "Normal": "Memory Fragment ×30",
+                "Hard": "Memory Fragment ×30",
+                "Extreme": "EN Container ×1",
+                "Inferno": "Bay Bits ×40"
               }
             },
             {
@@ -530,6 +596,12 @@
                 "Hard": "Has never defeated a Signal Transmitter",
                 "Extreme": "Has never defeated a Signal Transmitter",
                 "Inferno": "Has never defeated a Signal Transmitter"
+              },
+              "rewards": {
+                "Normal": "Solid Arashium ×20",
+                "Hard": "EN Container ×1",
+                "Extreme": "Solid Arashium ×20",
+                "Inferno": "Solid Arashium ×10"
               }
             },
             {
@@ -539,6 +611,12 @@
                 "Hard": "All of your team members survive",
                 "Extreme": "All of your team members survive",
                 "Inferno": "All of your team members survive"
+              },
+              "rewards": {
+                "Normal": "Solid Arashium ×35",
+                "Hard": "Solid Arashium ×35",
+                "Extreme": "Solid Arashium ×35",
+                "Inferno": "EN Container ×1"
               }
             }
           ],
@@ -573,7 +651,49 @@
                 "Inferno": "The projectile's tail is made from a high-density silver alloy, with a core of blood-red gel toxin sealed at its center. The casing is etched with spiral grooves to stabilize its trajectory. Upon firing, friction-generated heat causes the toxin to gradually vaporize, turning it into a wide-area threat that's not to be taken lightly. Libby rarely uses this type of round—but that doesn't mean she won't."
               }
             }
-          ]
+          ],
+          "drops": {
+            "Normal": {
+              "items": [
+                {
+                  "name": "Thunderbolt Bounty Medal VI",
+                  "icon": "Icon_item_12100110"
+                },
+                {
+                  "name": "Thunderbolt Bounty Medal V",
+                  "icon": "Icon_item_12100109"
+                }
+              ]
+            },
+            "Hard": {
+              "items": [
+                {
+                  "name": "Thunderbolt Bounty Medal VI",
+                  "icon": "Icon_item_12100110"
+                },
+                {
+                  "name": "Thunderbolt Bounty Medal V",
+                  "icon": "Icon_item_12100109"
+                }
+              ]
+            },
+            "Extreme": {
+              "first": [
+                {
+                  "name": "Libby Annihilation Voucher ×2",
+                  "boss": "Libby"
+                }
+              ]
+            },
+            "Inferno": {
+              "first": [
+                {
+                  "name": "Solid Arashium ×30",
+                  "icon": "Icon_currency_002"
+                }
+              ]
+            }
+          }
         },
         {
           "slot": 3,
@@ -684,6 +804,12 @@
                 "Hard": "Win within 6 turns",
                 "Extreme": "Win within 6 turns",
                 "Inferno": "Win within 6 turns"
+              },
+              "rewards": {
+                "Normal": "EN Container ×1",
+                "Hard": "EN Container ×1",
+                "Extreme": "EN Container ×1",
+                "Inferno": "Bay Bits ×40"
               }
             },
             {
@@ -693,6 +819,12 @@
                 "Hard": "No more than 6 STs are summoned by a single Barracks",
                 "Extreme": "No more than 6 STs are summoned by a single Barracks",
                 "Inferno": "No more than 6 STs are summoned by a single Barracks"
+              },
+              "rewards": {
+                "Normal": "Memory Fragment ×30",
+                "Hard": "Solid Arashium ×20",
+                "Extreme": "Solid Arashium ×20",
+                "Inferno": "Solid Arashium ×10"
               }
             },
             {
@@ -702,6 +834,12 @@
                 "Hard": "All of your team members survive",
                 "Extreme": "All of your team members survive",
                 "Inferno": "All of your team members survive"
+              },
+              "rewards": {
+                "Normal": "Solid Arashium ×35",
+                "Hard": "Solid Arashium ×35",
+                "Extreme": "Solid Arashium ×35",
+                "Inferno": "EN Container ×1"
               }
             }
           ],
@@ -736,7 +874,49 @@
                 "Inferno": "A cylindrical aluminum alloy canister sealed tight, filled with an oxidizing solution. A piezoelectric ignition contact is built into the base—once linked to the flamethrower's fuel valve, it atomizes rapidly, boosting flame temperature and extending range by up to 35%. That surge in power also brings greater instability—something Blazetrudge can't fully control. Which is exactly why he listens to Grimbite."
               }
             }
-          ]
+          ],
+          "drops": {
+            "Normal": {
+              "items": [
+                {
+                  "name": "Thunderbolt Bounty Medal IV",
+                  "icon": "Icon_item_12100108"
+                },
+                {
+                  "name": "Thunderbolt Bounty Medal VI",
+                  "icon": "Icon_item_12100110"
+                }
+              ]
+            },
+            "Hard": {
+              "items": [
+                {
+                  "name": "Thunderbolt Bounty Medal IV",
+                  "icon": "Icon_item_12100108"
+                },
+                {
+                  "name": "Thunderbolt Bounty Medal VI",
+                  "icon": "Icon_item_12100110"
+                }
+              ]
+            },
+            "Extreme": {
+              "first": [
+                {
+                  "name": "Blazetrudge Annihilation Voucher ×2",
+                  "boss": "Blazetrudge"
+                }
+              ]
+            },
+            "Inferno": {
+              "first": [
+                {
+                  "name": "Solid Arashium ×30",
+                  "icon": "Icon_currency_002"
+                }
+              ]
+            }
+          }
         },
         {
           "slot": 4,
@@ -880,6 +1060,12 @@
                 "Hard": "All of your team members survive",
                 "Extreme": "All of your team members survive",
                 "Inferno": "All of your team members survive"
+              },
+              "rewards": {
+                "Normal": "Transit Voucher ×1",
+                "Hard": "Transit Voucher ×1",
+                "Extreme": "Transit Voucher ×1",
+                "Inferno": "Bulk Voucher ×2"
               }
             }
           ],
@@ -889,6 +1075,64 @@
             "Hard": 18,
             "Extreme": 27,
             "Inferno": 36
+          },
+          "drops": {
+            "Normal": {
+              "items": [
+                {
+                  "name": "Thunderbolt Arsenal Handbook IV",
+                  "icon": "Icon_item_12100104"
+                },
+                {
+                  "name": "Thunderbolt Arsenal Handbook V",
+                  "icon": "Icon_item_12100105"
+                },
+                {
+                  "name": "Thunderbolt Arsenal Handbook VI",
+                  "icon": "Icon_item_12100106"
+                },
+                {
+                  "name": "Thunderbolt Arsenal Handbook VII",
+                  "icon": "Icon_item_12100107"
+                }
+              ]
+            },
+            "Hard": {
+              "items": [
+                {
+                  "name": "Thunderbolt Arsenal Handbook IV",
+                  "icon": "Icon_item_12100104"
+                },
+                {
+                  "name": "Thunderbolt Arsenal Handbook V",
+                  "icon": "Icon_item_12100105"
+                },
+                {
+                  "name": "Thunderbolt Arsenal Handbook VI",
+                  "icon": "Icon_item_12100106"
+                },
+                {
+                  "name": "Thunderbolt Arsenal Handbook VII",
+                  "icon": "Icon_item_12100107"
+                }
+              ]
+            },
+            "Extreme": {
+              "first": [
+                {
+                  "name": "Douglas Annihilation Voucher ×3",
+                  "boss": "Douglas"
+                }
+              ]
+            },
+            "Inferno": {
+              "first": [
+                {
+                  "name": "Upgrade Gunport Deployment Permit ×1",
+                  "icon": "Icon_item_mecha_EliteShield"
+                }
+              ]
+            }
           }
         }
       ]
@@ -1023,6 +1267,12 @@
                 "Hard": "Win within 6 turns",
                 "Extreme": "Win within 6 turns",
                 "Inferno": "Win within 6 turns"
+              },
+              "rewards": {
+                "Normal": "Memory Fragment ×30",
+                "Hard": "Memory Fragment ×30",
+                "Extreme": "EN Container ×1",
+                "Inferno": "Bay Bits ×40"
               }
             },
             {
@@ -1032,6 +1282,12 @@
                 "Hard": "End the turn with no more than 3 Cold Seals on your side",
                 "Extreme": "End the turn with no more than 3 Cold Seals on your side",
                 "Inferno": "End the turn with no more than 3 Cold Seals on your side"
+              },
+              "rewards": {
+                "Normal": "Solid Arashium ×20",
+                "Hard": "EN Container ×1",
+                "Extreme": "Solid Arashium ×20",
+                "Inferno": "Solid Arashium ×10"
               }
             },
             {
@@ -1041,6 +1297,12 @@
                 "Hard": "All of your team members survive",
                 "Extreme": "All of your team members survive",
                 "Inferno": "All of your team members survive"
+              },
+              "rewards": {
+                "Normal": "Solid Arashium ×35",
+                "Hard": "Solid Arashium ×35",
+                "Extreme": "Solid Arashium ×35",
+                "Inferno": "EN Container ×1"
               }
             }
           ],
@@ -1060,7 +1322,49 @@
               "subtitle": "Roughly made, kept only as a memento.",
               "text": "The gold ring has developed a patina over the years from being rubbed, with a small piece of tinplate fixed to the ring face by rivets. The edges have been polished multiple times to keep them smooth, but it always seems to catch some unknown debris when worn. By conventional standards, its craftsmanship is a disaster, but don't say that in front of Gregory—after all, he crafted it himself to commemorate his hometown."
             }
-          ]
+          ],
+          "drops": {
+            "Normal": {
+              "items": [
+                {
+                  "name": "Carlo Bounty Medal I",
+                  "icon": "Icon_item_12100013"
+                },
+                {
+                  "name": "Carlo Bounty Medal II",
+                  "icon": "Icon_item_12100014"
+                }
+              ]
+            },
+            "Hard": {
+              "items": [
+                {
+                  "name": "Carlo Bounty Medal I",
+                  "icon": "Icon_item_12100013"
+                },
+                {
+                  "name": "Carlo Bounty Medal II",
+                  "icon": "Icon_item_12100014"
+                }
+              ]
+            },
+            "Extreme": {
+              "first": [
+                {
+                  "name": "Gregory Annihilation Voucher ×2",
+                  "boss": "Gregory"
+                }
+              ]
+            },
+            "Inferno": {
+              "first": [
+                {
+                  "name": "Solid Arashium ×30",
+                  "icon": "Icon_currency_002"
+                }
+              ]
+            }
+          }
         },
         {
           "slot": 2,
@@ -1161,6 +1465,12 @@
                 "Hard": "Win within 6 turns",
                 "Extreme": "Win within 6 turns",
                 "Inferno": "Win within 6 turns"
+              },
+              "rewards": {
+                "Normal": "Memory Fragment ×30",
+                "Hard": "Memory Fragment ×30",
+                "Extreme": "EN Container ×1",
+                "Inferno": "Bay Bits ×40"
               }
             },
             {
@@ -1170,6 +1480,12 @@
                 "Hard": "Garcia uses [Suppression] no more than 3 times",
                 "Extreme": "Garcia uses [Suppression] no more than 3 times",
                 "Inferno": "Garcia uses [Suppression] no more than 3 times"
+              },
+              "rewards": {
+                "Normal": "Solid Arashium ×20",
+                "Hard": "EN Container ×1",
+                "Extreme": "Solid Arashium ×20",
+                "Inferno": "Solid Arashium ×10"
               }
             },
             {
@@ -1179,6 +1495,12 @@
                 "Hard": "All of your team members survive",
                 "Extreme": "All of your team members survive",
                 "Inferno": "All of your team members survive"
+              },
+              "rewards": {
+                "Normal": "Solid Arashium ×35",
+                "Hard": "Solid Arashium ×35",
+                "Extreme": "Solid Arashium ×35",
+                "Inferno": "EN Container ×1"
               }
             }
           ],
@@ -1198,7 +1520,49 @@
               "subtitle": "This time, it will be aimed at former comrades.",
               "text": "A large-caliber handgun from the New Gold Rush era, cherished by gun lovers for its raw power and iconic design. A gift from Genovese at their first meeting, it remains Garcia's beloved weapon to this day. Garcia has lost count of how many family foes this gun has vanquished, or how many times it has helped him escape death... He also doesn't know how many bullets he'll have to fire at his former comrades next."
             }
-          ]
+          ],
+          "drops": {
+            "Normal": {
+              "items": [
+                {
+                  "name": "Carlo Bounty Medal III",
+                  "icon": "Icon_item_12100015"
+                },
+                {
+                  "name": "Carlo Bounty Medal II",
+                  "icon": "Icon_item_12100014"
+                }
+              ]
+            },
+            "Hard": {
+              "items": [
+                {
+                  "name": "Carlo Bounty Medal III",
+                  "icon": "Icon_item_12100015"
+                },
+                {
+                  "name": "Carlo Bounty Medal II",
+                  "icon": "Icon_item_12100014"
+                }
+              ]
+            },
+            "Extreme": {
+              "first": [
+                {
+                  "name": "Garcia Annihilation Voucher ×2",
+                  "boss": "Garcia"
+                }
+              ]
+            },
+            "Inferno": {
+              "first": [
+                {
+                  "name": "Solid Arashium ×30",
+                  "icon": "Icon_currency_002"
+                }
+              ]
+            }
+          }
         },
         {
           "slot": 3,
@@ -1335,6 +1699,12 @@
                 "Hard": "Win within 6 turns",
                 "Extreme": "Win within 6 turns",
                 "Inferno": "Win within 6 turns"
+              },
+              "rewards": {
+                "Normal": "EN Container ×1",
+                "Hard": "EN Container ×1",
+                "Extreme": "EN Container ×1",
+                "Inferno": "Bay Bits ×40"
               }
             },
             {
@@ -1344,6 +1714,12 @@
                 "Hard": "Andrea never has 8 stacks of Morale and 8 stacks of Presence at the same time",
                 "Extreme": "Andrea never has 8 stacks of Morale and 8 stacks of Presence at the same time",
                 "Inferno": "Andrea never has 8 stacks of Morale and 8 stacks of Presence at the same time"
+              },
+              "rewards": {
+                "Normal": "Memory Fragment ×30",
+                "Hard": "Solid Arashium ×20",
+                "Extreme": "Solid Arashium ×20",
+                "Inferno": "Solid Arashium ×10"
               }
             },
             {
@@ -1353,6 +1729,12 @@
                 "Hard": "All of your team members survive",
                 "Extreme": "All of your team members survive",
                 "Inferno": "All of your team members survive"
+              },
+              "rewards": {
+                "Normal": "Solid Arashium ×35",
+                "Hard": "Solid Arashium ×35",
+                "Extreme": "Solid Arashium ×35",
+                "Inferno": "EN Container ×1"
               }
             }
           ],
@@ -1372,7 +1754,49 @@
               "subtitle": "A bit too warm for Milkhama's weather.",
               "text": "Made from a tan, leather-like waterproof fabric, with over a dozen pockets inside and out. Its loose fit allows for decent breathability... but beyond that, there's nothing special about it. Just an ordinary coat. It's the lightest outer layer Andrea brought when leaving home, yet the stark difference between Milkhama and Ovett's climates still makes it feel a bit too warm."
             }
-          ]
+          ],
+          "drops": {
+            "Normal": {
+              "items": [
+                {
+                  "name": "Carlo Bounty Medal I",
+                  "icon": "Icon_item_12100013"
+                },
+                {
+                  "name": "Carlo Bounty Medal III",
+                  "icon": "Icon_item_12100015"
+                }
+              ]
+            },
+            "Hard": {
+              "items": [
+                {
+                  "name": "Carlo Bounty Medal I",
+                  "icon": "Icon_item_12100013"
+                },
+                {
+                  "name": "Carlo Bounty Medal III",
+                  "icon": "Icon_item_12100015"
+                }
+              ]
+            },
+            "Extreme": {
+              "first": [
+                {
+                  "name": "Andrea Annihilation Voucher. ×2",
+                  "boss": "Andrea"
+                }
+              ]
+            },
+            "Inferno": {
+              "first": [
+                {
+                  "name": "Solid Arashium ×30",
+                  "icon": "Icon_currency_002"
+                }
+              ]
+            }
+          }
         },
         {
           "slot": 4,
@@ -1502,6 +1926,12 @@
                 "Hard": "All of your team members survive",
                 "Extreme": "All of your team members survive",
                 "Inferno": "All of your team members survive"
+              },
+              "rewards": {
+                "Normal": "Transit Voucher ×1",
+                "Hard": "Transit Voucher ×1",
+                "Extreme": "Transit Voucher ×1",
+                "Inferno": "Bulk Voucher ×2"
               }
             }
           ],
@@ -1511,6 +1941,64 @@
             "Hard": 18,
             "Extreme": 27,
             "Inferno": 36
+          },
+          "drops": {
+            "Normal": {
+              "items": [
+                {
+                  "name": "Carlo Arsenal Handbook I",
+                  "icon": "Icon_item_12100101"
+                },
+                {
+                  "name": "Carlo Arsenal Handbook II",
+                  "icon": "Icon_item_12100011"
+                },
+                {
+                  "name": "Carlo Arsenal Handbook III",
+                  "icon": "Icon_item_12100010"
+                },
+                {
+                  "name": "Carlo Arsenal Handbook IV",
+                  "icon": "Icon_item_12100012"
+                }
+              ]
+            },
+            "Hard": {
+              "items": [
+                {
+                  "name": "Carlo Arsenal Handbook I",
+                  "icon": "Icon_item_12100101"
+                },
+                {
+                  "name": "Carlo Arsenal Handbook II",
+                  "icon": "Icon_item_12100011"
+                },
+                {
+                  "name": "Carlo Arsenal Handbook III",
+                  "icon": "Icon_item_12100010"
+                },
+                {
+                  "name": "Carlo Arsenal Handbook IV",
+                  "icon": "Icon_item_12100012"
+                }
+              ]
+            },
+            "Extreme": {
+              "first": [
+                {
+                  "name": "Genovese Annihilation Voucher ×3",
+                  "boss": "Genovese"
+                }
+              ]
+            },
+            "Inferno": {
+              "first": [
+                {
+                  "name": "Support Center Conscription Permit ×1",
+                  "icon": "Icon_item_mecha_EliteShield"
+                }
+              ]
+            }
           }
         }
       ]
@@ -1600,6 +2088,12 @@
                 "Hard": "Win within 6 turns",
                 "Extreme": "Win within 6 turns",
                 "Inferno": "Win within 6 turns"
+              },
+              "rewards": {
+                "Normal": "Memory Fragment ×30",
+                "Hard": "Memory Fragment ×30",
+                "Extreme": "EN Container ×1",
+                "Inferno": "Bay Bits ×40"
               }
             },
             {
@@ -1609,6 +2103,12 @@
                 "Hard": "All of your team's parts are undestroyed at the time of victory",
                 "Extreme": "All of your team's parts are undestroyed at the time of victory",
                 "Inferno": "All of your team's parts are undestroyed at the time of victory"
+              },
+              "rewards": {
+                "Normal": "Solid Arashium ×20",
+                "Hard": "EN Container ×1",
+                "Extreme": "Solid Arashium ×20",
+                "Inferno": "Solid Arashium ×10"
               }
             },
             {
@@ -1618,6 +2118,12 @@
                 "Hard": "All of your team members survive",
                 "Extreme": "All of your team members survive",
                 "Inferno": "All of your team members survive"
+              },
+              "rewards": {
+                "Normal": "Solid Arashium ×35",
+                "Hard": "Solid Arashium ×35",
+                "Extreme": "Solid Arashium ×35",
+                "Inferno": "EN Container ×1"
               }
             }
           ],
@@ -1673,7 +2179,49 @@
                 "Inferno": "Resembling an ordinary cold-medicine capsule, it contains green tea extract, grape seed extract, and capsaicin. Take 1 capsule 1-2 times daily and pair with a healthy diet and moderate exercise for optimal results. Sunny mainly chooses it because it doesn't interact with his regular stomach medication. Additionally, taking this capsule allows him to indulge in overeating more comfortably."
               }
             }
-          ]
+          ],
+          "drops": {
+            "Normal": {
+              "items": [
+                {
+                  "name": "GSA Bounty Medal I",
+                  "icon": "Icon_item_12100052"
+                },
+                {
+                  "name": "GSA Bounty Medal II",
+                  "icon": "Icon_item_12100053"
+                }
+              ]
+            },
+            "Hard": {
+              "items": [
+                {
+                  "name": "GSA Bounty Medal I",
+                  "icon": "Icon_item_12100052"
+                },
+                {
+                  "name": "GSA Bounty Medal II",
+                  "icon": "Icon_item_12100053"
+                }
+              ]
+            },
+            "Extreme": {
+              "first": [
+                {
+                  "name": "Sunny Annihilation Voucher ×2",
+                  "boss": "Sunny"
+                }
+              ]
+            },
+            "Inferno": {
+              "first": [
+                {
+                  "name": "Solid Arashium ×30",
+                  "icon": "Icon_currency_002"
+                }
+              ]
+            }
+          }
         },
         {
           "slot": 2,
@@ -1783,6 +2331,12 @@
                 "Hard": "Win within 6 turns",
                 "Extreme": "Win within 6 turns",
                 "Inferno": "Win within 6 turns"
+              },
+              "rewards": {
+                "Normal": "Memory Fragment ×30",
+                "Hard": "Memory Fragment ×30",
+                "Extreme": "EN Container ×1",
+                "Inferno": "Bay Bits ×40"
               }
             },
             {
@@ -1792,6 +2346,12 @@
                 "Hard": "Have a single unit trigger [Maneuvering Pursuit] 5 times",
                 "Extreme": "Have a single unit trigger [Maneuvering Pursuit] 5 times",
                 "Inferno": "Have a single unit trigger [Maneuvering Pursuit] 5 times"
+              },
+              "rewards": {
+                "Normal": "Solid Arashium ×20",
+                "Hard": "EN Container ×1",
+                "Extreme": "Solid Arashium ×20",
+                "Inferno": "Solid Arashium ×10"
               }
             },
             {
@@ -1801,6 +2361,12 @@
                 "Hard": "All of your team members survive",
                 "Extreme": "All of your team members survive",
                 "Inferno": "All of your team members survive"
+              },
+              "rewards": {
+                "Normal": "Solid Arashium ×35",
+                "Hard": "Solid Arashium ×35",
+                "Extreme": "Solid Arashium ×35",
+                "Inferno": "EN Container ×1"
               }
             }
           ],
@@ -1842,7 +2408,49 @@
                 "Inferno": "A red retractable ballpoint pen with smooth ink flow. Keller has a habit of sketching—even if no one can understand what he draws, he insists on indulging this habit. Moreover, in some extremely dangerous environments, a ballpoint pen can occasionally serve as a lethal weapon, offering new survival strategies. \"I should use a different color,\" Keller often thinks, but he quickly forgets due to being busy with missions."
               }
             }
-          ]
+          ],
+          "drops": {
+            "Normal": {
+              "items": [
+                {
+                  "name": "GSA Bounty Medal III",
+                  "icon": "Icon_item_12100054"
+                },
+                {
+                  "name": "GSA Bounty Medal II",
+                  "icon": "Icon_item_12100053"
+                }
+              ]
+            },
+            "Hard": {
+              "items": [
+                {
+                  "name": "GSA Bounty Medal III",
+                  "icon": "Icon_item_12100054"
+                },
+                {
+                  "name": "GSA Bounty Medal II",
+                  "icon": "Icon_item_12100053"
+                }
+              ]
+            },
+            "Extreme": {
+              "first": [
+                {
+                  "name": "Keller Annihilation Voucher ×2",
+                  "boss": "Keller"
+                }
+              ]
+            },
+            "Inferno": {
+              "first": [
+                {
+                  "name": "Solid Arashium ×30",
+                  "icon": "Icon_currency_002"
+                }
+              ]
+            }
+          }
         },
         {
           "slot": 3,
@@ -1984,6 +2592,12 @@
                 "Hard": "Win within 6 turns",
                 "Extreme": "Win within 6 turns",
                 "Inferno": "Win within 6 turns"
+              },
+              "rewards": {
+                "Normal": "EN Container ×1",
+                "Hard": "EN Container ×1",
+                "Extreme": "EN Container ×1",
+                "Inferno": "Bay Bits ×40"
               }
             },
             {
@@ -1993,6 +2607,12 @@
                 "Hard": "Echo Burst hits no more than 3 targets",
                 "Extreme": "Echo Burst hits no more than 2 targets",
                 "Inferno": "Echo Burst hits no more than 2 targets"
+              },
+              "rewards": {
+                "Normal": "Memory Fragment ×30",
+                "Hard": "Solid Arashium ×20",
+                "Extreme": "Solid Arashium ×20",
+                "Inferno": "Solid Arashium ×10"
               }
             },
             {
@@ -2002,6 +2622,12 @@
                 "Hard": "All of your team members survive",
                 "Extreme": "All of your team members survive",
                 "Inferno": "All of your team members survive"
+              },
+              "rewards": {
+                "Normal": "Solid Arashium ×35",
+                "Hard": "Solid Arashium ×35",
+                "Extreme": "Solid Arashium ×35",
+                "Inferno": "EN Container ×1"
               }
             }
           ],
@@ -2043,7 +2669,49 @@
                 "Inferno": "A refined square wooden cigar box. The gold-plated ornaments and inlaid clasp have been pried off, but it is still a beautiful piece. Aiden spotted it at a junk shop and immediately thought of his wife's loose sewing tools with no proper place to call home. He pulled out his wallet without hesitation. The day she received it, she was overjoyed and carefully tucked it deep inside their wardrobe. The care she took with it made Aiden a little sad. He quietly promised himself he would give her something better someday."
               }
             }
-          ]
+          ],
+          "drops": {
+            "Normal": {
+              "items": [
+                {
+                  "name": "GSA Bounty Medal I",
+                  "icon": "Icon_item_12100052"
+                },
+                {
+                  "name": "GSA Bounty Medal III",
+                  "icon": "Icon_item_12100054"
+                }
+              ]
+            },
+            "Hard": {
+              "items": [
+                {
+                  "name": "GSA Bounty Medal I",
+                  "icon": "Icon_item_12100052"
+                },
+                {
+                  "name": "GSA Bounty Medal III",
+                  "icon": "Icon_item_12100054"
+                }
+              ]
+            },
+            "Extreme": {
+              "first": [
+                {
+                  "name": "Aiden Annihilation Voucher ×2",
+                  "boss": "Aiden"
+                }
+              ]
+            },
+            "Inferno": {
+              "first": [
+                {
+                  "name": "Solid Arashium ×30",
+                  "icon": "Icon_currency_002"
+                }
+              ]
+            }
+          }
         },
         {
           "slot": 4,
@@ -2218,6 +2886,12 @@
                 "Hard": "All of your team members survive",
                 "Extreme": "All of your team members survive",
                 "Inferno": "All of your team members survive"
+              },
+              "rewards": {
+                "Normal": "Transit Voucher ×1",
+                "Hard": "Transit Voucher ×1",
+                "Extreme": "Transit Voucher ×1",
+                "Inferno": "Bulk Voucher ×2"
               }
             }
           ],
@@ -2233,6 +2907,64 @@
             "Hard": 18,
             "Extreme": 27,
             "Inferno": 36
+          },
+          "drops": {
+            "Normal": {
+              "items": [
+                {
+                  "name": "GSA Arsenal Handbook I",
+                  "icon": "Icon_item_12100048"
+                },
+                {
+                  "name": "GSA Arsenal Handbook II",
+                  "icon": "Icon_item_12100049"
+                },
+                {
+                  "name": "GSA Arsenal Handbook III",
+                  "icon": "Icon_item_12100050"
+                },
+                {
+                  "name": "GSA Arsenal Handbook IV",
+                  "icon": "Icon_item_12100051"
+                }
+              ]
+            },
+            "Hard": {
+              "items": [
+                {
+                  "name": "GSA Arsenal Handbook I",
+                  "icon": "Icon_item_12100048"
+                },
+                {
+                  "name": "GSA Arsenal Handbook II",
+                  "icon": "Icon_item_12100049"
+                },
+                {
+                  "name": "GSA Arsenal Handbook III",
+                  "icon": "Icon_item_12100050"
+                },
+                {
+                  "name": "GSA Arsenal Handbook IV",
+                  "icon": "Icon_item_12100051"
+                }
+              ]
+            },
+            "Extreme": {
+              "first": [
+                {
+                  "name": "Gutzman Annihilation Voucher ×3",
+                  "boss": "Gutzman"
+                }
+              ]
+            },
+            "Inferno": {
+              "first": [
+                {
+                  "name": "DLAF Deployment Permit ×1",
+                  "icon": "Icon_item_mecha_EliteShield"
+                }
+              ]
+            }
           }
         }
       ]
@@ -2351,6 +3083,12 @@
                 "Hard": "Win within 6 turns",
                 "Extreme": "Win within 6 turns",
                 "Inferno": "Win within 6 turns"
+              },
+              "rewards": {
+                "Normal": "Memory Fragment ×30",
+                "Hard": "Memory Fragment ×30",
+                "Extreme": "EN Container ×1",
+                "Inferno": "Bay Bits ×40"
               }
             },
             {
@@ -2360,6 +3098,12 @@
                 "Hard": "Blazetrudge's Detonation does not exceed 2 stacks",
                 "Extreme": "Blazetrudge's Detonation does not exceed 1 stack",
                 "Inferno": "Blazetrudge's Detonation does not exceed 1 stack"
+              },
+              "rewards": {
+                "Normal": "Solid Arashium ×20",
+                "Hard": "EN Container ×1",
+                "Extreme": "Solid Arashium ×20",
+                "Inferno": "Solid Arashium ×10"
               }
             },
             {
@@ -2369,6 +3113,12 @@
                 "Hard": "All of your team members survive",
                 "Extreme": "All of your team members survive",
                 "Inferno": "All of your team members survive"
+              },
+              "rewards": {
+                "Normal": "Solid Arashium ×35",
+                "Hard": "Solid Arashium ×35",
+                "Extreme": "Solid Arashium ×35",
+                "Inferno": "EN Container ×1"
               }
             }
           ],
@@ -2420,7 +3170,49 @@
                 "Inferno": "A titanium alloy eye patch covers Blazetrudge's left eye—purely for intimidation. The scar beneath marks his first clash with Grimbite, who breached the fire curtain to land a devastating strike, even before their ST battles began. Rather than opt for a sleek prosthetic, Blazetrudge chose this metal patch to strike fear into his foes. The eye patch has been reforged with new techniques, symbolizing new friendships."
               }
             }
-          ]
+          ],
+          "drops": {
+            "Normal": {
+              "items": [
+                {
+                  "name": "Special Task Force Bounty Medal I",
+                  "icon": "Icon_item_12100085"
+                },
+                {
+                  "name": "Special Task Force Bounty Medal II",
+                  "icon": "Icon_item_12100086"
+                }
+              ]
+            },
+            "Hard": {
+              "items": [
+                {
+                  "name": "Special Task Force Bounty Medal I",
+                  "icon": "Icon_item_12100085"
+                },
+                {
+                  "name": "Special Task Force Bounty Medal II",
+                  "icon": "Icon_item_12100086"
+                }
+              ]
+            },
+            "Extreme": {
+              "first": [
+                {
+                  "name": "Blazetrudge Annihilation Voucher ×2",
+                  "boss": "Blazetrudge"
+                }
+              ]
+            },
+            "Inferno": {
+              "first": [
+                {
+                  "name": "Solid Arashium ×30",
+                  "icon": "Icon_currency_002"
+                }
+              ]
+            }
+          }
         },
         {
           "slot": 2,
@@ -2551,6 +3343,12 @@
                 "Hard": "Win within 6 turns",
                 "Extreme": "Win within 6 turns",
                 "Inferno": "Win within 6 turns"
+              },
+              "rewards": {
+                "Normal": "Memory Fragment ×30",
+                "Hard": "Memory Fragment ×30",
+                "Extreme": "EN Container ×1",
+                "Inferno": "Bay Bits ×40"
               }
             },
             {
@@ -2560,6 +3358,12 @@
                 "Hard": "Skysweep triggers Emergency Arm Repair",
                 "Extreme": "Skysweep triggers Emergency Arm Repair",
                 "Inferno": "Skysweep triggers Emergency Arm Repair"
+              },
+              "rewards": {
+                "Normal": "Solid Arashium ×20",
+                "Hard": "EN Container ×1",
+                "Extreme": "Solid Arashium ×20",
+                "Inferno": "Solid Arashium ×10"
               }
             },
             {
@@ -2569,6 +3373,12 @@
                 "Hard": "All of your team members survive",
                 "Extreme": "All of your team members survive",
                 "Inferno": "All of your team members survive"
+              },
+              "rewards": {
+                "Normal": "Solid Arashium ×35",
+                "Hard": "Solid Arashium ×35",
+                "Extreme": "Solid Arashium ×35",
+                "Inferno": "EN Container ×1"
               }
             }
           ],
@@ -2610,7 +3420,49 @@
                 "Inferno": "This silver die is intricately designed, with a highly polished surface that presents an impressive sheen. Each face of the die is precisely engraved with deep black numbers, featuring a font that is both modern and sleek, contrasting sharply with the silver background for easy recognition. Everyone in the squad has one of these dice, and whenever a dispute arises, it's time for the dice to make an appearance. At that moment, fate will guide the squad's direction."
               }
             }
-          ]
+          ],
+          "drops": {
+            "Normal": {
+              "items": [
+                {
+                  "name": "Special Task Force Bounty Medal III",
+                  "icon": "Icon_item_12100087"
+                },
+                {
+                  "name": "Special Task Force Bounty Medal II",
+                  "icon": "Icon_item_12100086"
+                }
+              ]
+            },
+            "Hard": {
+              "items": [
+                {
+                  "name": "Special Task Force Bounty Medal III",
+                  "icon": "Icon_item_12100087"
+                },
+                {
+                  "name": "Special Task Force Bounty Medal II",
+                  "icon": "Icon_item_12100086"
+                }
+              ]
+            },
+            "Extreme": {
+              "first": [
+                {
+                  "name": "Skysweep Annihilation Voucher ×2",
+                  "boss": "Skysweep"
+                }
+              ]
+            },
+            "Inferno": {
+              "first": [
+                {
+                  "name": "Solid Arashium ×30",
+                  "icon": "Icon_currency_002"
+                }
+              ]
+            }
+          }
         },
         {
           "slot": 3,
@@ -2705,6 +3557,12 @@
                 "Hard": "Win within 6 turns",
                 "Extreme": "Win within 6 turns",
                 "Inferno": "Win within 6 turns"
+              },
+              "rewards": {
+                "Normal": "EN Container ×1",
+                "Hard": "EN Container ×1",
+                "Extreme": "EN Container ×1",
+                "Inferno": "Bay Bits ×40"
               }
             },
             {
@@ -2714,6 +3572,12 @@
                 "Hard": "Defeat no more than 4 enemy units, excluding Liliya",
                 "Extreme": "Defeat no more than 3 enemy units, excluding Liliya",
                 "Inferno": "Defeat no more than 3 enemy units, excluding Liliya"
+              },
+              "rewards": {
+                "Normal": "Memory Fragment ×30",
+                "Hard": "Solid Arashium ×20",
+                "Extreme": "Solid Arashium ×20",
+                "Inferno": "Solid Arashium ×10"
               }
             },
             {
@@ -2723,6 +3587,12 @@
                 "Hard": "All of your team members survive",
                 "Extreme": "All of your team members survive",
                 "Inferno": "All of your team members survive"
+              },
+              "rewards": {
+                "Normal": "Solid Arashium ×35",
+                "Hard": "Solid Arashium ×35",
+                "Extreme": "Solid Arashium ×35",
+                "Inferno": "EN Container ×1"
               }
             }
           ],
@@ -2773,7 +3643,49 @@
                 "Inferno": "A dual-sided pendant in green and black, crafted from premium metal with a flawless paint finish for lasting vibrancy. Liliya never parts with it on any mission, the first gift she received from Andrea. Now, she has more pendants, likely acquired after mingling in Milkhama, as her circle of friends has grown."
               }
             }
-          ]
+          ],
+          "drops": {
+            "Normal": {
+              "items": [
+                {
+                  "name": "Special Task Force Bounty Medal I",
+                  "icon": "Icon_item_12100085"
+                },
+                {
+                  "name": "Special Task Force Bounty Medal III",
+                  "icon": "Icon_item_12100087"
+                }
+              ]
+            },
+            "Hard": {
+              "items": [
+                {
+                  "name": "Special Task Force Bounty Medal I",
+                  "icon": "Icon_item_12100085"
+                },
+                {
+                  "name": "Special Task Force Bounty Medal III",
+                  "icon": "Icon_item_12100087"
+                }
+              ]
+            },
+            "Extreme": {
+              "first": [
+                {
+                  "name": "Liliya Annihilation Voucher ×2",
+                  "boss": "Liliya"
+                }
+              ]
+            },
+            "Inferno": {
+              "first": [
+                {
+                  "name": "Solid Arashium ×30",
+                  "icon": "Icon_currency_002"
+                }
+              ]
+            }
+          }
         },
         {
           "slot": 4,
@@ -2890,6 +3802,12 @@
                 "Hard": "All of your team members survive",
                 "Extreme": "All of your team members survive",
                 "Inferno": "All of your team members survive"
+              },
+              "rewards": {
+                "Normal": "Transit Voucher ×1",
+                "Hard": "Transit Voucher ×1",
+                "Extreme": "Transit Voucher ×1",
+                "Inferno": "Bulk Voucher ×2"
               }
             }
           ],
@@ -2911,6 +3829,64 @@
             "Hard": 18,
             "Extreme": 27,
             "Inferno": 36
+          },
+          "drops": {
+            "Normal": {
+              "items": [
+                {
+                  "name": "Special Task Force Arsenal Handbook I",
+                  "icon": "Icon_item_12100081"
+                },
+                {
+                  "name": "Special Task Force Arsenal Handbook II",
+                  "icon": "Icon_item_12100082"
+                },
+                {
+                  "name": "Special Task Force Arsenal Handbook III",
+                  "icon": "Icon_item_12100083"
+                },
+                {
+                  "name": "Special Task Force Arsenal Handbook IV",
+                  "icon": "Icon_item_12100084"
+                }
+              ]
+            },
+            "Hard": {
+              "items": [
+                {
+                  "name": "Special Task Force Arsenal Handbook I",
+                  "icon": "Icon_item_12100081"
+                },
+                {
+                  "name": "Special Task Force Arsenal Handbook II",
+                  "icon": "Icon_item_12100082"
+                },
+                {
+                  "name": "Special Task Force Arsenal Handbook III",
+                  "icon": "Icon_item_12100083"
+                },
+                {
+                  "name": "Special Task Force Arsenal Handbook IV",
+                  "icon": "Icon_item_12100084"
+                }
+              ]
+            },
+            "Extreme": {
+              "first": [
+                {
+                  "name": "Heinz Annihilation Voucher ×3",
+                  "boss": "Heinz"
+                }
+              ]
+            },
+            "Inferno": {
+              "first": [
+                {
+                  "name": "SSM Deployment Permit ×1",
+                  "icon": "Icon_item_mecha_EliteShield"
+                }
+              ]
+            }
           }
         }
       ]
@@ -3076,6 +4052,12 @@
                 "Hard": "Win within 6 turns",
                 "Extreme": "Win within 6 turns",
                 "Inferno": "Win within 6 turns"
+              },
+              "rewards": {
+                "Normal": "Memory Fragment ×30",
+                "Hard": "Memory Fragment ×30",
+                "Extreme": "EN Container ×1",
+                "Inferno": "Bay Bits ×40"
               }
             },
             {
@@ -3085,6 +4067,12 @@
                 "Hard": "Resentment never reaches 8 stacks",
                 "Extreme": "Resentment never reaches 7 stacks",
                 "Inferno": "Resentment never reaches 6 stacks"
+              },
+              "rewards": {
+                "Normal": "Solid Arashium ×20",
+                "Hard": "EN Container ×1",
+                "Extreme": "Solid Arashium ×20",
+                "Inferno": "Solid Arashium ×10"
               }
             },
             {
@@ -3094,6 +4082,12 @@
                 "Hard": "All of your team members survive",
                 "Extreme": "All of your team members survive",
                 "Inferno": "All of your team members survive"
+              },
+              "rewards": {
+                "Normal": "Solid Arashium ×35",
+                "Hard": "Solid Arashium ×35",
+                "Extreme": "Solid Arashium ×35",
+                "Inferno": "EN Container ×1"
               }
             }
           ],
@@ -3141,7 +4135,49 @@
                 "Inferno": "Diameter of 27 mm, thickness of 1.8 mm, with a circle of anti-counterfeit slanted edge teeth at intervals of varying lengths on the outer rim. The inner ring surface is etched with a pattern of flowers and the ocean. Undoubtedly, this is a commemorative gold coin, a New Year special edition issued by Yongchang Securities Co., with a relatively limited inventory load in the market. After being persuaded by the manager to invest all his assets in financial management, Pip obtained a VIP seat at Yongchang Securities Co., and this gold coin is an additional gift. Pip enjoys using coin flips to clear his mind—when you're dissatisfied with the result of the coin flip, it means you already know what you truly want to do."
               }
             }
-          ]
+          ],
+          "drops": {
+            "Normal": {
+              "items": [
+                {
+                  "name": "Nightingale Bounty Medal I",
+                  "icon": "Icon_item_12100031"
+                },
+                {
+                  "name": "Nightingale Bounty Medal II",
+                  "icon": "Icon_item_12100032"
+                }
+              ]
+            },
+            "Hard": {
+              "items": [
+                {
+                  "name": "Nightingale Bounty Medal I",
+                  "icon": "Icon_item_12100031"
+                },
+                {
+                  "name": "Nightingale Bounty Medal II",
+                  "icon": "Icon_item_12100032"
+                }
+              ]
+            },
+            "Extreme": {
+              "first": [
+                {
+                  "name": "Pip Annihilation Voucher ×2",
+                  "boss": "Pip"
+                }
+              ]
+            },
+            "Inferno": {
+              "first": [
+                {
+                  "name": "Solid Arashium ×30",
+                  "icon": "Icon_currency_002"
+                }
+              ]
+            }
+          }
         },
         {
           "slot": 2,
@@ -3289,6 +4325,12 @@
                 "Hard": "Win within 6 turns",
                 "Extreme": "Win within 6 turns",
                 "Inferno": "Win within 6 turns"
+              },
+              "rewards": {
+                "Normal": "Memory Fragment ×30",
+                "Hard": "Memory Fragment ×30",
+                "Extreme": "EN Container ×1",
+                "Inferno": "Bay Bits ×40"
               }
             },
             {
@@ -3298,6 +4340,12 @@
                 "Hard": "Michaela doesn't trigger Maelstrom",
                 "Extreme": "Michaela doesn't trigger Maelstrom",
                 "Inferno": "Michaela doesn't trigger Maelstrom"
+              },
+              "rewards": {
+                "Normal": "Solid Arashium ×20",
+                "Hard": "EN Container ×1",
+                "Extreme": "Solid Arashium ×20",
+                "Inferno": "Solid Arashium ×10"
               }
             },
             {
@@ -3307,6 +4355,12 @@
                 "Hard": "All allied units and Superconductive Pochy survive",
                 "Extreme": "All allied units and Superconductive Pochy survive",
                 "Inferno": "All allied units and Superconductive Pochy survive"
+              },
+              "rewards": {
+                "Normal": "Solid Arashium ×35",
+                "Hard": "Solid Arashium ×35",
+                "Extreme": "Solid Arashium ×35",
+                "Inferno": "EN Container ×1"
               }
             }
           ],
@@ -3377,7 +4431,49 @@
                 }
               ]
             }
-          ]
+          ],
+          "drops": {
+            "Normal": {
+              "items": [
+                {
+                  "name": "Nightingale Bounty Medal III",
+                  "icon": "Icon_item_12100033"
+                },
+                {
+                  "name": "Nightingale Bounty Medal II",
+                  "icon": "Icon_item_12100032"
+                }
+              ]
+            },
+            "Hard": {
+              "items": [
+                {
+                  "name": "Nightingale Bounty Medal III",
+                  "icon": "Icon_item_12100033"
+                },
+                {
+                  "name": "Nightingale Bounty Medal II",
+                  "icon": "Icon_item_12100032"
+                }
+              ]
+            },
+            "Extreme": {
+              "first": [
+                {
+                  "name": "Michaela Annihilation Voucher ×2",
+                  "boss": "Michaela"
+                }
+              ]
+            },
+            "Inferno": {
+              "first": [
+                {
+                  "name": "Solid Arashium ×30",
+                  "icon": "Icon_currency_002"
+                }
+              ]
+            }
+          }
         },
         {
           "slot": 3,
@@ -3495,6 +4591,12 @@
                 "Hard": "Win within 6 turns",
                 "Extreme": "Win within 6 turns",
                 "Inferno": "Win within 6 turns"
+              },
+              "rewards": {
+                "Normal": "EN Container ×1",
+                "Hard": "EN Container ×1",
+                "Extreme": "EN Container ×1",
+                "Inferno": "Bay Bits ×40"
               }
             },
             {
@@ -3504,6 +4606,12 @@
                 "Hard": "White Flame enters Mist terrain no more than 2 times",
                 "Extreme": "White Flame enters Mist terrain no more than 2 times",
                 "Inferno": "White Flame enters Mist terrain no more than 2 times"
+              },
+              "rewards": {
+                "Normal": "Memory Fragment ×30",
+                "Hard": "Solid Arashium ×20",
+                "Extreme": "Solid Arashium ×20",
+                "Inferno": "Solid Arashium ×10"
               }
             },
             {
@@ -3513,6 +4621,12 @@
                 "Hard": "All of your team members survive",
                 "Extreme": "All of your team members survive",
                 "Inferno": "All of your team members survive"
+              },
+              "rewards": {
+                "Normal": "Solid Arashium ×35",
+                "Hard": "Solid Arashium ×35",
+                "Extreme": "Solid Arashium ×35",
+                "Inferno": "EN Container ×1"
               }
             }
           ],
@@ -3554,7 +4668,49 @@
                 "Inferno": "A low-key black umbrella, devoid of any patterns. Only the rust on the contact surface between the ribs and the waterproof fabric reveals that this umbrella has been around for years. It was a gift from the former enforcer to White Flame—when the young White Flame was stunned by the brutality witnessed at the enforcement scene, the former enforcer opened this umbrella for her, shielding her from the blood rain and cries. Later, she held this umbrella and followed the former enforcer to the organization, starting a new chapter in her life. Now, she rarely finds herself in need of an umbrella, but she will always remember the shadow that brought her a sense of security."
               }
             }
-          ]
+          ],
+          "drops": {
+            "Normal": {
+              "items": [
+                {
+                  "name": "Nightingale Bounty Medal I",
+                  "icon": "Icon_item_12100031"
+                },
+                {
+                  "name": "Nightingale Bounty Medal III",
+                  "icon": "Icon_item_12100033"
+                }
+              ]
+            },
+            "Hard": {
+              "items": [
+                {
+                  "name": "Nightingale Bounty Medal I",
+                  "icon": "Icon_item_12100031"
+                },
+                {
+                  "name": "Nightingale Bounty Medal III",
+                  "icon": "Icon_item_12100033"
+                }
+              ]
+            },
+            "Extreme": {
+              "first": [
+                {
+                  "name": "White Flame Annihilation Voucher ×2",
+                  "boss": "White Flame"
+                }
+              ]
+            },
+            "Inferno": {
+              "first": [
+                {
+                  "name": "Solid Arashium ×30",
+                  "icon": "Icon_currency_002"
+                }
+              ]
+            }
+          }
         },
         {
           "slot": 4,
@@ -3675,6 +4831,12 @@
                 "Hard": "All of your team members survive",
                 "Extreme": "All of your team members survive",
                 "Inferno": "All of your team members survive"
+              },
+              "rewards": {
+                "Normal": "Transit Voucher ×1",
+                "Hard": "Transit Voucher ×1",
+                "Extreme": "Transit Voucher ×1",
+                "Inferno": "Bulk Voucher ×2"
               }
             }
           ],
@@ -3696,6 +4858,64 @@
             "Hard": 18,
             "Extreme": 27,
             "Inferno": 36
+          },
+          "drops": {
+            "Normal": {
+              "items": [
+                {
+                  "name": "Nightingale Arsenal Handbook I",
+                  "icon": "Icon_item_12100028"
+                },
+                {
+                  "name": "Nightingale Arsenal Handbook II",
+                  "icon": "Icon_item_12100029"
+                },
+                {
+                  "name": "Nightingale Arsenal Handbook III",
+                  "icon": "Icon_item_12100030"
+                },
+                {
+                  "name": "Nightingale Arsenal Handbook IV",
+                  "icon": "Icon_item_12100073"
+                }
+              ]
+            },
+            "Hard": {
+              "items": [
+                {
+                  "name": "Nightingale Arsenal Handbook I",
+                  "icon": "Icon_item_12100028"
+                },
+                {
+                  "name": "Nightingale Arsenal Handbook II",
+                  "icon": "Icon_item_12100029"
+                },
+                {
+                  "name": "Nightingale Arsenal Handbook III",
+                  "icon": "Icon_item_12100030"
+                },
+                {
+                  "name": "Nightingale Arsenal Handbook IV",
+                  "icon": "Icon_item_12100073"
+                }
+              ]
+            },
+            "Extreme": {
+              "first": [
+                {
+                  "name": "Kaylen Annihilation Voucher ×3",
+                  "boss": "Kaylen"
+                }
+              ]
+            },
+            "Inferno": {
+              "first": [
+                {
+                  "name": "TF Mercenary Deployment Permit ×1",
+                  "icon": "Icon_item_mecha_EliteShield"
+                }
+              ]
+            }
           }
         }
       ]
@@ -3934,6 +5154,12 @@
                 "Hard": "Win within 6 turns",
                 "Extreme": "Win within 6 turns",
                 "Inferno": "Win within 6 turns"
+              },
+              "rewards": {
+                "Normal": "Assault Weapon Essence VI ×40",
+                "Hard": "M - Arashi Substrate V ×120",
+                "Extreme": "Melee Weapon Essence VI ×40",
+                "Inferno": "Bay Bits ×40"
               }
             },
             {
@@ -3943,6 +5169,12 @@
                 "Hard": "Douglas uses [Electric Surge Terrain] no more than once",
                 "Extreme": "Douglas doesn't use [Electric Surge Terrain]",
                 "Inferno": "Douglas doesn't use [Electric Surge Terrain]"
+              },
+              "rewards": {
+                "Normal": "Ranged Weapon Essence VI ×40",
+                "Hard": "Ranged Weapon Essence VI ×40",
+                "Extreme": "Solid Arashium ×20",
+                "Inferno": "Solid Arashium ×10"
               }
             },
             {
@@ -3952,6 +5184,12 @@
                 "Hard": "All of your team members survive",
                 "Extreme": "All of your team members survive",
                 "Inferno": "All of your team members survive"
+              },
+              "rewards": {
+                "Normal": "Solid Arashium ×35",
+                "Hard": "Solid Arashium ×35",
+                "Extreme": "Solid Arashium ×35",
+                "Inferno": "EN Container ×1"
               }
             }
           ],
@@ -4008,7 +5246,49 @@
                 "Inferno": "A black shell, an old model, with gaps filled with yellow earth mixed with bloodstains. Douglas accidentally found this thing among a pile of scrap metal, realizing later that it was a trophy he picked up after one of his victories. The original owner was an assassin sent by a big boss from outside the island to hunt him down. The man traveled across the ocean from the continent to Milkhama, only to die in Douglas's trap. Douglas found some enjoyment in their confrontation, so he kept this item as a memento."
               }
             }
-          ]
+          ],
+          "drops": {
+            "Normal": {
+              "items": [
+                {
+                  "name": "Iguana Bounty Medal I",
+                  "icon": "Icon_item_12100063"
+                },
+                {
+                  "name": "Iguana Bounty Medal II",
+                  "icon": "Icon_item_12100064"
+                }
+              ]
+            },
+            "Hard": {
+              "items": [
+                {
+                  "name": "Iguana Bounty Medal I",
+                  "icon": "Icon_item_12100063"
+                },
+                {
+                  "name": "Iguana Bounty Medal II",
+                  "icon": "Icon_item_12100064"
+                }
+              ]
+            },
+            "Extreme": {
+              "first": [
+                {
+                  "name": "Douglas Annihilation Voucher ×2",
+                  "boss": "Douglas"
+                }
+              ]
+            },
+            "Inferno": {
+              "first": [
+                {
+                  "name": "Solid Arashium ×30",
+                  "icon": "Icon_currency_002"
+                }
+              ]
+            }
+          }
         },
         {
           "slot": 2,
@@ -4144,6 +5424,12 @@
                 "Hard": "Win within 6 turns",
                 "Extreme": "Win within 6 turns",
                 "Inferno": "Win within 6 turns"
+              },
+              "rewards": {
+                "Normal": "Shield Weapon Essence VI ×40",
+                "Hard": "L - Arashi Substrate V ×120",
+                "Extreme": "Shield Weapon Essence VI ×40",
+                "Inferno": "Bay Bits ×40"
               }
             },
             {
@@ -4153,6 +5439,12 @@
                 "Hard": "Collapse Damage never reaches 5 stacks",
                 "Extreme": "Collapse Damage never reaches 5 stacks",
                 "Inferno": "Collapse Damage never reaches 5 stacks"
+              },
+              "rewards": {
+                "Normal": "Tactical Weapon Essence VI ×40",
+                "Hard": "Melee Weapon Essence VI ×40",
+                "Extreme": "Solid Arashium ×20",
+                "Inferno": "Solid Arashium ×10"
               }
             },
             {
@@ -4162,6 +5454,12 @@
                 "Hard": "All of your team members survive",
                 "Extreme": "All of your team members survive",
                 "Inferno": "All of your team members survive"
+              },
+              "rewards": {
+                "Normal": "Solid Arashium ×35",
+                "Hard": "Solid Arashium ×35",
+                "Extreme": "Solid Arashium ×35",
+                "Inferno": "EN Container ×1"
               }
             }
           ],
@@ -4244,7 +5542,49 @@
                 "Inferno": "A very small blade, thin and lightweight, slightly curved to fit the contours of the human body. The blade features a double-sided micro-serrated special design, capable of delivering unexpected cutting attacks to the enemy in close combat. Georgia personally participated in the design of this blade, making it her secret weapon. However, its usage scenarios are limited, as few can push Georgia into extreme situations."
               }
             }
-          ]
+          ],
+          "drops": {
+            "Normal": {
+              "items": [
+                {
+                  "name": "Iguana Bounty Medal II",
+                  "icon": "Icon_item_12100064"
+                },
+                {
+                  "name": "Iguana Bounty Medal III",
+                  "icon": "Icon_item_12100065"
+                }
+              ]
+            },
+            "Hard": {
+              "items": [
+                {
+                  "name": "Iguana Bounty Medal II",
+                  "icon": "Icon_item_12100064"
+                },
+                {
+                  "name": "Iguana Bounty Medal III",
+                  "icon": "Icon_item_12100065"
+                }
+              ]
+            },
+            "Extreme": {
+              "first": [
+                {
+                  "name": "Georgia Annihilation Voucher ×2",
+                  "boss": "Georgia"
+                }
+              ]
+            },
+            "Inferno": {
+              "first": [
+                {
+                  "name": "Solid Arashium ×30",
+                  "icon": "Icon_currency_002"
+                }
+              ]
+            }
+          }
         },
         {
           "slot": 3,
@@ -4386,6 +5726,12 @@
                 "Hard": "Win within 6 turns",
                 "Extreme": "Win within 6 turns",
                 "Inferno": "Win within 6 turns"
+              },
+              "rewards": {
+                "Normal": "EN Container ×1",
+                "Hard": "H - Arashi Substrate V ×120",
+                "Extreme": "EN Container ×1",
+                "Inferno": "Bay Bits ×40"
               }
             },
             {
@@ -4395,6 +5741,12 @@
                 "Hard": "Defeat no more than 4 enemy units upon victory",
                 "Extreme": "Defeat no more than 2 enemy units upon victory",
                 "Inferno": "Defeat no more than 2 enemy units upon victory"
+              },
+              "rewards": {
+                "Normal": "Tactical Weapon Essence VI ×40",
+                "Hard": "Assault Weapon Essence VI ×40",
+                "Extreme": "Solid Arashium ×20",
+                "Inferno": "Solid Arashium ×10"
               }
             },
             {
@@ -4404,6 +5756,12 @@
                 "Hard": "All of your team members survive",
                 "Extreme": "All of your team members survive",
                 "Inferno": "All of your team members survive"
+              },
+              "rewards": {
+                "Normal": "Solid Arashium ×35",
+                "Hard": "Solid Arashium ×35",
+                "Extreme": "Solid Arashium ×35",
+                "Inferno": "EN Container ×1"
               }
             }
           ],
@@ -4451,7 +5809,49 @@
                 "Inferno": "A small blue box with a matte metallic body, featuring rounded corners and a transparent retro cassette compartment. Such antiques are rare to find. Rena happened to purchase it on the black market, where the seller considered it a collectible, but Rena used machinist technology to recommission it. Besides replacing all the internal components, Rena also inserted an extra high-fidelity sound Chip, striving to restore the tape's original sound quality. But this little thing is prone to falling on the battlefield, and Rena is urgently writing a positioning system for it."
               }
             }
-          ]
+          ],
+          "drops": {
+            "Normal": {
+              "items": [
+                {
+                  "name": "Iguana Bounty Medal I",
+                  "icon": "Icon_item_12100063"
+                },
+                {
+                  "name": "Iguana Bounty Medal III",
+                  "icon": "Icon_item_12100065"
+                }
+              ]
+            },
+            "Hard": {
+              "items": [
+                {
+                  "name": "Iguana Bounty Medal I",
+                  "icon": "Icon_item_12100063"
+                },
+                {
+                  "name": "Iguana Bounty Medal III",
+                  "icon": "Icon_item_12100065"
+                }
+              ]
+            },
+            "Extreme": {
+              "first": [
+                {
+                  "name": "Rena Annihilation Voucher ×2",
+                  "boss": "Rena"
+                }
+              ]
+            },
+            "Inferno": {
+              "first": [
+                {
+                  "name": "Solid Arashium ×30",
+                  "icon": "Icon_currency_002"
+                }
+              ]
+            }
+          }
         },
         {
           "slot": 4,
@@ -4597,6 +5997,12 @@
                 "Hard": "All of your team members survive",
                 "Extreme": "All of your team members survive",
                 "Inferno": "All of your team members survive"
+              },
+              "rewards": {
+                "Normal": "Transit Voucher ×1",
+                "Hard": "Transit Voucher ×1",
+                "Extreme": "Transit Voucher ×1",
+                "Inferno": "Bulk Voucher ×2"
               }
             }
           ],
@@ -4622,6 +6028,56 @@
             "Hard": 18,
             "Extreme": 27,
             "Inferno": 36
+          },
+          "drops": {
+            "Normal": {
+              "items": [
+                {
+                  "name": "Iguana Arsenal Handbook I",
+                  "icon": "Icon_item_12100059"
+                },
+                {
+                  "name": "Iguana Arsenal Handbook II",
+                  "icon": "Icon_item_12100060"
+                },
+                {
+                  "name": "Iguana Arsenal Handbook III",
+                  "icon": "Icon_item_12100061"
+                }
+              ]
+            },
+            "Hard": {
+              "items": [
+                {
+                  "name": "Iguana Arsenal Handbook I",
+                  "icon": "Icon_item_12100059"
+                },
+                {
+                  "name": "Iguana Arsenal Handbook II",
+                  "icon": "Icon_item_12100060"
+                },
+                {
+                  "name": "Iguana Arsenal Handbook III",
+                  "icon": "Icon_item_12100061"
+                }
+              ]
+            },
+            "Extreme": {
+              "first": [
+                {
+                  "name": "Gutzman Annihilation Voucher ×3",
+                  "boss": "Gutzman"
+                }
+              ]
+            },
+            "Inferno": {
+              "first": [
+                {
+                  "name": "NDF Deployment Permit ×1",
+                  "icon": "Icon_item_mecha_EliteShield"
+                }
+              ]
+            }
           }
         }
       ]
@@ -4791,6 +6247,12 @@
                 "Hard": "Win within 6 turns",
                 "Extreme": "Win within 6 turns",
                 "Inferno": "Win within 6 turns"
+              },
+              "rewards": {
+                "Normal": "Shield Weapon Essence IV ×40",
+                "Hard": "EN Container ×1",
+                "Extreme": "EN Container ×1",
+                "Inferno": "Bay Bits ×40"
               }
             },
             {
@@ -4800,6 +6262,12 @@
                 "Hard": "Destroy Meritus's Arm 4 times during your turns",
                 "Extreme": "Destroy Meritus's Arm 5 times during your turns",
                 "Inferno": "Destroy Meritus's Arm 6 times during your turns"
+              },
+              "rewards": {
+                "Normal": "Ranged Weapon Essence IV ×40",
+                "Hard": "Assault Weapon Essence IV ×40",
+                "Extreme": "Solid Arashium ×20",
+                "Inferno": "Solid Arashium ×10"
               }
             },
             {
@@ -4809,6 +6277,12 @@
                 "Hard": "All of your team members survive",
                 "Extreme": "All of your team members survive",
                 "Inferno": "All of your team members survive"
+              },
+              "rewards": {
+                "Normal": "Solid Arashium ×35",
+                "Hard": "Solid Arashium ×35",
+                "Extreme": "Solid Arashium ×35",
+                "Inferno": "EN Container ×1"
               }
             }
           ],
@@ -4850,7 +6324,49 @@
                 "Inferno": "The buckle's shell is brass, scarred with years of use, each scratch a story. The deeper ones, Meritus can even name where they came from. They say it's one of his trophies, kept not for show but because it fits him so well, and so he never saw a reason to replace it. In one great battle he was caught off guard—a bullet nearly tore through his gut. It would have, too, if not for that buckle taking the worst of the blow. Any other man would have retired the thing with honor, but Meritus had it mended by the finest smiths and strapped it back on. \"Lady Luck watches over me,\" he swears, and he believes it. To him, that battered buckle isn't just brass—it's proof he's still standing."
               }
             }
-          ]
+          ],
+          "drops": {
+            "Normal": {
+              "items": [
+                {
+                  "name": "Monolith Bounty Medal I",
+                  "icon": "Icon_item_12100052"
+                },
+                {
+                  "name": "Monolith Bounty Medal II",
+                  "icon": "Icon_item_12100053"
+                }
+              ]
+            },
+            "Hard": {
+              "items": [
+                {
+                  "name": "Monolith Bounty Medal I",
+                  "icon": "Icon_item_12100052"
+                },
+                {
+                  "name": "Monolith Bounty Medal II",
+                  "icon": "Icon_item_12100053"
+                }
+              ]
+            },
+            "Extreme": {
+              "first": [
+                {
+                  "name": "Meritus Annihilation Voucher ×2",
+                  "boss": "Meritus"
+                }
+              ]
+            },
+            "Inferno": {
+              "first": [
+                {
+                  "name": "Solid Arashium ×30",
+                  "icon": "Icon_currency_002"
+                }
+              ]
+            }
+          }
         },
         {
           "slot": 2,
@@ -4978,6 +6494,12 @@
                 "Hard": "Win within 6 turns",
                 "Extreme": "Win within 6 turns",
                 "Inferno": "Win within 6 turns"
+              },
+              "rewards": {
+                "Normal": "Melee Weapon Essence IV ×40",
+                "Hard": "EN Container ×1",
+                "Extreme": "EN Container ×1",
+                "Inferno": "Bay Bits ×40"
               }
             },
             {
@@ -4987,6 +6509,12 @@
                 "Hard": "Egbert's DMG Reduction never exceeds 3 stacks",
                 "Extreme": "Egbert's DMG Reduction never exceeds 2 stacks",
                 "Inferno": "Egbert's DMG Reduction never exceeds 2 stacks"
+              },
+              "rewards": {
+                "Normal": "Assault Weapon Essence IV ×40",
+                "Hard": "Tactical Weapon Essence IV ×40",
+                "Extreme": "Solid Arashium ×20",
+                "Inferno": "Solid Arashium ×10"
               }
             },
             {
@@ -4996,6 +6524,12 @@
                 "Hard": "All of your team members survive",
                 "Extreme": "All of your team members survive",
                 "Inferno": "All of your team members survive"
+              },
+              "rewards": {
+                "Normal": "Solid Arashium ×35",
+                "Hard": "Solid Arashium ×35",
+                "Extreme": "Solid Arashium ×35",
+                "Inferno": "EN Container ×1"
               }
             }
           ],
@@ -5037,7 +6571,49 @@
                 "Inferno": "It's a small, white tool, built for grinding teeth, no charge or battery to fail when it's needed most. Awkward to use, sure, but Egbert's long since mastered it—he can hone his canines quick and sharp. His companions don't understand the habit, but Egbert knows the truth: when a man is stripped of every weapon, teeth can be the last line of defense. Those fangs have drawn blood before, though sometimes his own at mealtimes... Still, he keeps at it, searching for a way to wield them without turning a quiet dinner into a trip to the emergency room."
               }
             }
-          ]
+          ],
+          "drops": {
+            "Normal": {
+              "items": [
+                {
+                  "name": "Monolith Bounty Medal II",
+                  "icon": "Icon_item_12100053"
+                },
+                {
+                  "name": "Monolith Bounty Medal III",
+                  "icon": "Icon_item_12100054"
+                }
+              ]
+            },
+            "Hard": {
+              "items": [
+                {
+                  "name": "Monolith Bounty Medal II",
+                  "icon": "Icon_item_12100053"
+                },
+                {
+                  "name": "Monolith Bounty Medal III",
+                  "icon": "Icon_item_12100054"
+                }
+              ]
+            },
+            "Extreme": {
+              "first": [
+                {
+                  "name": "Egbert Annihilation Voucher ×2",
+                  "boss": "Egbert"
+                }
+              ]
+            },
+            "Inferno": {
+              "first": [
+                {
+                  "name": "Solid Arashium ×30",
+                  "icon": "Icon_currency_002"
+                }
+              ]
+            }
+          }
         },
         {
           "slot": 3,
@@ -5180,6 +6756,12 @@
                 "Hard": "Win within 6 turns",
                 "Extreme": "Win within 6 turns",
                 "Inferno": "Win within 6 turns"
+              },
+              "rewards": {
+                "Normal": "EN Container ×1",
+                "Hard": "EN Container ×1",
+                "Extreme": "EN Container ×1",
+                "Inferno": "Bay Bits ×40"
               }
             },
             {
@@ -5189,6 +6771,12 @@
                 "Hard": "At the end of your turn, Eller's [Weakness Immunity] never exceeds 1 stack",
                 "Extreme": "At the end of your turn, Eller never has [Weakness Immunity]",
                 "Inferno": "At the end of your turn, Eller never has [Weakness Immunity]"
+              },
+              "rewards": {
+                "Normal": "Tactical Weapon Essence IV ×40",
+                "Hard": "Melee Weapon Essence IV ×40",
+                "Extreme": "Solid Arashium ×20",
+                "Inferno": "Solid Arashium ×10"
               }
             },
             {
@@ -5198,6 +6786,12 @@
                 "Hard": "All of your team members survive",
                 "Extreme": "All of your team members survive",
                 "Inferno": "All of your team members survive"
+              },
+              "rewards": {
+                "Normal": "Solid Arashium ×35",
+                "Hard": "Solid Arashium ×35",
+                "Extreme": "Solid Arashium ×35",
+                "Inferno": "EN Container ×1"
               }
             }
           ],
@@ -5257,7 +6851,49 @@
                 "Inferno": "The box is made of plain wood, light but sturdy, no bigger than two palms, cut into a simple rectangle. Its sides are plastered with scraps of old advertisements, worn and peeling. Eller says it came from her grandmother—once just a sewing kit, now pressed into service to hold her few personal things. And even those few are more than most mercs carry, for most live with nothing but the gear on their backs. Once, in front of the others, she drew out a key from the box and claimed it opened a room filled with treasure. Since then, the crew can't help but wonder what else she hides in that battered chest. Out here, even a small box can carry the weight of legend."
               }
             }
-          ]
+          ],
+          "drops": {
+            "Normal": {
+              "items": [
+                {
+                  "name": "Monolith Bounty Medal III",
+                  "icon": "Icon_item_12100054"
+                },
+                {
+                  "name": "Monolith Bounty Medal I",
+                  "icon": "Icon_item_12100052"
+                }
+              ]
+            },
+            "Hard": {
+              "items": [
+                {
+                  "name": "Monolith Bounty Medal III",
+                  "icon": "Icon_item_12100054"
+                },
+                {
+                  "name": "Monolith Bounty Medal I",
+                  "icon": "Icon_item_12100052"
+                }
+              ]
+            },
+            "Extreme": {
+              "first": [
+                {
+                  "name": "Eller Annihilation Voucher ×2",
+                  "boss": "Eller"
+                }
+              ]
+            },
+            "Inferno": {
+              "first": [
+                {
+                  "name": "Solid Arashium ×30",
+                  "icon": "Icon_currency_002"
+                }
+              ]
+            }
+          }
         },
         {
           "slot": 4,
@@ -5472,6 +7108,12 @@
                 "Hard": "All of your team members survive",
                 "Extreme": "All of your team members survive",
                 "Inferno": "All of your team members survive"
+              },
+              "rewards": {
+                "Normal": "Transit Voucher ×1",
+                "Hard": "Transit Voucher ×1",
+                "Extreme": "Transit Voucher ×1",
+                "Inferno": "Bulk Voucher ×2"
               }
             }
           ],
@@ -5493,6 +7135,63 @@
             "Hard": 18,
             "Extreme": 27,
             "Inferno": 36
+          },
+          "drops": {
+            "Normal": {
+              "items": [
+                {
+                  "name": "Monolith Arsenal Handbook I",
+                  "icon": "Icon_item_12100048"
+                },
+                {
+                  "name": "Monolith Arsenal Handbook II",
+                  "icon": "Icon_item_12100049"
+                },
+                {
+                  "name": "Monolith Arsenal Handbook III",
+                  "icon": "Icon_item_12100050"
+                },
+                {
+                  "name": "Monolith Arsenal Handbook IV",
+                  "icon": "Icon_item_12100051"
+                }
+              ]
+            },
+            "Hard": {
+              "items": [
+                {
+                  "name": "Monolith Arsenal Handbook I",
+                  "icon": "Icon_item_12100048"
+                },
+                {
+                  "name": "Monolith Arsenal Handbook II",
+                  "icon": "Icon_item_12100049"
+                },
+                {
+                  "name": "Monolith Arsenal Handbook III",
+                  "icon": "Icon_item_12100050"
+                },
+                {
+                  "name": "Monolith Arsenal Handbook IV",
+                  "icon": "Icon_item_12100051"
+                }
+              ]
+            },
+            "Extreme": {
+              "first": [
+                {
+                  "name": "Ridgewald Annihilation Voucher ×3",
+                  "boss": "Ridgewald"
+                }
+              ]
+            },
+            "Inferno": {
+              "first": [
+                {
+                  "name": "ST Emblem: Huck, the Clown King ×1"
+                }
+              ]
+            }
           }
         }
       ]
@@ -5605,6 +7304,12 @@
                 "Hard": "Win within 6 turns",
                 "Extreme": "Win within 6 turns",
                 "Inferno": "Win within 6 turns"
+              },
+              "rewards": {
+                "Normal": "Raider Cube IV ×4",
+                "Hard": "Tactician Cube IV ×4",
+                "Extreme": "Solid Arashium ×20",
+                "Inferno": "Bay Bits ×40"
               }
             },
             {
@@ -5614,6 +7319,12 @@
                 "Hard": "No more than 3 of your units have parts destroyed",
                 "Extreme": "No more than 3 of your units have parts destroyed",
                 "Inferno": "No more than 2 of your units have parts destroyed"
+              },
+              "rewards": {
+                "Normal": "Sniper Cube IV ×4",
+                "Hard": "EN Container ×1",
+                "Extreme": "EN Container ×1",
+                "Inferno": "Solid Arashium ×10"
               }
             },
             {
@@ -5623,6 +7334,12 @@
                 "Hard": "All of your team members survive",
                 "Extreme": "All of your team members survive",
                 "Inferno": "All of your team members survive"
+              },
+              "rewards": {
+                "Normal": "Solid Arashium ×35",
+                "Hard": "Solid Arashium ×35",
+                "Extreme": "Solid Arashium ×35",
+                "Inferno": "EN Container ×1"
               }
             }
           ],
@@ -5664,7 +7381,49 @@
                 "Inferno": "This silver die is intricately designed, with a highly polished surface that presents an impressive sheen. Each face of the die is precisely engraved with deep black numbers, featuring a font that is both modern and sleek, contrasting sharply with the silver background for easy recognition. Everyone in the squad has one of these dice, and whenever a dispute arises, it's time for the dice to make an appearance. At that moment, fate will guide the squad's direction."
               }
             }
-          ]
+          ],
+          "drops": {
+            "Normal": {
+              "items": [
+                {
+                  "name": "DL Bounty Medal I",
+                  "icon": "Icon_item_12100041"
+                },
+                {
+                  "name": "DL Bounty Medal II",
+                  "icon": "Icon_item_12100042"
+                }
+              ]
+            },
+            "Hard": {
+              "items": [
+                {
+                  "name": "DL Bounty Medal I",
+                  "icon": "Icon_item_12100041"
+                },
+                {
+                  "name": "DL Bounty Medal II",
+                  "icon": "Icon_item_12100042"
+                }
+              ]
+            },
+            "Extreme": {
+              "first": [
+                {
+                  "name": "Skysweep Annihilation Voucher ×2",
+                  "boss": "Skysweep"
+                }
+              ]
+            },
+            "Inferno": {
+              "first": [
+                {
+                  "name": "Solid Arashium ×30",
+                  "icon": "Icon_currency_002"
+                }
+              ]
+            }
+          }
         },
         {
           "slot": 2,
@@ -5780,6 +7539,12 @@
                 "Hard": "Win within 6 turns",
                 "Extreme": "Win within 6 turns",
                 "Inferno": "Win within 6 turns"
+              },
+              "rewards": {
+                "Normal": "Fighter Cube IV ×4",
+                "Hard": "Machinist Cube IV ×4",
+                "Extreme": "Solid Arashium ×20",
+                "Inferno": "Bay Bits ×40"
               }
             },
             {
@@ -5789,6 +7554,12 @@
                 "Hard": "The boss closes no more than 2 doors",
                 "Extreme": "The boss closes no more than 1 door",
                 "Inferno": "The boss closes no more than 1 door"
+              },
+              "rewards": {
+                "Normal": "Guardian Cube IV ×4",
+                "Hard": "EN Container ×1",
+                "Extreme": "EN Container ×1",
+                "Inferno": "Solid Arashium ×10"
               }
             },
             {
@@ -5798,6 +7569,12 @@
                 "Hard": "All of your team members survive",
                 "Extreme": "All of your team members survive",
                 "Inferno": "All of your team members survive"
+              },
+              "rewards": {
+                "Normal": "Solid Arashium ×35",
+                "Hard": "Solid Arashium ×35",
+                "Extreme": "Solid Arashium ×35",
+                "Inferno": "EN Container ×1"
               }
             }
           ],
@@ -5839,7 +7616,49 @@
                 "Inferno": "This headband is a unique and playful accessory, with its standout feature being the two small devil horns on top. These horns are sharply shaped and coated with a bright metallic sheen to enhance visual impact. Apart from certain special industries, such accessories are only used by children role-playing during festive periods. But she never had that experience—it was a small gift her mother received from her employer long ago, which eventually became her birthday present.It ended up becoming one of her personal trademarks."
               }
             }
-          ]
+          ],
+          "drops": {
+            "Normal": {
+              "items": [
+                {
+                  "name": "DL Bounty Medal II",
+                  "icon": "Icon_item_12100042"
+                },
+                {
+                  "name": "DL Bounty Medal III",
+                  "icon": "Icon_item_12100043"
+                }
+              ]
+            },
+            "Hard": {
+              "items": [
+                {
+                  "name": "DL Bounty Medal II",
+                  "icon": "Icon_item_12100042"
+                },
+                {
+                  "name": "DL Bounty Medal III",
+                  "icon": "Icon_item_12100043"
+                }
+              ]
+            },
+            "Extreme": {
+              "first": [
+                {
+                  "name": "Vera Annihilation Voucher ×2",
+                  "boss": "Vera"
+                }
+              ]
+            },
+            "Inferno": {
+              "first": [
+                {
+                  "name": "Solid Arashium ×30",
+                  "icon": "Icon_currency_002"
+                }
+              ]
+            }
+          }
         },
         {
           "slot": 3,
@@ -5963,6 +7782,12 @@
                 "Hard": "Win within 6 turns",
                 "Extreme": "Win within 6 turns",
                 "Inferno": "Win within 6 turns"
+              },
+              "rewards": {
+                "Normal": "Fighter Cube IV ×4",
+                "Hard": "Sniper Cube IV ×4",
+                "Extreme": "Solid Arashium ×20",
+                "Inferno": "Bay Bits ×40"
               }
             },
             {
@@ -5972,6 +7797,12 @@
                 "Hard": "Defeat fewer than 18 enemy units, excluding the boss",
                 "Extreme": "Defeat fewer than 16 enemy units, excluding the boss",
                 "Inferno": "Defeat fewer than 14 enemy units, excluding the boss"
+              },
+              "rewards": {
+                "Normal": "Raider Cube IV ×4",
+                "Hard": "Guardian Cube IV ×4",
+                "Extreme": "EN Container ×1",
+                "Inferno": "Solid Arashium ×10"
               }
             },
             {
@@ -5981,6 +7812,12 @@
                 "Hard": "All of your team members survive",
                 "Extreme": "All of your team members survive",
                 "Inferno": "All of your team members survive"
+              },
+              "rewards": {
+                "Normal": "Solid Arashium ×35",
+                "Hard": "Solid Arashium ×35",
+                "Extreme": "Solid Arashium ×35",
+                "Inferno": "EN Container ×1"
               }
             }
           ],
@@ -6032,7 +7869,49 @@
                 "Inferno": "The design of the ring is very basic—just a simple silver band without any additional embellishments or intricate details. Its surface is not finely polished, retaining some natural textures and slight imperfections that lend it a raw and handcrafted feel. This is the cheapest ring they could find, but it was enough to seal a lifelong bond.The true weight lay not in its price, but in the way it marked the difference between a mere transaction and a commitment."
               }
             }
-          ]
+          ],
+          "drops": {
+            "Normal": {
+              "items": [
+                {
+                  "name": "DL Bounty Medal I",
+                  "icon": "Icon_item_12100041"
+                },
+                {
+                  "name": "DL Bounty Medal III",
+                  "icon": "Icon_item_12100043"
+                }
+              ]
+            },
+            "Hard": {
+              "items": [
+                {
+                  "name": "DL Bounty Medal I",
+                  "icon": "Icon_item_12100041"
+                },
+                {
+                  "name": "DL Bounty Medal III",
+                  "icon": "Icon_item_12100043"
+                }
+              ]
+            },
+            "Extreme": {
+              "first": [
+                {
+                  "name": "Aiden Annihilation Voucher ×2",
+                  "boss": "Aiden"
+                }
+              ]
+            },
+            "Inferno": {
+              "first": [
+                {
+                  "name": "Solid Arashium ×30",
+                  "icon": "Icon_currency_002"
+                }
+              ]
+            }
+          }
         },
         {
           "slot": 4,
@@ -6166,6 +8045,12 @@
                 "Hard": "All of your team members survive",
                 "Extreme": "All of your team members survive",
                 "Inferno": "All of your team members survive"
+              },
+              "rewards": {
+                "Normal": "Transit Voucher ×1",
+                "Hard": "Transit Voucher ×1",
+                "Extreme": "Transit Voucher ×1",
+                "Inferno": "Bulk Voucher ×2"
               }
             }
           ],
@@ -6259,6 +8144,63 @@
             "Hard": 18,
             "Extreme": 27,
             "Inferno": 36
+          },
+          "drops": {
+            "Normal": {
+              "items": [
+                {
+                  "name": "DL Arsenal Handbook I",
+                  "icon": "Icon_item_12100037"
+                },
+                {
+                  "name": "DL Arsenal Handbook II",
+                  "icon": "Icon_item_12100038"
+                },
+                {
+                  "name": "DL Arsenal Handbook III",
+                  "icon": "Icon_item_12100039"
+                },
+                {
+                  "name": "DL Arsenal Handbook IV",
+                  "icon": "Icon_item_12100040"
+                }
+              ]
+            },
+            "Hard": {
+              "items": [
+                {
+                  "name": "DL Arsenal Handbook I",
+                  "icon": "Icon_item_12100037"
+                },
+                {
+                  "name": "DL Arsenal Handbook II",
+                  "icon": "Icon_item_12100038"
+                },
+                {
+                  "name": "DL Arsenal Handbook III",
+                  "icon": "Icon_item_12100039"
+                },
+                {
+                  "name": "DL Arsenal Handbook IV",
+                  "icon": "Icon_item_12100040"
+                }
+              ]
+            },
+            "Extreme": {
+              "first": [
+                {
+                  "name": "Victoria Annihilation Voucher ×3",
+                  "boss": "Victoria"
+                }
+              ]
+            },
+            "Inferno": {
+              "first": [
+                {
+                  "name": "ST Emblem: Basilisk ×1"
+                }
+              ]
+            }
           }
         }
       ]
@@ -6402,6 +8344,11 @@
                 "Normal": "Win within 6 turns",
                 "Hard": "Win within 6 turns",
                 "Extreme": "Win within 6 turns"
+              },
+              "rewards": {
+                "Normal": "Machinist Cube III ×4",
+                "Hard": "Sniper Cube III ×4",
+                "Extreme": "Fighter Cube III ×4"
               }
             },
             {
@@ -6410,6 +8357,11 @@
                 "Normal": "Your team is damaged by Blazing Terrain no more than 2 times",
                 "Hard": "Your team is damaged by Burning Terrain or Blazing Terrain no more than 1 time",
                 "Extreme": "Your team doesn't take any damage from Burning Terrain or Blazing Terrain"
+              },
+              "rewards": {
+                "Normal": "Solid Arashium ×20",
+                "Hard": "Ranged Weapon Essence III ×40",
+                "Extreme": "Assault Weapon Essence III ×40"
               }
             },
             {
@@ -6418,6 +8370,11 @@
                 "Normal": "All of your team members survive",
                 "Hard": "All of your team members survive",
                 "Extreme": "All of your team members survive"
+              },
+              "rewards": {
+                "Normal": "Solid Arashium ×35",
+                "Hard": "Solid Arashium ×35",
+                "Extreme": "Solid Arashium ×35"
               }
             }
           ],
@@ -6466,7 +8423,41 @@
                 "Extreme": "This new recruit medal is made of high-hardness alloy, engraved with the Enfield Military Academy insignia, and is awarded to outstanding graduates of the academy. This medal is not placed in a conspicuous spot, as that would attract enemy snipers' attention, so it is kept in the chest pocket—glory needs no audience. A single groove on the surface hints at a moment of danger survived."
               }
             }
-          ]
+          ],
+          "drops": {
+            "Normal": {
+              "items": [
+                {
+                  "name": "UNCS Bounty Medal I",
+                  "icon": "Icon_item_12100031"
+                },
+                {
+                  "name": "UNCS Bounty Medal II",
+                  "icon": "Icon_item_12100032"
+                }
+              ]
+            },
+            "Hard": {
+              "items": [
+                {
+                  "name": "UNCS Bounty Medal I",
+                  "icon": "Icon_item_12100031"
+                },
+                {
+                  "name": "UNCS Bounty Medal II",
+                  "icon": "Icon_item_12100032"
+                }
+              ]
+            },
+            "Extreme": {
+              "first": [
+                {
+                  "name": "Hayato Annihilation Voucher ×2",
+                  "boss": "Hayato"
+                }
+              ]
+            }
+          }
         },
         {
           "slot": 2,
@@ -6577,6 +8568,11 @@
                 "Normal": "Win within 6 turns",
                 "Hard": "Win within 6 turns",
                 "Extreme": "Win within 6 turns"
+              },
+              "rewards": {
+                "Normal": "Tactical Weapon Essence III ×40",
+                "Hard": "Guardian Cube III ×4",
+                "Extreme": "Sniper Cube III ×8"
               }
             },
             {
@@ -6585,6 +8581,11 @@
                 "Normal": "Reserve supply stacks do not exceed 2",
                 "Hard": "Reserve supply stacks do not exceed 1",
                 "Extreme": "Reserve supply stacks do not exceed 1"
+              },
+              "rewards": {
+                "Normal": "Solid Arashium ×20",
+                "Hard": "Shield Weapon Essence III ×40",
+                "Extreme": "Ranged Weapon Essence III ×40"
               }
             },
             {
@@ -6593,6 +8594,11 @@
                 "Normal": "All of your team members survive",
                 "Hard": "All of your team members survive",
                 "Extreme": "All of your team members survive"
+              },
+              "rewards": {
+                "Normal": "Solid Arashium ×35",
+                "Hard": "Solid Arashium ×35",
+                "Extreme": "Solid Arashium ×35"
               }
             }
           ],
@@ -6631,7 +8637,41 @@
                 "Extreme": "This stomach medicine is primarily used to relieve and treat various stomach discomforts, such as acid reflux, gastritis, or indigestion. The carrier's ST is equipped with several rows of reserves of this type of medicine, which need to be taken twice a day at regular intervals. Alcohol consumption and overeating increase the frequency at which this medication needs to be taken, so for him, it's practically an after-meal snack..."
               }
             }
-          ]
+          ],
+          "drops": {
+            "Normal": {
+              "items": [
+                {
+                  "name": "UNCS Bounty Medal II",
+                  "icon": "Icon_item_12100032"
+                },
+                {
+                  "name": "UNCS Bounty Medal III",
+                  "icon": "Icon_item_12100033"
+                }
+              ]
+            },
+            "Hard": {
+              "items": [
+                {
+                  "name": "UNCS Bounty Medal II",
+                  "icon": "Icon_item_12100032"
+                },
+                {
+                  "name": "UNCS Bounty Medal III",
+                  "icon": "Icon_item_12100033"
+                }
+              ]
+            },
+            "Extreme": {
+              "first": [
+                {
+                  "name": "Sunny Annihilation Voucher ×2",
+                  "boss": "Sunny"
+                }
+              ]
+            }
+          }
         },
         {
           "slot": 3,
@@ -6718,6 +8758,11 @@
                 "Normal": "Win within 6 turns",
                 "Hard": "Win within 6 turns",
                 "Extreme": "Win within 6 turns"
+              },
+              "rewards": {
+                "Normal": "Raider Cube III ×4",
+                "Hard": "Tactician Cube III ×4",
+                "Extreme": "Fighter Cube III ×8"
               }
             },
             {
@@ -6726,6 +8771,11 @@
                 "Normal": "Destroy one of Keller's parts within 5 turns",
                 "Hard": "Destroy one of Keller's parts within 4 turns",
                 "Extreme": "Destroy one of Keller's parts within 3 turns"
+              },
+              "rewards": {
+                "Normal": "Solid Arashium ×20",
+                "Hard": "Tactical Weapon Essence III ×40",
+                "Extreme": "Machinist Cube III ×8"
               }
             },
             {
@@ -6734,6 +8784,11 @@
                 "Normal": "All of your team members survive",
                 "Hard": "All of your team members survive",
                 "Extreme": "All of your team members survive"
+              },
+              "rewards": {
+                "Normal": "Solid Arashium ×35",
+                "Hard": "Solid Arashium ×35",
+                "Extreme": "Solid Arashium ×35"
               }
             }
           ],
@@ -6778,7 +8833,41 @@
                 "Extreme": "This wristband is made of elastic materials like neoprene, providing excellent compression and support while ensuring comfort and breathability. Its main function is to stabilize the wrist joint, prevent sprains and overuse injuries during exercise, and also help alleviate existing pain and discomfort. The heavy labor of the past left a mark on his strong body, and now he has to be a bit more careful."
               }
             }
-          ]
+          ],
+          "drops": {
+            "Normal": {
+              "items": [
+                {
+                  "name": "UNCS Bounty Medal I",
+                  "icon": "Icon_item_12100031"
+                },
+                {
+                  "name": "UNCS Bounty Medal III",
+                  "icon": "Icon_item_12100033"
+                }
+              ]
+            },
+            "Hard": {
+              "items": [
+                {
+                  "name": "UNCS Bounty Medal I",
+                  "icon": "Icon_item_12100031"
+                },
+                {
+                  "name": "UNCS Bounty Medal III",
+                  "icon": "Icon_item_12100033"
+                }
+              ]
+            },
+            "Extreme": {
+              "first": [
+                {
+                  "name": "Keller Annihilation Voucher ×2",
+                  "boss": "Keller"
+                }
+              ]
+            }
+          }
         },
         {
           "slot": 4,
@@ -6832,6 +8921,11 @@
                 "Normal": "All of your team members survive",
                 "Hard": "All of your team members survive",
                 "Extreme": "All of your team members survive"
+              },
+              "rewards": {
+                "Normal": "Transit Voucher ×1",
+                "Hard": "Transit Voucher ×1",
+                "Extreme": "Transit Voucher ×1"
               }
             }
           ],
@@ -6917,6 +9011,48 @@
             "Normal": 9,
             "Hard": 18,
             "Extreme": 27
+          },
+          "drops": {
+            "Normal": {
+              "items": [
+                {
+                  "name": "UNSC Arsenal Handbook I",
+                  "icon": "Icon_item_12100028"
+                },
+                {
+                  "name": "UNSC Arsenal Handbook II",
+                  "icon": "Icon_item_12100029"
+                },
+                {
+                  "name": "UNSC Arsenal Handbook III",
+                  "icon": "Icon_item_12100030"
+                }
+              ]
+            },
+            "Hard": {
+              "items": [
+                {
+                  "name": "UNSC Arsenal Handbook I",
+                  "icon": "Icon_item_12100028"
+                },
+                {
+                  "name": "UNSC Arsenal Handbook II",
+                  "icon": "Icon_item_12100029"
+                },
+                {
+                  "name": "UNSC Arsenal Handbook III",
+                  "icon": "Icon_item_12100030"
+                }
+              ]
+            },
+            "Extreme": {
+              "first": [
+                {
+                  "name": "Sámi Annihilation Voucher ×3",
+                  "boss": "Sámi"
+                }
+              ]
+            }
           }
         }
       ]
@@ -7050,6 +9186,11 @@
                 "Normal": "Win within 6 turns",
                 "Hard": "Win within 6 turns",
                 "Extreme": "Win within 6 turns"
+              },
+              "rewards": {
+                "Normal": "Ranged Weapon Essence II ×40",
+                "Hard": "EN Container ×1",
+                "Extreme": "EN Container ×1"
               }
             },
             {
@@ -7058,6 +9199,11 @@
                 "Normal": "Make Morgana gain [Power Shortage] 2 times",
                 "Hard": "Make Morgana gain [Power Shortage] 2 times",
                 "Extreme": "Make Morgana gain [Power Shortage] 2 times"
+              },
+              "rewards": {
+                "Normal": "Solid Arashium ×20",
+                "Hard": "Assault Weapon Essence II ×40",
+                "Extreme": "Shield Weapon Essence II ×40"
               }
             },
             {
@@ -7066,6 +9212,11 @@
                 "Normal": "All of your team members survive",
                 "Hard": "All of your team members survive",
                 "Extreme": "All of your team members survive"
+              },
+              "rewards": {
+                "Normal": "Solid Arashium ×35",
+                "Hard": "Solid Arashium ×35",
+                "Extreme": "Solid Arashium ×35"
               }
             }
           ],
@@ -7110,7 +9261,41 @@
                 "Extreme": "The industrial-grade notebook boasts a rugged waterproof and dustproof cover, with premium acid-free pages that lock in ink for lasting records. Unlike its user's casual demeanor, these pages contain robot-like precision in daily logs. Just another work facade, really."
               }
             }
-          ]
+          ],
+          "drops": {
+            "Normal": {
+              "items": [
+                {
+                  "name": "Predator Bounty Medal I",
+                  "icon": "Icon_item_12100022"
+                },
+                {
+                  "name": "Predator Bounty Medal II",
+                  "icon": "Icon_item_12100023"
+                }
+              ]
+            },
+            "Hard": {
+              "items": [
+                {
+                  "name": "Predator Bounty Medal I",
+                  "icon": "Icon_item_12100022"
+                },
+                {
+                  "name": "Predator Bounty Medal II",
+                  "icon": "Icon_item_12100023"
+                }
+              ]
+            },
+            "Extreme": {
+              "first": [
+                {
+                  "name": "Morgana Annihilation Voucher ×2",
+                  "boss": "Morgana"
+                }
+              ]
+            }
+          }
         },
         {
           "slot": 2,
@@ -7265,6 +9450,11 @@
                 "Normal": "Win within 6 turns",
                 "Hard": "Win within 6 turns",
                 "Extreme": "Win within 6 turns"
+              },
+              "rewards": {
+                "Normal": "Melee Weapon Essence II ×40",
+                "Hard": "EN Container ×1",
+                "Extreme": "EN Container ×1"
               }
             },
             {
@@ -7273,6 +9463,11 @@
                 "Normal": "Destroy 4 or fewer Neutralizers",
                 "Hard": "Destroy 3 or fewer Neutralizers",
                 "Extreme": "Destroy 3 or fewer Neutralizers"
+              },
+              "rewards": {
+                "Normal": "Solid Arashium ×20",
+                "Hard": "Tactical Weapon Essence II ×40",
+                "Extreme": "Assault Weapon Essence II ×40"
               }
             },
             {
@@ -7281,6 +9476,11 @@
                 "Normal": "All of your team members survive",
                 "Hard": "All of your team members survive",
                 "Extreme": "All of your team members survive"
+              },
+              "rewards": {
+                "Normal": "Solid Arashium ×35",
+                "Hard": "Solid Arashium ×35",
+                "Extreme": "Solid Arashium ×35"
               }
             }
           ],
@@ -7325,7 +9525,41 @@
                 "Extreme": "A dual-sided pendant in green and black, crafted from premium metal with a flawless paint finish for lasting vibrancy. Liliya keeps this lucky charm close on every mission. It was the first gift she received from Andrea."
               }
             }
-          ]
+          ],
+          "drops": {
+            "Normal": {
+              "items": [
+                {
+                  "name": "Predator Bounty Medal II",
+                  "icon": "Icon_item_12100023"
+                },
+                {
+                  "name": "Predator Bounty Medal III",
+                  "icon": "Icon_item_12100024"
+                }
+              ]
+            },
+            "Hard": {
+              "items": [
+                {
+                  "name": "Predator Bounty Medal II",
+                  "icon": "Icon_item_12100023"
+                },
+                {
+                  "name": "Predator Bounty Medal III",
+                  "icon": "Icon_item_12100024"
+                }
+              ]
+            },
+            "Extreme": {
+              "first": [
+                {
+                  "name": "Liliya Annihilation Voucher ×2",
+                  "boss": "Liliya"
+                }
+              ]
+            }
+          }
         },
         {
           "slot": 3,
@@ -7428,6 +9662,11 @@
                 "Normal": "Win within 6 turns",
                 "Hard": "Win within 6 turns",
                 "Extreme": "Win within 6 turns"
+              },
+              "rewards": {
+                "Normal": "EN Container ×1",
+                "Hard": "EN Container ×1",
+                "Extreme": "EN Container ×1"
               }
             },
             {
@@ -7436,6 +9675,11 @@
                 "Normal": "Destroy less than 5 Signal Transmitters",
                 "Hard": "Destroy less than 4 Signal Transmitters",
                 "Extreme": "Destroy less than 3 Signal Transmitters"
+              },
+              "rewards": {
+                "Normal": "Solid Arashium ×20",
+                "Hard": "Melee Weapon Essence II ×40",
+                "Extreme": "Tactical Weapon Essence II ×40"
               }
             },
             {
@@ -7444,6 +9688,11 @@
                 "Normal": "All of your team members survive",
                 "Hard": "All of your team members survive",
                 "Extreme": "All of your team members survive"
+              },
+              "rewards": {
+                "Normal": "Solid Arashium ×35",
+                "Hard": "Solid Arashium ×35",
+                "Extreme": "Solid Arashium ×35"
               }
             }
           ],
@@ -7488,7 +9737,41 @@
                 "Extreme": "A sleek, matte-black metal eyepiece forged from ultra-light alloy. The stealth finish reduces glare and boosts durability. Though it has no optical sensors and renders the wearer blind, it unlocks perception beyond normal sight. Through Dive synchronization, researchers confirm it reveals glimpses into the mysterious Arashi Realm."
               }
             }
-          ]
+          ],
+          "drops": {
+            "Normal": {
+              "items": [
+                {
+                  "name": "Predator Bounty Medal I",
+                  "icon": "Icon_item_12100022"
+                },
+                {
+                  "name": "Predator Bounty Medal III",
+                  "icon": "Icon_item_12100024"
+                }
+              ]
+            },
+            "Hard": {
+              "items": [
+                {
+                  "name": "Predator Bounty Medal I",
+                  "icon": "Icon_item_12100022"
+                },
+                {
+                  "name": "Predator Bounty Medal III",
+                  "icon": "Icon_item_12100024"
+                }
+              ]
+            },
+            "Extreme": {
+              "first": [
+                {
+                  "name": "Libby Annihilation Voucher ×2",
+                  "boss": "Libby"
+                }
+              ]
+            }
+          }
         },
         {
           "slot": 4,
@@ -7632,6 +9915,11 @@
                 "Normal": "All of your team members survive",
                 "Hard": "All of your team members survive",
                 "Extreme": "All of your team members survive"
+              },
+              "rewards": {
+                "Normal": "Transit Voucher ×1",
+                "Hard": "Transit Voucher ×1",
+                "Extreme": "Transit Voucher ×1"
               }
             }
           ],
@@ -7652,6 +9940,48 @@
             "Normal": 9,
             "Hard": 18,
             "Extreme": 27
+          },
+          "drops": {
+            "Normal": {
+              "items": [
+                {
+                  "name": "Predator Arsenal Handbook I",
+                  "icon": "Icon_item_12100019"
+                },
+                {
+                  "name": "Predator Arsenal Handbook II",
+                  "icon": "Icon_item_12100020"
+                },
+                {
+                  "name": "Predator Arsenal Handbook III",
+                  "icon": "Icon_item_12100021"
+                }
+              ]
+            },
+            "Hard": {
+              "items": [
+                {
+                  "name": "Predator Arsenal Handbook I",
+                  "icon": "Icon_item_12100019"
+                },
+                {
+                  "name": "Predator Arsenal Handbook II",
+                  "icon": "Icon_item_12100020"
+                },
+                {
+                  "name": "Predator Arsenal Handbook III",
+                  "icon": "Icon_item_12100021"
+                }
+              ]
+            },
+            "Extreme": {
+              "first": [
+                {
+                  "name": "Alena Annihilation Voucher ×3",
+                  "boss": "Alena"
+                }
+              ]
+            }
           }
         }
       ]
@@ -7761,6 +10091,11 @@
                 "Normal": "Win within 6 turns",
                 "Hard": "Win within 6 turns",
                 "Extreme": "Win within 6 turns"
+              },
+              "rewards": {
+                "Normal": "Fighter Cube II ×3",
+                "Hard": "Guardian Cube II ×3",
+                "Extreme": "Sniper Cube II ×3"
               }
             },
             {
@@ -7769,6 +10104,11 @@
                 "Normal": "Fewer than 3 of your units were inflicted by [Crash]",
                 "Hard": "Fewer than 3 of your units were inflicted by [Crash]",
                 "Extreme": "Fewer than 2 of your units were inflicted by [Crash]"
+              },
+              "rewards": {
+                "Normal": "Solid Arashium ×20",
+                "Hard": "EN Container ×1",
+                "Extreme": "EN Container ×1"
               }
             },
             {
@@ -7777,6 +10117,11 @@
                 "Normal": "All of your team members survive",
                 "Hard": "All of your team members survive",
                 "Extreme": "All of your team members survive"
+              },
+              "rewards": {
+                "Normal": "Solid Arashium ×35",
+                "Hard": "Solid Arashium ×35",
+                "Extreme": "Solid Arashium ×35"
               }
             }
           ],
@@ -7821,7 +10166,41 @@
                 "Extreme": "A large-caliber handgun from the New Gold Rush era, cherished by gun lovers for its raw power and iconic design. A gift from Genovese at their first meeting, Garcia used it to blast through 10 bottles of vintage wine in the cabinet's inner shelf, while leaving the whiskey untouched. \"One bottle, 50,000 MHD\"... Garcia's memory blurs on whether that sum was his penalty or his prize."
               }
             }
-          ]
+          ],
+          "drops": {
+            "Normal": {
+              "items": [
+                {
+                  "name": "Luno Bounty Medal I",
+                  "icon": "Icon_item_12100013"
+                },
+                {
+                  "name": "Luno Bounty Medal II",
+                  "icon": "Icon_item_12100014"
+                }
+              ]
+            },
+            "Hard": {
+              "items": [
+                {
+                  "name": "Luno Bounty Medal I",
+                  "icon": "Icon_item_12100013"
+                },
+                {
+                  "name": "Luno Bounty Medal II",
+                  "icon": "Icon_item_12100014"
+                }
+              ]
+            },
+            "Extreme": {
+              "first": [
+                {
+                  "name": "Garcia Annihilation Voucher ×2",
+                  "boss": "Garcia"
+                }
+              ]
+            }
+          }
         },
         {
           "slot": 2,
@@ -7912,6 +10291,11 @@
                 "Normal": "Win within 6 turns",
                 "Hard": "Win within 6 turns",
                 "Extreme": "Win within 6 turns"
+              },
+              "rewards": {
+                "Normal": "Tactician Cube II ×3",
+                "Hard": "Guardian Cube II ×3",
+                "Extreme": "Raider Cube II ×3"
               }
             },
             {
@@ -7920,6 +10304,11 @@
                 "Normal": "Bertha triggers [Re-ATK] less than 3 times",
                 "Hard": "Bertha triggers [Re-ATK] less than 3 times",
                 "Extreme": "Bertha triggers [Re-ATK] less than 2 times"
+              },
+              "rewards": {
+                "Normal": "Solid Arashium ×20",
+                "Hard": "EN Container ×1",
+                "Extreme": "EN Container ×1"
               }
             },
             {
@@ -7928,6 +10317,11 @@
                 "Normal": "All of your team members survive",
                 "Hard": "All of your team members survive",
                 "Extreme": "All of your team members survive"
+              },
+              "rewards": {
+                "Normal": "Solid Arashium ×35",
+                "Hard": "Solid Arashium ×35",
+                "Extreme": "Solid Arashium ×35"
               }
             }
           ],
@@ -7972,7 +10366,41 @@
                 "Extreme": "A hamster with mottled fur of indeterminate breed. Two distinct notches at its mouth corners give it a perpetual smile. Bertha named it Ahtrea, meaning \"Best Companion\" in hamster-speak. Perhaps blessed with some of Bertha's lucky traits, Ahtrea remains her only \"companion\" that hasn't met an untimely end."
               }
             }
-          ]
+          ],
+          "drops": {
+            "Normal": {
+              "items": [
+                {
+                  "name": "Luno Bounty Medal II",
+                  "icon": "Icon_item_12100014"
+                },
+                {
+                  "name": "Luno Bounty Medal III",
+                  "icon": "Icon_item_12100015"
+                }
+              ]
+            },
+            "Hard": {
+              "items": [
+                {
+                  "name": "Luno Bounty Medal II",
+                  "icon": "Icon_item_12100014"
+                },
+                {
+                  "name": "Luno Bounty Medal III",
+                  "icon": "Icon_item_12100015"
+                }
+              ]
+            },
+            "Extreme": {
+              "first": [
+                {
+                  "name": "Bertha Annihilation Voucher ×2",
+                  "boss": "Bertha"
+                }
+              ]
+            }
+          }
         },
         {
           "slot": 3,
@@ -8058,6 +10486,11 @@
                 "Normal": "Win within 6 turns",
                 "Hard": "Win within 6 turns",
                 "Extreme": "Win within 6 turns"
+              },
+              "rewards": {
+                "Normal": "Machinist Cube II ×3",
+                "Hard": "Sniper Cube II ×3",
+                "Extreme": "Raider Cube II ×3"
               }
             },
             {
@@ -8066,6 +10499,11 @@
                 "Normal": "Less than 10 enemy units defeated",
                 "Hard": "Less than 10 enemy units defeated",
                 "Extreme": "Less than 8 enemy units defeated"
+              },
+              "rewards": {
+                "Normal": "Solid Arashium ×20",
+                "Hard": "Machinist Cube II ×3",
+                "Extreme": "EN Container ×1"
               }
             },
             {
@@ -8074,6 +10512,11 @@
                 "Normal": "All of your team members survive",
                 "Hard": "All of your team members survive",
                 "Extreme": "All of your team members survive"
+              },
+              "rewards": {
+                "Normal": "Solid Arashium ×35",
+                "Hard": "Solid Arashium ×35",
+                "Extreme": "Solid Arashium ×35"
               }
             }
           ],
@@ -8145,7 +10588,41 @@
                 }
               ]
             }
-          ]
+          ],
+          "drops": {
+            "Normal": {
+              "items": [
+                {
+                  "name": "Luno Bounty Medal I",
+                  "icon": "Icon_item_12100013"
+                },
+                {
+                  "name": "Luno Bounty Medal III",
+                  "icon": "Icon_item_12100015"
+                }
+              ]
+            },
+            "Hard": {
+              "items": [
+                {
+                  "name": "Luno Bounty Medal I",
+                  "icon": "Icon_item_12100013"
+                },
+                {
+                  "name": "Luno Bounty Medal III",
+                  "icon": "Icon_item_12100015"
+                }
+              ]
+            },
+            "Extreme": {
+              "first": [
+                {
+                  "name": "Deborah Annihilation Voucher ×2",
+                  "boss": "Deborah"
+                }
+              ]
+            }
+          }
         },
         {
           "slot": 4,
@@ -8240,6 +10717,11 @@
                 "Normal": "All of your team members survive",
                 "Hard": "All of your team members survive",
                 "Extreme": "All of your team members survive"
+              },
+              "rewards": {
+                "Normal": "Transit Voucher ×1",
+                "Hard": "Transit Voucher ×1",
+                "Extreme": "Transit Voucher ×1"
               }
             }
           ],
@@ -8308,6 +10790,48 @@
             "Normal": 9,
             "Hard": 18,
             "Extreme": 27
+          },
+          "drops": {
+            "Normal": {
+              "items": [
+                {
+                  "name": "Luno Arsenal Handbook I",
+                  "icon": "Icon_item_12100010"
+                },
+                {
+                  "name": "Luno Arsenal Handbook II",
+                  "icon": "Icon_item_12100011"
+                },
+                {
+                  "name": "Luno Arsenal Handbook III",
+                  "icon": "Icon_item_12100012"
+                }
+              ]
+            },
+            "Hard": {
+              "items": [
+                {
+                  "name": "Luno Arsenal Handbook I",
+                  "icon": "Icon_item_12100010"
+                },
+                {
+                  "name": "Luno Arsenal Handbook II",
+                  "icon": "Icon_item_12100011"
+                },
+                {
+                  "name": "Luno Arsenal Handbook III",
+                  "icon": "Icon_item_12100012"
+                }
+              ]
+            },
+            "Extreme": {
+              "first": [
+                {
+                  "name": "Genovese Annihilation Voucher ×3",
+                  "boss": "Genovese"
+                }
+              ]
+            }
           }
         }
       ]
@@ -8438,6 +10962,11 @@
                 "Normal": "Win within 6 turns",
                 "Hard": "Win within 6 turns",
                 "Extreme": "Win within 6 turns"
+              },
+              "rewards": {
+                "Normal": "Tactician Cube I ×2",
+                "Hard": "Raider Cube I ×2",
+                "Extreme": "Sniper Cube I ×2"
               }
             },
             {
@@ -8446,6 +10975,11 @@
                 "Normal": "No more than 4 skilled mercenaries destroyed at the time of victory",
                 "Hard": "No more than 3 skilled mercenaries destroyed at the time of victory",
                 "Extreme": "No more than 2 skilled mercenaries destroyed at the time of victory"
+              },
+              "rewards": {
+                "Normal": "Solid Arashium ×20",
+                "Hard": "Ranged Weapon Essence I ×30",
+                "Extreme": "Shield Weapon Essence I ×30"
               }
             },
             {
@@ -8454,6 +10988,11 @@
                 "Normal": "All of your team members survive",
                 "Hard": "All of your team members survive",
                 "Extreme": "All of your team members survive"
+              },
+              "rewards": {
+                "Normal": "Solid Arashium ×35",
+                "Hard": "Solid Arashium ×35",
+                "Extreme": "Solid Arashium ×35"
               }
             }
           ],
@@ -8492,7 +11031,41 @@
                 "Extreme": "A titanium alloy eye patch fused into Blazetrudge's left eye socket, purely for show. The scar beneath marks his first clash with Grimbite, who breached the fire curtain to land a devastating strike, even before their ST battles began. Rather than opt for a sleek prosthetic, Blazetrudge chose this metal patch to strike fear into his foes."
               }
             }
-          ]
+          ],
+          "drops": {
+            "Normal": {
+              "items": [
+                {
+                  "name": "Thunderbolt Bounty Medal I",
+                  "icon": "Icon_item_12100004"
+                },
+                {
+                  "name": "Thunderbolt Bounty Medal II",
+                  "icon": "Icon_item_12100005"
+                }
+              ]
+            },
+            "Hard": {
+              "items": [
+                {
+                  "name": "Thunderbolt Bounty Medal I",
+                  "icon": "Icon_item_12100004"
+                },
+                {
+                  "name": "Thunderbolt Bounty Medal II",
+                  "icon": "Icon_item_12100005"
+                }
+              ]
+            },
+            "Extreme": {
+              "first": [
+                {
+                  "name": "Blazetrudge Annihilation Voucher ×2",
+                  "boss": "Blazetrudge"
+                }
+              ]
+            }
+          }
         },
         {
           "slot": 2,
@@ -8616,6 +11189,11 @@
                 "Normal": "Win within 6 turns",
                 "Hard": "Win within 6 turns",
                 "Extreme": "Win within 6 turns"
+              },
+              "rewards": {
+                "Normal": "Guardian Cube I ×2",
+                "Hard": "Sniper Cube I ×2",
+                "Extreme": "Machinist Cube I ×2"
               }
             },
             {
@@ -8624,6 +11202,11 @@
                 "Normal": "[Know the Way] never stacks higher than 3",
                 "Hard": "[Know the Way] never stacks higher than 2",
                 "Extreme": "[Know the Way] never stacks higher than 2"
+              },
+              "rewards": {
+                "Normal": "Solid Arashium ×20",
+                "Hard": "Assault Weapon Essence I ×30",
+                "Extreme": "Melee Weapon Essence I ×30"
               }
             },
             {
@@ -8632,6 +11215,11 @@
                 "Normal": "All of your team members survive",
                 "Hard": "All of your team members survive",
                 "Extreme": "All of your team members survive"
+              },
+              "rewards": {
+                "Normal": "Solid Arashium ×35",
+                "Hard": "Solid Arashium ×35",
+                "Extreme": "Solid Arashium ×35"
               }
             }
           ],
@@ -8719,7 +11307,41 @@
                 }
               ]
             }
-          ]
+          ],
+          "drops": {
+            "Normal": {
+              "items": [
+                {
+                  "name": "Thunderbolt Bounty Medal II",
+                  "icon": "Icon_item_12100005"
+                },
+                {
+                  "name": "Thunderbolt Bounty Medal III",
+                  "icon": "Icon_item_12100006"
+                }
+              ]
+            },
+            "Hard": {
+              "items": [
+                {
+                  "name": "Thunderbolt Bounty Medal II",
+                  "icon": "Icon_item_12100005"
+                },
+                {
+                  "name": "Thunderbolt Bounty Medal III",
+                  "icon": "Icon_item_12100006"
+                }
+              ]
+            },
+            "Extreme": {
+              "first": [
+                {
+                  "name": "Roarlash Annihilation Voucher ×2",
+                  "boss": "Roarlash"
+                }
+              ]
+            }
+          }
         },
         {
           "slot": 3,
@@ -8813,6 +11435,11 @@
                 "Normal": "Win within 7 turns",
                 "Hard": "Win within 6 turns",
                 "Extreme": "Win within 6 turns"
+              },
+              "rewards": {
+                "Normal": "Raider Cube I ×2",
+                "Hard": "Fighter Cube I ×2",
+                "Extreme": "Guardian Cube I ×2"
               }
             },
             {
@@ -8821,6 +11448,11 @@
                 "Normal": "Destroy at least 1 Support ST at the time of victory",
                 "Hard": "At least 1 Support ST must be activated at the time of victory",
                 "Extreme": "2 Support STs have been activated at the time of victory"
+              },
+              "rewards": {
+                "Normal": "Solid Arashium ×20",
+                "Hard": "Machinist Cube I ×2",
+                "Extreme": "Tactical Weapon Essence I ×30"
               }
             },
             {
@@ -8829,6 +11461,11 @@
                 "Normal": "All of your team members survive",
                 "Hard": "All of your team members survive",
                 "Extreme": "All of your team members survive"
+              },
+              "rewards": {
+                "Normal": "Solid Arashium ×35",
+                "Hard": "Solid Arashium ×35",
+                "Extreme": "Solid Arashium ×35"
               }
             }
           ],
@@ -8906,7 +11543,41 @@
                 }
               ]
             }
-          ]
+          ],
+          "drops": {
+            "Normal": {
+              "items": [
+                {
+                  "name": "Thunderbolt Bounty Medal I",
+                  "icon": "Icon_item_12100004"
+                },
+                {
+                  "name": "Thunderbolt Bounty Medal III",
+                  "icon": "Icon_item_12100006"
+                }
+              ]
+            },
+            "Hard": {
+              "items": [
+                {
+                  "name": "Thunderbolt Bounty Medal I",
+                  "icon": "Icon_item_12100004"
+                },
+                {
+                  "name": "Thunderbolt Bounty Medal III",
+                  "icon": "Icon_item_12100006"
+                }
+              ]
+            },
+            "Extreme": {
+              "first": [
+                {
+                  "name": "Mirestomp Annihilation Voucher ×2",
+                  "boss": "Mirestomp"
+                }
+              ]
+            }
+          }
         },
         {
           "slot": 4,
@@ -9002,6 +11673,11 @@
                 "Normal": "All of your team members survive",
                 "Hard": "All of your team members survive",
                 "Extreme": "All of your team members survive"
+              },
+              "rewards": {
+                "Normal": "Transit Voucher ×1",
+                "Hard": "Transit Voucher ×1",
+                "Extreme": "Transit Voucher ×1"
               }
             }
           ],
@@ -9016,6 +11692,48 @@
             "Normal": 9,
             "Hard": 18,
             "Extreme": 27
+          },
+          "drops": {
+            "Normal": {
+              "items": [
+                {
+                  "name": "Thunderbolt Arsenal Handbook I",
+                  "icon": "Icon_item_12100001"
+                },
+                {
+                  "name": "Thunderbolt Arsenal Handbook II",
+                  "icon": "Icon_item_12100002"
+                },
+                {
+                  "name": "Thunderbolt Arsenal Handbook III",
+                  "icon": "Icon_item_12100003"
+                }
+              ]
+            },
+            "Hard": {
+              "items": [
+                {
+                  "name": "Thunderbolt Arsenal Handbook I",
+                  "icon": "Icon_item_12100001"
+                },
+                {
+                  "name": "Thunderbolt Arsenal Handbook II",
+                  "icon": "Icon_item_12100002"
+                },
+                {
+                  "name": "Thunderbolt Arsenal Handbook III",
+                  "icon": "Icon_item_12100003"
+                }
+              ]
+            },
+            "Extreme": {
+              "first": [
+                {
+                  "name": "Grimbite Annihilation Voucher ×3",
+                  "boss": "Grimbite"
+                }
+              ]
+            }
           }
         }
       ]
@@ -9100,18 +11818,27 @@
               "name": "Quick Resolution",
               "conditions": {
                 "Normal": "Win within 6 turns"
+              },
+              "rewards": {
+                "Normal": "Light ST Components VIII - N ×60"
               }
             },
             {
               "name": "Rocket Evasion",
               "conditions": {
                 "Normal": "Castilla's rockets hit fewer than 3 units"
+              },
+              "rewards": {
+                "Normal": "Solid Arashium ×20"
               }
             },
             {
               "name": "Safe and Sound",
               "conditions": {
                 "Normal": "All of your team members survive"
+              },
+              "rewards": {
+                "Normal": "Solid Arashium ×35"
               }
             }
           ],
@@ -9131,7 +11858,123 @@
               "subtitle": "Castilla stalks Belsuth, chronicling every discovery.",
               "text": "The note's well-worn cover and faded edges hint at frequent readings and deep contemplation. Its varied handwriting records the observations and emotions of someone who loves this city, reflecting both helplessness and hope amid the city's changes."
             }
-          ]
+          ],
+          "drops": {
+            "Normal": {
+              "weapons": [
+                {
+                  "id": 30123121,
+                  "name": "Gazer",
+                  "quality": "SSR",
+                  "type": "LightSniper",
+                  "icon": "Icon_weapon_30100301"
+                },
+                {
+                  "id": 20123121,
+                  "name": "Mark",
+                  "quality": "SSR",
+                  "type": "MachineGun",
+                  "icon": "Icon_weapon_20100301"
+                },
+                {
+                  "id": 40123121,
+                  "name": "Hanuman",
+                  "quality": "SSR",
+                  "type": "Missile",
+                  "icon": "Icon_weapon_40100301"
+                },
+                {
+                  "id": 40223121,
+                  "name": "Surging Flame",
+                  "quality": "SSR",
+                  "type": "Rocket",
+                  "icon": "Icon_weapon_40200301"
+                },
+                {
+                  "id": 10813121,
+                  "name": "Beowulf",
+                  "quality": "SSR",
+                  "type": "Saw",
+                  "icon": "Icon_weapon_10600201"
+                },
+                {
+                  "id": 10413121,
+                  "name": "Starfield",
+                  "quality": "SSR",
+                  "type": "Shield",
+                  "icon": "Icon_weapon_10400501"
+                },
+                {
+                  "id": 20323121,
+                  "name": "T-Rex",
+                  "quality": "SSR",
+                  "type": "ShotGun",
+                  "icon": "Icon_weapon_20300301"
+                },
+                {
+                  "id": 30122112,
+                  "name": "Whistle - LW",
+                  "quality": "SR",
+                  "type": "LightSniper",
+                  "icon": "Icon_weapon_30100201"
+                },
+                {
+                  "id": 20122111,
+                  "name": "Art of Ambush - LW",
+                  "quality": "SR",
+                  "type": "MachineGun",
+                  "icon": "Icon_weapon_20100201"
+                },
+                {
+                  "id": 40122111,
+                  "name": "Thunder - LW",
+                  "quality": "SR",
+                  "type": "Missile",
+                  "icon": "Icon_weapon_40100101"
+                },
+                {
+                  "id": 40222112,
+                  "name": "Albatross - LW",
+                  "quality": "SR",
+                  "type": "Rocket",
+                  "icon": "Icon_weapon_40200201"
+                },
+                {
+                  "id": 10812111,
+                  "name": "Cadmus",
+                  "quality": "SR",
+                  "type": "Saw",
+                  "icon": "Icon_weapon_10600301"
+                },
+                {
+                  "id": 10412111,
+                  "name": "Submerged Reef",
+                  "quality": "SR",
+                  "type": "Shield",
+                  "icon": "Icon_weapon_10400201"
+                },
+                {
+                  "id": 20322111,
+                  "name": "Gale - LW",
+                  "quality": "SR",
+                  "type": "ShotGun",
+                  "icon": "Icon_weapon_20300201"
+                }
+              ],
+              "items": [
+                {
+                  "name": "Castilla's Collection",
+                  "icon": "Img_1_icon_mask"
+                }
+              ],
+              "always": [
+                {
+                  "name": "Castilla Annihilation Voucher ×1",
+                  "boss": "Castilla"
+                }
+              ]
+            }
+          }
         },
         {
           "slot": 2,
@@ -9232,18 +12075,27 @@
               "name": "Quick Resolution",
               "conditions": {
                 "Normal": "Win within 6 turns"
+              },
+              "rewards": {
+                "Normal": "Medium ST Components VIII - N ×60"
               }
             },
             {
               "name": "Stop Moving Again",
               "conditions": {
                 "Normal": "Mann does not trigger [Re-Act]"
+              },
+              "rewards": {
+                "Normal": "Solid Arashium ×20"
               }
             },
             {
               "name": "Safe and Sound",
               "conditions": {
                 "Normal": "All of your team members survive"
+              },
+              "rewards": {
+                "Normal": "Solid Arashium ×35"
               }
             }
           ],
@@ -9263,7 +12115,137 @@
               "subtitle": "Shades are awesome, perfect for rocking that cool look while keeping your gaze mysterious.",
               "text": "These sunglasses flaunt trendy brown lenses and a sleek metal frame, blending vintage and modern styles. The slightly angled lenses give them a cool, mysterious vibe. Each scratch tells an untold story, capturing moments of keen observation while evading the world's scrutiny."
             }
-          ]
+          ],
+          "drops": {
+            "Normal": {
+              "weapons": [
+                {
+                  "id": 10913121,
+                  "name": "Excalibur",
+                  "quality": "SSR",
+                  "type": "Blade",
+                  "icon": "Icon_weapon_10700301A"
+                },
+                {
+                  "id": 10513121,
+                  "name": "Polymeric Barrier",
+                  "quality": "SSR",
+                  "type": "Buckler",
+                  "icon": "Icon_weapon_10500401"
+                },
+                {
+                  "id": 20423121,
+                  "name": "Corona",
+                  "quality": "SSR",
+                  "type": "Flamethrower",
+                  "icon": "Icon_weapon_20500401"
+                },
+                {
+                  "id": 20213121,
+                  "name": "Behemoth",
+                  "quality": "SSR",
+                  "type": "HeavyMachineGun",
+                  "icon": "Icon_weapon_20400302"
+                },
+                {
+                  "id": 30213121,
+                  "name": "Red Fox",
+                  "quality": "SSR",
+                  "type": "HeavySniper",
+                  "icon": "Icon_weapon_30200301"
+                },
+                {
+                  "id": 10113121,
+                  "name": "Hail of Spikes",
+                  "quality": "SSR",
+                  "type": "Knuckle",
+                  "icon": "Icon_weapon_10100301"
+                },
+                {
+                  "id": 50113121,
+                  "name": "Torch Tower",
+                  "quality": "SSR",
+                  "type": "RailGun",
+                  "icon": "Icon_weapon_50100101"
+                },
+                {
+                  "id": 10313121,
+                  "name": "Mountains",
+                  "quality": "SSR",
+                  "type": "Rod",
+                  "icon": "Icon_weapon_10300301"
+                },
+                {
+                  "id": 10912112,
+                  "name": "Arondight",
+                  "quality": "SR",
+                  "type": "Blade",
+                  "icon": "Icon_weapon_10700201"
+                },
+                {
+                  "id": 10512112,
+                  "name": "Aneto",
+                  "quality": "SR",
+                  "type": "Buckler",
+                  "icon": "Icon_weapon_10500201"
+                },
+                {
+                  "id": 20422111,
+                  "name": "Fafnir - LW",
+                  "quality": "SR",
+                  "type": "Flamethrower",
+                  "icon": "Icon_weapon_20500201"
+                },
+                {
+                  "id": 20212111,
+                  "name": "Wrath of Mars",
+                  "quality": "SR",
+                  "type": "HeavyMachineGun",
+                  "icon": "Icon_weapon_20400201"
+                },
+                {
+                  "id": 30212112,
+                  "name": "Firebird",
+                  "quality": "SR",
+                  "type": "HeavySniper",
+                  "icon": "Icon_weapon_30200201"
+                },
+                {
+                  "id": 10112112,
+                  "name": "Nutcracker",
+                  "quality": "SR",
+                  "type": "Knuckle",
+                  "icon": "Icon_weapon_10100201"
+                },
+                {
+                  "id": 50112111,
+                  "name": "Ex-Wisdom",
+                  "quality": "SR",
+                  "type": "RailGun",
+                  "icon": "Icon_weapon_50100201"
+                },
+                {
+                  "id": 10312111,
+                  "name": "Gate Breaker",
+                  "quality": "SR",
+                  "type": "Rod",
+                  "icon": "Icon_weapon_10300201"
+                }
+              ],
+              "items": [
+                {
+                  "name": "Mann's Collection",
+                  "icon": "Img_1_icon_mask"
+                }
+              ],
+              "always": [
+                {
+                  "name": "Mann Annihilation Voucher ×1",
+                  "boss": "Mann"
+                }
+              ]
+            }
+          }
         },
         {
           "slot": 3,
@@ -9327,11 +12309,144 @@
               "name": "Safe and Sound",
               "conditions": {
                 "Normal": "All of your team members survive"
+              },
+              "rewards": {
+                "Normal": "Transit Voucher ×1"
               }
             }
           ],
           "clue_unlock": {
             "Normal": 6
+          },
+          "drops": {
+            "Normal": {
+              "weapons": [
+                {
+                  "id": 20413121,
+                  "name": "Blaze Howl",
+                  "quality": "SSR",
+                  "type": "Flamethrower",
+                  "icon": "Icon_weapon_20500301"
+                },
+                {
+                  "id": 50213121,
+                  "name": "Foehn",
+                  "quality": "SSR",
+                  "type": "Funnel",
+                  "icon": "Icon_weapon_40300301"
+                },
+                {
+                  "id": 30113121,
+                  "name": "Maxx",
+                  "quality": "SSR",
+                  "type": "LightSniper",
+                  "icon": "Icon_weapon_30100401"
+                },
+                {
+                  "id": 20113121,
+                  "name": "Nightwither",
+                  "quality": "SSR",
+                  "type": "MachineGun",
+                  "icon": "Icon_weapon_20100401"
+                },
+                {
+                  "id": 40113121,
+                  "name": "Kumara",
+                  "quality": "SSR",
+                  "type": "Missile",
+                  "icon": "Icon_weapon_40100401"
+                },
+                {
+                  "id": 10213121,
+                  "name": "Triumph",
+                  "quality": "SSR",
+                  "type": "PileBunker",
+                  "icon": "Icon_weapon_10200301"
+                },
+                {
+                  "id": 40213121,
+                  "name": "Molten",
+                  "quality": "SSR",
+                  "type": "Rocket",
+                  "icon": "Icon_weapon_40200401"
+                },
+                {
+                  "id": 20313121,
+                  "name": "Firebolt",
+                  "quality": "SSR",
+                  "type": "ShotGun",
+                  "icon": "Icon_weapon_20300401"
+                },
+                {
+                  "id": 20412111,
+                  "name": "Fafnir",
+                  "quality": "SR",
+                  "type": "Flamethrower",
+                  "icon": "Icon_weapon_20500201"
+                },
+                {
+                  "id": 50212111,
+                  "name": "Polaris",
+                  "quality": "SR",
+                  "type": "Funnel",
+                  "icon": "Icon_weapon_40300201"
+                },
+                {
+                  "id": 30112112,
+                  "name": "Whistle",
+                  "quality": "SR",
+                  "type": "LightSniper",
+                  "icon": "Icon_weapon_30100201"
+                },
+                {
+                  "id": 20112111,
+                  "name": "Art of Ambush",
+                  "quality": "SR",
+                  "type": "MachineGun",
+                  "icon": "Icon_weapon_20100201"
+                },
+                {
+                  "id": 40112111,
+                  "name": "Thunder",
+                  "quality": "SR",
+                  "type": "Missile",
+                  "icon": "Icon_weapon_40100101"
+                },
+                {
+                  "id": 10212112,
+                  "name": "Thunderbolt",
+                  "quality": "SR",
+                  "type": "PileBunker",
+                  "icon": "Icon_weapon_10200201"
+                },
+                {
+                  "id": 40212112,
+                  "name": "Albatross",
+                  "quality": "SR",
+                  "type": "Rocket",
+                  "icon": "Icon_weapon_40200201"
+                },
+                {
+                  "id": 20312111,
+                  "name": "Gale",
+                  "quality": "SR",
+                  "type": "ShotGun",
+                  "icon": "Icon_weapon_20300201"
+                }
+              ],
+              "items": [
+                {
+                  "name": "Crotti's Collection",
+                  "icon": "Img_1_icon_mask"
+                }
+              ],
+              "always": [
+                {
+                  "name": "Crotti Annihilation Voucher ×1",
+                  "boss": "Crotti"
+                }
+              ]
+            }
           }
         }
       ]
@@ -9416,12 +12531,21 @@
             }
           ],
           "drops": {
-            "weapons": [],
             "items": [
-              "B-Grade Chip Loot",
-              "A-Grade Chip Loot",
-              "S-Grade Chip Loot"
-            ]
+              {
+                "name": "B-Grade Chip Loot",
+                "icon": "Icon_random_10100001"
+              },
+              {
+                "name": "A-Grade Chip Loot",
+                "icon": "Icon_random_10100001"
+              },
+              {
+                "name": "S-Grade Chip Loot",
+                "icon": "Icon_random_10100001"
+              }
+            ],
+            "weapons": []
           }
         },
         {
@@ -9477,12 +12601,21 @@
             }
           ],
           "drops": {
-            "weapons": [],
             "items": [
-              "B-Grade Chip Loot",
-              "A-Grade Chip Loot",
-              "S-Grade Chip Loot"
-            ]
+              {
+                "name": "B-Grade Chip Loot",
+                "icon": "Icon_random_10100001"
+              },
+              {
+                "name": "A-Grade Chip Loot",
+                "icon": "Icon_random_10100001"
+              },
+              {
+                "name": "S-Grade Chip Loot",
+                "icon": "Icon_random_10100001"
+              }
+            ],
+            "weapons": []
           }
         },
         {
@@ -9544,12 +12677,21 @@
             }
           ],
           "drops": {
-            "weapons": [],
             "items": [
-              "B-Grade Chip Loot",
-              "A-Grade Chip Loot",
-              "S-Grade Chip Loot"
-            ]
+              {
+                "name": "B-Grade Chip Loot",
+                "icon": "Icon_random_10100001"
+              },
+              {
+                "name": "A-Grade Chip Loot",
+                "icon": "Icon_random_10100001"
+              },
+              {
+                "name": "S-Grade Chip Loot",
+                "icon": "Icon_random_10100001"
+              }
+            ],
+            "weapons": []
           }
         },
         {
@@ -9639,12 +12781,21 @@
             }
           ],
           "drops": {
-            "weapons": [],
             "items": [
-              "B-Grade Chip Loot",
-              "A-Grade Chip Loot",
-              "S-Grade Chip Loot"
-            ]
+              {
+                "name": "B-Grade Chip Loot",
+                "icon": "Icon_random_10100001"
+              },
+              {
+                "name": "A-Grade Chip Loot",
+                "icon": "Icon_random_10100001"
+              },
+              {
+                "name": "S-Grade Chip Loot",
+                "icon": "Icon_random_10100001"
+              }
+            ],
+            "weapons": []
           }
         }
       ],
@@ -9840,12 +12991,24 @@
               }
             ],
             "items": [
-              "Assault Weapon Essence VI",
-              "Tactical Weapon Essence VI",
-              "Shield Weapon Essence VI"
+              {
+                "name": "Assault Weapon Essence VI",
+                "icon": "Icon_item_10601027"
+              },
+              {
+                "name": "Tactical Weapon Essence VI",
+                "icon": "Icon_item_10601029"
+              },
+              {
+                "name": "Shield Weapon Essence VI",
+                "icon": "Icon_item_10601030"
+              }
             ],
             "always": [
-              "Shield Weapon Essence VI"
+              {
+                "name": "Shield Weapon Essence VI",
+                "icon": "Icon_item_10601030"
+              }
             ]
           }
         },
@@ -10061,12 +13224,24 @@
               }
             ],
             "items": [
-              "Assault Weapon Essence VI",
-              "Tactical Weapon Essence VI",
-              "Shield Weapon Essence VI"
+              {
+                "name": "Assault Weapon Essence VI",
+                "icon": "Icon_item_10601027"
+              },
+              {
+                "name": "Tactical Weapon Essence VI",
+                "icon": "Icon_item_10601029"
+              },
+              {
+                "name": "Shield Weapon Essence VI",
+                "icon": "Icon_item_10601030"
+              }
             ],
             "always": [
-              "Shield Weapon Essence VI"
+              {
+                "name": "Shield Weapon Essence VI",
+                "icon": "Icon_item_10601030"
+              }
             ]
           }
         },
@@ -10268,12 +13443,24 @@
               }
             ],
             "items": [
-              "Melee Weapon Essence VI",
-              "Ranged Weapon Essence VI",
-              "Shield Weapon Essence VI"
+              {
+                "name": "Melee Weapon Essence VI",
+                "icon": "Icon_item_10601026"
+              },
+              {
+                "name": "Ranged Weapon Essence VI",
+                "icon": "Icon_item_10601028"
+              },
+              {
+                "name": "Shield Weapon Essence VI",
+                "icon": "Icon_item_10601030"
+              }
             ],
             "always": [
-              "Shield Weapon Essence VI"
+              {
+                "name": "Shield Weapon Essence VI",
+                "icon": "Icon_item_10601030"
+              }
             ]
           }
         },
@@ -10449,12 +13636,24 @@
               }
             ],
             "items": [
-              "Melee Weapon Essence VI",
-              "Ranged Weapon Essence VI",
-              "Shield Weapon Essence VI"
+              {
+                "name": "Melee Weapon Essence VI",
+                "icon": "Icon_item_10601026"
+              },
+              {
+                "name": "Ranged Weapon Essence VI",
+                "icon": "Icon_item_10601028"
+              },
+              {
+                "name": "Shield Weapon Essence VI",
+                "icon": "Icon_item_10601030"
+              }
             ],
             "always": [
-              "Shield Weapon Essence VI"
+              {
+                "name": "Shield Weapon Essence VI",
+                "icon": "Icon_item_10601030"
+              }
             ]
           }
         }
@@ -10687,12 +13886,24 @@
               }
             ],
             "items": [
-              "Tactical Weapon Essence V",
-              "Assault Weapon Essence V",
-              "Shield Weapon Essence V"
+              {
+                "name": "Tactical Weapon Essence V",
+                "icon": "Icon_item_10601024"
+              },
+              {
+                "name": "Assault Weapon Essence V",
+                "icon": "Icon_item_10601022"
+              },
+              {
+                "name": "Shield Weapon Essence V",
+                "icon": "Icon_item_10601025"
+              }
             ],
             "always": [
-              "Shield Weapon Essence V"
+              {
+                "name": "Shield Weapon Essence V",
+                "icon": "Icon_item_10601025"
+              }
             ]
           }
         },
@@ -10866,12 +14077,24 @@
               }
             ],
             "items": [
-              "Assault Weapon Essence V",
-              "Melee Weapon Essence V",
-              "Shield Weapon Essence V"
+              {
+                "name": "Assault Weapon Essence V",
+                "icon": "Icon_item_10601022"
+              },
+              {
+                "name": "Melee Weapon Essence V",
+                "icon": "Icon_item_10601021"
+              },
+              {
+                "name": "Shield Weapon Essence V",
+                "icon": "Icon_item_10601025"
+              }
             ],
             "always": [
-              "Shield Weapon Essence V"
+              {
+                "name": "Shield Weapon Essence V",
+                "icon": "Icon_item_10601025"
+              }
             ]
           }
         },
@@ -11049,12 +14272,24 @@
               }
             ],
             "items": [
-              "Tactical Weapon Essence V",
-              "Ranged Weapon Essence V",
-              "Shield Weapon Essence V"
+              {
+                "name": "Tactical Weapon Essence V",
+                "icon": "Icon_item_10601024"
+              },
+              {
+                "name": "Ranged Weapon Essence V",
+                "icon": "Icon_item_10601023"
+              },
+              {
+                "name": "Shield Weapon Essence V",
+                "icon": "Icon_item_10601025"
+              }
             ],
             "always": [
-              "Shield Weapon Essence V"
+              {
+                "name": "Shield Weapon Essence V",
+                "icon": "Icon_item_10601025"
+              }
             ]
           }
         },
@@ -11248,12 +14483,24 @@
               }
             ],
             "items": [
-              "Melee Weapon Essence V",
-              "Ranged Weapon Essence V",
-              "Shield Weapon Essence V"
+              {
+                "name": "Melee Weapon Essence V",
+                "icon": "Icon_item_10601021"
+              },
+              {
+                "name": "Ranged Weapon Essence V",
+                "icon": "Icon_item_10601023"
+              },
+              {
+                "name": "Shield Weapon Essence V",
+                "icon": "Icon_item_10601025"
+              }
             ],
             "always": [
-              "Shield Weapon Essence V"
+              {
+                "name": "Shield Weapon Essence V",
+                "icon": "Icon_item_10601025"
+              }
             ]
           }
         }
@@ -11454,12 +14701,24 @@
               }
             ],
             "items": [
-              "Tactical Weapon Essence IV",
-              "Shield Weapon Essence IV",
-              "Assault Weapon Essence IV"
+              {
+                "name": "Tactical Weapon Essence IV",
+                "icon": "Icon_item_10601019"
+              },
+              {
+                "name": "Shield Weapon Essence IV",
+                "icon": "Icon_item_10601020"
+              },
+              {
+                "name": "Assault Weapon Essence IV",
+                "icon": "Icon_item_10601017"
+              }
             ],
             "always": [
-              "Shield Weapon Essence IV"
+              {
+                "name": "Shield Weapon Essence IV",
+                "icon": "Icon_item_10601020"
+              }
             ]
           }
         },
@@ -11643,12 +14902,24 @@
               }
             ],
             "items": [
-              "Tactical Weapon Essence IV",
-              "Shield Weapon Essence IV",
-              "Melee Weapon Essence IV"
+              {
+                "name": "Tactical Weapon Essence IV",
+                "icon": "Icon_item_10601019"
+              },
+              {
+                "name": "Shield Weapon Essence IV",
+                "icon": "Icon_item_10601020"
+              },
+              {
+                "name": "Melee Weapon Essence IV",
+                "icon": "Icon_item_10601016"
+              }
             ],
             "always": [
-              "Shield Weapon Essence IV"
+              {
+                "name": "Shield Weapon Essence IV",
+                "icon": "Icon_item_10601020"
+              }
             ]
           }
         },
@@ -11836,12 +15107,24 @@
               }
             ],
             "items": [
-              "Melee Weapon Essence IV",
-              "Shield Weapon Essence IV",
-              "Ranged Weapon Essence IV"
+              {
+                "name": "Melee Weapon Essence IV",
+                "icon": "Icon_item_10601016"
+              },
+              {
+                "name": "Shield Weapon Essence IV",
+                "icon": "Icon_item_10601020"
+              },
+              {
+                "name": "Ranged Weapon Essence IV",
+                "icon": "Icon_item_10601018"
+              }
             ],
             "always": [
-              "Shield Weapon Essence IV"
+              {
+                "name": "Shield Weapon Essence IV",
+                "icon": "Icon_item_10601020"
+              }
             ]
           }
         },
@@ -12035,12 +15318,24 @@
               }
             ],
             "items": [
-              "Assault Weapon Essence IV",
-              "Shield Weapon Essence IV",
-              "Ranged Weapon Essence IV"
+              {
+                "name": "Assault Weapon Essence IV",
+                "icon": "Icon_item_10601017"
+              },
+              {
+                "name": "Shield Weapon Essence IV",
+                "icon": "Icon_item_10601020"
+              },
+              {
+                "name": "Ranged Weapon Essence IV",
+                "icon": "Icon_item_10601018"
+              }
             ],
             "always": [
-              "Shield Weapon Essence IV"
+              {
+                "name": "Shield Weapon Essence IV",
+                "icon": "Icon_item_10601020"
+              }
             ]
           }
         }
@@ -12241,12 +15536,24 @@
               }
             ],
             "items": [
-              "Tactical Weapon Essence III",
-              "Shield Weapon Essence III",
-              "Ranged Weapon Essence III"
+              {
+                "name": "Tactical Weapon Essence III",
+                "icon": "Icon_item_10601014"
+              },
+              {
+                "name": "Shield Weapon Essence III",
+                "icon": "Icon_item_10601015"
+              },
+              {
+                "name": "Ranged Weapon Essence III",
+                "icon": "Icon_item_10601013"
+              }
             ],
             "always": [
-              "Shield Weapon Essence III"
+              {
+                "name": "Shield Weapon Essence III",
+                "icon": "Icon_item_10601015"
+              }
             ]
           }
         },
@@ -12434,12 +15741,24 @@
               }
             ],
             "items": [
-              "Tactical Weapon Essence III",
-              "Shield Weapon Essence III",
-              "Melee Weapon Essence III"
+              {
+                "name": "Tactical Weapon Essence III",
+                "icon": "Icon_item_10601014"
+              },
+              {
+                "name": "Shield Weapon Essence III",
+                "icon": "Icon_item_10601015"
+              },
+              {
+                "name": "Melee Weapon Essence III",
+                "icon": "Icon_item_10601011"
+              }
             ],
             "always": [
-              "Shield Weapon Essence III"
+              {
+                "name": "Shield Weapon Essence III",
+                "icon": "Icon_item_10601015"
+              }
             ]
           }
         },
@@ -12631,12 +15950,24 @@
               }
             ],
             "items": [
-              "Assault Weapon Essence III",
-              "Shield Weapon Essence III",
-              "Ranged Weapon Essence III"
+              {
+                "name": "Assault Weapon Essence III",
+                "icon": "Icon_item_10601012"
+              },
+              {
+                "name": "Shield Weapon Essence III",
+                "icon": "Icon_item_10601015"
+              },
+              {
+                "name": "Ranged Weapon Essence III",
+                "icon": "Icon_item_10601013"
+              }
             ],
             "always": [
-              "Shield Weapon Essence III"
+              {
+                "name": "Shield Weapon Essence III",
+                "icon": "Icon_item_10601015"
+              }
             ]
           }
         },
@@ -12802,12 +16133,24 @@
               }
             ],
             "items": [
-              "Assault Weapon Essence III",
-              "Shield Weapon Essence III",
-              "Melee Weapon Essence III"
+              {
+                "name": "Assault Weapon Essence III",
+                "icon": "Icon_item_10601012"
+              },
+              {
+                "name": "Shield Weapon Essence III",
+                "icon": "Icon_item_10601015"
+              },
+              {
+                "name": "Melee Weapon Essence III",
+                "icon": "Icon_item_10601011"
+              }
             ],
             "always": [
-              "Shield Weapon Essence III"
+              {
+                "name": "Shield Weapon Essence III",
+                "icon": "Icon_item_10601015"
+              }
             ]
           }
         }
@@ -13002,12 +16345,24 @@
               }
             ],
             "items": [
-              "Shield Weapon Essence II",
-              "Melee Weapon Essence II",
-              "Ranged Weapon Essence II"
+              {
+                "name": "Shield Weapon Essence II",
+                "icon": "Icon_item_10601010"
+              },
+              {
+                "name": "Melee Weapon Essence II",
+                "icon": "Icon_item_10601006"
+              },
+              {
+                "name": "Ranged Weapon Essence II",
+                "icon": "Icon_item_10601008"
+              }
             ],
             "always": [
-              "Shield Weapon Essence II"
+              {
+                "name": "Shield Weapon Essence II",
+                "icon": "Icon_item_10601010"
+              }
             ]
           }
         },
@@ -13205,12 +16560,24 @@
               }
             ],
             "items": [
-              "Shield Weapon Essence II",
-              "Assault Weapon Essence II",
-              "Tactical Weapon Essence II"
+              {
+                "name": "Shield Weapon Essence II",
+                "icon": "Icon_item_10601010"
+              },
+              {
+                "name": "Assault Weapon Essence II",
+                "icon": "Icon_item_10601007"
+              },
+              {
+                "name": "Tactical Weapon Essence II",
+                "icon": "Icon_item_10601009"
+              }
             ],
             "always": [
-              "Shield Weapon Essence II"
+              {
+                "name": "Shield Weapon Essence II",
+                "icon": "Icon_item_10601010"
+              }
             ]
           }
         },
@@ -13416,12 +16783,24 @@
               }
             ],
             "items": [
-              "Shield Weapon Essence II",
-              "Melee Weapon Essence II",
-              "Tactical Weapon Essence II"
+              {
+                "name": "Shield Weapon Essence II",
+                "icon": "Icon_item_10601010"
+              },
+              {
+                "name": "Melee Weapon Essence II",
+                "icon": "Icon_item_10601006"
+              },
+              {
+                "name": "Tactical Weapon Essence II",
+                "icon": "Icon_item_10601009"
+              }
             ],
             "always": [
-              "Shield Weapon Essence II"
+              {
+                "name": "Shield Weapon Essence II",
+                "icon": "Icon_item_10601010"
+              }
             ]
           }
         },
@@ -13603,12 +16982,24 @@
               }
             ],
             "items": [
-              "Shield Weapon Essence II",
-              "Assault Weapon Essence II",
-              "Ranged Weapon Essence II"
+              {
+                "name": "Shield Weapon Essence II",
+                "icon": "Icon_item_10601010"
+              },
+              {
+                "name": "Assault Weapon Essence II",
+                "icon": "Icon_item_10601007"
+              },
+              {
+                "name": "Ranged Weapon Essence II",
+                "icon": "Icon_item_10601008"
+              }
             ],
             "always": [
-              "Shield Weapon Essence II"
+              {
+                "name": "Shield Weapon Essence II",
+                "icon": "Icon_item_10601010"
+              }
             ]
           }
         }
@@ -13794,12 +17185,24 @@
               }
             ],
             "items": [
-              "Melee Weapon Essence I",
-              "Assault Weapon Essence I",
-              "Shield Weapon Essence I"
+              {
+                "name": "Melee Weapon Essence I",
+                "icon": "Icon_item_10601001"
+              },
+              {
+                "name": "Assault Weapon Essence I",
+                "icon": "Icon_item_10601002"
+              },
+              {
+                "name": "Shield Weapon Essence I",
+                "icon": "Icon_item_10601005"
+              }
             ],
             "always": [
-              "Shield Weapon Essence I"
+              {
+                "name": "Shield Weapon Essence I",
+                "icon": "Icon_item_10601005"
+              }
             ]
           }
         },
@@ -13983,12 +17386,24 @@
               }
             ],
             "items": [
-              "Shield Weapon Essence I",
-              "Ranged Weapon Essence I",
-              "Tactical Weapon Essence I"
+              {
+                "name": "Shield Weapon Essence I",
+                "icon": "Icon_item_10601005"
+              },
+              {
+                "name": "Ranged Weapon Essence I",
+                "icon": "Icon_item_10601003"
+              },
+              {
+                "name": "Tactical Weapon Essence I",
+                "icon": "Icon_item_10601004"
+              }
             ],
             "always": [
-              "Shield Weapon Essence I"
+              {
+                "name": "Shield Weapon Essence I",
+                "icon": "Icon_item_10601005"
+              }
             ]
           }
         },
@@ -14212,12 +17627,24 @@
               }
             ],
             "items": [
-              "Shield Weapon Essence I",
-              "Melee Weapon Essence I",
-              "Tactical Weapon Essence I"
+              {
+                "name": "Shield Weapon Essence I",
+                "icon": "Icon_item_10601005"
+              },
+              {
+                "name": "Melee Weapon Essence I",
+                "icon": "Icon_item_10601001"
+              },
+              {
+                "name": "Tactical Weapon Essence I",
+                "icon": "Icon_item_10601004"
+              }
             ],
             "always": [
-              "Shield Weapon Essence I"
+              {
+                "name": "Shield Weapon Essence I",
+                "icon": "Icon_item_10601005"
+              }
             ]
           }
         },
@@ -14391,12 +17818,24 @@
               }
             ],
             "items": [
-              "Shield Weapon Essence I",
-              "Assault Weapon Essence I",
-              "Ranged Weapon Essence I"
+              {
+                "name": "Shield Weapon Essence I",
+                "icon": "Icon_item_10601005"
+              },
+              {
+                "name": "Assault Weapon Essence I",
+                "icon": "Icon_item_10601002"
+              },
+              {
+                "name": "Ranged Weapon Essence I",
+                "icon": "Icon_item_10601003"
+              }
             ],
             "always": [
-              "Shield Weapon Essence I"
+              {
+                "name": "Shield Weapon Essence I",
+                "icon": "Icon_item_10601005"
+              }
             ]
           }
         }

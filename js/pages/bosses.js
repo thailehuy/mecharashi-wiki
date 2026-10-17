@@ -192,15 +192,17 @@ function bossKit() {
     );
   }
 
-  // Bounties: a condition per difficulty, following the toggle. A season's
-  // last stage also shows the clues it takes to unlock on that difficulty.
+  // Bounties: a condition and reward per difficulty, following the toggle. A
+  // season's last stage also shows the clues it takes to unlock on that difficulty.
   function bountiesHtml(st, firstDiff) {
     if (!st.bounties) return '';
     var unlock = st.clue_unlock || {};
     return (
       '<div class="skill-card boss-stage-info boss-stage-bounties"><div class="boss-sub-head">Bounties</div><ol class="boss-bounties">' + st.bounties.map(function (b) {
+        var rewards = b.rewards || {};
         return '<li>' + (b.name ? '<b>' + esc(b.name) + '</b> ' : '') + Object.keys(b.conditions).map(function (d) {
-          return '<span' + diffsAttr([d], firstDiff) + '>' + descHtml(b.conditions[d]) + '</span>';
+          return '<span' + diffsAttr([d], firstDiff) + '>' + descHtml(b.conditions[d]) +
+            (rewards[d] ? '<span class="boss-bounty-reward">' + esc(rewards[d]) + '</span>' : '') + '</span>';
         }).join('') + '</li>';
       }).join('') + '</ol>' +
       Object.keys(unlock).map(function (d) {
@@ -248,30 +250,59 @@ function bossKit() {
     );
   }
 
-  // What a Clearance Ops boss can drop (the game lists them, not their odds):
-  // weapons, best quality first, then other items, by name. Weapons the wiki
-  // has a page for link to it; icons fall back to the game's CDN.
-  function dropsHtml(st) {
+  // An item a boss drops: its icon (extracted from the game into the assets
+  // repo's data/items/), or for an Annihilation Voucher its boss's portrait.
+  function dropItemHtml(it) {
+    var boss = it.boss && bosses[it.boss];
+    var img = boss && boss.portrait
+      ? '<img class="boss-drop-portrait" src="' + ASSET_BASE + boss.portrait + '" alt="" loading="lazy" />'
+      : it.icon ? '<img src="' + ASSET_BASE + 'data/items/' + encodeURIComponent(it.icon) + '.png" alt="" loading="lazy" />' : '';
+    return '<span class="boss-gear-item">' + img + '<span>' + esc(it.name) + '</span></span>';
+  }
+
+  // One set of drops: weapons (best quality first; linked when the wiki has a
+  // page for them, icons falling back to the game's CDN), then the other items
+  // it can drop, the ones every clear gives, and the first clear's.
+  function dropListHtml(d) {
+    var line = function (label, items) {
+      return items ? '<div class="boss-drop-list"><span class="boss-gear-label">' + label + '</span>' + items.map(dropItemHtml).join('') + '</div>' : '';
+    };
+    return (
+      (d.weapons && d.weapons.length ? '<div class="boss-drop-list">' + d.weapons.map(function (w) {
+        var cdn = WEAPON_IMG_BASE + encodeURIComponent(w.icon) + '.png';
+        var inner =
+          '<img src="' + weaponIconSrc({ ID: w.id, icon: w.icon, type: w.type }) + '" onerror="this.onerror=null;this.src=\'' + cdn + '\';" alt="" loading="lazy" />' +
+          '<span>' + esc(w.name) + '<small class="boss-drop-q boss-drop-q-' + esc(w.quality.toLowerCase()) + '">' + esc(w.quality) + '</small></span>';
+        return weaponNames[w.name]
+          ? '<a class="boss-gear-item" href="' + App.href('weapons', w.name) + '">' + inner + '</a>'
+          : '<span class="boss-gear-item">' + inner + '</span>';
+      }).join('') + '</div>' : '') +
+      line(d.weapons && d.weapons.length ? 'Also drops' : 'Drops', d.items) +
+      line('Every clear', d.always) +
+      line('First clear', d.first)
+    );
+  }
+
+  function dropCount(d) {
+    var w = (d.weapons || []).length, n = (d.items || []).length;
+    var count = function (k, word) { return k && k + ' ' + word + (k === 1 ? '' : 's'); };
+    return [count(w, 'weapon'), count(n, 'item'), d.first && 'first-clear reward'].filter(Boolean).join(' + ') || 'none';
+  }
+
+  // What a boss can drop (the game lists them, not their odds). Armed Conquest
+  // stages have drops per difficulty ({difficulty: drops}), following the
+  // toggle; Clearance Ops bosses one set.
+  function dropsHtml(st, firstDiff) {
     var d = st.drops;
     if (!d) return '';
-    var count = [d.weapons.length ? d.weapons.length + ' weapons' : '', d.items ? d.items.length + ' items' : '']
-      .filter(Boolean).join(' + ');
-    return (
-      '<details class="boss-clues boss-drops"><summary>Drops: ' + count + '</summary>' +
-        (d.weapons.length ? '<div class="boss-drop-list">' + d.weapons.map(function (w) {
-          var cdn = WEAPON_IMG_BASE + encodeURIComponent(w.icon) + '.png';
-          var inner =
-            '<img src="' + weaponIconSrc({ ID: w.id, icon: w.icon, type: w.type }) + '" onerror="this.onerror=null;this.src=\'' + cdn + '\';" alt="" loading="lazy" />' +
-            '<span>' + esc(w.name) + '<small class="boss-drop-q boss-drop-q-' + esc(w.quality.toLowerCase()) + '">' + esc(w.quality) + '</small></span>';
-          return weaponNames[w.name]
-            ? '<a class="boss-gear-item" href="' + App.href('weapons', w.name) + '">' + inner + '</a>'
-            : '<span class="boss-gear-item">' + inner + '</span>';
-        }).join('') + '</div>' : '') +
-        (d.items ? '<div class="boss-clue-unlock">Also drops: ' + d.items.map(function (it) {
-          return '<b>' + esc(it) + '</b>' + ((d.always || []).indexOf(it) >= 0 ? ' (always)' : '');
-        }).join(', ') + '</div>' : '') +
-      '</details>'
-    );
+    var diffs = st.difficulties;
+    var count = diffs ? diffs.map(function (df) {
+      return '<span' + diffsAttr([df], firstDiff) + '>' + (d[df] ? dropCount(d[df]) : 'none') + '</span>';
+    }).join('') : dropCount(d);
+    var body = diffs ? diffs.filter(function (df) { return d[df]; }).map(function (df) {
+      return '<div' + diffsAttr([df], firstDiff) + '>' + dropListHtml(d[df]) + '</div>';
+    }).join('') : dropListHtml(d);
+    return '<details class="boss-clues boss-drops"><summary>Drops: ' + count + '</summary>' + body + '</details>';
   }
 
   // A row per stage: its number (and title), the boss with its HP and
@@ -283,7 +314,7 @@ function bossKit() {
         '<div class="row g-3 boss-stage" id="stage-' + st.slot + '">' +
           stageIntro(st) +
           cardHtml(st, diffs[0], 'col-12 col-sm-5 col-md-3', bossHref(st.boss), null, '', bountiesHtml(st, diffs[0]), true) +
-          '<div class="col-12 col-sm-7 col-md-9">' + stageDetails(st, diffs[0]) + dropsHtml(st) + '</div>' +
+          '<div class="col-12 col-sm-7 col-md-9">' + stageDetails(st, diffs[0]) + dropsHtml(st, diffs[0]) + '</div>' +
         '</div>'
       );
     }).join('');

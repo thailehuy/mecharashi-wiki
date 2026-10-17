@@ -3658,7 +3658,8 @@ a.boss-avatar { display: block; }
 .boss-clues summary { cursor: pointer; color: #cbd5e1; font-weight: 600; }
 .boss-clue { margin-top: 0.5rem; }
 .boss-clue b { color: #e0e0f0; }
-.boss-drop-list { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.5rem; }
+.boss-drop-list { display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem; margin-top: 0.5rem; }
+.boss-drop-list .boss-drop-portrait { object-fit: cover; object-position: top; border-radius: 4px; }
 .boss-drop-list .boss-gear-item { font-size: 0.85rem; }
 .boss-drop-list span.boss-gear-item:hover { border-color: #2a2a4a; }
 .boss-drop-list .boss-gear-item img { width: 36px; height: 36px; }
@@ -3666,6 +3667,8 @@ a.boss-avatar { display: block; }
 .boss-drop-q-ssr { color: #ffcf5c; }
 .boss-drop-q-sr { color: #c084fc; }
 .boss-drop-q-r { color: #60a5fa; }
+.boss-bounty-reward { display: block; font-size: 0.8rem; color: #ffcf5c; }
+.boss-bounty-reward::before { content: 'Reward: '; color: #8a8aa0; }
 
 /* Features page */
 .feat-note { margin: 0 0 0.75rem; }
