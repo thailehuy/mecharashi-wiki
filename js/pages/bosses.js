@@ -245,11 +245,10 @@ function bossKit() {
     );
   }
 
-  // One floating difficulty toggle for every stage; each stage's bounties are
-  // below its HP, and Workshop Craft gear is at the top.
-  function seasonPage(s) {
-    var seasonDiffs = (s.stages[0] && s.stages[0].difficulties) || [];
-    var stages = s.stages.map(function (st) {
+  // A row per stage: its number (and title), the boss with its HP and
+  // bounties, and the boss's skills beside it.
+  function stageRows(stages) {
+    return stages.map(function (st) {
       var diffs = st.difficulties || [];
       return (
         '<div class="row g-3 boss-stage" id="stage-' + st.slot + '">' +
@@ -259,6 +258,13 @@ function bossKit() {
         '</div>'
       );
     }).join('');
+  }
+
+  // One floating difficulty toggle for every stage; each stage's bounties are
+  // below its HP, and Workshop Craft gear is at the top.
+  function seasonPage(s) {
+    var seasonDiffs = (s.stages[0] && s.stages[0].difficulties) || [];
+    var stages = stageRows(s.stages);
     var guided = s.stages.some(function (st) { return st.skills && st.skills.some(function (sk) { return sk.type; }); });
     return (
       '<a href="' + App.href('armedconquest') + '" class="btn-back">&#8592; Back to Armed Conquest</a>' +
@@ -271,6 +277,29 @@ function bossKit() {
         gearHtml(s) +
         stages +
       '</div>'
+    );
+  }
+
+  // A Clearance Ops chapter: its blurb and turn limit, then every stage's boss
+  // and skills, and the companions that fight beside them (no stage of their own).
+  function chapterPage(c) {
+    var companions = (c.companions || []).map(function (u) {
+      return (
+        '<div class="row g-3 boss-stage" id="companion-' + bossAnchor(u.name).replace(/^boss-/, '') + '">' +
+          '<div class="col-12"><div class="skill-card boss-stage-info"><div class="boss-stage-title">' +
+            '<b>Companion: ' + esc(u.name) + '</b>' + (u.mech ? ' <span class="boss-mech">' + mechHtml(u.mech) + '</span>' : '') +
+          '</div></div></div>' +
+          '<div class="col-12">' + stageDetails({ skills: u.skills }) + '</div>' +
+        '</div>'
+      );
+    }).join('');
+    return (
+      '<a href="' + App.href('clearanceops') + '" class="btn-back">&#8592; Back to Clearance Ops</a>' +
+      '<div class="listing-header"><h1>' + esc(c.chapter + '. ' + c.name) + '</h1></div>' +
+      (c.description ? '<p class="dispatch-intro"><i>' + esc(c.description) + '</i></p>' : '') +
+      '<p class="dispatch-intro">Clearance Ops chapter ' + c.chapter + '. Every boss\'s skills, by stage.' +
+        (c.turns ? ' Turn limit: <b>' + c.turns + '</b>.' : '') + '</p>' +
+      '<div class="boss-group boss-season">' + stageRows(c.stages) + companions + '</div>'
     );
   }
 
@@ -298,7 +327,7 @@ function bossKit() {
   return {
     data: data, bosses: bosses, esc: esc, pilotById: pilotById,
     mechHtml: mechHtml, cardHtml: cardHtml, gearHtml: gearHtml, groupHtml: groupHtml, diffToggle: diffToggle,
-    seasonPage: seasonPage, bindDiffToggle: bindDiffToggle, bossAnchor: bossAnchor, bossHref: bossHref,
+    seasonPage: seasonPage, chapterPage: chapterPage, bindDiffToggle: bindDiffToggle, bossAnchor: bossAnchor, bossHref: bossHref,
   };
 }
 
@@ -342,21 +371,31 @@ Pages.armedconquest = {
 Pages.clearanceops = {
   title: 'Clearance Ops',
 
-  render: function () {
+  // param: a chapter name (its own page with every boss's skills).
+  render: function (param) {
     var k = bossKit();
 
+    if (param) {
+      var name    = decodeURIComponent(param);
+      var chapter = (k.data.clearance_ops || []).find(function (c) { return c.name === name; });
+      return chapter ? k.chapterPage(chapter) : '<p class="text-danger">Clearance Ops chapter not found.</p>';
+    }
+
     var chapters = (k.data.clearance_ops || []).map(function (c) {
+      var href  = App.href('clearanceops', c.name);
       var cards = c.stages.map(function (st) {
-        return k.cardHtml(st, null, null, k.bossHref(st.boss), 'co-' + c.chapter + '-stage-' + st.slot);
+        return k.cardHtml(st, null, null, href + '#stage-' + st.slot, 'co-' + c.chapter + '-stage-' + st.slot);
       }).join('');
-      return k.groupHtml(c.chapter + '. ' + c.name, null, '', cards, '', null, 'co-' + c.chapter);
+      var sub = c.turns ? '<span class="tag">' + c.turns + ' turns</span>' : '';
+      return k.groupHtml(c.chapter + '. ' + c.name, null, sub, cards, '', href, 'co-' + c.chapter);
     }).join('');
 
     return (
       '<div class="listing-header"><h1>Clearance Ops</h1></div>' +
-      '<p class="dispatch-intro">Bosses of Clearance Ops chapters 11–17, newest first. ' +
+      '<p class="dispatch-intro">Bosses of every Clearance Ops chapter, newest first, with each chapter\'s turn limit. ' +
         'The number on each portrait is the stage. Bosses marked <b>Pilot</b> are also playable. ' +
-        'Open a boss to see every Armed Conquest season and Clearance Ops chapter it appears in.</p>' +
+        'Open a chapter (or a boss) for its bosses\' skills. ' +
+        'See <a href="' + App.href('bosses') + '">Bosses</a> for every boss and where else it appears.</p>' +
       chapters
     );
   },
@@ -380,7 +419,7 @@ Pages.bosses = {
     });
     (k.data.clearance_ops || []).forEach(function (c) {
       c.stages.forEach(function (st) {
-        add(st.boss, { kind: 'CO', label: 'CO' + c.chapter, title: c.name, stage: st, href: App.href('clearanceops') + '#co-' + c.chapter + '-stage-' + st.slot });
+        add(st.boss, { kind: 'CO', label: 'CO' + c.chapter, title: c.name, stage: st, href: App.href('clearanceops', c.name) + '#stage-' + st.slot });
       });
     });
 
@@ -416,7 +455,7 @@ Pages.bosses = {
     return (
       '<div class="listing-header"><h1>Bosses</h1></div>' +
       '<p class="dispatch-intro">Every boss of <a href="' + App.href('armedconquest') + '">Armed Conquest</a> and ' +
-        '<a href="' + App.href('clearanceops') + '">Clearance Ops</a> chapters 11–17, A–Z, with each stage it\'s in and the ST it fields there. ' +
+        '<a href="' + App.href('clearanceops') + '">Clearance Ops</a>, A–Z, with each stage it\'s in and the ST it fields there. ' +
         'Bosses marked <b>Pilot</b> are also playable; their name links to the pilot.</p>' +
       '<div class="row g-3">' + cards + '</div>'
     );

@@ -3,9 +3,11 @@
 
 The `bosses` map (name, pilot link, images) is kept by hand. This script
 rebuilds `armed_conquest` and `clearance_ops` from the DMG calc's targets
-(data/dmgcalc/bench-data.js), adds each Armed Conquest boss's stage name and
-skills from the mined DB (data/screenshots/MRT_FieldWiki/source/mecharashi.db),
-each stage's description, bounties and clues from the game tables
+(data/dmgcalc/bench-data.js), adds each boss's skills (and each Armed Conquest
+stage's name) from the mined DB
+(data/screenshots/MRT_FieldWiki/source/mecharashi.db), each Armed Conquest
+stage's description, bounties and clues and each Clearance Ops chapter's
+description and turn limit from the game tables
 (RebuildGameUpdate/out/stats.db) and what the Armed Conquest guide adds
 (ac-guide.json: skill cards, minions, Extreme modifiers, and descriptions,
 bounties and clues where the game tables lack them), then writes bosses.json
@@ -28,10 +30,9 @@ PILOTS = os.path.join(ROOT, 'data', 'pilots', 'compiled.json')
 OUT = os.path.join(HERE, 'bosses.json')
 OUT_JS = os.path.join(HERE, 'bosses.js')
 
-CO_FROM = 11  # first Clearance Ops chapter listed
-
 AC_LABEL = re.compile(r'^(.*) · (.*) (\d+) · (.*)$')       # "Ride or Die · Hard 2 · Garcia"
 CO_LABEL = re.compile(r'^(\d+)\. (.*) (\d+) · (.*)$')       # "17. Crossroads of Memory 1 · Jon"
+CO_COMPANION_LABEL = re.compile(r'^(\d+\. .*) · (.*)$')     # "1. Rekindled Spark · Black Widow"
 # Armed Conquest seasons in release order (AC number = position). Not in the
 # game data; kept by hand.
 AC_SEASONS = [
@@ -93,13 +94,16 @@ def mech_class(t):
 SKILL = re.compile(r'(\d+) (.*)')                         # "8820601 Massive Gunfire"
 # Chip and equipment passives most bosses carry (stat boosts the guide
 # doesn't show): left out of the line-ups.
-GENERIC_PASSIVE = re.compile(r'^(?:Superconducting Core|Elite Chip [XVI]+|Auto Load|Reinforced Armor [IV]+|'
+GENERIC_PASSIVE = re.compile(r'^(?:Superconducting Core|Elite Chip [XVI]+|Auto Load|Reinforced Armor [IVX]+|'
                              r'(?:Universal )?Flying Device|Repair Unit|TacW Guidance [IV]+|Strategic Strike \d+)$')
 
 
-def ac_skills(bosses):
+def boss_skills(bosses, content):
     """(season, stage) -> (boss, stage name, skills), from the DB's bosses table
-    (main bosses only; companions such as Hayato come from the guide's units).
+    (main bosses only; Armed Conquest companions such as Hayato come from the
+    guide's units). content: 'Armed Conquest' or 'Clearance Ops' (one row per
+    stage, no difficulties). Clearance Ops companions, which have no stage,
+    are keyed (chapter, None, boss).
 
     Each skill: name, kind ('active' or 'passive'), description (passives in
     enemy_skills only; active skills have none in the DB) and, when the skill
@@ -111,16 +115,23 @@ def ac_skills(bosses):
     """
     con = sqlite3.connect(DB)
     described = dict(con.execute("SELECT skill_id, description FROM enemy_skills WHERE description != ''"))
-    effects = passive_effects(con)
+    effects = passive_effects(con, content)
     linked = linked_buffs(con)
-    rows = con.execute('SELECT "group", stage, difficulty, boss_pilot, stage_name, main_skills, passives FROM bosses '
-                       "WHERE content = 'Armed Conquest' AND role = 'main' ORDER BY rowid").fetchall()
+    rows = con.execute('SELECT "group", stage, difficulty, boss_pilot, stage_name, main_skills, passives, role FROM bosses '
+                       "WHERE content = ? AND role IN ('main', 'companion') ORDER BY rowid", (content,)).fetchall()
     con.close()
     icons = skill_icons()
     out = {}
-    for season, stage, diff, boss, title, main, passives in rows:
+    for season, stage, diff, boss, title, main, passives, role in rows:
+        if role == 'companion':
+            if stage is not None or content != 'Clearance Ops':
+                continue
+            key = (season, None, boss)
+        else:
+            key = (season, int(stage))
+            boss = canonical(boss, bosses)
         diff = DIFFICULTY_NAMES.get(diff, diff)
-        st = out.setdefault((season, int(stage)), {'boss': canonical(boss, bosses), 'title': title, 'diffs': [], 'skills': {}, 'ids': set()})
+        st = out.setdefault(key, {'boss': boss, 'title': title, 'diffs': [], 'skills': {}, 'ids': set()})
         st['diffs'].append(diff)
         for kind, text in (('active', main), ('passive', passives)):
             for part in filter(None, (text or '').split('; ')):
@@ -158,7 +169,7 @@ def ac_skills(bosses):
         for sk in st['skills'].values():
             on = sk.pop('diffs')
             diffs = [d for d in DIFFICULTIES if d in on]
-            if len(diffs) < len(st['diffs']):
+            if diffs and len(diffs) < len(st['diffs']):
                 sk['difficulties'] = diffs
             skills.append(sk)
         # Active skills first, each kind in the game's order.
@@ -180,12 +191,12 @@ def skill_icons():
     return icons
 
 
-def passive_effects(con):
-    """Passive skill ID -> its Armed Conquest buff rows in enemy_buffs
+def passive_effects(con, content):
+    """Passive skill ID -> its buff rows for the content in enemy_buffs
     (source_ids lists "PassiveSkill <ID>"): (name, kind, units, description)."""
     out = {}
     rows = con.execute("SELECT name, kind, units, description, source_ids FROM enemy_buffs "
-                       "WHERE content LIKE '%Armed Conquest%' ORDER BY rowid")
+                       "WHERE content LIKE ? ORDER BY rowid", ('%' + content + '%',))
     for name, kind, units, desc, sources in rows:
         for sid in re.findall(r'PassiveSkill (\d+)', sources or ''):
             out.setdefault(int(sid), []).append((name, kind, set((units or '').split(', ')), (desc or '').strip()))
@@ -278,12 +289,13 @@ def effects_for(rows, boss):
 # Bracketed words that name a side, a turn, a weapon type or a unit rather
 # than an effect, so they need no explanation. Pilot names are added too.
 NOT_TERMS = {'enemy', 'ally', 'all', 'enemy turn', 'your turn', 'machine gun', 'machine guns', 'shield', 'alter-blades',
-             'eston', 'vincenza'}
+             'assault', 'eston', 'vincenza'}
 # Terms the skill text calls by another name than the effect's own; the
 # explanation is shown as "Term (Effect)".
 TERM_ALIASES = {
     'ignore unit obstruction': 'Phantom',
     'two-handed retaliation': 'Dual Gun Retaliation',   # Cassha's
+    'link attacks': 'Link Attack',
 }
 
 
@@ -590,6 +602,17 @@ def add_icons(seasons):
                         sk['icon'] = icon
 
 
+def chapter_info():
+    """Clearance Ops battle map ID -> the chapter's description and turn
+    limit from the game tables. (Every chapter is won by defeating any boss,
+    then all of them.)"""
+    con = sqlite3.connect(STATS)
+    out = {battle: {'description': desc, 'turns': turns} for battle, desc, turns in
+           con.execute('SELECT BattleMapId, DescStrKey_EN, MaxRounds FROM ConfigDataDungeonLevelInfo')}
+    con.close()
+    return out
+
+
 def canonical(name, bosses):
     for b in bosses.values():
         if name == b['name'] or name in b.get('aliases', []):
@@ -602,10 +625,13 @@ def main():
         data = json.load(f)
     bosses = data['bosses']
 
-    ac, co = {}, {}
+    ac, co, companion_mechs = {}, {}, {}
     for t in load_targets():
         # Second bosses (Hayato beside Sunny) are listed under the stage's units by the guide.
         if t.get('role') == 'companion':
+            m = CO_COMPANION_LABEL.match(t['label'])
+            if t['content'] == 'Clearance Ops' and m:
+                companion_mechs[(m.group(1), m.group(2))] = t['mech']
             continue
         if t['content'] == 'Armed Conquest':
             m = AC_LABEL.match(t['label'])
@@ -619,18 +645,30 @@ def main():
         elif t['content'] == 'Clearance Ops':
             m = CO_LABEL.match(t['label'])
             chapter, name, slot, boss = int(m.group(1)), m.group(2), int(m.group(3)), m.group(4)
-            if chapter < CO_FROM:
-                continue
             c = co.setdefault(chapter, {'chapter': chapter, 'name': name, 'battle': t['battle'], 'stages': {}})
             c['stages'].setdefault(slot, {'slot': slot, 'boss': canonical(boss, bosses), 'mech': t['mech'], 'cls': mech_class(t), 'hp': part_hp(t)})
 
-    skills = ac_skills(bosses)
+    skills = boss_skills(bosses, 'Armed Conquest')
     stage_ids = {}
     for s in ac.values():
         for st in s['stages'].values():
             boss, st['title'], st['skills'], stage_ids[id(st)] = skills[(s['name'], st['slot'])]
             if boss != st['boss']:
                 raise ValueError('%s stage %d: DMG calc has %s, DB has %s' % (s['name'], st['slot'], st['boss'], boss))
+    co_skills = boss_skills(bosses, 'Clearance Ops')
+    chapters = chapter_info()
+    for c in co.values():
+        group = '%d. %s' % (c['chapter'], c['name'])
+        for st in c['stages'].values():
+            boss, _, st['skills'], stage_ids[id(st)] = co_skills[(group, st['slot'])]
+            if boss != st['boss']:
+                raise ValueError('%s stage %d: DMG calc has %s, DB has %s' % (group, st['slot'], st['boss'], boss))
+        # Companions fight beside the chapter's bosses, on no stage of their own.
+        companions = [{'name': k[2], 'mech': companion_mechs.get((group, k[2])), 'skills': v[2], 'ids': v[3]}
+                      for k, v in co_skills.items() if k[0] == group and k[1] is None]
+        if companions:
+            c['companions'] = companions
+        c.update(chapters[c['battle']])
 
     versions = ac_versions()
     missing = [name for name in ac if name not in AC_SEASONS]
@@ -671,8 +709,15 @@ def main():
         season = (buff_defs(s['stages']), set().union(*(stage_ids[id(st)] for st in s['stages'])))
         for st in s['stages']:
             explain_terms('AC%d %s' % (s['number'], st['boss']), st, stage_ids[id(st)], season, lookup, warnings.append)
-    for s in ac.values():
-        for st in s['stages']:
+    for c in co.values():
+        sids = set().union(*(stage_ids[id(st)] for st in c['stages']), *(u['ids'] for u in c.get('companions', [])))
+        chapter = (buff_defs(c['stages']), sids)
+        for st in c['stages']:
+            explain_terms('CO%d %s' % (c['chapter'], st['boss']), st, stage_ids[id(st)], chapter, lookup, warnings.append)
+        for u in c.get('companions', []):
+            explain_terms('CO%d %s' % (c['chapter'], u['name']), {'skills': u['skills']}, u.pop('ids'), chapter, lookup, warnings.append)
+    for s in list(ac.values()) + list(co.values()):
+        for st in s['stages'] + s.get('companions', []):
             for sk in st['skills']:
                 sk.pop('composed', None)
     for w in warnings:

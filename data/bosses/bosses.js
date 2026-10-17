@@ -777,7 +777,13 @@ window.BossesData = {
               "name": "Chain Shot",
               "kind": "active",
               "icon": "Icon_skill_main_1159",
-              "description": "Uses a Heavy Machine Gun to attack a target, dealing 1x DMG. Enables allies to launch [Link Attacks] against this target. These [Link Attacks] do not require allies to possess a specific skill and do not consume any Link chances."
+              "description": "Uses a Heavy Machine Gun to attack a target, dealing 1x DMG. Enables allies to launch [Link Attacks] against this target. These [Link Attacks] do not require allies to possess a specific skill and do not consume any Link chances.",
+              "buffs": [
+                {
+                  "name": "Link Attacks (Link Attack)",
+                  "description": "After an ally actively attacks, launches an Extra Strike on the same target."
+                }
+              ]
             },
             {
               "name": "Disruptive Bombing",
@@ -2523,7 +2529,7 @@ window.BossesData = {
                 },
                 {
                   "name": "Balance",
-                  "description": "Equalizes HP percentage across all parts. Destroyed parts are not included."
+                  "description": "Balances the HP percentage of all undestroyed parts."
                 },
                 {
                   "name": "Berserk Mode",
@@ -9346,7 +9352,69 @@ window.BossesData = {
             "body": 51127,
             "arm": 30724,
             "legs": 38285
-          }
+          },
+          "skills": [
+            {
+              "name": "Settlement",
+              "kind": "active",
+              "icon": "Icon_skill_order_5117",
+              "description": "Uses a Heavy Machine Gun to attack all targets in a cone ahead, dealing 0.55x AoE DMG. Dispels all buff effects possessed by the target."
+            },
+            {
+              "name": "Ultimate Tactics",
+              "kind": "passive",
+              "icon": "Icon_skill_passive_4118",
+              "description": "Cooperates with allies to launch a Heavy Machine Gun [Link Attack] against the target, dealing 0.5x DMG.\nWhen launching a [Link Attack], gains 1 stack of [Ultimate Aim], lasting for 2 turns. The ally who launches the attack gains 1 stack of [Ultimate Tactics], lasting for 2 turns.\nWhen possessing 5 or more stacks of [Ultimate Aim], gains [Ultimate DMG]. Does not stack. Lasts for 2 turns.",
+              "buffs": [
+                {
+                  "name": "Link Attack",
+                  "description": "After an ally actively attacks, launches an Extra Strike on the same target."
+                },
+                {
+                  "name": "Ultimate Aim",
+                  "description": "Hit Rate +20%. Stacks up to 5 times."
+                },
+                {
+                  "name": "Ultimate DMG",
+                  "description": "DMG Dealt +50%."
+                }
+              ]
+            },
+            {
+              "name": "Wide-Range Interception",
+              "kind": "passive",
+              "icon": "Icon_skill_passive_2109",
+              "description": "Uses a Heavy Machine Gun to intercept incoming rockets within maximum range, reducing their damage by 90%."
+            },
+            {
+              "name": "Super-conduct Shield",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_5116",
+              "description": "Translates to [System Failure] when affected by [Crash].",
+              "buffs": [
+                {
+                  "name": "System Failure",
+                  "description": "Unable to take action. Removed after taking damage or when the action starts."
+                },
+                {
+                  "name": "Crash",
+                  "description": "Unable to take action!"
+                }
+              ]
+            },
+            {
+              "name": "Special Training",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_4105",
+              "description": "Heavy Machine Gun Range +1. When one Arm is destroyed, Heavy Machine Gun Hit Rate does not decrease and can still launch [Link Attacks].",
+              "buffs": [
+                {
+                  "name": "Link Attacks (Link Attack)",
+                  "description": "After an ally actively attacks, launches an Extra Strike on the same target."
+                }
+              ]
+            }
+          ]
         },
         {
           "slot": 2,
@@ -9357,7 +9425,49 @@ window.BossesData = {
             "body": 49851,
             "arm": 29911,
             "legs": 37513
-          }
+          },
+          "skills": [
+            {
+              "name": "Magnetic Frenzy",
+              "kind": "active",
+              "icon": "Icon_skill_order_1005",
+              "description": "Uses a Rail Gun to attack all targets in a 1x5-tile line, dealing 1x DMG. After combat, inflicts [Super Overloaded] to the targets hit, lasting for 2 turns",
+              "buffs": [
+                {
+                  "name": "Super Overloaded",
+                  "description": "AP Cost +1 for normal attacks, active skills and codes. Stacks up to 5 times."
+                }
+              ]
+            },
+            {
+              "name": "Magneto Reunion",
+              "kind": "passive",
+              "icon": "Icon_skill_passive_4107",
+              "description": "When casting [Magnetic Frenzy], if 3 or more enemies are within the skill range, [Re-Act] can trigger after combat, up to 1 time per turn.",
+              "buffs": [
+                {
+                  "name": "Re-Act",
+                  "description": "If the target has [Arc Blast], restore 3 AP and trigger Re-Act."
+                }
+              ]
+            },
+            {
+              "name": "Super-conduct Shield",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_5116",
+              "description": "Translates to [System Failure] when affected by [Crash].",
+              "buffs": [
+                {
+                  "name": "System Failure",
+                  "description": "Unable to take action. Removed after taking damage or when the action starts."
+                },
+                {
+                  "name": "Crash",
+                  "description": "Unable to take action!"
+                }
+              ]
+            }
+          ]
         },
         {
           "slot": 3,
@@ -9368,7 +9478,55 @@ window.BossesData = {
             "body": 51043,
             "arm": 30626,
             "legs": 38410
-          }
+          },
+          "skills": [
+            {
+              "name": "Thunder Ballistics",
+              "kind": "active",
+              "icon": "Icon_skill_order_1008",
+              "description": "After 1 turn, uses a Missile Launcher to lock onto a random target on the battlefield, dealing 1x DMG to 1 part and Splash DMG equal to 50% of this damage to other parts."
+            },
+            {
+              "name": "Fracture Field",
+              "kind": "active",
+              "icon": "Icon_skill_order_1118",
+              "description": "After 1 turn, uses a Rocket Launcher to attack all targets within 2 rings, dealing 0.5x AoE DMG to all parts of each target."
+            },
+            {
+              "name": "Command Hub",
+              "kind": "passive",
+              "icon": "Icon_skill_passive_5102",
+              "description": "After being attacked and drawn into combat, all allies within 2 rings retaliate against the attacker."
+            },
+            {
+              "name": "Super-conduct Shield",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_5116",
+              "description": "Translates to [System Failure] when affected by [Crash].",
+              "buffs": [
+                {
+                  "name": "System Failure",
+                  "description": "Unable to take action. Removed after taking damage or when the action starts."
+                },
+                {
+                  "name": "Crash",
+                  "description": "Unable to take action!"
+                }
+              ]
+            },
+            {
+              "name": "Locking Engine",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_5107",
+              "description": "When actively attacking with a Tactical Weapon, inflicts [Bearing Deformation] on the target hit, lasting for 1 turn.",
+              "buffs": [
+                {
+                  "name": "Bearing Deformation",
+                  "description": "DMG Dealt -20% for every 1 tile moved during this turn."
+                }
+              ]
+            }
+          ]
         },
         {
           "slot": 4,
@@ -9379,9 +9537,87 @@ window.BossesData = {
             "body": 52243,
             "arm": 31346,
             "legs": 39313
-          }
+          },
+          "skills": [
+            {
+              "name": "Thermobaric Missile",
+              "kind": "active",
+              "icon": "Icon_skill_order_1006",
+              "description": "Uses a Missile Launcher to attack a target, dealing 1.0x DMG to the part hit and Splash DMG equal to 50% of this damage to other parts. After combat, deals [Fixed DMG] equal to 0.5x DMG to the target hit and units within 1 adjacent tile.",
+              "buffs": [
+                {
+                  "name": "Fixed DMG",
+                  "description": "Ignores Armor and DMG Reduction to deal damage once."
+                }
+              ]
+            },
+            {
+              "name": "Battle Frenzy",
+              "kind": "passive",
+              "icon": "Icon_skill_passive_1147",
+              "description": "Gain DMG Taken -75% and DMG Dealt +140%. DMG Taken +25% for every debuff the unit has, up to 100%. DMG Dealt -25% for every debuff the unit has, up to 100%."
+            },
+            {
+              "name": "Mobile Fortress",
+              "kind": "passive",
+              "icon": "Icon_skill_passive_2111",
+              "description": "When both Arms are undestroyed, performs [Guard] to protect allies within 2 adjacent tiles. At end of action, if any Arm is destroyed, repairs and restores 5% of HP to both Arms. After taking damage from attacks or retaliations, if any part is destroyed, inflicts [Re-Act Disabled] on the attacker, lasting for 1 turn.",
+              "buffs": [
+                {
+                  "name": "Guard",
+                  "description": "Protects allies within 2 adjacent tiles from Assault and Ranged attacks. Triggers up to 2 times per turn and lasts 2 turns. Additionally, gains [Defensive Stance I]. Can only trigger 1 time per turn."
+                },
+                {
+                  "name": "Re-Act Disabled",
+                  "description": "Disable the triggering of [Re-Act] and [Re-ATK]."
+                },
+                {
+                  "name": "Defensive Stance I",
+                  "description": "DMG Taken -15%."
+                },
+                {
+                  "name": "Re-Act",
+                  "description": "If the target has [Arc Blast], restore 3 AP and trigger Re-Act."
+                },
+                {
+                  "name": "Re-ATK",
+                  "description": "After the current attack ends, trigger one additional attack. Unable to move before the additional attack unless stated otherwise."
+                }
+              ]
+            },
+            {
+              "name": "Super-conduct Shield",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_5116",
+              "description": "Translates to [System Failure] when affected by [Crash].",
+              "buffs": [
+                {
+                  "name": "System Failure",
+                  "description": "Unable to take action. Removed after taking damage or when the action starts."
+                },
+                {
+                  "name": "Crash",
+                  "description": "Unable to take action!"
+                }
+              ]
+            },
+            {
+              "name": "Night Enforcer",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_1118",
+              "description": "When unable to retaliate after being attacked, ignores Ammo Capacity and uses a Missile Launcher to retaliate.",
+              "buffs": [
+                {
+                  "name": "Night Enforcer",
+                  "description": "If unable to retaliate when attacked, missile retaliation is initiated after combat."
+                }
+              ]
+            }
+          ]
         }
-      ]
+      ],
+      "description": "At the crossroads, going left or right is a philosophical question. If given another chance, would they still set foot on Milkhama and choose to become mercenaries?",
+      "turns": 10
     },
     {
       "chapter": 16,
@@ -9397,7 +9633,65 @@ window.BossesData = {
             "body": 41362,
             "arm": 24817,
             "legs": 31125
-          }
+          },
+          "skills": [
+            {
+              "name": "Eye of the Vortex",
+              "kind": "active",
+              "icon": "Icon_skill_main_1129",
+              "description": "Simultaneously uses two Machine Guns to attack a target, dealing 0.75x DMG 2 times."
+            },
+            {
+              "name": "Stormbringer",
+              "kind": "active",
+              "icon": "Icon_skill_order_1107",
+              "description": "Simultaneously uses two Machine Guns to attack all targets within a 3x3-tile area ahead, dealing 0.38x AoE DMG 2 times."
+            },
+            {
+              "name": "Protective Mechanism",
+              "kind": "passive",
+              "icon": "Icon_skill_passive_3116",
+              "description": "When Overall HP drops below 50% for the first time, restores 20% HP to both Arms. Can repair destroyed Arms. Grants [Part Enhancement] to 1 random undestroyed non-Body part.",
+              "buffs": [
+                {
+                  "name": "Part Enhancement",
+                  "description": "Parts gain 30% Temporary HP."
+                }
+              ]
+            },
+            {
+              "name": "Super-conduct Shield",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_5116",
+              "description": "Translates to [System Failure] when affected by [Crash].",
+              "buffs": [
+                {
+                  "name": "System Failure",
+                  "description": "Unable to take action. Removed after taking damage or when the action starts."
+                },
+                {
+                  "name": "Crash",
+                  "description": "Unable to take action!"
+                }
+              ]
+            },
+            {
+              "name": "Vortex",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_4104",
+              "description": "At start of battle, randomly grants [Part Enhancement] to a non-Body part. After actively attacking, randomly grants [Part Enhancement] to 1 undestroyed non-Body part after combat. When affected by a Temporary HP Cap effect, gains DMG +100%, and triggers [Cross Spray] after retaliation.",
+              "buffs": [
+                {
+                  "name": "Part Enhancement",
+                  "description": "Parts gain 30% Temporary HP."
+                },
+                {
+                  "name": "Cross Spray",
+                  "description": "When retaliating with two Machine Guns, deals 0.35x AoE DMG twice to primary target and all units within 1 adjacent tile."
+                }
+              ]
+            }
+          ]
         },
         {
           "slot": 2,
@@ -9408,7 +9702,93 @@ window.BossesData = {
             "body": 42839,
             "arm": 25704,
             "legs": 32237
-          }
+          },
+          "skills": [
+            {
+              "name": "Imprisoning Shot",
+              "kind": "active",
+              "icon": "Icon_skill_main_1016",
+              "description": "Uses a Machine Gun to attack a target, dealing 1.5x DMG. After combat, gains [Core Destruction], [Repair Destruction], [Weapon Destruction], and [Actuator Failure] based on the number of parts hit, lasting for 1 turn.",
+              "buffs": [
+                {
+                  "name": "Core Destruction",
+                  "description": "After dealing damage, applies [DMG Taken UP IV] to the target hit, lasting for 1 turn."
+                },
+                {
+                  "name": "Repair Destruction",
+                  "description": "After dealing damage, applies [Repair AMT Received Down XII] to the target hit, lasting for 1 turn."
+                },
+                {
+                  "name": "Weapon Destruction",
+                  "description": "After dealing damage, applies [Disarm] to the target hit, lasting for 1 turn."
+                },
+                {
+                  "name": "Actuator Failure",
+                  "description": "After dealing damage, applies [Intimidation] to the target hit, lasting for 1 turn."
+                },
+                {
+                  "name": "DMG Taken UP IV",
+                  "description": "DMG Taken +25%."
+                },
+                {
+                  "name": "Repair AMT Received Down XII",
+                  "description": "Repair AMT Received -99%."
+                },
+                {
+                  "name": "Disarm",
+                  "description": "Unable to use Normal Attacks, Active Skills, or Codes."
+                },
+                {
+                  "name": "Intimidation",
+                  "description": "Unable to move."
+                }
+              ]
+            },
+            {
+              "name": "Cluster Penetration",
+              "kind": "active",
+              "icon": "Icon_skill_order_1109",
+              "description": "Uses a Rail Gun to attack all targets in a 3x5-tile area ahead, dealing 1x AoE DMG. For each target hit, gains 1 stack of [ATK UP III] after combat, lasting for 1 turn.",
+              "buffs": [
+                {
+                  "name": "ATK UP III",
+                  "description": "ATK +25%. Stacks up to 99 times."
+                }
+              ]
+            },
+            {
+              "name": "Super-conduct Shield",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_5116",
+              "description": "Translates to [System Failure] when affected by [Crash].",
+              "buffs": [
+                {
+                  "name": "System Failure",
+                  "description": "Unable to take action. Removed after taking damage or when the action starts."
+                },
+                {
+                  "name": "Crash",
+                  "description": "Unable to take action!"
+                }
+              ]
+            },
+            {
+              "name": "Battle Maniac",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_4103",
+              "description": "After destroying a part with an active attack, triggers [Re-Act]. Can only trigger 1 time per turn.",
+              "buffs": [
+                {
+                  "name": "Re-Act",
+                  "description": "After actively attacking, triggers [Re-Act] once by consuming 1 stack of [Footwork] after combat. Stacks up to 3 times. Removed when action ends."
+                },
+                {
+                  "name": "Footwork",
+                  "description": "After actively attacking, triggers [Re-Act] once by consuming 1 stack of [Footwork] after combat. Stacks up to 3 times. Removed when action ends."
+                }
+              ]
+            }
+          ]
         },
         {
           "slot": 3,
@@ -9419,7 +9799,79 @@ window.BossesData = {
             "body": 50778,
             "arm": 30467,
             "legs": 25389
-          }
+          },
+          "skills": [
+            {
+              "name": "Berserk Assault",
+              "kind": "active",
+              "icon": "Icon_skill_order_5138",
+              "description": "Can be executed when Legs are undestroyed. Selects 1 empty tile within range and jumps to the selected tile. The selectable range is equal to current Movement. Triggers [Re-ATK] afterward. Cannot move before attacking.",
+              "buffs": [
+                {
+                  "name": "Re-ATK",
+                  "description": "After the current attack ends, trigger one additional attack. Unable to move before the additional attack unless stated otherwise."
+                }
+              ]
+            },
+            {
+              "name": "Tactical Hook",
+              "kind": "active",
+              "icon": "Icon_skill_order_1119",
+              "description": "Uses Hooks to attack a target, pulling it in front of the unit and dealing [Fixed DMG] equal to 15% of its Max HP. After combat, inflicts [Movement Inhibition I] and [Guard Block] on the target hit, lasting for 2 turns, and can then perform [Re-ATK] in place.",
+              "buffs": [
+                {
+                  "name": "Fixed DMG",
+                  "description": "Ignores Armor and DMG Reduction to deal damage once."
+                },
+                {
+                  "name": "Movement Inhibition I",
+                  "description": "Movement -1."
+                },
+                {
+                  "name": "Re-ATK",
+                  "description": "After the current attack ends, trigger one additional attack. Unable to move before the additional attack unless stated otherwise."
+                }
+              ]
+            },
+            {
+              "name": "Desperate Reversal",
+              "kind": "passive",
+              "icon": "Icon_skill_passive_3124",
+              "description": "When its HP drops below 50% of Max HP, restores 40% of Max HP to both Arms and can repair destroyed Arms. Can trigger once. After triggering, prioritizes attacking the target's Body part during battle."
+            },
+            {
+              "name": "Super-conduct Shield",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_5116",
+              "description": "Translates to [System Failure] when affected by [Crash].",
+              "buffs": [
+                {
+                  "name": "System Failure",
+                  "description": "Unable to take action. Removed after taking damage or when the action starts."
+                },
+                {
+                  "name": "Crash",
+                  "description": "Unable to take action!"
+                }
+              ]
+            },
+            {
+              "name": "I'm Fired Up!",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_1102",
+              "description": "After taking action, applies [Burning Terrain] to tiles within a 1-ring area around self. If the current tile already has [Burning Terrain], then applies [Burning Terrain] to tiles within a 2-ring area around self.",
+              "buffs": [
+                {
+                  "name": "Burning Terrain",
+                  "description": "Deals [Fixed DMG] equal to 12% of Max HP to all parts of enemies that remain on this tile."
+                },
+                {
+                  "name": "Fixed DMG",
+                  "description": "Ignores Armor and DMG Reduction to deal damage once."
+                }
+              ]
+            }
+          ]
         },
         {
           "slot": 4,
@@ -9430,9 +9882,71 @@ window.BossesData = {
             "body": 52807,
             "arm": 31684,
             "legs": 26403
-          }
+          },
+          "skills": [
+            {
+              "name": "Focused Sniping",
+              "kind": "active",
+              "icon": "Icon_skill_main_1017",
+              "description": "Uses a Sniper Rifle to attack a target, dealing 1.0x DMG. Before combat, if the target's part is undestroyed, applies [Weakness Data] to it.",
+              "buffs": [
+                {
+                  "name": "Weakness Data",
+                  "description": "After end of action, removes all stacks of [Weakness Data] from self and applies the same number of stacks [Weakness Data] to one random ally within 1 adjacent tile. Stacks up to 2 times."
+                }
+              ]
+            },
+            {
+              "name": "Mental Suppression",
+              "kind": "passive",
+              "icon": "Icon_skill_passive_4001",
+              "description": "If any enemy on the battlefield has destroyed parts, it cannot transfer [Weakness Data] to other units.",
+              "buffs": [
+                {
+                  "name": "Weakness Data",
+                  "description": "After end of action, removes all stacks of [Weakness Data] from self and applies the same number of stacks [Weakness Data] to one random ally within 1 adjacent tile. Stacks up to 2 times."
+                }
+              ]
+            },
+            {
+              "name": "Vigilant Shot",
+              "kind": "passive",
+              "icon": "Icon_skill_passive_5007",
+              "description": "Provide cover fire for allies by launching [Vigilant Shot] before the enemy attacks, dealing 0.7x DMG. Can trigger up to 5 times per turn."
+            },
+            {
+              "name": "Super-conduct Shield",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_5116",
+              "description": "Translates to [System Failure] when affected by [Crash].",
+              "buffs": [
+                {
+                  "name": "System Failure",
+                  "description": "Unable to take action. Removed after taking damage or when the action starts."
+                },
+                {
+                  "name": "Crash",
+                  "description": "Unable to take action!"
+                }
+              ]
+            },
+            {
+              "name": "Unassailable",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_2105",
+              "description": "Before being actively attacked, reduces the attacker's Final DMG by 80% for this attack. When actively attacked, for each stack of [Weakness Data] the attacker possesses, the Final DMG to Bertha is increased by 50% for this attack.",
+              "buffs": [
+                {
+                  "name": "Weakness Data",
+                  "description": "After end of action, removes all stacks of [Weakness Data] from self and applies the same number of stacks [Weakness Data] to one random ally within 1 adjacent tile. Stacks up to 2 times."
+                }
+              ]
+            }
+          ]
         }
-      ]
+      ],
+      "description": "For so many years, Milkhama has been like this. A genius rises here, a nova appears there, today a rising star emerges, and tomorrow there will be a supernova. They are all eager to prove themselves, but as for the outcome, that's hard to say.",
+      "turns": 15
     },
     {
       "chapter": 15,
@@ -9448,7 +9962,101 @@ window.BossesData = {
             "body": 37392,
             "arm": 22336,
             "legs": 27920
-          }
+          },
+          "skills": [
+            {
+              "name": "Shooting Frenzy",
+              "kind": "active",
+              "icon": "Icon_skill_main_1105",
+              "description": "Uses a Light Rifle to attack a random target within a 3x5-tile area ahead, dealing 1.2x DMG. Fires 5 times, prioritizing targets that have not yet been attacked."
+            },
+            {
+              "name": "Efficient Evacuation",
+              "kind": "passive",
+              "icon": "Icon_skill_passive_1149",
+              "description": "When actively attacking or retaliating, DMG Dealt +50% and Hit +8% for every debuff the target has. After being actively attacked and entering combat, DMG Dealt -20% for every debuff the attacker has, up to 80%."
+            },
+            {
+              "name": "Needle Reflex",
+              "kind": "passive",
+              "icon": "Icon_skill_passive_1129",
+              "description": "After being actively attacked and entering combat, inflicts 1 random debuff on the attacker after combat.",
+              "buffs": [
+                {
+                  "name": "DMG Taken UP II",
+                  "description": "DMG Taken +15%. Stacks up to 5 times."
+                },
+                {
+                  "name": "DMG Down II",
+                  "description": "DMG Dealt -15%. Stacks up to 5 times."
+                },
+                {
+                  "name": "Mobility Impairment",
+                  "description": "Dodge Rate -15%. Stacks up to 5 times."
+                },
+                {
+                  "name": "Hit Rate Down IV",
+                  "description": "Hit Rate -15%. Stacks up to 5 times."
+                }
+              ]
+            },
+            {
+              "name": "Super-conduct Shield",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_5116",
+              "description": "Translates to [System Failure] when affected by [Crash].",
+              "buffs": [
+                {
+                  "name": "System Failure",
+                  "description": "Unable to take action. Removed after taking damage or when the action starts."
+                },
+                {
+                  "name": "Crash",
+                  "description": "Unable to take action!"
+                }
+              ]
+            },
+            {
+              "name": "Heart of Thorns",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_1119",
+              "description": "When actively attacking, inflicts [Spore Mark] and 1 random debuff on the target hit after combat.",
+              "buffs": [
+                {
+                  "name": "DMG Taken UP II",
+                  "description": "DMG Taken +15%. Stacks up to 5 times."
+                },
+                {
+                  "name": "DMG Down II",
+                  "description": "DMG Dealt -15%. Stacks up to 5 times."
+                },
+                {
+                  "name": "Mobility Impairment",
+                  "description": "Dodge Rate -15%. Stacks up to 5 times."
+                },
+                {
+                  "name": "Hit Rate Down IV",
+                  "description": "Hit Rate -15%. Stacks up to 5 times."
+                },
+                {
+                  "name": "Spore Mark",
+                  "description": "When attacked, randomly gains [Splinter] or [Spikes] after combat. Lasts for 1 turn. Removed after triggering once.\n[Splinter]: Cannot execute active skills, Retaliation, or Vigilant Shot.\n[Spikes]: Instantly dispels all buffs. Repair Disabled. Cannot repair destroyed parts. At end of action, all parts take [Fixed DMG] equal to 20% of Max HP. This damage does not destroy parts."
+                },
+                {
+                  "name": "Splinter",
+                  "description": "Unable to execute active skills. Unable to perform Retaliation or Vigilant Shot."
+                },
+                {
+                  "name": "Spikes",
+                  "description": "Instantly dispels all buffs. Repair Disabled. Cannot repair destroyed parts. At end of action, all parts take [Fixed DMG] equal to 20% of Max HP."
+                },
+                {
+                  "name": "Fixed DMG",
+                  "description": "Ignores Armor and DMG Reduction to deal damage once."
+                }
+              ]
+            }
+          ]
         },
         {
           "slot": 2,
@@ -9459,7 +10067,65 @@ window.BossesData = {
             "body": 42478,
             "arm": 25526,
             "legs": 31808
-          }
+          },
+          "skills": [
+            {
+              "name": "Overfire",
+              "kind": "active",
+              "icon": "Icon_skill_order_1010",
+              "description": "Uses a Heavy Machine Gun to attack all targets in a cone ahead, dealing 1.5x DMG and inflicting [FCS Failure] on targets hit for 1 turn.",
+              "buffs": [
+                {
+                  "name": "FCS Failure",
+                  "description": "Unable to use any Active Skills or Codes except for the Normal Attack."
+                }
+              ]
+            },
+            {
+              "name": "Re-Raid",
+              "kind": "passive",
+              "icon": "Icon_skill_passive_1135",
+              "description": "If there are 3 or more enemy units within active attack skill range, triggers [Re-Act] after combat. Can only trigger 1 time per turn.",
+              "buffs": [
+                {
+                  "name": "Re-Act",
+                  "description": "Re-Act"
+                }
+              ]
+            },
+            {
+              "name": "Super-conduct Shield",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_5116",
+              "description": "Translates to [System Failure] when affected by [Crash].",
+              "buffs": [
+                {
+                  "name": "System Failure",
+                  "description": "Unable to take action. Removed after taking damage or when the action starts."
+                },
+                {
+                  "name": "Crash",
+                  "description": "Unable to take action!"
+                }
+              ]
+            },
+            {
+              "name": "Strategist",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_5136",
+              "description": "When actively attacking with a Heavy Machine Gun, inflicts [Electric Surge Terrain] on tiles hit after combat, lasting for 2 turns.",
+              "buffs": [
+                {
+                  "name": "Electric Surge Terrain",
+                  "description": "Applies [FCS Failure] to enemies that remain on this tile, lasting for 1 turn."
+                },
+                {
+                  "name": "FCS Failure",
+                  "description": "Unable to use any Active Skills or Codes except for the Normal Attack."
+                }
+              ]
+            }
+          ]
         },
         {
           "slot": 3,
@@ -9470,7 +10136,55 @@ window.BossesData = {
             "body": 42169,
             "arm": 27628,
             "legs": 21292
-          }
+          },
+          "skills": [
+            {
+              "name": "Chaos Vanguard",
+              "kind": "active",
+              "icon": "Icon_skill_order_1131",
+              "description": "Uses two Alter-Blades to Attack in a specified direction, dealing 1x DMG to the target. If there are adjacent enemies in that direction, can continue to attack adjacent units, hitting up to 3 enemy units, then stopping on the opposite side of the farthest target."
+            },
+            {
+              "name": "Indomitable Will",
+              "kind": "passive",
+              "icon": "Icon_skill_passive_2110",
+              "description": "When taking damage from an active attack, gains [Indomitable Will]. Stacks up to 3 times. Lasts for 1 turn."
+            },
+            {
+              "name": "Bloody Battle",
+              "kind": "passive",
+              "icon": "Icon_skill_passive_3119",
+              "description": "After actively attacking, restores HP equal to 100% of the damage dealt. Can repair 1 destroyed part. Any overflow Repair AMT is converted into Temporary HP, up to 30%."
+            },
+            {
+              "name": "Super-conduct Shield",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_5116",
+              "description": "Translates to [System Failure] when affected by [Crash].",
+              "buffs": [
+                {
+                  "name": "System Failure",
+                  "description": "Unable to take action. Removed after taking damage or when the action starts."
+                },
+                {
+                  "name": "Crash",
+                  "description": "Unable to take action!"
+                }
+              ]
+            },
+            {
+              "name": "Street Fighter",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_4108",
+              "description": "When attacking, Hit Weighting of the part with the lowest HP +80, and DMG +50%. If a part is destroyed, restores 2 AP and triggers [Re-Act].",
+              "buffs": [
+                {
+                  "name": "Re-Act",
+                  "description": "Can launch active attacks again. Before attacking, can move with full movement distance."
+                }
+              ]
+            }
+          ]
         },
         {
           "slot": 4,
@@ -9481,9 +10195,75 @@ window.BossesData = {
             "body": 48614,
             "arm": 23439,
             "legs": 35213
-          }
+          },
+          "skills": [
+            {
+              "name": "Firepower Is Justice",
+              "kind": "active",
+              "icon": "Icon_skill_order_1130",
+              "description": "Fires all Missile Launcher Ammo to attack all targets within range. Each missile deals 1x DMG to the part hit and Splash DMG equal to 50% of this damage to other parts. Each missile fired consumes 1 AP, until Ammo or AP is exhausted. A single target can be attacked a maximum of 5 times."
+            },
+            {
+              "name": "Covering Fire",
+              "kind": "passive",
+              "icon": "Icon_skill_passive_5008",
+              "description": "Before an enemy within range initiates an active attack or after entering Standby, triggers [Vigilant Shot] with a Missile Launcher, dealing 1x DMG to the part hit and 50% Splash DMG to other parts. After combat, applies [Covering Fire] to the target for 1 turn.",
+              "buffs": [
+                {
+                  "name": "Covering Fire",
+                  "description": "When taking DMG from Tactical Weapons, DMG Taken +100%."
+                },
+                {
+                  "name": "Vigilant Shot",
+                  "description": "Preempts an attack before the enemy attempts to attack other allies."
+                }
+              ]
+            },
+            {
+              "name": "Military Tradition",
+              "kind": "passive",
+              "icon": "Icon_skill_passive_5189",
+              "description": "Gains [Military Tradition].",
+              "buffs": [
+                {
+                  "name": "Military Tradition",
+                  "description": "For each ally within 3 adjacent tiles, DMG Taken -25%, up to a maximum of -100%."
+                }
+              ]
+            },
+            {
+              "name": "Super-conduct Shield",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_5116",
+              "description": "Translates to [System Failure] when affected by [Crash].",
+              "buffs": [
+                {
+                  "name": "System Failure",
+                  "description": "Unable to take action. Removed after taking damage or when the action starts."
+                },
+                {
+                  "name": "Crash",
+                  "description": "Unable to take action!"
+                }
+              ]
+            },
+            {
+              "name": "Silent Patience",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_5118",
+              "description": "When forced into combat, if Retaliation is disabled, immediately restores 3 AP and fully reloads all Missile Launcher Ammo."
+            },
+            {
+              "name": "TacW Capacity UP II",
+              "kind": "passive",
+              "icon": "Icon_skill_passive_5163",
+              "description": "Tactical Weapon Ammo Capacity +2.\nST Body HP +10% and DMG +5%."
+            }
+          ]
         }
-      ]
+      ],
+      "description": "The situation in Milkhama is turbulent, with various forces stepping in, intertwining with each other, each harboring ulterior motives and waiting for the best opportunity to intervene.",
+      "turns": 15
     },
     {
       "chapter": 14,
@@ -9499,7 +10279,69 @@ window.BossesData = {
             "body": 36734,
             "arm": 18367,
             "legs": 27593
-          }
+          },
+          "skills": [
+            {
+              "name": "Magnetic Frenzy",
+              "kind": "active",
+              "icon": "Icon_skill_order_1005",
+              "description": "Uses a Rail Gun to attack all targets in a 1x5-tile line, dealing 1x DMG. After combat, inflicts [Super Overloaded] to the targets hit, lasting for 2 turns",
+              "buffs": [
+                {
+                  "name": "Super Overloaded",
+                  "description": "AP Cost +1 for normal attacks, active skills and codes. Stacks up to 5 times."
+                }
+              ]
+            },
+            {
+              "name": "Magneto Reunion",
+              "kind": "passive",
+              "icon": "Icon_skill_passive_4107",
+              "description": "When casting [Magnetic Frenzy], if 3 or more enemies are within the skill range, [Re-Act] can trigger after combat, up to 1 time per turn.",
+              "buffs": [
+                {
+                  "name": "Re-Act",
+                  "description": "Can launch active attacks again. Before attacking, can move with full movement distance."
+                }
+              ]
+            },
+            {
+              "name": "Astute Mod",
+              "kind": "passive",
+              "icon": "Icon_skill_passive_4114",
+              "description": "When attacking with a Rail Gun, each target within attack range increases Dodge Rate by 20%, up to 60%, lasting for 1 turn.",
+              "buffs": [
+                {
+                  "name": "Alert Mode I",
+                  "description": "Dodge Rate +20%."
+                },
+                {
+                  "name": "Alert Mode II",
+                  "description": "Dodge Rate +40%."
+                },
+                {
+                  "name": "Alert Mode III",
+                  "description": "Dodge Rate +60%."
+                }
+              ]
+            },
+            {
+              "name": "Super-conduct Shield",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_5116",
+              "description": "Translates to [System Failure] when affected by [Crash].",
+              "buffs": [
+                {
+                  "name": "System Failure",
+                  "description": "Unable to take action. Removed after taking damage or when the action starts."
+                },
+                {
+                  "name": "Crash",
+                  "description": "Unable to take action!"
+                }
+              ]
+            }
+          ]
         },
         {
           "slot": 2,
@@ -9510,7 +10352,75 @@ window.BossesData = {
             "body": 37113,
             "arm": 24315,
             "legs": 18739
-          }
+          },
+          "skills": [
+            {
+              "name": "‌Lightning Orb",
+              "kind": "active",
+              "icon": "Icon_skill_order_1005",
+              "description": "Attacks a target with a ‌Lightning Orb, dealing 2x DMG. The ‌Lightning Orb is automatically passed to all enemies within 1 ring of each target, with the damage reduced by 10% for each additional ring it passes through. Each unit only receives damage once."
+            },
+            {
+              "name": "Stasis Trap",
+              "kind": "passive",
+              "icon": "Icon_skill_passive_5164",
+              "description": "When attacked and retaliating, if Body HP is below 50%, inflicts [Vengeance Mark] on enemies within 3 adjacent tiles after combat, lasting for 1 turn. Can trigger 1 time per battle.",
+              "buffs": [
+                {
+                  "name": "Vengeance Mark",
+                  "description": "DMG Taken +10%."
+                }
+              ]
+            },
+            {
+              "name": "Mark Perception",
+              "kind": "passive",
+              "icon": "Icon_skill_passive_5128",
+              "description": "For every 1 target afflicted with [Vengeance Mark] within 3 adjacent tiles, Dodge +30%, up to 90%.",
+              "buffs": [
+                {
+                  "name": "Mark Perception",
+                  "description": "For every 1 target afflicted with [Vengeance Mark] within 3 adjacent tiles, gains Dodge +30%, up to 90%."
+                },
+                {
+                  "name": "Vengeance Mark",
+                  "description": "DMG Taken +10%."
+                }
+              ]
+            },
+            {
+              "name": "Super-conduct Shield",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_5116",
+              "description": "Translates to [System Failure] when affected by [Crash].",
+              "buffs": [
+                {
+                  "name": "System Failure",
+                  "description": "Unable to take action. Removed after taking damage or when the action starts."
+                },
+                {
+                  "name": "Crash",
+                  "description": "Unable to take action!"
+                }
+              ]
+            },
+            {
+              "name": "Vengeful Howl",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_5104",
+              "description": "When attacking, if damage is dealt, inflicts [Vengeance Mark] on the target, lasting for 1 turn.",
+              "buffs": [
+                {
+                  "name": "Vengeance Mark",
+                  "description": "DMG Taken +10%."
+                },
+                {
+                  "name": "Vengeful Howl",
+                  "description": "When attacking, if damage is dealt, inflict the target with a [Vengeance Mark] after combat."
+                }
+              ]
+            }
+          ]
         },
         {
           "slot": 3,
@@ -9521,7 +10431,65 @@ window.BossesData = {
             "body": 38798,
             "arm": 25419,
             "legs": 19590
-          }
+          },
+          "skills": [
+            {
+              "name": "Kick When is Down",
+              "kind": "active",
+              "icon": "Icon_skill_main_1151",
+              "description": "Uses a Flamethrower to attack the main target, dealing 1.2x DMG, and randomly attacks 1 other target within range with the Flamethrower on the opposite Arm, dealing 100% [Flame DMG] to other targets in the path. Before combat, inflicts 2 stacks of [Pump] on the main target, lasting for 2 turns.",
+              "buffs": [
+                {
+                  "name": "Flame DMG",
+                  "description": "Damage dealt is based on the multiplier percentage of the main skill."
+                }
+              ]
+            },
+            {
+              "name": "Pump",
+              "kind": "passive",
+              "icon": "Icon_skill_passive_5147",
+              "description": "Both Arms gain permanent [Guts].\nWhen attacking, applies 2 stacks of [Pump] to all targets hit after combat, lasting for 2 turns.",
+              "buffs": [
+                {
+                  "name": "Pump",
+                  "description": "Hit Rate -12%. Stacks up to 10 times."
+                },
+                {
+                  "name": "Guts",
+                  "description": "If Body HP is below 1%, remove Body Guts."
+                }
+              ]
+            },
+            {
+              "name": "Hidden Hand",
+              "kind": "passive",
+              "icon": "Icon_skill_passive_1147",
+              "description": "When attacking, for each 1 stack of [Pump] on the target, DMG +10%."
+            },
+            {
+              "name": "Super-conduct Shield",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_5116",
+              "description": "Translates to [System Failure] when affected by [Crash].",
+              "buffs": [
+                {
+                  "name": "System Failure",
+                  "description": "Unable to take action. Removed after taking damage or when the action starts."
+                },
+                {
+                  "name": "Crash",
+                  "description": "Unable to take action!"
+                }
+              ]
+            },
+            {
+              "name": "Ace Enforcer",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_2101",
+              "description": "For every 1% decrease in HP, Dodge Rate +0.5%. When dodging completely, repairs all destroyed parts and restores 15% of Max HP to all parts."
+            }
+          ]
         },
         {
           "slot": 4,
@@ -9532,9 +10500,75 @@ window.BossesData = {
             "body": 42478,
             "arm": 25526,
             "legs": 31808
-          }
+          },
+          "skills": [
+            {
+              "name": "Rampage Shot",
+              "kind": "active",
+              "icon": "Icon_skill_main_1015",
+              "description": "Uses a Heavy Machine Gun to attack a target, dealing 1.3x DMG. After combat, inflicts [Primary Goal] on the target, lasting for 1 turn.",
+              "buffs": [
+                {
+                  "name": "Primary Goal",
+                  "description": "When attacked by [Full Recoil], DMG Taken +100%."
+                }
+              ]
+            },
+            {
+              "name": "Full Recoil",
+              "kind": "passive",
+              "icon": "Icon_skill_passive_1133",
+              "description": "When attacked, uses a Heavy Machine Gun to attack all targets within attack range after combat, dealing 0.7x DMG."
+            },
+            {
+              "name": "Dynamic Armor",
+              "kind": "passive",
+              "icon": "Icon_skill_passive_3126",
+              "description": "At start of action, triggers [Balance].",
+              "buffs": [
+                {
+                  "name": "Phase Shift 1",
+                  "description": "At start of action, balances the HP percentage of all undestroyed parts."
+                },
+                {
+                  "name": "Balance",
+                  "description": "Balances the HP percentage of all undestroyed parts."
+                }
+              ]
+            },
+            {
+              "name": "Super-conduct Shield",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_5116",
+              "description": "Translates to [System Failure] when affected by [Crash].",
+              "buffs": [
+                {
+                  "name": "System Failure",
+                  "description": "Unable to take action. Removed after taking damage or when the action starts."
+                },
+                {
+                  "name": "Crash",
+                  "description": "Unable to take action!"
+                }
+              ]
+            },
+            {
+              "name": "Energized Armor",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_2102",
+              "description": "At the start of battle, gains 2 stacks of [Armor UP I].\nWhen attacking, gains 1 stack of [Armor UP I] after combat for each target hit.\nFor each stack of [Armor UP I] possessed, DMG +10%.",
+              "buffs": [
+                {
+                  "name": "Armor UP I",
+                  "description": "Armor +35%. Stacks up to 10 times."
+                }
+              ]
+            }
+          ]
         }
-      ]
+      ],
+      "description": "Strength is the only means to ensure balance. Now, the UNCS's military power is weak, forcing the military to employ various forces, even including former fugitives. Of course, this is done privately.",
+      "turns": 15
     },
     {
       "chapter": 13,
@@ -9550,7 +10584,69 @@ window.BossesData = {
             "body": 31233,
             "arm": 15617,
             "legs": 23461
-          }
+          },
+          "skills": [
+            {
+              "name": "Breach Blaze",
+              "kind": "active",
+              "icon": "Icon_skill_order_1123",
+              "description": "Uses two Flamethrowers to attack all targets within attack range, dealing 1.0x DMG 2 times. After combat, applies [Burning Terrain] to all tiles within range, lasting for 3 turns.",
+              "buffs": [
+                {
+                  "name": "Burning Terrain",
+                  "description": "Deals fixed damage equal to 12% of Max HP to units that remain on this tile. Lasts for 3 turns."
+                }
+              ]
+            },
+            {
+              "name": "Ally Mark",
+              "kind": "passive",
+              "icon": "Icon_skill_passive_5123",
+              "description": "DMG +80% against enemies on allied [Burning Terrain]. When on allied [Burning Terrain], DMG Taken -80%.",
+              "buffs": [
+                {
+                  "name": "Burning Terrain",
+                  "description": "Deals fixed damage equal to 12% of Max HP to units that remain on this tile. Lasts for 3 turns."
+                }
+              ]
+            },
+            {
+              "name": "Super-conduct Shield",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_5116",
+              "description": "Translates to [System Failure] when affected by [Crash].",
+              "buffs": [
+                {
+                  "name": "System Failure",
+                  "description": "Unable to take action. Removed after taking damage or when the action starts."
+                },
+                {
+                  "name": "Crash",
+                  "description": "Unable to take action!"
+                }
+              ]
+            },
+            {
+              "name": "Split Intent",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_5131",
+              "description": "When using a Flamethrower to initiate combat, [Peripheral Vision] triggers, prioritizing other targets within range with the opposite Arm's Flamethrower and dealing 50% [Flame DMG] to all targets in its path.\nWhen actively attacking, leaves [Burning Terrain] on all tiles hit.",
+              "buffs": [
+                {
+                  "name": "Peripheral Vision",
+                  "description": "Before the target retaliates, launches an attack on a random target within range. [Peripheral Vision] is unaffected by Ideal Range."
+                },
+                {
+                  "name": "Flame DMG",
+                  "description": "Damage dealt is based on the multiplier percentage of the main skill."
+                },
+                {
+                  "name": "Burning Terrain",
+                  "description": "Deals fixed damage equal to 12% of Max HP to units that remain on this tile. Lasts for 3 turns."
+                }
+              ]
+            }
+          ]
         },
         {
           "slot": 2,
@@ -9561,7 +10657,65 @@ window.BossesData = {
             "body": 32661,
             "arm": 19597,
             "legs": 16330
-          }
+          },
+          "skills": [
+            {
+              "name": "Absolute Verdict",
+              "kind": "active",
+              "icon": "Icon_skill_main_1156",
+              "description": "Uses a Chainsaw to attack a target, dealing 1.5x DMG. This attack targets the part with the lowest HP."
+            },
+            {
+              "name": "Soul of Battle",
+              "kind": "passive",
+              "icon": "Icon_skill_passive_3002",
+              "description": "After actively attacking or retaliating and dealing damage, recovers 40% of the damage dealt as HP."
+            },
+            {
+              "name": "Auto-Targeting",
+              "kind": "passive",
+              "icon": "Icon_skill_passive_2122",
+              "description": "When using a Chainsaw, if unable to retaliate during an active attack, [Pursuit] can trigger, allowing this unit to move 3 tiles toward the attacker after combat. When successfully reaching the target, this unit will retaliate, dealing 1x DMG, and will then return to its original position after attacking.",
+              "buffs": [
+                {
+                  "name": "Pursuit",
+                  "description": "Automatically moves toward any enemy that attacks you."
+                }
+              ]
+            },
+            {
+              "name": "Super-conduct Shield",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_5116",
+              "description": "Translates to [System Failure] when affected by [Crash].",
+              "buffs": [
+                {
+                  "name": "System Failure",
+                  "description": "Unable to take action. Removed after taking damage or when the action starts."
+                },
+                {
+                  "name": "Crash",
+                  "description": "Unable to take action!"
+                }
+              ]
+            },
+            {
+              "name": "Fight to the Death",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_5128",
+              "description": "Both Arms gain permanent [Guts], and each trigger grants 1 permanent stack of [Fight to the Death].\nWhen actively attacking and destroying a part, triggers [Re-ATK], allowing this unit to move 2 tiles before attacking. Can trigger up to 3 times per turn.",
+              "buffs": [
+                {
+                  "name": "Guts",
+                  "description": "When any part suffers overdamage, the part is not destroyed and instead locks at 1 HP. Lasts until the end of the current attack."
+                },
+                {
+                  "name": "Re-ATK",
+                  "description": "After the current attack ends, trigger one additional attack. Unable to move before the additional attack unless stated otherwise."
+                }
+              ]
+            }
+          ]
         },
         {
           "slot": 3,
@@ -9572,7 +10726,69 @@ window.BossesData = {
             "body": 30612,
             "arm": 18367,
             "legs": 23035
-          }
+          },
+          "skills": [
+            {
+              "name": "Settlement",
+              "kind": "active",
+              "icon": "Icon_skill_order_5117",
+              "description": "Uses a Heavy Machine Gun to attack all targets in a cone ahead, dealing 0.55x AoE DMG. Dispels all buff effects possessed by the target."
+            },
+            {
+              "name": "Ultimate Tactics",
+              "kind": "passive",
+              "icon": "Icon_skill_passive_4118",
+              "description": "Cooperates with allies to launch a Heavy Machine Gun [Link Attack] against the target, dealing 0.5x DMG.\nWhen launching a [Link Attack], gains 1 stack of [Ultimate Aim], lasting for 2 turns. The ally who launches the attack gains 1 stack of [Ultimate Tactics], lasting for 2 turns.\nWhen possessing 5 or more stacks of [Ultimate Aim], gains [Ultimate DMG]. Does not stack. Lasts for 2 turns.",
+              "buffs": [
+                {
+                  "name": "Link Attack",
+                  "description": "After an ally actively attacks, launches an Extra Strike on the same target."
+                },
+                {
+                  "name": "Ultimate Aim",
+                  "description": "Hit Rate +20%. Stacks up to 5 times."
+                },
+                {
+                  "name": "Ultimate DMG",
+                  "description": "DMG Dealt +50%."
+                }
+              ]
+            },
+            {
+              "name": "Wide-Range Interception",
+              "kind": "passive",
+              "icon": "Icon_skill_passive_2109",
+              "description": "Uses a Heavy Machine Gun to intercept incoming rockets within maximum range, reducing their damage by 90%."
+            },
+            {
+              "name": "Super-conduct Shield",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_5116",
+              "description": "Translates to [System Failure] when affected by [Crash].",
+              "buffs": [
+                {
+                  "name": "System Failure",
+                  "description": "Unable to take action. Removed after taking damage or when the action starts."
+                },
+                {
+                  "name": "Crash",
+                  "description": "Unable to take action!"
+                }
+              ]
+            },
+            {
+              "name": "Special Training",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_4105",
+              "description": "Heavy Machine Gun Range +1. When one Arm is destroyed, Heavy Machine Gun Hit Rate does not decrease and can still launch [Link Attacks].",
+              "buffs": [
+                {
+                  "name": "Link Attacks (Link Attack)",
+                  "description": "After an ally actively attacks, launches an Extra Strike on the same target."
+                }
+              ]
+            }
+          ]
         },
         {
           "slot": 4,
@@ -9583,9 +10799,61 @@ window.BossesData = {
             "body": 82995,
             "arm": 23852,
             "legs": 28994
-          }
+          },
+          "skills": [
+            {
+              "name": "Field Sweep",
+              "kind": "active",
+              "icon": "Icon_skill_order_1002",
+              "description": "Uses a Rocket Launcher to attack a random target within 3 adjacent tiles, dealing 0.06x DMG to all parts. Fires 12 times, randomly selecting a target after each shot."
+            },
+            {
+              "name": "Rail Gun Strafe",
+              "kind": "active",
+              "icon": "Icon_skill_order_1109",
+              "description": "After 1 turn, uses a Rail Gun to attack all targets in a 2x5-tile line, dealing 1.3x DMG."
+            },
+            {
+              "name": "Comeback",
+              "kind": "passive",
+              "icon": "Icon_skill_passive_5175",
+              "description": "When casting [Field Sweep], if there are 4 or more targets, inflicts [Movement Inhibition II] and [Guard Block] on targets hit, lasting for 1 turn.\nWhen executing [Rail Gun Strafe], for each target hit, gains 1 stack of [Comeback], lasting for 1 turn.\nFor each 1 ally within a 1-ring area, DMG Taken -30%. Counts up to 3 allies.",
+              "buffs": [
+                {
+                  "name": "Maneuver Failure",
+                  "description": "Movement -2. Cannot [Guard]."
+                },
+                {
+                  "name": "Movement Inhibition II",
+                  "description": "Movement -2"
+                },
+                {
+                  "name": "Guard",
+                  "description": "Protects allies within 2 adjacent tiles from Assault and Ranged attacks. Triggers up to 2 times per turn and lasts 2 turns. Additionally, gains [Defensive Stance I]. Can only trigger 1 time per turn."
+                },
+                {
+                  "name": "Defensive Stance I",
+                  "description": "DMG Taken -15%."
+                }
+              ]
+            },
+            {
+              "name": "Floating Fortress",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_5130",
+              "description": "After a part is destroyed, automatically repairs before taking action in the next turn. After executing a skill, can trigger [Re-ATK].\nWhen Legs are undestroyed, Melee Weapons can only attack the Legs. After Legs are destroyed, Melee DMG Taken +10%.\nDoes not trigger Burning or Mine-style terrain effects.",
+              "buffs": [
+                {
+                  "name": "Re-ATK",
+                  "description": "After the current attack ends, trigger one additional attack. Unable to move before the additional attack unless stated otherwise."
+                }
+              ]
+            }
+          ]
         }
-      ]
+      ],
+      "description": "Milkhama has seen countless renowned mercenary teams, some as fleeting as shooting stars, while others rise again and again like wild grass sprouting from the ashes. The Douglas Mercenary group belongs to the latter breed.",
+      "turns": 15
     },
     {
       "chapter": 12,
@@ -9601,7 +10869,63 @@ window.BossesData = {
             "body": 23315,
             "arm": 13989,
             "legs": 17545
-          }
+          },
+          "skills": [
+            {
+              "name": "Party Opener",
+              "kind": "active",
+              "icon": "Icon_skill_order_1111",
+              "description": "Immediately triggers all [Explosive], then continues with action.",
+              "buffs": [
+                {
+                  "name": "Explosive",
+                  "description": "When detonated, takes Fixed DMG equal to 15% of Max HP per stack of [Explosive]. Stacks up to 99 times."
+                }
+              ]
+            },
+            {
+              "name": "Keep Out",
+              "kind": "active",
+              "icon": "Icon_skill_main_1104",
+              "description": "Uses a Light Rifle to attack a target, dealing 1.25x DMG. This attack prioritizes Arms."
+            },
+            {
+              "name": "Super-conduct Shield",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_5116",
+              "description": "Translates to [System Failure] when affected by [Crash].",
+              "buffs": [
+                {
+                  "name": "System Failure",
+                  "description": "Unable to take action. Removed after taking damage or when the action starts."
+                },
+                {
+                  "name": "Crash",
+                  "description": "Unable to take action!"
+                }
+              ]
+            },
+            {
+              "name": "Born to Explode",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_5113",
+              "description": "When attacking, applies [Explosive] to the target after combat.\nGrants [Detonator] to allies within 4 adjacent tiles.",
+              "buffs": [
+                {
+                  "name": "Explosive",
+                  "description": "When detonated, takes Fixed DMG equal to 15% of Max HP per stack of [Explosive]. Stacks up to 99 times."
+                },
+                {
+                  "name": "Detonator",
+                  "description": "When actively attacking, retaliating, and dealing damage, inflicts [Explosive] on the target hit. If Marico is alive, [Explosive] cannot be dispelled."
+                },
+                {
+                  "name": "Blast attack - Elite 1 Survive",
+                  "description": "When actively attacking or retaliating and dealing damage, inflicts [Explosive] on the target hit. Requires Elite 1."
+                }
+              ]
+            }
+          ]
         },
         {
           "slot": 2,
@@ -9612,7 +10936,89 @@ window.BossesData = {
             "body": 25273,
             "arm": 15164,
             "legs": 19018
-          }
+          },
+          "skills": [
+            {
+              "name": "Imprisoning Shot",
+              "kind": "active",
+              "icon": "Icon_skill_main_1016",
+              "description": "Uses a Machine Gun to attack a target, dealing 1.5x DMG. After combat, gains [Core Destruction], [Repair Destruction], [Weapon Destruction], and [Actuator Failure] based on the number of parts hit, lasting for 1 turn.",
+              "buffs": [
+                {
+                  "name": "Core Destruction",
+                  "description": "After dealing damage, applies [DMG Taken UP IV] to the target hit, lasting for 1 turn."
+                },
+                {
+                  "name": "Repair Destruction",
+                  "description": "After dealing damage, applies [Repair AMT Received Down XII] to the target hit, lasting for 1 turn."
+                },
+                {
+                  "name": "Weapon Destruction",
+                  "description": "After dealing damage, applies [Disarm] to the target hit, lasting for 1 turn."
+                },
+                {
+                  "name": "Actuator Failure",
+                  "description": "After dealing damage, applies [Intimidation] to the target hit, lasting for 1 turn."
+                },
+                {
+                  "name": "DMG Taken UP IV",
+                  "description": "DMG Taken +25%."
+                },
+                {
+                  "name": "Repair AMT Received Down XII",
+                  "description": "Repair AMT Received -99%."
+                },
+                {
+                  "name": "Disarm",
+                  "description": "Unable to use Normal Attacks, Active Skills, or Codes."
+                },
+                {
+                  "name": "Intimidation",
+                  "description": "Unable to move."
+                }
+              ]
+            },
+            {
+              "name": "Cluster Penetration",
+              "kind": "active",
+              "icon": "Icon_skill_order_1109",
+              "description": "Uses a Rail Gun to attack all targets in a 3x5-tile area ahead, dealing 1x AoE DMG. For each target hit, gains 1 stack of [ATK UP III] after combat, lasting for 1 turn.",
+              "buffs": [
+                {
+                  "name": "ATK UP III",
+                  "description": "ATK +25%. Stacks up to 99 times."
+                }
+              ]
+            },
+            {
+              "name": "Super-conduct Shield",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_5116",
+              "description": "Translates to [System Failure] when affected by [Crash].",
+              "buffs": [
+                {
+                  "name": "System Failure",
+                  "description": "Unable to take action. Removed after taking damage or when the action starts."
+                },
+                {
+                  "name": "Crash",
+                  "description": "Unable to take action!"
+                }
+              ]
+            },
+            {
+              "name": "Battle Maniac",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_4103",
+              "description": "After destroying a part with an active attack, triggers [Re-Act]. Can only trigger 1 time per turn.",
+              "buffs": [
+                {
+                  "name": "Re-Act",
+                  "description": "Can launch active attacks again. Before attacking, can move with full movement distance."
+                }
+              ]
+            }
+          ]
         },
         {
           "slot": 3,
@@ -9623,7 +11029,83 @@ window.BossesData = {
             "body": 26825,
             "arm": 16120,
             "legs": 20087
-          }
+          },
+          "skills": [
+            {
+              "name": "Warning Shot",
+              "kind": "active",
+              "icon": "Icon_skill_main_1006",
+              "description": "Uses a Shotgun to attack a target, dealing 1.2x DMG."
+            },
+            {
+              "name": "Streamlined Maintenance",
+              "kind": "passive",
+              "icon": "Icon_skill_passive_3119",
+              "description": "At end of action, repairs all destroyed Arms and restores 20% of Max HP.",
+              "buffs": [
+                {
+                  "name": "High-Level Sanction",
+                  "description": "After attacking, inflicts [Crash] on the target hit."
+                },
+                {
+                  "name": "Crash",
+                  "description": "Unable to take action!"
+                }
+              ]
+            },
+            {
+              "name": "Super-conduct Shield",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_5116",
+              "description": "Translates to [System Failure] when affected by [Crash].",
+              "buffs": [
+                {
+                  "name": "System Failure",
+                  "description": "Unable to take action. Removed after taking damage or when the action starts."
+                },
+                {
+                  "name": "Crash",
+                  "description": "Unable to take action!"
+                }
+              ]
+            },
+            {
+              "name": "In This Free Land",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_2103",
+              "description": "Triggers [Guard] to protect allies within 2 adjacent tiles from Assault and Ranged attacks. Can trigger 3 times per turn.\nAfter guarding, increases its damage by 80%, lasting for 1 turn.\nAfter each guard, sequentially gains [Company Insurance] lasting for 1 turn, [Fire Permit] lasting for 2 turns, and [High-Level Sanction] lasting for 1 turn.",
+              "buffs": [
+                {
+                  "name": "DMG Dealt UP VIII",
+                  "description": "DMG Dealt +80%."
+                },
+                {
+                  "name": "Company Insurance",
+                  "description": "When any Arm suffers overdamage, it locks at 1 HP."
+                },
+                {
+                  "name": "Fire Permit",
+                  "description": "Shotgun Range +2"
+                },
+                {
+                  "name": "Guard",
+                  "description": "Protects allies within 2 adjacent tiles from Assault and Ranged attacks. Triggers up to 2 times per turn and lasts 2 turns. Additionally, gains [Defensive Stance I]. Can only trigger 1 time per turn."
+                },
+                {
+                  "name": "High-Level Sanction",
+                  "description": "After attacking, inflicts [Crash] on the target hit."
+                },
+                {
+                  "name": "Defensive Stance I",
+                  "description": "DMG Taken -15%."
+                },
+                {
+                  "name": "Crash",
+                  "description": "Unable to take action!"
+                }
+              ]
+            }
+          ]
         },
         {
           "slot": 4,
@@ -9634,9 +11116,63 @@ window.BossesData = {
             "body": 67486,
             "arm": 19395,
             "legs": 23575
-          }
+          },
+          "skills": [
+            {
+              "name": "Targeted Bombing",
+              "kind": "active",
+              "icon": "Icon_skill_order_1006",
+              "description": "Uses a Rocket Launcher to attack targets with [World's Most Wanted], dealing 0.25x DMG to all parts of all targets within 1 adjacent tile.",
+              "buffs": [
+                {
+                  "name": "World's Most Wanted",
+                  "description": "Locked-on by Holmberg's Rocket Launcher. Effect persists until hit by [Targeted Bombing]."
+                }
+              ]
+            },
+            {
+              "name": "Sacrificial Pawn",
+              "kind": "active",
+              "icon": "Icon_skill_order_3107",
+              "description": "Activates this skill when the UAV Bay's HP is below 80%: Immediately retrieves all Tracers, each one restoring 10% HP."
+            },
+            {
+              "name": "Air Support",
+              "kind": "passive",
+              "icon": "Icon_skill_passive_2001",
+              "description": "At end of action, if the UAV Bay is undestroyed and there are fewer than 4 Tracers on the battlefield, deploys 2 Tracers. If Body HP is below 50%, deploys 2 additional Tracers. When attacking a target with a Machine Gun, Tracers around the target launch a Link Attack, dealing 0.7x DMG."
+            },
+            {
+              "name": "Councilor's Bodyguard",
+              "kind": "passive",
+              "icon": "Icon_skill_passive_2001",
+              "description": "When attacking targets with a Machine Gun, orders the surrounding Tracers to launch a Link Attack on the target, dealing 0.7x DMG."
+            },
+            {
+              "name": "Holmberg",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_5116",
+              "description": "After a part is destroyed, automatically repairs before taking action in the next turn. After executing a skill, can trigger [Re-ATK].\nWhen the UAV Bay is undestroyed, Melee Weapons cannot attack.\nDoes not trigger Burning or Mine-style terrain effects. Cannot be protected by [Guard]. Non-dispellable.",
+              "buffs": [
+                {
+                  "name": "Re-ATK",
+                  "description": "Can attack 2 times."
+                },
+                {
+                  "name": "Guard",
+                  "description": "Protects allies within 2 adjacent tiles from Assault and Ranged attacks. Triggers up to 2 times per turn and lasts 2 turns. Additionally, gains [Defensive Stance I]. Can only trigger 1 time per turn."
+                },
+                {
+                  "name": "Defensive Stance I",
+                  "description": "DMG Taken -15%."
+                }
+              ]
+            }
+          ]
         }
-      ]
+      ],
+      "description": "The Thepia Wasteland has seen increased activity, with a mobile squadron suspected of secretly working for a DL councilor. A mysterious employer has hired the GKD Squad via Skynet to disrupt their operations.",
+      "turns": 15
     },
     {
       "chapter": 11,
@@ -9652,7 +11188,61 @@ window.BossesData = {
             "body": 15583,
             "arm": 10210,
             "legs": 7868
-          }
+          },
+          "skills": [
+            {
+              "name": "Fist of Fury",
+              "kind": "active",
+              "icon": "Icon_skill_main_1108",
+              "description": "Uses two Melee Weapons to continuously strike a target 4 times, dealing 1.0x DMG 4 times. Prioritizes targeting unattacked parts. If a part is destroyed or the target is defeated, restores 10% of Max HP. Cannot repair destroyed parts."
+            },
+            {
+              "name": "Armorbreaker",
+              "kind": "passive",
+              "icon": "Icon_skill_passive_3116",
+              "description": "When actively attacking with a One-Handed Melee Weapon, restores HP equal to 100% of the damage dealt after combat. Can repair 1 destroyed part."
+            },
+            {
+              "name": "Super-conduct Shield",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_5116",
+              "description": "Translates to [System Failure] when affected by [Crash].",
+              "buffs": [
+                {
+                  "name": "System Failure",
+                  "description": "Unable to take action. Removed after taking damage or when the action starts."
+                },
+                {
+                  "name": "Crash",
+                  "description": "Unable to take action!"
+                }
+              ]
+            },
+            {
+              "name": "Street Fighter",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_5101",
+              "description": "After being actively attacked and entering combat, gains 1 stack of [Defense Stance] after combat. If unable to retaliate, restores 4 AP after combat and gains 1 stack of [Footwork].",
+              "buffs": [
+                {
+                  "name": "Street Fighter",
+                  "description": "Gains 4 AP immediately."
+                },
+                {
+                  "name": "Footwork",
+                  "description": "After actively attacking, triggers [Re-Act] once by consuming 1 stack of [Footwork] after combat. Stacks up to 3 times. Removed when action ends."
+                },
+                {
+                  "name": "Defense Stance",
+                  "description": "DMG Taken -30%, Hit +8%. Stacks up to 3 times. Removed when action ends."
+                },
+                {
+                  "name": "Re-Act",
+                  "description": "After actively attacking, triggers [Re-Act] once by consuming 1 stack of [Footwork] after combat. Stacks up to 3 times. Removed when action ends."
+                }
+              ]
+            }
+          ]
         },
         {
           "slot": 2,
@@ -9663,7 +11253,61 @@ window.BossesData = {
             "body": 20031,
             "arm": 10016,
             "legs": 15047
-          }
+          },
+          "skills": [
+            {
+              "name": "Energy Impact",
+              "kind": "active",
+              "icon": "Icon_skill_order_1109",
+              "description": "Uses a Rail Gun to attack all targets within a 3x5-tile area ahead, dealing 1x AoE DMG. If possessing 4 or more stacks of [Charging], consumes 4 stacks to instead deal 1x AoE DMG to each part of each target.",
+              "buffs": [
+                {
+                  "name": "Charging",
+                  "description": "Hit Rate +8%, Crit Rate +5%, and DMG Taken -12%. Stacks up to 8 times."
+                }
+              ]
+            },
+            {
+              "name": "Disposable Armor",
+              "kind": "passive",
+              "icon": "Icon_skill_passive_2008",
+              "description": "At start of action, gains [Disposable Armor]. Removed when taking damage.",
+              "buffs": [
+                {
+                  "name": "Disposable Armor",
+                  "description": "DMG Taken -30% for the next attack."
+                }
+              ]
+            },
+            {
+              "name": "Super-conduct Shield",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_5116",
+              "description": "Translates to [System Failure] when affected by [Crash].",
+              "buffs": [
+                {
+                  "name": "System Failure",
+                  "description": "Unable to take action. Removed after taking damage or when the action starts."
+                },
+                {
+                  "name": "Crash",
+                  "description": "Unable to take action!"
+                }
+              ]
+            },
+            {
+              "name": "Unbound Potential",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_5109",
+              "description": "When actively attacking, for every 1 target struck, gains 1 stack of [Reserve].",
+              "buffs": [
+                {
+                  "name": "Charging",
+                  "description": "Hit Rate +8%, Crit Rate +5%, and DMG Taken -12%. Stacks up to 8 times."
+                }
+              ]
+            }
+          ]
         },
         {
           "slot": 3,
@@ -9674,7 +11318,101 @@ window.BossesData = {
             "body": 18404,
             "arm": 10994,
             "legs": 13742
-          }
+          },
+          "skills": [
+            {
+              "name": "Shooting Frenzy",
+              "kind": "active",
+              "icon": "Icon_skill_main_1105",
+              "description": "Uses a Light Rifle to attack a random target within a 3x5-tile area ahead, dealing 1.2x DMG. Fires 5 times, prioritizing targets that have not yet been attacked."
+            },
+            {
+              "name": "Efficient Evacuation",
+              "kind": "passive",
+              "icon": "Icon_skill_passive_1149",
+              "description": "When actively attacking or retaliating, DMG Dealt +50% and Hit +8% for every debuff the target has. After being actively attacked and entering combat, DMG Dealt -20% for every debuff the attacker has, up to 80%."
+            },
+            {
+              "name": "Needle Reflex",
+              "kind": "passive",
+              "icon": "Icon_skill_passive_1129",
+              "description": "After being actively attacked and entering combat, inflicts 1 random debuff on the attacker after combat.",
+              "buffs": [
+                {
+                  "name": "DMG Taken UP II",
+                  "description": "DMG Taken +15%. Stacks up to 5 times."
+                },
+                {
+                  "name": "DMG Down II",
+                  "description": "DMG Dealt -15%. Stacks up to 5 times."
+                },
+                {
+                  "name": "Mobility Impairment",
+                  "description": "Dodge Rate -15%. Stacks up to 5 times."
+                },
+                {
+                  "name": "Hit Rate Down IV",
+                  "description": "Hit Rate -15%. Stacks up to 5 times."
+                }
+              ]
+            },
+            {
+              "name": "Super-conduct Shield",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_5116",
+              "description": "Translates to [System Failure] when affected by [Crash].",
+              "buffs": [
+                {
+                  "name": "System Failure",
+                  "description": "Unable to take action. Removed after taking damage or when the action starts."
+                },
+                {
+                  "name": "Crash",
+                  "description": "Unable to take action!"
+                }
+              ]
+            },
+            {
+              "name": "Heart of Thorns",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_1119",
+              "description": "When actively attacking, inflicts [Spore Mark] and 1 random debuff on the target hit after combat.",
+              "buffs": [
+                {
+                  "name": "DMG Taken UP II",
+                  "description": "DMG Taken +15%. Stacks up to 5 times."
+                },
+                {
+                  "name": "DMG Down II",
+                  "description": "DMG Dealt -15%. Stacks up to 5 times."
+                },
+                {
+                  "name": "Mobility Impairment",
+                  "description": "Dodge Rate -15%. Stacks up to 5 times."
+                },
+                {
+                  "name": "Hit Rate Down IV",
+                  "description": "Hit Rate -15%. Stacks up to 5 times."
+                },
+                {
+                  "name": "Spore Mark",
+                  "description": "When attacked, randomly gains [Splinter] or [Spikes] after combat. Lasts for 1 turn. Removed after triggering once.\n[Splinter]: Cannot execute active skills, Retaliation, or Vigilant Shot.\n[Spikes]: Instantly dispels all buffs. Repair Disabled. Cannot repair destroyed parts. At end of action, all parts take [Fixed DMG] equal to 20% of Max HP. This damage does not destroy parts."
+                },
+                {
+                  "name": "Splinter",
+                  "description": "Unable to execute active skills. Unable to perform Retaliation or Vigilant Shot."
+                },
+                {
+                  "name": "Spikes",
+                  "description": "Instantly dispels all buffs. Repair Disabled. Cannot repair destroyed parts. At end of action, all parts take [Fixed DMG] equal to 20% of Max HP."
+                },
+                {
+                  "name": "Fixed DMG",
+                  "description": "Ignores Armor and DMG Reduction to deal damage once."
+                }
+              ]
+            }
+          ]
         },
         {
           "slot": 4,
@@ -9685,9 +11423,2262 @@ window.BossesData = {
             "body": 23315,
             "arm": 13989,
             "legs": 17545
-          }
+          },
+          "skills": [
+            {
+              "name": "Eye of the Vortex",
+              "kind": "active",
+              "icon": "Icon_skill_main_1129",
+              "description": "Simultaneously uses two Machine Guns to attack a target, dealing 0.75x DMG 2 times."
+            },
+            {
+              "name": "Stormbringer",
+              "kind": "active",
+              "icon": "Icon_skill_order_1107",
+              "description": "Simultaneously uses two Machine Guns to attack all targets within a 3x3-tile area ahead, dealing 0.38x AoE DMG 2 times."
+            },
+            {
+              "name": "Protective Mechanism",
+              "kind": "passive",
+              "icon": "Icon_skill_passive_3116",
+              "description": "When Overall HP drops below 50% for the first time, restores 20% HP to both Arms. Can repair destroyed Arms. Grants [Part Enhancement] to 1 random undestroyed non-Body part.",
+              "buffs": [
+                {
+                  "name": "Part Enhancement",
+                  "description": "Parts gain 30% Temporary HP."
+                }
+              ]
+            },
+            {
+              "name": "Super-conduct Shield",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_5116",
+              "description": "Translates to [System Failure] when affected by [Crash].",
+              "buffs": [
+                {
+                  "name": "System Failure",
+                  "description": "Unable to take action. Removed after taking damage or when the action starts."
+                },
+                {
+                  "name": "Crash",
+                  "description": "Unable to take action!"
+                }
+              ]
+            },
+            {
+              "name": "Vortex",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_4104",
+              "description": "At start of battle, randomly grants [Part Enhancement] to a non-Body part. After actively attacking, randomly grants [Part Enhancement] to 1 undestroyed non-Body part after combat. When affected by a Temporary HP Cap effect, gains DMG +100%, and triggers [Cross Spray] after retaliation.",
+              "buffs": [
+                {
+                  "name": "Part Enhancement",
+                  "description": "Parts gain 30% Temporary HP."
+                },
+                {
+                  "name": "Cross Spray",
+                  "description": "When retaliating with two Machine Guns, deals 0.35x AoE DMG twice to primary target and all units within 1 adjacent tile."
+                }
+              ]
+            }
+          ]
         }
-      ]
+      ],
+      "description": "After their defeat, the Monolith Valley Armed Forces secured additional funding and deployed senior cadres to strengthen their ranks. They now control a military depot in the Parill Desert, causing unrest among factions in Milkhama. Consequently, GKD Squad has been given a new mission.",
+      "turns": 15
+    },
+    {
+      "chapter": 10,
+      "name": "As the Stars Entwine",
+      "battle": 8016,
+      "stages": [
+        {
+          "slot": 1,
+          "boss": "Taio",
+          "mech": "Dias (Centurion parts)",
+          "cls": "Heavy",
+          "hp": {
+            "body": 11503,
+            "arm": 6902,
+            "legs": 5751
+          },
+          "skills": [
+            {
+              "name": "Victory Charge",
+              "kind": "active",
+              "icon": "Icon_skill_order_1103",
+              "description": "Uses a Polearm to thrust 5 tiles forward, dealing 1.5x DMG. If possessing [Suspensor-Nullification Shield], damage multiplier increases to 1.8x, and this attack cannot be dodged.",
+              "buffs": [
+                {
+                  "name": "Suspensor-Nullification Shield",
+                  "description": "Immune to damage from one attack. One stack is removed upon triggering. Stacks up to 3 times."
+                }
+              ]
+            },
+            {
+              "name": "Intrepid",
+              "kind": "passive",
+              "icon": "Icon_skill_passive_1006",
+              "description": "When actively attacking, if possessing [Suspensor-Nullification Shield], this attack prioritizes the Body.",
+              "buffs": [
+                {
+                  "name": "Suspensor-Nullification Shield",
+                  "description": "Immune to damage from one attack. One stack is removed upon triggering. Stacks up to 3 times."
+                }
+              ]
+            },
+            {
+              "name": "Super-conduct Shield",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_5116",
+              "description": "Translates to [System Failure] when affected by [Crash].",
+              "buffs": [
+                {
+                  "name": "System Failure",
+                  "description": "Unable to take action. Removed after taking damage or when the action starts."
+                },
+                {
+                  "name": "Crash",
+                  "description": "Unable to take action!"
+                }
+              ]
+            },
+            {
+              "name": "Steel Fortress",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_2105",
+              "description": "At end of action, gains 3 stacks of [Suspensor-Nullification Shield].",
+              "buffs": [
+                {
+                  "name": "Abandoned",
+                  "description": "Immune to damage from one attack. Stacks up to 3 times."
+                },
+                {
+                  "name": "Suspensor-Nullification Shield",
+                  "description": "Immune to damage from one attack. One stack is removed upon triggering. Stacks up to 3 times."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slot": 2,
+          "boss": "Eller",
+          "mech": "Kong (Centurion parts)",
+          "cls": "Heavy",
+          "hp": {
+            "body": 11986,
+            "arm": 7203,
+            "legs": 8976
+          },
+          "skills": [
+            {
+              "name": "Overfire",
+              "kind": "active",
+              "icon": "Icon_skill_order_1010",
+              "description": "Uses a Heavy Machine Gun to attack all targets in a cone ahead, dealing 1.5x DMG and inflicting [FCS Failure] on targets hit for 1 turn.",
+              "buffs": [
+                {
+                  "name": "FCS Failure",
+                  "description": "Unable to use any Active Skills or Codes except for the Normal Attack."
+                }
+              ]
+            },
+            {
+              "name": "Super-conduct Shield",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_5116",
+              "description": "Translates to [System Failure] when affected by [Crash].",
+              "buffs": [
+                {
+                  "name": "System Failure",
+                  "description": "Unable to take action. Removed after taking damage or when the action starts."
+                },
+                {
+                  "name": "Crash",
+                  "description": "Unable to take action!"
+                }
+              ]
+            },
+            {
+              "name": "Strategist",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_5136",
+              "description": "When actively attacking with a Heavy Machine Gun, inflicts [Electric Surge Terrain] on tiles hit after combat, lasting for 2 turns.",
+              "buffs": [
+                {
+                  "name": "Electric Surge Terrain",
+                  "description": "Applies [FCS Failure] to enemies that remain on this tile, lasting for 1 turn."
+                },
+                {
+                  "name": "FCS Failure",
+                  "description": "Unable to use any Active Skills or Codes except for the Normal Attack."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slot": 3,
+          "boss": "Meritus",
+          "mech": "Dias (Centurion parts)",
+          "cls": "Heavy",
+          "hp": {
+            "body": 12363,
+            "arm": 7429,
+            "legs": 9258
+          },
+          "skills": [
+            {
+              "name": "Cluster Blast",
+              "kind": "active",
+              "icon": "Icon_skill_main_1118",
+              "description": "Uses a Machine Gun to attack a target, dealing 1.2x DMG. Inflicts 20 stacks of [Spin] on the target hit, lasting for 2 turns.",
+              "buffs": [
+                {
+                  "name": "Spin",
+                  "description": "When actively attacking and engaging in a Link Attack, takes 100 [Fixed DMG] after combat."
+                },
+                {
+                  "name": "Fixed DMG",
+                  "description": "Ignores Armor and DMG Reduction to deal damage once."
+                }
+              ]
+            },
+            {
+              "name": "An Eye For An Eye",
+              "kind": "passive",
+              "icon": "Icon_skill_passive_1144",
+              "description": "When attacked, inflicts [Spin] stacks on the attacker based on damage dealt. Lasts for 2 turns.",
+              "buffs": [
+                {
+                  "name": "Abandoned - Invisible Preparation",
+                  "description": "At end of action, gains [Abandoned]: Cannot be targeted by active attacks. Lasts for 2 turns. [Stealth] is forcibly removed when taking damage or if enemies exist within 1 adjacent tile."
+                },
+                {
+                  "name": "Abandoned",
+                  "description": "Cannot be targeted by active attacks. [Abandoned] is forcibly removed when taking damage or if enemies exist within 1 adjacent tile."
+                },
+                {
+                  "name": "Spin",
+                  "description": "When actively attacking and engaging in a Link Attack, takes 100 [Fixed DMG] after combat."
+                },
+                {
+                  "name": "Stealth",
+                  "description": "Cannot be targeted by active attacks. [Stealth] is forcibly removed when taking damage, or if enemies exist within 1 adjacent tile."
+                },
+                {
+                  "name": "Fixed DMG",
+                  "description": "Ignores Armor and DMG Reduction to deal damage once."
+                }
+              ]
+            },
+            {
+              "name": "Guard Deployment",
+              "kind": "passive",
+              "icon": "Icon_skill_passive_2001",
+              "description": "Protects allies within 1 adjacent tile from Assault and Ranged attacks. Can trigger up to 2 times per turn.",
+              "buffs": [
+                {
+                  "name": "Guard",
+                  "description": "Protects allies within 1 adjacent tile from Assault and Ranged attacks."
+                }
+              ]
+            },
+            {
+              "name": "Super-conduct Shield",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_5116",
+              "description": "Translates to [System Failure] when affected by [Crash].",
+              "buffs": [
+                {
+                  "name": "System Failure",
+                  "description": "Unable to take action. Removed after taking damage or when the action starts."
+                },
+                {
+                  "name": "Crash",
+                  "description": "Unable to take action!"
+                }
+              ]
+            },
+            {
+              "name": "Ultimate Defense",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_2102",
+              "description": "Gains 1 stack of [Solid Defense] for each Exclusive Trainee. Stacks up to 3 times.",
+              "buffs": [
+                {
+                  "name": "Solid Defense",
+                  "description": "DMG Taken -15%. At end of action, restores 7% HP to all parts. Stacks up to 3 times. If any part is destroyed, automatically repairs 1 destroyed part."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slot": 4,
+          "boss": "Liliya",
+          "mech": "Malthus (XR parts)",
+          "cls": "Medium",
+          "hp": {
+            "body": 18168,
+            "arm": 9084,
+            "legs": 13647
+          },
+          "skills": [
+            {
+              "name": "Destruction Code",
+              "kind": "active",
+              "icon": "Icon_skill_order_1107",
+              "description": "Uses two Machine Guns to attack all targets within a 2x3-tile area ahead, dealing 0.7x AoE DMG 2 times."
+            },
+            {
+              "name": "Detonation",
+              "kind": "active",
+              "icon": "Icon_skill_order_1109",
+              "description": "Consumes 3 rounds of Ammo. Uses a Rail Gun to attack all targets within a 3x5-tile area ahead or a 3x5-tile diagonal area, dealing 3x AoE DMG. After attacking, triggers [Re-Act].",
+              "buffs": [
+                {
+                  "name": "Re-Act",
+                  "description": "Re-Act"
+                }
+              ]
+            },
+            {
+              "name": "Super-conduct Shield",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_5116",
+              "description": "Translates to [System Failure] when affected by [Crash].",
+              "buffs": [
+                {
+                  "name": "System Failure",
+                  "description": "Unable to take action. Removed after taking damage or when the action starts."
+                },
+                {
+                  "name": "Crash",
+                  "description": "Unable to take action!"
+                }
+              ]
+            },
+            {
+              "name": "Astral Deployment",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_5115",
+              "description": "At end of action, if Body HP is at 100%/80%/60%/40%, deploys 2/3/4/5 [Structs] nearby. At the start of the next action, retrieves [Structs] for 1 AP each, restoring 5% HP and repairing 1 destroyed part.",
+              "buffs": [
+                {
+                  "name": "Spin",
+                  "description": "When actively attacking and engaging in a Link Attack, takes 100 [Fixed DMG] after combat."
+                },
+                {
+                  "name": "Fixed DMG",
+                  "description": "Ignores Armor and DMG Reduction to deal damage once."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "description": "After the battle, the Monolith Valley Armed Forces split, with Meritus and Eller taking a military base in the Parill Desert, angering local interests.",
+      "turns": 15
+    },
+    {
+      "chapter": 9,
+      "name": "Code Nightingale",
+      "battle": 8013,
+      "stages": [
+        {
+          "slot": 1,
+          "boss": "Bertha",
+          "mech": "Agreas (Dopplesoldner parts)",
+          "cls": "Light",
+          "hp": {
+            "body": 8302,
+            "arm": 5439,
+            "legs": 4192
+          },
+          "skills": [
+            {
+              "name": "Hunt is On",
+              "kind": "active",
+              "icon": "Icon_skill_main_1137",
+              "description": "Enters [Aiming] Mode. Uses a Sniper Rifle to attack a target, dealing 1.3x DMG. This attack cannot be retaliated.",
+              "buffs": [
+                {
+                  "name": "Aiming",
+                  "description": "Before attacking, designate a specific part of the target to focus all damage on that part."
+                }
+              ]
+            },
+            {
+              "name": "Overcharge Purge",
+              "kind": "passive",
+              "icon": "Icon_skill_passive_5175",
+              "description": "When attacking, dispel 1 buff from the target before combat.",
+              "buffs": [
+                {
+                  "name": "Overcharge Purge",
+                  "description": "When actively attacking or retaliating, dispels 1 buff from the enemy before combat."
+                }
+              ]
+            },
+            {
+              "name": "Human sea Tactics",
+              "kind": "passive",
+              "icon": "Icon_skill_passive_1143",
+              "description": "When attacked, for each 1 ally within 3 adjacent tiles, perform 1 time of [Hunt is On] on a random enemy within attack range, up to 3 times.",
+              "buffs": [
+                {
+                  "name": "Human sea Tactics",
+                  "description": "When attacked, for each ally in the adjacent area, fire 1 time at a random enemy within attack range, up to 3 times."
+                }
+              ]
+            },
+            {
+              "name": "Super-conduct Shield",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_5116",
+              "description": "Translates to [System Failure] when affected by [Crash].",
+              "buffs": [
+                {
+                  "name": "System Failure",
+                  "description": "Unable to take action. Removed after taking damage or when the action starts."
+                },
+                {
+                  "name": "Crash",
+                  "description": "Unable to take action!"
+                }
+              ]
+            },
+            {
+              "name": "Full Field Silence",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_5123",
+              "description": "At start of action, applies [Full Field Silence] to allies within 3 adjacent tiles.",
+              "buffs": [
+                {
+                  "name": "Stealth",
+                  "description": "Cannot be targeted by active attacks. [Stealth] is forcibly removed when actively attacking, being attacked and taking damage, or if enemies exist within 1 adjacent tile."
+                },
+                {
+                  "name": "Charging",
+                  "description": "Gain Stealth and DMG UP."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slot": 2,
+          "boss": "White Flame",
+          "mech": "Wolverine (XR parts)",
+          "cls": "Medium",
+          "hp": {
+            "body": 9367,
+            "arm": 4683,
+            "legs": 7036
+          },
+          "skills": [
+            {
+              "name": "Thermobaric Missile",
+              "kind": "active",
+              "icon": "Icon_skill_order_1006",
+              "description": "Uses a Missile Launcher to attack a target, dealing 1.0x DMG to the part hit and Splash DMG equal to 50% of this damage to other parts. After combat, deals [Fixed DMG] equal to 0.5x DMG to the target hit and units within 1 adjacent tile.",
+              "buffs": [
+                {
+                  "name": "Fixed DMG",
+                  "description": "Ignores Armor and DMG Reduction to deal damage once."
+                }
+              ]
+            },
+            {
+              "name": "Battle Frenzy",
+              "kind": "passive",
+              "icon": "Icon_skill_passive_1147",
+              "description": "Gain DMG Taken -75% and DMG Dealt +140%. DMG Taken +25% for every debuff the unit has, up to 100%. DMG Dealt -25% for every debuff the unit has, up to 100%."
+            },
+            {
+              "name": "Mobile Fortress",
+              "kind": "passive",
+              "icon": "Icon_skill_passive_2111",
+              "description": "When both Arms are undestroyed, performs [Guard] to protect allies within 2 adjacent tiles. At end of action, if any Arm is destroyed, repairs and restores 5% of HP to both Arms. After taking damage from attacks or retaliations, if any part is destroyed, inflicts [Re-Act Disabled] on the attacker, lasting for 1 turn.",
+              "buffs": [
+                {
+                  "name": "Guard",
+                  "description": "Protects allies within 2 adjacent tiles from Assault and Ranged attacks. Triggers up to 2 times per turn and lasts 2 turns. Additionally, gains [Defensive Stance I]. Can only trigger 1 time per turn."
+                },
+                {
+                  "name": "Re-Act Disabled",
+                  "description": "Disable the triggering of [Re-Act] and [Re-ATK]."
+                },
+                {
+                  "name": "Defensive Stance I",
+                  "description": "DMG Taken -15%."
+                },
+                {
+                  "name": "Re-Act",
+                  "description": "Can launch active attacks again. Before attacking, can move with full movement distance."
+                },
+                {
+                  "name": "Re-ATK",
+                  "description": "After the current attack ends, trigger one additional attack. Unable to move before the additional attack unless stated otherwise."
+                }
+              ]
+            },
+            {
+              "name": "Super-conduct Shield",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_5116",
+              "description": "Translates to [System Failure] when affected by [Crash].",
+              "buffs": [
+                {
+                  "name": "System Failure",
+                  "description": "Unable to take action. Removed after taking damage or when the action starts."
+                },
+                {
+                  "name": "Crash",
+                  "description": "Unable to take action!"
+                }
+              ]
+            },
+            {
+              "name": "Night Enforcer",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_1118",
+              "description": "When unable to retaliate after being attacked, ignores Ammo Capacity and uses a Missile Launcher to retaliate.",
+              "buffs": [
+                {
+                  "name": "Night Enforcer",
+                  "description": "If unable to retaliate when attacked, missile retaliation is initiated after combat."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slot": 3,
+          "boss": "Kaylen",
+          "mech": "Blue Bird (XR parts)",
+          "cls": "Medium",
+          "hp": {
+            "body": 9859,
+            "arm": 4929,
+            "legs": 7405
+          },
+          "skills": [
+            {
+              "name": "Meteor Shower",
+              "kind": "active",
+              "icon": "Icon_skill_order_1005",
+              "description": "Uses a Rail Gun to attack all targets within a 3x5-tile area, dealing 0.75x AoE DMG."
+            },
+            {
+              "name": "Rallying Shout",
+              "kind": "passive",
+              "icon": "Icon_skill_passive_4118",
+              "description": "When actively attacking and dealing damage, summons 1 Marching Crab after combat. Can trigger 1 time per turn. The summoned Marching Crab cannot take action during the current turn."
+            },
+            {
+              "name": "Detonation",
+              "kind": "passive",
+              "icon": "Icon_skill_passive_5013",
+              "description": "When actively attacking, if the target has [Line Failure], triggers [Line Failure] after combat.",
+              "buffs": [
+                {
+                  "name": "Line Failure",
+                  "description": "At end of action, applies the [Crash] effect."
+                },
+                {
+                  "name": "Crash",
+                  "description": "Unable to take action!"
+                }
+              ]
+            },
+            {
+              "name": "Super-conduct Shield",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_5116",
+              "description": "Translates to [System Failure] when affected by [Crash].",
+              "buffs": [
+                {
+                  "name": "System Failure",
+                  "description": "Unable to take action. Removed after taking damage or when the action starts."
+                },
+                {
+                  "name": "Crash",
+                  "description": "Unable to take action!"
+                }
+              ]
+            },
+            {
+              "name": "Navy Commander",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_5108",
+              "description": "When actively attacked and taking damaged, summons 1 Marching Crab after combat. If Body HP is below 50%, summons an additional 1 Marching Crab. Can trigger 1 time per turn.",
+              "buffs": [
+                {
+                  "name": "Navy Commander",
+                  "description": "After being attacked, deploys 1 [Marching Crab]. Can trigger 1 time per turn. If Body HP is below 50%, deploys 1 [Marching Crab]. Can trigger 1 time per turn."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slot": 4,
+          "boss": "Sámi",
+          "mech": "Dopplesoldner",
+          "cls": "Light",
+          "hp": {
+            "body": 10599,
+            "arm": 6944,
+            "legs": 5352
+          },
+          "skills": [
+            {
+              "name": "‌Lightning Orb",
+              "kind": "active",
+              "icon": "Icon_skill_order_1005",
+              "description": "Attacks a target with a ‌Lightning Orb, dealing 2x DMG. The ‌Lightning Orb is automatically passed to all enemies within 1 ring of each target, with the damage reduced by 10% for each additional ring it passes through. Each unit only receives damage once."
+            },
+            {
+              "name": "Stasis Trap",
+              "kind": "passive",
+              "icon": "Icon_skill_passive_5164",
+              "description": "When attacked and retaliating, if Body HP is below 50%, inflicts [Vengeance Mark] on enemies within 3 adjacent tiles after combat, lasting for 1 turn. Can trigger 1 time per battle.",
+              "buffs": [
+                {
+                  "name": "Vengeance Mark",
+                  "description": "DMG Taken +10%."
+                }
+              ]
+            },
+            {
+              "name": "Mark Perception",
+              "kind": "passive",
+              "icon": "Icon_skill_passive_5128",
+              "description": "For every 1 target afflicted with [Vengeance Mark] within 3 adjacent tiles, Dodge +30%, up to 90%.",
+              "buffs": [
+                {
+                  "name": "Mark Perception",
+                  "description": "For every 1 target afflicted with [Vengeance Mark] within 3 adjacent tiles, gains Dodge +30%, up to 90%."
+                },
+                {
+                  "name": "Vengeance Mark",
+                  "description": "DMG Taken +10%."
+                }
+              ]
+            },
+            {
+              "name": "Super-conduct Shield",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_5116",
+              "description": "Translates to [System Failure] when affected by [Crash].",
+              "buffs": [
+                {
+                  "name": "System Failure",
+                  "description": "Unable to take action. Removed after taking damage or when the action starts."
+                },
+                {
+                  "name": "Crash",
+                  "description": "Unable to take action!"
+                }
+              ]
+            },
+            {
+              "name": "Vengeful Howl",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_5104",
+              "description": "When attacking, if damage is dealt, inflicts [Vengeance Mark] on the target, lasting for 1 turn.",
+              "buffs": [
+                {
+                  "name": "Vengeance Mark",
+                  "description": "DMG Taken +10%."
+                },
+                {
+                  "name": "Vengeful Howl",
+                  "description": "When attacking, if damage is dealt, inflict the target with a [Vengeance Mark] after combat."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "description": "Behind Milkhama's facade of peace, powers wage shadow wars. Intel ops are too hot for official channels to get outsourced to neutral mercs. And mercs take out other mercs.",
+      "turns": 15
+    },
+    {
+      "chapter": 8,
+      "name": "Across the River",
+      "battle": 8014,
+      "stages": [
+        {
+          "slot": 1,
+          "boss": "Jon",
+          "mech": "Gillesrais (Centurion parts)",
+          "cls": "Heavy",
+          "hp": {
+            "body": 6122,
+            "arm": 3679,
+            "legs": 4585
+          },
+          "skills": [
+            {
+              "name": "Core Burst",
+              "kind": "active",
+              "icon": "Icon_skill_order_1010",
+              "description": "Uses a Heavy Machine Gun to attack all targets within attack range, dealing 0.6x AoE DMG."
+            },
+            {
+              "name": "Super-conduct Shield",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_5116",
+              "description": "Translates to [System Failure] when affected by [Crash].",
+              "buffs": [
+                {
+                  "name": "System Failure",
+                  "description": "Unable to take action. Removed after taking damage or when the action starts."
+                },
+                {
+                  "name": "Crash",
+                  "description": "Unable to take action!"
+                }
+              ]
+            },
+            {
+              "name": "Deep Threat",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_5129",
+              "description": "When actively attacking, inflicts [Embedded Splinter] on the target hit after combat, lasting for 2 turns.",
+              "buffs": [
+                {
+                  "name": "Embedded Splinter",
+                  "description": "After being attacked and taking damage, destroys a random part."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slot": 2,
+          "boss": "Rena",
+          "mech": "Blazer (XR parts)",
+          "cls": "Medium",
+          "hp": {
+            "body": 6620,
+            "arm": 3972,
+            "legs": 4981
+          },
+          "skills": [
+            {
+              "name": "Full Speed",
+              "kind": "active",
+              "icon": "Icon_skill_main_1016",
+              "description": "Uses a Machine Gun to attack a target, dealing 1.5x DMG. Additionally, can command all Tracers to launch [Link Attack].",
+              "buffs": [
+                {
+                  "name": "Link Attack",
+                  "description": "After an ally actively attacks, launches an Extra Strike on the same target."
+                }
+              ]
+            },
+            {
+              "name": "Sky Barrier",
+              "kind": "passive",
+              "icon": "Icon_skill_passive_2007",
+              "description": "For every 1 Tracer on the battlefield, DMG Taken -10%, up to 50%.",
+              "buffs": [
+                {
+                  "name": "Invisible buff",
+                  "description": "For every 1 Tracer on the battlefield, DMG Taken -10%, up to 50%."
+                }
+              ]
+            },
+            {
+              "name": "Super-conduct Shield",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_5116",
+              "description": "Translates to [System Failure] when affected by [Crash].",
+              "buffs": [
+                {
+                  "name": "System Failure",
+                  "description": "Unable to take action. Removed after taking damage or when the action starts."
+                },
+                {
+                  "name": "Crash",
+                  "description": "Unable to take action!"
+                }
+              ]
+            },
+            {
+              "name": "To the Firmament",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_5122",
+              "description": "After actively attacking, summons 2 Tracers. A maximum of 8 Tracers can exist on the battlefield at the same time."
+            }
+          ]
+        },
+        {
+          "slot": 3,
+          "boss": "Gutzman",
+          "mech": "Malthus (XR parts)",
+          "cls": "Medium",
+          "hp": {
+            "body": 6968,
+            "arm": 4181,
+            "legs": 5244
+          },
+          "skills": [
+            {
+              "name": "Special Accuracy",
+              "kind": "active",
+              "icon": "Icon_skill_order_1111",
+              "description": "Uses a Sniper Rifle to attack a target, dealing 1.0x DMG. Enters [Aiming] Mode before attacking and gains Hit Rate +15%.",
+              "buffs": [
+                {
+                  "name": "Aiming",
+                  "description": "Before attacking, designate a specific part of the target to focus all damage on that part."
+                }
+              ]
+            },
+            {
+              "name": "Bursting Intuition",
+              "kind": "passive",
+              "icon": "Icon_skill_passive_2005",
+              "description": "When actively attacking or triggering [Vigilant Shot], gains 1 stack of [Absolute Dodge] for each target hit. Stacks up to 3 times.",
+              "buffs": [
+                {
+                  "name": "Absolute Dodge",
+                  "description": "When attacked and retaliated, it is guaranteed to trigger a perfect dodge. Stacks up to 3 times."
+                },
+                {
+                  "name": "Vigilant Shot",
+                  "description": "Preempts an attack before the enemy attempts to attack other allies."
+                }
+              ]
+            },
+            {
+              "name": "Woodland Gaze",
+              "kind": "passive",
+              "icon": "Icon_skill_passive_1011",
+              "description": "With a Range Weapon, trigger [Vigilant Shot] before the enemy attacks within a 1-ring area to deal 0.45x damage. Can trigger up to 3 times per turn.",
+              "buffs": [
+                {
+                  "name": "Vigilant Shot",
+                  "description": "Preempts an attack before the enemy attempts to attack other allies."
+                }
+              ]
+            },
+            {
+              "name": "Super-conduct Shield",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_5116",
+              "description": "Translates to [System Failure] when affected by [Crash].",
+              "buffs": [
+                {
+                  "name": "System Failure",
+                  "description": "Unable to take action. Removed after taking damage or when the action starts."
+                },
+                {
+                  "name": "Crash",
+                  "description": "Unable to take action!"
+                }
+              ]
+            },
+            {
+              "name": "Long-Range Demolition",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_1104",
+              "description": "Packs a Sniper Rifle filled with cluster munitions. When executing weapon skills or triggering [Vigilant Shot], inflicts [Fixed DMG] equal to the attack's damage multiplier on the target and enemies within 1 ring.",
+              "buffs": [
+                {
+                  "name": "Absolute Dodge",
+                  "description": "When attacked and retaliated, it is guaranteed to trigger a perfect dodge. Stacks up to 3 times."
+                },
+                {
+                  "name": "Vigilant Shot",
+                  "description": "Preempts an attack before the enemy attempts to attack other allies."
+                },
+                {
+                  "name": "Fixed DMG",
+                  "description": "Ignores Armor and DMG Reduction to deal damage once."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slot": 4,
+          "boss": "Georgia",
+          "mech": "Malthus (Dopplesoldner parts)",
+          "cls": "Medium",
+          "hp": {
+            "body": 8156,
+            "arm": 5344,
+            "legs": 4118
+          },
+          "skills": [
+            {
+              "name": "Thunder Ballistics",
+              "kind": "active",
+              "icon": "Icon_skill_order_1008",
+              "description": "After 1 turn, uses a Missile Launcher to lock onto a random target on the battlefield, dealing 1x DMG to 1 part and Splash DMG equal to 50% of this damage to other parts."
+            },
+            {
+              "name": "Fracture Field",
+              "kind": "active",
+              "icon": "Icon_skill_order_1118",
+              "description": "After 1 turn, uses a Rocket Launcher to attack all targets within 2 rings, dealing 0.5x AoE DMG to all parts of each target."
+            },
+            {
+              "name": "Command Hub",
+              "kind": "passive",
+              "icon": "Icon_skill_passive_5102",
+              "description": "After being attacked and drawn into combat, all allies within 2 rings retaliate against the attacker."
+            },
+            {
+              "name": "Super-conduct Shield",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_5116",
+              "description": "Translates to [System Failure] when affected by [Crash].",
+              "buffs": [
+                {
+                  "name": "System Failure",
+                  "description": "Unable to take action. Removed after taking damage or when the action starts."
+                },
+                {
+                  "name": "Crash",
+                  "description": "Unable to take action!"
+                }
+              ]
+            },
+            {
+              "name": "Locking Engine",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_5107",
+              "description": "When actively attacking with a Tactical Weapon, inflicts [Bearing Deformation] on the target hit, lasting for 1 turn.",
+              "buffs": [
+                {
+                  "name": "Bearing Deformation",
+                  "description": "DMG Dealt -20% for every 1 tile moved during this turn."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "description": "The Iguanas are back on the high-bounty list. Someone's got a score to settle. Their base lies deep in a dense jungle. Bridges are down. STs and drones patrol a fortified stronghold. Where's the weak point?",
+      "turns": 15
+    },
+    {
+      "chapter": 7,
+      "name": "Rule of Violence",
+      "battle": 8010,
+      "stages": [
+        {
+          "slot": 1,
+          "boss": "Garcia",
+          "mech": "Twilight Fang (Dopplesoldner parts)",
+          "cls": "Light",
+          "hp": {
+            "body": 4512,
+            "arm": 2956,
+            "legs": 2278
+          },
+          "skills": [
+            {
+              "name": "Suppressed Shot",
+              "kind": "active",
+              "icon": "Icon_skill_main_5102",
+              "description": "[Assault] Uses a Machine Gun to attack a target, dealing 1.35x DMG. For every enemy with the [Suppressing] across the map, DMG +75%, up to 375%. After combat, inflicts [Suppressing] on the hit target, lasting for 3 turns.",
+              "buffs": [
+                {
+                  "name": "Suppressing",
+                  "description": "DMG Dealt -20%."
+                }
+              ]
+            },
+            {
+              "name": "Second Coming",
+              "kind": "passive",
+              "icon": "Icon_skill_passive_1135",
+              "description": "When actively attacking, if the target does not possess [Suppressing], [Re-Act] can trigger after combat. Can trigger 1 time per turn.",
+              "buffs": [
+                {
+                  "name": "Suppressing",
+                  "description": "DMG Dealt -20%."
+                },
+                {
+                  "name": "Re-Act",
+                  "description": "Can launch active attacks again. Before attacking, can move with full movement distance."
+                }
+              ]
+            },
+            {
+              "name": "Super-conduct Shield",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_5116",
+              "description": "Translates to [System Failure] when affected by [Crash].",
+              "buffs": [
+                {
+                  "name": "System Failure",
+                  "description": "Unable to take action. Removed after taking damage or when the action starts."
+                },
+                {
+                  "name": "Crash",
+                  "description": "Unable to take action!"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slot": 2,
+          "boss": "Vincenza",
+          "mech": "Dreadtalon (Dopplesoldner parts)",
+          "cls": "Light",
+          "hp": {
+            "body": 4512,
+            "arm": 2956,
+            "legs": 2278
+          },
+          "skills": [
+            {
+              "name": "Marked Assault",
+              "kind": "active",
+              "icon": "Icon_skill_order_1103",
+              "description": "Uses a Polearm to thrust 4 tiles forward, dealing 1.2x DMG to the first target hit."
+            },
+            {
+              "name": "Locked Charge",
+              "kind": "passive",
+              "icon": "Icon_skill_passive_1011",
+              "description": "When attacked, moves 4 tiles toward the attacker after combat. When both Arms are undestroyed, attacks any enemy within range, dealing 1x DMG. This attack prioritizes the Body. If the target is afflicted with [Charge Mark], this attack's DMG +100% per stack. Can trigger up to 2 times per turn.",
+              "buffs": [
+                {
+                  "name": "Charge Enhancement",
+                  "description": "When launching [Locked Charge], DMG Dealt +100% for each stack of the target's [Charge Mark]."
+                }
+              ]
+            },
+            {
+              "name": "Charge Mark",
+              "kind": "passive",
+              "icon": "Icon_skill_passive_5007",
+              "description": "When launching [Marked Assault] or [Locked Charge], inflict [Charge Mark] on the target after combat, up to 2 stacks, lasting for 2 turns."
+            },
+            {
+              "name": "Super-conduct Shield",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_5116",
+              "description": "Translates to [System Failure] when affected by [Crash].",
+              "buffs": [
+                {
+                  "name": "System Failure",
+                  "description": "Unable to take action. Removed after taking damage or when the action starts."
+                },
+                {
+                  "name": "Crash",
+                  "description": "Unable to take action!"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slot": 3,
+          "boss": "Deborah",
+          "mech": "Kong (Centurion parts)",
+          "cls": "Heavy",
+          "hp": {
+            "body": 5829,
+            "arm": 3503,
+            "legs": 4365
+          },
+          "skills": [
+            {
+              "name": "Blackstorm",
+              "kind": "active",
+              "icon": "Icon_skill_order_1010",
+              "description": "Uses a Heavy Machine Gun to attack all targets within 3 adjacent tiles, dealing 0.7x DMG. After combat, inflicts [Calibration Failure] on targets hit, lasting for 2 turns.",
+              "buffs": [
+                {
+                  "name": "Calibration Failure",
+                  "description": "Hit Rate -100%."
+                }
+              ]
+            },
+            {
+              "name": "Covering Spray",
+              "kind": "active",
+              "icon": "Icon_skill_order_1010",
+              "description": "Uses a Heavy Machine Gun to attack all targets in a cone ahead, dealing 0.7x DMG. After combat, inflicts [Calibration Failure] on targets hit, lasting for 2 turns.",
+              "buffs": [
+                {
+                  "name": "Calibration Failure",
+                  "description": "Hit Rate -100%."
+                }
+              ]
+            },
+            {
+              "name": "Re-Raid",
+              "kind": "passive",
+              "icon": "Icon_skill_passive_1135",
+              "description": "When [Blackstorm] or [Covering Spray] is activated and there are 3 or more enemy units within skill range, can trigger [Re-Act] after combat. Can only trigger 1 time per turn.",
+              "buffs": [
+                {
+                  "name": "Re-Act",
+                  "description": "Can launch active attacks again. Before attacking, can move with full movement distance."
+                }
+              ]
+            },
+            {
+              "name": "Super-conduct Shield",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_5116",
+              "description": "Translates to [System Failure] when affected by [Crash].",
+              "buffs": [
+                {
+                  "name": "System Failure",
+                  "description": "Unable to take action. Removed after taking damage or when the action starts."
+                },
+                {
+                  "name": "Crash",
+                  "description": "Unable to take action!"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slot": 4,
+          "boss": "Genovese",
+          "mech": "Tonatiuh",
+          "cls": "Titan",
+          "hp": {
+            "body": 16830,
+            "arm": 4837,
+            "legs": 5880
+          },
+          "skills": [
+            {
+              "name": "Rupture Rocket",
+              "kind": "active",
+              "icon": "Icon_skill_order_1004",
+              "description": "Uses a Rocket Launcher to attack all targets within a 3x3-tile area, dealing 0.2x DMG to all parts of each target hit. After combat, inflicts [Rupture] on targets hit, lasting for 1 turn.",
+              "buffs": [
+                {
+                  "name": "Rupture",
+                  "description": "At end of action, all parts lose 5% of Max HP. Also, loses 5% of Max HP for every tile moved, up to 25%."
+                }
+              ]
+            },
+            {
+              "name": "War Trampling",
+              "kind": "active",
+              "icon": "Icon_skill_order_1009",
+              "description": "Attack all targets within 2 rings, dealing 1x AoE DMG. After combat, inflicts [Crash] on targets hit, lasting for 1 turn.",
+              "buffs": [
+                {
+                  "name": "Crash",
+                  "description": "Unable to take action!"
+                }
+              ]
+            },
+            {
+              "name": "Tonatiuh",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_5116",
+              "description": "After a part is destroyed, automatically repairs before taking action in the next turn. When Legs are undestroyed, can trigger [Re-ATK] after executing a skill.",
+              "buffs": [
+                {
+                  "name": "Re-ATK",
+                  "description": "After the current attack ends, trigger one additional attack. Unable to move before the additional attack unless stated otherwise."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "description": "The Lunos started as miners' protection in early Milkhama. As local industry died, they became an iron-fisted crime syndicate. UNCS police can't touch their stronghold despite evidence. They're reduced to posting bounties for unofficial forces.",
+      "turns": 15
+    },
+    {
+      "chapter": 6,
+      "name": "Eagle's Nest Op",
+      "battle": 8012,
+      "stages": [
+        {
+          "slot": 1,
+          "boss": "Gutzman",
+          "mech": "Wolverine (XR parts)",
+          "cls": "Medium",
+          "hp": {
+            "body": 3502,
+            "arm": 1751,
+            "legs": 2630
+          },
+          "skills": [
+            {
+              "name": "Magnetic Frenzy",
+              "kind": "active",
+              "icon": "Icon_skill_order_1005",
+              "description": "Uses a Rail Gun to attack all targets in a 1x5-tile line, dealing 1x DMG. After combat, inflicts [Super Overloaded] to the targets hit, lasting for 2 turns",
+              "buffs": [
+                {
+                  "name": "Super Overloaded",
+                  "description": "AP Cost +1 for normal attacks, active skills and codes. Stacks up to 5 times."
+                }
+              ]
+            },
+            {
+              "name": "Magneto Reunion",
+              "kind": "passive",
+              "icon": "Icon_skill_passive_4107",
+              "description": "When casting [Magnetic Frenzy], if 3 or more enemies are within the skill range, [Re-Act] can trigger after combat, up to 1 time per turn.",
+              "buffs": [
+                {
+                  "name": "Re-Act",
+                  "description": "Can launch active attacks again. Before attacking, can move with full movement distance."
+                }
+              ]
+            },
+            {
+              "name": "Super-conduct Shield",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_5116",
+              "description": "Translates to [System Failure] when affected by [Crash].",
+              "buffs": [
+                {
+                  "name": "System Failure",
+                  "description": "Unable to take action. Removed after taking damage or when the action starts."
+                },
+                {
+                  "name": "Crash",
+                  "description": "Unable to take action!"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slot": 2,
+          "boss": "Castilla",
+          "mech": "Dias (Centurion parts)",
+          "cls": "Heavy",
+          "hp": {
+            "body": 3985,
+            "arm": 2395,
+            "legs": 2984
+          },
+          "skills": [
+            {
+              "name": "Command Shot",
+              "kind": "active",
+              "icon": "Icon_skill_main_1017",
+              "description": "Uses a Heavy Machine Gun to attack a target, dealing 1.2x DMG. After combat, inflicts [Primary Target] on the target hit, lasting for 1 turn."
+            },
+            {
+              "name": "Full Recoil",
+              "kind": "passive",
+              "icon": "Icon_skill_passive_1012",
+              "description": "When attacked, immediately retaliate 1 time against all enemies within attack range, dealing 0.7x DMG."
+            },
+            {
+              "name": "Link Mode",
+              "kind": "passive",
+              "icon": "Icon_skill_passive_1003",
+              "description": "Cooperates with allies to launch a [Link Attack] against the target. Can trigger up to 3 times per turn. After dealing damage with a Heavy Machine Gun, inflict [DMG Taken UP I] on the hit target, lasting for 2 turns.",
+              "buffs": [
+                {
+                  "name": "DMG Taken UP I",
+                  "description": "DMG Taken +10%, stackable."
+                },
+                {
+                  "name": "Link Attack",
+                  "description": "After an ally actively attacks, launches an Extra Strike on the same target."
+                }
+              ]
+            },
+            {
+              "name": "Super-conduct Shield",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_5116",
+              "description": "Translates to [System Failure] when affected by [Crash].",
+              "buffs": [
+                {
+                  "name": "System Failure",
+                  "description": "Unable to take action. Removed after taking damage or when the action starts."
+                },
+                {
+                  "name": "Crash",
+                  "description": "Unable to take action!"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slot": 3,
+          "boss": "Georgia",
+          "mech": "Arcus (XR parts)",
+          "cls": "Medium",
+          "hp": {
+            "body": 4922,
+            "arm": 2461,
+            "legs": 3697
+          },
+          "skills": [
+            {
+              "name": "Nowhere To Run",
+              "kind": "active",
+              "icon": "Icon_skill_order_1003",
+              "description": "After 1 turn, uses a Rocket Launcher to attack all targets within a 2-tile diamond area centered on the locked-on target, dealing 1x DMG to all parts of each target, for 4x Total DMG. If more than 1 target is within the area, reduces Total DMG by 1.25x for each additional target. This skill deals a minimum of 1x Total DMG."
+            },
+            {
+              "name": "Bully",
+              "kind": "passive",
+              "icon": "Icon_skill_passive_4120",
+              "description": "When attacking, if the target has debuffs, ATK +15%.",
+              "buffs": [
+                {
+                  "name": "Bully",
+                  "description": "When attacking, if the target is afflicted with a debuff, DMG Dealt +15% for this attack."
+                }
+              ]
+            },
+            {
+              "name": "Super-conduct Shield",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_5116",
+              "description": "Translates to [System Failure] when affected by [Crash].",
+              "buffs": [
+                {
+                  "name": "System Failure",
+                  "description": "Unable to take action. Removed after taking damage or when the action starts."
+                },
+                {
+                  "name": "Crash",
+                  "description": "Unable to take action!"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "description": "DLAF reports Iguana mercs hit Belsuth boot camp targeting Admiral Sean's officer corps. Until the leak's plugged, the Admiral's bringing in outside contractors to defend camps and eliminate the Iguanas before more recruits die.",
+      "turns": 15
+    },
+    {
+      "chapter": 5,
+      "name": "End of the World",
+      "battle": 8007,
+      "stages": [
+        {
+          "slot": 1,
+          "boss": "Ridgewald",
+          "mech": "Unreachable (XR parts)",
+          "cls": "Medium",
+          "hp": {
+            "body": 1775,
+            "arm": 1065,
+            "legs": 1336
+          },
+          "skills": [
+            {
+              "name": "Assault Tactics",
+              "kind": "active",
+              "icon": "Icon_skill_main_1118",
+              "description": "Uses a Machine Gun to attack a target, dealing 1.3x DMG."
+            },
+            {
+              "name": "Legs Armor",
+              "kind": "passive",
+              "icon": "Icon_skill_passive_2111",
+              "description": "When Leg HP is greater than or equal to 50%, Armor +500."
+            },
+            {
+              "name": "Legs Armor II",
+              "kind": "passive",
+              "icon": "Icon_skill_passive_2111",
+              "description": "When Leg HP is greater than or equal to 80%, Armor +500."
+            },
+            {
+              "name": "Super-conduct Shield",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_5116",
+              "description": "Translates to [System Failure] when affected by [Crash].",
+              "buffs": [
+                {
+                  "name": "System Failure",
+                  "description": "Unable to take action. Removed after taking damage or when the action starts."
+                },
+                {
+                  "name": "Crash",
+                  "description": "Unable to take action!"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slot": 2,
+          "boss": "Egbert",
+          "mech": "Blazer (XR parts)",
+          "cls": "Medium",
+          "hp": {
+            "body": 2178,
+            "arm": 1089,
+            "legs": 1636
+          },
+          "skills": [
+            {
+              "name": "Slanting Rail Gun",
+              "kind": "active",
+              "icon": "Icon_skill_order_1005",
+              "description": "Uses a Rail Gun to attack all targets within a 4-tile diagonal area, dealing 1x DMG."
+            },
+            {
+              "name": "Linear Rail Gun",
+              "kind": "active",
+              "icon": "Icon_skill_order_1005",
+              "description": "Uses a Rail Gun to attack all targets in a 1x5-tile line, dealing 1x DMG."
+            },
+            {
+              "name": "Astute Mod",
+              "kind": "passive",
+              "icon": "Icon_skill_passive_4114",
+              "description": "When attacking with a Rail Gun, Dodge Rate +20% for each target within range, up to 60%. Lasts for 1 turn.",
+              "buffs": [
+                {
+                  "name": "Alert Mode I",
+                  "description": "Dodge Rate +20%."
+                },
+                {
+                  "name": "Alert Mode II",
+                  "description": "Dodge Rate +40%."
+                },
+                {
+                  "name": "Alert Mode III",
+                  "description": "Dodge Rate +60%."
+                }
+              ]
+            },
+            {
+              "name": "Non-Chip DMG Boost",
+              "kind": "passive",
+              "icon": "Icon_skill_passive_1135",
+              "description": "DMG Dealt +60%."
+            },
+            {
+              "name": "Super-conduct Shield",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_5116",
+              "description": "Translates to [System Failure] when affected by [Crash].",
+              "buffs": [
+                {
+                  "name": "System Failure",
+                  "description": "Unable to take action. Removed after taking damage or when the action starts."
+                },
+                {
+                  "name": "Crash",
+                  "description": "Unable to take action!"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slot": 3,
+          "boss": "Eller",
+          "mech": "Bayard (Centurion parts)",
+          "cls": "Heavy",
+          "hp": {
+            "body": 2865,
+            "arm": 1722,
+            "legs": 2146
+          },
+          "skills": [
+            {
+              "name": "Reload Ammo Chain",
+              "kind": "active",
+              "icon": "Icon_skill_main_1120",
+              "description": "Uses a Heavy Machine Gun to attack a target, dealing 2x DMG."
+            },
+            {
+              "name": "Tactical Coordination II",
+              "kind": "passive",
+              "icon": "Icon_skill_passive_1003",
+              "description": "Cooperates with allies to launch [CEC] on a target within range, dealing 0.35x DMG and gaining 2 AP. Can trigger up to 3 times per turn.",
+              "buffs": [
+                {
+                  "name": "CEC",
+                  "description": "Cooperates with allies to launch a [Link Attack] against the target. Can trigger up to 3 times per turn."
+                },
+                {
+                  "name": "Link Attack",
+                  "description": "After an ally actively attacks, launches an Extra Strike on the same target."
+                }
+              ]
+            },
+            {
+              "name": "Kinetic Boost II",
+              "kind": "passive",
+              "icon": "Icon_skill_passive_5119",
+              "description": "Max AP +2."
+            },
+            {
+              "name": "Super-conduct Shield",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_5116",
+              "description": "Translates to [System Failure] when affected by [Crash].",
+              "buffs": [
+                {
+                  "name": "System Failure",
+                  "description": "Unable to take action. Removed after taking damage or when the action starts."
+                },
+                {
+                  "name": "Crash",
+                  "description": "Unable to take action!"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slot": 4,
+          "boss": "Meritus",
+          "mech": "Blue Bird (XR parts)",
+          "cls": "Medium",
+          "hp": {
+            "body": 2596,
+            "arm": 1459,
+            "legs": 2193
+          },
+          "skills": [
+            {
+              "name": "EMP Bomb",
+              "kind": "passive",
+              "icon": "Icon_skill_passive_5107",
+              "description": "When attacking or retaliating with a Machine Gun, inflict [Pulse Oscillation] on the hit target after combat, lasting for 1 turn."
+            },
+            {
+              "name": "Super-conduct Shield",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_5116",
+              "description": "Translates to [System Failure] when affected by [Crash].",
+              "buffs": [
+                {
+                  "name": "System Failure",
+                  "description": "Unable to take action. Removed after taking damage or when the action starts."
+                },
+                {
+                  "name": "Crash",
+                  "description": "Unable to take action!"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "description": "Terrorists control Monolith Valley, cutting off north Maratur. Intel shows foreign merc ties and ST tech acquisitions. Harpy contracts Kaidan to neutralize the Maratur forces.",
+      "turns": 15
+    },
+    {
+      "chapter": 4,
+      "name": "Longest Day",
+      "battle": 8008,
+      "stages": [
+        {
+          "slot": 1,
+          "boss": "Hayato",
+          "mech": "Arcus (XR parts)",
+          "cls": "Medium",
+          "hp": {
+            "body": 1522,
+            "arm": 761,
+            "legs": 1144
+          },
+          "skills": [
+            {
+              "name": "Obstacle Rocket",
+              "kind": "active",
+              "icon": "Icon_skill_order_1003",
+              "description": "Can attack across the entire map. Uses a Rocket Launcher to attack all targets within a 3x3-tile area, dealing 0.44x DMG to all parts of each target. After combat, inflicts [Maneuver Locked] on targets hit, lasting for 1 turn.",
+              "buffs": [
+                {
+                  "name": "Maneuver Locked",
+                  "description": "Movement -1. Cannot [Guard]."
+                },
+                {
+                  "name": "Guard",
+                  "description": "Protects allies within 2 adjacent tiles from Assault and Ranged attacks. Triggers up to 2 times per turn and lasts 2 turns. Additionally, gains [Defensive Stance I]. Can only trigger 1 time per turn."
+                },
+                {
+                  "name": "Defensive Stance I",
+                  "description": "DMG Taken -15%."
+                }
+              ]
+            },
+            {
+              "name": "Capacity Upgrade",
+              "kind": "passive",
+              "icon": "Icon_skill_passive_5189",
+              "description": "The number of bullets fired by Machine Gun, Heavy Machine Gun, and Shotgun is increased for all allies within a 5-ring area.",
+              "buffs": [
+                {
+                  "name": "Capacity Upgrade",
+                  "description": "Increases Bullets for all allies' Machine Guns, Heavy Machine Guns, and Shotguns within 5 rings."
+                }
+              ]
+            },
+            {
+              "name": "Super-conduct Shield",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_5116",
+              "description": "Translates to [System Failure] when affected by [Crash].",
+              "buffs": [
+                {
+                  "name": "System Failure",
+                  "description": "Unable to take action. Removed after taking damage or when the action starts."
+                },
+                {
+                  "name": "Crash",
+                  "description": "Unable to take action!"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slot": 2,
+          "boss": "Sunny",
+          "mech": "Twilight Fang (Dopplesoldner parts)",
+          "cls": "Light",
+          "hp": {
+            "body": 1601,
+            "arm": 1049,
+            "legs": 808
+          },
+          "skills": [
+            {
+              "name": "Rampage Sweep",
+              "kind": "active",
+              "icon": "Icon_skill_order_1102",
+              "description": "Uses a Polearm to attack all targets within half ring, dealing 1.2x DMG. After combat, inflicts [Crash] for 1 turn and [Armor Down II] for 2 turns on targets hit.",
+              "buffs": [
+                {
+                  "name": "Crash",
+                  "description": "Unable to take action!"
+                },
+                {
+                  "name": "Armor Down II",
+                  "description": "Armor -50%."
+                }
+              ]
+            },
+            {
+              "name": "Reflection Enhancement",
+              "kind": "passive",
+              "icon": "Icon_skill_passive_5189",
+              "description": "Grants [Dodge Up V] to all allies within 5 rings.",
+              "buffs": [
+                {
+                  "name": "Dodge Code",
+                  "description": "Grants Dodge Rate +10% to all allies within 5 rings."
+                },
+                {
+                  "name": "Dodge Up V",
+                  "description": "Dodge Rate +10%."
+                }
+              ]
+            },
+            {
+              "name": "Super-conduct Shield",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_5116",
+              "description": "Translates to [System Failure] when affected by [Crash].",
+              "buffs": [
+                {
+                  "name": "System Failure",
+                  "description": "Unable to take action. Removed after taking damage or when the action starts."
+                },
+                {
+                  "name": "Crash",
+                  "description": "Unable to take action!"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slot": 3,
+          "boss": "Crotti",
+          "mech": "Aurora (XR parts)",
+          "cls": "Medium",
+          "hp": {
+            "body": 2001,
+            "arm": 1125,
+            "legs": 1690
+          },
+          "skills": [
+            {
+              "name": "Deploy Carrack",
+              "kind": "active",
+              "icon": "Icon_skill_order_3107",
+              "description": "Deploys Carrack to assist."
+            },
+            {
+              "name": "Head-to-Head",
+              "kind": "active",
+              "icon": "Icon_skill_main_5102",
+              "description": "Uses a Machine Gun to attack a target, dealing 1.35x DMG. Before combat, gains [Armor UP II], lasting 2 turns.",
+              "buffs": [
+                {
+                  "name": "Armor UP II",
+                  "description": "Armor +50%."
+                }
+              ]
+            },
+            {
+              "name": "CEC",
+              "kind": "passive",
+              "icon": "Icon_skill_passive_5189",
+              "description": "All allies with Assault or Ranged weapons within a 5-ring area gain the [Link Attack] ability.",
+              "buffs": [
+                {
+                  "name": "CEC",
+                  "description": "Grants the Link Attack ability to all allies within 5 rings."
+                },
+                {
+                  "name": "Link Attack",
+                  "description": "After an ally actively attacks, launches an Extra Strike on the same target."
+                }
+              ]
+            },
+            {
+              "name": "Super-conduct Shield",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_5116",
+              "description": "Translates to [System Failure] when affected by [Crash].",
+              "buffs": [
+                {
+                  "name": "System Failure",
+                  "description": "Unable to take action. Removed after taking damage or when the action starts."
+                },
+                {
+                  "name": "Crash",
+                  "description": "Unable to take action!"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "description": "GSA found Ashes outposts. NDF STs deployed for containment. GKD was hired to create chaos and break the blockade, securing escape routes for the Ashes.",
+      "turns": 15
+    },
+    {
+      "chapter": 3,
+      "name": "Savage Growth",
+      "battle": 8011,
+      "stages": [
+        {
+          "slot": 1,
+          "boss": "Bertha",
+          "mech": "Unreachable (XR parts)",
+          "cls": "Medium",
+          "hp": {
+            "body": 1019,
+            "arm": 611,
+            "legs": 766
+          },
+          "skills": [
+            {
+              "name": "Load - Blitz Round",
+              "kind": "active",
+              "icon": "Icon_skill_main_1144",
+              "description": "Enters [Aiming] Mode. Uses a Sniper Rifle to attack a target, dealing 1.3x DMG. This attack ignores the shield's [Target Shift] effect.",
+              "buffs": [
+                {
+                  "name": "Aiming",
+                  "description": "Before attacking, designate a specific part of the target to focus all damage on that part."
+                },
+                {
+                  "name": "Target Shift",
+                  "description": "Ensures the enemy's attack hits the designated part."
+                }
+              ]
+            },
+            {
+              "name": "Vigilant mode",
+              "kind": "passive",
+              "icon": "Icon_skill_passive_1122",
+              "description": "When equipped with a Ranged Weapon, [Vigilant Shot] can trigger, dealing 0.35x DMG, up to 3 times per turn.",
+              "buffs": [
+                {
+                  "name": "Vigilant Shot",
+                  "description": "Triggers [Vigilant Shot] when equipped with a Ranged Weapon, dealing 0.35x DMG. Can trigger 3 times per turn."
+                }
+              ]
+            },
+            {
+              "name": "Super-conduct Shield",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_5116",
+              "description": "Translates to [System Failure] when affected by [Crash].",
+              "buffs": [
+                {
+                  "name": "System Failure",
+                  "description": "Unable to take action. Removed after taking damage or when the action starts."
+                },
+                {
+                  "name": "Crash",
+                  "description": "Unable to take action!"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slot": 2,
+          "boss": "Mann",
+          "mech": "Malthus (XR parts)",
+          "cls": "Medium",
+          "hp": {
+            "body": 1105,
+            "arm": 553,
+            "legs": 830
+          },
+          "skills": [
+            {
+              "name": "Overloaded Shot II",
+              "kind": "active",
+              "icon": "Icon_skill_main_1006",
+              "description": "Uses a Shotgun to attack a target, dealing 1.5x DMG."
+            },
+            {
+              "name": "Volatile Surge",
+              "kind": "passive",
+              "icon": "Icon_skill_passive_5013",
+              "description": "When attacking with a Rocket Launcher, inflicts 1 stack of [Breach] on the target hit after combat.",
+              "buffs": [
+                {
+                  "name": "Breach",
+                  "description": "All parts take [Fixed DMG] equal to 15% of Max Part HP."
+                },
+                {
+                  "name": "Fixed DMG",
+                  "description": "Ignores Armor and DMG Reduction to deal damage once."
+                }
+              ]
+            },
+            {
+              "name": "Super-conduct Shield",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_5116",
+              "description": "Translates to [System Failure] when affected by [Crash].",
+              "buffs": [
+                {
+                  "name": "System Failure",
+                  "description": "Unable to take action. Removed after taking damage or when the action starts."
+                },
+                {
+                  "name": "Crash",
+                  "description": "Unable to take action!"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slot": 3,
+          "boss": "Douglas",
+          "mech": "Arcus (XR parts)",
+          "cls": "Medium",
+          "hp": {
+            "body": 1587,
+            "arm": 952,
+            "legs": 1194
+          },
+          "skills": [
+            {
+              "name": "Rack (HMG)",
+              "kind": "active",
+              "icon": "Icon_skill_order_5004",
+              "description": "Enters [Rack (HMG)] Mode: Can continue attacking after racking. ST automatically exits [Rack (HMG)] Mode when an Arm is destroyed. When in [Rack (HMG)] Mode, the [Retract] code can be executed. After retracting, can continue moving.",
+              "buffs": [
+                {
+                  "name": "Retract",
+                  "description": "Exit [Rack] Mode"
+                },
+                {
+                  "name": "Rack",
+                  "description": "Stationary deployment, unable to move, grants a Special Bonus."
+                }
+              ]
+            },
+            {
+              "name": "Artillery Barrage",
+              "kind": "active",
+              "icon": "Icon_skill_order_1010",
+              "description": "Uses a Heavy Machine Gun to attack all targets within attack range, dealing 0.7x DMG."
+            },
+            {
+              "name": "Link Mode",
+              "kind": "passive",
+              "icon": "Icon_skill_passive_1003",
+              "description": "Cooperates with allies to launch a [Link Attack] against the target. Can trigger up to 3 times per turn. After dealing damage with a Heavy Machine Gun, inflict [DMG Taken UP I] on the hit target, lasting for 2 turns.",
+              "buffs": [
+                {
+                  "name": "DMG Taken UP I",
+                  "description": "DMG Taken +10%, stackable."
+                },
+                {
+                  "name": "Link Attack",
+                  "description": "After an ally actively attacks, launches an Extra Strike on the same target."
+                }
+              ]
+            },
+            {
+              "name": "Super-conduct Shield",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_5116",
+              "description": "Translates to [System Failure] when affected by [Crash].",
+              "buffs": [
+                {
+                  "name": "System Failure",
+                  "description": "Unable to take action. Removed after taking damage or when the action starts."
+                },
+                {
+                  "name": "Crash",
+                  "description": "Unable to take action!"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "description": "Parill Desert breeds crime and mercs. Enhanced fighters flock here chasing glory and credits. No matter how many get wiped out, they keep coming back like weeds.",
+      "turns": 15
+    },
+    {
+      "chapter": 2,
+      "name": "Fading Light",
+      "battle": 8009,
+      "stages": [
+        {
+          "slot": 1,
+          "boss": "Michaela",
+          "mech": "Wolverine (XR parts)",
+          "cls": "Medium",
+          "hp": {
+            "body": 762,
+            "arm": 381,
+            "legs": 573
+          },
+          "skills": [
+            {
+              "name": "Flaming Rail Gun",
+              "kind": "passive",
+              "icon": "Icon_skill_passive_1103",
+              "description": "When attacking with a Rail Gun, [Burning Terrain] is applied along its path.",
+              "buffs": [
+                {
+                  "name": "Burning Terrain",
+                  "description": "Deals [Fixed DMG] equal to 12% of Max HP to units that remain on this tile. Lasts for 3 turns."
+                },
+                {
+                  "name": "Fixed DMG",
+                  "description": "Ignores Armor and DMG Reduction to deal damage once."
+                }
+              ]
+            },
+            {
+              "name": "Super-conduct Shield",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_5116",
+              "description": "Translates to [System Failure] when affected by [Crash].",
+              "buffs": [
+                {
+                  "name": "System Failure",
+                  "description": "Unable to take action. Removed after taking damage or when the action starts."
+                },
+                {
+                  "name": "Crash",
+                  "description": "Unable to take action!"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slot": 2,
+          "boss": "Keller",
+          "mech": "Glasya (Dopplesoldner parts)",
+          "cls": "Light",
+          "hp": {
+            "body": 783,
+            "arm": 513,
+            "legs": 395
+          },
+          "skills": [
+            {
+              "name": "Tactical Sweep",
+              "kind": "active",
+              "icon": "Icon_skill_order_1102",
+              "description": "Uses a Polearm to attack all targets within an I-shaped (3x1-tile) area ahead, dealing 0.6x DMG. After combat, inflicts [DMG Taken UP I] on targets hit, lasting for 2 turns.",
+              "buffs": [
+                {
+                  "name": "DMG Taken UP I",
+                  "description": "DMG Taken +10%, stackable."
+                }
+              ]
+            },
+            {
+              "name": "Energy Maneuver",
+              "kind": "passive",
+              "icon": "Icon_skill_passive_5147",
+              "description": "When using a Polearm for an AoE attack, apply up to 3 stacks of [Maneuver Gyration] to yourself after combat. The number of stacks equals the hits on the target.",
+              "buffs": [
+                {
+                  "name": "Maneuver Loop",
+                  "description": "Dodge attack 1 time, up to 3 stacks."
+                }
+              ]
+            },
+            {
+              "name": "Super-conduct Shield",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_5116",
+              "description": "Translates to [System Failure] when affected by [Crash].",
+              "buffs": [
+                {
+                  "name": "System Failure",
+                  "description": "Unable to take action. Removed after taking damage or when the action starts."
+                },
+                {
+                  "name": "Crash",
+                  "description": "Unable to take action!"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slot": 3,
+          "boss": "Sámi",
+          "mech": "Blue Bird (XR parts)",
+          "cls": "Medium",
+          "hp": {
+            "body": 1183,
+            "arm": 710,
+            "legs": 890
+          },
+          "skills": [
+            {
+              "name": "Claymore Mine",
+              "kind": "active",
+              "icon": "Icon_skill_order_1109",
+              "description": "Places a mine within 1 adjacent tile of the target."
+            },
+            {
+              "name": "Rapid Response",
+              "kind": "passive",
+              "icon": "Icon_skill_passive_1126",
+              "description": "When retaliating, DMG Dealt +35%. If both arms are undestroyed, gains [Quick Draw].",
+              "buffs": [
+                {
+                  "name": "Quick Draw",
+                  "description": "When attacked in combat, perform Retaliation before the enemy's attack."
+                }
+              ]
+            },
+            {
+              "name": "Super-conduct Shield",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_5116",
+              "description": "Translates to [System Failure] when affected by [Crash].",
+              "buffs": [
+                {
+                  "name": "System Failure",
+                  "description": "Unable to take action. Removed after taking damage or when the action starts."
+                },
+                {
+                  "name": "Crash",
+                  "description": "Unable to take action!"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "description": "The border zone between DL and UNCS is a lawless haven for mercs and criminals. Big corps provide security for convoys passing through.\nA guerrilla merc group has been hitting these protected convoys hard. The corps have put out a joint bounty to eliminate this threat.",
+      "turns": 15
+    },
+    {
+      "chapter": 1,
+      "name": "Rekindled Spark",
+      "battle": 8006,
+      "stages": [
+        {
+          "slot": 1,
+          "boss": "Hyena",
+          "mech": "Blue Bird (XR parts)",
+          "cls": "Medium",
+          "hp": {
+            "body": 600,
+            "arm": 360,
+            "legs": 452
+          },
+          "skills": [
+            {
+              "name": "Snipe Legs",
+              "kind": "active",
+              "icon": "Icon_skill_main_1017",
+              "description": "Uses a Sniper Rifle to attack the target's Legs, dealing 1.2x DMG. This attack ignores the Shield's [Target Shift] effect. After combat, inflicts [Movement Inhibition I] and [Guard Block] on targets hit, lasting for 1 turn.",
+              "buffs": [
+                {
+                  "name": "Target Shift",
+                  "description": "Ensures the enemy's attack hits the designated part."
+                },
+                {
+                  "name": "Movement Inhibition I",
+                  "description": "Movement -1."
+                }
+              ]
+            },
+            {
+              "name": "Super-conduct Shield",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_5116",
+              "description": "Translates to [System Failure] when affected by [Crash].",
+              "buffs": [
+                {
+                  "name": "System Failure",
+                  "description": "Unable to take action. Removed after taking damage or when the action starts."
+                },
+                {
+                  "name": "Crash",
+                  "description": "Unable to take action!"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slot": 2,
+          "boss": "Lone Wolf",
+          "mech": "Dopplesoldner",
+          "cls": "Light",
+          "hp": {
+            "body": 609,
+            "arm": 399,
+            "legs": 308
+          },
+          "skills": [
+            {
+              "name": "Swipe",
+              "kind": "active",
+              "icon": "Icon_skill_order_1102",
+              "description": "Uses a Polearm to attack all targets within an I-shaped (3x1-tile) area ahead, dealing 1.2x DMG. After combat, inflicts [Maneuver Locked] on targets hit, lasting 1 turn.",
+              "buffs": [
+                {
+                  "name": "Maneuver Locked",
+                  "description": "Movement -1. Cannot [Guard]."
+                },
+                {
+                  "name": "Guard",
+                  "description": "Protects allies within 2 adjacent tiles from Assault and Ranged attacks. Triggers up to 2 times per turn and lasts 2 turns. Additionally, gains [Defensive Stance I]. Can only trigger 1 time per turn."
+                },
+                {
+                  "name": "Defensive Stance I",
+                  "description": "DMG Taken -15%."
+                }
+              ]
+            },
+            {
+              "name": "Super-conduct Shield",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_5116",
+              "description": "Translates to [System Failure] when affected by [Crash].",
+              "buffs": [
+                {
+                  "name": "System Failure",
+                  "description": "Unable to take action. Removed after taking damage or when the action starts."
+                },
+                {
+                  "name": "Crash",
+                  "description": "Unable to take action!"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slot": 3,
+          "boss": "Vulture",
+          "mech": "Dodo (XR parts)",
+          "cls": "Medium",
+          "hp": {
+            "body": 1116,
+            "arm": 558,
+            "legs": 838
+          },
+          "skills": [
+            {
+              "name": "Rocket Assault",
+              "kind": "active",
+              "icon": "Icon_skill_order_1003",
+              "description": "After 1 turn, uses a Rocket Launcher to attack all targets within a 3x3-tile area, dealing 0.44x DMG to all parts of each target."
+            },
+            {
+              "name": "Non-Chip DMG Boost",
+              "kind": "passive",
+              "icon": "Icon_skill_passive_1135",
+              "description": "DMG Dealt +60%."
+            },
+            {
+              "name": "Super-conduct Shield",
+              "kind": "passive",
+              "icon": "Icon_skill_talent_5116",
+              "description": "Translates to [System Failure] when affected by [Crash].",
+              "buffs": [
+                {
+                  "name": "System Failure",
+                  "description": "Unable to take action. Removed after taking damage or when the action starts."
+                },
+                {
+                  "name": "Crash",
+                  "description": "Unable to take action!"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "companions": [
+        {
+          "name": "Black Widow",
+          "mech": "Blue Bird (XR parts)",
+          "skills": [
+            {
+              "name": "Load - Explosive Round",
+              "kind": "active",
+              "icon": "Icon_skill_main_1132",
+              "description": "Uses a Sniper Rifle to attack a target, dealing 1.5x DMG to 1 part and Splash DMG equal to 30% of this damage to other parts. Enters [Aiming] Mode before attacking.",
+              "buffs": [
+                {
+                  "name": "Aiming",
+                  "description": "Before attacking, designate a specific part of the target to focus all damage on that part."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "description": "GSA intel reveals Obsidian's secret lab near Rayneburg running pilot enhancement tests on MIA soldiers and civilians. To maintain stealth, GSA partners with Kaidan Squad instead of official forces to raid the lab, rescue test subjects, and secure research data.",
+      "turns": 15
     }
   ]
 };

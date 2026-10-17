@@ -215,6 +215,17 @@ def ac_seasons():
                ASSET_URL + quote(data['bosses'][names[-1]]['portrait']))
 
 
+def co_chapters():
+    data = load('data/bosses/bosses.json')
+    for chapter in data['clearance_ops']:
+        # "Clearance Ops chapter 17 ", then the bosses by stage on their own
+        # line, as for Armed Conquest. Image: the last boss.
+        names = [st['boss'] for st in chapter['stages']]
+        yield ('clearanceops', chapter['name'], chapter['name'] + ' — Clearance Ops',
+               f'Clearance Ops chapter {chapter["chapter"]} \nBosses and skills: ' + ', '.join(names),
+               ASSET_URL + quote(data['bosses'][names[-1]]['portrait']))
+
+
 # ── Output ────────────────────────────────────────────────────────────────────
 
 def route_titles(index_html):
@@ -243,7 +254,7 @@ MISC_DESCRIPTIONS = {
     'features':   'Every R&D feature for pilots, STs and weapons, by class and R&D tree.',
     'bosses':     'Every Armed Conquest and Clearance Ops boss, with the seasons and chapters it appears in.',
     'armedconquest': 'Bosses and HP per difficulty of every Armed Conquest season, each with a page of its bosses\' skills.',
-    'clearanceops':  'Bosses and HP of Clearance Ops chapters 11-17.',
+    'clearanceops':  'Bosses and HP of every Clearance Ops chapter, each with a page of its bosses\' skills.',
 }
 
 
@@ -316,7 +327,7 @@ def main():
             write(r, page_html(index_html, 1, label))
 
     count = 0
-    for items in (pilots, mechs, weapons, backpacks, modules, ac_seasons):
+    for items in (pilots, mechs, weapons, backpacks, modules, ac_seasons, co_chapters):
         seen = {}
         for route, param, title, description, image in items():
             slug = slugify(param)
