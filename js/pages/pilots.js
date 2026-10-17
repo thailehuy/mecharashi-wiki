@@ -39,7 +39,7 @@ var AVAILABILITY_INFO = {
   CL: { cls: 'avail-cl', label: 'Collab Limited', desc: 'Collab limited unit (will not be added to the normal pool nor rerun again)' },
 };
 var PILOT_AVAILABILITY = {
-  'Asuka': 'CL', 'Shinji': 'CL', 'Rei': 'CL',
+  'Asuka': 'CL', 'Shinji': 'CL', 'Rei': 'CL', 'Wataru': 'CL', 'Toraoh': 'CL',
   'Rosa: Judgment': 'L', 'Hailis': 'L', 'Lustre': 'L',
   'Fregata': 'C', 'Cosette': 'C', 'Sylar': 'C',
 };

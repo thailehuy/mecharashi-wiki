@@ -104,7 +104,8 @@ def ac_skills(bosses):
     Each skill: name, kind ('active' or 'passive'), description (passives in
     enemy_skills only; active skills have none in the DB) and, when the skill
     isn't on every difficulty, the difficulties it's on (e.g. a β passive on
-    Extreme and Inferno). Passives also get their effects from enemy_buffs:
+    Extreme and Inferno), and its icon from the game tables (skill_icons()).
+    Passives also get their effects from enemy_buffs:
     see passive_effects(). Also returns the stage's skill IDs (for
     explain_terms()).
     """
@@ -115,6 +116,7 @@ def ac_skills(bosses):
     rows = con.execute('SELECT "group", stage, difficulty, boss_pilot, stage_name, main_skills, passives FROM bosses '
                        "WHERE content = 'Armed Conquest' AND role = 'main' ORDER BY rowid").fetchall()
     con.close()
+    icons = skill_icons()
     out = {}
     for season, stage, diff, boss, title, main, passives in rows:
         diff = DIFFICULTY_NAMES.get(diff, diff)
@@ -127,6 +129,8 @@ def ac_skills(bosses):
                     continue
                 st['ids'].add(int(sid))
                 sk = st['skills'].setdefault(sid, {'name': name, 'kind': kind, 'diffs': []})
+                if icons.get((kind, int(sid))):
+                    sk['icon'] = icons[(kind, int(sid))]
                 sk['diffs'].append(diff)
                 desc = described.get(int(sid))
                 if desc and 'effects' not in sk:   # once: the gaps get filled below
@@ -162,6 +166,18 @@ def ac_skills(bosses):
         result[key] = (st['boss'], st['title'], skills, st['ids'])
     return result
 
+
+
+def skill_icons():
+    """(kind, skill ID) -> icon name, from the Icon column of the game's
+    main (active) and passive skill tables."""
+    con = sqlite3.connect(STATS)
+    icons = {}
+    for kind, table in (('active', 'ConfigDataMainSkillInfo'), ('passive', 'ConfigDataPassiveSkillInfo')):
+        for sid, icon in con.execute("SELECT ID, Icon FROM %s WHERE Icon IS NOT NULL AND Icon != ''" % table):
+            icons[(kind, int(sid))] = icon
+    con.close()
+    return icons
 
 
 def passive_effects(con):
@@ -459,6 +475,8 @@ def add_guide(s, st, entry, warn):
         for sk in same:
             if sk is match:
                 g = dict(g, kind=sk['kind'])
+                if 'icon' not in g and 'icon' in sk:
+                    g['icon'] = sk['icon']
                 if 'difficulties' in sk:
                     g['difficulties'] = sk['difficulties']
                 merged.append(g)

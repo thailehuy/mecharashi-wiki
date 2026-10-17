@@ -327,8 +327,8 @@
             {
               "name": "Binding Mire",
               "kind": "active",
-              "description": "Uses a Heavy Machine Gun to attack all targets within attack range, dealing 1x AoE DMG. Inflicts [Movement Inhibition I] on targets hit, lasting for 2 turns.",
               "icon": "Icon_skill_order_1124",
+              "description": "Uses a Heavy Machine Gun to attack all targets within attack range, dealing 1x AoE DMG. Inflicts [Movement Inhibition I] on targets hit, lasting for 2 turns.",
               "buffs": [
                 {
                   "name": "Movement Inhibition I",
@@ -339,8 +339,8 @@
             {
               "name": "Thunderstorm, Emerge!",
               "kind": "active",
-              "description": "Uses a Heavy Machine Gun to attack all targets within a 1x5-tile area ahead, dealing 1x AoE DMG. Inflicts [FCS Failure] on targets hit. Applies [Electric Surge Terrain] to tiles hit, lasting for 1 turn.",
               "icon": "Icon_skill_order_1010",
+              "description": "Uses a Heavy Machine Gun to attack all targets within a 1x5-tile area ahead, dealing 1x AoE DMG. Inflicts [FCS Failure] on targets hit. Applies [Electric Surge Terrain] to tiles hit, lasting for 1 turn.",
               "buffs": [
                 {
                   "name": "FCS Failure",
@@ -355,8 +355,8 @@
             {
               "name": "Emergency Arm Repair",
               "kind": "passive",
-              "description": "If an Arm is destroyed, repairs all current HP of the Arm before the next action and gains [Underperformance]. Each Arm can trigger this effect once.",
               "icon": "Icon_skill_talent_3101",
+              "description": "If an Arm is destroyed, repairs all current HP of the Arm before the next action and gains [Underperformance]. Each Arm can trigger this effect once.",
               "buffs": [
                 {
                   "name": "Underperformance",
@@ -367,8 +367,8 @@
             {
               "name": "Fading Snow",
               "kind": "passive",
-              "description": "Range +1.\nWhen possessing 3 AP or more, DMG Dealt +5% and Hit Rate +5% for each 1 AP possessed, up to 45%.\nAt start of action, if total AP possessed reaches the cap, gains [Skill Enhancement].",
               "icon": "Icon_skill_talent_4110",
+              "description": "Range +1.\nWhen possessing 3 AP or more, DMG Dealt +5% and Hit Rate +5% for each 1 AP possessed, up to 45%.\nAt start of action, if total AP possessed reaches the cap, gains [Skill Enhancement].",
               "buffs": [
                 {
                   "name": "Skill Enhancement",
@@ -478,8 +478,8 @@
             {
               "name": "Exorcise",
               "kind": "active",
-              "description": "Uses a Rail Gun to attack all targets within a 3x5-tile area, dealing 1.0x AoE DMG. Gains an additional 50% DMG Bonus for units with HP below 50%. Inflicts [Suppression] on targets hit, lasting for 1 turn.",
               "icon": "Icon_skill_order_1109",
+              "description": "Uses a Rail Gun to attack all targets within a 3x5-tile area, dealing 1.0x AoE DMG. Gains an additional 50% DMG Bonus for units with HP below 50%. Inflicts [Suppression] on targets hit, lasting for 1 turn.",
               "buffs": [
                 {
                   "name": "Suppression",
@@ -490,25 +490,26 @@
             {
               "name": "Eliminate",
               "kind": "active",
+              "icon": "Icon_skill_order_1107",
               "description": "Uses two Machine Guns to attack all targets within a 5x3-tile area ahead, dealing 0.5x AoE DMG 2 times. If possessing [Predatorial Aid], this attack cannot be dodged."
             },
             {
               "name": "Sinister Curtain",
               "kind": "passive",
-              "description": "When any part's HP falls below 50%, gains [Sinister Curtain] after combat, lasting for 1 turn. Can trigger 1 time per part.",
-              "icon": "Icon_skill_passive_5104"
+              "icon": "Icon_skill_passive_5104",
+              "description": "When any part's HP falls below 50%, gains [Sinister Curtain] after combat, lasting for 1 turn. Can trigger 1 time per part."
             },
             {
               "name": "Predatorial Aid",
               "kind": "passive",
+              "icon": "Icon_skill_talent_5126",
               "description": "At start of action, for each other allied ST, gains 1 stack of [Predatorial Aid].\nWhen possessing [Predatorial Aid], Machine Gun Bullets +2, Rail Gun Range +1, and Rail Gun can fire diagonally.",
               "buffs": [
                 {
                   "name": "Predatorial Aid",
                   "description": "DMG +10%, DMG Taken -10%. Stacks up to 5 times. After being attacked, 1 stack is removed."
                 }
-              ],
-              "icon": "Icon_skill_talent_5126"
+              ]
             }
           ],
           "description": "Traces remain in the snow.",
@@ -612,6 +613,7 @@
             {
               "name": "Gyrating Slash",
               "kind": "active",
+              "icon": "Icon_skill_order_5102",
               "description": "Uses two Alter-Blades to attack all targets within 1 ring, dealing 1x AoE DMG. Upon hit, inflicts [Drive Overload] on the target, lasting for 2 turns.",
               "buffs": [
                 {
@@ -623,18 +625,20 @@
             {
               "name": "Quick Slash",
               "kind": "active",
+              "icon": "Icon_skill_main_1159",
               "description": "Uses Alter-Blades to attack a target, dealing 1.5x DMG. Targets the part with the lowest HP."
             },
             {
               "name": "Deadly Raid",
               "kind": "active",
+              "icon": "Icon_skill_order_5139",
               "description": "Will not be actively cast.\nUses two Alter-Blades to thrust 3x5 tiles forward, dealing 2.5x AoE DMG to all enemies in the path."
             },
             {
               "name": "Emergency Arm Repair",
               "kind": "passive",
-              "description": "If an Arm is destroyed, repairs all current HP of the Arm before the next action and gains [Underperformance]. Each Arm can trigger this effect once.",
               "icon": "Icon_skill_talent_3101",
+              "description": "If an Arm is destroyed, repairs all current HP of the Arm before the next action and gains [Underperformance]. Each Arm can trigger this effect once.",
               "buffs": [
                 {
                   "name": "Underperformance",
@@ -645,6 +649,7 @@
             {
               "name": "Blade Flurry",
               "kind": "passive",
+              "icon": "Icon_skill_talent_5146",
               "description": "When deployed, gains 10 stacks of [Blade Momentum], reducing Applied DMG Taken by 50%.\nWhen critically hit, increases the attacker's Crit DMG by 100%. After each critical hit, Crit DMG is reduced by 10%. Resets after attacking.\nWhen possessing 5 stacks of [Blade Momentum], gains Re-Act. Can use [Deadly Raid] during Re-Act.\nWhen actively attacking, for every 1 target hit, gains 2 stacks of [Blade Momentum], stacking up to 10 times.\nImmune to [Oath], [Provocation], and [Movement Down Immunity.].",
               "buffs": [
                 {
@@ -771,11 +776,13 @@
             {
               "name": "Chain Shot",
               "kind": "active",
+              "icon": "Icon_skill_main_1159",
               "description": "Uses a Heavy Machine Gun to attack a target, dealing 1x DMG. Enables allies to launch [Link Attacks] against this target. These [Link Attacks] do not require allies to possess a specific skill and do not consume any Link chances."
             },
             {
               "name": "Disruptive Bombing",
               "kind": "active",
+              "icon": "Icon_skill_order_5007",
               "description": "Uses a Rocket Launcher to attack all targets within a 3x3-tile area, dealing 0.5x AoE DMG to all parts of each target. Upon hit, applies [FCS Failure], lasting for 1 turn.",
               "buffs": [
                 {
@@ -787,11 +794,13 @@
             {
               "name": "Wrist Shatter",
               "kind": "active",
+              "icon": "Icon_skill_order_1003",
               "description": "Uses a Rail Gun to attack all targets within a 2x5-tile area ahead, dealing 1x DMG. This attack prioritizes Arms."
             },
             {
               "name": "Frenzied Execution",
               "kind": "active",
+              "icon": "Icon_skill_order_1001",
               "description": "Will not be actively cast.\nAfter 1 turn, uses a Rail Gun to attack all targets within a 4x5-tile area ahead, dealing 1x DMG. Inflicts [Disarm] on targets hit. Gains [Desperate Tension] after use.",
               "buffs": [
                 {
@@ -807,6 +816,7 @@
             {
               "name": "Bloodfire Offensive",
               "kind": "passive",
+              "icon": "Icon_skill_passive_5157",
               "description": "When Douglas is on the battlefield, all allied units can perform Link Retaliation and gain +2 Link Retaliation Range.\nStarts with 1 stack of [Crossfire Boost].\nAt the start of each turn, gains 1 stack of [Crossfire Boost].\nAfter each retaliation, gains 1 stack of [Crossfire Boost].\nIf Douglas's skill hits 2 or more targets simultaneously, triggers [Voltage Surge].",
               "buffs": [
                 {
@@ -826,8 +836,8 @@
             {
               "name": "Floating Fortress",
               "kind": "passive",
-              "description": "After a part is destroyed, automatically repairs before taking action in the next turn. After executing a skill, can trigger [Re-ATK].\nWhen Legs are undestroyed, Melee Weapons can only attack the Legs. After Legs are destroyed, Melee DMG Taken +10%.\nDoes not trigger Burning or Mine-style terrain effects.",
               "icon": "Icon_skill_talent_5130",
+              "description": "After a part is destroyed, automatically repairs before taking action in the next turn. After executing a skill, can trigger [Re-ATK].\nWhen Legs are undestroyed, Melee Weapons can only attack the Legs. After Legs are destroyed, Melee DMG Taken +10%.\nDoes not trigger Burning or Mine-style terrain effects.",
               "buffs": [
                 {
                   "name": "Re-ATK",
@@ -838,6 +848,7 @@
             {
               "name": "Bloodfire Offensive β",
               "kind": "passive",
+              "icon": "Icon_skill_passive_5157",
               "description": "When Douglas is on the battlefield, all allied units can perform Link Retaliation and gain +2 Retaliation Range.\nStarts with 3 stacks of [Crossfire Boost].\nAt the start of each turn, gains 1 stack of [Crossfire Boost].\nAfter each retaliation, gains 1 stack of [Crossfire Boost].\nIf Douglas's skill hits 2 or more targets simultaneously, triggers [Voltage Surge].",
               "buffs": [
                 {
@@ -919,8 +930,8 @@
             {
               "name": "Ice Break",
               "kind": "active",
-              "description": "Uses a Flamethrower to attack the main target, dealing 1.2x DMG and dealing 50% [Flame DMG] to other targets in the path. After combat, applies [Thermite] to all targets hit, lasting for 1 turn. If the target is already afflicted with [Cold Seal], converts it to [Burning II].",
               "icon": "Icon_skill_main_1150",
+              "description": "Uses a Flamethrower to attack the main target, dealing 1.2x DMG and dealing 50% [Flame DMG] to other targets in the path. After combat, applies [Thermite] to all targets hit, lasting for 1 turn. If the target is already afflicted with [Cold Seal], converts it to [Burning II].",
               "buffs": [
                 {
                   "name": "Flame DMG",
@@ -943,8 +954,8 @@
             {
               "name": "Melt",
               "kind": "active",
-              "description": "Simultaneously uses two Flamethrowers to attack all targets within range, dealing 0.35x DMG 2 times. If the target hit is not afflicted with [Cold Seal], applies [Thermite]. If the target hit is afflicted with [Cold Seal], applies [Burning II]. Lasts for 1 turn.",
               "icon": "Icon_skill_order_1123",
+              "description": "Simultaneously uses two Flamethrowers to attack all targets within range, dealing 0.35x DMG 2 times. If the target hit is not afflicted with [Cold Seal], applies [Thermite]. If the target hit is afflicted with [Cold Seal], applies [Burning II]. Lasts for 1 turn.",
               "buffs": [
                 {
                   "name": "Cold Seal",
@@ -963,8 +974,8 @@
             {
               "name": "Preparation",
               "kind": "passive",
-              "description": "For each 1 [Cold Seal] on the battlefield, all units gain an additional 5% of their Max HP, stacking up to 15%.",
               "icon": "Icon_skill_passive_2008",
+              "description": "For each 1 [Cold Seal] on the battlefield, all units gain an additional 5% of their Max HP, stacking up to 15%.",
               "buffs": [
                 {
                   "name": "Cold Seal",
@@ -975,8 +986,8 @@
             {
               "name": "Emergency Arm Repair",
               "kind": "passive",
-              "description": "If an Arm is destroyed, repairs all current HP of the Arm before the next action and gains [Underperformance]. Each Arm can trigger this effect once.",
               "icon": "Icon_skill_talent_3101",
+              "description": "If an Arm is destroyed, repairs all current HP of the Arm before the next action and gains [Underperformance]. Each Arm can trigger this effect once.",
               "buffs": [
                 {
                   "name": "Underperformance",
@@ -987,14 +998,14 @@
             {
               "name": "Army of the North",
               "kind": "passive",
+              "icon": "Icon_skill_talent_5125",
               "description": "At start of action, if no units have [Cold Seal], randomly inflicts [Cold Seal] on 3 enemy units for 1 turn.\nIf unable to retaliate in combat, inflicts [Cold Seal] on attackers after combat, lasting for 1 turn.",
               "buffs": [
                 {
                   "name": "Cold Seal",
                   "description": "Prioritizes attacking the caster. DMG Taken +50%."
                 }
-              ],
-              "icon": "Icon_skill_talent_5125"
+              ]
             }
           ],
           "description": "Milkhama's Traps are always as numerous as the prey.",
@@ -1083,8 +1094,8 @@
             {
               "name": "Bait Combo",
               "kind": "active",
-              "description": "Uses a Sniper Rifle to shoot a target 2 times, with each shot dealing 1x DMG. The first shot hits the part with the lowest HP, while the second shot hits a random part. If the target has destroyed parts, DMG Dealt +100%. After combat, applies [Decoy] to the target hit.",
               "icon": "Icon_skill_main_1128",
+              "description": "Uses a Sniper Rifle to shoot a target 2 times, with each shot dealing 1x DMG. The first shot hits the part with the lowest HP, while the second shot hits a random part. If the target has destroyed parts, DMG Dealt +100%. After combat, applies [Decoy] to the target hit.",
               "buffs": [
                 {
                   "name": "Decoy",
@@ -1099,8 +1110,8 @@
             {
               "name": "Penetrating Sniper",
               "kind": "active",
-              "description": "Enters [Aiming] Mode. Uses a Sniper Rifle to attack all targets in a 1x4-tile line ahead, dealing 1x DMG to the same part of each target.",
               "icon": "Icon_skill_order_1108",
+              "description": "Enters [Aiming] Mode. Uses a Sniper Rifle to attack all targets in a 1x4-tile line ahead, dealing 1x DMG to the same part of each target.",
               "buffs": [
                 {
                   "name": "Aiming",
@@ -1111,12 +1122,13 @@
             {
               "name": "Know the Way",
               "kind": "passive",
-              "description": "At start of action, if Carlo is alive, gains 1 stack of [Know the Way]. When Carlo is destroyed, loses [Know the Way].",
-              "icon": "Icon_skill_passive_2121"
+              "icon": "Icon_skill_passive_2121",
+              "description": "At start of action, if Carlo is alive, gains 1 stack of [Know the Way]. When Carlo is destroyed, loses [Know the Way]."
             },
             {
               "name": "Undying",
               "kind": "passive",
+              "icon": "Icon_skill_talent_5125",
               "description": "At end of action, if possessing [Counter Field], inflicts [Suppression] on all enemies, lasting for 1 turn.",
               "buffs": [
                 {
@@ -1131,8 +1143,7 @@
                   "name": "Fixed DMG",
                   "description": "Ignores Armor and DMG Reduction to deal damage once."
                 }
-              ],
-              "icon": "Icon_skill_talent_5125"
+              ]
             }
           ],
           "description": "Loyalty is like the moon in the water. It seems close, but is actually far away.",
@@ -1221,6 +1232,7 @@
             {
               "name": "Tagging Fire",
               "kind": "active",
+              "icon": "Icon_skill_main_1017",
               "description": "Deals 1.2x DMG to a single enemy and applies [Priority Target] to the target for 1 turn. Immediately makes an ally perform a [Link Attack] on the target.",
               "buffs": [
                 {
@@ -1236,6 +1248,7 @@
             {
               "name": "Suppressive Blow",
               "kind": "active",
+              "icon": "Icon_skill_main_1163",
               "description": "Can use a Sniper Rifle to attack a random target within a 3x5-tile area ahead, dealing 0.55x DMG. Guaranteed to hit the part with the lowest HP. Cannot be protected by [Guard]. Fires 5 times, prioritizing targets that have not been attacked before. When [Presence] is at full stacks, skill multiplier is increased by 0.15. When [Morale] is at full stacks, applies [Interference FCS] to the target hit.",
               "buffs": [
                 {
@@ -1267,13 +1280,14 @@
             {
               "name": "Lethal Vigilance",
               "kind": "passive",
+              "icon": "Icon_skill_passive_5103",
               "description": "Minimum attack range +1. Can trigger 1 Vigilant Shot per turn, dealing 0.55x DMG. Always hits the part with the lowest HP."
             },
             {
               "name": "Emergency Arm Repair",
               "kind": "passive",
-              "description": "If an Arm is destroyed, repairs all current HP of the Arm before the next action and gains [Underperformance]. Each Arm can trigger this effect once.",
               "icon": "Icon_skill_talent_3101",
+              "description": "If an Arm is destroyed, repairs all current HP of the Arm before the next action and gains [Underperformance]. Each Arm can trigger this effect once.",
               "buffs": [
                 {
                   "name": "Underperformance",
@@ -1284,6 +1298,7 @@
             {
               "name": "Call Reinforcements",
               "kind": "passive",
+              "icon": "Icon_skill_passive_5193",
               "description": "Each time damage is taken from an active attack, 1 corresponding ST is reinforced in the Barracks. When Body HP falls below 50% and 20% for the first time, 1 of each type of ST is instantly summoned around self.When actively attacking, applies 3 stacks of [Presence] to all allies on the battlefield.For each 1 hit taken by an ally in a single attack, Dodge Rate increases by 10%, up to 100%. Lasts until the end of this attack.",
               "buffs": [
                 {
@@ -1391,6 +1406,7 @@
             {
               "name": "Weaponry Tactics",
               "kind": "active",
+              "icon": "Icon_skill_main_1004",
               "description": "Uses a Machine Gun to deal 1.6x DMG to the target, prioritizing hits on weapon-bearing parts, and applying [FCS Malfunction] to the target hit.",
               "buffs": [
                 {
@@ -1402,6 +1418,7 @@
             {
               "name": "Soul Slash",
               "kind": "active",
+              "icon": "Icon_skill_main_1026",
               "description": "Uses two Alter-Blades to attack all targets within an I-shaped (3x1-tile) or L-shaped (3x1-tile) area ahead, dealing 1.0x AoE DMG, and gaining [Armor Construct] based on targets hit.",
               "buffs": [
                 {
@@ -1413,6 +1430,7 @@
             {
               "name": "Reprisal Mandate",
               "kind": "passive",
+              "icon": "Icon_skill_passive_5112",
               "description": "When equipped with a [Machine Gun], moves 2 tiles toward the attacker when subjected to an active attack. Upon retaliation, applies [Weapon Inhibition] to the target hit, lasting for 1 turn.\nWhen equipped with an [Alter-Blade] and both Arms are undestroyed, triggers [Pursuit] when subjected to an active attack, moving 3 tiles toward the attacker after combat. Uses the Alter-Blade to attack all targets within a horizontal range of 3 tiles in front, dealing 1.0x AoE DMG and causing targets hit to lose 1 AP.",
               "buffs": [
                 {
@@ -1432,6 +1450,7 @@
             {
               "name": "Emergency Arm Repair - EX",
               "kind": "passive",
+              "icon": "Icon_skill_talent_3101",
               "description": "If an Arm is destroyed, immediately repairs current Arm's HP and gains [Underperformance]. Each Arm can trigger this effect once. If the destroyed Arm is the Left Arm, additionally disables the Shield's [Target Shift].",
               "buffs": [
                 {
@@ -1451,6 +1470,7 @@
             {
               "name": "Underworld Godfather",
               "kind": "passive",
+              "icon": "Icon_skill_talent_1106",
               "description": "When equipped with a [Machine Gun] or [Shield], only takes damage from the first 2 hits of each attack, and DMG Taken is increased by 180%.\nWhen equipped with [Alter-Blades], immune to the first 2 hits of each attack.\nWithin 1 turn, after taking 2 active attacks and each time damage exceeds 5% of Max HP, switches Two-Handed Weapons.\nIf no weapon switch occurs within 1 turn, gains [Combat Focus].\nWhen the Body first drops to 50% and 20% of Max HP, immediately gains [Combat Focus], and DMG Dealt increases by 20%.\nWhen possessing [Combat Focus], if holding [Alter-Blades], Skill Enhancement is set to [Glory Unbound]. If holding [Machine Guns], Skill Enhancement is set to [Frenzied Discipline].",
               "buffs": [
                 {
@@ -2165,6 +2185,7 @@
             {
               "name": "Shadow Domain I",
               "kind": "passive",
+              "icon": "Icon_skill_passive_5127",
               "description": "Activates the [Kagemai Field] aura within 1 ring centered on this unit.\nAt start of action, if the number of Alter-Blade retaliations during the enemy's Action Phase is less than or equal to 3, and both Arms are undestroyed, simultaneously uses two Missile Launchers to attack all targets, with each strike dealing 0.75x DMG 2 times to all parts of each target hit.",
               "buffs": [
                 {
@@ -2253,8 +2274,8 @@
             {
               "name": "Flame Ban",
               "kind": "active",
-              "description": "Uses a Flamethrower to attack all targets within a 3-tile area ahead, dealing 1x AoE DMG. After combat, applies [Malfunction] to targets hit, lasting for 2 turns.",
               "icon": "Icon_skill_main_1151",
+              "description": "Uses a Flamethrower to attack all targets within a 3-tile area ahead, dealing 1x AoE DMG. After combat, applies [Malfunction] to targets hit, lasting for 2 turns.",
               "buffs": [
                 {
                   "name": "Malfunction",
@@ -2269,8 +2290,8 @@
             {
               "name": "Unleash the Thunder!",
               "kind": "active",
-              "description": "Uses a Rail Gun to attack all targets within a 3x5-tile area ahead, dealing 1x DMG. Before combat, gains [Rail Gun Hit Rate UP]. Deals an additional 50% DMG to targets with [Malfunction]. This skill does not consume any Ammo.",
               "icon": "Icon_skill_order_1109",
+              "description": "Uses a Rail Gun to attack all targets within a 3x5-tile area ahead, dealing 1x DMG. Before combat, gains [Rail Gun Hit Rate UP]. Deals an additional 50% DMG to targets with [Malfunction]. This skill does not consume any Ammo.",
               "buffs": [
                 {
                   "name": "Rail Gun Hit Rate UP",
@@ -2289,8 +2310,8 @@
             {
               "name": "Emergency Arm Repair",
               "kind": "passive",
-              "description": "If an Arm is destroyed, repairs all current HP of the Arm before the next action and gains [Underperformance]. Each Arm can trigger this effect once.",
               "icon": "Icon_skill_talent_3101",
+              "description": "If an Arm is destroyed, repairs all current HP of the Arm before the next action and gains [Underperformance]. Each Arm can trigger this effect once.",
               "buffs": [
                 {
                   "name": "Underperformance",
@@ -2301,6 +2322,7 @@
             {
               "name": "Starburst - EX",
               "kind": "passive",
+              "icon": "Icon_skill_talent_5135",
               "description": "At the start of battle and action, grants [Kindle] to all allies.\nWhen Body HP falls below 50% for the first time, gains [Detonate] based on the number of units with [Kindle], then removes all [Kindle] stacks. After this, allies cannot gain [Kindle].",
               "buffs": [
                 {
@@ -2432,6 +2454,7 @@
             {
               "name": "Imprisoning Shot",
               "kind": "active",
+              "icon": "Icon_skill_main_1105",
               "description": "Uses a Shotgun to attack a target, dealing 1x DMG. Applies [Drive Overload] to the target hit, lasting for 2 turns. If there are other enemy units within 1 ring around the target, uses the opposite Arm to execute this skill on them again. This attack cannot be [Guarded].",
               "buffs": [
                 {
@@ -2443,6 +2466,7 @@
             {
               "name": "Electromagnetic Roar",
               "kind": "active",
+              "icon": "Icon_skill_main_1121",
               "description": "After 1 turn, uses a Rail Gun to attack all targets within a 3x5-tile area ahead, dealing 1.0x AoE DMG. Inflicts [Weapon Inhibition] on targets hit. Deals an additional 50% DMG to targets with [Prey Brand].",
               "buffs": [
                 {
@@ -2458,6 +2482,7 @@
             {
               "name": "Predatory Intuition",
               "kind": "passive",
+              "icon": "Icon_skill_passive_1154",
               "description": "Movement +3. Rail Gun does not consume Ammo. Immune to [Oath] and [Provocation].",
               "buffs": [
                 {
@@ -2473,8 +2498,8 @@
             {
               "name": "Emergency Arm Repair",
               "kind": "passive",
-              "description": "If an Arm is destroyed, repairs all current HP of the Arm before the next action and gains [Underperformance]. Each Arm can trigger this effect once.",
               "icon": "Icon_skill_talent_3101",
+              "description": "If an Arm is destroyed, repairs all current HP of the Arm before the next action and gains [Underperformance]. Each Arm can trigger this effect once.",
               "buffs": [
                 {
                   "name": "Underperformance",
@@ -2485,6 +2510,7 @@
             {
               "name": "Hunter's Scent",
               "kind": "passive",
+              "icon": "Icon_skill_talent_5142",
               "description": "At the start of battle, enters [Hunting Mode]. After initiating combat, applies [Prey Brand] to the target hit. At start of action, restores 5% of Max HP to all parts. Can repair destroyed parts and triggers [Balance].\nAt start of turn, the first time Overall HP is less than 50%, ends [Hunting Mode] and enters [Berserk Mode]. Skills are enhanced to [Imprisoning Shot - EX] and [Electromagnetic Roar - EX]. When initiating combat, automatically uses [Electromagnetic Roar - EX] to launch a Flurry Strike on the target after combat and can trigger [Re-Act]. Can only trigger 1 time per turn.",
               "buffs": [
                 {
@@ -2618,8 +2644,8 @@
             {
               "name": "Acid Burst",
               "kind": "active",
-              "description": "Uses a Missile Launcher to attack a target, dealing 0.7x DMG to the part hit and Splash DMG equal to 35% of this damage to other parts. If the target is afflicted with [Acid II], immediately triggers the [Acid II] effect 1 time.",
               "icon": "Icon_skill_order_1001",
+              "description": "Uses a Missile Launcher to attack a target, dealing 0.7x DMG to the part hit and Splash DMG equal to 35% of this damage to other parts. If the target is afflicted with [Acid II], immediately triggers the [Acid II] effect 1 time.",
               "buffs": [
                 {
                   "name": "Acid II",
@@ -2630,8 +2656,8 @@
             {
               "name": "Acid Storm",
               "kind": "active",
-              "description": "Uses a Heavy Machine Gun to attack all targets within attack range, dealing 0.5x AoE DMG. Inflicts 3 stacks of [Acid II] on targets hit.",
               "icon": "Icon_skill_order_1010",
+              "description": "Uses a Heavy Machine Gun to attack all targets within attack range, dealing 0.5x AoE DMG. Inflicts 3 stacks of [Acid II] on targets hit.",
               "buffs": [
                 {
                   "name": "Acid II",
@@ -2642,8 +2668,8 @@
             {
               "name": "Emergency Arm Repair",
               "kind": "passive",
-              "description": "If an Arm is destroyed, repairs all current HP of the Arm before the next action and gains [Underperformance]. Each Arm can trigger this effect once.",
               "icon": "Icon_skill_talent_3101",
+              "description": "If an Arm is destroyed, repairs all current HP of the Arm before the next action and gains [Underperformance]. Each Arm can trigger this effect once.",
               "buffs": [
                 {
                   "name": "Underperformance",
@@ -2654,14 +2680,14 @@
             {
               "name": "Disperse Acid",
               "kind": "passive",
+              "icon": "Icon_skill_talent_5106",
               "description": "When performing a normal attack or retaliating, Range +1. At the start of the battle or at start of action, randomly select an enemy that does not have [Acid II] and applies 1 stack of [Acid II] to it.",
               "buffs": [
                 {
                   "name": "Acid II",
                   "description": "Repair AMT Received -30%, DMG Dealt -10%. Stacks up to 99 times. At end of action, for each stack of [Acid II], deals Fixed DMG equal to 10% of Max HP to all of own parts. When triggered, applies 1 stack of [Acid II] to this unit and all allies within 2 tiles."
                 }
-              ],
-              "icon": "Icon_skill_talent_5106"
+              ]
             }
           ],
           "description": "Only the strong can recall the past.",
@@ -2781,6 +2807,7 @@
             {
               "name": "Fang Barrage",
               "kind": "active",
+              "icon": "Icon_skill_order_1010",
               "description": "Uses a Heavy Machine Gun to attack a target, dealing 1x DMG. After hitting the target, gains 1 stack of [Arashi Barrier]. If the target cannot retaliate, gains an additional 1 stack of [Arashi Barrier]. If both Arms are undestroyed, uses both Arms to activate this skill, increasing DMG to 2x.",
               "buffs": [
                 {
@@ -2792,6 +2819,7 @@
             {
               "name": "Destructive Current - EX",
               "kind": "active",
+              "icon": "Icon_skill_main_1121",
               "description": "After 1 turn, uses a Rail Gun to deal 1.0x AoE DMG to all targets in a straight line, always attacking the part with the lowest HP. For each enemy within range, applies 1 stack of [Arashi Barrier] to self.",
               "buffs": [
                 {
@@ -2803,6 +2831,7 @@
             {
               "name": "Bulwark Boost",
               "kind": "passive",
+              "icon": "Icon_skill_passive_1155",
               "description": "After actively attacking or retaliating, applies 1 stack of [EMP] to the target hit.\nAfter hitting a target with a specific skill, gains [Arashi Barrier], stacking up to 4 times and lasting for 1 turn.\nBefore action starts, if possessing 4 stacks of [Arashi Barrier], all AoE attacks this turn will definitely trigger [Overload]. After triggering [Overload], removes all [Arashi Barrier].",
               "buffs": [
                 {
@@ -2830,6 +2859,7 @@
             {
               "name": "Napalm Bombing - EX",
               "kind": "passive",
+              "icon": "Icon_skill_passive_1003",
               "description": "At end of turn, uses a Rocket Launcher to deal 0.65x AoE DMG to all parts of all targets within 2 rings. Inflicts [EMP] on targets hit.",
               "buffs": [
                 {
@@ -2841,6 +2871,7 @@
             {
               "name": "Leviathan - Liberation",
               "kind": "passive",
+              "icon": "Icon_skill_talent_4109",
               "description": "After removing its external Restraining Device, the Mobile Fortress enters its ST Form. In this form, Leviathan cannot move but can attack 2 times and can always use [Scorching Tears]. The Core gains 75% DMG Reduction, which decreases by 25% with each part destroyed. When the Legs are undestroyed, [Serrated Fang]'s Range +2."
             }
           ],
@@ -2921,12 +2952,12 @@
             {
               "name": "Inevitable Slash",
               "kind": "active",
+              "icon": "Icon_skill_main_1155",
               "description": "Uses a Chainsaw to attack a target, dealing 1.5x DMG. The lower the target's HP, the higher the Final DMG dealt, up to 200%. This attack is guaranteed to hit the part with the lowest HP.",
               "difficulties": [
                 "Normal",
                 "Hard"
-              ],
-              "icon": "Icon_skill_main_1155"
+              ]
             },
             {
               "name": "Inevitable Slash",
@@ -3012,6 +3043,7 @@
             {
               "name": "Intrepid Advance I",
               "kind": "passive",
+              "icon": "Icon_skill_passive_5011",
               "description": "At the start of battle, gains [Barrier-Breaking Charge] and 5 stacks of [Resentment].\nWhen possessing [Barrier-Breaking Charge], loses 1 stack of [Resentment] when actively attacked within and beyond 3 tiles.\nWhen not possessing [Barrier-Breaking Charge], gains 1 stack of [Resentment] after being actively attacked.\nAt the end of each turn, gains 2 stacks of [Resentment].\nWhen possessing more than 5 stacks of Resentment, gains [Barrier-Breaking Charge]. When not possessing [Resentment], clears [Barrier-Breaking Charge].",
               "buffs": [
                 {
@@ -3861,8 +3893,8 @@
             {
               "name": "Holmberg",
               "kind": "passive",
-              "description": "Cannot be protected by [Guard]. After executing a skill, can trigger [Re-ATK].\nWhen the UAV Bay is undestroyed, cannot be attacked by Melee Weapons and does not trigger Burning or Mine-style terrain effects.\nAt the start of battle and the end of [Your Turn], deploys 2 Tracers.\nWhen HP first falls below 50%, enters the [Self-Sustain] state, UAV Bay HP is restored to 100%, and gains 5 stacks of [Fortify].",
               "icon": "Icon_skill_talent_5130",
+              "description": "Cannot be protected by [Guard]. After executing a skill, can trigger [Re-ATK].\nWhen the UAV Bay is undestroyed, cannot be attacked by Melee Weapons and does not trigger Burning or Mine-style terrain effects.\nAt the start of battle and the end of [Your Turn], deploys 2 Tracers.\nWhen HP first falls below 50%, enters the [Self-Sustain] state, UAV Bay HP is restored to 100%, and gains 5 stacks of [Fortify].",
               "buffs": [
                 {
                   "name": "Guard",
@@ -5259,8 +5291,8 @@
             {
               "name": "Holmberg",
               "kind": "passive",
+              "icon": "Icon_skill_talent_5116",
               "description": "After a part is destroyed, automatically repairs before taking action in the next turn. After executing a skill, can trigger [Re-ATK].\nWhen the UAV Bay is undestroyed, Melee Weapons cannot attack.\nDoes not trigger Burning or Mine-style terrain effects. Cannot be protected by [Guard]. Non-dispellable.",
-              "icon": "Icon_skill_talent_5130",
               "buffs": [
                 {
                   "name": "Re-ATK",
@@ -5513,6 +5545,7 @@
               "cd": "1Turn(s)",
               "description": "Uses two Machine Guns to attack all targets within a 3x2-tile area ahead, dealing 0.65x AoE DMG 2 times. After the skill ends, triggers [Re-Act].",
               "kind": "active",
+              "icon": "Icon_skill_order_1107",
               "buffs": [
                 {
                   "name": "Re-Act",
@@ -5538,12 +5571,12 @@
             {
               "name": "Omni-Directional Suppression",
               "kind": "passive",
+              "icon": "Icon_skill_passive_1132",
               "description": "For each debuff the enemy team is afflicted with, DMG Dealt +5%, Repair AMT +5%, and DMG Taken -5%.\nWhen actively attacking or counterattacking, if the target is afflicted with 3 or more debuffs, randomly destroys 1 of the target's parts after combat. Does not prioritize the torso.",
               "difficulties": [
                 "Normal",
                 "Hard"
-              ],
-              "icon": "Icon_skill_passive_1132"
+              ]
             },
             {
               "name": "Omni-Directional Suppression",
@@ -6508,7 +6541,8 @@
               "cost": "4AP",
               "cd": "1Turn(s)",
               "description": "Simultaneously uses two Shotguns to attack all targets within a 3x2-tile area ahead, dealing 0.35x AoE DMG 2 times.",
-              "kind": "active"
+              "kind": "active",
+              "icon": "Icon_skill_order_1107"
             },
             {
               "name": "Evasive Maneuvering",
@@ -7124,6 +7158,7 @@
             {
               "name": "Disperse Acid",
               "kind": "passive",
+              "icon": "Icon_skill_talent_5106",
               "description": "When performing a normal attack or retaliating, Range +1. At the start of the battle or at start of action, randomly select an enemy that does not have [Acid II] and applies 1 stack of [Acid II] to it.",
               "buffs": [
                 {
@@ -7133,8 +7168,7 @@
               ],
               "difficulties": [
                 "Extreme"
-              ],
-              "icon": "Icon_skill_talent_5106"
+              ]
             },
             {
               "name": "Acid Burst",
@@ -7161,11 +7195,11 @@
             {
               "name": "Acid Burst",
               "kind": "active",
+              "icon": "Icon_skill_order_1001",
               "description": "Uses a Missile Launcher to attack a target, dealing 0.7x DMG to the part hit and Splash DMG equal to 35% of this damage to other parts. If the target is afflicted with [Acid II], immediately triggers the [Acid II] effect 1 time.",
               "difficulties": [
                 "Extreme"
               ],
-              "icon": "Icon_skill_order_1001",
               "buffs": [
                 {
                   "name": "Acid II",
@@ -7201,11 +7235,11 @@
             {
               "name": "Acid Storm",
               "kind": "active",
+              "icon": "Icon_skill_order_1010",
               "description": "Uses a Heavy Machine Gun to attack all targets within attack range, dealing 0.5x AoE DMG. Inflicts 3 stacks of [Acid II] on targets hit.",
               "difficulties": [
                 "Extreme"
               ],
-              "icon": "Icon_skill_order_1010",
               "buffs": [
                 {
                   "name": "Acid II",
@@ -7358,7 +7392,8 @@
               "cost": "1AP",
               "cd": "1Turn(s)",
               "description": "Uses two Machine Guns to attack all targets within a 5x3-tile area ahead, dealing 0.5x AoE DMG 2 times. If possessing [Predatorial Aid], this attack cannot be dodged.",
-              "kind": "active"
+              "kind": "active",
+              "icon": "Icon_skill_order_1107"
             },
             {
               "name": "Sinister Curtain",
@@ -9254,7 +9289,8 @@
               "cost": "0AP",
               "cd": "1Turn(s)",
               "description": "Uses two Machine Guns to attack all targets within a 3x3-tile area ahead, dealing 0.65x AoE DMG 2 times.",
-              "kind": "active"
+              "kind": "active",
+              "icon": "Icon_skill_order_1107"
             },
             {
               "name": "Full Repair",
