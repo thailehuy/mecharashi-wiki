@@ -44,6 +44,8 @@ BUNDLES = ['ui_prefabs_pilotgacha_abs.b', 'ui_prefabs_wapgacha_abs.b', 'ui_uiima
            'ui_textimages_pilotgachaimg_abs.' + LANG, 'ui_textimages_chinese_wapgachaimg_abs.' + LANG]
 WIDTH = 1300
 SKIP = re.compile(r'particle|effect|btn|button|fx|shine', re.I)
+# The character art (a Spine render) sometimes sits inside an effect container; it's kept.
+SPINE = re.compile(r'^(img_)?spine\d*$', re.I)
 
 
 def newest(name):
@@ -102,10 +104,11 @@ def layers(b, root):
     """Every visible image under a prefab as (image object, x, y, w, h, alpha), y up."""
     out = []
 
-    def walk(go, M, prect, depth):
+    def walk(go, M, prect, depth, fx=False):
         g = b.tree(go)
-        if not g['m_IsActive'] or (depth and SKIP.search(g['m_Name'])):
+        if not g['m_IsActive']:
             return
+        fx = fx or bool(depth and SKIP.search(g['m_Name']))
         comps = [b.deref(go.assets_file, c['component']) for c in g['m_Component']]
         tr = comps[0]
         t = b.tree(tr)
@@ -122,6 +125,8 @@ def layers(b, root):
             M = (a * sx, d * sy, a * (ax - sx * ax) + cx, d * (ay - sy * ay) + cy)
             prect = (ax - w * piv['x'], ay - h * piv['y'], w, h)
         for c in comps[1:]:
+            if fx and not SPINE.match(g['m_Name']):
+                break
             if c is None or c.type.name != 'MonoBehaviour':
                 continue
             try:
@@ -141,7 +146,7 @@ def layers(b, root):
                     out.append((img, a * rx + cx, d * ry + cy, a * rw, d * rh, x.get('m_Color', {}).get('a', 1)))
         for ch in t['m_Children']:
             cto = b.deref(tr.assets_file, ch)
-            walk(b.deref(cto.assets_file, b.tree(cto)['m_GameObject']), M, prect, depth + 1)
+            walk(b.deref(cto.assets_file, b.tree(cto)['m_GameObject']), M, prect, depth + 1, fx)
 
     walk(root, (1, 1, 0, 0), (0, 0, 0, 0), 0)
     return [L for L in out if L[3] > 0 and L[4] > 0 and L[5] > 0.01]
