@@ -38,6 +38,13 @@ MAX_VERSION = (3, 7)
 UPCOMING_START = datetime(2098, 4, 10)
 # Always-open pools that have no featured unit (standard and beginner).
 STANDARD = {'pilot': {1, 4}, 'st': {1, 2, 3, 4}}
+# Corrections to the patch or type the CN schedule gives an added CN pool. 106/108 are the new
+# permanent standard pools (pre-2.0 pilots removed), set up in the game data like exchange pools.
+CN_OVERRIDES = {
+    ('pilot', 85): {'version': '2.6'}, ('st', 87): {'version': '2.6'},
+    ('pilot', 106): {'version': '3.1', 'type': 'standard', 'name': 'Ace Pilot Recruitment'},
+    ('st', 108): {'version': '3.1', 'type': 'standard', 'name': 'Standard Shipping'},
+}
 
 PILOT_SQL = '''
 select p.ID, p.GachaPoolUpType, p.TagType, p.NameStrKey_EN, p.PrefabPath, t.ValidStartTime, t.ValidEndTime,
@@ -159,16 +166,49 @@ def main():
     # Placeholder debuts for units newer than any banner, which the game data doesn't schedule yet.
     # The CN server's debut pool, if any, gives the art and pool ID (so pilot/ST pairs line up as in CN).
     cn_debut = {}
+    cn_pools = []
     if os.path.exists(CN_STATS):
         cn = sqlite3.connect(CN_STATS)
         cn_body = dict(cn.execute('select ID, WapPartBodyId from ConfigDataTacticalUnitSuitInfo'))
         cn_pools = (read_pools(cn, PILOT_SQL, 'pilot', lambda i: str(i)) +
                     read_pools(cn, ST_SQL, 'st', lambda i: str(cn_body.get(i))))
-        for b in sorted(cn_pools, key=lambda b: (b['start'] or datetime.max, b['id'])):
-            if b['type'] == 'limited' and b['start'] and b['start'].year < 2048:
+        cn_pools = sorted((b for b in cn_pools if b['start'] and 2025 <= b['start'].year < 2048),
+                          key=lambda b: (b['start'], b['id']))
+        for b in cn_pools:
+            if b['type'] == 'limited':
                 for uid in b['featured']:
                     cn_debut.setdefault((b['kind'], uid), b)
     newest = max((v for b in banners for _, v in b['featured']), key=version_key)
+
+    # CN pools newer than any global pool that aren't debuts of units placed above (reruns and exchanges) are added as
+    # upcoming, without dates. Their patch is the CN patch running when they opened: the one of the
+    # last debut before them (CN didn't release every patch in version order).
+    units = {'pilot': pilots, 'st': mechs}
+    unit = lambda kind, uid: (units[kind][uid]['name'], units[kind][uid]['version'])
+    debut_ids = {id(b) for (k, uid), b in cn_debut.items()
+                 if uid in units[k] and version_key(units[k][uid]['version']) > version_key(newest)}
+    cn_patches = sorted((b['start'], unit(k, uid)[1]) for (k, uid), b in cn_debut.items() if uid in units[k])
+    last_global = {k: max(b['id'] for b in banners if b['kind'] == k and b['id'] < 4000) for k in units}
+    names = {}     # (kind, unit name) -> name of its global limited banner
+    exchange_names = {}
+    for b in banners:
+        if b['type'] == 'limited' and len(b['featured']) == 1:
+            names[(b['kind'], b['featured'][0][0])] = b['name']
+        elif b['type'] == 'exchange':
+            exchange_names[b['kind']] = b['name']
+    for b in cn_pools:
+        if (id(b) in debut_ids or b['type'] not in ('limited', 'exchange') or b['id'] <= last_global[b['kind']]
+                or not all(uid in units[b['kind']] for uid in b['featured'] + b['options'])):
+            continue
+        version = max((p for p in cn_patches if p[0] <= b['start']), default=(None, None))[1]
+        if not version or version_key(version) < version_key(newest):
+            continue
+        featured = [unit(b['kind'], uid) for uid in b['featured']]
+        name = exchange_names[b['kind']] if b['type'] == 'exchange' else names.get((b['kind'], featured[0][0]), featured[0][0])
+        banners.append({'id': b['id'], 'kind': b['kind'], 'name': name, 'type': b['type'], 'version': version,
+                        'upcoming': True, 'start': None, 'end': None, 'image': b['image'], 'featured': featured,
+                        'options': [unit(b['kind'], uid) for uid in b['options']],
+                        **CN_OVERRIDES.get((b['kind'], b['id']), {})})
     for kind, units in (('pilot', pilots), ('st', mechs)):
         for uid, u in sorted(units.items(), key=lambda kv: (version_key(kv[1]['version']), int(kv[0]))):
             if version_key(newest) < version_key(u['version']) <= MAX_VERSION:

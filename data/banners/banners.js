@@ -9,6 +9,20 @@ window.BannersData = {
       "image": "PilotGachaItemPrefab"
     },
     {
+      "kind": "pilot",
+      "id": 106,
+      "name": "Ace Pilot Recruitment",
+      "type": "standard",
+      "version": "3.1",
+      "upcoming": true,
+      "options": [
+        "Rosa: Judgment",
+        "Ada",
+        "Matilda"
+      ],
+      "image": "PilotGachaPilotExchangeItemPrefab"
+    },
+    {
       "kind": "st",
       "id": 2,
       "name": "Guidance of Venus",
@@ -28,6 +42,20 @@ window.BannersData = {
       "name": "Approaching Thunder",
       "type": "standard",
       "image": "WapGachaHeavyPoolItemPrefab"
+    },
+    {
+      "kind": "st",
+      "id": 108,
+      "name": "Standard Shipping",
+      "type": "standard",
+      "version": "3.1",
+      "upcoming": true,
+      "options": [
+        "Erinys",
+        "Hasteraze",
+        "Tengshe"
+      ],
+      "image": "WapGachaWapExchangeItemPrefab"
     },
     {
       "kind": "pilot",
@@ -2117,6 +2145,32 @@ window.BannersData = {
     },
     {
       "kind": "pilot",
+      "id": 84,
+      "name": "HARPY T.R.O.O.P.S",
+      "type": "exchange",
+      "version": "2.5",
+      "upcoming": true,
+      "options": [
+        "Zoey",
+        "Colin",
+        "Verna"
+      ],
+      "image": "PilotGachaPilotExchangeItemPrefab"
+    },
+    {
+      "kind": "pilot",
+      "id": 85,
+      "name": "Insatiable Indulgence",
+      "type": "limited",
+      "version": "2.6",
+      "upcoming": true,
+      "featured": [
+        "Adele"
+      ],
+      "image": "PilotGachaAdeleMartinItemPrefab"
+    },
+    {
+      "kind": "pilot",
       "id": 86,
       "name": "Toraoh",
       "type": "limited",
@@ -2126,6 +2180,18 @@ window.BannersData = {
         "Toraoh"
       ],
       "image": "PilotGachaToraohItemPrefab"
+    },
+    {
+      "kind": "pilot",
+      "id": 87,
+      "name": "Redemption: Blazing Wastes",
+      "type": "limited",
+      "version": "2.7",
+      "upcoming": true,
+      "featured": [
+        "Wyatt"
+      ],
+      "image": "PilotGachaWyattMorganItemPrefab"
     },
     {
       "kind": "pilot",
@@ -2141,6 +2207,44 @@ window.BannersData = {
     },
     {
       "kind": "pilot",
+      "id": 89,
+      "name": "HARPY T.R.O.O.P.S",
+      "type": "exchange",
+      "version": "2.6",
+      "upcoming": true,
+      "options": [
+        "Rosemary",
+        "Arthur",
+        "Fia"
+      ],
+      "image": "PilotGachaPilotExchangeItemPrefab"
+    },
+    {
+      "kind": "pilot",
+      "id": 90,
+      "name": "Two as One",
+      "type": "limited",
+      "version": "2.6",
+      "upcoming": true,
+      "featured": [
+        "Ada"
+      ],
+      "image": "PilotGachaAdaDiazItemPrefab"
+    },
+    {
+      "kind": "pilot",
+      "id": 91,
+      "name": "MechComp Hypothesis",
+      "type": "limited",
+      "version": "2.6",
+      "upcoming": true,
+      "featured": [
+        "Sapientia"
+      ],
+      "image": "PilotGachaSapientiaCognitonisItemPrefab"
+    },
+    {
+      "kind": "pilot",
       "id": 92,
       "name": "Lexuan",
       "type": "limited",
@@ -2150,6 +2254,32 @@ window.BannersData = {
         "Lexuan"
       ],
       "image": "PilotGachaLexuanZhengItemPrefab"
+    },
+    {
+      "kind": "pilot",
+      "id": 93,
+      "name": "HARPY T.R.O.O.P.S",
+      "type": "exchange",
+      "version": "2.8",
+      "upcoming": true,
+      "options": [
+        "Ada",
+        "Wyatt",
+        "Ophelia"
+      ],
+      "image": "PilotGachaPilotExchangeItemPrefab"
+    },
+    {
+      "kind": "pilot",
+      "id": 94,
+      "name": "Ethereal Blade",
+      "type": "limited",
+      "version": "2.8",
+      "upcoming": true,
+      "featured": [
+        "Veronica"
+      ],
+      "image": "PilotGachaVeronicaLopezItemPrefab"
     },
     {
       "kind": "pilot",
@@ -2165,6 +2295,18 @@ window.BannersData = {
     },
     {
       "kind": "pilot",
+      "id": 96,
+      "name": "Guns and Roses",
+      "type": "limited",
+      "version": "2.8",
+      "upcoming": true,
+      "featured": [
+        "Verna"
+      ],
+      "image": "PilotGachaVernaLunoItemPrefab"
+    },
+    {
+      "kind": "pilot",
       "id": 97,
       "name": "Hailis",
       "type": "limited",
@@ -2174,6 +2316,20 @@ window.BannersData = {
         "Hailis"
       ],
       "image": "PilotGachaHailisMillItemPrefab"
+    },
+    {
+      "kind": "pilot",
+      "id": 98,
+      "name": "HARPY T.R.O.O.P.S",
+      "type": "exchange",
+      "version": "3.0",
+      "upcoming": true,
+      "options": [
+        "Lexuan",
+        "Ada",
+        "Verna"
+      ],
+      "image": "PilotGachaPilotExchangeItemPrefab"
     },
     {
       "kind": "pilot",
@@ -2189,6 +2345,18 @@ window.BannersData = {
     },
     {
       "kind": "pilot",
+      "id": 100,
+      "name": "Dawn of Awakening",
+      "type": "limited",
+      "version": "3.0",
+      "upcoming": true,
+      "featured": [
+        "Rosa: Judgment"
+      ],
+      "image": "PilotGachaRosaDiazNewItemPrefab"
+    },
+    {
+      "kind": "pilot",
       "id": 101,
       "name": "Tang",
       "type": "limited",
@@ -2198,6 +2366,32 @@ window.BannersData = {
         "Tang"
       ],
       "image": "PilotGachaXiaokuiTangItemPrefab"
+    },
+    {
+      "kind": "pilot",
+      "id": 102,
+      "name": "HARPY T.R.O.O.P.S",
+      "type": "exchange",
+      "version": "3.1",
+      "upcoming": true,
+      "options": [
+        "Adele",
+        "Matilda",
+        "Fregata"
+      ],
+      "image": "PilotGachaPilotExchangeItemPrefab"
+    },
+    {
+      "kind": "pilot",
+      "id": 103,
+      "name": "Schemer's Path",
+      "type": "limited",
+      "version": "3.1",
+      "upcoming": true,
+      "featured": [
+        "Colin"
+      ],
+      "image": "PilotGachaCollinDoyleItemPrefab"
     },
     {
       "kind": "pilot",
@@ -2213,6 +2407,18 @@ window.BannersData = {
     },
     {
       "kind": "pilot",
+      "id": 105,
+      "name": "Shadows Into Steel",
+      "type": "limited",
+      "version": "3.1",
+      "upcoming": true,
+      "featured": [
+        "Zoey"
+      ],
+      "image": "PilotGachaZoeySteeleItemPrefab"
+    },
+    {
+      "kind": "pilot",
       "id": 107,
       "name": "Giselle",
       "type": "limited",
@@ -2222,6 +2428,32 @@ window.BannersData = {
         "Giselle"
       ],
       "image": "PilotGachaGiseleMeyerItemPrefab"
+    },
+    {
+      "kind": "pilot",
+      "id": 108,
+      "name": "HARPY T.R.O.O.P.S",
+      "type": "exchange",
+      "version": "3.2",
+      "upcoming": true,
+      "options": [
+        "Veronica",
+        "Paloma",
+        "Kelly"
+      ],
+      "image": "PilotGachaPilotExchangeItemPrefab"
+    },
+    {
+      "kind": "pilot",
+      "id": 109,
+      "name": "Martini",
+      "type": "limited",
+      "version": "3.2",
+      "upcoming": true,
+      "featured": [
+        "Martini"
+      ],
+      "image": "PilotGachaMartiniMorettiItemPrefab"
     },
     {
       "kind": "pilot",
@@ -2237,6 +2469,18 @@ window.BannersData = {
     },
     {
       "kind": "pilot",
+      "id": 111,
+      "name": "Lexuan",
+      "type": "limited",
+      "version": "3.2",
+      "upcoming": true,
+      "featured": [
+        "Lexuan"
+      ],
+      "image": "PilotGachaLexuanZhengItemPrefab"
+    },
+    {
+      "kind": "pilot",
       "id": 112,
       "name": "Kaidan The Invincible",
       "type": "limited",
@@ -2246,6 +2490,32 @@ window.BannersData = {
         "Kaidan The Invincible"
       ],
       "image": "PilotGachaKaidantheInvincibleItemPrefab"
+    },
+    {
+      "kind": "pilot",
+      "id": 113,
+      "name": "HARPY T.R.O.O.P.S",
+      "type": "exchange",
+      "version": "3.3",
+      "upcoming": true,
+      "options": [
+        "Martini",
+        "Zoey",
+        "Verna"
+      ],
+      "image": "PilotGachaPilotExchangeItemPrefab"
+    },
+    {
+      "kind": "pilot",
+      "id": 114,
+      "name": "Audrey",
+      "type": "limited",
+      "version": "3.3",
+      "upcoming": true,
+      "featured": [
+        "Audrey"
+      ],
+      "image": "PilotGachaAudreyBluecherItemPrefab"
     },
     {
       "kind": "pilot",
@@ -2261,6 +2531,18 @@ window.BannersData = {
     },
     {
       "kind": "pilot",
+      "id": 116,
+      "name": "Maat",
+      "type": "limited",
+      "version": "3.3",
+      "upcoming": true,
+      "featured": [
+        "Maat"
+      ],
+      "image": "PilotGachaMaatSharifItemPrefab"
+    },
+    {
+      "kind": "pilot",
       "id": 117,
       "name": "Blackout",
       "type": "limited",
@@ -2270,6 +2552,32 @@ window.BannersData = {
         "Blackout"
       ],
       "image": "PilotGachaBlackoutItemPrefab"
+    },
+    {
+      "kind": "pilot",
+      "id": 118,
+      "name": "HARPY T.R.O.O.P.S",
+      "type": "exchange",
+      "version": "3.4",
+      "upcoming": true,
+      "options": [
+        "Maat",
+        "Ada",
+        "Wyatt"
+      ],
+      "image": "PilotGachaPilotExchangeItemPrefab"
+    },
+    {
+      "kind": "pilot",
+      "id": 119,
+      "name": "Tang",
+      "type": "limited",
+      "version": "3.4",
+      "upcoming": true,
+      "featured": [
+        "Tang"
+      ],
+      "image": "PilotGachaXiaokuiTangItemPrefab"
     },
     {
       "kind": "pilot",
@@ -2285,6 +2593,18 @@ window.BannersData = {
     },
     {
       "kind": "pilot",
+      "id": 121,
+      "name": "Hardaway",
+      "type": "limited",
+      "version": "3.4",
+      "upcoming": true,
+      "featured": [
+        "Hardaway"
+      ],
+      "image": "PilotGachaVillarsHardawayItemPrefab"
+    },
+    {
+      "kind": "pilot",
       "id": 123,
       "name": "Lustre",
       "type": "limited",
@@ -2294,6 +2614,32 @@ window.BannersData = {
         "Lustre"
       ],
       "image": "PilotGachaLustreItemPrefab"
+    },
+    {
+      "kind": "pilot",
+      "id": 124,
+      "name": "HARPY T.R.O.O.P.S",
+      "type": "exchange",
+      "version": "3.5",
+      "upcoming": true,
+      "options": [
+        "Tang",
+        "Maat",
+        "Audrey"
+      ],
+      "image": "PilotGachaPilotExchangeItemPrefab"
+    },
+    {
+      "kind": "pilot",
+      "id": 125,
+      "name": "Bertha",
+      "type": "limited",
+      "version": "3.5",
+      "upcoming": true,
+      "featured": [
+        "Bertha"
+      ],
+      "image": "PilotGachaBerthaWagnerItemPrefab"
     },
     {
       "kind": "pilot",
@@ -2309,6 +2655,18 @@ window.BannersData = {
     },
     {
       "kind": "pilot",
+      "id": 127,
+      "name": "Giselle",
+      "type": "limited",
+      "version": "3.5",
+      "upcoming": true,
+      "featured": [
+        "Giselle"
+      ],
+      "image": "PilotGachaGiseleMeyerItemPrefab"
+    },
+    {
+      "kind": "pilot",
       "id": 128,
       "name": "Sylar",
       "type": "limited",
@@ -2318,6 +2676,32 @@ window.BannersData = {
         "Sylar"
       ],
       "image": "PilotGachaSylarValentinaItemPrefab"
+    },
+    {
+      "kind": "pilot",
+      "id": 129,
+      "name": "HARPY T.R.O.O.P.S",
+      "type": "exchange",
+      "version": "3.6",
+      "upcoming": true,
+      "options": [
+        "Hardaway",
+        "Colin",
+        "Rosemary"
+      ],
+      "image": "PilotGachaPilotExchangeItemPrefab"
+    },
+    {
+      "kind": "pilot",
+      "id": 130,
+      "name": "Kaidan The Invincible",
+      "type": "limited",
+      "version": "3.6",
+      "upcoming": true,
+      "featured": [
+        "Kaidan The Invincible"
+      ],
+      "image": "PilotGachaKaidantheInvincibleItemPrefab"
     },
     {
       "kind": "pilot",
@@ -2333,6 +2717,18 @@ window.BannersData = {
     },
     {
       "kind": "pilot",
+      "id": 132,
+      "name": "Ann",
+      "type": "limited",
+      "version": "3.6",
+      "upcoming": true,
+      "featured": [
+        "Ann"
+      ],
+      "image": "PilotGachaAnnAurumItemPrefab"
+    },
+    {
+      "kind": "pilot",
       "id": 133,
       "name": "Sonya",
       "type": "limited",
@@ -2345,6 +2741,32 @@ window.BannersData = {
     },
     {
       "kind": "pilot",
+      "id": 134,
+      "name": "HARPY T.R.O.O.P.S",
+      "type": "exchange",
+      "version": "3.7",
+      "upcoming": true,
+      "options": [
+        "Ann",
+        "Lexuan",
+        "Adele"
+      ],
+      "image": "PilotGachaPilotExchangeItemPrefab"
+    },
+    {
+      "kind": "pilot",
+      "id": 135,
+      "name": "Blackout",
+      "type": "limited",
+      "version": "3.7",
+      "upcoming": true,
+      "featured": [
+        "Blackout"
+      ],
+      "image": "PilotGachaBlackoutItemPrefab"
+    },
+    {
+      "kind": "pilot",
       "id": 136,
       "name": "Morgana",
       "type": "limited",
@@ -2354,6 +2776,18 @@ window.BannersData = {
         "Morgana"
       ],
       "image": "PilotGachaMorganaSlyceItemPrefab"
+    },
+    {
+      "kind": "pilot",
+      "id": 137,
+      "name": "Niall",
+      "type": "limited",
+      "version": "3.7",
+      "upcoming": true,
+      "featured": [
+        "Niall"
+      ],
+      "image": "PilotGachaNiallQuenstedtItemPrefab"
     },
     {
       "kind": "st",
@@ -2508,6 +2942,32 @@ window.BannersData = {
     },
     {
       "kind": "st",
+      "id": 86,
+      "name": "Transoceanic Shipping",
+      "type": "exchange",
+      "version": "2.5",
+      "upcoming": true,
+      "options": [
+        "Hector",
+        "Nightglow",
+        "Colossus"
+      ],
+      "image": "WapGachaWapExchangeItemPrefab"
+    },
+    {
+      "kind": "st",
+      "id": 87,
+      "name": "Flesh & Steel",
+      "type": "limited",
+      "version": "2.6",
+      "upcoming": true,
+      "featured": [
+        "Kagemusha"
+      ],
+      "image": "WapGachaShadowWarriorPoolItemPrefab"
+    },
+    {
+      "kind": "st",
       "id": 88,
       "name": "Shadowtiger",
       "type": "limited",
@@ -2517,6 +2977,18 @@ window.BannersData = {
         "Shadowtiger"
       ],
       "image": "WapGachaJyakomaruPoolItemPrefab"
+    },
+    {
+      "kind": "st",
+      "id": 89,
+      "name": "Divine Pursuit",
+      "type": "limited",
+      "version": "2.7",
+      "upcoming": true,
+      "featured": [
+        "Fenrisúlfr"
+      ],
+      "image": "WapGachaFenrisulfrPoolItemPrefab"
     },
     {
       "kind": "st",
@@ -2532,6 +3004,44 @@ window.BannersData = {
     },
     {
       "kind": "st",
+      "id": 91,
+      "name": "Transoceanic Shipping",
+      "type": "exchange",
+      "version": "2.6",
+      "upcoming": true,
+      "options": [
+        "Arbiter",
+        "Igniter",
+        "Mithril"
+      ],
+      "image": "WapGachaWapExchangeItemPrefab"
+    },
+    {
+      "kind": "st",
+      "id": 92,
+      "name": "Where the Hurricane Rages",
+      "type": "limited",
+      "version": "2.6",
+      "upcoming": true,
+      "featured": [
+        "Hasteraze"
+      ],
+      "image": "WapGachaHasterazePoolItemPrefab"
+    },
+    {
+      "kind": "st",
+      "id": 93,
+      "name": "Luminous Sentinel",
+      "type": "limited",
+      "version": "2.6",
+      "upcoming": true,
+      "featured": [
+        "Snowyowl"
+      ],
+      "image": "WapGachaSnowyowlPoolItemPrefab"
+    },
+    {
+      "kind": "st",
       "id": 94,
       "name": "Bawang",
       "type": "limited",
@@ -2541,6 +3051,32 @@ window.BannersData = {
         "Bawang"
       ],
       "image": "WapGachaBaWangPoolItemPrefab"
+    },
+    {
+      "kind": "st",
+      "id": 95,
+      "name": "Transoceanic Shipping",
+      "type": "exchange",
+      "version": "2.8",
+      "upcoming": true,
+      "options": [
+        "Hasteraze",
+        "Fenrisúlfr",
+        "Ouroboros"
+      ],
+      "image": "WapGachaWapExchangeItemPrefab"
+    },
+    {
+      "kind": "st",
+      "id": 96,
+      "name": "Moiraflare Eclipsar",
+      "type": "limited",
+      "version": "2.8",
+      "upcoming": true,
+      "featured": [
+        "Prometheus"
+      ],
+      "image": "WapGachaPrometheusPoolItemPrefab"
     },
     {
       "kind": "st",
@@ -2556,6 +3092,18 @@ window.BannersData = {
     },
     {
       "kind": "st",
+      "id": 98,
+      "name": "Impenetrable Fortress",
+      "type": "limited",
+      "version": "2.8",
+      "upcoming": true,
+      "featured": [
+        "Colossus"
+      ],
+      "image": "WapGachaColossusPoolItemPrefab"
+    },
+    {
+      "kind": "st",
       "id": 99,
       "name": "Demiurge",
       "type": "limited",
@@ -2565,6 +3113,20 @@ window.BannersData = {
         "Demiurge"
       ],
       "image": "WapGachaDemiurgePoollItemPrefab"
+    },
+    {
+      "kind": "st",
+      "id": 100,
+      "name": "Transoceanic Shipping",
+      "type": "exchange",
+      "version": "3.0",
+      "upcoming": true,
+      "options": [
+        "Bawang",
+        "Hasteraze",
+        "Colossus"
+      ],
+      "image": "WapGachaWapExchangeItemPrefab"
     },
     {
       "kind": "st",
@@ -2580,6 +3142,18 @@ window.BannersData = {
     },
     {
       "kind": "st",
+      "id": 102,
+      "name": "Twilight of Judgment",
+      "type": "limited",
+      "version": "3.0",
+      "upcoming": true,
+      "featured": [
+        "Erinys"
+      ],
+      "image": "WapGachaXR-PlutoPoolItemPrefab"
+    },
+    {
+      "kind": "st",
       "id": 103,
       "name": "Benxiao",
       "type": "limited",
@@ -2589,6 +3163,32 @@ window.BannersData = {
         "Benxiao"
       ],
       "image": "WapGachaHuanshuPoolItemPrefab"
+    },
+    {
+      "kind": "st",
+      "id": 104,
+      "name": "Transoceanic Shipping",
+      "type": "exchange",
+      "version": "3.1",
+      "upcoming": true,
+      "options": [
+        "Kagemusha",
+        "Tengshe",
+        "Shadowrabbit"
+      ],
+      "image": "WapGachaWapExchangeItemPrefab"
+    },
+    {
+      "kind": "st",
+      "id": 105,
+      "name": "Starlit Mirage",
+      "type": "limited",
+      "version": "3.1",
+      "upcoming": true,
+      "featured": [
+        "Nightglow"
+      ],
+      "image": "WapGachaNightglowPoolItemPrefab"
     },
     {
       "kind": "st",
@@ -2604,6 +3204,18 @@ window.BannersData = {
     },
     {
       "kind": "st",
+      "id": 107,
+      "name": "Siege Assault",
+      "type": "limited",
+      "version": "3.1",
+      "upcoming": true,
+      "featured": [
+        "Hector"
+      ],
+      "image": "WapGachaHectorPoolItemPrefab"
+    },
+    {
+      "kind": "st",
       "id": 109,
       "name": "Gladiator",
       "type": "limited",
@@ -2613,6 +3225,32 @@ window.BannersData = {
         "Gladiator"
       ],
       "image": "WapGachaGladiatorPoolItemPrefab"
+    },
+    {
+      "kind": "st",
+      "id": 110,
+      "name": "Transoceanic Shipping",
+      "type": "exchange",
+      "version": "3.2",
+      "upcoming": true,
+      "options": [
+        "Prometheus",
+        "Alicorn",
+        "Rex"
+      ],
+      "image": "WapGachaWapExchangeItemPrefab"
+    },
+    {
+      "kind": "st",
+      "id": 111,
+      "name": "Illusion",
+      "type": "limited",
+      "version": "3.2",
+      "upcoming": true,
+      "featured": [
+        "Illusion"
+      ],
+      "image": "WapGachaMiragePoolItemPrefab"
     },
     {
       "kind": "st",
@@ -2628,6 +3266,18 @@ window.BannersData = {
     },
     {
       "kind": "st",
+      "id": 113,
+      "name": "Bawang",
+      "type": "limited",
+      "version": "3.2",
+      "upcoming": true,
+      "featured": [
+        "Bawang"
+      ],
+      "image": "WapGachaBaWangPoolItemPrefab"
+    },
+    {
+      "kind": "st",
       "id": 114,
       "name": "MobiuX",
       "type": "limited",
@@ -2637,6 +3287,32 @@ window.BannersData = {
         "MobiuX"
       ],
       "image": "WapGachaMobiuXPoolItemPrefab"
+    },
+    {
+      "kind": "st",
+      "id": 115,
+      "name": "Transoceanic Shipping",
+      "type": "exchange",
+      "version": "3.3",
+      "upcoming": true,
+      "options": [
+        "Illusion",
+        "Hector",
+        "Colossus"
+      ],
+      "image": "WapGachaWapExchangeItemPrefab"
+    },
+    {
+      "kind": "st",
+      "id": 116,
+      "name": "Regalia",
+      "type": "limited",
+      "version": "3.3",
+      "upcoming": true,
+      "featured": [
+        "Regalia"
+      ],
+      "image": "WapGachaMonarchPoolItemPrefab"
     },
     {
       "kind": "st",
@@ -2652,6 +3328,18 @@ window.BannersData = {
     },
     {
       "kind": "st",
+      "id": 118,
+      "name": "Martyr",
+      "type": "limited",
+      "version": "3.3",
+      "upcoming": true,
+      "featured": [
+        "Martyr"
+      ],
+      "image": "WapGachaMartyrPoolItemPrefab"
+    },
+    {
+      "kind": "st",
       "id": 119,
       "name": "Nidhogg",
       "type": "limited",
@@ -2661,6 +3349,32 @@ window.BannersData = {
         "Nidhogg"
       ],
       "image": "WapGachaNidhoggPoolItemPrefab"
+    },
+    {
+      "kind": "st",
+      "id": 120,
+      "name": "Transoceanic Shipping",
+      "type": "exchange",
+      "version": "3.4",
+      "upcoming": true,
+      "options": [
+        "Martyr",
+        "Hasteraze",
+        "Fenrisúlfr"
+      ],
+      "image": "WapGachaWapExchangeItemPrefab"
+    },
+    {
+      "kind": "st",
+      "id": 121,
+      "name": "Benxiao",
+      "type": "limited",
+      "version": "3.4",
+      "upcoming": true,
+      "featured": [
+        "Benxiao"
+      ],
+      "image": "WapGachaHuanshuPoolItemPrefab"
     },
     {
       "kind": "st",
@@ -2676,6 +3390,18 @@ window.BannersData = {
     },
     {
       "kind": "st",
+      "id": 123,
+      "name": "Flourite",
+      "type": "limited",
+      "version": "3.4",
+      "upcoming": true,
+      "featured": [
+        "Flourite"
+      ],
+      "image": "WapGachaFluoritePoolItemPrefab"
+    },
+    {
+      "kind": "st",
       "id": 125,
       "name": "Asteria",
       "type": "limited",
@@ -2685,6 +3411,32 @@ window.BannersData = {
         "Asteria"
       ],
       "image": "WapGachaAsteriaPoolItemPrefab"
+    },
+    {
+      "kind": "st",
+      "id": 126,
+      "name": "Transoceanic Shipping",
+      "type": "exchange",
+      "version": "3.5",
+      "upcoming": true,
+      "options": [
+        "Benxiao",
+        "Martyr",
+        "Regalia"
+      ],
+      "image": "WapGachaWapExchangeItemPrefab"
+    },
+    {
+      "kind": "st",
+      "id": 127,
+      "name": "Portent",
+      "type": "limited",
+      "version": "3.5",
+      "upcoming": true,
+      "featured": [
+        "Portent"
+      ],
+      "image": "WapGachaPortentsPoolItemPrefab"
     },
     {
       "kind": "st",
@@ -2700,6 +3452,18 @@ window.BannersData = {
     },
     {
       "kind": "st",
+      "id": 129,
+      "name": "Gladiator",
+      "type": "limited",
+      "version": "3.5",
+      "upcoming": true,
+      "featured": [
+        "Gladiator"
+      ],
+      "image": "WapGachaGladiatorPoolItemPrefab"
+    },
+    {
+      "kind": "st",
       "id": 130,
       "name": "Medusa MKII",
       "type": "limited",
@@ -2709,6 +3473,32 @@ window.BannersData = {
         "Medusa MKII"
       ],
       "image": "WapGachaMedusaMK-IIPoolItemPrefab"
+    },
+    {
+      "kind": "st",
+      "id": 131,
+      "name": "Transoceanic Shipping",
+      "type": "exchange",
+      "version": "3.6",
+      "upcoming": true,
+      "options": [
+        "Flourite",
+        "Nightglow",
+        "Arbiter"
+      ],
+      "image": "WapGachaWapExchangeItemPrefab"
+    },
+    {
+      "kind": "st",
+      "id": 132,
+      "name": "MobiuX",
+      "type": "limited",
+      "version": "3.6",
+      "upcoming": true,
+      "featured": [
+        "MobiuX"
+      ],
+      "image": "WapGachaMobiuXPoolItemPrefab"
     },
     {
       "kind": "st",
@@ -2724,6 +3514,18 @@ window.BannersData = {
     },
     {
       "kind": "st",
+      "id": 134,
+      "name": "Nephthys",
+      "type": "limited",
+      "version": "3.6",
+      "upcoming": true,
+      "featured": [
+        "Nephthys"
+      ],
+      "image": "WapGachaNephthysPoolItemPrefab"
+    },
+    {
+      "kind": "st",
       "id": 135,
       "name": "Nivequus",
       "type": "limited",
@@ -2736,6 +3538,32 @@ window.BannersData = {
     },
     {
       "kind": "st",
+      "id": 136,
+      "name": "Transoceanic Shipping",
+      "type": "exchange",
+      "version": "3.7",
+      "upcoming": true,
+      "options": [
+        "Nephthys",
+        "Bawang",
+        "Kagemusha"
+      ],
+      "image": "WapGachaWapExchangeItemPrefab"
+    },
+    {
+      "kind": "st",
+      "id": 137,
+      "name": "Nidhogg",
+      "type": "limited",
+      "version": "3.7",
+      "upcoming": true,
+      "featured": [
+        "Nidhogg"
+      ],
+      "image": "WapGachaNidhoggPoolItemPrefab"
+    },
+    {
+      "kind": "st",
       "id": 138,
       "name": "Eclipse",
       "type": "limited",
@@ -2745,6 +3573,18 @@ window.BannersData = {
         "Eclipse"
       ],
       "image": "WapGachaEclipsePoolItemPrefab"
+    },
+    {
+      "kind": "st",
+      "id": 139,
+      "name": "Prisma",
+      "type": "limited",
+      "version": "3.7",
+      "upcoming": true,
+      "featured": [
+        "Prisma"
+      ],
+      "image": "WapGachaPrismaPoolItemPrefab"
     }
   ]
 };
