@@ -26,7 +26,7 @@ function bannerVersionKey(v) {
 }
 
 Pages.banners = {
-  title: 'Banner History',
+  title: 'Banner List',
   _activeKinds: {},
   _activeVersions: {},
 
@@ -109,7 +109,7 @@ Pages.banners = {
 
     return (
       '<div id="banner-page">' +
-        '<div class="listing-header"><h1>Banner History</h1></div>' +
+        '<div class="listing-header"><h1>Banner List</h1></div>' +
         '<p class="dispatch-intro">' + $('<span>').text(data.note || '').html() + '</p>' +
         '<div class="filter-bar">' + kindNav + versionNav + '</div>' +
         sectionsHtml +
@@ -194,8 +194,8 @@ Pages.banners = {
     return (
       '<div class="banner-card-wrap" data-kind="' + b.kind + '">' +
         '<div class="banner-card">' +
-          '<div class="banner-card-img' + (overlayHtml ? '' : ' banner-card-img-zoom') + '" data-name="' + esc(b.name) + '">' +
-            '<img src="' + bannerImageSrc(b) + '" alt="' + esc(b.name) + '" loading="lazy" />' +
+          '<div class="banner-card-img' + (overlayHtml || !b.image ? '' : ' banner-card-img-zoom') + '" data-name="' + esc(b.name) + '">' +
+            (b.image ? '<img src="' + bannerImageSrc(b) + '" alt="' + esc(b.name) + '" loading="lazy" />' : self._placeholderArtHtml(b)) +
             overlayHtml +
             '<span class="banner-kind-badge banner-kind-' + b.kind + '">' + BANNER_KIND_LABEL[b.kind] + '</span>' +
             '<span class="banner-type-badge banner-type-' + tag.toLowerCase() + '">' + esc(tag) + '</span>' +
@@ -211,6 +211,20 @@ Pages.banners = {
         '</div>' +
       '</div>'
     );
+  },
+
+  // Banners not in the game data yet have no art: show the featured unit's portrait instead.
+  _placeholderArtHtml: function (b) {
+    var name = (b.featured || [])[0];
+    var alt = $('<span>').text(b.name).html();
+    if (b.kind === 'pilot') {
+      var p = ((window.PilotsData || {}).pilots || []).find(function (p) { return p.PilotName === name; });
+      if (p) return '<img class="banner-card-portrait" src="' + pilotAvatarSrc(p) + '"' + pilotAvatarErrorAttr(p) + ' alt="' + alt + '" loading="lazy" />';
+    } else {
+      var m = ((window.MechsData || {}).mechs || []).find(function (m) { return m.name === name; });
+      if (m) return '<img class="banner-card-portrait" src="' + mechPortraitSrc(m) + '"' + mechPortraitErrorAttr(m) + ' alt="' + alt + '" loading="lazy" />';
+    }
+    return '';
   },
 
   _unitHtml: function (kind, name) {

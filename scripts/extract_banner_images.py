@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Render the gacha banner art the Banner History page uses
+"""Render the gacha banner art the Banner List page uses
 (data/banners/banners.json) into the assets repo (data/banners/<prefab>.jpg).
 
 A banner's art is split into 2 or more textures (Img_1_pilot_gacha_<Name>1_Raw,
@@ -9,10 +9,12 @@ tree, places every active Image/RawImage by its RectTransform (skipping
 particle/effect/button nodes) and composites them, then scales the result to
 WIDTH. The textures live in the ui_uiimages_* gacha bundles; the newest copy
 of each bundle (installed .b or downloaded __data) wins. The game folder and
-bundle key come from the MRT_FieldWiki update scripts' settings.py. Images
-already in the assets repo are skipped unless --force is given.
+bundle key come from the MRT_FieldWiki update scripts' settings.py; with
+MECHA_REGION=CN they are the CN client's, for the banners only CN has so far.
+Images already in the assets repo are skipped unless --force is given.
 
     python3 scripts/extract_banner_images.py [--force]
+    MECHA_REGION=CN python3 scripts/extract_banner_images.py
 
 Needs: pip install UnityPy Pillow
 """
@@ -34,11 +36,12 @@ BANNERS = os.path.join(ROOT, 'data', 'banners', 'banners.json')
 ASSETS_DIR = os.environ.get('ASSETS_DIR', os.path.join(os.path.dirname(ROOT), 'mecharashi-wiki-assets'))
 OUT_DIR = os.path.join(ASSETS_DIR, 'data', 'banners')
 BUNDLE_DIR = os.path.join(settings.GAME_DIR, 'Mecharashi_Data', 'StreamingAssets', 'ExportAssetBundle')
-CACHE_DIR = os.path.join(settings.LOCAL_LOW, 'Unity', 'tentree_Mecharashi')
+CACHE_DIR = os.path.dirname(settings.CONFIG_CACHE)
+LANG = 'cn' if settings.CN else 'en'
 BUNDLES = ['ui_prefabs_pilotgacha_abs.b', 'ui_prefabs_wapgacha_abs.b', 'ui_uiimages_uigacha_*_abs.b',
            'ui_uiimages_uipilotgacha_abs.b', 'ui_uiimages_uiwapgacha_abs.b',
            # Localized art (titles, and some banners' backgrounds); the downloaded copy is the game's language.
-           'ui_textimages_pilotgachaimg_abs.en', 'ui_textimages_chinese_wapgachaimg_abs.en']
+           'ui_textimages_pilotgachaimg_abs.' + LANG, 'ui_textimages_chinese_wapgachaimg_abs.' + LANG]
 WIDTH = 1300
 SKIP = re.compile(r'particle|effect|btn|button|fx|shine', re.I)
 
@@ -163,7 +166,7 @@ def render(ls):
 def main():
     force = '--force' in sys.argv[1:]
     with open(BANNERS, encoding='utf-8') as f:
-        need = {r['image'] for r in json.load(f)['banners']}
+        need = {r['image'] for r in json.load(f)['banners'] if r.get('image')}
     todo = need if force else {n for n in need if not os.path.exists(os.path.join(OUT_DIR, n + '.jpg'))}
     print('%d banner images used, %d to render' % (len(need), len(todo)))
     if not todo:

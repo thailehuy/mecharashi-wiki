@@ -3719,7 +3719,7 @@ a.boss-avatar { display: block; }
 .feat-cost-item { display: block; white-space: nowrap; }
 .feat-cost-item b { color: #e2e8f0; }
 
-/* Banner History */
+/* Banner List */
 .banner-upcoming-tag {
   font-size: 0.7rem;
   font-weight: 700;
@@ -3761,6 +3761,10 @@ a.boss-avatar { display: block; }
   height: 100%;
   object-fit: cover;
   display: block;
+}
+
+.banner-card-img img.banner-card-portrait {
+  object-fit: contain;
 }
 
 .banner-kind-badge,

@@ -8,10 +8,15 @@ the 2098/4/10 block, which holds the next patches' banners (debut banners for
 2.4/2.5 units): those are kept as upcoming, with no dates. A banner's version is the
 patch running when it opened: a patch starts with the first banner of a unit
 from that version. Upcoming banners take the version of the last debut before
-them in pool ID order. Versions after MAX_VERSION are dropped.
+them in pool ID order. Units from later patches that no pool features yet,
+up to MAX_VERSION, get a placeholder debut banner each (upcoming, no dates,
+named after the unit), with the art and pool ID of the unit's first limited
+banner on the CN server (mined/cn/out/stats.db, built by
+`MECHA_REGION=CN python decode.py`) when there is one. Versions after
+MAX_VERSION are dropped.
 
 The banner art is rendered by scripts/extract_banner_images.py, keyed by the
-pool's prefab name (`image`).
+pool's prefab name (`image`); run it with MECHA_REGION=CN for the CN-only art.
 
     python3 scripts/build_banners.py
 """
@@ -22,13 +27,14 @@ from datetime import datetime
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 STATS = os.path.join(ROOT, 'data', 'screenshots', 'MRT_FieldWiki', 'RebuildGameUpdate', 'out', 'stats.db')
+CN_STATS = os.path.join(ROOT, 'data', 'screenshots', 'mined', 'cn', 'out', 'stats.db')
 PILOTS = os.path.join(ROOT, 'data', 'db', 'pilots.json')
 MECHS = os.path.join(ROOT, 'data', 'db', 'mechs.json')
 HERE = os.path.join(ROOT, 'data', 'banners')
 OUT = os.path.join(HERE, 'banners.json')
 OUT_JS = os.path.join(HERE, 'banners.js')
 
-MAX_VERSION = (2, 5)
+MAX_VERSION = (3, 7)
 UPCOMING_START = datetime(2098, 4, 10)
 # Always-open pools that have no featured unit (standard and beginner).
 STANDARD = {'pilot': {1, 4}, 'st': {1, 2, 3, 4}}
@@ -150,6 +156,27 @@ def main():
                 if debut and (not last_debut or version_key(max(debut, key=version_key)) > version_key(last_debut)):
                     last_debut = max(debut, key=version_key)
 
+    # Placeholder debuts for units newer than any banner, which the game data doesn't schedule yet.
+    # The CN server's debut pool, if any, gives the art and pool ID (so pilot/ST pairs line up as in CN).
+    cn_debut = {}
+    if os.path.exists(CN_STATS):
+        cn = sqlite3.connect(CN_STATS)
+        cn_body = dict(cn.execute('select ID, WapPartBodyId from ConfigDataTacticalUnitSuitInfo'))
+        cn_pools = (read_pools(cn, PILOT_SQL, 'pilot', lambda i: str(i)) +
+                    read_pools(cn, ST_SQL, 'st', lambda i: str(cn_body.get(i))))
+        for b in sorted(cn_pools, key=lambda b: (b['start'] or datetime.max, b['id'])):
+            if b['type'] == 'limited' and b['start'] and b['start'].year < 2048:
+                for uid in b['featured']:
+                    cn_debut.setdefault((b['kind'], uid), b)
+    newest = max((v for b in banners for _, v in b['featured']), key=version_key)
+    for kind, units in (('pilot', pilots), ('st', mechs)):
+        for uid, u in sorted(units.items(), key=lambda kv: (version_key(kv[1]['version']), int(kv[0]))):
+            if version_key(newest) < version_key(u['version']) <= MAX_VERSION:
+                d = cn_debut.get((kind, uid))
+                banners.append({'id': d['id'] if d else int(uid), 'kind': kind, 'name': u['name'], 'type': 'limited',
+                                'version': u['version'], 'upcoming': True, 'start': None, 'end': None,
+                                'image': d and d['image'], 'featured': [(u['name'], u['version'])], 'options': []})
+
     out = []
     for b in banners:
         if b.get('version') and version_key(b['version']) > MAX_VERSION:
@@ -167,14 +194,15 @@ def main():
             row['featured'] = [n for n, _ in b['featured']]
         if b['options']:
             row['options'] = [n for n, _ in b['options']]
-        row['image'] = b['image']
+        if b['image']:
+            row['image'] = b['image']
         out.append(row)
 
     order = {'standard': 0, 'beginner': 1}
     out.sort(key=lambda r: (r['type'] not in order, order.get(r['type'], 0), r.get('start') or '9999',
                             r['kind'] != 'pilot', r['id']))
     data = {
-        'note': 'Global server banners from the game data. Banners not yet scheduled are listed under their patch without dates.',
+        'note': 'Global server banners from the game data. Banners not yet scheduled, including debuts for future patches, are listed under their patch without dates.',
         'banners': out,
     }
     os.makedirs(HERE, exist_ok=True)
