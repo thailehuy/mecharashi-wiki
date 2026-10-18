@@ -139,9 +139,9 @@ Pages.banners = {
     var unitsOf = function (names) {
       return names.map(function (n) { return self._unitHtml(b.kind, n); }).join('');
     };
-    // Exchange banners' art is a generic placeholder, so their units go on top of it.
+    // Exchange and selector banners' art is a generic placeholder, so their units go on top of it.
     var options = b.options || [];
-    var overlayHtml = b.type === 'exchange' && options.length ? '<div class="banner-units banner-units-overlay">' + unitsOf(options) + '</div>' : '';
+    var overlayHtml = (b.type === 'exchange' || b.type === 'selector') && options.length ? '<div class="banner-units banner-units-overlay">' + unitsOf(options) + '</div>' : '';
     var rowUnits = featured.concat(overlayHtml ? [] : options);
 
     return (
