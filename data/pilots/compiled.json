@@ -1034,16 +1034,16 @@
       "Occupation": "Raider",
       "quality": "SSR",
       "Talent0_2Ability": {
-        "ID": "185550",
+        "ID": "202250",
         "name": "Snowfield Afterglow",
-        "SpecificEffects": "When equipped with Flamethrower and Large Shield, can use command skill <skill ID=185950>[Bunker Down]</skill>. At the start of turn, if in <buf ID=185900>[Bunker]</buf> state, immediately uses Flamethrower to attack all enemies within range, dealing <color=#F74848>0.5</color>x DMG. When attacking with Flamethrower, gains <color=#F74848>1</color> stack of <buf ID=185901>[War Flame]</buf> for each <color=#F74848>1</color> target hit.",
+        "SpecificEffects": "When equipped with Flamethrower and Large Shield, can use command skill <skill ID=2022501>[Bunker Down]</skill>. At the start of turn, if in <buf ID=2022502>[Bunker]</buf> state, immediately uses Flamethrower to attack all enemies within range, dealing <color=#F74848>0.5</color>x DMG. When attacking with Flamethrower, gains <color=#F74848>1</color> stack of <buf ID=2022512>[War Flame]</buf> for each <color=#F74848>1</color> target hit.",
         "SkillIcon": "Icon_skill_talent_5168",
         "icon": "Icon_skill_talent_5168"
       },
       "Talent3_5Ability": {
-        "ID": "185551",
+        "ID": "202251",
         "name": "Snowfield Afterglow",
-        "SpecificEffects": "When equipped with Flamethrower and Large Shield, can use command skill <skill ID=185950>[Bunker Down]</skill>. At the start of turn, if in <buf ID=185900>[Bunker]</buf> state, immediately uses Flamethrower to attack all enemies within range, dealing <color=#F74848>0.5</color>x DMG. When attacking with Flamethrower, gains <color=#F74848>1</color> stack of <buf ID=185901>[War Flame]</buf> for each <color=#F74848>1</color> target hit.\nGains <color=#F74848>3</color> stacks of <buf ID=185901>[War Flame]</buf> upon deployment. Gains <color=#F74848>+1</color> AP after using <skill ID=185952>[Rapid Raid]</skill>.",
+        "SpecificEffects": "When equipped with Flamethrower and Large Shield, can use command skill <skill ID=2022501>[Bunker Down]</skill>. At the start of turn, if in <buf ID=2022502>[Bunker]</buf> state, immediately uses Flamethrower to attack all enemies within range, dealing <color=#F74848>0.5</color>x DMG. When attacking with Flamethrower, gains <color=#F74848>1</color> stack of <buf ID=2022512>[War Flame]</buf> for each <color=#F74848>1</color> target hit.\nGains <color=#F74848>3</color> stacks of <buf ID=2022512>[War Flame]</buf> upon deployment. Gains <color=#F74848>+1</color> AP after using <skill ID=2022511>[Rapid Raid]</skill>.",
         "SkillIcon": "Icon_skill_talent_5168",
         "icon": "Icon_skill_talent_5168"
       },
@@ -1199,9 +1199,9 @@
               {
                 "MinimumSum": "1",
                 "PassiveSkill": {
-                  "ID": "185570",
+                  "ID": "202241",
                   "name": "Frostfire Sentinel 1",
-                  "SpecificEffects": "Flamethrower bullet count <color=#F74848>+2</color>. This effect is doubled in <buf ID=185900>[Bunker]</buf> state.",
+                  "SpecificEffects": "Flamethrower bullet count <color=#F74848>+2</color>. This effect is doubled in <buf ID=2022502>[Bunker]</buf> state.",
                   "SkillIcon": "Icon_skill_passive_5315",
                   "icon": "Icon_skill_passive_5315"
                 }
@@ -1229,7 +1229,7 @@
               {
                 "MinimumSum": "10",
                 "PassiveSkill": {
-                  "ID": "185571",
+                  "ID": "202244",
                   "name": "Frostfire Sentinel 2",
                   "SpecificEffects": "Attack multiplier of this unit's talent attack and Flamethrower <buf ID=900002>[Link Attack]</buf> increases by <color=#F74848>0.15</color>.",
                   "SkillIcon": "Icon_skill_passive_5315",
@@ -1239,7 +1239,7 @@
               {
                 "MinimumSum": "13",
                 "PassiveSkill": {
-                  "ID": "185572",
+                  "ID": "202245",
                   "name": "Frostfire Sentinel 3",
                   "SpecificEffects": "Max HP increases by <color=#F74848>15%</color>.",
                   "SkillIcon": "Icon_skill_passive_5315",
@@ -1249,9 +1249,9 @@
               {
                 "MinimumSum": "16",
                 "PassiveSkill": {
-                  "ID": "185573",
+                  "ID": "202246",
                   "name": "Frostfire Sentinel 4",
-                  "SpecificEffects": "After actively attacking with Large Shield, gains <color=#F74848>2</color> stacks of <buf ID=185905>[Flame Surge]</buf> and can continue to move with remaining movement. This effect can trigger <color=#F74848>1</color> time per turn.",
+                  "SpecificEffects": "After actively attacking with Large Shield, gains <color=#F74848>2</color> stacks of <buf ID=2022463>[Flame Surge]</buf> and can continue to move with remaining movement. This effect can trigger <color=#F74848>1</color> time per turn.",
                   "SkillIcon": "Icon_skill_passive_5315",
                   "icon": "Icon_skill_passive_5315"
                 }
@@ -1333,20 +1333,7 @@
           "ID": "1010318512",
           "UnitType": "0",
           "skill": {
-            "ID": "185501",
-            "name": "Scorch Earth",
-            "describe": "Uses a Large Shield to attack a target, dealing <buf ID=900017>[Fixed DMG]</buf> equal to <color=#F74848>50%</color> max HP of current arm. Applies <terrian ID=4003081 /> to all tiles within <color=#F74848>1</color> ring around the target for <color=#F74848>2</color> turns. If possesses <color=#F74848>2</color> or more stacks of <buf ID=185901>[War Flame]</buf>, consumes <color=#F74848>2</color> stacks to additionally deal <buf ID=900017>[Fixed DMG]</buf> equal to <color=#F74848>20%</color> of own max HP to the target and all enemy units within <color=#F74848>1</color> ring around the target.",
-            "SkillIcon": "Icon_skill_main_1179",
-            "icon": "Icon_skill_main_1179",
-            "Ap": "3",
-            "type": "EquipmentSkill"
-          }
-        },
-        {
-          "ID": "1010318513",
-          "UnitType": "0",
-          "skill": {
-            "ID": "185502",
+            "ID": "202202",
             "name": "Blazing Wind",
             "describe": "Uses a Flamethrower to attack all enemies along the path within range, dealing <color=#F74848>0.7</color>x DMG.",
             "SkillIcon": "Icon_skill_order_1127",
@@ -1356,12 +1343,23 @@
           }
         },
         {
+          "ID": "1010318513",
+          "UnitType": "0",
+          "skill": {
+            "ID": "202203",
+            "name": "Fearless Scorch",
+            "SpecificEffects": "At the start of turn, deals <buf ID=900177>[Percentage HP Reduction]</buf> equal to <color=#F74848>5%</color> max HP to all parts of self. Applies <terrian ID=4003081 /> to all tiles within <color=#F74848>1</color> ring around this unit for <color=#F74848>2</color> turns. Gains <color=#F74848>2</color> stacks of <buf ID=2022512>[War Flame]</buf>.",
+            "SkillIcon": "Icon_skill_passive_5322",
+            "icon": "Icon_skill_passive_5322"
+          }
+        },
+        {
           "ID": "1010318514",
           "UnitType": "0",
           "skill": {
-            "ID": "185503",
+            "ID": "202204",
             "name": "Converging Flame",
-            "describe": "Uses a Flamethrower to attack a target, dealing <color=#F74848>1.2</color>x DMG and <color=#F74848>20%</color> <buf ID=900139>[Flame DMG]</buf> to other targets along the path. When in <buf ID=185900>[Bunker]</buf> state, applies <color=#F74848>2</color> stacks of <buf ID=185902>[Flame Fusion]</buf> to self.",
+            "describe": "Uses a Flamethrower to attack a target, dealing <color=#F74848>1.2</color>x DMG and <color=#F74848>20%</color> <buf ID=900139>[Flame DMG]</buf> to other targets along the path. When in <buf ID=2022502>[Bunker]</buf> state, applies <color=#F74848>2</color> stacks of <buf ID=2022042>[Flame Fusion]</buf> to self.",
             "SkillIcon": "Icon_skill_main_1024",
             "icon": "Icon_skill_main_1024",
             "Ap": "3",
@@ -1372,31 +1370,7 @@
           "ID": "1010318515",
           "UnitType": "0",
           "skill": {
-            "ID": "185504",
-            "name": "Incinerate",
-            "describe": "Uses a Large Shield to attack a target, consuming all <buf ID=185901>[War Flame]</buf> stacks, dealing <buf ID=900017>[Fixed DMG]</buf> equal to <color=#F74848>70%</color> of current arm max HP, additionally increased by <color=#F74848>10%</color> for each <color=#F74848>1</color> stack of <buf ID=185901>[War Flame]</buf> consumed. This attack always hits the body and deals <color=#F74848>50%</color> Splash DMG to other parts. If <color=#F74848>4</color> or more stacks of <buf ID=185901>[War Flame]</buf> are consumed, inflicts <buf ID=185903>[Thermal Corrosion]</buf> on the target.",
-            "SkillIcon": "Icon_skill_main_1180",
-            "icon": "Icon_skill_main_1180",
-            "Ap": "4",
-            "type": "EquipmentSkill"
-          }
-        },
-        {
-          "ID": "1010318516",
-          "UnitType": "0",
-          "skill": {
-            "ID": "185505",
-            "name": "Fearless Scorch",
-            "SpecificEffects": "At the start of turn, deals <buf ID=175902>[Percentage HP Reduction]</buf> equal to <color=#F74848>5%</color> max HP to all parts of self. Applies <terrian ID=4003081 /> to all tiles within <color=#F74848>1</color> ring around this unit for <color=#F74848>2</color> turns. Gains <color=#F74848>2</color> stacks of <buf ID=185901>[War Flame]</buf>.",
-            "SkillIcon": "Icon_skill_passive_5322",
-            "icon": "Icon_skill_passive_5322"
-          }
-        },
-        {
-          "ID": "1010318517",
-          "UnitType": "0",
-          "skill": {
-            "ID": "185506",
+            "ID": "202205",
             "name": "Ice Shield",
             "SpecificEffects": "Reduces percentage <buf ID=900017>[Fixed DMG]</buf> taken by allies by <color=#F74848>10%</color>.",
             "SkillIcon": "Icon_skill_passive_2124",
@@ -1404,26 +1378,39 @@
           }
         },
         {
-          "ID": "1010318518",
+          "ID": "1010318516",
           "UnitType": "0",
           "skill": {
-            "ID": "185507",
+            "ID": "202206",
             "name": "Flame Forged Blood",
-            "SpecificEffects": "When shield arm is destroyed, spends <color=#F74848>1</color> PP after combat to restore the arm to <color=#F74848>60%</color> of max HP and gains <color=#F74848>3</color> stacks of <buf ID=185901>[War Flame]</buf>. Gains <color=#F74848>2</color> PP at the start of battle.",
+            "SpecificEffects": "When shield arm is destroyed, spends <color=#F74848>1</color> PP after combat to restore the arm to <color=#F74848>60%</color> of max HP and gains <color=#F74848>3</color> stacks of <buf ID=2022512>[War Flame]</buf>. Gains <color=#F74848>2</color> PP at the start of battle.",
             "SkillIcon": "Icon_skill_pp_1109",
             "icon": "Icon_skill_pp_1109",
             "resource": "PP"
           }
         },
         {
-          "ID": "1010318536",
+          "ID": "1010318517",
           "UnitType": "0",
           "skill": {
-            "ID": "185508",
+            "ID": "202207",
             "name": "Blazing Barrier",
-            "SpecificEffects": "At the start of battle, if equipped with Large Shield, grants Temporary HP equal to <color=#F74848>10%</color> of [Alena]'s body max HP to all bodies of allies within <color=#F74848>2</color> adjacent tiles and applies <buf ID=185904>[Blazing Barrier]</buf> to them.",
+            "SpecificEffects": "At the start of battle, if equipped with Large Shield, grants Temporary HP equal to <color=#F74848>10%</color> of [Alena]'s body max HP to all bodies of allies within <color=#F74848>2</color> adjacent tiles and applies <buf ID=2022075>[Blazing Barrier]</buf> to them.",
             "SkillIcon": "Icon_skill_passive_5286",
             "icon": "Icon_skill_passive_5286"
+          }
+        },
+        {
+          "ID": "1010318518",
+          "UnitType": "0",
+          "skill": {
+            "ID": "202208",
+            "name": "Incinerate",
+            "describe": "Uses a Large Shield to attack a target, consuming all <buf ID=2022512>[War Flame]</buf> stacks, dealing <buf ID=900017>[Fixed DMG]</buf> equal to <color=#F74848>70%</color> of current arm max HP, additionally increased by <color=#F74848>10%</color> for each <color=#F74848>1</color> stack of <buf ID=2022512>[War Flame]</buf> consumed. This attack always hits the body and deals <color=#F74848>50%</color> Splash DMG to other parts. If <color=#F74848>4</color> or more stacks of <buf ID=2022512>[War Flame]</buf> are consumed, inflicts <buf ID=2022084>[Thermal Corrosion]</buf> on the target.",
+            "SkillIcon": "Icon_skill_main_1180",
+            "icon": "Icon_skill_main_1180",
+            "Ap": "4",
+            "type": "EquipmentSkill"
           }
         },
         {
@@ -1527,6 +1514,16 @@
         "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
       },
       "version": "3.5",
+      "hiddenSkills": [
+        {
+          "name": "Scorch Earth",
+          "icon": "Icon_skill_main_1179",
+          "type": "EquipmentSkill",
+          "Ap": "3",
+          "CD": "",
+          "describe": "Uses a Large Shield to attack a target, dealing <buf ID=900017>[Fixed DMG]</buf> equal to <color=#F74848>50%</color> max HP of current arm. Applies <terrian ID=4003081 /> to all tiles within <color=#F74848>1</color> ring around the target for <color=#F74848>2</color> turns. If possesses <color=#F74848>2</color> or more stacks of <buf ID=2022512>[War Flame]</buf>, consumes <color=#F74848>2</color> stacks to additionally deal <buf ID=900017>[Fixed DMG]</buf> equal to <color=#F74848>20%</color> of own max HP to the target and all enemy units within <color=#F74848>1</color> ring around the target."
+        }
+      ],
       "statRanks": {
         "Combat": 46,
         "Shooting": 61,
@@ -2061,16 +2058,16 @@
       "Occupation": "Raider",
       "quality": "SSR",
       "Talent0_2Ability": {
-        "ID": "160550",
+        "ID": "202150",
         "name": "Dual Rookie",
-        "SpecificEffects": "At the start of battle, enters <buf ID=160900>[GKD Stance]</buf>. At the end of action, can trigger <skill ID=160950>[Stance Adjustment]</skill> once. Gains <color=#F74848>1</color> stack of <buf ID=160902>[Collective Advantage]</buf> for each <color=#F74848>1</color> stack of <buf ID=182900>[Suppression]</buf> or <buf ID=900034>[Instability]</buf> inflicted on enemies, up to <color=#F74848>20</color> stacks.",
+        "SpecificEffects": "At the start of battle, enters <buf ID=2021502>[GKD Stance]</buf>. At the end of action, can trigger <skill ID=160950>[Stance Adjustment]</skill> once. Gains <color=#F74848>1</color> stack of <buf ID=2021509>[Collective Advantage]</buf> for each <color=#F74848>1</color> stack of <buf ID=1021503>[Suppression]</buf> or <buf ID=900034>[Instability]</buf> inflicted on enemies, up to <color=#F74848>20</color> stacks.",
         "SkillIcon": "Icon_skill_talent_5165",
         "icon": "Icon_skill_talent_5165"
       },
       "Talent3_5Ability": {
-        "ID": "160551",
+        "ID": "202151",
         "name": "Dual Rookie",
-        "SpecificEffects": "At the start of battle, enters <buf ID=160900>[GKD Stance]</buf>. At the end of action, can trigger <skill ID=160950>[Stance Adjustment]</skill> once. Gains <color=#F74848>1</color> stack of <buf ID=160902>[Collective Advantage]</buf> for each <color=#F74848>1</color> stack of <buf ID=182900>[Suppression]</buf> or <buf ID=900034>[Instability]</buf> inflicted on enemies, up to <color=#F74848>20</color> stacks.\nHeavy Machine Gun DMG dealt increases by <color=#F74848>15%</color>. When both hands are intact, Heavy Machine Gun range and AoE range increase by <color=#F74848>+1</color>.",
+        "SpecificEffects": "At the start of battle, enters <buf ID=2021502>[GKD Stance]</buf>. At the end of action, can trigger <skill ID=160950>[Stance Adjustment]</skill> once. Gains <color=#F74848>1</color> stack of <buf ID=2021509>[Collective Advantage]</buf> for each <color=#F74848>1</color> stack of <buf ID=1021503>[Suppression]</buf> or <buf ID=900034>[Instability]</buf> inflicted on enemies, up to <color=#F74848>20</color> stacks.\nHeavy Machine Gun DMG dealt increases by <color=#F74848>15%</color>. When both hands are intact, Heavy Machine Gun range and AoE range increase by <color=#F74848>+1</color>.",
         "SkillIcon": "Icon_skill_talent_5165",
         "icon": "Icon_skill_talent_5165"
       },
@@ -2226,9 +2223,9 @@
               {
                 "MinimumSum": "1",
                 "PassiveSkill": {
-                  "ID": "160570",
+                  "ID": "202141",
                   "name": "Ultimate Prospector 1",
-                  "SpecificEffects": "Ally units from GKD or Electric Eel gains <color=#F74848>+5%</color> DMG dealt and <color=#F74848>+5%</color> Critical Hit chance. DMG dealt additionally increases by <color=#F74848>5%</color> for each <color=#F74848>10</color> stacks of <buf ID=160902>[Collective Advantage]</buf>.",
+                  "SpecificEffects": "Ally units from GKD or Electric Eel gains <color=#F74848>+5%</color> DMG dealt and <color=#F74848>+5%</color> Critical Hit chance. DMG dealt additionally increases by <color=#F74848>5%</color> for each <color=#F74848>10</color> stacks of <buf ID=2021509>[Collective Advantage]</buf>.",
                   "SkillIcon": "Icon_skill_passive_5307",
                   "icon": "Icon_skill_passive_5307"
                 }
@@ -2236,7 +2233,7 @@
               {
                 "MinimumSum": "4",
                 "PassiveSkill": {
-                  "ID": "100042",
+                  "ID": "200042",
                   "name": "AP Optimization 4",
                   "SpecificEffects": "AP Cap <color=#F74848>+1</color>.",
                   "SkillIcon": "Icon_skill_passive_5004",
@@ -2256,9 +2253,9 @@
               {
                 "MinimumSum": "10",
                 "PassiveSkill": {
-                  "ID": "160571",
+                  "ID": "202144",
                   "name": "Ultimate Prospector 2",
-                  "SpecificEffects": "When carrying <color=#F74848>10</color> or more stacks of <buf ID=160902>[Collective Advantage]</buf>, HMG Final DMG dealt increases by <color=#F74848>10%</color>. At <color=#F74848>20</color> or more stacks, AP recovery increases by <color=#F74848>+1</color>.",
+                  "SpecificEffects": "When carrying <color=#F74848>10</color> or more stacks of <buf ID=2021509>[Collective Advantage]</buf>, HMG Final DMG dealt increases by <color=#F74848>10%</color>. At <color=#F74848>20</color> or more stacks, AP recovery increases by <color=#F74848>+1</color>.",
                   "SkillIcon": "Icon_skill_passive_5307",
                   "icon": "Icon_skill_passive_5307"
                 }
@@ -2266,9 +2263,9 @@
               {
                 "MinimumSum": "13",
                 "PassiveSkill": {
-                  "ID": "160572",
+                  "ID": "202145",
                   "name": "Ultimate Prospector 3",
-                  "SpecificEffects": "Each <color=#F74848>10</color> stacks of <buf ID=160902>[Collective Advantage]</buf> increases HMG bullet count by <color=#F74848>+1</color>.",
+                  "SpecificEffects": "Each <color=#F74848>10</color> stacks of <buf ID=2021509>[Collective Advantage]</buf> increases HMG bullet count by <color=#F74848>+1</color>.",
                   "SkillIcon": "Icon_skill_passive_5307",
                   "icon": "Icon_skill_passive_5307"
                 }
@@ -2276,9 +2273,9 @@
               {
                 "MinimumSum": "16",
                 "PassiveSkill": {
-                  "ID": "160573",
+                  "ID": "202146",
                   "name": "Ultimate Prospector 4",
-                  "SpecificEffects": "When other allies inflict <buf ID=182900>[Suppression]</buf> or <buf ID=900034>[Instability]</buf>, Ann also gains <buf ID=160902>[Collective Advantage]</buf>. The maximum number of stacks for <buf ID=160902>[Collective Advantage]</buf> increases to <color=#F74848>30</color>.",
+                  "SpecificEffects": "When other allies inflict <buf ID=1021503>[Suppression]</buf> or <buf ID=900034>[Instability]</buf>, Ann also gains <buf ID=2021509>[Collective Advantage]</buf>. The maximum number of stacks for <buf ID=2021509>[Collective Advantage]</buf> increases to <color=#F74848>30</color>.",
                   "SkillIcon": "Icon_skill_passive_5307",
                   "icon": "Icon_skill_passive_5307"
                 }
@@ -2360,22 +2357,9 @@
           "ID": "1010316012",
           "UnitType": "0",
           "skill": {
-            "ID": "160501",
-            "name": "Electric Eel Penetration",
-            "describe": "Uses a Heavy Machine Gun to attack a target, dealing <color=#F74848>0.9</color>x DMG. Changes to <buf ID=160901>[Electric Eel Stance]</buf> before attacking. If the target has <color=#F74848>3</color> or more stacks of <buf ID=900034>[Instability]</buf>, they cannot retaliate. Otherwise, applies <color=#F74848>2</color> stacks of <buf ID=530572>[Instability III]</buf> to the target, lasting for <color=#F74848>2</color> turns.",
-            "SkillIcon": "Icon_skill_main_1127",
-            "icon": "Icon_skill_main_1127",
-            "Ap": "2",
-            "type": "EquipmentSkill"
-          }
-        },
-        {
-          "ID": "1010316013",
-          "UnitType": "0",
-          "skill": {
-            "ID": "160502",
+            "ID": "202102",
             "name": "GKD Assault",
-            "describe": "Uses a Heavy Machine Gun to attack all targets within a fan-shaped area in front, dealing <color=#F74848>0.45</color>x AoE DMG. Changes to <buf ID=160900>[GKD Stance]</buf> and applies <buf ID=7101701>[Armor Down I]</buf> to all targets before attacking. If a target has <color=#F74848>3</color> or more stacks of <buf ID=182900>[Suppression]</buf>, upgrades <buf ID=7101701>[Armor Down I]</buf> to <buf ID=7101702>[Armor Down II]</buf>.",
+            "describe": "Uses a Heavy Machine Gun to attack all targets within a fan-shaped area in front, dealing <color=#F74848>0.45</color>x AoE DMG. Changes to <buf ID=2021502>[GKD Stance]</buf> and applies <buf ID=7101701>[Armor Down I]</buf> to all targets before attacking. If a target has <color=#F74848>3</color> or more stacks of <buf ID=1021503>[Suppression]</buf>, upgrades <buf ID=7101701>[Armor Down I]</buf> to <buf ID=7101702>[Armor Down II]</buf>.",
             "SkillIcon": "Icon_skill_order_1010",
             "icon": "Icon_skill_order_1010",
             "Ap": "3",
@@ -2383,61 +2367,21 @@
           }
         },
         {
-          "ID": "1010316014",
+          "ID": "1010316013",
           "UnitType": "0",
           "skill": {
-            "ID": "160503",
-            "name": "Concussive Shot",
-            "describe": "Uses a Heavy Machine Gun to attack a target, <color=#F74848>1.25</color>x DMG. If the target has <color=#F74848>5</color> or more stacks of <buf ID=900034>[Instability]</buf> after combat, removes all stacks and inflicts <buf ID=160903>[Structural Instability]</buf>.",
-            "SkillIcon": "Icon_skill_main_1140",
-            "icon": "Icon_skill_main_1140",
-            "Ap": "3",
-            "type": "EquipmentSkill"
-          }
-        },
-        {
-          "ID": "1010316015",
-          "UnitType": "0",
-          "skill": {
-            "ID": "160504",
-            "name": "Suppressive Fire",
-            "describe": "Uses a Heavy Machine Gun to attack a target, <color=#F74848>1.4</color>x DMG. Inflicts <color=#F74848>2</color> stacks of <buf ID=182900>[Suppression]</buf> before combat. After combat, if the target has <color=#F74848>5</color> or more stacks of <buf ID=182900>[Suppression]</buf>, additionally inflicts <buf ID=160904>[GKD Mark]</buf>.",
-            "SkillIcon": "Icon_skill_main_1177",
-            "icon": "Icon_skill_main_1177",
-            "Ap": "4",
-            "type": "EquipmentSkill"
-          }
-        },
-        {
-          "ID": "1010316016",
-          "UnitType": "0",
-          "skill": {
-            "ID": "160505",
-            "name": "Team Rally",
-            "describe": "Selects any ally to grant them <buf ID=160905>[GKD Support]</buf> or <buf ID=160906>[Electric Eel Support]</buf> for <color=#F74848>2</color> turns. This unit enters <buf ID=900154>[Pending Activation]</buf> state and gains <buf ID=900155>[Activation]</buf> after selected ally takes action.",
-            "SkillIcon": "Icon_skill_order_5164",
-            "icon": "Icon_skill_order_5164",
-            "Ap": "0",
-            "CD": "3",
-            "type": "Order"
-          }
-        },
-        {
-          "ID": "1010316017",
-          "UnitType": "0",
-          "skill": {
-            "ID": "160506",
+            "ID": "202103",
             "name": "Team Spirit",
-            "SpecificEffects": "At the start of action, if there are other members from GKD or Electric Eel within <color=#F74848>4</color> adjacent tiles, gains <color=#F74848>5</color> stacks of <buf ID=160902>[Collective Advantage]</buf>.",
+            "SpecificEffects": "At the start of action, if there are other members from GKD or Electric Eel within <color=#F74848>4</color> adjacent tiles, gains <color=#F74848>5</color> stacks of <buf ID=2021509>[Collective Advantage]</buf>.",
             "SkillIcon": "Icon_skill_passive_5305",
             "icon": "Icon_skill_passive_5305"
           }
         },
         {
-          "ID": "1010316018",
+          "ID": "1010316014",
           "UnitType": "0",
           "skill": {
-            "ID": "160507",
+            "ID": "202104",
             "name": "Dual Stance Synergy",
             "SpecificEffects": "When other allies from GKD or Electric Eel initiates combat, uses Heavy Machine Gun to launch a <buf ID=900002>[Link Attack]</buf>, dealing <color=#F74848>0.3</color>x DMG. This effect can trigger <color=#F74848>2</color> times per turn.",
             "SkillIcon": "Icon_skill_passive_5152",
@@ -2445,14 +2389,54 @@
           }
         },
         {
-          "ID": "1010316036",
+          "ID": "1010316015",
           "UnitType": "0",
           "skill": {
-            "ID": "160508",
+            "ID": "202105",
+            "name": "Concussive Shot",
+            "describe": "Uses a Heavy Machine Gun to attack a target, <color=#F74848>1.25</color>x DMG. If the target has <color=#F74848>5</color> or more stacks of <buf ID=900034>[Instability]</buf> after combat, removes all stacks and inflicts <buf ID=2021050>[Structural Instability]</buf>.",
+            "SkillIcon": "Icon_skill_main_1140",
+            "icon": "Icon_skill_main_1140",
+            "Ap": "3",
+            "type": "EquipmentSkill"
+          }
+        },
+        {
+          "ID": "1010316016",
+          "UnitType": "0",
+          "skill": {
+            "ID": "202106",
+            "name": "Suppressive Fire",
+            "describe": "Uses a Heavy Machine Gun to attack a target, <color=#F74848>1.4</color>x DMG. Inflicts <color=#F74848>2</color> stacks of <buf ID=1021503>[Suppression]</buf> before combat. After combat, if the target has <color=#F74848>5</color> or more stacks of <buf ID=1021503>[Suppression]</buf>, additionally inflicts <buf ID=2021062>[GKD Mark]</buf>.",
+            "SkillIcon": "Icon_skill_main_1177",
+            "icon": "Icon_skill_main_1177",
+            "Ap": "4",
+            "type": "EquipmentSkill"
+          }
+        },
+        {
+          "ID": "1010316017",
+          "UnitType": "0",
+          "skill": {
+            "ID": "202107",
             "name": "Optimistic Side",
             "SpecificEffects": "When switching to a new stance, gains a random buff, lasting for <color=#F74848>2</color> turns. When this effect is triggered for the first time each turn, reduces AP cost of the next active attack by <color=#F74848>1</color>.",
             "SkillIcon": "Icon_skill_passive_5306",
             "icon": "Icon_skill_passive_5306"
+          }
+        },
+        {
+          "ID": "1010316018",
+          "UnitType": "0",
+          "skill": {
+            "ID": "202108",
+            "name": "Team Rally",
+            "describe": "Selects any ally to grant them <buf ID=2021081>[GKD Support]</buf> or <buf ID=2021083>[Electric Eel Support]</buf> for <color=#F74848>2</color> turns. This unit enters <buf ID=900154>[Pending Activation]</buf> state and gains <buf ID=900155>[Activation]</buf> after selected ally takes action.",
+            "SkillIcon": "Icon_skill_order_5164",
+            "icon": "Icon_skill_order_5164",
+            "Ap": "0",
+            "CD": "3",
+            "type": "Order"
           }
         },
         {
@@ -2556,6 +2540,16 @@
         "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
       },
       "version": "3.3",
+      "hiddenSkills": [
+        {
+          "name": "Electric Eel Penetration",
+          "icon": "Icon_skill_main_1127",
+          "type": "EquipmentSkill",
+          "Ap": "2",
+          "CD": "",
+          "describe": "Uses a Heavy Machine Gun to attack a target, dealing <color=#F74848>0.9</color>x DMG. Changes to <buf ID=2021503>[Electric Eel Stance]</buf> before attacking. If the target has <color=#F74848>3</color> or more stacks of <buf ID=900034>[Instability]</buf>, they cannot retaliate. Otherwise, applies <color=#F74848>2</color> stacks of <buf ID=530572>[Instability III]</buf> to the target, lasting for <color=#F74848>2</color> turns."
+        }
+      ],
       "statRanks": {
         "Combat": 51,
         "Shooting": 39,
@@ -4628,16 +4622,16 @@
       "Occupation": "Guardian",
       "quality": "SSR",
       "Talent0_2Ability": {
-        "ID": "167550",
+        "ID": "601250",
         "name": "Punisher",
-        "SpecificEffects": "Can use command skill <skill ID=167950>[Limit Break]</skill>. Carries <buf ID=167903>[Assault Field]</buf> aura.",
+        "SpecificEffects": "Can use command skill <skill ID=6012501>[Limit Break]</skill>. Carries <buf ID=900173>[Assault Field]</buf> aura.",
         "SkillIcon": "Icon_skill_talent_5166",
         "icon": "Icon_skill_talent_5166"
       },
       "Talent3_5Ability": {
-        "ID": "167551",
+        "ID": "601251",
         "name": "Punisher",
-        "SpecificEffects": "Can use command skill <skill ID=167950>[Limit Break]</skill>. Carries <buf ID=167903>[Assault Field]</buf> aura.\n<buf ID=900022>[Guard]</buf> range increases to <color=#F74848>2</color> tiles. Using <skill ID=167950>[Limit Break]</skill> additionally grants <buf ID=167905>[Rampage]</buf> effect.",
+        "SpecificEffects": "Can use command skill <skill ID=6012501>[Limit Break]</skill>. Carries <buf ID=900173>[Assault Field]</buf> aura.\n<buf ID=900022>[Guard]</buf> range increases to <color=#F74848>2</color> tiles. Using <skill ID=6012501>[Limit Break]</skill> additionally grants <buf ID=167905>[Rampage]</buf> effect.",
         "SkillIcon": "Icon_skill_talent_5166",
         "icon": "Icon_skill_talent_5166"
       },
@@ -4793,9 +4787,9 @@
               {
                 "MinimumSum": "1",
                 "PassiveSkill": {
-                  "ID": "167570",
+                  "ID": "601241",
                   "name": "Undertaker 1",
-                  "SpecificEffects": "When not affected by <buf ID=167900>[Fate Hunt]</buf>, Final DMG Taken reduces by <color=#F74848>20%</color>, AP recovery increases by <color=#F74848>+1</color>. <buf ID=900022>[Guard]</buf> can additionally block Melee attacks.",
+                  "SpecificEffects": "When not affected by <buf ID=6012509>[Fate Hunt]</buf>, Final DMG Taken reduces by <color=#F74848>20%</color>, AP recovery increases by <color=#F74848>+1</color>. <buf ID=900022>[Guard]</buf> can additionally block Melee attacks.",
                   "SkillIcon": "Icon_skill_passive_5309",
                   "icon": "Icon_skill_passive_5309"
                 }
@@ -4823,9 +4817,9 @@
               {
                 "MinimumSum": "10",
                 "PassiveSkill": {
-                  "ID": "167571",
+                  "ID": "601244",
                   "name": "Undertaker 2",
-                  "SpecificEffects": "Gains <color=#F74848>1</color> stack of <buf ID=167906>[Undying]</buf> at the start of battle. Gains <color=#F74848>1</color> stack of <buf ID=167906>[Undying]</buf> for every <color=#F74848>4</color> Machine Gun attacks. This effect can trigger <color=#F74848>2</color> times per turn.",
+                  "SpecificEffects": "Gains <color=#F74848>1</color> stack of <buf ID=6012449>[Undying]</buf> at the start of battle. Gains <color=#F74848>1</color> stack of <buf ID=6012449>[Undying]</buf> for every <color=#F74848>4</color> Machine Gun attacks. This effect can trigger <color=#F74848>2</color> times per turn.",
                   "SkillIcon": "Icon_skill_passive_5309",
                   "icon": "Icon_skill_passive_5309"
                 }
@@ -4833,9 +4827,9 @@
               {
                 "MinimumSum": "13",
                 "PassiveSkill": {
-                  "ID": "167572",
+                  "ID": "601245",
                   "name": "Undertaker 3",
-                  "SpecificEffects": "DMG Dealt increases by <color=#F74848>30%</color> to enemy units within <buf ID=167903>[Assault Field]</buf>.",
+                  "SpecificEffects": "DMG Dealt increases by <color=#F74848>30%</color> to enemy units within <buf ID=900173>[Assault Field]</buf>.",
                   "SkillIcon": "Icon_skill_passive_5309",
                   "icon": "Icon_skill_passive_5309"
                 }
@@ -4843,7 +4837,7 @@
               {
                 "MinimumSum": "16",
                 "PassiveSkill": {
-                  "ID": "167573",
+                  "ID": "601246",
                   "name": "Undertaker 4",
                   "SpecificEffects": "For each <color=#F74848>1</color> attack launched with Machine Gun, Machine Gun bullet count <color=#F74848>+1</color>, up to a maximum of <color=#F74848>4</color>.",
                   "SkillIcon": "Icon_skill_passive_5309",
@@ -4927,21 +4921,18 @@
           "ID": "1010316712",
           "UnitType": "0",
           "skill": {
-            "ID": "167501",
-            "name": "Formation Guard",
-            "describe": "Protects allies within <color=#F74848>2</color> adjacent tiles from Assault and Ranged attacks. Triggers up to <color=#F74848>2</color> times per turn and lasts <color=#F74848>2</color> turns. Additionally, gains <color=#F74848>1</color> stack of <buf ID=167906>[Undying]</buf>.",
-            "SkillIcon": "Icon_skill_order_5110",
-            "icon": "Icon_skill_order_5110",
-            "Ap": "1",
-            "CD": "2",
-            "type": "Order"
+            "ID": "601202",
+            "name": "Judgment Of The Damned",
+            "SpecificEffects": "When an ally initiates combat against an enemy unit within <buf ID=900173>[Assault Field]</buf>, if the target is afflicted with <color=#F74848>3</color> or more debuffs after combat, uses a Machine Gun to launch an attack against that target, dealing <color=#F74848>0.4</color>x DMG and inflicting <color=#F74848>1</color> random debuff on the target for <color=#F74848>2</color> turns. This effect can trigger <color=#F74848>2</color> times per turn.",
+            "SkillIcon": "Icon_skill_passive_5224",
+            "icon": "Icon_skill_passive_5224"
           }
         },
         {
           "ID": "1010316713",
           "UnitType": "0",
           "skill": {
-            "ID": "167502",
+            "ID": "601203",
             "name": "Strike Back",
             "describe": "Uses a Machine Gun to attack a target, dealing <color=#F74848>1.2</color>x DMG and inflicts <color=#F74848>1</color> random debuff for <color=#F74848>2</color> turns. Before combat, deals DMG to all self parts equal to <color=#F74848>20%</color> of their max HP. This effect will not destroy parts. This skill cannot be used if own HP percentage is less than <color=#F74848>30%</color>.",
             "SkillIcon": "Icon_skill_main_1123",
@@ -4954,44 +4945,7 @@
           "ID": "1010316714",
           "UnitType": "0",
           "skill": {
-            "ID": "167503",
-            "name": "Final Burial",
-            "describe": "Uses both Machine Guns to attack a target, dealing <color=#F74848>2x0.5</color> DMG. Inflicts <color=#F74848>1</color> random debuff on the target for <color=#F74848>2</color> turns before combat. This skill multiplier increases by <color=#F74848>0.075</color> for each debuff the target carries, up to a maximum of <color=#F74848>2x1.1</color>. While <buf ID=167900>[Fate Hunt]</buf> is active, additionally inflicts <buf ID=1009083>[Intimidation]</buf> on the target for <color=#F74848>1</color> turn.",
-            "SkillIcon": "Icon_skill_main_1178",
-            "icon": "Icon_skill_main_1178",
-            "Ap": "3",
-            "type": "EquipmentSkill"
-          }
-        },
-        {
-          "ID": "1010316715",
-          "UnitType": "0",
-          "skill": {
-            "ID": "167504",
-            "name": "Kill Zone",
-            "describe": "Uses both Machine Guns to attack, dealing <color=#F74848>2x0.4</color> DMG to all targets within range. Before combat, inflicts <color=#F74848>3</color> random debuffs on all targets for <color=#F74848>2</color> turns. This skill multiplier increases by <color=#F74848>0.15</color> against units carrying <color=#F74848>5</color> or more debuffs. While under the effect of <buf ID=167900>[Fate Hunt]</buf>, this skill ignores enemy armor.",
-            "SkillIcon": "Icon_skill_order_1161",
-            "icon": "Icon_skill_order_1161",
-            "Ap": "4",
-            "type": "SpecialAssault"
-          }
-        },
-        {
-          "ID": "1010316716",
-          "UnitType": "0",
-          "skill": {
-            "ID": "167505",
-            "name": "Judgment Of The Damned",
-            "SpecificEffects": "When an ally initiates combat against an enemy unit within <buf ID=167903>[Assault Field]</buf>, if the target is afflicted with <color=#F74848>3</color> or more debuffs after combat, uses a Machine Gun to launch an attack against that target, dealing <color=#F74848>0.4</color>x DMG and inflicting <color=#F74848>1</color> random debuff on the target for <color=#F74848>2</color> turns. This effect can trigger <color=#F74848>2</color> times per turn.",
-            "SkillIcon": "Icon_skill_passive_5224",
-            "icon": "Icon_skill_passive_5224"
-          }
-        },
-        {
-          "ID": "1010316717",
-          "UnitType": "0",
-          "skill": {
-            "ID": "167506",
+            "ID": "601204",
             "name": "Reversal Cage",
             "SpecificEffects": "After being actively attacked, reflects up to <color=#F74848>5</color> dispellable debuffs on self to the attacker. This effect can trigger <color=#F74848>1</color> time per turn.",
             "SkillIcon": "Icon_skill_passive_1069",
@@ -4999,10 +4953,10 @@
           }
         },
         {
-          "ID": "1010316718",
+          "ID": "1010316715",
           "UnitType": "0",
           "skill": {
-            "ID": "167507",
+            "ID": "601205",
             "name": "Undying Soldier",
             "SpecificEffects": "When any part is destroyed, consumes <color=#F74848>1</color> PP to restore that part to max HP after combat. Gains <color=#F74848>2</color> PP at the start of battle.",
             "SkillIcon": "Icon_skill_pp_1108",
@@ -5011,14 +4965,40 @@
           }
         },
         {
-          "ID": "1010316736",
+          "ID": "1010316716",
           "UnitType": "0",
           "skill": {
-            "ID": "167508",
+            "ID": "601206",
+            "name": "Final Burial",
+            "describe": "Uses both Machine Guns to attack a target, dealing <color=#F74848>2x0.5</color> DMG. Inflicts <color=#F74848>1</color> random debuff on the target for <color=#F74848>2</color> turns before combat. This skill multiplier increases by <color=#F74848>0.075</color> for each debuff the target carries, up to a maximum of <color=#F74848>2x1.1</color>. While <buf ID=6012509>[Fate Hunt]</buf> is active, additionally inflicts <buf ID=1009083>[Intimidation]</buf> on the target for <color=#F74848>1</color> turn.",
+            "SkillIcon": "Icon_skill_main_1178",
+            "icon": "Icon_skill_main_1178",
+            "Ap": "3",
+            "type": "EquipmentSkill"
+          }
+        },
+        {
+          "ID": "1010316717",
+          "UnitType": "0",
+          "skill": {
+            "ID": "601207",
             "name": "Banishment",
-            "SpecificEffects": "All enemies within the range of <buf ID=167903>[Assault Field]</buf> cannot trigger <buf ID=900004>[Re-ATK]</buf>, <buf ID=900005>[Re-Act]</buf> or <buf ID=167907>[Move Again]</buf>. This effect is not applied to targets immune to <buf ID=167908>[Re-Act Prohibition]</buf>.",
+            "SpecificEffects": "All enemies within the range of <buf ID=900173>[Assault Field]</buf> cannot trigger <buf ID=900004>[Re-ATK]</buf>, <buf ID=900005>[Re-Act]</buf> or <buf ID=900012>[Move Again]</buf>. This effect is not applied to targets immune to <buf ID=13000180>[Re-Act Prohibition]</buf>.",
             "SkillIcon": "Icon_skill_passive_5308",
             "icon": "Icon_skill_passive_5308"
+          }
+        },
+        {
+          "ID": "1010316718",
+          "UnitType": "0",
+          "skill": {
+            "ID": "601208",
+            "name": "Kill Zone",
+            "describe": "Uses both Machine Guns to attack, dealing <color=#F74848>2x0.4</color> DMG to all targets within range. Before combat, inflicts <color=#F74848>3</color> random debuffs on all targets for <color=#F74848>2</color> turns. This skill multiplier increases by <color=#F74848>0.15</color> against units carrying <color=#F74848>5</color> or more debuffs. While under the effect of <buf ID=6012509>[Fate Hunt]</buf>, this skill ignores enemy armor.",
+            "SkillIcon": "Icon_skill_order_1161",
+            "icon": "Icon_skill_order_1161",
+            "Ap": "4",
+            "type": "SpecialAssault"
           }
         },
         {
@@ -5122,6 +5102,16 @@
         "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
       },
       "version": "3.4",
+      "hiddenSkills": [
+        {
+          "name": "Formation Guard",
+          "icon": "Icon_skill_order_5110",
+          "type": "Order",
+          "Ap": "1",
+          "CD": "2",
+          "describe": "Protects allies within <color=#F74848>2</color> adjacent tiles from Assault and Ranged attacks. Triggers up to <color=#F74848>2</color> times per turn and lasts <color=#F74848>2</color> turns. Additionally, gains <color=#F74848>1</color> stack of <buf ID=6012449>[Undying]</buf>."
+        }
+      ],
       "statRanks": {
         "Combat": 59,
         "Shooting": 29,
@@ -7202,16 +7192,16 @@
       "Occupation": "Fighter",
       "quality": "SSR",
       "Talent0_2Ability": {
-        "ID": "184550",
+        "ID": "102250",
         "name": "Feather Of Tomorrow",
-        "SpecificEffects": "When equipped with Chainsaw, gains <color=#F74848>1</color> stack of <buf ID=184900>[Edge Momentum]</buf> for each <color=#F74848>1</color> tile moved, up to <color=#F74848>5</color> stacks per action. Upon consuming <buf ID=184900>[Edge Momentum]</buf> to trigger active skill <buf ID=184902>[Breakthrough]</buf>, gains <buf ID=184901>[Razor Feather]</buf> and triggers <buf ID=900004>[Re-ATK]</buf>, allowing movement of <color=#F74848>2</color> tiles before attacking. This effect can trigger <color=#F74848>1</color> time per turn.",
+        "SpecificEffects": "When equipped with Chainsaw, gains <color=#F74848>1</color> stack of <buf ID=1022501>[Edge Momentum]</buf> for each <color=#F74848>1</color> tile moved, up to <color=#F74848>5</color> stacks per action. Upon consuming <buf ID=1022501>[Edge Momentum]</buf> to trigger active skill <buf ID=184902>[Breakthrough]</buf>, gains <buf ID=1022508>[Razor Feather]</buf> and triggers <buf ID=900004>[Re-ATK]</buf>, allowing movement of <color=#F74848>2</color> tiles before attacking. This effect can trigger <color=#F74848>1</color> time per turn.",
         "SkillIcon": "Icon_skill_talent_1126",
         "icon": "Icon_skill_talent_1126"
       },
       "Talent3_5Ability": {
-        "ID": "184551",
+        "ID": "102251",
         "name": "Feather Of Tomorrow",
-        "SpecificEffects": "When equipped with Chainsaw, gains <color=#F74848>1</color> stack of <buf ID=184900>[Edge Momentum]</buf> for each <color=#F74848>1</color> tile moved, up to <color=#F74848>5</color> stacks per action. Upon consuming <buf ID=184900>[Edge Momentum]</buf> to trigger active skill <buf ID=184902>[Breakthrough]</buf>, gains <buf ID=184901>[Razor Feather]</buf> and triggers <buf ID=900004>[Re-ATK]</buf>, allowing movement of <color=#F74848>2</color> tiles before attacking. This effect can trigger <color=#F74848>1</color> time per turn.\nAt the start of battle, gains <color=#F74848>5</color> stacks of <buf ID=184900>[Edge Momentum]</buf> and increases maximum stack limit by <color=#F74848>+5</color>. For each <color=#F74848>50</color> surplus power, DMG Dealt increases by <color=#F74848>+1%</color>, up to <color=#F74848>20%</color>.",
+        "SpecificEffects": "When equipped with Chainsaw, gains <color=#F74848>1</color> stack of <buf ID=1022501>[Edge Momentum]</buf> for each <color=#F74848>1</color> tile moved, up to <color=#F74848>5</color> stacks per action. Upon consuming <buf ID=1022501>[Edge Momentum]</buf> to trigger active skill <buf ID=184902>[Breakthrough]</buf>, gains <buf ID=1022508>[Razor Feather]</buf> and triggers <buf ID=900004>[Re-ATK]</buf>, allowing movement of <color=#F74848>2</color> tiles before attacking. This effect can trigger <color=#F74848>1</color> time per turn.\nAt the start of battle, gains <color=#F74848>5</color> stacks of <buf ID=1022501>[Edge Momentum]</buf> and increases maximum stack limit by <color=#F74848>+5</color>. For each <color=#F74848>50</color> surplus power, DMG Dealt increases by <color=#F74848>+1%</color>, up to <color=#F74848>20%</color>.",
         "SkillIcon": "Icon_skill_talent_1126",
         "icon": "Icon_skill_talent_1126"
       },
@@ -7367,9 +7357,9 @@
               {
                 "MinimumSum": "1",
                 "PassiveSkill": {
-                  "ID": "184570",
+                  "ID": "102241",
                   "name": "Heir Of Danube 1",
-                  "SpecificEffects": "Maximum <buf ID=184900>[Edge Momentum]</buf> stacks gain per action increases to <color=#F74848>8</color>. Talent <buf ID=900004>[Re-ATK]</buf> effect is upgraded to <buf ID=900005>[Re-Act]</buf>.",
+                  "SpecificEffects": "Maximum <buf ID=1022501>[Edge Momentum]</buf> stacks gain per action increases to <color=#F74848>8</color>. Talent <buf ID=900004>[Re-ATK]</buf> effect is upgraded to <buf ID=900005>[Re-Act]</buf>.",
                   "SkillIcon": "Icon_skill_passive_5324",
                   "icon": "Icon_skill_passive_5324"
                 }
@@ -7397,7 +7387,7 @@
               {
                 "MinimumSum": "10",
                 "PassiveSkill": {
-                  "ID": "184571",
+                  "ID": "102244",
                   "name": "Heir Of Danube 2",
                   "SpecificEffects": "When actively attacking, if the target has no destroyed parts, ignores <color=#F74848>25%</color> target's Armor and Critical Hit chance increases by <color=#F74848>10%</color>.",
                   "SkillIcon": "Icon_skill_passive_5324",
@@ -7407,9 +7397,9 @@
               {
                 "MinimumSum": "13",
                 "PassiveSkill": {
-                  "ID": "184572",
+                  "ID": "102245",
                   "name": "Heir Of Danube 3",
-                  "SpecificEffects": "Chainsaw Final DMG Dealt increases by <color=#F74848>10%</color>. When possessing <color=#F74848>3</color> or more stacks of <buf ID=184901>[Razor Feather]</buf>, Chainsaw Final DMG Dealt additionally increases by <color=#F74848>15%</color>.",
+                  "SpecificEffects": "Chainsaw Final DMG Dealt increases by <color=#F74848>10%</color>. When possessing <color=#F74848>3</color> or more stacks of <buf ID=1022508>[Razor Feather]</buf>, Chainsaw Final DMG Dealt additionally increases by <color=#F74848>15%</color>.",
                   "SkillIcon": "Icon_skill_passive_5324",
                   "icon": "Icon_skill_passive_5324"
                 }
@@ -7417,9 +7407,9 @@
               {
                 "MinimumSum": "16",
                 "PassiveSkill": {
-                  "ID": "184573",
+                  "ID": "102246",
                   "name": "Heir Of Danube 4",
-                  "SpecificEffects": "When possessing <color=#F74848>5</color> or more stacks of <buf ID=184900>[Edge Momentum]</buf>, if AP is insufficient to cast any skill, can consume <color=#F74848>5</color> stacks of <buf ID=184900>[Edge Momentum]</buf> to pay for <color=#F74848>1</color> AP cost. This effect can trigger <color=#F74848>2</color> times per turn.",
+                  "SpecificEffects": "When possessing <color=#F74848>5</color> or more stacks of <buf ID=1022501>[Edge Momentum]</buf>, if AP is insufficient to cast any skill, can consume <color=#F74848>5</color> stacks of <buf ID=1022501>[Edge Momentum]</buf> to pay for <color=#F74848>1</color> AP cost. This effect can trigger <color=#F74848>2</color> times per turn.",
                   "SkillIcon": "Icon_skill_passive_5324",
                   "icon": "Icon_skill_passive_5324"
                 }
@@ -7501,22 +7491,31 @@
           "ID": "1010318412",
           "UnitType": "0",
           "skill": {
-            "ID": "184501",
-            "name": "Whirling Sweep",
-            "describe": "Uses Chainsaw to attack all enemies within <color=#F74848>3</color>-tile horizontal area in front, dealing <color=#F74848>0.8</color>x AoE DMG. When <buf ID=184900>[Edge Momentum]</buf> is at <color=#F74848>8</color> stacks or more, this skill multiplier increases by <color=#F74848>+0.1</color>. Can consume <color=#F74848>5</color> stacks of <buf ID=184900>[Edge Momentum]</buf> to increase Critical Hit DMG of this attack by <color=#F74848>+15%</color> and expand the area to half circle in front, prioritizing the part with lowest HP.",
-            "SkillIcon": "Icon_skill_order_1102",
-            "icon": "Icon_skill_order_1102",
-            "Ap": "2",
-            "type": "SpecialAssault"
+            "ID": "102202",
+            "name": "Sharpened Momentum",
+            "SpecificEffects": "When actively attacking with Chainsaw, gains <color=#F74848>1</color> stack of <buf ID=1022501>[Edge Momentum]</buf>. This effect can trigger <color=#F74848>2</color> times per turn.",
+            "SkillIcon": "Icon_skill_passive_5169",
+            "icon": "Icon_skill_passive_5169"
           }
         },
         {
           "ID": "1010318413",
           "UnitType": "0",
           "skill": {
-            "ID": "184502",
+            "ID": "102203",
+            "name": "Mercenary Tempo",
+            "SpecificEffects": "If <buf ID=1022501>[Edge Momentum]</buf> is at <color=#F74848>6</color> stacks or more after an action, gains <color=#F74848>1</color> AP. This effect can trigger <color=#F74848>1</color> time per turn.",
+            "SkillIcon": "Icon_skill_passive_5175",
+            "icon": "Icon_skill_passive_5175"
+          }
+        },
+        {
+          "ID": "1010318414",
+          "UnitType": "0",
+          "skill": {
+            "ID": "102204",
             "name": "Azure Blitz",
-            "describe": "Selects a tile in a straight direction, then selects an end tile in <color=#F74848>3</color> possible directions, covering up to <color=#F74848>4</color> tiles, and dashes to the ending tile. Uses Chainsaw to attack all enemies along the path, dealing <color=#F74848>1.2</color>x AoE DMG. This attack prioritizes the part with lowest HP. When <buf ID=184900>[Edge Momentum]</buf> is at <color=#F74848>8</color> stacks or more, this skill multiplier increases by <color=#F74848>+0.2</color>. Can consume <color=#F74848>5</color> stacks of <buf ID=184900>[Edge Momentum]</buf> to increase the number of selectable tiles by <color=#F74848>+2</color> and change the priority to the part with highest HP.",
+            "describe": "Selects a tile in a straight direction, then selects an end tile in <color=#F74848>3</color> possible directions, covering up to <color=#F74848>4</color> tiles, and dashes to the ending tile. Uses Chainsaw to attack all enemies along the path, dealing <color=#F74848>1.2</color>x AoE DMG. This attack prioritizes the part with lowest HP. When <buf ID=1022501>[Edge Momentum]</buf> is at <color=#F74848>8</color> stacks or more, this skill multiplier increases by <color=#F74848>+0.2</color>. Can consume <color=#F74848>5</color> stacks of <buf ID=1022501>[Edge Momentum]</buf> to increase the number of selectable tiles by <color=#F74848>+2</color> and change the priority to the part with highest HP.",
             "SkillIcon": "Icon_skill_order_1167",
             "icon": "Icon_skill_order_1167",
             "Ap": "3",
@@ -7524,12 +7523,23 @@
           }
         },
         {
-          "ID": "1010318414",
+          "ID": "1010318415",
           "UnitType": "0",
           "skill": {
-            "ID": "184503",
+            "ID": "102205",
+            "name": "Rending Chain",
+            "SpecificEffects": "When actively attacking, if <buf ID=1022501>[Edge Momentum]</buf> is at <color=#F74848>8</color> stacks or more, inflicts <buf ID=1022052>[Laceration]</buf> to the primary target hit.",
+            "SkillIcon": "Icon_skill_passive_5279",
+            "icon": "Icon_skill_passive_5279"
+          }
+        },
+        {
+          "ID": "1010318416",
+          "UnitType": "0",
+          "skill": {
+            "ID": "102206",
             "name": "Raging Tide",
-            "describe": "Gains <color=#F74848>3</color> stacks of <buf ID=184900>[Edge Momentum]</buf> as well as <buf ID=182903>[Phantom]</buf> for <color=#F74848>2</color> turns. Movement increases by <color=#F74848>+1</color> for this turn. Can continue to act with full movement. When <buf ID=184900>[Edge Momentum]</buf> is at <color=#F74848>8</color> stacks or more, additionally gains <color=#F74848>2</color> stacks of <buf ID=184900>[Edge Momentum]</buf> and <color=#F74848>+1</color> extra movement for the current turn.",
+            "describe": "Gains <color=#F74848>3</color> stacks of <buf ID=1022501>[Edge Momentum]</buf> as well as <buf ID=1021032>[Phantom]</buf> for <color=#F74848>2</color> turns. Movement increases by <color=#F74848>+1</color> for this turn. Can continue to act with full movement. When <buf ID=1022501>[Edge Momentum]</buf> is at <color=#F74848>8</color> stacks or more, additionally gains <color=#F74848>2</color> stacks of <buf ID=1022501>[Edge Momentum]</buf> and <color=#F74848>+1</color> extra movement for the current turn.",
             "SkillIcon": "Icon_skill_order_5174",
             "icon": "Icon_skill_order_5174",
             "Ap": "1",
@@ -7538,60 +7548,27 @@
           }
         },
         {
-          "ID": "1010318415",
-          "UnitType": "0",
-          "skill": {
-            "ID": "184504",
-            "name": "Radiant Cleave",
-            "describe": "Uses Chainsaw to attack a main target, dealing <color=#F74848>1.0</color>x DMG, then attacks all enemies within <color=#F74848>1</color> ring AoE around the target, dealing <color=#F74848>0.6</color>x AoE DMG. When <buf ID=184900>[Edge Momentum]</buf> is at <color=#F74848>8</color> stacks or more, this skill multiplier increases by <color=#F74848>+0.1</color>. Can consume <color=#F74848>5</color> stacks of <buf ID=184900>[Edge Momentum]</buf> to make this attack always hit the body, and if the main target's body is at <color=#F74848>50%</color> or higher, additionally deals <buf ID=900017>[Fixed DMG]</buf> equal to <color=#F74848>15%</color> of [Cosette]'s body max HP to all hit enemies' bodies after combat. This <buf ID=900017>[Fixed DMG]</buf> effect can trigger <skill ID=100001>[Mobile Warfare 1]</skill> <buf ID=900004>[Re-ATK]</buf> effect.",
-            "SkillIcon": "Icon_skill_main_1181",
-            "icon": "Icon_skill_main_1181",
-            "Ap": "3",
-            "type": "EquipmentSkill"
-          }
-        },
-        {
-          "ID": "1010318416",
-          "UnitType": "0",
-          "skill": {
-            "ID": "184505",
-            "name": "Sharpened Momentum",
-            "SpecificEffects": "When actively attacking with Chainsaw, gains <color=#F74848>1</color> stack of <buf ID=184900>[Edge Momentum]</buf>. This effect can trigger <color=#F74848>2</color> times per turn.",
-            "SkillIcon": "Icon_skill_passive_5169",
-            "icon": "Icon_skill_passive_5169"
-          }
-        },
-        {
           "ID": "1010318417",
           "UnitType": "0",
           "skill": {
-            "ID": "184506",
-            "name": "Mercenary Tempo",
-            "SpecificEffects": "If <buf ID=184900>[Edge Momentum]</buf> is at <color=#F74848>6</color> stacks or more after an action, gains <color=#F74848>1</color> AP. This effect can trigger <color=#F74848>1</color> time per turn.",
-            "SkillIcon": "Icon_skill_passive_5175",
-            "icon": "Icon_skill_passive_5175"
+            "ID": "102207",
+            "name": "Tactical Compensation",
+            "SpecificEffects": "After consuming <buf ID=1022501>[Edge Momentum]</buf> to trigger <buf ID=184902>[Breakthrough]</buf>, <buf ID=1022501>[Edge Momentum]</buf> will not be reduced at the end of turn.",
+            "SkillIcon": "Icon_skill_passive_5323",
+            "icon": "Icon_skill_passive_5323"
           }
         },
         {
           "ID": "1010318418",
           "UnitType": "0",
           "skill": {
-            "ID": "184507",
-            "name": "Rending Chain",
-            "SpecificEffects": "When actively attacking, if <buf ID=184900>[Edge Momentum]</buf> is at <color=#F74848>8</color> stacks or more, inflicts <buf ID=184903>[Laceration]</buf> to the primary target hit.",
-            "SkillIcon": "Icon_skill_passive_5279",
-            "icon": "Icon_skill_passive_5279"
-          }
-        },
-        {
-          "ID": "1010318436",
-          "UnitType": "0",
-          "skill": {
-            "ID": "184508",
-            "name": "Tactical Compensation",
-            "SpecificEffects": "After consuming <buf ID=184900>[Edge Momentum]</buf> to trigger <buf ID=184902>[Breakthrough]</buf>, <buf ID=184900>[Edge Momentum]</buf> will not be reduced at the end of turn.",
-            "SkillIcon": "Icon_skill_passive_5323",
-            "icon": "Icon_skill_passive_5323"
+            "ID": "102208",
+            "name": "Radiant Cleave",
+            "describe": "Uses Chainsaw to attack a main target, dealing <color=#F74848>1.0</color>x DMG, then attacks all enemies within <color=#F74848>1</color> ring AoE around the target, dealing <color=#F74848>0.6</color>x AoE DMG. When <buf ID=1022501>[Edge Momentum]</buf> is at <color=#F74848>8</color> stacks or more, this skill multiplier increases by <color=#F74848>+0.1</color>. Can consume <color=#F74848>5</color> stacks of <buf ID=1022501>[Edge Momentum]</buf> to make this attack always hit the body, and if the main target's body is at <color=#F74848>50%</color> or higher, additionally deals <buf ID=900017>[Fixed DMG]</buf> equal to <color=#F74848>15%</color> of [Cosette]'s body max HP to all hit enemies' bodies after combat. This <buf ID=900017>[Fixed DMG]</buf> effect can trigger <skill ID=100001>[Mobile Warfare 1]</skill> <buf ID=900004>[Re-ATK]</buf> effect.",
+            "SkillIcon": "Icon_skill_main_1181",
+            "icon": "Icon_skill_main_1181",
+            "Ap": "3",
+            "type": "EquipmentSkill"
           }
         },
         {
@@ -7695,6 +7672,16 @@
         "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
       },
       "version": "3.6",
+      "hiddenSkills": [
+        {
+          "name": "Whirling Sweep",
+          "icon": "Icon_skill_order_1102",
+          "type": "SpecialAssault",
+          "Ap": "2",
+          "CD": "",
+          "describe": "Uses Chainsaw to attack all enemies within <color=#F74848>3</color>-tile horizontal area in front, dealing <color=#F74848>0.8</color>x AoE DMG. When <buf ID=1022501>[Edge Momentum]</buf> is at <color=#F74848>8</color> stacks or more, this skill multiplier increases by <color=#F74848>+0.1</color>. Can consume <color=#F74848>5</color> stacks of <buf ID=1022501>[Edge Momentum]</buf> to increase Critical Hit DMG of this attack by <color=#F74848>+15%</color> and expand the area to half circle in front, prioritizing the part with lowest HP."
+        }
+      ],
       "statRanks": {
         "Combat": 4,
         "Shooting": 45,
@@ -15867,16 +15854,16 @@
       "Occupation": "Fighter",
       "quality": "SSR",
       "Talent0_2Ability": {
-        "ID": "182550",
+        "ID": "102150",
         "name": "GKD One",
-        "SpecificEffects": "At the start of action, or after destroying a part, inflicts <color=#F74848>1</color> stack of <buf ID=182900>[Suppression]</buf> on all enemy units within a <color=#F74848>3</color>-tile radius. When performing an active attack, follow up with <skill ID=182901>[Boundless Hunt]</skill>.",
+        "SpecificEffects": "At the start of action, or after destroying a part, inflicts <color=#F74848>1</color> stack of <buf ID=1021503>[Suppression]</buf> on all enemy units within a <color=#F74848>3</color>-tile radius. When performing an active attack, follow up with <skill ID=1021411>[Boundless Hunt]</skill>.",
         "SkillIcon": "Icon_skill_talent_5164",
         "icon": "Icon_skill_talent_5164"
       },
       "Talent3_5Ability": {
-        "ID": "182551",
+        "ID": "102151",
         "name": "GKD One",
-        "SpecificEffects": "At the start of action, or after destroying a part, inflicts <color=#F74848>1</color> stack of <buf ID=182900>[Suppression]</buf> on all enemy units within a <color=#F74848>3</color>-tile radius. When performing an active attack, follow up with <skill ID=182901>[Boundless Hunt]</skill>.\nAfter actively attacking with a Melee weapon, the AP cost of next Assault weapon attack is reduced by <color=#F74848>1</color>. Inversely, after actively attacking with an Assault weapon, the AP cost of next Melee weapon attack is reduced by <color=#F74848>1</color>. Each effect can reduce cost to a minimum of <color=#F74848>1</color> AP and can trigger <color=#F74848>1</color> times per turn.",
+        "SpecificEffects": "At the start of action, or after destroying a part, inflicts <color=#F74848>1</color> stack of <buf ID=1021503>[Suppression]</buf> on all enemy units within a <color=#F74848>3</color>-tile radius. When performing an active attack, follow up with <skill ID=1021411>[Boundless Hunt]</skill>.\nAfter actively attacking with a Melee weapon, the AP cost of next Assault weapon attack is reduced by <color=#F74848>1</color>. Inversely, after actively attacking with an Assault weapon, the AP cost of next Melee weapon attack is reduced by <color=#F74848>1</color>. Each effect can reduce cost to a minimum of <color=#F74848>1</color> AP and can trigger <color=#F74848>1</color> times per turn.",
         "SkillIcon": "Icon_skill_talent_5164",
         "icon": "Icon_skill_talent_5164"
       },
@@ -15965,9 +15952,9 @@
               {
                 "MinimumSum": "1",
                 "PassiveSkill": {
-                  "ID": "182560",
+                  "ID": "102131",
                   "name": "Gun Heart, Blade Soul 1",
-                  "SpecificEffects": "When initiating combat, if a Critical hit occurs, uses the opposite arm to launch a <skill ID=182902>[Flurry Strike]</skill>, dealing <color=#F74848>0.5</color>x DMG.",
+                  "SpecificEffects": "When initiating combat, if a Critical hit occurs, uses the opposite arm to launch a <buf ID=900001>[Flurry Strike]</buf>, dealing <color=#F74848>0.5</color>x DMG.",
                   "SkillIcon": "Icon_skill_passive_5303",
                   "icon": "Icon_skill_passive_5303"
                 }
@@ -15995,7 +15982,7 @@
               {
                 "MinimumSum": "10",
                 "PassiveSkill": {
-                  "ID": "182561",
+                  "ID": "102134",
                   "name": "Gun Heart, Blade Soul 2",
                   "SpecificEffects": "When initiating combat, if second weapon [Type] is used, increases DMG dealt by <color=#F74848>20%</color> for that weapon.",
                   "SkillIcon": "Icon_skill_passive_5303",
@@ -16005,7 +15992,7 @@
               {
                 "MinimumSum": "13",
                 "PassiveSkill": {
-                  "ID": "182562",
+                  "ID": "102135",
                   "name": "Gun Heart, Blade Soul 3",
                   "SpecificEffects": "When attacked by Melee or Assault weapons, DMG taken is reduced by <color=#F74848>20%</color> and Critical Hit DMG taken is reduced by <color=#F74848>15%</color>.",
                   "SkillIcon": "Icon_skill_passive_5303",
@@ -16015,9 +16002,9 @@
               {
                 "MinimumSum": "16",
                 "PassiveSkill": {
-                  "ID": "182563",
+                  "ID": "102136",
                   "name": "Gun Heart, Blade Soul 4",
-                  "SpecificEffects": "The <skill ID=182902>[Flurry Strike]</skill> multiplier of <skill ID=182560>[Gun Heart, Blade Soul 1]</skill> effect increases to <color=#F74848>1</color>x.",
+                  "SpecificEffects": "The <buf ID=900001>[Flurry Strike]</buf> multiplier of <skill ID=102131>[Gun Heart, Blade Soul 1]</skill> effect increases to <color=#F74848>1</color>x.",
                   "SkillIcon": "Icon_skill_passive_5303",
                   "icon": "Icon_skill_passive_5303"
                 }
@@ -16032,9 +16019,9 @@
               {
                 "MinimumSum": "1",
                 "PassiveSkill": {
-                  "ID": "182570",
+                  "ID": "102141",
                   "name": "Prototype Hyper-Aptamer 1",
-                  "SpecificEffects": "<skill ID=182901>[Boundless Hunt]</skill> DMG multiplier increases to <color=#F74848>0.5</color>x.",
+                  "SpecificEffects": "<skill ID=1021411>[Boundless Hunt]</skill> DMG multiplier increases to <color=#F74848>0.5</color>x.",
                   "SkillIcon": "Icon_skill_passive_5304",
                   "icon": "Icon_skill_passive_5304"
                 }
@@ -16062,9 +16049,9 @@
               {
                 "MinimumSum": "10",
                 "PassiveSkill": {
-                  "ID": "182571",
+                  "ID": "102144",
                   "name": "Prototype Hyper-Aptamer 2",
-                  "SpecificEffects": "When attacking target carrying <buf ID=182900>[Suppression]</buf>, Hit Chance increases by <color=#F74848>10%</color> and Final DMG dealt increases by <color=#F74848>15%</color>. The target cannot be affected by <buf ID=900022>[Guard]</buf> or Large Shield <buf ID=900027>[Target Shift]</buf> during this skirmish.",
+                  "SpecificEffects": "When attacking target carrying <buf ID=1021503>[Suppression]</buf>, Hit Chance increases by <color=#F74848>10%</color> and Final DMG dealt increases by <color=#F74848>15%</color>. The target cannot be affected by <buf ID=900022>[Guard]</buf> or Large Shield <buf ID=900027>[Target Shift]</buf> during this skirmish.",
                   "SkillIcon": "Icon_skill_passive_5304",
                   "icon": "Icon_skill_passive_5304"
                 }
@@ -16072,9 +16059,9 @@
               {
                 "MinimumSum": "13",
                 "PassiveSkill": {
-                  "ID": "182572",
+                  "ID": "102145",
                   "name": "Prototype Hyper-Aptamer 3",
-                  "SpecificEffects": "<skill ID=182901>[Boundless Hunt]</skill> DMG multiplier increases to <color=#F74848>0.75</color>x.",
+                  "SpecificEffects": "<skill ID=1021411>[Boundless Hunt]</skill> DMG multiplier increases to <color=#F74848>0.75</color>x.",
                   "SkillIcon": "Icon_skill_passive_5304",
                   "icon": "Icon_skill_passive_5304"
                 }
@@ -16082,9 +16069,9 @@
               {
                 "MinimumSum": "16",
                 "PassiveSkill": {
-                  "ID": "182573",
+                  "ID": "102146",
                   "name": "Prototype Hyper-Aptamer 4",
-                  "SpecificEffects": "After actively attacking, if <buf ID=900004>[Re-ATK]</buf> is not triggered and there are enemy units within <color=#F74848>3</color> adjacent tiles, inflicts <color=#F74848>1</color> stack of <buf ID=182900>[Suppression]</buf> to all those enemies and gains <color=#F74848>1</color> AP for each <color=#F74848>1</color> stack applied, up to <color=#F74848>3</color> AP, then triggers <buf ID=900005>[Re-Act]</buf>. This effect can trigger <color=#F74848>1</color> time per turn.",
+                  "SpecificEffects": "After actively attacking, if <buf ID=900004>[Re-ATK]</buf> is not triggered and there are enemy units within <color=#F74848>3</color> adjacent tiles, inflicts <color=#F74848>1</color> stack of <buf ID=1021503>[Suppression]</buf> to all those enemies and gains <color=#F74848>1</color> AP for each <color=#F74848>1</color> stack applied, up to <color=#F74848>3</color> AP, then triggers <buf ID=900005>[Re-Act]</buf>. This effect can trigger <color=#F74848>1</color> time per turn.",
                   "SkillIcon": "Icon_skill_passive_5304",
                   "icon": "Icon_skill_passive_5304"
                 }
@@ -16166,58 +16153,6 @@
           "ID": "1010318212",
           "UnitType": "0",
           "skill": {
-            "ID": "182501",
-            "name": "Raging Gale",
-            "describe": "Dash <color=#F74848>3</color> tiles in a selected direction using a Knuckle or Pile Bunker, dealing <color=#F74848>1.2</color>x AoE DMG to all targets hit. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking. Inflicts <color=#F74848>1</color> stack of <buf ID=182900>[Suppression]</buf> to all targets hit as well as all enemy units within <color=#F74848>2</color> adjacent tile of this unit at the end of the movement.",
-            "SkillIcon": "Icon_skill_order_1160",
-            "icon": "Icon_skill_order_1160",
-            "Ap": "3",
-            "type": "SpecialAssault"
-          }
-        },
-        {
-          "ID": "1010318213",
-          "UnitType": "0",
-          "skill": {
-            "ID": "182502",
-            "name": "Shield Breaker",
-            "describe": "Uses a Shotgun firing a slug or a Melee weapon to attack a target, dealing <color=#F74848>0.45</color>x or <color=#F74848>1.1</color>x DMG accordingly. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking.",
-            "SkillIcon": "Icon_skill_main_1174",
-            "icon": "Icon_skill_main_1174",
-            "Ap": "2",
-            "type": "EquipmentSkill"
-          }
-        },
-        {
-          "ID": "1010318214",
-          "UnitType": "0",
-          "skill": {
-            "ID": "182503",
-            "name": "Total Annihilation",
-            "describe": "Uses a Shotgun to attack a target, <color=#F74848>1.3</color>x DMG. For each <color=#F74848>1</color> stack of <buf ID=182900>[Suppression]</buf> carried by enemy units within <color=#F74848>3</color> adjacent tiles of this unit, performs <color=#F74848>1</color> additional attack, dealing <color=#F74848>0.2</color>x DMG, up to <color=#F74848>5</color> additional attacks.",
-            "SkillIcon": "Icon_skill_main_1175",
-            "icon": "Icon_skill_main_1175",
-            "Ap": "4",
-            "type": "EquipmentSkill"
-          }
-        },
-        {
-          "ID": "1010318215",
-          "UnitType": "0",
-          "skill": {
-            "ID": "182504",
-            "name": "Burst Strike",
-            "describe": "Uses a Melee weapon to attack a target, <color=#F74848>1.6</color>x DMG. This attack always hits the body. Then follows up with a Shotgun slug shot, dealing <color=#F74848>0.5</color>x DMG, prioritizing the part with lowest HP percentage. Critical hit rate increases by <color=#F74848>20%</color> for this attack. Inflicts <color=#F74848>2</color> stacks of <buf ID=182900>[Suppression]</buf> on the target before combat. This skill requires both a Melee weapon and a Shotgun to be used.",
-            "SkillIcon": "Icon_skill_main_1176",
-            "icon": "Icon_skill_main_1176",
-            "Ap": "5",
-            "type": "EquipmentSkill"
-          }
-        },
-        {
-          "ID": "1010318216",
-          "UnitType": "0",
-          "skill": {
             "ID": "400902",
             "name": "Ultimate Mastery",
             "SpecificEffects": "When HP is above <color=#F74848>50%</color>, DMG <color=#F74848>+15%</color> and DMG Taken <color=#F74848>-10%</color>.",
@@ -16226,37 +16161,76 @@
           }
         },
         {
+          "ID": "1010318213",
+          "UnitType": "0",
+          "skill": {
+            "ID": "102103",
+            "name": "Fleeting Shadow",
+            "SpecificEffects": "At the end of turn, if there are no enemies carrying <buf ID=1021503>[Suppression]</buf> within <color=#F74848>3</color> adjacent tiles, gains <buf ID=7100901>[Movement UP]</buf> and <buf ID=1021032>[Phantom]</buf> for <color=#F74848>2</color> turns.",
+            "SkillIcon": "Icon_skill_passive_5123",
+            "icon": "Icon_skill_passive_5123"
+          }
+        },
+        {
+          "ID": "1010318214",
+          "UnitType": "0",
+          "skill": {
+            "ID": "102104",
+            "name": "Raging Gale",
+            "describe": "Dash <color=#F74848>3</color> tiles in a selected direction using a Knuckle or Pile Bunker, dealing <color=#F74848>1.2</color>x AoE DMG to all targets hit. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking. Inflicts <color=#F74848>1</color> stack of <buf ID=1021503>[Suppression]</buf> to all targets hit as well as all enemy units within <color=#F74848>2</color> adjacent tile of this unit at the end of the movement.",
+            "SkillIcon": "Icon_skill_order_1160",
+            "icon": "Icon_skill_order_1160",
+            "Ap": "3",
+            "type": "SpecialAssault"
+          }
+        },
+        {
+          "ID": "1010318215",
+          "UnitType": "0",
+          "skill": {
+            "ID": "102105",
+            "name": "Weakness Hunt",
+            "SpecificEffects": "When attacking target carrying <buf ID=1021503>[Suppression]</buf>, if there is a part with less than <color=#F74848>50%</color> max HP, ignores all target's DMG Reduction effects.",
+            "SkillIcon": "Icon_skill_passive_5317",
+            "icon": "Icon_skill_passive_5317"
+          }
+        },
+        {
+          "ID": "1010318216",
+          "UnitType": "0",
+          "skill": {
+            "ID": "102106",
+            "name": "Total Annihilation",
+            "describe": "Uses a Shotgun to attack a target, <color=#F74848>1.3</color>x DMG. For each <color=#F74848>1</color> stack of <buf ID=1021503>[Suppression]</buf> carried by enemy units within <color=#F74848>3</color> adjacent tiles of this unit, performs <color=#F74848>1</color> additional attack, dealing <color=#F74848>0.2</color>x DMG, up to <color=#F74848>5</color> additional attacks.",
+            "SkillIcon": "Icon_skill_main_1175",
+            "icon": "Icon_skill_main_1175",
+            "Ap": "4",
+            "type": "EquipmentSkill"
+          }
+        },
+        {
           "ID": "1010318217",
           "UnitType": "0",
           "skill": {
-            "ID": "182506",
-            "name": "Fleeting Shadow",
-            "SpecificEffects": "At the end of turn, if there are no enemies carrying <buf ID=182900>[Suppression]</buf> within <color=#F74848>3</color> adjacent tiles, gains <buf ID=7100901>[Movement UP]</buf> and <buf ID=182903>[Phantom]</buf> for <color=#F74848>2</color> turns.",
-            "SkillIcon": "Icon_skill_passive_5123",
-            "icon": "Icon_skill_passive_5123"
+            "ID": "102107",
+            "name": "Tranquil Heart",
+            "SpecificEffects": "After actively attacking an enemy carrying <buf ID=1021503>[Suppression]</buf>, if possesses <color=#F74848>4</color> or less AP, consumes <color=#F74848>1</color> PP to recover <color=#F74848>3</color> AP. This effect can trigger <color=#F74848>1</color> time per turn. Gains <color=#F74848>2</color> PP at the start of battle.",
+            "SkillIcon": "Icon_skill_pp_1107",
+            "icon": "Icon_skill_pp_1107",
+            "resource": "PP"
           }
         },
         {
           "ID": "1010318218",
           "UnitType": "0",
           "skill": {
-            "ID": "182507",
-            "name": "Weakness Hunt",
-            "SpecificEffects": "When attacking target carrying <buf ID=182900>[Suppression]</buf>, if there is a part with less than <color=#F74848>50%</color> max HP, ignores all target's DMG Reduction effects.",
-            "SkillIcon": "Icon_skill_passive_5317",
-            "icon": "Icon_skill_passive_5317"
-          }
-        },
-        {
-          "ID": "1010318236",
-          "UnitType": "0",
-          "skill": {
-            "ID": "182508",
-            "name": "Tranquil Heart",
-            "SpecificEffects": "After actively attacking an enemy carrying <buf ID=182900>[Suppression]</buf>, if possesses <color=#F74848>4</color> or less AP, consumes <color=#F74848>1</color> PP to recover <color=#F74848>3</color> AP. This effect can trigger <color=#F74848>1</color> time per turn. Gains <color=#F74848>2</color> PP at the start of battle.",
-            "SkillIcon": "Icon_skill_pp_1107",
-            "icon": "Icon_skill_pp_1107",
-            "resource": "PP"
+            "ID": "102108",
+            "name": "Burst Strike",
+            "describe": "Uses a Melee weapon to attack a target, <color=#F74848>1.6</color>x DMG. This attack always hits the body. Then follows up with a Shotgun slug shot, dealing <color=#F74848>0.5</color>x DMG, prioritizing the part with lowest HP percentage. Critical hit rate increases by <color=#F74848>20%</color> for this attack. Inflicts <color=#F74848>2</color> stacks of <buf ID=1021503>[Suppression]</buf> on the target before combat. This skill requires both a Melee weapon and a Shotgun to be used.",
+            "SkillIcon": "Icon_skill_main_1176",
+            "icon": "Icon_skill_main_1176",
+            "Ap": "5",
+            "type": "EquipmentSkill"
           }
         },
         {
@@ -16360,6 +16334,16 @@
         "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
       },
       "version": "3.3",
+      "hiddenSkills": [
+        {
+          "name": "Shield Breaker",
+          "icon": "Icon_skill_main_1174",
+          "type": "EquipmentSkill",
+          "Ap": "2",
+          "CD": "",
+          "describe": "Uses a Shotgun firing a slug or a Melee weapon to attack a target, dealing <color=#F74848>0.45</color>x or <color=#F74848>1.1</color>x DMG accordingly. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking."
+        }
+      ],
       "statRanks": {
         "Combat": 1,
         "Shooting": 77,
@@ -17924,16 +17908,16 @@
       "Occupation": "Shifter",
       "quality": "SSR",
       "Talent0_2Ability": {
-        "ID": "173550",
+        "ID": "800250",
         "name": "Mystic Shifting",
-        "SpecificEffects": "Can switch piloted ST between <buf ID=173900>[Mech Form]</buf> and <buf ID=173901>[Cruise Form]</buf>, granting unique effects for each. Gains <color=#F74848>2</color> stacks of <buf ID=173903>[Shift Energy]</buf> at the start of turn and at the start of combat.",
+        "SpecificEffects": "Can switch piloted ST between <buf ID=8002561>[Mech Form]</buf> and <buf ID=8002571>[Cruise Form]</buf>, granting unique effects for each. Gains <color=#F74848>2</color> stacks of <buf ID=8002503>[Shift Energy]</buf> at the start of turn and at the start of combat.",
         "SkillIcon": "Icon_skill_talent_5169",
         "icon": "Icon_skill_talent_5169"
       },
       "Talent3_5Ability": {
-        "ID": "173551",
+        "ID": "800251",
         "name": "Mystic Shifting",
-        "SpecificEffects": "Can switch piloted ST between <buf ID=173900>[Mech Form]</buf> and <buf ID=173901>[Cruise Form]</buf>, granting unique effects for each. Gains <color=#F74848>2</color> stacks of <buf ID=173903>[Shift Energy]</buf> at the start of turn and at the start of combat.\nWhile possessing <buf ID=173903>[Shift Energy]</buf>, Final DMG dealt increases by <color=#F74848>15%</color>.",
+        "SpecificEffects": "Can switch piloted ST between <buf ID=8002561>[Mech Form]</buf> and <buf ID=8002571>[Cruise Form]</buf>, granting unique effects for each. Gains <color=#F74848>2</color> stacks of <buf ID=8002503>[Shift Energy]</buf> at the start of turn and at the start of combat.\nWhile possessing <buf ID=8002503>[Shift Energy]</buf>, Final DMG dealt increases by <color=#F74848>15%</color>.",
         "SkillIcon": "Icon_skill_talent_5169",
         "icon": "Icon_skill_talent_5169"
       },
@@ -17948,9 +17932,9 @@
               {
                 "MinimumSum": "1",
                 "PassiveSkill": {
-                  "ID": "173560",
+                  "ID": "800211",
                   "name": "Configuration Shift 2",
-                  "SpecificEffects": "Gains <color=#F74848>2</color> AP when <buf ID=173904>[Configuration Shift]</buf> is used.",
+                  "SpecificEffects": "Gains <color=#F74848>2</color> AP when <buf ID=900181>[Configuration Shift]</buf> is used.",
                   "SkillIcon": "Icon_skill_passive_5205",
                   "icon": "Icon_skill_passive_5205"
                 }
@@ -17985,9 +17969,9 @@
               {
                 "MinimumSum": "1",
                 "PassiveSkill": {
-                  "ID": "173561",
+                  "ID": "800221",
                   "name": "Configuration Shift 3",
-                  "SpecificEffects": "When breaking a part with an active attack, gains <color=#F74848>1</color> <buf ID=173903>[Shift Energy]</buf>. This effect can trigger <color=#F74848>2</color> times per turn.",
+                  "SpecificEffects": "When breaking a part with an active attack, gains <color=#F74848>1</color> <buf ID=8002503>[Shift Energy]</buf>. This effect can trigger <color=#F74848>2</color> times per turn.",
                   "SkillIcon": "Icon_skill_passive_5205",
                   "icon": "Icon_skill_passive_5205"
                 }
@@ -18022,7 +18006,7 @@
               {
                 "MinimumSum": "1",
                 "PassiveSkill": {
-                  "ID": "173570",
+                  "ID": "800231",
                   "name": "Storm Symbiosis 1",
                   "SpecificEffects": "After actively attacking with Alter-Blade or <buf ID=173909>[Mystic Arc]</buf>, if the part hit is below <color=#F74848>15%</color> HP, triggers the <buf ID=900109>[Execution]</buf> effect, directly destroying that part after combat.",
                   "SkillIcon": "Icon_skill_passive_5316",
@@ -18042,7 +18026,7 @@
               {
                 "MinimumSum": "7",
                 "PassiveSkill": {
-                  "ID": "173571",
+                  "ID": "800233",
                   "name": "Configuration Shift 4",
                   "SpecificEffects": "[Configuration Shift 3] trigger count increases by <color=#F74848>+1</color> time per turn. When attacking, DMG calculation uses the highest pilot attribute.",
                   "SkillIcon": "Icon_skill_passive_5205",
@@ -18052,7 +18036,7 @@
               {
                 "MinimumSum": "10",
                 "PassiveSkill": {
-                  "ID": "173572",
+                  "ID": "800234",
                   "name": "Storm Symbiosis 2",
                   "SpecificEffects": "[Storm Symbiosis 1] part destruction threshold increases to <color=#F74848>25%</color> HP.",
                   "SkillIcon": "Icon_skill_passive_5316",
@@ -18062,7 +18046,7 @@
               {
                 "MinimumSum": "13",
                 "PassiveSkill": {
-                  "ID": "173573",
+                  "ID": "800235",
                   "name": "Storm Symbiosis 3",
                   "SpecificEffects": "Critical Hit chance and Critical Hit DMG of Alter-Blade and <buf ID=173909>[Mystic Arc]</buf> increase by <color=#F74848>10%</color>.",
                   "SkillIcon": "Icon_skill_passive_5316",
@@ -18072,9 +18056,9 @@
               {
                 "MinimumSum": "16",
                 "PassiveSkill": {
-                  "ID": "173574",
+                  "ID": "800236",
                   "name": "Storm Symbiosis 4",
-                  "SpecificEffects": "After using <buf ID=173904>[Configuration Shift]</buf>, refunds <color=#F74848>1</color> <buf ID=173903>[Shift Energy]</buf>. This effect can trigger <color=#F74848>2</color> times per turn.",
+                  "SpecificEffects": "After using <buf ID=900181>[Configuration Shift]</buf>, refunds <color=#F74848>1</color> <buf ID=8002503>[Shift Energy]</buf>. This effect can trigger <color=#F74848>2</color> times per turn.",
                   "SkillIcon": "Icon_skill_passive_5316",
                   "icon": "Icon_skill_passive_5316"
                 }
@@ -18089,7 +18073,7 @@
               {
                 "MinimumSum": "1",
                 "PassiveSkill": {
-                  "ID": "173580",
+                  "ID": "800241",
                   "name": "Star Miracle 1",
                   "SpecificEffects": "Machine Gun and <buf ID=173908>[Night Ember]</buf> bullet count <color=#F74848>+1</color>, additionally increasing by <color=#F74848>+1</color> after each action. This effect is reset at the end of turn.",
                   "SkillIcon": "Icon_skill_passive_5317",
@@ -18119,9 +18103,9 @@
               {
                 "MinimumSum": "10",
                 "PassiveSkill": {
-                  "ID": "173581",
+                  "ID": "800244",
                   "name": "Star Miracle 2",
-                  "SpecificEffects": "Machine Gun and <buf ID=173908>[Night Ember]</buf> range <color=#F74848>+1</color>. While in <buf ID=173901>[Cruise Form]</buf>, <buf ID=173908>[Night Ember]</buf> attacks ignore low obstacles.",
+                  "SpecificEffects": "Machine Gun and <buf ID=173908>[Night Ember]</buf> range <color=#F74848>+1</color>. While in <buf ID=8002571>[Cruise Form]</buf>, <buf ID=173908>[Night Ember]</buf> attacks ignore low obstacles.",
                   "SkillIcon": "Icon_skill_passive_5317",
                   "icon": "Icon_skill_passive_5317"
                 }
@@ -18129,7 +18113,7 @@
               {
                 "MinimumSum": "13",
                 "PassiveSkill": {
-                  "ID": "173582",
+                  "ID": "800245",
                   "name": "Star Miracle 3",
                   "SpecificEffects": "Machine Gun and <buf ID=173908>[Night Ember]</buf> Final DMG dealt increases by <color=#F74848>10%</color>.",
                   "SkillIcon": "Icon_skill_passive_5317",
@@ -18139,7 +18123,7 @@
               {
                 "MinimumSum": "16",
                 "PassiveSkill": {
-                  "ID": "173583",
+                  "ID": "800246",
                   "name": "Star Miracle 4",
                   "SpecificEffects": "After an action, the AP cost of the next action is reduced by <color=#F74848>1</color>, to a minimum of <color=#F74848>1</color>. This effect can trigger <color=#F74848>2</color> times per turn.",
                   "SkillIcon": "Icon_skill_passive_5317",
@@ -18159,7 +18143,7 @@
           "skill": {
             "ID": "173500",
             "name": "Configuration Shift 1",
-            "SpecificEffects": "Can use command skill <buf ID=173904>[Configuration Shift]</buf> after taking an action.",
+            "SpecificEffects": "Can use command skill <buf ID=900181>[Configuration Shift]</buf> after taking an action.",
             "SkillIcon": "Icon_skill_passive_5205",
             "icon": "Icon_skill_passive_5205"
           }
@@ -18223,59 +18207,7 @@
           "ID": "1010317312",
           "UnitType": "0",
           "skill": {
-            "ID": "173501",
-            "name": "Tainted Blade / Shadow Ray",
-            "describe": "Chooses to use either <skill ID=173951>[Tainted Blade]</skill> or <skill ID=173950>[Shadow Ray]</skill>.",
-            "SkillIcon": "Icon_skill_main_1179",
-            "icon": "Icon_skill_main_1179",
-            "Ap": "3",
-            "type": "EquipmentSkill"
-          }
-        },
-        {
-          "ID": "1010317313",
-          "UnitType": "0",
-          "skill": {
-            "ID": "173502",
-            "name": "Star Chaser / Moon Raker",
-            "describe": "Changes to <skill ID=173952>[Star Chaser]</skill> in <buf ID=173900>[Mech Form]</buf> and <skill ID=173953>[Moon Raker]</skill> in <buf ID=173901>[Cruise Form]</buf>.",
-            "SkillIcon": "Icon_skill_order_1164",
-            "icon": "Icon_skill_order_1164",
-            "Ap": "3",
-            "type": "SpecialAssault"
-          }
-        },
-        {
-          "ID": "1010317314",
-          "UnitType": "0",
-          "skill": {
-            "ID": "173505",
-            "name": "Void Crown / Falling Sky",
-            "describe": "Chooses to use either <skill ID=173954>[Void Crown]</skill> or <skill ID=173955>[Falling Sky]</skill>.",
-            "SkillIcon": "Icon_skill_order_1165",
-            "icon": "Icon_skill_order_1165",
-            "Ap": "4",
-            "type": "SpecialAssault"
-          }
-        },
-        {
-          "ID": "1010317315",
-          "UnitType": "0",
-          "skill": {
-            "ID": "173506",
-            "name": "Sky's Edge / Night Requiem",
-            "describe": "Changes to <skill ID=173956>[Night Requiem]</skill> in <buf ID=173900>[Mech Form]</buf> and <skill ID=173957>[Sky's Edge]</skill> in <buf ID=173901>[Cruise Form]</buf>.",
-            "SkillIcon": "Icon_skill_main_1150",
-            "icon": "Icon_skill_main_1150",
-            "Ap": "4",
-            "type": "EquipmentSkill"
-          }
-        },
-        {
-          "ID": "1010317316",
-          "UnitType": "0",
-          "skill": {
-            "ID": "173503",
+            "ID": "800202",
             "name": "Reflective Link",
             "SpecificEffects": "When equipped with both Alter-Blade and Machine Gun, <color=#F74848>25%</color> of the Machine Gun's weapon Crit is added to the Alter-Blade, and <color=#F74848>25%</color> of the Alter-Blade's weapon Hit is added to the Machine Gun.",
             "SkillIcon": "Icon_skill_passive_4135",
@@ -18283,37 +18215,76 @@
           }
         },
         {
-          "ID": "1010317317",
+          "ID": "1010317313",
           "UnitType": "0",
           "skill": {
-            "ID": "173504",
+            "ID": "800203",
             "name": "Shadow Evasion",
-            "SpecificEffects": "In <buf ID=173901>[Cruise Form]</buf>, when actively attacked by a Ranged weapon or Missile, completely dodges the attack. This effect can trigger <color=#F74848>1</color> time per turn.",
+            "SpecificEffects": "In <buf ID=8002571>[Cruise Form]</buf>, when actively attacked by a Ranged weapon or Missile, completely dodges the attack. This effect can trigger <color=#F74848>1</color> time per turn.",
             "SkillIcon": "Icon_skill_passive_4134",
             "icon": "Icon_skill_passive_4134"
           }
         },
         {
-          "ID": "1010317318",
+          "ID": "1010317314",
           "UnitType": "0",
           "skill": {
-            "ID": "173507",
+            "ID": "800204",
+            "name": "Star Chaser / Moon Raker",
+            "describe": "Changes to <skill ID=8002041>[Star Chaser]</skill> in <buf ID=8002561>[Mech Form]</buf> and <skill ID=8002042>[Moon Raker]</skill> in <buf ID=8002571>[Cruise Form]</buf>.",
+            "SkillIcon": "Icon_skill_order_1164",
+            "icon": "Icon_skill_order_1164",
+            "Ap": "3",
+            "type": "SpecialAssault"
+          }
+        },
+        {
+          "ID": "1010317315",
+          "UnitType": "0",
+          "skill": {
+            "ID": "800205",
             "name": "Reversion",
-            "SpecificEffects": "When any part is destroyed, consumes <color=#F74848>1</color> PP after combat to restore that part to <color=#F74848>50%</color> of max HP and gains <buf ID=173905>[Steady Guard]</buf>. Gains <color=#F74848>2</color> PP at the start of battle.",
+            "SpecificEffects": "When any part is destroyed, consumes <color=#F74848>1</color> PP after combat to restore that part to <color=#F74848>50%</color> of max HP and gains <buf ID=8002059>[Steady Guard]</buf>. Gains <color=#F74848>2</color> PP at the start of battle.",
             "SkillIcon": "Icon_skill_pp_1110",
             "icon": "Icon_skill_pp_1110",
             "resource": "PP"
           }
         },
         {
-          "ID": "1010317336",
+          "ID": "1010317316",
           "UnitType": "0",
           "skill": {
-            "ID": "173508",
+            "ID": "800206",
+            "name": "Void Crown / Falling Sky",
+            "describe": "Chooses to use either <skill ID=8002061>[Void Crown]</skill> or <skill ID=8002062>[Falling Sky]</skill>.",
+            "SkillIcon": "Icon_skill_order_1165",
+            "icon": "Icon_skill_order_1165",
+            "Ap": "4",
+            "type": "SpecialAssault"
+          }
+        },
+        {
+          "ID": "1010317317",
+          "UnitType": "0",
+          "skill": {
+            "ID": "800207",
             "name": "Shifting Radiance",
-            "SpecificEffects": "After each <buf ID=173904>[Configuration Shift]</buf>, <buf ID=173900>[Mech Form]</buf> gains <buf ID=173906>[Offense Boost]</buf> and <buf ID=173901>[Cruise Form]</buf> gains <buf ID=173907>[Evasion Boost]</buf>.",
+            "SpecificEffects": "After each <buf ID=900181>[Configuration Shift]</buf>, <buf ID=8002561>[Mech Form]</buf> gains <buf ID=8002073>[Offense Boost]</buf> and <buf ID=8002571>[Cruise Form]</buf> gains <buf ID=8002074>[Evasion Boost]</buf>.",
             "SkillIcon": "Icon_skill_passive_4127",
             "icon": "Icon_skill_passive_4127"
+          }
+        },
+        {
+          "ID": "1010317318",
+          "UnitType": "0",
+          "skill": {
+            "ID": "800208",
+            "name": "Sky's Edge / Night Requiem",
+            "describe": "Changes to <skill ID=8002081>[Night Requiem]</skill> in <buf ID=8002561>[Mech Form]</buf> and <skill ID=8002082>[Sky's Edge]</skill> in <buf ID=8002571>[Cruise Form]</buf>.",
+            "SkillIcon": "Icon_skill_main_1150",
+            "icon": "Icon_skill_main_1150",
+            "Ap": "4",
+            "type": "EquipmentSkill"
           }
         },
         {
@@ -18419,6 +18390,16 @@
         "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
       },
       "version": "3.5",
+      "hiddenSkills": [
+        {
+          "name": "Tainted Blade / Shadow Ray",
+          "icon": "Icon_skill_main_1179",
+          "type": "EquipmentSkill",
+          "Ap": "3",
+          "CD": "",
+          "describe": "Chooses to use either <skill ID=8002011>[Tainted Blade]</skill> or <skill ID=8002012>[Shadow Ray]</skill>."
+        }
+      ],
       "statRanks": {
         "Combat": 6,
         "Shooting": 40,
@@ -21009,16 +20990,16 @@
       "Occupation": "Raider",
       "quality": "SSR",
       "Talent0_2Ability": {
-        "ID": "187550",
+        "ID": "202350",
         "name": "Deathbound Wanderer",
-        "SpecificEffects": "When equipped with <color=#F74848>2</color> Shotguns, can perform <skill ID=187950>[Dual Shotgun Attack]</skill>, <skill ID=187951>[Dual Shotgun Flurry Strike]</skill>, <skill ID=187952>[Dual Shotgun Retaliation]</skill> and <skill ID=187953>[Dual Shotgun Link Attack]</skill>. Each attack grants <color=#F74848>1</color> stack of <buf ID=187900>[Predation]</buf>, up to <color=#F74848>30</color> stacks. When initiating combat, if the distance to the target is <color=#F74848>1</color> tile, can trigger <buf ID=900005>[Re-Act]</buf> after combat (up to <color=#F74848>1</color> time per turn).",
+        "SpecificEffects": "When equipped with <color=#F74848>2</color> Shotguns, can perform <skill ID=2023501>[Dual Shotgun Attack]</skill>, <skill ID=2023502>[Dual Shotgun Flurry Strike]</skill>, <skill ID=2023503>[Dual Shotgun Retaliation]</skill> and <skill ID=2023504>[Dual Shotgun Link Attack]</skill>. Each attack grants <color=#F74848>1</color> stack of <buf ID=900189>[Predation]</buf>, up to <color=#F74848>30</color> stacks. When initiating combat, if the distance to the target is <color=#F74848>1</color> tile, can trigger <buf ID=900005>[Re-Act]</buf> after combat (up to <color=#F74848>1</color> time per turn).",
         "SkillIcon": "Icon_skill_talent_5171",
         "icon": "Icon_skill_talent_5171"
       },
       "Talent3_5Ability": {
-        "ID": "187551",
+        "ID": "202351",
         "name": "Deathbound Wanderer",
-        "SpecificEffects": "When equipped with <color=#F74848>2</color> Shotguns, can perform <skill ID=187950>[Dual Shotgun Attack]</skill>, <skill ID=187951>[Dual Shotgun Flurry Strike]</skill>, <skill ID=187952>[Dual Shotgun Retaliation]</skill> and <skill ID=187953>[Dual Shotgun Link Attack]</skill>. Each attack grants <color=#F74848>1</color> stack of <buf ID=187900>[Predation]</buf>, up to <color=#F74848>30</color> stacks. When initiating combat, if the distance to the target is <color=#F74848>1</color> tile, can trigger <buf ID=900005>[Re-Act]</buf> after combat (up to <color=#F74848>1</color> time per turn).\nAt the start of battle, gains <color=#F74848>5</color> stacks of <buf ID=187900>[Predation]</buf>. Movement ignores unit collision.",
+        "SpecificEffects": "When equipped with <color=#F74848>2</color> Shotguns, can perform <skill ID=2023501>[Dual Shotgun Attack]</skill>, <skill ID=2023502>[Dual Shotgun Flurry Strike]</skill>, <skill ID=2023503>[Dual Shotgun Retaliation]</skill> and <skill ID=2023504>[Dual Shotgun Link Attack]</skill>. Each attack grants <color=#F74848>1</color> stack of <buf ID=900189>[Predation]</buf>, up to <color=#F74848>30</color> stacks. When initiating combat, if the distance to the target is <color=#F74848>1</color> tile, can trigger <buf ID=900005>[Re-Act]</buf> after combat (up to <color=#F74848>1</color> time per turn).\nAt the start of battle, gains <color=#F74848>5</color> stacks of <buf ID=900189>[Predation]</buf>. Movement ignores unit collision.",
         "SkillIcon": "Icon_skill_talent_5171",
         "icon": "Icon_skill_talent_5171"
       },
@@ -21174,7 +21155,7 @@
               {
                 "MinimumSum": "1",
                 "PassiveSkill": {
-                  "ID": "187570",
+                  "ID": "202341",
                   "name": "Predator Elite 1",
                   "SpecificEffects": "Talent's <buf ID=900005>[Re-Act]</buf> trigger count <color=#F74848>+1</color>.",
                   "SkillIcon": "Icon_skill_passive_5329",
@@ -21204,9 +21185,9 @@
               {
                 "MinimumSum": "10",
                 "PassiveSkill": {
-                  "ID": "187571",
+                  "ID": "202344",
                   "name": "Predator Elite 2",
-                  "SpecificEffects": "When initiating combat, if the distance to the target is <color=#F74848>1</color> tile, triggers <skill ID=187951>[Dual Shotgun Flurry Strike]</skill>, up to <color=#F74848>2</color> times per turn.",
+                  "SpecificEffects": "When initiating combat, if the distance to the target is <color=#F74848>1</color> tile, triggers <skill ID=2023502>[Dual Shotgun Flurry Strike]</skill>, up to <color=#F74848>2</color> times per turn.",
                   "SkillIcon": "Icon_skill_passive_5329",
                   "icon": "Icon_skill_passive_5329"
                 }
@@ -21214,9 +21195,9 @@
               {
                 "MinimumSum": "13",
                 "PassiveSkill": {
-                  "ID": "187572",
+                  "ID": "202345",
                   "name": "Predator Elite 3",
-                  "SpecificEffects": "Each stack of <buf ID=187900>[Predation]</buf> additionally grants <color=#F74848>1%</color> Critical Hit chance.",
+                  "SpecificEffects": "Each stack of <buf ID=900189>[Predation]</buf> additionally grants <color=#F74848>1%</color> Critical Hit chance.",
                   "SkillIcon": "Icon_skill_passive_5329",
                   "icon": "Icon_skill_passive_5329"
                 }
@@ -21224,7 +21205,7 @@
               {
                 "MinimumSum": "16",
                 "PassiveSkill": {
-                  "ID": "187573",
+                  "ID": "202346",
                   "name": "Predator Elite 4",
                   "SpecificEffects": "After performing <color=#F74848>2</color> [Basic Attack], [Basic Attack] AP cost is reduced by <color=#F74848>-1</color> for that turn, to a minimum of <color=#F74848>1</color> AP. This effect resets at the end of action.",
                   "SkillIcon": "Icon_skill_passive_5329",
@@ -21308,22 +21289,31 @@
           "ID": "1010318712",
           "UnitType": "0",
           "skill": {
-            "ID": "187501",
-            "name": "No Forgiveness - No Mercy",
-            "describe": "Uses both Shotguns to simultaneously attack a target, dealing <color=#F74848>2x0.65</color> DMG. For each <color=#F74848>1</color> stack of <buf ID=187900>[Predation]</buf>, this skill's multiplier increases by <color=#F74848>0.01</color>x. For each <color=#F74848>1</color> [Basic Attack] performed during the current turn, this skill's AP cost is reduced by <color=#F74848>-1</color>, to a minimum of <color=#F74848>1</color>. The AP cost resets after use.",
-            "SkillIcon": "Icon_skill_main_1182",
-            "icon": "Icon_skill_main_1182",
-            "Ap": "4",
-            "type": "EquipmentSkill"
+            "ID": "202302",
+            "name": "Piercing Mastery",
+            "SpecificEffects": "After performing a [Basic Attack], Critical Hit DMG <color=#F74848>+5%</color>, stacking up to <color=#F74848>5</color> times. Stacks last until the end of action.",
+            "SkillIcon": "Icon_skill_passive_5015",
+            "icon": "Icon_skill_passive_5015"
           }
         },
         {
           "ID": "1010318713",
           "UnitType": "0",
           "skill": {
-            "ID": "187502",
+            "ID": "202303",
+            "name": "Shadow Raven Stride",
+            "SpecificEffects": "When a [Basic Attack] lands a Critical Hit, gains Movement <color=#F74848>+1</color> for <color=#F74848>2</color> turns, stacking up to <color=#F74848>2</color> times.",
+            "SkillIcon": "Icon_skill_passive_5329",
+            "icon": "Icon_skill_passive_5329"
+          }
+        },
+        {
+          "ID": "1010318714",
+          "UnitType": "0",
+          "skill": {
+            "ID": "202304",
             "name": "Predator Rite",
-            "describe": "Gains <color=#F74848>5</color> stacks of <buf ID=187900>[Predation]</buf> and <color=#F74848>2</color> AP. Can move up to <color=#F74848>2</color> tiles after use and can attack after moving.",
+            "describe": "Gains <color=#F74848>5</color> stacks of <buf ID=900189>[Predation]</buf> and <color=#F74848>2</color> AP. Can move up to <color=#F74848>2</color> tiles after use and can attack after moving.",
             "SkillIcon": "Icon_skill_order_5178",
             "icon": "Icon_skill_order_5178",
             "Ap": "0",
@@ -21332,12 +21322,12 @@
           }
         },
         {
-          "ID": "1010318714",
+          "ID": "1010318715",
           "UnitType": "0",
           "skill": {
-            "ID": "187503",
+            "ID": "202305",
             "name": "Blood Oath",
-            "describe": "Gains <buf ID=187901>[Blood Pact]</buf> for <color=#F74848>1</color> turn. Can continue to act with remaining movement.",
+            "describe": "Gains <buf ID=2023051>[Blood Pact]</buf> for <color=#F74848>1</color> turn. Can continue to act with remaining movement.",
             "SkillIcon": "Icon_skill_order_5179",
             "icon": "Icon_skill_order_5179",
             "Ap": "0",
@@ -21346,10 +21336,22 @@
           }
         },
         {
-          "ID": "1010318715",
+          "ID": "1010318716",
           "UnitType": "0",
           "skill": {
-            "ID": "187504",
+            "ID": "202306",
+            "name": "Final Pursuit",
+            "SpecificEffects": "When the body takes lethal DMG, consumes <color=#F74848>1</color> PP to restore the body to <color=#F74848>20%</color> of max HP, recovers <color=#F74848>5</color> AP and gains <buf ID=2023065>[Last Whisper]</buf>. This effect has a <color=#F74848>3</color>-turn trigger interval. Gains <color=#F74848>2</color> PP at the start of battle.",
+            "SkillIcon": "Icon_skill_pp_1111",
+            "icon": "Icon_skill_pp_1111",
+            "resource": "PP"
+          }
+        },
+        {
+          "ID": "1010318717",
+          "UnitType": "0",
+          "skill": {
+            "ID": "202307",
             "name": "Calamity Covenant",
             "SpecificEffects": "For each <color=#F74848>15%</color> HP lost before the attack, DMG Dealt increases by <color=#F74848>10%</color>, up to <color=#F74848>40%</color>.",
             "SkillIcon": "Icon_skill_passive_5320",
@@ -21357,48 +21359,16 @@
           }
         },
         {
-          "ID": "1010318716",
-          "UnitType": "0",
-          "skill": {
-            "ID": "187505",
-            "name": "Shadow Raven Stride",
-            "SpecificEffects": "When a [Basic Attack] lands a Critical Hit, gains Movement <color=#F74848>+1</color> for <color=#F74848>2</color> turns, stacking up to <color=#F74848>2</color> times.",
-            "SkillIcon": "Icon_skill_passive_5329",
-            "icon": "Icon_skill_passive_5329"
-          }
-        },
-        {
-          "ID": "1010318717",
-          "UnitType": "0",
-          "skill": {
-            "ID": "187506",
-            "name": "Piercing Mastery",
-            "SpecificEffects": "After performing a [Basic Attack], Critical Hit DMG <color=#F74848>+5%</color>, stacking up to <color=#F74848>5</color> times. Stacks last until the end of action.",
-            "SkillIcon": "Icon_skill_passive_5015",
-            "icon": "Icon_skill_passive_5015"
-          }
-        },
-        {
           "ID": "1010318718",
           "UnitType": "0",
           "skill": {
-            "ID": "187507",
-            "name": "TBA",
-            "SpecificEffects": "Not yet available.",
-            "SkillIcon": "",
-            "icon": ""
-          }
-        },
-        {
-          "ID": "1010318736",
-          "UnitType": "0",
-          "skill": {
-            "ID": "187508",
-            "name": "Final Pursuit",
-            "SpecificEffects": "When the body takes lethal DMG, consumes <color=#F74848>1</color> PP to restore the body to <color=#F74848>20%</color> of max HP, recovers <color=#F74848>5</color> AP and gains <buf ID=187902>[Last Whisper]</buf>. This effect has a <color=#F74848>3</color>-turn trigger interval. Gains <color=#F74848>2</color> PP at the start of battle.",
-            "SkillIcon": "Icon_skill_pp_1111",
-            "icon": "Icon_skill_pp_1111",
-            "resource": "PP"
+            "ID": "202308",
+            "name": "No Forgiveness - No Mercy",
+            "describe": "Uses both Shotguns to simultaneously attack a target, dealing <color=#F74848>2x0.65</color> DMG. For each <color=#F74848>1</color> stack of <buf ID=900189>[Predation]</buf>, this skill's multiplier increases by <color=#F74848>0.01</color>x. For each <color=#F74848>1</color> [Basic Attack] performed during the current turn, this skill's AP cost is reduced by <color=#F74848>-1</color>, to a minimum of <color=#F74848>1</color>. The AP cost resets after use.",
+            "SkillIcon": "Icon_skill_main_1182",
+            "icon": "Icon_skill_main_1182",
+            "Ap": "4",
+            "type": "EquipmentSkill"
           }
         },
         {
@@ -21502,6 +21472,16 @@
         "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
       },
       "version": "3.7",
+      "hiddenSkills": [
+        {
+          "name": "Lingering Bloodlust",
+          "icon": "Icon_skill_passive_5175",
+          "type": null,
+          "Ap": "",
+          "CD": "",
+          "SpecificEffects": "After triggering <buf ID=900004>[Re-ATK]</buf>, restores <color=#F74848>1</color> AP. Can only trigger <color=#F74848>1</color> time per turn."
+        }
+      ],
       "statRanks": {
         "Combat": 77,
         "Shooting": 79,
@@ -22555,16 +22535,16 @@
       "Occupation": "Tactician",
       "quality": "SSR",
       "Talent0_2Ability": {
-        "ID": "175550",
+        "ID": "401350",
         "name": "Truth Seeker",
-        "SpecificEffects": "When any unit on the field takes percentage <buf ID=900017>[Fixed DMG]</buf>, gains <color=#F74848>2</color> stacks of <buf ID=175900>[Effective Data]</buf>. When an ally triggers <buf ID=175902>[Percentage HP Reduction]</buf>, gains <color=#F74848>4</color> stacks of <buf ID=175900>[Effective Data]</buf>.",
+        "SpecificEffects": "When any unit on the field takes percentage <buf ID=900017>[Fixed DMG]</buf>, gains <color=#F74848>2</color> stacks of <buf ID=4013502>[Effective Data]</buf>. When an ally triggers <buf ID=900177>[Percentage HP Reduction]</buf>, gains <color=#F74848>4</color> stacks of <buf ID=4013502>[Effective Data]</buf>.",
         "SkillIcon": "Icon_skill_talent_5167",
         "icon": "Icon_skill_talent_5167"
       },
       "Talent3_5Ability": {
-        "ID": "175551",
+        "ID": "401351",
         "name": "Truth Seeker",
-        "SpecificEffects": "When any unit on the field takes percentage <buf ID=900017>[Fixed DMG]</buf>, gains <color=#F74848>2</color> stacks of <buf ID=175900>[Effective Data]</buf>. When an ally triggers <buf ID=175902>[Percentage HP Reduction]</buf>, gains <color=#F74848>4</color> stacks of <buf ID=175900>[Effective Data]</buf>.\nMissile range <color=#F74848>+1</color>. Final DMG dealt increases by <color=#F74848>10%</color>.",
+        "SpecificEffects": "When any unit on the field takes percentage <buf ID=900017>[Fixed DMG]</buf>, gains <color=#F74848>2</color> stacks of <buf ID=4013502>[Effective Data]</buf>. When an ally triggers <buf ID=900177>[Percentage HP Reduction]</buf>, gains <color=#F74848>4</color> stacks of <buf ID=4013502>[Effective Data]</buf>.\nMissile range <color=#F74848>+1</color>. Final DMG dealt increases by <color=#F74848>10%</color>.",
         "SkillIcon": "Icon_skill_talent_5167",
         "icon": "Icon_skill_talent_5167"
       },
@@ -22653,7 +22633,7 @@
               {
                 "MinimumSum": "1",
                 "PassiveSkill": {
-                  "ID": "175570",
+                  "ID": "401331",
                   "name": "Emplaced Firepower 1",
                   "SpecificEffects": "If not moved before an Active Attack with a Tactical weapon, <buf ID=900004>[Re-ATK]</buf> can be triggered, effective up to <color=#F74848>1</color> time per turn. Unable to move before attacking.\nEffects similar to <buf ID=900004>[Re-ATK]</buf> cannot be re-triggered.",
                   "SkillIcon": "Icon_skill_passive_5023",
@@ -22683,7 +22663,7 @@
               {
                 "MinimumSum": "10",
                 "PassiveSkill": {
-                  "ID": "175571",
+                  "ID": "401334",
                   "name": "Emplaced Firepower 2",
                   "SpecificEffects": "When [Emplaced Firepower 1] effect triggers, gains <color=#F74848>1</color> AP.",
                   "SkillIcon": "Icon_skill_passive_5023",
@@ -22693,7 +22673,7 @@
               {
                 "MinimumSum": "13",
                 "PassiveSkill": {
-                  "ID": "175572",
+                  "ID": "401335",
                   "name": "Emplaced Firepower 3",
                   "SpecificEffects": "When [Emplaced Firepower 1] effect triggers, DMG dealt and Critical Hit chance of the next active attack increase by <color=#F74848>20%</color>.",
                   "SkillIcon": "Icon_skill_passive_5023",
@@ -22703,7 +22683,7 @@
               {
                 "MinimumSum": "16",
                 "PassiveSkill": {
-                  "ID": "175573",
+                  "ID": "401336",
                   "name": "Emplaced Firepower 4",
                   "SpecificEffects": "When [Emplaced Firepower 1] effect triggers, AP cost of the next active attack is reduced by <color=#F74848>1</color> (to a minimum of <color=#F74848>1</color>) and Final DMG dealt increases by <color=#F74848>15%</color>.",
                   "SkillIcon": "Icon_skill_passive_5023",
@@ -22720,9 +22700,9 @@
               {
                 "MinimumSum": "1",
                 "PassiveSkill": {
-                  "ID": "175580",
+                  "ID": "401341",
                   "name": "Theory Of Everything 1",
-                  "SpecificEffects": "At the end of turn, if <color=#F74848>10</color> or more stacks of <buf ID=175900>[Effective Data]</buf> were consumed during the turn, restores <color=#F74848>1</color> AP and <color=#F74848>1</color> ammo of Missile Launcher.",
+                  "SpecificEffects": "At the end of turn, if <color=#F74848>10</color> or more stacks of <buf ID=4013502>[Effective Data]</buf> were consumed during the turn, restores <color=#F74848>1</color> AP and <color=#F74848>1</color> ammo of Missile Launcher.",
                   "SkillIcon": "Icon_skill_passive_5311",
                   "icon": "Icon_skill_passive_5311"
                 }
@@ -22730,7 +22710,7 @@
               {
                 "MinimumSum": "4",
                 "PassiveSkill": {
-                  "ID": "100042",
+                  "ID": "400042",
                   "name": "AP Optimization 4",
                   "SpecificEffects": "AP Cap <color=#F74848>+1</color>.",
                   "SkillIcon": "Icon_skill_passive_5004",
@@ -22740,7 +22720,7 @@
               {
                 "MinimumSum": "7",
                 "PassiveSkill": {
-                  "ID": "100043",
+                  "ID": "400043",
                   "name": "Power Innovation 3",
                   "SpecificEffects": "When destroying a target, additionally restores <color=#F74848>1</color> AP after combat. Can trigger up to <color=#F74848>2</color> times per turn.",
                   "SkillIcon": "Icon_skill_passive_5006",
@@ -22750,9 +22730,9 @@
               {
                 "MinimumSum": "10",
                 "PassiveSkill": {
-                  "ID": "175581",
+                  "ID": "401344",
                   "name": "Theory Of Everything 2",
-                  "SpecificEffects": "If an attack consuming <buf ID=175900>[Effective Data]</buf> triggers a Critical Hit, <color=#F74848>3</color> stacks of <buf ID=175900>[Effective Data]</buf> are refunded after the attack.",
+                  "SpecificEffects": "If an attack consuming <buf ID=4013502>[Effective Data]</buf> triggers a Critical Hit, <color=#F74848>3</color> stacks of <buf ID=4013502>[Effective Data]</buf> are refunded after the attack.",
                   "SkillIcon": "Icon_skill_passive_5311",
                   "icon": "Icon_skill_passive_5311"
                 }
@@ -22760,7 +22740,7 @@
               {
                 "MinimumSum": "13",
                 "PassiveSkill": {
-                  "ID": "175582",
+                  "ID": "401345",
                   "name": "Theory Of Everything 3",
                   "SpecificEffects": "Missile DMG dealt and Hit Rate increase by <color=#F74848>15%</color>.",
                   "SkillIcon": "Icon_skill_passive_5311",
@@ -22770,9 +22750,9 @@
               {
                 "MinimumSum": "16",
                 "PassiveSkill": {
-                  "ID": "175583",
+                  "ID": "401346",
                   "name": "Theory Of Everything 4",
-                  "SpecificEffects": "When actively attacking, for each <color=#F74848>5</color> stacks of <buf ID=175900>[Effective Data]</buf> consumed, Final DMG dealt increases by <color=#F74848>7.5%</color>.",
+                  "SpecificEffects": "When actively attacking, for each <color=#F74848>5</color> stacks of <buf ID=4013502>[Effective Data]</buf> consumed, Final DMG dealt increases by <color=#F74848>7.5%</color>.",
                   "SkillIcon": "Icon_skill_passive_5311",
                   "icon": "Icon_skill_passive_5311"
                 }
@@ -22854,22 +22834,9 @@
           "ID": "1010317512",
           "UnitType": "0",
           "skill": {
-            "ID": "175501",
-            "name": "Self Sampling",
-            "describe": "Deals <color=#F74848>10%</color> <buf ID=175902>[Percentage HP Reduction]</buf> to all self parts. This effect will not destroy parts. Then uses a Missile Launcher to attack a target, dealing <color=#F74848>0.9</color>x DMG to the part hit and <color=#F74848>50%</color> Splash DMG to other parts. Upon hitting, deals <buf ID=900017>[Fixed DMG]</buf> equal to <color=#F74848>10%</color> max HP to all parts of all enemy units within a <color=#F74848>1</color>-tile cross-shaped area around the original target.",
-            "SkillIcon": "Icon_skill_order_1139",
-            "icon": "Icon_skill_order_1139",
-            "Ap": "2",
-            "type": "SpecialAssault"
-          }
-        },
-        {
-          "ID": "1010317513",
-          "UnitType": "0",
-          "skill": {
-            "ID": "175502",
+            "ID": "401302",
             "name": "Contained Fission",
-            "describe": "Uses a Missile Launcher to attack a target, dealing <color=#F74848>1.2</color>x DMG to the part hit and <color=#F74848>50%</color> Splash DMG to other parts. Inflicts <buf ID=2004081>[Retaliation Disabled]</buf> on the target after combat, this effect is removed after triggering. If possessing <color=#F74848>10</color> or more stacks of <buf ID=175900>[Effective Data]</buf>, consumes <color=#F74848>10</color> stacks to increase Splash DMG percentage by <color=#F74848>35%</color>.",
+            "describe": "Uses a Missile Launcher to attack a target, dealing <color=#F74848>1.2</color>x DMG to the part hit and <color=#F74848>50%</color> Splash DMG to other parts. Inflicts <buf ID=2004081>[Retaliation Disabled]</buf> on the target after combat, this effect is removed after triggering. If possessing <color=#F74848>10</color> or more stacks of <buf ID=4013502>[Effective Data]</buf>, consumes <color=#F74848>10</color> stacks to increase Splash DMG percentage by <color=#F74848>35%</color>.",
             "SkillIcon": "Icon_skill_order_1129",
             "icon": "Icon_skill_order_1129",
             "Ap": "3",
@@ -22877,12 +22844,23 @@
           }
         },
         {
+          "ID": "1010317513",
+          "UnitType": "0",
+          "skill": {
+            "ID": "401303",
+            "name": "Balance the Scale",
+            "SpecificEffects": "At the start of action, deals <buf ID=900177>[Percentage HP Reduction]</buf> equal to <color=#F74848>5%</color> max HP to all self parts and gains <color=#F74848>1</color> random buff lasting for <color=#F74848>2</color> turns. This effect will not destroy parts.",
+            "SkillIcon": "Icon_skill_passive_5310",
+            "icon": "Icon_skill_passive_5310"
+          }
+        },
+        {
           "ID": "1010317514",
           "UnitType": "0",
           "skill": {
-            "ID": "175503",
+            "ID": "401304",
             "name": "Data Readjustment",
-            "describe": "Selects up to <color=#F74848>4</color> allies within <color=#F74848>4</color> adjacent tiles. Inflicts <buf ID=175902>[Percentage HP Reduction]</buf> equal to <color=#F74848>10%</color> max HP to all selected allies. This effect will not destroy parts. For each <color=#F74848>1</color> ally selected, restores <color=#F74848>2</color> rounds of ammo for Missile Launcher and gains <color=#F74848>1</color> AP. Can continue to act with remaining movement.",
+            "describe": "Selects up to <color=#F74848>4</color> allies within <color=#F74848>4</color> adjacent tiles. Inflicts <buf ID=900177>[Percentage HP Reduction]</buf> equal to <color=#F74848>10%</color> max HP to all selected allies. This effect will not destroy parts. For each <color=#F74848>1</color> ally selected, restores <color=#F74848>2</color> rounds of ammo for Missile Launcher and gains <color=#F74848>1</color> AP. Can continue to act with remaining movement.",
             "SkillIcon": "Icon_skill_order_5168",
             "icon": "Icon_skill_order_5168",
             "Ap": "0",
@@ -22894,44 +22872,7 @@
           "ID": "1010317515",
           "UnitType": "0",
           "skill": {
-            "ID": "175504",
-            "name": "System Disintegration",
-            "describe": "Uses both Missile Launchers to attack a target, dealing <color=#F74848>2x0.8</color> DMG to the part hit and <color=#F74848>50%</color> Splash DMG to other parts. If possessing <color=#F74848>10</color> or more stacks of <buf ID=175900>[Effective Data]</buf>, consumes <color=#F74848>10</color> stacks to deal <color=#F74848>15%</color> of target max HP as <buf ID=900017>[Fixed DMG]</buf> to all of the target's parts. <buf ID=900017>[Fixed DMG]</buf> dealt increases by <color=#F74848>35%</color> for this attack.",
-            "SkillIcon": "Icon_skill_order_1162",
-            "icon": "Icon_skill_order_1162",
-            "Ap": "5",
-            "type": "SpecialAssault"
-          }
-        },
-        {
-          "ID": "1010317516",
-          "UnitType": "0",
-          "skill": {
-            "ID": "175505",
-            "name": "Chain Collapse",
-            "describe": "Uses both Missile Launchers to attack a target <color=#F74848>2</color> times, each time dealing <color=#F74848>2x0.3</color> DMG to the part hit and <color=#F74848>50%</color> Splash DMG to other parts. If possessing <color=#F74848>5</color> or more stacks of <buf ID=175900>[Effective Data]</buf>, consumes <color=#F74848>5</color> stacks to add <color=#F74848>1</color> extra attack, up to a maximum of <color=#F74848>3</color> extra attacks. These extra attacks do not consume AP or ammo.",
-            "SkillIcon": "Icon_skill_order_1163",
-            "icon": "Icon_skill_order_1163",
-            "Ap": "4",
-            "type": "SpecialAssault"
-          }
-        },
-        {
-          "ID": "1010317517",
-          "UnitType": "0",
-          "skill": {
-            "ID": "175506",
-            "name": "Balance the Scale",
-            "SpecificEffects": "At the start of action, deals <buf ID=175902>[Percentage HP Reduction]</buf> equal to <color=#F74848>5%</color> max HP to all self parts and gains <color=#F74848>1</color> random buff lasting for <color=#F74848>2</color> turns. This effect will not destroy parts.",
-            "SkillIcon": "Icon_skill_passive_5310",
-            "icon": "Icon_skill_passive_5310"
-          }
-        },
-        {
-          "ID": "1010317518",
-          "UnitType": "0",
-          "skill": {
-            "ID": "175507",
+            "ID": "401305",
             "name": "Unstable Strain",
             "SpecificEffects": "When HP is not full, DMG dealt increases by <color=#F74848>10%</color> and DMG taken reduces by <color=#F74848>10%</color>.",
             "SkillIcon": "Icon_skill_passive_1157",
@@ -22939,14 +22880,40 @@
           }
         },
         {
-          "ID": "1010317536",
+          "ID": "1010317516",
           "UnitType": "0",
           "skill": {
-            "ID": "175508",
+            "ID": "401306",
+            "name": "System Disintegration",
+            "describe": "Uses both Missile Launchers to attack a target, dealing <color=#F74848>2x0.8</color> DMG to the part hit and <color=#F74848>50%</color> Splash DMG to other parts. If possessing <color=#F74848>10</color> or more stacks of <buf ID=4013502>[Effective Data]</buf>, consumes <color=#F74848>10</color> stacks to deal <color=#F74848>15%</color> of target max HP as <buf ID=900017>[Fixed DMG]</buf> to all of the target's parts. <buf ID=900017>[Fixed DMG]</buf> dealt increases by <color=#F74848>35%</color> for this attack.",
+            "SkillIcon": "Icon_skill_order_1162",
+            "icon": "Icon_skill_order_1162",
+            "Ap": "5",
+            "type": "SpecialAssault"
+          }
+        },
+        {
+          "ID": "1010317517",
+          "UnitType": "0",
+          "skill": {
+            "ID": "401307",
             "name": "Optimized Program",
-            "SpecificEffects": "Increases Critical Hit chance and Critical Hit DMG of missile attacks that consume <buf ID=175900>[Effective Data]</buf> by <color=#F74848>10%</color>.",
+            "SpecificEffects": "Increases Critical Hit chance and Critical Hit DMG of missile attacks that consume <buf ID=4013502>[Effective Data]</buf> by <color=#F74848>10%</color>.",
             "SkillIcon": "Icon_skill_passive_4132",
             "icon": "Icon_skill_passive_4132"
+          }
+        },
+        {
+          "ID": "1010317518",
+          "UnitType": "0",
+          "skill": {
+            "ID": "401308",
+            "name": "Chain Collapse",
+            "describe": "Uses both Missile Launchers to attack a target <color=#F74848>2</color> times, each time dealing <color=#F74848>2x0.3</color> DMG to the part hit and <color=#F74848>50%</color> Splash DMG to other parts. If possessing <color=#F74848>5</color> or more stacks of <buf ID=4013502>[Effective Data]</buf>, consumes <color=#F74848>5</color> stacks to add <color=#F74848>1</color> extra attack, up to a maximum of <color=#F74848>3</color> extra attacks. These extra attacks do not consume AP or ammo.",
+            "SkillIcon": "Icon_skill_order_1163",
+            "icon": "Icon_skill_order_1163",
+            "Ap": "4",
+            "type": "SpecialAssault"
           }
         },
         {
@@ -23050,6 +23017,16 @@
         "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
       },
       "version": "3.4",
+      "hiddenSkills": [
+        {
+          "name": "Self Sampling",
+          "icon": "Icon_skill_order_1139",
+          "type": "SpecialAssault",
+          "Ap": "2",
+          "CD": "",
+          "describe": "Deals <color=#F74848>10%</color> <buf ID=900177>[Percentage HP Reduction]</buf> to all self parts. This effect will not destroy parts. Then uses a Missile Launcher to attack a target, dealing <color=#F74848>0.9</color>x DMG to the part hit and <color=#F74848>50%</color> Splash DMG to other parts. Upon hitting, deals <buf ID=900017>[Fixed DMG]</buf> equal to <color=#F74848>10%</color> max HP to all parts of all enemy units within a <color=#F74848>1</color>-tile cross-shaped area around the original target."
+        }
+      ],
       "statRanks": {
         "Combat": 33,
         "Shooting": 52,
@@ -28259,16 +28236,16 @@
       "Occupation": "Fighter",
       "quality": "SSR",
       "Talent0_2Ability": {
-        "ID": "181550",
+        "ID": "102350",
         "name": "Frost Gaze Flame Heart",
-        "SpecificEffects": "At the start of action, inflicts <buf ID=181900>[Opening]</buf> in a random direction to all enemies not carrying <buf ID=181900>[Opening]</buf>, and inflicts <buf ID=181900>[Opening]</buf> in the direction facing this unit to the closest enemy, lasting for <color=#F74848>1</color> turn. Gains <color=#F74848>1</color> stack of <buf ID=181901>[Fighting Spirit]</buf> for each <color=#F74848>1</color> stack of <buf ID=181900>[Opening]</buf> inflicted.",
+        "SpecificEffects": "At the start of action, inflicts <buf ID=1023509>[Opening]</buf> in a random direction to all enemies not carrying <buf ID=1023509>[Opening]</buf>, and inflicts <buf ID=1023509>[Opening]</buf> in the direction facing this unit to the closest enemy, lasting for <color=#F74848>1</color> turn. Gains <color=#F74848>1</color> stack of <buf ID=1023508>[Fighting Spirit]</buf> for each <color=#F74848>1</color> stack of <buf ID=1023509>[Opening]</buf> inflicted.",
         "SkillIcon": "Icon_skill_talent_5172",
         "icon": "Icon_skill_talent_5172"
       },
       "Talent3_5Ability": {
-        "ID": "181551",
+        "ID": "102351",
         "name": "Frost Gaze Flame Heart",
-        "SpecificEffects": "At the start of action, inflicts <buf ID=181900>[Opening]</buf> in a random direction to all enemies not carrying <buf ID=181900>[Opening]</buf>, and inflicts <buf ID=181900>[Opening]</buf> in the direction facing this unit to the closest enemy, lasting for <color=#F74848>1</color> turn. Gains <color=#F74848>1</color> stack of <buf ID=181901>[Fighting Spirit]</buf> for each <color=#F74848>1</color> stack of <buf ID=181900>[Opening]</buf> inflicted.\nGains <color=#F74848>4</color> stacks of <buf ID=181901>[Fighting Spirit]</buf> at the start of battle. Skill multiplier increases by <color=#F74848>+0.1</color> when attacking <buf ID=181900>[Opening]</buf>.",
+        "SpecificEffects": "At the start of action, inflicts <buf ID=1023509>[Opening]</buf> in a random direction to all enemies not carrying <buf ID=1023509>[Opening]</buf>, and inflicts <buf ID=1023509>[Opening]</buf> in the direction facing this unit to the closest enemy, lasting for <color=#F74848>1</color> turn. Gains <color=#F74848>1</color> stack of <buf ID=1023508>[Fighting Spirit]</buf> for each <color=#F74848>1</color> stack of <buf ID=1023509>[Opening]</buf> inflicted.\nGains <color=#F74848>4</color> stacks of <buf ID=1023508>[Fighting Spirit]</buf> at the start of battle. Skill multiplier increases by <color=#F74848>+0.1</color> when attacking <buf ID=1023509>[Opening]</buf>.",
         "SkillIcon": "Icon_skill_talent_5172",
         "icon": "Icon_skill_talent_5172"
       },
@@ -28424,9 +28401,9 @@
               {
                 "MinimumSum": "1",
                 "PassiveSkill": {
-                  "ID": "181570",
+                  "ID": "102341",
                   "name": "Ice Blossom Blade 1",
-                  "SpecificEffects": "When triggering <buf ID=181900>[Opening]</buf>, gains <color=#F74848>1</color> AP and <color=#F74848>1</color> stack of <buf ID=181901>[Fighting Spirit]</buf>. This effect can trigger <color=#F74848>1</color> time per turn.",
+                  "SpecificEffects": "When triggering <buf ID=1023509>[Opening]</buf>, gains <color=#F74848>1</color> AP and <color=#F74848>1</color> stack of <buf ID=1023508>[Fighting Spirit]</buf>. This effect can trigger <color=#F74848>1</color> time per turn.",
                   "SkillIcon": "Icon_skill_passive_5330",
                   "icon": "Icon_skill_passive_5330"
                 }
@@ -28454,9 +28431,9 @@
               {
                 "MinimumSum": "10",
                 "PassiveSkill": {
-                  "ID": "181571",
+                  "ID": "102344",
                   "name": "Ice Blossom Blade 2",
-                  "SpecificEffects": "When triggering <buf ID=181900>[Opening]</buf> on a Boss unit, <buf ID=181900>[Opening]</buf> is regenerated after combat. This effect can trigger <color=#F74848>1</color> time per turn per Boss. DMG Dealt increases by <color=#F74848>25%</color> against Boss units.",
+                  "SpecificEffects": "When triggering <buf ID=1023509>[Opening]</buf> on a Boss unit, <buf ID=1023509>[Opening]</buf> is regenerated after combat. This effect can trigger <color=#F74848>1</color> time per turn per Boss. DMG Dealt increases by <color=#F74848>25%</color> against Boss units.",
                   "SkillIcon": "Icon_skill_passive_5330",
                   "icon": "Icon_skill_passive_5330"
                 }
@@ -28464,9 +28441,9 @@
               {
                 "MinimumSum": "13",
                 "PassiveSkill": {
-                  "ID": "181572",
+                  "ID": "102345",
                   "name": "Ice Blossom Blade 3",
-                  "SpecificEffects": "After <buf ID=181900>[Opening]</buf> is triggered, gains <color=#F74848>1</color> AP and triggers <buf ID=900005>[Re-Act]</buf>. This effect can trigger <color=#F74848>1</color> time per turn.",
+                  "SpecificEffects": "After <buf ID=1023509>[Opening]</buf> is triggered, gains <color=#F74848>1</color> AP and triggers <buf ID=900005>[Re-Act]</buf>. This effect can trigger <color=#F74848>1</color> time per turn.",
                   "SkillIcon": "Icon_skill_passive_5330",
                   "icon": "Icon_skill_passive_5330"
                 }
@@ -28474,7 +28451,7 @@
               {
                 "MinimumSum": "16",
                 "PassiveSkill": {
-                  "ID": "181573",
+                  "ID": "102346",
                   "name": "Ice Blossom Blade 4",
                   "SpecificEffects": "Final DMG Dealt increases by <color=#F74848>25%</color>. This effect decreases by <color=#F74848>4%</color> after each ally's action, to a minimum of <color=#F74848>5%</color>, and resets at the start of turn.",
                   "SkillIcon": "Icon_skill_passive_5330",
@@ -28558,22 +28535,31 @@
           "ID": "1010318112",
           "UnitType": "0",
           "skill": {
-            "ID": "181501",
-            "name": "Glacial Gleam",
-            "describe": "Uses Alter-Blades to attack a target, dealing <color=#F74848>2x0.6</color> DMG, prioritizing the body part. Can consume up to <color=#F74848>2</color> stacks of <buf ID=181901>[Fighting Spirit]</buf> to increase the skill multiplier by <color=#F74848>+0.1</color> per stack consumed.",
-            "SkillIcon": "Icon_skill_main_1161",
-            "icon": "Icon_skill_main_1161",
-            "Ap": "3",
-            "type": "EquipmentSkill"
+            "ID": "102302",
+            "name": "Opening Guard",
+            "SpecificEffects": "When attacked by Melee or Ranged Weapons, if equipped with two Alter-Blades and both Arms are undestroyed, triggers <buf ID=900136>[Critical Sense]</buf>, dealing <color=#F74848>1.2</color>x DMG. Can only trigger <color=#F74848>1</color> time per turn.",
+            "SkillIcon": "Icon_skill_passive_5238",
+            "icon": "Icon_skill_passive_5238"
           }
         },
         {
           "ID": "1010318113",
           "UnitType": "0",
           "skill": {
-            "ID": "181502",
+            "ID": "102303",
+            "name": "Ice Stride",
+            "SpecificEffects": "At the start of turn, dispels <color=#F74848>2</color> debuffs from self.",
+            "SkillIcon": "Icon_skill_passive_3124",
+            "icon": "Icon_skill_passive_3124"
+          }
+        },
+        {
+          "ID": "1010318114",
+          "UnitType": "0",
+          "skill": {
+            "ID": "102304",
             "name": "Soaring Swan",
-            "describe": "Dashes <color=#F74848>3</color> tiles forward in a selected direction with both Alter-Blades, dealing <color=#F74848>1.5</color>x DMG to all targets hit. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking. Can trigger <buf ID=181900>[Opening]</buf> on all targets hit from the correct direction.",
+            "describe": "Dashes <color=#F74848>3</color> tiles forward in a selected direction with both Alter-Blades, dealing <color=#F74848>1.5</color>x DMG to all targets hit. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking. Can trigger <buf ID=1023509>[Opening]</buf> on all targets hit from the correct direction.",
             "SkillIcon": "Icon_skill_order_1174",
             "icon": "Icon_skill_order_1174",
             "Ap": "4",
@@ -28581,10 +28567,10 @@
           }
         },
         {
-          "ID": "1010318114",
+          "ID": "1010318115",
           "UnitType": "0",
           "skill": {
-            "ID": "181503",
+            "ID": "102305",
             "name": "Nightfall",
             "describe": "Selects <color=#F74848>1</color> target within <color=#F74848>4</color> adjacent tiles (including flying targets) and strikes using Alter-Blades to deal <color=#F74848>1.2</color>x DMG. Can enter <buf ID=900014>[Aiming]</buf> Mode before attacking, then remains on a random empty tile within <color=#F74848>1</color> ring around the target after hitting. Critical Hit DMG increases by <color=#F74848>20%</color> for this attack.",
             "SkillIcon": "Icon_skill_order_1172",
@@ -28595,12 +28581,12 @@
           }
         },
         {
-          "ID": "1010318115",
+          "ID": "1010318116",
           "UnitType": "0",
           "skill": {
-            "ID": "181504",
+            "ID": "102306",
             "name": "Frostmark",
-            "describe": "Selects <color=#F74848>1</color> target within <color=#F74848>4</color> adjacent tiles, inflicts <buf ID=181900>[Opening]</buf> in the direction facing [Sonya] to that target. Can continue to act with remaining movement. This skill can only be used <color=#F74848>1</color> time per turn.",
+            "describe": "Selects <color=#F74848>1</color> target within <color=#F74848>4</color> adjacent tiles, inflicts <buf ID=1023509>[Opening]</buf> in the direction facing [Sonya] to that target. Can continue to act with remaining movement. This skill can only be used <color=#F74848>1</color> time per turn.",
             "SkillIcon": "Icon_skill_order_5180",
             "icon": "Icon_skill_order_5180",
             "Ap": "0",
@@ -28608,50 +28594,28 @@
           }
         },
         {
-          "ID": "1010318116",
-          "UnitType": "0",
-          "skill": {
-            "ID": "181505",
-            "name": "Moon Splitter",
-            "describe": "Selects <color=#F74848>1</color> target within <color=#F74848>4</color> adjacent tiles and attacks <color=#F74848>2</color> times with both Alter-Blades, dealing <color=#F74848>0.7</color>x DMG each, prioritizing the body part. Before attacking, consumes all stacks of <buf ID=181901>[Fighting Spirit]</buf>. For each <color=#F74848>2</color> stacks consumed, performs <color=#F74848>1</color> additional attack on a random target within <color=#F74848>1</color> ring around the target, prioritizing targets that have not been attacked.",
-            "SkillIcon": "Icon_skill_order_1173",
-            "icon": "Icon_skill_order_1173",
-            "Ap": "4",
-            "type": "SpecialAssault"
-          }
-        },
-        {
           "ID": "1010318117",
           "UnitType": "0",
           "skill": {
-            "ID": "181506",
-            "name": "Opening Guard",
-            "SpecificEffects": "When attacked by Melee or Ranged Weapons, if equipped with two Alter-Blades and both Arms are undestroyed, triggers <buf ID=900136>[Critical Sense]</buf>, dealing <color=#F74848>1.2</color>x DMG. Can only trigger <color=#F74848>1</color> time per turn.",
-            "SkillIcon": "Icon_skill_passive_5238",
-            "icon": "Icon_skill_passive_5238"
+            "ID": "102307",
+            "name": "Combat Flow",
+            "SpecificEffects": "From turn <color=#F74848>2</color>, at the start of turn, if possessing <color=#F74848>2</color> or fewer stacks of <buf ID=1023508>[Fighting Spirit]</buf>, consumes <color=#F74848>1</color> PP to gain <color=#F74848>3</color> stacks of <buf ID=1023508>[Fighting Spirit]</buf>. Gains <color=#F74848>2</color> PP at the start of battle.",
+            "SkillIcon": "Icon_skill_pp_1112",
+            "icon": "Icon_skill_pp_1112",
+            "resource": "PP"
           }
         },
         {
           "ID": "1010318118",
           "UnitType": "0",
           "skill": {
-            "ID": "181507",
-            "name": "Ice Stride",
-            "SpecificEffects": "At the start of turn, dispels <color=#F74848>2</color> debuffs from self.",
-            "SkillIcon": "Icon_skill_passive_3124",
-            "icon": "Icon_skill_passive_3124"
-          }
-        },
-        {
-          "ID": "1010318136",
-          "UnitType": "0",
-          "skill": {
-            "ID": "181508",
-            "name": "Combat Flow",
-            "SpecificEffects": "From turn <color=#F74848>2</color>, at the start of turn, if possessing <color=#F74848>2</color> or fewer stacks of <buf ID=181901>[Fighting Spirit]</buf>, consumes <color=#F74848>1</color> PP to gain <color=#F74848>3</color> stacks of <buf ID=181901>[Fighting Spirit]</buf>. Gains <color=#F74848>2</color> PP at the start of battle.",
-            "SkillIcon": "Icon_skill_pp_1112",
-            "icon": "Icon_skill_pp_1112",
-            "resource": "PP"
+            "ID": "102308",
+            "name": "Moon Splitter",
+            "describe": "Selects <color=#F74848>1</color> target within <color=#F74848>4</color> adjacent tiles and attacks <color=#F74848>2</color> times with both Alter-Blades, dealing <color=#F74848>0.7</color>x DMG each, prioritizing the body part. Before attacking, consumes all stacks of <buf ID=1023508>[Fighting Spirit]</buf>. For each <color=#F74848>2</color> stacks consumed, performs <color=#F74848>1</color> additional attack on a random target within <color=#F74848>1</color> ring around the target, prioritizing targets that have not been attacked.",
+            "SkillIcon": "Icon_skill_order_1173",
+            "icon": "Icon_skill_order_1173",
+            "Ap": "4",
+            "type": "SpecialAssault"
           }
         },
         {
@@ -28755,6 +28719,16 @@
         "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
       },
       "version": "3.7",
+      "hiddenSkills": [
+        {
+          "name": "Glacial Gleam",
+          "icon": "Icon_skill_main_1161",
+          "type": "EquipmentSkill",
+          "Ap": "3",
+          "CD": "",
+          "describe": "Uses Alter-Blades to attack a target, dealing <color=#F74848>2x0.6</color> DMG, prioritizing the body part. Can consume up to <color=#F74848>2</color> stacks of <buf ID=1023508>[Fighting Spirit]</buf> to increase the skill multiplier by <color=#F74848>+0.1</color> per stack consumed."
+        }
+      ],
       "statRanks": {
         "Combat": 3,
         "Shooting": 57,
@@ -28774,16 +28748,16 @@
       "Occupation": "Tactician",
       "quality": "SSR",
       "Talent0_2Ability": {
-        "ID": "183550",
+        "ID": "401450",
         "name": "Eternal Shadowwalker",
-        "SpecificEffects": "Can use command skill <skill ID=183950>[Resonance Link]</skill>. When equipped with Rail Gun, can use command skill <skill ID=183951>[Hunter Mode]</skill>.",
+        "SpecificEffects": "Can use command skill <skill ID=4014511>[Resonance Link]</skill>. When equipped with Rail Gun, can use command skill <skill ID=4014501>[Hunter Mode]</skill>.",
         "SkillIcon": "Icon_skill_talent_5170",
         "icon": "Icon_skill_talent_5170"
       },
       "Talent3_5Ability": {
-        "ID": "183551",
+        "ID": "401451",
         "name": "Eternal Shadowwalker",
-        "SpecificEffects": "Can use command skill <skill ID=183950>[Resonance Link]</skill>. When equipped with Rail Gun, can use command skill <skill ID=183951>[Hunter Mode]</skill>.\nWhile in <buf ID=183901>[Hunter Mode]</buf>, Final DMG Dealt increases by <color=#F74848>15%</color>.",
+        "SpecificEffects": "Can use command skill <skill ID=4014511>[Resonance Link]</skill>. When equipped with Rail Gun, can use command skill <skill ID=4014501>[Hunter Mode]</skill>.\nWhile in <buf ID=4014505>[Hunter Mode]</buf>, Final DMG Dealt increases by <color=#F74848>15%</color>.",
         "SkillIcon": "Icon_skill_talent_5170",
         "icon": "Icon_skill_talent_5170"
       },
@@ -28872,7 +28846,7 @@
               {
                 "MinimumSum": "1",
                 "PassiveSkill": {
-                  "ID": "175570",
+                  "ID": "401331",
                   "name": "Emplaced Firepower 1",
                   "SpecificEffects": "If not moved before an Active Attack with a Tactical weapon, <buf ID=900004>[Re-ATK]</buf> can be triggered, effective up to <color=#F74848>1</color> time per turn. Unable to move before attacking.\nEffects similar to <buf ID=900004>[Re-ATK]</buf> cannot be re-triggered.",
                   "SkillIcon": "Icon_skill_passive_5023",
@@ -28902,7 +28876,7 @@
               {
                 "MinimumSum": "10",
                 "PassiveSkill": {
-                  "ID": "175571",
+                  "ID": "401334",
                   "name": "Emplaced Firepower 2",
                   "SpecificEffects": "When [Emplaced Firepower 1] effect triggers, gains <color=#F74848>1</color> AP.",
                   "SkillIcon": "Icon_skill_passive_5023",
@@ -28912,7 +28886,7 @@
               {
                 "MinimumSum": "13",
                 "PassiveSkill": {
-                  "ID": "175572",
+                  "ID": "401335",
                   "name": "Emplaced Firepower 3",
                   "SpecificEffects": "When [Emplaced Firepower 1] effect triggers, DMG dealt and Critical Hit chance of the next active attack increase by <color=#F74848>20%</color>.",
                   "SkillIcon": "Icon_skill_passive_5023",
@@ -28922,7 +28896,7 @@
               {
                 "MinimumSum": "16",
                 "PassiveSkill": {
-                  "ID": "175573",
+                  "ID": "401336",
                   "name": "Emplaced Firepower 4",
                   "SpecificEffects": "When [Emplaced Firepower 1] effect triggers, AP cost of the next active attack is reduced by <color=#F74848>1</color> (to a minimum of <color=#F74848>1</color>) and Final DMG dealt increases by <color=#F74848>15%</color>.",
                   "SkillIcon": "Icon_skill_passive_5023",
@@ -28939,7 +28913,7 @@
               {
                 "MinimumSum": "1",
                 "PassiveSkill": {
-                  "ID": "183580",
+                  "ID": "401441",
                   "name": "Legacy Of Ophiuchus 1",
                   "SpecificEffects": "At the start of action, if this unit was not attacked in previous turn, gains <color=#F74848>1</color> AP and <color=#F74848>1</color> Rail Gun ammo.",
                   "SkillIcon": "Icon_skill_passive_5326",
@@ -28949,7 +28923,7 @@
               {
                 "MinimumSum": "4",
                 "PassiveSkill": {
-                  "ID": "100042",
+                  "ID": "400042",
                   "name": "AP Optimization 4",
                   "SpecificEffects": "AP Cap <color=#F74848>+1</color>.",
                   "SkillIcon": "Icon_skill_passive_5004",
@@ -28959,7 +28933,7 @@
               {
                 "MinimumSum": "7",
                 "PassiveSkill": {
-                  "ID": "100043",
+                  "ID": "400043",
                   "name": "Power Innovation 3",
                   "SpecificEffects": "When destroying a target, additionally restores <color=#F74848>1</color> AP after combat. Can trigger up to <color=#F74848>2</color> times per turn.",
                   "SkillIcon": "Icon_skill_passive_5006",
@@ -28969,9 +28943,9 @@
               {
                 "MinimumSum": "10",
                 "PassiveSkill": {
-                  "ID": "183581",
+                  "ID": "401444",
                   "name": "Legacy Of Ophiuchus 2",
-                  "SpecificEffects": "When actively attacking with Rail Gun, if <buf ID=183900>[Resonance Node]</buf> is within skill range, or if the attack destroys a target, gains <color=#F74848>1</color> Rail Gun ammo after combat. This effect can trigger <color=#F74848>2</color> times per turn.",
+                  "SpecificEffects": "When actively attacking with Rail Gun, if <buf ID=4014509>[Resonance Node]</buf> is within skill range, or if the attack destroys a target, gains <color=#F74848>1</color> Rail Gun ammo after combat. This effect can trigger <color=#F74848>2</color> times per turn.",
                   "SkillIcon": "Icon_skill_passive_5326",
                   "icon": "Icon_skill_passive_5326"
                 }
@@ -28979,9 +28953,9 @@
               {
                 "MinimumSum": "13",
                 "PassiveSkill": {
-                  "ID": "183582",
+                  "ID": "401445",
                   "name": "Legacy Of Ophiuchus 3",
-                  "SpecificEffects": "When actively attacking with Rail Gun, for each <color=#F74848>1</color> enemy unit or <buf ID=183900>[Resonance Node]</buf> within the skill range, DMG Dealt and Critical Hit chance increase by <color=#F74848>5%</color>, up to <color=#F74848>15%</color>.",
+                  "SpecificEffects": "When actively attacking with Rail Gun, for each <color=#F74848>1</color> enemy unit or <buf ID=4014509>[Resonance Node]</buf> within the skill range, DMG Dealt and Critical Hit chance increase by <color=#F74848>5%</color>, up to <color=#F74848>15%</color>.",
                   "SkillIcon": "Icon_skill_passive_5326",
                   "icon": "Icon_skill_passive_5326"
                 }
@@ -28989,7 +28963,7 @@
               {
                 "MinimumSum": "16",
                 "PassiveSkill": {
-                  "ID": "183583",
+                  "ID": "401446",
                   "name": "Legacy Of Ophiuchus 4",
                   "SpecificEffects": "If there are no enemies within <color=#F74848>2</color> adjacent tiles, Final DMG Dealt increases by <color=#F74848>+25%</color>.",
                   "SkillIcon": "Icon_skill_passive_5326",
@@ -29073,20 +29047,7 @@
           "ID": "1010318312",
           "UnitType": "0",
           "skill": {
-            "ID": "183501",
-            "name": "Death Ray",
-            "describe": "Uses Rail Gun to attack all enemies within a cross-shaped area around a target within <color=#F74848>5</color> adjacent tiles, dealing <color=#F74848>0.5</color>x DMG. DMG multiplier increases by <color=#F74848>+0.9</color>x against the target in the center. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking. This attack can target <buf ID=183900>[Resonance Node]</buf>.",
-            "SkillIcon": "Icon_skill_order_1108",
-            "icon": "Icon_skill_order_1108",
-            "Ap": "3",
-            "type": "SpecialAssault"
-          }
-        },
-        {
-          "ID": "1010318313",
-          "UnitType": "0",
-          "skill": {
-            "ID": "183502",
+            "ID": "401402",
             "name": "Thunder Sweep",
             "describe": "Uses Rail Gun to attack all targets within a <color=#F74848>3x5</color> area in front, dealing <color=#F74848>0.75</color>x AoE DMG and knocking them back by <color=#F74848>2</color> tiles. If a target is blocked by obstacles during knock back, inflicts <buf ID=7101507>[Movement Inhibition II]</buf> for <color=#F74848>1</color> turn. Triggers <buf ID=900004>[Re-ATK]</buf> in place after combat. This skill can only be used <color=#F74848>1</color> time per turn.",
             "SkillIcon": "Icon_skill_order_1109",
@@ -29096,10 +29057,10 @@
           }
         },
         {
-          "ID": "1010318314",
+          "ID": "1010318313",
           "UnitType": "0",
           "skill": {
-            "ID": "183503",
+            "ID": "401403",
             "name": "Steady Calibration",
             "describe": "Fully reloads all Rail Gun ammo. Next active attack multiplier increases by <color=#F74848>+0.2</color>x. Triggers <buf ID=900004>[Re-ATK]</buf> in place after use.",
             "SkillIcon": "Icon_skill_order_5160",
@@ -29110,10 +29071,10 @@
           }
         },
         {
-          "ID": "1010318315",
+          "ID": "1010318314",
           "UnitType": "0",
           "skill": {
-            "ID": "183504",
+            "ID": "401404",
             "name": "Dawn Annihilation",
             "describe": "Consumes <color=#F74848>2</color> Rail Gun ammo, uses Rail Gun to attack all targets within a <color=#F74848>3x5</color> area in front, dealing <color=#F74848>0.85</color>x AoE DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking.",
             "SkillIcon": "Icon_skill_order_1168",
@@ -29123,12 +29084,23 @@
           }
         },
         {
+          "ID": "1010318315",
+          "UnitType": "0",
+          "skill": {
+            "ID": "401405",
+            "name": "Resonance Anchor",
+            "SpecificEffects": "Outside of ally turn, this unit and <buf ID=4014509>[Resonance Node]</buf> are immune to all displacement effects.",
+            "SkillIcon": "Icon_skill_passive_5176",
+            "icon": "Icon_skill_passive_5176"
+          }
+        },
+        {
           "ID": "1010318316",
           "UnitType": "0",
           "skill": {
-            "ID": "183505",
+            "ID": "401406",
             "name": "ND Maneuver",
-            "describe": "Selects an empty tile within <color=#F74848>4</color> adjacent tiles of <buf ID=183900>[Resonance Node]</buf> and teleports that unit to the selected tile. Can continue to act with remaining movement.",
+            "describe": "Selects an empty tile within <color=#F74848>4</color> adjacent tiles of <buf ID=4014509>[Resonance Node]</buf> and teleports that unit to the selected tile. Can continue to act with remaining movement.",
             "SkillIcon": "Icon_skill_order_5175",
             "icon": "Icon_skill_order_5175",
             "Ap": "1",
@@ -29140,35 +29112,24 @@
           "ID": "1010318317",
           "UnitType": "0",
           "skill": {
-            "ID": "183506",
-            "name": "Petal Storm",
-            "describe": "Consumes <color=#F74848>2</color> Rail Gun ammo, uses Rail Gun to attack all targets within <color=#F74848>2</color> adjacent tiles of the target, dealing <color=#F74848>1.1</color>x AoE DMG. This attack ignores low obstacles and always hits the body. This skill can target any tile within <color=#F74848>4</color> adjacent tiles of <buf ID=183900>[Resonance Node]</buf>. Grants <skill ID=183953>[Attraction Beacon]</skill> skill to <buf ID=183900>[Resonance Node]</buf>.",
-            "SkillIcon": "Icon_skill_order_1169",
-            "icon": "Icon_skill_order_1169",
-            "Ap": "4",
-            "type": "SpecialAssault"
+            "ID": "401407",
+            "name": "Vow Of Tomorrow",
+            "SpecificEffects": "When <buf ID=4014509>[Resonance Node]</buf> takes fatal DMG, restores all their parts to <color=#F74848>50%</color> of max HP, inflicts <buf ID=7101505>[System Failure]</buf> and teleports them to [Sylar]'s side. This effect can trigger <color=#F74848>1</color> time per battle.",
+            "SkillIcon": "Icon_skill_passive_5325",
+            "icon": "Icon_skill_passive_5325"
           }
         },
         {
           "ID": "1010318318",
           "UnitType": "0",
           "skill": {
-            "ID": "183507",
-            "name": "Resonance Anchor",
-            "SpecificEffects": "Outside of ally turn, this unit and <buf ID=183900>[Resonance Node]</buf> are immune to all displacement effects.",
-            "SkillIcon": "Icon_skill_passive_5176",
-            "icon": "Icon_skill_passive_5176"
-          }
-        },
-        {
-          "ID": "1010318336",
-          "UnitType": "0",
-          "skill": {
-            "ID": "183508",
-            "name": "Vow Of Tomorrow",
-            "SpecificEffects": "When <buf ID=183900>[Resonance Node]</buf> takes fatal DMG, restores all their parts to <color=#F74848>50%</color> of max HP, inflicts <buf ID=183902>[System Failure]</buf> and teleports them to [Sylar]'s side. This effect can trigger <color=#F74848>1</color> time per battle.",
-            "SkillIcon": "Icon_skill_passive_5325",
-            "icon": "Icon_skill_passive_5325"
+            "ID": "401408",
+            "name": "Petal Storm",
+            "describe": "Consumes <color=#F74848>2</color> Rail Gun ammo, uses Rail Gun to attack all targets within <color=#F74848>2</color> adjacent tiles of the target, dealing <color=#F74848>1.1</color>x AoE DMG. This attack ignores low obstacles and always hits the body. This skill can target any tile within <color=#F74848>4</color> adjacent tiles of <buf ID=4014509>[Resonance Node]</buf>. Grants <skill ID=4014521>[Attraction Beacon]</skill> skill to <buf ID=4014509>[Resonance Node]</buf>.",
+            "SkillIcon": "Icon_skill_order_1169",
+            "icon": "Icon_skill_order_1169",
+            "Ap": "4",
+            "type": "SpecialAssault"
           }
         },
         {
@@ -29274,6 +29235,16 @@
         "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
       },
       "version": "3.6",
+      "hiddenSkills": [
+        {
+          "name": "Death Ray",
+          "icon": "Icon_skill_order_1108",
+          "type": "SpecialAssault",
+          "Ap": "3",
+          "CD": "",
+          "describe": "Uses Rail Gun to attack all enemies within a cross-shaped area around a target within <color=#F74848>5</color> adjacent tiles, dealing <color=#F74848>0.5</color>x DMG. DMG multiplier increases by <color=#F74848>+0.9</color>x against the target in the center. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking. This attack can target <buf ID=4014509>[Resonance Node]</buf>."
+        }
+      ],
       "statRanks": {
         "Combat": 44,
         "Shooting": 36,

@@ -129,8 +129,8 @@
     "avatar_icon": "Pilot_13037A_Raw",
     "version": "3.5",
     "talents": [
-      "185550",
-      "185551"
+      "202250",
+      "202251"
     ],
     "stats": {
       "combat": "1858",
@@ -159,6 +159,16 @@
       {
         "partition": "10103185-gamma2",
         "slots": "Attack/Dodge/Dodge"
+      }
+    ],
+    "hidden_skills": [
+      {
+        "name": "Scorch Earth",
+        "icon": "Icon_skill_main_1179",
+        "type": "EquipmentSkill",
+        "Ap": "3",
+        "CD": "",
+        "describe": "Uses a Large Shield to attack a target, dealing <buf ID=900017>[Fixed DMG]</buf> equal to <color=#F74848>50%</color> max HP of current arm. Applies <terrian ID=4003081 /> to all tiles within <color=#F74848>1</color> ring around the target for <color=#F74848>2</color> turns. If possesses <color=#F74848>2</color> or more stacks of <buf ID=2022512>[War Flame]</buf>, consumes <color=#F74848>2</color> stacks to additionally deal <buf ID=900017>[Fixed DMG]</buf> equal to <color=#F74848>20%</color> of own max HP to the target and all enemy units within <color=#F74848>1</color> ring around the target."
       }
     ]
   },
@@ -220,8 +230,8 @@
     "avatar_icon": "Pilot_10103160A_Raw",
     "version": "3.3",
     "talents": [
-      "160550",
-      "160551"
+      "202150",
+      "202151"
     ],
     "stats": {
       "combat": "1700",
@@ -250,6 +260,16 @@
       {
         "partition": "10103160-gamma2",
         "slots": "Attack/Dodge/Dodge"
+      }
+    ],
+    "hidden_skills": [
+      {
+        "name": "Electric Eel Penetration",
+        "icon": "Icon_skill_main_1127",
+        "type": "EquipmentSkill",
+        "Ap": "2",
+        "CD": "",
+        "describe": "Uses a Heavy Machine Gun to attack a target, dealing <color=#F74848>0.9</color>x DMG. Changes to <buf ID=2021503>[Electric Eel Stance]</buf> before attacking. If the target has <color=#F74848>3</color> or more stacks of <buf ID=900034>[Instability]</buf>, they cannot retaliate. Otherwise, applies <color=#F74848>2</color> stacks of <buf ID=530572>[Instability III]</buf> to the target, lasting for <color=#F74848>2</color> turns."
       }
     ]
   },
@@ -474,8 +494,8 @@
     "avatar_icon": "Pilot_10103167A_Raw",
     "version": "3.4",
     "talents": [
-      "167550",
-      "167551"
+      "601250",
+      "601251"
     ],
     "stats": {
       "combat": "1504",
@@ -504,6 +524,16 @@
       {
         "partition": "10103167-gamma2",
         "slots": "Attack/Dodge/Dodge"
+      }
+    ],
+    "hidden_skills": [
+      {
+        "name": "Formation Guard",
+        "icon": "Icon_skill_order_5110",
+        "type": "Order",
+        "Ap": "1",
+        "CD": "2",
+        "describe": "Protects allies within <color=#F74848>2</color> adjacent tiles from Assault and Ranged attacks. Triggers up to <color=#F74848>2</color> times per turn and lasts <color=#F74848>2</color> turns. Additionally, gains <color=#F74848>1</color> stack of <buf ID=6012449>[Undying]</buf>."
       }
     ]
   },
@@ -722,8 +752,8 @@
     "avatar_icon": "Pilot_11021A_Raw",
     "version": "3.6",
     "talents": [
-      "184550",
-      "184551"
+      "102250",
+      "102251"
     ],
     "stats": {
       "combat": "5281",
@@ -752,6 +782,16 @@
       {
         "partition": "10103184-gamma2",
         "slots": "Attack/Dodge/Dodge"
+      }
+    ],
+    "hidden_skills": [
+      {
+        "name": "Whirling Sweep",
+        "icon": "Icon_skill_order_1102",
+        "type": "SpecialAssault",
+        "Ap": "2",
+        "CD": "",
+        "describe": "Uses Chainsaw to attack all enemies within <color=#F74848>3</color>-tile horizontal area in front, dealing <color=#F74848>0.8</color>x AoE DMG. When <buf ID=1022501>[Edge Momentum]</buf> is at <color=#F74848>8</color> stacks or more, this skill multiplier increases by <color=#F74848>+0.1</color>. Can consume <color=#F74848>5</color> stacks of <buf ID=1022501>[Edge Momentum]</buf> to increase Critical Hit DMG of this attack by <color=#F74848>+15%</color> and expand the area to half circle in front, prioritizing the part with lowest HP."
       }
     ]
   },
@@ -1987,8 +2027,8 @@
     "avatar_icon": "Pilot_10103182A_Raw",
     "version": "3.3",
     "talents": [
-      "182550",
-      "182551"
+      "102150",
+      "102151"
     ],
     "stats": {
       "combat": "5365",
@@ -2017,6 +2057,16 @@
       {
         "partition": "10103182-gamma2",
         "slots": "Attack/Dodge/Critical"
+      }
+    ],
+    "hidden_skills": [
+      {
+        "name": "Shield Breaker",
+        "icon": "Icon_skill_main_1174",
+        "type": "EquipmentSkill",
+        "Ap": "2",
+        "CD": "",
+        "describe": "Uses a Shotgun firing a slug or a Melee weapon to attack a target, dealing <color=#F74848>0.45</color>x or <color=#F74848>1.1</color>x DMG accordingly. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking."
       }
     ]
   },
@@ -2192,8 +2242,8 @@
       "B"
     ],
     "talents": [
-      "173550",
-      "173551"
+      "800250",
+      "800251"
     ],
     "stats": {
       "combat": "5216",
@@ -2222,6 +2272,16 @@
       {
         "partition": "10103173-gamma2",
         "slots": "Attack/Dodge/Dodge"
+      }
+    ],
+    "hidden_skills": [
+      {
+        "name": "Tainted Blade / Shadow Ray",
+        "icon": "Icon_skill_main_1179",
+        "type": "EquipmentSkill",
+        "Ap": "3",
+        "CD": "",
+        "describe": "Chooses to use either <skill ID=8002011>[Tainted Blade]</skill> or <skill ID=8002012>[Shadow Ray]</skill>."
       }
     ]
   },
@@ -2593,8 +2653,8 @@
     "avatar_icon": "Pilot_10103175A_Raw",
     "version": "3.4",
     "talents": [
-      "175550",
-      "175551"
+      "401350",
+      "401351"
     ],
     "stats": {
       "combat": "2408",
@@ -2623,6 +2683,16 @@
       {
         "partition": "10103175-gamma2",
         "slots": "Attack/Dodge/Dodge"
+      }
+    ],
+    "hidden_skills": [
+      {
+        "name": "Self Sampling",
+        "icon": "Icon_skill_order_1139",
+        "type": "SpecialAssault",
+        "Ap": "2",
+        "CD": "",
+        "describe": "Deals <color=#F74848>10%</color> <buf ID=900177>[Percentage HP Reduction]</buf> to all self parts. This effect will not destroy parts. Then uses a Missile Launcher to attack a target, dealing <color=#F74848>0.9</color>x DMG to the part hit and <color=#F74848>50%</color> Splash DMG to other parts. Upon hitting, deals <buf ID=900017>[Fixed DMG]</buf> equal to <color=#F74848>10%</color> max HP to all parts of all enemy units within a <color=#F74848>1</color>-tile cross-shaped area around the original target."
       }
     ]
   },
@@ -3154,8 +3224,8 @@
     "avatar_icon": "Pilot_10103181A_Raw",
     "version": "3.7",
     "talents": [
-      "181550",
-      "181551"
+      "102350",
+      "102351"
     ],
     "stats": {
       "combat": "5291",
@@ -3185,6 +3255,16 @@
         "partition": "10103181-gamma2",
         "slots": "Attack/Dodge/Dodge"
       }
+    ],
+    "hidden_skills": [
+      {
+        "name": "Glacial Gleam",
+        "icon": "Icon_skill_main_1161",
+        "type": "EquipmentSkill",
+        "Ap": "3",
+        "CD": "",
+        "describe": "Uses Alter-Blades to attack a target, dealing <color=#F74848>2x0.6</color> DMG, prioritizing the body part. Can consume up to <color=#F74848>2</color> stacks of <buf ID=1023508>[Fighting Spirit]</buf> to increase the skill multiplier by <color=#F74848>+0.1</color> per stack consumed."
+      }
     ]
   },
   "10103183": {
@@ -3202,8 +3282,8 @@
       "B"
     ],
     "talents": [
-      "183550",
-      "183551"
+      "401450",
+      "401451"
     ],
     "stats": {
       "combat": "1916",
@@ -3232,6 +3312,16 @@
       {
         "partition": "10103183-gamma2",
         "slots": "Attack/Dodge/Dodge"
+      }
+    ],
+    "hidden_skills": [
+      {
+        "name": "Death Ray",
+        "icon": "Icon_skill_order_1108",
+        "type": "SpecialAssault",
+        "Ap": "3",
+        "CD": "",
+        "describe": "Uses Rail Gun to attack all enemies within a cross-shaped area around a target within <color=#F74848>5</color> adjacent tiles, dealing <color=#F74848>0.5</color>x DMG. DMG multiplier increases by <color=#F74848>+0.9</color>x against the target in the center. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking. This attack can target <buf ID=4014509>[Resonance Node]</buf>."
       }
     ]
   },
@@ -5184,8 +5274,8 @@
     "avatar_icon": "Pilot_13038A_Raw",
     "version": "3.7",
     "talents": [
-      "187550",
-      "187551"
+      "202350",
+      "202351"
     ],
     "stats": {
       "combat": "0",
@@ -5214,6 +5304,16 @@
       {
         "partition": "10103187-gamma2",
         "slots": "Attack/Dodge/Critical"
+      }
+    ],
+    "hidden_skills": [
+      {
+        "name": "Lingering Bloodlust",
+        "icon": "Icon_skill_passive_5175",
+        "type": null,
+        "Ap": "",
+        "CD": "",
+        "SpecificEffects": "After triggering <buf ID=900004>[Re-ATK]</buf>, restores <color=#F74848>1</color> AP. Can only trigger <color=#F74848>1</color> time per turn."
       }
     ]
   }

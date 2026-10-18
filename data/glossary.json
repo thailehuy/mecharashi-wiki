@@ -1364,11 +1364,11 @@
    "name": "Global Repair Reduction",
    "effect": "Repair AMT Received reduces by <color=#F74848>25%</color>."
   },
-  "182900": {
+  "1021503": {
    "name": "Suppression",
    "effect": "Armor reduced by <color=#F74848>4%</color>, chance of receiving a critical hit increased by <color=#F74848>2%</color>, stacking up to <color=#F74848>5</color> times, lasting for <color=#F74848>2</color> turns."
   },
-  "182903": {
+  "1021032": {
    "name": "Phantom",
    "effect": "Ignores unit obstruction when moving."
   },
@@ -1376,45 +1376,45 @@
    "name": "Favorable Event",
    "effect": "Includes Critical Hit chance, Hit rate, Dodge Rate, Component proc rate, Module proc rate, <buf ID=900001>[Flurry Strike]</buf> and <buf ID=900010>[Gusty Strike]</buf> proc rate"
   },
-  "160900": {
+  "2021502": {
    "name": "GKD Stance",
-   "effect": "Movement <color=#F74848>+1</color>. After attacking, inflicts <color=#F74848>1</color> stack of <buf ID=182900>[Suppression]</buf> on the target, lasting for <color=#F74848>2</color> turns."
+   "effect": "Movement <color=#F74848>+1</color>. After attacking, inflicts <color=#F74848>1</color> stack of <buf ID=1021503>[Suppression]</buf> on the target, lasting for <color=#F74848>2</color> turns."
   },
-  "160901": {
+  "2021503": {
    "name": "Electric Eel Stance",
    "effect": "After actively attacking, extends the remaining duration of maximum <color=#F74848>5</color> debuffs on the target by <color=#F74848>1</color> turn. Also applies <color=#F74848>1</color> stack of <buf ID=530572>[Instability III]</buf> to the target, lasting for <color=#F74848>2</color> turns."
   },
-  "160902": {
+  "2021509": {
    "name": "Collective Advantage",
    "effect": "DMG dealt increases by <color=#F74848>2%</color>, Critical Hit chance increases by <color=#F74848>1%</color> per stack, up to <color=#F74848>20</color> stacks."
   },
-  "160903": {
+  "2021050": {
    "name": "Structural Instability",
    "effect": "When actively attacked in combat, Final DMG taken increases by <color=#F74848>30%</color> and the attacker ignores all standard DMG Reduction effects. This effect is removed upon triggering."
   },
-  "160904": {
+  "2021062": {
    "name": "GKD Mark",
    "effect": "When actively attacked, chance of being critically hit increases by <color=#F74848>15%</color> and Critical DMG taken increases by <color=#F74848>10%</color>. The attacker recovers <color=#F74848>1</color> AP after combat. This effect is removed upon triggering."
   },
-  "160905": {
+  "2021081": {
    "name": "GKD Support",
-   "effect": "Movement increases by <color=#F74848>+1</color>. After initiating combat, inflicts <color=#F74848>1</color> stack of <buf ID=182900>[Suppression]</buf> on the target. This unit is considered a member of GKD for <color=#F74848>2</color> turns."
+   "effect": "Movement increases by <color=#F74848>+1</color>. After initiating combat, inflicts <color=#F74848>1</color> stack of <buf ID=1021503>[Suppression]</buf> on the target. This unit is considered a member of GKD for <color=#F74848>2</color> turns."
   },
-  "160906": {
+  "2021083": {
    "name": "Electric Eel Support",
    "effect": "After initiating combat, extends the remaining duration of maximum <color=#F74848>5</color> debuffs on the target by <color=#F74848>1</color> turn. Also applies <color=#F74848>1</color> stack of <buf ID=530572>[Instability III]</buf> to the target. This unit is considered a member of Electric Eel for <color=#F74848>2</color> turns."
   },
-  "167900": {
+  "6012509": {
    "name": "Fate Hunt",
    "effect": "Active attacks cannot be retaliated. Hit Rate increases by <color=#F74848>15%</color>. After attacking, restores HP equal to <color=#F74848>25%</color> of DMG dealt to all intact parts. This effect is removed at the start of next turn."
   },
-  "167901": {
+  "6012519": {
    "name": "Chain Execution",
    "effect": "After actively attacking, can launch a <buf ID=900004>[Re-ATK]</buf>, allowing movement of <color=#F74848>1</color> tile before attacking. This effect can trigger <color=#F74848>1</color> time per turn and is removed at the start of next turn."
   },
-  "167903": {
+  "900173": {
    "name": "Assault Field",
-   "effect": "An aura around self which reduces DMG dealt of enemy units within <color=#F74848>3</color> adjacent tiles by <color=#F74848>10%</color> and increases the movement cost to exit <buf ID=167903>[Assault Field]</buf> by <color=#F74848>2</color>. If an enemy remains within <buf ID=167903>[Assault Field]</buf> after action, uses Machine Gun to launch a <buf ID=167904>[Suppression Attack]</buf> dealing <color=#F74848>0.4</color>x DMG and inflicts a random debuff on the target for <color=#F74848>2</color> turns (this effect can trigger <color=#F74848>3</color> times per turn)."
+   "effect": "An aura around self which reduces DMG dealt of enemy units within <color=#F74848>3</color> adjacent tiles by <color=#F74848>10%</color> and increases the movement cost to exit <buf ID=900173>[Assault Field]</buf> by <color=#F74848>2</color>. If an enemy remains within <buf ID=900173>[Assault Field]</buf> after action, uses Machine Gun to launch a <buf ID=167904>[Suppression Attack]</buf> dealing <color=#F74848>0.4</color>x DMG and inflicts a random debuff on the target for <color=#F74848>2</color> turns (this effect can trigger <color=#F74848>3</color> times per turn)."
   },
   "167904": {
    "name": "Suppression Attack",
@@ -1424,19 +1424,19 @@
    "name": "Rampage",
    "effect": "Final DMG dealt increases by <color=#F74848>30%</color>. This effect is removed at the start of next turn."
   },
-  "167906": {
+  "6012449": {
    "name": "Undying",
    "effect": "Body is immune to <buf ID=900109>[Execution]</buf> effect. When any part suffers overdamage, triggers <buf ID=900003>[Guts]</buf>, locking at <color=#F74848>1</color> HP. Consumes <color=#F74848>1</color> stack upon activation. Stacks up to a maximum of <color=#F74848>3</color> times."
   },
-  "167907": {
+  "900012": {
    "name": "Move Again",
    "effect": "Can move again with remaining movement. Cannot attack after moving."
   },
-  "167908": {
+  "13000180": {
    "name": "Re-Act Prohibition",
    "effect": "Cannot trigger <buf ID=900004>[Re-ATK]</buf> or <buf ID=900005>[Re-Act]</buf>."
   },
-  "175900": {
+  "4013502": {
    "name": "Effective Data",
    "effect": "Can be consumed to enhance [Niall]'s skill effects. For each stack consumed, the attack's DMG dealt and Critical Hit chance increase by <color=#F74848>2.5%</color>, stacking up to <color=#F74848>30</color> times."
   },
@@ -1444,40 +1444,40 @@
    "name": "DMG Immunity",
    "effect": "Negates DMG dealt from a single attack. This effect is removed after triggering."
   },
-  "175902": {
+  "900177": {
    "name": "Percentage HP Reduction",
    "effect": "Directly reduces HP by a percentage. This effect is not affected by <buf ID=900017>[Fixed DMG]</buf> modifiers or <buf ID=175901>[DMG Immunity]</buf> effects."
   },
-  "185900": {
+  "2022502": {
    "name": "Bunker",
    "effect": "Cannot move. Final DMG taken and percentage <buf ID=900017>[Fixed DMG]</buf> taken are reduced by <color=#F74848>10%</color>. Flamethrower ATK increases by <color=#F74848>15%</color>. Flamethrower attack range becomes a fixed-direction <color=#F74848>5</color>-tile fan-shaped area and all tiles are treated as <buf ID=900011>[Ideal Range]</buf>. This state ends automatically if an arm is destroyed."
   },
-  "185901": {
+  "2022512": {
    "name": "War Flame",
-   "effect": "DMG taken is reduced by <color=#F74848>3%</color>, stacking up to <color=#F74848>6</color> times. When possessing <color=#F74848>4</color> or more stacks, can use command skill <skill ID=185952>[Rapid Raid]</skill>."
+   "effect": "DMG taken is reduced by <color=#F74848>3%</color>, stacking up to <color=#F74848>6</color> times. When possessing <color=#F74848>4</color> or more stacks, can use command skill <skill ID=2022511>[Rapid Raid]</skill>."
   },
-  "185902": {
+  "2022042": {
    "name": "Flame Fusion",
-   "effect": "While in <buf ID=185900>[Bunker]</buf> state, can use Flamethrower to launch a <buf ID=900002>[Link Attack]</buf>, dealing <color=#F74848>0.3</color>x DMG. <color=#F74848>1</color> stack is removed upon triggering. Can stack up to <color=#F74848>2</color> times."
+   "effect": "While in <buf ID=2022502>[Bunker]</buf> state, can use Flamethrower to launch a <buf ID=900002>[Link Attack]</buf>, dealing <color=#F74848>0.3</color>x DMG. <color=#F74848>1</color> stack is removed upon triggering. Can stack up to <color=#F74848>2</color> times."
   },
-  "185903": {
+  "2022084": {
    "name": "Thermal Corrosion",
    "effect": "When actively attacked, this unit takes <buf ID=900017>[Fixed DMG]</buf> equal to <color=#F74848>15%</color> of the [Alena]'s Shield arm's max HP to all parts after combat. This effect can trigger up to <color=#F74848>5</color> times and is removed after <color=#F74848>1</color> turn."
   },
-  "185904": {
+  "2022075": {
    "name": "Blazing Barrier",
-   "effect": "DMG taken is reduced by <color=#F74848>10%</color>. When attacked, deals <buf ID=900017>[Fixed DMG]</buf> equal to <color=#F74848>10%</color> of own max HP to all parts of the attacker and grants [Alena] <color=#F74848>1</color> stack of <buf ID=185901>[War Flame]</buf>. This effect is removed after triggering."
+   "effect": "DMG taken is reduced by <color=#F74848>10%</color>. When attacked, deals <buf ID=900017>[Fixed DMG]</buf> equal to <color=#F74848>10%</color> of own max HP to all parts of the attacker and grants [Alena] <color=#F74848>1</color> stack of <buf ID=2022512>[War Flame]</buf>. This effect is removed after triggering."
   },
-  "185905": {
+  "2022463": {
    "name": "Flame Surge",
    "effect": "Reduces AP cost of Flamethrower active attacks by <color=#F74848>1</color>, to a minimum of <color=#F74848>1</color> AP. Consumes <color=#F74848>1</color> stack upon triggering. Stacks up to <color=#F74848>2</color> times."
   },
-  "173900": {
+  "8002561": {
    "name": "Mech Form",
    "kind": "form",
    "effect": "Can only use Assault, Melee and Ranged weapons. DMG dealt increases by <color=#F74848>+20%</color>, DMG taken is reduced by <color=#F74848>20%</color>, Critical Hit chance increases by <color=#F74848>10%</color>."
   },
-  "173901": {
+  "8002571": {
    "name": "Cruise Form",
    "kind": "form",
    "effect": "Weapons are fixed to <buf ID=173908>[Night Ember]</buf> and <buf ID=173909>[Mystic Arc]</buf> and the weapon loadout cannot be changed. Movement type becomes <buf ID=173902>[Flying]</buf>. Movement <color=#F74848>+1</color>, Dodge Rate increases by <color=#F74848>20%</color>."
@@ -1486,23 +1486,23 @@
    "name": "Flying",
    "effect": "Ignores low obstacles and unit collision while moving, and can stop over low obstacles. Melee weapons can attack flying targets. Immune to melee attacks. Does not trigger ground-based terrain effects. Vision can span over low obstacles in Mist Mode."
   },
-  "173903": {
+  "8002503": {
    "name": "Shift Energy",
-   "effect": "Can be used for <buf ID=173904>[Configuration Shift]</buf>. Stacks up to <color=#F74848>5</color> times."
+   "effect": "Can be used for <buf ID=900181>[Configuration Shift]</buf>. Stacks up to <color=#F74848>5</color> times."
   },
-  "173904": {
+  "900181": {
    "name": "Configuration Shift",
-   "effect": "Shifts the ST form based on the situation. Can use <skill ID=173958>[Mech Form Shift]</skill> or <skill ID=173959>[Cruise Form Shift]</skill> at the end of an action."
+   "effect": "Shifts the ST form based on the situation. Can use <skill ID=8002502>[Mech Form Shift]</skill> or <skill ID=8002501>[Cruise Form Shift]</skill> at the end of an action."
   },
-  "173905": {
+  "8002059": {
    "name": "Steady Guard",
    "effect": "Final DMG taken is reduced by <color=#F74848>50%</color>. This effect is removed after triggering."
   },
-  "173906": {
+  "8002073": {
    "name": "Offense Boost",
    "effect": "DMG dealt increases by <color=#F74848>25%</color> for this action. This effect is removed after this action."
   },
-  "173907": {
+  "8002074": {
    "name": "Evasion Boost",
    "effect": "Dodge Rate increases by <color=#F74848>15%</color> for this action. This effect is removed after this action."
   },
@@ -1512,29 +1512,25 @@
   },
   "173908": {
    "name": "Night Ember",
-   "effect": "Fixed Machine Gun type weapon equipped in <buf ID=173901>[Cruise Form]</buf>."
+   "effect": "Fixed Machine Gun type weapon equipped in <buf ID=8002571>[Cruise Form]</buf>."
   },
   "173909": {
    "name": "Mystic Arc",
-   "effect": "Fixed Alter-Blade type weapon equipped in <buf ID=173901>[Cruise Form]</buf>."
+   "effect": "Fixed Alter-Blade type weapon equipped in <buf ID=8002571>[Cruise Form]</buf>."
   },
-  "183900": {
+  "4014509": {
    "name": "Resonance Node",
    "effect": "Designated unit to assist [Sylar]. When this unit is within [Sylar]'s Rail Gun skill range, [Sylar]'s attack ignores the target's standard <buf ID=900160>[DMG Reduction]</buf> effect, and DMG Dealt and Hit Rate are increased by <color=#F74848>10%</color>."
   },
-  "183901": {
+  "4014505": {
    "name": "Hunter Mode",
-   "effect": "DMG Dealt increases by <color=#F74848>30%</color> and Critical Hit chance increases by <color=#F74848>20%</color> while using Rail Gun. Critical Hit chance additionally increases by <color=#F74848>20%</color> against Boss units. Rail Gun skill range and AoE increase by <color=#F74848>+2</color> (<color=#F74848>+1</color> for <skill ID=183506>[Petal Storm]</skill> and <skill ID=183501>[Death Ray]</skill>). Movement decreases by <color=#F74848>-2</color> and Final DMG Taken increases by <color=#F74848>+100%</color>."
+   "effect": "DMG Dealt increases by <color=#F74848>30%</color> and Critical Hit chance increases by <color=#F74848>20%</color> while using Rail Gun. Critical Hit chance additionally increases by <color=#F74848>20%</color> against Boss units. Rail Gun skill range and AoE increase by <color=#F74848>+2</color> (<color=#F74848>+1</color> for <skill ID=401408>[Petal Storm]</skill> and <skill ID=401401>[Death Ray]</skill>). Movement decreases by <color=#F74848>-2</color> and Final DMG Taken increases by <color=#F74848>+100%</color>."
   },
-  "183902": {
-   "name": "System Failure",
-   "effect": "Incapacitated, cannot move or attack."
-  },
-  "184900": {
+  "1022501": {
    "name": "Edge Momentum",
    "effect": "Holds <color=#F74848>8</color> stacks or more to enhance active skills effect. Can consume <color=#F74848>5</color> stacks to trigger <buf ID=184902>[Breakthrough]</buf> for active skills. Stacks up to <color=#F74848>15</color> times. <color=#F74848>3</color> stacks are removed at the end of turn."
   },
-  "184901": {
+  "1022508": {
    "name": "Razor Feather",
    "effect": "Chainsaw DMG Dealt increases by <color=#F74848>5%</color>, stacking up to <color=#F74848>5</color> times."
   },
@@ -1542,7 +1538,7 @@
    "name": "Breakthrough",
    "effect": "Greatly improves active skills effect."
   },
-  "184903": {
+  "1022052": {
    "name": "Laceration",
    "effect": "DMG Taken from Chainsaw attack increases by <color=#F74848>5%</color>, stacking up to <color=#F74848>4</color> times. This effect is removed at the end of turn."
   },
@@ -1558,11 +1554,11 @@
    "name": "Tracing Mark",
    "effect": "Prevents this unit from entering <buf ID=900033>[Stealth]</buf> and reduces Dodge Rate by <color=#F74848>15%</color>, lasting for <color=#F74848>1</color> turn."
   },
-  "181900": {
+  "1023509": {
    "name": "Opening",
    "effect": "When [Sonya] uses a Melee weapon to attack this target from the direction indicated by this debuff and lands a hit, DMG Dealt increases by <color=#F74848>20%</color> and the attack scores a Critical Hit. This effect is removed after combat."
   },
-  "181901": {
+  "1023508": {
    "name": "Fighting Spirit",
    "effect": "DMG Dealt increases by <color=#F74848>4%</color>, stacking up to <color=#F74848>6</color> times. Can be consumed to enhance [Sonya]'s skills."
   },
@@ -1594,19 +1590,19 @@
    "name": "Survival Protocol 1",
    "effect": "When attacked, for each combo hit dodged, restores <color=#F74848>1%</color> HP to undestroyed parts after combat, up to a maximum of <color=#F74848>8%</color>."
   },
-  "187900": {
+  "900189": {
    "name": "Predation",
    "effect": "Hit Chance increases by <color=#F74848>0.5%</color> and DMG Dealt increases by <color=#F74848>1%</color> per stack, up to <color=#F74848>30</color> stacks."
   },
-  "187901": {
+  "2023051": {
    "name": "Blood Pact",
-   "effect": "Hit Weighting of own body part <color=#F74848>+45</color>. After each [Basic Attack], suffers <buf ID=175902>[Percentage HP Reduction]</buf> equal to <color=#F74848>10%</color> max HP to all parts. This effect will not destroy parts. Shotgun bullets <color=#F74848>+2</color>."
+   "effect": "Hit Weighting of own body part <color=#F74848>+45</color>. After each [Basic Attack], suffers <buf ID=900177>[Percentage HP Reduction]</buf> equal to <color=#F74848>10%</color> max HP to all parts. This effect will not destroy parts. Shotgun bullets <color=#F74848>+2</color>."
   },
-  "187902": {
+  "2023065": {
    "name": "Last Whisper",
-   "effect": "Immune to all DMG. After each active attack, triggers <buf ID=900004>[Re-ATK]</buf>, allowing movement of <color=#F74848>1</color> tile before attacking. This effect has no trigger limit while active and is removed at the end of turn. Gains <buf ID=187903>[Energy Blockade]</buf> for <color=#F74848>1</color> turn after this effect is removed."
+   "effect": "Immune to all DMG. After each active attack, triggers <buf ID=900004>[Re-ATK]</buf>, allowing movement of <color=#F74848>1</color> tile before attacking. This effect has no trigger limit while active and is removed at the end of turn. Gains <buf ID=2023069>[Energy Blockade]</buf> for <color=#F74848>1</color> turn after this effect is removed."
   },
-  "187903": {
+  "2023069": {
    "name": "Energy Blockade",
    "effect": "Cannot gain AP."
   },
@@ -2213,146 +2209,146 @@
    "name": "Malfunction Implant",
    "effect": "When attacking with a Machine Gun, inflicts <color=#F74848>1</color> stack of <buf ID=531032>[Fire Control Delay]</buf> on the target, up to <color=#F74848>5</color> stacks."
   },
-  "182901": {
+  "1021411": {
    "name": "Boundless Hunt",
    "Ap": "0",
    "icon": "Icon_skill_order_1107",
-   "effect": "Uses a Shotgun to launch an Extra Strike, dealing <color=#F74848>0.25</color>x DMG to all targets within a <color=#F74848>2</color>-tile radius affected by <buf ID=182900>[Suppression]</buf>. This attack can also trigger the <buf ID=900004>[Re-ATK]</buf> effect of Mobile Warfare."
+   "effect": "Uses a Shotgun to launch an Extra Strike, dealing <color=#F74848>0.25</color>x DMG to all targets within a <color=#F74848>2</color>-tile radius affected by <buf ID=1021503>[Suppression]</buf>. This attack can also trigger the <buf ID=900004>[Re-ATK]</buf> effect of Mobile Warfare."
   },
   "182902": {
    "name": "Flurry Strike",
-   "effect": "Uses the opposite arm to launch an additional attack, dealing bonus DMG. The multiplier is increased by the <skill ID=182560>[Gun Heart, Blade Soul]</skill> passive line."
+   "effect": "Uses the opposite arm to launch an additional attack, dealing bonus DMG. The multiplier is increased by the <skill ID=102131>[Gun Heart, Blade Soul]</skill> passive line."
   },
   "160950": {
    "name": "Stance Adjustment",
    "Ap": "0",
    "icon": "Icon_skill_order_5137",
-   "effect": "Switches between <buf ID=160900>[GKD Stance]</buf> or <buf ID=160901>[Electric Eel Stance]</buf>."
+   "effect": "Switches between <buf ID=2021502>[GKD Stance]</buf> or <buf ID=2021503>[Electric Eel Stance]</buf>."
   },
-  "167950": {
+  "6012501": {
    "name": "Limit Break",
    "Ap": "3",
    "CD": "1",
    "icon": "Icon_skill_order_5167",
-   "effect": "At the end of turn, if not affected by <buf ID=167900>[Fate Hunt]</buf>, this skill's AP cost is reduced by <color=#F74848>3</color>. This effect is reset after use. This skill can only be activated when legs are intact. Jumps to an empty tile within <color=#F74848>4</color> adjacent tiles and gains <buf ID=167900>[Fate Hunt]</buf> and <buf ID=167901>[Chain Execution]</buf>. The trigger count for <buf ID=167904>[Suppression Attack]</buf> increases by <color=#F74848>3</color>, and remaining movement can be used to launch a <buf ID=900004>[Re-ATK]</buf>. This skill can be used <color=#F74848>1</color> time per turn."
+   "effect": "At the end of turn, if not affected by <buf ID=6012509>[Fate Hunt]</buf>, this skill's AP cost is reduced by <color=#F74848>3</color>. This effect is reset after use. This skill can only be activated when legs are intact. Jumps to an empty tile within <color=#F74848>4</color> adjacent tiles and gains <buf ID=6012509>[Fate Hunt]</buf> and <buf ID=6012519>[Chain Execution]</buf>. The trigger count for <buf ID=167904>[Suppression Attack]</buf> increases by <color=#F74848>3</color>, and remaining movement can be used to launch a <buf ID=900004>[Re-ATK]</buf>. This skill can be used <color=#F74848>1</color> time per turn."
   },
-  "185950": {
+  "2022501": {
    "name": "Bunker Down",
    "Ap": "0",
    "CD": "1",
    "icon": "Icon_skill_order_5169",
-   "effect": "Enters <buf ID=185900>[Bunker]</buf> state. Can continue to attack without moving. This state is cancelled if an arm is destroyed. Can use command skill <skill ID=185951>[Disengage]</skill>."
+   "effect": "Enters <buf ID=2022502>[Bunker]</buf> state. Can continue to attack without moving. This state is cancelled if an arm is destroyed. Can use command skill <skill ID=2022502>[Disengage]</skill>."
   },
-  "185951": {
+  "2022502": {
    "name": "Disengage",
    "Ap": "0",
    "CD": "0",
    "icon": "Icon_skill_order_5169",
-   "effect": "Exits <buf ID=185900>[Bunker]</buf> state. Can continue to move with remaining movement."
+   "effect": "Exits <buf ID=2022502>[Bunker]</buf> state. Can continue to move with remaining movement."
   },
-  "185952": {
+  "2022511": {
    "name": "Rapid Raid",
    "Ap": "0",
    "CD": "0",
    "icon": "Icon_skill_order_5170",
-   "effect": "Selects an empty tile within <color=#F74848>5</color> adjacent tiles and jumps to it, then triggers <buf ID=900005>[Re-Act]</buf>. If in <buf ID=185900>[Bunker]</buf> state, exits the state and resets the CD of <skill ID=185950>[Bunker Down]</skill>. This skill can only be used <color=#F74848>1</color> time per turn and only when legs are intact."
+   "effect": "Selects an empty tile within <color=#F74848>5</color> adjacent tiles and jumps to it, then triggers <buf ID=900005>[Re-Act]</buf>. If in <buf ID=2022502>[Bunker]</buf> state, exits the state and resets the CD of <skill ID=2022501>[Bunker Down]</skill>. This skill can only be used <color=#F74848>1</color> time per turn and only when legs are intact."
   },
-  "173950": {
+  "8002012": {
    "name": "Shadow Ray",
    "Ap": "3",
    "CD": "0",
    "icon": "Icon_skill_main_1118",
    "effect": "Uses a Machine Gun to attack a target, dealing <color=#F74848>1.25</color>x DMG. Critical Hit chance increases by <color=#F74848>20%</color> for this attack."
   },
-  "173951": {
+  "8002011": {
    "name": "Tainted Blade",
    "Ap": "3",
    "CD": "0",
    "icon": "Icon_skill_main_1162",
    "effect": "Uses an Alter-Blade to attack a target, dealing <color=#F74848>1.6</color>x DMG. This attack hits the part with the highest HP."
   },
-  "173952": {
+  "8002041": {
    "name": "Star Chaser",
    "Ap": "3",
    "CD": "0",
    "icon": "Icon_skill_order_1164",
    "effect": "Uses an Alter-Blade to attack a target within <color=#F74848>4</color> adjacent tiles, dealing <color=#F74848>1.3</color>x DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking. After the attack, selects an ally within <color=#F74848>4</color> adjacent tiles and warps back to them."
   },
-  "173953": {
+  "8002042": {
    "name": "Moon Raker",
    "Ap": "3",
    "CD": "0",
    "icon": "Icon_skill_order_1164",
    "effect": "Dashes <color=#F74848>4</color> tiles in the selected direction using <buf ID=173909>[Mystic Arc]</buf>, dealing <color=#F74848>1.2</color>x AoE DMG to all targets hit (including flying units). This attack prioritizes hitting the body. Before activation, selects an ally within <color=#F74848>2</color> adjacent tiles to warp to this unit's side after the dash. This skill can only be used <color=#F74848>1</color> time per turn."
   },
-  "173954": {
+  "8002061": {
    "name": "Void Crown",
    "Ap": "4",
    "CD": "0",
    "icon": "Icon_skill_order_1165",
-   "effect": "Uses an Alter-Blade to attack all targets within an <range type=2>I-shaped (3x1-tile)</range> or <range type=2>L-shaped (3x1-tile)</range> area ahead. Before attacking, can Aim at each target separately, dealing <color=#F74848>1.6</color>x AoE DMG. If this attack destroys a part, gains <color=#F74848>1</color> <buf ID=173903>[Shift Energy]</buf>."
+   "effect": "Uses an Alter-Blade to attack all targets within an <range type=2>I-shaped (3x1-tile)</range> or <range type=2>L-shaped (3x1-tile)</range> area ahead. Before attacking, can Aim at each target separately, dealing <color=#F74848>1.6</color>x AoE DMG. If this attack destroys a part, gains <color=#F74848>1</color> <buf ID=8002503>[Shift Energy]</buf>."
   },
-  "173955": {
+  "8002062": {
    "name": "Falling Sky",
    "Ap": "4",
    "CD": "0",
    "icon": "Icon_skill_main_1129",
-   "effect": "Uses a Machine Gun to attack a target, dealing <color=#F74848>1.45</color>x DMG. Hit Weighting of the part with the lowest HP <color=#F74848>+50</color>. If this attack destroys a part, gains <color=#F74848>1</color> <buf ID=173903>[Shift Energy]</buf>."
+   "effect": "Uses a Machine Gun to attack a target, dealing <color=#F74848>1.45</color>x DMG. Hit Weighting of the part with the lowest HP <color=#F74848>+50</color>. If this attack destroys a part, gains <color=#F74848>1</color> <buf ID=8002503>[Shift Energy]</buf>."
   },
-  "173956": {
+  "8002081": {
    "name": "Night Requiem",
    "Ap": "4",
    "CD": "0",
    "icon": "Icon_skill_main_1105",
    "effect": "Uses a Machine Gun to attack a target, dealing <color=#F74848>1.2</color>x DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before combat. This attack prioritizes the aimed part. If this unit is not destroyed after combat, all parts are restored to their pre-combat HP and the target suffers <buf ID=900017>[Fixed DMG]</buf> equal to the DMG this unit took during combat."
   },
-  "173957": {
+  "8002082": {
    "name": "Sky's Edge",
    "Ap": "4",
    "CD": "0",
    "icon": "Icon_skill_order_1166",
    "effect": "Selects a target within <color=#F74848>4</color> tiles in a straight line and dashes toward it, using <buf ID=173909>[Mystic Arc]</buf> to deal <color=#F74848>1.4</color>x AoE DMG to the target's body. This attack cannot miss, and deals <color=#F74848>35%</color> of that DMG as <buf ID=900017>[Fixed DMG]</buf> to the bodies of all enemy units within <color=#F74848>2</color> adjacent tiles of the target. The AP cost of this skill increases by <color=#F74848>1</color> after each use, and resets when shifting to another form."
   },
-  "173958": {
+  "8002502": {
    "name": "Mech Form Shift",
    "Ap": "0",
    "CD": "0",
    "icon": "Icon_skill_order_5171",
-   "effect": "Consumes <color=#F74848>2</color> <buf ID=173903>[Shift Energy]</buf> to shift to <buf ID=173900>[Mech Form]</buf>, allowing another action with full Movement."
+   "effect": "Consumes <color=#F74848>2</color> <buf ID=8002503>[Shift Energy]</buf> to shift to <buf ID=8002561>[Mech Form]</buf>, allowing another action with full Movement."
   },
-  "173959": {
+  "8002501": {
    "name": "Cruise Form Shift",
    "Ap": "0",
    "CD": "0",
    "icon": "Icon_skill_order_5172",
-   "effect": "Consumes <color=#F74848>2</color> <buf ID=173903>[Shift Energy]</buf> to shift to <buf ID=173901>[Cruise Form]</buf>, allowing another action with full Movement."
+   "effect": "Consumes <color=#F74848>2</color> <buf ID=8002503>[Shift Energy]</buf> to shift to <buf ID=8002571>[Cruise Form]</buf>, allowing another action with full Movement."
   },
-  "183950": {
+  "4014511": {
    "name": "Resonance Link",
    "Ap": "0",
    "icon": "Icon_skill_order_5176",
-   "effect": "Designates <color=#F74848>1</color> ally within <color=#F74848>4</color> adjacent tiles as <buf ID=183900>[Resonance Node]</buf>. Can continue to act with remaining movement. This skill can only be used <color=#F74848>1</color> time per battle."
+   "effect": "Designates <color=#F74848>1</color> ally within <color=#F74848>4</color> adjacent tiles as <buf ID=4014509>[Resonance Node]</buf>. Can continue to act with remaining movement. This skill can only be used <color=#F74848>1</color> time per battle."
   },
-  "183951": {
+  "4014501": {
    "name": "Hunter Mode",
    "Ap": "0",
    "CD": "1",
    "icon": "Icon_skill_order_5177",
-   "effect": "Gains <color=#F74848>1</color> AP and enters <buf ID=183901>[Hunter Mode]</buf>. Triggers <buf ID=900004>[Re-ATK]</buf> after activation. While in <buf ID=183901>[Hunter Mode]</buf>, can use command skill <skill ID=183952>[Tactical Reboot]</skill>."
+   "effect": "Gains <color=#F74848>1</color> AP and enters <buf ID=4014505>[Hunter Mode]</buf>. Triggers <buf ID=900004>[Re-ATK]</buf> after activation. While in <buf ID=4014505>[Hunter Mode]</buf>, can use command skill <skill ID=4014502>[Tactical Reboot]</skill>."
   },
-  "183952": {
+  "4014502": {
    "name": "Tactical Reboot",
    "Ap": "0",
    "CD": "0",
    "icon": "Icon_skill_order_5175",
-   "effect": "Exits <buf ID=183901>[Hunter Mode]</buf>. Can continue to move with remaining movement. Movement <color=#F74848>+2</color> for this action. Reloads all Rail Gun ammo at the start of next action."
+   "effect": "Exits <buf ID=4014505>[Hunter Mode]</buf>. Can continue to move with remaining movement. Movement <color=#F74848>+2</color> for this action. Reloads all Rail Gun ammo at the start of next action."
   },
-  "183953": {
+  "4014521": {
    "name": "Attraction Beacon",
    "Ap": "1",
    "CD": "1",
    "icon": "Icon_skill_order_1171",
-   "effect": "[Sylar] uses <skill ID=183506>[Petal Storm]</skill> at the selected tile, with skill multiplier reduced by <color=#F74848>-0.4</color>x. This attack does not consume AP or Rail Gun ammo and is treated as an active attack by [Sylar]. Can continue to act with remaining movement."
+   "effect": "[Sylar] uses <skill ID=401408>[Petal Storm]</skill> at the selected tile, with skill multiplier reduced by <color=#F74848>-0.4</color>x. This attack does not consume AP or Rail Gun ammo and is treated as an active attack by [Sylar]. Can continue to act with remaining movement."
   },
   "608011": {
    "name": "High Altitude Detection",
@@ -2368,28 +2364,28 @@
    "icon": "Icon_skill_order_5114",
    "effect": "Disperses Arashi Fog in a <color=#F74848>3x3</color> area, lasting for <color=#F74848>1</color> turn. Then triggers <buf ID=900004>[Re-ATK]</buf> in place."
   },
-  "187950": {
+  "2023501": {
    "name": "Dual Shotgun Attack",
    "Ap": "2",
    "CD": "0",
    "icon": "Icon_skill_main_1004",
    "effect": "Uses both Shotguns to simultaneously attack a target, dealing <color=#F74848>2x0.55</color> DMG."
   },
-  "187951": {
+  "2023502": {
    "name": "Dual Shotgun Flurry Strike",
    "Ap": "0",
    "CD": "0",
    "icon": "Icon_skill_main_1004",
    "effect": "Uses both Shotguns to simultaneously attack a target, dealing <color=#F74848>2x0.2</color> DMG."
   },
-  "187952": {
+  "2023503": {
    "name": "Dual Shotgun Retaliation",
    "Ap": "0",
    "CD": "0",
    "icon": "Icon_skill_main_1004",
    "effect": "Uses both Shotguns to simultaneously retaliate against a target, dealing <color=#F74848>2x0.4</color> DMG."
   },
-  "187953": {
+  "2023504": {
    "name": "Dual Shotgun Link Attack",
    "Ap": "0",
    "CD": "0",
