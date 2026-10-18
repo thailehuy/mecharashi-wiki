@@ -1,5 +1,5 @@
 window.RDTotalsData = {
-  "_source": "data/screenshots/mined/mecharashi.db table rd_totals",
+  "_source": "data/screenshots/MRT_FieldWiki/source/mecharashi.db table rd_totals",
   "_notes": [
     "total = sum of every R&D node stat for the target, i.e. a fully researched tree.",
     "*Add stats are flat, *Multi stats are fractions (0.2 = +20%).",

@@ -267,6 +267,18 @@ for specific units, `--version` to fill in the game version, `--full` to
 ask for every text even where the wiki has it, and `--force` to overwrite a
 form (they're kept otherwise, as they may be half translated).
 
+`python3 scripts/build_item_intake.py` does the same for each new signature
+weapon (`data/intake/weapon-<SSSR ID>.md`, with its UR version) and crafted
+backpack (`data/intake/backpack-<ID>.md`), with the Workshop recipe already
+in `crafting` form and any new material listed for a name.
+`python3 scripts/update_cn.py` runs the whole CN update: mining, the banner
+list and art, then both intake scripts.
+
+When Global reaches that version, `python3 scripts/update_global.py` mines
+the global client and `take_translations.py` swaps the version's fan
+translations for the official text (its output lists every change), before
+rebuilding recipes, bosses, drops and banners.
+
 ## Adding a pilot
 
 Fill in its intake form (above) and ask Claude to add the pilot from it, or

@@ -7042,7 +7042,7 @@
           "skill": {
             "ID": "401105",
             "name": "Hidden Arrow",
-            "SpecificEffects": "When an ally possessing <buf ID=4011502>[Appointed]</buf> is attacked and drawn into combat, can use <color=#F74848>2</color> Cutters to launch a <skill ID=4011051>[Link Retaliation]</skill>, dealing <color=#F74848>0.5x</color> DMG <color=#F74848>2</color> times. Can trigger up to <color=#F74848>2</color> times per turn.",
+            "SpecificEffects": "When an ally possessing a <buf ID=4011502>[Appointed]</buf> is attacked and drawn into combat, can use <color=#F74848>2</color> Cutters to launch a <buf ID=900061>[Link Retaliation]</buf>, dealing <color=#F74848>0.5x</color> DMG <color=#F74848>2</color> times. Can trigger up to <color=#F74848>2</color> times per turn.",
             "SkillIcon": "Icon_skill_passive_5258",
             "icon": "Icon_skill_passive_5258"
           }
@@ -7175,7 +7175,7 @@
           "skill": {
             "ID": "401101",
             "name": "Proxy Strike",
-            "describe": "Uses a Cutter to attack all targets within the selected <color=#F74848>2</color>-tile range, dealing <color=#F74848>1.2x</color> AoE DMG.",
+            "describe": "Uses a Cutter to attack all targets within the selected <range type=2>2-tile range</range>, dealing <color=#F74848>1.2x</color> AoE DMG.",
             "SkillIcon": "Icon_skill_order_1132",
             "icon": "Icon_skill_order_1132",
             "Ap": "3",
@@ -34817,7 +34817,7 @@
           "skill": {
             "ID": "601104",
             "name": "Challenge Formation",
-            "describe": "Uses a Polearm to attack all targets within an I-shaped (<color=#F74848>3x1</color>-tile) area or L-shaped (<color=#F74848>3x1</color>-tile) area ahead, dealing <color=#F74848>0.9x</color> AoE DMG. Gains <color=#F74848>1</color> stack of <buf ID=6011042>[Upper Hand]</buf> for each target hit, stacking up to <color=#F74848>3</color> times.",
+            "describe": "Uses a Polearm to attack all targets within an <range type=1>I-shaped (3x1-tile) area</range> or L-shaped (<color=#F74848>3</color>x1-tile) area ahead, dealing <color=#F74848>0.9x</color> AoE DMG. Gains <color=#F74848>1</color> stack of <buf ID=6011042>[Upper Hand]</buf> for each target hit, stacking up to <color=#F74848>3</color> times.",
             "SkillIcon": "Icon_skill_order_1104",
             "icon": "Icon_skill_order_1104",
             "Ap": "3",
@@ -34841,7 +34841,7 @@
           "skill": {
             "ID": "601106",
             "name": "Lightning Hunt",
-            "describe": "Uses a Polearm to <range type=1>thrust 4 tiles forward</range>, dealing <color=#F74848>1.7x</color> DMG to the first target hit and inflicting <buf ID=6011014>[Provocation]</buf>, lasting for <color=#F74848>2</color> turns.",
+            "describe": "Uses a Polearm to <range type=1>thrust 4 tiles forward</range>, dealing <color=#F74848>1.7x</color> DMG to the <color=#F74848>first</color> target hit and inflicting <buf ID=6011014>[Provocation]</buf>, lasting for <color=#F74848>2</color> turns.",
             "SkillIcon": "Icon_skill_order_1102",
             "icon": "Icon_skill_order_1102",
             "Ap": "3",
