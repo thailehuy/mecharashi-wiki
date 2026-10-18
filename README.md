@@ -17,6 +17,7 @@ Images and icons live in a separate repo, [mecharashi-wiki-assets](https://githu
 | `data/backpacks/icons/`, `data/backpacks/materials/` | Backpack and crafting-material icons |
 | `data/accessories/icons/` | Accessory icons |
 | `data/items/` | Item icons (`Icon_item_*`, `Icon_currency_*`, …) for boss drops, extracted from the game's bundles by `scripts/extract_item_icons.py` |
+| `data/banners/` | Gacha banner art (`<prefab>.jpg`), each composited from its 2+ split textures by `scripts/extract_banner_images.py` |
 | `data/background/` | Rarity frame backgrounds (`quality-{r,sr,ssr,sssr}.png`) |
 
 Add new images to the matching folder in that repo; pushing its `main` deploys them.
@@ -39,6 +40,7 @@ Add new images to the matching folder in that repo; pushing its `main` deploys t
 - **Builder** — mech loadout theorycrafting tool, incl. 4 accessory slots per weapon (at least 1 trigger TA + 1 reaction RA) with each TA + RA chain's trigger chance; state is encoded into a shareable Build UID (URL hash), not localStorage
 - **R&D Bonus** — max bonuses from a fully researched R&D tree, by pilot class, ST weight class and weapon type
 - **Features** — every R&D feature (pilot / ST / weapon), split by pilot class, ST weight class and weapon R&D tree, with port, effect and unlock cost
+- **Banner History** — every pilot and ST gacha banner up to v2.5, by patch, with dates, featured/selectable units and New/Rerun tags; built from the mined game tables by `scripts/build_banners.py`
 - **Bosses** — every Armed Conquest and Clearance Ops boss once, A–Z, listing each season/chapter stage it's in (linked) and the ST it fields there
 - **Armed Conquest** — boss line-ups of every Armed Conquest season with HP per difficulty; each season has its own page (`armedconquest/<season>/`) listing every boss's skills from the mined DB, plus what the Armed Conquest guide adds for AC1–10 (skill cards with effects, buffs, minions, bounties, Extreme modifiers, clues)
 - **Clearance Ops** — boss line-ups, HP and turn limit of every Clearance Ops chapter (1–17); each chapter has its own page (`clearanceops/<chapter>/`) listing every boss's skills from the mined DB, plus the chapter's companions (Black Widow in CO1)
