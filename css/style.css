@@ -3731,8 +3731,19 @@ a.boss-avatar { display: block; }
   vertical-align: middle;
 }
 
-.banner-card {
+/* A pilot banner and its signature ST banner, which share dates. */
+.banner-box {
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  background-color: #14141a;
+  border: 1px solid #2a2a4a;
+  border-radius: 10px;
+}
+
+.banner-card {
   background-color: #1a1a20;
   border: 1px solid #2a2a4a;
   border-radius: 8px;

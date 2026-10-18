@@ -59,8 +59,10 @@ Pages.banners = {
       if (b.key === 'standard') return -1;
       return bannerVersionKey(b.key) - bannerVersionKey(a.key);
     });
-    groups.forEach(function (g) {
-      g.banners.sort(function (a, b) { return self._before(a, b) ? -1 : self._before(b, a) ? 1 : 0; });
+    var pastPairs = {};
+    groups.slice().reverse().forEach(function (g) {
+      g.boxes = self._pairBanners(g.banners, pastPairs);
+      g.boxes.sort(function (a, b) { return self._before(a[0], b[0]) ? -1 : self._before(b[0], a[0]) ? 1 : 0; });
     });
 
     var kindNav = '<div class="filter-group"><span class="filter-label">Type</span><div class="filter-values">' +
@@ -80,7 +82,7 @@ Pages.banners = {
         '<div class="ac-section banner-section" data-version="' + g.key + '">' +
           '<h2 class="ac-section-title">' + title + '</h2>' +
           '<div class="row g-3">' +
-            g.banners.map(function (b) { return self._cardHtml(b, debut); }).join('') +
+            g.boxes.map(function (box) { return self._boxHtml(box, debut); }).join('') +
           '</div>' +
         '</div>'
       );
@@ -122,6 +124,51 @@ Pages.banners = {
     return a.id < b.id;
   },
 
+  // Each pilot banner runs alongside a signature ST banner with the same dates:
+  // pair them by type, then by a pairing seen in an earlier run (for reruns),
+  // then by matching end date, then in pool order. Standard banners stay alone.
+  // pastPairs maps pilot -> ST featured unit and is filled as groups are paired.
+  _pairBanners: function (banners, pastPairs) {
+    var self = this;
+    var sorted = banners.slice().sort(function (a, b) { return self._before(a, b) ? -1 : self._before(b, a) ? 1 : 0; });
+    var pilots = sorted.filter(function (b) { return b.kind === 'pilot'; });
+    var sts = sorted.filter(function (b) { return b.kind === 'st'; });
+    var lead = function (b) { return (b.featured || [])[0]; };
+    var paired = {};
+    var boxes = [];
+    var match = function (test) {
+      pilots.forEach(function (p) {
+        if (paired['pilot:' + p.id] || p.type === 'standard') return;
+        var st = sts.find(function (s) {
+          return !paired['st:' + s.id] && s.type === p.type && (s.start || '') === (p.start || '') && test(p, s);
+        });
+        if (!st) return;
+        paired['pilot:' + p.id] = paired['st:' + st.id] = true;
+        if (lead(p) && lead(st)) pastPairs[lead(p)] = lead(st);
+        boxes.push([p, st]);
+      });
+    };
+    match(function (p, s) { return lead(p) && pastPairs[lead(p)] === lead(s); });
+    match(function (p, s) { return p.start && (p.end || '') === (s.end || ''); });
+    match(function (p, s) { return !lead(s) || !Object.keys(pastPairs).some(function (k) { return pastPairs[k] === lead(s); }); });
+    match(function () { return true; });
+    sorted.forEach(function (b) {
+      if (!paired[b.kind + ':' + b.id]) boxes.push([b]);
+    });
+    return boxes;
+  },
+
+  _boxHtml: function (box, debut) {
+    var self = this;
+    return (
+      '<div class="col-12 col-md-6 col-xl-4 banner-box-wrap">' +
+        '<div class="banner-box">' +
+          box.map(function (b) { return self._cardHtml(b, debut); }).join('') +
+        '</div>' +
+      '</div>'
+    );
+  },
+
   _cardHtml: function (b, debut) {
     var self = this;
     var esc = function (s) { return $('<span>').text(s).html(); };
@@ -145,7 +192,7 @@ Pages.banners = {
     var rowUnits = featured.concat(overlayHtml ? [] : options);
 
     return (
-      '<div class="col-12 col-md-6 col-xl-4 banner-card-wrap" data-kind="' + b.kind + '">' +
+      '<div class="banner-card-wrap" data-kind="' + b.kind + '">' +
         '<div class="banner-card">' +
           '<div class="banner-card-img' + (overlayHtml ? '' : ' banner-card-img-zoom') + '" data-name="' + esc(b.name) + '">' +
             '<img src="' + bannerImageSrc(b) + '" alt="' + esc(b.name) + '" loading="lazy" />' +
@@ -209,10 +256,15 @@ Pages.banners = {
       var $s = $(this);
       var showSection = !anyVersion || !!versions[String($s.data('version'))];
       var visible = 0;
-      $s.find('.banner-card-wrap').each(function () {
-        var show = showSection && (!anyKind || !!kinds[$(this).data('kind')]);
-        $(this).toggle(show);
-        if (show) visible++;
+      $s.find('.banner-box-wrap').each(function () {
+        var shown = 0;
+        $(this).find('.banner-card-wrap').each(function () {
+          var show = showSection && (!anyKind || !!kinds[$(this).data('kind')]);
+          $(this).toggle(show);
+          if (show) shown++;
+        });
+        $(this).toggle(shown > 0);
+        visible += shown;
       });
       $s.toggle(visible > 0);
     });
