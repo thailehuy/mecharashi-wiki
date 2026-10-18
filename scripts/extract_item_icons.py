@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-"""Extract the item icons the boss drops (bosses.json) and crafting materials
-(data/db/materials.json) use from the game's bundles into the assets repo
+"""Extract the item icons the boss drops (bosses.json), crafting materials
+(data/db/materials.json) and story stage rewards (data/story/story.json) use from the game's bundles into the assets repo
 (data/items/<icon>.png).
 
 The icons are sprites in the game's ui_uiimages_uiicons_itemtype_abs_* bundles:
@@ -27,6 +27,7 @@ import settings  # noqa: E402
 
 BOSSES = os.path.join(HERE, 'bosses.json')
 MATERIALS = os.path.join(ROOT, 'data', 'db', 'materials.json')
+STORY = os.path.join(ROOT, 'data', 'story', 'story.json')
 ASSETS_DIR = os.environ.get('ASSETS_DIR', os.path.join(os.path.dirname(ROOT), 'mecharashi-wiki-assets'))
 OUT_DIR = os.path.join(ASSETS_DIR, 'data', 'items')
 BUNDLE_DIR = os.path.join(settings.GAME_DIR, 'Mecharashi_Data', 'StreamingAssets', 'ExportAssetBundle')
@@ -35,7 +36,7 @@ PREFIX = 'ui_uiimages_uiicons_itemtype_abs_'
 
 
 def needed_icons():
-    """Every item icon a drop in bosses.json or a crafting material uses."""
+    """Every item icon a drop in bosses.json, a crafting material or a story reward uses."""
     with open(BOSSES, encoding='utf-8') as f:
         data = json.load(f)
     sets = [st['drops'] for c in data['clearance_ops'] for st in c['stages'] if 'drops' in st]
@@ -43,6 +44,12 @@ def needed_icons():
     icons = {it['icon'] for d in sets for key in ('items', 'always', 'first') for it in d.get(key, []) if 'icon' in it}
     with open(MATERIALS, encoding='utf-8') as f:
         icons |= {m['item_icon'] for m in json.load(f).values() if 'item_icon' in m}
+    if os.path.exists(STORY):
+        with open(STORY, encoding='utf-8') as f:
+            story = json.load(f)
+        # Accessories' Icon_skill_* icons are pilot skill icons, already in the assets repo.
+        icons |= {r['icon'] for c in story['chapters'] for st in c['stages'] for r in st.get('rewards', [])
+                  if r['kind'] == 'item' and r.get('icon') and not r['icon'].startswith('Icon_skill_')}
     return icons
 
 

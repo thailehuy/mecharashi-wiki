@@ -4046,3 +4046,87 @@ a.boss-avatar { display: block; }
   margin-top: 0.5rem;
   font-variant-numeric: tabular-nums;
 }
+
+/* ── Story ────────────────────────────────────────────────────────── */
+.story-note { margin: 1rem 0; }
+.story-tab-n { font-size: 0.75em; opacity: 0.7; }
+
+.story-entries { display: flex; flex-direction: column; gap: 0.5rem; }
+.story-entry { scroll-margin-top: 80px; }
+.story-entry summary {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.15rem 0.75rem;
+  cursor: pointer;
+  list-style: none;
+}
+.story-entry summary::-webkit-details-marker,
+.story-chapter summary::-webkit-details-marker { display: none; }
+.story-entry summary::before,
+.story-chapter summary h3::before {
+  content: '\25B8';
+  display: inline-block;
+  width: 1rem;
+  color: #e94560;
+  transition: transform 0.15s;
+}
+.story-entry[open] summary::before,
+.story-chapter[open] summary h3::before { transform: rotate(90deg); }
+.story-entry-name { font-weight: 700; color: #ffffff; }
+.story-entry-brief { font-size: 0.85rem; font-style: italic; color: #8a8aa8; }
+.story-entry .lore-text { margin-top: 0.6rem; }
+.story-part-title {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #8a8aa8;
+  margin: 0.8rem 0 0.3rem;
+}
+.story-part-title:first-child { margin-top: 0; }
+.story-link { color: #deb072; text-decoration: none; border-bottom: 1px dotted #deb072; }
+.story-link:hover { color: #f0c890; }
+
+.story-chapter { margin-bottom: 0.75rem; scroll-margin-top: 80px; }
+.story-chapter summary { cursor: pointer; list-style: none; margin-bottom: 0; }
+.story-chapter[open] summary { margin-bottom: 0.75rem; }
+.story-chapter-sub { font-size: 0.8rem; color: #8a8aa8; }
+.story-chapter-intro { flex-basis: 100%; margin-top: 0.35rem; font-style: italic; }
+.story-chapter:not([open]) .story-chapter-intro { display: none; }
+.story-stages { display: flex; flex-direction: column; gap: 0.5rem; }
+.story-stage-head { display: flex; flex-wrap: wrap; align-items: center; gap: 0.25rem 0.6rem; }
+.story-stage-code {
+  padding: 0.05rem 0.5rem;
+  border-radius: 4px;
+  background-color: #e94560;
+  color: #ffffff;
+  font-size: 0.8rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+.story-stage-critical { background-color: #b45309; }
+.story-stage-encounter { background-color: #2a2a4a; color: #a0a0c8; font-weight: 600; }
+.story-stage-name { font-weight: 700; color: #ffffff; }
+.story-stage-meta { font-size: 0.8rem; color: #8a8aa8; }
+.story-stage-meta .bi { margin-right: 0.25rem; }
+.story-stage-text { margin-top: 0.4rem; }
+/* Under its chapter's title: the intro, stages and side missions sit one step in. */
+.story-chapter > :not(summary) { margin-left: 1.25rem; }
+.story-stage--encounter { padding: 0.4rem 0.7rem; margin-left: 1.25rem; background-color: #14141e; }
+.story-stage--encounter .story-stage-text p { font-size: 0.9rem; font-style: italic; }
+.story-stage--critical { border-color: #b45309; }
+.story-side-title {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 1.25rem 0 0.5rem;
+}
+.story-rewards .boss-gear-item img { width: 32px; height: 32px; }
+.story-rewards .story-reward-portrait { object-fit: cover; object-position: top; border-radius: 4px; }
+.story-reward-n { color: #cbd5e1; font-weight: 700; }
+
+@media (max-width: 576px) {
+  .story-chapter > :not(summary),
+  .story-stage--encounter { margin-left: 0.5rem; }
+}

@@ -32,7 +32,7 @@
 
   <!-- Shown while the data scripts at the bottom of the page download; js/app.js removes it.
        data-scripts must equal the number of <script src> tags below (a console warning says when it doesn't). -->
-  <div id="page-loader" data-scripts="38" role="progressbar" aria-label="Loading data" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+  <div id="page-loader" data-scripts="39" role="progressbar" aria-label="Loading data" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
     <div class="page-loader-box">
       <div class="page-loader-text">Loading data ...</div>
       <div class="page-loader-track"><div class="page-loader-bar"></div></div>
@@ -115,6 +115,7 @@
         <button class="nav-drawer-close" id="navClose" aria-label="Close menu">&times;</button>
       </div>
       <div class="nav-drawer-links">
+        <a class="nav-link nav-drawer-item" href="story/" data-page="story"><i class="bi bi-book"></i>Story</a>
         <a class="nav-link nav-drawer-item" href="./" data-page="pilots"><i class="bi bi-person-badge"></i>Pilots</a>
         <a class="nav-link nav-drawer-item" href="sts/" data-page="sts"><i class="bi bi-robot"></i>STs</a>
         <a class="nav-link nav-drawer-item" href="weapons/" data-page="weapons"><svg class="bi" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M1 3.5h13.5v-.7h.8v.7h.2V7H8.6v1.4c0 1-.8 1.8-1.8 1.8H5.8L4.9 14.5H1.4L2.9 7H1zM5.9 7.6h1.6v.7c0 .4-.4.8-.8.8H5.6z"/></svg>Weapons</a>
@@ -190,6 +191,7 @@
   <script src="js/pages/rdbonus.js"></script>
   <script src="js/pages/features.js"></script>
   <script src="js/pages/bosses.js"></script>
+  <script src="js/pages/story.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>
