@@ -1171,7 +1171,7 @@
         {
           "ID": "53087",
           "name": "Agitated Resolve",
-          "SpecificEffects": "Enhanced [Fiery Will] Effect: When deployed, gains <color=#F74848>5</color> stacks of <buf ID=530872>[Scorching Intent]</buf>. After a <buf ID=900002>[Link Attack]</buf> is triggered via talent or after each active attack, for every <color=#F74848>1</color> Ammo consumed, gains <color=#F74848>1</color> stack of <buf ID=530872>[Scorching Intent]</buf>. Can stack up to <color=#F74848>15</color> times. When possessing <color=#F74848>10</color> or more stacks, AP recovery <color=#F74848>+1</color>.\n<buf ID=4008509>[Lock]</buf> increases the damage multiplier of Arthur's active attacks and all <buf ID=900002>[Link Attacks]</buf> against the target by <color=#F74848>0.1</color>.",
+          "SpecificEffects": "Enhanced <skill ID=400850>[Fiery Will]</skill> Effect: When deployed, gains <color=#F74848>5</color> stacks of <buf ID=530872>[Scorching Intent]</buf>. After a <buf ID=900002>[Link Attack]</buf> is triggered via talent or after each active attack, for every <color=#F74848>1</color> Ammo consumed, gains <color=#F74848>1</color> stack of <buf ID=530872>[Scorching Intent]</buf>. Can stack up to <color=#F74848>15</color> times. When possessing <color=#F74848>10</color> or more stacks, AP recovery <color=#F74848>+1</color>.\n<buf ID=4008509>[Lock]</buf> increases the damage multiplier of Arthur's active attacks and all <buf ID=900002>[Link Attacks]</buf> against the target by <color=#F74848>0.1</color>.",
           "SkillIcon": "Icon_skill_passive_5271",
           "icon": "Icon_skill_passive_5271"
         },
@@ -2198,7 +2198,7 @@
         {
           "ID": "53081",
           "name": "Canary's Song",
-          "SpecificEffects": "Enhanced [Sentinel Ward] Effect: <skill mainSkill=500406>[Repair Synergy]</skill> and <skill mainSkill=500408>[Full-Line Maintenance]</skill> can dispel <color=#F74848>1</color> additional debuff from the repair target. <buf ID=900038>[Regular Repair]</buf> dispels <color=#F74848>1</color> debuff each time it is triggered.",
+          "SpecificEffects": "Enhanced <skill ID=500450>[Sentinel Ward]</skill> Effect: <skill mainSkill=500406>[Repair Synergy]</skill> and <skill mainSkill=500408>[Full-Line Maintenance]</skill> can dispel <color=#F74848>1</color> additional debuff from the repair target. <buf ID=900038>[Regular Repair]</buf> dispels <color=#F74848>1</color> debuff each time it is triggered.",
           "SkillIcon": "Icon_skill_passive_3134",
           "icon": "Icon_skill_passive_3134"
         },

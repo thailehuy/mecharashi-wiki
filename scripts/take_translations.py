@@ -124,14 +124,25 @@ class Taker:
         row[field] = value
 
     def untag(self, value):
-        """Plain [Name] for a buff whose text only points at a talent and that the glossary lacks, as the wiki writes it."""
-        def plain(m):
+        """A buff whose text only points at a pilot's talent ("[Melissa] Core Talent") links to the talent instead:
+        <skill ID=<talent>>, which the pages resolve to the talent, or a plain [Name] when that ID is taken by another
+        skill (Tiphys's 600850 is also his Defense Field code). The buff ID may be a different keyword in the
+        glossary (900140 is Melissa's talent in the game, 900059 the Sentinel Ward buff)."""
+        def link(m):
             id_, name = m[1], m[2]
-            if id_ in self.glossary['buf']:
-                return m[0]
             r = self.g.row('ConfigDataActorBufInfo', id_)
-            return f'[{name}]' if r and TALENT_POINTER.match(text(r['BuffDescStrKey_EN'])) else m[0]
-        return re.sub(r'<buf ID=(\d+)>\[([^\]]*)\]</buf>', plain, value)
+            pointer = r and TALENT_POINTER.match(text(r['BuffDescStrKey_EN']))
+            if not pointer:
+                return m[0]
+            pilot = text(r['BuffDescStrKey_EN'])[1:].split(']')[0]
+            talent = next((p['talents'][0] for p in self.t['pilots'].values()
+                           if p.get('name') == pilot and p.get('talents')), None)
+            if (talent and self.t['skills'].get(talent, {}).get('name') == name
+                    and talent not in self.glossary['skill']
+                    and all(b.get('skill', {}).get('id') != talent for b in self.t['backpacks'].values())):
+                return f'<skill ID={talent}>[{name}]</skill>'
+            return f'[{name}]'
+        return re.sub(r'<buf ID=(\d+)>\[([^\]]*)\]</buf>', link, value)
 
     def skill(self, sid, game_id=None):
         row = self.t['skills'].get(sid)
