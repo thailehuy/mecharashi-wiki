@@ -448,6 +448,9 @@ var Glossary = (function () {
     $(document).on('click', '.section-jump-link', function (e) {
       e.preventDefault();
       var $target = $('#' + $(this).data('target'));
+      // A target in a hidden detail tab (pilot page) opens that tab first.
+      var $pane = $target.closest('[data-detail-pane]');
+      if ($pane.prop('hidden')) $('[data-detail-tab="' + $pane.attr('data-detail-pane') + '"]').trigger('click');
       if ($target.length) {
         $('html, body').animate({ scrollTop: $target.offset().top - 70 }, 200);
       }

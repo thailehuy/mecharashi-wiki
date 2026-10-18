@@ -1841,6 +1841,141 @@ a.material-item:hover .material-icon-wrap {
   .skill-list { grid-template-columns: 1fr; }
 }
 
+/* ── Pilot detail tabs (Skills / Neural Drive / Lore) ─────────────── */
+.detail-tabs {
+  display: flex;
+  gap: 0.25rem;
+  margin-top: 2rem;
+  border-bottom: 2px solid #e94560;
+  overflow-x: auto;
+}
+
+.detail-tab {
+  font-size: 1.05rem;
+  font-weight: 700;
+  padding: 0.45rem 1.1rem;
+  border: 1px solid #2a2a4a;
+  border-bottom: none;
+  border-radius: 6px 6px 0 0;
+  background-color: #1a1a20;
+  color: #a0a0c8;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background-color 0.15s, color 0.15s;
+}
+
+.detail-tab:hover { color: #e0e0ff; }
+
+.detail-tab.active {
+  background-color: #e94560;
+  border-color: #e94560;
+  color: #ffffff;
+}
+
+.detail-tab-pane > .nd-section:first-child { margin-top: 1.25rem; }
+.detail-tab-pane > .nd-section > .skill-list:first-child,
+.detail-tab-pane > .nd-section > .skill-list-innate:first-child { margin-top: 0; }
+
+/* ── Pilot lore ───────────────────────────────────────────────────── */
+.lore-loading,
+.lore-empty {
+  margin-top: 1.25rem;
+  color: #a0a0c8;
+}
+
+.lore-top {
+  display: grid;
+  grid-template-columns: minmax(220px, 1fr) 2fr;
+  gap: 1rem;
+  margin-top: 1.25rem;
+  align-items: start;
+}
+
+.lore-top > :only-child { grid-column: 1 / -1; }
+
+.lore-profile {
+  margin: 0;
+}
+
+.lore-profile-row {
+  padding: 0.4rem 0;
+  border-bottom: 1px solid #2a2a4a;
+}
+
+.lore-profile-row:last-child { border-bottom: none; }
+
+.lore-profile dt {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #8a8aa8;
+}
+
+.lore-profile dd {
+  margin: 0.1rem 0 0;
+  color: #e0e0f0;
+}
+
+.lore-card-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.lore-story-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background-color: #e94560;
+  font-size: 0.8rem;
+  flex-shrink: 0;
+}
+
+.lore-text p,
+.lore-comment p {
+  color: #b0b0c8;
+  line-height: 1.6;
+  margin: 0 0 0.6rem;
+}
+
+.lore-text p:last-child,
+.lore-comment p:last-child { margin-bottom: 0; }
+
+.lore-heading { margin-top: 2rem; }
+
+.lore-stories {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.lore-comment {
+  margin: 0.8rem 0 0;
+  padding: 0.5rem 0.8rem;
+  border-left: 3px solid #e94560;
+  background-color: rgba(233, 69, 96, 0.06);
+  font-style: italic;
+}
+
+.lore-comment-by {
+  margin-top: 0.3rem;
+  text-align: right;
+  font-style: normal;
+  font-weight: 600;
+  color: #e0e0f0;
+}
+
+@media (max-width: 700px) {
+  .lore-top { grid-template-columns: 1fr; }
+}
+
 /* ── Neural Drive ─────────────────────────────────────────────────── */
 .nd-section {
   margin-top: 2.5rem;

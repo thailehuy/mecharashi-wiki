@@ -83,6 +83,7 @@ scripts/                          # Every build script; run them from the repo r
   build_rd_totals.py              # → data/rd/rd-totals.json/js (RDTotalsData, max R&D bonuses from the mined DB, for the R&D Bonus page and DMG calculator)
   build_bosses.py                 # → data/bosses/bosses.json/js (BossesData: line-ups and HP from bench-data.js, AC and CO boss skills from the mined DB, CO chapter blurbs and turn limits, and each CO boss's and AC stage's drops (build_drops.py) from the game tables, AC merged with ac-guide.json; every [Term] a skill uses gets an explanation under it, from the stage, the DB, the glossary or another stage of the season, and any it can't explain are printed)
   build_drops.py                  # boss drops from stats.db (no odds, those are server-side): CO boss → weapons/items it can drop (DungeonLevelInfo → ItemDropInfo) and the SSR accessories its weapons come with, with how many weapons carry each (WeaponEntryDropInfo.DropEntry4ClientShow → the weapon's "Accessory Collection" item, as the game shows it); AC stage → per difficulty, every clear's and first clear's drops and each bounty's reward (RaidDungeonLevelInfo; only AC1 drops weapons, later seasons give medals/handbooks/vouchers); run alone to print them. Drop weapon icons are in the assets repo's data/weapons/icons/<type>/ (Knuckles: KN/)
+  build_lore.py                   # pilot and ST lore from stats.db → data/db/pilot_lore.json, mech_lore.json. Pilots: the Profile screen (affiliation, blood type, height, pilot-specific fields like Ada's Hobbies; ConfigDataPilotResumeInfo), the long introduction (ConfigDataPilotArchivesInfo) and the four Skynet anecdotes with their closing remark (ConfigDataSkynetPilotAnecdoteInfo). STs: manufacturer and the four Skynet anecdotes (ConfigDataSkynetWapSuit*; suit ID = first 4 digits of the Body part ID). Global only; v2.6+ rows keep theirs. Run compile.py after
   build_crafting.py               # Workshop recipes from stats.db → `crafting` in data/db/weapons.json and backpacks.json, and the crafted materials (blueprints, Arsenal Handbooks, Bounty Medals) in materials.json: Backpack Crafting (BackpackMakingFormulaInfo, also Adjudicator/Sugar-Coated Destroyer) and Arms Production (ItemExchangeBlueprintInfo: UR weapon ← Bounty Medals, SSSR ← UR + Arsenal Handbooks, Special backpack blueprints ← Handbooks + Medals). Global only; v2.6+ rows keep theirs. Run compile.py after
   build_intake.py                 # after a CN update: a translation intake form (data/intake/) for each CN pilot/ST the wiki doesn't have, from the mined CN client (mined/cn/mecharashi.db + out/stats.db), with IDs, icons, stats and modules filled in and an EN line under each new Chinese text (see data/README.md "Intake forms")
   build_item_intake.py            # after a CN update: the same intake forms for each new signature weapon (with its UR version and Arms Production recipe) and crafted backpack (with its Backpack Crafting recipe and any new materials)
@@ -91,10 +92,10 @@ scripts/                          # Every build script; run them from the repo r
   update_global.py                # pipeline after a global (EN) client update: mine the master DB → take_translations.py → crafting → bench data, chain traits, features, R&D, AC/CO bosses + drops, banners → item icons + banner art → compile.py
   extract_item_icons.py           # the drop items' icons (bosses.json) and crafting materials' (materials.json `item_icon`) from the game's itemtype bundles (newest copy, installed or downloaded) → assets repo data/items/; game folder and bundle key from MRT_FieldWiki's settings.py; skips icons already there unless --force. Annihilation Vouchers show their boss's portrait instead
 data/
-  db/                             # Source tables: pilots, pilot_neurons, neural_partitions, skills, mechs, mech_parts, modules, weapons, backpacks, materials (see data/README.md)
+  db/                             # Source tables: pilots, pilot_lore, pilot_neurons, neural_partitions, skills, mechs, mech_lore, mech_parts, modules, weapons, backpacks, materials (see data/README.md)
   intake/                         # translation intake forms for new CN pilots/STs, from build_intake.py
-  pilots/                         # compiled.js/json (PilotsData)
-  mechs/                          # compiled.js/json (MechsData)
+  pilots/                         # compiled.js/json (PilotsData); lore.js (PilotLoreData, fetched by the pilot page's Lore tab)
+  mechs/                          # compiled.js/json (MechsData); lore.js (MechLoreData, fetched by the ST page's Lore tab)
   weapons/                        # compiled.js/json (WeaponsData)
   backpacks/                      # compiled.js/json (BackpacksData)
   modules/                        # compiled.js/json (ModulesData)
@@ -116,14 +117,18 @@ data/
 - Full portrait, rank and version badges
 - Occupation icon (from Profession Neuron entry)
 - Basic and Upgraded talents with parsed descriptions
-- Skills section — Attack (`EquipmentSkill`), Code (`Order`), Code+Attack (`SpecialAssault`), Passive — with AP and CD stats
-- Neural Drive — Alpha, Beta, Gamma1, Gamma2 partitions with chip slot indicators and activation passives
+- Skills / Neural Drive / Lore tabs below the portrait (each pilot opens on Skills)
+  - Skills — Attack (`EquipmentSkill`), Code (`Order`), Code+Attack (`SpecialAssault`), Passive — with AP and CD stats
+  - Neural Drive — Alpha, Beta, Gamma1, Gamma2 partitions with chip slot indicators and activation passives
+  - Lore — profile (affiliation, blood type, height, …), introduction and the four stories, from `data/pilots/lore.js`, loaded the first time the tab opens; pilots not on Global yet show their one-line bio
 
 ## ST detail page
 
 - Live portrait (`mechaLive` image)
 - Firepower (from CN data), per-part HP, weight capacity and remaining
-- Modules with level display (`Lv.X/X`) and parsed descriptions (inline `ModuleSlider` preview)
+- Modules / Lore tabs below the portrait, as on the pilot page (shared code in `js/lore.js`)
+  - Modules — level display (`Lv.X/X`) and parsed descriptions (inline `ModuleSlider` preview)
+  - Lore — manufacturer, the ST's description (`introduce`) and its four stories, from `data/mechs/lore.js`
 
 ## Weapon detail page
 

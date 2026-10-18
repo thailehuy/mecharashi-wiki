@@ -80,6 +80,10 @@ def validate(t):
         crafting_refs(b, f'backpacks[{bid}].crafting')
     for key, m in t['materials'].items():
         crafting_refs(m, f'materials[{key}].crafting')
+    for pid in t['pilot_lore']:
+        ref('pilots', pid, 'pilot_lore')
+    for mid in t['mech_lore']:
+        ref('mechs', mid, 'mech_lore')
 
     if errors:
         print('FAILED: data/db has broken references')
@@ -272,6 +276,40 @@ def build_backpacks(t):
     return {'backpacks': backpacks}
 
 
+# Lore bundles, loaded by a detail page only when its Lore tab is opened (js/lore.js).
+# Both kinds share one shape: profile rows, introduction, stories.
+
+def lore_out(profile, introduction, row):
+    out = {'profile': [{'label': label, 'value': v} for label, v in profile if v] + row.get('profile', [])}
+    if introduction:
+        out['introduction'] = introduction
+    if row.get('stories'):
+        out['stories'] = row['stories']
+    return out if out['profile'] or len(out) > 1 else None
+
+
+def build_pilot_lore(t):
+    # A pilot with no mined lore (not on Global yet) shows its one-line bio.
+    lore = {}
+    for pid, p in t['pilots'].items():
+        row = t['pilot_lore'].get(pid, {})
+        out = lore_out([('Affiliation', row.get('affiliation')), ('Blood Type', row.get('blood_type')),
+                        ('Height', row.get('height'))], row.get('introduction') or p.get('introduction'), row)
+        if out:
+            lore[pid] = out
+    return lore
+
+
+def build_mech_lore(t):
+    lore = {}
+    for mid, m in t['mechs'].items():
+        row = t['mech_lore'].get(mid, {})
+        out = lore_out([('Manufacturer', row.get('manufacturer'))], m.get('introduce'), row)
+        if out:
+            lore[mid] = out
+    return lore
+
+
 # ── Output ───────────────────────────────────────────────────────────────────
 
 def write_bundle(kind, var, out):
@@ -282,6 +320,13 @@ def write_bundle(kind, var, out):
     with open(os.path.join(d, 'compiled.js'), 'w', encoding='utf-8') as f:
         f.write(js)
     return len(js) // 1024
+
+
+def write_lore(kind, var, out):
+    js = f'var {var} = ' + json.dumps(out, ensure_ascii=False) + ';\n'
+    with open(os.path.join(DATA, kind, 'lore.js'), 'w', encoding='utf-8') as f:
+        f.write(js)
+    return len(js.encode('utf-8')) // 1024
 
 
 def compile_plain(name, var):
@@ -301,7 +346,7 @@ def run(script):
 
 
 TABLES = ['pilots', 'pilot_neurons', 'neural_partitions', 'skills', 'mechs', 'mech_parts',
-          'modules', 'weapons', 'backpacks', 'materials']
+          'modules', 'weapons', 'backpacks', 'materials', 'pilot_lore', 'mech_lore']
 
 BUNDLES = [('pilots', 'PilotsData', build_pilots), ('mechs', 'MechsData', build_mechs),
            ('modules', 'ModulesData', build_modules), ('weapons', 'WeaponsData', build_weapons),
@@ -315,6 +360,9 @@ if __name__ == '__main__':
         out = build(tables)
         size = write_bundle(kind, var, out)
         print(f'  {kind}: {len(next(iter(out.values())))} ({size} KB)')
+    for kind, var, build in [('pilots', 'PilotLoreData', build_pilot_lore), ('mechs', 'MechLoreData', build_mech_lore)]:
+        lore = build(tables)
+        print(f'  {kind} lore: {len(lore)} ({write_lore(kind, var, lore)} KB)')
     compile_plain('glossary', 'GlossaryData')
     compile_plain('dispatch', 'DispatchData')
     compile_plain('exskills', 'ExSkillsData')

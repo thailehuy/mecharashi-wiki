@@ -45,10 +45,12 @@ official values. See "Using the mined game database" in the root
 | Table | Key | Row |
 |---|---|---|
 | `pilots.json` | pilot ID | One pilot. References talents, neural partitions |
+| `pilot_lore.json` | pilot ID | The pilot's profile, introduction and stories (Lore tab) |
 | `pilot_neurons.json` | pilot ID | The pilot's Bionic Computer board: an ordered list of neurons |
 | `neural_partitions.json` | partition ID | One Neural Drive partition (α, β, γ…) and its unlocks |
 | `skills.json` | skill ID | Every talent, pilot skill, neural passive and weapon passive |
 | `mechs.json` | Body part ID | One ST. References parts, modules |
+| `mech_lore.json` | Body part ID | The ST's manufacturer and stories (Lore tab) |
 | `mech_parts.json` | part ID | One ST part's max-level stats |
 | `modules.json` | module family ID | A module and its text per level |
 | `weapons.json` | weapon ID | One weapon. References its passives in `skills.json` |
@@ -89,6 +91,41 @@ official values. See "Using the mined game database" in the root
 - `summon_skills` / `form_skill_groups` (optional) are
   copied to the page as is, in the page's own format (`name`, `icon`, `type`,
   `Ap`, `CD`, `describe`/`SpecificEffects`). See an existing pilot.
+
+### `pilot_lore.json`
+
+```json
+"10103118": {
+  "affiliation": "Dawnstar League", "blood_type": "AB", "height": "165cm",
+  "profile": [ { "label": "Hobbies", "value": "Figure Skating" } ],
+  "introduction": "Rosa Díaz's younger sister, …",
+  "stories": [
+    { "title": "XC 109, December 24", "text": "\"I had that dream again today, …" },
+    …,
+    { "title": "XC 119, March 9", "text": "…",
+      "comment": { "by": "Matilda", "text": "The subsequent search found …" } }
+  ]
+}
+```
+
+Filled in by `python3 scripts/build_lore.py` from the global client's tables
+for every pilot on Global; rows of pilots not in it (v2.6+) are left alone, so
+add theirs by hand. `profile` holds the pilot-specific fields of the in-game
+Profile, in order. `introduction` is the Profile screen's long bio (the
+one-line `introduction` in `pilots.json` is shown instead when a pilot has no
+row). `stories` are the four anecdotes; `comment` is the remark some end with,
+`by` linking to the pilot of that name if there is one. Paragraphs are split
+on `\n`. compile.py writes it to `data/pilots/lore.js`, its own bundle, which
+the pilot page fetches when the Lore tab is first opened.
+
+### `mech_lore.json`
+
+```json
+"20470103": { "manufacturer": "Laniakea", "stories": [ { "title": "Stolen", "text": "…", "comment": { "by": "Naomi", "text": "…" } }, … ] }
+```
+
+Like `pilot_lore.json`, filled in by `build_lore.py` for every ST on Global.
+The Lore tab's introduction is the ST's `introduce` from `mechs.json`.
 
 ### `pilot_neurons.json`
 

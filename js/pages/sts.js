@@ -440,20 +440,23 @@ Pages.sts = {
         '</div>' +
       '</div>' +
 
-      // ── Below: modules full width
-      '<div class="nd-section">' +
-        '<div class="section-heading">Modules</div>' +
-        (/^C?L$/.test(MECH_AVAILABILITY[m.name] || '')
-          ? '<div class="cn-warning">Limited STs cannot be made into modules</div>'
-          : '') +
-        '<div class="detail-talents">' + moduleCards + '</div>' +
-      '</div>' +
-      (hiddenCards ? (
-        '<div class="nd-section">' +
-          '<div class="section-heading">Additional Mods</div>' +
-          '<div class="detail-talents">' + hiddenCards + '</div>' +
-        '</div>'
-      ) : '')
+      // ── Below: Modules / Lore tabs, full width (js/lore.js)
+      Lore.tabsHtml([
+        ['modules', 'Modules',
+          '<div class="nd-section">' +
+            (/^C?L$/.test(MECH_AVAILABILITY[m.name] || '')
+              ? '<div class="cn-warning">Limited STs cannot be made into modules</div>'
+              : '') +
+            '<div class="detail-talents">' + moduleCards + '</div>' +
+          '</div>' +
+          (hiddenCards ? (
+            '<div class="nd-section">' +
+              '<div class="section-heading">Additional Mods</div>' +
+              '<div class="detail-talents">' + hiddenCards + '</div>' +
+            '</div>'
+          ) : '')],
+        ['lore', 'Lore', Lore.loadingHtml]
+      ], { kind: 'mechs', id: m.ID })
     );
   },
 

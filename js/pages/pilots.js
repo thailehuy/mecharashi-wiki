@@ -405,11 +405,17 @@ Pages.pilots = {
           '</div>' +
         '</div>' +
       '</div>' +
-      this._renderSkills(p.biomimetic_computer_data) +
-      this._renderSummonSkills(p) +
-      this._renderFormSkillGroups(p) +
-      this._renderNeuralDrive(p.NeuralDriveTemplate, p.stats, p.Occupation)
+      this._renderTabs(p)
     );
+  },
+
+  // Skills / Neural Drive / Lore tabs under the portrait (js/lore.js).
+  _renderTabs: function (p) {
+    return Lore.tabsHtml([
+      ['skills', 'Skills', this._renderSkills(p.biomimetic_computer_data) + this._renderSummonSkills(p) + this._renderFormSkillGroups(p)],
+      ['neural', 'Neural Drive', this._renderNeuralDrive(p.NeuralDriveTemplate, p.stats, p.Occupation)],
+      ['lore', 'Lore', Lore.loadingHtml]
+    ], { kind: 'pilots', id: p.ID });
   },
 
   _renderStats: function (stats, ranks) {
@@ -606,7 +612,6 @@ Pages.pilots = {
 
     return (
       '<div class="nd-section">' +
-        '<div class="section-heading">Skills</div>' +
         (innateHtml  ? '<div class="skill-list skill-list-innate mb-3">' + innateHtml  + '</div>' : '') +
         (regularHtml ? '<div class="skill-list">' + regularHtml + '</div>' : '') +
       '</div>'

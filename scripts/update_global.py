@@ -18,7 +18,8 @@ Steps
                   (build_crafting.py), then compile.py
     data          everything the wiki derives from the mined data: the DMG calc's bench data and icons (incl. the
                   Armed Conquest line-ups), accessory chain traits, R&D features and totals, the Armed Conquest and
-                  Clearance Ops boss pages with their skills and drops (build_bosses.py), and the banner list.
+                  Clearance Ops boss pages with their skills and drops (build_bosses.py), the banner list and the pilot and ST
+                  lore (build_lore.py).
                   A new Armed Conquest season stops build_bosses.py until its name is added to AC_SEASONS there
                   (release order); then rerun with --from data
     images        new drop/material item icons and banner art from the game's bundles into the assets repo
@@ -40,7 +41,7 @@ MAIN_DB = os.path.join(FIELD_WIKI, 'source', 'mecharashi.db')
 STEPS = ['mine', 'translations', 'crafting', 'data', 'images', 'compile']
 # In order, after compile.py: build-icons.py, build_features.py and build_bosses.py read the compiled bundles.
 DATA = [['extract-bench.py', '--data-only'], ['build-icons.py'], ['extract-chain-traits.py'], ['build_features.py'],
-        ['build_rd_totals.py'], ['build_bosses.py'], ['build_banners.py']]
+        ['build_rd_totals.py'], ['build_bosses.py'], ['build_banners.py'], ['build_lore.py']]
 
 
 def run(args, cwd=ROOT):
