@@ -3773,7 +3773,21 @@ a.boss-avatar { display: block; }
 .banner-type-limited { background-color: #e94560; border-color: transparent; }
 
 .banner-card-body {
-  padding: 0.75rem 1rem 1rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+}
+
+/* Units sit beside the name and dates, or wrap below them when there are too many. */
+.banner-card-text {
+  flex: 1 1 10rem;
+  min-width: 0;
+}
+
+.banner-card-body > .banner-units {
+  margin-left: auto;
 }
 
 .banner-card-name {
@@ -3785,13 +3799,24 @@ a.boss-avatar { display: block; }
 .banner-dates {
   font-size: 0.8rem;
   color: #a0a0c0;
-  margin-bottom: 0.6rem;
 }
 
 .banner-units {
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-end;
   gap: 0.6rem;
+}
+
+.banner-units-overlay {
+  position: absolute;
+  inset: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-units-overlay .dispatch-cell-name {
+  text-shadow: 0 1px 3px #000, 0 0 6px #000;
 }
 
 .banner-units .dispatch-cell {
@@ -3804,5 +3829,25 @@ a.boss-avatar { display: block; }
   text-transform: uppercase;
   letter-spacing: 0.05em;
   color: #7070a0;
-  margin: 0.5rem 0 0.35rem;
+  margin-top: 0.3rem;
+}
+
+.banner-card-img-zoom {
+  cursor: zoom-in;
+}
+
+.banner-image-modal .modal-content {
+  background-color: #1a1a20;
+  border: 1px solid #2a2a4a;
+  overflow: hidden;
+}
+
+.banner-image-modal .modal-header {
+  border-bottom-color: #2a2a4a;
+}
+
+.banner-image-modal-img {
+  display: block;
+  width: 100%;
+  height: auto;
 }

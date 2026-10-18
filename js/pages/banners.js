@@ -93,6 +93,10 @@ Pages.banners = {
         $(this).toggleClass('active', !!self._activeKinds[k]);
         self._applyFilter();
       });
+      $('#banner-page').on('click', '.banner-card-img-zoom', function (e) {
+        if ($(e.target).closest('a').length) return;
+        self._showImage($(this).find('img').attr('src'), $(this).data('name'));
+      });
       $('#banner-page').on('click', '[data-filter-version]', function () {
         var v = String($(this).data('filter-version'));
         self._activeVersions[v] = !self._activeVersions[v];
@@ -132,28 +136,30 @@ Pages.banners = {
     else if (b.upcoming) dates = 'Dates not announced';
     else dates = 'Always available';
 
-    var unitsHtml = '';
-    if (featured.length) {
-      unitsHtml += '<div class="banner-units">' + featured.map(function (n) { return self._unitHtml(b.kind, n); }).join('') + '</div>';
-    }
-    if ((b.options || []).length) {
-      unitsHtml +=
-        '<div class="banner-options-label">' + (BANNER_OPTIONS_LABEL[b.type] || 'Includes') + '</div>' +
-        '<div class="banner-units">' + b.options.map(function (n) { return self._unitHtml(b.kind, n); }).join('') + '</div>';
-    }
+    var unitsOf = function (names) {
+      return names.map(function (n) { return self._unitHtml(b.kind, n); }).join('');
+    };
+    // Exchange banners' art is a generic placeholder, so their units go on top of it.
+    var options = b.options || [];
+    var overlayHtml = b.type === 'exchange' && options.length ? '<div class="banner-units banner-units-overlay">' + unitsOf(options) + '</div>' : '';
+    var rowUnits = featured.concat(overlayHtml ? [] : options);
 
     return (
       '<div class="col-12 col-md-6 col-xl-4 banner-card-wrap" data-kind="' + b.kind + '">' +
         '<div class="banner-card">' +
-          '<div class="banner-card-img">' +
+          '<div class="banner-card-img' + (overlayHtml ? '' : ' banner-card-img-zoom') + '" data-name="' + esc(b.name) + '">' +
             '<img src="' + bannerImageSrc(b) + '" alt="' + esc(b.name) + '" loading="lazy" />' +
+            overlayHtml +
             '<span class="banner-kind-badge banner-kind-' + b.kind + '">' + BANNER_KIND_LABEL[b.kind] + '</span>' +
             '<span class="banner-type-badge banner-type-' + tag.toLowerCase() + '">' + esc(tag) + '</span>' +
           '</div>' +
           '<div class="banner-card-body">' +
-            '<div class="banner-card-name">' + esc(b.name) + '</div>' +
-            '<div class="banner-dates">' + dates + '</div>' +
-            unitsHtml +
+            '<div class="banner-card-text">' +
+              '<div class="banner-card-name">' + esc(b.name) + '</div>' +
+              '<div class="banner-dates">' + dates + '</div>' +
+              (!featured.length && options.length && !overlayHtml ? '<div class="banner-options-label">' + (BANNER_OPTIONS_LABEL[b.type] || 'Includes') + '</div>' : '') +
+            '</div>' +
+            (rowUnits.length ? '<div class="banner-units">' + unitsOf(rowUnits) + '</div>' : '') +
           '</div>' +
         '</div>' +
       '</div>'
@@ -212,8 +218,33 @@ Pages.banners = {
     });
   },
 
+  // Full-size banner art in a Bootstrap modal, kept on <body> across visits.
+  _showImage: function (src, name) {
+    var $modal = $('#banner-image-modal');
+    if (!$modal.length) {
+      $modal = $(
+        '<div class="modal fade banner-image-modal" id="banner-image-modal" tabindex="-1" aria-hidden="true" data-bs-theme="dark">' +
+          '<div class="modal-dialog modal-dialog-centered modal-xl">' +
+            '<div class="modal-content">' +
+              '<div class="modal-header">' +
+                '<h5 class="modal-title"></h5>' +
+                '<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>' +
+              '</div>' +
+              '<img class="banner-image-modal-img" alt="" />' +
+            '</div>' +
+          '</div>' +
+        '</div>'
+      ).appendTo('body');
+    }
+    $modal.find('.modal-title').text(name);
+    $modal.find('.banner-image-modal-img').attr({ src: src, alt: name });
+    bootstrap.Modal.getOrCreateInstance($modal[0]).show();
+  },
+
   destroy: function () {
     $('#banner-page').off();
+    var modal = document.getElementById('banner-image-modal');
+    if (modal) bootstrap.Modal.getOrCreateInstance(modal).hide();
   },
 };
 
