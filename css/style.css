@@ -4126,6 +4126,23 @@ a.boss-avatar { display: block; }
 .story-rewards .story-reward-portrait { object-fit: cover; object-position: top; border-radius: 4px; }
 .story-reward-n { color: #cbd5e1; font-weight: 700; }
 
+/* A stage's cutscenes: collapsed with their skip summary; opened, the script. */
+.story-scene { margin-top: 0.5rem; border-top: 1px solid #2a2a4a; padding-top: 0.4rem; }
+.story-scene summary { cursor: pointer; list-style: none; display: flex; flex-direction: column; gap: 0.15rem; }
+.story-scene summary::-webkit-details-marker { display: none; }
+.story-scene-head { font-size: 0.85rem; font-weight: 700; color: #deb072; }
+.story-scene-head .bi { margin-right: 0.35rem; }
+.story-scene-head::after { content: '\F282'; font-family: 'bootstrap-icons'; margin-left: 0.4rem; font-size: 0.7rem; display: inline-block; }
+.story-scene[open] .story-scene-head::after { transform: rotate(180deg); }
+.story-scene-n { margin-left: 0.5rem; font-weight: 400; font-size: 0.75rem; color: #8a8aa8; }
+.story-scene-summary { font-size: 0.85rem; font-style: italic; color: #a0a0c0; }
+.story-dlg { margin-top: 0.5rem; max-height: 32rem; overflow-y: auto; padding-right: 0.5rem; }
+.story-dlg p { margin: 0 0 0.35rem; font-size: 0.9rem; line-height: 1.45; }
+.story-dlg-who { font-weight: 700; color: #ffffff; margin-right: 0.45rem; }
+.story-dlg-who::after { content: ':'; }
+.story-dlg-narr { font-style: italic; color: #a0a0c0; }
+.story-dlg-hl { color: #f5c542; }
+
 /* Border Conflict: a foe's bust beside its write-up and find, and an encounter's choices with their outcomes. */
 .story-bc-foe { display: flex; gap: 0.75rem; align-items: flex-start; margin-top: 0.8rem; }
 .story-bc-foe:first-child { margin-top: 0; }

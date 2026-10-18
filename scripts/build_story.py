@@ -42,6 +42,13 @@ repeats its text under new IDs, so each distinct text is kept once):
   bosses' and the designers' "Collection Pool" rows.
 Morgana's and Skysweep's (GrowthBossInfo) story is dialogue only; not shown.
 
+Cutscenes: a main or event stage's StartDialogID (before its battle) and
+EndDialogID (after) start a chain of ConfigDataDialogueInfo lines (see
+Dialogue). story.json gives each stage its scenes' IDs, line counts and skip
+summaries; the lines go in data/story/dialogue/<ch-ID|ev-ID>.js
+(StoryDialogue), one file per chapter or event, fetched when a cutscene is
+opened. Mid-battle dialogue isn't included.
+
 A stage's rewards are its RewardDropId (ConfigDataItemDropInfo): the items the
 mission screen shows (UIShowItemList) plus the guaranteed ones
 (CertainDropList), each once; a guaranteed item's fixed amount is used when
@@ -61,6 +68,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 HERE = os.path.join(ROOT, 'data', 'story')
 OUT = os.path.join(HERE, 'story.json')
 OUT_JS = os.path.join(HERE, 'story.js')
+DIALOGUE = os.path.join(HERE, 'dialogue')
 DB = os.path.join(ROOT, 'data', 'db')
 
 # Skynet categories shown, in tab order (after Main Story and Event Stories); the game calls Faction "Factions"
@@ -187,7 +195,64 @@ class Rewards:
         return out
 
 
-def chapters(con):
+class Dialogue:
+    """A stage's cutscenes: ConfigDataDialogueInfo lines chained by NextID from its StartDialogID (before the
+    battle) and EndDialogID (after). A line's speaker is its left character at Position 1, its right one at
+    Position 2; no position is narration. The game's skip summary (SkipMessageInfo) sums a scene up."""
+
+    def __init__(self, con):
+        self.rows = {r['ID']: r for r in con.execute(
+            'SELECT ID, NextID, Position, LeftNameStrKey_EN, RightNameStrKey_EN, WordsStrKey_EN, SkipMessageID '
+            'FROM ConfigDataDialogueInfo')}
+        self.skips = dict(con.execute('SELECT ID, WordsStrKey_EN FROM ConfigDataSkipMessageInfo'))
+        self.scenes = {}
+
+    def scene(self, start):
+        if start in self.scenes:
+            return self.scenes[start]
+        lines, seen, i, skip = [], set(), start, None
+        while i in self.rows and i not in seen:
+            seen.add(i)
+            r = self.rows[i]
+            skip = skip or r['SkipMessageID']
+            words = text(r['WordsStrKey_EN'])
+            if words:
+                who = {1: r['LeftNameStrKey_EN'], 2: r['RightNameStrKey_EN']}.get(r['Position'])
+                # <yellow>term</yellow> highlights a term; kept for the page to style.
+                lines.append([text(who) or '', clean(words)])
+            i = r['NextID']
+        sc = {'lines': lines}
+        summary = text(self.skips.get(skip))
+        # Scenes without one of their own say "Default prompt message" (or "0").
+        if summary and summary not in ('0', 'Default prompt message'):
+            sc['summary'] = clean(summary)
+        self.scenes[start] = sc if lines else None
+        return self.scenes[start]
+
+    def attach(self, st, start, end):
+        """Adds the stage's scenes ({id, when, summary, n}); their lines go in its dialogue file."""
+        scenes = []
+        for when, sid in (('before', start), ('after', end)):
+            sc = sid and self.scene(sid)
+            if sc:
+                scenes.append(dict({'id': sid, 'when': when, 'n': len(sc['lines'])},
+                                   **({'summary': sc['summary']} if 'summary' in sc else {})))
+        if scenes:
+            st['scenes'] = scenes
+
+    def write(self, key, stages):
+        """data/story/dialogue/<key>.js: StoryDialogue[key] = {scene id: [[speaker, text], ...]}."""
+        out = {s['id']: self.scenes[s['id']]['lines'] for st in stages for s in st.get('scenes', [])}
+        if not out:
+            return 0
+        with open(os.path.join(DIALOGUE, key + '.js'), 'w', encoding='utf-8', newline='\n') as f:
+            f.write('(window.StoryDialogue = window.StoryDialogue || {})[%s] = ' % json.dumps(key))
+            json.dump(out, f, ensure_ascii=False, separators=(',', ':'))
+            f.write(';\n')
+        return sum(len(v) for v in out.values())
+
+
+def chapters(con, dialogue):
     rewards = Rewards(con)
     characters = dict(con.execute('SELECT ID, CharNameStrKey_EN FROM ConfigDataCharacterPicture'))
     times = {r['BelongChapterID']: r for r in con.execute('SELECT * FROM ConfigDataWorldMapTimePointInfo')}
@@ -218,6 +283,7 @@ def chapters(con):
             r = rewards.get(w['RewardDropId'], '%s %s' % (name, st.get('code') or st.get('name')))
             if r:
                 st['rewards'] = r
+            dialogue.attach(st, w['StartDialogID'], w['EndDialogID'])
             stages.append(st)
         chapter['stages'] = stages
         out.append(chapter)
@@ -239,7 +305,7 @@ def run_dates(con):
     return out
 
 
-def events(con):
+def events(con, dialogue):
     rewards = Rewards(con)
     dates = run_dates(con)
     difficulties = dict(con.execute('SELECT ID, NameStrKey_EN FROM ConfigDataPlotActivityLevelDifficultyInfo '
@@ -285,6 +351,7 @@ def events(con):
                     st['tiers'] = tiers
                 elif tiers:
                     st['rewards'] = tiers[0]['rewards']
+                dialogue.attach(st, l['StartDialogID'], l['EndDialogID'])
                 stages.append(st)
             if stages:
                 parts.append({'name': text(g['NameStrKey_EN']), 'stages': stages})
@@ -413,12 +480,22 @@ def main():
     con = sqlite3.connect(STATS)
     con.row_factory = sqlite3.Row
     w = world(con)
-    chs = chapters(con)
-    evs = events(con)
+    dialogue = Dialogue(con)
+    chs = chapters(con, dialogue)
+    evs = events(con, dialogue)
     bc = border_conflict(con)
     data = {'world': w, 'chapters': chs, 'events': evs, 'borderConflict': bc}
 
     os.makedirs(HERE, exist_ok=True)
+    # One dialogue file per chapter (ch-<id>) and event (ev-<id>), fetched when a cutscene is first opened.
+    os.makedirs(DIALOGUE, exist_ok=True)
+    for old in os.listdir(DIALOGUE):
+        os.remove(os.path.join(DIALOGUE, old))
+    lines = sum(dialogue.write('ch-%d' % c['id'], c['stages']) for c in chs) + \
+        sum(dialogue.write('ev-%d' % e['id'], [s for p in e['parts'] for s in p['stages']]) for e in evs)
+    print('Wrote %s: %d dialogue lines in %d files (%d KB)' % (
+        DIALOGUE, lines, len(os.listdir(DIALOGUE)),
+        sum(os.path.getsize(os.path.join(DIALOGUE, f)) for f in os.listdir(DIALOGUE)) // 1024))
     with open(OUT, 'w', encoding='utf-8', newline='\n') as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
         f.write('\n')

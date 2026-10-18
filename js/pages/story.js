@@ -1,7 +1,7 @@
 var Pages = window.Pages || {};
 
-// The Story page, in tabs: the main story's chapters with every stage's text
-// and rewards, the event stories, then the in-game Skynet encyclopedia's
+// The Story page, in tabs: the main story's chapters with every stage's text,
+// cutscenes and rewards, the event stories, then the in-game Skynet encyclopedia's
 // Geography, Factions, Incidents and Items. Its data (data/story/story.js, built by scripts/build_story.py) is
 // fetched the first time the page opens.
 Pages.story = {
@@ -92,7 +92,58 @@ Pages.story = {
     return st.rewards ? list('Rewards', st.rewards) : '';
   },
 
-  _stage: function (st, kit) {
+  // ── Cutscenes ───────────────────────────────────────────────────────────
+  // A stage's cutscenes, collapsed; their lines (data/story/dialogue/<file>.js) load when one is opened.
+  _scenes: function (st, file) {
+    var esc = this._esc;
+    return (st.scenes || []).map(function (sc) {
+      return (
+        '<details class="story-scene" data-scene-file="' + file + '" data-scene-id="' + sc.id + '">' +
+          '<summary><span class="story-scene-head"><i class="bi bi-chat-square-quote"></i>' +
+            (sc.when === 'before' ? 'Opening cutscene' : 'Closing cutscene') +
+            '<span class="story-scene-n">' + sc.n + ' lines</span></span>' +
+            (sc.summary ? '<span class="story-scene-summary">' + esc(sc.summary) + '</span>' : '') +
+          '</summary>' +
+          '<div class="story-dlg"><div class="lore-loading">Loading…</div></div>' +
+        '</details>'
+      );
+    }).join('');
+  },
+
+  _dialogue: function (lines) {
+    var esc = this._esc;
+    var hl = function (s) {
+      return esc(s).replace(/&lt;yellow&gt;(.*?)&lt;\/yellow&gt;/g, '<span class="story-dlg-hl">$1</span>').replace(/&lt;\/?yellow&gt;/g, '');
+    };
+    return lines.map(function (l) {
+      // [speaker, text]; no speaker is narration.
+      return l[0] ? '<p class="story-dlg-line"><span class="story-dlg-who">' + esc(l[0]) + '</span>' + hl(l[1]) + '</p>'
+        : '<p class="story-dlg-narr">' + hl(l[1]) + '</p>';
+    }).join('');
+  },
+
+  _sceneFiles: {},
+
+  _loadScene: function (el) {
+    var self = this;
+    var file = el.getAttribute('data-scene-file');
+    var box = el.querySelector('.story-dlg');
+    if (el._loaded) return;
+    el._loaded = true;
+    var have = window.StoryDialogue && window.StoryDialogue[file];
+    var p = have ? $.Deferred().resolve().promise()
+      : (this._sceneFiles[file] = this._sceneFiles[file] ||
+          $.ajax({ url: 'data/story/dialogue/' + file + '.js', dataType: 'script', cache: true })
+            .fail(function () { delete self._sceneFiles[file]; }));
+    p.then(function () {
+      box.innerHTML = self._dialogue(window.StoryDialogue[file][el.getAttribute('data-scene-id')] || []);
+    }, function () {
+      el._loaded = false;
+      box.innerHTML = '<p class="text-danger">Couldn\'t load the dialogue. Close and reopen to try again.</p>';
+    });
+  },
+
+  _stage: function (st, kit, file) {
     var esc = this._esc;
     var badge = st.kind === 'critical' ? '<span class="story-stage-code story-stage-critical">Critical Operation</span>'
       : st.kind === 'encounter' ? '<span class="story-stage-code story-stage-encounter">Encounter</span>'
@@ -107,6 +158,7 @@ Pages.story = {
       '<div class="story-stage skill-card story-stage--' + st.kind + '">' +
         '<div class="story-stage-head">' + badge + name + meta + '</div>' +
         (st.text ? '<div class="lore-text story-stage-text">' + this._paras(st.text) + '</div>' : '') +
+        this._scenes(st, file) +
         this._rewards(st, kit) +
       '</div>'
     );
@@ -126,9 +178,9 @@ Pages.story = {
           // In the head, on its background; shown only while the chapter is open (css).
           (c.intro ? '<div class="story-chapter-intro lore-text">' + this._paras(c.intro) + '</div>' : '') +
         '</summary>' +
-        '<div class="story-stages">' + main.map(function (s) { return self._stage(s, kit); }).join('') + '</div>' +
+        '<div class="story-stages">' + main.map(function (s) { return self._stage(s, kit, 'ch-' + c.id); }).join('') + '</div>' +
         (side.length ? '<div class="story-side-title">Side Missions</div><div class="story-stages">' +
-          side.map(function (s) { return self._stage(s, kit); }).join('') + '</div>' : '') +
+          side.map(function (s) { return self._stage(s, kit, 'ch-' + c.id); }).join('') + '</div>' : '') +
       '</details>'
     );
   },
@@ -170,7 +222,7 @@ Pages.story = {
         e.parts.map(function (p) {
           // An event with several story arcs titles each; a lone arc is usually just the event again.
           return (e.parts.length > 1 ? '<div class="story-side-title">' + self._esc(p.name) + '</div>' : '') +
-            '<div class="story-stages">' + p.stages.map(function (s) { return self._stage(s, kit); }).join('') + '</div>';
+            '<div class="story-stages">' + p.stages.map(function (s) { return self._stage(s, kit, 'ev-' + e.id); }).join('') + '</div>';
         }).join('') +
       '</details>'
     );
@@ -298,6 +350,11 @@ Pages.story = {
     );
   },
 };
+
+// A cutscene loads its lines the first time it's opened. toggle doesn't bubble, so it's caught on the way down.
+document.addEventListener('toggle', function (e) {
+  if (e.target.classList && e.target.classList.contains('story-scene') && e.target.open) Pages.story._loadScene(e.target);
+}, true);
 
 // A jump link to a Skynet entry or a chapter switches to its tab and opens it
 // before scrolling there. Bound before app.js's hash-link handler, which
