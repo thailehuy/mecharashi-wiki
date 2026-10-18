@@ -126,7 +126,8 @@ Pages.banners = {
 
   // Each pilot banner runs alongside a signature ST banner with the same dates:
   // pair them by type, then by a pairing seen in an earlier run (for reruns),
-  // then by matching end date, then in pool order. Standard banners stay alone.
+  // then by matching end date, then in pool order. The always-open standard banners
+  // stay alone; a patch's new standard banners pair up like the rest.
   // pastPairs maps pilot -> ST featured unit and is filled as groups are paired.
   _pairBanners: function (banners, pastPairs) {
     var self = this;
@@ -138,7 +139,7 @@ Pages.banners = {
     var boxes = [];
     var match = function (test) {
       pilots.forEach(function (p) {
-        if (paired['pilot:' + p.id] || p.type === 'standard') return;
+        if (paired['pilot:' + p.id] || (p.type === 'standard' && !p.version)) return;
         var st = sts.find(function (s) {
           return !paired['st:' + s.id] && s.type === p.type && (s.start || '') === (p.start || '') && test(p, s);
         });
