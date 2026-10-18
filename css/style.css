@@ -4126,6 +4126,30 @@ a.boss-avatar { display: block; }
 .story-rewards .story-reward-portrait { object-fit: cover; object-position: top; border-radius: 4px; }
 .story-reward-n { color: #cbd5e1; font-weight: 700; }
 
+/* Border Conflict: a foe's bust beside its write-up and find, and an encounter's choices with their outcomes. */
+.story-bc-foe { display: flex; gap: 0.75rem; align-items: flex-start; margin-top: 0.8rem; }
+.story-bc-foe:first-child { margin-top: 0; }
+.story-bc-foe .story-part-title { margin-top: 0.1rem; }
+.story-bc-foe-body { flex: 1; min-width: 0; }
+.story-bc-portrait {
+  flex: none;
+  width: 72px;
+  height: 72px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 6px;
+  background-color: #14141e;
+}
+.story-bc-found { margin: 0.4rem 0 0 0.75rem; padding-left: 0.6rem; border-left: 2px solid #2a2a4a; }
+.story-bc-found-name { font-size: 0.85rem; font-weight: 700; color: #deb072; }
+.story-bc-found-name .bi { margin-right: 0.3rem; }
+.story-bc-found p { font-size: 0.9rem; font-style: italic; }
+.story-bc-options { list-style: none; padding-left: 0.75rem; margin: 0.4rem 0 0; }
+.story-bc-options li { padding-left: 0.6rem; border-left: 2px solid #2a2a4a; margin-bottom: 0.5rem; }
+.story-bc-choice { font-weight: 700; color: #ffffff; }
+.story-bc-effect { font-size: 0.8rem; color: #8a8aa8; }
+.story-bc-options p { font-size: 0.9rem; font-style: italic; margin: 0.2rem 0 0; }
+
 @media (max-width: 576px) {
   .story-chapter > :not(summary),
   .story-stage--encounter { margin-left: 0.5rem; }

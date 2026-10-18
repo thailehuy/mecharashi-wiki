@@ -967,7 +967,7 @@
     },
     {
       "key": "events",
-      "name": "Events",
+      "name": "Incidents",
       "entries": [
         {
           "id": 503,
@@ -9592,5 +9592,3499 @@
         }
       ]
     }
-  ]
+  ],
+  "events": [
+    {
+      "id": 1,
+      "name": "Hunters' Freedom",
+      "start": "2025-09-04",
+      "end": "2025-09-25",
+      "parts": [
+        {
+          "name": "Path of Freedom",
+          "stages": [
+            {
+              "id": 140,
+              "kind": "main",
+              "code": "1",
+              "name": "Champion",
+              "text": "The curtain has risen, the smoke has cleared, a new champion has been crowned, so why has the cheering stopped?",
+              "rewards": [
+                {
+                  "name": "Solid Arashium",
+                  "icon": "Icon_currency_002",
+                  "kind": "item",
+                  "count": 40
+                }
+              ],
+              "location": "ST Arena"
+            },
+            {
+              "id": 141,
+              "kind": "main",
+              "code": "2",
+              "name": "Trade",
+              "text": "This is not a deal, it is an unavoidable choice.",
+              "rewards": [
+                {
+                  "name": "Solid Arashium",
+                  "icon": "Icon_currency_002",
+                  "kind": "item",
+                  "count": 40
+                }
+              ],
+              "location": "Ruined Town"
+            },
+            {
+              "id": 142,
+              "kind": "main",
+              "code": "3",
+              "name": "Entrance",
+              "text": "The devil opened the gates of hell for her. Don't hesitate—this is your chance to take the final gamble.",
+              "rewards": [
+                {
+                  "name": "Solid Arashium",
+                  "icon": "Icon_currency_002",
+                  "kind": "item",
+                  "count": 40
+                }
+              ],
+              "location": "Gateway"
+            },
+            {
+              "id": 143,
+              "kind": "main",
+              "code": "4",
+              "name": "Inception",
+              "text": "The sinners in the underworld looked up and saw a slender thread of spider silk. That was the way out.",
+              "rewards": [
+                {
+                  "name": "Solid Arashium",
+                  "icon": "Icon_currency_002",
+                  "kind": "item",
+                  "count": 50
+                }
+              ],
+              "location": "Training Ground"
+            },
+            {
+              "id": 144,
+              "kind": "main",
+              "code": "5",
+              "name": "Traitor",
+              "text": "Loyalty is a dog's greatest trait—a virtue that must never be lost.",
+              "rewards": [
+                {
+                  "name": "Solid Arashium",
+                  "icon": "Icon_currency_002",
+                  "kind": "item",
+                  "count": 40
+                }
+              ],
+              "location": "Preparation Room"
+            },
+            {
+              "id": 145,
+              "kind": "main",
+              "code": "6",
+              "name": "Tainted Blood",
+              "text": "It started with him, then the curse spread, and the dominoes fell.",
+              "rewards": [
+                {
+                  "name": "Solid Arashium",
+                  "icon": "Icon_currency_002",
+                  "kind": "item",
+                  "count": 40
+                }
+              ],
+              "location": "Checkpoint"
+            },
+            {
+              "id": 146,
+              "kind": "main",
+              "code": "7",
+              "name": "Nightmare",
+              "text": "Don't be afraid. When you wake up, all those nightmares will have disappeared.",
+              "rewards": [
+                {
+                  "name": "Solid Arashium",
+                  "icon": "Icon_currency_002",
+                  "kind": "item",
+                  "count": 20
+                }
+              ],
+              "location": "Archives"
+            },
+            {
+              "id": 147,
+              "kind": "main",
+              "code": "8",
+              "name": "Sweet Dreams",
+              "text": "Don't give up. When you leave this place, all those dreams will have come true.",
+              "rewards": [
+                {
+                  "name": "Solid Arashium",
+                  "icon": "Icon_currency_002",
+                  "kind": "item",
+                  "count": 50
+                }
+              ],
+              "location": "Archives"
+            },
+            {
+              "id": 148,
+              "kind": "main",
+              "code": "9",
+              "name": "Old Friend",
+              "text": "Forgetting is the final domino on the path to death. Everyone here knows that.",
+              "rewards": [
+                {
+                  "name": "Solid Arashium",
+                  "icon": "Icon_currency_002",
+                  "kind": "item",
+                  "count": 20
+                }
+              ],
+              "location": "Checkpoint"
+            },
+            {
+              "id": 149,
+              "kind": "main",
+              "code": "10",
+              "name": "Dog Eat Dog",
+              "text": "Everyone has a reason they can't turn back. No one's lower or nobler than anyone else.",
+              "rewards": [
+                {
+                  "name": "Solid Arashium",
+                  "icon": "Icon_currency_002",
+                  "kind": "item",
+                  "count": 40
+                }
+              ],
+              "location": "Preparation Room"
+            },
+            {
+              "id": 150,
+              "kind": "main",
+              "code": "11",
+              "name": "Mirage",
+              "text": "The sharp sword of truth cuts through the devil's web, scattering lies. No one can leave this place.",
+              "rewards": [
+                {
+                  "name": "Solid Arashium",
+                  "icon": "Icon_currency_002",
+                  "kind": "item",
+                  "count": 40
+                }
+              ],
+              "location": "Training Ground"
+            },
+            {
+              "id": 151,
+              "kind": "main",
+              "code": "12",
+              "name": "Disillusionment",
+              "text": "One more step forward, through this door, where freedom awaits.",
+              "rewards": [
+                {
+                  "name": "Solid Arashium",
+                  "icon": "Icon_currency_002",
+                  "kind": "item",
+                  "count": 40
+                }
+              ],
+              "location": "Gateway"
+            },
+            {
+              "id": 152,
+              "kind": "main",
+              "code": "13",
+              "name": "Afterglow",
+              "text": "Her experiences will become memories, eventually forgotten and turned into despair. Still, a lingering warmth guides her path.",
+              "rewards": [
+                {
+                  "name": "Recruit Voucher",
+                  "icon": "Icon_item_11000000",
+                  "kind": "item",
+                  "count": 1
+                },
+                {
+                  "name": "Solid Arashium",
+                  "icon": "Icon_currency_002",
+                  "kind": "item",
+                  "count": 50
+                }
+              ],
+              "location": "The Far Side"
+            }
+          ]
+        },
+        {
+          "name": "Beyond the Veil",
+          "stages": [
+            {
+              "id": 153,
+              "kind": "main",
+              "code": "1",
+              "name": "Beyond the Curtain",
+              "text": "The glorious champion shines in the spotlight, but the workers behind the scenes are just as important.",
+              "rewards": [
+                {
+                  "name": "Solid Arashium",
+                  "icon": "Icon_currency_002",
+                  "kind": "item",
+                  "count": 20
+                }
+              ],
+              "location": "ST Arena"
+            },
+            {
+              "id": 154,
+              "kind": "main",
+              "code": "2",
+              "name": "Trace",
+              "text": "If your skills are good enough, you can walk from the shadows to center stage, though the blinding limelight burns.",
+              "rewards": [
+                {
+                  "name": "Solid Arashium",
+                  "icon": "Icon_currency_002",
+                  "kind": "item",
+                  "count": 40
+                }
+              ],
+              "location": "Ruined Town"
+            },
+            {
+              "id": 155,
+              "kind": "main",
+              "code": "3",
+              "name": "Reciprocate",
+              "text": "The devil remembers her last few guests and sends them an invitation.",
+              "rewards": [
+                {
+                  "name": "Solid Arashium",
+                  "icon": "Icon_currency_002",
+                  "kind": "item",
+                  "count": 40
+                }
+              ],
+              "location": "Gateway"
+            },
+            {
+              "id": 156,
+              "kind": "main",
+              "code": "4",
+              "name": "Wild Dog",
+              "text": "He said that the slowest way to approach death is by living.",
+              "rewards": [
+                {
+                  "name": "Solid Arashium",
+                  "icon": "Icon_currency_002",
+                  "kind": "item",
+                  "count": 20
+                }
+              ],
+              "location": "Preparation Room"
+            },
+            {
+              "id": 157,
+              "kind": "main",
+              "code": "5",
+              "name": "Reverberation",
+              "text": "The lingering sound of the last falling domino echoes to this day, affecting everyone.",
+              "rewards": [
+                {
+                  "name": "Recruit Voucher",
+                  "icon": "Icon_item_11000000",
+                  "kind": "item",
+                  "count": 1
+                },
+                {
+                  "name": "Solid Arashium",
+                  "icon": "Icon_currency_002",
+                  "kind": "item",
+                  "count": 50
+                }
+              ],
+              "location": "Checkpoint"
+            },
+            {
+              "id": 158,
+              "kind": "main",
+              "code": "6",
+              "name": "Choice",
+              "text": "She made a choice and they set a promise.",
+              "rewards": [
+                {
+                  "name": "Solid Arashium",
+                  "icon": "Icon_currency_002",
+                  "kind": "item",
+                  "count": 20
+                }
+              ],
+              "location": "The Far Side"
+            }
+          ]
+        }
+      ],
+      "rerun": "2026-08-27"
+    },
+    {
+      "id": 2,
+      "name": "Downfall",
+      "start": "2025-10-16",
+      "end": "2025-10-30",
+      "parts": [
+        {
+          "name": "Story Stage",
+          "stages": [
+            {
+              "id": 23,
+              "kind": "main",
+              "code": "1",
+              "name": "Pretense",
+              "text": "As Sylvie probed deeper into Cicero's plan, she uncovered the sinister machinations lurking behind the scientist's façade of righteousness. Gathering her courage, Sylvie plunged forward, determined to thwart the wicked plan for good.",
+              "rewards": [
+                {
+                  "name": "Recruit Voucher",
+                  "icon": "Icon_item_11000000",
+                  "kind": "item",
+                  "count": 2
+                }
+              ]
+            },
+            {
+              "id": 24,
+              "kind": "main",
+              "code": "2",
+              "name": "Price",
+              "text": "Backed by military forces, Cicero and the DL seize Sylvie and Hong for live test subject! As the clock ticks, Gumusiay's reinforcements swoop in. The Epiphyllum trio face off against the power-hungry Cicero in an explosive showdown!",
+              "rewards": [
+                {
+                  "name": "Solid Arashium",
+                  "icon": "Icon_currency_002",
+                  "kind": "item",
+                  "count": 50
+                }
+              ]
+            },
+            {
+              "id": 25,
+              "kind": "main",
+              "code": "3",
+              "name": "Encroachment",
+              "text": "The Epiphyllum, locked and loaded, stands ready to demolish Cicero Lab. But Obsidian Group unleashes their ultimate weapon: the savage Predators.",
+              "rewards": [
+                {
+                  "name": "Recruit Voucher",
+                  "icon": "Icon_item_11000000",
+                  "kind": "item",
+                  "count": 2
+                }
+              ]
+            },
+            {
+              "id": 26,
+              "kind": "main",
+              "code": "4",
+              "name": "Memory",
+              "text": "The Predator clash ended in carnage. As Sylvie guided the Epiphyllum's tactical withdrawal, memories of Rosa surged through her mind—their final desperate escape etched in her thoughts.",
+              "rewards": [
+                {
+                  "name": "Solid Arashium",
+                  "icon": "Icon_currency_002",
+                  "kind": "item",
+                  "count": 50
+                }
+              ]
+            },
+            {
+              "id": 27,
+              "kind": "main",
+              "code": "5",
+              "name": "Nestling",
+              "text": "The Predator Catherine blasted toward the Epiphyllum trio at mach speed. Outgunned and outmaneuvered, Sylvie made the ultimate call: self-sacrifice to save her sisters.",
+              "rewards": [
+                {
+                  "name": "Recruit Voucher",
+                  "icon": "Icon_item_11000000",
+                  "kind": "item",
+                  "count": 2
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "The Future Encore",
+      "start": "2026-01-15",
+      "end": "2026-02-26",
+      "parts": [
+        {
+          "name": "The Future Encore",
+          "stages": [
+            {
+              "id": 61,
+              "kind": "main",
+              "code": "1",
+              "name": "Vermilion Maiden",
+              "rewards": [
+                {
+                  "name": "Solid Arashium",
+                  "icon": "Icon_currency_002",
+                  "kind": "item",
+                  "count": 40
+                },
+                {
+                  "name": "Theater Supplies",
+                  "icon": "Icon_DungeonTokenActivityToken3",
+                  "kind": "item",
+                  "count": 100
+                }
+              ]
+            },
+            {
+              "id": 62,
+              "kind": "main",
+              "code": "2",
+              "name": "Enigmatic Visitor",
+              "rewards": [
+                {
+                  "name": "Solid Arashium",
+                  "icon": "Icon_currency_002",
+                  "kind": "item",
+                  "count": 40
+                },
+                {
+                  "name": "Theater Supplies",
+                  "icon": "Icon_DungeonTokenActivityToken3",
+                  "kind": "item",
+                  "count": 100
+                }
+              ]
+            },
+            {
+              "id": 63,
+              "kind": "main",
+              "code": "3",
+              "name": "Signals Lay Eerily Silent",
+              "rewards": [
+                {
+                  "name": "Solid Arashium",
+                  "icon": "Icon_currency_002",
+                  "kind": "item",
+                  "count": 20
+                }
+              ]
+            },
+            {
+              "id": 64,
+              "kind": "main",
+              "code": "4",
+              "name": "The Pale Roar",
+              "rewards": [
+                {
+                  "name": "Solid Arashium",
+                  "icon": "Icon_currency_002",
+                  "kind": "item",
+                  "count": 50
+                },
+                {
+                  "name": "Theater Supplies",
+                  "icon": "Icon_DungeonTokenActivityToken3",
+                  "kind": "item",
+                  "count": 200
+                }
+              ]
+            },
+            {
+              "id": 65,
+              "kind": "main",
+              "code": "5",
+              "name": "Piercing Alarms",
+              "rewards": [
+                {
+                  "name": "Solid Arashium",
+                  "icon": "Icon_currency_002",
+                  "kind": "item",
+                  "count": 40
+                },
+                {
+                  "name": "Theater Supplies",
+                  "icon": "Icon_DungeonTokenActivityToken3",
+                  "kind": "item",
+                  "count": 100
+                }
+              ]
+            },
+            {
+              "id": 66,
+              "kind": "main",
+              "code": "6",
+              "name": "Beyond Rescue",
+              "rewards": [
+                {
+                  "name": "Solid Arashium",
+                  "icon": "Icon_currency_002",
+                  "kind": "item",
+                  "count": 20
+                }
+              ]
+            },
+            {
+              "id": 67,
+              "kind": "main",
+              "code": "7",
+              "name": "Pool of the Departed",
+              "rewards": [
+                {
+                  "name": "Solid Arashium",
+                  "icon": "Icon_currency_002",
+                  "kind": "item",
+                  "count": 40
+                },
+                {
+                  "name": "Theater Supplies",
+                  "icon": "Icon_DungeonTokenActivityToken3",
+                  "kind": "item",
+                  "count": 100
+                }
+              ]
+            },
+            {
+              "id": 68,
+              "kind": "main",
+              "code": "8",
+              "name": "Asuka, Strike!",
+              "rewards": [
+                {
+                  "name": "Solid Arashium",
+                  "icon": "Icon_currency_002",
+                  "kind": "item",
+                  "count": 50
+                },
+                {
+                  "name": "Theater Supplies",
+                  "icon": "Icon_DungeonTokenActivityToken3",
+                  "kind": "item",
+                  "count": 200
+                }
+              ]
+            },
+            {
+              "id": 69,
+              "kind": "main",
+              "code": "9",
+              "name": "Besieged",
+              "rewards": [
+                {
+                  "name": "Solid Arashium",
+                  "icon": "Icon_currency_002",
+                  "kind": "item",
+                  "count": 40
+                },
+                {
+                  "name": "Theater Supplies",
+                  "icon": "Icon_DungeonTokenActivityToken3",
+                  "kind": "item",
+                  "count": 100
+                }
+              ]
+            },
+            {
+              "id": 70,
+              "kind": "main",
+              "code": "10",
+              "name": "Distant Reunion",
+              "rewards": [
+                {
+                  "name": "Solid Arashium",
+                  "icon": "Icon_currency_002",
+                  "kind": "item",
+                  "count": 40
+                },
+                {
+                  "name": "Theater Supplies",
+                  "icon": "Icon_DungeonTokenActivityToken3",
+                  "kind": "item",
+                  "count": 100
+                }
+              ]
+            },
+            {
+              "id": 71,
+              "kind": "main",
+              "code": "11",
+              "name": "Parting, Pact",
+              "rewards": [
+                {
+                  "name": "Solid Arashium",
+                  "icon": "Icon_currency_002",
+                  "kind": "item",
+                  "count": 50
+                },
+                {
+                  "name": "Theater Supplies",
+                  "icon": "Icon_DungeonTokenActivityToken3",
+                  "kind": "item",
+                  "count": 200
+                }
+              ]
+            },
+            {
+              "id": 72,
+              "kind": "main",
+              "code": "12",
+              "name": "When Sorrows Blend",
+              "rewards": [
+                {
+                  "name": "Solid Arashium",
+                  "icon": "Icon_currency_002",
+                  "kind": "item",
+                  "count": 20
+                }
+              ]
+            },
+            {
+              "id": 73,
+              "kind": "main",
+              "code": "13",
+              "name": "Awakening",
+              "rewards": [
+                {
+                  "name": "Solid Arashium",
+                  "icon": "Icon_currency_002",
+                  "kind": "item",
+                  "count": 20
+                }
+              ]
+            },
+            {
+              "id": 74,
+              "kind": "main",
+              "code": "14",
+              "name": "Code: Hand of God",
+              "rewards": [
+                {
+                  "name": "Recruit Voucher",
+                  "icon": "Icon_item_11000000",
+                  "kind": "item",
+                  "count": 1
+                },
+                {
+                  "name": "Theater Supplies",
+                  "icon": "Icon_DungeonTokenActivityToken3",
+                  "kind": "item",
+                  "count": 400
+                },
+                {
+                  "kind": "pilot",
+                  "id": "10103151",
+                  "name": "Shinji"
+                }
+              ]
+            },
+            {
+              "id": 75,
+              "kind": "main",
+              "code": "15",
+              "name": "Echoes of the Future",
+              "rewards": [
+                {
+                  "name": "Solid Arashium",
+                  "icon": "Icon_currency_002",
+                  "kind": "item",
+                  "count": 20
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Homeward",
+      "start": "2026-03-26",
+      "end": "2026-04-15",
+      "parts": [
+        {
+          "name": "Homeward",
+          "stages": [
+            {
+              "id": 85,
+              "kind": "main",
+              "code": "1",
+              "name": "Depart",
+              "text": "After going through so much on Milkhama, Fia finally learns of a way back to the Principality of Ovett... but the road home isn't as smooth as Ovett's famed literature suggests.",
+              "rewards": [
+                {
+                  "name": "Recruit Voucher",
+                  "icon": "Icon_item_11000000",
+                  "kind": "item",
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "id": 86,
+              "kind": "main",
+              "code": "2",
+              "name": "Special Report!",
+              "text": "Erisa learns about the secret dealings of the Doll Group from the information dealer. Such mysterious orders always pique her interest...",
+              "rewards": [
+                {
+                  "name": "Solid Arashium",
+                  "icon": "Icon_currency_002",
+                  "kind": "item",
+                  "count": 30
+                }
+              ]
+            },
+            {
+              "id": 87,
+              "kind": "main",
+              "code": "3",
+              "name": "Journalist or Rat",
+              "text": "Fia is invited to a tea party by Alyson. Surprisingly, rather than confronting her, Alyson instead offers a contract that Fia cannot refuse.",
+              "rewards": [
+                {
+                  "name": "Recruit Voucher",
+                  "icon": "Icon_item_11000000",
+                  "kind": "item",
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "id": 88,
+              "kind": "main",
+              "code": "4",
+              "name": "Dilemma",
+              "text": "Under Alyson's mix of persuasion and coercion, Fia ultimately has no choice but to accept the contract... becoming a pawn of her enemy.",
+              "rewards": [
+                {
+                  "name": "Solid Arashium",
+                  "icon": "Icon_currency_002",
+                  "kind": "item",
+                  "count": 30
+                }
+              ]
+            },
+            {
+              "id": 89,
+              "kind": "main",
+              "code": "5",
+              "name": "Ghost of the Past",
+              "text": "In her unconscious state, Fia recalls those painful yet unforgettable memories...",
+              "rewards": [
+                {
+                  "name": "Recruit Voucher",
+                  "icon": "Icon_item_11000000",
+                  "kind": "item",
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "id": 90,
+              "kind": "main",
+              "code": "6",
+              "name": "Fruitless Farewell",
+              "text": "At last, Fia and Erisa seize their chance at freedom... And so begins an uprising that nearly engulfs the entire laboratory.",
+              "rewards": [
+                {
+                  "name": "Solid Arashium",
+                  "icon": "Icon_currency_002",
+                  "kind": "item",
+                  "count": 30
+                }
+              ]
+            },
+            {
+              "id": 91,
+              "kind": "main",
+              "code": "7",
+              "name": "Awaited Reunion",
+              "text": "Fia awakens from unconsciousness and finds she is not buried beneath rubble and debris. That long-lost friend appears by her side once again.",
+              "rewards": [
+                {
+                  "name": "Recruit Voucher",
+                  "icon": "Icon_item_11000000",
+                  "kind": "item",
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "id": 92,
+              "kind": "main",
+              "code": "8",
+              "name": "Unexpected Visitor",
+              "text": "Fia goes silent, and Erisa vanishes without a trace—Alyson, ever the careful strategist, slowly notices a flaw in her carefully laid scheme.",
+              "rewards": [
+                {
+                  "name": "Solid Arashium",
+                  "icon": "Icon_currency_002",
+                  "kind": "item",
+                  "count": 30
+                }
+              ]
+            },
+            {
+              "id": 93,
+              "kind": "main",
+              "code": "9",
+              "name": "Bomb in a Bracelet",
+              "text": "Alyson agrees to negotiations, yet the one who arrives is not Fia, but Erisa. The once-calm negotiation table begins to grow uncertain and dangerous...",
+              "rewards": [
+                {
+                  "name": "Recruit Voucher",
+                  "icon": "Icon_item_11000000",
+                  "kind": "item",
+                  "count": 1
+                },
+                {
+                  "name": "Milkhama Wanderer",
+                  "icon": "Icon_honormedal_001",
+                  "kind": "item",
+                  "count": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Mirage Expanse",
+      "start": "2026-05-07",
+      "end": "2026-06-03",
+      "parts": [
+        {
+          "name": "Mirage Expanse",
+          "stages": [
+            {
+              "id": 95,
+              "kind": "main",
+              "code": "1",
+              "name": "Escaping the Cage",
+              "rewards": [
+                {
+                  "name": "Solid Arashium",
+                  "icon": "Icon_currency_002",
+                  "kind": "item",
+                  "count": 50
+                }
+              ]
+            },
+            {
+              "id": 96,
+              "kind": "main",
+              "code": "2",
+              "name": "Wayward Feather",
+              "rewards": [
+                {
+                  "name": "Solid Arashium",
+                  "icon": "Icon_currency_002",
+                  "kind": "item",
+                  "count": 50
+                }
+              ]
+            },
+            {
+              "id": 108,
+              "kind": "main",
+              "code": "3",
+              "name": "Collusion",
+              "subtitle": "Collusion (Interlude)",
+              "rewards": [
+                {
+                  "name": "Solid Arashium",
+                  "icon": "Icon_currency_002",
+                  "kind": "item",
+                  "count": 20
+                }
+              ]
+            },
+            {
+              "id": 97,
+              "kind": "main",
+              "code": "4",
+              "name": "Rising Storm",
+              "rewards": [
+                {
+                  "name": "Solid Arashium",
+                  "icon": "Icon_currency_002",
+                  "kind": "item",
+                  "count": 50
+                }
+              ]
+            },
+            {
+              "id": 109,
+              "kind": "main",
+              "code": "5",
+              "name": "Back from the Dead",
+              "subtitle": "Back from the Dead (Interlude)",
+              "rewards": [
+                {
+                  "name": "Solid Arashium",
+                  "icon": "Icon_currency_002",
+                  "kind": "item",
+                  "count": 20
+                }
+              ]
+            },
+            {
+              "id": 98,
+              "kind": "main",
+              "code": "6",
+              "name": "Hunters",
+              "rewards": [
+                {
+                  "name": "Solid Arashium",
+                  "icon": "Icon_currency_002",
+                  "kind": "item",
+                  "count": 50
+                }
+              ]
+            },
+            {
+              "id": 110,
+              "kind": "main",
+              "code": "7",
+              "name": "Usurpation",
+              "subtitle": "Usurpation (Interlude)",
+              "rewards": [
+                {
+                  "name": "Solid Arashium",
+                  "icon": "Icon_currency_002",
+                  "kind": "item",
+                  "count": 20
+                }
+              ]
+            },
+            {
+              "id": 99,
+              "kind": "main",
+              "code": "8",
+              "name": "The Tempest",
+              "rewards": [
+                {
+                  "name": "Solid Arashium",
+                  "icon": "Icon_currency_002",
+                  "kind": "item",
+                  "count": 50
+                }
+              ]
+            },
+            {
+              "id": 100,
+              "kind": "main",
+              "code": "9",
+              "name": "Under the Fallen Nest",
+              "rewards": [
+                {
+                  "name": "Solid Arashium",
+                  "icon": "Icon_currency_002",
+                  "kind": "item",
+                  "count": 50
+                }
+              ]
+            },
+            {
+              "id": 111,
+              "kind": "main",
+              "code": "10",
+              "name": "Icarus",
+              "subtitle": "Icarus (Interlude)",
+              "rewards": [
+                {
+                  "name": "Solid Arashium",
+                  "icon": "Icon_currency_002",
+                  "kind": "item",
+                  "count": 20
+                }
+              ]
+            },
+            {
+              "id": 101,
+              "kind": "main",
+              "code": "11",
+              "name": "Bird Out of Flock",
+              "rewards": [
+                {
+                  "name": "Solid Arashium",
+                  "icon": "Icon_currency_002",
+                  "kind": "item",
+                  "count": 50
+                }
+              ]
+            },
+            {
+              "id": 102,
+              "kind": "main",
+              "code": "12",
+              "name": "The Battle of Beloren",
+              "rewards": [
+                {
+                  "name": "Solid Arashium",
+                  "icon": "Icon_currency_002",
+                  "kind": "item",
+                  "count": 50
+                }
+              ]
+            },
+            {
+              "id": 103,
+              "kind": "main",
+              "code": "13",
+              "name": "Reunion and Parting",
+              "rewards": [
+                {
+                  "name": "Solid Arashium",
+                  "icon": "Icon_currency_002",
+                  "kind": "item",
+                  "count": 50
+                }
+              ]
+            },
+            {
+              "id": 112,
+              "kind": "main",
+              "code": "14",
+              "name": "Final Decision",
+              "subtitle": "Final Decision (Interlude)",
+              "rewards": [
+                {
+                  "name": "Solid Arashium",
+                  "icon": "Icon_currency_002",
+                  "kind": "item",
+                  "count": 20
+                }
+              ]
+            },
+            {
+              "id": 104,
+              "kind": "main",
+              "code": "15",
+              "name": "The End",
+              "rewards": [
+                {
+                  "name": "Recruit Voucher",
+                  "icon": "Icon_item_11000000",
+                  "kind": "item",
+                  "count": 1
+                },
+                {
+                  "name": "ST Emblem: Shadow Rabbit Squad",
+                  "kind": "item",
+                  "count": 1
+                },
+                {
+                  "name": "Another Feather",
+                  "icon": "Icon_honormedal_011",
+                  "kind": "item",
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "id": 113,
+              "kind": "main",
+              "code": "16",
+              "name": "Scattered Wings",
+              "subtitle": "Scattered Wings (Interlude)",
+              "rewards": [
+                {
+                  "name": "Solid Arashium",
+                  "icon": "Icon_currency_002",
+                  "kind": "item",
+                  "count": 20
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Reversion Paradox",
+      "start": "2026-06-04",
+      "end": "2026-07-15",
+      "parts": [
+        {
+          "name": "Reversion Paradox",
+          "stages": [
+            {
+              "id": 114,
+              "kind": "main",
+              "code": "1",
+              "name": "Life Is But a Dream",
+              "text": "The more you resist, the deeper you sink...",
+              "rewards": [
+                {
+                  "name": "Solid Arashium",
+                  "icon": "Icon_currency_002",
+                  "kind": "item",
+                  "count": 40
+                },
+                {
+                  "name": "Command Experience",
+                  "icon": "Icon_currency_detectiveEXP",
+                  "kind": "item",
+                  "count": 60
+                }
+              ]
+            },
+            {
+              "id": 115,
+              "kind": "main",
+              "code": "2",
+              "name": "Observation Period",
+              "text": "Some trust is concluded beyond the curtain.",
+              "rewards": [
+                {
+                  "name": "Solid Arashium",
+                  "icon": "Icon_currency_002",
+                  "kind": "item",
+                  "count": 40
+                },
+                {
+                  "name": "Command Experience",
+                  "icon": "Icon_currency_detectiveEXP",
+                  "kind": "item",
+                  "count": 60
+                }
+              ]
+            },
+            {
+              "id": 116,
+              "kind": "main",
+              "code": "3",
+              "name": "Uninvited",
+              "text": "Uninvited guests always have their reasons.",
+              "rewards": [
+                {
+                  "name": "Solid Arashium",
+                  "icon": "Icon_currency_002",
+                  "kind": "item",
+                  "count": 40
+                },
+                {
+                  "name": "Command Experience",
+                  "icon": "Icon_currency_detectiveEXP",
+                  "kind": "item",
+                  "count": 60
+                }
+              ]
+            },
+            {
+              "id": 117,
+              "kind": "main",
+              "code": "4",
+              "name": "Duty-Bound",
+              "text": "Because of responsibility, everyone wants to do something.",
+              "rewards": [
+                {
+                  "name": "Solid Arashium",
+                  "icon": "Icon_currency_002",
+                  "kind": "item",
+                  "count": 20
+                },
+                {
+                  "name": "Command Experience",
+                  "icon": "Icon_currency_detectiveEXP",
+                  "kind": "item",
+                  "count": 60
+                }
+              ]
+            },
+            {
+              "id": 118,
+              "kind": "main",
+              "code": "5",
+              "name": "Leak",
+              "text": "In the story, it always has to happen.",
+              "rewards": [
+                {
+                  "name": "Solid Arashium",
+                  "icon": "Icon_currency_002",
+                  "kind": "item",
+                  "count": 50
+                },
+                {
+                  "name": "Command Experience",
+                  "icon": "Icon_currency_detectiveEXP",
+                  "kind": "item",
+                  "count": 60
+                }
+              ]
+            },
+            {
+              "id": 119,
+              "kind": "main",
+              "code": "6",
+              "name": "Driven by Trust",
+              "text": "Without doubt, there can be no trust.",
+              "rewards": [
+                {
+                  "name": "Solid Arashium",
+                  "icon": "Icon_currency_002",
+                  "kind": "item",
+                  "count": 20
+                },
+                {
+                  "name": "Command Experience",
+                  "icon": "Icon_currency_detectiveEXP",
+                  "kind": "item",
+                  "count": 60
+                }
+              ]
+            },
+            {
+              "id": 120,
+              "kind": "main",
+              "code": "7",
+              "name": "Welcome Ceremony",
+              "text": "This is what she calls a welcome... very unique.",
+              "rewards": [
+                {
+                  "name": "Solid Arashium",
+                  "icon": "Icon_currency_002",
+                  "kind": "item",
+                  "count": 40
+                },
+                {
+                  "name": "Command Experience",
+                  "icon": "Icon_currency_detectiveEXP",
+                  "kind": "item",
+                  "count": 70
+                }
+              ]
+            },
+            {
+              "id": 121,
+              "kind": "main",
+              "code": "8",
+              "name": "Under the Knife",
+              "text": "Shh... Try not to disturb the bad doctor.",
+              "rewards": [
+                {
+                  "name": "Solid Arashium",
+                  "icon": "Icon_currency_002",
+                  "kind": "item",
+                  "count": 40
+                },
+                {
+                  "name": "Command Experience",
+                  "icon": "Icon_currency_detectiveEXP",
+                  "kind": "item",
+                  "count": 70
+                }
+              ]
+            },
+            {
+              "id": 122,
+              "kind": "main",
+              "code": "9",
+              "name": "Whisper",
+              "text": "As long as you speak softly, anyone can sound like a devil.",
+              "rewards": [
+                {
+                  "name": "Solid Arashium",
+                  "icon": "Icon_currency_002",
+                  "kind": "item",
+                  "count": 20
+                },
+                {
+                  "name": "Command Experience",
+                  "icon": "Icon_currency_detectiveEXP",
+                  "kind": "item",
+                  "count": 70
+                }
+              ]
+            },
+            {
+              "id": 123,
+              "kind": "main",
+              "code": "10",
+              "name": "Break Time",
+              "text": "Rest, for what is yet to come.",
+              "rewards": [
+                {
+                  "name": "Solid Arashium",
+                  "icon": "Icon_currency_002",
+                  "kind": "item",
+                  "count": 40
+                },
+                {
+                  "name": "Command Experience",
+                  "icon": "Icon_currency_detectiveEXP",
+                  "kind": "item",
+                  "count": 70
+                }
+              ]
+            },
+            {
+              "id": 124,
+              "kind": "main",
+              "code": "11",
+              "name": "Sacrifice",
+              "text": "This is what is going to happen.",
+              "rewards": [
+                {
+                  "name": "Solid Arashium",
+                  "icon": "Icon_currency_002",
+                  "kind": "item",
+                  "count": 50
+                },
+                {
+                  "name": "Command Experience",
+                  "icon": "Icon_currency_detectiveEXP",
+                  "kind": "item",
+                  "count": 70
+                }
+              ]
+            },
+            {
+              "id": 125,
+              "kind": "main",
+              "code": "12",
+              "name": "Her Investigation",
+              "text": "One person's effort cannot even save themselves.",
+              "rewards": [
+                {
+                  "name": "Solid Arashium",
+                  "icon": "Icon_currency_002",
+                  "kind": "item",
+                  "count": 40
+                },
+                {
+                  "name": "Command Experience",
+                  "icon": "Icon_currency_detectiveEXP",
+                  "kind": "item",
+                  "count": 80
+                }
+              ]
+            },
+            {
+              "id": 126,
+              "kind": "main",
+              "code": "13",
+              "name": "Reinforcement",
+              "text": "She's coming, and this time it's prearranged.",
+              "rewards": [
+                {
+                  "name": "Solid Arashium",
+                  "icon": "Icon_currency_002",
+                  "kind": "item",
+                  "count": 40
+                },
+                {
+                  "name": "Command Experience",
+                  "icon": "Icon_currency_detectiveEXP",
+                  "kind": "item",
+                  "count": 80
+                }
+              ]
+            },
+            {
+              "id": 127,
+              "kind": "main",
+              "code": "14",
+              "name": "Honesty",
+              "text": "In such situations, honesty is dangerous, yet precious.",
+              "rewards": [
+                {
+                  "name": "Solid Arashium",
+                  "icon": "Icon_currency_002",
+                  "kind": "item",
+                  "count": 20
+                },
+                {
+                  "name": "Command Experience",
+                  "icon": "Icon_currency_detectiveEXP",
+                  "kind": "item",
+                  "count": 80
+                }
+              ]
+            },
+            {
+              "id": 128,
+              "kind": "main",
+              "code": "15",
+              "name": "Entrust",
+              "text": "She can do it, right?",
+              "rewards": [
+                {
+                  "name": "Solid Arashium",
+                  "icon": "Icon_currency_002",
+                  "kind": "item",
+                  "count": 50
+                },
+                {
+                  "name": "Command Experience",
+                  "icon": "Icon_currency_detectiveEXP",
+                  "kind": "item",
+                  "count": 80
+                }
+              ]
+            },
+            {
+              "id": 129,
+              "kind": "main",
+              "code": "16",
+              "name": "Return to Base",
+              "text": "Ultimately, people always return to the starting point.",
+              "rewards": [
+                {
+                  "name": "Solid Arashium",
+                  "icon": "Icon_currency_002",
+                  "kind": "item",
+                  "count": 40
+                },
+                {
+                  "name": "Command Experience",
+                  "icon": "Icon_currency_detectiveEXP",
+                  "kind": "item",
+                  "count": 90
+                }
+              ]
+            },
+            {
+              "id": 130,
+              "kind": "main",
+              "code": "17",
+              "name": "Judgment",
+              "text": "Truth is neither good nor bad, truth... is just truth.",
+              "rewards": [
+                {
+                  "name": "Solid Arashium",
+                  "icon": "Icon_currency_002",
+                  "kind": "item",
+                  "count": 20
+                },
+                {
+                  "name": "Command Experience",
+                  "icon": "Icon_currency_detectiveEXP",
+                  "kind": "item",
+                  "count": 90
+                }
+              ]
+            },
+            {
+              "id": 131,
+              "kind": "main",
+              "code": "18",
+              "name": "Run Away",
+              "text": "Lies are a way to run away. And once the jig is up... you run even harder.",
+              "rewards": [
+                {
+                  "name": "Solid Arashium",
+                  "icon": "Icon_currency_002",
+                  "kind": "item",
+                  "count": 50
+                },
+                {
+                  "name": "Command Experience",
+                  "icon": "Icon_currency_detectiveEXP",
+                  "kind": "item",
+                  "count": 90
+                }
+              ]
+            },
+            {
+              "id": 132,
+              "kind": "main",
+              "code": "19",
+              "name": "Malice",
+              "text": "The cruelty of children always comes as an unexpected surprise...",
+              "rewards": [
+                {
+                  "name": "Solid Arashium",
+                  "icon": "Icon_currency_002",
+                  "kind": "item",
+                  "count": 40
+                },
+                {
+                  "name": "Command Experience",
+                  "icon": "Icon_currency_detectiveEXP",
+                  "kind": "item",
+                  "count": 100
+                }
+              ]
+            },
+            {
+              "id": 133,
+              "kind": "main",
+              "code": "20",
+              "name": "Judgment Renewed",
+              "text": "After the truth, is it hope or despair?",
+              "rewards": [
+                {
+                  "name": "Solid Arashium",
+                  "icon": "Icon_currency_002",
+                  "kind": "item",
+                  "count": 20
+                },
+                {
+                  "name": "Command Experience",
+                  "icon": "Icon_currency_detectiveEXP",
+                  "kind": "item",
+                  "count": 100
+                }
+              ]
+            },
+            {
+              "id": 134,
+              "kind": "main",
+              "code": "21",
+              "name": "Dream's End",
+              "text": "If it's a dream, it will always end.",
+              "rewards": [
+                {
+                  "name": "Recruit Voucher",
+                  "icon": "Icon_item_11000000",
+                  "kind": "item",
+                  "count": 1
+                },
+                {
+                  "name": "Command Experience",
+                  "icon": "Icon_currency_detectiveEXP",
+                  "kind": "item",
+                  "count": 150
+                }
+              ]
+            },
+            {
+              "id": 135,
+              "kind": "main",
+              "code": "22",
+              "name": "Decryption",
+              "text": "Goodbye, Reversion Paradox.",
+              "rewards": [
+                {
+                  "name": "Solid Arashium",
+                  "icon": "Icon_currency_002",
+                  "kind": "item",
+                  "count": 20
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Gilded Reverie",
+      "start": "2026-08-13",
+      "end": "2026-09-09",
+      "parts": [
+        {
+          "name": "Gilded Reverie",
+          "stages": [
+            {
+              "id": 162,
+              "kind": "main",
+              "code": "1",
+              "name": "Destination: Milkhama",
+              "text": "Harvey, as usual, was fervently pursuing her sailing career, but little did she know, this time a special passenger was aboard...",
+              "tiers": [
+                {
+                  "name": "Normal",
+                  "rewards": [
+                    {
+                      "name": "Solid Arashium",
+                      "icon": "Icon_currency_002",
+                      "kind": "item",
+                      "count": 40
+                    }
+                  ]
+                },
+                {
+                  "name": "Hard",
+                  "rewards": [
+                    {
+                      "name": "Solid Arashium",
+                      "icon": "Icon_currency_002",
+                      "kind": "item",
+                      "count": 50
+                    }
+                  ]
+                },
+                {
+                  "name": "Extreme",
+                  "rewards": [
+                    {
+                      "name": "Transit Voucher",
+                      "icon": "Icon_item_11100000",
+                      "kind": "item",
+                      "count": 1
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": 163,
+              "kind": "main",
+              "code": "2",
+              "name": "Best Companion",
+              "text": "After Victoria's interrogation, the misunderstanding deepened, and the unlucky Ann was detained as a prisoner.",
+              "tiers": [
+                {
+                  "name": "Normal",
+                  "rewards": [
+                    {
+                      "name": "Solid Arashium",
+                      "icon": "Icon_currency_002",
+                      "kind": "item",
+                      "count": 40
+                    }
+                  ]
+                },
+                {
+                  "name": "Hard",
+                  "rewards": [
+                    {
+                      "name": "Solid Arashium",
+                      "icon": "Icon_currency_002",
+                      "kind": "item",
+                      "count": 50
+                    }
+                  ]
+                },
+                {
+                  "name": "Extreme",
+                  "rewards": [
+                    {
+                      "name": "Transit Voucher",
+                      "icon": "Icon_item_11100000",
+                      "kind": "item",
+                      "count": 1
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": 164,
+              "kind": "main",
+              "code": "3",
+              "name": "Rusty Pickaxe",
+              "text": "To prevent their whereabouts from being leaked, Ann and the group were placed under Harvey's supervision. However, Fenrir and Movme clearly did not intend to sit idly by.",
+              "tiers": [
+                {
+                  "name": "Normal",
+                  "rewards": [
+                    {
+                      "name": "Solid Arashium",
+                      "icon": "Icon_currency_002",
+                      "kind": "item",
+                      "count": 40
+                    }
+                  ]
+                },
+                {
+                  "name": "Hard",
+                  "rewards": [
+                    {
+                      "name": "Solid Arashium",
+                      "icon": "Icon_currency_002",
+                      "kind": "item",
+                      "count": 50
+                    }
+                  ]
+                },
+                {
+                  "name": "Extreme",
+                  "rewards": [
+                    {
+                      "name": "Transit Voucher",
+                      "icon": "Icon_item_11100000",
+                      "kind": "item",
+                      "count": 1
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": 165,
+              "kind": "main",
+              "code": "4",
+              "name": "Super Electric Eels",
+              "text": "Just when everyone thought everything had finally settled, that unexpected person appeared.",
+              "tiers": [
+                {
+                  "name": "Normal",
+                  "rewards": [
+                    {
+                      "name": "Solid Arashium",
+                      "icon": "Icon_currency_002",
+                      "kind": "item",
+                      "count": 40
+                    }
+                  ]
+                },
+                {
+                  "name": "Hard",
+                  "rewards": [
+                    {
+                      "name": "Solid Arashium",
+                      "icon": "Icon_currency_002",
+                      "kind": "item",
+                      "count": 50
+                    }
+                  ]
+                },
+                {
+                  "name": "Extreme",
+                  "rewards": [
+                    {
+                      "name": "Transit Voucher",
+                      "icon": "Icon_item_11100000",
+                      "kind": "item",
+                      "count": 1
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": 166,
+              "kind": "main",
+              "code": "5",
+              "name": "Another Day",
+              "text": "As Victoria expected, GKD Parcel Service launched another assault. This time, she was certain she was fully prepared.",
+              "tiers": [
+                {
+                  "name": "Normal",
+                  "rewards": [
+                    {
+                      "name": "Solid Arashium",
+                      "icon": "Icon_currency_002",
+                      "kind": "item",
+                      "count": 40
+                    }
+                  ]
+                },
+                {
+                  "name": "Hard",
+                  "rewards": [
+                    {
+                      "name": "Solid Arashium",
+                      "icon": "Icon_currency_002",
+                      "kind": "item",
+                      "count": 50
+                    }
+                  ]
+                },
+                {
+                  "name": "Extreme",
+                  "rewards": [
+                    {
+                      "name": "Transit Voucher",
+                      "icon": "Icon_item_11100000",
+                      "kind": "item",
+                      "count": 1
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Guided by Starlight",
+      "start": "2026-09-10",
+      "end": "2026-10-22",
+      "parts": [
+        {
+          "name": "Guided by Starlight",
+          "stages": [
+            {
+              "id": 168,
+              "kind": "main",
+              "code": "1",
+              "name": "Nova",
+              "date": "XC 1■■, ■■ 2",
+              "text": "The day the Nova was illuminated.",
+              "rewards": [
+                {
+                  "name": "Solid Arashium",
+                  "icon": "Icon_currency_002",
+                  "kind": "item",
+                  "count": 40
+                }
+              ]
+            },
+            {
+              "id": 169,
+              "kind": "main",
+              "code": "2",
+              "name": "Betrayer",
+              "date": "XC 119, March 9",
+              "text": "The Nova of the past has sided with the betrayer.",
+              "rewards": [
+                {
+                  "name": "Solid Arashium",
+                  "icon": "Icon_currency_002",
+                  "kind": "item",
+                  "count": 50
+                }
+              ]
+            },
+            {
+              "id": 170,
+              "kind": "main",
+              "code": "3",
+              "name": "Another Choice",
+              "date": "XC 119, March 9",
+              "text": "Perhaps there is... a third choice.",
+              "rewards": [
+                {
+                  "name": "Solid Arashium",
+                  "icon": "Icon_currency_002",
+                  "kind": "item",
+                  "count": 20
+                }
+              ]
+            },
+            {
+              "id": 171,
+              "kind": "main",
+              "code": "4",
+              "name": "Youth",
+              "date": "XC 1■■, February 7",
+              "text": "Youth always stands out.",
+              "rewards": [
+                {
+                  "name": "Solid Arashium",
+                  "icon": "Icon_currency_002",
+                  "kind": "item",
+                  "count": 40
+                }
+              ]
+            },
+            {
+              "id": 172,
+              "kind": "main",
+              "code": "5",
+              "name": "Standing Tall",
+              "date": "XC 119, March 10",
+              "text": "He stands there, an insurmountable presence.",
+              "rewards": [
+                {
+                  "name": "Solid Arashium",
+                  "icon": "Icon_currency_002",
+                  "kind": "item",
+                  "count": 50
+                }
+              ]
+            },
+            {
+              "id": 173,
+              "kind": "main",
+              "code": "6",
+              "name": "Interlude",
+              "date": "XC 119, March 10",
+              "text": "Two gunshots bring a somewhat expected surprise.",
+              "rewards": [
+                {
+                  "name": "Solid Arashium",
+                  "icon": "Icon_currency_002",
+                  "kind": "item",
+                  "count": 20
+                }
+              ]
+            },
+            {
+              "id": 174,
+              "kind": "main",
+              "code": "7",
+              "name": "Pact",
+              "date": "XC 1■■, March 2",
+              "text": "What is the true meaning of a pact...",
+              "rewards": [
+                {
+                  "name": "Solid Arashium",
+                  "icon": "Icon_currency_002",
+                  "kind": "item",
+                  "count": 40
+                }
+              ]
+            },
+            {
+              "id": 175,
+              "kind": "main",
+              "code": "8",
+              "name": "Broken Promise",
+              "date": "XC 119, March 10",
+              "text": "Pacts are meant to be broken one day.",
+              "rewards": [
+                {
+                  "name": "Solid Arashium",
+                  "icon": "Icon_currency_002",
+                  "kind": "item",
+                  "count": 50
+                }
+              ]
+            },
+            {
+              "id": 176,
+              "kind": "main",
+              "code": "9",
+              "name": "True Intentions",
+              "date": "XC 119, March 10",
+              "text": "As long as the true intentions are not perceived, this is the truth.",
+              "rewards": [
+                {
+                  "name": "Solid Arashium",
+                  "icon": "Icon_currency_002",
+                  "kind": "item",
+                  "count": 20
+                }
+              ]
+            },
+            {
+              "id": 177,
+              "kind": "main",
+              "code": "10",
+              "name": "Bloodline",
+              "date": "XC 1■■, April 7",
+              "text": "On the battlefield, they cannot recognize each other.",
+              "rewards": [
+                {
+                  "name": "Solid Arashium",
+                  "icon": "Icon_currency_002",
+                  "kind": "item",
+                  "count": 40
+                }
+              ]
+            },
+            {
+              "id": 178,
+              "kind": "main",
+              "code": "11",
+              "name": "Anomaly",
+              "date": "XC 119, March 10",
+              "text": "An anomaly has occurred.",
+              "rewards": [
+                {
+                  "name": "Solid Arashium",
+                  "icon": "Icon_currency_002",
+                  "kind": "item",
+                  "count": 50
+                }
+              ]
+            },
+            {
+              "id": 179,
+              "kind": "main",
+              "code": "12",
+              "name": "Definition of Strength",
+              "date": "XC 119, March 10",
+              "text": "Strength is not the goal, but a means.",
+              "rewards": [
+                {
+                  "name": "Recruit Voucher",
+                  "icon": "Icon_item_11000000",
+                  "kind": "item",
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "id": 180,
+              "kind": "main",
+              "code": "13",
+              "name": "Willful",
+              "date": "XC 119, March ■",
+              "text": "Both you and I have the right to be willful.",
+              "rewards": [
+                {
+                  "name": "Solid Arashium",
+                  "icon": "Icon_currency_002",
+                  "kind": "item",
+                  "count": 20
+                },
+                {
+                  "name": "The Orbit of Stars",
+                  "icon": "Icon_honormedal_050",
+                  "kind": "item",
+                  "count": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "H.I.V.E.",
+      "parts": [
+        {
+          "name": "H.I.V.E. Story Stages",
+          "stages": [
+            {
+              "id": 189,
+              "kind": "main",
+              "code": "1",
+              "name": "16-1 - Old Friends",
+              "subtitle": "Shadow Protocol",
+              "text": "An old friend returns after a long time apart, though the past they share is nothing to miss. Three days have passed since the massive explosion in the Central Mines, and Kaidan and the others are beginning to realize they're standing in the calm before the storm.",
+              "rewards": [
+                {
+                  "name": "Worker Pts",
+                  "icon": "Icon_currency_ActivityToken8",
+                  "kind": "item",
+                  "count": 200
+                }
+              ]
+            },
+            {
+              "id": 190,
+              "kind": "main",
+              "code": "2",
+              "name": "16-2│For Show",
+              "subtitle": "Shadow Protocol",
+              "text": "A morning briefing. A grand performance.\nIn response to the chaos following the explosion, Rosemary calls for a meeting, one that will decide the fate of Milkhama Island.",
+              "rewards": [
+                {
+                  "name": "Worker Pts",
+                  "icon": "Icon_currency_ActivityToken8",
+                  "kind": "item",
+                  "count": 200
+                }
+              ]
+            },
+            {
+              "id": 191,
+              "kind": "main",
+              "code": "3",
+              "name": "16-3│Admission Ticket",
+              "subtitle": "Shadow Protocol",
+              "text": "If you want to witness a miracle, hand over your ticket. The Predator's final experiment is still underway—and an uninvited guest has quietly arrived.",
+              "rewards": [
+                {
+                  "name": "Worker Pts",
+                  "icon": "Icon_currency_ActivityToken8",
+                  "kind": "item",
+                  "count": 200
+                }
+              ]
+            },
+            {
+              "id": 192,
+              "kind": "main",
+              "code": "4",
+              "name": "16-4│Abyss of Darkness",
+              "subtitle": "Shadow Protocol",
+              "text": "They search for a way out. She searches for redemption.\nAfter the explosion, Vesper stands on the brink of collapse—and the truth is, there's no choice left to make.",
+              "rewards": [
+                {
+                  "name": "Worker Pts",
+                  "icon": "Icon_currency_ActivityToken8",
+                  "kind": "item",
+                  "count": 200
+                }
+              ]
+            },
+            {
+              "id": 193,
+              "kind": "main",
+              "code": "5",
+              "name": "16-5 - Maniac",
+              "subtitle": "Shadow Protocol",
+              "text": "Madman, keep it under control—then dance within the plan all you want.\nAfter the explosion, Lukmund understands exactly where he stands. He needs to find a way out as soon as possible.",
+              "rewards": [
+                {
+                  "name": "Worker Pts",
+                  "icon": "Icon_currency_ActivityToken8",
+                  "kind": "item",
+                  "count": 200
+                }
+              ]
+            },
+            {
+              "id": 194,
+              "kind": "main",
+              "code": "6",
+              "name": "16-6 - Aspirant",
+              "subtitle": "Shadow Protocol",
+              "text": "Lift your head, one may glimpse their fate, but it changes nothing.\nTo ensure the plan moves forward, Colin has prepared for everything, done all that lies within his power.",
+              "rewards": [
+                {
+                  "name": "Worker Pts",
+                  "icon": "Icon_currency_ActivityToken8",
+                  "kind": "item",
+                  "count": 200
+                }
+              ]
+            },
+            {
+              "id": 195,
+              "kind": "main",
+              "code": "7",
+              "name": "16-7│Intermission",
+              "subtitle": "Shadow Protocol",
+              "text": "A gunshot rings out, some actors exit, more step onto the stage. Driven by the plan, everyone gathers in Milthus, as events spiral toward an uncontrollable end.",
+              "rewards": [
+                {
+                  "name": "Worker Pts",
+                  "icon": "Icon_currency_ActivityToken8",
+                  "kind": "item",
+                  "count": 200
+                }
+              ]
+            },
+            {
+              "id": 196,
+              "kind": "main",
+              "code": "8",
+              "name": "16-8│Beyond the Curtain",
+              "subtitle": "Shadow Protocol",
+              "text": "Those working behind the scenes can no longer shape what unfolds in the spotlight.\nBefore it all begins, before everything falls apart, everyone is making their own final preparations.",
+              "rewards": [
+                {
+                  "name": "Worker Pts",
+                  "icon": "Icon_currency_ActivityToken8",
+                  "kind": "item",
+                  "count": 200
+                }
+              ]
+            },
+            {
+              "id": 197,
+              "kind": "main",
+              "code": "9",
+              "name": "16-9│Unboxing",
+              "subtitle": "Shadow Protocol",
+              "text": "The black box has been opened. No more variables. The outcome is set.\nLukmund is dead, yet the bomb is still detonated by a sudden arrival of the Mobile Guard Unit. At this point, only a miracle can avert the catastrophe.",
+              "rewards": [
+                {
+                  "name": "Special Vector",
+                  "icon": "Icon_blindbox_2",
+                  "kind": "item",
+                  "count": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "borderConflict": {
+    "bosses": [
+      {
+        "name": "The Rake",
+        "text": "An armed force employed by a mysterious organization that blocks anyone who ventures deep into the Fast Desert.",
+        "foes": [
+          {
+            "name": "Fanny",
+            "tiers": [
+              "Rookie"
+            ],
+            "text": "A low-ranking NDF officer earning commissions for security detail. Naive about his employer, he thinks his presence alone is enough backup.",
+            "portrait": "Pilot_11002A_half",
+            "found": {
+              "name": "Recovery",
+              "text": "You find a collection of familiar items among Fanny's belongings. It seems he's been helping himself to a lot of the GKD Squad's supplies over the years. Well, at least they've returned to their rightful owner."
+            }
+          },
+          {
+            "name": "Bob",
+            "tiers": [
+              "Veteran"
+            ],
+            "text": "A renowned Skynet mercenary with an impeccable track record. Takes any job, any client - delivers excellence every time.",
+            "portrait": "Pilot_12013A_half",
+            "found": {
+              "name": "Pick-Up Password",
+              "text": "You discover a commission contract in Bob's inbox. Although you still can't figure out the client's identity, at least you know the pickup address and password."
+            }
+          },
+          {
+            "name": "Harold",
+            "tiers": [
+              "Elite"
+            ],
+            "text": "Lucky Harold, a Milkhama warlord active across the region. His legendary survival through major battles earned him his nickname.",
+            "portrait": "Pilot_12005A_half",
+            "found": {
+              "name": "Diary",
+              "text": "\"July 16th, another contract wrapped. Everyone's gone. They call me 'Lucky Harold'—big joke, huh? The real lucky ones live in White Maple, born with it all.\" Harold had his share, and now it's all in your hands."
+            }
+          }
+        ]
+      },
+      {
+        "name": "Researcher",
+        "text": "Unidentified researchers roaming this land. Their experimental equipment can be a real pain for intruders.",
+        "foes": [
+          {
+            "name": "Tusk",
+            "tiers": [
+              "Rookie"
+            ],
+            "text": "A lowly institute guard blocks your path. Less about duty, more about keeping his paycheck. In this line of work, survival rates are brutally low.",
+            "portrait": "Pilot_11004A_half",
+            "found": {
+              "name": "The End of Betrayal",
+              "text": "After being defeated, Tusk chooses to surrender and leads you to a storage point for valuable resources, where he opens the lock."
+            }
+          },
+          {
+            "name": "Yoshimi",
+            "tiers": [
+              "Veteran"
+            ],
+            "text": "Researcher Yoshimi blocks your path. Though barely trained, her experimental gear makes her a serious threat. Her indomitable spirit is what truly makes her unstoppable.",
+            "portrait": "Pilot_12002A_half",
+            "found": {
+              "name": "Confrontation",
+              "text": "Even though her ST is battered and bruised, Yoshimi doesn't give up the fight and eventually disappears into the fire. Having broken through the defenses, you enter the institute for your daily round of scavenging."
+            }
+          },
+          {
+            "name": "Ginny",
+            "tiers": [
+              "Elite"
+            ],
+            "text": "Ginny, Yoshimi's sister, consumed forbidden enhancers to protect her sibling. The lethal dose amplified her ST neural link to unprecedented levels. Her final stand will haunt all who dare oppose her.",
+            "portrait": "Pilot_12003A_half",
+            "found": {
+              "name": "Experimental Product",
+              "text": "You defeat Ginny, and to prevent her condition from deteriorating further, you remove all equipment from her, to be used for future needs."
+            }
+          }
+        ]
+      },
+      {
+        "name": "Professional Soldier",
+        "text": "Wandering bandits or elite armed forces—choose your opponents carefully.",
+        "foes": [
+          {
+            "name": "Wilde",
+            "tiers": [
+              "Rookie"
+            ],
+            "text": "Wilde followed his boss to strike gold at the border. After watching his comrades fall in battle after battle, panic took hold.",
+            "portrait": "Pilot_12013A_half"
+          },
+          {
+            "name": "Julio",
+            "tiers": [
+              "Veteran"
+            ],
+            "text": "Border raider Julio took a brutal hit, losing all his supplies. Now he's hunting for easy prey.",
+            "portrait": "Pilot_12008A_half"
+          },
+          {
+            "name": "Ivan",
+            "tiers": [
+              "Elite"
+            ],
+            "text": "Ivan commands Ophiuchus Corporation's elite squad. Their mission: salvage all viable mechanical components.",
+            "portrait": "Pilot_11012A_half"
+          },
+          {
+            "name": "Sigeou",
+            "tiers": [
+              "Ace"
+            ],
+            "text": "Sigeou remains in the dark about Ophiuchus' deals with border forces but recognizes the value in Obsidian's enemies.",
+            "portrait": "Pilot_11001A_half"
+          }
+        ]
+      },
+      {
+        "name": "White Dwarf",
+        "text": "Agents of the forces involved in the \"White Dwarf\" project. They relentlessly destroy anything that threatens the plan.",
+        "foes": [
+          {
+            "name": "Gil",
+            "tiers": [
+              "Rookie"
+            ],
+            "text": "A Dawnstar League Major serving as a senator's proxy. While cooperating with Angelica, his true mission is to investigate the White Dwarf project and gather intel on frontier organizations.",
+            "portrait": "Pilot_11003A_half"
+          },
+          {
+            "name": "Ghost",
+            "tiers": [
+              "Veteran"
+            ],
+            "text": "A shadow within the Ashes—his name and allegiance are unknown. Even Angelica questions his motives. One thing's clear: he or his master won't let White Dwarf fade away.",
+            "portrait": "Pilot_11013A_half"
+          },
+          {
+            "name": "Violette",
+            "tiers": [
+              "Elite"
+            ],
+            "text": "Ex-Obsidian mercenary, constantly outmaneuvered by Lucia and Catherine's Predator Squad. His ambition drove him to White Dwarf. Despite rejection, he's certain this project is his ticket to power.",
+            "portrait": "Pilot_11014A_half"
+          },
+          {
+            "name": "Angelica",
+            "tiers": [
+              "Ace"
+            ],
+            "text": "The White Dwarf project leader sought promotion through innovation but lost a factional purge. Now she operates from the border, advancing her research while building alliances for her comeback.",
+            "portrait": "Pilot_14001A_half"
+          }
+        ]
+      },
+      {
+        "name": "Border Bandits",
+        "text": "They long for redemption.",
+        "foes": [
+          {
+            "name": "Border Bandits",
+            "tiers": [
+              "Rookie",
+              "Veteran",
+              "Elite"
+            ],
+            "text": "In these frontier regions, there are always dangerous people who do not belong to any faction... and that's exactly why they survive.",
+            "portrait": "Pilot_12005A_half",
+            "found": {
+              "name": "Wanderer's Treasure",
+              "text": "You crushed the Bandits. As you pulled back the tarp on their pickup, you uncovered the spoils of five years of plunder—crates of supplies glinting under the moonlight."
+            }
+          }
+        ]
+      },
+      {
+        "name": "Aberrants",
+        "text": "Unidentified researchers roaming this land. Their experimental equipment can be a real pain for intruders.",
+        "foes": [
+          {
+            "name": "Aberrants",
+            "tiers": [
+              "Rookie",
+              "Veteran",
+              "Elite"
+            ],
+            "text": "Without the careful upkeep of researchers, test subjects are bound to fade away... but before that, they get a brief taste of real freedom.",
+            "portrait": "Pilot_11017A_half",
+            "found": {
+              "name": "Spare Items",
+              "text": "You wiped out the Test Subjects and forced open the lab's storage room. The drugs and supplies they relied on to survive now become part of your stockpile."
+            }
+          }
+        ]
+      },
+      {
+        "name": "NDF Remnants",
+        "text": "There are always those who anticipate war.",
+        "foes": [
+          {
+            "name": "NDF Remnants",
+            "tiers": [
+              "Rookie",
+              "Veteran",
+              "Elite",
+              "Ace"
+            ],
+            "text": "There will always be those who crave war. In these forgotten corners, they continue chasing their own madness.",
+            "portrait": "Pilot_11001A_half",
+            "found": {
+              "name": "Remnant Army Depot",
+              "text": "The UNCS remnant's Secret Warehouse, hidden deep in the desert, is finally yours. Magnetic pulse mines and military supplies once meant for a last stand… now belong to you."
+            }
+          }
+        ]
+      },
+      {
+        "name": "Corporate Mercenaries",
+        "text": "Profit drives people to act.",
+        "foes": [
+          {
+            "name": "Corporate Mercenaries",
+            "tiers": [
+              "Rookie",
+              "Veteran",
+              "Elite",
+              "Ace"
+            ],
+            "text": "People are crazy, but for money, they can be even crazier... And mercenaries? Most of them are just slaves to it.",
+            "portrait": "Pilot_12008A_half"
+          }
+        ]
+      },
+      {
+        "name": "Explorers",
+        "text": "Whether driven by curiosity, desire, or duty, those who explore this place have their own reasons.",
+        "foes": [
+          {
+            "name": "Julian",
+            "tiers": [
+              "Rookie"
+            ],
+            "text": "A common mercenary drawn to the Fast Desert by rumors of easy money. Though he lacks the skills to venture deep, his survival marks him as one of the stronger ones.",
+            "portrait": "Pilot_12008A_half",
+            "found": {
+              "name": "Ship Ticket",
+              "text": "You find a ship ticket on Julian, dated a week ago. This new mercenary is not yet aware of the dangers of Milkhama and sees it as the perfect place to get rich."
+            }
+          },
+          {
+            "name": "Reynolds",
+            "tiers": [
+              "Veteran"
+            ],
+            "text": "A bounty hunter masquerading as law enforcement, exploiting the Fast Desert's lawlessness for extortion. When his cover's blown, he drops the act and takes what he wants by force.",
+            "portrait": "Pilot_11006A_half",
+            "found": {
+              "name": "Crazy Show",
+              "text": "\"You bastard! Give me back my stuff!\" A group of vicious mercenaries appear from nowhere, cursing and grabbing at Reynolds's haul. They brawl over it, looking for a moment like they might actually know how to fight."
+            }
+          },
+          {
+            "name": "Bart",
+            "tiers": [
+              "Elite"
+            ],
+            "text": "UNCS Officer Bart noticed the surge of illegal mercs in Fast Desert. With no Harpy bribes coming his way, he decided to claim his own slice of the action.",
+            "portrait": "Pilot_11001A_half",
+            "found": {
+              "name": "Paradise",
+              "text": "\"Dude, this is a paradise for the poor. Friendly reminder—first-come-first-served!\" A voice message from Fanny on the Bart communicator. Perhaps reality was worlds apart from his expectations."
+            }
+          }
+        ]
+      },
+      {
+        "name": "League of Thieves",
+        "text": "The chaotic desert is a prime spot for making money. That's why so many come here to fish in troubled waters.",
+        "foes": [
+          {
+            "name": "Mad Dog",
+            "tiers": [
+              "Rookie"
+            ],
+            "text": "The Electric Eel squad leader known as Mad Dog had his vacation plans crushed by border conflicts. Deployed to Fast Desert by Frida, he now unleashes his rage on everyone he encounters.",
+            "portrait": "Pilot_12022A_half",
+            "found": {
+              "name": "70-30 Split",
+              "text": "\"Listen up, Mad Dog. I don't care what you found in that barren desert, as long as you still represent the Electric Eel, you have to follow the rules. It's seven to three in my favor!\" Now, \"Mad Dog\" doesn't have to worry about paying tribute to the boss."
+            }
+          },
+          {
+            "name": "Rhodes",
+            "tiers": [
+              "Veteran"
+            ],
+            "text": "A Harpy logistics officer responsible for ST recovery and supply distribution had a dark epiphany: dead squads can't claim their resources.",
+            "portrait": "Pilot_12017A_half",
+            "found": {
+              "name": "Job Description",
+              "text": "A small booklet of work instructions detailing the times and locations for Harpy's supply drops to mercenaries. Typical of Milkhama, none of these guys ever hand out the full supply—they're always cutting corners."
+            }
+          },
+          {
+            "name": "Big Mouth",
+            "tiers": [
+              "Elite"
+            ],
+            "text": "With carefully crafted half-truths, big Mouth, Milthus' infamous middleman, lures adventurers to Fast Desert. Fortune seekers find anything but riches awaiting them.",
+            "portrait": "Pilot_12018A_half",
+            "found": {
+              "name": "Coupons",
+              "text": "You find some random items on \"Big Mouth.\" To lure people into the Fast Desert, they'd go to any lengths—even handing out Freechicken vouchers. People really fall for this...?"
+            }
+          }
+        ]
+      },
+      {
+        "name": "The Secret Eye",
+        "text": "Amid the chaos of the border conflict, secret intel is like a beacon in the dark, drawing countless seekers of hidden truths.",
+        "foes": [
+          {
+            "name": "Carriage Driver",
+            "tiers": [
+              "Rookie"
+            ],
+            "text": "Local smuggling kingpins who built their empire on border trafficking now dance between factions. They've caught wind of both danger and opportunity in Fast Desert's depths, gathering intel to sell to the highest bidder.",
+            "portrait": "Pilot_12020A_half"
+          },
+          {
+            "name": "C-27-III",
+            "tiers": [
+              "Veteran"
+            ],
+            "text": "An escaped test subject roams the Fast Desert, lucid one moment, lost the next. The key to the border crisis lies within their fractured mind, making them a high-priority target. Their combat instincts have left countless pursuit teams in the dust.",
+            "portrait": "Pilot_11017A_half"
+          },
+          {
+            "name": "Lucy",
+            "tiers": [
+              "Elite"
+            ],
+            "text": "A notorious Skynet hacker known only by name deals in secrets. Her presence in Fast Desert's depths suggests hidden truths beneath the border crisis - drawing those who profit from classified intel.",
+            "portrait": "Pilot_12019A_half"
+          },
+          {
+            "name": "Scalpel",
+            "tiers": [
+              "Ace"
+            ],
+            "text": "Ophiuchus Bio-Tech's agent Scalpel arrives as Plan B in Fast Desert. With one team already deployed, what game is the ST manufacturer's leadership really playing?",
+            "portrait": "Pilot_12010A_half"
+          }
+        ]
+      }
+    ],
+    "encounters": [
+      {
+        "name": "Unexpected Device",
+        "steps": [
+          {
+            "text": "A fully loaded weapon transport truck bounces open its rear door, and metallic cargo boxes tumble into the wilderness like dice. Twisted components are scattered everywhere, with half of a mechanical arm hanging from a crack in one of the boxes, its fingertips clutching a shipping receipt shredded by the wind. The recipient's name field has been soaked in engine oil, turning into an ink blot.",
+            "options": [
+              {
+                "text": "Search for something useful",
+                "effect": "Choose 1 weapon to take",
+                "outcome": "You shake a pristine weapon free from its dust cover, then tear off the shipping label on the back, delivery complete."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Container",
+        "steps": [
+          {
+            "text": "Rusty containers are half-buried in the border sandstorm, with three boxes marked differently—the wings of the Northern Land emit a magnetofluidic glow, the starlight of Morningstar has dimmed, and the Obsidian mark reflects an eerie light.",
+            "options": [
+              {
+                "text": "Choose one to open",
+                "effect": "Choose 1 collection to take",
+                "outcome": "Inside the crate, precision instruments are neatly arranged. A soldier's journal in the corner reads, \"If you're reading this, the evacuation coordinates have been compromised…\" You grab the equipment and hurry out. As an explosion echoes behind you, the remaining containers are gone without a trace."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Mine Treasure",
+        "steps": [
+          {
+            "text": "The hunched miner squeezes out from the rock crevice, his protection mask covered in tiny cracks, exhaling a bluish-purple mist. He pulls out a worn-out iron box, and you notice that his hand is covered with crystal vine-like patterns. \"Thanks for driving away those Hyenas... This thing is something I picked up in the mine pit, it can be exchanged for three days of full meals, or—\"",
+            "options": [
+              {
+                "text": "Accept the other's goodwill",
+                "effect": "Randomly earn 1 collection",
+                "outcome": "You open the metal case, its rusted hinges letting out a strained creak. Inside lies an old instrument, its dial faded and worn, yet the core remains as good as new. The miner coughs and lets out a hoarse laugh, \"Not sure what it's for, but it always seems to bring us good luck…\""
+              },
+              {
+                "text": "Politely Decline",
+                "effect": "Receive 30 Harpy Coins and exit",
+                "outcome": "The miner silently pulls the metal case back, then fishes out a few coins from his coat and presses them into your hand. \"Take them… I know this is what you really want.\" As he turns away, you notice the skin at the back of his neck has fused with his protective suit."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Teach a Man to Fish",
+        "steps": [
+          {
+            "text": "You called out to a war peddler not far away. He spread out his ledger, which recorded five dates when you passed by each other. \"It's fate,\" he said with a smile as he continued to flip through the pages, casually adding, \"I didn't bring much cargo today, but... maybe I can teach you something.\"",
+            "options": [
+              {
+                "text": "Listen carefully",
+                "effect": "Choose 1 Operational Collection to take",
+                "outcome": "He teaches you to read the metal composition of enemy wreckage to gauge equipment markups, and to judge water supply shifts by the depth of supply truck tracks. Before you part, he slips you a star-shaped shard, \"Next time you make a deal, wedge this into the bill validator.\""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Moment of Change",
+        "steps": [
+          {
+            "text": "A deranged mechanic set up a temporary workshop on a pile of battlefield wreckage. amidst the blue-purple sparks from the welding gun, he was stuffing a half-melted mech core into a civilian engine: \"If you want to get stronger, come find me! Free! Free! As long as I see rivers of blood!\" Broken cables writhed like a nest of snakes at his feet.",
+            "options": [
+              {
+                "text": "Accept their assistance",
+                "effect": "Perform 1 ST modification",
+                "outcome": "As the welding torch sweeps across the mech, you catch a glimpse of an unmarked crimson module on the modification blueprint… hopefully nothing goes wrong."
+              },
+              {
+                "text": "Politely Decline",
+                "effect": "Gain 60 Harpy Coins and exit",
+                "outcome": "He tosses you a bag of oil-stained coins, their surfaces etched by acid. \"Go buy yourself some decent scrap! Don't die boring!\" His manic laughter echoes from a distance as he starts welding on the next ST."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Diligent",
+        "steps": [
+          {
+            "text": "At the edge of the wind-eroded trench lies a leather-bound notebook. Due to the explosion and spread of Arashi matter, the mineral fragments embedded in the spine emit a blue glow. Opening the pages, the immature handwriting records the ambush coordinates of a certain free Milkhama guerrilla team, with the blank spaces filled with bird doodles.",
+            "options": [
+              {
+                "text": "Decipher the tactical symbols page by page",
+                "effect": "Choose 1 Pilot to gain extra skill",
+                "outcome": "You pick up more than a few practical combat techniques from it, and on the final page, the faded ink bleeds into a human shape—two figures with arms outstretched, embracing each other. As you close the notebook, a familiar rustling drifts in from afar, like wind brushing across the sand."
+              },
+              {
+                "text": "Sell to the Harpy Caravan",
+                "effect": "Take the money and leave",
+                "outcome": "The merchant flicks a knife to pry the mineral shards from the book's spine, then tosses you a small pouch of Harpy Coins. \"Next time, bring me a journal from someone still breathing. A dead man's words are only good for kindling.\""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Rest Stop",
+        "steps": [
+          {
+            "text": "You found a safe room. In this well-preserved basement, a warm yellow light bulb sways gently, and faded but clean sofas are piled with fluffy blankets. Canned goods and unopened filters are stacked in the wooden storage cabinets, while a hot drink machine in the corner bubbles away, steam condensing into droplets on the ceiling.",
+            "options": [
+              {
+                "text": "Curl up on the couch for a quick nap",
+                "effect": "Restore 1 tier of Health to 1 Pilot",
+                "outcome": "The sofa fabric still carries the dry warmth of sun exposure, and the steady hum of the hot drink machine blurs into a lullaby. When you wake, an extra blanket has been draped over you by someone unknown, and you feel as refreshed as if you were back on pre-war leave."
+              },
+              {
+                "text": "Transfer the safe house to someone else",
+                "effect": "Gain 60 Harpy Coins and exit",
+                "outcome": "A pair of refugees with a child gratefully press a few coins into your hand. Unlike you, who can choose to leave at any time, how long has it been since they last found a place where they could truly rest?"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Always At Ease",
+        "steps": [
+          {
+            "text": "The vendor huddled in the shadow of the armored vehicle, his protective goggles half shattered, revealing bloodshot eyes. He cautiously handed over the syringe, with hair-like biological tissue suspended in the pale blue liquid: \"The black market is scrambling for it... but you need this more right now.\" The surface of the syringe is covered with scratch marks from fingernails.",
+            "options": [
+              {
+                "text": "Take the medicine offered",
+                "effect": "Change 1 retreated Pilot to SLII status",
+                "outcome": "As the liquid courses through the veins, glowing blue patterns flare to life, and shattered joints restore themselves as if nothing had happened. The refugees watching from afar suddenly take two steps back in unison, as if witnessing something that should never exist."
+              },
+              {
+                "text": "Resell to a nearby medical station",
+                "effect": "Gain 100 Harpy Coins and exit",
+                "outcome": "Two bags of coins land in your pocket—this will become the price someone pays for using that dose."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Forceful Seizure",
+        "steps": [
+          {
+            "text": "Through the binoculars, you can see a distant outpost, with a few boxes of unlabeled supplies piled behind a rusty barbed wire fence. A half-broken serial number plate hangs down between the gaps in the cargo boxes, and when the wind blows, it taps against the box, as if you can hear the rhythmic tapping, measuring the time you hesitate.",
+            "options": [
+              {
+                "text": "Assault the Outpost",
+                "effect": "Enter battle, win to obtain 1 Border Collection, lose to forfeit 30 Harpy Coins",
+                "outcome": "You pilot your ST through the barbed wire, the tearing metal alerting the outpost. The patrol units' optical sensors flare red—a brutal fight is inevitable."
+              },
+              {
+                "text": "Take a detour",
+                "effect": "Give up",
+                "outcome": "You lower your binoculars and chart a new route, bypassing the outpost. Sometimes, less trouble is the better choice."
+              }
+            ]
+          },
+          {
+            "label": "Battle",
+            "text": "Through your binoculars, you spot an outpost in the distance. Behind rusted barbed wire sit several unlabeled supply crates. A broken ID tag dangles from one of them, slapping against the metal in the wind. You can almost hear its steady rhythm, as if counting down your hesitation.\n[Win to obtain 1 Border Collection, lose to forfeit 30 Harpy Coins]"
+          },
+          {
+            "text": "You have won. Amidst the wreckage of the modified outpost ST, the broken serial number plate still flaps against the box in the wind, urging you to bring this plunder to an end.",
+            "options": [
+              {
+                "text": "Get Supplies",
+                "effect": "Choose 1 Collection as reward",
+                "outcome": "The crate is packed tight with supplies, forcing the metal lid ajar. Unbroken seals glint cold under the sunlight. As you drag it away, the scrape marks in the sand are quickly erased by the wind—as if no one had ever set foot on this battlefield."
+              }
+            ],
+            "label": "Victory"
+          },
+          {
+            "text": "The guards formed an impenetrable defense, and the modified gunports charge in unison with a thunderous roar. Their ranged orbit precisely locked on. The first blast shatters your cover on the left, the second forces you out on the right, the third strikes straight at your core... It's time to fall back.",
+            "options": [
+              {
+                "text": "Hurry up and leave",
+                "effect": "Forfeit 30 Harpy Coins",
+                "outcome": "Enemy STs leap through the wreckage in waves, their hydraulic joints syncing perfectly with the rhythm of gunfire. You toss your last interference round just as the smoke engulfs their reformed crossfire net. After retreating, you glance back from afar—searchlights sweep across your fading tracks like a mocking laugh."
+              }
+            ],
+            "label": "Defeat"
+          }
+        ]
+      },
+      {
+        "name": "Traditional Craft",
+        "steps": [
+          {
+            "text": "You arrived at an old workshop where an elderly man is maintaining some mech weapons. \"People only remember how the mechs perform, but no one cares about the craftsmanship of the weapons.\" He pauses for a moment and continues, \"But you don't think that way, do you? If so, go deal with those guys and prove you're someone worthy of using them.\"",
+            "options": [
+              {
+                "text": "Follow the old man's lead and engage",
+                "effect": "Enter battle, win to obtain 1 Weapon, lose to forfeit 30 Coins",
+                "outcome": "This won't be an easy fight, but that's exactly what proves your skill."
+              },
+              {
+                "text": "I don't need any of this",
+                "effect": "Give up",
+                "outcome": "\"If that's the case, why are you still here… let's go.\" As you leave, the distant clang of metal echoes behind you, like an unspoken elegy."
+              }
+            ]
+          },
+          {
+            "label": "Battle",
+            "text": "A group of mercenaries in modified ST units closes in, forming an impromptu challenge ring around you. The leader steps out of his mech, flipping a scarred coin. \"We've heard what you can do—so we came looking for you... Catch it. Heads, we fight fair. Tails, we draw blood.\"\n[Win to obtain 1 Weapon, lose to forfeit 30 Harpy Coins]"
+          },
+          {
+            "text": "After completing the mission, you returned to the workshop. As if anticipating this moment, the hydraulic workbench in the workshop lies with the outline of weapons wrapped in insulating tape. He flicks the grinding debris on the table with his finger, \"Take them away. They've been waiting for this moment for a long time.\"",
+            "options": [
+              {
+                "text": "Tear off the insulation tape",
+                "effect": "Choose 1 Weapon",
+                "outcome": "You tear off the insulating tape, revealing a weapon, an older model, but meticulously maintained, solid as ever, with a number of clever custom tweaks. The old man turns his back and continues polishing the barrel rifling. Whether the grind of metal drowns out your thanks or not, he never looks back at you again."
+              }
+            ],
+            "label": "Victory"
+          },
+          {
+            "text": "You gaze into the distance, as the sunset casts the silhouette of the workshop onto the horizon. The damaged sign sways at the eaves like a mourning banner, while the hunched figure of the old man grinds the rifling, resembling an eternal sculpture.",
+            "options": [
+              {
+                "text": "Just leave",
+                "effect": "Forfeit 30 Harpy Coins",
+                "outcome": "In the end, you choose to walk away. As you step back, the snap of a dry branch startles a flock of rust crows, and the wind sweeps across the workshop, carrying the fading rhythm of hammer on metal. Your footprints have already eroded into shallow pits, as if no one had ever approached that concrete island at all."
+              }
+            ],
+            "label": "Defeat"
+          }
+        ]
+      },
+      {
+        "name": "Challenger",
+        "steps": [
+          {
+            "text": "A group of mercenaries surround you with their modified STs, forming a challenge ring. The leader steps out of his ST, tossing a scarred coin: \"We've heard of your skills, so we came looking for you... Catch it—heads for spar, tails for blood.\"",
+            "options": [
+              {
+                "text": "Draw your weapon",
+                "effect": "Enter battle, win to gain 1 Pilot Skill Learning opportunity, lose to forfeit 30 Harpy Coins",
+                "outcome": "Ignoring the strange coin, you draw your weapon without hesitation. The hydraulics in the enemy ST units tense instantly, engine vibrations rattling their illegally modified parts… let the fight begin."
+              },
+              {
+                "text": "Not interested in a pointless fight",
+                "effect": "Give up",
+                "outcome": "You catch the coin, then toss it back. The mercenary sneers and grinds it into the sand under his boot, but still orders the encirclement to open a gap, letting you go."
+              }
+            ]
+          },
+          {
+            "text": "The opponent's ST collapsed on the sand, with blue-purple coolant seeping from its joint cracks. As the Pilot cabin opened, he staggered out of the ST, saying, \"I yield, I yield...\" expressing his sincerest respect to you.",
+            "options": [
+              {
+                "text": "Not bad, for opponents.",
+                "effect": "Enter Skill Selection",
+                "outcome": "They've got some real skill, you even picked up a few tricks from them… so you simply point at a loose rivet in one of their ST joints and say, \"That rattle's louder than your snoring.\" The mercenary pauses, then bursts out laughing as he watches you walk away, slamming a fist against the mech's hull and knocking loose sheets of rust."
+              }
+            ],
+            "label": "Victory"
+          },
+          {
+            "text": "Your ST is knocked down under the enemy's assault. With a piledriver aimed straight at your cockpit, you don't have many options left.",
+            "options": [
+              {
+                "text": "Yield",
+                "effect": "Forfeit 30 Harpy Coins",
+                "outcome": "\"Figures… just another big talker.\" The mercenaries aren't interested in getting anything from you, after leaving that disappointed remark, they move on to find someone else to challenge."
+              }
+            ],
+            "label": "Defeat"
+          }
+        ]
+      },
+      {
+        "name": "Performance Competition",
+        "steps": [
+          {
+            "text": "The merchant's modified truck is welded with neon tubes, and the salesman stands on top of the truck, holding up a megaphone wrapped in insulating tape: \"Do you think your ST is the best? Then come and try it out, we only serve the best ST!\" He kicked a ST's head leaking at his feet, and the \"Contest Area\" arrow on it wobbled to attract visitors.",
+            "options": [
+              {
+                "text": "Pilot the ST toward the marked direction",
+                "effect": "Enter battle, win to gain 1 ST Modification opportunity, lose to forfeit 30 Harpy Coins",
+                "outcome": "Following one arrow after another, you soon arrive at a dedicated arena where mercenary units from all over have gathered… Looks like everyone here thinks they're the best, but there can only be one winner."
+              },
+              {
+                "text": "Leave",
+                "effect": "Give up",
+                "outcome": "A truly good ST doesn't need to prove itself. You steer your mech off course, and before long, those flashy slogans fade from view."
+              }
+            ]
+          },
+          {
+            "label": "Battle",
+            "text": "A mech dealer's mod truck, welded over with neon tubes, blazes like a moving billboard. A promoter stands on the roof, shouting through a megaphone wrapped in electrical tape. \"Think your ST is the best? Then prove it, we only serve the best machines!\" He kicks a loose mech head at his feet, the \"Contest Zone\" arrow bolted to it swinging as it beckons challengers.\n[Win to gain 1 Modification opportunity, lose to forfeit 30 Harpy Coins]"
+          },
+          {
+            "text": "The modified truck of the mech merchant rolled into the venue, while the referee mech was dismantling the loser's parts into a pile of scrap metal. The salesman opened the truck's compartment for you: \"Speak up! Do you want to replace the thruster or install a new calibrator? I can even re-weld the entire track for you!\"",
+            "options": [
+              {
+                "text": "Give me the best service!",
+                "effect": "Gain 1 ST modification opportunity",
+                "outcome": "Your ST is quickly restored to peak condition under their hands. The free modification feels incredibly satisfying, and as for the cost… the wreckage scattered around you has already paid it."
+              }
+            ],
+            "label": "Victory"
+          },
+          {
+            "text": "Your mech lay fallen at the edge of the venue, watching as the mech merchant's modified truck entered, deploying its magnetic device. The referee mech was using hydraulic pliers to dismantle the loser's mech shoulder armor, while the salesman roared: \"This engine is ours!\" They were closing in on you...",
+            "options": [
+              {
+                "text": "Leave now",
+                "effect": "Forfeit 30 Harpy Coins",
+                "outcome": "You force your ST to retreat, breaking away from the scene. A hundred meters out, in the rearview mirror, another defeated unit is having its head sensor torn off, sparking cables whipping through the storm like funeral paper offerings."
+              }
+            ],
+            "label": "Defeat"
+          }
+        ]
+      },
+      {
+        "name": "Field Personnel",
+        "steps": [
+          {
+            "text": "A mercenary leader wearing a flashy tactical vest is squatting on an oil barrel, munching on compressed biscuits. As soon as he sees you, he jumps down: \"Brother! One of my guys suddenly said he had a stomachache this morning and can't make it! Lend me someone to cover for two hours and help us with a task, the reward will definitely satisfy you!\"",
+            "options": [
+              {
+                "text": "Agree",
+                "effect": "Dispatch 1 Pilot from this stage to gain 150 Harpy Coins. The dispatched Pilot can rejoin after 2 turns",
+                "outcome": "No point letting your crew sit idle, you decide to send one of them to take on the outsourced job and earn some extra pay to cover this trip."
+              },
+              {
+                "text": "Refuse with a roll of the eyes",
+                "effect": "Give up",
+                "outcome": "The mercenary chuckles. \"Compassion doesn't win wars, man. These days, what squad leader doesn't send their idle crew to pick up side jobs?\" With that, he kicks up a cloud of dust as he drives off in his ST."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Paid Labor",
+        "steps": [
+          {
+            "text": "The modified truck of the border weapons dealer is welded full of bullet holes, and the truck bed's magnet is covered with piles of metallic debris. The one-eyed boss sees you and taps on the corroded loudspeaker: \"Hiring battlefield weapon recovery personnel! Meals provided! Weapons included!\"",
+            "options": [
+              {
+                "text": "Agree",
+                "effect": "Dispatch 1 Pilot from this stage to gain 150 Harpy Coins. The dispatched Pilot can rejoin after 2 turns",
+                "outcome": "You send your crew out for some odd jobs, hoping they'll bring back something useful along with the smell of gunpowder."
+              },
+              {
+                "text": "Silently shakes head",
+                "effect": "Give up",
+                "outcome": "The boss doesn't pay it much mind. He just swivels the loudspeaker and calls out to other mercenary squads, there's never a shortage of people willing to take work here."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Frontier Arena",
+        "steps": [
+          {
+            "text": "You've wandered into a frontier arena. A wave of roaring cheers crashes through the steel-welded stands as mercenaries slam against the railings, sparks scattering over the wreckage piled at the center. A battered referee ST extends its hydraulic arm, pointing at your unit. \"Stepping in? The longer you last alone, the richer the prize.\"",
+            "options": [
+              {
+                "text": "Enter the competition",
+                "effect": "Enter the Arena. Rewards vary by stage. Win to earn prizes, lose to forfeit 30 Harpy Coins",
+                "outcome": "A referee ST locks a counting ring onto your ST's wrist. Each enemy you take down adds another streak of blue-violet light inside the ring."
+              },
+              {
+                "text": "Refuse",
+                "effect": "Give up",
+                "outcome": "You ignore the frenzy of the arena. You've got more important things to handle."
+              }
+            ]
+          },
+          {
+            "label": "Battle",
+            "text": "You've stumbled into a frontier arena. Waves of roaring echo across the ring-shaped stands welded from steel, as mercenaries slam against the railings in a frenzy, sparks scattering over the heap of wrecked ST units at the center. A paint-worn referee unit extends its hydraulic arm, pointing at your mech. \n\"Step in? The longer you last, the greater the reward!\"\n[Rewards vary by stage. Win to earn prizes, lose to forfeit 30 Harpy Coins]"
+          },
+          {
+            "text": "You chose not to keep fighting, pulling out after the first round.\nMaybe the damage just wasn't worth the payoff, or maybe you needed to save your strength for what's ahead. Either way, you made your call—and walked away with a reward.",
+            "options": [
+              {
+                "text": "Claim the reward",
+                "effect": "Gain Harpy Coins",
+                "outcome": "You take the prize handed over by the staff. Through the prep room screen, you can see the arena celebrating the birth of a new champion… maybe next time, it'll be you up there."
+              }
+            ],
+            "label": "Withdraw"
+          },
+          {
+            "text": "You chose not to keep fighting, pulling out after the second round.\nMaybe the damage just wasn't worth the payoff, or maybe you needed to save your strength for what's ahead. Either way, you made your call—and walked away with a reward.",
+            "options": [
+              {
+                "text": "Claim the reward",
+                "effect": "Gain Harpy Coins",
+                "outcome": "You take the prize handed over by the staff. Through the prep room screen, you can see the arena celebrating the birth of a new champion… maybe next time, it'll be you up there."
+              }
+            ],
+            "label": "Withdraw"
+          },
+          {
+            "text": "You chose not to keep fighting, pulling out after the third round.\nMaybe the damage just wasn't worth the payoff, or maybe you needed to save your strength for what's ahead. Either way, you made your call—and walked away with a reward.",
+            "options": [
+              {
+                "text": "Claim the reward",
+                "effect": "Gain Harpy Coins",
+                "outcome": "You take the prize handed over by the staff. Through the prep room screen, you can see the arena celebrating the birth of a new champion… maybe next time, it'll be you up there."
+              }
+            ],
+            "label": "Withdraw"
+          },
+          {
+            "text": "You look across the field, littered with shattered ST wrecks, as the roar in the comms swells like a crashing tide. Only then do you realize—there's no one left to fight.\nYou're the last one standing. Now, as the victor, claim your reward.",
+            "options": [
+              {
+                "text": "Step onto the shell-stacked podium",
+                "effect": "Earn 1 S-Tier Border Collection",
+                "outcome": "The referee ST's hydraulic arm pries open a rusted crate, and the stands erupt in one final clash of metal applause. As you lift the crate and turn away, condensed liquid drips from its base, etching brief glowing marks into the sand, only to be swallowed by the wind moments later. Here, even victory leaves little behind."
+              }
+            ],
+            "label": "Withdraw"
+          },
+          {
+            "text": "Perhaps giving up is the better choice, but now you have lost that right. \nWhen you are dismissed from the Frontier Arena, I wonder if you will recall the moment you decided to continue the challenge.",
+            "options": [
+              {
+                "text": "End it...",
+                "effect": "Forfeit 30 Harpy Coins",
+                "outcome": "The referee unit's red warning lights sweep over the fractures in your ST, forcibly cutting off its energy link. Mercenaries in the stands bang their weapons in a mocking rhythm, while a rusted loudspeaker loops the same message: \"Exit route is now open.\" It's time for you to leave."
+              }
+            ],
+            "label": "Defeat"
+          }
+        ]
+      },
+      {
+        "name": "Product Tasting",
+        "steps": [
+          {
+            "text": "Ms. Chili's modified food truck is welded at the edge of a crater, with neon tubes on the roof spelling out \"Hell Tasting Event,\" attracting passing Mercenaries.",
+            "options": [
+              {
+                "text": "Join the fun",
+                "effect": "Enter a luck-based wager: 1/3 chance to gain 80 Harpy Coins, 2/3 chance to lose 30 Harpy Coins",
+                "outcome": "Enter Luck Gamble"
+              },
+              {
+                "text": "Let's just go",
+                "effect": "Give up",
+                "outcome": "You've heard rumors of the \"Hell Tasting\" on Skynet… judging by most participants' feedback, it's probably best not to get involved."
+              }
+            ]
+          },
+          {
+            "text": "The mercenaries line up for the taste test, dropping shell casings into the ballot box with a clattering metallic sound, and finally, it's your turn. Looking up, you see three cups of unknown liquid on the counter tray, each with a strange color: oil black, toilet-cleaner blue, and sawdust brown.",
+            "options": [
+              {
+                "text": "Black Flavor",
+                "effect": "Only 1 option grants a reward, all others will cost Harpy Coins",
+                "outcome": "The taste is hard to describe, but after a few gulps, you find yourself getting hooked… you've uncovered the potential of this new product, and the company rewards you accordingly."
+              },
+              {
+                "text": "Blue Flavor",
+                "effect": "Only 1 option grants a reward, all others will cost Harpy Coins",
+                "outcome": "You grab the new drink and down it in one go—and then… ugh… ugh…\nIn a daze, you're lifted onto a stretcher and taken aside to rest. When you wake up again, the tasting event is already over, leaving only a confused you behind… it feels like you've lost something…"
+              },
+              {
+                "text": "Brown Flavor",
+                "effect": "Only 1 option grants a reward, all others will cost Harpy Coins",
+                "outcome": "You grab the new drink and down it in one go—and then… ugh… ugh…\nIn a daze, you're lifted onto a stretcher and taken aside to rest. When you wake up again, the tasting event is already over, leaving only a confused you behind… it feels like you've lost something…"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Beauty Vote",
+        "steps": [
+          {
+            "text": "A salesman from Doll Securities knocks on your cabin door. His hair is slicked back, and his bulletproof suit pockets are filled with exquisite business cards. Standing upright, he politely asks, \"Hello, would you be interested in learning about investment-related services?\"",
+            "options": [
+              {
+                "text": "Uh... I'm interested",
+                "effect": "Enter a luck-based wager: 1/2 chance to gain 60 Harpy Coins, 1/2 chance to lose 30 Harpy Coins",
+                "outcome": "Enter Luck Gamble"
+              },
+              {
+                "text": "My money can't take this!",
+                "effect": "Give up",
+                "outcome": "You shut him down cold, yet he maintains a polite smile, watching you leave… so this is what they call a professional manager?"
+              }
+            ]
+          },
+          {
+            "text": "After you agree, he taps on his modified tablet, and the enhanced screen displays several curves of data flow. \"Investment is the future for successful mercenaries. Make your choice, and you will receive returns beyond your imagination... But remember, each choice is a different challenge.\"",
+            "options": [
+              {
+                "text": "Go Bottom Fishing!",
+                "effect": "Only 1 option grants a reward, all others will cost Harpy Coins",
+                "outcome": "The trend plays out just as you predicted, and you receive your reward, but… do you really understand why your choice was right?"
+              },
+              {
+                "text": "Buy High!",
+                "effect": "Only 1 option grants a reward, all others will cost Harpy Coins",
+                "outcome": "You misread the trend and took a heavy loss, but don't be discouraged, this is, after all, just a game of probability."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Delivered to Your Door",
+        "steps": [
+          {
+            "text": "A modified armored truck blocks the cover, shell casings clinking like wind chimes. The trader knocks on the hatch. \"Filters, seventy percent new. Engine oil, fresh. Off-brand weapons or field rations?\" Parts and faded manuals line the shelves. A metal sign reads: \"Harpy Credit Accepted.\"",
+            "options": [
+              {
+                "text": "Slip into the cargo hold reeking of engine oil",
+                "effect": "Enter War Peddler",
+                "outcome": "With a screwdriver clenched between his teeth, he walks you through the mod components. Behind him, a chalkboard is scrawled with the coordinates of a military outpost in Area 3: \"Slot in two mech core bearings, and this intel's yours, free.\" Bullet casings strung from the ceiling chime softly as they drip with condensation."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Scrap Dash",
+        "steps": [
+          {
+            "text": "The mercenaries have carved out a makeshift track across the yellow dust. All kinds of mini STs dart along it, metal joints scraping and kicking up scorched earth as thrusters flare, leaving streaks of exhaust. They leap and jolt through the circular trench carved into the ground, restless and aggressive. Looks like they're setting up a race—and wherever there's a race, there's money on the line.",
+            "options": [
+              {
+                "text": "Place a bet",
+                "effect": "Spend 15 Harpy Coins to enter. 1/3 chance to gain 120 Harpy Coins"
+              },
+              {
+                "text": "Just watch",
+                "effect": "Abandon",
+                "outcome": "You simply stand off to the side, then left after watching the match to the end. You've always believed that only a pure contest is worth the thrill."
+              }
+            ]
+          },
+          {
+            "text": "You decide to place a bet. After your observation, three mini-mechs seem to have the best chance of winning: the classic Pochy type, the flying Guggle type, and the annoying Struct type. It's time to make a decision.",
+            "options": [
+              {
+                "text": "Bet on Pochy Type",
+                "effect": "Only 1 option grants a reward",
+                "outcome": "The contender you picked surges past the finish line, earning you a hefty payout amid the mercenaries' mix of curses and cheers.\nWell… didn't pick the winner. But there's nothing to complain about. You took the gamble, you take the loss."
+              },
+              {
+                "text": "Bet on Guggle Type",
+                "effect": "Only 1 option grants a reward",
+                "outcome": "Well… didn't pick the winner. But there's nothing to complain about. You took the gamble, you take the loss."
+              },
+              {
+                "text": "Bet on Struct Type",
+                "effect": "Only 1 option grants a reward",
+                "outcome": "Well… didn't pick the winner. But there's nothing to complain about. You took the gamble, you take the loss."
+              }
+            ]
+          },
+          {
+            "text": "After a race, all the mini-mechs stagger back to the starting line of the track... It seems the race isn't over yet, which means you can still purchase chips from the shouting vendors on the side.",
+            "options": [
+              {
+                "text": "Buy chips",
+                "effect": "Spend an additional 30 Harpy Coins to continue. 1/3 chance to gain 120 Harpy Coins"
+              },
+              {
+                "text": "That's enough",
+                "effect": "Give up",
+                "outcome": "Alright, alright. That was plenty of fun for now…"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Money Game",
+        "steps": [
+          {
+            "text": "Why would anyone build an exchange in a place like this? It doesn't matter. The point is, you're standing in front of it now, and to participate in this money game, you'll need to bring out the appropriate chips.",
+            "options": [
+              {
+                "text": "Enter",
+                "effect": "Spend 15 Harpy Coins to join. 1/2 chance to gain 90 Harpy Coins"
+              },
+              {
+                "text": "Leave",
+                "effect": "Give up",
+                "outcome": "You know one thing for sure—this isn't how money should be spent. That's a good call."
+              }
+            ]
+          },
+          {
+            "text": "You step onto the floor with your funds ready, eyes lifting to the massive screen as its data curves flicker and shift by the second. You hold your breath, studying them in silence... Maybe it's the result of countless calculations, a sudden spark of instinct—or just your lucky number—but you've made your pick. One stock. Now it all comes down to the call: long or short.",
+            "options": [
+              {
+                "text": "Go Long",
+                "effect": "Only 1 option grants a reward",
+                "outcome": "Your prediction was spot on… maybe you were made for this.\nAs long as you don't sell, it's not a loss… you tell yourself, then the money disappears anyway."
+              },
+              {
+                "text": "Go Short",
+                "effect": "Only 1 option grants a reward",
+                "outcome": "As long as you don't sell, it's not a loss… you tell yourself, then the money disappears anyway."
+              }
+            ]
+          },
+          {
+            "text": "After completing a round of investment, you reflect on your previous experiences, feeling like you understand more...",
+            "options": [
+              {
+                "text": "One more round!",
+                "effect": "Spend an additional 30 Harpy Coins to continue. 1/2 chance to gain 90 Harpy Coins"
+              },
+              {
+                "text": "That's enough for now!",
+                "effect": "Give up",
+                "outcome": "There's one thing you know—the ones who actually make money are the ones who know when to walk away."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Border Seminar",
+        "steps": [
+          {
+            "text": "The bar is filled with a large number of mercenaries, but strangely, they are not drinking heavily or fighting. They are simply talking quietly, exchanging experiences. A mercenary waves to you and says, \"We welcome anyone who wants to learn. It's just some combat demonstrations, which might be a bit risky.\".",
+            "options": [
+              {
+                "text": "Time to learn",
+                "effect": "Select one Pilot deployed in this stage to dispatch. The dispatched Pilot returns after 2 rounds of action and learns an advanced skill. The corresponding unit cannot be deployed during the dispatch rounds",
+                "outcome": "Learning's never a bad thing, you push one of your eager subordinates forward, agreeing to come back for them after some time."
+              },
+              {
+                "text": "Scoff and leave",
+                "effect": "Give up",
+                "outcome": "What could you really learn from these mercenaries, anyway? Unimpressed, you lead your team away. Compared to that, they've got more important work to do."
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "discoveries": [
+      {
+        "name": "Preparedness",
+        "text": "Before you officially enter the Fast Desert, the Harpy employee, who has gotten to know you well, taps you on the shoulder, \"You guys might want to pick out some border relics before you leave.\""
+      },
+      {
+        "name": "Pacifism",
+        "text": "\"Hey, buddy, to hell with the orders. We don't need to point our guns at each other.\" A group of mercenaries surrenders and offers some benefits as a show of goodwill. Seems like not everyone here is a battle maniac."
+      },
+      {
+        "name": "On the Hook",
+        "text": "Before your arrival, two squads had a fierce firefight here, and the ultimate winner was—no one! You scavenge the wreckage for a while, finding a few useful bits and pieces, then hit the road again."
+      },
+      {
+        "name": "Data Trading",
+        "text": "A group of Obsidian employees is offering resources to passing squads, but only if they can install a few more signal transmitters for collecting combat data. You accept—after all, your STs are already packed with them, so another won't make a dent."
+      },
+      {
+        "name": "Meaningless Good Deed",
+        "text": "After clearing out the enemies, a group of refugees suddenly appears from nowhere, expressing their gratitude and handing over some useful trinkets. They had found a refuge here, but the establishment of this border trial ground has taken it away from them."
+      },
+      {
+        "name": "Pleasant Surprise",
+        "text": "You stumble upon some abandoned supplies by the side of the road. Looks like they fell off a supply truck... Seems today's our lucky day."
+      },
+      {
+        "name": "Secret Warehouse",
+        "text": "The ground shifts underfoot—something's off. You spot it, an underground stash from some squad. Without any hesitation, you take everything. When it comes to survival, there are no friends in this place."
+      },
+      {
+        "name": "Stressed",
+        "text": "You spot a merchant, thinking you might strike a deal, but the moment they see you, they immediately start running, dropping some of their goods to slow you down... It's not hard to imagine what they might have gone through before."
+      },
+      {
+        "name": "Resting Place",
+        "text": "You discover a bar in the heart of this chaotic land—an incredible place free of conflict. Before you realize it, you're five drinks deep! The bartender kindly shares the extra supplies he has on hand."
+      },
+      {
+        "name": "Mysterious Package",
+        "text": "\"We look forward to your future performance.\" A small black package lies quietly on your path, containing precious supplies and a small note with only one sentence written on it."
+      },
+      {
+        "name": "Challenger",
+        "text": "\"You're not ready yet... Take this, and find us.\" Before you even realize it, you're surrounded by an elite squad. Just as the tension between both sides peaks, the other party suddenly throws a batch of supplies at your feet and leaves."
+      },
+      {
+        "name": "Inheritance",
+        "text": "\"Bro, take this—just don't let the next bunch of asshats beat you!\" A heavily-wounded mercenary squad runs into you as they retreat. Looks like the enemies ahead won't be easy pickings."
+      },
+      {
+        "name": "Headwind Express",
+        "text": "A Headwind Logistics freight truck suddenly appears from out of nowhere, drops off the goods, and then disappears. According to Dana's recollection, these are the products she ordered several months ago—she thought the order was lost, but here they are, delivered at last."
+      },
+      {
+        "name": "Doll Capital Injection",
+        "text": "\"A little gesture of goodwill. We'll do business again down the line.\" The Doll Group's presence in this brutal terrain is undeniable, offering a hand to mercenaries they have their eyes on. When the time's right, they'll call in the favor."
+      },
+      {
+        "name": "Winner's Commendation",
+        "text": "Somewhere along the way, you've become the squad with the best chance of making it to the end. For that, Harpy has sent you a special gift. Use it wisely."
+      },
+      {
+        "name": "Unexpected Fortune",
+        "text": "You find an abandoned campsite in the desert with some supplies left behind. Whoever once called this place home won't be returning."
+      },
+      {
+        "name": "Discouraged",
+        "text": "You encounter a dying mercenary and provide him with first aid out of sympathy. In return, he gives you some essential items. He tells you that he is leaving and will never return."
+      },
+      {
+        "name": "Narrator",
+        "text": "Out in the Fast Desert, an old veteran regales you with stories from his past. It's only after he's gone that you realize the tactical brilliance hidden in his words."
+      },
+      {
+        "name": "Loophole",
+        "text": "You run into The Ashes ambushing an Obsidian transport convoy. The Harpy contract clearly can't hold them back, and they're more than happy to share a portion of the spoils with you."
+      },
+      {
+        "name": "Humanitarian Relief Ops",
+        "text": "You encounter an international humanitarian rescue organization and kindly escort them to their destination. In gratitude, they share some relief supplies with you."
+      },
+      {
+        "name": "Information Sharing",
+        "text": "You meet a group of Ashes members who are exploring the surrounding area. You share what you've seen along the way, and they share some essentials in return."
+      },
+      {
+        "name": "Cheat Code",
+        "text": "Getting supplies strictly by the book takes a lot of work, and with Naomi's manipulation, you briefly change your identifiers to Obsidian employees eligible for an oversupply."
+      },
+      {
+        "name": "Joy in Sorrow",
+        "text": "You pick up a flyer with a takeout number on it and decide to try it. Thirty minutes after placing your order, a delivery scooter races toward you with five servings of Battlefield Fast Food."
+      },
+      {
+        "name": "Extravagance",
+        "text": "The front lines might be locked in a firefight, but pilots still need a square meal. See that food truck over there? Pilots have an unspoken pact here—don't fire on it. Even a random bullet knows better than to hit those stoves."
+      },
+      {
+        "name": "Shadow Remnant",
+        "text": "During the last war, the NDF tried to advance into this area but were stopped by the DLAF's mine tactics. Upon discovering some old Laniakea items left behind, you quickly realize these relics still pack a lethal punch."
+      },
+      {
+        "name": "Kamadar Armaments",
+        "text": "There are still a lot of recyclable resources left in this batch of Kamadar armaments. Still, they're decades past their expiration date. Between safety concerns and Kamadar's quality record, it'd be best to approach this with care."
+      },
+      {
+        "name": "Unbranded Supplies",
+        "text": "After opening a secret warehouse door, you discover a pile of containers filled with high-tech concoctions. However, their labels have been erased, making determining their purpose and origin impossible."
+      },
+      {
+        "name": "Battlefield Rescue",
+        "text": "You rescue a journalist from the Milkhama Daily who has been struggling to film here for a month. It's a miracle she made it this far. Soon, a rescue helicopter arrives to take her away, and they promise that an airdrop will follow shortly."
+      },
+      {
+        "name": "Pilot's Notes",
+        "text": "A skilled pilot's notebook records his observations since he arrived in Milkhama. It contains information about repair shops, arms dealers, recruitment centers, and some newly acquired combat experience."
+      },
+      {
+        "name": "Special Exile",
+        "text": "The DR. ROYAL Hotel once set up a luxurious branch in the Fast area. Now, the building has been destroyed by war. The hotel staff hopes that you can take them away from the area. In return, they can offer a plethora of professional culinary and entertainment services."
+      },
+      {
+        "name": "Artificial Passageway",
+        "text": "The smoke clears and a passageway to the underground appears before you. The passage was cut by machinery, and the conveyor belt still moves—carrying supplies, and, disturbingly, bits of biological matter."
+      },
+      {
+        "name": "Hold Your Fire",
+        "text": "You stumble upon a researcher being chased. After dealing with their pursuers, they tell you they were working at a nearby secret lab, and it seems they were developing a special weapon there."
+      },
+      {
+        "name": "Steep Cliff",
+        "text": "A strong wind blows as you pass through a canyon, knocking loose rocks that nearly damage your ST. After climbing the cliff to investigate, you uncover supplies buried in the fortifications, presumably from the last war."
+      },
+      {
+        "name": "Border Training Camp",
+        "text": "It appears that the former owner of this camp was a military officer, perhaps a member of the NDF or DL's extensive retired soldier pool. The camp is fully equipped with training facilities, military equipment, and logistical supplies."
+      },
+      {
+        "name": "Mercenary Relic",
+        "text": "It chronicles the journey of a mercenary captain who came to the border to make a buck, starting with small wins in the conflict zone, accumulating wealth, and eventually joining Obsidian. This mercenary left in a hurry, leaving behind many of his personal belongings."
+      },
+      {
+        "name": "The Legacy of the Duchy",
+        "text": "Those complicated mechanical blueprints all indicate the complex birth process of those STs. The worn but functional equipment speaks volumes about Ovett's strength."
+      },
+      {
+        "name": "Abandoned Lab",
+        "text": "A lab, another lab... Is there anywhere in Milkhama that doesn't have a damn lab? The researchers are gone, but there might still be something useful lying around."
+      },
+      {
+        "name": "Legacy",
+        "text": "In the depths of the desert, you find the corpse of a mercenary. His stiff body tightly guards a mysterious item that seems essential to him. You carefully retrieve the item."
+      },
+      {
+        "name": "Border Passerby",
+        "text": "You encounter a group of mercenaries besieging a mysterious ST wielding a samurai sword—something you've never seen before. In an instant, the ST eliminates the mercenaries and hastily departs, leaving a pile of unclaimed loot."
+      },
+      {
+        "name": "Sandstorm",
+        "text": "A sandstorm strikes and you are forced to stay put and wait for the weather to clear. Once the storm passes, the sand shifts, revealing a stash of supplies hidden beneath the dunes."
+      },
+      {
+        "name": "North Star",
+        "text": "Due to magnetic interference, the navigation system suddenly malfunctions. Fortunately, guided by the Big Dipper, you locate the supply point marked on the map."
+      },
+      {
+        "name": "Little Favor",
+        "text": "During your mission, you encounter a convoy being relentlessly harassed by bandits. You take the job of escorting them safely across the border, with a decent reward in exchange for your help."
+      },
+      {
+        "name": "Emergency Room",
+        "text": "There are still quite a few valuable supplies left in this abandoned emergency clinic. You also find some advanced serums and equipment—clearly not for medical use, but for experimentation."
+      },
+      {
+        "name": "Forgery",
+        "text": "After the dust settles, you scavenge the wreckage as usual. However, the emblems on the enemy STs seem off—they're fresh and fake, like someone's trying to pull a fast one."
+      },
+      {
+        "name": "One-Way Ticket",
+        "text": "Some of the enemies chose to surrender, handing over their equipment. While you made sure they could leave the battle zone, all you saw on their faces was despair. For them, hope seemed to have never existed in the first place."
+      },
+      {
+        "name": "Unexpected Rescue",
+        "text": "\"Just a pack of wild dogs...\" You save an Obsidian researcher, and he gives you your due, but all you can see on his face is pure contempt."
+      },
+      {
+        "name": "The Late Truth",
+        "text": "You scavenge an abandoned lab and find some solid loot, but your eyes wander to the whiteboard. The equations stare back with no solutions—just questions left hanging there."
+      },
+      {
+        "name": "Prisoner",
+        "text": "You find some supplies in a cell and discover that several Obsidian workers were being held here. The occupying forces didn't release them when they retreated, instead opting to end their lives here."
+      },
+      {
+        "name": "Residential Cellar",
+        "text": "The cellar's entrance was blocked during a shell strike. After clearing the wreckage, you free the residents, who give you a tip about possible nearby supply points."
+      },
+      {
+        "name": "Crashed Flight",
+        "text": "An aging aircraft crashes by an abandoned village. The crew didn't make it, and its cargo containers have split open, spilling mechanical parts and supplies onto the ground."
+      },
+      {
+        "name": "Underground Base",
+        "text": "You stumble upon a half-built underground base. Inside, you find some documents hinting at a secret research project. Aside from that, you collect a stash of supplies, but all the researchers are gone. Looks like they left in a hurry."
+      },
+      {
+        "name": "Assembly and Modification",
+        "text": "You come across an abandoned private arms factory, packed with valuable materials. Some tools inside are perfect for repairing and modifying STs. This place must have been a major weapons supplier for the border region."
+      },
+      {
+        "name": "Shipping Address",
+        "text": "You come across a delivery receipt after the battle. The address takes you to an abandoned structure, where you find a stash of neatly packed supplies, rare gear, and meds. Now, it's all in your hands."
+      },
+      {
+        "name": "Machine Graveyard",
+        "text": "Traces of battle remain in the canyon, and the ground was covered with wreckage. It's obvious that two forces fought here and ended up killing each other. A supply truck sits nearby, its driver missing and likely dead."
+      },
+      {
+        "name": "Special Recycling Center",
+        "text": "The wreckage of weapons scattered on the ground and the scorched earth tell the tale of a vicious battle. A formidable mercenary squad met their end at the hands of some giant contraption. You gather what's still usable from the debris."
+      },
+      {
+        "name": "Fleeing",
+        "text": "After a chaotic battle, the enemy fled in a hurry. From what they left behind, it's clear they were a band of robbers. Whatever spooked them must have been something serious."
+      },
+      {
+        "name": "Engineering Facility",
+        "text": "You grab a few salvage rigs, built for stripping STs, along with some modified trucks, their engines and cargo beds now loaded with mechanical components."
+      },
+      {
+        "name": "Residual Signals",
+        "text": "You find a discarded communication device. The intel on it hints at some kind of exchange between Ophiuchus Bio-Tech and a mysterious organization, with mentions of developing a secret weapon. Next to the device are military supplies that have not yet been entirely consumed."
+      },
+      {
+        "name": "Transit Station",
+        "text": "In \"Carriage Driver's\" hideout, you discover dozens of illegal immigrants ready to cross the border. This guy really treats people like cargo. After hearing the situation, some decide to go back home, while others choose to risk the desert crossing. You wish them luck."
+      },
+      {
+        "name": "Last Wish",
+        "text": "Before his death, C-27-III finally remembers his identity. He was Kevin George, 178 Flogg Street, Kadrey. He asks you to pass on a message to his family the next time you pass through town. However, you can't help but wonder if they can handle the weight of the truth."
+      },
+      {
+        "name": "Gossip",
+        "text": "You find a data disk on Lucy and glance at the gossip it holds. If the Milkhama Daily's entertainment editor got hold of this, things could get interesting. Someone would definitely pay a hefty price to get their hands on this info."
+      },
+      {
+        "name": "Unread Message",
+        "text": "\"If Sigeou fails, you know what to do. We can't leave any openings for anyone.\" Now you get it—Ophiuchus sent two groups for a reason."
+      },
+      {
+        "name": "Logistics Warehouse",
+        "text": "You find a logistics warehouse filled with Obsidian ST parts. Before you clean up, you need to figure out the relationship between Obsidian and the mysterious force. After all, these are all top-quality goods."
+      },
+      {
+        "name": "Desert Messenger",
+        "text": "You come across a middle-aged man on death's door. He asks for your help delivering his critical intel, and in return, he marks the location of his hidden stash for you. There, you find some precious items and an Ovett passport."
+      },
+      {
+        "name": "Synchronous Transmission",
+        "text": "You were told that the combat data would be synchronized and transmitted to the Harpy database. Now, this lab is receiving that data in sync as well. The bad news is that Harpy seems to have been infiltrated by Obsidian. The good news is that this makes tuning the STs a lot simpler."
+      },
+      {
+        "name": "100% Match",
+        "text": "After the battle, you try to find some more usable parts from the wreckage of your opponent. To your surprise, the components match up perfectly with those provided by Harpy."
+      },
+      {
+        "name": "Unexpected Communication",
+        "text": "\"White Dwarf Project, 28th test. The results are as follows...\" You trace the signal, but all you find are the shattered remains of STs and the scars of a brutal firefight."
+      },
+      {
+        "name": "Hidden Passage",
+        "text": "You accidentally stumble into a tunnel and realize it's been used by the Dawnstar League to supply the organization with aid. Looks like it's your lucky day."
+      },
+      {
+        "name": "Lineup Preparation",
+        "text": "Welcome to the Border Conflict mission... Keep this safe, it will come in handy for your lineup in future battles."
+      }
+    ]
+  }
 }
