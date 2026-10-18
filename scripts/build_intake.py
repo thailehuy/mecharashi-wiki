@@ -588,7 +588,7 @@ def module_block(f, family, level, note=''):
         f.add('', f'### Module {family}: level {level}/{len(levels)}{note}, already in the wiki: "{wiki["name"]}"')
         return
     f.add('', f'### Module {family}: level {level}/{len(levels)}{note}',
-          f'- Icon name: {icon_note(levels[-1]["Icon"], "mech_modules")}')
+          f'- Icon name: {icon_note(levels[-1]["Icon"], "pilot_skills" if levels[-1]["Icon"].startswith("Icon_skill_") else "mech_modules")}')
     f.add(f'- CN name: {entry["NameStrKey_EN"]}', '- EN name: ')
     # Levels whose text differs only in its numbers share one translation; each level's numbers are listed.
     groups = []

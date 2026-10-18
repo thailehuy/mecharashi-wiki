@@ -11,7 +11,7 @@ Images and icons live in a separate repo, [mecharashi-wiki-assets](https://githu
 | `data/unlisted/pilot_images_other/` | Extra portraits, e.g. `Pilot_13038A_half.png` (the home page's link-preview image) |
 | `data/unlisted/pilot_skills/` | Pilot skill/talent icons |
 | `data/unlisted/mechs/{Icon,Raw,Skins}/{Light,Medium,Heavy}/` | ST icons, full artwork and skins, by weight class |
-| `data/unlisted/mech_modules/` | Module icons (color subfolders by module category) |
+| `data/unlisted/mech_modules/` | Module icons (color subfolders by module category); modules using a pilot passive's icon (`Icon_skill_*`) take it from `pilot_skills/` |
 | `data/unlisted/rnd/` | R&D icons: `Icon_RnD_N_*` pilot attribute % features, `Icon_RnD_E_*` other features (Hybrid Training is `E_3031`), `Icon_RnD_F_*` matrix/port frames |
 | `data/weapons/icons/<type>/` | Signature weapon icons, by weapon type (`AB`, `MG`, `SR`, …) |
 | `data/backpacks/icons/`, `data/backpacks/materials/` | Backpack and crafting-material icons |

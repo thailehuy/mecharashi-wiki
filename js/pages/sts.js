@@ -15,7 +15,10 @@ var LOCAL_MECH_ICON_BASE    = ASSET_BASE + 'data/unlisted/mechs/Icon/';
 var LOCAL_MECH_PORTRAIT_BASE = ASSET_BASE + 'data/unlisted/mechs/Raw/';
 var LOCAL_MECH_SKIN_BASE     = ASSET_BASE + 'data/unlisted/mechs/Skins/';
 // Mech module icons are now sourced locally (flat, no weight-class split).
+// Modules that reuse a pilot passive's icon (Icon_skill_*) take it from the
+// pilot skill icons instead of keeping a copy.
 var LOCAL_MODULE_ICON_BASE = ASSET_BASE + 'data/unlisted/mech_modules/';
+var LOCAL_MODULE_SKILL_ICON_BASE = ASSET_BASE + 'data/unlisted/pilot_skills/';
 
 // Release order within each version, oldest to newest. Each pilot's signature
 // mech (matching license type) follows PILOT_RELEASE_ORDER; universal mechs
@@ -55,7 +58,8 @@ function mechReleaseOrder(mechName) {
 }
 
 function moduleIconSrc(iconName) {
-  return LOCAL_MODULE_ICON_BASE + encodeURIComponent(iconName) + '.png';
+  var base = /^Icon_skill_/.test(iconName) ? LOCAL_MODULE_SKILL_ICON_BASE : LOCAL_MODULE_ICON_BASE;
+  return base + encodeURIComponent(iconName) + '.png';
 }
 
 function moduleIconErrorAttr(iconName) {

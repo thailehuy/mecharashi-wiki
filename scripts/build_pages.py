@@ -190,6 +190,12 @@ def backpacks():
                ASSET_URL + quote(f'data/backpacks/icons/{b["icon"]}.png'))
 
 
+def module_icon_folder(icon):
+    """Modules reusing a pilot passive's icon (Icon_skill_*) take it from the
+    pilot skill icons, as the pages do."""
+    return 'pilot_skills' if icon.startswith('Icon_skill_') else 'mech_modules'
+
+
 def modules():
     for mod in load('data/modules/compiled.json')['modules'].values():
         levels = mod.get('levels') or {}
@@ -200,7 +206,8 @@ def modules():
         meta = f'{mod["name"]} ({MODULE_CATEGORY_LABEL.get(mod.get("category"), "Module")})'
         yield ('modules', mod['name'].lower(), mod['name'] + ' — Module',
                meta + ' \n' + (effect and f'Lv.{top}: {effect}'),
-               local_or_cdn(f'data/unlisted/mech_modules/{mod["icon"]}.png', CDN + f'skill/{quote(mod["icon"])}.png'))
+               local_or_cdn(f'data/unlisted/{module_icon_folder(mod["icon"])}/{mod["icon"]}.png',
+                            CDN + f'skill/{quote(mod["icon"])}.png'))
 
 
 def ac_seasons():

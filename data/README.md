@@ -325,4 +325,6 @@ the assets repo first and fall back to the game's CDN:
   `mecha_icon` has no local fallback (and isn't displayed).
 - Skills, talents and neural passives: `data/unlisted/pilot_skills/<icon>.png`.
   Check the file exists before using a key.
-- Modules: `data/unlisted/mech_modules/<icon>.png`.
+- Modules: `data/unlisted/mech_modules/<icon>.png`, except those reusing a
+  pilot passive's icon (`Icon_skill_*`), which come from
+  `data/unlisted/pilot_skills/` (don't copy them into `mech_modules/`).
