@@ -401,12 +401,12 @@
       "manjiFirepower": "1225",
       "modules": [
         {
-          "ID": "90244",
+          "ID": "20754",
           "name": "Radiant Core",
           "SpecificEffects": "Upon deployment, gains <color=#F74848>2</color> stacks of <buf ID=107090>[Storm Surge]</buf>, up to <color=#F74848>5</color> stacks. After acting, if there are enemy units within <color=#F74848>3</color> adjacent tiles, gains <color=#F74848>1</color> stack of <buf ID=107090>[Storm Surge]</buf>.",
           "SkillIcon": "Icon_skill_passive_5318",
           "icon": "Icon_skill_passive_5318",
-          "id": "9024",
+          "id": "2075",
           "level": 4
         },
         {
@@ -419,21 +419,21 @@
           "level": 4
         },
         {
-          "ID": "90348",
+          "ID": "30638",
           "name": "Xeno-Gear Module",
           "SpecificEffects": "DMG dealt increases by <color=#F74848>24%</color> while equipped with <color=#F74848>2</color> different weapon types.\nAfter an action, the DMG multiplier of the next active attack increases by <color=#F74848>+0.1</color>.",
           "SkillIcon": "Icon_entry_10113",
           "icon": "Icon_entry_10113",
-          "id": "9034",
+          "id": "3063",
           "level": 8
         },
         {
-          "ID": "90402",
+          "ID": "20762",
           "name": "Stargazer Unit",
           "SpecificEffects": "Removes restriction, grants effect: <buf ID=8002561>[Mech Form]</buf>: when actively attacking, if Hit Rate is <color=#F74848>90%</color> or more, this attack cannot miss. <buf ID=8002571>[Cruise Form]</buf>: Movement <color=#F74848>+1</color>, Vision range <color=#F74848>+1</color>.\nAt the end of turn, if <buf ID=900181>[Configuration Shift]</buf> has been used <color=#F74848>2</color> or more times, gains <color=#F74848>1</color> AP, otherwise gains <color=#F74848>1</color> <buf ID=8002503>[Shift Energy]</buf>. When piloted by [Lustre], CP <color=#F74848>+3</color> in the lowest unlocked Neural Drive Sector.",
           "SkillIcon": "Icon_skill_passive_5319",
           "icon": "Icon_skill_passive_5319",
-          "id": "9040",
+          "id": "2076",
           "level": 2
         }
       ],
@@ -524,7 +524,7 @@
       "version": "1.0"
     },
     {
-      "ID": "30390103",
+      "ID": "30340103",
       "name": "Avalanche",
       "type": "Heavy",
       "quality": "SSR",
@@ -576,12 +576,12 @@
       "manjiFirepower": "1176",
       "modules": [
         {
-          "ID": "90234",
+          "ID": "20774",
           "name": "Roaring Frame",
           "SpecificEffects": "Max HP increases by <color=#F74848>15%</color>. When actively attacking, DMG dealt increases by <color=#F74848>25%</color> if no movement was made before the attack.",
           "SkillIcon": "Icon_skill_passive_3138",
           "icon": "Icon_skill_passive_3138",
-          "id": "9023",
+          "id": "2077",
           "level": 4
         },
         {
@@ -594,12 +594,12 @@
           "level": 4
         },
         {
-          "ID": "90338",
+          "ID": "30648",
           "name": "Pack Hunt Module",
           "SpecificEffects": "DMG dealt increases by <color=#F74848>12%</color>. When there are <color=#F74848>2</color> or more enemy units within attack range, DMG dealt additionally increases by <color=#F74848>6%</color> for each <color=#F74848>1</color> additional unit above 2, up to <color=#F74848>12%</color>.\n<buf ID=900017>[Fixed DMG]</buf> dealt increases by <color=#F74848>25%</color>. When attacking, Firepower increases by <color=#F74848>2%</color> of current HP.",
           "SkillIcon": "Icon_entry_10114",
           "icon": "Icon_entry_10114",
-          "id": "9033",
+          "id": "3064",
           "level": 8
         }
       ],
@@ -928,12 +928,12 @@
       "manjiFirepower": "1264",
       "modules": [
         {
-          "ID": "90264",
+          "ID": "20794",
           "name": "Raptor Unit",
           "SpecificEffects": "When actively attacking with a Melee Weapon, Critical Hit chance increases by <color=#F74848>20%</color>. If the target part has no destroyed parts, DMG Dealt increases by <color=#F74848>20%</color>.",
           "SkillIcon": "Icon_skill_passive_4133",
           "icon": "Icon_skill_passive_4133",
-          "id": "9026",
+          "id": "2079",
           "level": 4
         },
         {
@@ -946,12 +946,12 @@
           "level": 4
         },
         {
-          "ID": "90368",
+          "ID": "30668",
           "name": "Raiding Module",
           "SpecificEffects": "When actively attacking with a Melee Weapon, DMG Dealt increases by <color=#F74848>12%</color>. For each <color=#F74848>1</color> <buf ID=900004>[Re-ATK]</buf> triggered during the turn, DMG Dealt additionally increases by <color=#F74848>6%</color>, up to <color=#F74848>18%</color>. This effect is removed at the end of turn.\nAfter triggering <buf ID=900004>[Re-ATK]</buf>, Critical Hit chance and Critical Hit DMG increase by <color=#F74848>15%</color>.",
           "SkillIcon": "Icon_entry_10115",
           "icon": "Icon_entry_10115",
-          "id": "9036",
+          "id": "3066",
           "level": 8
         }
       ],
@@ -1566,7 +1566,7 @@
       "version": "1.0"
     },
     {
-      "ID": "30400103",
+      "ID": "30510103",
       "name": "Eclipse",
       "type": "Heavy",
       "quality": "SSR",
@@ -1617,12 +1617,12 @@
       "manjiFirepower": "1176",
       "modules": [
         {
-          "ID": "90284",
+          "ID": "20814",
           "name": "Deathmark Module",
           "SpecificEffects": "When actively attacking with a skill costing <color=#F74848>4</color> AP or less, DMG Dealt increases by <color=#F74848>20%</color>. For each <color=#F74848>1</color> AP below 4, DMG Dealt additionally increases by <color=#F74848>5%</color>, up to <color=#F74848>15%</color>.",
           "SkillIcon": "Icon_skill_passive_1123",
           "icon": "Icon_skill_passive_1123",
-          "id": "9028",
+          "id": "2081",
           "level": 4
         },
         {
@@ -1635,12 +1635,12 @@
           "level": 4
         },
         {
-          "ID": "90388",
+          "ID": "30688",
           "name": "Escalation Module",
           "SpecificEffects": "When actively attacking, for each <color=#F74848>1</color> hit scored, DMG Dealt increases by <color=#F74848>1.5%</color> and ignores <color=#F74848>5%</color> of the target's Armor, up to <color=#F74848>18%</color> DMG and <color=#F74848>60%</color> Armor ignored.\nAfter initiating combat, if <color=#F74848>18</color> or more hits were scored, restores <color=#F74848>1</color> AP. This effect can trigger <color=#F74848>2</color> times per turn.",
           "SkillIcon": "Icon_entry_10116",
           "icon": "Icon_entry_10116",
-          "id": "9038",
+          "id": "3068",
           "level": 8
         }
       ],
@@ -3492,12 +3492,12 @@
       "manjiFirepower": "1264",
       "modules": [
         {
-          "ID": "90254",
+          "ID": "20784",
           "name": "Asynchronous Sensor",
           "SpecificEffects": "DMG Dealt increases by <color=#F74848>15%</color>. When the target is more than <color=#F74848>2</color> tiles away, DMG Dealt additionally increases by <color=#F74848>5%</color> for each <color=#F74848>1</color> tile further away, up to <color=#F74848>20%</color>.",
           "SkillIcon": "Icon_skill_passive_1127",
           "icon": "Icon_skill_passive_1127",
-          "id": "9025",
+          "id": "2078",
           "level": 4
         },
         {
@@ -3510,12 +3510,12 @@
           "level": 4
         },
         {
-          "ID": "90358",
+          "ID": "30658",
           "name": "Annihilation Module",
           "SpecificEffects": "Critical Hit chance increases by <color=#F74848>12%</color>. When actively attacking, Critical Hit chance additionally increases by <color=#F74848>3%</color> for each <color=#F74848>1</color> target within skill range, up to a maximum of <color=#F74848>12%</color>.\nIf Critical Hit chance exceeds <color=#F74848>50%</color>, Critical Hit DMG increases by <color=#F74848>1%</color> for each <color=#F74848>1%</color> of Critical Hit chance above the threshold, up to <color=#F74848>+15%</color>. If an active attack scores a Critical Hit on <color=#F74848>2</color> or more targets, gains <color=#F74848>1</color> AP. This effect can trigger <color=#F74848>1</color> time per turn.",
           "SkillIcon": "Icon_entry_40042",
           "icon": "Icon_entry_40042",
-          "id": "9035",
+          "id": "3065",
           "level": 8
         }
       ],
@@ -3609,7 +3609,7 @@
       "version": "1.4"
     },
     {
-      "ID": "90010102",
+      "ID": "10520103",
       "name": "MobiuX",
       "type": "Light",
       "quality": "SSR",
@@ -3661,12 +3661,12 @@
       "manjiFirepower": "1215",
       "modules": [
         {
-          "ID": "90104",
+          "ID": "20714",
           "name": "Origin Core",
           "SpecificEffects": "During enemy turn, increases Dodge Rate by <color=#F74848>15%</color> of Firepower. During own turn, increases Firepower by <color=#F74848>15%</color> of Dodge Rate.",
           "SkillIcon": "Icon_entry_40042",
           "icon": "Icon_entry_40042",
-          "id": "9010",
+          "id": "2071",
           "level": 4
         },
         {
@@ -3679,19 +3679,19 @@
           "level": 4
         },
         {
-          "ID": "10508",
+          "ID": "30598",
           "name": "Descension Module",
           "SpecificEffects": "Increases DMG dealt to targets within 2 adjacent tiles by <color=#F74848>24%</color>. Reduces DMG taken from attacker beyond 2 adjacent tiles by <color=#F74848>24%</color>.\n<buf ID=9990001>[Favorable Event]</buf> trigger rate increases by <color=#F74848>+10%</color>. DMG calculation will use the highest number of pilot's attributes",
           "SkillIcon": "Icon_entry_10109",
           "icon": "Icon_entry_10109",
-          "id": "1050",
+          "id": "3059",
           "level": 8
         }
       ],
       "version": "3.3"
     },
     {
-      "ID": "20620103",
+      "ID": "20400103",
       "name": "Nephthys",
       "type": "Medium",
       "quality": "SSR",
@@ -3743,12 +3743,12 @@
       "manjiFirepower": "1245",
       "modules": [
         {
-          "ID": "90204",
+          "ID": "20724",
           "name": "Deep Linker",
           "SpecificEffects": "DMG dealt increases by <color=#F74848>15%</color>. For each 1 debuff applied, DMG dealt additionally increases by <color=#F74848>4%</color>, stacking up to <color=#F74848>5</color> times, lasting for <color=#F74848>2</color> turns.",
           "SkillIcon": "Icon_skill_passive_1146",
           "icon": "Icon_skill_passive_1146",
-          "id": "9020",
+          "id": "2072",
           "level": 4
         },
         {
@@ -3761,12 +3761,12 @@
           "level": 4
         },
         {
-          "ID": "90308",
+          "ID": "30608",
           "name": "Momentum Module",
           "SpecificEffects": "DMG dealt increases by <color=#F74848>12%</color>. DMG dealt additionally increases by <color=#F74848>1.5%</color> for each 1 debuff the enemy team carries, up to <color=#F74848>12%</color>.\nWhen initiating combat, there is a <color=#F74848>25%</color> chance to trigger <buf ID=900001>[Flurry Strike]</buf> following the enemy's attack, dealing <color=#F74848>0.25</color>x DMG. This trigger chance increases by <color=#F74848>25%</color> for each debuff the target carries before combat.",
           "SkillIcon": "Icon_entry_10110",
           "icon": "Icon_entry_10110",
-          "id": "9030",
+          "id": "3060",
           "level": 8
         }
       ],
@@ -3775,7 +3775,7 @@
       "version": "3.3"
     },
     {
-      "ID": "30380103",
+      "ID": "30470103",
       "name": "Nidhogg",
       "type": "Heavy",
       "quality": "SSR",
@@ -3827,12 +3827,12 @@
       "manjiFirepower": "1166",
       "modules": [
         {
-          "ID": "90214",
+          "ID": "20734",
           "name": "Doomsday Core",
           "SpecificEffects": "Reduces DMG taken by <color=#F74848>15%</color> when attacked by enemies afflicted with debuffs. DMG dealt increases by <color=#F74848>15%</color> when attacking enemies afflicted with debuffs. DMG dealt additionally increases by <color=#F74848>3%</color> for each <color=#F74848>1</color> debuff present, up to <color=#F74848>30%</color>.",
           "SkillIcon": "Icon_skill_passive_1179",
           "icon": "Icon_skill_passive_1179",
-          "id": "9021",
+          "id": "2073",
           "level": 4
         },
         {
@@ -3845,12 +3845,12 @@
           "level": 4
         },
         {
-          "ID": "90318",
+          "ID": "30618",
           "name": "Force Field Module",
           "SpecificEffects": "When attacking a target carrying debuffs, all intact parts gain Temporary HP equal to <color=#F74848>1.5%</color> of max HP, up to a maximum of <color=#F74848>24%</color> of max HP.\nReduces the skill multiplier of all enemies within <color=#F74848>3</color> adjacent tiles by <color=#F74848>0.1</color> (this effect is reduced to <color=#F74848>1/4</color> against Rocket weapons). For every affected target within range, this unit's skill multiplier increases by <color=#F74848>0.025</color>, up to a maximum of <color=#F74848>0.1</color>.",
           "SkillIcon": "Icon_entry_10111",
           "icon": "Icon_entry_10111",
-          "id": "9031",
+          "id": "3061",
           "level": 8
         }
       ],
@@ -3998,12 +3998,12 @@
       "manjiFirepower": "1215",
       "modules": [
         {
-          "ID": "90274",
+          "ID": "20804",
           "name": "Frostedge Amplifier",
           "SpecificEffects": "DMG Dealt increases by <color=#F74848>20%</color>. When actively attacking, if the target is in a straight line with this unit, DMG Dealt additionally increases by <color=#F74848>15%</color>.",
           "SkillIcon": "Icon_skill_passive_1101",
           "icon": "Icon_skill_passive_1101",
-          "id": "9027",
+          "id": "2080",
           "level": 4
         },
         {
@@ -4016,12 +4016,12 @@
           "level": 4
         },
         {
-          "ID": "90378",
+          "ID": "30678",
           "name": "First Strike Module",
           "SpecificEffects": "If <color=#F74848>2</color> or fewer allies have acted, DMG Dealt increases by <color=#F74848>24%</color>.\nWhen attacking with two Melee weapons, skill multiplier increases by <color=#F74848>+0.1</color>.",
           "SkillIcon": "Icon_entry_10117",
           "icon": "Icon_entry_10117",
-          "id": "9037",
+          "id": "3067",
           "level": 8
         }
       ],
@@ -4397,7 +4397,7 @@
       "version": "3.2"
     },
     {
-      "ID": "20630103",
+      "ID": "20620103",
       "name": "Prisma",
       "type": "Medium",
       "quality": "SSR",
@@ -4449,12 +4449,12 @@
       "manjiFirepower": "1255",
       "modules": [
         {
-          "ID": "90224",
+          "ID": "20744",
           "name": "Refraction Array",
           "SpecificEffects": "When attacking with Tactical weapons, DMG dealt increases by <color=#F74848>20%</color>. When attacking with shoulder-mounted weapons, Critical Hit chance increases by <color=#F74848>15%</color>.",
           "SkillIcon": "Icon_skill_passive_1180",
           "icon": "Icon_skill_passive_1180",
-          "id": "9022",
+          "id": "2074",
           "level": 4
         },
         {
@@ -4467,12 +4467,12 @@
           "level": 4
         },
         {
-          "ID": "90328",
+          "ID": "30628",
           "name": "Last Stand Module",
           "SpecificEffects": "When own HP is not full, DMG dealt increases by <color=#F74848>24%</color>.\nWhen actively attacking, the attack multiplier increases by <color=#F74848>0.025</color> for each ally without full HP, up to <color=#F74848>+0.1</color>. This effect is reduced to <color=#F74848>1/4</color> if equipped with Rocket Launcher.",
           "SkillIcon": "Icon_entry_10112",
           "icon": "Icon_entry_10112",
-          "id": "9032",
+          "id": "3062",
           "level": 8
         }
       ],
