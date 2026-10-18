@@ -30,6 +30,69 @@
 </head>
 <body>
 
+  <!-- Shown while the data scripts at the bottom of the page download; js/app.js removes it.
+       data-scripts must equal the number of <script src> tags below (a console warning says when it doesn't). -->
+  <div id="page-loader" data-scripts="38" role="progressbar" aria-label="Loading data" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+    <div class="page-loader-box">
+      <div class="page-loader-text">Loading data ...</div>
+      <div class="page-loader-track"><div class="page-loader-bar"></div></div>
+      <div class="page-loader-pct">0%</div>
+    </div>
+  </div>
+  <script>
+    // Script tags below run in order, so progress is the share of them loaded
+    // so far. Between loads the bar creeps toward the next step so a big file
+    // (pilots, bosses) doesn't look stuck.
+    (function () {
+      var loader = document.getElementById('page-loader');
+      var bar    = loader.querySelector('.page-loader-bar');
+      var pct    = loader.querySelector('.page-loader-pct');
+      var done = 0, shown = 0, timer;
+
+      // Later script tags aren't parsed yet while this runs, so the count is given up front.
+      var total = +loader.getAttribute('data-scripts') || 1;
+
+      function paint() {
+        var p = Math.round(shown * 100);
+        bar.style.width = (shown * 100) + '%';
+        pct.textContent = p + '%';
+        loader.setAttribute('aria-valuenow', p);
+      }
+
+      function onScript(e) {
+        if (!e.target || e.target.tagName !== 'SCRIPT' || !loader.isConnected) return;
+        done++;
+        shown = Math.max(shown, done / total);
+        paint();
+      }
+      // Capture phase: load/error don't bubble. A failed script still counts.
+      document.addEventListener('load', onScript, true);
+      document.addEventListener('error', onScript, true);
+
+      timer = setInterval(function () {
+        if (!loader.isConnected) { clearInterval(timer); return; }
+        var next = Math.min((done + 1) / total, 0.99);
+        shown += (next - shown) * 0.05;
+        paint();
+      }, 100);
+
+      window.hidePageLoader = function () {
+        if (loader.classList.contains('done')) return;
+        var n = document.querySelectorAll('script[src]').length;
+        if (n !== total) console.warn('page-loader: data-scripts is ' + total + ' but the page has ' + n + ' <script src> tags');
+        clearInterval(timer);
+        document.removeEventListener('load', onScript, true);
+        document.removeEventListener('error', onScript, true);
+        shown = 1;
+        paint();
+        loader.classList.add('done');
+        setTimeout(function () { loader.remove(); }, 300);
+      };
+      // Fallback in case app.js fails before hiding it.
+      window.addEventListener('load', window.hidePageLoader);
+    })();
+  </script>
+
   <nav class="navbar sticky-top">
     <div class="container-fluid navbar-row">
       <button class="nav-hamburger" id="navToggle" aria-label="Open menu">

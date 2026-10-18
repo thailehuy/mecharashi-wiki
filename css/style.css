@@ -4001,3 +4001,48 @@ a.boss-avatar { display: block; }
   width: 100%;
   height: auto;
 }
+
+/* ── Page loader (index.html) ─────────────────────────────────────────────── */
+#page-loader {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0f0f0f;
+  transition: opacity 0.3s ease;
+}
+#page-loader.done {
+  opacity: 0;
+  pointer-events: none;
+}
+.page-loader-box {
+  width: min(320px, calc(100vw - 32px));
+  text-align: center;
+}
+.page-loader-text {
+  color: #e0e0e0;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.75rem;
+}
+.page-loader-track {
+  height: 6px;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+}
+.page-loader-bar {
+  width: 0;
+  height: 100%;
+  background: #e94560;
+  border-radius: 3px;
+  transition: width 0.15s linear;
+}
+.page-loader-pct {
+  color: #a0a0b0;
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+  font-variant-numeric: tabular-nums;
+}

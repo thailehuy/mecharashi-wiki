@@ -203,4 +203,6 @@ $(function () {
   $(window).on('popstate', routeFromLocation);
 
   routeFromLocation();
+
+  if (window.hidePageLoader) window.hidePageLoader();
 });
