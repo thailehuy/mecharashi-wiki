@@ -683,15 +683,6 @@
     "cd": "3",
     "type": "Order"
   },
-  "500709": {
-    "kind": "skill",
-    "name": "Regulated Repair",
-    "describe": "Restores HP equal to <color=#F74848>2.0</color>x Manipulator Repair AMT to all parts of a single ST. Can repair <color=#F74848>1</color> destroyed part.",
-    "icon": "Icon_skill_order_3001",
-    "ap": "2",
-    "cd": "0",
-    "type": "Order"
-  },
   "202150": {
     "kind": "talent",
     "name": "Dual Rookie",
@@ -975,15 +966,6 @@
     "ap": "0",
     "type": "SpecialAssault"
   },
-  "400809": {
-    "kind": "skill",
-    "name": "Targeted Bombardment",
-    "describe": "Uses a Missile Launcher to attack a target, dealing <color=#F74848>1.1</color>x DMG to the part hit and Splash DMG equal to <color=#F74848>50%</color> of this damage to other parts. Applies <buf ID=4008509>[Lock]</buf> to targets hit, lasting <color=#F74848>2</color> turns.",
-    "icon": "Icon_skill_order_1113",
-    "ap": "3",
-    "cd": "0",
-    "type": "SpecialAssault"
-  },
   "101450": {
     "kind": "talent",
     "name": "EVA-02 Pilot",
@@ -1106,15 +1088,6 @@
     "icon": "Icon_skill_order_9902",
     "ap": "4",
     "type": "SpecialAssault"
-  },
-  "101409": {
-    "kind": "skill",
-    "name": "Fracture",
-    "describe": "Uses a Polearm to attack a target, dealing <color=#F74848>1.5</color>x DMG. If a part is destroyed successfully and both Arms remain undestroyed, deals <color=#F74848>0.25</color>x AoE DMG to targets within <color=#F74848>1</color> ring after combat.",
-    "icon": "Icon_skill_main_9901",
-    "ap": "2",
-    "cd": "",
-    "type": "EquipmentSkill"
   },
   "301350": {
     "kind": "talent",
@@ -1730,15 +1703,6 @@
     "cd": "1",
     "type": "Order"
   },
-  "101209": {
-    "kind": "skill",
-    "name": "Heavy Strike",
-    "describe": "Uses a Pile Bunker or Knuckles to attack a target, dealing <color=#F74848>1.6x</color> DMG.",
-    "icon": "Icon_skill_main_1020",
-    "ap": "2",
-    "cd": "",
-    "type": "EquipmentSkill"
-  },
   "201550": {
     "kind": "talent",
     "name": "Veiled Razor",
@@ -1835,15 +1799,6 @@
     "ap": "6",
     "type": "Order"
   },
-  "201509": {
-    "kind": "skill",
-    "name": "Armed and Ready",
-    "describe": "Uses a Machine Gun to attack a target, dealing <color=#F74848>1.2x</color> DMG. After combat, gains <color=#F74848>1</color> stack of <buf ID=2015509>[Retaliation Enhancement]</buf>. Stacks up to <color=#F74848>5</color> times.",
-    "icon": "Icon_skill_main_1129",
-    "ap": "3",
-    "cd": "",
-    "type": "EquipmentSkill"
-  },
   "101150": {
     "kind": "talent",
     "name": "Unto Death",
@@ -1936,15 +1891,6 @@
     "describe": "Uses a Polearm to attack a target <color=#F74848>2</color> times, each time dealing <color=#F74848>1.1x</color> DMG.",
     "icon": "Icon_skill_main_1147",
     "ap": "4",
-    "type": "EquipmentSkill"
-  },
-  "101109": {
-    "kind": "skill",
-    "name": "Chop",
-    "describe": "Uses a Polearm to attack a target, dealing <color=#F74848>1.6x</color> DMG.",
-    "icon": "Icon_skill_main_1013",
-    "ap": "2",
-    "cd": "",
     "type": "EquipmentSkill"
   },
   "401150": {
@@ -2370,15 +2316,6 @@
     "cd": "3",
     "type": "Order"
   },
-  "101309": {
-    "kind": "skill",
-    "name": "Inevitable Slash",
-    "describe": "Attacks a target with a Chainsaw, dealing <color=#F74848>1.5x</color> DMG. If the target's HP is below <color=#F74848>50%</color>, this attack cannot be dodged.",
-    "icon": "Icon_skill_main_1155",
-    "ap": "2",
-    "cd": "",
-    "type": "EquipmentSkill"
-  },
   "600550": {
     "kind": "talent",
     "name": "Stand Behind Me!",
@@ -2501,15 +2438,6 @@
     "icon": "Icon_skill_passive_5180",
     "buffs": "6005081/6005082"
   },
-  "600509": {
-    "kind": "skill",
-    "name": "Guard",
-    "describe": "Protects allies within <color=#F74848>2</color> adjacent tiles from Assault and Ranged attacks. Triggers up to <color=#F74848>2</color> times per turn and lasts <color=#F74848>2</color> turns. Additionally, gains <buf ID=7100701>[Defensive Stance I]</buf>. Can only trigger <color=#F74848>1</color> time per turn.",
-    "icon": "Icon_skill_order_1031",
-    "ap": "1",
-    "cd": "2",
-    "type": "Order"
-  },
   "400450": {
     "kind": "talent",
     "name": "Unceasing Thunderfire",
@@ -2610,15 +2538,6 @@
     "effect": "Rocket Launcher DMG <color=#F74848>+10%</color>. When executing an AoE attack with the <color=#F74848>1</color>st round of Ammo in the rocket launcher magazine, applies <terrian ID=4003081 /> to the tiles hit after combat, lasting for <color=#F74848>2</color> turns.",
     "icon": "Icon_skill_passive_1150",
     "buffs": "4004081/4004082"
-  },
-  "400409": {
-    "kind": "skill",
-    "name": "Cross Bombing",
-    "describe": "Uses a Rocket Launcher to attack all targets within a 1-tile cross area, dealing <color=#F74848>0.25x</color> AoE DMG, and an additional <color=#F74848>15%</color> DMG to the target in the center tile.",
-    "icon": "Icon_skill_order_1009",
-    "ap": "2",
-    "cd": "0",
-    "type": "SpecialAssault"
   },
   "201250": {
     "kind": "talent",
@@ -2812,15 +2731,6 @@
     "ap": "5",
     "type": "SpecialAssault"
   },
-  "400709": {
-    "kind": "skill",
-    "name": "Thermal Streaming",
-    "describe": "Uses a Flamethrower to attack all targets in a <range type=1>1x4-tile line</range>, dealing <color=#F74848>0.6x</color> AoE DMG. Inflicts <buf ID=4003063>[Repair Inhibition]</buf> on targets hit, lasting for <color=#F74848>1</color> turn.",
-    "icon": "Icon_skill_order_1120",
-    "ap": "3",
-    "cd": "0",
-    "type": "Order"
-  },
   "201650": {
     "kind": "talent",
     "name": "KALAVINKA",
@@ -2914,15 +2824,6 @@
     "describe": "Uses two Assault Weapons to attack a target, dealing <color=#F74848>0.85x</color> DMG <color=#F74848>2</color> times. After combat, if equipped with a Shotgun, Machine Gun, or Flamethrower, gains <buf ID=2016085>[Rondo - Shotgun]</buf>, <buf ID=2016087>[Rondo - Machine Gun]</buf>, or <buf ID=2016080>[Rondo - Flamethrower]</buf> respectively, lasting for <color=#F74848>2</color> turns.",
     "icon": "Icon_skill_main_1162",
     "ap": "6",
-    "type": "EquipmentSkill"
-  },
-  "201609": {
-    "kind": "skill",
-    "name": "Crimson Blitz",
-    "describe": "Uses a Machine Gun, Shotgun, or Flamethrower to attack a target, dealing <color=#F74848>1.3</color>x DMG.",
-    "icon": "Icon_skill_main_1021",
-    "ap": "3",
-    "cd": "0",
     "type": "EquipmentSkill"
   },
   "201150": {
@@ -3020,15 +2921,6 @@
     "describe": "Simultaneously uses two Shotguns to attack a target, dealing <color=#F74848>0.75x</color> DMG <color=#F74848>2</color> times. This attack ignores the target's Armor status.",
     "icon": "Icon_skill_main_1138",
     "ap": "5",
-    "type": "EquipmentSkill"
-  },
-  "201109": {
-    "kind": "skill",
-    "name": "Invasion",
-    "describe": "Uses a Shotgun to attack a target, dealing <color=#F74848>1.2x</color> DMG. Hit Rate <color=#F74848>+10%</color>.",
-    "icon": "Icon_skill_main_1043",
-    "ap": "3",
-    "cd": "",
     "type": "EquipmentSkill"
   },
   "102050": {
@@ -3235,15 +3127,6 @@
     "cd": "1",
     "type": "Order"
   },
-  "500209": {
-    "kind": "skill",
-    "name": "Regulated Repair",
-    "describe": "Restores HP equal to <color=#F74848>2.0</color>x Manipulator Repair AMT to all parts of a single ST. Can repair <color=#F74848>1</color> destroyed part.",
-    "icon": "Icon_skill_order_3001",
-    "ap": "2",
-    "cd": "0",
-    "type": "Order"
-  },
   "100950": {
     "kind": "talent",
     "name": "Intimidating Moonlight",
@@ -3340,15 +3223,6 @@
     "ap": "4",
     "type": "EquipmentSkill"
   },
-  "100909": {
-    "kind": "skill",
-    "name": "Crescent Moon",
-    "describe": "Uses a Polearm to attack all targets within an <range type=1>I-shaped (3x1-tile) area</range> ahead, dealing <color=#F74848>0.8x</color> AoE DMG.",
-    "icon": "Icon_skill_main_1103",
-    "ap": "2",
-    "cd": "0",
-    "type": "Order"
-  },
   "800150": {
     "kind": "talent",
     "name": "Pioneer Of Paradox",
@@ -3439,13 +3313,6 @@
     "effect": "When triggering <buf ID=900155>[Activation]</buf>, restores <color=#F74848>1</color> destroyed part and <color=#F74848>7.5%</color> HP to all intact parts. Also deals <buf ID=900017>[Fixed DMG]</buf> equal to <color=#F74848>15%</color> of this unit body part max HP to all enemies within <color=#F74848>2</color> adjacent tiles.",
     "icon": "Icon_skill_passive_5287",
     "buffs": "8001461"
-  },
-  "800101": {
-    "kind": "skill",
-    "name": "Form Shift 1",
-    "effect": "At the end of action, if other allies can still act, enters <buf ID=900154>[Pending Activation]</buf> state. If an ally actively attacks with weapon corresponding to a form, triggers <buf ID=900155>[Activation]</buf> to enter the corresponding <buf ID=900156>[Form Shift]</buf>. This effect can trigger <color=#F74848>1</color> time per turn.",
-    "icon": "Icon_skill_passive_5205",
-    "buffs": "8001010/8001011/8001334"
   },
   "400902": {
     "kind": "skill",
@@ -3683,15 +3550,6 @@
     "describe": "Uses two Melee Weapons to attack a target, dealing <color=#F74848>0.85x</color> DMG <color=#F74848>2</color> times. The first attack hits the part with the highest HP. If this part is not destroyed, the second attack will hit the same part.",
     "icon": "Icon_skill_main_1106",
     "ap": "4",
-    "type": "EquipmentSkill"
-  },
-  "100809": {
-    "kind": "skill",
-    "name": "One-Inch Punch",
-    "describe": "Uses a Pile Bunker or Knuckles to attack a target, dealing <color=#F74848>1.6x</color> DMG.",
-    "icon": "Icon_skill_main_1020",
-    "ap": "2",
-    "cd": "",
     "type": "EquipmentSkill"
   },
   "100350": {
@@ -3980,15 +3838,6 @@
     "cd": "2",
     "type": "Order"
   },
-  "301009": {
-    "kind": "skill",
-    "name": "Tracking Shot",
-    "describe": "Uses a Sniper Rifle to attack a target, dealing <color=#F74848>1.3x</color> DMG. This attack is guaranteed to hit. When in the <buf ID=3010504>[Improved Fire]</buf> state, also inflicts <buf ID=3010012>[Dodge Invalid]</buf> on the target hit after combat, which expires after being hit <color=#F74848>1</color> time.",
-    "icon": "Icon_skill_main_1115",
-    "ap": "2",
-    "cd": "",
-    "type": "EquipmentSkill"
-  },
   "202050": {
     "kind": "talent",
     "name": "Saturated Fire",
@@ -4173,15 +4022,6 @@
     "icon": "Icon_skill_order_5125",
     "ap": "4",
     "cd": "3",
-    "type": "Order"
-  },
-  "500609": {
-    "kind": "skill",
-    "name": "Regulated Repair",
-    "describe": "Restores HP equal to <color=#F74848>2.0x</color> Manipulator Repair AMT to all parts of a single ST. Can repair <color=#F74848>1</color> destroyed part.",
-    "icon": "Icon_skill_order_3001",
-    "ap": "2",
-    "cd": "0",
     "type": "Order"
   },
   "800250": {
@@ -4529,15 +4369,6 @@
     "ap": "5",
     "type": "EquipmentSkill"
   },
-  "201009": {
-    "kind": "skill",
-    "name": "Turbo Shooting",
-    "describe": "Uses a Shotgun to attack a target, dealing <color=#F74848>1.3</color>x DMG.",
-    "icon": "Icon_skill_main_1014",
-    "ap": "3",
-    "cd": "",
-    "type": "EquipmentSkill"
-  },
   "500950": {
     "kind": "talent",
     "name": "Good Medicine Tastes Bitter",
@@ -4696,14 +4527,6 @@
     "icon": "Icon_skill_passive_5251",
     "buffs": "2017461"
   },
-  "201709": {
-    "kind": "skill",
-    "name": "Suppressive Assault",
-    "describe": "Uses HMG to attack a target, dealing <color=#F74848>1.3x</color> DMG. Can activate <buf ID=900125>[Fury Unleashed]</buf>. When <color=#F74848>2</color> stacks of <buf ID=2017500>[Fury]</buf> are consumed, this attack cannot be dodged.",
-    "icon": "Icon_skill_main_1105",
-    "ap": "3",
-    "type": "EquipmentSkill"
-  },
   "700021": {
     "kind": "skill",
     "name": "Range Suppression",
@@ -4838,15 +4661,6 @@
     "cd": "1",
     "type": "Order"
   },
-  "500409": {
-    "kind": "skill",
-    "name": "Regulated Repair",
-    "describe": "Restores HP equal to <color=#F74848>2.0x</color> Manipulator Repair AMT to all parts of a single ST. Can repair <color=#F74848>1</color> destroyed part.",
-    "icon": "Icon_skill_order_3001",
-    "ap": "2",
-    "cd": "0",
-    "type": "Order"
-  },
   "400550": {
     "kind": "talent",
     "name": "Elite Hacker",
@@ -4934,15 +4748,6 @@
     "describe": "Simultaneously uses two Missile Launchers to attack a target. These <color=#F74848>2</color> missiles hit the same part, dealing <color=#F74848>0.85x</color> DMG <color=#F74848>2</color> times and Splash DMG equal to <color=#F74848>50%</color> of this damage to other parts.",
     "icon": "Icon_skill_order_1114",
     "ap": "5",
-    "type": "SpecialAssault"
-  },
-  "400509": {
-    "kind": "skill",
-    "name": "Precision Strike",
-    "describe": "Uses a Missile Launcher to attack a target, dealing <color=#F74848>2.0x</color> DMG to the part hit. Doesn't deal Splash DMG.",
-    "icon": "Icon_skill_order_1006",
-    "ap": "3",
-    "cd": "0",
     "type": "SpecialAssault"
   },
   "300950": {
@@ -5040,15 +4845,6 @@
     "describe": "Consumes all AP to attack a target with a Sniper Rifle, dealing <color=#F74848>1.2x</color> DMG. For each additional <color=#F74848>1</color> AP consumed, skill damage multiplier <color=#F74848>+0.15</color>. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking.",
     "icon": "Icon_skill_main_1144",
     "ap": "3",
-    "type": "EquipmentSkill"
-  },
-  "300909": {
-    "kind": "skill",
-    "name": "Accurate Fire",
-    "describe": "Uses a Sniper Rifle to attack a target, dealing <color=#F74848>1.0x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking and gains Hit Rate <color=#F74848>+15%</color>.",
-    "icon": "Icon_skill_main_1017",
-    "ap": "3",
-    "cd": "",
     "type": "EquipmentSkill"
   },
   "401350": {
@@ -5268,15 +5064,6 @@
     "ap": "4",
     "type": "EquipmentSkill"
   },
-  "101509": {
-    "kind": "skill",
-    "name": "Twin Wing Slash",
-    "describe": "Attacks a target with two Alter-Blades, dealing <color=#F74848>0.85</color>x DMG <color=#F74848>2</color> times.",
-    "icon": "Icon_skill_main_1158",
-    "ap": "2",
-    "cd": "0",
-    "type": "EquipmentSkill"
-  },
   "301150": {
     "kind": "talent",
     "name": "Experimental Observation",
@@ -5318,15 +5105,6 @@
     "effect": "At end of action, if in <buf ID=900111>[Directional Rack]</buf> Mode, Sniper Rifle Range <color=#F74848>+1</color>. Can stack <color=#F74848>2</color> times. All stacks are lost upon exiting <buf ID=900111>[Directional Rack]</buf> Mode.",
     "icon": "Icon_skill_passive_5246",
     "buffs": "3011461"
-  },
-  "301102": {
-    "kind": "skill",
-    "name": "Precision Surgery",
-    "describe": "Uses a Sniper Rifle to attack a target, dealing <color=#F74848>1.2x</color> DMG. When in <buf ID=900111>[Directional Rack]</buf> Mode, enters <buf ID=900014>[Aiming]</buf> Mode before attacking.",
-    "effect": "When attacking without having moved this turn, DMG <color=#F74848>+15%</color>.",
-    "icon": "Icon_skill_main_1137",
-    "ap": 2,
-    "type": "EquipmentSkill"
   },
   "301103": {
     "kind": "skill",
@@ -5470,15 +5248,6 @@
     "ap": "4",
     "type": "EquipmentSkill"
   },
-  "600909": {
-    "kind": "skill",
-    "name": "Aegis",
-    "describe": "Protects allies within <color=#F74848>2</color> adjacent tiles from Assault and Ranged attacks. Triggers up to <color=#F74848>2</color> times per turn and lasts <color=#F74848>2</color> turns. Additionally, gains <buf ID=900999>[Substitute]</buf>. Can only trigger <color=#F74848>1</color> time per turn.",
-    "icon": "Icon_skill_order_9701",
-    "ap": "1",
-    "cd": "2",
-    "type": "Order"
-  },
   "200850": {
     "kind": "talent",
     "name": "Prototype",
@@ -5572,15 +5341,6 @@
     "describe": "Simultaneously uses two Machine Guns to attack a target, dealing <color=#F74848>0.95x</color> DMG <color=#F74848>2</color> times.",
     "icon": "Icon_skill_main_1117",
     "ap": "6",
-    "type": "EquipmentSkill"
-  },
-  "200809": {
-    "kind": "skill",
-    "name": "Ballistic Bundle",
-    "describe": "Uses a Machine Gun to attack a target, dealing <color=#F74848>1.3x</color> DMG.",
-    "icon": "Icon_skill_main_1016",
-    "ap": "3",
-    "cd": "",
     "type": "EquipmentSkill"
   },
   "400950": {
@@ -5698,15 +5458,6 @@
     "describe": "Simultaneously uses two Machine Guns to attack a target, dealing <color=#F74848>0.85x</color> DMG <color=#F74848>2</color> times and increases <buf ID=900120>[Awakening]</buf> by <color=#F74848>2</color> levels.When in <buf ID=900118>[Valhalla's Call]</buf> Mode, simultaneously uses two Machine Guns and Cutter to attack a target. The Machine Guns deal <color=#F74848>0.85x</color> DMG <color=#F74848>2</color> times, and the Cutter consumes <color=#F74848>2</color> Ammo to deal <color=#F74848>0.3x</color> DMG <color=#F74848>4</color> times. If the target is destroyed, <color=#F74848>2</color> AP and <color=#F74848>1</color> Cutter Ammo are refunded.",
     "icon": "Icon_skill_main_1165",
     "ap": "6",
-    "type": "EquipmentSkill"
-  },
-  "400909": {
-    "kind": "skill",
-    "name": "Ballistic Bundle",
-    "describe": "Uses a Machine Gun to attack a target, dealing <color=#F74848>1.3</color>x DMG.",
-    "icon": "Icon_skill_main_1016",
-    "ap": "3",
-    "cd": "0",
     "type": "EquipmentSkill"
   },
   "401050": {
@@ -5896,16 +5647,6 @@
     "cd": "2",
     "type": "Order"
   },
-  "500809": {
-    "kind": "skill",
-    "name": "Standard Diagnostics",
-    "describe": "Restores HP equal to <color=#F74848>2.0x</color> Manipulator Repair AMT to all parts of a single ST. Can repair <color=#F74848>1</color> destroyed part. If the target is <buf ID=1099900>[Guggle]</buf>, additionally applies <buf ID=7100901>[Movement UP]</buf>, lasting for <color=#F74848>1</color> turn.",
-    "icon": "Icon_skill_order_3001",
-    "ap": "2",
-    "cd": "0",
-    "type": "Order",
-    "skill_icon": "Icon_skill_order_3103"
-  },
   "500550": {
     "kind": "talent",
     "name": "Pochy!",
@@ -5990,15 +5731,6 @@
     "icon": "Icon_skill_order_3109",
     "ap": "5",
     "cd": "1",
-    "type": "Order"
-  },
-  "500509": {
-    "kind": "skill",
-    "name": "Pochy Assist!",
-    "describe": "Restores HP equal to <color=#F74848>1.8x</color> Manipulator Repair AMT to all parts of a single ST. Can repair <color=#F74848>1</color> destroyed part. If Pochy is within <color=#F74848>2</color> tiles of the target, performs <buf ID=900019>[Link Repair]</buf> and restores HP equal to <color=#F74848>1x</color> Pochy's Repair AMT.",
-    "icon": "Icon_skill_order_3001",
-    "ap": "2",
-    "cd": "0",
     "type": "Order"
   },
   "300750": {
@@ -6096,15 +5828,6 @@
     "icon": "Icon_skill_order_1109",
     "ap": "5",
     "type": "SpecialAssault"
-  },
-  "300709": {
-    "kind": "skill",
-    "name": "Polyenergy Shot",
-    "describe": "Uses a Light Rifle to attack a target, dealing <color=#F74848>1.6</color>x DMG.",
-    "icon": "Icon_skill_main_1022",
-    "ap": "2",
-    "cd": "0",
-    "type": "EquipmentSkill"
   },
   "201450": {
     "kind": "talent",
@@ -6228,15 +5951,6 @@
     "ap": "0",
     "cd": "3",
     "type": "Order"
-  },
-  "201409": {
-    "kind": "skill",
-    "name": "Charged Shot",
-    "describe": "Uses a Heavy Machine Gun to attack a target, dealing <color=#F74848>1.2x</color> DMG. For each buff possessed, DMG <color=#F74848>+5%</color>, up to <color=#F74848>15%</color>.",
-    "icon": "Icon_skill_main_9801",
-    "ap": "3",
-    "cd": "",
-    "type": "EquipmentSkill"
   },
   "102350": {
     "kind": "talent",
@@ -6534,15 +6248,6 @@
     "describe": "Uses a Light Rifle to attack a target, dealing <color=#F74848>1.6x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode when equipped with a Small Shield. Before combat, inflicts <buf ID=900081>[Ignore Guard]</buf> on the target, lasting for <color=#F74848>1</color> turn.",
     "icon": "Icon_skill_main_1148",
     "ap": "4",
-    "type": "EquipmentSkill"
-  },
-  "300809": {
-    "kind": "skill",
-    "name": "Snap Judgment",
-    "describe": "Uses a Light Rifle to attack a target, dealing <color=#F74848>1.2x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode while equipped with a Small Shield.",
-    "icon": "Icon_skill_main_1038",
-    "ap": "2",
-    "cd": "",
     "type": "EquipmentSkill"
   },
   "501050": {
@@ -7271,15 +6976,6 @@
     "describe": "Uses a Heavy Machine Gun to attack a target, consuming all AP to deal <color=#F74848>1.5x</color> DMG. For each additional AP consumed, skill damage multiplier <color=#F74848>+0.15</color>.",
     "icon": "Icon_skill_main_1131",
     "ap": "4",
-    "type": "EquipmentSkill"
-  },
-  "200909": {
-    "kind": "skill",
-    "name": "Rampage Shot",
-    "describe": "Uses a Heavy Machine Gun to attack a target, dealing <color=#F74848>1.3x</color> DMG.",
-    "icon": "Icon_skill_main_1015",
-    "ap": "3",
-    "cd": "",
     "type": "EquipmentSkill"
   },
   "101650": {
@@ -8014,6 +7710,7 @@
     "describe": "Uses a Missile Launcher to attack a target, dealing <color=#F74848>2.0x</color> DMG to the part hit. Doesn't deal Splash DMG.",
     "icon": "Icon_skill_order_1006",
     "ap": "3",
+    "cd": "0",
     "type": "SpecialAssault"
   },
   "400203": {
@@ -8309,15 +8006,6 @@
     "icon": "Icon_skill_order_3105",
     "ap": "5",
     "cd": "2",
-    "type": "Order"
-  },
-  "500309": {
-    "kind": "skill",
-    "name": "Regulated Repair",
-    "describe": "Restores HP equal to <color=#F74848>2.0</color>x Manipulator Repair AMT to all parts of a single ST. Can repair <color=#F74848>1</color> destroyed part.",
-    "icon": "Icon_skill_order_3001",
-    "ap": "2",
-    "cd": "0",
     "type": "Order"
   },
   "200550": {
@@ -9014,15 +8702,6 @@
     "icon": "Icon_skill_order_3103",
     "ap": "3",
     "cd": "1",
-    "type": "Order"
-  },
-  "500107": {
-    "kind": "skill",
-    "name": "Regulated Repair",
-    "describe": "Restores HP equal to <color=#F74848>2.0</color>x Manipulator Repair AMT to all parts of a single ST. Can repair <color=#F74848>1</color> destroyed part.",
-    "icon": "Icon_skill_order_3001",
-    "ap": "2",
-    "cd": "0",
     "type": "Order"
   },
   "200250": {
@@ -10435,5 +10114,536 @@
     "effect": "After performing <color=#F74848>2</color> [Basic Attack], [Basic Attack] AP cost is reduced by <color=#F74848>-1</color> for that turn, to a minimum of <color=#F74848>1</color> AP. This effect resets at the end of action.",
     "icon": "Icon_skill_passive_5329",
     "buffs": "2023461/2023463"
+  },
+  "174500": {
+    "kind": "skill",
+    "name": "Form Shift 1",
+    "effect": "At the end of action, if other allies can still act, enters <buf ID=900154>[Pending Activation]</buf> state. If an ally actively attacks with weapon corresponding to a form, triggers <buf ID=900155>[Activation]</buf> to enter the corresponding <buf ID=900156>[Form Shift]</buf>. This effect can trigger <color=#F74848>1</color> time per turn.",
+    "icon": "Icon_skill_passive_5205",
+    "buffs": "8001010/8001011/8001334"
+  },
+  "101701": {
+    "kind": "skill",
+    "name": "Blitz Strike",
+    "describe": "Attacks a target with two Alter-Blades, dealing <color=#F74848>0.85x</color> DMG <color=#F74848>2</color> times.",
+    "icon": "Icon_skill_main_1159",
+    "ap": "2",
+    "cd": "0",
+    "type": "EquipmentSkill"
+  },
+  "201801": {
+    "kind": "skill",
+    "name": "Warm Greetings",
+    "describe": "Uses a Flamethrower to attack the main target, dealing <color=#F74848>1.3x</color> DMG and dealing <color=#F74848>10%</color> <buf ID=900065>[Flame DMG]</buf> to other targets in the path. After combat, applies <terrian ID=4003081 /> to tiles hit, lasting for <color=#F74848>2</color> turns.",
+    "icon": "Icon_skill_main_1151",
+    "ap": "3",
+    "cd": "0",
+    "type": "EquipmentSkill"
+  },
+  "202201": {
+    "kind": "skill",
+    "name": "Scorch Earth",
+    "describe": "Uses a Large Shield to attack a target, dealing <buf ID=900017>[Fixed DMG]</buf> equal to <color=#F74848>50%</color> max HP of current arm. Applies <terrian ID=4003081 /> to all tiles within <color=#F74848>1</color> ring around the target for <color=#F74848>2</color> turns. If possesses <color=#F74848>2</color> or more stacks of <buf ID=2022512>[War Flame]</buf>, consumes <color=#F74848>2</color> stacks to additionally deal <buf ID=900017>[Fixed DMG]</buf> equal to <color=#F74848>20%</color> of own max HP to the target and all enemy units within <color=#F74848>1</color> ring around the target.",
+    "icon": "Icon_skill_main_1179",
+    "ap": "3",
+    "type": "EquipmentSkill"
+  },
+  "202101": {
+    "kind": "skill",
+    "name": "Electric Eel Penetration",
+    "describe": "Uses a Heavy Machine Gun to attack a target, dealing <color=#F74848>0.9</color>x DMG. Changes to <buf ID=2021503>[Electric Eel Stance]</buf> before attacking. If the target has <color=#F74848>3</color> or more stacks of <buf ID=900034>[Instability]</buf>, they cannot retaliate. Otherwise, applies <color=#F74848>2</color> stacks of <buf ID=530572>[Instability III]</buf> to the target, lasting for <color=#F74848>2</color> turns.",
+    "icon": "Icon_skill_main_1127",
+    "ap": "2",
+    "type": "EquipmentSkill"
+  },
+  "301301": {
+    "kind": "skill",
+    "name": "Landslide Shot",
+    "describe": "Uses a Sniper Rifle to attack a target, dealing <color=#F74848>1x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking.",
+    "icon": "Icon_skill_main_1137",
+    "ap": "2",
+    "cd": "0",
+    "type": "EquipmentSkill"
+  },
+  "301401": {
+    "kind": "skill",
+    "name": "Surefire Plan",
+    "describe": "Uses a Sniper Rifle to attack a target, dealing <color=#F74848>1.3x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking. If the target is carrying <buf ID=3014505>[Arch-Enemy]</buf>, this attack cannot be dodged.",
+    "icon": "Icon_skill_main_1135",
+    "ap": "3",
+    "type": "EquipmentSkill"
+  },
+  "601201": {
+    "kind": "skill",
+    "name": "Formation Guard",
+    "describe": "Protects allies within <color=#F74848>2</color> adjacent tiles from Assault and Ranged attacks. Triggers up to <color=#F74848>2</color> times per turn and lasts <color=#F74848>2</color> turns. Additionally, gains <color=#F74848>1</color> stack of <buf ID=6012449>[Undying]</buf>.",
+    "icon": "Icon_skill_order_5110",
+    "ap": "1",
+    "cd": "2",
+    "type": "Order"
+  },
+  "401101": {
+    "kind": "skill",
+    "name": "Proxy Strike",
+    "describe": "Uses a Cutter to attack all targets within the selected <color=#F74848>2</color>-tile range, dealing <color=#F74848>1.2x</color> AoE DMG.",
+    "icon": "Icon_skill_order_1132",
+    "ap": "3",
+    "cd": "0",
+    "type": "SpecialAssault"
+  },
+  "102201": {
+    "kind": "skill",
+    "name": "Whirling Sweep",
+    "describe": "Uses Chainsaw to attack all enemies within <color=#F74848>3</color>-tile horizontal area in front, dealing <color=#F74848>0.8</color>x AoE DMG. When <buf ID=1022501>[Edge Momentum]</buf> is at <color=#F74848>8</color> stacks or more, this skill multiplier increases by <color=#F74848>+0.1</color>. Can consume <color=#F74848>5</color> stacks of <buf ID=1022501>[Edge Momentum]</buf> to increase Critical Hit DMG of this attack by <color=#F74848>+15%</color> and expand the area to half circle in front, prioritizing the part with lowest HP.",
+    "icon": "Icon_skill_order_1102",
+    "ap": "2",
+    "type": "SpecialAssault"
+  },
+  "700006": {
+    "kind": "skill",
+    "name": "Accurate Fire",
+    "describe": "Uses a Sniper Rifle to attack a target, dealing <color=#F74848>1.0x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking and gains Hit Rate <color=#F74848>+15%</color>.",
+    "icon": "Icon_skill_main_1017",
+    "ap": "3",
+    "type": "EquipmentSkill"
+  },
+  "201201": {
+    "kind": "skill",
+    "name": "Focused Scorch",
+    "describe": "Uses a Flamethrower to attack the main target, dealing <color=#F74848>1.2x</color> DMG and dealing <color=#F74848>20%</color> <buf ID=900065>[Flame DMG]</buf> to other targets in the path. After combat, applies <terrian ID=4003081 /> to tiles hit, lasting for <color=#F74848>2</color> turns.",
+    "icon": "Icon_skill_main_1150",
+    "ap": "3",
+    "type": "EquipmentSkill"
+  },
+  "102001": {
+    "kind": "skill",
+    "name": "Giant Antelope Strike",
+    "describe": "Uses a Polearm to attack a target, dealing <color=#F74848>0.9x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking. Can consume <color=#F74848>0%</color>/<color=#F74848>50%</color> of current <buf ID=900166>[Feral Spirit]</buf> stacks to deal <buf ID=900017>[Fixed DMG]</buf> to the part hit equal to the amount consumed.",
+    "icon": "Icon_skill_main_1147",
+    "ap": "2",
+    "type": "EquipmentSkill"
+  },
+  "800101": {
+    "kind": "skill",
+    "name": "Cluster Matrix",
+    "describe": "Launches <color=#F74848>1</color> attack based on the current form and equipped weapon. The attack multiplier and effect vary based on weapon type. See <jump to=form-skills-cluster-matrix>Form Skills</jump> below for each variant.",
+    "icon": "Icon_skill_main_1169",
+    "ap": "2-4",
+    "cd": "0",
+    "type": "EquipmentSkill"
+  },
+  "401201": {
+    "kind": "skill",
+    "name": "Pulse Wave",
+    "describe": "Uses a Rocket Launcher to attack all targets within a <range type=1>1-tile cross-shaped</range> area, dealing <color=#F74848>0.25x</color> AoE DMG to all parts of targets hit. This attack always triggers <buf ID=4012502>[Structural Damage]</buf>'s <buf ID=900017>[Fixed DMG]</buf>. For each <color=#F74848>1</color> stack of <buf ID=4012502>[Structural Damage]</buf>, triggers <color=#F74848>1</color> more instance of <buf ID=900017>[Fixed DMG]</buf>, up to <color=#F74848>3</color> instances. Removes all <buf ID=4012502>[Structural Damage]</buf> stacks from the target after triggering.",
+    "icon": "Icon_skill_order_1129",
+    "ap": "3",
+    "type": "SpecialAssault"
+  },
+  "100301": {
+    "kind": "skill",
+    "name": "Crush Arm",
+    "describe": "Uses a Pile Bunker or Knuckles to attack a target, dealing <color=#F74848>1.25x</color> DMG. This attack prioritizes Arms.",
+    "icon": "Icon_skill_main_1104",
+    "ap": "2",
+    "cd": "0",
+    "type": "EquipmentSkill"
+  },
+  "102101": {
+    "kind": "skill",
+    "name": "Shield Breaker",
+    "describe": "Uses a Shotgun firing a slug or a Melee weapon to attack a target, dealing <color=#F74848>0.45</color>x or <color=#F74848>1.1</color>x DMG accordingly. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking.",
+    "icon": "Icon_skill_main_1174",
+    "ap": "2",
+    "type": "EquipmentSkill"
+  },
+  "202001": {
+    "kind": "skill",
+    "name": "Precision Fire",
+    "describe": "Uses a Machine Gun to attack a target, dealing <color=#F74848>1.3x</color> DMG. When possessing <color=#F74848>80</color> or more stacks of <buf ID=2020505>[Overcharged Bullet]</buf>, Hit Rate and Critical Hit chance increase by <color=#F74848>20%</color>.",
+    "icon": "Icon_skill_main_1125",
+    "ap": "3",
+    "cd": "0",
+    "type": "EquipmentSkill"
+  },
+  "800201": {
+    "kind": "skill",
+    "name": "Tainted Blade / Shadow Ray",
+    "describe": "Chooses to use either <skill ID=8002011>[Tainted Blade]</skill> or <skill ID=8002012>[Shadow Ray]</skill>.",
+    "icon": "Icon_skill_main_1179",
+    "ap": "3",
+    "type": "EquipmentSkill"
+  },
+  "101901": {
+    "kind": "skill",
+    "name": "Splitter",
+    "describe": "Uses a Chainsaw to attack a target, dealing <color=#F74848>1.1x</color> DMG. Consumes all <buf ID=5009234>[Vengeful Edge]</buf> on target hit. This attack always hits the part with lowest HP.",
+    "icon": "Icon_skill_main_1156",
+    "ap": "2",
+    "type": "EquipmentSkill"
+  },
+  "500901": {
+    "kind": "skill",
+    "name": "Tainted Implant",
+    "describe": "Uses a Knuckle or Pilebunker to attack a target, dealing <color=#F74848>1.1x</color> DMG. Can enter <buf ID=900014>[Aiming]</buf> Mode before attacking.",
+    "icon": "Icon_skill_main_1145",
+    "ap": "2",
+    "cd": "0",
+    "type": "EquipmentSkill"
+  },
+  "401301": {
+    "kind": "skill",
+    "name": "Self Sampling",
+    "describe": "Deals <color=#F74848>10%</color> <buf ID=900177>[Percentage HP Reduction]</buf> to all self parts. This effect will not destroy parts. Then uses a Missile Launcher to attack a target, dealing <color=#F74848>0.9</color>x DMG to the part hit and <color=#F74848>50%</color> Splash DMG to other parts. Upon hitting, deals <buf ID=900017>[Fixed DMG]</buf> equal to <color=#F74848>10%</color> max HP to all parts of all enemy units within a <color=#F74848>1</color>-tile cross-shaped area around the original target.",
+    "icon": "Icon_skill_order_1139",
+    "ap": "2",
+    "type": "SpecialAssault"
+  },
+  "102301": {
+    "kind": "skill",
+    "name": "Glacial Gleam",
+    "describe": "Uses Alter-Blades to attack a target, dealing <color=#F74848>2x0.6</color> DMG, prioritizing the body part. Can consume up to <color=#F74848>2</color> stacks of <buf ID=1023508>[Fighting Spirit]</buf> to increase the skill multiplier by <color=#F74848>+0.1</color> per stack consumed.",
+    "icon": "Icon_skill_main_1161",
+    "ap": "3",
+    "type": "EquipmentSkill"
+  },
+  "501001": {
+    "kind": "skill",
+    "name": "Flame Strike",
+    "describe": "Uses a Flamethrower to attack a target, dealing <color=#F74848>1.2x</color> DMG and <color=#F74848>20%</color> <buf ID=900139>[Flame DMG]</buf> to other targets along the path. After combat, applies <terrian ID=4003081 /> to all tiles along the attack path, lasting <color=#F74848>2</color> turns. Can activate <buf ID=5010468>[Stratagem Infusion]</buf> to increase <buf ID=900139>[Flame DMG]</buf> to <color=#F74848>40%</color>.",
+    "icon": "Icon_skill_main_1151",
+    "ap": "3",
+    "cd": "0",
+    "type": "EquipmentSkill"
+  },
+  "201901": {
+    "kind": "skill",
+    "name": "Fierce Assault",
+    "describe": "Uses a Shotgun to attack a target, dealing <color=#F74848>1.4x</color> DMG. Before attacking, gains <color=#F74848>1</color> random debuff, lasting for <color=#F74848>2</color> turns.",
+    "icon": "Icon_skill_main_1105",
+    "ap": "3",
+    "cd": "0",
+    "type": "EquipmentSkill"
+  },
+  "601006": {
+    "kind": "skill",
+    "name": "Hunter's Prelude",
+    "describe": "Uses a Large Shield or Small Shield to throw a magnetic grenade at any tile within a <range type=1>4-tile diamond area</range>, dealing <color=#F74848>0.1x</color> AoE DMG to the Body of all enemy units within <color=#F74848>3</color> tiles of the location, and forcibly displacing them <color=#F74848>2</color> tiles toward the center. This attack is guaranteed to hit. After attacking, applies <buf ID=6010502>[Magnetic Lock]</buf> to all targets, and can then trigger <buf ID=900004>[Re-ATK]</buf>. Cannot move before attacking.",
+    "icon": "Icon_skill_order_1138",
+    "ap": "4",
+    "cd": "2",
+    "type": "SpecialAssault"
+  },
+  "700010": {
+    "kind": "skill",
+    "name": "Guard",
+    "describe": "Protects allies within <color=#F74848>2</color> adjacent tiles from Assault and Ranged attacks. Triggers up to <color=#F74848>2</color> times per turn and lasts <color=#F74848>2</color> turns. Additionally, gains <buf ID=7100701>[Defensive Stance I]</buf>. Can only trigger <color=#F74848>1</color> time per turn.",
+    "icon": "Icon_skill_order_1031",
+    "ap": "1",
+    "cd": "2",
+    "type": "Order"
+  },
+  "301201": {
+    "kind": "skill",
+    "name": "Targeted Diagnosis",
+    "describe": "Uses a Light Rifle to attack a target, dealing <color=#F74848>1.25x</color> DMG. If there are no allied units within <color=#F74848>2</color> tiles, enters <buf ID=900014>[Aiming]</buf> Mode before attacking.",
+    "icon": "Icon_skill_main_1115",
+    "ap": "2",
+    "cd": "0",
+    "type": "EquipmentSkill"
+  },
+  "101801": {
+    "kind": "skill",
+    "name": "Light Dragon - Phoenix Blade",
+    "describe": "Uses an Alter-Blade to attack a target, dealing <color=#F74848>1.6x</color> DMG. This attack always hits the part with highest HP.",
+    "icon": "Icon_skill_main_9601",
+    "ap": "3",
+    "cd": "0",
+    "type": "EquipmentSkill"
+  },
+  "101601": {
+    "kind": "skill",
+    "name": "Critical Smash",
+    "describe": "Uses a Chainsaw to attack a target, dealing <color=#F74848>1.25x</color> DMG. This attack is guaranteed to hit the part with the lowest HP.",
+    "icon": "Icon_skill_main_1156",
+    "ap": "2",
+    "cd": "0",
+    "type": "EquipmentSkill"
+  },
+  "601101": {
+    "kind": "skill",
+    "name": "Sync-Guard",
+    "describe": "Protects allies within <color=#F74848>2</color> adjacent tiles from Assault and Ranged attacks. Can trigger up to <color=#F74848>2</color> times per turn. Lasts for <color=#F74848>2</color> turns. Also applies <buf ID=6011014>[Provocation]</buf> to all enemy units within <color=#F74848>2</color> adjacent tiles, lasting for <color=#F74848>2</color> turns.",
+    "icon": "Icon_skill_order_5112",
+    "ap": "1",
+    "cd": "2",
+    "type": "Order"
+  },
+  "300501": {
+    "kind": "skill",
+    "name": "Bottom Fishing",
+    "describe": "Uses a Light Rifle to attack a target, dealing <color=#F74848>1.6x</color> DMG. This attack prioritizes Legs.",
+    "icon": "Icon_skill_main_1107",
+    "ap": "3",
+    "cd": "0",
+    "type": "EquipmentSkill"
+  },
+  "400201": {
+    "kind": "skill",
+    "name": "Math Talent",
+    "effect": "After attacking with a Tactical Weapon, gains <buf ID=4002012>[Battlefield Mastery]</buf>. Stacks up to <color=#F74848>4</color> times. Lasts for <color=#F74848>2</color> turns. All stacks of <buf ID=4002012>[Battlefield Mastery]</buf> are lost upon taking damage.",
+    "icon": "Icon_skill_passive_4111"
+  },
+  "700004": {
+    "kind": "skill",
+    "name": "Rampage Shot",
+    "describe": "Uses a Heavy Machine Gun to attack a target, dealing <color=#F74848>1.3x</color> DMG.",
+    "icon": "Icon_skill_main_1015",
+    "ap": "3",
+    "type": "EquipmentSkill"
+  },
+  "200501": {
+    "kind": "skill",
+    "name": "Full Rudder",
+    "effect": "When initiating combat, if a part is destroyed, <buf ID=900004>[Re-ATK]</buf> can trigger after combat. Can only trigger <color=#F74848>1</color> time per turn. Unable to move before attacking.",
+    "icon": "Icon_skill_passive_5126"
+  },
+  "700022": {
+    "kind": "skill",
+    "name": "Powerful Strike",
+    "describe": "Uses a Rail Gun to attack all targets in a 1x3-tile line, dealing <color=#F74848>1.0x</color> AoE DMG.",
+    "icon": "Icon_skill_order_1007",
+    "ap": "2",
+    "cd": "0",
+    "type": "Order"
+  },
+  "700002": {
+    "kind": "skill",
+    "name": "Chop",
+    "describe": "Uses a Polearm to attack a target, dealing <color=#F74848>1.6x</color> DMG.",
+    "icon": "Icon_skill_main_1013",
+    "ap": "2",
+    "type": "EquipmentSkill"
+  },
+  "700003": {
+    "kind": "skill",
+    "name": "Turbo Shooting",
+    "describe": "Uses a Shotgun to attack a target, dealing <color=#F74848>1.3</color>x DMG.",
+    "icon": "Icon_skill_main_1014",
+    "ap": "3",
+    "type": "EquipmentSkill"
+  },
+  "700005": {
+    "kind": "skill",
+    "name": "Ballistic Bundle",
+    "describe": "Uses a Machine Gun to attack a target, dealing <color=#F74848>1.3x</color> DMG.",
+    "icon": "Icon_skill_main_1016",
+    "ap": "3",
+    "type": "EquipmentSkill"
+  },
+  "700025": {
+    "kind": "skill",
+    "name": "Polyenergy Shot",
+    "describe": "Uses a Light Rifle to attack a target, dealing <color=#F74848>1.6</color>x DMG.",
+    "icon": "Icon_skill_main_1022",
+    "ap": "2",
+    "cd": "0",
+    "type": "EquipmentSkill"
+  },
+  "400101": {
+    "kind": "skill",
+    "name": "Innervate",
+    "describe": "Gains <color=#F74848>1</color> AP. Can continue action with remaining Movement.",
+    "icon": "Icon_skill_order_5107",
+    "ap": "0",
+    "cd": "3",
+    "type": "Order"
+  },
+  "202301": {
+    "kind": "skill",
+    "name": "Lingering Bloodlust",
+    "effect": "After triggering <buf ID=900004>[Re-ATK]</buf>, restores <color=#F74848>1</color> AP. Can only trigger <color=#F74848>1</color> time per turn.",
+    "icon": "Icon_skill_passive_5175"
+  },
+  "700008": {
+    "kind": "skill",
+    "name": "Regulated Repair",
+    "describe": "Restores HP equal to <color=#F74848>2.0</color>x Manipulator Repair AMT to all parts of a single ST. Can repair <color=#F74848>1</color> destroyed part.",
+    "icon": "Icon_skill_order_3001",
+    "ap": "2",
+    "cd": "0",
+    "type": "Order"
+  },
+  "400801": {
+    "kind": "skill",
+    "name": "Targeted Bombardment",
+    "describe": "Uses a Missile Launcher to attack a target, dealing <color=#F74848>1.1</color>x DMG to the part hit and Splash DMG equal to <color=#F74848>50%</color> of this damage to other parts. Applies <buf ID=4008509>[Lock]</buf> to targets hit, lasting <color=#F74848>2</color> turns.",
+    "icon": "Icon_skill_order_1113",
+    "ap": "3",
+    "cd": "0",
+    "type": "SpecialAssault"
+  },
+  "101401": {
+    "kind": "skill",
+    "name": "Fracture",
+    "describe": "Uses a Polearm to attack a target, dealing <color=#F74848>1.5</color>x DMG. If a part is destroyed successfully and both Arms remain undestroyed, deals <color=#F74848>0.25</color>x AoE DMG to targets within <color=#F74848>1</color> ring after combat.",
+    "icon": "Icon_skill_main_9901",
+    "ap": "2",
+    "type": "EquipmentSkill"
+  },
+  "201501": {
+    "kind": "skill",
+    "name": "Armed and Ready",
+    "describe": "Uses a Machine Gun to attack a target, dealing <color=#F74848>1.2x</color> DMG. After combat, gains <color=#F74848>1</color> stack of <buf ID=2015509>[Retaliation Enhancement]</buf>. Stacks up to <color=#F74848>5</color> times.",
+    "icon": "Icon_skill_main_1129",
+    "ap": "3",
+    "type": "EquipmentSkill"
+  },
+  "101301": {
+    "kind": "skill",
+    "name": "Inevitable Slash",
+    "describe": "Attacks a target with a Chainsaw, dealing <color=#F74848>1.5x</color> DMG. If the target's HP is below <color=#F74848>50%</color>, this attack cannot be dodged.",
+    "icon": "Icon_skill_main_1155",
+    "ap": "2",
+    "type": "EquipmentSkill"
+  },
+  "700023": {
+    "kind": "skill",
+    "name": "Cross Bombing",
+    "describe": "Uses a Rocket Launcher to attack all targets within a 1-tile cross area, dealing <color=#F74848>0.25x</color> AoE DMG, and an additional <color=#F74848>15%</color> DMG to the target in the center tile.",
+    "icon": "Icon_skill_order_1009",
+    "ap": "2",
+    "cd": "0",
+    "type": "SpecialAssault"
+  },
+  "400701": {
+    "kind": "skill",
+    "name": "Thermal Streaming",
+    "describe": "Uses a Flamethrower to attack all targets in a <range type=1>1x4-tile line</range>, dealing <color=#F74848>0.6x</color> AoE DMG. Inflicts <buf ID=4003063>[Repair Inhibition]</buf> on targets hit, lasting for <color=#F74848>1</color> turn.",
+    "icon": "Icon_skill_order_1120",
+    "ap": "3",
+    "cd": "0",
+    "type": "Order"
+  },
+  "201601": {
+    "kind": "skill",
+    "name": "Crimson Blitz",
+    "describe": "Uses a Machine Gun, Shotgun, or Flamethrower to attack a target, dealing <color=#F74848>1.3</color>x DMG.",
+    "icon": "Icon_skill_main_1021",
+    "ap": "3",
+    "cd": "0",
+    "type": "EquipmentSkill"
+  },
+  "201101": {
+    "kind": "skill",
+    "name": "Invasion",
+    "describe": "Uses a Shotgun to attack a target, dealing <color=#F74848>1.2x</color> DMG. Hit Rate <color=#F74848>+10%</color>.",
+    "icon": "Icon_skill_main_1043",
+    "ap": "3",
+    "type": "EquipmentSkill"
+  },
+  "100901": {
+    "kind": "skill",
+    "name": "Crescent Moon",
+    "describe": "Uses a Polearm to attack all targets within an <range type=1>I-shaped (3x1-tile) area</range> ahead, dealing <color=#F74848>0.8x</color> AoE DMG.",
+    "icon": "Icon_skill_main_1103",
+    "ap": "2",
+    "cd": "0",
+    "type": "Order"
+  },
+  "100801": {
+    "kind": "skill",
+    "name": "One-Inch Punch",
+    "describe": "Uses a Pile Bunker or Knuckles to attack a target, dealing <color=#F74848>1.6x</color> DMG.",
+    "icon": "Icon_skill_main_1020",
+    "ap": "2",
+    "type": "EquipmentSkill"
+  },
+  "301001": {
+    "kind": "skill",
+    "name": "Tracking Shot",
+    "describe": "Uses a Sniper Rifle to attack a target, dealing <color=#F74848>1.3x</color> DMG. This attack is guaranteed to hit. When in the <buf ID=3010504>[Improved Fire]</buf> state, also inflicts <buf ID=3010012>[Dodge Invalid]</buf> on the target hit after combat, which expires after being hit <color=#F74848>1</color> time.",
+    "icon": "Icon_skill_main_1115",
+    "ap": "2",
+    "type": "EquipmentSkill"
+  },
+  "201701": {
+    "kind": "skill",
+    "name": "Suppressive Assault",
+    "describe": "Uses HMG to attack a target, dealing <color=#F74848>1.3x</color> DMG. Can activate <buf ID=900125>[Fury Unleashed]</buf>. When <color=#F74848>2</color> stacks of <buf ID=2017500>[Fury]</buf> are consumed, this attack cannot be dodged.",
+    "icon": "Icon_skill_main_1105",
+    "ap": "3",
+    "type": "EquipmentSkill"
+  },
+  "101501": {
+    "kind": "skill",
+    "name": "Twin Wing Slash",
+    "describe": "Attacks a target with two Alter-Blades, dealing <color=#F74848>0.85</color>x DMG <color=#F74848>2</color> times.",
+    "icon": "Icon_skill_main_1158",
+    "ap": "2",
+    "cd": "0",
+    "type": "EquipmentSkill"
+  },
+  "301101": {
+    "kind": "skill",
+    "name": "Precision Surgery",
+    "describe": "Uses a Sniper Rifle to attack a target, dealing <color=#F74848>1.2x</color> DMG. When in <buf ID=900111>[Directional Rack]</buf> Mode, enters <buf ID=900014>[Aiming]</buf> Mode before attacking.",
+    "effect": "When attacking without having moved this turn, DMG <color=#F74848>+15%</color>.",
+    "icon": "Icon_skill_main_1137",
+    "ap": 2,
+    "type": "EquipmentSkill"
+  },
+  "600901": {
+    "kind": "skill",
+    "name": "Aegis",
+    "describe": "Protects allies within <color=#F74848>2</color> adjacent tiles from Assault and Ranged attacks. Triggers up to <color=#F74848>2</color> times per turn and lasts <color=#F74848>2</color> turns. Additionally, gains <buf ID=900999>[Substitute]</buf>. Can only trigger <color=#F74848>1</color> time per turn.",
+    "icon": "Icon_skill_order_9701",
+    "ap": "1",
+    "cd": "2",
+    "type": "Order"
+  },
+  "400901": {
+    "kind": "skill",
+    "name": "Ballistic Bundle",
+    "describe": "Uses a Machine Gun to attack a target, dealing <color=#F74848>1.3</color>x DMG.",
+    "icon": "Icon_skill_main_1016",
+    "ap": "3",
+    "cd": "0",
+    "type": "EquipmentSkill"
+  },
+  "500801": {
+    "kind": "skill",
+    "name": "Standard Diagnostics",
+    "describe": "Restores HP equal to <color=#F74848>2.0x</color> Manipulator Repair AMT to all parts of a single ST. Can repair <color=#F74848>1</color> destroyed part. If the target is <buf ID=1099900>[Guggle]</buf>, additionally applies <buf ID=7100901>[Movement UP]</buf>, lasting for <color=#F74848>1</color> turn.",
+    "icon": "Icon_skill_order_3001",
+    "ap": "2",
+    "cd": "0",
+    "type": "Order",
+    "skill_icon": "Icon_skill_order_3103"
+  },
+  "500501": {
+    "kind": "skill",
+    "name": "Pochy Assist!",
+    "describe": "Restores HP equal to <color=#F74848>1.8x</color> Manipulator Repair AMT to all parts of a single ST. Can repair <color=#F74848>1</color> destroyed part. If Pochy is within <color=#F74848>2</color> tiles of the target, performs <buf ID=900019>[Link Repair]</buf> and restores HP equal to <color=#F74848>1x</color> Pochy's Repair AMT.",
+    "icon": "Icon_skill_order_3001",
+    "ap": "2",
+    "cd": "0",
+    "type": "Order"
+  },
+  "201401": {
+    "kind": "skill",
+    "name": "Charged Shot",
+    "describe": "Uses a Heavy Machine Gun to attack a target, dealing <color=#F74848>1.2x</color> DMG. For each buff possessed, DMG <color=#F74848>+5%</color>, up to <color=#F74848>15%</color>.",
+    "icon": "Icon_skill_main_9801",
+    "ap": "3",
+    "type": "EquipmentSkill"
+  },
+  "300801": {
+    "kind": "skill",
+    "name": "Snap Judgment",
+    "describe": "Uses a Light Rifle to attack a target, dealing <color=#F74848>1.2x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode while equipped with a Small Shield.",
+    "icon": "Icon_skill_main_1038",
+    "ap": "2",
+    "type": "EquipmentSkill"
   }
 }

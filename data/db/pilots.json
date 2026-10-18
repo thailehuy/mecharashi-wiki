@@ -46,16 +46,6 @@
         "partition": "10103118-gamma2",
         "slots": "Attack/Dodge/Dodge"
       }
-    ],
-    "hidden_skills": [
-      {
-        "name": "Blitz Strike",
-        "icon": "Icon_skill_main_1159",
-        "type": "EquipmentSkill",
-        "Ap": "2",
-        "CD": "0",
-        "describe": "Attacks a target with two Alter-Blades, dealing <color=#F74848>0.85x</color> DMG <color=#F74848>2</color> times."
-      }
     ]
   },
   "10103159": {
@@ -105,16 +95,6 @@
         "partition": "10103159-gamma2",
         "slots": "Attack/Dodge/Dodge"
       }
-    ],
-    "hidden_skills": [
-      {
-        "name": "Warm Greetings",
-        "icon": "Icon_skill_main_1151",
-        "type": "EquipmentSkill",
-        "Ap": "3",
-        "CD": "0",
-        "describe": "Uses a Flamethrower to attack the main target, dealing <color=#F74848>1.3x</color> DMG and dealing <color=#F74848>10%</color> <buf ID=900065>[Flame DMG]</buf> to other targets in the path. After combat, applies <terrian ID=4003081 /> to tiles hit, lasting for <color=#F74848>2</color> turns."
-      }
     ]
   },
   "10103185": {
@@ -159,16 +139,6 @@
       {
         "partition": "10103185-gamma2",
         "slots": "Attack/Dodge/Dodge"
-      }
-    ],
-    "hidden_skills": [
-      {
-        "name": "Scorch Earth",
-        "icon": "Icon_skill_main_1179",
-        "type": "EquipmentSkill",
-        "Ap": "3",
-        "CD": "",
-        "describe": "Uses a Large Shield to attack a target, dealing <buf ID=900017>[Fixed DMG]</buf> equal to <color=#F74848>50%</color> max HP of current arm. Applies <terrian ID=4003081 /> to all tiles within <color=#F74848>1</color> ring around the target for <color=#F74848>2</color> turns. If possesses <color=#F74848>2</color> or more stacks of <buf ID=2022512>[War Flame]</buf>, consumes <color=#F74848>2</color> stacks to additionally deal <buf ID=900017>[Fixed DMG]</buf> equal to <color=#F74848>20%</color> of own max HP to the target and all enemy units within <color=#F74848>1</color> ring around the target."
       }
     ]
   },
@@ -260,16 +230,6 @@
       {
         "partition": "10103160-gamma2",
         "slots": "Attack/Dodge/Dodge"
-      }
-    ],
-    "hidden_skills": [
-      {
-        "name": "Electric Eel Penetration",
-        "icon": "Icon_skill_main_1127",
-        "type": "EquipmentSkill",
-        "Ap": "2",
-        "CD": "",
-        "describe": "Uses a Heavy Machine Gun to attack a target, dealing <color=#F74848>0.9</color>x DMG. Changes to <buf ID=2021503>[Electric Eel Stance]</buf> before attacking. If the target has <color=#F74848>3</color> or more stacks of <buf ID=900034>[Instability]</buf>, they cannot retaliate. Otherwise, applies <color=#F74848>2</color> stacks of <buf ID=530572>[Instability III]</buf> to the target, lasting for <color=#F74848>2</color> turns."
       }
     ]
   },
@@ -415,16 +375,6 @@
         "partition": "10103165-gamma2",
         "slots": "Attack/Dodge/Critical"
       }
-    ],
-    "hidden_skills": [
-      {
-        "name": "Landslide Shot",
-        "icon": "Icon_skill_main_1137",
-        "type": "EquipmentSkill",
-        "Ap": "2",
-        "CD": "0",
-        "describe": "Uses a Sniper Rifle to attack a target, dealing <color=#F74848>1x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking."
-      }
     ]
   },
   "10103145": {
@@ -471,15 +421,6 @@
         "partition": "10103145-gamma2",
         "slots": "Attack/Dodge/Dodge"
       }
-    ],
-    "hidden_skills": [
-      {
-        "name": "Surefire Plan",
-        "icon": "Icon_skill_main_1135",
-        "type": "EquipmentSkill",
-        "Ap": "3",
-        "describe": "Uses a Sniper Rifle to attack a target, dealing <color=#F74848>1.3x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking. If the target is carrying <buf ID=3014505>[Arch-Enemy]</buf>, this attack cannot be dodged."
-      }
     ]
   },
   "10103167": {
@@ -524,16 +465,6 @@
       {
         "partition": "10103167-gamma2",
         "slots": "Attack/Dodge/Dodge"
-      }
-    ],
-    "hidden_skills": [
-      {
-        "name": "Formation Guard",
-        "icon": "Icon_skill_order_5110",
-        "type": "Order",
-        "Ap": "1",
-        "CD": "2",
-        "describe": "Protects allies within <color=#F74848>2</color> adjacent tiles from Assault and Ranged attacks. Triggers up to <color=#F74848>2</color> times per turn and lasts <color=#F74848>2</color> turns. Additionally, gains <color=#F74848>1</color> stack of <buf ID=6012449>[Undying]</buf>."
       }
     ]
   },
@@ -728,16 +659,6 @@
         "partition": "10103162-gamma2",
         "slots": "Attack/Dodge/Critical"
       }
-    ],
-    "hidden_skills": [
-      {
-        "name": "Proxy Strike",
-        "icon": "Icon_skill_order_1132",
-        "type": "SpecialAssault",
-        "Ap": "3",
-        "CD": "0",
-        "describe": "Uses a Cutter to attack all targets within the selected <color=#F74848>2</color>-tile range, dealing <color=#F74848>1.2x</color> AoE DMG."
-      }
     ]
   },
   "10103184": {
@@ -782,16 +703,6 @@
       {
         "partition": "10103184-gamma2",
         "slots": "Attack/Dodge/Dodge"
-      }
-    ],
-    "hidden_skills": [
-      {
-        "name": "Whirling Sweep",
-        "icon": "Icon_skill_order_1102",
-        "type": "SpecialAssault",
-        "Ap": "2",
-        "CD": "",
-        "describe": "Uses Chainsaw to attack all enemies within <color=#F74848>3</color>-tile horizontal area in front, dealing <color=#F74848>0.8</color>x AoE DMG. When <buf ID=1022501>[Edge Momentum]</buf> is at <color=#F74848>8</color> stacks or more, this skill multiplier increases by <color=#F74848>+0.1</color>. Can consume <color=#F74848>5</color> stacks of <buf ID=1022501>[Edge Momentum]</buf> to increase Critical Hit DMG of this attack by <color=#F74848>+15%</color> and expand the area to half circle in front, prioritizing the part with lowest HP."
       }
     ]
   },
@@ -838,16 +749,6 @@
       {
         "partition": "10103102-gamma2",
         "slots": "Attack/Critical/Critical"
-      }
-    ],
-    "hidden_skills": [
-      {
-        "name": "Accurate Fire",
-        "icon": "Icon_skill_main_1017",
-        "type": "EquipmentSkill",
-        "Ap": "3",
-        "CD": "0",
-        "describe": "Uses a Sniper Rifle to attack a target, dealing <color=#F74848>1.0x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking and gains Hit Rate <color=#F74848>+15%</color>."
       }
     ]
   },
@@ -1038,15 +939,6 @@
       {
         "partition": "10103136-gamma2",
         "slots": "Attack/Dodge/Critical"
-      }
-    ],
-    "hidden_skills": [
-      {
-        "name": "Focused Scorch",
-        "icon": "Icon_skill_main_1150",
-        "type": "EquipmentSkill",
-        "Ap": "3",
-        "describe": "Uses a Flamethrower to attack the main target, dealing <color=#F74848>1.2x</color> DMG and dealing <color=#F74848>20%</color> <buf ID=900065>[Flame DMG]</buf> to other targets in the path. After combat, applies <terrian ID=4003081 /> to tiles hit, lasting for <color=#F74848>2</color> turns."
       }
     ]
   },
@@ -1241,15 +1133,6 @@
         "partition": "10103168-gamma2",
         "slots": "Attack/Dodge/Critical"
       }
-    ],
-    "hidden_skills": [
-      {
-        "name": "Giant Antelope Strike",
-        "icon": "Icon_skill_main_1147",
-        "type": "EquipmentSkill",
-        "Ap": "2",
-        "describe": "Uses a Polearm to attack a target, dealing <color=#F74848>0.9x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking. Can consume <color=#F74848>0%</color>/<color=#F74848>50%</color> of current <buf ID=900166>[Feral Spirit]</buf> stacks to deal <buf ID=900017>[Fixed DMG]</buf> to the part hit equal to the amount consumed."
-      }
     ]
   },
   "10103103": {
@@ -1390,16 +1273,6 @@
       {
         "partition": "10103174-gamma2",
         "slots": "Attack/Dodge/Dodge"
-      }
-    ],
-    "hidden_skills": [
-      {
-        "name": "Cluster Matrix",
-        "icon": "Icon_skill_main_1169",
-        "type": "EquipmentSkill",
-        "Ap": "2-4",
-        "CD": "0",
-        "describe": "Launches <color=#F74848>1</color> attack based on the current form and equipped weapon. The attack multiplier and effect vary based on weapon type. See <jump to=form-skills-cluster-matrix>Form Skills</jump> below for each variant."
       }
     ],
     "form_skill_groups": [
@@ -1899,15 +1772,6 @@
         "partition": "10103140-gamma2",
         "slots": "Attack/Dodge/Critical"
       }
-    ],
-    "hidden_skills": [
-      {
-        "name": "Pulse Wave",
-        "icon": "Icon_skill_order_1129",
-        "type": "SpecialAssault",
-        "Ap": "3",
-        "describe": "Uses a Rocket Launcher to attack all targets within a <range type=1>1-tile cross-shaped</range> area, dealing <color=#F74848>0.25x</color> AoE DMG to all parts of targets hit. This attack always triggers <buf ID=4012502>[Structural Damage]</buf>'s <buf ID=900017>[Fixed DMG]</buf>. For each <color=#F74848>1</color> stack of <buf ID=4012502>[Structural Damage]</buf>, triggers <color=#F74848>1</color> more instance of <buf ID=900017>[Fixed DMG]</buf>, up to <color=#F74848>3</color> instances. Removes all <buf ID=4012502>[Structural Damage]</buf> stacks from the target after triggering."
-      }
     ]
   },
   "10103110": {
@@ -2003,16 +1867,6 @@
         "partition": "10103101-gamma2",
         "slots": "Dodge/Critical/Critical"
       }
-    ],
-    "hidden_skills": [
-      {
-        "name": "Crush Arm",
-        "icon": "Icon_skill_main_1104",
-        "type": "EquipmentSkill",
-        "Ap": "2",
-        "CD": "0",
-        "describe": "Uses a Pile Bunker or Knuckles to attack a target, dealing <color=#F74848>1.25x</color> DMG. This attack prioritizes Arms."
-      }
     ]
   },
   "10103182": {
@@ -2057,16 +1911,6 @@
       {
         "partition": "10103182-gamma2",
         "slots": "Attack/Dodge/Critical"
-      }
-    ],
-    "hidden_skills": [
-      {
-        "name": "Shield Breaker",
-        "icon": "Icon_skill_main_1174",
-        "type": "EquipmentSkill",
-        "Ap": "2",
-        "CD": "",
-        "describe": "Uses a Shotgun firing a slug or a Melee weapon to attack a target, dealing <color=#F74848>0.45</color>x or <color=#F74848>1.1</color>x DMG accordingly. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking."
       }
     ]
   },
@@ -2166,16 +2010,6 @@
         "partition": "10103179-gamma2",
         "slots": "Attack/Dodge/Dodge"
       }
-    ],
-    "hidden_skills": [
-      {
-        "name": "Precision Fire",
-        "icon": "Icon_skill_main_1125",
-        "type": "EquipmentSkill",
-        "Ap": "3",
-        "CD": "0",
-        "describe": "Uses a Machine Gun to attack a target, dealing <color=#F74848>1.3x</color> DMG. When possessing <color=#F74848>80</color> or more stacks of <buf ID=2020505>[Overcharged Bullet]</buf>, Hit Rate and Critical Hit chance increase by <color=#F74848>20%</color>."
-      }
     ]
   },
   "10103138": {
@@ -2273,16 +2107,6 @@
         "partition": "10103173-gamma2",
         "slots": "Attack/Dodge/Dodge"
       }
-    ],
-    "hidden_skills": [
-      {
-        "name": "Tainted Blade / Shadow Ray",
-        "icon": "Icon_skill_main_1179",
-        "type": "EquipmentSkill",
-        "Ap": "3",
-        "CD": "",
-        "describe": "Chooses to use either <skill ID=8002011>[Tainted Blade]</skill> or <skill ID=8002012>[Shadow Ray]</skill>."
-      }
     ]
   },
   "10103129": {
@@ -2328,15 +2152,6 @@
       {
         "partition": "10103129-gamma2",
         "slots": "Attack/Dodge/Dodge"
-      }
-    ],
-    "hidden_skills": [
-      {
-        "name": "Splitter",
-        "icon": "Icon_skill_main_1156",
-        "type": "EquipmentSkill",
-        "Ap": "2",
-        "describe": "Uses a Chainsaw to attack a target, dealing <color=#F74848>1.1x</color> DMG. Consumes all <buf ID=5009234>[Vengeful Edge]</buf> on target hit. This attack always hits the part with lowest HP."
       }
     ]
   },
@@ -2435,16 +2250,6 @@
       {
         "partition": "10103164-gamma2",
         "slots": "Attack/Dodge/Critical"
-      }
-    ],
-    "hidden_skills": [
-      {
-        "name": "Tainted Implant",
-        "icon": "Icon_skill_main_1145",
-        "type": "EquipmentSkill",
-        "Ap": "2",
-        "CD": "0",
-        "describe": "Uses a Knuckle or Pilebunker to attack a target, dealing <color=#F74848>1.1x</color> DMG. Can enter <buf ID=900014>[Aiming]</buf> Mode before attacking."
       }
     ]
   },
@@ -2683,16 +2488,6 @@
       {
         "partition": "10103175-gamma2",
         "slots": "Attack/Dodge/Dodge"
-      }
-    ],
-    "hidden_skills": [
-      {
-        "name": "Self Sampling",
-        "icon": "Icon_skill_order_1139",
-        "type": "SpecialAssault",
-        "Ap": "2",
-        "CD": "",
-        "describe": "Deals <color=#F74848>10%</color> <buf ID=900177>[Percentage HP Reduction]</buf> to all self parts. This effect will not destroy parts. Then uses a Missile Launcher to attack a target, dealing <color=#F74848>0.9</color>x DMG to the part hit and <color=#F74848>50%</color> Splash DMG to other parts. Upon hitting, deals <buf ID=900017>[Fixed DMG]</buf> equal to <color=#F74848>10%</color> max HP to all parts of all enemy units within a <color=#F74848>1</color>-tile cross-shaped area around the original target."
       }
     ]
   },
@@ -3255,16 +3050,6 @@
         "partition": "10103181-gamma2",
         "slots": "Attack/Dodge/Dodge"
       }
-    ],
-    "hidden_skills": [
-      {
-        "name": "Glacial Gleam",
-        "icon": "Icon_skill_main_1161",
-        "type": "EquipmentSkill",
-        "Ap": "3",
-        "CD": "",
-        "describe": "Uses Alter-Blades to attack a target, dealing <color=#F74848>2x0.6</color> DMG, prioritizing the body part. Can consume up to <color=#F74848>2</color> stacks of <buf ID=1023508>[Fighting Spirit]</buf> to increase the skill multiplier by <color=#F74848>+0.1</color> per stack consumed."
-      }
     ]
   },
   "10103183": {
@@ -3312,16 +3097,6 @@
       {
         "partition": "10103183-gamma2",
         "slots": "Attack/Dodge/Dodge"
-      }
-    ],
-    "hidden_skills": [
-      {
-        "name": "Death Ray",
-        "icon": "Icon_skill_order_1108",
-        "type": "SpecialAssault",
-        "Ap": "3",
-        "CD": "",
-        "describe": "Uses Rail Gun to attack all enemies within a cross-shaped area around a target within <color=#F74848>5</color> adjacent tiles, dealing <color=#F74848>0.5</color>x DMG. DMG multiplier increases by <color=#F74848>+0.9</color>x against the target in the center. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking. This attack can target <buf ID=4014509>[Resonance Node]</buf>."
       }
     ]
   },
@@ -3418,16 +3193,6 @@
         "partition": "10103166-gamma2",
         "slots": "Attack/Dodge/Critical"
       }
-    ],
-    "hidden_skills": [
-      {
-        "name": "Flame Strike",
-        "icon": "Icon_skill_main_1151",
-        "type": "EquipmentSkill",
-        "Ap": "3",
-        "CD": "0",
-        "describe": "Uses a Flamethrower to attack a target, dealing <color=#F74848>1.2x</color> DMG and <color=#F74848>20%</color> <buf ID=900139>[Flame DMG]</buf> to other targets along the path. After combat, applies <terrian ID=4003081 /> to all tiles along the attack path, lasting <color=#F74848>2</color> turns. Can activate <buf ID=5010468>[Stratagem Infusion]</buf> to increase <buf ID=900139>[Flame DMG]</buf> to <color=#F74848>40%</color>."
-      }
     ]
   },
   "10103131": {
@@ -3520,16 +3285,6 @@
         "partition": "10103172-gamma2",
         "slots": "Attack/Dodge/Critical"
       }
-    ],
-    "hidden_skills": [
-      {
-        "name": "Fierce Assault",
-        "icon": "Icon_skill_main_1105",
-        "type": "EquipmentSkill",
-        "Ap": "3",
-        "CD": "0",
-        "describe": "Uses a Shotgun to attack a target, dealing <color=#F74848>1.4x</color> DMG. Before attacking, gains <color=#F74848>1</color> random debuff, lasting for <color=#F74848>2</color> turns."
-      }
     ]
   },
   "10103144": {
@@ -3579,25 +3334,6 @@
         "partition": "10103144-gamma2",
         "slots": "Attack/Critical/Critical"
       }
-    ],
-    "hidden_skills": [
-      {
-        "name": "Hunter's Prelude",
-        "icon": "Icon_skill_order_1138",
-        "type": "SpecialAssault",
-        "Ap": "4",
-        "CD": "2",
-        "describe": "Uses a Large Shield or Small Shield to throw a magnetic grenade at any tile within a <range type=1>4-tile diamond area</range>, dealing <color=#F74848>0.1x</color> AoE DMG to the Body of all enemy units within <color=#F74848>3</color> tiles of the location, and forcibly displacing them <color=#F74848>2</color> tiles toward the center. This attack is guaranteed to hit. After attacking, applies <buf ID=6010502>[Magnetic Lock]</buf> to all targets, and can then trigger <buf ID=900004>[Re-ATK]</buf>. Cannot move before attacking."
-      },
-      {
-        "name": "Guard",
-        "describe": "Protects allies within <color=#F74848>2</color> adjacent tiles from Assault and Ranged attacks. Triggers up to <color=#F74848>2</color> times per turn and lasts <color=#F74848>2</color> turns. Additionally, gains <buf ID=7100701>[Defensive Stance I]</buf>. Can only trigger <color=#F74848>1</color> time per turn.",
-        "SpecificEffects": "",
-        "type": "Order",
-        "Ap": "1",
-        "icon": "Icon_skill_order_1031",
-        "CD": "2"
-      }
     ]
   },
   "10103155": {
@@ -3643,16 +3379,6 @@
       {
         "partition": "10103155-gamma2",
         "slots": "Attack/Dodge/Dodge"
-      }
-    ],
-    "hidden_skills": [
-      {
-        "name": "Targeted Diagnosis",
-        "icon": "Icon_skill_main_1115",
-        "type": "EquipmentSkill",
-        "Ap": "2",
-        "CD": "0",
-        "describe": "Uses a Light Rifle to attack a target, dealing <color=#F74848>1.25x</color> DMG. If there are no allied units within <color=#F74848>2</color> tiles, enters <buf ID=900014>[Aiming]</buf> Mode before attacking."
       }
     ]
   },
@@ -3702,16 +3428,6 @@
       {
         "partition": "10103171-gamma2",
         "slots": "Attack/Dodge/Critical"
-      }
-    ],
-    "hidden_skills": [
-      {
-        "name": "Light Dragon - Phoenix Blade",
-        "icon": "Icon_skill_main_9601",
-        "type": "EquipmentSkill",
-        "Ap": "3",
-        "CD": "0",
-        "describe": "Uses an Alter-Blade to attack a target, dealing <color=#F74848>1.6x</color> DMG. This attack always hits the part with highest HP."
       }
     ]
   },
@@ -3808,16 +3524,6 @@
         "partition": "10103158-gamma2",
         "slots": "Attack/Dodge/Critical"
       }
-    ],
-    "hidden_skills": [
-      {
-        "name": "Critical Smash",
-        "icon": "Icon_skill_main_1156",
-        "type": "EquipmentSkill",
-        "Ap": "2",
-        "CD": "0",
-        "describe": "Uses a Chainsaw to attack a target, dealing <color=#F74848>1.25x</color> DMG. This attack is guaranteed to hit the part with the lowest HP."
-      }
     ]
   },
   "10103123": {
@@ -3910,16 +3616,6 @@
         "partition": "10103161-gamma2",
         "slots": "Attack/Dodge/Critical"
       }
-    ],
-    "hidden_skills": [
-      {
-        "name": "Sync-Guard",
-        "icon": "Icon_skill_order_5112",
-        "type": "Order",
-        "Ap": "1",
-        "CD": "2",
-        "describe": "Protects allies within <color=#F74848>2</color> adjacent tiles from Assault and Ranged attacks. Can trigger up to <color=#F74848>2</color> times per turn. Lasts for <color=#F74848>2</color> turns. Also applies <buf ID=6011014>[Provocation]</buf> to all enemy units within <color=#F74848>2</color> adjacent tiles, lasting for <color=#F74848>2</color> turns."
-      }
     ]
   },
   "10102114": {
@@ -3965,16 +3661,6 @@
       {
         "partition": "10102114-gamma2",
         "slots": "Attack/Attack/Critical"
-      }
-    ],
-    "hidden_skills": [
-      {
-        "name": "Bottom Fishing",
-        "icon": "Icon_skill_main_1107",
-        "type": "EquipmentSkill",
-        "Ap": "3",
-        "CD": "0",
-        "describe": "Uses a Light Rifle to attack a target, dealing <color=#F74848>1.6x</color> DMG. This attack prioritizes Legs."
       }
     ]
   },
@@ -4022,16 +3708,6 @@
         "partition": "10102107-gamma2",
         "slots": "Attack/Critical/Critical"
       }
-    ],
-    "hidden_skills": [
-      {
-        "name": "Guard",
-        "icon": "Icon_skill_order_1031",
-        "type": "Order",
-        "Ap": "1",
-        "CD": "2",
-        "describe": "Protects allies within <color=#F74848>2</color> adjacent tiles from Assault and Ranged attacks. Triggers up to <color=#F74848>2</color> times per turn and lasts <color=#F74848>2</color> turns. Additionally, gains <buf ID=7100701>[Defensive Stance I]</buf>. Can only trigger <color=#F74848>1</color> time per turn."
-      }
     ]
   },
   "10102105": {
@@ -4077,16 +3753,6 @@
       {
         "partition": "10102105-gamma2",
         "slots": "Attack/Dodge/Critical"
-      }
-    ],
-    "hidden_skills": [
-      {
-        "name": "Guard",
-        "icon": "Icon_skill_order_1031",
-        "type": "Order",
-        "Ap": "1",
-        "CD": "2",
-        "describe": "Protects allies within <color=#F74848>2</color> adjacent tiles from Assault and Ranged attacks. Triggers up to <color=#F74848>2</color> times per turn and lasts <color=#F74848>2</color> turns. Additionally, gains <buf ID=7100701>[Defensive Stance I]</buf>. Can only trigger <color=#F74848>1</color> time per turn."
       }
     ]
   },
@@ -4134,16 +3800,6 @@
         "partition": "10102110-gamma2",
         "slots": "Attack/Critical/Critical"
       }
-    ],
-    "hidden_skills": [
-      {
-        "name": "Accurate Fire",
-        "icon": "Icon_skill_main_1017",
-        "type": "EquipmentSkill",
-        "Ap": "3",
-        "CD": "0",
-        "describe": "Uses a Sniper Rifle to attack a target, dealing <color=#F74848>1.0x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking and gains Hit Rate <color=#F74848>+15%</color>."
-      }
     ]
   },
   "10102115": {
@@ -4189,16 +3845,6 @@
       {
         "partition": "10102115-gamma2",
         "slots": "Attack/Critical/Critical"
-      }
-    ],
-    "hidden_skills": [
-      {
-        "name": "Math Talent",
-        "icon": "Icon_skill_passive_4111",
-        "type": null,
-        "Ap": "",
-        "CD": "",
-        "SpecificEffects": "After attacking with a Tactical Weapon, gains <buf ID=4002012>[Battlefield Mastery]</buf>. Stacks up to <color=#F74848>4</color> times. Lasts for <color=#F74848>2</color> turns. All stacks of <buf ID=4002012>[Battlefield Mastery]</buf> are lost upon taking damage."
       }
     ]
   },
@@ -4246,16 +3892,6 @@
         "partition": "10102103-gamma2",
         "slots": "Attack/Dodge/Dodge"
       }
-    ],
-    "hidden_skills": [
-      {
-        "name": "Rampage Shot",
-        "icon": "Icon_skill_main_1015",
-        "type": "EquipmentSkill",
-        "Ap": "3",
-        "CD": "0",
-        "describe": "Uses a Heavy Machine Gun to attack a target, dealing <color=#F74848>1.3x</color> DMG."
-      }
     ]
   },
   "10102109": {
@@ -4301,16 +3937,6 @@
       {
         "partition": "10102109-gamma2",
         "slots": "Attack/Critical/Critical"
-      }
-    ],
-    "hidden_skills": [
-      {
-        "name": "Heavy Strike",
-        "icon": "Icon_skill_main_1020",
-        "type": "EquipmentSkill",
-        "Ap": "2",
-        "CD": "0",
-        "describe": "Uses a Pile Bunker or Knuckles to attack a target, dealing <color=#F74848>1.6x</color> DMG."
       }
     ]
   },
@@ -4404,16 +4030,6 @@
         "partition": "10102101-gamma2",
         "slots": "Attack/Dodge/Dodge"
       }
-    ],
-    "hidden_skills": [
-      {
-        "name": "Full Rudder",
-        "icon": "Icon_skill_passive_5126",
-        "type": null,
-        "Ap": "",
-        "CD": "",
-        "SpecificEffects": "When initiating combat, if a part is destroyed, <buf ID=900004>[Re-ATK]</buf> can trigger after combat. Can only trigger <color=#F74848>1</color> time per turn. Unable to move before attacking."
-      }
     ]
   },
   "10102112": {
@@ -4459,16 +4075,6 @@
       {
         "partition": "10102112-gamma2",
         "slots": "Attack/Dodge/Critical"
-      }
-    ],
-    "hidden_skills": [
-      {
-        "name": "Heavy Strike",
-        "icon": "Icon_skill_main_1020",
-        "type": "EquipmentSkill",
-        "Ap": "2",
-        "CD": "0",
-        "describe": "Uses a Pile Bunker or Knuckles to attack a target, dealing <color=#F74848>1.6x</color> DMG."
       }
     ]
   },
@@ -4516,16 +4122,6 @@
         "partition": "10102113-gamma2",
         "slots": "Attack/Dodge/Critical"
       }
-    ],
-    "hidden_skills": [
-      {
-        "name": "Powerful Strike",
-        "icon": "Icon_skill_order_1007",
-        "type": "Order",
-        "Ap": "2",
-        "CD": "0",
-        "describe": "Uses a Rail Gun to attack all targets in a 1x3-tile line, dealing <color=#F74848>1.0x</color> AoE DMG."
-      }
     ]
   },
   "10102106": {
@@ -4571,16 +4167,6 @@
       {
         "partition": "10102106-gamma2",
         "slots": "Attack/Critical/Critical"
-      }
-    ],
-    "hidden_skills": [
-      {
-        "name": "Rampage Shot",
-        "icon": "Icon_skill_main_1015",
-        "type": "EquipmentSkill",
-        "Ap": "3",
-        "CD": "0",
-        "describe": "Uses a Heavy Machine Gun to attack a target, dealing <color=#F74848>1.3x</color> DMG."
       }
     ]
   },
@@ -4628,16 +4214,6 @@
         "partition": "10102104-gamma2",
         "slots": "Attack/Attack/Critical"
       }
-    ],
-    "hidden_skills": [
-      {
-        "name": "Chop",
-        "icon": "Icon_skill_main_1013",
-        "type": "EquipmentSkill",
-        "Ap": "2",
-        "CD": "0",
-        "describe": "Uses a Polearm to attack a target, dealing <color=#F74848>1.6x</color> DMG."
-      }
     ]
   },
   "10103117": {
@@ -4683,16 +4259,6 @@
       {
         "partition": "10103117-gamma2",
         "slots": "Attack/Dodge/Critical"
-      }
-    ],
-    "hidden_skills": [
-      {
-        "name": "Turbo Shooting",
-        "icon": "Icon_skill_main_1014",
-        "type": "EquipmentSkill",
-        "Ap": "3",
-        "CD": "0",
-        "describe": "Uses a Shotgun to attack a target, dealing <color=#F74848>1.3x</color> DMG."
       }
     ]
   },
@@ -4740,16 +4306,6 @@
         "partition": "10102108-gamma2",
         "slots": "Attack/Critical/Critical"
       }
-    ],
-    "hidden_skills": [
-      {
-        "name": "Accurate Fire",
-        "icon": "Icon_skill_main_1017",
-        "type": "EquipmentSkill",
-        "Ap": "3",
-        "CD": "0",
-        "describe": "Uses a Sniper Rifle to attack a target, dealing <color=#F74848>1.0x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking and gains Hit Rate <color=#F74848>+15%</color>."
-      }
     ]
   },
   "10101102": {
@@ -4791,16 +4347,6 @@
       {
         "partition": "10101102-gamma",
         "slots": "Attack/Critical/Critical"
-      }
-    ],
-    "hidden_skills": [
-      {
-        "name": "Guard",
-        "icon": "Icon_skill_order_1031",
-        "type": "Order",
-        "Ap": "1",
-        "CD": "2",
-        "describe": "Protects allies within <color=#F74848>2</color> adjacent tiles from Assault and Ranged attacks. Triggers up to <color=#F74848>2</color> times per turn and lasts <color=#F74848>2</color> turns. Additionally, gains <buf ID=7100701>[Defensive Stance I]</buf>. Can only trigger <color=#F74848>1</color> time per turn."
       }
     ]
   },
@@ -4886,16 +4432,6 @@
         "partition": "10101106-gamma",
         "slots": "Attack/Dodge/Dodge"
       }
-    ],
-    "hidden_skills": [
-      {
-        "name": "Ballistic Bundle",
-        "icon": "Icon_skill_main_1016",
-        "type": "EquipmentSkill",
-        "Ap": "3",
-        "CD": "0",
-        "describe": "Uses a Machine Gun to attack a target, dealing <color=#F74848>1.3x</color> DMG."
-      }
     ]
   },
   "10101108": {
@@ -4937,16 +4473,6 @@
       {
         "partition": "10101106-gamma",
         "slots": "Attack/Dodge/Dodge"
-      }
-    ],
-    "hidden_skills": [
-      {
-        "name": "Rampage Shot",
-        "icon": "Icon_skill_main_1015",
-        "type": "EquipmentSkill",
-        "Ap": "3",
-        "CD": "0",
-        "describe": "Uses a Heavy Machine Gun to attack a target, dealing <color=#F74848>1.3x</color> DMG."
       }
     ]
   },
@@ -4990,16 +4516,6 @@
         "partition": "10101105-gamma",
         "slots": "Attack/Dodge/Dodge"
       }
-    ],
-    "hidden_skills": [
-      {
-        "name": "Polyenergy Shot",
-        "icon": "Icon_skill_main_1022",
-        "type": "EquipmentSkill",
-        "Ap": "2",
-        "CD": "0",
-        "describe": "Uses a Light Rifle to attack a target, dealing <color=#F74848>1.6x</color> DMG."
-      }
     ]
   },
   "10101107": {
@@ -5041,16 +4557,6 @@
       {
         "partition": "10101107-gamma",
         "slots": "Attack/Dodge/Dodge"
-      }
-    ],
-    "hidden_skills": [
-      {
-        "name": "Innervate",
-        "icon": "Icon_skill_order_5107",
-        "type": "Order",
-        "Ap": "0",
-        "CD": "3",
-        "describe": "Gains <color=#F74848>1</color> AP. Can continue action with remaining Movement."
       }
     ]
   },
@@ -5094,16 +4600,6 @@
         "partition": "10101106-gamma",
         "slots": "Attack/Dodge/Dodge"
       }
-    ],
-    "hidden_skills": [
-      {
-        "name": "Turbo Shooting",
-        "icon": "Icon_skill_main_1014",
-        "type": "EquipmentSkill",
-        "Ap": "3",
-        "CD": "0",
-        "describe": "Uses a Shotgun to attack a target, dealing <color=#F74848>1.3x</color> DMG."
-      }
     ]
   },
   "10101104": {
@@ -5145,16 +4641,6 @@
       {
         "partition": "10101104-gamma",
         "slots": "Attack/Dodge/Dodge"
-      }
-    ],
-    "hidden_skills": [
-      {
-        "name": "Heavy Strike",
-        "icon": "Icon_skill_main_1020",
-        "type": "EquipmentSkill",
-        "Ap": "2",
-        "CD": "0",
-        "describe": "Uses a Pile Bunker or Knuckles to attack a target, dealing <color=#F74848>1.6x</color> DMG."
       }
     ]
   },
@@ -5198,16 +4684,6 @@
         "partition": "10101104-gamma",
         "slots": "Attack/Dodge/Dodge"
       }
-    ],
-    "hidden_skills": [
-      {
-        "name": "Chop",
-        "icon": "Icon_skill_main_1013",
-        "type": "EquipmentSkill",
-        "Ap": "2",
-        "CD": "0",
-        "describe": "Uses a Polearm to attack a target, dealing <color=#F74848>1.6x</color> DMG."
-      }
     ]
   },
   "10101110": {
@@ -5249,16 +4725,6 @@
       {
         "partition": "10101105-gamma",
         "slots": "Attack/Dodge/Dodge"
-      }
-    ],
-    "hidden_skills": [
-      {
-        "name": "Accurate Fire",
-        "icon": "Icon_skill_main_1017",
-        "type": "EquipmentSkill",
-        "Ap": "3",
-        "CD": "0",
-        "describe": "Uses a Sniper Rifle to attack a target, dealing <color=#F74848>1.0x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking and gains Hit Rate <color=#F74848>+15%</color>."
       }
     ]
   },
@@ -5304,16 +4770,6 @@
       {
         "partition": "10103187-gamma2",
         "slots": "Attack/Dodge/Dodge"
-      }
-    ],
-    "hidden_skills": [
-      {
-        "name": "Lingering Bloodlust",
-        "icon": "Icon_skill_passive_5175",
-        "type": null,
-        "Ap": "",
-        "CD": "",
-        "SpecificEffects": "After triggering <buf ID=900004>[Re-ATK]</buf>, restores <color=#F74848>1</color> AP. Can only trigger <color=#F74848>1</color> time per turn."
       }
     ]
   }

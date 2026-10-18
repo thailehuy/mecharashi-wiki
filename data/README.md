@@ -72,7 +72,7 @@ official values. See "Using the mined game database" in the root
     { "partition": "10103118-gamma1", "slots": "…" },
     { "partition": "10103118-gamma2", "slots": "…" }
   ],
-  "hidden_skills": [ … ], "summon_skills": [ … ], "form_skill_groups": [ … ]
+  "summon_skills": [ … ], "form_skill_groups": [ … ]
 }
 ```
 
@@ -84,7 +84,7 @@ official values. See "Using the mined game database" in the root
   fills this in from the assets repo.
 - `neural[].slots`: chip slot colours, red = `Attack`, yellow = `Dodge`,
   blue = `Critical`.
-- `hidden_skills` / `summon_skills` / `form_skill_groups` (optional) are
+- `summon_skills` / `form_skill_groups` (optional) are
   copied to the page as is, in the page's own format (`name`, `icon`, `type`,
   `Ap`, `CD`, `describe`/`SpecificEffects`). See an existing pilot.
 
@@ -104,8 +104,14 @@ List order is display order. `type` `"6"` is the innate Profession Neuron;
 its `icon` is the occupation icon and `innate` its skill ID. `skill` points to
 `skills.json`. The board layout (`unit`/`type`) is the same for every pilot of
 a content revision, so copy the list from a similar pilot and change the
-`id`s, `skill`s and `bonus`es. Newer pilots have 8 Core Neuron skill slots,
-older ones 7; pick a reference pilot with the same count.
+`id`s, `skill`s and `bonus`es. Every SR/SSR pilot has the profession skill
+plus 8 neural skills. The game gives 7 of them from neuron units and the 8th,
+the starting skill, from the pilot itself (`PilotInfo.InitMainSkillIds` /
+`InitPassiveSkillIds`), so the wiki puts it on a neuron of its own,
+`<pilot ID>36` (`"unit": "3", "type": "0"`), last in the list: the Builder
+encodes a skill by its place in this list, so moving it breaks shared Build
+URLs. Hailis's starting skill shares its game ID (800101) with her profession
+skill, so the profession skill uses a wiki-only ID (174500; Lustre's is 173500).
 
 ### `neural_partitions.json`
 
@@ -244,12 +250,29 @@ repo's `data/backpacks/materials/`) or an `item_icon` (a game item icon in
 `data/items/`, extracted by `extract_item_icons.py`), and a crafted one has
 its own `crafting` list, shown under the item's recipe.
 
+## Intake forms
+
+After a CN game update, mine the CN client again (`data/screenshots/mined/cn/`)
+and run `python3 scripts/build_intake.py`. It writes a form for each pilot and
+ST the CN client has and the wiki doesn't (`data/intake/pilot-<ID>.md`,
+`data/intake/st-<body part ID>.md`) with everything the game data gives
+already filled in: IDs, icons, stats, AP/CD, chip slots, neural partitions,
+module levels. Each piece of new Chinese text has an empty `EN:` line under
+it, and its `[terms]` are listed with their IDs and, where the wiki has them,
+their English names. Text the wiki already has (shared skills, partitions,
+modules, glossary terms) is listed by name and needs nothing. Fill in the
+`EN:` lines and ask Claude to add the unit from the form; the checklist at
+the top of each form lists the mistakes to avoid. Pass IDs to write forms
+for specific units, `--version` to fill in the game version, `--full` to
+ask for every text even where the wiki has it, and `--force` to overwrite a
+form (they're kept otherwise, as they may be half translated).
+
 ## Adding a pilot
 
-Fill in `data/pilots/INTAKE_TEMPLATE.md` and ask Claude to add the pilot from
-it, or by hand:
+Fill in its intake form (above) and ask Claude to add the pilot from it, or
+by hand:
 
-1. Pick an unused 8-digit pilot ID.
+1. Use the game's pilot ID.
 2. Add the talents, skills and γ neural passives to `skills.json` (reuse
    existing IDs for shared ones, e.g. the class's innate skill).
 3. Add `<ID>-gamma1`/`<ID>-gamma2` to `neural_partitions.json`; reference the
@@ -261,10 +284,10 @@ it, or by hand:
 
 ## Adding an ST
 
-Fill in `data/mechs/INTAKE_TEMPLATE.md` and ask Claude to add the ST from it,
-or by hand:
+Fill in its intake form (above) and ask Claude to add the ST from it, or by
+hand:
 
-1. Pick an unused Body part ID.
+1. Use the game's Body part ID.
 2. Add 4 `mech_parts.json` rows (Body, L-Arm, R-Arm, Legs).
 3. Add any new module to `modules.json` (with every level's text if it's
    shown on the Modules page).

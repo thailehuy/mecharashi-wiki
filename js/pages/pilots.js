@@ -405,7 +405,7 @@ Pages.pilots = {
           '</div>' +
         '</div>' +
       '</div>' +
-      this._renderSkills(p.biomimetic_computer_data, p.hiddenSkills) +
+      this._renderSkills(p.biomimetic_computer_data) +
       this._renderSummonSkills(p) +
       this._renderFormSkillGroups(p) +
       this._renderNeuralDrive(p.NeuralDriveTemplate, p.stats, p.Occupation)
@@ -546,7 +546,7 @@ Pages.pilots = {
     );
   },
 
-  _renderSkills: function (bcd, hiddenSkills) {
+  _renderSkills: function (bcd) {
     var self = this;
     var TYPE_LABEL = { EquipmentSkill: 'Attack', Order: 'Code', SpecialAssault: 'Code + Attack' };
     var TYPE_CLASS = { EquipmentSkill: 'skill-type-attack', Order: 'skill-type-code', SpecialAssault: 'skill-type-special' };
@@ -599,21 +599,16 @@ Pages.pilots = {
       );
     }
 
-    function buildHiddenCard(sk) {
-      return buildCard({ skill: { SkillIcon: sk.icon, name: sk.name, type: sk.type, Ap: sk.Ap, CD: sk.CD, describe: sk.describe, SpecificEffects: sk.SpecificEffects } });
-    }
-
     var innateHtml  = innate.map(function (e)  { return buildCard(e, 'Passive · Innate', 'skill-type-innate'); }).join('');
     var regularHtml = regular.map(function (e) { return buildCard(e); }).join('');
-    var hiddenHtml  = (hiddenSkills || []).map(buildHiddenCard).join('');
 
-    if (!innateHtml && !regularHtml && !hiddenHtml) return '';
+    if (!innateHtml && !regularHtml) return '';
 
     return (
       '<div class="nd-section">' +
         '<div class="section-heading">Skills</div>' +
         (innateHtml  ? '<div class="skill-list skill-list-innate mb-3">' + innateHtml  + '</div>' : '') +
-        (regularHtml || hiddenHtml ? '<div class="skill-list">' + regularHtml + hiddenHtml + '</div>' : '') +
+        (regularHtml ? '<div class="skill-list">' + regularHtml + '</div>' : '') +
       '</div>'
     );
   },

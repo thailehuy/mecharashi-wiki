@@ -532,21 +532,6 @@ Pages.builder = {
       seen[sk.ID] = true;
       pool.push(sk);
     });
-    (pilot.hiddenSkills || []).forEach(function (hs) {
-      if (!hs.name) return;
-      var synthId = 'hidden:' + (pilot.PilotName || '') + ':' + hs.name;
-      if (seen[synthId]) return;
-      seen[synthId] = true;
-      pool.push({
-        ID: synthId,
-        name: hs.name,
-        icon: hs.icon,
-        SkillIcon: hs.icon,
-        Ap: hs.Ap,
-        CD: hs.CD,
-        SpecificEffects: hs.describe || hs.SpecificEffects || '',
-      });
-    });
     return pool;
   },
 
@@ -989,7 +974,7 @@ Pages.builder = {
     this._pilotId = this._idFromIdx('pilot', fields[0]);
     this._mechId  = this._idFromIdx('mech', fields[1]);
 
-    // Resolve the pilot so hidden/regular skill index tokens can be looked
+    // Resolve the pilot so skill index tokens can be looked
     // up against that pilot's own skill pool.
     var pilot     = this._getPilot();
     var skillPool = pilot ? this._pilotSkillPool(pilot) : [];

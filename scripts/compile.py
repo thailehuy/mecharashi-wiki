@@ -142,7 +142,7 @@ def build_pilots(t):
             if 'skill' in n:
                 node['skill'] = skill_out(skills, n['skill'])
             entry['biomimetic_computer_data'].append(node)
-        entry.update(rename(p, [('hidden_skills', 'hiddenSkills'), ('summon_skills', 'summonSkills'),
+        entry.update(rename(p, [('summon_skills', 'summonSkills'),
                                 ('form_skill_groups', 'formSkillGroups')]))
         pilots.append(entry)
 
