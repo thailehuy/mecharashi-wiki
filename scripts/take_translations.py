@@ -37,7 +37,10 @@ GLOSSARY = os.path.join(ROOT, 'data', 'glossary.json')
 STATS = os.path.join(ROOT, 'data', 'screenshots', 'MRT_FieldWiki', 'RebuildGameUpdate', 'out', 'stats.db')
 TABLES = ['pilots', 'pilot_neurons', 'neural_partitions', 'skills', 'mechs', 'modules', 'weapons', 'backpacks']
 CJK = re.compile(r'[一-鿿]')
-TAG = re.compile(r'<(buf|skill)\s+(\w+)=(\d+)>')
+TAG = re.compile(r'<(buf|skill|neural)\s+(\w+)=(\d+)>')
+# An innate neural core's skills.json key: the game gives Shifters' innate core the same ID as their starting skill
+# (Lustre's 800201 is both a passive and a main skill), so these rows are keyed "neural:<game ID>".
+NEURAL = 'neural:'
 PLACEHOLDER = {'TEST', '无'}
 # Release-order lists that name the units: a renamed pilot/ST is renamed there too.
 NAME_LISTS = {'pilots': os.path.join(ROOT, 'js', 'pages', 'pilots.js'), 'mechs': os.path.join(ROOT, 'js', 'pages', 'sts.js')}
@@ -108,6 +111,9 @@ class Taker:
         self.g, self.t, self.glossary = game, t, glossary
         self.changes, self.missing, self.notes = [], [], []
         self.renames = {'pilots': {}, 'mechs': {}}    # old name -> official name
+        # Game IDs of the innate neural cores (the Profession Neuron's skill), which the text tags as passives.
+        self.innate = {n['skill'].removeprefix(NEURAL) for nodes in t['pilot_neurons'].values()
+                       for n in nodes if n.get('type') == '6' and n.get('skill')}
 
     def rename(self, table, where, row, value):
         old = row.get('name')
@@ -127,7 +133,9 @@ class Taker:
         """A buff whose text only points at a pilot's talent ("[Melissa] Core Talent") links to the talent instead:
         <skill ID=<talent>>, which the pages resolve to the talent, or a plain [Name] when that ID is taken by another
         skill (Tiphys's 600850 is also his Defense Field code). The buff ID may be a different keyword in the
-        glossary (900140 is Melissa's talent in the game, 900059 the Sentinel Ward buff)."""
+        glossary (900140 is Melissa's talent in the game, 900059 the Sentinel Ward buff).
+        An innate neural core tagged as a passive (<skill passiveSkill=800201>) becomes <neural ID=800201>, since its
+        ID can also be a main skill's."""
         def link(m):
             id_, name = m[1], m[2]
             r = self.g.row('ConfigDataActorBufInfo', id_)
@@ -142,12 +150,18 @@ class Taker:
                     and all(b.get('skill', {}).get('id') != talent for b in self.t['backpacks'].values())):
                 return f'<skill ID={talent}>[{name}]</skill>'
             return f'[{name}]'
+        value = re.sub(r'<skill passiveSkill=(\d+)>(.*?)</skill>',
+                       lambda m: f'<neural ID={m[1]}>{m[2]}</neural>' if m[1] in self.innate else m[0], value)
         return re.sub(r'<buf ID=(\d+)>\[([^\]]*)\]</buf>', link, value)
 
     def skill(self, sid, game_id=None):
         row = self.t['skills'].get(sid)
         active = row is not None and 'describe' in row and 'effect' not in row
-        r = self.g.skill(game_id or sid, active) if (game_id or sid).isdigit() else None
+        game_id = game_id or (sid[len(NEURAL):] if sid.startswith(NEURAL) else None)
+        if sid.startswith(NEURAL):
+            r = self.g.row('ConfigDataPassiveSkillInfo', game_id) if game_id.isdigit() else None
+        else:
+            r = self.g.skill(game_id or sid, active) if (game_id or sid).isdigit() else None
         if row is None or r is None:
             return r is not None
         where = f'skills[{sid}]' + (f' (from game {game_id})' if game_id else '')
@@ -171,6 +185,10 @@ class Taker:
         """Every buf/skill the changed text tags: add it to the glossary when it's missing or still in Chinese."""
         for where, field, _, value in list(self.changes):
             for tag, attr, id_ in TAG.findall(value):
+                if tag == 'neural':
+                    if NEURAL + id_ not in self.t['skills']:
+                        self.notes.append(f'{where}: [neural {id_}] is tagged but skills.json has no {NEURAL}{id_} row')
+                    continue        # the pages resolve a neural core tag from skills.json
                 kind = 'buf' if tag == 'buf' else 'skill'
                 entry = self.glossary[kind].get(id_)
                 if entry and not CJK.search(entry.get('name', '') + entry.get('effect', '')):
@@ -259,7 +277,7 @@ def main():
         if p.get('summon_skills') or p.get('form_skill_groups'):
             k.notes.append(f'pilots[{pid}] {p["name"]}: summon_skills / form_skill_groups are kept by hand: check them')
     for sid, used in skill_versions.items():
-        if mine(used) and sid.isdigit():
+        if mine(used) and (sid.isdigit() or sid.startswith(NEURAL)):
             k.skill(sid)
 
     for bid, m in t['mechs'].items():

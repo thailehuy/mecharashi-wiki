@@ -46,6 +46,10 @@ TAG = re.compile(r'<(\w+)\s+(\w+)=(\d+)>\[(.*?)\]</\1>')
 # skill row (skills.json), a terrain (glossary `terrain`; the game spells the tag "terrian").
 TERM_KIND = {('buf', 'ID'): 'buf', ('skill', 'activeSkill'): 'skill', ('skill', 'passiveSkill'): 'passive',
              ('skill', 'mainSkill'): 'passive', ('skill', 'mainSkillID'): 'passive', ('terrian', 'ID'): 'terrain'}
+# Game IDs of the innate neural cores (a computer unit's AutoPassiveSkill), filled in by Game. A passive tag with one
+# of these is a "neural" term: Shifters' innate core shares its ID with their starting skill (Lustre's 800201 is
+# both), so the wiki keys a clashing core's skills.json row "neural:<ID>" and tags it <neural ID=...>.
+INNATE = set()
 COLOR = re.compile(r'</?color[^>]*>')
 BRACKET = re.compile(r'\[([^\]]+)\]')
 NUMBER = re.compile(r'\d+(?:\.\d+)?')
@@ -87,12 +91,16 @@ point came from a real mistake made while adding a pilot:
 3. Every [BracketedName] must become a real `<buf ID=...>`/`<skill ID=...>`
    tag, using the ID listed under the text. When a term says "wiki has it as
    buf N", tag it with N (the wiki's existing entry for the same name).
-   Don't tag generic text that isn't a named buf/skill.
+   Don't tag generic text that isn't a named buf/skill. A term listed as
+   "neural" (an innate neural core) is tagged `<neural ID=...>`, not
+   `<skill ...>`.
 4. Every term in "New glossary entries" must ALSO be added to
    data/glossary.json (`buf`/`skill`), keyed by its ID; the popup looks it
    up there. Only give it an `icon` if one is listed.
 5. Passive core-neuron skills use `effect` (not `describe`) and omit the
-   `type` key in data/db/skills.json. "Resource: PP" becomes
+   `type` key in data/db/skills.json. Skill 0 goes under the key its heading
+   shows: `neural:<ID>` when a main skill has the same ID (Shifters), which
+   is also the neuron's `skill`/`innate` in pilot_neurons.json. "Resource: PP" becomes
    `"resource": "PP"` on the skill row.
 6. Icons marked "not in the assets repo" will show broken; check the assets
    repo (data/unlisted/pilot_skills/) before using one.
@@ -143,7 +151,11 @@ def jl(s):
 
 def tags(rich):
     """(kind, ID, CN name) for each tagged [term] in a rich text."""
-    return [(TERM_KIND.get((tag, attr), tag), id_, name) for tag, attr, id_, name in TAG.findall(rich or '')]
+    out = []
+    for tag, attr, id_, name in TAG.findall(rich or ''):
+        kind = TERM_KIND.get((tag, attr), tag)
+        out.append(('neural' if attr == 'passiveSkill' and int(id_) in INNATE else kind, id_, name))
+    return out
 
 
 def plain(rich):
@@ -184,6 +196,8 @@ class Game:
         self.modules = load(os.path.join(DB, 'modules.json'))
         self.partitions = load(os.path.join(DB, 'neural_partitions.json'))
         self.glossary = load(GLOSSARY)
+        INNATE.update(i for (i,) in self.c.execute('select AutoPassiveSkill from ConfigDataPilotComputerUnitInfo '
+                                                   'where AutoPassiveSkill'))
         # CN name -> what the wiki calls it, for terms the CN text leaves untagged or tags with
         # a different ID than the wiki uses (the same buff often has several IDs).
         self.cn2en = {}
@@ -204,6 +218,8 @@ class Game:
                         self.cn2en.setdefault(name, (entry['name'], f'{kind} {id_}'))
         for key, entry in self.skills.items():
             row = key.isdigit() and entry.get('name') and self.skill_row(int(key))
+            if key.startswith('neural:') and entry.get('name'):
+                row = self.row('ConfigDataPassiveSkillInfo', int(key[len('neural:'):]))
             if row:
                 self.cn2en.setdefault(row['NameStrKey_EN'], (entry['name'], f'skill row {key}'))
         # Effect-list signature -> existing partition, to spot shared α/β/γ.
@@ -218,8 +234,14 @@ class Game:
     def skill_row(self, id_):
         return self.row('ConfigDataMainSkillInfo', id_) or self.row('ConfigDataPassiveSkillInfo', id_)
 
+    def neural_key(self, id_):
+        """An innate neural core's skills.json key: "neural:<ID>" when a main skill has the same ID."""
+        return f'neural:{id_}' if self.row('ConfigDataMainSkillInfo', int(id_)) else str(id_)
+
     def wiki_term(self, kind, id_):
         """The wiki's entry for a tagged term: glossary.json, or a skills.json row for pilot/module skills."""
+        if kind == 'neural':
+            return self.skills.get(self.neural_key(id_))
         if kind == 'passive':
             return self.skills.get(id_) or self.glossary['skill'].get(id_)
         return self.glossary.get(kind, {}).get(id_)
@@ -277,9 +299,9 @@ class Form:
             lines += ['- Terms: ' + notes[0], *[f'  {n}' for n in notes[1:]]]
         self.add(*[indent + line for line in lines])
 
-    def heading(self, heading, skill_id):
+    def heading(self, heading, skill_id, key=None):
         """Write a skill's heading; True when the wiki has the skill already and the form skips it."""
-        entry = self.g.skills.get(str(skill_id))
+        entry = self.g.skills.get(key or str(skill_id))
         if entry and not self.g.full:
             self.add('', f'{heading}, already in the wiki: "{entry.get("name")}"')
             return True
@@ -294,7 +316,8 @@ class Form:
         if not self.new_terms:
             return
         self.add('', '## New glossary entries',
-                 '<!-- → data/glossary.json `buf`/`skill`/`terrain` (a "passive" is a skill row: glossary `skill`),',
+                 '<!-- → data/glossary.json `buf`/`skill`/`terrain` (a "passive" is a skill row: glossary `skill`;',
+                 '     a "neural" is an innate neural core: a data/db/skills.json row, tagged <neural ID=...>),',
                  '     keyed by the ID; tag every reference with it -->')
         done = {}  # (kind, id) -> CN name
         while len(done) < len(self.new_terms):
@@ -315,6 +338,12 @@ class Form:
                     r = g.row('ConfigDataActiveSkillInfo', id_)
                     if r:
                         self.add(f'- AP: {r["ApCost"] or 0} · Icon: {icon_note(r["Icon"], "pilot_skills")}')
+                    desc = r and r['SkillDescStrKey_EN']
+                elif kind == 'neural':
+                    r = g.row('ConfigDataPassiveSkillInfo', id_)
+                    self.add(f'- skills.json key: {g.neural_key(id_)}')
+                    if r:
+                        self.add(f'- Icon: {icon_note(r["Icon"], "pilot_skills")}')
                     desc = r and r['SkillDescStrKey_EN']
                 elif kind == 'passive':
                     r = g.skill_row(id_)
@@ -351,13 +380,15 @@ def skill_type(g, main):
     return cats[0] if len(cats) == 1 else '/'.join(cats) + '  <!-- mixed: pick one -->'
 
 
-def skill_block(f, title, skill_id):
+def skill_block(f, title, skill_id, innate=False):
     g = f.g
-    r = g.skill_row(skill_id)
+    # An innate neural core is always the passive, even when a main skill shares its ID.
+    r = g.row('ConfigDataPassiveSkillInfo', skill_id) if innate else g.skill_row(skill_id)
     if r is None:
         f.add('', f'### {title}: {skill_id}', '- Not in the CN tables')
         return
-    if f.heading(f'### {title}: {skill_id}', skill_id):
+    key = g.neural_key(skill_id) if innate else str(skill_id)
+    if f.heading(f'### {title}: {key}', skill_id, key):
         return
     is_main = 'WeaponActiveSkillList' in r.keys()
     if is_main:
@@ -450,7 +481,7 @@ def pilot_form(g, pid, version):
     units = sorted((u for u in units if u), key=lambda u: u['UnitSequence'] or 0)
     for u in units:
         if u['AutoPassiveSkill']:
-            skill_block(f, 'Skill 0 (Profession, innate)', u['AutoPassiveSkill'])
+            skill_block(f, 'Skill 0 (Profession, innate)', u['AutoPassiveSkill'], innate=True)
     # The starting skill is the board's 8th neural skill, but the game gives it from PilotInfo rather than
     # from a neuron unit; the wiki puts it in a neuron of its own, <pilot ID>36.
     for sid in jl(p['InitMainSkillIds']) + jl(p['InitPassiveSkillIds']):

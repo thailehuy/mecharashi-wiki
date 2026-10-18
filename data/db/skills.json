@@ -1560,7 +1560,7 @@
     "kind": "skill",
     "name": "Reversal Cage",
     "effect": "After being actively attacked, reflects up to <color=#F74848>5</color> dispellable debuffs on self to the attacker. This effect can trigger <color=#F74848>1</color> time per turn.",
-    "icon": "Icon_skill_passive_1069",
+    "icon": "Icon_skill_passive_5177",
     "buffs": "6012041"
   },
   "601205": {
@@ -3739,7 +3739,7 @@
     "kind": "skill",
     "name": "Weakness Hunt",
     "effect": "When attacking target carrying <buf ID=1021503>[Suppression]</buf>, if there is a part with less than <color=#F74848>50%</color> max HP, ignores all target's DMG Reduction effects.",
-    "icon": "Icon_skill_passive_5317",
+    "icon": "Icon_skill_passive_5302",
     "buffs": "1021051"
   },
   "102107": {
@@ -4115,7 +4115,7 @@
     "icon": "Icon_skill_passive_5317",
     "buffs": "8002461"
   },
-  "173500": {
+  "neural:800201": {
     "kind": "skill",
     "name": "Configuration Shift 1",
     "effect": "Can use command skill <buf ID=900181>[Configuration Shift]</buf> after taking an action.",
@@ -10062,21 +10062,21 @@
     "kind": "skill",
     "name": "Calamity Covenant",
     "effect": "For each <color=#F74848>15%</color> HP lost before the attack, DMG Dealt increases by <color=#F74848>10%</color>, up to <color=#F74848>40%</color>.",
-    "icon": "Icon_skill_passive_5320",
+    "icon": "Icon_skill_passive_1137",
     "buffs": "2023072"
   },
   "202303": {
     "kind": "skill",
     "name": "Shadow Raven Stride",
     "effect": "When a [Basic Attack] lands a Critical Hit, gains Movement <color=#F74848>+1</color> for <color=#F74848>2</color> turns, stacking up to <color=#F74848>2</color> times.",
-    "icon": "Icon_skill_passive_5329",
+    "icon": "Icon_skill_passive_5128",
     "buffs": "2023031"
   },
   "202302": {
     "kind": "skill",
     "name": "Piercing Mastery",
     "effect": "After performing a [Basic Attack], Critical Hit DMG <color=#F74848>+5%</color>, stacking up to <color=#F74848>5</color> times. Stacks last until the end of action.",
-    "icon": "Icon_skill_passive_5015",
+    "icon": "Icon_skill_passive_4124",
     "buffs": "2023021"
   },
   "202306": {
@@ -10115,7 +10115,7 @@
     "icon": "Icon_skill_passive_5329",
     "buffs": "2023461/2023463"
   },
-  "174500": {
+  "neural:800101": {
     "kind": "skill",
     "name": "Form Shift 1",
     "effect": "At the end of action, if other allies can still act, enters <buf ID=900154>[Pending Activation]</buf> state. If an ally actively attacks with weapon corresponding to a form, triggers <buf ID=900155>[Activation]</buf> to enter the corresponding <buf ID=900156>[Form Shift]</buf>. This effect can trigger <color=#F74848>1</color> time per turn.",
@@ -10270,7 +10270,7 @@
     "kind": "skill",
     "name": "Tainted Blade / Shadow Ray",
     "describe": "Chooses to use either <skill ID=8002011>[Tainted Blade]</skill> or <skill ID=8002012>[Shadow Ray]</skill>.",
-    "icon": "Icon_skill_main_1179",
+    "icon": "Icon_skill_main_1162",
     "ap": "3",
     "type": "EquipmentSkill"
   },

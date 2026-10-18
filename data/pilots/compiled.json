@@ -4969,8 +4969,8 @@
             "ID": "601204",
             "name": "Reversal Cage",
             "SpecificEffects": "After being actively attacked, reflects up to <color=#F74848>5</color> dispellable debuffs on self to the attacker. This effect can trigger <color=#F74848>1</color> time per turn.",
-            "SkillIcon": "Icon_skill_passive_1069",
-            "icon": "Icon_skill_passive_1069"
+            "SkillIcon": "Icon_skill_passive_5177",
+            "icon": "Icon_skill_passive_5177"
           }
         },
         {
@@ -13628,9 +13628,9 @@
           "ID": "1010317400",
           "UnitType": "6",
           "icon": "Icon_pilotclass_010_l",
-          "skill3": "174500",
+          "skill3": "neural:800101",
           "skill": {
-            "ID": "174500",
+            "ID": "neural:800101",
             "name": "Form Shift 1",
             "SpecificEffects": "At the end of action, if other allies can still act, enters <buf ID=900154>[Pending Activation]</buf> state. If an ally actively attacks with weapon corresponding to a form, triggers <buf ID=900155>[Activation]</buf> to enter the corresponding <buf ID=900156>[Form Shift]</buf>. This effect can trigger <color=#F74848>1</color> time per turn.",
             "SkillIcon": "Icon_skill_passive_5205",
@@ -16240,8 +16240,8 @@
             "ID": "102105",
             "name": "Weakness Hunt",
             "SpecificEffects": "When attacking target carrying <buf ID=1021503>[Suppression]</buf>, if there is a part with less than <color=#F74848>50%</color> max HP, ignores all target's DMG Reduction effects.",
-            "SkillIcon": "Icon_skill_passive_5317",
-            "icon": "Icon_skill_passive_5317"
+            "SkillIcon": "Icon_skill_passive_5302",
+            "icon": "Icon_skill_passive_5302"
           }
         },
         {
@@ -18194,9 +18194,9 @@
           "ID": "1010317300",
           "UnitType": "6",
           "icon": "Icon_pilotclass_010_l",
-          "skill3": "173500",
+          "skill3": "neural:800201",
           "skill": {
-            "ID": "173500",
+            "ID": "neural:800201",
             "name": "Configuration Shift 1",
             "SpecificEffects": "Can use command skill <buf ID=900181>[Configuration Shift]</buf> after taking an action.",
             "SkillIcon": "Icon_skill_passive_5205",
@@ -18434,8 +18434,8 @@
             "ID": "800201",
             "name": "Tainted Blade / Shadow Ray",
             "describe": "Chooses to use either <skill ID=8002011>[Tainted Blade]</skill> or <skill ID=8002012>[Shadow Ray]</skill>.",
-            "SkillIcon": "Icon_skill_main_1179",
-            "icon": "Icon_skill_main_1179",
+            "SkillIcon": "Icon_skill_main_1162",
+            "icon": "Icon_skill_main_1162",
             "Ap": "3",
             "type": "EquipmentSkill"
           }
@@ -21357,8 +21357,8 @@
             "ID": "202302",
             "name": "Piercing Mastery",
             "SpecificEffects": "After performing a [Basic Attack], Critical Hit DMG <color=#F74848>+5%</color>, stacking up to <color=#F74848>5</color> times. Stacks last until the end of action.",
-            "SkillIcon": "Icon_skill_passive_5015",
-            "icon": "Icon_skill_passive_5015"
+            "SkillIcon": "Icon_skill_passive_4124",
+            "icon": "Icon_skill_passive_4124"
           }
         },
         {
@@ -21368,8 +21368,8 @@
             "ID": "202303",
             "name": "Shadow Raven Stride",
             "SpecificEffects": "When a [Basic Attack] lands a Critical Hit, gains Movement <color=#F74848>+1</color> for <color=#F74848>2</color> turns, stacking up to <color=#F74848>2</color> times.",
-            "SkillIcon": "Icon_skill_passive_5329",
-            "icon": "Icon_skill_passive_5329"
+            "SkillIcon": "Icon_skill_passive_5128",
+            "icon": "Icon_skill_passive_5128"
           }
         },
         {
@@ -21419,8 +21419,8 @@
             "ID": "202307",
             "name": "Calamity Covenant",
             "SpecificEffects": "For each <color=#F74848>15%</color> HP lost before the attack, DMG Dealt increases by <color=#F74848>10%</color>, up to <color=#F74848>40%</color>.",
-            "SkillIcon": "Icon_skill_passive_5320",
-            "icon": "Icon_skill_passive_5320"
+            "SkillIcon": "Icon_skill_passive_1137",
+            "icon": "Icon_skill_passive_1137"
           }
         },
         {

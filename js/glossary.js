@@ -1,6 +1,10 @@
 var Glossary = (function () {
-  var data = { buf: {}, skill: {}, terrain: {} };
-  var nameIndex = { buf: {}, skill: {}, terrain: {} };
+  // `neural` holds the innate neural cores (the Profession Neuron's passive),
+  // tagged <neural ID=..>: the game gives Shifters' innate core the same ID
+  // as their starting skill (Lustre's 800201 is both Configuration Shift 1
+  // and Tainted Blade / Shadow Ray), so they can't share the `skill` table.
+  var data = { buf: {}, skill: {}, neural: {}, terrain: {} };
+  var nameIndex = { buf: {}, skill: {}, neural: {}, terrain: {} };
   var ICON_BASE = 'https://media.zlongame.com/media/pictures/cn/community/img/gl/gameInfo/skill/';
   // Icons are checked locally first (data/unlisted/pilot_skills/), since
   // that's where manually-added pilots' icons live; falls back to the CDN
@@ -39,8 +43,8 @@ var Glossary = (function () {
   // <buf ID=..> wrapper (the glossary source data itself is often written this
   // way). Build a name -> id lookup so those can still be resolved and linked.
   function rebuildNameIndex() {
-    nameIndex = { buf: {}, skill: {}, terrain: {} };
-    ['buf', 'skill', 'terrain'].forEach(function (type) {
+    nameIndex = { buf: {}, skill: {}, neural: {}, terrain: {} };
+    ['buf', 'skill', 'neural', 'terrain'].forEach(function (type) {
       var entries = data[type] || {};
       Object.keys(entries).forEach(function (id) {
         var name = entries[id] && entries[id].name;
@@ -124,6 +128,14 @@ var Glossary = (function () {
       return key;
     });
 
+    text = text.replace(/<neural ID=(\d+)[^>]*>\[?([^\]<]*)\]?<\/neural>/g, function (_, id, name) {
+      var key = '\x00KW' + (idx++) + '\x00';
+      var entry = lookup('neural', id);
+      var cls = entry ? 'kw kw-skill' + kindClass(entry) : 'kw kw-skill kw-unknown';
+      kwMap[key] = '<span class="' + cls + '" data-kw-type="neural" data-kw-id="' + id + '">[' + name + ']</span>';
+      return key;
+    });
+
     // <jump to=SLUG>Text</jump> scrolls to a same-page section (e.g. a
     // "Form Skills" section further down a pilot's page) without touching
     // location.hash, since this is a hash-routed single-page app and
@@ -141,8 +153,9 @@ var Glossary = (function () {
       var key = '\x00KW' + (idx++) + '\x00';
       var bufId = nameIndex.buf[name];
       var skillId = !bufId && nameIndex.skill[name];
-      var terrainId = !bufId && !skillId && nameIndex.terrain[name];
-      if (!bufId && !skillId && !terrainId) {
+      var neuralId = !bufId && !skillId && nameIndex.neural[name];
+      var terrainId = !bufId && !skillId && !neuralId && nameIndex.terrain[name];
+      if (!bufId && !skillId && !neuralId && !terrainId) {
         // A pilot, ST or module name (e.g. Stargazer Unit's "When piloted by
         // [Lustre]") links to that item's page.
         var href = pageHref(name);
@@ -151,9 +164,9 @@ var Glossary = (function () {
           : '[' + name + ']';
         return key;
       }
-      var type = bufId ? 'buf' : skillId ? 'skill' : 'terrain';
-      var id = bufId || skillId || terrainId;
-      kwMap[key] = '<span class="kw kw-' + type + kindClass(lookup(type, id)) + '" data-kw-type="' + type + '" data-kw-id="' + id + '">[' + name + ']</span>';
+      var type = bufId ? 'buf' : skillId ? 'skill' : neuralId ? 'neural' : 'terrain';
+      var id = bufId || skillId || neuralId || terrainId;
+      kwMap[key] = '<span class="kw kw-' + (type === 'neural' ? 'skill' : type) + kindClass(lookup(type, id)) + '" data-kw-type="' + type + '" data-kw-id="' + id + '">[' + name + ']</span>';
       return key;
     });
 
@@ -203,12 +216,18 @@ var Glossary = (function () {
       if (!/noDisplay/.test(attrs)) add('skill', id);
       return '';
     });
+    stripped = stripped.replace(/<neural ID=(\d+)([^>]*)>\[?([^\]<]*)\]?<\/neural>/g, function (full, id, attrs) {
+      if (!/noDisplay/.test(attrs)) add('neural', id);
+      return '';
+    });
     stripped.replace(/\[([^\[\]<>]+)\]/g, function (_, name) {
       var bufId = nameIndex.buf[name];
       var skillId = !bufId && nameIndex.skill[name];
-      var terrainId = !bufId && !skillId && nameIndex.terrain[name];
+      var neuralId = !bufId && !skillId && nameIndex.neural[name];
+      var terrainId = !bufId && !skillId && !neuralId && nameIndex.terrain[name];
       if (bufId) add('buf', bufId);
       else if (skillId) add('skill', skillId);
+      else if (neuralId) add('neural', neuralId);
       else if (terrainId) add('terrain', terrainId);
       return _;
     });
@@ -228,14 +247,25 @@ var Glossary = (function () {
 
   function init() {
     if (window.GlossaryData) data = window.GlossaryData;
+    data.neural = data.neural || {};
 
     // Seed skill lookup from pilot data for skills not in the glossary
     var pilots = (window.PilotsData || {}).pilots || [];
     pilots.forEach(function (p) {
-      // Active skills from biomimetic computer data
+      // Active skills from biomimetic computer data; the innate neural core
+      // (Profession Neuron, UnitType 6) goes in `neural`, keyed by its game
+      // ID (skills.json keys it "neural:<ID>").
       (p.biomimetic_computer_data || []).forEach(function (entry) {
         var sk = entry.skill;
         if (!sk || !sk.ID || !sk.name) return;
+        if (entry.UnitType === '6') {
+          var nId = String(sk.ID).replace(/^neural:/, '');
+          if (!data.neural[nId]) {
+            data.neural[nId] = { name: sk.name, effect: sk.SpecificEffects || sk.describe || '' };
+            if (sk.SkillIcon || sk.icon) data.neural[nId].icon = sk.SkillIcon || sk.icon;
+          }
+          return;
+        }
         if (data.skill[sk.ID]) return;
         var entry = { name: sk.name, effect: sk.describe || sk.SpecificEffects || '' };
         if (sk.Ap != null && sk.Ap !== '') entry.Ap = sk.Ap;
@@ -447,7 +477,7 @@ var Glossary = (function () {
   }
 
   // Accept glossary data loaded separately as window.GlossaryData
-  function setData(d) { data = d; rebuildNameIndex(); }
+  function setData(d) { data = d; data.neural = data.neural || {}; rebuildNameIndex(); }
 
   return { lookup: lookup, parseEffects: parseEffects, init: init, setData: setData };
 }());

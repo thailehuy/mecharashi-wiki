@@ -31,6 +31,8 @@ official values. See "Using the mined game database" in the root
 - Text keeps the game markup: numbers as `<color=#F74848>15%</color>`, linked
   terms as `<buf ID=900004>[Re-ATK]</buf>` / `<skill ID=…>[…]</skill>`. Every
   `[Bracketed]` term needs its ID in `data/glossary.json` (`buf`/`skill`).
+  An innate neural core (the Profession Neuron's skill) is tagged
+  `<neural ID=…>[…]</neural>` and resolved from `skills.json`.
 - Stats are kept as strings, as in the original data.
 - Leave out a field rather than writing an empty value.
 - Formatting: 2-space indent, `ensure_ascii=False`, trailing newline. Row
@@ -146,6 +148,12 @@ pilot only needs its own γ partitions, `<pilotID>-gamma1` and
   the skill card than `icon`.
 - A skill ID shared by several pilots (e.g. the class-wide CEC skills) has
   one row, so its text is the same everywhere.
+- An innate neural core whose game ID is also a main skill's is keyed
+  `neural:<ID>`: Shifters' innate core shares its ID with their starting
+  skill (Lustre's `neural:800201` Configuration Shift 1 and `800201` Tainted
+  Blade / Shadow Ray; Hailis's `neural:800101` and `800101`). The neuron's
+  `skill`/`innate` use the same key, and text links it with
+  `<neural ID=800201>`.
 
 ### `mechs.json` and `mech_parts.json`
 
