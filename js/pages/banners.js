@@ -70,23 +70,29 @@ Pages.banners = {
         return '<button class="filter-btn filter-occ" data-filter-kind="' + k + '">' + BANNER_KIND_LABEL[k] + '</button>';
       }).join('') +
     '</div></div>';
+    // Versions before 2.0 go in their own tab, whose art loads only once it's opened.
+    groups.forEach(function (g) {
+      g.pane = g.key !== 'standard' && bannerVersionKey(g.key) < bannerVersionKey('2.0') ? 'pre2' : 'current';
+    });
     var versionNav = '<div class="filter-group"><span class="filter-label">Version</span><div class="filter-values">' +
       groups.filter(function (g) { return g.key !== 'standard'; }).map(function (g) {
-        return '<button class="filter-btn filter-ver" data-filter-version="' + g.key + '">v' + g.key + '</button>';
+        return '<button class="filter-btn filter-ver" data-filter-version="' + g.key + '" data-pane="' + g.pane + '"' + (g.pane === 'current' ? '' : ' hidden') + '>v' + g.key + '</button>';
       }).join('') +
     '</div></div>';
 
-    var sectionsHtml = groups.map(function (g) {
-      var title = g.key === 'standard' ? 'Standard Banners' : 'Version ' + g.key + (g.upcoming ? ' <span class="banner-upcoming-tag">Upcoming</span>' : '');
-      return (
-        '<div class="ac-section banner-section" data-version="' + g.key + '">' +
-          '<h2 class="ac-section-title">' + title + '</h2>' +
-          '<div class="row g-3">' +
-            g.boxes.map(function (box) { return self._boxHtml(box, debut); }).join('') +
-          '</div>' +
-        '</div>'
-      );
-    }).join('');
+    var sectionsHtml = function (pane) {
+      return groups.filter(function (g) { return g.pane === pane; }).map(function (g) {
+        var title = g.key === 'standard' ? 'Standard Banners' : 'Version ' + g.key + (g.upcoming ? ' <span class="banner-upcoming-tag">Upcoming</span>' : '');
+        return (
+          '<div class="ac-section banner-section" data-version="' + g.key + '" data-pane="' + pane + '">' +
+            '<h2 class="ac-section-title">' + title + '</h2>' +
+            '<div class="row g-3">' +
+              g.boxes.map(function (box) { return self._boxHtml(box, debut, pane !== 'current'); }).join('') +
+            '</div>' +
+          '</div>'
+        );
+      }).join('');
+    };
 
     setTimeout(function () {
       $('#banner-page').on('click', '[data-filter-kind]', function () {
@@ -99,8 +105,16 @@ Pages.banners = {
         if ($(e.target).closest('a').length) return;
         self._showImage($(this).find('img').attr('src'), $(this).data('name'));
       });
+      $('#banner-page').on('click', '[data-detail-tab]', function () {
+        var pane = this.getAttribute('data-detail-tab');
+        $('#banner-page [data-filter-version]').each(function () { this.hidden = this.getAttribute('data-pane') !== pane; });
+        $('#banner-page [data-detail-pane="' + pane + '"] img[data-src]').each(function () {
+          this.src = this.getAttribute('data-src');
+          this.removeAttribute('data-src');
+        });
+      });
       $('#banner-page').on('click', '[data-filter-version]', function () {
-        var v = String($(this).data('filter-version'));
+        var v = $(this).attr('data-filter-version');
         self._activeVersions[v] = !self._activeVersions[v];
         $(this).toggleClass('active', !!self._activeVersions[v]);
         self._applyFilter();
@@ -112,7 +126,10 @@ Pages.banners = {
         '<div class="listing-header"><h1>Banner List</h1></div>' +
         '<p class="dispatch-intro">' + $('<span>').text(data.note || '').html() + '</p>' +
         '<div class="filter-bar">' + kindNav + versionNav + '</div>' +
-        sectionsHtml +
+        Lore.tabsHtml([
+          ['current', 'Current', sectionsHtml('current')],
+          ['pre2', 'Pre-2.0', sectionsHtml('pre2')],
+        ]) +
       '</div>'
     );
   },
@@ -159,18 +176,19 @@ Pages.banners = {
     return boxes;
   },
 
-  _boxHtml: function (box, debut) {
+  // defer: leave the art's src in data-src until its tab is opened.
+  _boxHtml: function (box, debut, defer) {
     var self = this;
     return (
       '<div class="col-12 col-md-6 col-xl-4 banner-box-wrap">' +
         '<div class="banner-box">' +
-          box.map(function (b) { return self._cardHtml(b, debut); }).join('') +
+          box.map(function (b) { return self._cardHtml(b, debut, defer); }).join('') +
         '</div>' +
       '</div>'
     );
   },
 
-  _cardHtml: function (b, debut) {
+  _cardHtml: function (b, debut, defer) {
     var self = this;
     var esc = function (s) { return $('<span>').text(s).html(); };
     var featured = b.featured || [];
@@ -196,7 +214,7 @@ Pages.banners = {
       '<div class="banner-card-wrap" data-kind="' + b.kind + '">' +
         '<div class="banner-card">' +
           '<div class="banner-card-img' + (overlayHtml || !b.image ? '' : ' banner-card-img-zoom') + '" data-name="' + esc(b.name) + '">' +
-            (b.image ? '<img src="' + bannerImageSrc(b) + '" alt="' + esc(b.name) + '" loading="lazy" />' : self._placeholderArtHtml(b)) +
+            (b.image ? '<img ' + (defer ? 'data-src' : 'src') + '="' + bannerImageSrc(b) + '" alt="' + esc(b.name) + '" loading="lazy" />' : self._placeholderArtHtml(b)) +
             overlayHtml +
             '<span class="banner-kind-badge banner-kind-' + b.kind + '">' + BANNER_KIND_LABEL[b.kind] + '</span>' +
             '<span class="banner-type-badge banner-type-' + tag.toLowerCase() + '">' + esc(tag) + '</span>' +
@@ -269,7 +287,12 @@ Pages.banners = {
     var anyVersion = Object.keys(versions).some(function (v) { return versions[v]; });
     $('#banner-page .banner-section').each(function () {
       var $s = $(this);
-      var showSection = !anyVersion || !!versions[String($s.data('version'))];
+      // A version filter only narrows the tab its versions belong to.
+      var pane = $s.attr('data-pane');
+      var anyPaneVersion = anyVersion && $('#banner-page [data-filter-version][data-pane="' + pane + '"]').toArray().some(function (el) {
+        return !!versions[el.getAttribute('data-filter-version')];
+      });
+      var showSection = !anyPaneVersion || !!versions[$s.attr('data-version')];
       var visible = 0;
       $s.find('.banner-box-wrap').each(function () {
         var shown = 0;
