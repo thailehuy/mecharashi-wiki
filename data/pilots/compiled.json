@@ -358,7 +358,7 @@
           "skill": {
             "ID": "101706",
             "name": "Skybreaker Slash",
-            "describe": "Uses two Alter-Blades to attack all targets within an <range type=2>I-shaped (3x1-tile)</range> area or <range type=2>L-shaped (3x1-tile)</range> area ahead. Before attacking, can Aim at all targets separately, dealing <color=#F74848>1.5x</color> AoE DMG.",
+            "describe": "Uses two Alter-Blades to attack all targets within an <range type=2>I-shaped (3x1-tile)</range> area or <range type=2>L-shaped (3x1-tile)</range> area ahead. Before attacking, can <buf ID=900014>[Aim]</buf> at all targets separately, dealing <color=#F74848>1.5x</color> AoE DMG.",
             "SkillIcon": "Icon_skill_order_1137",
             "icon": "Icon_skill_order_1137",
             "Ap": "4",
@@ -675,7 +675,7 @@
                 "PassiveSkill": {
                   "ID": "200036",
                   "name": "Perfect Position 4",
-                  "SpecificEffects": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, the [Perfect Position 1] effect is increased to <color=#F74848>30%</color>.",
+                  "SpecificEffects": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, the <buf ID=2000311>[Perfect Position 1]</buf> effect is increased to <color=#F74848>30%</color>.",
                   "SkillIcon": "Icon_skill_passive_5007",
                   "icon": "Icon_skill_passive_5007"
                 }
@@ -1192,7 +1192,7 @@
                 "PassiveSkill": {
                   "ID": "200036",
                   "name": "Perfect Position 4",
-                  "SpecificEffects": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, the [Perfect Position 1] effect is increased to <color=#F74848>30%</color>.",
+                  "SpecificEffects": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, the <buf ID=2000311>[Perfect Position 1]</buf> effect is increased to <color=#F74848>30%</color>.",
                   "SkillIcon": "Icon_skill_passive_5007",
                   "icon": "Icon_skill_passive_5007"
                 }
@@ -1367,7 +1367,7 @@
           "skill": {
             "ID": "202204",
             "name": "Converging Flame",
-            "describe": "Uses a Flamethrower to attack a target, dealing <color=#F74848>1.2</color>x DMG and <color=#F74848>20%</color> <buf ID=900139>[Flame DMG]</buf> to other targets along the path. When in <buf ID=2022502>[Bunker]</buf> state, applies <color=#F74848>2</color> stacks of <buf ID=2022042>[Flame Fusion]</buf> to self.",
+            "describe": "Uses a Flamethrower to attack a target, dealing <color=#F74848>1.2</color>x DMG and <color=#F74848>20%</color> <buf ID=900065>[Flame DMG]</buf> to other targets along the path. When in <buf ID=2022502>[Bunker]</buf> state, applies <color=#F74848>2</color> stacks of <buf ID=2022042>[Flame Fusion]</buf> to self.",
             "SkillIcon": "Icon_skill_main_1024",
             "icon": "Icon_skill_main_1024",
             "Ap": "3",
@@ -2219,7 +2219,7 @@
                 "PassiveSkill": {
                   "ID": "200036",
                   "name": "Perfect Position 4",
-                  "SpecificEffects": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, the [Perfect Position 1] effect is increased to <color=#F74848>30%</color>.",
+                  "SpecificEffects": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, the <buf ID=2000311>[Perfect Position 1]</buf> effect is increased to <color=#F74848>30%</color>.",
                   "SkillIcon": "Icon_skill_passive_5007",
                   "icon": "Icon_skill_passive_5007"
                 }
@@ -3758,7 +3758,7 @@
                 "PassiveSkill": {
                   "ID": "301235",
                   "name": "Hunter's Mark 3",
-                  "SpecificEffects": "[Hunter's Mark 1] can now trigger an unlimited number of times per turn.",
+                  "SpecificEffects": "<buf ID=900142>[Hunter's Mark 1]</buf> can now trigger an unlimited number of times per turn.",
                   "SkillIcon": "Icon_skill_passive_5022",
                   "icon": "Icon_skill_passive_5022"
                 }
@@ -4133,14 +4133,14 @@
       "Talent0_2Ability": {
         "ID": "301450",
         "name": "Morning Star",
-        "SpecificEffects": "At the start of battle, automatically deploys <terrian ID=3014501 />. Can use command skills <skill mainSkill=301452>[Deploy Sentry]</skill> and <skill mainSkill=301453>[Sworn Enemy]</skill>. When an ally attack an enemy within range, performs <buf ID=900002>[Link Attack]</buf> with Sniper Rifle, dealing <color=#F74848>0.35x</color> DMG, prioritizing hitting the same part with the ally's attack, up to <color=#F74848>3</color> times per turn. If the <buf ID=900002>[Link Attack]</buf> destroys a part, it is considered as if the ally destroys a part. When performing attacks other than <buf ID=900153>[Weapon Skill]</buf>, gains <color=#F74848>1</color> stack of <buf ID=3014508>[Determination]</buf>, up to <color=#F74848>5</color> stacks.",
+        "SpecificEffects": "At the start of battle, automatically deploys <terrian ID=3014501 />. Can use command skills <skill mainSkill=301452>[Deploy Sentry]</skill> and <skill mainSkill=301453>[Sworn Enemy]</skill>. When an ally attack an enemy within range, performs <buf ID=900002>[Link Attack]</buf> with Sniper Rifle, dealing <color=#F74848>0.35x</color> DMG, prioritizing hitting the same part with the ally's attack, up to <color=#F74848>3</color> times per turn. If the <buf ID=900002>[Link Attack]</buf> destroys a part, it is considered as if the ally destroys a part. When performing attacks other than <buf ID=900153>[Weapon Skill]</buf>, gains <color=#F74848>1</color> stack of <buf ID=3014508>[Determination]</buf>, up to <color=#F74848>5</color> stacks. When attacking with a Sniper Rifle, can attack enemies within <terrian ID=3014501 /> regardless of range.",
         "SkillIcon": "Icon_skill_talent_5163",
         "icon": "Icon_skill_talent_5163"
       },
       "Talent3_5Ability": {
         "ID": "301451",
         "name": "Morning Star",
-        "SpecificEffects": "At the start of battle, automatically deploys <terrian ID=3014501 />. Can use command skills <skill mainSkill=301452>[Deploy Sentry]</skill> and <skill mainSkill=301453>[Sworn Enemy]</skill>. When an ally attack an enemy within range, performs <buf ID=900002>[Link Attack]</buf> with Sniper Rifle, dealing <color=#F74848>0.35x</color> DMG, prioritizing hitting the same part with the ally's attack, up to <color=#F74848>3</color> times per turn. If the <buf ID=900002>[Link Attack]</buf> destroys a part, it is considered as if the ally destroys a part. When performing attacks other than <buf ID=900153>[Weapon Skill]</buf>, gains <color=#F74848>1</color> stack of <buf ID=3014508>[Determination]</buf>, up to <color=#F74848>5</color> stacks.\n<terrian ID=3014501 /> area increases to <color=#F74848>4</color> tiles.",
+        "SpecificEffects": "At the start of battle, automatically deploys <terrian ID=3014501 />. Can use command skills <skill mainSkill=301452>[Deploy Sentry]</skill> and <skill mainSkill=301453>[Sworn Enemy]</skill>. When an ally attack an enemy within range, performs <buf ID=900002>[Link Attack]</buf> with Sniper Rifle, dealing <color=#F74848>0.35x</color> DMG, prioritizing hitting the same part with the ally's attack, up to <color=#F74848>3</color> times per turn. If the <buf ID=900002>[Link Attack]</buf> destroys a part, it is considered as if the ally destroys a part. When performing attacks other than <buf ID=900153>[Weapon Skill]</buf>, gains <color=#F74848>1</color> stack of <buf ID=3014508>[Determination]</buf>, up to <color=#F74848>5</color> stacks. When attacking with a Sniper Rifle, can attack enemies within <terrian ID=3014501 /> regardless of range.\n<terrian ID=3014501 /> area increases to <color=#F74848>4</color> tiles.",
         "SkillIcon": "Icon_skill_talent_5163",
         "icon": "Icon_skill_talent_5163"
       },
@@ -4271,7 +4271,7 @@
                 "PassiveSkill": {
                   "ID": "301235",
                   "name": "Hunter's Mark 3",
-                  "SpecificEffects": "[Hunter's Mark 1] can now trigger an unlimited number of times per turn.",
+                  "SpecificEffects": "<buf ID=900142>[Hunter's Mark 1]</buf> can now trigger an unlimited number of times per turn.",
                   "SkillIcon": "Icon_skill_passive_5022",
                   "icon": "Icon_skill_passive_5022"
                 }
@@ -4478,7 +4478,7 @@
           "skill": {
             "ID": "301406",
             "name": "Highlights",
-            "describe": "Immediately gains <color=#F74848>2</color> AP and <color=#F74848>3</color> stacks of <buf ID=3014508>[Determination]</buf>. Can continue to act with remaining movement.",
+            "describe": "Immediately gains <color=#F74848>2</color> AP and <color=#F74848>3</color> stacks of <buf ID=3014508>[Determination]</buf>. Can continue to act with full Movement.",
             "SkillIcon": "Icon_skill_order_5131",
             "icon": "Icon_skill_order_5131",
             "Ap": "0",
@@ -4503,7 +4503,7 @@
           "skill": {
             "ID": "301408",
             "name": "Bertha Assault",
-            "describe": "Uses a Sniper Rifle to attack a target, dealing <color=#F74848>1.35x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking. For each <color=#F74848>2</color> stacks of <buf ID=3014508>[Determination]</buf>, performs <color=#F74848>1</color> additional attack, prioritizing hitting the same part. Each additional attack deals <color=#F74848>-15%</color> less DMG, up to <color=#F74848>-60%</color> less than the first attack.",
+            "describe": "Uses a Sniper Rifle to attack a target, dealing <color=#F74848>1.35x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking. For each <color=#F74848>2</color> stacks of <buf ID=3014508>[Determination]</buf> consumed, performs <color=#F74848>1</color> additional attack, prioritizing hitting the same part. Each additional attack deals <color=#F74848>-15%</color> less DMG, up to <color=#F74848>-60%</color> less than the first attack.",
             "SkillIcon": "Icon_skill_main_1173",
             "icon": "Icon_skill_main_1173",
             "Ap": "4",
@@ -5823,7 +5823,7 @@
                 "PassiveSkill": {
                   "ID": "200036",
                   "name": "Perfect Position 4",
-                  "SpecificEffects": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, the [Perfect Position 1] effect is increased to <color=#F74848>30%</color>.",
+                  "SpecificEffects": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, the <buf ID=2000311>[Perfect Position 1]</buf> effect is increased to <color=#F74848>30%</color>.",
                   "SkillIcon": "Icon_skill_passive_5007",
                   "icon": "Icon_skill_passive_5007"
                 }
@@ -9145,8 +9145,8 @@
             "ID": "700010",
             "name": "Guard",
             "describe": "Protects allies within <color=#F74848>2</color> adjacent tiles from Assault and Ranged attacks. Triggers up to <color=#F74848>2</color> times per turn and lasts <color=#F74848>2</color> turns. Additionally, gains <buf ID=7100701>[Defensive Stance I]</buf>. Can only trigger <color=#F74848>1</color> time per turn.",
-            "SkillIcon": "Icon_skill_order_1031",
-            "icon": "Icon_skill_order_1031",
+            "SkillIcon": "Icon_skill_order_5001",
+            "icon": "Icon_skill_order_5001",
             "Ap": "1",
             "CD": "2",
             "type": "Order"
@@ -9937,7 +9937,7 @@
                 "PassiveSkill": {
                   "ID": "200036",
                   "name": "Perfect Position 4",
-                  "SpecificEffects": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, the [Perfect Position 1] effect is increased to <color=#F74848>30%</color>.",
+                  "SpecificEffects": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, the <buf ID=2000311>[Perfect Position 1]</buf> effect is increased to <color=#F74848>30%</color>.",
                   "SkillIcon": "Icon_skill_passive_5007",
                   "icon": "Icon_skill_passive_5007"
                 }
@@ -10970,7 +10970,7 @@
                 "PassiveSkill": {
                   "ID": "200036",
                   "name": "Perfect Position 4",
-                  "SpecificEffects": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, the [Perfect Position 1] effect is increased to <color=#F74848>30%</color>.",
+                  "SpecificEffects": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, the <buf ID=2000311>[Perfect Position 1]</buf> effect is increased to <color=#F74848>30%</color>.",
                   "SkillIcon": "Icon_skill_passive_5007",
                   "icon": "Icon_skill_passive_5007"
                 }
@@ -11485,7 +11485,7 @@
                 "PassiveSkill": {
                   "ID": "200036",
                   "name": "Perfect Position 4",
-                  "SpecificEffects": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, the [Perfect Position 1] effect is increased to <color=#F74848>30%</color>.",
+                  "SpecificEffects": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, the <buf ID=2000311>[Perfect Position 1]</buf> effect is increased to <color=#F74848>30%</color>.",
                   "SkillIcon": "Icon_skill_passive_5007",
                   "icon": "Icon_skill_passive_5007"
                 }
@@ -11992,7 +11992,7 @@
                 "PassiveSkill": {
                   "ID": "102035",
                   "name": "Crusher 3",
-                  "SpecificEffects": "When activating <buf ID=900167>[Crusher]</buf> to destroy a part, negates the deduction of <color=#F74848>1</color> <buf ID=900004>[Re-ATK]</buf> or <buf ID=900005>[Re-Act]</buf> count and additionally restores <color=#F74848>1</color> AP. Can only trigger <color=#F74848>1</color> time per turn.",
+                  "SpecificEffects": "When activating <buf ID=900163>[Crusher]</buf> to destroy a part, negates the deduction of <color=#F74848>1</color> <buf ID=900004>[Re-ATK]</buf> or <buf ID=900005>[Re-Act]</buf> count and additionally restores <color=#F74848>1</color> AP. Can only trigger <color=#F74848>1</color> time per turn.",
                   "SkillIcon": "Icon_skill_passive_5299",
                   "icon": "Icon_skill_passive_5299"
                 }
@@ -12202,7 +12202,7 @@
           "skill": {
             "ID": "102006",
             "name": "Crow Hunt",
-            "describe": "Uses Cutter to attack up to <color=#F74848>4</color> targets, dealing <color=#F74848>1.2x</color> AoE DMG. Can selects the same target repeatedly. Repeat attacks on the same target deal <color=#F74848>40%</color> DMG. After attacking, if any part HP is below <color=#F74848>2/3</color> of <buf ID=900167>[Crusher]</buf> threshold, that part is destroyed immediately.",
+            "describe": "Uses Cutter to attack up to <color=#F74848>4</color> targets, dealing <color=#F74848>1.2x</color> AoE DMG. Can selects the same target repeatedly. Repeat attacks on the same target deal <color=#F74848>40%</color> DMG. After attacking, if any part HP is below <color=#F74848>2/3</color> of <buf ID=900163>[Crusher]</buf> threshold, that part is destroyed immediately.",
             "SkillIcon": "Icon_skill_order_1012",
             "icon": "Icon_skill_order_1012",
             "Ap": "4",
@@ -17079,7 +17079,7 @@
                 "PassiveSkill": {
                   "ID": "200036",
                   "name": "Perfect Position 4",
-                  "SpecificEffects": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, the [Perfect Position 1] effect is increased to <color=#F74848>30%</color>.",
+                  "SpecificEffects": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, the <buf ID=2000311>[Perfect Position 1]</buf> effect is increased to <color=#F74848>30%</color>.",
                   "SkillIcon": "Icon_skill_passive_5007",
                   "icon": "Icon_skill_passive_5007"
                 }
@@ -17136,7 +17136,7 @@
                 "PassiveSkill": {
                   "ID": "202045",
                   "name": "Zone Contract 3",
-                  "SpecificEffects": "<buf ID=900002>[Link Attack]</buf> count of <buf ID=200001>[CEC 1]</buf> increases by <color=#F74848>+1</color>. For each <color=#F74848>4</color> <buf ID=900002>[Link Attack]</buf> triggered, gains <color=#F74848>1</color> AP.",
+                  "SpecificEffects": "<buf ID=900002>[Link Attack]</buf> count of <buf ID=2000011>[CEC 1]</buf> increases by <color=#F74848>+1</color>. For each <color=#F74848>4</color> <buf ID=900002>[Link Attack]</buf> triggered, gains <color=#F74848>1</color> AP.",
                   "SkillIcon": "Icon_skill_passive_5282",
                   "icon": "Icon_skill_passive_5282"
                 }
@@ -18674,7 +18674,7 @@
                 "PassiveSkill": {
                   "ID": "101944",
                   "name": "Burning Karma 2",
-                  "SpecificEffects": "If <color=#F74848>1</color> or more stacks of <buf ID=5009234>[Vengeful Edge]</buf> are consumed this turn, gains <color=#F74848>1</color> AP at the end of turn.",
+                  "SpecificEffects": "If <color=#F74848>1</color> or more stacks of <buf ID=1019508>[Vengeful Edge]</buf> are consumed this turn, gains <color=#F74848>1</color> AP at the end of turn.",
                   "SkillIcon": "Icon_skill_passive_5293",
                   "icon": "Icon_skill_passive_5293"
                 }
@@ -18789,7 +18789,7 @@
           "skill": {
             "ID": "101903",
             "name": "Fearless Resolve",
-            "SpecificEffects": "For each <color=#F74848>1</color> enemy carrying <buf ID=5009234>[Vengeful Edge]</buf>, increases armor by <color=#F74848>15%</color>, up to <color=#F74848>60%</color>.",
+            "SpecificEffects": "For each <color=#F74848>1</color> enemy carrying <buf ID=1019508>[Vengeful Edge]</buf>, increases armor by <color=#F74848>15%</color>, up to <color=#F74848>60%</color>.",
             "SkillIcon": "Icon_skill_passive_2117",
             "icon": "Icon_skill_passive_2117"
           }
@@ -18825,7 +18825,7 @@
           "skill": {
             "ID": "101906",
             "name": "Thorn Annihilation",
-            "describe": "Selects a main target. Uses a Chainsaw to attack all enemies within <color=#F74848>1</color> ring area, dealing <color=#F74848>0.9x</color> AoE DMG, consuming all <buf ID=5009234>[Vengeful Edge]</buf> on targets hit. Then attacks the main target, dealing <color=#F74848>0.9x</color> DMG. Each <color=#F74848>2</color> stacks of <buf ID=5009234>[Vengeful Edge]</buf> consumed increases the hit count of the second attack by <color=#F74848>+1</color>, up to <color=#F74848>+8</color>. This attack always hits the body.",
+            "describe": "Selects a main target. Uses a Chainsaw to attack all enemies within <color=#F74848>1</color> ring area, dealing <color=#F74848>0.9x</color> AoE DMG, consuming all <buf ID=1019508>[Vengeful Edge]</buf> on targets hit. Then attacks the main target, dealing <color=#F74848>0.9x</color> DMG. Each <color=#F74848>2</color> stacks of <buf ID=1019508>[Vengeful Edge]</buf> consumed increases the hit count of the second attack by <color=#F74848>+1</color>, up to <color=#F74848>+8</color>. This attack always hits the body.",
             "SkillIcon": "Icon_skill_main_1171",
             "icon": "Icon_skill_main_1171",
             "Ap": "4",
@@ -18850,7 +18850,7 @@
           "skill": {
             "ID": "101908",
             "name": "Severance",
-            "describe": "Uses Chainsaw to attack a target, dealing <color=#F74848>0.7x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking. This attack does not consume <buf ID=5009234>[Vengeful Edge]</buf>. Triggers <buf ID=900004>[Re-ATK]</buf> after combat, allowing movement of <color=#F74848>2</color> tiles before attacking. This skill can only be used <color=#F74848>1</color> time per turn.",
+            "describe": "Uses Chainsaw to attack a target, dealing <color=#F74848>0.7x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking. This attack does not consume <buf ID=1019508>[Vengeful Edge]</buf>. Triggers <buf ID=900004>[Re-ATK]</buf> after combat, allowing movement of <color=#F74848>2</color> tiles before attacking. This skill can only be used <color=#F74848>1</color> time per turn.",
             "SkillIcon": "Icon_skill_main_1157",
             "icon": "Icon_skill_main_1157",
             "Ap": "1",
@@ -18948,7 +18948,7 @@
           "skill": {
             "ID": "101901",
             "name": "Splitter",
-            "describe": "Uses a Chainsaw to attack a target, dealing <color=#F74848>1.1x</color> DMG. Consumes all <buf ID=5009234>[Vengeful Edge]</buf> on target hit. This attack always hits the part with lowest HP.",
+            "describe": "Uses a Chainsaw to attack a target, dealing <color=#F74848>1.1x</color> DMG. Consumes all <buf ID=1019508>[Vengeful Edge]</buf> on target hit. This attack always hits the part with lowest HP.",
             "SkillIcon": "Icon_skill_main_1156",
             "icon": "Icon_skill_main_1156",
             "Ap": "2",
@@ -19140,7 +19140,7 @@
                 "PassiveSkill": {
                   "ID": "200036",
                   "name": "Perfect Position 4",
-                  "SpecificEffects": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, the [Perfect Position 1] effect is increased to <color=#F74848>30%</color>.",
+                  "SpecificEffects": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, the <buf ID=2000311>[Perfect Position 1]</buf> effect is increased to <color=#F74848>30%</color>.",
                   "SkillIcon": "Icon_skill_passive_5007",
                   "icon": "Icon_skill_passive_5007"
                 }
@@ -19636,7 +19636,7 @@
                 "PassiveSkill": {
                   "ID": "500934",
                   "name": "Emergency Repair 2",
-                  "SpecificEffects": "<buf ID=900018>[Passive Repair]</buf> selects targets within the adjacent (<color=#F74848>2</color> tiles) area.",
+                  "SpecificEffects": "<buf ID=5000311>[Emergency Repair 1]</buf> selects targets within the adjacent (<color=#F74848>2</color> tiles) area.",
                   "SkillIcon": "Icon_skill_passive_3002",
                   "icon": "Icon_skill_passive_3002"
                 }
@@ -19646,7 +19646,7 @@
                 "PassiveSkill": {
                   "ID": "500935",
                   "name": "Emergency Repair 3",
-                  "SpecificEffects": "<buf ID=900018>[Passive Repair]</buf>'s Repair AMT is now <color=#F74848>1x</color> that of the Manipulator.",
+                  "SpecificEffects": "<buf ID=5000311>[Emergency Repair 1]</buf>'s Repair AMT is now <color=#F74848>1x</color> that of the Manipulator.",
                   "SkillIcon": "Icon_skill_passive_3002",
                   "icon": "Icon_skill_passive_3002"
                 }
@@ -19656,7 +19656,7 @@
                 "PassiveSkill": {
                   "ID": "500936",
                   "name": "Emergency Repair 4",
-                  "SpecificEffects": "The number of targets that <buf ID=900018>[Passive Repair]</buf> can repair increases by <color=#F74848>1</color>.",
+                  "SpecificEffects": "The number of targets that <buf ID=5000311>[Emergency Repair 1]</buf> can repair increases by <color=#F74848>1</color>.",
                   "SkillIcon": "Icon_skill_passive_3002",
                   "icon": "Icon_skill_passive_3002"
                 }
@@ -19870,7 +19870,7 @@
           "skill": {
             "ID": "500907",
             "name": "Poison Cast",
-            "SpecificEffects": "When talent [Good Medicine Tastes Bitter] or <buf ID=5009418>[Resonance Pulse]</buf> triggers, applies <color=#F74848>1</color> random debuff to the target, lasting for <color=#F74848>2</color> turns.",
+            "SpecificEffects": "When talent <buf ID=5009501>[Good Medicine Tastes Bitter]</buf> or <buf ID=5009410>[Resonance Pulse]</buf> triggers, applies <color=#F74848>1</color> random debuff to the target, lasting for <color=#F74848>2</color> turns.",
             "SkillIcon": "Icon_skill_passive_5170",
             "icon": "Icon_skill_passive_5170"
           }
@@ -20174,7 +20174,7 @@
                 "PassiveSkill": {
                   "ID": "200036",
                   "name": "Perfect Position 4",
-                  "SpecificEffects": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, the [Perfect Position 1] effect is increased to <color=#F74848>30%</color>.",
+                  "SpecificEffects": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, the <buf ID=2000311>[Perfect Position 1]</buf> effect is increased to <color=#F74848>30%</color>.",
                   "SkillIcon": "Icon_skill_passive_5007",
                   "icon": "Icon_skill_passive_5007"
                 }
@@ -20270,7 +20270,7 @@
           "skill": {
             "ID": "201701",
             "name": "Suppressive Assault",
-            "describe": "Uses HMG to attack a target, dealing <color=#F74848>1.3x</color> DMG. Can activate <buf ID=900125>[Fury Unleashed]</buf>. When <color=#F74848>2</color> stacks of <buf ID=2017500>[Fury]</buf> are consumed, this attack cannot be dodged.",
+            "describe": "Uses a Heavy Machine Gun to attack a target, dealing <color=#F74848>1.3x</color> DMG. Can activate <buf ID=900125>[Fury Unleashed]</buf>. When consuming <color=#F74848>2</color> stacks of <buf ID=2017500>[Fury]</buf>, this attack cannot be dodged.",
             "SkillIcon": "Icon_skill_main_1105",
             "icon": "Icon_skill_main_1105",
             "Ap": "3",
@@ -21205,7 +21205,7 @@
                 "PassiveSkill": {
                   "ID": "200036",
                   "name": "Perfect Position 4",
-                  "SpecificEffects": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, the [Perfect Position 1] effect is increased to <color=#F74848>30%</color>.",
+                  "SpecificEffects": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, the <buf ID=2000311>[Perfect Position 1]</buf> effect is increased to <color=#F74848>30%</color>.",
                   "SkillIcon": "Icon_skill_passive_5007",
                   "icon": "Icon_skill_passive_5007"
                 }
@@ -21917,7 +21917,7 @@
           "skill": {
             "ID": "400506",
             "name": "Root Control",
-            "describe": "Enters <buf ID=900025>[Rack]</buf> Mode: Cannot move, Missile Launcher's Range <color=#F74848>+1</color>, DMG <color=#F74848>+10%</color>. Can continue attacking after racking. Automatically exits <buf ID=900025>[Rack]</buf> Mode when an Arm is destroyed. <buf ID=900026>[Retract]</buf> is available in <buf ID=900025>[Rack]</buf> Mode. After retracting, can continue to move.",
+            "describe": "Enters <buf ID=900025>[Rack]</buf> Mode: Cannot move, Missile Launcher's Range <color=#F74848>+1</color>, DMG <color=#F74848>+10%</color>. Can continue attacking after racking. Automatically exits <buf ID=900025>[Rack]</buf> Mode when an Arm is destroyed. <skill ID=4005062>[Retract]</skill> is available in <buf ID=900025>[Rack]</buf> Mode. After retracting, can continue to move.",
             "SkillIcon": "Icon_skill_order_5004",
             "icon": "Icon_skill_order_5004",
             "Ap": "1",
@@ -22430,7 +22430,7 @@
           "skill": {
             "ID": "300906",
             "name": "Absolute Territory",
-            "describe": "Enters <buf ID=900025>[Rack]</buf> Mode: Unable to move, Sniper Rifle's Range <color=#F74848>+2</color>, DMG <color=#F74848>+10%</color>. Can continue attacking after racking. ST automatically exits <buf ID=900025>[Rack]</buf> Mode when an Arm is destroyed. When in <buf ID=900025>[Rack]</buf> Mode, the <buf ID=900026>[Retract]</buf> code can be cast. After retracting, movement can continue.",
+            "describe": "Enters <buf ID=900025>[Rack]</buf> Mode: Unable to move, Sniper Rifle's Range <color=#F74848>+2</color>, DMG <color=#F74848>+10%</color>. Can continue attacking after racking. ST automatically exits <buf ID=900025>[Rack]</buf> Mode when an Arm is destroyed. When in <buf ID=900025>[Rack]</buf> Mode, the <skill ID=3009062>[Retract]</skill> code can be cast. After retracting, movement can continue.",
             "SkillIcon": "Icon_skill_order_5004",
             "icon": "Icon_skill_order_5004",
             "Ap": "1",
@@ -23634,14 +23634,14 @@
       "Talent0_2Ability": {
         "ID": "301150",
         "name": "Experimental Observation",
-        "SpecificEffects": "Can use the <skill ID=301150>[Directional Rack]</skill> code. While in <skill ID=301150>[Directional Rack]</skill> Mode, each <color=#F74848>1</color> hit on an enemy unit grants <color=#F74848>1</color> stack of <buf ID=3011512>[Positional Advantage I]</buf>. While in <skill ID=301150>[Directional Rack]</skill> Mode, after using a code or active attack, if there are no enemy units within <color=#F74848>3</color> tiles, gains <buf ID=3004502>[Stealth I]</buf>, lasting for <color=#F74848>2</color> turns.",
+        "SpecificEffects": "Can use the <skill ID=301150>[Directional Rack]</skill> code. While in <buf ID=900111>[Directional Rack]</buf> Mode, each <color=#F74848>1</color> hit on an enemy unit grants <color=#F74848>1</color> stack of <buf ID=3011512>[Positional Advantage I]</buf>. While in <buf ID=900111>[Directional Rack]</buf> Mode, after using a code or active attack, if there are no enemy units within <color=#F74848>3</color> tiles, gains <buf ID=3004502>[Stealth I]</buf>, lasting for <color=#F74848>2</color> turns.",
         "SkillIcon": "Icon_skill_talent_5147",
         "icon": "Icon_skill_talent_5147"
       },
       "Talent3_5Ability": {
         "ID": "301151",
         "name": "Experimental Observation",
-        "SpecificEffects": "Can use the <skill ID=301150>[Directional Rack]</skill> code. While in <skill ID=301150>[Directional Rack]</skill> Mode, each <color=#F74848>1</color> hit on an enemy unit grants <color=#F74848>1</color> stack of <buf ID=3011512>[Positional Advantage I]</buf>. While in <skill ID=301150>[Directional Rack]</skill> Mode, after using a code or active attack, if there are no enemy units within <color=#F74848>3</color> tiles, gains <buf ID=3004502>[Stealth I]</buf>, lasting for <color=#F74848>2</color> turns.\nThe <buf ID=3011512>[Positional Advantage I]</buf> stack limit increases by <color=#F74848>4</color>.",
+        "SpecificEffects": "Can use the <skill ID=301150>[Directional Rack]</skill> code. While in <buf ID=900111>[Directional Rack]</buf> Mode, each <color=#F74848>1</color> hit on an enemy unit grants <color=#F74848>1</color> stack of <buf ID=3011512>[Positional Advantage I]</buf>. While in <buf ID=900111>[Directional Rack]</buf> Mode, after using a code or active attack, if there are no enemy units within <color=#F74848>3</color> tiles, gains <buf ID=3004502>[Stealth I]</buf>, lasting for <color=#F74848>2</color> turns.\nThe <buf ID=3011512>[Positional Advantage I]</buf> stack limit increases by <color=#F74848>4</color>.",
         "SkillIcon": "Icon_skill_talent_5147",
         "icon": "Icon_skill_talent_5147"
       },
@@ -23829,7 +23829,7 @@
                 "PassiveSkill": {
                   "ID": "301144",
                   "name": "Trickster 2",
-                  "SpecificEffects": "While in Directional Rack Mode, the <skill ID=301144>[Rapid Realignment]</skill> code can be used.",
+                  "SpecificEffects": "While in <buf ID=900111>[Directional Rack]</buf> Mode, the <skill ID=301144>[Rapid Realignment]</skill> code can be used.",
                   "SkillIcon": "Icon_skill_passive_5246",
                   "icon": "Icon_skill_passive_5246"
                 }
@@ -23945,7 +23945,6 @@
             "ID": "301101",
             "name": "Precision Surgery",
             "describe": "Uses a Sniper Rifle to attack a target, dealing <color=#F74848>1.2x</color> DMG. When in <buf ID=900111>[Directional Rack]</buf> Mode, enters <buf ID=900014>[Aiming]</buf> Mode before attacking.",
-            "SpecificEffects": "When attacking without having moved this turn, DMG <color=#F74848>+15%</color>.",
             "SkillIcon": "Icon_skill_main_1137",
             "icon": "Icon_skill_main_1137",
             "Ap": 2,
@@ -24812,7 +24811,7 @@
                 "PassiveSkill": {
                   "ID": "200036",
                   "name": "Perfect Position 4",
-                  "SpecificEffects": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, the [Perfect Position 1] effect is increased to <color=#F74848>30%</color>.",
+                  "SpecificEffects": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, the <buf ID=2000311>[Perfect Position 1]</buf> effect is increased to <color=#F74848>30%</color>.",
                   "SkillIcon": "Icon_skill_passive_5007",
                   "icon": "Icon_skill_passive_5007"
                 }
@@ -26548,7 +26547,7 @@
           "skill": {
             "ID": "500805",
             "name": "Security Topology",
-            "SpecificEffects": "After performing active repairs, grants <buf ID=1099905>[Immune to Code Inhibition]</buf> to the target, lasting for <color=#F74848>2</color> turns.",
+            "SpecificEffects": "After performing active repairs, grants <buf ID=5008052>[Immune to Code Inhibition]</buf> to the target, lasting for <color=#F74848>2</color> turns.",
             "SkillIcon": "Icon_skill_passive_5189",
             "icon": "Icon_skill_passive_5189"
           }
@@ -26713,17 +26712,17 @@
         {
           "name": "Super Guggle!",
           "describe": "",
-          "SpecificEffects": "Performs <buf ID=1099901>[Guard]</buf>, protecting allies within <color=#F74848>1</color> adjacent tile from Melee, Assault, and Ranged attacks. Can trigger up to <color=#F74848>3</color> times per turn. When performing <buf ID=1099901>[Guard]</buf>, restores <color=#F74848>1</color> AP after combat.",
-          "icon": "Icon_skill_passive_5295"
+          "SpecificEffects": "Performs <buf ID=900022>[Guard]</buf>, protecting allies within <color=#F74848>1</color> adjacent tile from Melee, Assault, and Ranged attacks. Can trigger up to <color=#F74848>3</color> times per turn. When performing <buf ID=900022>[Guard]</buf>, restores <color=#F74848>1</color> AP after combat.",
+          "icon": "Icon_skill_talent_5152"
         },
         {
           "name": "Guggle's Grand Plan!",
-          "describe": "Protects allies within <color=#F74848>2</color> adjacent tiles from Melee, Assault, and Ranged attacks. Can trigger up to <color=#F74848>3</color> times per turn. Lasts for <color=#F74848>2</color> turns. Additionally, gains <buf ID=1099902>[Short-Circuit Strike!]</buf> for <color=#F74848>2</color> turns, then gains <color=#F74848>2</color> Extra Movement.",
+          "describe": "Protects allies within <color=#F74848>2</color> adjacent tiles from Melee, Assault, and Ranged attacks. Can trigger up to <color=#F74848>3</color> times per turn. Lasts for <color=#F74848>2</color> turns. Additionally, gains <buf ID=5008912>[Short-Circuit Strike!]</buf> for <color=#F74848>2</color> turns, then gains <color=#F74848>2</color> Extra Movement.",
           "SpecificEffects": "",
           "type": "Order",
           "Ap": "1",
           "CD": "2",
-          "icon": "Icon_skill_order_1031"
+          "icon": "Icon_skill_order_5001"
         },
         {
           "name": "Guggle's Encouragement!",
@@ -27111,7 +27110,7 @@
           "skill": {
             "ID": "500506",
             "name": "Pochy Station!",
-            "SpecificEffects": "Allows Pochy to shift to <buf ID=900039>[Rack]</buf> Mode: Unable to move. When allies end their action within <color=#F74848>3</color> adjacent tiles, automatically executes <buf ID=900018>[Passive Repair]</buf>, with a repair amount equal to <color=#F74848>1.0x</color> Pochy's Repair AMT. When in <buf ID=900039>[Rack]</buf> Mode, the <buf ID=900026>[Retract]</buf> Code becomes available. After retracting, Pochy can continue to move.",
+            "SpecificEffects": "Allows Pochy to shift to <buf ID=900039>[Rack]</buf> Mode: Unable to move. When allies end their action within <color=#F74848>3</color> adjacent tiles, automatically executes <buf ID=900018>[Passive Repair]</buf>, with a repair amount equal to <color=#F74848>1.0x</color> Pochy's Repair AMT. When in <buf ID=900039>[Rack]</buf> Mode, the <skill ID=5005063>[Retract]</skill> Code becomes available. After retracting, Pochy can continue to move.",
             "SkillIcon": "Icon_skill_passive_3114",
             "icon": "Icon_skill_passive_3114"
           }
@@ -30325,7 +30324,7 @@
           "skill": {
             "ID": "501001",
             "name": "Flame Strike",
-            "describe": "Uses a Flamethrower to attack a target, dealing <color=#F74848>1.2x</color> DMG and <color=#F74848>20%</color> <buf ID=900139>[Flame DMG]</buf> to other targets along the path. After combat, applies <terrian ID=4003081 /> to all tiles along the attack path, lasting <color=#F74848>2</color> turns. Can activate <buf ID=5010468>[Stratagem Infusion]</buf> to increase <buf ID=900139>[Flame DMG]</buf> to <color=#F74848>40%</color>.",
+            "describe": "Uses a Flamethrower to attack a target, dealing <color=#F74848>1.2x</color> DMG and <color=#F74848>20%</color> <buf ID=900065>[Flame DMG]</buf> to other targets along the path. After combat, applies <terrian ID=4003081 /> to all tiles along the attack path, lasting <color=#F74848>2</color> turns. Can activate <buf ID=5010468>[Stratagem Infusion]</buf> to increase <buf ID=900065>[Flame DMG]</buf> to <color=#F74848>40%</color>.",
             "SkillIcon": "Icon_skill_main_1151",
             "icon": "Icon_skill_main_1151",
             "Ap": "3",
@@ -30759,8 +30758,8 @@
             "ID": "700010",
             "name": "Guard",
             "describe": "Protects allies within <color=#F74848>2</color> adjacent tiles from Assault and Ranged attacks. Triggers up to <color=#F74848>2</color> times per turn and lasts <color=#F74848>2</color> turns. Additionally, gains <buf ID=7100701>[Defensive Stance I]</buf>. Can only trigger <color=#F74848>1</color> time per turn.",
-            "SkillIcon": "Icon_skill_order_1031",
-            "icon": "Icon_skill_order_1031",
+            "SkillIcon": "Icon_skill_order_5001",
+            "icon": "Icon_skill_order_5001",
             "Ap": "1",
             "CD": "2",
             "type": "Order"
@@ -31361,8 +31360,8 @@
             "ID": "201901",
             "name": "Fierce Assault",
             "describe": "Uses a Shotgun to attack a target, dealing <color=#F74848>1.4x</color> DMG. Before attacking, gains <color=#F74848>1</color> random debuff, lasting for <color=#F74848>2</color> turns.",
-            "SkillIcon": "Icon_skill_main_1105",
-            "icon": "Icon_skill_main_1105",
+            "SkillIcon": "Icon_skill_main_9501",
+            "icon": "Icon_skill_main_9501",
             "Ap": "3",
             "CD": "0",
             "type": "EquipmentSkill"
@@ -31739,7 +31738,7 @@
           "skill": {
             "ID": "601005",
             "name": "Electro-Surge",
-            "SpecificEffects": "When using a shield to attack a target possessing <buf ID=6010502>[Magnetic Lock]</buf>, applies <buf ID=3006442>[Short Circuit II]</buf> and <buf ID=7101507>[Movement Inhibition II]</buf> to the target before combat, lasting for <color=#F74848>2</color> turns.",
+            "SpecificEffects": "When using a shield to attack a target possessing <buf ID=6010502>[Magnetic Lock]</buf>, applies <buf ID=3006442>[Short Circuit II]</buf> and <buf ID=7101508>[Movement Inhibition II]</buf> to the target before combat, lasting for <color=#F74848>2</color> turns.",
             "SkillIcon": "Icon_skill_passive_5162",
             "icon": "Icon_skill_passive_5162"
           }
@@ -31875,8 +31874,8 @@
             "ID": "700010",
             "name": "Guard",
             "describe": "Protects allies within <color=#F74848>2</color> adjacent tiles from Assault and Ranged attacks. Triggers up to <color=#F74848>2</color> times per turn and lasts <color=#F74848>2</color> turns. Additionally, gains <buf ID=7100701>[Defensive Stance I]</buf>. Can only trigger <color=#F74848>1</color> time per turn.",
-            "SkillIcon": "Icon_skill_order_1031",
-            "icon": "Icon_skill_order_1031",
+            "SkillIcon": "Icon_skill_order_5001",
+            "icon": "Icon_skill_order_5001",
             "Ap": "1",
             "CD": "2",
             "type": "Order"
@@ -32059,7 +32058,7 @@
                 "PassiveSkill": {
                   "ID": "301235",
                   "name": "Hunter's Mark 3",
-                  "SpecificEffects": "[Hunter's Mark 1] can now trigger an unlimited number of times per turn.",
+                  "SpecificEffects": "<buf ID=900142>[Hunter's Mark 1]</buf> can now trigger an unlimited number of times per turn.",
                   "SkillIcon": "Icon_skill_passive_5022",
                   "icon": "Icon_skill_passive_5022"
                 }
@@ -33098,7 +33097,7 @@
                 "PassiveSkill": {
                   "ID": "200036",
                   "name": "Perfect Position 4",
-                  "SpecificEffects": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, the [Perfect Position 1] effect is increased to <color=#F74848>30%</color>.",
+                  "SpecificEffects": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, the <buf ID=2000311>[Perfect Position 1]</buf> effect is increased to <color=#F74848>30%</color>.",
                   "SkillIcon": "Icon_skill_passive_5007",
                   "icon": "Icon_skill_passive_5007"
                 }
@@ -33295,7 +33294,7 @@
           "skill": {
             "ID": "200906",
             "name": "Rack",
-            "describe": "Enters <buf ID=900025>[Rack]</buf> Mode: Cannot move. Heavy Machine Gun Range <color=#F74848>+2</color>, Bullets <color=#F74848>+1</color>. Can continue to attack after racking. Automatically exits <buf ID=900025>[Rack]</buf> Mode when an Arm is destroyed. <buf ID=900026>[Retract]</buf> is available in <buf ID=900025>[Rack]</buf> Mode. After retracting, can continue to move.",
+            "describe": "Enters <buf ID=900025>[Rack]</buf> Mode: Cannot move. Heavy Machine Gun Range <color=#F74848>+2</color>, Bullets <color=#F74848>+1</color>. Can continue to attack after racking. Automatically exits <buf ID=900025>[Rack]</buf> Mode when an Arm is destroyed. <skill ID=2009062>[Retract]</skill> is available in <buf ID=900025>[Rack]</buf> Mode. After retracting, can continue to move.",
             "SkillIcon": "Icon_skill_order_5004",
             "icon": "Icon_skill_order_5004",
             "Ap": "1",
@@ -33835,7 +33834,7 @@
           "skill": {
             "ID": "101608",
             "name": "Zero Hour",
-            "describe": "Deducts HP from all of own parts equal to <color=#F74848>50%</color> of their Max HP, without destroying any parts, and gains <color=#F74848>3</color> AP and <buf ID=7100901>[Movement UP]</buf> for <color=#F74848>2</color> turns. Can then trigger <buf ID=900005>[Re-Act]</buf> and move using full Movement.",
+            "describe": "Deducts HP from all of own parts equal to <color=#F74848>50%</color> of their Max HP, without destroying any parts, and gains <color=#F74848>3</color> AP and <buf ID=7100902>[Movement UP]</buf> for <color=#F74848>2</color> turns. Can then trigger <buf ID=900005>[Re-Act]</buf> and move using full Movement.",
             "SkillIcon": "Icon_skill_order_5144",
             "icon": "Icon_skill_order_5144",
             "Ap": "0",
@@ -34450,8 +34449,8 @@
             "ID": "700010",
             "name": "Guard",
             "describe": "Protects allies within <color=#F74848>2</color> adjacent tiles from Assault and Ranged attacks. Triggers up to <color=#F74848>2</color> times per turn and lasts <color=#F74848>2</color> turns. Additionally, gains <buf ID=7100701>[Defensive Stance I]</buf>. Can only trigger <color=#F74848>1</color> time per turn.",
-            "SkillIcon": "Icon_skill_order_1031",
-            "icon": "Icon_skill_order_1031",
+            "SkillIcon": "Icon_skill_order_5001",
+            "icon": "Icon_skill_order_5001",
             "Ap": "1",
             "CD": "2",
             "type": "Order"
@@ -35994,8 +35993,8 @@
             "ID": "700010",
             "name": "Guard",
             "describe": "Protects allies within <color=#F74848>2</color> adjacent tiles from Assault and Ranged attacks. Triggers up to <color=#F74848>2</color> times per turn and lasts <color=#F74848>2</color> turns. Additionally, gains <buf ID=7100701>[Defensive Stance I]</buf>. Can only trigger <color=#F74848>1</color> time per turn.",
-            "SkillIcon": "Icon_skill_order_1031",
-            "icon": "Icon_skill_order_1031",
+            "SkillIcon": "Icon_skill_order_5001",
+            "icon": "Icon_skill_order_5001",
             "Ap": "1",
             "CD": "2",
             "type": "Order"
@@ -36510,8 +36509,8 @@
             "ID": "700010",
             "name": "Guard",
             "describe": "Protects allies within <color=#F74848>2</color> adjacent tiles from Assault and Ranged attacks. Triggers up to <color=#F74848>2</color> times per turn and lasts <color=#F74848>2</color> turns. Additionally, gains <buf ID=7100701>[Defensive Stance I]</buf>. Can only trigger <color=#F74848>1</color> time per turn.",
-            "SkillIcon": "Icon_skill_order_1031",
-            "icon": "Icon_skill_order_1031",
+            "SkillIcon": "Icon_skill_order_5001",
+            "icon": "Icon_skill_order_5001",
             "Ap": "1",
             "CD": "2",
             "type": "Order"
@@ -37726,7 +37725,7 @@
                 "PassiveSkill": {
                   "ID": "200036",
                   "name": "Perfect Position 4",
-                  "SpecificEffects": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, the [Perfect Position 1] effect is increased to <color=#F74848>30%</color>.",
+                  "SpecificEffects": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, the <buf ID=2000311>[Perfect Position 1]</buf> effect is increased to <color=#F74848>30%</color>.",
                   "SkillIcon": "Icon_skill_passive_5007",
                   "icon": "Icon_skill_passive_5007"
                 }
@@ -39267,7 +39266,7 @@
                 "PassiveSkill": {
                   "ID": "200036",
                   "name": "Perfect Position 4",
-                  "SpecificEffects": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, the [Perfect Position 1] effect is increased to <color=#F74848>30%</color>.",
+                  "SpecificEffects": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, the <buf ID=2000311>[Perfect Position 1]</buf> effect is increased to <color=#F74848>30%</color>.",
                   "SkillIcon": "Icon_skill_passive_5007",
                   "icon": "Icon_skill_passive_5007"
                 }
@@ -40805,7 +40804,7 @@
                 "PassiveSkill": {
                   "ID": "200036",
                   "name": "Perfect Position 4",
-                  "SpecificEffects": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, the [Perfect Position 1] effect is increased to <color=#F74848>30%</color>.",
+                  "SpecificEffects": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, the <buf ID=2000311>[Perfect Position 1]</buf> effect is increased to <color=#F74848>30%</color>.",
                   "SkillIcon": "Icon_skill_passive_5007",
                   "icon": "Icon_skill_passive_5007"
                 }
@@ -41830,7 +41829,7 @@
                 "PassiveSkill": {
                   "ID": "200036",
                   "name": "Perfect Position 4",
-                  "SpecificEffects": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, the [Perfect Position 1] effect is increased to <color=#F74848>30%</color>.",
+                  "SpecificEffects": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, the <buf ID=2000311>[Perfect Position 1]</buf> effect is increased to <color=#F74848>30%</color>.",
                   "SkillIcon": "Icon_skill_passive_5007",
                   "icon": "Icon_skill_passive_5007"
                 }
@@ -43048,8 +43047,8 @@
             "ID": "700010",
             "name": "Guard",
             "describe": "Protects allies within <color=#F74848>2</color> adjacent tiles from Assault and Ranged attacks. Triggers up to <color=#F74848>2</color> times per turn and lasts <color=#F74848>2</color> turns. Additionally, gains <buf ID=7100701>[Defensive Stance I]</buf>. Can only trigger <color=#F74848>1</color> time per turn.",
-            "SkillIcon": "Icon_skill_order_1031",
-            "icon": "Icon_skill_order_1031",
+            "SkillIcon": "Icon_skill_order_5001",
+            "icon": "Icon_skill_order_5001",
             "Ap": "1",
             "CD": "2",
             "type": "Order"
@@ -43627,7 +43626,7 @@
                 "PassiveSkill": {
                   "ID": "200036",
                   "name": "Perfect Position 4",
-                  "SpecificEffects": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, the [Perfect Position 1] effect is increased to <color=#F74848>30%</color>.",
+                  "SpecificEffects": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, the <buf ID=2000311>[Perfect Position 1]</buf> effect is increased to <color=#F74848>30%</color>.",
                   "SkillIcon": "Icon_skill_passive_5007",
                   "icon": "Icon_skill_passive_5007"
                 }
@@ -44010,7 +44009,7 @@
                 "PassiveSkill": {
                   "ID": "200036",
                   "name": "Perfect Position 4",
-                  "SpecificEffects": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, the [Perfect Position 1] effect is increased to <color=#F74848>30%</color>.",
+                  "SpecificEffects": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, the <buf ID=2000311>[Perfect Position 1]</buf> effect is increased to <color=#F74848>30%</color>.",
                   "SkillIcon": "Icon_skill_passive_5007",
                   "icon": "Icon_skill_passive_5007"
                 }
@@ -45154,7 +45153,7 @@
                 "PassiveSkill": {
                   "ID": "200036",
                   "name": "Perfect Position 4",
-                  "SpecificEffects": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, the [Perfect Position 1] effect is increased to <color=#F74848>30%</color>.",
+                  "SpecificEffects": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, the <buf ID=2000311>[Perfect Position 1]</buf> effect is increased to <color=#F74848>30%</color>.",
                   "SkillIcon": "Icon_skill_passive_5007",
                   "icon": "Icon_skill_passive_5007"
                 }

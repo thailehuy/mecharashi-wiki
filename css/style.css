@@ -958,14 +958,12 @@ a.weapon-card {
   }
 }
 
-.nd-heading {
-  display: flex;
-  align-items: baseline;
-  flex-wrap: wrap;
-  gap: 0.25rem 0.75rem;
+.nd-ap-row {
+  margin-bottom: 0.75rem;
 }
 
 .nd-ap {
+  display: inline-block;
   font-size: 0.85rem;
   font-weight: 600;
   color: #e2e8f0;

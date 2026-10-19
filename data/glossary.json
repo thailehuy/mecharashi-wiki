@@ -74,7 +74,7 @@
   },
   "900022": {
    "name": "Guard",
-   "effect": "Protects allies within 2 adjacent tiles from Assault and Ranged attacks. Triggers up to 2 times per turn and lasts 2 turns. Additionally, gains [Defensive Stance I]. Can only trigger 1 time per turn."
+   "effect": "Protects allies within <color=#F74848>1</color> adjacent tile from specific weapon types."
   },
   "900023": {
    "name": "Quick Draw",
@@ -87,10 +87,6 @@
   "900025": {
    "name": "Rack",
    "effect": "Stationary deployment, unable to move, grants a Special Bonus."
-  },
-  "900026": {
-   "name": "Retract",
-   "effect": "Exit [Rack] Mode"
   },
   "900027": {
    "name": "Target Shift",
@@ -996,10 +992,6 @@
    "name": "Scorching Will",
    "effect": "Flamethrower Weapon ATK increased by <color=#F74848>1%</color>. Stacks up to <color=#F74848>10</color> times."
   },
-  "900139": {
-   "name": "Flame DMG",
-   "effect": "DMG dealt based on the main skill's multiplier."
-  },
   "1016514": {
    "name": "Absolute Will",
    "effect": "Body is immune to <buf ID=900109>[Execution]</buf> effects. When the Body suffers overdamage, triggers <buf ID=900003>[Guts]</buf>, locking at <color=#F74848>1</color> HP. After combat, restores <color=#F74848>50%</color> of Max HP to all parts and repairs all destroyed parts. Removed after triggering."
@@ -1028,11 +1020,7 @@
    "name": "Guggle",
    "effect": "[Sapientia]'s personal ST that is deployed automatically when entering the battlefield, possesses skills [Super Guggle!], [Guggle's Grand Plan!], [Guggle's Encouragement!] and [Guggle's Star Shift!]."
   },
-  "1099901": {
-   "name": "Guard",
-   "effect": "Blocks attacks from a specific weapon type for an ally within <color=#F74848>1</color> adjacent tile."
-  },
-  "1099902": {
+  "5008912": {
    "name": "Short-Circuit Strike!",
    "effect": "When attacked, inflicts <buf ID=1099904>[Short Circuit III]</buf> on the target after combat."
   },
@@ -1044,7 +1032,7 @@
    "name": "Short Circuit III",
    "effect": "At the end of the action, all body parts lose <color=#F74848>7%</color> of their maximum HP as [Fixed DMG]. This [Fixed DMG] increases by <color=#F74848>1%</color> for each debuff the target carries, up to a maximum of <color=#F74848>12%</color>. This [Fixed DMG] cannot destroy parts."
   },
-  "1099905": {
+  "5008052": {
    "name": "Immune to Code Inhibition",
    "effect": "Immune to <buf ID=1099903>[Code Inhibition]</buf> effects."
   },
@@ -1288,7 +1276,7 @@
    "name": "Reconstruction II",
    "effect": "Repair AMT <color=#F74848>+20%</color>."
   },
-  "5009234": {
+  "1019508": {
    "name": "Vengeful Edge",
    "effect": "When [Maat] uses [Splitter], [Severance] or [Thorn Annihilation], each stack increases hit count by <color=#F74848>1</color>."
   },
@@ -1344,7 +1332,7 @@
    "name": "Feral Spirit",
    "effect": "Can be consumed for [Giselle]'s special skills to deal <buf ID=900017>[Fixed DMG]</buf> equal to the consumed stacks."
   },
-  "900167": {
+  "900163": {
    "name": "Crusher",
    "effect": "After actively attacking with Polearm, if the hit part's HP is below a certain percentage, triggers <buf ID=900109>[Execution]</buf> after combat to immediately destroy that part."
   },
@@ -1637,6 +1625,42 @@
   "7101504": {
    "name": "Movement Inhibition I",
    "effect": "Movement -1."
+  },
+  "2000011": {
+   "name": "CEC 1",
+   "effect": "Cooperates with allies to launch an Assault Weapon or Ranged Weapon <buf ID=900002>[Link Attack]</buf>, dealing <color=#F74848>0.2x</color> DMG. Can trigger <color=#F74848>1</color> time per turn."
+  },
+  "1020311": {
+   "name": "Crusher 1",
+   "effect": "After actively attacking with a Polearm, if the part hit is below <color=#F74848>15%</color> HP, triggers the <buf ID=900109>[Execution]</buf> effect, directly destroying that part after combat."
+  },
+  "1018411": {
+   "name": "Hero of Soukaizan 1",
+   "effect": "When initiating combat with a melee weapon, if the target part HP is down to <color=#F74848>30%</color> or less, triggers a <buf ID=900001>[Flurry Strike]</buf> hitting the same part, dealing <color=#F74848>0.3x</color> DMG."
+  },
+  "5009410": {
+   "name": "Resonance Pulse",
+   "effect": "After being actively attacked or repaired by Martini, the part with lowest HP receives <color=#F74848>0.3x</color> Martini's Manipulator Repair AMT as [Fixed DMG]. This effect is removed after triggering."
+  },
+  "7100902": {
+   "name": "Movement UP",
+   "effect": "Movement +1."
+  },
+  "7101508": {
+   "name": "Movement Inhibition II",
+   "effect": "Movement -2"
+  },
+  "2000311": {
+   "name": "Perfect Position 1",
+   "effect": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, Final DMG <color=#F74848>+15%</color>."
+  },
+  "5000311": {
+   "name": "Emergency Repair 1",
+   "effect": "When action ends, repairs <color=#F74848>1</color> target within <color=#F74848>1</color> adjacent tile for <color=#F74848>0.6x</color> the Manipulator's Repair AMT."
+  },
+  "5009501": {
+   "name": "Good Medicine Tastes Bitter",
+   "effect": "When actively attacking with a Pilebunker or Knuckle while carrying a Manipulator, deals <buf ID=900017>[Fixed DMG]</buf> to the part of the target hit with the lowest HP percentage."
   }
  },
  "skill": {
@@ -1665,8 +1689,39 @@
    "name": "Directional Rack",
    "Ap": "0",
    "CD": "1",
-   "effect": "Enters <buf ID=900111>[Directional Rack]</buf> Mode: Unable to move, Sniper Rifle's attack range becomes a fixed-direction fan-shaped <color=#F74848>5</color>-tile area. Can continue attacking after using <buf ID=900111>[Directional Rack]</buf>. Automatically exits <buf ID=900111>[Directional Rack]</buf> Mode when an Arm is destroyed. <buf ID=900026>[Retract]</buf> is available in <buf ID=900111>[Directional Rack]</buf> Mode. After retracting, can continue moving.",
+   "effect": "Enters <buf ID=900111>[Directional Rack]</buf> Mode: Unable to move, Sniper Rifle's attack range becomes a fixed-direction fan-shaped <color=#F74848>5</color>-tile area. Can continue attacking after using <buf ID=900111>[Directional Rack]</buf>. Automatically exits <buf ID=900111>[Directional Rack]</buf> Mode when an Arm is destroyed. <skill ID=3011502>[Retract]</skill> is available in <buf ID=900111>[Directional Rack]</buf> Mode. After retracting, can continue moving.",
    "icon": "Icon_skill_order_5004"
+  },
+  "3011502": {
+   "name": "Retract",
+   "Ap": "0",
+   "effect": "Exits <buf ID=900111>[Directional Rack]</buf> Mode. Can continue to move after retracting.",
+   "icon": "Icon_skill_order_5004"
+  },
+  "2009062": {
+   "name": "Retract",
+   "Ap": "0",
+   "effect": "After exiting <buf ID=900025>[Rack]</buf> Mode, can continue to move.",
+   "icon": "Icon_skill_order_5004"
+  },
+  "3009062": {
+   "name": "Retract",
+   "Ap": "0",
+   "effect": "After exiting <buf ID=900025>[Rack]</buf> Mode, can continue to move.",
+   "icon": "Icon_skill_order_5004"
+  },
+  "4005062": {
+   "name": "Retract",
+   "Ap": "0",
+   "effect": "After exiting <buf ID=900025>[Rack]</buf> Mode, can continue to move.",
+   "icon": "Icon_skill_order_5004"
+  },
+  "5005063": {
+   "name": "Retract",
+   "Ap": "0",
+   "CD": "2",
+   "effect": "Exits <buf ID=900039>[Rack]</buf> Mode, then continues to move.",
+   "icon": "Icon_skill_order_3108"
   },
   "4010041": {
    "name": "All-Out Assault Tactics",
@@ -2115,7 +2170,7 @@
    "Ap": "0",
    "CD": "0",
    "icon": "Icon_skill_order_1119",
-   "effect": "Uses Chainsaw to attack all targets within <color=#F74848>1</color> ring area, dealing <color=#F74848>0.25x</color> AoE DMG. Inflicts <buf ID=7101701>[Armor Down I]</buf> on targets hit, lasting for <color=#F74848>1</color> turn. Also inflicts <color=#F74848>1</color> stack of <buf ID=5009234>[Vengeful Edge]</buf> to all targets hit."
+   "effect": "Uses Chainsaw to attack all targets within <color=#F74848>1</color> ring area, dealing <color=#F74848>0.25x</color> AoE DMG. Inflicts <buf ID=7101701>[Armor Down I]</buf> on targets hit, lasting for <color=#F74848>1</color> turn. Also inflicts <color=#F74848>1</color> stack of <buf ID=1019508>[Vengeful Edge]</buf> to all targets hit."
   },
   "1019501": {
    "name": "Hook - Grab",

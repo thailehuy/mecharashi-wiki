@@ -17,7 +17,7 @@
         {
           "ID": "53037",
           "name": "Piercing Flame Stream",
-          "SpecificEffects": "When initiating combat, the trail of <buf ID=900139>[Flame DMG]</buf> is extended by <color=#F74848>1</color> tile.",
+          "SpecificEffects": "When initiating combat, the trail of <buf ID=900065>[Flame DMG]</buf> is extended by <color=#F74848>1</color> tile.",
           "SkillIcon": "Icon_skill_passive_5228",
           "icon": "Icon_skill_passive_5228"
         }
@@ -93,7 +93,7 @@
         {
           "ID": "53037",
           "name": "Piercing Flame Stream",
-          "SpecificEffects": "When initiating combat, the trail of <buf ID=900139>[Flame DMG]</buf> is extended by <color=#F74848>1</color> tile.",
+          "SpecificEffects": "When initiating combat, the trail of <buf ID=900065>[Flame DMG]</buf> is extended by <color=#F74848>1</color> tile.",
           "SkillIcon": "Icon_skill_passive_5228",
           "icon": "Icon_skill_passive_5228"
         }
@@ -3121,7 +3121,7 @@
         {
           "ID": "90026",
           "name": "Shadow Execution",
-          "SpecificEffects": "Enhanced <skill mainSkill=101950>[Devouring Shadow]</skill>: When moving, ignores enemy unit obstruction. When activating <skill activeSkill=1019512>[Corrupting Shadow]</skill>, if the target already has Armor Down, effect increases by <color=#F74848>1</color> level, up to <buf ID=7101703>[Armor Down III]</buf>. For every <color=#F74848>1</color> enemy unit with <buf ID=5009234>[Vengeful Edge]</buf> on the battlefield, Chainsaw attack multiplier <color=#F74848>+0.06</color>, up to <color=#F74848>+0.24</color>.",
+          "SpecificEffects": "Enhanced <skill mainSkill=101950>[Devouring Shadow]</skill>: When moving, ignores enemy unit obstruction. When activating <skill activeSkill=1019512>[Corrupting Shadow]</skill>, if the target already has Armor Down, effect increases by <color=#F74848>1</color> level, up to <buf ID=7101703>[Armor Down III]</buf>. For every <color=#F74848>1</color> enemy unit with <buf ID=1019508>[Vengeful Edge]</buf> on the battlefield, Chainsaw attack multiplier <color=#F74848>+0.06</color>, up to <color=#F74848>+0.24</color>.",
           "SkillIcon": "Icon_skill_passive_5332",
           "icon": "Icon_skill_passive_5332"
         },

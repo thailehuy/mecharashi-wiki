@@ -4,14 +4,14 @@
     "name": "Poised Starburst",
     "effect": "When actively attacking, for each <color=#F74848>1</color> target hit, gains <color=#F74848>1</color> stack of <buf ID=1017503>[Poised I]</buf> after combat, stacking up to <color=#F74848>5</color> times. After actively attacking, if possessing <color=#F74848>5</color> or more stacks of <buf ID=1017503>[Poised I]</buf>, immediately removes <color=#F74848>5</color> stacks of <buf ID=1017503>[Poised I]</buf>, gains <color=#F74848>3</color> AP and the corresponding <buf ID=900138>[Temporary AP Cap]</buf>, and triggers <buf ID=900005>[Re-Act]</buf>. Can only trigger <color=#F74848>1</color> time per turn.",
     "icon": "Icon_skill_talent_1124",
-    "buffs": "1017501/1017502/900119"
+    "buffs": "1017501/1017502"
   },
   "101751": {
     "kind": "talent",
     "name": "Poised Starburst",
     "effect": "When actively attacking, for each <color=#F74848>1</color> Hit, gains <color=#F74848>1</color> stack of <buf ID=1017503>[Poised I]</buf> after combat, stacking up to <color=#F74848>5</color> times. After actively attacking, if possessing <color=#F74848>5</color> or more stacks of <buf ID=1017503>[Poised I]</buf>, immediately removes <color=#F74848>5</color> stacks of <buf ID=1017503>[Poised I]</buf>, gains <color=#F74848>3</color> AP and the corresponding <buf ID=900138>[Temporary AP Cap]</buf>, and triggers <buf ID=900005>[Re-Act]</buf>. Can only trigger <color=#F74848>1</color> time per turn.\nUpon deployment, gains <color=#F74848>2</color> stacks of <buf ID=1017503>[Poised I]</buf>. At start of action, if the <buf ID=900133>[Poised]</buf> AP regen effect was triggered during the last action, additionally regens <color=#F74848>1</color> AP.",
     "icon": "Icon_skill_talent_1124",
-    "buffs": "1017501/1017502/1017512/1017514/900119"
+    "buffs": "1017501/1017502/1017512/1017514"
   },
   "100011": {
     "kind": "neural",
@@ -173,7 +173,7 @@
   "101706": {
     "kind": "skill",
     "name": "Skybreaker Slash",
-    "describe": "Uses two Alter-Blades to attack all targets within an <range type=2>I-shaped (3x1-tile)</range> area or <range type=2>L-shaped (3x1-tile)</range> area ahead. Before attacking, can Aim at all targets separately, dealing <color=#F74848>1.5x</color> AoE DMG.",
+    "describe": "Uses two Alter-Blades to attack all targets within an <range type=2>I-shaped (3x1-tile)</range> area or <range type=2>L-shaped (3x1-tile)</range> area ahead. Before attacking, can <buf ID=900014>[Aim]</buf> at all targets separately, dealing <color=#F74848>1.5x</color> AoE DMG.",
     "icon": "Icon_skill_order_1137",
     "ap": "4",
     "type": "SpecialAssault"
@@ -283,7 +283,7 @@
   "200036": {
     "kind": "neural",
     "name": "Perfect Position 4",
-    "effect": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, the [Perfect Position 1] effect is increased to <color=#F74848>30%</color>.",
+    "effect": "When in combat with a target at <buf ID=900011>[Ideal Range]</buf>, the <buf ID=2000311>[Perfect Position 1]</buf> effect is increased to <color=#F74848>30%</color>.",
     "icon": "Icon_skill_passive_5007",
     "buffs": "2000361"
   },
@@ -442,7 +442,7 @@
   "202204": {
     "kind": "skill",
     "name": "Converging Flame",
-    "describe": "Uses a Flamethrower to attack a target, dealing <color=#F74848>1.2</color>x DMG and <color=#F74848>20%</color> <buf ID=900139>[Flame DMG]</buf> to other targets along the path. When in <buf ID=2022502>[Bunker]</buf> state, applies <color=#F74848>2</color> stacks of <buf ID=2022042>[Flame Fusion]</buf> to self.",
+    "describe": "Uses a Flamethrower to attack a target, dealing <color=#F74848>1.2</color>x DMG and <color=#F74848>20%</color> <buf ID=900065>[Flame DMG]</buf> to other targets along the path. When in <buf ID=2022502>[Bunker]</buf> state, applies <color=#F74848>2</color> stacks of <buf ID=2022042>[Flame Fusion]</buf> to self.",
     "icon": "Icon_skill_main_1024",
     "ap": "3",
     "type": "EquipmentSkill",
@@ -1172,7 +1172,7 @@
   "301235": {
     "kind": "neural",
     "name": "Hunter's Mark 3",
-    "effect": "[Hunter's Mark 1] can now trigger an unlimited number of times per turn.",
+    "effect": "<buf ID=900142>[Hunter's Mark 1]</buf> can now trigger an unlimited number of times per turn.",
     "icon": "Icon_skill_passive_5022",
     "buffs": "3012351"
   },
@@ -1287,14 +1287,14 @@
   "301450": {
     "kind": "talent",
     "name": "Morning Star",
-    "effect": "At the start of battle, automatically deploys <terrian ID=3014501 />. Can use command skills <skill mainSkill=301452>[Deploy Sentry]</skill> and <skill mainSkill=301453>[Sworn Enemy]</skill>. When an ally attack an enemy within range, performs <buf ID=900002>[Link Attack]</buf> with Sniper Rifle, dealing <color=#F74848>0.35x</color> DMG, prioritizing hitting the same part with the ally's attack, up to <color=#F74848>3</color> times per turn. If the <buf ID=900002>[Link Attack]</buf> destroys a part, it is considered as if the ally destroys a part. When performing attacks other than <buf ID=900153>[Weapon Skill]</buf>, gains <color=#F74848>1</color> stack of <buf ID=3014508>[Determination]</buf>, up to <color=#F74848>5</color> stacks.",
+    "effect": "At the start of battle, automatically deploys <terrian ID=3014501 />. Can use command skills <skill mainSkill=301452>[Deploy Sentry]</skill> and <skill mainSkill=301453>[Sworn Enemy]</skill>. When an ally attack an enemy within range, performs <buf ID=900002>[Link Attack]</buf> with Sniper Rifle, dealing <color=#F74848>0.35x</color> DMG, prioritizing hitting the same part with the ally's attack, up to <color=#F74848>3</color> times per turn. If the <buf ID=900002>[Link Attack]</buf> destroys a part, it is considered as if the ally destroys a part. When performing attacks other than <buf ID=900153>[Weapon Skill]</buf>, gains <color=#F74848>1</color> stack of <buf ID=3014508>[Determination]</buf>, up to <color=#F74848>5</color> stacks. When attacking with a Sniper Rifle, can attack enemies within <terrian ID=3014501 /> regardless of range.",
     "icon": "Icon_skill_talent_5163",
     "buffs": "3014501/3014502/3014503/3014512/3014520/3014509/3014517/3014519/3014514/3014515"
   },
   "301451": {
     "kind": "talent",
     "name": "Morning Star",
-    "effect": "At the start of battle, automatically deploys <terrian ID=3014501 />. Can use command skills <skill mainSkill=301452>[Deploy Sentry]</skill> and <skill mainSkill=301453>[Sworn Enemy]</skill>. When an ally attack an enemy within range, performs <buf ID=900002>[Link Attack]</buf> with Sniper Rifle, dealing <color=#F74848>0.35x</color> DMG, prioritizing hitting the same part with the ally's attack, up to <color=#F74848>3</color> times per turn. If the <buf ID=900002>[Link Attack]</buf> destroys a part, it is considered as if the ally destroys a part. When performing attacks other than <buf ID=900153>[Weapon Skill]</buf>, gains <color=#F74848>1</color> stack of <buf ID=3014508>[Determination]</buf>, up to <color=#F74848>5</color> stacks.\n<terrian ID=3014501 /> area increases to <color=#F74848>4</color> tiles.",
+    "effect": "At the start of battle, automatically deploys <terrian ID=3014501 />. Can use command skills <skill mainSkill=301452>[Deploy Sentry]</skill> and <skill mainSkill=301453>[Sworn Enemy]</skill>. When an ally attack an enemy within range, performs <buf ID=900002>[Link Attack]</buf> with Sniper Rifle, dealing <color=#F74848>0.35x</color> DMG, prioritizing hitting the same part with the ally's attack, up to <color=#F74848>3</color> times per turn. If the <buf ID=900002>[Link Attack]</buf> destroys a part, it is considered as if the ally destroys a part. When performing attacks other than <buf ID=900153>[Weapon Skill]</buf>, gains <color=#F74848>1</color> stack of <buf ID=3014508>[Determination]</buf>, up to <color=#F74848>5</color> stacks. When attacking with a Sniper Rifle, can attack enemies within <terrian ID=3014501 /> regardless of range.\n<terrian ID=3014501 /> area increases to <color=#F74848>4</color> tiles.",
     "icon": "Icon_skill_talent_5163",
     "buffs": "3014501/3014502/3014503/3014512/3014520/3014509/3014518/3014511/3014514/3014515"
   },
@@ -1358,7 +1358,7 @@
   "301406": {
     "kind": "skill",
     "name": "Highlights",
-    "describe": "Immediately gains <color=#F74848>2</color> AP and <color=#F74848>3</color> stacks of <buf ID=3014508>[Determination]</buf>. Can continue to act with remaining movement.",
+    "describe": "Immediately gains <color=#F74848>2</color> AP and <color=#F74848>3</color> stacks of <buf ID=3014508>[Determination]</buf>. Can continue to act with full Movement.",
     "icon": "Icon_skill_order_5131",
     "ap": "0",
     "cd": "3",
@@ -1374,7 +1374,7 @@
   "301408": {
     "kind": "skill",
     "name": "Bertha Assault",
-    "describe": "Uses a Sniper Rifle to attack a target, dealing <color=#F74848>1.35x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking. For each <color=#F74848>2</color> stacks of <buf ID=3014508>[Determination]</buf>, performs <color=#F74848>1</color> additional attack, prioritizing hitting the same part. Each additional attack deals <color=#F74848>-15%</color> less DMG, up to <color=#F74848>-60%</color> less than the first attack.",
+    "describe": "Uses a Sniper Rifle to attack a target, dealing <color=#F74848>1.35x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking. For each <color=#F74848>2</color> stacks of <buf ID=3014508>[Determination]</buf> consumed, performs <color=#F74848>1</color> additional attack, prioritizing hitting the same part. Each additional attack deals <color=#F74848>-15%</color> less DMG, up to <color=#F74848>-60%</color> less than the first attack.",
     "icon": "Icon_skill_main_1173",
     "ap": "4",
     "type": "EquipmentSkill"
@@ -2954,7 +2954,7 @@
   "102035": {
     "kind": "neural",
     "name": "Crusher 3",
-    "effect": "When activating <buf ID=900167>[Crusher]</buf> to destroy a part, negates the deduction of <color=#F74848>1</color> <buf ID=900004>[Re-ATK]</buf> or <buf ID=900005>[Re-Act]</buf> count and additionally restores <color=#F74848>1</color> AP. Can only trigger <color=#F74848>1</color> time per turn.",
+    "effect": "When activating <buf ID=900163>[Crusher]</buf> to destroy a part, negates the deduction of <color=#F74848>1</color> <buf ID=900004>[Re-ATK]</buf> or <buf ID=900005>[Re-Act]</buf> count and additionally restores <color=#F74848>1</color> AP. Can only trigger <color=#F74848>1</color> time per turn.",
     "icon": "Icon_skill_passive_5299",
     "buffs": "1020351/1020354"
   },
@@ -3027,7 +3027,7 @@
   "102006": {
     "kind": "skill",
     "name": "Crow Hunt",
-    "describe": "Uses Cutter to attack up to <color=#F74848>4</color> targets, dealing <color=#F74848>1.2x</color> AoE DMG. Can selects the same target repeatedly. Repeat attacks on the same target deal <color=#F74848>40%</color> DMG. After attacking, if any part HP is below <color=#F74848>2/3</color> of <buf ID=900167>[Crusher]</buf> threshold, that part is destroyed immediately.",
+    "describe": "Uses Cutter to attack up to <color=#F74848>4</color> targets, dealing <color=#F74848>1.2x</color> AoE DMG. Can selects the same target repeatedly. Repeat attacks on the same target deal <color=#F74848>40%</color> DMG. After attacking, if any part HP is below <color=#F74848>2/3</color> of <buf ID=900163>[Crusher]</buf> threshold, that part is destroyed immediately.",
     "icon": "Icon_skill_order_1012",
     "ap": "4",
     "type": "SpecialAssault"
@@ -3869,7 +3869,7 @@
   "202045": {
     "kind": "neural",
     "name": "Zone Contract 3",
-    "effect": "<buf ID=900002>[Link Attack]</buf> count of <buf ID=200001>[CEC 1]</buf> increases by <color=#F74848>+1</color>. For each <color=#F74848>4</color> <buf ID=900002>[Link Attack]</buf> triggered, gains <color=#F74848>1</color> AP.",
+    "effect": "<buf ID=900002>[Link Attack]</buf> count of <buf ID=2000011>[CEC 1]</buf> increases by <color=#F74848>+1</color>. For each <color=#F74848>4</color> <buf ID=900002>[Link Attack]</buf> triggered, gains <color=#F74848>1</color> AP.",
     "icon": "Icon_skill_passive_5282",
     "buffs": "2020451/2020452/2020453"
   },
@@ -4201,7 +4201,7 @@
   "101944": {
     "kind": "neural",
     "name": "Burning Karma 2",
-    "effect": "If <color=#F74848>1</color> or more stacks of <buf ID=5009234>[Vengeful Edge]</buf> are consumed this turn, gains <color=#F74848>1</color> AP at the end of turn.",
+    "effect": "If <color=#F74848>1</color> or more stacks of <buf ID=1019508>[Vengeful Edge]</buf> are consumed this turn, gains <color=#F74848>1</color> AP at the end of turn.",
     "icon": "Icon_skill_passive_5293",
     "buffs": "1019449"
   },
@@ -4229,7 +4229,7 @@
   "101903": {
     "kind": "skill",
     "name": "Fearless Resolve",
-    "effect": "For each <color=#F74848>1</color> enemy carrying <buf ID=5009234>[Vengeful Edge]</buf>, increases armor by <color=#F74848>15%</color>, up to <color=#F74848>60%</color>.",
+    "effect": "For each <color=#F74848>1</color> enemy carrying <buf ID=1019508>[Vengeful Edge]</buf>, increases armor by <color=#F74848>15%</color>, up to <color=#F74848>60%</color>.",
     "icon": "Icon_skill_passive_2117",
     "buffs": "1019031/1019032/1019033/1019034"
   },
@@ -4252,7 +4252,7 @@
   "101906": {
     "kind": "skill",
     "name": "Thorn Annihilation",
-    "describe": "Selects a main target. Uses a Chainsaw to attack all enemies within <color=#F74848>1</color> ring area, dealing <color=#F74848>0.9x</color> AoE DMG, consuming all <buf ID=5009234>[Vengeful Edge]</buf> on targets hit. Then attacks the main target, dealing <color=#F74848>0.9x</color> DMG. Each <color=#F74848>2</color> stacks of <buf ID=5009234>[Vengeful Edge]</buf> consumed increases the hit count of the second attack by <color=#F74848>+1</color>, up to <color=#F74848>+8</color>. This attack always hits the body.",
+    "describe": "Selects a main target. Uses a Chainsaw to attack all enemies within <color=#F74848>1</color> ring area, dealing <color=#F74848>0.9x</color> AoE DMG, consuming all <buf ID=1019508>[Vengeful Edge]</buf> on targets hit. Then attacks the main target, dealing <color=#F74848>0.9x</color> DMG. Each <color=#F74848>2</color> stacks of <buf ID=1019508>[Vengeful Edge]</buf> consumed increases the hit count of the second attack by <color=#F74848>+1</color>, up to <color=#F74848>+8</color>. This attack always hits the body.",
     "icon": "Icon_skill_main_1171",
     "ap": "4",
     "type": "EquipmentSkill"
@@ -4268,7 +4268,7 @@
   "101908": {
     "kind": "skill",
     "name": "Severance",
-    "describe": "Uses Chainsaw to attack a target, dealing <color=#F74848>0.7x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking. This attack does not consume <buf ID=5009234>[Vengeful Edge]</buf>. Triggers <buf ID=900004>[Re-ATK]</buf> after combat, allowing movement of <color=#F74848>2</color> tiles before attacking. This skill can only be used <color=#F74848>1</color> time per turn.",
+    "describe": "Uses Chainsaw to attack a target, dealing <color=#F74848>0.7x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking. This attack does not consume <buf ID=1019508>[Vengeful Edge]</buf>. Triggers <buf ID=900004>[Re-ATK]</buf> after combat, allowing movement of <color=#F74848>2</color> tiles before attacking. This skill can only be used <color=#F74848>1</color> time per turn.",
     "icon": "Icon_skill_main_1157",
     "ap": "1",
     "type": "EquipmentSkill"
@@ -4374,14 +4374,14 @@
     "name": "Good Medicine Tastes Bitter",
     "effect": "Can equip Manipulator in backpack slot, Manipulator weight reduces by <color=#F74848>-300</color>. When using Knuckle or Pilebunker to attack an enemy while carrying a Manipulator, deals <buf ID=900017>[Fixed DMG]</buf> equal to <color=#F74848>0.3x</color> Manipulator Repair AMT to the enemy part with lowest HP.",
     "icon": "Icon_skill_talent_3107",
-    "buffs": "5009501"
+    "buffs": "5009501/5009504"
   },
   "500951": {
     "kind": "talent",
     "name": "Good Medicine Tastes Bitter",
     "effect": "Can equip Manipulator in backpack slot, Manipulator weight reduces by <color=#F74848>-300</color>. When using Knuckle or Pilebunker to attack an enemy while carrying a Manipulator, deals <buf ID=900017>[Fixed DMG]</buf> equal to <color=#F74848>0.35x</color> Manipulator Repair AMT to the enemy part with lowest HP.\n<buf ID=5009418>[Resonance Pulse]</buf> DMG multiplier increases to <color=#F74848>0.35x</color>. Single target repair skills range <color=#F74848>+1</color>.",
     "icon": "Icon_skill_talent_3107",
-    "buffs": "5009501/5009511/5009513"
+    "buffs": "5009501/5009511/5009513/5009504"
   },
   "500931": {
     "kind": "neural",
@@ -4393,21 +4393,21 @@
   "500934": {
     "kind": "neural",
     "name": "Emergency Repair 2",
-    "effect": "<buf ID=900018>[Passive Repair]</buf> selects targets within the adjacent (<color=#F74848>2</color> tiles) area.",
+    "effect": "<buf ID=5000311>[Emergency Repair 1]</buf> selects targets within the adjacent (<color=#F74848>2</color> tiles) area.",
     "icon": "Icon_skill_passive_3002",
     "buffs": "5009341/5009342"
   },
   "500935": {
     "kind": "neural",
     "name": "Emergency Repair 3",
-    "effect": "<buf ID=900018>[Passive Repair]</buf>'s Repair AMT is now <color=#F74848>1x</color> that of the Manipulator.",
+    "effect": "<buf ID=5000311>[Emergency Repair 1]</buf>'s Repair AMT is now <color=#F74848>1x</color> that of the Manipulator.",
     "icon": "Icon_skill_passive_3002",
     "buffs": "5009351/5009352"
   },
   "500936": {
     "kind": "neural",
     "name": "Emergency Repair 4",
-    "effect": "The number of targets that <buf ID=900018>[Passive Repair]</buf> can repair increases by <color=#F74848>1</color>.",
+    "effect": "The number of targets that <buf ID=5000311>[Emergency Repair 1]</buf> can repair increases by <color=#F74848>1</color>.",
     "icon": "Icon_skill_passive_3002",
     "buffs": "5009361/5009362"
   },
@@ -4473,7 +4473,7 @@
   "500907": {
     "kind": "skill",
     "name": "Poison Cast",
-    "effect": "When talent [Good Medicine Tastes Bitter] or <buf ID=5009418>[Resonance Pulse]</buf> triggers, applies <color=#F74848>1</color> random debuff to the target, lasting for <color=#F74848>2</color> turns.",
+    "effect": "When talent <buf ID=5009501>[Good Medicine Tastes Bitter]</buf> or <buf ID=5009410>[Resonance Pulse]</buf> triggers, applies <color=#F74848>1</color> random debuff to the target, lasting for <color=#F74848>2</color> turns.",
     "icon": "Icon_skill_passive_5170",
     "buffs": "5009071"
   },
@@ -4729,7 +4729,7 @@
   "400506": {
     "kind": "skill",
     "name": "Root Control",
-    "describe": "Enters <buf ID=900025>[Rack]</buf> Mode: Cannot move, Missile Launcher's Range <color=#F74848>+1</color>, DMG <color=#F74848>+10%</color>. Can continue attacking after racking. Automatically exits <buf ID=900025>[Rack]</buf> Mode when an Arm is destroyed. <buf ID=900026>[Retract]</buf> is available in <buf ID=900025>[Rack]</buf> Mode. After retracting, can continue to move.",
+    "describe": "Enters <buf ID=900025>[Rack]</buf> Mode: Cannot move, Missile Launcher's Range <color=#F74848>+1</color>, DMG <color=#F74848>+10%</color>. Can continue attacking after racking. Automatically exits <buf ID=900025>[Rack]</buf> Mode when an Arm is destroyed. <skill ID=4005062>[Retract]</skill> is available in <buf ID=900025>[Rack]</buf> Mode. After retracting, can continue to move.",
     "icon": "Icon_skill_order_5004",
     "ap": "1",
     "cd": "1",
@@ -4824,7 +4824,7 @@
   "300906": {
     "kind": "skill",
     "name": "Absolute Territory",
-    "describe": "Enters <buf ID=900025>[Rack]</buf> Mode: Unable to move, Sniper Rifle's Range <color=#F74848>+2</color>, DMG <color=#F74848>+10%</color>. Can continue attacking after racking. ST automatically exits <buf ID=900025>[Rack]</buf> Mode when an Arm is destroyed. When in <buf ID=900025>[Rack]</buf> Mode, the <buf ID=900026>[Retract]</buf> code can be cast. After retracting, movement can continue.",
+    "describe": "Enters <buf ID=900025>[Rack]</buf> Mode: Unable to move, Sniper Rifle's Range <color=#F74848>+2</color>, DMG <color=#F74848>+10%</color>. Can continue attacking after racking. ST automatically exits <buf ID=900025>[Rack]</buf> Mode when an Arm is destroyed. When in <buf ID=900025>[Rack]</buf> Mode, the <skill ID=3009062>[Retract]</skill> code can be cast. After retracting, movement can continue.",
     "icon": "Icon_skill_order_5004",
     "ap": "1",
     "cd": "1",
@@ -5067,14 +5067,14 @@
   "301150": {
     "kind": "talent",
     "name": "Experimental Observation",
-    "effect": "Can use the <skill ID=301150>[Directional Rack]</skill> code. While in <skill ID=301150>[Directional Rack]</skill> Mode, each <color=#F74848>1</color> hit on an enemy unit grants <color=#F74848>1</color> stack of <buf ID=3011512>[Positional Advantage I]</buf>. While in <skill ID=301150>[Directional Rack]</skill> Mode, after using a code or active attack, if there are no enemy units within <color=#F74848>3</color> tiles, gains <buf ID=3004502>[Stealth I]</buf>, lasting for <color=#F74848>2</color> turns.",
+    "effect": "Can use the <skill ID=301150>[Directional Rack]</skill> code. While in <buf ID=900111>[Directional Rack]</buf> Mode, each <color=#F74848>1</color> hit on an enemy unit grants <color=#F74848>1</color> stack of <buf ID=3011512>[Positional Advantage I]</buf>. While in <buf ID=900111>[Directional Rack]</buf> Mode, after using a code or active attack, if there are no enemy units within <color=#F74848>3</color> tiles, gains <buf ID=3004502>[Stealth I]</buf>, lasting for <color=#F74848>2</color> turns.",
     "icon": "Icon_skill_talent_5147",
     "buffs": "3011501/3011516"
   },
   "301151": {
     "kind": "talent",
     "name": "Experimental Observation",
-    "effect": "Can use the <skill ID=301150>[Directional Rack]</skill> code. While in <skill ID=301150>[Directional Rack]</skill> Mode, each <color=#F74848>1</color> hit on an enemy unit grants <color=#F74848>1</color> stack of <buf ID=3011512>[Positional Advantage I]</buf>. While in <skill ID=301150>[Directional Rack]</skill> Mode, after using a code or active attack, if there are no enemy units within <color=#F74848>3</color> tiles, gains <buf ID=3004502>[Stealth I]</buf>, lasting for <color=#F74848>2</color> turns.\nThe <buf ID=3011512>[Positional Advantage I]</buf> stack limit increases by <color=#F74848>4</color>.",
+    "effect": "Can use the <skill ID=301150>[Directional Rack]</skill> code. While in <buf ID=900111>[Directional Rack]</buf> Mode, each <color=#F74848>1</color> hit on an enemy unit grants <color=#F74848>1</color> stack of <buf ID=3011512>[Positional Advantage I]</buf>. While in <buf ID=900111>[Directional Rack]</buf> Mode, after using a code or active attack, if there are no enemy units within <color=#F74848>3</color> tiles, gains <buf ID=3004502>[Stealth I]</buf>, lasting for <color=#F74848>2</color> turns.\nThe <buf ID=3011512>[Positional Advantage I]</buf> stack limit increases by <color=#F74848>4</color>.",
     "icon": "Icon_skill_talent_5147",
     "buffs": "3011501/3011511/3011515/3011516"
   },
@@ -5088,7 +5088,7 @@
   "301144": {
     "kind": "neural",
     "name": "Trickster 2",
-    "effect": "While in Directional Rack Mode, the <skill ID=301144>[Rapid Realignment]</skill> code can be used.",
+    "effect": "While in <buf ID=900111>[Directional Rack]</buf> Mode, the <skill ID=301144>[Rapid Realignment]</skill> code can be used.",
     "icon": "Icon_skill_passive_5246",
     "buffs": "3011441"
   },
@@ -5465,14 +5465,14 @@
     "name": "Helmsman",
     "effect": "When actively attacking with a Rocket Launcher, for each target hit, gains <color=#F74848>1</color> stack of <buf ID=4010500>[Intel]</buf>. Can stack up to <color=#F74848>25</color> times. Rocket Launcher Weight: <color=#F74848>-130</color>.",
     "icon": "Icon_skill_talent_5150",
-    "buffs": "4010512/4010515/4010506/4010507/900158"
+    "buffs": "4010512/4010515/4010506/4010507"
   },
   "401051": {
     "kind": "talent",
     "name": "Helmsman",
     "effect": "When actively attacking with a Rocket Launcher, gains <color=#F74848>1</color> stack of <buf ID=4010500>[Intel]</buf> for each target hit. Can stack up to <color=#F74848>25</color> times. Rocket Launcher Weight: <color=#F74848>-130</color>.\nWhen deployed, gains <color=#F74848>10</color> stacks of <buf ID=4010500>[Intel]</buf>.",
     "icon": "Icon_skill_talent_5150",
-    "buffs": "4010512/4010515/4010506/4010507/4010508/4010509/900158"
+    "buffs": "4010512/4010515/4010506/4010507/4010508/4010509"
   },
   "401041": {
     "kind": "neural",
@@ -5562,14 +5562,14 @@
     "name": "Coexistence Theory",
     "effect": "When sortieing, automatically deploys <buf ID=1099900>[Guggle]</buf>. <buf ID=1099900>[Guggle]</buf> can block Melee, Assault, and Ranged Weapon attacks for adjacent allies. <buf ID=1099900>[Guggle]</buf> inherits <color=#F74848>75%</color> of Sapientia's ST's Max HP and <color=#F74848>100%</color> of its other attributes.",
     "icon": "Icon_skill_talent_5152",
-    "buffs": "5008501/900159"
+    "buffs": "5008501"
   },
   "500851": {
     "kind": "talent",
     "name": "Coexistence Theory",
     "effect": "Automatically deploys <buf ID=1099900>[Guggle]</buf> when entering the battlefield. <buf ID=1099900>[Guggle]</buf> can block Melee, Assault, and Ranged Weapon attacks for allies within <color=#F74848>1</color> adjacent block. <buf ID=1099900>[Guggle]</buf> inherits <color=#F74848>75%</color> of Sapientia's ST's Max HP and <color=#F74848>100%</color> of its other attributes.\n<buf ID=1099900>[Guggle]</buf>'s Armor is increased by <color=#F74848>35%</color>, its DMG Taken is reduced by <color=#F74848>10%</color>, and it gains an extra <color=#F74848>1</color> AP when deployed.",
     "icon": "Icon_skill_talent_5152",
-    "buffs": "5008501/5008511/900159"
+    "buffs": "5008501/5008511"
   },
   "500841": {
     "kind": "neural",
@@ -5618,7 +5618,7 @@
   "500805": {
     "kind": "skill",
     "name": "Security Topology",
-    "effect": "After performing active repairs, grants <buf ID=1099905>[Immune to Code Inhibition]</buf> to the target, lasting for <color=#F74848>2</color> turns.",
+    "effect": "After performing active repairs, grants <buf ID=5008052>[Immune to Code Inhibition]</buf> to the target, lasting for <color=#F74848>2</color> turns.",
     "icon": "Icon_skill_passive_5189",
     "buffs": "5008051"
   },
@@ -5713,7 +5713,7 @@
   "500506": {
     "kind": "skill",
     "name": "Pochy Station!",
-    "effect": "Allows Pochy to shift to <buf ID=900039>[Rack]</buf> Mode: Unable to move. When allies end their action within <color=#F74848>3</color> adjacent tiles, automatically executes <buf ID=900018>[Passive Repair]</buf>, with a repair amount equal to <color=#F74848>1.0x</color> Pochy's Repair AMT. When in <buf ID=900039>[Rack]</buf> Mode, the <buf ID=900026>[Retract]</buf> Code becomes available. After retracting, Pochy can continue to move.",
+    "effect": "Allows Pochy to shift to <buf ID=900039>[Rack]</buf> Mode: Unable to move. When allies end their action within <color=#F74848>3</color> adjacent tiles, automatically executes <buf ID=900018>[Passive Repair]</buf>, with a repair amount equal to <color=#F74848>1.0x</color> Pochy's Repair AMT. When in <buf ID=900039>[Rack]</buf> Mode, the <skill ID=5005063>[Retract]</skill> Code becomes available. After retracting, Pochy can continue to move.",
     "icon": "Icon_skill_passive_3114",
     "buffs": "5005061"
   },
@@ -6255,14 +6255,14 @@
     "name": "Thousand Schemes",
     "effect": "At the start of action or when an ally uses a skill with <color=#F74848>4</color> AP cost or more, gains <color=#F74848>1</color> stack of <buf ID=5010502>[Stratagem]</buf>, up to <color=#F74848>5</color> stacks. At the end of action, can activate one of <skill activeSkill=5010501>[Stratagem - Respite]</skill>, <skill activeSkill=5010502>[Stratagem - Encouragement]</skill> or <skill activeSkill=5010503>[Stratagem - Bribery]</skill>. For each <color=#F74848>1</color> stack of <buf ID=5010502>[Stratagem]</buf> consumed, gains <color=#F74848>1</color> stack of <buf ID=5010506>[Shrewdness]</buf>, up to <color=#F74848>15</color> stacks.",
     "icon": "Icon_skill_talent_5162",
-    "buffs": "5010501/5010503/5010504/5010507/5010508"
+    "buffs": "5010469/5010501/5010503/5010504/5010507/5010508"
   },
   "501051": {
     "kind": "talent",
     "name": "Thousand Schemes",
     "effect": "At the start of action or when an ally uses a skill with <color=#F74848>4</color> AP cost or more, gains <color=#F74848>1</color> stack of <buf ID=5010502>[Stratagem]</buf>, up to <color=#F74848>5</color> stacks. At the end of action, can activate one of <skill activeSkill=5010501>[Stratagem - Respite]</skill>, <skill activeSkill=5010502>[Stratagem - Encouragement]</skill> or <skill activeSkill=5010503>[Stratagem - Bribery]</skill>. For each <color=#F74848>1</color> stack of <buf ID=5010502>[Stratagem]</buf> consumed, gains <color=#F74848>1</color> stack of <buf ID=5010506>[Shrewdness]</buf>, up to <color=#F74848>15</color> stacks.\nAll parts maximum HP increase by <color=#F74848>10%</color>. At the start of battle, gains <color=#F74848>2</color> stacks of <buf ID=5010502>[Stratagem]</buf> and <color=#F74848>5</color> stacks of <buf ID=5010506>[Shrewdness]</buf>.",
     "icon": "Icon_skill_talent_5162",
-    "buffs": "5010501/5010503/5010504/5010507/5010508/5010511/5010512/5010513"
+    "buffs": "5010469/5010501/5010503/5010504/5010507/5010508/5010511/5010512/5010513"
   },
   "501031": {
     "kind": "neural",
@@ -6666,7 +6666,7 @@
   "601005": {
     "kind": "skill",
     "name": "Electro-Surge",
-    "effect": "When using a shield to attack a target possessing <buf ID=6010502>[Magnetic Lock]</buf>, applies <buf ID=3006442>[Short Circuit II]</buf> and <buf ID=7101507>[Movement Inhibition II]</buf> to the target before combat, lasting for <color=#F74848>2</color> turns.",
+    "effect": "When using a shield to attack a target possessing <buf ID=6010502>[Magnetic Lock]</buf>, applies <buf ID=3006442>[Short Circuit II]</buf> and <buf ID=7101508>[Movement Inhibition II]</buf> to the target before combat, lasting for <color=#F74848>2</color> turns.",
     "icon": "Icon_skill_passive_5162",
     "buffs": "6010051"
   },
@@ -6779,14 +6779,14 @@
     "name": "World Savior",
     "effect": "For each <color=#F74848>1</color> ally within <color=#F74848>3</color> adjacent tiles, DMG dealt increases by <color=#F74848>5%</color> and DMG taken reduces by <color=#F74848>5%</color>, up to <color=#F74848>20%</color>. If an enemy boss is present, pilot's suitability increases by <color=#F74848>8%</color>.",
     "icon": "Icon_skill_talent_9601",
-    "buffs": "1018501/1018502/1018503"
+    "buffs": "1018501/1018502/1018503/1018504"
   },
   "101851": {
     "kind": "talent",
     "name": "World Savior",
     "effect": "For each <color=#F74848>1</color> ally within <color=#F74848>3</color> adjacent tiles, DMG dealt increases by <color=#F74848>5%</color> and DMG taken reduces by <color=#F74848>5%</color>, up to <color=#F74848>20%</color>. If an enemy boss is present, pilot's suitability increases by <color=#F74848>8%</color>.\nWhen actively attacking, own Firepower increases by <color=#F74848>2%</color> of current HP.",
     "icon": "Icon_skill_talent_9601",
-    "buffs": "1018501/1018502/1018503/1018511"
+    "buffs": "1018501/1018502/1018503/1018504/1018511"
   },
   "101831": {
     "kind": "neural",
@@ -6964,7 +6964,7 @@
   "200906": {
     "kind": "skill",
     "name": "Rack",
-    "describe": "Enters <buf ID=900025>[Rack]</buf> Mode: Cannot move. Heavy Machine Gun Range <color=#F74848>+2</color>, Bullets <color=#F74848>+1</color>. Can continue to attack after racking. Automatically exits <buf ID=900025>[Rack]</buf> Mode when an Arm is destroyed. <buf ID=900026>[Retract]</buf> is available in <buf ID=900025>[Rack]</buf> Mode. After retracting, can continue to move.",
+    "describe": "Enters <buf ID=900025>[Rack]</buf> Mode: Cannot move. Heavy Machine Gun Range <color=#F74848>+2</color>, Bullets <color=#F74848>+1</color>. Can continue to attack after racking. Automatically exits <buf ID=900025>[Rack]</buf> Mode when an Arm is destroyed. <skill ID=2009062>[Retract]</skill> is available in <buf ID=900025>[Rack]</buf> Mode. After retracting, can continue to move.",
     "icon": "Icon_skill_order_5004",
     "ap": "1",
     "cd": "1",
@@ -6983,14 +6983,14 @@
     "name": "Field-Tested",
     "effect": "After being actively attacked, if HP is below <color=#F74848>50%</color>, immediately triggers <color=#F74848>1</color> Manipulator passive repair effect after combat. Gains <buf ID=1016502>[Heroism I]</buf> according to current lost HP, gaining <color=#F74848>1</color> stack for every <color=#F74848>10%</color> HP lost, up to <color=#F74848>5</color> stacks.",
     "icon": "Icon_skill_talent_3106",
-    "buffs": "1016501/1016504/1016506"
+    "buffs": "1016501/1016504/1016505/1016506"
   },
   "101651": {
     "kind": "talent",
     "name": "Field-Tested",
     "effect": "After being actively attacked, if HP is below <color=#F74848>50%</color>, immediately triggers <color=#F74848>1</color> Manipulator passive repair effect after combat. Gains <buf ID=1016502>[Heroism I]</buf> based on current HP lost, gaining <color=#F74848>1</color> stack for every <color=#F74848>10%</color> HP lost. Can stack up to <color=#F74848>5</color> times.\nWhen a repair effect is triggered by the talent, can repair <color=#F74848>1</color> destroyed part. When deployed, gains <buf ID=1016514>[Absolute Will]</buf>.",
     "icon": "Icon_skill_talent_3106",
-    "buffs": "1016501/1016504/1016506/1016511/1016513"
+    "buffs": "1016501/1016504/1016505/1016506/1016511/1016513"
   },
   "101641": {
     "kind": "neural",
@@ -7068,7 +7068,7 @@
   "101608": {
     "kind": "skill",
     "name": "Zero Hour",
-    "describe": "Deducts HP from all of own parts equal to <color=#F74848>50%</color> of their Max HP, without destroying any parts, and gains <color=#F74848>3</color> AP and <buf ID=7100901>[Movement UP]</buf> for <color=#F74848>2</color> turns. Can then trigger <buf ID=900005>[Re-Act]</buf> and move using full Movement.",
+    "describe": "Deducts HP from all of own parts equal to <color=#F74848>50%</color> of their Max HP, without destroying any parts, and gains <color=#F74848>3</color> AP and <buf ID=7100902>[Movement UP]</buf> for <color=#F74848>2</color> turns. Can then trigger <buf ID=900005>[Re-Act]</buf> and move using full Movement.",
     "icon": "Icon_skill_order_5144",
     "ap": "0",
     "cd": "3",
@@ -9033,7 +9033,7 @@
   "53037": {
     "kind": "weapon",
     "name": "Piercing Flame Stream",
-    "effect": "When initiating combat, the trail of <buf ID=900139>[Flame DMG]</buf> is extended by <color=#F74848>1</color> tile.",
+    "effect": "When initiating combat, the trail of <buf ID=900065>[Flame DMG]</buf> is extended by <color=#F74848>1</color> tile.",
     "icon": "Icon_skill_passive_5228",
     "buffs": "530371"
   },
@@ -9773,7 +9773,7 @@
   "90026": {
     "kind": "weapon",
     "name": "Shadow Execution",
-    "effect": "Enhanced <skill mainSkill=101950>[Devouring Shadow]</skill>: When moving, ignores enemy unit obstruction. When activating <skill activeSkill=1019512>[Corrupting Shadow]</skill>, if the target already has Armor Down, effect increases by <color=#F74848>1</color> level, up to <buf ID=7101703>[Armor Down III]</buf>. For every <color=#F74848>1</color> enemy unit with <buf ID=5009234>[Vengeful Edge]</buf> on the battlefield, Chainsaw attack multiplier <color=#F74848>+0.06</color>, up to <color=#F74848>+0.24</color>.",
+    "effect": "Enhanced <skill mainSkill=101950>[Devouring Shadow]</skill>: When moving, ignores enemy unit obstruction. When activating <skill activeSkill=1019512>[Corrupting Shadow]</skill>, if the target already has Armor Down, effect increases by <color=#F74848>1</color> level, up to <buf ID=7101703>[Armor Down III]</buf>. For every <color=#F74848>1</color> enemy unit with <buf ID=1019508>[Vengeful Edge]</buf> on the battlefield, Chainsaw attack multiplier <color=#F74848>+0.06</color>, up to <color=#F74848>+0.24</color>.",
     "icon": "Icon_skill_passive_5332"
   },
   "90027": {
@@ -10277,7 +10277,7 @@
   "101901": {
     "kind": "skill",
     "name": "Splitter",
-    "describe": "Uses a Chainsaw to attack a target, dealing <color=#F74848>1.1x</color> DMG. Consumes all <buf ID=5009234>[Vengeful Edge]</buf> on target hit. This attack always hits the part with lowest HP.",
+    "describe": "Uses a Chainsaw to attack a target, dealing <color=#F74848>1.1x</color> DMG. Consumes all <buf ID=1019508>[Vengeful Edge]</buf> on target hit. This attack always hits the part with lowest HP.",
     "icon": "Icon_skill_main_1156",
     "ap": "2",
     "type": "EquipmentSkill"
@@ -10310,7 +10310,7 @@
   "501001": {
     "kind": "skill",
     "name": "Flame Strike",
-    "describe": "Uses a Flamethrower to attack a target, dealing <color=#F74848>1.2x</color> DMG and <color=#F74848>20%</color> <buf ID=900139>[Flame DMG]</buf> to other targets along the path. After combat, applies <terrian ID=4003081 /> to all tiles along the attack path, lasting <color=#F74848>2</color> turns. Can activate <buf ID=5010468>[Stratagem Infusion]</buf> to increase <buf ID=900139>[Flame DMG]</buf> to <color=#F74848>40%</color>.",
+    "describe": "Uses a Flamethrower to attack a target, dealing <color=#F74848>1.2x</color> DMG and <color=#F74848>20%</color> <buf ID=900065>[Flame DMG]</buf> to other targets along the path. After combat, applies <terrian ID=4003081 /> to all tiles along the attack path, lasting <color=#F74848>2</color> turns. Can activate <buf ID=5010468>[Stratagem Infusion]</buf> to increase <buf ID=900065>[Flame DMG]</buf> to <color=#F74848>40%</color>.",
     "icon": "Icon_skill_main_1151",
     "ap": "3",
     "cd": "0",
@@ -10320,7 +10320,7 @@
     "kind": "skill",
     "name": "Fierce Assault",
     "describe": "Uses a Shotgun to attack a target, dealing <color=#F74848>1.4x</color> DMG. Before attacking, gains <color=#F74848>1</color> random debuff, lasting for <color=#F74848>2</color> turns.",
-    "icon": "Icon_skill_main_1105",
+    "icon": "Icon_skill_main_9501",
     "ap": "3",
     "cd": "0",
     "type": "EquipmentSkill"
@@ -10338,7 +10338,7 @@
     "kind": "skill",
     "name": "Guard",
     "describe": "Protects allies within <color=#F74848>2</color> adjacent tiles from Assault and Ranged attacks. Triggers up to <color=#F74848>2</color> times per turn and lasts <color=#F74848>2</color> turns. Additionally, gains <buf ID=7100701>[Defensive Stance I]</buf>. Can only trigger <color=#F74848>1</color> time per turn.",
-    "icon": "Icon_skill_order_1031",
+    "icon": "Icon_skill_order_5001",
     "ap": "1",
     "cd": "2",
     "type": "Order"
@@ -10570,7 +10570,7 @@
   "201701": {
     "kind": "skill",
     "name": "Suppressive Assault",
-    "describe": "Uses HMG to attack a target, dealing <color=#F74848>1.3x</color> DMG. Can activate <buf ID=900125>[Fury Unleashed]</buf>. When <color=#F74848>2</color> stacks of <buf ID=2017500>[Fury]</buf> are consumed, this attack cannot be dodged.",
+    "describe": "Uses a Heavy Machine Gun to attack a target, dealing <color=#F74848>1.3x</color> DMG. Can activate <buf ID=900125>[Fury Unleashed]</buf>. When consuming <color=#F74848>2</color> stacks of <buf ID=2017500>[Fury]</buf>, this attack cannot be dodged.",
     "icon": "Icon_skill_main_1105",
     "ap": "3",
     "type": "EquipmentSkill"
@@ -10588,7 +10588,6 @@
     "kind": "skill",
     "name": "Precision Surgery",
     "describe": "Uses a Sniper Rifle to attack a target, dealing <color=#F74848>1.2x</color> DMG. When in <buf ID=900111>[Directional Rack]</buf> Mode, enters <buf ID=900014>[Aiming]</buf> Mode before attacking.",
-    "effect": "When attacking without having moved this turn, DMG <color=#F74848>+15%</color>.",
     "icon": "Icon_skill_main_1137",
     "ap": 2,
     "type": "EquipmentSkill"

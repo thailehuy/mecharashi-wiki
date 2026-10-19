@@ -468,7 +468,7 @@ Pages.pilots = {
     return '<div class="pilot-attr-chart skill-card">' + cells + '</div>';
   },
 
-  // AP line in the Neural Drive heading.
+  // AP line at the top of the Neural Drive tab.
   //   Initial: base + Neural (+ potential in brackets), base set by hand above.
   //   Cap / Recovery: mined base (+ Neural in brackets).
   // Only unconditional Neural nodes count ("Initial AP +N.", "AP Cap +N.", "AP Regen +N.").
@@ -486,7 +486,7 @@ Pages.pilots = {
     function fmt(label, base, add) {
       if (base === undefined || base === '') return null;
       var n = parseFloat(base);
-      return label + ': ' + base + (add && !isNaN(n) ? '(' + (n + add) + ')' : '');
+      return label + ' ' + base + (add && !isNaN(n) ? ' (' + (n + add) + ')' : '');
     }
     var initBase = (PILOT_BASE_INIT_AP[occupation] || PILOT_BASE_INIT_AP._default) + neural.init;
     var parts = [
@@ -494,7 +494,7 @@ Pages.pilots = {
       fmt('Cap', stats.MaximumPilotAPValue_PilotAPMaxBase, neural.max),
       fmt('Recovery', stats.PilotAPRecoveryperTurn_PilotAPRecoverBase, neural.rec)
     ].filter(Boolean);
-    return '<span class="nd-ap">AP: ' + $('<span>').text(parts.join(', ')).html() + '</span>';
+    return '<span class="nd-ap">AP: ' + $('<span>').text(parts.join(' - ')).html() + '</span>';
   },
 
 
@@ -806,7 +806,7 @@ Pages.pilots = {
 
     return (
       '<div class="nd-section">' +
-        '<div class="section-heading nd-heading">Neural Drive' + apLine + '</div>' +
+        (apLine ? '<div class="nd-ap-row">' + apLine + '</div>' : '') +
         (parts ? '<div class="nd-parts">' + parts + '</div>' : '') +
       '</div>'
     );
