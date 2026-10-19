@@ -71,6 +71,13 @@ Pages.story = {
         href = App.href('sts', m.name);
       }
       label += '<small class="boss-drop-q">ST</small>';
+    } else if (r.kind === 'backpack') {
+      var b = kit.backpacks[r.id];
+      if (b) {
+        img = '<img src="' + BACKPACK_ICON_BASE + encodeURIComponent(b.icon) + '.png" alt="" loading="lazy" />';
+        href = App.href('backpacks', backpackSlug(b));
+        label += '<small class="boss-drop-q boss-drop-q-' + esc(b.quality.toLowerCase()) + '">' + esc(b.quality) + '</small>';
+      }
     } else if (r.icon) {
       // Accessories use a pilot skill icon; other items were extracted into the assets repo's data/items/.
       var dir = /^Icon_skill_/.test(r.icon) ? 'data/unlisted/pilot_skills/' : 'data/items/';
@@ -186,9 +193,10 @@ Pages.story = {
   },
 
   _kit: function () {
-    var kit = { pilots: {}, mechs: {}, weaponNames: {} };
+    var kit = { pilots: {}, mechs: {}, backpacks: {}, weaponNames: {} };
     ((window.PilotsData || {}).pilots || []).forEach(function (p) { kit.pilots[p.ID] = p; });
     ((window.MechsData || {}).mechs || []).forEach(function (m) { kit.mechs[m.ID] = m; });
+    ((window.BackpacksData || {}).backpacks || []).forEach(function (b) { kit.backpacks[b.ID] = b; });
     ((window.WeaponsData || {}).weapons || []).forEach(function (w) { kit.weaponNames[w.name] = true; });
     return kit;
   },

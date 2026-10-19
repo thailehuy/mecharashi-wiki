@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Extract the item icons the boss drops (bosses.json), crafting materials
-(data/db/materials.json) and story stage rewards (data/story/story.json) use from the game's bundles into the assets repo
+(data/db/materials.json), story stage rewards (data/story/story.json), Elite Battle rewards
+(data/elite/elite.json) and Simulated Battle rewards (data/sim/sim.json) use from the game's bundles into the assets repo
 (data/items/<icon>.png), and the Story page's Border Conflict foes' portraits
 (data/unlisted/pilot_images_half/<portrait>.png).
 
@@ -30,6 +31,8 @@ import settings  # noqa: E402
 BOSSES = os.path.join(HERE, 'bosses.json')
 MATERIALS = os.path.join(ROOT, 'data', 'db', 'materials.json')
 STORY = os.path.join(ROOT, 'data', 'story', 'story.json')
+ELITE = os.path.join(ROOT, 'data', 'elite', 'elite.json')
+SIM = os.path.join(ROOT, 'data', 'sim', 'sim.json')
 ASSETS_DIR = os.environ.get('ASSETS_DIR', os.path.join(os.path.dirname(ROOT), 'mecharashi-wiki-assets'))
 OUT_DIR = os.path.join(ASSETS_DIR, 'data', 'items')
 PORTRAIT_DIR = os.path.join(ASSETS_DIR, 'data', 'unlisted', 'pilot_images_half')
@@ -59,6 +62,20 @@ def needed_icons():
         rewards = [r for st in stages for t in st.get('tiers', [st]) for r in t.get('rewards', [])]
         icons |= {r['icon'] for r in rewards
                   if r['kind'] == 'item' and r.get('icon') and not r['icon'].startswith('Icon_skill_')}
+    if os.path.exists(ELITE):
+        with open(ELITE, encoding='utf-8') as f:
+            elite = json.load(f)
+        # Each stage's clear and achievement rewards, and each chapter's star rewards.
+        rewards = [r for c in elite['chapters'] for s in c['starRewards'] for r in s['rewards']] + \
+                  [r for c in elite['chapters'] for st in c['stages']
+                   for r in st['rewards'] + [x for a in st['achievements'] for x in a['rewards']]]
+        icons |= {r['icon'] for r in rewards
+                  if r['kind'] == 'item' and r.get('icon') and not r['icon'].startswith('Icon_skill_')}
+    if os.path.exists(SIM):
+        with open(SIM, encoding='utf-8') as f:
+            sim = json.load(f)
+        icons |= {r['icon'] for c in sim['chapters'] for st in c['stages'] for r in st['rewards']
+                  if r['kind'] == 'item' and r.get('icon')}
     return icons
 
 

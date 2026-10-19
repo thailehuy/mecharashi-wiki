@@ -263,6 +263,8 @@ MISC_DESCRIPTIONS = {
     'bosses':     'Every Armed Conquest and Clearance Ops boss, with the seasons and chapters it appears in.',
     'armedconquest': 'Bosses and HP per difficulty of every Armed Conquest season, each with a page of its bosses\' skills.',
     'clearanceops':  'Bosses and HP of every Clearance Ops chapter, each with a page of its bosses\' skills.',
+    'elitebattle':   'Every Elite Battle stage with its win and star conditions, achievements and rewards.',
+    'simulatedbattle': 'Every Simulated Battle stage with its modifiers, win conditions, chip algorithm unlocks and rewards.',
 }
 
 

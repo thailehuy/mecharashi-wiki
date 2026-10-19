@@ -4169,3 +4169,37 @@ a.boss-avatar { display: block; }
   .story-chapter > :not(summary),
   .story-stage--encounter { margin-left: 0.5rem; }
 }
+
+/* Elite Battle: a stage's conditions, achievements and rewards; chapters as on the Story page. */
+.elite-stage { scroll-margin-top: 80px; }
+.elite-star-rewards { margin-bottom: 0.5rem; }
+.elite-star-rewards .story-part-title { margin-top: 0; }
+.elite-star-rewards .boss-gear-label .bi,
+.elite-stars .bi { color: #ffcf5c; font-size: 0.75em; }
+.elite-conds { display: grid; grid-template-columns: max-content 1fr; gap: 0.25rem 0.75rem; margin: 0.6rem 0 0; font-size: 0.9rem; }
+.elite-conds dt { font-weight: 700; }
+.elite-conds dd { margin: 0; }
+.elite-win { color: #4ade80; }
+.elite-lose { color: #f87171; }
+.elite-star { color: #ffcf5c; }
+.elite-stars { list-style: none; margin: 0; padding: 0; }
+.elite-stars .bi { margin-right: 0.4rem; }
+.elite-achs { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.9rem; }
+.elite-achs b { color: #ffffff; }
+.elite-ach-text { color: #cbd5e1; }
+.elite-achs .boss-drop-list { margin-top: 0.25rem; }
+
+/* Simulated Battle: a stage's modifiers, each battle of a Chain Sim and the chip algorithm it unlocks; the rest as on Elite Battle. */
+.sim-mods { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.9rem; }
+.sim-mod { display: flex; gap: 0.6rem; align-items: flex-start; }
+.sim-mod-head { display: flex; flex-wrap: wrap; align-items: center; gap: 0.35rem; }
+.sim-mod-head b { color: #ffffff; }
+.sim-mod-head .tag { font-size: 0.7rem; }
+.sim-side-enemies { background-color: #7f1d1d; color: #fecaca; }
+.sim-side-allies { background-color: #14532d; color: #bbf7d0; }
+.sim-mod-text { color: #cbd5e1; }
+.elite-conds .sim-battle { grid-column: 1 / -1; color: #deb072; margin-top: 0.25rem; }
+.elite-conds .sim-battle:first-child { margin-top: 0; }
+.sim-unlock { margin-top: 0.6rem; font-size: 0.9rem; color: #cbd5e1; }
+.sim-unlock .bi { color: #deb072; margin-right: 0.4rem; }
+.sim-unlock b { color: #ffffff; }

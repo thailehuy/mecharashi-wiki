@@ -52,8 +52,8 @@ opened. Mid-battle dialogue isn't included.
 A stage's rewards are its RewardDropId (ConfigDataItemDropInfo): the items the
 mission screen shows (UIShowItemList) plus the guaranteed ones
 (CertainDropList), each once; a guaranteed item's fixed amount is used when
-the shown list has none. Pilots and STs (an ST's Body/Arms/Legs collapse into
-the ST) link to their wiki pages by ID.
+the shown list has none. Pilots, STs (an ST's Body/Arms/Legs collapse into
+the ST) and backpacks link to their wiki pages by ID.
 """
 import json
 import os
@@ -157,6 +157,7 @@ class Rewards:
             'SELECT ID, NameStrKey_EN, Icon FROM ConfigDataPlotActivityBlindBoxItemInfo')}
         self.pilots = load('pilots')
         self.mechs = load('mechs')
+        self.backpacks = load('backpacks')
 
     def get(self, drop_id, where):
         shown, certain = self.d.lists(drop_id)
@@ -186,6 +187,12 @@ class Rewards:
                     print('%s: no ST for part %d' % (where, x['configId']))
                 elif not any(r.get('id') == mid for r in out):
                     out.append({'kind': 'st', 'id': mid, 'name': self.mechs[mid]['name']})
+            elif x['type'] == 'ItemType_Backpack':
+                bid = str(x['configId'])
+                if bid not in self.backpacks:
+                    print('%s: backpack %s not on the wiki' % (where, bid))
+                    continue
+                out.append({'kind': 'backpack', 'id': bid, 'name': self.backpacks[bid]['name']})
             else:
                 item = self.d.item(dict(x, count=-1))
                 item['kind'] = 'item'

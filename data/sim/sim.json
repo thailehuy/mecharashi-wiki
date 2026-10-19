@@ -1,0 +1,3008 @@
+{
+  "chapters": [
+    {
+      "id": 1,
+      "algorithm": "α",
+      "stages": [
+        {
+          "id": 1,
+          "code": "1-1",
+          "name": "Regular Sim",
+          "energy": 10,
+          "battles": [
+            {
+              "energy": 10,
+              "win": "Defeat all enemies!",
+              "lose": "Any of your units are destroyed or you exceed 8 turns."
+            }
+          ],
+          "modifiers": [
+            {
+              "name": "Shot-Susceptible Armor",
+              "icon": "Icon_skill_passive_5116",
+              "text": "When attacked by a Ranged Weapon, DMG Taken <color=#F74848>+20%</color>.",
+              "side": "enemies"
+            }
+          ],
+          "unlocks": {
+            "algorithm": "α",
+            "power": 1,
+            "quality": "SR"
+          },
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 10
+            },
+            {
+              "name": "Obsidian Impact Unit",
+              "icon": "Icon_chipicon_1004001",
+              "kind": "item",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "code": "1-2",
+          "name": "Regular Sim",
+          "energy": 10,
+          "battles": [
+            {
+              "energy": 10,
+              "win": "Defeat all enemies!",
+              "lose": "Any of your units are destroyed or you exceed 8 turns."
+            }
+          ],
+          "modifiers": [
+            {
+              "name": "Melee-Susceptible Armor",
+              "icon": "Icon_skill_passive_5116",
+              "text": "When attacked by a Melee Weapon, DMG Taken <color=#F74848>+20%</color>.",
+              "side": "enemies"
+            }
+          ],
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 10
+            },
+            {
+              "name": "Union Toughness Loop - H",
+              "icon": "Icon_chipicon_1006003",
+              "kind": "item",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "code": "1-3",
+          "name": "Regular Sim",
+          "energy": 10,
+          "battles": [
+            {
+              "energy": 10,
+              "win": "Defeat all enemies!",
+              "lose": "Any of your units are destroyed or you exceed 8 turns."
+            }
+          ],
+          "modifiers": [
+            {
+              "name": "Scavenger",
+              "icon": "Icon_skill_passive_1134",
+              "text": "After actively attacking, restores HP equal to <color=#F74848>50%</color> of the damage dealt.",
+              "side": "enemies"
+            }
+          ],
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 10
+            },
+            {
+              "name": "Doll Impact Matrix",
+              "icon": "Icon_chipicon_1001001",
+              "kind": "item",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "code": "1-4",
+          "name": "Regular Sim",
+          "energy": 10,
+          "battles": [
+            {
+              "energy": 10,
+              "win": "Defeat all enemies!",
+              "lose": "Any of your units are destroyed or you exceed 8 turns."
+            }
+          ],
+          "modifiers": [
+            {
+              "name": "Brake Malfunction",
+              "icon": "Icon_skill_passive_5004",
+              "text": "AP Regen per turn <color=#F74848>-1</color>.",
+              "side": "allies"
+            }
+          ],
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 10
+            },
+            {
+              "name": "Horizon EW Sensor - L",
+              "icon": "Icon_chipicon_1002001",
+              "kind": "item",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "code": "1-5",
+          "name": "Regular Sim",
+          "energy": 10,
+          "battles": [
+            {
+              "energy": 10,
+              "win": "Defeat all enemies!",
+              "lose": "Any of your units are destroyed or you exceed 8 turns."
+            }
+          ],
+          "modifiers": [
+            {
+              "name": "Retaliation Specialization",
+              "icon": "Icon_skill_passive_1144",
+              "text": "When retaliating, DMG Dealt <color=#F74848>+100%</color>.",
+              "side": "enemies"
+            }
+          ],
+          "unlocks": {
+            "algorithm": "α",
+            "power": 1,
+            "quality": "SSR"
+          },
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 30
+            },
+            {
+              "name": "Union Toughness Loop - H",
+              "icon": "Icon_chipicon_1006003",
+              "kind": "item",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "algorithm": "α",
+      "stages": [
+        {
+          "id": 6,
+          "code": "2-1",
+          "name": "Regular Sim",
+          "energy": 10,
+          "battles": [
+            {
+              "energy": 10,
+              "win": "Defeat all enemies!",
+              "lose": "Any of your units are destroyed or you exceed 8 turns."
+            }
+          ],
+          "modifiers": [
+            {
+              "name": "High Morale",
+              "icon": "Icon_skill_passive_1003",
+              "text": "At end of action, DMG Dealt <color=#F74848>+30%</color>. Removed after being hit by an attack.",
+              "side": "enemies"
+            }
+          ],
+          "unlocks": {
+            "algorithm": "α",
+            "power": 2,
+            "quality": "SR"
+          },
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 10
+            },
+            {
+              "name": "Doll Impact Matrix",
+              "icon": "Icon_chipicon_1001001",
+              "kind": "item",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "code": "2-2",
+          "name": "Regular Sim",
+          "energy": 10,
+          "battles": [
+            {
+              "energy": 10,
+              "win": "Defeat all enemies!",
+              "lose": "Any of your units are destroyed or you exceed 8 turns."
+            }
+          ],
+          "modifiers": [
+            {
+              "name": "Drive Lock",
+              "icon": "Icon_skill_passive_1110",
+              "text": "After attacking during [Your Turn], <color=#F74848>35%</color> chance to inflict <buf ID=13000010>[Crash]</buf> on the target hit, lasting for <color=#F74848>1</color> turn.",
+              "side": "both"
+            }
+          ],
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 10
+            },
+            {
+              "name": "Union Toughness Loop - M",
+              "icon": "Icon_chipicon_1006002",
+              "kind": "item",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "code": "2-3",
+          "name": "Regular Sim",
+          "energy": 10,
+          "battles": [
+            {
+              "energy": 10,
+              "win": "Defeat all enemies!",
+              "lose": "Any of your units are destroyed or you exceed 8 turns."
+            }
+          ],
+          "modifiers": [
+            {
+              "name": "Aim Block",
+              "icon": "Icon_skill_passive_2121",
+              "text": "When there are no enemies within <color=#F74848>1</color> adjacent tile, DMG Taken <color=#F74848>-50%</color>.",
+              "side": "enemies"
+            }
+          ],
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 10
+            },
+            {
+              "name": "Obsidian Impact Core",
+              "icon": "Icon_chipicon_1005001",
+              "kind": "item",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "code": "2-4",
+          "name": "Regular Sim",
+          "energy": 10,
+          "battles": [
+            {
+              "energy": 10,
+              "win": "Defeat two enemy bosses!",
+              "lose": "Any of your units are destroyed or you exceed 8 turns."
+            }
+          ],
+          "modifiers": [
+            {
+              "name": "Team Core",
+              "icon": "Icon_skill_passive_2121",
+              "text": "<color=#F28341>[Boss]</color> When there are allies within <color=#F74848>3</color> adjacent tiles, DMG Dealt <color=#F74848>+30%</color> and DMG Taken <color=#F74848>-50%</color>.",
+              "side": "enemies"
+            }
+          ],
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 10
+            },
+            {
+              "name": "Obsidian Calibration Unit",
+              "icon": "Icon_chipicon_1004003",
+              "kind": "item",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "code": "2-5",
+          "name": "Regular Sim",
+          "energy": 10,
+          "battles": [
+            {
+              "energy": 10,
+              "win": "Defeat the enemy boss!",
+              "lose": "Any of your units are destroyed or you exceed 8 turns."
+            }
+          ],
+          "modifiers": [
+            {
+              "name": "Postwar Redistribution",
+              "icon": "Icon_skill_passive_1003",
+              "text": "At end of action, DMG Dealt <color=#F74848>+20%</color>. Stacks up to <color=#F74848>5</color> times.",
+              "side": "enemies"
+            }
+          ],
+          "unlocks": {
+            "algorithm": "α",
+            "power": 2,
+            "quality": "SSR"
+          },
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 30
+            },
+            {
+              "name": "Doll Attrition Matrix",
+              "icon": "Icon_chipicon_1001004",
+              "kind": "item",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "algorithm": "β",
+      "stages": [
+        {
+          "id": 11,
+          "code": "3-1",
+          "name": "Regular Sim",
+          "energy": 10,
+          "battles": [
+            {
+              "energy": 10,
+              "win": "Defeat all enemies!",
+              "lose": "Any of your units are destroyed or you exceed 8 turns."
+            }
+          ],
+          "modifiers": [
+            {
+              "name": "Calibration Imbalance",
+              "icon": "Icon_skill_passive_5123",
+              "text": "When actively attacking, if the target is more than <color=#F74848>1</color> tile away, this attack's DMG Dealt <color=#F74848>-20%</color> for each additional tile away, up to <color=#F74848>80%</color> at a distance of <color=#F74848>5</color> tiles.",
+              "side": "allies"
+            }
+          ],
+          "unlocks": {
+            "algorithm": "β",
+            "power": 1,
+            "quality": "SR"
+          },
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 10
+            },
+            {
+              "name": "SEED Stabilize Sensor - M",
+              "icon": "Icon_chipicon_1003002",
+              "kind": "item",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "code": "3-2",
+          "name": "Regular Sim",
+          "energy": 10,
+          "battles": [
+            {
+              "energy": 10,
+              "win": "Defeat all enemies!",
+              "lose": "Any of your units are destroyed or you exceed 8 turns."
+            }
+          ],
+          "modifiers": [
+            {
+              "name": "Nanobots",
+              "icon": "Icon_skill_passive_3116",
+              "text": "When being repaired, Repair AMT <color=#F74848>+100%</color> and repairs all destroyed parts.",
+              "side": "enemies"
+            }
+          ],
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 10
+            },
+            {
+              "name": "Obsidian Calibration Unit",
+              "icon": "Icon_chipicon_1004003",
+              "kind": "item",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "code": "3-3",
+          "name": "Regular Sim",
+          "energy": 10,
+          "battles": [
+            {
+              "energy": 10,
+              "win": "Defeat all enemies!",
+              "lose": "Any of your units are destroyed or you exceed 8 turns."
+            }
+          ],
+          "modifiers": [
+            {
+              "name": "Reckless Mod",
+              "icon": "Icon_skill_passive_1110",
+              "text": "ATK <color=#F74848>+200%</color>. When actively attacking and dealing damage, gains <buf ID=13000010>[Crash]</buf> after combat, lasting for <color=#F74848>1</color> turn.",
+              "side": "enemies"
+            }
+          ],
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 10
+            },
+            {
+              "name": "Kamadar Tolerance Pipeline - L",
+              "icon": "Icon_chipicon_1007001",
+              "kind": "item",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": 14,
+          "code": "3-4",
+          "name": "Regular Sim",
+          "energy": 10,
+          "battles": [
+            {
+              "energy": 10,
+              "win": "Defeat all enemies!",
+              "lose": "Any of your units are destroyed or you exceed 8 turns."
+            }
+          ],
+          "modifiers": [
+            {
+              "name": "Maneuver Loop",
+              "icon": "Icon_skill_passive_2122",
+              "text": "Dodges the next <color=#F74848>1</color> attack. Can trigger <color=#F74848>1</color> time per turn.",
+              "side": "enemies"
+            }
+          ],
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 10
+            },
+            {
+              "name": "Doll FC Matrix",
+              "icon": "Icon_chipicon_1001002",
+              "kind": "item",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": 15,
+          "code": "3-5",
+          "name": "Chain Sim",
+          "energy": 10,
+          "battles": [
+            {
+              "energy": 5,
+              "win": "Defeat all enemies!",
+              "lose": "Any of your units are destroyed or you exceed 8 turns."
+            },
+            {
+              "energy": 5,
+              "win": "Defeat all enemies!",
+              "lose": "Any of your units are destroyed or you exceed 8 turns."
+            }
+          ],
+          "modifiers": [
+            {
+              "name": "Polyenergy Defense",
+              "icon": "Icon_skill_passive_2117",
+              "text": "After a part is attacked, Armor of both the Body and that part increases by <color=#F74848>10%</color>. Stacks up to <color=#F74848>5</color> times per part.",
+              "side": "enemies",
+              "battle": 1
+            },
+            {
+              "name": "Charged Pursuit",
+              "icon": "Icon_skill_passive_4107",
+              "text": "Restores <color=#F74848>3</color> AP after each attack. If no damage was taken since the last action, triggers <buf ID=900005>[Re-Act]</buf> after the action ends.",
+              "side": "enemies",
+              "battle": 2
+            }
+          ],
+          "unlocks": {
+            "algorithm": "β",
+            "power": 1,
+            "quality": "SSR"
+          },
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 30
+            },
+            {
+              "name": "Obsidian Attrition Unit",
+              "icon": "Icon_chipicon_1004004",
+              "kind": "item",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "algorithm": "β",
+      "stages": [
+        {
+          "id": 16,
+          "code": "4-1",
+          "name": "Regular Sim",
+          "energy": 10,
+          "battles": [
+            {
+              "energy": 10,
+              "win": "Defeat all enemies!",
+              "lose": "Any of your units are destroyed or you exceed 8 turns."
+            }
+          ],
+          "modifiers": [
+            {
+              "name": "L-Arm Specialization",
+              "icon": "Icon_skill_passive_1147",
+              "text": "If L-Arm HP is greater than or equal to <color=#F74848>75%</color>, DMG Dealt <color=#F74848>+80%</color>.",
+              "side": "enemies"
+            }
+          ],
+          "unlocks": {
+            "algorithm": "β",
+            "power": 2,
+            "quality": "SR"
+          },
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 10
+            },
+            {
+              "name": "SEED Stabilize Sensor - H",
+              "icon": "Icon_chipicon_1003003",
+              "kind": "item",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": 17,
+          "code": "4-2",
+          "name": "Regular Sim",
+          "energy": 10,
+          "battles": [
+            {
+              "energy": 10,
+              "win": "Defeat all enemies!",
+              "lose": "Any of your units are destroyed or you exceed 8 turns."
+            }
+          ],
+          "modifiers": [
+            {
+              "name": "Fighting Spirit",
+              "icon": "Icon_skill_passive_1110",
+              "text": "When attacked, gains <buf ID=21137020>[Fighting Spirit]</buf>. Stacks up to <color=#F74848>3</color> times. Lasts for <color=#F74848>1</color> turn.",
+              "side": "enemies"
+            }
+          ],
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 10
+            },
+            {
+              "name": "Obsidian Calibration Unit",
+              "icon": "Icon_chipicon_1004003",
+              "kind": "item",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "code": "4-3",
+          "name": "Regular Sim",
+          "energy": 10,
+          "battles": [
+            {
+              "energy": 10,
+              "win": "Defeat all enemies!",
+              "lose": "Any of your units are destroyed or you exceed 8 turns."
+            }
+          ],
+          "modifiers": [
+            {
+              "name": "Auto-Mending",
+              "icon": "Icon_skill_passive_3116",
+              "text": "When Body HP is below <color=#F74848>50%</color>, restores <color=#F74848>25%</color> of Max HP to the Body before taking action.",
+              "side": "enemies"
+            }
+          ],
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 10
+            },
+            {
+              "name": "Union Toughness Loop - H",
+              "icon": "Icon_chipicon_1006003",
+              "kind": "item",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": 19,
+          "code": "4-4",
+          "name": "Regular Sim",
+          "energy": 10,
+          "battles": [
+            {
+              "energy": 10,
+              "win": "Defeat all enemies!",
+              "lose": "Any of your units are destroyed or you exceed 8 turns."
+            }
+          ],
+          "modifiers": [
+            {
+              "name": "Overheat",
+              "icon": "Icon_skill_passive_5149",
+              "text": "After actively attacking or executing a skill, all parts lose <color=#F74848>8%</color> of Max HP.",
+              "side": "allies"
+            }
+          ],
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 10
+            },
+            {
+              "name": "Obsidian Attrition Unit",
+              "icon": "Icon_chipicon_1004004",
+              "kind": "item",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": 20,
+          "code": "4-5",
+          "name": "Regular Sim",
+          "energy": 10,
+          "battles": [
+            {
+              "energy": 10,
+              "win": "Defeat all enemies!",
+              "lose": "Any of your units are destroyed or you exceed 8 turns."
+            }
+          ],
+          "modifiers": [
+            {
+              "name": "Full Set",
+              "icon": "Icon_skill_passive_1003",
+              "text": "When HP is full, DMG Dealt <color=#F74848>+100%</color>.",
+              "side": "enemies"
+            }
+          ],
+          "unlocks": {
+            "algorithm": "β",
+            "power": 2,
+            "quality": "SSR"
+          },
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 30
+            },
+            {
+              "name": "Doll Calibration Matrix",
+              "icon": "Icon_chipicon_1001003",
+              "kind": "item",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "algorithm": "γ",
+      "stages": [
+        {
+          "id": 21,
+          "code": "5-1",
+          "name": "Regular Sim",
+          "energy": 10,
+          "battles": [
+            {
+              "energy": 10,
+              "win": "Defeat all enemies!",
+              "lose": "Any of your units are destroyed or you exceed 8 turns."
+            }
+          ],
+          "modifiers": [
+            {
+              "name": "Armor Breaker Mod",
+              "icon": "Icon_skill_passive_1110",
+              "text": "When actively attacking, inflicts DMG Taken <color=#F74848>+15%</color> on the enemy after combat. Stacks up to <color=#F74848>6</color> times.",
+              "side": "enemies"
+            }
+          ],
+          "unlocks": {
+            "algorithm": "γ",
+            "power": 1,
+            "quality": "SR"
+          },
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 10
+            },
+            {
+              "name": "Obsidian FC Unit",
+              "icon": "Icon_chipicon_1004002",
+              "kind": "item",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": 22,
+          "code": "5-2",
+          "name": "Regular Sim",
+          "energy": 10,
+          "battles": [
+            {
+              "energy": 10,
+              "win": "Defeat all enemies!",
+              "lose": "Any of your units are destroyed or you exceed 8 turns."
+            }
+          ],
+          "modifiers": [
+            {
+              "name": "Final Retaliation",
+              "icon": "Icon_skill_passive_5149",
+              "text": "When destroyed, deals <buf ID=900017>[Fixed DMG]</buf> equal to <color=#F74848>10%</color> of the enemy's Max HP to each part of all enemies within <color=#F74848>1</color> ring. After combat, inflicts <buf ID=21122002>[Grievance]</buf> on targets hit, lasting permanently.",
+              "side": "enemies"
+            }
+          ],
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 10
+            },
+            {
+              "name": "Union Toughness Loop - M",
+              "icon": "Icon_chipicon_1006002",
+              "kind": "item",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": 23,
+          "code": "5-3",
+          "name": "Regular Sim",
+          "energy": 10,
+          "battles": [
+            {
+              "energy": 10,
+              "win": "Defeat all enemies!",
+              "lose": "Any of your units are destroyed or you exceed 8 turns."
+            }
+          ],
+          "modifiers": [
+            {
+              "name": "Offensive Energy Cycle",
+              "icon": "Icon_skill_passive_1110",
+              "text": "When actively attacking, gains <buf ID=21126011>[Peak Efficiency]</buf> after combat. Stacks up to <color=#F74848>5</color> times. Lasts permanently.",
+              "side": "enemies"
+            }
+          ],
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 10
+            },
+            {
+              "name": "Doll Calibration Matrix",
+              "icon": "Icon_chipicon_1001003",
+              "kind": "item",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": 24,
+          "code": "5-4",
+          "name": "Regular Sim",
+          "energy": 10,
+          "battles": [
+            {
+              "energy": 10,
+              "win": "Destroy the Gunport!",
+              "lose": "Any of your units are destroyed or you exceed 8 turns."
+            }
+          ],
+          "modifiers": [
+            {
+              "name": "Arm Insurance",
+              "icon": "Icon_skill_passive_2110",
+              "text": "When an Arm suffers overdamage, locks at <color=#F74848>1</color> HP. Can trigger <color=#F74848>1</color> time per Arm.",
+              "side": "enemies"
+            }
+          ],
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 10
+            },
+            {
+              "name": "Obsidian Attrition Core",
+              "icon": "Icon_chipicon_1005004",
+              "kind": "item",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": 25,
+          "code": "5-5",
+          "name": "Chain Sim",
+          "energy": 10,
+          "battles": [
+            {
+              "energy": 5,
+              "win": "Defeat all enemies!",
+              "lose": "Any of your units are destroyed or you exceed 8 turns."
+            },
+            {
+              "energy": 5,
+              "win": "Defeat all enemies!",
+              "lose": "Any of your units are destroyed or you exceed 8 turns."
+            }
+          ],
+          "modifiers": [
+            {
+              "name": "Full Calibration",
+              "icon": "Icon_skill_passive_1143",
+              "text": "When both Arms are undestroyed, DMG Dealt <color=#F74848>+50%</color> and Hit Rate <color=#F74848>+50%</color>.",
+              "side": "enemies",
+              "battle": 1
+            },
+            {
+              "name": "Latency Limit",
+              "icon": "Icon_skill_passive_5131",
+              "text": "After defeating a target, DMG Dealt <color=#F74848>-50%</color>.",
+              "side": "allies",
+              "battle": 2
+            }
+          ],
+          "unlocks": {
+            "algorithm": "γ",
+            "power": 1,
+            "quality": "SSR"
+          },
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 30
+            },
+            {
+              "name": "Obsidian Impact Core",
+              "icon": "Icon_chipicon_1005001",
+              "kind": "item",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "algorithm": "α",
+      "stages": [
+        {
+          "id": 26,
+          "code": "6-1",
+          "name": "Regular Sim",
+          "energy": 10,
+          "battles": [
+            {
+              "energy": 10,
+              "win": "Defeat all enemies!",
+              "lose": "Any of your units are destroyed or you exceed 8 turns."
+            }
+          ],
+          "modifiers": [
+            {
+              "name": "Matchless",
+              "icon": "Icon_skill_passive_5155",
+              "text": "When no allies are within 2 adjacent tiles, DMG Dealt <color=#F74848>+50%</color>. When an ally is within this span, DMG Dealt <color=#F74848>-50%</color>.",
+              "side": "allies"
+            }
+          ],
+          "unlocks": {
+            "algorithm": "α",
+            "power": 3,
+            "quality": "SR"
+          },
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 10
+            },
+            {
+              "name": "Doll Calibration Matrix",
+              "icon": "Icon_chipicon_1001003",
+              "kind": "item",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": 27,
+          "code": "6-2",
+          "name": "Regular Sim",
+          "energy": 10,
+          "battles": [
+            {
+              "energy": 10,
+              "win": "Defeat all enemies!",
+              "lose": "Any of your units are destroyed or you exceed 8 turns."
+            }
+          ],
+          "modifiers": [
+            {
+              "name": "Overloaded Armor",
+              "icon": "Icon_skill_passive_2117",
+              "text": "Armor <color=#F74848>+200%</color>. When taking damage, gains <buf ID=21114002>[Overloaded]</buf>. Stacks up to <color=#F74848>5</color> times. Lasts permanently.",
+              "side": "enemies"
+            }
+          ],
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 10
+            },
+            {
+              "name": "Union Toughness Loop - H",
+              "icon": "Icon_chipicon_1006003",
+              "kind": "item",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": 28,
+          "code": "6-3",
+          "name": "Regular Sim",
+          "energy": 10,
+          "battles": [
+            {
+              "energy": 10,
+              "win": "Defeat all enemies!",
+              "lose": "An ally or any of your units are destroyed, or you exceed 8 turns."
+            }
+          ],
+          "modifiers": [
+            {
+              "name": "Guard Block",
+              "icon": "Icon_skill_passive_5144",
+              "text": "Cannot <buf ID=900022>[Guard]</buf>. Repair AMT Received <color=#F74848>-50%</color>.",
+              "side": "allies"
+            }
+          ],
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 10
+            },
+            {
+              "name": "Obsidian Impact Core",
+              "icon": "Icon_chipicon_1005001",
+              "kind": "item",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": 29,
+          "code": "6-4",
+          "name": "Regular Sim",
+          "energy": 10,
+          "battles": [
+            {
+              "energy": 10,
+              "win": "Defeat all enemies!",
+              "lose": "Any of your units are destroyed or you exceed 8 turns."
+            }
+          ],
+          "modifiers": [
+            {
+              "name": "Heavy Burden",
+              "icon": "Icon_skill_passive_5149",
+              "text": "For each ally defeated, DMG Dealt <color=#F74848>+30%</color>. Stacks up to <color=#F74848>7</color> times.",
+              "side": "enemies"
+            }
+          ],
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 10
+            },
+            {
+              "name": "Kamadar Tolerance Pipeline - H",
+              "icon": "Icon_chipicon_1007003",
+              "kind": "item",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": 30,
+          "code": "6-5",
+          "name": "Chain Sim",
+          "energy": 10,
+          "battles": [
+            {
+              "energy": 5,
+              "win": "Defeat all enemies!",
+              "lose": "Any of your units are destroyed or you exceed 8 turns."
+            },
+            {
+              "energy": 5,
+              "win": "Defeat all enemies!",
+              "lose": "Any of your units are destroyed or you exceed 8 turns."
+            }
+          ],
+          "modifiers": [
+            {
+              "name": "Precision Attack",
+              "icon": "Icon_skill_passive_1110",
+              "text": "When attacking, the probability of hitting the part with the lowest HP increases.",
+              "side": "enemies",
+              "battle": 1
+            },
+            {
+              "name": "Self-Repair",
+              "icon": "Icon_skill_passive_3116",
+              "text": "At start of action, randomly repairs <color=#F74848>1</color> destroyed part and restores <color=#F74848>50%</color> HP to all parts.",
+              "side": "enemies",
+              "battle": 2
+            }
+          ],
+          "unlocks": {
+            "algorithm": "α",
+            "power": 3,
+            "quality": "SSR"
+          },
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 30
+            },
+            {
+              "name": "Obsidian FC Unit",
+              "icon": "Icon_chipicon_1004002",
+              "kind": "item",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "algorithm": "γ",
+      "stages": [
+        {
+          "id": 31,
+          "code": "7-1",
+          "name": "Regular Sim",
+          "energy": 10,
+          "battles": [
+            {
+              "energy": 10,
+              "win": "Defeat all enemies!",
+              "lose": "Any of your units are destroyed or you exceed 8 turns."
+            }
+          ],
+          "modifiers": [
+            {
+              "name": "An Eye For An Eye",
+              "icon": "Icon_skill_passive_5149",
+              "text": "After taking damage, inflicts <color=#F74848>1</color> random debuff on the attacker. Lasts for <color=#F74848>2</color> turns. Can only trigger <color=#F74848>1</color> time per turn.",
+              "side": "enemies"
+            }
+          ],
+          "unlocks": {
+            "algorithm": "γ",
+            "power": 2,
+            "quality": "SR"
+          },
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 10
+            },
+            {
+              "name": "Union Toughness Loop - L",
+              "icon": "Icon_chipicon_1006001",
+              "kind": "item",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": 32,
+          "code": "7-2",
+          "name": "Regular Sim",
+          "energy": 10,
+          "battles": [
+            {
+              "energy": 10,
+              "win": "Defeat all enemies!",
+              "lose": "Any of your units are destroyed or you exceed 8 turns."
+            }
+          ],
+          "modifiers": [
+            {
+              "name": "Intermittent Armor",
+              "icon": "Icon_skill_passive_2117",
+              "text": "During [Your Turn], Armor <color=#F74848>-100%</color>. During the [Enemy Turn], Armor <color=#F74848>+50%</color>.",
+              "side": "enemies"
+            }
+          ],
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 10
+            },
+            {
+              "name": "Doll Repair Matrix",
+              "icon": "Icon_chipicon_1001005",
+              "kind": "item",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": 33,
+          "code": "7-3",
+          "name": "Regular Sim",
+          "energy": 10,
+          "battles": [
+            {
+              "energy": 10,
+              "win": "Defeat all enemies!",
+              "lose": "Any of your units are destroyed or you exceed 8 turns."
+            }
+          ],
+          "modifiers": [
+            {
+              "name": "EM Spark",
+              "icon": "Icon_skill_passive_1110",
+              "text": "After attacking during [Your Turn], inflicts <buf ID=21138011>[EM Vulnerability]</buf> on targets hit. Stacks up to <color=#F74848>2</color> times and lasts for <color=#F74848>1</color> turn. When possessing <color=#F74848>2</color> stacks of <buf ID=21138011>[EM Vulnerability]</buf>, afflicted with <buf ID=13000010>[Crash]</buf> for <color=#F74848>1</color> turn.",
+              "side": "enemies"
+            }
+          ],
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 10
+            },
+            {
+              "name": "Obsidian Attrition Unit",
+              "icon": "Icon_chipicon_1004004",
+              "kind": "item",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": 34,
+          "code": "7-4",
+          "name": "Regular Sim",
+          "energy": 10,
+          "battles": [
+            {
+              "energy": 10,
+              "win": "Defeat all enemies!",
+              "lose": "Any of your units are destroyed or you exceed 8 turns."
+            }
+          ],
+          "modifiers": [
+            {
+              "name": "Emergency Evacuation",
+              "icon": "Icon_skill_passive_2122",
+              "text": "Each time a part is destroyed, gains Dodge <color=#F74848>+20%</color>. Stacks up to <color=#F74848>3</color> times.",
+              "side": "enemies"
+            }
+          ],
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 10
+            },
+            {
+              "name": "SEED Stabilize Sensor - L",
+              "icon": "Icon_chipicon_1003001",
+              "kind": "item",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": 35,
+          "code": "7-5",
+          "name": "Regular Sim",
+          "energy": 10,
+          "battles": [
+            {
+              "energy": 10,
+              "win": "Defeat the enemy boss!",
+              "lose": "Boss reaches the Exit Zone or any of your units are destroyed."
+            }
+          ],
+          "modifiers": [
+            {
+              "name": "Quick Draw",
+              "icon": "Icon_skill_passive_1144",
+              "text": "When attacked in combat, perform Retaliation before the enemy's attack.",
+              "side": "enemies"
+            }
+          ],
+          "unlocks": {
+            "algorithm": "γ",
+            "power": 2,
+            "quality": "SSR"
+          },
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 30
+            },
+            {
+              "name": "Horizon EW Sensor - L",
+              "icon": "Icon_chipicon_1002001",
+              "kind": "item",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "algorithm": "γ",
+      "stages": [
+        {
+          "id": 36,
+          "code": "8-1",
+          "name": "Regular Sim",
+          "energy": 10,
+          "battles": [
+            {
+              "energy": 10,
+              "win": "Defeat all enemies!",
+              "lose": "Any of your units are destroyed or you exceed 8 turns."
+            }
+          ],
+          "modifiers": [
+            {
+              "name": "Inducement Protocol",
+              "icon": "Icon_skill_passive_1003",
+              "text": "After Legs take damage, DMG Dealt <color=#F74848>+100%</color>.",
+              "side": "enemies"
+            }
+          ],
+          "unlocks": {
+            "algorithm": "γ",
+            "power": 3,
+            "quality": "SR"
+          },
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 10
+            },
+            {
+              "name": "Doll Attrition Matrix",
+              "icon": "Icon_chipicon_1001004",
+              "kind": "item",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": 37,
+          "code": "8-2",
+          "name": "Regular Sim",
+          "energy": 10,
+          "battles": [
+            {
+              "energy": 10,
+              "win": "Defeat all enemies!",
+              "lose": "Any of your units are destroyed or you exceed 8 turns."
+            }
+          ],
+          "modifiers": [
+            {
+              "name": "Termination Protocol",
+              "icon": "Icon_skill_passive_4107",
+              "text": "After Retaliation or Pursuit trigger, inflicts <buf ID=13000231>[Disarm]</buf> on the target hit, lasting for <color=#F74848>1</color> turn.",
+              "side": "enemies"
+            }
+          ],
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 10
+            },
+            {
+              "name": "Obsidian FC Unit",
+              "icon": "Icon_chipicon_1004002",
+              "kind": "item",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": 38,
+          "code": "8-3",
+          "name": "Regular Sim",
+          "energy": 10,
+          "battles": [
+            {
+              "energy": 10,
+              "win": "Defeat all enemies!",
+              "lose": "Any of your units are destroyed or you exceed 8 turns."
+            }
+          ],
+          "modifiers": [
+            {
+              "name": "Disarming Strike",
+              "icon": "Icon_skill_passive_4107",
+              "text": "When dealing damage, if HP percentage is higher than or equal to the target's, inflicts <buf ID=21155011>[Disarm]</buf> on the target for <color=#F74848>1</color> turn.",
+              "side": "enemies"
+            }
+          ],
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 10
+            },
+            {
+              "name": "Union Toughness Loop - M",
+              "icon": "Icon_chipicon_1006002",
+              "kind": "item",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": 39,
+          "code": "8-4",
+          "name": "Regular Sim",
+          "energy": 10,
+          "battles": [
+            {
+              "energy": 10,
+              "win": "Defeat all enemies!",
+              "lose": "Any of your units are destroyed or you exceed 8 turns."
+            }
+          ],
+          "modifiers": [
+            {
+              "name": "Polyenergy Protocol",
+              "icon": "Icon_skill_passive_1110",
+              "text": "When actively attacking, if remaining Movement is <color=#F74848>1</color> or more, triggers <buf ID=900004>[Re-ATK]</buf> after combat: Can move <color=#F74848>1</color> tile before attacking. Gains <color=#F74848>4</color> AP and ATK <color=#F74848>+130%</color>. Can only trigger <color=#F74848>1</color> time per turn.",
+              "side": "enemies"
+            }
+          ],
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 10
+            },
+            {
+              "name": "Obsidian Impact Core",
+              "icon": "Icon_chipicon_1005001",
+              "kind": "item",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": 40,
+          "code": "8-5",
+          "name": "Regular Sim",
+          "energy": 10,
+          "battles": [
+            {
+              "energy": 10,
+              "win": "Defeat all enemies!",
+              "lose": "Any of your units are destroyed or you exceed 8 turns."
+            }
+          ],
+          "modifiers": [
+            {
+              "name": "Specialized Defense",
+              "icon": "Icon_skill_passive_2117",
+              "text": "When attacked during the [Enemy Turn], if the enemy's weapon type differs from the last type used to hit this unit, DMG Taken from this attack <color=#F74848>-60%</color>.",
+              "side": "enemies"
+            }
+          ],
+          "unlocks": {
+            "algorithm": "γ",
+            "power": 3,
+            "quality": "SSR"
+          },
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 30
+            },
+            {
+              "name": "Doll Attrition Matrix",
+              "icon": "Icon_chipicon_1001004",
+              "kind": "item",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "algorithm": "β",
+      "stages": [
+        {
+          "id": 41,
+          "code": "9-1",
+          "name": "Regular Sim",
+          "energy": 10,
+          "battles": [
+            {
+              "energy": 10,
+              "win": "Defeat all enemies!",
+              "lose": "Any of your units are destroyed or you exceed 8 turns."
+            }
+          ],
+          "modifiers": [
+            {
+              "name": "Combat Protocol",
+              "icon": "Icon_skill_passive_1115",
+              "text": "At start of battle, gains <buf ID=21152011>[Attack Protocol]</buf> and <buf ID=21152012>[Repair Protocol]</buf>. When a part is destroyed, <buf ID=21152011>[Attack Protocol]</buf> and <buf ID=21152012>[Repair Protocol]</buf> are removed in that order.",
+              "side": "enemies"
+            }
+          ],
+          "unlocks": {
+            "algorithm": "β",
+            "power": 3,
+            "quality": "SR"
+          },
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 10
+            },
+            {
+              "name": "Doll Attrition Matrix",
+              "icon": "Icon_chipicon_1001004",
+              "kind": "item",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": 42,
+          "code": "9-2",
+          "name": "Regular Sim",
+          "energy": 10,
+          "battles": [
+            {
+              "energy": 10,
+              "win": "Defeat all enemies!",
+              "lose": "Any of your units are destroyed or you exceed 8 turns."
+            }
+          ],
+          "modifiers": [
+            {
+              "name": "Guard Protocol",
+              "icon": "Icon_skill_passive_2122",
+              "text": "When performing <buf ID=900022>[Guard]</buf>, Dodge Rate <color=#F74848>+70%</color>.",
+              "side": "enemies"
+            }
+          ],
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 10
+            },
+            {
+              "name": "Obsidian Calibration Unit",
+              "icon": "Icon_chipicon_1004003",
+              "kind": "item",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": 43,
+          "code": "9-3",
+          "name": "Regular Sim",
+          "energy": 10,
+          "battles": [
+            {
+              "energy": 10,
+              "win": "Defeat all enemies!",
+              "lose": "Any of your units are destroyed or you exceed 8 turns."
+            }
+          ],
+          "modifiers": [
+            {
+              "name": "Energy Protocol",
+              "icon": "Icon_skill_passive_4107",
+              "text": "When dealing damage, reduces the target's AP Regen by an amount equal to the distance from the target, up to <color=#F74848>3</color>. Lasts for <color=#F74848>1</color> turn.",
+              "side": "enemies"
+            }
+          ],
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 10
+            },
+            {
+              "name": "Horizon EW Sensor - L",
+              "icon": "Icon_chipicon_1002001",
+              "kind": "item",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": 44,
+          "code": "9-4",
+          "name": "Regular Sim",
+          "energy": 10,
+          "battles": [
+            {
+              "energy": 10,
+              "win": "Defeat all enemies!",
+              "lose": "Any of your units are destroyed or you exceed 8 turns."
+            }
+          ],
+          "modifiers": [
+            {
+              "name": "Defense Protocol",
+              "icon": "Icon_skill_passive_2117",
+              "text": "After taking damage from an active attack, gains DMG Taken <color=#F74848>-50%</color>. Lasts for <color=#F74848>1</color> turn.",
+              "side": "enemies"
+            }
+          ],
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 10
+            },
+            {
+              "name": "SEED Stabilize Sensor - H",
+              "icon": "Icon_chipicon_1003003",
+              "kind": "item",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": 45,
+          "code": "9-5",
+          "name": "Chain Sim",
+          "energy": 10,
+          "battles": [
+            {
+              "energy": 5,
+              "win": "Defeat all enemies!",
+              "lose": "Any of your units are destroyed or you exceed 8 turns."
+            },
+            {
+              "energy": 5,
+              "win": "Defeat all enemies!",
+              "lose": "Any of your units are destroyed or you exceed 8 turns."
+            }
+          ],
+          "modifiers": [
+            {
+              "name": "Isolation",
+              "icon": "Icon_skill_passive_5123",
+              "text": "When there are no allies within 2 adjacent tiles, DMG Taken <color=#F74848>+50%</color> and DMG Dealt <color=#F74848>-50%</color>.",
+              "side": "allies",
+              "battle": 1
+            },
+            {
+              "name": "FCS Destruction",
+              "icon": "Icon_skill_passive_4107",
+              "text": "After actively attacking and dealing damage, the target hit is unable to use any active skills or codes, except for normal attacks. Lasts for <color=#F74848>1</color> turn.",
+              "side": "enemies",
+              "battle": 2
+            }
+          ],
+          "unlocks": {
+            "algorithm": "β",
+            "power": 3,
+            "quality": "SSR"
+          },
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 30
+            },
+            {
+              "name": "Kamadar Tolerance Pipeline - L",
+              "icon": "Icon_chipicon_1007001",
+              "kind": "item",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "algorithm": "γ+",
+      "stages": [
+        {
+          "id": 46,
+          "code": "10-1",
+          "name": "Regular Sim",
+          "energy": 10,
+          "battles": [
+            {
+              "energy": 10,
+              "win": "Defeat all enemies!",
+              "lose": "Any of your units are destroyed or you exceed 8 turns."
+            }
+          ],
+          "modifiers": [
+            {
+              "name": "Retaliation Protocol",
+              "icon": "Icon_skill_passive_1134",
+              "text": "After retaliating, restores HP. Repair AMT is equal to <color=#F74848>100%</color> of Max HP.",
+              "side": "enemies"
+            }
+          ],
+          "unlocks": {
+            "algorithm": "γ+",
+            "power": 4,
+            "quality": "SR"
+          },
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 10
+            },
+            {
+              "name": "Obsidian Fire Control Core",
+              "icon": "Icon_chipicon_1005002",
+              "kind": "item",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": 47,
+          "code": "10-2",
+          "name": "Regular Sim",
+          "energy": 10,
+          "battles": [
+            {
+              "energy": 10,
+              "win": "Defeat all enemies!",
+              "lose": "Any of your units are destroyed or you exceed 8 turns."
+            }
+          ],
+          "modifiers": [
+            {
+              "name": "Vigilance Protocol",
+              "icon": "Icon_skill_passive_1110",
+              "text": "Vigilant Shot DMG <color=#F74848>+200%</color>. Renders the target unable to use active skills and codes, except for normal attacks. Lasts for <color=#F74848>1</color> turn.",
+              "side": "enemies"
+            }
+          ],
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 10
+            },
+            {
+              "name": "SEED Stabilize Sensor - M",
+              "icon": "Icon_chipicon_1003002",
+              "kind": "item",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": 48,
+          "code": "10-3",
+          "name": "Regular Sim",
+          "energy": 10,
+          "battles": [
+            {
+              "energy": 10,
+              "win": "Defeat all enemies!",
+              "lose": "Any of your units are destroyed or you exceed 8 turns."
+            }
+          ],
+          "modifiers": [
+            {
+              "name": "Maneuver Lockout",
+              "icon": "Icon_skill_passive_4107",
+              "text": "After actively attacking and dealing damage, the target cannot move or <buf ID=900022>[Guard]</buf>. Lasts for <color=#F74848>1</color> turn.",
+              "side": "enemies"
+            }
+          ],
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 10
+            },
+            {
+              "name": "Kamadar Tolerance Pipeline - M",
+              "icon": "Icon_chipicon_1007002",
+              "kind": "item",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": 49,
+          "code": "10-4",
+          "name": "Regular Sim",
+          "energy": 10,
+          "battles": [
+            {
+              "energy": 10,
+              "win": "Defeat all enemies!",
+              "lose": "Any of your units are destroyed or you exceed 8 turns."
+            }
+          ],
+          "modifiers": [
+            {
+              "name": "Super Powerful Weapon",
+              "icon": "Icon_skill_passive_1110",
+              "text": "After actively attacking and dealing damage, deals <buf ID=900017>[Fixed DMG]</buf> equal to <color=#F74848>30%</color> of Max HP.",
+              "side": "enemies"
+            }
+          ],
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 10
+            },
+            {
+              "name": "Horizon EW Sensor - L",
+              "icon": "Icon_chipicon_1002001",
+              "kind": "item",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": 50,
+          "code": "10-5",
+          "name": "Regular Sim",
+          "energy": 10,
+          "battles": [
+            {
+              "energy": 10,
+              "win": "Defeat all enemies!",
+              "lose": "Any of your units are destroyed or you exceed 8 turns."
+            }
+          ],
+          "modifiers": [
+            {
+              "name": "Transmission Failure",
+              "icon": "Icon_skill_passive_5131",
+              "text": "Before actively attacking, DMG <color=#F74848>-20%</color> for each tile moved, down to <color=#F74848>-80%</color>.",
+              "side": "allies"
+            }
+          ],
+          "unlocks": {
+            "algorithm": "γ+",
+            "power": 4,
+            "quality": "SSR"
+          },
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 30
+            },
+            {
+              "name": "SEED Stabilize Sensor - H",
+              "icon": "Icon_chipicon_1003003",
+              "kind": "item",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "algorithm": "γ+",
+      "stages": [
+        {
+          "id": 51,
+          "code": "11-1",
+          "name": "Regular Sim",
+          "energy": 10,
+          "battles": [
+            {
+              "energy": 10,
+              "win": "Defeat all enemies!",
+              "lose": "Any of your units are destroyed or you exceed 8 turns."
+            }
+          ],
+          "modifiers": [
+            {
+              "name": "Stalker",
+              "icon": "Icon_skill_passive_5131",
+              "text": "When attacking, inflicts <buf ID=21145011>[Cost Surge]</buf> on the target, lasting for <color=#F74848>1</color> turn. Stacks up to <color=#F74848>3</color> times.",
+              "side": "enemies"
+            }
+          ],
+          "unlocks": {
+            "algorithm": "γ+",
+            "power": 5,
+            "quality": "SR"
+          },
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 10
+            },
+            {
+              "name": "Kamadar Tolerance Pipeline - M",
+              "icon": "Icon_chipicon_1007002",
+              "kind": "item",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": 52,
+          "code": "11-2",
+          "name": "Regular Sim",
+          "energy": 10,
+          "battles": [
+            {
+              "energy": 10,
+              "win": "Defeat all enemies!",
+              "lose": "Any of your units are destroyed or you exceed 8 turns."
+            }
+          ],
+          "modifiers": [
+            {
+              "name": "Covert Attack",
+              "icon": "Icon_skill_passive_5131",
+              "text": "When actively attacking, if in <buf ID=21146011>[Stealth]</buf> status, gains <buf ID=21146017>[Covert Attack]</buf>. At end of action, gains <buf ID=21146011>[Stealth]</buf> again for <color=#F74848>1</color> turn.",
+              "side": "enemies"
+            }
+          ],
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 10
+            },
+            {
+              "name": "Obsidian Attrition Unit",
+              "icon": "Icon_chipicon_1004004",
+              "kind": "item",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": 53,
+          "code": "11-3",
+          "name": "Regular Sim",
+          "energy": 10,
+          "battles": [
+            {
+              "energy": 10,
+              "win": "Defeat all enemies!",
+              "lose": "Any of your units are destroyed or you exceed 8 turns."
+            }
+          ],
+          "modifiers": [
+            {
+              "name": "Redemption",
+              "icon": "Icon_skill_passive_5131",
+              "text": "When destroyed, grants allies within <color=#F74848>2</color> adjacent tiles <buf ID=21147011>[Attack Blessing]</buf>, lasting permanently.",
+              "side": "enemies"
+            }
+          ],
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 10
+            },
+            {
+              "name": "SEED Stabilize Sensor - L",
+              "icon": "Icon_chipicon_1003001",
+              "kind": "item",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": 54,
+          "code": "11-4",
+          "name": "Regular Sim",
+          "energy": 10,
+          "battles": [
+            {
+              "energy": 10,
+              "win": "Defeat all enemies!",
+              "lose": "Any of your units are destroyed or you exceed 8 turns."
+            }
+          ],
+          "modifiers": [
+            {
+              "name": "Tactical Retreat",
+              "icon": "Icon_skill_passive_5131",
+              "text": "When a part is destroyed by an active attack, gains <buf ID=21148011>[Retreat]</buf>, lasting for <color=#F74848>1</color> turn.",
+              "side": "enemies"
+            }
+          ],
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 10
+            },
+            {
+              "name": "Obsidian Fire Control Core",
+              "icon": "Icon_chipicon_1005002",
+              "kind": "item",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": 55,
+          "code": "11-5",
+          "name": "Regular Sim",
+          "energy": 10,
+          "battles": [
+            {
+              "energy": 10,
+              "win": "Defeat all enemies!",
+              "lose": "Any of your units are destroyed or you exceed 8 turns."
+            }
+          ],
+          "modifiers": [
+            {
+              "name": "Operation Overload",
+              "icon": "Icon_skill_passive_5131",
+              "text": "After actively attacking or executing a skill, gains <color=#F74848>1</color> stack of <buf ID=21161011>[Mark]</buf>. Stacks up to <color=#F74848>3</color> times. Lasts permanently.",
+              "side": "allies"
+            }
+          ],
+          "unlocks": {
+            "algorithm": "γ+",
+            "power": 5,
+            "quality": "SSR"
+          },
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 30
+            },
+            {
+              "name": "Union Toughness Loop - L",
+              "icon": "Icon_chipicon_1006001",
+              "kind": "item",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "algorithm": "γ+",
+      "stages": [
+        {
+          "id": 56,
+          "code": "12-1",
+          "name": "Chain Sim",
+          "energy": 10,
+          "battles": [
+            {
+              "energy": 5,
+              "win": "Defeat all enemies!",
+              "lose": "Any of your units are destroyed or you exceed 8 turns."
+            },
+            {
+              "energy": 5,
+              "win": "Defeat all enemies!",
+              "lose": "Any of your units are destroyed or you exceed 8 turns."
+            }
+          ],
+          "modifiers": [
+            {
+              "name": "Ignition",
+              "icon": "Icon_skill_passive_1150",
+              "text": "After actively attacking, inflicts [?] on the target hit, lasting permanently.",
+              "side": "enemies",
+              "battle": 1
+            },
+            {
+              "name": "Target Lock",
+              "icon": "Icon_skill_passive_1122",
+              "text": "When actively attacking, inflicts [?] on the target hit, lasting for <color=#F74848>2</color> turns. If the target is afflicted with [?], destroys <color=#F74848>1</color> part at random.",
+              "side": "enemies",
+              "battle": 2
+            }
+          ],
+          "unlocks": {
+            "algorithm": "γ+",
+            "power": 6,
+            "quality": "SR"
+          },
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 10
+            },
+            {
+              "name": "SEED Stabilize Sensor - M",
+              "icon": "Icon_chipicon_1003002",
+              "kind": "item",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": 57,
+          "code": "12-2",
+          "name": "Regular Sim",
+          "energy": 10,
+          "battles": [
+            {
+              "energy": 10,
+              "win": "Defeat all enemies!",
+              "lose": "Any of your units are destroyed or you exceed 8 turns."
+            }
+          ],
+          "modifiers": [
+            {
+              "name": "Deploy Intelligent Machinery - E",
+              "icon": "Icon_skill_passive_3115",
+              "text": "When destroyed, deploys a <color=#F28341>Struct</color>.",
+              "side": "enemies"
+            }
+          ],
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 10
+            },
+            {
+              "name": "Obsidian Impact Core",
+              "icon": "Icon_chipicon_1005001",
+              "kind": "item",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": 58,
+          "code": "12-3",
+          "name": "Regular Sim",
+          "energy": 10,
+          "battles": [
+            {
+              "energy": 10,
+              "win": "Defeat all enemies!",
+              "lose": "Any of your units are destroyed or you exceed 8 turns."
+            }
+          ],
+          "modifiers": [
+            {
+              "name": "Will of Vengeance",
+              "icon": "Icon_skill_passive_3116",
+              "text": "After sortie, loses <color=#F74848>60%</color> of Max HP. When an ally is defeated, repairs all parts and restores all HP.",
+              "side": "enemies"
+            }
+          ],
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 10
+            },
+            {
+              "name": "Kamadar Tolerance Pipeline - H",
+              "icon": "Icon_chipicon_1007003",
+              "kind": "item",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": 59,
+          "code": "12-4",
+          "name": "Regular Sim",
+          "energy": 10,
+          "battles": [
+            {
+              "energy": 10,
+              "win": "Defeat all enemies!",
+              "lose": "Any of your units are destroyed or you exceed 8 turns."
+            }
+          ],
+          "modifiers": [
+            {
+              "name": "Defective Component",
+              "icon": "Icon_skill_passive_1123",
+              "text": "After receiving active repairs, Repair AMT Received <color=#F74848>-33%</color>, down to <color=#F74848>-99%</color>.",
+              "side": "allies"
+            }
+          ],
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 10
+            },
+            {
+              "name": "Doll Attrition Matrix",
+              "icon": "Icon_chipicon_1001004",
+              "kind": "item",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": 60,
+          "code": "12-5",
+          "name": "Chain Sim",
+          "energy": 15,
+          "battles": [
+            {
+              "energy": 5,
+              "win": "Defeat all enemies!",
+              "lose": "Any of your units are destroyed or you exceed 8 turns."
+            },
+            {
+              "energy": 5,
+              "win": "Defeat the enemy boss!",
+              "lose": "Demetrius reaches the Exit Zone, or any allied unit is destroyed."
+            },
+            {
+              "energy": 5,
+              "win": "Defeat all enemies!",
+              "lose": "Any of your units are destroyed or you exceed 8 turns."
+            }
+          ],
+          "modifiers": [
+            {
+              "name": "Blazing Terrain",
+              "icon": "Icon_skill_passive_1150",
+              "text": "After actively attacking, creates [Blazing Terrain] within attack range: Deals [Fixed DMG] equal to 30% of Max HP to all parts of enemies that remain on this tile. Lasts permanently.",
+              "side": "enemies",
+              "battle": 1
+            },
+            {
+              "name": "Upgrade Transmission",
+              "icon": "Icon_skill_passive_1147",
+              "text": "Before actively attacking, for every <color=#F74848>1</color> tile moved, DMG <color=#F74848>+25%</color>, up to <color=#F74848>+100%</color>.",
+              "side": "allies",
+              "battle": 2
+            },
+            {
+              "name": "Dawn and Dusk",
+              "icon": "Icon_skill_passive_5175",
+              "text": "When attacking <color=#F28341>Tonatiuh</color> from within <color=#F74848>2</color> rings, Final DMG <color=#F74848>-90%</color>. When attacking <color=#F28341>Titan</color>, Final DMG <color=#F74848>+50%</color>.",
+              "battle": 3
+            }
+          ],
+          "unlocks": {
+            "algorithm": "γ+",
+            "power": 6,
+            "quality": "SSR"
+          },
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 30
+            },
+            {
+              "name": "Obsidian Calibration Unit",
+              "icon": "Icon_chipicon_1004003",
+              "kind": "item",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "stages": [
+        {
+          "id": 61,
+          "code": "13-1",
+          "name": "Chain Sim",
+          "energy": 10,
+          "battles": [
+            {
+              "energy": 5,
+              "win": "Defeat all enemies!",
+              "lose": "Any of your units are destroyed or you exceed 8 turns."
+            },
+            {
+              "energy": 5,
+              "win": "Defeat all enemies!",
+              "lose": "Any of your units are destroyed or you exceed 8 turns."
+            }
+          ],
+          "modifiers": [
+            {
+              "name": "Holding the Line",
+              "icon": "Icon_skill_passive_3103",
+              "text": "When taking damage (excluding Retaliation and Vigilant Shot), restores <color=#F74848>40%</color> of Max HP to all other allies within <color=#F74848>3</color> adjacent tiles. Can repair all destroyed parts.",
+              "side": "enemies",
+              "battle": 1
+            },
+            {
+              "name": "Tremendous Power",
+              "icon": "Icon_skill_passive_5190",
+              "text": "When actively attacking, if consumed AP is less than <color=#F74848>4</color>, DMG Dealt <color=#F74848>-33%</color> for each <color=#F74848>1</color> AP difference.",
+              "side": "allies",
+              "battle": 2
+            }
+          ],
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 10
+            },
+            {
+              "name": "Horizon EW Sensor - L",
+              "icon": "Icon_chipicon_1002001",
+              "kind": "item",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": 62,
+          "code": "13-2",
+          "name": "Regular Sim",
+          "energy": 10,
+          "battles": [
+            {
+              "energy": 10,
+              "win": "Defeat all enemies!",
+              "lose": "Any of your units are destroyed or you exceed 8 turns."
+            }
+          ],
+          "modifiers": [
+            {
+              "name": "Logistical Sabotage",
+              "icon": "Icon_skill_passive_5017",
+              "text": "When actively attacking and dealing damage, inflicts [?] after combat. Stacks up to <color=#F74848>5</color> times. Lasts for <color=#F74848>2</color> turns.",
+              "side": "enemies"
+            }
+          ],
+          "unlocks": {
+            "algorithm": "α",
+            "power": null,
+            "quality": "SSR"
+          },
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 10
+            },
+            {
+              "name": "Doll Calibration Matrix",
+              "icon": "Icon_chipicon_1001003",
+              "kind": "item",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": 63,
+          "code": "13-3",
+          "name": "Regular Sim",
+          "energy": 10,
+          "battles": [
+            {
+              "energy": 10,
+              "win": "Defeat all enemies!",
+              "lose": "Any of your units are destroyed or you exceed 8 turns."
+            }
+          ],
+          "modifiers": [
+            {
+              "name": "Link Matrix",
+              "icon": "Icon_skill_passive_1001",
+              "text": "All allies on the battlefield launch <buf ID=900002>[Link Attacks]</buf> against the target. These [Link Attacks] do not require allies to possess a specific skill and do not consume any Link chances.",
+              "side": "enemies"
+            }
+          ],
+          "unlocks": {
+            "algorithm": "β",
+            "power": null,
+            "quality": "SSR"
+          },
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 10
+            },
+            {
+              "name": "Obsidian Attrition Core",
+              "icon": "Icon_chipicon_1005004",
+              "kind": "item",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": 64,
+          "code": "13-4",
+          "name": "Regular Sim",
+          "energy": 10,
+          "battles": [
+            {
+              "energy": 10,
+              "win": "Defeat all enemies!",
+              "lose": "Any of your units are destroyed or you exceed 8 turns."
+            }
+          ],
+          "modifiers": [
+            {
+              "name": "Figure Spin",
+              "icon": "Icon_skill_passive_1157",
+              "text": "After actively attacking, deals damage to self based on the number of enemy part types struck. Each type hit deals [Fixed DMG] equal to <color=#F74848>15%</color> of Max HP, up to <color=#F74848>60%</color>.",
+              "side": "allies"
+            }
+          ],
+          "unlocks": {
+            "algorithm": "γ",
+            "power": null,
+            "quality": "SSR"
+          },
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 10
+            },
+            {
+              "name": "Union Toughness Loop - M",
+              "icon": "Icon_chipicon_1006002",
+              "kind": "item",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": 65,
+          "code": "13-5",
+          "name": "Chain Sim",
+          "energy": 15,
+          "battles": [
+            {
+              "energy": 5,
+              "win": "Defeat all enemies!",
+              "lose": "Any of your units are destroyed or you exceed 8 turns."
+            },
+            {
+              "energy": 5,
+              "win": "Defeat all enemies!",
+              "lose": "Any of your units are destroyed or you exceed 8 turns."
+            },
+            {
+              "energy": 5,
+              "win": "Defeat all enemies!",
+              "lose": "Any of your units are destroyed or you exceed 8 turns."
+            }
+          ],
+          "modifiers": [
+            {
+              "name": "EM Detonation",
+              "icon": "Icon_skill_passive_1127",
+              "text": "When actively attacking, applies <color=#F74848>1</color> stack of [?] to the target hit after combat. Stacks up to <color=#F74848>10</color> times and lasts permanently.",
+              "side": "enemies",
+              "battle": 1
+            },
+            {
+              "name": "Gun of Kindness",
+              "icon": "Icon_skill_passive_5009",
+              "text": "When actively attacking, if the target is destroyed, the killer loses all AP and does not regenerate AP at the start of the next turn.",
+              "side": "allies",
+              "battle": 2
+            },
+            {
+              "name": "ST Squadron",
+              "icon": "Icon_skill_passive_4118",
+              "text": "When there are <color=#F74848>4</color> or fewer allies within range, Final DMG Reduction <color=#F74848>+15%</color> per missing ally, up to <color=#F74848>+60%</color>. When actively attacking, if there are no allies within range, inflicts <buf ID=21178017 click=false></buf> on the target hit after combat, lasting for <color=#F74848>1</color> turn.\nWhen there is <color=#F74848>1</color> or more other ally within range, Final DMG Bonus <color=#F74848>+15%</color> per additional ally, up to <color=#F74848>60%</color>. When actively attacking, if there are any allies within range, inflicts [?] on the target hit after combat, lasting for <color=#F74848>1</color> turn.",
+              "side": "enemies",
+              "battle": 3
+            }
+          ],
+          "unlocks": {
+            "algorithm": "γ+",
+            "power": null,
+            "quality": "SSR"
+          },
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 30
+            },
+            {
+              "name": "Doll Attrition Matrix",
+              "icon": "Icon_chipicon_1001004",
+              "kind": "item",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "stages": [
+        {
+          "id": 66,
+          "code": "14-1",
+          "name": "Regular Sim",
+          "energy": 10,
+          "battles": [
+            {
+              "energy": 10,
+              "win": "Defeat all enemies!",
+              "lose": "Any of your units are destroyed or you exceed 8 turns."
+            }
+          ],
+          "modifiers": [
+            {
+              "name": "Signal Attack",
+              "icon": "Icon_skill_passive_5009",
+              "text": "When actively attacking, inflicts [?] on the target hit after combat, lasting for <color=#F74848>2</color> turns.",
+              "side": "enemies"
+            }
+          ],
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 30
+            },
+            {
+              "name": "Kamadar Tolerance Pipeline - L",
+              "icon": "Icon_chipicon_1007001",
+              "kind": "item",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": 67,
+          "code": "14-2",
+          "name": "Regular Sim",
+          "energy": 10,
+          "battles": [
+            {
+              "energy": 10,
+              "win": "Defeat all enemies!",
+              "lose": "Any of your units are destroyed or you exceed 8 turns."
+            }
+          ],
+          "modifiers": [
+            {
+              "name": "ACE",
+              "icon": "Icon_skill_talent_5116",
+              "text": "Gains <buf ID=10051002>[Unassailable]</buf>. After a part is destroyed, automatically repairs before taking action in the next turn. The Cockpit is heavily protected, preventing any damage to the Body before any part is destroyed.",
+              "side": "enemies"
+            }
+          ],
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 30
+            },
+            {
+              "name": "Doll Calibration Matrix",
+              "icon": "Icon_chipicon_1001003",
+              "kind": "item",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": 68,
+          "code": "14-3",
+          "name": "Regular Sim",
+          "energy": 10,
+          "battles": [
+            {
+              "energy": 10,
+              "win": "Defeat all enemies!",
+              "lose": "Any of your units are destroyed or you exceed 8 turns."
+            }
+          ],
+          "modifiers": [
+            {
+              "name": "Strategic Field",
+              "icon": "Icon_skill_passive_5205",
+              "text": "At the start of battle and after taking action, automatically deploys a Defense Field and Magnetoresistive Field. Allies within the Defense Field gain <color=#F74848>60%</color> Final DMG Reduction. Allies other than self gain an additional <color=#F74848>30%</color> Final DMG Bonus.",
+              "side": "enemies"
+            }
+          ],
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 30
+            },
+            {
+              "name": "Obsidian Impact Unit",
+              "icon": "Icon_chipicon_1004001",
+              "kind": "item",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": 69,
+          "code": "14-4",
+          "name": "Regular Sim",
+          "energy": 10,
+          "battles": [
+            {
+              "energy": 10,
+              "win": "Defeat all enemies!",
+              "lose": "Any of your units are destroyed or you exceed 8 turns."
+            }
+          ],
+          "modifiers": [
+            {
+              "name": "Dynamic Armor",
+              "icon": "Icon_skill_passive_2117",
+              "text": "At the start of battle and after taking action, the Body part gains <buf ID=900003>[Guts]</buf>. After being actively attacked, if the Body part's HP is below <color=#F74848>1%</color>, triggers <buf ID=900003>[Balance]</buf>.",
+              "side": "enemies"
+            }
+          ],
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 30
+            },
+            {
+              "name": "SEED Stabilize Sensor - M",
+              "icon": "Icon_chipicon_1003002",
+              "kind": "item",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": 70,
+          "code": "14-5",
+          "name": "Chain Sim",
+          "energy": 15,
+          "battles": [
+            {
+              "energy": 5,
+              "win": "Defeat all enemies!",
+              "lose": "Any of your units are destroyed or you exceed 8 turns."
+            },
+            {
+              "energy": 5,
+              "win": "Defeat all enemies!",
+              "lose": "Any of your units are destroyed or you exceed 8 turns."
+            },
+            {
+              "energy": 5,
+              "win": "Defeat all enemies!",
+              "lose": "Any of your units are destroyed or you exceed 8 turns."
+            }
+          ],
+          "modifiers": [
+            {
+              "name": "Charged Shield",
+              "icon": "Icon_skill_passive_2007",
+              "text": "At start of action, gains <color=#F74848>4</color> stacks of [?]. Stacks up to <color=#F74848>8</color> times. Lasts permanently.",
+              "side": "enemies",
+              "battle": 1
+            },
+            {
+              "name": "Death Ward",
+              "icon": "Icon_skill_passive_2116",
+              "text": "Gains [?] after being attacked for the first time each turn. Lasts until the next action starts.",
+              "side": "enemies",
+              "battle": 2
+            },
+            {
+              "name": "Magnetic Disruption",
+              "icon": "Icon_skill_passive_1142",
+              "text": "After an enemy action, applies [Mist Field] along path of movement, destroying enemy units that enter this tile. Possesses the highest terrain priority.",
+              "side": "enemies",
+              "battle": 3
+            }
+          ],
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 30
+            },
+            {
+              "name": "Obsidian Impact Core",
+              "icon": "Icon_chipicon_1005001",
+              "kind": "item",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "stages": [
+        {
+          "id": 71,
+          "code": "15-1",
+          "name": "Regular Sim",
+          "energy": 10,
+          "battles": [
+            {
+              "energy": 10,
+              "win": "Defeat all enemies!",
+              "lose": "Any of your units are destroyed or you exceed 8 turns."
+            }
+          ],
+          "modifiers": [
+            {
+              "name": "Dual Unity",
+              "icon": "Icon_skill_passive_5196",
+              "text": "After destroying Obsidian STs, grants Final DMG Taken <color=#F74848>-10%</color> to the remaining Obsidian STs. Can stack. Also inflicts Final DMG <color=#F74848>-5%</color> to all Predator STs. Can stack. After destroying Predator STs, grants Final DMG <color=#F74848>+10%</color> to the remaining Predator STs. Can stack. Also inflicts Final DMG Taken <color=#F74848>+5%</color> on all Obsidian STs. Can stack.",
+              "side": "enemies"
+            }
+          ],
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 30
+            },
+            {
+              "name": "Obsidian Attrition Unit",
+              "icon": "Icon_chipicon_1004004",
+              "kind": "item",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": 72,
+          "code": "15-2",
+          "name": "Regular Sim",
+          "energy": 10,
+          "battles": [
+            {
+              "energy": 10,
+              "win": "Defeat all enemies!",
+              "lose": "Any of your units are destroyed or you exceed 8 turns."
+            }
+          ],
+          "modifiers": [
+            {
+              "name": "Rapid Detonation",
+              "icon": "Icon_skill_passive_1142",
+              "text": "When actively attacking, using Vigilant Shot, or during Retaliation, inflicts [?] on the part hit after combat.",
+              "side": "enemies"
+            }
+          ],
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 30
+            },
+            {
+              "name": "Doll Attrition Matrix",
+              "icon": "Icon_chipicon_1001004",
+              "kind": "item",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": 73,
+          "code": "15-3",
+          "name": "Regular Sim",
+          "energy": 10,
+          "battles": [
+            {
+              "energy": 10,
+              "win": "Defeat all enemies!",
+              "lose": "Any of your units are destroyed or you exceed 8 turns."
+            }
+          ],
+          "modifiers": [
+            {
+              "name": "Part Enhancement",
+              "icon": "Icon_skill_passive_4003",
+              "text": "A random non-Body part gains an additional <color=#F74848>100%</color> Temporary HP. Increases DMG by <color=#F74848>150%</color> and reduces DMG Taken by <color=#F74848>100%</color> for other parts. Removed after clearing Temporary HP.",
+              "side": "enemies"
+            }
+          ],
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 30
+            },
+            {
+              "name": "Kamadar Tolerance Pipeline - M",
+              "icon": "Icon_chipicon_1007002",
+              "kind": "item",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": 74,
+          "code": "15-4",
+          "name": "Regular Sim",
+          "energy": 10,
+          "battles": [
+            {
+              "energy": 10,
+              "win": "Defeat all enemies!",
+              "lose": "Any of your units are destroyed or you exceed 8 turns."
+            }
+          ],
+          "modifiers": [
+            {
+              "name": "Rapid Detonation",
+              "icon": "Icon_skill_passive_1142",
+              "text": "When actively attacking, using Vigilant Shot, or during Retaliation, inflicts [?] on the part hit after combat.",
+              "side": "enemies"
+            }
+          ],
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 30
+            },
+            {
+              "name": "Doll Attrition Matrix",
+              "icon": "Icon_chipicon_1001004",
+              "kind": "item",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": 75,
+          "code": "15-5",
+          "name": "Regular Sim",
+          "energy": 10,
+          "battles": [
+            {
+              "energy": 10,
+              "win": "Defeat all enemies!",
+              "lose": "Any of your units are destroyed or you exceed 8 turns."
+            }
+          ],
+          "modifiers": [
+            {
+              "name": "Part Enhancement",
+              "icon": "Icon_skill_passive_4003",
+              "text": "A random non-Body part gains an additional <color=#F74848>100%</color> Temporary HP. Increases DMG by <color=#F74848>150%</color> and reduces DMG Taken by <color=#F74848>100%</color> for other parts. Removed after clearing Temporary HP.",
+              "side": "enemies"
+            }
+          ],
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 30
+            },
+            {
+              "name": "Kamadar Tolerance Pipeline - M",
+              "icon": "Icon_chipicon_1007002",
+              "kind": "item",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
