@@ -108,7 +108,7 @@ data/
   features/                       # features.json/js
   bosses/                         # bosses.json/js
   story/                          # story.json/js (StoryData, fetched by the Story page); dialogue/ch-*.js, ev-*.js (cutscene lines, fetched when one is opened)
-    ac-guide.json                 # transcribed from the Armed Conquest guide PDF (data/screenshots/mined/), plus Extreme modifiers added by hand for AC9–11; build_bosses.py prints where it disagrees with the DB; skill `icon`s were matched by image from the guide's screenshots to the assets repo's pilot_skills icons (DB-only skills take a same-named card's icon)
+    ac-guide.json                 # transcribed from the Armed Conquest guide PDF (data/screenshots/mined/), plus Extreme modifiers added by hand for AC9–11 and buffs for AC13's (build_bosses.py otherwise takes each stage's Extreme modifiers from the DB's Hell-stage map rules); build_bosses.py prints where it disagrees with the DB; skill `icon`s were matched by image from the guide's screenshots to the assets repo's pilot_skills icons (DB-only skills take a same-named card's icon)
   rd/                             # rd-totals.json/js
   glossary.json                   # → GlossaryData
   dispatch.json                   # → dispatch table data

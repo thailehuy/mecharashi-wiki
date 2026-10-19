@@ -4,12 +4,13 @@
 The `bosses` map (name, pilot link, images) is kept by hand. This script
 rebuilds `armed_conquest` and `clearance_ops` from the DMG calc's targets
 (data/dmgcalc/bench-data.js), adds each boss's skills (and each Armed Conquest
-stage's name) from the mined DB
+stage's name and Extreme modifiers) from the mined DB
 (data/screenshots/MRT_FieldWiki/source/mecharashi.db), each Armed Conquest
 stage's description, bounties and clues and each Clearance Ops chapter's
 description and turn limit from the game tables
 (RebuildGameUpdate/out/stats.db) and what the Armed Conquest guide adds
-(ac-guide.json: skill cards, minions, Extreme modifiers, and descriptions,
+(ac-guide.json: skill cards, minions, Extreme modifiers with their scope
+and buffs, and descriptions,
 bounties and clues where the game tables lack them) and each Clearance Ops
 and Armed Conquest stage's drops (build_drops.py: per difficulty for AC, with
 each bounty's reward), then writes bosses.json and bosses.js.
@@ -181,6 +182,23 @@ def boss_skills(bosses, content):
         result[key] = (st['boss'], st['title'], skills, st['ids'])
     return result
 
+
+def extreme_modifiers():
+    """(season, stage) -> its Extreme modifiers ({name, difficulty,
+    description}): the map rules the DB's stage_effects lists for the
+    stage's Hell (Extreme) difficulty."""
+    con = sqlite3.connect(DB)
+    rows = con.execute("SELECT stages, name, description FROM stage_effects "
+                       "WHERE content = 'Armed Conquest' AND kind = 'the map''s rule' ORDER BY rowid").fetchall()
+    con.close()
+    out = {}
+    for stages, name, desc in rows:
+        for label in stages.split('; '):
+            m = re.match(r'^(.*) · Hell (\d+)$', label)
+            if m:
+                out.setdefault((m.group(1), int(m.group(2))), []).append(
+                    {'name': name, 'difficulty': 'Extreme', 'description': desc.strip()})
+    return out
 
 
 def skill_icons():
@@ -450,10 +468,12 @@ def guide_cards(cards):
     return skills
 
 
-def add_guide(s, st, entry, warn):
-    """Merge the guide's entry for a stage into it: the guide's skill cards
-    replace the DB's (empty or buff-less) descriptions; skills the DB doesn't
-    list are added, and DB skills the guide lacks are kept."""
+def add_guide(s, st, entry, db_mods, warn):
+    """Merge the guide's entry for a stage (possibly empty) into it: the
+    guide's skill cards replace the DB's (empty or buff-less) descriptions;
+    skills the DB doesn't list are added, and DB skills the guide lacks are
+    kept. db_mods: the stage's Extreme modifiers from the DB
+    (extreme_modifiers()), which the guide's replace."""
     where = 'AC%d %s' % (s['number'], st['boss'])
     # Seasons after the guide only have what was added by hand (e.g. modifiers).
     if 'title' in entry and entry['title'].replace('’', "'").lower() != st['title'].lower():
@@ -465,7 +485,22 @@ def add_guide(s, st, entry, warn):
         st['bounties'] = [dict(b, conditions={('Inferno' if d == 'Purgatory' else d): c for d, c in b['conditions'].items()})
                           for b in entry['bounties']]
     if entry.get('extreme_modifiers'):
-        st['extreme_modifiers'] = entry['extreme_modifiers']
+        # The guide's modifiers (with their [Enemy]/[Ally] scope and buffs)
+        # replace the DB's; a missing name is taken from the DB's.
+        if len(db_mods) != len(entry['extreme_modifiers']):
+            warn('%s: guide has %d Extreme modifier(s), DB %d' % (where, len(entry['extreme_modifiers']), len(db_mods)))
+        mods = []
+        for i, g in enumerate(entry['extreme_modifiers']):
+            d = db_mods[i] if i < len(db_mods) else {}
+            if d and NUM.findall(g['description']) != NUM.findall(d['description']):
+                warn('%s: Extreme modifier "%s" differs: guide "%s", DB "%s"'
+                     % (where, d['name'], g['description'], d['description']))
+            if not g.get('name') and d:
+                g = dict(g, name=d['name'])
+            mods.append(g)
+        st['extreme_modifiers'] = mods
+    elif db_mods:
+        st['extreme_modifiers'] = db_mods
     if entry.get('clues'):
         st['clues'] = entry['clues']
     if 'skills' not in entry:
@@ -738,12 +773,12 @@ def main():
 
     with open(GUIDE, encoding='utf-8') as f:
         guide = {(e['ac'], e['boss']): e for e in json.load(f)['bosses']}
+    modifiers = extreme_modifiers()
     warnings = []
     for s in ac.values():
         for st in s['stages']:
-            entry = guide.pop((s['number'], st['boss']), None)
-            if entry:
-                add_guide(s, st, entry, warnings.append)
+            entry = guide.pop((s['number'], st['boss']), {})
+            add_guide(s, st, entry, modifiers.get((s['name'], st['slot']), []), warnings.append)
     for ac_no, boss in guide:
         warnings.append('AC%d %s: in the guide but not in any season' % (ac_no, boss))
     info = stage_info()

@@ -377,6 +377,39 @@ window.BossesData = {
               ]
             }
           ],
+          "extreme_modifiers": [
+            {
+              "name": "Deep Impact",
+              "difficulty": "Extreme",
+              "description": "Enemy's [Bogged Down] and [Thunder Omen] will be upgraded to [Bogged Down β] and [Thunder Omen β].",
+              "buffs": [
+                {
+                  "name": "Bogged Down",
+                  "description": "After actively attacking, applies [Reverse Incentive] to the target hit, lasting for 1 turn."
+                },
+                {
+                  "name": "Bogged Down β",
+                  "description": "After actively attacking, applies [Reverse Incentive β] to the target hit, lasting for 1 turn."
+                },
+                {
+                  "name": "Thunder Omen",
+                  "description": "After 1 turn, uses a Rail Gun to attack all targets in a 3-tile designated direction, dealing 1x DMG."
+                },
+                {
+                  "name": "Thunder Omen β",
+                  "description": "After 1 turn, uses a Rail Gun to attack all targets in a designated 3-tile-wide line forward, dealing 1x DMG, and applying [Reverse Incentive β]."
+                },
+                {
+                  "name": "Reverse Incentive",
+                  "description": "At end of turn, for each instance of this effect, Mirestomp AP +2."
+                },
+                {
+                  "name": "Reverse Incentive β",
+                  "description": "At end of turn, for each instance of this effect, Mirestomp AP +4."
+                }
+              ]
+            }
+          ],
           "description": "The world is filled with nameless visitors.",
           "bounties": [
             {
@@ -570,6 +603,13 @@ window.BossesData = {
                   "description": "DMG +10%, DMG Taken -10%. Stacks up to 5 times. After being attacked, 1 stack is removed."
                 }
               ]
+            }
+          ],
+          "extreme_modifiers": [
+            {
+              "name": "Combat Ready",
+              "difficulty": "Extreme",
+              "description": "Signal Transmitter +2."
             }
           ],
           "description": "Traces remain in the snow.",
@@ -791,6 +831,27 @@ window.BossesData = {
                 {
                   "name": "Movement Down",
                   "description": "Reduces ST's Movement."
+                }
+              ]
+            }
+          ],
+          "extreme_modifiers": [
+            {
+              "name": "Signal Suppression",
+              "difficulty": "Extreme",
+              "description": "Enemy's [Crit Boost] will be upgraded to [Crit Boost β].",
+              "buffs": [
+                {
+                  "name": "Crit Boost",
+                  "description": "When destroyed, enemy units within 2 rings gain [Anger], lasting for 1 turn."
+                },
+                {
+                  "name": "Crit Boost β",
+                  "description": "When destroyed, [Anger] is applied to enemy units within 1 ring, lasting for 1 turn."
+                },
+                {
+                  "name": "Anger",
+                  "description": "Crit Rate +70%."
                 }
               ]
             }
@@ -1069,6 +1130,19 @@ window.BossesData = {
               }
             }
           ],
+          "extreme_modifiers": [
+            {
+              "name": "Overwhelming Momentum",
+              "difficulty": "Extreme",
+              "description": "[Enemy] Douglas initially gains 3 stacks of [Crossfire Boost].",
+              "buffs": [
+                {
+                  "name": "Crossfire Boost",
+                  "description": "Each stack increases Final DMG by 10% and Weapon Range by 1. At 3 stacks, executes [Frenzied Execution] after combat. Removed after executing."
+                }
+              ]
+            }
+          ],
           "description": "That is also the wish of many, many people.",
           "clue_unlock": {
             "Normal": 9,
@@ -1254,6 +1328,23 @@ window.BossesData = {
                 {
                   "name": "Cold Seal",
                   "description": "Prioritizes attacking the caster. DMG Taken +50%."
+                }
+              ]
+            }
+          ],
+          "extreme_modifiers": [
+            {
+              "name": "Tactical Containment",
+              "difficulty": "Extreme",
+              "description": "At start of turn, generates [Defense Field] at Gregory's location, and applies [Obstruction Beacon].",
+              "buffs": [
+                {
+                  "name": "Defense Field",
+                  "description": "Applies <terrian ID=6008501 /> to the designated tile and the surrounding <color=#F74848>1</color>-ring radius for <color=#F74848>2</color> turns. Can continue action with remaining Movement."
+                },
+                {
+                  "name": "Obstruction Beacon",
+                  "description": "When on the battlefield, if enemies pass within 1 ring of this unit or a [Defense Field], they must expend 1 additional Movement."
                 }
               ]
             }
@@ -1454,6 +1545,13 @@ window.BossesData = {
                   "description": "Ignores Armor and DMG Reduction to deal damage once."
                 }
               ]
+            }
+          ],
+          "extreme_modifiers": [
+            {
+              "name": "Gunport Deployment",
+              "difficulty": "Extreme",
+              "description": "Initially adds a 155mm Cannon - Type II."
             }
           ],
           "description": "Loyalty is like the moon in the water. It seems close, but is actually far away.",
@@ -1688,6 +1786,13 @@ window.BossesData = {
                   "description": "When any part suffers overdamage, the part is not destroyed and instead locks at 1 HP. Lasts until the end of the current attack."
                 }
               ]
+            }
+          ],
+          "extreme_modifiers": [
+            {
+              "name": "Rapid Mobilization",
+              "difficulty": "Extreme",
+              "description": "Initial enemy count increased."
             }
           ],
           "description": "Glory and ideals shattered, leaving only dust and old blood.",
@@ -1935,6 +2040,13 @@ window.BossesData = {
               }
             }
           ],
+          "extreme_modifiers": [
+            {
+              "name": "Momentum Collapse",
+              "difficulty": "Extreme",
+              "description": "[Enemy] After Genovese retaliates or pursues, applies [Normal Attack Disabled] to the target hit, lasting for 1 turn."
+            }
+          ],
           "description": "Loyalty and camaraderie have faded away, leaving only the creed of \"profit.\"",
           "clue_unlock": {
             "Normal": 9,
@@ -2145,7 +2257,8 @@ window.BossesData = {
                   "name": "Re-Act",
                   "description": "Can launch active attacks again. Before attacking, can move with full movement distance."
                 }
-              ]
+              ],
+              "name": "Teleport Overload"
             }
           ],
           "clues": [
