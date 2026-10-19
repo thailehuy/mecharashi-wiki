@@ -265,6 +265,7 @@ MISC_DESCRIPTIONS = {
     'clearanceops':  'Bosses and HP of every Clearance Ops chapter, each with a page of its bosses\' skills.',
     'elitebattle':   'Every Elite Battle stage with its win and star conditions, achievements and rewards.',
     'simulatedbattle': 'Every Simulated Battle stage with its modifiers, win conditions, chip algorithm unlocks and rewards.',
+    'covertphantom': "Border Conflict's roguelike mode: every area's bosses and battles by difficulty, Alert Levels, tech tree and pilot masteries.",
 }
 
 

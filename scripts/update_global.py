@@ -20,10 +20,11 @@ Steps
                   Armed Conquest line-ups), accessory chain traits, R&D features and totals, the Armed Conquest and
                   Clearance Ops boss pages with their skills and drops (build_bosses.py), the banner list, the pilot and ST
                   lore (build_lore.py), the Story page's world settings and chapters (build_story.py), and the Elite
-                  Battle and Simulated Battle pages (build_elite.py, build_sim.py).
+                  Battle, Simulated Battle and Covert Phantom pages (build_elite.py, build_sim.py, build_covert.py).
                   A new Armed Conquest season stops build_bosses.py until its name is added to AC_SEASONS there
                   (release order); then rerun with --from data
-    images        new drop/material/story/Elite and Simulated Battle reward item icons and banner art from the game's bundles into the assets repo
+    images        new drop/material/story/Elite, Simulated Battle and Covert Phantom reward item icons, Border Conflict foe
+                  portraits and banner art from the game's bundles into the assets repo
                   (extract_item_icons.py, extract_banner_images.py)
     compile       data/db/ -> the page bundles and builder index maps (compile.py)
 
@@ -43,7 +44,7 @@ STEPS = ['mine', 'translations', 'crafting', 'data', 'images', 'compile']
 # In order, after compile.py: build-icons.py, build_features.py and build_bosses.py read the compiled bundles.
 DATA = [['extract-bench.py', '--data-only'], ['build-icons.py'], ['extract-chain-traits.py'], ['build_features.py'],
         ['build_rd_totals.py'], ['build_bosses.py'], ['build_banners.py'], ['build_lore.py'],
-        ['build_story.py'], ['build_elite.py'], ['build_sim.py']]
+        ['build_story.py'], ['build_elite.py'], ['build_sim.py'], ['build_covert.py']]
 
 
 def run(args, cwd=ROOT):

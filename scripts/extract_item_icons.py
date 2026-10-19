@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 """Extract the item icons the boss drops (bosses.json), crafting materials
 (data/db/materials.json), story stage rewards (data/story/story.json), Elite Battle rewards
-(data/elite/elite.json) and Simulated Battle rewards (data/sim/sim.json) use from the game's bundles into the assets repo
-(data/items/<icon>.png), and the Story page's Border Conflict foes' portraits
-(data/unlisted/pilot_images_half/<portrait>.png).
+(data/elite/elite.json), Simulated Battle rewards (data/sim/sim.json) and Covert Phantom boss rewards
+(data/covert/covert.json) use from the game's bundles into the assets repo (data/items/<icon>.png), and the
+Border Conflict foes' portraits on the Story and Covert Phantom pages and the Covert Phantom pilot masteries'
+pilots (data/unlisted/pilot_images_half/<portrait>.png).
 
 The icons are sprites in the game's ui_uiimages_uiicons_itemtype_abs_* bundles
 (pilot chips': ..._itemchips_abs, medals': ..._honormedal_abs), the portraits
@@ -33,6 +34,7 @@ MATERIALS = os.path.join(ROOT, 'data', 'db', 'materials.json')
 STORY = os.path.join(ROOT, 'data', 'story', 'story.json')
 ELITE = os.path.join(ROOT, 'data', 'elite', 'elite.json')
 SIM = os.path.join(ROOT, 'data', 'sim', 'sim.json')
+COVERT = os.path.join(ROOT, 'data', 'covert', 'covert.json')
 ASSETS_DIR = os.environ.get('ASSETS_DIR', os.path.join(os.path.dirname(ROOT), 'mecharashi-wiki-assets'))
 OUT_DIR = os.path.join(ASSETS_DIR, 'data', 'items')
 PORTRAIT_DIR = os.path.join(ASSETS_DIR, 'data', 'unlisted', 'pilot_images_half')
@@ -76,16 +78,32 @@ def needed_icons():
             sim = json.load(f)
         icons |= {r['icon'] for c in sim['chapters'] for st in c['stages'] for r in st['rewards']
                   if r['kind'] == 'item' and r.get('icon')}
+    # Each boss tier's rewards, per difficulty.
+    icons |= {r['icon'] for t in covert_tiers() for rs in t['rewards'].values() for r in rs
+              if r['kind'] == 'item' and r.get('icon')}
     return icons
 
 
+def covert_tiers():
+    """Every boss tier on the Covert Phantom page."""
+    if not os.path.exists(COVERT):
+        return []
+    with open(COVERT, encoding='utf-8') as f:
+        return [t for a in json.load(f)['areas'] for g in a['bosses'] for t in g['tiers']]
+
+
 def needed_portraits():
-    """Every Border Conflict foe's portrait (Pilot_11002A_half) on the Story page."""
+    """Every Border Conflict foe's portrait (Pilot_11002A_half) on the Story and Covert Phantom pages, and the
+    Covert Phantom pilot masteries' pilots."""
+    need = {t['portrait'] for t in covert_tiers() if t.get('portrait')}
+    if os.path.exists(COVERT):
+        with open(COVERT, encoding='utf-8') as f:
+            need |= {m['portrait'] for m in json.load(f)['masteries']}
     if not os.path.exists(STORY):
-        return set()
+        return need
     with open(STORY, encoding='utf-8') as f:
         bc = json.load(f).get('borderConflict', {})
-    return {f['portrait'] for b in bc.get('bosses', []) for f in b['foes'] if f.get('portrait')}
+    return need | {f['portrait'] for b in bc.get('bosses', []) for f in b['foes'] if f.get('portrait')}
 
 
 def newest_bundles(prefixes):

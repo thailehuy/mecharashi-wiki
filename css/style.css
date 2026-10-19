@@ -4203,3 +4203,48 @@ a.boss-avatar { display: block; }
 .sim-unlock { margin-top: 0.6rem; font-size: 0.9rem; color: #cbd5e1; }
 .sim-unlock .bi { color: #deb072; margin-right: 0.4rem; }
 .sim-unlock b { color: #ffffff; }
+
+/* Covert Phantom: areas, boss tiers and battles as on the Story/Elite Battle pages; the difficulty toggle is Armed Conquest's. */
+#cp-root [hidden] { display: none !important; }
+.cp-h2 { font-size: 1.25rem; margin: 1.5rem 0 0.5rem; display: inline-block; padding: 0.3rem 0.8rem; background: rgba(15, 15, 25, 0.9); border-radius: 6px; }
+.cp-block { margin-bottom: 1rem; }
+.cp-diff-info { margin: 0 0 0.5rem; padding: 0.6rem 0.9rem; }
+.cp-muted { color: #8a8aa0; }
+.cp-star { color: #ffcf5c; font-size: 0.75em; margin-left: 0.1rem; }
+.cp-section { margin-top: 1rem; }
+.cp-boss { margin-bottom: 0.75rem; }
+.cp-boss-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.5rem; margin: 0.75rem 0 0.5rem; padding: 0.4rem 0.75rem; background: rgba(15, 15, 25, 0.85); border-left: 3px solid #deb072; border-radius: 4px; }
+.cp-boss-head h4 { font-size: 1.05rem; margin: 0; color: #deb072; }
+.cp-boss-head span { color: #cbd5e1; font-size: 0.9rem; }
+.cp-star-group { margin-bottom: 0.75rem; }
+.cp-star-head { font-weight: 700; margin: 0.5rem 0 0.25rem; display: inline-block; padding: 0.15rem 0.6rem; background: rgba(15, 15, 25, 0.85); border-radius: 4px; }
+.cp-enemies { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0.2rem; font-size: 0.9rem; }
+.cp-enemies li { display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem; }
+.cp-enemy-n { color: #8a8aa0; min-width: 1.75rem; }
+.cp-enemy-name { color: #ffffff; font-weight: 600; }
+.cp-enemy-st { color: #cbd5e1; }
+.cp-enemy-lv { color: #ffcf5c; font-size: 0.8rem; }
+.cp-enemies .tag { font-size: 0.7rem; }
+.cp-tag-capture { background-color: #14532d; color: #bbf7d0; }
+.cp-tag-summon { background-color: #1e3a5f; color: #bfdbfe; }
+.cp-tag-roaming { background-color: #7f1d1d; color: #fecaca; }
+.cp-tag-alert { background-color: #713f12; color: #fde68a; }
+/* A solid backing for text that would otherwise sit on the page's background art. */
+.cp-panel { background: rgba(15, 15, 25, 0.92); border: 1px solid #2a2a4a; border-radius: 6px; padding: 0.5rem 0.75rem 0.75rem; margin-top: 0.4rem; }
+.cp-panel .ac-section-footnote { background: none; border: none; padding: 0; }
+#cp-root .detail-tab-pane { padding-top: 0.75rem; }
+.cp-masteries { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 0.5rem; }
+.cp-tech-unit, .cp-mastery { font-size: 0.9rem; }
+.cp-tech { display: flex; flex-direction: column; align-items: stretch; }
+.cp-tech-row { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem; }
+.cp-tech-row .cp-tech-unit { flex: 1 1 200px; max-width: 280px; margin: 0; }
+.cp-tech-link { align-self: center; margin: 0.35rem 0; padding: 0.15rem 0.7rem; font-size: 0.75rem; color: #cbd5e1; background: rgba(15, 15, 25, 0.9); border-radius: 999px; text-align: center; }
+.cp-tech-link .bi { color: #deb072; margin-right: 0.3rem; }
+.cp-mastery { display: flex; gap: 0.75rem; align-items: flex-start; margin: 0; }
+.cp-mastery-avatar { width: 64px; height: 64px; object-fit: cover; object-position: top; border-radius: 6px; background: #11111b; flex-shrink: 0; }
+.cp-mastery-body { min-width: 0; }
+.cp-tech-level { color: #cbd5e1; margin-top: 0.2rem; }
+.cp-cost { color: #deb072; font-size: 0.8rem; margin-top: 0.3rem; }
+.cp-mastery-head { display: flex; align-items: center; gap: 0.4rem; margin-bottom: 0.4rem; }
+.cp-tag-device { background-color: #334155; color: #e2e8f0; }
+.cp-alert { margin-top: 0.5rem; }
