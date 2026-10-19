@@ -1770,7 +1770,7 @@ window.GlossaryData = {
       "Ap": "1",
       "CD": "0",
       "icon": "Icon_skill_order_5146",
-      "effect": "Selects <color=#F74848>1</color> enemy unit on the battlefield affected by <buf ID=6010502>[Magnetic Lock]</buf>. Fires a Rail Gun, consuming all Ammo to attack targets within the selected <range type=1>1-tile cross-shaped</range>, <range type=2>3x3 square</range> or <range type=2>2-tile diamond</range> area. The number of attacks is equal to the amount of Ammo consumed, prioritizing strikes on different targets. Each attack deals <color=#F74848>0.6x</color> AoE DMG to the target and other enemy units within <color=#F74848>1</color> tile of its location, always targeting the Body. When repeatedly attacking the same target, DMG is reduced by <color=#F74848>60%</color>. After this skill ends, removes <buf ID=6010502>[Magnetic Lock]</buf> from all enemy units attacked."
+      "effect": "Selects <color=#F74848>1</color> enemy unit on the battlefield affected by <buf ID=6010502>[Magnetic Lock]</buf>. Fires a Rail Gun, consuming all Ammo to attack targets within its selected range. The number of attacks is equal to the amount of Ammo consumed, prioritizing strikes on different targets. Each attack deals <color=#F74848>0.6x</color> AoE DMG to the target and other enemy units within <color=#F74848>1 tile</color> of its location, always targeting the Body. When repeatedly attacking the same target, DMG is reduced by <color=#F74848>60%</color>. After this skill ends, removes <buf ID=6010502>[Magnetic Lock]</buf> from all enemy units attacked."
     },
     "601051": {
       "name": "Vengeance Strike β",

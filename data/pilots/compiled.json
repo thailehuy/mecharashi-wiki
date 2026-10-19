@@ -31899,6 +31899,53 @@
         "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
       },
       "version": "2.4",
+      "summonSkills": [
+        {
+          "name": "Vengeance Strike",
+          "describe": "Selects <color=#F74848>1</color> enemy unit on the battlefield affected by <buf ID=6010502>[Magnetic Lock]</buf>. Fires a Rail Gun, consuming all Ammo to attack targets within its selected range. The number of attacks is equal to the amount of Ammo consumed, prioritizing strikes on different targets. Each attack deals <color=#F74848>0.6x</color> AoE DMG to the target and other enemy units within <color=#F74848>1 tile</color> of its location, always targeting the Body. When repeatedly attacking the same target, DMG is reduced by <color=#F74848>60%</color>. After this skill ends, removes <buf ID=6010502>[Magnetic Lock]</buf> from all enemy units attacked.",
+          "SpecificEffects": "",
+          "type": "Order",
+          "Ap": "1",
+          "CD": "0",
+          "icon": "Icon_skill_order_5146"
+        },
+        {
+          "name": "Vengeance Strike I",
+          "describe": "Selects <color=#F74848>1</color> enemy unit on the battlefield afflicted with <buf ID=6010502>[Magnetic Lock]</buf>. Consumes all Ammo. Uses a Rail Gun to attack targets within a <range type=1>1-tile radius</range> around it. The number of attacks equals the amount of Ammo consumed, prioritizing different targets. Each attack deals <color=#F74848>0.6x</color> AoE DMG to the target and other enemy units within a <color=#F74848>1-tile radius</color> of its location, always targeting the Body. When repeatedly attacking the same target, DMG is reduced by <color=#F74848>60%</color>. After this skill ends, removes <buf ID=6010502>[Magnetic Lock]</buf> from all attacked enemy units.",
+          "SpecificEffects": "",
+          "type": "Order",
+          "Ap": "1",
+          "CD": "0",
+          "icon": "Icon_skill_order_5147"
+        },
+        {
+          "name": "Vengeance Strike II",
+          "describe": "Selects <color=#F74848>1</color> enemy unit on the battlefield afflicted with <buf ID=6010502>[Magnetic Lock]</buf>. Consumes all Ammo. Uses a Rail Gun to attack targets within a <range type=1>1-ring radius</range> around it. The number of attacks equals the amount of Ammo consumed, prioritizing different targets. Each attack deals <color=#F74848>0.6x</color> AoE DMG to the target and other enemy units within a <color=#F74848>1-tile radius</color> of its location, always targeting the Body. When repeatedly attacking the same target, DMG is reduced by <color=#F74848>60%</color>. After this skill ends, removes <buf ID=6010502>[Magnetic Lock]</buf> from all attacked enemy units.",
+          "SpecificEffects": "",
+          "type": "Order",
+          "Ap": "1",
+          "CD": "0",
+          "icon": "Icon_skill_order_5148"
+        },
+        {
+          "name": "Vengeance Strike III",
+          "describe": "Selects <color=#F74848>1</color> enemy unit on the battlefield afflicted with <buf ID=6010502>[Magnetic Lock]</buf>. Consumes all Ammo. Uses a Rail Gun to attack targets within a <range type=1>2-tile diamond</range> area. The number of attacks equals the amount of Ammo consumed, prioritizing different targets. Each attack deals <color=#F74848>0.6x</color> AoE DMG to the target and other enemy units within a <color=#F74848>1-tile radius</color> of its location, always targeting the Body. When repeatedly attacking the same target, DMG is reduced by <color=#F74848>60%</color>. After this skill ends, removes <buf ID=6010502>[Magnetic Lock]</buf> from all attacked enemy units.",
+          "SpecificEffects": "",
+          "type": "Order",
+          "Ap": "1",
+          "CD": "0",
+          "icon": "Icon_skill_order_5149"
+        },
+        {
+          "name": "Vengeance Strike \u03b2",
+          "describe": "Uses a Rail Gun to attack targets with <buf ID=6010502>[Magnetic Lock]</buf>. The number of attacks equals the Rail Gun's Ammo Capacity but does not consume Ammo. Targets are prioritized from near to far, preferring different targets. Each attack deals <color=#F74848>0.4x</color> AoE DMG to the target and other enemies within <color=#F74848>1</color> tile of its location, always targeting the Body. When repeatedly attacking the same target, DMG is reduced by <color=#F74848>60%</color>. This attack will not remove the target's <buf ID=6010502>[Magnetic Lock]</buf>.",
+          "SpecificEffects": "",
+          "type": "Order",
+          "Ap": "0",
+          "CD": "0",
+          "icon": "Icon_skill_order_5146"
+        }
+      ],
       "statRanks": {
         "Combat": 39,
         "Shooting": 52,
