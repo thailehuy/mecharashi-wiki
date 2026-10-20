@@ -66,10 +66,12 @@ function availabilityTagHtml(tag, unitName) {
   var info = AVAILABILITY_INFO[tag];
   if (!info) return '';
   var source = COLLAB_SOURCE[unitName];
+  var lines = [];
+  if (source) lines.push('<strong>Collab with ' + source + '</strong>');
+  // Plain collab units have nothing to add beyond the source line.
+  if (!(source && tag === 'C')) lines.push(info.desc);
   return '<span class="tag avail-tag ' + info.cls + '" tabindex="0">' + info.label +
-    '<span class="avail-tooltip" role="tooltip">' +
-      (source ? '<strong>Collab with ' + source + '</strong><br>' : '') + info.desc +
-    '</span>' +
+    '<span class="avail-tooltip" role="tooltip">' + lines.join('<br>') + '</span>' +
   '</span>';
 }
 
