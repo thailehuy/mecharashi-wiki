@@ -41,21 +41,35 @@ var AVAILABILITY_INFO = {
 var PILOT_AVAILABILITY = {
   'Asuka': 'CL', 'Shinji': 'CL', 'Rei': 'CL', 'Wataru': 'CL', 'Toraoh': 'CL',
   'Rosa: Judgment': 'L', 'Hailis': 'L', 'Lustre': 'L',
-  'Fregata': 'C', 'Cosette': 'C', 'Sylar': 'C',
+  'Fregata': 'C', 'Cosette': 'C', 'Sylar': 'C', 'Lexuan': 'C',
 };
 var MECH_AVAILABILITY = {
   'REV-00': 'CL', 'REV-01': 'CL', 'REV-02': 'CL', 'Huilong': 'CL', 'Shadowtiger': 'CL',
   'Erinys': 'L', 'Demiurge': 'L', 'Asteria': 'L',
   'Shadowrabbit': 'C', 'Blue Anonymous Bird': 'C', 'Medusa MKII': 'C',
-  'Eye of Faith': 'C', 'Pascal': 'C',
+  'Eye of Faith': 'C', 'Pascal': 'C', 'Bawang': 'C',
+};
+// Collab source title per unit (pilot or mech name), shown in the availability tooltip.
+var COLLAB_SOURCE = {
+  'Asuka': 'Neon Genesis Evangelion', 'Shinji': 'Neon Genesis Evangelion', 'Rei': 'Neon Genesis Evangelion',
+  'REV-00': 'Neon Genesis Evangelion', 'REV-01': 'Neon Genesis Evangelion', 'REV-02': 'Neon Genesis Evangelion',
+  'Fregata': 'Bird Binary', 'Cosette': 'Bird Binary', 'Sylar': 'Bird Binary',
+  'Shadowrabbit': 'Bird Binary', 'Blue Anonymous Bird': 'Bird Binary', 'Medusa MKII': 'Bird Binary',
+  'Wataru': 'Mashin Hero Wataru', 'Toraoh': 'Mashin Hero Wataru',
+  'Huilong': 'Mashin Hero Wataru', 'Shadowtiger': 'Mashin Hero Wataru',
+  'Lexuan': 'Progenitor Effect', 'Bawang': 'Progenitor Effect',
+  'Eye of Faith': 'ROG', 'Pascal': 'Nvidia',
 };
 
 // Full-name tag for detail pages; the description pops up on hover/focus (tap on touch).
-function availabilityTagHtml(tag) {
+function availabilityTagHtml(tag, unitName) {
   var info = AVAILABILITY_INFO[tag];
   if (!info) return '';
+  var source = COLLAB_SOURCE[unitName];
   return '<span class="tag avail-tag ' + info.cls + '" tabindex="0">' + info.label +
-    '<span class="avail-tooltip" role="tooltip">' + info.desc + '</span>' +
+    '<span class="avail-tooltip" role="tooltip">' +
+      (source ? '<strong>Collab with ' + source + '</strong><br>' : '') + info.desc +
+    '</span>' +
   '</span>';
 }
 
@@ -375,7 +389,7 @@ Pages.pilots = {
       '<div class="detail-name-row">' +
         '<div class="detail-avatar-col">' +
           '<img class="detail-name-avatar" src="' + thumbSrc + '" onerror="this.onerror=null;this.src=\'' + thumbFallback + '\';" alt="' + $('<span>').text(p.PilotName).html() + '" style="background-image:url(\'' + bgSrc + '\')" />' +
-          availabilityTagHtml(PILOT_AVAILABILITY[p.PilotName]) +
+          availabilityTagHtml(PILOT_AVAILABILITY[p.PilotName], p.PilotName) +
         '</div>' +
         '<div>' +
           '<h2 class="detail-name">' + occIconHtml + $('<span>').text(p.PilotName).html() + '</h2>' +
