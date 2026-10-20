@@ -4367,3 +4367,25 @@ a.boss-avatar { display: block; }
 .cp-mastery-head { display: flex; align-items: center; gap: 0.4rem; margin-bottom: 0.4rem; }
 .cp-tag-device { background-color: #334155; color: #e2e8f0; }
 .cp-alert { margin-top: 0.5rem; }
+
+/* Memory Storm: score tiers as a table of reward chips; each season's part pool. */
+.storm-table td { vertical-align: top; }
+.storm-table .boss-drop-list { margin-top: 0; }
+.storm-tier { font-weight: 700; white-space: nowrap; }
+.storm-score { white-space: nowrap; color: #cbd5e1; }
+.storm-season { scroll-margin-top: 80px; }
+.storm-season-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.5rem; }
+.storm-season-head h2 { font-size: 1.15rem; font-weight: 700; color: #ffffff; margin: 0; }
+.storm-text { color: #cbd5e1; font-size: 0.9rem; margin: 0.5rem 0 0; }
+.storm-closed { background-color: #7f1d1d; color: #fecaca; font-size: 0.7rem; }
+.storm-upcoming { background-color: #1e3a8a; color: #bfdbfe; font-size: 0.7rem; }
+.storm-fan { color: #8a8aa8; font-style: italic; font-size: 0.8rem; }
+@media (max-width: 767px) {
+  /* Each tier as a card of labelled rows. */
+  .storm-table thead { display: none; }
+  .storm-table, .storm-table tbody, .storm-table tr, .storm-table td { display: block; width: 100%; }
+  .storm-table tr { border-bottom: 2px solid #2a2a4a; }
+  .storm-table td { border: none; text-align: left; padding: 0.4rem 0.75rem; }
+  .storm-table td[data-label]::before { content: attr(data-label); display: block; font-size: 0.75rem; color: #8a8aa8; margin-bottom: 0.25rem; }
+  .storm-table .storm-tier { background-color: rgba(233, 69, 96, 0.15); }
+}

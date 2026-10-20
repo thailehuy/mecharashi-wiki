@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Extract the item icons the boss drops (bosses.json), crafting materials
 (data/db/materials.json), story stage rewards (data/story/story.json), Elite Battle rewards
-(data/elite/elite.json), Simulated Battle rewards (data/sim/sim.json) and Covert Phantom boss rewards
-(data/covert/covert.json) use from the game's bundles into the assets repo (data/items/<icon>.png), and the
+(data/elite/elite.json), Simulated Battle rewards (data/sim/sim.json), Covert Phantom boss rewards
+(data/covert/covert.json) and Memory Storm clear drops (data/storm/storm.json) use from the game's bundles into the assets repo (data/items/<icon>.png), and the
 Border Conflict foes' portraits on the Story and Covert Phantom pages and the Covert Phantom pilot masteries'
 pilots (data/unlisted/pilot_images_half/<portrait>.png).
 
@@ -35,6 +35,7 @@ STORY = os.path.join(ROOT, 'data', 'story', 'story.json')
 ELITE = os.path.join(ROOT, 'data', 'elite', 'elite.json')
 SIM = os.path.join(ROOT, 'data', 'sim', 'sim.json')
 COVERT = os.path.join(ROOT, 'data', 'covert', 'covert.json')
+STORM = os.path.join(ROOT, 'data', 'storm', 'storm.json')
 ASSETS_DIR = os.environ.get('ASSETS_DIR', os.path.join(os.path.dirname(ROOT), 'mecharashi-wiki-assets'))
 OUT_DIR = os.path.join(ASSETS_DIR, 'data', 'items')
 PORTRAIT_DIR = os.path.join(ASSETS_DIR, 'data', 'unlisted', 'pilot_images_half')
@@ -81,6 +82,12 @@ def needed_icons():
     # Each boss tier's rewards, per difficulty.
     icons |= {r['icon'] for t in covert_tiers() for rs in t['rewards'].values() for r in rs
               if r['kind'] == 'item' and r.get('icon')}
+    if os.path.exists(STORM):
+        with open(STORM, encoding='utf-8') as f:
+            storm = json.load(f)
+        # Each score tier's first-clear, bonus and normal drops.
+        icons |= {r['icon'] for s in storm['seasons'] for t in s['tiers'] for key in ('first', 'bonus', 'normal')
+                  for r in t[key] if r['kind'] == 'item' and r.get('icon')}
     return icons
 
 

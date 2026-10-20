@@ -266,6 +266,7 @@ MISC_DESCRIPTIONS = {
     'elitebattle':   'Every Elite Battle stage with its win and star conditions, achievements and rewards.',
     'simulatedbattle': 'Every Simulated Battle stage with its modifiers, win conditions, chip algorithm unlocks and rewards.',
     'covertphantom': "Border Conflict's roguelike mode: every area's bosses and battles by difficulty, Alert Levels, tech tree and pilot masteries.",
+    'memorystorm':   "Memory Storm clear drops by score tier, and every season's ST part pool with its SSR STs.",
 }
 
 
