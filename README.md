@@ -37,7 +37,7 @@ Pilot voice lines are in another repo, [mecharashi-wiki-voices](https://github.c
 - **Backpacks** listing + detail — grouped by quality tier, recursive crafting-material breakdown
 - **Accessories** listing — Triggers/Reactions, Clearance Ops filters
 - **Modules** listing + detail — grouped by category, live level-preview slider, "carried by" ST list
-- **Dispatch** table — patch-version × dispatch-group grid linking to ST detail pages
+- **Dispatch** — tabs: Dispatch Table (patch-version × dispatch-group grid linking to ST detail pages) and Dispatch Calculator: from each dispatch group's progress and the 3 daily picks (75/100/150 points, each a mech from `data/dispatch.json` whose group it counts toward, one per group, and only once its patch has started), the day and patch the first group completes all 4 cycles (3,900 points each). Each patch's last week counts double; the ~25% daily double chance counts as every 4th other day so points stay whole (off in Pessimistic view). A result can be saved as a round, with each pick's cycles at its end, that seeds the next calculation (sessionStorage only); the inputs can be saved as a starting point (localStorage) that Reset returns to. The patch schedule is `DCALC_PATCHES` in `dispatchcalc.js`
 - **EX Skills** reference — universal weapon-type basic attacks/codes
 - **ST Stats** table — sortable/filterable comparison of all SSR-quality STs
 - **Builder** — mech loadout theorycrafting tool, incl. 4 accessory slots per weapon (at least 1 trigger TA + 1 reaction RA) with each TA + RA chain's trigger chance; state is encoded into a shareable Build UID (URL hash), not localStorage
@@ -72,7 +72,8 @@ js/
     backpacks.js                  # Backpacks listing + detail page
     accessories.js                # Accessories listing
     modules.js                    # Modules listing + detail page
-    dispatch.js                   # Dispatch schedule table
+    dispatch.js                   # Dispatch page (Dispatch Table tab + tabs shell)
+    dispatchcalc.js               # Dispatch Calculator tab of the Dispatch page
     exskills.js                   # EX Skills reference
     ststats.js                    # ST stats comparison table
     builder.js                    # Mech loadout builder

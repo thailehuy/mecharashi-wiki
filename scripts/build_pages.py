@@ -251,7 +251,7 @@ def route_titles(index_html):
 # Preview text for the pages under the "Misc." nav group. They reuse the
 # home page's og:image, shown small (twitter:card=summary).
 MISC_DESCRIPTIONS = {
-    'dispatch':   'Patch-by-patch schedule of which STs were released in each dispatch group.',
+    'dispatch':   'Patch-by-patch schedule of which STs were released in each dispatch group, and a calculator for the day your next dispatch ST completes.',
     'exskills':   'Reference of the universal EX skills for each weapon type.',
     'shops':      'What the Arena and Border Conflict shops sell, and what each item does.',
     'banners':    'Every pilot and ST gacha banner by patch, with its dates and featured units.',

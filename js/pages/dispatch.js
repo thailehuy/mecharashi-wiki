@@ -12,8 +12,10 @@ var DISPATCH_NAME_ALIASES = {
   'Nemesis':       'Erinys',
 };
 
+// Two tabs: the patch × group table of dispatch STs, and the Dispatch
+// Calculator (js/pages/dispatchcalc.js).
 Pages.dispatch = {
-  title: 'Dispatch Table',
+  title: 'Dispatch',
 
   render: function () {
     var rows  = (window.DispatchData || {}).dispatch || [];
@@ -57,8 +59,7 @@ Pages.dispatch = {
       );
     }).join('');
 
-    return (
-      '<div class="listing-header"><h1>Dispatch Table</h1></div>' +
+    var table = (
       '<p class="dispatch-intro">All mechs deployed via Dispatch, grouped by patch version and dispatch group.</p>' +
       '<div class="dispatch-table-wrap">' +
         '<table class="dispatch-table">' +
@@ -72,9 +73,21 @@ Pages.dispatch = {
         '</table>' +
       '</div>'
     );
+
+    return (
+      '<div class="listing-header"><h1>Dispatch</h1></div>' +
+      '<div class="dispatch-tabs">' +
+        Lore.tabsHtml([
+          ['table', 'Dispatch Table', table],
+          ['calculator', 'Dispatch Calculator', DispatchCalc.render()],
+        ]) +
+      '</div>'
+    );
   },
 
-  destroy: function () {},
+  destroy: function () {
+    DispatchCalc.destroy();
+  },
 };
 
 window.Pages = Pages;

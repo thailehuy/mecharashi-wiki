@@ -4389,3 +4389,71 @@ a.boss-avatar { display: block; }
   .storm-table td[data-label]::before { content: attr(data-label); display: block; font-size: 0.75rem; color: #8a8aa8; margin-bottom: 0.25rem; }
   .storm-table .storm-tier { background-color: rgba(233, 69, 96, 0.15); }
 }
+
+/* ── Dispatch Calculator ─────────────────────────────────────────────── */
+.dcalc-panels {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.dcalc-panel {
+  background-color: #1a1a20;
+  border: 1px solid #2a2a4a;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+}
+.dcalc-panel-title { font-size: 1rem; font-weight: 700; color: #ffffff; margin: 0 0 0.6rem; }
+.dcalc-row { display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem 0.75rem; margin-bottom: 0.5rem; }
+.dcalc-row-label { min-width: 6.5rem; font-weight: 600; color: #e0e0ff; }
+.dcalc-field { display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.85rem; color: #a0a0c8; }
+.dcalc-input {
+  font-size: 0.85rem;
+  padding: 4px 8px;
+  border-radius: 4px;
+  border: 1px solid #3a3a5a;
+  background-color: rgba(26, 26, 46, 0.85);
+  color: #e0e0ff;
+  color-scheme: dark;
+}
+.dcalc-input:focus { outline: none; border-color: #e94560; }
+.dcalc-points { width: 5.5rem; }
+.dcalc-check { display: flex; align-items: center; gap: 0.4rem; font-size: 0.85rem; color: #cbd5e1; margin-bottom: 0.5rem; cursor: pointer; }
+.dcalc-hint { color: #8a8aa8; }
+.dcalc-result {
+  background-color: #1a1a20;
+  border: 1px solid #e94560;
+  border-radius: 8px;
+  padding: 0.9rem 1rem;
+  margin-bottom: 1.25rem;
+}
+.dcalc-result-head { font-size: 1.1rem; color: #e0e0ff; }
+.dcalc-date { color: #e94560; }
+.dcalc-result-sub { font-size: 0.85rem; color: #a0a0b0; margin-top: 0.25rem; }
+.dcalc-warn { font-size: 0.85rem; color: #fbbf24; margin-top: 0.4rem; }
+.dcalc-bars { margin-top: 0.85rem; }
+.dcalc-bar-row { display: flex; flex-wrap: wrap; align-items: center; gap: 0.3rem 0.75rem; margin-bottom: 0.45rem; }
+.dcalc-bar { flex: 1 1 160px; height: 10px; border-radius: 5px; background-color: #2a2a4a; overflow: hidden; }
+.dcalc-bar-fill { height: 100%; background-color: #6366f1; }
+.dcalc-bar-fill.full { background-color: #22c55e; }
+.dcalc-bar-text { font-size: 0.8rem; color: #cbd5e1; min-width: 13rem; }
+.dcalc-done { color: #86efac; }
+.dcalc-actions { margin-top: 0.75rem; }
+.filter-btn.dcalc-btn-primary { background-color: #e94560; border-color: #e94560; color: #ffffff; }
+.dcalc-rounds-head { display: flex; align-items: center; justify-content: space-between; gap: 0.5rem; margin-bottom: 0.5rem; }
+.dcalc-rounds-head .dcalc-panel-title { margin: 0; }
+#dcalc-rounds { margin-bottom: 1.25rem; }
+.dcalc-schedule summary { color: #a0a0c8; cursor: pointer; margin-bottom: 0.5rem; }
+@media (max-width: 767px) {
+  .dcalc-rounds-table thead { display: none; }
+  .dcalc-rounds-table, .dcalc-rounds-table tbody, .dcalc-rounds-table tr, .dcalc-rounds-table td { display: block; width: 100%; }
+  .dcalc-rounds-table tr.dcalc-round-first:not(:first-child) { border-top: 2px solid #2a2a4a; }
+  .dcalc-rounds-table td { border: none; text-align: left; padding: 0.3rem 0.75rem; }
+  .dcalc-rounds-table .dcalc-round-first td:first-child { background-color: rgba(233, 69, 96, 0.15); font-weight: 700; }
+  .dcalc-rounds-table td[data-label]::before { content: attr(data-label) ': '; color: #8a8aa8; font-size: 0.8rem; }
+}
+.dcalc-patch { font-size: 0.8rem; font-weight: 600; color: #ffffff; background-color: #2a2a4a; border-radius: 4px; padding: 1px 6px; vertical-align: middle; }
+.dcalc-rounds-table .dcalc-round-daily { text-align: left; }
+.dispatch-tabs .detail-tabs { margin-top: 0; }
+.dispatch-tabs .detail-tab-pane { padding-top: 1rem; }
+.dcalc-start-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 0.75rem; margin: -0.25rem 0 1rem; }
