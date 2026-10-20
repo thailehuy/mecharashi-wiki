@@ -1781,7 +1781,7 @@ window.GlossaryData = {
     },
     "4011051": {
       "name": "Link Retaliation",
-      "effect": "[Colin] uses two Cutters to attack a target, dealing <color=#F74848>0.4x</color> DMG <color=#F74848>2</color> times."
+      "effect": "[Colin] uses two Cutters to attack a target, dealing <color=#F74848>0.5x</color> DMG <color=#F74848>2</color> times."
     },
     "6011501": {
       "name": "Polearm Toss",
