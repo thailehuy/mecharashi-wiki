@@ -22,6 +22,8 @@ Images and icons live in a separate repo, [mecharashi-wiki-assets](https://githu
 
 Add new images to the matching folder in that repo; pushing its `main` deploys them.
 
+Pilot voice lines are in another repo, [mecharashi-wiki-voices](https://github.com/thailehuy/mecharashi-wiki-voices), served from `https://voices.mecharashi-wiki.cc/` (`VOICE_BASE` in `index.html`): `<lang>/<pilot ID>/<Wwise event>.mp3`, `lang` = `en`, `ja` or `zh`. `scripts/extract_voices.py` fills it from the game's sound banks (clone it next to this repo, or set `VOICES_DIR`); pushing its `main` deploys them.
+
 > Fan project — not affiliated with Tentree Games / BlackJack Studio, non-commercial.
 
 ## Features
@@ -29,7 +31,7 @@ Add new images to the matching folder in that repo; pushing its `main` deploys t
 - Single-page app with path routing (`pilots/ada/`); legacy `#page/param` links still work and are rewritten to the path form
 - Per-item link previews (Facebook/Discord) — `build_pages.py` generates a copy of `index.html` with its own og:/twitter: tags for every pilot/ST/weapon/backpack/module/AC season/CO chapter, run by the deploy workflow
 - **Story** — tabs: Main Story (every main-story chapter's stages (briefing, location, encounters, Critical Operation, side missions) with their cutscenes and rewards), Event Stories (each limited-time event's story stages with their briefing, cutscenes and rewards, per difficulty where there are several), Border Conflict (its bosses by tier with what you find on them, its encounters with every choice and outcome, and the map's discoveries), then Geography, Faction, Incidents and Items from the in-game Skynet encyclopedia; built from the global client's tables by `scripts/build_story.py`, fetched when the page first opens
-- **Pilots** listing + detail — avatar, rank/version badges, filters, talents, skills, Neural Drive
+- **Pilots** listing + detail — avatar, rank/version badges, filters, talents, skills, Neural Drive, lore, voice lines (transcripts, voice actors and audio in English, Japanese and Chinese)
 - **STs (mechs)** listing + detail — avatar, rank/version badges, filters, firepower/HP/weight stats, modules
 - **Weapons** listing + detail — signature (SSSR) weapons grouped by release batch, paired-pilot linking, passive skills
 - **Backpacks** listing + detail — grouped by quality tier, recursive crafting-material breakdown
@@ -92,6 +94,8 @@ scripts/                          # Every build script; run them from the repo r
   build_rd_totals.py              # → data/rd/rd-totals.json/js (RDTotalsData, max R&D bonuses from the mined DB, for the R&D Bonus page and DMG calculator)
   build_bosses.py                 # → data/bosses/bosses.json/js (BossesData: line-ups and HP from bench-data.js, AC and CO boss skills from the mined DB, CO chapter blurbs and turn limits, and each CO boss's and AC stage's drops (build_drops.py) from the game tables, AC merged with ac-guide.json; every [Term] a skill uses gets an explanation under it, from the stage, the DB, the glossary or another stage of the season, and any it can't explain are printed)
   build_drops.py                  # boss drops from stats.db (no odds, those are server-side): CO boss → weapons/items it can drop (DungeonLevelInfo → ItemDropInfo) and the SSR accessories its weapons come with, with how many weapons carry each (WeaponEntryDropInfo.DropEntry4ClientShow → the weapon's "Accessory Collection" item, as the game shows it); AC stage → per difficulty, every clear's and first clear's drops and each bounty's reward (RaidDungeonLevelInfo; only AC1 drops weapons, later seasons give medals/handbooks/vouchers); run alone to print them. Drop weapon icons are in the assets repo's data/weapons/icons/<type>/ (Knuckles: KN/)
+  build_voice.py                  # pilot voice lines from stats.db → data/pilots/voice.js (PilotVoiceData, the pilot page's Voice Lines tab): each pilot's lines (voice scheme → ConfigDataPilotVoiceInfo; the in-game voice gallery's first, in its order), grouped by skin (ConfigDataPilotSkinInfo), with their transcript, the pilots/ST a line needs (PilotBond: team/target/enemy identities → the wiki pilots carrying them, or an ST) and which languages have audio (voice-audio.json); English and Chinese voice actors (ConfigDataCharacterVoice). CN-only pilots: lines and Chinese voice actor from the CN tables, no transcripts. Audio no table row plays is listed as Unused. Run extract_voices.py first
+  extract_voices.py               # every wiki pilot's voice lines from the game's Wwise banks (Resave/Wwise/<English|Japanese|Chinese>/Pilot_<ID>[skin letter].bnk, or a newer copy the game downloaded into its cache) → voices repo <lang>/<pilot ID>/<event>.mp3, and data/pilots/voice-audio.json (pilot → event → language → Wwise source ID). Events are named by their FNV-1 hash from the global/CN tables' WwiseVoiceEventName. Placeholder banks (CN-only pilots in English, some in Japanese) are skipped. Needs vgmstream-cli and ffmpeg (PATH, or VGMSTREAM / FFMPEG); skips lines already extracted from the same source unless --force
   build_lore.py                   # pilot and ST lore from stats.db → data/db/pilot_lore.json, mech_lore.json. Pilots: the Profile screen (affiliation, blood type, height, pilot-specific fields like Ada's Hobbies; ConfigDataPilotResumeInfo), the long introduction (ConfigDataPilotArchivesInfo) and the four Skynet anecdotes with their closing remark (ConfigDataSkynetPilotAnecdoteInfo). STs: manufacturer and the four Skynet anecdotes (ConfigDataSkynetWapSuit*; suit ID = first 4 digits of the Body part ID). Global only; v2.6+ rows keep theirs. Run compile.py after
   build_story.py                  # → data/story/story.json/js (StoryData, the Story page): chapters with their date (WorldMapTimePointInfo, XC = New Era) and stages (WorldMapChapterInfo → WorldMapWayPointInfo: main stages, encounters, Critical Operation, side missions) with each stage's rewards (RewardDropId, resolved like build_drops.py; pilots and STs linked by ID), event stories (PlotActivityInfo → level groups → PlotActivityLevelInfo, rewards per difficulty from PlotActivityLevelBattleInfo; reruns merged; run dates from OperationalActivityInfo), each main/event stage's cutscenes (Start/EndDialogID → ConfigDataDialogueInfo lines, with the game's skip summary; the lines in data/story/dialogue/<ch-ID|ev-ID>.js, one per chapter/event, fetched when a cutscene is opened), Border Conflict's story (ConfigDataRoguelike*: bosses, encounters, discoveries; deduplicated across difficulties), and the Skynet encyclopedia's Geography, Factions, Events (shown as Incidents) and Items (ConfigDataSkynetWikipedia*; Characters left out). Global only. Its item icons are extracted by extract_item_icons.py
   build_elite.py                  # → data/elite/elite.json/js (EliteData, the Elite Battle page): chapters (EliteBattleChapterInfo) with their star rewards, and stages (EliteBattleLevelInfo) with energy cost, daily runs, clear rewards (RewardDropId, resolved like build_story.py) and, from the stage's battle map (BattleMapInfo), its victory/defeat text, three star conditions and achievements (BattleAchievementInfo, each with its reward). Global only
@@ -107,7 +111,7 @@ scripts/                          # Every build script; run them from the repo r
 data/
   db/                             # Source tables: pilots, pilot_lore, pilot_neurons, neural_partitions, skills, mechs, mech_lore, mech_parts, modules, weapons, backpacks, materials (see data/README.md)
   intake/                         # translation intake forms for new CN pilots/STs, from build_intake.py
-  pilots/                         # compiled.js/json (PilotsData); lore.js (PilotLoreData, fetched by the pilot page's Lore tab)
+  pilots/                         # compiled.js/json (PilotsData); lore.js (PilotLoreData, fetched by the pilot page's Lore tab); voice.js (PilotVoiceData, fetched by the Voice Lines tab); voice-audio.json (extract_voices.py's list of the audio)
   mechs/                          # compiled.js/json (MechsData); lore.js (MechLoreData, fetched by the ST page's Lore tab)
   weapons/                        # compiled.js/json (WeaponsData)
   backpacks/                      # compiled.js/json (BackpacksData)
@@ -134,10 +138,11 @@ data/
 - Full portrait, rank and version badges
 - Occupation icon (from Profession Neuron entry)
 - Basic and Upgraded talents with parsed descriptions
-- Skills / Neural Drive / Lore tabs below the portrait (each pilot opens on Skills)
+- Skills / Neural Drive / Lore / Voice Lines tabs below the portrait (each pilot opens on Skills)
   - Skills — Attack (`EquipmentSkill`), Code (`Order`), Code+Attack (`SpecialAssault`), Passive — with AP and CD stats
   - Neural Drive — Alpha, Beta, Gamma1, Gamma2 partitions with chip slot indicators and activation passives
   - Lore — profile (affiliation, blood type, height, …), introduction and the four stories, from `data/pilots/lore.js`, loaded the first time the tab opens; pilots not on Global yet show their one-line bio
+  - Voice Lines — voice actors, then every line with its title, transcript and a play button, with the audio language (English / Japanese / Chinese, remembered in localStorage) chosen at the top; a line only played with certain pilots or in a certain ST says so. Lines are grouped by skin. From `data/pilots/voice.js`, loaded the first time the tab opens (`js/voice.js`); audio from `VOICE_BASE`. Pilots not on Global yet have the Chinese audio only, without transcripts
 
 ## ST detail page
 

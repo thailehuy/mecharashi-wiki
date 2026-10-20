@@ -1,13 +1,15 @@
-// Detail-page tabs (Skills / Neural Drive / Lore on pilots, Modules / Lore on
-// STs) and the Lore tab itself. Lore lives in its own bundle per kind
-// (data/<kind>/lore.js, built by scripts/compile.py), fetched the first time
-// a Lore tab is opened.
+// Detail-page tabs (Skills / Neural Drive / Lore / Voice Lines on pilots,
+// Modules / Lore on STs) and the Lore tab itself. Lore lives in its own bundle
+// per kind (data/<kind>/lore.js, built by scripts/compile.py), fetched the
+// first time a Lore tab is opened; the Voice Lines tab (js/voice.js) the same
+// way from data/pilots/voice.js.
 var Lore = {
   BUNDLES: { pilots: 'PilotLoreData', mechs: 'MechLoreData' },
   _loading: {},
 
   // tabs: [[key, label, html], ...]; tabs with no html are left out. The
-  // first tab is open. lore: { kind, id } for the Lore tab's content.
+  // first tab is open. lore: { kind, id } for the Lore and Voice Lines tabs'
+  // content.
   tabsHtml: function (tabs, lore) {
     tabs = tabs.filter(function (t) { return t[2]; });
     return (
@@ -16,7 +18,8 @@ var Lore = {
           return '<button type="button" class="detail-tab' + (i ? '' : ' active') + '" role="tab" data-detail-tab="' + t[0] + '">' + t[1] + '</button>';
         }).join('') + '</div>' +
         tabs.map(function (t, i) {
-          var loreAttr = t[0] === 'lore' ? ' data-lore-kind="' + lore.kind + '" data-lore-id="' + lore.id + '"' : '';
+          var loreAttr = t[0] === 'lore' ? ' data-lore-kind="' + lore.kind + '" data-lore-id="' + lore.id + '"' :
+                         t[0] === 'voice' ? ' data-voice-id="' + lore.id + '"' : '';
           return '<div class="detail-tab-pane" role="tabpanel" data-detail-pane="' + t[0] + '"' + loreAttr + (i ? ' hidden' : '') + '>' + t[2] + '</div>';
         }).join('') +
       '</div>'
@@ -30,6 +33,9 @@ var Lore = {
     $wrap.find('[data-detail-pane]').each(function () { this.hidden = this.getAttribute('data-detail-pane') !== tab; });
     var pane = $wrap.find('[data-detail-pane="' + tab + '"]')[0];
     if (pane && pane.hasAttribute('data-lore-kind')) this._fill(pane);
+    if (pane && pane.hasAttribute('data-voice-id')) Voice.fill(pane);
+    // Leaving the Voice Lines tab stops whatever it was playing.
+    if (window.Voice) Voice.stop();
   },
 
   _load: function (kind) {

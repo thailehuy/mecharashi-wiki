@@ -25,10 +25,11 @@ Steps
                   (release order); then rerun with --from data
     images        new drop/material/story/Elite, Simulated Battle and Covert Phantom reward item icons, Border Conflict foe
                   portraits and banner art from the game's bundles into the assets repo
-                  (extract_item_icons.py, extract_banner_images.py)
+                  (extract_item_icons.py, extract_banner_images.py); pilot voice lines from its sound banks into the
+                  voices repo (extract_voices.py), then the Voice Lines tab's data (build_voice.py)
     compile       data/db/ -> the page bundles and builder index maps (compile.py)
 
-Review `git diff` (and the assets repo's) before committing. The CN client has its own pipeline, scripts/update_cn.py.
+Review `git diff` (and the assets and voices repos') before committing. The CN client has its own pipeline, scripts/update_cn.py.
 """
 import argparse
 import os
@@ -97,6 +98,8 @@ def main():
     if 'images' in todo:
         run(script('extract_item_icons.py'))
         run(script('extract_banner_images.py'))
+        run(script('extract_voices.py'))
+        run(script('build_voice.py'))
     if 'compile' in todo:
         run(script('compile.py'))
 

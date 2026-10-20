@@ -1839,7 +1839,7 @@ a.material-item:hover .material-icon-wrap {
   .skill-list { grid-template-columns: 1fr; }
 }
 
-/* ── Pilot detail tabs (Skills / Neural Drive / Lore) ─────────────── */
+/* ── Pilot detail tabs (Skills / Neural Drive / Lore / Voice Lines) ── */
 .detail-tabs {
   display: flex;
   gap: 0.25rem;
@@ -1972,6 +1972,125 @@ a.material-item:hover .material-icon-wrap {
 
 @media (max-width: 700px) {
   .lore-top { grid-template-columns: 1fr; }
+}
+
+/* ── Pilot voice lines ────────────────────────────────────────────── */
+.voice-top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 1.25rem 0 1rem;
+}
+
+.voice-cast {
+  flex: 0 1 320px;
+  margin-left: auto;
+}
+
+.voice-langs {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.voice-lang {
+  padding: 0.3rem 0.8rem;
+  border: 1px solid #2a2a4a;
+  border-radius: 4px;
+  background-color: #1a1a20;
+  color: #a0a0c8;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.voice-lang:hover { color: #e0e0ff; }
+
+.voice-lang.active {
+  background-color: #e94560;
+  border-color: #e94560;
+  color: #ffffff;
+}
+
+.voice-note {
+  color: #a0a0c8;
+  font-style: italic;
+}
+
+.voice-lines {
+  list-style: none;
+  margin: 0 0 1.5rem;
+  padding: 0.2rem 1rem;
+  background-color: #1a1a20;
+  border: 1px solid #2a2a4a;
+  border-radius: 8px;
+}
+
+.voice-line {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+  padding: 0.7rem 0;
+  border-bottom: 1px solid #2a2a4a;
+}
+
+.voice-line:last-child { border-bottom: none; }
+
+.voice-play {
+  flex-shrink: 0;
+  position: relative;
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  border-radius: 50%;
+  background-color: #e94560;
+  cursor: pointer;
+}
+
+/* A play triangle, a stop square while playing. */
+.voice-play::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  border-style: solid;
+  border-width: 0.4rem 0 0.4rem 0.65rem;
+  border-color: transparent transparent transparent #ffffff;
+}
+
+.voice-play.playing::before {
+  left: 50%;
+  width: 0.65rem;
+  height: 0.65rem;
+  border: none;
+  background-color: #ffffff;
+}
+
+.voice-play:disabled {
+  background-color: #2a2a4a;
+  cursor: not-allowed;
+}
+
+.voice-play:disabled::before { border-left-color: #6a6a88; }
+
+.voice-title {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #8a8aa8;
+}
+
+.voice-text {
+  color: #e0e0f0;
+  line-height: 1.5;
+}
+
+.voice-cond {
+  margin-top: 0.2rem;
+  font-size: 0.85rem;
+  color: #e94560;
 }
 
 /* ── Neural Drive ─────────────────────────────────────────────────── */

@@ -409,12 +409,13 @@ Pages.pilots = {
     );
   },
 
-  // Skills / Neural Drive / Lore tabs under the portrait (js/lore.js).
+  // Skills / Neural Drive / Lore / Voice Lines tabs under the portrait (js/lore.js, js/voice.js).
   _renderTabs: function (p) {
     return Lore.tabsHtml([
       ['skills', 'Skills', this._renderSkills(p.biomimetic_computer_data) + this._renderSummonSkills(p) + this._renderFormSkillGroups(p)],
       ['neural', 'Neural Drive', this._renderNeuralDrive(p.NeuralDriveTemplate, p.stats, p.Occupation)],
-      ['lore', 'Lore', Lore.loadingHtml]
+      ['lore', 'Lore', Lore.loadingHtml],
+      ['voice', 'Voice Lines', Lore.loadingHtml]
     ], { kind: 'pilots', id: p.ID });
   },
 
