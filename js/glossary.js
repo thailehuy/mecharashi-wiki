@@ -291,7 +291,7 @@ var Glossary = (function () {
       ['Talent0_2Ability', 'Talent3_5Ability'].forEach(function (key) {
         var t = p[key];
         if (!t || !t.ID || !t.name) return;
-        // Some talents share their ID with a Code they grant (e.g. Verna's
+        // Some talents share their ID with a Code they grant (e.g. Vincenza's
         // Creed of Sin and Vengeance Strike are both 601050), so register
         // those under a synthetic ID or bare "[Talent]" references can't resolve.
         var tId = t.ID;

@@ -2039,7 +2039,7 @@ window.BannersData = {
       "version": "2.4",
       "upcoming": true,
       "featured": [
-        "Verna"
+        "Vincenza"
       ],
       "image": "PilotGachaVernaLunoItemPrefab"
     },
@@ -2153,7 +2153,7 @@ window.BannersData = {
       "options": [
         "Zoey",
         "Colin",
-        "Verna"
+        "Vincenza"
       ],
       "image": "PilotGachaPilotExchangeItemPrefab"
     },
@@ -2301,7 +2301,7 @@ window.BannersData = {
       "version": "2.8",
       "upcoming": true,
       "featured": [
-        "Verna"
+        "Vincenza"
       ],
       "image": "PilotGachaVernaLunoItemPrefab"
     },
@@ -2327,7 +2327,7 @@ window.BannersData = {
       "options": [
         "Lexuan",
         "Ada",
-        "Verna"
+        "Vincenza"
       ],
       "image": "PilotGachaPilotExchangeItemPrefab"
     },
@@ -2501,7 +2501,7 @@ window.BannersData = {
       "options": [
         "Martini",
         "Zoey",
-        "Verna"
+        "Vincenza"
       ],
       "image": "PilotGachaPilotExchangeItemPrefab"
     },

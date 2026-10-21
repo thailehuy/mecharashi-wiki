@@ -22,10 +22,10 @@ var BUILDER_WEAPON_POSITION_FALLBACK = {
 // `ascendedOnly: true` marks an override whose weight-reduction clause is
 // only present in the pilot's Ascended (Talent3_5) text — the base
 // (Talent0_2) talent doesn't grant it. Confirmed by diffing both talent
-// texts: Eileen/Rosa/Rebecca's reduction is ascended-exclusive; Verna/
+// texts: Eileen/Rosa/Rebecca's reduction is ascended-exclusive; Vincenza/
 // Martini/Kelly/Rosemary/Hardaway/Grant's is present in both.
 var BUILDER_PILOT_ITEM_OVERRIDES = {
-  Verna:    [{ kind: 'weapon',   weaponType2: 'RailGun',         flat: 360, unlock: true }],
+  Vincenza: [{ kind: 'weapon',   weaponType2: 'RailGun',         flat: 360, unlock: true }],
   Martini:  [{ kind: 'backpack', backpackMainType: 'Heal',       flat: 300, unlock: true }],
   Kelly:    [{ kind: 'weapon',   weaponType2: 'HeavySniper',     percent: 15 }],
   Rosemary: [{ kind: 'weapon',   weaponType2: 'Rocket',          flat: 130 }],
@@ -699,7 +699,7 @@ Pages.builder = {
     return w.RestrictionsPositionOfWeapon || BUILDER_WEAPON_POSITION_FALLBACK[w.WeaponType2] || 'Hand';
   },
 
-  // `pilot`, if given, lets a talent-unlock override (e.g. Verna's "Can
+  // `pilot`, if given, lets a talent-unlock override (e.g. Vincenza's "Can
   // equip Rail Guns") include a weapon/backpack whose own model/mech-type
   // restriction wouldn't otherwise allow it.
   _weaponsForMech: function (mechType, pilot) {

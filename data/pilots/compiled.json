@@ -31392,11 +31392,524 @@
       }
     },
     {
+      "ID": "10103155",
+      "PilotName": "Veronica",
+      "PortraitHeroIcon": "Pilot_10103155A_half",
+      "AvatarHeroIcon": "Pilot_10103155A_Raw",
+      "RealName": "Veronica Lopez",
+      "Gender": "Female",
+      "Profession": "Gunner",
+      "Occupation": "Sniper",
+      "quality": "SSR",
+      "Talent0_2Ability": {
+        "ID": "301250",
+        "name": "Trauma Profiling",
+        "SpecificEffects": "When actively attacking with a Light Rifle and hitting an enemy, applies different <buf ID=900137>[Scar]</buf> effects based on the part type, lasting for <color=#F74848>2</color> turns. When an active attack applies <buf ID=900137>[Scar]</buf>, can additionally activate <buf ID=900004>[Re-ATK]</buf>, and can move <color=#F74848>2</color> tiles before attacking. Can only trigger <color=#F74848>1</color> time per turn.",
+        "SkillIcon": "Icon_skill_talent_5153",
+        "icon": "Icon_skill_talent_5153"
+      },
+      "Talent3_5Ability": {
+        "ID": "301251",
+        "name": "Trauma Profiling",
+        "SpecificEffects": "When actively attacking with a Light Rifle and hitting an enemy, applies different <buf ID=900137>[Scar]</buf> effects based on the part type, lasting for <color=#F74848>2</color> turns. When an active attack applies <buf ID=900137>[Scar]</buf>, can additionally activate <buf ID=900004>[Re-ATK]</buf>, and can move <color=#F74848>2</color> tiles before attacking. Can only trigger <color=#F74848>1</color> time per turn.\nWhen HP is above <color=#F74848>80%</color>, Ranged Weapon ATK increases by <color=#F74848>15%</color>.",
+        "SkillIcon": "Icon_skill_talent_5153",
+        "icon": "Icon_skill_talent_5153"
+      },
+      "NeuralDriveTemplate": {
+        "ID": "10103155",
+        "ListChipPartition": [
+          {
+            "name": "\u03b1",
+            "TypeComputing": "Alpha",
+            "ListAssembled": "Attack/Dodge/Dodge",
+            "ListActivationEffects": [
+              {
+                "MinimumSum": "1",
+                "PassiveSkill": {
+                  "ID": "300011",
+                  "name": "Sniper Warfare 2",
+                  "SpecificEffects": "[Sniper Warfare 1] can trigger after destroying a part.",
+                  "SkillIcon": "Icon_skill_passive_5008",
+                  "icon": "Icon_skill_passive_5008"
+                }
+              },
+              {
+                "MinimumSum": "4",
+                "PassiveSkill": {
+                  "ID": "300012",
+                  "name": "Power Innovation 1",
+                  "SpecificEffects": "AP Regen <color=#F74848>+1</color>.",
+                  "SkillIcon": "Icon_skill_passive_5006",
+                  "icon": "Icon_skill_passive_5006"
+                }
+              },
+              {
+                "MinimumSum": "7",
+                "PassiveSkill": {
+                  "ID": "300013",
+                  "name": "AP Optimization 1",
+                  "SpecificEffects": "Initial AP <color=#F74848>+1</color>.",
+                  "SkillIcon": "Icon_skill_passive_5004",
+                  "icon": "Icon_skill_passive_5004"
+                }
+              }
+            ]
+          },
+          {
+            "name": "\u03b2",
+            "TypeComputing": "Beta",
+            "ListAssembled": "Attack/Critical/Critical",
+            "ListActivationEffects": [
+              {
+                "MinimumSum": "1",
+                "PassiveSkill": {
+                  "ID": "300021",
+                  "name": "Sniper Warfare 3",
+                  "SpecificEffects": "Upon triggering [Sniper Warfare 1]'s <buf ID=900004>[Re-ATK]</buf>, can move <color=#F74848>2</color> tiles before attacking.",
+                  "SkillIcon": "Icon_skill_passive_5008",
+                  "icon": "Icon_skill_passive_5008"
+                }
+              },
+              {
+                "MinimumSum": "4",
+                "PassiveSkill": {
+                  "ID": "300022",
+                  "name": "Power Innovation 2",
+                  "SpecificEffects": "When destroying a part, restores <color=#F74848>1</color> AP after combat. Can only trigger <color=#F74848>1</color> time per turn.",
+                  "SkillIcon": "Icon_skill_passive_5006",
+                  "icon": "Icon_skill_passive_5006"
+                }
+              },
+              {
+                "MinimumSum": "7",
+                "PassiveSkill": {
+                  "ID": "300023",
+                  "name": "AP Optimization 2",
+                  "SpecificEffects": "AP Cap <color=#F74848>+1</color>.",
+                  "SkillIcon": "Icon_skill_passive_5004",
+                  "icon": "Icon_skill_passive_5004"
+                }
+              }
+            ]
+          },
+          {
+            "name": "\u03b31",
+            "TypeComputing": "Gamma",
+            "ListAssembled": "Attack/Dodge/Critical",
+            "ListActivationEffects": [
+              {
+                "MinimumSum": "1",
+                "PassiveSkill": {
+                  "ID": "301231",
+                  "name": "Hunter's Mark 1",
+                  "SpecificEffects": "When actively attacking with a Ranged Weapon and destroying a part, gains different <buf ID=900141>[Hunter's Boon]</buf> effects based on the part type. Can only trigger <color=#F74848>2</color> times per turn.",
+                  "SkillIcon": "Icon_skill_passive_5022",
+                  "icon": "Icon_skill_passive_5022"
+                }
+              },
+              {
+                "MinimumSum": "4",
+                "PassiveSkill": {
+                  "ID": "300032",
+                  "name": "AP Optimization 3",
+                  "SpecificEffects": "AP Cap <color=#F74848>+1</color>.",
+                  "SkillIcon": "Icon_skill_passive_5004",
+                  "icon": "Icon_skill_passive_5004"
+                }
+              },
+              {
+                "MinimumSum": "7",
+                "PassiveSkill": {
+                  "ID": "300033",
+                  "name": "Sniper Warfare 4",
+                  "SpecificEffects": "<buf ID=900004>[Re-ATK]</buf> trigger chances per turn <color=#F74848>+1</color>.",
+                  "SkillIcon": "Icon_skill_passive_5008",
+                  "icon": "Icon_skill_passive_5008"
+                }
+              },
+              {
+                "MinimumSum": "10",
+                "PassiveSkill": {
+                  "ID": "301234",
+                  "name": "Hunter's Mark 2",
+                  "SpecificEffects": "When actively attacking with a Ranged Weapon, if the target is destroyed, can move an extra <color=#F74848>3</color> tiles.",
+                  "SkillIcon": "Icon_skill_passive_5022",
+                  "icon": "Icon_skill_passive_5022"
+                }
+              },
+              {
+                "MinimumSum": "13",
+                "PassiveSkill": {
+                  "ID": "301235",
+                  "name": "Hunter's Mark 3",
+                  "SpecificEffects": "<buf ID=900142>[Hunter's Mark 1]</buf> can now trigger an unlimited number of times per turn.",
+                  "SkillIcon": "Icon_skill_passive_5022",
+                  "icon": "Icon_skill_passive_5022"
+                }
+              },
+              {
+                "MinimumSum": "16",
+                "PassiveSkill": {
+                  "ID": "301236",
+                  "name": "Hunter's Mark 4",
+                  "SpecificEffects": "At start of action, randomly gains <color=#F74848>1</color> unacquired <buf ID=900141>[Hunter's Boon]</buf> effect.",
+                  "SkillIcon": "Icon_skill_passive_5022",
+                  "icon": "Icon_skill_passive_5022"
+                }
+              }
+            ]
+          },
+          {
+            "name": "\u03b32",
+            "TypeComputing": "Gamma",
+            "ListAssembled": "Attack/Dodge/Dodge",
+            "ListActivationEffects": [
+              {
+                "MinimumSum": "1",
+                "PassiveSkill": {
+                  "ID": "301241",
+                  "name": "Veilpiercer 1",
+                  "SpecificEffects": "After actively attacking, if the target has <buf ID=900137>[Scar]</buf>, <buf ID=900004>[Re-ATK]</buf> triggers after combat. Can move <color=#F74848>2</color> tiles before attacking. Can trigger <color=#F74848>1</color> time per turn.",
+                  "SkillIcon": "Icon_skill_passive_5265",
+                  "icon": "Icon_skill_passive_5265"
+                }
+              },
+              {
+                "MinimumSum": "4",
+                "PassiveSkill": {
+                  "ID": "300042",
+                  "name": "AP Optimization 4",
+                  "SpecificEffects": "AP Cap <color=#F74848>+1</color>.",
+                  "SkillIcon": "Icon_skill_passive_5004",
+                  "icon": "Icon_skill_passive_5004"
+                }
+              },
+              {
+                "MinimumSum": "7",
+                "PassiveSkill": {
+                  "ID": "300043",
+                  "name": "Power Innovation 3",
+                  "SpecificEffects": "When destroying a target, additionally restores <color=#F74848>1</color> AP after combat. Can trigger up to <color=#F74848>2</color> times per turn.",
+                  "SkillIcon": "Icon_skill_passive_5006",
+                  "icon": "Icon_skill_passive_5006"
+                }
+              },
+              {
+                "MinimumSum": "10",
+                "PassiveSkill": {
+                  "ID": "301244",
+                  "name": "Veilpiercer 2",
+                  "SpecificEffects": "Each time Core Talent is triggered, simultaneously applies <buf ID=900137>[Scar]</buf> to units of the same faction within <color=#F74848>1</color> ring around the target.",
+                  "SkillIcon": "Icon_skill_passive_5265",
+                  "icon": "Icon_skill_passive_5265"
+                }
+              },
+              {
+                "MinimumSum": "13",
+                "PassiveSkill": {
+                  "ID": "301245",
+                  "name": "Veilpiercer 3",
+                  "SpecificEffects": "When attacking a target affected by <buf ID=900137>[Scar]</buf>, Final DMG <color=#F74848>+5%</color>. For each additional <color=#F74848>1</color> <buf ID=900137>[Scar]</buf>, DMG increases by an extra <color=#F74848>5%</color>, up to <color=#F74848>15%</color>.",
+                  "SkillIcon": "Icon_skill_passive_5265",
+                  "icon": "Icon_skill_passive_5265"
+                }
+              },
+              {
+                "MinimumSum": "16",
+                "PassiveSkill": {
+                  "ID": "301246",
+                  "name": "Veilpiercer 4",
+                  "SpecificEffects": "After triggering talent's <buf ID=900004>[Re-ATK]</buf> effect, changes to <buf ID=900005>[Re-Act]</buf>.",
+                  "SkillIcon": "Icon_skill_passive_5265",
+                  "icon": "Icon_skill_passive_5265"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "biomimetic_computer_data": [
+        {
+          "ID": "1010315500",
+          "UnitType": "6",
+          "icon": "Icon_pilotclass_003_l",
+          "skill3": "300001",
+          "skill": {
+            "ID": "300001",
+            "name": "Sniper Warfare 1",
+            "SpecificEffects": "After destroying the target, triggers <buf ID=900004>[Re-ATK]</buf>. Can trigger up to <color=#F74848>2</color> times per turn. Unable to move before attacking.",
+            "SkillIcon": "Icon_skill_passive_5008",
+            "icon": "Icon_skill_passive_5008"
+          }
+        },
+        {
+          "ID": "1010315501",
+          "UnitType": "5",
+          "icon": "Icon_zoneskill_0003"
+        },
+        {
+          "ID": "1010315502",
+          "UnitType": "5",
+          "icon": "Icon_zoneskill_0001"
+        },
+        {
+          "ID": "1010315503",
+          "UnitType": "5",
+          "icon": "Icon_zoneskill_0003"
+        },
+        {
+          "ID": "1010315504",
+          "UnitType": "5",
+          "icon": "Icon_zoneskill_0002"
+        },
+        {
+          "ID": "1010315505",
+          "UnitType": "5",
+          "icon": "Icon_zoneskill_0003"
+        },
+        {
+          "ID": "1010315506",
+          "UnitType": "5",
+          "icon": "Icon_zoneskill_0003"
+        },
+        {
+          "ID": "1010315507",
+          "UnitType": "5",
+          "icon": "Icon_zoneskill_0003"
+        },
+        {
+          "ID": "1010315508",
+          "UnitType": "1",
+          "icon": "Icon_zoneskill_0001"
+        },
+        {
+          "ID": "1010315509",
+          "UnitType": "1",
+          "icon": "Icon_zoneskill_0002"
+        },
+        {
+          "ID": "1010315510",
+          "UnitType": "1",
+          "icon": "Icon_zoneskill_0004"
+        },
+        {
+          "ID": "1010315511",
+          "UnitType": "1",
+          "icon": "Icon_zoneskill_0005"
+        },
+        {
+          "ID": "1010315512",
+          "UnitType": "0",
+          "skill": {
+            "ID": "700048",
+            "name": "Sabotage",
+            "SpecificEffects": "When actively attacking, deals an additional <color=#F74848>20%</color> DMG to parts with HP below <color=#F74848>50%</color>.",
+            "SkillIcon": "Icon_skill_passive_1009",
+            "icon": "Icon_skill_passive_1009"
+          }
+        },
+        {
+          "ID": "1010315513",
+          "UnitType": "0",
+          "skill": {
+            "ID": "301203",
+            "name": "Forensics",
+            "describe": "Designates <color=#F74848>1</color> enemy unit within a <range type=0>4-tile diamond</range> range, applying <color=#F74848>1</color> corresponding <buf ID=900137>[Scar]</buf> effect to its lowest-HP part. Can continue to act afterward, but cannot move before attacking.",
+            "SkillIcon": "Icon_skill_order_5145",
+            "icon": "Icon_skill_order_5145",
+            "Ap": "1",
+            "CD": "2",
+            "type": "Order"
+          }
+        },
+        {
+          "ID": "1010315514",
+          "UnitType": "0",
+          "skill": {
+            "ID": "301204",
+            "name": "Scar Retrieval",
+            "SpecificEffects": "When performing an active attack, if the target part affected with the corresponding <buf ID=900137>[Scar]</buf> effect is destroyed, all AP consumed by the skill used is returned after combat, up to <color=#F74848>3</color>. Can only trigger <color=#F74848>1</color> time per turn.",
+            "SkillIcon": "Icon_skill_passive_5148",
+            "icon": "Icon_skill_passive_5148"
+          }
+        },
+        {
+          "ID": "1010315515",
+          "UnitType": "0",
+          "skill": {
+            "ID": "301205",
+            "name": "Remote Deconstruction",
+            "SpecificEffects": "When actively attacking, Hit Rate <color=#F74848>+4%</color> for every <color=#F74848>1</color> tile away from the target, up to <color=#F74848>20%</color>.",
+            "SkillIcon": "Icon_skill_passive_4111",
+            "icon": "Icon_skill_passive_4111"
+          }
+        },
+        {
+          "ID": "1010315516",
+          "UnitType": "0",
+          "skill": {
+            "ID": "301206",
+            "name": "Total Deconstruction",
+            "describe": "Uses a Light Rifle to attack a target, dealing <color=#F74848>1.5x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking. After combat, applies all <buf ID=900137>[Scar]</buf> effects to the target hit, lasting for <color=#F74848>2</color> turns.",
+            "SkillIcon": "Icon_skill_main_1167",
+            "icon": "Icon_skill_main_1167",
+            "Ap": "3",
+            "type": "EquipmentSkill"
+          }
+        },
+        {
+          "ID": "1010315517",
+          "UnitType": "0",
+          "skill": {
+            "ID": "301207",
+            "name": "Battlefield Awareness",
+            "SpecificEffects": "For each <buf ID=900137>[Scar]</buf> effect on the battlefield, Crit DMG <color=#F74848>+4%</color>, up to <color=#F74848>20%</color>.",
+            "SkillIcon": "Icon_skill_passive_5264",
+            "icon": "Icon_skill_passive_5264"
+          }
+        },
+        {
+          "ID": "1010315518",
+          "UnitType": "0",
+          "skill": {
+            "ID": "301208",
+            "name": "Multi-Vector Mapping",
+            "describe": "Uses a Light Rifle to attack a target, dealing <color=#F74848>0.7x</color> DMG. Can choose <color=#F74848>2</color> additional targets, each dealing <color=#F74848>0.7x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking and can repeatedly lock onto the same target. Can be retaliated against by the main target.",
+            "SkillIcon": "Icon_skill_main_1163",
+            "icon": "Icon_skill_main_1163",
+            "Ap": "4",
+            "type": "EquipmentSkill"
+          }
+        },
+        {
+          "ID": "1010315519",
+          "UnitType": "2",
+          "icon": "3-1"
+        },
+        {
+          "ID": "1010315520",
+          "UnitType": "2",
+          "icon": "3-1"
+        },
+        {
+          "ID": "1010315521",
+          "UnitType": "2",
+          "icon": "3-1"
+        },
+        {
+          "ID": "1010315522",
+          "UnitType": "2",
+          "icon": "3-1"
+        },
+        {
+          "ID": "1010315523",
+          "UnitType": "2",
+          "icon": "3-1"
+        },
+        {
+          "ID": "1010315524",
+          "UnitType": "2",
+          "icon": "3-1"
+        },
+        {
+          "ID": "1010315525",
+          "UnitType": "2",
+          "icon": "3-1"
+        },
+        {
+          "ID": "1010315526",
+          "UnitType": "2",
+          "icon": "3-1"
+        },
+        {
+          "ID": "1010315527",
+          "UnitType": "2",
+          "icon": "3-1"
+        },
+        {
+          "ID": "1010315528",
+          "UnitType": "2",
+          "icon": "3-1"
+        },
+        {
+          "ID": "1010315529",
+          "UnitType": "2",
+          "icon": "3-1"
+        },
+        {
+          "ID": "1010315530",
+          "UnitType": "2",
+          "icon": "3-1"
+        },
+        {
+          "ID": "1010315531",
+          "UnitType": "2",
+          "icon": "3-1"
+        },
+        {
+          "ID": "1010315532",
+          "UnitType": "2",
+          "icon": "3-1"
+        },
+        {
+          "ID": "1010315533",
+          "UnitType": "2",
+          "icon": "3-1"
+        },
+        {
+          "ID": "1010315534",
+          "UnitType": "2",
+          "icon": "3-1"
+        },
+        {
+          "ID": "1010315535",
+          "UnitType": "2",
+          "icon": "3-1"
+        },
+        {
+          "ID": "1010315536",
+          "UnitType": "0",
+          "skill": {
+            "ID": "301201",
+            "name": "Targeted Diagnosis",
+            "describe": "Uses a Light Rifle to attack a target, dealing <color=#F74848>1.25x</color> DMG. If there are no allied units within <color=#F74848>2</color> tiles, enters <buf ID=900014>[Aiming]</buf> Mode before attacking.",
+            "SkillIcon": "Icon_skill_main_1115",
+            "icon": "Icon_skill_main_1115",
+            "Ap": "2",
+            "CD": "0",
+            "type": "EquipmentSkill"
+          }
+        }
+      ],
+      "AllowedMechaDriveList_DriveAllowedList": "Light",
+      "AlternateSkins": "",
+      "Introduction": "An elite pilot of the Reversion Squad, and a composed, highly professional agent of the Oversight Committee.",
+      "stats": {
+        "Combat": "1592",
+        "Assault": "2408",
+        "Shooting": "4924",
+        "Tactics": "2241",
+        "Defense": "3952",
+        "Engineering": "1425",
+        "InitialPilotAPValue_PilotAPInitBase": "5",
+        "MaximumPilotAPValue_PilotAPMaxBase": "5",
+        "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
+      },
+      "version": "2.4",
+      "statRanks": {
+        "Combat": 55,
+        "Shooting": 5,
+        "Assault": 43,
+        "Tactics": 24,
+        "Engineering": 55
+      }
+    },
+    {
       "ID": "10103144",
-      "PilotName": "Verna",
+      "PilotName": "Vincenza",
       "PortraitHeroIcon": "Pilot_13019A_half",
       "AvatarHeroIcon": "Pilot_13019A_Raw",
-      "RealName": "Vincenza \"Verna\" Luno",
+      "RealName": "Vincenza Luno",
       "Gender": "Female",
       "Profession": "Defender",
       "Occupation": "Guardian",
@@ -31952,519 +32465,6 @@
         "Assault": 47,
         "Tactics": 14,
         "Engineering": 40
-      }
-    },
-    {
-      "ID": "10103155",
-      "PilotName": "Veronica",
-      "PortraitHeroIcon": "Pilot_10103155A_half",
-      "AvatarHeroIcon": "Pilot_10103155A_Raw",
-      "RealName": "Veronica Lopez",
-      "Gender": "Female",
-      "Profession": "Gunner",
-      "Occupation": "Sniper",
-      "quality": "SSR",
-      "Talent0_2Ability": {
-        "ID": "301250",
-        "name": "Trauma Profiling",
-        "SpecificEffects": "When actively attacking with a Light Rifle and hitting an enemy, applies different <buf ID=900137>[Scar]</buf> effects based on the part type, lasting for <color=#F74848>2</color> turns. When an active attack applies <buf ID=900137>[Scar]</buf>, can additionally activate <buf ID=900004>[Re-ATK]</buf>, and can move <color=#F74848>2</color> tiles before attacking. Can only trigger <color=#F74848>1</color> time per turn.",
-        "SkillIcon": "Icon_skill_talent_5153",
-        "icon": "Icon_skill_talent_5153"
-      },
-      "Talent3_5Ability": {
-        "ID": "301251",
-        "name": "Trauma Profiling",
-        "SpecificEffects": "When actively attacking with a Light Rifle and hitting an enemy, applies different <buf ID=900137>[Scar]</buf> effects based on the part type, lasting for <color=#F74848>2</color> turns. When an active attack applies <buf ID=900137>[Scar]</buf>, can additionally activate <buf ID=900004>[Re-ATK]</buf>, and can move <color=#F74848>2</color> tiles before attacking. Can only trigger <color=#F74848>1</color> time per turn.\nWhen HP is above <color=#F74848>80%</color>, Ranged Weapon ATK increases by <color=#F74848>15%</color>.",
-        "SkillIcon": "Icon_skill_talent_5153",
-        "icon": "Icon_skill_talent_5153"
-      },
-      "NeuralDriveTemplate": {
-        "ID": "10103155",
-        "ListChipPartition": [
-          {
-            "name": "\u03b1",
-            "TypeComputing": "Alpha",
-            "ListAssembled": "Attack/Dodge/Dodge",
-            "ListActivationEffects": [
-              {
-                "MinimumSum": "1",
-                "PassiveSkill": {
-                  "ID": "300011",
-                  "name": "Sniper Warfare 2",
-                  "SpecificEffects": "[Sniper Warfare 1] can trigger after destroying a part.",
-                  "SkillIcon": "Icon_skill_passive_5008",
-                  "icon": "Icon_skill_passive_5008"
-                }
-              },
-              {
-                "MinimumSum": "4",
-                "PassiveSkill": {
-                  "ID": "300012",
-                  "name": "Power Innovation 1",
-                  "SpecificEffects": "AP Regen <color=#F74848>+1</color>.",
-                  "SkillIcon": "Icon_skill_passive_5006",
-                  "icon": "Icon_skill_passive_5006"
-                }
-              },
-              {
-                "MinimumSum": "7",
-                "PassiveSkill": {
-                  "ID": "300013",
-                  "name": "AP Optimization 1",
-                  "SpecificEffects": "Initial AP <color=#F74848>+1</color>.",
-                  "SkillIcon": "Icon_skill_passive_5004",
-                  "icon": "Icon_skill_passive_5004"
-                }
-              }
-            ]
-          },
-          {
-            "name": "\u03b2",
-            "TypeComputing": "Beta",
-            "ListAssembled": "Attack/Critical/Critical",
-            "ListActivationEffects": [
-              {
-                "MinimumSum": "1",
-                "PassiveSkill": {
-                  "ID": "300021",
-                  "name": "Sniper Warfare 3",
-                  "SpecificEffects": "Upon triggering [Sniper Warfare 1]'s <buf ID=900004>[Re-ATK]</buf>, can move <color=#F74848>2</color> tiles before attacking.",
-                  "SkillIcon": "Icon_skill_passive_5008",
-                  "icon": "Icon_skill_passive_5008"
-                }
-              },
-              {
-                "MinimumSum": "4",
-                "PassiveSkill": {
-                  "ID": "300022",
-                  "name": "Power Innovation 2",
-                  "SpecificEffects": "When destroying a part, restores <color=#F74848>1</color> AP after combat. Can only trigger <color=#F74848>1</color> time per turn.",
-                  "SkillIcon": "Icon_skill_passive_5006",
-                  "icon": "Icon_skill_passive_5006"
-                }
-              },
-              {
-                "MinimumSum": "7",
-                "PassiveSkill": {
-                  "ID": "300023",
-                  "name": "AP Optimization 2",
-                  "SpecificEffects": "AP Cap <color=#F74848>+1</color>.",
-                  "SkillIcon": "Icon_skill_passive_5004",
-                  "icon": "Icon_skill_passive_5004"
-                }
-              }
-            ]
-          },
-          {
-            "name": "\u03b31",
-            "TypeComputing": "Gamma",
-            "ListAssembled": "Attack/Dodge/Critical",
-            "ListActivationEffects": [
-              {
-                "MinimumSum": "1",
-                "PassiveSkill": {
-                  "ID": "301231",
-                  "name": "Hunter's Mark 1",
-                  "SpecificEffects": "When actively attacking with a Ranged Weapon and destroying a part, gains different <buf ID=900141>[Hunter's Boon]</buf> effects based on the part type. Can only trigger <color=#F74848>2</color> times per turn.",
-                  "SkillIcon": "Icon_skill_passive_5022",
-                  "icon": "Icon_skill_passive_5022"
-                }
-              },
-              {
-                "MinimumSum": "4",
-                "PassiveSkill": {
-                  "ID": "300032",
-                  "name": "AP Optimization 3",
-                  "SpecificEffects": "AP Cap <color=#F74848>+1</color>.",
-                  "SkillIcon": "Icon_skill_passive_5004",
-                  "icon": "Icon_skill_passive_5004"
-                }
-              },
-              {
-                "MinimumSum": "7",
-                "PassiveSkill": {
-                  "ID": "300033",
-                  "name": "Sniper Warfare 4",
-                  "SpecificEffects": "<buf ID=900004>[Re-ATK]</buf> trigger chances per turn <color=#F74848>+1</color>.",
-                  "SkillIcon": "Icon_skill_passive_5008",
-                  "icon": "Icon_skill_passive_5008"
-                }
-              },
-              {
-                "MinimumSum": "10",
-                "PassiveSkill": {
-                  "ID": "301234",
-                  "name": "Hunter's Mark 2",
-                  "SpecificEffects": "When actively attacking with a Ranged Weapon, if the target is destroyed, can move an extra <color=#F74848>3</color> tiles.",
-                  "SkillIcon": "Icon_skill_passive_5022",
-                  "icon": "Icon_skill_passive_5022"
-                }
-              },
-              {
-                "MinimumSum": "13",
-                "PassiveSkill": {
-                  "ID": "301235",
-                  "name": "Hunter's Mark 3",
-                  "SpecificEffects": "<buf ID=900142>[Hunter's Mark 1]</buf> can now trigger an unlimited number of times per turn.",
-                  "SkillIcon": "Icon_skill_passive_5022",
-                  "icon": "Icon_skill_passive_5022"
-                }
-              },
-              {
-                "MinimumSum": "16",
-                "PassiveSkill": {
-                  "ID": "301236",
-                  "name": "Hunter's Mark 4",
-                  "SpecificEffects": "At start of action, randomly gains <color=#F74848>1</color> unacquired <buf ID=900141>[Hunter's Boon]</buf> effect.",
-                  "SkillIcon": "Icon_skill_passive_5022",
-                  "icon": "Icon_skill_passive_5022"
-                }
-              }
-            ]
-          },
-          {
-            "name": "\u03b32",
-            "TypeComputing": "Gamma",
-            "ListAssembled": "Attack/Dodge/Dodge",
-            "ListActivationEffects": [
-              {
-                "MinimumSum": "1",
-                "PassiveSkill": {
-                  "ID": "301241",
-                  "name": "Veilpiercer 1",
-                  "SpecificEffects": "After actively attacking, if the target has <buf ID=900137>[Scar]</buf>, <buf ID=900004>[Re-ATK]</buf> triggers after combat. Can move <color=#F74848>2</color> tiles before attacking. Can trigger <color=#F74848>1</color> time per turn.",
-                  "SkillIcon": "Icon_skill_passive_5265",
-                  "icon": "Icon_skill_passive_5265"
-                }
-              },
-              {
-                "MinimumSum": "4",
-                "PassiveSkill": {
-                  "ID": "300042",
-                  "name": "AP Optimization 4",
-                  "SpecificEffects": "AP Cap <color=#F74848>+1</color>.",
-                  "SkillIcon": "Icon_skill_passive_5004",
-                  "icon": "Icon_skill_passive_5004"
-                }
-              },
-              {
-                "MinimumSum": "7",
-                "PassiveSkill": {
-                  "ID": "300043",
-                  "name": "Power Innovation 3",
-                  "SpecificEffects": "When destroying a target, additionally restores <color=#F74848>1</color> AP after combat. Can trigger up to <color=#F74848>2</color> times per turn.",
-                  "SkillIcon": "Icon_skill_passive_5006",
-                  "icon": "Icon_skill_passive_5006"
-                }
-              },
-              {
-                "MinimumSum": "10",
-                "PassiveSkill": {
-                  "ID": "301244",
-                  "name": "Veilpiercer 2",
-                  "SpecificEffects": "Each time Core Talent is triggered, simultaneously applies <buf ID=900137>[Scar]</buf> to units of the same faction within <color=#F74848>1</color> ring around the target.",
-                  "SkillIcon": "Icon_skill_passive_5265",
-                  "icon": "Icon_skill_passive_5265"
-                }
-              },
-              {
-                "MinimumSum": "13",
-                "PassiveSkill": {
-                  "ID": "301245",
-                  "name": "Veilpiercer 3",
-                  "SpecificEffects": "When attacking a target affected by <buf ID=900137>[Scar]</buf>, Final DMG <color=#F74848>+5%</color>. For each additional <color=#F74848>1</color> <buf ID=900137>[Scar]</buf>, DMG increases by an extra <color=#F74848>5%</color>, up to <color=#F74848>15%</color>.",
-                  "SkillIcon": "Icon_skill_passive_5265",
-                  "icon": "Icon_skill_passive_5265"
-                }
-              },
-              {
-                "MinimumSum": "16",
-                "PassiveSkill": {
-                  "ID": "301246",
-                  "name": "Veilpiercer 4",
-                  "SpecificEffects": "After triggering talent's <buf ID=900004>[Re-ATK]</buf> effect, changes to <buf ID=900005>[Re-Act]</buf>.",
-                  "SkillIcon": "Icon_skill_passive_5265",
-                  "icon": "Icon_skill_passive_5265"
-                }
-              }
-            ]
-          }
-        ]
-      },
-      "biomimetic_computer_data": [
-        {
-          "ID": "1010315500",
-          "UnitType": "6",
-          "icon": "Icon_pilotclass_003_l",
-          "skill3": "300001",
-          "skill": {
-            "ID": "300001",
-            "name": "Sniper Warfare 1",
-            "SpecificEffects": "After destroying the target, triggers <buf ID=900004>[Re-ATK]</buf>. Can trigger up to <color=#F74848>2</color> times per turn. Unable to move before attacking.",
-            "SkillIcon": "Icon_skill_passive_5008",
-            "icon": "Icon_skill_passive_5008"
-          }
-        },
-        {
-          "ID": "1010315501",
-          "UnitType": "5",
-          "icon": "Icon_zoneskill_0003"
-        },
-        {
-          "ID": "1010315502",
-          "UnitType": "5",
-          "icon": "Icon_zoneskill_0001"
-        },
-        {
-          "ID": "1010315503",
-          "UnitType": "5",
-          "icon": "Icon_zoneskill_0003"
-        },
-        {
-          "ID": "1010315504",
-          "UnitType": "5",
-          "icon": "Icon_zoneskill_0002"
-        },
-        {
-          "ID": "1010315505",
-          "UnitType": "5",
-          "icon": "Icon_zoneskill_0003"
-        },
-        {
-          "ID": "1010315506",
-          "UnitType": "5",
-          "icon": "Icon_zoneskill_0003"
-        },
-        {
-          "ID": "1010315507",
-          "UnitType": "5",
-          "icon": "Icon_zoneskill_0003"
-        },
-        {
-          "ID": "1010315508",
-          "UnitType": "1",
-          "icon": "Icon_zoneskill_0001"
-        },
-        {
-          "ID": "1010315509",
-          "UnitType": "1",
-          "icon": "Icon_zoneskill_0002"
-        },
-        {
-          "ID": "1010315510",
-          "UnitType": "1",
-          "icon": "Icon_zoneskill_0004"
-        },
-        {
-          "ID": "1010315511",
-          "UnitType": "1",
-          "icon": "Icon_zoneskill_0005"
-        },
-        {
-          "ID": "1010315512",
-          "UnitType": "0",
-          "skill": {
-            "ID": "700048",
-            "name": "Sabotage",
-            "SpecificEffects": "When actively attacking, deals an additional <color=#F74848>20%</color> DMG to parts with HP below <color=#F74848>50%</color>.",
-            "SkillIcon": "Icon_skill_passive_1009",
-            "icon": "Icon_skill_passive_1009"
-          }
-        },
-        {
-          "ID": "1010315513",
-          "UnitType": "0",
-          "skill": {
-            "ID": "301203",
-            "name": "Forensics",
-            "describe": "Designates <color=#F74848>1</color> enemy unit within a <range type=0>4-tile diamond</range> range, applying <color=#F74848>1</color> corresponding <buf ID=900137>[Scar]</buf> effect to its lowest-HP part. Can continue to act afterward, but cannot move before attacking.",
-            "SkillIcon": "Icon_skill_order_5145",
-            "icon": "Icon_skill_order_5145",
-            "Ap": "1",
-            "CD": "2",
-            "type": "Order"
-          }
-        },
-        {
-          "ID": "1010315514",
-          "UnitType": "0",
-          "skill": {
-            "ID": "301204",
-            "name": "Scar Retrieval",
-            "SpecificEffects": "When performing an active attack, if the target part affected with the corresponding <buf ID=900137>[Scar]</buf> effect is destroyed, all AP consumed by the skill used is returned after combat, up to <color=#F74848>3</color>. Can only trigger <color=#F74848>1</color> time per turn.",
-            "SkillIcon": "Icon_skill_passive_5148",
-            "icon": "Icon_skill_passive_5148"
-          }
-        },
-        {
-          "ID": "1010315515",
-          "UnitType": "0",
-          "skill": {
-            "ID": "301205",
-            "name": "Remote Deconstruction",
-            "SpecificEffects": "When actively attacking, Hit Rate <color=#F74848>+4%</color> for every <color=#F74848>1</color> tile away from the target, up to <color=#F74848>20%</color>.",
-            "SkillIcon": "Icon_skill_passive_4111",
-            "icon": "Icon_skill_passive_4111"
-          }
-        },
-        {
-          "ID": "1010315516",
-          "UnitType": "0",
-          "skill": {
-            "ID": "301206",
-            "name": "Total Deconstruction",
-            "describe": "Uses a Light Rifle to attack a target, dealing <color=#F74848>1.5x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking. After combat, applies all <buf ID=900137>[Scar]</buf> effects to the target hit, lasting for <color=#F74848>2</color> turns.",
-            "SkillIcon": "Icon_skill_main_1167",
-            "icon": "Icon_skill_main_1167",
-            "Ap": "3",
-            "type": "EquipmentSkill"
-          }
-        },
-        {
-          "ID": "1010315517",
-          "UnitType": "0",
-          "skill": {
-            "ID": "301207",
-            "name": "Battlefield Awareness",
-            "SpecificEffects": "For each <buf ID=900137>[Scar]</buf> effect on the battlefield, Crit DMG <color=#F74848>+4%</color>, up to <color=#F74848>20%</color>.",
-            "SkillIcon": "Icon_skill_passive_5264",
-            "icon": "Icon_skill_passive_5264"
-          }
-        },
-        {
-          "ID": "1010315518",
-          "UnitType": "0",
-          "skill": {
-            "ID": "301208",
-            "name": "Multi-Vector Mapping",
-            "describe": "Uses a Light Rifle to attack a target, dealing <color=#F74848>0.7x</color> DMG. Can choose <color=#F74848>2</color> additional targets, each dealing <color=#F74848>0.7x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking and can repeatedly lock onto the same target. Can be retaliated against by the main target.",
-            "SkillIcon": "Icon_skill_main_1163",
-            "icon": "Icon_skill_main_1163",
-            "Ap": "4",
-            "type": "EquipmentSkill"
-          }
-        },
-        {
-          "ID": "1010315519",
-          "UnitType": "2",
-          "icon": "3-1"
-        },
-        {
-          "ID": "1010315520",
-          "UnitType": "2",
-          "icon": "3-1"
-        },
-        {
-          "ID": "1010315521",
-          "UnitType": "2",
-          "icon": "3-1"
-        },
-        {
-          "ID": "1010315522",
-          "UnitType": "2",
-          "icon": "3-1"
-        },
-        {
-          "ID": "1010315523",
-          "UnitType": "2",
-          "icon": "3-1"
-        },
-        {
-          "ID": "1010315524",
-          "UnitType": "2",
-          "icon": "3-1"
-        },
-        {
-          "ID": "1010315525",
-          "UnitType": "2",
-          "icon": "3-1"
-        },
-        {
-          "ID": "1010315526",
-          "UnitType": "2",
-          "icon": "3-1"
-        },
-        {
-          "ID": "1010315527",
-          "UnitType": "2",
-          "icon": "3-1"
-        },
-        {
-          "ID": "1010315528",
-          "UnitType": "2",
-          "icon": "3-1"
-        },
-        {
-          "ID": "1010315529",
-          "UnitType": "2",
-          "icon": "3-1"
-        },
-        {
-          "ID": "1010315530",
-          "UnitType": "2",
-          "icon": "3-1"
-        },
-        {
-          "ID": "1010315531",
-          "UnitType": "2",
-          "icon": "3-1"
-        },
-        {
-          "ID": "1010315532",
-          "UnitType": "2",
-          "icon": "3-1"
-        },
-        {
-          "ID": "1010315533",
-          "UnitType": "2",
-          "icon": "3-1"
-        },
-        {
-          "ID": "1010315534",
-          "UnitType": "2",
-          "icon": "3-1"
-        },
-        {
-          "ID": "1010315535",
-          "UnitType": "2",
-          "icon": "3-1"
-        },
-        {
-          "ID": "1010315536",
-          "UnitType": "0",
-          "skill": {
-            "ID": "301201",
-            "name": "Targeted Diagnosis",
-            "describe": "Uses a Light Rifle to attack a target, dealing <color=#F74848>1.25x</color> DMG. If there are no allied units within <color=#F74848>2</color> tiles, enters <buf ID=900014>[Aiming]</buf> Mode before attacking.",
-            "SkillIcon": "Icon_skill_main_1115",
-            "icon": "Icon_skill_main_1115",
-            "Ap": "2",
-            "CD": "0",
-            "type": "EquipmentSkill"
-          }
-        }
-      ],
-      "AllowedMechaDriveList_DriveAllowedList": "Light",
-      "AlternateSkins": "",
-      "Introduction": "An elite pilot of the Reversion Squad, and a composed, highly professional agent of the Oversight Committee.",
-      "stats": {
-        "Combat": "1592",
-        "Assault": "2408",
-        "Shooting": "4924",
-        "Tactics": "2241",
-        "Defense": "3952",
-        "Engineering": "1425",
-        "InitialPilotAPValue_PilotAPInitBase": "5",
-        "MaximumPilotAPValue_PilotAPMaxBase": "5",
-        "PilotAPRecoveryperTurn_PilotAPRecoverBase": "2"
-      },
-      "version": "2.4",
-      "statRanks": {
-        "Combat": 55,
-        "Shooting": 5,
-        "Assault": 43,
-        "Tactics": 24,
-        "Engineering": 55
       }
     },
     {
