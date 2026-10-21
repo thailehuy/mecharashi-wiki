@@ -73,6 +73,10 @@ var BUILDER_WEAPON_SLOTS = [
   { key: 'extra2',        label: 'Extra 2' },
 ];
 var BUILDER_ACCESSORY_SLOTS = 4;
+// A TA + RA chain's chance is this over the product of their probability
+// factors, capped at 100% (checked against the game DB by
+// scripts/extract-chain-traits.py).
+var BUILDER_CHAIN_BASE_CHANCE = 0.4;
 
 // _previewCache keys the pilot row's Expand button reveals inline (the
 // mech row's Expand button instead toggles the module/passives panel below).
@@ -1133,12 +1137,18 @@ Pages.builder = {
   },
 
   _chainData: function () {
-    return window.ChainTraitsData || { ta: {}, ra: {}, pairs: {} };
+    return window.ChainTraitsData || { ta: {}, ra: {}, blocked: {} };
   },
 
+  // null when the game doesn't let the pair chain: it's on the blocked
+  // list, or the TA and RA share no weapon type.
   _chainChance: function (taId, raId) {
-    var pairs = this._chainData().pairs[taId];
-    return pairs && pairs[raId] !== undefined ? pairs[raId] : null;
+    var data = this._chainData();
+    var ta = data.ta[taId];
+    var ra = data.ra[raId];
+    if ((data.blocked[taId] || []).indexOf(raId) !== -1) return null;
+    if (!ta.fits.some(function (f) { return ra.fits.indexOf(f) !== -1; })) return null;
+    return Math.min(1, BUILDER_CHAIN_BASE_CHANCE / (ta.factor * ra.factor));
   },
 
   // Drops any accessory that no longer applies: its slot no longer holds a

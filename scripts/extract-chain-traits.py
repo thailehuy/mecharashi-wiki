@@ -1,7 +1,7 @@
 """Extracts SSR weapon accessory chain traits (TA trigger + RA reaction pairs)
 from the mined global-client DB into data/accessories/chain-traits.{json,js}
 (window.ChainTraitsData), used by the Builder page's per-weapon accessory
-pickers.
+pickers and the Accessories page's factor badges.
 
 Reads the DB's WepComponents (wep_components) and WepChainTraits
 (wep_chain_traits) tables, SSR quality only, skipping "Obsolete Data" rows
@@ -13,9 +13,13 @@ Debilitation (Not available)").
   can't carry two accessories of the same kind and series), trigger/effect
   text, restriction text and `fits` (the WeaponType2 codes it can be
   slotted into, matching WeaponsData).
-- `pairs`: TA ID -> {RA ID: chance}. Only allowed pairs are listed. A pair's
-  own fits is always the intersection of its TA's and RA's fits (verified
-  against the DB's per-pair `fits` column when this script runs).
+- `blocked`: TA ID -> [RA ID]: the TA + RA pairs that share a weapon type
+  but that the game doesn't allow to chain. Every other pair whose fits
+  overlap is allowed, with a chance of
+  min(1, CHAIN_BASE_CHANCE / (TA factor * RA factor)) — the Builder works
+  it out at runtime instead of storing it. Both are verified against the
+  DB's WepChainTraits rows when this script runs, as is each pair's own
+  fits being the intersection of its TA's and RA's fits.
 
 The DB is gitignored (data/screenshots/MRT_FieldWiki/source/mecharashi.db, see the root
 README), so this isn't part of compile.py — rerun it by hand after
@@ -62,6 +66,11 @@ ALL_CODES = sorted(WEAPON_TYPE_CODES.values())
 
 # "TA - Accurate", "TA W - Accurate", "TA-W - Annihilate", "RA-W - Slamming"
 NAME_RE = re.compile(r'^(TA|RA)(?:[ -](W))? - (.+)$')
+
+# A chain's chance is CHAIN_BASE_CHANCE / (TA factor * RA factor), capped
+# at 100%. The DB rounds chances to 4 places.
+CHAIN_BASE_CHANCE = 0.4
+CHANCE_TOLERANCE = 0.0001
 
 
 def parse_fits(text):
@@ -120,7 +129,7 @@ def main():
         entry['trigger' if kind == 'ta' else 'effect'] = clean_text(r['effect'])
         components[kind][str(r['component_id'])] = entry
 
-    pairs = {}
+    allowed = {}
     for r in db.execute(
         "select ta_id, ra_id, chance, fits from wep_chain_traits "
         "where ta_quality = 'SSR' and ra_quality = 'SSR' order by ta_id, ra_id"
@@ -132,15 +141,25 @@ def main():
         expected = sorted(set(ta['fits']) & set(ra['fits']))
         if parse_fits(r['fits']) != expected:
             sys.exit('Pair fits is not the TA/RA intersection: {} + {}'.format(ta_id, ra_id))
-        pairs.setdefault(ta_id, {})[ra_id] = r['chance']
+        formula = min(1, CHAIN_BASE_CHANCE / (ta['factor'] * ra['factor']))
+        if abs(r['chance'] - formula) > CHANCE_TOLERANCE:
+            sys.exit('Pair chance {} does not match the formula ({:.4f}): {} + {}'.format(
+                r['chance'], formula, ta_id, ra_id))
+        allowed.setdefault(ta_id, set()).add(ra_id)
 
     # Drop components that never appear in an allowed pair.
-    used_ra = {ra for ras in pairs.values() for ra in ras}
-    components['ta'] = {k: v for k, v in components['ta'].items() if k in pairs}
+    used_ra = {ra for ras in allowed.values() for ra in ras}
+    components['ta'] = {k: v for k, v in components['ta'].items() if k in allowed}
     components['ra'] = {k: v for k, v in components['ra'].items() if k in used_ra}
 
+    blocked = {}
+    for ta_id, ta in components['ta'].items():
+        for ra_id, ra in components['ra'].items():
+            if ra_id not in allowed[ta_id] and set(ta['fits']) & set(ra['fits']):
+                blocked.setdefault(ta_id, []).append(ra_id)
+
     missing_icons = [v['name'] for kind in ('ta', 'ra') for v in components[kind].values() if not v['icon']]
-    data = {'ta': components['ta'], 'ra': components['ra'], 'pairs': pairs}
+    data = {'ta': components['ta'], 'ra': components['ra'], 'blocked': blocked}
 
     with open(OUT_JSON, 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
@@ -148,8 +167,9 @@ def main():
     with open(OUT_JS, 'w', encoding='utf-8') as f:
         f.write('window.ChainTraitsData = ' + json.dumps(data, ensure_ascii=False) + ';\n')
 
-    print('Wrote {} TAs, {} RAs, {} pairs'.format(
-        len(components['ta']), len(components['ra']), sum(len(v) for v in pairs.values())))
+    print('Wrote {} TAs, {} RAs, {} allowed pairs, {} blocked pairs'.format(
+        len(components['ta']), len(components['ra']),
+        sum(len(v) for v in allowed.values()), sum(len(v) for v in blocked.values())))
     if missing_icons:
         print('No icon for: ' + ', '.join(missing_icons))
 

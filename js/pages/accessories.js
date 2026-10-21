@@ -27,10 +27,12 @@ Pages.accessories = {
   _activeSections: {},
   _sortKey: null,
   _sortDir: -1,
+  _factors: {},
 
   render: function () {
     var self = this;
     var all = (window.AccessoriesData || {}).accessories || [];
+    self._factors = self._factorIndex();
 
     var triggers  = all.filter(function (a) { return a.type === '觸元件'; });
     var reactions = all.filter(function (a) { return a.type === '應元件'; });
@@ -164,6 +166,7 @@ Pages.accessories = {
           acNav +
         '</div>' +
         '<p class="ac-section-footnote acc-co-note">The numbers in the CO columns mean the number of weapons carrying that could drop that accessory. The real drop chance is unknown.</p>' +
+        '<p class="dispatch-intro">Proc rate = 40% ÷ (TA probability factor × RA probability factor) (Max proc rate is 100%)</p>' +
         sectionsHtml +
         '<a class="back-to-top" id="acc-back-top" href="#">&#8593; Top</a>' +
       '</div>'
@@ -225,6 +228,26 @@ Pages.accessories = {
     });
   },
 
+  // Probability factors from the chain-traits data, keyed by kind, W flag
+  // and English name (the two datasets share no IDs).
+  _factorIndex: function () {
+    var data = window.ChainTraitsData || {};
+    var index = {};
+    ['ta', 'ra'].forEach(function (kind) {
+      var comps = data[kind] || {};
+      Object.keys(comps).forEach(function (id) {
+        var c = comps[id];
+        index[kind + (c.w ? 'W' : '') + ':' + c.name] = c.factor;
+      });
+    });
+    return index;
+  },
+
+  _factorOf: function (a) {
+    var kind = a.type === '觸元件' ? 'ta' : 'ra';
+    return this._factors[kind + (a.statetype.indexOf('_W') !== -1 ? 'W' : '') + ':' + a.en_name];
+  },
+
   _typeLabel: function (a) {
     return a.en_type || a.tags.map(function (t) { return ACC_TAG_LABEL[t] || t; }).join(', ');
   },
@@ -247,6 +270,7 @@ Pages.accessories = {
     var headHtml =
       '<th class="acc-th-name">Name</th>' +
       '<th class="acc-th-type">Type</th>' +
+      '<th class="acc-th-sortable acc-th-factor" data-sort-key="factor">Factor<span class="acc-sort-arrow"></span></th>' +
       allCOs.map(function (co) {
         return '<th class="acc-th-sortable acc-col-co" data-co="' + co + '" data-sort-key="co' + co + '">CO' + co + '<span class="acc-sort-arrow"></span></th>';
       }).join('');
@@ -259,9 +283,10 @@ Pages.accessories = {
       var isW = a.statetype.indexOf('_W') !== -1;
       var tagLabel = self._typeLabel(a);
       var lv = parseInt((a.level || '').replace(/\D/g, ''), 10) || 0;
+      var factor = self._factorOf(a);
 
       var occ = a.occurrence || {};
-      var sortAttrs = '';
+      var sortAttrs = factor !== undefined ? ' data-sort-factor="' + factor + '"' : '';
       var coCells = allCOs.map(function (co) {
         var n = occ[co] || 0;
         sortAttrs += ' data-sort-co' + co + '="' + n + '"';
@@ -293,6 +318,7 @@ Pages.accessories = {
             '</div>' +
           '</td>' +
           '<td class="acc-type-cell">' + $('<span>').text(tagLabel).html() + '</td>' +
+          '<td class="acc-occ">' + (factor !== undefined ? factor : '—') + '</td>' +
           coCells +
         '</tr>'
       );
@@ -312,6 +338,7 @@ Pages.accessories = {
   },
 
   destroy: function () {
+    this._factors = {};
     this._activeSections = {};
     this._activeCO = null;
     this._activeW = false;

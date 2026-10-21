@@ -91,7 +91,7 @@ scripts/                          # Every build script; run them from the repo r
   compile.py                      # Builds the page bundles from data/db/ (see below), then runs generate-index-maps.py
   build_pages.py                  # Generates per-route/per-item pages (gitignored; run in CI)
   check_skins.py                  # Fills each pilot's skin letters in data/db/pilots.json from the assets repo's half-body portraits
-  extract-chain-traits.py         # → data/accessories/chain-traits.js/json (ChainTraitsData, SSR TA/RA pairs from the mined DB)
+  extract-chain-traits.py         # → data/accessories/chain-traits.js/json (ChainTraitsData, SSR TAs/RAs + blocked pairs from the mined DB)
   generate-index-maps.py          # → data/builder/index-maps.js/json (BuilderIndexMaps)
   extract-bench.py                # → data/dmgcalc/bench-data.js (BenchData) + dmgcalc/bench.js/css, from the mined Damage_Bench.html
   build-icons.py                  # → data/dmgcalc/bench-icons.js (BenchIcons, the DMG calc's dropdown icons)
