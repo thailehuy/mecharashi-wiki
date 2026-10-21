@@ -24,13 +24,31 @@ Pages.shops = {
     return (
       '<div class="listing-header"><h1>Shops</h1></div>' +
       '<p class="dispatch-intro">' + $('<span>').text(note).html() + '</p>' +
-      self._renderCrisisSection((window.ShopsData || {}).crisis || []) +
+      self._renderCrisisSection((window.ShopsData || {}).crisis || [], (window.ShopsData || {}).crisisItems || []) +
       sectionsHtml
     );
   },
 
-  _renderCrisisSection: function (entries) {
+  _renderCrisisSection: function (entries, items) {
     var self = this;
+    var esc = function (s) { return $('<span>').text(s).html(); };
+    var num = function (n) { return n.toLocaleString('en-US'); };
+
+    var itemRows = items.map(function (it) {
+      return (
+        '<tr>' +
+          '<td class="shop-mods-cell">' +
+            '<span class="shop-mod-chip">' +
+              '<img class="shop-mod-chip-icon" src="' + ASSET_BASE + 'data/items/' + encodeURIComponent(it.icon) + '.png" onerror="this.style.visibility=\'hidden\'" alt="" loading="lazy" />' +
+              '<span class="shop-mod-chip-name">' + esc(it.name) + (it.count > 1 ? ' ×' + num(it.count) : '') + '</span>' +
+            '</span>' +
+          '</td>' +
+          '<td>' + num(it.price) + '</td>' +
+          '<td>' + it.global + '</td>' +
+          '<td>' + it.cn + '</td>' +
+        '</tr>'
+      );
+    }).join('');
 
     var bodyRows = entries.map(function (e) {
       return (
@@ -42,9 +60,10 @@ Pages.shops = {
     }).join('');
 
     return (
-      '<div class="ac-section">' +
-        '<h2 class="ac-section-title shop-section-title">Covert Phantom - Crisis Shop</h2>' +
-        '<p class="dispatch-intro">You can only select to buy 1 out of 2 pilot pledges per version.</p>' +
+      '<div class="ac-section" id="nostalgic-challenge-store">' +
+        '<h2 class="ac-section-title shop-section-title">Nostalgic Challenge Store</h2>' +
+        '<p class="dispatch-intro">Covert Phantom\'s Refactor-in-Crisis store, paid in Reconstruction Logs. ' +
+          'Each version adds a RiC Pilot Conscription Order (3,000 Logs) that lets you pick 1 of its 2 pilots.</p>' +
         '<div class="dispatch-table-wrap">' +
           '<table class="dispatch-table">' +
             '<thead><tr>' +
@@ -52,6 +71,19 @@ Pages.shops = {
               '<th>Pilots</th>' +
             '</tr></thead>' +
             '<tbody>' + bodyRows + '</tbody>' +
+          '</table>' +
+        '</div>' +
+        '<p class="dispatch-intro">Other items. Purchase limits never reset, but each new season raises them by the same amount, ' +
+          'so CN (7 seasons) allows more than Global (2 seasons).</p>' +
+        '<div class="dispatch-table-wrap">' +
+          '<table class="dispatch-table">' +
+            '<thead><tr>' +
+              '<th>Item</th>' +
+              '<th>Price (Logs)</th>' +
+              '<th>Limit (Global)</th>' +
+              '<th>Limit (CN)</th>' +
+            '</tr></thead>' +
+            '<tbody>' + itemRows + '</tbody>' +
           '</table>' +
         '</div>' +
       '</div>'

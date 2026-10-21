@@ -3,8 +3,8 @@ window.ShopsData = {
   // may not exactly match Global.
   note: 'Compiled from CN datamine records. CN version numbers are approximate — Global timing and order may differ.',
 
-  // Covert Phantom - Crisis Shop: two pilot pledges per version, only one of
-  // which can be bought.
+  // Nostalgic Challenge Store (Covert Phantom's Refactor-in-Crisis): two pilot
+  // pledges per version, only one of which can be bought.
   crisis: [
     { version: '2.4', pilots: ['Kelly', 'Naomi'] },
     { version: '2.5', pilots: ['Hong', 'Eileen'] },
@@ -13,6 +13,20 @@ window.ShopsData = {
     { version: '3.1', pilots: ['Lorna', 'Diracca'] },
     { version: '3.3', pilots: ['Fregata', 'Erisa'] },
     { version: '3.6', pilots: ['Paloma', 'Anderson'] }
+  ],
+
+  // The store's other items (ConfigDataFixedShopItemInfo, shop 115), paid
+  // in Reconstruction Logs. Limits are lifetime caps that grow by the same
+  // amount each season: global has 2 seasons' worth, CN 7.
+  crisisItems: [
+    { name: 'Transit Voucher',  icon: 'Icon_item_11100000',      count: 1,     price: 80,  global: 10, cn: 35 },
+    { name: 'Recruit Voucher',  icon: 'Icon_item_11000000',      count: 1,     price: 80,  global: 10, cn: 35 },
+    { name: 'Bulk Voucher',     icon: 'Icon_item_11100001',      count: 1,     price: 160, global: 10, cn: 35 },
+    { name: 'Memory Fragment',  icon: 'Icon_item_10210001',      count: 50,    price: 50,  global: 16, cn: 56 },
+    { name: 'Bay Bits',         icon: 'Icon_currency_DrawToken', count: 50,    price: 200, global: 8,  cn: 28 },
+    { name: 'Expansive Flash',  icon: 'Icon_item_11800000',      count: 1,     price: 50,  global: 20, cn: 70 },
+    { name: 'EN Container',     icon: 'Icon_item_10100010',      count: 1,     price: 20,  global: 20, cn: 70 },
+    { name: 'Milkhama Dollar',  icon: 'Icon_currency_001',       count: 10000, price: 50,  global: 20, cn: 70 }
   ],
 
   rotations: [
