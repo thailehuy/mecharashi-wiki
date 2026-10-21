@@ -3921,7 +3921,7 @@ a.boss-avatar { display: block; }
 .boss-bounties b { color: #e0e0f0; }
 .boss-clue-unlock { margin-top: 0.5rem; font-size: 0.85rem; color: #8a8aa0; }
 .boss-clue-unlock b { color: #e0e0f0; }
-.boss-extreme-list { margin-top: 0.75rem; }
+.boss-extreme-list { margin-top: 0.75rem; grid-template-columns: 1fr; }
 .boss-clues { margin-top: 0.75rem; padding: 0.6rem 0.7rem; background-color: #1a1a20; border: 1px solid #2a2a4a; border-radius: 8px; font-size: 0.9rem; color: #b0b0c8; }
 .boss-tabs { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 0.75rem; }
 [data-boss-pane] > .boss-clues { margin-top: 0; }

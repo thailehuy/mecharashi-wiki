@@ -228,18 +228,23 @@ function bossKit() {
       (st.units || []).map(function (u) {
         return '<div class="boss-sub-head">' + esc(u.name) + '</div>' +
           '<div class="skill-list">' + u.skills.map(function (sk) { return skillHtml(sk, firstDiff); }).join('') + '</div>';
-      }).join('') +
-      (st.extreme_modifiers ? '<div class="skill-list boss-extreme-list">' + st.extreme_modifiers.map(function (m) {
-        return (
-          '<div class="skill-card boss-skill">' +
-            '<div class="skill-name-row">' + (m.name ? '<span class="skill-name">' + esc(m.name) + '</span>' : '') +
-              '<span class="boss-skill-diffs">Extreme Modifier</span>' + '</div>' +
-            '<div class="talent-desc">' + descHtml(m.description) + '</div>' +
-            (m.buffs || []).map(buffHtml).join('') +
-          '</div>'
-        );
-      }).join('') + '</div>' : '')
+      }).join('')
     );
+  }
+
+  // A stage's Extreme modifiers, shown under its bounties.
+  function extremeHtml(st) {
+    if (!st.extreme_modifiers) return '';
+    return '<div class="skill-list boss-extreme-list">' + st.extreme_modifiers.map(function (m) {
+      return (
+        '<div class="skill-card boss-skill">' +
+          '<div class="skill-name-row">' + (m.name ? '<span class="skill-name">' + esc(m.name) + '</span>' : '') +
+            '<span class="boss-skill-diffs">Extreme Modifier</span>' + '</div>' +
+          '<div class="talent-desc">' + descHtml(m.description) + '</div>' +
+          (m.buffs || []).map(buffHtml).join('') +
+        '</div>'
+      );
+    }).join('') + '</div>';
   }
 
   // A stage's clues. A clue's text grows with the difficulty: one text per
@@ -355,14 +360,16 @@ function bossKit() {
   }
 
   // A row per stage: its number (and title), the boss with its HP and
-  // bounties, and the boss's skills, clues and drops beside it in tabs.
+  // bounties and Extreme modifiers, and the boss's skills, clues and drops
+  // beside it in tabs.
   function stageRows(stages) {
     return stages.map(function (st) {
       var diffs = st.difficulties || [];
+      localTerms = collectTerms(st);
       return (
         '<div class="row g-3 boss-stage" id="stage-' + st.slot + '">' +
           stageIntro(st) +
-          cardHtml(st, diffs[0], 'col-12 col-sm-5 col-md-3', bossHref(st.boss), null, '', bountiesHtml(st, diffs[0]), true) +
+          cardHtml(st, diffs[0], 'col-12 col-sm-5 col-md-3', bossHref(st.boss), null, '', bountiesHtml(st, diffs[0]) + extremeHtml(st), true) +
           '<div class="col-12 col-sm-7 col-md-9">' +
             tabsHtml(st, diffs[0]) +
           '</div>' +
