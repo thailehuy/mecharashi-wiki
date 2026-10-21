@@ -64,9 +64,19 @@ var DispatchCalc = {
     return this._mechs().filter(function (m) { return m.name === name; })[0];
   },
 
-  // The newest mech of a group that's out by the given day.
-  _newest: function (group, day) {
-    return this._mechs().filter(function (m) { return m.group === group && m.from <= day; })[0];
+  // The newest mech of a group that's out by the given day, skipping the
+  // names in `skip`.
+  _newest: function (group, day, skip) {
+    return this._mechs().filter(function (m) { return m.group === group && m.from <= day && !(skip && skip.indexOf(m.name) >= 0); })[0];
+  },
+
+  // Mechs that finished all 4 cycles in a saved round.
+  _completed: function () {
+    var done = [];
+    (this._state.rounds || []).forEach(function (r) {
+      r.done.forEach(function (g) { var k = r.slots.indexOf(g); if (k >= 0) done.push(r.mechs[k]); });
+    });
+    return done;
   },
 
   _defaults: function () {
@@ -77,6 +87,7 @@ var DispatchCalc = {
       pessimistic: false,
       progress: DISPATCH_GROUPS.map(function () { return { cycles: 0, points: 0 }; }),
       mechs: [0, 1, 2].map(function (g) { return self._newest(g, day).name; }),
+      until: DCALC_SLOTS.map(function () { return 'done'; }),
       rounds: [],
     };
   },
@@ -88,10 +99,16 @@ var DispatchCalc = {
       var self = this;
       if (s && s.progress && s.mechs && s.rounds && s.rounds.every(function (r) { return r.after; })) {
         var groups = s.mechs.map(function (n) { var m = self._mech(n); return m ? m.group : -1; });
-        if (groups.every(function (g, i) { return g >= 0 && groups.indexOf(g) === i; })) return s;
+        if (groups.every(function (g, i) { return g >= 0 && groups.indexOf(g) === i; })) return this._withUntil(s);
       }
     } catch (e) {}
     return this._defaults();
+  },
+
+  // Saves from before the "until" pickers dispatch every slot until done.
+  _withUntil: function (s) {
+    if (!s.until) s.until = DCALC_SLOTS.map(function () { return 'done'; });
+    return s;
   },
 
   _save: function () {
@@ -103,7 +120,7 @@ var DispatchCalc = {
     try {
       var s = JSON.parse(localStorage.getItem('dispatchcalc-start'));
       var self = this;
-      if (s && s.start && s.progress && s.mechs && s.mechs.every(function (n) { return self._mech(n); })) return s;
+      if (s && s.start && s.progress && s.mechs && s.mechs.every(function (n) { return self._mech(n); })) return this._withUntil(s);
     } catch (e) {}
     return null;
   },
@@ -118,13 +135,29 @@ var DispatchCalc = {
     return st.mechs.map(function (n) { return self._mech(n).group; });
   },
 
-  // Walks day by day until a group reaches 4 cycles. Outside double weeks,
-  // every 4th day counts double unless the view is pessimistic.
+  _firstDay: function (st) { return dcalcDay(st.start) + (st.todayDone ? 1 : 0); },
+
+  // Patches in the schedule that add mechs to the dispatch pools and start
+  // after the first day of dispatches: the "until" choices.
+  _poolPatches: function (st) {
+    var first = this._firstDay(st), pools = ((window.DispatchData || {}).dispatch || []).map(function (row) { return row.cnPatch; });
+    return this._schedule().filter(function (p) { return pools.indexOf(p.version) >= 0 && p.start > first; });
+  },
+
+  _patch: function (version) {
+    return this._schedule().filter(function (p) { return p.version === version; })[0];
+  },
+
+  // Walks day by day until a group reaches 4 cycles, or until the day before
+  // a slot's "until" patch starts. Outside double weeks, every 4th day counts
+  // double unless the view is pessimistic.
   _simulate: function (st) {
-    var schedule = this._schedule(), slots = this._slots(st);
+    var schedule = this._schedule(), slots = this._slots(st), self = this;
     var before = st.progress.map(function (g) { return g.cycles * DCALC_CYCLE + g.points; });
     var totals = before.slice();
-    var first = dcalcDay(st.start) + (st.todayDone ? 1 : 0);
+    var first = this._firstDay(st);
+    var stops = st.until.map(function (u) { return u === 'done' ? Infinity : self._patch(u).start; });
+    var stop = Math.min.apply(null, stops);
     var doubleDays = 0, luckyDays = 0, normalDays = 0;
     for (var day = first; day < first + 3650; day++) {
       var mult = 1;
@@ -138,10 +171,12 @@ var DispatchCalc = {
       slots.forEach(function (g, i) { totals[g] += DCALC_SLOTS[i] * mult; });
       var done = [];
       totals.forEach(function (t, g) { if (t >= DCALC_TARGET) done.push(g); });
-      if (done.length) {
+      if (done.length || day + 1 >= stop) {
         return {
           start: first, end: day, days: day - first + 1, doubleDays: doubleDays, luckyDays: luckyDays,
           done: done, slots: slots, before: before, totals: totals,
+          // Slots whose "until" patch starts the next day, when no group finished.
+          switched: done.length ? [] : stops.map(function (s, k) { return s === stop ? k : -1; }).filter(function (k) { return k >= 0; }),
           pastSchedule: day >= schedule[schedule.length - 1].end,
         };
       }
@@ -164,27 +199,37 @@ var DispatchCalc = {
     return this._cycles(t) + ' / 4 cycles · ' + dcalcNum(t % DCALC_CYCLE) + ' / ' + dcalcNum(DCALC_CYCLE);
   },
 
-  // A slot's mech picker. Groups another slot uses and mechs whose patch
-  // hasn't started by the start date can't be picked.
+  // A slot's mech picker. Groups another slot uses, mechs whose patch hasn't
+  // started by the start date and mechs that finished in a round can't be picked.
   _slotSelect: function (i) {
-    var st = this._state, day = dcalcDay(st.start), slots = this._slots(st), mechs = this._mechs();
+    var st = this._state, day = dcalcDay(st.start), slots = this._slots(st), mechs = this._mechs(), completed = this._completed();
     var groups = DISPATCH_GROUPS.map(function (g, k) {
       var taken = slots.indexOf(k) >= 0 && slots[i] !== k;
       return '<optgroup label="' + g + (taken ? ' (in use)' : '') + '"' + (taken ? ' disabled' : '') + '>' +
         mechs.filter(function (m) { return m.group === k; }).map(function (m) {
-          var later = m.from > day;
-          return '<option value="' + dcalcEsc(m.name) + '"' + (m.name === st.mechs[i] ? ' selected' : '') + (later ? ' disabled' : '') + '>' +
-            dcalcEsc(m.name) + ' (v' + m.patch + (later ? (m.from < Infinity ? ', from ' + dcalcFmt(m.from) : ', not scheduled') : '') + ')</option>';
+          var later = m.from > day, done = completed.indexOf(m.name) >= 0;
+          return '<option value="' + dcalcEsc(m.name) + '"' + (m.name === st.mechs[i] ? ' selected' : '') + (later || done ? ' disabled' : '') + '>' +
+            dcalcEsc(m.name) + ' (v' + m.patch + (later ? (m.from < Infinity ? ', from ' + dcalcFmt(m.from) : ', not scheduled') : '') +
+            (done ? ', 4/4 done' : '') + ')</option>';
         }).join('') +
       '</optgroup>';
     }).join('');
+    var until = '<option value="done">done</option>' + this._poolPatches(st).map(function (p) {
+      return '<option value="' + p.version + '"' + (p.version === st.until[i] ? ' selected' : '') + '>start of v' + p.version + '</option>';
+    }).join('');
     return (
-      '<div class="dcalc-row">' +
-        '<span class="dcalc-row-label">' + DCALC_SLOTS[i] + ' pts</span>' +
+      '<div class="dcalc-slot">' +
+        '<div class="dcalc-slot-head"><span class="dcalc-row-label">' + DCALC_SLOTS[i] + ' pts</span><span class="dcalc-hint">' + DISPATCH_GROUPS[slots[i]] + '</span></div>' +
         '<select class="dcalc-input" data-slot="' + i + '">' + groups + '</select>' +
-        '<span class="dcalc-hint">' + DISPATCH_GROUPS[slots[i]] + '</span>' +
+        '<label class="dcalc-field dcalc-until">Until <select class="dcalc-input" data-until="' + i + '">' + until + '</select></label>' +
       '</div>'
     );
+  },
+
+  // The mech a daily dispatch sends for the group, or nothing.
+  _progressMech: function (group) {
+    var k = this._slots(this._state).indexOf(group);
+    return k >= 0 ? dcalcEsc(this._state.mechs[k]) : '';
   },
 
   _form: function () {
@@ -197,6 +242,7 @@ var DispatchCalc = {
       return (
         '<div class="dcalc-row">' +
           '<span class="dcalc-row-label">' + g + '</span>' +
+          '<span class="dcalc-progress-mech" data-progress-mech="' + i + '">' + self._progressMech(i) + '</span>' +
           '<label class="dcalc-field">Cycles done <select class="dcalc-input" data-cycles="' + i + '">' + cycles + '</select></label>' +
           '<label class="dcalc-field">Points <input type="number" class="dcalc-input dcalc-points" data-points="' + i + '" min="0" max="' + (DCALC_CYCLE - 1) + '" step="1" value="' + p.points + '" /> / ' + dcalcNum(DCALC_CYCLE) + '</label>' +
         '</div>'
@@ -236,6 +282,12 @@ var DispatchCalc = {
     var names = r.done.map(function (g) {
       return '<strong>' + DISPATCH_GROUPS[g] + '</strong> (' + dcalcEsc(st.mechs[r.slots.indexOf(g)]) + ')';
     }).join(' and ');
+    var switched = r.switched.map(function (k) {
+      return '<strong>' + DISPATCH_GROUPS[r.slots[k]] + '</strong> (' + dcalcEsc(st.mechs[k]) + ')';
+    }).join(' and ');
+    var head = r.done.length
+      ? names + ' finish' + (r.done.length > 1 ? '' : 'es') + ' 4 cycles on'
+      : switched + ' dispatch' + (r.switched.length > 1 ? '' : 'es') + ' until v' + st.until[r.switched[0]] + ' starts, last on';
     var bars = DISPATCH_GROUPS.map(function (g, i) {
       var pct = Math.min(r.totals[i] / DCALC_TARGET, 1) * 100;
       return (
@@ -249,7 +301,7 @@ var DispatchCalc = {
 
     return (
       '<div class="dcalc-result">' +
-        '<div class="dcalc-result-head">' + names + ' finish' + (r.done.length > 1 ? '' : 'es') + ' 4 cycles on <strong class="dcalc-date">' + dcalcFmt(r.end) + '</strong>' +
+        '<div class="dcalc-result-head">' + head + ' <strong class="dcalc-date">' + dcalcFmt(r.end) + '</strong>' +
           ' <span class="dcalc-patch">' + this._patchAt(r.end) + '</span></div>' +
         '<div class="dcalc-result-sub">' + r.days + ' day' + (r.days === 1 ? '' : 's') + ' of dispatches from ' + dcalcFmt(r.start) +
           ': ' + r.doubleDays + ' in a double-point week' +
@@ -279,7 +331,8 @@ var DispatchCalc = {
               '<td' + span + ' data-label="Days">' + r.days + '</td>') +
             '<td data-label="Daily dispatch" class="dcalc-round-daily">' + dcalcEsc(n) + ' <span class="dcalc-hint">' + DISPATCH_GROUPS[g] + ' · ' + DCALC_SLOTS[k] + ' pts</span></td>' +
             '<td data-label="Cycles done">' + self._cycles(r.after[g]) + ' / 4' + (gained ? ' (+' + gained + ')' : '') +
-              (r.done.indexOf(g) >= 0 ? ' <span class="dcalc-done"><i class="bi bi-check-circle-fill"></i></span>' : '') + '</td>' +
+              (r.done.indexOf(g) >= 0 ? ' <span class="dcalc-done"><i class="bi bi-check-circle-fill"></i></span>' : '') +
+              ((r.switched || []).indexOf(k) >= 0 ? ' <span class="dcalc-hint">until v' + r.until[k] + '</span>' : '') + '</td>' +
           '</tr>'
         );
       }).join('');
@@ -316,6 +369,7 @@ var DispatchCalc = {
   _refresh: function () {
     var self = this;
     $('#dcalc-slots').html(DCALC_SLOTS.map(function (pts, i) { return self._slotSelect(i); }).join(''));
+    $('[data-progress-mech]').each(function () { $(this).html(self._progressMech(+$(this).data('progress-mech'))); });
     $('#dcalc-result').html(this._result());
     $('#dcalc-rounds').html(this._rounds());
     this._save();
@@ -332,17 +386,23 @@ var DispatchCalc = {
       st.progress[+$(this).data('points')].points = Math.max(0, Math.min(DCALC_CYCLE - 1, v));
     });
     $('[data-slot]').each(function () { st.mechs[+$(this).data('slot')] = $(this).val(); });
+    $('[data-until]').each(function () { st.until[+$(this).data('until')] = $(this).val(); });
     this._fitMechs();
   },
 
-  // A pick whose patch hasn't started by the start date falls back to the
-  // newest mech of its group that has.
+  // A pick whose patch hasn't started by the start date, or that finished in
+  // a round, falls back to the newest mech of its group that hasn't (any
+  // that's out, if the group has none left). An "until" patch that no longer
+  // starts after the first dispatch day goes back to done.
   _fitMechs: function () {
-    var st = this._state, day = dcalcDay(st.start), self = this;
+    var st = this._state, day = dcalcDay(st.start), self = this, completed = this._completed();
     st.mechs = st.mechs.map(function (n) {
       var m = self._mech(n);
-      return m.from <= day ? n : self._newest(m.group, day).name;
+      if (m.from <= day && completed.indexOf(n) < 0) return n;
+      return (self._newest(m.group, day, completed) || self._newest(m.group, day)).name;
     });
+    var versions = this._poolPatches(st).map(function (p) { return p.version; });
+    st.until = st.until.map(function (u) { return versions.indexOf(u) >= 0 ? u : 'done'; });
   },
 
   render: function () {
@@ -365,18 +425,24 @@ var DispatchCalc = {
         var st = self._state;
         st.rounds.push({
           start: r.start, end: r.end, days: r.days, done: r.done, slots: r.slots, mechs: st.mechs.slice(),
-          before: r.before, after: r.totals,
+          switched: r.switched, until: st.until.slice(), before: r.before, after: r.totals,
         });
         st.progress = self._nextProgress(r);
         st.start = dcalcIso(r.end + 1);
         st.todayDone = false;
+        // A slot whose "until" patch has now started moves to its group's newest mech.
+        r.switched.forEach(function (k) {
+          var g = r.slots[k], next = self._newest(g, r.end + 1, self._completed()) || self._newest(g, r.end + 1);
+          st.mechs[k] = next.name;
+          st.until[k] = 'done';
+        });
         self._fitMechs();
         $('#dcalc-form').html(self._form());
         self._refresh();
       });
       $(document).on('click.dispatchcalc', '#dcalc-save-start', function () {
         var st = self._state;
-        var start = { start: st.start, todayDone: st.todayDone, pessimistic: st.pessimistic, progress: st.progress, mechs: st.mechs };
+        var start = { start: st.start, todayDone: st.todayDone, pessimistic: st.pessimistic, progress: st.progress, mechs: st.mechs, until: st.until };
         try { localStorage.setItem('dispatchcalc-start', JSON.stringify(start)); } catch (e) {}
         $('#dcalc-start-note').text(self._savedStart() ? self._startNote() : 'Couldn\'t save: this browser is blocking site storage.');
       });
@@ -396,6 +462,7 @@ var DispatchCalc = {
 
     return (
       '<p class="dispatch-intro">Enter each dispatch group\'s progress and the mech you send each of your 3 daily dispatches for (one per group, from mechs whose patch has started by the start date), to see the day the first group completes all 4 cycles (' + dcalcNum(DCALC_CYCLE) + ' points each) for its ST. ' +
+        'Set a dispatch\'s "until" to a patch that adds new mechs to end the round the day before it starts, when you plan to switch to the new mech. ' +
         'The last week of every patch gives double points. On other days there\'s a ~25% chance of double points, counted here as every 4th day, unless Pessimistic view is on. ' +
         'Save a result as a round to carry its progress into the next calculation; a finished group starts over with its leftover points. Rounds are kept only until the browser tab is closed; save your inputs as a starting point to reset back to them any time.</p>' +
       '<div id="dcalc-form">' + this._form() + '</div>' +

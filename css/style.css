@@ -4408,6 +4408,10 @@ a.boss-avatar { display: block; }
 .dcalc-panel-title { font-size: 1rem; font-weight: 700; color: #ffffff; margin: 0 0 0.6rem; }
 .dcalc-row { display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem 0.75rem; margin-bottom: 0.5rem; }
 .dcalc-row-label { min-width: 6.5rem; font-weight: 600; color: #e0e0ff; }
+.dcalc-slot { display: flex; flex-direction: column; align-items: flex-start; gap: 0.3rem; margin-bottom: 0.75rem; }
+.dcalc-slot-head { display: flex; align-items: baseline; gap: 0.5rem; }
+.dcalc-slot-head .dcalc-row-label { min-width: 0; }
+.dcalc-progress-mech { min-width: 8rem; font-size: 0.85rem; color: #c8c8f0; }
 .dcalc-field { display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.85rem; color: #a0a0c8; }
 .dcalc-input {
   font-size: 0.85rem;
