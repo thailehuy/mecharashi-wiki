@@ -8,7 +8,7 @@ Images and icons live in a separate repo, [mecharashi-wiki-assets](https://githu
 |---|---|
 | `data/unlisted/pilot_images_half/` | Pilot half-body portraits (`<icon>.png`) |
 | `data/unlisted/pilot_images_raw/` | Full pilot artwork |
-| `data/unlisted/pilot_images_other/` | Extra portraits, e.g. `Pilot_13038A_half.png` (the home page's link-preview image) |
+| `data/unlisted/pilot_images_other/{Half,Head,Raw}/` | Extra portraits, e.g. `Half/Pilot_13038A_half.png` (the home page's link-preview image) |
 | `data/unlisted/pilot_skills/` | Pilot skill/talent icons |
 | `data/unlisted/mechs/{Icon,Raw,Skins}/{Light,Medium,Heavy}/` | ST icons, full artwork and skins, by weight class |
 | `data/unlisted/mech_modules/` | Module icons (color subfolders by module category); modules using a pilot passive's icon (`Icon_skill_*`) take it from `pilot_skills/` |
