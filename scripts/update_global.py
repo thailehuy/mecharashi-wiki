@@ -2,7 +2,7 @@
 """The pipeline to run after the global (EN) client updates. Start the game
 once so it downloads the update, close it, then from the repo root:
 
-    python3 scripts/update_global.py                  # every step, taking in the newest version the client has
+    python3 scripts/update_global.py                  # every step, taking in every version the client has past GLOBAL_VERSION
     python3 scripts/update_global.py --version 2.6    # take in this version's official text
     python3 scripts/update_global.py --check          # also run the update chain's audits (new game functions, bench, coverage)
     python3 scripts/update_global.py --from data      # start at a later step (earlier outputs must exist)
@@ -18,15 +18,18 @@ Steps
                   (build_crafting.py), then compile.py
     data          everything the wiki derives from the mined data: the DMG calc's bench data and icons (incl. the
                   Armed Conquest line-ups), accessory chain traits, R&D features and totals, the Armed Conquest and
-                  Clearance Ops boss pages with their skills and drops (build_bosses.py), the banner list, the pilot and ST
-                  lore (build_lore.py), the Story page's world settings and chapters (build_story.py), and the Elite
-                  Battle, Simulated Battle, Covert Phantom and Memory Storm pages (build_elite.py, build_sim.py,
-                  build_covert.py, build_storm.py).
+                  Clearance Ops boss pages with their skills and drops (build_bosses.py), the banner list, then the
+                  version global is on (set_global_version.py: the newest whose banners have opened; it prints that
+                  version's banner timeline, sets GLOBAL_VERSION, which drops the CN-text warning from its pilots' and
+                  STs' pages, starts the Dispatch Calculator's schedule at it and checks the dispatch pool), the pilot and ST
+                  lore (build_lore.py), the Story page's world settings and chapters (build_story.py), the Events
+                  page (build_events.py), and the Elite Battle, Simulated Battle, Covert Phantom and Memory Storm
+                  pages (build_elite.py, build_sim.py, build_covert.py, build_storm.py).
                   A new Armed Conquest season stops build_bosses.py until its name is added to AC_SEASONS there
                   (release order); then rerun with --from data
-    images        new drop/material/story/Elite, Simulated Battle, Covert Phantom and Memory Storm reward item icons, Border Conflict foe
-                  portraits and banner art from the game's bundles into the assets repo
-                  (extract_item_icons.py, extract_banner_images.py); pilot voice lines from its sound banks into the
+    images        new drop/material/story/Elite, Simulated Battle, Covert Phantom, Memory Storm and event reward item icons, Border
+                  Conflict foe portraits, banner art and event pictures from the game's bundles into the assets repo
+                  (extract_item_icons.py, extract_banner_images.py, extract_event_images.py); pilot voice lines from its sound banks into the
                   voices repo (extract_voices.py), then the Voice Lines tab's data (build_voice.py)
     compile       data/db/ -> the page bundles and builder index maps (compile.py)
 
@@ -45,8 +48,8 @@ MAIN_DB = os.path.join(FIELD_WIKI, 'source', 'mecharashi.db')
 STEPS = ['mine', 'translations', 'crafting', 'data', 'images', 'compile']
 # In order, after compile.py: build-icons.py, build_features.py and build_bosses.py read the compiled bundles.
 DATA = [['extract-bench.py', '--data-only'], ['build-icons.py'], ['extract-chain-traits.py'], ['build_features.py'],
-        ['build_rd_totals.py'], ['build_bosses.py'], ['build_banners.py'], ['build_lore.py'],
-        ['build_story.py'], ['build_elite.py'], ['build_sim.py'], ['build_covert.py'], ['build_storm.py']]
+        ['build_rd_totals.py'], ['build_bosses.py'], ['build_banners.py'], ['set_global_version.py'], ['build_lore.py'],
+        ['build_story.py'], ['build_events.py'], ['build_elite.py'], ['build_sim.py'], ['build_covert.py'], ['build_storm.py']]
 
 
 def run(args, cwd=ROOT):
@@ -72,7 +75,7 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument('--from', dest='start', choices=STEPS, default='mine', help='first step to run')
     ap.add_argument('--version', action='append', help='the version whose official text to take in (repeatable; '
-                                                       'default: the newest the client has)')
+                                                       'default: every one the client has past GLOBAL_VERSION)')
     ap.add_argument('--check', action='store_true', help="run the update chain's audits after mining")
     ap.add_argument('--force', action='store_true', help='rebuild the master DB even when the tables are unchanged')
     a = ap.parse_args()
@@ -99,6 +102,7 @@ def main():
     if 'images' in todo:
         run(script('extract_item_icons.py'))
         run(script('extract_banner_images.py'))
+        run(script('extract_event_images.py'))
         run(script('extract_voices.py'))
         run(script('build_voice.py'))
     if 'compile' in todo:

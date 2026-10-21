@@ -20,7 +20,7 @@ text of the game passive in the same position. Everything changed is printed;
 rows the global client doesn't have yet are listed and left alone. Run
 compile.py afterwards (update_global.py does).
 
-    python3 scripts/take_translations.py                  # the newest version the global client has
+    python3 scripts/take_translations.py                  # every version the global client has past GLOBAL_VERSION
     python3 scripts/take_translations.py --version 2.6    # this version (repeatable)
     python3 scripts/take_translations.py --dry-run        # print the changes, write nothing
 """
@@ -44,6 +44,8 @@ NEURAL = 'neural:'
 PLACEHOLDER = {'TEST', '无'}
 # Release-order lists that name the units: a renamed pilot/ST is renamed there too.
 NAME_LISTS = {'pilots': os.path.join(ROOT, 'js', 'pages', 'pilots.js'), 'mechs': os.path.join(ROOT, 'js', 'pages', 'sts.js')}
+# GLOBAL_VERSION, the version the global server is on (set_global_version.py): its text and older are taken in already.
+APP_JS = os.path.join(ROOT, 'js', 'app.js')
 ZERO_WIDTH = re.compile('[​-‍﻿]')
 # A talent-enhancing buff's text only points at the talent ("[Arthur] Core Talent"): not worth a glossary entry.
 TALENT_POINTER = re.compile(r'^\[[^\]]+\] Core Talent$')
@@ -238,16 +240,24 @@ def owners(t):
     return skills, modules
 
 
-def newest_on_global(g, t):
-    """The newest version with a pilot or ST the global client has."""
-    found = [p['version'] for pid, p in t['pilots'].items() if p.get('version') and g.pilot(pid)]
-    found += [m['version'] for bid, m in t['mechs'].items() if m.get('version') and g.suit(bid)]
-    return max(found, key=version_key) if found else None
+def on_global(g, t):
+    """Every version with a pilot or ST the global client has (it has units of the next patches before they're out)."""
+    found = {p['version'] for pid, p in t['pilots'].items() if p.get('version') and g.pilot(pid)}
+    found |= {m['version'] for bid, m in t['mechs'].items() if m.get('version') and g.suit(bid)}
+    return found
+
+
+def global_version():
+    with open(APP_JS, encoding='utf-8') as f:
+        m = re.search(r'^var GLOBAL_VERSION = ([\d.]+);', f.read(), re.M)
+    if not m:
+        sys.exit(f'No GLOBAL_VERSION in {os.path.relpath(APP_JS, ROOT)}')
+    return m.group(1)
 
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__.split('\n\n')[0])
-    ap.add_argument('--version', action='append', help='the version to take in (default: the newest the global client has)')
+    ap.add_argument('--version', action='append', help='the version to take in (default: every one the global client has past GLOBAL_VERSION)')
     ap.add_argument('--dry-run', action='store_true', help='print the changes, write nothing')
     a = ap.parse_args()
     g = Global()
@@ -255,10 +265,11 @@ def main():
     glossary = load(GLOSSARY)
     versions = set(a.version or [])
     if not versions:
-        newest = newest_on_global(g, t)
-        if not newest:
-            sys.exit('The global client has none of the wiki\'s pilots or STs')
-        versions = {newest}
+        live = global_version()
+        versions = {v for v in on_global(g, t) if version_key(v) > version_key(live)}
+        if not versions:
+            print(f'The global client has no pilot or ST newer than v{live} (GLOBAL_VERSION): nothing to take in')
+            return
     print('Taking in the official text of version ' + ', '.join(sorted(versions, key=version_key)))
     k = Taker(g, t, glossary)
     skill_versions, module_versions = owners(t)
