@@ -233,6 +233,27 @@ def co_chapters():
                ASSET_URL + quote(data['bosses'][names[-1]]['portrait']))
 
 
+def events():
+    data = load('data/events/events.json')
+    for e in data['events']:
+        # "Downfall event (2025-10-16 to 2025-10-30) ", then what its page lists on its own line
+        # (trailing space: see pilots()). Image: its picture.
+        when = ', '.join(x for x in [
+            e.get('rerun') and ('rerun' if e['rerun'] == 1 else f'rerun {e["rerun"]}'),
+            e.get('start') and (f'permanent in Chronicles since {e["start"]}' if e.get('permanent') else f'{e["start"]} to {e["end"]}') or 'not yet run on global',
+        ] if x)
+        stages = sum(len(g['stages']) for g in e['stages'])
+        missions = sum(len(g['missions']) for g in e['milestones'])
+        items = sum(len(s['items']) for s in e['shops'])
+        lists = ', '.join(x for x in [
+            f'{stages} stages with their rewards and achievements',
+            missions and f'{missions} missions',
+            items and f'a shop of {items} items',
+        ] if x)
+        yield ('events', e['slug'], e['name'] + ' — Event', f'{e["name"]} event ({when}) \n{lists[0].upper() + lists[1:]}',
+               ASSET_URL + quote(f'data/events/{e["image"]}.jpg'))
+
+
 # ── Output ────────────────────────────────────────────────────────────────────
 
 def route_titles(index_html):
@@ -339,7 +360,7 @@ def main():
             write(r, page_html(index_html, 1, label))
 
     count = 0
-    for items in (pilots, mechs, weapons, backpacks, modules, ac_seasons, co_chapters):
+    for items in (pilots, mechs, weapons, backpacks, modules, ac_seasons, co_chapters, events):
         seen = {}
         for route, param, title, description, image in items():
             slug = slugify(param)

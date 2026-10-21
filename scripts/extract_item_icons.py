@@ -2,7 +2,8 @@
 """Extract the item icons the boss drops (bosses.json), crafting materials
 (data/db/materials.json), story stage rewards (data/story/story.json), Elite Battle rewards
 (data/elite/elite.json), Simulated Battle rewards (data/sim/sim.json), Covert Phantom boss rewards
-(data/covert/covert.json), Memory Storm clear drops (data/storm/storm.json) and the Shops page's Nostalgic Challenge Store items (data/shops.js) use from the game's bundles into the assets repo (data/items/<icon>.png), and the
+(data/covert/covert.json), Memory Storm clear drops (data/storm/storm.json), the Events page's rewards, shop items
+and currencies (data/events/events.json) and the Shops page's Nostalgic Challenge Store items (data/shops.js) use from the game's bundles into the assets repo (data/items/<icon>.png), and the
 Border Conflict foes' portraits on the Story and Covert Phantom pages and the Covert Phantom pilot masteries'
 pilots (data/unlisted/pilot_images_half/<portrait>.png).
 
@@ -37,6 +38,7 @@ ELITE = os.path.join(ROOT, 'data', 'elite', 'elite.json')
 SIM = os.path.join(ROOT, 'data', 'sim', 'sim.json')
 COVERT = os.path.join(ROOT, 'data', 'covert', 'covert.json')
 STORM = os.path.join(ROOT, 'data', 'storm', 'storm.json')
+EVENTS = os.path.join(ROOT, 'data', 'events', 'events.json')
 SHOPS = os.path.join(ROOT, 'data', 'shops.js')
 ASSETS_DIR = os.environ.get('ASSETS_DIR', os.path.join(os.path.dirname(ROOT), 'mecharashi-wiki-assets'))
 OUT_DIR = os.path.join(ASSETS_DIR, 'data', 'items')
@@ -90,6 +92,17 @@ def needed_icons():
         # Each score tier's first-clear, bonus and normal drops.
         icons |= {r['icon'] for s in storm['seasons'] for t in s['tiers'] for key in ('first', 'bonus', 'normal')
                   for r in t[key] if r['kind'] == 'item' and r.get('icon')}
+    if os.path.exists(EVENTS):
+        with open(EVENTS, encoding='utf-8') as f:
+            events = json.load(f)['events']
+        # Each stage's clear and achievement rewards per difficulty, each mission's, each shop item and currency.
+        rewards = [r for e in events for g in e['stages'] for st in g['stages'] for t in st.get('tiers', [])
+                   for r in t['rewards'] + [x for a in t['achievements'] for x in a['rewards']]]
+        rewards += [r for e in events for g in e['milestones'] for m in g['missions'] for r in m['rewards']]
+        rewards += [it['item'] for e in events for s in e['shops'] for it in s['items']]
+        icons |= {r['icon'] for r in rewards
+                  if r['kind'] == 'item' and r.get('icon') and not r['icon'].startswith('Icon_skill_')}
+        icons |= {c['icon'] for e in events for c in e['currencies'] if c.get('icon')}
     # The Shops page's Nostalgic Challenge Store items (data/shops.js, written by hand).
     if os.path.exists(SHOPS):
         with open(SHOPS, encoding='utf-8') as f:

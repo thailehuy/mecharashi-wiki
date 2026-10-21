@@ -62,6 +62,8 @@ $(function () {
     backpacks: function () { return ((window.BackpacksData || {}).backpacks || []).map(backpackSlug); },
     armedconquest: function () { return ((window.BossesData || {}).armed_conquest || []).map(function (s) { return s.name; }); },
     clearanceops: function () { return ((window.BossesData || {}).clearance_ops || []).map(function (c) { return c.name; }); },
+    // An event's param is its slug; its data loads with the page, so an unknown slug passes through as is.
+    events:    function () { return ((window.EventsData || {}).events || []).map(function (e) { return e.slug; }); },
     modules:   function () {
       var modules = (window.ModulesData || {}).modules || {};
       return Object.keys(modules).map(function (fam) { return modules[fam].name.toLowerCase(); });

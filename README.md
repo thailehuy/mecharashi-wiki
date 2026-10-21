@@ -17,6 +17,7 @@ Images and icons live in a separate repo, [mecharashi-wiki-assets](https://githu
 | `data/backpacks/icons/`, `data/backpacks/materials/` | Backpack and crafting-material icons |
 | `data/accessories/icons/` | Accessory icons |
 | `data/items/` | Item icons (`Icon_item_*`, `Icon_currency_*`, …) for boss drops, extracted from the game's bundles by `scripts/extract_item_icons.py` |
+| `data/events/` | Event pictures (`<prefab>.jpg`): each event's main screen, rendered by `scripts/extract_event_images.py` |
 | `data/banners/` | Gacha banner art (`<prefab>.jpg`), each composited from its 2+ split textures by `scripts/extract_banner_images.py` |
 | `data/background/` | Rarity frame backgrounds (`quality-{r,sr,ssr,sssr}.png`) |
 
@@ -31,6 +32,7 @@ Pilot voice lines are in another repo, [mecharashi-wiki-voices](https://github.c
 - Single-page app with path routing (`pilots/ada/`); legacy `#page/param` links still work and are rewritten to the path form
 - Per-item link previews (Facebook/Discord) — `build_pages.py` generates a copy of `index.html` with its own og:/twitter: tags for every pilot/ST/weapon/backpack/module/AC season/CO chapter, run by the deploy workflow
 - **Story** — tabs: Main Story (every main-story chapter's stages (briefing, location, encounters, Critical Operation, side missions) with their cutscenes and rewards), Event Stories (each limited-time event's story stages with their briefing, cutscenes and rewards, per difficulty where there are several), Border Conflict (its bosses by tier with what you find on them, its encounters with every choice and outcome, and the map's discoveries), then Geography, Faction, Incidents and Items from the in-game Skynet encyclopedia; built from the global client's tables by `scripts/build_story.py`, fetched when the page first opens
+- **Events** — every limited-time story event as its picture (a rerun listed again), newest first; each opens its own page (`events/<slug>/`) with tabs: Story (its stages' briefings and cutscenes, from the Story page's data), Rewards (every stage's clear rewards per difficulty), Achievements (each stage's battle achievements and what each gives), Milestones (its missions, by group, and their rewards), Currency and Shop (each item's price and purchase limit; H.I.V.E.'s Intel Shop B-Boxes by pool); built from the global client's tables by `scripts/build_events.py`, fetched when the page first opens
 - **Pilots** listing + detail — avatar, rank/version badges, filters, talents, skills, Neural Drive, lore, voice lines (transcripts, voice actors and audio in English, Japanese and Chinese)
 - **STs (mechs)** listing + detail — avatar, rank/version badges, filters, firepower/HP/weight stats, modules
 - **Weapons** listing + detail — signature (SSSR) weapons grouped by release batch, paired-pilot linking, passive skills

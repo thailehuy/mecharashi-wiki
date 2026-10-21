@@ -4459,3 +4459,32 @@ a.boss-avatar { display: block; }
 .dispatch-tabs .detail-tabs { margin-top: 0; }
 .dispatch-tabs .detail-tab-pane { padding-top: 1rem; }
 .dcalc-start-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 0.75rem; margin: -0.25rem 0 1rem; }
+
+/* Events: the listing's pictures, an event's banner and its tabs (stages and missions as on Story and Elite Battle). */
+.event-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1rem; }
+.event-card { background-color: #1a1a20; border: 1px solid #2a2a4a; border-radius: 8px; overflow: hidden; }
+.event-card:hover { border-color: #e94560; }
+.event-card-img { position: relative; display: block; aspect-ratio: 20 / 9; background-color: #0d0d1a; }
+.event-card-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.event-card-badge {
+  position: absolute; top: 0.5rem; right: 0.5rem; font-size: 0.72rem; font-weight: 700; padding: 2px 8px;
+  border-radius: 4px; color: #ffffff; background-color: #e94560;
+}
+.event-card-body { padding: 0.6rem 0.9rem 0.75rem; }
+.event-card-badge-permanent { background-color: #13786c; }
+.event-card-name { font-size: 1rem; font-weight: 600; color: #ffffff; text-decoration: none; }
+.event-card-name:hover { color: #e94560; }
+.event-rerun { font-size: 0.7em; font-weight: 600; color: #a0a0c0; vertical-align: middle; }
+.event-hero { display: block; width: 100%; max-width: 1200px; aspect-ratio: 20 / 9; object-fit: cover; border-radius: 8px; border: 1px solid #2a2a4a; margin-bottom: 0.75rem; }
+.event-missions { gap: 0.4rem; }
+.event-missions > li { padding: 0.6rem 0.8rem; }
+.event-steps { margin: 0.25rem 0 0; padding-left: 1.2rem; font-size: 0.85rem; color: #cbd5e1; }
+.event-currencies { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 0.75rem; }
+.event-currency { display: flex; gap: 0.75rem; align-items: flex-start; }
+.event-currency .event-cur-icon { width: 56px; height: 56px; }
+.event-currency-name { font-weight: 700; color: #ffffff; }
+.event-currency-use { font-size: 0.85rem; color: #cbd5e1; margin-top: 0.15rem; }
+.event-currency-text { font-size: 0.85rem; color: #8a8aa8; font-style: italic; margin-top: 0.3rem; }
+.event-cur-icon { width: 24px; height: 24px; object-fit: contain; vertical-align: middle; margin-right: 0.25rem; }
+.event-shop .boss-drop-list { margin-top: 0; }
+.event-price { white-space: nowrap; }

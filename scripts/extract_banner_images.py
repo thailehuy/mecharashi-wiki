@@ -58,9 +58,11 @@ def newest(name):
 class Bundles:
     """The gacha bundles loaded together, so a prefab's textures in other bundles resolve."""
 
-    def __init__(self):
-        names = {os.path.basename(p) for pat in BUNDLES for p in glob.glob(os.path.join(BUNDLE_DIR, pat))}
-        env = UnityPy.load(*[newest(n) for n in sorted(names)])
+    def __init__(self, paths=None):
+        if paths is None:
+            names = {os.path.basename(p) for pat in BUNDLES for p in glob.glob(os.path.join(BUNDLE_DIR, pat))}
+            paths = [newest(n) for n in sorted(names)]
+        env = UnityPy.load(*paths)
         self.cabs = {}
         for f in env.files.values():
             for k, sf in self._serialized(f):

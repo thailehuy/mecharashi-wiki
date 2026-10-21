@@ -169,37 +169,43 @@ class Rewards:
                 continue
             seen.add(key)
             count = x['count'] if x.get('count', -1) > 0 else fixed.get(key, -1)
-            if x['type'] == 'ItemType_Weapon':
-                try:
-                    out.append(dict(self.d.weapon(x['configId']), kind='weapon'))
-                except KeyError:
-                    print('%s: weapon %d not in the mined DB' % (where, x['configId']))
-            elif x['type'] == 'ItemType_Pilot':
-                pid = str(x['configId'])
-                if pid not in self.pilots:
-                    print('%s: pilot %s not on the wiki' % (where, pid))
-                    continue
-                out.append({'kind': 'pilot', 'id': pid, 'name': self.pilots[pid]['name']})
-            elif x['type'] in ST_PARTS:
-                # Body part ID 20200102 -> suit 2020; the wiki keys an ST by its Body.
-                mid = next((m for m in self.mechs if int(m) // 10000 == x['configId'] // 10000), None)
-                if mid is None:
-                    print('%s: no ST for part %d' % (where, x['configId']))
-                elif not any(r.get('id') == mid for r in out):
-                    out.append({'kind': 'st', 'id': mid, 'name': self.mechs[mid]['name']})
-            elif x['type'] == 'ItemType_Backpack':
-                bid = str(x['configId'])
-                if bid not in self.backpacks:
-                    print('%s: backpack %s not on the wiki' % (where, bid))
-                    continue
-                out.append({'kind': 'backpack', 'id': bid, 'name': self.backpacks[bid]['name']})
-            else:
-                item = self.d.item(dict(x, count=-1))
-                item['kind'] = 'item'
-                if count > 0:
-                    item['count'] = count
-                out.append(item)
+            r = self.item(x['type'], x['configId'], count, where)
+            # An ST's Body, Arms and Legs are one reward.
+            if r and not (r['kind'] == 'st' and any(o.get('id') == r['id'] for o in out)):
+                out.append(r)
         return out
+
+    def item(self, kind, cid, count, where):
+        """One item (the game's item type and ID; count -1 when not fixed) -> its reward entry, or None."""
+        if kind == 'ItemType_Weapon':
+            try:
+                return dict(self.d.weapon(cid), kind='weapon')
+            except KeyError:
+                print('%s: weapon %d not in the mined DB' % (where, cid))
+        elif kind == 'ItemType_Pilot':
+            pid = str(cid)
+            if pid in self.pilots:
+                return {'kind': 'pilot', 'id': pid, 'name': self.pilots[pid]['name']}
+            print('%s: pilot %s not on the wiki' % (where, pid))
+        elif kind in ST_PARTS or kind == 'ItemType_TacticalUnitSuit':
+            # Body part ID 20200102 -> suit 2020; the wiki keys an ST by its Body. A whole ST is its suit ID.
+            suit = cid if kind == 'ItemType_TacticalUnitSuit' else cid // 10000
+            mid = next((m for m in self.mechs if int(m) // 10000 == suit), None)
+            if mid is not None:
+                return {'kind': 'st', 'id': mid, 'name': self.mechs[mid]['name']}
+            print('%s: no ST for part %d' % (where, cid))
+        elif kind == 'ItemType_Backpack':
+            bid = str(cid)
+            if bid in self.backpacks:
+                return {'kind': 'backpack', 'id': bid, 'name': self.backpacks[bid]['name']}
+            print('%s: backpack %s not on the wiki' % (where, bid))
+        else:
+            item = self.d.item({'type': kind, 'configId': cid, 'count': -1})
+            item['kind'] = 'item'
+            if count > 0:
+                item['count'] = count
+            return item
+        return None
 
 
 class Dialogue:
