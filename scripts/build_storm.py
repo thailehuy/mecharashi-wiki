@@ -9,7 +9,7 @@ and storm.js (StormData).
 Memory Storm is the game's ChipsDungeon. Each season is a row of
 ConfigDataChipsDungeonLevelInfo: name, description, when it opens (OpenTime ->
 ConfigDataCommonFuncOpenTimeInfo; a far-future date means not yet on global),
-whether it's closed (IsClose), energy costs and pilot EXP. A season in both
+whether it's closed (IsClose, or since 2.4 an open time's ValidEndTime that has passed), energy costs and pilot EXP. A season in both
 clients is taken from global; one only in CN takes its name and description
 from FAN below. A season's version is the CN patch it opened in: each opens
 with a patch, on the day of that patch's first debut banner (as
@@ -33,6 +33,7 @@ import json
 import os
 import sqlite3
 import sys
+from datetime import date
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from build_banners import CN_STATS, PILOT_SQL, ST_SQL, read_pools  # noqa: E402
@@ -76,6 +77,17 @@ def open_date(con, time_id):
         return None
     y, m, d = (int(x) for x in r[0].split()[0].split('/'))
     return None if y >= UNRELEASED_YEAR else '%04d-%02d-%02d' % (y, m, d)
+
+
+def is_closed(con, l):
+    """Whether a season is closed: its IsClose flag (dropped from the table in 2.4), else an end time that has passed."""
+    if 'IsClose' in l.keys():
+        return bool(l['IsClose'])
+    r = con.execute('SELECT ValidEndTime FROM ConfigDataCommonFuncOpenTimeInfo WHERE ID = ?', (l['OpenTime'],)).fetchone()
+    if not r or not r[0]:
+        return False
+    y, m, d = (int(x) for x in r[0].split()[0].split('/'))
+    return '%04d-%02d-%02d' % (y, m, d) <= date.today().isoformat()
 
 
 def cn_patches(cn, pilots, mechs):
@@ -143,7 +155,7 @@ def main():
         if lid in glob:
             s = season(con, rewards, mechs, glob[lid])
             s['opens'] = open_date(con, glob[lid]['OpenTime'])
-            s['closed'] = bool(s['opens'] and glob[lid]['IsClose'])
+            s['closed'] = bool(s['opens'] and is_closed(con, glob[lid]))
         else:
             l = cn_levels[lid]
             fan = FAN.get(lid)
