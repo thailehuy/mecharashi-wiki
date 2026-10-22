@@ -199,6 +199,9 @@ svg.bi {
   padding-right: 1.5rem;
 }
 
+/* The sidebar's hide arrow: desktop only (below). */
+.nav-collapse { display: none; }
+
 /* Desktop: the drawer is a sticky sidebar under the top bar */
 @media (min-width: 768px) {
   .nav-drawer {
@@ -222,6 +225,30 @@ svg.bi {
   .nav-drawer-item {
     padding: 0.45rem 0.85rem !important;
   }
+  /* The arrow on the sidebar's edge hides it; then it sits at the screen's edge, pointing right, to bring it back. */
+  .nav-collapse {
+    display: flex;
+    position: fixed;
+    top: calc(var(--navbar-h, 0px) + 0.75rem);
+    left: 210px;
+    z-index: 1020;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 36px;
+    padding: 0;
+    border: 1px solid #2a2a4a;
+    border-left: none;
+    border-radius: 0 6px 6px 0;
+    background: #1a1a20;
+    color: #8a8aa8;
+    font-size: 0.75rem;
+    cursor: pointer;
+  }
+  .nav-collapse:hover { color: #e94560; }
+  .site-layout.nav-collapsed .nav-drawer { display: none; }
+  .site-layout.nav-collapsed .nav-collapse { left: 0; }
+  .site-layout.nav-collapsed .nav-collapse .bi { transform: rotate(180deg); }
 }
 
 /* Mobile: hamburger opens the drawer */
@@ -838,18 +865,16 @@ a.weapon-card {
 }
 
 /* ── Pilot detail page ────────────────────────────────────────────── */
+/* Above the page's title, in the content column. */
 .btn-back {
-  position: fixed;
-  top: 4rem;
-  left: 1rem;
   display: inline-block;
+  margin-bottom: 0.5rem;
   color: #7070a0;
   font-size: 0.8rem;
   text-decoration: none;
   background: rgba(15, 15, 15, 0.85);
   padding: 0.25rem 0.6rem;
   border-radius: 4px;
-  z-index: 100;
   transition: color 0.15s;
 }
 .btn-back:hover { color: #e94560; }
@@ -4223,8 +4248,6 @@ a.boss-avatar { display: block; }
 .story-chapter summary { cursor: pointer; list-style: none; margin-bottom: 0; }
 .story-chapter[open] summary { margin-bottom: 0.75rem; }
 .story-chapter-sub { font-size: 0.8rem; color: #8a8aa8; }
-.story-chapter-intro { flex-basis: 100%; margin-top: 0.35rem; font-style: italic; }
-.story-chapter:not([open]) .story-chapter-intro { display: none; }
 .story-stages { display: flex; flex-direction: column; gap: 0.5rem; }
 .story-stage-head { display: flex; flex-wrap: wrap; align-items: center; gap: 0.25rem 0.6rem; }
 .story-stage-code {
@@ -4256,6 +4279,29 @@ a.boss-avatar { display: block; }
 .story-rewards .boss-gear-item img { width: 32px; height: 32px; }
 .story-rewards .story-reward-portrait { object-fit: cover; object-position: top; border-radius: 4px; }
 .story-reward-n { color: #cbd5e1; font-weight: 700; }
+
+/* Story listing: chapters and side stories as cards (the Events page's), a side story's pilot over its picture. */
+.story-card .event-card-img { overflow: hidden; }
+.story-card-bust {
+  position: absolute; left: 0; bottom: 0; height: 115%; width: auto !important; object-fit: contain !important;
+  filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.7));
+}
+.story-card-tagline { display: block; font-size: 0.8rem; font-weight: 400; font-style: italic; color: #a0a0c0; margin-top: 0.1rem; }
+/* A chapter's or side story's page. */
+.story-hero { aspect-ratio: 16 / 7; max-width: 900px; }
+.story-page-intro { font-style: italic; margin-bottom: 1rem; padding: 0.75rem 1rem; }
+.story-page-tagline { display: block; font-style: italic; color: #ffffff; margin-bottom: 0.25rem; }
+.story-stage { scroll-margin-top: 80px; }
+.story-stage-body { display: flex; gap: 0.75rem; align-items: flex-start; margin-top: 0.4rem; }
+.story-stage-body .story-stage-text { margin-top: 0; flex: 1; }
+.story-stage-img { width: 200px; aspect-ratio: 16 / 10; object-fit: cover; border-radius: 6px; border: 1px solid #2a2a4a; flex-shrink: 0; }
+.story-nav { display: flex; justify-content: space-between; gap: 1rem; margin-top: 1.25rem; }
+.story-nav-link { color: #e94560; text-decoration: none; font-weight: 600; }
+.story-nav-link:hover { color: #ffffff; }
+@media (max-width: 576px) {
+  .story-stage-body { flex-direction: column; }
+  .story-stage-img { width: 100%; }
+}
 
 /* A stage's cutscenes: collapsed with their skip summary; opened, the script. */
 .story-scene { margin-top: 0.5rem; border-top: 1px solid #2a2a4a; padding-top: 0.4rem; }

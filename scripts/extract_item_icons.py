@@ -64,7 +64,8 @@ def needed_icons():
             story = json.load(f)
         # Accessories' Icon_skill_* icons are pilot skill icons, already in the assets repo.
         stages = [st for c in story['chapters'] for st in c['stages']] + \
-                 [st for e in story.get('events', []) for p in e['parts'] for st in p['stages']]
+                 [st for e in story.get('events', []) for p in e['parts'] for st in p['stages']] + \
+                 [st for s in story.get('sideStories', []) for st in s['stages']]
         # An event stage with several difficulties lists each one's rewards.
         rewards = [r for st in stages for t in st.get('tiers', [st]) for r in t.get('rewards', [])]
         icons |= {r['icon'] for r in rewards

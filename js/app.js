@@ -27,6 +27,18 @@ $(function () {
   $overlay.on('click', closeDrawer);
   $drawer.on('click', '[data-page]', closeDrawer);
 
+  // Desktop: the arrow on the sidebar's edge hides it (remembered in this browser) and brings it back.
+  function setCollapsed(on) {
+    $('.site-layout').toggleClass('nav-collapsed', on);
+    $('#navCollapse').attr({ 'aria-label': on ? 'Show menu' : 'Hide menu', title: on ? 'Show menu' : 'Hide menu' });
+  }
+  try { setCollapsed(localStorage.getItem('navCollapsed') === '1'); } catch (e) {}
+  $('#navCollapse').on('click', function () {
+    var on = !$('.site-layout').hasClass('nav-collapsed');
+    setCollapsed(on);
+    try { localStorage.setItem('navCollapsed', on ? '1' : '0'); } catch (e) {}
+  });
+
   // Close drawer if viewport grows past mobile breakpoint
   $(window).on('resize', function () {
     if (window.innerWidth >= 768) closeDrawer();
@@ -64,6 +76,12 @@ $(function () {
     clearanceops: function () { return ((window.BossesData || {}).clearance_ops || []).map(function (c) { return c.name; }); },
     // An event's param is its slug; its data loads with the page, so an unknown slug passes through as is.
     events:    function () { return ((window.EventsData || {}).events || []).map(function (e) { return e.slug; }); },
+    elitebattle: function () { return ((window.EliteData || {}).chapters || []).map(function (c) { return c.slug; }); },
+    // A main story chapter's or side story's slug; as for events, an unknown one passes through.
+    story:     function () {
+      var d = window.StoryData || {};
+      return (d.chapters || []).concat(d.sideStories || []).map(function (x) { return x.slug; });
+    },
     modules:   function () {
       var modules = (window.ModulesData || {}).modules || {};
       return Object.keys(modules).map(function (fam) { return modules[fam].name.toLowerCase(); });

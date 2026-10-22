@@ -80,7 +80,7 @@ Pages.events = {
     var story = Pages.story;
     return (
       '<p class="ac-section-footnote story-note">Each stage\'s briefing and cutscenes. See also ' +
-        '<a href="' + App.href('story') + '">Story</a>, with every event\'s story.</p>' +
+        '<a href="' + App.href('story') + '">Story</a>, with the main story and the pilots\' side stories.</p>' +
       s.parts.map(function (p) {
         return (s.parts.length > 1 ? '<div class="story-side-title">' + story._esc(p.name) + '</div>' : '') +
           '<div class="story-stages">' + p.stages.map(function (st) {

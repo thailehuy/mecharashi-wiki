@@ -15,13 +15,24 @@ Skynet tabs: the in-game Skynet encyclopedia (ConfigDataSkynetWikipedia*):
   and the page turns it into a jump link.
 
 Chapters (ConfigDataWorldMapChapterInfo, by ID; its NextChapterId is the
-next chapter's first waypoint): name, subtitle, date (its story-map time
+next chapter's first waypoint): slug (its page, story/<slug>/), name, subtitle, date (its story-map time
 point, WorldMapTimePointInfo: "XC&Apr. 01. 116" -> "XC 116, Apr. 01"; XC is
 the game's "New Era"), intro (DetailDesc) and stages (WorldMapWayPointInfo):
 - MainWayPointIds in order: main stages (Master, "0-1"...), the encounters
   between them (Water) and the chapter's Critical Operation (Rating).
 - BranchWayPointIds: side missions, with the character who gives them.
-DispatchWayPointIds aren't stages of their own (no waypoint rows).
+DispatchWayPointIds aren't stages of their own (no waypoint rows). A stage's
+image is its map screenshot (WayPointRes, "Icon_Map_Desert_Raw"); a chapter's is
+its Critical Operation's, a side story's its first chapter's.
+
+Side stories (ConfigDataPilotMemoryPiecesGroupInfo, a pilot's "Memory Pieces"):
+the pilot (its name is the slug), its tagline, portrait (PilotImagePath's bust) and chapters
+(PilotMemoryPieceLevelInfo): number, name, briefing and image (LevelImagePath:
+a map screenshot or a cutscene picture, "UIDialogPic/4_ABS/TEST-304_Raw" ->
+"TEST-304_Raw"). What opens it is its chapters' UnlockCondition: a main stage
+to clear (unlock.stage, a waypoint ID) or a banner starting (banner, the pilot
+gacha pool and its name, and opens, its start date); later chapters may also need the pilot
+at a level (level). Some groups have no condition at all.
 
 Event stories (ConfigDataPlotActivityInfo, one per limited-time event): its
 story level groups (PlotLevelGroupList, plus challenge groups whose stages play
@@ -42,11 +53,11 @@ repeats its text under new IDs, so each distinct text is kept once):
   bosses' and the designers' "Collection Pool" rows.
 Morgana's and Skysweep's (GrowthBossInfo) story is dialogue only; not shown.
 
-Cutscenes: a main or event stage's StartDialogID (before its battle) and
+Cutscenes: a main, event or side story stage's StartDialogID (before its battle) and
 EndDialogID (after) start a chain of ConfigDataDialogueInfo lines (see
 Dialogue). story.json gives each stage its scenes' IDs, line counts and skip
-summaries; the lines go in data/story/dialogue/<ch-ID|ev-ID>.js
-(StoryDialogue), one file per chapter or event, fetched when a cutscene is
+summaries; the lines go in data/story/dialogue/<ch-ID|ev-ID|ss-ID>.js
+(StoryDialogue), one file per chapter, event or side story, fetched when a cutscene is
 opened. Mid-battle dialogue isn't included.
 
 A stage's rewards are its RewardDropId (ConfigDataItemDropInfo): the items the
@@ -63,6 +74,7 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from build_drops import Drops, STATS  # noqa: E402
+from build_pages import slugify  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 HERE = os.path.join(ROOT, 'data', 'story')
@@ -273,7 +285,7 @@ def chapters(con, dialogue):
     for c in con.execute('SELECT * FROM ConfigDataWorldMapChapterInfo ORDER BY ID').fetchall():
         cid = c['ID']
         name = re.sub(r'^Chapter\s*-\s*', 'Chapter ', text(c['NameStrKey_EN']))
-        chapter = {'id': cid, 'name': name, 'title': text(c['DescStrKey_EN'])}
+        chapter = {'id': cid, 'slug': slugify(name), 'name': name, 'title': text(c['DescStrKey_EN'])}
         if cid in times:
             chapter['date'] = date(text(times[cid]['TimeStrKey_EN']))
         if text(c['DetailDescStrKey_EN']):
@@ -293,11 +305,17 @@ def chapters(con, dialogue):
                 st.pop('code', None)
             if st['kind'] == 'side' and text(characters.get(w['CharacterPictureId'])):
                 st['giver'] = text(characters[w['CharacterPictureId']])
+            if text(w['WayPointRes']):
+                st['image'] = text(w['WayPointRes'])
             r = rewards.get(w['RewardDropId'], '%s %s' % (name, st.get('code') or st.get('name')))
             if r:
                 st['rewards'] = r
             dialogue.attach(st, w['StartDialogID'], w['EndDialogID'])
             stages.append(st)
+        # Its picture: the Critical Operation's map (the chapters' first stages often share one), else the first stage's.
+        image = next((st['image'] for st in stages if st['kind'] == 'critical' and st.get('image')), None) or             next((st['image'] for st in stages if st.get('image')), None)
+        if image:
+            chapter['image'] = image
         chapter['stages'] = stages
         out.append(chapter)
     return out
@@ -389,6 +407,60 @@ def events(con, dialogue):
             continue
         by_name[name] = event
         out.append(event)
+    return out
+
+
+def side_stories(con, dialogue):
+    rewards = Rewards(con)
+    times = {r['ID']: r for r in con.execute('SELECT * FROM ConfigDataCommonFuncOpenTimeInfo')}
+    pools = {r['ID']: r for r in con.execute('SELECT ID, OpenTimeId, NameStrKey_EN FROM ConfigDataPilotGachaPoolInfo')}
+    out = []
+    for g in con.execute('SELECT * FROM ConfigDataPilotMemoryPiecesGroupInfo ORDER BY ID').fetchall():
+        pid = str(g['PilotID'])
+        name = rewards.pilots[pid]['name'] if pid in rewards.pilots else text(g['TitleStrKey_EN'])
+        if pid not in rewards.pilots:
+            print('Side story %d: pilot %s not on the wiki' % (g['ID'], pid))
+        story = {'id': g['ID'], 'slug': slugify(name), 'pilot': pid, 'name': name,
+                 'title': clean(text(g['DescStrKey_EN']) or '')}
+        # PilotImagePath "Pilot_10103137A_Raw" is the full art; the page shows its bust (_half).
+        if text(g['PilotImagePath']):
+            story['portrait'] = re.sub(r'_Raw$', '', text(g['PilotImagePath'])) + '_half'
+        stages = []
+        for lid in json.loads(g['Levels'] or '[]'):
+            l = con.execute('SELECT * FROM ConfigDataPilotMemoryPieceLevelInfo WHERE ID = ?', (lid,)).fetchone()
+            if not l:
+                print('%s side story: no level %d' % (name, lid))
+                continue
+            st = {'id': lid, 'kind': 'main', 'code': text(l['Number'])}
+            if text(l['TitleStrKey_EN']):
+                st['name'] = clean(text(l['TitleStrKey_EN']))
+            if text(l['DescriptStrKey_EN']):
+                st['text'] = clean(text(l['DescriptStrKey_EN']))
+            if text(l['LevelImagePath']):
+                st['image'] = text(l['LevelImagePath']).rsplit('/', 1)[-1]
+            for c in json.loads(l['UnlockCondition'] or '[]'):
+                if c['CondType'] == 'ConditionType_MainQuestMapWayPointComplete':
+                    story['unlock'] = {'stage': c['P1']}
+                elif c['CondType'] == 'ConditionType_PilotGachaPoolIsOverStartTime':
+                    pool = pools.get(c['P1'])
+                    t = pool and times.get(pool['OpenTimeId'])
+                    # A banner not yet run on global has a placeholder year (2098).
+                    if t and t['ValidStartTime'] and not t['ValidStartTime'].startswith('209'):
+                        story['opens'] = '%04d-%02d-%02d' % tuple(int(x) for x in t['ValidStartTime'].split()[0].split('/'))
+                    story['banner'] = {'id': c['P1'], 'name': text(pool and pool['NameStrKey_EN'])}
+                elif c['CondType'] == 'ConditionType_PilotReachTheSpecifiedLevel':
+                    st['level'] = c['P2']
+                else:
+                    print('%s side story %s: unknown condition %s' % (name, st['code'], c['CondType']))
+            r = rewards.get(l['RewardDropId'], '%s side story %s' % (name, st['code']))
+            if r:
+                st['rewards'] = r
+            dialogue.attach(st, l['StartDialogID'], l['EndDialogID'])
+            stages.append(st)
+        if stages and stages[0].get('image'):
+            story['image'] = stages[0]['image']
+        story['stages'] = stages
+        out.append(story)
     return out
 
 
@@ -496,8 +568,9 @@ def main():
     dialogue = Dialogue(con)
     chs = chapters(con, dialogue)
     evs = events(con, dialogue)
+    sss = side_stories(con, dialogue)
     bc = border_conflict(con)
-    data = {'world': w, 'chapters': chs, 'events': evs, 'borderConflict': bc}
+    data = {'world': w, 'chapters': chs, 'events': evs, 'sideStories': sss, 'borderConflict': bc}
 
     os.makedirs(HERE, exist_ok=True)
     # One dialogue file per chapter (ch-<id>) and event (ev-<id>), fetched when a cutscene is first opened.
@@ -505,7 +578,8 @@ def main():
     for old in os.listdir(DIALOGUE):
         os.remove(os.path.join(DIALOGUE, old))
     lines = sum(dialogue.write('ch-%d' % c['id'], c['stages']) for c in chs) + \
-        sum(dialogue.write('ev-%d' % e['id'], [s for p in e['parts'] for s in p['stages']]) for e in evs)
+        sum(dialogue.write('ev-%d' % e['id'], [s for p in e['parts'] for s in p['stages']]) for e in evs) + \
+        sum(dialogue.write('ss-%d' % s['id'], s['stages']) for s in sss)
     print('Wrote %s: %d dialogue lines in %d files (%d KB)' % (
         DIALOGUE, lines, len(os.listdir(DIALOGUE)),
         sum(os.path.getsize(os.path.join(DIALOGUE, f)) for f in os.listdir(DIALOGUE)) // 1024))
@@ -516,9 +590,9 @@ def main():
         f.write('window.StoryData = ')
         json.dump(data, f, ensure_ascii=False, separators=(',', ':'))
         f.write(';\n')
-    print('Wrote %s: %d world entries, %d chapters, %d stages, %d events, Border Conflict %d bosses / '
-          '%d encounters / %d discoveries (%d KB)' % (
-              OUT, sum(len(c['entries']) for c in w), len(chs), sum(len(c['stages']) for c in chs), len(evs),
+    print('Wrote %s: %d world entries, %d chapters, %d stages, %d events, %d side stories, Border Conflict %d '
+          'bosses / %d encounters / %d discoveries (%d KB)' % (
+              OUT, sum(len(c['entries']) for c in w), len(chs), sum(len(c['stages']) for c in chs), len(evs), len(sss),
               len(bc['bosses']), len(bc['encounters']), len(bc['discoveries']), os.path.getsize(OUT_JS) // 1024))
 
 

@@ -1383,9 +1383,11 @@
   "chapters": [
     {
       "id": 1,
+      "slug": "chapter-0",
       "name": "Chapter 0",
       "title": "7th Mobile Squad File",
       "date": "XC 116, Apr. 01",
+      "image": "Icon_Map_Mine_Raw",
       "stages": [
         {
           "id": 1,
@@ -1394,6 +1396,7 @@
           "name": "The Beginning",
           "location": "Large Mine Pit",
           "text": "ST mercenary Kaidan Newman receives a distress call from the UNCS while operating in Milkhama.",
+          "image": "Icon_Map_Mine_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -1432,6 +1435,7 @@
           "name": "Substitutes",
           "location": "Grayrock Garrison",
           "text": "Kaidan rescues UNCS West Milkhama Viceroy Blair Bluecher. The Viceroy's invitation to join the Armored Corps beckons like a fresh start.",
+          "image": "Icon_Map_BaseCliff_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -1462,6 +1466,7 @@
           "name": "Welcome Party",
           "location": "Suburban Hangar",
           "text": "A new life brings new missions. First, Kaidan must locate the mysterious machinist on his team roster.",
+          "image": "Icon_Map_Base_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -1499,6 +1504,7 @@
           "name": "A Maze for Rats",
           "location": "Eastern New Town",
           "text": "7th Mobile Squad locked and loaded. With missile support, this strike will be perfect.",
+          "image": "Icon_Map_City_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -1541,6 +1547,7 @@
           "name": "Interception",
           "location": "Rokusta Desert",
           "text": "The Ashes strike hard. At the stronghold's edge, a bipedal Titan-class ST called \"Tonatiuh\" awaits.",
+          "image": "Icon_Map_Desert_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -1574,9 +1581,11 @@
     },
     {
       "id": 2,
+      "slug": "chapter-i",
       "name": "Chapter I",
       "title": "Sinking in Sunset Valley",
       "date": "XC 116, Apr. 09",
+      "image": "Icon_Map_Harbor_Raw",
       "stages": [
         {
           "id": 106,
@@ -1585,6 +1594,7 @@
           "name": "Medical Waste",
           "location": "Laboratory",
           "text": "Kaidan wakes in a hidden lab, mind racing with questions. Only one thing matters now—survival.",
+          "image": "Icon_Map_Lab_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -1627,6 +1637,7 @@
           "name": "Breakout",
           "location": "Western Oil Well",
           "text": "We need supplies, Grant eyes the empty worker camp at the crude station. A perfect chance?",
+          "image": "Icon_Map_DesertOilStation_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -1676,6 +1687,7 @@
           "name": "Full-Band Jamming",
           "location": "Vehicle Parking Station",
           "text": "With Rosa's help, ST Kaidan's team flees the lab, their path now a one-way road. Seeking answers, they press forward, an unexpected ally awaits.",
+          "image": "Icon_Map_Desert_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -1735,6 +1747,7 @@
           "name": "Bitter Battle",
           "location": "Northern Construction Zone",
           "text": "Finding Valkyrie in White Maple is urgent, but should we first neutralize potential UNCS reinforcements?",
+          "image": "Icon_Map_DesertOilStation_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -1793,6 +1806,7 @@
           "name": "Valkyrie's End",
           "location": "New Town",
           "text": "Following Rosa's trail to White Maple, Kaidan's team seeks answers but instead witness the Valkyrie's last stand.",
+          "image": "Icon_Map_City_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -1847,6 +1861,7 @@
           "name": "Escape",
           "location": "Refugee Town",
           "text": "Sunset Valley is ahead. The calm before the storm...",
+          "image": "Icon_Map_RustTown_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -1907,6 +1922,7 @@
           "name": "Detonation Code",
           "location": "Crude Station",
           "text": "Sand, stone, and ST vapor trails fill the air. Kaidan decides to end this chase with one final, explosive display.",
+          "image": "Icon_Map_Desert_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -1960,6 +1976,7 @@
           "id": 199,
           "kind": "critical",
           "name": "Getting Started",
+          "image": "Icon_Map_Harbor_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -2007,10 +2024,12 @@
     },
     {
       "id": 3,
+      "slug": "chapter-ii",
       "name": "Chapter II",
       "title": "GKD-Style Accident",
       "date": "XC 118, Apr. 12",
       "intro": "Luxurious interiors, casinos that never sleep, dazzling neon lights... Strangers stand on the streets, eyes half-smirking as they size up passersby, identifying them in an instant.\nThe air is damp and mixed with the smell of blood, engine oil, and sweat. This is a place that neither the police nor the military wishes to enter.\nThis is the Northwest Jungle, the α ore smuggler's paradise.",
+      "image": "Icon_Map_Base_Raw",
       "stages": [
         {
           "id": 201,
@@ -2019,6 +2038,7 @@
           "name": "Seven Hundred and Thirty-One Days",
           "location": "Countryside Military Warehouse",
           "text": "Two years pass. The elite squad vanishes, replaced by GKD Parcel Service—a seemingly legitimate freight company.",
+          "image": "Icon_Map_Base_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -2071,6 +2091,7 @@
           "kind": "encounter",
           "name": "Encounter",
           "text": "UNCS blockades Sunstrider Plains. Only option: break through.",
+          "image": "Icon_Map_TollStation_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -2116,6 +2137,7 @@
           "kind": "encounter",
           "name": "Encounter",
           "text": "Target's close, but UNCS forces guard the only path...",
+          "image": "Icon_Map_City_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -2162,6 +2184,7 @@
           "name": "Outsourcing Order",
           "location": "Collapsed Road",
           "text": "UNCS troops hunt a target, the same one Kaidan seeks. Who says a proper logistics company can't bend the rules? With no witnesses, everything stays legal.",
+          "image": "Icon_Map_HighWay_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -2208,6 +2231,7 @@
           "kind": "encounter",
           "name": "Incursion",
           "text": "Take out the leader and the rest will follow. Classic strategy.",
+          "image": "Icon_Map_HighWay_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -2247,6 +2271,7 @@
           "kind": "encounter",
           "name": "Encounter",
           "text": "UNCS troops track Kaidan's squad to a resupply stop.",
+          "image": "Icon_Map_RustTown_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -2299,6 +2324,7 @@
           "name": "Out-of-Syllabus Topic",
           "location": "Suburban Toll Station",
           "text": "A familiar checkpoint looms ahead. Their usual method fails - the \"cargo\" faces strict inspection. Dana stands face-to-face with an old acquaintance who now controls the post.",
+          "image": "Icon_Map_TollStation_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -2353,6 +2379,7 @@
           "kind": "encounter",
           "name": "Encounter",
           "text": "Security teams always appear when GKD runs low on supplies.",
+          "image": "Icon_Map_Desert_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -2398,6 +2425,7 @@
           "kind": "encounter",
           "name": "Encounter",
           "text": "The abandoned port lies ahead, but scattered patrol units block their path through the city.",
+          "image": "Icon_Map_City_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -2450,6 +2478,7 @@
           "name": "Generator Action",
           "location": "Abandoned Industrial Port",
           "text": "From its founding onward, Kadrey's old port drove the city's growth for decades. Now only uninvited guests and a waiting cargo ship visit these abandoned docks.",
+          "image": "Icon_Map_Harbor_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -2501,6 +2530,7 @@
           "kind": "encounter",
           "name": "Encounter",
           "text": "Coastal STs threaten to sink the TINA.",
+          "image": "Icon_Map_Harbor_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -2540,6 +2570,7 @@
           "kind": "encounter",
           "name": "Encounter",
           "text": "Fuel's critical! Time to risk a run to the harbor.",
+          "image": "Icon_Map_Harbor_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -2586,6 +2617,7 @@
           "name": "Longest Day",
           "location": "Coastal Road",
           "text": "A damaged vessel runs aground near Kadrey's northern coast. Despite his tactical expertise, Kaidan must face the NDF STs head-on.",
+          "image": "Icon_Map_HighWay_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -2640,6 +2672,7 @@
           "kind": "encounter",
           "name": "Evacuation",
           "text": "Know your limits. There's no shame in retreat when outmatched.",
+          "image": "Icon_Map_RustTown_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -2679,6 +2712,7 @@
           "kind": "encounter",
           "name": "Encounter",
           "text": "Enemies closing in from all sides. How far out are our reinforcements?",
+          "image": "Icon_Map_TollStation_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -2731,6 +2765,7 @@
           "name": "Pure Nostalgia",
           "location": "Armed Town",
           "text": "The team clears the tunnel to find their backup waiting. Kaidan never imagined he'd meet the Ashes again as allies on the battlefield.",
+          "image": "Icon_Map_ChaosTown_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -2777,6 +2812,7 @@
           "kind": "encounter",
           "name": "Encounter",
           "text": "Long time no see. Marcus gives Kaidan a hands-on demo of his survival skills.",
+          "image": "Icon_Map_DesertOilStation_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -2816,6 +2852,7 @@
           "kind": "encounter",
           "name": "Evacuation",
           "text": "Enemy vanguard's not dug in yet. Perfect time to strike?",
+          "image": "Icon_Map_Base_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -2862,6 +2899,7 @@
           "name": "Temporary Alliance",
           "location": "Mountain Foot Mine",
           "text": "The rebels and a logistics crew gather in a mine pit, plotting against special forces STs. As pursuers close in and ambushers take position, the Titan rises again on the horizon.",
+          "image": "Icon_Map_Mine_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -2921,6 +2959,7 @@
           "id": 299,
           "kind": "critical",
           "name": "Embers in the Haze",
+          "image": "Icon_Map_Base_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -2970,6 +3009,7 @@
           "name": "Cooperative Intent",
           "text": "GKD? Are they as legendary as they say?",
           "giver": "Gregory",
+          "image": "Icon_Map_Area_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -2997,6 +3037,7 @@
           "name": "General citizens",
           "text": "Excuse me... is this GKD?",
           "giver": "Pip",
+          "image": "Icon_Map_TollStation_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -3024,6 +3065,7 @@
           "name": "Been a while",
           "text": "Grant! Help me, quick!",
           "giver": "Wright",
+          "image": "Icon_Map_Base_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -3049,10 +3091,12 @@
     },
     {
       "id": 4,
+      "slug": "chapter-iii",
       "name": "Chapter III",
       "title": "Silent Foren River",
       "date": "XC 118, May. 03",
       "intro": "The battle for revenge is over, but the truth of the past has only just begun to surface...\nThe clues left between the present and memories stretch toward the Dawnstar League.",
+      "image": "Icon_Map_Desert_Raw",
       "stages": [
         {
           "id": 301,
@@ -3061,6 +3105,7 @@
           "name": "Supply Delivery",
           "location": "Sand Town",
           "text": "The logistics company seeks old allies at the border, stumbling onto a tense delivery. GKD's boss, veteran of such scenarios, steps in personally.",
+          "image": "Icon_Map_Desert_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -3113,6 +3158,7 @@
           "kind": "encounter",
           "name": "Encounter",
           "text": "UNCS patrols lurk at every turn...",
+          "image": "Icon_Map_Desert_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -3152,6 +3198,7 @@
           "kind": "encounter",
           "name": "Incursion",
           "text": "Kaidan scouts the blockade perimeter...",
+          "image": "Icon_Map_RustTown_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -3204,6 +3251,7 @@
           "name": "Border Vibe Crew",
           "location": "Chiba Desert",
           "text": "Someone deliberately stirs chaos in the border region. Kaidan must catch the troublemaker before civilian life unravels.",
+          "image": "Icon_Map_ChaosTown_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -3252,6 +3300,7 @@
           "kind": "encounter",
           "name": "Encounter",
           "text": "Labs within labs. Milkhama: one giant experiment...",
+          "image": "Icon_Map_Desert_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -3291,6 +3340,7 @@
           "kind": "encounter",
           "name": "Encounter",
           "text": "Unlike STs, humans forge ahead!",
+          "image": "Icon_Map_Base_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -3337,6 +3387,7 @@
           "name": "Double Standard",
           "location": "Takagaki Desert",
           "text": "Not all efforts yield equal rewards, especially for true Milkhamans. Yet Kaidan's persistence uncovers intel on the enhanced girls, likely held in a border lab.",
+          "image": "Icon_Map_Lab_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -3377,6 +3428,7 @@
           "kind": "encounter",
           "name": "Encounter",
           "text": "Kaidan squad's and Gumusiay trap their hunters. Now there is no escape...",
+          "image": "Icon_Map_HighWay_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -3416,6 +3468,7 @@
           "kind": "encounter",
           "name": "Annihilation",
           "text": "Battle bonds forge the strongest allies.",
+          "image": "Icon_Map_Base_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -3468,6 +3521,7 @@
           "name": "Survival of the Fittest",
           "location": "Abandoned Base 106",
           "text": "One-on-one combat demands courage, but strategic retreat shows wisdom. The clown's challenge seems calculated—hopefully, Kaidan came prepared.",
+          "image": "Icon_Map_ChaosTown_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -3516,6 +3570,7 @@
           "kind": "encounter",
           "name": "Encounter",
           "text": "Misdirection—the simplest trap...",
+          "image": "Icon_Map_Desert_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -3555,6 +3610,7 @@
           "kind": "encounter",
           "name": "Encounter",
           "text": "The enemy of my enemy is my friend.",
+          "image": "Icon_Map_ChaosTown_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -3601,6 +3657,7 @@
           "name": "Together in Precision",
           "location": "Frontline Garrison",
           "text": "The refugees plan to break through toward the DL. No machinist could build transport for so many so quickly... unless they stake their pride against another genius.",
+          "image": "Icon_Map_Desert_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -3647,6 +3704,7 @@
           "kind": "encounter",
           "name": "Head-On",
           "text": "Sylvie hatches a plan before the breach...",
+          "image": "Icon_Map_Desert_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -3686,6 +3744,7 @@
           "kind": "encounter",
           "name": "Encounter",
           "text": "Exhaust the enemy, preserve yourself...",
+          "image": "Icon_Map_ChaosTown_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -3732,6 +3791,7 @@
           "name": "Breakout",
           "location": "Broken Bridge over Foren River",
           "text": "After regrouping, the plan crystallizes—elite forces breach the blockade before the refugee convoy moves. As UNCS forces crumble, the blockade commander receives orders from a mysterious superior.",
+          "image": "Icon_Map_Bridge_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -3786,6 +3846,7 @@
           "kind": "encounter",
           "name": "Evacuation",
           "text": "Doors sealed. Throttle maxed. Push it!",
+          "image": "Icon_Map_Base_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -3825,6 +3886,7 @@
           "kind": "encounter",
           "name": "Encounter",
           "text": "The urgent path draws the most trouble...",
+          "image": "Icon_Map_TollStation_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -3876,6 +3938,7 @@
           "code": "3-7",
           "name": "Pedal to the Metal!",
           "text": "The flanking strategy fails. Viceroy Blair arrives personally as border forces prepare to clash. No retreat now—full throttle toward the far shore.",
+          "image": "Icon_Map_Bridge_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -3929,6 +3992,7 @@
           "id": 399,
           "kind": "critical",
           "name": "Sympathy of the Sands",
+          "image": "Icon_Map_Desert_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -3984,6 +4048,7 @@
           "name": "Border Refugees",
           "text": "Who will save us...?",
           "giver": "Refugee",
+          "image": "Icon_Map_RustTown_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -4011,6 +4076,7 @@
           "name": "Nostalgic Games",
           "text": "Anyone playing this old game still?",
           "giver": "Hong",
+          "image": "Icon_Map_ChaosTown_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -4038,6 +4104,7 @@
           "name": "Survival Training",
           "text": "Our destiny is in our own hands!",
           "giver": "Berguzar",
+          "image": "Icon_Map_RustTown_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -4065,6 +4132,7 @@
           "name": "Into the New World",
           "text": "Just watch, I'll be a better bounty hunter than Kaidan Newman!",
           "giver": "Pip",
+          "image": "Icon_Map_Lab_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -4090,10 +4158,12 @@
     },
     {
       "id": 5,
+      "slug": "chapter-iv",
       "name": "Chapter IV",
       "title": "Transnational Business",
       "date": "XC 118, Jun. 10",
       "intro": "The physical blockade has been broken, but an intangible barrier still lingers in Kaidan's heart.\nHopefully, the journey to the Dawnstar League will finally bring answers to the questions that have long weighed on him.",
+      "image": "Icon_Map_ChaosTown_Raw",
       "stages": [
         {
           "id": 401,
@@ -4101,6 +4171,7 @@
           "code": "4-1",
           "name": "\"Nova\" Clues",
           "text": "Inside DL territory, Cicero's first task is testing Kaidan's brainwaves. This routine scan reveals secrets about his foster father Dr. Newman and the Nova-Frame.",
+          "image": "Icon_Map_Lab_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -4143,6 +4214,7 @@
           "kind": "encounter",
           "name": "Encounter",
           "text": "Cicero demands more. Kaidan faces another Hyper-Aptamer trial...",
+          "image": "Icon_Map_Lab_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -4176,6 +4248,7 @@
           "kind": "encounter",
           "name": "Annihilation",
           "text": "During endless tests, Kaidan wonders how Rosa and the Epiphyllum endured.",
+          "image": "Icon_Map_RustTown_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -4221,6 +4294,7 @@
           "code": "4-2",
           "name": "Simple Surgery Training",
           "text": "A UNCS tracker in the Epiphyllum girl hampers movement. Cicero promises to help Emily remove it, but surgery risks complications.",
+          "image": "Icon_Map_Area_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -4267,6 +4341,7 @@
           "kind": "encounter",
           "name": "Encounter",
           "text": "GKD Squad meets hostile mercs in East Coast Oasis neutral zone...",
+          "image": "Icon_Map_Desert_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -4300,6 +4375,7 @@
           "kind": "encounter",
           "name": "Incursion",
           "text": "Advanced tech or black market prototype?",
+          "image": "Icon_Map_RustTown_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -4339,6 +4415,7 @@
           "code": "4-3",
           "name": "Speed Race",
           "text": "The surgery is a success, but the UNCS's pursuit continues. GKD runs interference with the removed tracker on the eastern border. Can they match their Northwest Jungle speed record in this alien desert?",
+          "image": "Icon_Map_RustTown_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -4387,6 +4464,7 @@
           "kind": "encounter",
           "name": "Encounter",
           "text": "Undisciplined mercs are one thing. Elite Electric Eels hunting GKD Squad is another.",
+          "image": "Icon_Map_RustTown_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -4420,6 +4498,7 @@
           "kind": "encounter",
           "name": "Head-On",
           "text": "Electric Eel's retreat poses no fatal threat, yet harasses GKD operations.",
+          "image": "Icon_Map_TollStation_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -4465,6 +4544,7 @@
           "code": "4-4",
           "name": "Rock 'n' Roll",
           "text": "After bidding farewell to the Electric Eel, Kaidan heads off to meet Cicero. Danger lurks in the darkness around Thepia City.",
+          "image": "Icon_Map_City_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -4517,6 +4597,7 @@
           "kind": "encounter",
           "name": "Encounter",
           "text": "En route to Cicero's lab, mysterious snipers ambush Kaidan's team.",
+          "image": "Icon_Map_Desert_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -4550,6 +4631,7 @@
           "kind": "encounter",
           "name": "Evacuation",
           "text": "Mystery forces slow GKD's advance. Trouble at Cicero's lab?",
+          "image": "Icon_Map_DesertOilStation_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -4595,6 +4677,7 @@
           "code": "4-5",
           "name": "Shadow Predator",
           "text": "Kaidan reaches Cicero's lab to find only ruins...",
+          "image": "Icon_Map_Lab_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -4643,6 +4726,7 @@
           "kind": "encounter",
           "name": "Annihilation",
           "text": "Bella's refugees arrive just in time to repel Dawnstar's pursuit.",
+          "image": "Icon_Map_ChaosTown_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -4676,6 +4760,7 @@
           "kind": "encounter",
           "name": "Encounter",
           "text": "With Sylvie and Cicero dark, Kaidan heads to the refugee base to plan.",
+          "image": "Icon_Map_TollStation_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -4721,6 +4806,7 @@
           "code": "4-6",
           "name": "Angel Investor",
           "text": "Why does the GSA, UNCS's secretive intelligence agency, court GKD? \"Trust reality if not me,\" says intel officer Naomi.",
+          "image": "Icon_Map_City_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -4774,6 +4860,7 @@
           "id": 498,
           "kind": "critical",
           "name": "Divided Battles",
+          "image": "Icon_Map_ChaosTown_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -4829,6 +4916,7 @@
           "name": "Regular Business",
           "text": "Words fail me...",
           "giver": "Marcus",
+          "image": "Icon_Map_City_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -4856,6 +4944,7 @@
           "name": "ST Challenge",
           "text": "Welcome to the ST Challenge by SEED Manufacturing!",
           "giver": "SEED Employee",
+          "image": "Icon_Map_ChaosTown_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -4883,6 +4972,7 @@
           "name": "Fast & Fervid",
           "text": "Emergency! Located Dr. Derek's private lab.",
           "giver": "Naomi",
+          "image": "Icon_Map_Area_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -4910,6 +5000,7 @@
           "name": "The Mole",
           "text": "The fox shows its tail!",
           "giver": "Naomi",
+          "image": "Icon_Map_City_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -4937,6 +5028,7 @@
           "name": "A Novel Experiment",
           "text": "Genius hacker Naomi controls two STs but must play AI to complete experimental protocols.",
           "giver": "Naomi",
+          "image": "Icon_Map_Lab_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -4962,10 +5054,12 @@
     },
     {
       "id": 6,
+      "slug": "chapter-v",
       "name": "Chapter V",
       "title": "Barely Light",
       "date": "XC 118, Jun. 28",
       "intro": "The GSA's assistance help shines like a beacon, but its faint light is still not enough to dispel the clouds hanging over the island.\nBefore facing the looming giant behind the mist, the GKD Squad must rescue their allies caught in the same fate.",
+      "image": "Icon_Map_Harbor_Raw",
       "stages": [
         {
           "id": 501,
@@ -4973,6 +5067,7 @@
           "code": "5-1",
           "name": "Catch Me If You Can",
           "text": "The unstoppable Epiphyllum girls finally meet their match. What force could overcome these enhanced humans?",
+          "image": "Icon_Map_BaseCliff_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -5021,6 +5116,7 @@
           "kind": "encounter",
           "name": "Evacuation",
           "text": "Obsidian's mercenaries hunt more aggressively than the UNCS forces, boxing in Kaidan's team.",
+          "image": "Icon_Map_City_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -5060,6 +5156,7 @@
           "kind": "encounter",
           "name": "Encounter",
           "text": "Kaidan clearly underestimated Obsidian. They were only waiting for the perfect ambush point.",
+          "image": "Icon_Map_Bridge_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -5105,6 +5202,7 @@
           "code": "5-2",
           "name": "Escorting Civilians",
           "text": "Naomi helps GKD rescue the rest of the Epiphyllum—but their leader, Sylvie, falls covering their escape. The same fate befalls countless refugees struggling to survive in East Milkhama.",
+          "image": "Icon_Map_RustTown_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -5147,6 +5245,7 @@
           "kind": "encounter",
           "name": "Encounter",
           "text": "On the road to Port Kelvin, expect the unexpected...",
+          "image": "Icon_Map_City_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -5186,6 +5285,7 @@
           "kind": "encounter",
           "name": "Encounter",
           "text": "Refugee hero Kaidan finds himself fielding constant pleas for help...",
+          "image": "Icon_Map_Desert_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -5225,6 +5325,7 @@
           "code": "5-3",
           "name": "Fish or Fisherman?",
           "text": "Sylvie's missing from the convoy. What does Obsidian want with her? Kaidan hurries, hoping no ambush awaits at Port Kelvin.",
+          "image": "Icon_Map_Harbor_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -5271,6 +5372,7 @@
           "kind": "encounter",
           "name": "Incursion",
           "text": "Sylvie's prison stay has earned her a \"friend.\" It's time for a visit.",
+          "image": "Icon_Map_Harbor_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -5304,6 +5406,7 @@
           "kind": "encounter",
           "name": "Annihilation",
           "text": "Sylvie's mission—destroy Obsidian's Kelvin lab before extraction...",
+          "image": "Icon_Map_Lab_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -5349,6 +5452,7 @@
           "code": "5-4",
           "name": "In This Free Land",
           "text": "A dark truth lies behind Obsidian's pristine public image: hideous experiments on human subjects. And now the DL joins the hunt. Faced with police blockades and Catherine's unhinged pursuit, how will GKD escape?",
+          "image": "Icon_Map_HighWay_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -5397,6 +5501,7 @@
           "kind": "encounter",
           "name": "Encounter",
           "text": "While resupplying en route, Kaidan and his squad are interrupted by unwelcome familiar faces...",
+          "image": "Icon_Map_ChaosTown_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -5430,6 +5535,7 @@
           "kind": "encounter",
           "name": "Annihilation",
           "text": "Waterways hide their own dangers...",
+          "image": "Icon_Map_Bridge_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -5475,6 +5581,7 @@
           "code": "5-5",
           "name": "Parity",
           "text": "Raw power alone won't defeat the final enemy. Kaidan must now choose: old friends or new allies. But first, he needs to avoid killing Arnold in the talks.",
+          "image": "Icon_Map_Base_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -5528,6 +5635,7 @@
           "id": 598,
           "kind": "critical",
           "name": "Peace Deposit",
+          "image": "Icon_Map_Harbor_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -5575,6 +5683,7 @@
           "name": "Fireworks Festival",
           "text": "They're late... Where are they?!",
           "giver": "Berguzar",
+          "image": "Icon_Map_RustTown_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -5602,6 +5711,7 @@
           "name": "Dusty Memories",
           "text": "In Milkhama, everyone has their price.",
           "giver": "Gregory",
+          "image": "Icon_Map_Harbor_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -5629,6 +5739,7 @@
           "name": "Spot Check",
           "text": "Don't bury yourself in work. Take a break sometimes.",
           "giver": "Grant",
+          "image": "Icon_Map_Area_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -5656,6 +5767,7 @@
           "name": "Weighty Duty",
           "text": "Stuart's first lab task: scrap ST cleanup. Helping Mr. Winston—every researcher's honor.",
           "giver": "Winston",
+          "image": "Icon_Map_Lab_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -5683,6 +5795,7 @@
           "name": "The Guard's Day Off",
           "text": "Each second drags till shift end...",
           "giver": "Gareth",
+          "image": "Icon_Map_TollStation_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -5710,6 +5823,7 @@
           "name": "Rescue in Peril",
           "text": "Comms catch distress call. AI ST \"G-force\" needs help.",
           "giver": "Naomi",
+          "image": "Icon_Map_Area_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -5728,10 +5842,12 @@
     },
     {
       "id": 7,
+      "slug": "chapter-vi",
       "name": "Chapter VI",
       "title": "Faded Remnants",
       "date": "XC 118, Aug. 10",
       "intro": "The UNCS military is determined to reignite war on this island.\nKaidan's return to West Milkhama is essential to locating the key individual who can resolve the current situation.",
+      "image": "Icon_Map_Lab_Raw",
       "stages": [
         {
           "id": 601,
@@ -5739,6 +5855,7 @@
           "code": "6-1",
           "name": "Tea Party",
           "text": "The plan to topple Blair involves a key shadow player, and once martial law is in place, moving freely through West Milkhama will require support from the local oligarch.",
+          "image": "Icon_Map_DesertOilStation_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -5787,6 +5904,7 @@
           "kind": "encounter",
           "name": "Encounter",
           "text": "GKD Squad marked entering West Milkhama...",
+          "image": "Icon_Map_City_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -5826,6 +5944,7 @@
           "kind": "encounter",
           "name": "Incursion",
           "text": "Caught between orders and mercy? Stage your defeat.",
+          "image": "Icon_Map_Desert_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -5865,6 +5984,7 @@
           "code": "6-2",
           "name": "On Your Left, Buddy!",
           "text": "Giving up the easy life takes guts, especially on this troubled island. This earns the retreating Ashes Kaidan's trust—well, more than that moody school girl, at least...",
+          "image": "Icon_Map_Desert_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -5905,6 +6025,7 @@
           "kind": "encounter",
           "name": "Encounter",
           "text": "Kaidan and Marcus unite against the UNCS encirclement...",
+          "image": "Icon_Map_HighWay_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -5938,6 +6059,7 @@
           "kind": "encounter",
           "name": "Annihilation",
           "text": "Trapped prey at the hunter's mercy...",
+          "image": "Icon_Map_ChaosTown_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -5977,6 +6099,7 @@
           "code": "6-3",
           "name": "Ticket to Hell",
           "text": "To rescue his comrades and uncover new leads, Kaidan joins Marcus to raid William's NDF base. Everything's the same as it used to be, yet different at the same time...",
+          "image": "Icon_Map_Desert_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -6019,6 +6142,7 @@
           "kind": "encounter",
           "name": "Encounter",
           "text": "STs dominate the field, but warriors decide the battle...",
+          "image": "Icon_Map_RustTown_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -6052,6 +6176,7 @@
           "kind": "encounter",
           "name": "Evacuation",
           "text": "Curiosity draws blood...",
+          "image": "Icon_Map_Lab_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -6091,6 +6216,7 @@
           "code": "6-4",
           "name": "Unexpected Guests",
           "text": "Inside the base, Kaidan finds Winston Gresham's trail. Hopefully no unwanted interruptions during the researcher hunt.",
+          "image": "Icon_Map_Base_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -6133,6 +6259,7 @@
           "kind": "encounter",
           "name": "Head-On",
           "text": "Crush counter-attack forces before the second wave...",
+          "image": "Icon_Map_Lab_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -6166,6 +6293,7 @@
           "kind": "encounter",
           "name": "Encounter",
           "text": "Enemy reinforcements staggered. This is our chance.",
+          "image": "Icon_Map_Harbor_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -6211,6 +6339,7 @@
           "code": "6-5",
           "name": "Shadow of the Past",
           "text": "The Ashes show their true colors as the mystery ST strikes again. What must Kaidan sacrifice to save old friends?",
+          "image": "Icon_Map_ChaosTown_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -6251,6 +6380,7 @@
           "kind": "encounter",
           "name": "Encounter",
           "text": "Rosa's trail is still guarded by scattered resistance...",
+          "image": "Icon_Map_Lab_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -6284,6 +6414,7 @@
           "kind": "encounter",
           "name": "Pursue and Attack",
           "text": "Enemy intel there for the taking...",
+          "image": "Icon_Map_Desert_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -6323,6 +6454,7 @@
           "code": "6-6",
           "name": "Duel!",
           "text": "Rosa flees endless pursuers. Joining up with the Ashes is the only option left. The one who can pilot the Titan will be Kaidan's strongest ally in the struggle ahead.",
+          "image": "Icon_Map_DesertFactory_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -6382,6 +6514,7 @@
           "id": 698,
           "kind": "critical",
           "name": "Scattered Epiphyllum",
+          "image": "Icon_Map_Lab_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -6429,6 +6562,7 @@
           "name": "ST Exhibition Match",
           "text": "This ST exhibition match brings fresh ideas. It's up to you to help Doll Trading secure those contracts.",
           "giver": "Alyson",
+          "image": "Icon_Map_Bridge_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -6456,6 +6590,7 @@
           "name": "AI Crisis",
           "text": "What the hell!",
           "giver": "Alyson",
+          "image": "Icon_Map_Lab_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -6483,6 +6618,7 @@
           "name": "Misdirection",
           "text": "Boss, we've got business.",
           "giver": "Alyson",
+          "image": "Icon_Map_Bridge_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -6510,6 +6646,7 @@
           "name": "The Proper Way",
           "text": "The raw ore arrives today, so do the Boa bandits. We must protect our precious minerals!",
           "giver": "UNCS Captain",
+          "image": "Icon_Map_Bridge_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -6537,6 +6674,7 @@
           "name": "Suffocation Space",
           "text": "Friend, the Ashes need your help.",
           "giver": "Yevgeny",
+          "image": "Icon_Map_ChaosTown_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -6562,10 +6700,12 @@
     },
     {
       "id": 8,
+      "slug": "chapter-vii",
       "name": "Chapter VII",
       "title": "Extinguished & Rekindled",
       "date": "XC 118, Sep. 01",
       "intro": "A storm is coming, and the wavering Milkhama stands as a lone island adrift in the tides of information. The GKD Squad must rally the voices of the entire island, calling forth a new hope for peace.",
+      "image": "Icon_Map_RustTown_Raw",
       "stages": [
         {
           "id": 701,
@@ -6573,6 +6713,7 @@
           "code": "7-1",
           "name": "Outstanding Bills",
           "text": "Milkhama's under lockdown and reaching Arnold seems impossible. In this restrictive environment, is any group besides the UNCS still able to stretch their legs...?",
+          "image": "Icon_Map_Desert_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -6621,6 +6762,7 @@
           "kind": "encounter",
           "name": "Encounter",
           "text": "Obsidian squads block the path to Arnold's hideout...",
+          "image": "Icon_Map_RustTown_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -6654,6 +6796,7 @@
           "kind": "encounter",
           "name": "Encounter",
           "text": "Life mocks plans. Kaidan's team faces another siege...",
+          "image": "Icon_Map_Base_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -6693,6 +6836,7 @@
           "code": "7-2",
           "name": "Anti-Tracking Skills",
           "text": "The council's strike against the military has begun. With sufficient proof, countless hands will tear Blair down of his Viceroy's seat. But first, Kaidan must find the intelligence officer being shadowed by \"the villain\".",
+          "image": "Icon_Map_City_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -6735,6 +6879,7 @@
           "kind": "encounter",
           "name": "Encounter",
           "text": "Electric Eels close in on Natalia's informant. Protection is the priority...",
+          "image": "Icon_Map_RustTown_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -6762,6 +6907,7 @@
           "kind": "encounter",
           "name": "Encounter",
           "text": "Milkhama's too hot. Escort the informant off-island...",
+          "image": "Icon_Map_Harbor_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -6801,6 +6947,7 @@
           "code": "7-3",
           "name": "Intrusion",
           "text": "Intelligence officers must suspect everyone, especially an enemy's sole heir. When Raven requests private time with Arnold, Natalia seeks answers elsewhere.",
+          "image": "Icon_Map_BaseCliff_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -6841,6 +6988,7 @@
           "kind": "encounter",
           "name": "Encounter",
           "text": "UNCS reinforcements inbound. Time to change their minds...",
+          "image": "Icon_Map_HighWay_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -6868,6 +7016,7 @@
           "kind": "encounter",
           "name": "Encounter",
           "text": "Kaidan trips base defenses seeking Natalia...",
+          "image": "Icon_Map_Base_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -6907,6 +7056,7 @@
           "code": "7-4",
           "name": "Secret Informer",
           "text": "Inside the NDF base, Kaidan finds Natalia under siege by security...",
+          "image": "Icon_Map_Lab_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -6955,6 +7105,7 @@
           "kind": "encounter",
           "name": "Encounter",
           "text": "Obsidian blocks the only escape route...",
+          "image": "Icon_Map_ChaosTown_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -6988,6 +7139,7 @@
           "kind": "encounter",
           "name": "Encounter",
           "text": "GKD Squad's water escape is thwarted by Obsidian's port defense...",
+          "image": "Icon_Map_Harbor_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -7027,6 +7179,7 @@
           "code": "7-5",
           "name": "The Mole",
           "text": "Raven moves against Arnold, but the NDF's Valkyrie stands guard...",
+          "image": "Icon_Map_Base_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -7061,6 +7214,7 @@
           "kind": "encounter",
           "name": "Encounter",
           "text": "Epiphyllum girls sow chaos in the UNCS base...",
+          "image": "Icon_Map_BaseCliff_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -7088,6 +7242,7 @@
           "kind": "encounter",
           "name": "Encounter",
           "text": "UNCS locks Mouty Mountains. Hong and Emily must breach to reach Sylvie.",
+          "image": "Icon_Map_ChaosTown_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -7127,6 +7282,7 @@
           "code": "7-6",
           "name": "Peace Memorial Day",
           "text": "With impeachment channels blocked and Arnold set to speak at the Border War Memorial, Kaidan stands against Blair—a man who shows no mercy.",
+          "image": "Icon_Map_City_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -7186,6 +7342,7 @@
           "id": 798,
           "kind": "critical",
           "name": "Fate",
+          "image": "Icon_Map_RustTown_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -7233,6 +7390,7 @@
           "name": "Business Confidentiality",
           "text": "Perfect timing! Help me catch that spy!",
           "giver": "Alyson",
+          "image": "Icon_Map_Area_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -7260,6 +7418,7 @@
           "name": "Second Chance",
           "text": "We meet again, nothing's changed.",
           "giver": "Alyson",
+          "image": "Icon_Map_Bridge_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -7287,6 +7446,7 @@
           "name": "Blind Eye",
           "text": "Physical infiltration is our only option?",
           "giver": "Naomi",
+          "image": "Icon_Map_Lab_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -7312,10 +7472,12 @@
     },
     {
       "id": 9,
+      "slug": "chapter-viii",
       "name": "Chapter VIII",
       "title": "Stubborn Stain",
       "date": "XC 118, Oct. 22",
       "intro": "This faint spark will not be extinguished, for the land of Milkhama is about to be set ablaze with a violent flame from which there is no way back.",
+      "image": "Icon_Map_TollStation_Raw",
       "stages": [
         {
           "id": 801,
@@ -7323,6 +7485,7 @@
           "code": "8-1",
           "name": "Post-Tidal",
           "text": "Rayneburg's spark dies under Blair's fist. GKD escapes to an abandoned bunker in the buffer zone with Natalia.",
+          "image": "Icon_Map_MossLand_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -7377,6 +7540,7 @@
           "kind": "encounter",
           "name": "Encounter",
           "text": "Crisis surges like waves...",
+          "image": "Icon_Map_BaseCliff_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -7403,6 +7567,7 @@
           "kind": "encounter",
           "name": "Incursion",
           "text": "The fearless reach distant shores...",
+          "image": "Icon_Map_DesertOilStation_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -7424,6 +7589,7 @@
           "code": "8-2",
           "name": "Replenishment",
           "text": "NDF and Predator forces grip the buffer zone. The returning hero Kaidan sets out to rescue his people once more.",
+          "image": "Icon_Map_Forest_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -7472,6 +7638,7 @@
           "kind": "encounter",
           "name": "Evacuation",
           "text": "Life thrives underground when death rules above...",
+          "image": "Icon_Map_Base_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -7498,6 +7665,7 @@
           "kind": "encounter",
           "name": "Annihilation",
           "text": "Gunports' value known to all sides...",
+          "image": "Icon_Map_DesertFactory_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -7525,6 +7693,7 @@
           "code": "8-3",
           "name": "Ashes Like Snow",
           "text": "The Ashes share Milkhama's peril. All must unite against NDF oppression.",
+          "image": "Icon_Map_Base_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -7573,6 +7742,7 @@
           "kind": "encounter",
           "name": "Incursion",
           "text": "Press on through the blockade...",
+          "image": "Icon_Map_Desert2_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -7599,6 +7769,7 @@
           "kind": "encounter",
           "name": "Encounter",
           "text": "Endurance defines survival...",
+          "image": "Icon_Map_Base_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -7626,6 +7797,7 @@
           "code": "8-4",
           "name": "Two-Way Traffic",
           "text": "Arnold lives, NDF talks show promise. At the broken border bridge, GKD's nemesis awaits across the river.",
+          "image": "Icon_Map_Bridge_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -7666,6 +7838,7 @@
           "kind": "encounter",
           "name": "Head-On",
           "text": "Puppets incoming. Stand ready...",
+          "image": "Icon_Map_RustTown_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -7686,6 +7859,7 @@
           "kind": "encounter",
           "name": "Encounter",
           "text": "Danger ahead and behind...",
+          "image": "Icon_Map_Desert2_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -7713,6 +7887,7 @@
           "code": "8-5",
           "name": "Endless Sigh",
           "text": "As the secrets of the Central Mines come to light, Eileen, Cicero and the Epiphyllums make their return. The time has come to knock aside all obstacles and counter-attack in force.",
+          "image": "Icon_Map_Lab3_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -7753,6 +7928,7 @@
           "kind": "encounter",
           "name": "Encounter",
           "text": "Fate's question looms. Your answer?",
+          "image": "Icon_Map_BaseCliff_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -7779,6 +7955,7 @@
           "kind": "encounter",
           "name": "Evacuation",
           "text": "Only forward remains certain...",
+          "image": "Icon_Map_City_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -7806,6 +7983,7 @@
           "code": "8-6",
           "name": "Dust Whistles By",
           "text": "Amid the drifting dust, the trail of the departed winds on and on, fading into the distant horizon...",
+          "image": "Icon_Map_MossLand_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -7859,6 +8037,7 @@
           "id": 898,
           "kind": "critical",
           "name": "Tracing Back",
+          "image": "Icon_Map_TollStation_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -7906,6 +8085,7 @@
           "name": "Preservation Test",
           "text": "Not worth my personal attention.",
           "giver": "Grant",
+          "image": "Icon_Map_Lab_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -7933,6 +8113,7 @@
           "name": "Psychosocial Comfort",
           "text": "Morse Oases preps annual war games. GKD leads the contract.",
           "giver": "Dana",
+          "image": "Icon_Map_Lab_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -7960,6 +8141,7 @@
           "name": "Barge Through",
           "text": "Critical intel—must reach trusted hands.",
           "giver": "Ashes Soldier",
+          "image": "Icon_Map_Base_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -7987,6 +8169,7 @@
           "name": "New Weapon",
           "text": "Overload, destruction, and diffusion, this is what makes it efficient.",
           "giver": "Assistant Researcher",
+          "image": "Icon_Map_Lab3_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -8005,10 +8188,12 @@
     },
     {
       "id": 10,
+      "slug": "chapter-ix",
       "name": "Chapter IX",
       "title": "Torrent",
       "date": "XC 118, Nov. 08",
       "intro": "\"If one day you come to understand my guilt, you'll understand the sorrow we share... I won't ask for forgiveness—being misunderstood is my destiny. I only hope that all of you can envision, for me, a future in Milkhama where no more tears will be shed.\"",
+      "image": "Icon_Map_City_Raw",
       "stages": [
         {
           "id": 901,
@@ -8016,6 +8201,7 @@
           "code": "9-1",
           "name": "Weight",
           "text": "The upheaval with the Viceroy sparks public outcry across West Milkhama. The call for Blair's resignation tears through the island like an avalanche. During such tumultuous times, telling friend from foe is not just necessary—it's life-or-death...",
+          "image": "Icon_Map_Desert_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -8064,6 +8250,7 @@
           "kind": "encounter",
           "name": "Incursion",
           "text": "Reunion with old friends, encounter with former enemies.",
+          "image": "Icon_Map_Lab2_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -8090,6 +8277,7 @@
           "kind": "encounter",
           "name": "Evacuation",
           "text": "Falling before dawn is worthless.",
+          "image": "Icon_Map_Harbor_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -8117,6 +8305,7 @@
           "code": "9-2",
           "name": "Day of Return",
           "text": "The moment approaches when the defiant will stand together and make their way back to the lands of the UNCS.",
+          "image": "Icon_Map_MossLand_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -8165,6 +8354,7 @@
           "kind": "encounter",
           "name": "Encounter",
           "text": "Betrayal and loyalty? Simply a matter of perspective.",
+          "image": "Icon_Map_ChaosTown2_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -8191,6 +8381,7 @@
           "kind": "encounter",
           "name": "Encounter",
           "text": "In the eyes of the weak, the whole world is against him.",
+          "image": "Icon_Map_BaseCliff_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -8212,6 +8403,7 @@
           "code": "9-3",
           "name": "Former Haunts",
           "text": "Following the clues, Kaidan uncovers the enemy's hideout: the Sunset Valley Laboratory.",
+          "image": "Icon_Map_Lab4_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -8258,6 +8450,7 @@
           "kind": "encounter",
           "name": "Incursion",
           "text": "The sun blazed in the sky as the Iron Horsemen neared their destined battlefield.",
+          "image": "Icon_Map_City_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -8284,6 +8477,7 @@
           "kind": "encounter",
           "name": "Head-On",
           "text": "The path to the finish line is filled with challenges, and now the obstacles stand before us.",
+          "image": "Icon_Map_DesertOilStation_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -8311,6 +8505,7 @@
           "code": "9-4",
           "name": "Is That Her?",
           "text": "Reckless authorities have endangered civilian lives, but the GKD Squad and an ally arrive to restore order.",
+          "image": "Icon_Map_City_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -8353,6 +8548,7 @@
           "kind": "encounter",
           "name": "Encounter",
           "text": "Ebbing like the tide, or blooming like fireworks?",
+          "image": "Icon_Map_RustTown2_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -8379,6 +8575,7 @@
           "kind": "encounter",
           "name": "Encounter",
           "text": "Judgment Day is drawing near, and the ultimate verdict of destiny will soon unfold.",
+          "image": "Icon_Map_ChaosTown2_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -8406,6 +8603,7 @@
           "code": "9-5",
           "name": "Et Tu?",
           "text": "Those who seek power often hasten their own downfall.",
+          "image": "Icon_Map_Harbor_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -8446,6 +8644,7 @@
           "kind": "encounter",
           "name": "Annihilation",
           "text": "True grit is the capacity to meet the decrees of fate with unwavering calmness.",
+          "image": "Icon_Map_Harbor_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -8472,6 +8671,7 @@
           "kind": "encounter",
           "name": "Incursion",
           "text": "The actors are in position, and the final stage is revealed as the curtain opens.",
+          "image": "Icon_Map_Base2_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -8499,6 +8699,7 @@
           "code": "9-6",
           "name": "Bloodline",
           "text": "On Minet Island, GKD Squad and the Epiphyllum girls will face their final challenge.",
+          "image": "Icon_Map_RustTown_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -8552,6 +8753,7 @@
           "id": 998,
           "kind": "critical",
           "name": "Past Revelations",
+          "image": "Icon_Map_City_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -8599,6 +8801,7 @@
           "name": "The Guard's Day Off II",
           "text": "Once again, an unsettling feeling lingers...",
           "giver": "Gareth",
+          "image": "Icon_Map_RustTown2_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -8626,6 +8829,7 @@
           "name": "Treasure Scramble",
           "text": "This is what you owe me...",
           "giver": "Taio",
+          "image": "Icon_Map_RustTown_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -8653,6 +8857,7 @@
           "name": "Valve Action",
           "text": "Good news: Belsuth provided combat STs. Bad news: they're welded to their stations.",
           "giver": "Dana",
+          "image": "Icon_Map_City_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -8678,10 +8883,12 @@
     },
     {
       "id": 11,
+      "slug": "chapter-x",
       "name": "Chapter X",
       "title": "Daybreak",
       "date": "XC 119, Feb. 21",
       "intro": "Yesterday, civil unrest in West Milkhama eased. Today, strife spreads. Tomorrow, an invisible storm shall approach... As the morning star fades, the GKD must take control of its own destiny.",
+      "image": "Icon_Map_BaseCliff_Raw",
       "stages": [
         {
           "id": 1001,
@@ -8689,6 +8896,7 @@
           "code": "10-1",
           "name": "Aftershock",
           "text": "The Blair Rebellion has quieted, and West Milkhama seems peaceful once more. Yet, unease lingers as the GKD Squad navigates the aftermath.",
+          "image": "Icon_Map_Harbor2_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -8735,6 +8943,7 @@
           "kind": "encounter",
           "name": "Encounter",
           "text": "On the way to Arnold's camp, an unexpected encounter occurs with strange Obsidian operatives.",
+          "image": "Icon_Map_TollStation_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -8755,6 +8964,7 @@
           "kind": "encounter",
           "name": "Evacuation",
           "text": "During the chase, Kaidan and his team discover a new lab while facing an unexpected ambush.",
+          "image": "Icon_Map_Lab2_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -8776,6 +8986,7 @@
           "code": "10-2",
           "name": "A Shaky Peace",
           "text": "The Dawnstar fades and Vesper rises... the once-sturdy foundations show their weakness... the impending storm will sweep through Milkhama, heralding a new era of change.",
+          "image": "Icon_Map_City2_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -8824,6 +9035,7 @@
           "kind": "encounter",
           "name": "Incursion",
           "text": "Vesper's hacking has thrown the Milthus City Defense Force's Obsidian ST units into chaos, requiring urgent action to halt their disruption.",
+          "image": "Icon_Map_BaseCliff_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -8844,6 +9056,7 @@
           "kind": "encounter",
           "name": "Annihilation",
           "text": "This is the enemy's final wave before leaving the town.",
+          "image": "Icon_Map_City2_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -8865,6 +9078,7 @@
           "code": "10-3",
           "name": "Frontier Press",
           "text": "Some secrets emerge from the trigger, and truths are captured by the shutter. Exploring the DL reveals deeper political motives.",
+          "image": "Icon_Map_RustTown3_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -8913,6 +9127,7 @@
           "kind": "encounter",
           "name": "Encounter",
           "text": "Surprised by the chaos in Thepia, Kaidan must break through the obstacles to find Dana.",
+          "image": "Icon_Map_RustTown2_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -8933,6 +9148,7 @@
           "kind": "encounter",
           "name": "Pursue and Attack",
           "text": "Suspicious individuals are transporting goods out of town and need to be intercepted.",
+          "image": "Icon_Map_Forest_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -8954,6 +9170,7 @@
           "code": "10-4",
           "name": "Spiral of Contradictions",
           "text": "Local anger has sparked riots in Thepia, signaling impending civil unrest in the DL, a part of Vesper's plan. Thankfully, the GKD Squad has support in facing these troubles.",
+          "image": "Icon_Map_RustTown_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -9002,6 +9219,7 @@
           "kind": "encounter",
           "name": "Incursion",
           "text": "Amid the chaos, mercenaries attacked a research facility—we must act before the DLAF finds Cicero.",
+          "image": "Icon_Map_Lab_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -9022,6 +9240,7 @@
           "kind": "encounter",
           "name": "Encounter",
           "text": "It's time to end all this and wipe out the resisting mercenaries.",
+          "image": "Icon_Map_MossLand_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -9043,6 +9262,7 @@
           "code": "10-5",
           "name": "Divergence Point",
           "text": "Cicero's plea revealed the situation; despite Vesper's motives, Kaidan aimed to keep the Hyper-Aptamer tech out of conflict while hidden players plotted.",
+          "image": "Icon_Map_MossLand_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -9089,6 +9309,7 @@
           "kind": "encounter",
           "name": "Head-On",
           "text": "The Vesper Rangers have targeted the evacuating DLAF, and there's still time to help.",
+          "image": "Icon_Map_DesertBase_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -9109,6 +9330,7 @@
           "kind": "encounter",
           "name": "Annihilation",
           "text": "New enemies block Kaidan and the others; could they be the reason behind Vesper's retreat?",
+          "image": "Icon_Map_RustTown3_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -9130,6 +9352,7 @@
           "code": "10-6",
           "name": "Falling Night",
           "text": "With a new adversary emerging, Vesper's plan progresses to its next phase. As the evening bell tolls in Thepia, the night will inevitably cloak the brilliance of the DL.",
+          "image": "Icon_Map_Lab3_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -9183,6 +9406,7 @@
           "id": 1098,
           "kind": "critical",
           "name": "Undercurrent",
+          "image": "Icon_Map_BaseCliff_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -9230,6 +9454,7 @@
           "name": "Nowhere To Run",
           "text": "That's odd; there should be more entries in the account book.",
           "giver": "Lorna",
+          "image": "Icon_Map_Desert2_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -9257,6 +9482,7 @@
           "name": "Misdirection",
           "text": "Gear up; we have a job to do!",
           "giver": "Dana",
+          "image": "Icon_Map_Base2_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -9284,6 +9510,7 @@
           "name": "Cats and Mice",
           "text": "Scamper, scamper, little mice, the cat's just playing nice!",
           "giver": "Catherine",
+          "image": "Icon_Map_Area_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -9309,10 +9536,12 @@
     },
     {
       "id": 12,
+      "slug": "chapter-xi",
       "name": "Chapter XI",
       "title": "Damage Control",
       "date": "XC 119, Feb. 28",
       "intro": "The Vesper storm has shattered Milkhama's fragile peace, casting the GKD Squad into unending turmoil as they struggle through the shadows.",
+      "image": "Icon_Map_Desert2_Raw",
       "stages": [
         {
           "id": 1101,
@@ -9320,6 +9549,7 @@
           "code": "11-1",
           "name": "Tiny Cracks",
           "text": "Grant has secured a buyer for the new ST parts in Benno, a DL-ruled city. However, his plan was interrupted by the sudden appearance of enemies.",
+          "image": "Icon_Map_Harbor2_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -9366,6 +9596,7 @@
           "kind": "encounter",
           "name": "Encounter",
           "text": "On the way to the rendezvous, other ill-intentioned characters blocked the route...",
+          "image": "Icon_Map_RustTown_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -9386,6 +9617,7 @@
           "kind": "encounter",
           "name": "Encounter",
           "text": "It's gonna be a rough ride...",
+          "image": "Icon_Map_RustTown3_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -9407,6 +9639,7 @@
           "code": "11-2",
           "name": "Latent Malice",
           "text": "Outside of Fardan, the attack by Vesper has resumed...",
+          "image": "Icon_Map_Bridge_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -9459,6 +9692,7 @@
           "kind": "encounter",
           "name": "Encounter",
           "text": "The outbreak of warfare has spread to other areas and must be resolved quickly.",
+          "image": "Icon_Map_Bridge_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -9485,6 +9719,7 @@
           "kind": "encounter",
           "name": "Encounter",
           "text": "The Depot is ahead, but the team must first handle the trouble en route.",
+          "image": "Icon_Map_Bridge_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -9506,6 +9741,7 @@
           "code": "11-3",
           "name": "The Uninvited",
           "text": "Upon returning to Fardan, the GKD found an uninvited group had broken into the warehouse. Whether it was a mistake or not, the only way to find out is to confront him.",
+          "image": "Icon_Map_Base2_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -9552,6 +9788,7 @@
           "kind": "encounter",
           "name": "Annihilation",
           "text": "These watchers don't seem to be going to stop, gotta give 'em hell.",
+          "image": "Icon_Map_Base_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -9578,6 +9815,7 @@
           "kind": "encounter",
           "name": "Annihilation",
           "text": "This return journey clearly illustrates the risks associated with using puppets for defense.",
+          "image": "Icon_Map_MossLand_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -9605,6 +9843,7 @@
           "code": "11-4",
           "name": "Burning Fardan",
           "text": "Amid the explosion in Fardan City, Kaidan and the others once again heard Vesper's speech. To keep Elise safe, they had to take a risk...",
+          "image": "Icon_Map_City_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -9651,6 +9890,7 @@
           "kind": "encounter",
           "name": "Incursion",
           "text": "The enemy was pouring in, but the plan must not be interrupted.",
+          "image": "Icon_Map_City2_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -9677,6 +9917,7 @@
           "kind": "encounter",
           "name": "Evacuation",
           "text": "Whether or not there's a trap ahead, there's only one way to proceed.",
+          "image": "Icon_Map_City2_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -9704,6 +9945,7 @@
           "code": "11-5",
           "name": "Snare",
           "text": "Elise was used as bait by Vesper, but their ultimate aim is to uncover the hidden secret that Kaidan is keeping.",
+          "image": "Icon_Map_BaseCliff_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -9744,6 +9986,7 @@
           "kind": "encounter",
           "name": "Incursion",
           "text": "The road to rescue is not smooth, the enemy will not easily abandon their position.",
+          "image": "Icon_Map_RustTown_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -9770,6 +10013,7 @@
           "kind": "encounter",
           "name": "Pursue and Attack",
           "text": "Approaching the Institute requires utmost caution; as we get closer, enemy defenses grow ever tighter.",
+          "image": "Icon_Map_MossLand_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -9797,6 +10041,7 @@
           "code": "11-6",
           "name": "Retaliation",
           "text": "Kaidan is missing, and Elise is in danger. Grant and Bella rush into harm's way through a rain of shells.",
+          "image": "Icon_Map_Lab_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -9842,6 +10087,7 @@
           "id": 1198,
           "kind": "critical",
           "name": "OTC Trade",
+          "image": "Icon_Map_Desert2_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -9889,6 +10135,7 @@
           "name": "Collector's Challenge",
           "text": "Today, I will take you on a good tour of Kadrey.",
           "giver": "Grant",
+          "image": "Icon_Map_Area_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -9921,6 +10168,7 @@
           "name": "Traffic Jam",
           "text": "Damn it! I won't take on this kind of job again!",
           "giver": "Frida",
+          "image": "Icon_Map_TollStation_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -9943,6 +10191,7 @@
           "name": "Edge of Yesterday",
           "text": "Kaidan enters the simulation of Rosa's raid on Sunset Valley Lab, but the scene is nothing like he expected.",
           "giver": "Natalia",
+          "image": "Icon_Map_Lab_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -9968,10 +10217,12 @@
     },
     {
       "id": 13,
+      "slug": "chapter-xii",
       "name": "Chapter XII",
       "title": "Touchline",
       "date": "XC 119, Mar. 01",
       "intro": "In the fog of war surrounding Fardan, who will reveal the truth of the \"Legacy\"? Vesper? The Dawnstar League? Or...",
+      "image": "Icon_Map_Harbor2_Raw",
       "stages": [
         {
           "id": 1201,
@@ -9979,6 +10230,7 @@
           "code": "12-1",
           "name": "On The Run",
           "text": "After fleeing Vesper's trap, Kaidan and his team seek help from the DLAF. However, an unexpected encounter tears the plan asunder.",
+          "image": "Icon_Map_Bridge_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -10025,6 +10277,7 @@
           "kind": "encounter",
           "name": "Encounter",
           "text": "Fardan has become a battlefield. The road ahead with Shawnee will not be simple....",
+          "image": "Icon_Map_Bridge_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -10051,6 +10304,7 @@
           "kind": "encounter",
           "name": "Evacuation",
           "text": "Get through this area before the enemy calls reinforcements!",
+          "image": "Icon_Map_TollStation_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -10072,6 +10326,7 @@
           "code": "12-2",
           "name": "Dawnstar's Shadow",
           "text": "Approaching the burial site of the Legacy, Kaidan and his team draw closer and closer to the truth. Their opponents, however, are far from unprepared.",
+          "image": "Icon_Map_RustTown_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -10118,6 +10373,7 @@
           "kind": "encounter",
           "name": "Annihilation",
           "text": "An interception squad lies up ahead. Prepare for battle.",
+          "image": "Icon_Map_Base2_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -10138,6 +10394,7 @@
           "kind": "encounter",
           "name": "Incursion",
           "text": "The Antibody Squad leaves behind a detachment to stall for time.",
+          "image": "Icon_Map_Base_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -10165,6 +10422,7 @@
           "code": "12-3",
           "name": "Bottom of the Gravity Well",
           "text": "No one expected this civilian building to lead to an old war bunker. Still, our truth seekers remain determined to explore the depths below.",
+          "image": "Icon_Map_Lab4_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -10211,6 +10469,7 @@
           "kind": "encounter",
           "name": "Encounter",
           "text": "The truth lies within their grasp, yet resistance lingers.",
+          "image": "Icon_Map_Lab_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -10237,6 +10496,7 @@
           "kind": "encounter",
           "name": "Head-On",
           "text": "Eliminating these remaining enemies will secure the control room—temporarily.",
+          "image": "Icon_Map_Lab3_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -10258,6 +10518,7 @@
           "code": "12-4",
           "name": "[Legacy]",
           "text": "The video reveals Kaidan's forgotten past, but is it the final piece of the puzzle? Eileen arrives with her team, ready for a battle that could decide the fate of the Legacy.",
+          "image": "Icon_Map_Lab_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -10304,6 +10565,7 @@
           "kind": "encounter",
           "name": "Encounter",
           "text": "The pursuers sent by Obsidian are relentless—but there's no stopping now.",
+          "image": "Icon_Map_Lab2_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -10324,6 +10586,7 @@
           "kind": "encounter",
           "name": "Annihilation",
           "text": "Vesper's troops are up ahead. Breaking through them is the only way out of here!",
+          "image": "Icon_Map_ChaosTown_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -10351,6 +10614,7 @@
           "code": "12-5",
           "name": "Vesper",
           "text": "The secrets of the Legacy have resurfaced, awakening Kaidan's memories. The \"enemy\" lurking in the shadows has also finally shown its claws.",
+          "image": "Icon_Map_BaseCliff_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -10397,6 +10661,7 @@
           "kind": "encounter",
           "name": "Encounter",
           "text": "After a string of intense battles, Kaidan and his team are injured and exhausted—but the luxury of rest eludes them.",
+          "image": "Icon_Map_ChaosTown_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -10423,6 +10688,7 @@
           "kind": "encounter",
           "name": "Incursion",
           "text": "Barely free of Vesper, the team runs straight into another hurdle: the DLAF's blockade.",
+          "image": "Icon_Map_TollStation_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -10450,6 +10716,7 @@
           "code": "12-6",
           "name": "Reunion",
           "text": "After betrayal and losing the Legacy, Kaidan and his team struggle to escape. However, the DLAF appears reluctant to let them leave easily.",
+          "image": "Icon_Map_Bridge_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -10495,6 +10762,7 @@
           "id": 1298,
           "kind": "critical",
           "name": "Confluence",
+          "image": "Icon_Map_Harbor2_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -10542,6 +10810,7 @@
           "name": "Defense Outsourcing",
           "text": "I think the Saget Town Council should just outsource their defense to us.",
           "giver": "Grant",
+          "image": "Icon_Map_TollStation_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -10569,6 +10838,7 @@
           "name": "Performance Test",
           "text": "Erisa, what's with the secrecy?",
           "giver": "Fia",
+          "image": "Icon_Map_Area_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -10596,6 +10866,7 @@
           "name": "Springboard",
           "text": "Times change...",
           "giver": "Frida",
+          "image": "Icon_Map_MossLand_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -10618,6 +10889,7 @@
           "name": "Component Recycling",
           "text": "This is bad... I need to get these little guys back fast.",
           "giver": "Seven",
+          "image": "Icon_Map_BaseCliff_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -10645,6 +10917,7 @@
           "name": "Light of Hope",
           "text": "How long will it take for these evils to disappear...",
           "giver": "Sylvie",
+          "image": "Icon_Map_Lab3_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -10672,6 +10945,7 @@
           "name": "Holiday Clash",
           "text": "No matter the competition, I must take first place!",
           "giver": "Dean",
+          "image": "Icon_Map_Harbor_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -10692,10 +10966,12 @@
     },
     {
       "id": 14,
+      "slug": "chapter-xiii",
       "name": "Chapter XIII",
       "title": "Reverse Decay",
       "date": "XC 119, Mar. 03",
       "intro": "Milkhama, Arashi Ore, STs... History grinds on—back into the abyss of war. Everyone must make their own choice, whatever it brings.",
+      "image": "Icon_Map_Bridge_Raw",
       "stages": [
         {
           "id": 1301,
@@ -10703,6 +10979,7 @@
           "code": "13-1",
           "name": "Newborn",
           "text": "The TINA carries everyone back to the port of West Milkhama, only to encounter an attack from the UNCS Rebels lying in wait. Damaged STs, insufficient ammo... Kaidan and his group's ordeal is not over yet.",
+          "image": "Icon_Map_Harbor2_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -10749,6 +11026,7 @@
           "kind": "encounter",
           "name": "Incursion",
           "text": "To prevent the plan from being disrupted, the rebel troops lurking in the vicinity must be dealt with.",
+          "image": "Icon_Map_ChaosTown2_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -10769,6 +11047,7 @@
           "kind": "encounter",
           "name": "Evacuation",
           "text": "The rebels have been squeezed into a corner. It's time to finish the job.",
+          "image": "Icon_Map_BaseCliff_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -10790,6 +11069,7 @@
           "code": "13-2",
           "name": "Raid",
           "text": "The DLAF launches a formal attack on the central mining area occupied by Vesper—a move that provokes strong opposition from the locals. The situation in Milkhama seems poised to spiral dangerously out of control.",
+          "image": "Icon_Map_MossLand_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -10836,6 +11116,7 @@
           "kind": "encounter",
           "name": "Encounter",
           "text": "The DLAF has already engaged in battle with Vesper, but some units are still blocking the way.",
+          "image": "Icon_Map_RustTown3_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -10856,6 +11137,7 @@
           "kind": "encounter",
           "name": "Annihilation",
           "text": "The battlefield is becoming increasingly chaotic... We must hurry.",
+          "image": "Icon_Map_Desert_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -10877,6 +11159,7 @@
           "code": "13-3",
           "name": "Wind of Disruption",
           "text": "Kaidan and his team successfully approach Vesper's base camp, but the DLAF closes in just as fast. A multi-sided clash seems inevitable—and perhaps this is exactly the moment Vesper has been waiting for.",
+          "image": "Icon_Map_DesertOilStation_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -10923,6 +11206,7 @@
           "kind": "encounter",
           "name": "Head-On",
           "text": "Although Matilda has been stopped, a number of DLAF units are still in hot pursuit.",
+          "image": "Icon_Map_Lab2_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -10943,6 +11227,7 @@
           "kind": "encounter",
           "name": "Encounter",
           "text": "Be careful, Vesper will spare no effort to defend their stronghold!",
+          "image": "Icon_Map_Lab_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -10964,6 +11249,7 @@
           "code": "13-4",
           "name": "Tranquilizer",
           "text": "A victorious weapon only represents justice when held in righteous hands. STs are like this, as is the Legacy, and perhaps... so is faith.",
+          "image": "Icon_Map_Base2_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -11010,6 +11296,7 @@
           "kind": "encounter",
           "name": "Incursion",
           "text": "According to the signal, Phoenix should be just ahead.",
+          "image": "Icon_Map_Bridge_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -11030,6 +11317,7 @@
           "kind": "encounter",
           "name": "Annihilation",
           "text": "It looks like this is Vesper's last defense force.",
+          "image": "Icon_Map_RustTown2_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -11051,6 +11339,7 @@
           "code": "13-5",
           "name": "Abyss of Desperation",
           "text": "After countless twists and turns, the GKD Parcel Service finally catches up with Phoenix, and the truth of Operation Dusk is revealed. Now, only battle can determine the fate of both sides.",
+          "image": "Icon_Map_Desert_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -11097,6 +11386,7 @@
           "kind": "encounter",
           "name": "Encounter",
           "text": "Faith is a weapon, and also a poison. Vesper's warriors remain, blocking the path of pursuit.",
+          "image": "Icon_Map_HighWay_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -11117,6 +11407,7 @@
           "kind": "encounter",
           "name": "Head-On",
           "text": "Something seems off... What's the DLAF doing here?",
+          "image": "Icon_Map_ChaosTown_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -11138,6 +11429,7 @@
           "code": "13-6",
           "name": "Implosion",
           "text": "The dusk can summon the night, but never the dawn. This is the end of the overture—or perhaps, the beginning of a new act.",
+          "image": "Icon_Map_DesertFactory_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -11183,6 +11475,7 @@
           "id": 1398,
           "kind": "critical",
           "name": "Chaos Nears",
+          "image": "Icon_Map_Bridge_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -11230,6 +11523,7 @@
           "name": "Alarm Lifted",
           "text": "The defense is tight. What's your plan, Fia?",
           "giver": "Erisa",
+          "image": "Icon_Map_Desert_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -11257,6 +11551,7 @@
           "name": "Memory Code",
           "text": "What was the password again?",
           "giver": "Seven",
+          "image": "Icon_Map_Base3_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -11284,6 +11579,7 @@
           "name": "Transposition",
           "text": "The battlefield is constantly changing, and the tactics must be improved accordingly.",
           "giver": "Eileen",
+          "image": "Icon_Map_Base2_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -11309,10 +11605,12 @@
     },
     {
       "id": 15,
+      "slug": "chapter-xiv",
       "name": "Chapter XIV",
       "title": "Smoldering Embers",
       "date": "XC 119, Mar. 05",
       "intro": "Vesper has fallen, but the sparks of resistance quietly rise and spread in the shadows. The turmoil and instability of Milkhama are far from over.",
+      "image": "Icon_Map_RustTown3_Raw",
       "stages": [
         {
           "id": 1401,
@@ -11320,6 +11618,7 @@
           "code": "14-1",
           "name": "Orbit",
           "text": "Under Natalia's guidance, Dana and Grant meet the so-called collaborating agent, receiving their first mission after forming the new team—both of which exceed their expectations.",
+          "image": "Icon_Map_MossLand_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -11366,6 +11665,7 @@
           "kind": "encounter",
           "name": "Evacuation",
           "text": "We encountered DL troops on routine patrol. Suppress them before they have a chance to react.",
+          "image": "Icon_Map_MossLand_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -11386,6 +11686,7 @@
           "kind": "encounter",
           "name": "Incursion",
           "text": "If there's no way around, strike through the center.",
+          "image": "Icon_Map_Forest_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -11407,6 +11708,7 @@
           "code": "14-2",
           "name": "Song of Rebellion",
           "text": "Kaidan and Elise secretly meet with the detained Shawnee and learn from her that Lukmund's next target is the 08 Mobile Squad under Rear Admiral Tiphys.",
+          "image": "Icon_Map_DesertOilStation_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -11453,6 +11755,7 @@
           "kind": "encounter",
           "name": "Annihilation",
           "text": "There's a DL outpost on the route—take it down!",
+          "image": "Icon_Map_MossLand_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -11473,6 +11776,7 @@
           "kind": "encounter",
           "name": "Head-On",
           "text": "Bent City is just up ahead. Rear Admiral Tiphys is held there—hop to it!",
+          "image": "Icon_Map_RustTown3_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -11494,6 +11798,7 @@
           "code": "14-3",
           "name": "Where the Will Goes",
           "text": "When the secret interrogation of Rear Admiral Tiphys yields nothing, the Lukmund forces order his transfer—unknowingly creating the one moment in which he might be saved.",
+          "image": "Icon_Map_City2_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -11540,6 +11845,7 @@
           "kind": "encounter",
           "name": "Encounter",
           "text": "Before leaving the Bent region, the DL STs blocking the way must be dealt with.",
+          "image": "Icon_Map_City_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -11560,6 +11866,7 @@
           "kind": "encounter",
           "name": "Incursion",
           "text": "Breaking through the checkpoint ahead will temporarily shake off the pursuers.",
+          "image": "Icon_Map_City2_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -11581,6 +11888,7 @@
           "code": "14-4",
           "name": "Whispers",
           "text": "To prevent the EMP Bomb attack that could reoccur at any moment, Kaidan and Tiphys plan to raid Lukmund's private stronghold, but who is this unexpected opponent awaiting them?",
+          "image": "Icon_Map_RustTown2_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -11627,6 +11935,7 @@
           "kind": "encounter",
           "name": "Annihilation",
           "text": "Thought the battle attracted some DLAF units, their numbers are nothing to fear.",
+          "image": "Icon_Map_ChaosTown2_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -11653,6 +11962,7 @@
           "kind": "encounter",
           "name": "Head-On",
           "text": "As we approach Fardan, stay on high alert.",
+          "image": "Icon_Map_Forest_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -11674,6 +11984,7 @@
           "code": "14-5",
           "name": "Gates of Hell",
           "text": "To return to the Fardan South Research Institute, they must first make headway through the layers of defenses set by Lukmund. And others beside Kaidan might have a similar idea...",
+          "image": "Icon_Map_BaseCliff_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -11720,6 +12031,7 @@
           "kind": "encounter",
           "name": "Incursion",
           "text": "There are still some stragglers on the way to the research institute. Break through!",
+          "image": "Icon_Map_Base2_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -11740,6 +12052,7 @@
           "kind": "encounter",
           "name": "Annihilation",
           "text": "Ophelia's assault seems to have disrupted the enemy's deployment. Charge into the central experimental area at full-throttle!",
+          "image": "Icon_Map_Lab_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -11761,6 +12074,7 @@
           "code": "14-6",
           "name": "Newman",
           "text": "In the core lab zone of the institute, the Legacy and its controlled army are on high alert... Gathered here are not only undetermined forces, but perhaps also undetermined truths.",
+          "image": "Icon_Map_Lab3_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -11806,6 +12120,7 @@
           "id": 1498,
           "kind": "critical",
           "name": "Diverge",
+          "image": "Icon_Map_RustTown3_Raw",
           "rewards": [
             {
               "name": "Solid Arashium",
@@ -11851,10 +12166,12 @@
     },
     {
       "id": 16,
+      "slug": "chapter-xv",
       "name": "Chapter XV",
       "title": "Disordered Singularity",
       "date": "XC 119, Mar. 08",
       "intro": "The balanced scales are on the verge of collapse, and Milkhama will return to what it once was. The end of order and the dawn of chaos need only the smallest spark.",
+      "image": "Icon_Map_DesertOilStation_Raw",
       "stages": [
         {
           "id": 1501,
@@ -11862,6 +12179,7 @@
           "code": "15-1",
           "name": "Efficient Negotiation",
           "text": "With the loss of the Legacy and Ada's whereabouts, GKD Parcel Service must resume their search for clues. Fortunately, Milkhama never lacks surprises—behind the Reversion Paradox, intel has emerged that Rosa has returned to the battlefield.",
+          "image": "Icon_Map_Ruin2_Raw",
           "rewards": [
             {
               "name": "Memory Fragment",
@@ -11890,6 +12208,7 @@
           "kind": "encounter",
           "name": "Head-On",
           "text": "To avoid being tracked, all obstacles must be cleared before departure.",
+          "image": "Icon_Map_HighWay_Raw",
           "rewards": [
             {
               "name": "Bulk Voucher",
@@ -11904,6 +12223,7 @@
           "kind": "encounter",
           "name": "Head-On",
           "text": "The transport plane is about to take off, so hurry up.",
+          "image": "Icon_Map_RustTown3_Raw",
           "rewards": [
             {
               "name": "ADV EXP Records",
@@ -11919,6 +12239,7 @@
           "code": "15-2",
           "name": "Warning Shot",
           "text": "To uncover the purpose of the Reversion Squad and Predator, the GKD Parcel Service accepts Eileen's proposal and sets off for Minet Island... However, their opponents are not unprepared.",
+          "image": "Icon_Map_Harbor_Raw",
           "rewards": [
             {
               "name": "Transit Voucher",
@@ -11947,6 +12268,7 @@
           "kind": "encounter",
           "name": "Head-On",
           "text": "The remaining enemies on Minet Island are still putting up a fight. We'll have to force our way through.",
+          "image": "Icon_Map_MossLand_Raw",
           "rewards": [
             {
               "name": "ADV EXP Records",
@@ -11961,6 +12283,7 @@
           "kind": "encounter",
           "name": "Incursion",
           "text": "These enemies aren't just from the Predators... or am I imagining things?",
+          "image": "Icon_Map_MossLand_Raw",
           "rewards": [
             {
               "name": "Bulk Voucher",
@@ -11976,6 +12299,7 @@
           "code": "15-3",
           "name": "Covert Infiltration",
           "text": "The Central Mining Area has sunk deep into the mire of chaos and danger. Even GKD Parcel Service finds it difficult to venture alone, but at this moment, an unexpected helping hand reaches out to them—the Harpy Guild",
+          "image": "Icon_Map_RustTown_Raw",
           "rewards": [
             {
               "name": "Memory Fragment",
@@ -12010,6 +12334,7 @@
           "kind": "encounter",
           "name": "Evacuation",
           "text": "More forces are converging on the Central Mining Area... this isn't good.",
+          "image": "Icon_Map_ChaosTown_Raw",
           "rewards": [
             {
               "name": "Bulk Voucher",
@@ -12024,6 +12349,7 @@
           "kind": "encounter",
           "name": "Head-On",
           "text": "So many troops… looks like both the Predators and the Ovett Revolutionary Army are all in.",
+          "image": "Icon_Map_MossLand_Raw",
           "rewards": [
             {
               "name": "Memory Fragment",
@@ -12039,6 +12365,7 @@
           "code": "15-4",
           "name": "Clamorous Consensus",
           "text": "Disguising as a refugee to follow Vesper into the mining area—this is Adele Martin's plan, simple and effective, yet full of uncertainties... Fortunately, GKD Parcel Service has always been an expert in dealing with uncertainties.",
+          "image": "Icon_Map_Desert_Raw",
           "rewards": [
             {
               "name": "Transit Voucher",
@@ -12067,6 +12394,7 @@
           "kind": "encounter",
           "name": "Head-On",
           "text": "Can't waste too much time on these guys, just charge through!",
+          "image": "Icon_Map_Mine_Raw",
           "rewards": [
             {
               "name": "ADV EXP Records",
@@ -12081,6 +12409,7 @@
           "kind": "encounter",
           "name": "Head-On",
           "text": "Vesper's outer outposts are already down... we have to hurry!",
+          "image": "Icon_Map_Mine_Raw",
           "rewards": [
             {
               "name": "Bulk Voucher",
@@ -12096,6 +12425,7 @@
           "code": "15-5",
           "name": "End of the Wrong Path",
           "text": "The outpost has fallen. Personnel are missing. Even the main forces of the DLAF have launched a full assault.... GKD Parcel Service has almost no time left for their pursuit, and the enemy has already cast a net around them, lying in wait.",
+          "image": "Icon_Map_BaseCliff_Raw",
           "rewards": [
             {
               "name": "Memory Fragment",
@@ -12130,6 +12460,7 @@
           "kind": "encounter",
           "name": "Incursion",
           "text": "No time for small fry—out of the way!",
+          "image": "Icon_Map_Base3_Raw",
           "rewards": [
             {
               "name": "ADV EXP Records",
@@ -12144,6 +12475,7 @@
           "kind": "encounter",
           "name": "Evacuation",
           "text": "We're almost at the destination. One final push!",
+          "image": "Icon_Map_Lab_Raw",
           "rewards": [
             {
               "name": "Memory Fragment",
@@ -12159,6 +12491,7 @@
           "code": "15-6",
           "name": "Doomsday Bell",
           "text": "The GKD Parcel Service has caught up with the Diaz sisters. Milkhama's greatest secret is finally brought to light. Regardless of anyone's will, the doomsday clock has entered its final countdown.",
+          "image": "Icon_Map_Ocean_Raw",
           "rewards": [
             {
               "name": "Transit Voucher",
@@ -12187,6 +12520,7 @@
           "kind": "critical",
           "name": "Entrust",
           "text": "At the critical moment, they narrowly escaped the explosion at the base. However, the turmoil driving the GKD Parcel Service not only did not subside but intensified... just like the fires of war erupting in the Central Mining Area.",
+          "image": "Icon_Map_DesertOilStation_Raw",
           "rewards": [
             {
               "name": "Doll FC Matrix",
@@ -15563,6 +15897,1913 @@
                   "n": 54
                 }
               ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "sideStories": [
+    {
+      "id": 1,
+      "slug": "naomi",
+      "pilot": "10103106",
+      "name": "Naomi",
+      "title": "Collaboration is necessary for unleashing greater power, even for an ace hacker.",
+      "portrait": "Pilot_10103106A_half",
+      "unlock": {
+        "stage": 216
+      },
+      "image": "Icon_Map_Base_Raw",
+      "stages": [
+        {
+          "id": 101031061,
+          "kind": "main",
+          "code": "1",
+          "name": "Electronic Magician",
+          "text": "A fellow operative's cornered by local bullies in a warehouse! Ace hacker Naomi can't be there in person, but with a network connection, she's got this crisis locked down. Time to work some digital magic and save the day!",
+          "image": "Icon_Map_Base_Raw",
+          "rewards": [
+            {
+              "name": "Recruit Voucher",
+              "icon": "Icon_item_11000000",
+              "kind": "item",
+              "count": 1
+            }
+          ],
+          "scenes": [
+            {
+              "id": 450101101,
+              "when": "before",
+              "n": 17,
+              "summary": "A hacker ally's position is exposed while investigating mystery STs. Naomi remotely controls an ST to defeat attackers, ensuring team escape."
+            },
+            {
+              "id": 450101301,
+              "when": "after",
+              "n": 13,
+              "summary": "Local gang data points to an Obsidian factory. Naomi and team plan a bold investigation."
+            }
+          ]
+        },
+        {
+          "id": 101031062,
+          "kind": "main",
+          "code": "2",
+          "name": "Double Invasion",
+          "text": "Naomi's squad breached the Obsidian facility, unaware they weren't the lone wolves prowling today's hunting grounds.",
+          "image": "Icon_Map_Lab2_Raw",
+          "level": 24,
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 30
+            }
+          ],
+          "scenes": [
+            {
+              "id": 450102101,
+              "when": "before",
+              "n": 12,
+              "summary": "They infiltrate the factory, encountering a mystery ST. Guard-drawing confrontation forces temporary alliance."
+            }
+          ]
+        },
+        {
+          "id": 101031063,
+          "kind": "main",
+          "code": "3",
+          "name": "Catch Me If You Can",
+          "text": "The hunter becomes the hunted. A shadow-dwelling hacker faces a digital dead end.",
+          "image": "Icon_Map_ChaosTown_Raw",
+          "level": 30,
+          "rewards": [
+            {
+              "name": "Recruit Voucher",
+              "icon": "Icon_item_11000000",
+              "kind": "item",
+              "count": 1
+            }
+          ],
+          "scenes": [
+            {
+              "id": 450103101,
+              "when": "before",
+              "n": 13,
+              "summary": "Post-escape, they notice high bounties on Skynet, drawing gang and mercenary pursuit. As sole remaining fighter, Naomi steps up."
+            },
+            {
+              "id": 450103301,
+              "when": "after",
+              "n": 13,
+              "summary": "After hard battles, the hacker allies consider police surrender for protection. Naomi reluctantly agrees but returns alone to delete sensitive data."
+            }
+          ]
+        },
+        {
+          "id": 101031064,
+          "kind": "main",
+          "code": "4",
+          "name": "Identity Crisis",
+          "text": "Naomi's return to HQ turned into a trap. Surrounded by hostiles. Outnumbered, but not outgunned. This ace hacker won't go down without a fight.",
+          "image": "Icon_Map_Lab_Raw",
+          "level": 37,
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 30
+            }
+          ],
+          "scenes": [
+            {
+              "id": 450104101,
+              "when": "before",
+              "n": 14,
+              "summary": "UNCS forces surround Naomi at base. She hacks systems to turn enemy STs against each other, seeking escape in chaos."
+            },
+            {
+              "id": 450104301,
+              "when": "after",
+              "n": 17,
+              "summary": "The mystery ST reappears, revealed as frequent client Natalia. Naomi proposes trading factory data to rescue transferred allies."
+            }
+          ]
+        },
+        {
+          "id": 101031065,
+          "kind": "main",
+          "code": "5",
+          "name": "Back to the Storm",
+          "text": "The lone lead points to a phantom base off the grid. Seeking allies and intel, Naomi and Talia dive headfirst into the danger zone.",
+          "image": "Icon_Map_RustTown_Raw",
+          "level": 42,
+          "rewards": [
+            {
+              "name": "Recruit Voucher",
+              "icon": "Icon_item_11000000",
+              "kind": "item",
+              "count": 1
+            }
+          ],
+          "scenes": [
+            {
+              "id": 450105101,
+              "when": "before",
+              "n": 20,
+              "summary": "They track to a mystery base, trapped by self-destruct countdown. Survival requires Naomi reaching the terminal for system control, first breaking through autonomous ST defenses."
+            },
+            {
+              "id": 450105301,
+              "when": "after",
+              "n": 34,
+              "summary": "Naomi and her companion narrowly escape death. Natalia reveals herself as an agent and extends an offer. To find her missing ally, Naomi accepts and joins the GSA."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "slug": "marcus",
+      "pilot": "10103124",
+      "name": "Marcus",
+      "title": "In the ashes, a spark resides. Beyond the abyss, a newborn tide.",
+      "portrait": "Pilot_10103124A_half",
+      "unlock": {
+        "stage": 216
+      },
+      "image": "Icon_Map_Base_Raw",
+      "stages": [
+        {
+          "id": 101031241,
+          "kind": "main",
+          "code": "1",
+          "name": "Flashback",
+          "text": "Snatched by the Ashes, Marcus braces for an epic journey into the unknown. A new mech-filled destiny awaits!",
+          "image": "Icon_Map_Base_Raw",
+          "rewards": [
+            {
+              "name": "Recruit Voucher",
+              "icon": "Icon_item_11000000",
+              "kind": "item",
+              "count": 1
+            }
+          ],
+          "scenes": [
+            {
+              "id": 450201101,
+              "when": "before",
+              "n": 33,
+              "summary": "In his coma, Marcus dreams of conversations with his old friend Kaidan Newman. He awakens in the Ashes medical bay where Yevgeny Goman and Chloe Schmidt fill him in on recent events."
+            },
+            {
+              "id": 450201301,
+              "when": "after",
+              "n": 7,
+              "summary": "After much negotiation, Yevgeny permits Marcus to leave the Ashes base in an ST. Yevgeny watches his departure with a knowing gaze."
+            }
+          ]
+        },
+        {
+          "id": 101031242,
+          "kind": "main",
+          "code": "2",
+          "name": "Isolated Soldier",
+          "text": "Cut off from the grid, Marcus rolled into a backwater burg after ditching The Ashes' HQ.",
+          "image": "TEST-615_Raw",
+          "level": 24,
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 30
+            }
+          ],
+          "scenes": [
+            {
+              "id": 450202101,
+              "when": "before",
+              "n": 12,
+              "summary": "The townspeople greet Marcus with hostility. He learns the NDF wanted Kaidan's team for Rosa Diaz's murder during his blackout. As Marcus tries reasoning with the civilians, UNCS thugs storm in to ransack supplies."
+            },
+            {
+              "id": 450202301,
+              "when": "after",
+              "n": 16,
+              "summary": "During the skirmish with UNCS bandits, Marcus is shocked to learn he is presumed KIA. Post-battle, the locals warm up and share intel suggesting ties between their town and the Ashes."
+            }
+          ]
+        },
+        {
+          "id": 101031243,
+          "kind": "main",
+          "code": "3",
+          "name": "Approaching Warfare",
+          "text": "Danger strikes again! A mysterious ST squad assaults the remote town. STs emerge from the shadows!",
+          "image": "Icon_Map_ChaosTown_Raw",
+          "level": 30,
+          "rewards": [
+            {
+              "name": "Recruit Voucher",
+              "icon": "Icon_item_11000000",
+              "kind": "item",
+              "count": 1
+            }
+          ],
+          "scenes": [
+            {
+              "id": 450203101,
+              "when": "before",
+              "n": 10,
+              "summary": "Faced with ridiculous evacuation demands, Marcus pilots his damaged ST to defend the civilians. The battle reignites. Yevgeny and Chloe's Ashes forces arrive to support the isolated Marcus against enemy STs."
+            },
+            {
+              "id": 450203301,
+              "when": "after",
+              "n": 24,
+              "summary": "Though injured after defeating the mystery ST force, Marcus remains distrusted while the townspeople celebrate Yevgeny's group. As Marcus presses Yevgeny for answers, an air raid shatters their respite."
+            }
+          ]
+        },
+        {
+          "id": 101031244,
+          "kind": "main",
+          "code": "4",
+          "name": "The Obvious Truth",
+          "text": "The skies are clear for now. Maverick Marcus itches to unravel the mystery.",
+          "image": "Icon_Map_DesertFactory_Raw",
+          "level": 37,
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 30
+            }
+          ],
+          "scenes": [
+            {
+              "id": 450204101,
+              "when": "before",
+              "n": 22,
+              "summary": "Yevgeny reveals William Stein orchestrated the strike. Marcus intercepts UNCS comms confirming an incoming cleanse operation. His beliefs shattered, Marcus joins the Ashes against William's NDF forces."
+            },
+            {
+              "id": 450204301,
+              "when": "after",
+              "n": 17,
+              "summary": "William rages at seeing his supposedly dead subordinate with rebels. But Marcus stands firm. The Ashes help him route William's forces from the town."
+            }
+          ]
+        },
+        {
+          "id": 101031245,
+          "kind": "main",
+          "code": "5",
+          "name": "Reignited Morale",
+          "text": "Where will tomorrow lead? Marcus finds himself at another pivotal crossroads.",
+          "image": "TEST-304_Raw",
+          "level": 42,
+          "rewards": [
+            {
+              "name": "Recruit Voucher",
+              "icon": "Icon_item_11000000",
+              "kind": "item",
+              "count": 1
+            }
+          ],
+          "scenes": [
+            {
+              "id": 450205101,
+              "when": "before",
+              "n": 11,
+              "summary": "Post-battle, Marcus returns to the Ashes base seeking truth. At medic Chloe's suggestion, he confronts Yevgeny in the hangar during ST maintenance. Yevgeny offers answers in exchange for victory."
+            },
+            {
+              "id": 450205301,
+              "when": "after",
+              "n": 27,
+              "summary": "Despite Yevgeny's obvious restraint, Marcus wins. The truth stuns him. Yevgeny was ex-NDF who knew Dr. Newman. Higher-ups saw Marcus as just a lab rat. Grasping this reality, he joins The Ashes."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "slug": "william",
+      "pilot": "10103115",
+      "name": "William",
+      "title": "Even the flames of hell are no match for his vengeful fire.",
+      "portrait": "Pilot_10103115A_half",
+      "unlock": {
+        "stage": 216
+      },
+      "image": "Icon_Map_ChaosTown_Raw",
+      "stages": [
+        {
+          "id": 101031151,
+          "kind": "main",
+          "code": "1",
+          "name": "Piper",
+          "text": "Ace operative William, on a mission to snag fresh lab rats, gets jumped by Ashes goons. Big mistake. These chumps had no clue they were messing with the Armored Corps' top gun. Time to school these rookies in real mech warfare.",
+          "image": "Icon_Map_ChaosTown_Raw",
+          "rewards": [
+            {
+              "name": "Recruit Voucher",
+              "icon": "Icon_item_11000000",
+              "kind": "item",
+              "count": 1
+            }
+          ],
+          "scenes": [
+            {
+              "id": 450301101,
+              "when": "before",
+              "n": 18,
+              "summary": "William hunts a test subject named Emily in a UNCS town. The Ashes ambush his exit but his aggressive counter turns the tide despite being outnumbered."
+            },
+            {
+              "id": 450301301,
+              "when": "after",
+              "n": 22,
+              "summary": "Back at the lab with Emily, William condemns Rosa's humane treatment of test subjects. Overhearing Blair's call, the Council's arrogance stokes his post-Milkhama hatred."
+            }
+          ]
+        },
+        {
+          "id": 101031152,
+          "kind": "main",
+          "code": "2",
+          "name": "Suppressed Gunfire",
+          "text": "Defending Emily from the combat trial's chaos, Hong and Sylvie defy orders. But William won't tolerate their brazen rebellion.",
+          "image": "TEST-304_Raw",
+          "level": 24,
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 30
+            }
+          ],
+          "scenes": [
+            {
+              "id": 450302101,
+              "when": "before",
+              "n": 15,
+              "summary": "During combat tests, Blair refuses to help the destabilizing Emily to gather data. This enrages Hong and Sylvie who rebel, but William's might crushes them."
+            },
+            {
+              "id": 450302301,
+              "when": "after",
+              "n": 13,
+              "summary": "Victorious, William and Blair discuss the subjects' potential. Blair entrusts him with the advanced ST Titan. They believe UNCS will control Milkhama through Hyper-Aptamers and cutting-edge STs."
+            }
+          ]
+        },
+        {
+          "id": 101031153,
+          "kind": "main",
+          "code": "3",
+          "name": "Titan Theft",
+          "text": "Alert! Ashes forces strike Armored Corps HQ. Target: The \"Titan\" in Hangar's depths. Defend at all costs!",
+          "image": "Icon_Map_Base_Raw",
+          "level": 30,
+          "rewards": [
+            {
+              "name": "Recruit Voucher",
+              "icon": "Icon_item_11000000",
+              "kind": "item",
+              "count": 1
+            }
+          ],
+          "scenes": [
+            {
+              "id": 450303101,
+              "when": "before",
+              "n": 14,
+              "summary": "The Ashes raid during a guard rotation. William rushes from his checkup to stop Goman from stealing the Titan."
+            },
+            {
+              "id": 450303301,
+              "when": "after",
+              "n": 11,
+              "summary": "William defeats Goman but fails to prevent the Titan's theft. While pursuing, he learns of an attack on the Viceroy's convoy. Among Blair's mercenary saviors is Dr. Newman's son—Kaidan Newman."
+            }
+          ]
+        },
+        {
+          "id": 101031154,
+          "kind": "main",
+          "code": "4",
+          "name": "Edge",
+          "text": "William chased a shady ride heading for Dawnstar turf. Hit a snag at the buffer zone.",
+          "image": "Icon_Map_Desert_Raw",
+          "level": 37,
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 30
+            }
+          ],
+          "scenes": [
+            {
+              "id": 450304101,
+              "when": "before",
+              "n": 12,
+              "summary": "A councilman who sheltered test subjects flees to Dawnstar. William's pursuit meets mercenary resistance in the buffer zone. He must act fast to prevent escape."
+            },
+            {
+              "id": 450304301,
+              "when": "after",
+              "n": 9,
+              "summary": "After eliminating the mercenaries, William finds no subjects and destroys the vehicles. The border clash ignites tensions between powers. William uses this to drill recruits for imminent war."
+            }
+          ]
+        },
+        {
+          "id": 101031155,
+          "kind": "main",
+          "code": "5",
+          "name": "Back From Hell",
+          "text": "Wounded warrior William braves a risky, cutting-edge operation. His body's stress morphs into a haunting mecha-nightmare!",
+          "image": "Icon_Map_Lab_Raw",
+          "level": 45,
+          "rewards": [
+            {
+              "name": "Recruit Voucher",
+              "icon": "Icon_item_11000000",
+              "kind": "item",
+              "count": 1
+            }
+          ],
+          "scenes": [
+            {
+              "id": 450305101,
+              "when": "before",
+              "n": 22,
+              "summary": "Gravely wounded in the mine ambush, William undergoes Hyper-Aptamer modification using Raven's device. During surgery, nightmares plague him—first appearing is Kaidan's team, the root of his troubles."
+            },
+            {
+              "id": 450305301,
+              "when": "after",
+              "n": 17,
+              "summary": "William survives the brutal procedure and emerges reborn. Ignoring physical limits and past glory, he vows to lead the 17th Mobile Squad to vengeance."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "slug": "gumusiay",
+      "pilot": "10103112",
+      "name": "Gumusiay",
+      "title": "\"Trust,\" an elusive mirage, we stand together, bound by our scars!",
+      "portrait": "Pilot_10103112A_half",
+      "unlock": {
+        "stage": 307
+      },
+      "image": "TEST-813_Raw",
+      "stages": [
+        {
+          "id": 101031121,
+          "kind": "main",
+          "code": "1",
+          "name": "Silver Fang",
+          "text": "The Epiphyllum girls, trapped in a frontier stronghold, enlisted the mercenary Gumusiay to aid their daring escape. The usually stoic Gumusiay found an unexpected kinship with these augmented maidens, their shared struggles forging a bond of silent understanding.",
+          "image": "TEST-813_Raw",
+          "rewards": [
+            {
+              "name": "Recruit Voucher",
+              "icon": "Icon_item_11000000",
+              "kind": "item",
+              "count": 1
+            }
+          ],
+          "scenes": [
+            {
+              "id": 450401101,
+              "when": "before",
+              "n": 17,
+              "summary": "Post-rescue by Rosa, the Sylvie Trio faces NDF pursuit. They contact a mercenary called Silver Fang through a broker who offers aid."
+            },
+            {
+              "id": 450401301,
+              "when": "after",
+              "n": 12,
+              "summary": "Silver Fang, actually Gumusiay, helps the Epiphyllum girls break the NDF blockade. She notices signs of their past modifications."
+            }
+          ]
+        },
+        {
+          "id": 101031122,
+          "kind": "main",
+          "code": "2",
+          "name": "Haze of Suspicion",
+          "text": "The Epiphyllum girls, on the run from the border, find themselves relentlessly hunted by UNCS's precision strike teams. Sylvie's suspicions grow: did their alliance with Gumusiay inadvertently compromise their security? Despite Hong's objections, both agree—a rendezvous with Gumusiay is critical.",
+          "image": "Icon_Map_RustTown_Raw",
+          "level": 24,
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 30
+            }
+          ],
+          "scenes": [
+            {
+              "id": 450402101,
+              "when": "before",
+              "n": 17,
+              "summary": "The Trio faces precise NDF strikes after parting with Gumusiay. Sylvie suspects betrayal, but Hong trusts their ally. Sylvie demands a meeting to verify Gumusiay's loyalty."
+            }
+          ]
+        },
+        {
+          "id": 101031123,
+          "kind": "main",
+          "code": "3",
+          "name": "Knives Out",
+          "text": "Gumusiay bids farewell to the Epiphyllum girls and returns to the frontier metropolis. There, a brutal ambush awaits—DL troops, led by her long-time fixer, hunt her with merciless precision.",
+          "image": "Icon_Map_City_Raw",
+          "level": 30,
+          "rewards": [
+            {
+              "name": "Recruit Voucher",
+              "icon": "Icon_item_11000000",
+              "kind": "item",
+              "count": 1
+            }
+          ],
+          "scenes": [
+            {
+              "id": 450403101,
+              "when": "before",
+              "n": 25,
+              "summary": "Back at the border, Gumusiay's broker betrays her to Dawnstar, who want her as a test subject."
+            },
+            {
+              "id": 450403301,
+              "when": "after",
+              "n": 31,
+              "summary": "Hong saves Gumusiay and invites her to join Epiphyllum. Gumusiay reveals she cares for orphans and can't leave. Suddenly, Obsidian contacts her—they have her kids."
+            }
+          ]
+        },
+        {
+          "id": 101031124,
+          "kind": "main",
+          "code": "4",
+          "name": "Reasons for Fear",
+          "text": "Hong, aiding Gumusiay, sought to enlist her in the Epiphyllum. But Gumusiay unveiled her past and combat limitations. Suddenly, Obsidian Group's transmission crackled through their comms.",
+          "image": "Icon_Map_Lab_Raw",
+          "level": 37,
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 30
+            }
+          ],
+          "scenes": [
+            {
+              "id": 450404101,
+              "when": "before",
+              "n": 27,
+              "summary": "Obsidian kidnaps Gumusiay's orphans to trap her and Hong. Despite the obvious trap, Gumusiay charges in to save them. The ambush wounds Hong while Gumusiay fights on."
+            },
+            {
+              "id": 450404301,
+              "when": "after",
+              "n": 11,
+              "summary": "Cornered, Gumusiay sacrifices herself so Hong can escape. Obsidian researchers prep her for re-modification."
+            }
+          ]
+        },
+        {
+          "id": 101031125,
+          "kind": "main",
+          "code": "5",
+          "name": "Rally & Rebirth",
+          "text": "Strapped to the operating table, Gumusiay flashes back to her past, haunted by failures. Pain and regret for what she couldn't safeguard consume her. Just as despair threatens to overwhelm, Hong and Sylvie burst in, shattering her darkness at the eleventh hour.",
+          "image": "Icon_Map_Lab3_Raw",
+          "level": 42,
+          "rewards": [
+            {
+              "name": "Recruit Voucher",
+              "icon": "Icon_item_11000000",
+              "kind": "item",
+              "count": 1
+            }
+          ],
+          "scenes": [
+            {
+              "id": 450405101,
+              "when": "before",
+              "n": 12,
+              "summary": "As Obsidian prepares to implant a tracker in the despairing Gumusiay, Hong returns with Sylvie to save their kindred spirit."
+            },
+            {
+              "id": 450405301,
+              "when": "after",
+              "n": 44,
+              "summary": "The Sylvie Trio meets Harvey to sail to Dawnstar while Gumusiay stays to infiltrate the UNCS. Meanwhile, Obsidian's activities catch Blair's eye, feeding his ambitions."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "slug": "harvey",
+      "pilot": "10102101",
+      "name": "Harvey",
+      "title": "No one has ever successfully taken anything from the GKD Parcel Service. Harvey's the first!",
+      "portrait": "Pilot_10102101A_half",
+      "unlock": {
+        "stage": 216
+      },
+      "image": "TEST-303_Raw",
+      "stages": [
+        {
+          "id": 101021011,
+          "kind": "main",
+          "code": "1",
+          "name": "New Order",
+          "text": "Harvey's initiation hit a snag. Ambushed at the employer's designated zone during herprobation. New gig, new dangers.",
+          "image": "TEST-303_Raw",
+          "rewards": [
+            {
+              "name": "Recruit Voucher",
+              "icon": "Icon_item_11000000",
+              "kind": "item",
+              "count": 1
+            }
+          ],
+          "scenes": [
+            {
+              "id": 450601101,
+              "when": "before",
+              "n": 20,
+              "summary": "Harvey meets a mysterious client at the black market bar. Initially wary of the client's sincerity, a massive deposit changes his mind."
+            },
+            {
+              "id": 450601301,
+              "when": "after",
+              "n": 10,
+              "summary": "Harvey aces the client's training op and gains approval. An escort ST guides him to the real cargo warehouse. Secret comms reveal a hidden plot."
+            }
+          ]
+        },
+        {
+          "id": 101021012,
+          "kind": "main",
+          "code": "2",
+          "name": "Unexpected Surprise",
+          "text": "Suspicions flare as Harvey eyes the distant warehouse. But now, she's got bogies on her six, gunning for the cargo.",
+          "image": "Icon_Map_Base_Raw",
+          "level": 24,
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 30
+            }
+          ],
+          "scenes": [
+            {
+              "id": 450602101,
+              "when": "before",
+              "n": 20,
+              "summary": "Harvey pilots to port with ST escort. The distant assigned warehouses force a custom route to gather scattered parts."
+            },
+            {
+              "id": 450602301,
+              "when": "after",
+              "n": 4,
+              "summary": "During transport, GKD intercepts. Harvey's retreat plan misses Dana's hidden attack, forcing cargo abandonment."
+            }
+          ]
+        },
+        {
+          "id": 101021013,
+          "kind": "main",
+          "code": "3",
+          "name": "The Uninvited",
+          "text": "Sirens blare! Harvey's clash with GKD Squad in the warehouses trips alarms. UNCS security systems roar to life, mech defenses online.",
+          "image": "Icon_Map_Harbor_Raw",
+          "level": 30,
+          "rewards": [
+            {
+              "name": "Recruit Voucher",
+              "icon": "Icon_item_11000000",
+              "kind": "item",
+              "count": 1
+            }
+          ],
+          "scenes": [
+            {
+              "id": 450603101,
+              "when": "before",
+              "n": 23,
+              "summary": "UNCS troops respond to warehouse chaos while Dana pursues. Harvey's radio calls to the client go unanswered. The escort STs also lose contact."
+            },
+            {
+              "id": 450603301,
+              "when": "after",
+              "n": 17,
+              "summary": "Harvey escapes to ship, attempts route deviation but mysterious warnings force return to course."
+            }
+          ]
+        },
+        {
+          "id": 101021014,
+          "kind": "main",
+          "code": "4",
+          "name": "On the Hook",
+          "text": "The GKD squad ambushed Harvey, laying out their alliance offer. Calculating as ever, Harvey played along and accepted Kaidan's terms.",
+          "image": "Icon_Map_Bridge_Raw",
+          "level": 37,
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 30
+            }
+          ],
+          "scenes": [
+            {
+              "id": 450604101,
+              "when": "before",
+              "n": 25,
+              "summary": "After losing UNCS pursuit, GKD tracks Harvey via Dana's beacon. They present sincere intel to negotiate."
+            }
+          ]
+        },
+        {
+          "id": 101021015,
+          "kind": "main",
+          "code": "5",
+          "name": "Aye, Captain!",
+          "text": "The client unleashed a swarm of STs to capture the quartet. But Harvey, ever-prepared, had an ace up her sleeve. With seamless teamwork, she flexed her epic sailing skills, leaving the UNCS reinforcements in the dust.",
+          "image": "Icon_Map_HighWay_Raw",
+          "level": 42,
+          "rewards": [
+            {
+              "name": "Recruit Voucher",
+              "icon": "Icon_item_11000000",
+              "kind": "item",
+              "count": 1
+            }
+          ],
+          "scenes": [
+            {
+              "id": 450605101,
+              "when": "before",
+              "n": 13,
+              "summary": "Anticipating the client's plan, Kaidan's team lures STs to Dana's kill zone in two supporting groups. The enraged client deploys all hidden units for total elimination."
+            },
+            {
+              "id": 450605301,
+              "when": "after",
+              "n": 25,
+              "summary": "Harvey evades UNCS forces with Kaidan's team aboard. Impressed, GKD unanimously invites Harvey to join. Thrilled by the unique adventure, he accepts."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "slug": "frida",
+      "pilot": "10103122",
+      "name": "Frida",
+      "title": "On this island, nothing's tough, except when three mercenaries strut their stuff.",
+      "portrait": "Pilot_10103122A_half",
+      "unlock": {
+        "stage": 716
+      },
+      "image": "Icon_Map_Base_Raw",
+      "stages": [
+        {
+          "id": 101031221,
+          "kind": "main",
+          "code": "1",
+          "name": "Valuable Goods",
+          "text": "Crushed by massive debt, Electric Eel Mercs' boss Frida is short-circuiting with anxiety.",
+          "image": "Icon_Map_Base_Raw",
+          "rewards": [
+            {
+              "name": "Recruit Voucher",
+              "icon": "Icon_item_11000000",
+              "kind": "item",
+              "count": 1
+            }
+          ],
+          "scenes": [
+            {
+              "id": 450701101,
+              "when": "before",
+              "n": 20,
+              "summary": "Debt-ridden Frida takes Movme's advice to raid valuable cargo at Burton Port. With the goods in hand, Movme's sticky fingers trigger the alarm."
+            }
+          ]
+        },
+        {
+          "id": 101031222,
+          "kind": "main",
+          "code": "2",
+          "name": "Inevitable Clash",
+          "text": "The Electric Eel Mercs won't back down until they snag their loot. Prepare for a shock!",
+          "image": "Icon_Map_Harbor_Raw",
+          "level": 24,
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 30
+            }
+          ],
+          "scenes": [
+            {
+              "id": 450702101,
+              "when": "before",
+              "n": 15,
+              "summary": "The Electric Eel returns for their prize, but find Movme's old rival Fenrir guarding the warehouse."
+            },
+            {
+              "id": 450702301,
+              "when": "after",
+              "n": 14,
+              "summary": "Their firefight draws heavy guard response. Frida and Fenrir forge a temporary alliance to break the siege."
+            }
+          ]
+        },
+        {
+          "id": 101031223,
+          "kind": "main",
+          "code": "3",
+          "name": "Who's the Boss?",
+          "text": "Battle buddies are cool, but the chain of command is key.",
+          "image": "Icon_Map_ChaosTown_Raw",
+          "level": 30,
+          "rewards": [
+            {
+              "name": "Recruit Voucher",
+              "icon": "Icon_item_11000000",
+              "kind": "item",
+              "count": 1
+            }
+          ],
+          "scenes": [
+            {
+              "id": 450703101,
+              "when": "before",
+              "n": 16,
+              "summary": "As they part ways, Electric Eel's Burton base sends an SOS. Desperate, Frida promises Fenrir high payment to help save her surrounded crew."
+            },
+            {
+              "id": 450703301,
+              "when": "after",
+              "n": 17,
+              "summary": "After routing the bullies, Frida reveals she's broke but has backup incoming. She warns Fenrir to play nice in Eel territory."
+            }
+          ]
+        },
+        {
+          "id": 101031224,
+          "kind": "main",
+          "code": "4",
+          "name": "Last Order",
+          "text": "Third time's the charm! The Electric Eel Mercs never quit. Defeat just fuels their fire!",
+          "image": "Icon_Map_Desert_Raw",
+          "level": 37,
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 30
+            }
+          ],
+          "scenes": [
+            {
+              "id": 450704101,
+              "when": "before",
+              "n": 24,
+              "summary": "Under threat, Fenrir spills cargo intel. Money talks, they plan a joint hit. Movme's attempt to blackmail them with his exit backfires as Frida lets him walk."
+            },
+            {
+              "id": 450704301,
+              "when": "after",
+              "n": 10,
+              "summary": "Deep in Parill Desert, the trio finally snags the cargo. They agree to meet the buyer together."
+            }
+          ]
+        },
+        {
+          "id": 101031225,
+          "kind": "main",
+          "code": "5",
+          "name": "Offline Deal",
+          "text": "When cash is on the line, deception runs rampant.",
+          "image": "Icon_Map_RustTown_Raw",
+          "level": 50,
+          "rewards": [
+            {
+              "name": "Recruit Voucher",
+              "icon": "Icon_item_11000000",
+              "kind": "item",
+              "count": 1
+            }
+          ],
+          "scenes": [
+            {
+              "id": 450705101,
+              "when": "before",
+              "n": 11,
+              "summary": "En route, Frida reveals to Movme: Eel forces await in ambush to take out Fenrir and recruit his crew. Movme eagerly agrees."
+            },
+            {
+              "id": 450705301,
+              "when": "after",
+              "n": 21,
+              "summary": "After defeating like-minded Fenrir, Frida absorbs his team. As they await the buyer, the cargo activates. A mystery operator reveals Electric Eel's new UNCS partnership, with orders and deposits incoming."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "slug": "seven",
+      "pilot": "10103120",
+      "name": "Seven",
+      "title": "Pochy Battle Record: #1150907",
+      "portrait": "Pilot_10103120A_half",
+      "unlock": {
+        "stage": 307
+      },
+      "image": "TEST-629_Raw",
+      "stages": [
+        {
+          "id": 101031201,
+          "kind": "main",
+          "code": "1",
+          "name": "Pochy Controversy",
+          "text": "A glitched machine sparked chaos with a rogue \"customer,\" but a shadowy hero swooped in to save the day.",
+          "image": "TEST-629_Raw",
+          "rewards": [
+            {
+              "name": "Recruit Voucher",
+              "icon": "Icon_item_11000000",
+              "kind": "item",
+              "count": 1
+            }
+          ],
+          "scenes": [
+            {
+              "id": 450901101,
+              "when": "before",
+              "n": 20,
+              "summary": "A customer reports Seven's Pochy shop to police over \"defective\" orders. A hooded woman challenges the complainer to settle it with an ST duel."
+            },
+            {
+              "id": 450901301,
+              "when": "after",
+              "n": 13,
+              "summary": "The mystery woman's piloting skills win it for Seven. Impressed by Seven's tech expertise, she reveals her identity and requests repair services."
+            }
+          ]
+        },
+        {
+          "id": 101031202,
+          "kind": "main",
+          "code": "2",
+          "name": "After the Storm",
+          "text": "Seven takes on Bella's mission: fix STs at refugee camp. Chaos erupts as the Ashes launch an assault!",
+          "image": "Icon_Map_ChaosTown_Raw",
+          "level": 24,
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 30
+            }
+          ],
+          "scenes": [
+            {
+              "id": 450902101,
+              "when": "before",
+              "n": 18,
+              "summary": "The man is a UNCS officer who vents his failure to get Pochy's blueprints and capture Bella on his men. Learning Bella's identity, he plots revenge while she faces an unexpected visitor."
+            },
+            {
+              "id": 450902301,
+              "when": "after",
+              "n": 18,
+              "summary": "Seven takes Bella's repair job at the refugee camp but faces NDF forces masquerading as The Ashes. The battle strengthens her bond with the refugees."
+            }
+          ]
+        },
+        {
+          "id": 101031203,
+          "kind": "main",
+          "code": "3",
+          "name": "Endless Calamities",
+          "text": "Seven's machine shop got ambushed! Returning to base, she's faced with a crew of uninvited \"guests\".",
+          "image": "Icon_Map_Base_Raw",
+          "level": 30,
+          "rewards": [
+            {
+              "name": "Recruit Voucher",
+              "icon": "Icon_item_11000000",
+              "kind": "item",
+              "count": 1
+            }
+          ],
+          "scenes": [
+            {
+              "id": 450903301,
+              "when": "after",
+              "n": 16,
+              "summary": "The NDF captures Seven and takes her to base. An officer pressures her to help develop Pochy tech. Despite generous terms, Seven uneasily complies to secure her freedom."
+            }
+          ]
+        },
+        {
+          "id": 101031204,
+          "kind": "main",
+          "code": "4",
+          "name": "Heart in Peril",
+          "text": "Blackmailed by the UNCS bigwig, Seven helped create Pochy, clueless about the nightmarish scheme lurking in the shadows...",
+          "image": "Icon_Map_Lab_Raw",
+          "level": 37,
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 30
+            }
+          ],
+          "scenes": [
+            {
+              "id": 450904101,
+              "when": "before",
+              "n": 25,
+              "summary": "Following UNCS orders, Seven tampers with Pochy's blueprint to expose the officer's true motives. After submission, his attitude flips. While imprisoned, Seven uncovers their real plan through Pochy."
+            },
+            {
+              "id": 450904301,
+              "when": "after",
+              "n": 5,
+              "summary": "During a mass NDF deployment, Seven swiftly neutralizes the remaining guards and races to warn the refugee camp."
+            }
+          ]
+        },
+        {
+          "id": 101031205,
+          "kind": "main",
+          "code": "5",
+          "name": "Battle of Trust",
+          "text": "The UNCS unleashed Pochy forces to crush the refugees. In a twist of fate, Seven escaped and raced to the battleground. Driven by the need to reclaim trust and shield the innocent, Seven and Bella clashed in an epic showdown, each fueled by their own iron-clad convictions.",
+          "image": "Icon_Map_Desert_Raw",
+          "level": 42,
+          "rewards": [
+            {
+              "name": "Recruit Voucher",
+              "icon": "Icon_item_11000000",
+              "kind": "item",
+              "count": 1
+            }
+          ],
+          "scenes": [
+            {
+              "id": 450905101,
+              "when": "before",
+              "n": 21,
+              "summary": "The NDF deploys massive Pochy units to suppress refugees. Officers question Seven's loyalty to sow discord. Seven arrives to clear her name through action."
+            },
+            {
+              "id": 450905301,
+              "when": "after",
+              "n": 33,
+              "summary": "Seven and Bella's teamwork defeats the NDF, rebuilding trust and friendship. The refugees hail Seven as Milkhama's finest machinist."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "slug": "hong",
+      "pilot": "10103110",
+      "name": "Hong",
+      "title": "Even if this island's strewn with traps galore, my fists of vengeance will breach every door.",
+      "portrait": "Pilot_10103110A_half",
+      "unlock": {
+        "stage": 616
+      },
+      "image": "Icon_Map_Base_Raw",
+      "stages": [
+        {
+          "id": 101031101,
+          "kind": "main",
+          "code": "1",
+          "name": "Revenge & Departure",
+          "text": "The Epiphyllum infiltrates a DL radar station to shake pursuit, discovering an unexpected prize...",
+          "image": "Icon_Map_Base_Raw",
+          "rewards": [
+            {
+              "name": "Recruit Voucher",
+              "icon": "Icon_item_11000000",
+              "kind": "item",
+              "count": 1
+            }
+          ],
+          "scenes": [
+            {
+              "id": 450801101,
+              "when": "before",
+              "n": 19,
+              "summary": "DL drone tracking leads to constant Obsidian pursuit. The frustrated Epiphyllum girls move to eliminate this threat."
+            },
+            {
+              "id": 450801301,
+              "when": "after",
+              "n": 24,
+              "summary": "Hong and Gumusiay destroy the radar station, discovering intel on Rosa. Sylvie splits the team to pursue this lead."
+            }
+          ]
+        },
+        {
+          "id": 101031102,
+          "kind": "main",
+          "code": "2",
+          "name": "Drums of War",
+          "text": "Hong and Emily's peaceful days end as trouble finds them once again...",
+          "image": "Icon_Map_ChaosTown_Raw",
+          "level": 37,
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 30
+            }
+          ],
+          "scenes": [
+            {
+              "id": 450802101,
+              "when": "before",
+              "n": 25,
+              "summary": "Resting Hong and Emily get caught in a rebel raid on League supplies. They strike first against the DLAF before being exposed."
+            },
+            {
+              "id": 450802301,
+              "when": "after",
+              "n": 9,
+              "summary": "Hong's team and rebels break the blockade, but major DL powers track their escape."
+            }
+          ]
+        },
+        {
+          "id": 101031103,
+          "kind": "main",
+          "code": "3",
+          "name": "Spear and Shield",
+          "text": "DL's elite forces guard the only path to the Rebel stronghold. In this clash of spear and shield, who will triumph?",
+          "image": "Icon_Map_TollStation_Raw",
+          "level": 42,
+          "rewards": [
+            {
+              "name": "Recruit Voucher",
+              "icon": "Icon_item_11000000",
+              "kind": "item",
+              "count": 1
+            }
+          ],
+          "scenes": [
+            {
+              "id": 450803101,
+              "when": "before",
+              "n": 19,
+              "summary": "Learning her radar sabotage disrupted rebel plans, Hong helps them breach Elite Diracca's defense line."
+            },
+            {
+              "id": 450803301,
+              "when": "after",
+              "n": 9,
+              "summary": "Hong matches Diracca but rebels falter. Commander Field's reinforcements secure their retreat."
+            }
+          ]
+        },
+        {
+          "id": 101031104,
+          "kind": "main",
+          "code": "4",
+          "name": "Concurrency Crisis",
+          "text": "The ST heist draws unwanted attention, plunging Hong's team into crisis.",
+          "image": "Icon_Map_Lab_Raw",
+          "level": 47,
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 30
+            }
+          ],
+          "scenes": [
+            {
+              "id": 450804101,
+              "when": "before",
+              "n": 19,
+              "summary": "Mystery forces hit the rebel base inside and out. Field defends outside while Hong tackles rogue STs in the hangar."
+            },
+            {
+              "id": 450804301,
+              "when": "after",
+              "n": 8,
+              "summary": "Hong downs the STs and saves the rebel machinist, but external defenses crack. Shawnee moves to intervene."
+            }
+          ]
+        },
+        {
+          "id": 101031105,
+          "kind": "main",
+          "code": "5",
+          "name": "Reborn in Flames",
+          "text": "Eileen Dizion leads her Obsidian Guard to destroy the base. Hong won't let that happen.",
+          "image": "Icon_Map_BaseCliff_Raw",
+          "level": 50,
+          "rewards": [
+            {
+              "name": "Recruit Voucher",
+              "icon": "Icon_item_11000000",
+              "kind": "item",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "slug": "melissa",
+      "pilot": "10103111",
+      "name": "Melissa",
+      "title": "She is looking for a way to escape...",
+      "portrait": "Pilot_10103111A_half",
+      "unlock": {
+        "stage": 716
+      },
+      "image": "Icon_Map_Desert_Raw",
+      "stages": [
+        {
+          "id": 101031111,
+          "kind": "main",
+          "code": "1",
+          "name": "Hunter & Bird",
+          "text": "After her treatment, Melissa's journey home turns perilous! Ambushed by shadowy mercs, she's trapped—until a enigmatic gunslinger swoops in to save the day!",
+          "image": "Icon_Map_Desert_Raw",
+          "rewards": [
+            {
+              "name": "Recruit Voucher",
+              "icon": "Icon_item_11000000",
+              "kind": "item",
+              "count": 1
+            }
+          ],
+          "scenes": [
+            {
+              "id": 451001101,
+              "when": "before",
+              "n": 19,
+              "summary": "Post-checkup, Melissa and guard Ryan face Doll mercs in a stopover town. Ryan draws pursuers away while Melissa uses buildings as cover."
+            },
+            {
+              "id": 451001301,
+              "when": "after",
+              "n": 35,
+              "summary": "At Melissa's urging, Warlord Hicks recruits Rebecca while preparing for the Doll Group showdown."
+            }
+          ]
+        },
+        {
+          "id": 101031112,
+          "kind": "main",
+          "code": "2",
+          "name": "Birdcage",
+          "text": "In a daring bid to prove their mettle, Melissa and Rebecca unleashed a high-octane rescue op in the Eastern mining sector. Little did they know, the Doll Group had anticipated their every move...",
+          "image": "Icon_Map_Mine_Raw",
+          "level": 24,
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 30
+            }
+          ],
+          "scenes": [
+            {
+              "id": 451002101,
+              "when": "before",
+              "n": 32,
+              "summary": "During maintenance, Melissa reveals she's Hicks' adopted war orphan from the Milthus blast, yearning to prove herself. An eastern mine distress call interrupts."
+            },
+            {
+              "id": 451002301,
+              "when": "after",
+              "n": 35,
+              "summary": "Wounded Ryan returns to Zelkova. Absent Hicks suspects Rebecca's betrayal and refuses Doll Group rep Alyson's terms. Melissa wakes in enemy HQ with Alyson."
+            }
+          ]
+        },
+        {
+          "id": 101031113,
+          "kind": "main",
+          "code": "3",
+          "name": "Birthday Party",
+          "text": "Chaos erupts as Melissa's enemy, Alyson, hijacks her coming-of-age rite. Our heroine scrambles for an escape route, her mind a battlefield of confusion and survival instincts.",
+          "image": "Icon_Map_Lab4_Raw",
+          "level": 30,
+          "rewards": [
+            {
+              "name": "Recruit Voucher",
+              "icon": "Icon_item_11000000",
+              "kind": "item",
+              "count": 1
+            }
+          ],
+          "scenes": [
+            {
+              "id": 451003101,
+              "when": "before",
+              "n": 25,
+              "summary": "Alyson reveals the truth but Melissa seeks confirmation from Hicks."
+            },
+            {
+              "id": 451003301,
+              "when": "after",
+              "n": 19,
+              "summary": "Melissa and Rebecca's reunion turns hostile over helping Hicks. Melissa's trap exposes Rebecca's betrayal."
+            }
+          ]
+        },
+        {
+          "id": 101031114,
+          "kind": "main",
+          "code": "4",
+          "name": "Caged Bird",
+          "text": "Fury ignited Melissa's circuits after unmasking Rebecca's true identity. This traitor cowgirl's gonna pay big time—it's Melissa's ticket outta that prison.",
+          "image": "Icon_Map_Lab_Raw",
+          "level": 37,
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 30
+            }
+          ],
+          "scenes": [
+            {
+              "id": 451004101,
+              "when": "before",
+              "n": 9,
+              "summary": "Melissa moves to kill the unresisting Rebecca. Mining STs confirm the truth as Ryan's team arrives. Under Hicks' orders, they attack Rebecca and target the base."
+            },
+            {
+              "id": 451004301,
+              "when": "after",
+              "n": 21,
+              "summary": "A debate erupts over killing Ryan. Seeing Melissa's naivety, Rebecca reveals her vendetta and cripples Melissa's ST before heading solo for revenge. Alyson appears in Melissa's despair."
+            }
+          ]
+        },
+        {
+          "id": 101031115,
+          "kind": "main",
+          "code": "5",
+          "name": "Rebirth",
+          "text": "Rebecca's Meister squad swooped in to thwart Hicks' Arashi Ore detonation plot. Despite her valiant effort, she faltered in single combat. Just then, the enigmatic Melissa materialized—this Canary's metamorphosis was about to reach its climax.",
+          "image": "Icon_Map_Mine_Raw",
+          "level": 42,
+          "rewards": [
+            {
+              "name": "Recruit Voucher",
+              "icon": "Icon_item_11000000",
+              "kind": "item",
+              "count": 1
+            }
+          ],
+          "scenes": [
+            {
+              "id": 451005101,
+              "when": "before",
+              "n": 20,
+              "summary": "Rebecca moves to stop Hicks' mine bombing plot. His treatment of Melissa enrages her as the final battle begins."
+            },
+            {
+              "id": 451005301,
+              "when": "after",
+              "n": 67,
+              "summary": "War hero Hicks regrets his past, seeing Melissa's protection as redemption while exploiting local miners. After his death, Melissa inherits his assets, partners with Alyson to dodge UNCS, and bounty hunts with Rebecca to pay massive debts."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "slug": "sylvie",
+      "pilot": "10103119",
+      "name": "Sylvie",
+      "title": "Nobody should have to endure the world's cruelty, but she did, and I have inherited her will.",
+      "portrait": "Pilot_10103119A_half",
+      "image": "Icon_Map_Lab_Raw",
+      "stages": [
+        {
+          "id": 101031191,
+          "kind": "main",
+          "code": "1",
+          "name": "Pretense",
+          "text": "As Sylvie probed deeper into Cicero's plan, she uncovered the sinister machinations lurking behind the scientist's façade of righteousness. Gathering her courage, Sylvie plunged forward, determined to thwart the wicked plan for good.",
+          "image": "Icon_Map_Lab_Raw",
+          "rewards": [
+            {
+              "name": "Recruit Voucher",
+              "icon": "Icon_item_11000000",
+              "kind": "item",
+              "count": 1
+            }
+          ],
+          "scenes": [
+            {
+              "id": 506051101,
+              "when": "before",
+              "n": 21
+            },
+            {
+              "id": 506051301,
+              "when": "after",
+              "n": 19
+            }
+          ]
+        },
+        {
+          "id": 101031192,
+          "kind": "main",
+          "code": "2",
+          "name": "Price",
+          "text": "Backed by military forces, Cicero and the DL seize Sylvie and Hong for live test subject! As the clock ticks, Gumusiay's reinforcements swoop in. The Epiphyllum trio face off against the power-hungry Cicero in an explosive showdown!",
+          "image": "Icon_Map_Lab2_Raw",
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 30
+            }
+          ],
+          "scenes": [
+            {
+              "id": 506052101,
+              "when": "before",
+              "n": 25
+            },
+            {
+              "id": 506052301,
+              "when": "after",
+              "n": 15
+            }
+          ]
+        },
+        {
+          "id": 101031193,
+          "kind": "main",
+          "code": "3",
+          "name": "Encroachment",
+          "text": "The Epiphyllum, locked and loaded, stands ready to demolish Cicero Lab. But Obsidian Group unleashes their ultimate weapon: the savage Predators.",
+          "image": "Icon_Map_Lab3_Raw",
+          "rewards": [
+            {
+              "name": "Recruit Voucher",
+              "icon": "Icon_item_11000000",
+              "kind": "item",
+              "count": 1
+            }
+          ],
+          "scenes": [
+            {
+              "id": 506053101,
+              "when": "before",
+              "n": 28
+            },
+            {
+              "id": 506053301,
+              "when": "after",
+              "n": 22
+            }
+          ]
+        },
+        {
+          "id": 101031194,
+          "kind": "main",
+          "code": "4",
+          "name": "Memory",
+          "text": "The Predator clash ended in carnage. As Sylvie guided the Epiphyllum's tactical withdrawal, memories of Rosa surged through her mind—their final desperate escape etched in her thoughts.",
+          "image": "Icon_Map_Base_Raw",
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 30
+            }
+          ],
+          "scenes": [
+            {
+              "id": 506504101,
+              "when": "before",
+              "n": 26
+            },
+            {
+              "id": 506504301,
+              "when": "after",
+              "n": 20
+            }
+          ]
+        },
+        {
+          "id": 101031195,
+          "kind": "main",
+          "code": "5",
+          "name": "Nestling",
+          "text": "The Predator Catherine blasted toward the Epiphyllum trio at mach speed. Outgunned and outmaneuvered, Sylvie made the ultimate call: self-sacrifice to save her sisters.",
+          "image": "Icon_Map_Desert_Raw",
+          "rewards": [
+            {
+              "name": "Recruit Voucher",
+              "icon": "Icon_item_11000000",
+              "kind": "item",
+              "count": 1
+            }
+          ],
+          "scenes": [
+            {
+              "id": 506505101,
+              "when": "before",
+              "n": 27
+            },
+            {
+              "id": 506505301,
+              "when": "after",
+              "n": 46
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "slug": "fia",
+      "pilot": "10103137",
+      "name": "Fia",
+      "title": "The Call of Home",
+      "portrait": "Pilot_10103137A_half",
+      "opens": "2026-11-05",
+      "banner": {
+        "id": 75,
+        "name": "Guns and Roses"
+      },
+      "image": "Icon_Map_Harbor_Raw",
+      "stages": [
+        {
+          "id": 101031371,
+          "kind": "main",
+          "code": "1",
+          "name": "Depart",
+          "text": "After going through so much on Milkhama, Fia finally learns of a way back to the Principality of Ovett... but the road home isn't as smooth as Ovett's famed literature suggests.",
+          "image": "Icon_Map_Harbor_Raw",
+          "rewards": [
+            {
+              "name": "Recruit Voucher",
+              "icon": "Icon_item_11000000",
+              "kind": "item",
+              "count": 1
+            }
+          ],
+          "scenes": [
+            {
+              "id": 560801101,
+              "when": "before",
+              "n": 38,
+              "summary": "The girl braved many a hardship before finally arriving at the harbor of her hometown..."
+            },
+            {
+              "id": 560801301,
+              "when": "after",
+              "n": 42,
+              "summary": "Fia was unable to board the ship home and instead fell into the Doll Group's trap. \nAt Alyson's invitation, she had no choice but to attend this ill-intentioned tea party."
+            }
+          ]
+        },
+        {
+          "id": 101031372,
+          "kind": "main",
+          "code": "2",
+          "name": "Special Report!",
+          "text": "Erisa learns about the secret dealings of the Doll Group from the information dealer. Such mysterious orders always pique her interest...",
+          "image": "Base2_Raw",
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 30
+            }
+          ],
+          "scenes": [
+            {
+              "id": 560802101,
+              "when": "before",
+              "n": 24,
+              "summary": "In the meantime, Erisa was investigating a batch of orders closely related to the Doll Group through her information sources."
+            },
+            {
+              "id": 560802301,
+              "when": "after",
+              "n": 24,
+              "summary": "After shaking off her pursuers and returning to the safe house, Erisa reconnected with the previous information dealer."
+            }
+          ]
+        },
+        {
+          "id": 101031373,
+          "kind": "main",
+          "code": "3",
+          "name": "Journalist or Rat",
+          "text": "Fia is invited to a tea party by Alyson. Surprisingly, rather than confronting her, Alyson instead offers a contract that Fia cannot refuse.",
+          "image": "Icon_Map_Base2_Raw",
+          "rewards": [
+            {
+              "name": "Recruit Voucher",
+              "icon": "Icon_item_11000000",
+              "kind": "item",
+              "count": 1
+            }
+          ],
+          "scenes": [
+            {
+              "id": 560803101,
+              "when": "before",
+              "n": 19,
+              "summary": "At the tea party, Fia informs the others that the Doll Group's activities have drawn the attention of an unidentified journalist. \nAnd this journalist, like Fia, also comes from the UNCS laboratory..."
+            },
+            {
+              "id": 560803301,
+              "when": "after",
+              "n": 37,
+              "summary": "After watching the footage, Fia was certain that the person was her friend Erisa from the laboratory. \nAt this moment, Alyson also revealed her true identity."
+            }
+          ]
+        },
+        {
+          "id": 101031374,
+          "kind": "main",
+          "code": "4",
+          "name": "Dilemma",
+          "text": "Under Alyson's mix of persuasion and coercion, Fia ultimately has no choice but to accept the contract... becoming a pawn of her enemy.",
+          "image": "Icon_Map_BaseCliff_Raw",
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 30
+            }
+          ],
+          "scenes": [
+            {
+              "id": 560804101,
+              "when": "before",
+              "n": 43,
+              "summary": "Under Alyson's threats and coercion, Fia finally accepted the mission to hunt down Erisa."
+            },
+            {
+              "id": 560804301,
+              "when": "after",
+              "n": 28,
+              "summary": "During the mission, Fia and her group were ambushed by the UNCS, leading to a fierce battle."
+            }
+          ]
+        },
+        {
+          "id": 101031375,
+          "kind": "main",
+          "code": "5",
+          "name": "Ghost of the Past",
+          "text": "In her unconscious state, Fia recalls those painful yet unforgettable memories...",
+          "image": "Icon_Map_City_Raw",
+          "rewards": [
+            {
+              "name": "Recruit Voucher",
+              "icon": "Icon_item_11000000",
+              "kind": "item",
+              "count": 1
+            }
+          ],
+          "scenes": [
+            {
+              "id": 560805101,
+              "when": "before",
+              "n": 21,
+              "summary": "Fia fell into a coma. There, deep in her memory, she uncovered her past..."
+            },
+            {
+              "id": 560805301,
+              "when": "after",
+              "n": 43,
+              "summary": "After undergoing harsh experiments, Fia and Erisa are released to the lounge for a brief respite."
+            }
+          ]
+        },
+        {
+          "id": 101031376,
+          "kind": "main",
+          "code": "6",
+          "name": "Fruitless Farewell",
+          "text": "At last, Fia and Erisa seize their chance at freedom... And so begins an uprising that nearly engulfs the entire laboratory.",
+          "image": "Icon_Map_Lab_Raw",
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 30
+            }
+          ],
+          "scenes": [
+            {
+              "id": 560806101,
+              "when": "before",
+              "n": 33,
+              "summary": "When a breakout occurred in the laboratory, Fia and Erisa seized the chaos as their chance to escape."
+            },
+            {
+              "id": 560806301,
+              "when": "after",
+              "n": 33,
+              "summary": "After many twists and turns, the two were just one step away from escaping the laboratory, but just as they almost tasted freedom, their pursuers blocked their way... \nDisaster closed in."
+            }
+          ]
+        },
+        {
+          "id": 101031377,
+          "kind": "main",
+          "code": "7",
+          "name": "Awaited Reunion",
+          "text": "Fia awakens from unconsciousness and finds she is not buried beneath rubble and debris. That long-lost friend appears by her side once again.",
+          "image": "Icon_Map_BaseCliff_Raw",
+          "rewards": [
+            {
+              "name": "Recruit Voucher",
+              "icon": "Icon_item_11000000",
+              "kind": "item",
+              "count": 1
+            }
+          ],
+          "scenes": [
+            {
+              "id": 560807101,
+              "when": "before",
+              "n": 39,
+              "summary": "Fia awoke from unconsciousness; it was none other than Erisa who saved her from the rubble."
+            },
+            {
+              "id": 560807301,
+              "when": "after",
+              "n": 50,
+              "summary": "Using the factory's facilities, Fia and Erisa finally managed to shake off the UNCS patrol. \nAs they caught their breath, they took time to collect themselves."
+            }
+          ]
+        },
+        {
+          "id": 101031378,
+          "kind": "main",
+          "code": "8",
+          "name": "Unexpected Visitor",
+          "text": "Fia goes silent, and Erisa vanishes without a trace—Alyson, ever the careful strategist, slowly notices a flaw in her carefully laid scheme.",
+          "image": "Icon_Map_Base3_Raw",
+          "rewards": [
+            {
+              "name": "Solid Arashium",
+              "icon": "Icon_currency_002",
+              "kind": "item",
+              "count": 30
+            }
+          ],
+          "scenes": [
+            {
+              "id": 560808101,
+              "when": "before",
+              "n": 31,
+              "summary": "Alyson received a message from her subordinates, learning that the factory was attacked and Fia was missing. She is furious. \nBut just at that moment, she got another urgent message..."
+            },
+            {
+              "id": 560808301,
+              "when": "after",
+              "n": 31,
+              "summary": "After assisting Alyson in pushing back the enemy, Fia did not return to the team but left alone. \nFollowing Fia's trail, Alyson found an abandoned facility."
+            }
+          ]
+        },
+        {
+          "id": 101031379,
+          "kind": "main",
+          "code": "9",
+          "name": "Bomb in a Bracelet",
+          "text": "Alyson agrees to negotiations, yet the one who arrives is not Fia, but Erisa. The once-calm negotiation table begins to grow uncertain and dangerous...",
+          "image": "Icon_Map_Harbor2_Raw",
+          "rewards": [
+            {
+              "name": "Recruit Voucher",
+              "icon": "Icon_item_11000000",
+              "kind": "item",
+              "count": 1
+            }
+          ],
+          "scenes": [
+            {
+              "id": 560809101,
+              "when": "before",
+              "n": 57,
+              "summary": "Alyson arrived at the negotiation site, only to find that it was not Fia who came, but Erisa. \nSuddenly, the atmosphere became tense..."
+            },
+            {
+              "id": 560809301,
+              "when": "after",
+              "n": 73,
+              "summary": "The negative reports released by Fia and Erisa continued to ferment, eventually forcing Alyson to concede. \nAlyson dismissed the other Agents and spoke with Fia alone."
             }
           ]
         }

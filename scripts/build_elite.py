@@ -5,8 +5,10 @@ elite.js (EliteData).
 
     python3 scripts/build_elite.py
 
-Chapters (ConfigDataEliteBattleChapterInfo, by ID): name, its stages (Levels)
-and the rewards for collecting 6/12/18 stars across them (TotalStarRewards).
+Chapters (ConfigDataEliteBattleChapterInfo, by ID): slug (its page,
+elitebattle/<slug>/), name, picture (ChapterImagePath, "Img_elite_pic_02",
+extracted by extract_story_images.py), its stages (Levels) and the rewards for
+collecting 6/12/18 stars across them (TotalStarRewards).
 
 Stages (ConfigDataEliteBattleLevelInfo): number ("1-1"), name, energy cost,
 daily attempts and clear rewards (RewardDropId, resolved like the Story page's,
@@ -25,6 +27,7 @@ import sqlite3
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from build_pages import slugify  # noqa: E402
 from build_story import Rewards, STATS, clean, text  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -62,7 +65,8 @@ def main():
     chapters = []
     for c in con.execute('SELECT * FROM ConfigDataEliteBattleChapterInfo ORDER BY ID').fetchall():
         chapters.append({
-            'id': c['ID'], 'name': text(c['NameStrKey_EN']),
+            'id': c['ID'], 'slug': slugify(text(c['NameStrKey_EN'])), 'name': text(c['NameStrKey_EN']),
+            'image': text(c['ChapterImagePath']),
             'starRewards': [{'stars': s['Count'], 'rewards': rewards.get(s['DropId'], 'Elite chapter %d %d stars' % (
                 c['ID'], s['Count']))} for s in json.loads(c['TotalStarRewards'] or '[]')],
             'stages': [stage(con, rewards, lid) for lid in json.loads(c['Levels'] or '[]')],

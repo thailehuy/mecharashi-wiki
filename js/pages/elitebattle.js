@@ -1,6 +1,7 @@
 var Pages = window.Pages || {};
 
-// The Elite Battle page: every chapter's stages with their win/defeat and star
+// The Elite Battle page: every chapter as its picture (cards as on the Story page),
+// each opening its own page (elitebattle/<slug>/) with its stages' win/defeat and star
 // conditions, achievements and rewards, and the chapter's star rewards. Its data
 // (data/elite/elite.js, built by scripts/build_elite.py) is fetched the first
 // time the page opens; reward chips are drawn as on the Story page.
@@ -47,26 +48,55 @@ Pages.elitebattle = {
     );
   },
 
-  _chapter: function (c, kit) {
+  // A chapter's picture (scripts/extract_story_images.py).
+  _img: function (c) {
+    return c.image ? ASSET_BASE + 'data/elite/' + encodeURIComponent(c.image) + '.jpg' : null;
+  },
+
+  _title: function (c) { return c.id + '. ' + this._esc(c.name); },
+
+  _range: function (c) {
+    return c.stages.length + ' stages · ' + this._esc(c.stages[0].code) + ' to ' + this._esc(c.stages[c.stages.length - 1].code);
+  },
+
+  // ── Listing: a card per chapter, as on the Story page ───────────────────
+  _list: function (d) {
     var self = this;
+    return '<div class="event-grid">' + d.chapters.map(function (c) {
+      return Pages.story._card(App.href('elitebattle', c.slug), self._img(c), null, self._title(c), self._range(c));
+    }).join('') + '</div>';
+  },
+
+  // ── A chapter's own page (elitebattle/<slug>/) ──────────────────────────
+  _chapter: function (c, d) {
+    var self = this;
+    var kit = Pages.story._kit();
+    var i = d.chapters.indexOf(c);
+    var nav = function (x, label) {
+      return x ? '<a class="story-nav-link" href="' + App.href('elitebattle', x.slug) + '">' + label + '</a>' : '<span></span>';
+    };
+    var img = this._img(c);
     return (
-      '<details class="story-chapter" id="elite-ch-' + c.id + '">' +
-        '<summary class="boss-group-head"><h3>' + c.id + '. ' + this._esc(c.name) + '</h3>' +
-          '<span class="story-chapter-sub">' + c.stages.length + ' stages · ' +
-            this._esc(c.stages[0].code) + ' to ' + this._esc(c.stages[c.stages.length - 1].code) + '</span></summary>' +
-        (c.starRewards.length ? '<div class="skill-card elite-star-rewards"><div class="story-part-title">Star rewards</div>' +
-          c.starRewards.map(function (s) {
-            return self._rewards(s.stars + ' <i class="bi bi-star-fill"></i>', s.rewards, kit);
-          }).join('') + '</div>' : '') +
-        '<div class="story-stages">' + c.stages.map(function (st) { return self._stage(st, kit); }).join('') + '</div>' +
-      '</details>'
+      '<a href="' + App.href('elitebattle') + '" class="btn-back">&#8592; Back to Elite Battle</a>' +
+      '<div class="listing-header"><h1>' + this._title(c) + '</h1></div>' +
+      (img ? '<img class="event-hero story-hero" src="' + img + '" alt="" />' : '') +
+      '<p class="dispatch-intro">' + this._range(c) + '. Each stage\'s victory and defeat conditions, the three conditions that ' +
+        'each earn a star, its achievements and clear rewards; 6, 12 and 18 stars across the chapter earn its star rewards.</p>' +
+      (c.starRewards.length ? '<div class="skill-card elite-star-rewards"><div class="story-part-title">Star rewards</div>' +
+        c.starRewards.map(function (s) {
+          return self._rewards(s.stars + ' <i class="bi bi-star-fill"></i>', s.rewards, kit);
+        }).join('') + '</div>' : '') +
+      '<div class="story-stages">' + c.stages.map(function (st) { return self._stage(st, kit); }).join('') + '</div>' +
+      '<div class="story-nav">' + nav(d.chapters[i - 1], '&#8592; ' + (d.chapters[i - 1] ? this._title(d.chapters[i - 1]) : '')) +
+        nav(d.chapters[i + 1], (d.chapters[i + 1] ? this._title(d.chapters[i + 1]) : '') + ' &#8594;') + '</div>'
     );
   },
 
-  _content: function (d) {
-    var self = this;
-    var kit = Pages.story._kit();
-    return d.chapters.map(function (c) { return self._chapter(c, kit); }).join('');
+  // The chapter cards, or with a slug that chapter's own page.
+  _content: function (d, slug) {
+    if (!slug) return this._list(d);
+    var c = d.chapters.find(function (x) { return x.slug === slug; });
+    return c ? this._chapter(c, d) : '<p class="text-danger">Chapter not found.</p>';
   },
 
   _load: function () {
@@ -79,25 +109,27 @@ Pages.elitebattle = {
     return this._loading;
   },
 
-  render: function () {
+  // param: a chapter's slug (its own page).
+  render: function (param) {
     var self = this;
-    var body = window.EliteData ? this._content(window.EliteData) : '<div class="lore-loading">Loading…</div>';
+    var slug = param ? decodeURIComponent(param) : null;
+    var body = window.EliteData ? this._content(window.EliteData, slug) : '<div class="lore-loading">Loading…</div>';
     if (!window.EliteData) {
       // The page may have moved on by the time the data arrived.
       this._load().then(function () {
         var root = document.getElementById('elite-root');
-        if (root) root.innerHTML = self._content(window.EliteData);
+        if (root && root.getAttribute('data-slug') === (slug || '')) root.innerHTML = self._content(window.EliteData, slug);
       }, function () {
         var root = document.getElementById('elite-root');
         if (root) root.innerHTML = '<p class="text-danger">Couldn\'t load Elite Battle. Try again later.</p>';
       });
     }
     return (
-      '<div class="listing-header"><h1>Elite Battle</h1></div>' +
-      '<p class="dispatch-intro">Every Elite Battle chapter, with each stage\'s victory and defeat conditions, ' +
-        'the three conditions that each earn a star, its achievements and what each one gives, and its clear rewards. ' +
-        'Collecting 6, 12 and 18 stars across a chapter\'s stages earns its star rewards. Open a chapter to see its stages.</p>' +
-      '<div id="elite-root">' + body + '</div>'
+      (slug ? '' : '<div class="listing-header"><h1>Elite Battle</h1></div>' +
+        '<p class="dispatch-intro">Every Elite Battle chapter, with each stage\'s victory and defeat conditions, ' +
+          'the three conditions that each earn a star, its achievements and what each one gives, and its clear rewards. ' +
+          'Collecting 6, 12 and 18 stars across a chapter\'s stages earns its star rewards. Open a chapter to see its stages.</p>') +
+      '<div id="elite-root" data-slug="' + this._esc(slug || '') + '">' + body + '</div>'
     );
   },
 };

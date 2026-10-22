@@ -254,6 +254,34 @@ def events():
                ASSET_URL + quote(f'data/events/{e["image"]}.jpg'))
 
 
+def stories():
+    data = load('data/story/story.json')
+    for c in data['chapters']:
+        # "Main story Chapter III: Silent Foren River (XC 116, Apr. 01) ", then its stages on their own line. Image: its picture.
+        main = sum(1 for st in c['stages'] if st['kind'] == 'main')
+        side = sum(1 for st in c['stages'] if st['kind'] == 'side')
+        when = f' ({c["date"]})' if c.get('date') else ''
+        yield ('story', c['slug'], f'{c["name"]}: {c["title"]} — Story',
+               f'Main story {c["name"]}: {c["title"]}{when} \n{main} stages' + (f' and {side} side missions' if side else '') +
+               ' with their briefings, cutscenes and rewards',
+               ASSET_URL + quote(f'data/story/{c["image"]}.jpg'))
+    for s in data['sideStories']:
+        yield ('story', s['slug'], f'{s["name"]}: {s["title"]} — Side Story',
+               f'{s["name"]}\'s side story: {s["title"]} \n{len(s["stages"])} chapters with their briefings, cutscenes and rewards',
+               ASSET_URL + quote(f'data/story/{s["image"]}.jpg'))
+
+
+def elite_chapters():
+    data = load('data/elite/elite.json')
+    for c in data['chapters']:
+        # "Elite Battle chapter 3: Silent Foren River ", then its stages on their own line. Image: its picture.
+        stages = c['stages']
+        yield ('elitebattle', c['slug'], f'{c["name"]} — Elite Battle',
+               f'Elite Battle chapter {c["id"]}: {c["name"]} \n{len(stages)} stages ({stages[0]["code"]} to {stages[-1]["code"]}) '
+               'with their conditions, stars, achievements and rewards',
+               ASSET_URL + quote(f'data/elite/{c["image"]}.jpg'))
+
+
 # ── Output ────────────────────────────────────────────────────────────────────
 
 def route_titles(index_html):
@@ -360,7 +388,7 @@ def main():
             write(r, page_html(index_html, 1, label))
 
     count = 0
-    for items in (pilots, mechs, weapons, backpacks, modules, ac_seasons, co_chapters, events):
+    for items in (pilots, mechs, weapons, backpacks, modules, ac_seasons, co_chapters, events, stories, elite_chapters):
         seen = {}
         for route, param, title, description, image in items():
             slug = slugify(param)

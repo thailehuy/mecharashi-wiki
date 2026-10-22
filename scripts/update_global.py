@@ -28,8 +28,10 @@ Steps
                   A new Armed Conquest season stops build_bosses.py until its name is added to AC_SEASONS there
                   (release order); then rerun with --from data
     images        new drop/material/story/Elite, Simulated Battle, Covert Phantom, Memory Storm and event reward item icons, Border
-                  Conflict foe portraits, banner art and event pictures from the game's bundles into the assets repo
-                  (extract_item_icons.py, extract_banner_images.py, extract_event_images.py); pilot voice lines from its sound banks into the
+                  Conflict foe portraits, banner art, event pictures, the Story page's stage pictures and the Elite Battle
+                  chapters' pictures from the game's
+                  bundles into the assets repo (extract_item_icons.py, extract_banner_images.py, extract_event_images.py,
+                  extract_story_images.py); pilot voice lines from its sound banks into the
                   voices repo (extract_voices.py), then the Voice Lines tab's data (build_voice.py)
     compile       data/db/ -> the page bundles and builder index maps (compile.py)
 
@@ -103,6 +105,7 @@ def main():
         run(script('extract_item_icons.py'))
         run(script('extract_banner_images.py'))
         run(script('extract_event_images.py'))
+        run(script('extract_story_images.py'))
         run(script('extract_voices.py'))
         run(script('build_voice.py'))
     if 'compile' in todo:
