@@ -89,6 +89,7 @@ def plain(s):
 class Builder:
     def __init__(self, con):
         self.con = con
+        self.tables = {}             # table -> {ID: row}, filled by one()
         self.rewards = Rewards(con)
         self.mechs = load('mechs')
         self.diffs = OrderedDict()   # difficulty ID -> name ("30", ..., "Max")
@@ -102,7 +103,14 @@ class Builder:
             'SELECT ID, CurrencyType FROM ConfigDataCurrencyTypeInfo')}
 
     def one(self, table, i):
-        return self.con.execute('SELECT * FROM %s WHERE ID = ?' % table, (i,)).fetchone()
+        # The mined tables have no index on ID, so each table is read once into a dict (first row per ID wins,
+        # as with fetchone) instead of scanned per lookup.
+        rows = self.tables.get(table)
+        if rows is None:
+            rows = self.tables[table] = {}
+            for r in self.con.execute('SELECT * FROM %s' % table):
+                rows.setdefault(r['ID'], r)
+        return rows.get(i)
 
     def unit(self, tid):
         """(name, ST, wiki ST name or None, level) of a unit template."""
