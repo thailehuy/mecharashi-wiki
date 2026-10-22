@@ -312,6 +312,8 @@ MISC_DESCRIPTIONS = {
     'bosses':     'Every Armed Conquest and Clearance Ops boss, with the seasons and chapters it appears in.',
     'armedconquest': 'Bosses and HP per difficulty of every Armed Conquest season, each with a page of its bosses\' skills.',
     'clearanceops':  'Bosses and HP of every Clearance Ops chapter, each with a page of its bosses\' skills.',
+    'expansionops':  'Elite Battle, Simulated Battle, Memory Storm and Frontier Trial: every stage, its conditions and rewards.',
+    'frontiertrial': 'Every Frontier Trial stage with its grade conditions and first-clear and repeat rewards per formation type.',
     'elitebattle':   'Every Elite Battle stage with its win and star conditions, achievements and rewards.',
     'simulatedbattle': 'Every Simulated Battle stage with its modifiers, win conditions, chip algorithm unlocks and rewards.',
     'covertphantom': "Border Conflict's roguelike mode: every area's bosses and battles by difficulty, Alert Levels, tech tree and pilot masteries.",
@@ -319,9 +321,19 @@ MISC_DESCRIPTIONS = {
 }
 
 
+# Misc. pages reached through a hub page (Expansion Ops) instead of the nav,
+# so route_titles() doesn't see them.
+HUB_ROUTES = {
+    'elitebattle':     'Elite Battle',
+    'simulatedbattle': 'Simulated Battle',
+    'memorystorm':     'Memory Storm',
+    'frontiertrial':   'Frontier Trial',
+}
+
+
 def misc_routes(index_html):
-    """Routes linked under the "Misc." nav group in index.html."""
-    return re.findall(r'class="[^"]*\bnav-drawer-subitem\b[^"]*" href="\w+/" data-page="(\w+)"', index_html)
+    """Routes linked under the "Misc." nav group in index.html, and those reached through its hubs."""
+    return re.findall(r'class="[^"]*\bnav-drawer-subitem\b[^"]*" href="\w+/" data-page="(\w+)"', index_html) + list(HUB_ROUTES)
 
 
 def page_html(index_html, depth, title, description=None, image=None, url=None):
@@ -364,7 +376,7 @@ def absolute(site_url, path):
 def main():
     with open(os.path.join(ROOT, 'index.html'), encoding='utf-8') as f:
         index_html = f.read()
-    routes = route_titles(index_html)
+    routes = {**route_titles(index_html), **HUB_ROUTES}
 
     if sys.argv[1:] == ['--clean']:
         for r in routes:

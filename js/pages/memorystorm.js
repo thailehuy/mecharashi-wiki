@@ -7,6 +7,7 @@ var Pages = window.Pages || {};
 // not yet on global come from the CN client, their names fan-translated.
 Pages.memorystorm = {
   title: 'Memory Storm',
+  nav: 'expansionops',
   _loading: null,
 
   _esc: function (s) { return $('<span>').text(s).html(); },
@@ -137,6 +138,7 @@ Pages.memorystorm = {
       });
     }
     return (
+      '<a href="' + App.href('expansionops') + '" class="btn-back">&#8592; Back to Expansion Ops</a>' +
       '<div class="listing-header"><h1>Memory Storm</h1></div>' +
       '<div id="storm-root">' + body + '</div>'
     );

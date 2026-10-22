@@ -209,8 +209,9 @@ $(function () {
     }
     currentPage = page;
 
+    // A page without its own sidebar entry (e.g. Elite Battle) highlights its hub's.
     $('[data-page]').removeClass('active');
-    $('[data-page="' + page + '"]').addClass('active');
+    $('[data-page="' + (p.nav || page) + '"]').addClass('active');
 
     // Pages expect the param still URI-encoded, as it used to come straight from the hash.
     $('#app-content').html(p.render(param == null ? null : encodeURIComponent(param)));

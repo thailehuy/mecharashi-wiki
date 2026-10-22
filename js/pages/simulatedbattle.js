@@ -7,6 +7,7 @@ var Pages = window.Pages || {};
 // chips are drawn as on the Story page.
 Pages.simulatedbattle = {
   title: 'Simulated Battle',
+  nav: 'expansionops',
   _loading: null,
 
   _esc: function (s) { return $('<span>').text(s).html(); },
@@ -100,6 +101,7 @@ Pages.simulatedbattle = {
       });
     }
     return (
+      '<a href="' + App.href('expansionops') + '" class="btn-back">&#8592; Back to Expansion Ops</a>' +
       '<div class="listing-header"><h1>Simulated Battle</h1></div>' +
       '<p class="dispatch-intro">Every Simulated Battle chapter, with each stage\'s modifiers (and who they affect), ' +
         'its victory and defeat conditions and its clear rewards. A Chain Sim fights its battles one after another. ' +

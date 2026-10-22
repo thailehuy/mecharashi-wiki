@@ -7,6 +7,7 @@ var Pages = window.Pages || {};
 // time the page opens; reward chips are drawn as on the Story page.
 Pages.elitebattle = {
   title: 'Elite Battle',
+  nav: 'expansionops',
   _loading: null,
 
   _esc: function (s) { return $('<span>').text(s).html(); },
@@ -125,7 +126,8 @@ Pages.elitebattle = {
       });
     }
     return (
-      (slug ? '' : '<div class="listing-header"><h1>Elite Battle</h1></div>' +
+      (slug ? '' : '<a href="' + App.href('expansionops') + '" class="btn-back">&#8592; Back to Expansion Ops</a>' +
+        '<div class="listing-header"><h1>Elite Battle</h1></div>' +
         '<p class="dispatch-intro">Every Elite Battle chapter, with each stage\'s victory and defeat conditions, ' +
           'the three conditions that each earn a star, its achievements and what each one gives, and its clear rewards. ' +
           'Collecting 6, 12 and 18 stars across a chapter\'s stages earns its star rewards. Open a chapter to see its stages.</p>') +
