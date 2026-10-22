@@ -307,7 +307,7 @@ Pages.covertphantom = {
         'Pick a difficulty on the right: the enemies\' levels, the bosses\' rewards and the battles only on some difficulties follow it. ' +
         'On 30 to 70 the battles and bosses are the same, only stronger; Max adds its own battles, bosses and Alert Levels. ' +
         'The random events and their story are on the <a href="' + App.href('story') + '">Story</a> page\'s Border Conflict tab. ' +
-        'Reconstruction Logs are spent at the <a href="' + App.href('shops') + '#nostalgic-challenge-store">Nostalgic Challenge Store</a> on the Shops page.</p>' +
+        'It shares Border Conflict\'s store: see the <a href="' + App.href('shops') + '#border-shop">Border FTZ</a> on the Shops page.</p>' +
       '<div id="cp-root" class="boss-group">' + body + '</div>'
     );
   },

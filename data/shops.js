@@ -3,7 +3,7 @@ window.ShopsData = {
   // may not exactly match Global.
   note: 'Compiled from CN datamine records. CN version numbers are approximate — Global timing and order may differ.',
 
-  // Nostalgic Challenge Store (Covert Phantom's Refactor-in-Crisis): two pilot
+  // Nostalgic Challenge Store (Refactor-in-Crisis's own store): two pilot
   // pledges per version, only one of which can be bought.
   crisis: [
     { version: '2.4', pilots: ['Kelly', 'Naomi'] },

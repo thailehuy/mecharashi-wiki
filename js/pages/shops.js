@@ -1,6 +1,6 @@
 var Pages = window.Pages || {};
 
-var SHOP_LABEL = { arena: 'Arena Shop', border: 'Border Conflict Shop' };
+var SHOP_LABEL = { arena: 'Arena Shop', border: 'Border FTZ' };
 
 // Strips markup (<color=..>, <buf ID=..>[Name]</buf>, etc.) down to plain
 // text for use in a hover title attribute, where HTML tags render literally.
@@ -62,7 +62,7 @@ Pages.shops = {
     return (
       '<div class="ac-section" id="nostalgic-challenge-store">' +
         '<h2 class="ac-section-title shop-section-title">Nostalgic Challenge Store</h2>' +
-        '<p class="dispatch-intro">Covert Phantom\'s Refactor-in-Crisis store, paid in Reconstruction Logs. ' +
+        '<p class="dispatch-intro">Refactor-in-Crisis\'s own store, paid in Reconstruction Logs. ' +
           'Each version adds a RiC Pilot Conscription Order (3,000 Logs) that lets you pick 1 of its 2 pilots.</p>' +
         '<div class="dispatch-table-wrap">' +
           '<table class="dispatch-table">' +
@@ -130,8 +130,9 @@ Pages.shops = {
     }).join('');
 
     return (
-      '<div class="ac-section">' +
+      '<div class="ac-section" id="' + shopKey + '-shop">' +
         '<h2 class="ac-section-title shop-section-title">' + SHOP_LABEL[shopKey] + '</h2>' +
+        (shopKey === 'border' ? '<p class="dispatch-intro">Shared with Covert Phantom, Border Conflict\'s upgraded roguelike mode.</p>' : '') +
         '<div class="dispatch-table-wrap">' +
           '<table class="dispatch-table">' +
             '<thead><tr>' +

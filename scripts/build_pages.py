@@ -302,7 +302,7 @@ def route_titles(index_html):
 MISC_DESCRIPTIONS = {
     'dispatch':   'Patch-by-patch schedule of which STs were released in each dispatch group, and a calculator for the day your next dispatch ST completes.',
     'exskills':   'Reference of the universal EX skills for each weapon type.',
-    'shops':      'What the Arena and Border Conflict shops sell, and what each item does.',
+    'shops':      'What the Arena Shop and Border FTZ sell, and what each item does.',
     'banners':    'Every pilot and ST gacha banner by patch, with its dates and featured units.',
     'ststats':    'Sortable comparison table of firepower, HP and weight for every S-rank ST.',
     'pilotstats': 'Sortable comparison table of combat stats for every pilot.',
