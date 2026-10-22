@@ -16,8 +16,8 @@ Steps
                   (take_translations.py); a renamed pilot/ST is renamed in its weapons and the pages' release order
     crafting      the Workshop recipes of everything now on Global -> data/db/ weapons, backpacks, materials
                   (build_crafting.py), then compile.py
-    data          everything the wiki derives from the mined data: the DMG calc's bench data and icons (incl. the
-                  Armed Conquest line-ups), accessory chain traits, R&D features and totals, the Armed Conquest and
+    data          everything the wiki derives from the mined data: the DMG calc's bench data (from the master DB's
+                  bench catalog, incl. the Armed Conquest line-ups) and icons, accessory chain traits, R&D features and totals, the Armed Conquest and
                   Clearance Ops boss pages with their skills and drops (build_bosses.py), the banner list, then the
                   version global is on (set_global_version.py: the newest whose banners have opened; it prints that
                   version's banner timeline, sets GLOBAL_VERSION, which drops the CN-text warning from its pilots' and

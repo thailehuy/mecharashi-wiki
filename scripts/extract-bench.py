@@ -1,10 +1,11 @@
-"""Split the mined Damage Bench
-(data/screenshots/MRT_FieldWiki/working/drafts/Damage_Bench.html) into
-the files served at /dmgcalc/. Run: python3 scripts/extract-bench.py
+"""Build the files served at /dmgcalc/ from the global (EN) master DB's bench
+catalog (data/screenshots/MRT_FieldWiki/source/mecharashi.db, table bench_data,
+assembled as the mined wiki build does) and the bench page's template
+(source/templates/bench_template.html). Run: python3 scripts/extract-bench.py
 
-  dmgcalc/bench.css           the bench's <style> block
-  dmgcalc/bench.js            the bench's script, reading its data from window.BenchData
-  data/dmgcalc/bench-data.js  window.BenchData = the bench's embedded `const D = {...}`
+  dmgcalc/bench.css           the template's <style> block
+  dmgcalc/bench.js            the template's script, reading its data from window.BenchData
+  data/dmgcalc/bench-data.js  window.BenchData = the bench catalog
 
 dmgcalc/index.html (the markup, plus the link back to the wiki) is kept by hand;
 the script warns if an element id the script looks up is missing from it.
@@ -22,7 +23,9 @@ import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 HERE = os.path.join(ROOT, 'data', 'dmgcalc')
-SRC = os.path.join(HERE, '..', 'screenshots', 'MRT_FieldWiki', 'working', 'drafts', 'Damage_Bench.html')
+SOURCE = os.path.join(ROOT, 'data', 'screenshots', 'MRT_FieldWiki', 'source')
+DB = os.path.join(SOURCE, 'mecharashi.db')
+TEMPLATE = os.path.join(SOURCE, 'templates', 'bench_template.html')
 PAGE_DIR = os.path.join(ROOT, 'dmgcalc')
 OUT_CSS = os.path.join(PAGE_DIR, 'bench.css')
 OUT_JS = os.path.join(PAGE_DIR, 'bench.js')
@@ -120,18 +123,20 @@ def dedent(text):
 
 
 def main():
-    html = open(SRC, encoding='utf-8').read()
+    sys.path.insert(0, SOURCE)
+    import build_wiki
+    html = open(TEMPLATE, encoding='utf-8').read()
 
     css = re.search(r'<style>\n(.*?)</style>', html, re.S)
     script = re.search(r'<script>\n(.*?)</script>', html, re.S)
     if not css or not script:
-        sys.exit('Damage_Bench.html: <style> or <script> block not found')
+        sys.exit('bench_template.html: <style> or <script> block not found')
 
     lines = dedent(script.group(1)).split('\n')
     data_line = next((i for i, l in enumerate(lines) if l.startswith(DATA_PREFIX)), None)
     if data_line is None:
-        sys.exit('Damage_Bench.html: "%s{...}" line not found' % DATA_PREFIX)
-    data = json.loads(lines[data_line][len(DATA_PREFIX):].rstrip().rstrip(';'))
+        sys.exit('bench_template.html: "%s..." line not found' % DATA_PREFIX)
+    data = build_wiki.assemble(DB)
     # ST rarity (q: SR / SSR) from the wiki's mech DB, keyed by the ST's body part id
     with open(MECHS, encoding='utf-8') as f:
         mechs = json.load(f)
@@ -165,8 +170,8 @@ def main():
         if missing:
             print('warning: dmgcalc/index.html has no element with id: ' + ', '.join(missing))
 
-    meta = data.get('meta', {})
-    print('Damage Bench data: game build %s, built %s' % (meta.get('build'), meta.get('built')))
+    print('Damage Bench data from %s: %d STs, %d pilots, %d weapons, %d targets'
+          % (os.path.relpath(DB, ROOT), len(data['sts']), len(data['pilots']), len(data['weapons']), len(data['targets'])))
 
 
 if __name__ == '__main__':

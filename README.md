@@ -99,7 +99,7 @@ scripts/                          # Every build script; run them from the repo r
   check_skins.py                  # Fills each pilot's skin letters in data/db/pilots.json from the assets repo's half-body portraits
   extract-chain-traits.py         # → data/accessories/chain-traits.js/json (ChainTraitsData, SSR TAs/RAs + blocked pairs from the mined DB)
   generate-index-maps.py          # → data/builder/index-maps.js/json (BuilderIndexMaps)
-  extract-bench.py                # → data/dmgcalc/bench-data.js (BenchData) + dmgcalc/bench.js/css, from the mined Damage_Bench.html
+  extract-bench.py                # → data/dmgcalc/bench-data.js (BenchData) + dmgcalc/bench.js/css, from the global master DB's bench catalog and the bench template
   build-icons.py                  # → data/dmgcalc/bench-icons.js (BenchIcons, the DMG calc's dropdown icons)
   build_features.py               # → data/features/features.json/js (FeaturesData, every R&D feature from the mined DB, for the Features page)
   build_rd_totals.py              # → data/rd/rd-totals.json/js (RDTotalsData, max R&D bonuses from the mined DB, for the R&D Bonus page and DMG calculator)
@@ -277,21 +277,20 @@ The individual nodes and features are in the `rd_nodes` and `rd_features` tables
 
 **DMG Calc (`dmgcalc/`)**
 
-The DMG Calc page is the mined `Damage_Bench.html`, split into files the site serves. The calculation is final, so updates should only bring new data (e.g. new pilots). To update it after a new extraction:
+The DMG Calc page is the mined Damage Bench, split into files the site serves. The calculation is final, so updates should only bring new data (e.g. new pilots, bosses and Armed Conquest seasons). `update_global.py` refreshes the data in its `data` step; to do it by hand after a new extraction:
 
-1. Put the new mined files in `data/screenshots/MRT_FieldWiki/` (the script reads `working/drafts/Damage_Bench.html`).
-2. Run `python3 scripts/extract-bench.py`. It regenerates:
-   - `dmgcalc/bench.css`: the bench's `<style>` block.
-   - `dmgcalc/bench.js`: the bench's script, with its embedded `const D = {...}` replaced by `const D = window.BenchData;`.
-   - `data/dmgcalc/bench-data.js`: `window.BenchData = {...}` (~1.8 MB, loaded only by this page).
+1. Rebuild the global master DB (`data/screenshots/MRT_FieldWiki/source/mecharashi.db`) with `rebuild_all.py`; its `benchdata` step writes the bench catalog (table `bench_data`).
+2. Run `python3 scripts/extract-bench.py --data-only`. It assembles the catalog as the mined wiki build does (`build_wiki.assemble`: `alias_src` becomes `alias`, `impr_tbl` / `fixed_ids` are dropped, empty `units` / `meta` are added), prunes it, and writes `data/dmgcalc/bench-data.js`: `window.BenchData = {...}` (~1.8 MB, loaded only by this page). Without `--data-only` it also regenerates, from `source/templates/bench_template.html`:
+   - `dmgcalc/bench.css`: the template's `<style>` block.
+   - `dmgcalc/bench.js`: the template's script, with its `const D = /*__DATA__*/null;` replaced by `const D = window.BenchData;`.
 
-   It prints the game build and data date, and warns if `dmgcalc/index.html` is missing an element id the script looks up.
+   Both files carry hand edits (Calculate button, rarity filters, icon dropdowns), so normally use `--data-only`. It prints the DB and how many STs, pilots, weapons and targets it took, and warns if `dmgcalc/index.html` is missing an element id the script looks up.
 
    Then run `python3 scripts/build-icons.py`. It writes `data/dmgcalc/bench-icons.js` (`window.BenchIcons`): an icon for each ST, pilot, weapon, skill, module, feature, backpack, accessory and boss in the bench data, matched by ID or name to the wiki's compiled data. `bench.js` draws dropdowns whose options have icons as a button and list in place of the native `<select>` (`iconSelects`). Items it can't match just show no icon.
-3. If it warned, copy the changed markup from `Damage_Bench.html` into `dmgcalc/index.html`. That file is kept by hand: it's the bench's markup plus the page title, the "DMG Calc · Beta" heading, the "← Mecharashi Wiki" link and the two `<script>` tags. Don't overwrite it wholesale.
+3. If it warned, copy the changed markup from the bench template into `dmgcalc/index.html`. That file is kept by hand: it's the bench's markup plus the page title, the "DMG Calc · Beta" heading, the "← Mecharashi Wiki" link and the two `<script>` tags. Don't overwrite it wholesale.
 4. Open `dmgcalc/` locally (see Running locally) and check the console for errors, then commit the three generated files.
 
-Don't take the data from the DB's `bench_data` table: it lacks some weapons, accessories and effects that the HTML has, and its helper sections differ (`alias_src` / `impr_tbl` / `fixed_ids` instead of `alias` / `units` / `meta`). Like the DB, the bench data covers Global only up to v2.5, so newer pilots, STs and weapons aren't in the calculator yet.
+The bench data covers Global only up to v2.5, so newer pilots, STs and weapons aren't in the calculator yet.
 
 ### Running locally
 
