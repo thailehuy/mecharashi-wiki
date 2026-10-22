@@ -2503,7 +2503,7 @@
           "type": "CurrencyType_PlotActivityToken4",
           "name": "Union Vouchers",
           "icon": "Icon_currency_ActivityToken4",
-          "text": "A time-limited voucher issued by the UNCS and DL. Redeemable for select logistics goods.",
+          "text": "Time-limited vouchers issued by the UNCS and DL. Redeemable for select logistics goods.",
           "use": "Milkhama Barrage event item. Can be exchanged for goods in the Event Shop."
         }
       ]
@@ -3918,7 +3918,7 @@
           "type": "CurrencyType_PlotActivityToken4",
           "name": "Union Vouchers",
           "icon": "Icon_currency_ActivityToken4",
-          "text": "A time-limited voucher issued by the UNCS and DL. Redeemable for select logistics goods.",
+          "text": "Time-limited vouchers issued by the UNCS and DL. Redeemable for select logistics goods.",
           "use": "Milkhama Barrage event item. Can be exchanged for goods in the Event Shop."
         }
       ]
@@ -9808,6 +9808,8 @@
       "slug": "milkhama-barrage-rerun-2",
       "name": "Milkhama Barrage",
       "rerun": 2,
+      "start": "2026-10-22",
+      "end": "2026-11-12",
       "image": "PlotActivityOnlyChallengeUIPrefab",
       "stages": [
         {
@@ -9862,7 +9864,7 @@
                   "achievements": [
                     {
                       "name": "Eliminate Entirely",
-                      "text": "All of Seven's parts have been destroyed before her defeat",
+                      "text": "All of Seven's parts are destroyed before her defeat.",
                       "rewards": [
                         {
                           "name": "Solid Arashium",
@@ -9886,7 +9888,7 @@
                     },
                     {
                       "name": "Root Control",
-                      "text": "The Repair Guide has never exceeded 12 stack(s)",
+                      "text": "The Repair Guide never exceeds 12 stacks.",
                       "rewards": [
                         {
                           "name": "Union Vouchers",
@@ -10028,7 +10030,7 @@
                   "achievements": [
                     {
                       "name": "A Walk in the Park",
-                      "text": "Wyatt has never been attacked by a Gunport",
+                      "text": "Wyatt is not attacked by a Gunport.",
                       "rewards": [
                         {
                           "name": "Solid Arashium",
@@ -10040,7 +10042,7 @@
                     },
                     {
                       "name": "Total Domination",
-                      "text": "When Wyatt is defeated, have more than 3 stacks of Heroism - EX.",
+                      "text": "When Wyatt is defeated, he has more than 3 stacks of Heroism - EX.",
                       "rewards": [
                         {
                           "name": "Bay Bits",
@@ -10052,7 +10054,7 @@
                     },
                     {
                       "name": "Rapid Attack",
-                      "text": "Wyatt's Revenge does not exceed 20 stack(s)",
+                      "text": "Wyatt's Revenge never exceeds 20 stacks.",
                       "rewards": [
                         {
                           "name": "Union Vouchers",
@@ -10138,7 +10140,7 @@
                     },
                     {
                       "name": "Another Day",
-                      "text": "Defeat Arthur",
+                      "text": "Defeat Arthur.",
                       "rewards": [
                         {
                           "name": "Union Vouchers",
@@ -10385,7 +10387,7 @@
                 "kind": "item",
                 "count": 1
               },
-              "price": 1000,
+              "price": 700,
               "currency": "CurrencyType_PlotActivityToken4",
               "limit": 1
             },
@@ -10396,7 +10398,7 @@
                 "kind": "item",
                 "count": 1
               },
-              "price": 500,
+              "price": 350,
               "currency": "CurrencyType_PlotActivityToken4",
               "limit": 2
             },
@@ -10407,7 +10409,7 @@
                 "kind": "item",
                 "count": 1
               },
-              "price": 600,
+              "price": 490,
               "currency": "CurrencyType_PlotActivityToken4",
               "limit": 1
             },
@@ -10418,7 +10420,7 @@
                 "kind": "item",
                 "count": 1
               },
-              "price": 80,
+              "price": 50,
               "currency": "CurrencyType_PlotActivityToken4",
               "limit": 5
             },
@@ -10429,7 +10431,7 @@
                 "kind": "item",
                 "count": 1
               },
-              "price": 80,
+              "price": 50,
               "currency": "CurrencyType_PlotActivityToken4",
               "limit": 5
             },
@@ -10440,7 +10442,7 @@
                 "kind": "item",
                 "count": 1
               },
-              "price": 160,
+              "price": 150,
               "currency": "CurrencyType_PlotActivityToken4",
               "limit": 5
             },
@@ -10451,7 +10453,7 @@
                 "kind": "item",
                 "count": 50
               },
-              "price": 50,
+              "price": 40,
               "currency": "CurrencyType_PlotActivityToken4",
               "limit": 8
             },
@@ -10462,7 +10464,7 @@
                 "kind": "item",
                 "count": 50
               },
-              "price": 200,
+              "price": 100,
               "currency": "CurrencyType_PlotActivityToken4",
               "limit": 5
             },
@@ -10475,6 +10477,28 @@
               },
               "price": 20,
               "currency": "CurrencyType_PlotActivityToken4",
+              "limit": 30
+            },
+            {
+              "item": {
+                "name": "Expansive Flash",
+                "icon": "Icon_item_11800000",
+                "kind": "item",
+                "count": 1
+              },
+              "price": 30,
+              "currency": "CurrencyType_PlotActivityToken4",
+              "limit": 20
+            },
+            {
+              "item": {
+                "name": "Rapid Suppression Order",
+                "icon": "Icon_item_11100002",
+                "kind": "item",
+                "count": 1
+              },
+              "price": 30,
+              "currency": "CurrencyType_PlotActivityToken4",
               "limit": 20
             },
             {
@@ -10484,9 +10508,9 @@
                 "kind": "item",
                 "count": 1
               },
-              "price": 100,
+              "price": 80,
               "currency": "CurrencyType_PlotActivityToken4",
-              "limit": 5
+              "limit": 10
             },
             {
               "item": {
@@ -10495,9 +10519,9 @@
                 "kind": "item",
                 "count": 1
               },
-              "price": 80,
+              "price": 60,
               "currency": "CurrencyType_PlotActivityToken4",
-              "limit": 5
+              "limit": 10
             },
             {
               "item": {
@@ -10506,9 +10530,9 @@
                 "kind": "item",
                 "count": 1
               },
-              "price": 60,
+              "price": 40,
               "currency": "CurrencyType_PlotActivityToken4",
-              "limit": 5
+              "limit": 10
             },
             {
               "item": {
@@ -10517,7 +10541,7 @@
                 "kind": "item",
                 "count": 10000
               },
-              "price": 50,
+              "price": 20,
               "currency": "CurrencyType_PlotActivityToken4",
               "limit": 12
             }
@@ -10529,7 +10553,7 @@
           "type": "CurrencyType_PlotActivityToken4",
           "name": "Union Vouchers",
           "icon": "Icon_currency_ActivityToken4",
-          "text": "A time-limited voucher issued by the UNCS and DL. Redeemable for select logistics goods.",
+          "text": "Time-limited vouchers issued by the UNCS and DL. Redeemable for select logistics goods.",
           "use": "Milkhama Barrage event item. Can be exchanged for goods in the Event Shop."
         }
       ]

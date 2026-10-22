@@ -1263,7 +1263,7 @@ window.BossesData = {
                 },
                 {
                   "name": "Thermite",
-                  "description": "After actively attacking or executing a Code skill, deals Fixed DMG equal to 0.5x the user's Weapon ATK to the part with the lowest HP. This damage can destroy parts."
+                  "description": "After actively attacking or executing a Code skill, the part with the lowest HP takes Fixed DMG equal to 0.5x the applier's Weapon ATK. This damage can destroy parts."
                 },
                 {
                   "name": "Cold Seal",
@@ -1271,7 +1271,7 @@ window.BossesData = {
                 },
                 {
                   "name": "Burning II",
-                  "description": "At start of action, after actively attacking or executing a code skill, deals Fixed DMG equal to 2x the applier's Weapon ATK to the part with the lowest HP. This damage can destroy parts."
+                  "description": "At the start of the action and after actively attacking or executing a Code skill, the part with the lowest HP takes Fixed DMG equal to 2x the applier's Weapon ATK. This damage can destroy parts."
                 }
               ]
             },
@@ -1287,11 +1287,11 @@ window.BossesData = {
                 },
                 {
                   "name": "Thermite",
-                  "description": "After actively attacking or executing a Code skill, deals Fixed DMG equal to 0.5x the user's Weapon ATK to the part with the lowest HP. This damage can destroy parts."
+                  "description": "After actively attacking or executing a Code skill, the part with the lowest HP takes Fixed DMG equal to 0.5x the applier's Weapon ATK. This damage can destroy parts."
                 },
                 {
                   "name": "Burning II",
-                  "description": "At start of action, after actively attacking or executing a code skill, deals Fixed DMG equal to 2x the applier's Weapon ATK to the part with the lowest HP. This damage can destroy parts."
+                  "description": "At the start of the action and after actively attacking or executing a Code skill, the part with the lowest HP takes Fixed DMG equal to 2x the applier's Weapon ATK. This damage can destroy parts."
                 }
               ]
             },
@@ -1349,7 +1349,7 @@ window.BossesData = {
               ]
             }
           ],
-          "description": "Milkhama's Traps are always as numerous as the prey.",
+          "description": "On Milkhama, there's plenty of prey—and just as many pitfalls.",
           "bounties": [
             {
               "name": "Quick Resolution",
@@ -1554,7 +1554,7 @@ window.BossesData = {
               "description": "Initially adds a 155mm Cannon - Type II."
             }
           ],
-          "description": "Loyalty is like the moon in the water. It seems close, but is actually far away.",
+          "description": "Loyalty's like the moon reflected in the water: it's never quite as close as it looks.",
           "bounties": [
             {
               "name": "Quick Resolution",
@@ -1611,7 +1611,7 @@ window.BossesData = {
             {
               "name": "Gold Watch",
               "subtitle": "Only the surface is gold.",
-              "text": "The round case of the watch is covered in gold, with slight wear from use on the surface, and the edges and corners have a slightly faded plating. The watch on Garcia's left hand appears to be valuable, but in reality, it is just an ordinary mechanical watch plated with gold. However, he still treasures it—when he was young, he mistakenly believed it was extremely valuable and could help him cover his mother's medical expenses. He risked his life to snatch it from the Enemy Leader, getting shot in the process. Garcia keeps it with him to this day as a reminder not to make the same mistake again."
+              "text": "The round case of the watch is covered in gold, with slight wear from use on the surface, and the edges and corners have a slightly faded plating. The watch on Garcia's left hand appears to be valuable, but in reality, it is just an ordinary mechanical watch plated with gold. However, he still treasures it—when he was young, he mistakenly believed it was extremely valuable and could help him cover his mother's medical expenses. He risked his life to snatch it from an enemy boss, getting shot in the process. Garcia keeps it with him to this day as a reminder not to make the same mistake again."
             },
             {
               "name": "Milkhaman Eagle",
@@ -1795,7 +1795,7 @@ window.BossesData = {
               "description": "Initial enemy count increased."
             }
           ],
-          "description": "Glory and ideals shattered, leaving only dust and old blood.",
+          "description": "Glory and ideals shatter, leaving behind nothing but dust and old blood.",
           "bounties": [
             {
               "name": "Quick Resolution",
@@ -1847,7 +1847,7 @@ window.BossesData = {
             {
               "name": "Assault Shield",
               "subtitle": "It will refuse death on its owner's behalf.",
-              "text": "Made from polycarbonate, PC material, fiberglass, and a small amount of Arashium Alloy, this high-quality assault shield can withstand ranged attacks from light weapons at close range. It can even resist shockwaves and shrapnel from close-range explosions to a certain extent. It has helped Andrea reject the reaper's invitation several times and is her most trusted armed equipment."
+              "text": "Made from polycarbonate, fiberglass, and a small amount of arashium alloy, this high-quality assault shield can withstand ranged attacks from light weapons at close range. It can even resist shockwaves and shrapnel from close-range explosions to a certain extent. It has helped Andrea reject the reaper's invitation several times and is her most trusted armed equipment."
             },
             {
               "name": "Field Goggles",
@@ -3207,10 +3207,10 @@ window.BossesData = {
             {
               "name": "No Smoking",
               "conditions": {
-                "Normal": "Blazetrudge's Detonation does not exceed 2 stacks",
-                "Hard": "Blazetrudge's Detonation does not exceed 2 stacks",
-                "Extreme": "Blazetrudge's Detonation does not exceed 1 stack",
-                "Inferno": "Blazetrudge's Detonation does not exceed 1 stack"
+                "Normal": "Blazetrudge's Detonation never exceeds 2 stacks",
+                "Hard": "Blazetrudge's Detonation never exceeds 2 stacks",
+                "Extreme": "Blazetrudge's Detonation never exceeds 1 stack",
+                "Inferno": "Blazetrudge's Detonation never exceeds 1 stack"
               },
               "rewards": {
                 "Normal": "Solid Arashium ×20",
@@ -5237,7 +5237,7 @@ window.BossesData = {
               "buffs": [
                 {
                   "name": "Guard",
-                  "description": "Protects allies within 2 adjacent tiles from Assault and Ranged attacks. Triggers up to 2 times per turn and lasts 2 turns. Additionally, gains [Defensive Stance I]. Can only trigger 1 time per turn."
+                  "description": "Protects allies within <color=#F74848>1</color> adjacent tile from specific weapon types."
                 },
                 {
                   "name": "Re-ATK",
@@ -5250,10 +5250,6 @@ window.BossesData = {
                 {
                   "name": "Fortify",
                   "description": "DMG Dealt +5%, DMG Taken -5%. Stacks up to 99 times."
-                },
-                {
-                  "name": "Defensive Stance I",
-                  "description": "DMG Taken -15%."
                 }
               ]
             }
@@ -7055,11 +7051,7 @@ window.BossesData = {
                 },
                 {
                   "name": "Guard",
-                  "description": "Protects allies within 2 adjacent tiles from Assault and Ranged attacks. Triggers up to 2 times per turn and lasts 2 turns. Additionally, gains [Defensive Stance I]. Can only trigger 1 time per turn."
-                },
-                {
-                  "name": "Defensive Stance I",
-                  "description": "DMG Taken -15%."
+                  "description": "Protects allies within <color=#F74848>1</color> adjacent tile from specific weapon types."
                 }
               ]
             },
@@ -7087,15 +7079,11 @@ window.BossesData = {
                 },
                 {
                   "name": "Guard",
-                  "description": "Protects allies within 2 adjacent tiles from Assault and Ranged attacks. Triggers up to 2 times per turn and lasts 2 turns. Additionally, gains [Defensive Stance I]. Can only trigger 1 time per turn."
+                  "description": "Protects allies within <color=#F74848>1</color> adjacent tile from specific weapon types."
                 },
                 {
                   "name": "Re-ATK",
                   "description": "Can attack 2 times."
-                },
-                {
-                  "name": "Defensive Stance I",
-                  "description": "DMG Taken -15%."
                 }
               ],
               "kind": "passive"
@@ -11367,8 +11355,8 @@ window.BossesData = {
               "subtitle": "The barrier stops the sandstorm, but truth finds a way.",
               "text": {
                 "Normal": "These vintage glass Tactical Goggles boast superior durability and scratch resistance, but their hefty weight led to modern plastic variants taking their place.",
-                "Hard": "These vintage glass Tactical Goggles pack superior durability and scratch resistance but were phased out due to their hefty weight in favor of modern plastics. While piloting an ST, these retro specs proved unexpectedly vital—their glass lenses effectively shield against railgun flashes, letting pilots zero in on their targets with deadly precision.",
-                "Extreme": "A retro glass-made Tactical Goggles boasts superior durability and scratch resistance, though its hefty weight led to replacement by modern plastics. While piloting an ST, these vintage specs proved surprisingly effective at blocking intense flashes from railguns and similar weapons, enhancing targeting precision. Sadly, these classic goggles are no longer in circulation."
+                "Hard": "These vintage glass Tactical Goggles pack superior durability and scratch resistance but were phased out due to their hefty weight in favor of modern plastics. While piloting an ST, these retro specs proved unexpectedly vital—their glass lenses effectively shield against rail gun flashes, letting pilots zero in on their targets with deadly precision.",
+                "Extreme": "A retro glass-made Tactical Goggles boasts superior durability and scratch resistance, though its hefty weight led to replacement by modern plastics. While piloting an ST, these vintage specs proved surprisingly effective at blocking intense flashes from rail guns and similar weapons, enhancing targeting precision. Sadly, these classic goggles are no longer in circulation."
               }
             }
           ],
@@ -12125,11 +12113,7 @@ window.BossesData = {
                 },
                 {
                   "name": "Guard",
-                  "description": "Protects allies within 2 adjacent tiles from Assault and Ranged attacks. Triggers up to 2 times per turn and lasts 2 turns. Additionally, gains [Defensive Stance I]. Can only trigger 1 time per turn."
-                },
-                {
-                  "name": "Defensive Stance I",
-                  "description": "DMG Taken -15%."
+                  "description": "Protects allies within <color=#F74848>1</color> adjacent tile from specific weapon types."
                 }
               ],
               "kind": "passive"
@@ -12844,15 +12828,11 @@ window.BossesData = {
               "buffs": [
                 {
                   "name": "Guard",
-                  "description": "Protects allies within 2 adjacent tiles from Assault and Ranged attacks. Triggers up to 2 times per turn and lasts 2 turns. Additionally, gains [Defensive Stance I]. Can only trigger 1 time per turn."
+                  "description": "Protects allies within <color=#F74848>1</color> adjacent tile from specific weapon types."
                 },
                 {
                   "name": "Re-Act Disabled",
                   "description": "Disable the triggering of [Re-Act] and [Re-ATK]."
-                },
-                {
-                  "name": "Defensive Stance I",
-                  "description": "DMG Taken -15%."
                 },
                 {
                   "name": "Re-Act",
@@ -17578,11 +17558,7 @@ window.BossesData = {
                 },
                 {
                   "name": "Guard",
-                  "description": "Protects allies within 2 adjacent tiles from Assault and Ranged attacks. Triggers up to 2 times per turn and lasts 2 turns. Additionally, gains [Defensive Stance I]. Can only trigger 1 time per turn."
-                },
-                {
-                  "name": "Defensive Stance I",
-                  "description": "DMG Taken -15%."
+                  "description": "Protects allies within <color=#F74848>1</color> adjacent tile from specific weapon types."
                 }
               ]
             },
@@ -18474,15 +18450,11 @@ window.BossesData = {
                 },
                 {
                   "name": "Guard",
-                  "description": "Protects allies within 2 adjacent tiles from Assault and Ranged attacks. Triggers up to 2 times per turn and lasts 2 turns. Additionally, gains [Defensive Stance I]. Can only trigger 1 time per turn."
+                  "description": "Protects allies within <color=#F74848>1</color> adjacent tile from specific weapon types."
                 },
                 {
                   "name": "High-Level Sanction",
                   "description": "After attacking, inflicts [Crash] on the target hit."
-                },
-                {
-                  "name": "Defensive Stance I",
-                  "description": "DMG Taken -15%."
                 },
                 {
                   "name": "Crash",
@@ -18757,11 +18729,7 @@ window.BossesData = {
                 },
                 {
                   "name": "Guard",
-                  "description": "Protects allies within 2 adjacent tiles from Assault and Ranged attacks. Triggers up to 2 times per turn and lasts 2 turns. Additionally, gains [Defensive Stance I]. Can only trigger 1 time per turn."
-                },
-                {
-                  "name": "Defensive Stance I",
-                  "description": "DMG Taken -15%."
+                  "description": "Protects allies within <color=#F74848>1</color> adjacent tile from specific weapon types."
                 }
               ]
             }
@@ -21023,15 +20991,11 @@ window.BossesData = {
               "buffs": [
                 {
                   "name": "Guard",
-                  "description": "Protects allies within 2 adjacent tiles from Assault and Ranged attacks. Triggers up to 2 times per turn and lasts 2 turns. Additionally, gains [Defensive Stance I]. Can only trigger 1 time per turn."
+                  "description": "Protects allies within <color=#F74848>1</color> adjacent tile from specific weapon types."
                 },
                 {
                   "name": "Re-Act Disabled",
                   "description": "Disable the triggering of [Re-Act] and [Re-ATK]."
-                },
-                {
-                  "name": "Defensive Stance I",
-                  "description": "DMG Taken -15%."
                 },
                 {
                   "name": "Re-Act",
@@ -24274,11 +24238,7 @@ window.BossesData = {
                 },
                 {
                   "name": "Guard",
-                  "description": "Protects allies within 2 adjacent tiles from Assault and Ranged attacks. Triggers up to 2 times per turn and lasts 2 turns. Additionally, gains [Defensive Stance I]. Can only trigger 1 time per turn."
-                },
-                {
-                  "name": "Defensive Stance I",
-                  "description": "DMG Taken -15%."
+                  "description": "Protects allies within <color=#F74848>1</color> adjacent tile from specific weapon types."
                 }
               ]
             },
@@ -25313,11 +25273,11 @@ window.BossesData = {
               "buffs": [
                 {
                   "name": "Retract",
-                  "description": "Exit [Rack] Mode"
+                  "description": "Exits <buf ID=900111>[Directional Rack]</buf> Mode. Can continue to move after retracting."
                 },
                 {
-                  "name": "Rack",
-                  "description": "Stationary deployment, unable to move, grants a Special Bonus."
+                  "name": "Directional Rack",
+                  "description": "Stationary deployment. Unable to move. Attack range changes to a fixed direction area, but grants a special bonus."
                 }
               ]
             },
@@ -26270,11 +26230,7 @@ window.BossesData = {
                 },
                 {
                   "name": "Guard",
-                  "description": "Protects allies within 2 adjacent tiles from Assault and Ranged attacks. Triggers up to 2 times per turn and lasts 2 turns. Additionally, gains [Defensive Stance I]. Can only trigger 1 time per turn."
-                },
-                {
-                  "name": "Defensive Stance I",
-                  "description": "DMG Taken -15%."
+                  "description": "Protects allies within <color=#F74848>1</color> adjacent tile from specific weapon types."
                 }
               ]
             },

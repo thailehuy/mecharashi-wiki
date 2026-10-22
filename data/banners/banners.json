@@ -1982,26 +1982,12 @@
     },
     {
       "kind": "pilot",
-      "id": 71,
-      "name": "Targeted Recruitment: Sniper!",
-      "type": "selector",
-      "version": "2.4",
-      "upcoming": true,
-      "options": [
-        "Shawnee",
-        "Natalia",
-        "Sylvie",
-        "Kelly"
-      ],
-      "image": "PilotGachaSelectSniperItemPrefab"
-    },
-    {
-      "kind": "pilot",
       "id": 72,
       "name": "Ethereal Blade",
       "type": "limited",
       "version": "2.4",
-      "upcoming": true,
+      "start": "2026-10-22",
+      "end": "2026-11-12",
       "featured": [
         "Veronica"
       ],
@@ -2013,11 +1999,38 @@
       "name": "Crimson Resolve",
       "type": "limited",
       "version": "2.4",
-      "upcoming": true,
+      "start": "2026-10-22",
+      "end": "2026-11-05",
       "featured": [
         "Fregata"
       ],
       "image": "PilotGachaFregataItemPrefab"
+    },
+    {
+      "kind": "st",
+      "id": 75,
+      "name": "Moiraflare Eclipsar",
+      "type": "limited",
+      "version": "2.4",
+      "start": "2026-10-22",
+      "end": "2026-11-12",
+      "featured": [
+        "Prometheus"
+      ],
+      "image": "WapGachaPrometheusPoolItemPrefab"
+    },
+    {
+      "kind": "st",
+      "id": 76,
+      "name": "Strike! Shadowtroops!",
+      "type": "limited",
+      "version": "2.4",
+      "start": "2026-10-22",
+      "end": "2026-11-05",
+      "featured": [
+        "Shadowrabbit"
+      ],
+      "image": "WapGachaShadowrabbitPoolItemPrefab"
     },
     {
       "kind": "pilot",
@@ -2025,7 +2038,8 @@
       "name": "Strange Science",
       "type": "limited",
       "version": "2.4",
-      "upcoming": true,
+      "start": "2026-10-29",
+      "end": "2026-11-12",
       "featured": [
         "Paloma"
       ],
@@ -2033,22 +2047,120 @@
     },
     {
       "kind": "pilot",
+      "id": 5020,
+      "name": "HARPY T.R.O.O.P.S",
+      "type": "exchange",
+      "version": "2.4",
+      "start": "2026-10-29",
+      "end": "2026-11-12",
+      "options": [
+        "Arthur",
+        "Fia",
+        "Eileen"
+      ],
+      "image": "PilotGachaPilotExchangeItemPrefab"
+    },
+    {
+      "kind": "st",
+      "id": 77,
+      "name": "Thunderqueller",
+      "type": "limited",
+      "version": "2.4",
+      "start": "2026-10-29",
+      "end": "2026-11-12",
+      "featured": [
+        "Alicorn"
+      ],
+      "image": "WapGachaAlicornPoolItemPrefab"
+    },
+    {
+      "kind": "st",
+      "id": 5020,
+      "name": "Transoceanic Shipping",
+      "type": "exchange",
+      "version": "2.4",
+      "start": "2026-10-29",
+      "end": "2026-11-12",
+      "options": [
+        "Igniter",
+        "Mithril",
+        "Malthus"
+      ],
+      "image": "WapGachaWapExchangeItemPrefab"
+    },
+    {
+      "kind": "pilot",
       "id": 75,
       "name": "Guns and Roses",
       "type": "limited",
       "version": "2.4",
-      "upcoming": true,
+      "start": "2026-11-05",
+      "end": "2026-11-26",
       "featured": [
         "Vincenza"
       ],
       "image": "PilotGachaVernaLunoItemPrefab"
     },
     {
+      "kind": "st",
+      "id": 78,
+      "name": "Impenetrable Fortress",
+      "type": "limited",
+      "version": "2.4",
+      "start": "2026-11-05",
+      "end": "2026-11-26",
+      "featured": [
+        "Colossus"
+      ],
+      "image": "WapGachaColossusPoolItemPrefab"
+    },
+    {
+      "kind": "pilot",
+      "id": 5019,
+      "name": "The Singing Canary",
+      "type": "limited",
+      "version": "2.4",
+      "start": "2026-11-12",
+      "end": "2026-11-26",
+      "featured": [
+        "Melissa"
+      ],
+      "image": "PilotGachaMelissaItemPrefab"
+    },
+    {
+      "kind": "st",
+      "id": 5019,
+      "name": "Galloping Paramedic",
+      "type": "limited",
+      "version": "2.4",
+      "start": "2026-11-12",
+      "end": "2026-11-26",
+      "featured": [
+        "Aurora"
+      ],
+      "image": "WapGachaAuroraPoolItemPrefab"
+    },
+    {
+      "kind": "pilot",
+      "id": 71,
+      "name": "Targeted Recruitment: Sniper!",
+      "type": "selector",
+      "version": "2.5",
+      "upcoming": true,
+      "options": [
+        "Shawnee",
+        "Natalia",
+        "Sylvie",
+        "Kelly"
+      ],
+      "image": "PilotGachaSelectSniperItemPrefab"
+    },
+    {
       "kind": "pilot",
       "id": 76,
       "name": "HARPY T.R.O.O.P.S",
       "type": "exchange",
-      "version": "2.4",
+      "version": "2.5",
       "upcoming": true,
       "options": [
         "Cassha",
@@ -2794,7 +2906,7 @@
       "id": 74,
       "name": "Targeted Shipping: Sniper!",
       "type": "selector",
-      "version": "2.4",
+      "version": "2.5",
       "upcoming": true,
       "options": [
         "Wolverine",
@@ -2806,58 +2918,10 @@
     },
     {
       "kind": "st",
-      "id": 75,
-      "name": "Moiraflare Eclipsar",
-      "type": "limited",
-      "version": "2.4",
-      "upcoming": true,
-      "featured": [
-        "Prometheus"
-      ],
-      "image": "WapGachaPrometheusPoolItemPrefab"
-    },
-    {
-      "kind": "st",
-      "id": 76,
-      "name": "Strike! Shadowtroops!",
-      "type": "limited",
-      "version": "2.4",
-      "upcoming": true,
-      "featured": [
-        "Shadowrabbit"
-      ],
-      "image": "WapGachaShadowrabbitPoolItemPrefab"
-    },
-    {
-      "kind": "st",
-      "id": 77,
-      "name": "Thunderqueller",
-      "type": "limited",
-      "version": "2.4",
-      "upcoming": true,
-      "featured": [
-        "Alicorn"
-      ],
-      "image": "WapGachaAlicornPoolItemPrefab"
-    },
-    {
-      "kind": "st",
-      "id": 78,
-      "name": "Impenetrable Fortress",
-      "type": "limited",
-      "version": "2.4",
-      "upcoming": true,
-      "featured": [
-        "Colossus"
-      ],
-      "image": "WapGachaColossusPoolItemPrefab"
-    },
-    {
-      "kind": "st",
       "id": 79,
       "name": "Transoceanic Shipping",
       "type": "exchange",
-      "version": "2.4",
+      "version": "2.5",
       "upcoming": true,
       "options": [
         "FierceJaw",

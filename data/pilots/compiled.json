@@ -31714,7 +31714,7 @@
           "skill": {
             "ID": "301203",
             "name": "Forensics",
-            "describe": "Designates <color=#F74848>1</color> enemy unit within a <range type=0>4-tile diamond</range> range, applying <color=#F74848>1</color> corresponding <buf ID=900137>[Scar]</buf> effect to its lowest-HP part. Can continue to act afterward, but cannot move before attacking.",
+            "describe": "Designates <color=#F74848>1</color> enemy unit within a <range type=0>4-tile diamond range</range>, applying <color=#F74848>1</color> corresponding <buf ID=900137>[Scar]</buf> effect to its lowest-HP part. Can continue to act afterward, but cannot move before attacking.",
             "SkillIcon": "Icon_skill_order_5145",
             "icon": "Icon_skill_order_5145",
             "Ap": "1",
@@ -31774,7 +31774,7 @@
           "skill": {
             "ID": "301208",
             "name": "Multi-Vector Mapping",
-            "describe": "Uses a Light Rifle to attack a target, dealing <color=#F74848>0.7x</color> DMG. Can choose <color=#F74848>2</color> additional targets, each dealing <color=#F74848>0.7x</color> DMG. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking and can repeatedly lock onto the same target. Can be retaliated against by the main target.",
+            "describe": "Uses a Light Rifle to attack a target, dealing <color=#F74848>0.7x</color> DMG. Can choose <color=#F74848>2</color> additional targets, dealing <color=#F74848>0.7x</color> DMG to each. Enters <buf ID=900014>[Aiming]</buf> Mode before attacking and can repeatedly lock onto the same target. Can be retaliated against by the main target.",
             "SkillIcon": "Icon_skill_main_1163",
             "icon": "Icon_skill_main_1163",
             "Ap": "4",
@@ -32238,7 +32238,7 @@
           "skill": {
             "ID": "601004",
             "name": "Unilateral Agreement",
-            "describe": "Uses a Rail Gun to attack <color=#F74848>1</color> enemy unit within <color=#F74848>5</color> tiles, dealing <color=#F74848>0.5x</color> AoE DMG to all enemy units within a <range type=1>1-tile cross</range> area. After combat, applies <buf ID=6010502>[Magnetic Lock]</buf> to all targets, then can trigger <buf ID=900004>[Re-ATK]</buf>. Cannot move before attacking. Can be used up to <color=#F74848>1</color> time per turn.",
+            "describe": "Uses a Rail Gun to attack <color=#F74848>1</color> enemy unit within <color=#F74848>5</color> tiles, dealing <color=#F74848>0.5x</color> AoE DMG to all enemy units within a <range type=1>1-tile cross</range> area. After combat, applies <buf ID=6010502>[Magnetic Lock]</buf> to all targets, then can trigger <buf ID=900004>[Re-ATK]</buf>. Cannot move before attacking. Can only be used <color=#F74848>1</color> time per turn.",
             "SkillIcon": "Icon_skill_order_1129",
             "icon": "Icon_skill_order_1129",
             "Ap": "2",
@@ -32262,7 +32262,7 @@
           "skill": {
             "ID": "601006",
             "name": "Hunter's Prelude",
-            "describe": "Uses a Large Shield or Small Shield to throw a magnetic grenade at any tile within a <range type=1>4-tile diamond area</range>, dealing <color=#F74848>0.1x</color> AoE DMG to the Body of all enemy units within <color=#F74848>3</color> tiles of the location, and forcibly displacing them <color=#F74848>2</color> tiles toward the center. This attack is guaranteed to hit. After attacking, applies <buf ID=6010502>[Magnetic Lock]</buf> to all targets, and can then trigger <buf ID=900004>[Re-ATK]</buf>. Cannot move before attacking.",
+            "describe": "Uses a Large Shield or Small Shield to throw a magnetic grenade at any tile within a <range type=1>4-tile diamond</range> area, dealing <color=#F74848>0.1x</color> AoE DMG to the Body of all enemy units within <color=#F74848>3</color> tiles of the location, and forcibly displacing them <color=#F74848>2</color> tiles toward the center. This attack is guaranteed to hit. After attacking, applies <buf ID=6010502>[Magnetic Lock]</buf> to all targets, then can trigger <buf ID=900004>[Re-ATK]</buf>. Cannot move before attacking.",
             "SkillIcon": "Icon_skill_order_1138",
             "icon": "Icon_skill_order_1138",
             "Ap": "4",

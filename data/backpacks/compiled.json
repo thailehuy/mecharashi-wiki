@@ -770,7 +770,7 @@
         "ID": "62308",
         "name": "Stalker Drive - First Strike",
         "icon": "Icon_skill_passive_5021",
-        "SpecificEffects": "Upon deployment, immediately gains <buf ID=3004412>[Stealth II]</buf>, lasting <color=#F74848>2</color> turns.\nAt the end of action, if there are no enemies within <color=#F74848>1</color> tile, gains <buf ID=3004412>[Stealth II]</buf>, lasting <color=#F74848>2</color> turns. This effect has a <color=#F74848>3</color>-turn trigger interval.\nWhen actively attacking for the <color=#F74848>1st</color> time each turn, DMG <color=#F74848>+7.5%</color> and Crit Rate <color=#F74848>+5%</color>.\nST Body HP <color=#F74848>+10%</color> and DMG Dealt <color=#F74848>+5%</color>."
+        "SpecificEffects": "Upon deployment, immediately gains <buf ID=3004412>[Stealth II]</buf> for <color=#F74848>2</color> turns. At end of action, if there are no enemies within <color=#F74848>1</color> adjacent tile, gains <buf ID=3004412>[Stealth II]</buf> for <color=#F74848>2</color> turns.\nThis effect has a <color=#F74848>3</color>-turn trigger interval. When initiating combat for the <color=#F74848>first</color> time each turn:\nDMG <color=#F74848>+7.5%</color> and Crit Rate <color=#F74848>+5%</color>.\nST Body HP <color=#F74848>+10%</color> and DMG <color=#F74848>+5%</color>."
       },
       "crafting": [
         {
@@ -833,7 +833,7 @@
         "ID": "62309",
         "name": "Assaulter Drive - Re-ATK",
         "icon": "Icon_skill_passive_5123",
-        "SpecificEffects": "When actively attacking, if having moved <color=#F74848>4</color> or more tiles, gains <buf ID=7100901>[Movement UP]</buf>, lasting <color=#F74848>1</color> turn.\nST Movement <color=#F74848>+1</color>.\nWhen re-attacking, Hit Rate <color=#F74848>+10%</color> and Crit Rate <color=#F74848>+5%</color>.\nST Body HP <color=#F74848>+10%</color> and DMG Dealt <color=#F74848>+5%</color>."
+        "SpecificEffects": "Before actively attacking, if distance moved is greater than or equal to <color=#F74848>4</color> tiles, gains <buf ID=7100901>[Movement UP]</buf> for <color=#F74848>1</color> turn.\nST Movement <color=#F74848>+1</color>.\nAfter triggering [Re-ATK], Hit Rate <color=#F74848>+10%</color> and Crit Rate <color=#F74848>+5%</color>.\nST Body HP <color=#F74848>+10%</color> and DMG <color=#F74848>+5%</color>."
       },
       "crafting": [
         {
