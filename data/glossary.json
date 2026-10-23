@@ -1066,19 +1066,19 @@
   },
   "900141": {
    "name": "Hunter's Boon",
-   "effect": "Applies buff based on the part destroyed: Body grants <buf ID=9001411>[Precision]</buf>, Arms grants <buf ID=9001412>[Rapid]</buf>, Leg grants <buf ID=9001413>[Direct Shot]</buf>. All effects require a ranged weapon to activate, and are removed after triggering."
+   "effect": "Destroying the Body grants <buf ID=3012315>[HIT]</buf>: The next normal attack with a Ranged Weapon can enter <buf ID=900014>[Aiming]</buf> Mode. Removed after triggering.\nDestroying an Arm grants <buf ID=3012317>[Long-Range]</buf>: The next active attack with a Ranged Weapon has Range <color=#F74848>+1</color>. Removed after triggering.\nDestroying the Legs grants <buf ID=3012319>[Direct Strike]</buf>: The next active attack with a Ranged Weapon has a multiplier of <color=#F74848>+0.1</color>. Removed after triggering."
   },
-  "9001411": {
-   "name": "Precision",
-   "effect": "Next basic attack will enter <buf ID=900014>[Aiming]</buf> Mode."
+  "3012315": {
+   "name": "HIT",
+   "effect": "The next Ranged Weapon normal attack can enter <buf ID=900014>[Aiming]</buf> Mode. Removed after triggering."
   },
-  "9001412": {
-   "name": "Rapid",
-   "effect": "Next active attack gets <color=#F74848>+1</color> range."
+  "3012317": {
+   "name": "Long-Range",
+   "effect": "Next Ranged Weapon active attack gains Range <color=#F74848>+1</color>. Removed after triggering."
   },
-  "9001413": {
-   "name": "Direct Shot",
-   "effect": "Next attack multiplier increases by <color=#F74848>+0.1</color>."
+  "3012319": {
+   "name": "Direct Strike",
+   "effect": "Next Ranged Weapon active attack multiplier <color=#F74848>+0.1</color>. Removed after triggering."
   },
   "6010502": {
    "name": "Magnetic Lock",
