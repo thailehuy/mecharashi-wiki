@@ -15,11 +15,15 @@ bounties and clues where the game tables lack them) and each Clearance Ops
 and Armed Conquest stage's drops (build_drops.py: per difficulty for AC, with
 each bounty's reward), then writes bosses.json and bosses.js.
 Mismatches between the guide and the game data are printed.
+
+--keep-co leaves bosses.json's Clearance Ops chapters as they are and rebuilds
+only Armed Conquest (update_global.py passes it: the mode gets no new chapters).
 """
 import json
 import os
 import re
 import sqlite3
+import sys
 
 from build_drops import chapter_drops, season_drops
 
@@ -698,6 +702,7 @@ def main():
     with open(OUT, encoding='utf-8') as f:
         data = json.load(f)
     bosses = data['bosses']
+    keep_co = '--keep-co' in sys.argv[1:]
 
     ac, co, companion_mechs = {}, {}, {}
     for t in load_targets():
@@ -716,7 +721,7 @@ def main():
             diff = DIFFICULTY_NAMES.get(diff, diff)
             st['difficulties'].append(diff)
             st['hp'][diff] = part_hp(t)
-        elif t['content'] == 'Clearance Ops':
+        elif t['content'] == 'Clearance Ops' and not keep_co:
             m = CO_LABEL.match(t['label'])
             chapter, name, slot, boss = int(m.group(1)), m.group(2), int(m.group(3)), m.group(4)
             c = co.setdefault(chapter, {'chapter': chapter, 'name': name, 'battle': t['battle'], 'stages': {}})
@@ -729,10 +734,11 @@ def main():
             boss, st['title'], st['skills'], stage_ids[id(st)] = skills[(s['name'], st['slot'])]
             if boss != st['boss']:
                 raise ValueError('%s stage %d: DMG calc has %s, DB has %s' % (s['name'], st['slot'], st['boss'], boss))
-    co_skills = boss_skills(bosses, 'Clearance Ops')
-    chapters = chapter_info()
     drop_warnings = []
-    drops = chapter_drops(drop_warnings.append)
+    if co:
+        co_skills = boss_skills(bosses, 'Clearance Ops')
+        chapters = chapter_info()
+        drops = chapter_drops(drop_warnings.append)
     for c in co.values():
         group = '%d. %s' % (c['chapter'], c['name'])
         boss_drops = {canonical(b['boss'], bosses): b for b in drops[c['battle']]['bosses']}
@@ -815,7 +821,8 @@ def main():
 
     # Newest first: AC by season number, CO by chapter number.
     data['armed_conquest'] = sorted(ac.values(), key=lambda s: -s['number'])
-    data['clearance_ops'] = sorted(co.values(), key=lambda c: -c['chapter'])
+    if not keep_co:
+        data['clearance_ops'] = sorted(co.values(), key=lambda c: -c['chapter'])
 
     with open(OUT, 'w', encoding='utf-8') as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
@@ -824,7 +831,8 @@ def main():
         f.write('window.BossesData = ')
         json.dump(data, f, indent=2, ensure_ascii=False)
         f.write(';\n')
-    print('Wrote %s (%d bosses, %d AC seasons, %d CO chapters)' % (OUT, len(bosses), len(ac), len(co)))
+    print('Wrote %s (%d bosses, %d AC seasons, %d CO chapters%s)' % (OUT, len(bosses), len(ac), len(data['clearance_ops']),
+                                                                     ', kept' if keep_co else ''))
 
 
 if __name__ == '__main__':

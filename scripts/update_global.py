@@ -17,14 +17,16 @@ Steps
     crafting      the Workshop recipes of everything now on Global -> data/db/ weapons, backpacks, materials
                   (build_crafting.py), then compile.py
     data          everything the wiki derives from the mined data: the DMG calc's bench data (from the master DB's
-                  bench catalog, incl. the Armed Conquest line-ups) and icons, accessory chain traits, R&D features and totals, the Armed Conquest and
-                  Clearance Ops boss pages with their skills and drops (build_bosses.py), the banner list, then the
+                  bench catalog, incl. the Armed Conquest line-ups) and icons, accessory chain traits, R&D features and totals, the Armed Conquest
+                  boss pages with their skills and drops (build_bosses.py --keep-co), the banner list, then the
                   version global is on (set_global_version.py: the newest whose banners have opened; it prints that
                   version's banner timeline, sets GLOBAL_VERSION, which drops the CN-text warning from its pilots' and
                   STs' pages, starts the Dispatch Calculator's schedule at it and checks the dispatch pool), the pilot and ST
                   lore (build_lore.py), the Story page's world settings and chapters (build_story.py), the Events
-                  page (build_events.py), and the Elite Battle, Simulated Battle, Covert Phantom, Memory Storm and
-                  Frontier Trial pages (build_elite.py, build_sim.py, build_covert.py, build_storm.py, build_frontier.py).
+                  page (build_events.py), and the Simulated Battle, Covert Phantom and Memory Storm pages
+                  (build_sim.py, build_covert.py, build_storm.py). Clearance Ops, Elite Battle and Frontier Trial get
+                  no new content (none in the CN client either), so they are left out: build_bosses.py without
+                  --keep-co, build_elite.py and build_frontier.py rebuild them by hand.
                   A new Armed Conquest season stops build_bosses.py until its name is added to AC_SEASONS there
                   (release order); then rerun with --from data
     images        new drop/material/story/Elite, Simulated Battle, Covert Phantom, Memory Storm, Frontier Trial and event reward item icons, Border
@@ -50,9 +52,8 @@ MAIN_DB = os.path.join(FIELD_WIKI, 'source', 'mecharashi.db')
 STEPS = ['mine', 'translations', 'crafting', 'data', 'images', 'compile']
 # In order, after compile.py: build-icons.py, build_features.py and build_bosses.py read the compiled bundles.
 DATA = [['extract-bench.py', '--data-only'], ['build-icons.py'], ['extract-chain-traits.py'], ['build_features.py'],
-        ['build_rd_totals.py'], ['build_bosses.py'], ['build_banners.py'], ['set_global_version.py'], ['build_lore.py'],
-        ['build_story.py'], ['build_events.py'], ['build_elite.py'], ['build_sim.py'], ['build_covert.py'], ['build_storm.py'],
-        ['build_frontier.py']]
+        ['build_rd_totals.py'], ['build_bosses.py', '--keep-co'], ['build_banners.py'], ['set_global_version.py'],
+        ['build_lore.py'], ['build_story.py'], ['build_events.py'], ['build_sim.py'], ['build_covert.py'], ['build_storm.py']]
 
 
 def run(args, cwd=ROOT):
