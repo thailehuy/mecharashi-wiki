@@ -5675,14 +5675,14 @@
       "Talent0_2Ability": {
         "ID": "201550",
         "name": "Veiled Razor",
-        "SpecificEffects": "If equipped with two Machine Guns, triggers <buf ID=900095>[Dual Gun Retaliation]</buf> when retaliating, dealing <color=#F74848>0.6x</color> DMG <color=#F74848>2</color> times.\nAfter taking action, gains <color=#F74848>1</color> stack of <buf ID=2015509>[Retaliation Enhancement]</buf>. Stacks up to <color=#F74848>5</color> times.",
+        "SpecificEffects": "If equipped with two Machine Guns, triggers <buf ID=900095>[Dual Gun Retaliation]</buf> when retaliating, dealing <color=#F74848>0.6x</color> DMG <color=#F74848>2</color> times.\nAfter taking action, gains <color=#F74848>1</color> stack of <buf ID=2015509>[Improved Retaliation]</buf>. Stacks up to <color=#F74848>5</color> times.",
         "SkillIcon": "Icon_skill_talent_5140",
         "icon": "Icon_skill_talent_5140"
       },
       "Talent3_5Ability": {
         "ID": "201551",
         "name": "Veiled Razor",
-        "SpecificEffects": "If equipped with two Machine Guns, triggers <buf ID=900095>[Dual Gun Retaliation]</buf> when retaliating, dealing <color=#F74848>0.6x</color> DMG <color=#F74848>2</color> times.\nAfter taking action, gains <color=#F74848>1</color> stack of <buf ID=2015509>[Retaliation Enhancement]</buf>. Stacks up to <color=#F74848>5</color> times.\nGains <color=#F74848>1</color> AP when retaliating. Can only trigger <color=#F74848>1</color> time per turn.",
+        "SpecificEffects": "If equipped with two Machine Guns, triggers <buf ID=900095>[Dual Gun Retaliation]</buf> when retaliating, dealing <color=#F74848>0.6x</color> DMG <color=#F74848>2</color> times.\nAfter taking action, gains <color=#F74848>1</color> stack of <buf ID=2015509>[Improved Retaliation]</buf>. Stacks up to <color=#F74848>5</color> times.\nGains <color=#F74848>1</color> AP when retaliating. Can only trigger <color=#F74848>1</color> time per turn.",
         "SkillIcon": "Icon_skill_talent_5140",
         "icon": "Icon_skill_talent_5140"
       },
@@ -5840,7 +5840,7 @@
                 "PassiveSkill": {
                   "ID": "201541",
                   "name": "Heavenly Fire 1",
-                  "SpecificEffects": "At end of action, for each enemy within <color=#F74848>3</color> tiles, gains <color=#F74848>1</color> stack of <buf ID=2015509>[Retaliation Enhancement]</buf>, up to <color=#F74848>2</color> stacks.",
+                  "SpecificEffects": "At end of action, for each enemy within <color=#F74848>3</color> tiles, gains <color=#F74848>1</color> stack of <buf ID=2015509>[Improved Retaliation]</buf>, up to <color=#F74848>2</color> stacks.",
                   "SkillIcon": "Icon_skill_passive_5225",
                   "icon": "Icon_skill_passive_5225"
                 }
@@ -5880,7 +5880,7 @@
                 "PassiveSkill": {
                   "ID": "201545",
                   "name": "Heavenly Fire 3",
-                  "SpecificEffects": "When <buf ID=2015509>[Retaliation Enhancement]</buf> is active, DMG Taken <color=#F74848>-10%</color>.",
+                  "SpecificEffects": "When <buf ID=2015509>[Improved Retaliation]</buf> is active, DMG Taken <color=#F74848>-10%</color>.",
                   "SkillIcon": "Icon_skill_passive_5225",
                   "icon": "Icon_skill_passive_5225"
                 }
@@ -5985,7 +5985,7 @@
           "skill": {
             "ID": "201503",
             "name": "Firestorm",
-            "describe": "Simultaneously uses two Machine Guns to attack all targets within a <range type=1>fan-shaped area ahead</range>, dealing <color=#F74848>0.3x</color> AoE DMG <color=#F74848>2</color> times. Gains <color=#F74848>1</color> stack of <buf ID=2015509>[Retaliation Enhancement]</buf> after combat for each target hit, stacking up to <color=#F74848>3</color> times per <color=#F74848>1</color> attack. Stacks up to <color=#F74848>5</color> times in total.",
+            "describe": "Simultaneously uses two Machine Guns to attack all targets within a <range type=1>fan-shaped area ahead</range>, dealing <color=#F74848>0.3x</color> AoE DMG <color=#F74848>2</color> times. Gains <color=#F74848>1</color> stack of <buf ID=2015509>[Improved Retaliation]</buf> after combat for each target hit, stacking up to <color=#F74848>3</color> times per <color=#F74848>1</color> attack. Stacks up to <color=#F74848>5</color> times in total.",
             "SkillIcon": "Icon_skill_order_1107",
             "icon": "Icon_skill_order_1107",
             "Ap": "4",
@@ -6047,7 +6047,7 @@
           "skill": {
             "ID": "201508",
             "name": "Maelstrom",
-            "describe": "Gains <buf ID=2015081>[Turning Point]</buf> and <buf ID=2015082>[Maelstrom]</buf>.\nDoes not consume <buf ID=2015509>[Retaliation Enhancement]</buf> when retaliating. Lasts until the next action begins.",
+            "describe": "Gains <buf ID=2015081>[Turning Point]</buf> and <buf ID=2015082>[Maelstrom]</buf>.\nDoes not consume <buf ID=2015509>[Improved Retaliation]</buf> when retaliating. Lasts until the next action begins.",
             "SkillIcon": "Icon_skill_order_5136",
             "icon": "Icon_skill_order_5136",
             "Ap": "6",
@@ -6060,7 +6060,7 @@
           "skill": {
             "ID": "201501",
             "name": "Armed and Ready",
-            "describe": "Uses a Machine Gun to attack a target, dealing <color=#F74848>1.2x</color> DMG. After combat, gains <color=#F74848>1</color> stack of <buf ID=2015509>[Retaliation Enhancement]</buf>. Stacks up to <color=#F74848>5</color> times.",
+            "describe": "Uses a Machine Gun to attack a target, dealing <color=#F74848>1.2x</color> DMG. After combat, gains <color=#F74848>1</color> stack of <buf ID=2015509>[Improved Retaliation]</buf>. Stacks up to <color=#F74848>5</color> times.",
             "SkillIcon": "Icon_skill_main_1129",
             "icon": "Icon_skill_main_1129",
             "Ap": "3",

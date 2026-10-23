@@ -278,7 +278,7 @@
   },
   "900125": {
    "name": "Fury Unleashed",
-   "effect": "Can consume <buf ID=2017500>[Fury]</buf> stack to improve the skill effect. For each stack consumed, increases AP cost by <color=#F74848>1</color> and the number of bullets by <color=#F74848>40%</color>. Up to <color=#F74848>2</color> stacks can be consumed."
+   "effect": "For each stack of <buf ID=2017500>[Fury]</buf> consumed, this attack's AP Cost increases by <color=#F74848>1</color>, and Bullets increase by <color=#F74848>40%</color>, up to <color=#F74848>2</color> stacks."
   },
   "900133": {
    "name": "Poised",
@@ -286,7 +286,7 @@
   },
   "900136": {
    "name": "Critical Sense",
-   "effect": "When attacked by melee or ranged weapons, if equipped with Alter-Blade in both hands and both hands are intact, activates [Insight Counterattack], dealing <color=#F74848>1.2x</color> DMG. [Insight Counterattack] ignores [Target Shift]. Each stack increases DMG dealt by <color=#F74848>5%</color> and dodge rate by <color=#F74848>5%</color>. <color=#F74848>1</color> stack is removed upon activation."
+   "effect": "When attacked by melee or ranged weapons, if equipped with Alter-Blade in both hands and both hands are intact, activates [Incisive Retaliation], dealing <color=#F74848>1.2x</color> DMG. [Incisive Retaliation] ignores [Target Shift]. Each stack increases DMG dealt by <color=#F74848>5%</color> and dodge rate by <color=#F74848>5%</color>. <color=#F74848>1</color> stack is removed upon activation."
   },
   "1002502": {
    "name": "Passionate I",
@@ -302,7 +302,7 @@
   },
   "1004061": {
    "name": "Code Inhibition",
-   "effect": "Disrupts the use of Code-type skills."
+   "effect": "Cannot use code skills."
   },
   "1004412": {
    "name": "Instability II",
@@ -449,7 +449,7 @@
    "effect": "At start of action, if not incapacitated and both Arms are undestroyed, uses two Machine Guns simultaneously to deal 0.6x DMG 2 times to all enemies within range. If unable to attack, gains 3 AP."
   },
   "2015509": {
-   "name": "Retaliation Enhancement",
+   "name": "Improved Retaliation",
    "effect": "When attacked and drawn into combat, triggers [Quick Draw] before the enemy strikes, and Retaliation DMG +15%. Stacks up to 5 times. Each stack is independent and does not accumulate. When [Retaliation] or [Quick Draw] is triggered, 1 stack is removed after combat."
   },
   "2016080": {
@@ -478,7 +478,7 @@
   },
   "2017072": {
    "name": "Firepower Fulcrum",
-   "effect": "HMG bullets <color=#F74848>+1</color>."
+   "effect": "HMG Bullets <color=#F74848>+1</color>."
   },
   "2017442": {
    "name": "Firepower Supremacy",
@@ -757,7 +757,7 @@
    "effect": "DMG Taken -5%, up to 3 stacks."
   },
   "7000452": {
-   "name": "Fury",
+   "name": "Rage",
    "effect": "DMG +5%. Stacks up to 4 times."
   },
   "7100102": {
@@ -1006,7 +1006,7 @@
   },
   "1017503": {
    "name": "Poised I",
-   "effect": "DMG dealt increases by <color=#F74848>3%</color>, up to a maximum of <color=#F74848>5</color> stacks."
+   "effect": "DMG <color=#F74848>+3%</color>. Stacks up to <color=#F74848>5</color> times."
   },
   "900138": {
    "name": "Temporary AP Cap",
@@ -1022,19 +1022,11 @@
   },
   "5008912": {
    "name": "Short-Circuit Strike!",
-   "effect": "When attacked, inflicts <buf ID=1099904>[Short Circuit III]</buf> on the target after combat."
-  },
-  "1099903": {
-   "name": "Code Inhibition",
-   "effect": "Cannot execute command skills."
-  },
-  "1099904": {
-   "name": "Short Circuit III",
-   "effect": "At the end of the action, all body parts lose <color=#F74848>7%</color> of their maximum HP as [Fixed DMG]. This [Fixed DMG] increases by <color=#F74848>1%</color> for each debuff the target carries, up to a maximum of <color=#F74848>12%</color>. This [Fixed DMG] cannot destroy parts."
+   "effect": "When attacked, inflicts <buf ID=3006452>[Short Circuit III]</buf> on the attacker after combat."
   },
   "5008052": {
    "name": "Immune to Code Inhibition",
-   "effect": "Immune to <buf ID=1099903>[Code Inhibition]</buf> effects."
+   "effect": "Immune to <buf ID=1004061>[Code Inhibition]</buf> effects."
   },
   "1099906": {
    "name": "Blur III",
@@ -1046,23 +1038,7 @@
   },
   "900137": {
    "name": "Scar",
-   "effect": "Applies debuff based on the part hit: <buf ID=9001371>[Scar - Body]</buf>, <buf ID=9001372>[Scar - L-Arm]</buf>, <buf ID=9001373>[Scar - R-Arm]</buf>, or <buf ID=9001374>[Scar - Legs]</buf>."
-  },
-  "9001371": {
-   "name": "Scar - Body",
-   "effect": "Reduces AP by <color=#F74848>-1</color> when triggering <buf ID=900004>[Re-ATK]</buf>."
-  },
-  "9001372": {
-   "name": "Scar - L-Arm",
-   "effect": "When actively attacking, reduces Final DMG by <color=#F74848>20%</color> for the first hit."
-  },
-  "9001373": {
-   "name": "Scar - R-Arm",
-   "effect": "When actively attacking, if the number of hits are more than <color=#F74848>5</color>, reduces the number of hits by <color=#F74848>20%</color>."
-  },
-  "9001374": {
-   "name": "Scar - Legs",
-   "effect": "When leg is intact, loses <color=#F74848>10%</color> of leg maximum HP while standing still, with an additional <color=#F74848>10%</color> for every tile moved. Effect removed after triggering."
+   "effect": "Applies debuff based on the part hit: <buf ID=3012502>[Scar - Body]</buf>, <buf ID=3012503>[Scar - L-Arm]</buf>, <buf ID=3012507>[Scar - R-Arm]</buf>, or <buf ID=3012509>[Scar - Legs]</buf>."
   },
   "900141": {
    "name": "Hunter's Boon",
@@ -1082,23 +1058,23 @@
   },
   "6010502": {
    "name": "Magnetic Lock",
-   "effect": "Can be targeted by [Vengeance Strike] and [Vengeance Strike β]."
+   "effect": "Can be targeted by enemy [Vengeance Strike] and [Vengeance Strike β]."
   },
   "4011502": {
    "name": "Appointed",
-   "effect": "[Colin] can select target within <color=#F74848>4</color> tiles of this unit with a cutter."
+   "effect": "[Colin] When using a Cutter, can choose targets within <color=#F74848>4</color> blocks around self."
   },
   "4011043": {
    "name": "BIT - Bulwark Mode",
-   "effect": "When actively attacked, all intact parts gain temporary HP equal to <color=#F74848>18%</color> of their max HP. The temporary HP is removed after combat. This effect can trigger up to <color=#F74848>4</color> times per turn, and is removed at the start of next action."
+   "effect": "When actively attacked, all intact parts gain an additional shield equal to <color=#F74848>18%</color> of the part's Max HP. Shield is removed after combat. Can trigger up to <color=#F74848>4</color> times per turn. Removed at the start of the next action."
   },
   "4011041": {
    "name": "BIT - Assault Mode",
-   "effect": "After this unit initiates combat, [Colin] uses cautter to perform a [Link Attack], dealing <color=#F74848>0.75x</color> DMG. This effect can trigger up to <color=#F74848>4</color> times per turn, and is removed at the start of next action."
+   "effect": "After actively attacking combat, [Colin] uses his accompanying Cutter to launch an Extra Strike, dealing <color=#F74848>0.75x</color> DMG, up to <color=#F74848>4</color> times. Removed at the start of the next action."
   },
   "4011061": {
    "name": "Delayed Spray",
-   "effect": "At the end of action or after being destroyed, [Colin] uses cutter to attack all enemies within <color=#F74848>3</color> tiles of this target, dealing <color=#F74848>0.8x</color> AoE DMG."
+   "effect": "When action ends or when destroyed, [Colin] uses a Cutter to attack the carrier and all enemy units within <color=#F74848>3</color> tiles, dealing <color=#F74848>0.8x</color> AoE DMG."
   },
   "6011014": {
    "name": "Provocation",
@@ -1106,7 +1082,7 @@
   },
   "6011042": {
    "name": "Upper Hand",
-   "effect": "Increases Dodge Rate by <color=#F74848>10%</color> per stack, up to <color=#F74848>3</color> stacks. <color=#F74848>1</color> stack is removed upon being attacked."
+   "effect": "Dodge Rate <color=#F74848>+10%</color>. Stacks up to <color=#F74848>3</color> times. After being attacked, <color=#F74848>1</color> stack is removed."
   },
   "1018041": {
    "name": "Good Chance!",
@@ -1188,10 +1164,6 @@
    "name": "DMG Reduction",
    "effect": "Includes DMG taken reduction, Final DMG taken reduction, and DMG taken reduction from shields."
   },
-  "4010044": {
-   "name": "All-Out Assault Tactics",
-   "effect": "Final DMG <color=#F74848>+20%</color>. Removed at end of action."
-  },
   "4010045": {
    "name": "Full Assault",
    "effect": "DMG <color=#F74848>+25%</color>. Removed at end of action."
@@ -1209,12 +1181,12 @@
    "effect": "Before attacking, if possessing <color=#F74848>15</color> stacks of [Heating Up], restores <color=#F74848>2</color> AP after combat, then removes all [Heating Up] stacks after triggering the corresponding effect."
   },
   "530742": {
-   "name": "Locked & Reloaded",
+   "name": "Poised to Strike",
    "effect": "When actively attacking with a Machine Gun, DMG <color=#F74848>+20%</color> and Bullets <color=#F74848>+1</color>. Removed after triggering."
   },
   "530786": {
    "name": "Synchronized Miracle",
-   "effect": "When actively attacking, Crit Rate <color=#F74848>+40%</color>, and the first <color=#F74848>4</color> hits ignore the target's DMG Reduction effects. Removed after taking effect."
+   "effect": "When actively attacking, Crit Rate <color=#F74848>+40%</color>. The first <color=#F74848>4</color> strikes ignore all of the target's DMG Reduction effects. Removed after activation."
   },
   "7101303": {
    "name": "Crit Rate Down II",
@@ -1222,7 +1194,7 @@
   },
   "530872": {
    "name": "Scorching Intent",
-   "effect": "Each stack grants Crit Rate <color=#F74848>+2%</color> when attacking with a Missile Launcher."
+   "effect": "When using Missile Attacks, Crit Rate <color=#F74848>+2%</color>. Stacks up to <color=#F74848>15</color> times."
   },
   "530962": {
    "name": "Code DMG Reduction",
@@ -1661,6 +1633,30 @@
   "5009501": {
    "name": "Good Medicine Tastes Bitter",
    "effect": "When actively attacking with a Pilebunker or Knuckle while carrying a Manipulator, deals <buf ID=900017>[Fixed DMG]</buf> to the part of the target hit with the lowest HP percentage."
+  },
+  "4010041": {
+   "name": "All-Out Assault Tactics",
+   "effect": "Final DMG <color=#F74848>+20%</color>. Removed at end of action."
+  },
+  "3012502": {
+   "name": "Scar - Body",
+   "effect": "When triggering <buf ID=900004>[Re-ATK]</buf>, AP <color=#F74848>-1</color>."
+  },
+  "3012503": {
+   "name": "Scar - L-Arm",
+   "effect": "When actively attacking, the first instance of Final DMG dealt to the enemy is reduced by <color=#F74848>20%</color>."
+  },
+  "3012507": {
+   "name": "Scar - R-Arm",
+   "effect": "When actively attacking, if Hits exceed <color=#F74848>5</color>, Hits <color=#F74848>-20%</color>."
+  },
+  "3012509": {
+   "name": "Scar - Legs",
+   "effect": "When Legs are intact, loses <color=#F74848>10%</color> of Legs Max HP while on standby, and an additional <color=#F74848>10%</color> for each block of Movement. Removed after triggering."
+  },
+  "3006452": {
+   "name": "Short Circuit III",
+   "effect": "At end of action, all parts take Fixed DMG equal to <color=#F74848>7%</color> of their Max HP. If the target is debuffed, this Fixed DMG increases by <color=#F74848>1%</color> for each debuff, up to <color=#F74848>12%</color>. This damage will not break the part."
   }
  },
  "skill": {
@@ -1728,7 +1724,7 @@
    "Ap": "2",
    "CD": "2",
    "icon": "Icon_skill_order_5141",
-   "effect": "Designates a single ally across the map to receive <buf ID=4010044>[All-Out Assault Tactics]</buf> until the end of action, while gaining <color=#F74848>2</color> stacks of <buf ID=4010500>[Intel]</buf>."
+   "effect": "Designates a single ally across the map to receive <buf ID=4010041>[All-Out Assault Tactics]</buf> until the end of action, while gaining <color=#F74848>2</color> stacks of <buf ID=4010500>[Intel]</buf>."
   },
   "4010042": {
    "name": "Maneuverability Tactics",
@@ -2198,7 +2194,7 @@
    "Ap": "0",
    "CD": "0",
    "icon": "Icon_skill_order_1140",
-   "effect": "If the target actively uses a Command Skill this turn, inflicts <buf ID=1099903>[Code Inhibition]</buf> to the target, lasting for <color=#F74848>1</color> turn. Otherwise, inflicts <color=#F74848>2</color> stacks of <buf ID=4012502>[Structural Damage]</buf> to the target. This effect is removed after triggering."
+   "effect": "If the target actively uses a Command Skill this turn, inflicts <buf ID=1004061>[Code Inhibition]</buf> to the target, lasting for <color=#F74848>1</color> turn. Otherwise, inflicts <color=#F74848>2</color> stacks of <buf ID=4012502>[Structural Damage]</buf> to the target. This effect is removed after triggering."
   },
   "4012042": {
    "name": "Weapon Override",

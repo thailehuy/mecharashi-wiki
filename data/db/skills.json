@@ -1706,21 +1706,21 @@
   "201550": {
     "kind": "talent",
     "name": "Veiled Razor",
-    "effect": "If equipped with two Machine Guns, triggers <buf ID=900095>[Dual Gun Retaliation]</buf> when retaliating, dealing <color=#F74848>0.6x</color> DMG <color=#F74848>2</color> times.\nAfter taking action, gains <color=#F74848>1</color> stack of <buf ID=2015509>[Retaliation Enhancement]</buf>. Stacks up to <color=#F74848>5</color> times.",
+    "effect": "If equipped with two Machine Guns, triggers <buf ID=900095>[Dual Gun Retaliation]</buf> when retaliating, dealing <color=#F74848>0.6x</color> DMG <color=#F74848>2</color> times.\nAfter taking action, gains <color=#F74848>1</color> stack of <buf ID=2015509>[Improved Retaliation]</buf>. Stacks up to <color=#F74848>5</color> times.",
     "icon": "Icon_skill_talent_5140",
     "buffs": "2015501/2015502"
   },
   "201551": {
     "kind": "talent",
     "name": "Veiled Razor",
-    "effect": "If equipped with two Machine Guns, triggers <buf ID=900095>[Dual Gun Retaliation]</buf> when retaliating, dealing <color=#F74848>0.6x</color> DMG <color=#F74848>2</color> times.\nAfter taking action, gains <color=#F74848>1</color> stack of <buf ID=2015509>[Retaliation Enhancement]</buf>. Stacks up to <color=#F74848>5</color> times.\nGains <color=#F74848>1</color> AP when retaliating. Can only trigger <color=#F74848>1</color> time per turn.",
+    "effect": "If equipped with two Machine Guns, triggers <buf ID=900095>[Dual Gun Retaliation]</buf> when retaliating, dealing <color=#F74848>0.6x</color> DMG <color=#F74848>2</color> times.\nAfter taking action, gains <color=#F74848>1</color> stack of <buf ID=2015509>[Improved Retaliation]</buf>. Stacks up to <color=#F74848>5</color> times.\nGains <color=#F74848>1</color> AP when retaliating. Can only trigger <color=#F74848>1</color> time per turn.",
     "icon": "Icon_skill_talent_5140",
     "buffs": "2015501/2015502/2015511"
   },
   "201541": {
     "kind": "neural",
     "name": "Heavenly Fire 1",
-    "effect": "At end of action, for each enemy within <color=#F74848>3</color> tiles, gains <color=#F74848>1</color> stack of <buf ID=2015509>[Retaliation Enhancement]</buf>, up to <color=#F74848>2</color> stacks.",
+    "effect": "At end of action, for each enemy within <color=#F74848>3</color> tiles, gains <color=#F74848>1</color> stack of <buf ID=2015509>[Improved Retaliation]</buf>, up to <color=#F74848>2</color> stacks.",
     "icon": "Icon_skill_passive_5225",
     "buffs": "2015411/2015412"
   },
@@ -1734,7 +1734,7 @@
   "201545": {
     "kind": "neural",
     "name": "Heavenly Fire 3",
-    "effect": "When <buf ID=2015509>[Retaliation Enhancement]</buf> is active, DMG Taken <color=#F74848>-10%</color>.",
+    "effect": "When <buf ID=2015509>[Improved Retaliation]</buf> is active, DMG Taken <color=#F74848>-10%</color>.",
     "icon": "Icon_skill_passive_5225",
     "buffs": "2015451"
   },
@@ -1755,7 +1755,7 @@
   "201503": {
     "kind": "skill",
     "name": "Firestorm",
-    "describe": "Simultaneously uses two Machine Guns to attack all targets within a <range type=1>fan-shaped area ahead</range>, dealing <color=#F74848>0.3x</color> AoE DMG <color=#F74848>2</color> times. Gains <color=#F74848>1</color> stack of <buf ID=2015509>[Retaliation Enhancement]</buf> after combat for each target hit, stacking up to <color=#F74848>3</color> times per <color=#F74848>1</color> attack. Stacks up to <color=#F74848>5</color> times in total.",
+    "describe": "Simultaneously uses two Machine Guns to attack all targets within a <range type=1>fan-shaped area ahead</range>, dealing <color=#F74848>0.3x</color> AoE DMG <color=#F74848>2</color> times. Gains <color=#F74848>1</color> stack of <buf ID=2015509>[Improved Retaliation]</buf> after combat for each target hit, stacking up to <color=#F74848>3</color> times per <color=#F74848>1</color> attack. Stacks up to <color=#F74848>5</color> times in total.",
     "icon": "Icon_skill_order_1107",
     "ap": "4",
     "type": "SpecialAssault"
@@ -1794,7 +1794,7 @@
   "201508": {
     "kind": "skill",
     "name": "Maelstrom",
-    "describe": "Gains <buf ID=2015081>[Turning Point]</buf> and <buf ID=2015082>[Maelstrom]</buf>.\nDoes not consume <buf ID=2015509>[Retaliation Enhancement]</buf> when retaliating. Lasts until the next action begins.",
+    "describe": "Gains <buf ID=2015081>[Turning Point]</buf> and <buf ID=2015082>[Maelstrom]</buf>.\nDoes not consume <buf ID=2015509>[Improved Retaliation]</buf> when retaliating. Lasts until the next action begins.",
     "icon": "Icon_skill_order_5136",
     "ap": "6",
     "type": "Order"
@@ -9135,14 +9135,14 @@
   "53074": {
     "kind": "weapon",
     "name": "Repel",
-    "effect": "After retaliating with a Machine Gun, gains <buf ID=530742>[Locked & Reloaded]</buf>.",
+    "effect": "After retaliating with a Machine Gun, gains <buf ID=530742>[Poised to Strike]</buf>.",
     "icon": "Icon_skill_passive_5136",
     "buffs": "530741"
   },
   "53075": {
     "kind": "weapon",
     "name": "Sudden Surge",
-    "effect": "Enhanced [Veiled Razor] Effect: When <buf ID=2015509>[Retaliation Enhancement]</buf> is active and both Arms are undestroyed, <buf ID=900022>[Guard]</buf> can be triggered, protecting allies within <color=#F74848>1</color> adjacent tile from Assault, Ranged, and Melee Weapon attacks. If <buf ID=2015081>[Turning Point]</buf> is also active, <buf ID=900022>[Guard]</buf> range increases to <color=#F74848>2</color> adjacent tiles. If equipped with two Machine Guns, when triggering <buf ID=900096>[Retaliation]</buf> or <buf ID=900023>[Quick Draw]</buf>, for each <color=#F74848>1</color> stack of <buf ID=2015509>[Retaliation Enhancement]</buf>, has a <color=#F74848>20%</color> chance to use all Machine Guns simultaneously to trigger <buf ID=900028>[Add Strike]</buf>, dealing <color=#F74848>0.35x</color> damage.",
+    "effect": "Enhanced [Veiled Razor] Effect: When <buf ID=2015509>[Improved Retaliation]</buf> is active and both Arms are undestroyed, <buf ID=900022>[Guard]</buf> can be triggered, protecting allies within <color=#F74848>1</color> adjacent tile from Assault, Ranged, and Melee Weapon attacks. If <buf ID=2015081>[Turning Point]</buf> is also active, <buf ID=900022>[Guard]</buf> range increases to <color=#F74848>2</color> adjacent tiles. If equipped with two Machine Guns, when triggering <buf ID=900096>[Retaliation]</buf> or <buf ID=900023>[Quick Draw]</buf>, for each <color=#F74848>1</color> stack of <buf ID=2015509>[Improved Retaliation]</buf>, has a <color=#F74848>20%</color> chance to use all Machine Guns simultaneously to trigger <buf ID=900028>[Add Strike]</buf>, dealing <color=#F74848>0.35x</color> damage.",
     "icon": "Icon_skill_passive_5263",
     "buffs": "530751/530752/530753/530754/530755/530756/530757/530758/530759"
   },
@@ -10494,7 +10494,7 @@
   "201501": {
     "kind": "skill",
     "name": "Armed and Ready",
-    "describe": "Uses a Machine Gun to attack a target, dealing <color=#F74848>1.2x</color> DMG. After combat, gains <color=#F74848>1</color> stack of <buf ID=2015509>[Retaliation Enhancement]</buf>. Stacks up to <color=#F74848>5</color> times.",
+    "describe": "Uses a Machine Gun to attack a target, dealing <color=#F74848>1.2x</color> DMG. After combat, gains <color=#F74848>1</color> stack of <buf ID=2015509>[Improved Retaliation]</buf>. Stacks up to <color=#F74848>5</color> times.",
     "icon": "Icon_skill_main_1129",
     "ap": "3",
     "type": "EquipmentSkill"
