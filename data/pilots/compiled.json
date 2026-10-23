@@ -15238,7 +15238,7 @@
           "skill": {
             "ID": "100807",
             "name": "Concentrate",
-            "SpecificEffects": "If unable to retaliate in combat, gains <buf ID=1008072>[Iron Will]</buf> after combat. Stacks up to <color=#F74848>5</color> times. Lasts until a critical hit is landed.",
+            "SpecificEffects": "If unable to retaliate in combat, gains <buf ID=1008072>[Determination]</buf> after combat. Stacks up to <color=#F74848>5</color> times. Lasts until a critical hit is landed.",
             "SkillIcon": "Icon_skill_passive_5114",
             "icon": "Icon_skill_passive_5114"
           }
@@ -24531,7 +24531,7 @@
           "skill": {
             "ID": "600901",
             "name": "Aegis",
-            "describe": "Protects allies within <color=#F74848>2</color> adjacent tiles from Assault and Ranged attacks. Triggers up to <color=#F74848>2</color> times per turn and lasts <color=#F74848>2</color> turns. Additionally, gains <buf ID=900999>[Substitute]</buf>. Can only trigger <color=#F74848>1</color> time per turn.",
+            "describe": "Protects allies within <color=#F74848>2</color> adjacent tiles from Assault and Ranged attacks. Triggers up to <color=#F74848>2</color> times per turn and lasts <color=#F74848>2</color> turns. Additionally, gains <buf ID=6009011>[Substitute]</buf>. Can only trigger <color=#F74848>1</color> time per turn.",
             "SkillIcon": "Icon_skill_order_9701",
             "icon": "Icon_skill_order_9701",
             "Ap": "1",
@@ -27121,7 +27121,7 @@
           "skill": {
             "ID": "500507",
             "name": "Pochy Remote!",
-            "SpecificEffects": "If [Seven] executes <buf ID=5005071>[Specific Repair Skills]</buf> on targets beyond <color=#F74848>2</color> tiles of [Pochy], [Pochy] automatically selects the ally with the lowest HP in range to perform <buf ID=900019>[Link Repair]</buf>.",
+            "SpecificEffects": "If [Seven] executes <buf ID=900110>[Specific Repair Skills]</buf> on targets beyond <color=#F74848>2</color> tiles of [Pochy], [Pochy] automatically selects the ally with the lowest HP in range to perform <buf ID=900019>[Link Repair]</buf>.",
             "SkillIcon": "Icon_skill_passive_3113",
             "icon": "Icon_skill_passive_3113"
           }
@@ -37459,7 +37459,7 @@
           "skill": {
             "ID": "400206",
             "name": "New Initiatives",
-            "describe": "Fully reloads the Tactical Weapon's ammo. Gains <buf ID=4002062>[Missile DMG UP]</buf> and <buf ID=4002065>[Rocket DMG UP]</buf>, with each triggering once. Can continue action with remaining Movement.",
+            "describe": "Fully reloads the Tactical Weapon's ammo. Gains <buf ID=4002062>[Missile Launcher DMG UP]</buf> and <buf ID=4002065>[Rocket Launcher DMG UP]</buf>, with each triggering once. Can continue action with remaining Movement.",
             "SkillIcon": "Icon_skill_order_5106",
             "icon": "Icon_skill_order_5106",
             "Ap": "1",
@@ -43355,7 +43355,7 @@
           "skill": {
             "ID": "500102",
             "name": "Armor Tending",
-            "SpecificEffects": "After performing active repairs, grants <buf ID=7101601>[Armor Down Immunity]</buf> and <buf ID=7101604>[DMG Taken Immunity]</buf> to the target, lasting for <color=#F74848>2</color> turns.",
+            "SpecificEffects": "After performing active repairs, grants <buf ID=7101601>[Armor Down Immunity]</buf> and <buf ID=7101604>[DMG Taken UP Immunity]</buf> to the target, lasting for <color=#F74848>2</color> turns.",
             "SkillIcon": "Icon_skill_passive_3101",
             "icon": "Icon_skill_passive_3101"
           }

@@ -230,7 +230,7 @@
   },
   "900089": {
    "name": "Balance",
-   "effect": "Balances the HP percentage of all undestroyed parts."
+   "effect": "Equalizes HP percentage across all parts. Destroyed parts are not included."
   },
   "900095": {
    "name": "Dual Gun Retaliation",
@@ -243,10 +243,6 @@
   "900096": {
    "name": "Retaliation",
    "effect": "After the enemy attacks this unit, launches a retaliation."
-  },
-  "900999": {
-   "name": "Substitute",
-   "effect": "If an ally with HP below 30% is attacked during combat, a [Guard] effect can be activated regardless of skill range. Removed after activation."
   },
   "900097": {
    "name": "Link Salvo",
@@ -290,11 +286,11 @@
   },
   "1002502": {
    "name": "Passionate I",
-   "effect": "Offensive aggression +5%, defensive stability -5%."
+   "effect": "DMG <color=#F74848>+3%</color>. Stacks up to <color=#F74848>3</color> times."
   },
   "1002512": {
    "name": "Passionate II",
-   "effect": "Offensive aggression +10%, defensive stability -10%."
+   "effect": "DMG <color=#F74848>+3%</color>. Stacks up to <color=#F74848>5</color> times."
   },
   "1004021": {
    "name": "Weapon Inhibition",
@@ -321,7 +317,7 @@
    "effect": "When attacked and retaliating, ensures a Perfect Dodge. Effect is removed after triggering."
   },
   "1008072": {
-   "name": "Iron Will",
+   "name": "Determination",
    "effect": "Crit Rate +6%. Stacks up to 5 times. Lasts until a critical hit is landed."
   },
   "1008503": {
@@ -402,7 +398,7 @@
   },
   "2006502": {
    "name": "Attack Enhancement I",
-   "effect": "ATK +5%."
+   "effect": "DMG <color=#F74848>+5%</color>. Stacks up to <color=#F74848>3</color> times."
   },
   "2007501": {
    "name": "Adorable",
@@ -443,10 +439,6 @@
   "2015081": {
    "name": "Turning Point",
    "effect": "DMG Taken -30%. Removed at start of action."
-  },
-  "2015087": {
-   "name": "Maelstrom",
-   "effect": "At start of action, if not incapacitated and both Arms are undestroyed, uses two Machine Guns simultaneously to deal 0.6x DMG 2 times to all enemies within range. If unable to attack, gains 3 AP."
   },
   "2015509": {
    "name": "Improved Retaliation",
@@ -542,7 +534,7 @@
   },
   "204551": {
    "name": "Mode - Martial",
-   "effect": "When initiating combat, has a <color=#F74848>35%</color> chance to trigger <buf ID=900010>[Gusty Strike]</buf>, dealing <color=#F74848>0.4</color>x DMG."
+   "effect": "Normal attacks have a <color=#F74848>35%</color> chance to trigger <buf ID=900010>[Gusty Strike]</buf>, dealing <color=#F74848>0.4x</color> DMG."
   },
   "204561": {
    "name": "Mode - Moonflower",
@@ -554,7 +546,7 @@
   },
   "204581": {
    "name": "Mode - Unhurt",
-   "effect": "When the Legs are broken, Movement does not decrease, and it gains the <buf ID=6005461>[Movement Down Immunity]</buf> effect."
+   "effect": "When Legs are destroyed, Movement is not reduced. Immune to [Movement Reduction] effects."
   },
   "3005412": {
    "name": "Global Repair Effect Down",
@@ -570,7 +562,7 @@
   },
   "3006053": {
    "name": "Seasoned",
-   "effect": "Enhanced combat proficiency granting bonuses to attack actions."
+   "effect": "AP Cost <color=#F74848>-1</color> for Active Skills, up to <color=#F74848>2</color> stacks. Each stack is independent and does not accumulate. Removes <color=#F74848>1</color> stack after the effect activates."
   },
   "3006502": {
    "name": "Short Circuit I",
@@ -579,10 +571,6 @@
   "3008061": {
    "name": "Guard Disabled",
    "effect": "Unable to perform [Guard] or [Selfless Guard]."
-  },
-  "3008081": {
-   "name": "Ignore Guard",
-   "effect": "Attacks bypass Guard effects entirely."
   },
   "3008501": {
    "name": "Epiphyllum Move",
@@ -594,11 +582,11 @@
   },
   "3009411": {
    "name": "Intel Collection",
-   "effect": "Gathering tactical intelligence that may reveal enemy positions or grant combat bonuses."
+   "effect": "When an ST is destroyed within range, restores <color=#F74848>1</color> AP. Can trigger <color=#F74848>1</color> time per turn."
   },
   "3009451": {
    "name": "Intel Collection",
-   "effect": "Gathering tactical intelligence that may reveal enemy positions or grant combat bonuses."
+   "effect": "When an ST is destroyed anywhere, restores <color=#F74848>1</color> AP. Can trigger <color=#F74848>1</color> time per turn."
   },
   "3010502": {
    "name": "Reinforced Ammo",
@@ -613,12 +601,12 @@
    "effect": "Crit Rate <color=#F74848>+3%</color>, DMG Taken <color=#F74848>-2%</color>. Stacks up to <color=#F74848>8</color> times. Loses all stacks upon exiting [Directional Rack]."
   },
   "4002062": {
-   "name": "Missile DMG UP",
-   "effect": "Increases damage dealt by missile attacks."
+   "name": "Missile Launcher DMG UP",
+   "effect": "Missile Launcher DMG <color=#F74848>+20%</color>."
   },
   "4002065": {
-   "name": "Rocket DMG UP",
-   "effect": "Increases damage dealt by rocket attacks."
+   "name": "Rocket Launcher DMG UP",
+   "effect": "Rocket Launcher DMG <color=#F74848>+20%</color>."
   },
   "4002501": {
    "name": "Thirst for Knowledge",
@@ -676,10 +664,6 @@
    "name": "Magnetized Repair",
    "effect": "After combat, if there are any destroyed parts, repairs <color=#F74848>1</color> of them. Repair amount is <color=#F74848>0.2x</color> that of the Manipulator. Can trigger once."
   },
-  "5005071": {
-   "name": "Specific Repair Skills",
-   "effect": "[Pochy Assist!] Skill and [Full Power!] Skill"
-  },
   "5006031": {
    "name": "Limit Relief",
    "effect": "Negates one instance of [Re-ATK] or [Re-Act] deduction. Removed after taking effect."
@@ -714,11 +698,11 @@
   },
   "6003061": {
    "name": "Weapon Inhibition",
-   "effect": "Reduces the target's weapon effectiveness."
+   "effect": "Cannot execute weapon skills or attack codes except for normal attacks."
   },
   "6003502": {
    "name": "Attack Inhibition I",
-   "effect": "Reduces the target's attack effectiveness by 5%."
+   "effect": "DMG Dealt <color=#F74848>-5%</color>."
   },
   "6004041": {
    "name": "Aggressive",
@@ -906,15 +890,15 @@
   },
   "7101601": {
    "name": "Armor Down Immunity",
-   "effect": "Immune to armor reduction debuffs."
+   "effect": "Immune to [Armor Down] effects."
   },
   "7101603": {
    "name": "Hit Down Immunity",
-   "effect": "Immune to hit rate reduction debuffs."
+   "effect": "Immune to [Hit Rate Down]."
   },
   "7101604": {
-   "name": "DMG Taken Immunity",
-   "effect": "Immune to increased damage taken debuffs."
+   "name": "DMG Taken UP Immunity",
+   "effect": "Immune to <buf ID=900045>[DMG Taken UP]</buf> effects."
   },
   "7101606": {
    "name": "DMG Down Immunity",
@@ -958,7 +942,7 @@
   },
   "900108": {
    "name": "Hologram",
-   "effect": "Replicant. Copies the unit's part status and HP upon creation. It cannot attack, move, or be guarded, and is removed at the start of [Your Turn]."
+   "effect": "Replicant. Copies the unit's part status and HP upon creation. It cannot attack, move, or be guarded."
   },
   "900039": {
    "name": "Rack",
@@ -1110,7 +1094,7 @@
   },
   "900069": {
    "name": "Twin-Gun Link Attack",
-   "effect": "After an ally launches an attack, use two machine guns to launch a [Link Attack] on the target they attacked."
+   "effect": "After an ally actively attacks, uses two Machine Guns to launch an Extra Strike on the same target."
   },
   "900153": {
    "name": "Weapon Skill",
@@ -1175,10 +1159,6 @@
   "530622": {
    "name": "Chainsaw Heating Up",
    "effect": "Chainsaw Hits <color=#F74848>+1</color>. Stacks up to <color=#F74848>3</color> times. Loses <color=#F74848>1</color> stack after taking action."
-  },
-  "530391": {
-   "name": "Heating Up",
-   "effect": "Before attacking, if possessing <color=#F74848>15</color> stacks of [Heating Up], restores <color=#F74848>2</color> AP after combat, then removes all [Heating Up] stacks after triggering the corresponding effect."
   },
   "530742": {
    "name": "Poised to Strike",
@@ -1540,7 +1520,7 @@
   },
   "6002041": {
    "name": "Passive Repair",
-   "effect": "After taking damage, restores <color=#F74848>20%</color> HP to the part with the lowest HP. Stacks up to <color=#F74848>2</color> times."
+   "effect": "After taking damage, restore <color=#F74848>20%</color> HP of the part with the lowest HP, up to <color=#F74848>2</color> stacks."
   },
   "900142": {
    "name": "Hunter's Mark",
@@ -1657,6 +1637,18 @@
   "3006452": {
    "name": "Short Circuit III",
    "effect": "At end of action, all parts take Fixed DMG equal to <color=#F74848>7%</color> of their Max HP. If the target is debuffed, this Fixed DMG increases by <color=#F74848>1%</color> for each debuff, up to <color=#F74848>12%</color>. This damage will not break the part."
+  },
+  "530395": {
+   "name": "Heating Up",
+   "effect": "Before attacking, if possessing <color=#F74848>15</color> stacks of [Heating Up], restores <color=#F74848>2</color> AP after combat, then removes all [Heating Up] stacks after triggering the corresponding effect."
+  },
+  "900110": {
+   "name": "Specific Repair Skills",
+   "effect": "[Pochy Assist!] Skill and [Full Power!] Skill"
+  },
+  "6009011": {
+   "name": "Substitute",
+   "effect": "If an ally with HP below 30% is attacked during combat, a [Guard] effect can be activated regardless of skill range. Removed after activation."
   }
  },
  "skill": {

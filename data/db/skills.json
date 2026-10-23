@@ -3540,7 +3540,7 @@
   "100807": {
     "kind": "skill",
     "name": "Concentrate",
-    "effect": "If unable to retaliate in combat, gains <buf ID=1008072>[Iron Will]</buf> after combat. Stacks up to <color=#F74848>5</color> times. Lasts until a critical hit is landed.",
+    "effect": "If unable to retaliate in combat, gains <buf ID=1008072>[Determination]</buf> after combat. Stacks up to <color=#F74848>5</color> times. Lasts until a critical hit is landed.",
     "icon": "Icon_skill_passive_5114",
     "buffs": "1008071"
   },
@@ -5720,7 +5720,7 @@
   "500507": {
     "kind": "skill",
     "name": "Pochy Remote!",
-    "effect": "If [Seven] executes <buf ID=5005071>[Specific Repair Skills]</buf> on targets beyond <color=#F74848>2</color> tiles of [Pochy], [Pochy] automatically selects the ally with the lowest HP in range to perform <buf ID=900019>[Link Repair]</buf>.",
+    "effect": "If [Seven] executes <buf ID=900110>[Specific Repair Skills]</buf> on targets beyond <color=#F74848>2</color> tiles of [Pochy], [Pochy] automatically selects the ally with the lowest HP in range to perform <buf ID=900019>[Link Repair]</buf>.",
     "icon": "Icon_skill_passive_3113",
     "buffs": "5005071"
   },
@@ -7730,7 +7730,7 @@
   "400206": {
     "kind": "skill",
     "name": "New Initiatives",
-    "describe": "Fully reloads the Tactical Weapon's ammo. Gains <buf ID=4002062>[Missile DMG UP]</buf> and <buf ID=4002065>[Rocket DMG UP]</buf>, with each triggering once. Can continue action with remaining Movement.",
+    "describe": "Fully reloads the Tactical Weapon's ammo. Gains <buf ID=4002062>[Missile Launcher DMG UP]</buf> and <buf ID=4002065>[Rocket Launcher DMG UP]</buf>, with each triggering once. Can continue action with remaining Movement.",
     "icon": "Icon_skill_order_5106",
     "ap": "1",
     "cd": "3",
@@ -8677,7 +8677,7 @@
   "500102": {
     "kind": "skill",
     "name": "Armor Tending",
-    "effect": "After performing active repairs, grants <buf ID=7101601>[Armor Down Immunity]</buf> and <buf ID=7101604>[DMG Taken Immunity]</buf> to the target, lasting for <color=#F74848>2</color> turns.",
+    "effect": "After performing active repairs, grants <buf ID=7101601>[Armor Down Immunity]</buf> and <buf ID=7101604>[DMG Taken UP Immunity]</buf> to the target, lasting for <color=#F74848>2</color> turns.",
     "icon": "Icon_skill_passive_3101",
     "buffs": "5001021"
   },
@@ -9054,7 +9054,7 @@
   "53039": {
     "kind": "weapon",
     "name": "Whoosh!",
-    "effect": "Enhanced [Hot! Hot! Hot!] Effect: At end of action, applies <terrian ID=4003081 /> to tiles along the path of this action, lasting for <color=#F74848>2</color> turns.\nFor each <color=#F74848>1</color> tile of <terrian ID=4003081 /> applied, gains <color=#F74848>1</color> stack of <buf ID=530391>[Heating Up]</buf>. Can stack up to <color=#F74848>15</color> times.\nIf on <terrian ID=4003081 />, Flamethrower Bullets <color=#F74848>+1</color> and Flame DMG multiplier <color=#F74848>+10%</color>.",
+    "effect": "Enhanced [Hot! Hot! Hot!] Effect: At end of action, applies <terrian ID=4003081 /> to tiles along the path of this action, lasting for <color=#F74848>2</color> turns.\nFor each <color=#F74848>1</color> tile of <terrian ID=4003081 /> applied, gains <color=#F74848>1</color> stack of <buf ID=530395>[Heating Up]</buf>. Can stack up to <color=#F74848>15</color> times.\nIf on <terrian ID=4003081 />, Flamethrower Bullets <color=#F74848>+1</color> and Flame DMG multiplier <color=#F74848>+10%</color>.",
     "icon": "Icon_skill_passive_5230",
     "buffs": "530391/530393/530394/530396"
   },
@@ -10595,7 +10595,7 @@
   "600901": {
     "kind": "skill",
     "name": "Aegis",
-    "describe": "Protects allies within <color=#F74848>2</color> adjacent tiles from Assault and Ranged attacks. Triggers up to <color=#F74848>2</color> times per turn and lasts <color=#F74848>2</color> turns. Additionally, gains <buf ID=900999>[Substitute]</buf>. Can only trigger <color=#F74848>1</color> time per turn.",
+    "describe": "Protects allies within <color=#F74848>2</color> adjacent tiles from Assault and Ranged attacks. Triggers up to <color=#F74848>2</color> times per turn and lasts <color=#F74848>2</color> turns. Additionally, gains <buf ID=6009011>[Substitute]</buf>. Can only trigger <color=#F74848>1</color> time per turn.",
     "icon": "Icon_skill_order_9701",
     "ap": "1",
     "cd": "2",
