@@ -122,7 +122,8 @@ Pages.accessories = {
 
       $('#acc-page').on('click', '.acc-th-sortable', function () {
         var key = $(this).data('sort-key');
-        self._sortDir = self._sortKey === key ? -self._sortDir : -1;
+        // Text columns start A-Z, number columns start highest-first
+        self._sortDir = self._sortKey === key ? -self._sortDir : (key === 'type' ? 1 : -1);
         self._sortKey = key;
         self._applySort();
       });
@@ -220,7 +221,10 @@ Pages.accessories = {
         if (key) {
           var va = $(a).data('sort-' + key) || 0;
           var vb = $(b).data('sort-' + key) || 0;
-          if (va !== vb) return (va - vb) * dir;
+          if (va !== vb) {
+            if (typeof va === 'string' || typeof vb === 'string') return String(va).localeCompare(String(vb)) * dir;
+            return (va - vb) * dir;
+          }
         }
         return $(a).data('order') - $(b).data('order');
       });
@@ -269,7 +273,7 @@ Pages.accessories = {
 
     var headHtml =
       '<th class="acc-th-name">Name</th>' +
-      '<th class="acc-th-type">Type</th>' +
+      '<th class="acc-th-sortable acc-th-type" data-sort-key="type">Type<span class="acc-sort-arrow"></span></th>' +
       '<th class="acc-th-sortable acc-th-factor" data-sort-key="factor">Factor<span class="acc-sort-arrow"></span></th>' +
       allCOs.map(function (co) {
         return '<th class="acc-th-sortable acc-col-co" data-co="' + co + '" data-sort-key="co' + co + '">CO' + co + '<span class="acc-sort-arrow"></span></th>';
@@ -286,7 +290,8 @@ Pages.accessories = {
       var factor = self._factorOf(a);
 
       var occ = a.occurrence || {};
-      var sortAttrs = factor !== undefined ? ' data-sort-factor="' + factor + '"' : '';
+      var sortAttrs = ' data-sort-type="' + $('<span>').text(tagLabel).html().replace(/"/g, '&quot;') + '"';
+      if (factor !== undefined) sortAttrs += ' data-sort-factor="' + factor + '"';
       var coCells = allCOs.map(function (co) {
         var n = occ[co] || 0;
         sortAttrs += ' data-sort-co' + co + '="' + n + '"';
