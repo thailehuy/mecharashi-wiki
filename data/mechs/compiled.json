@@ -1637,7 +1637,7 @@
         {
           "ID": "30688",
           "name": "Escalation Module",
-          "SpecificEffects": "When actively attacking, for each <color=#F74848>1</color> hit scored, DMG Dealt increases by <color=#F74848>1.5%</color> and ignores <color=#F74848>5%</color> of the target's Armor, up to <color=#F74848>18%</color> DMG and <color=#F74848>60%</color> Armor ignored.\nAfter initiating combat, if <color=#F74848>18</color> or more hits were scored, restores <color=#F74848>1</color> AP. This effect can trigger <color=#F74848>2</color> times per turn.",
+          "SpecificEffects": "After each attack hits, for each <color=#F74848>1</color> hit scored, ignores <color=#F74848>5%</color> of the target's Armor and DMG Dealt increases by <color=#F74848>1.5%</color>, up to <color=#F74848>60%</color> Armor ignored and <color=#F74848>18%</color> DMG.\nAfter initiating combat with a normal attack, an active attack or <buf ID=900010>[Gusty Strike]</buf>, if <color=#F74848>18</color> or more hits were scored in that combat, restores <color=#F74848>1</color> AP. This effect can trigger <color=#F74848>2</color> times per turn.",
           "SkillIcon": "Icon_entry_10116",
           "icon": "Icon_entry_10116",
           "id": "3068",
