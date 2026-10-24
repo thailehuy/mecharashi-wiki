@@ -2,7 +2,11 @@
 """Extract the Story page's stage pictures (data/story/story.json's `image`: each
 main-story stage's and side story chapter's) into the assets repo
 (data/story/<image>.jpg), and the Elite Battle page's chapter pictures
-(data/elite/elite.json's `image`) into data/elite/<image>.jpg.
+(data/elite/elite.json's `image`) into data/elite/<image>.jpg. The
+Refactor-in-Crisis page's stage pictures (map screenshots, like the Story
+page's) go into data/story/ too, and its themes' pictures
+(Img_Protagonist_bar_pic1_Raw, 1070x500, in ui_uiimages_uiprotagonistpilotchallenge_abs)
+into data/crisis/<image>.jpg.
 
 They're whole textures: map screenshots (Icon_Map_Desert_Raw, 1160x740) in the
 game's ui_uiimages_uimapscreenshot_abs bundle, cutscene pictures
@@ -23,12 +27,14 @@ import sys
 import UnityPy
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from extract_item_icons import ASSETS_DIR, ELITE, STORY, newest_bundles, settings  # noqa: E402
+from extract_item_icons import ASSETS_DIR, CRISIS, ELITE, STORY, newest_bundles, settings  # noqa: E402
 
 STORY_DIR = os.path.join(ASSETS_DIR, 'data', 'story')
 ELITE_DIR = os.path.join(ASSETS_DIR, 'data', 'elite')
+CRISIS_DIR = os.path.join(ASSETS_DIR, 'data', 'crisis')
 STORY_BUNDLES = ('ui_uiimages_uimapscreenshot_abs', 'ui_uiimages_uidialogpic_')
 ELITE_BUNDLES = ('ui_uiimages_uielitebattle_abs',)
+CRISIS_BUNDLES = ('ui_uiimages_uiprotagonistpilotchallenge_abs',)
 # The Elite Battle pictures' frame: ~15px at the sides, 8 at the top, 25 at the bottom, ragged.
 ELITE_CROP = (30, 20, 630, 690)
 
@@ -38,7 +44,11 @@ def story_images():
         story = json.load(f)
     stages = [st for c in story['chapters'] for st in c['stages']] + \
              [st for s in story.get('sideStories', []) for st in s['stages']]
-    return {st['image'] for st in stages if st.get('image')}
+    images = {st['image'] for st in stages if st.get('image')}
+    if os.path.exists(CRISIS):
+        with open(CRISIS, encoding='utf-8') as f:
+            images |= {st['image'] for t in json.load(f)['themes'] for st in t['stages'] if st.get('image')}
+    return images
 
 
 def elite_images():
@@ -46,6 +56,13 @@ def elite_images():
         return set()
     with open(ELITE, encoding='utf-8') as f:
         return {c['image'] for c in json.load(f)['chapters'] if c.get('image')}
+
+
+def crisis_images():
+    if not os.path.exists(CRISIS):
+        return set()
+    with open(CRISIS, encoding='utf-8') as f:
+        return {t['image'] for t in json.load(f)['themes'] if t.get('image')}
 
 
 def extract(what, need, prefixes, out_dir, force, crop=None):
@@ -77,6 +94,7 @@ def main():
     UnityPy.set_assetbundle_decrypt_key(settings.BUNDLE_KEY)
     extract('story pictures', story_images(), STORY_BUNDLES, STORY_DIR, force)
     extract('Elite Battle pictures', elite_images(), ELITE_BUNDLES, ELITE_DIR, force, ELITE_CROP)
+    extract('Refactor-in-Crisis theme pictures', crisis_images(), CRISIS_BUNDLES, CRISIS_DIR, force)
 
 
 if __name__ == '__main__':

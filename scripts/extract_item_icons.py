@@ -2,7 +2,8 @@
 """Extract the item icons the boss drops (bosses.json), crafting materials
 (data/db/materials.json), story stage rewards (data/story/story.json), Elite Battle rewards
 (data/elite/elite.json), Simulated Battle rewards (data/sim/sim.json), Covert Phantom boss rewards
-(data/covert/covert.json), Memory Storm clear drops (data/storm/storm.json), Frontier Trial rewards (data/frontier/frontier.json), the Events page's rewards, shop items
+(data/covert/covert.json), Memory Storm clear drops (data/storm/storm.json), Frontier Trial rewards (data/frontier/frontier.json),
+Refactor-in-Crisis mission rewards (data/crisis/crisis.json), the Events page's rewards, shop items
 and currencies (data/events/events.json) and the Shops page's Nostalgic Challenge Store items (data/shops.js) use from the game's bundles into the assets repo (data/items/<icon>.png), and the
 Border Conflict foes' portraits on the Story and Covert Phantom pages and the Covert Phantom pilot masteries'
 pilots (data/unlisted/pilot_images_half/<portrait>.png).
@@ -39,13 +40,15 @@ SIM = os.path.join(ROOT, 'data', 'sim', 'sim.json')
 COVERT = os.path.join(ROOT, 'data', 'covert', 'covert.json')
 STORM = os.path.join(ROOT, 'data', 'storm', 'storm.json')
 FRONTIER = os.path.join(ROOT, 'data', 'frontier', 'frontier.json')
+CRISIS = os.path.join(ROOT, 'data', 'crisis', 'crisis.json')
 EVENTS = os.path.join(ROOT, 'data', 'events', 'events.json')
 SHOPS = os.path.join(ROOT, 'data', 'shops.js')
 ASSETS_DIR = os.environ.get('ASSETS_DIR', os.path.join(os.path.dirname(ROOT), 'mecharashi-wiki-assets'))
 OUT_DIR = os.path.join(ASSETS_DIR, 'data', 'items')
 PORTRAIT_DIR = os.path.join(ASSETS_DIR, 'data', 'unlisted', 'pilot_images_half')
 BUNDLE_DIR = os.path.join(settings.GAME_DIR, 'Mecharashi_Data', 'StreamingAssets', 'ExportAssetBundle')
-CACHE_DIR = os.path.join(settings.LOCAL_LOW, 'Unity', 'tentree_Mecharashi')
+# The game's downloaded bundles: the global or the CN client's (MECHA_REGION), as extract_banner_images.py reads them.
+CACHE_DIR = os.path.dirname(settings.CONFIG_CACHE)
 ICON_BUNDLES = ('ui_uiimages_uiicons_itemtype_abs_', 'ui_uiimages_uiicons_itemchips_abs',
                 'ui_uiimages_uiicons_honormedal_abs')
 PORTRAIT_BUNDLES = ('ui_uiimages_uipiloticons_abs_',)
@@ -100,6 +103,12 @@ def needed_icons():
         # Each grade's first-clear rewards and its repeat rewards per formation type.
         icons |= {r['icon'] for st in frontier['stages'] for g in st['grades']
                   for r in g['first'] + [x for rs in g['normal'].values() for x in rs]
+                  if r['kind'] == 'item' and r.get('icon')}
+    if os.path.exists(CRISIS):
+        with open(CRISIS, encoding='utf-8') as f:
+            crisis = json.load(f)
+        # Each theme's mission rewards: Reconstruction Logs and medals.
+        icons |= {r['icon'] for t in crisis['themes'] for m in t['missions'] for r in m['rewards']
                   if r['kind'] == 'item' and r.get('icon')}
     if os.path.exists(EVENTS):
         with open(EVENTS, encoding='utf-8') as f:

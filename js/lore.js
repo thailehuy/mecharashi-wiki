@@ -29,9 +29,11 @@ var Lore = {
   loadingHtml: '<div class="lore-loading">Loading…</div>',
 
   _show: function ($wrap, tab) {
-    $wrap.find('[data-detail-tab]').each(function () { $(this).toggleClass('active', this.getAttribute('data-detail-tab') === tab); });
-    $wrap.find('[data-detail-pane]').each(function () { this.hidden = this.getAttribute('data-detail-pane') !== tab; });
-    var pane = $wrap.find('[data-detail-pane="' + tab + '"]')[0];
+    // Only this tab set's own tabs and panes: a pane can hold tabs of its own (Refactor-in-Crisis's themes).
+    var own = function () { return $(this).closest('.detail-tabs-wrap')[0] === $wrap[0]; };
+    $wrap.find('[data-detail-tab]').filter(own).each(function () { $(this).toggleClass('active', this.getAttribute('data-detail-tab') === tab); });
+    $wrap.find('[data-detail-pane]').filter(own).each(function () { this.hidden = this.getAttribute('data-detail-pane') !== tab; });
+    var pane = $wrap.find('[data-detail-pane="' + tab + '"]').filter(own)[0];
     if (pane && pane.hasAttribute('data-lore-kind')) this._fill(pane);
     if (pane && pane.hasAttribute('data-voice-id')) Voice.fill(pane);
     // Leaving the Voice Lines tab stops whatever it was playing.

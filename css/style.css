@@ -4550,3 +4550,39 @@ a.boss-avatar { display: block; }
 .event-cur-icon { width: 24px; height: 24px; object-fit: contain; vertical-align: middle; margin-right: 0.25rem; }
 .event-shop .boss-drop-list { margin-top: 0; }
 .event-price { white-space: nowrap; }
+
+/* Refactor-in-Crisis: a tab per theme; its protagonists' perks, endings, stages and missions. */
+.ric-hero { aspect-ratio: 107 / 50; max-width: 900px; }
+.ric-when { color: #cbd5e1; font-size: 0.9rem; margin: 0.25rem 0 0; }
+.ric-ways { color: #cbd5e1; font-size: 0.9rem; margin: 0; padding-left: 1.25rem; }
+.ric-head { margin-top: 0.75rem; }
+.ric-pros { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 0.75rem; }
+.ric-pro { border-top: 3px solid #e94560; }
+.ric-pro-head { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.5rem; }
+.ric-pro-head h3 { font-size: 1.1rem; font-weight: 700; margin: 0; }
+.ric-pro-head h3 a { color: #ffffff; text-decoration: none; }
+.ric-pro-ride { color: #cbd5e1; font-size: 0.85rem; }
+.ric-perks { list-style: none; margin: 0.5rem 0 0; padding: 0; display: flex; flex-direction: column; gap: 0.4rem; }
+.ric-perks li { display: flex; gap: 0.5rem; align-items: baseline; }
+.ric-rd { flex-shrink: 0; min-width: 3.4rem; padding: 0.05rem 0.4rem; border-radius: 4px; background-color: #2a2a4a; color: #ffcf5c; font-size: 0.75rem; font-weight: 700; text-align: center; font-variant-numeric: tabular-nums; }
+.ric-terms { margin-top: 0.6rem; padding-top: 0.5rem; border-top: 1px solid #2a2a4a; display: flex; flex-direction: column; gap: 0.3rem; font-size: 0.85rem; color: #cbd5e1; }
+.ric-terms b { color: #deb072; }
+.ric-endings { list-style: none; margin: 0; padding: 0.6rem 0.9rem; display: flex; flex-direction: column; gap: 0.25rem; }
+.ric-stage--final { border-color: #b45309; }
+.ric-stage-main { flex: 1; min-width: 0; }
+.ric-stage-text { color: #cbd5e1; font-style: italic; font-size: 0.9rem; margin: 0; }
+.ric-tiers { margin-top: 0.5rem; }
+.ric-tiers summary { cursor: pointer; color: #deb072; font-size: 0.85rem; font-weight: 700; }
+.ric-tier-table { font-size: 0.85rem; }
+.ric-tier-name { font-weight: 700; white-space: nowrap; }
+.ric-levels { display: grid; grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 0.25rem 0.75rem; margin-top: 0.4rem; font-size: 0.85rem; color: #cbd5e1; font-variant-numeric: tabular-nums; }
+.ric-tag-boss { background-color: #7f1d1d; color: #fecaca; }
+.ric-tag-elite { background-color: #713f12; color: #fde68a; }
+.ric-tag-normal { background-color: #334155; color: #e2e8f0; }
+.ric-tag-challenge { background-color: #713f12; color: #ffd04f; font-size: 0.7rem; }
+.ric-missions td { vertical-align: middle; }
+.ric-missions .boss-drop-list { margin-top: 0; }
+/* A theme's own tabs (Protagonists, Stages, ...), smaller than the theme tabs above them. */
+.ric-theme .detail-tabs { margin-top: 1rem; border-bottom-width: 1px; }
+.ric-theme .detail-tab { font-size: 0.95rem; padding: 0.35rem 0.9rem; }
+.ric-theme .detail-tab-pane { padding-top: 0.75rem; }
