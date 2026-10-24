@@ -1544,7 +1544,7 @@ window.GlossaryData = {
     },
     "2023069": {
       "name": "Energy Blockade",
-      "effect": "Cannot gain AP."
+      "effect": "Cannot gain AP. Cannot be dispelled."
     },
     "900007": {
       "name": "Retaliation Disabled",
