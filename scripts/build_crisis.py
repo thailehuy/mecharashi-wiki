@@ -53,6 +53,7 @@ from collections import Counter, OrderedDict, defaultdict
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from build_banners import CN_STATS  # noqa: E402
+from build_pages import slugify  # noqa: E402
 from build_storm import cn_patches, open_date  # noqa: E402
 from build_story import STATS, clean, load, text  # noqa: E402
 
@@ -492,6 +493,7 @@ def main():
         if not on_global:
             x['fan'] = True
             x['cnName'] = en.chinese(t['TitleStrKey'])
+        x['slug'] = slugify(x['name'])     # its own page, refactorincrisis/<slug>/
         x['cnOpens'] = open_date(cn, t['OpenTimeInfoId'])
         x['version'] = ([v for d, v in patches if d <= x['cnOpens']] or [None])[-1] if x['cnOpens'] else None
         themes.append(x)

@@ -1,10 +1,11 @@
 var Pages = window.Pages || {};
 
-// The Refactor-in-Crisis page (the game's ProtagonistPilotChallenge): a tab per
-// theme with its two protagonists' Resolution Degree perks, its endings, its
-// ten stages (conditions, difficulty tiers and every unit the map places) and
-// its missions. What every theme shares (how Data is earned, the Resolution
-// Degree curve) is shown once above the tabs. Its data (data/crisis/crisis.js,
+// The Refactor-in-Crisis page (the game's ProtagonistPilotChallenge): a card per
+// theme, each opening the theme's own page (refactorincrisis/<slug>/) with its
+// two protagonists' Resolution Degree perks, its endings, its ten stages
+// (conditions, difficulty tiers and every unit the map places) and its
+// missions. What every theme shares (how Data is earned, the Resolution Degree
+// curve) is shown once on the listing, above the cards. Its data (data/crisis/crisis.js,
 // built by scripts/build_crisis.py) is fetched the first time the page opens;
 // reward chips are drawn as on the Story page. Themes not yet on global come
 // from the CN client, their text fan-translated where global has no wording.
@@ -178,29 +179,41 @@ Pages.refactorincrisis = {
     );
   },
 
-  _theme: function (t, d, kit) {
+  // "On global since …" or "Not yet on global", then the CN release.
+  _when: function (t) {
+    var when = t.opens ? 'On global since ' + Pages.story._date(t.opens) : '<span class="tag storm-upcoming">Not yet on global</span>';
+    var cn = t.cnOpens ? 'CN ' + (t.version ? 'v' + this._esc(t.version) + ', ' : '') + Pages.story._date(t.cnOpens) : '';
+    return when + (cn ? ' · ' + cn : '');
+  },
+
+  _kit: function (d) {
+    var kit = Pages.story._kit();
+    kit.maxRd = d.levels[d.levels.length - 1].rd;
+    return kit;
+  },
+
+  // ── A theme's own page ───────────────────────────────────────────────────
+  _theme: function (t, d) {
     var self = this;
     var esc = this._esc;
-    var when = t.opens ? 'On global since ' + Pages.story._date(t.opens) : '<span class="tag storm-upcoming">Not yet on global</span>';
-    var cn = t.cnOpens ? 'CN ' + (t.version ? 'v' + esc(t.version) + ', ' : '') + Pages.story._date(t.cnOpens) : '';
+    var kit = this._kit(d);
     return (
+      '<a href="' + App.href('refactorincrisis') + '" class="btn-back">&#8592; Back to Refactor-in-Crisis</a>' +
+      '<div class="listing-header"><h1>' + esc(t.name) + '</h1></div>' +
       (t.image ? '<img class="event-hero ric-hero" src="' + this._img(t.image, 'crisis') + '" onerror="this.remove()" alt="" />' : '') +
-      '<div class="skill-card ric-head"><div class="storm-season-head"><h2>' + esc(t.name) + '</h2>' +
-        '<span class="story-chapter-sub">' + esc(t.code) + '</span></div>' +
-      '<p class="ric-when">' + when + (cn ? ' · ' + cn : '') +
+      '<p class="dispatch-intro"><span class="story-chapter-sub">' + esc(t.code) + '</span> · ' + this._when(t) +
         (t.fan ? ' <span class="storm-fan">(text from the CN client; names fan-translated where global has no official wording: ' +
-          esc(t.cnName) + ')</span>' : '') + '</p></div>' +
-      // The theme's own tabs, inside its tab of the theme tabs.
-      '<div class="ric-theme">' + Lore.tabsHtml([
-        ['pros-' + t.id, 'Protagonists',
+          esc(t.cnName) + ')</span>' : '') + '</p>' +
+      Lore.tabsHtml([
+        ['protagonists', 'Protagonists',
           '<div class="ric-pros">' + t.protagonists.map(function (p) { return self._protagonist(p, t, kit); }).join('') + '</div>'],
-        ['stages-' + t.id, 'Stages <small class="story-tab-n">' + t.stages.length + '</small>',
+        ['stages', 'Stages <small class="story-tab-n">' + t.stages.length + '</small>',
           '<div class="story-stages">' + t.stages.map(function (s) { return self._stage(s, d, kit); }).join('') + '</div>'],
-        ['missions-' + t.id, 'Missions <small class="story-tab-n">' + t.missions.length + '</small>', this._missions(t, kit)],
-        ['endings-' + t.id, 'Endings <small class="story-tab-n">' + t.endings.length + '</small>',
+        ['missions', 'Missions <small class="story-tab-n">' + t.missions.length + '</small>', this._missions(t, kit)],
+        ['endings', 'Endings <small class="story-tab-n">' + t.endings.length + '</small>',
           '<p class="ac-section-footnote">Which ending plays depends on the protagonists\' Resolution Degrees when the theme ends.</p>' +
           this._endings(t, kit)],
-      ]) + '</div>'
+      ])
     );
   },
 
@@ -216,10 +229,28 @@ Pages.refactorincrisis = {
     );
   },
 
-  _content: function (d) {
+  // ── Listing ──────────────────────────────────────────────────────────────
+  _card: function (t) {
     var self = this;
-    var kit = Pages.story._kit();
-    kit.maxRd = d.levels[d.levels.length - 1].rd;
+    var href = App.href('refactorincrisis', t.slug);
+    return (
+      '<div class="event-card">' +
+        '<a class="event-card-img" href="' + href + '">' +
+          (t.image ? '<img src="' + this._img(t.image, 'crisis') + '" onerror="this.remove()" alt="' + this._esc(t.name) + '" loading="lazy" />' : '') +
+        '</a>' +
+        '<div class="event-card-body">' +
+          '<a class="event-card-name" href="' + href + '"><span class="ric-card-n">' + (t.id < 10 ? '0' : '') + t.id + '</span> ' +
+            this._esc(t.name) + '</a>' +
+          '<div class="ric-card-pros">' + t.protagonists.map(function (p) { return self._esc(p.name); }).join(' &amp; ') + '</div>' +
+          '<div class="banner-dates">' + this._when(t) + '</div>' +
+        '</div>' +
+      '</div>'
+    );
+  },
+
+  _list: function (d) {
+    var self = this;
+    var kit = this._kit(d);
     return (
       '<div class="ac-section"><h2 class="ac-section-title">Data and Resolution</h2>' +
         '<p class="ac-section-footnote">' + (d.unlock ? this._esc(d.unlock) + '. ' : '') +
@@ -228,10 +259,9 @@ Pages.refactorincrisis = {
         '<div class="skill-card"><ul class="ric-ways">' + d.dataWays.map(function (w) { return '<li>' + self._esc(w) + '</li>'; }).join('') + '</ul>' +
         this._levels(d) + '</div>' +
       '</div>' +
-      Lore.tabsHtml(d.themes.map(function (t) {
-        return ['theme-' + t.id, '<small class="story-tab-n">' + (t.id < 10 ? '0' : '') + t.id + '</small> ' + self._esc(t.name),
-          self._theme(t, d, kit)];
-      }))
+      '<div class="ac-section"><h2 class="ac-section-title">Themes</h2>' +
+        '<div class="event-grid">' + d.themes.map(function (t) { return self._card(t); }).join('') + '</div>' +
+      '</div>'
     );
   },
 
@@ -245,28 +275,36 @@ Pages.refactorincrisis = {
     return this._loading;
   },
 
-  render: function () {
+  // param: a theme's slug (its own page).
+  render: function (param) {
     var self = this;
-    var body = window.CrisisData ? this._content(window.CrisisData) : '<div class="lore-loading">Loading…</div>';
+    var slug = param ? decodeURIComponent(param) : null;
+    var content = function () {
+      var d = window.CrisisData;
+      if (!slug) return self._list(d);
+      var t = d.themes.find(function (x) { return x.slug === slug; });
+      return t ? self._theme(t, d) : '<p class="text-danger">Theme not found.</p>';
+    };
+    var body = window.CrisisData ? content() : '<div class="lore-loading">Loading…</div>';
     if (!window.CrisisData) {
       // The page may have moved on by the time the data arrived.
       this._load().then(function () {
         var root = document.getElementById('ric-root');
-        if (root) root.innerHTML = self._content(window.CrisisData);
+        if (root && root.getAttribute('data-slug') === (slug || '')) root.innerHTML = content();
       }, function () {
         var root = document.getElementById('ric-root');
         if (root) root.innerHTML = '<p class="text-danger">Couldn\'t load Refactor-in-Crisis. Try again later.</p>';
       });
     }
     return (
-      '<div class="listing-header"><h1>Refactor-in-Crisis</h1></div>' +
-      '<p class="dispatch-intro">A Chronicles mode that revisits a story through two protagonist pilots. Each theme has ten stages: ' +
-        'Chaotic Blocks (stages 1, 3, 5, 7 and 9), whose Resolution Tiers make the enemies stronger for more Data; ' +
-        'Regular Blocks (2, 4, 6 and 8), story battles with one difficulty; and the Final Battle (10), with its Chaos Index. ' +
-        'Which protagonists reach RD 20 decides the theme\'s ending. Missions pay Reconstruction Logs, spent at the ' +
-        '<a href="' + App.href('shops') + '#nostalgic-challenge-store">Nostalgic Challenge Store</a>. ' +
-        'Themes not yet on global come from the CN client.</p>' +
-      '<div id="ric-root">' + body + '</div>'
+      (slug ? '' : '<div class="listing-header"><h1>Refactor-in-Crisis</h1></div>' +
+        '<p class="dispatch-intro">A Chronicles mode that revisits a story through two protagonist pilots. Each theme has ten stages: ' +
+          'Chaotic Blocks (stages 1, 3, 5, 7 and 9), whose Resolution Tiers make the enemies stronger for more Data; ' +
+          'Regular Blocks (2, 4, 6 and 8), story battles with one difficulty; and the Final Battle (10), with its Chaos Index. ' +
+          'Which protagonists reach RD 20 decides the theme\'s ending. Missions pay Reconstruction Logs, spent at the ' +
+          '<a href="' + App.href('shops') + '#nostalgic-challenge-store">Nostalgic Challenge Store</a>. ' +
+          'Themes not yet on global come from the CN client. Open one for its protagonists, stages, missions and endings.</p>') +
+      '<div id="ric-root" data-slug="' + this._esc(slug || '') + '">' + body + '</div>'
     );
   },
 };

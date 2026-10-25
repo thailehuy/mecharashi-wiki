@@ -4555,11 +4555,9 @@ a.boss-avatar { display: block; }
 .event-shop .boss-drop-list { margin-top: 0; }
 .event-price { white-space: nowrap; }
 
-/* Refactor-in-Crisis: a tab per theme; its protagonists' perks, endings, stages and missions. */
+/* Refactor-in-Crisis: a card per theme, each with its own page: its protagonists' perks, endings, stages and missions. */
 .ric-hero { aspect-ratio: 107 / 50; max-width: 900px; }
-.ric-when { color: #cbd5e1; font-size: 0.9rem; margin: 0.25rem 0 0; }
 .ric-ways { color: #cbd5e1; font-size: 0.9rem; margin: 0; padding-left: 1.25rem; }
-.ric-head { margin-top: 0.75rem; }
 .ric-pros { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 0.75rem; }
 .ric-pro { border-top: 3px solid #e94560; }
 .ric-pro-head { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.5rem; }
@@ -4586,7 +4584,5 @@ a.boss-avatar { display: block; }
 .ric-tag-challenge { background-color: #713f12; color: #ffd04f; font-size: 0.7rem; }
 .ric-missions td { vertical-align: middle; }
 .ric-missions .boss-drop-list { margin-top: 0; }
-/* A theme's own tabs (Protagonists, Stages, ...), smaller than the theme tabs above them. */
-.ric-theme .detail-tabs { margin-top: 1rem; border-bottom-width: 1px; }
-.ric-theme .detail-tab { font-size: 0.95rem; padding: 0.35rem 0.9rem; }
-.ric-theme .detail-tab-pane { padding-top: 0.75rem; }
+.ric-card-n { color: #ffcf5c; font-variant-numeric: tabular-nums; }
+.ric-card-pros { color: #cbd5e1; font-size: 0.85rem; margin-top: 0.1rem; }

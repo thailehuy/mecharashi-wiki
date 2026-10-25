@@ -82,6 +82,8 @@ $(function () {
       var d = window.StoryData || {};
       return (d.chapters || []).concat(d.sideStories || []).map(function (x) { return x.slug; });
     },
+    // A Refactor-in-Crisis theme's slug; its data loads with the page, so an unknown one passes through.
+    refactorincrisis: function () { return ((window.CrisisData || {}).themes || []).map(function (t) { return t.slug; }); },
     modules:   function () {
       var modules = (window.ModulesData || {}).modules || {};
       return Object.keys(modules).map(function (fam) { return modules[fam].name.toLowerCase(); });

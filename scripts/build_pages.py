@@ -282,6 +282,17 @@ def elite_chapters():
                ASSET_URL + quote(f'data/elite/{c["image"]}.jpg'))
 
 
+def crisis_themes():
+    data = load('data/crisis/crisis.json')
+    for t in data['themes']:
+        # "Refactor-in-Crisis theme 01: Beyond the Scenery ", then its protagonists on their own line. Image: its picture.
+        names = ' and '.join(p['name'] for p in t['protagonists'])
+        yield ('refactorincrisis', t['slug'], t['name'] + ' — Refactor-in-Crisis',
+               f'Refactor-in-Crisis theme {t["id"]:02d}: {t["name"]} \nProtagonists {names}: their Resolution Degree perks, '
+               f'{len(t["stages"])} stages with their enemies, missions and endings',
+               ASSET_URL + quote(f'data/crisis/{t["image"]}.jpg'))
+
+
 # ── Output ────────────────────────────────────────────────────────────────────
 
 def route_titles(index_html):
@@ -401,7 +412,8 @@ def main():
             write(r, page_html(index_html, 1, label))
 
     count = 0
-    for items in (pilots, mechs, weapons, backpacks, modules, ac_seasons, co_chapters, events, stories, elite_chapters):
+    for items in (pilots, mechs, weapons, backpacks, modules, ac_seasons, co_chapters, events, stories, elite_chapters,
+                  crisis_themes):
         seen = {}
         for route, param, title, description, image in items():
             slug = slugify(param)
