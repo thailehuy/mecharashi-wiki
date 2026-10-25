@@ -306,7 +306,7 @@ def build_mech_lore(t):
     lore = {}
     for mid, m in t['mechs'].items():
         row = t['mech_lore'].get(mid, {})
-        out = lore_out([('Manufacturer', row.get('manufacturer'))], m.get('introduce'), row)
+        out = lore_out([('Manufacturer', row.get('manufacturer'))], row.get('introduction') or m.get('introduce'), row)
         if out:
             lore[mid] = out
     return lore

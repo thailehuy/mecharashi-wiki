@@ -128,7 +128,11 @@ the pilot page fetches when the Lore tab is first opened.
 ```
 
 Like `pilot_lore.json`, filled in by `build_lore.py` for every ST on Global.
-The Lore tab's introduction is the ST's `introduce` from `mechs.json`.
+The Lore tab's introduction is the ST's `introduce` from `mechs.json`. STs from
+v2.6 on that Global lacks take theirs from the CN client in Chinese, with
+`"cn": true`, plus `introduction` (the CN flavor text, shown instead of
+`introduce`); `manufacturer` is global's English when global has that
+manufacturer.
 
 ### `pilot_neurons.json`
 

@@ -28,11 +28,14 @@ Some stories end with a remark by a character (CommentCharacter ->
 ConfigDataCharacterPicture).
 
 stats.db is the global client, so it has no lore for anything newer than
-Global (v2.6+). Pilots from v2.6 on take theirs from the CN client
+Global (v2.6+). Pilots and STs from v2.6 on take theirs from the CN client
 (mined/cn/out/stats.db) when it has it, in Chinese (marked `cn`): the
-introduction and stories as they are, the profile's affiliation, blood type
-and labels/values in the global client's English where another pilot's profile
-has the same Chinese. Other rows keep what they had.
+introduction and stories as they are, a pilot profile's affiliation, blood
+type and labels/values in the global client's English where another pilot's
+profile has the same Chinese, an ST's manufacturer in global's English when
+global has that manufacturer. An ST's introduction is then the CN client's
+flavor text (ConfigDataTacticalUnitSuitInfo.DescStrKey). Other rows keep what
+they had.
 """
 import json
 import os
@@ -123,7 +126,7 @@ def mech_row(con, atlas, factories, characters):
 class CN:
     """The CN client's lore, in the Chinese of its string table (ConfigDataST_CN)."""
 
-    def __init__(self, con, glob, pilots):
+    def __init__(self, con, glob, pilots, factories):
         self.con = con
         self.strings = dict(con.execute('SELECT ID, Value FROM ConfigDataST_CN'))
         # Chinese profile text -> global's English for it, from the pilots both clients have.
@@ -138,6 +141,7 @@ class CN:
         self.en = {c: v.most_common(1)[0][0] for c, v in votes.items()}
         # Comment authors: global's name for the character, else the pilot of that CN name, else the Chinese.
         self.glob_chars = dict(glob.execute('SELECT ID, CharNameStrKey_EN FROM ConfigDataCharacterPicture'))
+        self.factories = factories
         self.pilot_names = {self.zh(r[1]): pilots[str(r[0])]['name']
                             for r in con.execute('SELECT ID, NameStrKey FROM ConfigDataPilotInfo') if str(r[0]) in pilots}
 
@@ -190,6 +194,30 @@ class CN:
             row['cn'] = True
         return row
 
+    def mech_row(self, mid):
+        con, row = self.con, {}
+        atlas = con.execute('SELECT * FROM ConfigDataSkynetWapSuitAtlasInfo WHERE ID = ?', (int(mid) // 10000,)).fetchone()
+        if atlas:
+            f = con.execute('SELECT NameStrKey FROM ConfigDataWapFactoryInfo WHERE FactoryType = ?', (atlas['FactoryType'],)).fetchone()
+            name = text(self.factories.get(atlas['FactoryType'])) or (f and self.zh(f[0]))
+            if name:
+                row['manufacturer'] = name
+        r = con.execute('SELECT DescStrKey FROM ConfigDataTacticalUnitSuitInfo WHERE WapPartBodyId = ?', (int(mid),)).fetchone()
+        if r and self.zh(r[0]):
+            row['introduction'] = self.zh(r[0])
+        tpl = atlas and con.execute('SELECT AnecdoteLevelInfo FROM ConfigDataSkynetWapSuitAnecdoteLevelTemplateInfo WHERE ID = ?',
+                                    (atlas['AnecdoteLevelTemplateId'],)).fetchone()
+        stories = []
+        for e in sorted(json.loads(tpl[0]) if tpl else [], key=lambda e: e['AnalyticLevel']):
+            r = con.execute('SELECT * FROM ConfigDataSkynetWapSuitAnecdoteInfo WHERE ID = ?', (e['AnecdoteId'],)).fetchone()
+            if r and self.story(r):
+                stories.append(self.story(r))
+        if stories:
+            row['stories'] = stories
+        if row:
+            row['cn'] = True
+        return row
+
 
 def version(v):
     return tuple(int(x) for x in str(v or '0').split('.'))
@@ -215,26 +243,28 @@ def main():
     con.row_factory = sqlite3.Row
     characters = {r['ID']: r['CharNameStrKey_EN'] for r in con.execute('SELECT ID, CharNameStrKey_EN FROM ConfigDataCharacterPicture')}
 
-    pilots = load('pilots')
-    on_global = {str(r[0]) for r in con.execute('SELECT ID FROM ConfigDataPilotInfo')}
-    rows = {pid: pilot_row(con, pid, characters) for pid in pilots}
+    pilots, mechs = load('pilots'), load('mechs')
+    factories = {r['FactoryType']: r['NameStrKey_EN'] for r in con.execute('SELECT * FROM ConfigDataWapFactoryInfo')}
+    cn = None
     if os.path.exists(CN_STATS):
         cn_con = sqlite3.connect(CN_STATS)
         cn_con.row_factory = sqlite3.Row
-        cn = CN(cn_con, con, pilots)
-        for pid, p in pilots.items():
-            if not rows[pid] and version(p.get('version')) >= CN_FROM:
-                rows[pid] = cn.pilot_row(pid)
+        cn = CN(cn_con, con, pilots, factories)
+
+    on_global = {str(r[0]) for r in con.execute('SELECT ID FROM ConfigDataPilotInfo')}
+    rows = {pid: pilot_row(con, pid, characters) for pid in pilots}
+    for pid, p in pilots.items():
+        if cn and not rows[pid] and version(p.get('version')) >= CN_FROM:
+            rows[pid] = cn.pilot_row(pid)
     update('pilot_lore', pilots, rows, on_global)
 
-    mechs = load('mechs')
-    factories = {r['FactoryType']: r['NameStrKey_EN'] for r in con.execute('SELECT * FROM ConfigDataWapFactoryInfo')}
     atlases = {r['ID']: r for r in con.execute('SELECT * FROM ConfigDataSkynetWapSuitAtlasInfo')}
     suit = {mid: int(mid) // 10000 for mid in mechs}
-    update('mech_lore', mechs,
-           {mid: mech_row(con, atlases[suit[mid]], factories, characters) for mid in mechs if suit[mid] in atlases},
-           {mid for mid in mechs if suit[mid] in atlases})
-
+    rows = {mid: mech_row(con, atlases[suit[mid]], factories, characters) for mid in mechs if suit[mid] in atlases}
+    for mid, m in mechs.items():
+        if cn and not rows.get(mid) and version(m.get('version')) >= CN_FROM:
+            rows[mid] = cn.mech_row(mid)
+    update('mech_lore', mechs, rows, {mid for mid in mechs if suit[mid] in atlases})
 
 if __name__ == '__main__':
     main()
