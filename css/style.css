@@ -4439,6 +4439,10 @@ a.boss-avatar { display: block; }
 .storm-text { color: #cbd5e1; font-size: 0.9rem; margin: 0.5rem 0 0; }
 .storm-closed { background-color: #7f1d1d; color: #fecaca; font-size: 0.7rem; }
 .storm-upcoming { background-color: #1e3a8a; color: #bfdbfe; font-size: 0.7rem; }
+.storm-current { background-color: #14532d; color: #bbf7d0; font-size: 0.7rem; }
+.storm-season-head h3 { font-size: 1rem; font-weight: 700; color: #ffffff; margin: 0; }
+.storm-endless { margin-top: 0.75rem; scroll-margin-top: 80px; }
+.storm-scoring { margin: 0; padding-left: 1.2rem; color: #cbd5e1; font-size: 0.9rem; }
 .storm-fan { color: #8a8aa8; font-style: italic; font-size: 0.8rem; }
 @media (max-width: 767px) {
   /* Each tier as a card of labelled rows. */

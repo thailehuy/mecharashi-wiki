@@ -26,8 +26,16 @@ list. The row also lists the season's S-grade (SSR) STs, with no rate of their
 own. STs are linked by their Body ID (suit ID = its first 4 digits).
 
 The daily bonus-run cap is ConfigDataConfigableConst
-ChipsDungeonMaxBonusRewardTimes. Left out: Endless Mode
-(ChipsDungeonEndlessLevelInfo), which drops no parts.
+ChipsDungeonMaxBonusRewardTimes.
+
+Endless Mode (ConfigDataChipsDungeonEndlessLevelInfo, global only): each stage
+with its name and subtitle, open and close dates, victory/defeat text (its
+battle map's), scoring rules (PointsSettlementList ->
+ConfigDataPointsSettlementInfo) and modifiers. The modifiers are the battle
+map's global buffs (ConfigDataBattleMapGlobalBufInfo: AttackerGlobalBufIds for
+your team, DefenderGlobalBufIds for the enemies), each a ConfigDataActorBufInfo
+row: name, icon (SkillIcon) and effect. Its rewards are server-side rankings,
+left out.
 """
 import json
 import os
@@ -129,6 +137,44 @@ def season(con, rewards, mechs, l):
     }
 
 
+def end_date(con, time_id):
+    r = con.execute('SELECT ValidEndTime FROM ConfigDataCommonFuncOpenTimeInfo WHERE ID = ?', (time_id,)).fetchone()
+    if not r or not r[0]:
+        return None
+    y, m, d = (int(x) for x in r[0].split()[0].split('/'))
+    return '%04d-%02d-%02d' % (y, m, d)
+
+
+def endless(con):
+    """Endless Mode's stages, each with its scoring and its battle map's modifiers."""
+    stages = []
+    for l in con.execute('SELECT * FROM ConfigDataChipsDungeonEndlessLevelInfo ORDER BY ID').fetchall():
+        where = 'Memory Storm Endless %d' % l['ID']
+        bm = con.execute('SELECT AttackWinDescStrKey_EN, DefendWinDescStrKey_EN FROM ConfigDataBattleMapInfo '
+                         'WHERE ID = ?', (l['BattleMapId'],)).fetchone()
+        g = con.execute('SELECT * FROM ConfigDataBattleMapGlobalBufInfo WHERE ID = ?', (l['BattleMapId'],)).fetchone()
+        mods = []
+        for col, who in (('AttackerGlobalBufIds', 'allies'), ('DefenderGlobalBufIds', 'enemies')):
+            for bid in json.loads((g[col] if g else None) or '[]'):
+                b = con.execute('SELECT NameDescStrKey_EN, BuffDescStrKey_EN, SkillIcon FROM ConfigDataActorBufInfo '
+                                'WHERE ID = ?', (bid,)).fetchone()
+                if not b:
+                    print('%s: no buff %d' % (where, bid))
+                    continue
+                mods.append({'name': text(b[0]), 'icon': b[2], 'text': clean(text(b[1])), 'side': who})
+        opens = open_date(con, l['OpenTime'])
+        stages.append({
+            'id': l['ID'], 'name': text(l['NameStrKey_EN']), 'sub': text(l['DescStrKey_EN']),
+            'opens': opens, 'closes': end_date(con, l['OpenTime']) if opens else None,
+            'win': text(bm[0]) if bm else None, 'lose': text(bm[1]) if bm else None,
+            'scoring': [clean(text(r[0])) for r in (
+                con.execute('SELECT NameStrKey_EN FROM ConfigDataPointsSettlementInfo WHERE ID = ?', (pid,)).fetchone()
+                for pid in json.loads(l['PointsSettlementList'] or '[]')) if r],
+            'modifiers': mods,
+        })
+    return stages
+
+
 def levels(con):
     return {l['ID']: l for l in con.execute('SELECT * FROM ConfigDataChipsDungeonLevelInfo ORDER BY ID')}
 
@@ -172,7 +218,7 @@ def main():
         seasons.append(s)
 
     data = {'unlock': clean(text(unlock[0])) if unlock else None,
-            'dailyBonus': int(daily[0]) if daily else None, 'seasons': seasons}
+            'dailyBonus': int(daily[0]) if daily else None, 'seasons': seasons, 'endless': endless(con)}
 
     os.makedirs(HERE, exist_ok=True)
     with open(OUT, 'w', encoding='utf-8', newline='\n') as f:
@@ -182,7 +228,8 @@ def main():
         f.write('window.StormData = ')
         json.dump(data, f, ensure_ascii=False, separators=(',', ':'))
         f.write(';\n')
-    print('Wrote %s: %d seasons (%d KB)' % (OUT, len(seasons), os.path.getsize(OUT_JS) // 1024))
+    print('Wrote %s: %d seasons, %d Endless stages (%d KB)' % (
+        OUT, len(seasons), len(data['endless']), os.path.getsize(OUT_JS) // 1024))
 
 
 if __name__ == '__main__':

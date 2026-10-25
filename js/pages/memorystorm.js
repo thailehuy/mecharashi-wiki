@@ -4,7 +4,8 @@ var Pages = window.Pages || {};
 // part pool, its S-grade (SSR) STs first. Its data (data/storm/storm.js, built by
 // scripts/build_storm.py) is fetched the first time the page opens; reward chips
 // are drawn as on the Story page. What every season shares is shown once. Seasons
-// not yet on global come from the CN client, their names fan-translated.
+// not yet on global come from the CN client, their names fan-translated. Endless
+// Mode's stages follow, with their modifiers drawn as on the Simulated Battle page.
 Pages.memorystorm = {
   title: 'Memory Storm',
   nav: 'expansionops',
@@ -82,6 +83,42 @@ Pages.memorystorm = {
     );
   },
 
+  _endlessStage: function (e) {
+    var sim = Pages.simulatedbattle;
+    var story = Pages.story;
+    var today = new Date().toISOString().slice(0, 10);
+    var tag = !e.opens ? '<span class="tag storm-upcoming">Upcoming</span>' :
+      e.closes && e.closes <= today ? '<span class="tag storm-closed">Closed</span>' :
+      e.opens <= today ? '<span class="tag storm-current">Current</span>' : '';
+    var when = e.opens ? story._date(e.opens) + (e.closes ? ' – ' + story._date(e.closes) : '') : 'Not yet on global';
+    return (
+      '<div class="skill-card storm-endless" id="storm-endless-' + e.id + '">' +
+        '<div class="storm-season-head"><h3>' + this._esc(e.name) + (e.sub ? ': ' + this._esc(e.sub) : '') + '</h3>' +
+          tag + '<span class="story-chapter-sub">' + when + '</span></div>' +
+        (e.modifiers.length ? '<div class="story-part-title">Modifiers</div><ul class="sim-mods">' +
+          e.modifiers.map(function (m) { return sim._modifier(m); }).join('') + '</ul>' : '') +
+      '</div>'
+    );
+  },
+
+  _endless: function (stages) {
+    var self = this;
+    var e0 = stages[0];
+    var sharedRules = this._same(stages, function (e) { return [e.win, e.lose, e.scoring]; });
+    return (
+      '<div class="ac-section" id="storm-endless">' +
+        '<h2 class="ac-section-title">Endless Mode</h2>' +
+        '<p class="ac-section-footnote">One stage at a time, scored by how many enemies you destroy; its rewards are ' +
+          'ranking-based and not in the game files. Each stage\'s modifiers apply to your team or to the enemies.' +
+          (sharedRules ? ' The rules below are the same in every stage.' : '') + '</p>' +
+        (sharedRules ? '<div class="skill-card"><dl class="elite-conds">' + Pages.simulatedbattle._conds(e0) + '</dl>' +
+          '<div class="story-part-title">Scoring</div><ul class="storm-scoring">' +
+          e0.scoring.map(function (t) { return '<li>' + self._esc(t) + '</li>'; }).join('') + '</ul></div>' : '') +
+        stages.map(function (e) { return self._endlessStage(e); }).join('') +
+      '</div>'
+    );
+  },
+
   _content: function (d) {
     var self = this;
     var kit = Pages.story._kit();
@@ -110,7 +147,8 @@ Pages.memorystorm = {
           'The same in every season; each season\'s S-grade (SSR) STs are listed under it below. ' +
           'The game files give no rate for S-grade parts.</p>' +
         '<div class="skill-card">' + this._sharedPool(s0, kit) + '</div></div>' : '') +
-      seasons.map(function (s) { return self._season(s, kit, opts); }).join('')
+      seasons.map(function (s) { return self._season(s, kit, opts); }).join('') +
+      (d.endless && d.endless.length ? this._endless(d.endless) : '')
     );
   },
 

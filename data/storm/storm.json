@@ -1910,5 +1910,177 @@
       "closed": false,
       "version": "3.4"
     }
+  ],
+  "endless": [
+    {
+      "id": 1,
+      "name": "Storm Shadows",
+      "sub": "Lonely Light",
+      "opens": "2026-07-16",
+      "closes": "2026-08-13",
+      "win": "Destroy as many enemies as you can!",
+      "lose": "Your team is wiped out!",
+      "scoring": [
+        "After defeating 1 enemy unit, gain 100 Points",
+        "After defeating 1 elite enemy unit, gain an additional 100 Points",
+        "Starting from the 4th turn, earn 1 Point for every 700 damage dealt to newly spawned enemy units (up to 20 Points per unit). Defeating a unit grants maximum Points instantly"
+      ],
+      "modifiers": [
+        {
+          "name": "Rising Path",
+          "icon": "Icon_skill_passive_2122",
+          "text": "Movement +1.",
+          "side": "allies"
+        },
+        {
+          "name": "Piece of Cake",
+          "icon": "Icon_skill_passive_2118",
+          "text": "When there are allies within 2 adjacent tiles, DMG Taken -40%.",
+          "side": "allies"
+        },
+        {
+          "name": "Retaliation Specialization",
+          "icon": "Icon_skill_talent_5124",
+          "text": "When retaliating, DMG +60%.",
+          "side": "enemies"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Storm Shadows",
+      "sub": "Iron Tempest",
+      "opens": "2026-08-13",
+      "closes": "2026-09-10",
+      "win": "Destroy as many enemies as you can!",
+      "lose": "Your team is wiped out!",
+      "scoring": [
+        "After defeating 1 enemy unit, gain 100 Points",
+        "After defeating 1 elite enemy unit, gain an additional 100 Points",
+        "Starting from the 4th turn, earn 1 Point for every 700 damage dealt to newly spawned enemy units (up to 20 Points per unit). Defeating a unit grants maximum Points instantly"
+      ],
+      "modifiers": [
+        {
+          "name": "Rising Path",
+          "icon": "Icon_skill_passive_2122",
+          "text": "Movement +1.",
+          "side": "allies"
+        },
+        {
+          "name": "Energy-Storage Chassis",
+          "icon": "Icon_entry_10086",
+          "text": "If on allied terrain, gains <buf ID=900005>[Re-Act]</buf>. Triggers once per turn.",
+          "side": "allies"
+        },
+        {
+          "name": "High-Frequency Oscillator",
+          "icon": "Icon_skill_passive_9701",
+          "text": "<buf ID=900017>[Fixed DMG]</buf> +600%.",
+          "side": "allies"
+        },
+        {
+          "name": "Retaliation Specialization",
+          "icon": "Icon_skill_talent_5124",
+          "text": "When retaliating, DMG +60%.",
+          "side": "enemies"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Storm Shadows",
+      "sub": "Blade Clang",
+      "opens": "2026-09-10",
+      "closes": "2026-10-22",
+      "win": "Destroy as many enemies as you can!",
+      "lose": "Your team is wiped out!",
+      "scoring": [
+        "After defeating 1 enemy unit, gain 100 Points",
+        "After defeating 1 elite enemy unit, gain an additional 100 Points",
+        "Starting from the 4th turn, earn 1 Point for every 700 damage dealt to newly spawned enemy units (up to 20 Points per unit). Defeating a unit grants maximum Points instantly"
+      ],
+      "modifiers": [
+        {
+          "name": "Adaptation Innovation",
+          "icon": "Icon_skill_passive_2005",
+          "text": "After actively using non-normal attack skills, DMG Dealt +40% and DMG Taken -10%. Lasts for 1 turn. Stacks up to 6 times.",
+          "side": "allies"
+        },
+        {
+          "name": "Flexible Chain Link",
+          "icon": "Icon_skill_passive_2104",
+          "text": "After Re-ATK, gains Movement +1. Stacks up to 2 times. Removed at end of action.",
+          "side": "allies"
+        },
+        {
+          "name": "Locked & Reloaded S",
+          "icon": "Icon_skill_passive_5103",
+          "text": "When attacked, if the distance to the attacker is more than 1 tile, for each additional tile, this attack's DMG is reduced by 40%, up to a maximum reduction of 160%.",
+          "side": "enemies"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Realm of Legacy",
+      "sub": "Abyss of Darkness I",
+      "opens": "2026-10-22",
+      "closes": "2026-11-19",
+      "win": "Destroy as many enemies as you can!",
+      "lose": "Your team is wiped out!",
+      "scoring": [
+        "After defeating 1 enemy unit, gain 100 Points",
+        "After defeating 1 elite enemy unit, gain an additional 100 Points",
+        "Starting from the 4th turn, earn 1 Point for every 700 damage dealt to newly spawned enemy units (up to 20 Points per unit). Defeating a unit grants maximum Points instantly"
+      ],
+      "modifiers": [
+        {
+          "name": "Hold Your Breath",
+          "icon": "Icon_skill_passive_5242",
+          "text": "When aiming, damage increases by up to 200%.",
+          "side": "allies"
+        },
+        {
+          "name": "Full-Spectrum Protection",
+          "icon": "Icon_skill_talent_1114",
+          "text": "When hit by an AoE attack, DMG dealt by this attack is reduced by 150%.",
+          "side": "enemies"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Realm of Legacy",
+      "sub": "Abyss of Darkness II",
+      "opens": null,
+      "closes": null,
+      "win": "Destroy as many enemies as you can!",
+      "lose": "Your team is wiped out!",
+      "scoring": [
+        "After defeating 1 enemy unit, gain 100 Points",
+        "After defeating 1 elite enemy unit, gain an additional 100 Points",
+        "Starting from the 4th turn, earn 1 Point for every 700 damage dealt to newly spawned enemy units (up to 20 Points per unit). Defeating a unit grants maximum Points instantly"
+      ],
+      "modifiers": [
+        {
+          "name": "Chain Finisher",
+          "icon": "Icon_skill_passive_9803",
+          "text": "After actively attacking, based on the number of Hits dealt in this attack, all parts of the enemy take <buf ID=900017 click=false>[Fixed DMG]</buf> equal to the number of Hits x0.1x ATK.",
+          "side": "allies"
+        },
+        {
+          "name": "Rising Path",
+          "icon": "Icon_skill_passive_2122",
+          "text": "Movement +1.",
+          "side": "allies"
+        },
+        {
+          "name": "Armor VI",
+          "icon": "Icon_skill_talent_2103",
+          "text": "Max HP increased by 60%.",
+          "side": "enemies"
+        }
+      ]
+    }
   ]
 }
