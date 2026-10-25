@@ -1908,6 +1908,12 @@ a.material-item:hover .material-icon-wrap {
   color: #a0a0c8;
 }
 
+.lore-note {
+  margin: 1.25rem 0 0;
+  font-size: 0.85rem;
+  color: #a0a0c8;
+}
+
 .lore-top {
   display: grid;
   grid-template-columns: minmax(220px, 1fr) 2fr;

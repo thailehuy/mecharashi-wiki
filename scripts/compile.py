@@ -285,6 +285,8 @@ def lore_out(profile, introduction, row):
         out['introduction'] = introduction
     if row.get('stories'):
         out['stories'] = row['stories']
+    if row.get('cn'):
+        out['cn'] = True
     return out if out['profile'] or len(out) > 1 else None
 
 

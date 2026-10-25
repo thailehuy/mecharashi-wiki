@@ -28,15 +28,24 @@ Some stories end with a remark by a character (CommentCharacter ->
 ConfigDataCharacterPicture).
 
 stats.db is the global client, so it has no lore for anything newer than
-Global (v2.6+). Those rows keep what they had.
+Global (v2.6+). Pilots from v2.6 on take theirs from the CN client
+(mined/cn/out/stats.db) when it has it, in Chinese (marked `cn`): the
+introduction and stories as they are, the profile's affiliation, blood type
+and labels/values in the global client's English where another pilot's profile
+has the same Chinese. Other rows keep what they had.
 """
 import json
 import os
 import sqlite3
+from collections import Counter, defaultdict
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DB = os.path.join(ROOT, 'data', 'db')
 STATS = os.path.join(ROOT, 'data', 'screenshots', 'MRT_FieldWiki', 'RebuildGameUpdate', 'out', 'stats.db')
+CN_STATS = os.path.join(ROOT, 'data', 'screenshots', 'mined', 'cn', 'out', 'stats.db')
+# Pilots from this version on take their lore from the CN client while global has none.
+CN_FROM = (2, 6)
+RESUME_COLS = ['CampStrKey', 'BloodStrKey'] + [f'Extra{k}{i}StrKey' for k in ('Title', 'Value') for i in (1, 2, 3)]
 
 # Placeholder values the game tables carry instead of leaving a field empty.
 JUNK = {'', 'None', 'TEST'}
@@ -111,6 +120,81 @@ def mech_row(con, atlas, factories, characters):
     return row
 
 
+class CN:
+    """The CN client's lore, in the Chinese of its string table (ConfigDataST_CN)."""
+
+    def __init__(self, con, glob, pilots):
+        self.con = con
+        self.strings = dict(con.execute('SELECT ID, Value FROM ConfigDataST_CN'))
+        # Chinese profile text -> global's English for it, from the pilots both clients have.
+        votes = defaultdict(Counter)
+        cols = ', '.join(RESUME_COLS)
+        en = {r[0]: r[1:] for r in glob.execute(f'SELECT ID, {", ".join(c + "_EN" for c in RESUME_COLS)} FROM ConfigDataPilotResumeInfo')}
+        for r in con.execute(f'SELECT ID, {cols} FROM ConfigDataPilotResumeInfo'):
+            for c, e in zip(r[1:], en.get(r[0], ())):
+                c, e = self.zh(c), text(e)
+                if c and e and '测试' not in c:
+                    votes[c][e] += 1
+        self.en = {c: v.most_common(1)[0][0] for c, v in votes.items()}
+        # Comment authors: global's name for the character, else the pilot of that CN name, else the Chinese.
+        self.glob_chars = dict(glob.execute('SELECT ID, CharNameStrKey_EN FROM ConfigDataCharacterPicture'))
+        self.pilot_names = {self.zh(r[1]): pilots[str(r[0])]['name']
+                            for r in con.execute('SELECT ID, NameStrKey FROM ConfigDataPilotInfo') if str(r[0]) in pilots}
+
+    def zh(self, v):
+        if isinstance(v, str) and v.startswith('ST:') and v[3:].isdigit():
+            v = self.strings.get(int(v[3:]))
+        return text(v)
+
+    def profile(self, v):
+        v = self.zh(v)
+        return self.en.get(v, v)
+
+    def character(self, i):
+        if text(self.glob_chars.get(i)):
+            return text(self.glob_chars[i])
+        r = self.con.execute('SELECT CharNameStrKey FROM ConfigDataCharacterPicture WHERE ID = ?', (i,)).fetchone()
+        name = r and self.zh(r[0])
+        return self.pilot_names.get(name, name)
+
+    def story(self, r):
+        if not self.zh(r['ParagraphTextStrKey']):
+            return None
+        story = {'title': self.zh(r['TitleStrKey']) or '', 'text': self.zh(r['ParagraphTextStrKey'])}
+        comment = self.zh(r['CommentContentStrKey'])
+        if comment:
+            by = self.character(r['CommentCharacter'])
+            story['comment'] = {'by': by, 'text': comment} if by else {'text': comment}
+        return story
+
+    def pilot_row(self, pid):
+        con, row = self.con, {}
+        r = con.execute('SELECT * FROM ConfigDataPilotResumeInfo WHERE ID = ?', (int(pid),)).fetchone()
+        if r:
+            for key, col in [('affiliation', 'CampStrKey'), ('blood_type', 'BloodStrKey'), ('height', 'HeightStrKey')]:
+                if self.profile(r[col]):
+                    row[key] = self.profile(r[col])
+            extra = [{'label': self.profile(r[f'ExtraTitle{i}StrKey']), 'value': self.profile(r[f'ExtraValue{i}StrKey'])}
+                     for i in (1, 2, 3)]
+            extra = [e for e in extra if e['label'] and e['value']]
+            if extra:
+                row['profile'] = extra
+        r = con.execute('SELECT ContentStrKey FROM ConfigDataPilotArchivesInfo WHERE ID = ?', (int(pid),)).fetchone()
+        if r and self.zh(r[0]):
+            row['introduction'] = self.zh(r[0])
+        stories = [self.story(r) for r in
+                   con.execute('SELECT * FROM ConfigDataSkynetPilotAnecdoteInfo WHERE ID / 10 = ? ORDER BY ID', (int(pid),))]
+        if any(stories):
+            row['stories'] = [s for s in stories if s]
+        if row:
+            row['cn'] = True
+        return row
+
+
+def version(v):
+    return tuple(int(x) for x in str(v or '0').split('.'))
+
+
 def update(name, items, rows, on_global):
     """rows: wiki ID -> new row, for every item the game has. Others keep theirs."""
     lore = load(name)
@@ -133,7 +217,15 @@ def main():
 
     pilots = load('pilots')
     on_global = {str(r[0]) for r in con.execute('SELECT ID FROM ConfigDataPilotInfo')}
-    update('pilot_lore', pilots, {pid: pilot_row(con, pid, characters) for pid in pilots}, on_global)
+    rows = {pid: pilot_row(con, pid, characters) for pid in pilots}
+    if os.path.exists(CN_STATS):
+        cn_con = sqlite3.connect(CN_STATS)
+        cn_con.row_factory = sqlite3.Row
+        cn = CN(cn_con, con, pilots)
+        for pid, p in pilots.items():
+            if not rows[pid] and version(p.get('version')) >= CN_FROM:
+                rows[pid] = cn.pilot_row(pid)
+    update('pilot_lore', pilots, rows, on_global)
 
     mechs = load('mechs')
     factories = {r['FactoryType']: r['NameStrKey_EN'] for r in con.execute('SELECT * FROM ConfigDataWapFactoryInfo')}

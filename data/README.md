@@ -109,8 +109,11 @@ official values. See "Using the mined game database" in the root
 ```
 
 Filled in by `python3 scripts/build_lore.py` from the global client's tables
-for every pilot on Global; rows of pilots not in it (v2.6+) are left alone, so
-add theirs by hand. `profile` holds the pilot-specific fields of the in-game
+for every pilot on Global. Pilots from v2.6 on that Global lacks take theirs
+from the CN client (`data/screenshots/mined/cn/out/stats.db`) in Chinese, with
+`"cn": true` (the Lore tab says so); their affiliation, blood type and profile
+labels/values use global's English where another pilot's profile has the same
+Chinese. `profile` holds the pilot-specific fields of the in-game
 Profile, in order. `introduction` is the Profile screen's long bio (the
 one-line `introduction` in `pilots.json` is shown instead when a pilot has no
 row). `stories` are the four anecdotes; `comment` is the remark some end with,

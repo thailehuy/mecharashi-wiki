@@ -99,7 +99,10 @@ var Lore = {
       );
     }).join('');
 
+    var cnHtml = lore.cn ? '<p class="lore-note">Not on Global yet: the text is the CN client\'s, untranslated.</p>' : '';
+
     return (
+      cnHtml +
       '<div class="lore-top">' + profileHtml + introHtml + '</div>' +
       (storiesHtml ? '<div class="section-heading lore-heading">Stories</div><div class="lore-stories">' + storiesHtml + '</div>' : '')
     );
