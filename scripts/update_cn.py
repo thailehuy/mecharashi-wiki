@@ -10,7 +10,8 @@ Steps
     mine      the CN client -> the CN master DB (data/screenshots/mined/cn: raw/, out/stats.db, mecharashi.db), with
               `MECHA_REGION=CN rebuild_all.py --extract`; stops when the CN tables are unchanged (--force goes on)
     banners   the banner list with the CN client's upcoming banners (build_banners.py), then their art from the CN
-              bundles into the assets repo (MECHA_REGION=CN extract_banner_images.py)
+              bundles into the assets repo (MECHA_REGION=CN extract_banner_images.py), and the animated recruitment
+              banners of mechs the assets repo doesn't have yet (build_gacha_fx.py --new-only)
     intake    translation intake forms in data/intake/ for the new pilots and STs (build_intake.py) and the new
               signature weapons and crafted backpacks (build_item_intake.py); existing forms are kept
 
@@ -73,6 +74,7 @@ def main():
                   f'raise it to list v{a.version} banners.')
         run([os.path.join(SCRIPTS, 'build_banners.py')], region='GLOBAL')
         run([os.path.join(SCRIPTS, 'extract_banner_images.py')])
+        run([os.path.join(SCRIPTS, 'build_gacha_fx.py'), '--new-only'])
 
     if 'intake' in todo:
         started = time.time()
@@ -82,7 +84,7 @@ def main():
         written = sorted(p for p in glob.glob(os.path.join(INTAKE, '*.md')) if mtime(p) >= started)
         print(f'\n{len(written)} new intake form(s)' + ''.join(f'\n  {os.path.relpath(p, ROOT)}' for p in written))
 
-    print(f'\nCN update done in {time.time() - t0:.0f}s. Banner art is in the assets repo (commit it there); '
+    print(f'\nCN update done in {time.time() - t0:.0f}s. Banner art and new animated banners are in the assets repo (commit it there); '
           'fill in the intake forms and hand them to Claude.')
 
 

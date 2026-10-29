@@ -33,7 +33,8 @@ Steps
                   Conflict foe portraits, banner art, event pictures, the Story page's stage pictures and the Elite Battle
                   chapters' pictures from the game's
                   bundles into the assets repo (extract_item_icons.py, extract_banner_images.py, extract_event_images.py,
-                  extract_story_images.py); pilot voice lines from its sound banks into the
+                  extract_story_images.py); the animated recruitment banners of new mechs, and of mechs built from
+                  the CN client that Global now has (build_gacha_fx.py --new-only); pilot voice lines from its sound banks into the
                   voices repo (extract_voices.py), then the Voice Lines tab's data (build_voice.py)
     compile       data/db/ -> the page bundles and builder index maps (compile.py)
 
@@ -109,6 +110,7 @@ def main():
         run(script('extract_banner_images.py'))
         run(script('extract_event_images.py'))
         run(script('extract_story_images.py'))
+        run(script('build_gacha_fx.py', '--new-only'))
         run(script('extract_voices.py'))
         run(script('build_voice.py'))
     if 'compile' in todo:
