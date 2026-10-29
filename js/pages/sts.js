@@ -428,7 +428,7 @@ Pages.sts = {
 
       // ── Top: portrait + info side by side
       '<div class="detail-layout">' +
-        '<div class="detail-portrait-col st-portrait-col">' +
+        '<div class="detail-portrait-col fx-portrait-col">' +
           '<div class="detail-portrait" style="background-image:url(\'' + bgSrc + '\')">' +
             '<img class="detail-portrait-img" src="' + portraitSrc + '"' + portraitErrorAttr + ' alt="' + $('<span>').text(m.name).html() + '" />' +
             '<span class="version-badge">v' + $('<span>').text(m.version).html() + '</span>' +

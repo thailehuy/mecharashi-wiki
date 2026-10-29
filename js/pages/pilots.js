@@ -410,7 +410,7 @@ Pages.pilots = {
         this._renderStats(p.stats, p.statRanks) +
       '</div>' +
       '<div class="detail-layout">' +
-        '<div class="detail-portrait-col">' +
+        '<div class="detail-portrait-col fx-portrait-col">' +
           '<div class="detail-portrait" style="background-image:url(\'' + bgSrc + '\')">' +
             '<img class="detail-portrait-img" src="' + portraitSrc + '" onerror="this.onerror=null;this.src=\'' + portraitFallback + '\';" alt="' + $('<span>').text(p.PilotName).html() + '" />' +
             skinNavHtml +

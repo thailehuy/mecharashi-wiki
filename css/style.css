@@ -4164,9 +4164,9 @@ a.boss-avatar { display: block; }
   height: auto;
 }
 
-/* ST page: "Animated Banner Image" button under the portrait, and its modal
+/* ST and pilot pages: "Animated Banner Image" button under the portrait, and its modal
    (the WebGL canvas sits exactly on the still card and fades in on its first frame). */
-.st-portrait-col {
+.fx-portrait-col {
   flex-direction: column;
   align-items: center;
   gap: 0.6rem;
