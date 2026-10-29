@@ -98,6 +98,7 @@ js/
     frontiertrial.js              # Frontier Trial
 scripts/                          # Every build script; run them from the repo root (python3 scripts/<name>.py)
   compile.py                      # Builds the page bundles from data/db/ (see below), then runs generate-index-maps.py
+  stamp_versions.py               # Adds ?v=<file hash> to index.html's local CSS/JS URLs so browsers don't keep stale copies after a deploy (run in CI before build_pages.py; don't commit its output)
   build_pages.py                  # Generates per-route/per-item pages (gitignored; run in CI)
   check_skins.py                  # Fills each pilot's skin letters in data/db/pilots.json from the assets repo's half-body portraits
   extract-chain-traits.py         # → data/accessories/chain-traits.js/json (ChainTraitsData, SSR TAs/RAs + blocked pairs from the mined DB)
