@@ -51,6 +51,11 @@ ASSETS_DIR = os.environ.get('ASSETS_DIR', os.path.join(os.path.dirname(ROOT), 'm
 SAMPLE_DIR = os.path.join(ROOT, 'data', 'screenshots', 'animation-sample')
 PIPELINE_DIR = os.path.join(SAMPLE_DIR, '6_pipeline')
 ENGINE = os.path.join(SAMPLE_DIR, '5_demo', 'gacha-fx-engine.js')
+
+
+def tex_file(t):
+    """A texture's file name in fx/: <name>.png, except sprite-sequence sheets whose names already end in .webp."""
+    return t if t.endswith('.webp') else t + '.png'
 OUT_DIR = os.path.join(ASSETS_DIR, 'data', 'gachafx')
 # Same defaults and env vars as pipeline.sh.
 BUNDLES = {
@@ -134,7 +139,7 @@ def textures_of(kind, json_path):
         elif isinstance(x, list):
             for v in x:
                 walk(v)
-        elif isinstance(x, str) and os.path.exists(os.path.join(kind.staged, 'fx', x + '.png')):
+        elif isinstance(x, str) and os.path.exists(os.path.join(kind.staged, 'fx', tex_file(x))):
             names.add(x)
     walk(json.load(open(json_path, encoding='utf-8')))
     return names
@@ -195,8 +200,8 @@ def new_only(kind):
                 kind.rel(f'cards/{key}.webp'): os.path.join(kind.staged, 'cards', f'{key}.webp')}
         for t in textures_of(kind, rels[kind.rel(f'{key}.json')]):
             # a texture other pools already use keeps its published file (same name = same official asset)
-            if not os.path.exists(os.path.join(OUT_DIR, *kind.rel(f'fx/{t}.png').split('/'))):
-                rels[kind.rel(f'fx/{t}.png')] = os.path.join(kind.staged, 'fx', t + '.png')
+            if not os.path.exists(os.path.join(OUT_DIR, *kind.rel(f'fx/{tex_file(t)}').split('/'))):
+                rels[kind.rel(f'fx/{tex_file(t)}')] = os.path.join(kind.staged, 'fx', tex_file(t))
         for rel, src in rels.items():
             state = copy(src, rel)
             added += state == 'added'
@@ -219,7 +224,7 @@ def wanted_files(kind, keys, manifest_path):
         files[kind.rel(f'{key}.json')] = os.path.join(kind.staged, 'gachaFx', f'{key}.json')
         files[kind.rel(f'cards/{key}.webp')] = os.path.join(kind.staged, 'cards', f'{key}.webp')
         for t in textures_of(kind, files[kind.rel(f'{key}.json')]):
-            files[kind.rel(f'fx/{t}.png')] = os.path.join(kind.staged, 'fx', t + '.png')
+            files[kind.rel(f'fx/{tex_file(t)}')] = os.path.join(kind.staged, 'fx', tex_file(t))
     return files
 
 
