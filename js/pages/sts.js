@@ -314,10 +314,11 @@ Pages.sts = {
             '<div class="modal-content">' +
               '<div class="modal-header">' +
                 '<h5 class="modal-title"></h5>' +
+                // Beside the title, so the popup keeps its size as the status changes
+                '<span class="gacha-fx-status"></span>' +
                 '<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>' +
               '</div>' +
               '<div class="gacha-fx-stage"></div>' +
-              '<div class="gacha-fx-status"></div>' +
             '</div>' +
           '</div>' +
         '</div>'

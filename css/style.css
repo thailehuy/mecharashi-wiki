@@ -4214,9 +4214,8 @@ a.boss-avatar { display: block; }
   transition: opacity 0.4s;
 }
 .gacha-fx-stage canvas.ready { opacity: 1; }
-.gacha-fx-status:empty { display: none; }
 .gacha-fx-status {
-  padding: 0.5rem 1rem;
+  margin-left: 0.75rem;
   font-size: 0.85rem;
   color: #a0a0c8;
 }
