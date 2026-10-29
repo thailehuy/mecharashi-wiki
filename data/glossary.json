@@ -1540,11 +1540,15 @@
   },
   "2023065": {
    "name": "Last Whisper",
-   "effect": "Immune to all DMG. After each active attack, triggers <buf ID=900004>[Re-ATK]</buf>, allowing movement of <color=#F74848>1</color> tile before attacking. This effect has no trigger limit while active and is removed at the end of turn. Gains <buf ID=2023069>[Energy Blockade]</buf> for <color=#F74848>1</color> turn after this effect is removed."
+   "effect": "Immune to all DMG. Cannot be repaired. After each active attack, triggers <buf ID=900004>[Re-ATK]</buf>, allowing movement of <color=#F74848>1</color> tile before attacking. This effect has no trigger limit while active and is removed at the end of turn. Gains <buf ID=2023069>[Energy Blockade]</buf> for <color=#F74848>1</color> turn after this effect is removed."
   },
   "2023069": {
    "name": "Energy Blockade",
    "effect": "Cannot gain AP. Cannot be dispelled."
+  },
+  "2023462": {
+   "name": "Predator Elite",
+   "effect": "[Basic Attack] AP cost <color=#F74848>-1</color>. Removed when triggered or at the end of action."
   },
   "900007": {
    "name": "Retaliation Disabled",

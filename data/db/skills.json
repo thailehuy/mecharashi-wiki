@@ -10020,14 +10020,14 @@
     "name": "Deathbound Wanderer",
     "effect": "When equipped with <color=#F74848>2</color> Shotguns, can perform <skill ID=2023501>[Dual Shotgun Attack]</skill>, <skill ID=2023502>[Dual Shotgun Flurry Strike]</skill>, <skill ID=2023503>[Dual Shotgun Retaliation]</skill> and <skill ID=2023504>[Dual Shotgun Link Attack]</skill>. Each attack grants <color=#F74848>1</color> stack of <buf ID=900189>[Predation]</buf>, up to <color=#F74848>30</color> stacks. When initiating combat, if the distance to the target is <color=#F74848>1</color> tile, can trigger <buf ID=900005>[Re-Act]</buf> after combat (up to <color=#F74848>1</color> time per turn).",
     "icon": "Icon_skill_talent_5171",
-    "buffs": "2023501/2023502/2023504/2023508/2023506/2023507"
+    "buffs": "2023501/2023502/2023504/2023508/2023506/2023507/2023509"
   },
   "202351": {
     "kind": "talent",
     "name": "Deathbound Wanderer",
     "effect": "When equipped with <color=#F74848>2</color> Shotguns, can perform <skill ID=2023501>[Dual Shotgun Attack]</skill>, <skill ID=2023502>[Dual Shotgun Flurry Strike]</skill>, <skill ID=2023503>[Dual Shotgun Retaliation]</skill> and <skill ID=2023504>[Dual Shotgun Link Attack]</skill>. Each attack grants <color=#F74848>1</color> stack of <buf ID=900189>[Predation]</buf>, up to <color=#F74848>30</color> stacks. When initiating combat, if the distance to the target is <color=#F74848>1</color> tile, can trigger <buf ID=900005>[Re-Act]</buf> after combat (up to <color=#F74848>1</color> time per turn).\nAt the start of battle, gains <color=#F74848>5</color> stacks of <buf ID=900189>[Predation]</buf>. Movement ignores unit collision.",
     "icon": "Icon_skill_talent_5171",
-    "buffs": "2023501/2023502/2023504/2023508/2023506/2023507/2023511/2023513"
+    "buffs": "2023501/2023502/2023504/2023508/2023506/2023507/2023509/2023511/2023513"
   },
   "202308": {
     "kind": "skill",
@@ -10111,9 +10111,9 @@
   "202346": {
     "kind": "neural",
     "name": "Predator Elite 4",
-    "effect": "After performing <color=#F74848>2</color> [Basic Attack], [Basic Attack] AP cost is reduced by <color=#F74848>-1</color> for that turn, to a minimum of <color=#F74848>1</color> AP. This effect resets at the end of action.",
+    "effect": "When actively attacking, if not carrying <buf ID=2023462>[Predator Elite]</buf>, gains <buf ID=2023462>[Predator Elite]</buf> after combat.",
     "icon": "Icon_skill_passive_5329",
-    "buffs": "2023461/2023463"
+    "buffs": "2023461/2023464/2023466/2023467"
   },
   "neural:800101": {
     "kind": "skill",
