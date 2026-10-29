@@ -4186,6 +4186,17 @@ a.boss-avatar { display: block; }
   border-color: #e94560;
   color: #e94560;
 }
+/* Full screen width: the banner is 2600×1080, so it needs the room */
+.gacha-fx-dialog {
+  max-width: 100vw;
+  width: 100vw;
+  margin: 0;
+}
+.gacha-fx-dialog .modal-content {
+  border-radius: 0;
+  border-left: 0;
+  border-right: 0;
+}
 .gacha-fx-stage {
   position: relative;
   aspect-ratio: 2600 / 1080;

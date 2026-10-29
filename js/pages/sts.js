@@ -297,7 +297,7 @@ Pages.sts = {
     if (!$modal.length) {
       $modal = $(
         '<div class="modal fade banner-image-modal gacha-fx-modal" id="gacha-fx-modal" tabindex="-1" aria-hidden="true" data-bs-theme="dark">' +
-          '<div class="modal-dialog modal-dialog-centered modal-xl">' +
+          '<div class="modal-dialog modal-dialog-centered gacha-fx-dialog">' +
             '<div class="modal-content">' +
               '<div class="modal-header">' +
                 '<h5 class="modal-title"></h5>' +
