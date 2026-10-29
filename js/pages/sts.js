@@ -84,7 +84,7 @@ function mechWapId(m) {
 // repo's data/gachafx/ (scripts/build_gacha_fx.py): <wap>.json, cards/<wap>.webp,
 // fx/<texture>.png, played by gacha-fx-engine.js over the card on a WebGL canvas.
 var GACHA_FX_BASE = ASSET_BASE + 'data/gachafx/';
-var gachaFxManifest = null;  // promise of { wap: true }, fetched once
+var gachaFxManifest = null;  // promise of { wap: pool prefab }, fetched once
 
 function mechGachaWap(m) {
   return mechWapId(m).replace(/^wap/, '');
@@ -94,11 +94,21 @@ function gachaFxPools() {
   if (!gachaFxManifest) {
     gachaFxManifest = $.getJSON(GACHA_FX_BASE + 'manifest.json').then(function (rows) {
       var pools = {};
-      rows.forEach(function (r) { pools[r.wap] = true; });
+      rows.forEach(function (r) { pools[r.wap] = r.prefab; });
       return pools;
     }, function () { gachaFxManifest = null; return {}; });
   }
   return gachaFxManifest;
+}
+
+// The Banner List's name for a pool (its art is the pool prefab, as on the Banner
+// List; reruns keep the name). Null for pools with no banner listed (Hela, Blazer).
+function gachaFxBannerName(prefab) {
+  var banners = (window.BannersData && BannersData.banners) || [];
+  for (var i = 0; i < banners.length; i++) {
+    if (banners[i].image === prefab) return banners[i].name;
+  }
+  return null;
 }
 
 function mechPortraitSrc(m) {
@@ -283,11 +293,14 @@ Pages.sts = {
     var self = this;
     var wap  = mechGachaWap(m);
     // Resolves after the page's HTML is in (render returns it synchronously first).
+    var title = m.name;
     gachaFxPools().then(function (pools) {
-      if (pools[wap]) $('[data-gacha-fx="' + wap + '"]').prop('hidden', false);
+      if (!pools[wap]) return;
+      title = gachaFxBannerName(pools[wap]) || m.name;
+      $('[data-gacha-fx="' + wap + '"]').prop('hidden', false);
     });
     $(document).off('click.sts-fx').on('click.sts-fx', '[data-gacha-fx]', function () {
-      self._showGachaFx(String($(this).data('gacha-fx')), m.name);
+      self._showGachaFx(String($(this).data('gacha-fx')), title);
     });
   },
 
