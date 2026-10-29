@@ -94,6 +94,7 @@ Pages.banners = {
       }).join('');
     };
 
+    gachaFxPools();  // fetch the animated banner list ahead of a click
     setTimeout(function () {
       $('#banner-page').on('click', '[data-filter-kind]', function () {
         var k = $(this).data('filter-kind');
@@ -103,7 +104,13 @@ Pages.banners = {
       });
       $('#banner-page').on('click', '.banner-card-img-zoom', function (e) {
         if ($(e.target).closest('a').length) return;
-        self._showImage($(this).find('img').attr('src'), $(this).data('name'));
+        var src = $(this).find('img').attr('src'), name = $(this).data('name'), image = $(this).attr('data-fx-image');
+        if (!image) { self._showImage(src, name); return; }
+        // ST banners with an animated version play it (sts.js), else show the art.
+        gachaFxPools().then(function (pools) {
+          var wap = Object.keys(pools).find(function (w) { return pools[w] === image; });
+          if (wap) Pages.sts._showGachaFx(wap, name); else self._showImage(src, name);
+        });
       });
       $('#banner-page').on('click', '[data-detail-tab]', function () {
         var pane = this.getAttribute('data-detail-tab');
@@ -213,7 +220,7 @@ Pages.banners = {
     return (
       '<div class="banner-card-wrap" data-kind="' + b.kind + '">' +
         '<div class="banner-card">' +
-          '<div class="banner-card-img' + (overlayHtml || !b.image ? '' : ' banner-card-img-zoom') + '" data-name="' + esc(b.name) + '">' +
+          '<div class="banner-card-img' + (overlayHtml || !b.image ? '' : ' banner-card-img-zoom') + '" data-name="' + esc(b.name) + '"' + (b.kind === 'st' && b.image ? ' data-fx-image="' + esc(b.image) + '"' : '') + '>' +
             (b.image ? '<img ' + (defer ? 'data-src' : 'src') + '="' + bannerImageSrc(b) + '" alt="' + esc(b.name) + '" loading="lazy" />' : self._placeholderArtHtml(b)) +
             overlayHtml +
             '<span class="banner-kind-badge banner-kind-' + b.kind + '">' + BANNER_KIND_LABEL[b.kind] + '</span>' +
@@ -335,6 +342,8 @@ Pages.banners = {
     $('#banner-page').off();
     var modal = document.getElementById('banner-image-modal');
     if (modal) bootstrap.Modal.getOrCreateInstance(modal).hide();
+    var fxModal = document.getElementById('gacha-fx-modal');
+    if (fxModal) bootstrap.Modal.getOrCreateInstance(fxModal).hide();
   },
 };
 
