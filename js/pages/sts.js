@@ -80,6 +80,27 @@ function mechWapId(m) {
   return (m.icon || '').replace('Icon_mecha_', '');
 }
 
+// Animated recruitment banners (gacha FX), one per mech pool, from the assets
+// repo's data/gachafx/ (scripts/build_gacha_fx.py): <wap>.json, cards/<wap>.webp,
+// fx/<texture>.png, played by gacha-fx-engine.js over the card on a WebGL canvas.
+var GACHA_FX_BASE = ASSET_BASE + 'data/gachafx/';
+var gachaFxManifest = null;  // promise of { wap: true }, fetched once
+
+function mechGachaWap(m) {
+  return mechWapId(m).replace(/^wap/, '');
+}
+
+function gachaFxPools() {
+  if (!gachaFxManifest) {
+    gachaFxManifest = $.getJSON(GACHA_FX_BASE + 'manifest.json').then(function (rows) {
+      var pools = {};
+      rows.forEach(function (r) { pools[r.wap] = true; });
+      return pools;
+    }, function () { gachaFxManifest = null; return {}; });
+  }
+  return gachaFxManifest;
+}
+
 function mechPortraitSrc(m) {
   return LOCAL_MECH_PORTRAIT_BASE + m.type + '/Icon_mecha_' + encodeURIComponent(mechWapId(m)) + '_SN_Raw.png';
 }
@@ -252,7 +273,83 @@ Pages.sts = {
 
   // ── Detail page ────────────────────────────────────────────────────────────
   _renderDetail: function (m) {
+    this._initGachaFx(m);
     return this._buildDetail(m);
+  },
+
+  // The "Animated Banner Image" button: shown when the mech has an animated
+  // banner, opens it in a Bootstrap modal (kept on <body> across visits).
+  _initGachaFx: function (m) {
+    var self = this;
+    var wap  = mechGachaWap(m);
+    // Resolves after the page's HTML is in (render returns it synchronously first).
+    gachaFxPools().then(function (pools) {
+      if (pools[wap]) $('[data-gacha-fx="' + wap + '"]').prop('hidden', false);
+    });
+    $(document).off('click.sts-fx').on('click.sts-fx', '[data-gacha-fx]', function () {
+      self._showGachaFx(String($(this).data('gacha-fx')), m.name);
+    });
+  },
+
+  _showGachaFx: function (wap, name) {
+    var self = this;
+    var $modal = $('#gacha-fx-modal');
+    if (!$modal.length) {
+      $modal = $(
+        '<div class="modal fade banner-image-modal gacha-fx-modal" id="gacha-fx-modal" tabindex="-1" aria-hidden="true" data-bs-theme="dark">' +
+          '<div class="modal-dialog modal-dialog-centered modal-xl">' +
+            '<div class="modal-content">' +
+              '<div class="modal-header">' +
+                '<h5 class="modal-title"></h5>' +
+                '<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>' +
+              '</div>' +
+              '<div class="gacha-fx-stage"></div>' +
+              '<div class="gacha-fx-status"></div>' +
+            '</div>' +
+          '</div>' +
+        '</div>'
+      ).appendTo('body');
+      // Stop the animation and free its WebGL context when the modal closes.
+      $modal.on('hidden.bs.modal', function () { self._stopGachaFx(); });
+    }
+    this._stopGachaFx();
+    var run = this._gachaFxRun = (this._gachaFxRun || 0) + 1;
+    var card = GACHA_FX_BASE + 'cards/' + wap + '.webp';
+    var $stage = $modal.find('.gacha-fx-stage');
+    var $status = $modal.find('.gacha-fx-status').text('Loading…');
+    var canvas = $('<canvas width="2600" height="1080"></canvas>')[0];
+    $stage.append($('<img alt="" />').attr({ src: card, alt: name + ' recruitment banner' }), canvas);
+    $modal.find('.modal-title').text(name);
+    bootstrap.Modal.getOrCreateInstance($modal[0]).show();
+
+    // The engine is an ES module: import() works from this classic script.
+    Promise.all([import(GACHA_FX_BASE + 'gacha-fx-engine.js'), $.getJSON(GACHA_FX_BASE + wap + '.json')])
+      .then(function (r) {
+        if (run !== self._gachaFxRun) return null;
+        return r[0].startGachaFx(canvas, r[1], {
+          background: card,
+          texUrl: function (t) { return GACHA_FX_BASE + 'fx/' + encodeURIComponent(t) + '.png'; },
+          onFirstFrame: function () { $(canvas).addClass('ready'); $status.text(''); },
+          onLost: function () { $(canvas).remove(); $status.text('The animation stopped (WebGL context lost); showing the still image.'); },
+        });
+      })
+      .then(function (h) {
+        if (!h) return;
+        if (run !== self._gachaFxRun) h.destroy(); else self._gachaFxHandle = h;
+      })
+      .catch(function () {
+        if (run !== self._gachaFxRun) return;
+        $(canvas).remove();
+        $status.text('The animation could not be played in this browser; showing the still image.');
+      });
+  },
+
+  _stopGachaFx: function () {
+    this._gachaFxRun = (this._gachaFxRun || 0) + 1;
+    if (this._gachaFxHandle) this._gachaFxHandle.destroy();
+    this._gachaFxHandle = null;
+    // A fresh canvas each time: destroy() releases the old WebGL context
+    $('#gacha-fx-modal .gacha-fx-stage').empty();
   },
 
   _buildDetail: function (m) {
@@ -416,13 +513,15 @@ Pages.sts = {
 
       // ── Top: portrait + info side by side
       '<div class="detail-layout">' +
-        '<div class="detail-portrait-col">' +
+        '<div class="detail-portrait-col st-portrait-col">' +
           '<div class="detail-portrait" style="background-image:url(\'' + bgSrc + '\')">' +
             '<img class="detail-portrait-img" src="' + portraitSrc + '"' + portraitErrorAttr + ' alt="' + $('<span>').text(m.name).html() + '" />' +
             '<span class="version-badge">v' + $('<span>').text(m.version).html() + '</span>' +
             '<span class="rank-badge ' + rankClass + '">' + rankLabel + '</span>' +
             skinNavHtml +
           '</div>' +
+          // Shown by _initGachaFx() once the assets repo's manifest says this mech has one
+          '<button type="button" class="btn-gacha-fx" data-gacha-fx="' + mechGachaWap(m) + '" hidden>Animated Banner Image</button>' +
         '</div>' +
         '<div class="detail-info-col">' +
           '<h2 class="detail-name">' + $('<span>').text(m.name).html() + '</h2>' +
@@ -468,6 +567,9 @@ Pages.sts = {
     $(document).off('click.sts');
     $(document).off('input.sts');
     $(document).off('click.sts-skin');
+    $(document).off('click.sts-fx');
+    var fxModal = document.getElementById('gacha-fx-modal');
+    if (fxModal) bootstrap.Modal.getOrCreateInstance(fxModal).hide();
     this._activeRanks       = {};
     this._activeTypes       = {};
     this._activeVersions    = {};
