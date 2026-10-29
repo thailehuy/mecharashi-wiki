@@ -80,35 +80,9 @@ function mechWapId(m) {
   return (m.icon || '').replace('Icon_mecha_', '');
 }
 
-// Animated recruitment banners (gacha FX), one per mech pool, from the assets
-// repo's data/gachafx/ (scripts/build_gacha_fx.py): <wap>.json, cards/<wap>.webp,
-// fx/<texture>.png, played by gacha-fx-engine.js over the card on a WebGL canvas.
-var GACHA_FX_BASE = ASSET_BASE + 'data/gachafx/';
-var gachaFxManifest = null;  // promise of { wap: pool prefab }, fetched once
-
+// The mech's animated recruitment banner (js/gacha-fx.js) is keyed by its wap number.
 function mechGachaWap(m) {
   return mechWapId(m).replace(/^wap/, '');
-}
-
-function gachaFxPools() {
-  if (!gachaFxManifest) {
-    gachaFxManifest = $.getJSON(GACHA_FX_BASE + 'manifest.json').then(function (rows) {
-      var pools = {};
-      rows.forEach(function (r) { pools[r.wap] = r.prefab; });
-      return pools;
-    }, function () { gachaFxManifest = null; return {}; });
-  }
-  return gachaFxManifest;
-}
-
-// The Banner List's name for a pool (its art is the pool prefab, as on the Banner
-// List; reruns keep the name). Null for pools with no banner listed (Hela, Blazer).
-function gachaFxBannerName(prefab) {
-  var banners = (window.BannersData && BannersData.banners) || [];
-  for (var i = 0; i < banners.length; i++) {
-    if (banners[i].image === prefab) return banners[i].name;
-  }
-  return null;
 }
 
 function mechPortraitSrc(m) {
@@ -288,98 +262,9 @@ Pages.sts = {
   },
 
   // The "Animated Banner Image" button: shown when the mech has an animated
-  // banner, opens it in a Bootstrap modal (kept on <body> across visits).
+  // banner, opens it in the gacha FX popup (js/gacha-fx.js).
   _initGachaFx: function (m) {
-    var self = this;
-    var wap  = mechGachaWap(m);
-    // Resolves after the page's HTML is in (render returns it synchronously first).
-    var title = m.name;
-    gachaFxPools().then(function (pools) {
-      if (!pools[wap]) return;
-      title = gachaFxBannerName(pools[wap]) || m.name;
-      $('[data-gacha-fx="' + wap + '"]').prop('hidden', false);
-    });
-    $(document).off('click.sts-fx').on('click.sts-fx', '[data-gacha-fx]', function () {
-      self._showGachaFx(String($(this).data('gacha-fx')), title);
-    });
-  },
-
-  _showGachaFx: function (wap, name) {
-    var self = this;
-    var $modal = $('#gacha-fx-modal');
-    if (!$modal.length) {
-      $modal = $(
-        '<div class="modal fade banner-image-modal gacha-fx-modal" id="gacha-fx-modal" tabindex="-1" aria-hidden="true" data-bs-theme="dark">' +
-          '<div class="modal-dialog modal-dialog-centered gacha-fx-dialog">' +
-            '<div class="modal-content">' +
-              '<div class="modal-header">' +
-                '<h5 class="modal-title"></h5>' +
-                // Beside the title, so the popup keeps its size as the status changes
-                '<span class="gacha-fx-status"></span>' +
-                '<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>' +
-              '</div>' +
-              '<div class="gacha-fx-stage"></div>' +
-            '</div>' +
-          '</div>' +
-        '</div>'
-      ).appendTo('body');
-      // Stop the animation and free its WebGL context when the modal closes.
-      $modal.on('hidden.bs.modal', function () { self._stopGachaFx(); });
-    }
-    this._stopGachaFx();
-    var run = this._gachaFxRun = (this._gachaFxRun || 0) + 1;
-    var card = GACHA_FX_BASE + 'cards/' + wap + '.webp';
-    var $stage = $modal.find('.gacha-fx-stage');
-    var $status = $modal.find('.gacha-fx-status').text('Loading…');
-    $stage.append($('<img alt="" />').attr({ src: card, alt: name + ' recruitment banner' }));
-    $modal.find('.modal-title').text(name);
-    bootstrap.Modal.getOrCreateInstance($modal[0]).show();
-
-    // The assets site lets browsers cache files for 10 minutes, so right after
-    // an engine or pool update a browser can pair a stale copy with new files:
-    // when the first try fails, try once more with fresh copies.
-    var play = function (fresh) {
-      var bust = fresh ? '?t=' + Date.now() : '';
-      // A fresh canvas each try: a failed start may have taken the old one's WebGL context
-      var canvas = $('<canvas width="2600" height="1080"></canvas>').appendTo($stage)[0];
-      // The engine is an ES module: import() works from this classic script.
-      return Promise.all([import(GACHA_FX_BASE + 'gacha-fx-engine.js' + bust), $.getJSON(GACHA_FX_BASE + wap + '.json' + bust)])
-        .then(function (r) {
-          if (run !== self._gachaFxRun) return null;
-          return r[0].startGachaFx(canvas, r[1], {
-            background: card,
-            texUrl: function (t) { return GACHA_FX_BASE + 'fx/' + encodeURIComponent(t) + '.png' + bust; },
-            onFirstFrame: function () { $(canvas).addClass('ready'); $status.text(''); },
-            onLost: function () { $(canvas).remove(); $status.text('The animation stopped (WebGL context lost); showing the still image.'); },
-          });
-        })
-        .then(function (h) {
-          if (!h) return;
-          if (run !== self._gachaFxRun) h.destroy(); else self._gachaFxHandle = h;
-        }, function (err) {
-          $(canvas).remove();
-          throw err;
-        });
-    };
-    play(false)
-      .catch(function (err) {
-        if (run !== self._gachaFxRun) return;
-        if (window.console) console.warn('Animated banner ' + wap + ', retrying with fresh files:', err);
-        return play(true);
-      })
-      .catch(function (err) {
-        if (run !== self._gachaFxRun) return;
-        if (window.console) console.error('Animated banner ' + wap + ':', err);
-        $status.text('The animation could not be played in this browser; showing the still image.');
-      });
-  },
-
-  _stopGachaFx: function () {
-    this._gachaFxRun = (this._gachaFxRun || 0) + 1;
-    if (this._gachaFxHandle) this._gachaFxHandle.destroy();
-    this._gachaFxHandle = null;
-    // A fresh canvas each time: destroy() releases the old WebGL context
-    $('#gacha-fx-modal .gacha-fx-stage').empty();
+    GachaFx.initButton('mech', mechGachaWap(m), m.name, 'sts-fx');
   },
 
   _buildDetail: function (m) {
@@ -551,7 +436,7 @@ Pages.sts = {
             skinNavHtml +
           '</div>' +
           // Shown by _initGachaFx() once the assets repo's manifest says this mech has one
-          '<button type="button" class="btn-gacha-fx" data-gacha-fx="' + mechGachaWap(m) + '" hidden>Animated Banner Image</button>' +
+          GachaFx.buttonHtml(mechGachaWap(m)) +
         '</div>' +
         '<div class="detail-info-col">' +
           '<h2 class="detail-name">' + $('<span>').text(m.name).html() + '</h2>' +
@@ -598,8 +483,7 @@ Pages.sts = {
     $(document).off('input.sts');
     $(document).off('click.sts-skin');
     $(document).off('click.sts-fx');
-    var fxModal = document.getElementById('gacha-fx-modal');
-    if (fxModal) bootstrap.Modal.getOrCreateInstance(fxModal).hide();
+    GachaFx.hide();
     this._activeRanks       = {};
     this._activeTypes       = {};
     this._activeVersions    = {};

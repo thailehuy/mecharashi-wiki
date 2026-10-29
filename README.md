@@ -48,7 +48,7 @@ Pilot voice lines are in another repo, [mecharashi-wiki-voices](https://github.c
 - **Builder** — mech loadout theorycrafting tool, incl. 4 accessory slots per weapon (at least 1 trigger TA + 1 reaction RA) with each TA + RA chain's trigger chance; state is encoded into a shareable Build UID (URL hash), not localStorage
 - **R&D Bonus** — max bonuses from a fully researched R&D tree, by pilot class, ST weight class and weapon type
 - **Features** — every R&D feature (pilot / ST / weapon), split by pilot class, ST weight class and weapon R&D tree, with port, effect and unlock cost
-- **Banner List** — every pilot and ST gacha banner up to v3.7, by patch, with dates, featured/selectable units and New/Rerun tags; banners not yet in the game data (v2.6+) are listed as upcoming debuts without dates; built from the mined game tables by `scripts/build_banners.py`
+- **Banner List** — every pilot and ST gacha banner up to v3.7, by patch, with dates, featured/selectable units and New/Rerun tags; banners not yet in the game data (v2.6+) are listed as upcoming debuts without dates; built from the mined game tables by `scripts/build_banners.py`; clicking a banner's art plays its animated version when the pool has one (`js/gacha-fx.js`), else shows the still image
 - **Bosses** — every Armed Conquest and Clearance Ops boss once, A–Z, listing each season/chapter stage it's in (linked) and the ST it fields there
 - **Armed Conquest** — boss line-ups of every Armed Conquest season with HP per difficulty; each season has its own page (`armedconquest/<season>/`) listing every boss's skills from the mined DB, plus what the Armed Conquest guide adds for AC1–10 (skill cards with effects, buffs, minions, bounties, Extreme modifiers, clues)
 - **Clearance Ops** — boss line-ups, HP and turn limit of every Clearance Ops chapter (1–17); each chapter has its own page (`clearanceops/<chapter>/`) listing every boss's skills from the mined DB, plus the chapter's companions (Black Widow in CO1)
@@ -126,7 +126,7 @@ scripts/                          # Every build script; run them from the repo r
   set_global_version.py           # after build_banners.py: the version global is on (the newest whose banners have opened, or --version) → prints its banner timeline, sets GLOBAL_VERSION in js/app.js (its units lose the CN-text warning), starts the Dispatch Calculator's DCALC_PATCHES at it on its first banner's day, and checks data/dispatch.json against the client's dispatch pool
   update_global.py                # pipeline after a global (EN) client update: mine the master DB → take_translations.py → crafting → bench data, chain traits, features, R&D, AC bosses + drops (`build_bosses.py --keep-co`), banners → set_global_version.py → lore, story, events, Simulated Battle, Covert Phantom, Memory Storm → item icons + banner art + event pictures + new mechs' animated banners → compile.py
                                   # Clearance Ops, Elite Battle and Frontier Trial get no new content (none in the CN client either), so it leaves them out; rebuild them by hand with build_bosses.py (no --keep-co), build_elite.py, build_frontier.py
-  build_gacha_fx.py               # animated mech recruitment banners (gacha FX) for every mech pool → assets repo data/gachafx/ (<wap>.json effect data, cards/<wap>.webp, fx/ textures, manifest.json, gacha-fx-engine.js player), by running the git-ignored pipeline in data/screenshots/animation-sample/6_pipeline/ (read its README.md): Global client's build, CN's for pools Global lacks; refuses to copy if a pool has ⚠; --skip-build copies the last build; --new-only (run by update_global.py and update_cn.py) builds and adds only the pools the assets repo doesn't have yet, plus CN-built ones Global now has, leaving the rest untouched
+  build_gacha_fx.py               # animated recruitment banners (gacha FX) for every mech pool and S-rank pilot pool → assets repo data/gachafx/ (<wap>.json effect data, cards/<wap>.webp, fx/ textures, manifest.json, gacha-fx-engine.js player; pilots the same under pilots/, keyed by pilot ID, with their own fx/), by running the git-ignored pipeline in data/screenshots/animation-sample/6_pipeline/ (read its README.md): Global client's build, CN's for pools Global lacks; refuses to copy if a mech pool has ⚠, leaves out (and lists) pilot pools with ⚠; --skip-build copies the last build; --new-only (run by update_global.py and update_cn.py) builds and adds only the pools the assets repo doesn't have yet, plus CN-built ones Global now has, leaving the rest untouched
   extract_item_icons.py           # the drop items' icons (bosses.json), crafting materials' (materials.json `item_icon`) and story rewards' (story.json chapters and events; pilot chips' and medals' from their own icon bundles) from the game's itemtype bundles (newest copy, installed or downloaded) → assets repo data/items/, and the Story page's Border Conflict foes' busts (uipiloticons bundles) → data/unlisted/pilot_images_half/; game folder and bundle key from MRT_FieldWiki's settings.py; skips icons already there unless --force. Annihilation Vouchers show their boss's portrait instead
 data/
   db/                             # Source tables: pilots, pilot_lore, pilot_neurons, neural_partitions, skills, mechs, mech_lore, mech_parts, modules, weapons, backpacks, materials (see data/README.md)
@@ -159,6 +159,7 @@ data/
 ## Pilot detail page
 
 - Full portrait, rank and version badges
+- Animated Banner Image button under the portrait, for S-rank pilots whose recruitment banner has an animated version in the assets repo (`data/gachafx/pilots/manifest.json`): a popup plays it with the gacha FX engine over the banner card (`js/gacha-fx.js`, shared with the ST page and the Banner List)
 - Occupation icon (from Profession Neuron entry)
 - Basic and Upgraded talents with parsed descriptions
 - Skills / Neural Drive / Lore / Voice Lines tabs below the portrait (each pilot opens on Skills)
@@ -170,6 +171,7 @@ data/
 ## ST detail page
 
 - Live portrait (`mechaLive` image)
+- Animated Banner Image button under the portrait, as on the pilot page (`data/gachafx/manifest.json`)
 - Firepower (from CN data), per-part HP, weight capacity and remaining
 - Modules / Lore tabs below the portrait, as on the pilot page (shared code in `js/lore.js`)
   - Modules — level display (`Lv.X/X`) and parsed descriptions (inline `ModuleSlider` preview)

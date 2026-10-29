@@ -277,6 +277,9 @@ Pages.pilots = {
 
   // ── Detail page ────────────────────────────────────────────────────────────
   _renderDetail: function (p) {
+    // The "Animated Banner Image" button: shown when the pilot has an animated
+    // banner, opens it in the gacha FX popup (js/gacha-fx.js).
+    GachaFx.initButton('pilot', p.ID, p.PilotName, 'pilots-fx');
     return this._buildDetail(p);
   },
 
@@ -412,6 +415,8 @@ Pages.pilots = {
             '<img class="detail-portrait-img" src="' + portraitSrc + '" onerror="this.onerror=null;this.src=\'' + portraitFallback + '\';" alt="' + $('<span>').text(p.PilotName).html() + '" />' +
             skinNavHtml +
           '</div>' +
+          // Shown once the assets repo's manifest says this pilot has one
+          GachaFx.buttonHtml(p.ID) +
         '</div>' +
         '<div class="detail-info-col">' +
           '<div class="detail-talents">' +
@@ -837,6 +842,8 @@ Pages.pilots = {
     $(document).off('click.pilots');
     $(document).off('input.pilots');
     $(document).off('click.pilots-skin');
+    $(document).off('click.pilots-fx');
+    GachaFx.hide();
     this._activeRanks       = {};
     this._activeOccupations = {};
     this._activeVersions    = {};
