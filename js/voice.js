@@ -78,7 +78,9 @@ var Voice = {
           ? '<div class="voice-cond">' + self.COND[ln.cond.kind].replace('{}', names(ln.cond.names, ln.cond.kind === 'st' ? stLink : pilotLink)) + '</div>'
           : '';
         var audio = ln.audio || [];
-        var src = id + '/' + ln.event + '.mp3';
+        // The audio is filed under the bank's ID, in the event name: not always the pilot's (Vincenza's is 10103145).
+        var bank = /^PI_(\d{8})/.exec(ln.event);
+        var src = (bank ? bank[1] : id) + '/' + ln.event + '.mp3';
         return (
           '<li class="voice-line">' +
             '<button type="button" class="voice-play" data-voice-src="' + esc(src) + '" data-voice-audio="' + audio.join(' ') + '"' +

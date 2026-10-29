@@ -5,7 +5,8 @@ pilot page's Voice Lines tab).
     python3 scripts/build_voice.py
 
 Run extract_voices.py first: its data/pilots/voice-audio.json says which lines have audio, in which languages
-(the files are on voices.mecharashi-wiki.cc as <lang>/<pilot ID>/<event>.mp3).
+(the files are on voices.mecharashi-wiki.cc as <lang>/<bank ID>/<event>.mp3; the bank is usually, but not always,
+the pilot's own).
 
 - Lines (ConfigDataPilotVoiceInfo): the pilot's voice scheme's lines (ConfigDataPilotInfo.VoiceScheme →
   ConfigDataPilotVoiceScheme.PilotVoiceIDList) and any other row whose ID is the pilot ID + 2 digits (a skin's
@@ -177,11 +178,14 @@ def main():
             rows, has_text, cast = cn.rows(pid), False, cn.cast(pid)
             if rows:
                 cn_only.append(p['name'])
-        if not rows and not audio.get(pid):
+        if not rows and pid not in audio:
             none.append(p['name'])
             continue
         skins = {**(cn.skins if cn else {}), **{k: v for k, v in g.skins.items() if v}}
-        entry = {'groups': pilot_voice(pid, rows, has_text, titles, audio.get(pid, {}), skins, idents, mechs)}
+        # The audio of the banks the lines play, which aren't always the pilot's own (Vincenza's are 10103145's).
+        banks = {m.group(1) for r in rows for m in [EVENT_RE.match(r['WwiseVoiceEventName'])] if m} or {pid}
+        pilot_audio = {e: langs for b in sorted(banks) for e, langs in audio.get(b, {}).items()}
+        entry = {'groups': pilot_voice(pid, rows, has_text, titles, pilot_audio, skins, idents, mechs)}
         if cast:
             entry['cast'] = cast
         out[pid] = entry

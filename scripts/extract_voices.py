@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Extract every wiki pilot's voice lines from the game's Wwise sound banks into the voices repo
-(mecharashi-wiki-voices, served from https://voices.mecharashi-wiki.cc/) as <lang>/<pilot ID>/<event>.mp3,
-and list them in data/pilots/voice-audio.json for build_voice.py.
+(mecharashi-wiki-voices, served from https://voices.mecharashi-wiki.cc/) as <lang>/<bank ID>/<event>.mp3,
+and list them in data/pilots/voice-audio.json (by bank ID) for build_voice.py.
 
 Each pilot has a bank per language (Pilot_<ID>.bnk, Pilot_<ID>B.bnk etc. for a skin's lines) in the game's
 Resave/Wwise/<English|Japanese|Chinese>/ folder, and the game downloads newer ones into its cache
@@ -70,6 +70,20 @@ def event_names(banks):
     suffixes = {m.group(1) for n in names for m in [re.match(r'PI_\w+?_Voice_Line_(\w+)$', n)] if m}
     names |= {'PI_%s_Voice_Line_%s' % (b, s) for b in banks for s in suffixes}
     return {fnv1(n): n for n in names}
+
+
+def pilot_banks(pilots):
+    """The pilots' IDs and every bank their lines (ConfigDataPilotVoiceInfo ID = pilot ID + 2 digits) play: some
+    pilots' lines play another ID's bank (Vincenza 10103144's are PI_10103145_…, Bertha 10103145's PI_10103143_…)."""
+    banks = set(pilots)
+    for path in STATS:
+        if os.path.exists(path):
+            con = sqlite3.connect('file:%s?mode=ro' % path, uri=True)
+            for i, event in con.execute('SELECT ID, WwiseVoiceEventName FROM ConfigDataPilotVoiceInfo'):
+                m = re.match(r'PI_(\d{8})', event or '')
+                if m and str(i // 100) in pilots:
+                    banks.add(m.group(1))
+    return banks
 
 
 # ── Finding the newest copy of each bank and streamed file ────────────────────
@@ -195,13 +209,14 @@ def main():
 
     banks, wems = find_files(cache_objects('resavefiles_wwise_windows_'))
     names = event_names({m.group(1) + m.group(2) for b in banks.values() for n in b for m in [BANK_RE.match(n)] if m})
+    wanted = pilot_banks(pilots)
     manifest, todo, missing, unnamed = {}, [], [], 0
     for lang in LANGS:
         for bank, src in sorted(banks[lang].items()):
             m = BANK_RE.match(bank)
-            if not m or m.group(1) not in pilots:
+            if not m or m.group(1) not in wanted:
                 continue
-            pid = m.group(1)
+            pid = m.group(1)  # the bank's ID, not always its pilot's
             for eid, sid, data in bank_sounds(src.read()):
                 event = names.get(eid)
                 if not event:
