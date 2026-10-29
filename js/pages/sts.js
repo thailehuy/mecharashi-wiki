@@ -317,29 +317,45 @@ Pages.sts = {
     var card = GACHA_FX_BASE + 'cards/' + wap + '.webp';
     var $stage = $modal.find('.gacha-fx-stage');
     var $status = $modal.find('.gacha-fx-status').text('Loading…');
-    var canvas = $('<canvas width="2600" height="1080"></canvas>')[0];
-    $stage.append($('<img alt="" />').attr({ src: card, alt: name + ' recruitment banner' }), canvas);
+    $stage.append($('<img alt="" />').attr({ src: card, alt: name + ' recruitment banner' }));
     $modal.find('.modal-title').text(name);
     bootstrap.Modal.getOrCreateInstance($modal[0]).show();
 
-    // The engine is an ES module: import() works from this classic script.
-    Promise.all([import(GACHA_FX_BASE + 'gacha-fx-engine.js'), $.getJSON(GACHA_FX_BASE + wap + '.json')])
-      .then(function (r) {
-        if (run !== self._gachaFxRun) return null;
-        return r[0].startGachaFx(canvas, r[1], {
-          background: card,
-          texUrl: function (t) { return GACHA_FX_BASE + 'fx/' + encodeURIComponent(t) + '.png'; },
-          onFirstFrame: function () { $(canvas).addClass('ready'); $status.text(''); },
-          onLost: function () { $(canvas).remove(); $status.text('The animation stopped (WebGL context lost); showing the still image.'); },
+    // The assets site lets browsers cache files for 10 minutes, so right after
+    // an engine or pool update a browser can pair a stale copy with new files:
+    // when the first try fails, try once more with fresh copies.
+    var play = function (fresh) {
+      var bust = fresh ? '?t=' + Date.now() : '';
+      // A fresh canvas each try: a failed start may have taken the old one's WebGL context
+      var canvas = $('<canvas width="2600" height="1080"></canvas>').appendTo($stage)[0];
+      // The engine is an ES module: import() works from this classic script.
+      return Promise.all([import(GACHA_FX_BASE + 'gacha-fx-engine.js' + bust), $.getJSON(GACHA_FX_BASE + wap + '.json' + bust)])
+        .then(function (r) {
+          if (run !== self._gachaFxRun) return null;
+          return r[0].startGachaFx(canvas, r[1], {
+            background: card,
+            texUrl: function (t) { return GACHA_FX_BASE + 'fx/' + encodeURIComponent(t) + '.png' + bust; },
+            onFirstFrame: function () { $(canvas).addClass('ready'); $status.text(''); },
+            onLost: function () { $(canvas).remove(); $status.text('The animation stopped (WebGL context lost); showing the still image.'); },
+          });
+        })
+        .then(function (h) {
+          if (!h) return;
+          if (run !== self._gachaFxRun) h.destroy(); else self._gachaFxHandle = h;
+        }, function (err) {
+          $(canvas).remove();
+          throw err;
         });
-      })
-      .then(function (h) {
-        if (!h) return;
-        if (run !== self._gachaFxRun) h.destroy(); else self._gachaFxHandle = h;
-      })
-      .catch(function () {
+    };
+    play(false)
+      .catch(function (err) {
         if (run !== self._gachaFxRun) return;
-        $(canvas).remove();
+        if (window.console) console.warn('Animated banner ' + wap + ', retrying with fresh files:', err);
+        return play(true);
+      })
+      .catch(function (err) {
+        if (run !== self._gachaFxRun) return;
+        if (window.console) console.error('Animated banner ' + wap + ':', err);
         $status.text('The animation could not be played in this browser; showing the still image.');
       });
   },
