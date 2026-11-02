@@ -454,7 +454,7 @@ Pages.sts = {
         '</div>' +
       '</div>' +
 
-      // ── Below: Modules / Lore tabs, full width (js/lore.js)
+      // ── Below: Modules / Color Scheme / Lore tabs, full width (js/lore.js)
       Lore.tabsHtml([
         ['modules', 'Modules',
           '<div class="nd-section">' +
@@ -469,6 +469,7 @@ Pages.sts = {
               '<div class="detail-talents">' + hiddenCards + '</div>' +
             '</div>'
           ) : '')],
+        ['paint', 'Color Scheme', Lore.loadingHtml],
         ['lore', 'Lore', Lore.loadingHtml]
       ], { kind: 'mechs', id: m.ID })
     );

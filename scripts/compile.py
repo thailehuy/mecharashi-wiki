@@ -84,6 +84,8 @@ def validate(t):
         ref('pilots', pid, 'pilot_lore')
     for mid in t['mech_lore']:
         ref('mechs', mid, 'mech_lore')
+    for mid in t['mech_paint']:
+        ref('mechs', mid, 'mech_paint')
 
     if errors:
         print('FAILED: data/db has broken references')
@@ -277,7 +279,9 @@ def build_backpacks(t):
 
 
 # Lore bundles, loaded by a detail page only when its Lore tab is opened (js/lore.js).
-# Both kinds share one shape: profile rows, introduction, stories.
+# Both kinds share one shape: profile rows, introduction, stories. An ST's entry
+# also carries its default paint (`paint`, from mech_paint.json) for the Color
+# Scheme tab, which loads the same bundle.
 
 def lore_out(profile, introduction, row):
     out = {'profile': [{'label': label, 'value': v} for label, v in profile if v] + row.get('profile', [])}
@@ -309,6 +313,8 @@ def build_mech_lore(t):
         out = lore_out([('Manufacturer', row.get('manufacturer'))], row.get('introduction') or m.get('introduce'), row)
         if out:
             lore[mid] = out
+        if mid in t['mech_paint']:
+            lore.setdefault(mid, {})['paint'] = t['mech_paint'][mid]
     return lore
 
 
@@ -348,7 +354,7 @@ def run(script):
 
 
 TABLES = ['pilots', 'pilot_neurons', 'neural_partitions', 'skills', 'mechs', 'mech_parts',
-          'modules', 'weapons', 'backpacks', 'materials', 'pilot_lore', 'mech_lore']
+          'modules', 'weapons', 'backpacks', 'materials', 'pilot_lore', 'mech_lore', 'mech_paint']
 
 BUNDLES = [('pilots', 'PilotsData', build_pilots), ('mechs', 'MechsData', build_mechs),
            ('modules', 'ModulesData', build_modules), ('weapons', 'WeaponsData', build_weapons),

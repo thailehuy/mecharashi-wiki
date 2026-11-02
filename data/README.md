@@ -51,6 +51,7 @@ official values. See "Using the mined game database" in the root
 | `skills.json` | skill ID | Every talent, pilot skill, neural passive and weapon passive |
 | `mechs.json` | Body part ID | One ST. References parts, modules |
 | `mech_lore.json` | Body part ID | The ST's manufacturer and stories (Lore tab) |
+| `mech_paint.json` | Body part ID | The ST's default paint per part (Color Scheme tab) |
 | `mech_parts.json` | part ID | One ST part's max-level stats |
 | `modules.json` | module family ID | A module and its text per level |
 | `weapons.json` | weapon ID | One weapon. References its passives in `skills.json` |
@@ -133,6 +134,30 @@ v2.6 on that Global lacks take theirs from the CN client in Chinese, with
 `"cn": true`, plus `introduction` (the CN flavor text, shown instead of
 `introduce`); `manufacturer` is global's English when global has that
 manufacturer.
+
+### `mech_paint.json`
+
+```json
+"10020102": { "groups": [
+  { "kind": "ST", "scheme": "Default Color Scheme", "desc": "A classic paint job …",
+    "parts": [ { "part": "Body", "colors": ["Wheat Brown", "Dark Sea Blue", "Begonia Red", "Ash Gray"] }, … ] },
+  { "kind": "Weapons", "scheme": "Original Plan", "desc": "…", "parts": [ { "part": "Left Hand Weapon", "colors": [ … ] }, … ] },
+  { "kind": "Backpack", "scheme": "Original Plan", "desc": "…", "parts": [ { "part": "Backpack", "colors": [ … ] } ] }
+] }
+```
+
+Filled in by `python3 scripts/build_paint.py` from the global client's paint
+tables for every ST in `mechs.json`. An ST's default scheme is the paint plan
+`1` + suit ID + `01` (Flintstone 1002 → `1100201`). `colors` are the
+official paint names, one per coloring zone (four on the body, arms and
+legs, three on weapons and the backpack). The hand and shoulder weapons and
+the backpack take the shared factory finish ("Original Plan") wherever the
+ST's own scheme leaves them out, which so far is every ST. The tables have
+no RGB values, so the tab lists the names only. STs that Global lacks take
+theirs from the CN client with `"cn": true`. Colors Global also has get
+Global's English (matched on the Chinese text), and the rest stay in Chinese.
+compile.py adds each row to the ST's entry in `data/mechs/lore.js` as
+`paint`.
 
 ### `pilot_neurons.json`
 

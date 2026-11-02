@@ -22,7 +22,7 @@ Steps
                   version global is on (set_global_version.py: the newest whose banners have opened; it prints that
                   version's banner timeline, sets GLOBAL_VERSION, which drops the CN-text warning from its pilots' and
                   STs' pages, starts the Dispatch Calculator's schedule at it and checks the dispatch pool), the pilot and ST
-                  lore (build_lore.py), the Story page's world settings and chapters (build_story.py), the Events
+                  lore (build_lore.py), the STs' default paint (build_paint.py), the Story page's world settings and chapters (build_story.py), the Events
                   page (build_events.py), and the Simulated Battle, Covert Phantom, Memory Storm and Refactor-in-Crisis pages
                   (build_sim.py, build_covert.py, build_storm.py, build_crisis.py). Clearance Ops, Elite Battle and Frontier Trial get
                   no new content (none in the CN client either), so they are left out: build_bosses.py without
@@ -54,7 +54,7 @@ STEPS = ['mine', 'translations', 'crafting', 'data', 'images', 'compile']
 # In order, after compile.py: build-icons.py, build_features.py and build_bosses.py read the compiled bundles.
 DATA = [['extract-bench.py', '--data-only'], ['build-icons.py'], ['extract-chain-traits.py'], ['build_features.py'],
         ['build_rd_totals.py'], ['build_bosses.py', '--keep-co'], ['build_banners.py'], ['set_global_version.py'],
-        ['build_lore.py'], ['build_story.py'], ['build_events.py'], ['build_sim.py'], ['build_covert.py'], ['build_storm.py'],
+        ['build_lore.py'], ['build_paint.py'], ['build_story.py'], ['build_events.py'], ['build_sim.py'], ['build_covert.py'], ['build_storm.py'],
         ['build_crisis.py']]
 
 

@@ -1,8 +1,9 @@
 // Detail-page tabs (Skills / Neural Drive / Lore / Voice Lines on pilots,
-// Modules / Lore on STs) and the Lore tab itself. Lore lives in its own bundle
-// per kind (data/<kind>/lore.js, built by scripts/compile.py), fetched the
-// first time a Lore tab is opened; the Voice Lines tab (js/voice.js) the same
-// way from data/pilots/voice.js.
+// Modules / Color Scheme / Lore on STs) and the Lore and Color Scheme tabs
+// themselves. Lore lives in its own bundle per kind (data/<kind>/lore.js, built
+// by scripts/compile.py), fetched the first time a Lore tab is opened; an ST's
+// entry there also holds its default paint for the Color Scheme tab. The Voice
+// Lines tab (js/voice.js) loads the same way from data/pilots/voice.js.
 var Lore = {
   BUNDLES: { pilots: 'PilotLoreData', mechs: 'MechLoreData' },
   _loading: {},
@@ -18,7 +19,7 @@ var Lore = {
           return '<button type="button" class="detail-tab' + (i ? '' : ' active') + '" role="tab" data-detail-tab="' + t[0] + '">' + t[1] + '</button>';
         }).join('') + '</div>' +
         tabs.map(function (t, i) {
-          var loreAttr = t[0] === 'lore' ? ' data-lore-kind="' + lore.kind + '" data-lore-id="' + lore.id + '"' :
+          var loreAttr = t[0] === 'lore' || t[0] === 'paint' ? ' data-lore-kind="' + lore.kind + '" data-lore-id="' + lore.id + '" data-lore-view="' + t[0] + '"' :
                          t[0] === 'voice' ? ' data-voice-id="' + lore.id + '"' : '';
           return '<div class="detail-tab-pane" role="tabpanel" data-detail-pane="' + t[0] + '"' + loreAttr + (i ? ' hidden' : '') + '>' + t[2] + '</div>';
         }).join('') +
@@ -59,9 +60,10 @@ var Lore = {
       // The page may have moved on by the time the bundle arrived.
       if (!pane.isConnected) return;
       pane.setAttribute('data-filled', '');
-      pane.innerHTML = self.render((window[self.BUNDLES[kind]] || {})[id]);
+      var entry = (window[self.BUNDLES[kind]] || {})[id];
+      pane.innerHTML = pane.getAttribute('data-lore-view') === 'paint' ? self.renderPaint(entry && entry.paint) : self.render(entry);
     }, function () {
-      if (pane.isConnected) pane.innerHTML = '<p class="text-danger">Couldn\'t load the lore. Try again later.</p>';
+      if (pane.isConnected) pane.innerHTML = '<p class="text-danger">Couldn\'t load this tab. Try again later.</p>';
     });
   },
 
@@ -70,7 +72,8 @@ var Lore = {
     function paras(s) {
       return s.split(/\n+/).filter(Boolean).map(function (l) { return '<p>' + esc(l) + '</p>'; }).join('');
     }
-    if (!lore) return '<p class="lore-empty">No lore for this one yet.</p>';
+    // An ST entry can hold just its paint (lore.paint), with no lore of its own.
+    if (!lore || !lore.profile) return '<p class="lore-empty">No lore for this one yet.</p>';
 
     var profileHtml = (lore.profile || []).length
       ? '<dl class="lore-profile skill-card">' + lore.profile.map(function (r) {
@@ -106,6 +109,33 @@ var Lore = {
       '<div class="lore-top">' + profileHtml + introHtml + '</div>' +
       (storiesHtml ? '<div class="section-heading lore-heading">Stories</div><div class="lore-stories">' + storiesHtml + '</div>' : '')
     );
+  },
+
+  // An ST's default paint (data/db/mech_paint.json): one card per scheme (the
+  // ST's own, then the weapons' and the backpack's shared factory finish), a
+  // row per part and a column per coloring zone.
+  renderPaint: function (paint) {
+    function esc(s) { return $('<span>').text(s).html(); }
+    if (!paint) return '<p class="lore-empty">No color scheme for this one yet.</p>';
+    var groups = paint.groups.map(function (g) {
+      var zones = Math.max.apply(null, g.parts.map(function (p) { return p.colors.length; }));
+      var head = '<th scope="col">Part</th>';
+      for (var i = 1; i <= zones; i++) head += '<th scope="col">Zone ' + i + '</th>';
+      var rows = g.parts.map(function (p) {
+        var cells = '';
+        for (var i = 0; i < zones; i++) cells += '<td>' + (p.colors[i] ? esc(p.colors[i]) : '') + '</td>';
+        return '<tr><th scope="row">' + esc(p.part) + '</th>' + cells + '</tr>';
+      }).join('');
+      return (
+        '<div class="paint-group skill-card">' +
+          '<div class="lore-card-title">' + esc(g.kind) + (g.scheme ? '<span class="paint-scheme">' + esc(g.scheme) + '</span>' : '') + '</div>' +
+          (g.desc ? '<div class="lore-text"><p>' + esc(g.desc) + '</p></div>' : '') +
+          '<div class="paint-table-wrap"><table class="paint-table"><thead><tr>' + head + '</tr></thead><tbody>' + rows + '</tbody></table></div>' +
+        '</div>'
+      );
+    }).join('');
+    var cnHtml = paint.cn ? '<p class="lore-note">Not on Global yet: these are the CN client\'s, and colors Global doesn\'t have yet are untranslated.</p>' : '';
+    return cnHtml + '<div class="paint-groups">' + groups + '</div>';
   }
 };
 
