@@ -337,7 +337,7 @@ var Glossary = (function () {
     var $tip = $('<div id="kw-tooltip" role="tooltip"></div>').appendTo('body');
     var tipEl = null;
 
-    function showTip(el, type, id, entry) {
+    function showTip(el, type, id, entry, e) {
       var statsHtml = '';
       if (type === 'skill' && (entry.Ap != null || entry.CD != null)) {
         var parts = [];
@@ -387,7 +387,7 @@ var Glossary = (function () {
       ).addClass('visible');
 
       tipEl = el;
-      positionTip(el, $tip);
+      positionTip(el, $tip, e);
     }
 
     // A faded-out tip is still laid out at its last spot, which on a shorter
@@ -403,16 +403,16 @@ var Glossary = (function () {
       }, 150);
     }
 
-    $(document).on('mouseenter', '.kw', function () {
+    $(document).on('mouseenter', '.kw', function (e) {
       var type  = $(this).data('kw-type');
       var id    = String($(this).data('kw-id'));
       var entry = lookup(type, id);
       if (!entry) return;
-      showTip(this, type, id, entry);
+      showTip(this, type, id, entry, e);
     });
 
-    $(document).on('mousemove', '.kw', function () {
-      if (tipEl === this) positionTip(this, $tip);
+    $(document).on('mousemove', '.kw', function (e) {
+      if (tipEl === this) positionTip(this, $tip, e);
     });
 
     $(document).on('mouseleave', '.kw', function () {
@@ -457,12 +457,45 @@ var Glossary = (function () {
     });
   }
 
-  function positionTip(el, $tip) {
-    var rect   = el.getBoundingClientRect();
+  // Hover devices: beside the keyword (right, else left), vertically centred
+  // on it, so a tall tip never runs off the bottom of the page. Touch devices
+  // keep the tap placement below/above the keyword.
+  var canHover = window.matchMedia && window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+
+  function positionTip(el, $tip, e) {
     var tipH   = $tip.outerHeight();
     var tipW   = $tip.outerWidth();
     var winH   = $(window).height();
     var winW   = $(window).width();
+
+    if (canHover) {
+      // A keyword wrapped over two lines has two boxes; use the one under the
+      // cursor (else the first) so the tip sits beside the visible word.
+      var rects = el.getClientRects();
+      var r = rects[0] || el.getBoundingClientRect();
+      if (e && rects.length > 1) {
+        for (var i = 0; i < rects.length; i++) {
+          if (e.clientY >= rects[i].top && e.clientY <= rects[i].bottom) { r = rects[i]; break; }
+        }
+      }
+      var gap = 8, edge = 12;
+      var sx;
+      if (r.right + gap + tipW <= winW - edge) {
+        sx = r.right + gap;
+      } else if (r.left - gap - tipW >= edge) {
+        sx = r.left - gap - tipW;
+      } else {
+        // Neither side fits whole: take the roomier one, kept on screen.
+        sx = (winW - r.right > r.left) ? r.right + gap : r.left - gap - tipW;
+        sx = Math.max(edge, Math.min(sx, winW - tipW - edge));
+      }
+      var sy = r.top + r.height / 2 - tipH / 2;
+      sy = Math.max(edge, Math.min(sy, winH - tipH - edge));
+      $tip.css({ top: sy + window.scrollY, left: sx + window.scrollX });
+      return;
+    }
+
+    var rect   = el.getBoundingClientRect();
     var left   = rect.left + window.scrollX;
     var top;
 
