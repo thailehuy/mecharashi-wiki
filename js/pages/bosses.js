@@ -448,7 +448,7 @@ function bossKit() {
     return 'boss-' + String(name).normalize('NFKD').replace(/\p{M}/gu, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
   }
 
-  function bossHref(name) { return App.href('bosses') + '#' + bossAnchor(name); }
+  function bossHref(name) { return App.href('allbosses') + '#' + bossAnchor(name); }
 
   return {
     data: data, bosses: bosses, esc: esc, pilotById: pilotById,
@@ -459,6 +459,7 @@ function bossKit() {
 
 Pages.armedconquest = {
   title: 'Armed Conquest',
+  nav: 'bosses',
 
   // param: a season name (its own page with every boss's skills).
   render: function (param) {
@@ -480,11 +481,12 @@ Pages.armedconquest = {
     }).join('');
 
     return (
+      '<a href="' + App.href('bosses') + '" class="btn-back">&#8592; Back to Bosses</a>' +
       '<div class="listing-header"><h1>Armed Conquest</h1></div>' +
       '<p class="dispatch-intro">Bosses of each Armed Conquest season, newest first. ' +
         'The number on each portrait is the stage. Bosses marked <b>Pilot</b> are also playable. ' +
         'Pick a difficulty to see the bosses\' HP on it, or open a season (or a boss) for its bosses\' skills. ' +
-        'See <a href="' + App.href('bosses') + '">Bosses</a> for every boss and where else it appears.</p>' +
+        'See <a href="' + App.href('allbosses') + '">All Bosses</a> for every boss and where else it appears.</p>' +
       seasons
     );
   },
@@ -496,6 +498,7 @@ Pages.armedconquest = {
 
 Pages.clearanceops = {
   title: 'Clearance Ops',
+  nav: 'bosses',
 
   // param: a chapter name (its own page with every boss's skills).
   render: function (param) {
@@ -518,11 +521,12 @@ Pages.clearanceops = {
     }).join('');
 
     return (
+      '<a href="' + App.href('bosses') + '" class="btn-back">&#8592; Back to Bosses</a>' +
       '<div class="listing-header"><h1>Clearance Ops</h1></div>' +
       '<p class="dispatch-intro">Bosses of every Clearance Ops chapter, newest first, with each chapter\'s turn limit. ' +
         'The number on each portrait is the stage. Bosses marked <b>Pilot</b> are also playable. ' +
         'Open a chapter (or a boss) for its bosses\' skills. ' +
-        'See <a href="' + App.href('bosses') + '">Bosses</a> for every boss and where else it appears.</p>' +
+        'See <a href="' + App.href('allbosses') + '">All Bosses</a> for every boss and where else it appears.</p>' +
       chapters
     );
   },
@@ -532,8 +536,9 @@ Pages.clearanceops = {
   },
 };
 
-Pages.bosses = {
-  title: 'Bosses',
+Pages.allbosses = {
+  title: 'All Bosses',
+  nav: 'bosses',
 
   render: function () {
     var k   = bossKit();
@@ -584,13 +589,44 @@ Pages.bosses = {
     }).join('');
 
     return (
-      '<div class="listing-header"><h1>Bosses</h1></div>' +
+      '<a href="' + App.href('bosses') + '" class="btn-back">&#8592; Back to Bosses</a>' +
+      '<div class="listing-header"><h1>All Bosses</h1></div>' +
       '<p class="dispatch-intro">Every boss of <a href="' + App.href('armedconquest') + '">Armed Conquest</a> and ' +
         '<a href="' + App.href('clearanceops') + '">Clearance Ops</a>, A–Z, with each stage it\'s in and the ST it fields there. ' +
         'Bosses marked <b>Pilot</b> are also playable; their name links to the pilot.</p>' +
       '<div class="row g-3">' + cards + '</div>'
     );
   },
+};
+
+// The Bosses page: a card for each boss page.
+Pages.bosses = {
+  title: 'Bosses',
+
+  _pages: [
+    { page: 'armedconquest', name: 'Armed Conquest', icon: 'bi-flag',
+      desc: 'Bosses and HP per difficulty of every season, each with a page of its bosses’ skills' },
+    { page: 'clearanceops', name: 'Clearance Ops', icon: 'bi-bullseye',
+      desc: 'Bosses and HP of every chapter, each with a page of its bosses’ skills' },
+    { page: 'allbosses', name: 'All Bosses', icon: 'bi-list-ul',
+      desc: 'Every boss A–Z, with each stage it’s in and the ST it fields there' },
+  ],
+
+  render: function () {
+    return (
+      '<div class="listing-header"><h1>Bosses</h1></div>' +
+      '<div class="home-nav-cards">' + this._pages.map(function (m) {
+        return (
+          '<a href="' + App.href(m.page) + '" class="home-card">' +
+            '<div class="home-card-title"><i class="bi ' + m.icon + '"></i> ' + m.name + '</div>' +
+            '<div class="home-card-desc">' + m.desc + '</div>' +
+          '</a>'
+        );
+      }).join('') + '</div>'
+    );
+  },
+
+  destroy: function () {}
 };
 
 window.Pages = Pages;

@@ -11,6 +11,7 @@ var PILOTSTATS_COLUMNS = [
 
 Pages.pilotstats = {
   title: 'Pilot Stats Table',
+  nav: 'upgrades',
 
   _activeRanks: {},
   _sortKey:     'Combat',
@@ -44,6 +45,7 @@ Pages.pilotstats = {
       }).join('');
 
     var html = (
+      '<a href="' + App.href('upgrades') + '" class="btn-back">&#8592; Back to Upgrades</a>' +
       '<div class="listing-header d-flex align-items-center">' +
         '<h1>Pilot Stats Table</h1>' +
         '<span class="badge bg-secondary ms-3" id="pilotstats-count">' + rows.length + '</span>' +

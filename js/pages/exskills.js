@@ -5,6 +5,7 @@ var EXSKILL_TYPE_CLASS = { Active: 'skill-type-attack', Code: 'skill-type-code' 
 
 Pages.exskills = {
   title: 'EX Skills',
+  nav: 'glossary',
 
   render: function () {
     var skills = (window.ExSkillsData || {}).exskills || [];
@@ -46,6 +47,7 @@ Pages.exskills = {
     }).join('');
 
     return (
+      '<a href="' + App.href('glossary') + '" class="btn-back">&#8592; Back to Glossary</a>' +
       '<div class="listing-header"><h1>EX Skills</h1><span class="badge bg-secondary ms-3">' + skills.length + '</span></div>' +
       '<p class="dispatch-intro">Weapon-type basic attacks usable by any pilot, identical to their normal namesake counterpart.</p>' +
       '<div class="skill-list">' + cardsHtml + '</div>'

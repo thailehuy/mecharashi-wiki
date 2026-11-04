@@ -32,7 +32,7 @@
 
   <!-- Shown while the data scripts at the bottom of the page download; js/app.js removes it.
        data-scripts must equal the number of <script src> tags below (a console warning says when it doesn't). -->
-  <div id="page-loader" data-scripts="51" role="progressbar" aria-label="Loading data" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+  <div id="page-loader" data-scripts="54" role="progressbar" aria-label="Loading data" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
     <div class="page-loader-box">
       <div class="page-loader-text">Loading data ...</div>
       <div class="page-loader-track"><div class="page-loader-bar"></div></div>
@@ -123,24 +123,16 @@
         <a class="nav-link nav-drawer-item" href="backpacks/" data-page="backpacks"><i class="bi bi-backpack"></i>Backpacks</a>
         <a class="nav-link nav-drawer-item" href="accessories/" data-page="accessories"><i class="bi bi-gear"></i>Accessories</a>
         <a class="nav-link nav-drawer-item" href="modules/" data-page="modules"><i class="bi bi-cpu"></i>Modules</a>
-        <div class="nav-drawer-group-label">Misc.</div>
-        <a class="nav-link nav-drawer-item nav-drawer-subitem" href="dispatch/" data-page="dispatch"><i class="bi bi-calendar3"></i>Dispatch</a>
-        <a class="nav-link nav-drawer-item nav-drawer-subitem" href="armedconquest/" data-page="armedconquest"><i class="bi bi-flag"></i>Armed Conquest</a>
-        <a class="nav-link nav-drawer-item nav-drawer-subitem" href="clearanceops/" data-page="clearanceops"><i class="bi bi-bullseye"></i>Clearance Ops</a>
-        <a class="nav-link nav-drawer-item nav-drawer-subitem" href="expansionops/" data-page="expansionops"><i class="bi bi-compass"></i>Expansion Ops</a>
-        <a class="nav-link nav-drawer-item nav-drawer-subitem" href="covertphantom/" data-page="covertphantom"><i class="bi bi-incognito"></i>Covert Phantom</a>
-        <a class="nav-link nav-drawer-item nav-drawer-subitem" href="refactorincrisis/" data-page="refactorincrisis"><i class="bi bi-arrow-repeat"></i>Refactor-in-Crisis</a>
-        <a class="nav-link nav-drawer-item nav-drawer-subitem" href="shops/" data-page="shops"><i class="bi bi-shop"></i>Shops</a>
-        <a class="nav-link nav-drawer-item nav-drawer-subitem" href="banners/" data-page="banners"><i class="bi bi-stars"></i>Banner List</a>
-        <a class="nav-link nav-drawer-item nav-drawer-subitem" href="ststats/" data-page="ststats"><i class="bi bi-table"></i>ST Stats Table</a>
-        <a class="nav-link nav-drawer-item nav-drawer-subitem" href="pilotstats/" data-page="pilotstats"><i class="bi bi-person-lines-fill"></i>Pilot Stats Table</a>
-        <a class="nav-link nav-drawer-item nav-drawer-subitem" href="builder/" data-page="builder"><i class="bi bi-tools"></i>Builder</a>
-        <a class="nav-link nav-drawer-item nav-drawer-subitem" href="rdbonus/" data-page="rdbonus"><i class="bi bi-graph-up-arrow"></i>R&amp;D Bonus</a>
-        <a class="nav-link nav-drawer-item nav-drawer-subitem" href="features/" data-page="features"><i class="bi bi-diagram-3"></i>Features</a>
-        <a class="nav-link nav-drawer-item nav-drawer-subitem" href="bosses/" data-page="bosses"><i class="bi bi-fire"></i>Bosses</a>
-        <a class="nav-link nav-drawer-item nav-drawer-subitem" href="effects/" data-page="effects"><i class="bi bi-shield-plus"></i>Effects</a>
-        <a class="nav-link nav-drawer-item nav-drawer-subitem" href="exskills/" data-page="exskills"><i class="bi bi-lightning-charge"></i>EX Skills</a>
-        <a class="nav-link nav-drawer-item nav-drawer-subitem" href="dmgcalc/"><i class="bi bi-calculator"></i>DMG Calc (Beta)</a>
+        <a class="nav-link nav-drawer-item" href="banners/" data-page="banners"><i class="bi bi-stars"></i>Banner List</a>
+        <a class="nav-link nav-drawer-item" href="bosses/" data-page="bosses"><i class="bi bi-fire"></i>Bosses</a>
+        <a class="nav-link nav-drawer-item" href="dispatch/" data-page="dispatch"><i class="bi bi-calendar3"></i>Dispatch</a>
+        <a class="nav-link nav-drawer-item" href="shops/" data-page="shops"><i class="bi bi-shop"></i>Shops</a>
+        <a class="nav-link nav-drawer-item" href="upgrades/" data-page="upgrades"><i class="bi bi-arrow-up-circle"></i>Upgrades</a>
+        <a class="nav-link nav-drawer-item" href="expansionops/" data-page="expansionops"><i class="bi bi-compass"></i>Expansion Ops</a>
+        <a class="nav-link nav-drawer-item" href="covertphantom/" data-page="covertphantom"><i class="bi bi-incognito"></i>Covert Phantom</a>
+        <a class="nav-link nav-drawer-item" href="refactorincrisis/" data-page="refactorincrisis"><i class="bi bi-arrow-repeat"></i>Refactor-in-Crisis</a>
+        <a class="nav-link nav-drawer-item" href="calculator/" data-page="calculator"><i class="bi bi-calculator"></i>Calculator</a>
+        <a class="nav-link nav-drawer-item" href="glossary/" data-page="glossary"><i class="bi bi-journal-text"></i>Glossary</a>
       </div>
       <div class="nav-drawer-footer">
         <a class="cn-wiki-link" href="https://gitfenix1113.github.io/mecharashi-tools/" target="_blank" rel="noopener">CN/TW Wiki ↗</a>
@@ -204,6 +196,9 @@
   <script src="js/pages/bosses.js"></script>
   <script src="js/pages/effects.js"></script>
   <script src="js/pages/expansionops.js"></script>
+  <script src="js/pages/upgrades.js"></script>
+  <script src="js/pages/glossary.js"></script>
+  <script src="js/pages/calculator.js"></script>
   <script src="js/pages/elitebattle.js"></script>
   <script src="js/pages/simulatedbattle.js"></script>
   <script src="js/pages/covertphantom.js"></script>

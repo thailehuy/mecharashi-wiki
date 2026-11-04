@@ -5,6 +5,7 @@ var FEATURE_MONEY = 'GameMoney';
 
 Pages.features = {
   title: 'Features',
+  nav: 'upgrades',
 
   _esc: function (s) { return $('<span>').text(s).html(); },
 
@@ -66,6 +67,7 @@ Pages.features = {
     var d = window.FeaturesData || {};
     var same = function (n) { return n; };
     return (
+      '<a href="' + App.href('upgrades') + '" class="btn-back">&#8592; Back to Upgrades</a>' +
       '<div class="listing-header"><h1>Features</h1></div>' +
       '<p class="dispatch-intro">Every R&amp;D feature, unlocked from the R&amp;D trees and equipped in the ST loadout\'s feature ports: ' +
         'three for the pilot, three for the ST and three for the weapons. <b>Port</b> is the feature port it fits (I, II or III). ' +

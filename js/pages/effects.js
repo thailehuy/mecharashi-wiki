@@ -28,6 +28,7 @@ var EFFECT_INTROS = {
 
 Pages.effects = {
   title: 'Effects',
+  nav: 'glossary',
   _loading: null,
   _query: '',
   _types: {},
@@ -246,6 +247,7 @@ Pages.effects = {
       });
     }
     return (
+      '<a href="' + App.href('glossary') + '" class="btn-back">&#8592; Back to Glossary</a>' +
       '<div class="listing-header d-flex align-items-center"><h1>Effects</h1></div>' +
       '<nav class="effect-tabs">' + tabs + '</nav>' +
       '<p class="dispatch-intro">' + EFFECT_INTROS[tab] + ' One row per name, from the glossary\'s keywords and the effects ' +

@@ -18,6 +18,7 @@ var STSTATS_POSITION_EN = { '躯干': 'Body', '左臂': 'L-Arm', '右臂': 'R-Ar
 
 Pages.ststats = {
   title: 'ST Stats Table',
+  nav: 'upgrades',
 
   _activeTypes: {},
   _sortKey:     'firepower',
@@ -67,6 +68,7 @@ Pages.ststats = {
       }).join('');
 
     var html = (
+      '<a href="' + App.href('upgrades') + '" class="btn-back">&#8592; Back to Upgrades</a>' +
       '<div class="listing-header d-flex align-items-center">' +
         '<h1>ST Stats Table</h1>' +
         '<span class="badge bg-secondary ms-3" id="ststats-count">' + rows.length + '</span>' +

@@ -84,6 +84,7 @@ var BUILDER_PILOT_DETAIL_GROUPS = ['skill:0', 'skill:1', 'skill:2', 'exskill'];
 
 Pages.builder = {
   title: 'Builder',
+  nav: 'calculator',
 
   _pilotId:        null,
   _mechId:         null,
@@ -131,6 +132,7 @@ Pages.builder = {
     this._resetExpanded();
 
     var html = (
+      '<a href="' + App.href('calculator') + '" class="btn-back">&#8592; Back to Calculator</a>' +
       '<div class="listing-header"><h1>Builder</h1></div>' +
       '<p class="dispatch-intro">Pick a pilot and one of their license-matching S-rank STs, then assign skills and equipment to check the build\'s weight budget. Hover a filled slot to see its effect, or expand a panel to see everything at once.</p>' +
       '<div class="builder-uid-row">' +

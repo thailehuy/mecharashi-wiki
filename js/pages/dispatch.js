@@ -74,6 +74,10 @@ Pages.dispatch = {
       '</div>'
     );
 
+    // "dispatch/#calculator" (linked from the Calculator page) opens the calculator tab.
+    if (window.location.hash === '#calculator') {
+      setTimeout(function () { Lore._show($('.dispatch-tabs > .detail-tabs-wrap'), 'calculator'); });
+    }
     return (
       '<div class="listing-header"><h1>Dispatch</h1></div>' +
       '<div class="dispatch-tabs">' +

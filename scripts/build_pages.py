@@ -331,10 +331,14 @@ MISC_DESCRIPTIONS = {
     'builder':    'Theorycraft an ST loadout (pilot, skills, weapons, backpack and modules) and share it as a link.',
     'rdbonus':    'Maximum R&D bonuses for pilots, STs and weapons from a fully researched tree.',
     'features':   'Every R&D feature for pilots, STs and weapons, by class and R&D tree.',
-    'bosses':     'Every Armed Conquest and Clearance Ops boss, with the seasons and chapters it appears in.',
+    'bosses':     'Armed Conquest, Clearance Ops and every boss: seasons, chapters, HP and skills.',
+    'allbosses':  'Every Armed Conquest and Clearance Ops boss, with the seasons and chapters it appears in.',
     'effects':    'Every buff, debuff and other effect, with each pilot, ST, weapon, backpack and boss that carries it and through which skill.',
     'armedconquest': 'Bosses and HP per difficulty of every Armed Conquest season, each with a page of its bosses\' skills.',
     'clearanceops':  'Bosses and HP of every Clearance Ops chapter, each with a page of its bosses\' skills.',
+    'calculator':    'Theorycraft and share an ST loadout, compare damage against a boss, and plan when your next dispatch ST completes.',
+    'glossary':      'Every buff, debuff and other effect, and the universal EX skills for each weapon type.',
+    'upgrades':      'ST and pilot stats tables, maximum R&D bonuses and every R&D feature.',
     'expansionops':  'Elite Battle, Simulated Battle, Memory Storm and Frontier Trial: every stage, its conditions and rewards.',
     'frontiertrial': 'Every Frontier Trial stage with its grade conditions and first-clear and repeat rewards per formation type.',
     'elitebattle':   'Every Elite Battle stage with its win and star conditions, achievements and rewards.',
@@ -345,19 +349,29 @@ MISC_DESCRIPTIONS = {
 }
 
 
-# Misc. pages reached through a hub page (Expansion Ops) instead of the nav,
+# Pages reached through a hub page (Expansion Ops, Upgrades, Bosses, Glossary, Calculator) instead of the nav,
 # so route_titles() doesn't see them.
 HUB_ROUTES = {
     'elitebattle':     'Elite Battle',
     'simulatedbattle': 'Simulated Battle',
     'memorystorm':     'Memory Storm',
     'frontiertrial':   'Frontier Trial',
+    'ststats':         'ST Stats Table',
+    'pilotstats':      'Pilot Stats Table',
+    'rdbonus':         'R&D Bonus',
+    'features':        'Features',
+    'armedconquest':   'Armed Conquest',
+    'clearanceops':    'Clearance Ops',
+    'allbosses':       'All Bosses',
+    'effects':         'Effects',
+    'exskills':        'EX Skills',
+    'builder':         'Builder',
 }
 
 
 def misc_routes(index_html):
-    """Routes linked under the "Misc." nav group in index.html, and those reached through its hubs."""
-    return re.findall(r'class="[^"]*\bnav-drawer-subitem\b[^"]*" href="\w+/" data-page="(\w+)"', index_html) + list(HUB_ROUTES)
+    """Routes whose generated page gets its own preview description."""
+    return list(MISC_DESCRIPTIONS)
 
 
 def page_html(index_html, depth, title, description=None, image=None, url=None):

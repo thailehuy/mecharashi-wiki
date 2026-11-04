@@ -53,6 +53,7 @@ var RD_WEAPON_TYPES = [
 
 Pages.rdbonus = {
   title: 'R&D Bonus',
+  nav: 'upgrades',
 
   _flat: function (stat) {
     return stat ? '+' + Math.round(stat.total).toLocaleString('en-US') : '–';
@@ -147,6 +148,7 @@ Pages.rdbonus = {
 
     return (
       '<div id="rd-page">' +
+        '<a href="' + App.href('upgrades') + '" class="btn-back">&#8592; Back to Upgrades</a>' +
         '<div class="listing-header"><h1>R&amp;D Bonus</h1></div>' +
         '<p class="ac-section-footnote rd-intro">Maximum bonuses from a fully researched R&amp;D tree. Flat values are added before percentage bonuses.</p>' +
         nav +
