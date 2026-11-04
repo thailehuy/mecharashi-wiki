@@ -4801,12 +4801,27 @@ a.boss-avatar { display: block; }
   .buff-count { display: inline; margin-right: 0.6rem; }
 }
 
-/* AI Help page */
-.aihelp { max-width: 820px; }
+/* AI Help page: a dark panel, as the text would otherwise sit on the bright body art */
+.aihelp {
+  max-width: 820px;
+  background: #1a1a20;
+  border: 1px solid #2a2a4a;
+  border-radius: 10px;
+  padding: 1.5rem;
+  color: #e0e0e0;
+}
+.aihelp h2 { color: #fff; }
+.aihelp .text-muted { color: #a8a8b8 !important; }
+.aihelp code { color: #f4a3b2; background: #26263a; padding: .1em .35em; border-radius: 4px; }
+.aihelp a:not(.btn) { color: #7fb4ff; }
+.aihelp .btn-outline-secondary { color: #e0e0e0; border-color: #555; }
+.aihelp .btn-outline-secondary:hover { background: #2a2a4a; color: #fff; }
 .aihelp-prompt {
   white-space: pre-wrap;
   padding: .75rem 1rem;
   border-radius: 6px;
-  background: rgba(127, 127, 127, .12);
+  background: #0f0f14;
+  border: 1px solid #2a2a4a;
+  color: #e0e0e0;
   margin-bottom: .5rem;
 }
