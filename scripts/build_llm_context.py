@@ -184,7 +184,7 @@ def mechs(out):
     out.append(f'# STs (mechs) ({len(M)})\n')
     for m in sorted(M, key=lambda m: m['name']):
         out.append(f'## ST: {m["name"]}')
-        line = (f'Rarity {m["quality"]} | Weight class {m["type"]} | Firepower {m.get("output")} | '
+        line = (f'Rarity {m["quality"]} | Weight class {m["type"]} | Firepower {m.get("manjiFirepower") or m.get("fire")} | ST Power {m.get("output")} | '
                 f'Added in v{m.get("version", "?")} | ID {m["ID"]}')
         if m.get('dispatchGroup'):
             line += f' | Dispatch group {m["dispatchGroup"]} (v{m.get("dispatchVersion", "?")})'
@@ -194,6 +194,13 @@ def mechs(out):
         img = image(f'data/unlisted/mechs/Icon/{m["type"]}/{m["icon"]}.png')
         if img:
             out.append(f'Picture: {img}')
+        # Equipment budget and slots as the Builder (js/pages/builder.js) works them out.
+        parts_wt = sum(int(pt.get('aircraftWeight') or 0) for pt in m.get('parts', []))
+        out.append(f'Weight budget for equipment: {int(m.get("output") or 0) - parts_wt} '
+                   f'(ST Power {m.get("output")} minus parts weight {parts_wt})')
+        out.append('Equipment slots: L Hand, R Hand, Back (a backpack OR a back/tactical weapon)' +
+                   (', L Shoulder, R Shoulder' if m['type'] == 'Medium' else '') +
+                   ' | Module slots: 4 (Body, L-Arm, R-Arm, Legs)')
         for pt in m.get('parts', []):
             st = ', '.join(f'{k} {pt[k]}' for k, lbl in [('aircraftWeight', 0), ('maxHp', 0), ('Armor', 0), ('Hit', 0), ('Dodge', 0), ('Antiriot', 0)] if pt.get(k))
             out.append(f'- Part {pt["position"]}: {st.replace("aircraftWeight", "Weight").replace("maxHp", "HP").replace("Antiriot", "Anti-riot")}')
@@ -207,13 +214,22 @@ def mechs(out):
         out.append('')
 
 
+SLOT_LABEL = {
+    'Hand': 'one hand',
+    'DoubleHand': 'both hands (two-handed)',
+    'Back': 'back (tactical weapon)',
+    'Shoulder': 'shoulder',
+}
+
+
 def weapons(out):
     W = load('data/weapons/compiled.json')['weapons']
     out.append(f'# Weapons ({len(W)})\n')
     for w in sorted(W, key=lambda w: w['name']):
         out.append(f'## Weapon: {w["name"]}')
+        slot = w.get('RestrictionsPositionOfWeapon')
         bits = [f'Rarity {w["quality"]}', f'Type {w["type"]} ({w.get("WeaponType1", "")})',
-                f'Slot {w.get("RestrictionsPositionOfWeapon")}', f'For {w.get("LimitedModelOfWeapon")} STs',
+                f'Slot {SLOT_LABEL.get(slot, slot)}', f'For {w.get("LimitedModelOfWeapon")} STs',
                 f'Range {w.get("range")}', f'Weight {w.get("WeaponWeight")}', f'Base ATK {w.get("WeaponBasicAttackingPower")}']
         if w.get('ShieldbloodBase'):
             bits.append(f'Shield {w["ShieldbloodBase"]}')
@@ -281,6 +297,77 @@ def accessories(out):
         if a.get('notes'):
             out.append('Notes: ' + text(a['notes']))
         out.append('')
+    equipment_rules(out)
+    chains(out)
+
+
+def equipment_rules(out):
+    """The loadout rules the wiki Builder enforces (js/pages/builder.js)."""
+    out.append('# Equipment rules: weight, slots and modules (as the wiki Builder applies them)\n')
+    out.append(f'''Weight
+- Each ST entry gives its "Weight budget for equipment": ST Power minus the weight of its 4 parts.
+- Everything equipped (hand weapons, the back item, shoulder weapons) must add up to no more than
+  that budget. A two-handed weapon is one item: count its weight once, not per hand.
+- Raising the budget: a backpack whose skill "gains an additional N Power" (e.g. Raider, the
+  Power Amplifier line) adds N; the Power Mod module ("ST Power +N") adds N at its level.
+- Pilot talents that lower an item's weight or unlock it on other ST weight classes:
+  Vincenza: Rail Guns -360 weight, and usable on any ST weight class.
+  Martini: Manipulator (Heal) backpacks -300 weight, and usable on any ST weight class.
+  Kelly: Heavy Sniper Rifles -15% weight.  Rosemary, Hardaway: Rockets -130 weight.
+  Grant: Heavy Machine Guns -200 weight.
+  After the talent is upgraded (rank 3+) only: Eileen: Rockets -130; Rosa: Machine Guns -80;
+  Rebecca: Shotguns -125.
+
+Equipment slots (every ST)
+- L Hand and R Hand: one-handed weapons, one per hand. A two-handed weapon takes both hands.
+- Back: ONE item, either a backpack or a back (tactical) weapon such as a Rail Gun or Funnel,
+  never both.
+- L Shoulder and R Shoulder: Medium STs only, for shoulder weapons (Missiles, Rockets).
+- An item must also allow the ST's weight class: a weapon's "For ... STs", a backpack's "For ... STs".
+- Raider backpack: its Weapon Switch code carries 2 spare hand weapons (Extra 1 and Extra 2) that
+  can be swapped in. They don't add to the equipped weight, but each must fit the budget alone.
+
+Modules
+- An ST carries 4 modules, one per part: Body, L-Arm, R-Arm and Legs. Its own fixed modules are
+  listed in its entry; the slots take modules from the Modules section.
+- Putting the same module in several slots adds their levels together, up to that module's max level.
+- REV-02 counts its Body and Legs module slots double.
+
+See the Builder to try a loadout: {url("builder")}
+''')
+
+
+def chains(out):
+    """Every TA and RA with its probability factor, weapon types and limits, so
+    an AI can work out a pairing's trigger chance (as the Builder does)."""
+    D = load('data/accessories/chain-traits.json')
+    tas, ras, blocked = D['ta'], D['ra'], D['blocked']
+    out.append('# Accessory chains: trigger chance of a TA + RA pair\n')
+    out.append(
+        'A weapon has 4 accessory slots holding Triggers (TA) and Reactions (RA), at least 1 of each.\n'
+        'Every TA on a weapon can set off every RA on the same weapon; each pair has its own chance:\n\n'
+        '    chance = min(100%, 40% / (TA factor x RA factor))\n\n'
+        'Example: TA factor 0.8 with RA factor 1.25 -> 40% / 1.0 = 40%. TA 0.8 with RA 1.0 -> 50%.\n'
+        'A lower factor means a higher chance. A pair cannot chain at all (0%) if they share no\n'
+        'weapon type in "Fits", or if the pair is on the TA\'s "Never chains with" list.\n'
+        'Stacking: a TA/RA effect never stacks across weapons when one attack uses both or all\n'
+        'weapons (only one copy applies), but each weapon\'s chains are rolled separately, per weapon.\n'
+        'This is the same formula the wiki Builder (' + url('builder') + ') uses, checked against the game data.\n')
+    out.append('## Triggers (TA)')
+    for tid, t in sorted(tas.items(), key=lambda kv: kv[1]['name']):
+        line = f'- **{t["name"]}** (ID {tid}, factor {t["factor"]}): trigger "{text(t.get("trigger"))}" | Fits: {", ".join(t.get("fits", []))}'
+        if t.get('restriction'):
+            line += ' | Limits: ' + text(t['restriction']).replace('■ ', '')
+        if blocked.get(tid):
+            line += ' | Never chains with: ' + ', '.join(ras[r]['name'] if r in ras else r for r in blocked[tid])
+        out.append(line)
+    out.append('\n## Reactions (RA)')
+    for rid, r in sorted(ras.items(), key=lambda kv: kv[1]['name']):
+        line = f'- **{r["name"]}** (ID {rid}, factor {r["factor"]}): effect "{text(r.get("effect"))}" | Fits: {", ".join(r.get("fits", []))}'
+        if r.get('restriction'):
+            line += ' | Limits: ' + text(r['restriction']).replace('■ ', '')
+        out.append(line)
+    out.append('')
 
 
 def effects(out):
@@ -400,7 +487,21 @@ RULES FOR ANSWERING (follow these whenever you use this file):
 4. Splash DMG is NOT AoE DMG. They are different mechanics: never treat
    "Splash" and "AoE" as the same, and never count a Splash bonus as an AoE
    bonus or the other way round.
-5. Answer from this file only. If it doesn't have the answer, say so rather
+5. Weapon slots: each weapon's "Slot" says where it mounts. Rail Guns (and
+   other back weapons) are tactical weapons in the back slot, not hand
+   weapons; check a weapon's Slot and "For ... STs" before recommending it.
+6. Accessories: compare TA + RA options with the formula in the "Accessory
+   chains" section (chance = min(100%, 40% / (TA factor x RA factor))).
+   The same accessory effect does NOT stack across weapons when an attack
+   uses both or all weapons (only one copy applies), but each weapon's
+   chains are rolled separately, per weapon.
+7. Loadouts: before recommending any weapon, backpack or module set for an
+   ST, check it fits. Follow the "Equipment rules" section (the wiki
+   Builder's rules): the equipment's total weight must not exceed the ST's
+   "Weight budget for equipment"; each item must fit an equipment slot the
+   ST has and be allowed on its weight class ("For ... STs"); and an ST
+   carries 4 modules, one per part. Add up the weights and show the total.
+8. Answer from this file only. If it doesn't have the answer, say so rather
    than guessing, and cite the wiki URL of every entry you rely on.
 
 How to read this file:
@@ -416,7 +517,7 @@ How to read this file:
 - Numbers are max-level values unless stated otherwise.
 
 Sections: Pilots, STs, Weapons, Backpacks, Modules, Accessories, Effects,
-Glossary, EX skills, Armed Conquest, Clearance Ops, Banners, Dispatch.
+Equipment rules, Accessory chains, Glossary, EX skills, Armed Conquest, Clearance Ops, Banners, Dispatch.
 """
 
 INDEX = """# Mecharashi Wiki

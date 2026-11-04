@@ -12,6 +12,11 @@ Pages.aihelp = {
     '- For ST efficiency, rank by damage bonuses first; raw stats come second.\n' +
     '- For ST/pilot pairing, put the pilot\'s Signature ST first, then STs whose modules boost that pilot\'s skills.\n' +
     '- Splash DMG is not AoE DMG. Never treat them as the same.\n' +
+    '- Check each weapon\'s Slot: Rail Guns are tactical weapons in the back slot.\n' +
+    '- Check every loadout against the "Equipment rules" section: total weight within the ST\'s weight budget, ' +
+    'each item in a slot the ST has and allowed on its weight class, and 4 modules per ST (one per part).\n' +
+    '- Compare accessories with the trigger chance formula in the "Accessory chains" section. ' +
+    'The same accessory effect does not stack across weapons in one attack, but each weapon rolls its chains separately.\n' +
     'Words in [square brackets] are game keywords: look them up in the Effects and Glossary sections. ' +
     'Give the wiki link of every pilot, ST or item you use. ' +
     'If the file does not contain the answer, say so instead of guessing.',
