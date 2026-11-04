@@ -4800,3 +4800,13 @@ a.boss-avatar { display: block; }
   .buff-table td.buff-carriers { padding-bottom: 0.6rem; }
   .buff-count { display: inline; margin-right: 0.6rem; }
 }
+
+/* AI Help page */
+.aihelp { max-width: 820px; }
+.aihelp-prompt {
+  white-space: pre-wrap;
+  padding: .75rem 1rem;
+  border-radius: 6px;
+  background: rgba(127, 127, 127, .12);
+  margin-bottom: .5rem;
+}
