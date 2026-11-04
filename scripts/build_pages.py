@@ -282,6 +282,17 @@ def elite_chapters():
                ASSET_URL + quote(f'data/elite/{c["image"]}.jpg'))
 
 
+def effect_pages():
+    # The Effects page's sub pages (effects/buffs/ ...), each with its count. Image: the site's.
+    data = load('data/effects/effects.json')
+    with open(os.path.join(ROOT, 'index.html'), encoding='utf-8') as f:
+        image = re.search(r'<meta property="og:image" content="([^"]+)"', f.read()).group(1)
+    for slug, kind, label in (('buffs', 'buff', 'Buffs'), ('debuffs', 'debuff', 'Debuffs'), ('other', 'other', 'Other effects')):
+        n = sum(1 for e in data['effects'] if e['kind'] == kind)
+        yield ('effects', slug, label + ' — Effects',
+               f'{n} {label.lower()}, with each pilot, ST, weapon, backpack and boss that carries it and through which skill.', image)
+
+
 def crisis_themes():
     data = load('data/crisis/crisis.json')
     for t in data['themes']:
@@ -321,6 +332,7 @@ MISC_DESCRIPTIONS = {
     'rdbonus':    'Maximum R&D bonuses for pilots, STs and weapons from a fully researched tree.',
     'features':   'Every R&D feature for pilots, STs and weapons, by class and R&D tree.',
     'bosses':     'Every Armed Conquest and Clearance Ops boss, with the seasons and chapters it appears in.',
+    'effects':    'Every buff, debuff and other effect, with each pilot, ST, weapon, backpack and boss that carries it and through which skill.',
     'armedconquest': 'Bosses and HP per difficulty of every Armed Conquest season, each with a page of its bosses\' skills.',
     'clearanceops':  'Bosses and HP of every Clearance Ops chapter, each with a page of its bosses\' skills.',
     'expansionops':  'Elite Battle, Simulated Battle, Memory Storm and Frontier Trial: every stage, its conditions and rewards.',
@@ -413,7 +425,7 @@ def main():
 
     count = 0
     for items in (pilots, mechs, weapons, backpacks, modules, ac_seasons, co_chapters, events, stories, elite_chapters,
-                  crisis_themes):
+                  crisis_themes, effect_pages):
         seen = {}
         for route, param, title, description, image in items():
             slug = slugify(param)

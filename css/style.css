@@ -4708,3 +4708,95 @@ a.boss-avatar { display: block; }
 .ric-missions .boss-drop-list { margin-top: 0; }
 .ric-card-n { color: #ffcf5c; font-variant-numeric: tabular-nums; }
 .ric-card-pros { color: #cbd5e1; font-size: 0.85rem; margin-top: 0.1rem; }
+
+/* Effects: Buffs / Debuffs / Other effects sub pages, a row per effect (numbered versions joined by a bar), a popup of its carriers. */
+.effect-tabs { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 1rem; }
+.effect-tab {
+  font-weight: 600;
+  padding: 0.4rem 1rem;
+  border-radius: 6px;
+  border: 1px solid #3a3a5a;
+  background-color: rgba(26, 26, 46, 0.85);
+  color: #a0a0c8;
+  text-decoration: none;
+}
+.effect-tab:hover { color: #e0e0ff; border-color: #7070b0; }
+.effect-tab.active { background-color: #e94560; border-color: transparent; color: #fff; }
+.effect-sub-title { font-size: 1.3rem; font-weight: 700; color: #e0e0ff; margin: 0.5rem 0 1rem; }
+.effect-sub-title .badge { font-size: 0.75rem; vertical-align: 3px; }
+.buff-variant { margin-top: 0.35rem; padding-top: 0.35rem; border-top: 1px dashed #2a2a4a; }
+.buff-variant-label { font-size: 0.62rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: #a0a0c0; background-color: #2a2a4a; border-radius: 3px; padding: 1px 5px; }
+.buff-table td { text-align: left; }
+.buff-table td.buff-carriers { white-space: nowrap; }
+.buff-name { font-weight: 600; color: #e0e0ff; min-width: 11rem; }
+.buff-name > span:first-child { margin-right: 0.4rem; }
+.buff-effect { font-size: 0.85rem; color: #c8c8d8; }
+.buff-row-open { cursor: pointer; }
+.buff-row-open:hover td, .buff-row-open:focus td { background-color: rgba(233, 69, 96, 0.08); }
+.buff-row-open:focus { outline: none; }
+.buff-fam > td:first-child { box-shadow: inset 3px 0 0 #6a5acd; }
+.buff-fam:not(.buff-fam-last) > td { border-bottom-color: #22223a; }
+.buff-fam:not(.buff-fam-first) > td { border-top-color: #22223a; }
+.buff-boss-tag { margin-left: 0.3rem; vertical-align: 2px; }
+.buff-count { display: block; font-size: 0.8rem; color: #a0a0c0; }
+.buff-count b { color: #e0e0ff; }
+.buff-none, .buff-empty { color: #6a6a8a; }
+.buff-empty { text-align: center !important; }
+
+.buff-modal .modal-content { background-color: #1a1a20; border: 1px solid #2a2a4a; }
+.buff-modal .modal-header { border-bottom-color: #2a2a4a; }
+.buff-modal .modal-title { color: #e0e0ff; }
+.buff-pop-effect {
+  font-size: 0.9rem;
+  color: #c8c8d8;
+  padding: 0.6rem 0.8rem;
+  margin-bottom: 1rem;
+  background-color: rgba(42, 42, 74, 0.45);
+  border-radius: 6px;
+}
+.buff-pop-group + .buff-pop-group { margin-top: 1rem; }
+.buff-pop-group h6 {
+  color: #e94560;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 0.8rem;
+  border-bottom: 1px solid #2a2a4a;
+  padding-bottom: 0.3rem;
+}
+.buff-pop-n { color: #a0a0c0; font-weight: 600; }
+.buff-units {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  gap: 0.5rem;
+}
+.buff-unit {
+  background-color: rgba(26, 26, 46, 0.85);
+  border: 1px solid #2a2a4a;
+  border-radius: 6px;
+  padding: 0.45rem 0.6rem;
+  min-width: 0;
+}
+.buff-unit-head { display: flex; align-items: center; gap: 0.5rem; }
+.buff-unit-img { width: 36px; height: 36px; object-fit: cover; object-position: top; border-radius: 4px; flex-shrink: 0; background-color: #12121c; }
+.buff-unit-img-st, .buff-unit-img-weapon, .buff-unit-img-backpack { object-fit: contain; object-position: center; }
+.buff-unit-name { font-weight: 600; color: #e0e0ff; overflow-wrap: anywhere; }
+.buff-unit-name a { color: #e0e0ff; text-decoration: none; }
+.buff-unit-name a:hover { color: #e94560; }
+.buff-unit-skills { list-style: none; padding: 0; margin: 0.35rem 0 0; font-size: 0.82rem; color: #c8c8d8; }
+.buff-unit-skills li + li { margin-top: 0.15rem; }
+.buff-src { font-size: 0.68rem; color: #a0a0c0; background-color: #2a2a4a; border-radius: 3px; padding: 0 5px; white-space: nowrap; }
+.buff-wheres { display: inline-flex; flex-wrap: wrap; gap: 0.25rem; }
+.buff-where { font-size: 0.7rem; color: #ffcf5c; text-decoration: none; border: 1px solid #4a4020; border-radius: 3px; padding: 0 4px; }
+.buff-where:hover { color: #ffe08a; border-color: #ffcf5c; }
+@media (max-width: 575.98px) {
+  .buff-table thead { display: none; }
+  .buff-table tr { display: block; border-bottom: 1px solid #2a2a4a; }
+  .buff-table td { display: block; border: 0 !important; padding: 0.3rem 0.75rem; }
+  .buff-table td.buff-name { padding-top: 0.6rem; }
+  .buff-table td.buff-carriers { padding-bottom: 0.6rem; }
+  .buff-count { display: inline; margin-right: 0.6rem; }
+}
