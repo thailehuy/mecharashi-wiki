@@ -29,9 +29,6 @@ jobs:
       # deploys even if scripts/compile.py wasn't run locally
       - run: python3 scripts/compile.py
 
-      # llms-full.txt / llms.txt: the whole wiki as text for AI assistants (AI Help page)
-      - run: python3 scripts/build_llm_context.py
-
       # ?v=<file hash> on index.html's local CSS/JS, so browsers don't pair
       # a new page with a cached old script or stylesheet after a deploy
       - run: python3 scripts/stamp_versions.py
@@ -48,7 +45,9 @@ jobs:
           sparse-checkout-cone-mode: false
 
       # Per-item copies of index.html with their own link-preview tags
-      - run: python3 scripts/build_pages.py && rm -rf .assets
+      # and llms-full.txt / llms.txt: the whole wiki as text for AI assistants
+      # (AI Help page); its Picture links also need the assets listing
+      - run: python3 scripts/build_pages.py && python3 scripts/build_llm_context.py && rm -rf .assets
         env:
           ASSETS_DIR: .assets
 

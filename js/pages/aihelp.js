@@ -6,9 +6,14 @@ Pages.aihelp = {
   title: 'AI Help',
 
   _prompt:
-    'The attached file is the full content of the Mecharashi Wiki. Answer my questions using only that file. ' +
-    'Words in [square brackets] are game keywords: look them up in its Effects and Glossary sections. ' +
-    'Name the pilots, STs or items you used and give their wiki links. ' +
+    'The attached file is the full content of the Mecharashi Wiki. Answer my questions using only that file, ' +
+    'and follow the "RULES FOR ANSWERING" at its top:\n' +
+    '- Only show pictures from the wiki itself (the file\'s "Picture:" links). Never use images from the web.\n' +
+    '- For ST efficiency, rank by damage bonuses first; raw stats come second.\n' +
+    '- For ST/pilot pairing, put the pilot\'s Signature ST first, then STs whose modules boost that pilot\'s skills.\n' +
+    '- Splash DMG is not AoE DMG. Never treat them as the same.\n' +
+    'Words in [square brackets] are game keywords: look them up in the Effects and Glossary sections. ' +
+    'Give the wiki link of every pilot, ST or item you use. ' +
     'If the file does not contain the answer, say so instead of guessing.',
 
   render: function () {
