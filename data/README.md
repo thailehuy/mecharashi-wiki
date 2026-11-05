@@ -250,6 +250,14 @@ pilot only needs its own γ partitions, `<pilotID>-gamma1` and
   `<ID>_ARM_L` / `<ID>_ARM_R` / `<ID>_LEGS` as part IDs.
 - `modules`: family + level from `modules.json`; that level must exist there.
 - `skins`: variant tokens of `data/unlisted/mechs/Skins/<Type>/Img_Skin_<wap-id>_<variant>.png`.
+  To find and add a new skin: the CN skin list is `ConfigDataWapPaintingPlanInfo` in
+  `mined/cn/out/stats.db` (rows whose `PaintingPanelPictureResource` is `Img_Skin_wap…`).
+  The art is all in the client install's `ui_uiimages_uiskinreward_abs.b`, not the
+  cache. Export it with `python scripts/extract_skin.py <wap>_<variant> --type <Type>`
+  (`--list` shows every skin in the bundle). Armament Kits have their own wap id
+  (Ranger's Undaunted Spirit is `wap3132`), so save them under the base ST's id with
+  `--as <base-wap>_S<n>`. The kit's base ST is in `ConfigDataWapTemplateInfo`, found by
+  `WapPaintingPlanId`.
 - `hidden_modules` (optional) is copied to the page as is.
 
 ### `modules.json`
