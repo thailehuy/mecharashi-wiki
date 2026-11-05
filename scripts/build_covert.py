@@ -45,7 +45,9 @@ ConfigDataRoguelikeTag*), the tech tree (ConfigDataRoguelikeTechnologyUnit,
 upgrade cost, currency and effect per level, in rows: each row unlocks after
 the units its PreUnlockInfo names, all in the rows above it) and the pilot
 masteries the in-run shop sells (ConfigDataRoguelikePilotExclusiveSkillInfo,
-with the pilot's portrait and the passive skill they teach).
+with the pilot's portrait and the passive skill they teach), and the mode's
+achievements (ConfigDataQuestInfo, QuestType_RoguelikeHighestDifficulty) with
+their rewards (DropReward -> ConfigDataItemDropInfo).
 
 Left out: random events (on the Story page's Border Conflict tab), the in-run
 shop and weapon upgrades, and the weekly high-score rules.
@@ -359,6 +361,38 @@ class Builder:
             out.append(m)
         return out
 
+    def achievements(self):
+        """Covert Phantom's achievements (QuestType_RoguelikeHighestDifficulty) with their rewards. Left out: the
+        hidden "Data Tracking" counters (1002609xx, no reward) and the Protocol Mastery side-mission stubs."""
+        cur = {r['CurrencyType']: text(r['NameStrKey_EN']) for r in self.con.execute(
+            'SELECT CurrencyType, NameStrKey_EN FROM ConfigDataCurrencyTypeInfo')}
+        names = {
+            'ItemType_NormalItem': 'ConfigDataNormalItemInfo',
+            'ItemType_WapPaintingMarking': 'ConfigDataWapPaintingMarkingInfo',
+            'ItemType_HonorMedal': 'ConfigDataHonorMedalInfo',
+        }
+        kinds = {'ItemType_WapPaintingMarking': 'Decal', 'ItemType_HonorMedal': 'Honor Medal'}
+        out = []
+        for q in self.con.execute("SELECT * FROM ConfigDataQuestInfo WHERE Type = 'QuestType_RoguelikeHighestDifficulty'"
+                                  " ORDER BY ID"):
+            drop = self.one('ConfigDataItemDropInfo', q['DropReward']) if q['DropReward'] else None
+            if not drop or not q['DescStrKey_EN']:
+                continue
+            rewards = [{'name': cur.get(x['CurrencyType'], x['CurrencyType']), 'count': x['maxCount']}
+                       for x in jl(drop['CurrencyDropList'])]
+            for x in jl(drop['CertainDropList']):
+                row = names.get(x['type']) and self.one(names[x['type']], x['configId'])
+                if not row:
+                    print('achievement %d: unknown reward %s' % (q['ID'], x))
+                    continue
+                r = {'name': text(row['NameStrKey_EN']), 'count': x['maxCount']}
+                if x['type'] in kinds:
+                    r['kind'] = kinds[x['type']]
+                rewards.append(r)
+            out.append({'id': q['ID'], 'name': text(q['TitleStrKey_EN']), 'text': plain(q['DescStrKey_EN']),
+                        'rewards': rewards})
+        return out
+
 
 def merge_siblings(areas):
     """Area 2-1, 2-2, 2-3 -> one "Area 2" with their names, when only their layout differs."""
@@ -402,7 +436,8 @@ def main():
         b.finish_battle(x)
     data = {'difficulties': b.difficulties(), 'areas': areas,
             'battles': {str(k): v for k, v in sorted(b.battles.items())},
-            'alertLevels': b.alert_levels(), 'tech': b.tech(), 'masteries': b.masteries()}
+            'alertLevels': b.alert_levels(), 'tech': b.tech(), 'masteries': b.masteries(),
+            'achievements': b.achievements()}
 
     os.makedirs(HERE, exist_ok=True)
     with open(OUT, 'w', encoding='utf-8', newline='\n') as f:
@@ -412,9 +447,9 @@ def main():
         f.write('window.CovertData = ')
         json.dump(data, f, ensure_ascii=False, separators=(',', ':'))
         f.write(';\n')
-    print('Wrote %s: %d areas, %d battles, %d alert levels, %d tech units in %d rows, %d masteries (%d KB)' % (
+    print('Wrote %s: %d areas, %d battles, %d alert levels, %d tech units in %d rows, %d masteries, %d achievements (%d KB)' % (
         OUT, len(areas), len(b.battles), len(data['alertLevels']), sum(len(r['units']) for r in data['tech']),
-        len(data['tech']), len(data['masteries']),
+        len(data['tech']), len(data['masteries']), len(data['achievements']),
         os.path.getsize(OUT_JS) // 1024))
 
 

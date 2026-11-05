@@ -4534,6 +4534,11 @@ a.boss-avatar { display: block; }
 .cp-panel { background: rgba(15, 15, 25, 0.92); border: 1px solid #2a2a4a; border-radius: 6px; padding: 0.5rem 0.75rem 0.75rem; margin-top: 0.4rem; }
 .cp-panel .ac-section-footnote { background: none; border: none; padding: 0; }
 #cp-root .detail-tab-pane { padding-top: 0.75rem; }
+.cp-achievements { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 0.5rem; }
+.cp-achievement { font-size: 0.9rem; margin: 0; display: flex; flex-direction: column; gap: 0.3rem; }
+.cp-achievement .cp-cost { margin-top: auto; }
+.cp-achievement-total { font-size: 0.9rem; margin: 0 0 0.5rem; }
+.cp-achievement-total .cp-cost { font-size: 0.9rem; }
 .cp-masteries { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 0.5rem; }
 .cp-tech-unit, .cp-mastery { font-size: 0.9rem; }
 .cp-tech { display: flex; flex-direction: column; align-items: stretch; }
