@@ -235,10 +235,10 @@ Pages.covertphantom = {
   },
 
   _achievements: function (d) {
-    var esc = this._esc;
+    var esc = this._esc, list = d.achievements || [];
     // Every reward summed by name (and kind), in the order first seen.
     var totals = [], byKey = {};
-    d.achievements.forEach(function (a) {
+    list.forEach(function (a) {
       a.rewards.forEach(function (r) {
         var k = (r.kind || '') + '|' + r.name;
         if (!byKey[k]) totals.push(byKey[k] = { name: r.name, kind: r.kind, count: 0 });
@@ -247,12 +247,12 @@ Pages.covertphantom = {
     });
     return (
       '<p class="ac-section-footnote">The mode\'s achievements and what each one gives.</p>' +
-      '<div class="skill-card cp-achievement-total"><b>Total rewards for all ' + d.achievements.length + ' achievements</b>' +
+      '<div class="skill-card cp-achievement-total"><b>Total rewards for all ' + list.length + ' achievements</b>' +
         '<div class="cp-cost">' + totals.map(function (r) {
           return (r.kind ? esc(r.kind) + ': ' : '') + esc(r.name) + (r.count > 1 ? ' ×' + r.count.toLocaleString('en-US') : '');
         }).join(', ') + '</div>' +
       '</div>' +
-      '<div class="cp-achievements">' + d.achievements.map(function (a) {
+      '<div class="cp-achievements">' + list.map(function (a) {
         return (
           '<div class="skill-card cp-achievement"><b>' + esc(a.name) + '</b>' +
             '<div>' + esc(a.text) + '</div>' +
@@ -290,7 +290,7 @@ Pages.covertphantom = {
         ['areas', 'Areas <small class="story-tab-n">' + d.areas.length + '</small>', this._areasTab(d, kit)],
         ['tech', 'Tech Tree <small class="story-tab-n">' + techUnits + '</small>', this._tech(d)],
         ['masteries', 'Pilot Masteries <small class="story-tab-n">' + d.masteries.length + '</small>', this._masteries(d)],
-        ['achievements', 'Achievements <small class="story-tab-n">' + d.achievements.length + '</small>', this._achievements(d)],
+        ['achievements', 'Achievements <small class="story-tab-n">' + (d.achievements || []).length + '</small>', this._achievements(d)],
       ])
     );
   },
