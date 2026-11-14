@@ -313,6 +313,18 @@ svg.bi {
   white-space: nowrap;
 }
 
+.dispatch-group-head {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.dispatch-group-icon {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
 .ac-section-title.shop-section-title {
   display: inline-block;
   color: #e0e0ff;

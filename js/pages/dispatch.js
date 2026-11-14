@@ -66,7 +66,11 @@ Pages.dispatch = {
           '<thead>' +
             '<tr>' +
               '<th>Version</th>' +
-              DISPATCH_GROUPS.map(function (g) { return '<th>' + g + '</th>'; }).join('') +
+              DISPATCH_GROUPS.map(function (g) {
+                return '<th><span class="dispatch-group-head">' +
+                  '<img class="dispatch-group-icon" src="' + ASSET_BASE + 'data/unlisted/dispatch/' + g + '.png" alt="" loading="lazy" />' +
+                  g + '</span></th>';
+              }).join('') +
             '</tr>' +
           '</thead>' +
           '<tbody>' + bodyRows + '</tbody>' +

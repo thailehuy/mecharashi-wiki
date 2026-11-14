@@ -97,6 +97,13 @@ window.DispatchData = {
       "InnovativE": "Prisma",
       "GeekX": "Nephthys",
       "Sparkplug": "Nidhogg"
+    },
+    {
+      "cnPatch": "4.0",
+      "Arsenal": "Eclipse",
+      "InnovativE": "Nivequus",
+      "GeekX": "Medusa MKII",
+      "Sparkplug": "Blue Anonymous Bird"
     }
   ]
 };
