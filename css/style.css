@@ -13,6 +13,19 @@ body {
   min-height: 100vh;
 }
 
+/* Blur and darken the page background image so content reads over it.
+   The body background is painted on the canvas, below this z-index:-1 layer. */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-color: rgba(10, 10, 14, 0.55);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+}
+
 .navbar {
   background-color: #1a1a20;
   border-bottom: 2px solid #e94560;
