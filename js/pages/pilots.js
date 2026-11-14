@@ -412,6 +412,8 @@ Pages.pilots = {
       '<div class="detail-layout">' +
         '<div class="detail-portrait-col fx-portrait-col">' +
           '<div class="detail-portrait" style="background-image:url(\'' + bgSrc + '\')">' +
+            // Faction logo (ConfigDataPilotCampInfo) as a faded watermark behind the portrait.
+            (p.FactionIcon ? '<div class="detail-portrait-faction" style="background-image:url(\'' + ASSET_BASE + 'data/unlisted/factions/' + p.FactionIcon + '.png\')"></div>' : '') +
             '<img class="detail-portrait-img" src="' + portraitSrc + '" onerror="this.onerror=null;this.src=\'' + portraitFallback + '\';" alt="' + $('<span>').text(p.PilotName).html() + '" />' +
             skinNavHtml +
           '</div>' +

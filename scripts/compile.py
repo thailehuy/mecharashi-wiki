@@ -116,6 +116,7 @@ def build_pilots(t):
             'PilotName': p.get('name', ''),
             'PortraitHeroIcon': p.get('portrait_icon', ''),
             'AvatarHeroIcon': p.get('avatar_icon', ''),
+            'FactionIcon': p.get('faction_icon', ''),
             'RealName': p.get('real_name', ''),
             'Gender': p.get('gender', ''),
             'Profession': p.get('profession', ''),
@@ -183,7 +184,7 @@ def build_mechs(t):
     for mid, m in t['mechs'].items():
         entry = {'ID': mid}
         entry.update(rename(m, [('name', 'name'), ('type', 'type'), ('quality', 'quality'), ('icon', 'icon'),
-                                ('portrait_icon', 'lihuiIcon'), ('introduce', 'introduce'), ('output', 'output'),
+                                ('portrait_icon', 'lihuiIcon'), ('manufacturer_bg', 'manufacturerBg'), ('introduce', 'introduce'), ('output', 'output'),
                                 ('armor', 'Armor'), ('fire', 'fire'), ('antiriot', 'Antiriot')]))
         entry['parts'] = []
         for part_id in m.get('parts', []):

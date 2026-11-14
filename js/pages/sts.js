@@ -429,7 +429,12 @@ Pages.sts = {
       // ── Top: portrait + info side by side
       '<div class="detail-layout">' +
         '<div class="detail-portrait-col fx-portrait-col">' +
-          '<div class="detail-portrait" style="background-image:url(\'' + bgSrc + '\')">' +
+          // Manufacturer backdrop (the client's Skynet_Wap_BG art), quality background underneath as fallback.
+          '<div class="detail-portrait" style="background-image:' +
+            (m.manufacturerBg ? 'url(\'' + ASSET_BASE + 'data/unlisted/manufacturers/' + m.manufacturerBg + '.jpg\'), ' : '') +
+            'url(\'' + bgSrc + '\')' +
+            // The scene's logo sits dead centre, behind the ST: shift it off-centre so it peeks out.
+            (m.manufacturerBg ? ';background-position:90% center, center' : '') + '">' +
             '<img class="detail-portrait-img" src="' + portraitSrc + '"' + portraitErrorAttr + ' alt="' + $('<span>').text(m.name).html() + '" />' +
             '<span class="version-badge">v' + $('<span>').text(m.version).html() + '</span>' +
             '<span class="rank-badge ' + rankClass + '">' + rankLabel + '</span>' +
