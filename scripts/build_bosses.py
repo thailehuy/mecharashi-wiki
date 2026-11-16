@@ -833,6 +833,13 @@ def main():
     data['armed_conquest'] = sorted(ac.values(), key=lambda s: -s['number'])
     if not keep_co:
         data['clearance_ops'] = sorted(co.values(), key=lambda c: -c['chapter'])
+    # Clearance Ops: one battle map per chapter (build_maps.py's "co-<chapter>").
+    if os.path.exists(MAPS):
+        with open(MAPS, encoding='utf-8') as f:
+            stage_maps = json.load(f)['stages']
+        for c in data.get('clearance_ops', []):
+            if stage_maps.get('co-%d' % c['chapter']):
+                c['maps'] = stage_maps['co-%d' % c['chapter']]
 
     with open(OUT, 'w', encoding='utf-8') as f:
         json.dump(data, f, indent=2, ensure_ascii=False)

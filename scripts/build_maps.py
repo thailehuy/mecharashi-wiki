@@ -7,9 +7,10 @@ lists -> ConfigDataRaidDungeonLevelInfo.BattleID) is read from the global client
   - gameboard_abs.b: the board (m_cols x m_rows, per-cell m_cellType = GridType)
   - battlescene_abs.b: what the map places (m_actorInfos, x/y), the player deploy slots (m_formationInfos),
     scene objects (m_sceneObjects; grid index = x * 1000 + y)
-plus the units its scene triggers summon (BattleSceneAction, from extract_maps.py), named from the stats.db tables.
+plus the units its scene triggers summon (BattleSceneAction, from extract_maps.py; action groups run where a Group action calls them), named from the stats.db tables.
 Needs UnityPy and the MRT_FieldWiki folder (its RebuildGameUpdate/settings.py has the game path and bundle key).
 Seasons: SEASONS below, or the AC numbers given on the command line.
+Clearance Ops: every chapter in data/bosses/bosses.json (its `battle`), as stage "co-<chapter>": one map per route (see main).
 """
 import json
 import os
@@ -151,13 +152,36 @@ def turn_text(turns):
     return 'turn ' + ' or '.join(map(str, turns)), 'T' + '/'.join(map(str, turns))
 
 
+def scene_actions(con):
+    """TEMP table SceneAction: BattleSceneAction with every Group action (str1 = an action group's name) replaced by
+    the group's actions, run by the calling trigger (its index, event, conditions and desc; action index
+    caller * 1000 + the group's), nested groups included. The groups themselves stay, as event 'ActionGroup'."""
+    con.execute('CREATE TEMP TABLE SceneAction AS SELECT * FROM BattleSceneAction')
+    cols = [r[1] for r in con.execute('PRAGMA table_info(BattleSceneAction)')]
+    groups = {}
+    for r in con.execute("SELECT * FROM BattleSceneAction WHERE event = 'ActionGroup' ORDER BY trigger_index, action_index"):
+        r = dict(zip(cols, r))
+        groups.setdefault((r['map'], r['trigger_desc']), []).append(r)
+    for _ in range(3):  # nested groups
+        calls = [dict(zip(cols, r)) for r in con.execute("SELECT * FROM SceneAction WHERE action = 'Group' AND event != 'ActionGroup'")]
+        con.execute("DELETE FROM SceneAction WHERE action = 'Group' AND event != 'ActionGroup'")
+        added = []
+        for c in calls:
+            for g in groups.get((c['map'], c['str1']), []):
+                added.append(dict(g, trigger_index=c['trigger_index'], action_index=c['action_index'] * 1000 + g['action_index'],
+                                  event=c['event'], repeatable=c['repeatable'], conds_json=c['conds_json'], trigger_desc=c['trigger_desc']))
+        if not added:
+            break
+        con.executemany('INSERT INTO SceneAction VALUES (%s)' % ','.join('?' * len(cols)), [[r[k] for k in cols] for r in added])
+
+
 def simulate(con, mp, last=SIM_TURNS):
     """{(trigger, action): [turns]}: the actions of turn-start triggers that only test the turn and the blackboard,
     run over turns 1..last in trigger order (SetBlackBoardKeyValue: str1 = p1; AddOrRemoveSceneObject opens or
     removes the scene object str1, which SceneObjectState tests). A trigger that isn't repeatable runs once."""
     triggers = {}
     for ti, ai, event, rep, action, p1, str1, str2, conds in con.execute(
-            'SELECT trigger_index, action_index, event, repeatable, action, p1, str1, str2, conds_json FROM BattleSceneAction '
+            'SELECT trigger_index, action_index, event, repeatable, action, p1, str1, str2, conds_json FROM SceneAction '
             'WHERE map = ? ORDER BY trigger_index, action_index', (mp,)):
         t = triggers.setdefault(ti, {'event': event, 'repeat': rep, 'conds': json.loads(conds or '[]'), 'actions': []})
         t['actions'].append((ai, action, p1, str1, str2))
@@ -215,7 +239,21 @@ def cause(event, conds, name):
     return ' or '.join(out) if out else None
 
 
-def reinforcements_of(con, mp, scene, units, unit):
+def bb_allows(conds, bb):
+    """False when a condition outside any GroupBegin/GroupEnd (an OR group) needs a blackboard value the route doesn't set"""
+    depth = 0
+    for c in conds:
+        if c['type'] == 'GroupBegin':
+            depth += 1
+        elif c['type'] == 'GroupEnd':
+            depth -= 1
+        elif depth == 0 and c['type'] == 'BlackBoardKeyValueEqual' and c['s1'] in bb:
+            if (bb[c['s1']] == c['p'][0]) == bool(c['not']):
+                return False
+    return True
+
+
+def reinforcements_of(con, mp, scene, units, unit, bb=None, skip_groups=()):
     """Units a map's scene triggers summon, with where and when.
 
     Where: Summon has the tile (p1); SummonAtSceneObject places the unit on the scene object named str3 (or str1, the
@@ -226,12 +264,18 @@ def reinforcements_of(con, mp, scene, units, unit):
       a unit's death (directly, or the alert's)    -> the turn after it dies (the summoned unit itself: it respawns)
       ActorAlreadyDead / ActorLive X               -> only while X stands / after X is destroyed
     One entry per (unit ref, tile): the same unit summoned by several triggers is merged.
+    bb: the blackboard values a Clearance Ops route sets (summons needing other values are left out); skip_groups: the
+    route action groups (their summons are the route's starting units). Summons at formation setup aren't reinforcements,
+    and an action group's count only where a trigger calls it (SceneAction, see scene_actions).
     """
+    bb = bb or {}
     names = {u['ref']: u['name'] for u in units}
     rows = []
-    for ti, ai, event, action, p1, p2, p3, p4, str1, str3, conds in con.execute(
-            "SELECT trigger_index, action_index, event, action, p1, p2, p3, p4, str1, str3, conds_json FROM BattleSceneAction "
-            "WHERE map = ? AND action IN ('SummonAtSceneObject', 'Summon')", (mp,)):
+    for ti, ai, event, action, p1, p2, p3, p4, str1, str3, conds, desc in con.execute(
+            "SELECT trigger_index, action_index, event, action, p1, p2, p3, p4, str1, str3, conds_json, trigger_desc FROM SceneAction "
+            "WHERE map = ? AND action IN ('SummonAtSceneObject', 'Summon') AND event != 'FormationSetupStart'", (mp,)):
+        if event == 'ActionGroup' or desc in skip_groups or not bb_allows(json.loads(conds or '[]'), bb):
+            continue
         if action == 'Summon':  # [tile, team, actor type, config id]
             rows.append((ti, ai, event, str1, None, p1, p2, p3, p4, conds))
         else:                   # [team, actor type, config id]
@@ -251,14 +295,14 @@ def reinforcements_of(con, mp, scene, units, unit):
 
     alerts = {}
     for marker, p1, event, conds in con.execute(
-            "SELECT str1, p1, event, conds_json FROM BattleSceneAction WHERE map = ? AND action = 'AddOrRemoveSceneObject' "
+            "SELECT str1, p1, event, conds_json FROM SceneAction WHERE map = ? AND action = 'AddOrRemoveSceneObject' "
             "AND str2 = 'Open'", (mp,)):
         alerts.setdefault(marker, []).append((p1, event, json.loads(conds or '[]')))
     placed = {o['m_refName']: o['m_gridIndex'] for o in scene['m_sceneObjects']}
     fired = simulate(con, mp)
     setters = {}  # (blackboard key, value) -> [(event, conds)] of the triggers that set it
     for event, p1, str1, conds in con.execute(
-            "SELECT event, p1, str1, conds_json FROM BattleSceneAction WHERE map = ? AND action = 'SetBlackBoardKeyValue'", (mp,)):
+            "SELECT event, p1, str1, conds_json FROM SceneAction WHERE map = ? AND action = 'SetBlackBoardKeyValue'", (mp,)):
         setters.setdefault((str1, p1), []).append((event, json.loads(conds or '[]')))
 
     merged = {}
@@ -305,6 +349,7 @@ def reinforcements_of(con, mp, scene, units, unit):
                     sources += setters.get((c['s1'], c['p'][0]), [])
             sources += [(ev, cs) for _, ev, cs in opened]
             why = [w for w in (cause(ev, cs, lambda r: name(r, here)) for ev, cs in sources) if w]
+            why = [part for w in why for part in w.split(' or ')]  # rejoined with ' or ' below
             ends = sorted({int(w.rsplit(' ', 1)[1]) for w in why if w.startswith('the end of turn ')})
             why = [w for w in dict.fromkeys(why) if not w.startswith('the end of turn ')]
             if ends and not why:
@@ -335,6 +380,7 @@ def reinforcements_of(con, mp, scene, units, unit):
 
 def main():
     con = sqlite3.connect(STATS)
+    scene_actions(con)
     one = lambda sql, *a: (con.execute(sql, a).fetchone() or [None])[0]
 
     icons = {PILOT_DIR: set(), VEHICLE_DIR: {OBJECT_FALLBACK}}
@@ -372,9 +418,34 @@ def main():
                 stages.setdefault('ac-%d-%d' % (ac, slot), {})[diff_name] = mp
                 wanted[str(mp)] = str(one('SELECT GameBoardId FROM ConfigDataBattleMapInfo WHERE ID = ?', mp))
 
+    # Clearance Ops: one battle map per chapter (skipped when testing AC seasons), played by routes: the choices of the
+    # dialog at the start (ConfigDataDialogChooseItem, e.g. "Regular Route", "Rear Ambush"), each an action group of
+    # the scene that switches on its deploy slots and summons, removes and moves units. A fresh run takes the first;
+    # the others open as the chapter is cleared. Each route is its own map, "<map>:<group>", under the route's name.
+    routes = {}  # map -> [(group, name)]
+    if not sys.argv[1:]:
+        with open(os.path.join(ROOT, 'data', 'bosses', 'bosses.json'), encoding='utf-8') as f:
+            chapters = json.load(f).get('clearance_ops', [])
+        choices = {r: (i, n) for i, r, n in con.execute(
+            'SELECT ID, BattleSceneDialogChooseItemRefName, WordsStrKey_EN FROM ConfigDataDialogChooseItem')}
+        for c in chapters:
+            mp = str(c['battle'])
+            groups = {g for g, in con.execute("SELECT DISTINCT trigger_desc FROM BattleSceneAction WHERE map = ? AND event = 'ActionGroup' "
+                                               "AND action = 'ActiveFormationPos'", (int(mp),))}
+            routes[mp] = sorted(((g, choices[g][1]) for g in groups if g in choices), key=lambda r: choices[r[0]][0])
+            stages['co-%d' % c['chapter']] = {n: '%s:%s' % (mp, g) for g, n in routes[mp]} or {'Normal': int(mp)}
+            wanted[mp] = str(one('SELECT GameBoardId FROM ConfigDataBattleMapInfo WHERE ID = ?', int(mp)))
+
     UnityPy.set_assetbundle_decrypt_key(settings.BUNDLE_KEY)
     scenes = load_assets(extract_maps.bundles()[-1][1], set(wanted))
     boards = load_assets(BOARD_BUNDLE, set(wanted.values()))
+
+    def placed(atype, cid, ref, x, y, team):
+        u = unit(atype, cid)
+        u.update({'ref': ref.lstrip('#'), 'x': x, 'y': y, 'boss': bool(re.match(r'#?BOSS\d*$', ref))})
+        if team in TEAM_KIND:
+            u['kind'] = TEAM_KIND[team]
+        return u
 
     out = {}
     for mp, bd in wanted.items():
@@ -382,13 +453,6 @@ def main():
         cols, rows = b['m_cols'], b['m_rows']
         cells = ''.join('%x' % b['m_cellType'][y * cols + x] if b['m_cellType'][y * cols + x] < 16 else 'f'
                         for y in range(rows) for x in range(cols))
-        units = []
-        for a in s['m_actorInfos']:
-            u = unit(a['m_actorType'], a['m_configId'])
-            u.update({'ref': a['m_refName'], 'x': a['m_x'], 'y': a['m_y'], 'boss': bool(re.match(r'#?BOSS\d*$', a['m_refName']))})
-            if a['m_teamType'] in TEAM_KIND:
-                u['kind'] = TEAM_KIND[a['m_teamType']]
-            units.append(u)
         objects = {}
         for o in s['m_sceneObjects']:
             name, model, occ = con.execute('SELECT NameStrKey_EN, Model, GridOccupyType FROM ConfigDataBattleSceneObjectInfo WHERE ID = ?',
@@ -396,17 +460,42 @@ def main():
             objects[o['m_refName']] = {'x': o['m_gridIndex'] // 1000, 'y': o['m_gridIndex'] % 1000, 'name': name,
                                        'avatar': icon(VEHICLE_DIR, 'Icon_%s_head' % model.rsplit('/', 1)[-1]) if model else None,
                                        'tiles': footprint(occ)}
-        reinforcements = reinforcements_of(con, int(mp), s, units, unit)
-        out[mp] = {
-            'board': int(bd), 'cols': cols, 'rows': rows, 'cells': cells,
-            'camera': s['m_cameraDirection'],
-            'max_deploy': s['m_maxFormationSetupCount'],
-            'units': units,
-            'slots': [{'n': int(f['m_refName'][-1]), 'x': f['m_x'], 'y': f['m_y']} for f in s['m_formationInfos']
-                      if not f['m_isAlternative']],
-            'objects': list(objects.values()),
-            'reinforcements': reinforcements,
-        }
+        formation = [f for f in s['m_formationInfos'] if not f['m_isAlternative']]
+        route_groups = [g for g, _ in routes.get(mp, [])]
+        for group in route_groups or [None]:
+            units = {a['m_refName'].lstrip('#'): placed(a['m_actorType'], a['m_configId'], a['m_refName'], a['m_x'], a['m_y'], a['m_teamType'])
+                     for a in s['m_actorInfos']}
+            active, bb = [], {}
+            if group:  # the route's actions, in order
+                for act, p1, p2, p3, p4, str1 in con.execute(
+                        "SELECT action, p1, p2, p3, p4, str1 FROM BattleSceneAction WHERE map = ? AND event = 'ActionGroup' "
+                        "AND trigger_desc = ? ORDER BY trigger_index, action_index", (int(mp), group)):
+                    ref = (str1 or '').lstrip('#')
+                    if act == 'Summon':
+                        units[ref] = placed(p3, p4, str1, p1 // 1000, p1 % 1000, p2)
+                    elif act == 'RemoveActor':
+                        units.pop(ref, None)
+                    elif act == 'ActorMove' and ref in units:
+                        units[ref].update({'x': p1 // 1000, 'y': p1 % 1000})
+                    elif act == 'ActiveFormationPos':
+                        active.append(str1)
+                    elif act == 'SetBlackBoardKeyValue':
+                        bb[str1] = p1
+            units = list(units.values())
+            reinforcements = reinforcements_of(con, int(mp), s, units, unit, bb, set(route_groups))
+            # Deploy slots (PlayerN), numbered by name; a route's are the ones it switches on, in its order.
+            slots = [f for f in formation if not group or f['m_refName'] in active]
+            if group:
+                slots.sort(key=lambda f: active.index(f['m_refName']))
+            out['%s:%s' % (mp, group) if group else mp] = {
+                'board': int(bd), 'cols': cols, 'rows': rows, 'cells': cells,
+                'camera': s['m_cameraDirection'],
+                'max_deploy': s['m_maxFormationSetupCount'] or len(slots),
+                'units': units,
+                'slots': [{'n': i + 1 if group else int(f['m_refName'][-1]), 'x': f['m_x'], 'y': f['m_y']} for i, f in enumerate(slots)],
+                'objects': list(objects.values()),
+                'reinforcements': reinforcements,
+            }
     con.close()
     have = export_icons(icons)
     for m in out.values():

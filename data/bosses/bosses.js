@@ -13174,7 +13174,12 @@ window.BossesData = {
         }
       ],
       "description": "At the crossroads, going left or right is a philosophical question. If given another chance, would they still set foot on Milkhama and choose to become mercenaries?",
-      "turns": 10
+      "turns": 10,
+      "maps": {
+        "Regular Route": "8022:8022101",
+        "Rear Ambush": "8022:8022102",
+        "Center Blast": "8022:8022103"
+      }
     },
     {
       "chapter": 16,
@@ -14421,7 +14426,12 @@ window.BossesData = {
         }
       ],
       "description": "For so many years, Milkhama has been like this. A genius rises here, a nova appears there, today a rising star emerges, and tomorrow there will be a supernova. They are all eager to prove themselves, but as for the outcome, that's hard to say.",
-      "turns": 15
+      "turns": 15,
+      "maps": {
+        "Regular Route": "8021:8021101",
+        "Rear Ambush": "8021:8021102",
+        "Center Blast": "8021:8021103"
+      }
     },
     {
       "chapter": 15,
@@ -15656,7 +15666,12 @@ window.BossesData = {
         }
       ],
       "description": "The situation in Milkhama is turbulent, with various forces stepping in, intertwining with each other, each harboring ulterior motives and waiting for the best opportunity to intervene.",
-      "turns": 15
+      "turns": 15,
+      "maps": {
+        "Regular Route": "8020:8020101",
+        "Rear Ambush": "8020:8020102",
+        "Center Blast": "8020:8020103"
+      }
     },
     {
       "chapter": 14,
@@ -16872,7 +16887,12 @@ window.BossesData = {
         }
       ],
       "description": "Strength is the only means to ensure balance. Now, the UNCS's military power is weak, forcing the military to employ various forces, even including former fugitives. Of course, this is done privately.",
-      "turns": 15
+      "turns": 15,
+      "maps": {
+        "Regular Route": "8019:8019101",
+        "Rear Ambush": "8019:8019102",
+        "Center Blast": "8019:8019103"
+      }
     },
     {
       "chapter": 13,
@@ -18078,7 +18098,12 @@ window.BossesData = {
         }
       ],
       "description": "Milkhama has seen countless renowned mercenary teams, some as fleeting as shooting stars, while others rise again and again like wild grass sprouting from the ashes. The Douglas Mercenary group belongs to the latter breed.",
-      "turns": 15
+      "turns": 15,
+      "maps": {
+        "Regular Route": "8018:8018101",
+        "Rapid Breakthrough": "8018:8018102",
+        "High Ground": "8018:8018103"
+      }
     },
     {
       "chapter": 12,
@@ -19237,7 +19262,12 @@ window.BossesData = {
         }
       ],
       "description": "The Thepia Wasteland has seen increased activity, with a mobile squadron suspected of secretly working for a DL councilor. A mysterious employer has hired the GKD Squad via Skynet to disrupt their operations.",
-      "turns": 15
+      "turns": 15,
+      "maps": {
+        "Frontal Assault": "8017:8017101",
+        "Rear Ambush": "8017:8017102",
+        "Central Breakthrough (Hard)": "8017:8017103"
+      }
     },
     {
       "chapter": 11,
@@ -20300,7 +20330,12 @@ window.BossesData = {
         }
       ],
       "description": "After their defeat, the Monolith Valley Armed Forces secured additional funding and deployed senior cadres to strengthen their ranks. They now control a military depot in the Parill Desert, causing unrest among factions in Milkhama. Consequently, GKD Squad has been given a new mission.",
-      "turns": 15
+      "turns": 15,
+      "maps": {
+        "Regular Route": "8015:8015001",
+        "Quick Raid": "8015:8015002",
+        "Behind enemy lines": "8015:8015003"
+      }
     },
     {
       "chapter": 10,
@@ -21045,7 +21080,12 @@ window.BossesData = {
         }
       ],
       "description": "After the battle, the Monolith Valley Armed Forces split, with Meritus and Eller taking a military base in the Parill Desert, angering local interests.",
-      "turns": 15
+      "turns": 15,
+      "maps": {
+        "Regular Route": "8016:8016101",
+        "Rear Attack": "8016:8016102",
+        "Divide & Conquer": "8016:8016103"
+      }
     },
     {
       "chapter": 9,
@@ -21816,7 +21856,12 @@ window.BossesData = {
         }
       ],
       "description": "Behind Milkhama's facade of peace, powers wage shadow wars. Intel ops are too hot for official channels to get outsourced to neutral mercs. And mercs take out other mercs.",
-      "turns": 15
+      "turns": 15,
+      "maps": {
+        "Regular Route": "8013:8013001",
+        "Quick Raid": "8013:8013002",
+        "Catch-all": "8013:8013003"
+      }
     },
     {
       "chapter": 8,
@@ -22529,7 +22574,12 @@ window.BossesData = {
         }
       ],
       "description": "The Iguanas are back on the high-bounty list. Someone's got a score to settle. Their base lies deep in a dense jungle. Bridges are down. STs and drones patrol a fortified stronghold. Where's the weak point?",
-      "turns": 15
+      "turns": 15,
+      "maps": {
+        "Repair North Bridge": "8014:8014001",
+        "Repair South Bridge": "8014:8014002",
+        "Break into the Center": "8014:8014003"
+      }
     },
     {
       "chapter": 7,
@@ -23212,7 +23262,12 @@ window.BossesData = {
         }
       ],
       "description": "The Lunos started as miners' protection in early Milkhama. As local industry died, they became an iron-fisted crime syndicate. UNCS police can't touch their stronghold despite evidence. They're reduced to posting bounties for unofficial forces.",
-      "turns": 15
+      "turns": 15,
+      "maps": {
+        "Right Flank Assault": "8010:8010101",
+        "Left Flank Assault": "8010:8010102",
+        "Airborne to Central Region [Hard]": "8010:8010103"
+      }
     },
     {
       "chapter": 6,
@@ -23824,7 +23879,12 @@ window.BossesData = {
         }
       ],
       "description": "DLAF reports Iguana mercs hit Belsuth boot camp targeting Admiral Sean's officer corps. Until the leak's plugged, the Admiral's bringing in outside contractors to defend camps and eliminate the Iguanas before more recruits die.",
-      "turns": 15
+      "turns": 15,
+      "maps": {
+        "Push Forward": "8012:8012101",
+        "Divide and Flank": "8012:8012102",
+        "Assault from the Rear [Hard]": "8012:8012103"
+      }
     },
     {
       "chapter": 5,
@@ -24489,7 +24549,13 @@ window.BossesData = {
         }
       ],
       "description": "Terrorists control Monolith Valley, cutting off north Maratur. Intel shows foreign merc ties and ST tech acquisitions. Harpy contracts Kaidan to neutralize the Maratur forces.",
-      "turns": 15
+      "turns": 15,
+      "maps": {
+        "Knock the Door": "8007:8007101",
+        "Left Flank Rush In": "8007:8007102",
+        "Right Flank Rush In": "8007:8007103",
+        "Rear Assault [Hard]": "8007:8007104"
+      }
     },
     {
       "chapter": 4,
@@ -25125,7 +25191,12 @@ window.BossesData = {
         }
       ],
       "description": "GSA found Ashes outposts. NDF STs deployed for containment. GKD was hired to create chaos and break the blockade, securing escape routes for the Ashes.",
-      "turns": 15
+      "turns": 15,
+      "maps": {
+        "Frontal Breakthrough": "8008:8008101",
+        "Medium Lane Breakthrough": "8008:8008102",
+        "Strike from the Rear [Hard]": "8008:8008103"
+      }
     },
     {
       "chapter": 3,
@@ -25755,7 +25826,11 @@ window.BossesData = {
         }
       ],
       "description": "Parill Desert breeds crime and mercs. Enhanced fighters flock here chasing glory and credits. No matter how many get wiped out, they keep coming back like weeds.",
-      "turns": 15
+      "turns": 15,
+      "maps": {
+        "Safety first": "8011:8011101",
+        "Deep into the Heartland [Hard]": "8011:8011102"
+      }
     },
     {
       "chapter": 2,
@@ -26355,7 +26430,12 @@ window.BossesData = {
         }
       ],
       "description": "The border zone between DL and UNCS is a lawless haven for mercs and criminals. Big corps provide security for convoys passing through.\nA guerrilla merc group has been hitting these protected convoys hard. The corps have put out a joint bounty to eliminate this threat.",
-      "turns": 15
+      "turns": 15,
+      "maps": {
+        "Left side of Bridge": "8009:8009101",
+        "Right side of Bridge": "8009:8009102",
+        "Middle of the Bridge [Hard]": "8009:8009103"
+      }
     },
     {
       "chapter": 1,
@@ -26779,7 +26859,11 @@ window.BossesData = {
         }
       ],
       "description": "GSA intel reveals Obsidian's secret lab near Rayneburg running pilot enhancement tests on MIA soldiers and civilians. To maintain stealth, GSA partners with Kaidan Squad instead of official forces to raid the lab, rescue test subjects, and secure research data.",
-      "turns": 15
+      "turns": 15,
+      "maps": {
+        "Steady Progress": "8006:8006101",
+        "Quickly March [Hard]": "8006:8006102"
+      }
     }
   ]
 };

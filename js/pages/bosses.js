@@ -417,7 +417,8 @@ function bossKit() {
       '<div class="listing-header"><h1>' + esc(c.chapter + '. ' + c.name) + '</h1></div>' +
       (c.description ? '<p class="dispatch-intro"><i>' + esc(c.description) + '</i></p>' : '') +
       '<p class="dispatch-intro">Clearance Ops chapter ' + c.chapter + '. Every boss\'s skills and drops, by stage.' +
-        (c.turns ? ' Turn limit: <b>' + c.turns + '</b>.' : '') + '</p>' +
+        (c.turns ? ' Turn limit: <b>' + c.turns + '</b>.' : '') +
+        (c.maps ? ' <button type="button" class="filter-btn boss-map-btn" data-co-map="' + c.chapter + '"><i class="bi bi-grid-3x3"></i> View map</button>' : '') + '</p>' +
       '<div class="boss-group boss-season">' + stageRows(c.stages) + companions + '</div>'
     );
   }
@@ -449,7 +450,15 @@ function bossKit() {
       (data.armed_conquest || []).forEach(function (s) {
         s.stages.forEach(function (x) { if (x.maps && x.maps[Object.keys(x.maps)[0]] === id) { season = s; st = x; } });
       });
-      if (st) showMap(season, st, diff);
+      if (st) showMap('AC' + season.number + ' Stage ' + st.slot + ': ' + st.boss, st.maps, diff);
+    });
+    // Clearance Ops: one map per chapter, shared by its stages.
+    $(document).on('click.bosses', '[data-co-map]', function () {
+      var n = +$(this).attr('data-co-map');
+      var c = (data.clearance_ops || []).find(function (x) { return x.chapter === n; });
+      if (c && c.maps) showMap('CO' + c.chapter + ': ' + c.name, c.maps, null,
+        Object.keys(c.maps).length > 1 ? '<i class="bi bi-signpost-split"></i> Pick a route at the start: your first run takes <b>' + esc(Object.keys(c.maps)[0]) +
+          '</b>, and the others open as you clear the chapter (usually one more per clear). Each route has its own start and enemy positions.' : '');
     });
   }
 
@@ -478,10 +487,11 @@ function bossKit() {
       .fail(function () { alert('Could not load the map data.'); });
   }
 
-  function showMap(season, st, diff) {
+  // title: the stage's name; maps: {difficulty or CO route: map ID}; diff: the one to show first; note: HTML under the deploy line.
+  function showMap(title, maps, diff, note) {
     loadMaps(function () {
-      var diffs = Object.keys(st.maps);
-      if (!st.maps[diff]) diff = diffs[0];
+      var diffs = Object.keys(maps);
+      if (!maps[diff]) diff = diffs[0];
       var $modal = $('#boss-map-modal');
       if (!$modal.length) {
         $modal = $(
@@ -500,18 +510,18 @@ function bossKit() {
         });
         $modal.on('click', '[data-map-diff]', function () {
           var d = $modal.data('ctx');
-          renderMap($modal, d.season, d.st, $(this).attr('data-map-diff'));
+          renderMap($modal, d.title, d.maps, $(this).attr('data-map-diff'), d.note);
         });
       }
-      renderMap($modal, season, st, diff);
+      renderMap($modal, title, maps, diff, note);
       bootstrap.Modal.getOrCreateInstance($modal[0]).show();
     });
   }
 
-  function renderMap($modal, season, st, diff) {
-    var M = window.MapsData, m = M.maps[st.maps[diff]];
-    $modal.data('ctx', { season: season, st: st });
-    $modal.find('.modal-title').text('AC' + season.number + ' Stage ' + st.slot + ': ' + st.boss + ' (' + diff + ')');
+  function renderMap($modal, title, maps, diff, note) {
+    var M = window.MapsData, m = M.maps[maps[diff]];
+    $modal.data('ctx', { title: title, maps: maps, note: note });
+    $modal.find('.modal-title').text(title + (Object.keys(maps).length > 1 ? ' (' + diff + ')' : ''));
 
     // In-game view, from the map's camera angle: which grid direction is up
     // and which is right in the table. The game's camera is diagonal; the
@@ -643,13 +653,14 @@ function bossKit() {
         row('', 'A tile that already holds a unit shows its reinforcement when you click it.')
       : '');
 
-    var diffs = Object.keys(st.maps);
+    var diffs = Object.keys(maps);
     $modal.find('.modal-body').html(
       (diffs.length > 1 ? '<div class="boss-map-diffs">' + diffs.map(function (d) {
-        return '<button type="button" class="filter-btn' + (d === diff ? ' active' : '') + '" data-map-diff="' + d + '">' + d + '</button>';
+        return '<button type="button" class="filter-btn' + (d === diff ? ' active' : '') + '" data-map-diff="' + esc(d) + '">' + esc(d) + '</button>';
       }).join('') + '</div>' : '') +
       '<div class="boss-map-deploy"><i class="bi bi-people-fill"></i> Deploy up to <b>' + m.max_deploy + '</b> units' +
         (m.slots.length > m.max_deploy ? ' (on any ' + m.max_deploy + ' of the ' + m.slots.length + ' deploy slots)' : '') + '.</div>' +
+      (note ? '<div class="boss-map-deploy">' + note + '</div>' : '') +
       '<div class="boss-map-wrap">' +
         '<div class="boss-map-scroll"><table class="boss-map">' + rows + '</table></div>' +
         '<div class="boss-map-side">' +
