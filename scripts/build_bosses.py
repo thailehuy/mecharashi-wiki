@@ -38,6 +38,7 @@ GLOSSARY = os.path.join(ROOT, 'data', 'glossary.json')
 PILOTS = os.path.join(ROOT, 'data', 'pilots', 'compiled.json')
 OUT = os.path.join(HERE, 'bosses.json')
 OUT_JS = os.path.join(HERE, 'bosses.js')
+MAPS = os.path.join(ROOT, 'data', 'maps', 'maps.json')
 
 AC_LABEL = re.compile(r'^(.*) · (.*) (\d+) · (.*)$')       # "Ride or Die · Hard 2 · Garcia"
 CO_LABEL = re.compile(r'^(\d+)\. (.*) (\d+) · (.*)$')       # "17. Crossroads of Memory 1 · Jon"
@@ -796,6 +797,15 @@ def main():
         for st in s['stages']:
             add_stage_drops(s, st, stage_drops.get((s['number'], st['slot']), {}), bosses, drop_warnings.append)
     add_icons(ac.values())
+    # Battle maps from build_maps.py: {difficulty: map ID}, for the "View map" button.
+    if os.path.exists(MAPS):
+        with open(MAPS, encoding='utf-8') as f:
+            stage_maps = json.load(f)['stages']
+        for s in ac.values():
+            for st in s['stages']:
+                maps = stage_maps.get('ac-%d-%d' % (s['number'], st['slot']))
+                if maps:
+                    st['maps'] = maps
     lookup = term_lookup()
     with open(PILOTS, encoding='utf-8') as f:
         NOT_TERMS.update(p['PilotName'].lower() for p in json.load(f)['pilots'])

@@ -4876,3 +4876,50 @@ a.boss-avatar { display: block; }
   color: #e0e0e0;
   margin-bottom: .5rem;
 }
+
+/* ---- Battle map popup (bosses.js showMap) ---- */
+.boss-map-btn { margin-left: 0.5rem; padding: 0.15rem 0.6rem; font-size: 0.75rem; }
+.boss-map-modal .modal-content { background: #1b1d22; }
+.boss-map-diffs { display: flex; gap: 0.35rem; margin-bottom: 0.75rem; flex-wrap: wrap; }
+.boss-map-wrap { display: flex; gap: 1rem; align-items: flex-start; flex-wrap: wrap; }
+.boss-map-scroll { overflow: auto; max-width: 100%; }
+.boss-map { border-collapse: collapse; }
+.boss-map td { width: 30px; height: 30px; min-width: 30px; padding: 0; border: 1px solid rgba(0, 0, 0, 0.35); text-align: center; vertical-align: middle; position: relative; }
+.boss-map td.boss-map-cell-sel { outline: 2px solid #ffd54a; outline-offset: -2px; }
+.bmt-ground, .bmt-sand { background: #a8946e; }
+.bmt-concrete { background: #9a9a9a; }
+.bmt-wetland { background: #66784f; }
+.bmt-shoal { background: #6f9fb8; }
+.bmt-ocean { background: #2d5a8c; }
+.bmt-pit { background: #141414; }
+.bmt-low { background: #6e5240; }
+.bmt-high { background: #3e2c22; }
+.boss-map-unit { display: inline-flex; align-items: center; justify-content: center; width: 24px; height: 24px; border-radius: 50%; font-size: 0.75rem; font-weight: 700; color: #111; border: 2px solid #111; cursor: pointer; overflow: hidden; vertical-align: middle; }
+.boss-map-unit img { width: 100%; height: 100%; object-fit: cover; }
+.boss-map-boss { background: #e53935; border-color: #ffd54a; width: 28px; height: 28px; }
+.boss-map-turret { background: #9fa3d6; border-radius: 4px; }
+.boss-map-enemy { background: #ef8a8a; }
+.boss-map-slot { background: #4fa8ff; }
+.boss-map-object { background: #e88c2a; border-radius: 4px; }
+.boss-map-side { flex: 1 1 240px; min-width: 0; max-width: 100%; font-size: 0.85rem; color: #c8c8d8; overflow-wrap: anywhere; }
+.boss-map-info { background: #262930; border-radius: 6px; padding: 0.6rem 0.75rem; margin-bottom: 0.75rem; min-height: 3rem; }
+.boss-map-info b { color: #fff; }
+.boss-map-swatch { display: inline-block; width: 18px; height: 18px; border: 1px solid #000; flex: none; }
+.boss-map-turret img { object-fit: contain; }
+.boss-map-object img { object-fit: contain; }
+.boss-map-unit { position: relative; }
+.boss-map-reinf-unit { opacity: 0.75; border-style: dashed; overflow: visible; }
+.boss-map-reinf-unit img { border-radius: 50%; }
+.boss-map-turn { position: absolute; right: -6px; bottom: -6px; background: #ffd54a; color: #111; font-size: 0.55rem; font-weight: 700; line-height: 1; padding: 1px 2px; border-radius: 3px; }
+.boss-map-hr { margin: 0.4rem 0; border-color: #555; }
+.boss-map-legend > div { display: flex; align-items: flex-start; gap: 0.5rem; margin-bottom: 0.35rem; }
+.boss-map-legend > div > span:last-child { flex: 1 1 auto; min-width: 0; white-space: normal; }
+.boss-map-legend .boss-map-unit, .boss-map-legend .boss-map-swatch { cursor: default; flex: none; }
+.boss-map-legend > div.boss-map-legend-head { display: block; color: #fff; font-weight: 600; margin: 0.7rem 0 0.35rem; }
+.boss-map-legend > div.boss-map-legend-head:first-child { margin-top: 0; }
+.boss-map-deploy { margin-bottom: 0.6rem; color: #c8c8d8; font-size: 0.9rem; }
+.boss-map-deploy b { color: #fff; }
+.boss-map-unit.boss-map-big { width: 52px; height: 52px; }
+.boss-map-ally { background: #6fd18a; }
+.boss-map-neutral { background: #c9c9c9; border-radius: 4px; }
+.boss-map-neutral img, .boss-map-ally img { object-fit: contain; }

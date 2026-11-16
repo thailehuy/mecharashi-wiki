@@ -217,6 +217,7 @@ function bossKit() {
       '<div class="col-12"><div class="skill-card boss-stage-info"><div class="boss-stage-title">' +
         '<b>Stage ' + st.slot + (st.title ? ': ' + esc(st.title) : '') + '</b>' +
         (st.description ? ' <span>' + esc(st.description) + '</span>' : '') +
+        (st.maps ? ' <button type="button" class="filter-btn boss-map-btn" data-boss-map="' + st.maps[Object.keys(st.maps)[0]] + '"><i class="bi bi-grid-3x3"></i> View map</button>' : '') +
       '</div></div></div>'
     );
   }
@@ -440,6 +441,223 @@ function bossKit() {
       $(this).addClass('active');
       $stage.find('[data-boss-pane]').each(function () { this.hidden = this.getAttribute('data-boss-pane') !== tab; });
     });
+    // "View map": the stage's battle map on the difficulty picked, in a popup.
+    $(document).on('click.bosses', '[data-boss-map]', function () {
+      var id    = +$(this).attr('data-boss-map');
+      var diff  = $(this).closest('.boss-season').find('.boss-diff-float [data-boss-diff].active').attr('data-boss-diff');
+      var season, st;
+      (data.armed_conquest || []).forEach(function (s) {
+        s.stages.forEach(function (x) { if (x.maps && x.maps[Object.keys(x.maps)[0]] === id) { season = s; st = x; } });
+      });
+      if (st) showMap(season, st, diff);
+    });
+  }
+
+  // ---- Battle map popup ---------------------------------------------------
+  // data/maps/maps.js (scripts/build_maps.py) is loaded the first time a map
+  // is opened. The board is drawn as a table, one cell per grid tile, in the
+  // in-game camera's orientation; units, deploy slots and scene objects sit in
+  // their tiles, and clicking one shows what it is under the map.
+  var MAP_TERRAIN = {
+    ground: 'Ground: walkable.', concrete: 'Concrete: walkable.', wetland: 'Wetland: walkable.', sand: 'Sand: walkable.',
+    shoal: 'Shoal: walkable.', ocean: 'Ocean: only amphibious or flying units can cross.',
+    pit: 'Pit: impassable for ground units.', low: 'Low building: blocks movement.', high: 'High building: blocks movement and line of fire.',
+  };
+  // Placed units by kind (scripts/build_maps.py): badge class, fallback icon, and what the click details say.
+  var MAP_KIND = {
+    enemy:   { cls: 'boss-map-enemy',   icon: 'bi-person-fill', label: 'Enemy',   note: 'On the map from the start.' },
+    turret:  { cls: 'boss-map-turret',  icon: 'bi-bullseye',    label: 'Turret',  note: 'Enemy structure; it doesn\'t move.' },
+    ally:    { cls: 'boss-map-ally',    icon: 'bi-shield-fill', label: 'Ally',    note: 'On your side.' },
+    neutral: { cls: 'boss-map-neutral', icon: 'bi-gear-fill',   label: 'Neutral', note: 'Part of the map\'s mechanics, on neither side.' },
+  };
+  var MAP_TERRAIN_NAME = { ground: 'Ground', concrete: 'Concrete', wetland: 'Wetland', sand: 'Sand', shoal: 'Shoal', ocean: 'Ocean', pit: 'Pit', low: 'Low building', high: 'High building' };
+
+  function loadMaps(done) {
+    if (window.MapsData) return done();
+    $.ajax({ url: 'data/maps/maps.js', dataType: 'script', cache: true }).done(done)
+      .fail(function () { alert('Could not load the map data.'); });
+  }
+
+  function showMap(season, st, diff) {
+    loadMaps(function () {
+      var diffs = Object.keys(st.maps);
+      if (!st.maps[diff]) diff = diffs[0];
+      var $modal = $('#boss-map-modal');
+      if (!$modal.length) {
+        $modal = $(
+          '<div class="modal fade boss-map-modal" id="boss-map-modal" tabindex="-1" aria-hidden="true" data-bs-theme="dark">' +
+            '<div class="modal-dialog modal-dialog-centered modal-xl"><div class="modal-content">' +
+              '<div class="modal-header"><h5 class="modal-title"></h5>' +
+                '<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>' +
+              '<div class="modal-body"></div>' +
+            '</div></div>' +
+          '</div>'
+        ).appendTo('body');
+        $modal.on('click', '[data-map-unit]', function () {
+          $modal.find('.boss-map-cell-sel').removeClass('boss-map-cell-sel');
+          $(this).closest('td').addClass('boss-map-cell-sel');
+          $modal.find('.boss-map-info').html(decodeURIComponent($(this).attr('data-map-unit')));
+        });
+        $modal.on('click', '[data-map-diff]', function () {
+          var d = $modal.data('ctx');
+          renderMap($modal, d.season, d.st, $(this).attr('data-map-diff'));
+        });
+      }
+      renderMap($modal, season, st, diff);
+      bootstrap.Modal.getOrCreateInstance($modal[0]).show();
+    });
+  }
+
+  function renderMap($modal, season, st, diff) {
+    var M = window.MapsData, m = M.maps[st.maps[diff]];
+    $modal.data('ctx', { season: season, st: st });
+    $modal.find('.modal-title').text('AC' + season.number + ' Stage ' + st.slot + ': ' + st.boss + ' (' + diff + ')');
+
+    // In-game view, from the map's camera angle: which grid direction is up
+    // and which is right in the table. The game's camera is diagonal; the
+    // table's up is the screen's up-left and its right the screen's up-right.
+    // All four checked against screenshots (AC13 1 and 4, AC8 1 and 3).
+    //   0: up +y, right +x    -90: up -x, right +y    180: up -y, right -x    90: up +x, right -y
+    var cam = ((Math.round(m.camera / 90) % 4) + 4) % 4; // 0, 1 (90), 2 (180), 3 (-90)
+    var X = m.cols - 1, Y = m.rows - 1;
+    var turned = cam % 2 === 1;
+    var R = turned ? m.cols : m.rows, C = turned ? m.rows : m.cols;
+    var at = [ // table cell -> grid [x, y]
+      function (r, c) { return [c, Y - r]; },
+      function (r, c) { return [X - r, Y - c]; },
+      function (r, c) { return [X - c, r]; },
+      function (r, c) { return [r, c]; },
+    ][cam];
+    var toCell = [ // grid -> table [row, col]
+      function (x, y) { return [Y - y, x]; },
+      function (x, y) { return [X - x, Y - y]; },
+      function (x, y) { return [y, X - x]; },
+      function (x, y) { return [x, y]; },
+    ][cam];
+
+    var place = {};
+    var put = function (x, y, item) { (place[x + ',' + y] = place[x + ',' + y] || []).push(item); };
+    // A unit bigger than one tile (a Titan's 2x2) is one merged cell over its
+    // footprint: the top-left table cell spans it and the rest are skipped.
+    var span = {}, skip = {};
+    var putAt = function (u, item) {
+      if (!u.tiles || !u.tiles.length) return put(u.x, u.y, item);
+      var cells = [[0, 0]].concat(u.tiles).map(function (t) { return toCell(u.x + t[0], u.y + t[1]); });
+      var rs = cells.map(function (c) { return c[0]; }), cs = cells.map(function (c) { return c[1]; });
+      var r0 = Math.min.apply(null, rs), c0 = Math.min.apply(null, cs);
+      cells.forEach(function (c) { if (c[0] !== r0 || c[1] !== c0) skip[c[0] + ',' + c[1]] = true; });
+      span[r0 + ',' + c0] = [Math.max.apply(null, rs) - r0 + 1, Math.max.apply(null, cs) - c0 + 1];
+      item.cls += ' boss-map-big';
+      var g = at(r0, c0);
+      put(g[0], g[1], item);
+    };
+    var mark = function (cls, inner, info, title) { return { cls: cls, inner: inner, info: info, title: title }; };
+    var markHtml = function (it, extra) {
+      return '<span class="boss-map-unit ' + it.cls + '" title="' + esc(it.title) + '" data-map-unit="' +
+        encodeURIComponent(it.info + (extra ? '<hr class="boss-map-hr">' + extra : '')) + '">' + it.inner + '</span>';
+    };
+    // One badge per tile, so the tiles stay square: a tile that already holds
+    // something shows its reinforcements only in the click details.
+    var cellHtml = function (items) {
+      if (!items) return '';
+      var shown = items.filter(function (it) { return !it.reinf; });
+      if (!shown.length) shown = [items[0]];
+      var rest = items.filter(function (it) { return shown.indexOf(it) === -1; }).map(function (it) { return it.info; }).join('<hr class="boss-map-hr">');
+      return markHtml(shown[0], [shown.slice(1).map(function (it) { return it.info; }).join('<hr class="boss-map-hr">'), rest].filter(Boolean).join('<hr class="boss-map-hr">'));
+    };
+    var info = function (title, lines) { return '<b>' + esc(title) + '</b>' + lines.map(function (l) { return '<div>' + l + '</div>'; }).join(''); };
+    var where = function (x, y) { return 'Tile (' + x + ', ' + y + ')'; };
+    m.units.forEach(function (u) {
+      var k = MAP_KIND[u.kind] || MAP_KIND.enemy;
+      var cls = u.boss ? 'boss-map-boss' : k.cls;
+      var img = u.avatar;
+      var inner = img ? '<img src="' + ASSET_BASE + img + '" alt="" />'
+        : '<i class="bi ' + (u.boss ? 'bi-star-fill' : k.icon) + '"></i>';
+      putAt(u, mark(cls, inner, info(u.name, [
+        u.boss ? 'Boss. See its skills below the map.' : k.label + (u.desc ? ' (' + esc(u.desc) + ')' : '') + '. ' + k.note,
+        where(u.x, u.y) + (u.tiles && u.tiles.length ? ', ' + (u.tiles.length + 1) + ' tiles' : ''),
+      ]), u.name));
+    });
+    m.slots.forEach(function (s) {
+      put(s.x, s.y, mark('boss-map-slot', s.n, info('Deploy slot ' + s.n, ['Where your team can start.', where(s.x, s.y)]), 'Deploy slot ' + s.n));
+    });
+    // Reinforcements in their spawn tiles, faded, with the turn they arrive.
+    m.reinforcements.forEach(function (r) {
+      if (r.x == null) return;
+      var inner = (r.avatar ? '<img src="' + ASSET_BASE + r.avatar + '" alt="" />' : '<i class="bi bi-person-fill"></i>') +
+        '<span class="boss-map-turn">' + esc(r.tag) + '</span>';
+      var it = mark((MAP_KIND[r.kind] || MAP_KIND.enemy).cls + ' boss-map-reinf-unit', inner,
+        info(r.name, ['Reinforcement. ' + esc(r.when), where(r.x, r.y)]), r.name + ' (reinforcement)');
+      it.reinf = true;
+      putAt(r, it);
+    });
+    m.objects.forEach(function (o) {
+      putAt(o, mark('boss-map-object', o.avatar ? '<img src="' + ASSET_BASE + o.avatar + '" alt="" />' : '<i class="bi bi-box-seam"></i>', info(o.name, [
+        'Scene object; blocks the tile.',
+        where(o.x, o.y),
+      ]), o.name));
+    });
+
+    var used = {};
+    var rows = '';
+    for (var r = 0; r < R; r++) {
+      rows += '<tr>';
+      for (var c = 0; c < C; c++) {
+        if (skip[r + ',' + c]) continue;
+        var g = at(r, c), x = g[0], y = g[1], sp = span[r + ',' + c];
+        var t = M.grid_types[parseInt(m.cells[y * m.cols + x], 16)] || 'pit';
+        used[t] = true;
+        rows += '<td class="bmt-' + t + '"' + (sp ? ' rowspan="' + sp[0] + '" colspan="' + sp[1] + '"' : '') + ' title="' + MAP_TERRAIN_NAME[t] + ' (' + x + ', ' + y + ')">' + cellHtml(place[x + ',' + y]) + '</td>';
+      }
+      rows += '</tr>';
+    }
+
+    var row = function (icon, text) { return '<div>' + icon + '<span>' + text + '</span></div>'; };
+    var badge = function (cls, inner) { return '<span class="boss-map-unit ' + cls + '">' + inner + '</span>'; };
+    var reinfBadge = function (tag) {
+      return badge('boss-map-enemy boss-map-reinf-unit', '<i class="bi bi-person-fill"></i><span class="boss-map-turn">' + tag + '</span>');
+    };
+    var kinds = {};
+    m.units.concat(m.reinforcements).forEach(function (u) { kinds[u.kind] = true; });
+    var tags = {};
+    m.reinforcements.forEach(function (r) { tags[r.tag.charAt(0) === 'T' ? 'T' : r.tag] = true; });
+    var legend =
+      '<div class="boss-map-legend-head">Terrain</div>' +
+      Object.keys(MAP_TERRAIN).filter(function (t) { return used[t]; }).map(function (t) {
+        return row('<span class="boss-map-swatch bmt-' + t + '"></span>', esc(MAP_TERRAIN[t]));
+      }).join('') +
+      '<div class="boss-map-legend-head">Units</div>' +
+      row(badge('boss-map-boss', '<i class="bi bi-star-fill"></i>'), 'Boss') +
+      row(badge('boss-map-turret', '<i class="bi bi-bullseye"></i>'), 'Enemy turret / structure') +
+      (kinds.ally ? row(badge('boss-map-ally', '<i class="bi bi-shield-fill"></i>'), 'On your side (e.g. a base to defend)') : '') +
+      (kinds.neutral ? row(badge('boss-map-neutral', '<i class="bi bi-gear-fill"></i>'), 'Neutral device') : '') +
+      row(badge('boss-map-enemy', '<i class="bi bi-person-fill"></i>'), 'Enemy') +
+      row(badge('boss-map-slot', '1'), 'Your deploy slot') +
+      row(badge('boss-map-object', '<i class="bi bi-box-seam"></i>'), 'Scene object') +
+      (m.reinforcements.length ?
+        '<div class="boss-map-legend-head">Reinforcements</div>' +
+        (tags.T ? row(reinfBadge('T3'), 'Arrives at the start of that turn (T2/7: either turn).') : '') +
+        (tags['+1'] ? row(reinfBadge('+1'), 'Arrives the turn after a unit is destroyed.') : '') +
+        (tags['↻'] ? row(reinfBadge('&#8635;'), 'Replaces a destroyed unit, and keeps respawning.') : '') +
+        (tags['!'] ? row(reinfBadge('!'), 'Arrives on a scripted event.') : '') +
+        row('', 'A tile that already holds a unit shows its reinforcement when you click it.')
+      : '');
+
+    var diffs = Object.keys(st.maps);
+    $modal.find('.modal-body').html(
+      (diffs.length > 1 ? '<div class="boss-map-diffs">' + diffs.map(function (d) {
+        return '<button type="button" class="filter-btn' + (d === diff ? ' active' : '') + '" data-map-diff="' + d + '">' + d + '</button>';
+      }).join('') + '</div>' : '') +
+      '<div class="boss-map-deploy"><i class="bi bi-people-fill"></i> Deploy up to <b>' + m.max_deploy + '</b> units' +
+        (m.slots.length > m.max_deploy ? ' (on any ' + m.max_deploy + ' of the ' + m.slots.length + ' deploy slots)' : '') + '.</div>' +
+      '<div class="boss-map-wrap">' +
+        '<div class="boss-map-scroll"><table class="boss-map">' + rows + '</table></div>' +
+        '<div class="boss-map-side">' +
+          '<div class="boss-map-info">Click a unit, slot or object on the map.</div>' +
+          '<div class="boss-map-legend">' + legend + '</div>' +
+        '</div>' +
+      '</div>'
+    );
   }
 
 
