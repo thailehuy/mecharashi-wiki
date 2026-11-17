@@ -453,8 +453,6 @@ Pages.sts = {
             // The scene's logo sits dead centre, behind the ST: shift it off-centre so it peeks out.
             (m.manufacturerBg ? ';background-position:90% center, center' : '') + '">' +
             '<img class="detail-portrait-img" src="' + portraitSrc + '"' + portraitErrorAttr + ' alt="' + $('<span>').text(m.name).html() + '" />' +
-            '<span class="version-badge">v' + $('<span>').text(m.version).html() + '</span>' +
-            '<span class="rank-badge ' + rankClass + '">' + rankLabel + '</span>' +
             skinNavHtml +
           '</div>' +
           // Shown by _initGachaFx() once the assets repo's manifest says this mech has one
@@ -463,6 +461,8 @@ Pages.sts = {
         '<div class="detail-info-col">' +
           '<h2 class="detail-name">' + $('<span>').text(m.name).html() + '</h2>' +
           '<div class="detail-tags mb-3">' +
+            '<span class="version-badge-inline">v' + $('<span>').text(m.version).html() + '</span>' +
+            '<span class="rank-badge rank-badge-inline ' + rankClass + '">' + rankLabel + '</span>' +
             '<span class="tag tag-license">' + $('<span>').text(m.type).html() + '</span>' +
             (m.dispatchGroup ? '<span class="tag tag-dispatch">' + m.dispatchGroup + '</span>' : '') +
             (m.dispatchVersion ? '<span class="tag tag-dispatch-ver">Dispatch v' + m.dispatchVersion + '</span>' : '') +

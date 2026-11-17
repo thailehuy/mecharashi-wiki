@@ -1237,6 +1237,12 @@ a.weapon-card {
   gap: 0.4rem;
 }
 
+.rank-badge.rank-badge-inline {
+  position: static;
+  font-size: 0.7rem;
+  padding: 0.15rem 0.4rem;
+}
+
 .version-badge-inline {
   font-size: 0.7rem;
   font-weight: 700;
