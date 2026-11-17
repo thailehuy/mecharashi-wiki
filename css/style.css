@@ -1125,6 +1125,34 @@ a.weapon-card {
 .skin-nav-prev { left: 12px; }
 .skin-nav-next { right: 12px; }
 
+.skin-name-badge,
+.skin-version-badge {
+  position: absolute;
+  top: 10px;
+  z-index: 2;
+  font-size: 0.75rem;
+  font-weight: 700;
+  background: rgba(42, 42, 74, 0.85);
+  color: #e0e0f0;
+  border: 1px solid rgba(224, 224, 240, 0.25);
+  border-radius: 4px;
+  padding: 0.15rem 0.45rem;
+  pointer-events: none;
+}
+
+.skin-version-badge { right: 10px; }
+
+.skin-name-badge {
+  left: 10px;
+  max-width: calc(100% - 90px);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.skin-name-badge[hidden],
+.skin-version-badge[hidden] { display: none; }
+
 .skin-dots {
   position: absolute;
   bottom: 12px;

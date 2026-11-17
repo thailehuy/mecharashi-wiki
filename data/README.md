@@ -159,6 +159,22 @@ Global's English (matched on the Chinese text), and the rest stay in Chinese.
 compile.py adds each row to the ST's entry in `data/mechs/lore.js` as
 `paint`.
 
+### `skin_versions.json`
+
+The Global version each alternate skin came out in, shown as a badge on the
+detail page's portrait while that skin is selected. `pilots` / `mechs` → wiki
+ID → skin letter/variant (as in `skins`) → `name`, `version`, `source` (the
+event, shop or roulette that gives it) and `opens` (its start date). Dates
+come from the EN client's open times (`ConfigDataCommonFuncOpenTimeInfo`) via
+the skin's own `OpenTimeId` or the activity that gives it; the version is the
+Global patch whose banners (`data/banners/banners.json`) span that date.
+Skins with no source in the client (Dragon's Spirit Blade, [Crew Member]) and
+alternative story skins are left out.
+Skins Global doesn't have yet come from the CN client with `"cn": true`, a
+fan-translated `name` and the original `name_cn`; their version is the CN
+patch running on that date, from the CN pilot banners (on CN, 2.7 started
+before 2.6).
+
 ### `pilot_neurons.json`
 
 ```json

@@ -86,6 +86,12 @@ def validate(t):
         ref('mechs', mid, 'mech_lore')
     for mid in t['mech_paint']:
         ref('mechs', mid, 'mech_paint')
+    for kind, table, field in (('pilots', 'pilots', 'skins'), ('mechs', 'mechs', 'skins')):
+        for uid, skins in t['skin_versions'][kind].items():
+            ref(table, uid, f'skin_versions.{kind}')
+            for var in skins:
+                if uid in t[table] and var not in t[table][uid].get(field, []):
+                    errors.append(f'skin_versions.{kind}[{uid}]: unknown skin {var!r}')
 
     if errors:
         print('FAILED: data/db has broken references')
@@ -143,6 +149,10 @@ def build_pilots(t):
             'stats': {out: p.get('stats', {}).get(db) for db, out in STAT_KEYS},
             'version': p.get('version', '1.0'),
         }
+        skin_versions = {k: v['version'] for k, v in t['skin_versions']['pilots'].get(pid, {}).items()}
+        if skin_versions:
+            entry['SkinVersions'] = skin_versions
+            entry['SkinNames'] = {k: v['name'] for k, v in t['skin_versions']['pilots'].get(pid, {}).items()}
         for n in t['pilot_neurons'][pid]:
             node = {'ID': n['id'], 'UnitType': n['type']}
             node.update(rename(n, [('icon', 'icon'), ('innate', 'skill3')]))
@@ -196,6 +206,10 @@ def build_mechs(t):
         entry['modules'] = [mech_module_out(t['modules'], x['family'], x['level']) for x in m.get('modules', [])]
         entry.update(rename(m, [('skins', 'AlternateSkins'), ('hidden_modules', 'hiddenModules'),
                                 ('dispatch_group', 'dispatchGroup'), ('dispatch_version', 'dispatchVersion')]))
+        skin_versions = {k: v['version'] for k, v in t['skin_versions']['mechs'].get(mid, {}).items()}
+        if skin_versions:
+            entry['SkinVersions'] = skin_versions
+            entry['SkinNames'] = {k: v['name'] for k, v in t['skin_versions']['mechs'].get(mid, {}).items()}
         entry['version'] = m.get('version', '1.0')
         mechs.append(entry)
     mechs.sort(key=lambda m: (QUALITY_ORDER.get(m.get('quality', ''), 9), m.get('name', '')))
@@ -355,7 +369,7 @@ def run(script):
 
 
 TABLES = ['pilots', 'pilot_neurons', 'neural_partitions', 'skills', 'mechs', 'mech_parts',
-          'modules', 'weapons', 'backpacks', 'materials', 'pilot_lore', 'mech_lore', 'mech_paint']
+          'modules', 'weapons', 'backpacks', 'materials', 'pilot_lore', 'mech_lore', 'mech_paint', 'skin_versions']
 
 BUNDLES = [('pilots', 'PilotsData', build_pilots), ('mechs', 'MechsData', build_mechs),
            ('modules', 'ModulesData', build_modules), ('weapons', 'WeaponsData', build_weapons),

@@ -281,12 +281,25 @@ Pages.sts = {
       ? mechPortraitErrorAttr(m)
       : ' onerror="this.onerror=null;this.src=\'' + mechPortraitSrc(m) + '\';"';
 
+    function skinVersionFor(i) {
+      return i > 0 ? (m.SkinVersions || {})[skinVariants[i]] || '' : '';
+    }
+    function skinNameFor(i) {
+      return i > 0 ? (m.SkinNames || {})[skinVariants[i]] || '' : '';
+    }
     var skinNavHtml = '';
     if (skinVariants.length > 1) {
       skinNavHtml =
         '<button class="skin-nav skin-nav-prev" data-skin-nav="prev" aria-label="Previous skin">&#10094;</button>' +
         '<button class="skin-nav skin-nav-next" data-skin-nav="next" aria-label="Next skin">&#10095;</button>' +
         '<div class="portrait-loading"></div>' +
+        // Global version the shown alternate skin came out in (data/db/skin_versions.json).
+        '<span class="skin-name-badge"' + (skinNameFor(skinIdx) ? '' : ' hidden') + '>' +
+          $('<span>').text(skinNameFor(skinIdx)).html() +
+        '</span>' +
+        '<span class="skin-version-badge"' + (skinVersionFor(skinIdx) ? '' : ' hidden') + '>' +
+          (skinVersionFor(skinIdx) ? 'v' + $('<span>').text(skinVersionFor(skinIdx)).html() : '') +
+        '</span>' +
         '<div class="skin-dots">' +
           skinVariants.map(function (v, i) {
             return '<span class="skin-dot' + (i === skinIdx ? ' active' : '') + '"></span>';
@@ -328,6 +341,10 @@ Pages.sts = {
         preload.src = newSrc;
 
         $('.skin-dot').removeClass('active').eq(nextIdx).addClass('active');
+        var nextVer = skinVersionFor(nextIdx);
+        var nextName = skinNameFor(nextIdx);
+        $('.skin-name-badge').text(nextName).prop('hidden', !nextName);
+        $('.skin-version-badge').text(nextVer ? 'v' + nextVer : '').prop('hidden', !nextVer);
       });
     }
 
