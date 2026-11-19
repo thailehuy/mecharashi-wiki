@@ -82,6 +82,8 @@ def validate(t):
         crafting_refs(m, f'materials[{key}].crafting')
     for pid in t['pilot_lore']:
         ref('pilots', pid, 'pilot_lore')
+    for pid in t['pilot_links']:
+        ref('pilots', pid, 'pilot_links')
     for mid in t['mech_lore']:
         ref('mechs', mid, 'mech_lore')
     for mid in t['mech_paint']:
@@ -128,6 +130,9 @@ def build_pilots(t):
             'Profession': p.get('profession', ''),
             'Occupation': p.get('occupation', ''),
             'quality': p.get('quality', ''),
+            'HasLinks': pid in t['pilot_links'],
+            # A Link with a combat passive (the S-rank ones, two levels), not a flat +3% stat.
+            'HasLinkUpgrade': len(t['pilot_links'].get(pid, {}).get('link', {}).get('levels', [])) > 1,
             'Talent0_2Ability': skill_out(skills, talents[0]) if len(talents) > 0 else '',
             'Talent3_5Ability': skill_out(skills, talents[1]) if len(talents) > 1 else '',
             'NeuralDriveTemplate': {
@@ -318,6 +323,8 @@ def build_pilot_lore(t):
                         ('Height', row.get('height'))], row.get('introduction') or p.get('introduction'), row)
         if out:
             lore[pid] = out
+        if pid in t['pilot_links']:
+            lore.setdefault(pid, {})['links'] = t['pilot_links'][pid]
     return lore
 
 
@@ -369,7 +376,7 @@ def run(script):
 
 
 TABLES = ['pilots', 'pilot_neurons', 'neural_partitions', 'skills', 'mechs', 'mech_parts',
-          'modules', 'weapons', 'backpacks', 'materials', 'pilot_lore', 'mech_lore', 'mech_paint', 'skin_versions']
+          'modules', 'weapons', 'backpacks', 'materials', 'pilot_lore', 'pilot_links', 'mech_lore', 'mech_paint', 'skin_versions']
 
 BUNDLES = [('pilots', 'PilotsData', build_pilots), ('mechs', 'MechsData', build_mechs),
            ('modules', 'ModulesData', build_modules), ('weapons', 'WeaponsData', build_weapons),

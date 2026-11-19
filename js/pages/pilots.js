@@ -32,6 +32,16 @@ var SKIN_BADGE_HTML =
     '</svg>' +
   '</span>';
 
+// Brain icon on listing cards of pilots whose Link has a combat passive (CN v4.0).
+var LINK_BADGE_HTML =
+  '<span class="skin-badge link-badge" title="Link passive" aria-label="Link passive">' +
+    '<svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' +
+      '<path d="M12 5a3 3 0 0 0-5.6-1.5A3 3 0 0 0 3.5 7.6a3.5 3.5 0 0 0 .6 6.2A3.5 3.5 0 0 0 8 19.5a2.5 2.5 0 0 0 4-1V5z"/>' +
+      '<path d="M12 5a3 3 0 0 1 5.6-1.5 3 3 0 0 1 2.9 4.1 3.5 3.5 0 0 1-.6 6.2 3.5 3.5 0 0 1-3.9 5.7 2.5 2.5 0 0 1-4-1"/>' +
+      '<path d="M8 9.5a2 2 0 0 1 2 2M16 9.5a2 2 0 0 0-2 2M7.5 15a2 2 0 0 1 2-1.5M16.5 15a2 2 0 0 0-2-1.5"/>' +
+    '</svg>' +
+  '</span>';
+
 // Availability tags (shared with sts.js): collab / limited / collab-limited units.
 var AVAILABILITY_INFO = {
   C:  { cls: 'avail-c',  label: 'Collab',         desc: 'Collab unit' },
@@ -242,6 +252,7 @@ Pages.pilots = {
               '<span class="version-badge">v' + $('<span>').text(p.version).html() + '</span>' +
               '<span class="rank-badge ' + rankClass + '">' + rankLabel + '</span>' +
               ((p.AlternateSkins || []).length ? SKIN_BADGE_HTML : '') +
+              (p.HasLinkUpgrade ? LINK_BADGE_HTML : '') +
             '</div>' +
             '<div class="pilot-info">' +
               '<div class="pilot-info-text">' +
@@ -449,11 +460,12 @@ Pages.pilots = {
     );
   },
 
-  // Skills / Neural Drive / Lore / Voice Lines tabs under the portrait (js/lore.js, js/voice.js).
+  // Skills / Neural Drive / Link / Lore / Voice Lines tabs under the portrait (js/lore.js, js/voice.js).
   _renderTabs: function (p) {
     return Lore.tabsHtml([
       ['skills', 'Skills', this._renderSkills(p.biomimetic_computer_data) + this._renderSummonSkills(p) + this._renderFormSkillGroups(p)],
       ['neural', 'Neural Drive', this._renderNeuralDrive(p.NeuralDriveTemplate, p.stats, p.Occupation)],
+      ['links', 'Link', p.HasLinks ? Lore.loadingHtml : ''],
       ['lore', 'Lore', Lore.loadingHtml],
       ['voice', 'Voice Lines', Lore.loadingHtml]
     ], { kind: 'pilots', id: p.ID });
