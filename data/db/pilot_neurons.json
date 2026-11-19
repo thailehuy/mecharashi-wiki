@@ -26261,5 +26261,593 @@
       "type": "0",
       "skill": "202301"
     }
+  ],
+  "10103188": [
+    {
+      "id": "1010318800",
+      "unit": "0",
+      "type": "6",
+      "icon": "Icon_pilotclass_001_l",
+      "innate": "100001",
+      "cost": "2:1:10801000:2/",
+      "skill": "100001"
+    },
+    {
+      "id": "1010318801",
+      "unit": "17",
+      "type": "5",
+      "icon": "Icon_zoneskill_0003",
+      "bonus": "PilotGammaChipBandwidthAdd:3",
+      "cost": "2:1:10802005:5/2:1:10802004:8/"
+    },
+    {
+      "id": "1010318802",
+      "unit": "19",
+      "type": "5",
+      "icon": "Icon_zoneskill_0001",
+      "bonus": "PilotAlphaChipBandwidthAdd:3",
+      "cost": "2:1:10802005:5/2:1:10802004:8/"
+    },
+    {
+      "id": "1010318803",
+      "unit": "23",
+      "type": "5",
+      "icon": "Icon_zoneskill_0003",
+      "bonus": "PilotGammaChipBandwidthAdd:3",
+      "cost": "2:1:10802006:6/2:1:10802005:10/"
+    },
+    {
+      "id": "1010318804",
+      "unit": "25",
+      "type": "5",
+      "icon": "Icon_zoneskill_0002",
+      "bonus": "PilotBetaChipBandwidthAdd:3",
+      "cost": "2:1:10802006:6/2:1:10802005:10/"
+    },
+    {
+      "id": "1010318805",
+      "unit": "29",
+      "type": "5",
+      "icon": "Icon_zoneskill_0003",
+      "bonus": "PilotGammaChipBandwidthAdd:3",
+      "cost": "2:1:10802007:5/2:1:10804007:5/2:1:10802006:8/2:1:10804006:8/"
+    },
+    {
+      "id": "1010318806",
+      "unit": "33",
+      "type": "5",
+      "icon": "Icon_zoneskill_0003",
+      "bonus": "PilotGammaChipBandwidthAdd:3",
+      "cost": "2:1:10802008:6/2:1:10804008:6/2:1:10802007:10/2:1:10804007:10/"
+    },
+    {
+      "id": "1010318807",
+      "unit": "35",
+      "type": "5",
+      "icon": "Icon_zoneskill_0003",
+      "bonus": "PilotGammaChipBandwidthAdd:3",
+      "cost": "2:1:10801008:12/2:1:10802008:12/2:1:10801007:20/2:1:10802007:20/"
+    },
+    {
+      "id": "1010318808",
+      "unit": "3",
+      "type": "1",
+      "icon": "Icon_zoneskill_0001",
+      "cost": "2:1:10801002:2/"
+    },
+    {
+      "id": "1010318809",
+      "unit": "11",
+      "type": "1",
+      "icon": "Icon_zoneskill_0002",
+      "cost": "2:1:10801004:4/2:1:10801003:6/"
+    },
+    {
+      "id": "1010318810",
+      "unit": "15",
+      "type": "1",
+      "icon": "Icon_zoneskill_0004",
+      "cost": "2:1:10801005:5/2:1:10801004:8/"
+    },
+    {
+      "id": "1010318811",
+      "unit": "27",
+      "type": "1",
+      "icon": "Icon_zoneskill_0005",
+      "bonus": "PilotGammaChipBandwidthAdd:4",
+      "cost": "2:1:10801007:5/2:1:10803007:5/2:1:10801006:8/2:1:10803006:8/"
+    },
+    {
+      "id": "1010318812",
+      "unit": "1",
+      "type": "0",
+      "bonus": "PilotBasePropertyMeleeAdd:242/PilotBasePropertyAssaultAdd:234",
+      "cost": "2:1:10801001:2/",
+      "skill": "102402"
+    },
+    {
+      "id": "1010318813",
+      "unit": "5",
+      "type": "0",
+      "bonus": "PilotBasePropertyMeleeAdd:363/PilotBasePropertyAssaultAdd:352",
+      "cost": "2:1:10802002:2/",
+      "skill": "102403"
+    },
+    {
+      "id": "1010318814",
+      "unit": "7",
+      "type": "0",
+      "bonus": "PilotBasePropertyDefenseAdd:227",
+      "cost": "2:1:10801003:3/2:1:10801002:5/",
+      "skill": "102404"
+    },
+    {
+      "id": "1010318815",
+      "unit": "9",
+      "type": "0",
+      "bonus": "PilotBasePropertyDefenseAdd:272",
+      "cost": "2:1:10802003:3/2:1:10802002:5/",
+      "skill": "102405"
+    },
+    {
+      "id": "1010318816",
+      "unit": "13",
+      "type": "0",
+      "bonus": "PilotBasePropertyMeleeAdd:509/PilotBasePropertyAssaultAdd:492",
+      "cost": "2:1:10802004:4/2:1:10802003:6/",
+      "skill": "102406"
+    },
+    {
+      "id": "1010318817",
+      "unit": "21",
+      "type": "0",
+      "bonus": "PilotBasePropertyDefenseAdd:567",
+      "cost": "2:1:10801006:6/2:1:10801005:10/",
+      "skill": "102407"
+    },
+    {
+      "id": "1010318818",
+      "unit": "31",
+      "type": "0",
+      "bonus": "PilotBasePropertyMeleeAdd:1817/PilotBasePropertyAssaultAdd:1759",
+      "cost": "2:1:10801008:6/2:1:10803008:6/2:1:10801007:10/2:1:10803007:10/",
+      "skill": "102408"
+    },
+    {
+      "id": "1010318819",
+      "unit": "2",
+      "type": "2",
+      "icon": "3-1",
+      "bonus": "PilotBasePropertyDefenseAdd:170",
+      "cost": "2:1:10802001:2/"
+    },
+    {
+      "id": "1010318820",
+      "unit": "4",
+      "type": "2",
+      "icon": "3-1",
+      "bonus": "PilotBasePropertyDefenseAdd:204",
+      "cost": "2:1:10801002:2/"
+    },
+    {
+      "id": "1010318821",
+      "unit": "6",
+      "type": "2",
+      "icon": "3-1",
+      "bonus": "PilotBasePropertyMeleeAdd:303/PilotBasePropertyAssaultAdd:293",
+      "cost": "2:1:10802002:2/"
+    },
+    {
+      "id": "1010318822",
+      "unit": "8",
+      "type": "2",
+      "icon": "3-1",
+      "bonus": "PilotBasePropertyMeleeAdd:436/PilotBasePropertyAssaultAdd:422",
+      "cost": "2:1:10801003:3/2:1:10801002:5/"
+    },
+    {
+      "id": "1010318823",
+      "unit": "10",
+      "type": "2",
+      "icon": "3-1",
+      "bonus": "PilotBasePropertyMeleeAdd:363/PilotBasePropertyAssaultAdd:352",
+      "cost": "2:1:10802003:3/2:1:10802002:5/"
+    },
+    {
+      "id": "1010318824",
+      "unit": "12",
+      "type": "2",
+      "icon": "3-1",
+      "bonus": "PilotBasePropertyDefenseAdd:340",
+      "cost": "2:1:10801004:4/2:1:10801003:6/"
+    },
+    {
+      "id": "1010318825",
+      "unit": "14",
+      "type": "2",
+      "icon": "3-1",
+      "bonus": "PilotBasePropertyDefenseAdd:283",
+      "cost": "2:1:10802004:4/2:1:10802003:6/"
+    },
+    {
+      "id": "1010318826",
+      "unit": "16",
+      "type": "2",
+      "icon": "3-1",
+      "bonus": "PilotBasePropertyMeleeAdd:945/PilotBasePropertyAssaultAdd:914",
+      "cost": "2:1:10801005:5/2:1:10801004:8/"
+    },
+    {
+      "id": "1010318827",
+      "unit": "18",
+      "type": "2",
+      "icon": "3-1",
+      "bonus": "PilotBasePropertyDefenseAdd:544",
+      "cost": "2:1:10801005:5/2:1:10801004:8/"
+    },
+    {
+      "id": "1010318828",
+      "unit": "20",
+      "type": "2",
+      "icon": "3-1",
+      "bonus": "PilotBasePropertyMeleeAdd:788/PilotBasePropertyAssaultAdd:762",
+      "cost": "2:1:10802005:5/2:1:10802004:8/"
+    },
+    {
+      "id": "1010318829",
+      "unit": "22",
+      "type": "2",
+      "icon": "3-1",
+      "bonus": "PilotBasePropertyDefenseAdd:680",
+      "cost": "2:1:10801006:6/2:1:10801005:10/"
+    },
+    {
+      "id": "1010318830",
+      "unit": "24",
+      "type": "2",
+      "icon": "3-1",
+      "bonus": "PilotBasePropertyMeleeAdd:1090/PilotBasePropertyAssaultAdd:1055",
+      "cost": "2:1:10801006:6/2:1:10801005:10/"
+    },
+    {
+      "id": "1010318831",
+      "unit": "26",
+      "type": "2",
+      "icon": "3-1",
+      "bonus": "PilotBasePropertyMeleeAdd:908/PilotBasePropertyAssaultAdd:879",
+      "cost": "2:1:10802006:6/2:1:10802005:10/"
+    },
+    {
+      "id": "1010318832",
+      "unit": "28",
+      "type": "2",
+      "icon": "3-1",
+      "bonus": "PilotBasePropertyMeleeAdd:1381/PilotBasePropertyAssaultAdd:1336",
+      "cost": "2:1:10801007:5/2:1:10803007:5/2:1:10801006:8/2:1:10803006:8/"
+    },
+    {
+      "id": "1010318833",
+      "unit": "30",
+      "type": "2",
+      "icon": "3-1",
+      "bonus": "PilotBasePropertyDefenseAdd:855",
+      "cost": "2:1:10802007:5/2:1:10804007:5/2:1:10802006:8/2:1:10804006:8/"
+    },
+    {
+      "id": "1010318834",
+      "unit": "32",
+      "type": "2",
+      "icon": "3-1",
+      "bonus": "PilotBasePropertyDefenseAdd:1361",
+      "cost": "2:1:10801008:6/2:1:10803008:6/2:1:10801007:10/2:1:10803007:10/"
+    },
+    {
+      "id": "1010318835",
+      "unit": "34",
+      "type": "2",
+      "icon": "3-1",
+      "bonus": "PilotBasePropertyDefenseAdd:1134",
+      "cost": "2:1:10802008:6/2:1:10804008:6/2:1:10802007:10/2:1:10804007:10/"
+    },
+    {
+      "id": "1010318836",
+      "unit": "3",
+      "type": "0",
+      "skill": "102401"
+    }
+  ],
+  "10103189": [
+    {
+      "id": "1010318900",
+      "unit": "0",
+      "type": "6",
+      "icon": "Icon_pilotclass_004_l",
+      "innate": "400001",
+      "cost": "2:1:10806000:2/",
+      "skill": "400001"
+    },
+    {
+      "id": "1010318901",
+      "unit": "17",
+      "type": "5",
+      "icon": "Icon_zoneskill_0003",
+      "bonus": "PilotGammaChipBandwidthAdd:3",
+      "cost": "2:1:10806005:5/2:1:10806004:8/"
+    },
+    {
+      "id": "1010318902",
+      "unit": "19",
+      "type": "5",
+      "icon": "Icon_zoneskill_0001",
+      "bonus": "PilotAlphaChipBandwidthAdd:3",
+      "cost": "2:1:10806005:5/2:1:10806004:8/"
+    },
+    {
+      "id": "1010318903",
+      "unit": "23",
+      "type": "5",
+      "icon": "Icon_zoneskill_0003",
+      "bonus": "PilotGammaChipBandwidthAdd:3",
+      "cost": "2:1:10806006:6/2:1:10806005:10/"
+    },
+    {
+      "id": "1010318904",
+      "unit": "25",
+      "type": "5",
+      "icon": "Icon_zoneskill_0002",
+      "bonus": "PilotBetaChipBandwidthAdd:3",
+      "cost": "2:1:10806006:6/2:1:10806005:10/"
+    },
+    {
+      "id": "1010318905",
+      "unit": "29",
+      "type": "5",
+      "icon": "Icon_zoneskill_0003",
+      "bonus": "PilotGammaChipBandwidthAdd:3",
+      "cost": "2:1:10806007:5/2:1:10802007:5/2:1:10806006:8/2:1:10802006:8/"
+    },
+    {
+      "id": "1010318906",
+      "unit": "33",
+      "type": "5",
+      "icon": "Icon_zoneskill_0003",
+      "bonus": "PilotGammaChipBandwidthAdd:3",
+      "cost": "2:1:10806008:6/2:1:10802008:6/2:1:10806007:10/2:1:10802007:10/"
+    },
+    {
+      "id": "1010318907",
+      "unit": "35",
+      "type": "5",
+      "icon": "Icon_zoneskill_0003",
+      "bonus": "PilotGammaChipBandwidthAdd:3",
+      "cost": "2:1:10805008:12/2:1:10806008:12/2:1:10805007:20/2:1:10806007:20/"
+    },
+    {
+      "id": "1010318908",
+      "unit": "3",
+      "type": "1",
+      "icon": "Icon_zoneskill_0001",
+      "cost": "2:1:10805002:2/"
+    },
+    {
+      "id": "1010318909",
+      "unit": "11",
+      "type": "1",
+      "icon": "Icon_zoneskill_0002",
+      "cost": "2:1:10805004:4/2:1:10805003:6/"
+    },
+    {
+      "id": "1010318910",
+      "unit": "15",
+      "type": "1",
+      "icon": "Icon_zoneskill_0004",
+      "cost": "2:1:10805005:5/2:1:10805004:8/"
+    },
+    {
+      "id": "1010318911",
+      "unit": "27",
+      "type": "1",
+      "icon": "Icon_zoneskill_0005",
+      "bonus": "PilotGammaChipBandwidthAdd:4",
+      "cost": "2:1:10805007:5/2:1:10801007:5/2:1:10805006:8/2:1:10801006:8/"
+    },
+    {
+      "id": "1010318912",
+      "unit": "1",
+      "type": "0",
+      "bonus": "PilotBasePropertyRangedAdd:20",
+      "cost": "2:1:10805001:2/",
+      "skill": "401502"
+    },
+    {
+      "id": "1010318913",
+      "unit": "5",
+      "type": "0",
+      "bonus": "PilotBasePropertyRangedAdd:24",
+      "cost": "2:1:10806002:2/",
+      "skill": "401503"
+    },
+    {
+      "id": "1010318914",
+      "unit": "7",
+      "type": "0",
+      "bonus": "PilotBasePropertyDefenseAdd:20",
+      "cost": "2:1:10805003:3/2:1:10805002:5/",
+      "skill": "401504"
+    },
+    {
+      "id": "1010318915",
+      "unit": "9",
+      "type": "0",
+      "bonus": "PilotBasePropertyDefenseAdd:24",
+      "cost": "2:1:10806003:3/2:1:10806002:5/",
+      "skill": "401505"
+    },
+    {
+      "id": "1010318916",
+      "unit": "13",
+      "type": "0",
+      "bonus": "PilotBasePropertyRangedAdd:42",
+      "cost": "2:1:10806004:4/2:1:10806003:6/",
+      "skill": "401506"
+    },
+    {
+      "id": "1010318917",
+      "unit": "21",
+      "type": "0",
+      "bonus": "PilotBasePropertyDefenseAdd:50",
+      "cost": "2:1:10805006:6/2:1:10805005:10/",
+      "skill": "401507"
+    },
+    {
+      "id": "1010318918",
+      "unit": "31",
+      "type": "0",
+      "bonus": "PilotBasePropertyRangedAdd:140",
+      "cost": "2:1:10805008:6/2:1:10801008:6/2:1:10805007:10/2:1:10801007:10/",
+      "skill": "401508"
+    },
+    {
+      "id": "1010318919",
+      "unit": "2",
+      "type": "2",
+      "icon": "3-1",
+      "bonus": "PilotBasePropertyDefenseAdd:15",
+      "cost": "2:1:10806001:2/"
+    },
+    {
+      "id": "1010318920",
+      "unit": "4",
+      "type": "2",
+      "icon": "3-1",
+      "bonus": "PilotBasePropertyDefenseAdd:18",
+      "cost": "2:1:10805002:2/"
+    },
+    {
+      "id": "1010318921",
+      "unit": "6",
+      "type": "2",
+      "icon": "3-1",
+      "bonus": "PilotBasePropertyRangedAdd:20",
+      "cost": "2:1:10806002:2/"
+    },
+    {
+      "id": "1010318922",
+      "unit": "8",
+      "type": "2",
+      "icon": "3-1",
+      "bonus": "PilotBasePropertyRangedAdd:30",
+      "cost": "2:1:10805003:3/2:1:10805002:5/"
+    },
+    {
+      "id": "1010318923",
+      "unit": "10",
+      "type": "2",
+      "icon": "3-1",
+      "bonus": "PilotBasePropertyRangedAdd:25",
+      "cost": "2:1:10806003:3/2:1:10806002:5/"
+    },
+    {
+      "id": "1010318924",
+      "unit": "12",
+      "type": "2",
+      "icon": "3-1",
+      "bonus": "PilotBasePropertyDefenseAdd:30",
+      "cost": "2:1:10805004:4/2:1:10805003:6/"
+    },
+    {
+      "id": "1010318925",
+      "unit": "14",
+      "type": "2",
+      "icon": "3-1",
+      "bonus": "PilotBasePropertyDefenseAdd:25",
+      "cost": "2:1:10806004:4/2:1:10806003:6/"
+    },
+    {
+      "id": "1010318926",
+      "unit": "16",
+      "type": "2",
+      "icon": "3-1",
+      "bonus": "PilotBasePropertyRangedAdd:72",
+      "cost": "2:1:10805005:5/2:1:10805004:8/"
+    },
+    {
+      "id": "1010318927",
+      "unit": "18",
+      "type": "2",
+      "icon": "3-1",
+      "bonus": "PilotBasePropertyDefenseAdd:48",
+      "cost": "2:1:10805005:5/2:1:10805004:8/"
+    },
+    {
+      "id": "1010318928",
+      "unit": "20",
+      "type": "2",
+      "icon": "3-1",
+      "bonus": "PilotBasePropertyRangedAdd:60",
+      "cost": "2:1:10806005:5/2:1:10806004:8/"
+    },
+    {
+      "id": "1010318929",
+      "unit": "22",
+      "type": "2",
+      "icon": "3-1",
+      "bonus": "PilotBasePropertyDefenseAdd:60",
+      "cost": "2:1:10805006:6/2:1:10805005:10/"
+    },
+    {
+      "id": "1010318930",
+      "unit": "24",
+      "type": "2",
+      "icon": "3-1",
+      "bonus": "PilotBasePropertyRangedAdd:84",
+      "cost": "2:1:10805006:6/2:1:10805005:10/"
+    },
+    {
+      "id": "1010318931",
+      "unit": "26",
+      "type": "2",
+      "icon": "3-1",
+      "bonus": "PilotBasePropertyRangedAdd:70",
+      "cost": "2:1:10806006:6/2:1:10806005:10/"
+    },
+    {
+      "id": "1010318932",
+      "unit": "28",
+      "type": "2",
+      "icon": "3-1",
+      "bonus": "PilotBasePropertyRangedAdd:114",
+      "cost": "2:1:10805007:5/2:1:10801007:5/2:1:10805006:8/2:1:10801006:8/"
+    },
+    {
+      "id": "1010318933",
+      "unit": "30",
+      "type": "2",
+      "icon": "3-1",
+      "bonus": "PilotBasePropertyDefenseAdd:65",
+      "cost": "2:1:10806007:5/2:1:10802007:5/2:1:10806006:8/2:1:10802006:8/"
+    },
+    {
+      "id": "1010318934",
+      "unit": "32",
+      "type": "2",
+      "icon": "3-1",
+      "bonus": "PilotBasePropertyDefenseAdd:120",
+      "cost": "2:1:10805008:6/2:1:10801008:6/2:1:10805007:10/2:1:10801007:10/"
+    },
+    {
+      "id": "1010318935",
+      "unit": "34",
+      "type": "2",
+      "icon": "3-1",
+      "bonus": "PilotBasePropertyDefenseAdd:100",
+      "cost": "2:1:10806008:6/2:1:10802008:6/2:1:10806007:10/2:1:10802007:10/"
+    },
+    {
+      "id": "1010318936",
+      "unit": "3",
+      "type": "0",
+      "skill": "401501"
+    }
   ]
 }

@@ -10644,5 +10644,242 @@
     "icon": "Icon_skill_main_1038",
     "ap": "2",
     "type": "EquipmentSkill"
+  },
+  "102450": {
+    "kind": "talent",
+    "name": "Blightblade",
+    "effect": "Floating Blade basic skill <skill activeSkill=2001>[Blade Assault]</skill> is upgraded to <skill activeSkill=2006>[Blade Lock-On Assault]</skill>. When an active attack with Floating Blade destroys a part, generates <color=#F74848>1</color> <terrian ID=1024501 /> at the target's position. Can use <skill activeSkill=1024501>[Blade Shift]</skill> <color=#F74848>1</color> time per turn.",
+    "icon": "Icon_skill_talent_5173",
+    "buffs": "1024501/1024502/1024504/1024505/1024506/1024507/1024508/1024509/900119"
+  },
+  "102451": {
+    "kind": "talent",
+    "name": "Blightblade",
+    "icon": "Icon_skill_talent_5173",
+    "effect": "Floating Blade basic skill <skill activeSkill=2001>[Blade Assault]</skill> is upgraded to <skill activeSkill=2006>[Blade Lock-On Assault]</skill>. When an active attack with Floating Blade destroys a part, generates <color=#F74848>1</color> <terrian ID=1024501 /> at the target's position. Can use <skill activeSkill=1024501>[Blade Shift]</skill> <color=#F74848>1</color> time per turn.\nCritical Hit chance increases by <color=#F74848>15%</color>, Final DMG Dealt increases by <color=#F74848>10%</color>. Floating Blade range <color=#F74848>+1</color>.",
+    "buffs": "1024501/1024502/1024504/1024505/1024506/1024507/1024508/1024509/1024511/1024512/900119"
+  },
+  "102401": {
+    "kind": "skill",
+    "name": "Twinblade Charge",
+    "icon": "Icon_skill_order_1137",
+    "ap": "2",
+    "type": "SpecialAssault",
+    "describe": "Uses two Alter-Blades to dash <color=#F74848>3</color> tiles in the selected direction, dealing <color=#F74848>0.9</color>x DMG to the target, prioritizing the part with the highest HP. Before attacking, consumes all <terrian ID=1024501 /> on the path; each one consumed increases this attack's DMG Dealt and Critical Hit chance by <color=#F74848>15%</color>."
+  },
+  "102402": {
+    "kind": "skill",
+    "name": "Flowing Blade Execution",
+    "icon": "Icon_skill_order_1175",
+    "ap": "4",
+    "type": "SpecialAssault",
+    "describe": "Uses Floating Blade to attack up to <color=#F74848>3</color> targets within range, dealing <color=#F74848>1.1</color>x DMG. Before attacking, can apply <buf ID=900014>[Aiming]</buf> to each target separately, and the same target can be selected repeatedly; repeated attacks on the same target deal <color=#F74848>35%</color> DMG. For each <color=#F74848>1</color> <terrian ID=1024501 /> within <color=#F74848>3</color> tiles of the target when attacking, skill multiplier <color=#F74848>+0.1</color>, up to <color=#F74848>+0.3</color>."
+  },
+  "102403": {
+    "kind": "skill",
+    "name": "Final Verdict",
+    "icon": "Icon_skill_passive_1182",
+    "effect": "When there are <color=#F74848>3</color> or fewer <terrian ID=1024501 /> on the field, Movement <color=#F74848>+1</color> and DMG Dealt to the enemy's part with the lowest HP increases by <color=#F74848>15%</color>.",
+    "buffs": "1024031/1024032"
+  },
+  "102404": {
+    "kind": "skill",
+    "name": "Phantom Blade Assault",
+    "icon": "Icon_skill_order_1176",
+    "ap": "3",
+    "type": "SpecialAssault",
+    "describe": "All <terrian ID=1024501 /> on the field attack all enemies within <color=#F74848>1</color> adjacent tile, each <terrian ID=1024501 /> dealing <color=#F74848>1</color>x Floating Blade DMG. Always hits the Body and ignores all <buf ID=900160>[DMG Reduction]</buf> effects. Each target takes DMG only <color=#F74848>1</color> time. This skill cannot generate <terrian ID=1024501 />."
+  },
+  "102405": {
+    "kind": "skill",
+    "name": "Frostblade Remnants",
+    "icon": "Icon_skill_passive_4138",
+    "effect": "Alter-Blade and Floating Blade Critical Hit chance increases by <color=#F74848>15%</color>. When an active attack with Floating Blade scores a Critical Hit, generates <color=#F74848>1</color> <terrian ID=1024501 /> on the first target's tile.",
+    "buffs": "1024051/1024053/1024054/1024055"
+  },
+  "102406": {
+    "kind": "skill",
+    "name": "Blade Dominion",
+    "icon": "Icon_skill_order_5184",
+    "ap": "0",
+    "cd": "3",
+    "type": "Order",
+    "describe": "Deploys a <color=#F74848>5x5</color> <terrian ID=1024061 /> centered on self and generates <color=#F74848>2</color> <terrian ID=1024501 /> around self, then can continue to act with full movement. Can only be used while equipped with two Alter-Blades."
+  },
+  "102407": {
+    "kind": "skill",
+    "name": "Delusion",
+    "icon": "Icon_skill_passive_5175",
+    "effect": "When actively attacked by an Assault weapon in combat, if equipped with two Alter-Blades and both arms are intact, negates the DMG of that attack. Can trigger <color=#F74848>1</color> time per turn.",
+    "buffs": "1024071"
+  },
+  "102408": {
+    "kind": "skill",
+    "name": "Silent Death",
+    "icon": "Icon_skill_order_1178",
+    "ap": "5",
+    "type": "SpecialAssault",
+    "describe": "Uses two Alter-Blades and Floating Blade together to attack enemies within a <range type=2>3x4-tile area in front</range>, forcibly moving all targets toward the center line before attacking and dealing <color=#F74848>1.6</color>x AoE DMG. Consumes up to <color=#F74848>5</color> <terrian ID=1024501 /> within <color=#F74848>5</color> tiles of self; each one consumed increases this attack's Final DMG Dealt by <color=#F74848>3%</color> and deals <color=#F74848>1</color> extra hit of <color=#F74848>0.4</color>x AoE DMG with Floating Blade to targets on the center line. Always hits the Body."
+  },
+  "102431": {
+    "kind": "neural",
+    "name": "Blade Frenzy 1",
+    "icon": "Icon_skill_passive_5024",
+    "effect": "After actively attacking with an Alter-Blade or Floating Blade, if the part hit is below <color=#F74848>15%</color> HP, triggers the <buf ID=900109>[Execution]</buf> effect with the Alter-Blade, directly destroying that part after combat.",
+    "buffs": "1024311"
+  },
+  "102434": {
+    "kind": "neural",
+    "name": "Blade Frenzy 2",
+    "icon": "Icon_skill_passive_5024",
+    "effect": "Part destruction threshold of <skill passiveSkill=102431>[Blade Frenzy 1]</skill> increases to <color=#F74848>25%</color>.",
+    "buffs": "1024341"
+  },
+  "102435": {
+    "kind": "neural",
+    "name": "Blade Frenzy 3",
+    "icon": "Icon_skill_passive_5024",
+    "effect": "Before actively attacking, if there are <color=#F74848>3</color> or more <terrian ID=1024501 /> on the field, Alter-Blade and Floating Blade DMG multiplier <color=#F74848>+0.1</color>.",
+    "buffs": "1024351"
+  },
+  "102436": {
+    "kind": "neural",
+    "name": "Blade Frenzy 4",
+    "icon": "Icon_skill_passive_5024",
+    "effect": "After actively attacking, gains <color=#F74848>1</color> stack of <buf ID=1024362>[Transcendence]</buf>, stacking up to <color=#F74848>3</color> times. Removed at the end of action.",
+    "buffs": "1024361"
+  },
+  "102441": {
+    "kind": "neural",
+    "name": "Limit Breaking Aptamer 1",
+    "icon": "Icon_skill_passive_5333",
+    "resource": "PP",
+    "effect": "After actively attacking, if <buf ID=900004>[Re-ATK]</buf> was not triggered, consumes <color=#F74848>1</color> PP to continue to act with full movement and restore <color=#F74848>3</color> AP. Can trigger up to <color=#F74848>2</color> times per turn. Can hold up to <color=#F74848>2</color> PP per sortie.",
+    "buffs": "1024411/1024414"
+  },
+  "102444": {
+    "kind": "neural",
+    "name": "Limit Breaking Aptamer 2",
+    "icon": "Icon_skill_passive_5333",
+    "effect": "<terrian ID=1024501 /> duration <color=#F74848>+1</color> turn, maximum <terrian ID=1024501 /> count <color=#F74848>+3</color>.",
+    "buffs": "1024441"
+  },
+  "102445": {
+    "kind": "neural",
+    "name": "Limit Breaking Aptamer 3",
+    "icon": "Icon_skill_passive_5333",
+    "effect": "Critical Hit chance and Critical Hit DMG increase by <color=#F74848>10%</color>.",
+    "buffs": "1024451"
+  },
+  "102446": {
+    "kind": "neural",
+    "name": "Limit Breaking Aptamer 4",
+    "icon": "Icon_skill_passive_5333",
+    "effect": "At the end of the team's action, if <color=#F74848>3</color> or more <terrian ID=1024501 /> were generated this turn, restores <color=#F74848>1</color> PP.",
+    "buffs": "1024461"
+  },
+  "401550": {
+    "kind": "talent",
+    "name": "Hyperthreading Intelligence",
+    "effect": "When attacking with Rocket Launchers, inflicts <buf ID=900192>[Corrosion]</buf> equal to <color=#F74848>0.4</color>x Weapon ATK on enemies hit, and repairs all parts of allies within range by <color=#F74848>0.4</color>x Weapon ATK, restoring up to <color=#F74848>1</color> destroyed part. Gains <color=#F74848>1</color> stack of <buf ID=4015506>[Architectural Data]</buf> for each part destroyed or repaired, stacking up to <color=#F74848>10</color> times. At the end of action, can use <skill mainSkill=401550>[Command Injection]</skill>; it can be used again after <color=#F74848>1</color> turn.",
+    "icon": "Icon_skill_talent_5174",
+    "buffs": "4015501/4015502/4015504/4015505/4015507/4015511"
+  },
+  "401551": {
+    "kind": "talent",
+    "name": "Hyperthreading Intelligence",
+    "icon": "Icon_skill_talent_5174",
+    "effect": "When attacking with Rocket Launchers, inflicts <buf ID=900192>[Corrosion]</buf> equal to <color=#F74848>0.4</color>x Weapon ATK on enemies hit, and repairs all parts of allies within range by <color=#F74848>0.4</color>x Weapon ATK, restoring up to <color=#F74848>1</color> destroyed part. Gains <color=#F74848>1</color> stack of <buf ID=4015506>[Architectural Data]</buf> for each part destroyed or repaired, stacking up to <color=#F74848>10</color> times. At the end of action, can use <skill mainSkill=401550>[Command Injection]</skill>; it can be used again after <color=#F74848>1</color> turn.\nRocket Launcher weight reduces by <color=#F74848>130</color>, maximum range <color=#F74848>+1</color>, minimum range <color=#F74848>-1</color>.",
+    "buffs": "4015501/4015502/4015504/4015505/4015507/4015511/4015514"
+  },
+  "401501": {
+    "kind": "skill",
+    "name": "Cluster Warhead",
+    "icon": "Icon_skill_order_1179",
+    "ap": "4",
+    "type": "SpecialAssault",
+    "describe": "Uses Rocket Launcher to attack all targets within the selected <range type=1>3x3-tile area</range>, dealing <color=#F74848>0.3</color>x AoE DMG to each part. This attack inflicts an additional <buf ID=900192>[Corrosion]</buf> equal to <color=#F74848>0.2</color>x ATK."
+  },
+  "401502": {
+    "kind": "skill",
+    "name": "Nano Perspective",
+    "icon": "Icon_skill_passive_3127",
+    "effect": "While carrying <buf ID=4015506>[Architectural Data]</buf>, Repair AMT increases by <color=#F74848>15%</color>.",
+    "buffs": "4015021"
+  },
+  "401503": {
+    "kind": "skill",
+    "name": "Architectural Computation",
+    "icon": "Icon_skill_passive_5269",
+    "effect": "At the end of action, if this unit has <color=#F74848>3</color> or fewer stacks of <buf ID=4015506>[Architectural Data]</buf>, gains <color=#F74848>1</color> stack of <buf ID=4015506>[Architectural Data]</buf>.",
+    "buffs": "4015031"
+  },
+  "401504": {
+    "kind": "skill",
+    "name": "Cluster Reload",
+    "icon": "Icon_skill_order_5106",
+    "ap": "1",
+    "cd": "3",
+    "type": "Order",
+    "describe": "Fully restores Rocket Launcher ammo and gains <color=#F74848>1</color> stack of <buf ID=4015506>[Architectural Data]</buf>, then can continue to act with remaining movement."
+  },
+  "401505": {
+    "kind": "skill",
+    "name": "Rust",
+    "icon": "Icon_skill_passive_5334",
+    "effect": "When an enemy carrying <buf ID=900192>[Corrosion]</buf> triggers <buf ID=900004>[Re-ATK]</buf>, its <buf ID=900192>[Corrosion]</buf> increases by <color=#F74848>15%</color>.",
+    "buffs": "4015051"
+  },
+  "401506": {
+    "kind": "skill",
+    "name": "Calamity Cloud",
+    "icon": "Icon_skill_order_1180",
+    "ap": "4",
+    "type": "SpecialAssault",
+    "describe": "Consumes <color=#F74848>2</color> ammo and uses Rocket Launcher to attack all targets within the selected <range type=1>2-tile diamond area</range>, dealing <color=#F74848>0.25</color>x AoE DMG to each part. After combat, deploys <terrian ID=4015061 /> on the tiles hit, lasting <color=#F74848>2</color> turns."
+  },
+  "401507": {
+    "kind": "skill",
+    "name": "Reactive Repair",
+    "icon": "Icon_skill_pp_1113",
+    "resource": "PP",
+    "effect": "When an ally is actively attacked and a part other than the Body is destroyed, consumes <color=#F74848>1</color> PP after combat to repair that ally by <color=#F74848>1.5</color>x Rocket Launcher ATK, restoring up to <color=#F74848>1</color> destroyed part. Can trigger up to <color=#F74848>1</color> time per turn. Can hold up to <color=#F74848>2</color> PP per sortie.",
+    "buffs": "4015071"
+  },
+  "401508": {
+    "kind": "skill",
+    "name": "Deep Corrosion",
+    "icon": "Icon_skill_order_1181",
+    "ap": "5",
+    "type": "SpecialAssault",
+    "describe": "Uses both Rocket Launchers at once, selecting each one's attack area in turn. Each Rocket Launcher deals <color=#F74848>0.2</color>x AoE DMG to targets in its area. Gains <color=#F74848>2</color> stacks of <buf ID=4015506>[Architectural Data]</buf>."
+  },
+  "401541": {
+    "kind": "neural",
+    "name": "Omniscient Control 1",
+    "icon": "Icon_skill_passive_5335",
+    "effect": "When actively attacking with Rocket Launchers, dispels <color=#F74848>1</color> buff from each enemy hit and <color=#F74848>1</color> debuff from each ally within the attack area.",
+    "buffs": "4015411/4015412"
+  },
+  "401544": {
+    "kind": "neural",
+    "name": "Omniscient Control 2",
+    "icon": "Icon_skill_passive_5335",
+    "effect": "At the start of action, if at least one Rocket Launcher is intact, inflicts <buf ID=900192>[Corrosion]</buf> equal to <color=#F74848>0.2</color>x Rocket Launcher ATK on all enemies.",
+    "buffs": "4015441"
+  },
+  "401545": {
+    "kind": "neural",
+    "name": "Omniscient Control 3",
+    "icon": "Icon_skill_passive_5335",
+    "effect": "When actively attacking with Rocket Launchers, the <buf ID=900192>[Corrosion]</buf> and Repair AMT from Rocket Launchers increase to <color=#F74848>0.6</color>x ATK.",
+    "buffs": "4015451/4015452"
+  },
+  "401546": {
+    "kind": "neural",
+    "name": "Omniscient Control 4",
+    "icon": "Icon_skill_passive_5335",
+    "effect": "When an enemy carrying <buf ID=900192>[Corrosion]</buf> is destroyed, gains <color=#F74848>1</color> stack of <buf ID=4015506>[Architectural Data]</buf> and restores <color=#F74848>1</color> AP. Can trigger up to <color=#F74848>2</color> times per turn.",
+    "buffs": "4015461"
   }
 }

@@ -3631,5 +3631,109 @@
         "level": 8
       }
     ]
+  },
+  "30520103": {
+    "name": "Jormungandr",
+    "type": "Heavy",
+    "quality": "SSR",
+    "icon": "Icon_mecha_wap3052",
+    "mecha_icon": "Icon_wap3052_1",
+    "portrait_icon": "icon_lihui_wap3052",
+    "manufacturer_bg": "Obsidian",
+    "output": "2140",
+    "durable": "478",
+    "armor": "144",
+    "fire": "123",
+    "antiriot": "770",
+    "firepower": "1206",
+    "version": "4.0",
+    "introduce": "OS-HA16 Jormungandr\nA fourth-generation heavy ST designed by Obsidian with development support from Laniakea, built by the Northern Union as the ultimate weapon of its Hyper-Aptamer Program.\nIts heavy frame is forged from Obsidian XF5A Arashi alloy, and three linked self-circulating Arashi Matter engines in its back give it semi-permanent power. Though it weighs close to thirty tons, its burst mobility rivals that of a light ST. Laniakea supplied the latest Nova-Frame and its matching resonance system, \"Abyssal Link\", which feed the pilot's brainwave commands into the frame's motion calculations with unprecedented precision and speed, letting it make fine movements no conventional ST can match. To get the most out of these systems, Obsidian drew on combat data from its floating cannons to fit it with a new wireless remote melee weapon known as the \"Floating Blade\", giving Jormungandr all-round striking power unrivaled in its era.\nYet so advanced a design seems fated to resist any rider. Perhaps only a perfect Hyper-Aptamer, one who has broken through the theoretical limit, could draw out its true performance.",
+    "parts": [
+      "30520103",
+      "30520203",
+      "30520303",
+      "30520403"
+    ],
+    "modules": [
+      {
+        "family": "2082",
+        "level": 4
+      },
+      {
+        "family": "3069",
+        "level": 8
+      },
+      {
+        "family": "4027",
+        "level": 4
+      },
+      {
+        "family": "4034",
+        "level": 4
+      }
+    ],
+    "hidden_modules": [
+      {
+        "name": "Nova Frame - SPC Type",
+        "icon": "Icon_skill_passive_5338",
+        "SpecificEffects": "Active from grade SS.\nWhen piloted by [Blightblade Ophelia], Critical Hits and accessory effects can undergo <buf ID=900191>[Second Chance]</buf>."
+      },
+      {
+        "name": "Nova Frame - ER Type",
+        "icon": "Icon_skill_passive_5310",
+        "SpecificEffects": "Active from grade SS.\nWhen piloted by [Blightblade Ophelia], restores <color=#F74848>1</color> AP after an active attack scores a Critical Hit. Can trigger <color=#F74848>1</color> time per turn."
+      },
+      {
+        "name": "Nova Frame - BH Type",
+        "icon": "Icon_skill_passive_5331",
+        "SpecificEffects": "Active from grade SS.\nWhen piloted by [Blightblade Ophelia], Alter-Blade and Floating Blade Hit Rate increases by <color=#F74848>10%</color>."
+      },
+      {
+        "name": "Nova Frame - HM Type",
+        "icon": "Icon_skill_passive_5316",
+        "SpecificEffects": "Active from grade SS.\nWhen piloted by [Blightblade Ophelia], Movement <color=#F74848>+1</color> and movement type changes to Hover."
+      }
+    ]
+  },
+  "20580103": {
+    "name": "Mockingbird",
+    "type": "Medium",
+    "quality": "SSR",
+    "icon": "Icon_mecha_wap2058",
+    "mecha_icon": "Icon_wap2058_1",
+    "portrait_icon": "icon_lihui_wap2058",
+    "manufacturer_bg": "AnHalt",
+    "output": "3140",
+    "durable": "400",
+    "armor": "72",
+    "fire": "130",
+    "antiriot": "770",
+    "firepower": "1274",
+    "version": "4.0",
+    "introduce": "AST-53ES Mockingbird\nDeveloped under AnHalt's lead, the world's first military ST built with a bionic intelligence frame as its default pilot, evolved from the base architecture of the AST-42HMC Hasteraze.\nAlthough it was designed for mass production and frontline deployment, it did not need to account for a pilot's safety, so some of its design targets are as aggressive as those of the Hasteraze prototype. Its unique multi-threaded fire control system, the \"Thousand Echo Array\", can strike large numbers of targets with precision at once. Because research on its matching bionic intelligence fell behind schedule, the whole project was at one point nearly cancelled by the military.",
+    "parts": [
+      "20580103",
+      "20580203",
+      "20580303",
+      "20580403"
+    ],
+    "modules": [
+      {
+        "family": "2084",
+        "level": 4
+      },
+      {
+        "family": "3070",
+        "level": 8
+      },
+      {
+        "family": "4001",
+        "level": 4
+      },
+      {
+        "family": "4034",
+        "level": 4
+      }
+    ]
   }
 }

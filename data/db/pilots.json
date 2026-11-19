@@ -12,7 +12,8 @@
     "faction_icon": "Icon_logo_0007",
     "version": "2.3",
     "skins": [
-      "B"
+      "B",
+      "D"
     ],
     "introduction": "Captain of the Reversion Squad, a top pilot of the Dawnstar League, and one of only two perfect Hyper-Aptamers in the world.",
     "talents": [
@@ -1755,7 +1756,8 @@
       }
     ],
     "skins": [
-      "B"
+      "B",
+      "C"
     ]
   },
   "10103140": {
@@ -3735,6 +3737,9 @@
         "partition": "10103161-gamma2",
         "slots": "Attack/Dodge/Critical"
       }
+    ],
+    "skins": [
+      "B"
     ]
   },
   "10102114": {
@@ -4915,6 +4920,98 @@
       {
         "partition": "10103187-gamma2",
         "slots": "Attack/Dodge/Dodge"
+      }
+    ]
+  },
+  "10103188": {
+    "name": "Blightblade Ophelia",
+    "real_name": "Aynis Newman",
+    "gender": "Female",
+    "profession": "Striker",
+    "occupation": "Fighter",
+    "quality": "SSR",
+    "license": "Heavy",
+    "portrait_icon": "Pilot_10103188A_half",
+    "avatar_icon": "Pilot_10103188A_Raw",
+    "faction_icon": "Icon_logo_0003",
+    "version": "4.0",
+    "talents": [
+      "102450",
+      "102451"
+    ],
+    "stats": {
+      "combat": "5427",
+      "assault": "2034",
+      "shooting": "1150",
+      "tactics": "2182",
+      "defense": "4137",
+      "engineering": "1592",
+      "ap_init": "5",
+      "ap_max": "5",
+      "ap_regen": "2"
+    },
+    "neural": [
+      {
+        "partition": "fighter-alpha",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "fighter-beta",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "10103188-gamma1",
+        "slots": "Attack/Dodge/Dodge"
+      },
+      {
+        "partition": "10103188-gamma2",
+        "slots": "Attack/Dodge/Dodge"
+      }
+    ]
+  },
+  "10103189": {
+    "name": "Echo",
+    "real_name": "Echo Diaz",
+    "gender": "Female",
+    "profession": "Launcher",
+    "occupation": "Tactician",
+    "quality": "SSR",
+    "license": "Medium",
+    "portrait_icon": "Pilot_10103189A_half",
+    "avatar_icon": "Pilot_10103189A_Raw",
+    "faction_icon": "Icon_logo_0007",
+    "version": "4.0",
+    "talents": [
+      "401550",
+      "401551"
+    ],
+    "stats": {
+      "combat": "1543",
+      "assault": "2015",
+      "shooting": "1386",
+      "tactics": "4987",
+      "defense": "4101",
+      "engineering": "2486",
+      "ap_init": "5",
+      "ap_max": "6",
+      "ap_regen": "2"
+    },
+    "neural": [
+      {
+        "partition": "tactician-alpha",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "tactician-beta",
+        "slots": "Attack/Dodge/Critical"
+      },
+      {
+        "partition": "10103127-gamma1",
+        "slots": "Attack/Dodge/Dodge"
+      },
+      {
+        "partition": "10103189-gamma2",
+        "slots": "Attack/Dodge/Critical"
       }
     ]
   }

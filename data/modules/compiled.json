@@ -930,6 +930,32 @@
         "4": "When actively attacking or performing <buf ID=900001>[Flurry Strike]</buf> with a skill costing <color=#F74848>4</color> AP or less, DMG Dealt increases by <color=#F74848>20%</color>. For each <color=#F74848>1</color> AP below 4, DMG Dealt additionally increases by <color=#F74848>5%</color>, up to <color=#F74848>15%</color>."
       }
     },
+    "2082": {
+      "name": "Abyssal Link",
+      "icon": "Icon_skill_passive_1192",
+      "category": "SuitS",
+      "maxLevel": 4,
+      "currentLevel": 4,
+      "levels": {
+        "1": "DMG Dealt increases by <color=#F74848>3%</color>. After acting, if a friendly terrain was generated, DMG Dealt and Critical Hit chance increase by <color=#F74848>1%</color>, stacking up to <color=#F74848>3</color> times, lasting <color=#F74848>2</color> turns.",
+        "2": "DMG Dealt increases by <color=#F74848>6%</color>. After acting, if a friendly terrain was generated, DMG Dealt and Critical Hit chance increase by <color=#F74848>2%</color>, stacking up to <color=#F74848>3</color> times, lasting <color=#F74848>2</color> turns.",
+        "3": "DMG Dealt increases by <color=#F74848>10%</color>. After acting, if a friendly terrain was generated, DMG Dealt and Critical Hit chance increase by <color=#F74848>2%</color>, stacking up to <color=#F74848>5</color> times, lasting <color=#F74848>2</color> turns.",
+        "4": "DMG Dealt increases by <color=#F74848>15%</color>. After acting, if a friendly terrain was generated, DMG Dealt and Critical Hit chance increase by <color=#F74848>3%</color>, stacking up to <color=#F74848>5</color> times, lasting <color=#F74848>2</color> turns."
+      }
+    },
+    "2084": {
+      "name": "Thousand Echo Array",
+      "icon": "Icon_skill_passive_1193",
+      "category": "SuitS",
+      "maxLevel": 4,
+      "currentLevel": 4,
+      "levels": {
+        "1": "When actively attacking, DMG Dealt increases by <color=#F74848>3%</color>. If an active attack hits <color=#F74848>4</color> or more targets, restores <color=#F74848>1</color> AP after combat. This effect can trigger again after <color=#F74848>2</color> turns.",
+        "2": "When actively attacking, DMG Dealt increases by <color=#F74848>6%</color>. If an active attack hits <color=#F74848>4</color> or more targets, restores <color=#F74848>1</color> AP after combat. This effect can trigger again after <color=#F74848>1</color> turn.",
+        "3": "When actively attacking, DMG Dealt increases by <color=#F74848>10%</color>. If an active attack hits <color=#F74848>3</color> or more targets, restores <color=#F74848>1</color> AP after combat. This effect can trigger again after <color=#F74848>1</color> turn.",
+        "4": "When actively attacking, DMG Dealt increases by <color=#F74848>15%</color>. If an active attack hits <color=#F74848>3</color> or more targets, restores <color=#F74848>1</color> AP after combat. Can trigger up to <color=#F74848>1</color> time per turn."
+      }
+    },
     "2080": {
       "name": "Frostedge Amplifier",
       "icon": "Icon_skill_passive_1101",
@@ -2009,6 +2035,40 @@
         "6": "If this unit's current HP percentage is <color=#F74848>40%</color> or higher, after each attack hits, for each <color=#F74848>1</color> hit scored, ignores <color=#F74848>3.5%</color> of the target's Armor and DMG Dealt increases by <color=#F74848>1%</color>, up to <color=#F74848>42%</color> Armor ignored and <color=#F74848>12%</color> DMG.",
         "7": "If this unit's current HP percentage is <color=#F74848>30%</color> or higher, after each attack hits, for each <color=#F74848>1</color> hit scored, ignores <color=#F74848>5%</color> of the target's Armor and DMG Dealt increases by <color=#F74848>1.5%</color>, up to <color=#F74848>50%</color> Armor ignored and <color=#F74848>15%</color> DMG.",
         "8": "After each attack hits, for each <color=#F74848>1</color> hit scored, ignores <color=#F74848>5%</color> of the target's Armor and DMG Dealt increases by <color=#F74848>1.5%</color>, up to <color=#F74848>60%</color> Armor ignored and <color=#F74848>18%</color> DMG.\nAfter initiating combat with a normal attack, an active attack or <buf ID=900010>[Gusty Strike]</buf>, if <color=#F74848>18</color> or more hits were scored in that combat, restores <color=#F74848>1</color> AP. This effect can trigger <color=#F74848>2</color> times per turn."
+      }
+    },
+    "3069": {
+      "name": "Predator Module",
+      "icon": "Icon_entry_10118",
+      "category": "GeneralSuit",
+      "maxLevel": 8,
+      "currentLevel": 8,
+      "levels": {
+        "1": "DMG Dealt increases by <color=#F74848>2%</color>. When attacking the Body, DMG Dealt additionally increases by <color=#F74848>2%</color>.",
+        "2": "DMG Dealt increases by <color=#F74848>3%</color>. When attacking the Body, DMG Dealt additionally increases by <color=#F74848>3%</color>.",
+        "3": "DMG Dealt increases by <color=#F74848>4%</color>. When attacking the Body, DMG Dealt additionally increases by <color=#F74848>4%</color>.",
+        "4": "DMG Dealt increases by <color=#F74848>5%</color>. When attacking the Body, DMG Dealt additionally increases by <color=#F74848>5%</color>.",
+        "5": "DMG Dealt increases by <color=#F74848>7%</color>. When attacking the Body, DMG Dealt additionally increases by <color=#F74848>7%</color>.",
+        "6": "DMG Dealt increases by <color=#F74848>8%</color>. When attacking the Body, DMG Dealt additionally increases by <color=#F74848>8%</color>.",
+        "7": "DMG Dealt increases by <color=#F74848>9%</color>. When attacking the Body, DMG Dealt additionally increases by <color=#F74848>9%</color>.",
+        "8": "DMG Dealt increases by <color=#F74848>12%</color>. When attacking the Body, DMG Dealt additionally increases by <color=#F74848>12%</color>. When triggering <buf ID=900004>[Re-ATK]</buf>, DMG multiplier <color=#F74848>+0.1</color>."
+      }
+    },
+    "3070": {
+      "name": "Keen Edge Module",
+      "icon": "Icon_entry_10119",
+      "category": "GeneralSuit",
+      "maxLevel": 8,
+      "currentLevel": 8,
+      "levels": {
+        "1": "When at full HP, DMG Dealt increases by <color=#F74848>4%</color>.",
+        "2": "When at full HP, DMG Dealt increases by <color=#F74848>6%</color>.",
+        "3": "When at full HP, DMG Dealt increases by <color=#F74848>8%</color>.",
+        "4": "When own HP is <color=#F74848>90%</color> or higher, DMG Dealt increases by <color=#F74848>10%</color>.",
+        "5": "When own HP is <color=#F74848>90%</color> or higher, DMG Dealt increases by <color=#F74848>14%</color>.",
+        "6": "When own HP is <color=#F74848>80%</color> or higher, DMG Dealt increases by <color=#F74848>16%</color>.",
+        "7": "When own HP is <color=#F74848>80%</color> or higher, DMG Dealt increases by <color=#F74848>18%</color>.",
+        "8": "When own HP is <color=#F74848>80%</color> or higher, DMG Dealt increases by <color=#F74848>24%</color>.\nTactical Weapon Crit and ATK increase by <color=#F74848>10%</color>."
       }
     },
     "2076": {

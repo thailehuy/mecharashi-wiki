@@ -3261,6 +3261,120 @@
       "version": "2.7"
     },
     {
+      "ID": "30520103",
+      "name": "Jormungandr",
+      "type": "Heavy",
+      "quality": "SSR",
+      "icon": "Icon_mecha_wap3052",
+      "lihuiIcon": "icon_lihui_wap3052",
+      "manufacturerBg": "Obsidian",
+      "introduce": "OS-HA16 Jormungandr\nA fourth-generation heavy ST designed by Obsidian with development support from Laniakea, built by the Northern Union as the ultimate weapon of its Hyper-Aptamer Program.\nIts heavy frame is forged from Obsidian XF5A Arashi alloy, and three linked self-circulating Arashi Matter engines in its back give it semi-permanent power. Though it weighs close to thirty tons, its burst mobility rivals that of a light ST. Laniakea supplied the latest Nova-Frame and its matching resonance system, \"Abyssal Link\", which feed the pilot's brainwave commands into the frame's motion calculations with unprecedented precision and speed, letting it make fine movements no conventional ST can match. To get the most out of these systems, Obsidian drew on combat data from its floating cannons to fit it with a new wireless remote melee weapon known as the \"Floating Blade\", giving Jormungandr all-round striking power unrivaled in its era.\nYet so advanced a design seems fated to resist any rider. Perhaps only a perfect Hyper-Aptamer, one who has broken through the theoretical limit, could draw out its true performance.",
+      "output": "2140",
+      "Armor": "144",
+      "fire": "123",
+      "Antiriot": "770",
+      "parts": [
+        {
+          "position": "Body",
+          "aircraftWeight": "365",
+          "maxHp": "13290",
+          "Armor": "1412",
+          "Hit": null,
+          "Dodge": null,
+          "Antiriot": "4472"
+        },
+        {
+          "position": "L-Arm",
+          "aircraftWeight": "195",
+          "maxHp": "7256",
+          "Armor": "941",
+          "Hit": "1852",
+          "Dodge": null,
+          "Antiriot": null
+        },
+        {
+          "position": "R-Arm",
+          "aircraftWeight": "195",
+          "maxHp": "7256",
+          "Armor": "941",
+          "Hit": "1852",
+          "Dodge": null,
+          "Antiriot": null
+        },
+        {
+          "position": "Legs",
+          "aircraftWeight": "235",
+          "maxHp": "11566",
+          "Armor": "941",
+          "Hit": null,
+          "Dodge": "3287",
+          "Antiriot": null
+        }
+      ],
+      "manjiFirepower": "1206",
+      "modules": [
+        {
+          "ID": "20824",
+          "name": "Abyssal Link",
+          "SpecificEffects": "DMG Dealt increases by <color=#F74848>15%</color>. After acting, if a friendly terrain was generated, DMG Dealt and Critical Hit chance increase by <color=#F74848>3%</color>, stacking up to <color=#F74848>5</color> times, lasting <color=#F74848>2</color> turns.",
+          "SkillIcon": "Icon_skill_passive_1192",
+          "icon": "Icon_skill_passive_1192",
+          "id": "2082",
+          "level": 4
+        },
+        {
+          "ID": "30698",
+          "name": "Predator Module",
+          "SpecificEffects": "DMG Dealt increases by <color=#F74848>12%</color>. When attacking the Body, DMG Dealt additionally increases by <color=#F74848>12%</color>. When triggering <buf ID=900004>[Re-ATK]</buf>, DMG multiplier <color=#F74848>+0.1</color>.",
+          "SkillIcon": "Icon_entry_10118",
+          "icon": "Icon_entry_10118",
+          "id": "3069",
+          "level": 8
+        },
+        {
+          "ID": "40274",
+          "name": "Firepower Module",
+          "SpecificEffects": "Firepower <color=#F74848>+10%</color>.",
+          "SkillIcon": "Icon_skill_passive_1126",
+          "icon": "Icon_skill_passive_1126",
+          "id": "4027",
+          "level": 4
+        },
+        {
+          "ID": "40344",
+          "name": "Gale Tuning Unit",
+          "SpecificEffects": "Arashi Tide DMG reduction correction <color=#F74848>+10%</color>.",
+          "SkillIcon": "Icon_skill_passive_2007",
+          "icon": "Icon_skill_passive_2007",
+          "id": "4034",
+          "level": 4
+        }
+      ],
+      "hiddenModules": [
+        {
+          "name": "Nova Frame - SPC Type",
+          "icon": "Icon_skill_passive_5338",
+          "SpecificEffects": "Active from grade SS.\nWhen piloted by [Blightblade Ophelia], Critical Hits and accessory effects can undergo <buf ID=900191>[Second Chance]</buf>."
+        },
+        {
+          "name": "Nova Frame - ER Type",
+          "icon": "Icon_skill_passive_5310",
+          "SpecificEffects": "Active from grade SS.\nWhen piloted by [Blightblade Ophelia], restores <color=#F74848>1</color> AP after an active attack scores a Critical Hit. Can trigger <color=#F74848>1</color> time per turn."
+        },
+        {
+          "name": "Nova Frame - BH Type",
+          "icon": "Icon_skill_passive_5331",
+          "SpecificEffects": "Active from grade SS.\nWhen piloted by [Blightblade Ophelia], Alter-Blade and Floating Blade Hit Rate increases by <color=#F74848>10%</color>."
+        },
+        {
+          "name": "Nova Frame - HM Type",
+          "icon": "Icon_skill_passive_5316",
+          "SpecificEffects": "Active from grade SS.\nWhen piloted by [Blightblade Ophelia], Movement <color=#F74848>+1</color> and movement type changes to Hover."
+        }
+      ],
+      "version": "4.0"
+    },
+    {
       "ID": "30200103",
       "name": "Kagemusha",
       "type": "Heavy",
@@ -3888,6 +4002,98 @@
         }
       ],
       "version": "3.3"
+    },
+    {
+      "ID": "20580103",
+      "name": "Mockingbird",
+      "type": "Medium",
+      "quality": "SSR",
+      "icon": "Icon_mecha_wap2058",
+      "lihuiIcon": "icon_lihui_wap2058",
+      "manufacturerBg": "AnHalt",
+      "introduce": "AST-53ES Mockingbird\nDeveloped under AnHalt's lead, the world's first military ST built with a bionic intelligence frame as its default pilot, evolved from the base architecture of the AST-42HMC Hasteraze.\nAlthough it was designed for mass production and frontline deployment, it did not need to account for a pilot's safety, so some of its design targets are as aggressive as those of the Hasteraze prototype. Its unique multi-threaded fire control system, the \"Thousand Echo Array\", can strike large numbers of targets with precision at once. Because research on its matching bionic intelligence fell behind schedule, the whole project was at one point nearly cancelled by the military.",
+      "output": "3140",
+      "Armor": "72",
+      "fire": "130",
+      "Antiriot": "770",
+      "parts": [
+        {
+          "position": "Body",
+          "aircraftWeight": "285",
+          "maxHp": "11121",
+          "Armor": "706",
+          "Hit": null,
+          "Dodge": null,
+          "Antiriot": "4472"
+        },
+        {
+          "position": "L-Arm",
+          "aircraftWeight": "175",
+          "maxHp": "7117",
+          "Armor": "470",
+          "Hit": "1794",
+          "Dodge": null,
+          "Antiriot": null
+        },
+        {
+          "position": "R-Arm",
+          "aircraftWeight": "175",
+          "maxHp": "7117",
+          "Armor": "470",
+          "Hit": "1794",
+          "Dodge": null,
+          "Antiriot": null
+        },
+        {
+          "position": "Legs",
+          "aircraftWeight": "215",
+          "maxHp": "10287",
+          "Armor": "470",
+          "Hit": null,
+          "Dodge": "3885",
+          "Antiriot": null
+        }
+      ],
+      "manjiFirepower": "1274",
+      "modules": [
+        {
+          "ID": "20844",
+          "name": "Thousand Echo Array",
+          "SpecificEffects": "When actively attacking, DMG Dealt increases by <color=#F74848>15%</color>. If an active attack hits <color=#F74848>3</color> or more targets, restores <color=#F74848>1</color> AP after combat. Can trigger up to <color=#F74848>1</color> time per turn.",
+          "SkillIcon": "Icon_skill_passive_1193",
+          "icon": "Icon_skill_passive_1193",
+          "id": "2084",
+          "level": 4
+        },
+        {
+          "ID": "30708",
+          "name": "Keen Edge Module",
+          "SpecificEffects": "When own HP is <color=#F74848>80%</color> or higher, DMG Dealt increases by <color=#F74848>24%</color>.\nTactical Weapon Crit and ATK increase by <color=#F74848>10%</color>.",
+          "SkillIcon": "Icon_entry_10119",
+          "icon": "Icon_entry_10119",
+          "id": "3070",
+          "level": 8
+        },
+        {
+          "ID": "40014",
+          "name": "Accuracy Mod",
+          "SpecificEffects": "Hit Rate <color=#F74848>+10%</color>.",
+          "SkillIcon": "Icon_entry_40011",
+          "icon": "Icon_entry_40011",
+          "id": "4001",
+          "level": 4
+        },
+        {
+          "ID": "40344",
+          "name": "Gale Tuning Unit",
+          "SpecificEffects": "Arashi Tide DMG reduction correction <color=#F74848>+10%</color>.",
+          "SkillIcon": "Icon_skill_passive_2007",
+          "icon": "Icon_skill_passive_2007",
+          "id": "4034",
+          "level": 4
+        }
+      ],
+      "version": "4.0"
     },
     {
       "ID": "20400103",

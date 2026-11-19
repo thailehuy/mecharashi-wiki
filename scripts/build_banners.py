@@ -34,7 +34,7 @@ HERE = os.path.join(ROOT, 'data', 'banners')
 OUT = os.path.join(HERE, 'banners.json')
 OUT_JS = os.path.join(HERE, 'banners.js')
 
-MAX_VERSION = (3, 7)
+MAX_VERSION = (4, 0)
 UPCOMING_START = datetime(2098, 4, 10)
 # Always-open pools that have no featured unit (standard and beginner).
 STANDARD = {'pilot': {1, 4}, 'st': {1, 2, 3, 4}}

@@ -1653,6 +1653,22 @@
   "6009011": {
    "name": "Substitute",
    "effect": "If an ally with HP below 30% is attacked during combat, a [Guard] effect can be activated regardless of skill range. Removed after activation."
+  },
+  "1024362": {
+   "name": "Transcendence",
+   "effect": "Final DMG Dealt increases by <color=#F74848>5%</color>, Final DMG Taken reduces by <color=#F74848>20%</color>, stacking up to <color=#F74848>3</color> times. Removed at the end of action."
+  },
+  "900191": {
+   "name": "Second Chance",
+   "effect": "If a chance-based effect fails its activation check, performs one additional check with the same probability."
+  },
+  "900192": {
+   "name": "Corrosion",
+   "effect": "Accumulates up to <color=#F74848>25%</color> of the Body's max HP. After being actively attacked, if the hit part's HP is lower than [Corrosion], that part is destroyed immediately and the destruction is credited to the attacker. [Corrosion] reduces by <color=#F74848>30%</color> after triggering."
+  },
+  "4015506": {
+   "name": "Architectural Data",
+   "effect": "Can be used for <skill mainSkill=401550>[Command Injection]</skill>."
   }
  },
  "skill": {
@@ -2438,6 +2454,60 @@
    "CD": "0",
    "icon": "Icon_skill_main_1004",
    "effect": "After an ally launches an attack, uses both Shotguns to launch a <buf ID=900002>[Link Attack]</buf> on the target they attacked, dealing <color=#F74848>2x0.1</color> DMG."
+  },
+  "2001": {
+   "name": "Blade Assault",
+   "Ap": "3",
+   "CD": "0",
+   "icon": "Icon_skill_order_1014",
+   "effect": "Uses Floating Blade to attack up to <color=#F74848>3</color> targets within range, dealing <color=#F74848>1</color>x AoE DMG."
+  },
+  "2006": {
+   "name": "Blade Lock-On Assault",
+   "Ap": "3",
+   "CD": "0",
+   "icon": "Icon_skill_order_1015",
+   "effect": "Uses Floating Blade to attack up to <color=#F74848>3</color> targets within range, dealing <color=#F74848>1</color>x AoE DMG. Before attacking, can apply <buf ID=900014>[Aiming]</buf> to each target separately, and the same target can be selected repeatedly; repeated attacks on the same target deal <color=#F74848>35%</color> DMG."
+  },
+  "1024501": {
+   "name": "Blade Shift",
+   "Ap": "0",
+   "CD": "0",
+   "icon": "Icon_skill_order_5181",
+   "effect": "Select <color=#F74848>1</color> <terrian ID=1024501 />; this unit can stop on its tile or within <color=#F74848>1</color> adjacent tile of it. Teleports this unit there and moves that <terrian ID=1024501 /> to this unit's original position, then can continue to act with remaining movement. Can be used up to <color=#F74848>1</color> time per turn."
+  },
+  "102431": {
+   "name": "Blade Frenzy 1",
+   "icon": "Icon_skill_passive_5024",
+   "effect": "After actively attacking with an Alter-Blade or Floating Blade, if the part hit is below <color=#F74848>15%</color> HP, triggers the <buf ID=900109>[Execution]</buf> effect with the Alter-Blade, directly destroying that part after combat."
+  },
+  "401550": {
+   "name": "Command Injection",
+   "Ap": "0",
+   "CD": "0",
+   "icon": "Icon_skill_order_5182",
+   "effect": "Can use <skill activeSkill=4015502>[Information Sharing]</skill>, <skill activeSkill=4015503>[Corrosion Burst]</skill> or <skill activeSkill=4015504>[Full Restoration]</skill>."
+  },
+  "4015502": {
+   "name": "Information Sharing",
+   "Ap": "0",
+   "CD": "0",
+   "icon": "Icon_skill_order_5183",
+   "effect": "Consumes <color=#F74848>2</color> stacks of <buf ID=4015506>[Architectural Data]</buf> and selects <color=#F74848>1</color> other ally within <color=#F74848>6</color> tiles. After landing an active attack, that ally also accumulates <buf ID=900192>[Corrosion]</buf> equal to <color=#F74848>0.6</color>x Weapon ATK. Removed at the end of action."
+  },
+  "4015503": {
+   "name": "Corrosion Burst",
+   "Ap": "0",
+   "CD": "0",
+   "icon": "Icon_skill_order_1182",
+   "effect": "Consumes <color=#F74848>3</color> stacks of <buf ID=4015506>[Architectural Data]</buf> and selects <color=#F74848>1</color> enemy within <color=#F74848>6</color> tiles, doubling its <buf ID=900192>[Corrosion]</buf>. The amount added cannot exceed <color=#F74848>5</color>x the caster's Rocket Launcher ATK."
+  },
+  "4015504": {
+   "name": "Full Restoration",
+   "Ap": "0",
+   "CD": "0",
+   "icon": "Icon_skill_order_3119",
+   "effect": "Consumes <color=#F74848>5</color> stacks of <buf ID=4015506>[Architectural Data]</buf> and selects <color=#F74848>1</color> ally within <color=#F74848>6</color> tiles. Repairs all destroyed parts, repairs <color=#F74848>2</color>x Rocket Launcher ATK, and restores <color=#F74848>1</color> PP."
   }
  },
  "terrain": {
@@ -2460,6 +2530,18 @@
   "6008502": {
    "name": "Particle Domain",
    "effect": "Grants DMG Taken <color=#F74848>-15%</color> to allies that remain on this tile. This terrain effect has high priority."
+  },
+  "1024501": {
+   "name": "Flowing Blade",
+   "effect": "When [Blightblade Ophelia] attacks with Floating Blade, she can target enemies within <color=#F74848>3</color> tiles of this terrain. This terrain can exist together with other terrains. Up to <color=#F74848>5</color> can exist on the field, lasting <color=#F74848>2</color> turns."
+  },
+  "1024061": {
+   "name": "Blade Domain",
+   "effect": "While on [Blade Domain], after attacking, consumes <color=#F74848>1</color> [Flowing Blade] within <color=#F74848>3</color> tiles of self to trigger <buf ID=900004>[Re-ATK]</buf>, and can move <color=#F74848>2</color> tiles before that attack. Active attacks with Alter-Blades can use <buf ID=900014>[Aiming]</buf> and always hit. Removed when leaving the terrain or at the end of action. This terrain has high terrain priority."
+  },
+  "4015061": {
+   "name": "Nano Cloud",
+   "effect": "Repairs an ally for <color=#F74848>0.5</color>x the caster's Rocket Launcher ATK and dispels <color=#F74848>1</color> debuff, or deals <buf ID=900017>[Fixed DMG]</buf> equal to <color=#F74848>0.5</color>x the caster's Rocket Launcher ATK to all parts of an enemy and inflicts the same amount of <buf ID=900192>[Corrosion]</buf>. Removed after triggering."
   }
  }
 }
