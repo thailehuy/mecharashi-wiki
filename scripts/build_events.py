@@ -45,6 +45,8 @@ from build_pages import slugify  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 HERE = os.path.join(ROOT, 'data', 'events')
+# Battle maps from build_maps.py ("ev-<level ID>": {difficulty: map ID}), for the stages' "View map" button.
+MAPS = os.path.join(ROOT, 'data', 'maps', 'maps.json')
 OUT = os.path.join(HERE, 'events.json')
 OUT_JS = os.path.join(HERE, 'events.js')
 
@@ -259,6 +261,13 @@ def main():
         if parms:
             ops[parms[0]['P1']] = r
 
+    stage_maps = {}
+    if os.path.exists(MAPS):
+        with open(MAPS, encoding='utf-8') as f:
+            stage_maps = json.load(f)['stages']
+    else:
+        print('no %s: run build_maps.py for the stages\' battle maps' % MAPS)
+
     events, runs = [], {}
     for a in con.execute('SELECT * FROM ConfigDataPlotActivityInfo ORDER BY ID').fetchall():
         name = text(a['NameStrKey_EN'])
@@ -280,6 +289,9 @@ def main():
         if a['ID'] in IMAGES or prefabs:
             ev['image'] = IMAGES.get(a['ID']) or prefabs[0]
         ev['stages'] = stages(con, rewards, a, name)
+        for st in (st for g in ev['stages'] for st in g['stages']):
+            if stage_maps.get('ev-%d' % st['id']):
+                st['maps'] = stage_maps['ev-%d' % st['id']]
         ev['milestones'] = milestones(con, rewards, a, name)
         ev['shops'], paid = shops(con, rewards, op and op['ExclusiveShopInfoID'], name)
         types = []

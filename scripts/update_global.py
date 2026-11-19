@@ -17,7 +17,8 @@ Steps
     crafting      the Workshop recipes of everything now on Global -> data/db/ weapons, backpacks, materials
                   (build_crafting.py), then compile.py
     data          everything the wiki derives from the mined data: the DMG calc's bench data (from the master DB's
-                  bench catalog, incl. the Armed Conquest line-ups) and icons, accessory chain traits, R&D features and totals, the Armed Conquest
+                  bench catalog, incl. the Armed Conquest line-ups) and icons, accessory chain traits, R&D features and totals, the battle maps of
+                  every AC stage, CO chapter and event stage (build_maps.py), the Armed Conquest
                   boss pages with their skills and drops (build_bosses.py --keep-co), the banner list, then the
                   version global is on (set_global_version.py: the newest whose banners have opened; it prints that
                   version's banner timeline, sets GLOBAL_VERSION, which drops the CN-text warning from its pilots' and
@@ -53,7 +54,7 @@ MAIN_DB = os.path.join(FIELD_WIKI, 'source', 'mecharashi.db')
 STEPS = ['mine', 'translations', 'crafting', 'data', 'images', 'compile']
 # In order, after compile.py: build-icons.py, build_features.py and build_bosses.py read the compiled bundles.
 DATA = [['extract-bench.py', '--data-only'], ['build-icons.py'], ['extract-chain-traits.py'], ['build_features.py'],
-        ['build_rd_totals.py'], ['build_bosses.py', '--keep-co'], ['build_banners.py'], ['set_global_version.py'],
+        ['build_rd_totals.py'], ['build_maps.py'], ['build_bosses.py', '--keep-co'], ['build_banners.py'], ['set_global_version.py'],
         ['build_lore.py'], ['build_paint.py'], ['build_story.py'], ['build_events.py'], ['build_sim.py'], ['build_covert.py'], ['build_storm.py'],
         ['build_crisis.py']]
 

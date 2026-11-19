@@ -487,8 +487,9 @@ function bossKit() {
       .fail(function () { alert('Could not load the map data.'); });
   }
 
-  // title: the stage's name; maps: {difficulty or CO route: map ID}; diff: the one to show first; note: HTML under the deploy line.
-  function showMap(title, maps, diff, note) {
+  // title: the stage's name; maps: {difficulty or CO route: map ID}; diff: the one to show first; note: HTML under the deploy line;
+  // bossNote: what a boss's details say (default: its skills are on the page, below the button).
+  function showMap(title, maps, diff, note, bossNote) {
     loadMaps(function () {
       var diffs = Object.keys(maps);
       if (!maps[diff]) diff = diffs[0];
@@ -510,17 +511,17 @@ function bossKit() {
         });
         $modal.on('click', '[data-map-diff]', function () {
           var d = $modal.data('ctx');
-          renderMap($modal, d.title, d.maps, $(this).attr('data-map-diff'), d.note);
+          renderMap($modal, d.title, d.maps, $(this).attr('data-map-diff'), d.note, d.bossNote);
         });
       }
-      renderMap($modal, title, maps, diff, note);
+      renderMap($modal, title, maps, diff, note, bossNote);
       bootstrap.Modal.getOrCreateInstance($modal[0]).show();
     });
   }
 
-  function renderMap($modal, title, maps, diff, note) {
+  function renderMap($modal, title, maps, diff, note, bossNote) {
     var M = window.MapsData, m = M.maps[maps[diff]];
-    $modal.data('ctx', { title: title, maps: maps, note: note });
+    $modal.data('ctx', { title: title, maps: maps, note: note, bossNote: bossNote });
     $modal.find('.modal-title').text(title + (Object.keys(maps).length > 1 ? ' (' + diff + ')' : ''));
 
     // In-game view, from the map's camera angle: which grid direction is up
@@ -584,7 +585,7 @@ function bossKit() {
       var inner = img ? '<img src="' + ASSET_BASE + img + '" alt="" />'
         : '<i class="bi ' + (u.boss ? 'bi-star-fill' : k.icon) + '"></i>';
       putAt(u, mark(cls, inner, info(u.name, [
-        u.boss ? 'Boss. See its skills below the map.' : k.label + (u.desc ? ' (' + esc(u.desc) + ')' : '') + '. ' + k.note,
+        u.boss ? (bossNote || 'Boss. See its skills below the map.') : k.label + (u.desc ? ' (' + esc(u.desc) + ')' : '') + '. ' + k.note,
         where(u.x, u.y) + (u.tiles && u.tiles.length ? ', ' + (u.tiles.length + 1) + ' tiles' : ''),
       ]), u.name));
     });
@@ -683,6 +684,7 @@ function bossKit() {
     data: data, bosses: bosses, esc: esc, pilotById: pilotById,
     mechHtml: mechHtml, cardHtml: cardHtml, gearHtml: gearHtml, groupHtml: groupHtml, diffToggle: diffToggle,
     seasonPage: seasonPage, chapterPage: chapterPage, bindDiffToggle: bindDiffToggle, bossAnchor: bossAnchor, bossHref: bossHref,
+    showMap: showMap,
   };
 }
 

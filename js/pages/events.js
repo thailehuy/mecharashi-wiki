@@ -93,7 +93,7 @@ Pages.events = {
     );
   },
 
-  _stageHead: function (st) {
+  _stageHead: function (st, mapBtn) {
     var esc = this._esc;
     return (
       '<div class="story-stage-head">' +
@@ -101,17 +101,21 @@ Pages.events = {
         '<span class="story-stage-name">' + esc(st.name) + '</span>' +
         (st.location ? '<span class="story-stage-meta"><i class="bi bi-geo-alt"></i>' + esc(st.location) + '</span>'
           : st.subtitle ? '<span class="story-stage-meta">' + esc(st.subtitle) + '</span>' : '') +
+        // The stage's battle map (scripts/build_maps.py), in the boss pages' popup.
+        (mapBtn && st.maps ? '<button type="button" class="filter-btn boss-map-btn" data-event-map="' + st.id + '">' +
+          '<i class="bi bi-grid-3x3"></i> View map</button>' : '') +
       '</div>'
     );
   },
 
   // Stage groups ("Story Stages", "Challenge Stages"...), each stage drawn by `body`; stages it draws nothing for are left out.
-  _groups: function (e, body) {
+  // mapBtn: a stage with a battle map is shown (with its "View map" button) even when `body` draws nothing.
+  _groups: function (e, body, mapBtn) {
     var self = this;
     return e.stages.map(function (g) {
       var stages = g.stages.map(function (st) {
         var html = body(st);
-        return html ? '<div class="story-stage skill-card">' + self._stageHead(st) + html + '</div>' : '';
+        return html || (mapBtn && st.maps) ? '<div class="story-stage skill-card">' + self._stageHead(st, mapBtn) + html + '</div>' : '';
       }).join('');
       return stages ? '<div class="story-side-title">' + self._esc(g.name) + '</div><div class="story-stages">' + stages + '</div>' : '';
     }).join('');
@@ -123,7 +127,7 @@ Pages.events = {
       return (st.tiers || []).filter(function (t) { return t.rewards.length; }).map(function (t) {
         return self._rewards(t.name ? self._esc(t.name) : 'Clear rewards', t.rewards, kit);
       }).join('');
-    });
+    }, true);
   },
 
   _achievements: function (e, kit) {
@@ -249,9 +253,23 @@ Pages.events = {
     return this._loading;
   },
 
+  // "View map" on a stage of the event page shown.
+  _bindMaps: function () {
+    if (this._mapsBound) return;
+    this._mapsBound = true;
+    $(document).on('click', '[data-event-map]', function () {
+      var slug = $('#events-root').attr('data-slug'), id = +$(this).attr('data-event-map');
+      var e = window.EventsData && window.EventsData.events.find(function (x) { return x.slug === slug; });
+      var st;
+      (e ? e.stages : []).forEach(function (g) { g.stages.forEach(function (x) { if (x.id === id) st = x; }); });
+      if (st && st.maps) bossKit().showMap(e.name + ': ' + (st.code ? st.code + ' ' : '') + st.name, st.maps, null, '', 'Boss.');
+    });
+  },
+
   // param: an event's slug (its own page).
   render: function (param) {
     var self = this;
+    this._bindMaps();
     var slug = param ? decodeURIComponent(param) : null;
     var content = function () {
       if (!slug) return self._list(window.EventsData);

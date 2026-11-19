@@ -11,6 +11,8 @@ plus the units its scene triggers summon (BattleSceneAction, from extract_maps.p
 Needs UnityPy and the MRT_FieldWiki folder (its RebuildGameUpdate/settings.py has the game path and bundle key).
 Seasons: SEASONS below, or the AC numbers given on the command line.
 Clearance Ops: every chapter in data/bosses/bosses.json (its `battle`), as stage "co-<chapter>": one map per route (see main).
+Events: every battle stage of every story event (ConfigDataPlotActivityInfo), as stage "ev-<level ID>": one map per difficulty;
+build_events.py adds them to the stages in events.json, so run this first. Stages with no units (story only) get none.
 """
 import json
 import os
@@ -33,6 +35,8 @@ import extract_maps  # noqa: E402
 SEASONS = None
 RAID_LEVELS = [('Normal', 'LevelList'), ('Hard', 'HardLevelList'), ('Extreme', 'HellLevelList'),
                ('Inferno', 'Difficult4LevelList')]
+# Story events' level groups (ConfigDataPlotActivityInfo), as in build_events.py.
+EVENT_GROUPS = ['PlotLevelGroupList', 'ChallengeLevelGroupList', 'DailyLevelGroupList']
 GRID_TYPES = {0: 'ground', 1: 'concrete', 2: 'wetland', 3: 'sand', 4: 'shoal', 5: 'ocean', 6: 'pit',
               7: 'low', 8: 'high', 10: 'high', 11: 'pit', 12: 'pit', 13: 'high'}
 ASSETS = os.environ.get('ASSETS_DIR', os.path.join(os.path.dirname(ROOT), 'mecharashi-wiki-assets'))
@@ -436,6 +440,34 @@ def main():
             stages['co-%d' % c['chapter']] = {n: '%s:%s' % (mp, g) for g, n in routes[mp]} or {'Normal': int(mp)}
             wanted[mp] = str(one('SELECT GameBoardId FROM ConfigDataBattleMapInfo WHERE ID = ?', int(mp)))
 
+    # Story events: every battle stage of every event (ConfigDataPlotActivityInfo's story, challenge and daily level
+    # groups), as "ev-<level ID>": {difficulty: map ID} ("Normal" when the stage has one battle). Picked up by
+    # build_events.py, so a new event gets its maps with no change here. Story-only stages (no units) are dropped below.
+    if not sys.argv[1:]:
+        diff_names = dict(con.execute('SELECT ID, NameStrKey_EN FROM ConfigDataPlotActivityLevelDifficultyInfo WHERE ID IS NOT NULL'))
+        for a_row in con.execute('SELECT %s FROM ConfigDataPlotActivityInfo ORDER BY ID' % ', '.join(EVENT_GROUPS)).fetchall():
+            for gids in a_row:
+                for gid in json.loads(gids or '[]'):
+                    for lid in json.loads(one('SELECT LevelList FROM ConfigDataPlotActivityLevelGroupInfo WHERE ID = ?', gid) or '[]'):
+                        tiers = {}
+                        for bid in json.loads(one('SELECT LevelBattleIdList FROM ConfigDataPlotActivityLevelInfo WHERE ID = ?', lid) or '[]'):
+                            b = con.execute('SELECT Difficulty, SubLevelDescStrKey_EN, BattleMapInfoList FROM ConfigDataPlotActivityLevelBattleInfo '
+                                            'WHERE ID = ?', (bid,)).fetchone()
+                            if not b:
+                                continue
+                            for m in json.loads(b[2] or '[]'):
+                                mp = m['BattleMapID']
+                                board = one('SELECT GameBoardId FROM ConfigDataBattleMapInfo WHERE ID = ?', mp)
+                                if not board:
+                                    continue
+                                tier = diff_names.get(b[0]) or b[1] or 'Normal'
+                                while tier in tiers:
+                                    tier += '+'
+                                tiers[tier] = mp
+                                wanted[str(mp)] = str(board)
+                        if tiers:
+                            stages['ev-%d' % lid] = tiers
+
     UnityPy.set_assetbundle_decrypt_key(settings.BUNDLE_KEY)
     scenes = load_assets(extract_maps.bundles()[-1][1], set(wanted))
     boards = load_assets(BOARD_BUNDLE, set(wanted.values()))
@@ -449,6 +481,9 @@ def main():
 
     out = {}
     for mp, bd in wanted.items():
+        if mp not in scenes or bd not in boards:
+            print('map %s (board %s): not in the client bundles, skipped' % (mp, bd))
+            continue
         s, b = scenes[mp], boards[bd]
         cols, rows = b['m_cols'], b['m_rows']
         cells = ''.join('%x' % b['m_cellType'][y * cols + x] if b['m_cellType'][y * cols + x] < 16 else 'f'
@@ -497,6 +532,16 @@ def main():
                 'reinforcements': reinforcements,
             }
     con.close()
+    # Event stages: drop maps with nothing on them (story-only stages, e.g. H.I.V.E. 16-3) and those not exported.
+    for key in [k for k in stages if k.startswith('ev-')]:
+        tiers = {t: mp for t, mp in stages[key].items()
+                 if str(mp) in out and (out[str(mp)]['units'] or out[str(mp)]['reinforcements'])}
+        if tiers:
+            stages[key] = tiers
+        else:
+            del stages[key]
+    used = {str(mp) for t in stages.values() for mp in t.values()}
+    out = {k: v for k, v in out.items() if k in used}
     have = export_icons(icons)
     for m in out.values():
         for u in m['units'] + m['reinforcements'] + m['objects']:
