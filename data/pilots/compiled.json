@@ -7508,7 +7508,7 @@
                 "PassiveSkill": {
                   "ID": "401145",
                   "name": "Victory from Afar 3",
-                  "SpecificEffects": "When a teammate with <buf ID=4011502>[Appointed]</buf> destroys an enemy unit, [Colin] recovers <color=#F74848>1</color> AP. Can trigger up to <color=#F74848>2</color> times per turn.",
+                  "SpecificEffects": "When a teammate with <buf ID=4011502>[Appointed]</buf> destroys an enemy unit, [Colin] regens <color=#F74848>1</color> AP. Can trigger up to <color=#F74848>2</color> times per turn.",
                   "SkillIcon": "Icon_skill_passive_5269",
                   "icon": "Icon_skill_passive_5269"
                 }
@@ -36315,7 +36315,7 @@
           "skill": {
             "ID": "601105",
             "name": "Seize Momentum",
-            "SpecificEffects": "After a perfect dodge, restores <color=#F74848>1</color> AP after combat. Can trigger up to <color=#F74848>1</color> time per turn.",
+            "SpecificEffects": "After a perfect dodge, regens <color=#F74848>1</color> AP after combat. Can trigger up to <color=#F74848>1</color> time per turn.",
             "SkillIcon": "Icon_skill_passive_5129",
             "icon": "Icon_skill_passive_5129"
           }
@@ -36461,7 +36461,7 @@
       "AlternateSkins": [
         "B"
       ],
-      "Introduction": "Colin's adjutant, a hot-headed and defiant man of action.",
+      "Introduction": "Colin's adjutant, a hot-headed and defiant woman of action.",
       "stats": {
         "Combat": "4874",
         "Assault": "1307",

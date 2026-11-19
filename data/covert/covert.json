@@ -3861,7 +3861,7 @@
     "7013": {
       "id": 7013,
       "name": "Ember",
-      "win": "Occupy all target points",
+      "win": "Occupy all target points!",
       "lose": "Your team is wiped out, or you exceed 7 turns!",
       "diffs": [
         "Max"
@@ -4011,7 +4011,7 @@
     "7015": {
       "id": 7015,
       "name": "Fault",
-      "win": "Defeat 2 elite units",
+      "win": "Defeat 2 elite units!",
       "lose": "Your team is wiped out or you exceed 8 turns.",
       "diffs": [
         "Max"
@@ -4109,13 +4109,48 @@
           "summoned": true,
           "roaming": true,
           "n": 1
+        },
+        {
+          "name": "Mercenary",
+          "st": "Centurion",
+          "summoned": true,
+          "n": 1,
+          "lv": 90
+        },
+        {
+          "name": "Seasoned Mercenary",
+          "st": "Dopplesoldner",
+          "summoned": true,
+          "n": 2,
+          "lv": 90
+        },
+        {
+          "name": "Mercenary",
+          "st": "Dopplesoldner",
+          "summoned": true,
+          "n": 1,
+          "lv": 90
+        },
+        {
+          "name": "Mercenary",
+          "st": "XR",
+          "summoned": true,
+          "n": 1,
+          "lv": 90
+        },
+        {
+          "name": "Seasoned Mercenary",
+          "st": "XR",
+          "summoned": true,
+          "n": 1,
+          "lv": 90
         }
       ]
     },
     "7031": {
       "id": 7031,
       "name": "Deep Dive",
-      "win": "At least 1 unit reaches the designated Exit Zone",
+      "win": "At least 1 unit reaches the designated Exit Zone!",
       "lose": "Your team is wiped out or you exceed 10 turns.",
       "diffs": [
         "Max"
@@ -4221,13 +4256,55 @@
           "summoned": true,
           "roaming": true,
           "n": 1
+        },
+        {
+          "name": "Fighter",
+          "st": "Dopplesoldner",
+          "summoned": true,
+          "n": 1,
+          "lv": 90
+        },
+        {
+          "name": "Anti-Armor Fighter",
+          "st": "Centurion",
+          "summoned": true,
+          "n": 5,
+          "lv": 90
+        },
+        {
+          "name": "MG Operator",
+          "st": "XR",
+          "summoned": true,
+          "n": 2,
+          "lv": 90
+        },
+        {
+          "name": "Precision Sniper",
+          "st": "XR",
+          "summoned": true,
+          "n": 5,
+          "lv": 90
+        },
+        {
+          "name": "High-Energy Charger",
+          "st": "XR",
+          "summoned": true,
+          "n": 1,
+          "lv": 90
+        },
+        {
+          "name": "Flame Grenade Rocket Trooper",
+          "st": "XR",
+          "summoned": true,
+          "n": 1,
+          "lv": 90
         }
       ]
     },
     "7033": {
       "id": 7033,
       "name": "Rift",
-      "win": "At least 1 unit reaches the designated Exit Zone",
+      "win": "At least 1 unit reaches the designated Exit Zone!",
       "lose": "Your team is wiped out or you exceed 10 turns.",
       "diffs": [
         "Max"
@@ -4297,7 +4374,7 @@
     "7037": {
       "id": 7037,
       "name": "Overclocked",
-      "win": "Protect the target for at least 6 turns, or defeat all enemies.",
+      "win": "Protect the target for at least 6 turns, or defeat all enemies!",
       "lose": "All allies are defeated or any 2 targets are destroyed.",
       "diffs": [
         "Max"
@@ -4367,7 +4444,7 @@
     "7038": {
       "id": 7038,
       "name": "Undercurrent",
-      "win": "Protect the target for at least 6 turns, or defeat all enemies.",
+      "win": "Protect the target for at least 6 turns, or defeat all enemies!",
       "lose": "All allies are defeated or any 2 targets are destroyed.",
       "diffs": [
         "Max"
@@ -4413,7 +4490,7 @@
     "7039": {
       "id": 7039,
       "name": "Implosion",
-      "win": "Protect the target for at least 6 turns, or defeat all enemies.",
+      "win": "Protect the target for at least 6 turns, or defeat all enemies!",
       "lose": "All allies are defeated or any 2 targets are destroyed.",
       "diffs": [
         "Max"
@@ -4542,13 +4619,27 @@
           "summoned": true,
           "roaming": true,
           "n": 1
+        },
+        {
+          "name": "Elite Mobile Guard",
+          "st": "Centurion",
+          "summoned": true,
+          "n": 1,
+          "lv": 90
+        },
+        {
+          "name": "Elite Mobile Guard",
+          "st": "Dopplesoldner",
+          "summoned": true,
+          "n": 3,
+          "lv": 90
         }
       ]
     },
     "7042": {
       "id": 7042,
       "name": "Silent Entropy",
-      "win": "Survive for 5 turns or destroy all Flame Interference Beacons.",
+      "win": "Survive for 5 turns or destroy all Flame Interference Beacons!",
       "lose": "Your team is wiped out!",
       "diffs": [
         "Max"
@@ -4585,7 +4676,7 @@
     "7043": {
       "id": 7043,
       "name": "Fleeting Shadow",
-      "win": "Survive for 5 turns or destroy all Flame Interference Beacons.",
+      "win": "Survive for 5 turns or destroy all Flame Interference Beacons!",
       "lose": "Your team is wiped out!",
       "diffs": [
         "Max"
@@ -4622,7 +4713,7 @@
     "7044": {
       "id": 7044,
       "name": "Ashen Wasteland",
-      "win": "Survive for 5 turns or destroy all Flame Interference Beacons.",
+      "win": "Survive for 5 turns or destroy all Flame Interference Beacons!",
       "lose": "Your team is wiped out!",
       "diffs": [
         "Max"
@@ -4665,7 +4756,7 @@
     "7045": {
       "id": 7045,
       "name": "Pulse",
-      "win": "Defeat all enemies or survive for 8 turns",
+      "win": "Defeat all enemies or survive for 8 turns!",
       "lose": "All allies are defeated or the AP Amplifier is destroyed",
       "diffs": [
         "Max"
@@ -4701,14 +4792,36 @@
           "st": "XR",
           "summoned": true,
           "roaming": true,
-          "n": 1
+          "n": 2,
+          "lv": 90
+        },
+        {
+          "name": "Elite Mobile Guard",
+          "st": "Centurion",
+          "summoned": true,
+          "n": 1,
+          "lv": 90
+        },
+        {
+          "name": "Mobile Guard Officer",
+          "st": "Dopplesoldner",
+          "summoned": true,
+          "n": 2,
+          "lv": 90
+        },
+        {
+          "name": "Mobile Guard Captain",
+          "st": "Dopplesoldner",
+          "summoned": true,
+          "n": 1,
+          "lv": 90
         }
       ]
     },
     "7046": {
       "id": 7046,
       "name": "Furnace",
-      "win": "Defeat all enemies or survive for 8 turns",
+      "win": "Defeat all enemies or survive for 8 turns!",
       "lose": "All allies are defeated or the AP Amplifier is destroyed",
       "diffs": [
         "Max"
@@ -4769,7 +4882,7 @@
     "7047": {
       "id": 7047,
       "name": "Transition",
-      "win": "Defeat all enemies or survive for 8 turns",
+      "win": "Defeat all enemies or survive for 8 turns!",
       "lose": "All allies are defeated or the AP Amplifier is destroyed",
       "diffs": [
         "Max"
@@ -4886,7 +4999,7 @@
     "7052": {
       "id": 7052,
       "name": "Twins",
-      "win": "Defeat any boss to enter the final stage",
+      "win": "Defeat any boss to enter the final stage!",
       "lose": "Your team is wiped out, or you exceed 7 turns!",
       "diffs": [
         "Max"
@@ -10184,7 +10297,7 @@
     "70521": {
       "id": 70521,
       "name": "Twins",
-      "win": "Defeat any boss to enter the final stage",
+      "win": "Defeat any boss to enter the final stage!",
       "lose": "Your team is wiped out, or you exceed 7 turns!",
       "diffs": [
         "Max"
@@ -10225,7 +10338,7 @@
     "70522": {
       "id": 70522,
       "name": "Twins",
-      "win": "Defeat any boss to enter the final stage",
+      "win": "Defeat any boss to enter the final stage!",
       "lose": "Your team is wiped out, or you exceed 7 turns!",
       "diffs": [
         "Max"

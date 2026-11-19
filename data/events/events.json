@@ -10562,6 +10562,8 @@
       "id": 13,
       "slug": "hive",
       "name": "H.I.V.E.",
+      "start": "2026-11-19",
+      "end": "2026-12-17",
       "image": "Img_Web_Shop_BG_Raw",
       "stages": [
         {
@@ -10784,7 +10786,7 @@
             {
               "id": 200,
               "code": "3",
-              "name": "Paradox",
+              "name": "Paradox I",
               "tiers": [
                 {
                   "name": "Normal",
@@ -11315,7 +11317,7 @@
               ]
             },
             {
-              "title": "Kaidan Obtains 2 Cmdr. Collections",
+              "title": "Kaidan Obtains 2 Commander Collections",
               "steps": [
                 "Side Mission - Collection ID150132",
                 "Side Mission - Collection ID150133",
@@ -11333,7 +11335,7 @@
               ]
             },
             {
-              "title": "Elise Obtains 2 Cmdr. Collections",
+              "title": "Elise Obtains 2 Commander Collections",
               "steps": [
                 "Side Mission - Collection ID150142",
                 "Side Mission - Collection ID150143",
@@ -11433,7 +11435,7 @@
               ]
             },
             {
-              "title": "Complete 3 battles with Kaidan as commander",
+              "title": "Complete 3 Battles with Kaidan as Commander",
               "rewards": [
                 {
                   "name": "Expansive Flash",
@@ -11444,7 +11446,7 @@
               ]
             },
             {
-              "title": "Complete 3 battles with Elise as commander",
+              "title": "Complete 3 Battles with Elise as Commander",
               "rewards": [
                 {
                   "name": "Expansive Flash",
@@ -11516,7 +11518,7 @@
               ]
             },
             {
-              "title": "Any 2 Basic Collections reach level 5",
+              "title": "Any 2 Basic Collections Reach Lv.5",
               "steps": [
                 "Side Mission - Collection 1 Reaches Lv.5",
                 "Side Mission - Collection 2 Reaches Lv.5",
@@ -11533,7 +11535,7 @@
               ]
             },
             {
-              "title": "Any 2 of Kaidan's Cmdr. Collections Reach Level 3",
+              "title": "Any 2 of Kaidan's Commander Collections Reach Lv.3",
               "steps": [
                 "Side Mission - Collection ID150132",
                 "Side Mission - Collection ID150133",
@@ -11551,7 +11553,7 @@
               ]
             },
             {
-              "title": "Any 2 of Elise's Cmdr. Collections Reach Level 3",
+              "title": "Any 2 of Elise's Commander Collections Reach Lv.3",
               "steps": [
                 "Side Mission - Collection ID150142",
                 "Side Mission - Collection ID150143",
@@ -11630,7 +11632,7 @@
               ]
             },
             {
-              "title": "Any 3 Basic Collections reach level 7",
+              "title": "Any 3 Basic Collections Reach Lv.7",
               "steps": [
                 "Side Mission - Collection 1 Reaches Lv.7",
                 "Side Mission - Collection 2 Reaches Lv.7",
@@ -11647,7 +11649,7 @@
               ]
             },
             {
-              "title": "Complete 5 battles with Kaidan as commander",
+              "title": "Complete 5 Battles with Kaidan as Commander",
               "rewards": [
                 {
                   "name": "Expansive Flash",
@@ -11658,7 +11660,7 @@
               ]
             },
             {
-              "title": "Complete 5 battles with Elise as commander",
+              "title": "Complete 5 Battles with Elise as Commander",
               "rewards": [
                 {
                   "name": "Expansive Flash",
@@ -11686,7 +11688,7 @@
               ]
             },
             {
-              "title": "Command Level reaches 20",
+              "title": "Command Level Reaches 20",
               "rewards": [
                 {
                   "name": "ST Emblem: H.I.V.E. Anchor",
@@ -11772,7 +11774,7 @@
               ]
             },
             {
-              "title": "Any 3 Basic Collections reach level 10",
+              "title": "Any 3 Basic Collections Reach Lv.10",
               "steps": [
                 "Side Mission - Collection 1 Reaches Lv.10",
                 "Side Mission - Collection 2 Reaches Lv.10",
@@ -11789,7 +11791,7 @@
               ]
             },
             {
-              "title": "Any 3 of Kaidan's Cmdr. Collections Reach Level 5",
+              "title": "Any 3 of Kaidan's Commander Collections Reach Lv.5",
               "steps": [
                 "Side Mission - Collection ID150132",
                 "Side Mission - Collection ID150133",
@@ -11807,7 +11809,7 @@
               ]
             },
             {
-              "title": "Any 3 of Elise's Cmdr. Collections Reach Level 5",
+              "title": "Any 3 of Elise's Commander Collections Reach Lv.5",
               "steps": [
                 "Side Mission - Collection ID150142",
                 "Side Mission - Collection ID150143",
@@ -11831,7 +11833,7 @@
         {
           "name": "Intel Shop",
           "random": true,
-          "text": "Spend Worker Pts to unlock the Data B-Box and receive a random collectible from a specified pool.",
+          "text": "Spend Worker Pts to unlock a Data B-Box and get a random collectible.",
           "refresh": "CurrencyType_PlotActivityToken9",
           "items": [
             {
@@ -11950,15 +11952,15 @@
           "type": "CurrencyType_PlotActivityToken8",
           "name": "Worker Pts",
           "icon": "Icon_currency_ActivityToken8",
-          "text": "In the Hive Network, everyone is like a worker bee, laboring and then receiving rewards... but there is no queen bee, which is why it is so popular.",
-          "use": "H.I.V.E. event item, used to purchase a random B-Box in the Intel Shop."
+          "text": "In the H.I.V.E. Network, everyone is like a worker bee, laboring and then receiving rewards... but there is no queen bee, which is why it is so popular.",
+          "use": "H.I.V.E. event item. Used to purchase a random B-Box in the Intel Shop."
         },
         {
           "type": "CurrencyType_PlotActivityToken9",
           "name": "Refresh Command",
           "icon": "Icon_currency_ActivityToken9",
           "text": "Here, you have the right to reject tasks you dislike, experiencing a sense of freedom.",
-          "use": "H.I.V.E. event item, used to refresh the B-Box list in the Intel Shop."
+          "use": "H.I.V.E. event item. Used to refresh the B-Box list in the Intel Shop."
         }
       ]
     }

@@ -1931,7 +1931,7 @@
   "401145": {
     "kind": "neural",
     "name": "Victory from Afar 3",
-    "effect": "When a teammate with <buf ID=4011502>[Appointed]</buf> destroys an enemy unit, [Colin] recovers <color=#F74848>1</color> AP. Can trigger up to <color=#F74848>2</color> times per turn.",
+    "effect": "When a teammate with <buf ID=4011502>[Appointed]</buf> destroys an enemy unit, [Colin] regens <color=#F74848>1</color> AP. Can trigger up to <color=#F74848>2</color> times per turn.",
     "icon": "Icon_skill_passive_5269",
     "buffs": "4011451/4011452"
   },
@@ -7266,7 +7266,7 @@
   "601105": {
     "kind": "skill",
     "name": "Seize Momentum",
-    "effect": "After a perfect dodge, restores <color=#F74848>1</color> AP after combat. Can trigger up to <color=#F74848>1</color> time per turn.",
+    "effect": "After a perfect dodge, regens <color=#F74848>1</color> AP after combat. Can trigger up to <color=#F74848>1</color> time per turn.",
     "icon": "Icon_skill_passive_5129",
     "buffs": "6011051"
   },
