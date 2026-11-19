@@ -37,7 +37,7 @@ from build_intake import ASSETS_DIR, DB, OUT, ROOT, Form, Game, jl, load
 
 GLOBAL_STATS = os.path.join(ROOT, 'data', 'screenshots', 'MRT_FieldWiki', 'RebuildGameUpdate', 'out', 'stats.db')
 # Same as WEAPON_FOLDER in build-icons.py (WEAPON_ICON_FOLDER in js/pages/weapons.js), plus Knuckles.
-WEAPON_FOLDER = {'Blade': 'AB', 'Buckler': 'SS', 'Flamethrower': 'FT', 'Funnel': 'CT', 'HeavyMachineGun': 'HMG',
+WEAPON_FOLDER = {'Blade': 'AB', 'BladeBit': 'BB', 'Buckler': 'SS', 'Flamethrower': 'FT', 'Funnel': 'CT', 'HeavyMachineGun': 'HMG',
                  'HeavySniper': 'SR', 'LightSniper': 'LR', 'MachineGun': 'MG', 'Missile': 'ML', 'PileBunker': 'PB',
                  'RailGun': 'RG', 'Rocket': 'RL', 'Rod': 'PA', 'Saw': 'CH', 'Shield': 'LS', 'ShotGun': 'SG', 'Knuckle': 'KN'}
 

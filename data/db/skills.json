@@ -10881,5 +10881,59 @@
     "icon": "Icon_skill_passive_5335",
     "effect": "When an enemy carrying <buf ID=900192>[Corrosion]</buf> is destroyed, gains <color=#F74848>1</color> stack of <buf ID=4015506>[Architectural Data]</buf> and restores <color=#F74848>1</color> AP. Can trigger up to <color=#F74848>2</color> times per turn.",
     "buffs": "4015461"
+  },
+  "53148": {
+    "kind": "weapon",
+    "name": "Twin Star Break",
+    "effect": "When attacking with two Alter-Blades, DMG and Crit Rate <color=#F74848>+15%</color>.",
+    "icon": "Icon_skill_passive_1143"
+  },
+  "53149": {
+    "kind": "weapon",
+    "name": "Cascading Radiance",
+    "effect": "When actively attacking with an Alter-Blade, DMG <color=#F74848>+6%</color> for each AP spent, up to <color=#F74848>+30%</color>.",
+    "icon": "Icon_skill_passive_1195"
+  },
+  "53150": {
+    "kind": "weapon",
+    "name": "Morning Star's Gleam",
+    "effect": "Enhances <skill mainSkill=101750>[Poised Starburst]</skill>: for each stack of <buf ID=900133>[Poised]</buf> gained, gains <color=#F74848>1</color> stack of <buf ID=531509>[Morning Star's Gleam]</buf> for <color=#F74848>1</color> turn. After the AP recovery effect of the <buf ID=900133>[Poised]</buf> talent triggers, the next active attack's Final DMG <color=#F74848>+20%</color>, and the target cannot retaliate against it.",
+    "icon": "Icon_skill_passive_1196"
+  },
+  "53145": {
+    "kind": "weapon",
+    "name": "Edge Against Legions",
+    "effect": "When there are enemies within this weapon's range, DMG and Hit Rate <color=#F74848>+10%</color>. DMG <color=#F74848>+5%</color> more for each additional enemy, up to <color=#F74848>+15%</color> more.",
+    "icon": "Icon_skill_passive_1194"
+  },
+  "53146": {
+    "kind": "weapon",
+    "name": "Endless Blade Song",
+    "effect": "After actively attacking with a Floating Blade, if <buf ID=900004>[Re-ATK]</buf> triggers, gains <color=#F74848>1</color> random buff for <color=#F74848>2</color> turns. Can trigger up to <color=#F74848>2</color> times per turn.",
+    "icon": "Icon_skill_passive_5339"
+  },
+  "53147": {
+    "kind": "weapon",
+    "name": "Flowing Blade Stormbreak",
+    "effect": "Enhances <skill mainSkill=102451>[Blightblade]</skill>: Movement <color=#F74848>+1</color> and CP <color=#F74848>+3</color> in the lowest unlocked Neural Drive Sector. <skill activeSkill=2006>[Blade Lock-On Assault]</skill> can target empty tiles; if the target is an empty tile, directly creates <color=#F74848>1</color> <terrian ID=1024501 />. After an active attack scores a Critical Hit, gains <color=#F74848>1</color> stack of <buf ID=531475>[Blade Intent]</buf>, up to <color=#F74848>5</color> stacks.",
+    "icon": "Icon_skill_passive_5340"
+  },
+  "53151": {
+    "kind": "weapon",
+    "name": "Inviting Flames",
+    "effect": "When actively attacking targets on Burning Terrain, DMG and Hit Rate <color=#F74848>+15%</color>.",
+    "icon": "Icon_skill_passive_1197"
+  },
+  "53152": {
+    "kind": "weapon",
+    "name": "Blazing Pas de Deux",
+    "effect": "When equipped with two Flamethrowers, Flamethrower weapon ATK <color=#F74848>+15%</color>. This effect does not stack.",
+    "icon": "Icon_skill_passive_1198"
+  },
+  "53153": {
+    "kind": "weapon",
+    "name": "Ember Afterglow",
+    "effect": "Enhances <skill mainSkill=201850>[Hellstorm Allure]</skill>: <buf ID=900128>[Hellstorm Burst]</buf> skill multiplier <color=#F74848>+0.1x</color>. The first time each turn an active attack is made with two Flamethrowers, restores <color=#F74848>1</color> AP. <buf ID=900128>[Hellstorm Burst]</buf> applies <color=#F74848>1</color> stack of <buf ID=531539>[Ember Afterglow]</buf> to the target.",
+    "icon": "Icon_skill_passive_5341"
   }
 }

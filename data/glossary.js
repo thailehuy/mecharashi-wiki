@@ -1669,6 +1669,18 @@ window.GlossaryData = {
     "4015506": {
       "name": "Architectural Data",
       "effect": "Can be used for <skill mainSkill=401550>[Command Injection]</skill>."
+    },
+    "531509": {
+      "name": "Morning Star's Gleam",
+      "effect": "DMG <color=#F74848>+2%</color>, up to <color=#F74848>10</color> stacks."
+    },
+    "531475": {
+      "name": "Blade Intent",
+      "effect": "DMG and Crit DMG <color=#F74848>+3%</color>, up to <color=#F74848>5</color> stacks."
+    },
+    "531539": {
+      "name": "Ember Afterglow",
+      "effect": "At the start of its action, takes <buf ID=900017>[Fixed DMG]</buf> equal to <color=#F74848>0.2x</color> [Adele]'s weapon ATK on all parts. Stacks up to <color=#F74848>5</color> times; removed after triggering."
     }
   },
   "skill": {

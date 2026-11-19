@@ -8,7 +8,7 @@ var BUILDER_WEAPON_POSITION_FALLBACK = {
   HeavyMachineGun: 'DoubleHand', HeavySniper: 'DoubleHand', Rod: 'DoubleHand', Saw: 'DoubleHand',
   Blade: 'Hand', Buckler: 'Hand', Flamethrower: 'Hand', LightSniper: 'Hand',
   MachineGun: 'Hand', PileBunker: 'Hand', Shield: 'Hand', ShotGun: 'Hand',
-  Funnel: 'Back', RailGun: 'Back',
+  BladeBit: 'Back', Funnel: 'Back', RailGun: 'Back',
   Missile: 'Shoulder', Rocket: 'Shoulder',
 };
 

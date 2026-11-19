@@ -18,7 +18,7 @@ OUT = os.path.join(HERE, 'bench-icons.js')
 CDN = 'https://media.zlongame.com/media/pictures/cn/community/img/gl/gameInfo/'
 
 # Same as WEAPON_ICON_FOLDER / WEAPON_ICON_OVERRIDE in js/pages/weapons.js.
-WEAPON_FOLDER = {'Blade': 'AB', 'Buckler': 'SS', 'Flamethrower': 'FT', 'Funnel': 'CT', 'HeavyMachineGun': 'HMG',
+WEAPON_FOLDER = {'Blade': 'AB', 'BladeBit': 'BB', 'Buckler': 'SS', 'Flamethrower': 'FT', 'Funnel': 'CT', 'HeavyMachineGun': 'HMG',
                  'HeavySniper': 'SR', 'LightSniper': 'LR', 'MachineGun': 'MG', 'Missile': 'ML', 'PileBunker': 'PB',
                  'RailGun': 'RG', 'Rocket': 'RL', 'Rod': 'PA', 'Saw': 'CH', 'Shield': 'LS', 'ShotGun': 'SG'}
 # Weapon advanced options by name without the tier (user confirmed 2026-10-15).

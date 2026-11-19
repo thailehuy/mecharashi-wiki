@@ -18,6 +18,7 @@ var WEAPON_TYPE1_LABEL = {
 
 var WEAPON_TYPE2_LABEL = {
   Blade:          'Alter-Blade',
+  BladeBit:       'Floating Blade',
   Buckler:        'Small Shield',
   Flamethrower:   'Flamethrower',
   Funnel:         'Cutter',
@@ -44,6 +45,7 @@ var AC_FOOTNOTES = {
 var WEAPON_ICON_DIR = ASSET_BASE + 'data/weapons/icons/';
 var WEAPON_ICON_FOLDER = {
   Blade:          'AB',
+  BladeBit:       'BB',
   Buckler:        'SS',
   Flamethrower:   'FT',
   Funnel:         'CT',
