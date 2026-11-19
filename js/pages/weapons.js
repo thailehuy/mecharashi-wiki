@@ -141,19 +141,24 @@ Pages.weapons = {
   _renderList: function (weapons) {
     var self = this;
 
+    // One section per Armed Conquest run: a rerun season (e.g. AC12 in v4.0)
+    // gets its own section, keyed by season and version, ordered newest first.
     var acGroups = [];
     weapons.forEach(function (w) {
       var ac = w.ac || 0;
-      var group = acGroups.find(function (g) { return g.ac === ac; });
-      if (!group) { group = { ac: ac, weapons: [] }; acGroups.push(group); }
+      var ver = ac ? (w.version || '') : '';
+      var key = ac ? ac + '-' + ver.replace('.', '_') : '0';
+      var group = acGroups.find(function (g) { return g.key === key; });
+      if (!group) { group = { key: key, ac: ac, version: ver, weapons: [] }; acGroups.push(group); }
       group.weapons.push(w);
     });
-    acGroups.sort(function (a, b) { return b.ac - a.ac; });
+    acGroups.sort(function (a, b) {
+      return (!a.ac - !b.ac) || (parseFloat(b.version) - parseFloat(a.version)) || (b.ac - a.ac);
+    });
 
     var acNav = '<div class="filter-group"><span class="filter-label">Source</span><div class="filter-values">' +
       acGroups.filter(function (g) { return g.ac; }).map(function (g) {
-        var version = (g.weapons[0] || {}).version;
-        return '<button class="filter-btn filter-occ" data-filter-section="ac-' + g.ac + '">AC' + g.ac + (version ? ' - v' + version : '') + '</button>';
+        return '<button class="filter-btn filter-occ" data-filter-section="ac-' + g.key + '">AC' + g.ac + (g.version ? ' - v' + g.version : '') + '</button>';
       }).join('') +
     '</div></div>';
 
@@ -166,9 +171,14 @@ Pages.weapons = {
       return '<button class="filter-btn filter-occ" data-filter-type="' + t + '">' + (WEAPON_TYPE2_LABEL[t] || t) + '</button>';
     }).join('');
 
+    // Seasons that ran more than once get their version in the section title.
+    var rerun = {};
+    acGroups.forEach(function (g) {
+      if (g.ac) rerun[g.ac] = acGroups.filter(function (o) { return o.ac === g.ac; }).length > 1;
+    });
     var sectionsHtml = acGroups.map(function (g) {
-      return '<div class="ac-section" id="ac-' + g.ac + '" data-ac="' + g.ac + '">' +
-        (g.ac ? '<h2 class="ac-section-title">Armed Conquest ' + g.ac + '</h2>' : '') +
+      return '<div class="ac-section" id="ac-' + g.key + '" data-ac="' + g.key + '">' +
+        (g.ac ? '<h2 class="ac-section-title">Armed Conquest ' + g.ac + (rerun[g.ac] ? ' (v' + g.version + ')' : '') + '</h2>' : '') +
         '<div class="row g-3 weapon-grid-section"></div>' +
         (AC_FOOTNOTES[g.ac] ? '<p class="ac-section-footnote">* ' + AC_FOOTNOTES[g.ac] + '</p>' : '') +
       '</div>';
@@ -202,7 +212,7 @@ Pages.weapons = {
       var allPilots = (window.PilotsData || {}).pilots || [];
 
       acGroups.forEach(function (g) {
-        var $section = $('#weapon-page .ac-section[data-ac="' + g.ac + '"]');
+        var $section = $('#weapon-page .ac-section[data-ac="' + g.key + '"]');
         var $grid = $section.find('.weapon-grid-section');
 
         g.weapons.forEach(function (w) {
