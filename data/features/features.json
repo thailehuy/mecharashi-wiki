@@ -6,7 +6,8 @@
     "Mechanic": "Machinist",
     "Launcher": "Tactician",
     "Gunner": "Sniper",
-    "Defender": "Guardian"
+    "Defender": "Guardian",
+    "Shifter": "Shifter"
   },
   "pilot": {
     "Fighter": [
@@ -3044,6 +3045,330 @@
         "icon": "data/unlisted/rnd/Icon_RnD_E_3053.png",
         "for": "Machinist"
       }
+    ],
+    "Shifter": [
+      {
+        "id": "17000001",
+        "name": "Shifter - Melee",
+        "group": "Special Training: Basics",
+        "slots": [
+          "I",
+          "II",
+          "III"
+        ],
+        "effect": "Shifter Melee +6%.",
+        "rule": "Available for any Shifter Feature Port. Basic Features of the same type cannot be equipped simultaneously.",
+        "cost": [],
+        "icon": "data/unlisted/rnd/Icon_RnD_N_1001.png",
+        "cn": true,
+        "basic": "Shifter - Melee",
+        "for": "Shifter"
+      },
+      {
+        "id": "17000002",
+        "name": "Shifter - Assault",
+        "group": "Special Training: Basics",
+        "slots": [
+          "I",
+          "II",
+          "III"
+        ],
+        "effect": "Shifter Assault +6%.",
+        "rule": "Available for any Shifter Feature Port. Basic Features of the same type cannot be equipped simultaneously.",
+        "cost": [],
+        "icon": "data/unlisted/rnd/Icon_RnD_N_1002.png",
+        "cn": true,
+        "basic": "Shifter - Assault",
+        "for": "Shifter"
+      },
+      {
+        "id": "17000003",
+        "name": "Shifter - Ranged",
+        "group": "Special Training: Basics",
+        "slots": [
+          "I",
+          "II",
+          "III"
+        ],
+        "effect": "Shifter Ranged +6%.",
+        "rule": "Available for any Shifter Feature Port. Basic Features of the same type cannot be equipped simultaneously.",
+        "cost": [],
+        "icon": "data/unlisted/rnd/Icon_RnD_N_1003.png",
+        "cn": true,
+        "basic": "Shifter - Ranged",
+        "for": "Shifter"
+      },
+      {
+        "id": "17000004",
+        "name": "Shifter - Tactical",
+        "group": "Special Training: Basics",
+        "slots": [
+          "I",
+          "II",
+          "III"
+        ],
+        "effect": "Shifter Tactical +6%.",
+        "rule": "Available for any Shifter Feature Port. Basic Features of the same type cannot be equipped simultaneously.",
+        "cost": [],
+        "icon": "data/unlisted/rnd/Icon_RnD_N_1004.png",
+        "cn": true,
+        "basic": "Shifter - Tactical",
+        "for": "Shifter"
+      },
+      {
+        "id": "17000005",
+        "name": "Shifter - Mechanics",
+        "group": "Special Training: Basics",
+        "slots": [
+          "I",
+          "II",
+          "III"
+        ],
+        "effect": "Shifter Mechanics +6%.",
+        "rule": "Available for any Shifter Feature Port. Basic Features of the same type cannot be equipped simultaneously.",
+        "cost": [],
+        "icon": "data/unlisted/rnd/Icon_RnD_N_1005.png",
+        "cn": true,
+        "basic": "Shifter - Mechanics",
+        "for": "Shifter"
+      },
+      {
+        "id": "17000006",
+        "name": "Shifter - Defense",
+        "group": "Special Training: Basics",
+        "slots": [
+          "I",
+          "II",
+          "III"
+        ],
+        "effect": "Shifter Defense +6%.",
+        "rule": "Available for any Shifter Feature Port. Basic Features of the same type cannot be equipped simultaneously.",
+        "cost": [],
+        "icon": "data/unlisted/rnd/Icon_RnD_N_1006.png",
+        "cn": true,
+        "basic": "Shifter - Defense",
+        "for": "Shifter"
+      },
+      {
+        "id": "17000007",
+        "name": "Shifter - Hybrid Training",
+        "group": "Special Training: Basics",
+        "slots": [
+          "I",
+          "II",
+          "III"
+        ],
+        "effect": "All Attributes +2.5%.",
+        "rule": "Available for any Shifter Feature Port. Basic Features of the same type cannot be equipped simultaneously.",
+        "cost": [],
+        "icon": "data/unlisted/rnd/Icon_RnD_E_3031.png",
+        "cn": true,
+        "basic": "Shifter - Hybrid Training",
+        "for": "Shifter"
+      },
+      {
+        "id": "17000008",
+        "name": "Shifter - Melee II",
+        "group": "Special Training: Basics",
+        "slots": [
+          "I",
+          "II",
+          "III"
+        ],
+        "effect": "Shifter Melee +8%.",
+        "rule": "Available for any Shifter Feature Port. Basic Features of the same type cannot be equipped simultaneously.",
+        "cost": [],
+        "icon": "data/unlisted/rnd/Icon_RnD_N_1001.png",
+        "cn": true,
+        "basic": "Shifter - Melee",
+        "for": "Shifter"
+      },
+      {
+        "id": "17000009",
+        "name": "Shifter - Assault II",
+        "group": "Special Training: Basics",
+        "slots": [
+          "I",
+          "II",
+          "III"
+        ],
+        "effect": "Shifter Assault +8%.",
+        "rule": "Available for any Shifter Feature Port. Basic Features of the same type cannot be equipped simultaneously.",
+        "cost": [],
+        "icon": "data/unlisted/rnd/Icon_RnD_N_1002.png",
+        "cn": true,
+        "basic": "Shifter - Assault",
+        "for": "Shifter"
+      },
+      {
+        "id": "17000010",
+        "name": "Shifter - Ranged II",
+        "group": "Special Training: Basics",
+        "slots": [
+          "I",
+          "II",
+          "III"
+        ],
+        "effect": "Shifter Ranged +8%.",
+        "rule": "Available for any Shifter Feature Port. Basic Features of the same type cannot be equipped simultaneously.",
+        "cost": [],
+        "icon": "data/unlisted/rnd/Icon_RnD_N_1003.png",
+        "cn": true,
+        "basic": "Shifter - Ranged",
+        "for": "Shifter"
+      },
+      {
+        "id": "17000011",
+        "name": "Shifter - Tactical II",
+        "group": "Special Training: Basics",
+        "slots": [
+          "I",
+          "II",
+          "III"
+        ],
+        "effect": "Shifter Tactical +8%.",
+        "rule": "Available for any Shifter Feature Port. Basic Features of the same type cannot be equipped simultaneously.",
+        "cost": [],
+        "icon": "data/unlisted/rnd/Icon_RnD_N_1004.png",
+        "cn": true,
+        "basic": "Shifter - Tactical",
+        "for": "Shifter"
+      },
+      {
+        "id": "17000012",
+        "name": "Shifter - Mechanics II",
+        "group": "Special Training: Basics",
+        "slots": [
+          "I",
+          "II",
+          "III"
+        ],
+        "effect": "Shifter Mechanics +8%.",
+        "rule": "Available for any Shifter Feature Port. Basic Features of the same type cannot be equipped simultaneously.",
+        "cost": [],
+        "icon": "data/unlisted/rnd/Icon_RnD_N_1005.png",
+        "cn": true,
+        "basic": "Shifter - Mechanics",
+        "for": "Shifter"
+      },
+      {
+        "id": "17000013",
+        "name": "Shifter - Defense II",
+        "group": "Special Training: Basics",
+        "slots": [
+          "I",
+          "II",
+          "III"
+        ],
+        "effect": "Shifter Defense +8%.",
+        "rule": "Available for any Shifter Feature Port. Basic Features of the same type cannot be equipped simultaneously.",
+        "cost": [],
+        "icon": "data/unlisted/rnd/Icon_RnD_N_1006.png",
+        "cn": true,
+        "basic": "Shifter - Defense",
+        "for": "Shifter"
+      },
+      {
+        "id": "17000014",
+        "name": "Shifter - Hybrid Training II",
+        "group": "Special Training: Basics",
+        "slots": [
+          "I",
+          "II",
+          "III"
+        ],
+        "effect": "All Attributes +3%.",
+        "rule": "Available for any Shifter Feature Port. Basic Features of the same type cannot be equipped simultaneously.",
+        "cost": [],
+        "icon": "data/unlisted/rnd/Icon_RnD_E_3031.png",
+        "cn": true,
+        "basic": "Shifter - Hybrid Training",
+        "for": "Shifter"
+      },
+      {
+        "id": "17000015",
+        "name": "Shifter - Survival Training - Dodge",
+        "group": "Special Training: Survival",
+        "slots": [
+          "I"
+        ],
+        "effect": "When another ally is within 2 tiles, Dodge Rate +4%.",
+        "rule": "Exclusively for Shifter Feature Port I.",
+        "cost": [],
+        "icon": "data/unlisted/pilot_skills/Icon_skill_passive_4114.png",
+        "cn": true,
+        "for": "Shifter"
+      },
+      {
+        "id": "17000016",
+        "name": "Shifter - Survival Training - DMG Reduction",
+        "group": "Special Training: Survival",
+        "slots": [
+          "I"
+        ],
+        "effect": "When another ally is within 2 tiles, DMG Taken -5%.",
+        "rule": "Exclusively for Shifter Feature Port I.",
+        "cost": [],
+        "icon": "data/unlisted/pilot_skills/Icon_skill_passive_2106.png",
+        "cn": true,
+        "for": "Shifter"
+      },
+      {
+        "id": "17000017",
+        "name": "Shifter - High Energy Adaptation - DMG UP",
+        "group": "Special Training: Energy",
+        "slots": [
+          "II"
+        ],
+        "effect": "When attacking with a skill that costs 4 AP or more, DMG +4%.",
+        "rule": "Exclusively for Shifter Feature Port II.",
+        "cost": [],
+        "icon": "data/unlisted/pilot_skills/Icon_skill_passive_1152.png",
+        "cn": true,
+        "for": "Shifter"
+      },
+      {
+        "id": "17000018",
+        "name": "Shifter - Std. Energy Adaptation - DMG UP",
+        "group": "Special Training: Energy",
+        "slots": [
+          "II"
+        ],
+        "effect": "When attacking with a skill that costs 3 AP or less, DMG +3%.",
+        "rule": "Exclusively for Shifter Feature Port II.",
+        "cost": [],
+        "icon": "data/unlisted/rnd/Icon_RnD_E_3047.png",
+        "cn": true,
+        "for": "Shifter"
+      },
+      {
+        "id": "17000019",
+        "name": "Shifter - Team Training - Dodge",
+        "group": "Special Training: Team",
+        "slots": [
+          "III"
+        ],
+        "effect": "Other allies within 2 tiles gain Dodge Rate +2%.",
+        "rule": "Exclusively for Shifter Feature Port III.",
+        "cost": [],
+        "icon": "data/unlisted/rnd/Icon_RnD_E_3033.png",
+        "cn": true,
+        "for": "Shifter"
+      },
+      {
+        "id": "17000020",
+        "name": "Shifter - Team Training - DMG Reduction",
+        "group": "Special Training: Team",
+        "slots": [
+          "III"
+        ],
+        "effect": "Other allies within 2 tiles gain DMG Taken -2.5%.",
+        "rule": "Exclusively for Shifter Feature Port III.",
+        "cost": [],
+        "icon": "data/unlisted/rnd/Icon_RnD_E_3040.png",
+        "cn": true,
+        "for": "Shifter"
+      }
     ]
   },
   "st": {
@@ -4405,6 +4730,34 @@
         "basic": "Melee Weapon - Pile Bunker Modification",
         "weapon_types": [
           "PileBunker"
+        ]
+      },
+      {
+        "id": "31001142",
+        "name": "Melee Weapon - Floating Blade Modification",
+        "group": "Melee Upgrade",
+        "slots": [
+          "I",
+          "II",
+          "III"
+        ],
+        "effect": "When Floating Blade actively attacks a target 3 or more tiles away, DMG +10%.",
+        "rule": "Available for any Weapon Feature Port. Cannot equip duplicate Basic Features.",
+        "cost": [
+          [
+            100,
+            "Melee Weapon Essence I"
+          ],
+          [
+            25000,
+            "GameMoney"
+          ]
+        ],
+        "icon": "data/unlisted/rnd/Icon_RnD_E_3085.png",
+        "cn": true,
+        "basic": "Melee Weapon - Floating Blade Modification",
+        "weapon_types": [
+          "BladeBit"
         ]
       },
       {

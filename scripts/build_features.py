@@ -24,13 +24,15 @@ import sqlite3
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 HERE = os.path.join(ROOT, 'data', 'features')
 DB = os.path.join(HERE, '..', 'screenshots', 'MRT_FieldWiki', 'source', 'mecharashi.db')
+CN_DB = os.path.join(HERE, '..', 'screenshots', 'mined', 'cn', 'mecharashi.db')
+CN_STATS = os.path.join(HERE, '..', 'screenshots', 'mined', 'cn', 'out', 'stats.db')
 BENCH = os.path.join(HERE, '..', 'dmgcalc', 'bench-data.js')
 PILOTS = os.path.join(HERE, '..', 'pilots', 'compiled.json')
 OUT = os.path.join(HERE, 'features.json')
 OUT_JS = os.path.join(HERE, 'features.js')
 
 # Feature ID digit 1 = port type, digit 2 = which tree (see the DB's Notes sheet).
-PILOT_CLASSES = ['Fighter', 'Raider', 'Sniper', 'Tactician', 'Guardian', 'Machinist']
+PILOT_CLASSES = ['Fighter', 'Raider', 'Sniper', 'Tactician', 'Guardian', 'Machinist', 'Shifter']
 ST_CLASSES = ['Light', 'Medium', 'Heavy']
 WEAPON_TREES = ['Melee', 'Assault', 'Ranged', 'Tactical', 'Shield']
 
@@ -46,7 +48,7 @@ MOD_WEAPONS = [
     ('Shotgun', ['ShotGun']), ('Flamethrower', ['Flamethrower']), ('Heavy Machine Gun', ['HeavyMachineGun']),
     ('Machine Gun', ['MachineGun']), ('Light Rifle', ['LightSniper']), ('Sniper Rifle', ['HeavySniper']),
     ('Missile Launcher', ['Missile']), ('Rail Gun', ['RailGun']), ('Rocket Launcher', ['Rocket']),
-    ('Cutter', ['Funnel']), ('Shield Weapon', ['Buckler', 'Shield']),
+    ('Cutter', ['Funnel']), ('Floating Blade', ['BladeBit']), ('Shield Weapon', ['Buckler', 'Shield']),
 ]
 
 # The mined data has no icon field, so icons are assigned here.
@@ -128,6 +130,76 @@ ST_ICONS = {
     'HP Upgrade': (['E_3056', 'E_3057', 'E_3058'], ['E_3056', 'E_3057', 'E_3058']),
     'Core':       (['E_3028', 'E_3029', 'E_3030'], ['E_3076', 'E_3077', 'E_3078']),
 }
+# CN-only features (not in the global DB yet), by feature ID: English name,
+# group, effect. Ports, cost and the rest come from the CN DB. Shifter is the
+# CN 调构师 (PilotProfessionType_Architect: Hailis, Lustre); Floating Blade is
+# the BladeBit weapon type (Phantom Pain). Text follows the other classes' global wording.
+_ATTRS = ['Melee', 'Assault', 'Ranged', 'Tactical', 'Mechanics', 'Defense']
+CN_FEATURES = {}
+for _i, _a in enumerate(_ATTRS):
+    CN_FEATURES[str(17000001 + _i)] = ('Shifter - ' + _a, 'Special Training: Basics', 'Shifter %s +6%%.' % _a)
+    CN_FEATURES[str(17000008 + _i)] = ('Shifter - %s II' % _a, 'Special Training: Basics', 'Shifter %s +8%%.' % _a)
+CN_FEATURES.update({
+    '17000007': ('Shifter - Hybrid Training', 'Special Training: Basics', 'All Attributes +2.5%.'),
+    '17000014': ('Shifter - Hybrid Training II', 'Special Training: Basics', 'All Attributes +3%.'),
+    '17000015': ('Shifter - Survival Training - Dodge', 'Special Training: Survival',
+                 'When another ally is within 2 tiles, Dodge Rate +4%.'),
+    '17000016': ('Shifter - Survival Training - DMG Reduction', 'Special Training: Survival',
+                 'When another ally is within 2 tiles, DMG Taken -5%.'),
+    '17000017': ('Shifter - High Energy Adaptation - DMG UP', 'Special Training: Energy',
+                 'When attacking with a skill that costs 4 AP or more, DMG +4%.'),
+    '17000018': ('Shifter - Std. Energy Adaptation - DMG UP', 'Special Training: Energy',
+                 'When attacking with a skill that costs 3 AP or less, DMG +3%.'),
+    '17000019': ('Shifter - Team Training - Dodge', 'Special Training: Team',
+                 'Other allies within 2 tiles gain Dodge Rate +2%.'),
+    '17000020': ('Shifter - Team Training - DMG Reduction', 'Special Training: Team',
+                 'Other allies within 2 tiles gain DMG Taken -2.5%.'),
+    '31001142': ('Melee Weapon - Floating Blade Modification', 'Melee Upgrade',
+                 "When Floating Blade actively attacks a target 3 or more tiles away, DMG +10%."),
+})
+# CN rule texts -> the global wording.
+CN_RULES = {
+    '可在任意调构师特质端口中装配，同类基础特训不可重复装配':
+        'Available for any Shifter Feature Port. Basic Features of the same type cannot be equipped simultaneously.',
+    '仅限调构师特质端口Ⅰ装配': 'Exclusively for Shifter Feature Port I.',
+    '仅限调构师特质端口Ⅱ装配': 'Exclusively for Shifter Feature Port II.',
+    '仅限调构师特质端口Ⅲ装配': 'Exclusively for Shifter Feature Port III.',
+    '可在任意武装特质端口中装配，同类武器改造不可重复装配':
+        'Available for any Weapon Feature Port. Cannot equip duplicate Basic Features.',
+}
+CN_ITEMS = {'格斗武器精粹Ⅰ': 'Melee Weapon Essence I'}
+
+
+def cn_rows(have):
+    """CN DB rows for CN_FEATURES the global DB doesn't have, with English text."""
+    con = sqlite3.connect(CN_DB)
+    con.row_factory = sqlite3.Row
+    # The CN client's own icon per feature (ConfigDataRnDExpertiseNodeInfo.Icon), as an assets path.
+    stats = sqlite3.connect(CN_STATS)
+    icons = {}
+    for fid, path in stats.execute('select ID, Icon from ConfigDataRnDExpertiseNodeInfo'):
+        name = (path or '').split('/')[-1]
+        if name:
+            icons[str(fid)] = (RND_ICONS if name.startswith('Icon_RnD_') else 'data/unlisted/pilot_skills/') + name + '.png'
+    out = []
+    for r in con.execute('select * from rd_features order by feature_id'):
+        fid = str(r['feature_id'])
+        if fid in have:
+            continue
+        if fid not in CN_FEATURES:
+            raise ValueError('CN feature %s %s has no English text in CN_FEATURES' % (fid, r['name']))
+        r = dict(r)
+        r['name'], r['group'], r['effect'] = CN_FEATURES[fid]
+        r['rule'] = CN_RULES[r['rule']]
+        if r['unlock_cost']:
+            for zh, en in CN_ITEMS.items():
+                r['unlock_cost'] = r['unlock_cost'].replace(zh, en)
+        r['cn'] = True
+        r['icon'] = icons.get(fid)
+        out.append(r)
+    return out
+
+
 PORT_ORDER = {'I,II,III': 0, 'I': 1, 'II': 2, 'III': 3}
 
 
@@ -198,7 +270,7 @@ def pilot_classes(con):
 def cost(text):
     """'4 Fighter Cube I,2 Guardian Cube I,22500 GameMoney' -> [[4, 'Fighter Cube I'], ...]"""
     out = []
-    for part in (text or '').split(','):
+    for part in (text or '').split(',') if text else []:
         n, item = part.strip().split(' ', 1)
         out.append([int(n), item])
     return out
@@ -207,7 +279,8 @@ def cost(text):
 def main():
     con = sqlite3.connect(DB)
     con.row_factory = sqlite3.Row
-    rows = con.execute('select * from rd_features order by feature_id').fetchall()
+    rows = [dict(r) for r in con.execute('select * from rd_features order by feature_id')]
+    rows += cn_rows({str(r['feature_id']) for r in rows})
     bench = load_bench()
 
     sections = {
@@ -227,8 +300,10 @@ def main():
             'effect': r['effect'],
             'rule': r['rule'],
             'cost': cost(r['unlock_cost']),
-            'icon': icon(fid, name),
+            'icon': r.get('icon') or icon(fid, name),
         }
+        if r.get('cn'):
+            f['cn'] = True
         if 'Basic Features' in (r['rule'] or ''):
             f['basic'] = re.sub(r' II$', '', name)
         if kind == 1:
@@ -246,7 +321,7 @@ def main():
 
     out = {
         '_source': 'data/screenshots/MRT_FieldWiki/source/mecharashi.db table rd_features',
-        'pilot_classes': pilot_classes(con),
+        'pilot_classes': dict(pilot_classes(con), Shifter='Shifter'),   # Shifter pilots are CN-only
         'pilot': sections['pilot'],
         'st': sections['st'],
         'weapon': sections['weapon'],

@@ -10,6 +10,7 @@ Pages.features = {
   _esc: function (s) { return $('<span>').text(s).html(); },
 
   _cost: function (cost) {
+    if (!cost.length) return '<span class="feat-cost-item" title="The CN data has no unlock cost for this node yet">?</span>';
     return cost.map(function (c) {
       var item = c[1] === FEATURE_MONEY ? 'Credits' : c[1];
       return '<span class="feat-cost-item"><b>' + c[0].toLocaleString('en-US') + '</b> ' + this._esc(item) + '</span>';
@@ -18,7 +19,8 @@ Pages.features = {
 
   _row: function (f) {
     var esc  = this._esc;
-    var tags = (f.for === 'any' ? '<span class="tag">Any ST</span>' : '') +
+    var tags = (f.cn ? '<span class="tag" title="CN server only">CN</span>' : '') +
+      (f.for === 'any' ? '<span class="tag">Any ST</span>' : '') +
       (f.basic ? '<span class="tag" title="' + esc(f.rule) + '">Basic</span>' : '');
     return (
       '<tr>' +
