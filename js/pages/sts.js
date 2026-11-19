@@ -51,6 +51,7 @@ var MECH_RELEASE_ORDER = [
   'Asteria', 'Avalanche',
   'Medusa MKII', 'Blue Anonymous Bird',
   'Nivequus', 'Eclipse',
+  'Jormungandr', 'Mockingbird',
 ];
 
 function mechReleaseOrder(mechName) {
