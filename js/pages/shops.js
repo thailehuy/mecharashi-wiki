@@ -55,6 +55,7 @@ Pages.shops = {
         '<tr>' +
           '<td class="shop-version-cell">v' + $('<span>').text(e.version).html() + '</td>' +
           '<td><div class="shop-pilot-list">' + e.pilots.map(function (n) { return self._pilotCellHtml(n); }).join('') + '</div></td>' +
+          '<td><div class="shop-pilot-list">' + (e.link || []).map(function (n) { return self._pilotCellHtml(n); }).join('') + '</div></td>' +
         '</tr>'
       );
     }).join('');
@@ -63,12 +64,14 @@ Pages.shops = {
       '<div class="ac-section" id="nostalgic-challenge-store">' +
         '<h2 class="ac-section-title shop-section-title">Nostalgic Challenge Store</h2>' +
         '<p class="dispatch-intro">Refactor-in-Crisis\'s own store, paid in Reconstruction Logs. ' +
-          'Each version adds a RiC Pilot Conscription Order (3,000 Logs) that lets you pick 1 of its 2 pilots.</p>' +
+          'Each version adds a RiC Pilot Conscription Order (3,000 Logs) that lets you pick 1 of its 2 pilots. ' +
+          'From v4.0, Link Pilot Requisition Vouchers (3,000 Logs) let you pick 1 of several pilots to use as Link material in the Pilot Resonance Interface.</p>' +
         '<div class="dispatch-table-wrap">' +
           '<table class="dispatch-table">' +
             '<thead><tr>' +
               '<th>Version</th>' +
               '<th>Pilots</th>' +
+              '<th>Link Pilots</th>' +
             '</tr></thead>' +
             '<tbody>' + bodyRows + '</tbody>' +
           '</table>' +

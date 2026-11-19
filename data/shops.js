@@ -12,7 +12,10 @@ window.ShopsData = {
     { version: '2.8', pilots: ['Arthur', 'Melissa'] },
     { version: '3.1', pilots: ['Lorna', 'Diracca'] },
     { version: '3.3', pilots: ['Fregata', 'Erisa'] },
-    { version: '3.6', pilots: ['Paloma', 'Anderson'] }
+    { version: '3.6', pilots: ['Paloma', 'Anderson'] },
+    // Link Pilot Requisition Voucher I (item 12001391): pick 1 of 5, used as
+    // Link material for the Pilot Resonance Interface. Version assumed (v4.0 Link).
+    { version: '4.0', pilots: [], link: ['Dean', 'Sapientia', 'Marcus', 'Matilda', 'Shawnee'] }
   ],
 
   // The store's other items (ConfigDataFixedShopItemInfo, shop 115), paid
