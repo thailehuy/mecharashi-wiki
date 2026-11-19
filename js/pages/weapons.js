@@ -39,7 +39,8 @@ var WEAPON_TYPE2_LABEL = {
 // Weapon icons are served locally, grouped into one folder per weapon type.
 // Small note shown under an Armed Conquest section, keyed by AC number.
 var AC_FOOTNOTES = {
-  20: 'You can acquire 1 copy of Zoey (Void Severance), Wataru (Radiant Dragon Blade) and Toraoh (Shadow Tiger Roar) signature weapons in v3.5 Special Event Armed Conquest. Then they are craftable from v3.6 Armed Conquest materials.'
+  20: 'You can acquire 1 copy of Zoey (Void Severance), Wataru (Radiant Dragon Blade) and Toraoh (Shadow Tiger Roar) signature weapons in v3.5 Special Event Armed Conquest. Then they are craftable from v3.6 Armed Conquest materials.',
+  22: 'There is no Armed Conquest in v4.0. Instead, you can buy 1 copy of Blightblade Ophelia (Phantom Pain), Ada (Starglow) and Adele (Scarlet Waltz) signature weapons from the store of the v4.0 Special Event Armed Conquest.'
 };
 
 var WEAPON_ICON_DIR = ASSET_BASE + 'data/weapons/icons/';
