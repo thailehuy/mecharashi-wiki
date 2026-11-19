@@ -155,7 +155,7 @@ var Lore = {
       }).join('');
       boardHtml =
         '<div class="section-heading lore-heading">Resonance Interface</div>' +
-        '<p class="link-hint">Opens when the pilot\'s chip boost reaches 200%. Nodes unlock in order. Total: 1,400 Resonance Base Parts and 300 Resonance Cores.</p>' +
+        '<p class="link-hint">Opens when the pilot\'s chip boost reaches 120%. Nodes unlock in order. Total: 1,400 Resonance Base Parts and 300 Resonance Cores.</p>' +
         '<div class="table-responsive skill-card"><table class="table table-dark table-sm link-board mb-0"><thead><tr><th>#</th><th>Node</th><th>Effect</th><th>Cost</th></tr></thead><tbody>' +
         rows + '</tbody></table></div>';
     }

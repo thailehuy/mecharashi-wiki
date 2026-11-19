@@ -5,7 +5,7 @@
 - Resonance Interface (ConfigDataPilotAdvancedLinkList*): the 15-node board
   most S-rank pilots get. Every pilot's board is the same, so the row only
   records that the pilot has one (`board`); the nodes are in js/lore.js.
-  It opens when the pilot's chip boost reaches 200%.
+  It opens when the pilot's chip boost reaches 120%.
 - Storm Particle Tide aptitude (ConfigDataPilotInfo.EnvironmentAdaptType):
   the tide the board's two Aptitude Activation nodes raise.
 - Link (ConfigDataLinkPilotInfo): a pilot's keepsake, slotted into an S-rank
