@@ -2532,12 +2532,12 @@ window.BannersData = {
     {
       "kind": "pilot",
       "id": 107,
-      "name": "Giselle",
+      "name": "Gisele",
       "type": "limited",
       "version": "3.2",
       "upcoming": true,
       "featured": [
-        "Giselle"
+        "Gisele"
       ],
       "image": "PilotGachaGiseleMeyerItemPrefab"
     },
@@ -2594,12 +2594,12 @@ window.BannersData = {
     {
       "kind": "pilot",
       "id": 112,
-      "name": "Kaidan The Invincible",
+      "name": "Kaidan the Invincible",
       "type": "limited",
       "version": "3.3",
       "upcoming": true,
       "featured": [
-        "Kaidan The Invincible"
+        "Kaidan the Invincible"
       ],
       "image": "PilotGachaKaidantheInvincibleItemPrefab"
     },
@@ -2768,12 +2768,12 @@ window.BannersData = {
     {
       "kind": "pilot",
       "id": 127,
-      "name": "Giselle",
+      "name": "Gisele",
       "type": "limited",
       "version": "3.5",
       "upcoming": true,
       "featured": [
-        "Giselle"
+        "Gisele"
       ],
       "image": "PilotGachaGiseleMeyerItemPrefab"
     },
@@ -2806,12 +2806,12 @@ window.BannersData = {
     {
       "kind": "pilot",
       "id": 130,
-      "name": "Kaidan The Invincible",
+      "name": "Kaidan the Invincible",
       "type": "limited",
       "version": "3.6",
       "upcoming": true,
       "featured": [
-        "Kaidan The Invincible"
+        "Kaidan the Invincible"
       ],
       "image": "PilotGachaKaidantheInvincibleItemPrefab"
     },
@@ -2923,7 +2923,7 @@ window.BannersData = {
       "options": [
         "Sonya",
         "Sylar",
-        "Kaidan The Invincible"
+        "Kaidan the Invincible"
       ],
       "image": "PilotGachaPilotExchangeItemOB27Prefab"
     },
@@ -3319,12 +3319,12 @@ window.BannersData = {
     {
       "kind": "st",
       "id": 106,
-      "name": "Flourite",
+      "name": "Fluorite",
       "type": "limited",
       "version": "3.1",
       "upcoming": true,
       "featured": [
-        "Flourite"
+        "Fluorite"
       ],
       "image": "WapGachaFluoritePoolItemPrefab"
     },
@@ -3517,12 +3517,12 @@ window.BannersData = {
     {
       "kind": "st",
       "id": 123,
-      "name": "Flourite",
+      "name": "Fluorite",
       "type": "limited",
       "version": "3.4",
       "upcoming": true,
       "featured": [
-        "Flourite"
+        "Fluorite"
       ],
       "image": "WapGachaFluoritePoolItemPrefab"
     },
@@ -3608,7 +3608,7 @@ window.BannersData = {
       "version": "3.6",
       "upcoming": true,
       "options": [
-        "Flourite",
+        "Fluorite",
         "Nightglow",
         "Arbiter"
       ],

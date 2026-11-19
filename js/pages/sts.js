@@ -44,7 +44,7 @@ var MECH_RELEASE_ORDER = [
   'Illusion',
   'Bawang', 'Regalia',
   'Demiurge', 'Martyr',
-  'Flourite', 'Benxiao',
+  'Fluorite', 'Benxiao',
   'Gladiator', 'Portent',
   'MobiuX', 'Nephthys',
   'Nidhogg', 'Prisma',
