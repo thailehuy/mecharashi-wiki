@@ -224,7 +224,7 @@ Pages.events = {
     e.milestones.forEach(function (g) { missions += g.missions.length; });
     return Lore.tabsHtml([
       ['story', 'Story', this._story(e, kit)],
-      ['rewards', 'Rewards', this._stageRewards(e, kit)],
+      ['rewards', 'Maps &amp; Rewards', this._stageRewards(e, kit)],
       ['achievements', count(achs, 'Achievements'), achs ? this._achievements(e, kit) : ''],
       ['milestones', count(missions, 'Milestones'), missions ? this._milestones(e, kit) : ''],
       ['currency', 'Currency', e.currencies.length ? this._currencies(e) : ''],
