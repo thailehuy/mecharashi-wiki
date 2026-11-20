@@ -6,7 +6,8 @@ A banner's art is split into 2 or more textures (Img_1_pilot_gacha_<Name>1_Raw,
 ..2_Raw, ...) that its pool prefab (ui_prefabs_pilotgacha_abs /
 ui_prefabs_wapgacha_abs) lays out side by side. This walks each prefab's UI
 tree, places every active Image/RawImage by its RectTransform (skipping
-particle/effect/button nodes) and composites them, then scales the result to
+particle/effect/button nodes, except numbered banner art some prefabs keep
+in an effect node, cropped to the rest of the art) and composites them, then scales the result to
 WIDTH. The textures live in the ui_uiimages_* gacha bundles; the newest copy
 of each bundle (installed .b or downloaded __data) wins. The game folder and
 bundle key come from the MRT_FieldWiki update scripts' settings.py; with
@@ -102,6 +103,24 @@ class Bundles:
         return found
 
 
+# Art layers some prefabs keep inside an effect node (Zoey's and Cassha's pilot, Fia's foreground):
+# a numbered banner texture (..._<Name>3_Raw) on a node that isn't a mask.
+FX_ART = re.compile(r'^Img_1_(pilot(_gacha)?|mechcard_illustration)_[A-Za-z0-9]+?\d_Raw$')
+
+
+def art_in_fx(b, go, g, c):
+    if c is None or c.type.name != 'MonoBehaviour' or 'mask' in g['m_Name'].lower():
+        return False
+    try:
+        x = b.tree(c)
+    except Exception:
+        return False
+    if not (x.get('m_Texture') or {}).get('m_PathID'):
+        return False
+    img = b.deref(c.assets_file, x['m_Texture'])
+    return img is not None and bool(FX_ART.match(b.tree(img)['m_Name']))
+
+
 def layers(b, root):
     """Every visible image under a prefab as (image object, x, y, w, h, alpha), y up."""
     out = []
@@ -127,8 +146,8 @@ def layers(b, root):
             M = (a * sx, d * sy, a * (ax - sx * ax) + cx, d * (ay - sy * ay) + cy)
             prect = (ax - w * piv['x'], ay - h * piv['y'], w, h)
         for c in comps[1:]:
-            if fx and not SPINE.match(g['m_Name']):
-                break
+            if fx and not SPINE.match(g['m_Name']) and not art_in_fx(b, go, g, c):
+                continue
             if c is None or c.type.name != 'MonoBehaviour':
                 continue
             try:
@@ -145,7 +164,7 @@ def layers(b, root):
                         continue
                     a, d, cx, cy = M
                     rx, ry, rw, rh = prect
-                    out.append((img, a * rx + cx, d * ry + cy, a * rw, d * rh, x.get('m_Color', {}).get('a', 1)))
+                    out.append((img, a * rx + cx, d * ry + cy, a * rw, d * rh, x.get('m_Color', {}).get('a', 1), fx))
         for ch in t['m_Children']:
             cto = b.deref(tr.assets_file, ch)
             walk(b.deref(cto.assets_file, b.tree(cto)['m_GameObject']), M, prect, depth + 1, fx)
@@ -155,12 +174,14 @@ def layers(b, root):
 
 
 def render(ls):
-    x0 = min(L[1] for L in ls)
-    y1 = max(L[2] + L[4] for L in ls)
-    w = round(max(L[1] + L[3] for L in ls) - x0)
-    h = round(y1 - min(L[2] for L in ls))
+    # The frame is the art outside effect nodes; layers from effect nodes can overhang it and are cut off.
+    fr = [L for L in ls if not L[6]] or ls
+    x0 = min(L[1] for L in fr)
+    y1 = max(L[2] + L[4] for L in fr)
+    w = round(max(L[1] + L[3] for L in fr) - x0)
+    h = round(y1 - min(L[2] for L in fr))
     canvas = Image.new('RGBA', (w, h), (0, 0, 0, 255))
-    for img, x, y, lw, lh, alpha in ls:
+    for img, x, y, lw, lh, alpha, _ in ls:
         im = img.read().image.convert('RGBA').resize((max(1, round(lw)), max(1, round(lh))), Image.LANCZOS)
         if alpha < 1:
             im.putalpha(im.getchannel('A').point(lambda v: int(v * alpha)))

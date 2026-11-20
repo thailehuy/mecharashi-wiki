@@ -162,6 +162,9 @@ def main():
                 b['version'] = version_at(b['start'])
                 if debut and (not last_debut or version_key(max(debut, key=version_key)) > version_key(last_debut)):
                     last_debut = max(debut, key=version_key)
+        # Upcoming pools with no new debut after them (reruns, exchanges) belong to the current patch.
+        for p in pending or []:
+            p['version'] = last_debut
 
     # Placeholder debuts for units newer than any banner, which the game data doesn't schedule yet.
     # The CN server's debut pool, if any, gives the art and pool ID (so pilot/ST pairs line up as in CN).
@@ -180,8 +183,8 @@ def main():
                     cn_debut.setdefault((b['kind'], uid), b)
     newest = max((v for b in banners for _, v in b['featured']), key=version_key)
 
-    # CN pools newer than any global pool that aren't debuts of units placed above (reruns and exchanges) are added as
-    # upcoming, without dates. Their patch is the CN patch running when they opened: the one of the
+    # CN pools newer than any global pool that aren't debuts of units placed above (reruns and exchanges), from patches
+    # after the newest one global has, are added as upcoming, without dates. Their patch is the CN patch running when they opened: the one of the
     # last debut before them (CN didn't release every patch in version order).
     units = {'pilot': pilots, 'st': mechs}
     unit = lambda kind, uid: (units[kind][uid]['name'], units[kind][uid]['version'])
@@ -201,7 +204,8 @@ def main():
                 or not all(uid in units[b['kind']] for uid in b['featured'] + b['options'])):
             continue
         version = max((p for p in cn_patches if p[0] <= b['start']), default=(None, None))[1]
-        if not version or version_key(version) < version_key(newest):
+        version = CN_OVERRIDES.get((b['kind'], b['id']), {}).get('version', version)
+        if not version or version_key(version) <= version_key(newest):   # global already schedules its own
             continue
         featured = [unit(b['kind'], uid) for uid in b['featured']]
         name = exchange_names[b['kind']] if b['type'] == 'exchange' else names.get((b['kind'], featured[0][0]), featured[0][0])
