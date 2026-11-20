@@ -114,7 +114,7 @@ $(function () {
   // On a path URL ("armedconquest/x/#stage-2") the hash is an in-page anchor, not a route.
   function currentRoute() {
     var path = relativePath();
-    if (window.location.hash.length > 1 && !path) return parseRoute(window.location.hash);
+    if (window.location.hash.length > 1 && !path && !isStateHash(window.location.hash.slice(1))) return parseRoute(window.location.hash);
     var r = pathRoute(path);
     if (window.location.hash.length > 1) r.anchor = window.location.hash.slice(1);
     return r;
@@ -201,6 +201,62 @@ $(function () {
     }
   });
 
+  // ── Filter state in the hash ────────────────────────────────────────────────
+  // Clicking a filter button or typing in a search box writes the page's filter
+  // state after the hash ("pilots/#filter-rank=SSR&pilot-search=ada") without a
+  // new history entry, so Back from a detail page restores it. A button is keyed
+  // by its first data-* attribute, a search box by its id. Anchors never contain "=".
+  // A page's default filters (e.g. the first difficulty tab) are written on load too.
+  function isStateHash(h) { return h.indexOf('=') !== -1; }
+
+  function filterButtons() {
+    return $('#app-content .filter-btn').not('.boss-map-btn, [id]').filter(function () { return !!filterKey(this); });
+  }
+  function filterKey(el) {
+    for (var i = 0; i < el.attributes.length; i++) {
+      var a = el.attributes[i].name;
+      if (a.indexOf('data-') === 0 && a !== 'data-pane' && a !== 'data-bs-toggle') return a.slice(5);
+    }
+    return null;
+  }
+
+  function saveFilterState() {
+    var params = new URLSearchParams();
+    filterButtons().filter('.active').each(function () {
+      var k = filterKey(this);
+      params.append(k, this.getAttribute('data-' + k));
+    });
+    $('#app-content .search-box[id]').each(function () {
+      if (this.value) params.append(this.id, this.value);
+    });
+    var hash = params.toString();
+    var url  = window.location.pathname + window.location.search + (hash ? '#' + hash : '');
+    if (url !== window.location.pathname + window.location.search + window.location.hash) history.replaceState(null, '', url);
+  }
+
+  function restoreFilterState(hash) {
+    var params = new URLSearchParams(hash);
+    var $btns  = filterButtons();
+    params.forEach(function (value, key) {
+      var input = document.getElementById(key);
+      if (input && $(input).is('#app-content .search-box')) {
+        $(input).val(value).trigger('input');
+        return;
+      }
+      $btns.filter(function () { return this.getAttribute('data-' + key) === value && !$(this).hasClass('active'); })
+        .first().trigger('click');
+    });
+    // Buttons on by default but absent from the hash were switched off by the user.
+    filterButtons().filter('.active').each(function () {
+      var k = filterKey(this);
+      if (params.getAll(k).indexOf(this.getAttribute('data-' + k)) === -1) $(this).trigger('click');
+    });
+    saveFilterState();
+  }
+
+  $(document).on('click', '#app-content .filter-btn', function () { setTimeout(saveFilterState, 0); });
+  $(document).on('input', '#app-content .search-box', function () { setTimeout(saveFilterState, 0); });
+
   function navigate(page, param, anchor) {
     var p = Pages[page];
     if (!p) {
@@ -219,8 +275,13 @@ $(function () {
 
     // Pages expect the param still URI-encoded, as it used to come straight from the hash.
     $('#app-content').html(p.render(param == null ? null : encodeURIComponent(param)));
-    var target = anchor && document.getElementById(anchor);
+    var stateHash = anchor && isStateHash(anchor) ? anchor : null;
+    var target = anchor && !stateHash && document.getElementById(anchor);
     if (target) target.scrollIntoView(); else window.scrollTo(0, 0);
+    // Pages bind their filter handlers in a setTimeout(0) queued by render(); replay after them.
+    // Without saved state, write the page's default filters into the hash.
+    if (stateHash) setTimeout(function () { restoreFilterState(stateHash); }, 0);
+    else if (!anchor) setTimeout(saveFilterState, 0);
 
     document.title = p.title + ' — Mecharashi Wiki';
   }
