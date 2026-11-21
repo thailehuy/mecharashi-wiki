@@ -465,7 +465,7 @@ Pages.pilots = {
     return Lore.tabsHtml([
       ['skills', 'Skills', this._renderSkills(p.biomimetic_computer_data) + this._renderSummonSkills(p) + this._renderFormSkillGroups(p)],
       ['neural', 'Neural Drive', this._renderNeuralDrive(p.NeuralDriveTemplate, p.stats, p.Occupation)],
-      ['links', 'Link', p.HasLinks ? Lore.loadingHtml : ''],
+      ['links', 'Neural Link', p.HasLinks ? Lore.loadingHtml : ''],
       ['lore', 'Lore', Lore.loadingHtml],
       ['voice', 'Voice Lines', Lore.loadingHtml]
     ], { kind: 'pilots', id: p.ID });
