@@ -2317,34 +2317,6 @@ window.BannersData = {
     },
     {
       "kind": "pilot",
-      "id": 76,
-      "name": "HARPY T.R.O.O.P.S",
-      "type": "exchange",
-      "version": "2.5",
-      "upcoming": true,
-      "options": [
-        "Cassha",
-        "Erisa",
-        "Fregata"
-      ],
-      "image": "PilotGachaPilotExchangeItemPrefab"
-    },
-    {
-      "kind": "pilot",
-      "id": 81,
-      "name": "HARPY T.R.O.O.P.S",
-      "type": "exchange",
-      "version": "2.5",
-      "upcoming": true,
-      "options": [
-        "Lorna",
-        "Anderson",
-        "Tiphys"
-      ],
-      "image": "PilotGachaPilotExchangeItemPrefab"
-    },
-    {
-      "kind": "pilot",
       "id": 82,
       "name": "Whispering Rose",
       "type": "limited",
@@ -3075,34 +3047,6 @@ window.BannersData = {
         "Rex"
       ],
       "image": "WapGachaSelectSniperPoolItemPrefab"
-    },
-    {
-      "kind": "st",
-      "id": 79,
-      "name": "Transoceanic Shipping",
-      "type": "exchange",
-      "version": "2.5",
-      "upcoming": true,
-      "options": [
-        "FierceJaw",
-        "Thanatos",
-        "Shadowrabbit"
-      ],
-      "image": "WapGachaWapExchangeItemPrefab"
-    },
-    {
-      "kind": "st",
-      "id": 84,
-      "name": "Transoceanic Shipping",
-      "type": "exchange",
-      "version": "2.5",
-      "upcoming": true,
-      "options": [
-        "Aglow",
-        "Odysseus",
-        "Euclase"
-      ],
-      "image": "WapGachaWapExchangeItemPrefab"
     },
     {
       "kind": "st",

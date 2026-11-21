@@ -124,6 +124,9 @@ def main():
         elif b['start'].year >= 2048:
             if b['start'] != UPCOMING_START:
                 continue
+            # Global runs its exchanges as 5xxx pools; low-ID exchanges in the block are unused CN-schedule copies.
+            if b['type'] == 'exchange' and b['id'] < 4000:
+                continue
             b['upcoming'] = True
             b['start'] = b['end'] = None
         elif b['end'] and b['end'].year >= 2048:
