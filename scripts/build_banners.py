@@ -228,6 +228,9 @@ def main():
     for b in banners:
         if b.get('version') and version_key(b['version']) > MAX_VERSION:
             continue
+        # Global patches list only banners Global has dated; undated pools there are unused CN-schedule copies.
+        if b.get('upcoming') and b.get('version') in starts:
+            continue
         row = {'kind': b['kind'], 'id': b['id'], 'name': b['name'], 'type': b['type']}
         if b.get('version'):
             row['version'] = b['version']
