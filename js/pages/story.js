@@ -1,9 +1,10 @@
 var Pages = window.Pages || {};
 
-// The Story page, in tabs: the main story's chapters and the pilots' side stories
-// as pictures, each opening its own page (story/<slug>/) with every stage's text,
-// cutscenes and rewards, then Border Conflict and the in-game Skynet encyclopedia's
-// Geography, Factions, Incidents and Items. The event stories' stages are drawn by the
+// The Story page: a card per section, each its own page (story/<section>/), like the
+// Bosses page. Main Story, Side Stories and Armed Conquest list pictures, each opening
+// its own page (story/<slug>/) with every stage's text, cutscenes and rewards; then
+// Border Conflict and the in-game Skynet encyclopedia's Geography, Factions, Incidents
+// and Items. The event stories' stages are drawn by the
 // Events page. Its data (data/story/story.js, built by scripts/build_story.py) is
 // fetched the first time the page opens.
 Pages.story = {
@@ -263,9 +264,9 @@ Pages.story = {
   },
 
   // ── A chapter's or side story's own page (story/<slug>/) ────────────────
-  _hero: function (back, title, image, intro) {
+  _hero: function (back, backName, title, image, intro) {
     return (
-      '<a href="' + back + '" class="btn-back">&#8592; Back to Story</a>' +
+      '<a href="' + back + '" class="btn-back">&#8592; Back to ' + backName + '</a>' +
       '<div class="listing-header"><h1>' + title + '</h1></div>' +
       (image ? '<img class="event-hero story-hero" src="' + this._img(image) + '" alt="" />' : '') +
       intro
@@ -282,7 +283,7 @@ Pages.story = {
       return x ? '<a class="story-nav-link" href="' + App.href('story', x.slug) + '">' + label + '</a>' : '<span></span>';
     };
     return (
-      this._hero(App.href('story'), this._esc(c.name) + ' · ' + this._esc(c.title), c.image,
+      this._hero(App.href('story', 'main-story'), 'Main Story', this._esc(c.name) + ' · ' + this._esc(c.title), c.image,
         '<p class="dispatch-intro">' + (c.date ? this._esc(c.date) + ' · ' : '') + count + ' stages' +
           (side.length ? ', ' + side.length + ' side missions' : '') + '</p>' +
         (c.intro ? '<div class="story-page-intro skill-card lore-text">' + this._paras(c.intro) + '</div>' : '')) +
@@ -303,10 +304,65 @@ Pages.story = {
     if (at) opens = '<a href="' + App.href('story', at.chapter.slug) + '#story-st-' + at.stage.id + '">' + opens + '</a>';
     return (
       // The title is a tagline for most pilots ("Pochy Battle Record: #1150907"), so it goes under the name.
-      this._hero(App.href('story') + '#sidestories', this._esc(s.name), s.image,
+      this._hero(App.href('story', 'side-stories'), 'Side Stories', this._esc(s.name), s.image,
         '<p class="dispatch-intro">' + (s.title ? '<span class="story-page-tagline">' + this._esc(s.title) + '</span>' : '') +
           pilot + '\'s side story · ' + s.stages.length + ' chapters' + (opens ? ' · ' + opens : '') + '</p>') +
       '<div class="story-stages">' + s.stages.map(function (st) { return self._stage(st, kit, 'ss-' + s.id); }).join('') + '</div>'
+    );
+  },
+
+  // ── Armed Conquest ─────────────────────────────────────────────────────
+  // The season's bosses (data/bosses/bosses.js), for its picture, version and stage bosses.
+  _acSeason: function (a) {
+    return ((window.BossesData || {}).armed_conquest || []).find(function (s) { return s.name === a.name; }) || null;
+  },
+
+  // A season's picture: its last boss.
+  _acImg: function (a) {
+    var s = this._acSeason(a), bosses = (window.BossesData || {}).bosses || {};
+    var last = s && s.stages[s.stages.length - 1];
+    var b = last && bosses[last.boss];
+    return b && b.portrait ? ASSET_BASE + b.portrait : null;
+  },
+
+  _acStages: function (a) { return a.stages.filter(function (s) { return s.slot; }).length; },
+
+  _armedConquest: function (d) {
+    var self = this;
+    return (
+      '<p class="ac-section-footnote story-note">Each Armed Conquest season\'s story, newest first: its prelude and every stage\'s ' +
+        'briefing and cutscenes. Bosses, skills and HP are on the <a href="' + App.href('armedconquest') + '">Armed Conquest</a> page.</p>' +
+      '<div class="event-grid">' + d.armedConquest.slice().reverse().map(function (a) {
+        var s = self._acSeason(a);
+        return self._card(App.href('story', a.slug), self._acImg(a), null, a.number + '. ' + self._esc(a.name),
+          (s && s.version ? 'v' + self._esc(s.version) + ' · ' : '') + self._acStages(a) + ' stages');
+      }).join('') + '</div>'
+    );
+  },
+
+  _acPage: function (a, d, kit) {
+    var self = this;
+    var s = this._acSeason(a);
+    var bosses = (window.BossesData || {}).bosses || {};
+    var i = d.armedConquest.indexOf(a);
+    var nav = function (x, label) {
+      return x ? '<a class="story-nav-link" href="' + App.href('story', x.slug) + '">' + label + '</a>' : '<span></span>';
+    };
+    return (
+      '<a href="' + App.href('story', 'armed-conquest') + '" class="btn-back">&#8592; Back to Armed Conquest</a>' +
+      '<div class="listing-header"><h1>' + a.number + '. ' + this._esc(a.name) + '</h1></div>' +
+      '<p class="dispatch-intro">Armed Conquest season ' + a.number + (s && s.version ? ' · v' + this._esc(s.version) : '') +
+        ' · ' + this._acStages(a) + ' stages · <a href="' + App.href('armedconquest', a.name) + '">Bosses and skills</a></p>' +
+      '<div class="story-stages">' + a.stages.map(function (st) {
+        // The stage's boss, linked to its card on the season's boss page.
+        var stage = s && st.slot && s.stages.find(function (x) { return x.slot === st.slot; });
+        var b = stage && (bosses[stage.boss] || { name: stage.boss });
+        var html = self._stage(st, kit, 'ac-' + a.id);
+        return b ? html.replace('</div>', '<a class="story-stage-meta" href="' + App.href('armedconquest', a.name) +
+          '#stage-' + st.slot + '"><i class="bi bi-fire"></i>' + self._esc(b.name) + '</a></div>') : html;
+      }).join('') + '</div>' +
+      '<div class="story-nav">' + nav(d.armedConquest[i - 1], '&#8592; ' + this._esc((d.armedConquest[i - 1] || {}).name || '')) +
+        nav(d.armedConquest[i + 1], this._esc((d.armedConquest[i + 1] || {}).name || '') + ' &#8594;') + '</div>'
     );
   },
 
@@ -377,19 +433,55 @@ Pages.story = {
     );
   },
 
-  // Tabs: Main Story, Side Stories, Border Conflict, then one per Skynet category (Lore.tabsHtml, js/lore.js).
-  // The event stories are on each event's page (js/pages/events.js).
-  _tabs: function (d) {
+  // The sections: each a card on the Story page and its own page (story/<slug>/). The slugs must match
+  // SECTIONS and the Skynet categories' names in scripts/build_story.py and build_pages.py. old: its
+  // tab's anchor from before sections were pages ("story/#sidestories").
+  _sections: function (d) {
     var self = this;
     var links = {};
     d.world.forEach(function (c) { c.entries.forEach(function (e) { links[e.id] = true; }); });
-    return Lore.tabsHtml([
-      ['chapters', 'Main Story <small class="story-tab-n">' + d.chapters.length + '</small>', this._chapters(d)],
-      ['sidestories', 'Side Stories <small class="story-tab-n">' + d.sideStories.length + '</small>', this._sideStories(d)],
-      ['borderconflict', 'Border Conflict', this._borderConflict(d.borderConflict)],
+    var icons = { geography: 'bi-globe-americas', faction: 'bi-people', events: 'bi-lightning', items: 'bi-box-seam' };
+    var descs = { geography: 'Places of the world', faction: 'The powers and groups at play',
+      events: 'Incidents that shaped the world', items: 'Notable things and technology' };
+    return [
+      { slug: 'main-story', old: 'chapters', name: 'Main Story', icon: 'bi-book', n: d.chapters.length,
+        desc: 'Every chapter with its stages, cutscenes and rewards', html: function () { return self._chapters(d); } },
+      { slug: 'side-stories', old: 'sidestories', name: 'Side Stories', icon: 'bi-person-heart', n: d.sideStories.length,
+        desc: 'Each pilot\'s Memory Pieces, chapter by chapter', html: function () { return self._sideStories(d); } },
+      { slug: 'armed-conquest', old: 'armedconquest', name: 'Armed Conquest', icon: 'bi-flag', n: (d.armedConquest || []).length,
+        desc: 'Every season\'s prelude and stage cutscenes', html: function () { return self._armedConquest(d); } },
+      { slug: 'border-conflict', old: 'borderconflict', name: 'Border Conflict', icon: 'bi-signpost-split',
+        desc: 'Bosses, encounters and discoveries of the Fast Desert', html: function () { return self._borderConflict(d.borderConflict); } },
     ].concat(d.world.map(function (c) {
-      return [c.key, self._esc(c.name) + ' <small class="story-tab-n">' + c.entries.length + '</small>', self._category(c, links)];
-    })));
+      return { slug: c.name.toLowerCase().replace(/[^a-z0-9]+/g, '-'), old: c.key, name: c.name,
+        icon: icons[c.key] || 'bi-journal', n: c.entries.length,
+        desc: (descs[c.key] || 'Entries') + ', from the Skynet encyclopedia', html: function () { return self._category(c, links); } };
+    }));
+  },
+
+  _hub: function (d) {
+    var esc = this._esc;
+    return (
+      '<div class="listing-header"><h1>Story</h1></div>' +
+      '<p class="dispatch-intro">The world of Mecharashi and its stories, from the game\'s own text. ' +
+        'Event stories are on each <a href="' + App.href('events') + '">event</a>\'s page.</p>' +
+      '<div class="home-nav-cards">' + this._sections(d).map(function (m) {
+        return (
+          '<a href="' + App.href('story', m.slug) + '" class="home-card">' +
+            '<div class="home-card-title"><i class="bi ' + m.icon + '"></i> ' + esc(m.name) +
+              (m.n != null ? ' <small class="story-tab-n">' + m.n + '</small>' : '') + '</div>' +
+            '<div class="home-card-desc">' + esc(m.desc) + '</div>' +
+          '</a>'
+        );
+      }).join('') + '</div>'
+    );
+  },
+
+  _sectionPage: function (m) {
+    return (
+      '<a href="' + App.href('story') + '" class="btn-back">&#8592; Back to Story</a>' +
+      '<div class="listing-header"><h1>' + this._esc(m.name) + '</h1></div>' + m.html()
+    );
   },
 
   _load: function () {
@@ -402,24 +494,33 @@ Pages.story = {
     return this._loading;
   },
 
-  // The tabs, or with a slug a main story chapter's or side story's own page.
+  // The section cards, or with a slug a section's, chapter's, side story's or AC season's own page.
   _content: function (d, slug) {
-    if (!slug) return this._tabs(d);
+    if (!slug) return this._hub(d);
+    var m = this._sections(d).find(function (x) { return x.slug === slug; });
+    if (m) return this._sectionPage(m);
     var kit = this._kit();
+    var a = (d.armedConquest || []).find(function (x) { return x.slug === slug; });
+    if (a) return this._acPage(a, d, kit);
     var c = d.chapters.find(function (x) { return x.slug === slug; });
     if (c) return this._chapterPage(c, d, kit);
     var s = d.sideStories.find(function (x) { return x.slug === slug; });
     return s ? this._sidePage(s, d, kit) : '<p class="text-danger">Story not found.</p>';
   },
 
-  // Once drawn: the tab or stage the URL's anchor names ("story/#sidestories", "story/chapter-ii/#story-st-216").
-  // app.js scrolls to it only when the page is drawn at once, not after its data loads.
+  // Once drawn: the stage or entry the URL's anchor names ("story/chapter-ii/#story-st-216"). An old tab
+  // anchor ("story/#sidestories") goes to its section's page instead. app.js scrolls to it only when the
+  // page is drawn at once, not after its data loads.
   _anchor: function () {
     var id = window.location.hash.slice(1);
-    var tab = id && $('#story-root [data-detail-tab="' + id + '"]');
-    if (tab && tab.length) {
-      Lore._show(tab.closest('.detail-tabs-wrap'), id);
-      return;
+    var root = document.getElementById('story-root');
+    if (id && root && !root.getAttribute('data-slug') && window.StoryData) {
+      var m = this._sections(window.StoryData).find(function (x) { return x.old === id || x.slug === id; });
+      if (m) {
+        history.replaceState(null, '', App.href('story'));
+        App.go('#story/' + m.slug);
+        return;
+      }
     }
     var el = id && document.getElementById(id);
     if (el && $(el).closest('#story-root').length) el.scrollIntoView();
@@ -445,10 +546,6 @@ Pages.story = {
       setTimeout(function () { self._anchor(); }, 0);
     }
     return (
-      (slug ? '' : '<div class="listing-header"><h1>Story</h1></div>' +
-        '<p class="dispatch-intro">The world of Mecharashi and its stories, from the game\'s own text: every main story chapter and pilot ' +
-          'side story with its stages and rewards, and the Skynet encyclopedia\'s places, factions, incidents and items. ' +
-          'Event stories are on each <a href="' + App.href('events') + '">event</a>\'s page.</p>') +
       '<div id="story-root" data-slug="' + this._esc(slug || '') + '">' + body + '</div>'
     );
   },

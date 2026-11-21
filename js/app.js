@@ -77,10 +77,10 @@ $(function () {
     // An event's param is its slug; its data loads with the page, so an unknown slug passes through as is.
     events:    function () { return ((window.EventsData || {}).events || []).map(function (e) { return e.slug; }); },
     elitebattle: function () { return ((window.EliteData || {}).chapters || []).map(function (c) { return c.slug; }); },
-    // A main story chapter's or side story's slug; as for events, an unknown one passes through.
+    // A Story section's, main story chapter's, side story's or AC season's slug; as for events, an unknown one passes through.
     story:     function () {
       var d = window.StoryData || {};
-      return (d.chapters || []).concat(d.sideStories || []).map(function (x) { return x.slug; });
+      return (d.chapters || []).concat(d.sideStories || [], d.armedConquest || []).map(function (x) { return x.slug; });
     },
     // A Refactor-in-Crisis theme's slug; its data loads with the page, so an unknown one passes through.
     refactorincrisis: function () { return ((window.CrisisData || {}).themes || []).map(function (t) { return t.slug; }); },

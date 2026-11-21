@@ -269,6 +269,25 @@ def stories():
         yield ('story', s['slug'], f'{s["name"]}: {s["title"]} — Side Story',
                f'{s["name"]}\'s side story: {s["title"]} \n{len(s["stages"])} chapters with their briefings, cutscenes and rewards',
                ASSET_URL + quote(f'data/story/{s["image"]}.jpg'))
+    bosses = load('data/bosses/bosses.json')
+    seasons = {x['name']: x for x in bosses['armed_conquest']}
+    for a in data.get('armedConquest', []):
+        # "Armed Conquest season 1 story ", then its stages on their own line. Image: its last boss.
+        season = seasons.get(a['name'])
+        last = season and bosses['bosses'].get(season['stages'][-1]['boss'])
+        n = sum(1 for st in a['stages'] if st.get('slot'))
+        yield ('story', a['slug'], f'{a["name"]} — Armed Conquest Story',
+               f'Armed Conquest season {a["number"]} story \n{n} stages with their briefings and cutscenes',
+               ASSET_URL + quote(last['portrait'] if last else f'data/story/{data["chapters"][0]["image"]}.jpg'))
+    # The Story page's sections (js/pages/story.js _sections, scripts/build_story.py SECTIONS).
+    image = ASSET_URL + quote(f'data/story/{data["chapters"][0]["image"]}.jpg')
+    sections = [('main-story', 'Main Story', 'Every main story chapter with its stages, cutscenes and rewards'),
+                ('side-stories', 'Side Stories', 'Each pilot\'s side story (Memory Pieces), chapter by chapter'),
+                ('armed-conquest', 'Armed Conquest', 'Every Armed Conquest season\'s prelude and stage cutscenes'),
+                ('border-conflict', 'Border Conflict', 'Border Conflict\'s bosses, encounters and discoveries')]
+    sections += [(slugify(c['name']), c['name'], f'The Skynet encyclopedia\'s {c["name"]} entries') for c in data['world']]
+    for slug, name, desc in sections:
+        yield ('story', slug, f'{name} — Story', desc, image)
 
 
 def elite_chapters():

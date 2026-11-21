@@ -60,6 +60,11 @@ summaries; the lines go in data/story/dialogue/<ch-ID|ev-ID|ss-ID>.js
 (StoryDialogue), one file per chapter, event or side story, fetched when a cutscene is
 opened. Mid-battle dialogue isn't included.
 
+Armed Conquest (ConfigDataRaidDungeonInfo, one per season, in AC_SEASONS order from
+build_bosses.py): the season's prelude (PreludeDialogID, only some seasons) and its Normal
+stages (LevelList -> ConfigDataRaidDungeonLevelInfo): name, briefing and cutscenes. The other
+difficulties replay the same stages without cutscenes. Lines go in dialogue/ac-<number>.js.
+
 A stage's rewards are its RewardDropId (ConfigDataItemDropInfo): the items the
 mission screen shows (UIShowItemList) plus the guaranteed ones
 (CertainDropList), each once; a guaranteed item's fixed amount is used when
@@ -89,6 +94,9 @@ CATEGORIES = [('geography', 'SkynetWikipediaCatalogueType_Geography', 'Geography
               ('faction', 'SkynetWikipediaCatalogueType_Power', 'Faction'),
               ('events', 'SkynetWikipediaCatalogueType_Event', 'Incidents'),
               ('items', 'SkynetWikipediaCatalogueType_Item', 'Items')]
+# The Story page's sections (story/<key>/, besides the Skynet categories), as js/pages/story.js lists them.
+SECTIONS = [('main-story', 'Main Story'), ('side-stories', 'Side Stories'), ('armed-conquest', 'Armed Conquest'),
+            ('border-conflict', 'Border Conflict')]
 STAGE_KINDS = {'WayPointType_Master': 'main', 'WayPointType_Water': 'encounter',
                'WayPointType_Rating': 'critical', 'WayPointType_Branch': 'side'}
 ST_PARTS = ('ItemType_WapBody', 'ItemType_WapArm', 'ItemType_WapLeg')
@@ -464,6 +472,36 @@ def side_stories(con, dialogue):
     return out
 
 
+def armed_conquest(con, dialogue):
+    from build_bosses import AC_SEASONS
+    out = []
+    for r in con.execute('SELECT * FROM ConfigDataRaidDungeonInfo ORDER BY ID').fetchall():
+        name = text(r['NameStrKey_EN'])
+        if name not in AC_SEASONS:
+            print('Armed Conquest %d (%s): not in build_bosses.AC_SEASONS; left out' % (r['ID'], name))
+            continue
+        stages = []
+        if r['PreludeDialogID']:
+            st = {'id': -r['ID'], 'kind': 'main', 'name': 'Prelude'}
+            dialogue.attach(st, r['PreludeDialogID'], None)
+            if 'scenes' in st:
+                stages.append(st)
+        for slot, lid in enumerate(json.loads(r['LevelList'] or '[]'), 1):
+            l = con.execute('SELECT * FROM ConfigDataRaidDungeonLevelInfo WHERE ID = ?', (lid,)).fetchone()
+            if not l:
+                continue
+            st = {'id': lid, 'kind': 'main', 'code': 'Stage %d' % slot, 'slot': slot}
+            if text(l['NameStrKey_EN']):
+                st['name'] = clean(text(l['NameStrKey_EN']))
+            if text(l['DescStrKey_EN']):
+                st['text'] = clean(text(l['DescStrKey_EN']))
+            dialogue.attach(st, l['StartDialogID'], l['EndDialogID'])
+            stages.append(st)
+        number = AC_SEASONS.index(name) + 1
+        out.append({'id': number, 'number': number, 'slug': slugify(name), 'name': name, 'stages': stages})
+    return sorted(out, key=lambda s: s['number'])
+
+
 def option(con, o):
     """An encounter choice: "Search for something useful\n[Choose 1 weapon to take]" -> the choice, its
     effect and what happens (the option's own outcome text, or its results')."""
@@ -569,8 +607,15 @@ def main():
     chs = chapters(con, dialogue)
     evs = events(con, dialogue)
     sss = side_stories(con, dialogue)
+    acs = armed_conquest(con, dialogue)
     bc = border_conflict(con)
-    data = {'world': w, 'chapters': chs, 'events': evs, 'sideStories': sss, 'borderConflict': bc}
+    data = {'world': w, 'chapters': chs, 'events': evs, 'sideStories': sss, 'armedConquest': acs,
+            'borderConflict': bc}
+    # Chapters, side stories, AC seasons and the page's sections share story/<slug>/.
+    slugs = [x['slug'] for x in chs + sss + acs] + [k for k, _ in SECTIONS] + [slugify(c['name']) for c in w]
+    dup = {x for x in slugs if slugs.count(x) > 1}
+    if dup:
+        raise ValueError('Story slugs used twice: %s' % ', '.join(sorted(dup)))
 
     os.makedirs(HERE, exist_ok=True)
     # One dialogue file per chapter (ch-<id>) and event (ev-<id>), fetched when a cutscene is first opened.
@@ -579,7 +624,7 @@ def main():
         os.remove(os.path.join(DIALOGUE, old))
     lines = sum(dialogue.write('ch-%d' % c['id'], c['stages']) for c in chs) + \
         sum(dialogue.write('ev-%d' % e['id'], [s for p in e['parts'] for s in p['stages']]) for e in evs) + \
-        sum(dialogue.write('ss-%d' % s['id'], s['stages']) for s in sss)
+        sum(dialogue.write('ss-%d' % s['id'], s['stages']) for s in sss) +         sum(dialogue.write('ac-%d' % a['id'], a['stages']) for a in acs)
     print('Wrote %s: %d dialogue lines in %d files (%d KB)' % (
         DIALOGUE, lines, len(os.listdir(DIALOGUE)),
         sum(os.path.getsize(os.path.join(DIALOGUE, f)) for f in os.listdir(DIALOGUE)) // 1024))

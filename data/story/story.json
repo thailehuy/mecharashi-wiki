@@ -17812,6 +17812,1163 @@
       ]
     }
   ],
+  "armedConquest": [
+    {
+      "id": 1,
+      "number": 1,
+      "slug": "trapped-beast",
+      "name": "Trapped Beast",
+      "stages": [
+        {
+          "id": -1,
+          "kind": "main",
+          "name": "Prelude",
+          "scenes": [
+            {
+              "id": 468206401,
+              "when": "before",
+              "n": 29,
+              "summary": "Under heavy media scrutiny, Kelly and Shawnee withdraw to the DL's jurisdiction, where an even more pressing crisis awaits."
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "kind": "main",
+          "code": "Stage 1",
+          "slot": 1,
+          "name": "Avenging Guardian",
+          "text": "After the destruction of the Iguana Mercenaries, Castilla had been looking for an opportunity to counterattack Belsuth, and now Crotti has extended her hand to him.",
+          "scenes": [
+            {
+              "id": 468206101,
+              "when": "before",
+              "n": 31,
+              "summary": "Kelly goes ahead to monitor the force led by Castilla and find out Crotti's whereabouts.\nAfter some time listening in, she understands exactly what is going on."
+            },
+            {
+              "id": 468206301,
+              "when": "after",
+              "n": 16,
+              "summary": "Castilla reveals the landing location of the Crotti assault force, while Kelly promises to stick to the path she has chosen."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "kind": "main",
+          "code": "Stage 2",
+          "slot": 2,
+          "name": "Drink Till Doomsday",
+          "text": "No matter how many bottles he gets through, to Mann, the world seems lifeless, empty. He's made up his mind to change it.",
+          "scenes": [
+            {
+              "id": 468207101,
+              "when": "before",
+              "n": 24,
+              "summary": "To find out Crotti's exact plan, Shawnee spies on the troops led by Mann.\nThrough her interactions with the mercenaries, she learns Mann's story."
+            },
+            {
+              "id": 468207301,
+              "when": "after",
+              "n": 13,
+              "summary": "Shawnee's unwavering conviction shattered Mann's delusions, and he reveals the landing time of the Crotti assault force."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "kind": "main",
+          "code": "Stage 3",
+          "slot": 3,
+          "name": "Attack of the Dead",
+          "text": "Now is the moment of the final assault, and Crotti has already prepared.",
+          "scenes": [
+            {
+              "id": 468208101,
+              "when": "before",
+              "n": 25,
+              "summary": "Just before the plan goes into effect, Crotti rushes to Mann and Castilla, warning them that her plan is doomed and that it is pointless to follow her lead."
+            },
+            {
+              "id": 468208301,
+              "when": "after",
+              "n": 22,
+              "summary": "Crotti's troops have been wiped out, and everything returns to the way it was before. Shawnee and Kelly's mission continues."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "number": 2,
+      "slug": "thunder-rumbles",
+      "name": "Thunder Rumbles",
+      "stages": [
+        {
+          "id": 102101,
+          "kind": "main",
+          "code": "Stage 1",
+          "slot": 1,
+          "name": "Spark",
+          "text": "Blazetrudge's flames will not stop until everything is burned to ashes.",
+          "scenes": [
+            {
+              "id": 468201101,
+              "when": "before",
+              "n": 23
+            },
+            {
+              "id": 468201301,
+              "when": "after",
+              "n": 66
+            }
+          ]
+        },
+        {
+          "id": 102102,
+          "kind": "main",
+          "code": "Stage 2",
+          "slot": 2,
+          "name": "Incessant Whizzing",
+          "text": "Time has taken everything beautiful from Roarlash, yet he refuses to surrender.",
+          "scenes": [
+            {
+              "id": 468202101,
+              "when": "before",
+              "n": 73
+            },
+            {
+              "id": 468202301,
+              "when": "after",
+              "n": 19
+            }
+          ]
+        },
+        {
+          "id": 102103,
+          "kind": "main",
+          "code": "Stage 3",
+          "slot": 3,
+          "name": "Question & Answer",
+          "text": "Beneath Mirestomp's smile lies hatred, and buried deeper still is a willingness to compromise.",
+          "scenes": [
+            {
+              "id": 468203101,
+              "when": "before",
+              "n": 47
+            },
+            {
+              "id": 468203301,
+              "when": "after",
+              "n": 17
+            }
+          ]
+        },
+        {
+          "id": 102104,
+          "kind": "main",
+          "code": "Stage 4",
+          "slot": 4,
+          "name": "Invincible",
+          "text": "Greatness may lead to death, but Grimbite's power transcends it.",
+          "scenes": [
+            {
+              "id": 468205101,
+              "when": "before",
+              "n": 73
+            },
+            {
+              "id": 468205301,
+              "when": "after",
+              "n": 61
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "number": 3,
+      "slug": "cross-the-line",
+      "name": "Cross The Line",
+      "stages": [
+        {
+          "id": -3,
+          "kind": "main",
+          "name": "Prelude",
+          "scenes": [
+            {
+              "id": 468221401,
+              "when": "before",
+              "n": 87
+            }
+          ]
+        },
+        {
+          "id": 103101,
+          "kind": "main",
+          "code": "Stage 1",
+          "slot": 1,
+          "name": "Loyal Dog",
+          "text": "Don't underestimate Garcia. If you're going to fight him—shoot to kill.",
+          "scenes": [
+            {
+              "id": 468221101,
+              "when": "before",
+              "n": 46
+            },
+            {
+              "id": 468221301,
+              "when": "after",
+              "n": 69
+            }
+          ]
+        },
+        {
+          "id": 103102,
+          "kind": "main",
+          "code": "Stage 2",
+          "slot": 2,
+          "name": "The Luckiest",
+          "text": "Having the chance to start over from scratch is much luckier than achieving success.",
+          "scenes": [
+            {
+              "id": 468224101,
+              "when": "before",
+              "n": 30
+            },
+            {
+              "id": 468224301,
+              "when": "after",
+              "n": 35
+            }
+          ]
+        },
+        {
+          "id": 103103,
+          "kind": "main",
+          "code": "Stage 3",
+          "slot": 3,
+          "name": "Departure",
+          "text": "Deborah hit the gas, now is the moment for the \"Rook\" to protect the \"King\".",
+          "scenes": [
+            {
+              "id": 468227101,
+              "when": "before",
+              "n": 39
+            },
+            {
+              "id": 468227301,
+              "when": "after",
+              "n": 38
+            }
+          ]
+        },
+        {
+          "id": 103104,
+          "kind": "main",
+          "code": "Stage 4",
+          "slot": 4,
+          "name": "End of the Old Days",
+          "text": "Genovese faces the new era head-on, refusing to back down.",
+          "scenes": [
+            {
+              "id": 468230101,
+              "when": "before",
+              "n": 31
+            },
+            {
+              "id": 468230301,
+              "when": "after",
+              "n": 37
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "number": 4,
+      "slug": "restless-soul",
+      "name": "Restless Soul",
+      "stages": [
+        {
+          "id": 104101,
+          "kind": "main",
+          "code": "Stage 1",
+          "slot": 1,
+          "name": "Hunter or Prey",
+          "text": "Shh... Be quiet, she's already here.",
+          "scenes": [
+            {
+              "id": 468233101,
+              "when": "before",
+              "n": 119
+            },
+            {
+              "id": 468233301,
+              "when": "after",
+              "n": 49
+            }
+          ]
+        },
+        {
+          "id": 104102,
+          "kind": "main",
+          "code": "Stage 2",
+          "slot": 2,
+          "name": "Venomous",
+          "text": "Curiosity and exploration, Liliya believes, are key to being human.",
+          "scenes": [
+            {
+              "id": 468236101,
+              "when": "before",
+              "n": 30
+            },
+            {
+              "id": 468236301,
+              "when": "after",
+              "n": 31
+            }
+          ]
+        },
+        {
+          "id": 104103,
+          "kind": "main",
+          "code": "Stage 3",
+          "slot": 3,
+          "name": "Watchdog",
+          "text": "Libby wishes to know everyone's personal color and hopes you can assist.",
+          "scenes": [
+            {
+              "id": 468239101,
+              "when": "before",
+              "n": 47
+            },
+            {
+              "id": 468239301,
+              "when": "after",
+              "n": 37
+            }
+          ]
+        },
+        {
+          "id": 104104,
+          "kind": "main",
+          "code": "Stage 4",
+          "slot": 4,
+          "name": "Missive From Wintry Ovett",
+          "text": "Alena brought a letter from a land scarred by storm and wreckage.",
+          "scenes": [
+            {
+              "id": 468242101,
+              "when": "before",
+              "n": 39
+            },
+            {
+              "id": 468242301,
+              "when": "after",
+              "n": 136
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "number": 5,
+      "slug": "empty-promise",
+      "name": "Empty Promise",
+      "stages": [
+        {
+          "id": 105101,
+          "kind": "main",
+          "code": "Stage 1",
+          "slot": 1,
+          "name": "Shut Out",
+          "text": "He looks very honest, easy to bully...— Rebecca",
+          "scenes": [
+            {
+              "id": 468245101,
+              "when": "before",
+              "n": 124
+            },
+            {
+              "id": 468245301,
+              "when": "after",
+              "n": 88
+            }
+          ]
+        },
+        {
+          "id": 105102,
+          "kind": "main",
+          "code": "Stage 2",
+          "slot": 2,
+          "name": "Black Humor",
+          "text": "Everyone knows that Sunny won't do anything stupid—unless he has to, that is...",
+          "scenes": [
+            {
+              "id": 468248101,
+              "when": "before",
+              "n": 68
+            },
+            {
+              "id": 468248301,
+              "when": "after",
+              "n": 33
+            }
+          ]
+        },
+        {
+          "id": 105103,
+          "kind": "main",
+          "code": "Stage 3",
+          "slot": 3,
+          "name": "Choice",
+          "text": "Keller now clearly understands what he's fighting for, which makes him especially dangerous.",
+          "scenes": [
+            {
+              "id": 468251101,
+              "when": "before",
+              "n": 97
+            },
+            {
+              "id": 468251301,
+              "when": "after",
+              "n": 27
+            }
+          ]
+        },
+        {
+          "id": 105104,
+          "kind": "main",
+          "code": "Stage 4",
+          "slot": 4,
+          "name": "Nothing Remains",
+          "text": "That's how Milkhama works—the winner takes it all, and the loser is left with nothing. But Sámi refuses to admit it.",
+          "scenes": [
+            {
+              "id": 468254101,
+              "when": "before",
+              "n": 39
+            },
+            {
+              "id": 468254301,
+              "when": "after",
+              "n": 138
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "number": 6,
+      "slug": "longest-night",
+      "name": "Longest Night",
+      "stages": [
+        {
+          "id": 106101,
+          "kind": "main",
+          "code": "Stage 1",
+          "slot": 1,
+          "name": "Clouds",
+          "text": "A pall of gloom hung over everyone... everyone except this guy.",
+          "scenes": [
+            {
+              "id": 468257101,
+              "when": "before",
+              "n": 77
+            },
+            {
+              "id": 468257301,
+              "when": "after",
+              "n": 65
+            }
+          ]
+        },
+        {
+          "id": 106102,
+          "kind": "main",
+          "code": "Stage 2",
+          "slot": 2,
+          "name": "Vengeance",
+          "text": "Vera will make those people pay the price—and pay dearly.",
+          "scenes": [
+            {
+              "id": 468261101,
+              "when": "before",
+              "n": 65
+            },
+            {
+              "id": 468261301,
+              "when": "after",
+              "n": 67
+            }
+          ]
+        },
+        {
+          "id": 106103,
+          "kind": "main",
+          "code": "Stage 3",
+          "slot": 3,
+          "name": "Big and Small",
+          "text": "Aiden isn't afraid of bleeding for the cause. What he fears is that the blood spilled won't be his own.",
+          "scenes": [
+            {
+              "id": 468269101,
+              "when": "before",
+              "n": 150
+            },
+            {
+              "id": 468269301,
+              "when": "after",
+              "n": 113
+            }
+          ]
+        },
+        {
+          "id": 106104,
+          "kind": "main",
+          "code": "Stage 4",
+          "slot": 4,
+          "name": "The Long Night",
+          "text": "Victoria arrives with the light of the old DL—and this time, history will not repeat itself.",
+          "scenes": [
+            {
+              "id": 468265101,
+              "when": "before",
+              "n": 68
+            },
+            {
+              "id": 468265301,
+              "when": "after",
+              "n": 144
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "number": 7,
+      "slug": "lost-in-the-desert",
+      "name": "Lost in the Desert",
+      "stages": [
+        {
+          "id": 107101,
+          "kind": "main",
+          "code": "Stage 1",
+          "slot": 1,
+          "name": "Testing the Waters",
+          "text": "If I don't find a way, there'll be no food—Meritus doesn't like going hungry.",
+          "scenes": [
+            {
+              "id": 468273101,
+              "when": "before",
+              "n": 130
+            },
+            {
+              "id": 468273301,
+              "when": "after",
+              "n": 138
+            }
+          ]
+        },
+        {
+          "id": 107102,
+          "kind": "main",
+          "code": "Stage 2",
+          "slot": 2,
+          "name": "As Shadow Follows",
+          "text": "You can defeat him, but you'll never escape his shadow.",
+          "scenes": [
+            {
+              "id": 468277101,
+              "when": "before",
+              "n": 126
+            },
+            {
+              "id": 468277301,
+              "when": "after",
+              "n": 214
+            }
+          ]
+        },
+        {
+          "id": 107103,
+          "kind": "main",
+          "code": "Stage 3",
+          "slot": 3,
+          "name": "Misdirection",
+          "text": "We'll have each other's back along the way, until the end of days separates us.",
+          "scenes": [
+            {
+              "id": 468281101,
+              "when": "before",
+              "n": 165
+            },
+            {
+              "id": 468281301,
+              "when": "after",
+              "n": 70
+            }
+          ]
+        },
+        {
+          "id": 107104,
+          "kind": "main",
+          "code": "Stage 4",
+          "slot": 4,
+          "name": "Nameless Ones",
+          "text": "Every moment death approaches is bathed in golden light—seize it, devour it, for it is the destiny you pursue.",
+          "scenes": [
+            {
+              "id": 468285101,
+              "when": "before",
+              "n": 72
+            },
+            {
+              "id": 468285301,
+              "when": "after",
+              "n": 115
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "number": 8,
+      "slug": "wildfire",
+      "name": "Wildfire",
+      "stages": [
+        {
+          "id": 108101,
+          "kind": "main",
+          "code": "Stage 1",
+          "slot": 1,
+          "name": "Fuse",
+          "text": "His soul is beyond redemption, instigating him not to give up any bit of profit he can covet.",
+          "scenes": [
+            {
+              "id": 468305101,
+              "when": "before",
+              "n": 142
+            },
+            {
+              "id": 468305301,
+              "when": "after",
+              "n": 120
+            }
+          ]
+        },
+        {
+          "id": 108102,
+          "kind": "main",
+          "code": "Stage 2",
+          "slot": 2,
+          "name": "Reignite",
+          "text": "A thousand chimneys lie in silence, waiting for the kindle to reignite.",
+          "scenes": [
+            {
+              "id": 468309101,
+              "when": "before",
+              "n": 205
+            },
+            {
+              "id": 468309401,
+              "when": "after",
+              "n": 199
+            }
+          ]
+        },
+        {
+          "id": 108103,
+          "kind": "main",
+          "code": "Stage 3",
+          "slot": 3,
+          "name": "Blazing Fire",
+          "text": "She sees the true unknown flowing, just like the first ray of light traversing the dim universe.",
+          "scenes": [
+            {
+              "id": 468313101,
+              "when": "before",
+              "n": 81
+            },
+            {
+              "id": 468313301,
+              "when": "after",
+              "n": 262
+            }
+          ]
+        },
+        {
+          "id": 108104,
+          "kind": "main",
+          "code": "Stage 4",
+          "slot": 4,
+          "name": "Frenzy",
+          "text": "Fate will not always meet your expectations... The more you dominate, the more you lose.",
+          "scenes": [
+            {
+              "id": 468317101,
+              "when": "before",
+              "n": 170
+            },
+            {
+              "id": 468317301,
+              "when": "after",
+              "n": 180
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "number": 9,
+      "slug": "the-savage-law",
+      "name": "The Savage Law",
+      "stages": [
+        {
+          "id": 109101,
+          "kind": "main",
+          "code": "Stage 1",
+          "slot": 1,
+          "name": "Opportunist",
+          "text": "Everyone wants to live longer—so obey the rules life gives you.",
+          "scenes": [
+            {
+              "id": 468321101,
+              "when": "before",
+              "n": 53
+            },
+            {
+              "id": 468321301,
+              "when": "after",
+              "n": 142
+            }
+          ]
+        },
+        {
+          "id": 109102,
+          "kind": "main",
+          "code": "Stage 2",
+          "slot": 2,
+          "name": "Rock Solid",
+          "text": "She points to the distance, claiming the bravest would be the first to conquer the world.",
+          "scenes": [
+            {
+              "id": 468325101,
+              "when": "before",
+              "n": 152
+            },
+            {
+              "id": 468325301,
+              "when": "after",
+              "n": 51
+            }
+          ]
+        },
+        {
+          "id": 109103,
+          "kind": "main",
+          "code": "Stage 3",
+          "slot": 3,
+          "name": "Will-o'-Wisp",
+          "text": "Under the sunlight, she remains blazing as ever.",
+          "scenes": [
+            {
+              "id": 468329101,
+              "when": "before",
+              "n": 110
+            },
+            {
+              "id": 468329301,
+              "when": "after",
+              "n": 90
+            }
+          ]
+        },
+        {
+          "id": 109104,
+          "kind": "main",
+          "code": "Stage 4",
+          "slot": 4,
+          "name": "Insatiable Desire",
+          "text": "Any treasure he has yet to obtain is a treasure he is destined to acquire.",
+          "scenes": [
+            {
+              "id": 468333101,
+              "when": "before",
+              "n": 180
+            },
+            {
+              "id": 468333301,
+              "when": "after",
+              "n": 183
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "number": 10,
+      "slug": "submerged-era",
+      "name": "Submerged Era",
+      "stages": [
+        {
+          "id": 110101,
+          "kind": "main",
+          "code": "Stage 1",
+          "slot": 1,
+          "name": "Rekindled",
+          "text": "An island that never disappoints.",
+          "scenes": [
+            {
+              "id": 468337101,
+              "when": "before",
+              "n": 74
+            },
+            {
+              "id": 468337301,
+              "when": "after",
+              "n": 45
+            }
+          ]
+        },
+        {
+          "id": 110102,
+          "kind": "main",
+          "code": "Stage 2",
+          "slot": 2,
+          "name": "Cognitive Flood",
+          "text": "Death is just a means to an end.",
+          "scenes": [
+            {
+              "id": 468341101,
+              "when": "before",
+              "n": 54
+            },
+            {
+              "id": 468341301,
+              "when": "after",
+              "n": 80
+            }
+          ]
+        },
+        {
+          "id": 110103,
+          "kind": "main",
+          "code": "Stage 3",
+          "slot": 3,
+          "name": "Lost Generation",
+          "text": "Only the strong can recall the past.",
+          "scenes": [
+            {
+              "id": 468345101,
+              "when": "before",
+              "n": 80
+            },
+            {
+              "id": 468345301,
+              "when": "after",
+              "n": 113
+            }
+          ]
+        },
+        {
+          "id": 110104,
+          "kind": "main",
+          "code": "Stage 4",
+          "slot": 4,
+          "name": "Echoes of Tomorrow",
+          "text": "Life is born to mend regrets.",
+          "scenes": [
+            {
+              "id": 468349101,
+              "when": "before",
+              "n": 78
+            },
+            {
+              "id": 468349301,
+              "when": "after",
+              "n": 119
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "number": 11,
+      "slug": "the-end-of-destiny",
+      "name": "The End of Destiny",
+      "stages": [
+        {
+          "id": 111101,
+          "kind": "main",
+          "code": "Stage 1",
+          "slot": 1,
+          "name": "A Single Flaw",
+          "text": "Another drink—sometimes it requires careful consideration.",
+          "scenes": [
+            {
+              "id": 468353101,
+              "when": "before",
+              "n": 136
+            },
+            {
+              "id": 468353301,
+              "when": "after",
+              "n": 56
+            }
+          ]
+        },
+        {
+          "id": 111102,
+          "kind": "main",
+          "code": "Stage 2",
+          "slot": 2,
+          "name": "Feign East, Strike West",
+          "text": "He deeply understands that \"improvisation\" is the key to surviving longer in this land.",
+          "scenes": [
+            {
+              "id": 468357101,
+              "when": "before",
+              "n": 74
+            },
+            {
+              "id": 468357301,
+              "when": "after",
+              "n": 113
+            }
+          ]
+        },
+        {
+          "id": 111103,
+          "kind": "main",
+          "code": "Stage 3",
+          "slot": 3,
+          "name": "Unexpected Turn",
+          "text": "Waiting—sometimes it's a special technique for getting out of the maze.",
+          "scenes": [
+            {
+              "id": 468361101,
+              "when": "before",
+              "n": 95
+            },
+            {
+              "id": 468361301,
+              "when": "after",
+              "n": 24
+            }
+          ]
+        },
+        {
+          "id": 111104,
+          "kind": "main",
+          "code": "Stage 4",
+          "slot": 4,
+          "name": "Trapped Dreams",
+          "text": "In the end, we will rest eternally in this cage of steel.",
+          "scenes": [
+            {
+              "id": 468365101,
+              "when": "before",
+              "n": 140
+            },
+            {
+              "id": 468365301,
+              "when": "after",
+              "n": 306
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "number": 12,
+      "slug": "ride-or-die",
+      "name": "Ride or Die",
+      "stages": [
+        {
+          "id": 112101,
+          "kind": "main",
+          "code": "Stage 1",
+          "slot": 1,
+          "name": "Twist of Fate",
+          "text": "On Milkhama, there's plenty of prey—and just as many pitfalls.",
+          "scenes": [
+            {
+              "id": 468369101,
+              "when": "before",
+              "n": 77
+            },
+            {
+              "id": 468369301,
+              "when": "after",
+              "n": 62
+            }
+          ]
+        },
+        {
+          "id": 112102,
+          "kind": "main",
+          "code": "Stage 2",
+          "slot": 2,
+          "name": "Reflections of Loyalty",
+          "text": "Loyalty's like the moon reflected in the water: it's never quite as close as it looks.",
+          "scenes": [
+            {
+              "id": 468373101,
+              "when": "before",
+              "n": 97
+            },
+            {
+              "id": 468373301,
+              "when": "after",
+              "n": 76
+            }
+          ]
+        },
+        {
+          "id": 112103,
+          "kind": "main",
+          "code": "Stage 3",
+          "slot": 3,
+          "name": "Dust and Blood",
+          "text": "Glory and ideals shatter, leaving behind nothing but dust and old blood.",
+          "scenes": [
+            {
+              "id": 468377101,
+              "when": "before",
+              "n": 83
+            },
+            {
+              "id": 468377301,
+              "when": "after",
+              "n": 77
+            }
+          ]
+        },
+        {
+          "id": 112104,
+          "kind": "main",
+          "code": "Stage 4",
+          "slot": 4,
+          "name": "Final Creed",
+          "text": "Loyalty and camaraderie have faded away, leaving only the creed of \"profit.\"",
+          "scenes": [
+            {
+              "id": 468381101,
+              "when": "before",
+              "n": 97
+            },
+            {
+              "id": 468381301,
+              "when": "after",
+              "n": 125
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "number": 13,
+      "slug": "survival-edge",
+      "name": "Survival Edge",
+      "stages": [
+        {
+          "id": 113101,
+          "kind": "main",
+          "code": "Stage 1",
+          "slot": 1,
+          "name": "Internal Conflict",
+          "text": "The world is filled with nameless visitors.",
+          "scenes": [
+            {
+              "id": 468385101,
+              "when": "before",
+              "n": 250
+            },
+            {
+              "id": 468385401,
+              "when": "after",
+              "n": 18
+            }
+          ]
+        },
+        {
+          "id": 113102,
+          "kind": "main",
+          "code": "Stage 2",
+          "slot": 2,
+          "name": "Chasing Shadows",
+          "text": "Traces remain in the snow.",
+          "scenes": [
+            {
+              "id": 468389101,
+              "when": "before",
+              "n": 65
+            },
+            {
+              "id": 468389301,
+              "when": "after",
+              "n": 44
+            }
+          ]
+        },
+        {
+          "id": 113103,
+          "kind": "main",
+          "code": "Stage 3",
+          "slot": 3,
+          "name": "Power Play",
+          "text": "Madness and destruction always go hand in hand.",
+          "scenes": [
+            {
+              "id": 468393101,
+              "when": "before",
+              "n": 103
+            },
+            {
+              "id": 468393301,
+              "when": "after",
+              "n": 48
+            }
+          ]
+        },
+        {
+          "id": 113104,
+          "kind": "main",
+          "code": "Stage 4",
+          "slot": 4,
+          "name": "Distant View",
+          "text": "That is also the wish of many, many people.",
+          "scenes": [
+            {
+              "id": 468397101,
+              "when": "before",
+              "n": 144
+            },
+            {
+              "id": 468397301,
+              "when": "after",
+              "n": 284
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "borderConflict": {
     "bosses": [
       {
