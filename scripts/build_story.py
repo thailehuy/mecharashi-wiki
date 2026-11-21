@@ -63,7 +63,10 @@ opened. Mid-battle dialogue isn't included.
 Armed Conquest (ConfigDataRaidDungeonInfo, one per season, in AC_SEASONS order from
 build_bosses.py): the season's prelude (PreludeDialogID, only some seasons) and its Normal
 stages (LevelList -> ConfigDataRaidDungeonLevelInfo): name, briefing and cutscenes. The other
-difficulties replay the same stages without cutscenes. Lines go in dialogue/ac-<number>.js.
+difficulties replay the same stages without cutscenes. Lines go in dialogue/ac-<number>.js. A stage's
+boss has Skynet trivia (ConfigDataSkynetStrongEnemyAtlasInfo, whose FunctionLevelIds hold the stage's
+level IDs): its tagline and anecdotes (AnecdoteLevelTemplateId -> ConfigDataSkynetStrongEnemyAnecdoteInfo,
+unlocked one per analysis level), each a title, text and maybe a character's comment (CommentCharacter).
 
 A stage's rewards are its RewardDropId (ConfigDataItemDropInfo): the items the
 mission screen shows (UIShowItemList) plus the guaranteed ones
@@ -474,6 +477,26 @@ def side_stories(con, dialogue):
 
 def armed_conquest(con, dialogue):
     from build_bosses import AC_SEASONS
+    characters = dict(con.execute('SELECT ID, CharNameStrKey_EN FROM ConfigDataCharacterPicture'))
+    anecdotes = {r['ID']: r for r in con.execute('SELECT * FROM ConfigDataSkynetStrongEnemyAnecdoteInfo')}
+    templates = dict(con.execute('SELECT ID, AnecdoteLevelInfo FROM ConfigDataSkynetStrongEnemyAnecdoteLevelTemplateInfo'))
+    trivia = {}
+    for a in con.execute("SELECT * FROM ConfigDataSkynetStrongEnemyAtlasInfo "
+                         "WHERE StrongEnemyType = 'SkynetStrongEnemyType_RaidDungeon'"):
+        items = []
+        for x in json.loads(templates.get(a['AnecdoteLevelTemplateId']) or '[]'):
+            r = anecdotes.get(x['AnecdoteId'])
+            if not r or not text(r['ParagraphTextStrKey_EN']):
+                continue
+            item = {'title': text(r['TitleStrKey_EN']) or '', 'text': clean(text(r['ParagraphTextStrKey_EN']))}
+            comment = text(r['CommentContentStrKey_EN'])
+            if comment:
+                item['comment'] = clean(comment)
+                item['by'] = text(characters.get(r['CommentCharacter'])) or ''
+            items.append(item)
+        t = {'name': text(a['NameStrKey_EN']), 'tagline': text(a['DescStrKey_EN']), 'anecdotes': items}
+        for lid in json.loads(a['FunctionLevelIds'] or '[]'):
+            trivia[lid] = {k: v for k, v in t.items() if v}
     out = []
     for r in con.execute('SELECT * FROM ConfigDataRaidDungeonInfo ORDER BY ID').fetchall():
         name = text(r['NameStrKey_EN'])
@@ -496,6 +519,8 @@ def armed_conquest(con, dialogue):
             if text(l['DescStrKey_EN']):
                 st['text'] = clean(text(l['DescStrKey_EN']))
             dialogue.attach(st, l['StartDialogID'], l['EndDialogID'])
+            if lid in trivia:
+                st['trivia'] = trivia[lid]
             stages.append(st)
         number = AC_SEASONS.index(name) + 1
         out.append({'id': number, 'number': number, 'slug': slugify(name), 'name': name, 'stages': stages})

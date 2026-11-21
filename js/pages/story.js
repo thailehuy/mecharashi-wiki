@@ -153,7 +153,8 @@ Pages.story = {
     });
   },
 
-  _stage: function (st, kit, file) {
+  // extra: HTML under the stage's text (an AC stage's clues).
+  _stage: function (st, kit, file, extra) {
     var esc = this._esc;
     var badge = st.kind === 'critical' ? '<span class="story-stage-code story-stage-critical">Critical Operation</span>'
       : st.kind === 'encounter' ? '<span class="story-stage-code story-stage-encounter">Encounter</span>'
@@ -171,8 +172,10 @@ Pages.story = {
     return (
       '<div class="story-stage skill-card story-stage--' + st.kind + '" id="story-st-' + st.id + '">' +
         '<div class="story-stage-head">' + badge + name + meta + '</div>' +
-        (img || st.text ? '<div class="story-stage-body">' + img +
-          (st.text ? '<div class="lore-text story-stage-text">' + this._paras(st.text) + '</div>' : '') + '</div>' : '') +
+        (img || st.text || extra ? '<div class="story-stage-body">' + img +
+          (st.text || extra ? '<div class="story-stage-main">' +
+            (st.text ? '<div class="lore-text story-stage-text">' + this._paras(st.text) + '</div>' : '') + (extra || '') +
+          '</div>' : '') + '</div>' : '') +
         this._scenes(st, file) +
         this._rewards(st, kit) +
       '</div>'
@@ -325,6 +328,20 @@ Pages.story = {
     return b && b.portrait ? ASSET_BASE + b.portrait : null;
   },
 
+  // A stage boss's Skynet trivia: its tagline and anecdotes (unlocked as you analyse it), each maybe with a
+  // character's comment.
+  _acTrivia: function (t) {
+    var self = this, esc = this._esc;
+    if (!t || !t.anecdotes) return '';
+    return '<div class="story-ac-trivia"><div class="story-ac-trivia-head"><i class="bi bi-database"></i>Skynet: ' + esc(t.name || '') +
+        (t.tagline ? ' <span class="story-ac-trivia-tag">' + esc(t.tagline) + '</span>' : '') + '</div>' +
+      t.anecdotes.map(function (a) {
+        return '<details class="story-ac-anecdote"><summary>' + esc(a.title) + '</summary><div class="lore-text">' + self._paras(a.text) +
+          (a.comment ? '<p class="story-ac-comment">' + (a.by ? '<span class="story-dlg-who">' + esc(a.by) + '</span>' : '') +
+            esc(a.comment) + '</p>' : '') + '</div></details>';
+      }).join('') + '</div>';
+  },
+
   _acStages: function (a) { return a.stages.filter(function (s) { return s.slot; }).length; },
 
   _armedConquest: function (d) {
@@ -357,7 +374,7 @@ Pages.story = {
         // The stage's boss, linked to its card on the season's boss page.
         var stage = s && st.slot && s.stages.find(function (x) { return x.slot === st.slot; });
         var b = stage && (bosses[stage.boss] || { name: stage.boss });
-        var html = self._stage(st, kit, 'ac-' + a.id);
+        var html = self._stage(st, kit, 'ac-' + a.id, self._acTrivia(st.trivia));
         return b ? html.replace('</div>', '<a class="story-stage-meta" href="' + App.href('armedconquest', a.name) +
           '#stage-' + st.slot + '"><i class="bi bi-fire"></i>' + self._esc(b.name) + '</a></div>') : html;
       }).join('') + '</div>' +
@@ -465,7 +482,7 @@ Pages.story = {
       '<div class="listing-header"><h1>Story</h1></div>' +
       '<p class="dispatch-intro">The world of Mecharashi and its stories, from the game\'s own text. ' +
         'Event stories are on each <a href="' + App.href('events') + '">event</a>\'s page.</p>' +
-      '<div class="home-nav-cards">' + this._sections(d).map(function (m) {
+      '<div class="home-nav-cards story-sections">' + this._sections(d).map(function (m) {
         return (
           '<a href="' + App.href('story', m.slug) + '" class="home-card">' +
             '<div class="home-card-title"><i class="bi ' + m.icon + '"></i> ' + esc(m.name) +

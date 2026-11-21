@@ -2662,6 +2662,14 @@ a.material-item:hover .material-icon-wrap {
   text-decoration: none;
   transition: border-color 0.2s, background 0.2s;
 }
+/* The Story page's sections: a grid of 4 per row (2 on tablets, 1 on phones), cards at full cell width. */
+.home-nav-cards.story-sections {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+.home-nav-cards.story-sections .home-card { max-width: none; }
+@media (max-width: 991px) { .home-nav-cards.story-sections { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 575px) { .home-nav-cards.story-sections { grid-template-columns: 1fr; } }
 .home-card:hover {
   border-color: #e94560;
   background: #20203a;
@@ -4536,6 +4544,16 @@ a.boss-avatar { display: block; }
   border-radius: 6px;
   background-color: #14141e;
 }
+/* A stage's text and what goes under it (an AC stage's clues), beside its picture. */
+.story-stage-main { flex: 1; min-width: 0; }
+.story-stage-main .story-stage-text { margin-top: 0; }
+.story-ac-trivia { margin-top: 0.6rem; padding-left: 0.6rem; border-left: 2px solid #2a2a4a; }
+.story-ac-trivia-head { font-size: 0.85rem; font-weight: 700; color: #deb072; margin-bottom: 0.2rem; }
+.story-ac-trivia-head .bi { margin-right: 0.3rem; }
+.story-ac-trivia-tag { font-weight: 400; font-style: italic; color: #a0a0b0; }
+.story-ac-anecdote summary { cursor: pointer; font-size: 0.9rem; color: #cbd5e1; }
+.story-ac-anecdote .lore-text { margin: 0.25rem 0 0.4rem; font-size: 0.9rem; }
+.story-ac-comment { font-style: italic; color: #a0a0b0; }
 .story-bc-found { margin: 0.4rem 0 0 0.75rem; padding-left: 0.6rem; border-left: 2px solid #2a2a4a; }
 .story-bc-found-name { font-size: 0.85rem; font-weight: 700; color: #deb072; }
 .story-bc-found-name .bi { margin-right: 0.3rem; }
