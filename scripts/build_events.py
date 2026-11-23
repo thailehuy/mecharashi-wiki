@@ -29,6 +29,11 @@ never closes (ends in 2099) is permanent, in the game's Chronicles.
   (ConfigDataFixedShopItemInfo: item, price, purchase limit) and random shops
   (ConfigDataRandomShopItemInfo: the B-Boxes H.I.V.E.'s Intel Shop rolls, one
   per pool on each refresh).
+- Commanders: the ones its battles allow (AllowUseCommanders ->
+  ConfigDataBattleCommanderInfo) and their skills (CommanderDevelopmentGroupInfo
+  by CommanderId: each group's levels are CommanderDevelopmentInfo rows, whose
+  passive (PassiveSkillInfo) and Commander Skill (MainSkillInfo) give the text;
+  a skill's levels are merged into one text, "+10/12/14/16/20%").
 
 The story itself (briefings, cutscenes) is the Story page's (build_story.py);
 the page shows it from there.
@@ -243,6 +248,90 @@ def shops(con, rewards, shop_info, name):
     return out, paid
 
 
+VALUE = re.compile(r'<color=#[0-9A-Fa-f]+>(.*?)</color>')
+BUF = re.compile(r'<buf ID=(\d+)>(?:\[([^\]]*)\])?</buf>')
+LV = re.compile(r'\s*Lv\.\s*\d+$')
+
+
+def merge_levels(texts):
+    """Per-level skill texts -> one, the values that differ joined: "+10/12/14%"."""
+    parts = [VALUE.split(t) for t in texts]
+    if len({len(p) for p in parts}) != 1 or any(
+            len({p[i] for p in parts}) > 1 for i in range(0, len(parts[0]), 2)):
+        return None
+    out = parts[0][:]
+    for i in range(1, len(out), 2):
+        vals = [p[i] for p in parts]
+        if len(set(vals)) > 1:
+            m = [re.match(r'^([+-]?)([\d.]+)(%?)$', v) for v in vals]
+            if all(m) and len({(x.group(1), x.group(3)) for x in m}) == 1:
+                out[i] = m[0].group(1) + '/'.join(x.group(2) for x in m) + m[0].group(3)
+            else:
+                out[i] = '/'.join(vals)
+        out[i] = '<color=#F74848>%s</color>' % out[i]
+    return ''.join(out)
+
+
+def commanders(con, a):
+    """The commanders an event allows and their skills (see the module doc)."""
+    def buf_name(bid):
+        b = con.execute('SELECT NameDescStrKey_EN FROM ConfigDataActorBufInfo WHERE ID = ?', (bid,)).fetchone()
+        return b and text(b[0])
+
+    terms = {}
+
+    def rich(s):
+        def tag(m):
+            name = m.group(2) or buf_name(int(m.group(1))) or '?'
+            if int(m.group(1)) not in terms:
+                b = con.execute('SELECT BuffDescStrKey_EN FROM ConfigDataActorBufInfo WHERE ID = ?',
+                                (int(m.group(1)),)).fetchone()
+                terms[int(m.group(1))] = {'id': int(m.group(1)), 'name': name, 'text': b and text(b[0])}
+            return '<buf ID=%s>[%s]</buf>' % (m.group(1), name)
+        return BUF.sub(tag, s or '')
+
+    def skill(table, sid):
+        r = con.execute('SELECT NameStrKey_EN, SkillDescStrKey_EN FROM %s WHERE ID = ?' % table, (sid,)).fetchone()
+        return r and (text(r[0]), text(r[1]))
+
+    out = []
+    for cid in json.loads(a['AllowUseCommanders'] or '[]'):
+        c = con.execute('SELECT * FROM ConfigDataBattleCommanderInfo WHERE ID = ?', (cid,)).fetchone()
+        if not c:
+            continue
+        skills = []
+        for g in con.execute('SELECT * FROM ConfigDataCommanderDevelopmentGroupInfo WHERE CommanderId = ? ORDER BY ID',
+                             (cid,)):
+            levels = [con.execute('SELECT * FROM ConfigDataCommanderDevelopmentInfo WHERE ID = ?', (d,)).fetchone()
+                      for d in json.loads(g['DevelopmentInfos'] or '[]')]
+            levels = [l for l in levels if l]
+            if not levels:
+                continue
+            passives = [skill('ConfigDataPassiveSkillInfo', json.loads(l['PassiveSkillId'])[0])
+                        for l in levels if l['PassiveSkillId']]
+            passives = [p for p in passives if p]
+            sk = {'name': text(g['DescStrKey_EN']), 'levels': len(levels)}
+            if levels[0]['IsTalent']:
+                sk['talent'] = True
+            main = levels[0]['MainSkillIds'] and skill('ConfigDataMainSkillInfo', json.loads(levels[0]['MainSkillIds'])[0])
+            if main:
+                sk['command'] = {'name': main[0], 'text': rich(main[1])}
+            if passives:
+                texts = [p[1] for p in passives]
+                merged = merge_levels(texts) if len(texts) > 1 else texts[0]
+                pname = LV.sub('', passives[0][0])
+                if merged:
+                    sk['passive'] = {'name': pname, 'text': rich(merged)}
+                else:
+                    sk['passive'] = {'name': pname, 'levels': [rich(t) for t in texts]}
+            skills.append(sk)
+        if skills:
+            out.append({'id': cid, 'name': text(c['NameStrKey_EN']), 'skills': skills,
+                        'terms': [t for t in terms.values() if t['text']]})
+        terms = {}
+    return out
+
+
 def main():
     con = sqlite3.connect(STATS)
     con.row_factory = sqlite3.Row
@@ -299,6 +388,9 @@ def main():
             if t not in types:
                 types.append(t)
         ev['currencies'] = [c for c in map(currencies.get, types) if c]
+        cmd = commanders(con, a)
+        if cmd:
+            ev['commanders'] = cmd
         events.append(ev)
 
     data = {'events': events}

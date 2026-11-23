@@ -10292,6 +10292,85 @@
           "text": "Key material for crafting PAMS System components, also used for the renovation and upgrades of components. It is the industry foundation supporting the entire PAMS System R&D framework.",
           "use": "Guided by Starlight event item. Can be exchanged for goods in Reversion Aid."
         }
+      ],
+      "commanders": [
+        {
+          "id": 1009,
+          "name": "Matilda",
+          "skills": [
+            {
+              "name": "Reorganize ST",
+              "levels": 1,
+              "command": {
+                "name": "Reorganized",
+                "text": "Selects <color=#F74848>1</color> ally ST, repairing all destroyed parts, restoring HP equal to <color=#F74848>15%</color> of Max HP, and granting <buf ID=861300010>[Nanoforge]</buf> and <buf ID=861300020>[Collapse]</buf>."
+              }
+            }
+          ],
+          "terms": [
+            {
+              "id": 861300010,
+              "name": "Nanoforge",
+              "text": "After actively attacking, restores HP equal to 50% of damage dealt and can repair 1 part."
+            },
+            {
+              "id": 861300020,
+              "name": "Collapse",
+              "text": "After actively attacking, deals Fixed DMG equal to 40% of the damage dealt to the first target to all enemies within 1 ring."
+            }
+          ]
+        },
+        {
+          "id": 1012,
+          "name": "Shawnee",
+          "skills": [
+            {
+              "name": "Roadblock Deployment",
+              "levels": 1,
+              "command": {
+                "name": "Roadblock Deployment",
+                "text": "Designates <color=#F74848>1</color> allied unit to gain the <skill mainSkill=86130004></skill> skill. The unit loses the skill at the end of the turn."
+              }
+            }
+          ],
+          "terms": []
+        },
+        {
+          "id": 1011,
+          "name": "Dean",
+          "skills": [
+            {
+              "name": "Shortcut Setup",
+              "levels": 1,
+              "command": {
+                "name": "Shortcut Setup",
+                "text": "Selects <color=#F74848>2</color> allies and creates <terrian ID=861300021 /> under them. The tile lasts for <color=#F74848>1</color> turn, and a maximum of <color=#F74848>2</color> can exist simultaneously. Each activation will reset all <terrian ID=861300021 />."
+              }
+            }
+          ],
+          "terms": []
+        },
+        {
+          "id": 1014,
+          "name": "Rosa",
+          "skills": [
+            {
+              "name": "Weak Point Analysis",
+              "levels": 1,
+              "command": {
+                "name": "Weak Point Analysis",
+                "text": "Designates <color=#F74848>1</color> enemy unit on the battlefield and applies <buf ID=861300050>[Weak Point]</buf>."
+              }
+            }
+          ],
+          "terms": [
+            {
+              "id": 861300050,
+              "name": "Weak Point",
+              "text": "When a part of this ST is destroyed, it deals Fixed DMG equal to 60% of the corresponding part to allies within 1 ring (including self)."
+            }
+          ]
+        }
       ]
     },
     {
@@ -12604,6 +12683,145 @@
           "icon": "Icon_currency_ActivityToken9",
           "text": "Here, you have the right to reject tasks you dislike, experiencing a sense of freedom.",
           "use": "H.I.V.E. event item. Used to refresh the B-Box list in the Intel Shop."
+        }
+      ],
+      "commanders": [
+        {
+          "id": 1022,
+          "name": "Kaidan",
+          "skills": [
+            {
+              "name": "Disruptor",
+              "levels": 1,
+              "talent": true,
+              "passive": {
+                "name": "Disruptor",
+                "text": "At start of turn, dispels fog from the tile of <color=#F74848>1</color> enemy unit closest to an ally, lasting for <color=#F74848>1</color> turn. When fighting against enemies within <color=#F74848>1</color> adjacent tile, gains Hit Rate <color=#F74848>+12%</color> and Dodge Rate <color=#F74848>+12%</color>."
+              }
+            },
+            {
+              "name": "GKD Offensive",
+              "levels": 5,
+              "command": {
+                "name": "GKD Offensive",
+                "text": "Grants all allies Sight <color=#F74848>+1</color>, and immediately grants them <color=#F74848>3</color> AP. All allies gain DMG <color=#F74848>+20%</color>. For each <color=#F74848>1</color> enemy unit within ally Sight, DMG increases by an additional <color=#F74848>5%</color>, up to <color=#F74848>35%</color>. Additionally, the Commander gains <buf ID=970001>[Intel Bits Cooldown]</buf>, lasting for <color=#F74848>1</color> turn."
+              },
+              "passive": {
+                "name": "Logistics Strategy",
+                "text": "Gains <color=#F74848>600/600/630/630/660</color> Intel Bits when deployed, and gains <color=#F74848>60/70/70/80/80</color> Intel Bits each turn starting from the <color=#F74848>2</color>nd turn."
+              }
+            },
+            {
+              "name": "Plunder",
+              "levels": 5,
+              "passive": {
+                "name": "Plunder",
+                "text": "When an ally attacks and destroys an enemy part, the Commander gains <color=#F74848>20/25/25/30/30</color> Intel Bits. Can trigger up to <color=#F74848>3/3/4/4/5</color> times per turn."
+              }
+            },
+            {
+              "name": "Blitz Tactics",
+              "levels": 5,
+              "passive": {
+                "name": "Blitz Tactics",
+                "text": "If an ally moves more than <color=#F74848>4</color> tiles before actively attacking, the Commander gains <color=#F74848>40/45/45/50/50</color> Intel Bits. Can trigger up to <color=#F74848>2/2/3/3/4</color> times per turn."
+              }
+            },
+            {
+              "name": "Dominant Suppression",
+              "levels": 5,
+              "passive": {
+                "name": "Dominant Suppression",
+                "text": "When initiating combat, if HP percentage is greater than the target's, DMG <color=#F74848>+5/7/10/12/15%</color>."
+              }
+            },
+            {
+              "name": "Winning Initiative",
+              "levels": 5,
+              "passive": {
+                "name": "Winning Initiative",
+                "text": "When initiating combat, Crit Rate <color=#F74848>+5/7/10/12/15%</color>."
+              }
+            }
+          ],
+          "terms": [
+            {
+              "id": 970001,
+              "name": "Intel Bits Cooldown",
+              "text": "Cannot gain any Intel Bits during Commander Skill."
+            }
+          ]
+        },
+        {
+          "id": 1023,
+          "name": "Elise",
+          "skills": [
+            {
+              "name": "Balance Logic",
+              "levels": 1,
+              "talent": true,
+              "passive": {
+                "name": "Balance Logic",
+                "text": "When attacked from within the fog, dispels the fog on the attacker's tile for <color=#F74848>1</color> turn. Gains DMG Taken <color=#F74848>-10%</color>, and Repair AMT Received is increased by <color=#F74848>10%</color>."
+              }
+            },
+            {
+              "name": "Reprisal Mandate",
+              "levels": 5,
+              "command": {
+                "name": "Reprisal Mandate",
+                "text": "Grants all allies Sight <color=#F74848>+1</color>. Immediately repairs all allies' HP and all destroyed parts, and dispels all debuffs. When initiating combat, cannot be retaliated against. When attacked and drawn into combat, always triggers <buf ID=900023>[Quick Draw]</buf>, and gains DMG <color=#F74848>+20%</color>. Additionally, the Commander gains <buf ID=970001>[Intel Bits Cooldown]</buf>, lasting for <color=#F74848>1</color> turn."
+              },
+              "passive": {
+                "name": "Sustainability Algorithm",
+                "text": "Gains <color=#F74848>600/600/630/630/660</color> Intel Bits when deployed, and gains <color=#F74848>60/70/70/80/80</color> Intel Bits each turn starting from the <color=#F74848>2</color>nd turn."
+              }
+            },
+            {
+              "name": "Decisive Momentum",
+              "levels": 5,
+              "passive": {
+                "name": "Decisive Momentum",
+                "text": "When allies take damage, the Commander gains <color=#F74848>20/25/25/30/30</color> Intel Bits. Can trigger up to <color=#F74848>3/3/4/4/5</color> times per turn."
+              }
+            },
+            {
+              "name": "Cross Theory",
+              "levels": 5,
+              "passive": {
+                "name": "Cross Theory",
+                "text": "When an ally uses a non-offensive Code, the Commander gains <color=#F74848>40/45/45/50/50</color> Intel Bits. Can trigger up to <color=#F74848>2/2/3/3/4</color> times per turn."
+              }
+            },
+            {
+              "name": "Unified Combat",
+              "levels": 5,
+              "passive": {
+                "name": "Unified Combat",
+                "text": "When attacking, increases DMG based on current DMG Taken Down effect. For every <color=#F74848>3%</color> DMG Taken Down, DMG <color=#F74848>+1/1/1/1.5/1.5%</color>, up to <color=#F74848>+5/7/10/12/15%</color>."
+              }
+            },
+            {
+              "name": "Regular Optimization",
+              "levels": 5,
+              "passive": {
+                "name": "Regular Optimization",
+                "text": "After attacking, restores HP to undestroyed parts after combat. Repair AMT is equal to <color=#F74848>5/7/10/12/15%</color> of the damage dealt."
+              }
+            }
+          ],
+          "terms": [
+            {
+              "id": 900023,
+              "name": "Quick Draw",
+              "text": "Launches a retaliation before enemy active attacks."
+            },
+            {
+              "id": 970001,
+              "name": "Intel Bits Cooldown",
+              "text": "Cannot gain any Intel Bits during Commander Skill."
+            }
+          ]
         }
       ]
     }

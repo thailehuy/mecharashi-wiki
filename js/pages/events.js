@@ -3,7 +3,7 @@ var Pages = window.Pages || {};
 // The Events page: every limited-time story event as a picture, newest first (a
 // rerun is listed again, since its missions and shop are new). Each opens its own
 // page (events/<slug>/) with tabs for its story, stage rewards, achievements,
-// milestones, currencies and shop. Its data (data/events/events.js, built by
+// milestones, currencies, shop and commanders. Its data (data/events/events.js, built by
 // scripts/build_events.py) is fetched the first time the page opens, with the
 // Story page's (the story's briefings and cutscenes); reward chips are drawn as
 // on the Story page.
@@ -214,6 +214,37 @@ Pages.events = {
     }).join('');
   },
 
+  // The commanders the event's battles allow: each skill, its levels' values merged ("+5/7/10/12/15%").
+  _commanders: function (e) {
+    var self = this;
+    var fx = function (t) { return Glossary.parseEffects(t).replace(/\n/g, '<br />'); };
+    return e.commanders.map(function (c) {
+      return (
+        '<div class="ac-section">' +
+          '<h2 class="ac-section-title">' + self._esc(c.name) + '</h2>' +
+          '<ul class="elite-achs event-commander">' + c.skills.map(function (k) {
+            var tag = k.talent ? 'Talent' : k.levels > 1 ? 'Lv. 1–' + k.levels : '';
+            var part = function (label, p) {
+              var body = p.text ? fx(p.text) : p.levels.map(function (t, i) { return '<div>Lv. ' + (i + 1) + ': ' + fx(t) + '</div>'; }).join('');
+              return '<div class="event-cmd-part"><span class="boss-gear-label">' + label + '</span> ' +
+                (p.name !== k.name ? '<b>' + self._esc(p.name) + '</b> ' : '') + '<span class="sim-mod-text">' + body + '</span></div>';
+            };
+            return (
+              '<li class="skill-card"><div><b>' + self._esc(k.name) + '</b>' +
+                (tag ? ' <small class="story-tab-n">' + tag + '</small>' : '') + '</div>' +
+                (k.command ? part('Commander Skill', k.command) : '') +
+                (k.passive ? part(k.talent ? 'Talent' : 'Passive', k.passive) : '') +
+              '</li>'
+            );
+          }).join('') + '</ul>' +
+          (c.terms.length ? '<div class="event-cmd-terms">' + c.terms.map(function (x) {
+            return '<div><b>[' + self._esc(x.name) + ']</b> ' + fx(x.text) + '</div>';
+          }).join('') + '</div>' : '') +
+        '</div>'
+      );
+    }).join('');
+  },
+
   _detail: function (e) {
     var kit = Pages.story._kit();
     var count = function (n, what) { return what + ' <small class="story-tab-n">' + n + '</small>'; };
@@ -229,6 +260,7 @@ Pages.events = {
       ['milestones', count(missions, 'Milestones'), missions ? this._milestones(e, kit) : ''],
       ['currency', 'Currency', e.currencies.length ? this._currencies(e) : ''],
       ['shop', 'Shop', e.shops.length ? this._shops(e, kit) : ''],
+      ['commanders', 'Commanders', (e.commanders || []).length ? this._commanders(e) : ''],
     ]);
   },
 
