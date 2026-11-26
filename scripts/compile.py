@@ -210,7 +210,8 @@ def build_mechs(t):
         entry['manjiFirepower'] = m.get('firepower', m.get('fire', ''))
         entry['modules'] = [mech_module_out(t['modules'], x['family'], x['level']) for x in m.get('modules', [])]
         entry.update(rename(m, [('skins', 'AlternateSkins'), ('hidden_modules', 'hiddenModules'),
-                                ('dispatch_group', 'dispatchGroup'), ('dispatch_version', 'dispatchVersion')]))
+                                ('dispatch_group', 'dispatchGroup'), ('dispatch_version', 'dispatchVersion'),
+                                ('transmog', 'transmog')]))
         skin_versions = {k: v['version'] for k, v in t['skin_versions']['mechs'].get(mid, {}).items()}
         if skin_versions:
             entry['SkinVersions'] = skin_versions

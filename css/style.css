@@ -4998,3 +4998,17 @@ a.boss-avatar { display: block; }
 .link-badge { right: auto; left: 6px; }
 .event-cmd-part { margin-top: 0.35rem; line-height: 1.5; }
 .event-cmd-terms { margin-top: 0.6rem; display: flex; flex-direction: column; gap: 0.3rem; font-size: 0.92em; color: #cbd5e1; }
+
+/* ST Transmog tab (js/pages/sts.js transmogHtml) */
+.transmog-note { margin: 0 0 0.8rem; color: #aab; }
+.transmog-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 0.6rem; }
+.transmog-card {
+  background-color: #1a1a20;
+  border: 1px solid #2a2a4a;
+  border-radius: 8px;
+  padding: 0.6rem;
+  text-align: center;
+}
+.transmog-icon { width: 100%; max-width: 120px; aspect-ratio: 1; object-fit: contain; }
+.transmog-pos { font-weight: 600; margin-top: 0.3rem; }
+.transmog-cond { font-size: 0.8rem; color: #889; }

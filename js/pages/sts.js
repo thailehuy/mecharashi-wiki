@@ -68,6 +68,25 @@ function moduleIconErrorAttr(iconName) {
   return ' onerror="this.onerror=null;this.src=\'' + fallback + '\';"';
 }
 
+// Transmog tab: the display models the game swaps in when this ST's own pilot drives it
+// (ConfigDataWAPEquipTransmogInfo). Looks only; the equipped gear's stats stay.
+function transmogHtml(m) {
+  var t = m.transmog;
+  if (!t) return '';
+  var esc = function (s) { return $('<span>').text(s).html(); };
+  return '<div class="nd-section">' +
+    '<p class="transmog-note">When piloted by <a href="' + App.href('pilots', t.pilot) + '">' + esc(t.pilot) + '</a>, ' +
+      'these slots show a unique model. Only the look changes: the equipped gear and its stats stay the same.</p>' +
+    '<div class="transmog-grid">' + t.items.map(function (it) {
+      return '<div class="transmog-card">' +
+        '<img class="transmog-icon" src="' + ASSET_BASE + 'data/' + it.icon + '.png" alt="" loading="lazy" />' +
+        '<div class="transmog-pos">' + esc(it.position) + '</div>' +
+        '<div class="transmog-cond">' + esc(it.equipped) + ' equipped</div>' +
+      '</div>';
+    }).join('') + '</div>' +
+  '</div>';
+}
+
 function mechIconSrc(m) {
   return LOCAL_MECH_ICON_BASE + m.type + '/' + encodeURIComponent(m.icon) + '.png';
 }
@@ -492,6 +511,7 @@ Pages.sts = {
               '<div class="detail-talents">' + hiddenCards + '</div>' +
             '</div>'
           ) : '')],
+        ['transmog', 'Transmog', transmogHtml(m)],
         ['paint', 'Color Scheme', Lore.loadingHtml],
         ['lore', 'Lore', Lore.loadingHtml]
       ], { kind: 'mechs', id: m.ID })
