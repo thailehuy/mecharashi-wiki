@@ -1062,7 +1062,7 @@ window.GlossaryData = {
     },
     "6011014": {
       "name": "Provocation",
-      "effect": "If the distance to [Zoey] is less than or equal to <color=#F74848>6</color> blocks, only [Zoey] can be targeted by skills. Priority is lower than <buf ID=1012081>[Oath]</buf>. When attacking [Zoey], Hit Rate is reduced by <color=#F74848>15%</color>."
+      "effect": "If the distance to [Zoey] is less than or equal to <color=#F74848>6</color> tiles, only [Zoey] can be targeted by skills. Priority is lower than <buf ID=1012081>[Oath]</buf>. When attacking [Zoey], Hit Rate is reduced by <color=#F74848>15%</color>."
     },
     "6011042": {
       "name": "Upper Hand",

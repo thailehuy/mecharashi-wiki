@@ -834,7 +834,7 @@ window.BossesData = {
                 },
                 {
                   "name": "Provocation",
-                  "description": "If the distance to [Zoey] is less than or equal to <color=#F74848>6</color> blocks, only [Zoey] can be targeted by skills. Priority is lower than <buf ID=1012081>[Oath]</buf>. When attacking [Zoey], Hit Rate is reduced by <color=#F74848>15%</color>."
+                  "description": "If the distance to [Zoey] is less than or equal to <color=#F74848>6</color> tiles, only [Zoey] can be targeted by skills. Priority is lower than <buf ID=1012081>[Oath]</buf>. When attacking [Zoey], Hit Rate is reduced by <color=#F74848>15%</color>."
                 },
                 {
                   "name": "Movement Down Immunity.",
@@ -3030,7 +3030,7 @@ window.BossesData = {
                 },
                 {
                   "name": "Provocation",
-                  "description": "If the distance to [Zoey] is less than or equal to <color=#F74848>6</color> blocks, only [Zoey] can be targeted by skills. Priority is lower than <buf ID=1012081>[Oath]</buf>. When attacking [Zoey], Hit Rate is reduced by <color=#F74848>15%</color>."
+                  "description": "If the distance to [Zoey] is less than or equal to <color=#F74848>6</color> tiles, only [Zoey] can be targeted by skills. Priority is lower than <buf ID=1012081>[Oath]</buf>. When attacking [Zoey], Hit Rate is reduced by <color=#F74848>15%</color>."
                 }
               ],
               "kind": "passive"
@@ -3480,7 +3480,7 @@ window.BossesData = {
                 },
                 {
                   "name": "Provocation",
-                  "description": "If the distance to [Zoey] is less than or equal to <color=#F74848>6</color> blocks, only [Zoey] can be targeted by skills. Priority is lower than <buf ID=1012081>[Oath]</buf>. When attacking [Zoey], Hit Rate is reduced by <color=#F74848>15%</color>."
+                  "description": "If the distance to [Zoey] is less than or equal to <color=#F74848>6</color> tiles, only [Zoey] can be targeted by skills. Priority is lower than <buf ID=1012081>[Oath]</buf>. When attacking [Zoey], Hit Rate is reduced by <color=#F74848>15%</color>."
                 }
               ]
             },
@@ -4185,7 +4185,7 @@ window.BossesData = {
                 },
                 {
                   "name": "Provocation",
-                  "description": "If the distance to [Zoey] is less than or equal to <color=#F74848>6</color> blocks, only [Zoey] can be targeted by skills. Priority is lower than <buf ID=1012081>[Oath]</buf>. When attacking [Zoey], Hit Rate is reduced by <color=#F74848>15%</color>."
+                  "description": "If the distance to [Zoey] is less than or equal to <color=#F74848>6</color> tiles, only [Zoey] can be targeted by skills. Priority is lower than <buf ID=1012081>[Oath]</buf>. When attacking [Zoey], Hit Rate is reduced by <color=#F74848>15%</color>."
                 },
                 {
                   "name": "Fixed DMG",
